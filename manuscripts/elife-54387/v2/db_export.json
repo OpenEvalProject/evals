@@ -1,0 +1,1860 @@
+{
+  "submission": {
+    "id": "c94381e6-0f55-46bc-8391-727075f7e8b5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:23:45.304562Z",
+    "updated_at": "2025-12-02T15:23:45.304562Z"
+  },
+  "content": [
+    {
+      "id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "submission_id": "c94381e6-0f55-46bc-8391-727075f7e8b5",
+      "content_type": "manuscript",
+      "content_text": "# Mitochondrial ClpX activates an essential biosynthetic enzyme through partial unfolding\n\n## Authors\n\n- Julia R Kardon<sup>1</sup> ([ORCID: 0000-0002-6621-4461](https://orcid.org/0000-0002-6621-4461)) \u2020\n- Jamie A Moroco<sup>4</sup> ([ORCID: 0000-0001-8250-5923](https://orcid.org/0000-0001-8250-5923))\n- John R Engen<sup>4</sup> ([ORCID: 0000-0002-6918-9476](https://orcid.org/0000-0002-6918-9476))\n- Tania A Baker<sup>2</sup> ([ORCID: 0000-0002-0737-3411](https://orcid.org/0000-0002-0737-3411)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, Brandeis University Waltham United States\n2. Department of Biology, Massachusetts Institute of Technology Cambridge United States\n3. Howard Hughes Medical Institute, Massachusetts Institute of Technology Cambridge United States\n4. Department of Chemistry and Chemical Biology, Northeastern University Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMitochondria control the activity, quality, and lifetime of their proteins with an autonomous system of chaperones, but the signals that direct substrate-chaperone interactions and outcomes are poorly understood. We previously discovered that the mitochondrial AAA+ protein unfoldase ClpX (mtClpX) activates the initiating enzyme for heme biosynthesis, 5-aminolevulinic acid synthase (ALAS), by promoting cofactor incorporation. Here, we ask how mtClpX accomplishes this activation. Using S. cerevisiae proteins, we identified sequence and structural features within ALAS that position mtClpX and provide it with a grip for acting on ALAS. Observation of ALAS undergoing remodeling by mtClpX revealed that unfolding is limited to a region extending from the mtClpX-binding site to the active site. Unfolding along this path is required for mtClpX to gate cofactor binding to ALAS. This targeted unfolding contrasts with the global unfolding canonically executed by ClpX homologs and provides insight into how substrate-chaperone interactions direct the outcome of remodeling.\n\n## Introduction\n\nAAA+ protein unfoldases use the energy of ATP hydrolysis to pull apart the structures of their substrate proteins. In general, this is accomplished by gripping the substrate polypeptide with aromatic side chains of loops (the highly-conserved pore-1 loops) that protrude into the central pore of the unfoldase hexamer. ATP hydrolysis drives conformational changes in the hexamer that pivot these loops downward, thus applying a mechanical force from the site of engagement on the substrate, eventually unfolding it and translocating the unfolded polypeptide (Sauer and Baker, 2011).\n\nAlthough some AAA+ unfoldases are specialized for non-proteolytic protein unfolding, this activity has been best characterized as part of protein degradation, in which the unfolded polypeptide is directly translocated into the proteolytic chamber of a bound peptidase. This fundamental unfoldase-peptidase architecture and mechanism is used by eukaryotic and archaeal proteasomes and by several unfoldase-peptidase complexes shared among bacteria, mitochondria, peroxisomes, and chloroplasts (Sauer and Baker, 2011; Saibil, 2013; Quir\u00f3s et al., 2015). One such bacterial unfoldase, ClpX, with its partner peptidase ClpP, is particularly specialized for regulatory degradation of substrates rather than for protein quality control, conditionally selecting a varied repertoire of substrates to execute stress responses and cell fate decisions (Gottesman, 2003). Accumulating evidence indicates that mitochondrial ClpX (mtClpX) similarly acts in a regulatory capacity, although only a few substrates of mtClpX have been verified and the regulatory consequences of its actions on mitochondrial physiology are largely undetermined (Kardon et al., 2015; Szczepanowska et al., 2016; Haynes et al., 2010; Matsushima et al., 2017; Kasashima et al., 2012; Al-Furoukh et al., 2014). How mtClpX recognizes its substrates also has not been characterized, although its sequence preferences for substrate recognition clearly diverge from those of bacterial ClpX (Martin et al., 2008).\n\nWe previously discovered that mtClpX promotes heme biosynthesis by acting on the first enzyme in the pathway, 5-aminolevulinate synthase (ALAS) (Kardon et al., 2015). mtClpX activates ALAS by accelerating incorporation of its cofactor, pyridoxal 5\u2019-phosphate (PLP). This activation is non-proteolytic, but requires ATP hydrolysis and intact pore loops, implicating the unfoldase activity of mtClpX in this unconventional function. Here, we address how mtClpX is specifically deployed to direct activation of an enzyme. Using a peptide array of the ALAS sequence combined with protein mutagenesis and engineering, we defined a coherent mtClpX-binding site that spans the dimer interface of ALAS. This region contains separable elements that recruit and engage mtClpX to initiate unfolding. Using hydrogen-deuterium exchange coupled with mass spectrometry (HX MS), we observed that mtClpX induces exposure of a limited region of ALAS that extends from the mtClpX-binding site to the enclosed active site, thus opening access to the active site for cofactor binding. Engineered crosslinks that obstruct this path demonstrated that remodeling along this path is necessary for mtClpX to activate ALAS. Our observations describe the mechanism employed by a conserved mitochondrial unfoldase to activate an essential biosynthetic enzyme.\u00a0They\u00a0also provide a model for how the interactions between protein unfoldases and their substrates can generate widely divergent outcomes, from targeted unfolding and activation to complete unfolding and degradation.\n\n## Results\n\n### An N-terminal sequence directs mtClpX to activate ALAS\n\nTo determine how mtClpX induces ALAS to bind PLP more rapidly, we first sought to identify how mtClpX recognizes and engages ALAS. As an unbiased search strategy, we assayed binding of S. cerevisiae mtClpX to an array of peptides representing the linear sequence of S. cerevisiae ALAS. mtClpX bound six discrete peptide sequences within ALAS (Figure 1A, boxed in blue; control blot showing specificity in Figure 1\u2014figure supplement 1A). Five of these sequences map to a structurally contiguous site in ALAS, consisting of an \u03b1-helix (\u03b11) that is the most N-terminal structured element of ALAS, and a small region that is in direct hydrogen-bonding contact with \u03b11 across the ALAS dimer interface (Figure 1B). The sixth, most C-terminal peptide maps to a separate site about 40 \u00c5 from the clustered sites. Because of the close proximity of many of these sequences to each other (several are within hydrogen-bonding distance of each other) and the large, multivalent surface which the ClpX hexamer provides for substrate interactions (~135 \u00c5 in diameter in a structure of E. coli ClpX [Glynn et al., 2009]), residues within several of these sequences could interact with mtClpX simultaneously as part of the initial encounter complex. Alternatively, elements within these sequences could provide contacts with mtClpX sequentially, perhaps even during initial gripping or unfolding of ALAS.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig1-v2.jpg)\n\n**Figure 1.:** (A) Peptide array of the ALAS sequence (58\u2013548, sliding window of fifteen amino acids, shifted two amino acids towards the C-terminus with each spot, N- to C-terminus arrayed left-to-right, top-to-bottom) probed with mtClpXE206Q-3xFLAG and detected by far-western blot as described in Materials and Methods. mtClpX-binding sequences are boxed in blue. See Figure 1\u2014figure supplement 1A for control blot. (B) mtClpX-binding sequences identified by peptide blotting are mapped on one face of the structure of S. cerevisiae ALAS (PDB: 5TXR [Brown et al., 2018]; image created with UCSF Chimera [Pettersen et al., 2004]) in blue and numbered as in (A). Sequences were defined as the range between the two amino acids added at the beginning of the boxed region in (A) and the two amino acids removed after its end. PLP is depicted in green and the two protomers of ALAS are colored in light or\u00a0dark gray. (C) Diagram of ALAS N-terminal variants. Blue indicates the N-terminal mtClpX-binding peptide in \u03b11, orange indicates M. musculus dihydrofolate reductase (DHFR), and purple indicates a degradation tag recognized by E. coli ClpX (residues 2\u201312 of the phage \u03bbO replication protein). (D) Rate of PLP binding to ALAS and N-terminal DHFR-ALAS chimeras\u00a0(5 \u03bcM monomer),\u00a0\u00b1\u00a0mtClpX (2 \u03bcM hexamer),\u00a0\u00b1\u00a0methotrexate (mtx) (30 \u03bcM). Reactions additionally contained 2 mM ATP, a regeneration system and 50 mM PLP (see Materials and Methods). PLP binding was monitored by fluorescence specific to protein-liganded PLP (ex. 434 nm, em. 515 nm). Rates were extracted by linear fits to values in the early linear phase and normalized to the rate for wildtype ALAS without methotrexate or mtClpX. p<0.001 for suppression of mtClpX activity by DHFR fusion (DHFR-ALAS) and suppression of mtClpX activity on \u03b11-DHFR-ALAS by methotrexate addition. (E) PLP binding to ALAS and \u03bbO2-12-ALAS (5 \u03bcM monomer)\u00a0\u00b1E. coli ClpX (2 \u03bcM hexamer), assayed as in (C). p<10\u22124 for stimulation of PLP binding to \u03bbO2-12-ALAS by E. coli ClpX. (F) PLP-binding fluorescence traces for \u03bbO2-12-ALAS,\u00b1E. coli ClpX or mtClpX. Error bars represent standard deviation; n\u00a0\u2265\u00a03. P-values were calculated using Student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Test of background antibody binding to peptide array of \u039457-ALAS sequence, as described in Figure 1A, omitting incubation with mtClpXE206Q-3xFLAG. Numbers indicate the first amino acid of the left-most peptide in each row. (B) Rates of mtClpX stimulated PLP binding to \u039457-ALAS (blue, n\u00a0=\u00a02) and E.c. ClpX stimulated PLP binding to \u03bbO2-12-\u039457-ALAS (purple, n\u00a0=\u00a02) are plotted as a function of ALAS monomer concentration. Curves and kinetic parameters represent fits of the Michaelis-Menten equation (Y\u00a0=\u00a0Vmax*X/(KM + X) to the data. (C) Peptide array of \u039434-ALAS sequence probed with mtClpXE206Q-3xFLAG and antibody as in (A). Numbers indicate the first amino acid of the left-most peptide in each row. \u03bbO2-12 peptide with an alanine spacer (TNTAKILNFGRAAAA) is also included at the lower right (underlined in purple).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Pyridoxal phosphate and derivatives. Modifications of the pyridoxal aldehyde group caused by conjugation in an enzyme active site or by reaction with hydroxylamine are indicated in red. (B) PLP-oxime content of 10 \u03bcM hydroxylamine-treated ALAS (ALAS-hxl), compared to 10 \u03bcM hydroxylamine-treated PLP (PLP-oxime), determined by fluorescence (ex. 380 nm, em. 460 nm) of the denatured and deproteinated solution.\n\nBecause ClpX and other AAA+ unfoldases often initiate unfolding at or near a protein terminus, \u03b11 of ALAS was an appealing candidate for an initial binding site for mtClpX. \u03b11 is also immediately adjacent in both structure and sequence to a small \u03b2-sheet (\u03b21\u20133) that abuts the active site. Unfolding initiated at \u03b11 could restructure this region to allow PLP access to the active site. Indeed, we previously observed that \u03b21\u20133 is conformationally responsive to the presence of PLP in our crystal structure of ALAS: One protomer of the ALAS holoenzyme dimer lost PLP during crystallization in PLP-free solvent and \u03b21\u20133 of the unoccupied protomer could not be modeled. \u03b11 and other mtClpX-interacting elements, however, remained ordered and in an equivalent conformation in both forms of the structure\u00a0(Brown et al., 2018).\n\nOur group previously crystallized ALAS that had been incubated with hydroxylamine (Brown et al., 2018), which cleaves the covalent PLP-lysine bond in the active site and converts PLP to a non-covalently bound and inactive PLP-oxime (Figure 1\u2014figure supplement 2A). The structure of this inactive, PLP-depleted preparation contained a PLP-derived species in the active site despite gel filtration to remove free cofactor. Because our previous assays for activation of ALAS by mtClpX were performed with this hydroxylamine-treated ALAS, in this work we sought to determine whether mtClpX exchanges inactive cofactor, facilitates cofactor binding to unoccupied active sites, or both. We determined that ALAS treated with hydroxylamine followed by gel filtration remained slightly more than half-occupied with a species consistent with PLP-oxime (Figure 1\u2014figure supplement 2A,B). The activation of hydroxylamine-treated ALAS by mtClpX therefore represents a combination of PLP binding to unoccupied active sites and exchange of PLP-oxime for PLP. Both events are likely useful in supporting ALAS function in vivo, assisting de novo PLP binding and regenerating ALAS enzyme inactive due to a damaged cofactor (for example, PMP resulting from decarboxylation-coupled transamination of PLP, or other natural errors in catalysis [John, 1995]). Both events could be similarly facilitated by unfolding by mtClpX to expose the ALAS active site.\n\nTo test the importance of the putative N-terminal mtClpX binding site of ALAS, we generated variants of ALAS with dihydrofolate reductase (DHFR) appended at the ALAS N-terminus (Figure 1C). N-terminal fusion of DHFR with ALAS (DHFR-ALAS) blocked stimulation of PLP binding by mtClpX, but appending the N-terminal sequence of ALAS through \u03b11 to DHFR-ALAS (\u03b11-DHFR-ALAS) restored the ability of mtClpX to stimulate PLP binding (Figure 1D, dark\u00a0blue bars). Thus, mtClpX recognizes the N-terminal region of ALAS to initiate activation. Upon binding its inhibitor methotrexate, DHFR becomes extremely mechanically stable and resistant to unfolding (Rassow et al., 1989), thus providing a conditional block to mtClpX. Addition of methotrexate to \u03b11-DHFR-ALAS blocked its activation by mtClpX (Figure 1D, dark\u00a0orange bars) indicating that mtClpX acting from near the N-terminus is required for ALAS activation. These data support the conclusions that mtClpX requires the \u03b11 site to recognize ALAS and acts from this site to accelerate PLP binding.\n\n### An unfoldase acting at the N-terminus is sufficient to activate ALAS\n\nTo test if an unfoldase acting at the N-terminus of ALAS is sufficient for activation, we attempted to direct E. coli ClpX to stimulate PLP binding. E. coli ClpX does not act on wildtype ALAS (Figure 1E). To direct it to ALAS, we appended a recognition sequence for E. coli ClpX (\u03bbO2-12, from the E. coli ClpX substrate phage \u03bbO protein [Gonciarz-Swiatek et al., 1999]) to the N-terminus of ALAS (\u03bbO2-12-ALAS) (Figure 1C).\u00a0E. coli\u00a0ClpX accelerated PLP binding to this fusion protein, albeit with a slower Vmax than observed with the native mtClpX-ALAS interaction (Figure 1E, Figure 1\u2014figure supplement 1B). Therefore, an unfoldase acting from this N-terminal site is sufficient to stimulate ALAS activation. We also tested if the short, unstructured \u03bbO2-12 tag might block mtClpX action as we observed with the folded DHFR domain did. We observed the opposite effect: mtClpX processed \u03bbO2-12-ALAS more rapidly than wildtype ALAS by (Figure 1F). This increased efficiency was not based on specific interaction of mtClpX with the \u03bbO2-12 peptide (Figure 1\u2014figure supplement 1C, underlined in purple), suggesting that mtClpX instead was aided by the unstructured polypeptide extension contributed by the \u03bbO2-12 tag.\n\n### mtClpX relies on an unstructured N-terminal extension for rapid activation of ALAS\n\nThe observation that an unstructured extension to the N-terminus of ALAS stimulated activation of ALAS by mtClpX led us to reexamine the native N-terminus of ALAS in the mitochondrion. Many mitochondrial proteins, including ALAS, are translated with an N-terminal targeting sequence that is cleaved after import into the mitochondrial matrix. The N-terminus of the ALAS variants we used in our previous experiments (position 58 in the coding sequence) was based on an earlier proteomic survey of mature N-termini of mitochondrial proteins in yeast (V\u00f6gtle et al., 2009). To specifically observe the mature N-terminus of ALAS, we performed Edman degradation on ALAS purified from yeast cell extracts. ALAS appeared as a single processed species by western blot (with possible trace uncleaved preprotein remaining, Figure 2\u2014figure supplement 1A). The N-terminal sequence of this species corresponded to cleavage after residue 34 of the preprotein (\u220634-ALAS), indicating that an additional 23 amino acids beyond the previously detected species (\u220657-ALAS) are retained in the mature protein (Figure 2A, Figure 2\u2014figure supplement 1B). One possible source for a different N-terminus is that the slower isolation procedure used to globally identify mitochondrial N-termini may have resulted in additional processing to yield \u039457-ALAS.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig2-v2.jpg)\n\n**Figure 2.:** (A) Edman degradation of ALAS identified a single N-terminus corresponding to amino acid 35 of the preprotein. A C-terminal Myc-His7 tag was integrated at the genomic locus encoding ALAS and the tagged protein was purified from yeast cell extract by Ni-NTA affinity. (B) Fluorescence traces representing PLP binding to 5 \u03bcM ALAS variants\u00a0\u00b1\u00a02 \u03bcM mtClpX hexamer, monitored as in Figure 1D. (C) The rates at which mtClpX stimulated PLP binding to \u039457-ALAS (blue, n\u00a0=\u00a02), \u03bbO2-12-\u039457-ALAS (purple, n\u00a0=\u00a02), or \u039434-ALAS (green, n\u00a0=\u00a03) are plotted as a function of ALAS monomer concentration. The lower graph shows the same fitted data for \u039457-ALAS as displayed in the upper graph with a smaller y-axis scale and an additional concentration (150 \u03bcM) not monitored for the other variants. mtClpX, when included, was present at 0.5 \u03bcM hexamer (\u03bbO2-12- and \u039434-ALAS variants) or 1 \u03bcM hexamer (\u039457-ALAS). PLP was included at 150 \u03bcM. Rates were extracted by linear fits to the early phase of PLP-binding fluorescence traces; the rate of mtClpX action was determined by subtracting the ALAS-alone PLP binding rate from the mtClpX-stimulated rate and normalizing to mtClpX concentration. Curves represent fits of the Michaelis-Menten equation (Y\u00a0=\u00a0Vmax*X/(Km + X) to the data. (D) Kinetic parameters for mtClpX action on ALAS variants, extracted from fits in (C). Standard error of the fit is stated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Western blot (mouse anti-Myc) of ALAS-Myc-His7 purified from yeast cell extracts by Ni-NTA affinity. Lanes are samples from three sequential elutions. The\u00a0large arrow at right indicates major mature species subjected to Edman degradation; the\u00a0small arrow at left represents indicates possible trace uncleaved preprotein. (B) Comparison of the natural ALAS sequence beyond the previously annotated mature N-terminus (35-57) and the \u03bbO2-12-ALAS fusion (\u03bbO2-12 sequence highlighted in purple). (C) Deuterium uptake in \u039434-ALAS, analyzed by HX MS. Only linear, non-overlapping peptides are shown; see Supplementary file 1 for deuterium uptake profiles of all peptides reproducibly detected. (D) Rate of PLP binding to \u039434-ALAS and corresponding DHFR fusion (35-\u03b11-DHFR-\u039457-ALAS) (5 \u03bcM monomer),\u00a0\u00b1\u00a0mtClpX (2 \u03bcM hexamer),\u00a0\u00b1\u00a0methotrexate (mtx) (30 \u03bcM) were analyzed as in Figure 1C.\n\nWe tested the effect of this natural N-terminal extension of ALAS on mtClpX action and found that mtClpX activated \u220634-ALAS even more rapidly than \u03bbO2-12-ALAS (Figure 2B). Extension of the N-terminus of ALAS, either with its natural sequence (34-57) or with \u03bbO2-12, principally stimulated the maximal rate of activation (a nearly twenty-fold increase in Vmax by extension with the natural sequence) and modestly decreased the KM (Figure 2B\u2013D). Extension of the N-terminus of ALAS also reduced coprecipitation of ALAS with mtClpX (\u220634-ALAS compared to \u220657-ALAS, Figure 3B), suggesting that this extension may present mild steric hindrance to static binding, although it increases the overall efficiency of mtClpX activation of ALAS and may disfavor dissociation after mtClpX actively engages ALAS. The sequences of the \u03bbO2-12 tag and of the N-terminal extension of ALAS (amino acids 35\u201357) are not similar (Figure 2\u2014figure supplement 1B), suggesting that the role of this extension is sequence-independent. We did not detect any additional binding sequences in a peptide array that included the entire preprotein sequence of ALAS, further supporting a sequence-independent interaction (Figure 1\u2014figure supplement 1D). This natural N-terminal extension of ALAS has a dynamic or disordered structure; the N-terminus of \u039434-ALAS to the beginning of \u03b11 (residue 71) exhibited near-instantaneous completion of deuterium uptake in hydrogen-deuterium exchange experiments (Figure 2\u2014figure supplement 1C; discussed further below). Therefore, mtClpX is a more potent activator of ALAS than we previously appreciated, facilitated by a flexible element at the natural mature N-terminus of ALAS.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig3-v2.jpg)\n\n**Figure 3.:** (A). The\u00a0position of mutations that perturb mtClpX binding are mapped on one face of the structure of ALAS (PDB: 5TXR [Brown et al., 2018]) (F71 in yellow, Y73 in orange, and Y274 in dark blue). PLP is depicted in green. (B) Coimmunoprecipitation of ALAS variants with mtClpXE206Q-3xFLAG. 1 \u03bcM ALAS (monomer) and 0.5 \u03bcM mtClpXEQ-3xFLAG (hexamer) were incubated on ice with anti-FLAG antibody-conjugated magnetic beads. Coprecipitating proteins were eluted with 3xFLAG peptide. Eluted proteins were separated by SDS-PAGE and stained with Sypro Red. The bar graph above each lane of the gel represents the average intensity of the band from three independent experiments, normalized to wildtype \u039434-ALAS; error bars represent SD. (C\u2013D) The rates at which mtClpX stimulated PLP binding to indicated ALAS variants are plotted as a function of ALAS monomer concentration; rates were determined and fit to the Michaelis-Menten equation as in Figure 2C. mtClpX was present at 0.5 \u03bcM hexamer (C) or 1 \u03bcM hexamer (D). Wildtype ALAS (\u039434-ALAS) data represented in Figure 2C is replotted in both panels. N\u00a0=\u00a03 for all variants. (E) Chart of parameters extracted from fits in (C\u2013D) as in Figure 2C. Standard error of the fit is stated. (F) The levels of ALA in extracts from yeast strains harboring the indicated mutations in ALAS (HEM1 gene), with (MCX1) or without (mcx1\u0394) the gene encoding mtClpX, were measured by colorimetric assay with modified Ehrlich\u2019s reagent. p<0.001 for reduced ALA production in MCX1 strains by all mutations displayed in HEM1; p=0.05 for reduced ALA production in mcx1\u0394 hem1F71A/Y73A, n\u00a0\u2265\u00a03 for all strains; error bars represent SD.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** 15-amino-acid peptides derived from mtClpX-binding sequences determined in\u00a0Figure 1A were scanned at each position with alanine and aspartate in a peptide array. The top row of the array contains the wildtype peptides (repeated twice, left to right) and non-binding peptides (peptides that mtClpX did not bind in\u00a0Figure 1A). Non-binding peptides are arrayed in the following series, repeated three times: LIDSELQKKRLDKSY (76-90), DSELQKKRLD-KSYRY (78-92), LEQLLQSYPKSVPKL (234-248), QLLQSYPKSVPKLIA (236-250), VRDPIVKQLEVSSGI (532-546), DPIVKQLEVSSGIKQ (534-548). Blue boxes represent ALAS variants analyzed.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Spontaneous binding rates of PLP to indicated ALAS variants. Rates were determined by linear fits to the pseudolinear early phase of PLP binding, measured by fluorescence (ex. 434 nm, em. 515 nm). ALAS variants were present at 10 \u03bcM, PLP at 150 \u03bcM, and ATP at 2 mM with a regenerating system. (B) CH-pi and H-bonding interactions (depicted as yellow bars) mediated by the side chains of mtClpX-interacting residues F71 and Y73 (in protomer rendered in dark gray) with residues on the other protomer (rendered in light gray). (C) Activity of purified ALAS variants was monitored in vitro using modified Ehrlich\u2019s reagent in a colorimetric assay (see Materials and Methods). Error bars represent SD of three independent assays; p<0.01 for reduced ALASF71A/Y73A with or without PLP. (D) Relative protein levels of ALAS-3xMyc variants in vivo, determined by western blotting of yeast cell extracts with mouse anti-Myc antibody (9E10 clone,\u00a0Sigma-Aldrich) and IRDye 800CW Goat anti-rabbit IgG (Li-Cor)\u00a0and visualized with an Odyssey scanner (Li-Cor).\n\nThe shorter N-terminal element we initially characterized (amino acid 58 through \u03b11), when appended to DHFR-ALAS, was sufficient to direct mtClpX to act on this\u00a0chimera with similar efficiency as on \u039457-ALAS (Figure 1D); we therefore considered whether the extended N-terminal element (35-\u03b11) we identified might be sufficient to direct high-efficiency processing by mtClpX. To test this idea, we correspondingly extended the ALAS-derived\u00a0N-terminus of the \u03b11-DHFR-ALAS fusion (Figure 1C) and monitored mtClpX stimulation of PLP binding. PLP binding by the 35-\u03b11-DHFR variant of ALAS was stimulated in a methotrexate-inhibited fashion by mtClpX (Figure 2\u2014figure supplement 1D). With 35-\u03b11-DHFR-ALAS, however, mtClpX acted only at a\u00a0slow rate similar to that observed with \u220657-ALAS and its corresponding DHFR fusion protein, rather than the faster \u220634-ALAS rate (Figure 1D, Figure 2\u2014figure supplement 1D). Although the poor solubility of the \u03b11-DHFR variants of ALAS precluded determination of their KM\u00a0with mtClpX, the similar and low rate of the 58-\u03b11 and 35-\u03b11 DHFR variants suggest that the failure of an N-terminal extension to enhance mtClpX action in this context is due to a decreased Vmax. The extended 35-\u03b11 binding site therefore is not sufficient to potentiate mtClpX action when separated by a DHFR domain from the main body of ALAS, perhaps because this geometry prevents mtClpX from forming additional contacts with ALAS that are important for efficient action.\n\n### Multiple sequence-specific contacts direct mtClpX action on ALAS\n\nTo identify residues that recruit mtClpX and position it on ALAS for activation, we scanned the peptide sequences that bound mtClpX (Figure 1A) with alanine and aspartate substitutions on an additional peptide array and probed this array with mtClpX (Figure 3\u2014figure supplement 1). In this array, we identified substitutions in each peptide that caused near-complete loss of mtClpX binding, with the exception of the most C-terminal peptide. Most residues sensitive to mutation were perturbed by both alanine and aspartate. Several bulky hydrophobic amino acids (leucine, phenylalanine, and tyrosine) were highly represented in positions important for mtClpX interaction. This side-chain preference differed from the characterized preference of E. coli ClpX, for which alanine and basic residues are often important in substrate recognition (Flynn et al., 2003). The mtClpX-preferred residues we observe are also notable in that they comprise the set of signal residues observed to direct mitochondrial N-end rule-based degradation (V\u00f6gtle et al., 2009).\n\nTo test the importance of these mtClpX-binding sequences for binding and activation of ALAS by mtClpX, we mutated several residues that were important for mtClpX interaction with ALAS-derived peptides in \u220634-ALAS. Alanine substitution at positions in \u03b11 (F71A, Y73A, and the double substitution F71A/Y73A, Figure 3A) reduced coprecipitation with mtClpX (Figure 3B), and increased the KM for activation by mtClpX (Figure 3C\u2013E), consistent with \u03b11 functioning as a sequence-specific tag that recruits mtClpX to begin exerting force on ALAS.\n\nThe double substitution variant (ALASF71A/Y73A) exhibited an increased rate of spontaneous PLP binding (Figure 3\u2014figure supplement 2A) and an increased Vmax for mtClpX-stimulated PLP binding (Figure 3D,E). These residues are positioned at the dimer interface: Y73 directly contacts the other protomer through hydrogen bonding, and F71A is positioned for a CH-pi interaction with P246 (Figure 3\u2014figure supplement 2B). Although F71A and Y73A single variants retained synthase activity similar to wildtype, the double variant ALASF71A/Y73A retained only\u00a0~10\u201320% of wildtype activity (Figure 3\u2014figure supplement 2C). Removing contacts between the protomers through these mutations likely increases the solvent accessibility of the active site, thereby increasing the spontaneous PLP-ALAS binding rate at the expense of active site function. The reduced activity of ALASF71A/Y73A therefore illustrates a potential cost of a more solvent-accessible active site and suggests an advantage of transient, unfoldase-induced accessibility. Because the rate of unfolding of protein substrates by ClpX homologs is often proportional to the local mechanical stability of the substrate protein at the site of initiation of unfolding, this reduced contact may be responsible for the increased Vmax of mtClpX action on ALASF71A/Y73A. These residues in \u03b11 thus participate both in mtClpX recognition and in forming stabilizing contacts across the dimer interface that suppress spontaneous PLP exchange and support ALAS activity.\n\nIn contrast to mutations in \u03b11, a mutation at the surface of the mtClpX-interacting sequence cluster across the dimer interface from this helix, Y274A, did not perturb the KM for mtClpX activation of ALAS (although it did reduce coprecipitation [Figure 3B]). Instead, the Y274A mutation reduced the Vmax of mtClpX activation (Figure 3D,E). This finding demonstrates the importance of contacts with ALAS outside of \u03b11 for mtClpX action and suggests that the interaction of mtClpX with Y274 and possibly other residues in this peptide cluster promote rapid processing of ALAS.\n\nTo test if the contacts between ALAS and mtClpX we identified are important for mtClpX to support ALAS activity in vivo (production of the first committed heme precursor, 5-aminolevulinic acid [ALA]), we introduced alanine mutations of the contact residues into the single genomic copy of ALAS in yeast (HEM1) in a wildtype or mtClpX-null (mcx1\u0394) background. Within \u03b11, F71A reduced and Y73A abolished mtClpX enhancement of ALA levels in vivo (Figure 3F). Combining both mutations (hem1F71A/Y73A) reduced ALA levels further, in agreement with the low activity of the corresponding protein variant in vitro. The abundance of ALAS protein with this\u00a0double mutation was also reduced (Figure 3\u2014figure supplement 2D). Deletion of mtClpX in this strain caused no further reduction in ALA (Figure 3F). Mutation of the trans-protomer contact for mtClpX (hem1Y274A) modestly reduced mtClpX-dependent ALA levels in vivo. Combined mutation of this contact and of one mtClpX \u03b11 contact (hem1F71A/Y274A) abolished mtClpX enhancement of ALA levels. The concordance between the effect of mutations in ALAS on its activation by mtClpX in vitro and mtClpX-dependent ALA production in vivo support the compound mtClpX-binding site spanned by these mutations as the physiological site at which mtClpX recognizes and begins acting on ALAS to promote ALAS activation and thus heme biosynthesis.\n\n### mtClpX unfolds a defined region of ALAS that gates the active site\n\nHow does the mtClpX unfoldase remodel and activate ALAS, initiating from its composite recognition site? To directly address this question, we used hydrogen-deuterium exchange (HX) coupled with mass spectrometry (MS) to monitor conformational changes in PLP-depleted \u220634-ALAS undergoing remodeling by mtClpX. ALAS conformation overall was very stable in the absence of mtClpX. Most of ALAS exhibited either no measurable deuteration or gradual deuteration over the 60 min observation period, characteristic of a tightly folded protein (with the exception of fast, immediately saturated exchange at the extreme N- and C-termini) (Figure 2\u2014figure supplement 1C and Supplementary file 1).\n\nIn the presence of mtClpX, deuteration was increased in defined, localized regions of ALAS over time (Figure 4; Supplementary file 1), strongly supporting the conclusion that mtClpX enacts limited, specific conformational change(s) rather than globally unfolding ALAS. mtClpX-induced deuterium uptake was localized to \u03b11, the \u03b2 sheet that connects \u03b11 to the active site (\u03b21\u20133) and the following active-site loop and \u03b12, and several non-contiguous peptides surrounding the active site of ALAS (Figure 4). The mass spectra of most of these peptides existed in two populations, corresponding to the undeuterated and the maximally deuterated form, with a single transition between these forms (EX1 kinetics) (Weis et al., 2006; Figure 4A, right panel, indicated with the half-life of the EX1 unfolding event, t1/2; half-life mapped on ALAS structure in Figure 4C, lower panel), consistent with cooperative unfolding within the peptide. This increased exposure was ATP-dependent and thus the result of active unfolding by mtClpX (Figure 4\u2014figure supplement 1B and Supplementary file 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig4-v2.jpg)\n\n**Figure 4.:** (A) Left panel: mtClpX-induced deuterium uptake in PLP-depleted (hydroxylamine-treated) ALAS (difference in deuterium uptake of ALAS with mtClpX and ATP present and ALAS with ATP only). A set of linear, non-overlapping peptides is shown. Legend indicates minimum value of induced deuterium uptake for each color. See also Supplementary file 1 for difference maps of all peptides monitored. Peptides used in the linear map are indicated in this file. Right panel: half-life (t1/2) of mtClpX-induced exchange for peptides in which EX1 kinetics could be clearly assigned. To the right of both panels, the correspondence of structural and functional elements of interest in ALAS with detected peptides are indicated as follows: NT: (flexible N-terminus), 35\u201352, 53\u201371; \u03b11: 72\u201381, 82\u201389; \u03b21: 91\u201399; \u03b22, 101\u2013113; \u03b23-A (\u03b23 + active site-proximal sequence): 114\u2013122; as-\u03b12, 125\u2013133, 134\u2013152; as: 184\u2013190, 191\u2013199, 201\u2013212; PLP (PLP-binding active site lysine): 326\u2013345; as: 357\u2013363, 364\u2013374; as/\u03b23 contact (tertiary structure contact with \u03b23): 461\u2013476. (B) mtClpX-induced deuterium uptake above 0.5 Da at 10 min from (A) is mapped in salmon on the structure of ALAS (PDB: 5TXR [Brown et al., 2018]). One protomer of the dimer is displayed; PLP is depicted in green. (C) t1/2 of the mtClpX-induced EX1 deuterium signatures from (A) mapped on one protomer of the ALAS dimer as in (B). Colors correspond to t1/2 as in the right panel of (A). (D) Plots of deuterium uptake over time \u00b1 ATP, \u00b1mtClpX for selected peptides (amino acid coordinates in parentheses) from ALAS.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Legend for deuterium uptake difference maps in (B\u2013D). Legend indicates minimum value of induced deuterium uptake for each color. (B\u2013D) Difference maps comparing the states indicated composed of linear array of peptides corresponding to those shown in Figure 4A. Deuterium uptake difference between the two states indicated was subtracted for each plot. See also Supplementary file 1 for difference maps of all peptides monitored. Specific peptides used in the linear maps are indicated in this file. (E) Plots of deuterium uptake over time for selected peptides that exhibit PLP-suppressed mtClpX-induced deuterium uptake (left) or PLP-insensitive mtClpX-induced deuterium uptake (right). 327\u2013345 contains the PLP-bonding lysine (337); 72\u201378 lies in \u03b11.\n\nThe \u03b2-sheet that mtClpX exposes partially shields the active site and also directly contacts other active-site-proximal elements, suggesting that unfolding of this element could gate PLP access. To test whether exchange in this region was the direct result of mtClpX remodeling or due to loss\u00a0of\u00a0PLP or PLP-oxime, we tested the effect of mtClpX on deuterium uptake of a holoenzyme preparation of ALAS as well, and observed a nearly identical uptake profile (Figure 4\u2014figure supplement 1C and Supplementary file 1). Inclusion of PLP in the exchange reaction only slightly suppressed some mtClpX-induced hydrogen exchange, immediately adjacent to bound PLP (Figure 4\u2014figure supplement 1D,E; see Supplementary file 1 for data from longer peptides with clear PLP-dependent protection), indicating that remodeling by mtClpX, rather than loss of ligand, induced nearly all of the increased exposure at each element in ALAS.\n\nTwo non-homogeneous features in the linear path of mtClpX-induced hydrogen exchange suggest that mtClpX does not directly translocate the entire length of this path. First, the EX1 unfolding half-life (t1/2) (Engen et al., 2008) for mtClpX-induced exchange in these elements is not uniform: exchange in \u03b11 and \u03b21\u20133 has a shorter t1/2 than the exchange further along this path (as-\u03b12 indicated in Figure 1A,C) and in the non-contiguous peptides surrounding the active site (Figure 4A, right panel; Figure 4B, lower panel). These data suggest that these regions are exposed as a secondary and/or lower-probability consequence of mtClpX remodeling of \u03b11 and \u03b21\u20133, giving rise to a longer t1/2 for deuterium uptake. Direct unfolding of some or all of \u03b11 and \u03b21\u20133 could increase solvent exposure of the active site and might also increase the conformational dynamics of active site-proximal elements that are contacted or indirectly stabilized by \u03b11 and \u03b21\u20133. Second, a short sequence (82\u201389)\u00a0spanning the junction between \u03b11 and \u03b21, elements that both exhibit fast mtClpX-induced exchange, exhibited no mtClpX-induced exchange (Figure 5A). A possible explanation for this observation is that this sequence in contact with mtClpX when it stops translocating, suppressing deuterium exchange even as regions further into the protein are deprotected by conformational change propagating from the putative mtClpX arrest site.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig5-v2.jpg)\n\n**Figure 5.:** (A) Deuterium uptake plots of peptides in ALAS (amino acid coordinates indicated) indicate a break in the linear path of ClpX-induced uptale. The most N-terminal alpha helix displays ClpX-induced uptake (left), the \u03b11-\u03b21 junction does not (middle), and the following strand \u03b21 (right) also displays ClpX-induced uptake. Bars below the plots indicate the magnitude of ClpX-induced uptake (uptake[ALAS+ATP] \u2013 uptake [ALAS+ATP+mtClpX] as in Figure 4 (white:\u22640.5 Da; light salmon:\u22650.5,\u22641.0; orange:\u22651.0,\u22641.5. (B) Degradation of \u03bbO2-12-ALAS (10 \u03bcM) was monitored in the presence of E. coli ClpX and ClpP (0.5 \u03bcM hexamer, 0.8 \u03bcM 14-mer, respectively) in PD150 with the indicated ATP concentration, an ATP regenerating system (5 mM creatine phosphate and 50 \u03bcg/mL creatine kinase), and 150 \u03bcM PLP at 30\u00b0C. Samples were quenched with SDS at the indicated times, separated by SDS-PAGE, stained with Coomassie R250, and imaged using a Bio-Rad ChemiDoc MP. The positions of molecular weight markers are indicated on the right in kDa. (C) Degradation of \u03bbO2-12-ALAS by\u00a0E.\u00a0coli\u00a0ClpXP\u00a0as described in (B) was quantified from gel images using ImageJ and degradation rates were extracted by linear fit using Graphpad Prism (RRID:SCR_002798). (D) Stimulation of PLP binding to \u03bbO2-12-ALAS by E. coli ClpX was assessed at the indicated ATP concentrations, otherwise as described in Materials and Methods.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Reactions were performed in a 384-well plate at 30\u00b0C in PD150 with 0.3 \u03bcM ClpX hexamer, indicated concentrations of ATP, and an NADH-oxidation-coupled assay system (1 mM NADH, 7.5 mM phosphoenolpyruvate, 20 units/mL lactate dehydrogenase, 20 units/mL pyruvate kinase; all obtained from Sigma-Aldrich), monitoring the absorbance at 340 nm using a Spectramax M5e plate reader (Molecular Devices).\u00a0Curve represents a fit of the quadratic velocity equation (Y\u00a0=\u00a0Vmax*((E + X + KM) - sqrt((E + X + KM)^2 - (4*E*X)))/(2*E) to hydrolysis rates as a function of ATP concentration.\n\nTo localize the site where mtClpX is likely arrested in ALAS by an orthogonal method, we used E. coli ClpX with its partner protease ClpP to unfold \u03bbO2-12-ALAS. Because\u00a0~40 amino acids of substrate polypeptide span the distance from the entrance to the ClpX pore to the active site of ClpP (Lee et al., 2010; Kenniston et al., 2005), this distance can be used to estimate the length of protein translocated by ClpX by identifying the shortest ClpXP cleavage site in a partially unfolded protein. Unlike mammalian ClpXP in vitro (Kardon et al., 2015), E. coli ClpXP could degrade ALAS if provided with an E. coli-specific recognition site (\u03bbO2-12-ALAS)) (Figure 5B). This degradation was slowed\u00a0~4 fold when ATP was reduced to concentrations that marginally supported ATPase activity (30 \u03bcM;~20% of maximal ATPase rate) (Figure 5B,C, Figure 5\u2014figure supplement 1). In contrast, the rate at which E. coli ClpX stimulated PLP binding to ALAS was only two-fold reduced when the ATP concentration was reduced from saturating to minimal (Figure 5D). These data suggest that E. coli ClpX is only sometimes impeded by the barrier in ALAS that prevents complete unfolding by mtClpX, with partial unfolding becoming more favored at low ATPase rates. No truncations of ALAS appeared during degradation, even at the low ATP concentrations that shift E. coli ClpX toward arrest/activation, indicating that each time E. coli ClpX engages ALAS, it either activates ALAS without translocating far enough into ALAS for the polypeptide to reach the active site of ClpP, or it bypasses the arrest site, continuing to complete unfolding and degradation. These data provide an upper-limit estimate of the arrest site in ALAS near the beginning of the \u03b21 strand (~40 amino acids from the N-terminus of \u03bbO2-12-ALAS). Furthermore, these data demonstrate that although appending a simple N-terminal recognition sequence to ALAS is minimally sufficient to confer partial unfolding/activation by a na\u00efve unfoldase (here, E. coli ClpX) the total rate of ClpX action on ALAS (activation and degradation combined) is an order of magnitude lower than that for the native mtClpX-ALAS pair. Therefore, both high fidelity and efficiency in partial unfolding requires specific features of the cognate unfoldase and its interaction with the substrate.\n\nTogether with our mapping of mtClpX binding sites, these data indicate a path of unfolding and translocation from the N-terminus of ALAS through some portion of the first \u03b2 sheet, likely arresting shortly after unfolding \u03b11. The cooperatively-folded \u03b2 sheet in ALAS (Brown et al., 2018) could propagate unfolding or conformational change to other regions in the protein by disrupting structural contacts and thereby triggering the exposure observed by HX MS further into ALAS. Unfolding enacted by mtClpX along this short path could thus expose the active site and gate access for PLP.\n\n### Opening the \u03b21\u20133 gate is required for ALAS activation\n\nTo test if mtClpX unfolding of ALAS along the path from the N-terminus through \u03b11 to the following \u03b2 sheet is required to stimulate cofactor binding, we designed cysteine pairs flanking this path, such that formation of a disulfide bond between these pairs would block the linear path of ClpX-driven unfolding (Figure 6A). No disulfide bonds between the native cysteines in ALAS were predicted; in agreement with this prediction, nearly all wildtype ALAS remained unlinked after oxidation (Figure 6B). Furthermore, mtClpX stimulated oxidized and reduced wildtype\u00a0ALAS to bind PLP at a similar rate (Figure 6C,D), providing a clean background against which to observe perturbation by introduced disulfide pairs. We designed one cysteine pair (positions 68 and 243) to link the N-terminus of \u03b11 to an adjacent site in the other protomer and a second pair (positions 88 and 427) to link the \u03b11-\u03b22 junction with an adjacent site in the same protomer (Figure 6A). ALAS68x243 and ALAS88x427 both migrated as apparent monomers by SDS-PAGE when reduced, but upon oxidation exhibited a near-complete shift in mobility. Oxidized ALAS68x243 shifted to an apparent higher molecular weight, approximately twice that of an ALAS monomer, consistent with a cross-protomer disulfide bond. Oxidized ALAS88x427 shifted to a slightly faster-migrating species, consistent with the intramolecular crosslink between these residues (Figure 6B). Other cysteine pairs we introduced further along the path of unfolding by mtClpX severely perturbed ALAS protein folding or stability and were thus uninterpretable in our unfolding experiments.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig6-v2.jpg)\n\n**Figure 6.:** (A) The proposed path of mtClpX unfolding of ALAS to the active site is indicated in blue on the structure of yeast ALAS (PDB: 5TXR (Brown et al., 2018); image created with UCSF Chimera (Pettersen et al., 2004). The positions of cysteine pairs (indicated by amino acid number) introduced into ALAS are indicated by orange bonds. (B) Samples of ALAS cysteine variants (wt, 68\u2013243, and 88\u2013427) were separated by nonreducing SDS-PAGE and stained with Sypro Red, after oxidation (induced by addition of copper phenanthroline) and after reduction of oxidized samples with TCEP. Molecular weight marker (MW) sizes are indicated in kD. Cartoons indicate expected migration of species with intermolecular crosslinks (top right), uncrosslinked (middle right), and intramolecular crosslinks (bottom right). (C) mtClpX stimulation of PLP binding to indicated ALAS variants after oxidation and after re-reduction, monitored by fluorescence (ex. 434 nm, em. 515 nm). ALAS variants were present at 10 \u03bcM (monomer), PLP at 150 \u03bcM, ATP at 2 mM + regenerating system, and mtClpX, when included, at 0.5 \u03bcM (hexamer). Error bars represent SD from three independent experiments. p=0.002 for suppression of mtClpX action by oxidation of ALAS68x243 and 10\u22124\u00a0for ALAS88x427 (compared to reduced form of same variant). (D) Representative traces of PLP binding to ALAS variants. 100% PLP-bound value was set to observed plateau of PLP fluorescence.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54387/elife-54387-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** A group of sequence-specific contacts (blue sidechains) position mtClpX on ALAS; this contacts are important for both avidity and efficiency of processing. A flexible N-terminal element extending from this group (dotted blue line) provides a grip from which mtClpX pulls (indicated by arrow) to unfold a limited region of ALAS (as indicated by deuterium uptake, depicted in green) to expose the PLP-binding active site (PLP depicted in dark blue). The predicted region at which mtClpX arrests is mapped in coral. The structure of S. cerevisiae ALAS (PDB: 5TXR) is shown, with each protomer of the dimer colored in light or dark gray.\n\nmtClpX action upon both oxidized variants was strongly attenuated compared to wildtype ALAS (Figure 6C,D). Upon reduction of the crosslink, mtClpX induced both cysteine-pair variants of ALAS to bind PLP at a similar rate as for the wildtype protein, indicating that loss of mtClpX action on these variants was specifically perturbed by disulfide bond formation (Figure 6C,D). Therefore, we conclude that mtClpX must unfold from the N-terminal engagement site on ALAS, extracting at least the first \u03b2 strand, to activate ALAS (Figure 6\u2014figure supplement 1).\n\n## Discussion\n\nWe sought to define the mechanism by which mitochondrial ClpX deploys its activity as a protein unfoldase to activate ALAS, the initiating enzyme in heme biosynthesis. Here, we have defined sequence and structural elements that direct mtClpX to bind ALAS and unfold a substructure of the protein, gating PLP cofactor access to the active site (Figure 6\u2014figure supplement 1). Our findings describe a mechanism of biogenesis and repair for an essential mitochondrial enzyme. This mechanism involves the diversion of mtClpX from the complete, global unfolding that ClpX homologs are best understood to execute. Data from our HX MS experiments and ectopically-targeted ALAS processing by E. coli ClpX converge to indicate that mtClpX most likely stalls near the \u03b11-\u03b22 junction in ALAS. This region is dissimilar to previously described unfoldase-stalling sites (Vass and Chien, 2013; Tian et al., 2005; Zhang and Coffino, 2004), suggesting that a greater variety of signals between unfoldases and substrates can direct alternative processing outcomes. This non-canonical action of a ClpX homolog also suggests that partial unfolding may be employed to maintain and regulate a larger and more diverse set of cellular proteins than previously appreciated from studies focusing on degradation.\n\nThe elements comprising the multivalent recognition site for mtClpX on ALAS affect different parameters of mtClpX action, suggesting a model for how they cooperate to recruit mtClpX and promote unfolding of ALAS. First, a composite site that includes \u03b11 and a region immediately across the ALAS dimer interface recruits mtClpX using sequence-specific contacts (Figure 3, Figure 6\u2014figure supplement 1). Mutation of residues in this site decreased the apparent affinity of the ALAS-mtClpX interaction and insertion of an unfolding-resistant domain (DHFR) between this site and the body of ALAS blocked activation by mtClpX (Figure 1, Figure 3). The cross-dimer interaction site is also important for positioning mtClpX to efficiently engage and partially unfold ALAS. This importance is demonstrated by the reduction in the rate of unfoldase-mediated activation when the unfoldase interaction with this site is perturbed in one of several ways: (i) introduction of a mutation in this site (Y274A), (ii) perturbation of its geometry relative to the N-terminal tail and \u03b11 (as caused by insertion of DHFR), and (iii) the absence of a cognate cross-dimer site for ectopically-targeted E. coli ClpX, which activates ALAS at a low rate. Once positioned on ALAS, mtClpX initiates unfolding from the unstructured N-terminal tail of ALAS that precedes \u03b11. Initiation of unfolding did not depend on the sequence of this tail; its truncation primarily decreased the Vmax of mtClpX activation rather than the strength of mtClpX-ALAS interaction. This effect suggests that the N-terminal tail of ALAS provides a readily available site for the pore loops of mtClpX to grip and initiate unfolding. This composite signal\u2014a sequence-specific recognition site and an sequence-independent unstructured element\u2014is similar to a two-part code observed to direct protein unfolding by the proteasomal unfoldases: ubiquitin conjugation confers recognition of a protein substrate, but a nearby unstructured element is important for efficient unfolding (Prakash et al., 2004).\n\nHow does unfolding by mtClpX activate ALAS? Our HX MS observations of ALAS undergoing remodeling by mtClpX identified a linear path of remodeling, starting from the N-terminal binding site for mtClpX in \u03b11, continuing through a small \u03b2-sheet that shields PLP from solvent to the first active site loop and \u03b12. Disulfide bonds introduced along this path blocked ALAS activation, indicating that mtClpX must unfold at least through the \u03b11-\u03b21 junction and extract \u03b21 to efficiently activate ALAS, although it is possible that mtClpX directly translocates a shorter distance, or pulls from its initiation site and releases without translocating. Our experiments also localize an upper limit for how far mtClpX translocates into the structure of ALAS. The gap in the linear path of mtClpX-induced exposure at the \u03b11-\u03b21 junction, as well as the divergence in the halftimes of mtClpX-induced exchange within the N-terminus to the first \u03b2 sheet and the halftimes of all other mtClpX-induced exchange in ALAS, suggest that the \u03b11-\u03b21 junction may be the approximate arrest point for mtClpX. mtClpX-induced exposure beyond this site is likely to be a secondary consequence of unfolding in the \u03b2 sheet (due to solvent exposure of the active site and/or loss of cooperative tertiary and quaternary contacts [Brown et al., 2018]). By extracting this small portion of the otherwise intact ALAS structure, we propose that mtClpX thus opens a gate to the active site for entry of PLP and/or release of damaged PLP species (Figure 6\u2014figure supplement 1).\n\nThis limited unfolding within the compact structure of ALAS poses a further mechanistic question: how is mtClpX directed to stop, mid-unfolding, and release ALAS? A few previous examples of partial unfolding by a AAA+ unfoldase as part of proteolytic processing have been characterized, including the DNA polymerase clamp loader DnaX by ClpXP in C. crescentus and a viral protein and the transcription factors NF\u03baB and Ci by the 26S proteasome (Vass and Chien, 2013; Tian et al., 2005; Zhang and Coffino, 2004). For these substrates, as well as some engineered model substrates (Too et al., 2013; Kraut et al., 2012), the truncation point is between independent domains in the substrate protein; the unfoldase appears to be limited by encountering a mechanically stable domain and an immediately preceding sequence that stalls or releases the unfoldase. These sequences are often (but not always) glycine-rich or low-complexity (Vass and Chien, 2013; Tian et al., 2005; Zhang and Coffino, 2004; Too et al., 2013; Kraut et al., 2012); how these sequences induce stalling in an unfoldase is not known. The partial unfolding of ALAS we observe does not follow this formula in any obvious way. mtClpX appears to stop within a folded domain, rather than in a linker between domains. Although the natural N-terminus of ALAS is somewhat repetitive, replacement with the non-repetitive \u03bbO2-12 sequence still supported robust stimulation of cofactor binding by mtClpX.\n\nSeveral groups have recently observed mtClpX-dependent ALAS turnover under heme-replete conditions in vivo, directed by a heme-binding motif in ALAS (Yien et al., 2017; Kubota et al., 2016). These observations suggest that the block to complete unfolding by mtClpX may be conditionally released in a feedback mechanism, allowing complete unfolding and degradation (with mtClpP). The heme-binding motif falls within the flexible N-terminal extension (which diverges widely in sequence, even among vertebrates) that we here propose as a sequence-independent grip site for mtClpX. The N-terminal region of ALAS thus might serve as a bifunctional communication module for mtClpX, directing partial unfolding and activation when heme concentration is low, or ALAS degradation when heme concentration is high. Heme binding within this initiating site could reconfigure ALAS interaction with mtClpX such that it begins unfolding from a different site with a lower barrier to unfolding, or could\u00a0stabilize interaction with mtClpX to disfavor release.\n\nUnlike ClpX, the proteasomal unfoldases, and other AAA+ unfoldases that act on a wide variety of substrates (such as E. coli ClpX, p97/Cdc48, ClpA, and ClpB/Hsp104), some AAA+ unfoldases are dedicated modulators of one client protein. Several of these specialists, such as Rca, which de-inhibits Rubisco, or Trip13, which inactivates the mitotic checkpoint by remodeling Mad2, carry out targeted unfolding of their client that, like mtClpX with ALAS, does not appear to follow the stalling sequence/stable domain formula (Ye et al., 2015;\u00a0Bhat et al., 2017; Brulotte et al., 2017; Alfieri et al., 2018).\u00a0In the case of Rca, it has been proposed that its maximum unfolding force is low and thus calibrated to allow unfolding of only the C-terminal b strand of a Rubisco. In the case of TRIP13, remodeling of MAD2 destabilizes the ternary complex between TRIP13, MAD2, and their adaptor protein p31-comet, which may promote\u00a0release of MAD2 by favoring TRIP13 hexamer disassembly. These adaptations seem more suited to an unfoldase with a single client protein than an unfoldase such as mtClpX that has a broader range of substrates, some of which must be completely unfolded for proteolysis.\n\nOther substrate features and their interactions with the unfoldase may similarly direct both specialist AAA+ unfoldases and generalist AAA+ unfoldases with specialized substrates. Future probing of the arrest points of mtClpX on ALAS and these dedicated unfoldase-client pairs promises to uncover signals that allow protein unfoldases to direct varied but precise outcomes for their substrates.\n\n## Materials and methods\n\n### Protein purification\n\nS.S. cerevisiae ALAS (Hem1) and mtClpX (Mcx1) and related variants were expressed and purified as described previously (Kardon et al., 2015), with modifications of reducing agent (1 mM DTT) and protease inhibitors (0.5 mM PMSF only). PLP-depleted ALAS was prepared by incubation with 5 mM hydroxylamine in 25 mM HEPES pH7.6, 100 mM KCl, 10% glycerol, and 1 mM DTT overnight on ice, followed by gel filtration (Superdex 200), concentration, and snap-freezing in liquid nitrogen. E. coli ClpX and ClpP were purified as described previously (Neher et al., 2003; Kim et al., 2000).\n\n### Strain and plasmid construction\n\nThe previously described S. cerevisiae ALAS expression plasmid (pET28b-H6-SUMO-\u039457-ALAS) (Kardon et al., 2015) was modified by round-the-horn PCR to extend the N-terminus (\u039434-ALAS, \u03bbO2-12-ALAS) and by quick-change PCR to make point mutations. For DHFR fusions of ALAS, PCR products containing the M. musculus DHFR coding sequence, ALAS, additional N-terminal sequences as indicated, and short flanking regions from pET28b-H6-SUMO-\u039457-ALAS were assembled by gap repair in pRS315 in S. cerevisiae, followed by subcloning of the assembled sequence into pET28b-H6-SUMO. Strains used in this study are listed in Supplementary file 1. S. cerevisiae strains were constructed by homologous recombination at chromosomal loci. Strains are listed in Supplementary file 2.\n\n### ALA measurement\n\nOvernight cultures of yeast grown at 30\u00b0C in synthetic complete medium (CSM + YNB, Sunrise Science Products) + 2% glucose were used to inoculate cultures to OD6000.1\u20130.15 in the same media formulation. All cultures were grown to OD600\u00a0=\u00a01.0\u20131.25 at 30\u00b0C with shaking at 220 rpm. The equivalent of 10 mL at OD600\u00a0=\u00a01.0 was harvested by filtration. Cell extracts were prepared and ALA was measured by colorimetric assay using modified Ehrlich\u2019s reagent as previously described (Kardon et al., 2015), except yeast extracts were cleared by centrifugation at 21,000 g rather than 2000 g.\n\n### Peptide arrays\n\nSPOT arrays of 15-amino-acid peptides, C-terminally linked to a cellulose membrane, were synthesized by standard Fmoc techniques using a ResPep SL peptide synthesizer (Intavis). Arrays were incubated with gentle agitation in methanol (5 min) followed by TBS (3 \u00d7 5 min) and then blocking solution (TBST + 5% nonfat dry milk) (2 hr). Blocked arrays were then incubated with 0.5 \u03bcM mtClpXE206Q-3xFLAG hexamer in 25 mM HEPES pH 7.6, 100 mM KCl, 5 mM MgCl2, 10% glycerol, 0.05% Triton X-100, and 5% nonfat dry milk (1 hr), washed in blocking solution (3 \u00d7 5 min), incubated with 1 \u03bcg/mL mouse anti-FLAG M2 antibody (Sigma-Aldrich Cat# F3165, RRID:AB_259529) in blocking solution (1 hr), washed in blocking solution (3 \u00d7 5 min), incubated with goat anti-mouse IgG-alkaline phosphatase conjugate (Bio-Rad Cat# 170\u20136520, RRID:AB_11125348) diluted 1:3000 in blocking solution (30 min), washed 5 min in block, then washed in TBST (3 \u00d7 5 min). Protein binding to the array was then imaged using ECF reagent (GE Healthcare Life Sciences) with a Typhoon FLA9500 scanner (GE Healthcare Life Sciences).\n\n### Edman sequencing/protein isolation\n\nS. cerevisiae ALAS was isolated from yeast cell extract by means of a C-terminal His7 tag (strain JKY220). 1 L YPD was inoculated to OD600 0.05 from a saturated overnight culture and grown to OD600\u00a01.0 (30\u00b0C, 220 rpm shaking). Cells were harvested by centrifugation (3500 g, 5 min) and washed once by centrifugation in lysis buffer (50 mM Tris, 500 mM NaCl, 10 mM imidazole, 10% glycerol). The cell pellet was snap-frozen, thawed in 15 mL lysis buffer supplemented at 1:200 with a protease inhibitor cocktail (Calbiochem EDTA-free protease inhibitor cocktail III), lysed by French press (25 kPa, Constant Systems Ltd.), supplemented with 0.5 mM PMSF, and cleared by centrifugation (30,000 g, 20 min, 4\u00b0C). The cleared lysate was incubated with 0.5 mL Ni-NTA agarose beads (Qiagen) for 1 hr with rotation at 4\u00b0C. The lysate-bead slurry was drained over a column and washed with 50 mL lysis buffer supplemented with 20 mM imidazole and 0.5 mM PMSF. Bound protein was eluted in lysis buffer supplemented with 250 mM imidazole, precipitated with 10% TCA, resuspended in Laemmli buffer, separated by SDS-PAGE, and transferred to ImmobilonPSQ PVDF. After staining with Ponceau S to detect bound protein, a band corresponding to the tagged ALAS protein was excised and the N-terminal sequence was determined by Edman degradation at the Tufts University Core Facility (10 cycles, ABI 494 protein sequencer (Applied Biosystems)).\n\n### Fluorimetry \u2013 PLP binding\n\nPLP binding to ALAS was monitored by fluorescence (ex. 434 nm, em. 515 nm) in PD150 (25 mM HEPES pH 7.6, 150 mM KCl, 5 mM MgCl2, 10% glycerol), with ALAS, mtClpX and E. coli ClpX concentrations as described in individual experiments. Reactions additionally contained 2 mM ATP, an ATP regenerating system (5 mM creatine phosphate and 50 \u03bcg/mL creatine kinase), and 150 \u03bcM PLP, with the exception of experiments performed with a\u00a0single,\u00a05 \u03bcM concentration\u00a0of\u00a0ALAS, for which PLP was included at 50 \u03bcM. Fluorescence was monitored in a 384-well plate using a SpectraMax M5 microplate reader (Molecular Devices) or in a quartz cuvette using a Photon Technology International fluorimeter.\n\n### ALAS activity assays\n\nALA synthase activity of purified ALAS variant holoenzymes was monitored with 3 \u03bcM ALAS in PD150 with 100 \u03bcM succinyl-CoA and 100 mM glycine in a total volume of 60 \u03bcL. ALA content was determined using a procedure adapted from Mauzerall and Granick (1956) as follows. After incubation for 1 min at 30\u00b0 C, 3 volumes of a 6.7% trichloroacetic acid and 13.3 mM N-ethylmaleimide solution was added to precipitate protein and quench residual DTT, respectively. After 15 min incubation on ice, solutions were centrifuged for 10 min at 21000 g at 4\u00b0C. 150 \u03bcL supernatant was mixed with 50 \u03bcL 8% acetylacetone in 2 M sodium acetate and heated at 90\u00b0C for 10 min. After cooling for 5 min, 150 \u03bcL of the resulting solution was mixed with 150 \u03bcL of modified Ehrlich\u2019s reagent (20 mg/mL 4-(dimethylamino)benzaldehyde in 84% glacial acetic acid, 14% perchloric acid (70% stock) in a 96-well clear polystyrene plate and incubated for 15 min at room temperature. The absorbance at 552 nm and 650 nm was measured. ALA content was proportional to A552\u00a0-\u00a0A650.\n\n### Data processing and visualization\n\nKinetic data were plotted and analyzed by nonlinear regression using Graphpad Prism (RRID:SCR_002798). Structural data were visualized using UCSF Chimera (Pettersen et al., 2004,\u00a0RRID:SCR_004097).\n\n### Hydrogen-deuterium exchange and LC-MS analysis\n\n9 \u03bcM ALAS monomer was incubated in a 15-fold excess of deuterated PD150 at 20\u00b0C with 0.5 \u03bcM mtClpX and 2 mM ATP added where indicated. At prescribed labeling times, the labeling reaction was quenched with an equal volume of ice-cold 0.3 M potassium phosphate pH 2.1. 10 \u03bcL of the quenched mixture (containing 44 picomoles ALAS) were injected onto a Waters nanoAcquity with HDX technology for online pepsin digestion and UPLC peptide separation as previously described (Moroco et al., 2018), with the exception that a 5\u201335% gradient of acetonitrile over 12 min was used. A Waters Synapt G2-Si with ion mobility enabled was used for mass analysis. Peptides were identified with triplicate undeuterated samples of ALAS alone, and in complex with mtClpX and ATP as indicated, using Waters MSE and Waters Protein Lynx Global Server (PLGS) 3.0. Peptide maps were generated and deuterium incorporation was analyzed using Waters DynamX 3.0 software. Comparison experiments were performed in duplicate, yielding the same result. One representative replicate is shown for each comparison. Only peptides found in both experiments are shown. No correction was made for back-exchange, as conditions between the compared samples were identical.\n\n### Disulfide bond design and crosslinking\n\nTo engineer disulfide bonds in ALAS, cysteine positions were chosen using the Disulfide by Design 2.0 software (http://cptweb.cpt.wayne.edu/DbD2/index.php) (Craig and Dombkowski, 2013). To induce disulfide bond formation in ALAS cysteine-pair variants, proteins were buffer-exchanged (Zeba spin columns, Pierce) into PD150 and incubated with 20 \u03bcM CuSO4 and 60 \u03bcM 1,10-phenanthroline for 15 min at 22\u00b0C. For analysis by SDS-PAGE, oxidized samples were quenched with 1 mM EDTA and 1 mM N-ethylmaleimide in nonreducing Laemmli buffer. For analysis of activity, samples were buffer-exchanged into PD150. To prepare reduced protein for analysis, oxidized and buffer-exchanged samples were incubated overnight with 50 mM TCEP, then exchanged into PD150.\n\n### PLP-oxime measurements\n\nTo quantify PLP-oxime bound to ALAS, a 5 \u03bcM solution of PLP-depleted ALAS was re-supplemented with 5 mM hydroxylamine in 60 mM Na2HPO4 and 30 mM HCl, boiled for 5 min, cooled on ice and precipitated by addition of a 60% vol of 12% perchloric acid, followed by centrifugation (21,000 x g, 5 min, 4\u00b0C). The supernatant was neutralized by mixing with equal volume of 0.5 M Na3PO4 and fluorescence (excitation 380 nm; emission 460 nm) was monitored (adapted from a previous method for PLP quantitation [Srivastava and Beutler, 1973]). Fluorescence values were converted to PLP-oxime concentration by comparison with hydroxylamine-treated PLP standards.\n",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "b8cff4ca-e21d-4a2b-9b57-b3cf9b716836",
+      "submission_id": "c94381e6-0f55-46bc-8391-727075f7e8b5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andreas Martin, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54387.sa1](https://doi.org/10.7554/eLife.54387.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nUsing an elegant combination of peptide arrays, mutagenesis, protein engineering, and various biochemical assays, this study investigates the mechanisms and molecular determinants that control the recognition and partial mechanical unfolding of aminolevulinic acid synthase (ALAS) by mitochondrial ClpX (mtClpX) to promote PLP cofactor incorporation. The authors provide important new insights into the principles underlying non-proteolytic functions of ClpX and related motors of the AAA+ ATPase family.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Mitochondrial ClpX activates an essential metabolic enzyme through partial unfolding\" for consideration by eLife, and our apologies for the delay in providing you with reviews.\n\nYour article has been reviewed by three peer reviewers, including Andreas Martin as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the reviews, we regret to inform you that your manuscript can not be considered for publication in eLife in its current form, but we encourage re-submission after the reviewers' major criticism has been addressed.\n\nAll three reviewers agreed that this manuscript describes technically challenging, sophisticated, and well executed biophysical analyses of ALAS activation by mtClpX, that the presented data are clear, elegant, and compelling, and that the manuscript is well written. However, even though this study provides new insights into mtClpX's recognition motif and initiation site for partial ALAS unfolding, there were concerns about the degree of conceptual novelty and advance compared to your previously published papers on mtClpX-mediated ALAS activation. The reviewers felt that the results did not yet converge into a coherent story, and the conclusions did not extend substantially beyond the mechanisms previously described by your group for ClpXP in general or mtClpX's action on ALAS in particular. A clearer picture of mtClpX's action, especially identifying the reasons for its arrest during ALAS unfolding and translocation, would make this a much stronger manuscript and more appropriate for publication in eLife. We would therefore recommend that you consider re-submission to eLife after those mechanistic questions have been addressed in more detail.\n\nMajor point:\n\nWhat primarily limits the impact of this study is the lack of mechanistic understanding on why mtClpX stops unfolding and translocation of ALAS. As a first step, the authors should therefore attempt to identify the position of mtClpX stalling in more detail.\n\nIn their HDX-MS analyses, the authors observed a short sequence at the alpha1 / beta1 junction that exhibited no mtClpX-induced exchange, and they speculated that this may represent the stall site of mtClpX. However, it seems unlikely that the interactions of the ALAS polypeptide with pore-1 loops of a stalled yet ATP-hydrolyzing mtClpX are static and \"tight\" enough to prevent HD exchange to a similar extent as amide-proton protection in a hydrophobic core or when involved in H-bonds of secondary structures. Based on previous biochemical experiments and recent structures of related AAA+ motors with bound substrates, pore-loop interactions with substrate are expected to be mostly steric in nature and thus to not strongly interfere with hydrogen exchange.\n\nWith the presented data, it is difficult to predict a potential stall site for mtClpX. For instance, there is no information about cooperativity in the unfolding of ALAS' N-terminal region, and it is not ruled out that mtClpX only tugs on the N-terminus, translocates only a few residues, or dislodges alpha1 etc. HDX-MS experiments analyzing the foldedness and dynamics of N-terminally truncated ALAS variants could give insights into how disrupting individual secondary structures affects the conformation around the active site. Alternatively, and more obvious for the Baker lab, the authors could consider using ClpXP to more reliably identify the stall site through partial degradation (similar to their previous studies on partial degradation of GFP-fusion proteins by E. coli ClpXP in the presence of ATPgS). This information about an approximate stall site may point towards the underlying mechanism, for instance reduced grip on a low-complexity sequence etc., which can then be tested in additional experiments. The authors comment that, unlike what is proposed for the proteasomal degradation of NFkB precursors, mtClpX does not stop at an inter-domain boundary in ALAS. Perhaps there is a kinetic rather than a thermodynamic barrier to unfolding in ALAS. It would be interesting to delve more deeply into the structural features of ALAS that may block further unfolding by mtClpX, for instance using a ALAS-destabilizing mutation.\n\n1) The authors used a peptide array to identify mtClpX-binding regions of ALAS, which are shown mapped on the ALAS dimer structure in Figure 1A. However, how do the authors envision mtClpX simultaneous interaction with regions 1, 2, 4, and 5 (and maybe 6), given their distance and differential orientation/accessibility from a particular side? Is it possible that the N-terminus of PLP-free ALAS is in a different conformation compared to the holo-enzyme? The authors mention later that the beta1-3 sheet is unresolved in the PLP-free crystal structure. This should be brought up earlier and more explicitly, as it may indeed suggest an alternative conformation for the N-terminal region of PLP-free ALAS. The HDX-MS analysis of hydroxylamine-treated, PLP-depleted ALAS (data in the Supplementary file 1) seems to show increased accessibility up to residue ~ 80 compared to holoenzyme. Either way, the authors should consider including these data for the deuterium uptake of ALAS-hxl as a main-text figure, because unfolding of apo-ALAS by mtClpX for PLP-incorporation is expected to be even more relevant than unfolding of the ALAS holoenzyme.\n\n2) The authors use alanine and aspartate mutations in their peptide array analyses to investigate mtClpX interactions with the various N-terminal regions of ALAS, and propose a multivalent recognition site. However, it remains unclear what the contributions of regions 2-6 in the ALAS context actually are, because, according to Figure 1D, alpha1 alone placed on the N-terminus of a DHFR-ALAS fusion is as good as the delta57 N-terminus in supporting mtClpX catalyzed PLP binding. In this case, regions 2-6 are expected to not contribute to mtClpX binding due to their spatial separation from alpha1 and the translocation initiation site. The authors may consider a more detailed Michaelis-Menten analysis of the alpha1-DHFR-ALAS construct to assess the Km and Vmax effects of separating alpha1 from the rest of the ALAS N-terminus. Compared to the mutations in various binding regions, this separation of alpha1 has the advantage of preventing ClpX binding to regions 2-6 without potentially destabilizing the N-terminal region through mutations.\n\n3) All kinetic measurements of PLP binding and the comparisons between ALAS constructs presented in Figure 1 were performed at concentrations well below the Km of mtClpX for the respective constructs, and therefore allow only tentative conclusions. For instance, that E. coli ClpX shows a rate of \u03bb-O-ALAS unfolding (PLP binding) that is similar to the rate for mtClpX unfolding of wild-type ALAS may be just a coincidence (unless the Km values of mtClpX for ALAS and E.c. ClpX for \u03bb-O are indeed almost the same).\n\nAccording to the Michaelis-Menten analyses presented in Figure 2, the authors can produce sufficiently high concentrations of ALAS and should therefore be able to also perform the kinetic experiments presented in Figure 1 under saturating conditions and compare Vmax values.\n\n4) The co-IP assays for mtClpX (EQ) binding various ALAS mutants (Figure 3) shows a higher amount of pulled-down delta57-ALAS compared to delta34-ALAS, despite its > 2-fold higher KM. The authors should try to explain this observation. Do the extra 23 residues at the N-terminus of delta34-ALAS lead to a steric hindrance and interfere with mtClpX binding? How can this be compatible with the lower KM for delta34-ALAS? Could this be a consequence of the hydrolysis-dead EQ mutant, in which ATP-hydrolysis-dependent engagement of an extended tail cannot contribute to substrate affinity?\n\n5) The authors propose a model on how heme binding to the flexible N-terminal extension of vertebrate ALAS may switch ClpX activity from partial to complete unfolding for proteolysis. However, it is unclear how effector binding to the flexible initiation region, which is threaded (and thus stripped of anything bound to it) well before ClpX reaches its stall site, could affect the outcome of ClpX translocation. Of course, the authors can only speculate, but they should try to make this proposed model on the effects of heme more consistent with their own findings of ClpX threading ALAS from the N-terminus and stalling further downstream.\n\n6) Besides partial unfolding for PLP incorporation, mtClpX also seems to regulate ALAS protein levels. How can these two observations be reconciled? Is there an ALAS population that is fully unfolded by mtClpX? This would result in a fraction of molecules that is fully deprotected. Or does mtClpX use a different recognition motif for targeting ALAS to degradation?\n\n7) In the second paragraph of the Discussion section, the authors state that: \"its (tail) deletion increased Vmax of mtClpX rather than the avidity\u2026\".\n\nPresumably \"deletion\" should be replaced with \"extension\", or \"increased\" should be changed to \"decreased\".\n",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "494554b6-ed9e-4f46-aeeb-aa967660221e",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C1",
+      "claim": "Mitochondrial ClpX (mtClpX) activates the initiating enzyme for heme biosynthesis, 5-aminolevulinic acid synthase (ALAS), by promoting cofactor incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously discovered that the mitochondrial AAA+ protein unfoldase ClpX (mtClpX) activates the initiating enzyme for heme biosynthesis, 5-aminolevulinic acid synthase (ALAS), by promoting cofactor incorporation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors (Kardon et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "ebc2b1e9-dc20-4162-bc00-2e672005305e",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C2",
+      "claim": "mtClpX activation of ALAS is non-proteolytic but requires ATP hydrolysis and intact pore loops.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation is non-proteolytic, but requires ATP hydrolysis and intact pore loops, implicating the unfoldase activity of mtClpX in this unconventional function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Kardon et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "bf28cf56-8c8f-40ba-84b6-563549d667b4",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C3",
+      "claim": "mtClpX binds six discrete peptide sequences within ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "mtClpX bound six discrete peptide sequences within ALAS (Figure 1A, boxed in blue; control blot showing specificity in Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from peptide array binding assays shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "c1db4cc2-bfec-4abd-b18d-004c10fc32f9",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C4",
+      "claim": "Five of the six mtClpX-binding sequences map to a structurally contiguous site in ALAS consisting of \u03b1-helix \u03b11 and a region in direct hydrogen-bonding contact with \u03b11 across the ALAS dimer interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Five of these sequences map to a structurally contiguous site in ALAS, consisting of an \u03b1-helix (\u03b11) that is the most N-terminal structured element of ALAS, and a small region that is in direct hydrogen-bonding contact with \u03b11 across the ALAS dimer interface (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mapping of peptide array data onto the ALAS crystal structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "86c5ac88-d73d-4205-a071-61b6b2183f43",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C5",
+      "claim": "The sixth mtClpX-binding peptide maps to a site about 40 \u00c5 from the clustered sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The sixth, most C-terminal peptide maps to a separate site about 40 \u00c5 from the clustered sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis of the peptide binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "1ca795fe-7aa2-4a89-b735-21e3f32816eb",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C6",
+      "claim": "N-terminal fusion of DHFR with ALAS (DHFR-ALAS) blocked stimulation of PLP binding by mtClpX.",
+      "claim_type": "EXPLICIT",
+      "source": "N-terminal fusion of DHFR with ALAS (DHFR-ALAS) blocked stimulation of PLP binding by mtClpX, but appending the N-terminal sequence of ALAS through \u03b11 to DHFR-ALAS (\u03b11-DHFR-ALAS) restored the ability of mtClpX to stimulate PLP binding (Figure 1D, dark blue bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D measuring PLP binding rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "36e3ea37-3d9c-4e7e-b3a8-815929ccbd26",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C7",
+      "claim": "Appending the N-terminal sequence of ALAS through \u03b11 to DHFR-ALAS (\u03b11-DHFR-ALAS) restored the ability of mtClpX to stimulate PLP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "N-terminal fusion of DHFR with ALAS (DHFR-ALAS) blocked stimulation of PLP binding by mtClpX, but appending the N-terminal sequence of ALAS through \u03b11 to DHFR-ALAS (\u03b11-DHFR-ALAS) restored the ability of mtClpX to stimulate PLP binding (Figure 1D, dark blue bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "75942f39-f3c3-4045-9b3b-03d388608535",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C8",
+      "claim": "Addition of methotrexate to \u03b11-DHFR-ALAS blocked its activation by mtClpX.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of methotrexate to \u03b11-DHFR-ALAS blocked its activation by mtClpX (Figure 1D, dark orange bars) indicating that mtClpX acting from near the N-terminus is required for ALAS activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "e6d1c87a-2570-4496-8729-bf427efff66b",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C9",
+      "claim": "mtClpX acting from near the N-terminus is required for ALAS activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of methotrexate to \u03b11-DHFR-ALAS blocked its activation by mtClpX (Figure 1D, dark orange bars) indicating that mtClpX acting from near the N-terminus is required for ALAS activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the methotrexate blocking experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "f0c7694b-9776-415d-9e8d-9f67bf0803be",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C10",
+      "claim": "mtClpX requires the \u03b11 site to recognize ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support the conclusions that mtClpX requires the \u03b11 site to recognize ALAS and acts from this site to accelerate PLP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the DHFR fusion and methotrexate blocking experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "223ed713-76e7-46d0-8023-82862113d722",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C11",
+      "claim": "E. coli ClpX does not act on wildtype ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli ClpX does not act on wildtype ALAS (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "bc7effa7-77a3-49ed-a7e8-ceaaa153046f",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C12",
+      "claim": "E. coli ClpX accelerated PLP binding to \u03bbO2-12-ALAS fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli ClpX accelerated PLP binding to this fusion protein, albeit with a slower Vmax than observed with the native mtClpX-ALAS interaction (Figure 1E, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "ef35e02f-39d2-4364-adb4-a30b06abda02",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C13",
+      "claim": "An unfoldase acting from the N-terminal site is sufficient to stimulate ALAS activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, an unfoldase acting from this N-terminal site is sufficient to stimulate ALAS activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the E. coli ClpX experiment with \u03bbO2-12-ALAS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "fb3136dd-e52d-4c78-9b7f-0be14db404e4",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C14",
+      "claim": "mtClpX processed \u03bbO2-12-ALAS more rapidly than wildtype ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "mtClpX processed \u03bbO2-12-ALAS more rapidly than wildtype ALAS by (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "c4ec04fc-4eb3-4633-b280-dbc95fc5d1a9",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C15",
+      "claim": "The mature N-terminus of ALAS corresponds to cleavage after residue 34 of the preprotein (\u220634-ALAS).",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal sequence of this species corresponded to cleavage after residue 34 of the preprotein (\u220634-ALAS), indicating that an additional 23 amino acids beyond the previously detected species (\u220657-ALAS) are retained in the mature protein (Figure 2A, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Edman degradation data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "bb191418-b06d-4031-be4b-05045150f4b2",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C16",
+      "claim": "mtClpX activated \u220634-ALAS more rapidly than \u03bbO2-12-ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the effect of this natural N-terminal extension of ALAS on mtClpX action and found that mtClpX activated \u220634-ALAS even more rapidly than \u03bbO2-12-ALAS (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "c02a98b0-2e1d-4510-9a1d-7f5087b50be7",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C17",
+      "claim": "Extension of the N-terminus of ALAS principally stimulated the maximal rate of activation (nearly twenty-fold increase in Vmax by extension with the natural sequence) and modestly decreased the KM.",
+      "claim_type": "EXPLICIT",
+      "source": "Extension of the N-terminus of ALAS, either with its natural sequence (34-57) or with \u03bbO2-12, principally stimulated the maximal rate of activation (a nearly twenty-fold increase in Vmax by extension with the natural sequence) and modestly decreased the KM (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinetic analysis data shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "650fe6f7-ec8b-4db8-9c10-83cb5f7dc591",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C18",
+      "claim": "Extension of the N-terminus of ALAS reduced coprecipitation of ALAS with mtClpX.",
+      "claim_type": "EXPLICIT",
+      "source": "Extension of the N-terminus of ALAS also reduced coprecipitation of ALAS with mtClpX (\u220634-ALAS compared to \u220657-ALAS, Figure 3B), suggesting that this extension may present mild steric hindrance to static binding, although it increases the overall efficiency of mtClpX activation of ALAS and may disfavor dissociation after mtClpX actively engages ALAS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by coimmunoprecipitation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "89857c29-e3e0-43ce-9d26-7c8bc5d9603f",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C19",
+      "claim": "The N-terminus of \u039434-ALAS to the beginning of \u03b11 (residue 71) exhibited near-instantaneous completion of deuterium uptake in hydrogen-deuterium exchange experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This natural N-terminal extension of ALAS has a dynamic or disordered structure; the N-terminus of \u039434-ALAS to the beginning of \u03b11 (residue 71) exhibited near-instantaneous completion of deuterium uptake in hydrogen-deuterium exchange experiments (Figure 2\u2014figure supplement 1C; discussed further below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hydrogen-deuterium exchange data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "ffbbf1dc-53a9-4716-9df3-61916b70ff5a",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C20",
+      "claim": "Alanine substitution at positions F71A, Y73A, and F71A/Y73A in \u03b11 reduced coprecipitation with mtClpX.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine substitution at positions in \u03b11 (F71A, Y73A, and the double substitution F71A/Y73A, Figure 3A) reduced coprecipitation with mtClpX (Figure 3B), and increased the KM for activation by mtClpX (Figure 3C\u2013E), consistent with \u03b11 functioning as a sequence-specific tag that recruits mtClpX to begin exerting force on ALAS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by coimmunoprecipitation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "791e7f5e-998f-471b-a36c-2948dcb79dae",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C21",
+      "claim": "Alanine substitution at positions F71A, Y73A, and F71A/Y73A in \u03b11 increased the KM for activation by mtClpX.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine substitution at positions in \u03b11 (F71A, Y73A, and the double substitution F71A/Y73A, Figure 3A) reduced coprecipitation with mtClpX (Figure 3B), and increased the KM for activation by mtClpX (Figure 3C\u2013E), consistent with \u03b11 functioning as a sequence-specific tag that recruits mtClpX to begin exerting force on ALAS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinetic data shown in Figure 3C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "5f5e4890-5ac9-4605-b03b-2512bc3ab2a5",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C22",
+      "claim": "\u03b11 functions as a sequence-specific tag that recruits mtClpX to begin exerting force on ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine substitution at positions in \u03b11 (F71A, Y73A, and the double substitution F71A/Y73A, Figure 3A) reduced coprecipitation with mtClpX (Figure 3B), and increased the KM for activation by mtClpX (Figure 3C\u2013E), consistent with \u03b11 functioning as a sequence-specific tag that recruits mtClpX to begin exerting force on ALAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the mutagenesis and binding/kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "b84501d3-d344-4456-9ded-cb617ca39038",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C23",
+      "claim": "The double substitution variant (ALASF71A/Y73A) exhibited an increased rate of spontaneous PLP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The double substitution variant (ALASF71A/Y73A) exhibited an increased rate of spontaneous PLP binding (Figure 3\u2014figure supplement 2A) and an increased Vmax for mtClpX-stimulated PLP binding (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "ac4e543b-cde6-419c-aa73-ec7494b819f0",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C24",
+      "claim": "The double substitution variant (ALASF71A/Y73A) exhibited an increased Vmax for mtClpX-stimulated PLP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The double substitution variant (ALASF71A/Y73A) exhibited an increased rate of spontaneous PLP binding (Figure 3\u2014figure supplement 2A) and an increased Vmax for mtClpX-stimulated PLP binding (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinetic data shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "2c17b252-5c89-49a5-8b46-869b1c315ccf",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C25",
+      "claim": "Y73 directly contacts the other protomer through hydrogen bonding.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues are positioned at the dimer interface: Y73 directly contacts the other protomer through hydrogen bonding, and F71A is positioned for a CH-pi interaction with P246 (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "5663154d-f1bc-4d43-9905-d03799669d80",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C26",
+      "claim": "F71 is positioned for a CH-pi interaction with P246.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues are positioned at the dimer interface: Y73 directly contacts the other protomer through hydrogen bonding, and F71A is positioned for a CH-pi interaction with P246 (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "4836727b-cf24-40f9-ae47-501ecac4384a",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C27",
+      "claim": "ALASF71A/Y73A retained only ~10\u201320% of wildtype activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although F71A and Y73A single variants retained synthase activity similar to wildtype, the double variant ALASF71A/Y73A retained only ~10\u201320% of wildtype activity (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by enzyme activity assay data shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "3423d700-d818-45e1-89dc-a107f2cdcb09",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C28",
+      "claim": "The Y274A mutation did not perturb the KM for mtClpX activation of ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to mutations in \u03b11, a mutation at the surface of the mtClpX-interacting sequence cluster across the dimer interface from this helix, Y274A, did not perturb the KM for mtClpX activation of ALAS (although it did reduce coprecipitation [Figure 3B]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinetic data shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "41c2f9c1-77fd-42a7-9cf5-b8e7f68b67a7",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C29",
+      "claim": "The Y274A mutation reduced the Vmax of mtClpX activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the Y274A mutation reduced the Vmax of mtClpX activation (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinetic data shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "5f775b25-3478-44dc-8237-a1b094aabd64",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C30",
+      "claim": "F71A reduced and Y73A abolished mtClpX enhancement of ALA levels in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Within \u03b11, F71A reduced and Y73A abolished mtClpX enhancement of ALA levels in vivo (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo ALA measurement data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "b7d7b9fa-dc78-4f4e-adeb-6416366bf010",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C31",
+      "claim": "Mutation of hem1Y274A modestly reduced mtClpX-dependent ALA levels in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the trans-protomer contact for mtClpX (hem1Y274A) modestly reduced mtClpX-dependent ALA levels in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo ALA measurement data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "e094069f-2e23-4017-a851-1651781307b1",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C32",
+      "claim": "Combined mutation of hem1F71A/Y274A abolished mtClpX enhancement of ALA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined mutation of this contact and of one mtClpX \u03b11 contact (hem1F71A/Y274A) abolished mtClpX enhancement of ALA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo ALA measurement data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "1bfa70c1-a8ad-460d-a86d-31dc58b58b7e",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C33",
+      "claim": "Most of ALAS exhibited either no measurable deuteration or gradual deuteration over the 60 min observation period in the absence of mtClpX.",
+      "claim_type": "EXPLICIT",
+      "source": "ALAS conformation overall was very stable in the absence of mtClpX. Most of ALAS exhibited either no measurable deuteration or gradual deuteration over the 60 min observation period, characteristic of a tightly folded protein (with the exception of fast, immediately saturated exchange at the extreme N- and C-termini) (Figure 2\u2014figure supplement 1C and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hydrogen-deuterium exchange data shown in Figure 2\u2014figure supplement 1C and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "833ed0f9-f85a-4b9c-9bdf-4b13da85db53",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C34",
+      "claim": "In the presence of mtClpX, deuteration was increased in defined, localized regions of ALAS over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of mtClpX, deuteration was increased in defined, localized regions of ALAS over time (Figure 4; Supplementary file 1), strongly supporting the conclusion that mtClpX enacts limited, specific conformational change(s) rather than globally unfolding ALAS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hydrogen-deuterium exchange data shown in Figure 4 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "5f46b48d-1a0f-43ba-9d87-684f52610192",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C35",
+      "claim": "mtClpX enacts limited, specific conformational change(s) rather than globally unfolding ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of mtClpX, deuteration was increased in defined, localized regions of ALAS over time (Figure 4; Supplementary file 1), strongly supporting the conclusion that mtClpX enacts limited, specific conformational change(s) rather than globally unfolding ALAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the hydrogen-deuterium exchange data showing localized rather than global changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "c4d2ea8f-20c4-4c47-8ed7-1a63c2025d3b",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C36",
+      "claim": "mtClpX-induced deuterium uptake was localized to \u03b11, the \u03b2 sheet that connects \u03b11 to the active site (\u03b21\u20133) and the following active-site loop and \u03b12, and several non-contiguous peptides surrounding the active site of ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "mtClpX-induced deuterium uptake was localized to \u03b11, the \u03b2 sheet that connects \u03b11 to the active site (\u03b21\u20133) and the following active-site loop and \u03b12, and several non-contiguous peptides surrounding the active site of ALAS (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hydrogen-deuterium exchange data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "b5da1c6e-540b-4766-b5b3-f1c8638da395",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C37",
+      "claim": "The mass spectra of most peptides showing mtClpX-induced deuteration existed in two populations, corresponding to the undeuterated and the maximally deuterated form, with a single transition between these forms (EX1 kinetics).",
+      "claim_type": "EXPLICIT",
+      "source": "The mass spectra of most of these peptides existed in two populations, corresponding to the undeuterated and the maximally deuterated form, with a single transition between these forms (EX1 kinetics) (Weis et al., 2006; Figure 4A, right panel, indicated with the half-life of the EX1 unfolding event, t1/2; half-life mapped on ALAS structure in Figure 4C, lower panel), consistent with cooperative unfolding within the peptide.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hydrogen-deuterium exchange mass spectrometry data shown in Figure 4A and 4C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "dee4b218-0f53-4606-bfe8-b5ec0f9b42cb",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C38",
+      "claim": "The increased exposure of ALAS by mtClpX was ATP-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This increased exposure was ATP-dependent and thus the result of active unfolding by mtClpX (Figure 4\u2014figure supplement 1B and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hydrogen-deuterium exchange data shown in Figure 4\u2014figure supplement 1B and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "86cb0da5-6fae-4481-942f-5fd6c8c4bd93",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C39",
+      "claim": "mtClpX induced a nearly identical deuterium uptake profile in a holoenzyme preparation of ALAS as in PLP-depleted ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether exchange in this region was the direct result of mtClpX remodeling or due to loss of PLP or PLP-oxime, we tested the effect of mtClpX on deuterium uptake of a holoenzyme preparation of ALAS as well, and observed a nearly identical uptake profile (Figure 4\u2014figure supplement 1C and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hydrogen-deuterium exchange data shown in Figure 4\u2014figure supplement 1C and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "da6a939a-5ee9-4ab8-a48b-9830954458a3",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C40",
+      "claim": "Inclusion of PLP in the exchange reaction only slightly suppressed some mtClpX-induced hydrogen exchange, immediately adjacent to bound PLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of PLP in the exchange reaction only slightly suppressed some mtClpX-induced hydrogen exchange, immediately adjacent to bound PLP (Figure 4\u2014figure supplement 1D,E; see Supplementary file 1 for data from longer peptides with clear PLP-dependent protection), indicating that remodeling by mtClpX, rather than loss of ligand, induced nearly all of the increased exposure at each element in ALAS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hydrogen-deuterium exchange data shown in Figure 4\u2014figure supplement 1D,E and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "4a5d9090-a821-46f5-a804-fd08c02caf45",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C41",
+      "claim": "Remodeling by mtClpX, rather than loss of ligand, induced nearly all of the increased exposure at each element in ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of PLP in the exchange reaction only slightly suppressed some mtClpX-induced hydrogen exchange, immediately adjacent to bound PLP (Figure 4\u2014figure supplement 1D,E; see Supplementary file 1 for data from longer peptides with clear PLP-dependent protection), indicating that remodeling by mtClpX, rather than loss of ligand, induced nearly all of the increased exposure at each element in ALAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the PLP addition experiment showing minimal effect on deuterium exchange.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "45e77316-2a34-46d6-8180-b88bd156697c",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C42",
+      "claim": "The EX1 unfolding half-life (t1/2) for mtClpX-induced exchange in \u03b11 and \u03b21\u20133 is shorter than the exchange further along the path (as-\u03b12) and in the non-contiguous peptides surrounding the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the EX1 unfolding half-life (t1/2) (Engen et al., 2008) for mtClpX-induced exchange in these elements is not uniform: exchange in \u03b11 and \u03b21\u20133 has a shorter t1/2 than the exchange further along this path (as-\u03b12 indicated in Figure 1A,C) and in the non-contiguous peptides surrounding the active site (Figure 4A, right panel; Figure 4B, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hydrogen-deuterium exchange kinetic data shown in Figure 4A and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "5af2eb76-0105-43cb-b90d-6cf842494720",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C43",
+      "claim": "A short sequence (82\u201389) spanning the junction between \u03b11 and \u03b21 exhibited no mtClpX-induced exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a short sequence (82\u201389) spanning the junction between \u03b11 and \u03b21, elements that both exhibit fast mtClpX-induced exchange, exhibited no mtClpX-induced exchange (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hydrogen-deuterium exchange data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "6c826527-ee7b-4d6f-a7b1-e0ab19071f1c",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C44",
+      "claim": "The sequence 82-89 may be in contact with mtClpX when it stops translocating, suppressing deuterium exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible explanation for this observation is that this sequence in contact with mtClpX when it stops translocating, suppressing deuterium exchange even as regions further into the protein are deprotected by conformational change propagating from the putative mtClpX arrest site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the observed pattern of deuterium exchange.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "ae6380b4-fef8-4a60-a457-f016011de324",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C45",
+      "claim": "E. coli ClpXP could degrade \u03bbO2-12-ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike mammalian ClpXP in vitro (Kardon et al., 2015), E. coli ClpXP could degrade ALAS if provided with an E. coli-specific recognition site (\u03bbO2-12-ALAS)) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by degradation assay data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "6af643e1-5748-4e77-a683-c370984cb50a",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C46",
+      "claim": "Degradation of \u03bbO2-12-ALAS by E. coli ClpXP was slowed ~4 fold when ATP was reduced to concentrations that marginally supported ATPase activity (30 \u03bcM;~20% of maximal ATPase rate).",
+      "claim_type": "EXPLICIT",
+      "source": "This degradation was slowed ~4 fold when ATP was reduced to concentrations that marginally supported ATPase activity (30 \u03bcM;~20% of maximal ATPase rate) (Figure 5B,C, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by degradation kinetics data shown in Figure 5B,C and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "39db2203-e681-4631-9d8d-f1463259254e",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C47",
+      "claim": "The rate at which E. coli ClpX stimulated PLP binding to ALAS was only two-fold reduced when the ATP concentration was reduced from saturating to minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the rate at which E. coli ClpX stimulated PLP binding to ALAS was only two-fold reduced when the ATP concentration was reduced from saturating to minimal (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PLP binding kinetics data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "4482ee9a-6079-4580-9202-1280dbb1248b",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C48",
+      "claim": "No truncations of ALAS appeared during degradation by E. coli ClpXP, even at low ATP concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "No truncations of ALAS appeared during degradation, even at the low ATP concentrations that shift E. coli ClpX toward arrest/activation, indicating that each time E. coli ClpX engages ALAS, it either activates ALAS without translocating far enough into ALAS for the polypeptide to reach the active site of ClpP, or it bypasses the arrest site, continuing to complete unfolding and degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the absence of truncation products in the degradation assay gels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "ca45d72f-45e1-4563-925d-d0c83bc97949",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C49",
+      "claim": "The arrest site in ALAS is near the beginning of the \u03b21 strand (~40 amino acids from the N-terminus of \u03bbO2-12-ALAS).",
+      "claim_type": "EXPLICIT",
+      "source": "These data provide an upper-limit estimate of the arrest site in ALAS near the beginning of the \u03b21 strand (~40 amino acids from the N-terminus of \u03bbO2-12-ALAS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the degradation data and the known distance from ClpX pore entrance to ClpP active site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "3308779c-b6f9-4b12-a220-ca59b090c235",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C50",
+      "claim": "The total rate of ClpX action on ALAS (activation and degradation combined) by E. coli ClpX is an order of magnitude lower than that for the native mtClpX-ALAS pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these data demonstrate that although appending a simple N-terminal recognition sequence to ALAS is minimally sufficient to confer partial unfolding/activation by a na\u00efve unfoldase (here, E. coli ClpX) the total rate of ClpX action on ALAS (activation and degradation combined) is an order of magnitude lower than that for the native mtClpX-ALAS pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from comparison of kinetic data for E. coli ClpX and mtClpX action on ALAS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "d9ee8bd9-c86e-4b85-9026-27fa90287870",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C51",
+      "claim": "Both high fidelity and efficiency in partial unfolding requires specific features of the cognate unfoldase and its interaction with the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, both high fidelity and efficiency in partial unfolding requires specific features of the cognate unfoldase and its interaction with the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the comparison of E. coli ClpX and mtClpX action on ALAS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "48ccfcce-d73f-494d-9923-8439dbb501d8",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C52",
+      "claim": "mtClpX most likely stalls near the \u03b11-\u03b22 junction in ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from our HX MS experiments and ectopically-targeted ALAS processing by E. coli ClpX converge to indicate that mtClpX most likely stalls near the \u03b11-\u03b22 junction in ALAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined hydrogen-deuterium exchange and E. coli ClpX degradation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "d02c3d9c-ab8e-47cd-8104-b8bc619ce305",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C53",
+      "claim": "Oxidized ALAS68x243 and ALAS88x427 both migrated as apparent monomers by SDS-PAGE when reduced, but upon oxidation exhibited a near-complete shift in mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "ALAS68x243 and ALAS88x427 both migrated as apparent monomers by SDS-PAGE when reduced, but upon oxidation exhibited a near-complete shift in mobility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SDS-PAGE data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "d863c713-4465-43ec-88ce-cab2da98b5ec",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C54",
+      "claim": "Oxidized ALAS68x243 shifted to an apparent higher molecular weight, approximately twice that of an ALAS monomer, consistent with a cross-protomer disulfide bond.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxidized ALAS68x243 shifted to an apparent higher molecular weight, approximately twice that of an ALAS monomer, consistent with a cross-protomer disulfide bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SDS-PAGE data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "00197bde-6f94-493a-82ce-dd91d884e761",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C55",
+      "claim": "Oxidized ALAS88x427 shifted to a slightly faster-migrating species, consistent with the intramolecular crosslink between these residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxidized ALAS88x427 shifted to a slightly faster-migrating species, consistent with the intramolecular crosslink between these residues (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SDS-PAGE data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "7d73994f-f62c-4c26-9f66-d24ab94e4c51",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C56",
+      "claim": "mtClpX action upon both oxidized ALAS68x243 and ALAS88x427 variants was strongly attenuated compared to wildtype ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "mtClpX action upon both oxidized variants was strongly attenuated compared to wildtype ALAS (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PLP binding assay data shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "a6cefd26-6c7d-4e82-9d8b-4fb67993ff9f",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C57",
+      "claim": "Upon reduction of the crosslink, mtClpX induced both cysteine-pair variants of ALAS to bind PLP at a similar rate as for the wildtype protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon reduction of the crosslink, mtClpX induced both cysteine-pair variants of ALAS to bind PLP at a similar rate as for the wildtype protein, indicating that loss of mtClpX action on these variants was specifically perturbed by disulfide bond formation (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PLP binding assay data shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "e85065a2-193e-4db6-9f64-2bd821699bcc",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C58",
+      "claim": "mtClpX must unfold from the N-terminal engagement site on ALAS, extracting at least the first \u03b2 strand, to activate ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that mtClpX must unfold from the N-terminal engagement site on ALAS, extracting at least the first \u03b2 strand, to activate ALAS (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the disulfide crosslinking experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "59a4b469-53b3-4fe9-a9b6-5a5d897478f4",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C59",
+      "claim": "AAA+ protein unfoldases use the energy of ATP hydrolysis to pull apart the structures of their substrate proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "AAA+ protein unfoldases use the energy of ATP hydrolysis to pull apart the structures of their substrate proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established scientific knowledge about AAA+ unfoldases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "bd5c26ae-f72a-40ea-91e4-f6bc1133bb23",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C60",
+      "claim": "AAA+ unfoldases grip the substrate polypeptide with aromatic side chains of pore-1 loops that protrude into the central pore of the unfoldase hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, this is accomplished by gripping the substrate polypeptide with aromatic side chains of loops (the highly-conserved pore-1 loops) that protrude into the central pore of the unfoldase hexamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established scientific knowledge about AAA+ unfoldase mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "2a6e9786-dd29-4067-8288-cc824a954a0d",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C61",
+      "claim": "ATP hydrolysis drives conformational changes in the hexamer that pivot pore loops downward, applying mechanical force to the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP hydrolysis drives conformational changes in the hexamer that pivot these loops downward, thus applying a mechanical force from the site of engagement on the substrate, eventually unfolding it and translocating the unfolded polypeptide (Sauer and Baker, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review article (Sauer and Baker, 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "3c4a7466-c36e-49e7-af1d-6d09ede0e20b",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C62",
+      "claim": "The fundamental unfoldase-peptidase architecture and mechanism is used by eukaryotic and archaeal proteasomes and by several unfoldase-peptidase complexes shared among bacteria, mitochondria, peroxisomes, and chloroplasts.",
+      "claim_type": "EXPLICIT",
+      "source": "This fundamental unfoldase-peptidase architecture and mechanism is used by eukaryotic and archaeal proteasomes and by several unfoldase-peptidase complexes shared among bacteria, mitochondria, peroxisomes, and chloroplasts (Sauer and Baker, 2011; Saibil, 2013; Quir\u00f3s et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles (Sauer and Baker, 2011; Saibil, 2013; Quir\u00f3s et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "a7f7ea93-98a1-4388-888f-ae557d6caea9",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C63",
+      "claim": "Bacterial ClpX with its partner peptidase ClpP is particularly specialized for regulatory degradation of substrates rather than for protein quality control.",
+      "claim_type": "EXPLICIT",
+      "source": "One such bacterial unfoldase, ClpX, with its partner peptidase ClpP, is particularly specialized for regulatory degradation of substrates rather than for protein quality control, conditionally selecting a varied repertoire of substrates to execute stress responses and cell fate decisions (Gottesman, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Gottesman, 2003.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "6588e286-8f3a-476c-b65e-df6be9bbaf2f",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C64",
+      "claim": "Mitochondrial ClpX similarly acts in a regulatory capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulating evidence indicates that mitochondrial ClpX (mtClpX) similarly acts in a regulatory capacity, although only a few substrates of mtClpX have been verified and the regulatory consequences of its actions on mitochondrial physiology are largely undetermined (Kardon et al., 2015; Szczepanowska et al., 2016; Haynes et al., 2010; Matsushima et al., 2017; Kasashima et al., 2012; Al-Furoukh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies (Kardon et al., 2015; Szczepanowska et al., 2016; Haynes et al., 2010; Matsushima et al., 2017; Kasashima et al., 2012; Al-Furoukh et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "6026ffec-3576-434e-8dd3-de9e25cdb18e",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C65",
+      "claim": "The sequence preferences of mtClpX for substrate recognition diverge from those of bacterial ClpX.",
+      "claim_type": "EXPLICIT",
+      "source": "How mtClpX recognizes its substrates also has not been characterized, although its sequence preferences for substrate recognition clearly diverge from those of bacterial ClpX (Martin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Martin et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "867d6d41-0830-43b4-bbce-5c7dbabb582b",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C66",
+      "claim": "ALAS treated with hydroxylamine followed by gel filtration remained slightly more than half-occupied with a species consistent with PLP-oxime.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that ALAS treated with hydroxylamine followed by gel filtration remained slightly more than half-occupied with a species consistent with PLP-oxime (Figure 1\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence measurement data shown in Figure 1\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "c855f922-4f6c-4c75-913f-f17634f3c555",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C67",
+      "claim": "The activation of hydroxylamine-treated ALAS by mtClpX represents a combination of PLP binding to unoccupied active sites and exchange of PLP-oxime for PLP.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of hydroxylamine-treated ALAS by mtClpX therefore represents a combination of PLP binding to unoccupied active sites and exchange of PLP-oxime for PLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the PLP-oxime occupancy measurement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "63073d0d-3072-4bbc-9580-c28722a87f48",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C68",
+      "claim": "Both PLP binding to unoccupied active sites and exchange of PLP-oxime for PLP are likely useful in supporting ALAS function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Both events are likely useful in supporting ALAS function in vivo, assisting de novo PLP binding and regenerating ALAS enzyme inactive due to a damaged cofactor (for example, PMP resulting from decarboxylation-coupled transamination of PLP, or other natural errors in catalysis [John, 1995]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning supported by citation to John, 1995.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "d188d324-b4a9-4c52-ba2c-4d0ee956cd50",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C69",
+      "claim": "Most residues sensitive to mutation in the mtClpX-binding peptides were perturbed by both alanine and aspartate substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this array, we identified substitutions in each peptide that caused near-complete loss of mtClpX binding, with the exception of the most C-terminal peptide. Most residues sensitive to mutation were perturbed by both alanine and aspartate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by peptide array scanning data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "1ebfdc1e-f102-486c-a079-d1a5faded9ee",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C70",
+      "claim": "Several bulky hydrophobic amino acids (leucine, phenylalanine, and tyrosine) were highly represented in positions important for mtClpX interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Several bulky hydrophobic amino acids (leucine, phenylalanine, and tyrosine) were highly represented in positions important for mtClpX interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by peptide array scanning data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "2e428cfb-a924-4e8d-9545-4a9bf8706366",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C71",
+      "claim": "The mtClpX-preferred residues (leucine, phenylalanine, and tyrosine) differ from the characterized preference of E. coli ClpX, for which alanine and basic residues are often important in substrate recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "This side-chain preference differed from the characterized preference of E. coli ClpX, for which alanine and basic residues are often important in substrate recognition (Flynn et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with cited literature (Flynn et al., 2003).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "304a5d80-a5d4-4a22-8dc3-2d519f88abfc",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C72",
+      "claim": "The mtClpX-preferred residues comprise the set of signal residues observed to direct mitochondrial N-end rule-based degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The mtClpX-preferred residues we observe are also notable in that they comprise the set of signal residues observed to direct mitochondrial N-end rule-based degradation (V\u00f6gtle et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to V\u00f6gtle et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "3d74b83c-a85c-4d4b-bdfa-bd081cffbfe0",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C73",
+      "claim": "Removing contacts between the protomers through F71A/Y73A mutations likely increases the solvent accessibility of the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing contacts between the protomers through these mutations likely increases the solvent accessibility of the active site, thereby increasing the spontaneous PLP-ALAS binding rate at the expense of active site function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on structural analysis and activity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "c000eb4c-dc37-42c7-b185-9712e8b45121",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C74",
+      "claim": "The reduced activity of ALASF71A/Y73A illustrates a potential cost of a more solvent-accessible active site and suggests an advantage of transient, unfoldase-induced accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced activity of ALASF71A/Y73A therefore illustrates a potential cost of a more solvent-accessible active site and suggests an advantage of transient, unfoldase-induced accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the activity data for ALASF71A/Y73A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "a2e7accb-b3e6-4e0b-ab60-07c031b2cc30",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C75",
+      "claim": "The rate of unfolding of protein substrates by ClpX homologs is often proportional to the local mechanical stability of the substrate protein at the site of initiation of unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the rate of unfolding of protein substrates by ClpX homologs is often proportional to the local mechanical stability of the substrate protein at the site of initiation of unfolding, this reduced contact may be responsible for the increased Vmax of mtClpX action on ALASF71A/Y73A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge about ClpX unfoldase mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "e8b32088-108b-4f02-b4c9-c3c1941429d6",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C76",
+      "claim": "Residues F71 and Y73 in \u03b11 participate both in mtClpX recognition and in forming stabilizing contacts across the dimer interface that suppress spontaneous PLP exchange and support ALAS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues in \u03b11 thus participate both in mtClpX recognition and in forming stabilizing contacts across the dimer interface that suppress spontaneous PLP exchange and support ALAS activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined mutagenesis, binding, kinetic, and activity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "c3ea5713-cee3-487f-b6c5-581cd643ca04",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C77",
+      "claim": "The interaction of mtClpX with Y274 and possibly other residues in this peptide cluster promote rapid processing of ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding demonstrates the importance of contacts with ALAS outside of \u03b11 for mtClpX action and suggests that the interaction of mtClpX with Y274 and possibly other residues in this peptide cluster promote rapid processing of ALAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the Y274A mutation data showing reduced Vmax.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "a60ca58e-6296-410b-9f26-c1b28d32b4d3",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C78",
+      "claim": "The compound mtClpX-binding site spanned by mutations F71, Y73, and Y274 is the physiological site at which mtClpX recognizes and begins acting on ALAS to promote ALAS activation and heme biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The concordance between the effect of mutations in ALAS on its activation by mtClpX in vitro and mtClpX-dependent ALA production in vivo support the compound mtClpX-binding site spanned by these mutations as the physiological site at which mtClpX recognizes and begins acting on ALAS to promote ALAS activation and thus heme biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the concordance between in vitro and in vivo data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "b47e1da4-5daa-4053-bfe2-ed7b310cda73",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C79",
+      "claim": "Direct unfolding of some or all of \u03b11 and \u03b21\u20133 could increase solvent exposure of the active site and might also increase the conformational dynamics of active site-proximal elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct unfolding of some or all of \u03b11 and \u03b21\u20133 could increase solvent exposure of the active site and might also increase the conformational dynamics of active site-proximal elements that are contacted or indirectly stabilized by \u03b11 and \u03b21\u20133.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the hydrogen-deuterium exchange data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "02a0d645-e0be-4f1f-b946-2800ca6d645e",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C80",
+      "claim": "Unfolding enacted by mtClpX along the path from the N-terminus through \u03b11 to the following \u03b2 sheet could expose the active site and gate access for PLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfolding enacted by mtClpX along this short path could thus expose the active site and gate access for PLP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the hydrogen-deuterium exchange and structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "5120ee85-c45f-4afd-8860-05ac5f30f0a5",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C81",
+      "claim": "Several groups have recently observed mtClpX-dependent ALAS turnover under heme-replete conditions in vivo, directed by a heme-binding motif in ALAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Several groups have recently observed mtClpX-dependent ALAS turnover under heme-replete conditions in vivo, directed by a heme-binding motif in ALAS (Yien et al., 2017; Kubota et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yien et al., 2017 and Kubota et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "88ef1629-20f6-40b6-a36e-8adcabc4fe9c",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C82",
+      "claim": "The block to complete unfolding by mtClpX may be conditionally released in a feedback mechanism, allowing complete unfolding and degradation with mtClpP.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the block to complete unfolding by mtClpX may be conditionally released in a feedback mechanism, allowing complete unfolding and degradation (with mtClpP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on cited observations of heme-dependent ALAS degradation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "c7eff6ed-caa9-4c2d-a252-e794c0f3ab04",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C83",
+      "claim": "The heme-binding motif falls within the flexible N-terminal extension that serves as a sequence-independent grip site for mtClpX.",
+      "claim_type": "EXPLICIT",
+      "source": "The heme-binding motif falls within the flexible N-terminal extension (which diverges widely in sequence, even among vertebrates) that we here propose as a sequence-independent grip site for mtClpX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the location of the heme-binding motif and the characterization of the N-terminal extension.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "af30fe93-6964-4aeb-bf2e-d0819d64d28f",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C84",
+      "claim": "The N-terminal region of ALAS might serve as a bifunctional communication module for mtClpX, directing partial unfolding and activation when heme concentration is low, or ALAS degradation when heme concentration is high.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal region of ALAS thus might serve as a bifunctional communication module for mtClpX, directing partial unfolding and activation when heme concentration is low, or ALAS degradation when heme concentration is high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the heme-dependent degradation observations and the N-terminal extension characterization.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "59347046-f2b5-4d3b-9848-b9e5d2a4dc18",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C85",
+      "claim": "Heme binding within the N-terminal initiating site could reconfigure ALAS interaction with mtClpX such that it begins unfolding from a different site with a lower barrier to unfolding, or could stabilize interaction with mtClpX to disfavor release.",
+      "claim_type": "EXPLICIT",
+      "source": "Heme binding within this initiating site could reconfigure ALAS interaction with mtClpX such that it begins unfolding from a different site with a lower barrier to unfolding, or could stabilize interaction with mtClpX to disfavor release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning about the mechanism of heme-dependent degradation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "0d3c3196-132a-411f-a860-36ab60010c99",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C86",
+      "claim": "Some AAA+ unfoldases are dedicated modulators of one client protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike ClpX, the proteasomal unfoldases, and other AAA+ unfoldases that act on a wide variety of substrates (such as E. coli ClpX, p97/Cdc48, ClpA, and ClpB/Hsp104), some AAA+ unfoldases are dedicated modulators of one client protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge about AAA+ unfoldase diversity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "11efa9f9-b8df-4672-8595-7cb2c6b96041",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C87",
+      "claim": "Rca, which de-inhibits Rubisco, and Trip13, which inactivates the mitotic checkpoint by remodeling Mad2, carry out targeted unfolding of their client that does not appear to follow the stalling sequence/stable domain formula.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these specialists, such as Rca, which de-inhibits Rubisco, or Trip13, which inactivates the mitotic checkpoint by remodeling Mad2, carry out targeted unfolding of their client that, like mtClpX with ALAS, does not appear to follow the stalling sequence/stable domain formula (Ye et al., 2015; Bhat et al., 2017; Brulotte et al., 2017; Alfieri et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ye et al., 2015; Bhat et al., 2017; Brulotte et al., 2017; Alfieri et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "dd665bdf-f6d0-4348-9c1d-38dad2bba9e3",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C88",
+      "claim": "It has been proposed that Rca's maximum unfolding force is low and thus calibrated to allow unfolding of only the C-terminal b strand of Rubisco.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Rca, it has been proposed that its maximum unfolding force is low and thus calibrated to allow unfolding of only the C-terminal b strand of a Rubisco.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work on Rca.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "b0271aea-afca-43f9-aafd-e4e7f54a577d",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C89",
+      "claim": "Remodeling of MAD2 by TRIP13 destabilizes the ternary complex between TRIP13, MAD2, and their adaptor protein p31-comet, which may promote release of MAD2 by favoring TRIP13 hexamer disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of TRIP13, remodeling of MAD2 destabilizes the ternary complex between TRIP13, MAD2, and their adaptor protein p31-comet, which may promote release of MAD2 by favoring TRIP13 hexamer disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work on TRIP13.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "de7c6dd7-efbd-482b-94e7-9d4c4e20734a",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "claim_id": "C90",
+      "claim": "Substrate features and their interactions with the unfoldase may direct both specialist AAA+ unfoldases and generalist AAA+ unfoldases with specialized substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Other substrate features and their interactions with the unfoldase may similarly direct both specialist AAA+ unfoldases and generalist AAA+ unfoldases with specialized substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the observations in this study and cited work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "04f4f56b-4e49-4a17-b05d-81ab3c999059",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "mtClpX binds six discrete peptide sequences within ALAS, with five mapping to a structurally contiguous site consisting of \u03b1-helix \u03b11 and a region in direct hydrogen-bonding contact with \u03b11 across the ALAS dimer interface, and one mapping to a separate site about 40 \u00c5 away.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 are directly supported by peptide array binding data (Figure 1A) and structural mapping (Figure 1B). The experimental approach is appropriate and the data clearly show the binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "8a507ecc-0690-46da-93e1-a2dc64f293f5",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The N-terminal region including \u03b11 is required for mtClpX recognition and activation of ALAS, as demonstrated by DHFR fusion experiments where blocking access to this region prevents mtClpX action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 are supported by DHFR fusion experiments (Figure 1D) showing that N-terminal DHFR blocks activation, appending \u03b11 restores it, and methotrexate-stabilized DHFR blocks activation. The logic is sound and controls are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "4f302794-0d59-4d3d-b595-b3564a3f275f",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "An unfoldase acting from the N-terminal site is sufficient to stimulate ALAS activation, as E. coli ClpX can activate ALAS when provided with an N-terminal recognition tag (\u03bbO2-12), though with lower efficiency than mtClpX.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 are supported by experiments showing E. coli ClpX does not act on wildtype ALAS but does activate \u03bbO2-12-ALAS (Figure 1E). This demonstrates sufficiency of N-terminal engagement for activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "7b978287-ced9-4aeb-9b38-108712a74740",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The mature N-terminus of ALAS extends to residue 34 (23 amino acids longer than previously reported), and this natural N-terminal extension is flexible/disordered and dramatically enhances mtClpX activation efficiency (nearly 20-fold increase in Vmax).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 are supported by Edman degradation identifying the mature N-terminus (Figure 2A), kinetic analysis showing enhanced activation (Figure 2B-D), and hydrogen-deuterium exchange showing the extension is disordered (Figure 2\u2014figure supplement 1C). The data converge to support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "38059cd0-0df4-4359-8326-492393be955f",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Residues F71 and Y73 in \u03b11 are critical for mtClpX recognition and binding, as alanine substitutions at these positions reduce coprecipitation with mtClpX and increase KM for activation, supporting \u03b11's function as a sequence-specific recruitment tag.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 are supported by coimmunoprecipitation data (Figure 3B) and kinetic analysis (Figure 3C-E) showing mutations reduce binding and increase KM. The inference that \u03b11 functions as a recruitment tag is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "557dae98-c8ec-4afe-a27c-a25840634133",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The F71A/Y73A double mutant exhibits increased spontaneous PLP binding and increased Vmax for mtClpX-stimulated binding, but reduced ALAS activity (~10-20% of wildtype), suggesting these residues stabilize the dimer interface and that their mutation increases active site accessibility at the cost of catalytic function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27, C73-C76 are supported by spontaneous PLP binding data (Figure 3\u2014figure supplement 2A), kinetic data (Figure 3D,E), activity assays (Figure 3\u2014figure supplement 2C), and structural analysis (Figure 3\u2014figure supplement 2B). The interpretation that mutations increase solvent accessibility is reasonable given the structural and functional data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "250688e7-cd18-4802-b931-36c8f6f8a8df",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Y274A mutation does not affect KM but reduces Vmax of mtClpX activation, indicating that this trans-protomer contact site is important for efficient processing rather than initial recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29, C77 are supported by kinetic data (Figure 3D,E) showing Y274A reduces Vmax without affecting KM. The inference about the role in processing efficiency is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "abedd1cd-cd59-4012-bc05-1fda00706d87",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mutations in the mtClpX-binding site (F71A, Y73A, Y274A) reduce mtClpX-dependent ALA production in vivo, with effects correlating with in vitro activation defects, supporting this as the physiological recognition and activation site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C78 are supported by in vivo ALA measurements (Figure 3F) showing mutations reduce mtClpX-dependent ALA production. The concordance between in vitro and in vivo effects strongly supports the physiological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "7076a39d-c966-4015-8be8-8331baaa13e4",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hydrogen-deuterium exchange experiments reveal that mtClpX induces ATP-dependent, localized conformational changes in ALAS rather than global unfolding, with increased deuteration in \u03b11, \u03b21-3, active-site loop/\u03b12, and non-contiguous peptides surrounding the active site, exhibiting EX1 kinetics consistent with cooperative unfolding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 are supported by comprehensive hydrogen-deuterium exchange mass spectrometry data (Figure 4, Supplementary file 1, Figure 4\u2014figure supplement 1B). The EX1 kinetics analysis and ATP-dependence provide strong evidence for limited, specific conformational changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "f98b78e2-04bf-4a8d-9061-69198438d76d",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "mtClpX-induced conformational changes in ALAS are due to active remodeling rather than cofactor loss, as demonstrated by similar deuterium uptake profiles in holoenzyme and PLP-depleted ALAS, with only slight PLP-dependent protection immediately adjacent to bound PLP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by hydrogen-deuterium exchange experiments comparing holoenzyme and PLP-depleted ALAS (Figure 4\u2014figure supplement 1C-E). The minimal effect of PLP addition on exchange patterns strongly supports the conclusion that remodeling, not ligand loss, drives exposure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "70d39729-781a-41ab-b9fb-7bc12f161820",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The pattern of mtClpX-induced deuterium exchange suggests mtClpX stalls near the \u03b11-\u03b21 junction, as evidenced by non-uniform EX1 half-lives (shorter for \u03b11/\u03b21-3 than downstream regions) and a gap in exchange at residues 82-89 spanning the \u03b11-\u03b21 junction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44, C52 are supported by hydrogen-deuterium exchange kinetic data (Figure 4A,C, Figure 5A). The interpretation that the gap represents a contact site with arrested mtClpX is speculative but reasonable given the data pattern. The convergence with E. coli ClpX degradation data strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "ce010414-6e4b-4ab5-8cb3-f0b4ceed916a",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "E. coli ClpXP can degrade \u03bbO2-12-ALAS, with degradation slowed ~4-fold at low ATP while activation is only 2-fold reduced, and no truncation products appear, suggesting the arrest site is within ~40 amino acids of the N-terminus. The total rate of E. coli ClpX action is an order of magnitude lower than mtClpX, indicating that high fidelity and efficiency require cognate unfoldase-substrate features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 are supported by degradation assays (Figure 5B,C), PLP binding kinetics (Figure 5D), and ATPase activity measurements (Figure 5\u2014figure supplement 1). The upper-limit estimate of the arrest site is reasonable based on the known distance from ClpX pore to ClpP active site. The comparison of E. coli ClpX and mtClpX efficiency is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "f8f3055d-3631-4718-ac3c-ab9287100a42",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Engineered disulfide crosslinks blocking the path from the N-terminus through \u03b21 (ALAS68x243 and ALAS88x427) strongly attenuate mtClpX activation when oxidized but restore normal activation when reduced, demonstrating that mtClpX must unfold from the N-terminal engagement site and extract at least the first \u03b2 strand to activate ALAS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 are supported by SDS-PAGE showing crosslink formation (Figure 6B) and PLP binding assays showing oxidation blocks activation while reduction restores it (Figure 6C,D). This is a well-designed experiment that directly tests the requirement for unfolding along the proposed path.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "844eae81-dbe8-42db-b4a5-c1c69d621b17",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Hydroxylamine-treated ALAS remains slightly more than half-occupied with PLP-oxime, so mtClpX activation represents both PLP binding to unoccupied sites and exchange of PLP-oxime for PLP, both of which may be physiologically relevant for supporting ALAS function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are supported by fluorescence measurements (Figure 1\u2014figure supplement 2A,B). Claim C68 about physiological relevance is speculative but reasonable given the citation to cofactor damage mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "5da68aa4-54ea-42c1-9979-bc7ef8775741",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Peptide array scanning identified bulky hydrophobic residues (leucine, phenylalanine, tyrosine) as important for mtClpX interaction, differing from E. coli ClpX preferences (alanine, basic residues) and matching residues that direct mitochondrial N-end rule degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 are supported by peptide array scanning data (Figure 3\u2014figure supplement 1) and comparison with cited literature. The observation about N-end rule residues is interesting and well-supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "826dda6e-1894-4c4f-989c-20d596d994e4",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Unfolding of \u03b11 and \u03b21-3 by mtClpX could expose the active site and gate PLP access by increasing solvent exposure and conformational dynamics of active site-proximal elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 are reasonable inferences from the hydrogen-deuterium exchange data showing localized unfolding near the active site. The mechanism is speculative but well-supported by the structural and functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "18660355-7260-4775-84a0-100195faa01a",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The N-terminal region of ALAS, which contains a heme-binding motif, might serve as a bifunctional module directing partial unfolding/activation at low heme or complete degradation at high heme, potentially through heme-induced reconfiguration of mtClpX interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C85 are largely speculative, based on cited observations of heme-dependent ALAS degradation. While the hypothesis is interesting and the location of the heme-binding motif in the N-terminal extension is noted, no direct experimental evidence is provided in this study to test the proposed bifunctional mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "dd799c5e-f674-41a8-bff4-63f9b4325633",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Previous work established that mtClpX activates ALAS by promoting cofactor incorporation through a non-proteolytic mechanism requiring ATP hydrolysis and intact pore loops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 summarize prior work by the authors (Kardon et al., 2015) and provide essential context for the current study. These are appropriately cited background claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "d9b63522-381f-4c3a-9c57-16eecfd21d82",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background on AAA+ unfoldases: they use ATP hydrolysis to unfold substrates via pore loop engagement and translocation; this mechanism is conserved across proteasomes and bacterial/organellar unfoldase-peptidase complexes; bacterial and mitochondrial ClpX act in regulatory capacities with divergent substrate recognition preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C65 represent established knowledge about AAA+ unfoldases, appropriately cited to review articles and primary literature. These provide necessary background for understanding the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    },
+    {
+      "id": "e1b1c497-5e22-4858-a4d8-ecd5de8879fb",
+      "content_id": "e8720088-3bda-4a7d-a4ad-9f6ceffc6ec0",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Some specialist AAA+ unfoldases (Rca, Trip13) carry out targeted unfolding that does not follow the stalling sequence/stable domain formula, suggesting diverse substrate-unfoldase interactions can direct varied outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 summarize relevant literature on specialist unfoldases and draw parallels to the current work. The citations support the claims, and the speculation in C90 is reasonable given the observations in this study and cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:23:45.304562Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bf28cf56-8c8f-40ba-84b6-563549d667b4",
+      "result_id": "04f4f56b-4e49-4a17-b05d-81ab3c999059"
+    },
+    {
+      "claim_id": "c1db4cc2-bfec-4abd-b18d-004c10fc32f9",
+      "result_id": "04f4f56b-4e49-4a17-b05d-81ab3c999059"
+    },
+    {
+      "claim_id": "86c5ac88-d73d-4205-a071-61b6b2183f43",
+      "result_id": "04f4f56b-4e49-4a17-b05d-81ab3c999059"
+    },
+    {
+      "claim_id": "1ca795fe-7aa2-4a89-b735-21e3f32816eb",
+      "result_id": "8a507ecc-0690-46da-93e1-a2dc64f293f5"
+    },
+    {
+      "claim_id": "36e3ea37-3d9c-4e7e-b3a8-815929ccbd26",
+      "result_id": "8a507ecc-0690-46da-93e1-a2dc64f293f5"
+    },
+    {
+      "claim_id": "75942f39-f3c3-4045-9b3b-03d388608535",
+      "result_id": "8a507ecc-0690-46da-93e1-a2dc64f293f5"
+    },
+    {
+      "claim_id": "e6d1c87a-2570-4496-8729-bf427efff66b",
+      "result_id": "8a507ecc-0690-46da-93e1-a2dc64f293f5"
+    },
+    {
+      "claim_id": "f0c7694b-9776-415d-9e8d-9f67bf0803be",
+      "result_id": "8a507ecc-0690-46da-93e1-a2dc64f293f5"
+    },
+    {
+      "claim_id": "223ed713-76e7-46d0-8023-82862113d722",
+      "result_id": "4f302794-0d59-4d3d-b595-b3564a3f275f"
+    },
+    {
+      "claim_id": "bc7effa7-77a3-49ed-a7e8-ceaaa153046f",
+      "result_id": "4f302794-0d59-4d3d-b595-b3564a3f275f"
+    },
+    {
+      "claim_id": "ef35e02f-39d2-4364-adb4-a30b06abda02",
+      "result_id": "4f302794-0d59-4d3d-b595-b3564a3f275f"
+    },
+    {
+      "claim_id": "fb3136dd-e52d-4c78-9b7f-0be14db404e4",
+      "result_id": "7b978287-ced9-4aeb-9b38-108712a74740"
+    },
+    {
+      "claim_id": "c4ec04fc-4eb3-4633-b280-dbc95fc5d1a9",
+      "result_id": "7b978287-ced9-4aeb-9b38-108712a74740"
+    },
+    {
+      "claim_id": "bb191418-b06d-4031-be4b-05045150f4b2",
+      "result_id": "7b978287-ced9-4aeb-9b38-108712a74740"
+    },
+    {
+      "claim_id": "c02a98b0-2e1d-4510-9a1d-7f5087b50be7",
+      "result_id": "7b978287-ced9-4aeb-9b38-108712a74740"
+    },
+    {
+      "claim_id": "650fe6f7-ec8b-4db8-9c10-83cb5f7dc591",
+      "result_id": "7b978287-ced9-4aeb-9b38-108712a74740"
+    },
+    {
+      "claim_id": "89857c29-e3e0-43ce-9d26-7c8bc5d9603f",
+      "result_id": "7b978287-ced9-4aeb-9b38-108712a74740"
+    },
+    {
+      "claim_id": "ffbbf1dc-53a9-4716-9df3-61916b70ff5a",
+      "result_id": "38059cd0-0df4-4359-8326-492393be955f"
+    },
+    {
+      "claim_id": "791e7f5e-998f-471b-a36c-2948dcb79dae",
+      "result_id": "38059cd0-0df4-4359-8326-492393be955f"
+    },
+    {
+      "claim_id": "5f5e4890-5ac9-4605-b03b-2512bc3ab2a5",
+      "result_id": "38059cd0-0df4-4359-8326-492393be955f"
+    },
+    {
+      "claim_id": "b84501d3-d344-4456-9ded-cb617ca39038",
+      "result_id": "557dae98-c8ec-4afe-a27c-a25840634133"
+    },
+    {
+      "claim_id": "ac4e543b-cde6-419c-aa73-ec7494b819f0",
+      "result_id": "557dae98-c8ec-4afe-a27c-a25840634133"
+    },
+    {
+      "claim_id": "2c17b252-5c89-49a5-8b46-869b1c315ccf",
+      "result_id": "557dae98-c8ec-4afe-a27c-a25840634133"
+    },
+    {
+      "claim_id": "5663154d-f1bc-4d43-9905-d03799669d80",
+      "result_id": "557dae98-c8ec-4afe-a27c-a25840634133"
+    },
+    {
+      "claim_id": "4836727b-cf24-40f9-ae47-501ecac4384a",
+      "result_id": "557dae98-c8ec-4afe-a27c-a25840634133"
+    },
+    {
+      "claim_id": "3d74b83c-a85c-4d4b-bdfa-bd081cffbfe0",
+      "result_id": "557dae98-c8ec-4afe-a27c-a25840634133"
+    },
+    {
+      "claim_id": "c000eb4c-dc37-42c7-b185-9712e8b45121",
+      "result_id": "557dae98-c8ec-4afe-a27c-a25840634133"
+    },
+    {
+      "claim_id": "a2e7accb-b3e6-4e0b-ab60-07c031b2cc30",
+      "result_id": "557dae98-c8ec-4afe-a27c-a25840634133"
+    },
+    {
+      "claim_id": "e8b32088-108b-4f02-b4c9-c3c1941429d6",
+      "result_id": "557dae98-c8ec-4afe-a27c-a25840634133"
+    },
+    {
+      "claim_id": "3423d700-d818-45e1-89dc-a107f2cdcb09",
+      "result_id": "250688e7-cd18-4802-b931-36c8f6f8a8df"
+    },
+    {
+      "claim_id": "41c2f9c1-77fd-42a7-9cf5-b8e7f68b67a7",
+      "result_id": "250688e7-cd18-4802-b931-36c8f6f8a8df"
+    },
+    {
+      "claim_id": "c3ea5713-cee3-487f-b6c5-581cd643ca04",
+      "result_id": "250688e7-cd18-4802-b931-36c8f6f8a8df"
+    },
+    {
+      "claim_id": "5f775b25-3478-44dc-8237-a1b094aabd64",
+      "result_id": "abedd1cd-cd59-4012-bc05-1fda00706d87"
+    },
+    {
+      "claim_id": "b7d7b9fa-dc78-4f4e-adeb-6416366bf010",
+      "result_id": "abedd1cd-cd59-4012-bc05-1fda00706d87"
+    },
+    {
+      "claim_id": "e094069f-2e23-4017-a851-1651781307b1",
+      "result_id": "abedd1cd-cd59-4012-bc05-1fda00706d87"
+    },
+    {
+      "claim_id": "a60ca58e-6296-410b-9f26-c1b28d32b4d3",
+      "result_id": "abedd1cd-cd59-4012-bc05-1fda00706d87"
+    },
+    {
+      "claim_id": "1bfa70c1-a8ad-460d-a86d-31dc58b58b7e",
+      "result_id": "7076a39d-c966-4015-8be8-8331baaa13e4"
+    },
+    {
+      "claim_id": "833ed0f9-f85a-4b9c-9bdf-4b13da85db53",
+      "result_id": "7076a39d-c966-4015-8be8-8331baaa13e4"
+    },
+    {
+      "claim_id": "5f46b48d-1a0f-43ba-9d87-684f52610192",
+      "result_id": "7076a39d-c966-4015-8be8-8331baaa13e4"
+    },
+    {
+      "claim_id": "c4d2ea8f-20c4-4c47-8ed7-1a63c2025d3b",
+      "result_id": "7076a39d-c966-4015-8be8-8331baaa13e4"
+    },
+    {
+      "claim_id": "b5da1c6e-540b-4766-b5b3-f1c8638da395",
+      "result_id": "7076a39d-c966-4015-8be8-8331baaa13e4"
+    },
+    {
+      "claim_id": "dee4b218-0f53-4606-bfe8-b5ec0f9b42cb",
+      "result_id": "7076a39d-c966-4015-8be8-8331baaa13e4"
+    },
+    {
+      "claim_id": "86cb0da5-6fae-4481-942f-5fd6c8c4bd93",
+      "result_id": "f98b78e2-04bf-4a8d-9061-69198438d76d"
+    },
+    {
+      "claim_id": "da6a939a-5ee9-4ab8-a48b-9830954458a3",
+      "result_id": "f98b78e2-04bf-4a8d-9061-69198438d76d"
+    },
+    {
+      "claim_id": "4a5d9090-a821-46f5-a804-fd08c02caf45",
+      "result_id": "f98b78e2-04bf-4a8d-9061-69198438d76d"
+    },
+    {
+      "claim_id": "45e77316-2a34-46d6-8180-b88bd156697c",
+      "result_id": "70d39729-781a-41ab-b9fb-7bc12f161820"
+    },
+    {
+      "claim_id": "5af2eb76-0105-43cb-b90d-6cf842494720",
+      "result_id": "70d39729-781a-41ab-b9fb-7bc12f161820"
+    },
+    {
+      "claim_id": "6c826527-ee7b-4d6f-a7b1-e0ab19071f1c",
+      "result_id": "70d39729-781a-41ab-b9fb-7bc12f161820"
+    },
+    {
+      "claim_id": "48ccfcce-d73f-494d-9923-8439dbb501d8",
+      "result_id": "70d39729-781a-41ab-b9fb-7bc12f161820"
+    },
+    {
+      "claim_id": "ae6380b4-fef8-4a60-a457-f016011de324",
+      "result_id": "ce010414-6e4b-4ab5-8cb3-f0b4ceed916a"
+    },
+    {
+      "claim_id": "6af643e1-5748-4e77-a683-c370984cb50a",
+      "result_id": "ce010414-6e4b-4ab5-8cb3-f0b4ceed916a"
+    },
+    {
+      "claim_id": "39db2203-e681-4631-9d8d-f1463259254e",
+      "result_id": "ce010414-6e4b-4ab5-8cb3-f0b4ceed916a"
+    },
+    {
+      "claim_id": "4482ee9a-6079-4580-9202-1280dbb1248b",
+      "result_id": "ce010414-6e4b-4ab5-8cb3-f0b4ceed916a"
+    },
+    {
+      "claim_id": "ca45d72f-45e1-4563-925d-d0c83bc97949",
+      "result_id": "ce010414-6e4b-4ab5-8cb3-f0b4ceed916a"
+    },
+    {
+      "claim_id": "3308779c-b6f9-4b12-a220-ca59b090c235",
+      "result_id": "ce010414-6e4b-4ab5-8cb3-f0b4ceed916a"
+    },
+    {
+      "claim_id": "d9ee8bd9-c86e-4b85-9026-27fa90287870",
+      "result_id": "ce010414-6e4b-4ab5-8cb3-f0b4ceed916a"
+    },
+    {
+      "claim_id": "d02c3d9c-ab8e-47cd-8104-b8bc619ce305",
+      "result_id": "f8f3055d-3631-4718-ac3c-ab9287100a42"
+    },
+    {
+      "claim_id": "d863c713-4465-43ec-88ce-cab2da98b5ec",
+      "result_id": "f8f3055d-3631-4718-ac3c-ab9287100a42"
+    },
+    {
+      "claim_id": "00197bde-6f94-493a-82ce-dd91d884e761",
+      "result_id": "f8f3055d-3631-4718-ac3c-ab9287100a42"
+    },
+    {
+      "claim_id": "7d73994f-f62c-4c26-9f66-d24ab94e4c51",
+      "result_id": "f8f3055d-3631-4718-ac3c-ab9287100a42"
+    },
+    {
+      "claim_id": "a6cefd26-6c7d-4e82-9d8b-4fb67993ff9f",
+      "result_id": "f8f3055d-3631-4718-ac3c-ab9287100a42"
+    },
+    {
+      "claim_id": "e85065a2-193e-4db6-9f64-2bd821699bcc",
+      "result_id": "f8f3055d-3631-4718-ac3c-ab9287100a42"
+    },
+    {
+      "claim_id": "867d6d41-0830-43b4-bbce-5c7dbabb582b",
+      "result_id": "844eae81-dbe8-42db-b4a5-c1c69d621b17"
+    },
+    {
+      "claim_id": "c855f922-4f6c-4c75-913f-f17634f3c555",
+      "result_id": "844eae81-dbe8-42db-b4a5-c1c69d621b17"
+    },
+    {
+      "claim_id": "63073d0d-3072-4bbc-9580-c28722a87f48",
+      "result_id": "844eae81-dbe8-42db-b4a5-c1c69d621b17"
+    },
+    {
+      "claim_id": "d188d324-b4a9-4c52-ba2c-4d0ee956cd50",
+      "result_id": "5da68aa4-54ea-42c1-9979-bc7ef8775741"
+    },
+    {
+      "claim_id": "1ebfdc1e-f102-486c-a079-d1a5faded9ee",
+      "result_id": "5da68aa4-54ea-42c1-9979-bc7ef8775741"
+    },
+    {
+      "claim_id": "2e428cfb-a924-4e8d-9545-4a9bf8706366",
+      "result_id": "5da68aa4-54ea-42c1-9979-bc7ef8775741"
+    },
+    {
+      "claim_id": "304a5d80-a5d4-4a22-8dc3-2d519f88abfc",
+      "result_id": "5da68aa4-54ea-42c1-9979-bc7ef8775741"
+    },
+    {
+      "claim_id": "b47e1da4-5daa-4053-bfe2-ed7b310cda73",
+      "result_id": "826dda6e-1894-4c4f-989c-20d596d994e4"
+    },
+    {
+      "claim_id": "02a0d645-e0be-4f1f-b946-2800ca6d645e",
+      "result_id": "826dda6e-1894-4c4f-989c-20d596d994e4"
+    },
+    {
+      "claim_id": "5120ee85-c45f-4afd-8860-05ac5f30f0a5",
+      "result_id": "18660355-7260-4775-84a0-100195faa01a"
+    },
+    {
+      "claim_id": "88ef1629-20f6-40b6-a36e-8adcabc4fe9c",
+      "result_id": "18660355-7260-4775-84a0-100195faa01a"
+    },
+    {
+      "claim_id": "c7eff6ed-caa9-4c2d-a252-e794c0f3ab04",
+      "result_id": "18660355-7260-4775-84a0-100195faa01a"
+    },
+    {
+      "claim_id": "af30fe93-6964-4aeb-bf2e-d0819d64d28f",
+      "result_id": "18660355-7260-4775-84a0-100195faa01a"
+    },
+    {
+      "claim_id": "59347046-f2b5-4d3b-9848-b9e5d2a4dc18",
+      "result_id": "18660355-7260-4775-84a0-100195faa01a"
+    },
+    {
+      "claim_id": "494554b6-ed9e-4f46-aeeb-aa967660221e",
+      "result_id": "dd799c5e-f674-41a8-bff4-63f9b4325633"
+    },
+    {
+      "claim_id": "ebc2b1e9-dc20-4162-bc00-2e672005305e",
+      "result_id": "dd799c5e-f674-41a8-bff4-63f9b4325633"
+    },
+    {
+      "claim_id": "59a4b469-53b3-4fe9-a9b6-5a5d897478f4",
+      "result_id": "d9b63522-381f-4c3a-9c57-16eecfd21d82"
+    },
+    {
+      "claim_id": "bd5c26ae-f72a-40ea-91e4-f6bc1133bb23",
+      "result_id": "d9b63522-381f-4c3a-9c57-16eecfd21d82"
+    },
+    {
+      "claim_id": "2a6e9786-dd29-4067-8288-cc824a954a0d",
+      "result_id": "d9b63522-381f-4c3a-9c57-16eecfd21d82"
+    },
+    {
+      "claim_id": "3c4a7466-c36e-49e7-af1d-6d09ede0e20b",
+      "result_id": "d9b63522-381f-4c3a-9c57-16eecfd21d82"
+    },
+    {
+      "claim_id": "a7f7ea93-98a1-4388-888f-ae557d6caea9",
+      "result_id": "d9b63522-381f-4c3a-9c57-16eecfd21d82"
+    },
+    {
+      "claim_id": "6588e286-8f3a-476c-b65e-df6be9bbaf2f",
+      "result_id": "d9b63522-381f-4c3a-9c57-16eecfd21d82"
+    },
+    {
+      "claim_id": "6026ffec-3576-434e-8dd3-de9e25cdb18e",
+      "result_id": "d9b63522-381f-4c3a-9c57-16eecfd21d82"
+    },
+    {
+      "claim_id": "0d3c3196-132a-411f-a860-36ab60010c99",
+      "result_id": "e1b1c497-5e22-4858-a4d8-ecd5de8879fb"
+    },
+    {
+      "claim_id": "11efa9f9-b8df-4672-8595-7cb2c6b96041",
+      "result_id": "e1b1c497-5e22-4858-a4d8-ecd5de8879fb"
+    },
+    {
+      "claim_id": "dd665bdf-f6d0-4348-9c1d-38dad2bba9e3",
+      "result_id": "e1b1c497-5e22-4858-a4d8-ecd5de8879fb"
+    },
+    {
+      "claim_id": "b0271aea-afca-43f9-aafd-e4e7f54a577d",
+      "result_id": "e1b1c497-5e22-4858-a4d8-ecd5de8879fb"
+    },
+    {
+      "claim_id": "de7c6dd7-efbd-482b-94e7-9d4c4e20734a",
+      "result_id": "e1b1c497-5e22-4858-a4d8-ecd5de8879fb"
+    }
+  ],
+  "comparisons": []
+}

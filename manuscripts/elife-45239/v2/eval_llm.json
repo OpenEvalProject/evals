@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C19",
+      "C21",
+      "C94",
+      "C95"
+    ],
+    "result": "scMOCa enables specific labeling of cells by laser-mediated crosslinking of biotin to cell membranes, followed by attachment of streptavidin-coated magnetic beads. The high-affinity biotin-streptavidin bond (Kd = 10\u207b\u00b9\u2075M) allows stringent washing to remove unbound beads, achieving specific tagging of only laser-illuminated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C94, and C95 describe the core labeling mechanism with experimental protocol details. C19 provides the biochemical basis (biotin-streptavidin Kd), and C21 demonstrates optional bead removal capability. Figure 1B visually confirms specific bead attachment only to illuminated cells. The method is well-documented with clear mechanistic rationale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "scMOCa achieves high capture efficiency (slope 0.99 for 1-50 cells) and specificity, generating pure samples from rare cell populations (0.02% of total, representing five-orders-of-magnitude enrichment). In comparison, commercial MACS columns captured only ~25% of target cells with ~75% false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide quantitative capture efficiency data supported by Figure 3A. C25-C26 offer direct comparison to commercial methods. The PCR data (Figure 3B-C) confirms purity of isolated populations. Statistical analysis is appropriate, though sample sizes for MACS comparison (n=3) are modest. The five-orders-of-magnitude enrichment claim is well-supported by the dog/mouse cell sorting experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Cells isolated using scMOCa remain viable and proliferate normally across multiple cell types including immortalized cell lines, primary cells (HUVECs, lung fibroblasts, DRG neurons), and mouse embryonic stem cells. Sorted cells display normal morphology, proliferation, and differentiation capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C35 are supported by extensive imaging data in Figure 4 showing multiple cell types proliferating and maintaining normal functions post-sorting. The diversity of cell types tested (including fragile primary cells and stem cells) strengthens the conclusion. However, quantitative viability/proliferation assays would strengthen these qualitative observations. The stem cell differentiation experiment (C35) provides functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "scMOCa can isolate cells based on their ability to resolve ionizing radiation-induced 53BP1 DNA damage foci. Fast-resolving cells (>85% foci resolved in 2 hr) represent ~1% of the population and cannot be sorted by FACS because overall nuclear fluorescence intensity does not correlate with foci number (Pearson coefficient -0.15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide quantitative characterization of foci dynamics with appropriate statistical measures. C46 correctly identifies why FACS is unsuitable (spatial vs. total intensity). The experimental design is sound, though the threshold for 'fast-resolving' (>85% resolution) appears somewhat arbitrary. The Pearson coefficient supports the claim that FACS cannot distinguish these cells. Figure 5A provides visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Cells isolated based on fast 53BP1 foci resolution retain this phenotype through multiple generations. Populations #1 and #2 resolved foci 1.5\u00d7 faster than parental cells (statistically significant at 75 min, p<10\u207b\u00b3\u2079), with similar initial foci formation, 53BP1 protein levels, and cell cycle distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by extensive quantitative data in Figure 5B-F analyzing ~21,000 cells total. The statistical significance is extremely strong (p-values of 10\u207b\u2077\u2075 and 10\u207b\u00b3\u2079). Controls for protein levels (C51, immunoblot) and cell cycle (C52, FACS) appropriately rule out alternative explanations. The heritability of the phenotype is a key finding, though the mechanism remains unexplored (acknowledged by authors).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C60",
+      "C61"
+    ],
+    "result": "scMOCa can isolate multinucleated cells, which are visually identifiable but cannot be distinguished from polyploid cells by FACS. Isolated multinucleated cells remained viable for 4 days as demonstrated by Mitotracker staining of polarized mitochondrial membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 correctly identify the limitation of FACS for this application (supported by citations). C60-C61 demonstrate viability of isolated cells with appropriate markers (Mitotracker for metabolic activity). Figure 6 provides visual evidence. However, longer-term viability and functional characterization would strengthen this proof-of-principle demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "scMOCa can isolate differentiated adipocytes based on lipid vesicle accumulation. Sorted adipocytes remained viable and maintained lipid storage capacity for one week, providing a simpler alternative to flow cytometry-based granularity sorting which requires multiple steps to remove false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C65 describe the experimental protocol and results supported by Figure 6E-F. C64 correctly identifies limitations of alternative approaches (cited). The one-week viability is notable. However, this is primarily a proof-of-concept demonstration with limited quantitative characterization of adipocyte function beyond visual inspection of lipid vesicles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C78",
+      "C79",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "scMOCa is uniquely capable of isolating cells based solely on visual criteria including morphology, time-dependent characteristics, and intracellular markers. The method requires only standard equipment (confocal microscope, handmade chambers, magnets) without specialized software or microfluidic chips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C84-C86 are supported by the experimental demonstrations throughout the paper. C66's claim of uniqueness is reasonable given the demonstrated capabilities, though 'to the best of our knowledge' appropriately qualifies this. The simplicity advantage (C85-C86) is well-documented. The proof-of-principle experiments validate sorting based on diverse visual criteria including time-dependent phenotypes (foci resolution).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "scMOCa prevents sample dilution and shear stress because sorting occurs in small chambers of similar size without microfluidic tubing. The biotin-streptavidin bond (Kd=10\u207b\u00b9\u2075M) is stronger than immunochemistry bonds (10\u207b\u00b9\u00b2-10\u207b\u2079M), preventing tag detachment during manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 correctly describe design advantages with appropriate citations. C82-C83 provide comparative biochemical context (cited). The reasoning is sound, though direct experimental comparison of cell stress/damage between methods would strengthen these claims. The chamber design inherently prevents dilution, and the bond strength comparison is well-established biochemistry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The main limitation of scMOCa is that high-throughput implementation depends on efficient image processing for cell detection. While automated detection is possible, the procedure duration is proportional to target cell number (~1 second per cell for laser illumination).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 honestly acknowledge method limitations. The ~1 second per cell timing (C89) is a direct experimental observation. The throughput limitation is inherent to the serial nature of laser tagging. This is appropriate critical self-assessment, though the authors note this is primarily limiting for large cell numbers, not the rare cell applications emphasized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Current cell sorting technologies have significant limitations for rare cell isolation. FACS/MACS require large cell numbers and achieve limited purity (~45%) for rare populations. Microfluidic and magnetic approaches have efficiency/specificity tradeoffs, with magnetic methods typically achieving ~50% purity despite ~90% efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18, C67-C76 provide comprehensive literature-based context for existing methods, all appropriately cited. These establish the need for scMOCa and provide comparative framework. The characterization of existing methods' limitations is well-supported by citations and consistent with the field. This contextualizes the significance of scMOCa's performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Visual cellular characteristics (migration, morphology, location, protein distribution) are important biological indicators, and CLaP (the predecessor method) enables biotin labeling of cells without requiring surface markers or reporter genes, with no detectable effects on cell function or gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 establish biological context (appropriately cited). C10-C13 describe the CLaP predecessor method (cited to Binan et al., 2016). These provide essential background but are not novel findings of this manuscript. The characterization of CLaP's properties relies on prior work, appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Critical technical parameters for scMOCa include: bead size determines internalization vs. surface retention; chamber separation must be ~6mm during transfer; chamber dimensions (5mm diameter, 2mm thickness) determine surface tension; and turbulence must be minimized to prevent false positive capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe critical experimental parameters with clear rationale. C20 describes bead behavior based on size. These technical details are important for reproducibility. However, C20's claim about size-dependent behavior is stated as observation without supporting data showing both behaviors. The other parameters are well-justified by the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cell viability and proliferation at low cell numbers can be improved using conditioned medium (containing secreted growth factors) and collagen coating of collection chambers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe optimization strategies, all appropriately cited to prior literature. These are established techniques applied to scMOCa rather than novel findings. The recommendations are reasonable and well-supported by citations, representing practical guidance for implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Multinucleated cells in cancer contexts have been described as more aggressive and metastatic, prone to drug resistance and relapse, and can generate mononucleated progeny by budding or influence neighboring cells through secreted factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 provide biological context for the multinucleated cell application, all appropriately cited. These establish the significance of being able to isolate these cells but are not findings of this study. The characterization relies entirely on prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "scMOCa has potential future applications including: exploitation of other particle properties (fluorescence, electron density, plasmon resonance, thermal capacity, electrical properties); combination with single-cell sequencing to study metastatic potential; and applications in personalized medicine for cancer and other disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77, C90-C93 are explicitly speculative about future applications. While the suggestions are reasonable and appropriately cited to relevant literature, they represent potential rather than demonstrated capabilities. C77 and C90 are particularly speculative. These are appropriate for a Discussion section but cannot be evaluated as supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "A U2OS cell line with doxycycline-inducible GFP-53BP1 was constructed and used for foci analysis. An automated image processing pipeline using Otsu thresholding was developed for focus detection and quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 describe methods with appropriate citations. The cell line construction (C99) follows established protocols (cited). The image analysis approach (C101-C102) is appropriately cited to prior work. These are standard methodological details necessary for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

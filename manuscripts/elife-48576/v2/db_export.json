@@ -1,0 +1,2421 @@
+{
+  "submission": {
+    "id": "a57c73e4-3148-48be-b9a7-3ea832cce891",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:18:11.424852Z",
+    "updated_at": "2025-12-02T11:18:11.424852Z"
+  },
+  "content": [
+    {
+      "id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "submission_id": "a57c73e4-3148-48be-b9a7-3ea832cce891",
+      "content_type": "manuscript",
+      "content_text": "# ML277 specifically enhances the fully activated open state of KCNQ1 by modulating VSD-pore coupling\n\n## Authors\n\n- Panpan Hou<sup>1</sup> ([ORCID: 0000-0001-7694-2262](https://orcid.org/0000-0001-7694-2262))\n- Jingyi Shi<sup>1</sup>\n- Kelli McFarland White<sup>1</sup>\n- Yuan Gao<sup>4</sup> ([ORCID: 0000-0002-7661-2367](https://orcid.org/0000-0002-7661-2367))\n- Jianmin Cui<sup>1</sup> ([ORCID: 0000-0002-9198-6332](https://orcid.org/0000-0002-9198-6332)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering Washington University St. Louis United States\n2. Center for the Investigation of Membrane Excitability Disorders Washington University St. Louis United States\n3. Cardiac Bioelectricity and Arrhythmia Center Washington University St. Louis United States\n4. Tencent AI Lab Shenzhen China\n\n\u2020 Corresponding author\n\n## Abstract\n\nUpon membrane depolarization, the KCNQ1 potassium channel opens at the intermediate (IO) and activated (AO) states of the stepwise voltage-sensing domain (VSD) activation. In the heart, KCNQ1 associates with KCNE1 subunits to form IKs channels that regulate heart rhythm. KCNE1 suppresses the IO state so that the IKs channel opens only to the AO state. Here, we tested modulations of human KCNQ1 channels by an activator ML277 in Xenopus oocytes. It exclusively changes the pore opening properties of the AO state without altering the IO state, but does not affect VSD activation. These observations support a distinctive mechanism responsible for the VSD-pore coupling at the AO state that is sensitive to ML277 modulation. ML277 provides insights and a tool to investigate the gating mechanism of KCNQ1 channels, and our study reveals a new strategy for treating long QT syndrome by specifically enhancing the AO state of native IKs currents.\n\n## Introduction\n\nKCNQ1, also known as KV7.1 or KVLQT1, belongs to a subfamily of voltage-activated potassium channels (Barhanin et al., 1996; Sanguinetti et al., 1996; Wang et al., 1996). It adopts the canonical structural organization of the homo-tetrameric KV superfamily, in which each subunit contains six transmembrane segments (S1-S6), with the first four (S1-S4) forming the voltage-sensing domain (VSD) and the latter two (S5-S6) folding to the pore (Sun and MacKinnon, 2017). In response to membrane depolarization, the S4 segment in the VSD undergoes outward movement (Glauner et al., 1999; Larsson et al., 1996) and triggers pore opening via electromechanical (E-M) coupling interactions between the VSD and the pore. Similar to other KV members such as the Shaker channel, the VSD of KCNQ1 channels shows two steps activation: it activates sequentially from the resting state to an experimentally resolvable intermediate state before finally arriving at the fully activated state (Baker et al., 1998; Barro-Soria et al., 2014; Bezanilla et al., 1994; Carvalho-de-Souza and Bezanilla, 2018; Delemotte et al., 2011; Hou et al., 2017; Jensen et al., 2012; Lacroix et al., 2012; Ledwell and Aldrich, 1999; Osteen et al., 2012; Sigg et al., 1994; Sigworth, 1994; Silva et al., 2009; Silverman et al., 2003; Wu et al., 2010a; Wu et al., 2010b; Zagotta et al., 1994; Zaydman et al., 2014). However, unlike the Shaker channel which opens only when the VSD moves to the fully activated state, the KCNQ1 channel opens when its VSD occupies both the intermediate and fully activated conformations, resulting in intermediate-open (IO) and activated-open (AO) states (Hou et al., 2017; Zaydman et al., 2014).\n\nThe two open states, IO and AO, are distinctive from each other. Structurally, they associate with different VSD and pore conformations. During membrane depolarization, the S4 segment moves outward from its resting state to the intermediate state to trigger the IO state opening. Subsequent movement of the S4 helix from the intermediate state to the activated state then triggers conformational change of the pore from the IO state to the AO state. These VSD-pore conformations can be isolated by the mutation that arrests the VSD at the intermediate state, E160R/R231E (E1R/R2E), which results in the constitutive IO state, and the mutation that arrests the VSD at the activated state, E160R/R237E (E1R/R4E), which results in the constitutive AO state (Restier et al., 2008; Wu et al., 2010a; Wu et al., 2010b; Zaydman et al., 2014). Functionally, the two open states have different gating properties and are differentially modulated by the auxiliary subunit KCNE1, allowing us to experimentally distinguish them. These differences include (1) the AO state shows slower current kinetics and more positive voltage-dependent activation than that of the IO state, (2) KCNQ1 channels show lower open probability when the VSD moves from the intermediate state to the fully activated state, resulting in inactivation phenotypes under certain voltage stimulations, (3) the AO state shows lower Rb+/K+ permeability ratio than the IO state, (4) different E-M coupling mechanisms such that the two open states can be isolated by single mutations that ablate respective E-M couplings, and (5) KCNE1 suppresses the IO state but enhances the AO state (Hou et al., 2017; Zaydman et al., 2014).\n\nIn cardiomyocytes, KCNQ1 associates with KCNE1 to generate the slow delayed rectifier current (IKs) important for terminating cardiac action potentials (Barhanin et al., 1996; Chiamvimonvat et al., 2017; Keating and Sanguinetti, 2001; Sanguinetti et al., 1996). Clinically, more than 300 loss-of-function mutations in KCNQ1 have been found to induce functional defects to the IKs current, causing long QT syndrome (LQTS) that predisposes patients to life-threatening cardiac arrhythmia (Schwartz et al., 2012; Wang et al., 1996). KCNE1 specifically suppresses the IO state but enhances the AO state, rendering the IKs channel with only AO state openings (Zaydman et al., 2014). Therefore, the AO state is physiologically more important in the heart. Enhancing AO state currents to specifically rescue the functional defects of the mutant IKs currents presents a potential strategy for anti-LQTS therapy.\n\nDifferent activators have been found to enhance KCNQ1 and IKs currents. Zinc pyrithione (ZnPy), L-364,373 (R-L3), 4,4\u2032\u2010diisothiocyanatostilbene\u20102,2\u2032\u2010disulfonic acid (DIDS), and mefenamic acid (MFA) activate either homomeric KCNQ1 or KCNQ1\u00a0+KCNE1 complex (Abitbol et al., 1999; Busch et al., 1997; Gao et al., 2008; Salata et al., 1998; Seebohm et al., 2003a; Xiong et al., 2007), while phenylboronic acid (PBA), Hexachlorophene (HCP), mallotoxin (MTX), and 3-ethyl-2-hydroxy-2-cyclopenten-1-one (CPT1) potentiate both KCNQ1 and KCNQ1\u00a0+KCNE1 channels (De Silva et al., 2018; Mruk and Kobertz, 2009; Zheng et al., 2012). Although some of these activators are capable of shortening the action potential duration (APD) in cardiac myocytes (Salata et al., 1998; Zheng et al., 2012), none of them was found to only enhance the AO state of KCNQ1 or IKs channels. Besides KCNQ1 and IKs channels, all these activators also strongly modulate other ion channels that are key to cardiac electrophysiology, such as hERG, CaV1.2, and NaV1.5 in the heart and neuronal KCNQ channels (KCNQ2-KCNQ5) (Cruickshank et al., 2003; De Silva et al., 2018; Gao et al., 2017; Hill and Sitsapesan, 2002; Mruk and Kobertz, 2009; Salata et al., 1998; Zheng et al., 2012). The low specificity may cause severe side effects to LQTS patients, limiting the potential for further development into anti-LQTS drugs.\n\nOn the other hand, a recently identified KCNQ1 activator ML277 shows potent effect to KCNQ1 channel, while demonstrating little effects on other important cardiac ion channels including hERG, Nav1.5, and Cav1.2 channels, and other KCNQ isoforms (Yu et al., 2013; Yu et al., 2010). Moreover, ML277 shortens the APD of human-induced pluripotent stem cell (iPSC)-derived cardiomyocytes and guinea pig cardiomyocytes, via activating the IKs currents (Xu et al., 2015; Yu et al., 2013). The high specificity and potent potentiation in native IKs currents make ML277 a promising anti-LQTS drug candidate. Although computational and experimental studies have been performed to probe the binding and potentiation of ML277 on KCNQ1 and IKs channels (Xu et al., 2015; Yu et al., 2013), the mechanism underlying this potentiation on the two open states of KCNQ1 channels remains largely unclear.\n\nIn this study, we find that ML277 changes KCNQ1 channel current kinetics, alters voltage dependence of activation, inactivation property, and ion permeation. All these modifications are consistent with the mechanism that ML277 specifically enhances the current of the AO state. Supporting this mechanism, ML277 selectively enhances the currents of mutant KCNQ1 channels that open only at the AO state but not the mutant channels that open only at the IO state. These results and recordings of VSD activation using voltage clamp fluorometry (VCF) suggest that ML277 specifically promotes the E-M coupling when the VSD is at the activated state to increase the AO state current. KCNQ1 is the first ion channel that shows well resolved two open states when the VSD is at different activation states. This study sets the first example that a small molecule compound can specifically modulate only one of the two open states via enhancing the specific E-M coupling. Our study not only proposes an effective tool to investigate the gating mechanism of KCNQ1 channel with two open states, but also paves the way to new strategies, enhancing the AO state of native IKs currents, for treating LQTS.\n\n## Results\n\n### ML277 specifically enhances currents of the AO state\n\nPrevious studies have shown that, in Chinese hamster ovary (CHO) cells, ML277 potentiates both KCNQ1 channels and KCNQ1\u00a0+KCNE1 channels with unsaturated KCNE1 association. Progressive increase of KCNE1 expression reduces efficacy of ML277 and eventually abolishes its effect on KCNQ1\u00a0+KCNE1 channels with saturated KCNE1 binding (Yu et al., 2013). We tested the ML277 effects on KCNQ1 and IKs channels expressed in Xenopus oocytes, and found that 1 \u00b5M ML277 increased the KCNQ1 current amplitudes, such that the same depolarizing voltage elicited larger currents (Figure 1A), while with 1 \u00b5M ML277 less current increase was shown in KCNQ1\u00a0+KCNE1 channels with injected mRNA weight ratio of KCNQ1:KCNE1\u00a0=\u00a0300:1, which may induce unsaturated KCNE1 binding, and no current increase was shown in KCNQ1\u00a0+KCNE1 channels with injected mRNA weight ratio of 4:1, which may saturate the KCNE1 binding (Figure 1B) (Nakajo et al., 2010). These results recorded from Xenopus oocytes are consistent with previous findings from CHO cells (Yu et al., 2013). The loss of ML277 effects on KCNQ1\u00a0+KCNE1 channels with saturating KCNE1 association was suggested to result from a competition between ML277 and KCNE1 in binding to KCNQ1 (Yu et al., 2013). ML277 may bind at the interface between the VSD and the pore from two neighboring subunits, where KCNE1 is also found to bind with KCNQ1 (Chan et al., 2012; Nakajo et al., 2010; Peng et al., 2017; Ramasubramanian and Rudy, 2018; Strutz-Seebohm et al., 2011; Xu and Rudy, 2018). As a result, KCNE1 binding may block ML277 binding and abrogate its effects.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48576/elife-48576-fig1-v2.jpg)\n\n**Figure 1.:** (A) KCNQ1 currents from Xenopus oocytes recorded before (black) and after (blue) adding 1 \u00b5M ML277. The test voltages were from \u2212120 mV to 80 mV with 20 mV increments, and then returned to \u221240 mV for measuring the tail currents. (B) 1 \u00b5M ML277 effects on KCNQ1\u00a0+KCNE1 channels with injected mRNA weight ratio of KCNQ1:KCNE1\u00a0=\u00a0300:1 (left, unsaturated KCNE1 binding) and 4:1 (right, saturated KCNE1 binding). The test voltages were 40 mV for 4 s, and then returned to \u221240 mV. (C) Activation time constants (\u03c4) of KCNQ1 currents recorded at\u00a0+40 mV before (black) and after (blue) adding ML277. The time constants of the fast component (\u03c4f) and slow component (\u03c4s) were 48\u00a0\u00b1\u00a03 ms and 0.60\u00a0\u00b1\u00a00.03 s for control, and 52\u00a0\u00b1\u00a03 ms and 0.99\u00a0\u00b1\u00a00.07 s for after adding ML277. The p values were 0.37 for \u03c4f, and 0.00091 for \u03c4s, t-test, n\u00a0\u2265\u00a04. (D) Averaged results of activation time constants (\u03c4f and \u03c4s) of KCNQ1 currents recorded at different voltages before (black) and after (blue) adding ML277. n\u00a0\u2265\u00a04. (E) The increased current by ML277 (IML277-IControl, \u0394 current) from panel A. The first 1 s activation currents were shown with insets of enlarged scales, and different colors were utilized to show the \u2018delay\u2019 of the increased currents at different voltages. (F\u2013G) KCNQ1 currents recorded before (black) and after (blue) adding ML277 with 5 s time duration at \u221250 mV (F) and 100 ms time duration at\u00a0+40 mV (G). The tail currents were recorded at \u221260 mV. Voltage protocols are shown on the top. All error bars in this and other figures are\u00a0\u00b1\u00a0SEM.\n\nThe KCNQ1 currents can be fitted with two distinct exponential components in response to depolarization pulses (Figure 1A) (Hou et al., 2017). The fast time course approximates the channels opening to the IO state, while the slow component is mainly determined by the channels opening to the AO state (Hou et al., 2017). ML277 increased only the slow current component, while leaving the fast current component unaltered, which is clearly shown by merging the currents before and after ML277 application (Figure 1A,C). We compared the time constants of the fast and slow components before and after ML277 application. For example, at\u00a0+40 mV depolarization, the time constant of the slow component (\u03c4s) was changed from 0.57 s to 0.91 s, while the time constant of the fast component (\u03c4f) changed little (from 45 ms to 47 ms, Figure 1C). This selective change on the \u03c4s was observed in different voltages (Figure 1D). We also analyzed the increased currents (\u0394 currents) by subtracting control currents from currents in the presence of ML277 (Figure 1E). It is clear that the \u0394 currents have no fast current component any more and show different delays at different voltages, following the onset of the IO state (Figure 1A,E). A change only in time constant and amplitude of the slow component is quantitatively consistent with the mechanism that ML277 selectively alters the AO state without affecting the IO state.\n\nOur previous studies showed that the IO and AO states have different time- and voltage-dependence: the AO state appears only when the KCNQ1 channel is activated by voltages above \u221240 mV and for a sufficient time duration (\u2265100 ms at\u00a0+40 mV) (Hou et al., 2017). To verify that ML277 selectively increases the currents of the AO state, we tested the effect of 1 \u03bcM ML277 on KCNQ1 current when we activated KCNQ1 channels either at low voltage (\u221250 mV) or at high voltage with a short time duration (+40 mV for only 100 ms). These voltage protocol effectively restricts KCNQ1 channel activation to the IO state. In both cases, ML277 did not increase current amplitudes or alter current kinetics (Figure 1F,G). These data support that ML277 specifically modifies the current of the AO state.\n\n### ML277 right shifts the G\u2013V relationship of KCNQ1 channels\n\nWe analyzed ML277-induced changes in the voltage-dependent activation of KCNQ1 channels. ML277 activated the channel and nearly doubled the current size and the total conductance (Figures 1A and 2A). Interestingly, unlike other activators that potentiate ion channel currents by left-shifting the G\u2013V relationship (De Silva et al., 2018; Gao et al., 2017; Guo et al., 2017; Liu et al., 2013; Seebohm et al., 2003a; Zheng et al., 2012), ML277 slightly shifted the G\u2013V relationship of KCNQ1 channels to more positive voltages (\u0394V\u00a0~\u00a06 mV, Figure 2B,C). This curious result can be explained by properties of the KCNQ1 voltage-dependent activation process. The KCNQ1 currents are composed of currents of both the IO and AO states, therefore, the G\u2013V relation of KCNQ1 channels is the sum of the G\u2013V relations of both the IO and AO states. The G-V relationship of the AO state is at more positive voltages compared to the IO state, reflecting the fact that the activated VSD state requires more positive voltages than the intermediate VSD state (Hou et al., 2017; Zaydman et al., 2014). Our previous studies demonstrated that KCNQ1 conducts current predominately through the IO state (Hou et al., 2017; Zaydman et al., 2014). This property is also manifested in the kinetics of current activation, in which the slow component (primarily through the AO state) accounts for only a small portion of the total current as compared to the fast component (primarily through the IO state) (Figure 1A). The G\u2013V relation of KCNQ1 channels thus tracks closely to the G\u2013V relation of the IO state, and contains a small portion of the G\u2013V relation of the AO state. By contrast, the IKs (KCNQ1\u00a0+KCNE1) channel conducts predominantly with AO-state current, because KCNE1 suppresses pore conductance of the IO state (Zaydman et al., 2014). The G-V curve of the IKs channel is thus dominated by the G-V relationship of the AO state, and is significantly right-shifted compared to the KCNQ1 G-V relationship (Figure 2C,D). The contrasting G-V relations of the KCNQ1 (IO-dominant) and IKs (AO-dominant) are illustrated in Figure 2C and D. In this study, we utilized a single Boltzmann function, which assumes one closed state and one open state, to approximate the complex KCNQ1 G-V relation (Figure 2A,B). Accordingly, if ML277 increases the contribution of the AO state to the overall current, then a right-shift in the G-V relationship is expected, as the AO state is right-shifted compared to the IO state. We indeed observed a small right-shift in the KCNQ1 G-V relationship upon ML277 application (Figure 2B,C). The right shift of the G\u2013V relation by ML277 is consistent with the mechanism that ML277 selectively increases the AO state currents and thereby increases contribution of the AO state G-V relation to the overall G-V curve.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48576/elife-48576-fig2-v2.jpg)\n\n**Figure 2.:** (A) G\u2013V relationships of KCNQ1 channels before (black) and after (blue) adding 1 \u00b5M ML277. Data points were fitted with a Boltzmann function. n\u00a0=\u00a025. (B) Normalized G\u2013V relationships from panel A. (C) Averaged results of V50 of G\u2013V relations (voltage at which the G\u2013V is half maximal). The V50 for KCNQ1 channels is \u221226.8\u00a0\u00b1\u00a00.6 mV in control (black), and \u221220.3\u00a0\u00b1\u00a00.6 mV after adding ML277 (blue), with a significant difference (p=5\u00d710\u221210, paired t test. n\u00a0=\u00a025). The V50 of IKs channels (KCNQ1\u00a0+KCNE1) (25.6\u00a0\u00b1\u00a03.1 mV, n\u00a0=\u00a04, red) is also for comparison. (D) G\u2013V relationships of the KCNQ1 channels before (black) and after (blue) adding 1 \u00b5M ML277, and of IKs channels (red). IO/AO composition in each type of channels is indicated in parentheses.\n\n### ML277 changes the inactivation of KCNQ1 channels\n\nKCNQ1 channels show an incomplete inactivation that can be observed by a hook in tail currents at hyperpolarized voltages after a pre-pulse that activates the channel (Abitbol et al., 1999; Gibor et al., 2007; Larsen et al., 2011; Tristani-Firouzi and Sanguinetti, 1998). The hook is due to an initial increase of the inward (downward) tail current followed by continuous decay of the current (Figure 3A), consistent with the idea that channels recover from inactivation upon hyperpolarization via an open state before closing due to deactivation (Gibor et al., 2007; Larsen et al., 2011; Pusch et al., 1998; Seebohm et al., 2003b). Recently, we found that the so-called inactivation state in KCNQ1 channels is the AO state, and the hook current reflects channel deactivation from the AO state to the IO state because the channels have a higher open probability when the VSD is at the intermediate state than at the activated state (Hou et al., 2017). If ML277 selectively enhances the currents through the AO state, we expect to observe a change in KCNQ1 hook currents.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48576/elife-48576-fig3-v2.jpg)\n\n**Figure 3.:** (A) KCNQ1 tail currents recorded with pre-pulses of increasing time duration in 100 mM K+ solution. The pre-pulses were\u00a0+60 mV with time durations ranging between 0.03 and 4.355 s, and the test pulse was \u2212120 mV for 2 s. The inset shows the hook in tail currents with an expanded time scale. The current recorded with a 2.913 s pre-pulse duration is shown in red. (B) KCNQ1 tail current recorded with a 2.913 s pre-pulse duration (red) was fitted with a double exponential function F(t) = A1\u00d7exp(\u2212t/\u03c41)+ A2\u00d7exp(\u2212t/\u03c42)+C (Hou et al., 2017). The fitting curve is shown in dotted green line, the deactivation component (A1\u00a0\u00d7exp(\u2212t/\u03c41)+C) and hook component (A2\u00a0\u00d7exp(\u2212t/\u03c42)) are shown in green lines. (C) KCNQ1 tail currents after applying ML277 recorded with pre-pulses of increasing time durations in 100 mM K+ solution, with the same voltage protocol shown as in panel A. The inset shows the hook in tail currents with an expanded time scale. The current recorded with a 2.913 s pre-pulse duration is shown in red. (D) Normalized A2 of KCNQ1 hook currents before (black) and after (blue) adding ML277 vs. time durations of the pre-pulse (n\u00a0\u2265\u00a04). Data are fitted with a single exponential function.\n\nWe recorded tail currents during hyperpolarization to \u2212120 mV, with varying time durations of pre-pulses at\u00a0+40 mV that activated KCNQ1 channels. The hook current developed with pre-pulse time durations, and saturated at the 2.9 s pre-pulse (red, Figure 3A). To quantify the inactivation, we fitted the tail currents with a double exponential function F(t) = A1\u00d7exp(\u2212t/\u03c41)+ A2\u00d7exp(\u2212t/\u03c42)+C (Figure 3B), where A1 and A2 are amplitudes, \u03c41 and \u03c42 are time constants, and C is the offset due to leak currents. The hook current, recorded after a pre-pulse of 2.913 s duration at\u00a0+40 mV (red, Figure 3A,B), was well fitted by the double exponential function (green dots, Figure 3B). A1\u00a0\u00d7exp(\u2212t/\u03c41)+C represents the deactivation process (green line, Figure 3B), and A2\u00a0\u00d7exp(\u2212t/\u03c42) represents the hook current (green line, Figure 3B). A2 is the amplitude of the hook current, which is used to quantify the KCNQ1 inactivation. The normalized A2 before (black) and after (blue) adding ML277 at varying pre-pulse time durations is shown in Figure 3D. It shows that ML277 slows down the development of A2 (from 0.56 s to 1.02 s, Figure 3D), consistent with the effect that ML277 prolongs the development of the AO state (from 0.57 s to 0.91 s, Figure 1C). These results reveal that ML277 modulates the AO state and thus the inactivation property.\n\n### ML277 changes ion permeation of KCNQ1 channels\n\nPrevious studies found that KCNQ1 and IKs channels have different ion permeation. The inward tail currents of KCNQ1 channels at hyperpolarized voltages are increased about threefold upon substitution of 100 mM potassium with 100 mM rubidium (Pusch et al., 2000), however, KCNE1 association reverses this change and makes the IKs channel conducts less tail current in 100 mM rubidium than in 100 mM potassium (Pusch et al., 2000; Seebohm et al., 2003b). We recently found that these results could be explained by the mechanism that the IO and AO states have different Rb+/K+ permeability ratio (Zaydman et al., 2014). Using E1R/R2E and E1R/R4E mutations that open in the IO and AO state, respectively, we found that E1R/R4E had a significantly lower Rb+/K+ permeability ratio compared to E1R/R2E channels, indicating that the AO state has a lower Rb+/K+ permeability ratio than the IO state (Zaydman et al., 2014). Since KCNQ1 channels open predominately to the IO state, they show a high Rb+/K+ permeability ratio, similar to that of the IO state. On the other hand, since KCNE1 suppresses the IO state but enhances the AO state, the IKs channels show a lower Rb+/K+ permeability ratio (Zaydman et al., 2014).\n\nTo test ML277 induced changes in ion permeation of KCNQ1 channels, we measured tail current amplitudes of the channels before and after adding 1 \u00b5M ML277 at \u221260 mV after a\u00a0+\u00a060 mV pre-pulse for 5 s in 100 mM Rb+ and 100 mM K+ solutions, respectively. ML277 significantly decreased the Rb+/K+ permeability ratio of KCNQ1 channels (from 3.1 to 1.1, Figure 4). The Rb+/K+ permeability ratio of KCNQ1 channels after treating ML277 is closer to that of the IKs channels (Figure 4B), which is consistent with previous finding (Xu et al., 2015). These results are consistent with the mechanism that ML277 selectively enhances currents of the AO state to change the IO/AO composition in KCNQ1 channels, and the increased fraction of AO currents changes the Rb+/K+ permeability ratio toward that of the AO state.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48576/elife-48576-fig4-v2.jpg)\n\n**Figure 4.:** (A) Currents from KCNQ1 channels before (left) and after (middle) adding 1 \u00b5M ML277, as well as IKs channels (KCNQ1\u00a0+KCNE1) (right) recorded in 100 mM K+ (black) or 100 mM Rb+ (gray) external solutions. The tail currents were elicited at \u221260 mV for 3 s from a pre-pulse of\u00a0+60 mV for 5 s (top of left). (B) Averaged Rb+/K+ permeability ratios of tail current amplitudes for KCNQ1 before (3.1\u00a0\u00b1\u00a00.2, black) and after (1.1\u00a0\u00b1\u00a00.3) adding ML277, and for IKs channels (0.6\u00a0\u00b1\u00a00.1, red). All n\u00a0\u2265\u00a04.\n\n### ML277 specifically increases the currents of mutant KCNQ1 channels that open only to the AO state\n\nIn previous studies, we have demonstrated that the IO and AO states can be isolated in mutant KCNQ1 channels. Two pairs of mutations make the channels open exclusively to the IO and AO states with different mechanisms,\u00a0respectively. The first pair, E1R/R2E and E1R/R4E arrest the VSDs at the intermediate and activated states, respectively, and make the channels constitutively open at the IO and AO states, respectively (Restier et al., 2008; Wu et al., 2010a; Wu et al., 2010b; Zaydman et al., 2014). The second pair, S338F and F351A disrupt the VSD-pore couplings when the VSDs are at the activated and intermediate states, respectively, and make the channels open only to the IO and AO states, respectively (Boulet et al., 2007; Hoosien et al., 2013; Hou et al., 2017; Zaydman et al., 2014).\n\nTo confirm that ML277 specifically enhances the AO state current, we measured its effects on these mutant channels. ML277 increased currents of the mutant channels E1R/R4E and F351A that open only in the AO state, but barely enhanced the mutant channels E1R/R2E or S338F that open only to the IO state (Figure 5). These results support the mechanism that ML277 selectively enhances the current of the AO state.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48576/elife-48576-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013B) 1 \u00b5M ML277 effects on E1R/R2E, E1R/R4E, S338F, and F351A mutant KCNQ1 channels. Currents were elicited at\u00a0+40 mV for 4 s and then returned to \u221240 mV to record the tail currents. (C) Averaged percentage of ML277 induced current increase on E1R/R2E (14.2 \u00b1 4.2%), E1R/R4E (95.5 \u00b1 8.5%), S338F (0.14 \u00b1 3.1%), and F351A (52.5 \u00b1 6.3%). n\u00a0\u2265\u00a04.\n\n### ML277 enhances the E-M coupling specifically when the VSD is at the activated state\n\nThe above results all support the mechanism that ML277 selectively enhances the currents of the AO state in KCNQ1 channels. Since ML277 slows down the time course of both activation and deactivation (Figures 1C and 3A,C), it is likely to modulate the gating mechanism of KCNQ1 that specifically controls the AO state. The voltage-dependent activation of a KV channel involves three molecular events: VSD activation upon transmembrane voltage depolarization, rearrangement in interactions between the VSD and the pore (E-M coupling), and the pore opening to conduct ionic current (Cui, 2016). Interestingly, ML277 enhances the constitutive current of E1R/R4E mutant channels (Figure 5A,C), in which the VSD is arrested at the activated state by the double charge reversal mutations (Zaydman et al., 2014). This result indicates that ML277 may enhance the coupling between the VSD and pore when the VSD is at the activated state to increase open probability.\n\nTo further study this mechanism, we carried out VCF experiments, a technique that VSD movements are monitored with a fluorophore attached to the S3-S4 linker in pseudo-WT KCNQ1 (KCNQ1-C214A/G219C/C331A) channels during activation, while channel opening is monitored by current recordings (Barro-Soria et al., 2015; Barro-Soria et al., 2014; Hou et al., 2017; Osteen et al., 2012; Osteen et al., 2010; Zaydman et al., 2014; Zaydman et al., 2013). The KCNQ1 fluorescence-voltage (F\u2013V) relationship can be well-fitted by a double Boltzmann function, revealing the stepwise VSD activation processes (Figure 6A,B) (Hou et al., 2017; Zaydman et al., 2014). The time- and voltage-dependence of the VSD activation in the absence and presence of 1 \u00b5M ML277 showed little change, and the fluorescence traces could be superimposed with each other at different voltages (Figure 6A,B). Similar to the WT KCNQ1 channels (Figure 2B), ML277 induced a right-shifted G\u2013V relationship in pseudo-WT KCNQ1 (\u0394V\u00a0~\u00a05 mV, Figure 6B). The VCF results indicate that ML277 does not affect the two-step VSD activation although it doubles the current size (Figure 6A). The unchanged VSD activation with doubled conductance in the AO state strongly suggests that ML277 enhances the E-M coupling to increase the AO current. We have previously shown that the KCNQ1 channel may have distinct E-M coupling mechanisms to open the pore when the VSD is at the intermediate and activated state (Hou et al., 2017; Zaydman et al., 2014), thus small molecule compounds which can specifically target distinct E-M coupling pathways in KCNQ1 is not unexpected. Our results are consistent with the mechanism that ML277 may interact with a site in the KCNQ1 channel that controls E-M coupling specifically when the VSD is at the activated state.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48576/elife-48576-fig6-v2.jpg)\n\n**Figure 6.:** (A) Fluorescence signals showing voltage sensor activation of pseudo-WT KCNQ1 channel (KCNQ1-C214A/G219C/C331A) before (black) and after (blue) adding 1 \u00b5M ML277. The signals after applying ML277 were normalized to the peak from the control to correct the effects of photobleaching. Scale bars are for the fluorescence signals before ML277 application. Inset shows current traces of pseudo-WT KCNQ1 channel before (black) and after (blue) adding ML277 at\u00a0+40 mV. Right panels show VCF results of pseudo-WT KCNQ1 channel before (black) and after (blue) adding ML277 recorded at \u221260 mV, 0 mV, and 60 mV. (B) Fluorescence-voltage (F\u2013V, n\u00a0=\u00a04) and G\u2013V (n\u00a0=\u00a03) relationships of pseudo-WT KCNQ1 before (black) and after (blue) adding ML277. (C) A cartoon scheme to illustrate that ML277 specifically enhances E-M coupling when the VSD is at the activated state.\n\nThe two open states gating processes of KCNQ1 channels can be illustrated in a scheme (Figure 6C) based on a simplified kinetic model without considering that the KCNQ1 channel is formed by four subunits with four identical VSDs (Hou et al., 2017; Zaydman et al., 2014). In this model, the resting closed (RC), intermediate closed (IC), and activated closed (AC) are VSD states at the resting, intermediate, and activated states when the pore is in the closed state, and IO and AO are the two open states. ML277 may specifically affect the E-M coupling of the AO state by stabilizing the conformational energy of the AO state (Figure 6C).\n\nWe parameterized this simple kinetic model and simulated the ML277 effects (Figure 7). In this model, the VSD transitions (RC\u2194IC\u2194AC) and pore transitions (IO\u2194AO) are voltage dependent, and the VSD-pore coupling transitions (IC\u2194IO and AC\u2194AO) are voltage independent (see Materials and methods). This model is capable of emulating the properties of the two open states in KCNQ1 channels, including the well-resolved IO and AO states and the hooked tail currents at \u221240 mV repolarization voltage indicating the inactivation (black, Figure 7A) (Hou et al., 2017). In this model, k2 and \u03b23 are the transition rates for AO\u2192AC and AO\u2192IO respectively. To model ML277\u2019s mechanism of enhancing E-M coupling of the AO states, we reduced the rates of exiting from the AO state (k2 and \u03b23) by half, which corresponds to ML277 stabilizing the conformational energy of the AO state (Figure 7B). Strikingly, reducing these rates can recapitulate the ML277 effects on KCNQ1 channel, including the enhanced AO currents and the right-shifted G-V relationship (Figure 7A\u2013D, see Materials and methods).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/48576/elife-48576-fig7-v2.jpg)\n\n**Figure 7.:** (A) Model simulations of KCNQ1 activation currents before (black) and after (blue) adding ML277. (B) Five-state Markov model to show the two open states gating processes of KCNQ1 channel. \u03b1 and \u03b2 are voltage-dependent transitions. k1-4 are E-M coupling rates (constant). Reducing the k2 by half (k2\u00a0=\u00a0853.08 for control, and k2\u00a0=\u00a0426.54 for adding ML277) can mimic the ML277 effects on KCNQ1 channel. To balance the model, \u03b23 is also reduced by half for adding ML277 (see Materials and methods). (C\u2013D) G\u2013V relationships of simulated KCNQ1 before (black) and after (blue) adding ML277. Data points were fitted with a Boltzmann function.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48576/elife-48576-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Model simulations of KCNQ1 all-state occupancy before (black) and after (blue) adding ML277. The voltage protocol was from \u2212120 mV to\u00a0+40 mV in increment of 10 mV from the \u221280 mV holding potential, and then stepped to \u221240 mV. The state occupancies are very similar for RC, IC, AC, and IO states, except for the AO state shows a clear increase after adding ML277. (B) Five-state Markov model. 1/2X K2 and 1/2X \u03b23 can mimic the ML277 effects on KCNQ1 channel.\n\nWe also prepared all-state occupancy before (black) and after (blue) adding ML277 (Figure 7\u2014figure supplement 1) and found that in the model there is large reserve of unopened probability that is recruited by ML277, leading to the significant increase in the AO state occupancy and current (Figure 7 and Figure 7\u2014figure supplement 1). Such a large reserve of unopened KCNQ1 channels was also observed in single channel recordings, in which most traces were silent with no channel openings, and in those few traces that show KCNQ1 channel activity, only very short openings were observed (Hou et al., 2017). The large reserved occupancy of closed states provides a considerable potential to open KCNQ1 channels by activators like ML277.\n\nTaken together, our experimental and simulation results reveal that ML277 increases KCNQ1 current by promoting the AO state E-M coupling. This is a novel gating modification mechanism that may help understand the fundamental gating processes of KCNQ1 and IKs channels, and develop new strategies for treating LQTS.\n\n## Discussion\n\nIn this work, we systematically studied the functional properties of KCNQ1 channels that are modulated by ML277, including current amplitudes and kinetics (Figure 1), voltage dependence of activation (Figure 2), inactivation (Figure 3), and ion permeation (Figure 4). All these modulations are consistent with the mechanism that ML277 specifically enhances the AO state E-M coupling to increase the AO state current.\n\nKCNQ1 has two different open states, IO and AO. Based on recent single channel studies, there are several different levels of single channel conductance of KCNQ1 and IKs channels. These levels are dependent on whether the KCNQ1 channel is associated with KCNE1 subunit and how many voltage sensors are activated (Murray et al., 2016; Westhoff et al., 2019). It is possible that when the AO state is modulated by ML277, not only the gating (VSD-pore coupling) is potentiated, but also the single channel conductance associated with the AO state is increased, and both could contribute to the increase of the AO-state-specific current.\n\nSeveral lines of evidence support that ML277 changes the KCNQ1 channel gating instead of simply increasing KCNQ1 single channel conductance: (1) The current kinetics are changed upon ML277 application (Figure 1). (2) Previous study showed that the ML277 binding site is located away from the pore (Xu et al., 2015), making it hard to directly affect single channel conductance. (3) ML277 selectively enhances the current of the AO state but not that of the IO state. This is consistent with our previous finding of distinctive VSD-pore coupling mechanisms when VSD is at the intermediate and activated states, respectively (Hou et al., 2017), such that ML277 could modulate one mechanism without affecting the other. On the other hand, there is no known mechanism to explain how ML277 simply increases single channel conductance to selectively enhance the current amplitude of the AO state. (4) In a separate study, we found a series of residues that are critical for the VSD-pore coupling when the VSD is at the fully activated state, and ML277 interacts with these residues (data not shown). These results support that ML277 may specifically modulate VSD-pore coupling when the VSD is at the fully activated state.\n\nDifferent compounds and toxins have been found as state-dependent modulators for ion channels. For instance, mexiletine preferentially blocks the NaV1.5 sodium channel when the DIII-VSD is activated, and protoxin-II shows higher affinity to resting VSD states of NaV1.7 sodium channel (Nakagawa et al., 2019; Xu et al., 2019; Zhu et al., 2019), while roscovitine facilitates the inactivation and shows less effect on activation of CaV1.2 calcium channel (Yarotskyy et al., 2010; Yazawa et al., 2011). We previously found that the IO state is more sensitive to the blocker XE991 than the AO state (Zaydman et al., 2014). These modulators preferentially modulate one of the states of certain ion channels but still show considerable modulations at other states. In this study, we show a clean example of state-dependent modulation in which only the AO state of KCNQ1 channel is exclusively enhanced by ML277, leaving the IO state unaltered. This unique mechanism of gating modification reveals an interesting mechanistic feature of the KCNQ1 channel. Since only the AO state is exclusively modulated, this strongly suggests that there are structural and functional modules in KCNQ1 channels that engage in interactions exclusive for the AO state E-M coupling. Moreover, these interactions can be specifically altered, when the VSD is at the activated state, to yield higher open probability. This is consistent with our previous finding that single mutations can selectively disrupt the E-M couplings for the IO and AO states, respectively (Hou et al., 2017; Zaydman et al., 2014). In a previous study, Xu and colleagues proposed that ML277 intracellularly binds at the inter-subunit interface between intracellular loops (S2-S3 loop and S4-S5 linker) and the pore (Xu et al., 2015). It will be interesting to further study if this putative ML277 binding site is important in the E-M coupling for the AO state.\n\nWe studied 1 \u00b5M ML277-induced functional changes to KCNQ1 channels expressed in Xenopus oocytes. Some previous publications reported different observations under other experimental conditions. For example, Yu et al. (2013) found that in CHO cells, 0.3 \u00b5M ML277 strongly increases KCNQ1 currents, left-shifts the G\u2013V relationship, and abolishes inactivation. However, Xu et al. reported a much less effect of ML277 on KCNQ1 activation expressed in Xenopus oocytes than in CHO cells (Xu et al., 2015). Xu et al. also found that in Xenopus oocytes, 25 \u00b5M ML277 strongly decreases the Rb+/K+ permeability ratio to the level even lower than IKs channels (Xu et al., 2015). The high concentrations of ML277 used by Xu and colleagues may enhance the AO state more than KCNE1 does to the channel, or the specificity of ML277 at this high concentration might have changed.\n\nActivators of KCNQ1 and IKs channels may be effective for treating LQTS. Although several KCNQ1 activators have been identified, their low specificity may limit further drug development (Cruickshank et al., 2003; De Silva et al., 2018; Gao et al., 2017; Hill and Sitsapesan, 2002; Mruk and Kobertz, 2009; Salata et al., 1998; Zheng et al., 2012). Several features of ML277 make it an interesting KCNQ1 modulator. First, ML277 specifically activates KCNQ1 channel with little activity on other ion channels that are key to cardiac electrophysiology or neuronal KCNQ channels (Mattmann et al., 2012; Yu et al., 2013). Second, ML277 activates KCNQ1 channels expressed in mammalian cells with an EC50 of 260 nM (Mattmann et al., 2012; Yu et al., 2013), lower than any other known KCNQ1/IKs activators. Finally, studies have confirmed that ML277 effectively shortens the APD in human iPSCderived cardiomyocytes (including LQTS conditions) and guinea pig cardiomyocytes (Ma et al., 2015; Xu et al., 2015; Yu et al., 2013). Interestingly, ML277 was found to increase only the current of KCNQ1 channels but not the IKs channels with saturated KCNE1 association in exogenous expression (Figure 1A,B) (Yu et al., 2013). The sensitivity of IKs currents to ML277 in cardiomyocytes suggests that native IKs channels are not always saturated with KCNE1 association, and these native IKs channels may be a novel target for compounds such as ML277 to treat LQTS.\n\n## Materials and methods\n\n### Constructs and mutagenesis\n\nOverlap extension and high-fidelity PCR were used for making KCNQ1 channel point mutations. Each KCNQ1 mutation was verified by DNA sequencing. Then cRNA of WT KCNQ1 and mutants were synthesized using the mMessage T7 polymerase kit (Applied Biosystems-Thermo Fisher Scientific) for oocyte injections.\n\n### Oocyte expression\n\nOocytes (at stage V or VI) were obtained from Xenopus laevis by laparotomy surgery, following the protocol approved by the Washington University Animal Studies Committee (Protocol #20160046). After six oocyte removal operations, the frog was anesthetized in 1.5L stagnant tap water containing 2 g Ethyl 3-aminobenzoate, methanesulfonic acid salt (Acros Oranics 886-86-2), buffered with 1.5 g of NaHCO3 (Sigma S5761) for about 30 min. The heart was cut off when the frog was under fully anesthesia. All procedures are consistent with the recommendations of the Panel on Euthanasia of the American Veterinary Medical Association.\n\nOocytes were then digested by collagenase (0.5 mg/ml, Sigma Aldrich, St Louis, MO) and micro-injected with KCNQ1 cRNAs. WT or mutant KCNQ1 cRNAs (9.2 ng) with or without KCNE1 cRNA (0.031 ng for KCNQ1:KCNE1 weight ratio of 300:1 or 2.3 ng for KCNQ1:KCNE1 weight ratio of 4:1) were injected into each oocyte. Injected cells were kept in ND96 solution (in mM): 96 NaCl, 2 KCl, 1.8 CaCl2, 1 MgCl2, 5 HEPES, 2.5 CH3COCO2Na, 1:100 Pen-Strep, pH 7.6) at 18\u00b0C for 2\u20136 days for electrophysiology recordings.\n\n### Two-electrode voltage clamp (TEVC) and voltage-clamp fluorometry (VCF)\n\nMicroelectrodes (Sutter Instrument, Item #: B150-117-10) were made with a Sutter (P-97) puller with resistances between 0.5 M\u03a9 and 3 M\u03a9 when filled with 3 M KCl. After channel expression, oocyte cells were transferred to the recording chamber in ND96 bath solutions for whole-oocyte currents recording. Currents, sampled at 1 kHz and low-pass-\ufb01ltered at 2 kHz, were recorded using a CA-1B amplifier (Dagan, Minneapolis, MN) with Patchmaster (HEKA) acquisition software. All recordings were performed at room temperature (21\u201323\u00b0C). For ML277 experiments, ML277 stock (Sigma Aldrich, 1 mM in DMSO) was added to the bath and diluted to 1 \u00b5M. For the ion permeation experiments, 100 mM K+ and 100 mM Rb+ solutions (96 mM NaCl was replaced with 100 mM KCl and 100 mM RbCl from ND96 solution) were perfused onto cells to steady state.\n\nFor VCF experiments, oocytes were incubated in 10 \u03bcM Alexa 488 C5-maleimide (Molecular Probes, Eugene, OR) on ice for 30 min. To facilitate the labeling, Alexa 488 was prepared into high K+ solution in mM (98 KCl, 1.8 CaCl2, 5 HEPES, pH 7.6) to depolarize the membrane voltage so that the VSD could undergo outward movement. After 30 min, oocytes were transferred to normal ND96 solution and washed three times before recording. The excitation and emission lights were filtered for Alexa 488. During recording, the fluorescence signals from the VSD movements were collected by a photodiode (Pin20A, OSI Optoelectronics). The signals, sampled at 1 kHz and filtered at 200 Hz, were then amplified by an EPC10 (HEKA) amplifier and synchronized by the CA-1B amplifier.\n\n### Electrophysiology data analysis\n\nData were analyzed with Clampfit (Axon Instruments, Inc, Sunnyvale, CA), Sigmaplot (SPSS, Inc, San Jose, CA), and IGOR (Wavemetrics, Lake Oswego, OR). Because of photo-bleaching, fluorescence signals were baseline subtracted by fitting the first 2 s signals at the \u221280 mV holding potential. Fluorescence-voltage (F-V) relationships were derived by normalizing the \u0394F/F value at the end of each test pulse to the maximal value. G\u2013V and F\u2013V curves were fitted with either one or double Boltzmann equations in the form of 1/ (1\u00a0+\u00a0exp(\u2212z*F*(V\u2212V1/2)/RT)), where V is the voltage, z is the equivalent valence, V1/2 is the half-maximal voltage, F is the Faraday constant, R is the gas constant, and T is the absolute temperature. KCNQ1 tail currents were fitted with a double exponential function F(t) = A1\u00d7exp(\u2212t/\u03c41)+ A2\u00d7exp(\u2212t/\u03c42)+C as previously described (Hou et al., 2017) to quantify the hook currents (A2). For activation time constants (\u03c4f and \u03c4s) of KCNQ1 currents in Figure 2, KCNQ1 activation currents were fitted with a double exponential function to get the \u03c4f and \u03c4s for control, and were fitted separately with a single exponential function to get the \u03c4f and \u03c4s for currents after adding ML277.\n\n### Statistics\n\nAll averaged data were collected from at least three different cells. Pairwise comparison in Figure 2C, between Control and\u00a0+ML277 groups, was achieved using paired t test (n\u00a0=\u00a025) with a significant difference (p=5\u00d710\u221210). Other comparison between any two data groups was achieved using t test. Raw data points were provided on top of the bar presentations. All error bars represent standard error of the mean.\n\n### Kinetic modeling of ML277 effects\n\nThe five-state kinetic model of KV7.1 channel was constructed from our previous six-state model (Hou et al., 2017). The upper row RC, IC, AC stand for the VSD states at resting, intermediate, and activated when the pore is closed, and the lower row IO and AO stand for pore opening at intermediate and activated states. The voltage independent opening state \u2018resting open\u2019 (RO) was deleted from the six-state model based on the rare transition from RC to RO (Hou et al., 2017). This simplified five-state model is capable to recapitulate the main characteristics of the KV7.1 two open states gating (Hou et al., 2017). We use the same Markov process to model the transition between each state, where \u03b11 = a1*exp(v/m), \u03b21 = c1*exp(-v/n), \u03b1i = ai*exp(v/b) and \u03b2i = ci*exp(-v/d) (i\u00a0=\u00a02 and 3) are the voltage-dependent rates of transitions. k1-4 are the E-M coupling rates (constant), where k2, that\u00a0is the E-M coupling rate from the AO state to the AC state, can be set to different values to simulate the control and after ML277 results. Reducing the value of k2 by half can mimic the ML277 effects on KCNQ1 channel. The values of the parameters are as follows: a1\u00a0=\u00a00.00070 ms\u22121, a2\u00a0=\u00a00.0047 ms\u22121, a3\u00a0=\u00a00.15 ms\u22121, c1\u00a0=\u00a00.0020 ms\u22121, c2\u00a0=\u00a00.00017 ms\u22121, c3\u00a0=\u00a00.048 ms\u22121, m\u00a0=\u00a046.0 mV, n\u00a0=\u00a031.2 mV, b\u00a0=\u00a037.7 mV, d\u00a0=\u00a041.5 mV, k1\u00a0=\u00a00.89, k2\u00a0=\u00a0853.08 (for control), and k2\u00a0=\u00a0426.54 (for adding ML277), k3\u00a0=\u00a00.96, k4\u00a0=\u00a0103.82. A kinetic model with a closed loop needs to obey the detailed balance (Zhang et al., 2016). To balance the model, c3\u00a0=\u00a00.024 ms\u22121 for adding ML277. Kinetic parameters were optimized with CeL software (HUST, Wuhan, Hubei, China) as previously described (Hou et al., 2014; Wang et al., 2013). The reversal potential was set to \u221280 mV, and the single-channel conductance was set to 0.18 pS for KCNQ1 channels (Hou et al., 2017). This is a simple model which may not be able to reproduce all the aspects modified by ML277, for example the slowing kinetics of the activation (Figure 1) and the deactivation (Figure 3). It is likely that besides enhancing the AO state VSD-pore coupling, ML277 has an additional effect to specifically modulate the AO state gating kinetics, which the model cannot reproduce this additional effect.\n",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "9ec2394e-e0a3-4a90-992d-39619e4a5dac",
+      "submission_id": "a57c73e4-3148-48be-b9a7-3ea832cce891",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Baron Chanda, University of Wisconsin-Madison United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.48576.012](https://doi.org/10.7554/eLife.48576.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"ML277 specifically enhances the fully activated open state of KCNQ1 by modulating VSD-pore coupling\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Olga Boudker as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Please aim to submit the revised version within two months.\n\nSummary:\n\nKCNQ and its accessory subunit KCNE contribute to the IKs currents in the heart. Mutations of these channels cause LQT syndrome and this channel is a target for the development of anti-arrhythmic drugs. Previously, Cui and colleagues have shown that the KCNQ channel contributes to two distinct open states depending on the presence or absence of the KCNE subunit. In presence of KCNE the AO state is stabilized whereas the channel prefers to open to IO state in absence of this accessory subunit. In this study, Hou et al. use a combination of electrophysiology, kinetic analysis, mutagenesis, and voltage clamp fluorometry to show that ML277 enhances current by specifically modulating the AO state of KCNQ channels. Kinetic analysis of KCNQ activation in the presence of ML277 shows that this compound selectively enhances the slow component of activation. This effect is obscured when KCNQ is co-expressed with saturating levels of the accessory subunit KCNE1 suggesting that the drug has the same effect on the channel as KCNE1. The authors go on to show that ML277 influences the inactivation and permeability of KCNQ in a manner consistent with selective action on the AO state. Next, they use several mutants which specifically stabilize the IO (E1R/R2E and S338F) or AO (E1R/R4E and F351A) states to more directly probe the influence of this compound on the distinct open states. Finally, VCF and kinetic modeling are provided as support to their model in which ML277 binding enhances conductance by binding to the AO state and enhancing coupling. Overall, this study highlights a new mechanism of drug action whereby the drug selectively stabiles the channel in one open state and acts as a surrogate for the KCNE subunit. Nevertheless, the reviewers had a number of concerns with regards to the interpretation of the experimental data.\n\nEssential revisions:\n\n1) The authors provide convincing evidence that the modulation is specific to the AO state (using mutagenesis and modeling) and that the drug does not influence voltage sensing (through VCF). The authors interpret these two points to indicate that ML277 increases the open probability of the AO state via enhanced coupling between VSD and pore. However, an alternative explanation for this data is that ML277 increases the unitary conductance of the AO state, and no experiments are provided to rule this out. The overall effect of ML277 on KCNQ channels both resembles the effect of KCNE subunit and is abrogated by KCNE. The authors have previously shown that KCNE increases the unitary conductance 10 fold (Hou et al., 2017). Distinguishing between an influence on open probability and single channel conductance may be beyond the scope of this work but the manuscript will certainly benefit from a more balanced discussion.\n\n2) I wonder why ML277 is not effective on KCNQ1/KCNE1 channel current (Figure 1B), if it changes the AO state E-M coupling. In F351A mutant (Figure 5B) which opens only in the AO state, similarly to the case of KCNQ1/KCNE1 channel, a clear effect of ML277 is observed.\n\n3) The study would benefit from a clearer description of the model outcomes (what is the state occupancy before and after ML277 in the model). The model parameters suggest there is large reserve of unopened channels that are then recruited by ML277, leading to the significant current increase in ML277. Is this a justifiable feature of the model?\n\nSubsection \u201cKinetic modeling of ML277 effects\u201d and Figure 7 legend: It is written that the model c3 (\u03b23) was reduced to half to balance the model. As the meaning here is not clear, please explain in more detail. Why did the authors try only [both 1/2 of k2 and 1/2 of c3]? Are there any other possibilities? e.g. What will happen if only k2 is reduced to half?\n\n4) Based on the state diagram in Figure 7B, I do not fully understand why the deactivation kinetics in Figure 3C is slowed down by ML277. I understand that channels in AO state enter IO state after a short time upon hyperpolarization, and then go back to IC state. If this is the case, the deactivation kinetics would be expected to be unchanged. Was the slowing of the deactivation kinetics by MLL277 reproduced by model simulation?\n\n5) Figure 2A, C: Is there any change of the kinetics of recovery from inactivation (i.e. AO- IO transition, i.e. kinetics of the increasing phase in the hook current) by ML277?\n\n6) Data surrounding the description of Figure 1B should be more clearly rationalized. The saturated Q1:E1 complex is described to exclusively activate to the A0 state, which I understood the paper to argue might be stabilized by ML277. There is no indication that this takes place in the 4:1 IKs complex (for example, no slowing of tail currents, as predicted in the model if I understand correctly).\n\n7) Statistical analysis was done only for Figure 2C. I suggest to perform it also in other data such as Figures 1C, D, 3D, 6B, 4B, 5C, 7D etc., and to describe the detail of the statistical analysis for them in the Materials and methods section. I suggest to indicate S.D. values, not S.E, and to present all of each data point, as well as mean and S.D values, rather than to use bar presentations.\n",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "376d54b4-0a5b-4197-82e8-0d9a7d8f5d81",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C1",
+      "claim": "KCNQ1 is also known as KV7.1 or KVLQT1.",
+      "claim_type": "EXPLICIT",
+      "source": "KCNQ1, also known as KV7.1 or KVLQT1, belongs to a subfamily of voltage-activated potassium channels (Barhanin et al., 1996; Sanguinetti et al., 1996; Wang et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barhanin et al., 1996; Sanguinetti et al., 1996; Wang et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "758f4401-19e3-4a8d-b0f7-dcf408bc5e05",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C2",
+      "claim": "KCNQ1 belongs to a subfamily of voltage-activated potassium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "KCNQ1, also known as KV7.1 or KVLQT1, belongs to a subfamily of voltage-activated potassium channels (Barhanin et al., 1996; Sanguinetti et al., 1996; Wang et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barhanin et al., 1996; Sanguinetti et al., 1996; Wang et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "49c0684e-d2f2-47c7-942c-245697660ad2",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C3",
+      "claim": "KCNQ1 adopts the canonical structural organization of the homo-tetrameric KV superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "It adopts the canonical structural organization of the homo-tetrameric KV superfamily, in which each subunit contains six transmembrane segments (S1-S6), with the first four (S1-S4) forming the voltage-sensing domain (VSD) and the latter two (S5-S6) folding to the pore (Sun and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sun and MacKinnon, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "398cd3ec-a454-4742-8ff5-91dbb73835fb",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C4",
+      "claim": "Each KCNQ1 subunit contains six transmembrane segments (S1-S6).",
+      "claim_type": "EXPLICIT",
+      "source": "It adopts the canonical structural organization of the homo-tetrameric KV superfamily, in which each subunit contains six transmembrane segments (S1-S6), with the first four (S1-S4) forming the voltage-sensing domain (VSD) and the latter two (S5-S6) folding to the pore (Sun and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sun and MacKinnon, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "8f68b34c-6908-4db2-b147-172d7cb86317",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C5",
+      "claim": "The first four transmembrane segments (S1-S4) form the voltage-sensing domain (VSD) in KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "It adopts the canonical structural organization of the homo-tetrameric KV superfamily, in which each subunit contains six transmembrane segments (S1-S6), with the first four (S1-S4) forming the voltage-sensing domain (VSD) and the latter two (S5-S6) folding to the pore (Sun and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sun and MacKinnon, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "35c6472a-9d0e-401f-a8cf-483fe7285197",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C6",
+      "claim": "The latter two transmembrane segments (S5-S6) fold to form the pore in KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "It adopts the canonical structural organization of the homo-tetrameric KV superfamily, in which each subunit contains six transmembrane segments (S1-S6), with the first four (S1-S4) forming the voltage-sensing domain (VSD) and the latter two (S5-S6) folding to the pore (Sun and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sun and MacKinnon, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "58f4a4a3-9ba4-43d8-8d38-34f3b52dc9a3",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C7",
+      "claim": "In response to membrane depolarization, the S4 segment in the VSD undergoes outward movement.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to membrane depolarization, the S4 segment in the VSD undergoes outward movement (Glauner et al., 1999; Larsson et al., 1996) and triggers pore opening via electromechanical (E-M) coupling interactions between the VSD and the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Glauner et al., 1999; Larsson et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "90089055-34ce-43c6-b23c-e8a33c44d5c9",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C8",
+      "claim": "S4 segment movement triggers pore opening via electromechanical (E-M) coupling interactions between the VSD and the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to membrane depolarization, the S4 segment in the VSD undergoes outward movement (Glauner et al., 1999; Larsson et al., 1996) and triggers pore opening via electromechanical (E-M) coupling interactions between the VSD and the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Glauner et al., 1999; Larsson et al., 1996 and established knowledge of voltage-gated channel mechanisms",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "e9b25a20-59ad-4a91-966d-09c6966c397f",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C9",
+      "claim": "The VSD of KCNQ1 channels shows two-step activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other KV members such as the Shaker channel, the VSD of KCNQ1 channels shows two steps activation: it activates sequentially from the resting state to an experimentally resolvable intermediate state before finally arriving at the fully activated state (Baker et al., 1998; Barro-Soria et al., 2014; Bezanilla et al., 1994; Carvalho-de-Souza and Bezanilla, 2018; Delemotte et al., 2011; Hou et al., 2017; Jensen et al., 2012; Lacroix et al., 2012; Ledwell and Aldrich, 1999; Osteen et al., 2012; Sigg et al., 1994; Sigworth, 1994; Silva et al., 2009; Silverman et al., 2003; Wu et al., 2010a; Wu et al., 2010b; Zagotta et al., 1994; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including Baker et al., 1998; Barro-Soria et al., 2014; Bezanilla et al., 1994; and others",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "00858992-b226-4bb6-9548-1e2d527bea58",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C10",
+      "claim": "The VSD activates sequentially from the resting state to an experimentally resolvable intermediate state before finally arriving at the fully activated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other KV members such as the Shaker channel, the VSD of KCNQ1 channels shows two steps activation: it activates sequentially from the resting state to an experimentally resolvable intermediate state before finally arriving at the fully activated state (Baker et al., 1998; Barro-Soria et al., 2014; Bezanilla et al., 1994; Carvalho-de-Souza and Bezanilla, 2018; Delemotte et al., 2011; Hou et al., 2017; Jensen et al., 2012; Lacroix et al., 2012; Ledwell and Aldrich, 1999; Osteen et al., 2012; Sigg et al., 1994; Sigworth, 1994; Silva et al., 2009; Silverman et al., 2003; Wu et al., 2010a; Wu et al., 2010b; Zagotta et al., 1994; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including Baker et al., 1998; Barro-Soria et al., 2014; Bezanilla et al., 1994; and others",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "0d25c9fe-6265-4dfb-8868-4dde9a485b41",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C11",
+      "claim": "The Shaker channel opens only when the VSD moves to the fully activated state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the Shaker channel which opens only when the VSD moves to the fully activated state, the KCNQ1 channel opens when its VSD occupies both the intermediate and fully activated conformations, resulting in intermediate-open (IO) and activated-open (AO) states (Hou et al., 2017; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hou et al., 2017; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "447db151-2060-41fa-8cab-5dfc4af4d5d6",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C12",
+      "claim": "The KCNQ1 channel opens when its VSD occupies both the intermediate and fully activated conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the Shaker channel which opens only when the VSD moves to the fully activated state, the KCNQ1 channel opens when its VSD occupies both the intermediate and fully activated conformations, resulting in intermediate-open (IO) and activated-open (AO) states (Hou et al., 2017; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hou et al., 2017; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "f8cb531a-70c1-4f1e-a125-4a47020dc077",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C13",
+      "claim": "KCNQ1 channels have intermediate-open (IO) and activated-open (AO) states.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the Shaker channel which opens only when the VSD moves to the fully activated state, the KCNQ1 channel opens when its VSD occupies both the intermediate and fully activated conformations, resulting in intermediate-open (IO) and activated-open (AO) states (Hou et al., 2017; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hou et al., 2017; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "b7fc9a1c-a680-4af5-bfaf-98f08e5bee77",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C14",
+      "claim": "The IO and AO states associate with different VSD and pore conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, they associate with different VSD and pore conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the context of the manuscript describing the two distinct open states",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "08cd158c-92ae-4e35-888d-f6570eaae8ff",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C15",
+      "claim": "During membrane depolarization, the S4 segment moves outward from its resting state to the intermediate state to trigger the IO state opening.",
+      "claim_type": "EXPLICIT",
+      "source": "During membrane depolarization, the S4 segment moves outward from its resting state to the intermediate state to trigger the IO state opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of voltage-gated channel mechanisms and the manuscript's description",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "960ccbc2-2da1-4af5-af68-485418678886",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C16",
+      "claim": "Subsequent movement of the S4 helix from the intermediate state to the activated state triggers conformational change of the pore from the IO state to the AO state.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent movement of the S4 helix from the intermediate state to the activated state then triggers conformational change of the pore from the IO state to the AO state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of voltage-gated channel mechanisms and the manuscript's description",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "18c6fa17-0b78-4bc6-87f0-82d9c6cdd816",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C17",
+      "claim": "The mutation E160R/R231E (E1R/R2E) arrests the VSD at the intermediate state and results in the constitutive IO state.",
+      "claim_type": "EXPLICIT",
+      "source": "These VSD-pore conformations can be isolated by the mutation that arrests the VSD at the intermediate state, E160R/R231E (E1R/R2E), which results in the constitutive IO state, and the mutation that arrests the VSD at the activated state, E160R/R237E (E1R/R4E), which results in the constitutive AO state (Restier et al., 2008; Wu et al., 2010a; Wu et al., 2010b; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Restier et al., 2008; Wu et al., 2010a; Wu et al., 2010b; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "d7f14884-900e-46e1-90dc-cb33e966079f",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C18",
+      "claim": "The mutation E160R/R237E (E1R/R4E) arrests the VSD at the activated state and results in the constitutive AO state.",
+      "claim_type": "EXPLICIT",
+      "source": "These VSD-pore conformations can be isolated by the mutation that arrests the VSD at the intermediate state, E160R/R231E (E1R/R2E), which results in the constitutive IO state, and the mutation that arrests the VSD at the activated state, E160R/R237E (E1R/R4E), which results in the constitutive AO state (Restier et al., 2008; Wu et al., 2010a; Wu et al., 2010b; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Restier et al., 2008; Wu et al., 2010a; Wu et al., 2010b; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "92cc92c9-d036-46ce-a3b6-cc115e2472ad",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C19",
+      "claim": "The AO state shows slower current kinetics than the IO state.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences include (1) the AO state shows slower current kinetics and more positive voltage-dependent activation than that of the IO state",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on functional characterization described in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "ba3266e7-543e-40f5-af3f-d2f8be9e75f7",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C20",
+      "claim": "The AO state shows more positive voltage-dependent activation than the IO state.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences include (1) the AO state shows slower current kinetics and more positive voltage-dependent activation than that of the IO state",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on functional characterization described in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "49f3d40a-dcc4-48a5-9062-df4eee86247a",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C21",
+      "claim": "KCNQ1 channels show lower open probability when the VSD moves from the intermediate state to the fully activated state.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) KCNQ1 channels show lower open probability when the VSD moves from the intermediate state to the fully activated state, resulting in inactivation phenotypes under certain voltage stimulations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on functional characterization described in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "8285faf6-a24c-4e69-8947-d312aa73cfc6",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C22",
+      "claim": "The AO state shows lower Rb+/K+ permeability ratio than the IO state.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) the AO state shows lower Rb+/K+ permeability ratio than the IO state",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zaydman et al., 2014 in the context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "729232e3-2e3d-4d60-96d5-d00f31a900d8",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C23",
+      "claim": "The two open states can be isolated by single mutations that ablate respective E-M couplings.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) different E-M coupling mechanisms such that the two open states can be isolated by single mutations that ablate respective E-M couplings",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hou et al., 2017; Zaydman et al., 2014 in the context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "c0af415c-9192-4651-b0a8-5878f915b69d",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C24",
+      "claim": "KCNE1 suppresses the IO state but enhances the AO state.",
+      "claim_type": "EXPLICIT",
+      "source": "(5) KCNE1 suppresses the IO state but enhances the AO state (Hou et al., 2017; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hou et al., 2017; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "7d0242a9-8640-4c2e-ba94-7d73c8fe6b21",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C25",
+      "claim": "In cardiomyocytes, KCNQ1 associates with KCNE1 to generate the slow delayed rectifier current (IKs).",
+      "claim_type": "EXPLICIT",
+      "source": "In cardiomyocytes, KCNQ1 associates with KCNE1 to generate the slow delayed rectifier current (IKs) important for terminating cardiac action potentials (Barhanin et al., 1996; Chiamvimonvat et al., 2017; Keating and Sanguinetti, 2001; Sanguinetti et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barhanin et al., 1996; Chiamvimonvat et al., 2017; Keating and Sanguinetti, 2001; Sanguinetti et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "1e37d956-eb16-4cbf-b7be-d52cd4dd02cc",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C26",
+      "claim": "IKs current is important for terminating cardiac action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "In cardiomyocytes, KCNQ1 associates with KCNE1 to generate the slow delayed rectifier current (IKs) important for terminating cardiac action potentials (Barhanin et al., 1996; Chiamvimonvat et al., 2017; Keating and Sanguinetti, 2001; Sanguinetti et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barhanin et al., 1996; Chiamvimonvat et al., 2017; Keating and Sanguinetti, 2001; Sanguinetti et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "7d96f8af-1f52-4105-9bca-2096bc722176",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C27",
+      "claim": "More than 300 loss-of-function mutations in KCNQ1 have been found to induce functional defects to the IKs current.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, more than 300 loss-of-function mutations in KCNQ1 have been found to induce functional defects to the IKs current, causing long QT syndrome (LQTS) that predisposes patients to life-threatening cardiac arrhythmia (Schwartz et al., 2012; Wang et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schwartz et al., 2012; Wang et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "dbef3593-8cea-4e11-99a5-0febcb77e43b",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C28",
+      "claim": "Loss-of-function mutations in KCNQ1 cause long QT syndrome (LQTS).",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, more than 300 loss-of-function mutations in KCNQ1 have been found to induce functional defects to the IKs current, causing long QT syndrome (LQTS) that predisposes patients to life-threatening cardiac arrhythmia (Schwartz et al., 2012; Wang et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schwartz et al., 2012; Wang et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "b7f8ca75-0227-4da8-8f76-c2750ea773c2",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C29",
+      "claim": "LQTS predisposes patients to life-threatening cardiac arrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, more than 300 loss-of-function mutations in KCNQ1 have been found to induce functional defects to the IKs current, causing long QT syndrome (LQTS) that predisposes patients to life-threatening cardiac arrhythmia (Schwartz et al., 2012; Wang et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schwartz et al., 2012; Wang et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "f98560ef-334d-49e8-be98-cb98f3e88d94",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C30",
+      "claim": "KCNE1 specifically suppresses the IO state but enhances the AO state, rendering the IKs channel with only AO state openings.",
+      "claim_type": "EXPLICIT",
+      "source": "KCNE1 specifically suppresses the IO state but enhances the AO state, rendering the IKs channel with only AO state openings (Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "7c8ef6ba-c2a6-4393-afdb-c93ba9a5f3fd",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C31",
+      "claim": "The AO state is physiologically more important in the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the AO state is physiologically more important in the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the fact that IKs channels open only to the AO state",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "dc239534-75d4-4c5f-b88a-a417176fa650",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C32",
+      "claim": "Zinc pyrithione (ZnPy) activates either homomeric KCNQ1 or KCNQ1 +KCNE1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Zinc pyrithione (ZnPy), L-364,373 (R-L3), 4,4\u2032\u2010diisothiocyanatostilbene\u20102,2\u2032\u2010disulfonic acid (DIDS), and mefenamic acid (MFA) activate either homomeric KCNQ1 or KCNQ1 +KCNE1 complex (Abitbol et al., 1999; Busch et al., 1997; Gao et al., 2008; Salata et al., 1998; Seebohm et al., 2003a; Xiong et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abitbol et al., 1999; Busch et al., 1997; Gao et al., 2008; Salata et al., 1998; Seebohm et al., 2003a; Xiong et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "6e5bf83b-5224-4383-9308-495cc81d155c",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C33",
+      "claim": "L-364,373 (R-L3) activates either homomeric KCNQ1 or KCNQ1 +KCNE1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Zinc pyrithione (ZnPy), L-364,373 (R-L3), 4,4\u2032\u2010diisothiocyanatostilbene\u20102,2\u2032\u2010disulfonic acid (DIDS), and mefenamic acid (MFA) activate either homomeric KCNQ1 or KCNQ1 +KCNE1 complex (Abitbol et al., 1999; Busch et al., 1997; Gao et al., 2008; Salata et al., 1998; Seebohm et al., 2003a; Xiong et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abitbol et al., 1999; Busch et al., 1997; Gao et al., 2008; Salata et al., 1998; Seebohm et al., 2003a; Xiong et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "717d172b-2bb1-497b-bfaa-f59c1bbe8d50",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C34",
+      "claim": "4,4\u2032\u2010diisothiocyanatostilbene\u20102,2\u2032\u2010disulfonic acid (DIDS) activates either homomeric KCNQ1 or KCNQ1 +KCNE1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Zinc pyrithione (ZnPy), L-364,373 (R-L3), 4,4\u2032\u2010diisothiocyanatostilbene\u20102,2\u2032\u2010disulfonic acid (DIDS), and mefenamic acid (MFA) activate either homomeric KCNQ1 or KCNQ1 +KCNE1 complex (Abitbol et al., 1999; Busch et al., 1997; Gao et al., 2008; Salata et al., 1998; Seebohm et al., 2003a; Xiong et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abitbol et al., 1999; Busch et al., 1997; Gao et al., 2008; Salata et al., 1998; Seebohm et al., 2003a; Xiong et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "d10d63dd-efc7-4c5b-9296-81e509a1ef5f",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C35",
+      "claim": "Mefenamic acid (MFA) activates either homomeric KCNQ1 or KCNQ1 +KCNE1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Zinc pyrithione (ZnPy), L-364,373 (R-L3), 4,4\u2032\u2010diisothiocyanatostilbene\u20102,2\u2032\u2010disulfonic acid (DIDS), and mefenamic acid (MFA) activate either homomeric KCNQ1 or KCNQ1 +KCNE1 complex (Abitbol et al., 1999; Busch et al., 1997; Gao et al., 2008; Salata et al., 1998; Seebohm et al., 2003a; Xiong et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abitbol et al., 1999; Busch et al., 1997; Gao et al., 2008; Salata et al., 1998; Seebohm et al., 2003a; Xiong et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "a332a0ee-dbc0-4521-8da2-445a1dec602d",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C36",
+      "claim": "Phenylboronic acid (PBA) potentiates both KCNQ1 and KCNQ1 +KCNE1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "while phenylboronic acid (PBA), Hexachlorophene (HCP), mallotoxin (MTX), and 3-ethyl-2-hydroxy-2-cyclopenten-1-one (CPT1) potentiate both KCNQ1 and KCNQ1 +KCNE1 channels (De Silva et al., 2018; Mruk and Kobertz, 2009; Zheng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Silva et al., 2018; Mruk and Kobertz, 2009; Zheng et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "462ac89a-054f-43b1-bc7c-eb8ae515e3ac",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C37",
+      "claim": "Hexachlorophene (HCP) potentiates both KCNQ1 and KCNQ1 +KCNE1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "while phenylboronic acid (PBA), Hexachlorophene (HCP), mallotoxin (MTX), and 3-ethyl-2-hydroxy-2-cyclopenten-1-one (CPT1) potentiate both KCNQ1 and KCNQ1 +KCNE1 channels (De Silva et al., 2018; Mruk and Kobertz, 2009; Zheng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Silva et al., 2018; Mruk and Kobertz, 2009; Zheng et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "24052a15-bbe1-460f-9390-27ef8454621c",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C38",
+      "claim": "Mallotoxin (MTX) potentiates both KCNQ1 and KCNQ1 +KCNE1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "while phenylboronic acid (PBA), Hexachlorophene (HCP), mallotoxin (MTX), and 3-ethyl-2-hydroxy-2-cyclopenten-1-one (CPT1) potentiate both KCNQ1 and KCNQ1 +KCNE1 channels (De Silva et al., 2018; Mruk and Kobertz, 2009; Zheng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Silva et al., 2018; Mruk and Kobertz, 2009; Zheng et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "54819375-2b15-4a65-8e81-232dcb9deeba",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C39",
+      "claim": "3-ethyl-2-hydroxy-2-cyclopenten-1-one (CPT1) potentiates both KCNQ1 and KCNQ1 +KCNE1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "while phenylboronic acid (PBA), Hexachlorophene (HCP), mallotoxin (MTX), and 3-ethyl-2-hydroxy-2-cyclopenten-1-one (CPT1) potentiate both KCNQ1 and KCNQ1 +KCNE1 channels (De Silva et al., 2018; Mruk and Kobertz, 2009; Zheng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Silva et al., 2018; Mruk and Kobertz, 2009; Zheng et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "43859ee1-0d1f-440b-bb2d-58a6ed01d98e",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C40",
+      "claim": "Some KCNQ1 activators are capable of shortening the action potential duration (APD) in cardiac myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although some of these activators are capable of shortening the action potential duration (APD) in cardiac myocytes (Salata et al., 1998; Zheng et al., 2012), none of them was found to only enhance the AO state of KCNQ1 or IKs channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Salata et al., 1998; Zheng et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "46bf6080-c0bf-4ad8-bfd5-1ed19ceec027",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C41",
+      "claim": "None of the previously identified activators was found to only enhance the AO state of KCNQ1 or IKs channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Although some of these activators are capable of shortening the action potential duration (APD) in cardiac myocytes (Salata et al., 1998; Zheng et al., 2012), none of them was found to only enhance the AO state of KCNQ1 or IKs channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of literature cited in the manuscript",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "05bf2e11-d1d4-45eb-bc12-652e546146d8",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C42",
+      "claim": "All previously identified KCNQ1 activators also strongly modulate other ion channels that are key to cardiac electrophysiology, such as hERG, CaV1.2, and NaV1.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides KCNQ1 and IKs channels, all these activators also strongly modulate other ion channels that are key to cardiac electrophysiology, such as hERG, CaV1.2, and NaV1.5 in the heart and neuronal KCNQ channels (KCNQ2-KCNQ5) (Cruickshank et al., 2003; De Silva et al., 2018; Gao et al., 2017; Hill and Sitsapesan, 2002; Mruk and Kobertz, 2009; Salata et al., 1998; Zheng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cruickshank et al., 2003; De Silva et al., 2018; Gao et al., 2017; Hill and Sitsapesan, 2002; Mruk and Kobertz, 2009; Salata et al., 1998; Zheng et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "9160beaf-5a86-4e57-9f72-b53d3e2443af",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C43",
+      "claim": "ML277 shows potent effect to KCNQ1 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a recently identified KCNQ1 activator ML277 shows potent effect to KCNQ1 channel, while demonstrating little effects on other important cardiac ion channels including hERG, Nav1.5, and Cav1.2 channels, and other KCNQ isoforms (Yu et al., 2013; Yu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yu et al., 2013; Yu et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "36a073d9-2013-4c5c-88aa-9348cfd33b46",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C44",
+      "claim": "ML277 demonstrates little effects on other important cardiac ion channels including hERG, Nav1.5, and Cav1.2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a recently identified KCNQ1 activator ML277 shows potent effect to KCNQ1 channel, while demonstrating little effects on other important cardiac ion channels including hERG, Nav1.5, and Cav1.2 channels, and other KCNQ isoforms (Yu et al., 2013; Yu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yu et al., 2013; Yu et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "44370110-1c08-4f52-a998-d51aea7ed4d0",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C45",
+      "claim": "ML277 demonstrates little effects on other KCNQ isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a recently identified KCNQ1 activator ML277 shows potent effect to KCNQ1 channel, while demonstrating little effects on other important cardiac ion channels including hERG, Nav1.5, and Cav1.2 channels, and other KCNQ isoforms (Yu et al., 2013; Yu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yu et al., 2013; Yu et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "37aa470f-4e4e-4d30-8c92-c8509808ecdd",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C46",
+      "claim": "ML277 shortens the APD of human-induced pluripotent stem cell (iPSC)-derived cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ML277 shortens the APD of human-induced pluripotent stem cell (iPSC)-derived cardiomyocytes and guinea pig cardiomyocytes, via activating the IKs currents (Xu et al., 2015; Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Xu et al., 2015; Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "acfbb489-320b-4aa7-b33c-a373ba7024f7",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C47",
+      "claim": "ML277 shortens the APD of guinea pig cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ML277 shortens the APD of human-induced pluripotent stem cell (iPSC)-derived cardiomyocytes and guinea pig cardiomyocytes, via activating the IKs currents (Xu et al., 2015; Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Xu et al., 2015; Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "0e1cfd96-133c-4321-93cd-79a921283f3d",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C48",
+      "claim": "ML277 shortens APD via activating the IKs currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ML277 shortens the APD of human-induced pluripotent stem cell (iPSC)-derived cardiomyocytes and guinea pig cardiomyocytes, via activating the IKs currents (Xu et al., 2015; Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Xu et al., 2015; Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "818ea654-3574-4b8a-9191-42adb3b1d18c",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C49",
+      "claim": "1 \u00b5M ML277 increased the KCNQ1 current amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the ML277 effects on KCNQ1 and IKs channels expressed in Xenopus oocytes, and found that 1 \u00b5M ML277 increased the KCNQ1 current amplitudes, such that the same depolarizing voltage elicited larger currents (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "8b9f0f78-83b4-499e-ad95-027e736fbbf7",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C50",
+      "claim": "1 \u00b5M ML277 shows less current increase in KCNQ1 +KCNE1 channels with injected mRNA weight ratio of KCNQ1:KCNE1 = 300:1.",
+      "claim_type": "EXPLICIT",
+      "source": "while with 1 \u00b5M ML277 less current increase was shown in KCNQ1 +KCNE1 channels with injected mRNA weight ratio of KCNQ1:KCNE1 = 300:1, which may induce unsaturated KCNE1 binding, and no current increase was shown in KCNQ1 +KCNE1 channels with injected mRNA weight ratio of 4:1, which may saturate the KCNE1 binding (Figure 1B) (Nakajo et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "2b709334-bc66-4a9d-9dc0-9cbeff446bd3",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C51",
+      "claim": "No current increase was shown in KCNQ1 +KCNE1 channels with injected mRNA weight ratio of 4:1 upon ML277 application.",
+      "claim_type": "EXPLICIT",
+      "source": "while with 1 \u00b5M ML277 less current increase was shown in KCNQ1 +KCNE1 channels with injected mRNA weight ratio of KCNQ1:KCNE1 = 300:1, which may induce unsaturated KCNE1 binding, and no current increase was shown in KCNQ1 +KCNE1 channels with injected mRNA weight ratio of 4:1, which may saturate the KCNE1 binding (Figure 1B) (Nakajo et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "8f5ead07-050c-42ba-95e2-3668cb820606",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C52",
+      "claim": "The loss of ML277 effects on KCNQ1 +KCNE1 channels with saturating KCNE1 association was suggested to result from a competition between ML277 and KCNE1 in binding to KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of ML277 effects on KCNQ1 +KCNE1 channels with saturating KCNE1 association was suggested to result from a competition between ML277 and KCNE1 in binding to KCNQ1 (Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "7542b60f-a2d3-4be9-b5d1-3516d49cff9d",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C53",
+      "claim": "ML277 may bind at the interface between the VSD and the pore from two neighboring subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "ML277 may bind at the interface between the VSD and the pore from two neighboring subunits, where KCNE1 is also found to bind with KCNQ1 (Chan et al., 2012; Nakajo et al., 2010; Peng et al., 2017; Ramasubramanian and Rudy, 2018; Strutz-Seebohm et al., 2011; Xu and Rudy, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chan et al., 2012; Nakajo et al., 2010; Peng et al., 2017; Ramasubramanian and Rudy, 2018; Strutz-Seebohm et al., 2011; Xu and Rudy, 2018",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "09dfc62b-99dc-459b-a5df-437486c6ad86",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C54",
+      "claim": "KCNE1 is found to bind with KCNQ1 at the interface between the VSD and the pore from two neighboring subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "ML277 may bind at the interface between the VSD and the pore from two neighboring subunits, where KCNE1 is also found to bind with KCNQ1 (Chan et al., 2012; Nakajo et al., 2010; Peng et al., 2017; Ramasubramanian and Rudy, 2018; Strutz-Seebohm et al., 2011; Xu and Rudy, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chan et al., 2012; Nakajo et al., 2010; Peng et al., 2017; Ramasubramanian and Rudy, 2018; Strutz-Seebohm et al., 2011; Xu and Rudy, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "a71bc459-8622-428e-95a7-8dd17724663e",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C55",
+      "claim": "KCNE1 binding may block ML277 binding and abrogate its effects.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, KCNE1 binding may block ML277 binding and abrogate its effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the competition between ML277 and KCNE1 for binding",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "f167c5de-43b3-4154-860a-c2d1b55572e3",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C56",
+      "claim": "The KCNQ1 currents can be fitted with two distinct exponential components in response to depolarization pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "The KCNQ1 currents can be fitted with two distinct exponential components in response to depolarization pulses (Figure 1A) (Hou et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A and citation to Hou et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "b7d829e7-61fe-4cb9-aec7-5e484a1602ea",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C57",
+      "claim": "The fast time course approximates the channels opening to the IO state.",
+      "claim_type": "EXPLICIT",
+      "source": "The fast time course approximates the channels opening to the IO state, while the slow component is mainly determined by the channels opening to the AO state (Hou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hou et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "216def5c-813a-4cb6-b3d5-59bae36919b5",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C58",
+      "claim": "The slow component is mainly determined by the channels opening to the AO state.",
+      "claim_type": "EXPLICIT",
+      "source": "The fast time course approximates the channels opening to the IO state, while the slow component is mainly determined by the channels opening to the AO state (Hou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hou et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "ad9e4a2e-2b95-46e4-a6ce-7ad2ff15b38e",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C59",
+      "claim": "ML277 increased only the slow current component, while leaving the fast current component unaltered.",
+      "claim_type": "EXPLICIT",
+      "source": "ML277 increased only the slow current component, while leaving the fast current component unaltered, which is clearly shown by merging the currents before and after ML277 application (Figure 1A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "e98bc180-103a-4c5d-9772-f49d436b9f62",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C60",
+      "claim": "At +40 mV depolarization, the time constant of the slow component (\u03c4s) was changed from 0.57 s to 0.91 s by ML277.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at +40 mV depolarization, the time constant of the slow component (\u03c4s) was changed from 0.57 s to 0.91 s, while the time constant of the fast component (\u03c4f) changed little (from 45 ms to 47 ms, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "6ff983d3-57dc-49a8-a768-6b09ac6fd24d",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C61",
+      "claim": "At +40 mV depolarization, the time constant of the fast component (\u03c4f) changed little (from 45 ms to 47 ms) by ML277.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at +40 mV depolarization, the time constant of the slow component (\u03c4s) was changed from 0.57 s to 0.91 s, while the time constant of the fast component (\u03c4f) changed little (from 45 ms to 47 ms, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "0eb9335b-3256-4efb-b4d2-44ef72bcd0bf",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C62",
+      "claim": "The AO state appears only when the KCNQ1 channel is activated by voltages above \u221240 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous studies showed that the IO and AO states have different time- and voltage-dependence: the AO state appears only when the KCNQ1 channel is activated by voltages above \u221240 mV and for a sufficient time duration (\u2265100 ms at +40 mV) (Hou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hou et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "14ef5b05-d6bb-490d-8ee6-d9e0b429deac",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C63",
+      "claim": "The AO state appears only when the KCNQ1 channel is activated for a sufficient time duration (\u2265100 ms at +40 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous studies showed that the IO and AO states have different time- and voltage-dependence: the AO state appears only when the KCNQ1 channel is activated by voltages above \u221240 mV and for a sufficient time duration (\u2265100 ms at +40 mV) (Hou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hou et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "996990a3-ef4d-4994-95eb-a93e41045155",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C64",
+      "claim": "ML277 did not increase current amplitudes or alter current kinetics when KCNQ1 channels were activated at low voltage (\u221250 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that ML277 selectively increases the currents of the AO state, we tested the effect of 1 \u03bcM ML277 on KCNQ1 current when we activated KCNQ1 channels either at low voltage (\u221250 mV) or at high voltage with a short time duration (+40 mV for only 100 ms). These voltage protocol effectively restricts KCNQ1 channel activation to the IO state. In both cases, ML277 did not increase current amplitudes or alter current kinetics (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "24419031-f7b7-457c-9dcd-50cc1525c885",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C65",
+      "claim": "ML277 did not increase current amplitudes or alter current kinetics when KCNQ1 channels were activated at high voltage with a short time duration (+40 mV for only 100 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that ML277 selectively increases the currents of the AO state, we tested the effect of 1 \u03bcM ML277 on KCNQ1 current when we activated KCNQ1 channels either at low voltage (\u221250 mV) or at high voltage with a short time duration (+40 mV for only 100 ms). These voltage protocol effectively restricts KCNQ1 channel activation to the IO state. In both cases, ML277 did not increase current amplitudes or alter current kinetics (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "7cf1b792-22ff-466e-8ed9-1f7ed7e4b685",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C66",
+      "claim": "ML277 activated the channel and nearly doubled the current size and the total conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "ML277 activated the channel and nearly doubled the current size and the total conductance (Figures 1A and 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 1A and 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "6852707b-63cc-47c6-9989-641e91581241",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C67",
+      "claim": "ML277 slightly shifted the G\u2013V relationship of KCNQ1 channels to more positive voltages (\u0394V ~ 6 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, unlike other activators that potentiate ion channel currents by left-shifting the G\u2013V relationship (De Silva et al., 2018; Gao et al., 2017; Guo et al., 2017; Liu et al., 2013; Seebohm et al., 2003a; Zheng et al., 2012), ML277 slightly shifted the G\u2013V relationship of KCNQ1 channels to more positive voltages (\u0394V ~ 6 mV, Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "7cfe9eee-e080-43e3-871b-b2acb97bc83f",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C68",
+      "claim": "Other activators potentiate ion channel currents by left-shifting the G\u2013V relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, unlike other activators that potentiate ion channel currents by left-shifting the G\u2013V relationship (De Silva et al., 2018; Gao et al., 2017; Guo et al., 2017; Liu et al., 2013; Seebohm et al., 2003a; Zheng et al., 2012), ML277 slightly shifted the G\u2013V relationship of KCNQ1 channels to more positive voltages (\u0394V ~ 6 mV, Figure 2B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Silva et al., 2018; Gao et al., 2017; Guo et al., 2017; Liu et al., 2013; Seebohm et al., 2003a; Zheng et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "18797eb7-dbed-4653-b285-1986a1cdd6af",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C69",
+      "claim": "The KCNQ1 currents are composed of currents of both the IO and AO states.",
+      "claim_type": "EXPLICIT",
+      "source": "The KCNQ1 currents are composed of currents of both the IO and AO states, therefore, the G\u2013V relation of KCNQ1 channels is the sum of the G\u2013V relations of both the IO and AO states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the understanding of KCNQ1 gating mechanism described in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "99f5c3cf-6f07-48c3-8428-0dc588f0b49a",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C70",
+      "claim": "The G\u2013V relation of KCNQ1 channels is the sum of the G\u2013V relations of both the IO and AO states.",
+      "claim_type": "EXPLICIT",
+      "source": "The KCNQ1 currents are composed of currents of both the IO and AO states, therefore, the G\u2013V relation of KCNQ1 channels is the sum of the G\u2013V relations of both the IO and AO states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the understanding of KCNQ1 gating mechanism described in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "429ac622-a4f8-4657-84e9-c7649d80d226",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C71",
+      "claim": "The G-V relationship of the AO state is at more positive voltages compared to the IO state.",
+      "claim_type": "EXPLICIT",
+      "source": "The G-V relationship of the AO state is at more positive voltages compared to the IO state, reflecting the fact that the activated VSD state requires more positive voltages than the intermediate VSD state (Hou et al., 2017; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hou et al., 2017; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "b46a72ae-f784-4437-997e-e7fdb03f879b",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C72",
+      "claim": "KCNQ1 conducts current predominately through the IO state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous studies demonstrated that KCNQ1 conducts current predominately through the IO state (Hou et al., 2017; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hou et al., 2017; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "029ec2af-7ce1-4bbc-8884-0fad5a19e26c",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C73",
+      "claim": "The IKs (KCNQ1 +KCNE1) channel conducts predominantly with AO-state current.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the IKs (KCNQ1 +KCNE1) channel conducts predominantly with AO-state current, because KCNE1 suppresses pore conductance of the IO state (Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "733b85e4-d6ed-4aef-92f5-f5636fd19826",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C74",
+      "claim": "The G-V curve of the IKs channel is dominated by the G-V relationship of the AO state.",
+      "claim_type": "EXPLICIT",
+      "source": "The G-V curve of the IKs channel is thus dominated by the G-V relationship of the AO state, and is significantly right-shifted compared to the KCNQ1 G-V relationship (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "0bfa9281-bc60-4223-acca-15da12d1ab13",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C75",
+      "claim": "The V50 for KCNQ1 channels is \u221226.8 \u00b1 0.6 mV in control.",
+      "claim_type": "EXPLICIT",
+      "source": "The V50 for KCNQ1 channels is \u221226.8 \u00b1 0.6 mV in control (black), and \u221220.3 \u00b1 0.6 mV after adding ML277 (blue), with a significant difference (p=5\u00d710\u221210, paired t test. n = 25).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "fb9c9dce-b0be-43c4-a9be-31a6aa4ab2c7",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C76",
+      "claim": "The V50 for KCNQ1 channels is \u221220.3 \u00b1 0.6 mV after adding ML277.",
+      "claim_type": "EXPLICIT",
+      "source": "The V50 for KCNQ1 channels is \u221226.8 \u00b1 0.6 mV in control (black), and \u221220.3 \u00b1 0.6 mV after adding ML277 (blue), with a significant difference (p=5\u00d710\u221210, paired t test. n = 25).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "a4ecd11f-b050-4c5c-8d95-8650f0682171",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C77",
+      "claim": "The V50 of IKs channels (KCNQ1 +KCNE1) is 25.6 \u00b1 3.1 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The V50 of IKs channels (KCNQ1 +KCNE1) (25.6 \u00b1 3.1 mV, n = 4, red) is also for comparison.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "df3ae94f-244e-4e64-b38f-1f3c70cb98b7",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C78",
+      "claim": "KCNQ1 channels show an incomplete inactivation that can be observed by a hook in tail currents at hyperpolarized voltages after a pre-pulse that activates the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "KCNQ1 channels show an incomplete inactivation that can be observed by a hook in tail currents at hyperpolarized voltages after a pre-pulse that activates the channel (Abitbol et al., 1999; Gibor et al., 2007; Larsen et al., 2011; Tristani-Firouzi and Sanguinetti, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abitbol et al., 1999; Gibor et al., 2007; Larsen et al., 2011; Tristani-Firouzi and Sanguinetti, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "b8daa367-bb07-4c28-a1cc-ff16acbae147",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C79",
+      "claim": "The hook is due to an initial increase of the inward (downward) tail current followed by continuous decay of the current.",
+      "claim_type": "EXPLICIT",
+      "source": "The hook is due to an initial increase of the inward (downward) tail current followed by continuous decay of the current (Figure 3A), consistent with the idea that channels recover from inactivation upon hyperpolarization via an open state before closing due to deactivation (Gibor et al., 2007; Larsen et al., 2011; Pusch et al., 1998; Seebohm et al., 2003b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A and citations to Gibor et al., 2007; Larsen et al., 2011; Pusch et al., 1998; Seebohm et al., 2003b",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "79de5f49-b9d2-4c84-904f-6395a5233b70",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C80",
+      "claim": "The so-called inactivation state in KCNQ1 channels is the AO state.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we found that the so-called inactivation state in KCNQ1 channels is the AO state, and the hook current reflects channel deactivation from the AO state to the IO state because the channels have a higher open probability when the VSD is at the intermediate state than at the activated state (Hou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hou et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "84124806-7fcd-4939-b279-c9994959a50f",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C81",
+      "claim": "The hook current reflects channel deactivation from the AO state to the IO state.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we found that the so-called inactivation state in KCNQ1 channels is the AO state, and the hook current reflects channel deactivation from the AO state to the IO state because the channels have a higher open probability when the VSD is at the intermediate state than at the activated state (Hou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hou et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "261b4205-78d5-430c-b72b-7508c7e725bd",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C82",
+      "claim": "The channels have a higher open probability when the VSD is at the intermediate state than at the activated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we found that the so-called inactivation state in KCNQ1 channels is the AO state, and the hook current reflects channel deactivation from the AO state to the IO state because the channels have a higher open probability when the VSD is at the intermediate state than at the activated state (Hou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hou et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "78fcd1fd-60f2-4e55-82f6-f09d400f3401",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C83",
+      "claim": "ML277 slows down the development of A2 (from 0.56 s to 1.02 s).",
+      "claim_type": "EXPLICIT",
+      "source": "It shows that ML277 slows down the development of A2 (from 0.56 s to 1.02 s, Figure 3D), consistent with the effect that ML277 prolongs the development of the AO state (from 0.57 s to 0.91 s, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "197d5dc3-827b-46ee-8eae-098871a39213",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C84",
+      "claim": "ML277 prolongs the development of the AO state (from 0.57 s to 0.91 s).",
+      "claim_type": "EXPLICIT",
+      "source": "It shows that ML277 slows down the development of A2 (from 0.56 s to 1.02 s, Figure 3D), consistent with the effect that ML277 prolongs the development of the AO state (from 0.57 s to 0.91 s, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "21209640-eabe-4cd2-9ef4-23e04d037ae6",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C85",
+      "claim": "KCNQ1 and IKs channels have different ion permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies found that KCNQ1 and IKs channels have different ion permeation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on previous studies cited in the manuscript",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "d82f5f02-fe65-46d2-aaf4-9cfe778e8d6f",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C86",
+      "claim": "The inward tail currents of KCNQ1 channels at hyperpolarized voltages are increased about threefold upon substitution of 100 mM potassium with 100 mM rubidium.",
+      "claim_type": "EXPLICIT",
+      "source": "The inward tail currents of KCNQ1 channels at hyperpolarized voltages are increased about threefold upon substitution of 100 mM potassium with 100 mM rubidium (Pusch et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pusch et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "37a2eb64-2dd7-4b1e-b5d0-fe87317db2e5",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C87",
+      "claim": "KCNE1 association reverses the change in Rb+/K+ permeability and makes the IKs channel conduct less tail current in 100 mM rubidium than in 100 mM potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "however, KCNE1 association reverses this change and makes the IKs channel conducts less tail current in 100 mM rubidium than in 100 mM potassium (Pusch et al., 2000; Seebohm et al., 2003b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pusch et al., 2000; Seebohm et al., 2003b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "e2fe17a1-4c74-424e-bf0d-a40dc88fddf5",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C88",
+      "claim": "The IO and AO states have different Rb+/K+ permeability ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently found that these results could be explained by the mechanism that the IO and AO states have different Rb+/K+ permeability ratio (Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "fb6f06ea-b33e-49ce-b593-4d0729a16e3b",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C89",
+      "claim": "E1R/R4E had a significantly lower Rb+/K+ permeability ratio compared to E1R/R2E channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Using E1R/R2E and E1R/R4E mutations that open in the IO and AO state, respectively, we found that E1R/R4E had a significantly lower Rb+/K+ permeability ratio compared to E1R/R2E channels, indicating that the AO state has a lower Rb+/K+ permeability ratio than the IO state (Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "68acd83e-68f3-4a8b-89cc-c6c36e5199e5",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C90",
+      "claim": "ML277 significantly decreased the Rb+/K+ permeability ratio of KCNQ1 channels (from 3.1 to 1.1).",
+      "claim_type": "EXPLICIT",
+      "source": "ML277 significantly decreased the Rb+/K+ permeability ratio of KCNQ1 channels (from 3.1 to 1.1, Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "80074061-83e4-401a-8029-6ca31ab53207",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C91",
+      "claim": "The Rb+/K+ permeability ratio of KCNQ1 channels after treating ML277 is closer to that of the IKs channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rb+/K+ permeability ratio of KCNQ1 channels after treating ML277 is closer to that of the IKs channels (Figure 4B), which is consistent with previous finding (Xu et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B and citation to Xu et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "8c3259bd-ee3e-443c-9646-82e9a1729f8b",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C92",
+      "claim": "The mutation S338F disrupts the VSD-pore coupling when the VSD is at the activated state and makes the channels open only to the IO state.",
+      "claim_type": "EXPLICIT",
+      "source": "The second pair, S338F and F351A disrupt the VSD-pore couplings when the VSDs are at the activated and intermediate states, respectively, and make the channels open only to the IO and AO states, respectively (Boulet et al., 2007; Hoosien et al., 2013; Hou et al., 2017; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Boulet et al., 2007; Hoosien et al., 2013; Hou et al., 2017; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "bfa478e2-24f9-438c-b7e0-b4ad909cccd3",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C93",
+      "claim": "The mutation F351A disrupts the VSD-pore coupling when the VSD is at the intermediate state and makes the channels open only to the AO state.",
+      "claim_type": "EXPLICIT",
+      "source": "The second pair, S338F and F351A disrupt the VSD-pore couplings when the VSDs are at the activated and intermediate states, respectively, and make the channels open only to the IO and AO states, respectively (Boulet et al., 2007; Hoosien et al., 2013; Hou et al., 2017; Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Boulet et al., 2007; Hoosien et al., 2013; Hou et al., 2017; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "ce8df3c3-c687-4f71-8aee-79eef63a5b1a",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C94",
+      "claim": "ML277 increased currents of the mutant channels E1R/R4E and F351A that open only in the AO state.",
+      "claim_type": "EXPLICIT",
+      "source": "ML277 increased currents of the mutant channels E1R/R4E and F351A that open only in the AO state, but barely enhanced the mutant channels E1R/R2E or S338F that open only to the IO state (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "9974dc58-51ee-468b-b6aa-722b80501204",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C95",
+      "claim": "ML277 barely enhanced the mutant channels E1R/R2E or S338F that open only to the IO state.",
+      "claim_type": "EXPLICIT",
+      "source": "ML277 increased currents of the mutant channels E1R/R4E and F351A that open only in the AO state, but barely enhanced the mutant channels E1R/R2E or S338F that open only to the IO state (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "9881b1c6-b990-46b6-9543-95805b2fe54e",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C96",
+      "claim": "ML277 induced current increase on E1R/R2E is 14.2 \u00b1 4.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged percentage of ML277 induced current increase on E1R/R2E (14.2 \u00b1 4.2%), E1R/R4E (95.5 \u00b1 8.5%), S338F (0.14 \u00b1 3.1%), and F351A (52.5 \u00b1 6.3%). n \u2265 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "97857fa1-dad3-4919-88de-9e26ddce9529",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C97",
+      "claim": "ML277 induced current increase on E1R/R4E is 95.5 \u00b1 8.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged percentage of ML277 induced current increase on E1R/R2E (14.2 \u00b1 4.2%), E1R/R4E (95.5 \u00b1 8.5%), S338F (0.14 \u00b1 3.1%), and F351A (52.5 \u00b1 6.3%). n \u2265 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "08638215-0f56-4f5f-905e-ed551c9bc83e",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C98",
+      "claim": "ML277 induced current increase on S338F is 0.14 \u00b1 3.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged percentage of ML277 induced current increase on E1R/R2E (14.2 \u00b1 4.2%), E1R/R4E (95.5 \u00b1 8.5%), S338F (0.14 \u00b1 3.1%), and F351A (52.5 \u00b1 6.3%). n \u2265 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "a14728a5-4e77-4a26-94d7-0dfa65da934a",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C99",
+      "claim": "ML277 induced current increase on F351A is 52.5 \u00b1 6.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged percentage of ML277 induced current increase on E1R/R2E (14.2 \u00b1 4.2%), E1R/R4E (95.5 \u00b1 8.5%), S338F (0.14 \u00b1 3.1%), and F351A (52.5 \u00b1 6.3%). n \u2265 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "a0d2106a-f8e5-4a5b-9b63-172c4a9b4b81",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C100",
+      "claim": "ML277 enhances the constitutive current of E1R/R4E mutant channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ML277 enhances the constitutive current of E1R/R4E mutant channels (Figure 5A,C), in which the VSD is arrested at the activated state by the double charge reversal mutations (Zaydman et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "d2153f01-7aa2-4398-bdfc-253a7f6288a0",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C101",
+      "claim": "ML277 may enhance the coupling between the VSD and pore when the VSD is at the activated state to increase open probability.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that ML277 may enhance the coupling between the VSD and pore when the VSD is at the activated state to increase open probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the effect of ML277 on E1R/R4E mutant channels",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "a06d8ff3-ac8e-4560-8354-bd728ba79a8d",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C102",
+      "claim": "The time- and voltage-dependence of the VSD activation in the absence and presence of 1 \u00b5M ML277 showed little change.",
+      "claim_type": "EXPLICIT",
+      "source": "The time- and voltage-dependence of the VSD activation in the absence and presence of 1 \u00b5M ML277 showed little change, and the fluorescence traces could be superimposed with each other at different voltages (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "7fc85486-fe81-45dc-9aff-7395dae56eea",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C103",
+      "claim": "ML277 induced a right-shifted G\u2013V relationship in pseudo-WT KCNQ1 (\u0394V ~ 5 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the WT KCNQ1 channels (Figure 2B), ML277 induced a right-shifted G\u2013V relationship in pseudo-WT KCNQ1 (\u0394V ~ 5 mV, Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "5570df89-8a34-4767-b337-602958336852",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C104",
+      "claim": "ML277 does not affect the two-step VSD activation although it doubles the current size.",
+      "claim_type": "EXPLICIT",
+      "source": "The VCF results indicate that ML277 does not affect the two-step VSD activation although it doubles the current size (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "7b5f1a51-433a-4b79-9735-800cb9692e43",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C106",
+      "claim": "The KCNQ1 channel may have distinct E-M coupling mechanisms to open the pore when the VSD is at the intermediate and activated state.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the KCNQ1 channel may have distinct E-M coupling mechanisms to open the pore when the VSD is at the intermediate and activated state (Hou et al., 2017; Zaydman et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hou et al., 2017; Zaydman et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "263e2fe0-a0a9-4f0f-9c29-f3d41436af18",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C107",
+      "claim": "ML277 may interact with a site in the KCNQ1 channel that controls E-M coupling specifically when the VSD is at the activated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with the mechanism that ML277 may interact with a site in the KCNQ1 channel that controls E-M coupling specifically when the VSD is at the activated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental results showing ML277's specific effect on the AO state",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "a09c403c-aefa-44bf-a991-c0a3416bb13e",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C108",
+      "claim": "Reducing the rates of exiting from the AO state (k2 and \u03b23) by half can recapitulate the ML277 effects on KCNQ1 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "To model ML277's mechanism of enhancing E-M coupling of the AO states, we reduced the rates of exiting from the AO state (k2 and \u03b23) by half, which corresponds to ML277 stabilizing the conformational energy of the AO state (Figure 7B). Strikingly, reducing these rates can recapitulate the ML277 effects on KCNQ1 channel, including the enhanced AO currents and the right-shifted G-V relationship (Figure 7A\u2013D, see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by modeling results shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "a0aa8496-cad8-4f0a-88b7-c6a0379c2b3c",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C109",
+      "claim": "There is large reserve of unopened probability in KCNQ1 channels that is recruited by ML277.",
+      "claim_type": "EXPLICIT",
+      "source": "We also prepared all-state occupancy before (black) and after (blue) adding ML277 (Figure 7\u2014figure supplement 1) and found that in the model there is large reserve of unopened probability that is recruited by ML277, leading to the significant increase in the AO state occupancy and current (Figure 7 and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by modeling results shown in Figure 7 and Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "54e1b75a-97ea-4e01-b3ba-da8e4aec7b6b",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C110",
+      "claim": "Most KCNQ1 single channel recording traces were silent with no channel openings.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a large reserve of unopened KCNQ1 channels was also observed in single channel recordings, in which most traces were silent with no channel openings, and in those few traces that show KCNQ1 channel activity, only very short openings were observed (Hou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hou et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "0068be66-539f-450e-ab79-225820137ab1",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C111",
+      "claim": "ML277 increases KCNQ1 current by promoting the AO state E-M coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our experimental and simulation results reveal that ML277 increases KCNQ1 current by promoting the AO state E-M coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the experimental and modeling results presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "7be6e9bb-e0d7-4dde-a3a3-72201508bccb",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C112",
+      "claim": "KCNQ1 is the first ion channel that shows well resolved two open states when the VSD is at different activation states.",
+      "claim_type": "EXPLICIT",
+      "source": "KCNQ1 is the first ion channel that shows well resolved two open states when the VSD is at different activation states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the characterization of KCNQ1 gating described in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "178746a5-52f1-4f08-a2d8-f3680145cd6f",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C113",
+      "claim": "This study sets the first example that a small molecule compound can specifically modulate only one of the two open states via enhancing the specific E-M coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "This study sets the first example that a small molecule compound can specifically modulate only one of the two open states via enhancing the specific E-M coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the findings presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "01e74928-cd9b-468a-ba80-95fa914c43d0",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C114",
+      "claim": "Yu et al. (2013) found that in CHO cells, 0.3 \u00b5M ML277 strongly increases KCNQ1 currents.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Yu et al. (2013) found that in CHO cells, 0.3 \u00b5M ML277 strongly increases KCNQ1 currents, left-shifts the G\u2013V relationship, and abolishes inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "aa003611-016a-4191-b375-d64399329594",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C115",
+      "claim": "Yu et al. (2013) found that in CHO cells, 0.3 \u00b5M ML277 left-shifts the G\u2013V relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Yu et al. (2013) found that in CHO cells, 0.3 \u00b5M ML277 strongly increases KCNQ1 currents, left-shifts the G\u2013V relationship, and abolishes inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "87ba84a4-1767-4e0b-9e82-8ff6aeda7475",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C116",
+      "claim": "Yu et al. (2013) found that in CHO cells, 0.3 \u00b5M ML277 abolishes inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Yu et al. (2013) found that in CHO cells, 0.3 \u00b5M ML277 strongly increases KCNQ1 currents, left-shifts the G\u2013V relationship, and abolishes inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "59540427-b3a2-4019-a265-3f83ded9a168",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C117",
+      "claim": "Xu et al. reported a much less effect of ML277 on KCNQ1 activation expressed in Xenopus oocytes than in CHO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Xu et al. reported a much less effect of ML277 on KCNQ1 activation expressed in Xenopus oocytes than in CHO cells (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xu et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "011202a7-e2b2-419d-b8f8-673702716537",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C118",
+      "claim": "Xu et al. found that in Xenopus oocytes, 25 \u00b5M ML277 strongly decreases the Rb+/K+ permeability ratio to the level even lower than IKs channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Xu et al. also found that in Xenopus oocytes, 25 \u00b5M ML277 strongly decreases the Rb+/K+ permeability ratio to the level even lower than IKs channels (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xu et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "ff0f4eb8-d65c-416d-8e1d-054936b3947d",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C119",
+      "claim": "ML277 specifically activates KCNQ1 channel with little activity on other ion channels that are key to cardiac electrophysiology or neuronal KCNQ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "First, ML277 specifically activates KCNQ1 channel with little activity on other ion channels that are key to cardiac electrophysiology or neuronal KCNQ channels (Mattmann et al., 2012; Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mattmann et al., 2012; Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "b3f01aaf-fa65-4162-967e-439ae5b5a059",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C120",
+      "claim": "ML277 activates KCNQ1 channels expressed in mammalian cells with an EC50 of 260 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, ML277 activates KCNQ1 channels expressed in mammalian cells with an EC50 of 260 nM (Mattmann et al., 2012; Yu et al., 2013), lower than any other known KCNQ1/IKs activators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mattmann et al., 2012; Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "106df9aa-44d1-4ea1-bd65-559ceb2bf447",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C121",
+      "claim": "ML277 effectively shortens the APD in human iPSC-derived cardiomyocytes (including LQTS conditions).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, studies have confirmed that ML277 effectively shortens the APD in human iPSCderived cardiomyocytes (including LQTS conditions) and guinea pig cardiomyocytes (Ma et al., 2015; Xu et al., 2015; Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ma et al., 2015; Xu et al., 2015; Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "62f703b4-8481-4554-93a4-abb1beb37eeb",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C122",
+      "claim": "ML277 effectively shortens the APD in guinea pig cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, studies have confirmed that ML277 effectively shortens the APD in human iPSCderived cardiomyocytes (including LQTS conditions) and guinea pig cardiomyocytes (Ma et al., 2015; Xu et al., 2015; Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ma et al., 2015; Xu et al., 2015; Yu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "039f6205-f061-4748-a37f-098dc7807a64",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C123",
+      "claim": "ML277 was found to increase only the current of KCNQ1 channels but not the IKs channels with saturated KCNE1 association in exogenous expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ML277 was found to increase only the current of KCNQ1 channels but not the IKs channels with saturated KCNE1 association in exogenous expression (Figure 1A,B) (Yu et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A,B and citation to Yu et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "b54203c4-d1eb-4c63-93d7-24d0ac0f9090",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "claim_id": "C124",
+      "claim": "The sensitivity of IKs currents to ML277 in cardiomyocytes suggests that native IKs channels are not always saturated with KCNE1 association.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensitivity of IKs currents to ML277 in cardiomyocytes suggests that native IKs channels are not always saturated with KCNE1 association, and these native IKs channels may be a novel target for compounds such as ML277 to treat LQTS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that ML277 affects IKs currents in cardiomyocytes but not in saturated KCNE1 expression systems",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "983dbdeb-a13e-4a30-a1d1-e25681d291e2",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "KCNQ1 is a voltage-activated potassium channel with canonical KV superfamily structure, containing six transmembrane segments per subunit with S1-S4 forming the VSD and S5-S6 forming the pore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 describe well-established structural features of KCNQ1 channels supported by multiple citations to foundational literature (Barhanin et al., 1996; Sanguinetti et al., 1996; Wang et al., 1996; Sun and MacKinnon, 2017). These are background claims establishing the basic channel architecture.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "ba65834c-0059-499f-ab5e-10105e4ef5f5",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "KCNQ1 channels exhibit two-step VSD activation with the channel opening at both intermediate (IO) and activated (AO) states, unlike Shaker channels which open only at the fully activated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C13 describe the distinctive gating mechanism of KCNQ1 with two open states, supported by extensive prior literature (Hou et al., 2017; Zaydman et al., 2014; and numerous other citations). This establishes the mechanistic framework for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "0f861de0-00a9-45c3-91f9-cfe9109d5635",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The IO and AO states associate with distinct VSD and pore conformations that can be isolated using specific mutations (E1R/R2E for IO state, E1R/R4E for AO state).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 describe the structural basis for the two open states and the mutations used to isolate them, supported by prior work (Restier et al., 2008; Wu et al., 2010a; Wu et al., 2010b; Zaydman et al., 2014). These mutations are critical tools used throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "162daa57-e2d0-4f26-a568-2e5ec502e66e",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The IO and AO states exhibit distinct functional properties including different kinetics, voltage-dependence, ion permeability ratios, E-M coupling mechanisms, and differential modulation by KCNE1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 summarize functional differences between IO and AO states from prior work (Hou et al., 2017; Zaydman et al., 2014). These established differences provide the basis for identifying which state ML277 modulates in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "fcdad027-c644-41fa-8c4d-6cfb27d64168",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "KCNQ1 associates with KCNE1 to form IKs channels in cardiomyocytes, which are physiologically important for cardiac repolarization, and loss-of-function mutations cause LQTS. KCNE1 renders IKs channels to open only to the AO state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 establish the clinical significance of KCNQ1/IKs channels and the importance of the AO state in cardiac function, supported by extensive clinical and physiological literature. This provides the therapeutic rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "aaba3afa-123e-46e7-822c-4e53af8827ae",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Previously identified KCNQ1 activators lack specificity for the AO state and also modulate other cardiac ion channels, limiting their therapeutic potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C42 review existing KCNQ1 activators and their limitations, supported by multiple citations. This establishes the need for more selective activators and sets up the novelty of ML277's mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "780149d4-197d-48b6-aa3d-890672a6a735",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ML277 is a selective KCNQ1 activator with minimal effects on other cardiac ion channels and effectively shortens APD in cardiomyocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 describe ML277's selectivity and efficacy from prior studies (Yu et al., 2013; Yu et al., 2010; Xu et al., 2015), establishing why this compound is of interest for mechanistic and therapeutic investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "24bddf6b-edc9-49e9-a0c6-ca823f703fb9",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ML277 increases KCNQ1 current amplitudes but shows reduced or no effect on KCNQ1+KCNE1 channels with saturated KCNE1 binding, suggesting competition between ML277 and KCNE1 for binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 are supported by experimental data in Figure 1A-B and consistent with prior findings (Yu et al., 2013). The dose-dependent loss of ML277 effect with increasing KCNE1 expression provides evidence for competitive binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "645ead78-d03d-421e-b445-1ec9559b873e",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ML277 selectively increases the slow current component (AO state) while leaving the fast component (IO state) unaltered, as demonstrated by kinetic analysis showing \u03c4s increased from 0.57s to 0.91s while \u03c4f remained unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 are strongly supported by experimental data in Figure 1A,C showing selective modulation of the slow component. The quantitative kinetic analysis with statistical significance (p<0.001) provides robust evidence for AO-state selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "76ca112d-6953-49f0-bbf1-a41b39e27bd8",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ML277 does not increase currents when KCNQ1 channels are activated under conditions that restrict opening to the IO state (low voltage or short duration pulses).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by experimental data in Figure 1F-G demonstrating that ML277 has no effect under conditions that isolate the IO state. This provides strong evidence for AO-state specificity through negative controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ML277 doubles KCNQ1 current and causes a rightward shift (~6 mV) in the G-V relationship, contrary to typical activators that cause leftward shifts. This is explained by ML277 increasing the contribution of the AO state, which has a more positive G-V relationship than the IO state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C77 are supported by experimental data in Figures 1A, 2A-D with statistical significance (p=5\u00d710\u207b\u00b9\u2070, n=25). The rightward shift is counterintuitive but logically explained by the composite nature of the KCNQ1 G-V curve and selective AO enhancement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "b1ff5206-ab43-439f-bef7-bd5d291a3b20",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ML277 modulates KCNQ1 inactivation by slowing the development of hook currents (A2 development from 0.56s to 1.02s), consistent with its effect on prolonging AO state development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C84 are supported by experimental data in Figure 3A-D. The hook current analysis provides an independent measure of AO state modulation, with the slowed A2 development matching the slowed \u03c4s from activation kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "c399585d-6d88-4178-a5e2-fdbb34c32bc2",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ML277 significantly decreases the Rb+/K+ permeability ratio of KCNQ1 channels from 3.1 to 1.1, bringing it closer to that of IKs channels, consistent with increased AO state contribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C91 are supported by experimental data in Figure 4 and prior work (Zaydman et al., 2014; Xu et al., 2015). The change in ion selectivity provides independent functional evidence for increased AO state current, as the AO state has lower Rb+/K+ permeability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "4347c945-4e18-494a-964c-60adc49ead14",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ML277 selectively enhances currents from mutant channels that open only to the AO state (E1R/R4E: 95.5\u00b18.5% increase; F351A: 52.5\u00b16.3% increase) but not from mutants that open only to the IO state (E1R/R2E: 14.2\u00b14.2%; S338F: 0.14\u00b13.1%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C99 are strongly supported by experimental data in Figure 5 with clear quantitative differences (n\u22654). This provides the most direct evidence for AO-state selectivity by testing ML277 on channels engineered to open exclusively to one state or the other.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "3c9f668c-fea2-48e6-8577-4e87ded0ec43",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "ML277 enhances the constitutive current of E1R/R4E mutant channels where the VSD is arrested at the activated state, indicating ML277 enhances VSD-pore coupling when the VSD is at the activated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 are supported by data in Figure 5A,C. The enhancement of constitutive E1R/R4E current demonstrates that ML277 can increase open probability even when VSD movement is prevented, pointing to enhanced E-M coupling as the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "7857a858-b885-48b2-abab-001983a300bf",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "VCF experiments show ML277 does not affect VSD activation kinetics or voltage-dependence despite doubling current, indicating ML277 specifically enhances E-M coupling when the VSD is at the activated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C107 are supported by VCF data in Figure 6A-B showing unchanged fluorescence signals with ML277. This provides critical mechanistic insight by ruling out VSD modulation and directly implicating enhanced E-M coupling as the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "76bcf8f2-7a11-4f22-85f4-521b2177b670",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Kinetic modeling shows that reducing the rates of exiting the AO state (k2 and \u03b23) by half recapitulates ML277 effects, and reveals a large reserve of unopened probability that ML277 recruits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C111 are supported by modeling results in Figure 7 and Figure 7-supplement 1. The model successfully reproduces experimental observations and provides mechanistic interpretation, though it is acknowledged as simplified and unable to capture all kinetic effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "385cfb59-4f79-423c-81a1-64490e476a30",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "This study demonstrates the first example of a small molecule specifically modulating only one of two open states in an ion channel via enhancing specific E-M coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C113 represent the authors' interpretation of the novelty of their findings. While the claim of being 'first' is difficult to verify comprehensively, the data presented do support exclusive AO state modulation, which appears to be a unique mechanism among reported channel modulators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "363bbcec-74a1-4199-b207-27151f6bc4f2",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Different studies report varying ML277 effects depending on expression system and concentration, with CHO cells showing left-shifted G-V at 0.3 \u00b5M while Xenopus oocytes show less effect and altered Rb+/K+ ratios at 25 \u00b5M.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C118 accurately cite discrepancies in prior literature (Yu et al., 2013; Xu et al., 2015). The authors acknowledge these differences, which may reflect concentration-dependent effects or expression system differences, adding context to their findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    },
+    {
+      "id": "15248c7d-095a-41ce-bec4-bd926879dec6",
+      "content_id": "21d19693-fe67-46d3-a89e-bd5461a3c184",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "ML277's high selectivity for KCNQ1 (EC50=260 nM), minimal effects on other cardiac channels, and effectiveness in shortening APD in cardiomyocytes make it a promising therapeutic candidate. Native IKs channels may not be saturated with KCNE1, making them targets for ML277.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119-C124 synthesize prior findings and the current study's results to support therapeutic potential. The inference about native IKs channels not being saturated with KCNE1 is reasonable given ML277's effects in cardiomyocytes, though direct evidence would require additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:11.424852Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "376d54b4-0a5b-4197-82e8-0d9a7d8f5d81",
+      "result_id": "983dbdeb-a13e-4a30-a1d1-e25681d291e2"
+    },
+    {
+      "claim_id": "758f4401-19e3-4a8d-b0f7-dcf408bc5e05",
+      "result_id": "983dbdeb-a13e-4a30-a1d1-e25681d291e2"
+    },
+    {
+      "claim_id": "49c0684e-d2f2-47c7-942c-245697660ad2",
+      "result_id": "983dbdeb-a13e-4a30-a1d1-e25681d291e2"
+    },
+    {
+      "claim_id": "398cd3ec-a454-4742-8ff5-91dbb73835fb",
+      "result_id": "983dbdeb-a13e-4a30-a1d1-e25681d291e2"
+    },
+    {
+      "claim_id": "8f68b34c-6908-4db2-b147-172d7cb86317",
+      "result_id": "983dbdeb-a13e-4a30-a1d1-e25681d291e2"
+    },
+    {
+      "claim_id": "35c6472a-9d0e-401f-a8cf-483fe7285197",
+      "result_id": "983dbdeb-a13e-4a30-a1d1-e25681d291e2"
+    },
+    {
+      "claim_id": "58f4a4a3-9ba4-43d8-8d38-34f3b52dc9a3",
+      "result_id": "ba65834c-0059-499f-ab5e-10105e4ef5f5"
+    },
+    {
+      "claim_id": "90089055-34ce-43c6-b23c-e8a33c44d5c9",
+      "result_id": "ba65834c-0059-499f-ab5e-10105e4ef5f5"
+    },
+    {
+      "claim_id": "e9b25a20-59ad-4a91-966d-09c6966c397f",
+      "result_id": "ba65834c-0059-499f-ab5e-10105e4ef5f5"
+    },
+    {
+      "claim_id": "00858992-b226-4bb6-9548-1e2d527bea58",
+      "result_id": "ba65834c-0059-499f-ab5e-10105e4ef5f5"
+    },
+    {
+      "claim_id": "0d25c9fe-6265-4dfb-8868-4dde9a485b41",
+      "result_id": "ba65834c-0059-499f-ab5e-10105e4ef5f5"
+    },
+    {
+      "claim_id": "447db151-2060-41fa-8cab-5dfc4af4d5d6",
+      "result_id": "ba65834c-0059-499f-ab5e-10105e4ef5f5"
+    },
+    {
+      "claim_id": "f8cb531a-70c1-4f1e-a125-4a47020dc077",
+      "result_id": "ba65834c-0059-499f-ab5e-10105e4ef5f5"
+    },
+    {
+      "claim_id": "b7fc9a1c-a680-4af5-bfaf-98f08e5bee77",
+      "result_id": "0f861de0-00a9-45c3-91f9-cfe9109d5635"
+    },
+    {
+      "claim_id": "08cd158c-92ae-4e35-888d-f6570eaae8ff",
+      "result_id": "0f861de0-00a9-45c3-91f9-cfe9109d5635"
+    },
+    {
+      "claim_id": "960ccbc2-2da1-4af5-af68-485418678886",
+      "result_id": "0f861de0-00a9-45c3-91f9-cfe9109d5635"
+    },
+    {
+      "claim_id": "18c6fa17-0b78-4bc6-87f0-82d9c6cdd816",
+      "result_id": "0f861de0-00a9-45c3-91f9-cfe9109d5635"
+    },
+    {
+      "claim_id": "d7f14884-900e-46e1-90dc-cb33e966079f",
+      "result_id": "0f861de0-00a9-45c3-91f9-cfe9109d5635"
+    },
+    {
+      "claim_id": "92cc92c9-d036-46ce-a3b6-cc115e2472ad",
+      "result_id": "162daa57-e2d0-4f26-a568-2e5ec502e66e"
+    },
+    {
+      "claim_id": "ba3266e7-543e-40f5-af3f-d2f8be9e75f7",
+      "result_id": "162daa57-e2d0-4f26-a568-2e5ec502e66e"
+    },
+    {
+      "claim_id": "49f3d40a-dcc4-48a5-9062-df4eee86247a",
+      "result_id": "162daa57-e2d0-4f26-a568-2e5ec502e66e"
+    },
+    {
+      "claim_id": "8285faf6-a24c-4e69-8947-d312aa73cfc6",
+      "result_id": "162daa57-e2d0-4f26-a568-2e5ec502e66e"
+    },
+    {
+      "claim_id": "729232e3-2e3d-4d60-96d5-d00f31a900d8",
+      "result_id": "162daa57-e2d0-4f26-a568-2e5ec502e66e"
+    },
+    {
+      "claim_id": "c0af415c-9192-4651-b0a8-5878f915b69d",
+      "result_id": "162daa57-e2d0-4f26-a568-2e5ec502e66e"
+    },
+    {
+      "claim_id": "7d0242a9-8640-4c2e-ba94-7d73c8fe6b21",
+      "result_id": "fcdad027-c644-41fa-8c4d-6cfb27d64168"
+    },
+    {
+      "claim_id": "1e37d956-eb16-4cbf-b7be-d52cd4dd02cc",
+      "result_id": "fcdad027-c644-41fa-8c4d-6cfb27d64168"
+    },
+    {
+      "claim_id": "7d96f8af-1f52-4105-9bca-2096bc722176",
+      "result_id": "fcdad027-c644-41fa-8c4d-6cfb27d64168"
+    },
+    {
+      "claim_id": "dbef3593-8cea-4e11-99a5-0febcb77e43b",
+      "result_id": "fcdad027-c644-41fa-8c4d-6cfb27d64168"
+    },
+    {
+      "claim_id": "b7f8ca75-0227-4da8-8f76-c2750ea773c2",
+      "result_id": "fcdad027-c644-41fa-8c4d-6cfb27d64168"
+    },
+    {
+      "claim_id": "f98560ef-334d-49e8-be98-cb98f3e88d94",
+      "result_id": "fcdad027-c644-41fa-8c4d-6cfb27d64168"
+    },
+    {
+      "claim_id": "7c8ef6ba-c2a6-4393-afdb-c93ba9a5f3fd",
+      "result_id": "fcdad027-c644-41fa-8c4d-6cfb27d64168"
+    },
+    {
+      "claim_id": "dc239534-75d4-4c5f-b88a-a417176fa650",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "6e5bf83b-5224-4383-9308-495cc81d155c",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "717d172b-2bb1-497b-bfaa-f59c1bbe8d50",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "d10d63dd-efc7-4c5b-9296-81e509a1ef5f",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "a332a0ee-dbc0-4521-8da2-445a1dec602d",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "462ac89a-054f-43b1-bc7c-eb8ae515e3ac",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "24052a15-bbe1-460f-9390-27ef8454621c",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "54819375-2b15-4a65-8e81-232dcb9deeba",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "43859ee1-0d1f-440b-bb2d-58a6ed01d98e",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "46bf6080-c0bf-4ad8-bfd5-1ed19ceec027",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "05bf2e11-d1d4-45eb-bc12-652e546146d8",
+      "result_id": "aaba3afa-123e-46e7-822c-4e53af8827ae"
+    },
+    {
+      "claim_id": "9160beaf-5a86-4e57-9f72-b53d3e2443af",
+      "result_id": "780149d4-197d-48b6-aa3d-890672a6a735"
+    },
+    {
+      "claim_id": "36a073d9-2013-4c5c-88aa-9348cfd33b46",
+      "result_id": "780149d4-197d-48b6-aa3d-890672a6a735"
+    },
+    {
+      "claim_id": "44370110-1c08-4f52-a998-d51aea7ed4d0",
+      "result_id": "780149d4-197d-48b6-aa3d-890672a6a735"
+    },
+    {
+      "claim_id": "37aa470f-4e4e-4d30-8c92-c8509808ecdd",
+      "result_id": "780149d4-197d-48b6-aa3d-890672a6a735"
+    },
+    {
+      "claim_id": "acfbb489-320b-4aa7-b33c-a373ba7024f7",
+      "result_id": "780149d4-197d-48b6-aa3d-890672a6a735"
+    },
+    {
+      "claim_id": "0e1cfd96-133c-4321-93cd-79a921283f3d",
+      "result_id": "780149d4-197d-48b6-aa3d-890672a6a735"
+    },
+    {
+      "claim_id": "818ea654-3574-4b8a-9191-42adb3b1d18c",
+      "result_id": "24bddf6b-edc9-49e9-a0c6-ca823f703fb9"
+    },
+    {
+      "claim_id": "8b9f0f78-83b4-499e-ad95-027e736fbbf7",
+      "result_id": "24bddf6b-edc9-49e9-a0c6-ca823f703fb9"
+    },
+    {
+      "claim_id": "2b709334-bc66-4a9d-9dc0-9cbeff446bd3",
+      "result_id": "24bddf6b-edc9-49e9-a0c6-ca823f703fb9"
+    },
+    {
+      "claim_id": "8f5ead07-050c-42ba-95e2-3668cb820606",
+      "result_id": "24bddf6b-edc9-49e9-a0c6-ca823f703fb9"
+    },
+    {
+      "claim_id": "7542b60f-a2d3-4be9-b5d1-3516d49cff9d",
+      "result_id": "24bddf6b-edc9-49e9-a0c6-ca823f703fb9"
+    },
+    {
+      "claim_id": "09dfc62b-99dc-459b-a5df-437486c6ad86",
+      "result_id": "24bddf6b-edc9-49e9-a0c6-ca823f703fb9"
+    },
+    {
+      "claim_id": "a71bc459-8622-428e-95a7-8dd17724663e",
+      "result_id": "24bddf6b-edc9-49e9-a0c6-ca823f703fb9"
+    },
+    {
+      "claim_id": "f167c5de-43b3-4154-860a-c2d1b55572e3",
+      "result_id": "645ead78-d03d-421e-b445-1ec9559b873e"
+    },
+    {
+      "claim_id": "b7d829e7-61fe-4cb9-aec7-5e484a1602ea",
+      "result_id": "645ead78-d03d-421e-b445-1ec9559b873e"
+    },
+    {
+      "claim_id": "216def5c-813a-4cb6-b3d5-59bae36919b5",
+      "result_id": "645ead78-d03d-421e-b445-1ec9559b873e"
+    },
+    {
+      "claim_id": "ad9e4a2e-2b95-46e4-a6ce-7ad2ff15b38e",
+      "result_id": "645ead78-d03d-421e-b445-1ec9559b873e"
+    },
+    {
+      "claim_id": "e98bc180-103a-4c5d-9772-f49d436b9f62",
+      "result_id": "645ead78-d03d-421e-b445-1ec9559b873e"
+    },
+    {
+      "claim_id": "6ff983d3-57dc-49a8-a768-6b09ac6fd24d",
+      "result_id": "645ead78-d03d-421e-b445-1ec9559b873e"
+    },
+    {
+      "claim_id": "0eb9335b-3256-4efb-b4d2-44ef72bcd0bf",
+      "result_id": "76ca112d-6953-49f0-bbf1-a41b39e27bd8"
+    },
+    {
+      "claim_id": "14ef5b05-d6bb-490d-8ee6-d9e0b429deac",
+      "result_id": "76ca112d-6953-49f0-bbf1-a41b39e27bd8"
+    },
+    {
+      "claim_id": "996990a3-ef4d-4994-95eb-a93e41045155",
+      "result_id": "76ca112d-6953-49f0-bbf1-a41b39e27bd8"
+    },
+    {
+      "claim_id": "24419031-f7b7-457c-9dcd-50cc1525c885",
+      "result_id": "76ca112d-6953-49f0-bbf1-a41b39e27bd8"
+    },
+    {
+      "claim_id": "7cf1b792-22ff-466e-8ed9-1f7ed7e4b685",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "6852707b-63cc-47c6-9989-641e91581241",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "7cfe9eee-e080-43e3-871b-b2acb97bc83f",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "18797eb7-dbed-4653-b285-1986a1cdd6af",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "99f5c3cf-6f07-48c3-8428-0dc588f0b49a",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "429ac622-a4f8-4657-84e9-c7649d80d226",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "b46a72ae-f784-4437-997e-e7fdb03f879b",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "029ec2af-7ce1-4bbc-8884-0fad5a19e26c",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "733b85e4-d6ed-4aef-92f5-f5636fd19826",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "0bfa9281-bc60-4223-acca-15da12d1ab13",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "fb9c9dce-b0be-43c4-a9be-31a6aa4ab2c7",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "a4ecd11f-b050-4c5c-8d95-8650f0682171",
+      "result_id": "758e4ab3-fa74-4d7e-a6f1-cf82a254f055"
+    },
+    {
+      "claim_id": "df3ae94f-244e-4e64-b38f-1f3c70cb98b7",
+      "result_id": "b1ff5206-ab43-439f-bef7-bd5d291a3b20"
+    },
+    {
+      "claim_id": "b8daa367-bb07-4c28-a1cc-ff16acbae147",
+      "result_id": "b1ff5206-ab43-439f-bef7-bd5d291a3b20"
+    },
+    {
+      "claim_id": "79de5f49-b9d2-4c84-904f-6395a5233b70",
+      "result_id": "b1ff5206-ab43-439f-bef7-bd5d291a3b20"
+    },
+    {
+      "claim_id": "84124806-7fcd-4939-b279-c9994959a50f",
+      "result_id": "b1ff5206-ab43-439f-bef7-bd5d291a3b20"
+    },
+    {
+      "claim_id": "261b4205-78d5-430c-b72b-7508c7e725bd",
+      "result_id": "b1ff5206-ab43-439f-bef7-bd5d291a3b20"
+    },
+    {
+      "claim_id": "78fcd1fd-60f2-4e55-82f6-f09d400f3401",
+      "result_id": "b1ff5206-ab43-439f-bef7-bd5d291a3b20"
+    },
+    {
+      "claim_id": "197d5dc3-827b-46ee-8eae-098871a39213",
+      "result_id": "b1ff5206-ab43-439f-bef7-bd5d291a3b20"
+    },
+    {
+      "claim_id": "21209640-eabe-4cd2-9ef4-23e04d037ae6",
+      "result_id": "c399585d-6d88-4178-a5e2-fdbb34c32bc2"
+    },
+    {
+      "claim_id": "d82f5f02-fe65-46d2-aaf4-9cfe778e8d6f",
+      "result_id": "c399585d-6d88-4178-a5e2-fdbb34c32bc2"
+    },
+    {
+      "claim_id": "37a2eb64-2dd7-4b1e-b5d0-fe87317db2e5",
+      "result_id": "c399585d-6d88-4178-a5e2-fdbb34c32bc2"
+    },
+    {
+      "claim_id": "e2fe17a1-4c74-424e-bf0d-a40dc88fddf5",
+      "result_id": "c399585d-6d88-4178-a5e2-fdbb34c32bc2"
+    },
+    {
+      "claim_id": "fb6f06ea-b33e-49ce-b593-4d0729a16e3b",
+      "result_id": "c399585d-6d88-4178-a5e2-fdbb34c32bc2"
+    },
+    {
+      "claim_id": "68acd83e-68f3-4a8b-89cc-c6c36e5199e5",
+      "result_id": "c399585d-6d88-4178-a5e2-fdbb34c32bc2"
+    },
+    {
+      "claim_id": "80074061-83e4-401a-8029-6ca31ab53207",
+      "result_id": "c399585d-6d88-4178-a5e2-fdbb34c32bc2"
+    },
+    {
+      "claim_id": "8c3259bd-ee3e-443c-9646-82e9a1729f8b",
+      "result_id": "4347c945-4e18-494a-964c-60adc49ead14"
+    },
+    {
+      "claim_id": "bfa478e2-24f9-438c-b7e0-b4ad909cccd3",
+      "result_id": "4347c945-4e18-494a-964c-60adc49ead14"
+    },
+    {
+      "claim_id": "ce8df3c3-c687-4f71-8aee-79eef63a5b1a",
+      "result_id": "4347c945-4e18-494a-964c-60adc49ead14"
+    },
+    {
+      "claim_id": "9974dc58-51ee-468b-b6aa-722b80501204",
+      "result_id": "4347c945-4e18-494a-964c-60adc49ead14"
+    },
+    {
+      "claim_id": "9881b1c6-b990-46b6-9543-95805b2fe54e",
+      "result_id": "4347c945-4e18-494a-964c-60adc49ead14"
+    },
+    {
+      "claim_id": "97857fa1-dad3-4919-88de-9e26ddce9529",
+      "result_id": "4347c945-4e18-494a-964c-60adc49ead14"
+    },
+    {
+      "claim_id": "08638215-0f56-4f5f-905e-ed551c9bc83e",
+      "result_id": "4347c945-4e18-494a-964c-60adc49ead14"
+    },
+    {
+      "claim_id": "a14728a5-4e77-4a26-94d7-0dfa65da934a",
+      "result_id": "4347c945-4e18-494a-964c-60adc49ead14"
+    },
+    {
+      "claim_id": "a0d2106a-f8e5-4a5b-9b63-172c4a9b4b81",
+      "result_id": "3c9f668c-fea2-48e6-8577-4e87ded0ec43"
+    },
+    {
+      "claim_id": "d2153f01-7aa2-4398-bdfc-253a7f6288a0",
+      "result_id": "3c9f668c-fea2-48e6-8577-4e87ded0ec43"
+    },
+    {
+      "claim_id": "a06d8ff3-ac8e-4560-8354-bd728ba79a8d",
+      "result_id": "7857a858-b885-48b2-abab-001983a300bf"
+    },
+    {
+      "claim_id": "7fc85486-fe81-45dc-9aff-7395dae56eea",
+      "result_id": "7857a858-b885-48b2-abab-001983a300bf"
+    },
+    {
+      "claim_id": "5570df89-8a34-4767-b337-602958336852",
+      "result_id": "7857a858-b885-48b2-abab-001983a300bf"
+    },
+    {
+      "claim_id": "7b5f1a51-433a-4b79-9735-800cb9692e43",
+      "result_id": "7857a858-b885-48b2-abab-001983a300bf"
+    },
+    {
+      "claim_id": "263e2fe0-a0a9-4f0f-9c29-f3d41436af18",
+      "result_id": "7857a858-b885-48b2-abab-001983a300bf"
+    },
+    {
+      "claim_id": "a09c403c-aefa-44bf-a991-c0a3416bb13e",
+      "result_id": "76bcf8f2-7a11-4f22-85f4-521b2177b670"
+    },
+    {
+      "claim_id": "a0aa8496-cad8-4f0a-88b7-c6a0379c2b3c",
+      "result_id": "76bcf8f2-7a11-4f22-85f4-521b2177b670"
+    },
+    {
+      "claim_id": "54e1b75a-97ea-4e01-b3ba-da8e4aec7b6b",
+      "result_id": "76bcf8f2-7a11-4f22-85f4-521b2177b670"
+    },
+    {
+      "claim_id": "0068be66-539f-450e-ab79-225820137ab1",
+      "result_id": "76bcf8f2-7a11-4f22-85f4-521b2177b670"
+    },
+    {
+      "claim_id": "7be6e9bb-e0d7-4dde-a3a3-72201508bccb",
+      "result_id": "385cfb59-4f79-423c-81a1-64490e476a30"
+    },
+    {
+      "claim_id": "178746a5-52f1-4f08-a2d8-f3680145cd6f",
+      "result_id": "385cfb59-4f79-423c-81a1-64490e476a30"
+    },
+    {
+      "claim_id": "01e74928-cd9b-468a-ba80-95fa914c43d0",
+      "result_id": "363bbcec-74a1-4199-b207-27151f6bc4f2"
+    },
+    {
+      "claim_id": "aa003611-016a-4191-b375-d64399329594",
+      "result_id": "363bbcec-74a1-4199-b207-27151f6bc4f2"
+    },
+    {
+      "claim_id": "87ba84a4-1767-4e0b-9e82-8ff6aeda7475",
+      "result_id": "363bbcec-74a1-4199-b207-27151f6bc4f2"
+    },
+    {
+      "claim_id": "59540427-b3a2-4019-a265-3f83ded9a168",
+      "result_id": "363bbcec-74a1-4199-b207-27151f6bc4f2"
+    },
+    {
+      "claim_id": "011202a7-e2b2-419d-b8f8-673702716537",
+      "result_id": "363bbcec-74a1-4199-b207-27151f6bc4f2"
+    },
+    {
+      "claim_id": "ff0f4eb8-d65c-416d-8e1d-054936b3947d",
+      "result_id": "15248c7d-095a-41ce-bec4-bd926879dec6"
+    },
+    {
+      "claim_id": "b3f01aaf-fa65-4162-967e-439ae5b5a059",
+      "result_id": "15248c7d-095a-41ce-bec4-bd926879dec6"
+    },
+    {
+      "claim_id": "106df9aa-44d1-4ea1-bd65-559ceb2bf447",
+      "result_id": "15248c7d-095a-41ce-bec4-bd926879dec6"
+    },
+    {
+      "claim_id": "62f703b4-8481-4554-93a4-abb1beb37eeb",
+      "result_id": "15248c7d-095a-41ce-bec4-bd926879dec6"
+    },
+    {
+      "claim_id": "039f6205-f061-4748-a37f-098dc7807a64",
+      "result_id": "15248c7d-095a-41ce-bec4-bd926879dec6"
+    },
+    {
+      "claim_id": "b54203c4-d1eb-4c63-93d7-24d0ac0f9090",
+      "result_id": "15248c7d-095a-41ce-bec4-bd926879dec6"
+    }
+  ],
+  "comparisons": []
+}

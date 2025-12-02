@@ -1,0 +1,1434 @@
+{
+  "submission": {
+    "id": "5dab1919-2a85-4829-bcf1-08228494c58b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:45:59.020063Z",
+    "updated_at": "2025-12-02T09:45:59.020063Z"
+  },
+  "content": [
+    {
+      "id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "submission_id": "5dab1919-2a85-4829-bcf1-08228494c58b",
+      "content_type": "manuscript",
+      "content_text": "# Sustained NPY signaling enables AgRP neurons to drive feeding\n\n## Authors\n\n- Yiming Chen<sup>1</sup> ([ORCID: 0000-0002-9569-1929](https://orcid.org/0000-0002-9569-1929))\n- Rachel A Essner<sup>3</sup> ([ORCID: 0000-0003-2240-3911](https://orcid.org/0000-0003-2240-3911))\n- Seher Kosar<sup>3</sup>\n- Oliver H Miller<sup>3</sup>\n- Yen-Chu Lin<sup>3</sup>\n- Sheyda Mesgarzadeh<sup>3</sup>\n- Zachary A Knight<sup>1</sup> ([ORCID: 0000-0001-7621-1478](https://orcid.org/0000-0001-7621-1478)) \u2020\n\n### Affiliations\n\n1. Kavli Institute for Fundamental Neuroscience University of California, San Francisco San Francisco United States\n2. Neuroscience Graduate Program University of California, San Francisco San Francisco United States\n3. Department of Physiology University of California, San Francisco San Francisco United States\n4. Howard Hughes Medical Institute University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nArtificial stimulation of Agouti-Related Peptide (AgRP) neurons promotes intense food consumption, yet paradoxically during natural behavior these cells are inhibited before feeding begins. Previously, to reconcile these observations, we showed that brief stimulation of AgRP neurons can generate hunger that persists for tens of minutes, but the mechanisms underlying this sustained hunger drive remain unknown (Chen et al., 2016). Here we show that Neuropeptide Y (NPY) is uniquely required for the long-lasting effects of AgRP neurons on feeding behavior. We blocked the ability of AgRP neurons to signal through AgRP, NPY, or GABA, and then stimulated these cells using a paradigm that mimics their natural regulation. Deletion of NPY, but not AgRP or GABA, abolished optically-stimulated feeding, and this was rescued by NPY re-expression selectively in AgRP neurons. These findings reveal a unique role for NPY in sustaining hunger in the interval between food discovery and consumption.\n\n## Introduction\n\nAgRP neurons are a small population of cells in the arcuate nucleus of the hypothalamus that are critical for regulating food intake (Andermann and Lowell, 2017). These cells are progressively activated during food deprivation (Betley et al., 2015; Chen et al., 2015; Hahn et al., 1998; Mandelblat-Cerf et al., 2015), in part due to fluctuations in nutritionally-regulated hormones such as leptin and ghrelin (Beutler et al., 2017; Blouet and Schwartz, 2010; Cowley et al., 2001; Cowley et al., 2003; Dietrich et al., 2013; Nakazato et al., 2001; Pinto et al., 2004; Schneeberger et al., 2013). Optogenetic or chemogenetic stimulation of AgRP neurons promotes intense food seeking and consumption (Aponte et al., 2011; Krashes et al., 2011), whereas silencing of these cells leads to aphagia or starvation (Gropp et al., 2005; Krashes et al., 2011; Luquet et al., 2005). Thus AgRP neurons play a key role in the homeostatic negative feedback loop that links the need for energy to the stimulation of feeding behavior.\n\nAlthough AgRP neurons are gradually activated during fasting, they are inhibited within seconds when a hungry animal sees or smells food (Betley et al., 2015; Chen et al., 2015; Mandelblat-Cerf et al., 2015). Paradoxically, this rapid inhibition of AgRP neurons often occurs before a single bite of food has been consumed and then persists for the duration of the ensuing meal. These observations raise the question of how AgRP neuron activity is able to drive food consumption, given that these neurons are inhibited during the act of feeding itself (Chen and Knight, 2016).\n\nTo reconcile these observations, we hypothesized that AgRP neurons may transmit a long-lasting signal that continues to drive food consumption even after AgRP neurons have been inhibited by food cues (Chen and Knight, 2016). Consistent with this, we showed that brief optogenetic stimulation of AgRP neurons in the absence of food can drive voracious food intake tens of minutes later, long after AgRP neuron stimulation has been terminated (Chen et al., 2016). This indicates that AgRP neurons can generate an unusual \u2018sustained hunger drive\u2019 that outlasts their acute firing (Figure 1A). The mechanisms underlying this long-lasting potentiation of feeding behavior are unknown.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig1-v2.jpg)\n\n**Figure 1.:** (a) AgRP neurons are rapidly inhibited by food presentation but nevertheless promote food intake through a sustained hunger signal. (b) System for measuring food intake in response to activation of AgRP neurons in animals with blockade of signaling through AgRP, GABA or NPY (indicated as -) or littermate controls (indicated as +). (c) Raster plot showing pellet consumption of mice with different genotypes in response to pre-stimulation of AgRP neurons (15 min). Each row shows a representative trial from an individual mouse. (d) Feeding behavior paradigm with variable pre-stimulation lengths (blue). (e-g) Food intake (1 hr) following pre-stimulation of variable lengths. Genotypes: AgRP+ (black; N\u00a0=\u00a010) and AgRP- (red; N\u00a0=\u00a05) (e), GABA+ (black; N\u00a0=\u00a06) and GABA- (red; N\u00a0=\u00a08) (f), and NPY+ (black; N\u00a0=\u00a07) and NPY- (red; N\u00a0=\u00a06) (g). (h) Feeding behavior paradigm with variable delay length inserted between the end of pre-stimulation and start of food availability. (i-k) Food intake (1 hr) following pre-stimulation (5 min) and delay of varying lengths. Genotypes: AgRP+ (black; N\u00a0=\u00a06) and AgRP- (red; N\u00a0=\u00a06) (i), GABA+ (black; N\u00a0=\u00a05) and GABA- (red; N\u00a0=\u00a07) (j), and NPY+ (black; N\u00a0=\u00a07) and NPY- (red; N\u00a0=\u00a04) (k). (l) Image of ARC from NPY- mice that received laser stimulation (30 min) in the absence of food before perfusion. Sample was stained for ChR2-EYFP (cyan) and Fos (magenta). (m) Logarithmic growth model of relationship between food intake and pre-stimulation duration (N\u00a0=\u00a023 mice). (n) Exponential decay model of the relationship between food intake and delay length (N\u00a0=\u00a018 mice). Error bars in e-g, i-k, m and n represent mean\u00a0\u00b1\u00a0SEM. Holm-Sidak multiple comparisons test was used to report adjusted P-values in e-g and i-k. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 or ns (not significant) compares adjacent control (black) and experimental (red) group with same pre-stimulation protocol.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a\u2013f) Raster plot of pellet intake (1 hr) by AgRP- (a), AgRP+ (d), GABA- (b), GABA+ (e), NPY- (c) and NPY+ (f) mice in response to pre-stimulation of variable length. Red color indicates cumulative food consumption at each time point. (g\u2013l) Raster plot of pellet intake (1 hr) by AgRP- (g), AgRP+ (j), GABA- (h), GABA+ (k), NPY- (i) and NPY+ (l) mice in response to pre-stimulation (5 min) followed by a delay of variable length.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Bout size for food intake (1 hr) by AgRP+ (N\u00a0=\u00a010) and AgRP- (N\u00a0=\u00a05) (a), GABA+ (N\u00a0=\u00a06) and GABA- (N\u00a0=\u00a08) (b), and NPY+ (N\u00a0=\u00a07) and NPY- (N\u00a0=\u00a06) (c) mice in response to pre-stimulation of variable length. (d\u2013f) Bout size for food intake (1 hr) by AgRP+ (N\u00a0=\u00a06) and AgRP- (N\u00a0=\u00a06) (d), GABA+ (N\u00a0=\u00a05) and GABA- (N\u00a0=\u00a07) (e), and NPY+ (N\u00a0=\u00a07) and NPY- (N\u00a0=\u00a04) (f) mice in response to pre-stimulation followed by a delay of variable length. (g\u2013i) Bout number for food intake (1 hr) by AgRP+ (N\u00a0=\u00a010) and AgRP- (N\u00a0=\u00a05) (g), GABA+ (N\u00a0=\u00a06) and GABA- (N\u00a0=\u00a08) (h), and NPY+ (N\u00a0=\u00a07) and NPY- (N\u00a0=\u00a06) (i) mice in response to pre-stimulation of variable length. (j\u2013l) Bout size for food intake (1 hr) by AgRP+ (N\u00a0=\u00a06) and AgRP- (N\u00a0=\u00a06) (j), GABA+ (N\u00a0=\u00a05) and GABA- (N\u00a0=\u00a07) (k), and NPY+ (N\u00a0=\u00a07) and NPY- (N\u00a0=\u00a04) (l) mice in response to pre-stimulation (5 min) followed by a delay of variable length.\n\n## Results\n\nAgRP neurons release three neurotransmitters that can influence feeding: AgRP, NPY and GABA (Andermann and Lowell, 2017; Hahn et al., 1998; Krashes et al., 2013; Tong et al., 2008). We hypothesized that one of these neurotransmitters may play a specific role in the sustained hunger drive generated by AgRP neurons. To test this hypothesis, we blocked signaling through each of these pathways and then tested their role in AgRP neuron driven food intake (Figure 1B). To inactivate GABA signaling, we crossed AgRP-IRES-Cre mice to animals with a floxed allele of the GABA transporter Slc32a1 (Tong et al., 2008) (referred to as GABA-); to block NPY signaling we used NPY knockout mice (Erickson et al., 1996) (NPY-); and for AgRP we used Agouti mice (AgRP-), in which the melanocortin pathway is inactivated by constitutive expression of a melanocortin 4-receptor antagonist (Aponte et al., 2011). We then measured the effect of optogenetic pre-stimulation (Chen et al., 2016) of AgRP neurons in each of these strains, or littermate controls.\n\nWe first stimulated AgRP neurons for 15 min in the absence of food, and then shut off the laser and allowed animals to eat for one hour. This pre-stimulation paradigm produced robust food intake in mice lacking GABA or AgRP signaling, and the magnitude of food consumption was similar between mutants and littermate controls (Figure 1C). In striking contrast, pre-stimulation of mice lacking NPY caused no increase in food intake (Figure 1C, bottom row). To measure the quantitative requirement for these neurotransmitters, we repeated this experiment with different durations of pre-stimulation (5, 15, 30 and 60 min; Figure 1D). We found that control mice, as well as mice lacking GABA or AgRP, showed a clear dose-response relationship between pre-stimulation duration and total food intake (Figure 1E,F and Figure 1\u2014figure supplement 1). This increase in food intake was due to an increase in bout size, rather than bout number (Figure 1\u2014figure supplement 2). In contrast NPY- mice showed no dose-dependent increase in food intake following longer durations of AgRP neuron pre-stimulation (Figure 1G). This behavioral defect was not due to a failure to activate AgRP neurons, because we observed robust Fos expression in AgRP neurons after optogenetic stimulation of NPY- mice (Figure 1L). Instead this indicates that NPY is specifically required for the sustained hunger produced by AgRP neuron activation.\n\nTo examine the kinetics of AgRP neuron driven hunger, we pre-stimulated AgRP neurons for five minutes and then inserted a delay of varying lengths between the termination of stimulation and the availability of food (15, 30, or 60 min; Figure 1H). We found that all genotypes except for NPY- mice exhibited robust food consumption that gradually declined with increasing delay duration up to 60 min (Figure 1I\u2013K). By pooling data from all control animals, we estimated that this hunger signal has a rise time of approximately four minutes (logarithmic growth; N\u00a0=\u00a023; R-Square\u00a0=\u00a00.72; Figure 1M) and a decay-time of approximately 47 min (exponential decay; N\u00a0=\u00a019; R-Square\u00a0=\u00a00.87; Figure 1N). This indicates that AgRP neuron activity rapidly generates a durable, NPY-dependent signal that drives feeding behavior.\n\nAgRP neurons promote not only food consumption but also behaviors that lead to food discovery (Krashes et al., 2011). We therefore examined the requirement for each of these neurotransmitters in AgRP driven appetitive behavior. To do this we used a progressive ratio three lever-pressing task, in which delivery of each subsequent pellet of food requires three additional lerel presses (Figure 2A). We observed vigorous lever pressing following pre-stimulation of AgRP neurons in AgRP- and GABA- mice, as well as controls (Figure 2B\u2013F). In contrast pre-stimulation had no effect on operant responding in animals lacking NPY (Figure 2B,C,F). This indicates that NPY is critical for the ability of AgRP neurons to drive food seeking behavior as well as food consumption.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic for progressive ratio three tasks, in which each successive pellet of food requires the mouse to press the lever three more times than the previous pellet. (b) Raster plot showing active (black) and inactive (red) lever presses of mice of different genotypes following pre-stimulation of AgRP neurons (1 hr). (c) Cumulative number of lever presses for NPY+ (N\u00a0=\u00a04) and NPY- (N\u00a0=\u00a07) mice in response to pre-stimulation or no stimulation of AgRP neurons. d-f, Breakpoint of AgRP+ (N\u00a0=\u00a010) and AgRP- (N\u00a0=\u00a06) (d), GABA+ (N\u00a0=\u00a05) and GABA- (N\u00a0=\u00a05) (e), and NPY+ (N\u00a0=\u00a04) and NPY- (N\u00a0=\u00a07) (f) mice in progressive ratio three after pre-stimulation (red) or no stimulation (black). Filled area in c and error bars in d-f represents mean\u00a0\u00b1\u00a0SEM. Holm-Sidak multiple comparisons test was used to report adjusted P-value in d-f. *p<0.05, **p<0.01, or ns (not significant) compares adjacent control (black) and experimental (red) group with same pre-stimulation protocol, or compares pairs of groups that are indicated by horizontal lines above.\n\nTo investigate with greater temporal resolution the requirement for NPY in AgRP driven feeding behavior, we developed a paradigm that alternates between concurrent and pre-stimulation. In this paradigm, animals are given constant access to food, and then subjected to two minutes of stimulation (20 Hz; Laser ON) followed by two minutes of no stimulation (Laser OFF) in a pattern that repeats for two hours (Figure 3A). In control mice, this protocol stimulated robust food consumption (Figure 3B,C). Importantly, food intake was equally distributed between the Laser ON and OFF epochs (Figure 3C\u2013I), indicating that wild-type animals do not distinguish the boundary between these two-minute intervals, presumbly due to the sustained hunger produced by AgRP neuron stimulation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig3-v2.jpg)\n\n**Figure 3.:** (a) Experimental setup for optogenetic stimulation with alternating laser ON and OFF epochs.\u00a0(b) Pattern of pellet consumption for NPY\u00a0+and NPY- mice in response to alternating laser ON and OFF epochs (2 min each). Each pair of laser ON and OFF epochs (period) is 4 min and the entire trial is 2 hr. Each row is a representative trial from an individual mouse. (c) Superimposed raster plots showing total pellet consumption of NPY+\u00a0and NPY- mice in relationship to the onset and offset of opto-stimulation for a 2 hr trial. Each row is a representative trial from an individual mouse. Raster plots were generated by superimposing the pellet consumption pattern from all periods of a trial. (d) Example of the temporal pattern of pellet consumption for a single NPY+\u00a0and NPY- mouse with successive periods of a single trial arranged vertically. (e) Superimposed raster plots of total pellet consumption across a 2 hr trial by AgRP+, AgRP-, GABA+, and GABA- mice in relationship to opto-stimulation pattern. (f) Cumulative pellet consumption by AgRP+ (N\u00a0=\u00a06), AgRP- (N\u00a0=\u00a05), GABA+ (N\u00a0=\u00a06), GABA- (N\u00a0=\u00a06), NPY+ (N\u00a0=\u00a05) and NPY- (N\u00a0=\u00a06) mice in relationship to opto-stimulation pattern. g-i, Percentage of food intake that occurs during the laser ON epochs of an intermittent stimulation trial by AgRP+ (N\u00a0=\u00a06) and AgRP- (N\u00a0=\u00a05) (g), GABA+ (N\u00a0=\u00a06) and GABA- (N\u00a0=\u00a06) (h), and NPY+ (N\u00a0=\u00a05) and NPY- (N\u00a0=\u00a06) (i) mice. (j) Schematic for the rescue of NPY expression selectively in AgRP neurons. (k) Expression of EYFP (cyan) and NPY (magenta) in ARC (left) and PVH (right) of NPY- animals with or without NPY re-expression. Note that ChR2-EYFP is dim but visible in PVH of AAV-NPY injected animals. (l) Food intake (1 hr) by NPY rescue (red; N\u00a0=\u00a06) and control (black; N\u00a0=\u00a05) mice in response to different pre-stimulation protocols. (m) Food intake (1 hr) by NPY rescue (red; N\u00a0=\u00a06) and control (black; N\u00a0=\u00a05) groups in response to co-stimulation and overnight fasting (n) Cumulative pellet consumption by NPY rescue (N\u00a0=\u00a09) and control (N\u00a0=\u00a06) mice in relation to laser ON and OFF epochs. (o) Superimposed raster plots showing pellet consumption by NPY rescue and control mice in relation to the laser ON and OFF periods of a 2 hr trial. (p) Percentage of food intake by NPY rescue (N\u00a0=\u00a09) and control (N\u00a0=\u00a06) mice that occurs during the laser ON period. Filled area in f and n, error bars in g-i, l-m, and p represent mean\u00a0\u00b1\u00a0SEM. Holm-Sidak multiple comparisons test was used to report adjusted P-values in g-i, l-m, and p. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 or ns (not significant) compares adjacent control (black) and experimental (red) groups with same treatment, or compares pairs of groups indicated by the horizontal lines above.\n\nWe then repeated this experiment in each of the genotypes described above. Remarkably, loss of NPY caused food intake to become strictly time-locked to the laser stimulus: that is, NPY- animals ate during concurrent stimulation, but then stopped eating within seconds of the laser shutting off (Figure 3C,D,F,I). In contrast, mice lacking GABA or AgRP signaling, as well as their littermate controls, showed no difference in feeding between the Laser ON and OFF periods (Figure 3E\u2013H). These results were robust to variations in the paradigm, such as changing the duration of the stimulation epoch (Figure 3G\u2013I). This indicates that, in the absence of NPY, AgRP neuron driven hunger dissipates within seconds of the offset of AgRP neuron firing.\n\nNPY is expressed in cell types other than AgRP neurons. This raises the possibility that global NPY knockout could cause changes in other circuits that indirectly lead to deficits in AgRP neuron driven feeding. To exclude this possibility, we used a viral approach to rescue NPY expression selectively in AgRP neurons of NPY- mice. We generated two Cre-dependent AAVs, one expressing NPY and the other expressing GFP as a control, and then injected these AAVs into the ARC of NPY- mice (Figure 3J). Mice injected with AAV expressing NPY, but not GFP, showed restoration of NPY expression in the ARC (Figure 3K) and complete rescue of the feeding phenotypes associated with NPY- knockout (Figure 3L\u2013P). For example, NPY re-expression in AgRP neurons caused feeding behavior in NPY- mice to become uncoupled from the onset and offset of laser stimulation, in a way that was indistinguishable from wild-type animals (Figure 3N\u2013P). This indicates that the phenotypes observed in NPY- mice are due to loss of NPY expression in AgRP neurons, rather than effects of this mutation on other circuits or development.\n\nWe have focused here on the behavioral effects of AgRP neuron pre-stimulation (Chen et al., 2016). While this paradigm cannot replicate the precise details of asynchronous natural activity, it does mimic the broad features of the natural regulation of these cells (i.e. that AgRP neurons are more active before food discovery than during food consumption). In contrast, many earlier studies used a protocol in which AgRP neurons are stimulated concurrently with food consumption (Aponte et al., 2011; Atasoy et al., 2012; Betley et al., 2013; Betley et al., 2015). This protocol induces an activity pattern that is the opposite of what occurs naturally (i.e. greater AgRP neuron activity during feeding than before). To place our results in the context of this earlier work, we concurrently stimulated AgRP neurons using either chemogenetics (Figure 4A\u2013C) or optogenetics (Figure 4E\u2013H) and then measured food intake in NPY+\u00a0and NPY- mice. We found that concurrent chemogenetic stimulation increased food consumption in mice lacking NPY (Figure 4C,D and Figure 4\u2014figure supplement 1), consistent with a previous report (Krashes et al., 2013). In contrast, during concurrent optogenetic stimulation NPY- mice consumed only a small fraction of the food consumed by NPY+\u00a0controls (Figure 4E,F). We could partially rescue food intake in NPY- mice by using a higher intensity optogenetic stimulation protocol (Figure 4F), whereas NPY+\u00a0controls showed no difference in food consumption between high and moderate intensity stimulation (high intensity refers to continuous 20 Hz stimulation, whereas moderate intensity refers to 20 Hz stimulation in a 2 s ON, 3 s OFF pattern; Figure 4G). This indicates that intense concurrent optogenetic stimulation of AgRP neurons can partially overcome the requirement for NPY, likely through increased release of GABA (Atasoy et al., 2012; Krashes et al., 2013; Tong et al., 2008). It remains unclear why concurrent chemogenetic stimulation of AgRP neurons does not also require NPY to induce feeding (Figure 4C,D and Krashes et al., 2013). In contrast to these variable responses to concurrent stimulation, we found that increased stimulation intensity could not compensate to any degree for loss of NPY in a pre-stimulation paradigm (Figure 4H). This is presumably because endogenous GABA and AgRP are unable to drive food intake effectively on the timescale of sustained hunger (tens of minutes immediately after the offset of stimulation).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic for measurement of food intake during chemogenetic stimulation of AgRP neurons.\u00a0(b) Expression of hM3Dq in AgRP neurons. Sample was stained for the HA tag on hM3Dq (magenta). (c) Food intake (2 hr) for NPY+ (hM3Dq+\u00a0N\u00a0=\u00a04; hM3Dq- N\u00a0=\u00a04) and NPY- (hM3Dq+\u00a0N\u00a0=\u00a06; hM3Dq- N\u00a0=\u00a04) mice following chemogenetic stimulation (CNO, 0.3 mg/kg) or control treatment. (d) Food intake (1 hr) for NPY+ (N\u00a0=\u00a05) and NPY- (N\u00a0=\u00a08) mice after overnight fasting. (e) Raster plot showing temporal pattern of pellet (20 mg) consumption by NPY- and NPY\u00a0+mice in response to concurrent stimulation at high intensity (20 Hz, continuous) or moderate intensity (20 Hz, interleaved with 2 s ON/3 s OFF). (f) Food intake (30 min) for AgRP+ (N\u00a0=\u00a04) and AgRP- (N\u00a0=\u00a05), GABA+ (N\u00a0=\u00a05) and GABA- (N\u00a0=\u00a06), and NPY+ (N\u00a0=\u00a04) and NPY- (N\u00a0=\u00a05) mice in response to no stimulation (black) and concurrent stimulation (red; moderate-intensity). (g) Food intake (30 min) for NPY+ (N\u00a0=\u00a04) and NPY- (N\u00a0=\u00a05) mice in response to no stimulation (black), moderate intensity concurrent stimulation (red) and high intensity concurrent stimulation (orange). (h) Food intake (60 min) for NPY+ (N\u00a0=\u00a04) and NPY- (N\u00a0=\u00a04) mice in response to no stimulation (black), moderate intensity pre-stimulation (red) and high intensity pre-stimulation (orange). Error bars in c-e and g-j represent mean\u00a0\u00b1\u00a0SEM. Holm-Sidak multiple comparisons test was used to report adjusted P-values in c-d and f-h. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 or ns (not significant). Black lines denote the pairs that are being compared. In f, adjacent control (black) and experimental (red) groups subject to the same pre-stimulation protocol are compared.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46348/elife-46348-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Food intake (1 hr) for NPY+ (hM3Dq+\u00a0N\u00a0=\u00a04; hM3Dq- N\u00a0=\u00a04) and NPY- (hM3Dq+\u00a0N\u00a0=\u00a06; hM3Dq- N\u00a0=\u00a04) mice following chemogenetic stimulation (CNO, 0.3 mg/kg) or control treatment. (b) Cumulative distribution function of food intake for NPY+\u00a0and NPY- mice in response to CNO mediated stimulation of AgRP neurons or control treatment (NPY+\u00a0N\u00a0=\u00a04; NPY- N\u00a0=\u00a06). Holm-Sidak multiple comparisons test was used to report adjusted P-values in (c-d) and (f-h). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 or ns (not significant). In b, thick lines represent averaged data and shaded area denote SEM.\n\n## Discussion\n\nNPY was implicated in the regulation of feeding decades ago, but its precise contribution has been difficult to establish (Loh et al., 2015). Early studies showed that infusion of picomoles of NPY into the PVH can elicit voracious food intake (Clark et al., 1985; Stanley and Leibowitz, 1984), identifying NPY as an unusually potent orexigen. Consistent with this, NPY is highly expressed in hunger-promoting AgRP neurons (Hahn et al., 1998), and its expression in these cells is increased by energy deficit (Sahu et al., 1988; White and Kershaw, 1990). However genetic deletion of NPY, alone (Erickson et al., 1996) or in combination with AgRP (Qian et al., 2002), had little effect on food intake or body weight. Similarly deletion of NPY receptors, alone (Kushi et al., 1998; Marsh et al., 1998; Pedrazzini et al., 1998) or in combination (Nguyen et al., 2012), failed to produce the expected lean phenotype. More recently, the advent of cell-type-specific tools for neural manipulation made it possible to acutely stimulate AgRP neurons and then measure the effect of blocking NPY signaling. One study found that food intake following chemogenetic stimulation of AgRP neurons requires either NPY or GABA signaling, but not both (Krashes et al., 2013). Another study showed that antagonists of NPY or GABA receptors in PVH could partially block feeding induced by optogenetic stimulation of AgRP neurons (Atasoy et al., 2012). Taken together, these observations have led to a general view that NPY and GABA have partially redundant functions in mediating food intake by AgRP neurons.\n\nThe discovery that AgRP neurons are rapidly silenced by the sensory detection of food (Betley et al., 2015; Chen et al., 2015; Mandelblat-Cerf et al., 2015), and consequently can drive feeding via a long-lasting hunger signal (Chen et al., 2016), led us to wonder whether a specific neurotransmitter might mediate this unusual mechanism for controlling behavior. We therefore reinvestigated the role of these neurotransmitters using an optogenetic pre-stimulation paradigm that mimics the broad features of the natural regulation of AgRP neurons. This revealed a remarkably specific role for NPY in extending the duration of AgRP neurons\u2019 behavioral effects for tens of minutes beyond the window of their immediate firing. This in turn provides a molecular correlate for the long-lasting hunger signal that bridges AgRP neuron dynamics with feeding behavior.\n\nWhile our findings have emphasized the role of NPY in sustained hunger, previous work has shown that the neuropeptide AgRP can also drive food intake over long timescales. For example, infusion of AgRP into the brain (Hagan et al., 2000) or stimulation of AgRP release (Krashes et al., 2013; Nakajima et al., 2016) can cause modulation of feeding behavior that persists for days. However, this long-lasting potentiation of feeding behavior requires several hours to emerge when endogenous AgRP release is stimulated (Krashes et al., 2013). Consistent with this, we find no evidence that the AgRP peptide is required for the intense food consumption that occurs immediately following AgRP neuron pre-stimulation (Figure 1). Thus our data suggest that NPY and AgRP play complementary roles in the regulation of feeding, with NPY sustaining hunger selectively on the timescale of a meal (tens of minutes after food discovery), whereas AgRP modulates the tone of the feeding circuit over longer timescales. This role for AgRP is consistent with an extensive literature that has implicated the melanocortin system in the long-term regulation of energy balance (Krashes et al., 2016).\n\nA number of questions remain unanswered about how NPY mediates the sustained hunger response described here. Slice recordings have shown that NPY can have persistent effects on membrane excitability and neurotransmitter release in vitro (Dubois et al., 2012; Fu et al., 2004; Roseberry et al., 2004), indicating that NPY may act directly on post-synaptic targets of AgRP neurons to cause durable changes in their activity. We have shown that pre-stimulation of AgRP neuron axon terminals in PVH, BNST, and LH is sufficient to drive sustained feeding (Chen et al., 2016), suggesting that these are the downstream sites where NPY has its long-lasting effects on hunger. However it remains unknown which NPY receptors are involved, in which cell types these receptors are expressed, which molecular mechanisms they utilize, and how this sustained modulation is represented in the dynamics of the next circuit node. Likewise, while we have focused on NPY\u2019s role in appetitive and consummatory aspects of feeding, it remains unknown whether NPY has similar long-lasting effects on metabolism or other adaptive responses to energy state (Dietrich et al., 2017; Padilla et al., 2017; Padilla et al., 2016; Steculorum et al., 2016).\n\nA central challenge of neuroscience is to explain how the neurochemical organization of the brain gives rise to behavior (Bargmann and Marder, 2013). Neural circuits contain an extraordinary diversity of neuropeptides, yet in most cases we have little understanding of how those peptides relate to the function of the underlying cells. We have shown here how a neuropeptide that drives feeding can function on a timescale that is inaccessible to classical neurotransmitters. This in turn allows a neuron that controls hunger to direct ongoing behavior while simultaneously anticipating and responding to impending physiologic changes. It will be important to investigate to what extent other neuropeptides influence behavior in this way.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>B6; Agrptm1(cre)Lowl/J</td>\n      <td>Jackson Labs Stock</td>\n      <td>#012899</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>B6; 129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J;</td>\n      <td>Jackson Labs Stock</td>\n      <td>#012569</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>B6; Tg (CAG-CHRM3,-mCitrine)1Ute/J</td>\n      <td>Jackson Labs Stock</td>\n      <td>#026220</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>B6; Cg-Ay/J</td>\n      <td>Jackson Labs Stock</td>\n      <td>#000021</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Slc32a1tm1Lowl/J</td>\n      <td>Jackson Labs Stock</td>\n      <td>#012897</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>129S-Npytm1Rpa/J</td>\n      <td>Jackson Labs Stock</td>\n      <td>#004545</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-NPY (rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>11976</td>\n      <td>(1:1000) dilution</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAAV-EF1a-DIO-NPY</td>\n      <td>this paper</td>\n      <td>NA</td>\n      <td>plasmid with AAV backbone to express NPY in the presence of Cre recombinase</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nMice were group housed on a 12:12 light:dark cycle with ad libitum access to water and mouse chow (PicoLab Rodent Diet 20, 5053 tablet, TestDiet). Adult mice (8\u201320 weeks old) were used for experiments. For channelrhodopsin-2 expression in AgRP neurons, Agrp-IRES-Cre mice (Jackson Labs stock 012899, B6; Agrptm1(cre)Lowl/J; RRID:IMSR_JAX:012899) were crossed with Ai32: ROSA26-loxStoplox-ChR2-eYFP mice (Jackson Labs stock 012569, B6; 129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J; RRID:IMSR_JAX:012569) to generate double mutant animals. For hM3Dq expression in AgRP neurons, Agrp-IRES-Cre mice were crossed with CAG-LSL-HA-hM3Dq-pta-mCitrine transgenic mice (Jackson Labs Stock 026220, B6; Tg(CAG-CHRM3,-mCitrine)1Ute/J.; RRID:IMSR_JAX: 026220) to generate double mutant animals. To block melanocortin signaling, mice were bred into heterozygotic Ay background (Jackson Labs stock 000021, B6.Cg-Ay/J; RRID:IMSR_JAX:000021); wild type cohorts were used as controls. To ablate GABA signaling specifically in AgRP neurons, mice were crossed into Agrp-IRES-Cre;Vgatflox/flox (Jackson Labs stock 012897, Slc32a1tm1Lowl/J; RRID:IMSR_JAX:012897) background; Agrp-IRES-Cre;Vgatflox/+ animals were used as controls. To block NPY signaling, mice were crossed into NPY-/- background (Jackson Labs stock 004545, 129S-Npytm1Rpa/J; RRID:IMSR_JAX:004545); NPY-/+ cohorts were used as controls.\n\nExperimental protocols were approved by the University of California, San Francisco IACUC (Protocol AN133011) following the NIH guidelines for the Care and Use of Laboratory Animals.\n\n### Stereotaxic viral delivery and fiber implantation\n\nWe performed intracranial surgery as previously described (Chen et al., 2015). For re-expression of NPY, pAAV-EF1a-DIO-NPY were generated from pAAV-EF1a-DIO-EYFP. Both vectors were made into AAV8 in Stanford Vector Core. 200 nL of AAV8-EF1a-DIO-NPY or AAV8-EF1a-DIO-EYFP was bilaterally injected into the ARC (bregma: AP: \u22121.75 mm, ML:\u00a0\u00b10.3 mm, DV: \u22125.9 mm). For optogenetic implants, custom-made fiberoptic implants (0.39 NA \u00d8200 \u00b5m core Thorlabs FT200UMT and CFLC230-10) were installed above the ARC (bregma: AP: \u22121.75 mm, DV: dorsal surface \u22125.6 mm, ML: \u22120.25 mm).\n\n### Optogenetic food intake assay\n\nTo generate light pulses, a 473 nm laser was modulated by Coulbourn Graphic State software through a TTL signal generator (Coulbourn H03-14) and synchronized with behavioral experiments for each subject. The laser was passed through a single patch cable (Doric Lenses) to a custom-made fiber optic patch cable (Thorlabs FT200UMT, CFLC230-10; Fiber Instrument Sales F12774) through a rotary joint (Doric Lens FRJ 1 \u00d7 1). Patch cables were connected to the implant on each mouse through a zirconia mating sleeve (Thorlabs ADAL1). Laser power was set to 12\u201318 mW at the terminal of each patch cable unless otherwise specified.\n\nMice were allowed to recover for seven days after implant surgery before experiments. In addition to regular chow, mice were supplied ad libitum with the food pellets used during testing (20 mg Bio-Serv F0163) in their home cage. Mice were habituated to the behavioral chambers (Coulbourn H10-11M-TC with H10-11M-TC-NSF) and pellet dispensing systems (Coulbourn H14-01M-SP04 and H14-23M) for three days prior to the first experiment. Mice were provided ad libitum access to food and water unless otherwise specified and were tested during the early phase of the light cycle. All pre-stimulation food intake experiments followed this general structure: 70 min habituation/pre-stim period with no food access followed by 60 min of food access. Pellet removal was detected using a built-in photo-sensor (Coulbourn H20-93).\n\nThe following protocols were performed back to back to test the dose dependence of pre-stimulation on food intake. The sequence of testing was counter-balanced based on pre-stimulation duration.\n\n<table>\n  <tbody>\n    <tr>\n      <td>70 min habituation</td>\n      <td>0 min opto-stim</td>\n      <td>60 min food access</td>\n    </tr>\n    <tr>\n      <td>65 min habituation</td>\n      <td>5 min opto-stim</td>\n      <td>60 min food access</td>\n    </tr>\n    <tr>\n      <td>55 min habituation</td>\n      <td>15 min opto-stim</td>\n      <td>60 min food access</td>\n    </tr>\n    <tr>\n      <td>40 min habituation</td>\n      <td>30 min opto-stim</td>\n      <td>60 min food access</td>\n    </tr>\n    <tr>\n      <td>10 min habituation</td>\n      <td>60 min opto-stim</td>\n      <td>60 min food access</td>\n    </tr>\n  </tbody>\n</table>\n\n*Laser was modulated at 20 Hz on a 2 s ON and 3 s OFF cycle with 10 ms pulse width.\n\nThe following protocols were performed back to back to test the decay kinetics of pre-stimulation on food intake. The sequence of testing was counter-balanced based on delay duration.\n\n<table>\n  <tbody>\n    <tr>\n      <td>70 min habituation</td>\n      <td>0 min opto-stim</td>\n      <td>0 min delay</td>\n      <td>60 min food access</td>\n    </tr>\n    <tr>\n      <td>65 min habituation</td>\n      <td>5 min opto-stim</td>\n      <td>0 min delay</td>\n      <td>60 min food access</td>\n    </tr>\n    <tr>\n      <td>50 min habituation</td>\n      <td>5 min opto-stim</td>\n      <td>15 min delay</td>\n      <td>60 min food access</td>\n    </tr>\n    <tr>\n      <td>35 min habituation</td>\n      <td>5 min opto-stim</td>\n      <td>30 min delay</td>\n      <td>60 min food access</td>\n    </tr>\n    <tr>\n      <td>5 min habituation</td>\n      <td>5 min opto-stim</td>\n      <td>60 min delay</td>\n      <td>60 min food access</td>\n    </tr>\n  </tbody>\n</table>\n\n*Laser was modulated at 20 Hz on a 2 s ON and 3 s OFF cycle with 10 ms pulse width.\n\nThe following protocols were performed back to back to test the kinetics of the sustained hunger signal on the timescale of tens of seconds.\n\n<table>\n  <tbody>\n    <tr>\n      <td>2 min opto-stim</td>\n      <td>2 min no-stim</td>\n    </tr>\n  </tbody>\n</table>\n\nRepeated 30 times. Food always available.\n\n<table>\n  <tbody>\n    <tr>\n      <td>1 min opto-stim</td>\n      <td>1 min no-stim</td>\n    </tr>\n  </tbody>\n</table>\n\nRepeated 60 times. Food always available.\n\n*Laser was modulated at 20 Hz with 10 ms pulse width.\n\nThe following protocols were performed back to back to test the effect of concurrent stimulation and its interaction with stimulation intensity.\n\n<table>\n  <tbody>\n    <tr>\n      <td>30 min no-stim</td>\n      <td>30 min opto-stim</td>\n      <td>30 min no-stim</td>\n    </tr>\n  </tbody>\n</table>\n\nFood always available. Laser was modulated at 20 Hz with 10 ms pulse width.\n\n<table>\n  <tbody>\n    <tr>\n      <td>30 min no-stim</td>\n      <td>30 min opto-stim</td>\n      <td>30 min no-stim</td>\n    </tr>\n  </tbody>\n</table>\n\nFood always available. Laser was modulated at 20 Hz on a 2 s ON and 3 s OFF cycle with 10 ms pulse width.\n\n### DREADDs food intake assay\n\nHousing and habituation of animals was identical to the optogenetic food intake assays. Mice were additionally habituated to handling for I.P injection twice before actual experiments. After habituation, mice were tested at most once every day during light phase for food intake (2 hr). Mice were injected with CNO (0.3 mg/kg) or vehicle (0.01 mg/kg DMSO) at the beginning of each food intake assay (2 hr).\n\n### Progressive ratio testing\n\nFor training, mice were acutely food deprived 5 hr before the start of dark cycle and trained with fixed-ratio 1 (FR1), FR3, and FR7 protocols overnight until active lever presses exceeded learning thresholds, which were 50, 150, and 300 respectively. Of note, NPY- mice were trained for longer periods due to their slower learning rate that was partially caused by their lack of exploration in the operant chamber. Mice were then acutely food deprived overnight and tested with a progressive ratio 3 (PR3) task for 1.5 hr at the start of the dark phase.\n\nFor optogenetic experiments, during the first 70 min of the testing protocol (habituation/pre-stim), access to the levers and pellet trough was blocked using a custom-cut acrylic board. After the initial 70 min, the acrylic board was removed, and a single pellet was delivered following active lever presses according to the PR3 schedule (3,6,9,12\u2026). Each experiment was subject to multiple repetitions to test robustness.\n\n### Immunohistochemistry\n\nImmunofluorescence was performed as previously described (Chen et al., 2015) using the following pairs of primary and secondary antibodies: chicken anti-GFP (1:1000; Abcam Cat# ab13970, RRID:AB_300798) and polyclonal donkey anti-chicken FITC (1:1000; Abcam Cat# ab63507, RRID:AB_1139472); goat anti-Fos (1:500; Santa Cruz Biotechnology Cat# sc-52-G, RRID:AB_2629503) and donkey anti-goat Alexa-fluorophore 568 (1:1000; Thermo Fisher Scientific Cat# A-11057, RRID:AB_2534104); rabbit anti-NPY (1:1000; Cell Signaling Technology Cat# 11976, RRID:AB_2716286) and donkey anti-rabbit Alexa-fluorophore 647 (1:1000; Thermo Fisher Scientific Cat# A-31573, RRID:AB_2536183); goat anti-HA (1:1000; for validation of HA-tagged hM3Dq expression; Abcam Cat# ab9134, RRID:AB_307035) and donkey anti-goat Alexa-fluorophore 568 (1:1000; Thermo Fisher Scientific Cat# A-11057, RRID:AB_2534104).\n\n### Statistics\n\nRaw behavioral data were analyzed with custom MATLAB scripts to obtain time-stamped behavioral events. Multiple measurements from the same mouse in the same experiment (e.g. on different days) were considered technical repeats and were averaged before statistical analyses. Control experiments were repeated at the beginning and end of each set of assays. Experiments with technical failures (e.g. dysfunction of the behavioral system, pellets stuck in feeder, broken fiberoptic patch cables) were excluded from further analysis and repeated. The average of these technical repeats for each mouse in each experiment was considered a single biological repeat. All sample sizes are numbers of biological repeats. Data was analyzed by two-way ANOVA using Graphpad Prism seven to test for an effect of genotype and stimulation protocol or one-way ANOVA. Individual p-values were corrected using Holm-Sidak\u2019s multiple comparisons test. Regression analysis for experiments investigating feeding kinetics was performed using Graphpad.\n",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "cf9b3a55-5c8a-4445-8339-3812006ffa3e",
+      "submission_id": "5dab1919-2a85-4829-bcf1-08228494c58b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard D Palmiter, Howard Hughes Medical Institute, University of Washington United States\n\nReviewers:\n- Richard D Palmiter, Howard Hughes Medical Institute, University of Washington United States\n- Michael J Krashes, NIH/NIDDK United States\n\n## Review text\n\nDOI: [10.7554/eLife.46348.012](https://doi.org/10.7554/eLife.46348.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Sustained NPY signaling enables AgRP neurons to drive feeding\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Richard D Palmiter as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Catherine Dulac as the Senior Editor. The following individual involved in review of your submission has also agreed to reveal his identity: Michael J Krashes (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe two reviewers both conclude that this paper represents a significant increase in understanding of the underlying signaling molecules responsible for the persistent feeding response after optogenetic stimulation of AgRP neurons ceases. The authors convincingly show that only neuropeptide Y (rather than AgRP or GABA) can drive the feeding response. No further experiments are necessary, but there are some points that indicated below that should be addressed in a revised version.\n\nReviewer #1:\n\nThis paper represents a follow-up on the authors' previous paper (Chen et al., 2016) in which they discovered that there is a persistent effect on food intake when AgRP neurons in sated mice are stimulated (ChR2) without access to food and then food is made available without further stimulation. Here using mice in which either NPY, AgRP or GABA signaling is blocked) they demonstrate that only signaling by NPY from AgRP neurons (not AgRP or GABA) allows this persistent food intake without concomitant stimulation. They demonstrate this important point several different ways. The results are compelling and described clearly. This is a nice example of how a neuropeptide can have persistent activity even after its release is terminated. The Discussion is cogent and to the point.\n\nReviewer #2:\n\nThis manuscript by Chen et al., seeks to evaluate the role of NPY released from AgRP neurons in the regulation of feeding behavior. Although decades of research have convincingly demonstrated its orexigenic role, a new investigation is warranted given recent findings that pertain to the endogenous activity of AgRP neurons in response to caloric information. This manuscript is clearly designed to do just that, finding that NPY is uniquely required for the continuing effects of AgRP neurons on feeding behavior. Importantly these effects are specific for NPY and not GABA or AgRP. My comments for improving the manuscript are listed below:\n\nPlease visualize the data presented in bar graphs as individual data points as opposed to the SEM lines. This gives the reader a clearer indication of the variability and number of mice used without having to look this information up elsewhere.\n\nDetail regarding the low versus high intensity photostimulation should be provided in the text. The methods indicate that low stimulation is already 12-18 mW (which in my estimation is already quite high). The authors state that they are able to partially rescue food intake in NPY- mice by using a higher intensity opto protocol by proposing the higher intensity stim leads to amplified GABA release. Has this phenomenon been shown in AgRP neurons, or any other group of cells? If so, it should be referred to here.\n\nThe authors show that there does not seem to be a defect in refeeding after a fast in NPY- mice compared to littermate hets (Figure 4D). However, this 1 hr food intake measurement seems low for this metric. Could the authors comment on this? Do the NPY KO hets have a defect in refeeding according to the original report or is this just the result of this specific experiment?\n\nPerhaps the biggest surprise that deserves further discussion is the differences observed between chemo and opto experiments in Figure 4. Firstly, the authors should point out in the text that the chemogenetic food intake measurement was conducted over 2 hours versus the optogenetic experiments (30 mins or 1 hour). Thus the increase in food intake observed in the chemogenetic experiment could be merely due to the longer amount of time the animals had to eat. As written currently, it is unclear whether the approaches elicit distinct release properties (this may be the case but they should cite instances where differences in manipulation techniques elicited different responses) or whether these inconsistencies are due to temporal measurements. Either way, it is interesting and should be discussed further.\n\nSome comment on the non-physiological synchronous ChR2-mediated activation of AgRP neurons compared to their endogenous activity should be highlighted with interpretation.\n",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d210199a-26cf-4f30-b305-983bc199a68f",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C1",
+      "claim": "Artificial stimulation of Agouti-Related Peptide (AgRP) neurons promotes intense food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Artificial stimulation of Agouti-Related Peptide (AgRP) neurons promotes intense food consumption, yet paradoxically during natural behavior these cells are inhibited before feeding begins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established finding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "91eafcc0-1aba-4432-8fc6-b75e8136af7c",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C2",
+      "claim": "During natural behavior, AgRP neurons are inhibited before feeding begins.",
+      "claim_type": "EXPLICIT",
+      "source": "Artificial stimulation of Agouti-Related Peptide (AgRP) neurons promotes intense food consumption, yet paradoxically during natural behavior these cells are inhibited before feeding begins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "eea53547-3c02-4f84-8117-f51b8d97d2d4",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C3",
+      "claim": "Brief stimulation of AgRP neurons can generate hunger that persists for tens of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, to reconcile these observations, we showed that brief stimulation of AgRP neurons can generate hunger that persists for tens of minutes, but the mechanisms underlying this sustained hunger drive remain unknown (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract with a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "cc470270-730e-4e08-bae3-6450db74252f",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C4",
+      "claim": "Neuropeptide Y (NPY) is uniquely required for the long-lasting effects of AgRP neurons on feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that Neuropeptide Y (NPY) is uniquely required for the long-lasting effects of AgRP neurons on feeding behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "3127fa0c-91ae-42b2-b062-e5166bb97392",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C5",
+      "claim": "Deletion of NPY abolished optically-stimulated feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of NPY, but not AgRP or GABA, abolished optically-stimulated feeding, and this was rescued by NPY re-expression selectively in AgRP neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "e6067f1a-af37-4d62-ad45-1ea7764572cc",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C6",
+      "claim": "Deletion of AgRP did not abolish optically-stimulated feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of NPY, but not AgRP or GABA, abolished optically-stimulated feeding, and this was rescued by NPY re-expression selectively in AgRP neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "49749577-fb92-4de5-be95-b394a99127cd",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C7",
+      "claim": "Deletion of GABA did not abolish optically-stimulated feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of NPY, but not AgRP or GABA, abolished optically-stimulated feeding, and this was rescued by NPY re-expression selectively in AgRP neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "e5d01117-365e-4228-a255-aa651a0dea4e",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C8",
+      "claim": "NPY re-expression selectively in AgRP neurons rescued the feeding phenotype in NPY knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of NPY, but not AgRP or GABA, abolished optically-stimulated feeding, and this was rescued by NPY re-expression selectively in AgRP neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 3L-P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "da27e33f-31ed-4e5d-ba8d-f484a0e16868",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C9",
+      "claim": "NPY sustains hunger in the interval between food discovery and consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal a unique role for NPY in sustaining hunger in the interval between food discovery and consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract and supported by the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "87b91886-2cbd-4434-aa0b-754861b33d07",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C10",
+      "claim": "AgRP neurons are a small population of cells in the arcuate nucleus of the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "AgRP neurons are a small population of cells in the arcuate nucleus of the hypothalamus that are critical for regulating food intake (Andermann and Lowell, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "b19298d7-e807-42b4-8ceb-537d70d7077d",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C11",
+      "claim": "AgRP neurons are critical for regulating food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "AgRP neurons are a small population of cells in the arcuate nucleus of the hypothalamus that are critical for regulating food intake (Andermann and Lowell, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "48e20df4-e030-4175-87c8-3a47e20f432e",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C12",
+      "claim": "AgRP neurons are progressively activated during food deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are progressively activated during food deprivation (Betley et al., 2015; Chen et al., 2015; Hahn et al., 1998; Mandelblat-Cerf et al., 2015), in part due to fluctuations in nutritionally-regulated hormones such as leptin and ghrelin (Beutler et al., 2017; Blouet and Schwartz, 2010; Cowley et al., 2001; Cowley et al., 2003; Dietrich et al., 2013; Nakazato et al., 2001; Pinto et al., 2004; Schneeberger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "be36d2ae-1fcd-4b52-9bc5-7bef9ffb9575",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C13",
+      "claim": "AgRP neuron activation during food deprivation is in part due to fluctuations in nutritionally-regulated hormones such as leptin and ghrelin.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are progressively activated during food deprivation (Betley et al., 2015; Chen et al., 2015; Hahn et al., 1998; Mandelblat-Cerf et al., 2015), in part due to fluctuations in nutritionally-regulated hormones such as leptin and ghrelin (Beutler et al., 2017; Blouet and Schwartz, 2010; Cowley et al., 2001; Cowley et al., 2003; Dietrich et al., 2013; Nakazato et al., 2001; Pinto et al., 2004; Schneeberger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "bac578f2-7dd4-4274-bd94-cba6c3f05aa0",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C14",
+      "claim": "Optogenetic or chemogenetic stimulation of AgRP neurons promotes intense food seeking and consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic or chemogenetic stimulation of AgRP neurons promotes intense food seeking and consumption (Aponte et al., 2011; Krashes et al., 2011), whereas silencing of these cells leads to aphagia or starvation (Gropp et al., 2005; Krashes et al., 2011; Luquet et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "2b9b9318-5c16-41a2-b2d3-bd5d340c9140",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C15",
+      "claim": "Silencing of AgRP neurons leads to aphagia or starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic or chemogenetic stimulation of AgRP neurons promotes intense food seeking and consumption (Aponte et al., 2011; Krashes et al., 2011), whereas silencing of these cells leads to aphagia or starvation (Gropp et al., 2005; Krashes et al., 2011; Luquet et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "e4b9e455-79b1-4fc4-87a7-8c385542a6f1",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C16",
+      "claim": "AgRP neurons play a key role in the homeostatic negative feedback loop that links the need for energy to the stimulation of feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus AgRP neurons play a key role in the homeostatic negative feedback loop that links the need for energy to the stimulation of feeding behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a conclusion from the cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "27e29ff6-dd82-40a8-82e0-8aa2fb6b8813",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C17",
+      "claim": "AgRP neurons are inhibited within seconds when a hungry animal sees or smells food.",
+      "claim_type": "EXPLICIT",
+      "source": "Although AgRP neurons are gradually activated during fasting, they are inhibited within seconds when a hungry animal sees or smells food (Betley et al., 2015; Chen et al., 2015; Mandelblat-Cerf et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "25add31f-43bb-49d9-9afa-b7e57e8d21ef",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C18",
+      "claim": "The rapid inhibition of AgRP neurons often occurs before a single bite of food has been consumed.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, this rapid inhibition of AgRP neurons often occurs before a single bite of food has been consumed and then persists for the duration of the ensuing meal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction based on cited observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "a3740bd4-42ed-43e6-a10e-f8272582f05d",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C19",
+      "claim": "The rapid inhibition of AgRP neurons persists for the duration of the ensuing meal.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, this rapid inhibition of AgRP neurons often occurs before a single bite of food has been consumed and then persists for the duration of the ensuing meal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction based on cited observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "1f246feb-7770-4ad5-9e27-5fd7206edb73",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C20",
+      "claim": "Brief optogenetic stimulation of AgRP neurons in the absence of food can drive voracious food intake tens of minutes later, long after AgRP neuron stimulation has been terminated.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we showed that brief optogenetic stimulation of AgRP neurons in the absence of food can drive voracious food intake tens of minutes later, long after AgRP neuron stimulation has been terminated (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "d697c4b1-837d-455b-b66a-261416c49ff1",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C21",
+      "claim": "AgRP neurons can generate an unusual 'sustained hunger drive' that outlasts their acute firing.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that AgRP neurons can generate an unusual 'sustained hunger drive' that outlasts their acute firing (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "97d5f2dd-3708-42c1-9d9e-4f3484c34b0f",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C22",
+      "claim": "AgRP neurons release three neurotransmitters that can influence feeding: AgRP, NPY and GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "AgRP neurons release three neurotransmitters that can influence feeding: AgRP, NPY and GABA (Andermann and Lowell, 2017; Hahn et al., 1998; Krashes et al., 2013; Tong et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "552b5745-a24e-483a-a062-47bed888dd83",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C23",
+      "claim": "Pre-stimulation of AgRP neurons for 15 minutes produced robust food intake in mice lacking GABA or AgRP signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This pre-stimulation paradigm produced robust food intake in mice lacking GABA or AgRP signaling, and the magnitude of food consumption was similar between mutants and littermate controls (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "33ac6959-3374-4e0a-b0dd-8439ac28a647",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C24",
+      "claim": "Pre-stimulation of mice lacking NPY caused no increase in food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, pre-stimulation of mice lacking NPY caused no increase in food intake (Figure 1C, bottom row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "40d927e8-2ed9-406c-9002-af4d49ddd496",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C25",
+      "claim": "Control mice, as well as mice lacking GABA or AgRP, showed a clear dose-response relationship between pre-stimulation duration and total food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that control mice, as well as mice lacking GABA or AgRP, showed a clear dose-response relationship between pre-stimulation duration and total food intake (Figure 1E,F and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 1E, 1F, and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "7f1c1fb6-584e-4d8f-b09e-4de953e49850",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C26",
+      "claim": "The increase in food intake following AgRP neuron pre-stimulation was due to an increase in bout size, rather than bout number.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in food intake was due to an increase in bout size, rather than bout number (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "5178725d-24dc-4f68-894c-5f9c0f80854b",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C27",
+      "claim": "NPY- mice showed no dose-dependent increase in food intake following longer durations of AgRP neuron pre-stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast NPY- mice showed no dose-dependent increase in food intake following longer durations of AgRP neuron pre-stimulation (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "710ec046-6e94-480f-b7bf-50335a7717b3",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C28",
+      "claim": "The behavioral defect in NPY- mice was not due to a failure to activate AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavioral defect was not due to a failure to activate AgRP neurons, because we observed robust Fos expression in AgRP neurons after optogenetic stimulation of NPY- mice (Figure 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 1L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "e97edb16-5977-4f31-bbb4-40b18106c1ae",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C29",
+      "claim": "NPY is specifically required for the sustained hunger produced by AgRP neuron activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead this indicates that NPY is specifically required for the sustained hunger produced by AgRP neuron activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "b97c68dd-dd23-4d17-8961-70b66e5a453b",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C30",
+      "claim": "All genotypes except for NPY- mice exhibited robust food consumption that gradually declined with increasing delay duration up to 60 min.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all genotypes except for NPY- mice exhibited robust food consumption that gradually declined with increasing delay duration up to 60 min (Figure 1I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 1I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "cb092e48-beb8-462d-bad7-4dd4787b8d48",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C31",
+      "claim": "The hunger signal generated by AgRP neurons has a rise time of approximately four minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "By pooling data from all control animals, we estimated that this hunger signal has a rise time of approximately four minutes (logarithmic growth; N = 23; R-Square = 0.72; Figure 1M) and a decay-time of approximately 47 min (exponential decay; N = 19; R-Square = 0.87; Figure 1N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results with statistical analysis and shown in Figure 1M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "9d651432-f7f3-4540-9a0b-e56f7b172305",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C32",
+      "claim": "The hunger signal generated by AgRP neurons has a decay-time of approximately 47 min.",
+      "claim_type": "EXPLICIT",
+      "source": "By pooling data from all control animals, we estimated that this hunger signal has a rise time of approximately four minutes (logarithmic growth; N = 23; R-Square = 0.72; Figure 1M) and a decay-time of approximately 47 min (exponential decay; N = 19; R-Square = 0.87; Figure 1N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results with statistical analysis and shown in Figure 1N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "8edcfa4f-4e23-44dd-9490-ddad99eb0892",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C33",
+      "claim": "AgRP neuron activity rapidly generates a durable, NPY-dependent signal that drives feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that AgRP neuron activity rapidly generates a durable, NPY-dependent signal that drives feeding behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "7b1e4868-d56a-4fa8-bbff-90feab24ce2c",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C34",
+      "claim": "Vigorous lever pressing was observed following pre-stimulation of AgRP neurons in AgRP- and GABA- mice, as well as controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed vigorous lever pressing following pre-stimulation of AgRP neurons in AgRP- and GABA- mice, as well as controls (Figure 2B\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 2B-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "e0feac9f-a4d0-4eb8-9a26-86d60579403a",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C35",
+      "claim": "Pre-stimulation had no effect on operant responding in animals lacking NPY.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast pre-stimulation had no effect on operant responding in animals lacking NPY (Figure 2B,C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 2B, 2C, and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "67baf5b8-5a9f-4f0d-987b-2950e7cb4484",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C36",
+      "claim": "NPY is critical for the ability of AgRP neurons to drive food seeking behavior as well as food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that NPY is critical for the ability of AgRP neurons to drive food seeking behavior as well as food consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the operant behavior experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "28cf0bbb-74f8-489d-b7e4-e99b555b419a",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C37",
+      "claim": "In control mice, alternating stimulation protocol stimulated robust food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "In control mice, this protocol stimulated robust food consumption (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "276523f7-6846-483a-854d-d6921e82e309",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C38",
+      "claim": "Food intake was equally distributed between the Laser ON and OFF epochs in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, food intake was equally distributed between the Laser ON and OFF epochs (Figure 3C\u2013I), indicating that wild-type animals do not distinguish the boundary between these two-minute intervals, presumbly due to the sustained hunger produced by AgRP neuron stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 3C-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "577eb235-289c-4594-84c5-1fcfdb5b18e2",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C39",
+      "claim": "Loss of NPY caused food intake to become strictly time-locked to the laser stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, loss of NPY caused food intake to become strictly time-locked to the laser stimulus: that is, NPY- animals ate during concurrent stimulation, but then stopped eating within seconds of the laser shutting off (Figure 3C,D,F,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 3C, 3D, 3F, and 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "042e02b0-aed0-43e8-8c71-0f6fd2d43013",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C40",
+      "claim": "Mice lacking GABA or AgRP signaling, as well as their littermate controls, showed no difference in feeding between the Laser ON and OFF periods.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mice lacking GABA or AgRP signaling, as well as their littermate controls, showed no difference in feeding between the Laser ON and OFF periods (Figure 3E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 3E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "eec1e28c-3c5a-4a99-9336-798a40d7ac51",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C41",
+      "claim": "In the absence of NPY, AgRP neuron driven hunger dissipates within seconds of the offset of AgRP neuron firing.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that, in the absence of NPY, AgRP neuron driven hunger dissipates within seconds of the offset of AgRP neuron firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the alternating stimulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "ad65f9ea-40d7-4bc1-895e-ed4bd6fd9dec",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C42",
+      "claim": "NPY is expressed in cell types other than AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "NPY is expressed in cell types other than AgRP neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "1b0d7a81-59f3-4034-b8b7-f0c72a80345b",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C43",
+      "claim": "Mice injected with AAV expressing NPY, but not GFP, showed restoration of NPY expression in the ARC.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice injected with AAV expressing NPY, but not GFP, showed restoration of NPY expression in the ARC (Figure 3K) and complete rescue of the feeding phenotypes associated with NPY- knockout (Figure 3L\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 3K-P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "a5f81142-9814-4029-9526-7ffe4c291d71",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C44",
+      "claim": "NPY re-expression in AgRP neurons caused complete rescue of the feeding phenotypes associated with NPY- knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice injected with AAV expressing NPY, but not GFP, showed restoration of NPY expression in the ARC (Figure 3K) and complete rescue of the feeding phenotypes associated with NPY- knockout (Figure 3L\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 3L-P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "4c48457c-8390-4fa6-8fba-93f2a3bf7cb2",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C45",
+      "claim": "NPY re-expression in AgRP neurons caused feeding behavior in NPY- mice to become uncoupled from the onset and offset of laser stimulation, in a way that was indistinguishable from wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, NPY re-expression in AgRP neurons caused feeding behavior in NPY- mice to become uncoupled from the onset and offset of laser stimulation, in a way that was indistinguishable from wild-type animals (Figure 3N\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 3N-P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "09ee5d6a-7c37-45b0-8798-61613eabeae8",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C46",
+      "claim": "The phenotypes observed in NPY- mice are due to loss of NPY expression in AgRP neurons, rather than effects of this mutation on other circuits or development.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the phenotypes observed in NPY- mice are due to loss of NPY expression in AgRP neurons, rather than effects of this mutation on other circuits or development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as a conclusion from the rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "70234555-7ea9-45ee-82c3-8367dd703c03",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C47",
+      "claim": "Concurrent chemogenetic stimulation increased food consumption in mice lacking NPY.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that concurrent chemogenetic stimulation increased food consumption in mice lacking NPY (Figure 4C,D and Figure 4\u2014figure supplement 1), consistent with a previous report (Krashes et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 4C, 4D, and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "d4cd5d02-00a0-43d3-9f00-602a28c00c35",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C48",
+      "claim": "During concurrent optogenetic stimulation NPY- mice consumed only a small fraction of the food consumed by NPY+ controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, during concurrent optogenetic stimulation NPY- mice consumed only a small fraction of the food consumed by NPY+ controls (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 4E and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "a67011f4-e238-426c-90ba-69deb53f95bf",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C49",
+      "claim": "Food intake in NPY- mice could be partially rescued by using a higher intensity optogenetic stimulation protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "We could partially rescue food intake in NPY- mice by using a higher intensity optogenetic stimulation protocol (Figure 4F), whereas NPY+ controls showed no difference in food consumption between high and moderate intensity stimulation (high intensity refers to continuous 20 Hz stimulation, whereas moderate intensity refers to 20 Hz stimulation in a 2 s ON, 3 s OFF pattern; Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figures 4F and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "cd8a7b2c-f6c3-4f80-a9b1-01adbcd52b50",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C50",
+      "claim": "Intense concurrent optogenetic stimulation of AgRP neurons can partially overcome the requirement for NPY, likely through increased release of GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that intense concurrent optogenetic stimulation of AgRP neurons can partially overcome the requirement for NPY, likely through increased release of GABA (Atasoy et al., 2012; Krashes et al., 2013; Tong et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as an interpretation of the data with citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "5bab0505-df6a-4ca5-8647-453d52706133",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C51",
+      "claim": "Increased stimulation intensity could not compensate to any degree for loss of NPY in a pre-stimulation paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to these variable responses to concurrent stimulation, we found that increased stimulation intensity could not compensate to any degree for loss of NPY in a pre-stimulation paradigm (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results and shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "ab9a8ff8-d1c9-4645-92f5-438107a1f3ad",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C52",
+      "claim": "Endogenous GABA and AgRP are unable to drive food intake effectively on the timescale of sustained hunger (tens of minutes immediately after the offset of stimulation).",
+      "claim_type": "EXPLICIT",
+      "source": "This is presumably because endogenous GABA and AgRP are unable to drive food intake effectively on the timescale of sustained hunger (tens of minutes immediately after the offset of stimulation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results as an interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "08354a23-b3c1-4005-b2ad-ebaaf8bd9364",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C53",
+      "claim": "Infusion of picomoles of NPY into the PVH can elicit voracious food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies showed that infusion of picomoles of NPY into the PVH can elicit voracious food intake (Clark et al., 1985; Stanley and Leibowitz, 1984), identifying NPY as an unusually potent orexigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "bcfebf3a-4cfc-4979-8040-e24848e543e2",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C54",
+      "claim": "NPY is highly expressed in hunger-promoting AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, NPY is highly expressed in hunger-promoting AgRP neurons (Hahn et al., 1998), and its expression in these cells is increased by energy deficit (Sahu et al., 1988; White and Kershaw, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "618f54f0-6a69-444f-b820-50fc796f8748",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C55",
+      "claim": "NPY expression in AgRP neurons is increased by energy deficit.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, NPY is highly expressed in hunger-promoting AgRP neurons (Hahn et al., 1998), and its expression in these cells is increased by energy deficit (Sahu et al., 1988; White and Kershaw, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "61593137-bea5-4a00-a61b-f59a28604b51",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C56",
+      "claim": "Genetic deletion of NPY, alone or in combination with AgRP, had little effect on food intake or body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "However genetic deletion of NPY, alone (Erickson et al., 1996) or in combination with AgRP (Qian et al., 2002), had little effect on food intake or body weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "8a093a45-0e3b-4d2a-912b-c6e1cbc14647",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C57",
+      "claim": "Deletion of NPY receptors, alone or in combination, failed to produce the expected lean phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly deletion of NPY receptors, alone (Kushi et al., 1998; Marsh et al., 1998; Pedrazzini et al., 1998) or in combination (Nguyen et al., 2012), failed to produce the expected lean phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "08059fad-f9be-4a2b-8fe2-88c6c0456327",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C58",
+      "claim": "Food intake following chemogenetic stimulation of AgRP neurons requires either NPY or GABA signaling, but not both.",
+      "claim_type": "EXPLICIT",
+      "source": "One study found that food intake following chemogenetic stimulation of AgRP neurons requires either NPY or GABA signaling, but not both (Krashes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "f8f7a5bf-7264-4b56-a32a-916fba25c9b8",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C59",
+      "claim": "Antagonists of NPY or GABA receptors in PVH could partially block feeding induced by optogenetic stimulation of AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study showed that antagonists of NPY or GABA receptors in PVH could partially block feeding induced by optogenetic stimulation of AgRP neurons (Atasoy et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "36b886fa-7c14-4f13-bf73-703030b2c252",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C60",
+      "claim": "NPY and GABA have partially redundant functions in mediating food intake by AgRP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations have led to a general view that NPY and GABA have partially redundant functions in mediating food intake by AgRP neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the prevailing view in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "46cd9a89-ead8-4531-9d6e-eb6c35c6c862",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C61",
+      "claim": "NPY plays a remarkably specific role in extending the duration of AgRP neurons' behavioral effects for tens of minutes beyond the window of their immediate firing.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a remarkably specific role for NPY in extending the duration of AgRP neurons' behavioral effects for tens of minutes beyond the window of their immediate firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "fa12819c-56cc-4068-9c46-509ea191017f",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C62",
+      "claim": "NPY provides a molecular correlate for the long-lasting hunger signal that bridges AgRP neuron dynamics with feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn provides a molecular correlate for the long-lasting hunger signal that bridges AgRP neuron dynamics with feeding behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "1c291096-728b-4320-b8f5-256b3d133f20",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C63",
+      "claim": "Infusion of AgRP into the brain or stimulation of AgRP release can cause modulation of feeding behavior that persists for days.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, infusion of AgRP into the brain (Hagan et al., 2000) or stimulation of AgRP release (Krashes et al., 2013; Nakajima et al., 2016) can cause modulation of feeding behavior that persists for days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "bea90646-abab-4ad4-aeb3-aa8e6b295dfd",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C64",
+      "claim": "Long-lasting potentiation of feeding behavior by AgRP requires several hours to emerge when endogenous AgRP release is stimulated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this long-lasting potentiation of feeding behavior requires several hours to emerge when endogenous AgRP release is stimulated (Krashes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "37061082-87a6-46ea-9146-8bf4181d1838",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C65",
+      "claim": "The AgRP peptide is not required for the intense food consumption that occurs immediately following AgRP neuron pre-stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we find no evidence that the AgRP peptide is required for the intense food consumption that occurs immediately following AgRP neuron pre-stimulation (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and supported by data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "a1668e71-2214-44ab-a102-bca1a2ca6e53",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C66",
+      "claim": "NPY and AgRP play complementary roles in the regulation of feeding, with NPY sustaining hunger selectively on the timescale of a meal (tens of minutes after food discovery), whereas AgRP modulates the tone of the feeding circuit over longer timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus our data suggest that NPY and AgRP play complementary roles in the regulation of feeding, with NPY sustaining hunger selectively on the timescale of a meal (tens of minutes after food discovery), whereas AgRP modulates the tone of the feeding circuit over longer timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "6959d6d3-8947-45f3-8d8c-4c219483e311",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C67",
+      "claim": "Slice recordings have shown that NPY can have persistent effects on membrane excitability and neurotransmitter release in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Slice recordings have shown that NPY can have persistent effects on membrane excitability and neurotransmitter release in vitro (Dubois et al., 2012; Fu et al., 2004; Roseberry et al., 2004), indicating that NPY may act directly on post-synaptic targets of AgRP neurons to cause durable changes in their activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "dc87a5dc-7ec2-4df8-96df-1f90a465d3d4",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C68",
+      "claim": "NPY may act directly on post-synaptic targets of AgRP neurons to cause durable changes in their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Slice recordings have shown that NPY can have persistent effects on membrane excitability and neurotransmitter release in vitro (Dubois et al., 2012; Fu et al., 2004; Roseberry et al., 2004), indicating that NPY may act directly on post-synaptic targets of AgRP neurons to cause durable changes in their activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of cited findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "6ca23251-9fd5-4606-86b7-92871384babd",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C69",
+      "claim": "Pre-stimulation of AgRP neuron axon terminals in PVH, BNST, and LH is sufficient to drive sustained feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that pre-stimulation of AgRP neuron axon terminals in PVH, BNST, and LH is sufficient to drive sustained feeding (Chen et al., 2016), suggesting that these are the downstream sites where NPY has its long-lasting effects on hunger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "caef6069-8b25-4c01-a1ff-775123d52a03",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C70",
+      "claim": "PVH, BNST, and LH are the downstream sites where NPY has its long-lasting effects on hunger.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that pre-stimulation of AgRP neuron axon terminals in PVH, BNST, and LH is sufficient to drive sustained feeding (Chen et al., 2016), suggesting that these are the downstream sites where NPY has its long-lasting effects on hunger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from cited findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "b808e796-6a68-4ce5-8c4a-183e702148b0",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C71",
+      "claim": "A neuropeptide that drives feeding can function on a timescale that is inaccessible to classical neurotransmitters.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown here how a neuropeptide that drives feeding can function on a timescale that is inaccessible to classical neurotransmitters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "d3fd423b-bdf9-44f5-9ccc-d0daabe9dd52",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "claim_id": "C72",
+      "claim": "NPY allows a neuron that controls hunger to direct ongoing behavior while simultaneously anticipating and responding to impending physiologic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn allows a neuron that controls hunger to direct ongoing behavior while simultaneously anticipating and responding to impending physiologic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7107175b-6670-4131-a688-6e6cf73ad2fe",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NPY is uniquely required for sustained feeding induced by AgRP neuron pre-stimulation. Pre-stimulation of AgRP neurons for 15 minutes produced robust food intake in mice lacking GABA or AgRP signaling, but not in NPY knockout mice. This effect was dose-dependent in control and GABA-/AgRP- mice but absent in NPY- mice, and was not due to failure to activate AgRP neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7, C23-C25, C27-C29 provide converging evidence from multiple experimental paradigms (pre-stimulation with varying durations) showing NPY is specifically required for sustained hunger. The data include appropriate controls (GABA- and AgRP- mice), verification of AgRP neuron activation (Fos staining, C28), and dose-response relationships. Statistical comparisons are reported with multiple testing corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "dbe6b9bb-029a-4ffc-8468-c452039d3799",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The sustained hunger signal generated by AgRP neurons has specific temporal kinetics. The signal has a rise time of approximately 4 minutes (logarithmic growth, R\u00b2=0.72) and a decay time of approximately 47 minutes (exponential decay, R\u00b2=0.87), and this signal is NPY-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 describe temporal dynamics with quantitative modeling. The R\u00b2 values indicate reasonable model fits, though not exceptional (0.72 and 0.87). Sample sizes are reported (N=23 and N=19). The delay experiments with varying intervals provide appropriate data for kinetic analysis. The conclusion that this signal is NPY-dependent is supported by the lack of response in NPY- mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "a9392016-3778-43d3-9aec-a45dc8e2bd62",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NPY is critical for AgRP neuron-driven food-seeking behavior. Pre-stimulation of AgRP neurons induced vigorous lever pressing in AgRP- and GABA- mice and controls, but had no effect on operant responding in NPY- mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 demonstrate that NPY's role extends beyond consummatory behavior to appetitive/food-seeking behavior using a progressive ratio task. The data show consistent effects across genotypes with appropriate controls. This extends the main finding beyond simple food intake to motivated behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "38695380-ef87-46f3-91f1-42f1b094d53e",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "NPY is required for sustained hunger on a seconds-to-minutes timescale. In an alternating stimulation paradigm (2-min ON/OFF), control mice showed food intake equally distributed between laser ON and OFF epochs, while NPY- mice ate only during concurrent stimulation and stopped within seconds of laser offset. GABA- and AgRP- mice behaved like controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 provide high temporal resolution evidence for NPY's role in sustaining hunger. The alternating stimulation paradigm is well-designed to distinguish immediate vs. sustained effects. The striking time-locking of feeding to laser stimulation in NPY- mice provides clear evidence for the specific role of NPY. Multiple genotypes serve as appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "e06847dd-73e1-4a98-881e-57375fa7a431",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The feeding phenotypes in NPY- mice are specifically due to loss of NPY in AgRP neurons. Viral re-expression of NPY selectively in AgRP neurons of NPY- mice completely rescued all feeding phenotypes, including the uncoupling of feeding from laser stimulation timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 describe a critical rescue experiment that addresses potential confounds from global NPY knockout. The cell-type-specific rescue using AAV-mediated NPY re-expression in AgRP neurons demonstrates sufficiency and specificity. Complete rescue of multiple phenotypes (pre-stimulation feeding, alternating stimulation) strengthens the conclusion. Appropriate controls (AAV-GFP) are included.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "1298552a-d32e-4bce-9d28-dba59da38e6d",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The requirement for NPY depends on stimulation paradigm and intensity. Concurrent chemogenetic stimulation increased food intake in NPY- mice, but concurrent optogenetic stimulation at moderate intensity did not. High-intensity optogenetic stimulation partially rescued feeding in NPY- mice during concurrent but not pre-stimulation paradigms, likely through increased GABA release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 reconcile apparent discrepancies with prior literature and demonstrate context-dependence of NPY requirement. The data show that intense concurrent stimulation can partially compensate for NPY loss (presumably via GABA), but this compensation does not occur in pre-stimulation paradigms. This supports the specific role of NPY in sustained hunger. However, the discrepancy between chemogenetic and optogenetic results remains unexplained (acknowledged in C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "59d5b2d5-105c-4dba-955d-580f9ef54915",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The increase in food intake following AgRP neuron pre-stimulation was due to increased bout size rather than bout number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 describes a behavioral mechanism underlying increased food intake. This is supported by data in Figure 1\u2014figure supplement 2, providing insight into how sustained hunger manifests behaviorally (larger meals rather than more frequent meals).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background on AgRP neurons and the paradox of their regulation. AgRP neurons are critical for feeding, are activated by food deprivation, and artificial stimulation promotes feeding. However, they are rapidly inhibited by food cues before consumption begins, creating a paradox. Previous work showed brief stimulation can generate sustained hunger.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C22 provide established background knowledge from prior literature (heavily cited). These claims set up the scientific question addressed in the manuscript. The paradox between artificial stimulation effects and natural dynamics is well-established in the field and motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "5e986993-c212-4a44-902f-2a349a9e2257",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Historical context on NPY's role in feeding. Early studies showed NPY is a potent orexigen when infused into the brain and is highly expressed in AgRP neurons. However, genetic deletion studies showed minimal effects on feeding, and prior work suggested NPY and GABA have redundant functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C60 accurately summarize prior literature on NPY, including the apparent paradox between pharmacological potency and genetic deletion phenotypes. These claims provide important context for why the current findings are significant and how they resolve previous inconsistencies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "0b1b73f4-7196-4bb5-bda1-1a499e131089",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "NPY provides a molecular mechanism for sustained hunger that operates on a timescale inaccessible to classical neurotransmitters. NPY and AgRP play complementary roles: NPY sustains hunger on the timescale of a meal (tens of minutes), while AgRP modulates feeding circuit tone over longer timescales (hours to days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62, C66, C71-C72 represent the main conceptual conclusions of the study. These are well-supported by the experimental data showing NPY's specific requirement for sustained but not immediate effects, and by the temporal kinetics data. The complementary roles of NPY and AgRP are supported by comparing the current findings with prior work on AgRP's long-lasting effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "cecf2cbe-9064-461f-b0d1-9e3764e86f45",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AgRP peptide has long-lasting effects on feeding (days) but requires hours to emerge, and is not required for immediate post-stimulation feeding. This distinguishes AgRP's role from NPY's role in sustaining hunger on shorter timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 integrate current findings with prior literature on AgRP peptide. The data in Figure 1 showing normal feeding in AgRP- mice supports C65. The temporal distinction between NPY (minutes) and AgRP (hours-days) effects is well-supported and provides a coherent model of complementary neuropeptide functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    },
+    {
+      "id": "f051be1d-baef-4057-9243-28713c96eab9",
+      "content_id": "9839c325-6202-4cc8-b901-0669077b2a04",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Potential mechanisms and sites of NPY action. NPY can have persistent effects on membrane excitability and neurotransmitter release in vitro, suggesting direct postsynaptic actions. Prior work showed pre-stimulation of AgRP terminals in PVH, BNST, and LH drives sustained feeding, suggesting these are sites of NPY action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C70 propose mechanisms and anatomical sites but are largely speculative. C67 cites in vitro evidence for persistent NPY effects, but whether these mechanisms operate in vivo is unknown. C69-C70 cite prior work on terminal stimulation but do not directly test NPY's role at these sites. The authors appropriately acknowledge these as open questions in the Discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:45:59.020063Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cc470270-730e-4e08-bae3-6450db74252f",
+      "result_id": "7107175b-6670-4131-a688-6e6cf73ad2fe"
+    },
+    {
+      "claim_id": "3127fa0c-91ae-42b2-b062-e5166bb97392",
+      "result_id": "7107175b-6670-4131-a688-6e6cf73ad2fe"
+    },
+    {
+      "claim_id": "e6067f1a-af37-4d62-ad45-1ea7764572cc",
+      "result_id": "7107175b-6670-4131-a688-6e6cf73ad2fe"
+    },
+    {
+      "claim_id": "49749577-fb92-4de5-be95-b394a99127cd",
+      "result_id": "7107175b-6670-4131-a688-6e6cf73ad2fe"
+    },
+    {
+      "claim_id": "552b5745-a24e-483a-a062-47bed888dd83",
+      "result_id": "7107175b-6670-4131-a688-6e6cf73ad2fe"
+    },
+    {
+      "claim_id": "33ac6959-3374-4e0a-b0dd-8439ac28a647",
+      "result_id": "7107175b-6670-4131-a688-6e6cf73ad2fe"
+    },
+    {
+      "claim_id": "40d927e8-2ed9-406c-9002-af4d49ddd496",
+      "result_id": "7107175b-6670-4131-a688-6e6cf73ad2fe"
+    },
+    {
+      "claim_id": "5178725d-24dc-4f68-894c-5f9c0f80854b",
+      "result_id": "7107175b-6670-4131-a688-6e6cf73ad2fe"
+    },
+    {
+      "claim_id": "710ec046-6e94-480f-b7bf-50335a7717b3",
+      "result_id": "7107175b-6670-4131-a688-6e6cf73ad2fe"
+    },
+    {
+      "claim_id": "e97edb16-5977-4f31-bbb4-40b18106c1ae",
+      "result_id": "7107175b-6670-4131-a688-6e6cf73ad2fe"
+    },
+    {
+      "claim_id": "b97c68dd-dd23-4d17-8961-70b66e5a453b",
+      "result_id": "dbe6b9bb-029a-4ffc-8468-c452039d3799"
+    },
+    {
+      "claim_id": "cb092e48-beb8-462d-bad7-4dd4787b8d48",
+      "result_id": "dbe6b9bb-029a-4ffc-8468-c452039d3799"
+    },
+    {
+      "claim_id": "9d651432-f7f3-4540-9a0b-e56f7b172305",
+      "result_id": "dbe6b9bb-029a-4ffc-8468-c452039d3799"
+    },
+    {
+      "claim_id": "8edcfa4f-4e23-44dd-9490-ddad99eb0892",
+      "result_id": "dbe6b9bb-029a-4ffc-8468-c452039d3799"
+    },
+    {
+      "claim_id": "7b1e4868-d56a-4fa8-bbff-90feab24ce2c",
+      "result_id": "a9392016-3778-43d3-9aec-a45dc8e2bd62"
+    },
+    {
+      "claim_id": "e0feac9f-a4d0-4eb8-9a26-86d60579403a",
+      "result_id": "a9392016-3778-43d3-9aec-a45dc8e2bd62"
+    },
+    {
+      "claim_id": "67baf5b8-5a9f-4f0d-987b-2950e7cb4484",
+      "result_id": "a9392016-3778-43d3-9aec-a45dc8e2bd62"
+    },
+    {
+      "claim_id": "28cf0bbb-74f8-489d-b7e4-e99b555b419a",
+      "result_id": "38695380-ef87-46f3-91f1-42f1b094d53e"
+    },
+    {
+      "claim_id": "276523f7-6846-483a-854d-d6921e82e309",
+      "result_id": "38695380-ef87-46f3-91f1-42f1b094d53e"
+    },
+    {
+      "claim_id": "577eb235-289c-4594-84c5-1fcfdb5b18e2",
+      "result_id": "38695380-ef87-46f3-91f1-42f1b094d53e"
+    },
+    {
+      "claim_id": "042e02b0-aed0-43e8-8c71-0f6fd2d43013",
+      "result_id": "38695380-ef87-46f3-91f1-42f1b094d53e"
+    },
+    {
+      "claim_id": "eec1e28c-3c5a-4a99-9336-798a40d7ac51",
+      "result_id": "38695380-ef87-46f3-91f1-42f1b094d53e"
+    },
+    {
+      "claim_id": "ad65f9ea-40d7-4bc1-895e-ed4bd6fd9dec",
+      "result_id": "e06847dd-73e1-4a98-881e-57375fa7a431"
+    },
+    {
+      "claim_id": "1b0d7a81-59f3-4034-b8b7-f0c72a80345b",
+      "result_id": "e06847dd-73e1-4a98-881e-57375fa7a431"
+    },
+    {
+      "claim_id": "a5f81142-9814-4029-9526-7ffe4c291d71",
+      "result_id": "e06847dd-73e1-4a98-881e-57375fa7a431"
+    },
+    {
+      "claim_id": "4c48457c-8390-4fa6-8fba-93f2a3bf7cb2",
+      "result_id": "e06847dd-73e1-4a98-881e-57375fa7a431"
+    },
+    {
+      "claim_id": "09ee5d6a-7c37-45b0-8798-61613eabeae8",
+      "result_id": "e06847dd-73e1-4a98-881e-57375fa7a431"
+    },
+    {
+      "claim_id": "70234555-7ea9-45ee-82c3-8367dd703c03",
+      "result_id": "1298552a-d32e-4bce-9d28-dba59da38e6d"
+    },
+    {
+      "claim_id": "d4cd5d02-00a0-43d3-9f00-602a28c00c35",
+      "result_id": "1298552a-d32e-4bce-9d28-dba59da38e6d"
+    },
+    {
+      "claim_id": "a67011f4-e238-426c-90ba-69deb53f95bf",
+      "result_id": "1298552a-d32e-4bce-9d28-dba59da38e6d"
+    },
+    {
+      "claim_id": "cd8a7b2c-f6c3-4f80-a9b1-01adbcd52b50",
+      "result_id": "1298552a-d32e-4bce-9d28-dba59da38e6d"
+    },
+    {
+      "claim_id": "5bab0505-df6a-4ca5-8647-453d52706133",
+      "result_id": "1298552a-d32e-4bce-9d28-dba59da38e6d"
+    },
+    {
+      "claim_id": "ab9a8ff8-d1c9-4645-92f5-438107a1f3ad",
+      "result_id": "1298552a-d32e-4bce-9d28-dba59da38e6d"
+    },
+    {
+      "claim_id": "7f1c1fb6-584e-4d8f-b09e-4de953e49850",
+      "result_id": "59d5b2d5-105c-4dba-955d-580f9ef54915"
+    },
+    {
+      "claim_id": "d210199a-26cf-4f30-b305-983bc199a68f",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "91eafcc0-1aba-4432-8fc6-b75e8136af7c",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "eea53547-3c02-4f84-8117-f51b8d97d2d4",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "87b91886-2cbd-4434-aa0b-754861b33d07",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "b19298d7-e807-42b4-8ceb-537d70d7077d",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "48e20df4-e030-4175-87c8-3a47e20f432e",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "be36d2ae-1fcd-4b52-9bc5-7bef9ffb9575",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "bac578f2-7dd4-4274-bd94-cba6c3f05aa0",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "2b9b9318-5c16-41a2-b2d3-bd5d340c9140",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "e4b9e455-79b1-4fc4-87a7-8c385542a6f1",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "27e29ff6-dd82-40a8-82e0-8aa2fb6b8813",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "25add31f-43bb-49d9-9afa-b7e57e8d21ef",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "a3740bd4-42ed-43e6-a10e-f8272582f05d",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "1f246feb-7770-4ad5-9e27-5fd7206edb73",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "d697c4b1-837d-455b-b66a-261416c49ff1",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "97d5f2dd-3708-42c1-9d9e-4f3484c34b0f",
+      "result_id": "ab4c9910-fc24-48f4-83e1-7d396baf2ee5"
+    },
+    {
+      "claim_id": "08354a23-b3c1-4005-b2ad-ebaaf8bd9364",
+      "result_id": "5e986993-c212-4a44-902f-2a349a9e2257"
+    },
+    {
+      "claim_id": "bcfebf3a-4cfc-4979-8040-e24848e543e2",
+      "result_id": "5e986993-c212-4a44-902f-2a349a9e2257"
+    },
+    {
+      "claim_id": "618f54f0-6a69-444f-b820-50fc796f8748",
+      "result_id": "5e986993-c212-4a44-902f-2a349a9e2257"
+    },
+    {
+      "claim_id": "61593137-bea5-4a00-a61b-f59a28604b51",
+      "result_id": "5e986993-c212-4a44-902f-2a349a9e2257"
+    },
+    {
+      "claim_id": "8a093a45-0e3b-4d2a-912b-c6e1cbc14647",
+      "result_id": "5e986993-c212-4a44-902f-2a349a9e2257"
+    },
+    {
+      "claim_id": "08059fad-f9be-4a2b-8fe2-88c6c0456327",
+      "result_id": "5e986993-c212-4a44-902f-2a349a9e2257"
+    },
+    {
+      "claim_id": "f8f7a5bf-7264-4b56-a32a-916fba25c9b8",
+      "result_id": "5e986993-c212-4a44-902f-2a349a9e2257"
+    },
+    {
+      "claim_id": "36b886fa-7c14-4f13-bf73-703030b2c252",
+      "result_id": "5e986993-c212-4a44-902f-2a349a9e2257"
+    },
+    {
+      "claim_id": "46cd9a89-ead8-4531-9d6e-eb6c35c6c862",
+      "result_id": "0b1b73f4-7196-4bb5-bda1-1a499e131089"
+    },
+    {
+      "claim_id": "fa12819c-56cc-4068-9c46-509ea191017f",
+      "result_id": "0b1b73f4-7196-4bb5-bda1-1a499e131089"
+    },
+    {
+      "claim_id": "a1668e71-2214-44ab-a102-bca1a2ca6e53",
+      "result_id": "0b1b73f4-7196-4bb5-bda1-1a499e131089"
+    },
+    {
+      "claim_id": "b808e796-6a68-4ce5-8c4a-183e702148b0",
+      "result_id": "0b1b73f4-7196-4bb5-bda1-1a499e131089"
+    },
+    {
+      "claim_id": "d3fd423b-bdf9-44f5-9ccc-d0daabe9dd52",
+      "result_id": "0b1b73f4-7196-4bb5-bda1-1a499e131089"
+    },
+    {
+      "claim_id": "1c291096-728b-4320-b8f5-256b3d133f20",
+      "result_id": "cecf2cbe-9064-461f-b0d1-9e3764e86f45"
+    },
+    {
+      "claim_id": "bea90646-abab-4ad4-aeb3-aa8e6b295dfd",
+      "result_id": "cecf2cbe-9064-461f-b0d1-9e3764e86f45"
+    },
+    {
+      "claim_id": "37061082-87a6-46ea-9146-8bf4181d1838",
+      "result_id": "cecf2cbe-9064-461f-b0d1-9e3764e86f45"
+    },
+    {
+      "claim_id": "6959d6d3-8947-45f3-8d8c-4c219483e311",
+      "result_id": "f051be1d-baef-4057-9243-28713c96eab9"
+    },
+    {
+      "claim_id": "dc87a5dc-7ec2-4df8-96df-1f90a465d3d4",
+      "result_id": "f051be1d-baef-4057-9243-28713c96eab9"
+    },
+    {
+      "claim_id": "6ca23251-9fd5-4606-86b7-92871384babd",
+      "result_id": "f051be1d-baef-4057-9243-28713c96eab9"
+    },
+    {
+      "claim_id": "caef6069-8b25-4c01-a1ff-775123d52a03",
+      "result_id": "f051be1d-baef-4057-9243-28713c96eab9"
+    }
+  ],
+  "comparisons": []
+}

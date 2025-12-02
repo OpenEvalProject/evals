@@ -1,0 +1,1255 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Human induced pluripotent stem cells (iPSCs) lines from 123 healthy donors (72 female and 51 male) were obtained from the HipSci project.",
+    "claim_type": "EXPLICIT",
+    "source": "Human induced pluripotent stem cells (iPSCs) lines from 123 healthy donors (72 female and 51 male) (Supplementary file 1) were obtained from the HipSci project (Kilpinen et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number and sex distribution of donors and cites the HipSci project as the source.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Of the 123 iPSC lines, 57 were initially grown in feeder-dependent medium and 66 were grown in feeder-free E8 medium.",
+    "claim_type": "EXPLICIT",
+    "source": "Of these lines, 57 were initially grown in feeder-dependent medium and 66 were grown in feeder-free E8 medium.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript directly states the culture conditions for the cell lines.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The cell lines were screened for mycoplasma by the HipSci project.",
+    "claim_type": "EXPLICIT",
+    "source": "The cell lines were screened for mycoplasma by the HipSci project (Kilpinen et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states that mycoplasma screening was performed and cites the HipSci project.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Macrophages differentiated from a total of 71 iPSC lines were used for the acLDL stimulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Macrophages differentiated from a total of 71 iPSC lines were used for the acLDL stimulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript directly states the sample size for the acLDL study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Macrophages were exposed to 100 \u00b5g/ml human acLDL for 24 hr on day 6 of differentiation.",
+    "claim_type": "EXPLICIT",
+    "source": "On day 6 of the macrophage differentiation, two wells of the six-well plate were exposed to 100 \u00b5g/ml human acLDL (Life Technologies) for 24 hr, whereas the other two wells were incubated in fresh RPMI 1640 medium without stimulation throughout this period.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the acLDL stimulation protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "RNA-seq reads from both studies were aligned to the GRCh38 reference genome and Ensembl 87 transcript annotations using STAR v2.4.0j.",
+    "claim_type": "EXPLICIT",
+    "source": "RNA-seq reads from both studies were aligned to the GRCh38 reference genome and Ensembl 87 transcript annotations using STAR v2.4.0j (Dobin et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the alignment method and references the STAR tool.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "VerifyBamID v1.1.2 was used to detect and correct any sample swaps between donors.",
+    "claim_type": "EXPLICIT",
+    "source": "Subsequently, VerifyBamID v1.1.2 (Jun et al., 2012) was used to detect and correct any sample swaps between donors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the use of VerifyBamID for quality control and cites the tool.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Two samples from one donor (HPSI0513i-xegx_2) were excluded from downstream analysis because they appeared to be outliers on the principal component analysis (PCA) plot.",
+    "claim_type": "EXPLICIT",
+    "source": "Two samples from one donor (HPSI0513i-xegx_2) were excluded from downstream analysis, because they appeared to be outliers on the principal component analysis (PCA) plot of the samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states which samples were excluded and the reason for exclusion.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "featureCounts v1.5.0 was used to count the number of uniquely mapping fragments overlapping transcript annotations from Ensembl 87.",
+    "claim_type": "EXPLICIT",
+    "source": "We used featureCounts v1.5.0 (Liao et al., 2014) to count the number of uniquely mapping fragments overlapping transcript annotations from Ensembl 87.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the quantification method and cites the tool.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Short RNAs and pseudogenes were excluded from the analysis, leaving 35,033 unique genes of which 19,796 were protein coding.",
+    "claim_type": "EXPLICIT",
+    "source": "We excluded short RNAs and pseudogenes from the analysis leaving 35,033 unique genes of which 19,796 were protein coding.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the filtering criteria and resulting gene counts.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "In the IFN\u0263+Salmonella dataset, 12,660 genes were included for analysis based on mean expression greater than one TPM in at least one condition.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, in both IFN\u0263+Salmonella and acLDL dataset, we used only genes with mean expression in at least one of the conditions greater than one transcripts per million (TPM) (Wagner et al., 2012) in all downstream analyses. This resulted in 12,660 and 12,103 genes included for analysis in the IFN\u0263+Salmonella and acLDL datasets, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the filtering threshold and resulting gene counts for the IFN\u0263+Salmonella dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "In the acLDL dataset, 12,103 genes were included for analysis based on mean expression greater than one TPM in at least one condition.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, in both IFN\u0263+Salmonella and acLDL dataset, we used only genes with mean expression in at least one of the conditions greater than one transcripts per million (TPM) (Wagner et al., 2012) in all downstream analyses. This resulted in 12,660 and 12,103 genes included for analysis in the IFN\u0263+Salmonella and acLDL datasets, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the filtering threshold and resulting gene counts for the acLDL dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Conditional quantile normalisation (cqn) was used to quantile-normalize the data and correct for sample-specific GC content bias.",
+    "claim_type": "EXPLICIT",
+    "source": "We quantile-normalised the data and corrected for sample-specific GC content bias using the conditional quantile normalisation (cqn) (Hansen et al., 2012) R package as recommended previously (Ellis et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the normalization method and cites the relevant tools and recommendations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The txrevise R package was developed to pre-process transcript annotations prior to quantification.",
+    "claim_type": "EXPLICIT",
+    "source": "We developed the txrevise R package to pre-process transcript annotations prior to quantification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states that the authors developed the txrevise package.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Txrevise extends all truncated protein coding transcripts using exons from the longest annotated transcript of the gene that was part of the GENCODE Basic gene set.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we extended all truncated protein coding transcripts using exons from the longest annotated transcript of the gene that was part of the GENCODE Basic gene set (Figure 1\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes how txrevise extends truncated transcripts and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "25\u201335% of the exon-exon junctions observed in RNA-seq data are not present in transcript databases.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, this is not just a theoretical concern, because 25\u201335% of the exon-exon junctions observed in RNA-seq data are not present in transcript databases (Ongen and Dermitzakis, 2015), and up to 60% of the transcripts annotated by Ensembl (Zerbino et al., 2018) are truncated at the 5\u02b9 or 3\u02b9 end (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the percentage of novel junctions and cites a previous study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Txrevise detected approximately 30% more associations than other methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Leafcutter consistently detected the lowest number of QTLs per condition, while txrevise detected approximately 30% more associations than other methods (Figure 2A), 55% of which affected promoter or 3\u02b9 end usage instead of internal exons (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the percentage increase in associations detected by txrevise and references figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "55% of the associations detected by txrevise affected promoter or 3\u02b9 end usage instead of internal exons.",
+    "claim_type": "EXPLICIT",
+    "source": "Leafcutter consistently detected the lowest number of QTLs per condition, while txrevise detected approximately 30% more associations than other methods (Figure 2A), 55% of which affected promoter or 3\u02b9 end usage instead of internal exons (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the percentage of promoter/3' end usage QTLs and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Txrevise detected multiple associations for ~24% of the genes.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this increase in QTLs can be partially explained by the fact that txrevise detected multiple associations for ~24% of the genes while the full-length tuQTL analysis was limited to single lead association per gene (Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the percentage of genes with multiple associations and references figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The tuQTLs detected by txrevise and full-length transcript usage quantification were in high LD more than 60% of the time.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, the tuQTLs detected by txrevise and full-length transcript usage quantification were in high LD more than 60% of the time (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the LD rate and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "44% of the txrevise internal exon QTLs were in high LD with Leafcutter QTLs.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we found that while 44% of the txrevise internal exon QTLs were in high LD with Leafcutter QTLs, this decreased to ~20% for promoter and 3\u02b9 end QTLs (Figure 2\u2014figure supplement 1), suggesting that Leafcutter is less suited to capture those events.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the LD rate and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "~20% of txrevise promoter and 3\u02b9 end QTLs were in high LD with Leafcutter QTLs.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we found that while 44% of the txrevise internal exon QTLs were in high LD with Leafcutter QTLs, this decreased to ~20% for promoter and 3\u02b9 end QTLs (Figure 2\u2014figure supplement 1), suggesting that Leafcutter is less suited to capture those events.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the LD rate and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "eQTLs were strongly enriched in sites of open chromatin (log enrichment of 3.31, 95% CI [3.15, 3.47]).",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with the limited overlap between eQTLs and tuQTLs (Figure 2B), we found that eQTLs were strongly enriched in sites of open chromatin (Figure 2C; log enrichment of 3.31, 95% CI [3.15, 3.47]), whereas all transcript-level QTLs were enriched at the binding sites of splicing factors detected by eCLIP (Figure 2C, mean log enrichment of 2.29).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the enrichment value with confidence interval and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "All transcript-level QTLs were enriched at the binding sites of splicing factors detected by eCLIP (mean log enrichment of 2.29).",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with the limited overlap between eQTLs and tuQTLs (Figure 2B), we found that eQTLs were strongly enriched in sites of open chromatin (Figure 2C; log enrichment of 3.31, 95% CI [3.15, 3.47]), whereas all transcript-level QTLs were enriched at the binding sites of splicing factors detected by eCLIP (Figure 2C, mean log enrichment of 2.29).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the enrichment value and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Leafcutter and internal exon QTLs showed strong enrichment at the binding sites of splicing factors (mean log enrichment of 2.53).",
+    "claim_type": "EXPLICIT",
+    "source": "We found that Leafcutter and internal exon QTLs showed broadly similar enrichment patterns, with a strong enrichment at the binding sites of splicing factors (Figure 2D, mean log enrichment of 2.53).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the enrichment value and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Promoter usage QTLs were specifically enriched at promoters (log enrichment of 2.76, 95% CI [2.59, 2.95]).",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, promoter and 3\u02b9 end usage QTLs were specifically enriched at promoters (Figure 2D; log enrichment of 2.76, 95% CI [2.59, 2.95]) and 3\u02b9 UTRs (Figure 2D; log enrichment of 3.60, 95% CI [3.43, 3.76]), respectively (Figure 2D), and showed only a modest enrichment at the binding sites of splicing factors (Figure 2D; mean log enrichment of 1.17).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the enrichment value with confidence interval and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "3\u02b9 end usage QTLs were specifically enriched at 3\u02b9 UTRs (log enrichment of 3.60, 95% CI [3.43, 3.76]).",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, promoter and 3\u02b9 end usage QTLs were specifically enriched at promoters (Figure 2D; log enrichment of 2.76, 95% CI [2.59, 2.95]) and 3\u02b9 UTRs (Figure 2D; log enrichment of 3.60, 95% CI [3.43, 3.76]), respectively (Figure 2D), and showed only a modest enrichment at the binding sites of splicing factors (Figure 2D; mean log enrichment of 1.17).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the enrichment value with confidence interval and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Promoter and 3\u02b9 end usage QTLs showed only a modest enrichment at the binding sites of splicing factors (mean log enrichment of 1.17).",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, promoter and 3\u02b9 end usage QTLs were specifically enriched at promoters (Figure 2D; log enrichment of 2.76, 95% CI [2.59, 2.95]) and 3\u02b9 UTRs (Figure 2D; log enrichment of 3.60, 95% CI [3.43, 3.76]), respectively (Figure 2D), and showed only a modest enrichment at the binding sites of splicing factors (Figure 2D; mean log enrichment of 1.17).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the enrichment value and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Promoter usage QTLs were relatively more enriched in open chromatin regions (log enrichment of 1.58, 95% CI [1.42, 1.74]) compared to other events.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to other events, promoter usage QTLs were relatively more enriched in open chromatin regions (log enrichment of 1.58, 95% CI [1.42, 1.74]).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the enrichment value with confidence interval.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "124/786 (15.8%) of the promoter usage QTLs were in high LD with at least one chromatin accessibility QTL (r2 >0.9).",
+    "claim_type": "EXPLICIT",
+    "source": "We found that 124/786 (15.8%) of the promoter usage QTLs were in high LD with at least one chromatin accessibility QTL (r2 >0.9) compared to 10.2% of the internal exon and 3\u02b9 end usage QTLs (Fisher's exact test p-value=3.87\u00d710\u22125).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number and percentage of overlapping QTLs with statistical test results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "10.2% of the internal exon and 3\u02b9 end usage QTLs were in high LD with at least one chromatin accessibility QTL (r2 >0.9).",
+    "claim_type": "EXPLICIT",
+    "source": "We found that 124/786 (15.8%) of the promoter usage QTLs were in high LD with at least one chromatin accessibility QTL (r2 >0.9) compared to 10.2% of the internal exon and 3\u02b9 end usage QTLs (Fisher's exact test p-value=3.87\u00d710\u22125).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the percentage of overlapping QTLs with statistical test results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "46/786 (5.8%) promoter usage QTLs had a putative coordinated effect on promoter accessibility within 1000 bp of the closest promoter.",
+    "claim_type": "EXPLICIT",
+    "source": "To focus on local promoter accessibility, we further required the center of the accessible region to be no farther than 1000 bp from the closest promoter of the gene, leaving 46/786 (5.8%) promoter usage QTLs with a putative coordinated effect on promoter accessibility.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number and percentage of promoter usage QTLs with coordinated effects on accessibility.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "47 of 138 colocalised QTLs influenced total gene expression level.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that 47 of 138 colocalised QTLs influenced total gene expression level (Figure 3A) (PP3+PP4 >0.8, PP4/PP3 >9; PP3, posterior probability of a model with two distinct causal variants; PP4, posterior probability of a model with one common causal variant).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the number of colocalised QTLs affecting gene expression and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "91 colocalised QTLs were associated with at least one of the transcript-level phenotypes but not with total gene expression.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the remaining 91 colocalised QTLs were associated with at least one of the transcript-level phenotypes (full-length transcript usage, txrevise or Leafcutter) but not with total gene expression (Figure 3A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the number of transcript-level colocalised QTLs and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "44 of 91 transcript-level colocalisations were detected only by a single transcript quantification approach.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, 44 of 91 transcript-level colocalisations were detected only by a single transcript quantification approach (Figure 3A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the number of method-specific colocalisations and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "44 of 77 colocalised QTLs influenced internal exons.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that 44 of 77 colocalised QTLs influenced internal exons and the rest regulated promoters and 3\u02b9 ends (Figure 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the number of colocalised QTLs affecting internal exons and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Half of the promoter and internal exon colocalisations were also detected by Leafcutter.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, while half of the promoter and internal exon colocalisations were also detected by Leafcutter, only 1/10 3\u02b9 end events were captured by Leafcutter, probably because these are less likely to manifest at the level of junction reads (Figure 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the replication rate for promoter and internal exon colocalisations and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Only 1/10 3\u02b9 end colocalisations were captured by Leafcutter.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, while half of the promoter and internal exon colocalisations were also detected by Leafcutter, only 1/10 3\u02b9 end events were captured by Leafcutter, probably because these are less likely to manifest at the level of junction reads (Figure 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the replication rate for 3' end colocalisations and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Promoter usage QTLs were 50% more likely to be response QTLs than tuQTLs regulating either internal exons or 3\u02b9 ends.",
+    "claim_type": "EXPLICIT",
+    "source": "However, when we focussed on the transcriptional events detected by txrevise, we found that promoter usage QTLs were 50% more likely to be response QTLs than tuQTLs regulating either internal exons or 3\u02b9 ends (Figure 4B) (Fisher's exact test combined p-value=2.79\u00d710\u22126).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the relative likelihood with statistical test results and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "On average, 12% of the GWAS colocalisations corresponded to response QTLs.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we assessed the condition-specificity of QTLs that colocalised with complex trait loci. We found that, on average, 12% of the GWAS colocalisations corresponded to response QTLs (Figure 4C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the percentage of response QTLs among colocalisations and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "An IFN\u0263-specific promoter usage QTL for the CD40 gene colocalises with a GWAS signal for rheumatoid arthritis.",
+    "claim_type": "EXPLICIT",
+    "source": "One example is an IFN\u0263-specific promoter usage QTL for the CD40 gene that colocalises with a GWAS signal for rheumatoid arthritis (Okada et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes a specific example of colocalisation and cites the GWAS study.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The alternative C allele of the rs4239702 variant is associated with increased usage of the transcript with the short 5\u02b9 UTR in CD40.",
+    "claim_type": "EXPLICIT",
+    "source": "The alternative C allele of the rs4239702 variant is associated with increased usage of the transcript with the short 5\u02b9 UTR (Figure 4E,F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly describes the genetic association and references figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Promoter usage, splicing and 3\u02b9 end usage appear to be regulated by largely independent sets of genetic variants enriched in distinct genomic regions.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, promoter usage, splicing and 3\u02b9 end usage appear to be regulated by largely independent sets of genetic variants enriched in distinct genomic regions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this conclusion based on the enrichment analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Over 50% of the genetic effects that colocalise with complex traits regulated transcript usage and did not manifest at the total gene expression level.",
+    "claim_type": "EXPLICIT",
+    "source": "In our analysis, we found that over 50% of the genetic effects that colocalise with complex traits regulated transcript usage and did not manifest at the total gene expression level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this finding in the Discussion section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "42% of the transcript-level colocalisations affected promoter or 3\u02b9 end usage instead of splicing of internal exons.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, 42% of the transcript-level colocalisations affected promoter or 3\u02b9 end usage instead of splicing of internal exons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this percentage in the Discussion section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Promoter usage QTLs constituted 25% of the transcript-level colocalisations with complex traits.",
+    "claim_type": "EXPLICIT",
+    "source": "Promoter usage QTLs were also 50% more likely to be context-specific than other tuQTLs and constituted 25% of the transcript-level colocalisations with complex traits.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this percentage in the Abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Different quantification approaches appear to capture complementary sets of genetic associations.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, different quantification approaches appear to capture complementary sets of genetic associations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this conclusion based on the replication analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Alternative transcript start and end sites underlie most transcript differences between tissues.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternative transcript start and end sites underlie most transcript differences between tissues (Pal et al., 2011; Reyes and Huber, 2018), they are dynamically regulated in response to cellular stimuli (Alasoo et al., 2015; Richards et al., 2017) and they are also frequently dysregulated in cancer (Demircio\u011flu et al., 2017; Lee et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this claim and cites multiple supporting studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Alternative transcript start and end sites are dynamically regulated in response to cellular stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternative transcript start and end sites underlie most transcript differences between tissues (Pal et al., 2011; Reyes and Huber, 2018), they are dynamically regulated in response to cellular stimuli (Alasoo et al., 2015; Richards et al., 2017) and they are also frequently dysregulated in cancer (Demircio\u011flu et al., 2017; Lee et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this claim and cites supporting studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Alternative transcript start and end sites are frequently dysregulated in cancer.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternative transcript start and end sites underlie most transcript differences between tissues (Pal et al., 2011; Reyes and Huber, 2018), they are dynamically regulated in response to cellular stimuli (Alasoo et al., 2015; Richards et al., 2017) and they are also frequently dysregulated in cancer (Demircio\u011flu et al., 2017; Lee et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this claim and cites supporting studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Complex trait-associated variants are enriched in regulatory elements.",
+    "claim_type": "EXPLICIT",
+    "source": "Complex trait-associated variants are enriched in regulatory elements and are therefore thought to act via regulation of gene expression levels, often in a cell type- and context-specific manner (Alasoo et al., 2018; Fairfax et al., 2014; Kim-Hellmuth et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this claim and cites supporting studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Complex trait-associated variants are equally enriched among splicing quantitative trait loci (QTLs).",
+    "claim_type": "EXPLICIT",
+    "source": "However, such variants are equally enriched among splicing quantitative trait loci (QTLs) (Fraser and Xie, 2009; Li et al., 2016) and incorporating splicing QTLs in a transcriptome-wide association study increased the number of disease-associated genes by twofold (Li et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this claim and cites supporting studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Incorporating splicing QTLs in a transcriptome-wide association study increased the number of disease-associated genes by twofold.",
+    "claim_type": "EXPLICIT",
+    "source": "However, such variants are equally enriched among splicing quantitative trait loci (QTLs) (Fraser and Xie, 2009; Li et al., 2016) and incorporating splicing QTLs in a transcriptome-wide association study increased the number of disease-associated genes by twofold (Li et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this claim and cites a supporting study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Promoters, splicing and 3\u02b9 ends were predominantly controlled by independent genetic variants enriched in distinct genomic features.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that promoters, splicing and 3\u02b9 ends were predominantly controlled by independent genetic variants enriched in distinct genomic features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this finding in the Abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Context-specific regulation of promoter usage might be a previously underappreciated molecular mechanism underlying complex trait associations.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, context-specific regulation of promoter usage might be a previously underappreciated molecular mechanism underlying complex trait associations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states this conclusion in the Abstract and Discussion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The txrevise R package and custom transcriptional events are available from GitHub.",
+    "claim_type": "EXPLICIT",
+    "source": "The R package as well as custom transcriptional events constructed by txrevise are available from GitHub (https://github.com/kauralasoo/txrevise; Alasoo, 2018a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the availability of the software and data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "RNA-seq data from the acLDL stimulation study is available from ENA (PRJEB20734) and EGA (EGAS00001000876).",
+    "claim_type": "EXPLICIT",
+    "source": "RNA-seq data from the acLDL stimulation study is available from ENA (PRJEB20734) and EGA (EGAS00001000876).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the data availability with accession numbers.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "RNA-seq data from the IFN\u0263+Salmonella study is available from ENA (PRJEB18997) and EGA (EGAS00001002236).",
+    "claim_type": "EXPLICIT",
+    "source": "RNA-seq data from the IFN\u0263+Salmonella study is available from ENA (PRJEB18997) and EGA (EGAS00001002236).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the data availability with accession numbers.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The imputed genotype data for HipSci cell lines is available from ENA (PRJEB11749) and EGA (EGAD00010000773).",
+    "claim_type": "EXPLICIT",
+    "source": "The imputed genotype data for HipSci cell lines is available from ENA (PRJEB11749) and EGA (EGAD00010000773).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the data availability with accession numbers.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Processed data and QTL summary statistics are available from Zenodo.",
+    "claim_type": "EXPLICIT",
+    "source": "Processed data and QTL summary statistics are available from Zenodo: https://zenodo.org/communities/macrophage-tuqtls/.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the data availability with a URL.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Depending on the experimental condition and quantification method, between 1500 and 3500 QTLs were detected at a 10% false discovery rate (FDR).",
+    "claim_type": "EXPLICIT",
+    "source": "Depending on the experimental condition and quantification method, we detected between 1500 and 3500 QTLs at a 10% false discovery rate (FDR) (Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the range of QTLs detected and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Leafcutter consistently detected the lowest number of QTLs per condition.",
+    "claim_type": "EXPLICIT",
+    "source": "Leafcutter consistently detected the lowest number of QTLs per condition, while txrevise detected approximately 30% more associations than other methods (Figure 2A), 55% of which affected promoter or 3\u02b9 end usage instead of internal exons (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states this observation and references a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The first six principal components of the phenotype matrix were included as covariates in the QTL analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "We included the first six principal components of the phenotype matrix as covariates in the QTL analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the covariates used in the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "QTLtools was used to map QTLs in two stages.",
+    "claim_type": "EXPLICIT",
+    "source": "We used QTLTools (Delaneau et al., 2017) to map QTLs in two stages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the tool used for QTL mapping and cites it.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "A \u00b1 100 kb window around each feature was used to calculate the minimal lead variant p-value.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we used the permutation pass with '--permute 10000 --grp-best' options to calculate the minimal lead variant p-value for each feature (gene, transcript or splicing event) in a \u00b1 100 kb window around each feature.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the window size used for QTL mapping.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "A \u00b1 500 kb cis window around each feature was used for the nominal pass to calculate nominal association p-values.",
+    "claim_type": "EXPLICIT",
+    "source": "Secondly, we used the nominal pass to calculate nominal association p-values in a \u00b1 500 kb cis window around each feature.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the window size used for the nominal pass.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Coloc v2.3\u20131 was used to test for colocalisation between gene expression and transcript usage QTLs and GWAS hits.",
+    "claim_type": "EXPLICIT",
+    "source": "We used coloc v2.3\u20131 (Giambartolomei et al., 2014) to test for colocalisation between gene expression and transcript usage QTLs and GWAS hits.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the tool and version used for colocalisation analysis and cites it.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Coloc was run on a 400 kb region centered on each lead eQTL and tuQTL variant.",
+    "claim_type": "EXPLICIT",
+    "source": "We ran coloc on a 400 kb region centered on each lead eQTL and tuQTL variant that was less than 100 kb away from at least one GWAS variant with a nominal p-value<10\u22125.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the region size used for colocalisation analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The following prior probabilities were used for coloc: p1 = 10\u22124, p2 = 10\u22124 and p12 = 10\u22125.",
+    "claim_type": "EXPLICIT",
+    "source": "We used the following prior probabilities: p1 = 10\u22124, p2 = 10\u22124 and p12 = 10\u22125.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the prior probabilities used in the colocalisation analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "All colocalisation results from the MHC region (GRCh38: 6:28,510,120\u201333,480,577) were excluded because they were likely to be false positives due to complicated LD patterns.",
+    "claim_type": "EXPLICIT",
+    "source": "We excluded all colocalisation results from the MHC region (GRCh38: 6:28,510,120\u201333,480,577) because they were likely to be false positives due to complicated LD patterns in this region.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the exclusion of the MHC region and provides the rationale.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Response QTLs were defined as those with FDR < 10% from the interaction test and \u03c32relative > 0.5 from the variance component analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "We defined response QTLs as those with FDR < 10% from the interaction test and \u03c32relative > 0.5 from the variance component analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly defines the criteria for response QTLs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The lme4 package was used to fit linear mixed models for identifying response QTLs.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, to take advantage of our profiling of gene expression in overlapping set of donors in the stimulated and naive conditions, we also included the cell line as a random effect and fitted a linear mixed model using the lme4 (Bates et al., 2015) package.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the package used for fitting linear mixed models and cites it.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Full summary statistics were obtained for ten immune-mediated disorders.",
+    "claim_type": "EXPLICIT",
+    "source": "We obtained full summary statistics for ten immune-mediated disorders: inflammatory bowel disease (IBD) including ulcerative colitis (UC) and Crohn's disease (CD) (Liu et al., 2015), Alzheimer's disease (AD) (Lambert et al., 2013), rheumatoid arthritis (RA) (Okada et al., 2014), systemic lupus erythematosus (SLE) (Bentham et al., 2015), type one diabetes (T1D) (Onengut-Gumuscu et al., 2015), schizophrenia (SCZ) (Schizophrenia Working Group of the Schizophrenia Working Group of the Psychiatric Genomics Consortium, 2014), multiple sclerosis (MS) (Beecham et al., 2013), celiac disease (CEL) (Trynka et al., 2011) and narcolepsy (NAR) (Faraco et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly lists the disorders and cites the GWAS studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Summary statistics were obtained for type two diabetes (T2D), cardiovascular disease (CAD) and myocardial infarction (MI).",
+    "claim_type": "EXPLICIT",
+    "source": "We also obtained summary statistics for type two diabetes (T2D) (Morris et al., 2012), cardiovascular disease (CAD) (Nelson et al., 2017; Nikpay et al., 2015) and myocardial infarction (MI) (Nikpay et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly lists the traits and cites the GWAS studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Summary statistics were obtained for 20 cardiometabolic traits from a recent meta-analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we obtained summary statistics for 20 cardiometabolic traits from a recent meta-analysis (Iotchkova et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of traits and cites the meta-analysis.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The Snakemake files used for gene and transcript expression quantification, QTL mapping and colocalisation are available from the project's GitHub repository.",
+    "claim_type": "EXPLICIT",
+    "source": "The Snakemake (K\u00f6ster and Rahmann, 2012) files used for gene and transcript expression quantification, QTL mapping and colocalisaton are available from the project's GitHub repository (https://github.com/kauralasoo/macrophage-tuQTLs; copy archived at https://github.com/elifesciences-publications/macrophage-tuQTLs; Alasoo, 2018b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the availability of the analysis code and cites the Snakemake tool.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The wiggleplotr R package was used to make transcript read coverage plots.",
+    "claim_type": "EXPLICIT",
+    "source": "The same repository also contains R scripts that were used for all data analysis and figures. The txrevise R package is available from GitHub (https://github.com/kauralasoo/txrevise; copy archived at https://github.com/elifesciences-publications/txrevise; Alasoo, 2018a) and wiggleplotr R package that was used to make transcript read coverage plots is available from Bioconductor (http://bioconductor.org/packages/wiggleplotr/).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the package used for making coverage plots.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The relative expression of each transcript was calculated by dividing the TPM expression estimate of each transcript with the sum of the expression estimates of all transcripts of the gene.",
+    "claim_type": "EXPLICIT",
+    "source": "We used tximport (Soneson et al., 2015) package to import the expression estimates into R and calculated the relative expression of each transcript by dividing the TPM expression estimate of each transcript with the sum of the expression estimates of all transcripts of the gene.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the calculation of relative expression and cites the tximport package.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Leafcutter was used with default parameters requiring at least 50 reads supporting each intron cluster and allowing introns of up to 500 kb in length.",
+    "claim_type": "EXPLICIT",
+    "source": "We used the default parameters of requiring at least 50 reads supporting each intron cluster and allowing introns of up to 500 kb in length.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the parameters used for Leafcutter.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Bi-allelic variants (both SNPs and indels) with IMP2 score >0.4 and minor allele frequency (MAF) >0.05 were retained for analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Subsequently, we filtered the VCF file with bcftools v.1.2 to retain only bi-allelic variants (both SNPs and indels) with IMP2 score >0.4 and minor allele frequency (MAF) >0.05.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the filtering criteria for genetic variants.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "CrossMap v0.1.8 was used to convert variant coordinates from GRCh37 reference genome to GRCh38.",
+    "claim_type": "EXPLICIT",
+    "source": "We used CrossMap v0.1.8 (Zhao et al., 2014) to convert variant coordinates from GRCh37 reference genome to GRCh38.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the tool and version used for coordinate conversion and cites it.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Fgwas v0.3.6 was used with the '-fine' option to identify the genomic annotations in which different types of QTLs were enriched.",
+    "claim_type": "EXPLICIT",
+    "source": "We used fgwas v0.3.6 (Pickrell, 2014) with the '-fine' option to identify the genomic annotations in which different types of QTLs were enriched.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the tool, version, and option used for enrichment analysis and cites it.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "QTLtools p-values were converted to z-scores using the stats.norm.ppf(p/2, loc = 0, scale = 1) function from SciPy.",
+    "claim_type": "EXPLICIT",
+    "source": "We converted QTLtools p-values to z-scores using the stats.norm.ppf(p/2, loc = 0, scale = 1) function from SciPy (Jones et al., 2001), where p is the nominal p-value from QTLtools.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the conversion method and cites SciPy.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Promoters were defined as sequences 2000 bp upstream and 200 bp downstream of the annotated transcription start sites.",
+    "claim_type": "EXPLICIT",
+    "source": "We defined promoters as sequences 2000 bp upstream and 200 bp downstream of the annotated transcription start sites.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly defines the promoter region.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Polyadenylation sites were extended to \u00b125 bp from the center of the site.",
+    "claim_type": "EXPLICIT",
+    "source": "After converting the coordinates to the GRCh38 reference genome with CrossMap (Zhao et al., 2014), we extended each polyadenylation site to \u00b125 bp from the center of the site.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the extension of polyadenylation sites.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Processed eCLIP peak calls for 93 RNA binding proteins (RBPs) were downloaded from the ENCODE web site.",
+    "claim_type": "EXPLICIT",
+    "source": "We downloaded processed eCLIP (Van Nostrand et al., 2016) peak calls for 93 RNA binding proteins (RBPs) (Van Nostrand et al., 2017) from the ENCODE web site (https://www.encodeproject.org).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of RBPs and the data source, and cites the relevant studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Only eCLIP data from the K562 myelogenous leukemia cell line was used.",
+    "claim_type": "EXPLICIT",
+    "source": "We only used data from the K562 myelogenous leukemia cell line.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the cell line used for eCLIP data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "A subset of 29 RBPs have previously been implicated in splicing regulation.",
+    "claim_type": "EXPLICIT",
+    "source": "We further used Supplementary Table 1 from (Van Nostrand et al., 2017) to identify a subset of 29 RBPs that have previously been implicated in splicing regulation, five factors that have been implicated in 3\u02b9 end processing and two factors (SRSF7 and HNRNPK) that have been implicated in both.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of RBPs implicated in splicing and cites the source.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Five RBPs have been implicated in 3\u02b9 end processing.",
+    "claim_type": "EXPLICIT",
+    "source": "We further used Supplementary Table 1 from (Van Nostrand et al., 2017) to identify a subset of 29 RBPs that have previously been implicated in splicing regulation, five factors that have been implicated in 3\u02b9 end processing and two factors (SRSF7 and HNRNPK) that have been implicated in both.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of RBPs implicated in 3' end processing and cites the source.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Two factors (SRSF7 and HNRNPK) have been implicated in both splicing regulation and 3\u02b9 end processing.",
+    "claim_type": "EXPLICIT",
+    "source": "We further used Supplementary Table 1 from (Van Nostrand et al., 2017) to identify a subset of 29 RBPs that have previously been implicated in splicing regulation, five factors that have been implicated in 3\u02b9 end processing and two factors (SRSF7 and HNRNPK) that have been implicated in both.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly identifies the two factors and cites the source.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The iPSC lines used in this study are commercially available via the European Collection of Authenticated Cell Cultures.",
+    "claim_type": "EXPLICIT",
+    "source": "The iPSC lines used in this study are commercially available via the European Collection of Authenticated Cell Cultures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the commercial availability of the cell lines.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "No new primary human samples were collected for this study.",
+    "claim_type": "EXPLICIT",
+    "source": "No new primary human samples were collected for this study.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states that no new samples were collected.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "All samples for the HipSci project were collected from consented research volunteers recruited from the NIHR Cambridge BioResource.",
+    "claim_type": "EXPLICIT",
+    "source": "All samples for the HipSci project (Kilpinen et al., 2017) were collected from consented research volunteers recruited from the NIHR Cambridge BioResource (http://www.cambridgebioresource.org.uk).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the source of samples and cites the HipSci project.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The ethics approval was obtained from East of England - Cambridge East Research Ethics Committee.",
+    "claim_type": "EXPLICIT",
+    "source": "The ethics approval was obtained from East of England - Cambridge East Research Ethics Committee.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the ethics approval source.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

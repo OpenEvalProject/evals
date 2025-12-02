@@ -1,0 +1,2169 @@
+{
+  "submission": {
+    "id": "bd4d7180-2b23-4646-a4a8-7fa48eb773a4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:59:48.513447Z",
+    "updated_at": "2025-12-02T17:59:48.513447Z"
+  },
+  "content": [
+    {
+      "id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "submission_id": "bd4d7180-2b23-4646-a4a8-7fa48eb773a4",
+      "content_type": "manuscript",
+      "content_text": "# Evidence for transmission of COVID-19 prior to symptom onset\n\n## Authors\n\n- Lauren C Tindale<sup>1</sup> ([ORCID: 0000-0001-7751-1042](https://orcid.org/0000-0001-7751-1042))\n- Jessica E Stockdale<sup>2</sup> ([ORCID: 0000-0001-7984-1010](https://orcid.org/0000-0001-7984-1010))\n- Michelle Coombe<sup>1</sup>\n- Emma S Garlock<sup>2</sup>\n- Wing Yin Venus Lau<sup>2</sup>\n- Manu Saraswat<sup>1</sup>\n- Louxin Zhang<sup>3</sup> ([ORCID: 0000-0003-0260-824X](https://orcid.org/0000-0003-0260-824X))\n- Dongxuan Chen<sup>4</sup>\n- Jacco Wallinga<sup>4</sup>\n- Caroline Colijn<sup>2</sup> ([ORCID: 0000-0001-6097-6708](https://orcid.org/0000-0001-6097-6708)) \u2020\n\n### Affiliations\n\n1. University of British Columbia Vancouver Canada\n2. Simon Fraser University Burnaby Canada\n3. National University of Singapore Singapore Singapore\n4. Centre for Infectious Disease Control, National Institute for Public Health and the Environment Bilthoven Netherlands\n5. Leiden University Medical Center Leiden Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe collated contact tracing data from COVID-19 clusters in Singapore and Tianjin, China and estimated the extent of pre-symptomatic transmission by estimating incubation periods and serial intervals. The mean incubation periods accounting for intermediate cases were 4.91 days (95%CI 4.35, 5.69) and 7.54 (95%CI 6.76, 8.56) days for Singapore and Tianjin, respectively. The mean serial interval was 4.17 (95%CI 2.44, 5.89) and 4.31 (95%CI 2.91, 5.72) days (Singapore, Tianjin). The serial intervals are shorter than incubation periods, suggesting that pre-symptomatic transmission may occur in a large proportion of transmission events (0.4\u20130.5 in Singapore and 0.6\u20130.8 in Tianjin, in our analysis with intermediate cases, and more without intermediates). Given the evidence for pre-symptomatic transmission, it is vital that even individuals who appear healthy abide by public health measures to control COVID-19.\n\n## Introduction\n\nThe novel coronavirus disease, COVID-19, was first identified in Wuhan, Hubei Province, China in December 2019 (Li et al., 2020b; Huang et al., 2020). The virus causing the disease was soon named severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Hui et al., 2020) and quickly spread to other regions of China and then across the globe, causing a pandemic with over 5 million cases and 300,000 deaths at the time of writing (Johns Hopkins University, 2020). In Tianjin, a metropolis located at the north of China, the first case was confirmed on January 21, 2020 (Tianjin Health Commission, 2020). Two days later, the first case was confirmed in Singapore (Ministry of Health Singapore, 2020), a city country in Southeast Asia. As of February 28, 2020, 93 and 135 cases had been confirmed in Singapore and Tianjin (Ministry of Health Singapore, 2020; Tianjin Health Commission, 2020). The first Singapore COVID-19 case was confirmed as an individual who had travelled to Singapore from Wuhan. Many of the initial cases were imported from Wuhan, with later cases being caused by local transmission. Singaporean officials worked to identify potential contacts of confirmed cases; close contacts were monitored and quarantined for 14 days from their last exposure to the patient, and other low-risk contacts were put under active surveillance and contacted daily to monitor their health status. These early outbreaks continue to provide the opportunity to estimate key parameters to understand COVID-19 transmission dynamics.\n\nWe screened publicly available data to identify datasets for two COVID-19 clusters that could be used to estimate transmission dynamics. In both Singapore and Tianjin, the COVID-19 outbreak occurred within a relatively closed system where immediate public health responses were implemented, contacts were identified and quarantined, and key infection dates were tracked and updated daily. With its experiences in control of the SARS outbreak, the Singaporean government had been adopting a case-by-case control policy from January 2, 2020. Only close contacts of a confirmed case were monitored and quarantined for 14 days. In Tianjin, a number of COVID-19 cases were traced to a department store, where numerous customers and sales associates were likely infected. Additional customers who had potential contact were asked to come forward through state news and social media, as well as asked if they had visited the department store at various checkpoints in the city. All individuals identified as having visited the store in late January were quarantined and sections of the Baodi District where the store is located were sealed and put under security patrol.\n\nWe estimate the serial interval and incubation period of COVID-19 from clusters of cases in Singapore and Tianjin. The serial interval is defined as the length of time between symptom onset in a primary case (infector) and symptom onset in a secondary case (infectee), whereas the incubation period is defined as the length of time between an infectee\u2019s exposure to a virus and their symptom onset. Both are important parameters that are widely used in modeling in infectious disease, as they impact model dynamics and hence fits of models to data. While the pandemic has progressed far beyond these early outbreaks, it remains the case that mathematical modelling, using parameters derived from estimates like these, is widely used in forecasting and policy.\n\nThe serial interval and incubation period distributions, in particular, can be used to identify the extent of pre-symptomatic transmission (i.e. viral transmission from an individual that occurs prior to symptom onset). There is evidence that pre-symptomatic transmission accounts for a considerable portion of COVID-19 spread (Arons et al., 2020; Baggett et al., 2020; Li et al., 2020a) and it is important to determine the degree to which this is occurring (Peak et al., 2020). Early COVID-19 estimates borrowed parameters from SARS (Wu et al., 2020; Jiang et al., 2020; Abbott et al., 2020), but more recent estimates have been made using information from early clusters of COVID-19 cases, primarily in Wuhan. Depending on the population used, estimates for incubation periods have ranged from 3.6 to 6.4 days and serial intervals have ranged from 4.0 to 7.5 days (Li et al., 2020b; Ki and Task Force for 2019-nCoV, 2020; Backer et al., 2019; Linton et al., 2020; Nishiura et al., 2020); however, it is crucial that the estimates of incubation period and serial interval are based on the same outbreak, and are compared to those obtained from outbreaks in other populations. Distinct outbreak clusters are ideal for understanding how COVID-19 can spread through a population with no prior exposure to the virus. Here, we estimate the portion of transmission that is pre-symptomatic based on estimates of the incubation period and serial interval. We estimate both quantities under two frameworks: first, we use samples as directly as is feasible from the data, for example assuming that the health authorities\u2019 epidemiological inferences regarding who exposed whom and who was exposed at which times are correct. Second, we use estimation methods that allow for unknown intermediate cases, such that the presumed exposure and infection events may not be complete. We also separate the analysis of incubation period according to earlier and later phases of the outbreaks, since measures were introduced during the time frame of the data.\n\n## Results\n\n### Descriptive analyses\n\nFigures 1 and 2 show the daily counts, putative origin of the exposure and individual time courses for the Singapore and Tianjin data. In the Singapore dataset, new hospitalization and discharge cases were documented daily from January 23 to February 26, 2020. 66.7% (62/93) of the confirmed cases recovered and were discharged from the hospital by the end of the study period (Figure 1(a)). The disease progression timeline of the 93 documented cases in Figure 1(c) indicates that symptom onset occurred\u00a01.71 \u00b1 3.01 (mean \u00b1 SD) days after the end of possible viral exposure window and cases were confirmed 7.43 \u00b1\u00a05.28 days after symptom onset. The mean length of hospital stay was 13.3 \u00b1\u00a06.01 days before individuals recovered and were discharged.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig1-v2.jpg)\n\n**Figure 1.:** (a) Daily hospitalized cases and cumulative hospitalized and discharged cases. (b) Daily incidence with probable source of infection. (C) Disease timeline, including dates at which each case is unexposed, exposed, symptomatic, hospitalized, and discharged. Not all cases go through each status as a result of missing dates for some cases.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig2-v2.jpg)\n\n**Figure 2.:** (a) Daily and cumulative confirmed cases, cumulative discharges and daily death cases. (b) Daily incidence with probable source of infection. (c) Disease progression timeline; not all cases go through each status as a result of missing dates for some cases.\n\nIn the Tianjin dataset, new confirmed cases were documented daily from January 21 to February 22, 2020. 48.1% (65/135) recovered and 2.2% (3/135) had died by the end of the study period (Figure 2(a)). The timeline of the 135 cases is shown in Figure 2(c). Symptom onset occurred 4.98 \u00b1 4.83 (mean \u00b1 SD) days after the end of the possible viral exposure window. Cases were confirmed 5.23 \u00b1\u00a04.15 days after symptom onset. The duration of hospital stay of the Tianjin cases is unknown as the discharge date of each case was not available. In both datasets, daily counts decline over time, which is likely a combination of delays to symptom onset and between symptom onset and reporting, combined with the effects of strong social distancing and contact tracing.\n\n### Incubation period\n\nIn the Singapore dataset, we find that the median incubation period in our direct analysis (without accounting for intermediate cases) is 5.32 days with the gamma distribution; shape 3.05 (95%CI 2.0, 3.84); and scale 1.95 (1.23, 2.34). The mean incubation period is 5.99 (95%CI 4.97, 7.14) days. In Tianjin, we find a median 8.06 days; shape 4.74 (3.35, 5.72); scale 1.83 (1.29, 2.04). The mean is 8.68 (7.72, 9.7) days. These results are summarised in Table 1, and we also fitted Weibull and log normal distributions; see Appendix 1\u2014table 1. These are consistent with, or slightly longer than, previous estimates, see Appendix 1\u2014table 5 for comparison.\n\n**Table 1.**\n Mean incubation period, serial interval and pre-symptomatic transmission.Incubation periods are based on the gamma estimates because these are the most convenient for taking the covariation of serial intervals and incubation periods into account (done throughout the table). 95% CIs are provided in brackets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Without intermediates</th>\n      <th>Incubation\u00a0(days)</th>\n      <th>Serial interval\u00a0(days)</th>\n      <th>Mean difference\u00a0(days)</th>\n      <th>Portion pre-symptomatic(-)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Singapore (all)</td>\n      <td>5.99 (4.97, 7.14)</td>\n      <td>4.0 (2.73, 5.57)</td>\n      <td>1.99</td>\n      <td>0.74</td>\n    </tr>\n    <tr>\n      <td>Singapore (early)</td>\n      <td>5.91 (4.50,7.64)</td>\n      <td></td>\n      <td>1.91</td>\n      <td>0.742</td>\n    </tr>\n    <tr>\n      <td>Singapore (late)</td>\n      <td>6.06 (4.70, 7.67 )</td>\n      <td></td>\n      <td>2.06</td>\n      <td>0.744</td>\n    </tr>\n    <tr>\n      <td>Tianjin (all)</td>\n      <td>8.68 (7.72, 9.7)</td>\n      <td>5.0 (3.82, 6.12)</td>\n      <td>3.68</td>\n      <td>0.81</td>\n    </tr>\n    <tr>\n      <td>Tianjin (early)</td>\n      <td>6.88 (5.97,7.87)</td>\n      <td></td>\n      <td>1.88</td>\n      <td>0.72</td>\n    </tr>\n    <tr>\n      <td>Tianjin (late)</td>\n      <td>12.4 (11.1,13.7)</td>\n      <td></td>\n      <td>7.4</td>\n      <td>0.96</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Account for intermediates</td>\n    </tr>\n    <tr>\n      <td>Singapore r=0.05</td>\n      <td>4.91</td>\n      <td>4.17 (2.44, 5.89)</td>\n      <td>0.77</td>\n      <td>0.53</td>\n    </tr>\n    <tr>\n      <td>Singapore r=0.1</td>\n      <td>4.43</td>\n      <td></td>\n      <td>0.26</td>\n      <td>0.46</td>\n    </tr>\n    <tr>\n      <td>Singapore r=0.15</td>\n      <td>4.12</td>\n      <td></td>\n      <td>\u22120.05</td>\n      <td>0.41</td>\n    </tr>\n    <tr>\n      <td>Singapore r=0.2</td>\n      <td>3.89</td>\n      <td></td>\n      <td>\u22120.28</td>\n      <td>0.38</td>\n    </tr>\n    <tr>\n      <td>Tianjin r=0.05</td>\n      <td>7.54</td>\n      <td>4.31 (2.91, 5.72)</td>\n      <td>3.23</td>\n      <td>0.79</td>\n    </tr>\n    <tr>\n      <td>Tianjin r=0.1</td>\n      <td>6.89</td>\n      <td></td>\n      <td>2.58</td>\n      <td>0.74</td>\n    </tr>\n    <tr>\n      <td>Tianjin r=0.15</td>\n      <td>6.30</td>\n      <td></td>\n      <td>1.99</td>\n      <td>0.67</td>\n    </tr>\n    <tr>\n      <td>Tianjin r=0.2</td>\n      <td>5.91</td>\n      <td></td>\n      <td>1.6</td>\n      <td>0.64</td>\n    </tr>\n  </tbody>\n</table>\n\nIn Singapore, these estimates are based on a combination of cases for whom last possible exposure is given by travel, and later cases (for whom the presumed infector was used). In Tianjin, social distancing measures were implemented during the outbreak. We find that the estimated incubation period is different, particularly in Tianjin, for cases with symptom onset on or prior to January 31st: see Figure 3 and Figure 4. The estimated median incubation period for pre-Feb one cases in Tianjin is 6.48 days; the $q=(0.025,0.975)$ quantiles are (2.5, 13.3) days. In contrast, post-Jan 31 the median is 12.13 days with $q=(0.025,0.975)$ quantiles (7.3, 18.7) days. The means are 6.88 (5.97, 7.87) days for early cases and 12.4 (11.1, 13.7) days for later cases. Social distancing seems unlikely to change the natural course of infection, but these results might be explained if exposure occurred during group quarantine or otherwise later than the last time individuals thought they could have been exposed. Pre-symptomatic transmission would enable this, if an individual was thought to have been exposed before group quarantine, but in actuality was exposed during quarantine by a pre-symptomatic individual. The time interval in the data would then not be a sample of the incubation period, instead it would be a sample of one or more generation times plus an incubation period.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig3-v2.jpg)\n\n**Figure 3.:** Cases are defined as \u2018early\u2019 if they have symptom onset on or prior to January 31, and are classified \u2018late\u2019 otherwise.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig4-v2.jpg)\n\n**Figure 4.:** Top panels show unstratified data (all cases with symptom onset given). Bottom panels show \u2018early\u2019 and \u2018late\u2019 cases, where early cases are defined as those with symptom onset on or prior to January 31, and late otherwise.\n\nIn Singapore, we find the same effect, although much less pronounced. The estimated median incubation time is 5.26, with (0.025, 0.975) quantiles of (1.30, 13.8) days for early cases (also defined as cases with symptom onset on or prior to January 31st) and 5.35 (quantiles (1.22, 14.6)) days for late-arising cases. The means are 5.91 (4.50, 7.64) days for early cases and 6.06 (4.70, 7.67) days for later cases. Fits of gamma and log-normal distributions are similar; see Appendix 1\u2014table 2. Changes in perception of exposure times after control measures were introduced (i.e. people may assume that they must have been exposed prior to control measures), together with pre-symptomatic transmission, could result in missing intermediate transmission events and hence lengthened incubation period estimates. This in part motivates our analysis with intermediate cases.\n\nOur estimates of the incubation period with intermediates are similar, under the assumption that intermediates are relatively rare. Results are shown in Figure 5 and Table 1. We find that the median of the bootstrapped mean incubation periods for Singapore with a low (0.05 per day) rate of unknown intermediates is 4.91 days (4.35, 5.69 95% bootstrap CI), compared to a generation time of 3.71 (2.36, 4.91) days. The Tianjin bootstrapped mean incubation period is 7.54 (6.76, 8.56 95% CI) days and the generation time is only 2.82 (1.83, 3.52) days. The estimates are lower when the assumed probability of unknown intermediates is higher. Indeed, if intermediates were present between assumed exposure and onset, naturally the generation time would be shorter than if they were not. The mean generation times are consistently shorter than the mean incubation periods, indicating that infection can occur prior to symptom onset. The difference is particularly pronounced in Tianjin, where long intervals were observed.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig5-v2.jpg)\n\n**Figure 5.:** The incubation period is longer than the generation time, so this analysis suggests that symptom onset occurs after infectiousness begins. Top: Singapore. Bottom: Tianjin. The means are the scale times the shape, which is fixed at 2.1 in Singapore and 2.2 in Tianjin. Varying this fixed value for the shape parameter was not found to significantly impact the results.\n\nHowever, this approach makes a number of assumptions and is limited by the fact that if we do not know the true infectors then we are also unlikely to know the true exposure. The data we have is well suited to this method in the sense that there were particular events where exposure is thought to have occurred, and so we can account for intermediates in the manner we have done, but we do not have information for the alternative scenario in which the true exposures were prior to those given in the data. This could happen if, for example, individuals were exposed before attending an event or before known contact, and developed symptoms well after it. Exposure would thus be wrongly attributed to the event or contact. We have accommodated this with uncertainty in the exposure intervals, in particular not insisting that individuals who are likely to be the index case for a cluster (e.g. who developed symptoms on the same day as an event) must have been exposed then, but instead allowing the possibility that they were exposed earlier.\n\n### Serial intervals\n\nFigure 6 represents the empirical serial intervals between all potential transmission case-pairs as noted in the data and represented in Figure 7, split into groups based on date of first symptom onset for each case-pair. The empirical mean serial intervals shorten in the \u2019late\u2019 group in both Singapore and Tianjin; however, the empirically\u00a0derived 95% confidence intervals overlap (Singapore early 4.44 (-2.81, 11.7) vs. late 3.18 (-1.52, 7.88); Tianjin early 5.48 (-0.968, 11.9) vs. late 4.18 (-2.33, 10.7)). Negative lower bounds are due to the high standard deviation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig6-v2.jpg)\n\n**Figure 6.:** Pairs represent a presumed infector and their presumed infectee plotted by date of symptom onset. Cases are defined as 'early' if they have symptom onset on or prior to January 31st.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig7-v2.jpg)\n\nShortening serial intervals are expected as increased quarantine measures are enacted during the course of an outbreak and can be an indication of improved control through successful contact tracing, as seen in SARS (Lipsitch et al., 2003). Our results suggest that serial intervals shortened as the outbreak progressed in both clusters, but they could also be due to right truncation. Accounting for this, we found that the mean serial intervals were 4 and 5 days (Singapore, Tianjin); a Cox regression found no significant difference between the early and late groups\u2019 serial intervals. This estimate is made directly from case pairs in the data without accounting for intermediate infectors and co-primary infection, as in the ICC analysis.\n\nTable 1 shows our ICC estimates of the mean and standard deviation for the serial intervals, with comparison to other analyses and assumptions in Appendix 1\u2014table 5. The ICC method finds the mean serial interval to be 4.17 (2.44, 5.89 95% bootstrap CI) days (0.882 bootstrap standard deviation) for Singapore and 4.31 (2.91, 5.72) days (0.716 bootstrap sd) for Tianjin, using the first four cases in each cluster. This is consistent with the results with right truncation.\n\n### Pre-symptomatic transmission\n\nWe estimated incubation periods and serial intervals with and without accounting for intermediate unknown cases. To estimate the portion of transmission that occurs before symptom onset, we compare the \u2018direct\u2019 (no intermediate) estimates of each, and the \u2018indirect\u2019 (accounting for intermediates) estimates of each. We estimate consistently shorter serial intervals than incubation period, suggesting that there is pre-symptomatic transmission.\n\nWe took the covariation of incubation periods and serial intervals (and of generation times and incubation periods) into account by sampling the intervals jointly before estimating the fraction of the relevant differences that are negative. Even accounting for correlation, the estimated fraction of pre-symptomatic transmission for Singapore is 0.74 (regardless of early/late split) and for Tianjin is 0.72, 0.96, 0.81 (early, late, all), based on the direct estimates of the incubation periods and serial intervals (see also Figure 8). When we use the incubation period estimates that account for intermediates, the portions pre-symptomatic transmission are 0.53 in Singapore and 0.79 in Tianjin, when the assumed \u2018rate of appearance\u2019 of intermediates $r$ is 0.05 (i.e. when we assume a relatively low rate of unknown intermediates). If this rate $r$ is increased, the portion of pre-symptomatic transmission decreases, but even for $r=0.2$ we estimate the pre-symptomatic portion to be 0.38 in Singapore and 0.64 in Tianjin.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig8-v2.jpg)\n\n**Figure 8.:** Top: Singapore. Bottom: Tianjin. Left: without intermediates. Right: accounting for intermediates. Grey vertical line: 0. Samples below zero indicate pre-symptomatic transmission. In all cases there is substantial pre-symptomatic transmission.\n\nThese results were obtained under an estimated correlation between the incubation period and serial interval of 0.289 in Tianjin. If instead the correlation were 0.1, the portion of pre-symptomatic transmission in Tianjin under $r$ =\u00a00.05, 0.1, 0.15 and 0.2, respectively, is estimated as 0.783, 0.725, 0.663 and 0.62. With correlation 0.8, the equivalent portions are 0.849, 0.781, 0.704 and 0.660. We therefore find that the degree of positive correlation does not greatly impact our estimates of pre-symptomatic transmission. We retain high estimates of the fraction pre-symptomatic in Tianjin, due to the long apparent incubation periods. It seems likely that these are an artifact of either pre-symptomatic transmission during quarantine/lockdown, or of other assumptions made about exposures in the creation of the original dataset. We conclude that overall for this data and under reasonable assumptions, we see evidence of at least 65% of transmission occurring before symptom onset.\n\nIn our direct analysis, we estimate that infection occurred on average 1.99 and 3.68 days before symptom onset of the infector (Singapore, Tianjin). Because the incubation period is different for early- and late-occurring cases in our data, on average transmission for early-occurring cases is 1.91 and 2.06 days before symptom onset (Singapore, Tianjin) and 1.88, 7.4 days before (Singapore, Tianjin) for late-occurring cases. Taking a low rate ($r=0.05$) of potential unknown intermediate cases into account, the mean difference reduces to 0.77 and 3.23 days (Singapore, Tianjin), though we still estimate a significant portion of pre-symptomatic transmission (0.53, 0.79), as above.\n\nOverall, serial intervals are robustly shorter than incubation periods in our analyses (Table 1). These estimates are strengthened by the fact that we have estimated both incubation period and serial interval in the same populations and by the fact that we obtain the same result in two distinct datasets. In both sets of estimates, samples of the incubation period minus serial interval are negative with probability 0.38 or higher (Singapore) and 0.64 or higher (Tianjin), and these lower bounds require a high rate of unknown intermediates early in the outbreak. This indicates that a substantial portion of transmission may occur before symptom onset (see Appendix 1 and Figure 8), consistent with the clinical observations reported by Rothe et al., 2020 and (Bai et al., 2020).\n\nShorter serial intervals yield lower reproduction number estimates. For example, if the epidemic grows at a rate of 0.15 (doubling time of 4.6 days\u00a0[Jung et al., 2020], scenario 1), an estimated reproduction number using the mean of the bootstrapped estimates is $R=1.76\u2062(1.30,2.17)$ with a serial interval of 4.17 days (Singapore) and $R=1.95\u2062(1.72,2.47)$ with a serial interval of 4.3 days (Tianjin). In contrast, if a longer serial interval (7.5 days [Jung et al., 2020; Li et al., 2020b]) is used, the estimate is $R=3.05$. This is based on the relationship between $R\u20620$, serial interval, and growth rate, and is a simple estimate that does not take into account a complex and variable natural history of infection (Wallinga and Lipsitch, 2007). It serves primarily to illustrate how our estimated serial intervals impact $R$ in simple models for COVID-19 dynamics.\n\n## Discussion\n\nHere, we use transmission clusters in two locations where cases have reported links, exposure and symptom onset times to estimate both the incubation period and serial interval of COVID-19. We make these datasets available in a convenient spreadsheet form; they were available publicly but the Singapore dataset was presented in free text updates and the Tianjin cluster was described on multiple sites and in graphical form, in Chinese. We anticipate that the datasets themselves will remain useful for understanding COVID-19\u2019s early spread in these well-documented outbreaks.\n\nThe incubation period and serial interval are key parameters for transmission modeling and for informing public health interventions; modeling remains one of the primary policy aids in use in planning local and global COVID-19 responses. Serial intervals, together with R0, control the shape and distribution of the epidemic curve (Anderson et al., 2004). They influence the disease\u2019s incidence and prevalence, how quickly an epidemic grows, and how quickly intervention methods need to be implemented by public health officials to control the disease (Anderson et al., 2004; Fraser et al., 2004). In particular, the portion of transmission events that occur before symptom onset is a central quantity for infection control (Fraser et al., 2004), and will impact the efficacy of contact tracing and case finding efforts (Peak et al., 2020).\n\nSingapore and Tianjin officials both reacted quickly when COVID-19 cases appeared and started implementing contact tracing and containment measures; however, there was a dramatic difference in the severity of the measures taken. The first case was identified in Singapore on Jan 23, 2020 and in Tianjin on Jan 21. By Feb 9, Singapore had identified 989 close contacts and implemented a travel advisory to defer all travel to Hubei Province and all non-essential travel to Mainland China, asked travellers to monitor their health closely for 2 weeks upon return to Singapore, and asked the public to adopt precautions including avoiding close contact with people who are unwell, practicing good hygiene and hand washing, and wearing a mask if they had respiratory symptoms (Ministry of Health Singapore, 2020). Comparatively, by February 9 in Tianjin, 11,700 contacts were under observations and the Baodi district of almost 1 million people was placed under lockdown with restrictions including: one person per household could leave every 2 days to purchase basic needs, public gatherings were banned, no one could leave their homes between 10PM and 6AM without an exemption, entrances to Tianjin were put under control, and all the buses linking nearby provinces and cities were halted (www.chinadaily.com). While Singapore contained the virus spread relatively well until mid-March, they reached 500 confirmed cases on March 23, 1000 cases on April 1, 10,000 cases on April 22, and 25,000 cases on May 13 (Ministry of Health Singapore, 2020); Tianjin province began to flatten their epidemic curve by mid-to-late-February and had plateaued at 192 confirmed cases as of May 19 (github.com/CSSEGISandData/COVID-19).\n\nIn Singapore and Tianjin we estimated relatively short serial intervals. Of particular note, early estimates of R0 for COVID-19 used the SARS serial interval of 8.4 days (Abbott et al., 2020; Majumder and Mandl, 2020; Wu et al., 2020). Our serial interval findings from two populations mirror those of Zhao et al., 2020 and (Nishiura et al., 2020), who estimated a serial interval of 4.4 and 4.0 days. Du et al., 2020\u00a0obtain a similar estimate for the serial interval (3.96 days with 95% CI: 3.53\u20134.39) but with standard deviation 4.75 days, based on 468 cases in 18 provinces. Furthermore, we estimate the serial interval to be shorter than the incubation period in both clusters, which suggests pre-symptomatic transmission. This indicates that spread of SARS-CoV-2 is likely to be difficult to stop by isolation of detected cases alone. However, shorter serial intervals also lead to lower estimates of R0, and our serial intervals support R0 values just below 2; if correct this means that half of the transmissions need to be prevented to contain outbreaks.\n\nWe stratified the incubation period analysis for Tianjin by time of symptom onset (pre- or post- Jan 31, 2020; motivated by quarantine/social distancing measures) and found that the apparent incubation period was longer for those with post-quarantine symptom onset. The reason for this is unclear, but one possible explanation is that there were (unknown, therefore unreported) exposures during the quarantine period. If people are quarantined in groups of (presumed) uninfected cases, pre-symptomatic transmission in quarantine would result in true exposure times that are more recent than reported last possible exposure times.\n\nAlthough it may seem contradictory that for\u00a0example Singapore\u2019s efforts were able to keep the epidemic under control using mainly case-based controls if pre-symptomatic transmission is common, it remains the case that detailed contact tracing combined with case finding may be key to limiting both symptomatic and pre-symptomatic spread. In Singapore, symptom-free close contacts of known cases were quarantined preemptively for 14 days, and other less high-risk contacts were placed under phone surveillance (Lee et al., 2020). In addition, if case finding is able to prevent a large portion of symptomatic transmission, it seems logical that the remaining observed transmission may be pre-symptomatic. The large extent of pre-symptomatic spread that is occurring, however, may be one reason that the spread of COVID-19 in Singapore was ultimately only delayed and not prevented.\n\nThere are several limitations to this work. First, the times of exposure and the presumed infectors are uncertain, and the incubation period is variable. We have not incorporated uncertainty in the dates of symptom onset. We have used the mixture model approach for serial intervals to avoid assuming that the presumed infector is always the true infector, but the mixture does not capture all possible transmission configurations. Our R0 estimates are simple, based on a doubling time of 4.6 days, and could be refined with more sophisticated modeling in combination with case count data. We have not adjusted for truncation (e.g. shorter serial intervals are likely to be observed first) or the growth curve of the epidemic. However, the serial interval estimates are consistent between the two datasets, are robust to the parameter choices, and are consistently shorter than the estimated incubation times.\n\nWe estimated both the incubation period and the serial interval in Singapore and Tianjin COVID-19 clusters. Our results suggest that there is substantial transmission prior to onset of symptoms, as the serial interval is shorter than incubation period by 2\u20134 days. We find differences in estimated incubation period between early and later cases; this may be due to pre-symptomatic transmission or differences in reporting and/or in perceived exposure as the outbreak progressed, in the context of social distancing measures. Evidence of transmission from apparently healthy individuals makes broad-scale social distancing measures particularly important in controlling the spread of the disease.\n\n## Materials and methods\n\n### Data\n\nAll datasets and R code are available on GitHub (github.com/carolinecolijn/ClustersCOVID19;\u00a0Tindale et al., 2020; copy archived at https://github.com/elifesciences-publications/ClustersCOVID19).\n\nSingapore data was obtained from the Ministry of Health Singapore, 2020 online press releases. The Singapore dataset comprised 93 confirmed cases from the date of the initial case on January 23, 2020 until February 26, 2020. Tianjin data was obtained from the Tianjin Health Commission, 2020 online press releases. The Tianjin dataset comprises 135 cases confirmed from January 21 to February 22, 2020. The symptom onsets were available on the official website for all but a few patients who had not had symptoms before being diagnosed at a quarantine center. Both datasets contained mainly information on exposure times, contacts among cases, time of symptom onset (See Appendix 1 for column descriptions and data processing).\n\n### Statistical analysis\n\nAll statistical analyses were performed using R (R Development Core Team, 2013).\n\n#### Incubation periods: not accounting for intermediate cases\n\nThe daily incidence of hospitalization and mortality was plotted with the cumulative number of cases confirmed and discharged. The daily incidence was also visualized by date of symptom onset. For the symptom onset plots, any cases that did not have information on date of onset of symptoms were removed. Cases were then grouped based on their assumed source of infection (see Appendix 1 for full details).\n\nIncubation periods were estimated in two ways:\u00a0directly from the exposure to symptom onset times, and using a model allowing for unknown intermediate cases to have been the true source of infection (see below). The direct estimates were based on the earliest and latest possible exposure times, and on the reported times of symptom onset. It is impossible to confirm the exact times of exposure and thus we used interval censoring, which uses the likelihood of a time falling in a defined window, (R package icenReg [Anderson-Bergman, 2017]) to make parametric estimates of the incubation period distribution. For cases without a known earliest possible exposure time, we assume that the case must have been exposed within the 20 days prior to their symptom onset. For cases without a known latest possible exposure time, we assume that exposure had to have occurred before symptom onset. Some cases had a travel history or contact with a known location or presumed source of the virus and this defined their window for exposure. In the Singapore dataset, other individuals had estimated exposure times based on the symptom times for their presumed infector. For these, we define an exposure window using the symptoms of their presumed infector \u22127/+4 days. Having defined exposure windows, we proceed with interval censoring. In both datasets we stratified the data according to whether symptom onset occurred early or late, and estimated incubation periods separately. We define \u2018early\u2019 cases as those with symptom onset on or prior to January 31.\n\n#### Incubation periods: accounting for intermediate cases\n\nStandard estimates of the incubation period from exposure and symptom data require knowledge of the true exposure event. In our data, exposures were frequently attributed to attendance at events or locations where there had been known COVID-19 cases. It is conceivable that some cases were not in fact exposed at the event, but subsequent to it, by an unknown (perhaps asymptomatic) case who also attended the event or was otherwise linked. We developed the following approach to account for possible unknown intermediates. Suppose the data suggest that case $i$ was exposed at an event by individual $A$, but in fact, there is an unknown intermediate $x$ who was infected at the event and who subsequently infected $i$. In this case, the time between $i$\u2019s apparent exposure and $i$\u2019s symptom onset is not a sample of the incubation period. Instead, it is one generation time (the time between $A$ infecting $x$ and $x$ infecting $i$) followed by one incubation period (from $x$ infecting $i$\u00a0to i\u2019s symptoms). Similarly, if $x$ infects a second unknown intermediate $y$, and $y$ infects $i$, then the time elapsed is two generation intervals followed by an incubation period. Under the simplifying assumption that the generation time and the incubation period follow a gamma distribution with the same scale parameter, we can explicitly write the density for the elapsed time, given $k$ intermediates. We model the assumption that longer times between (presumed) exposure and symptom onset have more room for undetected intermediate cases. To describe this with likelihoods, we model unknown intermediate cases occurring with a probability proportional to the length of the apparent incubation period, using a Poisson process (see Appendix 1). We estimate the mean incubation period and generation interval with this approach, also accounting for right truncation (which is not available in the interval censoring estimator in icenReg). If $f\u2062(t)$, $g\u2062(t)$ are the densities for the incubation period and generation time respectively, then with $k$ intermediates, the time elapsed has density $h_{k}\u2062(t)=g*\u2026*g*f=g^{(k)}*f$, where * denotes convolution, i.e., $g*f=\\int_{0}^{t}g\u2062(s)\u2062f\u2062(t-s)\u2062\ud835\udc51s$. The right trunctation time $T_{i}$ is the time between $i$\u2019s exposure and the end of the observation period (because if the symptom onset does not happen after $T_{i}$ has elapsed it will not be observed, and this can bias estimates). Let the time from symptom onset to the beginning of the exposure window be $t_{m\u2062a\u2062x}^{i}$, and to the end of the window $t_{m\u2062i\u2062n}^{i}$. The incubation period is then somewhere in the interval $(t_{m\u2062i\u2062n}^{i},t_{m\u2062a\u2062x}^{i})$. The likelihood of observing a time in this interval, conditional on $k$ intermediates, is $L_{k}^{i}=\\frac{H_{k}\u2062(t_{m\u2062a\u2062x}^{i})-H_{k}\u2062(t_{m\u2062i\u2062n}^{i})}{H_{k}\u2062(T_{i})}$. We use a Poisson process with rate $r$ to model the probability that there are $k$ intermediates. This means that the likelihood for the $i$\u2019th observation is $L^{i}=\\sum_{k=0}^{3}p_{k}\u2062L_{k}^{i}$. The complete likelihood is the product over all cases, $L=\\prod_{i}L^{i}.$ To compute this, note that if $g$ and $f$ are both gamma densities with shapes $a_{g}$ and $a_{i}$, and if they have the same scale parameter $b$, then the convolution $g*f\u2062(t)=Gamma\u2062(a_{g}+a_{i},b)$. We can extend this to $k$ intermediates: the density is $g^{(k)}*f=Gamma\u2062(k\u2062a_{g}+a_{i},b)$. We truncate the number of possible intermediates at $n$, so we condition the usual Poisson probability for $k$ arrivals, $\u03c1_{k,r}=r^{k}\u2062e^{-r}/k!$, accordingly. Let $C_{n,r}=\\sum_{i=0}^{n}p_{i}\u2062(r)$, and use\n\n$$\np_{k}={\u03c1_{k,r}/C_{n,r},k\\leqn0otherwise\n$$\n\nWe use maximum likelihood to estimate the shape parameters $a_{g}$ and $a_{i}$ of the generation and incubation periods under a range of intermediate \u2018arrival rates\u2019 $r$ and we use bootstrapping to estimate the credible intervals. We refer to this analysis as the \u2018incubation period with intermediates\u2019 analysis.\n\n#### Serial intervals: not accounting for intermediates\n\nWe illustrate the empirical serial intervals implied by contact links reported in the data. We compute the mean and standard deviation of these in entirety, and separated into early- and late-occurring cases, calculating summary statistics of possible transmission pairs in \u2019early\u2019 (i.e. first date of symptom onset on or before Jan 31, 2020) vs. \u2018late\u2018 portions of both clusters. We estimate the mean serial intervals using these \u2018directly reported\u2019 contacts, accounting for right truncation (R package SurvTrunc) and using Cox proportional hazards to determine whether there is a significant early vs. late difference. We use the non-parametric survival curves to estimate the mean serial interval for both datasets.\n\n#### Serial intervals: accounting for intermediates\n\nAs with incubation periods, reported serial intervals may miss unknown intermediates, and co-infectors of two cases presumed to be a transmission pair. We used the expectation-maximization approach described in Vink et al., 2014, which not only takes unknown intermediates into account but also explicitly models a fixed set of possible mis-allocation of infector-infectee pairs in contact data. Briefly, this approach assigns the case with earliest symptom onset in a cluster a \u2018putative index\u2019 (PI) status, and uses the time difference between symptom onset of subsequent cases in the cluster and the putative index as \u2018index case to case\u2019 (ICC) intervals for putative index cases in small, closely-linked sets of cases (\u2018small clusters\u2019). The ICC intervals are the time differences between the symptom onset time $t_{p\u2062i}$ of the putative index (PI) case and the other members\u2019 symptom onset (call these times $t_{j}$, where $j$ is another case in the same small cluster as this PI). These intervals are not samples of the serial interval distribution, because it need not be the case that the PI infected the others. Vink et al., 2014 used a mixture model in which ICC intervals $t_{j}-t_{p\u2062i}$ can arise in four ways: (1) an outside case infects PI and $j$; (2) PI infects $j$; (3) PI infects an unknown who infects $j$ and (4) PI infects unknown one who infects unknown two who infects $j$. Accordingly, if the serial interval $x\u223c\ud835\udca9\u2062(\\mu,\\sigma^{2})$, the density for the ICC intervals is\n\n$$\nf\u2062(x;\\mu,\\sigma^{2})=\\sumiw_{i}\u2062f_{i}\u2062(\\mu,\\sigma^{2})\n$$\n\nwhere $w_{i}$ are weights of the $i$\u2019th component density and $f_{i}$ are the component densities for the $i$\u2019th transmission route. Expectation-maximization is used to determine $\\mu$ and $\\sigma$ (See Vink et al., 2014 for more details).\n\nFor each dataset, we create a network, with individuals represented by nodes. The network\u2019s edges are the reported direct contacts between individuals. Every such network (or graph) consists of one or more components \u2013 sets of nodes that are connected by edges. We use the components of the network to define transmission clusters. Since the four models in the mixture are likely insufficient to model the transmission in large clusters, we restrict the analysis to only the first four cases per cluster (or the first 3, 5, or 6 cases per cluster to determine impact of altering number of cases per cluster; see Appendix 1). We defined the first case within the cluster as the case with the earliest date of symptom onset within the cluster; however we also examined the impact of using the earliest end exposure time if the first symptomatic case was not the index case for the cluster (See Appendix 1). Given the serial interval, we calculate an approximate reproduction number using the empirical growth rate (Wallinga and Lipsitch, 2007): $R=exp\u2061(r\\mu\u22121/2r^{2}\\sigma^{2})$, where $r$, $\\mu$ and $\\sigma$ are the exponential growth rate, the mean serial interval and the standard deviation of the serial interval, respectively). To obtain confidence intervals for $R$ we resample $\\mu$ and $\\sigma$ using bootstrapping.\n\n#### Pre-symptomatic transmission\n\nWe estimate the portion of transmission that occurs before symptoms as the fraction of samples where serial interval minus incubation period is negative. We introduce an approach to take covariation between the two variables into account, as follows. The mean difference between two random variables is the difference between the means. Therefore, the mean serial interval minus the mean incubation periods gives an estimate of the mean time before symptoms that transmission occurs according to our data. However, the distribution of the difference depends on the covariance between the incubation period and the serial interval. Unfortunately, it is challenging to obtain a good estimate of the covariance between these quantities. We estimated the covariance (and correlation) using case pairs; each pair is associated with two numbers: a serial interval estimate and an incubation period for the infectee. The covariance between these is a (somewhat crude) estimate of the covariance in the incubation period and serial intervals. We sampled incubation periods and serial intervals from our estimated distributions, ensuring that we respected the observed correlation, and used the serial interval - incubation period differences to estimate the portion of transmission that is pre-symptomatic. Further details of this approach are given in Appendix 1.\n\nIn estimating pre-symptomatic transmission, we compare \u2018direct\u2019 (not accounting for intermediates) incubation periods and serial intervals, and we compare the two with accounting for intermediates. We take the covariation into account throughout.\n",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "247968ad-1b5c-4b60-ba06-595830b29323",
+      "submission_id": "bd4d7180-2b23-4646-a4a8-7fa48eb773a4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marc Lipsitch, Harvard TH Chan School of Public Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57149.sa1](https://doi.org/10.7554/eLife.57149.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is a valuable contribution to the effort to understand the timing of transmission of COVID-19 relative to symptoms. It provides evidence that pre-symptomatic individuals contribute to transmission and thus efforts must be directed beyond simply isolating those who have symptoms. This study provides data in support of widespread adoption of social distancing and other transmission prevention measures.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Evidence for spread of COVID-19 prior to symptom onset supports the need for social distancing\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Marc Lipsitch as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Eduardo Franco as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Joel Miller (Reviewer #2); Virginia E. Pitzer (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional explanation and possibly new analyses are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is 'in revision at eLife'. Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThe manuscript by Tindale et al. presents estimates of the incubation period and serial interval for SARS-CoV-2 based on publicly available datasets from Singapore and Tianjin, China, where control measures were applied early and there was well documented contract tracing. Based on their findings that estimates of the mean incubation period are longer than estimates of the serial interval, they conclude that substantial pre-symptomatic transmission must be occurring.\n\nEssential revisions:\n\n1) The SI should shorten as control measures become more stringent (finding contacts faster), but this is not discussed, only the slightly odd lengthening of the incubation period. For example such shortening was prominent in Lipsitch et al., 2003 for SARS. Comment please.\n\n2) Ferguson et al. (Imperial College COVID Report 4) have noted a previously unappreciated bias in retrospective contact tracing that can inflate the number of short serial intervals or incubation period. The relevance is uncertain to me for this study, but should be addressed.\n\n3) The data do indeed seem to support presymptomatic transmission to a significant degree. Can the authors be any more specific about the bounds on this? For example if the serial intervals and incubation periods were uncorrelated, or positively correlated, or if one estimated for each case a probability that transmission was before symptoms, what would the result be in terms of the actual proportion of transmission presymptomatic?\n\n4) Assuming the answer to 3 is \"a lot\" as I suspect, there is a paradox here \u2013 that Singapore kept the epidemic under control for months with mainly case-based interventions before it failed, a situation that could not happen (I think) if most transmission was presymptomatic. These two facts (the analysis and the control that lasted until early April) seem to contradict each other. Please discuss.\n\n5) We would like a little more discussion on the lengthening of the incubation period \u2013 could this simply mean that before the restrictions the interaction that is identified as transmitting wasn't responsible, but in fact the transmission had happened days earlier, perhaps in an earlier interaction of the two individuals? It would be nice if the authors can comment on why we can or cannot rule this possibility out.\n\n6) A key concern is that, unlike the method used to estimate the serial interval, the approach used to estimate the incubation period assumes that all cases (and potential infectors) have been identified and confirmed, and does not allow for transmission from asymptomatic cases. This seems particularly problematic for the Singapore dataset, in which all of the data seems to be on hospitalized cases; thus, less severe cases may have been missed (unless all cases were hospitalized as a form of isolation there). In Tianjin, it is unclear whether confirmed cases were hospitalized or not, but seems likely that asymptomatic or mild infections may have been missed. The large increase in the estimated incubation period for the \"early\" vs. \"late\" cases suggests to me that exposure to asymptomatic/undetected cases is likely biasing the results, as one would expect a greater prevalence and thus higher risk of exposure to asymptomatic cases later on. If there was an undetected case in between a confirmed case and the purported index case, presumably the estimated incubation period would be reduced by ~50% (at least).\n\n7) The method for estimating the serial interval, on the other hand, does allow for multiple (undetected) generations of transmission between confirmed cases in the mixture model. Thus, these two approaches make different assumption about the potential presence/role of asymptomatic cases. Furthermore, there is no real methods development here. The authors apply two different established methods to their data, rather than presenting a unified framework for estimating the incubation period and serial interval (which would be novel and considerably strengthen the analysis).\n\n8) Lastly, the estimates of R0 that they present in the Abstract and main text are not based on the actual data from Singapore and Tianjin. Instead, they use their estimates of the serial interval mean and standard deviation for each setting and a point estimate of the growth rate (with no uncertainty) from a different study based on data for all of mainland China. Thus, it is misleading to suggest that these are the R0 estimates specifically for Singapore and Tianjin.\n",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cc6144f0-c840-4178-bc24-b72c72c88f0b",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C1",
+      "claim": "COVID-19 was first identified in Wuhan, Hubei Province, China in December 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The novel coronavirus disease, COVID-19, was first identified in Wuhan, Hubei Province, China in December 2019 (Li et al., 2020b; Huang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Li et al., 2020b and Huang et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "6fd73da3-5c65-42f1-bf90-7a7a76f4ae7d",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C2",
+      "claim": "The virus causing COVID-19 was named severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).",
+      "claim_type": "EXPLICIT",
+      "source": "The virus causing the disease was soon named severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Hui et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hui et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "de33a853-05ca-46ea-ae8f-ee6537c77cad",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C3",
+      "claim": "COVID-19 caused a pandemic with over 5 million cases and 300,000 deaths at the time of writing.",
+      "claim_type": "EXPLICIT",
+      "source": "quickly spread to other regions of China and then across the globe, causing a pandemic with over 5 million cases and 300,000 deaths at the time of writing (Johns Hopkins University, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Johns Hopkins University, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "16305a71-b709-435c-b352-ad826dd95734",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C4",
+      "claim": "The first case in Tianjin was confirmed on January 21, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In Tianjin, a metropolis located at the north of China, the first case was confirmed on January 21, 2020 (Tianjin Health Commission, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tianjin Health Commission, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "f531293a-d5e3-4a5f-a185-43cbd6105547",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C5",
+      "claim": "The first case in Singapore was confirmed on January 23, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Two days later, the first case was confirmed in Singapore (Ministry of Health Singapore, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ministry of Health Singapore, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "a0be7892-20ae-425a-a730-547d1e94d407",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C6",
+      "claim": "As of February 28, 2020, 93 cases had been confirmed in Singapore.",
+      "claim_type": "EXPLICIT",
+      "source": "As of February 28, 2020, 93 and 135 cases had been confirmed in Singapore and Tianjin (Ministry of Health Singapore, 2020; Tianjin Health Commission, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ministry of Health Singapore, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "8e7da866-30a8-4fdb-9729-f5a344b6cda2",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C7",
+      "claim": "As of February 28, 2020, 135 cases had been confirmed in Tianjin.",
+      "claim_type": "EXPLICIT",
+      "source": "As of February 28, 2020, 93 and 135 cases had been confirmed in Singapore and Tianjin (Ministry of Health Singapore, 2020; Tianjin Health Commission, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tianjin Health Commission, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "e16365d7-6934-4acb-be59-051ba122ffca",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C8",
+      "claim": "The first Singapore COVID-19 case was an individual who had travelled to Singapore from Wuhan.",
+      "claim_type": "EXPLICIT",
+      "source": "The first Singapore COVID-19 case was confirmed as an individual who had travelled to Singapore from Wuhan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "007e8777-7bd8-4d62-808a-74807a78c7d1",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C9",
+      "claim": "Close contacts in Singapore were monitored and quarantined for 14 days from their last exposure to the patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Singaporean officials worked to identify potential contacts of confirmed cases; close contacts were monitored and quarantined for 14 days from their last exposure to the patient, and other low-risk contacts were put under active surveillance and contacted daily to monitor their health status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "dbe335b9-fc80-4333-8a14-dabcad8f03aa",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C10",
+      "claim": "The serial interval is defined as the length of time between symptom onset in a primary case (infector) and symptom onset in a secondary case (infectee).",
+      "claim_type": "EXPLICIT",
+      "source": "The serial interval is defined as the length of time between symptom onset in a primary case (infector) and symptom onset in a secondary case (infectee)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Standard epidemiological definition provided in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "14a5945d-736d-44ca-9f0c-487a15f50221",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C11",
+      "claim": "The incubation period is defined as the length of time between an infectee's exposure to a virus and their symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the incubation period is defined as the length of time between an infectee's exposure to a virus and their symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Standard epidemiological definition provided in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "b2ed2aa9-3d18-40a5-a451-b31f4a165629",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C12",
+      "claim": "There is evidence that pre-symptomatic transmission accounts for a considerable portion of COVID-19 spread.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that pre-symptomatic transmission accounts for a considerable portion of COVID-19 spread (Arons et al., 2020; Baggett et al., 2020; Li et al., 2020a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Arons et al., 2020; Baggett et al., 2020; Li et al., 2020a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "5b57edfc-6ac2-412d-bdb3-20e35474088e",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C13",
+      "claim": "Early COVID-19 estimates borrowed parameters from SARS.",
+      "claim_type": "EXPLICIT",
+      "source": "Early COVID-19 estimates borrowed parameters from SARS (Wu et al., 2020; Jiang et al., 2020; Abbott et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wu et al., 2020; Jiang et al., 2020; Abbott et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "bc9e4b85-3033-4ded-a2ba-df411793df77",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C14",
+      "claim": "Estimates for COVID-19 incubation periods have ranged from 3.6 to 6.4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the population used, estimates for incubation periods have ranged from 3.6 to 6.4 days and serial intervals have ranged from 4.0 to 7.5 days (Li et al., 2020b; Ki and Task Force for 2019-nCoV, 2020; Backer et al., 2019; Linton et al., 2020; Nishiura et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "857590d3-11fd-42a4-a348-77c9849b9a18",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C15",
+      "claim": "Estimates for COVID-19 serial intervals have ranged from 4.0 to 7.5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the population used, estimates for incubation periods have ranged from 3.6 to 6.4 days and serial intervals have ranged from 4.0 to 7.5 days (Li et al., 2020b; Ki and Task Force for 2019-nCoV, 2020; Backer et al., 2019; Linton et al., 2020; Nishiura et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "7f661322-0482-411a-a733-c766a4185bb3",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C16",
+      "claim": "In the Singapore dataset, 66.7% (62/93) of the confirmed cases recovered and were discharged from the hospital by the end of the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "66.7% (62/93) of the confirmed cases recovered and were discharged from the hospital by the end of the study period (Figure 1(a)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data presented in the manuscript and referenced in Figure 1(a)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "57832fae-a172-4e10-a0b3-1f3c8da2a2f5",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C17",
+      "claim": "In Singapore, symptom onset occurred 1.71 \u00b1 3.01 (mean \u00b1 SD) days after the end of possible viral exposure window.",
+      "claim_type": "EXPLICIT",
+      "source": "The disease progression timeline of the 93 documented cases in Figure 1(c) indicates that symptom onset occurred 1.71 \u00b1 3.01 (mean \u00b1 SD) days after the end of possible viral exposure window",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis presented in the manuscript and referenced in Figure 1(c)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "af309339-a4de-41dd-b4b1-9195c15ec55a",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C18",
+      "claim": "In Singapore, cases were confirmed 7.43 \u00b1 5.28 days after symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "cases were confirmed 7.43 \u00b1 5.28 days after symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "c5ce2817-18f8-400d-b7b8-1d83240e42da",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C19",
+      "claim": "In Singapore, the mean length of hospital stay was 13.3 \u00b1 6.01 days before individuals recovered and were discharged.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean length of hospital stay was 13.3 \u00b1 6.01 days before individuals recovered and were discharged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "7c10cab2-c451-427a-b2bd-22a79af77341",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C20",
+      "claim": "In the Tianjin dataset, 48.1% (65/135) recovered by the end of the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "48.1% (65/135) recovered and 2.2% (3/135) had died by the end of the study period (Figure 2(a)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data presented in the manuscript and referenced in Figure 2(a)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "7b8d6a0f-820b-4cb9-a3fd-c97272c05b56",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C21",
+      "claim": "In the Tianjin dataset, 2.2% (3/135) had died by the end of the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "48.1% (65/135) recovered and 2.2% (3/135) had died by the end of the study period (Figure 2(a)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data presented in the manuscript and referenced in Figure 2(a)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "fe691780-e00c-4d4f-8cf5-215a137a337c",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C22",
+      "claim": "In Tianjin, symptom onset occurred 4.98 \u00b1 4.83 (mean \u00b1 SD) days after the end of the possible viral exposure window.",
+      "claim_type": "EXPLICIT",
+      "source": "Symptom onset occurred 4.98 \u00b1 4.83 (mean \u00b1 SD) days after the end of the possible viral exposure window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "e2721c93-fe44-4654-9772-56fa5a5f8f31",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C23",
+      "claim": "In Tianjin, cases were confirmed 5.23 \u00b1 4.15 days after symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Cases were confirmed 5.23 \u00b1 4.15 days after symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "3afbd40c-50b0-48c1-9c1e-5cdbedb3a029",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C24",
+      "claim": "In Singapore, the median incubation period without accounting for intermediate cases is 5.32 days with the gamma distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Singapore dataset, we find that the median incubation period in our direct analysis (without accounting for intermediate cases) is 5.32 days with the gamma distribution; shape 3.05 (95%CI 2.0, 3.84); and scale 1.95 (1.23, 2.34).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the Singapore data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "b313744d-6194-42b6-b59e-3e364b317de1",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C25",
+      "claim": "In Singapore, the mean incubation period without accounting for intermediate cases is 5.99 (95%CI 4.97, 7.14) days.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean incubation period is 5.99 (95%CI 4.97, 7.14) days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the Singapore data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "922aaf4e-4666-43ad-aba3-935c86a880a8",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C26",
+      "claim": "In Tianjin, the median incubation period without accounting for intermediate cases is 8.06 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In Tianjin, we find a median 8.06 days; shape 4.74 (3.35, 5.72); scale 1.83 (1.29, 2.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the Tianjin data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "dade1491-4821-4a10-acf0-10ae0bf5edc8",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C27",
+      "claim": "In Tianjin, the mean incubation period without accounting for intermediate cases is 8.68 (7.72, 9.7) days.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean is 8.68 (7.72, 9.7) days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the Tianjin data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "55a25869-0176-43ce-8a8c-2e468edcaaf4",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C28",
+      "claim": "In Singapore, the estimated median incubation time for early cases is 5.26 days with (0.025, 0.975) quantiles of (1.30, 13.8) days.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated median incubation time is 5.26, with (0.025, 0.975) quantiles of (1.30, 13.8) days for early cases (also defined as cases with symptom onset on or prior to January 31st)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the Singapore data stratified by time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "8e137f27-415a-4a55-91bb-2631fcf49fd4",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C29",
+      "claim": "In Singapore, the estimated median incubation time for late cases is 5.35 days with quantiles (1.22, 14.6) days.",
+      "claim_type": "EXPLICIT",
+      "source": "and 5.35 (quantiles (1.22, 14.6)) days for late-arising cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the Singapore data stratified by time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "e7208cae-6e22-4f7b-98f5-5fc2b96519b0",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C30",
+      "claim": "In Singapore, the mean incubation period for early cases is 5.91 (4.50, 7.64) days.",
+      "claim_type": "EXPLICIT",
+      "source": "The means are 5.91 (4.50, 7.64) days for early cases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the Singapore data stratified by time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "4d2c47bb-fa88-4a5e-a43d-dae7fcdd3289",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C31",
+      "claim": "In Singapore, the mean incubation period for late cases is 6.06 (4.70, 7.67) days.",
+      "claim_type": "EXPLICIT",
+      "source": "and 6.06 (4.70, 7.67) days for later cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the Singapore data stratified by time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "5e91d116-cfe1-4bb3-a03b-72b1dffe1f4f",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C34",
+      "claim": "In Tianjin, the mean incubation period for early cases is 6.88 (5.97, 7.87) days.",
+      "claim_type": "EXPLICIT",
+      "source": "The means are 6.88 (5.97, 7.87) days for early cases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the Tianjin data stratified by time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "ba2bf948-ab03-436c-8ebc-5e9c393a96e0",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C35",
+      "claim": "In Tianjin, the mean incubation period for later cases is 12.4 (11.1, 13.7) days.",
+      "claim_type": "EXPLICIT",
+      "source": "and 12.4 (11.1, 13.7) days for later cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the Tianjin data stratified by time",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "3afb31b3-c8fe-4550-b48f-2bdabf81ef80",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C36",
+      "claim": "Pre-symptomatic transmission during quarantine could explain the longer apparent incubation periods in later cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-symptomatic transmission would enable this, if an individual was thought to have been exposed before group quarantine, but in actuality was exposed during quarantine by a pre-symptomatic individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference based on the observed data patterns",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "b77b230b-38d9-4aff-a346-e11998eb5692",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C37",
+      "claim": "In Singapore with a low (0.05 per day) rate of unknown intermediates, the median of the bootstrapped mean incubation periods is 4.91 days (4.35, 5.69 95% bootstrap CI).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the median of the bootstrapped mean incubation periods for Singapore with a low (0.05 per day) rate of unknown intermediates is 4.91 days (4.35, 5.69 95% bootstrap CI)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis accounting for intermediate cases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "952f11f7-c05d-4074-99a7-f0b60a5da279",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C38",
+      "claim": "In Singapore with a low (0.05 per day) rate of unknown intermediates, the generation time is 3.71 (2.36, 4.91) days.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to a generation time of 3.71 (2.36, 4.91) days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis accounting for intermediate cases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "49f0d0f5-7de7-4260-871f-00302e5551be",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C39",
+      "claim": "In Tianjin with a low (0.05 per day) rate of unknown intermediates, the bootstrapped mean incubation period is 7.54 (6.76, 8.56 95% CI) days.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tianjin bootstrapped mean incubation period is 7.54 (6.76, 8.56 95% CI) days",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis accounting for intermediate cases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "c29b8cb6-5de5-40fd-b6e2-1440d74287b4",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C40",
+      "claim": "In Tianjin with a low (0.05 per day) rate of unknown intermediates, the generation time is 2.82 (1.83, 3.52) days.",
+      "claim_type": "EXPLICIT",
+      "source": "and the generation time is only 2.82 (1.83, 3.52) days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis accounting for intermediate cases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "e78cc629-8dad-4b39-ab00-8388c1954137",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C41",
+      "claim": "The mean generation times are consistently shorter than the mean incubation periods, indicating that infection can occur prior to symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean generation times are consistently shorter than the mean incubation periods, indicating that infection can occur prior to symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the comparison of generation times and incubation periods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "5b72d135-7b89-4ed3-be1e-9d04a11d760a",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C42",
+      "claim": "The mean serial interval for Singapore using the ICC method is 4.17 (2.44, 5.89 95% bootstrap CI) days.",
+      "claim_type": "EXPLICIT",
+      "source": "The ICC method finds the mean serial interval to be 4.17 (2.44, 5.89 95% bootstrap CI) days (0.882 bootstrap standard deviation) for Singapore",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis using the ICC method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "5dd3a429-c0cf-45cf-b7f4-50d32e95e23e",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C43",
+      "claim": "The mean serial interval for Tianjin using the ICC method is 4.31 (2.91, 5.72) days.",
+      "claim_type": "EXPLICIT",
+      "source": "and 4.31 (2.91, 5.72) days (0.716 bootstrap sd) for Tianjin, using the first four cases in each cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis using the ICC method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "3181336b-9b92-4e44-b358-c4d5e89463cc",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C44",
+      "claim": "Serial intervals are robustly shorter than incubation periods in the analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, serial intervals are robustly shorter than incubation periods in our analyses (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "6acd02f6-8749-4d1d-92b0-3aa8eafeec07",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C45",
+      "claim": "The estimated fraction of pre-symptomatic transmission for Singapore is 0.74 based on direct estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Even accounting for correlation, the estimated fraction of pre-symptomatic transmission for Singapore is 0.74 (regardless of early/late split)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "10de7f8a-181f-47ab-a052-8bcc6c6a823a",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C46",
+      "claim": "The estimated fraction of pre-symptomatic transmission for Tianjin (all cases) is 0.81 based on direct estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "and for Tianjin is 0.72, 0.96, 0.81 (early, late, all), based on the direct estimates of the incubation periods and serial intervals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "8e075a42-f3da-4bd0-8dc9-a0aa1c2be462",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C50",
+      "claim": "In the direct analysis, infection occurred on average 1.99 days before symptom onset of the infector in Singapore.",
+      "claim_type": "EXPLICIT",
+      "source": "In our direct analysis, we estimate that infection occurred on average 1.99 and 3.68 days before symptom onset of the infector (Singapore, Tianjin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "64a355e5-0219-4720-b005-2001bf2a6f8a",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C51",
+      "claim": "In the direct analysis, infection occurred on average 3.68 days before symptom onset of the infector in Tianjin.",
+      "claim_type": "EXPLICIT",
+      "source": "In our direct analysis, we estimate that infection occurred on average 1.99 and 3.68 days before symptom onset of the infector (Singapore, Tianjin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "d740b0c5-36ff-4bb5-9449-e996bb4a0a16",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C54",
+      "claim": "Samples of the incubation period minus serial interval are negative with probability 0.38 or higher in Singapore.",
+      "claim_type": "EXPLICIT",
+      "source": "In both sets of estimates, samples of the incubation period minus serial interval are negative with probability 0.38 or higher (Singapore) and 0.64 or higher (Tianjin)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "e4d1adfa-b5bb-4e9c-9d22-afd466975866",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C55",
+      "claim": "Samples of the incubation period minus serial interval are negative with probability 0.64 or higher in Tianjin.",
+      "claim_type": "EXPLICIT",
+      "source": "In both sets of estimates, samples of the incubation period minus serial interval are negative with probability 0.38 or higher (Singapore) and 0.64 or higher (Tianjin)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "06b7f96d-16df-433b-a9ee-e52de0b5cfcd",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C56",
+      "claim": "A substantial portion of transmission may occur before symptom onset, consistent with clinical observations reported by Rothe et al., 2020 and Bai et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that a substantial portion of transmission may occur before symptom onset (see Appendix 1 and Figure 8), consistent with the clinical observations reported by Rothe et al., 2020 and (Bai et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis and citations to Rothe et al., 2020 and Bai et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "282da753-9cc7-4ce8-89f8-569310a517dc",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C57",
+      "claim": "Shorter serial intervals yield lower reproduction number estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Shorter serial intervals yield lower reproduction number estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established epidemiological relationships",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "7c866704-382e-4760-9942-ba42fbdc235f",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C61",
+      "claim": "Serial intervals, together with R0, control the shape and distribution of the epidemic curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Serial intervals, together with R0, control the shape and distribution of the epidemic curve (Anderson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Anderson et al., 2004",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "f2a2b204-af52-4fe5-8a70-e2e0e8231b2a",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C62",
+      "claim": "Serial intervals influence the disease's incidence and prevalence, how quickly an epidemic grows, and how quickly intervention methods need to be implemented.",
+      "claim_type": "EXPLICIT",
+      "source": "They influence the disease's incidence and prevalence, how quickly an epidemic grows, and how quickly intervention methods need to be implemented by public health officials to control the disease (Anderson et al., 2004; Fraser et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Anderson et al., 2004; Fraser et al., 2004",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "a0ad523e-6123-42b1-8912-c7278933db13",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C63",
+      "claim": "The portion of transmission events that occur before symptom onset is a central quantity for infection control.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the portion of transmission events that occur before symptom onset is a central quantity for infection control (Fraser et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fraser et al., 2004",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "f57c9155-a024-496b-97f9-8b00672690d4",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C64",
+      "claim": "Pre-symptomatic transmission will impact the efficacy of contact tracing and case finding efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "and will impact the efficacy of contact tracing and case finding efforts (Peak et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peak et al., 2020",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "68c4dd2e-fa95-4590-be08-3215a2528c6d",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C65",
+      "claim": "By February 9, Singapore had identified 989 close contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "By Feb 9, Singapore had identified 989 close contacts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "23face31-17f0-428c-94f2-70387ad460dd",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C66",
+      "claim": "By February 9, Tianjin had 11,700 contacts under observation.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparatively, by February 9 in Tianjin, 11,700 contacts were under observations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "2418dc4f-e04e-45c6-935d-dd220fcc7f22",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C67",
+      "claim": "The Baodi district of almost 1 million people was placed under lockdown in Tianjin.",
+      "claim_type": "EXPLICIT",
+      "source": "and the Baodi district of almost 1 million people was placed under lockdown",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "74fdc0c5-6a76-4f78-8ef9-fa70e5d25092",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C68",
+      "claim": "Singapore reached 500 confirmed cases on March 23.",
+      "claim_type": "EXPLICIT",
+      "source": "While Singapore contained the virus spread relatively well until mid-March, they reached 500 confirmed cases on March 23",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "17eb1a62-708f-4323-961b-d3bee15a0b15",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C69",
+      "claim": "Singapore reached 1000 cases on April 1.",
+      "claim_type": "EXPLICIT",
+      "source": "1000 cases on April 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "9c1008f6-b39b-4e14-8e7c-93ffbdd2d82e",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C70",
+      "claim": "Singapore reached 10,000 cases on April 22.",
+      "claim_type": "EXPLICIT",
+      "source": "10,000 cases on April 22",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "fed6339d-a99d-4288-9f09-1e512d330aa3",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C71",
+      "claim": "Singapore reached 25,000 cases on May 13.",
+      "claim_type": "EXPLICIT",
+      "source": "and 25,000 cases on May 13 (Ministry of Health Singapore, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "93c732bd-2e9e-42e7-8f68-8f8a26053cde",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C72",
+      "claim": "Tianjin began to flatten their epidemic curve by mid-to-late-February.",
+      "claim_type": "EXPLICIT",
+      "source": "Tianjin province began to flatten their epidemic curve by mid-to-late-February",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "28cdfa2e-eb60-41d4-8556-d254428de235",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C73",
+      "claim": "Tianjin had plateaued at 192 confirmed cases as of May 19.",
+      "claim_type": "EXPLICIT",
+      "source": "and had plateaued at 192 confirmed cases as of May 19 (github.com/CSSEGISandData/COVID-19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the manuscript text with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "2ec8fbec-820a-4566-95b8-225438900d6c",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C74",
+      "claim": "The serial interval findings from Singapore and Tianjin mirror those of Zhao et al., 2020 and Nishiura et al., 2020, who estimated a serial interval of 4.4 and 4.0 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Our serial interval findings from two populations mirror those of Zhao et al., 2020 and (Nishiura et al., 2020), who estimated a serial interval of 4.4 and 4.0 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "1b8446ee-2ba4-4ae6-b9fe-dedce94081f6",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C75",
+      "claim": "Du et al., 2020 obtained a similar estimate for the serial interval (3.96 days with 95% CI: 3.53\u20134.39) but with standard deviation 4.75 days, based on 468 cases in 18 provinces.",
+      "claim_type": "EXPLICIT",
+      "source": "Du et al., 2020 obtain a similar estimate for the serial interval (3.96 days with 95% CI: 3.53\u20134.39) but with standard deviation 4.75 days, based on 468 cases in 18 provinces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "f42281c4-10d2-4fbf-b131-4906afbc97e8",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C76",
+      "claim": "The serial interval is shorter than the incubation period in both clusters, which suggests pre-symptomatic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we estimate the serial interval to be shorter than the incubation period in both clusters, which suggests pre-symptomatic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the comparison of serial intervals and incubation periods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "c247cf56-e64f-47b2-b7fd-230614ddcbe3",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C77",
+      "claim": "Spread of SARS-CoV-2 is likely to be difficult to stop by isolation of detected cases alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that spread of SARS-CoV-2 is likely to be difficult to stop by isolation of detected cases alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the evidence of pre-symptomatic transmission",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "d2326a2e-5231-412e-88fe-9316587d7687",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C78",
+      "claim": "Shorter serial intervals lead to lower estimates of R0.",
+      "claim_type": "EXPLICIT",
+      "source": "However, shorter serial intervals also lead to lower estimates of R0",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established epidemiological relationships",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "b3d0ac42-8d51-46c2-ad16-cd162625688e",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C79",
+      "claim": "The serial intervals support R0 values just below 2.",
+      "claim_type": "EXPLICIT",
+      "source": "and our serial intervals support R0 values just below 2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the estimated serial intervals",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "95bb0fb3-b353-4412-a3fa-51ffba94db9c",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C80",
+      "claim": "If R0 is just below 2, half of the transmissions need to be prevented to contain outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "if correct this means that half of the transmissions need to be prevented to contain outbreaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established epidemiological principles",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "70615fd3-9d29-431b-b7a6-f76f9b4eb2d2",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C81",
+      "claim": "One possible explanation for longer apparent incubation periods in post-quarantine cases is that there were unknown, unreported exposures during the quarantine period.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for this is unclear, but one possible explanation is that there were (unknown, therefore unreported) exposures during the quarantine period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed data pattern",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "3df2f60f-5744-46ab-9dbd-39905f76385e",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C82",
+      "claim": "If people are quarantined in groups of presumed uninfected cases, pre-symptomatic transmission in quarantine would result in true exposure times that are more recent than reported last possible exposure times.",
+      "claim_type": "EXPLICIT",
+      "source": "If people are quarantined in groups of (presumed) uninfected cases, pre-symptomatic transmission in quarantine would result in true exposure times that are more recent than reported last possible exposure times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about the consequences of pre-symptomatic transmission during quarantine",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "38b31932-216b-45b1-9d7f-51b63f87219e",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C83",
+      "claim": "Detailed contact tracing combined with case finding may be key to limiting both symptomatic and pre-symptomatic spread.",
+      "claim_type": "EXPLICIT",
+      "source": "it remains the case that detailed contact tracing combined with case finding may be key to limiting both symptomatic and pre-symptomatic spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the Singapore experience",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "b94ddc95-4af3-4b36-962c-4222fe6d2d1d",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C84",
+      "claim": "In Singapore, symptom-free close contacts of known cases were quarantined preemptively for 14 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In Singapore, symptom-free close contacts of known cases were quarantined preemptively for 14 days, and other less high-risk contacts were placed under phone surveillance (Lee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "cf52d18e-72c5-428d-97a8-4638085d269e",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C85",
+      "claim": "If case finding is able to prevent a large portion of symptomatic transmission, the remaining observed transmission may be pre-symptomatic.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, if case finding is able to prevent a large portion of symptomatic transmission, it seems logical that the remaining observed transmission may be pre-symptomatic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about the nature of remaining transmission",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "0a5283cc-e9a6-47a7-9924-101b4868b1e5",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C86",
+      "claim": "The large extent of pre-symptomatic spread may be one reason that the spread of COVID-19 in Singapore was ultimately only delayed and not prevented.",
+      "claim_type": "EXPLICIT",
+      "source": "The large extent of pre-symptomatic spread that is occurring, however, may be one reason that the spread of COVID-19 in Singapore was ultimately only delayed and not prevented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for the eventual spread in Singapore",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "3902ed75-e995-4e2f-9ed7-7b3d766802b8",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C87",
+      "claim": "The times of exposure and the presumed infectors are uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the times of exposure and the presumed infectors are uncertain, and the incubation period is variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of data limitations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "acd96899-5b5f-44d4-a14f-b614565448c3",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C88",
+      "claim": "The incubation period is variable.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the times of exposure and the presumed infectors are uncertain, and the incubation period is variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of biological variability",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "085f8297-d4b1-42ed-b297-b902243d3cfe",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C89",
+      "claim": "The mixture model approach for serial intervals avoids assuming that the presumed infector is always the true infector.",
+      "claim_type": "EXPLICIT",
+      "source": "We have used the mixture model approach for serial intervals to avoid assuming that the presumed infector is always the true infector",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological approach",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "280edb5d-2896-4ac2-87e4-d637eb846f85",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C90",
+      "claim": "The serial interval estimates are consistent between the two datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the serial interval estimates are consistent between the two datasets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of results from Singapore and Tianjin",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "95a1f7b4-381b-4874-ad82-7e1c0f786087",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C91",
+      "claim": "The serial interval estimates are robust to the parameter choices.",
+      "claim_type": "EXPLICIT",
+      "source": "are robust to the parameter choices",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sensitivity analysis of the estimates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "ed3a42cf-b358-4214-b4a9-0c6369637a81",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C92",
+      "claim": "The serial interval estimates are consistently shorter than the estimated incubation times.",
+      "claim_type": "EXPLICIT",
+      "source": "and are consistently shorter than the estimated incubation times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of serial intervals and incubation periods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "1cf9043f-7bda-4b13-a121-8413d5659109",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C93",
+      "claim": "There is substantial transmission prior to onset of symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that there is substantial transmission prior to onset of symptoms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the comparison of serial intervals and incubation periods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "9a6a241d-f21f-424a-b123-9275eb7bf800",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C94",
+      "claim": "The serial interval is shorter than incubation period by 2\u20134 days.",
+      "claim_type": "EXPLICIT",
+      "source": "as the serial interval is shorter than incubation period by 2\u20134 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of serial intervals and incubation periods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "365cad09-1146-46cc-8643-010a78db2c64",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C95",
+      "claim": "Differences in estimated incubation period between early and later cases may be due to pre-symptomatic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "We find differences in estimated incubation period between early and later cases; this may be due to pre-symptomatic transmission",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed differences",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "31081aae-fd0b-41b0-9889-98f75ca06495",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C96",
+      "claim": "Differences in estimated incubation period between early and later cases may be due to differences in reporting and/or in perceived exposure as the outbreak progressed.",
+      "claim_type": "EXPLICIT",
+      "source": "or differences in reporting and/or in perceived exposure as the outbreak progressed, in the context of social distancing measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed differences",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "497b66cc-3d2e-49e1-a798-63d696679394",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C97",
+      "claim": "Evidence of transmission from apparently healthy individuals makes broad-scale social distancing measures particularly important in controlling the spread of the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence of transmission from apparently healthy individuals makes broad-scale social distancing measures particularly important in controlling the spread of the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the evidence of pre-symptomatic transmission",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "6192da3d-e1f9-455f-8045-5d7ea5e177f0",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C98",
+      "claim": "The mean incubation period accounting for intermediate cases was 4.91 days (95%CI 4.35, 5.69) for Singapore.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean incubation periods accounting for intermediate cases were 4.91 days (95%CI 4.35, 5.69) and 7.54 (95%CI 6.76, 8.56) days for Singapore and Tianjin, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis accounting for intermediate cases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "7fe64890-6bb5-484a-aa5e-d4860ff0fbbd",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C99",
+      "claim": "The mean incubation period accounting for intermediate cases was 7.54 (95%CI 6.76, 8.56) days for Tianjin.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean incubation periods accounting for intermediate cases were 4.91 days (95%CI 4.35, 5.69) and 7.54 (95%CI 6.76, 8.56) days for Singapore and Tianjin, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis accounting for intermediate cases",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "cadbd4ba-6d16-4f5c-a96d-aaf051cc3123",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C100",
+      "claim": "The mean serial interval was 4.17 (95%CI 2.44, 5.89) days for Singapore.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean serial interval was 4.17 (95%CI 2.44, 5.89) and 4.31 (95%CI 2.91, 5.72) days (Singapore, Tianjin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis using the ICC method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "f4be72c1-a0e9-4723-aba7-b6db8beeb764",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C101",
+      "claim": "The mean serial interval was 4.31 (95%CI 2.91, 5.72) days for Tianjin.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean serial interval was 4.17 (95%CI 2.44, 5.89) and 4.31 (95%CI 2.91, 5.72) days (Singapore, Tianjin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis using the ICC method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "e22451e1-1b72-4e9d-8388-af98700521f7",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C102",
+      "claim": "Pre-symptomatic transmission may occur in a large proportion of transmission events (0.4\u20130.5 in Singapore and 0.6\u20130.8 in Tianjin, in the analysis with intermediate cases).",
+      "claim_type": "EXPLICIT",
+      "source": "The serial intervals are shorter than incubation periods, suggesting that pre-symptomatic transmission may occur in a large proportion of transmission events (0.4\u20130.5 in Singapore and 0.6\u20130.8 in Tianjin, in our analysis with intermediate cases, and more without intermediates).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis comparing serial intervals and incubation periods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "1f7784d5-0753-4476-b02c-18d0773ad304",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C103",
+      "claim": "It is vital that even individuals who appear healthy abide by public health measures to control COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the evidence for pre-symptomatic transmission, it is vital that even individuals who appear healthy abide by public health measures to control COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the evidence of pre-symptomatic transmission",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "76a1fe9b-3fad-4e4c-b68b-85c00d3cc074",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C104",
+      "claim": "Shortening serial intervals are expected as increased quarantine measures are enacted during the course of an outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortening serial intervals are expected as increased quarantine measures are enacted during the course of an outbreak and can be an indication of improved control through successful contact tracing, as seen in SARS (Lipsitch et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lipsitch et al., 2003 and established epidemiological knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "8a2c9ace-db0a-43d1-b100-9492de313c5f",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C105",
+      "claim": "Shortening serial intervals can be an indication of improved control through successful contact tracing, as seen in SARS.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortening serial intervals are expected as increased quarantine measures are enacted during the course of an outbreak and can be an indication of improved control through successful contact tracing, as seen in SARS (Lipsitch et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lipsitch et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "7f20c64f-f35e-4559-8a3a-3fb16d551de6",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C106",
+      "claim": "Serial intervals shortened as the outbreak progressed in both clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that serial intervals shortened as the outbreak progressed in both clusters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "7325e92b-7be3-4e97-9998-e5dc908d9ed4",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C107",
+      "claim": "The shortening of serial intervals could be due to right truncation.",
+      "claim_type": "EXPLICIT",
+      "source": "but they could also be due to right truncation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed pattern",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "d41134b6-e416-4a10-9484-f7b1983d2550",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C108",
+      "claim": "Accounting for right truncation, the mean serial intervals were 4 and 5 days (Singapore, Tianjin).",
+      "claim_type": "EXPLICIT",
+      "source": "Accounting for this, we found that the mean serial intervals were 4 and 5 days (Singapore, Tianjin)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis accounting for right truncation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "8f56be81-de25-4856-9f18-d28f9b7242ca",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C109",
+      "claim": "A Cox regression found no significant difference between the early and late groups' serial intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "a Cox regression found no significant difference between the early and late groups' serial intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis using Cox regression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "8946522e-434c-48e1-9dae-90ca1e9f0ecc",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C110",
+      "claim": "Early estimates of R0 for COVID-19 used the SARS serial interval of 8.4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular note, early estimates of R0 for COVID-19 used the SARS serial interval of 8.4 days (Abbott et al., 2020; Majumder and Mandl, 2020; Wu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Abbott et al., 2020; Majumder and Mandl, 2020; Wu et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "72172747-e8d5-4c7f-87e1-7c1c2f6aa296",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C111",
+      "claim": "The estimated correlation between the incubation period and serial interval is 0.289 in Tianjin.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were obtained under an estimated correlation between the incubation period and serial interval of 0.289 in Tianjin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "3be4c4d7-a532-4892-a29c-800230433014",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C112",
+      "claim": "The degree of positive correlation does not greatly impact estimates of pre-symptomatic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore find that the degree of positive correlation does not greatly impact our estimates of pre-symptomatic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "c155e7c1-0f79-478e-ac5b-bfed5a231525",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C113",
+      "claim": "Overall for this data and under reasonable assumptions, there is evidence of at least 65% of transmission occurring before symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that overall for this data and under reasonable assumptions, we see evidence of at least 65% of transmission occurring before symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "4df47cd3-e92f-4621-95d3-7c97faadf61c",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C114",
+      "claim": "Singapore data was obtained from the Ministry of Health Singapore online press releases.",
+      "claim_type": "EXPLICIT",
+      "source": "Singapore data was obtained from the Ministry of Health Singapore, 2020 online press releases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "07b29b7b-3a6d-4d70-afa9-2e6813d6e9e4",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C115",
+      "claim": "The Singapore dataset comprised 93 confirmed cases from January 23, 2020 until February 26, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The Singapore dataset comprised 93 confirmed cases from the date of the initial case on January 23, 2020 until February 26, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "19a7556a-f723-4fe8-9ec1-149917fec95e",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C116",
+      "claim": "Tianjin data was obtained from the Tianjin Health Commission online press releases.",
+      "claim_type": "EXPLICIT",
+      "source": "Tianjin data was obtained from the Tianjin Health Commission, 2020 online press releases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "5711f19f-b7ea-48fd-acd9-9f455d481b98",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "claim_id": "C117",
+      "claim": "The Tianjin dataset comprises 135 cases confirmed from January 21 to February 22, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tianjin dataset comprises 135 cases confirmed from January 21 to February 22, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef2a546b-925f-4e51-abb4-18db64cc8e63",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the epidemiological context of early COVID-19 outbreaks in Singapore and Tianjin, documenting the first confirmed cases, case counts, and initial transmission patterns in both locations during January-February 2020.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide well-documented background information supported by appropriate citations to official health authorities and peer-reviewed literature. These contextual claims establish the setting for the subsequent analyses and are consistent with publicly available records from the early pandemic period.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "6a86372b-e48b-4313-ab75-83f8dd969c00",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript defines key epidemiological parameters: serial interval as the time between symptom onset in infector and infectee, and incubation period as the time from exposure to symptom onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 provide standard epidemiological definitions that are well-established in the field. These definitions are correctly stated and form the conceptual foundation for the subsequent parameter estimation analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "b44f6724-4cf0-4238-9ada-c86397752fd8",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Descriptive analysis of disease progression timelines shows that in Singapore, 66.7% of cases recovered, with symptom onset occurring 1.71\u00b13.01 days after exposure, confirmation 7.43\u00b15.28 days after symptoms, and hospital stay of 13.3\u00b16.01 days. In Tianjin, 48.1% recovered and 2.2% died, with symptom onset 4.98\u00b14.83 days after exposure and confirmation 5.23\u00b14.15 days after symptoms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 present descriptive statistics directly derived from the datasets with appropriate references to figures. The statistics are clearly stated with means and standard deviations. However, the manuscript does not provide confidence intervals for these descriptive statistics or discuss potential biases in case ascertainment and reporting delays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "67baa644-f6e6-4dcb-b086-f3ccecfffc70",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Direct estimation of incubation periods without accounting for intermediate cases yielded mean values of 5.99 (95%CI 4.97-7.14) days for Singapore and 8.68 (7.72-9.7) days for Tianjin. When accounting for intermediate cases with low rate of intermediates (r=0.05), estimates were 4.91 (4.35-5.69) days for Singapore and 7.54 (6.76-8.56) days for Tianjin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27, C98-C99 present incubation period estimates using appropriate interval censoring methods and accounting for uncertainty in exposure times. The methodology is sound, though the substantially longer estimates for Tianjin raise questions about data quality or exposure misattribution that the authors acknowledge. The confidence intervals are appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "d2cff2d2-0836-420b-97de-b425660243cf",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Stratification by time (early vs. late cases, divided at January 31) revealed minimal differences in Singapore (mean 5.91 vs 6.06 days) but substantial differences in Tianjin (mean 6.88 vs 12.4 days for early vs late cases).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28-C31, C34-C35 document temporal differences in apparent incubation periods, particularly the dramatic increase in Tianjin late cases. While the data are clearly presented, the biological implausibility of a 12.4-day mean incubation period suggests systematic bias rather than true biological variation. The authors speculate about pre-symptomatic transmission during quarantine (C36, C81-C82) but cannot definitively establish the cause.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "b7e7d108-3148-45bc-9e44-be07e623284e",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose that longer apparent incubation periods in later cases, particularly in Tianjin, may be explained by unreported pre-symptomatic transmission during group quarantine, resulting in more recent true exposure times than reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36, C81-C82 offer a plausible mechanistic explanation for the observed temporal patterns, but this remains speculative. The hypothesis is logical and consistent with pre-symptomatic transmission, but the authors cannot directly verify whether unreported exposures occurred during quarantine. Alternative explanations (reporting bias, changes in exposure perception) are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "e1cdabbe-bd95-4289-bcb3-9b6174c88d3d",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis accounting for potential intermediate cases using a Poisson process model estimated generation times consistently shorter than incubation periods: 3.71 (2.36-4.91) days vs 4.91 days for Singapore and 2.82 (1.83-3.52) days vs 7.54 days for Tianjin (at r=0.05), indicating infection can occur prior to symptom onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 present a novel methodological approach to account for unknown intermediate cases. The mathematical framework is sound and the consistent finding that generation times are shorter than incubation periods across both datasets strengthens the conclusion. However, the method makes several assumptions about intermediate case occurrence that may not fully capture transmission complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "7a1f629a-6ad7-4316-9de3-9db5682bd314",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Serial interval estimation using the ICC mixture model method yielded mean estimates of 4.17 (2.44-5.89) days for Singapore and 4.31 (2.91-5.72) days for Tianjin. After accounting for right truncation, mean serial intervals were 4 and 5 days respectively, with no significant difference between early and late groups by Cox regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43, C100-C101, C108-C109 employ appropriate statistical methods (ICC mixture model, right truncation adjustment, Cox regression) to estimate serial intervals. The consistency between datasets and robustness to methodological choices (C90-C91) strengthens confidence in these estimates. The mixture model appropriately accounts for uncertainty in transmission pairs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "14001a83-ea29-42ce-80c9-8238d2fedafd",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Serial intervals are robustly shorter than incubation periods across both datasets and analytical approaches, suggesting pre-symptomatic transmission occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C92, C76 present the key comparative finding that emerges consistently across multiple analyses. The robustness across two independent datasets, multiple statistical approaches, and sensitivity analyses provides strong support for this conclusion. This is the central empirical finding that enables inference about pre-symptomatic transmission.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "3a6c8a01-8137-449c-86dc-086e1459300b",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Quantitative estimates of pre-symptomatic transmission indicate that 74% (Singapore) and 81% (Tianjin) of transmission occurs before symptom onset based on direct estimates, with infection occurring on average 1.99 and 3.68 days before infector symptom onset. Accounting for intermediate cases yields estimates of 40-53% (Singapore) and 64-79% (Tianjin) depending on assumed intermediate rate. Overall, at least 65% of transmission occurs pre-symptomatically under reasonable assumptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46, C50-C51, C54-C55, C102, C113 provide quantitative estimates of pre-symptomatic transmission derived from the difference between serial intervals and incubation periods. The methodology appropriately accounts for correlation between these parameters (C111-C112). The range of estimates across different assumptions provides appropriate uncertainty quantification, though the true value remains uncertain due to data limitations acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "fc03be76-b627-46ea-ac55-d5c159030e9d",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The analysis demonstrates substantial pre-symptomatic transmission, with serial intervals 2-4 days shorter than incubation periods, consistent with clinical observations from other studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C93-C94 synthesize the main finding and contextualize it with supporting literature (Rothe et al., Bai et al.). The 2-4 day difference is clearly supported by the data across both populations. The consistency with independent clinical observations strengthens the conclusion, though the magnitude of pre-symptomatic transmission remains somewhat uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "c1fb42b7-41bb-4378-a61b-d6a36ac97b43",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The estimated serial intervals (4.17-4.31 days) are consistent with other COVID-19 studies (Zhao et al.: 4.4 days, Nishiura et al.: 4.0 days, Du et al.: 3.96 days) and substantially shorter than the SARS serial interval of 8.4 days used in early COVID-19 R0 estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75, C110 appropriately contextualize the findings within the existing literature. The consistency across multiple independent studies strengthens confidence in the serial interval estimates. The comparison to SARS parameters highlights an important methodological issue in early pandemic modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "974aa733-f09d-46b9-b676-e5a91400e6a7",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Shorter serial intervals lead to lower R0 estimates, with the estimated serial intervals supporting R0 values just below 2, implying that preventing half of transmissions would be needed to contain outbreaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58, C78-C80 correctly apply established epidemiological relationships between serial interval, growth rate, and R0. The calculation is appropriately simplified and the authors acknowledge limitations. The implication for control (50% reduction needed if R0\u22482) follows from basic epidemic theory. However, the R0 estimate depends on assumed growth rate and is presented as illustrative rather than definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "d116d4c7-772c-4f11-b00d-b0e43be9b04d",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Pre-symptomatic transmission implies that SARS-CoV-2 spread is difficult to control by case isolation alone, requiring broad social distancing measures. Contact tracing combined with case finding may be key to limiting transmission, though extensive pre-symptomatic spread may explain why Singapore's containment was ultimately only delayed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C83, C85-C86, C97, C103 draw appropriate public health implications from the pre-symptomatic transmission findings. The logical connection between pre-symptomatic transmission and control difficulty is sound. The interpretation of Singapore's experience is reasonable though somewhat speculative, as multiple factors could explain the eventual spread beyond the study period.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "5a59bcc5-29c4-4c07-8a6f-87222b4eb4ce",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Serial intervals, together with R0, control epidemic curve dynamics and influence disease incidence, prevalence, epidemic growth rate, and the timing of intervention implementation. Pre-symptomatic transmission impacts the efficacy of contact tracing and case finding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 correctly summarize established epidemiological principles supported by appropriate citations (Anderson et al., Fraser et al., Peak et al.). These claims provide important context for why the parameter estimates matter for public health, though they represent prior knowledge rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "b3206a53-d019-47ef-99fe-0de95d17e8d1",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Singapore and Tianjin implemented different intensity control measures. By February 9, Singapore had identified 989 contacts while Tianjin had 11,700 under observation and implemented district lockdown. Singapore's cases grew from 500 (March 23) to 25,000 (May 13), while Tianjin plateaued at 192 cases by May 19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C73 document the public health responses and subsequent epidemic trajectories in both locations. The data are appropriately sourced from official records. This provides important context for interpreting the parameter estimates, though the manuscript does not formally analyze how different interventions affected transmission parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "ee7b6f18-e6f1-4c7d-bc3b-d9cdc66de372",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Serial intervals are expected to shorten as quarantine measures increase during an outbreak, indicating improved control through contact tracing. The data suggest serial intervals shortened over time in both clusters, though this could also be due to right truncation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104-C107 present an expected pattern (shortening serial intervals with control measures) supported by SARS experience, and observe this pattern in the data. However, the authors appropriately note that right truncation could produce the same pattern. The Cox regression finding of no significant difference (C109) after accounting for truncation suggests the temporal trend may be artifactual, creating uncertainty about whether true shortening occurred.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "8e7b7d4e-f0c8-43d7-a508-4c104d86b464",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study acknowledges limitations including uncertainty in exposure times and presumed infectors, and variability in incubation periods. The mixture model approach avoids assuming the presumed infector is always correct. Serial interval estimates are consistent between datasets and robust to parameter choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 appropriately acknowledge data limitations and methodological approaches to address them. The consistency between independent datasets (C90) and robustness to parameter choices (C91) are important strengths that the authors correctly highlight. This transparent discussion of limitations and robustness enhances confidence in the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "bb548d63-cbeb-496e-ac74-f8e73f83c6bf",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Differences in estimated incubation periods between early and later cases may be due to pre-symptomatic transmission during quarantine, or to differences in reporting and perceived exposure as the outbreak progressed with social distancing measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C96 offer alternative explanations for the temporal patterns in incubation period estimates. Both explanations are plausible but the authors cannot definitively distinguish between them with the available data. The speculation is appropriately qualified but remains unresolved, particularly for the dramatic difference observed in Tianjin.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "d88905b5-c382-4352-aa11-7dbbd1342e0a",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior literature indicates pre-symptomatic transmission accounts for considerable COVID-19 spread, early estimates borrowed SARS parameters, and published COVID-19 estimates for incubation periods range from 3.6-6.4 days and serial intervals from 4.0-7.5 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 accurately summarize prior literature with appropriate citations. These claims establish the scientific context and justify the need for population-specific parameter estimates. The ranges cited are consistent with the early COVID-19 literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "525f67dc-5ec3-4730-b959-ee32785569e0",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Singapore's public health response included monitoring and 14-day quarantine of close contacts, with symptom-free close contacts quarantined preemptively and lower-risk contacts under phone surveillance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C84 describe Singapore's contact tracing and quarantine protocols, supported by appropriate citations. This contextual information is important for understanding the data collection process and potential biases, as well as for interpreting why certain transmission patterns were observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    },
+    {
+      "id": "1a35f28e-e4c4-42af-855a-93ac2d6ed229",
+      "content_id": "615360d0-92ee-42c7-bdfd-0e6ed0c423bd",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The study datasets comprised 93 confirmed cases from Singapore (January 23-February 26, 2020) obtained from Ministry of Health press releases, and 135 cases from Tianjin (January 21-February 22, 2020) obtained from Tianjin Health Commission press releases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C117 clearly document data sources and sample sizes. The data provenance is transparent and appropriate for the analyses conducted. The authors made these datasets available in convenient format, which is a strength for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:59:48.513447Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cc6144f0-c840-4178-bc24-b72c72c88f0b",
+      "result_id": "ef2a546b-925f-4e51-abb4-18db64cc8e63"
+    },
+    {
+      "claim_id": "6fd73da3-5c65-42f1-bf90-7a7a76f4ae7d",
+      "result_id": "ef2a546b-925f-4e51-abb4-18db64cc8e63"
+    },
+    {
+      "claim_id": "de33a853-05ca-46ea-ae8f-ee6537c77cad",
+      "result_id": "ef2a546b-925f-4e51-abb4-18db64cc8e63"
+    },
+    {
+      "claim_id": "16305a71-b709-435c-b352-ad826dd95734",
+      "result_id": "ef2a546b-925f-4e51-abb4-18db64cc8e63"
+    },
+    {
+      "claim_id": "f531293a-d5e3-4a5f-a185-43cbd6105547",
+      "result_id": "ef2a546b-925f-4e51-abb4-18db64cc8e63"
+    },
+    {
+      "claim_id": "a0be7892-20ae-425a-a730-547d1e94d407",
+      "result_id": "ef2a546b-925f-4e51-abb4-18db64cc8e63"
+    },
+    {
+      "claim_id": "8e7da866-30a8-4fdb-9729-f5a344b6cda2",
+      "result_id": "ef2a546b-925f-4e51-abb4-18db64cc8e63"
+    },
+    {
+      "claim_id": "e16365d7-6934-4acb-be59-051ba122ffca",
+      "result_id": "ef2a546b-925f-4e51-abb4-18db64cc8e63"
+    },
+    {
+      "claim_id": "dbe335b9-fc80-4333-8a14-dabcad8f03aa",
+      "result_id": "6a86372b-e48b-4313-ab75-83f8dd969c00"
+    },
+    {
+      "claim_id": "14a5945d-736d-44ca-9f0c-487a15f50221",
+      "result_id": "6a86372b-e48b-4313-ab75-83f8dd969c00"
+    },
+    {
+      "claim_id": "7f661322-0482-411a-a733-c766a4185bb3",
+      "result_id": "b44f6724-4cf0-4238-9ada-c86397752fd8"
+    },
+    {
+      "claim_id": "57832fae-a172-4e10-a0b3-1f3c8da2a2f5",
+      "result_id": "b44f6724-4cf0-4238-9ada-c86397752fd8"
+    },
+    {
+      "claim_id": "af309339-a4de-41dd-b4b1-9195c15ec55a",
+      "result_id": "b44f6724-4cf0-4238-9ada-c86397752fd8"
+    },
+    {
+      "claim_id": "c5ce2817-18f8-400d-b7b8-1d83240e42da",
+      "result_id": "b44f6724-4cf0-4238-9ada-c86397752fd8"
+    },
+    {
+      "claim_id": "7c10cab2-c451-427a-b2bd-22a79af77341",
+      "result_id": "b44f6724-4cf0-4238-9ada-c86397752fd8"
+    },
+    {
+      "claim_id": "7b8d6a0f-820b-4cb9-a3fd-c97272c05b56",
+      "result_id": "b44f6724-4cf0-4238-9ada-c86397752fd8"
+    },
+    {
+      "claim_id": "fe691780-e00c-4d4f-8cf5-215a137a337c",
+      "result_id": "b44f6724-4cf0-4238-9ada-c86397752fd8"
+    },
+    {
+      "claim_id": "e2721c93-fe44-4654-9772-56fa5a5f8f31",
+      "result_id": "b44f6724-4cf0-4238-9ada-c86397752fd8"
+    },
+    {
+      "claim_id": "3afbd40c-50b0-48c1-9c1e-5cdbedb3a029",
+      "result_id": "67baa644-f6e6-4dcb-b086-f3ccecfffc70"
+    },
+    {
+      "claim_id": "b313744d-6194-42b6-b59e-3e364b317de1",
+      "result_id": "67baa644-f6e6-4dcb-b086-f3ccecfffc70"
+    },
+    {
+      "claim_id": "922aaf4e-4666-43ad-aba3-935c86a880a8",
+      "result_id": "67baa644-f6e6-4dcb-b086-f3ccecfffc70"
+    },
+    {
+      "claim_id": "dade1491-4821-4a10-acf0-10ae0bf5edc8",
+      "result_id": "67baa644-f6e6-4dcb-b086-f3ccecfffc70"
+    },
+    {
+      "claim_id": "6192da3d-e1f9-455f-8045-5d7ea5e177f0",
+      "result_id": "67baa644-f6e6-4dcb-b086-f3ccecfffc70"
+    },
+    {
+      "claim_id": "7fe64890-6bb5-484a-aa5e-d4860ff0fbbd",
+      "result_id": "67baa644-f6e6-4dcb-b086-f3ccecfffc70"
+    },
+    {
+      "claim_id": "55a25869-0176-43ce-8a8c-2e468edcaaf4",
+      "result_id": "d2cff2d2-0836-420b-97de-b425660243cf"
+    },
+    {
+      "claim_id": "8e137f27-415a-4a55-91bb-2631fcf49fd4",
+      "result_id": "d2cff2d2-0836-420b-97de-b425660243cf"
+    },
+    {
+      "claim_id": "e7208cae-6e22-4f7b-98f5-5fc2b96519b0",
+      "result_id": "d2cff2d2-0836-420b-97de-b425660243cf"
+    },
+    {
+      "claim_id": "4d2c47bb-fa88-4a5e-a43d-dae7fcdd3289",
+      "result_id": "d2cff2d2-0836-420b-97de-b425660243cf"
+    },
+    {
+      "claim_id": "5e91d116-cfe1-4bb3-a03b-72b1dffe1f4f",
+      "result_id": "d2cff2d2-0836-420b-97de-b425660243cf"
+    },
+    {
+      "claim_id": "ba2bf948-ab03-436c-8ebc-5e9c393a96e0",
+      "result_id": "d2cff2d2-0836-420b-97de-b425660243cf"
+    },
+    {
+      "claim_id": "3afb31b3-c8fe-4550-b48f-2bdabf81ef80",
+      "result_id": "b7e7d108-3148-45bc-9e44-be07e623284e"
+    },
+    {
+      "claim_id": "70615fd3-9d29-431b-b7a6-f76f9b4eb2d2",
+      "result_id": "b7e7d108-3148-45bc-9e44-be07e623284e"
+    },
+    {
+      "claim_id": "3df2f60f-5744-46ab-9dbd-39905f76385e",
+      "result_id": "b7e7d108-3148-45bc-9e44-be07e623284e"
+    },
+    {
+      "claim_id": "b77b230b-38d9-4aff-a346-e11998eb5692",
+      "result_id": "e1cdabbe-bd95-4289-bcb3-9b6174c88d3d"
+    },
+    {
+      "claim_id": "952f11f7-c05d-4074-99a7-f0b60a5da279",
+      "result_id": "e1cdabbe-bd95-4289-bcb3-9b6174c88d3d"
+    },
+    {
+      "claim_id": "49f0d0f5-7de7-4260-871f-00302e5551be",
+      "result_id": "e1cdabbe-bd95-4289-bcb3-9b6174c88d3d"
+    },
+    {
+      "claim_id": "c29b8cb6-5de5-40fd-b6e2-1440d74287b4",
+      "result_id": "e1cdabbe-bd95-4289-bcb3-9b6174c88d3d"
+    },
+    {
+      "claim_id": "e78cc629-8dad-4b39-ab00-8388c1954137",
+      "result_id": "e1cdabbe-bd95-4289-bcb3-9b6174c88d3d"
+    },
+    {
+      "claim_id": "5b72d135-7b89-4ed3-be1e-9d04a11d760a",
+      "result_id": "7a1f629a-6ad7-4316-9de3-9db5682bd314"
+    },
+    {
+      "claim_id": "5dd3a429-c0cf-45cf-b7f4-50d32e95e23e",
+      "result_id": "7a1f629a-6ad7-4316-9de3-9db5682bd314"
+    },
+    {
+      "claim_id": "cadbd4ba-6d16-4f5c-a96d-aaf051cc3123",
+      "result_id": "7a1f629a-6ad7-4316-9de3-9db5682bd314"
+    },
+    {
+      "claim_id": "f4be72c1-a0e9-4723-aba7-b6db8beeb764",
+      "result_id": "7a1f629a-6ad7-4316-9de3-9db5682bd314"
+    },
+    {
+      "claim_id": "d41134b6-e416-4a10-9484-f7b1983d2550",
+      "result_id": "7a1f629a-6ad7-4316-9de3-9db5682bd314"
+    },
+    {
+      "claim_id": "8f56be81-de25-4856-9f18-d28f9b7242ca",
+      "result_id": "7a1f629a-6ad7-4316-9de3-9db5682bd314"
+    },
+    {
+      "claim_id": "3181336b-9b92-4e44-b358-c4d5e89463cc",
+      "result_id": "14001a83-ea29-42ce-80c9-8238d2fedafd"
+    },
+    {
+      "claim_id": "ed3a42cf-b358-4214-b4a9-0c6369637a81",
+      "result_id": "14001a83-ea29-42ce-80c9-8238d2fedafd"
+    },
+    {
+      "claim_id": "f42281c4-10d2-4fbf-b131-4906afbc97e8",
+      "result_id": "14001a83-ea29-42ce-80c9-8238d2fedafd"
+    },
+    {
+      "claim_id": "6acd02f6-8749-4d1d-92b0-3aa8eafeec07",
+      "result_id": "3a6c8a01-8137-449c-86dc-086e1459300b"
+    },
+    {
+      "claim_id": "10de7f8a-181f-47ab-a052-8bcc6c6a823a",
+      "result_id": "3a6c8a01-8137-449c-86dc-086e1459300b"
+    },
+    {
+      "claim_id": "8e075a42-f3da-4bd0-8dc9-a0aa1c2be462",
+      "result_id": "3a6c8a01-8137-449c-86dc-086e1459300b"
+    },
+    {
+      "claim_id": "64a355e5-0219-4720-b005-2001bf2a6f8a",
+      "result_id": "3a6c8a01-8137-449c-86dc-086e1459300b"
+    },
+    {
+      "claim_id": "d740b0c5-36ff-4bb5-9449-e996bb4a0a16",
+      "result_id": "3a6c8a01-8137-449c-86dc-086e1459300b"
+    },
+    {
+      "claim_id": "e4d1adfa-b5bb-4e9c-9d22-afd466975866",
+      "result_id": "3a6c8a01-8137-449c-86dc-086e1459300b"
+    },
+    {
+      "claim_id": "e22451e1-1b72-4e9d-8388-af98700521f7",
+      "result_id": "3a6c8a01-8137-449c-86dc-086e1459300b"
+    },
+    {
+      "claim_id": "c155e7c1-0f79-478e-ac5b-bfed5a231525",
+      "result_id": "3a6c8a01-8137-449c-86dc-086e1459300b"
+    },
+    {
+      "claim_id": "06b7f96d-16df-433b-a9ee-e52de0b5cfcd",
+      "result_id": "fc03be76-b627-46ea-ac55-d5c159030e9d"
+    },
+    {
+      "claim_id": "1cf9043f-7bda-4b13-a121-8413d5659109",
+      "result_id": "fc03be76-b627-46ea-ac55-d5c159030e9d"
+    },
+    {
+      "claim_id": "9a6a241d-f21f-424a-b123-9275eb7bf800",
+      "result_id": "fc03be76-b627-46ea-ac55-d5c159030e9d"
+    },
+    {
+      "claim_id": "2ec8fbec-820a-4566-95b8-225438900d6c",
+      "result_id": "c1fb42b7-41bb-4378-a61b-d6a36ac97b43"
+    },
+    {
+      "claim_id": "1b8446ee-2ba4-4ae6-b9fe-dedce94081f6",
+      "result_id": "c1fb42b7-41bb-4378-a61b-d6a36ac97b43"
+    },
+    {
+      "claim_id": "8946522e-434c-48e1-9dae-90ca1e9f0ecc",
+      "result_id": "c1fb42b7-41bb-4378-a61b-d6a36ac97b43"
+    },
+    {
+      "claim_id": "282da753-9cc7-4ce8-89f8-569310a517dc",
+      "result_id": "974aa733-f09d-46b9-b676-e5a91400e6a7"
+    },
+    {
+      "claim_id": "d2326a2e-5231-412e-88fe-9316587d7687",
+      "result_id": "974aa733-f09d-46b9-b676-e5a91400e6a7"
+    },
+    {
+      "claim_id": "b3d0ac42-8d51-46c2-ad16-cd162625688e",
+      "result_id": "974aa733-f09d-46b9-b676-e5a91400e6a7"
+    },
+    {
+      "claim_id": "95bb0fb3-b353-4412-a3fa-51ffba94db9c",
+      "result_id": "974aa733-f09d-46b9-b676-e5a91400e6a7"
+    },
+    {
+      "claim_id": "c247cf56-e64f-47b2-b7fd-230614ddcbe3",
+      "result_id": "d116d4c7-772c-4f11-b00d-b0e43be9b04d"
+    },
+    {
+      "claim_id": "38b31932-216b-45b1-9d7f-51b63f87219e",
+      "result_id": "d116d4c7-772c-4f11-b00d-b0e43be9b04d"
+    },
+    {
+      "claim_id": "cf52d18e-72c5-428d-97a8-4638085d269e",
+      "result_id": "d116d4c7-772c-4f11-b00d-b0e43be9b04d"
+    },
+    {
+      "claim_id": "0a5283cc-e9a6-47a7-9924-101b4868b1e5",
+      "result_id": "d116d4c7-772c-4f11-b00d-b0e43be9b04d"
+    },
+    {
+      "claim_id": "497b66cc-3d2e-49e1-a798-63d696679394",
+      "result_id": "d116d4c7-772c-4f11-b00d-b0e43be9b04d"
+    },
+    {
+      "claim_id": "1f7784d5-0753-4476-b02c-18d0773ad304",
+      "result_id": "d116d4c7-772c-4f11-b00d-b0e43be9b04d"
+    },
+    {
+      "claim_id": "7c866704-382e-4760-9942-ba42fbdc235f",
+      "result_id": "5a59bcc5-29c4-4c07-8a6f-87222b4eb4ce"
+    },
+    {
+      "claim_id": "f2a2b204-af52-4fe5-8a70-e2e0e8231b2a",
+      "result_id": "5a59bcc5-29c4-4c07-8a6f-87222b4eb4ce"
+    },
+    {
+      "claim_id": "a0ad523e-6123-42b1-8912-c7278933db13",
+      "result_id": "5a59bcc5-29c4-4c07-8a6f-87222b4eb4ce"
+    },
+    {
+      "claim_id": "f57c9155-a024-496b-97f9-8b00672690d4",
+      "result_id": "5a59bcc5-29c4-4c07-8a6f-87222b4eb4ce"
+    },
+    {
+      "claim_id": "68c4dd2e-fa95-4590-be08-3215a2528c6d",
+      "result_id": "b3206a53-d019-47ef-99fe-0de95d17e8d1"
+    },
+    {
+      "claim_id": "23face31-17f0-428c-94f2-70387ad460dd",
+      "result_id": "b3206a53-d019-47ef-99fe-0de95d17e8d1"
+    },
+    {
+      "claim_id": "2418dc4f-e04e-45c6-935d-dd220fcc7f22",
+      "result_id": "b3206a53-d019-47ef-99fe-0de95d17e8d1"
+    },
+    {
+      "claim_id": "74fdc0c5-6a76-4f78-8ef9-fa70e5d25092",
+      "result_id": "b3206a53-d019-47ef-99fe-0de95d17e8d1"
+    },
+    {
+      "claim_id": "17eb1a62-708f-4323-961b-d3bee15a0b15",
+      "result_id": "b3206a53-d019-47ef-99fe-0de95d17e8d1"
+    },
+    {
+      "claim_id": "9c1008f6-b39b-4e14-8e7c-93ffbdd2d82e",
+      "result_id": "b3206a53-d019-47ef-99fe-0de95d17e8d1"
+    },
+    {
+      "claim_id": "fed6339d-a99d-4288-9f09-1e512d330aa3",
+      "result_id": "b3206a53-d019-47ef-99fe-0de95d17e8d1"
+    },
+    {
+      "claim_id": "93c732bd-2e9e-42e7-8f68-8f8a26053cde",
+      "result_id": "b3206a53-d019-47ef-99fe-0de95d17e8d1"
+    },
+    {
+      "claim_id": "28cdfa2e-eb60-41d4-8556-d254428de235",
+      "result_id": "b3206a53-d019-47ef-99fe-0de95d17e8d1"
+    },
+    {
+      "claim_id": "76a1fe9b-3fad-4e4c-b68b-85c00d3cc074",
+      "result_id": "ee7b6f18-e6f1-4c7d-bc3b-d9cdc66de372"
+    },
+    {
+      "claim_id": "8a2c9ace-db0a-43d1-b100-9492de313c5f",
+      "result_id": "ee7b6f18-e6f1-4c7d-bc3b-d9cdc66de372"
+    },
+    {
+      "claim_id": "7f20c64f-f35e-4559-8a3a-3fb16d551de6",
+      "result_id": "ee7b6f18-e6f1-4c7d-bc3b-d9cdc66de372"
+    },
+    {
+      "claim_id": "7325e92b-7be3-4e97-9998-e5dc908d9ed4",
+      "result_id": "ee7b6f18-e6f1-4c7d-bc3b-d9cdc66de372"
+    },
+    {
+      "claim_id": "3902ed75-e995-4e2f-9ed7-7b3d766802b8",
+      "result_id": "8e7b7d4e-f0c8-43d7-a508-4c104d86b464"
+    },
+    {
+      "claim_id": "acd96899-5b5f-44d4-a14f-b614565448c3",
+      "result_id": "8e7b7d4e-f0c8-43d7-a508-4c104d86b464"
+    },
+    {
+      "claim_id": "085f8297-d4b1-42ed-b297-b902243d3cfe",
+      "result_id": "8e7b7d4e-f0c8-43d7-a508-4c104d86b464"
+    },
+    {
+      "claim_id": "280edb5d-2896-4ac2-87e4-d637eb846f85",
+      "result_id": "8e7b7d4e-f0c8-43d7-a508-4c104d86b464"
+    },
+    {
+      "claim_id": "95a1f7b4-381b-4874-ad82-7e1c0f786087",
+      "result_id": "8e7b7d4e-f0c8-43d7-a508-4c104d86b464"
+    },
+    {
+      "claim_id": "365cad09-1146-46cc-8643-010a78db2c64",
+      "result_id": "bb548d63-cbeb-496e-ac74-f8e73f83c6bf"
+    },
+    {
+      "claim_id": "31081aae-fd0b-41b0-9889-98f75ca06495",
+      "result_id": "bb548d63-cbeb-496e-ac74-f8e73f83c6bf"
+    },
+    {
+      "claim_id": "b2ed2aa9-3d18-40a5-a451-b31f4a165629",
+      "result_id": "d88905b5-c382-4352-aa11-7dbbd1342e0a"
+    },
+    {
+      "claim_id": "5b57edfc-6ac2-412d-bdb3-20e35474088e",
+      "result_id": "d88905b5-c382-4352-aa11-7dbbd1342e0a"
+    },
+    {
+      "claim_id": "bc9e4b85-3033-4ded-a2ba-df411793df77",
+      "result_id": "d88905b5-c382-4352-aa11-7dbbd1342e0a"
+    },
+    {
+      "claim_id": "857590d3-11fd-42a4-a348-77c9849b9a18",
+      "result_id": "d88905b5-c382-4352-aa11-7dbbd1342e0a"
+    },
+    {
+      "claim_id": "007e8777-7bd8-4d62-808a-74807a78c7d1",
+      "result_id": "525f67dc-5ec3-4730-b959-ee32785569e0"
+    },
+    {
+      "claim_id": "b94ddc95-4af3-4b36-962c-4222fe6d2d1d",
+      "result_id": "525f67dc-5ec3-4730-b959-ee32785569e0"
+    },
+    {
+      "claim_id": "4df47cd3-e92f-4621-95d3-7c97faadf61c",
+      "result_id": "1a35f28e-e4c4-42af-855a-93ac2d6ed229"
+    },
+    {
+      "claim_id": "07b29b7b-3a6d-4d70-afa9-2e6813d6e9e4",
+      "result_id": "1a35f28e-e4c4-42af-855a-93ac2d6ed229"
+    },
+    {
+      "claim_id": "19a7556a-f723-4fe8-9ec1-149917fec95e",
+      "result_id": "1a35f28e-e4c4-42af-855a-93ac2d6ed229"
+    },
+    {
+      "claim_id": "5711f19f-b7ea-48fd-acd9-9f455d481b98",
+      "result_id": "1a35f28e-e4c4-42af-855a-93ac2d6ed229"
+    }
+  ],
+  "comparisons": []
+}

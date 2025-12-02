@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Ultra-rare PTV burden (MAF<0.0001) is negatively associated with lifespan and healthspan in two independent cohorts (UKB and UKBBN), accounting for approximately 1.3 and 0.4 years of variability respectively. The effect is consistent across cohorts despite methodological differences, with Cox regression coefficients of 0.046 and 0.014 per mutation for lifespan and healthspan in UKB. Sex-specific effects were observed, with associations for healthspan and mother's age at death driven primarily by women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37, C107-C109 provide consistent Cox regression coefficients across two independent cohorts with different characteristics (UKB and UKBBN), demonstrating reproducibility. The statistical significance is strong (p<0.001 for most associations), sample sizes are large (>40,000 in UKB, >1,000 in UKBBN), and appropriate covariates were included. The sex-stratified analysis (C40-C41, Table 3) is properly conducted and shows differential effects by sex, which is biologically plausible given known sex differences in longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C93"
+    ],
+    "result": "Among individuals with the same number of ultra-rare PTVs, those with shorter lifespans harbor more damaging variants affecting broadly expressed genes, genes with higher haploinsufficiency scores (GHIS), genes with stronger constraints against PTVs (lower oe scores), and variants more likely to cause loss-of-function. Both the number and quality of PTVs influence lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by systematic comparison of gene characteristics in individuals with identical PTV counts (5 PTVs, n=171) but different lifespans, shown in Figure 5. The analysis controls for PTV number, isolating the effect of variant quality. Multiple independent metrics (tissue expression breadth, GHIS, oe scores, LOF prediction) all show consistent directional effects with statistical significance (Figure 5a inset). This convergent evidence from multiple orthogonal measures strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C69",
+      "C70",
+      "C97"
+    ],
+    "result": "Somatic accumulation of PTVs accounts for only a small fraction of mortality and morbidity acceleration and is unlikely to be causal in aging. The estimated somatic PTV burden contribution (\u03b2\u00d7\u03bb\u00d7L\u00d7R \u2248 4.6\u00d710\u207b\u2076 per year) is negligible compared to the Gompertz mortality acceleration (\u0393 \u2248 0.09 per year).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C69-C70, C97 present a quantitative calculation comparing somatic mutation accumulation rates to observed mortality acceleration. The calculation uses established mutation rates (R\u224810\u207b\u2078 per bp per year from Milholland et al., 2017), genome size, and the empirically derived Cox coefficient. The ~20,000-fold difference between somatic contribution and Gompertz acceleration provides strong quantitative evidence. However, C98 appropriately notes this analysis doesn't account for clonal expansion or other higher-order effects, which is an important caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Ultra-rare PTVs affect 89% of sequenced genes in UKB, while 11% (1,496 genes) are completely free of such variants. These PTV-intolerant genes are more essential (higher indispensability scores), more broadly expressed, and strongly enriched for high pLI scores, suggesting their disruption may cause embryonic or childhood lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53, C86-C88 are supported by systematic analysis of variant distribution across genes with multiple lines of evidence. The enrichment of iPTV genes in high pLI scores (Figure 4\u2014figure supplement 1b) validates the UKB findings against the independent ExAC dataset. The higher tissue expression breadth (Figure 4a) and indispensability scores (Figure 4b) are statistically significant with appropriate tests (Wilcoxon rank-sum). The inference about embryonic/childhood lethality (C88) is reasonable given the gene characteristics and absence of PTVs, though it remains an inference rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C89",
+      "C90"
+    ],
+    "result": "Genes harboring frequent PTVs have tissue-specific expression and lower essentiality scores. Ultra-rare stop gains are more likely to trigger nonsense-mediated decay (NMD) than common variants. Ultra-rare PTVs are more damaging than common PTVs but not sufficiently damaging to cause early-life mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by data in Figure 4c showing NMD prediction differences across MAF bins, with appropriate statistical testing (Fisher's exact test). The comparison with ExAC data (Lek et al., 2016) provides external validation. Claims C89-C90 represent reasonable inferences from the data showing no association of common PTV burden with lifespan phenotypes (Figure 1) combined with the gene characteristic analyses. The evolutionary logic is sound: variants causing early mortality would be eliminated from the population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Among PTV subtypes, stop gains, splice donors, and frameshifts show significant associations with lifespan and healthspan, with only stop gains associated with mother's age at death. No PTV categories were associated with father's age at death. Synonymous variants (negative control) showed no associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by Cox proportional hazards analysis shown in Figure 3. The inclusion of synonymous variants as a negative control (C47) strengthens the interpretation that the observed effects are specific to protein-truncating variants rather than artifacts of sequencing or analysis. The differential associations across phenotypes (mother's vs father's age at death) are intriguing but appropriately reported as observed patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Gene burden analysis identified 110 genes prone to ultra-rare PTVs and 188 genes intolerant to such variants in UKB, with patterns consistent with gnomAD oe scores. However, no individual genes reached statistical significance (FDR<0.05) for association with lifespan or healthspan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 accurately report the results of Fisher's exact tests for gene-level associations. The lack of individual gene significance (C62) after multiple testing correction is appropriately reported and suggests the effect is distributed across many genes rather than driven by specific loci. The validation against gnomAD oe scores (C65-C66, Figure 4\u2014figure supplement 4) provides external consistency, strengthening confidence in the gene classification approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study analyzed two cohorts: UKB (40,368 individuals, 54% male, mean age 58.1 years for males and 57 years for females, 1,122 deaths during 11-year follow-up) and UKBBN (1,105 deceased individuals, 56% male, mean age 67.7 years for males and 71.2 years for females). The UKB exome sequencing cohort was enriched for imaging/enhanced measurements but not biased on health conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31, C104-C106 provide clear descriptions of cohort characteristics with specific numbers and demographics. The statement that the UKB exome cohort is not biased on health conditions (C106) is supported by citation to Hout et al., 2019. The cohort descriptions are internally consistent and provide sufficient detail for evaluating the study design. The differences between cohorts (age ranges, causes of death) are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The association between ultra-rare mutation burden and lifespan is consistent across UKB and UKBBN cohorts, suggesting generalizability to the UK population. However, UKB subjects are biased toward shorter lifespan (mean 57 years vs. 71 years UK life expectancy) due to limited follow-up, while UKBBN spans multiple generations (1891-1996) and may be enriched for disease-prone individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C119-C125 appropriately acknowledge important limitations and potential biases in both cohorts. The consistency of effects across cohorts with different biases (C74, C37) actually strengthens the main findings. The authors transparently discuss how UKB mortality reflects disease progression rather than true lifespan (C119-C121) and how UKBBN's multi-generational span could introduce confounding (C123-C124). These are thoughtful considerations of study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Men had significantly shorter healthspan than women (Cox beta=0.16, p=1.55E-18), and the genetic effects of ultra-rare PTVs on healthspan were primarily driven by women. This may reflect greater influence of lifestyle factors (smoking, drinking, BMI) in men. No associations were found for X-chromosome PTV burden, possibly due to low statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by statistical analysis (Table 3) and citations to prior work on sex differences in lifestyle factors. The hypothesis about lifestyle factors (C81) is reasonable speculation clearly presented as such. The X-chromosome analysis (C84-C85) appropriately acknowledges the power limitation due to low variant counts. The sex-specific effects are biologically plausible and add important nuance to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C71",
+      "C72",
+      "C99"
+    ],
+    "result": "The authors conclude that rare damaging mutations (both inherited and accumulated) contribute to aging, and that ultra-rare variants combined with common alleles better explain lifespan heritability than common variants alone. The genetic component of lifespan is shaped by both common variants (from previous GWAS) and ultra-rare PTVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C71-C72, C99 represent the main conclusions integrating the current findings with prior GWAS studies. The conclusion is supported by the demonstrated associations of ultra-rare PTVs with lifespan/healthspan (C2, C37) and the calculation showing somatic mutations are unlikely causal (C4, C69-C70). However, the claim that this 'better explains' heritability (C6, C99) is somewhat overstated\u2014the study shows ultra-rare variants contribute ~1.3 years of lifespan variability, but doesn't quantitatively demonstrate this resolves the missing heritability problem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C109"
+    ],
+    "result": "The effect size of ultra-rare PTVs on lifespan (approximately 0.5 years per mutation, or 3-5 years for the observed range of variation) is comparable to known longevity alleles such as APOE \u03b54 (1.24 years effect in women).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C109 provide appropriate context by comparing effect sizes to established longevity variants. The calculation converting Cox coefficients to years of life expectancy is clearly explained and uses the Gompertz mortality rate. The comparison to APOE \u03b54 (citing Joshi et al., 2016) is apt and helps readers understand the magnitude of the observed effects. This is a reasonable and well-supported contextualization of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C91",
+      "C92",
+      "C98",
+      "C100",
+      "C101"
+    ],
+    "result": "Several open questions remain: generalizability beyond UK/European populations, the relationship between PTV burden and longevity (vs. lifespan), the role of environmental factors in lifespan variability among individuals with similar PTV burden, and potential higher-order effects of somatic mutations through clonal expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C91-C92, C98, C100-C101 appropriately identify limitations and future directions. These are presented as speculation or open questions rather than definitive conclusions. The discussion of father's age at death (C78-C79) acknowledges an unexpected null result and proposes testable hypotheses. The mention of clonal expansion (C98) appropriately qualifies the somatic mutation analysis. These represent thoughtful consideration of what the study does and doesn't establish.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The introduction establishes prior knowledge: lifespan heritability is 23-33% from twin studies; GWAS identified APOE and other loci associated with longevity; common variants explain only a small fraction of lifespan variation; ultra-rare PTVs are enriched for damaging alleles and associated with complex diseases; and prior work suggested possible association with lifespan based on age at enrollment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C23 summarize established prior work with appropriate citations. These background claims are well-supported by the cited literature and provide necessary context for the current study. The progression from twin studies (C1) to GWAS limitations (C7-C10) to properties of rare variants (C11-C19) to prior disease associations (C20-C23) logically motivates the current investigation. The citations appear appropriate and the characterizations of prior work are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C110",
+      "C114",
+      "C115",
+      "C116",
+      "C118"
+    ],
+    "result": "The findings support the complexity of aging as a systemic process resulting from combined accumulation of deleterious changes. Mutations have the advantage of being quantifiable compared to other forms of age-related damage. The study utilized 8,959,608 variants from exome sequencing, identifying 152,790 PTVs in UKB and 11,393 in UKBBN. Disease incidence in UKB follows Gompertz law, with 28% of participants diagnosed with at least one chronic disease by first assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 represent appropriate interpretation of the findings in the context of aging theory, supported by citation to Gladyshev, 2016. Claims C110, C114-C115 provide demographic context supported by prior work (Sanders, 2017; Zenin et al., 2019). Claims C116, C118 describe the data analyzed. These are straightforward descriptive or contextual claims that are well-supported.",
+    "result_type": "MINOR"
+  }
+]

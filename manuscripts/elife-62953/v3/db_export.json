@@ -1,0 +1,1760 @@
+{
+  "submission": {
+    "id": "8302caa4-c828-418b-965a-2fe77c8e8c80",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:42:22.302521Z",
+    "updated_at": "2025-12-02T20:42:22.302521Z"
+  },
+  "content": [
+    {
+      "id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "submission_id": "8302caa4-c828-418b-965a-2fe77c8e8c80",
+      "content_type": "manuscript",
+      "content_text": "# Conditional protein tagging methods reveal highly specific subcellular distribution of ion channels in motion-sensing neurons\n\n## Authors\n\n- Sandra Fendl<sup>1</sup> ([ORCID: 0000-0001-6442-2542](https://orcid.org/0000-0001-6442-2542)) \u2020\n- Renee Marie Vieira<sup>1</sup> ([ORCID: 0000-0001-8520-7382](https://orcid.org/0000-0001-8520-7382))\n- Alexander Borst<sup>1</sup>\n\n### Affiliations\n\n1. Max Planck Institute of Neurobiology Martinsried Germany\n2. Graduate School of Systemic Neurosciences, LMU Munich Martinsried Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeurotransmitter receptors and ion channels shape the biophysical properties of neurons, from the sign of the response mediated by neurotransmitter receptors to the dynamics shaped by voltage-gated ion channels. Therefore, knowing the localizations and types of receptors and channels present in neurons is fundamental to our understanding of neural computation. Here, we developed two approaches to visualize the subcellular localization of specific proteins in Drosophila: The flippase-dependent expression of GFP-tagged receptor subunits in single neurons and \u2018FlpTag\u2019, a versatile new tool for the conditional labelling of endogenous proteins. Using these methods, we investigated the subcellular distribution of the receptors GluCl\u03b1, Rdl, and D\u03b17 and the ion channels para and Ih in motion-sensing T4/T5 neurons of the Drosophila visual system. We discovered a strictly segregated subcellular distribution of these proteins and a sequential spatial arrangement of glutamate, acetylcholine, and GABA receptors along the dendrite that matched the previously reported EM-reconstructed synapse distributions.\n\n## Introduction\n\nHow neural circuits implement certain computations in order to process sensory information is a central question in systems neuroscience. In the visual system of Drosophila, much progress has been made in this direction: numerous studies examined the response properties of different cell-types in the fly brain and electron microscopy studies revealed the neuronal wiring between them. However, one element crucial to our understanding is still missing; these are the neurotransmitter receptors used by cells at the postsynaptic site. This knowledge is essential since neurotransmitters and corresponding receptors define the sign and the time-course of a connection, that\u00a0is whether a synapse is inhibitory or excitatory and whether the signal transduction is fast or slow. The same neurotransmitter can act on different receptors with widely differing effects for the postsynaptic neuron. Glutamate for instance is mainly excitatory, however, in invertebrates it can also have inhibitory effects when it acts on a glutamate-gated chloride channel, known as GluCl\u03b1 (Cully et al., 1996; Liu and Wilson, 2013; Mauss et al., 2015). Recently, it has also been shown that acetylcholine, usually excitatory, might also be inhibitory in Drosophila, if it binds to the muscarinic mAChR-A receptor (Bielopolski et al., 2019). Hence, knowledge inferring the type of transmitter receptor at a synapse is essential for our understanding of the way neural circuits process information.\n\nMoreover, voltage-gated ion channels shape synaptic transmission and the integration of synaptic inputs by defining the membrane properties of every neural cell type. The voltage-gated calcium channel cacophony, for instance, mediates influx of calcium ions that drives synaptic vesicle fusion at presynaptic sites (Kawasaki et al., 2004; Fisher et al., 2017). Voltage-gated sodium channels like paralytic (para) are important for the cell\u2019s excitability and the generation of sodium-dependent action potentials. The voltage-gated channel Ih influences the integration and kinetics of excitatory postsynaptic potentials (Magee, 1999; Littleton and Ganetzky, 2000; George et al., 2009). However, only little is known about how these channels are distributed in neurons and how this shapes the neural response properties.\n\nOne of the most extensively studied neural circuits in Drosophila is the motion vision pathway in the optic lobe and the underlying computation for direction-selectivity. The optic lobe comprises four neuropils: lamina, medulla, lobula, and lobula plate (Figure 1A). As in the vertebrate retina, the fly optic lobe processes information in parallel ON and OFF pathways (Joesch et al., 2010; Borst and Helmstaedter, 2015). Along the visual processing chain, T4/T5 neurons are the first neurons that respond to visual motion in a direction selective way (Maisak et al., 2013; Behnia et al., 2014; Fisher et al., 2015a; Arenz et al., 2017; Strother et al., 2017). T4 dendrites reside in layer 10 of the medulla and compute the direction of moving bright edges (ON-pathway). T5 dendrites arborize in layer 1 of the lobula and compute the direction of moving dark edges (OFF-pathway) (Maisak et al., 2013). The four subtypes of T4/T5 neurons (a, b, c, d), project axon terminals to one of the four layers in the lobula plate, each responding only to movement in one of the four cardinal directions, their preferred direction (Maisak et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62953/elife-62953-fig1-v3.jpg)\n\n**Figure 1.:** (A) Horizontal view of optic lobe with retina, lamina, medulla, lobula, and lobula plate. T4 dendrites (darker gray) reside in layer 10 of the medulla, T5 dendrites (lighter gray) in layer 1 of the lobula. T4/T5 axon terminals of all subtypes (a, b, c, d) project to the lobula plate in four layers. (B) Close-up, horizontal view of EM-reconstructed single T4 neuron with dendrite, axon, axon terminal, soma fiber and soma (image extracted from Seven medulla column connectome dataset, https://emdata.janelia.org/#/repo/medulla7column, #3b548, Janelia Research Campus). (C) Scheme of individual T4 dendrite and distribution of input synapses (frontal view). The dendrite depicted here is oriented pointing to the right side against its preferred direction from right to left (indicated by arrow). Input on proximal base of T4 dendrite: GABAergic CT1, Mi4 and C3. In the central area: GABAergic TmY15 and cholinergic Mi1 and Tm3. On the distal tips T4 receive input from cholinergic T4 from the same subtype and glutamatergic Mi9. Yellow circle labels first branching point of the dendritic arbor. Reproduced from Figure 4, Shinomiya et al., 2019, eLife, published under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/). (D) Scheme of individual T5 dendrite and distribution of input synapses (frontal view). The dendrite depicted here is oriented pointing to the right side against its preferred direction from right to left (indicated by arrow). The T5 dendrite receives GABAergic input from CT1 on the proximal base and from TmY15 in the central area. Cholinergic synapses are formed with Tm1, Tm2, and Tm4 in the central area and with Tm9 and T5 from the same subtype on the distal dendritic tips. Yellow circle labels first branching point of the dendritic arbor. Reproduced from Figure 4, Shinomiya et al., 2019, eLife, published under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/).\n\nHow do T4/T5 neurons become direction-selective? Both T4 and T5 dendrites span around eight columns collecting signals from several presynaptic input neurons, each of which samples information from visual space in a retinotopic manner (Haag et al., 2016; Shinomiya et al., 2019). The functional response properties of the presynaptic partners of T4/T5 have been described in great detail (Behnia et al., 2014; Ammer et al., 2015; Fisher et al., 2015a; Fisher et al., 2015b; Serbe et al., 2016; Arenz et al., 2017; Strother et al., 2017; Strother et al., 2018; Drews et al., 2020) along with their neurotransmitter phenotypes (Takemura et al., 2017; Richter et al., 2018; Shinomiya et al., 2019; Davis et al., 2020). T4 dendrites receive glutamatergic, GABAergic and cholinergic input, whereas T5 dendrites receive GABAergic and cholinergic input only. These input synapses are arranged in a specific spatial order along T4/T5 dendrites (s. Figure 1C and D; for overview Takemura et al., 2017; Shinomiya et al., 2019).\n\nWhich receptors receive this repertoire of different neurotransmitters at the level of T4/T5 dendrites? Recently, several RNA-sequencing studies described the gene expression pattern of nearly all cell-types in the optic lobe of the fruit fly including T4/T5 neurons (Pankova and Borst, 2016; Konstantinides et al., 2018; Davis et al., 2020; H\u00f6rmann et al., 2020). T4/T5 neurons were found to express numerous receptor subunits of different transmitter classes and voltage-gated ion channels at various expression strengths. However, RNA-sequencing studies do not unambiguously answer the above question for two reasons: mRNA and protein levels are regulated in complex ways via post-transcriptional, translational, and protein degradation mechanisms making it difficult to assign protein levels to RNA levels (Vogel and Marcotte, 2012). Secondly, standard RNA-sequencing techniques cannot provide spatial information about receptor localizations, hence, they are not sufficient to conclude which transmitter receptors receive which input signal. Both shortcomings could in principle be overcome by antibody staining since immunohistochemical techniques detect neurotransmitter receptors at the protein level and preserve spatial information. However, high-quality antibodies are not available for every protein of interest and may have variable affinity due to epitope recognition (Fritschy, 2008). Furthermore, labeling ion channels via antibodies and ascribing expression of a given channel to a cell-type in dense neuronal tissue remains challenging. The disadvantages of the above techniques highlight the need for new strategies for labeling neurotransmitter receptors in cell\u00a0types of interest.\n\nIn this study, we employed existing and generated new genetic methods to label and visualize ion channels in Drosophila. For endogenous, cell-type-specific labeling of proteins, we developed a generalizable method called FlpTag which expresses a GFP-tag conditionally. Using these tools, we explored the subcellular distribution of the glutamate receptor subunit GluCl\u03b1, the acetylcholine receptor subunit D\u03b17, and the GABA receptor subunit Rdl in motion-sensing T4/T5 neurons. We found these receptor subunits to be differentially localized between dendrites and axon terminals. Along the dendrites of individual T4/T5 cells, the receptor subunits GluCl\u03b1, Rdl, and D\u03b17 reveal a distinct distribution profile that can be assigned to specific input neurons forming synapses in this area. Furthermore, we demonstrated the generalizability of the FlpTag approach by generating lines for the metabotropic GABA receptor subunit Gaba-b-r1 and the voltage-gated ion channels para and Ih. The strategies described here can be applied to other cells as well as other proteins to reveal the full inventory and spatial distribution of the various ion channels within individual neurons.\n\n## Results\n\n### Subcellular localization of the inhibitory glutamate receptor GluCl\u03b1 in T4/T5 neurons\n\nAs suggested by the connectome (Takemura et al., 2017; Shinomiya et al., 2019) and antibody staining against the vesicular glutamate transporter VGluT (Richter et al., 2018), T4 cells receive input on their dendrites from the glutamatergic medulla neuron Mi9. Since a multitude of glutamate receptors exist, both excitatory and inhibitory, we explored which glutamate receptor forms the synapse between the glutamatergic Mi9 input and T4 dendrites.\n\nAccording to a RNA-sequencing study, GluCl\u03b1 is the most highly expressed glutamate receptor in T4 neurons (Davis et al., 2020). To investigate the distribution of this glutamate receptor in T4 and T5 neurons, we developed a transgenic fly line that allowed us to express a GFP-tagged GluCl\u03b1 in a cell-type specific way. We created a UAS-GluCl\u03b1::GFP line bearing the cDNA of GluCl\u03b1 with a GFP-insertion (Supplementary file 1). This construct can be combined with any Gal4-line to study the receptor\u2019s expression and its subcellular localization. We combined the UAS-GluCl\u03b1::GFP line with a membrane-bound UAS-myr::tdTomato and expressed both constructs under the control of a T4/T5-specific Gal4-driver line. We found GluCl\u03b1 in T4 dendrites of the medulla, where it is distributed in discrete puncta (Figure 2A; horizontal section, first two panels). A top view of the medulla of these flies reveals that these puncta are arranged in circular clusters, each corresponding to one column (Figure 2A, right panel). Since Mi9 is the only glutamatergic presynaptic partner of T4 cells in the medulla (Takemura et al., 2017; Richter et al., 2018; Shinomiya et al., 2019), this columnar arrangement likely reflects the columnar array of Mi9 cell inputs. Conversely, T5 dendrites are completely devoid of GluCl\u03b1 signal (Figure 2A, first two panels). This result is in agreement with T5 dendrites not receiving glutamatergic input (Richter et al., 2018). In addition to the medulla layer 10, GFP signal of GluCl\u03b1::GFP is also visible in the axon terminals of T4/T5 in the lobula plate (Figure 2A, first two panels). However, both T4 and T5 cells send their axons into the lobula plate, therefore, this staining cannot be assigned to one of the cell types specifically. To differentiate between the two cell types, we used two different driver lines, one specific for either T4 or T5 cells. We confirmed the presence of GluCl\u03b1 in the dendritic layer of T4 cells (Figure 2B) and the lack thereof in the dendritic layer of T5 cells (Figure 2C). Interestingly, with these specific driver lines, both T4 and T5 neurons express the glutamate receptor in their axon terminals in the lobula plate (Figure 2B and Figure 2C). The presence of GluCl\u03b1 in the axon terminals of T5 neurons explains the high GluCl\u03b1-mRNA levels in T5 (Davis et al., 2020) even though T5 dendrites are missing a glutamatergic presynaptic partner (Takemura et al., 2017; Richter et al., 2018; Shinomiya et al., 2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62953/elife-62953-fig2-v3.jpg)\n\n**Figure 2.:** (A) Optic lobe with T4/T5 neurons labeled with myr::tdTomato and GluCl\u03b1::GFP. Left panel: horizontal view on the optic lobe overview (scale bar: 20 \u03bcm). Central panel: close-up of medulla layer M10, lobula layer Lo1 and lobula plate layers 1\u20134 (scale bar: 5 \u03bcm). Right panel: Frontal view on medulla layer M10 with T4 dendrites (scale bar: 20 \u03bcm); inset: close-up of columnar GluCl\u03b1::GFP structure in layer 10 of the medulla. (B) Close-up of T4 dendrites in layer 10 of the medulla and axon terminals in lobula plate labeled with myr::tdTomato and GluCl\u03b1::GFP (scale bar: 5 \u03bcm). (C) Close-up of T5 dendrites in layer 1 of the lobula and axon terminals in lobula plate labeled with myr::tdTomato and GluCl\u03b1::GFP (scale bar: 5 \u03bcm). (D) Individual T4 dendrites labeled with tdTomtato and GluCl\u03b1::GFP; subtypes a-d pointing in their natural orientation in visual space coordinates (A\u00a0=\u00a0anterior, p=posterior, D\u00a0=\u00a0dorsal, V\u00a0=\u00a0ventral). White arrows indicate preferred directions for every subtype and the dendrites\u2019 proximal (Prox.), central (Cent.) and distal (Dist.) areas are labeled (scale bar: 2 \u03bcm). Yellow circle labels first branching point of the dendrite. (E) Quantification of GluCl\u03b1 distribution over the whole dendritic length (normalized distance) averaged across several T4 dendrites from all subtypes (n\u00a0=\u00a08). All dendrites were aligned pointing to the right with the most proximal point at 0.0 and the most distal point at 1.0. (F) Quantification of GluCl\u03b1 puncta averaged across several T4 dendrites from all subtypes (mean\u00a0\u00b1\u00a0SD\u00a0=\u00a020.5, 4.98 [n\u00a0=\u00a08]) (same cells used in E) compared to number of glutamatergic input synapses from Mi9 (mean\u00a0\u00b1\u00a0SD\u00a0=\u00a023.0, 9.34 [n\u00a0=\u00a020]) (EM numbers: personal communication, K. Shinomiya, May 2020). n.s., not significant p>0.05 (p=0.37, t-test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62953/elife-62953-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Optic lobe with MiMIC GFSTF GluCl\u03b1 (A), pan-neuronal expression of UAS-GluCl\u03b1::GFP (B) and pan-neuronal expression of FlpTag GluCl\u03b1 (C) (scale bar: 20 \u03bcm). (D) Quantification of mean fluorescence intensity of GluCl\u03b1::GFP in manually drawn ROIs of the medulla for MiMIC GFSTF (n\u00a0=\u00a08), pan-neuronal UAS-GluCl\u03b1::GFP (n\u00a0=\u00a08), and pan-neuronal FlpTag GluCl\u03b1 (n\u00a0=\u00a08) (p=0.73, ANOVA). (E) Optic lobe with T1 labeled with UAS-myr::tdTomato and UAS-GluCl\u03b1::GFP.\n\nOne caveat associated with overexpression-lines is a potential mis-localization of proteins. To control for this effect, we used a pan-neuronal Gal4-line to express the UAS-GluCl\u03b1::GFP construct and compared this expression pattern to an existing MiMIC protein trap line with GFP insertion (MiMIC GFSTF) in the endogenous locus of GluCl\u03b1 (Mi02890) (Nagarkar-Jaiswal et al., 2015a). We observed broad expression of GluCl\u03b1 throughout all neuropils of the optic lobe in both genotypes (Figure 2\u2014figure supplement 1A and B). We quantified the mean fluorescence intensity of manually drawn ROIs around the medulla and found both values to be similar for the pan-neuronal UAS-GluCl\u03b1::GFP and the MiMIC line (Figure 2\u2014figure supplement 1D). Furthermore, we expressed the UAS-GluCl\u03b1::GFP line with a driver line for T1, a cell-type which lacks GluCl\u03b1 mRNA (Davis et al., 2020). Our UAS-line confirmed this result as we could not detect significant levels of GluCl\u03b1::GFP protein in T1 (Figure 2\u2014figure supplement 1E). Hence, overexpression of GFP-tagged GluCl\u03b1, introduced as a transgene, leads to a subcellular localization pattern that seems to be identical to the endogenous GluCl\u03b1 protein.\n\nGiven that Mi9 is the only glutamatergic input neuron to T4 dendrites and GluCl\u03b1 is the corresponding glutamate receptor, we hypothesized that GluCl\u03b1 should localize on the individual T4 dendrite exclusively where Mi9 makes glutamatergic synapses with the latter. Therefore, we wanted to visualize the distribution of GluCl\u03b1 at the single-cell level along individual T4 dendrites. The dendrites of each T4/T5 subtype are oriented pointing against their preferred direction (Takemura et al., 2017; Shinomiya et al., 2019). With respect to the point of axonal attachment to the dendrite, T4/T5 dendrites can be divided into a proximal, central and distal region (summarized in Figure 1B\u2013D). Electron microscopy studies have shown that Mi9 forms synaptic contacts with T4 on the distal tips of its dendrite (Figure 1C;\u00a0Takemura et al., 2017; Shinomiya et al., 2019). Since T4/T5 dendrites are strongly intermingled in their respective layers, it is not possible to resolve receptor localizations at the single-cell level by labeling the whole population. We used a flippase-based mosaic approach (Gordon and Scott, 2009) to sparsely label single T4/T5 neurons with tdTomato together with the UAS-GluCl\u03b1::GFP construct. By using a FRT-Gal80-FRT with an hs-FLP, both UAS-myr::tdTomato and UAS-GluCl\u03b1::GFP expression are dependent on the same stochastic FLP-event. A heat-shock-activated flippase removes the FRT-flanked Gal4-repressor Gal80, which disinhibits Gal4, promoting transcription of both UAS-reporters simultaneously resulting in expression of membrane-bound tdTomato and GFP-tagged GluCl\u03b1 in only a few cells of interest. In individual T4 dendrites, we observed that GluCl\u03b1 was predominantly localized to the distal tips, which holds true for all four T4 subtypes (Figure 2D). We quantified the intensity distribution of the GluCl\u03b1::GFP-signal over dendritic distance in individual T4 dendrites. To combine and average this distribution for all four subtypes, we rotated dendrites from each subtype such that the proximal side was on the left side of the image and the distal tips were pointing to the right. Averaged intensities across all subtypes confirmed our observations on individual cells, showing that GluCl\u03b1 is indeed localized toward the distal dendritic tips of T4 dendrites (Figure 2E). In addition, we quantified the numbers of GluCl\u03b1 puncta for all subtypes and compared them to the synapse numbers of glutamatergic Mi9 inputs onto T4 determined by the previous EM study (Shinomiya et al., 2019). The number of GluCl\u03b1-puncta per T4 cell dendrite (mean: 20.5 puncta) matches closely the number of glutamatergic input synapses made by Mi9 onto one T4 cell (mean: 23 synaptic contacts; personal communication, K. Shinomiya, May 2020) (Figure 2F). This suggests that every GluCl\u03b1-punctum resolved by confocal microscopy in individually labeled T4 dendrites represents one postsynaptic GluCl\u03b1 receptor cluster corresponding to one Mi9-T4 synapse.\n\nIn summary, GluCl\u03b1 localizes to the dendrites of T4 cells and to the axon terminals of both T4 and T5 cells. At the single-cell level, GluCl\u03b1 is distributed toward the distal tips of the dendrites in all T4 subtypes. Strikingly, the number of GluCl\u03b1 puncta closely matches the number of input synapses provided by Mi9, the only glutamatergic input neuron to T4 dendrites.\n\n### Rdl localizes to T4/T5 dendritic compartments receiving GABAergic input\n\nHaving identified glutamatergic synapses, we employed similar methods to visualize GABAergic synapses in T4/T5 neurons. T4 dendrites receive input from several GABAergic cell-types in the medulla: on the proximal base of the dendrite, these are the columnar cells Mi4, C3; the multicolumnar amacrine cell CT1 in the middle and distal part of the dendrite as well as TmY15 (Figure 1C). In contrast, T5 dendrites receive GABAergic input from only two cell-types: CT1 on the proximal base and TmY15 again throughout the central and distal area of the dendrite (Figure 1D). In total, T4 and T5 dendrites receive roughly the same number of GABAergic input synapses (Takemura et al., 2017; Shinomiya et al., 2019). Three ionotropic GABA receptor subunits are described in the Drosophila genome: Rdl, Lcch3, and Grd (Liu et al., 2007). We focused on the GABA receptor subunit Rdl, since RNA-sequencing studies had identified Rdl as the most highly expressed ionotropic GABA receptor subunit in T4 and T5 neurons (Pankova and Borst, 2016; Davis et al., 2020). Five Rdl subunits can form a homomeric chloride channel which leads to hyperpolarization upon GABA-binding, thus representing a receptor (Ffrench-Constant et al., 1993). Previous studies had created and used a UAS-Rdl::HA line to investigate the distribution of this GABA receptor subunit in Drosophila motoneurons and LPTCs (S\u00e1nchez-Soriano et al., 2005; Raghu et al., 2007; Kuehn and Duch, 2013). In our hands, the anti-HA staining of this line was too weak for conclusive results (data not shown), hence, we created a UAS-Rdl::GFP line, consisting of the coding sequence of Rdl and a GFP-tag (Supplementary file 2). Combining this line with a T4/T5 specific Gal4-line and a membrane-bound tdTomato revealed Rdl expression in both T4/T5 dendrites, but not in the axon terminals (Figure 3A). Taken together, both T4 and T5 neurons receive GABAergic inhibition via Rdl receptors on their dendrites.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62953/elife-62953-fig3-v3.jpg)\n\n**Figure 3.:** (A) Optic lobe with T4/T5 neurons labeled with myr::tdTomato and Rdl::GFP. Left panel: horizontal view on the optic lobe overview (scale bar: 20 \u03bcm). Right panel: close-up of medulla layer M10, lobula layer Lo1 and lobula plate layers 1\u20134 (scale bar: 5 \u03bcm). (B) Individual T4 dendrites labeled with tdTomtato and Rdl::GFP; subtypes a-d pointing in their natural orientation in visual space coordinates (A\u00a0=\u00a0anterior, p=posterior, D\u00a0=\u00a0dorsal, V\u00a0=\u00a0ventral). White arrows indicate preferred directions for every subtype and the dendrites\u2019 proximal (Prox.), central (Cent.) and distal (Dist.) areas are labeled (scale bar: 2 \u03bcm). Blue circle labels first branching point of the dendrite. (C) Individual T5 dendrites labeled with tdTomtato and Rdl::GFP; subtypes a-d pointing in their natural orientation in visual space coordinates (A\u00a0=\u00a0anterior, p=posterior, D\u00a0=\u00a0dorsal, V\u00a0=\u00a0ventral). White arrows indicate preferred directions for every subtype and the dendrites\u2019 proximal (Prox.), central (Cent.) and distal (Dist.) areas are labeled (scale bar: 2 \u03bcm). Blue circle labels first branching point of the dendrite. (D) Quantification of Rdl distribution over the whole dendritic length (normalized distance) averaged across several T4 (n\u00a0=\u00a018) and T5 dendrites (n\u00a0=\u00a010) from all subtypes. All dendrites were aligned pointing to the right with the most proximal point at 0.0 and the most distal point at 1.0. (E) Quantification of Rdl puncta averaged across several T4 (mean\u00a0\u00b1\u00a0SD\u00a0=\u00a040.4, 12.17 [n\u00a0=\u00a018]) and T5 dendrites (mean\u00a0\u00b1\u00a0SD\u00a0=\u00a042.2, 8.88 [n\u00a0=\u00a010]) (same cells used in D) from all subtypes compared to number of GABAergic input synapses from T4 (mean\u00a0\u00b1\u00a0SD\u00a0=\u00a040.5, 7.67 [n\u00a0=\u00a020]) and T5 (mean\u00a0\u00b1\u00a0SD\u00a0=\u00a037.0, 8.05 [n\u00a0=\u00a020]) (EM numbers: personal communication, K. Shinomiya, May 2020). n.s., not significant p>0.05 (p=0.99 and p=0.13 respectively, t-test).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62953/elife-62953-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Optic lobe with L1-splitGal4 combined with UAS-myr::tdTomato and UAS-Rdl::GFP. Overview in left panel, close-up of lamina and part of the medulla in the middle and right panel (scale bar: 20 \u03bcm in overview, 10 \u03bcm in close-up).\n\nIn a control experiment, we tested for potential overexpression artifacts of the UAS-Rdl::GFP line. According to RNA-sequencing, Rdl is not expressed in the lamina monopolar neuron L1 (Davis et al., 2020). When we overexpressed UAS-Rdl::GFP by means of a L1-Gal4 driver line, Rdl signal is not detectable in L1 dendrites (Figure 3\u2014figure supplement 1). The Rdl::GFP protein was only visible in the cell bodies, presumably due to impaired protein translocation. This suggests that overexpressed Rdl only localizes to endogenous GABA synapses that are composed of the Rdl subunit. Hence, this line can be used to study the subcellular localization of Rdl in any given cell of interest.\n\nNext, we looked at the distribution of the GABA receptor Rdl on individual T4 and T5 dendrites. Using the sparse labeling technique described above, we examined the Rdl::GFP distribution in individual T4/T5 dendrites. We found Rdl on the proximal base and in the central area of both T4 and T5 dendrites across all four subtypes (Figure 3B and Figure 3C). On the proximal base most of the Rdl-signal was arranged in strong discrete clusters, whereas sparse puncta localized to the central area and toward the distal tips. The strong Rdl-signal on the proximal base of the dendrite likely corresponds to the high number of GABAergic inputs provided by the following inputs: CT1, Mi4 and C3 for T4 (32.2 synapses) and CT1 for T5 (30.3 synapses) (personal communication, K. Shinomiya, May 2020). The sparsely distributed Rdl-puncta in the center and tips likely correspond to TmY15 inputs for both T4 and T5 dendrites. This distribution is recapitulated in the intensity quantification across all T4/T5 subtypes, with high Rdl intensity on the proximal side and lower signal in the central and distal area (Figure 3D). We quantified the numbers of Rdl receptor clusters in T4 and T5 dendrites and compared them to the sum of all GABAergic input synapses (Mi4, C3, CT1, TmY15 for T4 and CT1, TmY15 for T5) to T4/T5 mapped by EM studies. We found similar numbers of roughly 40 receptor clusters for both T4 and T5 which match the sum of all GABAergic input synapses to T4 (mean: 40.45) and T5 (mean: 37) (Figure 3E) (EM numbers: personal communication, K. Shinomiya, May 2020). Taken together, Rdl receptor subunits localize to the proximal base, and to a lesser extent, in the central area of the dendritic arbor of T4 and T5 neurons, reflecting their GABAergic inputs revealed by EM (Shinomiya et al., 2019).\n\n### D\u03b17 localizes to T4/T5 dendritic compartments receiving cholinergic input\n\nAccording to connectome data, T4 dendrites receive most of their input synapses from cholinergic Mi1 and Tm3 cells at the center of their dendrite (Takemura et al., 2017; Shinomiya et al., 2019). Furthermore, T4 neurons of the same subtype form synapses with each other at the distal tips of their dendrites (Figure 1C). As T4 neurons are cholinergic (Mauss et al., 2014; Davis et al., 2020), these T4-T4 synapses are thought to be cholinergic as well. With the exception of GABAergic CT1, T5 dendrites receive cholinergic input from Tm1, Tm2, and Tm4 in the central area of the dendrite. Tm9 and T5 provide cholinergic input mainly towards the distal tips of the dendrite (Figure 1D;\u00a0Takemura et al., 2017; Shinomiya et al., 2019). T5 dendrites receive almost twice as many cholinergic inputs as T4; 160 and 87 synapses, respectively (Shinomiya et al., 2019). We used an existing GFP-tagged UAS-D\u03b17::GFP line to explore the subcellular distribution of these cholinergic synapses (Raghu et al., 2009). D\u03b17 is one of 10 different nicotinic ACh receptor subunits (D\u03b11-D\u03b17 and D\u00df1-D\u00df3) found in the Drosophila genome. All these subunits can form heteromeric receptors consisting of two or three subunits. In addition, D\u03b15, D\u03b16, and D\u03b17 can also form homomeric ACh receptors (Lansdell and Millar, 2004; Lansdell et al., 2012). According to RNA-sequencing data, both T4 and T5 neurons express almost every ACh receptor subunit, except for D\u03b16 and D\u00df3 (Davis et al., 2020). Expression of UAS-D\u03b17::GFP with a T4/T5-Gal4 line, revealed the distribution of D\u03b17 to both T4 and T5 dendrites while their axon terminals remained devoid (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62953/elife-62953-fig4-v3.jpg)\n\n**Figure 4.:** (A) Optic lobe with T4/T5 neurons labeled with myr::tdTomato and D\u03b17::GFP. Left panel: horizontal view on the optic lobe overview (scale bar: 20 \u03bcm). Right panel: close-up of medulla layer M10, lobula layer Lo1 and lobula plate layers 1\u20134 (scale bar: 5 \u03bcm). (B) Individual T4 dendrites labeled with tdTomtato and D\u03b17::GFP; subtypes a and d pointing in their natural orientation in visual space coordinates (A\u00a0=\u00a0anterior, p=posterior, D\u00a0=\u00a0dorsal, V\u00a0=\u00a0ventral). White arrows indicate preferred directions for every subtype and the dendrites\u2019 proximal (Prox.), central (Cent.) and distal (Dist.) areas are labeled (scale bar: 2 \u03bcm). Yellow circle labels first branching point of the dendrite. (C) Individual T5 dendrites labeled with tdTomtato and D\u03b17::GFP; subtypes a and d pointing in their natural orientation in visual space coordinates (A\u00a0=\u00a0anterior, p=posterior, D\u00a0=\u00a0dorsal, V\u00a0=\u00a0ventral). White arrows indicate preferred directions for every subtype and the dendrites\u2019 proximal (Prox.), central (Cent.) and distal (Dist.) areas are labeled (scale bar: 2 \u03bcm). Yellow circle labels first branching point of the dendrite. (D) Quantification of D\u03b17 distribution over the whole dendritic length (normalized distance) averaged across several T4 (n\u00a0=\u00a06) and T5 dendrites (n\u00a0=\u00a05) from all subtypes. All dendrites were aligned pointing to the right with the most proximal point at 0.0 and the most distal point at 1.0. (E) Quantification of D\u03b17 puncta averaged across several T4 (mean\u00a0\u00b1\u00a0SD\u00a0=\u00a092.67, 18.67 [n\u00a0=\u00a06]) and T5 dendrites (mean\u00a0\u00b1\u00a0SD\u00a0=\u00a0110.6, 21.53 [n\u00a0=\u00a05]) (same cells like in D) from all subtypes compared to number of cholinergic input synapses for T4 (mean\u00a0\u00b1\u00a0SD\u00a0=\u00a086.45, 14.37 [n\u00a0=\u00a020]) and T5 (mean\u00a0\u00b1\u00a0SD\u00a0=\u00a0160.50, 26.93 [n\u00a0=\u00a020]) (EM numbers: personal communication, K. Shinomiya, May 2020). n.s., not significant, p>0.05; ***p<0.001 (p=0.46 and p=2.1e-4 respectively, t-test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62953/elife-62953-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Optic lobe with pan-neuronal UAS-myr::tdTomato and UAS-D\u03b17::GFP expression. Overview in left panel, close-up of M10 of the medulla and Lo1 of the lobula in right panel (scale bar: 20 \u03bcm in overview, 10 \u03bcm in close-up). (B) Optic lobe with UAS-myr::tdTomato labeled T4/T5 and antibody staining against D\u03b17. Overview in left panel, close-up of M10 of the medulla and Lo1 of the lobula in the right panel (scale bar: 20 \u03bcm in overview, 10 \u03bcm in close-up). (C) Optic lobe with D\u03b17-Trojan-Gal4 (TG4) driven UAS-myr::tdTomato and UAS-D\u03b17::GFP expression. Overview in left panel, close-up of M10 of the medulla and Lo1 of the lobula in the right panel (scale bar: 20 \u03bcm in overview, 10 \u03bcm in close-up). (D) Optic lobe with Mi1-Gal4 combined with UAS-myr::tdTomato and UAS-D\u03b17::GFP. Overview in left panel, close-up of M10 of the medulla and Lo1 of the lobula in right panel (scale bar: 20 \u03bcm in overview, 10 \u03bcm in close-up). In the right panel, D\u03b17::GFP signal in layer M1 and M5 of the medulla is marked with arrows.\n\nAs previously conducted, we tested for potential overexpression artifacts of the UAS-D\u03b17::GFP line. We expressed D\u03b17::GFP in all neurons and compared the expression pattern to two controls: first, an antibody staining against D\u03b17, and second, a MiMIC Trojan-Gal4 (TG4) line for D\u03b17 combined with UAS-D\u03b17::GFP (Figure 4\u2014figure supplement 1A\u2013C;\u00a0Fayyazuddin et al., 2006; Diao et al., 2015; Lee et al., 2018). The Trojan-Gal4 (TG4) line has a Gal4 insertion in the D\u03b17 gene, which drives expression of Gal4 only under endogenous transcriptional control of D\u03b17. Combining this line with the reporter lines UAS-myr::tdTomato and UAS-D\u03b17::GFP should label all D\u03b17-expressing cells with tdTomato, and only within those cells, the D\u03b17 receptor subunits with GFP. In the pan-neuronal overexpression of UAS-D\u03b17::GFP, the ACh receptor subunit is broadly expressed throughout all neuropils with specific strong D\u03b17 signal in medulla layer 10 where T4 dendrites reside and lobula layer 1 where T5 dendrites reside (Figure 4\u2014figure supplement 1A). However, in both the antibody- and the TG4-experiment, there is only weak D\u03b17 signal in M10 and Lo1 detectable (Figure 4\u2014figure supplement 1B and C). Thus, under UAS-driven overexpression, the levels of D\u03b17 are increased compared to endogenous D\u03b17 levels in M10 and Lo1.\n\nTo assess whether the subcellular distribution of D\u03b17 is qualitatively altered by overexpression, we characterized the distribution of D\u03b17 in a cell type that does not express this receptor subunit endogenously. Transcriptomic data revealed that D\u03b17 is not expressed in Mi1 (Davis et al., 2020). However, Mi1 receives cholinergic input from L3 and L5 and expresses several different ACh receptor subunits (Takemura et al., 2017; Shinomiya et al., 2019; Davis et al., 2020). We tested the UAS-D\u03b17::GFP line in Mi1 to explore the qualitative overexpression-effects of this line. When UAS-D\u03b17::GFP was overexpressed in Mi1, D\u03b17 localized to layers 1 and 5 of the medulla, where the dendrites of Mi1 neurons arborize and receive cholinergic input from L3 and L5 (Takemura et al., 2017;\u00a0Figure 4\u2014figure supplement 1D). This suggests that overexpressed D\u03b17::GFP localizes to cholinergic synapses and becomes part of an ACh-receptor, even if this subtype is not endogenously expressed in this neuron. If this scenario is true, the UAS-D\u03b17::GFP line does not report real endogenous subunit compositions with D\u03b17, but in general it can still be used as a marker for postsynaptic cholinergic sites.\n\nTo test this hypothesis, we performed sparse labeling of individual T4/T5 dendrites with the earlier described Gal80-hs-flippase method to explore the subcellular distribution of D\u03b17 along T4/T5 dendrites. D\u03b17 was distributed along the central area and distal tips of both T4 and T5 dendrites whereas the proximal base of the dendrite was completely devoid of D\u03b17 signal (Figure 4B and C). In the quantification, it becomes clear that for all subtypes the D\u03b17-intensity is strongest in the central area and slightly reduced toward the distal tips (Figure 4D). Taken together, these results demonstrate that with the UAS-D\u03b17::GFP line, D\u03b17 localizes to the areas where T4/T5 dendrites receive cholinergic input and not to the proximal base which receives only GABAergic synapses. We quantified the number of D\u03b17-puncta and compared it to the number of cholinergic synaptic contacts from T4/T5 inputs. For T4 dendrites the numbers of D\u03b17 puncta quantified (mean: 88.4) matched the numbers of cholinergic input synapses mapped by EM reconstruction (mean: 86.9; personal communication, K. Shinomiya, May 2020) (Figure 4E). This strongly suggests that D\u03b17 localizes only to cholinergic synapses. However, for T5 dendrites the D\u03b17 puncta exhibited 60 synapses less on average when compared to the mean of the summed cholinergic EM input synapse (Figure 4E). The levels of D\u03b17 along the dendrite are similar for T4 and T5 (Figure 4D), even though T5 receive more cholinergic inputs on their distal tips than T4 (Shinomiya et al., 2019). The main cholinergic input to T5 in the distal area is Tm9, which makes approximately 60 synapses with T5 dendrites. These 60 synapses could potentially be formed via different cholinergic receptors other than D\u03b17, for instance muscarinic ACh receptors (Davis et al., 2020).\n\nIn summary, the UAS-D\u03b17::GFP line cannot be used to define the exact composition of ACh receptor subunits of cholinergic synapses, but labels (nicotinic) ACh receptors in general. It, nevertheless, can be used as a marker for postsynaptic ACh receptors. Using this approach, we found that the central and distal areas of both T4 and T5 dendrites possess cholinergic receptors. The proximal base of the dendrites, as well as axon terminals are devoid of cholinergic input.\n\n### FlpTag - a new tool for cell-type-specific, endogenous protein labeling\n\nAdditionally, we sought to observe the spatial distribution of endogenous receptors using a cell-type specific approach. We designed FlpTag, a new conditional, endogenous protein labeling strategy inspired by recently published flippase-dependent methods (Fisher et al., 2017; Nagarkar-Jaiswal et al., 2017; Williams et al., 2019).\n\nThe FlpTag cassette is a protein trap cassette consisting of a central GFP tag placed between a splice acceptor (SA) and splice donor (SD), flanked by specific Frt sites forming a FLEX-switch for stable inversion (Figure 5A, upper panel) (Schn\u00fctgen et al., 2003; Xue et al., 2014). The FlpTag cassette is integrated into an intronic coding region of interest by recombinase mediate cassette exchange (RMCE) in vivo. We used the existing intronic MiMIC gene trap with attP landing sites to facilitate \u03a6C31-dependent exchange of the MiMIC insertion with our FlpTag cassette, consisting of \u03a6C31 integrase attB sites on either end (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015b). After \u03a6C31-dependent knock-in, two independent lines can be isolated. One in which the GFP is in the 5\u2019 to 3\u2019 direction; the same orientation as the gene. In this configuration FlpTag acts as a protein trap, revealing the protein\u2019s expression pattern. In the alternate orientation the FlpTag cassette is in the 3\u2019 to 5\u2019 direction; oppositely oriented to the gene. For the FlpTag approach, we used the oppositely oriented line in which the coding intron with the FlpTag cassette is naturally cut out during mRNA splicing and no labeling takes place. Only upon UAS-Gal4 driven, cell-type-specific expression of the Flp recombinase, the cassette is flipped in the same orientation as the gene. Due to the presence of flanking SA and SD, the GFP cassette is then spliced into the mature mRNA which is translated, labeling the protein with GFP (Figure 5A, lower panel).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/62953/elife-62953-fig5-v3.jpg)\n\n**Figure 5.:** (A) Scheme of FlpTag cassette (first panel) and integration of FlpTag cassette into target gene (second panel). The FlpTag cassette consists of attB-sites, specific FRT sites which form a FLEx-switch, a splice acceptor, GFP and a splice donor. After \u03a6C31-dependent integration of the FlpTag cassette into a coding intron of the GluCl\u03b1 target gene, two lines with opposite orientations of the cassette can be obtained. In the initial line with the cassette and GFP in opposite orientation with respect to the gene (shown here), the cassette is spliced out together with the intron and no GFP-labeling occurs. After cell-type-specific Flp expression, the FlpTag cassette is flipped, stably integrated as an artificial exon and GluCl\u03b1 is labeled with GFP. (B) Optic lobe with T4/T5 neurons labeled with myr::tdTomato and FlpTag-GluCl\u03b1::GFP. Left panel: horizontal view on the optic lobe overview (scale bar: 20 \u03bcm). Central panel: close-up of medulla layer M10, lobula layer Lo1 and Lobula plate layers 1\u20134 (scale bar: 5 \u03bcm). Right panel: Frontal view on medulla layer M10 with T4 dendrites (scale bar: 20 \u03bcm); inset: close-up of columnar GluCl\u03b1::GFP structure in layer 10 of the medulla. (C) Close-up of FlpTag-GluCl\u03b1::GFP driven with a T4-Gal4-line; shown are layer 10 of the medulla where T4 dendrites reside and lobula plate layers 1\u20134 where T4 project their axon terminals to (scale bar: 5 \u03bcm). (D) Close-up of FlpTag-GluCl\u03b1::GFP driven with a T5-Gal4-line; shown are layer 10 of the medulla where T4 dendrites reside and lobula plate layers 1\u20134 where T4 project their axon terminals to (scale bar: 5 \u03bcm).\n\n### FlpTag line for GluCl\u03b1\n\nIn a first proof-of-principle experiment, we generated a FlpTag line for the glutamate receptor subunit GluCl\u03b1. The FlpTag cassette was inserted in the MiMIC insertion site MI02890, in the coding intron between the last two exons of the GluCl\u03b1 gene. For comparison of the various GluCl\u03b1-tagged lines, we examined the expression patterns generated by pan-neuronal FlpTag-GluCl\u03b1::GFP, MiMIC GFSTS GluCl\u03b1, and pan-neuronal UAS-GluCl\u03b1::GFP. The expression patterns were similar for all three lines (Figure 2\u2014figure supplement 1). We combined the GluCl\u03b1-FlpTag line with UAS-FLPD.1 and a T4/T5-specific driver-line. The distribution pattern of GluCl\u03b1 seen here is virtually identical to the UAS-GluCl\u03b1::GFP genotype: GluCl\u03b1 is localized to T4 dendrites, the T5 dendrite area is devoid of GluCl\u03b1 signal, and T4/T5 axon terminals in the lobula plate co-localize with GluCl\u03b1 (Figure 5B, compare with Figure 2A). Expression of flippase and FlpTag-GluCl\u03b1 in T4 neurons only further demonstrates the localization of the glutamate receptor to T4 dendrites and axon terminals, as seen before with the UAS-GluCl\u03b1::GFP line (Figure 5C, compare with Figure 2B). Specific expression of flippase and FlpTag-GluCl\u03b1 in T5 neurons revealed that the receptor localizes specifically to the axon terminals in all T5 subtypes, as visualized by the presence of GluCl\u03b1 puncta in all layers of the lobula plate (Figure 5D, compare with Figure 2C).\n\nTaken together, we generated a new UAS-line and developed a new tool for studying the localization of GluCl\u03b1 in a cell-type-specific manner. Both the UAS-GluCl\u03b1::GFP line and the FlpTag-line led to similar results when compared to the pan-neuronal and T4/T5-specific experiments. These tools can be used interchangeably to study the subcellular localization of GluCl\u03b1 in any given cell of interest.\n\n### FlpTag lines for Gaba-b-r1, para and Ih\n\nThe FlpTag approach is generalizable and can be applied to any of the\u00a0>2800 fly lines available with MiMIC attP insertions in coding introns (Nagarkar-Jaiswal et al., 2015b). To demonstrate the universal applicability of our FlpTag strategy, we set out to generate more FlpTag lines with the aforementioned approach of integrating the FlpTag cassette into existing MiMIC landing sites in coding introns. In keeping with our interest in neurotransmitter receptors we explored another GABA receptor subunit, the metabotropic channel Gaba-b-r1. Additionally, we examined other proteins that shape the biophysical response properties of neurons, such as the voltage-gated ion channels para and Ih.\n\nThe metabotropic GABA receptor subunit Gaba-b-r1 is the most highly expressed GABA receptor subunit in T4/T5 neurons after Rdl (Pankova and Borst, 2016; Davis et al., 2020). Gaba-b-r1 is one out of three G-protein-coupled GABA receptor subunits described in Drosophila and has been shown to be involved in sleep and appetitive long-term memory (Mezler et al., 2001; Kim et al., 2017; Pavlowsky et al., 2018). We inserted the FlpTag cassette in the MiMIC site between the first and second exon (MI01930) of the Gaba-b-r1 locus via RMCE. Again, two lines with two different orientations of the FlpTag cassette were obtained. The line with the cassette in the same orientation as the gene was used to observe the pan-neuronal distribution of the endogenous GABA receptor subunit. Gaba-b-r1 is expressed throughout all neuropils with strongest signal in the outer distal layers of the medulla and the medial part of the lobula (Figure 6A). Upon cell-type specific, FLP-dependent inversion of the FlpTag cassette in T4/T5 neurons, we could not observe any Gaba-b-r1::GFP signal in T4/T5 dendrites or axons (Figure 6B). Although RNAseq studies detected Gaba-b-r1 mRNA in T4/T5 neurons (Pankova and Borst, 2016; Davis et al., 2020), we could not confirm this result at the protein level.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/62953/elife-62953-fig6-v3.jpg)\n\n**Figure 6.:** Optic lobes with pan-neuronal expression of FlpTag Gaba-b-r1 (A), FlpTag para (C), and FlpTag Ih (E). (B) Expression of FlpTag Gaba-b-r1 in T4/T5 neurons labeled with myr::tdTomato. Left panel: horizontal view on the optic lobe overview (scale bar: 20 \u03bcm). Right panel: close-up of medulla layer M10, lobula layer Lo1 and Lobula plate layers 1\u20134 (scale bar: 10 \u03bcm). (D) Expression of FlpTag para in T4/T5 neurons labeled with myr::tdTomato. Left panel: horizontal view on the optic lobe overview (scale bar: 20 \u03bcm). Right panel: close-up of medulla layer M10, lobula layer Lo1 and Lobula plate layers 1\u20134 (scale bar: 10 \u03bcm). (F) Expression of FlpTag Ih in T4/T5 neurons. Horizontal view on the optic lobe with medulla layer M10, lobula layer Lo1 and Lobula plate layers 1\u20134 (scale bar: 12 \u03bcm). Left panel: Background staining anti-brp in blue and. Right panel: Ih::GFP signal only.\n\nParalytic (para) is the only voltage-gated sodium channel described in Drosophila and highly expressed in T4/T5 neurons (Pankova and Borst, 2016). It is required for the generation of sodium-dependent action potentials. We created the FlpTag para line by inserting the FlpTag cassette into the MiMIC landing site between the first and second exon (MI08578), thereby covering all of its 60 isoforms. Surprisingly, the pan-neuronal expression pattern is rather sparse with some bundles labeled in the medulla across the serpentine layer and axonal fibers in the chiasm between medulla, lobula and lobula plate (Figure 6C). In the T4/T5 specific FlpTag genotype, para is strongly expressed in the axonal fibers connecting dendrites and axon terminals in T4/T5 neurons (Figure 6D).\n\nIh is a voltage-gated, hyperpolarization-activated ion channel which is highly expressed in T4/T5 neurons (Chen and Wang, 2012; Hu et al., 2015; Pankova and Borst, 2016). To generate the corresponding FlpTag line, the FlpTag cassette was inserted in the MiMIC site MI12136 housed by the coding intron between the first and second exons of the Ih gene locus. In the pan-neuronal FlpTag line, Ih is expressed most strongly in two layers of the distal medulla (M1 and M5), as well as in the lobula plate and in Lo1 of the lobula (Figure 6E). In the T4/T5-specific FlpTag genotype, Ih is localized to the T4 and T5 dendrite area in medulla layer 10 and lobula plate layer 1 (Figure 6F).\n\nTaken together, we generated four working FlpTag lines which uncovered the differential subcellular distribution of the neurotransmitter receptor subunits GluCl\u03b1 and Gaba-b-r1 and the voltage-gated ion channels para and Ih. We demonstrated that the FlpTag approach is generalizable and can be expanded to many genes with MiMIC insertion sites.\n\n## Discussion\n\nNeurotransmitter receptors are essential neuronal elements that define the sign and temporal dynamics of synaptic connections. For our understanding of complex neural circuits, it is indispensable to examine which transmitter receptor types are used by the participating neurons and to which compartment they localize. Here, we developed FlpTag, a generalizable method for endogenous, cell-type-specific labeling of proteins. Alongside several GFP-tagged UAS-lines, we used our newly developed FlpTag lines to explore the distribution of receptor subunits GluCl\u03b1, Rdl, D\u03b17, Gaba-b-r1 and voltage-gated ion channels para and Ih in motion-sensing T4/T5 neurons of the visual system of Drosophila. We found that these ion channels are localized to either the dendrite, the axonal fiber or the axon terminal (summarized in Figure 7A and C). Even at the level of individual dendrites, GluCl\u03b1, Rdl and D\u03b17 were differentially distributed precisely matching the locations where T4 and T5 neurons sample signals from their glutamatergic, cholinergic, or GABAergic input neurons, respectively (summarized in Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/62953/elife-62953-fig7-v3.jpg)\n\n**Figure 7.:** (A) Scheme of EM-reconstructed T4 neuron with distribution of receptors on dendrite and axon terminal (image extracted from Seven medulla column connectome dataset, https://emdata.janelia.org/#/repo/medulla7column, #3b548, Janelia Research Campus). (B) Quantification of GluCl\u03b1 (green), Rdl (orange) and D\u03b17 (blue) distribution over the whole dendritic length (distance) averaged across several T4 from all subtypes (combined data\u00a0from Figures 4D\u00a0and\u00a05D). All dendrites were aligned pointing to the right with the most proximal point at 0.0 and the most distal point at 1.0. (C) Scheme of EM-reconstructed T5 neuron with distribution of receptors on dendrite and axon terminal (image extracted from Seven medulla column connectome dataset, https://emdata.janelia.org/#/repo/medulla7column, #3b548, Janelia Research Campus). (D) Rdl (orange) and D\u03b17 (blue) distribution over the whole dendritic length (normalized distance) averaged across several T5 from all subtypes (combined data from Figures 3D and 4D). All dendrites were aligned pointing to the right with the most proximal point at 0.0 and the most distal point at 1.0.\n\n### Protein tagging methods: endogenous tags and UAS-lines\n\nWorking with Drosophila as model organism bears some unrivaled advantages when it comes to genetic tools. The MiMIC and FlyFos libraries, for instance, are large-scale approaches of enormous value for the fly community as they provide GFP-tagged protein lines for thousands of Drosophila genes including several neurotransmitter receptors and voltage-gated ion channels (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015a; Sarov et al., 2016). Recently, Kondo et al. expanded these existing libraries with T2A-Gal4 insertions in 75 neurotransmitter receptor genes that can also be exchanged by the fluorescent protein tag Venus (Kondo et al., 2020). While all these approaches tag genes at their endogenous locus, none of them are conditional, for\u00a0example they cannot be applied in a cell-type-specific manner. Hence, ascribing the expression of the pan-neuronally tagged proteins to cell-types of interest are challenging in dense neuronal tissue.\n\nTo overcome these difficulties, we used two conditional strategies for the investigation of membrane protein localizations in our cell types of interest, T4 and T5 neurons. First, we developed GFP-tagged UAS-lines for GluCl\u03b1 and Rdl and tested an existing UAS-D\u03b17::GFP line. As stated above, aberrant localization of overexpressed proteins can occur, however, this is not always the case. Overexpression of UAS-GluCl\u03b1::GFP shows a similar receptor localization pattern as both MiMIC and FlpTag endogenous lines (Figure 2\u2014figure supplement 1), thus, validating the use of UAS-GluCl\u03b1::GFP for studying receptor distribution. Additionally, previous studies reported that the UAS-D\u03b17::GFP line showed proper localization of the acetylcholine receptor to endogenous synapses when compared to antibody stainings or endogenous bruchpilot (Brp) puncta (Kuehn and Duch, 2013; Mosca and Luo, 2014). Here, we confirmed this finding and further showed that D\u03b17::GFP presumably localizes only to cholinergic synapses. Overexpressing D\u03b17::GFP in a medulla neuron that is devoid of endogenous D\u03b17 demonstrated that D\u03b17::GFP localized to apparent cholinergic synapses. Hence, the UAS-D\u03b17::GFP line can be used to study the distribution of cholinergic synapses, but not the exact composition of cholinergic receptor subunits. A recent study showed that quantitatively the levels of the postsynaptic density protein PSD95 change when overexpressed, but qualitatively the localization is not altered (Willems et al., 2020). Altogether, this suggests that tagged overexpression lines can be used for studying protein localizations, but they have to be controlled carefully and drawn conclusions might be different for every line.\n\n### The FlpTag method is generalizable and can be expanded to many genes\n\nIdeally, a tool for protein tagging should be both endogenous and conditional. This can be achieved by introducing an FRT-flanked STOP cassette upstream of the gene of interest which was engineered with an epitope tag or fluorescent protein. Only upon cell-type specific expression of Flp, the tagged protein will be expressed in a cell-type specific manner. This genetic strategy was utilized by two independent studies to label the presynaptic protein Brp, the histamine channel ort and the vesicular acetylcholine transporter VAChT (Chen et al., 2014; Pankova and Borst, 2017). Recently, a new approach based on the split-GFP system was utilized for endogenous, conditional labeling of proteins in two independent studies (Kondo et al., 2020; Luo et al., 2020). However, all these aforementioned approaches are not readily generalizable and easily applicable to any gene of interest.\n\nThe FlpTag strategy presented here overcomes these caveats by allowing for endogenous, conditional tagging of proteins and by offering a generalizable toolbox for targeting many genes of interest. Similar to the conditional knock-out tools FlpStop and FlipFlop (Fisher et al., 2017; Nagarkar-Jaiswal et al., 2017), FlpTag utilizes a FLEx switch to conditionally control expression of a reporter gene, in our case GFP. Likewise, FlpTag also easily integrates using the readily available intronic MiMIC insertions. Here, we attempted to generate FlpTag lines for six genes, GluCl\u03b1, Rdl, D\u03b17, Gaba-b-r1, para and Ih (overview of lines in Table 1). Four out of these six lines yielded conditional GFP-tagged protein lines (GluCl\u03b1, Gaba-b-r1, para, Ih). We injected the FlpTag cassette in MI02620 for Rdl and MI12545 for D\u03b17, but could not observe any GFP expression across the brain (data not shown). The MiMiC insertion sites used for Rdl and D\u03b17 seem to be in a suboptimal location for tagging the protein.\n\n**Table 1.**\n Overview of available MiMIC GFSTF and FlpTag lines for investigated genes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Gene</th>\n      <th>MiMIC insertion (coding intron)</th>\n      <th>MiMIC GFSTF existing</th>\n      <th>MiMIC GFSTF working</th>\n      <th>Chromosome</th>\n      <th>Phase</th>\n      <th>FlpTag working</th>\n      <th>Localization in T4/T5 neurons</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>GluCl\u03b1</td>\n      <td>MI02890, MI14426</td>\n      <td>MI02890</td>\n      <td>Yes</td>\n      <td>III</td>\n      <td>2</td>\n      <td>Yes, MI02890</td>\n      <td>T4: dendrites + terminals; T5: terminals</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>Rdl</td>\n      <td>MI02620, MI02957</td>\n      <td>MI02620</td>\n      <td>No</td>\n      <td>III</td>\n      <td>0</td>\n      <td>No, MI02620</td>\n      <td>From UAS line: dendrites</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>D\u03b17</td>\n      <td>MI12545</td>\n      <td>This study (MI12545)</td>\n      <td>No</td>\n      <td>X</td>\n      <td>1</td>\n      <td>No</td>\n      <td>From UAS line: dendrites</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>Gaba-b-r1</td>\n      <td>MI01930, MI05755</td>\n      <td>MI01930</td>\n      <td>Yes</td>\n      <td>II</td>\n      <td>0</td>\n      <td>Yes, MI01930</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>para</td>\n      <td>MI08578</td>\n      <td>This study (MI08578)</td>\n      <td>Yes</td>\n      <td>X</td>\n      <td>0</td>\n      <td>Yes, MI08578</td>\n      <td>T4/T5 axonal fibers</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>Ih</td>\n      <td>MI03196, MI12136</td>\n      <td>This study (MI12136)</td>\n      <td>Yes</td>\n      <td>II</td>\n      <td>2</td>\n      <td>Yes, MI12136</td>\n      <td>T4/T5 dendrites</td>\n    </tr>\n  </tbody>\n</table>\n\n### Expansion of the FlpTag toolbox\n\nAs of now, there are MiMIC insertions in coding introns for more than 2800 genes available, which covers approximately 24% of neuronal genes (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015a; Fisher et al., 2017). Additionally, the attP insertion sites generated in the study by Kondo et al. provide possible landing sites for the FlpTag cassette for 75 neurotransmitter receptor genes (Kondo et al., 2020). Transmembrane proteins such as neurotransmitter receptors form complex 3D structures making fluorescent tagging especially difficult. Neither the MiMIC insertion sites, nor the target sites of the Kondo study at the C-terminus of several transmitter receptor genes, ensure a working GFP-tagged protein line. For genes of interest lacking a suitable MiMIC insertion site we generated a homology directed repair (HDR) cassette which utilizes CRISPR/Cas9-mediated gene editing to integrate the FlpTag cassette in any desired gene locus (Supplementary file 6\u20138; Gratz et al., 2014; Fisher et al., 2017). The plasmid consists of the FlpTag cassette flanked by multiple cloning sites for the insertion of homology arms (HA). Through HDR the FlpTag cassette can be knocked-in into any desired locus. Taken together, the FlpTag cassette is a generalizable tool that can be integrated in any available attP-site in genes of interest (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015a; Kondo et al., 2020) or inserted by CRISPR-HDR into genes lacking attP landing sites. This allows for the investigation of the endogenous spatial distributions of proteins, as well as the correct temporal dynamics of protein expression.\n\nFurther, the FlyFos project demonstrated that most fly lines with an extra copy of GFP-tagged protein-coding genes worked normally and GFP-tagged proteins could be imaged in living fly embryos and pupae (Sarov et al., 2016). In principle, live-imaging of the GFP-tagged lines we created could be performed during different developmental stages of the fruit fly. In general, the tools generated here can be used as specific postsynaptic markers, visualizing glutamatergic, GABAergic, and cholinergic synapses with standard confocal light microscopy. This extends the existing toolbox of Drosophila postsynaptic markers (S\u00e1nchez-Soriano et al., 2005; Raghu et al., 2009; Andlauer et al., 2014; Chen et al., 2014; Petzoldt et al., 2014; Kondo et al., 2020; Luo et al., 2020) for studying the localization and development of various types of synapses.\n\n### Functional relevance of transmitter receptors and voltage-gated channels for Drosophila motion-sensitive neurons\n\nT4/T5 neurons combine spatiotemporal input from their presynaptic partners, leading to selective responses to one of the four cardinal directions. Numerous studies investigated the mechanisms underlying direction-selective responses in T4/T5 neurons, yet the computation is still not fully understood. At an algorithmic level, a three-arm detector model is sufficient to describe how direction-selective responses in T4/T5 neurons arise (Arenz et al., 2017; Haag et al., 2017). This model relies on the comparison of signals originating from three neighboring points in space via a delay-and-compare mechanism. The central arm provides fast excitation to the neuron. While one flanking arm amplifies the central signal for stimuli moving along the preferred direction, the other inhibits the central signal for stimuli moving along the null direction of the neuron. Exploring the neurotransmitter receptors and their distribution on T4/T5 dendrites allows us to define the sign as well as the temporal dynamics of some of the input synapses to T4/T5.\n\nAccording to the algorithmic model, we expect an excitatory, amplifying input signal on the distal side of T4/T5 dendrites. Here, we found that T4 cells receive an inhibitory, glutamatergic input from Mi9 via GluCl\u03b1, which, at first sight, seems to contradict our expectation. However, since Mi9 has an OFF-center receptive field (Arenz et al., 2017; Richter et al., 2018; Drews et al., 2020), this glutamatergic synapse will invert the polarity from Mi9-OFF to T4-ON. Theoretically, in darkness, Mi9 inhibits T4 via glutamate and GluCl\u03b1, and this inhibition is released upon an ON-edge moving into its receptive field. The concomitant closure of chloride channels and subsequent increased input resistance in T4 cells results in an amplification of a subsequent excitatory input signal from Mi1 and Tm3. As shown by a recent modeling study, this biophysical mechanism can indeed account for preferred direction enhancement in T4 cells (Borst, 2018). Some studies failed to detect preferred direction enhancement in T4/T5 neurons and they proposed that the enhanced signal in PD seen in GCaMP recordings could be a result from a non-linear calcium-to-voltage transformation (Gruntman et al., 2018; Gruntman et al., 2019; Wienecke et al., 2018). If this was really the case, the role of Mi9 and GluCl\u03b1 must be reconsidered and future functional experiments will shed light onto this topic.\n\nNevertheless, Strother et al. showed that the RNAi- knock-down of GluCl\u03b1 in T4/T5 neurons leads to enhanced turning responses on the ball set-up for faster speeds of repeating ON and OFF edges (Strother et al., 2017). Although this observation cannot answer the question about preferred direction enhancement in T4 cells, it indicates that both T4 and T5 receive inhibitory input and that removal of such create enhanced turning responses at the behavioral level. In line with these observations, we also found the glutamate receptor GluCl\u03b1 in T4/T5 axon terminals. A possible functional role of these inhibitory receptors in the axon terminals could be a cross-inhibition of T4/T5 cells with opposite preferred directions via lobula plate intrinsic neurons (LPis). Glutamatergic LPi neurons are known to receive a cholinergic, excitatory signal from T4/T5 neurons within one layer and to inhibit lobula plate tangential cells, the downstream postsynaptic partners of T4/T5 neurons, via GluCl\u03b1 in the adjacent oppositely tuned layer. This mechanism induces a motion opponent response in lobula plate tangential cells and increases their flow-field selectivity (Mauss et al., 2015). In addition, LPi neurons could also inhibit T4/T5 neurons presynaptically at their axon terminals via GluCl\u03b1 in order to further sharpen the flow-field selectivity of lobula plate tangential cells. Taken together, exploring the subcellular distribution of GluCl\u03b1 in T4/T5 neurons highlights its differential functional roles in different parts of these cell\u00a0types.\n\nSecondly, the D\u03b17 signal in the center of T4/T5 dendrites discovered here, corresponds to ionotropic, cholinergic input from Mi1 and Tm3 for T4, and Tm1, Tm2 and Tm4 for T5. These signals correspond to the central, fast, excitatory arm of the motion detector model. As T4 and T5 express a variety of different ACh receptor subunits (Davis et al., 2020), the exact subunit composition and underlying biophysics of every cholinergic synapse on T4/T5 dendrites still awaits further investigations.\n\nThird, inhibition via GABA plays an essential role in creating direction-selective responses in both T4 and T5 neurons (Fisher et al., 2015a; Arenz et al., 2017; Strother et al., 2017; Gruntman et al., 2018) by providing null direction suppression. Computer simulations showed that direction selectivity decreases in T4/T5 motion detector models without this inhibitory input on the null side of the dendrite (Arenz et al., 2017; Borst, 2018; Strother et al., 2017). Here, we show that T4 and T5 neurons possess the inhibitory GABA receptor subunit Rdl mainly on the proximal base on the null side of their dendrites, providing the synaptic basis for null direction suppression. We did not detect the metabotropic GABA receptor subunit Gaba-b-r1 in T4/T5 neurons using the newly generated FlpTag Gaba-b-r1 line. Finally, all of the receptor subunits GluCl\u03b1, Rdl and D\u03b17 investigated here are ionotropic, fast receptors, which presumably do not add a temporal delay at the synaptic level. In the detector model described above, the two outer arms provide a slow and sustained signal, and such properties are already intrinsic properties of these input neurons (Arenz et al., 2017; Serbe et al., 2016). However, we cannot exclude that slow, metabotropic receptor subunits for acetylcholine or GABA (e.g. Gaba-br2) which are also present in T4/T5 and could induce additional delays at the synaptic level (Takemura et al., 2011; Davis et al., 2020).\n\nFurthermore, we investigated the subcellular distribution of the voltage-gated ion channels para and Ih in T4/T5 neurons. We found para, a voltage-gated sodium channel, to be distributed along the axonal fibers of both T4 and T5 neurons. As para is important for the generation of sodium-dependent action potentials, it will be interesting for future functional studies to investigate, if T4/T5 really fire action potentials and how this shapes their direction-selective response. Further, we detected Ih, a voltage-gated ion channel permeable for several types of ions, in T4/T5 dendrites using the FlpTag strategy. Ih channels are activated at negative potentials below \u221250 mV and as they are permeable to sodium and potassium ions, they can cause a depolarization of the cell after hyperpolarization (Magee, 1999; Littleton and Ganetzky, 2000; George et al., 2009). Loss-of-function studies will unravel the functional role of the Ih channel for direction-selective responses in T4/T5 neurons.\n\n### Outlook\n\nSince the ability to combine synaptic inputs from different neurotransmitters at different spatial sites is common to all neurons, the approaches described here represent an important future perspective for other circuits. Our tools can be used to study the ion channels GluCl\u03b1, Rdl, D\u03b17, Gaba-b-r1, para and Ih in any given Drosophila cell-type and circuit. Furthermore, the FlpTag tool box can be used to target many genes of interest and thereby foster molecular questions across fields.\n\nThe techniques described here can be transferred to other model organisms as well, to study the distribution of different transmitter receptors. For instance, in the mouse retina - similar to motion-sensing T4/T5 neurons in the fruit fly - so-called On-Off direction-selective ganglion cells receive asymmetric inhibitory GABAergic inputs from presynaptic starburst amacrine cells during null-direction motion. A previous study investigated the spatial distribution of GABA receptors of these direction-selective ganglion cells using super-resolution imaging and antibody staining (Sigal et al., 2015). Additionally, starburst amacrine cells also release ACh onto ganglion cells which contributes to the direction-selective responses of ganglion cells. Thus, mapping the distribution of ACh receptors on direction-selective ganglion cells will be the next important step to further investigate cholinergic transmission in this network (Sethuramanujam et al., 2020).\n\nOverall, we demonstrated the importance of exploring the distributions of neurotransmitter receptors and ion channels for systems neuroscience. The distinct distributions in T4/T5 neurons discovered here and the resulting functional consequences expand our knowledge of the molecular basis of motion vision. Although powerful, recent RNAseq studies lacked information about spatial distributions of transmitter receptors which can change the whole logic of wiring patterns and underlying synaptic signs. Future studies can use this knowledge to target these receptors and directly probe their role in functional experiments or incorporate the gained insights into model simulations. However, this study is only highlighting some examples of important neural circuit components: expanding the approaches described here to other transmitter receptors and ion channels, as well as gap junction proteins will reveal the full inventory and the spatial distributions of these decisive determinants of neural function within an individual neuron.\n\n## Materials and methods\n\n### Fly strains\n\nFlies were raised at 25\u00b0C and 60% humidity on standard cornmeal agar medium at 12 hr light/dark cycle. The following driver lines were used: R42F06-Gal4 to label T4/T5 neurons, R57C10-Gal4 for addressing all neurons, SS03734-splitGal4 to address L1, R19F01-AD; R71D01-DBD to address Mi1, 10\u201350 Gal4 to label T1, and D\u03b17-TG4 (BL#77828). The T4-splitGal4 line was generated by combining the hemidriver lines VT16255-AD (BL#75205) and VT12314-DBD (unpublished, T. Schilling); the T5-splitGal4 line was generated by combining the hemidriver lines VT13975-AD and R42F06-DBD (unpublished, T. Schilling). The following UAS-reporter lines were used for labeling cell-types and drive flippase-expression: UAS-myr::tdTomato (BL#32222), and UAS-FLP1.D (BL#4539). For labeling individual T4/T5 neurons stochastically together with the receptor lines, we combined UAS-myr::tdTomato; UAS-GluCl\u03b1::GFP/UAS-Rdl::GFP/UAS-D\u03b17::GFP with hs-FLP; FRT-Gal80-FRT; R42F06-Gal4 and heat-shocked pupae (P1-P3) for 5\u20138 min at 37\u00b0C in a water bath.\n\n### Generation of new genetic UAS-lines\n\nThe coding sequencing (CDS) of GluCl\u03b1 isoform K was acquired from flybase.org and along with the sequence of GFP flanked by 4xGGS linker was synthesized by Eurofins Genomics and inserted into pEX-A258 backbone between NotI and XbaI restriction sites. Using restriction digestion with NotI and XbaI the GluCl\u03b1 fragment was cloned into pJFRC7-20XUAS-IVS-mCD8::GFP (Pfeiffer et al., 2010) vector. Similarly, the CDS of Rdl isoform F was acquired from flybase.org and with the sequence of GFP flanked by 4xGGS linker was synthesized as three DNA fragments by Invitrogen GeneArt Gene Synthesis. Each fragment carried a complementary overlapping section of 25\u201335 bps on both ends. pJFRC7-20XUAS-IVS-mCD8::GFP (Pfeiffer et al., 2010) vector was digested with NotI and XbaI restriction enzymes and all three DNA fragments were inserted using NEBuilder HiFi DNA Assembly. Embryo injections were performed by BestGene Inc (Chino Hills, CA, USA).\n\nFor\u00a0the\u00a0generation of the\u00a0FlpTag constructs, the\u00a0pFlip-Flop-P0 plasmid (Nagarkar-Jaiswal et al., 2017) ordered from Drosophila Genomics Resource Center (NIH Grant 2P40OD010949) was digested with BsmFI and EcoRI leaving the plasmid backbone with FRT, FRT14 and attB sites. Six DNA fragments were synthesized by Invitrogen GeneArt Gene Synthesis. Three fragments contained a predicted splice donor site\u00a0(one for each phase) and half of an inverted 4xGGS-GFP. The other three contained half of an inverted GFP-4xGGS followed by a slice acceptor (SA) site (one for each phase). All fragments had complementary overlapping sections of 25\u201335 bps which was used to insert phase-paired fragments into the digested pFlip-Flop plasmid using NEBuilder HiFi DNA Assembly. Embryo injections were performed by BestGene Inc (Chino Hills, CA, USA), including PCR-verifications and balancing.\n\n### S2 Schneider cell culture\n\nWe used Drosophila S2R+ Schneider cells in culture Drosophila Genomics Resource Center, stock #150 for testing the newly generated UAS-receptor::GFP constructs before embryo injections. S2R+ cells were cultured in Schneider\u2019s Drosophila medium (Thermo Fisher Scientific) supplemented with 10% fetal bovine serum (Thermo Fisher Scientific) and penicillin/streptomycin (Cytiva). UAS-constructs were tested by transfecting 250 ng of UAS-plasmid and 250 ng of actin5C-Gal4 plasmid (gift from T. Kornberg) in 24-well plates using the FuGENE HD Kit (Promega). Two days later, we checked for GFP-expression in transfected S2 cells with a fluorescence binocular microscope.\n\n### Immunohistochemistry\n\nFly brains were dissected in cold 0.3% PBST and fixed in 4% PFA in 0.3% PBST for 25 min at room temperature. Subsequently, brains were washed four\u00a0to\u00a0five times in 0.3% PBST and blocked in 10% normal goat serum (NGS) in 0.3% PBST for 1 hr at room temperature. Primary antibodies used were mouse anti-Bruchpilot Brp (nc82, Developmental Studies Hybridoma Bank, 1:20, RRID:AB_2314867), rabbit anti-dsRed (Takara Bio, 1:300, RRID:AB_10013483), and rat anti-D\u03b17 (gift from H. Bellen, 1:2000). Secondary antibodies used were: goat anti-mouse ATTO 647N (Rockland, 1:300, RRID:AB_2614870), goat anti-rabbit Alexa Fluor 568 (Thermo Fisher Scientific, 1:300, RRID:AB_10563601), and goat anti-rat Alexa Fluor 647 (Thermo Fisher Scientific, 1:300, RRID:AB_141778). GFP-labeled receptors were imaged natively without antibody staining. 5% NGS was added to all antibody solutions and both primary and secondary antibodies were incubated for at least 48 hr at 4\u00b0C. Brains were mounted in Vectashield Antifade Mounting Medium (Vector Laboratories) and imaged on a Leica TCS SP8 confocal microscope equipped with 488-, 561-, and 633 nm lasers, using a 63X glycerol objective.\n\n### Quantifications of receptor distributions and number of puncta\n\nFor intensity quantification, confocal stacks were processed in ImageJ using maximum\u00a0intensity\u00a0projection. These images were then analyzed in python using the Skimage and Numpy packages. For each image, florescence was normalized to the maximum intensity within an image. Additionally, images were cropped to include the entire dendritic cross section and aligned pointing to the right with the most proximal point to the left and the most distal point to the right. These images were normalized to the maximum cropped image length.\n\nFor quantification of number of receptor puncta, confocal stacks were taken from the entire cross-section of the dendrite as above. Puncta were counted in ImageJ software using the 3D object counter plugin of Fiji (Bolte and Cordeli\u00e8res, 2006).\n\n### Statistical analysis\n\nStatistical significance was tested with a Student t-test when comparing two groups. A p-value below 0.05 was considered significant. In the case of pan-neuronal quantification where multiple groups were compared, statistical significance was tested using one-way ANOVA. In all figures, * was used to indicate a p-value<0.05, ** for p<0.01, and *** for p<0.001. Statistical analysis and graphs were generated in Python 3.4 using SciPy and Seaborn packages respectively. Figures were generated in Adobe Illustrator CC.\n",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "e8c7b8b8-d41a-45f8-82b2-6fa9f6894ce8",
+      "submission_id": "8302caa4-c828-418b-965a-2fe77c8e8c80",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Claude Desplan, New York University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62953.sa1](https://doi.org/10.7554/eLife.62953.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper describes tools that will be useful for studying the subcellular localization of neurotransmitter receptors. GluCla should also be a useful tool as well as the GABAR, para, and Ih FlpTag alleles. The work is carefully executed work and the manuscript is clearly written. We still hope that, in the future, you will be able to expand and generalize the use of the FlpTag approach. The manuscript also provides an interesting description of the localization of Glutamatergic, Cholinergic and GABAergic synapses in the fly visual system.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Highly specific subcellular distribution of neurotransmitter receptors in motion-sensing neurons\" for consideration by eLife. Your article has been reviewed by four peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Filipe Pinto Teixeira (Reviewer #2); Tom Baden (Reviewer #3).\n\nOur decision has been reached after extensive consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers agree that the work is of quality but feel that the advances, both in terms of receptor localization in the T4/T5 circuit, and technical with the generation of new reporter lines, are incremental and would not be sufficient to be published in eLife.\n\nAs you will see below, the reviewers feel that the visualization of the localization of a small set of neurotransmitter receptors is in line with previous findings from TEM data while no further functional notions have been gained. The reviewers found it important to validate the role of the receptors in shaping the processing of the T4/T5 signal, either using functional imaging or electrophysiology/pharmacology.\n\nThe reviewers would have found it very interesting if you could have demonstrated what you suggest, that the localization of neurotransmitter receptors is intrinsic rather than induced by the presence of presynaptic sites. You should rephrase your claim that neurotransmitter receptor localization is intrinsic since you do not provide any evidence for that, which could be tested by manipulating these pre-synaptic sites that would have allowed you to test this important notion.\n\nThe reviewers also considered that the technical advances are limited: the UAS reporters are useful for the specific point that you address, and very well controlled, but they do not represent important tools that go beyond what is already available. Of course, the Flptag method could be such advance, but it is only described superficially and with little information on its efficiency and the possibility to develop it as a general method. It has only been used for one line, it relies on MiMic insertions and has not yet been tested with Crispr/Cas9. Furthermore, although the Flptag is a useful tool, it does not allow the tagging of individual neurons and thus it does not offer the fundamental and general tool needed to investigate localization at the single cell level in other systems. Similar methods with a larger coverage have already been published.\n\nIn conclusion, the part of the paper about receptor localization and how this helps refine our understanding of the T4T5 computation, needs validation of the role of the receptors in the shape of T4/T5 signal processing. In addition, you need to show the Flptag is a general method by targeting other genes and validating the Crispr/Cas9, and allowing the marking of single cells.\n\nReviewer #1:\n\nTo gain insights into the organization and function of neural circuits, knowledge about the distribution of synapses, neurotransmitters released on the pre-synaptic sides and neurotransmitter receptors on the postsynaptic side is invaluable. In this manuscript, S. Fendl, R. Vieira and A. Borst present genetic approaches to visualize the distinct subcellular distribution of three neurotransmitter receptors in motion-direction selective neurons T4 and T5 in the Drosophila visual system. The genetic tools include over-expression of UAS transgenes for receptor units GluClalpha (Glutamate), Rdl (GABA) and Dalpha7 (ACh). Furthermore, a novel approach named FlpTag is presented, that allows the labeling of GluClalpha by inserting an invertible GFP tag in the endogenous locus. In line with the known differential distribution of presynaptic sites along the dendrites of T4 and T5 neuron subtypes, the authors report matching receptor unit distributions. The observed patterns are extensively discussed within the context of the recent model for computations underlying motion-direction selectivity by the Borst laboratory. The study is descriptive, and as it assesses only 3 receptor subunits, also not comprehensive, this providing limited new insights. The FlpTag method is elegant, but as it is employed only for one receptor unit, and efficiencies in generating lines with this method are not provided, it remains uncertain, whether it is an easily implementable tool together for MiMIC lines or proposed novel Crispr/Cas9 mediated integration.\n\nSpecific comments:\n\n1) The authors describe that GluClalpha is expressed in a matching pattern to what is expected from EM studies and known identities of pre-synaptic neurons. The patterns are similar when assessing over-expression and endogenous labeling techniques. The authors describe this must be an intrinsic property. But how can they conclude this? A novel insight would have been to use these new tools to address this point. For instance, by altering the pre-synaptic innervation, the assessment of the distribution of these receptors can be assessed. If it is unaltered, then the notion that distribution is intrinsic would gain support. An important aspect would also be to show the matching of pre-and postsynaptic markers to provide formal evidence that the puncta indeed correspond to synapses, and that matching occurs (in vertebrate synapses receptors are detected at the synapse, but also preisynaptically.)\n\n2) The authors generate one line using their new FlpTag tool and conclude that this approach is generalizable. However, while it is likely on paper to be generalizable, the method would need to be described in detail regarding its efficiency with this and a few more factors. Alternatively, the significance of the method would need to be described with more careful wording.\n\n3) \"Upon cell-type specific expression of flippase recombinase (Flp), an intronic GFP-label is inverted and stably integrated into the gene as an artificial exon\". And \"Upon \u03a6C31-dependent integration of the FlpTag cassette into a coding intron of the GluCla target gene, the cassette is inverted, and spliced out together with the intron and no GFP-labeling occurs.\" Neither description seems quite right, phiC31 dependent-integration is not responsible for the inversion. Cassette exchange can be in either direction, but during injection, the inverted orientation is selected for. Also, Flp is not responsible for the integration, just the inversion. The method should be described correctly and in more detail with numbers allowing users to assess efficiency both to generate the lines and regarding inversion events. The line has been tested with Gal4 UAS-FLP for mediating inversion, which provides cell-type specificity, but it is not clear how efficient the method is at the single cell level with heat-shock during pupal development. Furthermore, for the other heat shock involving experiments in this study, it would be important to provide more details, including when and how many heat shock treatments are provided.\n\n4) For the ACh receptor Dalpha7, the authors showed that GFP labeled puncta localized correctly, but that the numbers were less than expected from what is known about cholinergic input. It is proposed that another subunit/type of receptor may be important in this context, but it is not clear, why this was not further pursued.\n\n5) The authors also assess the distribution of receptors in axons. The Discussion is extensive, highlighting, that \"the subcellular distribution\u2026 highlights its differential functional roles in different parts of these cell types\". While, it is clear that the receptors are indicative of different connections, the experiments shown in this study do not provide any functional insights, in particular how inhibitory input at the dendritic level and again at the axonal level could be integrated during information processing of T4/T5 neurons.\n\n6) Subsection \u201cMethods for investigation of receptor distributions\u201d, the manuscript discusses the possibility of using their construct also for Crispr/Cas9 mediated insertion by a HDR cassette, referring to supplementary files solely with sequences. This is an important aspect and would benefit from a more detailed presentation and evidence for functionality to support the claim and the technical emphasis of the study in general.\n\nReviewer #2:\n\nThe tools the authors developed expand the repertoire of similar reagents already available to access neurotransmitter receptor expression in the fly. Additionally, the novel FlpTag tool allows to endogenously tag any gene of interest in a cell type specific manner expanding its usefulness to different molecular questions in various fields. The paper is well written, the results are solid and well supported but fall short. The results are limited to the validation of a previously published UAS-Da7::GFP line, two UAS lines the authors generated (UAS-GluCla::GFP and UAS-Rdl::GFP), the novel FlpTag tool, and to the description of the studied neurotransmitter receptors expression in the T4/T5 circuit. More specifically, the authors show that the GluCla, Rdl and Da7 distribution in T4 and T5 dendrites matches the known EM-reconstructed synapse distribution and neurotransmitter identity of upstream input neurons and it is compatible with one of several algorithmic models that describe how motion direction-selective responses in T4/T5 neurons is established. They further show a previously unknown expression of the glutamate receptor GluCla in T4/T5 axon terminals and discuss its possible role. As such, I find the manuscript in its current form better suited for a Tools and Resources article. I would support such publication.\n\nReviewer #3:\n\nThe paper uses a combination of novel genetic and classical immunohistochemical tools to pinpoint the receptor identities and their spatial distributions on T4/5 cells in the fruit fly visual system. In general, spatially offset receptor distributions here are known key ingredients to motion computation and understanding them in depth is certainly a useful thing to do. The paper extends previous results based on transcriptomics and EM (and other approaches) to lay out very nicely which receptors sit in which part of the dendrites. Overall, the results are very much in line with previous work and present an important consolidation of the literature. The paper is generally well written and quite clear. Accordingly, I support publication in eLife in principle.\n\nHowever, it may be useful for the authors to consider some of the below\n\n1) Stats + quantification: most statistics (all except Figure 2\u2014figure supplement 1D) in the manuscript are summarised by bar plots with an error bar. This could do with an upgrade. E.g. convert to box/whisker-plots (or similar) and add raw data as a scatter in the background. Also, I notice the authors used t-tests in a few places, but I cannot see a test for normal distribution in the data (and since the raw data is not shown I also cannot eyeball this).\n\n2) Related, the histograms (e.g. 2E, 4D, 5D, 6B,D) all seem to represent a mean across a bunch of experiments. These need some form of quantification of variance. A simple option could be confidence interval shadings. Moreover, they could do with stats. e.g. when comparing 2 distributions, one could fit a Generalized Additive Model (GAM) to pinpoint (i) if and (ii) where they are different (or something similarly telling).\n\nRelated to the above, I would have expected the receptor distributions to be quantified over 2D dendritic area, rather than \"just\" the linear distance along the dendrite's major axis. I appreciate that this is the axis that matters for the computation, but since the data is available in 2D, why not use it? Maybe there is additional nuance to be gained? The authors could compute the mean density map of receptors and plot it next to their example images. This would presumably also aid to more intuitively highlight the spatial offsets? It might make for a nice summary figure as well.\n\nReviewer #4:\n\nFendl et al. develop new labeling strategies to assess the asymmetric distribution of neurotransmitter subunits for glutamate, GABA, and Ach in the visual system. In particular, they develop ways to visualize GluCl\u03b1, D\u03b17, and Rdl in motion-sensing T4/T5 neurons in Drosophila. The authors do a great job of carefully controlling for possible artifacts of overexpression in the channels they overexpress and show compelling evidence of distinct localization patterns of these three receptors in dendrites of the T4/T5 neurons. Overall, the manuscript is well written and presents both technical and biological advances, although both are somewhat incremental in significance. On the technical side, the development of the \"FlpTag\" tool for conditional labeling of proteins uses well-established technology and similar approaches have already been utilized. In addition, only a single receptor, GluCl\u03b1, was actually successfully targeted for this FlpTag labeling. Beyond this technical achievement, the authors essentially confirm the localization of the three neurotransmitter receptors expected by the distribution of EM-reconstructed synapses of the relevant input neurons in the visual system. Thus, the contribution here of generating UAS-receptor-tags and the GluCl\u03b1 FlpTag to confirm putative receptor distributions appears to be an incremental contribution to the field. That being said, there are some additions that can improve the impact and rigor of this study.\n\n1) Technical development: The authors used their FlpTag approach on GluCl\u03b1 and did not establish a toolkit targeting other neurotransmitter receptor subtypes. It's not clear why this strategy wasn't used for other receptors, at least for the two other receptors characterized in this study (ACh D\u03b17 and Rdl). Furthermore, a recent publication in eLife demonstrated that GluCl\u03b1 can be tagged conditionally as well (Molina-Obando et al., 2019), so it's not clear how important this reagent will prove to be to the field by targeting just this receptor. An expanded toolkit, akin to the one tagging all neurotransmitter receptors in the fly genome at their endogenous locus using T2A-Gal4 knock-in (Kondo et al., 2020), would be a great addition for the field but it is understood this is beyond the scope of the investigators interest in this study.\n\n2) Biological insights: It is commendable the extent the authors went to carefully control for possible artifacts of mis-localization of the three neurotransmitter receptors due to overexpression of the straightforward UAS-receptor-tags. Beyond overexpression, it is always possible that the tags themselves may alter receptor trafficking, biochemical interactions, or integration into functional receptors. Can the authors comment in more detail on controls used to determine the tags do not impact receptor localization or function?\n\nAt least for the three receptors examined in this study, overexpression doesn't appear to lead to mis-localization or apparent artifacts. However, in terms of the biological significance, it's not clear how much is learned. Essentially, all the receptors mark synapses in areas they were suspected to be based on the neuronal inputs, and functional imaging or electrophysiology/pharmacology would be necessary to validate the ideas of how these receptors and their presumed physiological impacts actually shape signal processing in the T4/T5 neurons.\n\n3) Although it is important to define which receptor subtypes exist at particular synapses, the experiments presented here by the authors do not really establish the receptors that function at the dendrites in the T4/T5 neurons. First, as the authors point out, it is a mystery what Ach receptor subtype(s) actually exist and function at dendrites in this system, and even whether D\u03b17 is playing a functional role. Second, while GluCl\u03b1 appears to be present at glutamatergic synapses, can the authors rule out the possibility of excitatory glutamate receptors also being present in T4/T5 neurons? It seems plausible that some of the kainate, AMPA, and/or NMDA type glutamate receptors encoded in the fly genome could also exist in this system, and if so these would have major impacts on the assumptions of signal processing proposed by the authors. Third, and for similar reasons, the findings on GABA receptors may be limited. Finally, also as pointed out by the authors, there are metabotropic receptors that could be expressed and play important roles that remain at present unknown.\n",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "90e2b054-bfb6-468f-816d-13bb1c67f094",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C1",
+      "claim": "T4 dendrites reside in layer 10 of the medulla and compute the direction of moving bright edges (ON-pathway).",
+      "claim_type": "EXPLICIT",
+      "source": "T4 dendrites reside in layer 10 of the medulla and compute the direction of moving bright edges (ON-pathway).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and is supported by citations to previous work (Maisak et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "cece445d-2132-4c52-b792-53df80c4eb6c",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C2",
+      "claim": "T5 dendrites arborize in layer 1 of the lobula and compute the direction of moving dark edges (OFF-pathway).",
+      "claim_type": "EXPLICIT",
+      "source": "T5 dendrites arborize in layer 1 of the lobula and compute the direction of moving dark edges (OFF-pathway) (Maisak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Maisak et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "6eac0e92-4c11-478e-bf4d-294f78608da1",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C3",
+      "claim": "The four subtypes of T4/T5 neurons (a, b, c, d) project axon terminals to one of the four layers in the lobula plate, each responding only to movement in one of the four cardinal directions.",
+      "claim_type": "EXPLICIT",
+      "source": "The four subtypes of T4/T5 neurons (a, b, c, d), project axon terminals to one of the four layers in the lobula plate, each responding only to movement in one of the four cardinal directions, their preferred direction (Maisak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the text with citation to Maisak et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "7f525cee-557a-4583-b9ca-beefd812fc08",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C4",
+      "claim": "Glutamate can have inhibitory effects in invertebrates when it acts on a glutamate-gated chloride channel, known as GluCl\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutamate for instance is mainly excitatory, however, in invertebrates it can also have inhibitory effects when it acts on a glutamate-gated chloride channel, known as GluCl\u03b1 (Cully et al., 1996; Liu and Wilson, 2013; Mauss et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Cully et al., 1996; Liu and Wilson, 2013; Mauss et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "d1adee3f-75dd-420d-8105-36ef01bb1080",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C5",
+      "claim": "Acetylcholine might be inhibitory in Drosophila if it binds to the muscarinic mAChR-A receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has also been shown that acetylcholine, usually excitatory, might also be inhibitory in Drosophila, if it binds to the muscarinic mAChR-A receptor (Bielopolski et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Bielopolski et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "9131fad5-1b15-4363-983c-e95f0ce86e0a",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C6",
+      "claim": "The voltage-gated calcium channel cacophony mediates influx of calcium ions that drives synaptic vesicle fusion at presynaptic sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The voltage-gated calcium channel cacophony, for instance, mediates influx of calcium ions that drives synaptic vesicle fusion at presynaptic sites (Kawasaki et al., 2004; Fisher et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Kawasaki et al., 2004; Fisher et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "5334c789-4ccc-4094-8f6e-4160c011cb51",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C7",
+      "claim": "Voltage-gated sodium channels like paralytic (para) are important for the cell's excitability and the generation of sodium-dependent action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-gated sodium channels like paralytic (para) are important for the cell's excitability and the generation of sodium-dependent action potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and represents established knowledge about sodium channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "ea2f2277-367c-4a07-ad3e-b74db1d6359a",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C8",
+      "claim": "The voltage-gated channel Ih influences the integration and kinetics of excitatory postsynaptic potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The voltage-gated channel Ih influences the integration and kinetics of excitatory postsynaptic potentials (Magee, 1999; Littleton and Ganetzky, 2000; George et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Magee, 1999; Littleton and Ganetzky, 2000; George et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "731b9ccb-06d0-409d-96c6-0858d2c9e42b",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C9",
+      "claim": "T4 dendrites receive input from the glutamatergic medulla neuron Mi9.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by the connectome (Takemura et al., 2017; Shinomiya et al., 2019) and antibody staining against the vesicular glutamate transporter VGluT (Richter et al., 2018), T4 cells receive input on their dendrites from the glutamatergic medulla neuron Mi9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Takemura et al., 2017; Shinomiya et al., 2019; Richter et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "24a01b81-3055-4d9d-9d1f-e247042c7abd",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C10",
+      "claim": "GluCl\u03b1 is the most highly expressed glutamate receptor in T4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "According to a RNA-sequencing study, GluCl\u03b1 is the most highly expressed glutamate receptor in T4 neurons (Davis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Davis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "a86e3d79-0579-4fed-b783-90e2074e49b5",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C11",
+      "claim": "GluCl\u03b1 is found in T4 dendrites of the medulla, distributed in discrete puncta arranged in circular clusters corresponding to columns.",
+      "claim_type": "EXPLICIT",
+      "source": "We found GluCl\u03b1 in T4 dendrites of the medulla, where it is distributed in discrete puncta (Figure 2A; horizontal section, first two panels). A top view of the medulla of these flies reveals that these puncta are arranged in circular clusters, each corresponding to one column (Figure 2A, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "8152571c-c0f0-482b-9d99-2ddfc7b4cebe",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C12",
+      "claim": "T5 dendrites are completely devoid of GluCl\u03b1 signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, T5 dendrites are completely devoid of GluCl\u03b1 signal (Figure 2A, first two panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "f579bc51-517f-4e2a-aaa8-603e5a2cf2db",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C13",
+      "claim": "Mi9 is the only glutamatergic presynaptic partner of T4 cells in the medulla.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Mi9 is the only glutamatergic presynaptic partner of T4 cells in the medulla (Takemura et al., 2017; Richter et al., 2018; Shinomiya et al., 2019), this columnar arrangement likely reflects the columnar array of Mi9 cell inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Takemura et al., 2017; Richter et al., 2018; Shinomiya et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "1f068b96-bbbd-4e94-ac7d-1e198eb31e8b",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C14",
+      "claim": "GFP signal of GluCl\u03b1::GFP is visible in the axon terminals of T4/T5 in the lobula plate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the medulla layer 10, GFP signal of GluCl\u03b1::GFP is also visible in the axon terminals of T4/T5 in the lobula plate (Figure 2A, first two panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "c6b0962b-54e8-4446-a053-407853428f94",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C15",
+      "claim": "Both T4 and T5 neurons express the glutamate receptor GluCl\u03b1 in their axon terminals in the lobula plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, with these specific driver lines, both T4 and T5 neurons express the glutamate receptor in their axon terminals in the lobula plate (Figure 2B and Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "b1426fab-4d7f-4f36-a3d8-c54532c2fbde",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C16",
+      "claim": "GluCl\u03b1 was predominantly localized to the distal tips of individual T4 dendrites across all four T4 subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In individual T4 dendrites, we observed that GluCl\u03b1 was predominantly localized to the distal tips, which holds true for all four T4 subtypes (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "4e30088c-6976-46e9-acc3-10a786090588",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C17",
+      "claim": "The number of GluCl\u03b1-puncta per T4 cell dendrite (mean: 20.5 puncta) matches closely the number of glutamatergic input synapses made by Mi9 onto one T4 cell (mean: 23 synaptic contacts).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of GluCl\u03b1-puncta per T4 cell dendrite (mean: 20.5 puncta) matches closely the number of glutamatergic input synapses made by Mi9 onto one T4 cell (mean: 23 synaptic contacts; personal communication, K. Shinomiya, May 2020) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to EM data and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "baf12d5c-2f7a-4ace-aee6-8973bc4444c3",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C18",
+      "claim": "Every GluCl\u03b1-punctum resolved by confocal microscopy in individually labeled T4 dendrites represents one postsynaptic GluCl\u03b1 receptor cluster corresponding to one Mi9-T4 synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that every GluCl\u03b1-punctum resolved by confocal microscopy in individually labeled T4 dendrites represents one postsynaptic GluCl\u03b1 receptor cluster corresponding to one Mi9-T4 synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the matching numbers of puncta and synapses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "7409a853-074a-4a44-a2bb-0ce16318d580",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C19",
+      "claim": "T4 dendrites receive input from several GABAergic cell-types in the medulla: Mi4, C3, CT1, and TmY15.",
+      "claim_type": "EXPLICIT",
+      "source": "T4 dendrites receive input from several GABAergic cell-types in the medulla: on the proximal base of the dendrite, these are the columnar cells Mi4, C3; the multicolumnar amacrine cell CT1 in the middle and distal part of the dendrite as well as TmY15 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "d573c486-9747-4cd3-9b10-d3532fd5b6b6",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C20",
+      "claim": "T5 dendrites receive GABAergic input from only two cell-types: CT1 on the proximal base and TmY15 throughout the central and distal area of the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, T5 dendrites receive GABAergic input from only two cell-types: CT1 on the proximal base and TmY15 again throughout the central and distal area of the dendrite (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1D.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "e97659a8-91c8-4183-aac4-09e5a66051aa",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C21",
+      "claim": "Rdl is the most highly expressed ionotropic GABA receptor subunit in T4 and T5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the GABA receptor subunit Rdl, since RNA-sequencing studies had identified Rdl as the most highly expressed ionotropic GABA receptor subunit in T4 and T5 neurons (Pankova and Borst, 2016; Davis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Pankova and Borst, 2016; Davis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "e3ebe09f-7023-4425-9bbf-036db69e04ce",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C22",
+      "claim": "Five Rdl subunits can form a homomeric chloride channel which leads to hyperpolarization upon GABA-binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Five Rdl subunits can form a homomeric chloride channel which leads to hyperpolarization upon GABA-binding, thus representing a receptor (Ffrench-Constant et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Ffrench-Constant et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "48e686ac-3b65-43ed-8b8f-429f885e1e6e",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C23",
+      "claim": "Rdl is expressed in both T4/T5 dendrites, but not in the axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining this line with a T4/T5 specific Gal4-line and a membrane-bound tdTomato revealed Rdl expression in both T4/T5 dendrites, but not in the axon terminals (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "f0e399df-5d9b-42d6-8ec2-f03b58a71c1a",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C24",
+      "claim": "Rdl is found on the proximal base and in the central area of both T4 and T5 dendrites across all four subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found Rdl on the proximal base and in the central area of both T4 and T5 dendrites across all four subtypes (Figure 3B and Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "23177292-2115-4343-9c00-afa7fe86cb0c",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C25",
+      "claim": "The numbers of Rdl receptor clusters in T4 and T5 dendrites (roughly 40 receptor clusters) match the sum of all GABAergic input synapses to T4 (mean: 40.45) and T5 (mean: 37).",
+      "claim_type": "EXPLICIT",
+      "source": "We found similar numbers of roughly 40 receptor clusters for both T4 and T5 which match the sum of all GABAergic input synapses to T4 (mean: 40.45) and T5 (mean: 37) (Figure 3E) (EM numbers: personal communication, K. Shinomiya, May 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to EM data and shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "dd55e63c-6d23-497d-901d-29cfa06992d3",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C26",
+      "claim": "T4 dendrites receive most of their input synapses from cholinergic Mi1 and Tm3 cells at the center of their dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "According to connectome data, T4 dendrites receive most of their input synapses from cholinergic Mi1 and Tm3 cells at the center of their dendrite (Takemura et al., 2017; Shinomiya et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Takemura et al., 2017; Shinomiya et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "c750dfe2-8000-4f93-9309-d88e8148b538",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C27",
+      "claim": "T4 neurons of the same subtype form synapses with each other at the distal tips of their dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, T4 neurons of the same subtype form synapses with each other at the distal tips of their dendrites (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "f950cc46-f47c-4f22-933a-484385a7128a",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C28",
+      "claim": "T4-T4 synapses are thought to be cholinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "As T4 neurons are cholinergic (Mauss et al., 2014; Davis et al., 2020), these T4-T4 synapses are thought to be cholinergic as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on T4 neurons being cholinergic, with citations to Mauss et al., 2014; Davis et al., 2020.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "9e57fe38-6ca4-4b44-88e0-5a6c5f33c6f3",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C29",
+      "claim": "T5 dendrites receive cholinergic input from Tm1, Tm2, and Tm4 in the central area of the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of GABAergic CT1, T5 dendrites receive cholinergic input from Tm1, Tm2, and Tm4 in the central area of the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "db7318a5-f171-40bd-a417-25eb679d8caf",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C30",
+      "claim": "Tm9 and T5 provide cholinergic input mainly towards the distal tips of the T5 dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Tm9 and T5 provide cholinergic input mainly towards the distal tips of the dendrite (Figure 1D; Takemura et al., 2017; Shinomiya et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citations to Takemura et al., 2017; Shinomiya et al., 2019 and shown in Figure 1D.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "b78eef7d-4301-4ea5-91eb-67fb790bba6a",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C31",
+      "claim": "T5 dendrites receive almost twice as many cholinergic inputs as T4; 160 and 87 synapses, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "T5 dendrites receive almost twice as many cholinergic inputs as T4; 160 and 87 synapses, respectively (Shinomiya et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Shinomiya et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "ec5c4c5a-fec8-4c5f-ad29-3e6757a6ec49",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C32",
+      "claim": "D\u03b17 is one of 10 different nicotinic ACh receptor subunits found in the Drosophila genome.",
+      "claim_type": "EXPLICIT",
+      "source": "D\u03b17 is one of 10 different nicotinic ACh receptor subunits (D\u03b11-D\u03b17 and D\u00df1-D\u00df3) found in the Drosophila genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and represents established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "87a4ad2c-9e5a-4750-83b3-507777eb4423",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C33",
+      "claim": "D\u03b15, D\u03b16, and D\u03b17 can form homomeric ACh receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, D\u03b15, D\u03b16, and D\u03b17 can also form homomeric ACh receptors (Lansdell and Millar, 2004; Lansdell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Lansdell and Millar, 2004; Lansdell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "65053c0a-2350-46f5-b19a-6f2d239f50a6",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C34",
+      "claim": "Both T4 and T5 neurons express almost every ACh receptor subunit, except for D\u03b16 and D\u00df3.",
+      "claim_type": "EXPLICIT",
+      "source": "According to RNA-sequencing data, both T4 and T5 neurons express almost every ACh receptor subunit, except for D\u03b16 and D\u00df3 (Davis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Davis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "e0919e5e-edbc-440c-8f49-e0d312ab478b",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C35",
+      "claim": "D\u03b17 is distributed to both T4 and T5 dendrites while their axon terminals remained devoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of UAS-D\u03b17::GFP with a T4/T5-Gal4 line, revealed the distribution of D\u03b17 to both T4 and T5 dendrites while their axon terminals remained devoid (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "de68009f-6a9f-4d85-a4c4-4e2a95f27f07",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C36",
+      "claim": "Overexpressed D\u03b17::GFP localizes to cholinergic synapses and becomes part of an ACh-receptor, even if this subtype is not endogenously expressed in this neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that overexpressed D\u03b17::GFP localizes to cholinergic synapses and becomes part of an ACh-receptor, even if this subtype is not endogenously expressed in this neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Mi1 overexpression experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "16ce83f3-e910-496a-af21-f76aba4b2d55",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C37",
+      "claim": "D\u03b17 was distributed along the central area and distal tips of both T4 and T5 dendrites whereas the proximal base of the dendrite was completely devoid of D\u03b17 signal.",
+      "claim_type": "EXPLICIT",
+      "source": "D\u03b17 was distributed along the central area and distal tips of both T4 and T5 dendrites whereas the proximal base of the dendrite was completely devoid of D\u03b17 signal (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figures 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "4824d2a1-80c9-4dd6-bc7c-153d6acf0aad",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C38",
+      "claim": "For T4 dendrites the numbers of D\u03b17 puncta quantified (mean: 88.4) matched the numbers of cholinergic input synapses mapped by EM reconstruction (mean: 86.9).",
+      "claim_type": "EXPLICIT",
+      "source": "For T4 dendrites the numbers of D\u03b17 puncta quantified (mean: 88.4) matched the numbers of cholinergic input synapses mapped by EM reconstruction (mean: 86.9; personal communication, K. Shinomiya, May 2020) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to EM data and shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "7ee46ce8-8599-4a4b-9d7e-f91451f7e5a7",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C39",
+      "claim": "For T5 dendrites the D\u03b17 puncta exhibited 60 synapses less on average when compared to the mean of the summed cholinergic EM input synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for T5 dendrites the D\u03b17 puncta exhibited 60 synapses less on average when compared to the mean of the summed cholinergic EM input synapse (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "f7317b77-47d3-4135-b4e2-9ef0325434de",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C40",
+      "claim": "The FlpTag cassette is a protein trap cassette consisting of a central GFP tag placed between a splice acceptor (SA) and splice donor (SD), flanked by specific Frt sites forming a FLEX-switch for stable inversion.",
+      "claim_type": "EXPLICIT",
+      "source": "The FlpTag cassette is a protein trap cassette consisting of a central GFP tag placed between a splice acceptor (SA) and splice donor (SD), flanked by specific Frt sites forming a FLEX-switch for stable inversion (Figure 5A, upper panel) (Schn\u00fctgen et al., 2003; Xue et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citations to Schn\u00fctgen et al., 2003; Xue et al., 2014 and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "b94d573a-681e-4a41-ad8d-f661979fc320",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C41",
+      "claim": "The FlpTag cassette is integrated into an intronic coding region of interest by recombinase mediate cassette exchange (RMCE) in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The FlpTag cassette is integrated into an intronic coding region of interest by recombinase mediate cassette exchange (RMCE) in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "847a3d2a-618d-498f-ba15-374896889b3a",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C42",
+      "claim": "The distribution pattern of GluCl\u03b1 seen with the FlpTag line is virtually identical to the UAS-GluCl\u03b1::GFP genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution pattern of GluCl\u03b1 seen here is virtually identical to the UAS-GluCl\u03b1::GFP genotype: GluCl\u03b1 is localized to T4 dendrites, the T5 dendrite area is devoid of GluCl\u03b1 signal, and T4/T5 axon terminals in the lobula plate co-localize with GluCl\u03b1 (Figure 5B, compare with Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown by comparing Figures 5B and 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "a2f9b082-c51a-4136-9113-0d5f9abdb236",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C43",
+      "claim": "The metabotropic GABA receptor subunit Gaba-b-r1 is the most highly expressed GABA receptor subunit in T4/T5 neurons after Rdl.",
+      "claim_type": "EXPLICIT",
+      "source": "The metabotropic GABA receptor subunit Gaba-b-r1 is the most highly expressed GABA receptor subunit in T4/T5 neurons after Rdl (Pankova and Borst, 2016; Davis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Pankova and Borst, 2016; Davis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "754aab47-dd03-417e-9871-6b56b14ebeac",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C44",
+      "claim": "Gaba-b-r1 is one out of three G-protein-coupled GABA receptor subunits described in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Gaba-b-r1 is one out of three G-protein-coupled GABA receptor subunits described in Drosophila and has been shown to be involved in sleep and appetitive long-term memory (Mezler et al., 2001; Kim et al., 2017; Pavlowsky et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Mezler et al., 2001; Kim et al., 2017; Pavlowsky et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "49a0e1ae-0be2-4b02-83f5-5caac1bf6bba",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C45",
+      "claim": "No Gaba-b-r1::GFP signal was observed in T4/T5 dendrites or axons upon cell-type specific, FLP-dependent inversion of the FlpTag cassette in T4/T5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon cell-type specific, FLP-dependent inversion of the FlpTag cassette in T4/T5 neurons, we could not observe any Gaba-b-r1::GFP signal in T4/T5 dendrites or axons (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "88c1385a-3e87-4525-882d-a3ed055a0292",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C46",
+      "claim": "Paralytic (para) is the only voltage-gated sodium channel described in Drosophila and highly expressed in T4/T5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Paralytic (para) is the only voltage-gated sodium channel described in Drosophila and highly expressed in T4/T5 neurons (Pankova and Borst, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Pankova and Borst, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "3bfe6922-4313-43b3-b893-78f03a9ddace",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C47",
+      "claim": "Para is required for the generation of sodium-dependent action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "It is required for the generation of sodium-dependent action potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and represents established knowledge about para.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "655e9a3b-8b18-4513-ac10-7fcecd1dc061",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C48",
+      "claim": "In the T4/T5 specific FlpTag genotype, para is strongly expressed in the axonal fibers connecting dendrites and axon terminals in T4/T5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the T4/T5 specific FlpTag genotype, para is strongly expressed in the axonal fibers connecting dendrites and axon terminals in T4/T5 neurons (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "aa5baf73-9c9e-4c21-babd-cd7d4b2dda18",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C49",
+      "claim": "Ih is a voltage-gated, hyperpolarization-activated ion channel which is highly expressed in T4/T5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Ih is a voltage-gated, hyperpolarization-activated ion channel which is highly expressed in T4/T5 neurons (Chen and Wang, 2012; Hu et al., 2015; Pankova and Borst, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Chen and Wang, 2012; Hu et al., 2015; Pankova and Borst, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "e5e2047e-4edf-4b85-823e-f8ed64b51a63",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C50",
+      "claim": "In the T4/T5-specific FlpTag genotype, Ih is localized to the T4 and T5 dendrite area in medulla layer 10 and lobula plate layer 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the T4/T5-specific FlpTag genotype, Ih is localized to the T4 and T5 dendrite area in medulla layer 10 and lobula plate layer 1 (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "a7f097d1-4eea-4c1b-a377-6ebc86b502a8",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C51",
+      "claim": "The receptor subunits GluCl\u03b1, Rdl, and D\u03b17 reveal a distinct distribution profile along the dendrites of individual T4/T5 cells that can be assigned to specific input neurons forming synapses in this area.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the dendrites of individual T4/T5 cells, the receptor subunits GluCl\u03b1, Rdl, and D\u03b17 reveal a distinct distribution profile that can be assigned to specific input neurons forming synapses in this area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and is a summary of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "30f9addb-f2a5-495e-9a40-59a71050dcf4",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C52",
+      "claim": "The subcellular distribution of GluCl\u03b1, Rdl and D\u03b17 matched the previously reported EM-reconstructed synapse distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered a strictly segregated subcellular distribution of these proteins and a sequential spatial arrangement of glutamate, acetylcholine, and GABA receptors along the dendrite that matched the previously reported EM-reconstructed synapse distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and represents a key finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "2d44be77-1e7a-4c27-9304-7958d3d410b5",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C53",
+      "claim": "T4/T5 dendrites span around eight columns collecting signals from several presynaptic input neurons, each of which samples information from visual space in a retinotopic manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Both T4 and T5 dendrites span around eight columns collecting signals from several presynaptic input neurons, each of which samples information from visual space in a retinotopic manner (Haag et al., 2016; Shinomiya et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Haag et al., 2016; Shinomiya et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "ea1f3529-3631-4ff4-b209-d3ccac9bcb3a",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C54",
+      "claim": "T4 dendrites receive glutamatergic, GABAergic and cholinergic input.",
+      "claim_type": "EXPLICIT",
+      "source": "T4 dendrites receive glutamatergic, GABAergic and cholinergic input, whereas T5 dendrites receive GABAergic and cholinergic input only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "b2c3337c-495b-4975-bebd-16a6ee905ca9",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C55",
+      "claim": "T5 dendrites receive GABAergic and cholinergic input only.",
+      "claim_type": "EXPLICIT",
+      "source": "T4 dendrites receive glutamatergic, GABAergic and cholinergic input, whereas T5 dendrites receive GABAergic and cholinergic input only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "f04e85a4-b122-4f70-8a7e-123ac38010b7",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C56",
+      "claim": "Input synapses to T4/T5 are arranged in a specific spatial order along T4/T5 dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "These input synapses are arranged in a specific spatial order along T4/T5 dendrites (s. Figure 1C and D; for overview Takemura et al., 2017; Shinomiya et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citations to Takemura et al., 2017; Shinomiya et al., 2019 and shown in Figures 1C and D.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "aa47aeca-f7e6-494a-8163-23021c4091cc",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C57",
+      "claim": "mRNA and protein levels are regulated in complex ways via post-transcriptional, translational, and protein degradation mechanisms making it difficult to assign protein levels to RNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RNA-sequencing studies do not unambiguously answer the above question for two reasons: mRNA and protein levels are regulated in complex ways via post-transcriptional, translational, and protein degradation mechanisms making it difficult to assign protein levels to RNA levels (Vogel and Marcotte, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Vogel and Marcotte, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "304d4ab2-f150-4bb2-bff8-11364d4be062",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C58",
+      "claim": "Standard RNA-sequencing techniques cannot provide spatial information about receptor localizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, standard RNA-sequencing techniques cannot provide spatial information about receptor localizations, hence, they are not sufficient to conclude which transmitter receptors receive which input signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "fca46fbb-465c-46f8-9503-4dcf59323081",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C59",
+      "claim": "At an algorithmic level, a three-arm detector model is sufficient to describe how direction-selective responses in T4/T5 neurons arise.",
+      "claim_type": "EXPLICIT",
+      "source": "At an algorithmic level, a three-arm detector model is sufficient to describe how direction-selective responses in T4/T5 neurons arise (Arenz et al., 2017; Haag et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Arenz et al., 2017; Haag et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "90b43403-5b3d-465e-b339-fca8a8e69ae6",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C60",
+      "claim": "The three-arm detector model relies on the comparison of signals originating from three neighboring points in space via a delay-and-compare mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This model relies on the comparison of signals originating from three neighboring points in space via a delay-and-compare mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "a2e58358-6148-4554-a16d-2a3f4a7e78b3",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C61",
+      "claim": "Mi9 has an OFF-center receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since Mi9 has an OFF-center receptive field (Arenz et al., 2017; Richter et al., 2018; Drews et al., 2020), this glutamatergic synapse will invert the polarity from Mi9-OFF to T4-ON.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Arenz et al., 2017; Richter et al., 2018; Drews et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "3bfebb39-ea5e-4e36-a393-4497096e690f",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C62",
+      "claim": "The RNAi-knock-down of GluCl\u03b1 in T4/T5 neurons leads to enhanced turning responses on the ball set-up for faster speeds of repeating ON and OFF edges.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, Strother et al. showed that the RNAi- knock-down of GluCl\u03b1 in T4/T5 neurons leads to enhanced turning responses on the ball set-up for faster speeds of repeating ON and OFF edges (Strother et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Strother et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "363f1bad-ff65-41f0-9c62-34f190bc8a39",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C63",
+      "claim": "Glutamatergic LPi neurons receive a cholinergic, excitatory signal from T4/T5 neurons within one layer and inhibit lobula plate tangential cells via GluCl\u03b1 in the adjacent oppositely tuned layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutamatergic LPi neurons are known to receive a cholinergic, excitatory signal from T4/T5 neurons within one layer and to inhibit lobula plate tangential cells, the downstream postsynaptic partners of T4/T5 neurons, via GluCl\u03b1 in the adjacent oppositely tuned layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "a71f2ad2-6d79-4e52-89c0-66b853c504a0",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C64",
+      "claim": "This mechanism induces a motion opponent response in lobula plate tangential cells and increases their flow-field selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism induces a motion opponent response in lobula plate tangential cells and increases their flow-field selectivity (Mauss et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Mauss et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "0f7acbf8-b2d0-472d-8fa1-25b4353f322e",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C65",
+      "claim": "Inhibition via GABA plays an essential role in creating direction-selective responses in both T4 and T5 neurons by providing null direction suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, inhibition via GABA plays an essential role in creating direction-selective responses in both T4 and T5 neurons (Fisher et al., 2015a; Arenz et al., 2017; Strother et al., 2017; Gruntman et al., 2018) by providing null direction suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Fisher et al., 2015a; Arenz et al., 2017; Strother et al., 2017; Gruntman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "7e5d1ef2-c07f-4a90-81fa-6e2c6c14ee41",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C66",
+      "claim": "Computer simulations showed that direction selectivity decreases in T4/T5 motion detector models without inhibitory input on the null side of the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Computer simulations showed that direction selectivity decreases in T4/T5 motion detector models without this inhibitory input on the null side of the dendrite (Arenz et al., 2017; Borst, 2018; Strother et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Arenz et al., 2017; Borst, 2018; Strother et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "4b28df4b-136d-465e-ae84-14179e2133a6",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C67",
+      "claim": "All of the receptor subunits GluCl\u03b1, Rdl and D\u03b17 investigated are ionotropic, fast receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, all of the receptor subunits GluCl\u03b1, Rdl and D\u03b17 investigated here are ionotropic, fast receptors, which presumably do not add a temporal delay at the synaptic level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "6019fc32-21db-40da-801a-cb9801fa0a35",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C68",
+      "claim": "Ih channels are activated at negative potentials below \u221250 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Ih channels are activated at negative potentials below \u221250 mV and as they are permeable to sodium and potassium ions, they can cause a depolarization of the cell after hyperpolarization (Magee, 1999; Littleton and Ganetzky, 2000; George et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Magee, 1999; Littleton and Ganetzky, 2000; George et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "d8d7d0ef-f6dc-4442-8679-1975c7663786",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C69",
+      "claim": "There are MiMIC insertions in coding introns for more than 2800 genes available, which covers approximately 24% of neuronal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As of now, there are MiMIC insertions in coding introns for more than 2800 genes available, which covers approximately 24% of neuronal genes (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015a; Fisher et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Venken et al., 2011; Nagarkar-Jaiswal et al., 2015a; Fisher et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "f582fff4-ce38-4927-8aed-d60e798e81aa",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C70",
+      "claim": "The FlpTag approach is generalizable and can be expanded to many genes with MiMIC insertion sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that the FlpTag approach is generalizable and can be expanded to many genes with MiMIC insertion sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and is a key conclusion of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "8b17c1d9-25fb-4410-964c-062b0988072e",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C71",
+      "claim": "Overexpression of GFP-tagged GluCl\u03b1, introduced as a transgene, leads to a subcellular localization pattern that seems to be identical to the endogenous GluCl\u03b1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, overexpression of GFP-tagged GluCl\u03b1, introduced as a transgene, leads to a subcellular localization pattern that seems to be identical to the endogenous GluCl\u03b1 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and is based on comparison with MiMIC and FlpTag lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "d1061a8c-0b66-4d35-8e0b-494b2265ed83",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C72",
+      "claim": "The UAS-D\u03b17::GFP line cannot be used to define the exact composition of ACh receptor subunits of cholinergic synapses, but labels (nicotinic) ACh receptors in general.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the UAS-D\u03b17::GFP line can be used to study the distribution of cholinergic synapses, but not the exact composition of cholinergic receptor subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and is based on the Mi1 overexpression experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "5901aeca-1346-4f58-8014-ebd6f385e3dd",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C73",
+      "claim": "Rdl is not expressed in the lamina monopolar neuron L1.",
+      "claim_type": "EXPLICIT",
+      "source": "According to RNA-sequencing, Rdl is not expressed in the lamina monopolar neuron L1 (Davis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Davis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "6c7adfb5-d1ff-4067-a0e8-db44e737a5a5",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C74",
+      "claim": "When UAS-Rdl::GFP was overexpressed by means of a L1-Gal4 driver line, Rdl signal is not detectable in L1 dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "When we overexpressed UAS-Rdl::GFP by means of a L1-Gal4 driver line, Rdl signal is not detectable in L1 dendrites (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "19bc03b8-f7bc-4431-a230-65960870676d",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C75",
+      "claim": "Overexpressed Rdl only localizes to endogenous GABA synapses that are composed of the Rdl subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that overexpressed Rdl only localizes to endogenous GABA synapses that are composed of the Rdl subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the L1 overexpression experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "e4c7bfe4-51d5-44f8-8bbb-3c6cbc1bd57e",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C76",
+      "claim": "D\u03b17 is not expressed in Mi1.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptomic data revealed that D\u03b17 is not expressed in Mi1 (Davis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Davis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "9123c169-5a09-4e89-8251-f30ebf8cdbe7",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C77",
+      "claim": "Mi1 receives cholinergic input from L3 and L5 and expresses several different ACh receptor subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Mi1 receives cholinergic input from L3 and L5 and expresses several different ACh receptor subunits (Takemura et al., 2017; Shinomiya et al., 2019; Davis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citations to Takemura et al., 2017; Shinomiya et al., 2019; Davis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "500dc811-ad2a-4e2b-b98c-afb1a0ed2379",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C78",
+      "claim": "When UAS-D\u03b17::GFP was overexpressed in Mi1, D\u03b17 localized to layers 1 and 5 of the medulla, where the dendrites of Mi1 neurons arborize and receive cholinergic input from L3 and L5.",
+      "claim_type": "EXPLICIT",
+      "source": "When UAS-D\u03b17::GFP was overexpressed in Mi1, D\u03b17 localized to layers 1 and 5 of the medulla, where the dendrites of Mi1 neurons arborize and receive cholinergic input from L3 and L5 (Takemura et al., 2017; Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citation to Takemura et al., 2017 and shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "ecd2c438-d286-4933-9086-33d3fb150033",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C79",
+      "claim": "The FlpTag cassette can be knocked-in into any desired locus through HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Through HDR the FlpTag cassette can be knocked-in into any desired locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "5b772aaa-5c0b-4804-a207-a49fc3d5119f",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C80",
+      "claim": "Most fly lines with an extra copy of GFP-tagged protein-coding genes worked normally and GFP-tagged proteins could be imaged in living fly embryos and pupae.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the FlyFos project demonstrated that most fly lines with an extra copy of GFP-tagged protein-coding genes worked normally and GFP-tagged proteins could be imaged in living fly embryos and pupae (Sarov et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Sarov et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "4471d5dd-cec3-4ac9-aaf7-308568c2cb84",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C81",
+      "claim": "The tools generated here can be used as specific postsynaptic markers, visualizing glutamatergic, GABAergic, and cholinergic synapses with standard confocal light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the tools generated here can be used as specific postsynaptic markers, visualizing glutamatergic, GABAergic, and cholinergic synapses with standard confocal light microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "f429f188-ba20-41c2-8930-a8d36d202356",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C82",
+      "claim": "In darkness, Mi9 inhibits T4 via glutamate and GluCl\u03b1, and this inhibition is released upon an ON-edge moving into its receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretically, in darkness, Mi9 inhibits T4 via glutamate and GluCl\u03b1, and this inhibition is released upon an ON-edge moving into its receptive field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "82e58cd7-e5ad-4022-ae67-59995a995d57",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C83",
+      "claim": "The concomitant closure of chloride channels and subsequent increased input resistance in T4 cells results in an amplification of a subsequent excitatory input signal from Mi1 and Tm3.",
+      "claim_type": "EXPLICIT",
+      "source": "The concomitant closure of chloride channels and subsequent increased input resistance in T4 cells results in an amplification of a subsequent excitatory input signal from Mi1 and Tm3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "288bfb74-1b41-4500-8353-3760d4a328e3",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C84",
+      "claim": "This biophysical mechanism can account for preferred direction enhancement in T4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by a recent modeling study, this biophysical mechanism can indeed account for preferred direction enhancement in T4 cells (Borst, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with citation to Borst, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "988733cf-345c-4f0e-95c2-16ff5b8379fb",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C85",
+      "claim": "LPi neurons could inhibit T4/T5 neurons presynaptically at their axon terminals via GluCl\u03b1 in order to further sharpen the flow-field selectivity of lobula plate tangential cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, LPi neurons could also inhibit T4/T5 neurons presynaptically at their axon terminals via GluCl\u03b1 in order to further sharpen the flow-field selectivity of lobula plate tangential cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the presence of GluCl\u03b1 in T4/T5 axon terminals.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "3c8d18b4-486d-48ae-9dbb-679b8277a833",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "claim_id": "C86",
+      "claim": "The 60 synapses from Tm9 to T5 could potentially be formed via different cholinergic receptors other than D\u03b17, for instance muscarinic ACh receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These 60 synapses could potentially be formed via different cholinergic receptors other than D\u03b17, for instance muscarinic ACh receptors (Davis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the discrepancy in D\u03b17 puncta numbers in T5.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9c648369-3145-410c-9b63-d99939af855b",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GluCl\u03b1 is localized to T4 dendrites at the distal tips in discrete puncta matching Mi9 glutamatergic synapses, is absent from T5 dendrites, and is present in both T4 and T5 axon terminals. The number of GluCl\u03b1 puncta (mean: 20.5) closely matches the number of Mi9-T4 synapses (mean: 23).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18 provide converging evidence from imaging (Figures 2A-D), quantification (Figure 2F), and comparison with EM data. The spatial distribution, puncta counts, and absence in T5 dendrites are all well-documented and consistent with the glutamatergic connectivity pattern from prior EM studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "ca34aef3-5e8d-4b56-b32a-14d5946659b7",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Rdl is expressed in both T4 and T5 dendrites on the proximal base and central area, but not in axon terminals. The number of Rdl receptor clusters (roughly 40) matches the sum of GABAergic input synapses to T4 (mean: 40.45) and T5 (mean: 37).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 are supported by imaging data (Figures 3A-C) and quantification (Figure 3E) showing Rdl distribution matching GABAergic synapse locations from EM data. The correspondence between receptor cluster counts and synapse numbers provides strong validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "029d6257-1141-426f-acba-2ae3bc71ee11",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "D\u03b17 is distributed to both T4 and T5 dendrites in the central area and distal tips, absent from the proximal base and axon terminals. For T4, D\u03b17 puncta (mean: 88.4) match cholinergic synapses (mean: 86.9), but for T5, D\u03b17 puncta are 60 synapses fewer than total cholinergic inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 are supported by imaging (Figures 4A-C) and quantification (Figure 4E). The match in T4 and discrepancy in T5 are both documented. The authors provide a plausible explanation for the T5 discrepancy (C86), suggesting other receptor types may be involved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "fa8dcdf1-173c-4510-8a5c-c5f9950cca1b",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FlpTag is a generalizable conditional protein tagging method using a FLEx-switch cassette integrated via RMCE into MiMIC sites or via CRISPR-HDR. The FlpTag-GluCl\u03b1 line produces distribution patterns virtually identical to UAS-GluCl\u03b1::GFP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42, C70, C79 describe the FlpTag method with supporting data (Figure 5) and validation showing identical patterns between FlpTag and UAS lines. The generalizability is demonstrated through successful generation of multiple lines (GluCl\u03b1, Gaba-b-r1, para, Ih).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "5e4420c6-b013-46ec-ba3b-40360f154088",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "No Gaba-b-r1::GFP signal was observed in T4/T5 dendrites or axons using the FlpTag approach, despite RNA-seq data indicating expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is supported by imaging data (Figure 6B) showing absence of signal. The authors acknowledge the discrepancy with RNA-seq data (C43), suggesting protein levels may not match mRNA levels or the protein may be below detection threshold.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "b46b2bbf-a21f-4ff9-8db1-d8aa4042bb36",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Para is strongly expressed in the axonal fibers connecting dendrites and axon terminals in T4/T5 neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by FlpTag imaging data (Figure 6D) showing para localization to axonal fibers. This is consistent with para's role in action potential generation (C47).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "7cfe813e-d4d4-48d6-8578-f78e41f0a70d",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ih is localized to T4 and T5 dendrite areas in medulla layer 10 and lobula plate layer 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by FlpTag imaging data (Figure 6F) showing Ih localization to dendritic regions. This is consistent with Ih's role in modulating postsynaptic potentials (C8, C68).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "375cd74b-8d47-4ed1-9062-34c8ce63b96e",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The receptor subunits GluCl\u03b1, Rdl, and D\u03b17 show distinct, segregated subcellular distributions along T4/T5 dendrites that match EM-reconstructed synapse distributions and can be assigned to specific input neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 represent the main conclusion, supported by the combined data from all three receptor distributions (Figures 2-4, 7). The spatial segregation and correspondence with EM data provide strong evidence for this integrative finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "5b5e847f-eab9-4703-a00e-96594a9a3376",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Overexpression of UAS-GluCl\u03b1::GFP leads to subcellular localization patterns identical to endogenous GluCl\u03b1 protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by comparison of UAS, MiMIC, and FlpTag lines (Figure 2\u2014figure supplement 1) showing similar expression patterns and quantification (Figure 2\u2014figure supplement 1D) showing no significant differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "10924b8a-de8b-4e03-9ca2-1e91b2964cc3",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The UAS-D\u03b17::GFP line labels cholinergic synapses in general but does not report endogenous D\u03b17 subunit composition, as overexpressed D\u03b17::GFP localizes to cholinergic synapses even in neurons lacking endogenous D\u03b17.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C36, C76-C78 are supported by control experiments in Mi1 (Figure 4\u2014figure supplement 1D) showing D\u03b17::GFP localization to cholinergic synapses despite absence of endogenous D\u03b17 mRNA. This important caveat is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "051abb26-124e-4211-afd0-7d9228b37520",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Overexpressed Rdl only localizes to endogenous GABA synapses composed of Rdl subunit, as demonstrated by absence of Rdl signal in L1 dendrites which lack endogenous Rdl expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 are supported by control experiments in L1 (Figure 3\u2014figure supplement 1) showing no Rdl signal in dendrites despite overexpression, consistent with RNA-seq data showing no endogenous expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "7d2152e6-d73c-457d-beaa-8c46e2db9ed0",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mi9 inhibits T4 via GluCl\u03b1 in darkness, and release of this inhibition upon ON-edge stimulation increases input resistance, amplifying subsequent excitatory signals from Mi1 and Tm3, accounting for preferred direction enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C84 present a theoretical mechanism supported by modeling (C84, Borst 2018) but lack direct experimental validation in this study. The mechanism is plausible given the receptor localization data, but remains speculative without functional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "b25b534c-87a1-4088-a39e-5913aad3b67b",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "LPi neurons could inhibit T4/T5 neurons presynaptically at axon terminals via GluCl\u03b1 to sharpen flow-field selectivity of lobula plate tangential cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is speculative, proposed to explain the presence of GluCl\u03b1 in T4/T5 axon terminals (C14, C15). While plausible based on known LPi connectivity (C63-C64), this hypothesis lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "0d9ecbfd-bdc9-47fc-be92-f01881923d6f",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The 60 missing D\u03b17 puncta in T5 could represent synapses formed via different cholinergic receptors such as muscarinic ACh receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is speculative, proposed to explain the discrepancy between D\u03b17 puncta and total cholinergic synapses in T5 (C39). While plausible given that T5 expresses multiple ACh receptor subunits (C34), this remains unverified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "0e9fe929-67c0-485e-9583-07b93b783570",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "T4 and T5 neurons are direction-selective cells with specific anatomical organization and synaptic connectivity patterns, receiving glutamatergic, GABAergic, and cholinergic inputs in spatially organized arrangements along their dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C10, C13, C19-C21, C26-C31, C53-C56 summarize established knowledge from prior EM and functional studies (cited throughout). These provide essential context for interpreting the receptor localization findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Neurotransmitter receptors and ion channels have diverse functional properties, and RNA-seq data have limitations in determining protein localization and levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8, C22, C32-C34, C46-C47, C49, C57-C58, C67-C68 represent established knowledge about receptor/channel properties and methodological considerations, all supported by appropriate citations. These provide important background for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "e91ff943-4bb3-41b3-8359-3388217edbc2",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Direction selectivity in T4/T5 neurons is explained by a three-arm detector model involving spatially organized excitatory and inhibitory inputs, with GABA providing null direction suppression and glutamate contributing to preferred direction enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C66 summarize prior functional and modeling work (extensively cited) that provides the computational framework for interpreting the receptor localization findings. These are well-established results from the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    },
+    {
+      "id": "83ea5741-f4e5-47ab-b48b-87ef85867a3a",
+      "content_id": "0a4f8802-3748-4f5d-91fc-9310260a5043",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The FlpTag approach can be applied to >2800 genes with MiMIC insertions, and the generated tools can serve as postsynaptic markers for visualizing different synapse types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C80-C81 describe the potential applications and generalizability of the FlpTag method, supported by the successful generation of multiple lines and comparison with existing resources (cited appropriately).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:42:22.302521Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a86e3d79-0579-4fed-b783-90e2074e49b5",
+      "result_id": "9c648369-3145-410c-9b63-d99939af855b"
+    },
+    {
+      "claim_id": "8152571c-c0f0-482b-9d99-2ddfc7b4cebe",
+      "result_id": "9c648369-3145-410c-9b63-d99939af855b"
+    },
+    {
+      "claim_id": "f579bc51-517f-4e2a-aaa8-603e5a2cf2db",
+      "result_id": "9c648369-3145-410c-9b63-d99939af855b"
+    },
+    {
+      "claim_id": "1f068b96-bbbd-4e94-ac7d-1e198eb31e8b",
+      "result_id": "9c648369-3145-410c-9b63-d99939af855b"
+    },
+    {
+      "claim_id": "c6b0962b-54e8-4446-a053-407853428f94",
+      "result_id": "9c648369-3145-410c-9b63-d99939af855b"
+    },
+    {
+      "claim_id": "b1426fab-4d7f-4f36-a3d8-c54532c2fbde",
+      "result_id": "9c648369-3145-410c-9b63-d99939af855b"
+    },
+    {
+      "claim_id": "4e30088c-6976-46e9-acc3-10a786090588",
+      "result_id": "9c648369-3145-410c-9b63-d99939af855b"
+    },
+    {
+      "claim_id": "baf12d5c-2f7a-4ace-aee6-8973bc4444c3",
+      "result_id": "9c648369-3145-410c-9b63-d99939af855b"
+    },
+    {
+      "claim_id": "48e686ac-3b65-43ed-8b8f-429f885e1e6e",
+      "result_id": "ca34aef3-5e8d-4b56-b32a-14d5946659b7"
+    },
+    {
+      "claim_id": "f0e399df-5d9b-42d6-8ec2-f03b58a71c1a",
+      "result_id": "ca34aef3-5e8d-4b56-b32a-14d5946659b7"
+    },
+    {
+      "claim_id": "23177292-2115-4343-9c00-afa7fe86cb0c",
+      "result_id": "ca34aef3-5e8d-4b56-b32a-14d5946659b7"
+    },
+    {
+      "claim_id": "e0919e5e-edbc-440c-8f49-e0d312ab478b",
+      "result_id": "029d6257-1141-426f-acba-2ae3bc71ee11"
+    },
+    {
+      "claim_id": "16ce83f3-e910-496a-af21-f76aba4b2d55",
+      "result_id": "029d6257-1141-426f-acba-2ae3bc71ee11"
+    },
+    {
+      "claim_id": "4824d2a1-80c9-4dd6-bc7c-153d6acf0aad",
+      "result_id": "029d6257-1141-426f-acba-2ae3bc71ee11"
+    },
+    {
+      "claim_id": "7ee46ce8-8599-4a4b-9d7e-f91451f7e5a7",
+      "result_id": "029d6257-1141-426f-acba-2ae3bc71ee11"
+    },
+    {
+      "claim_id": "f7317b77-47d3-4135-b4e2-9ef0325434de",
+      "result_id": "fa8dcdf1-173c-4510-8a5c-c5f9950cca1b"
+    },
+    {
+      "claim_id": "b94d573a-681e-4a41-ad8d-f661979fc320",
+      "result_id": "fa8dcdf1-173c-4510-8a5c-c5f9950cca1b"
+    },
+    {
+      "claim_id": "847a3d2a-618d-498f-ba15-374896889b3a",
+      "result_id": "fa8dcdf1-173c-4510-8a5c-c5f9950cca1b"
+    },
+    {
+      "claim_id": "f582fff4-ce38-4927-8aed-d60e798e81aa",
+      "result_id": "fa8dcdf1-173c-4510-8a5c-c5f9950cca1b"
+    },
+    {
+      "claim_id": "ecd2c438-d286-4933-9086-33d3fb150033",
+      "result_id": "fa8dcdf1-173c-4510-8a5c-c5f9950cca1b"
+    },
+    {
+      "claim_id": "49a0e1ae-0be2-4b02-83f5-5caac1bf6bba",
+      "result_id": "5e4420c6-b013-46ec-ba3b-40360f154088"
+    },
+    {
+      "claim_id": "655e9a3b-8b18-4513-ac10-7fcecd1dc061",
+      "result_id": "b46b2bbf-a21f-4ff9-8db1-d8aa4042bb36"
+    },
+    {
+      "claim_id": "e5e2047e-4edf-4b85-823e-f8ed64b51a63",
+      "result_id": "7cfe813e-d4d4-48d6-8578-f78e41f0a70d"
+    },
+    {
+      "claim_id": "a7f097d1-4eea-4c1b-a377-6ebc86b502a8",
+      "result_id": "375cd74b-8d47-4ed1-9062-34c8ce63b96e"
+    },
+    {
+      "claim_id": "30f9addb-f2a5-495e-9a40-59a71050dcf4",
+      "result_id": "375cd74b-8d47-4ed1-9062-34c8ce63b96e"
+    },
+    {
+      "claim_id": "8b17c1d9-25fb-4410-964c-062b0988072e",
+      "result_id": "5b5e847f-eab9-4703-a00e-96594a9a3376"
+    },
+    {
+      "claim_id": "d1061a8c-0b66-4d35-8e0b-494b2265ed83",
+      "result_id": "10924b8a-de8b-4e03-9ca2-1e91b2964cc3"
+    },
+    {
+      "claim_id": "de68009f-6a9f-4d85-a4c4-4e2a95f27f07",
+      "result_id": "10924b8a-de8b-4e03-9ca2-1e91b2964cc3"
+    },
+    {
+      "claim_id": "e4c7bfe4-51d5-44f8-8bbb-3c6cbc1bd57e",
+      "result_id": "10924b8a-de8b-4e03-9ca2-1e91b2964cc3"
+    },
+    {
+      "claim_id": "9123c169-5a09-4e89-8251-f30ebf8cdbe7",
+      "result_id": "10924b8a-de8b-4e03-9ca2-1e91b2964cc3"
+    },
+    {
+      "claim_id": "500dc811-ad2a-4e2b-b98c-afb1a0ed2379",
+      "result_id": "10924b8a-de8b-4e03-9ca2-1e91b2964cc3"
+    },
+    {
+      "claim_id": "5901aeca-1346-4f58-8014-ebd6f385e3dd",
+      "result_id": "051abb26-124e-4211-afd0-7d9228b37520"
+    },
+    {
+      "claim_id": "6c7adfb5-d1ff-4067-a0e8-db44e737a5a5",
+      "result_id": "051abb26-124e-4211-afd0-7d9228b37520"
+    },
+    {
+      "claim_id": "19bc03b8-f7bc-4431-a230-65960870676d",
+      "result_id": "051abb26-124e-4211-afd0-7d9228b37520"
+    },
+    {
+      "claim_id": "f429f188-ba20-41c2-8930-a8d36d202356",
+      "result_id": "7d2152e6-d73c-457d-beaa-8c46e2db9ed0"
+    },
+    {
+      "claim_id": "82e58cd7-e5ad-4022-ae67-59995a995d57",
+      "result_id": "7d2152e6-d73c-457d-beaa-8c46e2db9ed0"
+    },
+    {
+      "claim_id": "288bfb74-1b41-4500-8353-3760d4a328e3",
+      "result_id": "7d2152e6-d73c-457d-beaa-8c46e2db9ed0"
+    },
+    {
+      "claim_id": "988733cf-345c-4f0e-95c2-16ff5b8379fb",
+      "result_id": "b25b534c-87a1-4088-a39e-5913aad3b67b"
+    },
+    {
+      "claim_id": "3c8d18b4-486d-48ae-9dbb-679b8277a833",
+      "result_id": "0d9ecbfd-bdc9-47fc-be92-f01881923d6f"
+    },
+    {
+      "claim_id": "90e2b054-bfb6-468f-816d-13bb1c67f094",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "cece445d-2132-4c52-b792-53df80c4eb6c",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "6eac0e92-4c11-478e-bf4d-294f78608da1",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "731b9ccb-06d0-409d-96c6-0858d2c9e42b",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "24a01b81-3055-4d9d-9d1f-e247042c7abd",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "f579bc51-517f-4e2a-aaa8-603e5a2cf2db",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "7409a853-074a-4a44-a2bb-0ce16318d580",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "d573c486-9747-4cd3-9b10-d3532fd5b6b6",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "e97659a8-91c8-4183-aac4-09e5a66051aa",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "dd55e63c-6d23-497d-901d-29cfa06992d3",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "c750dfe2-8000-4f93-9309-d88e8148b538",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "f950cc46-f47c-4f22-933a-484385a7128a",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "9e57fe38-6ca4-4b44-88e0-5a6c5f33c6f3",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "db7318a5-f171-40bd-a417-25eb679d8caf",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "b78eef7d-4301-4ea5-91eb-67fb790bba6a",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "2d44be77-1e7a-4c27-9304-7958d3d410b5",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "ea1f3529-3631-4ff4-b209-d3ccac9bcb3a",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "b2c3337c-495b-4975-bebd-16a6ee905ca9",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "f04e85a4-b122-4f70-8a7e-123ac38010b7",
+      "result_id": "0e9fe929-67c0-485e-9583-07b93b783570"
+    },
+    {
+      "claim_id": "7f525cee-557a-4583-b9ca-beefd812fc08",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "d1adee3f-75dd-420d-8105-36ef01bb1080",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "9131fad5-1b15-4363-983c-e95f0ce86e0a",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "5334c789-4ccc-4094-8f6e-4160c011cb51",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "ea2f2277-367c-4a07-ad3e-b74db1d6359a",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "e3ebe09f-7023-4425-9bbf-036db69e04ce",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "ec5c4c5a-fec8-4c5f-ad29-3e6757a6ec49",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "87a4ad2c-9e5a-4750-83b3-507777eb4423",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "65053c0a-2350-46f5-b19a-6f2d239f50a6",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "88c1385a-3e87-4525-882d-a3ed055a0292",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "3bfe6922-4313-43b3-b893-78f03a9ddace",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "aa5baf73-9c9e-4c21-babd-cd7d4b2dda18",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "aa47aeca-f7e6-494a-8163-23021c4091cc",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "304d4ab2-f150-4bb2-bff8-11364d4be062",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "4b28df4b-136d-465e-ae84-14179e2133a6",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "6019fc32-21db-40da-801a-cb9801fa0a35",
+      "result_id": "511f4420-d9c7-4eb4-ab2d-1363e9d6bf0e"
+    },
+    {
+      "claim_id": "fca46fbb-465c-46f8-9503-4dcf59323081",
+      "result_id": "e91ff943-4bb3-41b3-8359-3388217edbc2"
+    },
+    {
+      "claim_id": "90b43403-5b3d-465e-b339-fca8a8e69ae6",
+      "result_id": "e91ff943-4bb3-41b3-8359-3388217edbc2"
+    },
+    {
+      "claim_id": "a2e58358-6148-4554-a16d-2a3f4a7e78b3",
+      "result_id": "e91ff943-4bb3-41b3-8359-3388217edbc2"
+    },
+    {
+      "claim_id": "3bfebb39-ea5e-4e36-a393-4497096e690f",
+      "result_id": "e91ff943-4bb3-41b3-8359-3388217edbc2"
+    },
+    {
+      "claim_id": "363f1bad-ff65-41f0-9c62-34f190bc8a39",
+      "result_id": "e91ff943-4bb3-41b3-8359-3388217edbc2"
+    },
+    {
+      "claim_id": "a71f2ad2-6d79-4e52-89c0-66b853c504a0",
+      "result_id": "e91ff943-4bb3-41b3-8359-3388217edbc2"
+    },
+    {
+      "claim_id": "0f7acbf8-b2d0-472d-8fa1-25b4353f322e",
+      "result_id": "e91ff943-4bb3-41b3-8359-3388217edbc2"
+    },
+    {
+      "claim_id": "7e5d1ef2-c07f-4a90-81fa-6e2c6c14ee41",
+      "result_id": "e91ff943-4bb3-41b3-8359-3388217edbc2"
+    },
+    {
+      "claim_id": "d8d7d0ef-f6dc-4442-8679-1975c7663786",
+      "result_id": "83ea5741-f4e5-47ab-b48b-87ef85867a3a"
+    },
+    {
+      "claim_id": "5b772aaa-5c0b-4804-a207-a49fc3d5119f",
+      "result_id": "83ea5741-f4e5-47ab-b48b-87ef85867a3a"
+    },
+    {
+      "claim_id": "4471d5dd-cec3-4ac9-aaf7-308568c2cb84",
+      "result_id": "83ea5741-f4e5-47ab-b48b-87ef85867a3a"
+    }
+  ],
+  "comparisons": []
+}

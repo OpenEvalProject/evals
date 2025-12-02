@@ -1,0 +1,173 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the background context for studying antibiotic resistance in E. faecalis, including the clinical relevance of the organism, mechanisms of resistance, density-dependent effects, and prior work on collective resistance and pH-mediated effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 are all supported by appropriate citations to prior work and represent established knowledge in the field. These background claims provide the scientific foundation and motivation for the current study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors engineered drug-resistant E. faecalis strains by transforming OG1RF with a plasmid constitutively expressing \u03b2-lactamase, and developed a continuous culture device to measure population dynamics under controlled drug influx conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C60-C68 describe the experimental methods and are supported by detailed descriptions in the Materials and Methods section. The strain construction is appropriately referenced, and the experimental setup is clearly described with sufficient detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Sensitive and resistant E. faecalis strains exhibit opposing density-dependent responses to ampicillin: sensitive strains show a reverse inoculum effect (increased inhibition at higher densities), while resistant strains show a classical inoculum effect (decreased inhibition at higher densities).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are directly supported by experimental data in Figure 1A-B showing IC50 measurements and growth rate measurements at different densities. The opposing density-dependent effects are clearly demonstrated and form the foundation for the subsequent modeling and experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C29"
+    ],
+    "result": "In constant drug influx experiments, high-density and low-density populations of resistant cells exhibit divergent behavior, with high-density populations surviving and low-density populations collapsing, and IC50 values differ significantly between sensitive and resistant populations even at low densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C29 are supported by experimental data in Figure 1D and Figure 1A. The bistable behavior of resistant populations at different initial densities is clearly demonstrated, and the intrinsic differences in IC50 are quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C20",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A mathematical model predicts that competing density-dependent effects create bistable dynamics, including 'inverted bistability' where low-density populations survive while high-density populations collapse at low drug influx rates, and 'normal bistability' where high-density populations survive at high drug influx rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C20, C31, C33-C38 describe predictions from the mathematical model shown in Figures 2-3. The model is clearly described with equations, and bifurcation analysis supports the existence of different bistable regimes. The qualitative features are shown to be robust across alternative model formulations (Figure 3 supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Experiments confirm the existence of both predicted bistable regimes (normal and inverted) as well as regions of survival and extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by experimental data in Figures 3B-C showing time series at different initial densities, resistant fractions, and drug influx rates. The experiments demonstrate both types of bistability predicted by the model, with appropriate replication (N=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Collapsing populations do not entirely go extinct but contain living cells with similar resistance characteristics to the original strains. Mathematical models predict long-lived transient states, and factors not included in the model (pH-dependent ampicillin degradation and \u03b2-lactamase activity) may contribute to the lack of complete extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 acknowledge a discrepancy between model predictions and experimental observations. C42 is supported by experimental data (Figure 3 supplement 7) showing that isolates from collapsed populations retain original resistance characteristics. C43 is supported by modeling (Figure 3 supplement 8). C44-C45 are appropriately cited speculations about model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The inverted bistability depends on the reverse inoculum effect driven by pH changes. When experiments are repeated in strongly buffered media that eliminates pH changes, the inverted bistability disappears and high-density populations survive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 test a key mechanistic prediction of the model. C46 is supported by modeling (Figure 4A), C47 by prior work (appropriately cited), and C48 by experimental data (Figure 4B) showing that buffered media eliminates the collapse of high-density populations, confirming the pH-dependence of the inverted bistability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Delaying antibiotic treatment has opposing effects depending on the regime: at high drug influx with high resistant fractions, immediate treatment is most effective, while at low influx with low resistant fractions, delayed treatment promotes population collapse despite using less total drug.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by experimental data in Figure 5 showing time series and final densities for different treatment delays. The counterintuitive result that delayed treatment can be more effective is clearly demonstrated with appropriate replication. C52 provides a mechanistic interpretation consistent with the pH-mediated density-dependent effects established earlier.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors acknowledge limitations of the in vitro system and discuss the clinical relevance and broader implications of their findings, noting that the response of microbial populations to antibiotics can be surprisingly complex and that resistance spread may not follow simple selection dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 represent appropriate discussion of limitations and broader implications. C53 acknowledges experimental limitations with appropriate citation. C54-C56 discuss the clinical context of \u03b2-lactamase-producing enterococci with appropriate citations. C57 notes a potential complication (horizontal gene transfer) with citations. C58-C59 are reasonable conclusions drawn from the experimental and modeling results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript provides background on G protein structure, function, and activation mechanisms, including the established knowledge that GPCRs trigger G protein activation by stimulating GDP release, and that the allosteric mechanism coupling GPCR- and nucleotide-binding sites (~30 \u00c5 apart) remains incompletely understood despite previous structural and biochemical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 establish the scientific context through well-cited prior work. These background claims are appropriately supported by citations to established literature and represent accepted knowledge in the field. The claims accurately describe the state of understanding prior to the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes that while computational methods have advanced to capture millisecond timescale processes in small proteins and ligand binding/release events, even specialized hardware like ANTON could not capture the complete G protein activation and GDP release process due to the size of G\u03b1q (>300 residues) and slow GDP dissociation kinetics (~10\u207b\u00b3 min\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 accurately describe the state of computational methods and their limitations for studying G protein activation, supported by appropriate citations. This establishes the motivation for the current methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "G\u03b1q was selected as the test system because it has one of the slowest GDP release rates and is frequently mutated in uveal melanoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by appropriate citations and provide clear rationale for the choice of G\u03b1q as the study system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors hypothesized that studying spontaneous GDP release from truncated G\u03b1q (lacking the last 5 residues) would be representative of GPCR-mediated activation while being computationally tractable, based on the principle that spontaneous protein fluctuations encode functionally relevant conformational changes and evidence that the C-terminal residues stabilize the inactive state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 present a well-reasoned hypothesis supported by prior work (C27, C30-C32) and validated by metadynamics simulations showing lower energetic barriers for the truncated variant (C34). The rationale for using truncated G\u03b1q is appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors developed a computational approach combining metadynamics (to broadly sample conformational space), standard MD simulations seeded from metadynamics pathways (122.6 \u03bcs aggregate), and Markov state models (to extract thermodynamic and kinetic information) to capture the entire mechanism of G protein activation including GDP release and the rate-limiting step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C35-C40 describe a methodologically sound approach that addresses the limitations of metadynamics alone (C36) by combining it with unbiased simulations and MSMs. The approach is supported by citations to relevant methodology (C38-C39) and represents a novel application to this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The manuscript describes detailed simulation protocols including system preparation from crystal structure 3AH8, removal of G\u03b2\u03b3 subunits and first 36 residues, addition of Mg\u00b2\u207a, use of AMBER03 force field, 35.3 \u03bcs of GDP-bound simulations, metadynamics with two collective variables, extraction of 2085 conformations via string method, and MSM construction with 221,965 states showing Markovian behavior at 5 ns lag time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C111-C127 provide comprehensive methodological details with appropriate citations. The MSM validation (C127) and operational definitions (C42-C43) are clearly described. The methods appear technically sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "During the rate-limiting step for GDP release, the Ras-like and helical domains separate by ~10 \u00c5 (driven by disruption of multiple inter-domain interactions including salt bridges), but this domain opening is necessary but not sufficient for GDP unbinding, suggesting GDP release occurs before the widely opened conformations observed in crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 are supported by simulation data (Figures 2C, 2D, Source data 3) and consistent with prior experimental work (DEER experiments, previous simulations). The finding that ~10 \u00c5 separation is sufficient for GDP release (C50, C52) is a novel insight supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The rate-limiting step for GDP release correlates with tilting of H5 by ~26\u00b0 rather than translation along its helical axis, contrasting with the previously proposed universal mechanism where H5 translation initiates GDP release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 present a key finding supported by simulation data (Figures 3A-C, Source data 1). The distinction between tilting (correlated with rate-limiting step) and translation (not correlated) is clearly demonstrated and represents a significant departure from prior models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The observed H5 tilting is supported by structural data showing similar tilting in rhodopsin-G\u03b1t fragment structures and variable H5 orientations across multiple GPCR-G protein complexes, with the simulation-observed motions falling within the range seen in crystal structures, supporting a role for conformational selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 validate the simulation findings against experimental structures. The consistency with multiple crystal structures (C58-C61) strengthens the biological relevance of the findings. The hypothesis about mini-Gs (C63) is appropriately presented as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors propose that H5 tilting is an early step in GDP release followed by upward translation to form a GPCR-G protein complex primed for GTP binding, based on observations that tilting coincides with the rate-limiting step while translation stabilizes only after GDP dissociates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 present a mechanistic model supported by simulation data (C66, Figure 3C) and consistent with prior suggestions of sequential GPCR interactions (C67). The model appropriately integrates the new findings with existing knowledge, though C68 acknowledges alternative possibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C123",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors applied CARDS analysis to 35.3 \u03bcs of GDP-bound simulations to identify the allosteric network coupling GPCR- and nucleotide-binding sites by measuring correlations between structural and dynamical states of dihedral angles, combined with transition path theory to identify the rate-limiting step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71, C123, C128-C131 describe the application of CARDS methodology (appropriately cited) to identify allosteric networks. The approach is methodologically sound and provides a systematic way to map communication pathways in the inactive protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "H5 tilting directly communicates with the s6h5 loop (which contacts GDP's nucleobase), and during the rate-limiting step, contacts between s6h5 and GDP break with increased disorder particularly in Ala331 of the conserved TCAT motif, consistent with mutagenesis data showing TCAT mutations accelerate GDP release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by simulation data (Figures 4-5, Source data 2-3) and consistent with experimental mutagenesis (C74). The proposed mechanism for TCAT mutations (C75) is a reasonable inference from the structural observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "H1 is strongly coupled with the s6h5 loop, and during the rate-limiting step, s6h5 moves away from H1, contributing to increased disorder in H1 and P-loop residues that contact GDP phosphates, likely reducing GDP affinity and facilitating inter-domain separation through disruption of the Glu49-Arg183 salt bridge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by CARDS analysis (Figure 4B, Source data 2) and structural observations (Figure 2\u2014figure supplements 3A-B). The inferences about reduced GDP affinity (C78) and facilitated domain separation (C79) are reasonable based on the observed structural and dynamical changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The s6h5 loop impacts the nucleotide-binding site through allosteric coupling with the HG helix (contacting GDP via Lys275 and Asp277), with disruption of a key salt bridge between conserved Lys275 and Glu49 during the rate-limiting step, suggesting Lys275 stabilizes the GDP-bound state despite being experimentally intractable to mutate due to aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by simulation data (Figures 4E, 6, Source data 2-3) and consistent with prior observations of HG mobility (C81). The identification of Lys275's role (C86) demonstrates the value of simulations for studying residues difficult to probe experimentally (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The hNs1 loop has strong correlations with \u03b2-strands S1-S3, which communicate with H1, switch 1, and P-loop, while h3s5 and h4s6 loops are largely isolated, suggesting they determine GPCR-G\u03b1 specificity but do not participate in the allosteric mechanism triggering GDP release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by CARDS analysis (Figure 7, Source data 2) and consistent with sequence analysis of GPCR-G\u03b1 specificity determinants (C90). The distinction between specificity determinants and allosteric network components is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "\u03b2-strands S1-S3 twist relative to S1 and away from H1 during the rate-limiting step, disrupting \u03c0-\u03c0 stacking between Phe194 (S2) and His63 (H1) and increasing H1 disorder; these \u03b2-strands and H1 have higher global communication than H5/s6h5, suggesting they integrate information from multiple sources including hNs1, with their conservation reflecting roles in allosteric communication beyond just folding/stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 are supported by simulation data (Figures 2A-B, 7, 9, Source data 2-3) and consistent with prior structural work (C93-C94) and NMR experiments (C93). The identification of \u03b2-sheets as communication hubs (C95-C96) is a novel insight supported by CARDS analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Switch 2 has strong correlations with the nucleotide-binding site (especially switch 1), and during the rate-limiting step shifts toward the nucleotide-binding site with increased disorder, potentially enabling GDP release to trigger G\u03b1-G\u03b2\u03b3 dissociation, consistent with prior kinetic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are supported by CARDS analysis (Figure 7\u2014figure supplement 1, Source data 2) and structural observations (Figure 10, Figure 2B, Source data 3), and consistent with prior kinetic studies (C101). This provides a mechanistic link between GDP release and heterotrimer dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The model is consistent with diverse structural and biochemical data, identifies H5-to-s6h5-to-H1 coupling consistent with the universal mechanism, but expands it to include hNs1 loop, \u03b2-strands S1-S3, and HG helix, with S1-S3 and H1 serving as hubs integrating information from both H5 and hNs1, likely capturing a universal 'skeleton' of G\u03b1 activation by focusing on conserved elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 appropriately synthesize the findings and place them in context of prior work. The model integrates new findings with the universal mechanism while expanding it, and the focus on conserved elements (C107) provides reasonable justification for generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors suggest their model provides a foundation for understanding GPCR-G\u03b1 specificity, disease mutations, and small molecule inhibitors, supports the principle that spontaneous fluctuations encode functional dynamics, and that the metadynamics-MSM combination will be valuable for other slow processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 appropriately discuss implications and future applications. These are reasonable extrapolations from the demonstrated success of the approach, though they represent prospective rather than demonstrated utility.",
+    "result_type": "MINOR"
+  }
+]

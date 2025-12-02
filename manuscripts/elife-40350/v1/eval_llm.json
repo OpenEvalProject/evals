@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors establish through simulation and experimental validation that approximately 2 copies/color/cell is optimal for multicolor labeling when using vector-mediated gene transfer without the Cre-loxP system. This copy number maximizes color variation while maintaining discriminability, with 95.3% of cells distinguishable at a Euclidean distance threshold of 0.1, matching human discrimination ability (94.5 \u00b1 1.73% accuracy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 collectively provide strong computational and experimental support for the optimal copy number. The Poisson distribution model (C32) is appropriately applied and validated through simulations (C33-C36) showing color variation patterns. The Euclidean distance metric (C36-C37) is quantitatively linked to human discrimination performance (C38), providing biological validation. The convergence of simulation predictions and experimental measurements strengthens the conclusion (C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Experimental validation using in utero electroporation demonstrates a fundamental trade-off between fluorescent protein expression levels and color variation in conventional CAG promoter-driven systems. High plasmid concentrations (1 \u03bcg/\u03bcL) produce minimal color variation, while low concentrations (0.25 \u03bcg/\u03bcL) increase variation but drastically reduce fluorescence intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are well-supported by the experimental data shown in Figure 2A-E. The trade-off is clearly demonstrated with quantitative measurements (C42-C43) and appropriate statistical analysis (C51 shows 6-fold difference). This establishes the key problem that Tetbow aims to solve. The experimental design with parallel conditions and consistent imaging parameters strengthens the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C46",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C113"
+    ],
+    "result": "Tetbow overcomes the expression-variation trade-off by using the TRE-tTA system with WPRE sequences, achieving 6-fold higher fluorescence than low-copy CAG constructs while maintaining color variation comparable to low-copy conditions. This enables bright multicolor labeling suitable for high-resolution neuronal tracing without antibody amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C45-C46, C50-C55, and C113 are strongly supported by quantitative data in Figures 2 and 3. The 6-fold increase (C51) is statistically significant (p<0.0001, n=104-260), and color discrimination performance (C55) is demonstrated in Figure 2F. The comparison to Brainbow (C52, Figure 2\u2014supplement 2) validates superiority for axon tracing. The mechanism (TRE-tTA + WPRE) is clearly described and the improvement is substantial and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Optimal Tetbow expression requires moderate tTA levels, with 0.25 \u03bcg/\u03bcL total plasmid concentration and 0.1 \u03bcg/\u03bcL CAG-tTA producing highest XFP expression. Excessive tTA (0.5 \u03bcg/\u03bcL) suppresses TRE-XFP expression, as confirmed by reduced expression when WPRE is added to CAG-tTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by systematic titration experiments shown in Figure 3. The paradoxical finding (C57) is explained mechanistically (C58-C62) with experimental validation (C59, C61). The data show appropriate statistical analysis (Figure 3E: p<0.01-0.001, n=356-414). However, the molecular mechanism of tTA-mediated suppression at high concentrations is not fully elucidated, though the phenomenological observation is clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Tetbow combined with SeeDB2 tissue clearing enables high-resolution 3D visualization of neuronal morphology including dendritic spines and axonal boutons using native fluorescence without antibody staining. SeeDB2 minimizes spherical aberrations and preserves fluorescent proteins better than commercial alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C63-C68 are well-supported by imaging data in Figure 4 and Videos 1-2. The visualization of synaptic structures (spines, boutons) without antibody amplification (C68) is a significant technical achievement demonstrated in adult tissue (P70). The combination rationale (C65) is logical given SeeDB2's properties (C63-C64), though C64 relies on prior publication (Ke et al., 2016) rather than data shown here. Image quality in Figure 4 validates the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Tetbow enables visualization and discrimination of individual mitral/tufted cell dendrites within single glomeruli in the olfactory bulb, where 20-50 M/T cells converge. Different M/T cells are distinguishable by their unique color hues, enabling analysis of sister M/T cell wiring diagrams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by Figure 5 and Video 3. The known anatomy (C69, cited) provides context for the technical achievement. The visualization (C70) is clearly demonstrated, and the capability for wiring analysis (C71) is a reasonable inference from the data. However, C71 states capability rather than demonstrated analysis\u2014actual wiring diagram reconstruction is not shown for glomerular dendrites, only stated as possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "A Tetbow variant using chemical tags (SNAP, Halo, CLIP) enables robust multicolor labeling that remains stable under harsh clearing conditions (3DISCO, BABB) that quench fluorescent proteins. Chemical tags penetrate efficiently into 1mm-thick tissue due to low molecular weight of substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C75-C83 are supported by Figure 6 and supplements. The stability comparison (C82-C83) is clearly demonstrated in Figure 6B across three clearing methods. Penetration into thick tissue (C81) is shown in Figure 6\u2014supplement 2. The mechanism (C76-C78) is established knowledge appropriately cited. However, C82 notes 'data not shown' for fluorescent protein quenching, relying instead on citation, which slightly weakens direct evidence though the comparison in Figure 6B is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Tetbow was successfully adapted for AAV delivery by distributing tTA and TRE-XFP genes across four separate vectors, overcoming the size limitation of AAV packaging. Optimal expression in cortical neurons requires 4\u00d710\u2078 gc/mL AAV-SYN1-tTA and 1-3\u00d710\u00b9\u2070 gc/mL AAV-TRE-XFPs, with virus titer being critical for color variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C84-C94 are supported by Figure 7 and supplements. The AAV design (C86-C88) solves the size problem (C84-C85) elegantly. Titration experiments (C89-C92) are systematic with appropriate statistics (Figure 7C-D: p<0.05-0.001, n=163-220). The caveat about cell-type differences (C93) is appropriately noted with supporting data (Figure 7\u2014supplement 2). High-resolution imaging capability (C94) is demonstrated in Video 4. The approach is technically sound and well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Prolonged Tetbow AAV expression can cause toxicity due to extremely high expression levels, with cortical neurons showing XFP aggregation and morphological abnormalities at 4 weeks, while olfactory bulb neurons tolerate longer expression. Optimal incubation time varies by cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 appropriately document an important limitation of the method. The observation is clearly stated (C96) with specific examples. However, no quantitative data or images of the toxicity are provided\u2014this is descriptive observation only. The cell-type specificity (C96-C97) is noted but not systematically characterized. This is honest reporting of a limitation but lacks detailed characterization of the toxic phenotype or mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114"
+    ],
+    "result": "Tetbow enables long-range axon tracing of individual mitral/tufted cells in the mouse olfactory system across several millimeters (maximum 6852.63 \u03bcm). Color hues are largely preserved along axons (median Euclidean distance 0.049 across regions), facilitating manual reconstruction of divergent projection patterns to multiple olfactory cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23, C98-C111, C114 are supported by Figure 8, supplements, and Videos 5-6. The technical approach (C104-C106) is appropriate for the biological question (C99-C102). Color consistency (C108-C109) is quantified, and reconstruction (C110) is demonstrated. The maximum traced length (C114) is impressive. However, C115 notes conservative tracing criteria (terminating at gaps), suggesting actual connectivity may be underestimated. The comparison to prior work (C111) validates biological findings. This is a strong proof-of-concept demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Current limitations include imperfect color consistency at high magnification, chromatic aberration in thick tissue imaging, and the need for improved auto-tracing software. Axon tracing was terminated at unlabeled gaps, likely underestimating complete wiring diagrams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 honestly document limitations and future directions. C115 describes methodological conservatism appropriately. C116 is supported by comparison of Figure 8D vs 8E. C117 is a known optical issue. C118 identifies important future work. These are reasonable assessments of current limitations and do not undermine the main findings but rather provide context for interpretation and future development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C44"
+    ],
+    "result": "Previous Brainbow methods are limited for neuronal tracing because low transgene copy numbers required for color variation result in insufficient fluorescent protein expression for high-resolution imaging of axons and dendrites, necessitating antibody amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20, C21, C44 accurately characterize limitations of prior Brainbow methods based on cited literature and the authors' own comparative data (Figure 2\u2014supplement 2). The mechanistic explanation (C20, C44) is logical and supported by the experimental demonstration of the trade-off (C42-C43). This provides appropriate context and motivation for the Tetbow development, though it relies partly on literature rather than systematic head-to-head comparison in all contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C112"
+    ],
+    "result": "The Cre-loxP system is not essential for achieving stochastic and combinatorial expression of fluorescent protein genes in vector-mediated gene transfer, as color variation can be achieved simply by limiting the copy number of introduced genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C112 are supported by citations to prior work (Kobiler et al., 2010; Weber et al., 2011; Siddiqi et al., 2014) and validated experimentally by the success of Tetbow without Cre-loxP (Figures 2-8). This is an important conceptual point that simplifies the approach. However, the manuscript doesn't include a direct experimental comparison of Cre-loxP vs. non-Cre-loxP approaches under identical conditions\u2014the claim relies on prior literature and the demonstrated success of the simpler approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Unmodified (cytosolic) fluorescent proteins are superior to membrane-bound XFPs for Tetbow because they label axons and dendrites more brightly, while the problem of overly bright somata can be solved using SeeDB2 clearing to minimize spherical aberration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is supported by citation (Cai et al., 2013) explaining the rationale for membrane-bound XFPs in prior work. Claim C48 is supported by citation to SeeDB2 (Ke et al., 2016). However, C49 states that unmodified XFPs are brighter but explicitly notes 'data not shown.' No direct comparison of membrane-bound vs. cytosolic XFPs is presented in this manuscript. While the logic is sound and the success of Tetbow with cytosolic XFPs is demonstrated, the specific comparative claim lacks direct experimental support in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C24"
+    ],
+    "result": "Tetbow facilitates light-microscopy-based neuronal tracing at both large scale and high resolution, with the chemical tag variant expanding the repertoire of applications and fluorescence labels available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C24 are broad summary statements supported by the collective results presented in the manuscript. The large-scale capability is demonstrated by millimeter-range axon tracing (C5, C114), high-resolution capability by spine/bouton visualization (C67), and expanded applications by chemical tag stability under harsh clearing (C83). These are appropriate summary conclusions from the demonstrated results, though they are somewhat general statements of impact rather than specific findings.",
+    "result_type": "MINOR"
+  }
+]

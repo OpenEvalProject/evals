@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C78",
+      "C79",
+      "C76",
+      "C77",
+      "C80",
+      "C82"
+    ],
+    "result": "The authors developed and validated a computational model of CaMKII/PP1 bistability that extends the Miller-Zhabotinsky (MZ) model by incorporating 15 CaMKII states (vs. 2 in MZ), mass-action kinetics instead of Michaelis-Menten approximations, and explicit subunit-level dynamics. The model reproduces key properties of the MZ model: bistable switching behavior and exponential increase in switch stability with system size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 demonstrate that the baseline model (without subunit exchange or diffusion) exhibits the expected bistable behavior and exponential scaling of stability with NCaMKII, consistent with prior work. The model structure (C76-C80, C82) is clearly described with appropriate assumptions and citations. Validation against the MZ model establishes credibility for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C51"
+    ],
+    "result": "Subunit exchange increases the tolerance of the CaMKII bistable switch to PP1 phosphatase levels. With subunit exchange enabled, the switch remains bistable over a broader range of PP1 concentrations (12\u00d7-16\u00d7 NCaMKII vs. 3\u00d7-8\u00d7 NCaMKII without exchange), relaxation time becomes independent of PP1 levels, and time spent in intermediate states is reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are directly supported by simulation data in Figure 2B-C showing quantitative differences in PP1 tolerance and relaxation dynamics. The mechanism is plausible: subunit exchange provides a compensatory re-phosphorylation pathway that counteracts PP1 dephosphorylation. The results are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C51"
+    ],
+    "result": "Subunit exchange dramatically improves the robustness of the CaMKII bistable switch to protein turnover. Without subunit exchange, switch stability decreases steeply with turnover rate, but with subunit exchange enabled, stability remains constant up to turnover rates of 1 h\u207b\u00b9 (a ~10-fold increase in tolerance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by simulation results in Figure 3C showing clear quantitative differences in turnover tolerance. The mechanism is consistent with the compensatory role of subunit exchange. However, the model does not explore whether the estimated subunit exchange rates are physiologically realistic at such high turnover rates, which introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C52"
+    ],
+    "result": "Subunit exchange facilitates the spatial spread of CaMKII activation in the PSD when CaMKII is uniformly distributed. The effect is calcium-dependent and diffusion coefficient-dependent (shorter rise times at higher Ca\u00b2\u207a and larger Dsub), but subunit exchange does not affect the initial onset of activation (0-10% rise time), which depends only on Ca\u00b2\u207a levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by systematic simulations shown in Figure 4 exploring the parameter space of Dsub and [Ca\u00b2\u207a]. The finding that onset time is independent of Dsub (C37-C38) provides an important mechanistic distinction. The results are consistent with the known slow first step of CaMKII phosphorylation requiring simultaneous Ca\u00b2\u207a/CaM binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C50"
+    ],
+    "result": "Subunit exchange synchronizes the switching activity of spatially clustered CaMKII populations, causing them to act as a single bistable switch rather than independent switches. This synchronization is robust to variation in Dsub (effective even at Dsub = 0.01 \u03bcm\u00b2 s\u207b\u00b9) and effective for inter-cluster distances up to 100 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by simulations in Figure 5 showing the transition from binomial (independent) to synchronized (single switch) behavior. The robustness analysis (Figure 5D) demonstrates the effect persists over a wide parameter range. This is a novel and important prediction about collective CaMKII dynamics in the PSD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C54"
+    ],
+    "result": "Subunit exchange can account for the experimentally observed dual-exponential decay of CaMKII activity in dendritic spines. Simulations show that a mixed population of clustered (slow-decaying due to subunit exchange) and non-clustered (fast-decaying) CaMKII produces time constants (8.4 s, 86.2 s) that match experimental measurements (6.4 \u00b1 0.7 s, 92.6 \u00b1 50.7 s) from Chang et al. 2017.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by simulations in Figure 6 that directly model the experimental conditions and show good quantitative agreement with experimental data. The proposed mechanism (mixed populations with different decay rates) is plausible and testable. However, the model assumes the population fractions (74%/26%) from the experimental fit rather than deriving them, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C49"
+    ],
+    "result": "Subunit exchange enhances information retention by CaMKII through two mechanisms: improving bistable switch stability in the PSD and slowing activity decay in spine cytosol. This generates multiple timescales of CaMKII activity ranging from seconds to years depending on cellular compartment and clustering state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C49 are high-level summaries supported by the collective evidence from multiple simulation results (Figures 2-6). The dual role of subunit exchange in different compartments is well-established by the preceding results. This represents the central finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The effects of subunit exchange on CaMKII synchronization are predicted to be local to individual PSDs and unlikely to affect neighboring spines. This is based on calculations showing that the mean escape time of CaMKII subunits from spines (8-33 s) is sufficient for dephosphorylation by PP1, and that subunit exchange loses effectiveness in phosphatase-rich environments outside the PSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by theoretical calculations of escape times (C58, citing Holcman and Schuss 2011) and inference from known dephosphorylation rates and phosphatase distributions. The reasoning is sound and consistent with the model's assumptions about compartment-specific PP1 regulation. This addresses an important question about the spatial scale of subunit exchange effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The diverse timescales of CaMKII activity generated by subunit exchange (fast Ca\u00b2\u207a, intermediate cytosolic integrator, slow PSD bistable, very slow synchronized bistable) provide a concrete molecular mechanism for the theoretical requirement of multiple timescales in synaptic memory storage, as proposed by Benna and Fusi (2016). The authors map these CaMKII states onto the cascade of variables required for optimal memory storage with power-law decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C74 make an interesting theoretical connection between the simulation results and the Benna-Fusi framework. However, this remains speculative (C70 is explicitly labeled as inference). The mapping is conceptual rather than quantitative\u2014the authors do not demonstrate that their CaMKII dynamics actually produce the required transfer kinetics or power-law memory decay. This would require additional modeling to verify.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C65"
+    ],
+    "result": "The model predicts that CaMKII mutants lacking subunit exchange would show deficient switch stability, slower Ca\u00b2\u207a activation, and impaired memory retention and learning in behavioral experiments. The specific effects would depend on whether CaMKII is clustered (synchronization deficits) or uniformly distributed (activation speed deficits) in the PSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C65 are explicit predictions based on the simulation results. These are testable hypotheses that follow logically from the demonstrated effects of subunit exchange. However, they remain predictions that require experimental validation. The predictions are clearly stated and appropriately qualified as speculative (C53 evidence includes SPECULATION).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The discretized spatial model converges to the reference well-mixed bistable system for DPP1 \u2265 0.5 \u03bcm\u00b2 s\u207b\u00b9, validating the implementation of diffusion as cross-voxel jump reactions. The convergence is most sensitive to DPP1 and nearly independent of Dsub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by validation simulations in Figure 8 using Kullback-Leibler divergence to quantify convergence. This methodological validation is important for establishing confidence in the spatial simulations. The choice of DPP1 = 0.5 \u03bcm\u00b2 s\u207b\u00b9 for most simulations is justified by this analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The introduction establishes the biological context for CaMKII as a candidate bistable switch for synaptic memory storage, reviewing prior theoretical and experimental work on CaMKII/PP1 bistability, the role of CaMKII in LTP, the challenges of noise and turnover in small synaptic volumes, and the recent discovery of subunit exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 are background claims supported by appropriate citations to established literature. These provide necessary context but do not represent novel findings of this study. The authors accurately represent prior work, including noting conflicting evidence (C11, C16) and gaps in experimental validation (C16).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C63",
+      "C64"
+    ],
+    "result": "CaMKII dynamics transition from leaky integrator behavior in the phosphatase-rich spine cytosol to bistable switch behavior in the PSD where PP1 is tightly controlled, suggesting functional sub-compartmentalization. CaMKII clustering has important implications for sustained activity, and CaMKII is known to be non-uniformly distributed in the PSD (concentrated 16-36 nm below the synaptic cleft).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are interpretations of the simulation results supported by the data showing different behaviors in different compartments. Claims C63-C64 cite experimental evidence (Petersen et al. 2003) and make reasonable inferences about clustering based on known PSD properties. The compartmentalization concept is well-supported and provides important biological context for the results.",
+    "result_type": "MINOR"
+  }
+]

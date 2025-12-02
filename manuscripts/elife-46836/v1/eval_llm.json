@@ -1,0 +1,408 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Gram-positive bacteria (L. monocytogenes and S. aureus) induce more CXCL1 and TNF production in macrophages compared to Gram-negative bacteria (E. coli, P. aeruginosa, S. Typhimurium) after 12 hours of stimulation, while Gram-negative bacteria induce more CCL2 and IL-6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are supported by experimental data from Figure 1A showing statistically significant differences in cytokine production between bacterial classes. The data include multiple bacterial species per class and multiple independent experiments, providing robust evidence for bacteria class-specific cytokine profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "TLR4 is a stronger determinant of gene expression than TLR2/1 in dual TLR stimulation, and TLR pathway interactions are non-linear, as demonstrated by an interactive model outperforming an additive model for a proportion of TLR-induced genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 are supported by linear regression analysis of microarray data (Figure 1\u2014figure supplement 2). The adjusted R\u00b2 values demonstrate TLR4 dominance, and the interactive model's superior performance for a subset of genes provides evidence for non-linear pathway interactions. The statistical approach is appropriate for the data type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C10"
+    ],
+    "result": "Peak CXCL1 and TNF production occurs at a combination of TLR ligand concentrations (1 nM KLA + 100-1000 nM P3C) that are suboptimal for either individual ligand, termed the 'hotspot', which yields sustained Tnf and Cxcl1 mRNA responses through six hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C10 are supported by experimental data from the dual ligand titration matrix (Figure 1C) and qPCR time course data (Figure 2D). The hotspot phenomenon is clearly demonstrated with cytokine measurements, and the sustained mRNA response distinguishes this region from high TLR4 conditions. This represents a novel finding about TLR pathway interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "High concentrations of TLR4 ligand induce increased expression of negative regulators (Nfil3, Batf2, Themis2, Cish, Chd1, Rcan1) that dampen CXCL1 and TNF production, as demonstrated by siRNA knockdown experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 are supported by differential gene expression analysis (Figure 2B) and siRNA knockdown experiments (Figure 2C). Six of seven candidate genes showed increased TNF secretion upon knockdown, with appropriate controls (NTC and Myd88 siRNA). The use of three independent siRNAs per gene and viability normalization strengthens the findings. However, only three genes reached statistical significance for CXCL1, suggesting gene-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Gram-negative bacteria induce transient production of CXCL1 and TNF with minimal secretion after six hours, while Gram-positive bacteria induce sustained production. Negative regulator genes are induced much more robustly in response to Gram-negative bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, and C13 are supported by cytokine secretion data (Figure 3A) and qPCR data (Figure 3B) comparing responses to Gram-positive and Gram-negative bacteria. The temporal dynamics are clearly demonstrated with early (0-6 hr) and late (6-12 hr) measurements. The bacteria class-specific regulator gene expression provides a mechanistic link to the observed cytokine kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Brefeldin A treatment prevents the decline of Tnf and Cxcl1 mRNA in P. aeruginosa-stimulated macrophages, while dramatically decreasing induction of five of six candidate regulator genes, indicating that robust regulatory mechanisms induced by Gram-negative bacteria occur downstream of cytokine-mediated feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, and C16 are supported by qPCR data from BFA-treated macrophages (Figures 4A and 4B). The opposing effects of BFA on cytokine mRNA (increased) versus regulator genes (decreased) provide strong evidence for cytokine-mediated feedback. However, the conclusion is based on a single Gram-negative species (P. aeruginosa), and confirmation with additional species would strengthen the generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Type I IFN is necessary and sufficient for bacteria class-specific negative feedback regulation of TNF and CXCL1 production. Addition of IFN-\u03b2 to Gram-positive bacteria-stimulated macrophages induces regulator gene expression and loss of sustained cytokine production, while Ifnar1-/- macrophages lose rapid cytokine shutdown in response to Gram-negative bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C21, C22, and C23 are supported by comprehensive experiments using IFN-\u03b2 addition and Ifnar1-/- macrophages (Figures 5A and 5B). The gain-of-function (IFN-\u03b2 addition) and loss-of-function (Ifnar1-/-) approaches provide strong bidirectional evidence. The data demonstrate both necessity (Ifnar1-/- phenotype) and sufficiency (IFN-\u03b2 addition) for IFN-mediated regulation, supporting the central conclusion about bacteria class-specific control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Ifnb1 and Il10 gene expression are correlated but differentially regulated: Il10 is influenced by both TLR2 and TLR4 ligands while Ifnb1 induction is specifically determined by a TLR4 ligand threshold. Ifnb1 is robustly induced by P. aeruginosa but not S. aureus, while Il10 expression is more comparable between bacterial classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by microarray data (Figure 6A), qPCR data (Figure 6B), and phospho-flow data (Figure 6\u2014figure supplement 1). The differential ligand dependence is clearly demonstrated, and the bacteria-specific patterns are consistent with the proposed model. The temporal analysis showing early IL-10 preceding IFN-\u03b2 provides important mechanistic insight into the feedback hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Early Il10 induction precedes Ifnb1 expression and is IFN-independent, while sustained Il10 expression is lost in Ifnar1-/- BMDM. STAT3 phosphorylation is detected prior to STAT1 phosphorylation in response to both S. aureus and P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C32 are supported by qPCR time course data from WT and Ifnar1-/- macrophages (Figures 6B and 6C) and Western blot data (Figure 6\u2014figure supplement 2). The temporal dynamics of IL-10 and IFN-\u03b2 induction, along with STAT phosphorylation patterns, provide mechanistic insight into the feedback hierarchy. The data distinguish early IFN-independent from late IFN-dependent IL-10 production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C88"
+    ],
+    "result": "Nfil3 is highly dependent on IL-10 for its induction, while Batf2, Themis2, and Chd1 are robustly upregulated in response to P. aeruginosa in both WT and IL-10R KO cells. IFN has critical anti-inflammatory effects independent of IL-10 through cell-intrinsic ISG mechanisms, suggesting IL-10-dependent and independent IFN-mediated mechanisms play non-redundant roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, C37, and C88 are supported by qPCR data from Il10rb-/- macrophages (Figure 6D) and mixed culture experiments (Figures 6F and 6G). The differential IL-10 dependence among regulator genes is clearly demonstrated. The mixed culture experiments provide strong evidence for cell-intrinsic IFN effects independent of IL-10 and other soluble factors. However, the conclusion about non-redundant roles would benefit from additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "A distinct IFN-dependent decline in CXCL1 production is observed in cells stimulated with Gram-negative, but not Gram-positive bacteria, between 5 and 8 hours of stimulation. This bacteria class-specific Ifnar1-/- effect is seen in both separate and mixed cultures where WT and KO cells are exposed to comparable levels of IL-10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are supported by intracellular cytokine staining data from mixed culture experiments (Figures 6F and 6G) and IL-10 measurements (Figure 6\u2014figure supplement 4). The mixed culture design is elegant and provides strong evidence for cell-intrinsic IFN effects independent of IL-10. However, the authors note that TNF did not show the same IFN-dependence at this timepoint, which is inconsistent with earlier supernatant data and warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In vivo lung infection experiments demonstrate that IFN plays a negative regulatory role in control of TNF and CXCL1 at early timepoints after Gram-negative (P. aeruginosa) but not Gram-positive (S. aureus) bacterial infection, with increased cytokines and a trend toward increased neutrophil recruitment in Ifnar1-/- mice infected with P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by in vivo infection experiments measuring cytokines and neutrophils in BAL fluid (Figure 7). The bacteria class-specific IFN-dependent regulation observed in vitro is recapitulated in vivo, strengthening the biological relevance of the findings. However, the neutrophil increase in Ifnar1-/- mice is non-significant, and CCL2 does not follow the predicted pattern. The 6-hour timepoint may be too early to observe full effects on neutrophil recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Increased TNF and CXCL1 in P. aeruginosa infected Ifnar1-/- mice at 6 hours post-infection are not due to increased bacterial burden at this timepoint, though longer term infection models show variable effects on bacterial load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110 and C111 are supported by CFU data (Figure 7\u2014figure supplement 1) and citations to previous studies. The lack of difference in bacterial burden at 6 hours supports the conclusion that sustained cytokines are not due to increased infection. However, the authors appropriately acknowledge that IFN may affect bacterial clearance at later timepoints based on literature, indicating this result does not rule out all roles for IFN in bacterial control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Rcan1 expression is both cytokine-independent and IFN-independent, whereas Cish expression is cytokine-dependent but IFN-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C20 are supported by qPCR data from BFA and Ifnar1-/- experiments (Figures 4B and 5A). The differential regulation of these two genes compared to the other four IFN-dependent regulators is clearly demonstrated. This suggests multiple regulatory pathways control bacteria class-specific responses, though the functional significance of these differences requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Blocking IL-10 signaling abrogates negative regulation of inflammatory signals despite not affecting transcription of IFN-dependent negative regulators. IFNAR deficiency impacts late but not early IL-10 induction, and late IL-10 is IFN-dependent in response to both bacterial classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C90, and C91 are supported by experiments with Il10rb-/- macrophages, IL-10R blocking antibody (Figure 6\u2014figure supplement 3), and qPCR data from Ifnar1-/- macrophages (Figure 6C). The data demonstrate that IL-10 is required for full negative regulation despite not controlling IFN-dependent regulator gene transcription, supporting the model of parallel IL-10-dependent and independent pathways. The temporal analysis of IL-10 induction provides mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Batf2, Themis2, and Chd1 are induced by Gram-negative stimuli in a highly IFN-dependent manner, and siRNA knockdown reveals their negative regulatory function. IFN has direct effects on macrophage inflammatory potential via cell-intrinsic ISG mechanisms, with negative regulation invoked in a bacteria class-specific manner through LPS-triggered IFN-mediated feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by qPCR data from Ifnar1-/- macrophages (Figure 5A), siRNA experiments (Figure 2C), and mixed culture studies. The combination of loss-of-function (Ifnar1-/-), knockdown (siRNA), and cell-intrinsic effect (mixed cultures) experiments provides strong converging evidence. The conclusion about LPS-specific triggering is well-supported by the differential responses to Gram-positive versus Gram-negative bacteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors speculate that rapid IL-10-independent IFN-mediated feedback mechanisms are initiated by surface TLR4 ligation and are specific to Gram-negative pathogens, while later IFN-driven IL-10-dependent feedback may be triggered by either bacterial class. These temporally distinct mechanisms support fine tuning of pathogen-specific inflammatory cytokine dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92, C93, and C94 are explicitly stated as speculation by the authors and represent a proposed model rather than directly demonstrated results. While the model is consistent with the experimental findings (differential timing of IL-10 and IFN-\u03b2 induction, differential bacterial responses), the specific mechanisms (surface versus endosomal TLR4, role of bacterial internalization) are not directly tested. Additional experiments would be needed to validate these mechanistic predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C95",
+      "C101",
+      "C102"
+    ],
+    "result": "Prior studies have correlated bacterial pathogen class with inflammatory response magnitude in vitro and distinct cytokine profiles in human disease, with Gram-negative organisms generally associated with more robust inflammatory responses and poorer clinical outcomes during sepsis, though some comprehensive studies have failed to find associations with severe sepsis outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, C95, C101, and C102 are supported by citations to previous clinical and experimental studies. These claims establish the clinical context and prior knowledge that motivated the current study. The authors appropriately acknowledge conflicting findings in the literature regarding associations between pathogen class and sepsis outcomes, providing a balanced view of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Bacterial pathogens are recognized by PRRs such as TLRs based on PAMPs. TLR ligation leads to transcription of inflammatory genes and negative regulators. TLRs engage MyD88 and TRIF pathways, with Gram-positive bacteria preferentially evoking MyD88-dependent signaling and Gram-negative bacteria activating both pathways through TLR4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 represent established knowledge in the field, supported by citations to foundational studies. These claims provide necessary background for understanding the experimental work. The authors accurately summarize the current understanding of TLR signaling pathways and their differential engagement by bacterial classes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Type I IFNs are robustly induced by bacteria through various PRRs that signal after bacterial internalization. LPS induces strong IFN responses through TLR4 in endosomes via the TRIF-TRAM pathway. Previous reports show strong IFN responses to heat-killed Gram-negative bacteria, and vita-PAMPs have been linked to IFN production in both bacterial classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by citations to previous studies and represent established knowledge. These claims provide important context for understanding the differential IFN responses observed in the current study. The discussion of vita-PAMPs acknowledges potential differences between heat-killed and live bacteria that may affect the generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "IFN binding to IFNAR activates STAT1 homodimers and ISGF3 (STAT1, STAT2, IRF9), leading to transcription of hundreds to thousands of ISGs with diverse functions. ISGs include inflammatory chemokines, antimicrobial proteins, and anti-inflammatory mediators, though the anti-inflammatory capacity of most ISGs besides IL-10 has not been thoroughly studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C82 are supported by citations to previous studies and represent established knowledge about IFN signaling and ISG functions. These claims provide essential background for understanding the novelty of the current work, which identifies specific ISGs with anti-inflammatory function in bacterial responses. The authors appropriately note the knowledge gap regarding ISG anti-inflammatory functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "IFNAR signaling has dramatic effects on infection outcomes with both bacterial classes, with beneficial effects in some contexts (promoting tissue integrity, suppressing excessive inflammation) and detrimental effects in others (dampening host-protective responses). P. aeruginosa and S. aureus are common hospital-acquired pneumonia pathogens associated with sepsis and high mortality, and IFN has been implicated in lung immunity to both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 and C106-C108 are supported by citations to previous studies and represent established knowledge. These claims provide clinical context for the in vivo experiments and acknowledge the complexity of IFN's role in bacterial infections. The authors appropriately note that IFN effects can be beneficial or detrimental depending on context, motivating the need for mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Appropriate tuning of innate inflammatory responses is integral to organism survival, as too much inflammation causes tissue damage while too little allows pathogen replication. Systematic understanding of pathogen-specific inflammation is clinically relevant and could yield insight into tailored therapies. Further ISG analysis will improve understanding of immune system evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C103-C105 represent general principles and motivations for the research, supported by citations and logical reasoning. These claims establish the importance of the research question and potential clinical applications. While speculative regarding future applications, they are appropriately framed as potential outcomes rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors hypothesized and demonstrated that responses to bacterial pathogens reflect interacting feedback controls from MyD88 and TRIF pathways. Core inflammatory gene behavior is governed by activating and inhibitory mechanisms with distinct input requirements. TLR4-dominant Gram-negative stimulation leads to rapid IFN-mediated decline in inflammatory cytokines through IL-10-independent feedback, resulting in bacteria class-specific responses recapitulated in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 represent the central hypothesis and main conclusions of the study. These are well-supported by the comprehensive experimental evidence including dual ligand titration matrices, bacterial stimulation experiments, knockout mice, and in vivo infection models. The integration of multiple experimental approaches provides strong support for the proposed model of bacteria class-specific inflammatory control through differential IFN-mediated feedback.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Non-additive TLR pathway interactions have been described previously, and cytokine-mediated feedback loops add further non-linear control. The current data demonstrate that distinct quantitative requirements for TLR synergy and cytokine feedback yield concentration-dependent inflammatory control, allowing positive effects of multi-ligand stimulation while avoiding negative regulation from strong single-pathway stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 integrate prior knowledge with current findings to explain the hotspot phenomenon. The claims are supported by citations to previous studies and the dual ligand titration matrix data. The conclusion about concentration-dependent control is well-supported by the experimental evidence, though the mechanistic details of how cells integrate these signals remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C71",
+      "C96",
+      "C100",
+      "C109"
+    ],
+    "result": "The authors speculate that IFN-mediated negative feedback may occur in response to some live Gram-positive pathogens with different timing than Gram-negative bacteria, that IFN induction through TLR4-TRIF evolved as an inflammation buffer, that future studies may reveal prolonged inflammatory responses to Gram-positive infection due to diminished IFN feedback, and that rapid IFN-mediated dampening would be specific to Gram-negative P. aeruginosa in lung infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71, C96, C100, and C109 are explicitly speculative or represent hypotheses. While these speculations are reasonable based on the experimental findings and prior knowledge, they are not directly tested in the current study. Claim C109 was tested and supported by the in vivo experiments, but the others remain predictions for future work. The speculations are appropriately framed and provide direction for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Previous studies have reported increased or decreased bacterial load in Ifnar1-/- mice in longer term infection models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by citations to previous studies. This claim acknowledges that while the current 6-hour timepoint shows no difference in bacterial burden, IFN may affect bacterial clearance at later timepoints. This appropriately qualifies the interpretation of the CFU data and acknowledges limitations of the early timepoint analysis.",
+    "result_type": "MINOR"
+  }
+]

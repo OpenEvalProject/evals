@@ -1,0 +1,1795 @@
+{
+  "submission": {
+    "id": "168d7727-03f1-4f93-a5b3-238591a03921",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:38:19.575312Z",
+    "updated_at": "2025-12-02T13:38:19.575312Z"
+  },
+  "content": [
+    {
+      "id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "submission_id": "168d7727-03f1-4f93-a5b3-238591a03921",
+      "content_type": "manuscript",
+      "content_text": "# Ten simple rules for the computational modeling of behavioral data\n\n## Authors\n\n- Robert C Wilson<sup>1</sup> ([ORCID: 0000-0002-2963-2971](https://orcid.org/0000-0002-2963-2971)) \u2020\n- Anne GE Collins<sup>3</sup> ([ORCID: 0000-0003-3751-3662](https://orcid.org/0000-0003-3751-3662)) \u2020\n\n### Affiliations\n\n1. Department of Psychology University of Arizona Tucson United States\n2. Cognitive Science Program University of Arizona Tucson United States\n3. Department of Psychology University of California, Berkeley Berkeley United States\n4. Helen Wills Neuroscience Institute University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nComputational modeling of behavior has revolutionized psychology and neuroscience. By fitting models to experimental data we can probe the algorithms underlying behavior, find neural correlates of computational variables and better understand the effects of drugs, illness and interventions. But with great power comes great responsibility. Here, we offer ten simple rules to ensure that computational modeling is used with care and yields meaningful insights. In particular, we present a beginner-friendly, pragmatic and details-oriented introduction on how to relate models to data. What, exactly, can a model tell us about the mind? To answer this, we apply our rules to the simplest modeling techniques most accessible to beginning modelers and illustrate them with examples and code available online. However, most rules apply to more advanced techniques. Our hope is that by following our guidelines, researchers will avoid many pitfalls and unleash the power of computational modeling on their own data.\n\n## What is computational modeling of behavioral data?\n\nThe goal of computational modeling in behavioral science is to use precise mathematical models to make better sense of behavioral data. The behavioral data most often come in the form of choices, but can also be reaction times, eye movements, or other easily observable behaviors, and even neural data. The models come in the form of mathematical equations that link the experimentally observable variables (e.g. stimuli, outcomes, past experiences) to behavior in the immediate future. In this sense, computational models instantiate different \u2018algorithmic hypotheses\u2019 about how behavior is generated.\n\nExactly what it means to \u2018make sense\u2019 of behavioral data is, to some extent, a matter of taste that will vary according to the researcher\u2019s goals (Kording et al., 2018). In some cases, a simple model that can explain broad qualitative features of the data is enough. In other cases, more detailed models that make quantitative predictions are required (Breiman, 2001). The exact form of the models, and exactly what we do with them, is limited only by our imaginations, but four uses dominate the literature: simulation, parameter estimation, model comparison, and latent variable inference.\n\nEach of these uses has its strengths and weaknesses, and each of them can be mishandled in a number of ways, causing us to draw wrong and misleading conclusions (Nassar and Frank, 2016; Palminteri et al., 2017). Here we present a beginner-friendly, pragmatic, practical and details-oriented introduction (complete with example code available at [code]) on how to relate models to data and how\u00a0to\u00a0avoid many potential modeling mistakes. Our goal for this paper is to go beyond the mere mechanics of implementing models \u2014 as important as those mechanics are \u2014 and instead focus on the harder question of how to figure out what, exactly, a model is telling us about the mind. For this reason, we focus primarily on the simplest modeling techniques most accessible to beginning modelers, but almost all of our points apply more generally and readers interested in more advanced modeling techniques should consult the many excellent tutorials, didactic examples, and books on the topic (Busemeyer and Diederich, 2010; Daw, 2011; Daw and Tobler, 2014; Heathcote et al., 2015; Huys, 2017; Turner et al., 2013; Vandekerckhove et al., 2015; Wagenmakers and Farrell, 2004; Rigoux et al., 2014; Nilsson et al., 2011; Farrell and Lewandowsky, 2018; Lee et al., 2019).\n\nFor clarity of exposure, we chose to make all of\u00a0the\u00a0examples in this paper reflect a single narrow domain - reinforcement learning models applied to choice data (Sutton and Barto, 2018).\u00a0We chose this domain for a few reasons. (1) Modeling is particularly popular in the field of learning. Indeed, this field benefits from modeling particularly because\u00a0of the nature of the behavioral data: trials are dependent on all past history and thus unique, making classic data analysis with aggregation across conditions less successful. (2) The sequential dependency of trials in learning contexts can lead to technical challenges when fitting models that are absent in non-learning contexts. However, the same techniques are widely and successfully applied to other observable behavior, such as reaction times (Ratcliff and Rouder, 1998; Viejo et al., 2015; Ballard and McClure, 2019; Wiecki et al., 2013), and to\u00a0other domains, including but not limited to perception (Sims, 2018), perceptual decision-making (Ratcliff and Rouder, 1998; Drugowitsch et al., 2016; Findling et al., 2018), economic decision-making (van Ravenzwaaij et al., 2011; Nilsson et al., 2011), visual short-term memory (Donkin et al., 2016; Donkin et al., 2014; Nassar et al., 2018), long-term memory (Batchelder and Riefer, 1990), category learning (Lee and Webb, 2005), executive functions (Haaf and Rouder, 2017; Jahfari et al., 2019), and\u00a0so\u00a0on. Thus, our hope is that, regardless of the techniques you use or the domain you model, by following these 10 simple steps (Figure 1), you will be able to minimize your modeling mishaps and unleash the power of computational modeling on your own behavioral data!\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49547/elife-49547-fig1-v2.jpg)\n\n## Design a good experiment!\n\nComputational modeling is a powerful technique, but it can never replace good experimental design. Modeling attempts to capture how information is manipulated behind the scenes to produce the behavior; thus it is fundamentally limited by the behavioral data, which is itself fundamentally limited by the experimental protocol. A researcher studying face perception would not attempt to fit Prospect Theory to a face perception task; and a researcher studying the differential effects of gain and loss would not do it in a gambling task with only gains. Although obvious in these simple cases, the question becomes more difficult as the complexity of the model increases: is a given learning protocol rich enough to allow\u00a0the identification of dynamic changes in learning rate, of working memory or episodic memory contributions to learning,\u00a0or of reward range adaptation? Often, the answer to these questions will be \u2018no\u2019 unless the protocol has been deliberately designed to provide this power.\n\nSo, how should you go about designing a good experiment with computational modeling in mind? While this process will always be something of an art form, we suggest that\u00a0you ask yourself the following questions in\u00a0order\u00a0to optimize your experimental design:\n\n### What scientific question are you asking?\n\nAlthough this sounds obvious, it is easy to get sucked into an experimental design without ever asking the most basic questions about your goals. What cognitive process are you targeting? What aspect of behavior are you trying to capture? What hypotheses are you trying to pick apart? For example, you may be trying to identify how working memory contributes to learning or how behavioral variability can be used to explore. Keeping your scientific goals in mind when you design the task can save much time later on.\n\n### Does your experiment engage the targeted processes?\n\nThis may be a difficult question to answer, and it\u00a0may\u00a0require expert knowledge\u00a0or\u00a0piloting. However, you need to know that the experimental design actually engages the processes that\u00a0you are trying to model.\n\n### Will signatures of the targeted processes be evident from\u00a0the simple statistics of the data?\n\nIn addition to engaging the processes of interest, the best experiments make these processes identifiable in classical analyses of the behavioral data (Palminteri et al., 2017). For example, if you are investigating working memory contributions to learning, you may look for a signature of load on behavior by constructing an experimental design that varies load, to increase chances of probing working memory\u2019s role in learning. Seeing signs of the computations of interest in simple analyses of behavior builds confidence that the modeling process will actually work. In our experience, computational modeling is rarely informative when there is no evidence of an effect in model-independent analyses of behavior.\n\nTo answer these questions, it is important to have a clear theoretical hypothesis of what phenomenon is to be modeled. In fact, although designing a good experiment is the first step, it goes hand-in-hand with designing a good model, and the two steps should ideally be done in parallel.\n\n### But what if I\u2019m not an experimentalist?\n\nComputational modeling is hard and many of the best modelers are specialists who never run experiments of their own. Instead these researchers test their models against published findings, publicly available datasets, or even, if they are lucky, unpublished data from their experimental colleagues. Such specialist modelers might feel that\u00a0they can safely ignore this first point about experimental design and instead focus on explaining the data they can get. We strongly urge them not to. Instead we urge these specialist modelers to always be considering better ways in which their models could be tested. Such experimental thinking helps you to be more concrete in your ideas and to think about how your model might apply outside of the context for which it was designed. In addition, thinking experimentally \u2014 and even better talking with experimentalists \u2014 forces you to engage with behavior as it actually is rather than as you would like it to be, which in turn can lead to new insights. Finally, by proposing concrete experimental designs, it is easier to convince your experimental colleagues to actually test your ideas, which is surely the goal if we are to move the field forward.\n\n## An illustrative example: the multi-armed bandit task\n\nThe ten rules in this paper are quite general, but\u00a0we will illustrate many of our points using simple examples from our own field of reinforcement learning. Code for implementing all of these examples is available on GitHub (https://github.com/AnneCollins/TenSimpleRulesModeling)\u00a0(Collins and Wilson, 2019; copy archived at https://github.com/elifesciences-publications/TenSimpleRulesModeling). The goal of these example studies is to understand how people learn to maximize their rewards in a case where the most rewarding choice is initially unknown.\n\nMore specifically, we consider the case in which a participant makes a series of $T$ choices between $K$ slot machines, or \u2018one-armed bandits\u2019, to try to maximize their earnings. If played on trial $t$, each slot machine, $k$, pays out a reward, $r_{t}$, which is one with reward probability, $\\mu_{t}^{k}$, and otherwise 0. The reward probabilities are different for each slot machine and are initially unknown to the subject. In the simplest version of the task, the reward probabilities are fixed over time.\n\nThe three experimental parameters of this task are: the number of trials, $T$, the number of slot machines, $K$, and the reward probabilities of the different options, $\\mu_{t}^{k}$, which may or may not change over time. The settings of these parameters will be important for determining exactly what information we can extract from the experiment. In this example, we will assume that $T=1000$, $K=2$, and that the reward probabilities are $\\mu_{t}^{1}=0.2$ for slot machine 1 and $\\mu_{t}^{2}=0.8$ for slot machine 2.\n\n## Design good models\n\nJust as bad experiments can limit our ability to test different hypotheses, bad models \u2013 quite literally the mathematical embodiment of our hypotheses \u2013 can further limit the conclusions we can draw (Donkin et al., 2014). This point is especially important if we are designing new models, but even well-established computational models can be problematic in some cases (Broomell and Bhatia, 2014; Nilsson et al., 2011).\n\nCritical to the design of the model is a clear understanding of your reason for modeling. Are you interested in a descriptive model that succinctly summarizes, but perhaps does not explain, behavioral data? A mechanistic model to tie behavior to the brain? Or an elegant mathematical model to illustrate a concept? As shown in an excellent article by Kording and colleagues (Kording et al., 2018), computational modelers have a wide variety of goals for their models,\u00a0and understanding your own motivations is a great place to start.\n\nMore pragmatically, there are a number of different approaches for designing models that have been successfully used in the literature. Perhaps the simplest approach is to use heuristics to find a \u2018reasonable\u2019 way to handle information to produce the target behavior. This approach was how the delta rule (see Model three below) was first invented (Rescorla and Wagner, 1972). Another approach is to scour the artificial intelligence, computer science, and applied mathematics literature for algorithms that have been used to solve similar problems for artificial agents. This approach has been fruitfully applied in the field of reinforcement learning (Sutton and Barto, 2018), where algorithms such as Q-learning and temporal difference learning have been related to human and animal behavior and brain function (Watkins and Dayan, 1992; Montague et al., 1996). Another approach is to take a Bayes-optimal perspective, to design algorithms that perform optimally given a model of the environment and the task. Ideal observer models in vision are one example in\u00a0which this approach has been applied successfully (Geisler, 2011). More generally, Bayes-optimal models can be further pursued by investigating simpler algorithms that approximate the ideal strategy, or by imposing bounded rationality constraints, such as limited computational resources, on ideal observer agents (Courville and Daw, 2008; Nassar et al., 2010; Collins and Frank, 2012; Daw and Courville, 2007; Lieder et al., 2018).\n\nRegardless of the approach (or, better yet, approaches) that\u00a0you take to design your models, it is important to keep the following points in mind:\n\n### A computational model should be as simple as possible, but no simpler\n\nEinstein\u2019s old edict applies equally to models of the mind as it does to models of physical systems. Simpler, more parsimonious models are easier to fit and easier to interpret and should always be included in the set of models under consideration. Indeed, formal model comparison techniques (described in detail in Appendix 2) include a penalty for overly complex models, which are more likely to overfit the data and generalize poorly, and\u00a0favor simpler models so long as they can account for the data.\n\n### A computational model should be interpretable (as much as possible)\n\nIn the process of developing models that can account for the behavioral data, researchers run the risk of adding components to a model that are not interpretable as a sensible manipulation of information. For example, a negative learning rate is difficult to interpret in the framework of reinforcement learning. Although such uninterpretable models may sometimes improve fits, nonsensical parameter values may indicate that something important is missing from your model, or that a different cognitive process altogether is at play.\n\n### The models should capture all the hypotheses that\u00a0you plan to test\n\nWhile it is obviously important to design models that can capture your main hypothesis, it is even more important to design models that capture competing hypotheses. Crucially, competing models should not be strawmen \u2014 they should have a genuine chance of relating to behavior in the task environment, and they\u00a0should\u00a0embody a number of reasonable, graded hypotheses. You should of course put equal effort into fitting these models as you do your favored hypothesis. Better yet, you shouldn\u2019t have a favored hypothesis at all \u2014 let the data determine which model is the best fit, not your a priori commitment to one model or another.\n\n## Simulate, simulate, simulate!\n\nOnce you have an experimental design and a set of computational models, a really important step is to create fake, or surrogate data (Palminteri et al., 2017). That is, you should use the models to simulate the behavior of participants in the experiment, and to observe how behavior changes with different models, different model parameters, and different variants of the experiment. This step will allow you to refine the first two steps: confirming that the experimental design elicits the behaviors assumed to be captured by the computational model. To do this, here are some important steps.\n\n### Define model-independent measures that capture key aspects of the processes you are trying to model\n\nFinding qualitative signatures (and there will often be more than one) of the model is crucial. By studying these measures with simulated data, you will have greater intuition about what is going on when you use the same model-independent measures to analyze real behavior (Daw et al., 2011; Collins and Frank, 2012; Collins and Frank, 2013; Nassar et al., 2018; Lee and Webb, 2005).\n\n### Simulate the model across the range of parameter values\n\nThen, visualize behavior as a function of the parameters. Almost all models have free parameters. Understanding how changes to these parameters affect behavior will help you to better interpret your data and to\u00a0understand individual differences in fit parameters. For example, in probabilistic reinforcement learning tasks modeled with a simple delta-rule model (Model 3; Equation 3), the learning rate parameter, $\\alpha$, can relate to both the\u00a0speed of learning and noisiness in asymptotic behavior, as can the inverse temperature parameter, $\\beta$ (in Equation 4), as seen in Box 2\u2014figure 1B.\n\n### Visualize the simulated behavior of different models\n\nThis will allow you to verify that behavior is qualitatively different for different models, making their predictions in the experimental setup different (Box 2\u2014figure 1A). If the behavior of different models is not qualitatively different, this is a sign that you should try to design a better experiment. Although not always possible, distinguishing between models on the basis of qualitative patterns in the data is always preferable to quantitative model comparison (Navarro, 2019; Palminteri et al., 2017).\n\nMore generally, the goal of the simulation process is to clarify how the models and experimental design satisfy your goal of identifying a cognitive process in behavior. If the answer is positive\u00a0\u2014\u00a0i.e. the experiment is rich enough to capture the expected behavior, the model\u2019s parameters are interpretable, and competing models make dissociable predictions \u2014 you can move on to the next step. Otherwise, you should loop back through these first three sections to make sure that your experimental design and models work well together, and that the\u00a0model parameters have identifiable effects on the behavior, which is a prerequisite for the fourth step, fitting the parameters (c.f. Figure 1).\n\n## Fit the parameters\n\nA key component of computational modeling is estimating the values of the parameters that best describe your behavioral data. There are a number of different ways of estimating parameters,\u00a0but here we focus on the maximum-likelihood approach, although almost all of our points apply to other methods such as Markov Chain Monte Carlo approaches (Lee and Wagenmakers, 2014). Mathematical details, as well as additional discussion of other approaches to model fitting can be found in Appendix 1.\n\nIn the maximum likelihood approach to model fitting, our goal is to find the parameter values of model $m$, $\ud835\udf3d^_{m}^{M\u2062L\u2062E}$, that maximize the likelihood of the data, $d_{1:T}$, given the parameters, $p\u2062(d_{1:T}|\ud835\udf3d_{m},m)$. Maximizing the likelihood is equivalent to maximizing the log of the likelihood, $L\u2062L=log\u2061p\u2062(d_{1:T}|\ud835\udf3d_{m},m)$, which is numerically more tractable. (The likelihood is a product of many numbers smaller than 1, which can be rounded to 0 with limited precision computing. By contrast, the log-likelihood is a sum of negative numbers, which is usually\u00a0tractable and will not be rounded to 0.) A simple mathematical derivation shows that this log-likelihood can be written in terms of the choice probabilities of the individual model as\n\n$$\nL\u2062L=log\u2061p\u2062(d_{1:T}|\ud835\udf3d_{m},m)=\\sumt=1Tlog\u2061p\u2062(c_{t}|d_{1:t-1},s_{t},\ud835\udf3d_{m},m)\n$$\n\nwhere $p\u2062(c_{t}|d_{1:t-1},s_{t},\ud835\udf3d_{m},m)$ is the probability of each individual choice given the parameters of the model and the\u00a0information\u00a0available up to that choice, which is at the heart of the definition of each model (for example in Equations 1-7).\n\nIn principle, finding the maximum likelihood parameters is as \u2018simple\u2019 as maximizing $L\u2062L$. In practice, of course, finding the maximum of a function is not a trivial process. The simplest approach, a brute force search of the entire parameter space, is occasionally useful, and may help\u00a0you\u00a0to understand how different parameters interact (see Box 3\u2014figure 1). However, this approach is unfeasible outside of the simplest cases (e.g. one or two parameters with tight bounds) because\u00a0of the high computational costs of evaluating the likelihood function at a large number of points.\n\nFortunately, a number of tools exist for finding local maxima (and minima) of functions quickly using variations on gradient ascent (or descent). For example, Matlab\u2019s fmincon function can use a variety of sophisticated optimization algorithms (e.g. Mor\u00e9 and Sorensen, 1983; Byrd et al., 2000) to find the minimum of a function (and other factors such as the Hessian that can be useful in some situations [Daw, 2011]). So long as one remembers to feed fmincon the negative log-likelihood (whose minimum is at the same parameter values as the maximum of the positive log-likelihood), using tools such as fmincon can greatly speed up model fitting. Even here, though, a number of problems can arise when trying to maximize $L\u2062L$ that can be reduced by using the\u00a0tips and tricks described\u00a0below. Most of the tips come from understanding that optimization algorithms are not foolproof and in particular are subject to numerical constraints. They generalize to other black box optimization functions in other languages, for example the Python scipy.optimize package or the optim function in R.\n\n### Be sure that\u00a0your initial conditions give finite log-likelihoods\n\nOptimizers such as fmincon require you to specify initial parameter values from which to start the search. Perhaps the simplest way in which the search process can fail is if these initial parameters give log-likelihoods that are not finite numbers (e.g. infinities or NaNs, not a number in Matlab speak). If your fitting procedure fails, this can often be the cause.\n\n### Beware rounding errors, zeros and infinities\n\nMore generally, the fitting procedure can go wrong if it encounters infinities or NaNs during the parameter search. This can occur if a choice probability is rounded down to zero, thus making the log of the choice probability $-\u221e$. Likewise, if your model involves exponentials (e.g. the softmax choice rule in Equation 4), this can lead to errors whereby the exponential of a very large number is \u2018rounded up\u2019 to infinity. One way to avoid these issues is by constraining parameter values to always give finite choice probabilities and log-likelihoods at the boundaries. One way to diagnose these issues is to include checks in the code for valid log-likelihoods.\n\n### Be careful with constraints on parameters\n\nIf the constraints are ill chosen, it is possible that the solution will be at the bounds, which is often, but not always, a red flag.\n\nOnly include parameters that have an influence on the likelihood. If only two parameters impact the likelihood, but the optimizer attempts to fit three, it will usually find the optimum for the two relevant parameters and a random value for the third; however, it will lead to slower and less efficient fitting.\n\n### Beware local minima!\n\nFinally, a key limitation of optimization algorithms is that they are only guaranteed to find local minima, which are not guaranteed to be the global minima corresponding to the best fitting parameters. One way to mitigate this issue is to run the fitting procedure multiple times with random initial conditions, recording the best fitting log-likelihood for each run. The best fitting parameters are then the parameters corresponding to the run with the highest log-likelihood. There is no hard-and-fast rule for knowing how many starting points to use in a given situation, besides the fact that more complex models will require more starting points. Thus, this\u00a0number must be determined empirically in each case. One way to validate the number of starting points is by plotting the best likelihood score as a function of the number of starting points. As the number of initial conditions increases, the best-fitting likelihood (and corresponding the\u00a0parameters) will improve up to an asymptote close to the true maximum of the function (e.g. Box 3\u2014figure 1).\n\n## Check that\u00a0you can recover your parameters\n\nBefore reading too much into the best-fitting parameter values, $\ud835\udf3d_{m}^{M\u2062L\u2062E}$, it is important to check whether the fitting procedure gives meaningful parameter values in the best case scenario, -that\u00a0is, when fitting fake data where the \u2018true\u2019 parameter values are known (Nilsson et al., 2011). Such a procedure is known as \u2018Parameter Recovery\u2019, and is a crucial part of any model-based analysis.\n\nIn principle, the recipe for parameter recovery is quite simple. First, simulate fake data with known parameter values. Next, fit the model to these fake data to try to \u2018recover\u2019 the parameters. Finally, compare the recovered parameters to their true values. In a perfect world, the simulated and recovered parameters will be tightly correlated, with no bias. If there is only a weak correlation between the\u00a0simulated and recovered parameters and/or a significant bias, then this is an indication that there is either a bug in your code (which from our own experience is fairly likely) or the experiment is underpowered to assess this model.\n\nTo make the most of your parameter recovery analysis, we suggest the following tips:\n\n### Make sure your simulation parameters are in the right range\n\nAn important choice for parameter recovery is the range of simulation parameters that\u00a0you wish to recover. Some models/experiments only give good parameter recovery for parameters in a particular range \u2014 if the simulation parameters are too big or too small, they can be hard to recover. An illustration of this is the softmax parameter, $\\beta$, where very large $\\beta$ values lead to almost identical behavior in most experiments. Thus parameter recovery may fail for large $\\beta$ values but work well for small $\\beta$ values. Of course, selecting only the range of parameters that can be recovered by your model is not necessarily the right choice, especially if the parameter values you obtain when fitting real data are outside of this range! For this reason, we have the following recommendations for choosing simulation parameter values:\n\nNote that it is not necessarily problematic if a model\u2019s parameters are not recoverable in a full parameter space, as long as they are recoverable in the range that matters for real data.\n\n### Plot the correlations between simulated and recovered parameters\n\nWhile the correlation coefficient between simulated and recovered parameters is a useful number for summarizing parameter recovery, we also strongly recommend that you actually plot the simulated vs recovered parameters. This makes the correlation clear, and also reveals whether the correlation holds in some parameter regimes but not others. It also reveals any existing bias (for\u00a0example,\u00a0a tendency to recover higher or lower values in average).\n\n### Make sure the recovery process does not introduce correlations between parameters\n\nIn addition to looking at the correlations between simulated and recovered parameters, we also recommend looking at the correlation between the recovered parameters themselves. If the simulation parameters are uncorrelated with one another, correlation between the recovered parameters is an indication that the\u00a0parameters in the model are trading off against one another\u00a0(Daw, 2011). Such trade-offs can sometimes be avoided by reparameterizing the model (e.g. Otto et al., 2013) or redesigning the experiment. Sometimes, however, such trade-offs are unavoidable. In these cases, it is crucial to report the trade-off in parameters so that a \u2018correlation\u2019 between fit parameter values is not over-interpreted in real data.\n\nA note about parameter differences between different populations or conditions: a growing use of model fitting is to compare parameter values between populations (e.g. schizophrenia patients vs healthy controls [Collins et al., 2014]) or conditions (e.g., transcranial magnetic stimulation to one area or another [Zajkowski et al., 2017]). If your primary interest is a difference like this, then parameter recovery can be used to give an estimate of statistical power. In particular, for a proposed effect size (e.g., on the average difference in one parameter between groups\u00a0or\u00a0conditions) you can simulate and recover parameters for the groups\u00a0or\u00a0conditions and then perform statistical tests to detect group differences in this simulated data set. The power for this effect size is then the frequency with which the statistical tests detect no effect given that the effect is there.\n\n### Remember that even successful parameter recovery represents a best-case scenario!\n\nWhat does successful parameter recovery tell you? That data generated by a known model with given parameters can be fit to recover those parameters. This is the best case you could possibly hope for in the model-based analysis and it\u00a0is unlikely to ever occur as the \u2018true\u2019 generative process for behavior \u2014 that\u00a0is,\u00a0the inner workings of the mind and brain \u2014 is likely much more complex than any model you could conceive. There\u2019s no easy answer to this problem. We only advise that you remember to be humble when you present your results!\n\n## Can you arbitrate between different models?\n\nIn model comparison, our goal is to determine which model, out of a set of possible models, is most likely to have generated the data. There are a number of different ways to make this comparison (summarized in more detail in Appendix 2) that involve different approximations to the Bayesian evidence for each model (e.g.,\u00a0Daw, 2011; Rigoux et al., 2014). Here, we focus on the most common method which is related to the log-likelihood computed in 'Fit the parameters'.\n\nA simplistic approach to model comparison would be to compare the log-likelihoods of each model at the best fitting parameter settings, $p\u2062(d_{1:T}|\ud835\udf3d^_{m},m)$. However, if the data, $d_{1:T}$, used to evaluate the log-likelihood are the same as\u00a0those used to fit the parameters, then this approach will lead to overfitting, as the model with the\u00a0most free parameters will almost always fit this \u2018training\u2019 data best. As an extreme example, consider the case of a model with one \u2018parameter\u2019 per choice, which is the identity of the choice the person actually made. Such a \u2018model\u2019 would fit the data perfectly, but would of course tell us nothing about how the choices were actually determined and would\u00a0make no predictions about what choices would be made in a different setting. Overfitting is a problem in that it decreases the generalizability of the model: it makes it less likely that the conclusions drawn would apply to a different sample.\n\nOne way to avoid overfitting is to perform cross-validation: by measuring fit on held-out data, we directly test generalizability. However, this is not always possible for practical reasons (number of samples) or more fundamental ones (dependence between data points). Thus, other methods mitigate the risk of overfitting by approximately accounting for the degrees of freedom in the model. There are several methods for doing this (including penalties for free parameters),\u00a0which are discussed in more detail in the Appendices. There is a rich theoretical literature debating which method is best (Wagenmakers and Farrell, 2004; Vandekerckhove et al., 2015). Here, we do not position ourselves in this theoretical debate, and instead focus on one of the simplest methods, the Bayes Information Criterion, $B\u2062I\u2062C$, which has an explicit penalty for free parameters.\n\n$$\nB\u2062I\u2062C=-2\u2062log\u2061L\u2062L^+k_{m}\u2062log\u2061(T)\n$$\n\nwhere $L\u2062L^$ is the log-likelihood value at the best fitting parameter settings, and $k_{m}$ is the number of parameters in model $m$. The model with the smallest $B\u2062I\u2062C$ score is the model that best fits the data. Thus, the positive effect of $k_{m}$ in the last term corresponds to a penalty for models with large numbers of parameters.\n\nWhile Equation 10 is simple enough to apply in\u00a0order\u00a0to find the model that, apparently, best fits your data, it is important to check that your model comparison process gives sensible results for simulated data. Just as parameter fitting should be validated by parameter recovery on simulated data, so model comparison should\u00a0be validated by model recovery on simulated data.\n\nMore specifically, model recovery involves simulating data from all models (with a range of parameter values carefully selected as in the case of parameter recovery) and then fitting that data with all models to determine the extent to which fake data generated from model $A$ is best fit by model $A$ as opposed to model $B$. This process can be summarized in a confusion matrix (see Box 5\u2014figure 1 below for an example) that quantifies the probability that each model is the best fit to data generated from the other models, that\u00a0is,\u00a0$p(fit model=B|simulated model=A)$. In a perfect world, the confusion matrix will be the identity matrix, but in practice, this is not always the case\u00a0(e.g.,\u00a0Wilson and Niv, 2011).\n\nWhen computing and interpreting a confusion matrix it is important to keep the following points in mind:\n\n### Compare different methods of model comparison\n\nIf the confusion matrix has large off-diagonal components, then you have a problem with model recovery. There are a number of factors that could cause this problem,\u00a0ranging from a bug in the code to an underpowered experimental design. However, one cause that is worth investigating is whether you are using the wrong method for penalizing free parameters. In particular, different measures penalize parameters in different ways that are \u2018correct\u2019 under different assumptions. If your confusion matrix is not diagonal, it may be that the assumptions underlying your measures (e.g. BIC) do not hold for your models, in which case it might be worth trying another metric for model comparison (e.g., AIC [Wagenmakers and Farrell, 2004]; see Appendix 2).\n\n### Be careful with the choice of parameters when computing the confusion matrix\n\nJust as parameter recovery may only be successful in certain parameter regimes, so too can model recovery depend critically on the parameters chosen to simulate the models. In some parameter regimes, two models may lead to very different behavior, but they may be indistinguishable in other parameter regimes (see Box 5\u2014figure 1 below). As with parameter recovery, we believe that the best approach is to match the range of the\u00a0parameters to the range seen in your data, or to the range that you expect from prior work.\n\n### A note on interpreting the confusion matrix\n\nAs described above, and in keeping with standard practice from statistics, the confusion matrix is defined as the probability that data simulated by one model is best fit by another, that\u00a0is, $p\u2062(fit model|simulated model)$. However, when we fit a model to real data, we are usually more interested in making the reverse inference \u2014 that is, given that model $B$ fits our data best, which model is most likely to have generated the data? This is equivalent to computing $p\u2062(simulated model|fit model)$. Note that this measure, which we term the \u2018inversion matrix\u2019 to distinguish it from the confusion matrix, is not the same as the confusion matrix unless model recovery is perfect. Of course, the inversion matrix can be computed from the confusion matrix using Bayes rule (see Appendix 3) and it may be useful to report it in cases where the confusion matrix is not diagonal.\n\n### The elephant in the room with model comparison\n\nAs wonderful as it is to find that your model \u2018best\u2019 fits the behavioral data, the elephant in the room (or perhaps more correctly not in the room) with all model comparison is that it only tells you which of the models you considered fits the data best. In and of itself, this is rather limited information as there are infinitely many other models that you did not consider. This makes it imperative to start with a good set of models that rigorously capture the competing hypotheses (that is, think hard in Step 2). In addition, it will be essential to validate (at least) your winning model (see Step 9) to show how simulating its behavior can generate the patterns seen in the data that you did not explicitly fit, and thus obtain an absolute measure of how well your model relates to your data.\n\n## Run the experiment and analyze the actual data\n\nOnce all the previous steps have been completed, you can finally move on to modeling your empirical data. The first step to complete is of course to analyze the data without the model, in the same way that we recommended for model simulations in section 'Simulate, simulate, simulate!' This model-independent analysis is extremely important: you designed the experiment to test specific hypotheses, and constructed models to reflect them. Simulations showed expected patterns of behaviors given those hypotheses. If the model-independent analyses do not show evidence of the expected results, there is almost no point in fitting the model. Instead, you should go back to the beginning, either re-thinking the computational models if the analyses show interesting patterns of behavior, or re-thinking the experimental design or even the scientific question you are trying to answer. In our experience, if there is no model-independent evidence that the processes of interest are engaged, then a model-based analysis is unlikely to uncover evidence for the processes either.\n\nIf, however, the behavioral results are promising, the next step is to fit the models developed previously and to\u00a0perform model comparison. After this step, you should check that the parameter range obtained with the fitting is within a range where parameter and model recovery were good. If the range is outside what you explored with simulations, you should go back over the parameter and model recovery steps to match the empirical parameter range, and thus ensure that the model fitting and model comparison procedures lead to interpretable results.\n\nAn important point to remember is that human behavior is always messier than the model, and it is unlikely that the class of models you explored actually contains the \u2018real\u2019 model thatgenerated human behavior. At this point, you should consider looping back to Steps 2\u20135 to improve the\u00a0models, guided by in depth model-independent analysis of the data.\n\nFor example, you may consider modeling \u2018unimportant parameters\u2019,\u00a0representing mechanisms that are of no interest to your scientific question but that\u00a0might still affect your measures. Modeling these unimportant parameters usually captures variance in the behavior that would otherwise be attributed to noise, and as such, makes for a better estimation of \u2018important\u2019 parameters. For example, capturing pre-existing biases (e.g. a preference for left/right choices) in a decision or learning task provides better estimation of the inverse temperature, by avoiding attributing systematic biases to noise, which then affords better estimation of other parameters like the learning rate (this is evident in Box 6\u2014figure 1).\n\n## Validate (at least) the winning model\n\nAll the previous steps measure a relative goodness of fit. Does model A fit better than model B? However, before interpreting any results from a model, it is essential to ensure that the model actually usefully captures the data in an absolute sense. This step is called model validation, and should never be skipped:\u00a0it is possible to fit a model, get high fit measures, and nevertheless completely miss the essence of the behavior.\n\nOne method for model validation is computing the average trial likelihood as an absolute measure of fit. Although this measure has some nice properties \u2014 for example, the best possible value is one when the model predicts behavior perfectly \u2014 it offers limited value when choices are actually stochastic (which may be the case in many situations; Drugowitsch et al., 2016) or the environment is complex. In these cases, the best possible likelihood per trial is less than 1, but it is not\u00a0known what the best possible likelihood per trial could be. For this reason, although the likelihood per trial can be a useful tool for model validation (Leong et al., 2017), interpreting it as an absolute measure of model fit is of limited value.\n\nA better method to validate a model is to simulate it with the fit parameter values (Palminteri et al., 2017; Nassar and Frank, 2016; Navarro, 2019), a procedure long performed by statisticians as part of the \u2018posterior predictive check\u2019 (Roecker, 1991; Gelman et al., 1996). You should then analyze the simulated data in the same way that\u00a0you analyzed the empirical data, to verify that all important behavioral effects are qualitatively and quantitatively captured by the simulations with the fit parameters. For example, if you observe a qualitative difference between two conditions empirically, the model should reproduce it. Likewise, if a learning curve reaches a quantitative asymptote of 0.7, simulations shouldn\u2019t reach a vastly different one.\n\nSome researchers analyze the posterior prediction of the model conditioned on the past history, instead of simulated data. In our previous notation, they evaluate the likelihood of choice $c_{t}$ given past data, $d_{1:t-1}$, where the past data includes choices made by the subject, not choices made by the model, $p\u2062(c_{t}|d_{1:t-1},s_{t},\ud835\udf3d_{m},m)$. In some cases, this approach leads to very similar results to simulations, because simulations sample choices on the basis of a very similar probability, where the past data, $d_{1:t-1}$, include choices made by the model. However, it can also be dramatically different if the path of actions sampled by the participant is widely different from the paths likely to be selected by the model (leading to very different past histories).\n\nPalminteri and colleagues (Palminteri et al., 2017) offer a striking example of this effect, where Model A fits better than Model B by any quantitative measure of model comparison, but is completely unable to capture the essence of the behavior. In their example, data are\u00a0generated with a reinforcement learning agent (which takes the place of the subject) on a reversal learning task (where a choice that was previously good becomes bad, and reciprocally). These data are then fit with either a win-stay lose-shift model (model B), or a simplistic choice kernel model, which assumes that previous choices tend to be repeated (model A). Because of the autocorrelation in the choices made by the reinforcement learning agent, model A, which tends to repeat previous actions, fits better than model B, whose win-stay-lose-shift choices only depend on the action and outcome from the last trial. However, model A is completely insensitive to reward, and thus is unable to generate a reversal behavior when it is simulated with the fit model parameters. Thus, in this case, model A should be discarded, despite a greater quantitative fit. Nevertheless, the fact that the best validating model B captures less variance than model A should serve as a warning that model B is missing crucial components of the data and that a better model probably exists. This should incite the researcher to go back to the drawing board to develop a better model,\u00a0for\u00a0example one that combines elements of both models or a different model entirely, and perhaps a better experiment to test it.\n\nMore generally, if your validation step fails, you should go back to the drawing board! This may involve looking for a better model, as well as redesigning the task. Be careful interpreting results from a model that is not well validated! Of course, exactly what it means for a model to \u2018fail\u2019 the validation step is not well defined:\u00a0no model is perfect, and there is no rule of thumb to tell us when a model is good enough. The most important aspect of validation is for you (and your readers) to be aware of its limitations, and in which ways they may influence any downstream results.\n\n## Analyze the winning model\n\nTo minimize risks of p-hacking, model-dependent analyses should only be performed on the winning model, after researchers are satisfied that the model captures the\u00a0behavior. One particularly powerful application of model-based analysis of behavior involves estimating the latent variables in the model. Latent variables are the hidden components of the algorithms underlying the behavior that are not directly observable from\u00a0the behavior itself. These latent variables shed light on the internal workings of the model and, if we are to take the model seriously, should have some representation in the subjects\u2019 mind and brain (Cohen et al., 2017; O'Doherty et al., 2007).\n\nExtracting latent variables from the model is as simple as simulating the model and recording how the latent variables evolve over time. The parameters of the simulation should be the fit parameters for each subject. In most cases, it is useful to yoke the choices of the model to the choices the participants actually made, thus the latent variables evolve according to the experience participants actually had. This is especially true if the\u00a0choices can influence what participants see in the future.\n\nOnce estimated, the latent variables can be used in much the same way as any other observable variable in the analysis of data. Perhaps the most powerful application comes when combined with physiological data such as pupil dilation, EEG, and fMRI. The simplest of these approaches uses linear regression to test whether physiological variables correlate with the latent variables of interest. Such an approach has led to a number of insights into the neural mechanisms underlying behavior (Nassar et al., 2012; Daw et al., 2011; Donoso et al., 2014; Collins and Frank, 2018; Fischer and Ullsperger, 2013), although, as with any modeling exercise, latent variable analysis should be done with care (Wilson and Niv, 2015).\n\nOther model-dependent analyzes include studying individual differences as captured by fit parameters. Fit parameters can be treated as a dependent variable in continuous analyses (e.g. correlating with age, symptom scales, and\u00a0so\u00a0on [Gillan et al., 2016]) or group comparisons (e.g. patients vs. matched controls\u00a0[Collins et al., 2014]).\n\n## Reporting model-based analyses\n\nCongratulations! You have developed, simulated, and fit your model\u00a0(and maybe several other competing models) to your data. You have estimated parameters, computed model comparison scores, and validated whether your model can generate realistic-looking behavior. It\u2019s time to start writing! But what exactly should you report in your paper? And how should you report it?\n\n### Model selection\n\nIn many modeling papers, a key conclusion from the work is that one model fits the data better than other competing models. To make this point convincingly, we recommend including the following things in your paper, either as main results or in the supplementary material.\n\n#### Model recovery analysis\n\n##### Confusion matrix\n\nBefore anyone should believe your model comparison results, you need to demonstrate the ability of your analysis/experiment to distinguish between models under ideal conditions of simulated data. The best way to visualize these results is with a confusion matrix, as outlined in section 'Can you arbitrate between different models'?\u00a0If the model comparison result is central to your paper, we recommend including the confusion matrix as a figure in the main text. If model comparison is less important, we recommend including it in the supplementary materials.\n\n##### Number of subjects best fit by each model\n\nThe simplest way to visualize how well the winning model fits the data is with a histogram showing the number of subjects best fit by each model. Obviously if all subjects are best fit with one model, the story is simple. The more likely scenario is that some subjects will be best fit by other models. Such a result is important to acknowledge in the paper as it may reflect the use of different strategies by different people or that the \u2018correct\u2019 model lies somewhere in between the models you have considered.\n\n#### Group level statistics\n\n##### Exceedance probabilities\n\nA more sophisticated and less biased (Piray et al., 2018) way to report model comparison results is by computing the probability that a single model best describes all the data. This is clearly an assumption whose merits should be discussed in your paper. In cases where it is valid, the method of Rigoux et al. (2014) computes these \u2018Exceedance Probabilities\u2019,\u00a0the probability that each model generated all the data. These probabilities can also be reported in histogram or table form.\n\nModel-independent measures of simulated data. The cleanest way to demonstrate the\u00a0superiority of one model is if that model can account for qualitative patterns in the data that are not captured by other models (see section 'Validate (at least) the winning model').\n\n### Parameter fits\n\nMany modeling papers involve fitting parameters to behavioral data. In some cases this is the main point of the paper, for example to show that parameter values differ between groups or treatments, in other cases parameter fitting is secondary to model comparison. In all cases, we recommend reporting the fit parameter values in as transparent a way as\u00a0possible (i.e. more than just the means and standard errors).\n\n#### Report distributions of parameter values\n\nThe simplest way to report parameter fits is to plot a distribution of all fit parameter values, for example in the form of a histogram (e.g. Figure S1 in Wilson et al., 2013\u00a0and Nassar et al., 2018) or a cloud of points (e.g. Figure\u00a05 in Huys et al., 2011). This gives a great sense of the variability in each parameter across the population and can also illustrate problems with fitting. For example, if a large number of fit parameters are clustered around the upper and lower bounds, this may indicate a problem with the model.\n\n#### Plot pairwise correlations between fit parameter values\n\nA deeper understanding of the relationships between fit parameters can be obtained by making scatter plots of the pairwise correlations between parameters. As with histograms of individual parameters, this approach gives a sense of the distribution of parameters, and can provide evidence of problems with the model; for example, if two parameters trade off against one another, it is a sign that these parameters may be unidentifiable in the experiment.\n\n#### Report parameter recovery\n\nFinally, all parameter fit analyses should sit on the shoulders of a comprehensive parameter recovery analysis with simulated data. If parameters cannot be recovered in the ideal case of simulated data, there is little that\u00a0they can tell us about real behavior.\n\n### Share your data and code!\n\nThe most direct way to communicate your results is to share the data and code. This approach encourages transparency and ensures that others can see exactly what you did. Sharing data and code also allows others to extend your analyses easily, by applying it to their own data or adding new models into the mix.\n\nIdeally the data you share should be the raw data for the experiment, with minimal or no preprocessing (apart from the removal of identifying information). The code you share should reproduce all steps in your analysis, including any preprocessing/outlier exclusion you may have performed and generating all of the main and supplementary figures in the paper. In a perfect world, both data and code would be shared publicly on sites such as GitHub, DataVerse and\u00a0so\u00a0on.\u00a0However, this is not always possible, for example, if the data come from collaborators who do not agree to data sharing, or if further analyses are planned using the same data set. In this case, we recommend having a clean set of \u2018shareable\u2019 code (and hopefully data too) that can be sent via email upon request.\n\n### Should you always report all of your modeling results?\n\nFinally, if you are using an established model, it can be tempting to skip many of the steps outlined above and report only the most exciting results. This temptation can be even greater if you are using code developed by someone else that, perhaps, you do not fully understand. In our opinion, taking shortcuts like this is dangerous. For one thing, your experiment or population may be different and the model may perform differently in this regime. For another, quite often \u2018established\u2019 models (in the sense that they have been published before), have not been validated in a systematic way. More generally, as with any research technique, when using computational modeling you need to demonstrate that you are applying the method correctly, and the\u00a0that steps we outline here can help. In conclusion, even if developing the model is not the central point of your paper, you should report all of your modeling results.\n\n## What now?\n\n### Looping back\n\nA modeler\u2019s work is never done. To paraphrase George Box, there are no correct models, there are only useful models (Box, 1979). To make your model more useful, there are a number of next steps to consider to test whether your model really does describe a process in the mind.\n\n#### Improve the model to account for discrepancies with your existing data set\n\nModel fits are never perfect and, even in the best cases, there are often small discrepancies with actual data. The simplest next step is to try to address these discrepancies by improving the model, either by including additional factors (such as side bias or lapse rates) or by devising new models entirely.\n\n#### Use your model to make predictions\n\nThe best models don\u2019t just explain data in one experiment, they predict data in completely new situations. If your model does not easily generalize to new situations, try to understand why that is and how it could be adjusted to be more general. If your model does generalize, test its predictions against new data \u2014 either data you collect yourself from a new experiment or data from other studies that (hopefully) have been shared online.\n\n### Using advanced techniques\n\nAnother potential next step is to use more powerful modeling techniques. We focused here on the simplest techniques (maximum likelihood estimation and model comparison by BIC) because of their accessibility to beginners, and because most of the advice we give here generalizes to more advanced techniques. In particular, no matter how advanced the modeling technique used, validation is essential (Palminteri et al., 2017; Nassar and Frank, 2016; Huys, 2017). Nevertheless, the simple methods described here have known limitations. More advanced techniques attempt to remedy them, but come with their own pitfalls. A complete review of these advanced techniques is beyond the scope of this paper; instead we provide pointers to a few of the most interesting techniques for the ambitious reader to pursue.\n\n#### Compute maximum a posteriori (MAP) parameter values\n\nPerhaps the simplest step for improving parameter estimates is to include prior information about parameter values. When combined with the likelihood, these priors allow us to compute the posterior, which we can use to find the maximum a posteriori (MAP) parameter values. Although\u00a0they\u00a0are still point estimates, with good priors, MAP parameters can be more accurate than parameters estimated with maximum likelihood approaches (Gershman, 2016; Daw, 2011), although when the priors are bad, this method has problems of its own (Katahira, 2016).\n\n#### Approximate the full posterior by sampling\n\nPoint estimates of model parameters, such as those\u00a0obtained with MLE or MAP, lose interesting information about uncertainty over the parameter distribution. Sampling approaches (such as Markov Chain Monte Carlo or MCMC) provide this richer information; furthermore, they allow modelers to investigate more complex assumptions. For example, hierarchical Bayesian approaches make\u00a0it\u00a0possible to fit all participants\u00a0simultaneously, integrating assumptions about their dependence (e.g. one single group, multiple groups, effects of covariates of interest such as age and so on; Lee, 2011; Lee and Wagenmakers, 2014; Wiecki et al., 2013).\n\n#### Advanced optimizers and approximate likelihood\n\nSome models have intractable likelihoods, for example if the choice state has too many dimensions, as in continuous movements, or if the model included unobservable choices. There exist methods to approximate likelihoods to relate them quantitatively to data, such as the ABC method (Turner and Sederberg, 2012; Sunn\u00e5ker et al., 2013). There are also advanced methods for finding best fit parameters in a sample-efficient manner when computing the likelihood is expensive (Acerbi and Ji, 2017; Acerbi, 2018).\n\n#### Model\u00a0selection\n\nBayesian model selection provides less biased, statistically more accurate ways of identifying which model is best at the group level (Rigoux et al., 2014). This may be particularly important when comparing model selection between groups, for\u00a0example between\u00a0patients and controls (Piray et al., 2018).\n\n#### Incorporating other types of data\n\nWe focused on modeling a single type of observable data, choices. However, there is a rich literature on fitting models to other measurements, such as reaction times (Ratcliff, 1978; Ratcliff and Rouder, 1998), but also to\u00a0eye movements and neural data (Turner et al., 2016). Furthermore, fitting more than one measurement at a time provides additional constraints to the model, and as such may provide better fit (Ballard and McClure, 2019). However, fitting additional data can increase the complexity of the model-fitting process and additional care must be taken to determine exactly how different types of data should be combined (Viejo et al., 2015).\n\n## Epilogue\n\nOur goal for this paper was to offer practical advice, for beginners as well as seasoned researchers, on the computational modeling of behavioral data. To this end, we offered guidance on how to generate models, simulate models, fit models, compare models, validate models, and extract latent variables from models to compare with physiological data. We have talked about how to avoid common pitfalls and misinterpretations that can arise with computational modeling, and lingered, quite deliberately, on the importance of good experimental design. Many of these lessons were lessons we learned the hard way, by actually making these mistakes for ourselves over a combined 20+ years in the field. By following these steps, we hope that you will avoid some of the errors that slowed our own research, and that the overall quality of computational modeling in behavioral science will improve.\n",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1c4e7837-3cfe-4136-b0e8-c0cdb941ea17",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C1",
+      "claim": "Computational modeling of behavior has revolutionized psychology and neuroscience.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational modeling of behavior has revolutionized psychology and neuroscience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the impact of computational modeling in the field, presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "f0c068fd-65cc-4ad9-b5f5-cbd137bd82a7",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C2",
+      "claim": "By fitting models to experimental data we can probe the algorithms underlying behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "By fitting models to experimental data we can probe the algorithms underlying behavior, find neural correlates of computational variables and better understand the effects of drugs, illness and interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of computational modeling, drawing on established practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "796c01dc-8925-4b1b-b70a-9a648eb9ed7c",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C3",
+      "claim": "By fitting models to experimental data we can find neural correlates of computational variables.",
+      "claim_type": "EXPLICIT",
+      "source": "By fitting models to experimental data we can probe the algorithms underlying behavior, find neural correlates of computational variables and better understand the effects of drugs, illness and interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of computational modeling, drawing on established practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "61b136a4-3ae5-4622-a41e-e3426c4dbb2f",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C4",
+      "claim": "By fitting models to experimental data we can better understand the effects of drugs, illness and interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "By fitting models to experimental data we can probe the algorithms underlying behavior, find neural correlates of computational variables and better understand the effects of drugs, illness and interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of computational modeling, drawing on established practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "f978e27d-adcc-4da2-a645-c13725624a43",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C5",
+      "claim": "Behavioral data most often come in the form of choices.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral data most often come in the form of choices, but can also be reaction times, eye movements, or other easily observable behaviors, and even neural data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common practice in the field, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "bf3ba043-64ed-4e10-9f35-72d242a0eeb2",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C6",
+      "claim": "Behavioral data can also be reaction times, eye movements, or other easily observable behaviors, and even neural data.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral data most often come in the form of choices, but can also be reaction times, eye movements, or other easily observable behaviors, and even neural data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the types of data used in computational modeling, based on established practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "0e746f0d-07c6-4381-b199-02d5e1d8b372",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C7",
+      "claim": "Computational models instantiate different 'algorithmic hypotheses' about how behavior is generated.",
+      "claim_type": "EXPLICIT",
+      "source": "In this sense, computational models instantiate different 'algorithmic hypotheses' about how behavior is generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about what computational models represent, based on established understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "175ea2a7-1335-4ac9-b132-b31b8cfe99ac",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C8",
+      "claim": "What it means to 'make sense' of behavioral data will vary according to the researcher's goals.",
+      "claim_type": "EXPLICIT",
+      "source": "Exactly what it means to 'make sense' of behavioral data is, to some extent, a matter of taste that will vary according to the researcher's goals (Kording et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kording et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "70be96f8-a2f4-43ed-908d-90559c54ad87",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C9",
+      "claim": "In some cases, a simple model that can explain broad qualitative features of the data is enough.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, a simple model that can explain broad qualitative features of the data is enough. In other cases, more detailed models that make quantitative predictions are required (Breiman, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes different modeling approaches, supported by citation to Breiman, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "cd2c89fb-9dfa-4a10-9e4f-f98ab2e4a1a2",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C10",
+      "claim": "In other cases, more detailed models that make quantitative predictions are required.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, a simple model that can explain broad qualitative features of the data is enough. In other cases, more detailed models that make quantitative predictions are required (Breiman, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes different modeling approaches, supported by citation to Breiman, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "efd6092c-4f26-494f-a16a-23ca5a9d0431",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C11",
+      "claim": "Four uses dominate the literature: simulation, parameter estimation, model comparison, and latent variable inference.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact form of the models, and exactly what we do with them, is limited only by our imaginations, but four uses dominate the literature: simulation, parameter estimation, model comparison, and latent variable inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common practices in the field, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "d54f6c11-fb6c-44e5-9b72-3d3a11ee853c",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C12",
+      "claim": "Each of these uses can be mishandled in a number of ways, causing us to draw wrong and misleading conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these uses has its strengths and weaknesses, and each of them can be mishandled in a number of ways, causing us to draw wrong and misleading conclusions (Nassar and Frank, 2016; Palminteri et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nassar and Frank, 2016 and Palminteri et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "8041be6a-47ab-4865-80ff-89b2ce6356da",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C13",
+      "claim": "Modeling is particularly popular in the field of learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling is particularly popular in the field of learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the prevalence of modeling in a specific field, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "43d204cf-0539-439d-ad2a-463d6b3947b6",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C14",
+      "claim": "The field of learning benefits from modeling particularly because of the nature of the behavioral data: trials are dependent on all past history and thus unique, making classic data analysis with aggregation across conditions less successful.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this field benefits from modeling particularly because of the nature of the behavioral data: trials are dependent on all past history and thus unique, making classic data analysis with aggregation across conditions less successful.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about why modeling is beneficial in learning contexts, based on the nature of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "3cd60816-7b91-4341-9735-a658bb6261bd",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C15",
+      "claim": "The sequential dependency of trials in learning contexts can lead to technical challenges when fitting models that are absent in non-learning contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequential dependency of trials in learning contexts can lead to technical challenges when fitting models that are absent in non-learning contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about technical challenges in learning contexts based on the nature of sequential dependencies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "9ab9afc4-e745-4851-b79b-d64e94b735ee",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C16",
+      "claim": "The same techniques are widely and successfully applied to other observable behavior, such as reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same techniques are widely and successfully applied to other observable behavior, such as reaction times (Ratcliff and Rouder, 1998; Viejo et al., 2015; Ballard and McClure, 2019; Wiecki et al., 2013), and to other domains, including but not limited to perception (Sims, 2018), perceptual decision-making (Ratcliff and Rouder, 1998; Drugowitsch et al., 2016; Findling et al., 2018), economic decision-making (van Ravenzwaaij et al., 2011; Nilsson et al., 2011), visual short-term memory (Donkin et al., 2016; Donkin et al., 2014; Nassar et al., 2018), long-term memory (Batchelder and Riefer, 1990), category learning (Lee and Webb, 2005), executive functions (Haaf and Rouder, 2017; Jahfari et al., 2019), and so on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies applying these techniques to reaction times.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "4b3ea85e-6ca5-4492-8f54-ad8102639f0e",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C17",
+      "claim": "The same techniques are widely and successfully applied to perception.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same techniques are widely and successfully applied to other observable behavior, such as reaction times (Ratcliff and Rouder, 1998; Viejo et al., 2015; Ballard and McClure, 2019; Wiecki et al., 2013), and to other domains, including but not limited to perception (Sims, 2018), perceptual decision-making (Ratcliff and Rouder, 1998; Drugowitsch et al., 2016; Findling et al., 2018), economic decision-making (van Ravenzwaaij et al., 2011; Nilsson et al., 2011), visual short-term memory (Donkin et al., 2016; Donkin et al., 2014; Nassar et al., 2018), long-term memory (Batchelder and Riefer, 1990), category learning (Lee and Webb, 2005), executive functions (Haaf and Rouder, 2017; Jahfari et al., 2019), and so on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sims, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "677e8073-ca53-4f42-baa1-2649c2e9da11",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C18",
+      "claim": "The same techniques are widely and successfully applied to perceptual decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same techniques are widely and successfully applied to other observable behavior, such as reaction times (Ratcliff and Rouder, 1998; Viejo et al., 2015; Ballard and McClure, 2019; Wiecki et al., 2013), and to other domains, including but not limited to perception (Sims, 2018), perceptual decision-making (Ratcliff and Rouder, 1998; Drugowitsch et al., 2016; Findling et al., 2018), economic decision-making (van Ravenzwaaij et al., 2011; Nilsson et al., 2011), visual short-term memory (Donkin et al., 2016; Donkin et al., 2014; Nassar et al., 2018), long-term memory (Batchelder and Riefer, 1990), category learning (Lee and Webb, 2005), executive functions (Haaf and Rouder, 2017; Jahfari et al., 2019), and so on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ratcliff and Rouder, 1998; Drugowitsch et al., 2016; Findling et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "bd450331-4911-4c62-bba2-6b7a013462a4",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C19",
+      "claim": "The same techniques are widely and successfully applied to economic decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same techniques are widely and successfully applied to other observable behavior, such as reaction times (Ratcliff and Rouder, 1998; Viejo et al., 2015; Ballard and McClure, 2019; Wiecki et al., 2013), and to other domains, including but not limited to perception (Sims, 2018), perceptual decision-making (Ratcliff and Rouder, 1998; Drugowitsch et al., 2016; Findling et al., 2018), economic decision-making (van Ravenzwaaij et al., 2011; Nilsson et al., 2011), visual short-term memory (Donkin et al., 2016; Donkin et al., 2014; Nassar et al., 2018), long-term memory (Batchelder and Riefer, 1990), category learning (Lee and Webb, 2005), executive functions (Haaf and Rouder, 2017; Jahfari et al., 2019), and so on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to van Ravenzwaaij et al., 2011; Nilsson et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "757a8638-4054-42c8-85bd-67d2ec8ef319",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C20",
+      "claim": "The same techniques are widely and successfully applied to visual short-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same techniques are widely and successfully applied to other observable behavior, such as reaction times (Ratcliff and Rouder, 1998; Viejo et al., 2015; Ballard and McClure, 2019; Wiecki et al., 2013), and to other domains, including but not limited to perception (Sims, 2018), perceptual decision-making (Ratcliff and Rouder, 1998; Drugowitsch et al., 2016; Findling et al., 2018), economic decision-making (van Ravenzwaaij et al., 2011; Nilsson et al., 2011), visual short-term memory (Donkin et al., 2016; Donkin et al., 2014; Nassar et al., 2018), long-term memory (Batchelder and Riefer, 1990), category learning (Lee and Webb, 2005), executive functions (Haaf and Rouder, 2017; Jahfari et al., 2019), and so on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Donkin et al., 2016; Donkin et al., 2014; Nassar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "0bdf97ff-2f05-4b4f-add2-1d39e42185f2",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C21",
+      "claim": "The same techniques are widely and successfully applied to long-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same techniques are widely and successfully applied to other observable behavior, such as reaction times (Ratcliff and Rouder, 1998; Viejo et al., 2015; Ballard and McClure, 2019; Wiecki et al., 2013), and to other domains, including but not limited to perception (Sims, 2018), perceptual decision-making (Ratcliff and Rouder, 1998; Drugowitsch et al., 2016; Findling et al., 2018), economic decision-making (van Ravenzwaaij et al., 2011; Nilsson et al., 2011), visual short-term memory (Donkin et al., 2016; Donkin et al., 2014; Nassar et al., 2018), long-term memory (Batchelder and Riefer, 1990), category learning (Lee and Webb, 2005), executive functions (Haaf and Rouder, 2017; Jahfari et al., 2019), and so on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Batchelder and Riefer, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "72487930-73ea-47b7-8d1f-ac13771547a5",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C22",
+      "claim": "The same techniques are widely and successfully applied to category learning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same techniques are widely and successfully applied to other observable behavior, such as reaction times (Ratcliff and Rouder, 1998; Viejo et al., 2015; Ballard and McClure, 2019; Wiecki et al., 2013), and to other domains, including but not limited to perception (Sims, 2018), perceptual decision-making (Ratcliff and Rouder, 1998; Drugowitsch et al., 2016; Findling et al., 2018), economic decision-making (van Ravenzwaaij et al., 2011; Nilsson et al., 2011), visual short-term memory (Donkin et al., 2016; Donkin et al., 2014; Nassar et al., 2018), long-term memory (Batchelder and Riefer, 1990), category learning (Lee and Webb, 2005), executive functions (Haaf and Rouder, 2017; Jahfari et al., 2019), and so on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lee and Webb, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "e68cafb9-4b56-46f7-a73d-3003d25c8f38",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C23",
+      "claim": "The same techniques are widely and successfully applied to executive functions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same techniques are widely and successfully applied to other observable behavior, such as reaction times (Ratcliff and Rouder, 1998; Viejo et al., 2015; Ballard and McClure, 2019; Wiecki et al., 2013), and to other domains, including but not limited to perception (Sims, 2018), perceptual decision-making (Ratcliff and Rouder, 1998; Drugowitsch et al., 2016; Findling et al., 2018), economic decision-making (van Ravenzwaaij et al., 2011; Nilsson et al., 2011), visual short-term memory (Donkin et al., 2016; Donkin et al., 2014; Nassar et al., 2018), long-term memory (Batchelder and Riefer, 1990), category learning (Lee and Webb, 2005), executive functions (Haaf and Rouder, 2017; Jahfari et al., 2019), and so on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Haaf and Rouder, 2017; Jahfari et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "4893efed-ac95-4939-b6eb-7e6fe3a426f0",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C24",
+      "claim": "Computational modeling can never replace good experimental design.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational modeling is a powerful technique, but it can never replace good experimental design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about the relationship between modeling and experimental design, based on established understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "d769cdc3-839a-448d-b698-d67c80603b84",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C25",
+      "claim": "Modeling is fundamentally limited by the behavioral data, which is itself fundamentally limited by the experimental protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling attempts to capture how information is manipulated behind the scenes to produce the behavior; thus it is fundamentally limited by the behavioral data, which is itself fundamentally limited by the experimental protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of modeling based on the nature of data and experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "88f79c55-d019-4597-8c06-09fd6a80b3e2",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C26",
+      "claim": "The best experiments make the processes of interest identifiable in classical analyses of the behavioral data.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to engaging the processes of interest, the best experiments make these processes identifiable in classical analyses of the behavioral data (Palminteri et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Palminteri et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "2b33bed4-2460-47b1-ad7d-6152cccbe94a",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C27",
+      "claim": "Computational modeling is rarely informative when there is no evidence of an effect in model-independent analyses of behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experience, computational modeling is rarely informative when there is no evidence of an effect in model-independent analyses of behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' experience, representing empirical observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "0db41c29-91e6-4890-ae7d-913dc864c832",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C28",
+      "claim": "Code for implementing all of the examples is available on GitHub.",
+      "claim_type": "EXPLICIT",
+      "source": "Code for implementing all of these examples is available on GitHub (https://github.com/AnneCollins/TenSimpleRulesModeling) (Collins and Wilson, 2019; copy archived at https://github.com/elifesciences-publications/TenSimpleRulesModeling).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the availability of code, supported by citation to Collins and Wilson, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "85de2d84-c8b6-471c-8c2c-0229f30e2d38",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C29",
+      "claim": "Bad models can limit the conclusions we can draw.",
+      "claim_type": "EXPLICIT",
+      "source": "Just as bad experiments can limit our ability to test different hypotheses, bad models \u2013 quite literally the mathematical embodiment of our hypotheses \u2013 can further limit the conclusions we can draw (Donkin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Donkin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "128d3734-402d-4607-8091-df408011d03a",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C30",
+      "claim": "Even well-established computational models can be problematic in some cases.",
+      "claim_type": "EXPLICIT",
+      "source": "This point is especially important if we are designing new models, but even well-established computational models can be problematic in some cases (Broomell and Bhatia, 2014; Nilsson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Broomell and Bhatia, 2014; Nilsson et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "ea316d5a-a0c7-415e-9ddc-7df0217cd2a8",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C31",
+      "claim": "Computational modelers have a wide variety of goals for their models.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in an excellent article by Kording and colleagues (Kording et al., 2018), computational modelers have a wide variety of goals for their models, and understanding your own motivations is a great place to start.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kording et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "77c80a7f-6145-4568-b2b1-fc58493fcde4",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C32",
+      "claim": "The delta rule was first invented using a heuristics approach.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach was how the delta rule (see Model three below) was first invented (Rescorla and Wagner, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rescorla and Wagner, 1972.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "3780ce5f-3690-4c1a-9c89-910a8324011b",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C33",
+      "claim": "Algorithms such as Q-learning and temporal difference learning have been related to human and animal behavior and brain function.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach has been fruitfully applied in the field of reinforcement learning (Sutton and Barto, 2018), where algorithms such as Q-learning and temporal difference learning have been related to human and animal behavior and brain function (Watkins and Dayan, 1992; Montague et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Watkins and Dayan, 1992; Montague et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "8391db1e-8eb9-4336-8208-189cd678bce8",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C34",
+      "claim": "Ideal observer models in vision are an example where the Bayes-optimal perspective has been applied successfully.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideal observer models in vision are one example in which this approach has been applied successfully (Geisler, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Geisler, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "99ea1d1e-5cb0-49a3-922f-b8295c221dca",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C35",
+      "claim": "Formal model comparison techniques include a penalty for overly complex models.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, formal model comparison techniques (described in detail in Appendix 2) include a penalty for overly complex models, which are more likely to overfit the data and generalize poorly, and favor simpler models so long as they can account for the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a property of formal model comparison techniques, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "170ceebf-ac76-4e2e-98ab-b34693a8cde6",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C36",
+      "claim": "Overly complex models are more likely to overfit the data and generalize poorly.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, formal model comparison techniques (described in detail in Appendix 2) include a penalty for overly complex models, which are more likely to overfit the data and generalize poorly, and favor simpler models so long as they can account for the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of complex models, based on established knowledge in statistics and machine learning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "e1fc662f-02e7-473b-92c4-f5964976b4fd",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C37",
+      "claim": "Finding qualitative signatures of the model is crucial.",
+      "claim_type": "EXPLICIT",
+      "source": "Finding qualitative signatures (and there will often be more than one) of the model is crucial. By studying these measures with simulated data, you will have greater intuition about what is going on when you use the same model-independent measures to analyze real behavior (Daw et al., 2011; Collins and Frank, 2012; Collins and Frank, 2013; Nassar et al., 2018; Lee and Webb, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies demonstrating this practice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "41a40fa5-4229-40a9-a755-67815bdf7615",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C40",
+      "claim": "The likelihood is a product of many numbers smaller than 1, which can be rounded to 0 with limited precision computing.",
+      "claim_type": "EXPLICIT",
+      "source": "(The likelihood is a product of many numbers smaller than 1, which can be rounded to 0 with limited precision computing. By contrast, the log-likelihood is a sum of negative numbers, which is usually tractable and will not be rounded to 0.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a numerical issue with computing likelihoods, based on established knowledge in computational statistics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "34348e45-e888-44da-87d3-fc20d007571d",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C41",
+      "claim": "The log-likelihood is a sum of negative numbers, which is usually tractable and will not be rounded to 0.",
+      "claim_type": "EXPLICIT",
+      "source": "(The likelihood is a product of many numbers smaller than 1, which can be rounded to 0 with limited precision computing. By contrast, the log-likelihood is a sum of negative numbers, which is usually tractable and will not be rounded to 0.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a numerical advantage of using log-likelihood, based on established knowledge in computational statistics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "7e7fe9be-40f8-4f06-abc7-4be6a1718798",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C42",
+      "claim": "A brute force search of the entire parameter space is occasionally useful.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest approach, a brute force search of the entire parameter space, is occasionally useful, and may help you to understand how different parameters interact (see Box 3\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a simple optimization approach and its utility, based on established practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "88f6fea6-51ed-424a-a303-810a9915c6ad",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C43",
+      "claim": "Brute force search is unfeasible outside of the simplest cases because of the high computational costs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach is unfeasible outside of the simplest cases (e.g. one or two parameters with tight bounds) because of the high computational costs of evaluating the likelihood function at a large number of points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of brute force search, based on established knowledge in optimization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "054319c8-456a-43fc-911a-4d7f814c649f",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C44",
+      "claim": "A key limitation of optimization algorithms is that they are only guaranteed to find local minima, which are not guaranteed to be the global minima.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a key limitation of optimization algorithms is that they are only guaranteed to find local minima, which are not guaranteed to be the global minima corresponding to the best fitting parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a fundamental limitation of optimization algorithms, based on established knowledge in optimization theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "73c61736-1d71-4da2-b3f1-24d0edea3111",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C45",
+      "claim": "Parameter recovery is a crucial part of any model-based analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a procedure is known as 'Parameter Recovery', and is a crucial part of any model-based analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about best practices in model-based analysis, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "9c1c3c57-1919-4584-a3fa-8e775552ec32",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C47",
+      "claim": "Even successful parameter recovery represents a best-case scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "Remember that even successful parameter recovery represents a best-case scenario!",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of parameter recovery, based on understanding of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "4ea3f0c3-dd6f-4e6a-be1a-e6b99faabb6a",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C48",
+      "claim": "The 'true' generative process for behavior is likely much more complex than any model you could conceive.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the best case you could possibly hope for in the model-based analysis and it is unlikely to ever occur as the 'true' generative process for behavior \u2014 that is, the inner workings of the mind and brain \u2014 is likely much more complex than any model you could conceive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the complexity of cognitive processes, based on general understanding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "9cdc09c1-f6d2-4e1f-8946-6bdef3ec7a40",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C51",
+      "claim": "Overfitting decreases the generalizability of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Overfitting is a problem in that it decreases the generalizability of the model: it makes it less likely that the conclusions drawn would apply to a different sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a consequence of overfitting, based on established knowledge in statistics and machine learning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "17b03de2-c022-4260-bc84-5830cbbf937a",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C52",
+      "claim": "Cross-validation avoids overfitting by measuring fit on held-out data.",
+      "claim_type": "EXPLICIT",
+      "source": "One way to avoid overfitting is to perform cross-validation: by measuring fit on held-out data, we directly test generalizability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a method for avoiding overfitting, based on established knowledge in statistics and machine learning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "ae6e5bab-a883-4677-b8ee-c9f6befd641d",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C54",
+      "claim": "Model comparison should be validated by model recovery on simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "Just as parameter fitting should be validated by parameter recovery on simulated data, so model comparison should be validated by model recovery on simulated data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about best practices in model comparison, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "89e002d3-c9ec-451b-87b1-cbf391c0cec9",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C56",
+      "claim": "Model comparison only tells you which of the models you considered fits the data best.",
+      "claim_type": "EXPLICIT",
+      "source": "As wonderful as it is to find that your model 'best' fits the behavioral data, the elephant in the room (or perhaps more correctly not in the room) with all model comparison is that it only tells you which of the models you considered fits the data best.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a fundamental limitation of model comparison, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "a0b2e475-42cb-46fb-bb0a-a78f9900d70e",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C57",
+      "claim": "If the model-independent analyses do not show evidence of the expected results, there is almost no point in fitting the model.",
+      "claim_type": "EXPLICIT",
+      "source": "If the model-independent analyses do not show evidence of the expected results, there is almost no point in fitting the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about when to proceed with model fitting, based on the authors' experience and understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "60b37327-65ce-4165-a7f2-df332f68fe5a",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C58",
+      "claim": "If there is no model-independent evidence that the processes of interest are engaged, then a model-based analysis is unlikely to uncover evidence for the processes either.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experience, if there is no model-independent evidence that the processes of interest are engaged, then a model-based analysis is unlikely to uncover evidence for the processes either.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' experience, representing empirical observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "3d52f0a1-43c7-4e7b-99d7-0f97a36b94df",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C59",
+      "claim": "Human behavior is always messier than the model.",
+      "claim_type": "EXPLICIT",
+      "source": "An important point to remember is that human behavior is always messier than the model, and it is unlikely that the class of models you explored actually contains the 'real' model thatgenerated human behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the relationship between models and behavior, based on established understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "866c01b7-eb54-4bcc-b527-9b6470b75786",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C60",
+      "claim": "It is unlikely that the class of models you explored actually contains the 'real' model that generated human behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "An important point to remember is that human behavior is always messier than the model, and it is unlikely that the class of models you explored actually contains the 'real' model thatgenerated human behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the limitations of modeling, based on general understanding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "97ae00aa-009e-4070-8fb0-81adc6f3b3f9",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C61",
+      "claim": "Modeling unimportant parameters usually captures variance in the behavior that would otherwise be attributed to noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling these unimportant parameters usually captures variance in the behavior that would otherwise be attributed to noise, and as such, makes for a better estimation of 'important' parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of modeling additional parameters, based on understanding of statistical modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "87fb450b-721e-4a29-b74e-573777c2970e",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C62",
+      "claim": "Model validation should never be skipped.",
+      "claim_type": "EXPLICIT",
+      "source": "This step is called model validation, and should never be skipped: it is possible to fit a model, get high fit measures, and nevertheless completely miss the essence of the behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about best practices in model-based analysis, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "04b9c938-cb61-47f7-8e6f-48b0c98cf77b",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C63",
+      "claim": "It is possible to fit a model, get high fit measures, and nevertheless completely miss the essence of the behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This step is called model validation, and should never be skipped: it is possible to fit a model, get high fit measures, and nevertheless completely miss the essence of the behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a potential problem with model fitting, based on established knowledge and examples in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "6da4c847-620c-4a6a-8b91-da7ec332d7d5",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C64",
+      "claim": "Interpreting average trial likelihood as an absolute measure of fit is of limited value when choices are stochastic or the environment is complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this measure has some nice properties \u2014 for example, the best possible value is one when the model predicts behavior perfectly \u2014 it offers limited value when choices are actually stochastic (which may be the case in many situations; Drugowitsch et al., 2016) or the environment is complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of using average trial likelihood, with citation to Drugowitsch et al., 2016 about stochastic choices.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "fae60230-cbac-43d3-a06b-8405e0a49576",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C65",
+      "claim": "A better method to validate a model is to simulate it with the fit parameter values.",
+      "claim_type": "EXPLICIT",
+      "source": "A better method to validate a model is to simulate it with the fit parameter values (Palminteri et al., 2017; Nassar and Frank, 2016; Navarro, 2019), a procedure long performed by statisticians as part of the 'posterior predictive check' (Roecker, 1991; Gelman et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple sources recommending this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "c6fabcae-ef28-47d5-9085-e68441f744f9",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C66",
+      "claim": "Palminteri and colleagues offer a striking example where Model A fits better than Model B by any quantitative measure of model comparison, but is completely unable to capture the essence of the behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Palminteri and colleagues (Palminteri et al., 2017) offer a striking example of this effect, where Model A fits better than Model B by any quantitative measure of model comparison, but is completely unable to capture the essence of the behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Palminteri et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "c7535aa6-118d-4a32-a468-ad3e8540df92",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C67",
+      "claim": "Model-dependent analyses should only be performed on the winning model.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize risks of p-hacking, model-dependent analyses should only be performed on the winning model, after researchers are satisfied that the model captures the behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a normative statement about best practices to avoid p-hacking, based on established understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "30ed2bae-6fa2-42f7-8ffc-9096a29fa0e3",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C68",
+      "claim": "Latent variables are the hidden components of the algorithms underlying the behavior that are not directly observable from the behavior itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Latent variables are the hidden components of the algorithms underlying the behavior that are not directly observable from the behavior itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of latent variables, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "f2993fde-7e9e-4cc4-a485-90b4eaf5023b",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C69",
+      "claim": "If we are to take the model seriously, latent variables should have some representation in the subjects' mind and brain.",
+      "claim_type": "EXPLICIT",
+      "source": "These latent variables shed light on the internal workings of the model and, if we are to take the model seriously, should have some representation in the subjects' mind and brain (Cohen et al., 2017; O'Doherty et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cohen et al., 2017; O'Doherty et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "c1b42726-5f17-4e38-ba31-7f18dd86622b",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C70",
+      "claim": "The simplest approach to combining latent variables with physiological data uses linear regression to test whether physiological variables correlate with the latent variables of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest of these approaches uses linear regression to test whether physiological variables correlate with the latent variables of interest. Such an approach has led to a number of insights into the neural mechanisms underlying behavior (Nassar et al., 2012; Daw et al., 2011; Donoso et al., 2014; Collins and Frank, 2018; Fischer and Ullsperger, 2013), although, as with any modeling exercise, latent variable analysis should be done with care (Wilson and Niv, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies using this approach, with a cautionary citation to Wilson and Niv, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "8f4c1ae6-a455-4146-afbb-f406c4af998c",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C71",
+      "claim": "Latent variable analysis should be done with care.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an approach has led to a number of insights into the neural mechanisms underlying behavior (Nassar et al., 2012; Daw et al., 2011; Donoso et al., 2014; Collins and Frank, 2018; Fischer and Ullsperger, 2013), although, as with any modeling exercise, latent variable analysis should be done with care (Wilson and Niv, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wilson and Niv, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "c9fde875-fe06-476a-972f-c47fb0e6a1aa",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C72",
+      "claim": "Fit parameters can be treated as a dependent variable in continuous analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Fit parameters can be treated as a dependent variable in continuous analyses (e.g. correlating with age, symptom scales, and so on [Gillan et al., 2016]) or group comparisons (e.g. patients vs. matched controls [Collins et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Gillan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "689b5083-03b7-44b6-8572-891dff28b43e",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C73",
+      "claim": "Fit parameters can be used in group comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Fit parameters can be treated as a dependent variable in continuous analyses (e.g. correlating with age, symptom scales, and so on [Gillan et al., 2016]) or group comparisons (e.g. patients vs. matched controls [Collins et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Collins et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "ff088551-3cc3-49b1-9e6f-7183c0c0a521",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C74",
+      "claim": "Exceedance probabilities are a more sophisticated and less biased way to report model comparison results.",
+      "claim_type": "EXPLICIT",
+      "source": "A more sophisticated and less biased (Piray et al., 2018) way to report model comparison results is by computing the probability that a single model best describes all the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Piray et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "e130ddbb-f68d-4525-ba38-24155c7dbdb8",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C75",
+      "claim": "The method of Rigoux et al. (2014) computes Exceedance Probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where it is valid, the method of Rigoux et al. (2014) computes these 'Exceedance Probabilities', the probability that each model generated all the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rigoux et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "6a684c6f-220c-45a9-9f22-c79dfb8e6725",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C76",
+      "claim": "With good priors, MAP parameters can be more accurate than parameters estimated with maximum likelihood approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Although they are still point estimates, with good priors, MAP parameters can be more accurate than parameters estimated with maximum likelihood approaches (Gershman, 2016; Daw, 2011), although when the priors are bad, this method has problems of its own (Katahira, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gershman, 2016; Daw, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "d16cc15c-3ad4-4853-a72b-8562f928e003",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C77",
+      "claim": "When the priors are bad, MAP estimation has problems of its own.",
+      "claim_type": "EXPLICIT",
+      "source": "Although they are still point estimates, with good priors, MAP parameters can be more accurate than parameters estimated with maximum likelihood approaches (Gershman, 2016; Daw, 2011), although when the priors are bad, this method has problems of its own (Katahira, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Katahira, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "6f749574-65a0-4e02-bc28-386d41fa202e",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C78",
+      "claim": "Hierarchical Bayesian approaches make it possible to fit all participants simultaneously, integrating assumptions about their dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, hierarchical Bayesian approaches make it possible to fit all participants simultaneously, integrating assumptions about their dependence (e.g. one single group, multiple groups, effects of covariates of interest such as age and so on; Lee, 2011; Lee and Wagenmakers, 2014; Wiecki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lee, 2011; Lee and Wagenmakers, 2014; Wiecki et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "f58c6754-197b-428c-86c7-79fae825ad08",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C79",
+      "claim": "There exist methods to approximate likelihoods to relate them quantitatively to data, such as the ABC method.",
+      "claim_type": "EXPLICIT",
+      "source": "There exist methods to approximate likelihoods to relate them quantitatively to data, such as the ABC method (Turner and Sederberg, 2012; Sunn\u00e5ker et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Turner and Sederberg, 2012; Sunn\u00e5ker et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "169a1db8-ac83-446e-a30d-224a89364445",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C80",
+      "claim": "There are advanced methods for finding best fit parameters in a sample-efficient manner when computing the likelihood is expensive.",
+      "claim_type": "EXPLICIT",
+      "source": "There are also advanced methods for finding best fit parameters in a sample-efficient manner when computing the likelihood is expensive (Acerbi and Ji, 2017; Acerbi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Acerbi and Ji, 2017; Acerbi, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "eda14c35-9ca2-41fc-819d-56fbf95276bd",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C81",
+      "claim": "Bayesian model selection provides less biased, statistically more accurate ways of identifying which model is best at the group level.",
+      "claim_type": "EXPLICIT",
+      "source": "Bayesian model selection provides less biased, statistically more accurate ways of identifying which model is best at the group level (Rigoux et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rigoux et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "19dc67a5-eaa8-4c98-a5a2-46d181217e73",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C82",
+      "claim": "Bayesian model selection may be particularly important when comparing model selection between groups.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be particularly important when comparing model selection between groups, for example between patients and controls (Piray et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Piray et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "7b7d633a-86a4-45b0-b08e-18af4e9c5ec6",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C83",
+      "claim": "There is a rich literature on fitting models to reaction times.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on modeling a single type of observable data, choices. However, there is a rich literature on fitting models to other measurements, such as reaction times (Ratcliff, 1978; Ratcliff and Rouder, 1998), but also to eye movements and neural data (Turner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ratcliff, 1978; Ratcliff and Rouder, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "8fa86d47-58f3-4061-b5dd-1563c492b72b",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C84",
+      "claim": "There is a rich literature on fitting models to eye movements and neural data.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on modeling a single type of observable data, choices. However, there is a rich literature on fitting models to other measurements, such as reaction times (Ratcliff, 1978; Ratcliff and Rouder, 1998), but also to eye movements and neural data (Turner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Turner et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "2df9a27b-526c-4c08-8007-a7bf23440d32",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C85",
+      "claim": "Fitting more than one measurement at a time provides additional constraints to the model, and as such may provide better fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, fitting more than one measurement at a time provides additional constraints to the model, and as such may provide better fit (Ballard and McClure, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ballard and McClure, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "3a51bbe9-853a-4b2e-976e-63827facdf42",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C86",
+      "claim": "Fitting additional data can increase the complexity of the model-fitting process and additional care must be taken to determine exactly how different types of data should be combined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, fitting additional data can increase the complexity of the model-fitting process and additional care must be taken to determine exactly how different types of data should be combined (Viejo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Viejo et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "2d593bea-331d-4437-a4ec-f282d84cb0dd",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "claim_id": "C87",
+      "claim": "The authors have a combined 20+ years in the field.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these lessons were lessons we learned the hard way, by actually making these mistakes for ourselves over a combined 20+ years in the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the authors' experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5a524786-e3a2-4103-8b94-8ecf7ca84966",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Computational modeling of behavior has revolutionized psychology and neuroscience by enabling researchers to probe algorithms underlying behavior, find neural correlates of computational variables, and better understand effects of drugs, illness, and interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 collectively describe the impact and capabilities of computational modeling in behavioral science. These are well-established statements about the field supported by extensive prior literature and represent accepted knowledge about what computational modeling can achieve.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "1947e27d-37c3-4486-a058-72f4c913de52",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Behavioral data used in computational modeling most often come in the form of choices but can also include reaction times, eye movements, other observable behaviors, and neural data. Computational models instantiate different algorithmic hypotheses about how behavior is generated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 describe the types of data used in computational modeling and the conceptual role of models. These are accurate characterizations of established practice in the field and represent foundational knowledge about computational modeling approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "c89c3f8d-7f38-4322-9289-d3ed5780b142",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "What constitutes 'making sense' of behavioral data varies by researcher goals, with some cases requiring simple qualitative models and others requiring detailed quantitative models. Four uses dominate the literature: simulation, parameter estimation, model comparison, and latent variable inference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 describe the diversity of modeling approaches and common uses. These claims are supported by appropriate citations (Kording et al., 2018; Breiman, 2001) and accurately characterize established practices in computational modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "d9955869-82ae-419c-9204-a0812165d085",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Each modeling use can be mishandled in various ways, causing researchers to draw wrong and misleading conclusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 is supported by citations to Nassar and Frank, 2016 and Palminteri et al., 2017, which document potential pitfalls in computational modeling. This represents an important cautionary statement grounded in prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "2d02f831-b036-4b5a-973d-3160ff3a9672",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Modeling is particularly popular in learning research because trials depend on past history making them unique, which makes classic aggregation-based analyses less successful. Sequential dependencies in learning contexts create technical challenges absent in non-learning contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 provide a rationale for why modeling is especially valuable in learning research. The reasoning about sequential dependencies and their impact on traditional analyses is sound and represents valid inference about the nature of learning data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "b5ee4da5-7749-49a9-b50f-27c5c40076d9",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Computational modeling techniques are widely and successfully applied across multiple domains including reaction times, perception, perceptual decision-making, economic decision-making, visual short-term memory, long-term memory, category learning, and executive functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 document the breadth of computational modeling applications. Each claim is supported by appropriate citations to published work demonstrating successful application in each domain, providing strong evidence for the generalizability of these techniques.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "f7131da6-0b1e-44cf-b63d-d449e5f17bf6",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Computational modeling cannot replace good experimental design because modeling is fundamentally limited by behavioral data, which is itself limited by experimental protocol. The best experiments make processes identifiable in classical analyses, and modeling is rarely informative without model-independent evidence of effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 establish the critical relationship between experimental design and modeling. C26 is supported by citation to Palminteri et al., 2017, and C27 reflects the authors' experience. The logical argument about the dependency of modeling on data quality is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "22aaef9b-a605-4725-86ef-c60c477aeef4",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Code for implementing all examples is available on GitHub.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is a factual statement about code availability supported by citation to Collins and Wilson, 2019 and a specific GitHub URL. This represents a verifiable claim about resource availability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "c65bd230-b2f4-438c-915b-07ca340d8153",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Bad models can limit conclusions that can be drawn, even well-established models can be problematic in some cases, and computational modelers have diverse goals for their models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by appropriate citations (Donkin et al., 2014; Broomell and Bhatia, 2014; Nilsson et al., 2011; Kording et al., 2018). These represent important cautionary statements about model design grounded in prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "7363b52d-36e4-4c39-aa81-511753eb80aa",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Different approaches to model design have been successfully applied: the delta rule was invented using heuristics, Q-learning and temporal difference learning from AI have been related to behavior and brain function, and ideal observer models in vision exemplify the Bayes-optimal perspective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 describe established approaches to model design, each supported by appropriate citations (Rescorla and Wagner, 1972; Watkins and Dayan, 1992; Montague et al., 1996; Geisler, 2011). These represent well-documented historical examples.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "a71f2526-01d8-4d03-bbd2-877af9424138",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Formal model comparison techniques include penalties for overly complex models, which are more likely to overfit and generalize poorly, favoring simpler models that can account for the data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 describe established principles of model comparison and overfitting. These represent well-established knowledge in statistics and machine learning about the bias-variance tradeoff and model complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "bf3b2e8e-a5ed-4445-88c4-08a7c9612fbf",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Finding qualitative signatures of models is crucial, and studying these with simulated data provides intuition for analyzing real behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by multiple citations (Daw et al., 2011; Collins and Frank, 2012, 2013; Nassar et al., 2018; Lee and Webb, 2005) demonstrating this practice. This represents an important methodological recommendation grounded in prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "112cca67-6133-4251-83c0-905d4db481b2",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Computing likelihoods involves numerical challenges: likelihood is a product of many numbers smaller than 1 that can be rounded to 0, while log-likelihood is a sum of negative numbers that is tractable and won't be rounded to 0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 describe well-established numerical issues in computational statistics. This represents standard knowledge about why log-likelihoods are preferred for numerical stability in optimization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "66eced63-4313-4444-b965-90280daeb12a",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Brute force parameter search is occasionally useful but unfeasible for complex cases due to computational costs. Optimization algorithms are only guaranteed to find local minima, not global minima.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 describe established knowledge about optimization methods and their limitations. These represent fundamental principles of optimization theory that are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "3d6f0508-7714-43ed-90ec-879e99f92ed0",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Parameter recovery is crucial for model-based analysis, but even successful recovery represents a best-case scenario since the true generative process for behavior is likely much more complex than any conceivable model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C47-C48 establish the importance and limitations of parameter recovery. C45 represents established best practice, while C47-C48 provide important caveats about interpreting recovery results. The reasoning is sound though C48 is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "80e47c7d-a08a-4480-a136-aca64100cf68",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Overfitting decreases model generalizability by making conclusions less applicable to different samples. Cross-validation avoids overfitting by measuring fit on held-out data to directly test generalizability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 describe fundamental concepts in statistics and machine learning about overfitting and cross-validation. These represent well-established knowledge about model validation approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "ffbecfa5-2994-4f5c-ad7b-3b9cd17470de",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Model comparison should be validated by model recovery on simulated data. However, model comparison only indicates which of the considered models fits best, not whether any unconsidered model might fit better.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C56 describe best practices and fundamental limitations of model comparison. These represent established methodological knowledge and important conceptual understanding about what model comparison can and cannot tell us.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "1b1c19c8-d32e-4a76-83f3-2d61f7f3a3a9",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "If model-independent analyses show no evidence of expected results, there is almost no point in fitting the model. Without model-independent evidence that processes are engaged, model-based analysis is unlikely to uncover evidence for those processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 represent important methodological guidance based on the authors' experience. While based on empirical observation rather than formal proof, this represents sound practical advice about when modeling is likely to be informative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "7d5cace0-f144-4b93-a81d-35d22a71c90f",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Human behavior is always messier than models, and the explored model class is unlikely to contain the 'real' model that generated behavior. Modeling unimportant parameters captures variance that would otherwise be attributed to noise, improving estimation of important parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 provide important perspective on model limitations and the value of nuisance parameters. While C59-C60 are somewhat speculative, they represent reasonable understanding of model limitations. C61 provides sound inference about the benefits of modeling additional parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "f70fed65-1fc2-4014-831c-cab3de6c4ddb",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Model validation should never be skipped because it's possible to get high fit measures yet miss the essence of behavior. Average trial likelihood has limited value for validation when choices are stochastic or environments complex. Simulating the model with fit parameters is a better validation method, as demonstrated by examples where quantitatively better-fitting models fail to capture behavioral essence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 establish the critical importance of model validation and appropriate methods. C64-C66 are supported by citations (Drugowitsch et al., 2016; Palminteri et al., 2017; Nassar and Frank, 2016; Navarro, 2019), including a striking example from Palminteri et al. demonstrating validation failures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "bad322fb-d297-47b4-bcdf-eac850513c42",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Model-dependent analyses should only be performed on the winning model after validation to minimize p-hacking. Latent variables are hidden algorithmic components not directly observable from behavior that should have representation in mind and brain. Linear regression approaches have successfully related latent variables to physiological data, though this should be done with care.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 describe best practices for analyzing winning models and using latent variables. C69-C71 are supported by multiple citations (Cohen et al., 2017; O'Doherty et al., 2007; Nassar et al., 2012; Daw et al., 2011; Donoso et al., 2014; Collins and Frank, 2018; Fischer and Ullsperger, 2013; Wilson and Niv, 2015).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "fa988fc1-d2af-40a0-b491-aea9cca443ef",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Fit parameters can be treated as dependent variables in continuous analyses (e.g., correlating with age or symptom scales) or group comparisons (e.g., patients vs. controls).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 describe established uses of fit parameters in statistical analyses, supported by citations to Gillan et al., 2016 and Collins et al., 2014. These represent common and valid applications of modeling results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "d136e802-c813-4b86-bbed-708b0ae7c329",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Exceedance probabilities provide a more sophisticated and less biased way to report model comparison results by computing the probability that a single model best describes all data. The method of Rigoux et al. (2014) computes these probabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 describe an advanced model comparison approach supported by citations to Piray et al., 2018 and Rigoux et al., 2014. This represents a methodological improvement over simpler approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "b3857a3d-ce84-411b-9e62-59c2d7c55a09",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "With good priors, MAP parameters can be more accurate than maximum likelihood estimates, though bad priors create problems. Hierarchical Bayesian approaches enable fitting all participants simultaneously while integrating assumptions about their dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 describe advanced parameter estimation methods, supported by citations (Gershman, 2016; Daw, 2011; Katahira, 2016; Lee, 2011; Lee and Wagenmakers, 2014; Wiecki et al., 2013). These represent established advanced techniques with documented benefits and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "256ac7d2-6ab1-429f-b604-9804c279a5b1",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Methods exist to approximate likelihoods for quantitative data analysis (e.g., ABC method) and to find best fit parameters efficiently when likelihood computation is expensive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 describe advanced computational methods supported by citations (Turner and Sederberg, 2012; Sunn\u00e5ker et al., 2013; Acerbi and Ji, 2017; Acerbi, 2018). These represent specialized techniques for challenging modeling scenarios.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "7ce975a5-66d8-4d93-87a1-acd064444419",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Bayesian model selection provides less biased, statistically more accurate ways of identifying the best model at the group level, which may be particularly important when comparing model selection between groups (e.g., patients vs. controls).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 describe advantages of Bayesian model selection supported by citations to Rigoux et al., 2014 and Piray et al., 2018. These represent methodological improvements with documented benefits for group-level inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "d2268f30-6d7c-4702-83ac-1d85865b18c8",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Rich literature exists on fitting models to reaction times, eye movements, and neural data. Fitting multiple measurements simultaneously provides additional model constraints and may improve fit, though this increases complexity and requires care in combining data types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 describe extensions to multiple data types, supported by citations (Ratcliff, 1978; Ratcliff and Rouder, 1998; Turner et al., 2016; Ballard and McClure, 2019; Viejo et al., 2015). These represent established extensions of modeling approaches with documented benefits and challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    },
+    {
+      "id": "795ac736-ff61-4574-8241-797eaaaf706d",
+      "content_id": "e3448b10-7371-480b-9c52-c25330abd276",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "The authors have combined 20+ years of experience in the field and learned many lessons by making mistakes themselves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is a factual statement about the authors' experience that provides context for the practical advice in the paper. This is verifiable information about author qualifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:38:19.575312Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1c4e7837-3cfe-4136-b0e8-c0cdb941ea17",
+      "result_id": "5a524786-e3a2-4103-8b94-8ecf7ca84966"
+    },
+    {
+      "claim_id": "f0c068fd-65cc-4ad9-b5f5-cbd137bd82a7",
+      "result_id": "5a524786-e3a2-4103-8b94-8ecf7ca84966"
+    },
+    {
+      "claim_id": "796c01dc-8925-4b1b-b70a-9a648eb9ed7c",
+      "result_id": "5a524786-e3a2-4103-8b94-8ecf7ca84966"
+    },
+    {
+      "claim_id": "61b136a4-3ae5-4622-a41e-e3426c4dbb2f",
+      "result_id": "5a524786-e3a2-4103-8b94-8ecf7ca84966"
+    },
+    {
+      "claim_id": "f978e27d-adcc-4da2-a645-c13725624a43",
+      "result_id": "1947e27d-37c3-4486-a058-72f4c913de52"
+    },
+    {
+      "claim_id": "bf3ba043-64ed-4e10-9f35-72d242a0eeb2",
+      "result_id": "1947e27d-37c3-4486-a058-72f4c913de52"
+    },
+    {
+      "claim_id": "0e746f0d-07c6-4381-b199-02d5e1d8b372",
+      "result_id": "1947e27d-37c3-4486-a058-72f4c913de52"
+    },
+    {
+      "claim_id": "175ea2a7-1335-4ac9-b132-b31b8cfe99ac",
+      "result_id": "c89c3f8d-7f38-4322-9289-d3ed5780b142"
+    },
+    {
+      "claim_id": "70be96f8-a2f4-43ed-908d-90559c54ad87",
+      "result_id": "c89c3f8d-7f38-4322-9289-d3ed5780b142"
+    },
+    {
+      "claim_id": "cd2c89fb-9dfa-4a10-9e4f-f98ab2e4a1a2",
+      "result_id": "c89c3f8d-7f38-4322-9289-d3ed5780b142"
+    },
+    {
+      "claim_id": "efd6092c-4f26-494f-a16a-23ca5a9d0431",
+      "result_id": "c89c3f8d-7f38-4322-9289-d3ed5780b142"
+    },
+    {
+      "claim_id": "d54f6c11-fb6c-44e5-9b72-3d3a11ee853c",
+      "result_id": "d9955869-82ae-419c-9204-a0812165d085"
+    },
+    {
+      "claim_id": "8041be6a-47ab-4865-80ff-89b2ce6356da",
+      "result_id": "2d02f831-b036-4b5a-973d-3160ff3a9672"
+    },
+    {
+      "claim_id": "43d204cf-0539-439d-ad2a-463d6b3947b6",
+      "result_id": "2d02f831-b036-4b5a-973d-3160ff3a9672"
+    },
+    {
+      "claim_id": "3cd60816-7b91-4341-9735-a658bb6261bd",
+      "result_id": "2d02f831-b036-4b5a-973d-3160ff3a9672"
+    },
+    {
+      "claim_id": "9ab9afc4-e745-4851-b79b-d64e94b735ee",
+      "result_id": "b5ee4da5-7749-49a9-b50f-27c5c40076d9"
+    },
+    {
+      "claim_id": "4b3ea85e-6ca5-4492-8f54-ad8102639f0e",
+      "result_id": "b5ee4da5-7749-49a9-b50f-27c5c40076d9"
+    },
+    {
+      "claim_id": "677e8073-ca53-4f42-baa1-2649c2e9da11",
+      "result_id": "b5ee4da5-7749-49a9-b50f-27c5c40076d9"
+    },
+    {
+      "claim_id": "bd450331-4911-4c62-bba2-6b7a013462a4",
+      "result_id": "b5ee4da5-7749-49a9-b50f-27c5c40076d9"
+    },
+    {
+      "claim_id": "757a8638-4054-42c8-85bd-67d2ec8ef319",
+      "result_id": "b5ee4da5-7749-49a9-b50f-27c5c40076d9"
+    },
+    {
+      "claim_id": "0bdf97ff-2f05-4b4f-add2-1d39e42185f2",
+      "result_id": "b5ee4da5-7749-49a9-b50f-27c5c40076d9"
+    },
+    {
+      "claim_id": "72487930-73ea-47b7-8d1f-ac13771547a5",
+      "result_id": "b5ee4da5-7749-49a9-b50f-27c5c40076d9"
+    },
+    {
+      "claim_id": "e68cafb9-4b56-46f7-a73d-3003d25c8f38",
+      "result_id": "b5ee4da5-7749-49a9-b50f-27c5c40076d9"
+    },
+    {
+      "claim_id": "4893efed-ac95-4939-b6eb-7e6fe3a426f0",
+      "result_id": "f7131da6-0b1e-44cf-b63d-d449e5f17bf6"
+    },
+    {
+      "claim_id": "d769cdc3-839a-448d-b698-d67c80603b84",
+      "result_id": "f7131da6-0b1e-44cf-b63d-d449e5f17bf6"
+    },
+    {
+      "claim_id": "88f79c55-d019-4597-8c06-09fd6a80b3e2",
+      "result_id": "f7131da6-0b1e-44cf-b63d-d449e5f17bf6"
+    },
+    {
+      "claim_id": "2b33bed4-2460-47b1-ad7d-6152cccbe94a",
+      "result_id": "f7131da6-0b1e-44cf-b63d-d449e5f17bf6"
+    },
+    {
+      "claim_id": "0db41c29-91e6-4890-ae7d-913dc864c832",
+      "result_id": "22aaef9b-a605-4725-86ef-c60c477aeef4"
+    },
+    {
+      "claim_id": "85de2d84-c8b6-471c-8c2c-0229f30e2d38",
+      "result_id": "c65bd230-b2f4-438c-915b-07ca340d8153"
+    },
+    {
+      "claim_id": "128d3734-402d-4607-8091-df408011d03a",
+      "result_id": "c65bd230-b2f4-438c-915b-07ca340d8153"
+    },
+    {
+      "claim_id": "ea316d5a-a0c7-415e-9ddc-7df0217cd2a8",
+      "result_id": "c65bd230-b2f4-438c-915b-07ca340d8153"
+    },
+    {
+      "claim_id": "77c80a7f-6145-4568-b2b1-fc58493fcde4",
+      "result_id": "7363b52d-36e4-4c39-aa81-511753eb80aa"
+    },
+    {
+      "claim_id": "3780ce5f-3690-4c1a-9c89-910a8324011b",
+      "result_id": "7363b52d-36e4-4c39-aa81-511753eb80aa"
+    },
+    {
+      "claim_id": "8391db1e-8eb9-4336-8208-189cd678bce8",
+      "result_id": "7363b52d-36e4-4c39-aa81-511753eb80aa"
+    },
+    {
+      "claim_id": "99ea1d1e-5cb0-49a3-922f-b8295c221dca",
+      "result_id": "a71f2526-01d8-4d03-bbd2-877af9424138"
+    },
+    {
+      "claim_id": "170ceebf-ac76-4e2e-98ab-b34693a8cde6",
+      "result_id": "a71f2526-01d8-4d03-bbd2-877af9424138"
+    },
+    {
+      "claim_id": "e1fc662f-02e7-473b-92c4-f5964976b4fd",
+      "result_id": "bf3b2e8e-a5ed-4445-88c4-08a7c9612fbf"
+    },
+    {
+      "claim_id": "41a40fa5-4229-40a9-a755-67815bdf7615",
+      "result_id": "112cca67-6133-4251-83c0-905d4db481b2"
+    },
+    {
+      "claim_id": "34348e45-e888-44da-87d3-fc20d007571d",
+      "result_id": "112cca67-6133-4251-83c0-905d4db481b2"
+    },
+    {
+      "claim_id": "7e7fe9be-40f8-4f06-abc7-4be6a1718798",
+      "result_id": "66eced63-4313-4444-b965-90280daeb12a"
+    },
+    {
+      "claim_id": "88f6fea6-51ed-424a-a303-810a9915c6ad",
+      "result_id": "66eced63-4313-4444-b965-90280daeb12a"
+    },
+    {
+      "claim_id": "054319c8-456a-43fc-911a-4d7f814c649f",
+      "result_id": "66eced63-4313-4444-b965-90280daeb12a"
+    },
+    {
+      "claim_id": "73c61736-1d71-4da2-b3f1-24d0edea3111",
+      "result_id": "3d6f0508-7714-43ed-90ec-879e99f92ed0"
+    },
+    {
+      "claim_id": "9c1c3c57-1919-4584-a3fa-8e775552ec32",
+      "result_id": "3d6f0508-7714-43ed-90ec-879e99f92ed0"
+    },
+    {
+      "claim_id": "4ea3f0c3-dd6f-4e6a-be1a-e6b99faabb6a",
+      "result_id": "3d6f0508-7714-43ed-90ec-879e99f92ed0"
+    },
+    {
+      "claim_id": "9cdc09c1-f6d2-4e1f-8946-6bdef3ec7a40",
+      "result_id": "80e47c7d-a08a-4480-a136-aca64100cf68"
+    },
+    {
+      "claim_id": "17b03de2-c022-4260-bc84-5830cbbf937a",
+      "result_id": "80e47c7d-a08a-4480-a136-aca64100cf68"
+    },
+    {
+      "claim_id": "ae6e5bab-a883-4677-b8ee-c9f6befd641d",
+      "result_id": "ffbecfa5-2994-4f5c-ad7b-3b9cd17470de"
+    },
+    {
+      "claim_id": "89e002d3-c9ec-451b-87b1-cbf391c0cec9",
+      "result_id": "ffbecfa5-2994-4f5c-ad7b-3b9cd17470de"
+    },
+    {
+      "claim_id": "a0b2e475-42cb-46fb-bb0a-a78f9900d70e",
+      "result_id": "1b1c19c8-d32e-4a76-83f3-2d61f7f3a3a9"
+    },
+    {
+      "claim_id": "60b37327-65ce-4165-a7f2-df332f68fe5a",
+      "result_id": "1b1c19c8-d32e-4a76-83f3-2d61f7f3a3a9"
+    },
+    {
+      "claim_id": "3d52f0a1-43c7-4e7b-99d7-0f97a36b94df",
+      "result_id": "7d5cace0-f144-4b93-a81d-35d22a71c90f"
+    },
+    {
+      "claim_id": "866c01b7-eb54-4bcc-b527-9b6470b75786",
+      "result_id": "7d5cace0-f144-4b93-a81d-35d22a71c90f"
+    },
+    {
+      "claim_id": "97ae00aa-009e-4070-8fb0-81adc6f3b3f9",
+      "result_id": "7d5cace0-f144-4b93-a81d-35d22a71c90f"
+    },
+    {
+      "claim_id": "87fb450b-721e-4a29-b74e-573777c2970e",
+      "result_id": "f70fed65-1fc2-4014-831c-cab3de6c4ddb"
+    },
+    {
+      "claim_id": "04b9c938-cb61-47f7-8e6f-48b0c98cf77b",
+      "result_id": "f70fed65-1fc2-4014-831c-cab3de6c4ddb"
+    },
+    {
+      "claim_id": "6da4c847-620c-4a6a-8b91-da7ec332d7d5",
+      "result_id": "f70fed65-1fc2-4014-831c-cab3de6c4ddb"
+    },
+    {
+      "claim_id": "fae60230-cbac-43d3-a06b-8405e0a49576",
+      "result_id": "f70fed65-1fc2-4014-831c-cab3de6c4ddb"
+    },
+    {
+      "claim_id": "c6fabcae-ef28-47d5-9085-e68441f744f9",
+      "result_id": "f70fed65-1fc2-4014-831c-cab3de6c4ddb"
+    },
+    {
+      "claim_id": "c7535aa6-118d-4a32-a468-ad3e8540df92",
+      "result_id": "bad322fb-d297-47b4-bcdf-eac850513c42"
+    },
+    {
+      "claim_id": "30ed2bae-6fa2-42f7-8ffc-9096a29fa0e3",
+      "result_id": "bad322fb-d297-47b4-bcdf-eac850513c42"
+    },
+    {
+      "claim_id": "f2993fde-7e9e-4cc4-a485-90b4eaf5023b",
+      "result_id": "bad322fb-d297-47b4-bcdf-eac850513c42"
+    },
+    {
+      "claim_id": "c1b42726-5f17-4e38-ba31-7f18dd86622b",
+      "result_id": "bad322fb-d297-47b4-bcdf-eac850513c42"
+    },
+    {
+      "claim_id": "8f4c1ae6-a455-4146-afbb-f406c4af998c",
+      "result_id": "bad322fb-d297-47b4-bcdf-eac850513c42"
+    },
+    {
+      "claim_id": "c9fde875-fe06-476a-972f-c47fb0e6a1aa",
+      "result_id": "fa988fc1-d2af-40a0-b491-aea9cca443ef"
+    },
+    {
+      "claim_id": "689b5083-03b7-44b6-8572-891dff28b43e",
+      "result_id": "fa988fc1-d2af-40a0-b491-aea9cca443ef"
+    },
+    {
+      "claim_id": "ff088551-3cc3-49b1-9e6f-7183c0c0a521",
+      "result_id": "d136e802-c813-4b86-bbed-708b0ae7c329"
+    },
+    {
+      "claim_id": "e130ddbb-f68d-4525-ba38-24155c7dbdb8",
+      "result_id": "d136e802-c813-4b86-bbed-708b0ae7c329"
+    },
+    {
+      "claim_id": "6a684c6f-220c-45a9-9f22-c79dfb8e6725",
+      "result_id": "b3857a3d-ce84-411b-9e62-59c2d7c55a09"
+    },
+    {
+      "claim_id": "d16cc15c-3ad4-4853-a72b-8562f928e003",
+      "result_id": "b3857a3d-ce84-411b-9e62-59c2d7c55a09"
+    },
+    {
+      "claim_id": "6f749574-65a0-4e02-bc28-386d41fa202e",
+      "result_id": "b3857a3d-ce84-411b-9e62-59c2d7c55a09"
+    },
+    {
+      "claim_id": "f58c6754-197b-428c-86c7-79fae825ad08",
+      "result_id": "256ac7d2-6ab1-429f-b604-9804c279a5b1"
+    },
+    {
+      "claim_id": "169a1db8-ac83-446e-a30d-224a89364445",
+      "result_id": "256ac7d2-6ab1-429f-b604-9804c279a5b1"
+    },
+    {
+      "claim_id": "eda14c35-9ca2-41fc-819d-56fbf95276bd",
+      "result_id": "7ce975a5-66d8-4d93-87a1-acd064444419"
+    },
+    {
+      "claim_id": "19dc67a5-eaa8-4c98-a5a2-46d181217e73",
+      "result_id": "7ce975a5-66d8-4d93-87a1-acd064444419"
+    },
+    {
+      "claim_id": "7b7d633a-86a4-45b0-b08e-18af4e9c5ec6",
+      "result_id": "d2268f30-6d7c-4702-83ac-1d85865b18c8"
+    },
+    {
+      "claim_id": "8fa86d47-58f3-4061-b5dd-1563c492b72b",
+      "result_id": "d2268f30-6d7c-4702-83ac-1d85865b18c8"
+    },
+    {
+      "claim_id": "2df9a27b-526c-4c08-8007-a7bf23440d32",
+      "result_id": "d2268f30-6d7c-4702-83ac-1d85865b18c8"
+    },
+    {
+      "claim_id": "3a51bbe9-853a-4b2e-976e-63827facdf42",
+      "result_id": "d2268f30-6d7c-4702-83ac-1d85865b18c8"
+    },
+    {
+      "claim_id": "2d593bea-331d-4437-a4ec-f282d84cb0dd",
+      "result_id": "795ac736-ff61-4574-8241-797eaaaf706d"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The study analyzed RNA-sequencing data from 11,371 high-quality samples across 36 tissue/cell types (from an initial 13,261 samples) and quantified expression of 15 mitochondrial-encoded genes, finding considerable variation in mitochondrial gene expression along the transcriptome, across tissues, and between individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 and C52-C55 collectively describe the dataset and main observational finding. The large sample size (>11,000), multiple tissue types (36), and consistent data processing pipeline provide strong support for detecting variation in mitochondrial gene expression across multiple dimensions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74"
+    ],
+    "result": "Despite polycistronic origins, mitochondrial-encoded genes show significant variation in expression levels within and across tissues (p<2e-16), with tissue-specific patterns (e.g., MTRNR2 highly variable, MTND4L/MTND5/MTATP8 low variance) and tissue-type clustering in hierarchical analysis, implicating post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C74 describe detailed expression patterns with statistical support (ANOVA p<2e-16) and visual evidence (Figure 1). The inference about post-transcriptional processes (C57) is reasonable given polycistronic transcription, though the causal mechanism is not directly tested. The clustering patterns and gene-specific variance are data-driven observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C27",
+      "C90"
+    ],
+    "result": "Cell-type specific and post-transcriptional processes are important in shaping mitochondrial-encoded RNA levels, as evidenced by tissue-specific expression patterns and persistence of genetic associations after controlling for mitochondrial copy number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C90 are supported by multiple lines of evidence: observed variation across tissues, the polycistronic nature of mitochondrial transcription (C26-C27), and the finding that 63/64 associations remain significant after controlling for copy number (C89). However, the mechanisms are inferred rather than directly demonstrated through functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study identified 64 nuclear loci (trans-genome eQTLs) associated with expression of 14 mitochondrial-encoded genes at FDR 5% (p-values: 0.046-8\u00d710\u207b\u00b2\u2076), including missense variants in TBRG4, MTPAP, and LONP1, with empirical p-values from permutation analysis closely matching raw p-values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 and C75-C80 describe the primary genetic association findings with appropriate statistical thresholds and validation through permutation analysis (C77). The identification of 64 loci across 14 genes is well-documented, though the relatively low replication rate (~21%, C17) suggests some findings may be false positives (acknowledged in C128).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Five instances were observed where a peak nuclear variant associates with multiple mitochondrial genes within a tissue, potentially indicating shared RNA processing mechanisms, though associated genes are not closer together on the mitochondrial genome than random (p=0.29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 present an observation (5 multi-gene associations) with appropriate statistical testing (C83, bootstrapping p=0.29). The speculation about shared RNA processing (C82) is reasonable but not directly tested. The annotation of 49 unique variants (C84) provides context for the genetic architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Alignment errors from NUMTs are unlikely to drive trans-genome eQTL detection, as only 2/64 associations had mitochondrial gene sequences within NUMTs near the nuclear variant (with ~4-15 mismatches per 100bp), and no 50bp segments mapped to nuclear genes near peak variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 address a critical technical concern with appropriate controls. The NUMT analysis (C85-C86) and nuclear gene mapping (C87) provide strong evidence against alignment artifacts. The inference (C88) is well-supported by the negative findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "After controlling for mitochondrial copy number and polycistronic transcription rate, 63/64 associations remained significant at FDR 5%, suggesting post-transcriptional processes play a significant role in these genetic associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 describe a critical control analysis. The persistence of nearly all associations (63/64) after normalization by mitochondrial reads strongly supports the role of post-transcriptional regulation. The inference (C90) is logical given the normalization approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Cross-tissue analysis revealed 22/64 associations significant in multiple tissues (8 in \u22653 tissues), with 19 associations significant across \u226510 tissues at p<0.05, suggesting many nuclear-mitochondrial genetic mechanisms operate across multiple tissue types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe cross-tissue replication with clear quantitative results. The inference about general mechanisms (C95) is reasonable given the widespread replication, though the authors appropriately note that sample size and detection criteria may affect results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Three nuclear genes (TBRG4, MTPAP, LONP1) were identified through missense variants associated with mitochondrial gene expression, all with known mitochondrial functions including RNA processing, polyadenylation, and protein degradation, with evidence of mitochondrial targeting and presence confirmed by mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 identify specific genes through missense variants with strong biological plausibility. The known mitochondrial functions (C97-C100) and mass spectrometry evidence (C101-C102) provide validation. These represent high-confidence causal genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Nuclear genetic variants associated with mitochondrial gene expression do not fall in enhancer regions more than expected by chance (0/44 in tissue-matched data, p=0.676; 24/49 in any cell type, p=0.691), suggesting alternative regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 describe chromatin state analysis with appropriate statistical controls (matched random variants). The negative findings are properly interpreted as not different from chance, suggesting the variants act through other mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Seven nuclear genes with known mitochondrial roles (TBRG4, MTPAP, MRPP3, LRPPRC, MRPS35, PNPT1, FASTKD1) were identified through mediation analysis, with five containing RNA binding domains, suggesting they may bind directly to mitochondrial RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C114 describe mediation analysis identifying candidate genes. The known mitochondrial functions (C108-C112) and RNA binding domains (C113) support the findings. However, the speculation about direct RNA binding (C114) requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Eleven candidate genes with no previously known mitochondrial role were identified through mediation analysis, generally lacking mitochondrial targeting sequences, though SLC7A6OS and TGM3 show partial evidence of mitochondrial targeting in some databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117 identify novel candidate genes, but the lack of mitochondrial targeting sequences (C116) and unknown mitochondrial roles raise questions about mechanism. These require substantial follow-up validation and represent more speculative findings than the known mitochondrial genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "No significant distal trans-associations were found between peak variants and nuclear genes after multiple testing correction, suggesting nuclear genetic variation influences mitochondrial gene expression through functional mutations or effects on nearby nuclear gene expression, with some protein products potentially entering mitochondria to bind mitochondrial RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 describe negative findings for distal effects (C118) leading to reasonable inferences about mechanisms (C119-C120). The conclusions are appropriately cautious and supported by the mediation and functional variant analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Replication analysis showed 13/61 (21.3%) associations replicated at corrected threshold, with 12 additional at 5% level and 43/61 showing same direction of effect. Power analysis predicted ~40.5 replications, with technical differences between datasets potentially affecting replication, and false positives possibly contributing to results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17 and C121-C128 describe replication with modest success rate (21.3% at strict threshold, 41% nominal). The power analysis (C126) suggests underpowering, and technical differences (C127) may explain some failures. The acknowledgment of possible false positives (C128) is appropriate given the replication rate, making the overall reliability uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "qPCR validation confirmed the association between rs2304694 and MTND4 expression in LCLs (p=0.0325, one-way ANOVA), with the same direction of effect as the original RNA-seq based association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 describe independent validation using an orthogonal method (qPCR). The significant p-value (0.0325) and consistent direction of effect provide strong support for at least this specific association, though validation of only one association limits generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C18",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The nuclear variant rs782633 (associated with MTCYB expression) is in LD with variants linked to systolic (rs782590) and diastolic (rs1975487, r\u00b2=0.84, p=2\u00d710\u207b\u2079) blood pressure, with the variant falling in PNPT1 intron, suggesting mitochondrial gene expression may partially modulate blood pressure effects, though causal links require further validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18 and C131-C140 link eQTLs to GWAS signals for blood pressure. The LD relationships are documented (C131, C134), and prior associations between mitochondrial function and blood pressure exist (C136). However, the mechanistic link (C137) is speculative, and the authors appropriately note that establishing causality requires additional work (C140).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Two nuclear variants (rs10172506, rs7558127) associated with MTND5/MTND6 expression are in LD with rs10200159 (associated with Vitiligo), with suggestive evidence in sun-exposed skin (p<0.05) and PNPT1 identified as the likely gene of action through mediation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C141-C147 link eQTLs to Vitiligo GWAS signals with biological plausibility (mitochondrial dysfunction in Vitiligo, C144-C145). The cross-tissue evidence (C146) and mediation analysis (C147) strengthen the finding. However, the skin associations are only nominally significant and require validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Re-analysis in European-ancestry samples confirmed associations remain significant (rs782633-MTCYB p=6.33\u00d710\u207b\u00b9\u00b9, rs10172506-MTND5 p=4.01\u00d710\u207b\u00b2\u2075, rs7558127-MTND6 p=1.94\u00d710\u207b\u00b3\u00b9), with eQTL and GWAS variants in strong LD (r\u00b2>0.8) in 1000 Genomes European populations, though population substructure within Europe may complicate interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C153 address population stratification concerns by re-analyzing European samples. The highly significant p-values (C148-C150) and strong LD (C151) support genuine associations. The caveat about European substructure (C153) is appropriately noted as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C20"
+    ],
+    "result": "The identified associations implicate genetic mechanisms acting in trans across nuclear and mitochondrial genomes, with variable mitochondrial-encoded gene expression potentially playing a role in complex disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C20 represent the overarching conclusions. The trans-acting mechanisms (C16) are well-supported by the 64 identified associations. The role in complex disease (C20) is supported by GWAS overlaps but remains somewhat speculative pending functional validation.",
+    "result_type": "MAJOR"
+  }
+]

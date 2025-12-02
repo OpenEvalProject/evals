@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Higher-order structure in natural scenes induces variability in canonical second-order motion estimates. The HRC model showed substantial variance when presented with natural scenes at fixed velocities, but this variance was markedly reduced when higher-order structure was eliminated from synthetic images while preserving second-order statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide converging evidence from simulations showing that the HRC model exhibits velocity-dependent tuning with high variance across natural scenes (C49-C51), consistent with prior work (C52). The controlled experiment with synthetic images (C53-C54) directly demonstrates that eliminating higher-order structure reduces variance while preserving mean tuning, establishing causality (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66"
+    ],
+    "result": "The study systematically characterized fly motion computation using Volterra series expansion, extending canonical second-order models with a third-order component to capture contrast-polarity-dependent processing. The Volterra framework allows rigorous separation of pairwise (second-order) and triplet (third-order) spatiotemporal correlation sensitivities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C57-C66 establish the methodological approach with appropriate citations to prior work. The Volterra series is a well-established mathematical framework (C58, C61-C62), and its application to motion computation is properly justified (C63, C65-C66). The extension to third-order is methodologically sound and addresses a specific gap in prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Second- and third-order Volterra kernels were successfully extracted from fly optomotor turning behavior using reverse-correlation with binary stochastic stimuli. The measured second-order kernel showed structure consistent with classical motion computation models, while the third-order kernel showed both positive and negative values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C79 describe a well-established experimental and analytical approach with appropriate citations (C71-C75). The measured second-order kernel matches prior work (C78), providing validation. The third-order kernel measurement (C79) is novel but uses the same validated methodology. The high-throughput setup (C71) addresses the data requirements for higher-order kernel estimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The reliability of the third-order kernel was verified through statistical testing against null kernels and independent validation with glider stimuli. Many kernel elements were statistically significant (p<0.05), especially at short temporal delays, and most glider responses were quantitatively predicted by the kernel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 provide two independent validation approaches. The null kernel analysis (C113-C115) establishes statistical significance with appropriate methodology. The glider validation (C116-C119) provides independent experimental confirmation with good quantitative agreement. Discrepancies are acknowledged and explained (C120). The convergence of evidence strongly supports kernel reliability (C121).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C82",
+      "C87",
+      "C92",
+      "C94",
+      "C98",
+      "C99"
+    ],
+    "result": "The third-order component improves velocity estimates by canceling image-induced variability in the second-order component. While the third-order response alone anti-correlates with velocity, when combined with the second-order response it improves motion estimation accuracy by ~25% through anticorrelation with second-order residuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C82-C99 present a coherent mechanistic explanation supported by data. The evaluation methodology is clearly described (C82, C87). The counterintuitive finding that third-order responses anti-correlate with velocity (C92) is explained by their role in canceling scene-dependent variability (C98-C99). The residual analysis (C98) provides direct evidence for this mechanism. The ~25% improvement is quantified with appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The measured second- and third-order kernels are weighted near-optimally for naturalistic motion estimation. The improvement is robust to velocity distribution variance but depends on contrast computation parameters, with maximal utility at spatial and temporal scales matching fly visual processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 demonstrate optimization through parameter sweeps. The near-optimal weighting (C102) is established by comparison to fitted weights. Robustness to velocity variance (C103) is shown empirically. The dependence on contrast computation parameters (C104-C107) is systematically explored, and the peak performance at biologically realistic parameters (C108) provides strong support for functional optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The study developed a method using maximum entropy distributions (MEDs) to generate synthetic images with precisely controlled contrast statistics. This addresses the challenge that natural image statistics are highly correlated, making it difficult to isolate effects of individual statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C144 describe a methodologically sound approach to a real problem (C136-C137). The MED framework is well-established (C143) and appropriately applied. The method allows independent manipulation of mean, variance, and skewness (C140-C141), which is essential for testing the specific role of skewness. The approach is clearly described with appropriate mathematical justification (C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Positive image skewness is sufficient for the third-order signal to improve motion estimates. When only mean and variance were retained, the third-order response was near zero and provided no improvement. When skewness was added, the improvement was recovered. Systematic variation of skewness showed that positive skewness enables the third-order response to anticorrelate with second-order residuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C146-C154 provide strong causal evidence through controlled manipulation of image statistics. The comparison between images with and without skewness (C146-C147) isolates the critical variable. The systematic skewness sweep (C148-C149, C152) establishes a dose-response relationship. The mechanistic explanation through residual correlation (C152) is consistent with earlier findings. This is the key result linking natural scene statistics to functional benefit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C122"
+    ],
+    "result": "The second-order and third-order kernels share similar temporal structure, with peak sensitivity at short temporal delays. This similarity, confirmed by both direct comparison and singular value decomposition, suggests that pairwise and triplet correlation sensitivities may emerge from common physiological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 present converging evidence from two independent analyses showing similar temporal structure. The finding is consistent with prior modeling work (C122). However, the inference about common physiological origin is speculative. The data support similar temporal tuning but do not directly establish shared mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The measured third-order kernel shows qualitative agreement with theoretically optimized motion detectors in sign but differs quantitatively, particularly for correlations with large temporal delays. These differences could indicate biological suboptimalities or limitations of the optimization models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C133 appropriately compare measured and theoretical kernels. The qualitative agreement (C128) provides support for optimization principles, while the quantitative differences (C129-C130) are honestly reported. The interpretation acknowledges multiple possible explanations (C131-C132) without overreaching. The conclusion about value for future work (C133) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The results motivate the hypothesis that fly turning responses reflect an internal velocity estimate specifically tailored for natural environments. A model fit to explain turning behavior successfully predicted image velocity, which was not guaranteed a priori.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C159 present a reasonable interpretation of the results. The observation that a behaviorally-fit model predicts velocity (C156-C157) is significant. However, this remains a hypothesis (C158) rather than direct proof. The inference about natural environment tailoring (C159) is supported by the skewness experiments but involves some interpretive leap from correlation to function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The study used natural panoramic photographs converted to contrast signals and rigidly translated at various velocities to simulate naturalistic motion. This approach mimics rotational self-motion and is known to induce optomotor responses, though it is simpler than real motion through environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 describe standard methodology with appropriate citations (C41-C43, C45). The rationale for rigid translation is clearly explained (C46, C48), and limitations are acknowledged (C47). The preprocessing steps (C44) are standard. This is appropriate stimulus design for the research question, though the acknowledged simplification relative to natural motion is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Many visual systems across the animal kingdom are likely to use asymmetric ON-OFF processing to improve motion estimation, since light-dark asymmetries are prevalent in natural environments and many visual systems exhibit ON-OFF asymmetric processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1-C3 and C7-C8, C160-C162 make broad generalizations based on the fly results. While the logic is reasonable (C7, C160-C161 cite relevant prior work), the leap from flies to \"many animals\" (C8, C162) is speculative. The prevalence of light-dark asymmetries (C7, C160) and ON-OFF asymmetric processing (C161) are established, but whether other animals use this specifically for motion estimation as flies do requires direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior work established that visual systems may be tuned to natural scene statistics and that motion computation involves sensitivity to spatiotemporal correlations, including triplet correlations. However, previous studies had limitations: they measured only a few triplet correlations, did not assess utility in combination, and did not identify which natural scene statistics were sufficient for improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C33 provide appropriate context and identify genuine gaps in prior work. The citations support the claims about established knowledge (C11-C12, C14-C17, C20, C25-C26) and limitations (C28-C29, C32-C33). The methodological principle about assessing correlations in combination (C30) is valid. This effectively motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C59",
+      "C60",
+      "C64"
+    ],
+    "result": "Motion computation requires nonlinear transformations, and Volterra series provide a systematic polynomial approximation. However, polynomial descriptions can be inefficient for some nonlinearities like compressive saturation, and many terms may be needed. The approach has been successfully applied to model motion processing in flies and primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C59-C60, C64 accurately describe the Volterra approach with appropriate citations. The limitations (C59-C60) are honestly stated. The prior applications (C64) support the validity of the approach. This provides appropriate methodological context without overstating the method's capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C83",
+      "C85",
+      "C88",
+      "C89"
+    ],
+    "result": "The study used optomotor turning responses as a proxy for velocity estimates and evaluated performance using Pearson correlation coefficients. The velocity distribution was chosen to match spontaneous turning in walking flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81, C83, C85, C88-C89 describe standard methodology with appropriate justification. The hypothesis that turning reflects velocity estimation (C81) is supported by prior work. The choice of velocity distribution (C83) is well-justified. The Pearson correlation metric (C88-C89) is appropriate for the linear relationship assumed. These are reasonable methodological choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The third-order kernel was visualized using impulse response format, showing that behavioral consequences of triplet correlations last almost a second and that different triplet correlations vary significantly in direction and magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 describe a visualization approach that aids interpretation. The impulse response concept (C109-C110) is standard in systems theory. The observations about temporal extent (C111) and variability (C112) are descriptive results from the data. This is appropriate data presentation but represents analysis/visualization rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Flies combine local pairwise and triplet correlations to reduce variability in motion estimates across natural scenes, with triplet correlations being useful only when images have light-dark asymmetries that mimic natural ones, suggesting that asymmetric ON-OFF processing is tuned to natural scene statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 summarize the main findings accurately. C4 is supported by the kernel measurements and performance analysis. C5 is supported by the synthetic image experiments. C6 is a reasonable inference from C5. These claims effectively summarize the paper's core contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The second-order response is influenced by both image velocity and scene structure, and reducing scene-dependent variability in the second-order estimate is one way to improve accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 provide interpretive context for understanding the main results. C95 is a logical observation. C96 refers back to earlier simulations. C97 is a reasonable inference about how to improve performance. These claims help explain the counterintuitive finding about third-order responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C150",
+      "C151"
+    ],
+    "result": "Synthetic images with retained skewness maintained naturalistic light-dark asymmetries. When images were negatively skewed, the third-order response correlated with velocity but positively correlated with second-order residuals, decreasing overall performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145, C150-C151 describe results from the skewness manipulation experiments. C145 is a logical statement about what skewness represents. C150-C151 show that the sign of skewness matters, with negative skewness producing the opposite effect. This demonstrates specificity and strengthens the causal argument about positive skewness.",
+    "result_type": "MAJOR"
+  }
+]

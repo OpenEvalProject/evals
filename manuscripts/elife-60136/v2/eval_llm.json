@@ -1,0 +1,490 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "The authors created the Juna.Chimp T1-template at 1 mm resolution, tissue probability maps (TPM), and Shooting templates using SPM12 and CAT12. They also manually created the Davi130 parcellation comprising 130 brain regions based on macroanatomical features. These resources are made publicly available and can be used with multiple software packages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34, C164-C174, and C198-C201 collectively describe a well-documented methodological pipeline for template creation and parcellation. The methods are described in detail with appropriate software versions (C28, C29), resolution specifications (C27), and validation by experts (C170). The iterative template creation process (C164, C165) and manual parcellation approach (C167-C174) are standard practices in neuroimaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C176",
+      "C177",
+      "C178",
+      "C185",
+      "C186"
+    ],
+    "result": "Using linear regression on 194 chimpanzees, the authors found a significant negative association between age and total gray matter (GM) volume (p<0.0001), with significant effects of sex (p=0.004) and scanner field strength (p<0.0001). All sub-samples showed significant age effects, with no significant sex differences in GM decline (p=0.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 and C176-C186 present a coherent statistical analysis with appropriate covariates (age, sex, scanner strength, rearing, TIV) and multiple comparison correction (FWE). The finding is replicated across sub-samples (C39), strengthening the result. Sample size (n=194) is adequate for the linear regression approach, and p-values are clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C213"
+    ],
+    "result": "A matched human sample (n=194) from the IXI dataset showed significant age-related GM decline (p<0.0001) similar to chimpanzees, though with higher correlation (R\u00b2=0.55 vs R\u00b2=0.12) and less variance. Age matching used a factor of 1.5 to account for species differences in lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the statistical findings are clearly reported (C43-C48), the age-matching approach using a factor of 1.5 (C42) is acknowledged as rough and lacks strong biological justification beyond general lifespan considerations. The claim of 'no significant difference' (C213) appears inconsistent with the substantially different R\u00b2 values (C48), suggesting the comparison may be underpowered or the interpretation overstated. The matching procedure (C182) is appropriate, but the biological validity of the age conversion factor is questionable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Region-wise morphometry identified 55 of 130 Davi130 brain regions showing significant age-related GM decline after FWE correction, including bilateral effects in frontal, temporal, parietal, and subcortical regions, as well as unilateral effects in specific cortical and cerebellar areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C70 and C183-C186 describe a systematic region-wise analysis with appropriate multiple comparison correction (FWE, C186). The methods are clearly described (C183-C185), including masking procedures (C184) and statistical modeling with relevant covariates. The extensive list of affected regions is consistent with the overall finding of widespread age-related decline and is visualized in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Voxel-based morphometry (VBM) revealed additional clusters of age-related GM decline beyond those identified by region-wise analysis, including extensive effects in orbitofrontal cortex, temporal, parietal, and cerebellar regions, after FWE correction using TFCE with 5000 permutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 and C187-C190 describe a complementary VBM analysis with appropriate preprocessing (smoothing, C187), masking (C188), and rigorous multiple comparison correction (TFCE with 5000 permutations, C189). The finding of additional regions beyond the parcellation-based approach (C71, C72-C82) is expected given VBM's higher spatial resolution and sensitivity (supported by citation in C211). Methods are well-documented and standard for VBM analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Hemispheric asymmetry analysis found 68% (44/65) of Davi130 regions showed significant asymmetry after FWE correction, with predominantly rightward asymmetry (32 regions) compared to leftward (12 regions). The pattern did not show a decipherable organizational structure like the Yakovlevian torque seen in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C122 and C191-C194 describe a systematic asymmetry analysis using an established formula (C191, with citations) and appropriate statistics (one-sample t-tests, C193) with FWE correction (C194). The finding of predominantly rightward asymmetry (C92) is clearly quantified and the lack of organized pattern (C122) is explicitly stated. The methods are standard for asymmetry analyses in neuroimaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C228",
+      "C229"
+    ],
+    "result": "The authors acknowledge that the disproportionate distribution of wild-born vs. captive-born chimpanzees (23/26 elderly were wild-born vs. 5/168 younger) may confound aging analyses, but argue the effect is not solely driven by rearing because: (1) rearing was included as a covariate, (2) VBM results with/without rearing covariate are nearly identical, and (3) significant GM decline is present in chimpanzees under 30 (99% captive-born).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors provide three lines of evidence (C87, C88, C89) to address the confound, the fundamental issue remains that age and rearing are highly correlated in this sample (C83, C84). Including rearing as a covariate (C87) may not fully address this collinearity. The visual similarity of models with/without rearing (C88) is subjective without quantitative comparison. The finding in under-30s (C89) is the strongest evidence, but this subset analysis may have reduced power. The authors appropriately acknowledge this as a limitation (C228), but the claim that the effect is 'not solely driven' (C229) may overstate the certainty given the structural confound in the sample.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "The study found clear evidence of substantial age-related GM atrophy in chimpanzees using both region-wise and voxel-based morphometry, which was also apparent in a matched human sample. The authors attribute their ability to detect these effects (unlike previous studies) to the larger sample size with more elderly subjects and improved image processing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 and C206-C210 synthesize the main findings with appropriate reasoning about methodological advantages. The larger sample size (C207) and improved methods (C208, C209) are plausible explanations for detecting effects missed by previous studies (C11, C206). The convergence of region-wise and voxel-wise approaches (C210) strengthens the finding. However, the interpretation of 'human-like physiological aging' (C149) is somewhat speculative given the differences in correlation strength noted elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C212",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218"
+    ],
+    "result": "Multiple brain regions showing GM decline in chimpanzees (frontal, temporal, parietal, occipital cortex, caudate, basal ganglia, cerebellum) have also been shown to exhibit atrophy during healthy aging in humans, suggesting common underlying neurophysiological processes due to shared primate evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C212-C217 are well-supported by multiple citations to human aging studies. The comparison is appropriate given the homologous brain regions. However, the inference of 'common underlying neurophysiological processes' (C218) is speculative and goes beyond what the anatomical similarity alone can demonstrate. The claim would be strengthened by mechanistic data, but the anatomical convergence is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224"
+    ],
+    "result": "The authors propose that age-related GM decline in chimpanzees may be mechanistically linked to stress hormone increases (which can cause GM decline) and Alzheimer's-like pathology (amyloid plaques and neurofibrillary tangles) found in elderly chimpanzees, particularly in prefrontal and temporal cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the cited studies support stress hormone increases in aging chimpanzees (C219, C220) and AD-like pathology (C221), and the association between these proteins and atrophy in humans (C222), the connection to the current study's findings (C223, C224) is inferential. The current study did not measure stress hormones or pathology, so the mechanistic link is speculative. The spatial correspondence between regions showing atrophy and regions with AD pathology is suggestive but not demonstrated in the same subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C140",
+      "C139"
+    ],
+    "result": "Chimpanzees show general rightward lateralization of GM volume without the distinct 'Yakovlevian torque' pattern (frontal rightward and occipital leftward asymmetry) observed in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151 are directly supported by the asymmetry analysis results (C91-C122). The comparison to the human Yakovlevian torque pattern (C139, C140) is appropriate and well-cited. The absence of this organized pattern in chimpanzees (C140, C151) is clearly stated and consistent with the data showing predominantly rightward but not spatially organized asymmetry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C91"
+    ],
+    "result": "The study reproduced several previously reported asymmetries in chimpanzees (leftward insula, rightward PCC, STG, MTG, SMG, anterior SFG, MFG, PrCG, PoCG, mOG, CrusII) while also identifying numerous novel population-level asymmetries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C230-C234 are well-supported by citations to previous studies, and the replication of these findings (implicit in C91) strengthens confidence in the methods. The identification of novel asymmetries (C91) represents a contribution beyond replication, though the specific novel findings are not separately quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study failed to find leftward asymmetry in GM volume for the posterior inferior frontal gyrus (pIFG) in chimpanzees, contrary to asymmetries found in humans and inconsistent with some but not all previous chimpanzee studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is a negative finding from the current study's data. The comparison to humans (C134) and previous chimpanzee studies (C129-C132) is appropriately cited and shows the finding is consistent with some but not all prior work. This represents a replication of the null finding from more recent studies (C131, C132) rather than the earlier positive finding (C129, C130).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "A substantial number of regions showing inter-hemispheric asymmetry in chimpanzees (SFG, insula, IFG, STG, MTG, AnG, mOG, Calc, thalamus, lateral cerebellum) have also been shown to be asymmetric in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 are well-supported by multiple citations to human asymmetry studies. This represents a comparative finding showing conservation of asymmetry patterns across species, though the functional significance is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The Davi130 region pTTG (containing planum temporale) showed rightward lateralization, contrary to previous studies showing leftward asymmetry in chimpanzee PT. The authors suggest this may be due to differences in regional boundaries, and note the left lateral sulcus proceeds further posteriorly/superiorly, consistent with previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The discrepancy between the current finding and previous studies (C123-C125) is acknowledged, and a plausible methodological explanation is offered regarding boundary differences. However, this explanation (that the anterior PT border differs from the Davi130 boundary) is not empirically tested. The observation about the lateral sulcus (C126) is consistent with prior work (C127, C128) but doesn't fully resolve the PT asymmetry discrepancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C225",
+      "C226"
+    ],
+    "result": "The authors conclude that regionally specific GM atrophy is a common aspect of primate brain aging observed in macaque monkeys, chimpanzees, and humans, noting that elderly rhesus monkeys show GM decline without neurofibrillary tangles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C225 is supported by citations to rhesus monkey studies. Claim C226 represents a synthesis across species that is reasonable given the evidence presented, though it is somewhat speculative as a general principle of primate aging. The distinction between chimpanzees (with tangles) and rhesus monkeys (without) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C227"
+    ],
+    "result": "The authors state that validated cognitive tests for Alzheimer's-like cognitive decline in non-human primates are needed to establish the existence of Alzheimer's disease in chimpanzees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C227 is a reasonable statement of what would be needed for future research to establish AD in chimpanzees. This is appropriately framed as speculation about future work rather than a conclusion from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "The authors argue that macroscopic parcellations like Davi130, despite not aligning with microanatomical borders, serve important purposes: enabling reproducibility and comparability, reducing multiple testing problems, and mitigating dimensionality issues for machine learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C205 present reasonable justifications for the macroscopic parcellation approach. C202 is supported by citations showing successful use of similar atlases. C203-C205 represent logical arguments about the benefits of the approach, though these benefits are not empirically demonstrated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The study analyzed 223 chimpanzee T1w MRI scans from the NCBR (age 9-54 years, mean 26.9\u00b110.2), housed at two facilities, scanned with 1.5T and 3T scanners. Images were converted from DICOM to NIfTI, denoised, corrected for inhomogeneity, resliced to 0.6mm resolution, and centered on the anterior commissure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 and C152-C159 provide detailed methodological information about the dataset and preprocessing. The procedures are standard for neuroimaging studies and are described with appropriate detail including software citations (C157, C158). The sample characteristics are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The CAT12 preprocessing pipeline employs Local Adaptive Segmentation (LAS), Adaptive Maximum A Posterior segmentation (AMAP), and Partial Volume Estimation (PVE) to improve tissue segmentation accuracy, with LAS specifically addressing GM misclassification in regions with varying intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 accurately describe the CAT12 methods with appropriate citations. These are established techniques in neuroimaging preprocessing, and the explanation of LAS's purpose (C163) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C175",
+      "C176"
+    ],
+    "result": "Quality control using CAT12 quality measures and visual inspection resulted in 194 of 223 scans qualifying for analysis after three QC iterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C176 describe a rigorous QC procedure combining automated metrics and visual inspection. The exclusion rate (29/223 = 13%) is reasonable for a multi-site, multi-scanner dataset. The iterative approach is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "The authors provide exemplar MATLAB/SPM batch scripts, downloadable templates, and code on GitHub to enable others to use the Juna.Chimp pipeline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C197 document data and code availability, which is essential for reproducibility. The provision of example scripts and public repositories is a strength of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The NCBR dataset is described as the largest openly available chimpanzee brain MRI dataset, acquired over a decade with 1.5T and 3T scanners at two locations. Scanner field strength was modeled as a covariate to account for its effect on GM estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C141 about the dataset being the largest is based on the authors' knowledge and is plausible given the sample size. Claims C142-C143 describe the dataset characteristics and appropriate statistical control for scanner effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors note that while CAT12 enables surface analysis, the current study focused on GM volume. They propose future work analyzing cortical surface measures and cross-species comparisons, noting that surface projection permits direct inter-species comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 appropriately describe the scope of the current study and reasonable future directions. C146 correctly notes an advantage of surface-based analysis, though this is not demonstrated in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C211"
+    ],
+    "result": "The authors state that VBM is more sensitive to GM changes due to aging than region-wise approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C211 is supported by a citation and is consistent with the finding that VBM detected additional regions beyond the parcellation-based approach. This is a reasonable interpretation of the methodological differences.",
+    "result_type": "MINOR"
+  }
+]

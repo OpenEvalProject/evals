@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The study generated 25,423 wild-type and 31,400 mutant single-cell profiles using Drop-seq. Mechanical and enzymatic dissociation methods showed excellent agreement (r=0.95) with no important differences in cell quality or ascertainment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 describe the core dataset generation. The correlation coefficient (C7) is explicitly stated with figure support, and cell counts (C8, C9) are directly reported. These are straightforward data reporting claims with appropriate statistical and visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Histological analysis confirmed distinct spermatogenesis defects in mutant strains: complete early meiotic arrest in Mlh3-/- and Hormad1-/-, partial impairment with abnormal spermatids in Cul4a-/-, and grossly reduced elongating spermatids in Cnp mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 report histological observations that are standard validation for mutant phenotypes. The descriptions are consistent with known biology of these mutants and are supported by Figure 1E. These are appropriate qualitative assessments of tissue pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "SDA analysis with 50 components and k-means clustering identified 32 distinct clusters, which were resolved into 11 germ cell subtypes and 4 somatic cell populations using known markers and FACS-sorted cell comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 describe the computational analysis pipeline. The methods are clearly stated with appropriate parameters (C13), clustering results are shown in figures (C14), and cell type assignments use established markers and validation data (C15). The approach is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Mlh3-/- and Hormad1-/- cells arrest at different meiotic stages (mid-pachytene and leptotene/zygotene respectively) and show elevated apoptosis rates (14.5% vs 2% in wild-type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 report mutant phenotypes consistent with known biology. The arrest stages (C16) are validated by t-SNE localization and prior literature. Apoptosis rates (C17) are quantified using mitochondrial gene expression, a standard proxy. Both claims are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Novel cell-type markers were identified and validated: KIF5B as a Sertoli cell marker providing more extensive coverage than conventional markers, and ABHD5 as a marker for the residual body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 report novel marker identification validated by immunohistochemistry (Figure 2). The validation is appropriate and the comparative statement about KIF5B coverage is supported by visual evidence. These represent solid experimental validation of computational predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C51",
+      "C52"
+    ],
+    "result": "SDA produces the most sparse model compared to NNMF, PCA, and ICA, while maintaining imputation performance equal to or better than these methods and MAGIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C51-C52 compare SDA to alternative methods using appropriate metrics (sparsity, cross-validation AUC). The comparisons are shown in Figures 3C and 5B-C with quantitative results. The cross-validation approach for imputation testing is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Component 5 is highly enriched for GWAS hits of human recombination rate (p=5.2\u00d710\u207b\u00b9\u2078, OR=77.8), with Zcwpw1 ranking 3rd after Prdm9. ZCWPW1 contains domains binding H3K4me3 and H3K36me3, the same modifications deposited by PRDM9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 present a compelling biological hypothesis. The GWAS enrichment (C21) is statistically robust with appropriate multiple testing. The gene ranking (C22) is data-derived. The protein domain information (C23-C25) is properly cited. The connection between ZCWPW1 and PRDM9 is speculative but well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "MSCI is observed from the start of pachytene with no genes confidently escaping. Previously reported 'escapees' are actually expressed after MSCI but fully silenced within MSCI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 challenge prior bulk RNA-seq findings using single-cell resolution. The MSCI observation (C26) is consistent with recent reports. The lack of escapees (C27) and reinterpretation of prior findings (C28) are supported by Figure 6C showing temporal expression patterns. The single-cell data provides superior resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Genetically haploid post-meiotic cells are predominantly phenotypically diploid for sex chromosome transcription, suggesting efficient cytoplasmic mRNA sharing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 address mRNA sharing through cytoplasmic bridges. The phenotypic diploidy (C29) is shown in Figure 6A-B. The inference of efficient sharing (C30) is reasonable given the data and consistent with prior single-gene studies. The conclusion is appropriately qualified as 'suggesting.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "De novo motif analysis identified 16 motif groups including binding targets of master regulators (Stra8, Mybl1, Rfx2, Crem) and Spi1 in macrophages. ChIP-seq enrichment validated that component covariation reflects shared transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe motif discovery and validation. The de novo approach (C31) is unbiased. Independent identification of known regulators (C32-C33) validates the method. ChIP-seq enrichment (C34, Figure 7\u2014supplement 1) provides orthogonal validation. The analysis is rigorous and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Pre-division motifs predominantly contain CpG dinucleotides while post-division motifs do not, indicating a major shift away from CpG island promoter expression following meiotic divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 identify a striking regulatory transition. The CpG content analysis (Figure 7) is straightforward and the pattern is clear. The interpretation (C37) is supported by quantitative analysis (Figure 7B). This represents a novel observation about meiotic gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Component 38, comprised largely of X chromosome genes and restricted to Hormad1-/- cells, shows both failure to silence previously expressed sex-linked genes and activation of previously unexpressed ones. Strong association with genes overexpressed in Hormad1-/- and Trip13-/- mutants (p=2.2\u00d710\u207b\u00b3\u2079, OR=184).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 characterize a mutant-specific component. The X chromosome enrichment and Hormad1-/- specificity (C38) are shown in Figure 9A. The expression pattern (C39) is demonstrated in Figure 9B. The statistical association with prior mutant data (C40) is highly significant. This is a well-characterized pathological phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Component 25 is highly specific to Cul4a-/- cells and corresponds to overexpressed genes with GO enrichments for spermatid development, motility and capacitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 identify a Cul4a-/- specific component. The specificity (C41) is shown in Figure 9C. The GO enrichment (C42) is appropriate for identifying functional themes. This represents successful identification of mutant-specific transcriptional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "No obvious transcriptional phenotype was found in Mlh3-/- cells by SDA or differential expression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 reports a negative result. The absence of a transcriptional signature is notable given the clear phenotype. This could reflect rapid apoptosis without transcriptional response, as the authors suggest. The negative finding is appropriately reported and interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Six somatic components show enrichment for Mlh3-/- and Hormad1-/- cells with recurrent amyloid-related GO terms. Component 11 (macrophages) is specifically enriched for Alzheimer's disease risk genes (p=1.3\u00d710\u207b\u00b9\u00b9, OR=65.9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 identify an unexpected connection to Alzheimer's disease. The component enrichment (C44) is shown in Figure 8B. The GO analysis (C45) is hypothesis-free. The AD gene enrichment (C46) is statistically robust. This is a surprising finding that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "APOE+ cells are found within seminiferous tubules of Mlh3-/- (3.5%) and Hormad1-/- (5.6%) but not wild-type (0%, p<2.2\u00d710\u207b\u00b9\u2076). These intratubular cells are F4/80+ macrophages, suggesting immune cell transit across the blood-testis barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 report a striking pathological finding. The APOE+ cell presence (C47) is validated by immunofluorescence (Figure 9E). The quantification (C48) is rigorous with large sample size and highly significant statistics. The macrophage identity (C49) is confirmed by F4/80 staining. The inference about barrier transit (C50) is reasonable though mechanistic details are unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Of 50 SDA components, 6 represent batch effects, 13 are somatic-specific, 23 are germ cell-specific, and 3 load on both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 summarize component classification. The categorization is based on systematic analysis of component loadings (Figure 3\u2014supplement 1). The identification of batch effects demonstrates appropriate quality control. This provides a useful overview of the decomposition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "SDA decomposes pachytene into 5 components and identifies distinct spermatogonial populations: undifferentiated (component 31, Zbtb16+/Foxo1+), split into Gfra1+/Glis3+ and Nanos3+/Lin28a+/Foxf1+ subpopulations (component 50), A1-4 (component 7), and intermediate/type B (component 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 demonstrate SDA's ability to resolve known developmental stages into finer components. The pachytene decomposition (C56) shows temporal resolution. The spermatogonial classifications (C57-C60) are based on established markers with appropriate citations. This validates the biological utility of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Component 20 contains genes functional during meiotic divisions with strong enrichment for DUF622 domain genes (18 in top 88). Component 9 is highly enriched for electron transport chain genes (p=7.4\u00d710\u207b\u2075\u00b3, OR=104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 characterize specific components. The functional inference (C61) is reasonable based on gene content. The DUF622 enrichment (C62) is striking and novel. The electron transport chain enrichment (C63) is extremely significant. These represent well-characterized biological modules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Round spermatid component 30 contains acrosome-associated genes. Lrrc34 protein localization to the acrosome was verified by immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 identify and validate an acrosomal component. The gene content (C64) is supported by literature citation. The immunofluorescence validation (C65, Figure 2B) confirms the prediction. This demonstrates successful prediction and validation of subcellular localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Component 35 is described as the most mysterious, containing dozens of testis-enriched protein-coding genes with no known function, including genes with no apparent human ortholog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 identify a component of unknown function. The 'mysterious' designation (C66) is subjective but reasonable. The lack of functional annotation (C67) and human orthologs (C68) is verifiable from databases. This highlights gaps in understanding of spermatogenesis and identifies targets for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Abhd5 serves as an excellent marker of the residual body. Telocytes were identified based on Cd34/Pdgfra coexpression, with additional highly specific markers including Dcn, Gsn, and Tcf21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 report marker identification. The Abhd5 validation (C69) is shown in Figure 2B with prior literature support. The telocyte identification (C70) uses established markers with appropriate citations. The novel markers (C71) are data-derived. These are solid marker discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Pseudotime analysis spans the entire ~34.5 day spermatogenesis process with mean 3-minute resolution between adjacent cells. The estimated difference in arrest timing between Hormad1-/- and Mlh3-/- is 12 days, reflected in differential component loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 present pseudotime analysis. The span (C72) is reasonable given the known duration, but the 3-minute resolution is likely overestimated given sampling and biological variability. The 12-day difference (C73) is appropriately qualified as needing further work. The component differences (C74) are supported. The temporal resolution claims need more validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "HORMAD1 normally marks unsynapsed chromosomes and is removed by TRIP13 upon synapsis. In Hormad1-/- spermatocytes, DSB formation and recombination are disrupted, leading to pachytene checkpoint failure and apoptosis. Hormad1-/- leptotene/zygotene cells form a distinct cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 describe Hormad1 biology and mutant phenotype. The normal function (C75-C76) is established knowledge with appropriate citations. The mutant defects (C77-C78) are well-documented with citations and consistent with the data. The distinct clustering (C79) is shown in supplementary figures. This provides appropriate biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "CUL4A is a component of the CRL4 E3 ubiquitin ligase complex. In Cul4a-/- mice, some spermatocytes arrest at pachytene while others complete meiosis but produce malformed spermatozoa with oligoasthenospermia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 provide biological context for Cul4a. The protein function (C80) and mutant phenotype (C81) are properly cited to prior literature. This background information appropriately contextualizes the single-cell findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "MLH3 is required for crossover formation and MLH1 binding to meiotic chromosomes. Mlh3-/- testes show depletion of spermatocytes and some spermatogonia due to apoptosis in diplonema.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide biological context for Mlh3. The protein function (C82) is established knowledge. The mutant phenotype (C83) is properly cited. This background appropriately contextualizes the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Intratubular macrophages have rarely been described previously, nearly always in the context of testicular defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 provides literature context for the intratubular macrophage finding. The statement is supported by three citations. This appropriately contextualizes the novelty of the observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "SDA revealed previously uncharacterized complexity with multiple components within recognized meiotic stages. SDA retains similar imputation performance to NNMF while providing more compact representation. Latent factors allowing negative loadings can better capture transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 discuss SDA advantages. The increased resolution (C85) is demonstrated throughout. The performance comparison (C86) is shown in figures. The theoretical consideration about negative loadings (C87) is reasonable though not empirically tested here. These appropriately summarize methodological contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "There is a dramatic change away from use of CpG dinucleotide-binding factors after the first meiotic division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 summarizes a key regulatory finding. This is directly supported by the motif analysis in Figure 7 and represents a novel observation about meiotic gene regulation. The claim is appropriately qualified as an area for further research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Gene expression components represent an attractive way to build a dictionary of testis pathology. Construction of component models using larger mutant panels will accelerate interpretation of idiopathic mutants and could provide a framework for advanced diagnosis of human infertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 discuss future applications. These are reasonable speculations based on the demonstrated utility of the approach for characterizing mutant phenotypes. The claims are appropriately qualified as potential future work rather than current achievements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The testis has unique features including the largest number of tissue-specific genes (over twice the cerebral cortex), sex chromosome inactivation, meiotic processes, transcript sharing through cytoplasmic bridges, and dramatic chromatin remodeling with histone-to-protamine replacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide biological background. All claims are either properly cited to literature (C1-C3, C5-C6) or represent established knowledge (C4). These appropriately contextualize the importance of studying testis biology and the challenges addressed by single-cell approaches.",
+    "result_type": "MINOR"
+  }
+]

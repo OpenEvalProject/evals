@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C54",
+      "C55",
+      "C84",
+      "C85"
+    ],
+    "result": "A custom two-photon microscope was developed that enables simultaneous imaging of soma and up to 300 \u03bcm of contiguous dendrite at ~15 Hz while resolving individual spines, with spatial resolution of 0.35 \u03bcm lateral and 1.9 \u03bcm axial in the center of the imaging volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C22, C54-C55, and C84-C85 collectively describe the technical specifications and capabilities of the custom microscope. The resolution specifications, imaging speed, and field of view are explicitly stated and supported by the methods section and Figure 1. The comparison to existing systems (C54-C55) provides additional validation of the technical advancement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C50",
+      "C51"
+    ],
+    "result": "The majority of dendritic calcium transients were coincident with global events (soma or apical trunk activity), with independent dendritic activity being rare in L2/3 dendrites (mean difference 0.037 \u00b1 0.009 at \u0394F/F > 1) and more frequent but still uncommon in L5 tufts (mean difference 0.15 \u00b1 0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C31, C50-C51 are supported by quantitative analysis in Figure 3 with appropriate statistical testing. The probabilistic approach accounting for shot noise (described in methods and Figure 3A) provides a rigorous framework for distinguishing independent from coincident activity. The finding is consistent across multiple neurons and sessions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Dendritic spines exhibited substantially higher rates of independent activity (~30%) compared to dendritic shafts, even at thresholds where false positive rates approached zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by quantitative data in Figure 3B-C showing approximately one order of magnitude higher independent activity in spines versus dendrites. The analysis appropriately accounts for false positive rates due to shot noise, strengthening the conclusion that spine activity can be independent of somatic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C52"
+    ],
+    "result": "Task-associated calcium signals in dendrites and spines were spatially clustered with an exponential length constant of approximately 8-14 \u03bcm, with similar spatial profiles for both signal correlations and noise correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C42-C47, and C52 are supported by quantitative analysis in Figure 7 showing distance-dependent correlations. The exponential-linear fitting approach is appropriate, and the length constants are reported with error estimates. The finding that signal and noise correlations have similar spatial profiles (C47) is supported by comparing the length constants. Computer simulations (C58-C59) validate that the analysis method accurately detects spatial clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Dendritic branching compartmentalizes task-related signals, with significantly lower correlations when branch points are crossed compared to within-branch pairs at distances less than 10 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by data in Figure 8B-C with appropriate statistical testing (p<0.05 for most comparisons). The analysis appropriately controls for distance effects by restricting comparisons to pairs <10 \u03bcm apart, isolating the effect of branch structure. This finding complements the distance-dependent clustering results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Diverse behavior-related signals were distributed throughout the dendritic arbor, with 46-74% of spines and dendrite segments showing epoch selectivity and 18-38% showing trial-type selectivity, with substantial diversity in selectivity between nearby spines (27-43% of pairs showing different epoch selectivity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C41 are supported by quantitative analysis in Figure 5 with appropriate statistical testing (nonparametric ANOVA for epoch selectivity, permutation tests for trial-type selectivity). The proportions are reported both before and after bAP subtraction, showing that the diversity persists after accounting for global signals. The pairwise comparison analysis (C40-C41) provides additional evidence for functional diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Computer simulations revealed that the bAP subtraction method used does not reliably estimate input-output correlations between spines and soma, but accurately detects the presence and spatial scale of structured correlations within dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by simulation results in Figure 6\u2014figure supplements 1-2. The simulations appropriately test multiple spike-to-calcium transformation models and show that while input-output correlations are unreliable (C57), the spatial structure of correlations is accurately recovered (C58-C59). This honest assessment of methodological limitations strengthens confidence in the spatial clustering results while appropriately cautioning against input-output interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The study imaged 3728 spines on 11.4 mm of dendrite from 14 L2/3 neurons (seven mice, 52 sessions) and 655 spines on 3.9 mm of dendrite from five L5 neurons (four mice, 16 sessions), with Chrna2_OE25-Cre mice expressing in pyramidal tract neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 provide essential dataset characteristics supported by explicit statements in the methods and results. The sample sizes are substantial and appropriate for the statistical analyses performed. The characterization of the Cre line (C23) is supported by Figure 1\u2014figure supplement 1 and citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Mice performed a tactile decision task with a 1.25 s sample epoch, 2 s delay epoch, and response epoch, with early licking resetting the delay timer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 describe the behavioral task used in the study, supported by explicit descriptions in the methods and Figure 2A. The task design is clearly specified and appropriate for studying decision-making and motor planning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C69",
+      "C70",
+      "C82"
+    ],
+    "result": "The data suggest that sensorimotor signals are compartmentalized within dendrites of motor cortex neurons, with local dendritic spikes either very rare or almost always part of synchronized multi-branch depolarizations, consistent with models where branch-specific information enhances computational capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C69-C70, and C82 represent the main interpretive conclusions of the study. These are well-supported by the empirical findings (low independent activity, spatial clustering, branch compartmentalization) and appropriately contextualized with citations to theoretical models. The interpretation is cautious about the rarity of independent local dendritic spikes (C69) while noting this doesn't preclude functional compartmentalization (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction reviews prior literature on dendritic integration, active conductances, and local dendritic spikes, noting conflicting findings about the prevalence of local dendritic spikes during behavior and sensory stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C20 summarize prior literature with appropriate citations. The review accurately represents the state of the field, including conflicting findings (C12-C13, C14-C15, C17-C18), which motivates the current study. These are background claims supported by citations rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "The discussion contextualizes findings within prior literature on dendritic spikes, motor cortex function, and plasticity mechanisms, noting consistency with some studies and differences with others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C81 (excluding C66, C75, C83) represent contextualization of the current findings within prior literature. These comparisons are appropriately supported by citations and help interpret the significance of the results. The discussion appropriately notes both consistencies (C62, C78) and discrepancies (C61) with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C75",
+      "C83"
+    ],
+    "result": "The authors speculate that long-lasting dendritic excitation could contribute to short-term memory mechanisms, that the ~10 \u03bcm length constant relates to known plasticity mechanisms, and that local operations may play a role in learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66, C75, and C83 are speculative interpretations about functional implications and future directions. While these are reasonable hypotheses based on the data and prior literature, they represent speculation rather than direct findings. C75 makes a comparison to plasticity mechanisms but doesn't provide quantitative support. These claims appropriately identify areas for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "In addition to short exponential decay, correlations exhibited a linear decay component over longer distances up to 180 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by the exponential-linear fitting approach described in methods and shown in Figure 7. The linear component is explicitly included in the model and contributes to the overall distance-dependent correlation structure. This finding complements the exponential clustering result.",
+    "result_type": "MINOR"
+  }
+]

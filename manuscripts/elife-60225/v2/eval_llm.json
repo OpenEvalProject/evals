@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "RUNX1 marks a specific subpopulation of proximal luminal cells (PLCs) in the adult mouse prostate that are spatially and molecularly distinct from NKX3.1+ distal luminal cells. These RUNX1+ PLCs are enriched in the periurethral region, have distinct histological features, and Runx1 expression is exclusively mediated by the P2 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C12, C15, and C16 are well-supported by multiple complementary techniques including immunostaining (Figure 1A,B), QBIC analysis showing mutually exclusive RUNX1/NKX3.1 expression patterns, flow cytometry (Figure 1C,D), and reporter mouse validation (Figure 1\u2014figure supplement 2). The histological characterization (C13, C14) is supported by H&E staining. The convergence of spatial, molecular, and functional data provides strong evidence for this distinct cell population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "RUNX1+ PLCs exhibit enhanced organoid-forming capacity compared to RUNX1- luminal cells and show a lineage bias toward forming unipotent K8+ hollow organoids, suggesting commitment to luminal identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by organoid formation assays (Figure 1F, Figure 1\u2014figure supplement 3A) and lineage marker characterization (Figure 1H, Figure 1\u2014figure supplement 3D-E). The data consistently show higher OFC for RFP+ luminal cells across multiple lobes and preferential formation of K8+ organoids. Statistical significance is reported (p-values shown in figures), and the findings are consistent with previous literature (Drost et al., 2016; Kwon et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Following castration, RUNX1 expression expands throughout the prostate epithelium, with RFP+ cell frequency increasing from 22.8\u00b16.0% to 87\u00b16.0%, while the spatial transition between RUNX1+ and NKX3.1+ cells in the proximal region is preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by flow cytometry (Figure 2B,C) and immunostaining data (Figure 2D, Figure 2\u2014figure supplement 1). The quantitative increase in RFP+ cells is statistically significant and well-documented. The preservation of the RUNX1/NKX3.1 boundary in the proximal region (C26) is clearly shown in Figure 2D,ii. Co-expression with TROP2 (C24) is validated by immunostaining and consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Single-cell RNA-seq analysis of 3,825 prostate epithelial cells reveals extensive luminal heterogeneity with six distinct luminal clusters (Lum-A through Lum-F) that segregate by treatment status and lobe of origin, while basal cells remain largely unaffected by castration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 are supported by comprehensive scRNA-seq analysis with appropriate quality control (median 2,846 genes/cell), clustering analysis (Figure 3B-D, Figure 3\u2014figure supplement 2), and compositional analysis (Figure 3E,F). The methodology is well-described, including batch correction and multiplexing strategies. The observation that lobular identity is conserved after castration (C33) is an inference supported by the data but represents a reasonable interpretation of the clustering patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C90",
+      "C91"
+    ],
+    "result": "The Lum-D cluster, predominantly composed of RFP+ cells from the anterior prostate, corresponds to RUNX1+ PLCs and is characterized by high expression of Tacstd2/Trop2, Ly6 family members, and Runx2, with enrichment in developmental processes rather than secretory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43, C90-C91 are supported by scRNA-seq gene expression analysis (Figure 3D,G, Figure 3\u2014figure supplement 3D,E), gene ontology analysis (Figure 3\u2014figure supplement 4A-I), and PAGA connectivity analysis (Figure 3B). The correspondence between Lum-D and RUNX1+ PLCs (C90, C91) is a reasonable inference based on the correlation between Runx1 expression and RFP+ status. Differential expression analysis shows minimal changes between intact and castrated Lum-D cells (n=103 genes, C42), supporting identity preservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "The Lum-D population may contain intrinsically castration-resistant luminal cells based on transcriptional similarity to castration-enriched Lum-E/F clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is explicitly speculative ('may contain') and based on transcriptional relationships observed in scRNA-seq data. While the PAGA analysis (Figure 3B) shows connectivity between Lum-D and Lum-E, and gene ontology suggests similar developmental programs, this claim requires functional validation through lineage tracing experiments (which are provided later in the manuscript) to be definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C93",
+      "C94"
+    ],
+    "result": "Genetic lineage tracing demonstrates that RUNX1+ cells are intrinsically castration-resistant (frequency increases ~4.3-fold while absolute numbers remain stable) but do not substantially contribute to regeneration of distal NKX3.1+ luminal cells, with >90% of RFP+ cells remaining NKX3.1- across all experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52, C93-C94 are supported by comprehensive lineage tracing experiments using Runx1CreER Rosa26LSL-RFP mice (Figure 4). The castration resistance is demonstrated by stable absolute cell numbers (Figure 4\u2014figure supplement 1C,D) and increased frequency (Figure 4E). The lack of contribution to distal regeneration is shown by minimal clone expansion (Figure 4G) and persistent NKX3.1 negativity (Figure 4I, >90%). Statistical significance is reported for key comparisons. The inference of 'intrinsic' castration resistance (C48, C93) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C95"
+    ],
+    "result": "During embryonic and postnatal prostate development, RUNX1 is expressed in the proximal region with spatial segregation from NKX3.1+ cells, suggesting these transcription factors mark distinct cellular lineages from early organogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57, C95 are supported by immunostaining data at E18.5 (Figure 5A-C, Figure 5\u2014figure supplement 1A,B) and P14 (Figure 5D, Figure 5\u2014figure supplement 1C-E). The co-expression with K4 and LY6D (C54) is validated and consistent with adult Lum-D characteristics. The inference that RUNX1 and NKX3.1 mark distinct lineages (C95) is reasonable based on the mutually exclusive expression patterns observed across developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C96",
+      "C97"
+    ],
+    "result": "In UGS explant cultures, RUNX1 is initially detected in the inner layers of the stratified epithelium at E15.5, with transient co-expression with NKX3.1 in outer layers at day 1, followed by spatial segregation with RUNX1+ cells remaining proximal and NKX3.1+ cells becoming distal by day 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C96-C97 are supported by time-course immunostaining of UGS explants (Figure 5G,H, Figure 5\u2014figure supplement 2). The transient co-expression (C59) and subsequent segregation (C60-C61) are clearly documented. The inference that budding originates from transiently RUNX1+NKX3.1+ cells (C96) is reasonable but represents an interpretation of the temporal dynamics. Ki67 staining (C62, Figure 5\u2014figure supplement 2E) supports the conclusion about proliferation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C98",
+      "C99"
+    ],
+    "result": "Single-cell RNA-seq of UGS explant cultures (3,937 cells) reveals that the C2 cluster, characterized by high expression of Tacstd2/Trop2, Krt4, Psca, Ly6d, and Nupr1, strongly resembles the adult Lum-D population, suggesting the proximal luminal lineage is established at the onset of prostate specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70, C98-C99 are supported by scRNA-seq analysis of UGS explants with appropriate quality control (median 3,608 genes/cell, Figure 6\u2014figure supplement 1). The C2 cluster is well-characterized by gene expression (Figure 6H, Figure 6\u2014figure supplement 2A) and AUCell signature enrichment analysis (Figure 6I, Figure 6\u2014figure supplement 2F,G) shows strong similarity to adult Lum-D. The inference that the proximal luminal fate is determined early (C69, C99) is well-supported by the transcriptional similarity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C100"
+    ],
+    "result": "Lineage tracing in UGS explants demonstrates that Runx1-expressing cells preferentially populate the proximal region and contribute minimally to NKX3.1+ lineage expansion, with increasing K4 expression (56.9\u00b110.6% to 74.1\u00b13.0%) indicating commitment to the proximal luminal identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78, C100 are supported by lineage tracing experiments in UGS explants using Runx1CreER Rosa26LSL-RFP mice (Figure 7). The spatial restriction to proximal regions (C71) and stable RUNX1 co-expression (C72) are shown by immunostaining (Figure 7B-D). The minimal contribution to NKX3.1+ expansion (C74, C77) is quantified (Figure 7G). The increase in K4+ cells (C75) and Nupr1+ cells (C76) provides evidence for proximal luminal commitment. The inferences (C77, C78, C100) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6"
+    ],
+    "result": "RUNX1+ PLCs constitute an intrinsic castration-resistant and self-sustained lineage that emerges early during prostate development and does not contribute to regeneration of distal luminal compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C6 represent the main conclusions of the manuscript and are supported by the integration of multiple experimental approaches: castration resistance is demonstrated by lineage tracing (Figure 4E, Figure 4\u2014figure supplement 1C,D), lack of contribution to distal regeneration is shown by minimal NKX3.1+ conversion (Figure 4I), and early developmental emergence is demonstrated by UGS explant studies (Figures 5-7). The convergence of evidence from different experimental systems provides strong support for these integrated conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "A transcriptionally similar RUNX1+ population emerges at the onset of embryonic prostate specification to populate the proximal region of the ducts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by the combination of UGS explant scRNA-seq showing the C2 cluster resembles adult Lum-D (Figure 6I) and immunostaining data showing RUNX1 expression in the proximal region during development (Figure 5). The transcriptional similarity is quantitatively demonstrated by AUCell analysis, and the spatial localization is confirmed by multiple time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C105",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors speculate that the model of self-sustained basal and luminal populations might extend to individual luminal subpopulations, and that RUNX1+ PLCs may act as 'facultative' luminal stem cells with a more immature epithelial state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103, C105, C110, C111 are explicitly speculative ('suggest,' 'may,' 'tempting to speculate'). While the data on castration resistance and organoid formation provide some support, these claims represent hypotheses that require additional functional validation. The authors appropriately acknowledge these as speculative interpretations and suggest future experiments (e.g., using Krt4/Psca-specific Cre drivers) to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "This study presents the first comprehensive single-cell atlas of intact and castrated adult mouse prostates annotated by lobe of origin, revealing extensive luminal heterogeneity, with the Lum-D subset corresponding to previously identified proximal populations and showing enhanced organoid-forming potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by the comprehensive scRNA-seq dataset (3,825 cells) with appropriate experimental design including lobe-specific dissection and multiplexing. The novelty claim (C106) is reasonable given the scope of the dataset. The heterogeneity (C107) is demonstrated by the identification of six luminal clusters. The correspondence to previous studies (C108) is supported by citations and comparison with published datasets. The organoid data (C109) is well-documented in Figure 1F and consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C101",
+      "C102",
+      "C104",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The manuscript provides appropriate context from prior literature regarding prostate development, cellular composition, RUNX1 function, castration-resistance models, and recent findings on luminal heterogeneity and regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11, C79-C89, C101-C102, C104, C112-C115 represent background knowledge and citations to prior literature. These are appropriately referenced with multiple citations to established work. The citations appear accurate and relevant to the context in which they are used. The authors appropriately acknowledge areas of controversy (C86, C102) and recent findings that relate to their work (C104, C114).",
+    "result_type": "MINOR"
+  }
+]

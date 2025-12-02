@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50"
+    ],
+    "result": "Three distinct eCRF mechanisms were identified in V1 neurons: tuned-facilitation (25% of neurons), untuned-suppression (55%), and tuned-suppression (79%), each with distinct spatial and temporal profiles. Suppressive mechanisms were more prevalent and stronger than facilitation, and multiple mechanisms could co-occur in individual neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19-C22, C34-C37, C41-C47, and C50 collectively provide strong experimental evidence from reverse correlation analysis in 106 V1 neurons. The prevalence, magnitude (z-scores), and spatiotemporal characteristics of each mechanism are quantified with appropriate statistical criteria (z-score > 2). The data are supported by multiple example neurons (Figures 1D-F) and population analyses (Figure 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The three eCRF mechanisms exhibited distinct temporal dynamics: facilitation peaked at 60\u00b13 ms, untuned suppression at 55\u00b12 ms, and tuned suppression at 76\u00b13 ms. Tuned suppression had the longest duration (36\u00b13 ms) compared to facilitation (16\u00b12 ms) and untuned suppression (23\u00b12 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 present quantitative timing measurements with statistical comparisons (p<0.005, p<0.0001) showing significant differences between mechanisms. The data include sample sizes, means with standard errors, and appropriate paired statistical tests (Wilcoxon signed-rank). Results are visualized in Figure 2D-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Spatial extent analysis revealed that tuned facilitation arose from regions within and near the CRF (strongest at 0.5x eCRF border, 91% of neurons), untuned suppression emerged from the annular region between 1x and 2x eCRF border, and tuned suppression originated from regions beyond 2x eCRF border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C78 describe systematic spatial manipulation experiments (0.5x, 1x, 2x eCRF border) with quantitative comparisons (n=47 neurons). Statistical tests show significant differences in magnitude across spatial scales (p<0.0001, p<0.02), and correlations between conditions (r=0.54-0.63, p<0.0001). The inference about spatial origins (C67, C73, C75, C78) follows logically from the magnitude changes across conditions, supported by Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Spatial phase analysis showed that suppression mechanisms lacked phase dependence, while tuned facilitation exhibited phase dependence only in simple cells, providing evidence that facilitation activates the edge of central CRF mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by phase-dependence analysis presented in Figure 3\u2014figure supplement 1. The differential phase sensitivity between facilitation (in simple cells only) and suppression mechanisms is clearly demonstrated. The inference about CRF edge activation (C81) is reasonable given the phase-dependent integration pattern observed in simple cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Laminar analysis revealed distinct eCRF dynamics across cortical layers: tuned suppression was present in both layer 4C\u03b1 (peaking at 60-75 ms) and 4C\u03b2 (peaking at 100 ms), untuned suppression was prominent in magnocellular-driven layers (4C\u03b1 and 4B), and layer 2/3 showed predominantly tuned suppression peaking at ~100 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 present laminar-specific eCRF dynamics from 81 neurons assigned to layers via histological reconstruction. The timing differences between layers are clearly documented (Figure 4A-F), and the association of untuned suppression with magnocellular layers (C87) is a reasonable inference from the laminar distribution. The caveat about layer 5 orthogonal facilitation (C92) appropriately notes the need for larger sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Cross-correlation analysis between supra/infragranular layers and input layers (4C\u03b1 and 4C\u03b2) revealed that layers 4B and 6 showed strong correlation with 4C\u03b1 dynamics, while layer 2/3 neurons received dominant input from either M or P pathway (not mixed), and layer 5 showed mixed correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 describe cross-correlation analysis with clear methodology (Figure 4G-K). The distribution of correlation differences (Figure 4L-O) supports the inference about pathway-specific input to individual neurons. The conclusion about layer 2/3 receiving dominant (not mixed) input from either pathway (C97) is well-supported by the broad distribution of correlation differences rather than clustering around zero. However, the layer 5 conclusion (C99) is based on only 8 neurons, which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Orientation tuning comparison showed that tuned facilitation and tuned suppression had similar peak orientations (within 20 degrees) and similar distributions of orientation selectivity, spanning the same range of tuning bandwidth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 present quantitative comparison of orientation tuning between facilitation and suppression mechanisms (Figure 5). The data show similar distributions of peak orientations and bandwidths, though within-cell correlations were weak (r=0.22, p=0.14 for bandwidth; r=0.29, p=0.051 for global selectivity). The conclusion (C103) appropriately notes this comparison was only possible by isolating component mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Modeling demonstrated that stimulus duration critically determines net eCRF modulation: brief stimuli (<40 ms) produced no modulation, intermediate durations (60-120 ms) yielded net facilitation, and longer durations (>200 ms) resulted in net suppression due to the distinct temporal dynamics of underlying mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C115 describe modeling results that systematically vary stimulus duration (Figure 6). The model incorporates empirically measured temporal dynamics of facilitation and suppression mechanisms. The predictions are logical consequences of combining short-latency facilitation with longer-latency stronger suppression. However, the model is relatively simple (Gaussian temporal kernels, Poisson spiking) and lacks validation against actual experimental data with varying stimulus durations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors propose that tuned facilitation is generated in compact local circuitry of neighboring cortical hypercolumns and represents extensions of CRF mechanisms, consistent with earlier studies showing facilitation from nearby flanking stimuli and brief stimulus presentations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117, C121-C122 synthesize the spatial extent findings (facilitation localized near CRF) with prior literature. The proposal (C117) is a reasonable mechanistic interpretation of the spatial localization data. The connection to prior work (C121-C122) appropriately reconciles current findings with earlier studies, though the interpretation relies on inference rather than direct mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors propose that untuned suppression has multiple origins: early untuned suppression in magnocellular layers likely derives from feedforward LGN input, while delayed untuned suppression in parvocellular layers is likely cortically generated through lateral inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C135, C138-C139 integrate laminar distribution, timing, and spatial extent data with prior literature on subcortical suppression. The inference about magnocellular LGN origin (C128-C129) is supported by the short latency, limited spatial scale, and lack of orientation tuning, plus citations to prior work. The inference about cortical generation in parvocellular layers (C134) is supported by the delayed timing and absence of eCRF suppression in parvocellular LGN cells. However, these remain inferences without direct circuit manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Tuned suppression is proposed to arise from cortico-cortical lateral interactions or extra-striate feedback, with orientation-selective long-range connections. Layer 4B exhibits a distinct fast tuned-suppression mechanism compared to layer 2/3, suggesting multiple circuit mechanisms along different output pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C152 synthesize the spatial extent (beyond 2x eCRF), delayed timing, and orientation selectivity of tuned suppression with prior literature on lateral connections and feedback. The inference about cortico-cortical origin (C144) is reasonable given the properties, though alternative mechanisms aren't ruled out. The layer 4B finding (C150-C151) is based on a small sample (n=6) but shows clear early tuned suppression when untuned suppression is removed by spatial manipulation. The conclusion about multiple circuit mechanisms (C152) follows logically from the laminar differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The findings reconcile contradictory prior literature: studies using long-duration stimuli reported suppression while those using brief stimuli reported facilitation. The current results show both mechanisms exist but are differentially engaged by stimulus duration due to their distinct temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C166 effectively synthesize current findings with extensive prior literature. The reconciliation is well-supported by the modeling results (Figure 6) showing how temporal integration affects net modulation. The comparison of orientation tuning (C153-C155) explains why earlier studies found broader tuning (they didn't separate mechanisms). The explanation for facilitation vs. suppression reports (C159-C166) is compelling and supported by both experimental data and modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C175",
+      "C176"
+    ],
+    "result": "The authors argue that the diversity of normalization mechanisms across V1 microcircuits challenges the view of a single canonical normalization process per cortical area, suggesting instead that functional modules should be analyzed based on their downstream targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C172, C175-C176 present a conceptual argument about normalization that is well-supported by the empirical findings of diverse eCRF mechanisms across layers. The critique of the 'canonical computation' framework (C175) is justified by the demonstrated heterogeneity. However, C176 is more of a suggestion for future research rather than a supported result. The argument is logical but represents interpretation rather than direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "The findings predict that extended stimuli with varied spatial structure will differentially affect coding, and that identical stimuli may influence perception differently depending on viewing duration. An alternative explanation is offered for reported species differences in surround modulation, attributing them to stimulus duration rather than species differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C178-C186 make predictions about perception and reinterpret prior work. While the predictions (C179-C180) follow logically from the findings, they lack direct perceptual validation. The reinterpretation of the Meier and Reinagel (2013) study (C181-C184) is plausible given the modeling results, but remains speculative without direct testing. The alternative explanation (C184) is reasonable but not definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "The authors suggest that future models of natural vision should incorporate the dynamics of multiple eCRF mechanisms and pathway-specific differences to better characterize contextual information relayed to higher visual areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C190 critique current static models and propose future directions. The critique (C188) is accurate, and the suggestion (C190) follows logically from the findings. However, this is a proposal for future work rather than a demonstrated result. The claim is well-reasoned but represents speculation about model improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "The study recorded 106 V1 neurons (37 simple, 69 complex) across all cortical layers in anesthetized, paralyzed macaque monkeys using a reverse correlation paradigm with dynamic eCRF stimuli. Neurons showed stable responses across trials and diverse orientation selectivity and size tuning consistent with prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33, C191-C204 describe the experimental methods and basic characterization. The sample size, recording conditions, stimulus parameters, and quality control measures are clearly documented. The stability analysis (C202-C204) shows relatively stable firing rates (response ratios 0.87-0.94), and the distributions of orientation selectivity and size tuning match prior literature (C31, C33). These methodological details are well-documented and appropriate.",
+    "result_type": "MINOR"
+  }
+]

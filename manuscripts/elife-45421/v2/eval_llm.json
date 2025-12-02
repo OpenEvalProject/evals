@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Inter-subunit FRET between fluorescently-tagged LRRC8 subunits tracks VRAC activation. The C-termini of LRRC8 proteins are within FRET distance (~5 nm), and switching to hypotonic buffer causes a robust 5-10% decrease in cFRET within 90 seconds. This FRET change correlates with VRAC current activation kinetics measured by simultaneous patch-clamp fluorometry, is reversible, and is specific to VRAC (control FRET constructs show no response).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C21-C32 provide converging evidence from acceptor photobleaching (C21-C23), sensitized emission FRET (C25), simultaneous patch-clamp fluorometry (C28), and appropriate controls (C26-C27, C31). The FRET changes are specific to VRAC activation, dose-dependent with osmolarity (C29), and reversible (C28), strongly supporting that the FRET sensor reliably reports VRAC conformational changes during gating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Reduced intracellular ionic strength does not directly activate VRACs, and VRACs are not activated on endomembranes. Despite hypotonic treatment causing a homogeneous decrease in intracellular ionic strength throughout the cell (measured by RD sensor), VRACs trapped in the ER or localized to the Golgi do not respond to hypotonic buffer. Only VRACs that reach the plasma membrane show activation-dependent FRET changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C33-C40 demonstrate through multiple experimental approaches (ER trapping with BFA, reverse aggregation system tracking VRACs through secretory pathway) that ionic strength reduction is insufficient for VRAC activation. The RD sensor data (C33-C34) confirms homogeneous ionic strength changes, while FRET measurements (C35, C37-C39) show compartment-specific activation only at the plasma membrane. This strongly challenges the ionic strength hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C86"
+    ],
+    "result": "Pharmacological manipulation of diacylglycerol (DAG) and protein kinase D (PKD) activity activates or inhibits plasma membrane-localized VRACs. PMA (a DAG analog) robustly activates VRACs under isotonic conditions as measured by FRET, and this activation requires plasma membrane localization. The PKD inhibitor CRT 0066101 abolishes FRET changes and strongly reduces VRAC currents during hypotonic treatment, demonstrating PKD's essential role in VRAC activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C43-C59, C86 provide strong pharmacological evidence for DAG-PKD pathway involvement. PMA activation is specific to VRAC (C43-C44), reversible (C45), and requires plasma membrane localization (C46-C47). PKD inhibition blocks both FRET changes and currents (C55-C58), and this effect persists across different experimental configurations. The convergence of FRET and electrophysiological data strongly supports PKD's critical role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C96"
+    ],
+    "result": "FRET detects robust VRAC activation by PMA that is absent during whole-cell patch clamp, revealing that the whole-cell configuration disrupts signaling pathways. When cells are pre-incubated with PMA before membrane breakthrough, VRAC currents are observed, but PMA application during whole-cell recording produces no effect. This demonstrates the non-invasive advantage of the FRET sensor over electrophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C48-C51, C96 resolve a methodological discrepancy in the field. The comparison between FRET measurements (showing PMA activation) and whole-cell patch clamp (showing no activation) is direct and compelling (C48-C49). The pre-incubation experiment (C50) confirms that PMA can activate VRACs when signaling is intact. This clearly demonstrates that whole-cell dialysis disrupts the DAG-PKD pathway and validates the FRET approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C75",
+      "C80"
+    ],
+    "result": "VRAC opening is not directly coupled to intracellular ionic strength but rather to the DAG pathway. When cells are treated with the DAG kinase inhibitor DOG, VRACs remain active in isotonic buffer after activation by hypotonicity, even though intracellular ionic strength fully recovers to normal levels. This persistent activation occurs in both overexpressed and endogenous VRACs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64, C75, C80 provide compelling evidence dissociating ionic strength from VRAC activation. The DOG experiments show persistent VRAC activity (C60-C62) despite complete recovery of ionic strength (C63), directly contradicting the ionic strength hypothesis. This occurs in both HEK293 KO cells expressing tagged VRACs and WT cells with endogenous VRACs (C60-C61), strengthening the generalizability. The simultaneous measurement of VRAC activity and ionic strength is a key strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C85"
+    ],
+    "result": "The data do not support a core role for PKC in VRAC activation. The PKC inhibitor G\u00f66983 prevents cFRET reduction upon hypotonicity in non-dialyzed cells, but in whole-cell patch-clamp configuration, hypotonicity-induced currents persist in isotonic buffer with G\u00f66983. Additionally, G\u00f66983 does not diminish currents after pre-incubation in hypotonic buffer, unlike the PKD inhibitor CRT 0066101.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C57-C58, C85 show complex PKC effects that differ between FRET and patch-clamp measurements. The discrepancy between methods (C52-C54) and the contrast with PKD inhibition (C57-C58) suggest PKC is not essential for VRAC activation. However, the gradual cFRET increase with G\u00f66983 (C53) suggests some regulatory role. The interpretation that PKC is not core to activation is reasonable but the data also indicate methodological complications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Depolymerization of the actin cytoskeleton by latrunculin B does not alter VRAC activation by ~25% hypotonicity, while cholesterol depletion by methyl-\u03b2-cyclodextrin potentiates VRAC activation as judged by reduction in cFRET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by experimental data in Figure 3\u2014figure supplement 2. The actin depolymerization result (C41) is consistent with prior literature cited. The cholesterol depletion result (C42) is also consistent with previous findings in other cell types. Both claims are adequately controlled and the FRET measurements are appropriate for assessing VRAC activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C95"
+    ],
+    "result": "The FRET sensor reliably reports VRAC gating based on multiple validation criteria: reversible FRET decrease matches VRAC activation kinetics, FRET intensity correlates with hypotonicity, modulation by cholesterol depletion is mirrored in FRET, FRET rises with hypertonicity after PMA activation, unrelated FRET sensors are unaffected, and low-conducting LRRC8A homomers can be detected. This demonstrates movement of cytosolic domains during VRAC activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70, C73, C95 summarize the validation of the FRET sensor through multiple independent criteria. Each criterion is supported by experimental data presented in the figures. The convergence of evidence from different experimental manipulations (osmolarity, cholesterol, PMA, controls) strongly validates that FRET changes specifically report VRAC conformational changes. The comparison to other ion channels (C73) provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on VRAC structure and function: VRACs are central to cell volume regulation, are hetero-hexamers formed by LRRC8 proteins with LRRC8A as essential subunit, and have C-terminal leucine-rich repeat domains whose flexibility has been hypothesized to relate to channel gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C17 provide established background knowledge supported by appropriate citations to prior literature. These claims accurately represent the current understanding of VRAC structure, composition, and function. The structural information (C15-C16) and gating hypothesis (C17) are appropriately cited to recent cryo-EM studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Prior literature on ionic strength and VRAC activation: Reduced intracellular ionic strength was reported as crucial for VRAC activation and reconstituted LRRC8 complexes can be activated by low ionic strength in lipid bilayers. However, VRACs can also be activated under iso-osmotic conditions, and the extents of low ionic strength required are unlikely to occur physiologically. A role for ionic strength in controlling volume set point would be consistent with current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C74, C76-C78 accurately summarize prior literature with appropriate citations. The claims present both supporting evidence for ionic strength involvement (C18-C19, C74) and contradictory evidence (C20, C76-C77), providing balanced context for the current study's findings. The interpretation about volume set point (C78) is reasonable speculation supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Prior literature on DAG and PKC involvement in VRAC activation: A role for DAG in VRAC activation signaling has been reported previously, but there are multiple contradictory reports on PKC involvement, with some studies showing PKC requirement and others finding no role or even inhibitory effects of PKC inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 accurately summarize the contradictory literature on PKC involvement in VRAC activation with appropriate citations. This provides important context for the current study's findings distinguishing PKD from PKC. The presentation of conflicting prior results is balanced and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Cryo-EM structures suggest flexibility of LRRC8 C-terminal leucine-rich domains, and the observed FRET decrease upon VRAC activation may reflect displacement of these domains or a change in fluorophore orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 appropriately cite structural studies and provide reasonable interpretation of the FRET data. The speculation about mechanism (C72) is appropriately cautious, acknowledging that FRET changes could reflect either domain displacement or fluorophore reorientation. This interpretation is consistent with the data and prior structural knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "Speculation on mechanisms and limiting factors: LRRC8 proteins have putative phosphorylation sites, PKD may act on unknown third parties, plasma membrane-specific properties may be required, additional limiting factors likely exist, regulatory proteins may require specific subunit combinations, and cell type-specific factors may explain inconsistent findings across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C91, C93-C94 are primarily speculative (C88, C90, C91, C93, C94) or cite prior observations (C87, C91, C94) without direct experimental support in this study. While these speculations are reasonable given the data, they represent hypotheses for future work rather than supported conclusions. The speculation is appropriately presented as such in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "PMA-mediated activation of LRRC8A homomers was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is directly supported by experimental data shown in Figure 4A demonstrating that PMA activates A-CFP/A-YFP constructs (LRRC8A homomers). This is a straightforward observation from the FRET measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The FRET sensor can be used for non-invasive structure-activity studies and is amenable to studying VRAC activation during various cell physiological processes in situ due to its genetic encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are reasonable inferences from the demonstrated capabilities of the FRET sensor. The non-invasive nature has been demonstrated (C96), and genetic encoding inherently enables in situ studies. These are logical extensions of the validated methodology rather than speculative claims.",
+    "result_type": "MINOR"
+  }
+]

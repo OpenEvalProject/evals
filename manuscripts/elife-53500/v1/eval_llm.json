@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors developed a synteny-based pipeline to identify homologous genes that have diverged beyond sequence similarity detection. The approach assumes genes in conserved syntenic positions share ancestry and was validated by showing that in 36/48 species comparisons, at least 90% of matches were found within predicted micro-syntenic regions (C74). The authors acknowledge this provides an upper-bound estimate since some syntenic genes may not be homologous (C9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological approach is well-justified with prior precedent (C7, C8) and validated by the high proportion of matches found in predicted regions (C74, C75). The authors appropriately acknowledge limitations (C9), making the approach sound for its intended purpose.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The pipeline identified 180, 81, and 156 unique genes with undetectable homologues in yeast, fly, and human respectively (C10-C12). Within phyla, the proportion of undetectable homologues correlated strongly with divergence time (C13), but different rates were observed between phyla (C14), with yeast and fly showing faster divergence than human (C15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative results are clearly stated and supported by Figure 4 showing strong correlations within phyla. The observation of different rates between phyla is directly supported by the slopes of fitted linear models. Statistical significance is reported (p-values in Figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Evolutionary rates (dN and dS) were compared for genes inside versus outside conserved micro-synteny regions. The dS distributions were statistically indistinguishable for yeast and fly (C16), while dN showed statistically significant but minimal differences (effect size ~0.05) across all datasets (C17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical comparisons are appropriate and effect sizes are properly reported (Rosenthal's R ~ 0.05). The minimal effect size justifies the authors' extrapolation from syntenic to non-syntenic regions. The analysis addresses a key assumption of the methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C53",
+      "C56",
+      "C24"
+    ],
+    "result": "The estimated contribution of divergence to genes without detectable similarity averaged 20.6% across pairwise comparisons (C18), with observed proportions of genes without similarity far exceeding those estimated from divergence (C19). The authors conclude that complete divergence accounts for at most a third of orphan/TRG genes (C53) and that most genes without similarity cannot be attributed to divergence beyond recognition (C24, C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative estimates are derived from validated methodology with appropriate statistical treatment. The conclusion that divergence is not the predominant mechanism is well-supported by the data showing observed proportions consistently exceed divergence-based estimates. The conservative nature of the approach (C57) strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Using a phylogeny-based approach, the contribution of divergence to TRGs averaged 30% overall (C20), with specific estimates of at most 45% for Saccharomyces (C21), 20% for melanogaster subgroup (C22), and 24% for primates (C23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogeny-based approach provides an alternative validation of the pairwise results with similar overall conclusions. The specific estimates for different phylogenetic levels are clearly stated and supported by Figure 6\u2014figure supplement 3. The consistency with pairwise results strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Pairs of undetectable homologues showed weak but significant correlations in G+C content (rho=0.25, C27) and CDS length (rho=0.35, C28). Focal proteins had significantly fewer Pfam matches than their undetectable homologues (C29), with only 1.4% (12/845) sharing common Pfam domains (C30). However, the 25 pairs with common domains or OrthoDB groups showed strong correlations across 9/10 features tested (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analyses are appropriate with proper reporting of correlation coefficients and p-values. The small number of cases retaining domain similarity (1.4%) supports the conclusion of extensive divergence, while the strong correlations in the rare cases with shared domains (C32) are properly qualified by sample size limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The yeast gene MNE1 exemplifies divergence beyond sequence similarity while retaining functional domains. MNE1 in S. cerevisiae has no detectable similarity to its K. lactis homologue KLLA0_F23485g (C35), yet both share conserved micro-synteny (C34), a significant Pfam match (C36), and membership in the same OrthoDB group (C37).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This case study provides concrete evidence for the possibility of retaining ancestral functional signals despite loss of sequence similarity. The multiple lines of evidence (synteny, Pfam domain, OrthoDB membership) converge to support homology, making this a compelling example of the phenomenon under study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Focal genes resulting from lineage-specific divergence tend to be much shorter than their undetectable homologues (C38), which could partially explain shorter lengths associated with young genes (C39). The orphan gene YLR255C (C40-C41) exemplifies this: it has undetectable homologues in four yeast species (C42-C43), with two orphan genes in conserved synteny providing strong evidence for divergence (C44), and phylogenetic analysis suggesting the ancestor was longer (C45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical comparison of CDS lengths is significant (p<0.05 for all datasets, Figure 8B). The YLR255C case study provides concrete evidence for the gene shortening hypothesis. The inference about ancestral length (C45) is reasonable based on phylogenetic relationships and CDS lengths of homologues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Thirteen human genes underwent complete divergence along the human lineage with no detectable homologues outside mammals (C46), three of which are associated with known phenotypes (C47): MT-ATP8 with infantile cardiomyopathy (C48) and Kearns-Sayre syndrome (C49), and DEC1 (C50) and DIRC1 (C51) with cancer. This observation is consistent with previous findings linking novel genes to cancer (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the identification of 13 genes is supported by the methodology, the phenotypic associations rely on database annotations and cited literature. The authors appropriately note that the small sample size (3/3 with disease associations) prevents drawing strong conclusions, though they suggest consistency with prior work (C52). The biological significance requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Complete divergence occurs at a stable rate within a phylum but at different rates between phyla (C54) and is frequently associated with gene shortening akin to pseudogenization (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stable within-phylum rates are demonstrated by strong correlations in Figure 4 (C13), while different between-phylum rates are shown by different slopes (C14). The association with gene shortening is supported by the statistical analysis in Figure 8B (C38). These are major conclusions well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C72",
+      "C73"
+    ],
+    "result": "The findings suggest a substantial role for other evolutionary mechanisms such as de novo emergence and horizontal gene transfer (C25), though horizontal gene transfer is not frequent in metazoa (C26). The results are consistent with multiple evolutionary processes being responsible for orphan genes (C72), with divergence not being the predominant one (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conclusions logically follow from the finding that divergence explains only ~20-30% of orphan genes. The inference about other mechanisms is reasonable by elimination, though direct evidence for de novo emergence is not provided in this study. The caveat about horizontal gene transfer in metazoa (C26) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors acknowledge methodological limitations: they simultaneously underestimated orphan/TRG numbers while overestimating divergence contributions (C57), the yeast annotation excludes dubious ORFs (C58), synteny is lost over time (C59-C60), and evolutionary events can place non-homologous genes in syntenic positions (C61-C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors provide appropriate critical evaluation of their methodology. The acknowledgment that their estimates are upper bounds (C9, C57) and the discussion of limitations (C58-C62) demonstrate scientific rigor. These caveats strengthen rather than weaken the conclusions by showing awareness of potential biases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The proportion of undetectable homologies depended quasi-linearly on E-value cut-off (C76), while false homologies depended exponentially (C77). E-value impact was more pronounced for distantly related species (C78) but false homologies showed no time dependence (C79). For closely related species, false homologies have more severe effects than false negatives (C80). Optimal E-values were set at 0.01 for yeast/fly and 0.001 for human (C81-C82), consistent with prior estimates (C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The E-value optimization is thoroughly analyzed with appropriate consideration of false positives and false negatives. The use of reversed proteomes to estimate false homologies is a sound approach. The chosen thresholds are justified by both the data and consistency with prior work (C83). This methodological rigor is essential for the validity of downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The authors' estimates are of the same order of magnitude as previous simulation-based estimates (C63), but note that simulations can only show what could explain orphan genes, not what actually does (C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to prior work (C63) provides external validation of the estimates. The critical distinction between 'could' and 'does' (C64) highlights a key advantage of the synteny-based approach over simulations. This strengthens the contribution of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Previous studies reported that genes without detectable homologues tend to be shorter (C65), interpreted as evidence for de novo emergence from short ORFs (C66) or as bias from higher evolutionary rates in short genes (C67). The authors propose an alternative: incomplete pseudogenization where genes lose functionality and undergo rapid divergence (C68), eventually leading to entirely novel sequences (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The hypothesis of incomplete pseudogenization (C68-C69) is speculative and presented as such. While the observation of gene shortening (C38) is well-supported, the mechanistic explanation remains to be tested. The authors appropriately frame this as a possible explanation rather than a demonstrated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims about LUCA's small genome (C1), yeast WGD paralogues with weak similarity (C2), historical views on divergence (C3), recent appreciation of de novo emergence (C4), and orphan gene locations outside syntenic regions (C5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are background claims supported by appropriate citations to prior literature. They provide context for the study but are not results of the current work. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Disentangling complete divergence from other processes requires laborious manual inspection (C70). A potential explanation for faster divergence in yeast/fly versus human is the effect of generation time and/or population size on evolutionary rates (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C70 is supported by citations and acknowledges the difficulty of the problem the authors address. C71 is presented as speculation with appropriate citations, offering a plausible but untested explanation for the observed rate differences (C15). Both claims are appropriately qualified.",
+    "result_type": "MINOR"
+  }
+]

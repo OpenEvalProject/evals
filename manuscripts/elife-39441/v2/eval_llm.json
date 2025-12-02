@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript provides background on dynamin structure and assembly. Dynamin is a large GTPase that catalyzes membrane fission in eukaryotic cells. The Dyn1 isoform has been studied most extensively. Dynamin monomers oligomerize via their stalks to form dimers or tetramers in solution, which can assemble into helical filaments with specific geometric properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C7, C9-C12) are well-established facts from prior literature, appropriately cited, and serve as background context for the study. They represent consensus knowledge in the field and are not contested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Two competing models exist for dynamin-mediated fission: the two-stage model and the constrictase model. Both models have significant unresolved issues and conflicting evidence. The two-stage model proposes that nucleotide-loaded dynamin assembles into constricted helices that spontaneously undergo hemifission, followed by GTP hydrolysis-induced scaffold detachment. The constrictase model proposes that GTP hydrolysis drives active constriction through rung sliding. Both models face mechanistic and structural challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C26 accurately summarize the state of the field and the problems with existing models, supported by appropriate citations. The authors correctly identify gaps and inconsistencies in prior work that motivate their study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior theoretical and computational approaches to understanding dynamin fission have limitations. Theoretical calculations assume high symmetries and ignore fluctuations. Previous coarse-grained simulations represented dynamin as counter-rotating rings with mirror symmetry, which differs from the actual helical geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide accurate critical assessment of prior computational and theoretical work, appropriately cited. These limitations justify the need for the present study with more realistic helical geometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed a coarse-grained simulation model of dynamin-membrane complexes. The membrane model captures key biophysical properties including pivotal plane location, lipid tilt characteristics, and pore-opening behavior validated against prior work. The dynamin scaffold is represented as a helical filament with tunable geometric parameters. Simulations were performed in triplicate using ESPResSo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 describe the computational methodology with appropriate validation and citations. The model is appropriately coarse-grained for the mesoscopic phenomena under investigation, with documented properties and reproducibility (triplicate runs).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Pure constriction of the dynamin scaffold without rotation does not induce hemifission until the inner lumen is completely eliminated. At confinement corresponding to the experimentally observed superconstricted state, the membrane tube remains stable. This finding is mechanically distinct from prior theoretical work and consistent with experimental observations of stable superconstricted tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 present a clear simulation result (pure constriction is insufficient for hemifission) supported by data in Figure 2f and Video 1. The authors appropriately reconcile apparent contradictions with prior work by Kozlovsky and Kozlov through mechanical reasoning and cite supporting experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54"
+    ],
+    "result": "Helical elongation (increasing pitch) impedes fission rather than promoting it. When the scaffold elongates while constricting, the widening groove allows the membrane to bulge out, requiring further constriction to achieve hemifission. This contradicts the 'poppase model' which proposed that pitch increase drives fission. The mechanism cannot rely on viscous stresses due to slow timescales relative to membrane viscoelastic relaxation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C51, C53-C54 present a major finding that challenges the poppase model. The result is supported by simulation data (Figure 2f, dark blue curve) and sound physical reasoning about timescales. The mechanistic explanation (membrane bulging at the groove) is clear and testable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Rotation of the dynamin scaffold around its longitudinal axis, representing asymmetric PH domain tilting, is necessary for hemifission to occur while an aqueous lumen remains. This rotation creates a Darboux torque on the membrane. The functionally important consequence is active stresses from the torque, not merely reduced binding energy. Structural evidence from recent cryo-EM studies supports force transmission from the GTPase domain through the stalk to the PH domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C55-C68, C70-C71, C73 present a central mechanistic finding supported by simulation data (Figure 2f cyan curve, Video 2, Figure 3). The Darboux torque mechanism is grounded in differential geometry and supported by structural studies (appropriately cited). The control experiment (Figure 3) demonstrates that loss of adhesion alone is insufficient, supporting the active stress hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "When constriction, rotation, and elongation occur simultaneously, hemifission is still achieved but requires greater constriction than with rotation alone. This combined scenario shows greater variability across simulation runs. The results support the conclusion that rotation promotes hemifission while elongation opposes it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by simulation data (Figure 2f dark cyan curve, Figure 2\u2014figure supplement 1b). The finding is consistent with the individual effects of rotation and elongation, strengthening the overall mechanistic picture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "Pre-hemifission scaffold disassembly aborts fission by allowing the membrane tube to re-expand. Even binding-capable fragments cannot maintain membrane constriction individually. The scaffold binds weakly, and rotation-driven hemifission does not result from massive adhesion forces. The simulation setup does not impose external membrane tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C77, C79-C81, C83 present findings from scaffold disassembly simulations (Videos 3-4, Figure 3) that demonstrate the importance of scaffold integrity before hemifission. The weak binding is an important control showing the mechanism is not trivial. The tension-free nature of the simulations is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Hemifission seeds appear in the middle of the neck for short filaments (\u22641.5 turns) or near the edges for longer filaments (>2 turns). This suggests two regions of highly localized stress appear slightly inward of the filament edges, which can overlap and amplify for short filaments. Short filaments induce hemifission more efficiently than long ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 describe the spatial location of hemifission initiation, supported by Figure 2h. The inference about stress localization is reasonable given the observed pattern. The finding relates to experimental observations about fission location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Hemifission is initiated via a non-axisymmetric pathway involving a small transient pore that punctures the constricted neck. The pore widens circumferentially while its edges fuse with the opposing membrane, creating defect lines where three bilayers meet. This pathway never involves a large pore if the filament is short enough. This mechanism is reminiscent of non-axisymmetric pathways observed in fusion simulations and experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C90-C94, C136-C138 present a novel mechanistic finding supported by detailed visualization (Figure 2h, Figure 4, Video 2). The non-axisymmetric pathway is unexpected but well-documented in the simulations. The comparison to fusion studies provides supporting context, though the authors acknowledge this contradicts the belief that fission is non-leaky.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The constrictase model faces a filament length dilemma: long filaments needed for initial GTP-driven constriction produce large leaky pores, while short filaments optimal for tight fission cannot initiate constriction. This could be resolved if constriction and disassembly occur concurrently, keeping the helix at ~1 turn and avoiding large pores. This hypothesis is compatible with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 present an important constraint on the constrictase model with a proposed resolution. The geometric reasoning is sound, supported by simulation data (Figure 2h, Video 5), and consistent with experimental evidence (appropriately cited). This represents a significant mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114",
+      "C115",
+      "C119"
+    ],
+    "result": "The hemifission-to-fission transition occurs through scaffold disassembly allowing the cylindrical micelle's endpoint defects to merge and annihilate, rather than mid-length rupture. The scaffold prevents defect merging while intact. Upon disassembly, daughter membranes are pulled together by forces from the cylindrical micelle, and bilayer contact catalyzes fission. This provides a tension-free pathway to complete fission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105, C108-C110, C113-C115, C119 present a mechanistic proposal for completing fission supported by simulation observations (Video 6) and energetic reasoning. The authors appropriately acknowledge this is derived from a coarse-grained model but provide plausible physical arguments. The comparison with experimental fusion data provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C148"
+    ],
+    "result": "The transient pores observed in simulations have diameters \u22642 nm, conductivity ~1 nS, and lifetimes of a few microseconds. Detection would be challenging but feasible with appropriate experimental techniques. Pore size depends on filament length and constriction radius, suggesting that coordination of constriction, rotation, and disassembly produces tighter fission. Mutants disrupting this coordination should show larger, more detectable pores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C146, C148 provide quantitative estimates from simulations with appropriate caveats about coarse-graining. The experimental detectability discussion is reasonable, citing relevant techniques. The prediction about mutants (C148) is testable and follows logically from the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The study's main conclusions are: (1) the poppase model faces equilibrium obstacles because elongation disfavors fission; (2) hemifission is promoted by PH domain tilting creating Darboux torque; (3) the helical vs. ring geometry difference is not central to torque function; (4) disassembly is essential to complete fission; (5) constriction alone is insufficient for hemifission; (6) PH domain tilting catalyzes hemifission, likely driven by GTP hydrolysis energy. These conclusions are supported by experimental findings and structural studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C135 summarize the major conclusions, which are well-supported by the simulation results and appropriately contextualized with experimental and structural evidence. The hypothesis about GTP hydrolysis driving PH domain tilting (C131) is clearly identified as speculation but is consistent with available evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C149",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The findings have broader implications beyond classical dynamin. The Darboux torque mechanism may be general to helical membrane remodeling proteins including other dynamin superfamily members and ESCRT-III. Geometric rearrangements of curved elastic filaments with material frames pinned to membranes almost invariably produce Darboux torques. This mechanism might be evolutionarily ancient, potentially dating to bacterial FtsZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127, C149, C151-C159 present speculations about broader applicability and evolutionary origins. While the geometric reasoning is sound and the mechanism is demonstrated for dynamin, extension to other systems (especially ESCRT-III with reverse geometry) and evolutionary claims require additional evidence. These are reasonable hypotheses for future work but are not directly supported by the present study.",
+    "result_type": "MINOR"
+  }
+]

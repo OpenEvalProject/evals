@@ -1,0 +1,1245 @@
+{
+  "submission": {
+    "id": "392769c6-f4d9-46b7-96ad-ff71aa0fdab1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:19:12.646856Z",
+    "updated_at": "2025-12-02T08:19:12.646856Z"
+  },
+  "content": [
+    {
+      "id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "submission_id": "392769c6-f4d9-46b7-96ad-ff71aa0fdab1",
+      "content_type": "manuscript",
+      "content_text": "# Is it possible to reconstruct an accurate cell lineage using CRISPR recorders?\n\n## Authors\n\n- Irepan Salvador-Mart\u00ednez<sup>1</sup> ([ORCID: 0000-0002-3188-9784](https://orcid.org/0000-0002-3188-9784))\n- Marco Grillo<sup>2</sup> ([ORCID: 0000-0003-2155-0645](https://orcid.org/0000-0003-2155-0645))\n- Michalis Averof<sup>2</sup> ([ORCID: 0000-0002-6803-7251](https://orcid.org/0000-0002-6803-7251)) \u2020\n- Maximilian J Telford<sup>1</sup> ([ORCID: 0000-0002-3749-5620](https://orcid.org/0000-0002-3749-5620)) \u2020\n\n### Affiliations\n\n1. Centre for Life\u2019s Origins and Evolution, Department of Genetics Evolution and Environment University College London London United Kingdom\n2. Institut de G\u00e9nomique Fonctionnelle de Lyon (IGFL) \u00c9cole Normale Sup\u00e9rieure de Lyon Lyon France\n3. Centre National de la Recherche Scientifique (CNRS) Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell lineages provide the framework for understanding how cell fates are decided during development. Describing cell lineages in most organisms is challenging; even a fruit fly larva has ~50,000 cells and a small mammal has >1 billion cells. Recently, the idea of applying CRISPR to induce mutations during development, to be used as heritable markers for lineage reconstruction, has been proposed by several groups. While an attractive idea, its practical value depends on the accuracy of the cell lineages that can be generated. Here, we use computer simulations to estimate the performance of these approaches under different conditions. We incorporate empirical data on CRISPR-induced mutation frequencies in Drosophila. We show significant impacts from multiple biological and technical parameters - variable cell division rates, skewed mutational outcomes, target dropouts and different sequencing strategies. Our approach reveals the limitations of published CRISPR recorders, and indicates how future implementations can be optimised.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).\n\n## Introduction\n\nStarting from a single cell - the fertilised egg - multicellular organisms undergo repeated rounds of cell division to produce the adult form. The divisions that generate these adult cells constitute a genealogical tree with the fertilised egg at its root and each adult cell as a terminal branch. Knowing the cell lineage that produces a fully developed organism from a single cell provides the framework for understanding when, where and how cell fate decisions are made.\n\nObtaining high resolution (single-cell level) lineages is a challenging task that has been solved only in animals with relatively few cells, such as the nematode Caenorhabditis elegans: its complete lineage (~1000 cells) was deduced by painstaking observation of each cell division under the microscope. This approach is impossible in larger animals, in which most cells are inaccessible to microscopy and their number becomes quickly unmanageable. The 16 rounds of cell division required to produce a hatched Drosophila larva, for example, result in about 50,000 cells (Lehner et al., 2001) and further rounds of division produce an adult with approximately $10^{6}$ cells. The bodies of mice and humans consist of 1010 to 1014 cells respectively (Sender et al., 2016).\n\nRecently it was proposed that naturally occurring somatic mutations, which accumulate in cells during the lifetime of an organism, could be used as lineage markers to reconstruct its entire cell lineage (Frumkin et al., 2005; Salipante and Horwitz, 2006). This is directly analogous to the use of heritable mutations, accumulating through time, to reconstruct a species phylogeny. While this approach is theoretically possible (Frumkin et al., 2005), it is nevertheless limited by the enormous challenge of detecting these rare mutations within the genomes of individual cells.\n\nAs a solution to the problem of reading the mutations, several recent papers have explored the idea of using CRISPR-induced somatic mutations, targeted to artificial sequences inserted as transgenes into the genome (termed \u2018CRISPR recorders\u2019) (McKenna et al., 2016; Frieda et al., 2017; Junker et al., 2016; Kalhor et al., 2018; Perli et al., 2016; Alemany et al., 2018; Schmidt et al., 2017; Raj et al., 2018; Attardi et al., 2018; Spanjaard et al., 2018; Junker et al., 2016). The recorders consist of arrays of CRISPR target sites, targeted by their cognate sgRNAs and Cas9 during development. Starting in early embryogenesis, CRISPR-induced mutations occur stochastically at these target sites, in each cell of the body, and these mutations are stably inherited by the progeny of these cells. In most cases, the mutation destroys the match between target and sgRNA meaning a mutated target is immune to further change. At the end of development only the recorder sequence has to be read rather than the whole genome; the accumulated mutations can then be used as phylogenetic characters allowing the reconstruction of a tree of relationships between all cells (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig1-v1.jpg)\n\n**Figure 1.:** Left: Development begins with a zygote carrying in its genome a lineage recorder composed of a series of CRISPR targets (blue boxes). During subsequent cell divisions, any target of the recorder can be cleaved by Cas9 in any cell, leaving a specific mutational signature on the target which will be inherited by all the descendants of the cell. Numbers represent the the cleaved target in the recorder and its mutational signature is represented by a colour. Middle: At the end of development, the recorder of every cell is sequenced, recovering the pattern of accumulated mutations in each of the targets (coloured boxes). Right: The pattern of mutations is used to reconstruct the cell lineage, in a similar way to how a phylogenetic tree is inferred from the sequences of homologous genes.\n\nThe basic principle of recorder-based lineage tree reconstruction is easy to grasp. What is far less clear is whether the lineages produced by these methods are accurate enough for us to draw meaningful conclusions from them. Of course the required accuracy will depend on the intended use of the lineage, but to date few studies have considered how accurate the lineages produced might be (Frieda et al., 2017; Schmidt et al., 2017; Spanjaard et al., 2018).\n\nThe ideal way of assessing the accuracy of these techniques would be to compare the real cell lineage of an organism against the lineage inferred by the recorder (Schmidt et al., 2017). This is difficult to implement in practice, however, because in most cases the real cell lineages are unknown.\n\nWe have taken the alternative approach of computationally simulating the processes of cell division and accumulation of mutations in a recorder and then comparing the lineage inferred from the recorder to the known in silico reference tree. We have used this approach to estimate the accuracy of lineage reconstruction in different situations (type and complexity of recorder, mutation rates, cell lineage depth, etc.), taking into account empirical measures of mutation rates and frequencies of different mutational outcomes derived from in vivo experimental data from Drosophila melanogaster. While some previous studies used simulations to evaluate the reconstruction of small cell lineages, no study has attempted this on cell lineages of tens of thousands of cells (Frieda et al., 2017; Schmidt et al., 2017).\n\nDifferent designs of CRISPR recorders have been implemented, including recorders that register point mutations on arrays of barcoded targets (GESTALT; McKenna et al., 2016; Raj et al., 2018), ones that rely on \u2018collapsing\u2019 target arrays through deletions (MEMOIR; Frieda et al., 2017), recorders that target identical target sites located on separate transgenes (ScarTrace and LINNAEUS; Junker et al., 2016; Schmidt et al., 2017; Attardi et al., 2018; Alemany et al., 2018; Spanjaard et al., 2018) and ones that target the CRISPR sgRNA itself (Kalhor et al., 2018; Perli et al., 2016). In this work we have simulated the behaviour of the first two types of recorders, but the insights that we have gained should apply to all types of recorders. Ultimately, these simulations will help us to establish a set of criteria for the optimal design of CRISPR-based lineage recorders, as well as to understand the limitations of these techniques when addressing real biological questions.\n\nTo assess the power of CRISPR-based lineage recorders in cell lineage reconstruction, we focus on the conditions required to reconstruct a cell lineage of $\u223c$65,000 cells. This roughly corresponds to the size of the cell lineage of a Drosophila first instar larva, of a pharyngula stage zebrafish embryo, or a stage E8.0 mouse embryo (Lehner et al., 2001; Kane, 1999; Kojima et al., 2014, respectively).\n\n## Results\n\n### General description of the simulations\n\nIn our simulations, a cell is implemented as a vector of $m$ targets. We begin each simulation with one cell, representing the fertilised egg, that has all its targets in an unmutated state. The initial cell then undergoes a series of cell divisions ($d$), growing into a population of $N$ cells, where $N=2^{d}$. Following each cell division, each unmutated target can mutate (with a given probability $\\mu_{d}$) to one of several possible mutated states. Once a target is mutated, it can no longer change, either to revert to the unmutated state or to transit to a new state (Figure 2A). We expect the frequency of reversions to be negligible as even single nucleotide changes result in a large decrease in mutation rate.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig2-v1.jpg)\n\n**Figure 2.:** In our simulations, an initial cell with multiple CRISPR targets ($m$) yields $N$ cells after a given number of cell divisions ($d$). The recorder accumulates independent CRISPR-induced mutations with a probability, in each target, of $\\mu_{d}$ per cell division; the\u00a0mutations are inherited in subsequent cell divisions. The pattern of mutations accumulated in each cell is used to infer the lineage tree. (B) The accuracy of lineage reconstruction was determined by comparing the inferred tree with the reference tree using using a measure related to the Robinson Foulds method. The unmutated state of the recorder was used to root the tree. (C) Accuracy of lineage reconstruction with a recorder of 100 CRISPR targets after 16 cell divisions (yielding 65,536 cells) over a range of mutation rates. Each line represents the mean accuracy (10 simulations) for simulations resulting in different numbers of equiprobable mutated states. The optimal mutation rate for each number of mutated states is indicated with an open circle. Vertical lines represent 95% confidence intervals. (D) Accuracy of lineage reconstruction for different mutation rates and numbers of CRISPR targets. Mutations were set to result in 16 equiprobable mutated states. Dashed lines represent different accuracy thresholds (levelplot) after a LOESS regression. For each parameter combination, we plot the mean accuracy of 10 simulations after 16 cell divisions.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) CPU time (shown in seconds at the left and in hours at the right of the Y-axis) required for tree reconstruction with a given number of cells (X-axis). Boxplots show the distribution of times taken to reconstruct 10 trees. Brown circles and cyan triangles indicate the average CPU time for Parsimony and NJ, respectively. Each reconstruction was performed on a single CPU thread. (B) Accuracy of the reconstructed trees from A. The brown and cyan lines represent the mean accuracy of 10 trees for a given number of cells (X-axis) with their distributions shown as a boxplot.\n\nA unique label was given to each cell during the simulation. The sequence of simulated cell divisions were recorded in the form of a tree, whose topology describes the lineage relationships between all cells (the \u2018reference tree\u2019). At the end of the simulation, we randomly sampled a number of cells and used the pattern of mutations accumulated in those cells to infer their cell lineage (the \u2018inferred tree\u2019) using the Neighbor-Joining method (Saitou and Nei, 1987) (for a comparison with parsimony see Figure 2\u2014figure supplement 1).\n\nThe accuracy of lineage reconstruction of each simulation was determined by comparing the inferred tree with the reference tree using a measure derived from the Robinson-Foulds algorithm (Robinson and Foulds, 1981), which calculates the percentage of splits in the reference tree that are precisely recovered in the inferred tree (Figure 2B). If the inferred tree is identical to the reference tree, the accuracy is 100%. This provides a strict measure of the global accuracy of the inferred lineage tree. The accuracy of each lineage reconstruction was estimated as the mean accuracy of 10 subsamples of 1000 cells.\n\n### Impact of mutation rate on the accuracy of cell lineage reconstruction\n\nWe simulated a lineage with a depth of 16 cell divisions ($d=16$), yielding 65,536 cells ($2^{16}$). To determine the effect of varying the mutation rate on the accuracy of lineage reconstruction, we performed simulations with a recorder carrying 100 targets ($m=100$) and a rate of mutation $\\mu_{d}$ varying from 0.01 to 0.3 mutations per cell division per target. In parallel, we tested how the diversity of mutational outcomes (number of distinct mutated states) at each target could influence the accuracy of lineage reconstruction, by varying the number of possible mutational outcomes at each target between 2 and 32. In each case the different mutational outcomes were considered to be equiprobable.\n\nAs expected, these simulations show that the mutation rate and the diversity of mutations have a strong effect on the accuracy of cell lineage reconstruction (Figure 2C). A low diversity of possible mutational outcomes gives poorer results than a higher diversity. Mutation rates show a broad optimum between between 0.05 and 0.2 mutations per cell division per target; under these rates, 56\u201397% of target sites are mutated after 16 cell divisions. Lower mutation rates lead to more targets having no mutations, thus contributing no information for reconstructing the cell lineage. Higher mutation rates lead to most targets being mutated during the early cell divisions, leaving few targets available for recording later events.\n\nIn practice, CRISPR activity generates a range of mutations (mostly small deletions or insertions) at varying frequencies. We have measured the actual rates and diversity of CRISPR-induced mutations in vivo (see below) and used these empirical data in our subsequent simulations.\n\n### Tuning the mutation rate of a CRISPR recorder in vivo\n\nOur simulations show that specific mutation rates must be achieved experimentally in order to optimise cell lineage reconstruction. There are several ways to vary CRISPR mutation rates in vivo, including the use of different sgRNA:target pairs, varying the expression levels of sgRNA and Cas9, and using variants of sgRNA or Cas9 that influence their stability or activity. We chose to adjust the mutation rate by altering the target sequence in order to introduce mismatches in the sgRNA:target pairing (similar to the strategy used on cultured cells by McKenna et al., 2016); this is known to reduce the targeting efficiency (Hsu et al., 2013; Fu et al., 2014). We have measured the mutation rate of a series of different variants of a CRISPR target to find those with the optimum rates for cell lineage reconstruction of the Drosophila embryo.\n\nWe took advantage of a previous study by Hsu et al. (2013) who analysed the effects of sgRNA:target pairing mismatches on the efficiency of targeting a section of the human EMX1 gene. Based on this study, we selected 32 variants of the Emx1.6 target (Hsu et al., 2013), including the wild-type sequence and 31 variants with single- or double-nucleotide changes at different positions within the target sequence (Supplementary file 1\u2014Table\u00a01). To compare the mutation rates of the 32 targets, we designed and synthesised a single construct that carries all 32 variants in tandem. In the same construct, we incorporated a transgene constitutively expressing the Emx1.6 sgRNA under the Drosophila U6.2 promoter (Port et al., 2014) (Figure 3A). We generated transgenic Drosophila lines carrying a single copy of this construct at the 37B7 locus, using $\u03d5$C31-mediated integration (Bateman et al., 2006).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig3-v1.jpg)\n\n**Figure 3.:** (A) CRISPR recorder designed to test the mutation rates of 32 variants of the Emx1.6 target in Drosophila. The recorder consists of two transgenic constructs brought together by genetic crosses. The first construct carries an array of the 32 target variants and a transgene expressing the Emx1.6 sgRNA under the constitutive Drosophila U6.2 promoter (Port et al., 2014). The second construct expresses the Streptococcus pyogenes Cas9 gene under the constitutive Drosophila Act5C promoter (Port et al., 2014). (B) Double heterozygotes carrying both constructs were collected at embryonic, late larval (L3) and adult stages and analysed for mutations in the target array by PCR amplification and sequencing of the recorder. (C) Proportion of targets mutated at different stages, for the eight most efficient target variants. \u2018Untargeted\u2019 represents background mutations or sequencing errors observed in the absence of the Cas9 transgene. (D) Estimates of cell lineage accuracy from computer simulations (as in Figure 2C) using the mutational outcomes observed in vivo on the FAST target.\n\nMales carrying the Emx1.6 sgRNA and the target array were crossed with virgin females carrying a constitutively expressed Cas9 transgene (Actin::Cas9, Port et al., 2014) to generate progeny carrying a single copy of the CRISPR target array, the sgRNA and the Cas9 transgene. We collected these progeny at different developmental stages (end of embryogenesis, late L3 larvae, newly eclosed adults) to assess the number of mutations that had accumulated in each of the 32 target variants at these three stages (Figure 3B).\n\nWe pooled individuals collected at each of the three chosen developmental stages, performed PCR on genomic DNA and used high throughput sequencing to characterise the mutated targets. In individual animals, mutational frequencies are influenced both by the probability of each mutational outcome of CRISPR and by the clonal expansion of cells that carry each mutation. Since we have analysed populations of individuals and expect no systematic clonal biases associated with specific mutations in CRISPR recorders, we expect that our estimates of mutational frequencies largely reflect the frequencies of CRISPR-induced mutations on our target.\n\nOur results confirm that, by employing different target variants, we can achieve widely different rates of mutation. As expected, the target that has perfect complementarity with the Emx1.6 sgRNA (target 16, named the \u2018FAST\u2019 target) showed the highest mutation rate; having corrected for sequencing errors ($\u223c$1% of control targets have differences due to PCR or sequencing errors, Supplementary file 1\u2014Table\u00a01) we observed that 87% of the targets carried a mutation at the end of embryogenesis (Figure 3C). This corresponds to a mutation rate of $\\mu_{d}$\u00a0= 0.1195 per cell division, assuming a constant mutation rate per cell division (see later for consideration of uneven rates per cell division). The other targets showed lower mutation rates: in the six variants with the highest rates, $\\mu_{d}$ ranged from 4 \u00d7 10\u22124 (target 15) to 6 \u00d7 10\u22122 (target 6) mutations per cell division (Supplementary file 1\u2014Table\u00a02).\n\nThe mutation rate of the FAST target ($\\mu_{d}$\u00a0=\u00a00.1195) falls within the optimal range we had estimated for reconstructing the lineage of 65,536 cell embryos, assuming a uniform rate of cell division (see Figure 2C). Targets with slower mutation rates would be suited for lineaging past the embryonic stages. Conversely, faster mutation rates would be optimal for lineaging embryos at earlier stages, following fewer cell divisions. Instances of rapid or unequal rates of cell division would also require faster mutation rates (see below).\n\n### Simulating cell lineage reconstruction based on experimentally observed mutational outcomes\n\nThus far, our simulations assumed that the targets can mutate to a certain number of character states with equal probability. This assumption does not reflect the complexity of CRISPR mutagenesis observed in vivo. Our sequencing data for the 32 variants of the Emx1.6 target in Drosophila provide empirical measurements not only of the rate of mutation but also of the diversity of different mutational outcomes and their relative frequencies in a CRISPR recorder in vivo. Using these data we refined our simulations using the real set of mutational outcomes and their observed relative frequencies.\n\nWe focused on the complexity of mutational outcomes affecting the FAST target. As reported in previous studies (van Overbeek et al., 2016; Allen et al., 2018; Chen et al., 2018), we found that most of the mutations were located close to the Cas9 editing site. This suggests that most of the mutational information can be extracted by reading the nucleotides surrounding the editing site. Focusing on the 9 bp adjacent to the PAM sequence (Figure 4B) we observed >200 mutated states. The frequencies of mutations follow an exponential curve, with a few variants occurring at high frequency (Figure 4C), in contrast to a naive assumption of equiprobable mutational outcomes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig4-v1.jpg)\n\n**Figure 4.:** (A) Examples of two mutational outcomes after CRISPR cleavage. The 9-nucleotide sequence located immediately upstream of the PAM (coloured box) captures most of the variation resulting from CRISPR-induced mutations (Figure 4\u2014figure supplement 1). The target sequence is shown in blue, PAM sequence in pink, flanking sequence in grey. (B) Relative frequencies of the five most common mutational outcomes in the FAST target. (C) Cumulative probability of the mutational outcomes. 59 mutations account for 95% of the total number of mutations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Violin plots comparing the accuracy of lineage reconstruction when the mutational outcomes are reduced to the 40, 50 and 60 most common mutated character states observed when reading nine nucleotides (9mers), and 60 character states when reading 18 nucleotides (18mers). In each case, the the lowest frequency outcomes have been merged into a single character state.\n\nUsing the observed distribution of these 9mers and the estimated overall $\\mu_{d}$, we carried out 1000 simulations of the mutational process in a hypothetical construct carrying 32 identical FAST targets. We used 32 targets because we have shown that synthesising and generating transgenic flies with such a construct is feasible. For convenience, we considered 61 out of the ~200 observed states: 59 states representing the 59 most common mutations (which account for 95% of the total observed mutations; see Figure 4C), a 60th state with a frequency of 5% that accounts for all other outcomes combined, and the 61st state representing the unmutated target.\n\nUsing the experimentally measured distribution of mutational outcomes, the accuracy of cell lineage reconstruction is 72% (see Figure 5B). Rarely occurring mutations are less likely to appear independently in the same target in more than one branch of the lineage tree (an instance of homoplasy), suggesting that rare mutations are better lineage markers than more frequent mutations. To take advantage of this we introduced a weighting scheme whereby mutations are weighted in inverse proportion to their frequency of occurrence (see Materials\u00a0and\u00a0methods). Following this approach, the accuracy of lineage reconstruction using the same 61 states improved from 72% to 82% (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig5-v1.jpg)\n\n**Figure 5.:** (A) Scheme of the comparison between uniform and actual cell division rates in Drosophila embryos. (B) Accuracy of lineage reconstruction under a uniform cell division rate (left) compared to rates that approximate those actually observed during Drosophila development (right) (Zalokar and Erk, 1976; Foe, 1989), using mutation rates calculated from real experiments for the FAST target ($\\mu_{t}$\u00a0=\u00a00.0014), or optimised for accuracy of reconstruction ($\\mu_{t}$\u00a0=\u00a00.0154). Violin plots represent the distribution of reconstruction accuracies of 1000 simulations after 16 cell divisions. The accuracy of reconstruction using 32 FAST targets, with or without weighting of mutations, is represented in orange and green respectively. In yellow is the accuracy of 32 targets with an optimal $\\mu_{t}$ (with no weighting).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Accuracy of lineage reconstruction is given for different mutation rates ($\\mu_{t}$).\u00a0Simulations were performed to approximate Drosophila's known cell division rate over 16 cell divisions, under a Poisson model. Boxplots represent the distribution of 1000 simulations.\n\n### Impact of uneven rates of cell division on the accuracy of cell lineage reconstruction\n\nSo far we have assumed that the probability of mutation per available target ($\\mu_{d}$) is the same in every cell division. This would be a reasonable assumption if all cells have a similar rate of cell division and if that rate remains constant during the course of development. In many species, however, the rate of cell division in embryogenesis varies among cells and through time. Early Drosophila embryos, for example, initially go through a series of 13 rapid and near-synchronous nuclear divisions to generate a uniform syncytial blastoderm (Zalokar and Erk, 1976); during this phase the duration of each mitotic cycle is very short (~10 min). After cellularisation at cell cycle 14, the rate of cell division in the embryo slows considerably and becomes asynchronous (Foe, 1989; Hartenstein, 1993).\n\nTo estimate the impact of uneven rates of cell division on cell lineage reconstruction we modelled the mutation events as a Poisson process dependent on time rather than on cell divisions. A Poisson process assumes that a given event (in this case a CRISPR-induced mutation) occurs stochastically at a given rate $\\mu_{t}$. We estimated that setting $\\mu_{t}$ at 0.0014 mutations per site per minute would produce the observed proportion of mutated FAST targets (87%) after 24 hr of embryonic development. We set the cell division intervals to approximate those known from Drosophila development (see Materials\u00a0and\u00a0methods) and we modelled the frequency and diversity of mutational outcomes on those observed in the FAST target (see previous section). Under these conditions, we would expect the accuracy of lineage reconstruction to be considerably worse, as there will be many fewer mutations accumulated in the rapid early cell cycles, and indeed the accuracy fell to just 9% (without using the weighting scheme; see Figure 5B).\n\nWe hypothesized that the optimal value of $\\mu_{t}$ would be different in this scenario of unequal cell divisions: that a higher $\\mu_{t}$ should improve the accuracy of the reconstructed lineage because it would help to lineage the rapid early cell cycles. To test this hypothesis we performed simulations using different values of $\\mu_{t}$. The results show that the accuracy did indeed improve with increasing rates of mutation (Figure 5\u2014figure supplement 1), with a maximum accuracy of 73% at $\\mu_{t}$\u00a0= 0.0154 (11 times higher than the optimal rate for embryos with a uniform rate of cell division; Figure 5B). These results suggest that higher mutation rates are needed for high lineaging accuracy when the rates of cell division are uneven.\n\n### Modelling the effects of target dropouts\n\nGiven the number of targets needed to reconstruct a cell lineage accurately (Figure 2D), lineage recorders must include arrays of tens or hundreds of targets. CRISPR activity affecting multiple targets simultaneously, in the same cell, can result in deletions of the DNA between these targets (see Figure 6). Such deletions could remove multiple targets, hampering accurate cell lineage reconstruction. We modelled the potential impact of these \u2018dropouts\u2019 on the accuracy of lineage reconstruction, by conducting simulations (with uniform cell divisions, $\\mu_{d}$ = 0.1195 and $m$\u00a0=\u00a032, as before) under a scenario in which every time two or more targets were mutated in a given cell at a given cell cycle, we removed all the targets located between them (see Materials\u00a0and\u00a0methods). We find that dropouts have a major impact on the accuracy of lineage reconstruction (Figure 6B); after 16 cell divisions, the accuracy dropped from 72% to 23% (or from 82% to 26% with weighted mutational outcomes).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic representing how targets can be dropped out by simultaneous CRISPR edits. (B) Accuracy of lineage reconstruction without dropouts (left) or with the presence of dropouts (right), using a $\\mu_{d}$\u00a0= 0.1195. Violin plots represent the distribution of reconstruction accuracies of 1000 simulations after 16 cell divisions. The accuracy of reconstruction using 32 FAST targets, with or without weighting of mutations, is represented in orange and green respectively. In black is the accuracy when simulating the 10 targets of the Gestalt v7 construct (with no weighting; see Figure 6\u2014figure supplement 1).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Comparison between the observed target saturation of the GESTALT v7 recorder (top) and our simulations (bottom). Left: Relative frequency of mutations and dropouts affecting each target after 15 cell divisions. Right: Proportion of targets (remaining after dropouts) carrying a mutation. (B) Mutation rate ($\\mu_{d}$) necessary to produce the proportion of mutations observed in each target after 15 cell divisions, assuming a geometric distribution. (C) Histogram of the number of \u2018alleles\u2019 found per simulation, in 1,000 GESTALT simulations. The red dashed line represents the mean number of alleles per simulation. 100 samples of 10,000 cells were analysed per simulation. (D) The relative frequencies of the 60 most common mutated states (mean values for all replicates and targets, in red) follow a gamma distribution with shape parameter $\u03ba$\u00a0= 0.1 and scale parameter $\\theta$\u00a0= 2 (in blue).\n\n### Optimising cell lineage reconstruction for in situ sequencing with 2, 4 or 16 character states\n\nBesides the biological constraints that influence our ability to reconstruct the cell lineage based on CRISPR recorders (mutation rates, diversity of CRISPR mutations, rates of cell division, target dropouts), there are technical constraints that currently limit our ability to read the information contained in these recorders. Thus far, our simulations have assumed that we can reliably read up to nine nucleotides surrounding each target site over tens of targets, from individual cells. This can be achieved in dissociated single cells using modern high-throughput sequencing technologies (Spanjaard et al., 2018; Alemany et al., 2018; Raj et al., 2018).\n\nIdeally, CRISPR-based lineage recorders could also be used in combination with spatially resolved sequencing (in situ sequencing), so that lineage information of single cells could be recorded together with their exact position in the developed embryo. Achieving accurate sequencing of multiple nucleotides in tens of targets in cells in situ is currently impractical, however, less ambitious in situ approaches have been proposed. The MEMOIR approach (Frieda et al., 2017) has addressed this by employing single molecule in situ hybridization to distinguish mutated from unmutated targets.\n\nIn MEMOIR, only two character states can be detected per target (\u2018scratchpad\u2019), mutated versus unmutated. Moreover, successive rounds of in situ hybridization are needed to interrogate many distinct targets, which places a constraint on the number of targets that can be read. (Frieda et al., 2017) have shown that three targets can be read per hybridization and up to 9 rounds of hybridization are feasible (Frieda et al., 2017); thus, reading two character states per target over $\u223c$30 targets seems to be achievable by the MEMOIR approach.\n\nWe carried out simulations to test how MEMOIR would perform using 32 targets, a mutation rate $\\mu_{d}$\u00a0=\u00a00.1195 and a readout of 2 character states (\u2018mutated\u2019 or \u2018unmutated\u2019). We find that the accuracy is only 4%. Even with an optimal mutation rate resulting in 50% target saturation (Frieda et al., 2017) the accuracy of lineage reconstruction would be only $\u223c$15% (data not shown).\n\nIn the future, in situ sequencing methods could be developed to interrogate the sequence of each target. These methods would be subject to different technical constraints than MEMOIR. Thus far, in situ sequencing efforts have mostly been based on sequencing by ligation and used the SOLiD sequencing technology (Lee et al., 2014; Ke et al., 2013), which uses consecutive ligations of fluorescent oligonucleotides to interrogate pairs of dinucleotides in the target sequence sequentially (Valouev et al., 2008)). The SOLiD colour code is degenerate, as four colours are used to represent all 16 possible DNA dinucleotides.\n\nAs a first step we wanted to explore the SOLiD parameter space extensively, to determine how the number of targets ($m$) and mutation rates ($\\mu_{d}$) affect the accuracy of lineage reconstruction when reading each target with one SOLiD ligation/detection cycle (only four character states) (Figure 7A). For this, we performed 10 simulations over a range of values for $\\mu_{d}$ (from 0.01 to 0.3 mutations per cell division) and $m$ (from 10 to 300 targets). In these simulations we assumed that the four possible mutated states were equiprobable and used the complete inferred tree to estimate the accuracy. Our results show (Figure 7C) that the optimal mutation rate for lineage reconstruction by this approach lies between 0.05 and 0.12 mutations per cell division, and that is possible to get up to 99% accuracy with 260 targets or more. Using alternative measures of reconstruction accuracy (see below) gives us a very similar estimate of optimal mutation rate (Figure 7C)\n\n![Figure 7.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig7-v1.jpg)\n\n**Figure 7.:** (A) The most common mutational outcome of the FAST target is shown. The coloured box highlights the most informative dinucleotide position to read by SOLiD sequencing (6\u20137 bp from PAM after CRISPR cleavage) and its SOLiD colour code (see Figure 7\u2014figure supplement 1). Sequence colours as in Figure 4. (B) Accuracy of lineage reconstruction after sequencing with 2 SOLiD sequencing reads (left), 1 SOLiD read (center) and as in MEMOIR (right) using a $\\mu_{d}$\u00a0= 0.1195. In blue and pink are the accuracy of a construct with 32 and 64 FAST targets, respectively. (C) Accuracy of lineage reconstruction using all cells after 16 cell divisions ($N$\u00a0=\u00a065,536) and in situ SOLiD sequencing, for different mutation rates and numbers of CRISPR targets, using a $\\mu_{d}$\u00a0= 0.1195 and assuming equiprobable colour frequencies after 1 SOLiD read; accuracy (left), false positives (center) and false negatives (right). Dashed lines represent different accuracy thresholds (levelplot) after a LOESS regression. For each parameter combination, we used the mean accuracy of 10 simulations after 16 cell divisions. We found the global accuracy to be similar when subsampling 1,000 cells (Figure 7\u2014figure supplement 2).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A)\u00a0SOLiD colour-space coding. Each dinucleotide-specific probe is labelled with 1 of 4 fluorescent markers. The colour code for the 16 possible dinucleotides is shown on the left. The outcome of interrogating two different dinucleotides in the unmutated target is shown on the right; positions 3\u20134 (green) and 6\u20137 (red) from the PAM sequence (in purple). (B) The frequencies of experimentally observed mutational outcomes on the FAST target are shown, using the SOLiD colour code. For reference, the sequence of colours for the unmutated target is shown at the top. The dinucleotide located 6\u20137 nucleotides upstream of the PAM is the most informative for lineage reconstruction. The grey boxes highlight the dinucleotides used for the SOLiD simulations.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A)\u00a0Accuracy of lineage reconstruction, for different mutation rates and numbers of CRISPR targets, after a single read of SOLiD sequencing at positions 6\u20137 of the FAST target (see Figure 7\u2014figure supplement 1). For each parameter combination, accuracy values represent the average of 10 simulations. (B)\u00a0Accuracy thresholds after applying a Loess regression on the same data.\n\nIn SOLiD sequencing, the number of ligation/detection cycles that can be performed is limited by photodamage of the target amplicons and by the time required to perform this type of sequencing (10 days for 30 ligation cycles; Lee et al., 2015). The practical upper limit on the number of SOLiD cycles that can be performed is therefore currently in the order of 30\u201360 cycles. Given these constraints, it is important to optimise the sequencing strategy so as to maximise the amount of sequence information obtained for a given number of SOLiD sequencing cycles. We can ask, for example, whether it would be preferable to perform a single ligation/detection cycle on 64 targets rather than two ligation/detection cycles on 32 targets. Given the experimentally measured spectrum of CRISPR-induced mutations on the targets, we can also determine which nucleotides of the target we should interrogate in order to extract the most information.\n\nWe determined that positions 6\u20137 bp 5\u2019 of the PAM sequence yield the most equiprobable colour frequencies for the FAST target (Figure 7A), minimising homoplasy in the observed character states (see Figure 5). The frequency of each mutated state was determined by the real frequency of mutations observed (see above) and the overall frequency of mutation was set to $\\mu_{d}$\u00a0= 0.1195 per cell division. We note that the unmutated state (red) is indistinguishable from one of the four mutated states. With 4-character states, homoplasy will arise frequently from convergent appearance of the same colour (even arising from different mutated states) in independent cells. Our results show that, with a single SOLiD read, using a recorder with 32 targets, the mean accuracy of reconstructed cell lineages is 45% (Figure 7B).\n\nClearly, increasing the number of targets will improve performance, but we wanted to know whether it would be better instead to read double the number of nucleotides per target, which represents the same sequencing effort. We found that the reconstruction accuracy obtained by performing 1 SOLiD sequencing cycle on 64 FAST targets is higher (69%) than performing 2 SOLiD cycles on 32 FAST targets (65%) (Figure 7B). For the second SOLiD cycle we used the positions 11\u201312 bp 5\u2019 from the PAM sequence, as, in SOLiD, the sequentially interrogated dinucleotide pairs are typically separated by five nucleotides (Lee et al., 2015).\n\n### Assessing the accuracy of an existing recorder\n\nRecently, a number of lineaging approaches using CRISPR recorders have been tested in the nematode Caenorhabditis elegans and the zebrafish Danio rerio, as well as in cultured human cells (McKenna et al., 2016; Schmidt et al., 2017; Frieda et al., 2017). We have used our simulation approach to assess the accuracy of GESTALT, one of the first and most ambitious approaches, which aimed to reconstruct the cell lineage of the tens of thousands of cells of the zebrafish embryo (McKenna et al., 2016). It is important to note that in GESTALT the cell lineage is reconstructed at a coarse-grained level, with clones (instead of cells) as nodes in the tree, whereas our measure of success assesses the ability to reconstruct the complete cell lineage at a single-cell level.\n\nGESTALT uses arrays of 10 different CRISPR targets, mutated by injecting fertilised eggs with 10 corresponding sgRNAs and Cas9. The mutated targets are then sequenced at different developmental stages. We based our simulations on the mutational outcomes derived from the GESTALT recorder v7 at 30 hr post-fertilisation (downloaded from the Dryad repository). At this stage the zebrafish embryo consists of approximately 25,000 cells, resulting from ~15 rounds of cell division.\n\nIn our simulations, we assumed a constant mutation rate (per cell division), which, as we have shown, will probably overestimate of the accuracy of the inferred lineage. For each of the 10 CRISPR targets, we estimated the mutation rate ($\\mu_{d}$) necessary to obtain the fraction of mutated targets observed after 15 cell divisions (Figure 6\u2014figure supplement 1). The estimated mutation rate ranges from ~0.01 (for target 10) to ~0.23 (for target 7) per cell division.\n\nThe v7 GESTALT construct shows a high incidence of target dropouts which were modelled as previously described. The mutational process was modelled as a gamma distribution of 60 possible mutated states (Figure 6\u2014figure supplement 1), with frequencies closely approximating the observed distribution of mutations reported in the GESTALT publication (see Materials\u00a0and\u00a0methods for detail). We compared the number of different alleles (i.e., unique combinations of mutated targets) obtained in the simulated and the experimental results; the mutational complexity used in our simulations generated a number of alleles that closely approximates the experimentally observed number (see Materials\u00a0and\u00a0methods for more details).\n\nWe performed 1000 simulations and inferred the cell lineage of 1000 randomly sampled cells from each simulation. We find that the mean accuracy of the GESTALT approach is just 14% after 16 cell divisions (Figure 6B). This means that this implementation of GESTALT is not suited for reconstructing a complete, accurate cell lineage.\n\n### Measuring accuracy at different depths of the tree\n\nTo quantify the decay in number of targets available for mutation, we measured the accuracy (percentage of correct splits) when reconstructing the relationships between groups of four granddaughter cells derived from a single grandmother, sampled after different numbers of cell division (quartet analysis). The only targets that vary amongst the daughters, and hence inform the tree reconstruction, are those mutated in the previous two cell divisions. This analysis allows us to visualise (Figure 8) the effect of the decline in available targets as they are mutated, but excludes the effects of subsequent homoplasy or the later loss of targets through dropouts.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig8-v1.jpg)\n\n**Figure 8.:** Boxplots showing the percentage of correct splits in quartet trees measured at cell divisions 2 to 16. Red diamonds represent the average of up to 250 randomly sampled groups of quartet trees from the different simulations. The black dashed line indicates the average percentage of correct splits observed in 100,000 random quartet trees.\n\nTo see how this decay in information interacts with other factors, such as dropouts and homoplasy, we applied our Robinson-Foulds related accuracy measure to branches of increasing size (Figure 9). When comparing with the quartet analysis, in the simulation with FAST targets and no dropouts, we can see a similar decline in accuracy in later branches of the tree. In simulations with dropouts (with FAST targets and GESTALT) the earlier branches are, in contrast, less well reconstructed than the later ones, presumably due to the loss of informative mutations through dropouts.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig9-v1.jpg)\n\n**Figure 9.:** Three different measures of reconstruction accuracy (rows) are shown for four set of simulations (columns). The x-axis in each plot indicates the size of the clade of cells that is being assessed. In the False Positives and Negatives plots, black crosses show the average values of 1000 random trees.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40292/elife-40292-fig9-figsupp1-v1.jpg)\n\n**Figure 9\u2014figure supplement 1.:** False positives were measured by counting the proportion of cells that need to be pruned from a branch of the inferred tree to match a given branch in the reference tree. Similarly, false negatives were measured by counting the proportion of cells that need to be pruned from a branch of the reference tree to match a given branch of the inferred lineage tree. For details see Materials\u00a0and\u00a0methods.\n\nAs an additional measure of tree accuracy, which could provide a more intuitive estimate of usefulness when thinking about the clonal composition of tissues, we estimated the proportion of false positive (FP) and false negative (FN) assignments of cells to clones in the reconstructed cell lineage (Figure 9 and Figure 9\u2014figure supplement 1). False positives were defined as the proportion of cells that are erroneously assigned to a given cell clone. Conversely, false negatives were defined as the proportion of cells that are not assigned to a cell clone to which they belong. As before, our measurements of false positives and false negatives were performed on trees subsampled from the full simulated lineage and analysed monophyletic groups of cells (\u2018clones\u2019) of variable size, as described in the Materials\u00a0and\u00a0methods section.\n\nUnsurprisingly, the FP and FN measures closely reflect the topology based accuracy measure. Our results show, for example, that the clones of 33\u201364 cells reconstructed in simulations based on our FAST construct without dropouts have a high accuracy of 90% and correspondingly low errors, with less than 5% of both FP and FN.\n\n## Discussion\n\nThe use of CRISPR-induced somatic mutations is emerging as an attractive approach for reconstructing complex cell lineages. A variety of CRISPR-based lineage recorders has been developed to test this approach (McKenna et al., 2016; Frieda et al., 2017; Kalhor et al., 2018; Perli et al., 2016; Alemany et al., 2018; Schmidt et al., 2017; Raj et al., 2018; Attardi et al., 2018; Spanjaard et al., 2018; Junker et al., 2016). If the results of these methods are to be useful for gaining biological insights, however, it is essential that the inferred lineage trees are sufficiently reliable,\u00a0that\u00a0is that they accurately reconstruct the real cell lineages of the organism. The required accuracy of a lineage will depend on the application; for example, accurate trees will be necessary to detect stereotypic divisions and cell fates such as those found in Drosophila sensory organ precursor and CNS neuroblast lineages, but less accurate trees may be sufficient to detect biases/trends reflecting major lineage commitments. The potential accuracy of the trees inferred using these methods has not yet been established, however.\n\nWe have used simulations of the process of cell division and the accumulation of mutations across a lineage tree covering tens of thousands of cells, to examine the effects of different factors on the accuracy of a reconstructed tree. Our simulations allowed us to look at the influence of different rates of mutation on the CRISPR targets, of different designs of lineage recorders and of how mutations could be read experimentally. We have also investigated the effects of irregular cell divisions, target deletions following simultaneous double-stranded cuts and the variable mutational outcomes of the CRISPR process itself.\n\nUnsurprisingly, the accuracy of lineage reconstruction largely rests on the quantity and quality of lineage information carried by the recorders, which is influenced by several factors. Although it is obvious that the accuracy of the lineage tree depends on the number of CRISPR targets in the recorder, our results serve to place strict upper limits on the level of accuracy that we can expect from CRISPR recorders. Under ideal conditions (optimized mutation rates, uniform cell divisions, fully sequenced targets), 30 targets are sufficient to reach an overall tree accuracy of ~70% for a lineage of ~65,000 cells; 100 targets would yield trees that have an accuracy above 90% (Figure 2D). If we were only able to take a single 4-colour SOLiD read per target, more than 200 targets would be required to get a highly accurate (>95%) tree (Figure 7C).\n\nA second important requirement is to match the mutation rate to the rate of cell division; mutation rates that are too low will leave many cell divisions unmarked, while mutations that accumulate too rapidly will quickly saturate the targets and leave very few available to record later cell divisions. The range of mutation rates that can produce accurate lineage reconstructions fortunately proves to be quite broad for a given tree size; 0.05 to 0.25 mutations per cell division can yield reasonably high levels of accuracy for trees of ~65,000 cells, if the division rates are relatively even (Figure 2C,D). This flexibility will be beneficial in cases where the cell division rates are poorly characterised. Alongside the number of targets, mutation rates are an attribute of the experiment that can be adjusted. Rates can potentially be increased by increasing the expression levels of the CRISPR effectors, or decreased by introducing mismatches between the sgRNA and the CRISPR targets, as we have shown experimentally (Figure 3C).\n\nThe information carried by CRISPR recorders is also influenced by the diversity of the experimentally observed mutations accumulating at each CRISPR target. Our observations of CRISPR mutations in Drosophila show that these are biased towards a small number of frequently observed outcomes. Simulations show how targets that accumulate a broad set of more equiprobable mutations generate more reliable trees (Figure 2C). If, as expected, the diversity of mutations and their relative frequencies vary depending on the target sequence and its local environment (van Overbeek et al., 2016; Vu et al., 2017; Allen et al., 2018; Chen et al., 2018; Shen et al., 2018) sampling different targets to approach this optimum would be worthwhile.\n\nSome factors affecting tree reconstruction accuracy are outside of experimental control, but simulating their effects can nevertheless show which responses can successfully mitigate them. We have shown, for example, that uneven rates of cell division across the tree require faster mutation rates and/or larger numbers of targets, to provide sufficient coverage during the fastest divisions. In an extreme case, such as the Drosophila embryonic lineage where 13 of the 16 cell divisions take place at a very high rate (1 cell division every ~10 min), the optimum mutation rate proves to be >10 times higher than in an equivalent tree with uniform division rates. Even with this optimised mutation rate, the potential accuracy of lineage reconstruction with a given number of targets is much lower (Figure 5A).\n\nBesides the intrinsic limitations imposed by CRISPR mutagenesis, the information that we can obtain from each CRISPR target is further constrained by our ability to read and to discriminate between the mutational outcomes. As an obvious goal would be to sequence the mutated targets in individual cells in situ, we have explored the specific case of obtaining a single 4-colour SOLiD sequencing read per target. It is encouraging to find that accurate lineage reconstruction is still possible given a sufficient number of targets (Figure 7C).\n\nFinally, we show the degree to which the accuracy of lineage reconstruction is sensitive to loss of information caused by the loss of targets through deletion resulting from simultaneous cleavage at two sites (Figure 6B). While we have used the most pessimistic estimate of the frequency of dropouts - assuming that every pair of targets cleaved in the same cell would lead to a deletion of the intervening targets in the array - data from GESTALT suggest that target dropouts are frequent when mutation rates are high (McKenna et al., 2016). The strong deleterious effect of dropouts that we observe in simulations highlights the need to address this issue. The problem of dropouts could be reduced by opting for the lower end of the optimal range of mutation rates; or eliminated by targeting separate loci in the genome rather than arrays of targets.\n\nAvailable implementations of CRISPR type recorders are based on different conceptual designs: barcoded arrays recording point mutations (McKenna et al., 2016; Raj et al., 2018), \u2018collapsing\u2019 arrays (Frieda et al., 2017), targets distributed in different genomic locations (Junker et al., 2016; Schmidt et al., 2017; Attardi et al., 2018; Alemany et al., 2018; Spanjaard et al., 2018) and mutations induced by self-targeting guide RNAs (Kalhor et al., 2018; Perli et al., 2016). Here we have simulated the first two types of recorders, but we expect that the insights that we have gained on the importance of optimising mutation rates, target numbers and the complexity of character states will apply to all types of recorders.\n\nOur analysis suggests that most of the CRISPR recorders published to date, which rely on at most 10 CRISPR targets (McKenna et al., 2016; Raj et al., 2018; Frieda et al., 2017; Junker et al., 2016; Schmidt et al., 2017; Alemany et al., 2018), yield trees of very low overall accuracy and lineage resolution. While these recorders must, nevertheless, carry lineage information of lower resolution, it is sensible to interpret the results from these recorders in the light of this expected low level of accuracy.\n\nA simulation-guided design of lineage recorders, taking into account the specific parameters of each experimental system, is essential. We hope our study will encourage the general use of simulations of lineage recorders, with the aim of testing their limits, adjusting their design and improving their performance. This approach should stimulate the development of a new generation of CRISPR recorders whose performance will be assessed explicitly and adapted to match the biological questions at hand. Our study predicts that optimised recorders will ultimately allow the reconstruction of accurate cell lineages of complex multicellular organisms at the level of a single cell.\n\n## Materials and methods\n\n### CRISPR recorder and sequencing\n\n#### Design and synthesis\n\nWe designed a DNA construct containing an array of 32 targets of the human Emx1.6 sgRNA (Hsu et al., 2013), including the wild-type Emx1.6 target sequence and 31 variants carrying 1 or 2 mismatches and/or an alternative PAM sequence (see Supplementary file 1\u2014Table1). To facilitate synthesis of this construct, between each pair of targets we introduced 80 bp spacers, harbouring unique sequences which would be recognised by specific primers (Supplementary file 1\u2014Table\u00a03). We optimised these spacer sequences in silico to minimise the presence of repetitive sequences. Unique KpnI and NotI cloning sites were included at either end of the array to help with subsequent cloning steps.\n\nWe designed a second plasmid carrying the KpnI and NotI restriction sites and the Drosophila U6.2 promoter driving expression of the Emx1.6 sgRNA (Hsu et al., 2013) using a standard sgRNA\u00a0scaffold: GUUUUAGAGCUAGAAAUAGCAAGUUAAAAUAAGGCUAGUCCGUUAUCAACUUGAAAAAGUGGCACCGAG (Hsu et al., 2013; Port et al., 2014). This DNA sequence was flanked by two attB sites. The Drosophila U6.2 promoter has been shown by previous studies to produce lower levels of CRISPR activity when compared to the U6.1 and U6.3 promoters (Port et al., 2014).\n\nBoth constructs were synthesised by Biomatik (Ontario, Canada) using standard gene synthesis techniques. The CRISPR target array was excised from the first construct by KpnI-NotI digestion and subcloned into the KpnI and NotI sites of the second plasmid.\n\n#### Fly transgenesis, genetics and strains\n\nThe construct carrying the CRISPR target array and U6.2::Emx1.6 sgRNA was inserted via recombinase-mediated cassette exchange (Bateman et al., 2006) into the second chromosome of Drosophila melanogaster (acceptor strain # 27387) using a commercially available service (BestGene Inc, USA).\n\nHomozygous Act-5C-Cas9 females (Bloomington stock # 54590) were crossed with homozygous males carrying the CRISPR target array, set to lay eggs over 30 min intervals in order to obtain synchronised egg collections, and the progeny were collected at different developmental stages (24 hr embryos, third instar larvae, recently hatched adults). As negative controls, to account for sequencing errors, we used adults carrying the CRISPR target array (in heterozygous condition), but lacking the Cas9 transgene.\n\n#### DNA extraction, generation of libraries and sequencing\n\nFor DNA extraction and sequencing, we pooled approximately 100 embryos, 10 larvae or 20 adults (10 males and 10 females). We extracted genomic DNA by phenol chloroform extraction followed by alcohol precipitation, and generated libraries by PCR using primers harbouring adapter sequences (\u2018fusion PCR\u2019) barcoded by condition (see Supplementary file 1\u2014Table\u00a03) for sequencing on Ion Torrent Personal Genome Machine (PGM, Life Technologies): as the maximum PGM read length is 400 bp and each target repeat in our construct is 100 bp long, we amplified the repeats in 10 groups of 3 units (amplicons 1\u201310), plus a group of 2 units (amplicon 11). PCRs were performed using the Phusion High Fidelity Polymerase (New England Biolabs), according to the manufacturer's instructions. Amplicons were run on a gel, excised and purified to eliminate primer dimers. Purified amplicons were then mixed in equimolar amounts and the final pooled mix was sequenced on the PGM sequencer with a 318 v2 chip, as well as a calibration standard to enhance the read quality.\n\n#### Filtering of sequencing data\n\nThe 7,347,400 reads obtained were de-multiplexed by condition and trimmed to meet quality standards using the Phred software included in the seqtk_trimfq package of the Galaxy software (Afgan et al., 2016). We next eliminated sequencing reads that were shorter than 100 bp, lacked the 5\u2019 primer sequence, or lacked a target-specific sequence of 11\u201320 bp downstream of the target (including the PAM) using a custom Python script. In each sequencing read, we used the 9 bp adjacent to the PAM sequence (9mer) to determine whether a target was mutated (the results are shown in Supplementary file 1\u2014Table\u00a01).\n\nWe quantified sequencing errors (with a custom Python script) by analysing the target sequences of adult flies carrying the CRISPR recorder and the sgRNA but not carrying Act-Cas9 (\u2018untargeted\u2019 condition): in these animals we expect any differences from the unmutated state to reflect sequencing errors. In target 16 (FAST target) we found two frequent sequencing errors (single nucleotide deletions) downstream of the target; we decided to include the reads carrying these errors. Targets 17 and 18 did not yield a sufficient number of good quality reads, and targets 13, 21, and 23 showed a high proportion of sequencing errors (Supplementary file 1\u2014Table\u00a01).\n\n### Estimating mutation rate and mutational complexity\n\n#### FAST target\n\nWe estimated the mutation rate of the FAST target based on the proportion of targets that were mutated at the end of embryonic development (86.95%) using a custom Python script based on the geometric cumulative distribution function. The mutation rate of $\\mu_{d}$\u00a0=\u00a00.1195 mutations per cell division produces the observed saturation of 86.95% after 16 cell divisions.\n\nWe modelled the mutational outcomes of the FAST target based on the mutational outcomes observed at the end of embryonic development (>200 distinct 9mers with frequencies following an exponential curve; see Figure 4C). We considered that a mutation would result in a change to one of 59 states with a probability reflecting the observed occurrence of the 59 most frequent real mutations (95% of the total; see Figure 4C and Figure 4\u2014figure supplement 1) or to a 60th state with a probability of 0.05. For the simulation of SOLiD sequencing we used the real distribution of the dinucleotides observed at positions 6\u20137 and 11\u201312 upstream of the PAM. We translated each dinucleotide into one of four different colour states according to the SOLiD protocol (Figure 7\u2014figure supplement 1).\n\n#### Gestalt\n\nTo analyse the accuracy of GESTALT, we used data from the v7 construct at the 30 hr post-fertilisation stage (available at https://datadryad.org/resource/doi:10.5061/dryad.478t9). These consist of six biological replicates. The v7 construct contains 10 different CRISPR targets that were targeted with 10 different sgRNAs.\n\nFor each biological replicate we quantified the frequency of mutations and dropouts in each target (Figure 6\u2014figure supplement 1) using a custom Perl script. We considered any deletion greater than 26 bp to be a dropout, as this would affect more than one target (each target is 23 bp). For each target, we quantified saturation as the proportion of reads of the target that were mutated. For each target, we estimated the mutation rate per cell division ($\\mu_{d}$) necessary to produce the level of saturation (proportion of mutated targets) observed after 15 cell divisions, assuming that mutations follow a geometric distribution. The estimated mutation rate ranges from ~0.01 (target 10) to ~0.23 (target 7) (Figure 6\u2014figure supplement 1).\n\nThe mutational complexity varied between targets and replicates, from ~25 to ~200 different mutations per target. In all cases, however, their frequencies followed an exponential curve, with one mutation usually accounting for 20\u201330% of the total reads and with the majority of the mutations observed only rarely. For each target we modelled the mutational outcome as 60 different mutations with frequencies sampled from a random gamma distribution, with shape parameter $\u03ba$\u00a0=\u00a00.1 and scale parameter $\\theta$\u00a0=\u00a02, which approximate the observed distribution (see Figure 6\u2014figure supplement 1D).\n\n### Computer simulations\n\nComputer simulations were performed using MATLAB v2017a (Mathworks, 2017) and are available at a Github repository (Salvador-Mart\u00ednez, 2018; copy archived at https://github.com/elifesciences-publications/CRISPR_recorders_sims). CRISPR mutations were simulated following a geometric or a poisson distribution.\n\n#### Simulating mutation events using a geometric distribution\n\nTo simulate mutations using a geometric distribution, the probability of mutation was the same for all targets per cell division. Given a mutation rate $\\mu_{d}$ (per cell division), the probability that a site remains unmutated after $d$ cell divisions is $(1-\\mu_{d})^{d}$. Thus, we can determine the mutation rate $\\mu_{d}$ from the proportion of targets that are mutated after a given number of cell divisions.\n\n#### Simulating mutation events using a poisson distribution\n\nUnder the Poisson model, given a mutation rate $\\mu_{t}$ (per minute), the probability that a site remains unmutated after $t$ minutes is: $e^{-(\\mu_{t}\u2062t)}$. Thus, we can determine the mutation rate $\\mu_{t}$ from the proportion of targets that are mutated after a given amount of time. The time interval for each cell division was set to approximate the rates of cell division in early Drosophila embryos: for the first 13 cell divisions the interval was set to 10 min, and to 130 min per division for the last three divisions (Zalokar and Erk, 1976; Foe, 1989).\n\n#### Simulation of target dropouts\n\nFor the dropouts simulations, if any two targets were hit during a given cell division, all the targets between them were removed. When three or more targets were hit during the same cell division, two were selected randomly and the intervening targets were removed. In subsequent phylogenetic analyses, dropouts were treated as missing data.\n\n#### Simulations of GESTALT\n\nWe performed 1000 simulations with the estimated $\\mu_{d}$ for each target over 16 cell divisions. We accounted for dropouts as described previously. To test whether our simulations match the experimental results in terms of mutational complexity, we compared the number of \u2018alleles\u2019 (unique combinations of mutated targets) found in the experimental and in the simulated data.\n\nOur simulations encompassed 15 cell divisions, yielding 32,768 cells, which approximates the 30 hpf zebrafish embryo ($\u223c$25,000 cells). For each simulation, we took 100 random samples of 10,000 cells and counted the number of alleles in each sample. Our simulated samples produced an average of 3022 alleles (s.d.\u00a0=\u00a0877 alleles; see Figure 6\u2014figure supplement 1), compared to the 1,000\u20132,500 alleles found in the experimental data (McKenna et al., 2016).\n\n### Analysis of simulated targets\n\nThe main outcome of each simulation was a $T$ matrix of size $N\\timesm$, for $N$ cells and $m$ targets. This matrix is equivalent to a DNA alignment with species as rows and DNA positions as columns. For most simulations, 10 random samples of 1,000 cells were chosen for lineage reconstruction and for assessing the accuracy of the reconstructed cell lineage. A \u2018root\u2019 taxon with unmutated character states was added to the alignment prior to the lineage inference. For some simulations, we inferred cell lineages using all cells after 16 cell divisions ($N=$\u00a065,536) and found that their global accuracy was similar to that when subsampling 1,000 cells (Figure 7\u2014figure supplement 2).\n\nFor the target dropouts simulations we added to the $T$ matrix an extra character for each distinct dropout of one or more targets that was shared between $\\geq$32 cells (character state \u20181\u2019 if present, \u20180\u2019 if absent). This was done to take advantage of the information coming from shared target dropouts.\n\n### Cell lineage inference\n\n#### Reconstructing lineage trees using neighbor joining (PAUP*)\n\nMost cell lineages were inferred using the Neighbor-Joining method (NJ). We used the Neighbor joining algorithm as implemented in the PAUP* software (version 4.0a build 158; (Swofford, 2017)). In PAUP*, up to 64 character states can be specified, with the possibility of giving different weights to the occurrence of specific mutations. We used a substitution matrix based on the frequency of each mutation. The matrix has size $s\\timess$ for $s$ number of states, where the distance from state $i$ to state $j$ is weighted according to the natural logarithm of the inverse of their frequencies (Felsenstein, 1981) with the equation:\n\n$$\nd(i,j)={0,ifi=jlog(\\frac{1}{Freq_{j}}),ifi=unmutatedlog(\\frac{1}{Freq_{i}}),ifj=unmutatedlog(\\frac{1}{Freq_{i}})+log(\\frac{1}{Freq_{j}}),otherwise\n$$\n\nwhere $F\u2062r\u2062e\u2062q_{i}$ and $F\u2062r\u2062e\u2062q_{j}$ are the frequencies of states $i$ and $j$ respectively.\n\nIn simulations where we modelled dropouts, an extra character state was assigned to each cell containing a dropout that was shared by $\\geq$32 cells. For these simulations, the distance matrix was applied to the $m$ original targets and for the extra characters the following distance was applied:\n\n$$\nd(i,j)={0,ifi=j100,otherwise\n$$\n\nFor samples of up to 180 cells we compared the accuracy achieved using Neighbor Joining with an alternative approach using a parsimony method. We show that, while accuracy is consistently slightly higher using parsimony, the average time taken to reconstruct a tree of only 180 cells is on average ~52 hr compared to less than 1 s using Neighbor Joining (see Figure 2\u2014figure supplement 1).\n\n#### Reconstructing lineage trees using FastTree\n\nWhen inferring complete cell lineage trees in the simulations of SOLiD sequencing data ($N$\u00a0=\u00a065,536 cells), we used an heuristic method that approximates the Maximum Likelihood approach, implemented by the FastTree software (Price et al., 2010). FastTree was chosen for its ability to infer trees from large alignments, consisting of tens of thousands of sequences, and for doing so very efficiently.\n\n#### Reconstructing lineage trees using maximum parsimony (PAUP*)\n\nThe use of parsimony for the cell lineage reconstruction of our simulations was not practical for the thousands of cells/taxa we consider. Nevertheless, to assess the relative performance of NJ and Maximum Parsimony in the context of lineage data, we compared the two methods using trees of variable size of randomly sampled cells, from 10 to 180 (Figure 2\u2014figure supplement 1). We calculated the accuracy of lineage reconstruction with NJ and parsimony methods on 10 separate simulations, based on the mutational frequencies of FAST targets, four character states and a mutation rate of 0.1195 over 16 cell divisions. For the parsimony analysis, we used the Camin-Sokal model (i.e., irreversible mutated states) and a substitution matrix based on character states frequencies (as used in GESTALT).\n\n### Tree accuracy estimation\n\n#### Robinson-Foulds related measure of accuracy\n\nThe accuracy of each cell-lineage reconstruction was determined by calculating a measure related to the Robinson-Foulds distance between the reference and the inferred trees. We counted the percentage of splits (sets of cells separated into two groups by a node in the tree) in the reference tree that were also found in the inferred tree. For this task we used the CompareTree software (CompareTree.pl is available at http://www.microbesonline.org/fasttree/treecmp.html).\n\n#### Calculating false positives and false negatives\n\nFalse positives (FP) and false negatives (FN) were calculated by comparing the reference tree ($R$) with the inferred tree ($I$) using the newick-tools software (Flouri et al., 2018) using the \u2013difftree command, which analyses the split differences between two trees. The options \u2013filter_eq and \u2013filter_gt were used to specify the number of cells n (or a given range) to be analysed (see the newick-tools reference for details).\n\nFalse positives were measured by counting the proportion of cells that need to be pruned from a branch of the inferred tree to match a given branch of n cells in the reference tree. More formally, the false positives were estimated as follows (see Figure 9\u2014figure supplement 1):\n\n$$\nFP_{(R,I)}=\\frac{1}{x}\\sumi=1x\\frac{[I_{i}^{\u2032}]\u2212[R_{i}^{\u2032}]}{[I_{i}^{\u2032}]}\n$$\n\nwhere [$R_{i}^{\u2032}$] and [$I_{i}^{\u2032}$] are the number of cells in trees $R_{i}^{\u2032}$ and $I_{i}^{\u2032}$ respectively.\n\nFalse negatives were measured by counting the proportion of cells that need to be pruned from a branch of the reference tree to match a given branch of n cells in the inferred lineage tree. More formally, the false negatives were estimated as follows (see Figure 9\u2014figure supplement 1):\n\n$$\nFN_{(R,I)}=\\frac{1}{x}\\sumi=1x\\frac{[R_{i}^{\u2032}]\u2212[I_{i}^{\u2032}]}{[R_{i}^{\u2032}]}\n$$\n\nwhere [$R_{i}^{\u2032}$] and [$I_{i}^{\u2032}$] are the number of cells in trees $R_{i}^{\u2032}$ and $I_{i}^{\u2032}$ respectively.\n\n#### Quartet analysis\n\nWe measured the accuracy (percentage of correct splits) when reconstructing the relationships between groups of four granddaughter cells derived from a single grandmother, sampled after different numbers of cell division. We considered sets of 4 granddaughter cells (each cell represented as the array of targets with accumulated mutations) derived from their single most recent common ancestor. We reconstructed a tree using NJ, rooting the tree with an outgroup, represented by an array of unmutated targets. We calculated the percentage of splits from the reference tree also present in the inferred tree. In cases when a simulation had fewer than 1,000 cells (divisions 2\u20139) we considered all possible quartets. When there are more than 1,000 cells (divisions 10\u201316) we extracted 250 random 4 cell trees (total cells\u00a0=\u00a01000).\n",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "4e0240ae-06bf-487f-81e7-c678a284960f",
+      "submission_id": "392769c6-f4d9-46b7-96ad-ff71aa0fdab1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patrick Hsu, Salk Institute for Biological Studies United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40292.023](https://doi.org/10.7554/eLife.40292.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter, peer reviews, and accompanying author responses.\n\n[Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed.]\n\nAcceptance notification:\n\nProf Telford and colleagues have greatly improved their thoughtful manuscript exploring the limitations and key experimental/analytical parameters of CRISPR-based recorders for lineage tracing, and appropriately addressed the reviewers' comments. Importantly, this study now includes an expanded assessment of lineage accuracy, false positive and negative reconstruction events, and choice of cell lineage inference method. This is a very useful addition to the field that informs optimized design of next-generation CRISPR recorders.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Is it possible to reconstruct an accurate cell lineage using CRISPR recorders?\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a guest Reviewing Editor, and the evaluation has been overseen by Aviv Regev as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Aaron McKenna and Jay Shendure co-reviewed as Reviewer #3. The other reviewers remain anonymous.\n\nThe Reviewing Editor has highlighted the concerns that require revision and/or responses, and we have included the separate reviews below for your consideration. If you have any questions, please do not hesitate to contact us.\n\nAs you will see, the reviewers agree this work is a valuable addition to the rapidly growing field of CRISPR recorders and lineage tracing. They also each raise concerns about the results presented and their interpretation. In particular, there was clear consensus about the appropriate definition of and requirements for \"accurate\" lineage reconstruction, justification of the tree reconstruction algorithms used, and the methodologies used for analysis of editing in Drosophila target arrays. Reviewer 2 also has specific suggestions for the title. We hope these points will be straightforward to assess in a revised manuscript.\n\nSeparate reviews (please respond to each point):\n\nReviewer #1:\n\nThere has been an explosion in CRISPR lineage tracing studies over the past few years. However, assessing the \"accuracy\" of these reported lineage reconstructions is difficult because the correct lineage is typically unknown. In this study, the authors primarily use computational approaches, along with some experimental data in Drosophila embryos, to assess various parameters that affect reconstruction accuracy, such as mutation rate, cell division rate, mutational diversity, and others.\n\nSome thoughts for the authors to consider: From a practical perspective, what is accurate enough? In an experiment where the \"real\" tree is unknown, how do the investigators determine the appropriate parameters? Are some CRISPR recorder designs fundamentally better than others, and does this study suggest a better approach?\n\nMajor comments:\n\n1) Recently, there was a systematic follow up to van Overbeek et al., 2016, by Leopold Parts at the Sanger (Allen BioRxiv 2018), which used a large dataset to provide an indel distribution prediction tool. It would be very interesting to consider this for specific target sequences, and discuss \"optimized\" spacer sequences for CRISPR recorders that have higher mutational diversity than others.\n\n2) The rationale for assuming that CRISPR recorders generate irreversible target mutations is unclear. For example, there can be a \"back rate\" where a mutated target that creates a single base indel can still be recognized by Cas9 after a cell division.\n\n3) Why is neighbor-joining chosen over parsimony (and over several other possible algorithms?) This should be elaborated on. Can the authors leverage their insights to improve these reconstruction algorithms to specifically address the challenges of CRISPR recorders?\n\n4) The chosen definition of \"accuracy\" seems to be problematic because it does not generally discriminate between false positive and false negative reconstruction events. This is briefly considered in Figure 7 but should be expanded.\n\n5) The authors show that setting the correct mutation rate matters. How can mutation rates be matched to the rate of cell division when the rate or interval of cell divisions is unknown/itself variable (e.g. in a tumor)? This would be worth discussing.\n\nReviewer #2:\n\nThe manuscript \"Is it possible to reconstruct an accurate cell lineage using CRISPR recorders?\" uses simulations and some experimental data to conduct a thorough exploration of the parameters governing the accuracy of CRISPR lineage tracing. They define and sweep four key parameters for two types of CRISPR recorders: number of targets, mutation rate, mutational character states, and dropouts. This work is important and valuable to a growing community exploring the potential of CRISPR recorders. It provides a path for future optimization of these type of lineage tracing tools. For the most part, the writing and figures are clear and informative. I have five major concerns listed below.\n\n1) The provocative title in the form of a question is somewhat misleading \u2013 is the answer yes? The manuscript doesn't explicitly answer this question. I would suggest a more accurate title, for example \"design specifications for more accurate CRISPR recorders.\"\n\n2) I have two concerns with the term \"accuracy.\"\n\nFirst concern: The authors should be explicit upfront about their definition of the term accuracy, which includes both false positives and false negatives. I would argue that false positives (wrong branchpoints) are worse than false negatives (i.e. missing branchpoints). Can't an \"accurate\" tree have missing branchpoints but no wrong branchpoints? The authors briefly describe this distinction, but only at the very end of the Results section and then calculate these subscores of \"accuracy\" only for the SOLID sequencing approach. I would appreciate a longer discussion of this definition and scoring at the beginning of the results, and FP/FN calculated and reported for all simulations.\n\nSecond concern: Generally speaking, how accurate do we need CRISPR recorders to be? The authors set a high bar: complete and accurate lineage tracing of a 65,000 cell tree. Is 4% or 14% (the final \"scores\" given to MEMOIR and GESTALT) good enough for many scientific applications? It is certainly better than nearly all existing lineage tracing techniques, from which we have learned a great deal about biology. I would appreciate a discussion of why 100% complete and accurate trees are such an important goal, and what we can still learn from less accurate trees.\n\n3) I am concerned about three library prep or filtering steps in the sequencing of the Drosophila target site array that are not clearly explained in the text, which may reduce the number of character states used in all following simulations:\n\na) To call character states \u2013 why only use 9bp flanking the target site instead of simply aligning each read to unedited sites? I would assume that this would eliminate some character states.\n\nb) If I understand Figure 4A, the authors use a primer that sits directly on the PAM -mutational outcomes that disrupt any bases within the PAM presumably would not be captured by the PCR and sequencing. Can the authors discuss the impact of this?\n\nc) Why merge 140 rare character states into a shared state (state 60)? This would obviously lead to tree errors. Why not treat these just as all other character states? The authors write that this was \"for convenience,\" but I'm not sure why this is convenient and it seems to be a potential source of false positives.\n\nI believe other papers have shown a higher number of potential character states, and I'm concerned these steps listed above may impact the simulations.\n\n4) The authors, as they admit, use \"the most pessimistic estimate\" of the frequency of dropouts. It is entirely possible to have two cuts within a cell cycle result in two edits instead of a dropout. Have the authors considered explicitly using their own experimental data (even with library prep caveats), or the GESTALT data, to simulate dropout rates? Since this assumption dramatically impacts accuracy, it would seem important to be careful about how to model dropouts.\n\n5) Choice of tree reconstruction algorithm matters. In their own simulations, Parsimony appears more successful that Neighbor Joining (Figure 2\u2014figure supplement 1). However, this was never stated explicitly in the text, and there is no discussion of algorithm selection and its impact on accuracy. While NJ was selected for obvious reasons (speed), the authors should provide a clear discussion of other options and their impact on tree accuracy.\n\nMinor Comments:\n\n1) GESTALT cell culture approach also used a similar strategy of an array of off-targets and 1 guide RNA, and should be cited when discussing the fly array design, along with the caveats associated with this approach (poor editing at many off targets).\n\n2) The MEMOIR paper extensively considers accuracy of tree reconstruction, including comparisons to reference trees. These data and discussions should be mentioned and referenced in this paper.\n\nReviewer #3:\n\nIn this manuscript, Salvador-Marti\u0301nez and Grillo et al. present a simulation study of newly developed CRISPR lineage tracing technologies. The authors do a good job of setting up the problem, explaining their choices of various parameters and assumptions, and adding experimental data in Drosophila to reinforce these choices. This work will be a valuable addition to a quickly advancing field, particularly as a reality check on the extent of organismal engineering that will likely be required to achieve near-complete, accurate trees by this class of methods. Our first major comment is about the tone of the paper, while our our additional major comments primarily relate to alternative measures that should be evaluated that strike more of a balance between strict accuracy and the general conservation of tree topology. Additionally, some basic flaws in the experimental design and analysis of editing outcomes in Drosophila should be addressed before publication.\n\n1) A first major comment is that the measure of accuracy used throughout the paper is very conservative, and more generally the tone that is struck in many parts of the paper is (we feel) overly conservative. Although strict accuracy and completeness are of course goals worth shooting for, they are not prerequisites these kinds of experiments to achieve biological insights. For example, lineage relationships between cell types might well be accurately inferred from the general topology of a tree that contained inaccuracies or uncertainty near its tips. For any new technology, proof-of-concept studies are just that -- proof-of-concept, and it's always been clear that significant additional engineering would be (and still is) required to maximize the value of these methods. This point does not detract from the value of the simulations presented in this paper. A more optimistic take on the same results is that it is possible to reconstruct large trees with reasonably high accuracy (great!), but it will require the introduction of at least 50 targets (and ideally several hundred targets), tuning of the mutation rate (although the broad plateau presented in Figure 2D is rather encouraging), and careful consideration of variable cell division rates. These conclusions and other analyses presented in the paper provide important guidance for the field (and a reality check against short term thinking), but the paper often slips into a negative tone that in our view is inconsistent with the results themselves (e.g. the fact that conditions are identified where reconstruction with 99% accuracy is achieved; subsection \u201cOptimising cell lineage reconstruction for in situ sequencing with 2, 4 or 16 character states\u201d paragraph six). We urge the authors to: (a) make it clearer, from the beginning of the paper, the extent to which accuracy as defined here is a highly conservative definition, relative to what might be required to achieve biological insights from trees reconstructed from GESTALT or related methods. (b) strike a more balanced tone, with less emphasis on what is not possible using the systems as reported in their proof-of-concept implementations, and more emphasis on the path forward, i.e. the extent to which further engineering (more targets, reducing inter-site deletion, tuning of mutation rate, etc.) is required to get the most out of these methods.\n\n2) The simulation of CRISPR-based lineage tracing technologies in the first section (Figure 2) focuses on accuracy with Robinson-Foulds, but should include characterization with the clonal reconstruction measurements (FP / FN analysis). These measurements are used later in the MEMOIR simulation section, and many people will be interested in this use of lineage tracing technologies for this purpose. A mention or comparison to other distance metrics might be more appropriate, see https://www.ncbi.nlm.nih.gov/pubmed/21383415 or the review https://www.ncbi.nlm.nih.gov/pubmed/25378436\n\n3) You show higher accuracy with maximum parsimony approaches, but use neighbor-joining throughout the paper. A strong justification of this choice is important, as this appears to be a strong bias against the methods you're evaluating.\n\n4) Robinson-Foulds is a distance metric, and here you've normalized it to an accuracy over [0-100%], which is not detailed anywhere in the paper. Details in the Materials and methods section would improve the clarity of the paper.\n\n5) Counting 9mers is a bit liberal for determining editing outcomes from the FAST target sequencing. Given the known double-stranded break location and repair outcomes, most mutational outcomes should be centered at, or overlap the cutsite. By including all of the 9 proximal bases, the captured editing diversity will include sequencing errors and PCR errors. This shouldn't affect the overall profile of editing outcomes, but will increase the number of mutations, and should be mentioned. This is made apparent by the elevated mutation rates in the untargered column of Supplementary Table 1 in Supplementary file 1, as some of the more active off-targets have changes in bases believed to strongly obstruct Cas9 binding (bases that are very close the PAM sequence).\n\n6) Also the location of the primer (Figure 4) precludes find deletions that extend downstream into the PAM sequence. This eliminates the detection of mutations that extend 3' of the cutsite, and will deflate the diversity of editing you see. This is a major bias, and could also affect the FAST off-target results.\n\n7) It's been shown that very large deletion frequency decreases with the distance between two cutsites (https://www.ncbi.nlm.nih.gov/pubmed/24907273). it would be worth including in the dropout simulations, or at least mentioning an alternative model with decreasing dropout efficiency at larger distances.\n\n8) It would be good to characterize the accuracy of genotype collapsed trees (https://www.ncbi.nlm.nih.gov/pubmed/29474671) which aim to reduce the number of false branch points (branch points introduced by the tree bifurcation requirement, not mutations).\n\n9) In the SOLiD simulation section (for Figure 7) it's unclear what sequence would be used for the primer, and how often that binding sequence would be obstructed by deletions in its target sequence. Some more details here would be helpful.\n\nMinor Comments:\n\nFourth sentence of the Abstract should probably say approaches (you profile at least two).\n\nAbstract: not all terminal branches are fully differentiated cells.\n\nIntroduction paragraph two: there's probably a better phase than \u201csimple cases\u201d (it was quite the effort, which you mention further on).\n\nIntroduction paragraph eight is a bit strong. Certainly simulations will inform future synthetic recording systems, but the assumptions and simplifications of simulation might prevent finding the optimal solution without more true biological validation.\n\nSubsection \u201cOptimising cell lineage reconstruction for in situ sequencing with 2, 4 or 16 character states\u201d paragraph nine: shouldn't \"double the number of reads per target\" be \"double the read length\" or \"double the number of cycles\"?\n\nReally beautiful figures all through the supplement, but the most minor change, add \" + theme_classic()\" or similar to the R command for Figure 2\u2014figure supplement 1.\n\nAdditional details are needed in the experimental section about the PCR reaction.\n",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a78b323d-d1cc-4a95-b1e6-c22300c164e4",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C1",
+      "claim": "A fruit fly larva has approximately 50,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "even a fruit fly larva has ~50,000 cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Lehner et al., 2001 in the manuscript",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "bac79ccd-90a9-44eb-9537-92fd3cf1cbaf",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C2",
+      "claim": "A small mammal has more than 1 billion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "a small mammal has >1 billion cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the abstract",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "2a880f3f-4a0d-4ed5-b08e-65caf4eec96a",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C3",
+      "claim": "The complete cell lineage of Caenorhabditis elegans consists of approximately 1000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "its complete lineage (~1000 cells) was deduced by painstaking observation of each cell division under the microscope",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about C. elegans lineage in the introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "cd3354fb-491a-4b1d-b444-74e8508ddf3f",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C4",
+      "claim": "16 rounds of cell division are required to produce a hatched Drosophila larva.",
+      "claim_type": "EXPLICIT",
+      "source": "The 16 rounds of cell division required to produce a hatched Drosophila larva, for example, result in about 50,000 cells (Lehner et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Lehner et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "aec99c28-cd62-457d-9359-b44f495c96eb",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C6",
+      "claim": "The bodies of mice consist of 10^10 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The bodies of mice and humans consist of 1010 to 1014 cells respectively (Sender et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Sender et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "11dce5af-6253-4d8a-a6ca-47bf413694eb",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C7",
+      "claim": "The bodies of humans consist of 10^14 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The bodies of mice and humans consist of 1010 to 1014 cells respectively (Sender et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Sender et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "3765b3c1-63f2-4a58-97e4-b8eac40005e8",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C8",
+      "claim": "Naturally occurring somatic mutations can be used as lineage markers to reconstruct entire cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently it was proposed that naturally occurring somatic mutations, which accumulate in cells during the lifetime of an organism, could be used as lineage markers to reconstruct its entire cell lineage (Frumkin et al., 2005; Salipante and Horwitz, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Frumkin et al., 2005 and Salipante and Horwitz, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "89d35b76-dcef-49ef-8e50-0eb5a0d4ba62",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C9",
+      "claim": "The use of naturally occurring somatic mutations for lineage reconstruction is limited by the challenge of detecting rare mutations within individual cell genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While this approach is theoretically possible (Frumkin et al., 2005), it is nevertheless limited by the enormous challenge of detecting these rare mutations within the genomes of individual cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citation to Frumkin et al., 2005",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "e9a151c8-bc0a-4954-9db5-a373fc2017b8",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C10",
+      "claim": "CRISPR-induced mutations destroy the match between target and sgRNA, making mutated targets immune to further change.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, the mutation destroys the match between target and sgRNA meaning a mutated target is immune to further change",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about CRISPR mechanism in the introduction",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "51cd418c-72ed-4763-938a-8c88d8a09210",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C11",
+      "claim": "The optimal mutation rate for lineage reconstruction with 100 CRISPR targets after 16 cell divisions is between 0.05 and 0.2 mutations per cell division per target.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation rates show a broad optimum between between 0.05 and 0.2 mutations per cell division per target",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Derived from simulation results shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "fa2ae833-ec3c-4d5d-b269-98ea419e189c",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C12",
+      "claim": "Under optimal mutation rates (0.05-0.2), 56-97% of target sites are mutated after 16 cell divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "under these rates, 56\u201397% of target sites are mutated after 16 cell divisions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "b39c487e-e3e2-4a17-833c-22dfd93c655c",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C15",
+      "claim": "Most CRISPR-induced mutations are small deletions or insertions located close to the Cas9 editing site.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in previous studies (van Overbeek et al., 2016; Allen et al., 2018; Chen et al., 2018), we found that most of the mutations were located close to the Cas9 editing site",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation consistent with cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "61ce92ba-41af-4990-bdc3-8afc1c0a739b",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C16",
+      "claim": "More than 200 distinct mutated states were observed in the FAST target.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on the 9 bp adjacent to the PAM sequence (Figure 4B) we observed >200 mutated states",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "56b46d6b-1945-472d-b36a-21a114e0de40",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C17",
+      "claim": "The frequencies of CRISPR mutations follow an exponential curve, with a few variants occurring at high frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequencies of mutations follow an exponential curve, with a few variants occurring at high frequency (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experimental data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "c18d5c61-85d8-4f7b-9b0e-b740c4bae85e",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C18",
+      "claim": "59 mutations account for 95% of the total number of mutations in the FAST target.",
+      "claim_type": "EXPLICIT",
+      "source": "59 mutations account for 95% of the total number of mutations",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "9324a5ac-4d83-48ca-8c12-3b57a6364719",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C19",
+      "claim": "Using the experimentally measured distribution of mutational outcomes, the accuracy of cell lineage reconstruction with 32 FAST targets is 72%.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the experimentally measured distribution of mutational outcomes, the accuracy of cell lineage reconstruction is 72% (see Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "ea614a3d-4005-4f6f-9158-47351d9f465b",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C20",
+      "claim": "Weighting mutations in inverse proportion to their frequency improves lineage reconstruction accuracy from 72% to 82%.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this approach, the accuracy of lineage reconstruction using the same 61 states improved from 72% to 82% (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "dcde9bc5-1e17-4a0a-8a67-cbb5fca10953",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C21",
+      "claim": "Early Drosophila embryos initially go through 13 rapid and near-synchronous nuclear divisions to generate a syncytial blastoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Early Drosophila embryos, for example, initially go through a series of 13 rapid and near-synchronous nuclear divisions to generate a uniform syncytial blastoderm (Zalokar and Erk, 1976)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Zalokar and Erk, 1976",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "6ac69620-c053-4a9b-a6a9-0a53dc5baca8",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C22",
+      "claim": "The duration of each mitotic cycle in early Drosophila embryos is approximately 10 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "during this phase the duration of each mitotic cycle is very short (~10 min)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about Drosophila development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "c4903c4f-1f4d-479a-9ed5-d04303015324",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C23",
+      "claim": "After cellularisation at cell cycle 14, the rate of cell division in the Drosophila embryo slows considerably and becomes asynchronous.",
+      "claim_type": "EXPLICIT",
+      "source": "After cellularisation at cell cycle 14, the rate of cell division in the embryo slows considerably and becomes asynchronous (Foe, 1989; Hartenstein, 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Foe, 1989 and Hartenstein, 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "0aefe00d-b2e6-49d1-b031-7ea0ff07897b",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C24",
+      "claim": "With uneven cell division rates approximating Drosophila development, the accuracy of lineage reconstruction using FAST targets falls to 9%.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, we would expect the accuracy of lineage reconstruction to be considerably worse, as there will be many fewer mutations accumulated in the rapid early cell cycles, and indeed the accuracy fell to just 9% (without using the weighting scheme; see Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "1d61c78f-9fe7-453f-aa82-e80274d721ab",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C26",
+      "claim": "Target dropouts have a major impact on the accuracy of lineage reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that dropouts have a major impact on the accuracy of lineage reconstruction (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "5d520f6e-fe6e-402b-9e02-92e4c278e3be",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C27",
+      "claim": "With dropouts, the accuracy of lineage reconstruction using 32 FAST targets drops from 72% to 23%.",
+      "claim_type": "EXPLICIT",
+      "source": "after 16 cell divisions, the accuracy dropped from 72% to 23% (or from 82% to 26% with weighted mutational outcomes)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation result comparing scenarios with and without dropouts",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "eab6bfb3-b106-4d66-8709-c0609b7493ee",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C28",
+      "claim": "The MEMOIR approach using 32 targets with 2 character states achieves only 4% accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the accuracy is only 4%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation result for MEMOIR approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "a3c11f57-ca3c-4fd5-b57d-58bf5b6935bb",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C30",
+      "claim": "The optimal mutation rate for lineage reconstruction using SOLiD sequencing (4 character states) lies between 0.05 and 0.12 mutations per cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show (Figure 7C) that the optimal mutation rate for lineage reconstruction by this approach lies between 0.05 and 0.12 mutations per cell division",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "41fbfc34-4b52-491c-a7d2-fd1814018dff",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C32",
+      "claim": "With a single SOLiD read using 32 FAST targets, the mean accuracy of reconstructed cell lineages is 45%.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that, with a single SOLiD read, using a recorder with 32 targets, the mean accuracy of reconstructed cell lineages is 45% (Figure 7B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "05830635-6637-4831-af31-0528a0a20247",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C33",
+      "claim": "The reconstruction accuracy obtained by performing 1 SOLiD sequencing cycle on 64 FAST targets is 69%.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the reconstruction accuracy obtained by performing 1 SOLiD sequencing cycle on 64 FAST targets is higher (69%) than performing 2 SOLiD cycles on 32 FAST targets (65%) (Figure 7B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "dd6bc6c3-0bfe-4860-bf13-c9dec93adec0",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C34",
+      "claim": "The reconstruction accuracy obtained by performing 2 SOLiD sequencing cycles on 32 FAST targets is 65%.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the reconstruction accuracy obtained by performing 1 SOLiD sequencing cycle on 64 FAST targets is higher (69%) than performing 2 SOLiD cycles on 32 FAST targets (65%) (Figure 7B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "adfa8041-570d-4015-99c4-99a556987471",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C35",
+      "claim": "The GESTALT v7 construct contains 10 different CRISPR targets.",
+      "claim_type": "EXPLICIT",
+      "source": "The v7 construct contains 10 different CRISPR targets that were targeted with 10 different sgRNAs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of GESTALT construct",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "4cbf56d3-55ff-4e05-aad8-1c39edc31fc3",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C36",
+      "claim": "The estimated mutation rate for GESTALT targets ranges from approximately 0.01 to approximately 0.23 per cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated mutation rate ranges from ~0.01 (for target 10) to ~0.23 (for target 7) per cell division",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from GESTALT experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "4172d559-51fb-43cd-90eb-1c8b09a146b6",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C37",
+      "claim": "The mean accuracy of the GESTALT approach is 14% after 16 cell divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the mean accuracy of the GESTALT approach is just 14% after 16 cell divisions (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "27b4cf48-e972-41f7-adba-cd64c4fc8dde",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C38",
+      "claim": "The GESTALT implementation is not suited for reconstructing a complete, accurate cell lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that this implementation of GESTALT is not suited for reconstructing a complete, accurate cell lineage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on simulation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "ae302271-5b62-4f1b-95ff-9aa853d8ac67",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C39",
+      "claim": "Under ideal conditions, 30 targets are sufficient to reach an overall tree accuracy of approximately 70% for a lineage of approximately 65,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Under ideal conditions (optimized mutation rates, uniform cell divisions, fully sequenced targets), 30 targets are sufficient to reach an overall tree accuracy of ~70% for a lineage of ~65,000 cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "fdd144a0-43e4-4a70-a2bc-96f430ba8b2e",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C40",
+      "claim": "100 targets would yield trees that have an accuracy above 90% under ideal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "100 targets would yield trees that have an accuracy above 90% (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "9c2ca320-4c6a-4dc0-a4ad-78d2fc6974e0",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C41",
+      "claim": "More than 200 targets would be required to get a highly accurate (>95%) tree using a single 4-colour SOLiD read per target.",
+      "claim_type": "EXPLICIT",
+      "source": "If we were only able to take a single 4-colour SOLiD read per target, more than 200 targets would be required to get a highly accurate (>95%) tree (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "9af7389e-1b6e-480e-9790-0e39ad8b202d",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C42",
+      "claim": "Most of the CRISPR recorders published to date rely on at most 10 CRISPR targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that most of the CRISPR recorders published to date, which rely on at most 10 CRISPR targets (McKenna et al., 2016; Raj et al., 2018; Frieda et al., 2017; Junker et al., 2016; Schmidt et al., 2017; Alemany et al., 2018), yield trees of very low overall accuracy and lineage resolution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with multiple citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "2c1b7bad-5ec1-4a4d-a3ba-85cfbe579358",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C43",
+      "claim": "Most published CRISPR recorders yield trees of very low overall accuracy and lineage resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that most of the CRISPR recorders published to date, which rely on at most 10 CRISPR targets (McKenna et al., 2016; Raj et al., 2018; Frieda et al., 2017; Junker et al., 2016; Schmidt et al., 2017; Alemany et al., 2018), yield trees of very low overall accuracy and lineage resolution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on simulation results and comparison with published methods",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "facb2910-3442-4dc3-ba6e-b4ebf480cd44",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C44",
+      "claim": "The clones of 33-64 cells reconstructed in simulations based on the FAST construct without dropouts have a high accuracy of 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show, for example, that the clones of 33\u201364 cells reconstructed in simulations based on our FAST construct without dropouts have a high accuracy of 90% and correspondingly low errors, with less than 5% of both FP and FN",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation result for false positive and false negative analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "0205041c-53d9-4bbd-9c98-68a1b30ece67",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C45",
+      "claim": "The clones of 33-64 cells reconstructed in simulations based on the FAST construct without dropouts have less than 5% false positives and false negatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show, for example, that the clones of 33\u201364 cells reconstructed in simulations based on our FAST construct without dropouts have a high accuracy of 90% and correspondingly low errors, with less than 5% of both FP and FN",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation result for false positive and false negative analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "72357a10-c8f8-413b-b168-6fd09b8c2aa0",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C47",
+      "claim": "The Drosophila U6.2 promoter produces lower levels of CRISPR activity compared to the U6.1 and U6.3 promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila U6.2 promoter has been shown by previous studies to produce lower levels of CRISPR activity when compared to the U6.1 and U6.3 promoters (Port et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Port et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "2c515f52-f923-4be0-87d7-0301ce88b88e",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C49",
+      "claim": "The dinucleotide located 6-7 bp upstream of the PAM is the most informative for lineage reconstruction using SOLiD sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that positions 6\u20137 bp 5' of the PAM sequence yield the most equiprobable colour frequencies for the FAST target (Figure 7A), minimising homoplasy in the observed character states",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of experimental data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "457b0e8e-936d-4ed7-bc98-cc184a45a69e",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C50",
+      "claim": "Computer simulations were performed using MATLAB v2017a.",
+      "claim_type": "EXPLICIT",
+      "source": "Computer simulations were performed using MATLAB v2017a (Mathworks, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methods description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "6a8f8240-1b94-4f5d-93c9-70326e09df32",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C51",
+      "claim": "The accuracy of each cell-lineage reconstruction was determined by calculating a measure related to the Robinson-Foulds distance between the reference and inferred trees.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of each cell-lineage reconstruction was determined by calculating a measure related to the Robinson-Foulds distance between the reference and the inferred trees",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methods description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "7af7a284-4ea6-48a4-809c-ee6e4885c569",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C52",
+      "claim": "Most cell lineages were inferred using the Neighbor-Joining method.",
+      "claim_type": "EXPLICIT",
+      "source": "Most cell lineages were inferred using the Neighbor-Joining method (NJ)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methods description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "22cdfbab-1341-4b14-84a4-ec8926c5d10a",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C53",
+      "claim": "The Neighbor joining algorithm was implemented using PAUP* software version 4.0a build 158.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Neighbor joining algorithm as implemented in the PAUP* software (version 4.0a build 158; (Swofford, 2017))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methods description with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "41964b2c-e06a-447c-8a2a-b5193303e6e1",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C54",
+      "claim": "Accuracy is consistently slightly higher using parsimony compared to Neighbor Joining.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that, while accuracy is consistently slightly higher using parsimony, the average time taken to reconstruct a tree of only 180 cells is on average ~52 hr compared to less than 1 s using Neighbor Joining (see Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "43a45cb5-7e38-427b-8f89-fcaefde3d679",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C55",
+      "claim": "The average time taken to reconstruct a tree of 180 cells using parsimony is approximately 52 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "the average time taken to reconstruct a tree of only 180 cells is on average ~52 hr compared to less than 1 s using Neighbor Joining (see Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "e234494e-ba6f-46df-bf5e-d04f5c9ecd5b",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C56",
+      "claim": "The average time taken to reconstruct a tree of 180 cells using Neighbor Joining is less than 1 second.",
+      "claim_type": "EXPLICIT",
+      "source": "the average time taken to reconstruct a tree of only 180 cells is on average ~52 hr compared to less than 1 s using Neighbor Joining (see Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "a5fee126-6e61-4eb4-9f0e-b29b7b26afd6",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C58",
+      "claim": "The GESTALT data was obtained from zebrafish embryos at 30 hours post-fertilisation.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyse the accuracy of GESTALT, we used data from the v7 construct at the 30 hr post-fertilisation stage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "e1f5e5ac-8ed9-4e17-b82b-5fef9ad58f29",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C59",
+      "claim": "At 30 hours post-fertilisation, the zebrafish embryo consists of approximately 25,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At this stage the zebrafish embryo consists of approximately 25,000 cells, resulting from ~15 rounds of cell division",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about zebrafish development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "ede6975b-7b53-4d9c-85bb-2da96c8dff6a",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C60",
+      "claim": "The simulated GESTALT samples produced an average of 3022 alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulated samples produced an average of 3022 alleles (s.d. = 877 alleles; see Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "fa307efa-5191-43ce-85b5-70985df8eb5f",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C61",
+      "claim": "The experimental GESTALT data contained 1,000-2,500 alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to the 1,000\u20132,500 alleles found in the experimental data (McKenna et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from McKenna et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "4f5adc95-d844-48ff-81e2-88215cea0f95",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C62",
+      "claim": "Rare mutations are better lineage markers than more frequent mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Rarely occurring mutations are less likely to appear independently in the same target in more than one branch of the lineage tree (an instance of homoplasy), suggesting that rare mutations are better lineage markers than more frequent mutations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from simulation results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "824a574e-96ea-42e6-bd90-bc1bac1659e0",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C63",
+      "claim": "Higher mutation rates are needed for high lineaging accuracy when the rates of cell division are uneven.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that higher mutation rates are needed for high lineaging accuracy when the rates of cell division are uneven",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from simulation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "ac70ab52-337c-4b83-8ca6-f197c2bb705a",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C64",
+      "claim": "The problem of dropouts could be reduced by opting for the lower end of the optimal range of mutation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The problem of dropouts could be reduced by opting for the lower end of the optimal range of mutation rates; or eliminated by targeting separate loci in the genome rather than arrays of targets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed solution based on simulation insights",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "95e8d1f3-f936-4661-b96b-815a2b8cc8e7",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C65",
+      "claim": "The problem of dropouts could be eliminated by targeting separate loci in the genome rather than arrays of targets.",
+      "claim_type": "EXPLICIT",
+      "source": "The problem of dropouts could be reduced by opting for the lower end of the optimal range of mutation rates; or eliminated by targeting separate loci in the genome rather than arrays of targets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed solution based on simulation insights",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "850bcf74-d396-4ed0-ba68-eef0aee2d139",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "claim_id": "C66",
+      "claim": "Optimised recorders will ultimately allow the reconstruction of accurate cell lineages of complex multicellular organisms at the level of a single cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study predicts that optimised recorders will ultimately allow the reconstruction of accurate cell lineages of complex multicellular organisms at the level of a single cell",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on simulation results",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "86a08445-e60d-4485-926e-eb3b89115e3d",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Simulations with equiprobable mutational outcomes show that optimal mutation rates for lineage reconstruction with 100 CRISPR targets after 16 cell divisions lie between 0.05-0.2 mutations per cell division per target, resulting in 56-97% target saturation. Under ideal conditions, 30 targets achieve ~70% accuracy for ~65,000 cells, 100 targets achieve >90% accuracy, and >200 targets are required for >95% accuracy with single SOLiD reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 are directly supported by simulation data in Figure 2C showing the broad optimal mutation rate range. Claims C39-C41 are supported by Figure 2D showing accuracy as a function of target number and mutation rate. The simulations use appropriate methods (geometric distribution, Neighbor-Joining reconstruction, Robinson-Foulds accuracy metric) and report results from 10 replicates with confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "d8e92801-cba9-4db4-bee3-2d472394dd1d",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Experimental characterization of CRISPR-induced mutations in the FAST target in Drosophila reveals >200 distinct mutated states in the 9bp region adjacent to the PAM, with mutation frequencies following an exponential distribution where 59 mutations account for 95% of total mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are supported by experimental sequencing data from transgenic Drosophila (Figure 4B-C). The observation that mutations cluster near the Cas9 editing site is consistent with cited prior work. The exponential frequency distribution and the concentration of 95% of mutations in 59 states are directly shown in Figure 4C. Methods describe appropriate quality filtering and error correction using untargeted controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "5c3c3712-4b9b-4f87-b051-05db7ba699f0",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using experimentally measured mutational outcomes from the FAST target, simulations show 72% accuracy for lineage reconstruction with 32 targets, which improves to 82% when mutations are weighted inversely proportional to their frequency, because rare mutations are better lineage markers due to lower homoplasy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 are supported by simulation results in Figure 5B using the real distribution of 61 mutational states observed experimentally. The improvement from weighting is substantial (72% to 82%) and the reasoning in C62 about homoplasy is sound\u2014rare mutations are less likely to arise independently in multiple lineages. The simulations appropriately model the non-equiprobable nature of real CRISPR mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "596a9536-d6fe-4fcc-bd10-f3f51aa420e6",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When modeling uneven cell division rates that approximate Drosophila development (13 rapid ~10-minute cycles followed by slower asynchronous divisions), lineage reconstruction accuracy drops dramatically to 9% with the empirically measured mutation rate, but can be improved to 73% with an 11-fold higher optimal mutation rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 accurately describe Drosophila development based on cited literature. Claim C24 is supported by simulation results in Figure 5B showing the dramatic accuracy drop to 9%. Claim C63 and the improved accuracy with higher mutation rates are supported by Figure 5\u2014figure supplement 1. The Poisson model for time-dependent mutation is appropriate for uneven division rates. The conclusion that higher mutation rates are needed for uneven divisions is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "8819a601-aa1f-4c82-9ef8-e454765e6adc",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Target dropouts caused by simultaneous CRISPR edits at multiple sites have a major negative impact on lineage reconstruction, reducing accuracy from 72% to 23% (or 82% to 26% with weighting) for 32 FAST targets after 16 cell divisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are supported by simulation results in Figure 6B. The dropout model (removing all targets between two simultaneously mutated sites) is clearly described and represents a realistic biological phenomenon observed in GESTALT data. The dramatic reduction in accuracy (from 72% to 23%) demonstrates the substantial impact of this technical limitation. The simulations appropriately treat dropouts as missing data in phylogenetic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "7039cc46-82e0-4039-99bb-e73dd1902fab",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The MEMOIR approach using 32 targets with only 2 character states (mutated vs unmutated) achieves only 4% accuracy for lineage reconstruction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is supported by simulation results shown in Figure 7B. The low accuracy reflects the fundamental limitation of binary character states for phylogenetic reconstruction. The simulation appropriately models the MEMOIR technical constraint of distinguishing only mutated from unmutated targets via in situ hybridization. The result is consistent with information theory\u20142 states provide far less information than the ~60 states available with full sequencing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "ef8d306e-a724-4e7a-8265-68557b0e671c",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "For SOLiD sequencing-based lineage reconstruction with 4 character states, optimal mutation rates lie between 0.05-0.12 per cell division. With 32 FAST targets and a single SOLiD read at positions 6-7bp from PAM (the most informative dinucleotide), mean accuracy is 45%. One SOLiD cycle on 64 targets (69% accuracy) outperforms two cycles on 32 targets (65% accuracy).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C32-C34 are supported by simulation results in Figure 7B-C. Claim C49 is supported by analysis in Figure 7A showing positions 6-7bp yield the most equiprobable color frequencies. The comparison between sequencing strategies (1 cycle/64 targets vs 2 cycles/32 targets) provides practical guidance. The simulations appropriately model SOLiD's degenerate 4-color encoding and account for the real frequency distribution of mutations at specific dinucleotide positions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "8bebb172-cef7-454c-ac81-bc55f98744ac",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Simulations based on the published GESTALT v7 construct (10 targets with mutation rates ranging from ~0.01 to ~0.23 per cell division) show only 14% mean accuracy after 16 cell divisions, indicating this implementation is not suited for reconstructing complete, accurate cell lineages. The simulations produce ~3022 alleles, comparable to the 1,000-2,500 alleles observed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C58-C61 are supported by simulations based on published GESTALT data (Figure 6B, Figure 6\u2014figure supplement 1). The mutation rates were estimated from experimental saturation data using appropriate geometric distribution assumptions. The simulated allele count (3022 \u00b1 877) overlaps with the experimental range (1,000-2,500), validating the simulation parameters. The low accuracy (14%) is consistent with the small number of targets (10) and high dropout rate. The conclusion in C38 is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "7b234d86-04db-41b6-b65b-b7042c557f11",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Most published CRISPR recorders rely on at most 10 CRISPR targets and yield trees of very low overall accuracy and lineage resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by the simulation results showing that 10 targets (as in GESTALT) achieve only 14% accuracy, and by comparison with the optimal target numbers (30-100+) identified in other simulations. The claim is appropriately supported by multiple citations to published recorders. However, the evaluation is somewhat general\u2014the cited papers may have had different goals (e.g., clonal analysis rather than complete single-cell lineages) that don't require the same level of accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "77404ff7-28b5-4ce2-b270-c414b5692f61",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For clones of 33-64 cells reconstructed using the FAST construct without dropouts, accuracy is 90% with less than 5% false positives and false negatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by simulation results analyzing false positive and false negative rates at different clade sizes (Figure 9). The high accuracy (90%) and low error rates (<5% FP and FN) for mid-sized clones demonstrate that the method performs well for intermediate-scale lineage reconstruction. The FP/FN metrics provide an intuitive measure of practical utility complementing the Robinson-Foulds accuracy measure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "1012c5a3-c763-4593-a82f-a41f5b8291a6",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Drosophila U6.2 promoter produces lower levels of CRISPR activity compared to U6.1 and U6.3 promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by citation to Port et al., 2014. This is a methodological choice to achieve lower mutation rates. The claim accurately represents prior work and the rationale for using U6.2 is sound given the need to tune mutation rates to optimal levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "4472421c-55df-4416-a401-a913ba1e8abe",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Simulations were performed in MATLAB v2017a using Neighbor-Joining for tree reconstruction (PAUP* v4.0a build 158) and Robinson-Foulds-related accuracy measures. Parsimony yields slightly higher accuracy than Neighbor-Joining but requires ~52 hours vs <1 second for 180 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C56 accurately describe the computational methods. The comparison between parsimony and NJ (Figure 2\u2014figure supplement 1) justifies the choice of NJ for large-scale simulations. The dramatic difference in computational time (52 hr vs <1 s) makes parsimony impractical for the 65,536-cell trees being simulated. Software versions are specified, though random seeds are not mentioned (potential reproducibility concern for stochastic simulations).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "51c565fc-1168-4edd-8a46-51a1a07e0c25",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The problem of dropouts could be reduced by using lower mutation rates or eliminated by targeting separate genomic loci rather than arrays of targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C65 propose solutions to the dropout problem but are speculative. While the reasoning is sound (lower mutation rates reduce simultaneous cuts; separate loci eliminate inter-target deletions), these solutions are not tested experimentally or in simulation. The trade-offs are not fully explored\u2014lower mutation rates may reduce accuracy for other reasons, and separate loci may have other technical challenges. These are reasonable suggestions for future work but lack direct support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "67157866-f76f-4a11-80db-0ad2873dc260",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Optimized recorders will ultimately allow reconstruction of accurate cell lineages of complex multicellular organisms at single-cell level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 is a forward-looking prediction based on the simulation results but remains speculative. While the simulations show that high accuracy is theoretically achievable with optimized parameters (100+ targets, optimal mutation rates, etc.), significant technical challenges remain unaddressed: synthesizing and delivering 100+ target constructs, achieving uniform mutation rates across all targets, preventing dropouts, and performing single-cell sequencing at scale. The prediction is optimistic but not yet demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    },
+    {
+      "id": "2b75f37c-e90b-4053-a163-f414b95f9390",
+      "content_id": "4bbe9ee3-4118-4a6e-9ff2-28343495e756",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about cell numbers in various organisms, CRISPR mechanisms, and developmental biology are stated to provide context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C4, C6-C10, C21-C23, C59) provide background context and are supported by appropriate citations to the literature. They accurately represent established knowledge about organism cell counts, C. elegans lineaging, CRISPR mechanisms, and Drosophila/zebrafish development. These are not novel findings but necessary context for understanding the study's motivation and parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:19:12.646856Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "51cd418c-72ed-4763-938a-8c88d8a09210",
+      "result_id": "86a08445-e60d-4485-926e-eb3b89115e3d"
+    },
+    {
+      "claim_id": "fa2ae833-ec3c-4d5d-b269-98ea419e189c",
+      "result_id": "86a08445-e60d-4485-926e-eb3b89115e3d"
+    },
+    {
+      "claim_id": "ae302271-5b62-4f1b-95ff-9aa853d8ac67",
+      "result_id": "86a08445-e60d-4485-926e-eb3b89115e3d"
+    },
+    {
+      "claim_id": "fdd144a0-43e4-4a70-a2bc-96f430ba8b2e",
+      "result_id": "86a08445-e60d-4485-926e-eb3b89115e3d"
+    },
+    {
+      "claim_id": "9c2ca320-4c6a-4dc0-a4ad-78d2fc6974e0",
+      "result_id": "86a08445-e60d-4485-926e-eb3b89115e3d"
+    },
+    {
+      "claim_id": "b39c487e-e3e2-4a17-833c-22dfd93c655c",
+      "result_id": "d8e92801-cba9-4db4-bee3-2d472394dd1d"
+    },
+    {
+      "claim_id": "61ce92ba-41af-4990-bdc3-8afc1c0a739b",
+      "result_id": "d8e92801-cba9-4db4-bee3-2d472394dd1d"
+    },
+    {
+      "claim_id": "56b46d6b-1945-472d-b36a-21a114e0de40",
+      "result_id": "d8e92801-cba9-4db4-bee3-2d472394dd1d"
+    },
+    {
+      "claim_id": "c18d5c61-85d8-4f7b-9b0e-b740c4bae85e",
+      "result_id": "d8e92801-cba9-4db4-bee3-2d472394dd1d"
+    },
+    {
+      "claim_id": "9324a5ac-4d83-48ca-8c12-3b57a6364719",
+      "result_id": "5c3c3712-4b9b-4f87-b051-05db7ba699f0"
+    },
+    {
+      "claim_id": "ea614a3d-4005-4f6f-9158-47351d9f465b",
+      "result_id": "5c3c3712-4b9b-4f87-b051-05db7ba699f0"
+    },
+    {
+      "claim_id": "4f5adc95-d844-48ff-81e2-88215cea0f95",
+      "result_id": "5c3c3712-4b9b-4f87-b051-05db7ba699f0"
+    },
+    {
+      "claim_id": "dcde9bc5-1e17-4a0a-8a67-cbb5fca10953",
+      "result_id": "596a9536-d6fe-4fcc-bd10-f3f51aa420e6"
+    },
+    {
+      "claim_id": "6ac69620-c053-4a9b-a6a9-0a53dc5baca8",
+      "result_id": "596a9536-d6fe-4fcc-bd10-f3f51aa420e6"
+    },
+    {
+      "claim_id": "c4903c4f-1f4d-479a-9ed5-d04303015324",
+      "result_id": "596a9536-d6fe-4fcc-bd10-f3f51aa420e6"
+    },
+    {
+      "claim_id": "0aefe00d-b2e6-49d1-b031-7ea0ff07897b",
+      "result_id": "596a9536-d6fe-4fcc-bd10-f3f51aa420e6"
+    },
+    {
+      "claim_id": "824a574e-96ea-42e6-bd90-bc1bac1659e0",
+      "result_id": "596a9536-d6fe-4fcc-bd10-f3f51aa420e6"
+    },
+    {
+      "claim_id": "1d61c78f-9fe7-453f-aa82-e80274d721ab",
+      "result_id": "8819a601-aa1f-4c82-9ef8-e454765e6adc"
+    },
+    {
+      "claim_id": "5d520f6e-fe6e-402b-9e02-92e4c278e3be",
+      "result_id": "8819a601-aa1f-4c82-9ef8-e454765e6adc"
+    },
+    {
+      "claim_id": "eab6bfb3-b106-4d66-8709-c0609b7493ee",
+      "result_id": "7039cc46-82e0-4039-99bb-e73dd1902fab"
+    },
+    {
+      "claim_id": "a3c11f57-ca3c-4fd5-b57d-58bf5b6935bb",
+      "result_id": "ef8d306e-a724-4e7a-8265-68557b0e671c"
+    },
+    {
+      "claim_id": "41fbfc34-4b52-491c-a7d2-fd1814018dff",
+      "result_id": "ef8d306e-a724-4e7a-8265-68557b0e671c"
+    },
+    {
+      "claim_id": "05830635-6637-4831-af31-0528a0a20247",
+      "result_id": "ef8d306e-a724-4e7a-8265-68557b0e671c"
+    },
+    {
+      "claim_id": "dd6bc6c3-0bfe-4860-bf13-c9dec93adec0",
+      "result_id": "ef8d306e-a724-4e7a-8265-68557b0e671c"
+    },
+    {
+      "claim_id": "2c515f52-f923-4be0-87d7-0301ce88b88e",
+      "result_id": "ef8d306e-a724-4e7a-8265-68557b0e671c"
+    },
+    {
+      "claim_id": "adfa8041-570d-4015-99c4-99a556987471",
+      "result_id": "8bebb172-cef7-454c-ac81-bc55f98744ac"
+    },
+    {
+      "claim_id": "4cbf56d3-55ff-4e05-aad8-1c39edc31fc3",
+      "result_id": "8bebb172-cef7-454c-ac81-bc55f98744ac"
+    },
+    {
+      "claim_id": "4172d559-51fb-43cd-90eb-1c8b09a146b6",
+      "result_id": "8bebb172-cef7-454c-ac81-bc55f98744ac"
+    },
+    {
+      "claim_id": "27b4cf48-e972-41f7-adba-cd64c4fc8dde",
+      "result_id": "8bebb172-cef7-454c-ac81-bc55f98744ac"
+    },
+    {
+      "claim_id": "a5fee126-6e61-4eb4-9f0e-b29b7b26afd6",
+      "result_id": "8bebb172-cef7-454c-ac81-bc55f98744ac"
+    },
+    {
+      "claim_id": "e1f5e5ac-8ed9-4e17-b82b-5fef9ad58f29",
+      "result_id": "8bebb172-cef7-454c-ac81-bc55f98744ac"
+    },
+    {
+      "claim_id": "ede6975b-7b53-4d9c-85bb-2da96c8dff6a",
+      "result_id": "8bebb172-cef7-454c-ac81-bc55f98744ac"
+    },
+    {
+      "claim_id": "fa307efa-5191-43ce-85b5-70985df8eb5f",
+      "result_id": "8bebb172-cef7-454c-ac81-bc55f98744ac"
+    },
+    {
+      "claim_id": "9af7389e-1b6e-480e-9790-0e39ad8b202d",
+      "result_id": "7b234d86-04db-41b6-b65b-b7042c557f11"
+    },
+    {
+      "claim_id": "2c1b7bad-5ec1-4a4d-a3ba-85cfbe579358",
+      "result_id": "7b234d86-04db-41b6-b65b-b7042c557f11"
+    },
+    {
+      "claim_id": "facb2910-3442-4dc3-ba6e-b4ebf480cd44",
+      "result_id": "77404ff7-28b5-4ce2-b270-c414b5692f61"
+    },
+    {
+      "claim_id": "0205041c-53d9-4bbd-9c98-68a1b30ece67",
+      "result_id": "77404ff7-28b5-4ce2-b270-c414b5692f61"
+    },
+    {
+      "claim_id": "72357a10-c8f8-413b-b168-6fd09b8c2aa0",
+      "result_id": "1012c5a3-c763-4593-a82f-a41f5b8291a6"
+    },
+    {
+      "claim_id": "457b0e8e-936d-4ed7-bc98-cc184a45a69e",
+      "result_id": "4472421c-55df-4416-a401-a913ba1e8abe"
+    },
+    {
+      "claim_id": "6a8f8240-1b94-4f5d-93c9-70326e09df32",
+      "result_id": "4472421c-55df-4416-a401-a913ba1e8abe"
+    },
+    {
+      "claim_id": "7af7a284-4ea6-48a4-809c-ee6e4885c569",
+      "result_id": "4472421c-55df-4416-a401-a913ba1e8abe"
+    },
+    {
+      "claim_id": "22cdfbab-1341-4b14-84a4-ec8926c5d10a",
+      "result_id": "4472421c-55df-4416-a401-a913ba1e8abe"
+    },
+    {
+      "claim_id": "41964b2c-e06a-447c-8a2a-b5193303e6e1",
+      "result_id": "4472421c-55df-4416-a401-a913ba1e8abe"
+    },
+    {
+      "claim_id": "43a45cb5-7e38-427b-8f89-fcaefde3d679",
+      "result_id": "4472421c-55df-4416-a401-a913ba1e8abe"
+    },
+    {
+      "claim_id": "e234494e-ba6f-46df-bf5e-d04f5c9ecd5b",
+      "result_id": "4472421c-55df-4416-a401-a913ba1e8abe"
+    },
+    {
+      "claim_id": "ac70ab52-337c-4b83-8ca6-f197c2bb705a",
+      "result_id": "51c565fc-1168-4edd-8a46-51a1a07e0c25"
+    },
+    {
+      "claim_id": "95e8d1f3-f936-4661-b96b-815a2b8cc8e7",
+      "result_id": "51c565fc-1168-4edd-8a46-51a1a07e0c25"
+    },
+    {
+      "claim_id": "850bcf74-d396-4ed0-ba68-eef0aee2d139",
+      "result_id": "67157866-f76f-4a11-80db-0ad2873dc260"
+    },
+    {
+      "claim_id": "a78b323d-d1cc-4a95-b1e6-c22300c164e4",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "bac79ccd-90a9-44eb-9537-92fd3cf1cbaf",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "2a880f3f-4a0d-4ed5-b08e-65caf4eec96a",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "cd3354fb-491a-4b1d-b444-74e8508ddf3f",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "aec99c28-cd62-457d-9359-b44f495c96eb",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "11dce5af-6253-4d8a-a6ca-47bf413694eb",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "3765b3c1-63f2-4a58-97e4-b8eac40005e8",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "89d35b76-dcef-49ef-8e50-0eb5a0d4ba62",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "e9a151c8-bc0a-4954-9db5-a373fc2017b8",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "dcde9bc5-1e17-4a0a-8a67-cbb5fca10953",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "6ac69620-c053-4a9b-a6a9-0a53dc5baca8",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "c4903c4f-1f4d-479a-9ed5-d04303015324",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    },
+    {
+      "claim_id": "e1f5e5ac-8ed9-4e17-b82b-5fef9ad58f29",
+      "result_id": "2b75f37c-e90b-4053-a163-f414b95f9390"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "MRSA is a widespread antibiotic-resistant pathogen that has expanded from healthcare facilities to community settings, with geographic variation in prevalence. Sweden maintains low MRSA prevalence, with substantial importation from abroad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide well-cited background on MRSA epidemiology from established literature. The claims about MRSA's threat, geographic distribution, and Sweden's situation are supported by multiple citations to prior research and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "In the study dataset, MRSA infections show no clear ward clustering. Infected wards have higher patient numbers, longer stays, and larger sizes than uninfected wards, but patient-days alone cannot explain infection patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 describe observed patterns in the data with appropriate visual evidence (Figure 1). The statistical observations about ward characteristics are directly supported by data, though the causal inference about control measures (C12) is speculative but reasonably supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The hospital contact network exhibits complex spatiotemporal dynamics with heavy-tailed distributions of hospitalization, readmission, and contact times. Patient transfers and readmissions connect otherwise isolated facilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 characterize the contact network structure with data from Figure 1 supplements. The observations about network properties, patient movements, and temporal patterns are well-documented. C18 is supported by prior literature on MRSA transmission mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The inference system successfully estimated time-varying transmission parameters (\u03b2, I\u2080, C\u2080) for UK EMRSA-15 over 6 years. The inferred dynamics fit observed incidence well and accurately reproduce spatial distribution of infections and distinguish imported from nosocomial cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 demonstrate model validation with strong agreement between simulations and observations (Figure 3). Statistical analyses (Figure 3 supplements) support goodness of fit. The classification of imported vs. nosocomial cases matches clinical criteria (48-hour threshold), providing external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "UK EMRSA-15 gradually invaded Swedish hospitals from the community during year 1, experienced growth in transmission and importation rates in years 2-4, then declined to near-elimination by year 6. Household transmission by discharged colonized patients may have driven importation increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34, C38, and C39 are supported by inferred parameter trends (Figure 3A, Table 2). However, C37 and C40 are explicitly speculative about mechanisms (household transmission, future outbreak risk). While plausible, these mechanistic explanations lack direct evidence and represent hypotheses rather than demonstrated findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The contact network's spatiotemporal complexity creates a power-law distribution of colonization risk, with high-risk patients appearing in densely connected clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by the power-law distribution analysis (Figure 4B, y\u221dx^-2.13) with rigorous statistical testing (Figure 4 supplement 1) and network visualization (Figure 4C). The emergence of heterogeneous risk from network structure is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Inference-based screening of 0.89% of patients can avert 38% of infections and 9% of colonizations. Effectiveness increases with lower decolonization thresholds but shows diminishing returns. Decolonization success rate significantly impacts outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by retrospective control experiments (Figure 5A-B) with 1000 simulation replicates. The quantitative results are clearly presented with uncertainty estimates. The diminishing returns observation (C46) is appropriately explained by importation that cannot be controlled by inpatient intervention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Inference-based intervention substantially outperforms heuristic strategies (number of contacts: 21% infection reduction; length of stay: 27%; contact tracing: 28%) by identifying superspreaders and disrupting transmission pathways preventively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide quantitative comparisons from controlled experiments (Figure 5C-D) with consistent screening numbers. C52-C53 offer mechanistic explanations supported by the superior performance and cited superspreader literature. The preventive approach rationale is logical given frequent importation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The study analyzed a comprehensive dataset of 743,599 patients from 66 Swedish hospitals over 3500 days, including 991 MRSA cases from 172 strains, with UK EMRSA-15 being most prevalent (289 cases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 provide dataset description with specific numbers and appropriate citations. The comprehensiveness claim (C57) is justified by the large population coverage (>1/3 of Stockholm County). C60 about UK EMRSA-15 global presence is citation-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Heterogeneity in infection risk exists across ward types, with ICU patients at higher risk due to increased healthcare worker contact, antibiotic use, and patient vulnerability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 represent established knowledge about nosocomial infection risk factors. C61 is citation-supported, and C62 describes well-known ICU risk factors. These provide context for the study's modeling assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Real-time colonization probability estimates are highly correlated with retrospective estimates using complete outbreak information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by correlation analysis shown in Figure 5A inset. This validates that the inference-based intervention can be implemented prospectively in real-time, which is critical for practical application.",
+    "result_type": "MAJOR"
+  }
+]

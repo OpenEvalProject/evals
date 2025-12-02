@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Maternal serotonin (5-HT) released by neurons protects germ cells from heat stress, ensuring embryo viability. Wild-type embryos from heat-shocked mothers show 94\u00b12% survival, while tph-1 mutants (lacking 5-HT) show only 53\u00b12% survival. The protective effect is maternal in origin, acts on female germ cells, and can be rescued by exogenous 5-HT treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 provide converging evidence from multiple experimental approaches: embryo survival assays (C18, C19), exogenous 5-HT rescue (C20), genetic crosses demonstrating maternal origin (C21, C22), and sperm contribution experiments (C23). The data are internally consistent with appropriate sample sizes (n=28 experiments) and statistical significance. The conclusion that maternal 5-HT protects germ cells is well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Heat shock activates HSF-1-dependent transcription predominantly in germline cells. A 5-min heat shock induces 408 genes (0.01 FDR), all HSF-1-dependent, with hsp70 mRNA appearing first in germline cells in late meiotic prophase. Tissue-specific RNAi and glp-4 mutant experiments confirm that the majority of hsp70 mRNA is produced by germline cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 are supported by multiple complementary approaches: RNA-seq (C26, C27), smFISH localization (C28, C29), tissue-specific RNAi (C30, C31), and germline-deficient mutants (C32). The convergence of these independent methods provides strong evidence for germline-specific HSF-1 activation. The FDR threshold (0.01) and appropriate controls (hsf-1 mutants) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C77"
+    ],
+    "result": "Embryos from heat-shocked wild-type mothers contain elevated hsp70 mRNA levels and display transgenerational thermotolerance. These embryos show increased hsp70 (F44E5.4/.5) and hsp70 (C12C8.1) mRNA, and the resulting larvae exhibit enhanced survival during prolonged heat stress compared to progeny of non-heat-shocked mothers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, and C77 are supported by qRT-PCR data on embryos and larval survival assays. The experiments appropriately control for maternal heat shock effects and demonstrate both molecular (increased mRNA) and phenotypic (enhanced survival) consequences. The data provide clear evidence for transgenerational effects of maternal 5-HT signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "tph-1 mutants show delayed HSF-1 activation: only 17 genes are differentially expressed after 5-min heat shock (vs. 408 in wild-type), but similar levels are achieved after 15-min exposure. However, the 15-min exposure already compromises germ cell viability, with only 9\u00b11.5% of tph-1 embryos surviving (vs. 33\u00b15% for wild-type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by RNA-seq, qRT-PCR, and embryo survival data. The temporal dynamics are well-characterized, showing that tph-1 mutants can activate HSF-1 but with delayed kinetics. The critical finding that longer heat exposure compromises viability even when HSF-1 is eventually activated demonstrates the importance of response timing. PCA analysis (C36) provides additional support for the delayed response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "5-HT accelerates HSF-1 and RNA polymerase II (RNAP) recruitment to hsp genes. In wild-type animals, both HSF-1 and RNAP are enriched at hsp promoters within 5 min of heat shock. In tph-1 mutants, this recruitment is significantly delayed, with HSF-1 enrichment at 15 min resembling wild-type levels at 5 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by ChIP-qPCR experiments examining HSF-1 and RNAP occupancy at hsp70 genes. The temporal dynamics are well-characterized across multiple gene regions (promoter, gene body) and two hsp70 genes. The data demonstrate delayed but not absent recruitment in tph-1 mutants, consistent with the transcriptional data. Controls for antibody specificity and ChIP efficiency are documented (Figure 4\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "5-HT enables HSF-1 to recruit the histone chaperone FACT (HMG-3/SPT-16) to displace histones and facilitate transcription. In wild-type animals, heat shock reduces histone H3 occupancy and recruits HMG-3 to hsp genes within 5 min. In tph-1 mutants, H3 occupancy remains unchanged and HMG-3 is not recruited. RNAi knockdown of hmg-3 or spt-16 impairs early hsp gene expression and reduces progeny survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 provide comprehensive evidence for the FACT-mediated chromatin remodeling mechanism through ChIP-qPCR (histone H3 and HMG-3 occupancy), RNAi experiments (functional requirement), and embryo survival assays (physiological relevance). The data show that HMG-3 is specifically required for rapid (5 min) but not delayed (15 min) HSF-1 activation, explaining the timing-dependent protection. Controls for protein levels (C47) rule out expression differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "FACT recruitment to hsp genes depends on HSF-1 and is required for 5-HT-induced gene expression. Optogenetic activation of 5-HT release induces hsp70 mRNA, which is abrogated by hmg-3 RNAi. HSF-1 knockdown prevents FACT recruitment to hsp genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C55 are supported by optogenetic experiments combined with RNAi and ChIP-qPCR. The optogenetic approach provides temporal control over 5-HT release, strengthening causal inference. The requirement for HSF-1 in FACT recruitment is consistent with mammalian studies (cited: Fujimoto et al., 2012) and demonstrates conservation of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C82"
+    ],
+    "result": "The 5-HT signaling pathway that activates HSF1 is conserved in mammalian cells. In mouse cortical neurons and human NT2 cells, 5-HT induces HSF1-dependent expression of heat shock genes (Hspa1a, Hspb1, Hspb5). This occurs through 5-HT4 receptor activation, PKA-mediated phosphorylation of HSF1 at S320, nuclear translocation, and FACT-dependent transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C66 and C82 demonstrate conservation through experiments in two mammalian systems (mouse neurons and human cells). The pathway is dissected using receptor-specific agonists (BIMU8 for 5-HT4), PKA inhibitor (H89), and siRNA knockdowns (HSF1, SUPT16H). The data show dose- and time-dependent responses, appropriate controls, and mechanistic consistency with C. elegans findings. The phospho-specific antibody data (C61) and nuclear localization experiments (C63) provide molecular detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "5-HT acts through PKA (KIN-1) to enable HSF-1 activation in C. elegans germline. Knockdown of kin-1 (PKA catalytic subunit) prevents 5-HT-induced hsp70 expression and HMG-3 recruitment. Conversely, activating PKA by knocking down kin-2 (regulatory subunit) rescues the delayed response in tph-1 mutants, restoring HSF-1 recruitment, hsp70 expression, and partially rescuing embryo viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 provide genetic evidence for PKA involvement through gain- and loss-of-function experiments. The use of germline-specific RNAi (C69) demonstrates cell autonomy. The rescue experiments with kin-2 RNAi in tph-1 mutants (C70, C71) provide strong evidence for epistasis. The partial rescue of embryo viability (C71) is appropriately noted as 'significantly albeit incompletely,' acknowledging that PKA activation alone may not fully substitute for 5-HT signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C80"
+    ],
+    "result": "C. elegans embryos are highly vulnerable to brief temperature fluctuations. While adult worms survive 5-min exposure to 34\u00b0C without visible damage, approximately 50% of embryos fail to hatch following this brief heat shock, regardless of whether they are from wild-type or tph-1 mothers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C80 establish the baseline vulnerability of embryos through survival assays. The data show 100% adult survival but ~50% embryo lethality, with appropriate sample sizes (n=46 experiments for adults). This establishes the biological context for why maternal 5-HT protection is critical. The consistency across genotypes under control conditions (C15) provides appropriate baseline controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on serotonin biology: 5-HT is a conserved neuromodulator released early in response to stress across organisms, including C. elegans. In C. elegans, 5-HT is synthesized exclusively in neurons by TPH-1 and mediates learned avoidance and defense responses. The tph-1 deletion mutant is viable but completely lacks 5-HT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14 provide established background information supported by multiple literature citations. These claims establish the biological context and justify the use of tph-1 mutants as a model for 5-HT deficiency. The claims are well-supported by prior literature and are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "In C. elegans, RNA polymerase II (RNAP) pausing is rare under basal conditions, unlike in Drosophila and mammalian cells. This is evidenced by even distribution of RNAP across hsp70 gene regions under non-heat shock conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by ChIP-qPCR data (Figure 4\u2014figure supplement 1A) and citations to published literature (Kruesi et al., 2013; Maxwell et al., 2014). This establishes an important mechanistic difference between C. elegans and other model systems, providing context for interpreting the RNAP recruitment data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C81"
+    ],
+    "result": "Summary and interpretation: 5-HT signaling enables HSF-1 to modify chromatin through FACT, accelerating transcription onset and setting the threshold for stress response activation in germline cells. This rapid response is critical for protecting development from temperature fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C76, and C81 are summary statements that integrate the experimental findings. These interpretations are well-supported by the collective data from C. elegans experiments. The claim that 5-HT 'sets the threshold' (C76) is a reasonable interpretation of the timing differences observed between wild-type and tph-1 mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Discussion and speculation: The involvement of PKA in 5-HT-dependent HSF1 activation may have broader implications for cellular plasticity, neurodevelopment, and potential therapeutic applications in neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C85 are explicitly speculative ('intriguing,' 'tempting to speculate,' 'could have implications') and represent discussion points rather than demonstrated findings. While these speculations are reasonable given the data, they extend beyond what is directly tested in the manuscript and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Speculation on broader biological significance: Germ cells contain 'poised' chromatin that can resolve into growth or stress programs. 5-HT, which can signal both stress and growth across organisms, may function as a molecular switch at the nexus of these programs through its ability to modulate chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C88 are speculative interpretations ('we postulate') that extend the findings to broader biological contexts. While C86 and C87 are supported by citations to published literature, C88 represents a hypothesis that is not directly tested in this study. The speculation is reasonable but would require additional experiments to validate.",
+    "result_type": "MINOR"
+  }
+]

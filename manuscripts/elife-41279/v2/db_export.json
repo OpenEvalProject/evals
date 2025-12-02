@@ -1,0 +1,1811 @@
+{
+  "submission": {
+    "id": "77f4b0ad-65da-4751-8b90-f0b75eb10c01",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:06:40.642200Z",
+    "updated_at": "2025-12-02T15:06:40.642200Z"
+  },
+  "content": [
+    {
+      "id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "submission_id": "77f4b0ad-65da-4751-8b90-f0b75eb10c01",
+      "content_type": "manuscript",
+      "content_text": "# Synthetic and genomic regulatory elements reveal aspects of cis-regulatory grammar in mouse embryonic stem cells\n\n## Authors\n\n- Dana M King<sup>1</sup> ([ORCID: 0000-0003-4635-5272](https://orcid.org/0000-0003-4635-5272))\n- Clarice Kit Yee Hong<sup>1</sup> ([ORCID: 0000-0002-9485-1425](https://orcid.org/0000-0002-9485-1425))\n- James L Shepherdson<sup>1</sup> ([ORCID: 0000-0002-3288-7000](https://orcid.org/0000-0002-3288-7000))\n- David M Granas<sup>1</sup>\n- Brett B Maricque<sup>1</sup>\n- Barak A Cohen<sup>1</sup> ([ORCID: 0000-0002-3350-2715](https://orcid.org/0000-0002-3350-2715)) \u2020\n\n### Affiliations\n\n1. Edison Center for Genome Sciences and Systems Biology, Washington University in St. Louis St. Louis United States\n2. Department of Genetics, Washington University in St. Louis St. Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn embryonic stem cells (ESCs), a core transcription factor (TF) network establishes the gene expression program necessary for pluripotency. To address how interactions between four key TFs contribute to cis-regulation in mouse ESCs, we assayed two massively parallel reporter assay (MPRA) libraries composed of binding sites for SOX2, POU5F1 (OCT4), KLF4, and ESRRB. Comparisons between synthetic cis-regulatory elements and genomic sequences with comparable binding site configurations revealed some aspects of a regulatory grammar. The expression of synthetic elements is influenced by both the number and arrangement of binding sites. This grammar plays only a small role for genomic sequences, as the relative activities of genomic sequences are best explained by the predicted occupancy of binding sites, regardless of binding site identity and positioning. Our results suggest that the effects of transcription factor binding sites (TFBS) are influenced by the order and orientation of sites, but that in the genome the overall occupancy of TFs is the primary determinant of activity.\n\n## Introduction\n\n### Independence versus interaction of transcription factor binding sites\n\nEnhancers are composed of combinations of transcription factor binding sites (TFBS). An important question is: to what extent do TFBS act independently within enhancers and to what extent do specific interactions between transcription factors (TF) underlie enhancer function? Independence suggests a modular genome in which the effects of multiple binding sites are predictable from their individual effects. Interactions, such as cooperativity between TFs, cause the effect of multiple TFBS to be more (or less) than the combination of their individual effects. Constructing models that predict the expression of genes based on the TFBS composition of their surrounding regulatory DNA will require understanding the degree to which sites function independently and how interactions between sites contribute to the activity of regulatory sequences.\n\n### Regulatory grammar\n\nThe extent to which TFs function either independently or through interactions should be reflected in the cis-regulatory grammar of TFBS, defined as the ways that the order, orientation, spacing, and affinity of binding sites impact the activity of enhancers. If TFs function independently then we do not expect strong constraints on the positioning of their binding sites within regulatory elements. If TFs function mostly through interactions with other TFs that require a precise geometry, then we expect strong biases in the positioning of TFBS within regulatory elements. At least three models make predictions of how grammar might influence enhancer activity, the billboard model, the enhanceosome model, and the TF collective model (Kulkarni and Arnosti, 2003; Spitz and Furlong, 2012). The enhanceosome model posits extensive interactions between bound TFs, resulting in a strict grammar in which only precise positioning of TFBS activate target genes. The enhanceosome model is supported by structural studies of the IFN-\u03b2 enhancer, where a specific order and spacing of TFBS is required to activate expression (Panne, 2008; Yie et al., 1999). In contrast, the billboard model posits a more flexible grammar, where enhancers tolerate changes to the order, spacing, or orientations of TFBS with little change to target gene expression (Giorgetti et al., 2010; Kulkarni and Arnosti, 2003). In the billboard model bound TFs function in a largely independent manner. This model was proposed to explain binding site turnover in developmental enhancers and functional conservation of enhancer activity between species despite sequence divergence (Hare et al., 2008a; Hare et al., 2008b; Ludwig et al., 2000; Visel et al., 2009). In the TF collective model, specific TFs must be recruited to enhancers but can be recruited either by direct contact with DNA or indirectly through other TFs (Junion et al., 2012; Spitz and Furlong, 2012; Uhl et al., 2016). In the collective model no specific TFBS is required for activity even though the recruitment of individual TFs might be. TFs may function independently in some contexts and may engage in interactions in other contexts. The billboard, enhanceosome, and collective models differ in the importance the precise arrangements of TFBS play in setting the activities of enhancers, and control of gene expression likely incorporates aspects of all three models. Quantifying the extent to which grammar influences activity in different contexts is an important step toward producing more predictive models of gene expression.\n\nWe and others have used mouse embryonic stem cells (mESCs) as a system for studying cis-regulatory grammar and cooperative interactions between the pluripotency factors POU5F1 (OCT4), SOX2, ESRRB, and KLF4 (Dunn et al., 2014; Fiore and Cohen, 2016; Williams et al., 2004). The pluripotency factors are a core set of TFs that maintain pluripotency in mESCs and are sufficient to induce pluripotency in terminally differentiated cells (Feng et al., 2009; Liu et al., 2008; Niwa, 2014; Takahashi and Yamanaka, 2006; Zhang et al., 2008).\u00a0The pluripotency TFs activate self-renewal genes and repress genes that promote differentiation (Chambers and Tomlinson, 2009). Based on known physical and genetic interactions, as well as genome-wide binding assays, multiple interacting TFs specify target gene expression in mESCs (Huang et al., 2009; Niwa, 2014; Rem\u00e9nyi et al., 2004; Rem\u00e9nyi et al., 2003; Williams et al., 2004). However, it remains unclear how pluripotency TFs collaborate to drive-specific patterns of gene expression in ESCs, and what role, if any, is played by TFBS grammar in determining specificity in the genome (Chambers and Tomlinson, 2009; Chen et al., 2008b). Understanding how these factors combine to regulate their target genes is central to understanding the establishment and maintenance of the pluripotent state.\n\nWe previously addressed these questions by assaying a set of synthetic cis-regulatory elements that represent a small fraction of the possible arrangements of pluripotency TFBS. We identified some evidence for a grammar that is constrained by TFBS arrangement, including OCT4-SOX2 interactions. However, our previous study lacked sufficient power to detect other interactions (Fiore and Cohen, 2016). Here, we explore the role of grammar for pluripotency TFBS by assaying an exhaustive set of synthetic cis-regulatory elements, composed of TFBS for SOX2, OCT4, KLF4 and ESRRB, as well as a limited set of genomic regulatory sequences with comparable configurations of binding sites. The pattern of expression of synthetic regulatory elements is well predicted by a model that incorporates binding site position. However, despite all genomic sequences overlapping ChIP-seq peaks for at least one of the four pluripotency factors, only about a third of sequences drove reporter gene activity above background levels. Additionally, the positional grammar learned from synthetic sequences performed poorly in predicting the activity of genomic sequences. Genomic sequences appear to also include sequence features that recruit additional TFs, either directly through TF-DNA interactions or possibly indirectly through TF-TF interactions. Our results suggest that in the genome the overall occupancy of TFs is the best predictor of binding site activity. Our results with synthetic elements suggest that other aspects of grammar (order, orientation) can tune the activity of sites, but these effects are difficult to observe without direct experimental manipulations. In the genome only the number and affinity of sites shows a correlation with activity.\n\n## Results\n\n### Rationale and description of enhancer libraries\n\nWe designed two reporter gene libraries to explore the role of grammar in regulatory elements controlled by the pluripotency TFs. The first library, synthetic (SYN), contains a set of synthetic combinations of consensus TFBS for OCT4 (O), SOX2 (S), KLF4 (K), and ESRRB (E). We did not include sites for NANOG in our libraries as its position weight matrix (PWM) has low information content and is not amenable to a synthetic binding site approach. Nanog also appears to be dispensable for reprogramming terminal cells to a pluripotent state (Wang et al., 2013; Wang et al., 2012; Jauch et al., 2008; Pan and Thomson, 2007; Takahashi and Yamanaka, 2006). We did not incorporate MYC-binding sites in our libraries because MYC often acts independently of the core pluripotency TFs (Chen et al., 2012; Chen et al., 2008c; Liu et al., 2008).\n\nWe designed the SYN library to test how interactions between different TFs (heterotypic interactions) determine the activities of regulatory elements. If heterotypic interactions depend on the geometry of TF binding, then the order, orientation, and spacing of sites should influence activity. To test this prediction, we designed the SYN library to assay different orders and orientations of the pluripotency binding sites. The SYN library includes all possible 624 unique combinations of two, three, and four TFBS (2-mers, 3-mers, and 4-mers, respectively), with each TFBS in either the forward or reverse direction (Supplementary file 1A). Each synthetic element in the SYN library contains no more than one copy of a given TFBS. We chose this library design to focus on heterotypic interactions and to avoid the confounding effects of homotypic interactions, which we examined in detail in a previous study (Fiore and Cohen, 2016). We embedded each TFBS in a constant 20 bp sequence with fixed spacing between sites to ensure that all the sites sit on the same side of the DNA helix. We avoided varying the length of the spacer sequence between sites because increasing the length of spacer sequences risks introducing cryptic binding sites that confound the results. For each TF, we used a consensus binding site based on its position weight matrix (PWM) in the JASPAR database (Sandelin, 2004; Fiore and Cohen, 2016). We did not vary the predicted affinity of the sites in the SYN library because we could not assay a library large enough to vary the affinity of sites while still testing all possible arrangements of sites. Our rationale was to retain the maximum power to detect the effects of the order and orientation of sites, and this required us to compromise on our ability to detect the effects of the spacing and affinity of sites. The highly controlled nature of the SYN library provides maximum power to detect interactions mediated by the order and orientation of sites.\n\nThe second library includes sequences from the mouse genome that match, as best as possible, members of the SYN library. Using the same PWMs used to design the SYN library, we scanned the mouse genome for combinations of the TFBS for O, S, K, and E within 100 bp of regions bound by any of the four pluripotency TFs in E14 mESCs as measured by ChIP-seq (Fiore and Cohen, 2016; Bailey et al., 2009; Chen et al., 2008c). We chose genomic sequences that contain one and only one binding site that scores above the PWM threshold for each factor to mimic the composition of the SYN library. We identified few clusters that included all four binding sites (<70). We therefore selected 407 genomic sequences with three pluripotency TFBS that could be compared to the exhaustive set of synthetic 3-mer elements. The resulting genomic wild-type library (gWT) is composed of 407 unique genomic sequences with combinations of any three of the four TFBS, with each site represented no more than once per sequence (Materials\u00a0and\u00a0methods, Supplementary file 1E-F). Although these sequences differ from SYN elements in the individual site affinities, spacings between TFBS, as well as intervening sequence composition, our expectation was that the gWT sequences would test how well interactions learned from the SYN library apply to genomic sequences. To confirm that the activity of the gWT sequences depends on the presence of pluripotency TFBS, we generated matched genomic mutant sequences (gMUT) in which all three of the identified pluripotency TFBS were mutated by changing two positions in each TFBS from the highest information content base to the lowest information base according to the PWM (Figure 1\u2014figure supplement 1). The final gMUT sequences lack detectable TFBS for O, S, K, or E when rescanned with the threshold used to select the gWT sequences. The combined gWT/gMUT library allows us to quantify the contributions of the pluripotency sites to regulatory activity, as well as sample configurations of pluripotency TFBS from the genome that may provide insight into grammar for these sequences.\n\n### MPRA of reporter gene libraries\n\nWe assayed the cis-regulatory activity of the SYN and gWT/gMUT libraries in mESCs using a plasmid-based Massively Parallel Reporter Assay (MPRA) (Kwasnieski et al., 2012). Each unique library member described above is present eight times with a different unique sequence barcode (BC) in its 3\u2019 UTR (Fiore and Cohen, 2016). The elements were placed directly upstream of a minimal promoter, mirroring classical tests of enhancer activity. The assay does not, however, test whether elements can function as long-range enhancers. To determine the relative activity of each sequence compared to the minimal promoter included in each construct, we included copies of plasmids with only the minimal promoter paired with over a hundred unique BCs in each library (Materials\u00a0and\u00a0methods). Our measurements were highly reproducible between biological replicates, with R2 between 0.98\u00a0and\u00a00.99 for replicates of the SYN library and 0.96\u20130.98 for the gWT/gMUT library, and are not driven by abundance biases in the library (Figure 1\u2014figure supplement 2). After thresholding on DNA and RNA counts, we recovered reads for 100% (624/624) of our SYN elements and 99% (403/407) of paired gWT/gMUT sequences. The high concordance between replicates and simultaneous sequencing of the two libraries allowed us to make quantitative comparisons, both within and between libraries.\n\n### Synthetic and genomic libraries support different grammar models\n\nTFBS in synthetic regulatory elements make strong independent contributions to expression. Most synthetic elements drive expression over basal activity regardless of the number, order, or orientation of sites within the element (Figure 1A). Of all SYN elements,\u00a077% (6% of 2-mers, 66% of 3-mers, 92% of 4-mers) were statistically different from basal levels in all three replicates after correcting for multiple hypothesis testing (Wilcoxon rank-sum test; Bonferroni correction, n\u00a0=\u00a0637; p-values reported in Supplementary file 1C). In most cases, three or four consensus binding sites are sufficient to increase expression above basal levels, which suggests strong independent contributions of TFBS to the activity of synthetic elements. Synthetic elements with more binding sites generally drive higher expression than elements with fewer binding sites, supporting the idea that TFBS can contribute to expression in an independent and additive manner. However, the wide range of expression levels observed from different 4-mer elements must be due to the arrangement of the TFBS, as site number, identity, and affinity are fixed. The strong positive effect of adding sites demonstrates an independent effect of TFBS, while the diversity of expression among elements with the same number of sites reveals that grammar can quantitatively modulate activity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig1-v2.jpg)\n\n**Figure 1.:** (A) The activity of synthetic elements with different numbers of binding sites. Expression is the average log of the ratio of cDNA barcode counts/DNA barcode counts for each synthetic element normalized to basal expression (dotted line). (B) The activity of genomic sequences is largely dependent on the presence of pluripotency binding sites. Normalized expression of wild type (gWT) sequences is plotted against expression of matched sequences with all three pluripotency TFBS mutated (gMUT sequences). Red indicates sequences with significantly different expression between matched gWT and gMUT sequences. The diagonal solid line is the expectation if mutation of TFBS had no impact on expression level. Expression of both gWT and gMUT sequences are normalized to basal controls, but basal expression is only plotted for gWT sequences on the y-axis (dotted line).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Highest information content positions in each motif were substituted with least frequent nucleotide for that position. (A) For mutating Sox2 motifs, the reference nucleotides were substituted for \u2018A\u2019 in position 4 and 5. (B) For mutating Oct4 motifs, the reference nucleotide was substituted for \u2018C\u2019 in position 2 and for \u2018A\u2019 in position 3. (C) For mutating Esrrb motifs, the reference nucleotide was substituted for \u2018C\u2019 in position five and \u2018A\u2019 for position 7. (D) For mutating Klf4 motifs, the reference nucleotide was substituted for \u2018A\u2019 in position three and \u2018C\u2019 in position 5.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Reproducibility of barcode (BC) counts between biological replicates, normalized as reads per million per RNA replicate for (A) Synthetic library and (B) Genomic, gWT and gMUT, library. Comparison of normalized BC expression (BCRNA/BCDNA) versus DNA counts for (C) Synthetic library and (D) Genomic, gWT and gMUT, library.\n\nIn contrast to the synthetic elements, most genomic sequences in the gWT library did not exhibit regulatory activity above basal levels. Only 28% (113/403) of wild type genomic sequences were statistically different from basal levels in all three replicates (p<0.05, Wilcoxon rank-sum test; Bonferroni correction, n\u00a0=\u00a0403; p-values reported in Supplementary file 1H). This low fraction of active gWT sequences is consistent with observations from functional tests of genomic sequences bound by key TFs in other cell types (Fisher et al., 2012; Grossman et al., 2017; White et al., 2013). The difference between the SYN and gWT libraries is that the surrounding sequence context in which the pluripotency sites occur in the gWT library varies much more than in the SYN library, and these contextual differences appear to have strong effects on the pluripotency sites. In most cases, the effect of sequence context in the gWT library was strong enough to suppress the independent contributions of the binding sites to activity. For genomic sequences that were statistically different from basal, 99% (112/113) have a significant difference between matched gWT and gMUT sequences (Figure 1B; p<0.05, Wilcoxon rank-sum test; Bonferroni correction, n\u00a0=\u00a0403; p-values reported in Supplementary file 1H), indicating that the activity of these genomic sequences depends on one or more of the pluripotency TFBS. Our observation that the presence of high-quality pluripotency TFBS is generally insufficient to drive expression demonstrates that binding sites must be presented in the proper surrounding sequence context in order to generate a functional regulatory element.\n\n### Synthetic elements support a positional grammar\n\nWhile the overall pattern of expression of SYN elements supports strong independent contributions from binding sites, direct comparisons of different TFBS configurations also support a role for interactions between factors. Pairwise comparisons between 3-mers and their matched 4-mers that include one additional site at either the 5\u2019 or 3\u2019 end, reveal that the position of the extra site can strongly influence expression. For example, the O-K-E 3-mer and the matched O-K-E-S 4-mer drive indistinguishable expression, while the matched S-O-K-E 4-mer drives one of the highest expression levels in the SYN library (Figure 2A). Other examples are consistent with either strong position dependence or both position and orientation dependence (Figure 2\u2014figure supplement 1A\u2013B). Taken together, these results show that when an additional TFBS is added to an existing synthetic element, the position and orientation of the new site can have large effects on activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig2-v2.jpg)\n\n**Figure 2.:** (A) Comparison of synthetic 3-mer elements with matched 4-mer elements containing one additional site in the first or fourth position. Mean expression of elements across barcodes (black dot) is plotted +/-\u00a0SEM (black whiskers). Green line for comparison to expression of 3-mer; Green transparency highlights SEM of 3-mer shown. Capital letter represents binding site in forward orientation and lower-case letter represents binding site in reverse orientation. Activity of the ten highest (B) and ten lowest (C) expressing 4-mers. Red line represents average expression of all synthetic 4-mer elements. Case represents binding site orientation as in (A) Mean expression of each element across barcodes (black dot) +/-\u00a0SEM (black whiskers). Activity logos for the top 25% (n\u00a0=\u00a096) (D) and bottom 25% (E) of 4-mer synthetic elements. Height of letter is proportional to frequency of site in indicated position. Positions organized from 5\u2019 end (Position 1) to 3\u2019 end (Position 4) of elements.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Comparisons of synthetic 3-mer elements with matched 4-mer elements containing one additional site in the first or fourth position with (A) three of four matched 4-mers with overlapping expression despite an additional binding site and (B) one of four matched 4-mers with overlapping expression. Activity logos for the top 25% (C), bottom 25% (D) of 3-mer synthetic elements (n\u00a0=\u00a048 each), and top 25% (E) and\u00a0bottom 25% (F)\u00a0of 2-mer synthetic elements (n\u00a0=\u00a012 each). Height of letter is proportional to frequency of site in indicated position. Positions organized as in Figure 2.\n\nSynthetic elements appear to follow a grammar that includes some position specific interactions between TFBS. The ten highest expressing elements in the SYN library all have S and O sites next to each other and in the first two positions (Figure 2B), while the ten lowest expressing 4-mers have a strong bias for O and S in the last two positions (Figure 2C). The 10 highest expressing 4-mers all have K followed by E in the last two positions, while the lowest expressing 4-mers tend to have K and E in the first two positions. The fourth position can have an especially large effect on expression. In the highest 25% of 4-mers S is depleted (0/96) in the fourth position (Figure 2D), while in the lowest 25% E is virtually depleted (1/96) in the fourth position (Figure 2E). Conversely, in the fourth position, E is overrepresented in the top 25% (64/96) while S is overrepresented in the bottom 25% (48/96). These patterns also hold for comparisons of the strongest and weakest 3-mer and 2-mer elements (Figure 2\u2014figure supplement 1C\u2013F). These patterns indicate a grammar that includes a bias for S and O sites positioned upstream of K and E sites. This positioning may favor interactions between these factors and the basal transcriptional machinery or TFs recruited by the minimal promoter. As specifying a site at a given position restricts possible sites in neighboring positions, these patterns could also represent favorable interactions between factors. These data show that the precise arrangement of TFBS influences the activities of synthetic elements.\n\n### Modeling supports a role for TFBS positions in setting expression level for synthetic elements but not for genomic sequences\n\nWhile the grammar of O, S, K, and E sites influences the relative activities of the SYN elements, their order and orientation does not appear to contribute to the activity of genomic sequences. We compared the SYN and gWT libraries for elements with configurations of OKE, OSE, OSK, and SKE TFBS. Unlike SYN 3-mer elements, all four classes of gWT sequences span the full range of expression levels observed for the entire library, with only OSK sequences having a higher average expression (Figure 3\u2014figure supplement 1A). Thus, in genomic sequences, the same arrangement of sites embedded in different genomic contexts can either fail to drive detectable activity or drive expression higher than the highest SYN library member. To quantify the divergence in activities between genomic and synthetic elements directly, we matched gWT sequences with pluripotency TFBS-dependent activity to SYN elements with the corresponding order of TFBS. We observed no correlation in regulatory activity between matched site configurations, (R2\u00a0=\u00a00.001; Figure 3\u2014figure supplement 1B). These data indicate that other variables contribute to the cis-regulatory activity of gWT sequences, such as the spacing and affinities of the sites, or the presence of TFBS for additional factors in flanking sequences that are held constant in the SYN library.\n\nTo identify additional sequence features that might be contributing to activity, we used a variation of the Random Forest (RF) model, an unsupervised machine learning technique. RF models can be applied for either simple classification, assigning observations to group predictions, or classifying individual observations into semi-continuous bins to make quantitative, regression-case predictions. The accuracy of predictions are assessed over a large number of decision trees trained on random subsets of the data, which allows the contribution or \u2018variable importance\u2019 of specific features to be measured. As RFs are prone to biases from early random splits in the decision trees for unbalanced data, we used iterative Random Forests (iRF) as a tool for feature selection as well as for predicting activity (Basu et al., 2018).\n\nWe first trained a regression-case iRF model on the data from the SYN library. We initialized the models with four features (Supplementary file 2A), representing only the presence or absence of each of the four pluripotency TFBS. This \u2018independent\u2019 iRF model had an R2 of 0.56 between observed and predicted observations when tested on held-out data for the final iRF iteration (Figure 3\u2014figure supplement 2). However, the independent iRF model cannot account for the differences in activities between 4-mers, because all 4-mers have identical TFBS composition (4-mers R2\u00a0=\u00a00.00). To identify features that might distinguish between the activities of 4-mers, we trained an additional regression-case iRF model, \u2018independent + position\u2019, initialized with 20 features, representing both the presence and position of the four TFBS in each SYN element (Supplementary file 2A). The 20-term positional model performs well in predicting SYN expression, with an overall R2 of 0.87 for the last model iteration on a held-out test set (Figure 3A). The positional iRF model highly weights the presence/absence of the sites, as expected from the performance of the independent iRF model, but also has contributions from the presence of E in the 4th position and S in the first and second positions (Figure 3B). These results reinforce the conclusion that the activity of synthetic sequences depends both on the composition and positioning of TFBS.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig3-v2.jpg)\n\n**Figure 3.:** (A) Iterative random forest (iRF) regression model that includes features for presence and position of pluripotency TFBS predicts relative expression of synthetic elements. Number of binding site per element is indicated in pink (2-mers), green (3-mers), and blue (4-mers). Observed and predicted expression are both plotted in log2 space. (B) Ranking of variables in synthetic iRF model. Variable importance is estimated by Increased Node Purity (IncNodePurity), the decrease in node impurities from splitting on that variable, averaged over all trees during training.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Expression (log2) of all synthetic (dark blue) and gWT (dark green) library members subset by TFBS composition (light blue and light green, respectively). (B) Expression (log2) of synthetic (x-axis) and gWT (y-axis) library members, matched by composition and order of binding sites for OCT4 (O), SOX2 (S), KLF4 (K), and ESRRB (E). Subsets of TFBS composition indicated by color. Gray line indicates x-y diagonal as axis scales differ.133.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Iterative random forest (iRF) regression model that includes features for only presence of pluripotency TFBS to predict the relative expression of held out test set of synthetic elements. Number of binding site per element indicated as in Figure 3. Observed and predicted expression are both plotted in log2 space.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Expression of sequences in \u2018mini spacer\u2019 library with different binding sites. (B) Difference in expression between each 4-mer oligo with new spacer and the original spacer. (C) Expression of each 4-mer oligo with original and new spacers. The numbers next to each point indicate the expression rank of each oligo with its original spacer, with one being the highest expressed and six being the lowest.\n\niRF models trained on the SYN library failed to predict or classify the expression of genomic sequences. While synthetic elements had a range of activities, elements in the gWT library are predominantly inactive, and the small number of active gWT sequences drive expression across an order of magnitude of activity levels (Figure 3\u2014figure supplement 1A). Having such a large number of inactive sequences in the pool makes it difficult to train a model that predicts the relative activities of genomic sequences. Retraining iRF regression models to predict gWT expression fails during the training step and has no correlation with the observed expression data (independent: R2\u00a0=\u00a00.03; independent + position: R2\u00a0=\u00a00.001). In all subsequent analyses of genomic sequences, we limited ourselves to models that attempt to distinguish between active and inactive genomic sequences, without predicting the relative differences in activity among active sequences. However, our first attempt to produce a classifier failed. Training a classification model to distinguish between active and inactive gWT sequences (top 25%, n\u00a0=\u00a0102; bottom 75%, n\u00a0=\u00a0305) using either only independent or independent + position features also fails to perform better than chance (Independent: Area Under the Receiver Operator Curve (AUROC)\u00a0=\u00a00.52, Area Under the Precision Recall Curve (AUPRC)\u00a0=\u00a00.22; Positional: AUROC\u00a0=\u00a00.47, AUPRC\u00a0=\u00a00.25; Supplementary file 2B). Genomic and synthetic elements with the same pattern of sites can drive drastically different expression levels (Figure 3\u2014figure supplement 1B). Other sequence features present in the flanking genomic sequences and absent from the synthetic elements must therefore play a role in setting activity levels, in addition to the identity and position of the individual pluripotency TFBS.\n\nOur results with genomic elements suggested that the sequences flanking the pluripotency TFBS play a role in determining cis-regulatory activity. We tested the effect of changing spacer sequences that flank the TFBS in six 4-mer elements from the SYN library. We tested four different spacer sequences, for a total of 30 library members, which includes the original spacer sequence. The new spacers sequences were designed to match the nucleotide content of the original spacers and minimize the creation of new TFBS (Supplementary file 1J). To ensure the dynamic range of the library, we mixed this \u2018mini spacer library\u2019 library with a small portion of the SYN library and performed an MPRA.\n\nWe found that changing the spacer sequences in the SYN library had small, but significant effects on the activities of the 4-mers. The activities of all six 4-mers in the mini spacer library tested with all four spacer sequences remained in the original range of expression for 4-mers (Figure 3\u2014figure supplement 3A). On average, the spacer sequences modified expression by 6% (0.3\u201325%, Figure 3\u2014figure supplement 3B). Although the overall effects of spacer sequences were small, the rank order of the 4-mers did change for different spacers (Figure 3\u2014figure supplement 3C), supporting the idea that sequence features flanking the binding sites do affect gene expression. These results are consistent with the differences between the SYN and gWT libraries.\n\n### Site affinity contributes to the activity of genomic sequences\n\nWe attempted to identify other sequence features that might differentiate active and inactive gWT sequences. Sequence-based support vector machines (kmer-SVMs) are powerful tools to predict the activity of regulatory elements (Fletez-Brant et al., 2013; Chaudhari and Cohen, 2018). To identify sequence features that explain the differences between genomic elements, we trained a gapped kmer SVM (gkm-SVM) (Ghandi et al., 2016; Ghandi et al., 2014). The best performing gkm-SVM classified our positive and negative sets with AUROC of 0.75 and AUPRC of 0.77 (k\u00a0=\u00a08, gap\u00a0=\u00a02; Figure 4A). Although all sequences in the gWT library were selected to contain TFBS for the four pluripotency factors, many of the discriminative 8-mers (29/50) have motif matches that include at least one pluripotency family member (Fletez-Brant et al., 2013; Bailey et al., 2009; Supplementary file 2D). This suggests that the differences between active and inactive genomic sites could be due to the primary pluripotency sites or secondary occurrences of these sites in the intervening sequences that scored below the scanning threshold.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig4-v2.jpg)\n\n**Figure 4.:** (A) Performance of gkm-SVM for genomic sequences supports contribution of sequence-based features to activity. Word length of 8 bp with gap size of 2 bp was used for training with threefold cross validation. ROC curve (left panel) and PR curve (right panel) is plotted for the average across threefold cross-validation sets +/-\u00a0standard deviation. (B\u2013E) Primary (O,S,K,E) site affinities across gWT sequences, as output during motif scanning plotted for high genomic sequences (top 25% as ranked by expression, n\u00a0=\u00a0101) and low genomic sequences (bottom 25% as ranked by expression, n\u00a0=\u00a0101). (F\u2013G) Total site affinities is calculated per sequence by summing the predicted affinity of the three primary sites present in each sequence. (H) Total number of occurrences of TFBS for additional TFs in high and low sequences (stratified as in B\u2013G), as determined by motif scanning, excluding primary (O,S,K,E) sites.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Predicted occupancy (P(Occ)) for genomic sequences in the absence of the primary pluripotency sites (gMUT sequences) for high assumed protein concentration (mu) for SOX2 (mu\u00a0=\u00a08), OCT4 (mu\u00a0=\u00a010), KLF4 (mu\u00a0=\u00a08), and ESRRB (mu\u00a0=\u00a08) shown in middle and right panels. Summed P(Occ) of all factors per gMUT sequence, compared to expression (top left panel) or binned as low or high library members (bottom 25% and top 25% of sequences, ranked by gWT expression, n\u00a0=\u00a0101).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Comparison of fraction of sequences (density) with designated edge to edge spacing between S, O, K, and E sites. Site positions outputted by scanning high (top 25% as ranked by gWT expression, n\u00a0=\u00a0101) and low (bottom 25% as ranked by gWT expression, n\u00a0=\u00a0101) sequences. Top two panels show fraction of sequences with indicated distances between site positions relative to the promoter, regardless of identity. Bottom six panels show fraction of sequences with indicated distances between adjacent sites, accounting for site identities.\n\nSequences with higher predicted affinity pluripotency TFBS may drive higher expression. To determine if differences in the primary pluripotency sites are part of the signal identified by the SVM, we annotated gWT sequences with PWM-based scores for each TFBS present (Grant et al., 2011). For SOX2, we found no difference in scores between high and low sequences (Figure 4B; p=0.07, Welch\u2019s t-test). For OCT4, we found a modest difference between the average scores for high and low sequences and a broader but also a significant difference for KLF4 and ESRRB PWM scores (Figure 4C\u2013E). Summing the PWM scores for all of the TFBS further separates high and low sequences (Figure 4F\u2013G). These patterns suggest that the quality of the primary sites contributes to the activity differences observed among gWT sequences.\n\nWe then asked if secondary sites for the pluripotency TFs might contribute to cis-regulatory activity by calculating predicted occupancy for both gWT sequences and gMUT sequences that lack the primary binding sites (Materials\u00a0and\u00a0methods). Predicted occupancy is a metric that includes contributions from any primary, well-scoring TFBS plus contributions from weaker sites that might be missed with traditional motif scanning (White et al., 2016; White et al., 2013; Evans et al., 2012; Segal et al., 2008; Zhao et al., 2009). We found evidence for additional low predicted affinity sites for SOX2 and OCT4 in both high and low sequences, making it unlikely that low-affinity sites strongly contribute to expression differences (Figure 4\u2014figure supplement 1). Together, these results suggest that the affinities of the primary sites in genomic sequences, which are fixed in synthetic elements, contribute to the regulatory activity of genomic sequences more than the presence of additional sites with low predicted affinity.\n\nWe also analyzed whether the spacing between binding sites correlated with the activity of cis-regulatory elements. Using the same annotations used to determine the predicted affinities of SOX2, OCT4, ESRRB, and KLF4 binding sites, we calculated the edge-to-edge distance between every possible pair of binding sites and plotted the frequency of each spacing for high and low activity sequences (Figure 4\u2014figure supplement 2). We observed a preference in high activity sequences for closely spaced sites for OCT4 and SOX2 reflecting a known interaction between these TFs. We also observed preferences in high activity genomic sequences for closely spaced KLF4 and OCT4 sites, and for ESRRB and OCT4 sites. Binding site spacing may therefore play a role in setting the relative activities of genomic sequences.\n\n### Contributions from sites for other transcription factors\n\nA major difference between the synthetic and genomic elements is the presence of sites for TFs besides the pluripotency factors. While the synthetic elements were designed to keep the sequences between pluripotency sites constant, genomic sequences differ in both the length and composition of sequences between the pluripotency sites. The presence of binding sites for additional transcription factors may contribute to the activity of genomic sequences. To identify sites for other factors that could contribute to differences between high and low activity gWT sequences, we examined the top discriminative 8-mers from the gkm-SVM, looking at possible PWM matches for additional TFs (Supplementary file 2D). We then used PWMs for these additional TFs to identify instances of sites for other factors in the genomic sequences (see Materials\u00a0and\u00a0methods) (Grant et al., 2011; Sandelin, 2004). We found significant enrichment for FOXA1 sites (Figure 4H). We also found that FOXA1 and NANOG had higher total PWM scores in the high activity sequences (Figure 5\u2014figure supplement 1A). While FOXA1 is likely not present in mESCs, other family members (FOXA2, FOXD1, FOXP1) are expressed in ESCs and have been shown to contribute to the pluripotent regulatory network, and therefore could be acting on the gWT sequences through these binding sites (Pan and Thomson, 2007; Mulas et al., 2018; Gabut et al., 2011).\n\nGenomic sequences with higher occupancy by TFs in the genome, as measured by ChIP-seq, have higher average expression in our assay. We annotated the gWT intervals with publicly available ChIP-seq data for additional TFs and with ATAC-seq data from E14 mESCs to determine if differences in accessibility explained the difference between high and low activity sequences (Supplementary file 2B). Both high and low activity gWT sequences were accessible in the genome showing that accessibility does not necessarily correlate with high activity sequences. High activity sequences had a small but significant overlap with NANOG peaks (Figure 5\u2014figure supplement 1B). However, for the 328 genomic sequences with a NANOG ChIP-seq signal, only 16% had an underlying TFBS as determined by motif scanning. Therefore, NANOG might be recruited by other pluripotency TFs to these sequences independent of high-quality TFBS for this factor. If we compare expression levels to the number of overlapping ChIP-seq peaks, including O,S,K,E and these additional TFs, we see that gWT sequences with higher occupancy in the genome have higher average expression in our assay (Figure 5), which has been previously observed in HepG2 cells (Ulirsch et al., 2016). This result supports a model where cumulative occupancy sets activity level.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig5-v2.jpg)\n\n**Figure 5.:** Expression of elements binned by number of intersected ChIP-seq peak signals for different factors. Number of sequences in each bin indicated in center of boxplot. All gWT sequences overlapped at least one ChIP-seq peak as per library design.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Summed motif scores for indicated motif across genomic sequences, excluding primary pluripotency sites. Site scores output during motif scanning of high (top 25% as ranked by gWT expression, n\u00a0=\u00a0101) and low (bottom 25% as ranked by gWT expression, n\u00a0=\u00a0101) gMUT sequences to prevent scoring of O, S, K, or E TFBS sequences. (B) Overlapping TF occupancy, as measured by ChIP-seq, or accessibility, as measured by ATAC-seq, for high (top 25% as ranked by gWT expression, n\u00a0=\u00a0101) and low (bottom 25% as ranked by gWT expression, n\u00a0=\u00a0101) genomic sequence intervals.\n\nTo understand the relative contributions of the sequence features that were enriched individually, we trained iRF models with different subsets of these sequence features and compared their performance on a held-out test set (Supplementary file 2B). None of these models accurately predicted the activity of genomic sequences, likely because most genomic sequences in our collection had no activity above basal levels. Therefore, we attempted to classify active from inactive genomic sequences.\n\nWe trained an iRF model initialized with 58 features that capture differences between gWT sequences and SYN elements. These features include predicted affinity and preferred spacings between the pluripotency TFBS, the predicted occupancy for the pluripotency TFs, the presence of binding sites for additional TFs, plus chromatin accessibility (ATAC-seq) and ChIP-seq peaks for both TFs and histone marks, as well as summary features such as the total primary site affinities for each sequence (Supplementary file 2B). This gWT iRF model classified active from inactive on a held out test set with AUROC\u00a0=\u00a00.67, and AUPRC\u00a0=\u00a00.46 (Figure 6A\u2013B, model \u2018All\u2019). Models that only included subsets of features \u2014 the spacing between elements (model \u2018Spacing\u2019), the strength of the pluripotency sites (\u2018PrimarySites\u2019), or the overlapping ChIP signal (\u2018ChIPSignals\u2019) \u2014 did not perform as well (Figure 6A\u2013B). The features that best separate active from inactive sequences were related to attributes of the pluripotency sites with the top feature being the summed pluripotency factor predicted affinity per sequence (\u2018OSKE_TotalAffinity\u2019, Figure 6C). Taken together, our data suggest that genomic sequences drive higher expression when they contain strong binding sites with preferred spacing and are embedded in sequences that can mediate the recruitment of other TFs or cofactors.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/41279/elife-41279-fig6-v2.jpg)\n\n**Figure 6.:** (A) ROC Curve and (B) Precision-Recall (PR) Curve comparing genomic iRF models. Color indicates set of features used to train model. (C) Variable importance as evaluated for the feature by the average reduction in the Gini index (Chen et al., 2008c).\n\n## Discussion\n\nIn this study, we sought to understand how pluripotency factors collaborate to drive specific levels of expression by testing both an exhaustive set of synthetic arrangements of TFBS for OCT4, SOX2, KLF4, and ESRRB and comparable genomic sequences. The experimental design allowed for direct comparisons between the regulatory grammar of synthetic and genomic sequences. The strongest similarity between synthetic and genomic elements is that in both cases activity depends heavily on the number and affinity of binding sites. These results are most consistent with a model in which the overall occupancy of a sequence by its cognate TFs is the primary determinant of that element\u2019s activity. Consistent with this hypothesis, the predictive power of our trained genomic model derived primarily from summing over the number and affinity of binding sites. We also observed correlation between the occupancy of sites as measured by ChIP-seq and their activity in MPRA assays. While there are many steps involved in activating gene expression, the occupancy model posits that the strength of a regulatory element is primarily controlled by its fractional occupancy by TFs.\n\nThe occupancy model might also explain the surprising result that the activity of genomic elements in our plasmid MPRA experiments do not correlate with experimental measurements of how accessible the chromatin is in their native locations. Plasmid assays might not capture regulation by chromatin, but in many cases plasmid assays do recapitulate the activity of chromosomally integrated elements (Maricque et al., 2019; Inoue et al., 2017). Alternatively, accessible regions may be bound by transcription factors but may not necessarily drive activity, such as in the case of \u2018poised\u2019 regulatory elements (Cruz-Molina et al., 2017). Nucleosome exclusion is important for regulatory activity (Khoueiry et al., 2010) and may reflect TF binding, but accessibility itself may not be sufficient for regulatory activity. Another possibility is that open chromatin may not be a direct reflection of the occupancy of an element by its cognate TFs. Other factors besides occupancy by TFs also determine the openness of chromatin, such as chromosome topology, the proximity of origins of replication, and nucleotide composition. This may explain why some genomic sequences with binding sites that reside in open chromatin do not drive high activity in MPRA assays. The prediction is that these regions are open for reasons other than occupancy by cognate TFs. That the activity of genomic elements correlates with TF occupancy as measured by ChIP-seq, but not necessarily open chromatin measurements by ATAC-seq, supports the occupancy model.\n\nWhile TF occupancy was the best predictor of activity, the AUROC and AUPRC analyses show that we are still missing important features that underlie the activity of genomic sequences. Indeed, two-thirds of genomic sequences that contain consensus motifs and reside under a ChIP-seq peak for one of the pluripotency TFs had no activity in our assay. Why don\u2019t all sequences occupied by TFs have strong regulatory activity? The sequence context in which occupied binding sites occur must contribute heavily to their activity. We attempted to address this issue by examining the regulatory grammar of synthetic elements.\n\nSynthetic elements provide a highly controlled system for exploring whether TFBS are constrained by a regulatory grammar. With synthetic elements we found clear evidence that their activity depends on the position and orientation of pluripotency binding sites. Synthetic elements with the same number and affinity of TFBS had different levels of activity depending on the order and orientation of the sites. This result suggests that active regulatory elements in the genome are defined not only by the presence of TF occupied motifs, but also by cues in the surrounding DNA sequences. However, our models that captured the specific regulatory grammar of synthetic elements failed to predict the activity of genomic sequences.\n\nWhy don\u2019t models that robustly predict the activity of synthetic elements also predict the activity of genomic sequences? With synthetic elements, each sequence differs from others in the library by only a small number of sequence features. In synthetic libraries, there are many pairs of elements that differ by only a single sequence feature, which provides power to observe experimentally the effect of a single variable. In contrast, libraries of genomic elements are much more diverse, and the analysis of genomic sequences relies on detecting correlations between elements that share sequence features. However, it is difficult to isolate the effect of a single sequence feature because genomic elements that share a certain sequence feature will always be very different in terms of other features. The strength of the synthetic approach is the power it provides to isolate the effects of specific sequence features or pairs of sequence features. The weakness of the synthetic approach is that genomic elements are subject to many context specific constraints, all of which cannot be captured in a single synthetic library. When we changed the spacer sequences in our synthetic library, we found small but reproducible effects on expression. Our interpretation of this result is that changing the spacer sequences did not have large effects on the independent contribution of each TFBS, but did have effects on the interactions between sites (i.e. the regulatory grammar). In the future, we plan to use the regulatory grammar derived from synthetic elements to design experiments that manipulate single features of genomic elements. If the grammar that is learned from synthetic elements reflects real constraints in the cell, then models of synthetic elements should predict the relative effects of single perturbations of genomic elements even if they cannot predict the absolute expression of genomic sequences. A combined approach that leverages both synthetic and genomic sequences should continue to help unravel the rules that govern cis-regulation of expression in cells.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Mus musculus mouse)</td>\n      <td>RW4</td>\n      <td>other</td>\n      <td>RRID:CVCL_6442</td>\n      <td>Gift from Mitra Lab, CGS, Department of Genetics, Washington University School of Medicine in St. Louis.\u00a0The cell line tested negative\u00a0for\u00a0mycoplasma contamination by the Genome Editing and iPSC core at Washington University in\u00a0St.\u00a0Louis.</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PureLink RNA Mini Kit</td>\n      <td>ThermoFisher Scientific/Invitrogen</td>\n      <td>Cat#:12183018A</td>\n      <td>Followed manufacturer\u2019s protocol</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PureLink DNase Set</td>\n      <td>ThermoFisher Scientific/Invitrogen</td>\n      <td>Cat#:12185010</td>\n      <td>Followed manufacturer\u2019s protocol</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TURBO DNA-free</td>\n      <td>ThermoFisher Scientific/Invitrogen</td>\n      <td>Cat#:AM1907</td>\n      <td>Followed manufacturer\u2019s protocol</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperScript III Reverse Transcriptase</td>\n      <td>ThermoFisher Scientific/Invitrogen</td>\n      <td>Cat#:18080044</td>\n      <td>Followed manufacturer\u2019s protocol</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>anti-Alkaline Phosphatase (AP) staining</td>\n      <td>System Biosciences</td>\n      <td>Cat.#:AP100R-1</td>\n      <td>Followed manufacturer\u2019s protocol</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SYN</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Recombinant plasmid library of synthetic (SYN) elements upstream of a minimal Pou5f1 promoter and dsRed/SV40 UTR reporter element</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GEN</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Recombinant plasmid library of sequences identified in the mouse genome (GEN) upstream of a minimal Pou5f1 promoter and dsRed/SV40 UTR reporter element</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>miniSpacer</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Recombinant plasmid library of synthetic elements with swapped spacer (miniSpacer) sequences upstream of a minimal Pou5f1 promoter and dsRed/SV40 UTR reporter element</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bedtools v2.2</td>\n      <td>https://bedtools.readthedocs.io/en/latest/</td>\n      <td>RRID:SCR_006646</td>\n      <td>DOI:10.1093/bioinformatics/btq033</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>iRF v2.0.0</td>\n      <td>https://cran.r-project.org/web/packages/iRF/index.html</td>\n      <td>DOI:10.1073/pnas.1711236115</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>gkm-SVM</td>\n      <td>https://cran.r-project.org/web/packages/gkmSVM/index.html</td>\n      <td>DOI:10.1093/bioinformatics/btw203</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BEEML</td>\n      <td>http://stormo.wustl.edu/beeml/</td>\n      <td>DOI:10.1371/journal.pcbi.1000590</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Library design\n\nTo generate a library that contained both synthetic and genomic elements, we ordered a custom pool of 13,000 unique 150 bp oligonucleotides (oligos) from Agilent Technologies (Santa Clara, CA) through a limited licensing agreement. Each oligo in the SYN pool was 150 bp in length with the following sequence:\n\nwhere [SEQ] is a 40\u201380 bp synthetic element comprised of concatenated 20 bp building blocks of pluripotency sites, as described previously, with the fifth position of the KLF4 site changed to \u2018T\u2019 to facilitate cloning (Fiore and Cohen, 2016). [FILL] is a random filler sequence of variable length to bring the total length of each sequence to 150 bp, and [BC] is a random 9 bp barcode. The oligonucleotide pool contained all possible combinations of the pluripotency binding sites in both orientations, with no more than one of each site per sequence in lengths of two, three, and four building blocks. The sequence of each of the element is listed in Supplementary file 1B. In total, the SYN library has 624 unique synthetic elements. Each synthetic element is present in the pool eight times, each time with a different unique BC. There are also 112 oligos in the pool for cloning the basal promoter without any upstream element, each with a unique BC.\n\nGenomic sequences were represented in the pool by 150 bp oligos with the following sequences:\n\nwhere [SEQ] is either a reference (gWT) or mutated (gMUT) genomic sequence of 81\u201382 bps. Reference gWT sequences were selected by choosing regions of the genome within 100 bps of previously identified ChIP-seq peaks for these four pluripotency factors (Chen et al., 2008b). After excluding poorly sequenced and repetitive regions (ENCODE Project Consortium, 2012; Waterston et al., 2002), we scanned the remaining regions using FIMO with the four PWMs used previously to design the synthetic building blocks, with a p-value threshold of 1 \u00d7 10\u22123 (Grant et al., 2011; Bailey et al., 2009; Fiore and Cohen, 2016). Regions that contained more than one overlapping site identified by FIMO were excluded. Binding sites that were located less than 20 bp from each other were then merged into a single genomic element using Bedtools (Quinlan and Hall, 2010). Elements with no more than one of each site per element were then selected and expanded to 81\u201382 bp centered on the motifs. Expanded sequences were rescanned to confirm the presence of only three binding sites with the same threshold as used to originally scan the sequences. Sequences that contained restriction sites for were then removed from the library, leaving 407 genomic sequences with combinations of the OCT4, SOX2, KLF4, and/or ESSRB TFBS.\n\nWe generated matched mutated sequences (gMUT) for each of the 407 gWT sequences by changing two positions in each motif from the highest information content base to the lowest information base for that position (Figure 1\u2014figure supplement 1). The reverse complement position and substitution was made for the reverse orientation of each motif. The mutated sequences were rescanned with all four original PWMs to confirm that no detectable pluripotency TFBS remained, using FIMO with the same p-value threshold (1 \u00d7 10\u22123) as above.\n\nIn total, the pool of oligos representing genomic sequences contained 407 wild-type sequences (gWT) and the corresponding 407 gMUT sequences. The sequence of each element is listed in Supplementary file 1G. Each of these 814 sequences were associated with eight unique BCs. The primers for gWT and gMUT sequences were identical so all subsequent steps for this library was performed in a single pool. There are also 112 oligos in the pool for cloning the basal promoter without any upstream element, each with a unique BC (Supplementary file 1F). The rest of the array contained sequences not used in this study.\n\n### Cloning of plasmid libraries\n\nFor a full list of primers, see Supplementary file 3. The synthesized oligos were prepared as previously described (Kwasnieski et al., 2012; Fiore and Cohen, 2016), except using primers Synthetic_FW-1 and Synthetic_Rev-2 with an annealing temperature of 55\u00b0C for the SYN library and primers Genomic_FW-1 and Genomic_Rev-1 with an annealing temperature of 53\u00b0C for the gWT/gMUT libraries. PCR products were purified from a polyacrylamide gel as described previously (White et al., 2013). Each library was cloned as described previously (Fiore and Cohen, 2016), with an SYN element (SYN library) or either a gWT or gMUT sequence (gWT/gMUT library) cloned into the ApaI and SacI sites of plasmid pCF10.\n\nThe pou5f1 basal promoter and dsRed reporter gene were amplified from pCF10 using primers CF121 and CF122, and inserted into the plasmid library pools from the previous step at the XbaI and HindIII sites. Digestion of the libraries with SpeI and subsequent size selection was omitted as the SYN library had less than 2% background and the combined gWT/gMUT library had less than 1% background in the final cloning step.\n\n### Spacer library\n\nFor the mini spacer library, we ordered an oligo pool containing 4-mer elements with different spacer sequences from Integrated DNA Technologies (Coralville, IA). Each oligo in the mini library was 161 bp in length with the following sequence:\n\nwhere [SEQ] represents an oligo sequence described below and [BC] is a random 9 bp barcode. We picked six 4-mer oligos from the original synthetic library to span the 4-mer expression range and swapped out the spacer sequences in the oligos for four other sequences, generating a total of 30 constructs, including the original spacers. Each construct was represented in the pool with five unique barcodes. The sequence of each element is in Supplementary file 1K.\n\nThe mini spacer library was cloned into the same backbone as the previous libraries. Briefly, pCF10 was digested with ApaI and SacI, and the single-stranded oligo pool was directly assembled into the backbone using HiFi DNA assembly The pou5f1 basal promoter and dsRed reporter gene were amplified from pCF10 using CF121 and CF122, then ligated into the mini spacer library following the same approach as the SYN, gWT, and gMUT libraries.\n\n### Cell culture and transfection\n\nRW4 mESCs were cultured as described previously (Xian et al., 2005; Chen et al., 2008a) on 2% gelatin coated plates in standard media (DMEM, 10% fetal bovine serum, 10% newborn calf serum, nucleoside supplement, 1000 U/ml leukemia inhibitory factor (LIF), and 0.1 \u00b5M B-mercaptoethanol). Approximately 1 million cells at 100% estimated viability were seeded into six-well plates 24 hr prior to transfection. The SYN library and combined gWT/gMUT were transfected in parallel using 10 \u00b5L Lipofectamine 2000 (Life Technologies, Carlsbad, CA), 3 \u00b5g of plasmid library, and 0.3 \u00b5g CF128 (a GFP control plasmid) per well, as described previously (Fiore and Cohen, 2016). Four biological replicates of each library pool, the SYN plasmid pool or combined gWT/gMUT plasmid pool, were transfected and the plates were passaged 6 hr post-transfection. For three replicates of each library pool, RNA was extracted 24 hr post-transfection from approximately 9 million cells per replicate, using the PureLink RNA mini kit (Life Technologies, Carlsbad, CA) with the fourth transfection replicate reserved for estimating transfection efficiency via fluorescent microscopy and staining for alkaline phosphatase (AP) activity, a universal pluripotency marker (Singh et al., 2012).\n\n### Massively parallel reporter assay\n\nMassively parallel reporter gene assays were used to measure the activity of each element as described previously (Fiore and Cohen, 2016; Mogno et al., 2013). Briefly, we used Illumina NextSeq (San Deigo, CA) sequencing of both the RNA and original plasmid DNA pool, removing excess DNA from the RNA pool using TURBO DNA-free kit (Life Technologies, Carlsbad, CA). cDNA was then prepared using SuperScript RT III (Life Technologies, Carlsbad, CA) with oligo dT primers. Both the cDNA and the plasmid DNA pool were amplified using primers CF150 and CF151b, for 13 cycles. The PCR amplification products were digested using XbaI and XhoI (New England Biolabs, Ipswich, MA), ligating the resulting digestion products to custom Illumina adapter sequences, P1_XbaI_X (where X is 1 through 8, with in-line multiplexing BC sequences) to the 5\u2019 overhang and PE2_SIC69_SalI on the 3\u2019 XhoI overhang, each of which is comprised of annealed forward (F) and reverse (R) strands. An enrichment PCR with primers CF52 and CF53 was then used, and the resulting products were mixed at equal concentration and sequenced on one NextSeq lane.\n\nSequencing reads were filtered to ensure that the BC sequence perfectly matched the expected sequence. For the SYN library, this resulted in 40 million reads combined for the three demultiplexed RNA samples (P1_XbaI_1, P1_XbaI_2, P1_XbaI_3; 12.7\u201313.5 million each), and 19.7 million reads for the DNA library sample (P1_XbaI_7). For the combined gWT/gMUT libraries, this resulted in approximately 37 million reads combined for the three demultiplexed RNA samples (P1_XbaI_4, P1_XbaI_5, P1_XbaI_6; 9.4\u201316 million each), and 19.6 million reads for the DNA library sample (P1_XbaI_8). For each library, BCs that had less than three raw counts in any RNA replicate or less than 10 raw counts in the DNA sample were removed before proceeding with downstream analyses.\n\nExpression normalization was performed by first calculating reads per million (RPM) per BC for each replicate for both the SYN library and the combined gWT/gMUT library. For each BC, expression was calculated by dividing the RPMs in each RNA replicate by the DNA pool RPMs for that BC. Normalizing by DNA RPMs successfully removed the impact of the representation of the construct in the original pool as the calculated expression has no correlation with the DNA counts for both the SYN library and the combined gWT/gMUT. Within each biological replicate, the BCs corresponding to each synthetic element (SYN) or genomic sequence (gWT/gMUT) were averaged and then normalized by basal mean expression in that replicate. These normalized expression values were then averaged across biological replicates. All downstream analyses were performed in R version 3.3.3 and plotted with ggplot2 version 2.2.1. Expression summaries per replicate are reported in Supplementary file 1C for the SYN library, Supplementary file 1H for the gWT/gMUT library and Supplementary file 1L for the \u2018mini spacer\u2019 library.\n\n### Predicted occupancy\n\nCustom code, based on Zhao and Stormo\u2019s BEEML algorithm (Zhao et al., 2009), was used to compare sequences of interest to a provided Energy Weight Matrix (EWM) at a set protein concentration (mu) and output a predicted occupancy for that TF as in White et al. (2013). Briefly, an energy landscape (EWM score) is calculated by comparing all n-mers of each sequence, where n\u00a0=\u00a0length of provided motif, to the matrix to generate an array of individual base scores for the forward and reverse orientation of the sequence. Occupancy is then predicted using equation 3 for binding probability at equilibrium, ($1/\u00a0(1\u00a0+\u00a0e^{(\u0394G\u00a0\u2212\u00a0\\mu)})$). Position Frequency Matrices equivalent to the PWMs used for both SYN building block design and for scanning the mouse genome were used to generate EWMs, using the formula $RT\u2217\u00a0ln(\u00a0Freq(Base^{^}consensus)/Freq(Base^{^}i))$\u00a0to convert the frequency of each base at each position i to a pseudo \u0394\u0394G values for each factor (White et al., 2013). Predicted occupancy (P(Occ)) for the 3-mer SYN elements was calculated for different assumed protein concentrations (mu\u00a0=\u00a00.5, 1, 2, 4, 5, 8, 10, 12) to determine at what point the SYN elements are predicted to be saturated, where P(Occ) \u2245 three for each SYN element, that\u00a0is: approaching one for each TFBS in the sequence. SYN elements were saturated by each of the four pluripotency factors at mu\u00a0=\u00a08 with the exception of the shorter Oct4 motif, which reached saturation at mu\u00a0=\u00a010. Occupancy of gWT and gMUT sequences was predicted for gWT and gMUT at an assumed high protein concentration of mu\u00a0=\u00a08 for Sox2, Klf4, Esrrb, and mu\u00a0=\u00a010 for Oct4, consistent with the role of these factors in mESCs. The predicted occupancy of each factor for matched gMUT sequences are reported in Supplementary file 2F as a feature of gWT sequences. iRF models:\n\nWe built iterative Random Forest (iRF) models to classify our data using the R package iRF (version 2.0.0) (Basu et al., 2018). To run the software a model is initialized with 1/p weights for each of p features to be included in fitting the model. In each iteration, p features are reweighted by their Gini Importance (wk), a measure that is calculated by how purely a node, split by feature, separates the classes (Menze et al., 2009; Louppe et al., 2013). Default settings were used for model training, with four iterations of reweighting p features specified for each model as indicated in Supplementary files 2A and 2B.\n\nSynthetic data was split into training and test sets by randomly subsetting 50% of the total SYN elements (total n\u00a0=\u00a0407). Mean normalized expression was the response variable for model fitting for the synthetic models (see Supplementary file 2E for feature annotations for SYN elements). Four iterations of model fitting on training data was used.\n\nGenomic data was split into training and test sets by randomly subsetting 50% of the total gWT/gMUT intervals (total n\u00a0=\u00a0624). Classification as \u2018active\u2019, 1, if mean normalized gWT expression was greater than or equal to the 3rd quartile and \u2018inactive\u2019, 0, if mean normalized gWT expression was less than the 3rd quartile (cutoff value\u00a0=\u00a01.983), was the response variable for model fitting (see Supplementary file 2F for feature annotations and response values for gWT sequences). Four iterations of model fitting on training data was used. gkm-SVM:\n\nWe used a gapped k-mer Support Vector Machine (gkm-SVM) to search for gapped k-mers that distinguish between highly active and inactive genomic sequences (Ghandi et al., 2016). We subset sequences from the gWT library into top 25% (high) and bottom 25% (low) based on expression data for a total of 101 positive and 101 negative intervals for the training set. FASTA sequences were then generated from the mm10 reference genome (Bioconductor, BioMart) for each region (Supplementary file 4). We then used the gkm-SVM R package to classify high vs. low sequences (Ghandi et al., 2016). Word length (L) values of 6 (gap\u00a0=\u00a02), 8 (gap\u00a0=\u00a02), and 12 (gap\u00a0=\u00a06), were tested with cross validation. Default settings were used for other function options. Three-fold cross validation was chosen due to the the amount of structure in the data, with combinations of OSK binding sites overrepresented in positive training sequences (Figure 3\u2014figure supplement 1). The best average performance on training data as evaluated by AUCs was the model trained with parameters of L\u00a0=\u00a08 and gap\u00a0=\u00a02 (See Supplementary file 2G for output scores). The final gkmer-SVM model includes approximately 1 million unique k-mers (See Supplementary file 2C for full kmer list and weights).\n\n### Other analysis and data sources\n\nAll genome coordinates from previous mouse genome builds were converted to mm10 using the UCSC liftover tool (Kuhn et al., 2013). Binding matrices for SOX2, OCT4, KLF4, ESRRB were as previously reported (Fiore and Cohen, 2016). The Bedtools suite (version 2.20) was used for manipulations and analysis of bed files (Quinlan and Hall, 2010). Statistical tests were chosen based on expectations of normalcy, with Wilcoxon rank-sum test used for comparisons of BC expression as these distributions were observed to be skewed for some library members, Welch\u2019s t-test used where sample sizes were equal and roughly normal, and Fisher\u2019s 1-sided tests used for testing for enrichment in small sample sizes.\n\n### Data access\n\nRaw sequencing data for SYN library and gWT/gMUT library can be found under SRA accession number SRR7515851. Processed sequencing data, specifically demultiplexed barcode counts per replicate, can be found under GEO accession number GSE120240. Additionally, a table of normalized reads per million (RPMs) across replicates for all barcodes are included as Supplementary file 1D for the SYN library, Supplementary file 1I for the gWT/gMUT library, and Supplementary file 1M for the MiniSpacer library.\n",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "1e904265-d21f-4da1-8ee7-af590ba1d986",
+      "submission_id": "77f4b0ad-65da-4751-8b90-f0b75eb10c01",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patricia J Wittkopp, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41279.sa1](https://doi.org/10.7554/eLife.41279.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe are excited to have this impressive study of cis-regulatory grammar published in eLife. Figuring out how cis-regulatory sequences determine gene expression has been a long-standing challenge for the field, and this study makes an important contribution by revealing the relative roles of transcription factor binding affinity and surrounding sequence context with a rigorous and deep set of experiments.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Synthetic and genomic regulatory elements reveal aspects of cis-regulatory grammar in Mouse Embryonic Stem Cells\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Patricia Wittkopp as both Reviewing and Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: David N Arnosti (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe conversion of DNA sequence information to transcriptional output relies on the context-specific interactions of transcription factors and cofactors, which influence each other and the transcription process in multiple ways. Thus, it has been difficult to identify general principles allowing predictive models of cis regulatory element outputs, even with precise information about TF concentrations and DNA sequences acted upon. In this manuscript, King et al. use plasmid-borne massively parallel reporter assays to identify cis regulatory considerations that influence the activities of Oct4, Klf4, Sox2, and ESRRB transcription factors in embryonic stem cells, which have been well characterized for gene expression and genome-wide chromatin features. They take a two-pronged approach for this study, testing hundreds of elements in plasmid libraries. They create synthetic elements carrying binding motifs for the four proteins in varying numbers (2-4 sites), and they select genomic sequences that resemble these elements in that they are known to have some level of protein occupancy, and bear motifs of the OSKE factors. Using high-throughput sequencing, the activities of the libraries are assessed in transfected cells, and relative expression compared to certain mutant constructs in which the motifs are removed.\n\nThe presence of a large number of inactive elements is a valuable finding that allows the authors to assess the importance of specific features for activity vs. inactivity.\n\nThe authors determined that the activities of the generally active synthetic elements can be predicted by random forest machine learning models, employing the number of bound elements as well as the binding site arrangements. However, the insights gained from these constructs appear not to contain predictive power on the genomic sequences, where a smaller fraction of candidate elements are active. A gapped kmer approach indicates that differentiating the active from inactive genomic sequences involves the identification of additional binding sites. A more nuanced RF modeling approach involving factor spacing, primary sites, and ChIP signals measured on these elements is able to provide a better level of accuracy than any of these elements alone; interestingly, these are factors that were specifically left out of the synthetic library, where spacing is held constant, and motif quality is not varied. Consequently, when using synthetic elements, an enhanceosome model described their data better, while with genomic elements, the billboard model worked better.\n\nOverall, this study points to possible avenues for progress, as well as very specific reasons for pessimism. The synthetic elements tested include certain features that may not apply to endogenous elements (placement of an element directly next to a basal promoter, plasmid rather than integrated location), as well as consciously avoid variables that may be key (differences in spacing, affinities). Since we already have much evidence for the roles of spacing and motif affinity, it makes sense that the authors deliberately set up a testing situation which can assess other factors for possible use in wider modeling efforts, namely order of elements on the enhancer, and number of factors present. The answer appears to be that any informative synthetic approaches must incorporate the factors pursued in the analysis of their endogenous data elements. Overall, this study makes an important contribution to identification of pathways that must be pursued to subsequently create deeper understanding of the DNA-to-transcriptional output function.\n\nEssential revisions:\n\n1) Differing enthusiasm for the modeling component was reflected in the reviewers' comments. One thought that the emphasis on the models was an over-reach, especially because the data neither supports one or the other model, nor is there enough of it to make a definitive claim. The other was not bothered by the data not fitting neatly into either model nor what was perceived as an oversimplification of the models. However, even this latter reviewer agreed that the authors should more clearly spell out how their tests do or do not sample the many variables. Revision to the modeling section to make these points more clear to readers is needed.\n\n2) There was also a difference in opinion about how much this work advances the field, with one reviewer pointing out that it doesn't identify new physical principles or factors affecting transcriptional regulation, and the other agreeing but arguing that this work is part of the necessary path that our fields must explore to make real progress on predictive approaches. I agree that the large size of the set of active/inactive endogenous elements characterized is a very important contribution to the field; one that will help us better recognize and understand enhancer sequences. Revision to the text to more explicitly articulate the contribution to the field of this work is needed to address this concern.\n\nBelow are specific comments from reviewers that elaborate on the concerns expressed more generally in the two points above:\n\n1) Even though I like the logo-like presentation of the preferred order of the TF on the synthetic promoters, to claim that this result fits an enhanceosome model is a stretch at best. An enhanceosome model requires positioning of every TF in a particular conserved structure. Here there is a certain preference for some positioning. To my understanding the authors only used identical/constant non-binding site sequence in all of the synthetic constructs. How do they know that these sequences do not influence the order? Can the authors choose two variants (one strong and one weak), and introduce 5 different flanking sequences and check whether the ratio in expression between both arrangements is conserved?\n\n2) For the genomic elements the results are not surprising, as we expect to get interference from unknown or cryptic regulatory elements. The analysis they provide in Figure 5 shows a nice correlation between ChIP-seq data and strength of expression supporting the notion that the more elements bind the promoter the higher the expression. From my perspective this result supports neither the billboard nor the enhanceosome model, but rather a more dynamic model where the cumulative occupancy keeps the promoter open for longer supporting a higher expression. The dynamic or \"occupancy\" model is further also supported by the data in Figure 4, where there is a correlation between higher expression and stronger sites. I would like to see a discussion of a more dynamical model as another option for explaining their data.\n\n3) The claim that optimal spacing leads to better expression is also not supported but the data. First of all \u2013 what is optimal spacing? The author don't say. Is it constant for all the TFs used, or different for each TF pair? Do they have data which supports one type of spacing over another? Finally, how do they know that next-nearest neighbor effects do alter \"optimal spacing\" of nearest neighbors? To answer this question will require another much larger OL, which is clearly outside of the scope. Nevertheless, I would like the authors to clarify their claim.\n\n4) The authors implicitly factor out a number of elements in their synthetic library, either to make the task manageable, or because they suspect certain features are more important. These include the design of having up to just one binding motif for each of the factors, the placement of the factors adjacent to the basal promoter, ensuring that certain proteins will have privileged access to the basal machinery, and the decision to not test spacing. The logic of the paper would be easier to follow if the authors would explain why they made these choices e.g. perhaps certain features are already well enough known.\n\n5) The finding that chromatin accessibility is not at all predictive is quite fascinating \u2013 many studies have relied on such data to infer where relevant enhancers are, and in which cell types. The authors should place this finding in context \u2013 does it have something to do with their use of plasmid-borne genes, rather than integrated reporters?\n\n6) The RF modeling of genomic sequences with the most complex set of features (58 in all) sorts enhancers into active and inactive elements (if I understood their approach). Would the predictions be different, more informative, if they were attempting to predict relative activity? IF this is a misunderstanding, it would be helpful to clarify.\n",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c9595267-e1df-4a52-bd48-46a61ed12bf5",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C1",
+      "claim": "In embryonic stem cells (ESCs), a core transcription factor (TF) network establishes the gene expression program necessary for pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryonic stem cells (ESCs), a core transcription factor (TF) network establishes the gene expression program necessary for pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about ESCs and pluripotency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "61884fc2-cca1-4646-bee4-911f5ea764e8",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C2",
+      "claim": "The expression of synthetic elements is influenced by both the number and arrangement of binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of synthetic elements is influenced by both the number and arrangement of binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the synthetic library MPRA experiments showing that elements with different numbers and arrangements of sites have different activities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "1e209275-0323-4026-ba08-2c2995ca0eca",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C3",
+      "claim": "For genomic sequences, the relative activities are best explained by the predicted occupancy of binding sites, regardless of binding site identity and positioning.",
+      "claim_type": "EXPLICIT",
+      "source": "This grammar plays only a small role for genomic sequences, as the relative activities of genomic sequences are best explained by the predicted occupancy of binding sites, regardless of binding site identity and positioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling results and analysis of genomic sequences showing that occupancy is the primary predictor.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "60d34bd7-b607-4f01-b3bc-7182e5f3d1c8",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C4",
+      "claim": "The effects of transcription factor binding sites (TFBS) are influenced by the order and orientation of sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the effects of transcription factor binding sites (TFBS) are influenced by the order and orientation of sites, but that in the genome the overall occupancy of TFs is the primary determinant of activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from synthetic elements showing position-dependent effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "882dad7d-f1fe-4644-a31f-7294a8831a52",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C5",
+      "claim": "In the genome, the overall occupancy of TFs is the primary determinant of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the effects of transcription factor binding sites (TFBS) are influenced by the order and orientation of sites, but that in the genome the overall occupancy of TFs is the primary determinant of activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of genomic sequences and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "d9c99e40-574a-4a75-b54f-64edf93ac694",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C6",
+      "claim": "The enhanceosome model posits extensive interactions between bound TFs, resulting in a strict grammar in which only precise positioning of TFBS activate target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanceosome model posits extensive interactions between bound TFs, resulting in a strict grammar in which only precise positioning of TFBS activate target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an established model in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "95d64fe9-62fe-43b0-9ea6-132cc01a5e24",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C7",
+      "claim": "The enhanceosome model is supported by structural studies of the IFN-\u03b2 enhancer, where a specific order and spacing of TFBS is required to activate expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanceosome model is supported by structural studies of the IFN-\u03b2 enhancer, where a specific order and spacing of TFBS is required to activate expression (Panne, 2008; Yie et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "d1d617a2-0e0c-4433-b95b-4459fa064e20",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C8",
+      "claim": "In the billboard model, bound TFs function in a largely independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the billboard model posits a more flexible grammar, where enhancers tolerate changes to the order, spacing, or orientations of TFBS with little change to target gene expression (Giorgetti et al., 2010; Kulkarni and Arnosti, 2003). In the billboard model bound TFs function in a largely independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an established model supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "64165728-d32e-47f1-86a3-1b7530fcf195",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C9",
+      "claim": "The billboard model was proposed to explain binding site turnover in developmental enhancers and functional conservation of enhancer activity between species despite sequence divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "This model was proposed to explain binding site turnover in developmental enhancers and functional conservation of enhancer activity between species despite sequence divergence (Hare et al., 2008a; Hare et al., 2008b; Ludwig et al., 2000; Visel et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "3535192d-9205-4480-b6fb-ac1780120bf1",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C10",
+      "claim": "The pluripotency factors are a core set of TFs that maintain pluripotency in mESCs and are sufficient to induce pluripotency in terminally differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The pluripotency factors are a core set of TFs that maintain pluripotency in mESCs and are sufficient to induce pluripotency in terminally differentiated cells (Feng et al., 2009; Liu et al., 2008; Niwa, 2014; Takahashi and Yamanaka, 2006; Zhang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "7bbcdf94-304a-4926-8500-1e61bcb87259",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C11",
+      "claim": "The pluripotency TFs activate self-renewal genes and repress genes that promote differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pluripotency TFs activate self-renewal genes and repress genes that promote differentiation (Chambers and Tomlinson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "1a5d7482-6606-4eaa-9a48-77f5a04c8aae",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C12",
+      "claim": "The SYN library contains a set of synthetic combinations of consensus TFBS for OCT4 (O), SOX2 (S), KLF4 (K), and ESRRB (E).",
+      "claim_type": "EXPLICIT",
+      "source": "The first library, synthetic (SYN), contains a set of synthetic combinations of consensus TFBS for OCT4 (O), SOX2 (S), KLF4 (K), and ESRRB (E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "de5140da-02cb-474b-9639-3d0fd3da69f5",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C13",
+      "claim": "The SYN library includes all possible 624 unique combinations of two, three, and four TFBS (2-mers, 3-mers, and 4-mers, respectively), with each TFBS in either the forward or reverse direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The SYN library includes all possible 624 unique combinations of two, three, and four TFBS (2-mers, 3-mers, and 4-mers, respectively), with each TFBS in either the forward or reverse direction (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "5877cd81-22b9-4a7d-b0fc-95be5031dadd",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C14",
+      "claim": "The gWT library is composed of 407 unique genomic sequences with combinations of any three of the four TFBS, with each site represented no more than once per sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting genomic wild-type library (gWT) is composed of 407 unique genomic sequences with combinations of any three of the four TFBS, with each site represented no more than once per sequence (Materials and methods, Supplementary file 1E-F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b3e744fd-59c5-4d87-b015-4dd95a2102ed",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C15",
+      "claim": "Measurements were highly reproducible between biological replicates, with R2 between 0.98 and 0.99 for replicates of the SYN library and 0.96\u20130.98 for the gWT/gMUT library.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements were highly reproducible between biological replicates, with R2 between 0.98 and 0.99 for replicates of the SYN library and 0.96\u20130.98 for the gWT/gMUT library, and are not driven by abundance biases in the library (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "f0dab69f-856e-4d6d-82e0-5978d2197ab7",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C16",
+      "claim": "100% (624/624) of SYN elements were recovered after thresholding on DNA and RNA counts.",
+      "claim_type": "EXPLICIT",
+      "source": "After thresholding on DNA and RNA counts, we recovered reads for 100% (624/624) of our SYN elements and 99% (403/407) of paired gWT/gMUT sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "928d79df-6f63-451b-9bb0-d5c797cf2791",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C17",
+      "claim": "99% (403/407) of paired gWT/gMUT sequences were recovered after thresholding on DNA and RNA counts.",
+      "claim_type": "EXPLICIT",
+      "source": "After thresholding on DNA and RNA counts, we recovered reads for 100% (624/624) of our SYN elements and 99% (403/407) of paired gWT/gMUT sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "f7232cbe-04ba-43a5-b0f8-a86e8b83ce88",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C18",
+      "claim": "77% of all SYN elements (6% of 2-mers, 66% of 3-mers, 92% of 4-mers) were statistically different from basal levels in all three replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all SYN elements, 77% (6% of 2-mers, 66% of 3-mers, 92% of 4-mers) were statistically different from basal levels in all three replicates after correcting for multiple hypothesis testing (Wilcoxon rank-sum test; Bonferroni correction, n = 637; p-values reported in Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "1aaea2d9-d4ec-4c51-a955-6ce6e7637ff1",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C19",
+      "claim": "Synthetic elements with more binding sites generally drive higher expression than elements with fewer binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic elements with more binding sites generally drive higher expression than elements with fewer binding sites, supporting the idea that TFBS can contribute to expression in an independent and additive manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "5d6b2ff9-0cdc-42bf-bf51-a525f60db775",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C20",
+      "claim": "Only 28% (113/403) of wild type genomic sequences were statistically different from basal levels in all three replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 28% (113/403) of wild type genomic sequences were statistically different from basal levels in all three replicates (p<0.05, Wilcoxon rank-sum test; Bonferroni correction, n = 403; p-values reported in Supplementary file 1H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "d3261a81-476b-4747-be10-f46b03c96f36",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C21",
+      "claim": "The low fraction of active gWT sequences is consistent with observations from functional tests of genomic sequences bound by key TFs in other cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "This low fraction of active gWT sequences is consistent with observations from functional tests of genomic sequences bound by key TFs in other cell types (Fisher et al., 2012; Grossman et al., 2017; White et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b61c5550-696a-4d01-b7cc-78f5c1988ab6",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C22",
+      "claim": "For genomic sequences that were statistically different from basal, 99% (112/113) have a significant difference between matched gWT and gMUT sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For genomic sequences that were statistically different from basal, 99% (112/113) have a significant difference between matched gWT and gMUT sequences (Figure 1B; p<0.05, Wilcoxon rank-sum test; Bonferroni correction, n = 403; p-values reported in Supplementary file 1H), indicating that the activity of these genomic sequences depends on one or more of the pluripotency TFBS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "6ba046f4-6029-445f-8f33-40ed9463eb12",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C23",
+      "claim": "The presence of high-quality pluripotency TFBS is generally insufficient to drive expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation that the presence of high-quality pluripotency TFBS is generally insufficient to drive expression demonstrates that binding sites must be presented in the proper surrounding sequence context in order to generate a functional regulatory element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing that most gWT sequences with pluripotency sites are not active.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "57a558de-f70b-4341-a042-b06029f7a7d0",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C24",
+      "claim": "The ten highest expressing elements in the SYN library all have S and O sites next to each other and in the first two positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The ten highest expressing elements in the SYN library all have S and O sites next to each other and in the first two positions (Figure 2B), while the ten lowest expressing 4-mers have a strong bias for O and S in the last two positions (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b23c5605-b652-47c9-848c-095c84247ad3",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C25",
+      "claim": "The ten lowest expressing 4-mers have a strong bias for O and S in the last two positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The ten highest expressing elements in the SYN library all have S and O sites next to each other and in the first two positions (Figure 2B), while the ten lowest expressing 4-mers have a strong bias for O and S in the last two positions (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "4732b043-79b9-4a8d-b3ee-e8c5b21a8453",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C26",
+      "claim": "The 10 highest expressing 4-mers all have K followed by E in the last two positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The 10 highest expressing 4-mers all have K followed by E in the last two positions, while the lowest expressing 4-mers tend to have K and E in the first two positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "cd984e15-ec01-43b8-9e07-7078ff2ae119",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C27",
+      "claim": "In the highest 25% of 4-mers S is depleted (0/96) in the fourth position.",
+      "claim_type": "EXPLICIT",
+      "source": "In the highest 25% of 4-mers S is depleted (0/96) in the fourth position (Figure 2D), while in the lowest 25% E is virtually depleted (1/96) in the fourth position (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b84f5b55-1203-4c41-85b5-14395b13bb28",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C28",
+      "claim": "In the lowest 25% of 4-mers E is virtually depleted (1/96) in the fourth position.",
+      "claim_type": "EXPLICIT",
+      "source": "In the highest 25% of 4-mers S is depleted (0/96) in the fourth position (Figure 2D), while in the lowest 25% E is virtually depleted (1/96) in the fourth position (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b152c306-6b55-4ed9-9448-9cf979744979",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C29",
+      "claim": "In the fourth position, E is overrepresented in the top 25% (64/96) of 4-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in the fourth position, E is overrepresented in the top 25% (64/96) while S is overrepresented in the bottom 25% (48/96).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "86853bdc-bc88-40c8-bf26-52c9353f4b42",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C30",
+      "claim": "In the fourth position, S is overrepresented in the bottom 25% (48/96) of 4-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in the fourth position, E is overrepresented in the top 25% (64/96) while S is overrepresented in the bottom 25% (48/96).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "354e33a9-c845-45fc-b40a-01cc374e1bd2",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C31",
+      "claim": "The precise arrangement of TFBS influences the activities of synthetic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the precise arrangement of TFBS influences the activities of synthetic elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing position-dependent effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "7e76acb1-8366-46c2-a501-8001624804ca",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C32",
+      "claim": "The order and orientation of O, S, K, and E sites does not appear to contribute to the activity of genomic sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "While the grammar of O, S, K, and E sites influences the relative activities of the SYN elements, their order and orientation does not appear to contribute to the activity of genomic sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the lack of correlation between synthetic and genomic sequences with the same site configurations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "2fd80c00-412a-42cb-989e-f089adf340f9",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C33",
+      "claim": "All four classes of gWT sequences span the full range of expression levels observed for the entire library, with only OSK sequences having a higher average expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike SYN 3-mer elements, all four classes of gWT sequences span the full range of expression levels observed for the entire library, with only OSK sequences having a higher average expression (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "907f6afd-d0e9-441b-bc27-8f88549c9796",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C34",
+      "claim": "There is no correlation in regulatory activity between matched site configurations of gWT and SYN sequences (R2 = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no correlation in regulatory activity between matched site configurations, (R2 = 0.001; Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "dce614ea-7d1e-4f3b-9a31-f809e4ca566f",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C35",
+      "claim": "The independent iRF model had an R2 of 0.56 between observed and predicted observations when tested on held-out data for the final iRF iteration.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'independent' iRF model had an R2 of 0.56 between observed and predicted observations when tested on held-out data for the final iRF iteration (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling results shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "15a13732-4338-4f19-824c-9743170f5954",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C36",
+      "claim": "The independent iRF model cannot account for the differences in activities between 4-mers (4-mers R2 = 0.00).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the independent iRF model cannot account for the differences in activities between 4-mers, because all 4-mers have identical TFBS composition (4-mers R2 = 0.00).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model design and the fact that all 4-mers have the same composition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "aa4cfd4e-eed9-4266-9e7d-d1d0009b6bfd",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C37",
+      "claim": "The 20-term positional iRF model performs well in predicting SYN expression, with an overall R2 of 0.87 for the last model iteration on a held-out test set.",
+      "claim_type": "EXPLICIT",
+      "source": "The 20-term positional model performs well in predicting SYN expression, with an overall R2 of 0.87 for the last model iteration on a held-out test set (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b79f7f86-fe2a-451a-9525-39998b99e349",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C38",
+      "claim": "The positional iRF model highly weights the presence/absence of the sites and also has contributions from the presence of E in the 4th position and S in the first and second positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The positional iRF model highly weights the presence/absence of the sites, as expected from the performance of the independent iRF model, but also has contributions from the presence of E in the 4th position and S in the first and second positions (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "efc46313-286f-4b4e-8e4f-40682c3963db",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C39",
+      "claim": "iRF models trained on the SYN library failed to predict or classify the expression of genomic sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "iRF models trained on the SYN library failed to predict or classify the expression of genomic sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "bcc7908e-5ade-4998-bfd9-00c07ce06c9b",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C40",
+      "claim": "Retraining iRF regression models to predict gWT expression fails during the training step and has no correlation with the observed expression data (independent: R2 = 0.03; independent + position: R2 = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Retraining iRF regression models to predict gWT expression fails during the training step and has no correlation with the observed expression data (independent: R2 = 0.03; independent + position: R2 = 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "c5adaed0-d4ac-42db-b298-dd011c087233",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C41",
+      "claim": "Training a classification model to distinguish between active and inactive gWT sequences using either only independent or independent + position features fails to perform better than chance (Independent: AUROC = 0.52, AUPRC = 0.22; Positional: AUROC = 0.47, AUPRC = 0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "Training a classification model to distinguish between active and inactive gWT sequences (top 25%, n = 102; bottom 75%, n = 305) using either only independent or independent + position features also fails to perform better than chance (Independent: Area Under the Receiver Operator Curve (AUROC) = 0.52, Area Under the Precision Recall Curve (AUPRC) = 0.22; Positional: AUROC = 0.47, AUPRC = 0.25; Supplementary file 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "0db0e72f-a811-4814-b088-c52866781d69",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C42",
+      "claim": "Changing the spacer sequences in the SYN library had small, but significant effects on the activities of the 4-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that changing the spacer sequences in the SYN library had small, but significant effects on the activities of the 4-mers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the mini spacer library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "ada88254-a808-4aa4-b4f1-03d0f1b54043",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C43",
+      "claim": "The activities of all six 4-mers in the mini spacer library tested with all four spacer sequences remained in the original range of expression for 4-mers.",
+      "claim_type": "EXPLICIT",
+      "source": "The activities of all six 4-mers in the mini spacer library tested with all four spacer sequences remained in the original range of expression for 4-mers (Figure 3\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "ed1c68d0-8f21-490b-a502-500232470ca1",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C44",
+      "claim": "On average, the spacer sequences modified expression by 6% (0.3\u201325%).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the spacer sequences modified expression by 6% (0.3\u201325%, Figure 3\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "cda0b759-1187-46dd-af80-009cdc2c4b6f",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C45",
+      "claim": "The rank order of the 4-mers did change for different spacers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overall effects of spacer sequences were small, the rank order of the 4-mers did change for different spacers (Figure 3\u2014figure supplement 3C), supporting the idea that sequence features flanking the binding sites do affect gene expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "67432381-e98b-41eb-a3bd-1b50326f01c7",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C46",
+      "claim": "The best performing gkm-SVM classified positive and negative sets with AUROC of 0.75 and AUPRC of 0.77 (k = 8, gap = 2).",
+      "claim_type": "EXPLICIT",
+      "source": "The best performing gkm-SVM classified our positive and negative sets with AUROC of 0.75 and AUPRC of 0.77 (k = 8, gap = 2; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "3038eb1d-c584-4e5a-b9fe-eeb809a40586",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C47",
+      "claim": "Many of the discriminative 8-mers (29/50) have motif matches that include at least one pluripotency family member.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all sequences in the gWT library were selected to contain TFBS for the four pluripotency factors, many of the discriminative 8-mers (29/50) have motif matches that include at least one pluripotency family member (Fletez-Brant et al., 2013; Bailey et al., 2009; Supplementary file 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of the gkm-SVM results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "719ab351-be9a-4e75-8497-a411260064d2",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C48",
+      "claim": "For SOX2, there is no difference in PWM scores between high and low sequences (p=0.07, Welch's t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "For SOX2, we found no difference in scores between high and low sequences (Figure 4B; p=0.07, Welch's t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of PWM scores shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "13f38a79-6a76-4b2c-8f9d-3c5136d4ccef",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C49",
+      "claim": "For OCT4, there is a modest difference between the average scores for high and low sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For OCT4, we found a modest difference between the average scores for high and low sequences and a broader but also a significant difference for KLF4 and ESRRB PWM scores (Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of PWM scores shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "6281b146-54c3-4ae7-9344-b94572b5a1f0",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C50",
+      "claim": "There is a significant difference for KLF4 and ESRRB PWM scores between high and low sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For OCT4, we found a modest difference between the average scores for high and low sequences and a broader but also a significant difference for KLF4 and ESRRB PWM scores (Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of PWM scores shown in Figures 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "2763e687-650e-4778-a7aa-2cc6320862cb",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C51",
+      "claim": "Summing the PWM scores for all of the TFBS further separates high and low sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Summing the PWM scores for all of the TFBS further separates high and low sequences (Figure 4F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis shown in Figures 4F and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "9fbcc883-15b8-4257-8b95-7c5adbbb66f7",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C52",
+      "claim": "The quality of the primary sites contributes to the activity differences observed among gWT sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "These patterns suggest that the quality of the primary sites contributes to the activity differences observed among gWT sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the PWM score analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "e5b987e6-bf14-46cc-84ab-6c826928e587",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C53",
+      "claim": "There is evidence for additional low predicted affinity sites for SOX2 and OCT4 in both high and low sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We found evidence for additional low predicted affinity sites for SOX2 and OCT4 in both high and low sequences, making it unlikely that low-affinity sites strongly contribute to expression differences (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by predicted occupancy analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "892f6ab3-cc4e-46e9-90d9-ae817c1ae2bc",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C54",
+      "claim": "The affinities of the primary sites in genomic sequences contribute to the regulatory activity of genomic sequences more than the presence of additional sites with low predicted affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the affinities of the primary sites in genomic sequences, which are fixed in synthetic elements, contribute to the regulatory activity of genomic sequences more than the presence of additional sites with low predicted affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the predicted occupancy and PWM score analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "bbf1084d-8af7-45b3-94bc-1b9a6b366d1c",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C55",
+      "claim": "There is a preference in high activity sequences for closely spaced sites for OCT4 and SOX2 reflecting a known interaction between these TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a preference in high activity sequences for closely spaced sites for OCT4 and SOX2 reflecting a known interaction between these TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by spacing analysis shown in Figure 4\u2014figure supplement 2 and references to known interactions.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "d9630480-0757-416d-a39a-c9cdcfb5b42c",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C56",
+      "claim": "There are preferences in high activity genomic sequences for closely spaced KLF4 and OCT4 sites, and for ESRRB and OCT4 sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed preferences in high activity genomic sequences for closely spaced KLF4 and OCT4 sites, and for ESRRB and OCT4 sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by spacing analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "6138064a-2efc-473c-87e6-376c13127f08",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C57",
+      "claim": "Binding site spacing may play a role in setting the relative activities of genomic sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding site spacing may therefore play a role in setting the relative activities of genomic sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the spacing analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "728c0f62-43ea-4ef3-a7fa-42ad7e575280",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C58",
+      "claim": "There is significant enrichment for FOXA1 sites in high activity sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant enrichment for FOXA1 sites (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by motif analysis shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "229570d4-c640-49fa-b8b4-afcfec1fc277",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C59",
+      "claim": "FOXA1 and NANOG had higher total PWM scores in the high activity sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that FOXA1 and NANOG had higher total PWM scores in the high activity sequences (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "c1809323-32bf-4722-86d4-249b2fae01b9",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C60",
+      "claim": "Other family members (FOXA2, FOXD1, FOXP1) are expressed in ESCs and have been shown to contribute to the pluripotent regulatory network.",
+      "claim_type": "EXPLICIT",
+      "source": "While FOXA1 is likely not present in mESCs, other family members (FOXA2, FOXD1, FOXP1) are expressed in ESCs and have been shown to contribute to the pluripotent regulatory network, and therefore could be acting on the gWT sequences through these binding sites (Pan and Thomson, 2007; Mulas et al., 2018; Gabut et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "bac61d30-dd20-4e34-9b54-edf833c39748",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C61",
+      "claim": "Genomic sequences with higher occupancy by TFs in the genome, as measured by ChIP-seq, have higher average expression in the MPRA assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic sequences with higher occupancy by TFs in the genome, as measured by ChIP-seq, have higher average expression in our assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b4601244-9dca-4fc9-a3fa-7b3600337665",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C62",
+      "claim": "Both high and low activity gWT sequences were accessible in the genome showing that accessibility does not necessarily correlate with high activity sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Both high and low activity gWT sequences were accessible in the genome showing that accessibility does not necessarily correlate with high activity sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ATAC-seq analysis shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "678342be-b63d-4fd0-a95a-a60e475049ae",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C63",
+      "claim": "High activity sequences had a small but significant overlap with NANOG peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "High activity sequences had a small but significant overlap with NANOG peaks (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-seq overlap analysis shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "128d5786-7dfb-4513-a822-b5a6ddf4856f",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C64",
+      "claim": "For the 328 genomic sequences with a NANOG ChIP-seq signal, only 16% had an underlying TFBS as determined by motif scanning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for the 328 genomic sequences with a NANOG ChIP-seq signal, only 16% had an underlying TFBS as determined by motif scanning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of NANOG ChIP-seq and motif scanning data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "8558b65d-4170-46e0-8b30-098d628dd06f",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C65",
+      "claim": "NANOG might be recruited by other pluripotency TFs to these sequences independent of high-quality TFBS for this factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, NANOG might be recruited by other pluripotency TFs to these sequences independent of high-quality TFBS for this factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that most NANOG ChIP-seq peaks lack high-quality NANOG motifs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "67a8ad20-c29f-47d0-af08-71c087170133",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C66",
+      "claim": "gWT sequences with higher occupancy in the genome have higher average expression in the MPRA assay.",
+      "claim_type": "EXPLICIT",
+      "source": "If we compare expression levels to the number of overlapping ChIP-seq peaks, including O,S,K,E and these additional TFs, we see that gWT sequences with higher occupancy in the genome have higher average expression in our assay (Figure 5), which has been previously observed in HepG2 cells (Ulirsch et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis shown in Figure 5 and a citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "8b68f005-1dbf-435c-bda3-2f85abb6d22b",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C67",
+      "claim": "The gWT iRF model classified active from inactive on a held out test set with AUROC = 0.67, and AUPRC = 0.46.",
+      "claim_type": "EXPLICIT",
+      "source": "This gWT iRF model classified active from inactive on a held out test set with AUROC = 0.67, and AUPRC = 0.46 (Figure 6A\u2013B, model 'All').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling results shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "59da8334-6ff9-45a1-8466-fb84d1a09498",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C68",
+      "claim": "Models that only included subsets of features did not perform as well as the model with all features.",
+      "claim_type": "EXPLICIT",
+      "source": "Models that only included subsets of features \u2014 the spacing between elements (model 'Spacing'), the strength of the pluripotency sites ('PrimarySites'), or the overlapping ChIP signal ('ChIPSignals') \u2014 did not perform as well (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling results shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "7d53a936-2d05-4ae8-9fb9-852c7c3522bd",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C69",
+      "claim": "The features that best separate active from inactive sequences were related to attributes of the pluripotency sites with the top feature being the summed pluripotency factor predicted affinity per sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The features that best separate active from inactive sequences were related to attributes of the pluripotency sites with the top feature being the summed pluripotency factor predicted affinity per sequence ('OSKE_TotalAffinity', Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by feature importance analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "92e6f928-66f1-4cea-8eaf-73f2ae06eb14",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C70",
+      "claim": "Genomic sequences drive higher expression when they contain strong binding sites with preferred spacing and are embedded in sequences that can mediate the recruitment of other TFs or cofactors.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that genomic sequences drive higher expression when they contain strong binding sites with preferred spacing and are embedded in sequences that can mediate the recruitment of other TFs or cofactors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple analyses including PWM scores, spacing, and additional TF binding sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "76f0ea09-64a3-4ae2-a1ae-3fcae19eeb8e",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C71",
+      "claim": "The strongest similarity between synthetic and genomic elements is that in both cases activity depends heavily on the number and affinity of binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest similarity between synthetic and genomic elements is that in both cases activity depends heavily on the number and affinity of binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "08ab0280-a461-45d3-949a-1936e2e31d45",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C72",
+      "claim": "The overall occupancy of a sequence by its cognate TFs is the primary determinant of that element's activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are most consistent with a model in which the overall occupancy of a sequence by its cognate TFs is the primary determinant of that element's activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b0d8bfcb-df68-4c49-8ab4-bbf243d2b8b6",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C73",
+      "claim": "The predictive power of the trained genomic model derived primarily from summing over the number and affinity of binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, the predictive power of our trained genomic model derived primarily from summing over the number and affinity of binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the feature importance analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "adc0cf99-5718-4369-a798-54d13f1e9702",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C74",
+      "claim": "The activity of genomic elements in plasmid MPRA experiments do not correlate with experimental measurements of how accessible the chromatin is in their native locations.",
+      "claim_type": "EXPLICIT",
+      "source": "The occupancy model might also explain the surprising result that the activity of genomic elements in our plasmid MPRA experiments do not correlate with experimental measurements of how accessible the chromatin is in their native locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "0ef7d18c-81bb-4f53-bcaa-331f611defac",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C75",
+      "claim": "In many cases plasmid assays do recapitulate the activity of chromosomally integrated elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmid assays might not capture regulation by chromatin, but in many cases plasmid assays do recapitulate the activity of chromosomally integrated elements (Maricque et al., 2019; Inoue et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "100d4882-7039-4127-8084-2384f9309c25",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C76",
+      "claim": "Accessible regions may be bound by transcription factors but may not necessarily drive activity, such as in the case of 'poised' regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, accessible regions may be bound by transcription factors but may not necessarily drive activity, such as in the case of 'poised' regulatory elements (Cruz-Molina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "ce6d3340-6434-48f2-b180-342d408862cc",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C77",
+      "claim": "Nucleosome exclusion is important for regulatory activity and may reflect TF binding, but accessibility itself may not be sufficient for regulatory activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosome exclusion is important for regulatory activity (Khoueiry et al., 2010) and may reflect TF binding, but accessibility itself may not be sufficient for regulatory activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and inference from the data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "774ba38f-1fc4-4add-9695-d0810fd92d44",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C78",
+      "claim": "The activity of genomic elements correlates with TF occupancy as measured by ChIP-seq, but not necessarily open chromatin measurements by ATAC-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "That the activity of genomic elements correlates with TF occupancy as measured by ChIP-seq, but not necessarily open chromatin measurements by ATAC-seq, supports the occupancy model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "18288b1d-831a-4237-a546-cdb59045b752",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C79",
+      "claim": "Two-thirds of genomic sequences that contain consensus motifs and reside under a ChIP-seq peak for one of the pluripotency TFs had no activity in the MPRA assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, two-thirds of genomic sequences that contain consensus motifs and reside under a ChIP-seq peak for one of the pluripotency TFs had no activity in our assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "de3db6af-7351-4dd0-9548-cad6e56e4254",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C80",
+      "claim": "The sequence context in which occupied binding sites occur must contribute heavily to their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Why don't all sequences occupied by TFs have strong regulatory activity? The sequence context in which occupied binding sites occur must contribute heavily to their activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that many occupied sites lack activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "8d378028-984a-4d05-b11e-8bfade13f979",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C81",
+      "claim": "With synthetic elements there is clear evidence that their activity depends on the position and orientation of pluripotency binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "With synthetic elements we found clear evidence that their activity depends on the position and orientation of pluripotency binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data with synthetic elements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "49b196cc-9016-4170-9bc0-cb134c561499",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C82",
+      "claim": "Synthetic elements with the same number and affinity of TFBS had different levels of activity depending on the order and orientation of the sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic elements with the same number and affinity of TFBS had different levels of activity depending on the order and orientation of the sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "761facac-4fba-4bef-a752-14d4ab46538b",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C83",
+      "claim": "Active regulatory elements in the genome are defined not only by the presence of TF occupied motifs, but also by cues in the surrounding DNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that active regulatory elements in the genome are defined not only by the presence of TF occupied motifs, but also by cues in the surrounding DNA sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "5dc5ea22-e5b2-405c-979b-dba16121bbbf",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C84",
+      "claim": "Models that robustly predict the activity of synthetic elements failed to predict the activity of genomic sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our models that captured the specific regulatory grammar of synthetic elements failed to predict the activity of genomic sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "efc6ec71-2390-4f91-a458-671c6a13de72",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C85",
+      "claim": "When spacer sequences were changed in the synthetic library, small but reproducible effects on expression were found.",
+      "claim_type": "EXPLICIT",
+      "source": "When we changed the spacer sequences in our synthetic library, we found small but reproducible effects on expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of experimental results from the mini spacer library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b5f7b56d-d4f1-42cd-9732-db9991485731",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C86",
+      "claim": "Changing the spacer sequences did not have large effects on the independent contribution of each TFBS, but did have effects on the interactions between sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Our interpretation of this result is that changing the spacer sequences did not have large effects on the independent contribution of each TFBS, but did have effects on the interactions between sites (i.e. the regulatory grammar).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results from the mini spacer library.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "eb08d836-610c-414c-b7da-eee0c139df6f",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "claim_id": "C87",
+      "claim": "If the grammar that is learned from synthetic elements reflects real constraints in the cell, then models of synthetic elements should predict the relative effects of single perturbations of genomic elements even if they cannot predict the absolute expression of genomic sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "If the grammar that is learned from synthetic elements reflects real constraints in the cell, then models of synthetic elements should predict the relative effects of single perturbations of genomic elements even if they cannot predict the absolute expression of genomic sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction about future experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "74b9c423-9bc3-4afd-9b40-5a11463cc8d5",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors designed and successfully assayed two MPRA libraries: a synthetic library (SYN) containing all 624 unique combinations of 2-4 pluripotency TFBS in both orientations, and a genomic library (gWT/gMUT) with 407 genomic sequences containing three pluripotency sites plus matched mutant controls. Measurements were highly reproducible (R\u00b2=0.96-0.99) with near-complete recovery of library members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 describe the experimental design and technical quality metrics. The high reproducibility between replicates and near-complete recovery of sequences demonstrate robust experimental execution. These are well-documented methodological results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "33944494-58a1-4f52-a532-c4fa637a70f2",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Synthetic elements with more binding sites generally drive higher expression (77% of SYN elements active, with 92% of 4-mers active), while only 28% of genomic sequences were active above basal levels. For active genomic sequences, 99% showed dependence on pluripotency TFBS. The presence of high-quality pluripotency TFBS is generally insufficient to drive expression in genomic contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 are supported by statistical analyses with appropriate multiple testing correction (Bonferroni, Wilcoxon rank-sum tests). The stark contrast between synthetic (77% active) and genomic (28% active) sequences is well-documented. The conclusion that TFBS presence is insufficient (C23) logically follows from the data showing most genomic sequences with consensus sites are inactive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "80d6775f-9f40-4bcd-82ab-2c93681f7218",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The arrangement of TFBS influences synthetic element activity in a position-dependent manner. The highest expressing 4-mers have S and O sites in the first two positions and K followed by E in the last two positions. S is depleted (0/96) in position 4 of high expressers, while E is depleted (1/96) in position 4 of low expressers. Conversely, E is overrepresented (64/96) in position 4 of high expressers and S is overrepresented (48/96) in position 4 of low expressers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C31 describe clear positional patterns in the synthetic library data shown in Figure 2. The specific enrichment/depletion patterns are quantified and statistically robust given the exhaustive library design. These observations directly support the conclusion that precise TFBS arrangement influences synthetic element activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "fb062c01-5c97-4e45-91c6-b4c6a5b7ffde",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The order and orientation of pluripotency TFBS does not appear to contribute to genomic sequence activity. All four classes of gWT 3-mer sequences span the full range of expression levels, and there is no correlation (R\u00b2=0.001) between matched synthetic and genomic sequences with the same site configurations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by the data in Figure 3\u2014figure supplement 1. The lack of correlation (R\u00b2=0.001) between matched configurations is striking and well-documented. However, this result could also reflect confounding by other sequence features (spacing, affinity, flanking sequences) rather than definitively proving that order/orientation don't matter in genomic contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "074d8dda-6eb9-4417-82bb-3ef10a8d501a",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "An iRF model incorporating TFBS presence and position predicts synthetic element expression well (R\u00b2=0.87), with the most important features being TFBS presence/absence, E in position 4, and S in positions 1-2. An independent model using only TFBS presence achieved R\u00b2=0.56 but cannot distinguish between 4-mers (R\u00b2=0.00).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 report modeling results with clear performance metrics. The high R\u00b2 (0.87) for the positional model and the logical inability of the independent model to distinguish 4-mers (all have identical composition) are well-supported. Feature importance rankings align with the experimental observations in C24-C30.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "40ea4e08-74fc-4560-8bcc-590b2db330db",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Models trained on synthetic elements failed to predict or classify genomic sequence expression. Regression models showed no correlation with genomic data (R\u00b2=0.03 for independent, R\u00b2=0.001 for positional), and classification models performed at chance level (AUROC=0.47-0.52).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 clearly document the failure of synthetic-trained models to generalize to genomic sequences. The near-zero R\u00b2 values and chance-level classification performance are unambiguous. This is a key negative result that motivates the subsequent analyses of genomic-specific features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "f600c7db-5ee3-4699-8224-20524fe45bcf",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Changing spacer sequences in synthetic elements had small but significant effects on 4-mer activity (average 6% change, range 0.3-25%). All tested 4-mers remained within the original expression range, but rank order changed with different spacers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 describe results from the mini spacer library experiment. The modest effect sizes (6% average) and maintained expression ranges are clearly documented in Figure 3\u2014figure supplement 3. The change in rank order despite small absolute effects supports the interpretation that spacer sequences affect regulatory grammar.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "d4c80a4b-23c2-4e73-b1a0-bfefd0b1e736",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A gkm-SVM classified high vs. low genomic sequences with AUROC=0.75 and AUPRC=0.77. Many discriminative 8-mers (29/50) matched pluripotency factor motifs. PWM analysis showed no difference for SOX2 (p=0.07), modest differences for OCT4, and significant differences for KLF4 and ESRRB between high and low sequences. Summing PWM scores further separated high and low sequences, suggesting primary site quality contributes to genomic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 describe sequence-based modeling and PWM analysis. The gkm-SVM performance metrics are clearly stated, and the PWM score differences are supported by statistical tests (Welch's t-test) shown in Figure 4. The inference that site quality contributes to activity (C52) is reasonable given the data, though causality is not definitively established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "435ee534-e548-4898-84f1-dc761aefdc4a",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Low-affinity secondary sites for SOX2 and OCT4 are present in both high and low genomic sequences, making it unlikely they strongly contribute to expression differences. Primary site affinities contribute more to genomic regulatory activity than additional low-affinity sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by predicted occupancy analysis in Figure 4\u2014figure supplement 1. The presence of low-affinity sites in both high and low sequences argues against their importance. However, the conclusion relies on computational predictions of occupancy rather than direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "97348d43-7768-47a7-9d32-6e7f53093d53",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "High activity genomic sequences show preferences for closely spaced OCT4-SOX2 sites (reflecting known interactions), as well as closely spaced KLF4-OCT4 and ESRRB-OCT4 sites. Binding site spacing may play a role in setting relative activities of genomic sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 describe spacing analysis shown in Figure 4\u2014figure supplement 2. The preference for close OCT4-SOX2 spacing is consistent with known biology. However, the analysis is descriptive and correlative; causality is not established. The conclusion that spacing 'may play a role' (C57) is appropriately cautious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "537ec9c8-02d1-4e99-8195-a314d33cfcc3",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "High activity genomic sequences show significant enrichment for FOXA1 sites and higher PWM scores for FOXA1 and NANOG. While FOXA1 is likely not present in mESCs, other FOX family members (FOXA2, FOXD1, FOXP1) are expressed and could act through these sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by motif analysis in Figures 4H and 5\u2014figure supplement 1A. The interpretation about FOX family members (C60) is supported by citations. However, the functional relevance of FOXA1 motifs when FOXA1 itself is absent requires the assumption that other family members bind similar sequences, which is plausible but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "a6b16ff0-d3d6-4f42-bf6d-d09affd4c5e9",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Genomic sequences with higher TF occupancy (measured by ChIP-seq) have higher average MPRA expression, while chromatin accessibility (ATAC-seq) does not correlate with activity. High activity sequences show small but significant NANOG ChIP-seq overlap, though only 16% of NANOG-bound sequences have detectable NANOG motifs, suggesting indirect recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 integrate ChIP-seq and ATAC-seq data with MPRA results (Figure 5). The correlation with ChIP-seq but not ATAC-seq is clearly shown. The observation about NANOG binding without motifs (C64) is well-documented, and the inference about indirect recruitment (C65) is reasonable. However, the plasmid-based MPRA may not fully recapitulate chromatin context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b5aec554-cc28-4297-b145-9d4535158636",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "An iRF model with 58 features (including site affinities, spacing, additional TF sites, and ChIP-seq data) classified active vs. inactive genomic sequences with AUROC=0.67 and AUPRC=0.46. Models with feature subsets performed worse. The top feature was summed pluripotency factor affinity. Genomic sequences drive higher expression when they contain strong binding sites with preferred spacing embedded in sequences that recruit additional TFs or cofactors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 describe the comprehensive genomic model shown in Figure 6. The performance metrics are clearly stated, and the feature importance analysis (C69) is well-documented. The conclusion (C70) appropriately integrates multiple lines of evidence. However, the modest AUROC (0.67) indicates substantial unexplained variance, suggesting missing features or model limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "513e2295-f4d8-4f55-9d2e-dba39f59025c",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The strongest similarity between synthetic and genomic elements is that activity depends heavily on binding site number and affinity. The overall occupancy of a sequence by its cognate TFs is the primary determinant of activity, with the genomic model's predictive power deriving primarily from summing site number and affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 synthesize the major findings. The emphasis on occupancy is supported by multiple lines of evidence: the independent model performance (C35), the feature importance analysis (C69, C73), and the ChIP-seq correlation (C61). This represents the authors' central mechanistic interpretation of their data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "b32ac151-dc37-4223-a518-fbeef9063a20",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Genomic element activity in plasmid MPRA does not correlate with native chromatin accessibility. While plasmid assays may not capture chromatin regulation, they often recapitulate chromosomally integrated element activity. Accessible regions may be bound by TFs without driving activity (e.g., poised elements). The correlation with ChIP-seq but not ATAC-seq supports the occupancy model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 discuss the relationship between MPRA results and chromatin state. The lack of correlation with ATAC-seq (C74) is documented in Figure 5\u2014figure supplement 1B. The citations supporting plasmid assay validity (C75) and poised elements (C76-C77) are appropriate. However, the interpretation requires accepting that plasmid-based assays are informative about genomic regulation despite lacking chromatin context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "3f80d10c-96f4-44c7-a1ac-b60a936f3431",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Two-thirds of genomic sequences with consensus motifs under ChIP-seq peaks had no MPRA activity. The sequence context in which occupied binding sites occur must contribute heavily to their activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 highlight a key observation that motivates the study's focus on sequence context. The 2/3 inactive fraction is clearly documented. The inference about sequence context (C80) is logical but somewhat circular\u2014the lack of activity in sequences with occupied sites is used to argue for context dependence, which is then invoked to explain the lack of activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "65733f7e-ec27-4a84-bc6c-4d9349791300",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Synthetic elements show clear evidence that activity depends on TFBS position and orientation, with elements having the same number and affinity of sites showing different activities based on arrangement. This suggests active genomic regulatory elements are defined by both TF-occupied motifs and cues in surrounding DNA sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 summarize the synthetic element findings and their implications. The position/orientation dependence is well-established by C24-C31 and C37-C38. The extrapolation to genomic elements (C83) is reasonable but represents an inference rather than direct demonstration, since synthetic-trained models failed on genomic sequences (C39-C41).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "156d861e-ea31-447d-a56f-3c7303253707",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Models predicting synthetic element activity failed to predict genomic sequence activity. Changing spacer sequences in synthetic elements produced small but reproducible effects on expression. The authors interpret this as spacers affecting interactions between sites (regulatory grammar) rather than independent TFBS contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 integrate the model failure (C39-C41) with the spacer experiment (C42-C45). The interpretation (C86) is plausible given the data showing rank order changes despite small absolute effects. However, alternative explanations (e.g., spacers affecting DNA shape or creating weak binding sites) are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "9e3586bf-14b4-4e6c-8c2b-2de6fd2864f6",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "For synthetic elements, expression is influenced by both the number and arrangement (order and orientation) of binding sites, with synthetic elements having the same composition showing different activities based on TFBS arrangement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result consolidates the main findings about synthetic elements from multiple claim groups. The evidence is strong and consistent across C18-C19 (number effects), C24-C30 (positional effects), and C37-C38 (modeling). The exhaustive library design provides definitive evidence for these effects in the synthetic context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "d5d37088-2105-4f6d-a183-703fea6a6e11",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "For genomic sequences, the relative activities are best explained by the predicted occupancy of binding sites, regardless of binding site identity and positioning. The overall occupancy of TFs is the primary determinant of genomic element activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result represents the authors' central conclusion about genomic sequences. It is supported by: lack of correlation with synthetic grammar (C34, R\u00b2=0.001), correlation with ChIP-seq occupancy (C61, C66), and feature importance showing summed affinity as top predictor (C69, C73). However, the modest model performance (AUROC=0.67) indicates this explanation is incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    },
+    {
+      "id": "13105976-ec6c-4ad4-bc2a-92e245db88a9",
+      "content_id": "f1c0893c-3f81-4812-bb97-29c619cb602c",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The authors predict that if synthetic element grammar reflects real cellular constraints, then synthetic-trained models should predict relative effects of single perturbations of genomic elements even if they cannot predict absolute expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C87 is explicitly speculative about future experiments. It represents a testable hypothesis rather than a result from the current study. The prediction is logical given the findings, but no data are presented to support or refute it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:40.642200Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1a5d7482-6606-4eaa-9a48-77f5a04c8aae",
+      "result_id": "74b9c423-9bc3-4afd-9b40-5a11463cc8d5"
+    },
+    {
+      "claim_id": "de5140da-02cb-474b-9639-3d0fd3da69f5",
+      "result_id": "74b9c423-9bc3-4afd-9b40-5a11463cc8d5"
+    },
+    {
+      "claim_id": "5877cd81-22b9-4a7d-b0fc-95be5031dadd",
+      "result_id": "74b9c423-9bc3-4afd-9b40-5a11463cc8d5"
+    },
+    {
+      "claim_id": "b3e744fd-59c5-4d87-b015-4dd95a2102ed",
+      "result_id": "74b9c423-9bc3-4afd-9b40-5a11463cc8d5"
+    },
+    {
+      "claim_id": "f0dab69f-856e-4d6d-82e0-5978d2197ab7",
+      "result_id": "74b9c423-9bc3-4afd-9b40-5a11463cc8d5"
+    },
+    {
+      "claim_id": "928d79df-6f63-451b-9bb0-d5c797cf2791",
+      "result_id": "74b9c423-9bc3-4afd-9b40-5a11463cc8d5"
+    },
+    {
+      "claim_id": "f7232cbe-04ba-43a5-b0f8-a86e8b83ce88",
+      "result_id": "33944494-58a1-4f52-a532-c4fa637a70f2"
+    },
+    {
+      "claim_id": "1aaea2d9-d4ec-4c51-a955-6ce6e7637ff1",
+      "result_id": "33944494-58a1-4f52-a532-c4fa637a70f2"
+    },
+    {
+      "claim_id": "5d6b2ff9-0cdc-42bf-bf51-a525f60db775",
+      "result_id": "33944494-58a1-4f52-a532-c4fa637a70f2"
+    },
+    {
+      "claim_id": "d3261a81-476b-4747-be10-f46b03c96f36",
+      "result_id": "33944494-58a1-4f52-a532-c4fa637a70f2"
+    },
+    {
+      "claim_id": "b61c5550-696a-4d01-b7cc-78f5c1988ab6",
+      "result_id": "33944494-58a1-4f52-a532-c4fa637a70f2"
+    },
+    {
+      "claim_id": "6ba046f4-6029-445f-8f33-40ed9463eb12",
+      "result_id": "33944494-58a1-4f52-a532-c4fa637a70f2"
+    },
+    {
+      "claim_id": "57a558de-f70b-4341-a042-b06029f7a7d0",
+      "result_id": "80d6775f-9f40-4bcd-82ab-2c93681f7218"
+    },
+    {
+      "claim_id": "b23c5605-b652-47c9-848c-095c84247ad3",
+      "result_id": "80d6775f-9f40-4bcd-82ab-2c93681f7218"
+    },
+    {
+      "claim_id": "4732b043-79b9-4a8d-b3ee-e8c5b21a8453",
+      "result_id": "80d6775f-9f40-4bcd-82ab-2c93681f7218"
+    },
+    {
+      "claim_id": "cd984e15-ec01-43b8-9e07-7078ff2ae119",
+      "result_id": "80d6775f-9f40-4bcd-82ab-2c93681f7218"
+    },
+    {
+      "claim_id": "b84f5b55-1203-4c41-85b5-14395b13bb28",
+      "result_id": "80d6775f-9f40-4bcd-82ab-2c93681f7218"
+    },
+    {
+      "claim_id": "b152c306-6b55-4ed9-9448-9cf979744979",
+      "result_id": "80d6775f-9f40-4bcd-82ab-2c93681f7218"
+    },
+    {
+      "claim_id": "86853bdc-bc88-40c8-bf26-52c9353f4b42",
+      "result_id": "80d6775f-9f40-4bcd-82ab-2c93681f7218"
+    },
+    {
+      "claim_id": "354e33a9-c845-45fc-b40a-01cc374e1bd2",
+      "result_id": "80d6775f-9f40-4bcd-82ab-2c93681f7218"
+    },
+    {
+      "claim_id": "7e76acb1-8366-46c2-a501-8001624804ca",
+      "result_id": "fb062c01-5c97-4e45-91c6-b4c6a5b7ffde"
+    },
+    {
+      "claim_id": "2fd80c00-412a-42cb-989e-f089adf340f9",
+      "result_id": "fb062c01-5c97-4e45-91c6-b4c6a5b7ffde"
+    },
+    {
+      "claim_id": "907f6afd-d0e9-441b-bc27-8f88549c9796",
+      "result_id": "fb062c01-5c97-4e45-91c6-b4c6a5b7ffde"
+    },
+    {
+      "claim_id": "dce614ea-7d1e-4f3b-9a31-f809e4ca566f",
+      "result_id": "074d8dda-6eb9-4417-82bb-3ef10a8d501a"
+    },
+    {
+      "claim_id": "15a13732-4338-4f19-824c-9743170f5954",
+      "result_id": "074d8dda-6eb9-4417-82bb-3ef10a8d501a"
+    },
+    {
+      "claim_id": "aa4cfd4e-eed9-4266-9e7d-d1d0009b6bfd",
+      "result_id": "074d8dda-6eb9-4417-82bb-3ef10a8d501a"
+    },
+    {
+      "claim_id": "b79f7f86-fe2a-451a-9525-39998b99e349",
+      "result_id": "074d8dda-6eb9-4417-82bb-3ef10a8d501a"
+    },
+    {
+      "claim_id": "efc46313-286f-4b4e-8e4f-40682c3963db",
+      "result_id": "40ea4e08-74fc-4560-8bcc-590b2db330db"
+    },
+    {
+      "claim_id": "bcc7908e-5ade-4998-bfd9-00c07ce06c9b",
+      "result_id": "40ea4e08-74fc-4560-8bcc-590b2db330db"
+    },
+    {
+      "claim_id": "c5adaed0-d4ac-42db-b298-dd011c087233",
+      "result_id": "40ea4e08-74fc-4560-8bcc-590b2db330db"
+    },
+    {
+      "claim_id": "0db0e72f-a811-4814-b088-c52866781d69",
+      "result_id": "f600c7db-5ee3-4699-8224-20524fe45bcf"
+    },
+    {
+      "claim_id": "ada88254-a808-4aa4-b4f1-03d0f1b54043",
+      "result_id": "f600c7db-5ee3-4699-8224-20524fe45bcf"
+    },
+    {
+      "claim_id": "ed1c68d0-8f21-490b-a502-500232470ca1",
+      "result_id": "f600c7db-5ee3-4699-8224-20524fe45bcf"
+    },
+    {
+      "claim_id": "cda0b759-1187-46dd-af80-009cdc2c4b6f",
+      "result_id": "f600c7db-5ee3-4699-8224-20524fe45bcf"
+    },
+    {
+      "claim_id": "67432381-e98b-41eb-a3bd-1b50326f01c7",
+      "result_id": "d4c80a4b-23c2-4e73-b1a0-bfefd0b1e736"
+    },
+    {
+      "claim_id": "3038eb1d-c584-4e5a-b9fe-eeb809a40586",
+      "result_id": "d4c80a4b-23c2-4e73-b1a0-bfefd0b1e736"
+    },
+    {
+      "claim_id": "719ab351-be9a-4e75-8497-a411260064d2",
+      "result_id": "d4c80a4b-23c2-4e73-b1a0-bfefd0b1e736"
+    },
+    {
+      "claim_id": "13f38a79-6a76-4b2c-8f9d-3c5136d4ccef",
+      "result_id": "d4c80a4b-23c2-4e73-b1a0-bfefd0b1e736"
+    },
+    {
+      "claim_id": "6281b146-54c3-4ae7-9344-b94572b5a1f0",
+      "result_id": "d4c80a4b-23c2-4e73-b1a0-bfefd0b1e736"
+    },
+    {
+      "claim_id": "2763e687-650e-4778-a7aa-2cc6320862cb",
+      "result_id": "d4c80a4b-23c2-4e73-b1a0-bfefd0b1e736"
+    },
+    {
+      "claim_id": "9fbcc883-15b8-4257-8b95-7c5adbbb66f7",
+      "result_id": "d4c80a4b-23c2-4e73-b1a0-bfefd0b1e736"
+    },
+    {
+      "claim_id": "e5b987e6-bf14-46cc-84ab-6c826928e587",
+      "result_id": "435ee534-e548-4898-84f1-dc761aefdc4a"
+    },
+    {
+      "claim_id": "892f6ab3-cc4e-46e9-90d9-ae817c1ae2bc",
+      "result_id": "435ee534-e548-4898-84f1-dc761aefdc4a"
+    },
+    {
+      "claim_id": "bbf1084d-8af7-45b3-94bc-1b9a6b366d1c",
+      "result_id": "97348d43-7768-47a7-9d32-6e7f53093d53"
+    },
+    {
+      "claim_id": "d9630480-0757-416d-a39a-c9cdcfb5b42c",
+      "result_id": "97348d43-7768-47a7-9d32-6e7f53093d53"
+    },
+    {
+      "claim_id": "6138064a-2efc-473c-87e6-376c13127f08",
+      "result_id": "97348d43-7768-47a7-9d32-6e7f53093d53"
+    },
+    {
+      "claim_id": "728c0f62-43ea-4ef3-a7fa-42ad7e575280",
+      "result_id": "537ec9c8-02d1-4e99-8195-a314d33cfcc3"
+    },
+    {
+      "claim_id": "229570d4-c640-49fa-b8b4-afcfec1fc277",
+      "result_id": "537ec9c8-02d1-4e99-8195-a314d33cfcc3"
+    },
+    {
+      "claim_id": "c1809323-32bf-4722-86d4-249b2fae01b9",
+      "result_id": "537ec9c8-02d1-4e99-8195-a314d33cfcc3"
+    },
+    {
+      "claim_id": "bac61d30-dd20-4e34-9b54-edf833c39748",
+      "result_id": "a6b16ff0-d3d6-4f42-bf6d-d09affd4c5e9"
+    },
+    {
+      "claim_id": "b4601244-9dca-4fc9-a3fa-7b3600337665",
+      "result_id": "a6b16ff0-d3d6-4f42-bf6d-d09affd4c5e9"
+    },
+    {
+      "claim_id": "678342be-b63d-4fd0-a95a-a60e475049ae",
+      "result_id": "a6b16ff0-d3d6-4f42-bf6d-d09affd4c5e9"
+    },
+    {
+      "claim_id": "128d5786-7dfb-4513-a822-b5a6ddf4856f",
+      "result_id": "a6b16ff0-d3d6-4f42-bf6d-d09affd4c5e9"
+    },
+    {
+      "claim_id": "8558b65d-4170-46e0-8b30-098d628dd06f",
+      "result_id": "a6b16ff0-d3d6-4f42-bf6d-d09affd4c5e9"
+    },
+    {
+      "claim_id": "67a8ad20-c29f-47d0-af08-71c087170133",
+      "result_id": "a6b16ff0-d3d6-4f42-bf6d-d09affd4c5e9"
+    },
+    {
+      "claim_id": "8b68f005-1dbf-435c-bda3-2f85abb6d22b",
+      "result_id": "b5aec554-cc28-4297-b145-9d4535158636"
+    },
+    {
+      "claim_id": "59da8334-6ff9-45a1-8466-fb84d1a09498",
+      "result_id": "b5aec554-cc28-4297-b145-9d4535158636"
+    },
+    {
+      "claim_id": "7d53a936-2d05-4ae8-9fb9-852c7c3522bd",
+      "result_id": "b5aec554-cc28-4297-b145-9d4535158636"
+    },
+    {
+      "claim_id": "92e6f928-66f1-4cea-8eaf-73f2ae06eb14",
+      "result_id": "b5aec554-cc28-4297-b145-9d4535158636"
+    },
+    {
+      "claim_id": "76f0ea09-64a3-4ae2-a1ae-3fcae19eeb8e",
+      "result_id": "513e2295-f4d8-4f55-9d2e-dba39f59025c"
+    },
+    {
+      "claim_id": "08ab0280-a461-45d3-949a-1936e2e31d45",
+      "result_id": "513e2295-f4d8-4f55-9d2e-dba39f59025c"
+    },
+    {
+      "claim_id": "b0d8bfcb-df68-4c49-8ab4-bbf243d2b8b6",
+      "result_id": "513e2295-f4d8-4f55-9d2e-dba39f59025c"
+    },
+    {
+      "claim_id": "adc0cf99-5718-4369-a798-54d13f1e9702",
+      "result_id": "b32ac151-dc37-4223-a518-fbeef9063a20"
+    },
+    {
+      "claim_id": "0ef7d18c-81bb-4f53-bcaa-331f611defac",
+      "result_id": "b32ac151-dc37-4223-a518-fbeef9063a20"
+    },
+    {
+      "claim_id": "100d4882-7039-4127-8084-2384f9309c25",
+      "result_id": "b32ac151-dc37-4223-a518-fbeef9063a20"
+    },
+    {
+      "claim_id": "ce6d3340-6434-48f2-b180-342d408862cc",
+      "result_id": "b32ac151-dc37-4223-a518-fbeef9063a20"
+    },
+    {
+      "claim_id": "774ba38f-1fc4-4add-9695-d0810fd92d44",
+      "result_id": "b32ac151-dc37-4223-a518-fbeef9063a20"
+    },
+    {
+      "claim_id": "18288b1d-831a-4237-a546-cdb59045b752",
+      "result_id": "3f80d10c-96f4-44c7-a1ac-b60a936f3431"
+    },
+    {
+      "claim_id": "de3db6af-7351-4dd0-9548-cad6e56e4254",
+      "result_id": "3f80d10c-96f4-44c7-a1ac-b60a936f3431"
+    },
+    {
+      "claim_id": "8d378028-984a-4d05-b11e-8bfade13f979",
+      "result_id": "65733f7e-ec27-4a84-bc6c-4d9349791300"
+    },
+    {
+      "claim_id": "49b196cc-9016-4170-9bc0-cb134c561499",
+      "result_id": "65733f7e-ec27-4a84-bc6c-4d9349791300"
+    },
+    {
+      "claim_id": "761facac-4fba-4bef-a752-14d4ab46538b",
+      "result_id": "65733f7e-ec27-4a84-bc6c-4d9349791300"
+    },
+    {
+      "claim_id": "5dc5ea22-e5b2-405c-979b-dba16121bbbf",
+      "result_id": "156d861e-ea31-447d-a56f-3c7303253707"
+    },
+    {
+      "claim_id": "efc6ec71-2390-4f91-a458-671c6a13de72",
+      "result_id": "156d861e-ea31-447d-a56f-3c7303253707"
+    },
+    {
+      "claim_id": "b5f7b56d-d4f1-42cd-9732-db9991485731",
+      "result_id": "156d861e-ea31-447d-a56f-3c7303253707"
+    },
+    {
+      "claim_id": "61884fc2-cca1-4646-bee4-911f5ea764e8",
+      "result_id": "9e3586bf-14b4-4e6c-8c2b-2de6fd2864f6"
+    },
+    {
+      "claim_id": "60d34bd7-b607-4f01-b3bc-7182e5f3d1c8",
+      "result_id": "9e3586bf-14b4-4e6c-8c2b-2de6fd2864f6"
+    },
+    {
+      "claim_id": "354e33a9-c845-45fc-b40a-01cc374e1bd2",
+      "result_id": "9e3586bf-14b4-4e6c-8c2b-2de6fd2864f6"
+    },
+    {
+      "claim_id": "49b196cc-9016-4170-9bc0-cb134c561499",
+      "result_id": "9e3586bf-14b4-4e6c-8c2b-2de6fd2864f6"
+    },
+    {
+      "claim_id": "1e209275-0323-4026-ba08-2c2995ca0eca",
+      "result_id": "d5d37088-2105-4f6d-a183-703fea6a6e11"
+    },
+    {
+      "claim_id": "882dad7d-f1fe-4644-a31f-7294a8831a52",
+      "result_id": "d5d37088-2105-4f6d-a183-703fea6a6e11"
+    },
+    {
+      "claim_id": "7e76acb1-8366-46c2-a501-8001624804ca",
+      "result_id": "d5d37088-2105-4f6d-a183-703fea6a6e11"
+    },
+    {
+      "claim_id": "08ab0280-a461-45d3-949a-1936e2e31d45",
+      "result_id": "d5d37088-2105-4f6d-a183-703fea6a6e11"
+    },
+    {
+      "claim_id": "eb08d836-610c-414c-b7da-eee0c139df6f",
+      "result_id": "13105976-ec6c-4ad4-bc2a-92e245db88a9"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C40",
+      "C41"
+    ],
+    "result": "SYT1 is a long-lived protein in neurons with biphasic turnover kinetics. Approximately half of SYT1 protein has a \u03c4 of 3.85 days, while the remaining fraction shows no detectable turnover over >1 week, demonstrating that long-lived proteins persist in post-mitotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C40, and C41 are well-supported by immunoblot analysis showing biphasic decay kinetics after CRE-mediated excision. The exponential fit (R\u00b2=0.7583) and plateau demonstrate two distinct SYT1 populations with different half-lives, validating the need for direct protein targeting methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C48"
+    ],
+    "result": "The auxin-inducible degron (AID) system exhibits significant leak when applied to SYT1 in neurons, preventing stable expression even with inhibitor. This leak is attributed to auxin-independent interaction between TIR1/AFB proteins and their targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C45, and C48 are supported by immunoblot data showing no detectable mAID-tagged SYT1 even with auxinole inhibitor, and by citations documenting leak in the AID system. The observation is consistent with published reports of auxin-independent TIR1/AFB interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C50"
+    ],
+    "result": "The modified cleavage sequence (ADVVCC/QMSY) combined with 0.5 \u00b5M paritaprevir provides complete on/off control of NS3/4A protease cleavage. This sequence was optimized from the natural NS5A/5B substrate by substituting P1' serine with glutamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30, and C50 are well-supported by immunoblot data showing complete inhibition at 0.5 \u00b5M PRV and complete cleavage upon washout. The optimization process is documented through comparison of different cleavage sequences, demonstrating improved performance over the natural substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C29"
+    ],
+    "result": "The SELF-mito model protein is cleaved with \u03c4=41 minutes after PRV washout, and PRV dissociates faster from NS3/4A protease than other inhibitors tested. PRV showed almost complete cleavage within the first hour.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C29 are supported by densitometry analysis fitted with single exponential decay (R\u00b2=0.9675) and comparative immunoblot time-courses. The kinetic measurements provide quantitative validation of PRV as the optimal inhibitor for rapid knockoff.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C32",
+      "C33"
+    ],
+    "result": "Paritaprevir at 0.5 \u00b5M is non-toxic and does not affect neuronal function. At this concentration, PRV does not alter spontaneous activity, synchronous release, synapse number, or morphology, and iGluSnFR reliably reports Ca\u00b2\u207a-dependent glutamate release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27, C28, C32, and C33 are well-supported by multiple assays: live-dead assays in HEK293T cells and neurons, iGluSnFR measurements of spontaneous and evoked release, and immunocytochemistry quantification of synapse number. The validation across multiple readouts strengthens confidence in PRV safety at working concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C24",
+      "C26"
+    ],
+    "result": "The S1-SELF construct demonstrates that NS3/4A protease can cleave substrates across large protein domains (C2 domains of SYT1). Cleavage occurs with \u03c4=166 minutes, and codon optimization of NS3/4A improved expression in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C24, and C26 are supported by immunoblot analysis showing complete cleavage (R\u00b2=0.9498) and codon adaptiveness analysis (CAI improved from 0.277 to 0.622). The demonstration of trans-cleavage across large domains is a novel technical advance, though the mechanism is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C32"
+    ],
+    "result": "Knockoff of SYT1 does not alter synapse number or morphology. Quantification shows no statistical differences between WT, S1KO, and S1-SELF conditions at any timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C32 are supported by immunocytochemistry quantification of synapse number and size using PSD95 and vGLUT1 markers. The lack of morphological changes validates that knockoff effects are specific to protein function rather than general synaptic disruption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C51"
+    ],
+    "result": "After knockoff cleavage, the cytoplasmic C2 domains of SYT1 are rapidly degraded while the membrane-anchored luminal domain persists longer and slowly redistributes to surrounding membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C51 are supported by Pearson correlation coefficient analysis showing differential loss of C2A versus luminal domain signals relative to synaptophysin. The interpretation that the luminal domain redistributes to surrounding membranes is reasonable but remains inferential from the correlation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C16",
+      "C17",
+      "C34"
+    ],
+    "result": "Acute knockoff of SYT1 results in loss of synchronous neurotransmitter release, validating SYT1's established role as the Ca\u00b2\u207a sensor for fast synchronous release. The iGluSnFR measurements agree with previous electrophysiological reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C16, C17, and C34 are well-supported by iGluSnFR imaging showing loss of synchronous (\u226410 ms) events in S1-SELF 8hr washout similar to S1KO neurons. The optical measurements are validated against established literature and provide temporal resolution of the loss of function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Acute knockoff of SYT1 increases the frequency of spontaneous release (mEPSCs and mGTs) without altering amplitude or kinetics. The increase plateaus at 4 hours after PRV washout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, and C12 are supported by both patch-clamp recordings and iGluSnFR measurements showing increased frequency but unchanged amplitude/kinetics. The convergence of electrophysiological and optical measurements strengthens the conclusion, and the 4-hour plateau corresponds well with the cleavage kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SYT1 directly controls both synchronous evoked release and spontaneous release. There is a significant inverse correlation (r\u00b2=0.7688, p=0.0097) between these two release modes during acute knockoff, and changes occur on timescales (hours) faster than homeostatic plasticity (days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C14, C52, C53, and C54 are supported by linear regression analysis and the temporal profile of changes. The inverse correlation is statistically significant, and the rapid timescale argues against homeostatic compensation. However, the inference that correlation implies direct control by a single molecule is reasonable but not definitively proven\u2014alternative explanations involving coupled mechanisms are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "Acute knockoff of SYT1 does not trigger homeostatic plasticity mechanisms as measured by CDK5 expression levels, a known regulator of homeostatic scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is supported by immunoblot analysis showing no changes in CDK5 protein levels across conditions. However, CDK5 is only one marker of homeostatic plasticity, and other compensatory mechanisms could be engaged. The conclusion would be strengthened by additional markers or functional assays of homeostatic plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Knockoff can be applied to specific protein domains, demonstrated by selective degradation of the synaptophysin 1 carboxy tail within 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by immunoblot data showing domain-specific degradation of SYP1. This proof-of-concept demonstrates the versatility of knockoff beyond whole-protein disruption, though only one example is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Glutamine at the P1' position is a strong signal for N-end mediated degradation from yeast to mammalian cells, facilitating rapid degradation of cleaved substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by established knowledge of the N-end rule pathway. The claim is based on well-documented literature regarding N-degron recognition, though direct experimental validation in this system is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Knockoff is reversible by re-adding inhibitor, but has the caveat that N-terminal fragments may persist and cause off-target effects. Future applications could include insertion of cleavage sites into intramembrane loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35, C36, and C37 are logical inferences from the mechanism but lack direct experimental validation. Reversibility is inferred from the mechanism but not demonstrated. The persistence of N-terminal fragments and potential dominant-negative effects are speculative concerns that should be tested. Intramembrane applications are proposed but not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Paritaprevir has favorable pharmacokinetics for in vivo applications, with high doses well-tolerated in mice and micromolar serum concentrations achieved in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 are supported by citation to published clinical data. However, the authors have not tested knockoff in vivo themselves, so this remains a proposal for future work based on literature precedent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior studies on SYT1's role in spontaneous release have yielded conflicting results across different model systems and experimental approaches, with evidence both supporting and contradicting a clamping function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 accurately summarize published literature showing conflicting results from Drosophila larvae vs. embryos, mouse autaptic vs. mass cultures, and acute vs. chronic disruption methods. The citations support the historical controversy that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "Existing protein disruption methods have significant limitations: genetic compensation in chronic KO/KD, off-target effects in CALI/FALI, limited applicability of knocksideways and AID to cytosolic proteins, and technical challenges with Trim-Away.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 and C49 are supported by citations to published literature and established knowledge of each technique's limitations. The characterization of existing methods' drawbacks provides appropriate context for the development of knockoff.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "KI cells, a Dictyostelium mutant lacking chemotactic activity, exhibit spontaneous segregation of cell density that propagates as traveling bands with ~1 mm spatial periodicity. These bands initially propagate in random directions with high orientational persistence, pass through each other upon collision, and gradually align over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by citations to prior work (C1, C2, C3, C6) and direct experimental observations shown in Figures 1a-b and Videos 1-2 (C5, C6, C7, C8). The characterization of band behavior is quantitative (1 mm spacing) and visually documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C16"
+    ],
+    "result": "Single-cell tracking reveals that cells inside the band migrate slightly faster (0.38\u00b10.14 \u03bcm/s) than outside (0.30\u00b10.16 \u03bcm/s) with directionally persistent motion aligned with band propagation (mean 176.2\u00b0, SD 42.7\u00b0), while cells outside exhibit random motion with uniform directional distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 are supported by quantitative cell tracking data shown in Figure 2b-d with N=35 trajectories. The MSD analysis demonstrates persistent vs. random motion, and directional distributions are clearly quantified. Statistical measures are provided with appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C58"
+    ],
+    "result": "The traveling band exhibits dynamic turnover with continuous assembly at the front and disassembly at the back, as the band propagates faster than individual cell migration speed. The cell density profile, rather than individual cells, propagates as a band, with similar local density across samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by the comparison of band speed (vb=0.5\u00b10.03 \u03bcm/s) versus cell speed (vin=0.38\u00b10.14 \u03bcm/s) shown in Figure 2e (N=10 samples), and trajectory analysis in Figure 2f. Claim C58 is supported by Figure 1\u2014figure supplement 1c. The inference of turnover is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The high-density region constitutes a polar-ordered phase propagating in a low-density disordered phase, with polar order parameters ranging from 0.6 to 0.85 across samples and positively correlated with band width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by quantitative polar order parameter measurements shown in Figure 3a-b across N=10 samples. The definition and calculation of the order parameter are clearly described in methods, and the correlation with band width is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The polar-ordered phase exhibits internal structure consisting of two subpopulations with distinct migration directions (~160\u00b0 and ~190\u00b0) forming alternating stripes perpendicular to band propagation. These stripes are nearly immobile, with cells passing through multiple stripes (time scale 200-400 s per stripe) during their transit across the band (1120 s total).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are supported by optical flow analysis (Figure 3c-f, Video 3) and kymograph analysis (Figure 3d) showing spatial heterogeneity and immobile stripes. Claims C73-C75 provide quantitative time scale calculations based on measured cell speeds and stripe widths, with supporting analysis in Figure 3\u2014figure supplement 4. The internal structure is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C55"
+    ],
+    "result": "In low-density regions, cells exhibit contact following locomotion (CFL), a tail-following behavior where cells migrate in single files. Cell-cell contact persists for >300 s in half of cases, with ~60% exhibiting CFL geometry (angle 0-30\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by direct observations (Figure 4a-c, Videos 4-5) with quantitative measurements of contact duration (N=136 collision events). Claim C35 is supported by citation. Claim C55 provides the definition of CFL. The characterization is quantitative and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C46"
+    ],
+    "result": "The tgrB1 null mutant, lacking the cell adhesion molecule TgrB1, exhibits nearly absent CFL (only 10% of cells), with 80% of cell contacts disrupted before 300 s. This mutant fails to form propagating bands or cell density segregation, demonstrating that CFL is essential for these collective behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by quantitative measurements comparing KI cells (N=136 collisions) to tgrB1 mutant (N=156 collisions) shown in Figures 4c,f and Videos 6-7. Claim C46 is a reasonable conclusion, though the authors acknowledge they cannot exclude other TgrB1-related effects. The velocity autocorrelation analysis (Figure 4\u2014figure supplement 1c) controls for intrinsic motility differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C56"
+    ],
+    "result": "Agent-based modeling incorporating CFL reproduces the experimental observations, with simulated band and particle speeds (0.96 and 0.9 relative to isolated particles) consistent with dynamic turnover. The formation of internal structure with heterogeneous migration directions is characteristic of CFL-induced collective behavior, distinguishing it from alignment-induced bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by simulation results shown in Figures 3g-i and Video 8, with comparison to alignment-only models (Figure 3\u2014figure supplement 3). The model equations are clearly specified in methods. Claim C56 is supported by the combined experimental and modeling results establishing the link between CFL and band formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors speculate that bands with lower order parameters exhibit larger decorrelation in migration direction from front to back, and that directional persistence induced by CFL prevents complete dampening of migration direction to the band propagation direction, leading to subpopulation formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59, C61-C62 are explicitly speculative explanations for the observed correlation between band width and order parameter (C59) and the mechanism of internal structure formation (C61-C62). While plausible, these mechanistic explanations lack direct experimental validation and are acknowledged as speculation by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors propose that CFL-induced polar order formation plays an important role in late-stage Dictyostelium morphogenesis, supported by observations that KI cells can migrate in wildtype slugs in a TgrB1-dependent manner and that chemical guidance ceases during the multicellular phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C66 are supported by citations to prior work. However, claim C67 is a proposal/speculation about the biological role of CFL in morphogenesis. While the supporting evidence from prior work (C64-C66) is cited, the direct demonstration of CFL's role in wildtype morphogenesis is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The authors suggest that CFL-induced collective behaviors may be found in other cell types, as contact following locomotion has been reported in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is supported by citation (Li and Wang, 2018), but claim C69 is speculative. While the generalization is reasonable given that CFL exists in other systems, no experimental evidence is provided for similar macroscopic behaviors in those systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Background claims establishing that wildtype Dictyostelium forms aggregates via chemotaxis, that collective cell migration is important in various biological processes, and that contact inhibition of locomotion is an established mechanism for correlated cell motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are standard background knowledge supported by appropriate citations (Haeger et al., 2015). These provide context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The polar order phase consists of subpopulations exhibiting characteristic transversal motions with respect to band propagation direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 summarizes the finding about internal structure (covered in detail by C27-C33). It is supported by the optical flow analysis showing subpopulations with distinct migration directions forming stripes perpendicular to propagation.",
+    "result_type": "MAJOR"
+  }
+]

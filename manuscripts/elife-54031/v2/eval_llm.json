@@ -1,0 +1,505 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C116"
+    ],
+    "result": "The authors obtained high-resolution cryo-EM structures of Msp1 in multiple conformational states. They expressed \u039430-Msp1 (lacking the transmembrane domain) from C. thermophilum, which formed homogeneous hexamers, while the E214Q Walker B mutant formed hexamers and higher-order oligomers. Cryo-EM analysis yielded three structures: an open conformation at 3.7 \u00c5 resolution, a closed conformation at 3.1 \u00c5 resolution, and the E214Q mutant at 3.5 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 and C116 provide comprehensive structural data with appropriate resolution metrics, particle counts, and validation statistics (Table 1, Figures 1, 1-supplement 4-5). The methods describe proper sample preparation, data collection parameters, and image processing workflows. The reported resolutions are consistent with modern cryo-EM standards and the quality of the density maps shown supports the atomic model building described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The structures reveal distinct nucleotide-binding states across the six subunits in the spiral. In the open conformation, M1-M4 bind ADP\u2022BeFx (ATP mimic), M5 binds ADP, and M6 is nucleotide-free. The E214Q mutant shows M1-M5 with ATP and M6 nucleotide-free. These observations indicate an ordered sequence of ATP binding, hydrolysis, and release along the M1-M6 spiral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C92-C94 are well-supported by the cryo-EM density maps (Figure 5-supplement 1) showing clear nucleotide density in most subunits. The assignment of nucleotide states is based on direct observation of density for ATP/ADP and BeFx. The inference of ordered ATP hydrolysis (C94) is reasonable given the structural snapshots, though it represents a mechanistic interpretation rather than direct kinetic measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C62",
+      "C63"
+    ],
+    "result": "The linker domain (LD) contains a fishhook-shaped motif formed by helix \u03b10 and loop L1. In subunits M1-M5, \u03b10 is well-ordered and the helices converge in a central hub with their N-termini pointing toward the spiral center. In M6, \u03b10 is disordered, uniquely exposing a hydrophobic substrate-binding patch at the spiral seam.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57, C62-C63 are supported by clear cryo-EM density (Figure 2A) showing ordered \u03b10 in M1-M5 and disordered \u03b10 in M6. The structural observations are consistent across multiple conformations. The exposure of the hydrophobic patch in M6 (C63) is directly visualized in Figure 2E and correlates with prior biochemical data on substrate binding (C59-C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Previous work identified a hydrophobic patch on the LD required for substrate recruitment. Mutations in this region reduce substrate binding, increase mislocalized TA proteins, and cause growth defects in get3\u0394 cells without affecting hexamer formation. The hydrophobic patch on substrates is also required for Msp1 recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C59-C61 cite prior work (Li et al., 2019) for the functional importance of the hydrophobic patch. The current structural data (C62-C63) provides the molecular basis for these observations by showing the patch is exposed only in M6. This represents appropriate integration of prior biochemical data with new structural insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Peptide array analysis demonstrates that Msp1 preferentially binds hydrophobic peptides. Hydrophobic amino acids were enriched in binding, while hydrophilic residues were depleted, with the exception of arginine and lysine, possibly due to cation-\u03c0 interactions with aromatic residues in the binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by peptide array data (Figure 2-supplement 1A-B) showing clear enrichment of hydrophobic residues. The quantitative analysis plotting fold-enrichment against hydrophobicity provides appropriate evidence. The inference about Arg/Lys binding via cation-\u03c0 interactions (C66) is reasonable speculation based on the structural context but lacks direct validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Extra density observed in the central pore of all three structures likely represents an averaged composite of endogenous E. coli peptides trapped during expression. The peptide adopts an extended \u03b2-strand-like conformation with adjacent amino acids facing opposite directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by clear density in the central pore (Figure 3A). The interpretation as endogenous E. coli peptides (C68) is reasonable given the expression system, though the exact identity cannot be determined. The extended conformation (C69) is consistent with the observed density and typical AAA protein substrate interactions. Modeling as poly-alanine is appropriate given the inability to assign specific side chains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Pore-loop 1 from all six subunits forms a spiral staircase around the substrate. Unlike other AAA proteins where the KX1X2G motif has one aromatic and one hydrophobic residue, Msp1 has two aromatics (W187, Y188). W187 inserts between substrate side chains orthogonally, while Y188 interacts parallel to the backbone and forms a hydrogen bond. Mutations of either residue cause significant growth defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are well-supported by high-resolution structural data (Figures 3D-E, 3-supplement 1) showing clear pore-loop 1 interactions with the substrate. The functional validation (C75, Figure 4) confirms the structural observations. The comparison to other AAA proteins (C71) is appropriate and highlights Msp1's unique double-aromatic motif.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Pore-loop 2 shows position-dependent order: disordered in M1 and M6, disengaged in M5, but forming a second staircase in M2-M4. In M2-M4, H227 hydrogen-bonds to the substrate backbone and forms \u03c0-\u03c0 stacking with Y188 from the adjacent subunit. Mutations of R222, E226, and E228 severely reduce activity, while H227 mutations show no growth defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by structural data (Figures 3C-F, H) showing differential pore-loop 2 order and interactions. The mutagenesis data (C81-C82, Figure 4) validates the structural observations. The lack of phenotype for H227 mutations (C82) is appropriately explained by the dominant role of pore-loop 1 aromatics, though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Pore-loop 3 does not directly contact the substrate but forms an electrostatic network with pore-loop 2 from adjacent subunits. R222 on pore-loop 2 is sandwiched between pore-loops 3 from neighboring subunits, creating an interconnected web. This explains why pore-loops 2 in M1 and M6 are disordered\u2014they lack stabilization from both sides. Mutations in this network (R222, R264, D269) inactivate Msp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by structural data (Figure 3-supplement 2) showing the electrostatic network and mutagenesis data (Figure 4) confirming functional importance. The mechanistic explanation for pore-loop 2 disorder in M1/M6 (C87) is a reasonable inference from the structural observations. The convergence of structural and functional data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The central pore creates a hydrophobic environment where every substrate side chain is surrounded by aromatic amino acids. One side of the substrate is sandwiched by W187 residues, while the other side faces tetrameric aromatic cages formed by interlocked Y188-H227 pairs from adjacent subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by detailed structural analysis (Figures 3G, I, Video 2) showing the arrangement of aromatic residues around the substrate. The description of the tetrameric aromatic cage is well-visualized in the figures. This represents a key mechanistic insight into Msp1's sequence-promiscuous substrate binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In AAAMC proteins, the conserved phenylalanine in the ISS motif is replaced by an aliphatic amino acid (L244 in Msp1). L244 forms weaker hydrophobic interactions with F175 and F211 in the opposing subunit, suggesting the ISS may not be the main element transmitting nucleotide state changes in Msp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by structural data (Figure 1-supplement 1) showing sequence differences and structural observations of the ISS interface. The inference that the ISS is not the main signaling element (C97) is reasonable given the weaker interactions compared to other AAA proteins, and is supported by the identification of alternative mechanisms (NCL, WD motif) described in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A tryptophan-aspartate (WD) motif interacts with arginine fingers (R274, R275) that bind ATP's triphosphate. Upon ATP hydrolysis in M5, the arginine fingers and WD motif in M6 become disordered, causing melting of the nucleotide communication loop (NCL). The NCL normally stacks on L2 of the adjacent subunit through hydrophobic interactions. NCL melting reduces buried surface area between M5-M6, weakening their interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 are well-supported by structural data (Figures 5A-F) showing the WD motif, arginine fingers, and NCL in different nucleotide states. The E214Q control (C105) provides strong validation that NCL order depends on the nucleotide state. The quantitative measurement of buried surface area (C104) supports the mechanistic model. This represents a novel intersubunit communication mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C115"
+    ],
+    "result": "Mutations in the ISS (L244A, L244E) and WD motif cause growth defects in yeast, with L244E showing more severe effects than L244A. These results confirm the functional importance of both motifs in Msp1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108, C115 are supported by yeast growth assays (Figure 4) showing clear phenotypes. The differential severity of L244A vs L244E mutations (C107-C108) supports the importance of hydrophobic interactions at this position. The functional validation complements the structural observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "A disease-related mutation (D221H in human ATAD1, corresponding to D242 in C. thermophilum Msp1) found in schizophrenia patients causes oligomer disassembly defects and impaired AMPA receptor regulation. The structural model explains this: replacing aspartate with histidine would increase affinity for arginine fingers via cation-\u03c0 interactions and stabilize the WD motif and NCL through \u03c0-\u03c0 stacking, resulting in stronger subunit interactions that impede spiral movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 cite prior work (Umanah et al., 2017) for the disease phenotype. Claims C112-C114 provide a structural explanation based on the current model. The mechanistic interpretation is reasonable and consistent with the structural data, though it remains a hypothesis that would require experimental validation. The integration of disease genetics with structural mechanism is valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors propose a substrate recruitment mechanism where the M6 subunit always has the hydrophobic binding site exposed. When the pore is unoccupied, substrate binding at M6 aligns it with the seam for entry. When occupied, M6 translocation refolds \u03b10, which competes off additional substrate through hydrophobic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C119 represent mechanistic speculation based on structural observations. While the exposure of the hydrophobic patch in M6 is well-documented (C63), the proposed mechanism for substrate entry and competition (C118-C119) lacks direct experimental validation. The model is plausible but requires additional biochemical or single-molecule studies to confirm the proposed substrate threading and competition mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "A linear sequence of nucleotide states propagates along Msp1 subunits in the open spiral. The NCL is ideally positioned to communicate nucleotide-bound state and potentially direct ATP hydrolysis according to subunit position in the spiral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by the observed nucleotide states (C51-C52, C92-C94) and NCL structural data (C100-C106). The inference about NCL's role in coordinating ATP hydrolysis (C121) is reasonable given its position and nucleotide-dependent behavior, though direct demonstration of ATP hydrolysis coordination would require kinetic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Comparison with other AAA proteins (Yme1, Vps4) reveals that Msp1 captures a novel state where the terminal M6 subunit becomes predisposed for translocation through NCL melting. In Yme1, the ISS phenylalanine retracts at the M1-M6 interface. In Vps4, the ISS does not respond to ATP hydrolysis at the M5-M6 interface. Msp1's mechanism differs from both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 are supported by structural comparisons (Figure 6-supplement 1) with published structures of Yme1 and Vps4. The analysis appropriately identifies differences in ISS behavior and nucleotide states. The conclusion that Msp1 captures a novel state (C127) is justified by the unique NCL-mediated mechanism not observed in other AAA proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Sequence alignment shows NCL length varies across Msp1 homologs and AAAMC proteins. C. thermophilum Msp1, mammalian ATAD1, katanin, and spastin have long NCLs, while S. cerevisiae Msp1 and Vps4 have short ones. The nucleotide-dependent conformational change likely requires an NCL long enough to contact the adjacent subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 are supported by sequence alignments (Figure 1-supplements 1-2) showing NCL length variation. The inference that long NCLs are required for the observed mechanism (C131) is reasonable given the structural requirements for NCL-L2 stacking. This appropriately limits the generalizability of the mechanism to proteins with sufficiently long NCLs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The W in the WD motif is strictly conserved in Msp1/ATAD1 but variable in the AAAMC family, suggesting Msp1 evolved this mechanism to enhance coupling between nucleotide state and subunit movement. The WD motif and NCL-mediated communication is unique to Msp1/ATAD1 and differs from other AAA proteins. There may not be a universal mechanism for all proteins with degenerate ISS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 are supported by sequence analysis (Figure 1-supplement 2) and structural comparisons. The evolutionary interpretation (C133) is reasonable speculation. The conclusion about lack of universality (C136) is appropriately cautious and supported by the observed diversity in intersubunit communication mechanisms across AAA proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Msp1's central pore diameter (~8 \u00c5) is significantly narrower than other substrate-bound AAA proteins (e.g., ~13 \u00c5 for Vps4). The tryptophan from pore-loop 1 and interlocked Y188-H227 pairs create a hydrophobic environment with extensive potential for hydrophobic and \u03c0-stacking interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 are supported by structural measurements and comparison with Vps4 (Figure 6-supplement 3). The narrower pore and dense aromatic environment are consistent with the observed tight substrate interactions. The comparison provides important context for understanding Msp1's high processivity and strong substrate grip.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "The hand-over-hand translocation mechanism does not require M2-M5 subunits to loosen their grip on the substrate. The tight network of substrate/pore-loop interactions in M2-M5, including sequence-promiscuous hydrogen bonding by H227, allows high processivity and avoids substrate backsliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 represent mechanistic interpretation based on the structural observations of continuous substrate engagement in M2-M5. The inference about processivity and prevention of backsliding is reasonable given the extensive interaction network, though direct measurement of processivity would require single-molecule studies. The model is consistent with the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Comparison with other AAA proteins shows that while Yme1, Rix7, and AFG3L2 have pore-loop 2 staircases, they lack direct substrate contact. In contrast, AAAMC proteins (spastin, katanin, Msp1) all show direct pore-loop 2-substrate interactions, highlighting functional importance unique to this subfamily.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 are supported by structural comparisons with published structures. The distinction between AAAMC proteins and other AAA proteins regarding pore-loop 2 function is well-documented. This represents an important subfamily-specific feature that differentiates AAAMC proteins from other AAA family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Msp1's pore-loops are particularly bulky with three aromatic amino acids per subunit. Studies on ClpXP show bulkier pore-loops increase substrate grip but decrease pulling velocity. This may be beneficial for Msp1, which must extract hydrophobic membrane anchors requiring larger forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C144 is supported by structural data. Claim C145 appropriately cites prior work on ClpXP. Claim C146 is reasonable speculation connecting the structural features to functional requirements. While the force requirements for membrane extraction are not directly measured here, the inference is logical and consistent with Msp1's biological role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Other membrane protein-extracting AAA proteins show similar features: Cdc48 uses double-aromatic pore-loop 1, while Yme1 and AFG3L2 have aromatic residues in pore-loop 2. This suggests distally related AAA proteins may have converged on similar solutions for extracting membrane protein substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C148 appropriately cite published structures. The inference about convergent evolution (C149) is reasonable speculation supported by the structural similarities across distally related proteins with similar functions. This represents appropriate comparative analysis placing Msp1 in broader evolutionary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The authors propose a detailed translocation mechanism: pore-loop 2 is ordered only when stabilized by neighbors on both sides, allowing position detection. In M6, lacking stabilization, pore-loop 2 disorders and the NCL melts, causing M6 dissociation. M6 then samples multiple states until ATP binding, repositions to M1, and the spiral extends upward, extracting two amino acids. Pore-loop 1 engages immediately while pore-loop 2 engages after the next cycle. The \u03b10 helix refolds during M6 translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C159 integrate multiple structural observations into a comprehensive mechanistic model. The position-dependent pore-loop 2 order (C150-C151) is well-supported by structural data. The proposed translocation cycle (C152-C159) is consistent with the structural snapshots and general AAA protein mechanisms, though it represents a model requiring validation through time-resolved studies or single-molecule experiments. The model is well-reasoned and consistent with available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The authors conclude that Msp1's mechanism agrees with other AAA proteins in overall architecture (spiral arrangement, sequential ATP hydrolysis, hand-over-hand translocation) but shows specialization through lateral substrate alignment at the seam and strong coupling between ATP hydrolysis and substrate movement. Many mechanistic details are likely applicable to other AAAMC proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 represent appropriate synthesis of the findings. The identification of conserved features (C160) and Msp1-specific adaptations (C161-C162) is well-supported by the structural data and comparisons. The suggestion that findings apply to other AAAMC proteins (C163) is appropriately cautious, noting the requirement for long NCLs and other specific features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The abstract summarizes that Msp1 is an AAA protein that extracts mislocalized tail-anchored membrane proteins for degradation, forms hexameric spirals with substrate translocation through a central pore, has a hydrophobic recruitment site at the seam, uses aromatic amino acids to grip substrates, and coordinates ATP hydrolysis with subunit position through intersubunit interface elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 accurately summarize the major findings presented in the manuscript. Each claim is supported by detailed structural and functional data in the results sections. These represent appropriate high-level summaries of the work's main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction provides background on AAA protein architecture and mechanism, describing their hexameric spiral organization, N-domain and core-ATPase structure, coordinated ATP hydrolysis, M6\u2192M1 subunit cycling, two-amino-acid translocation steps, and conserved pore-loop features including the aromatic-hydrophobic motif in pore-loop 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C16 represent established knowledge about AAA proteins appropriately cited from the literature. These provide necessary background context for understanding Msp1's unique features. The citations appear appropriate and the descriptions are consistent with current understanding of AAA protein mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction describes Msp1/ATAD1's biological roles: extracting mislocalized TA proteins from mitochondrial outer membrane for proteasomal degradation, clearing stuck mitochondrial precursor proteins, and in neurons, mediating AMPA receptor internalization during long-term depression. Genetic studies show deletion phenotypes and synthetic lethality with GET pathway mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C28 appropriately cite prior work establishing Msp1/ATAD1's biological functions. The citations appear accurate and provide necessary context for the structural studies. These represent well-established background information from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The introduction describes AAAMC subfamily features: clustering of Msp1 with spastin, katanin, fidgetin, and Vps4; shared structural features; conserved pore-loop 2 sequences important for activity; and degenerate ISS motifs lacking the conserved phenylalanine, indicating different intersubunit signaling mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 appropriately cite prior work on AAAMC protein features and provide necessary context for understanding Msp1's subfamily-specific characteristics. The sequence alignments (Figure 1-supplement 1) support the observations about ISS differences. This represents appropriate background for the mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Msp1 has a transmembrane helix replacing the N-terminal region of the N-domain found in other AAAMC proteins, thought to anchor Msp1 to intracellular membranes like the mitochondrial outer membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by sequence analysis (Figure 1D) and represent established knowledge about Msp1's membrane localization. The inference about membrane anchoring function (C39) is reasonable given the transmembrane helix and Msp1's known localization.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C40"
+    ],
+    "result": "Genome-wide transcriptome analysis of cell-cycle-synchronized U2OS cells revealed cell-cycle phase-specific expression of >2000 lncRNAs. Deep RNA-sequencing (>100 million paired-end reads/sample) identified ~24,087 genes with quantifiable expression, including 7,836 potential lncRNAs. Differential expression analyses revealed thousands of DEGs during cell-cycle transitions, with ~35-40% consisting of lncRNAs. Phase-specific analysis identified 5,162 genes (including 2,044 lncRNAs) showing elevated expression during specific cell-cycle phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C30-C34, C37, and C40 collectively provide strong evidence for cell-cycle-regulated lncRNA expression. The methodology is well-described (paired-end deep sequencing, cell synchronization), sample sizes are adequate (>100M reads/sample, biological replicates), and statistical criteria are clearly defined (CPM \u2265 0.075, |FC| \u2265 1.5, FDR < 0.05). The identification of >2000 cell-cycle-regulated lncRNAs is supported by rigorous bioinformatic analyses including PCA validation of replicates and multiple filtering criteria for phase-specific genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "SUNO1 is an S-phase-upregulated lncRNA showing elevated expression during G1/S and early S-phase. RT-qPCR validated RNA-seq data for SUNO1 and other S-phase lncRNAs. SUNO1's cell-cycle expression pattern was confirmed in multiple cell lines (HeLa, MCF7, hTERT-RPE1) using RT-qPCR, GRO-seq, and nascent RNA-seq. SUNO1 expression is cell line-specific, with highest levels in BT-20 breast cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C41-C45 provide convergent evidence for SUNO1 as an S-phase-upregulated lncRNA. The RNA-seq findings are validated by orthogonal methods (RT-qPCR, GRO-seq, nascent RNA-seq) across multiple cell lines, strengthening the conclusion. The cell line-specific expression pattern is well-documented. Statistical significance is reported (p-values shown in figures), and biological replicates (n=3) are used for RT-qPCR validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SUNO1 is characterized as a poly A+ lncRNA with specific genomic and molecular features. The gene's 5' end is located within a CpG island (>1 kb), with sequence conservation in primates and promoter conservation among vertebrates. The promoter shows enrichment of RNA pol II and transcription factors (FOS, JUND, EGR1). SUNO1 is present in both nucleus and cytoplasm, preferentially enriched as 2-3 nuclear puncta. Northern blot and RNA-seq data reveal two isoforms (>2 kb predominant, >5 kb minor). PhyloCSF analysis confirms no protein-coding potential. RNA stability assays show a half-life of >2.6 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 provide comprehensive molecular characterization of SUNO1 using multiple complementary techniques. Genomic features are supported by publicly available data (ENCODE ChIP-seq, Hi-C). Subcellular localization is confirmed by both fractionation/RT-qPCR and smRNA-FISH. Northern blot results are validated by independent RNA-seq datasets with proper citations. PhyloCSF analysis appropriately uses MALAT1 as a control. The half-life measurement includes appropriate controls (Myc). All experiments include proper negative controls (SUNO1 KO cells for smRNA-FISH).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "SUNO1 depletion results in defective cell-cycle progression characterized by G1/G1S arrest and reduced S-phase population. Both siRNA-mediated knockdown and CRISPR/Cas9-mediated knockout of SUNO1 in U2OS and HCT116 cells showed reduced S-phase cells, increased G1 population, and reduced cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 demonstrate consistent cell-cycle phenotypes using multiple independent approaches (two different siRNAs, CRISPR KO in two cell lines). Flow cytometry data (both PI and BrdU-PI) provide quantitative evidence with statistical analysis (n=3, p-values reported). The phenotype is reproducible across different depletion methods and cell lines, strengthening the conclusion. BrdU incorporation assays provide orthogonal validation. Appropriate controls (siNC, WT cells) are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "SUNO1 is induced upon DNA damage and plays a role in DNA replication. SUNO1 levels increase following treatment with doxorubicin, etoposide, or hydroxyurea, independent of p53. SUNO1-depleted cells show reduced chromatin loading of MCM3 (but not ORC2), reduced dormant origin firing post-HU treatment, but normal replication fork progression rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C62-C63 provide mechanistic insights into SUNO1's role in DNA replication. DNA damage induction is demonstrated with multiple drugs and confirmed to be p53-independent using p53-/- cells and Nutlin-3 treatment. Chromatin fractionation shows specific effects on MCM3 but not ORC2, suggesting selective involvement in pre-RC assembly. DNA fiber assays provide direct evidence for reduced origin firing with quantification of >200 fibers per replicate (n=3). The normal fork progression rate (comparable CldU fiber lengths) indicates SUNO1 is not required for S-phase progression once replication initiates. Statistical analysis is appropriate (t-tests, n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SUNO1-depleted cells exhibit increased DNA damage and defective checkpoint responses. SUNO1 depletion leads to increased DNA damage (comet assays, RPA32/53BP1 foci, elevated p53 and phospho-Chk2). The G1/G1S arrest requires functional p53. SUNO1-depleted cells show reduced ATR-mediated checkpoint activation (reduced Chk1, BRCA1, RPA32 phosphorylation, \u03b3H2AX) and reduced cell survival under normal and DNA-damage conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 demonstrate DNA damage phenotypes using multiple complementary assays. Comet assays show quantitative increase in DNA damage (n=60 cells). Immunofluorescence quantifies RPA32 and 53BP1 foci with appropriate sample sizes (n\u226570-75). Western blots confirm checkpoint activation markers. The p53-dependence of G1 arrest is demonstrated using p53-/- cells, showing G2/M accumulation instead of G1 arrest. Defective ATR checkpoint is evidenced by reduced phosphorylation of multiple substrates. Cell survival assays (MTT, clonogenic) provide functional validation. However, the mechanistic link between SUNO1 and ATR checkpoint activation remains unclear and may require additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "SUNO1 regulates YAP1-mediated gene expression. Microarray analysis identified 149 genes downregulated at both 36 hr and 72 hr post-SUNO1 depletion, enriched for cellular growth/proliferation and cell death/survival pathways. Several YAP1 target genes (CCND1, CTGF, CYR61, AMOTL2) showed reduced expression in SUNO1-depleted cells at both mRNA and protein levels. SUNO1 depletion reduced YAP1 and TAZ levels, decreased nuclear YAP1, and increased pLATS1 levels. E2F target genes were not affected, and YAP1 downregulation occurred even in p53-/- cells, indicating the effect is not a consequence of G1 arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C81 provide strong evidence for SUNO1's regulation of YAP1 signaling. The microarray approach identifies primary targets by comparing early (36 hr, no cell-cycle defect) and late (72 hr) time points. GO analysis appropriately identifies relevant pathways. Multiple YAP1 targets are validated by RT-qPCR (n=3) and Western blot. The specificity for YAP1 pathway is supported by lack of effect on E2F targets (C80). The p53-independence (C81) rules out indirect effects through cell-cycle arrest. Increased pLATS1 provides mechanistic insight. However, the exact mechanism by which SUNO1 regulates YAP1 levels remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "SUNO1 promotes TEAD-mediated transcription. Luciferase reporter assays show that SUNO1 knockdown significantly decreases activity of the wild-type CTGF promoter. Mutation of TEAD binding sites in the CTGF promoter causes strong decrease in transactivation that is not further decreased by SUNO1 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide functional evidence for SUNO1's role in TEAD-mediated transcription using a well-established reporter system. The use of both wild-type and TEAD-site mutant promoters provides appropriate controls. Statistical analysis shows significance (n=3, p-values reported). The lack of additional decrease with SUNO1 knockdown in the mutant promoter supports specificity for TEAD-mediated transcription. This complements the YAP1 regulation data (C72-C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "SUNO1 regulates WTIP expression to modulate YAP1 activity. WTIP, located ~500 kb downstream of SUNO1, showed consistent reduced expression in SUNO1-depleted cells at both mRNA and protein levels. WTIP is a member of the Ajuba LIM family that antagonizes LATS1-mediated YAP1 phosphorylation. WTIP expression is cell-cycle regulated with highest levels during G1/S and S-phases, coinciding with SUNO1 expression. WTIP depletion phenocopies SUNO1 depletion (reduced YAP1 targets, G1/G1S arrest). WTIP overexpression in SUNO1-depleted cells partially rescues cell-cycle defects and YAP1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 establish WTIP as a key mediator of SUNO1's effects on YAP1 signaling. The cis-regulatory relationship is supported by genomic proximity and coordinated cell-cycle expression patterns. The epistatic relationship is demonstrated by similar phenotypes upon depletion of either SUNO1 or WTIP. The rescue experiments (C91-C92) provide strong evidence for WTIP's role in mediating SUNO1's effects, though the rescue is partial, suggesting additional mechanisms may be involved. The continued p53 induction in rescued cells (noted in text) indicates DNA damage phenotypes may be independent of WTIP/YAP1 pathway. Statistical analysis is appropriate (n=3, p-values reported).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "SUNO1 and WTIP genes physically interact and are located within a single topologically associating domain (TAD). 3C analyses revealed potential physical interaction between SUNO1 and WTIP gene loci in a SUNO1 lncRNA-independent manner. Hi-C data confirms both genes are within the same TAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 provide evidence for chromatin-level organization facilitating SUNO1-WTIP regulation. The 3C assay includes appropriate controls (negative control locus in different TAD) and shows the interaction is DNA-mediated rather than RNA-mediated. The Hi-C data from published datasets (Rao et al., 2017) provides independent validation. Statistical analysis shows significance (n=2, p<0.05). However, the sample size for 3C is relatively small (n=2), and the lncRNA-independence conclusion could be strengthened with additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "SUNO1 promotes WTIP transcription through DDX5-mediated stabilization of RNA polymerase II. Biotinylated RNA pulldown and RIP identified DDX5 as a SUNO1-interacting protein. DDX5 depletion reduces WTIP mRNA levels. DDX5 associates with WTIP promoter in both control and SUNO1-depleted cells, indicating SUNO1 does not recruit DDX5. However, SUNO1 depletion significantly reduces RNA pol II association with WTIP promoter, nascent WTIP pre-mRNA levels, and the interaction between DDX5 and RNA pol II on chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C103 provide a detailed molecular mechanism for SUNO1's function. The DDX5 interaction is validated by multiple methods (RNA pulldown, Western blot, RIP) with appropriate controls (YFP RNA, IgG, 18S rRNA). Mass spectrometry data is provided. The mechanism is dissected through ChIP-qPCR showing DDX5 binding is SUNO1-independent (C100), but RNA pol II recruitment is SUNO1-dependent (C101). Nascent RNA capture provides direct evidence for transcriptional regulation (C102). The DDX5-RNA pol II co-IP on chromatin (C103) provides mechanistic insight. All experiments include appropriate controls and statistical analysis (n=3). The model is well-supported, though the exact molecular details of how SUNO1 stabilizes DDX5-RNA pol II interaction remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "SUNO1 expression correlates with poor prognosis and YAP1 pathway activation in colon cancer patients. Kaplan-Meier analysis of TCGA colon adenocarcinoma samples shows patients with higher SUNO1 levels have significantly shorter survival. 71% of the 149 genes downregulated in SUNO1-depleted cells show positive correlation with SUNO1 expression across colon cancer patients, including WTIP. A significant number of YAP1-target mRNAs show positive correlation with SUNO1 levels in the same patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 provide clinical relevance for SUNO1's role in cancer. The survival analysis uses appropriate statistical methods (log-rank test, p<0.05) with adequate sample size (TCGA cohort). The correlation analyses use Spearman correlation with appropriate multiple testing correction (5% FDR, p<0.01). The consistency between in vitro findings (genes regulated by SUNO1) and patient data (71% show positive correlation) strengthens the biological relevance. The correlation with YAP1 targets supports the proposed mechanism. However, correlation does not establish causation, and the prognostic value would benefit from validation in independent cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "SUNO1 is required for tumorigenicity of colon cancer cells. SUNO1-KO HCT116 cells show significantly reduced colony formation in soft agar assays compared to wild-type cells. Xenograft assays demonstrate that tumor growth of SUNO1-KO cells is significantly compromised compared to control HCT116 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 provide functional evidence for SUNO1's role in tumorigenesis using two complementary assays. The soft agar assay uses two independent SUNO1-KO clones, strengthening the conclusion. The xenograft experiment uses appropriate controls (WT cells in same mice, n=5) and shows statistical significance. Tumor measurements are quantitative (volume measurements every 5 days). However, the xenograft experiment uses only one KO clone, and the mechanism linking SUNO1 to tumorigenicity (whether through YAP1/WTIP pathway or DNA damage phenotypes) is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "Cell-cycle stage transitions are associated with activation of specific biological pathways. GSEA and pathway analyses revealed that G1/S to S-phase transition is associated with activation of pro-proliferative and oncogenic pathways (MAPK cascade, RAS, Hippo signaling). S-phase-specific genes participate in pro-proliferation and cancer-promoting pathways. M-phase-expressed genes are relevant to mitotic cell-related biological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C38-C39 provide biological context for cell-cycle-regulated gene expression. GSEA and pathway analyses use appropriate statistical methods with background gene lists. The enrichment of cancer-related pathways during G1/S to S transition provides biological insight. However, these are primarily descriptive/bioinformatic findings that support the rationale for studying cell-cycle-regulated lncRNAs rather than novel discoveries. The analyses are well-executed but represent standard pathway enrichment approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background knowledge on cell-cycle regulation and lncRNA biology. The claims establish that: (1) aberrant cell-cycle progression leads to genome instability and cancer; (2) cell-cycle genes show oscillating expression patterns; (3) transcription factors like E2F and TEAD regulate cell-cycle genes; (4) tens of thousands of lncRNAs exist in mammalian cells; (5) lncRNAs regulate gene expression through various mechanisms; (6) several lncRNAs are known to regulate cell cycle, but knowledge about cell-cycle phase-regulated lncRNAs is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C29 provide appropriate background and context, supported by extensive citations to established literature. These claims accurately represent current knowledge in the field and establish the rationale for the study. However, these are not novel findings from this manuscript but rather literature review establishing context. The citations appear appropriate and the knowledge claims are accurate based on the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Discussion and interpretation of findings in broader context. The claims summarize the main findings (SUNO1 regulates WTIP/YAP1, promotes DDX5-mediated RNA pol II stabilization) and discuss them in the context of DDX5 biology, Hippo pathway regulation, DNA damage response, and prior lncRNA studies. The discussion proposes SUNO1 acts as an oncogene via inhibiting Hippo pathway and suggests the DNA damage phenotype may be due to aberrant replication stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C130 represent discussion and interpretation of the results. The interpretations are generally well-supported by the data presented, though some remain speculative (e.g., C119 - SUNO1 as oncogene is a hypothesis). The discussion appropriately places findings in context of prior work on DDX5 (C111-C116), Hippo pathway (C117-C118), and other lncRNAs (C126-C129). The acknowledgment of uncertainty regarding DNA damage mechanisms (discussion of C120-C125) is appropriate. These claims represent interpretation rather than primary findings.",
+    "result_type": "MINOR"
+  }
+]

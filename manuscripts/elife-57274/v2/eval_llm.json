@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C87",
+      "C146",
+      "C147"
+    ],
+    "result": "Estrogen (E2B) promotes mammary involution by increasing cell death, adipocyte repopulation, and neutrophil infiltration. Neutrophil depletion experiments demonstrate that neutrophils are critical for estrogen-induced adipocyte repopulation but not for mammary cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C34-C37 provide converging histological, immunohistochemical, and flow cytometry evidence showing E2B increases cell death (shed cells with hyper-condensed nuclei, CC3+ cells), adipocyte repopulation (perilipin staining), and neutrophil infiltration. Neutrophil depletion with Ly6G antibody (~90% efficiency, C35) attenuated adipocyte repopulation (C37) but not cell death (C36), supporting the conclusion (C38) that neutrophils mediate specific E2B effects. Statistical significance is reported for key findings (p<0.05). The experimental design includes appropriate controls and quantification methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "RNA-Seq analysis reveals that 88% (1746 of 1987) of estrogen-regulated genes in mammary tissue are mediated through neutrophils, with neutrophil depletion eliminating most estrogen-regulated GO terms related to inflammation, leukocyte migration, and fat cell differentiation while preserving epithelial cell proliferation and developmental growth terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 present comprehensive RNA-Seq data with appropriate statistical thresholds (padj<0.05, fold change \u22652). The finding that neutrophil depletion eliminated 88% of E2B-regulated genes (C43) is striking and well-supported by the Venn diagram analysis (C39-C44). GO analysis (C41-C42, C46-C47) appropriately categorizes biological processes and demonstrates differential effects of neutrophil depletion on inflammation-related versus proliferation-related pathways. The observation that only one gene differs between IgG and Ly6G groups without estrogen (C45) strengthens the conclusion that effects are estrogen-dependent. Sample sizes (n=3 per group) are adequate for RNA-Seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C126",
+      "C127",
+      "C140"
+    ],
+    "result": "Estrogen induces neutrophil infiltration through CXCR2 signaling in an autocrine fashion, as demonstrated by upregulation of CXCR2 and its ligands (Cxcl2, Cxcl3, Cxcl5) in neutrophils and attenuation of neutrophil infiltration and inflammatory markers by CXCR2 antagonist SB225002.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 show E2B upregulates CXCR2 and ligands in isolated neutrophils (qPCR validation). CXCR2 antagonist experiments (C63-C66) demonstrate 2.26-fold reduction in neutrophils (p=0.0508, marginally significant) and significant reduction in inflammatory markers (Cxcl2, S100a9, Clec4d, Clec4e, all p<0.05). The autocrine mechanism (C127) is reasonably inferred from coordinate upregulation of receptor and ligands in the same cell type. However, the p-value for neutrophil reduction (p=0.0508) is marginally above the conventional threshold, and the autocrine mechanism, while plausible, is not directly demonstrated (e.g., through conditioned media experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C141"
+    ],
+    "result": "Estrogen induces mammary cell death through lysosome-mediated programmed cell death (LM-PCD) independent of neutrophils, by upregulating Ctsb expression and increasing active forms of cathepsins B, D, and L in the cytosol, along with upregulation of Tnf and Bid, without affecting STAT3 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 demonstrate E2B upregulates Ctsb mRNA and increases pro- and active (sc) forms of CTSB protein (p<0.05). The increase in sc-CTSD and sc-CTSL (C90) without changes in their mRNA (C91) is explained by CTSB-mediated processing (C92, supported by citations). Neutrophil depletion does not affect CTSB activation (C93), consistent with neutrophil-independent mechanism. Subcellular fractionation (C100) shows increased cytosolic cathepsins, supporting LM-PCD mechanism. Upregulation of Tnf and Bid (C94, C98) provides additional pro-apoptotic signals. The lack of STAT3 phosphorylation change (C96) suggests direct regulation of Ctsb (C97). The mechanistic model is coherent and supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C110",
+      "C111",
+      "C114",
+      "C150",
+      "C159",
+      "C160",
+      "C161",
+      "C164",
+      "C165",
+      "C170",
+      "C179",
+      "C180"
+    ],
+    "result": "The multifaceted effects of estrogen on mammary involution are primarily mediated by ER\u03b1, as demonstrated by ER\u03b1-specific agonist PPT recapitulating E2B effects on inflammatory genes, adipogenesis-related genes, and cathepsin activation, while ER\u03b2-specific agonist DPN has no effect, and ER\u03b1 expression in neutrophils is ~40-fold higher than ER\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150 shows ER\u03b1 (Esr1) expression is ~40\u00d7 higher than ER\u03b2 (Esr2) in mammary neutrophils, providing molecular basis for receptor specificity. PPT (ER\u03b1 agonist) experiments (C110, C159, C161, C164, C179-C180) demonstrate similar effects to E2B on inflammatory genes (Cxcl1, Cxcl2, Cxcr2, Mirt2), adipogenesis genes (Ptgs2, Adig, Egr2, Mmp8), and cathepsin activation, while DPN (ER\u03b2 agonist) shows no effects (C111, C169). The conclusion that ER\u03b1 mediates these effects (C114, C160, C165, C170) is well-supported. However, some effects show incomplete concordance (e.g., PPT did not increase pro-CTSB, C167), which is attributed to pharmacodynamic differences (C168, speculative).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In non-ovariectomized mice during natural mammary involution, neutrophil involvement in adipocyte repopulation is time-dependent, with significant effects observed at involution day 4 (INV D4) but not day 3 (INV D3), coinciding with an ~8-fold increase in neutrophil infiltration from D3 to D4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 establish efficient neutrophil depletion (~95%) and temporal dynamics of neutrophil infiltration (8-fold increase D3\u2192D4). Perilipin immunostaining (C71-C72) shows neutrophil depletion has no effect on adipocyte repopulation at D3 (p=0.3737) but significant reduction at D4 (p=0.0077). The conclusion (C73) that neutrophil involvement is limited to a specific time window when infiltration is high is logically supported by the data. This extends the findings from OVX mice to natural involution and provides temporal resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C84"
+    ],
+    "result": "Estrogen regulates adipogenesis-related genes through both neutrophil-dependent and -independent mechanisms, with neutrophils mediating upregulation of Egr2, Adig, and Cebpb, while E2B downregulates Adipoq, Pparg, and Lpl independent of neutrophils. Neutrophil depletion paradoxically increases basal Cebpb and Cebpd expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 show differential regulation of adipogenesis genes by E2B with and without neutrophils, supported by RNA-Seq and qPCR validation. The observation that neutrophil depletion abolishes E2B-induced upregulation of Egr2, Adig, and Cebpb (C76) but increases basal Cebpb/Cebpd expression (C77) is intriguing and well-documented. The interpretation (C78) that neutrophil depletion exerts positive influence on these genes is reasonable but somewhat speculative. The conclusion (C84) that multiple cell types (neutrophils, monocytes, macrophages) contribute to adipocyte repopulation is appropriately cautious and supported by cited literature (C79-C83).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "In vitro experiments with MCF7-caspase3(+) cells demonstrate that TNF\u03b1 primes estrogen-induced cell death, with E2B+TNF\u03b1 treatment significantly enhancing cell death and increasing p-STAT3 and cleaved PARP compared to TNF\u03b1 alone, though the mechanism may not involve LM-PCD in this cell model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 provide dose-response data showing TNF\u03b1 induces cell death in a dose-dependent manner (p<0.01), and E2B+TNF\u03b1 significantly enhances this effect at 5 ng/ml (p=0.0104) and 10 ng/ml (p=0.0007). Molecular markers (p-STAT3, cleaved PARP) are appropriately increased (C106-C107). The conclusion (C108) that TNF\u03b1 primes estrogen's death-inducing effect is supported. However, the caveat (C109) that the mechanism may differ from in vivo LM-PCD (based on data not shown) is appropriate. The in vitro model has limitations (different cell type, artificial conditions) but provides mechanistic insight into estrogen-inflammation interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C178"
+    ],
+    "result": "Estrogen's effects on neutrophils are context-dependent and opposite in nulliparous versus involuting mammary tissue: E2B reduces neutrophil infiltration by 56.33% in nulliparous mice and downregulates inflammatory genes (S100a9, Cxcl2, Cxcr2), demonstrating plasticity of estrogen action shaped by tissue microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151, C171-C174 provide flow cytometry and qPCR data showing E2B reduces neutrophils (p=0.0349) and downregulates inflammatory genes in nulliparous mice, opposite to effects during involution. This is consistent with literature on estrogen's anti-inflammatory effects in other contexts (C153). The conclusion (C154) that this represents first evidence of estrogen action plasticity on neutrophils in vivo is appropriately stated. The inference (C155) of fundamental cistrome differences between states is reasonable but speculative, as no direct epigenetic data are provided. This finding is important for understanding context-dependent hormone action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C53"
+    ],
+    "result": "Estrogen upregulates 63 genes associated with leukocyte migration and inflammation (fold change \u22653), including top genes Acod1, Trem1, Trem3, Il1b, S100a8, and S100a9, all of which are no longer E2B-regulated after neutrophil depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 identify specific inflammatory genes from GO analysis with appropriate fold-change threshold (\u22653). The validation of key genes (Acod1, Trem1, Trem3, Il1b, S100a8, S100a9) by qPCR in isolated neutrophils (C50, C53) strengthens the RNA-Seq findings. The complete loss of E2B regulation after neutrophil depletion (C49) confirms these genes are regulated in or by neutrophils. This provides molecular detail supporting the broader finding of neutrophil-mediated gene regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Treatment with S100A9 inhibitor paquinimod (PAQ) paradoxically increased mammary neutrophils and monocytes compared to E2B alone, contrary to the expected inhibition of neutrophil infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61 report unexpected results where E2B+PAQ increased rather than decreased neutrophils (p=0.0238) and monocytes (p=0.0242) compared to E2B alone. The authors appropriately note uncertainty about whether PAQ has uncharacterized properties that induce infiltration, preventing conclusions about S100A9's role. This negative result is honestly reported but does not support or refute the hypothesis. The experiment appears to be a pilot study (mentioned in text) and may have technical issues. Further investigation with alternative approaches would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "E2B-induced adipocyte repopulation is associated with increased expression of Timp1, Mmp3, and Mmp9 and decreased Timp2, but the ratio of Mmp3 to Timp1 remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 report qPCR data on matrix remodeling genes. The finding that individual genes change but their ratio does not (C33) is interesting and suggests coordinated regulation. However, the functional significance of unchanged Mmp3/Timp1 ratio is unclear, and the claim that \"calibrated activities of MMPs and their inhibitors are involved\" is somewhat speculative. The data are sound but interpretation is limited. This is a descriptive finding that would benefit from functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The inflammatory microenvironment during involution may trigger a global shift of ER-cistrome in mammary neutrophils to modify estrogen response distinct from nulliparous mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is explicitly speculative (\"may trigger\") and proposes a mechanistic hypothesis to explain the observed plasticity of estrogen action. While the hypothesis is plausible and supported by cited literature on ER cistrome reprogramming (C118), no direct evidence of cistrome changes is provided in this study. This is appropriately presented as a hypothesis for future investigation rather than a demonstrated result. Epigenetic or ChIP-seq data would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior work establishes that the pro-inflammatory microenvironment during post-partum mammary involution promotes parity-associated breast cancer, with estrogen stimulating tumor growth through neutrophil activity during involution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C12 summarize established knowledge from prior work (supported by citations) that provides context for the current study. These claims about the pro-inflammatory involution microenvironment promoting breast cancer (C1, C8-C9) and estrogen's role in tumor growth via neutrophils (C2, C10-C11) are appropriately cited to previous studies. The inference that estrogen exposure during involution is a risk factor (C12) follows logically from cited evidence. This background appropriately motivates the current investigation.",
+    "result_type": "MINOR"
+  }
+]

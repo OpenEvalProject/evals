@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Mutagenesis screening and molecular dynamics simulations identified a novel extracellular allosteric binding site for bioactive lipid inhibitors on GlyT2, formed by a crevice between TM5, TM7, TM8, and EL4. Mutations in the vestibule allosteric site had no effect on inhibition, while mutations in TM5, TM8, and EL4 (F428A, V432A, Y550L, P561S, W563L, L569F) reduced sensitivity to OLCarn. Docked lipid inhibitors burrowed into this site during MD simulations, with their tails wedged in a hydrophobic cavity and head groups interacting with extracellular edges of the transmembrane domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of mutagenesis data (C37, C38) and MD simulations (C39, C41, C42, C43, C44) provides converging evidence for the location and structure of the binding site. The negative result for vestibule mutations (C37) strengthens the conclusion by ruling out an alternative site. The structural characterization from MD is consistent with the mutagenesis results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C98"
+    ],
+    "result": "Residue I545 in EL4 plays a critical role in facilitating bioactive lipid binding by steering the acyl tail into the TM5/7/8 pocket. MD simulations show I545 remains pointed inward to interact with the acyl chain, stabilizing the lipid and facilitating tail insertion with substantial curvature. The I545L mutation reduces sensitivity to diverse bioactive lipids, and MD simulations show this mutation blocks OLSer from burrowing into the binding site while causing OLLys to adopt a hairpin conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by convergent evidence from MD simulations (C45-C49, C52-C54) and mutagenesis experiments (C50-C51). The MD simulations provide mechanistic insight into how I545 facilitates binding, while the mutagenesis data confirm its functional importance. The observation that I545L is not the only determinant (C57) appropriately qualifies the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C99"
+    ],
+    "result": "Residue Y550 in EL4 coordinates the amino acid backbone of bioactive lipid head groups. MD simulations show Y550 interacts with lipid head groups for >94% of simulation time, with distances of 5-7 \u00c5 for OLLys/OLLeu, ~10 \u00c5 for OLTrp, and >15 \u00c5 for OLSer. The Y550L mutation reduces both apparent affinity and maximal inhibition for all 10 tested bioactive lipids, suggesting Y550 interacts with a common moiety of the inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by quantitative MD simulation data (C58, C61-C64) and comprehensive mutagenesis experiments (C59). The observation that Y550L affects lipids with diverse side chains (C60) supports the inference that Y550 interacts with the amino acid backbone rather than specific side chains. The convergence of computational and experimental evidence is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C100",
+      "C101"
+    ],
+    "result": "Residue W563 in TM8 provides differential stabilization of bioactive lipid head groups through \u03c0-\u03c0 and cation-\u03c0 interactions. The W563L mutation selectively reduces inhibition by lipids with positively charged or aromatic head groups (OLCarn, OLTrp, ODLys) but has no effect on lipids with nucleophilic or acidic head groups (OLSer, OLAsp). MD simulations show W563 forms a cation-\u03c0 interaction with R439 in the absence of inhibitors, but this interaction is modulated by different lipid head groups, with OLLys, OLSer, and OLTrp each showing distinct interaction patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by the selective effects of the W563L mutation (C65-C66) and detailed MD simulation data (C68-C74) showing head group-specific interactions. The inference about \u03c0-electron contributions (C67, C101) is reasonable given the selective effects on aromatic/charged head groups. The observation that R439L mutation has no effect on OLTrp (C75-C76) appropriately qualifies the relative importance of W563 versus R439.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The P561S mutation in TM8 selectively affects inhibition by lipids with larger or more sterically restricted head groups (OLCarn, OLTrp, ODLys) while having no effect on smaller lipids (NOGly, OLVal). This suggests P561 influences the shape of the gap between TM8 and EL4, potentially by altering the helix-loop connection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The selective effects of the P561S mutation (C77-C78) are clearly demonstrated experimentally. The mechanistic hypothesis about helix extension (C79) is reasonable given P561's position at the TM8-EL4 junction, though it remains speculative. The result appropriately distinguishes between demonstrated effects and proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Residues F428 (TM5) and L569 (TM8) form inter-helical contacts that define the acyl tail binding cavity. These residues are located in the middle of their transmembrane helices and contact each other to mediate TM5/TM8 helix-helix interaction. MD simulations show that upon lipid binding, TM5 and TM8 shift apart by ~4 \u00c5 at their extracellular regions while F428 and L569 remain tightly associated, creating a snug binding cavity. The F428A and L569F mutations show selective effects based on acyl tail structure, with F428A particularly sensitive to the position of double bonds in C18 acyl chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by detailed structure-activity relationship data (C81-C83, C85-C86) and MD simulation observations (C87-C92). The structural characterization from MD provides a mechanistic explanation for the selective effects observed in mutagenesis. The inference about cavity shape determining selectivity (C93) is well-supported by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "MD simulations show that bioactive lipids docked into the identified region remain stable over 100 ns, with GlyT2 backbone RMSD remaining below 3.8 \u00c5. OLLys, OLTrp, and OLLeu remained bound throughout simulations, while OLSer initially bound shallowly then migrated deeper after 100 ns. The acyl tails penetrate the transporter to forge a deeper cavity, driving TM5 and TM8 apart. For the I545L mutant, lipids either did not bind or remained loosely associated in a shallow pocket with hairpin tail conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulation results are internally consistent and provide detailed mechanistic insight. The stability of the protein structure (C40) validates the simulation approach. The differential behavior of OLSer (C106) and the I545L mutant (C108) are consistent with experimental observations. However, the simulations are limited to 100 ns, which may not capture all relevant timescales of binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C122",
+      "C123"
+    ],
+    "result": "The reverse L425I mutation in GlyT1 (corresponding to I545 in GlyT2) is sufficient to impart sensitivity to some bioactive lipid inhibitors. GlyT1 L425I shows inhibition by OLCarn comparable to WT GlyT2 (IC50 195 nM, 74.6% max inhibition) and by OLLys with similar maximal inhibition (95.6%) but 9-fold lower apparent affinity. This suggests the binding site is mostly pre-formed in GlyT1 and that subtle conformational differences may accommodate different bioactive lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data on the GlyT1 L425I mutant (C55-C56) clearly demonstrate that a single mutation can confer sensitivity to bioactive lipids. The inference that the binding site is pre-formed in GlyT1 (C123) is reasonable given that a single mutation is sufficient, though the reduced affinity for OLLys suggests additional differences exist. The result appropriately qualifies the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The bioactive lipid binding site represents a novel extracellular allosteric site for the SLC6 family of transporters, distinct from the central substrate binding and vestibule allosteric sites. The formation of the deep binding pocket is proposed to be unique to GlyT2, which may explain selectivity over GlyT1. However, most residues affecting acyl amino acid activity are conserved among SLC6 transporters (except I545), suggesting major features of the binding site are common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distinction from known binding sites (C118) is well-supported by structural comparison. The proposal that the deep pocket is unique to GlyT2 (C109) is consistent with the selectivity data but remains somewhat speculative. The observation about residue conservation (C120-C121) appropriately qualifies the uniqueness claim and suggests the site may be exploitable in other SLC6 members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The proposed mechanism of inhibition is that bioactive lipid binding to the extracellular allosteric site may restrict movements of EL4 and/or unwinding of TM5 required for the transport cycle. This perturbation could alter GlyT2 dynamics to slow but not completely block transport, consistent with partial inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a mechanistic hypothesis (C112-C113) based on structural knowledge of the transport cycle and the location of the binding site. While the hypothesis is reasonable and consistent with the data, it lacks direct experimental validation. The mechanism remains speculative and would require additional experiments (e.g., conformational studies, transport kinetics) to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Bioactive lipids show high selectivity for GlyT2 over GlyT1, and their inhibitory effects are mediated by binding to a specific site on GlyT2 rather than general membrane disruption. NAGly and OLLys are non-competitive inhibitors, suggesting they bind to a site separate from the substrate glycine binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The selectivity data (C30) combined with prior MD simulations showing no membrane perturbation support the conclusion of specific binding (C31). The non-competitive inhibition data (C32) directly support the inference of a separate binding site (C33). This result provides important context for the binding site identification studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Prior work showed that chimeric GlyT2 transporters containing EL4 from GlyT1 are insensitive to NAGly and OLCarn, and the I545L mutation in EL4 reduces sensitivity to lipid inhibitors. This led to the hypothesis that bioactive lipids inhibit GlyT2 by binding at a site that influences EL4 conformational changes required for transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result summarizes prior work (C34-C35) that motivated the current study. The hypothesis (C36) is reasonable based on the prior data, though it was speculative at the time. The current study validates and extends this hypothesis with detailed structural and mechanistic insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "A new class of GlyT2 inhibitors based on N-arachidonyl glycine (NAGly) has been developed, with synthetic acyl amino acids achieving low nanomolar potency. These compounds consist of an unsaturated acyl tail and amino acid head group, with positively charged head groups being most potent. Oleoyl d-lysine (ODLys) is potent, metabolically stable, blood-brain barrier permeable, and produces analgesia in rodent pain models with minimal side effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result summarizes the development and characterization of the bioactive lipid inhibitors from prior work. The structure-activity relationships (C18, C95-C96) and pharmacological properties of ODLys (C19, C94) are well-documented in cited studies. This provides essential context for the mechanistic studies in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The bioactive lipid binding site on GlyT2 is distinct from the cholesterol binding site identified in dDAT. The cholesterol site is an inner leaflet, membrane-exposed site on the surface of dDAT, whereas the bioactive lipid site is buried between helices in the extracellular region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with the cholesterol binding site (C117) is well-supported by structural analysis and clearly distinguishes the newly identified site from a known lipid modulation site in related transporters. The background information on cholesterol modulation (C114-C116) provides appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "It may be possible to exploit subtle differences in the extracellular allosteric site structure between SLC6 members to design novel compounds that inhibit neurotransmitter transporters in a fundamentally different manner from classical inhibitors like citalopram, cocaine, or nortriptyline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative statement about future drug design possibilities (C124). While the identification of a novel allosteric site provides a foundation for this possibility, no experimental validation of this concept is provided. The feasibility of exploiting subtle differences for selective inhibitor design remains to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

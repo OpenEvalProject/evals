@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Site-specific footprinting using APB and FeBABE reveals that SsoMCM binds equal arm fork DNA with a ~3:1 preference for C@duplex orientation, but on 3'-long arm substrates shows a reversed 1.5:1 preference for N@duplex orientation. Multiple cleavage sites indicate heterogeneous binding populations, and the WH domain influences orientation specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26, C34-C38, and C89-C92 collectively demonstrate through APB and FeBABE footprinting that SsoMCM exhibits substrate-dependent orientation preferences. The quantitative data from Figures 1 and 2 show statistically significant differences (p<0.001) between equal arm and asymmetric fork substrates. The interpretation that multiple populations exist is supported by multiple cleavage sites observed in the gels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The C-terminal WH domain influences SsoMCM binding orientation on fork DNA. Deletion of the WH domain (SsoMCM-\u0394WH) results in loss of orientation specificity on both equal arm and 3'-long arm substrates, showing ~1:1 binding in both orientations compared to WT's preferential loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 and C93-C96 are well-supported by footprinting data in Figure 3 showing that \u0394WH mutants lose the orientation preference observed in WT protein. The comparison between Figure 1C, 2B, and Figure 3C, 3E demonstrates statistically significant differences. Previous work (C93-C94) establishes the WH domain's role in loading without affecting overall binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Single-turnover DNA unwinding assays show that the 3'-long arm substrate (with 8 nt 5'-arm) yields the highest fraction unwound (0.54 \u00b1 0.03) compared to equal arm fork (0.26 \u00b1 0.01) or 5'-long arm substrates (0.08-0.13). The \u0394WH mutant shows increased unwinding on equal arm fork (0.35 \u00b1 0.01) but decreased unwinding on 3'-long arm (0.46 \u00b1 0.01) substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 and C54-C57 are supported by quantitative unwinding data in Figure 4 with clear error bars and statistical significance. The correlation between unwinding fractions and footprinting orientations (C55-C56) provides internal consistency. The substrate-dependent effects of WH deletion align with the footprinting results, strengthening the overall interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C97",
+      "C98"
+    ],
+    "result": "The fraction unwound in single-turnover assays correlates with the fraction of N@duplex orientation detected by footprinting, implicating N-first translocation. For equal arm fork, 0.26 fraction unwound corresponds to 0.23 N@duplex; for 3'-long arm, 0.54 unwound corresponds to 0.57 N@duplex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C97-C98 establish a critical correlation between two independent experimental approaches (footprinting and unwinding). The quantitative agreement between unwinding fractions and N@duplex footprinting ratios provides strong evidence for N-first translocation. However, this is an indirect inference that requires validation by direct translocation monitoring (which is provided by subsequent FRET experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Steady-state FRET experiments using streptavidin-blocked fork DNA show FAM quenching for both N-terminally and C682-labeled SsoMCM, with larger quenching for C682-labeled protein, consistent with multiple binding orientations and a preference for C@duplex on semi-equal arm fork substrates. Binding is ATP-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by experimental data in Figure 5B and Figure 6 supplement 1. The qualitative FRET results are consistent with the footprinting data showing multiple binding populations. The ATP-independence of binding (C64) is confirmed by control experiments and previous work. However, the steady-state FRET provides only qualitative information about orientation distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C107"
+    ],
+    "result": "Presteady-state FRET experiments directly demonstrate N-first translocation. When SsoMCM is labeled at C682, ATP addition causes an initial increase followed by a decrease in FRET, inconsistent with C-first translocation. When labeled at the N-terminus, ATP causes an initial increase followed by a larger slower increase (1.5 \u00b1 0.4\u00d710\u207b\u00b3 s\u207b\u00b9), consistent with N-first translocation and matching the unwinding rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 and C107 provide the most direct evidence for N-first translocation through presteady-state FRET monitoring. The opposite FRET behaviors for N-terminal vs C682-labeled SsoMCM upon ATP addition (Figure 6A vs 6B) are consistent with N-first translocation. The second rate constant matches the single-turnover unwinding rate (C72-C74), providing internal consistency. Controls without streptavidin (C75) support the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "FRET experiments on ssDNA substrates with long 3'- or 5'-tails confirm N-first translocation directionality. On 3'-tail substrates, only N-terminally labeled SsoMCM shows significant FRET increase with ATP (rate 5.4 \u00b1 0.2\u00d710\u207b\u00b3 s\u207b\u00b9), while C682-labeled shows a decrease. On 5'-tail substrates, minimal FRET changes occur. ssDNA translocation is ~5-fold faster than unwinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by data in Figure 7 and provide additional confirmation of N-first translocation on ssDNA substrates. The substrate-dependent FRET changes (3'-tail vs 5'-tail) and label-dependent responses (N-terminal vs C682) are internally consistent with N-first 3'-5' translocation. The faster rate on ssDNA vs dsDNA (C80) is mechanistically reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C84",
+      "C108"
+    ],
+    "result": "Combining footprinting, single-turnover unwinding, and presteady-state FRET studies, the authors conclude that SsoMCM can bind fork DNA in both orientations with probabilities influenced by DNA substrate and the WH domain, but translocation and unwinding proceeds N-first in the 3'-5' direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C84, and C108 represent the main conclusions synthesizing all experimental results. The N-first translocation mechanism is supported by three independent lines of evidence: (1) correlation between unwinding fractions and N@duplex footprinting ratios, (2) direct FRET monitoring showing N-terminal approach to the duplex during translocation, and (3) substrate-dependent FRET changes consistent with 3'-5' N-first movement. The convergence of multiple experimental approaches provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "SsoMCM preferentially binds the 3'-arm of fork DNA when both arms are available, has lower binding efficiency for duplex DNA compared to fork substrates, and the predominant bound species is a single hexamer encircling one ssDNA arm while interacting with the excluded strand on the exterior surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 establish the binding properties of SsoMCM on fork substrates. These are supported by anisotropy data (Figure 1 supplement 3), DNaseI footprinting and EMSA (Figure 1 supplement 4), and citations to previous work (C27-C28, C31-C32). The conclusion about the predominant bound species (C33) is a reasonable inference from multiple lines of evidence, though it acknowledges minor populations exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C109"
+    ],
+    "result": "The C@duplex loaded state observed on equal arm fork DNA is interpreted as analogous to the initial double hexamer state after strand selection but before translocation. The authors propose that after loading at origins in the head-to-head double hexamer configuration, the two hexamers must bypass each other to proceed N-first (pathway ii in Figure 8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C104 and C109 represent mechanistic interpretations connecting the observed binding states to the double hexamer loading model. While the C@duplex state is experimentally observed (C104), the connection to the double hexamer intermediate (C99, C102) is speculative. The proposal that hexamers bypass each other (C109) is consistent with the N-first translocation data but is not directly tested in this study. The model relies heavily on prior structural work (C100-C101) and represents a plausible but unproven mechanistic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C110",
+      "C111"
+    ],
+    "result": "Background and context claims establishing the structure and function of MCM helicases, their conservation across domains, the eukaryotic CMG complex, archaeal MCM properties, double hexamer loading, and previous conflicting evidence about translocation orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C22, C85-C88, C110-C111 provide established background knowledge and cite appropriate prior work. These claims accurately represent the current understanding of MCM biology and the controversy regarding translocation orientation that motivated this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C53",
+      "C66",
+      "C67",
+      "C76",
+      "C93",
+      "C94",
+      "C105",
+      "C113",
+      "C114"
+    ],
+    "result": "Additional supporting claims from prior work establishing baseline properties of SsoMCM unwinding, WH domain effects, streptavidin displacement kinetics, and insights from eukaryotic CMG activation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C53, C66-C67, C76, C93-C94, C105, C113-C114 cite prior work appropriately to establish context and baseline expectations. These claims are used to interpret the current results and appear to accurately represent the cited literature. They provide necessary background for understanding the experimental design and interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C112",
+      "C115",
+      "C116"
+    ],
+    "result": "Speculative claims about mechanisms of bubble substrate preference, consequences of incorrect pathway selection, helical DNA conformation in the hexamer interior, and the role of Cdc45/MCM10 in strand exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106, C112, C115-C116 are explicitly speculative or represent inferences from structural data that are not directly tested. C106 speculates about bubble substrate affinity mechanisms, C112 about consequences of incorrect pathway selection, and C115-C116 about molecular details of strand selection. While these are reasonable hypotheses supported by citations, they represent future directions rather than established findings from this work.",
+    "result_type": "MINOR"
+  }
+]

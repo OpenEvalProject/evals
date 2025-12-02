@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C42"
+    ],
+    "result": "BMP4 treatment of H1 and H9 hESCs cultured on 500 \u00b5m ECM micro-discs for 44 hr produces gastruloids with reproducible radial differentiation patterns. The cells differentiate into SOX2+ ectoderm (center), T+ mesoderm, SOX17+ endoderm, and CDX2+ ExE-like cells (edge), with a radial gradient of pSMAD1 declining from edge to center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C42 are well-supported by immunofluorescence imaging, quantitative fluorescence analysis, and neural network-based cell counting (Figure 1). The reproducibility is demonstrated across multiple experiments and two cell lines (H1 and H9), with consistent proportions and spatial arrangements. Statistical measures (standard deviations) are provided for cell proportions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "The sum of cells expressing different germ layer markers exceeds the total number of nuclei per gastruloid, indicating co-expression of markers by some cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by quantitative cell counting data (Figure 1E) showing that marker percentages (61% + 42% + 18% + 32% = 153%) exceed 100%. This mathematical observation logically necessitates marker co-expression, which motivated the subsequent scRNA-seq analysis to resolve cellular identities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Single-cell RNA sequencing of H1 hESC gastruloids from two biological replicates (2,475 cells total after quality control) identified seven distinct cell clusters using unsupervised clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48-C50 describe the scRNA-seq methodology and results with appropriate technical detail. Quality control criteria are specified (C47), integration methods are documented (C49), and clustering parameters are provided (C50). The identification of seven clusters is reproducible across both replicates (Figure 2B), demonstrating technical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Gastruloids contain an EPI-like cluster expressing post-implantation epiblast markers (DPPA4, NANOG, POU5F1, SOX2, GDF3, NODAL, TDGF1) that corresponds to mouse epiblast (86%) and monkey post-implantation epiblast (71-28% postE/L-EPI). Pseudotime analysis positions this cluster as a precursor to Ectoderm and Mesoderm-1 clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by marker expression analysis (Figure 2C), cross-species computational predictions (Figures 3I-J), and pseudotime/transition probability analysis (Figures 4B-C). The convergence of multiple analytical approaches (marker expression, cross-species comparison, pseudotime) provides strong evidence for the epiblast-like identity and developmental position of this cluster.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "The Ectoderm cluster expresses both neuroectoderm markers (NES, VIM, DLK1, LGI1) and nonneural ectoderm markers (CYFIP2, PTN, GLI3, ID3, CRABP2, SFRP1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by scRNA-seq marker expression data (Figures 2C, 4D) with appropriate citations to published marker studies. The co-expression of neural and nonneural markers suggests a prospective ectoderm identity, which is consistent with the early gastrulation stage modeled by the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Gastruloids contain two mesodermal clusters: Mesoderm-1 represents PS-like cells with higher T expression, while Mesoderm-2 represents nascent mesoderm expressing markers of lateral plate, paraxial, and intermediate mesoderm. Pseudotime analysis places Mesoderm-2 after Mesoderm-1, indicating a transitional relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by differential gene expression analysis with statistical significance (p<0.001, Figure 4\u2014supplement 3A), pseudotime ordering (Figure 4B), and transition probability analysis (Figure 4C). The convergence of expression profiles, temporal ordering, and transition probabilities provides strong evidence for the proposed developmental relationship between these clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "T+ mesodermal and SOX17+ endodermal cells in gastruloids upregulate CDH2, similar to ingressing mesodermal cells in other vertebrate gastrulae, as demonstrated by immunofluorescence and cosine similarity analysis showing significantly higher overlap between CDH2 and T/SOX17 compared to SOX2/GATA3 (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is well-supported by immunofluorescence imaging (Figure 4G), fluorescence intensity quantification (Figure 4\u2014supplement 5), and cosine similarity analysis with statistical significance (p<0.0001, Figure 4H). The comparison to published studies in fish, chick, and mouse provides evolutionary context, though direct experimental validation in those species is not provided in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Gastruloid Mesoderm-1 and -2 clusters express FGF17 but not FGF8, a signature also found in monkey but not mouse gastrulating cells, suggesting species-specific differences in FGF signaling during gastrulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by scRNA-seq gene expression analysis (Figure 4\u2014supplement 3D) comparing human gastruloids, monkey, and mouse datasets. The FGF8low/FGF17high signature is consistently observed in human gastruloids and monkey but not mouse, suggesting a primate-specific mechanism. However, functional validation of FGF17's role in cell migration would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The gastruloid Endoderm cluster expresses both primitive endoderm marker GATA6 and definitive endoderm marker FOXA2, with gene expression correlating to both primitive and definitive endoderm from published datasets, suggesting this cluster represents precursors or a mixture of both endoderm types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by scRNA-seq data (Figure 2C), immunofluorescence validation (Figure 4I), non-mutually exclusive expression patterns (Figure 4\u2014supplement 6), and correlation analysis with published datasets (Figure 4J). The interpretation as precursors or a mixture is reasonable given the early gastrulation stage, though definitive resolution would require lineage tracing or temporal analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Gastruloids contain hPGCLCs with gene expression profile SOX17+TFAP2C+PRDM1+POU5F1+NANOG+T+SOX2low, present in all gastruloids analyzed (47/47). These cells correspond to monkey early PGCs (80%) and have PGC module scores similar to monkey PGCs but significantly higher than mouse PGCs (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are well-supported by scRNA-seq marker expression (Figure 5\u2014supplement 1A), immunofluorescence validation in all gastruloids (Figure 5C), cross-species predictions (Figure 3J), and PGC module score analysis with statistical significance (Figure 5E). The primate-specific signature is appropriately noted, explaining the mismatch with mouse PGCs. This represents a novel finding for the micropatterned gastruloid system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The ExE-like cluster contains epithelial cells (ZO-1+ at apical membranes) co-expressing TE markers (CDX2, GATA3, KRT7) and amnion markers (TFAP2A, WNT6, HAND1). Cross-species comparison shows predicted labels for both TE (51%) and amnion (47%) in monkey embryos, and the cluster correlates with both hESC-derived trophoblast and human TE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C24-C27 are supported by scRNA-seq data (Figure 2C), immunofluorescence showing epithelial character and marker co-expression (Figures 6A-C), and cross-species/correlation analyses (Figures 3J, 6D). The co-expression of TE and amnion markers at single-cell resolution is well-documented. However, whether this represents a mixed population, precursors, or a non-physiological cell state remains uncertain and is appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Cross-species comparison indicates that gastruloids after 44 hr BMP4 treatment correspond to early-mid gastrula stage, specifically E7.0 mouse and 16 dpf cynomolgus monkey gastrulae, likely representing Carnegie stages 6-7 of human embryos. The majority of gastruloid cells are predicted to correspond to E7.0-7.5 mouse (92%) and 14-17 dpf monkey (83%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C38-C41 are supported by multiple convergent analyses: cell type composition similarity (Figure 3\u2014supplement 1), predicted cell stage distributions (Figures 3C-D), stage prediction scores (Figures 3E-F), and gene expression correlations (Figures 3G-H). The cross-validation between mouse and monkey datasets (Figure 3\u2014supplement 3) strengthens the staging conclusion. The inference to Carnegie stages 6-7 is reasonable but relies on the assumption that monkey/mouse staging accurately reflects human development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Dissociated gastruloid cells, when reseeded onto ECM micro-discs, are motile and begin forming aggregates by 15 hr. At 2 hr post-reseeding, cells show random distribution, but by 24-48 hr, SOX2+, T+, SOX17+, and CDX2+ cells aggregate with cells expressing the same marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by time-lapse imaging (Figure 7\u2014supplement 1A, Video 1) and immunofluorescence at multiple timepoints (Figure 7B). The progression from random distribution to homotypic aggregation is clearly documented. However, quantitative metrics of aggregation would strengthen the conclusion beyond visual assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "ScRNA-seq of gastruloid cells reseeded at medium density for 48 hr reveals the original seven clusters with close overlap to gastruloid cells. Differentially expressed genes (318 up, 537 down) are not associated with development or differentiation, arguing against significant changes in cell identities after reseeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by scRNA-seq analysis showing cluster preservation (Figure 7E), UMAP overlap (Figure 7F), and Gene Ontology analysis of differentially expressed genes (Figure 7\u2014supplement 2A). The small percentage of differentially expressed genes (1.2-2%) and their functional categories support the conclusion that cell identities are maintained. This validates the cell sorting assay as testing intrinsic cell behaviors rather than differentiation responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "In 48 hr reseeded cultures, SOX2+ ectodermal cells mix with T+ mesodermal cells but segregate from SOX17+ endodermal cells, while CDX2+ ExE-like cells mix with T+ and SOX17+ cells but segregate from SOX2+ cells, as demonstrated by immunofluorescence and cosine similarity analysis (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are well-supported by immunofluorescence imaging (Figures 8A-B, supplements) and quantitative cosine similarity analysis with statistical significance across multiple densities and timepoints (p<0.0001, Figures 8C, 8\u2014supplement 2). The selective sorting behaviors are consistently observed and quantified. This represents a novel demonstration of cell sorting in human gastrulation-stage cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The reEndo cluster exhibits highest expression of classical cadherins (CDH1, CDH2, CDH3), protocadherin PCDH1, and EPCAM (>2 fold over other clusters). CellPhoneDB predicts multiple Ephrin/Eph interacting pairs between reseeded cell clusters, suggesting potential mechanisms for selective cell sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by gene expression analysis (Figure 8\u2014supplement 4) and CellPhoneDB predictions (Figure 8\u2014supplement 5). The differential expression of adhesion molecules and complementary Ephrin/Eph expression provide plausible molecular mechanisms for observed sorting behaviors. However, these are correlative observations; functional validation through perturbation experiments would be needed to establish causal roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "H1 and H9 hESCs were cultured on Matrigel-coated plates in mTeSR media with daily replacement. For gastruloid differentiation, cells were seeded at 132,000-263,000 cells/cm\u00b2 with ROCKi, and for cell sorting experiments, dissociated gastruloid cells were reseeded at 72,000, 143,000, or 286,000 cells/cm\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe standard cell culture and experimental protocols that are clearly documented in the Materials and methods section. These methodological details are essential for reproducibility and are appropriately specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The scRNA-seq analysis pipeline included Cell Ranger v.2.1.0 for alignment, quality control filtering, Seurat-based integration and clustering, destiny package for pseudotime analysis, module score calculations, cross-species comparisons with anchor-based integration, CellPhoneDB for receptor-ligand interactions, and statistical analyses using Prism 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C57 comprehensively document the computational analysis pipeline with specific software versions, parameters, and statistical methods. Quality control criteria are clearly specified (C47), integration methods are detailed (C49, C53), and statistical approaches are appropriate (C55, C57). The level of methodological detail supports reproducibility, though code availability is not explicitly mentioned.",
+    "result_type": "MINOR"
+  }
+]

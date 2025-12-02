@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The eva1 mutant was identified through forward genetics and mapped to a G-to-A transition in IPMS1 (AT1G18500) causing an Asp228Asn substitution. This mutation is predicted to affect the acetyl-CoA binding surface, and allelism was confirmed through genetic complementation with ipms1-5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic mapping (C43), structural modeling (C45), and complementation testing (C48) provide strong converging evidence. The phenotypic similarity among eva1, ipms1-4, and ipms1-5 (C46-C47) further supports that eva1 is a bona fide IPMS1 allele. The molecular and genetic evidence is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Loss-of-function ipms1 mutants over-accumulate Val and total BCAAs while showing decreased Leu levels at 10 days of growth. These changes in BCAA homeostasis are mitigated by 20 days of growth, correlating with the temporal nature of subcellular phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The amino acid profiling data (C52-C53) directly demonstrates BCAA over-accumulation in multiple ipms1 alleles. The temporal correlation between amino acid changes and phenotype attenuation (C54) strengthens the connection. The LC-MS/MS methodology appears sound with appropriate biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The eva1 mutant exhibits pronounced defects in endomembrane organization, including numerous unfused vacuoles, enhanced trans-vacuolar strands (TVSs), thickened ER strands with increased cisternation, and increased Golgi clustering, without affecting bulk secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent markers (GFP-\u03b4TIP, \u03b3TIP-YFP, ERYK, GFP-CASP) and quantitative analyses (C40, C68) provide strong evidence for endomembrane defects. The temporal nature of phenotypes (C41) and normal secretion (C70) help define the specificity of the defects. The imaging data appears robust with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The eva1 mutant shows reorganization of the actin cytoskeleton characterized by enhanced bundling (higher skewness) and decreased cytoplasmic occupancy (lower density). The ipms1 mutants are less sensitive to latrunculin B-induced actin depolymerization compared to wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative actin analysis (C72) provides objective measurements of cytoskeletal changes. The Lat B sensitivity experiments (C73-C74) offer functional validation of altered actin dynamics. The use of established quantitative methods strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "IPMS1 loss-of-function mutants display pleiotropic growth defects at 10 days including reduced fresh weight and root length, delayed root hair formation, increased meristem cell number, thicker cotyledons, altered chloroplast ultrastructure, and elevated anthocyanin accumulation. These phenotypes are largely attenuated by 20 days of growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent measurements (fresh weight, root length, cell counts, TEM, anthocyanin quantification) provide comprehensive characterization. The temporal dynamics (C58, C60) correlate with BCAA changes. However, the mechanistic connections between individual phenotypes and BCAA/TOR signaling could be more directly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Treatment with PI3K inhibitors (wortmannin and LY294002) suppresses both the unfused vacuole and enhanced TVS phenotypes in eva1. Latrunculin B treatment eliminates TVSs but not unfused vacuoles, while oryzalin has no effect, indicating differential sensitivity to actin versus microtubule disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological dissection (C75-C78) provides clear evidence for differential mechanisms underlying the two vacuolar phenotypes. The use of multiple inhibitors targeting different pathways strengthens the conclusions. However, the interpretation that wortmannin/LY294002 effects are solely through PI3K inhibition is complicated by their known effects on TOR (addressed in subsequent results).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "TOR-selective inhibitors (AZD-8055 and Torin2) rescue eva1 subcellular phenotypes. IPMS1 loss-of-function mutants show increased S6K phosphorylation and enhanced EdU incorporation in root meristems, indicating up-regulated TOR signaling. Moderate TOR inhibition optimizes ipms1 root growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of TOR-selective inhibitors (C82-C84) provides strong evidence for TOR involvement. The S6K phosphorylation data (C86) offers direct molecular evidence of TOR activation. The EdU staining (C87) provides functional validation. The dose-response with AZD-8055 (C85) suggests an optimal TOR activity level. This is a key result linking BCAA accumulation to TOR activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "BCAA-induced F-actin bundling requires functional TOR but not RAPTOR1B. In the tor-es inducible silencing line, BCAA supplementation induces actin bundling before silencing but not after TOR silencing. In contrast, raptor1b mutants still show BCAA-induced actin bundling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic dissection using tor-es and raptor1b (C89-C91) provides strong evidence that actin reorganization is TOR-dependent but RAPTOR-independent, suggesting involvement of a TORC2-like complex rather than TORC1. This is a critical mechanistic insight, though the absence of identified TORC2 components in Arabidopsis (C11) leaves some uncertainty about the exact complex involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "There is a general correlation between BCAA over-accumulation and distorted actin cytoskeleton and endomembranes. Mutants with moderate BCAA changes (ipms1-1D, ahass1-1) show normal phenotypes, while those with substantial BCAA over-accumulation (ipms1-5, omr1-11D) or wild type with BCAA feeding show enhanced actin bundling and ER strand thickening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic comparison across multiple BCAA biosynthesis mutants (C93-C96) and BCAA feeding experiments (C94, C96, C98) provides strong correlative evidence. The Torin2 rescue of omr1-11D ER phenotype (C97) links the phenotypes to TOR. However, this remains largely correlative rather than mechanistic, and the threshold for phenotype manifestation is not precisely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Plant TOR signaling senses BCAA homeostasis and modulates the organization of subcellular structures including actin cytoskeleton and endomembranes. Over-accumulation of BCAAs up-regulates TOR signaling, inducing actin bundling with formation of aberrant endomembrane structures and compromising overall growth, particularly in early stages of development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C100-C102) is well-supported by the collective evidence from genetic, pharmacological, and cell biological experiments. The temporal specificity (C102) is documented. However, the direct molecular mechanism by which BCAAs activate plant TOR remains undefined, and the physiological significance of this pathway under normal growth conditions is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "BCAA over-accumulation causes growth inhibition linked to TOR signaling alteration and subcellular disruption. This includes severe remodeling of actin cytoskeleton and endomembranes underlying specific defects like delayed root hair formation, as well as increased leaf thickness and altered chloroplast ultrastructure. The authors propose that developmentally controlled TOR manipulation may be required for crop improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The connection between BCAA accumulation, TOR signaling, and growth inhibition (C115-C116) is well-documented in the study. The chloroplast phenotype similarity to IPMI mutants (C117) strengthens the BCAA connection. However, the proposal for crop engineering (C119) is speculative and not directly tested. The claim about \"inconsistency between nutrient status and metabolic signaling\" (C118) is somewhat vague.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The introduction establishes the conserved role of TOR in nutrient sensing across eukaryotes, the known glucose-TOR connection in plants, and identifies the knowledge gap regarding whether BCAAs serve as primary TOR inputs in plants as they do in yeast and mammals. It also reviews the challenges of studying BCAA-TOR connections in plants due to endogenous BCAA biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge in the field (C1, C9-C10, C12-C14, C17, C20-C22, C25) and correctly identify knowledge gaps (C3, C11, C29) that motivate the study. The citations appear appropriate. This provides solid context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The introduction establishes that plant vacuoles and ER are the largest membrane-bound organelles with essential functions, that their morphogenesis mechanisms are incompletely understood, and that unlike mammalian cells where ER dynamics depend on microtubules, plant ER and vacuoles are primarily associated with the actomyosin system. During normal development, small vacuoles fuse to form a central vacuole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge about plant cell biology (C30-C37) supported by appropriate citations. The description of normal vacuole development (C38) is supported by both literature and the study's own imaging. This provides essential background for interpreting the mutant phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The discussion contextualizes findings within the broader TOR field, noting that actin reorganization is a TORC2-specific output in yeast and mammals, that Arabidopsis ROP2 interacts with TOR, and that TORC1 regulates vacuole/lysosome morphology in other systems. The authors propose that TOR is involved in plant vacuole morphogenesis but through potentially non-conserved mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately places the findings in context of established knowledge from other systems (C103-C104, C106-C107) and recent plant work (C105, C108-C109). The proposal about non-conserved mechanisms (C110) is reasonable given the absence of identified TORC2 components in plants and the RAPTOR-independence of actin phenotypes. This represents appropriate scholarly interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The discussion notes that BCAAs are essential dietary nutrients for animals, that plant feed sources have amino acid deficits, that BCAAs serve as dietary supplements due to their TOR-activating effects, and that previous studies showed BCAA over-accumulation causes growth defects in Arabidopsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge (C111-C113) and prior work (C114) with appropriate citations. This provides important context for the agricultural and nutritional relevance of understanding BCAA-TOR connections in plants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background information establishes that IPMS1 directs metabolic flux toward Leu biosynthesis and away from Val, that IPMS1 is the more highly expressed of two IPMS isoforms in Arabidopsis, and that previous work found Val and Ile increases in ipms1-4 and ipms1-5 at two weeks with differential Leu changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge about IPMS1 function (C49-C50) and prior characterization of these alleles (C51) with appropriate citations. This provides essential biochemical context for interpreting the amino acid profiling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The manuscript establishes that wortmannin and LY294002, while used to inhibit PI3Ks in plants, are also effective TOR inhibitors in mammals and are considered PI3K/TOR dual inhibitors. AZD-8055 and Torin2 are TOR-selective inhibitors that also effectively inhibit plant TOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These pharmacological characterizations (C80-C81) are well-supported by the cited literature and are critical for interpreting the chemical inhibitor experiments. The distinction between dual inhibitors and TOR-selective inhibitors is important for the mechanistic conclusions.",
+    "result_type": "MINOR"
+  }
+]

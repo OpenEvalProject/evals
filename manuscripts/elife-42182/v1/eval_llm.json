@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "In S. pombe, spindle length scales with cell size. Cell-cycle mutants wee1-50 and cdc25-22 divide at abnormally short (10.50 \u00b5m) and long (24.7 \u00b5m) cell lengths respectively, compared to wild-type (13.3 \u00b5m). Maximum spindle lengths correspondingly scale from 10.14 \u00b5m (wee1-50) to 11.93 \u00b5m (wild-type) to 17.34 \u00b5m (cdc25-22), with strong linear correlation (R\u00b2=0.94, m=0.49). Metaphase spindle length also scales with cell size, though to a lesser extent (R\u00b2=0.6, m=0.07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 provide consistent experimental measurements across multiple cell types showing that spindle length increases proportionally with cell size. The strong statistical correlation (R\u00b2=0.94) and supporting data from both maximum and metaphase spindle lengths provide robust evidence for this scaling relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Mitosis duration is constant (~30 min) in S. pombe cells regardless of cell size (R\u00b2=0.02, m=0.06). This constancy is achieved through cell-size-dependent adjustment of spindle dynamics: the velocity of spindle elongation in anaphase B, as well as the rate of spindle assembly in prophase and elongation in metaphase, all increase with cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 demonstrate that despite varying cell sizes, mitosis duration remains constant through compensatory increases in spindle dynamics velocities. The near-zero correlation between mitosis duration and cell size (R\u00b2=0.02) combined with positive correlations for velocity measurements provides strong support for this temporal regulation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Alternative methods to manipulate cell size (starvation, hydroxyurea treatment, cdc2-asM17 with NM-PP1) produce cells of varying lengths that confirm the scaling relationships observed in wee1-50 and cdc25-22 mutants, demonstrating that the observed effects are due to cell size changes rather than specific mutations in cell cycle regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide important controls showing that the scaling relationships are not artifacts of specific mutations but genuine responses to cell size. Multiple independent methods of altering cell size all produce consistent results, strengthening the conclusions about cell-size-dependent regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Deletion of kinesin-6 Klp9 abolishes the cell-size-dependent spindle elongation velocity. In klp9\u0394 cells, anaphase B spindle elongation velocities decrease to similar values (0.3-0.5 \u00b5m/min) across all cell types (wee1-50, wild-type, cdc25-22), eliminating the correlation between velocity and cell size. Consequently, longer cells require proportionally more time to complete chromosome segregation, abolishing the constant mitosis duration phenomenon. This identifies Klp9 as a key component regulating spindle elongation velocity in response to cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 provide compelling genetic evidence that Klp9 is essential for the cell-size-dependent regulation of spindle elongation velocity. The loss-of-function experiment shows that without Klp9, the scaling relationship is completely abolished while spindle length scaling is maintained (C39), demonstrating that Klp9 specifically regulates velocity rather than length.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The amount of Klp9 increases with cell size while its concentration remains constant. Klp9-GFP intensity at the midzone and total cellular Klp9-GFP intensity both increase with cell size. Approximately 40% of the total cellular Klp9 pool is recruited to anaphase spindles in all cell types, and the Klp9 spindle fraction does not correlate with cell size (R\u00b2=0.08, m=0.0015). Klp9 concentration in cells is largely independent of cell size (R\u00b2=0.09, m=-0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 establish that Klp9 behaves as a limiting component with constant concentration but increasing total amounts in larger cells. The consistent recruitment fraction (~40%) and constant concentration across cell sizes support a simple scaling model where larger cells have more Klp9 molecules available for recruitment to proportionally larger spindles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Similar to Klp9, tubulin amounts increase proportionally with cell size while concentration remains constant. Both total cellular tubulin and tubulin incorporated in late anaphase spindles increase with cell size, while tubulin concentration (estimated by mCherry-Atb2 intensity/cell volume ratio) remains constant across different cell sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 demonstrate that tubulin follows the same limiting component model as Klp9, with constant concentration but increasing total amounts in larger cells. This parallel behavior supports the proposed model that cytoplasmic volume regulates both spindle length (via tubulin) and spindle dynamics (via Klp9).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Overexpression of klp9 increases anaphase B spindle elongation velocity in a dose-dependent manner. Stronger klp9 overexpression (pnmt1 > pnmt41 > pnmt81) leads to faster spindle elongation and increased GFP-klp9 intensity at anaphase spindles. The correlation between GFP-klp9 signal and velocity reaches an upper limit of approximately 1.1-1.2 \u00b5m/min, beyond which further increases in Klp9 do not substantially accelerate elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide gain-of-function evidence complementing the loss-of-function data, demonstrating that Klp9 levels directly determine spindle elongation velocity. The existence of an upper velocity limit suggests additional constraints (motor velocity, binding site saturation, or microtubule growth rate) that warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "Ase1, the microtubule crosslinker that organizes the spindle midzone, increases at the midzone proportionally with cell size. However, at endogenous expression levels, Ase1 does not regulate spindle elongation velocity: there is no significant difference in anaphase B elongation between wild-type and ase1off cells. When overexpressed (pnmt81, pnmt41), Ase1 decreases spindle elongation velocity in a dose-dependent manner, consistent with its role as a brake in vitro, but this effect only occurs at non-physiological levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 demonstrate that while Ase1 scales with cell size and can affect velocity when overexpressed, it does not contribute to the cell-size-dependent velocity regulation under normal conditions. The shut-off experiment (C60) provides strong evidence that Ase1's role is primarily structural rather than regulatory for velocity control, though the authors acknowledge its importance for spindle stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Other midzone motors (Cut7/kinesin-5 and Klp2/kinesin-14) do not regulate cell-size-dependent spindle elongation velocity. Deletion of pkl1 alone does not affect velocity. Double deletion pkl1\u0394cut7\u0394 shows a slight but significant decrease in velocity compared to wild-type, suggesting Cut7 promotes spindle elongation to a small extent rather than acting as a brake. Deletion of klp2 does not significantly alter anaphase B elongation velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 systematically rule out other candidate motors as regulators of cell-size-dependent velocity, strengthening the conclusion that Klp9 is the key regulator. The genetic analysis is well-controlled, using the pkl1\u0394 background to enable Cut7 deletion studies. However, these experiments do not test whether these motors contribute to the scaling relationship specifically, only whether they affect velocity in general.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Midzone length (the region of antiparallel overlapping microtubules) increases with spindle length and cell size. Line-scan analysis shows increased Klp9-GFP signal length in longer spindles. Midzone length correlates strongly with spindle length (R\u00b2=0.82, m=0.26), measuring 2.6\u00b10.4 \u00b5m in wee1-50, 3.2\u00b10.5 \u00b5m in wild-type, and 5.0\u00b10.6 \u00b5m in cdc25-22 cells. Midzone length remains relatively constant throughout anaphase B progression, indicating that microtubule growth rate is correlated with spindle elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 establish that the midzone structure scales with spindle size, providing more binding sites for Klp9 in larger spindles. The strong correlation (R\u00b2=0.82) and the observation of constant midzone length during elongation (C72) support the inference about coordinated microtubule growth (C73), though this inference could benefit from direct measurement of microtubule growth rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Microtubule density at the midzone increases with spindle length. Density (measured by mCherry-Atb2 intensity in a fixed area) shows modest correlation with spindle length (R\u00b2=0.53, m=18.36). The ratio of tubulin intensity per unit spindle length scales with cell size. Total mCherry-Atb2 intensity of the entire midzone increases strongly with spindle length (R\u00b2=0.82, m=92.22). Together, longer spindles provide more Klp9 binding sites through both increased overlap length and increased microtubule density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 demonstrate that binding sites for Klp9 increase through two mechanisms: longer overlap regions and more microtubules per region. The combined effect (C76, R\u00b2=0.82) is stronger than either individual component, supporting the conclusion that longer spindles provide disproportionately more binding sites. This is consistent with prior EM studies cited showing ~9 MTs in wild-type vs ~16 in cdc25-22 spindles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The effective concentration of Klp9 at the midzone (ratio of Klp9-GFP intensity to total mCherry-Atb2 intensity) decreases with spindle length. This suggests that longer spindles in larger cells have lower motor occupancy relative to available binding sites compared to shorter spindles in smaller cells, potentially reducing molecular crowding effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 identify an important consequence of the disproportionate increase in binding sites: lower relative motor density on longer spindles. This observation provides a potential additional mechanism for velocity regulation beyond simple motor number, though the functional significance of this reduced crowding remains somewhat speculative and would benefit from direct experimental testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose a model where cell-size-dependent spindle elongation velocity, which ensures constant mitosis duration, results from scaling of essential spindle components with cell size. Larger cells provide more Klp9 molecules (due to constant concentration and increased volume), leading to recruitment of more motors to the midzone. Increased motor amounts accelerate spindle elongation either by increasing microtubule sliding velocity or microtubule growth rate. This effect may be enhanced by lower molecular crowding on longer spindles. The model suggests that cytoplasmic volume regulates both spindle length (via tubulin) and mitosis duration (via Klp9, microtubule density, and midzone length).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82, C99-C102 synthesize the experimental findings into a coherent model. The model is well-supported by the data showing: (1) constant Klp9 concentration with increasing amounts in larger cells, (2) proportional recruitment to spindles, (3) dose-dependent effects of Klp9 on velocity, (4) increased binding sites in longer spindles, and (5) reduced motor density. However, the model remains somewhat speculative regarding the precise mechanism (sliding vs. growth) and the functional role of reduced crowding (C100-C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The introduction establishes the biological context through literature review: spindle length scales with cell size across multiple organisms (C. elegans, X. laevis, S. cerevisiae, human cells), regulated by cytoplasmic volume and limiting components like tubulin, as well as molecules modulating microtubule dynamics. In C. elegans, spindle assembly and elongation velocities also scale with cell size. Prolonged mitosis can cause cell death or arrest. Different organisms use different mechanisms for anaphase B: cortical pulling forces (C. elegans) versus midzone-based microtubule sliding by kinesin-5 or kinesin-6. In vitro, forces from multiple kinesin-5 molecules add up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 accurately summarize prior work based on appropriate citations. These claims establish the scientific context and rationale for the current study. The citations appear appropriate and the claims are consistent with the cited literature. This represents standard background material rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The molecular mechanism of anaphase B in S. pombe involves Ase1 bundling antiparallel microtubules at anaphase onset to organize the spindle midzone, then recruiting Klp9 (a plus-end directed homotetrameric motor) from the nucleus in a dephosphorylation-dependent manner. Klp9 slides apart antiparallel microtubules to elongate the spindle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 describe the established molecular mechanism in S. pombe based on prior work (Fu et al., 2009; Rincon et al., 2017) and confirmed by the authors' observations. This provides essential background for understanding how Klp9 functions and why it was selected as a candidate for regulating velocity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Despite loss of velocity scaling, spindle length scaling with cell size is maintained in klp9\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 provides an important control showing that Klp9 specifically regulates velocity rather than length determination. This separation of length and velocity regulation strengthens the mechanistic conclusions about Klp9's specific role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Cut7 (kinesin-5) alone does not establish cell-size-dependent spindle elongation velocity, even though it can support spindle elongation in the absence of Klp9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is well-supported by the observation that klp9\u0394 cells (which retain Cut7) show similar velocities regardless of cell size. This demonstrates that while Cut7 contributes to elongation, it does not mediate the cell-size-dependent velocity regulation, further establishing Klp9's specific role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Intensity measurements and overexpression experiments demonstrate that increased Klp9 availability leads to increased recruitment to the spindle and faster spindle elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 summarizes the key experimental findings linking Klp9 amounts to velocity. This is well-supported by both the correlative data (C43-C48) and the causal overexpression experiments (C52-C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In vitro studies show that force production by motor ensembles varies by motor type: Xenopus kinesin-5 forces scale linearly with motor number and overlap length, while kinesin-1 forces do not scale with motor number. Different MAPs can differentially regulate motors (e.g., TPX2 slows Eg5 but not kinesin-1). The sliding velocity of antiparallel microtubules can scale with overlap length (PRC1/Kif4A system).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 cite relevant in vitro studies that provide mechanistic context for interpreting the in vivo results. These citations are appropriate and help explain why different motors might behave differently in terms of force scaling and regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Electron microscopy studies show that wild-type S. pombe spindles contain about 9 microtubules at metaphase-to-anaphase transition, while cdc25-22 spindles contain approximately 16 microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 cite prior EM studies that provide independent validation of the increased microtubule number in longer spindles, supporting the authors' fluorescence-based density measurements. These citations strengthen the conclusion about increased binding sites in larger spindles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Prior studies show that increasing motor densities can reduce motor velocity, potentially due to steric interference. This has been observed for kinesin-8 and for Cut7 (kinesin-5) immobilized on coverslips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 cite relevant studies on molecular crowding effects that provide mechanistic context for the authors' observation of reduced motor density in longer spindles. These citations support the speculation that reduced crowding might enhance velocity in larger cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Prior studies in other organisms show that: (1) antiparallel microtubules in spindle midzones grow constantly during elongation (Ptk1 cells, diatoms), (2) depleting kinesin-8 KLP67A in Drosophila increases microtubule sliding and spindle elongation velocity, (3) kinesin-5 may act as a microtubule polymerase, and (4) reducing microtubule growth rate in fission yeast (by disrupting Mal3-Dis1 interaction) results in slightly faster spindle elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 cite relevant studies about the relationship between microtubule dynamics and spindle elongation. These provide important context for the discussion of whether sliding velocity or growth rate is limiting. The counterintuitive result in C98 is appropriately noted as difficult to interpret.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors speculate that cytoplasmic volume might regulate constant mitosis duration (analogous to its regulation of spindle length), consistent with their finding that tubulin and Klp9 concentrations are constant across cell sizes while total amounts increase proportionally with cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 present a speculative extension of the limiting component model from spindle length to mitosis duration. While the constant concentration data (C104) supports this model, the speculation about cytoplasmic volume regulation (C103) goes beyond what is directly demonstrated and would require additional experiments to test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Mitosis duration is remarkably constant across various human cell lines (~45 min average, 20-60 min range) and in fission yeast (~30 min), despite wide variation in interphase duration (12-30 hr in mammalian cells, ~3 hr in S. pombe). This suggests that regulation of mitosis duration is important across organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 provide comparative context showing that constant mitosis duration is a conserved feature across evolutionarily distant organisms, supporting the biological significance of the regulatory mechanism described in this study. The citations are appropriate and the comparison is valid.",
+    "result_type": "MINOR"
+  }
+]

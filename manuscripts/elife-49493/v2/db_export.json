@@ -1,0 +1,1648 @@
+{
+  "submission": {
+    "id": "fa856c88-2e0f-456f-8c19-ef46412454a8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:01:25.834558Z",
+    "updated_at": "2025-12-02T13:01:25.834558Z"
+  },
+  "content": [
+    {
+      "id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "submission_id": "fa856c88-2e0f-456f-8c19-ef46412454a8",
+      "content_type": "manuscript",
+      "content_text": "# Endothelin signalling mediates experience-dependent myelination in the CNS\n\n## Authors\n\n- Matthew Swire<sup>1</sup> ([ORCID: 0000-0003-4294-4926](https://orcid.org/0000-0003-4294-4926)) \u2020\n- Yuri Kotelevtsev<sup>3</sup>\n- David J Webb<sup>4</sup>\n- David A Lyons<sup>2</sup> ([ORCID: 0000-0003-1166-4454](https://orcid.org/0000-0003-1166-4454))\n- Charles ffrench-Constant<sup>1</sup>\n\n### Affiliations\n\n1. MRC Centre for Regenerative Medicine, MS Society Edinburgh Centre University of Edinburgh Edinburgh United Kingdom\n2. Centre for Discovery Brain Sciences University of Edinburgh Edinburgh United Kingdom\n3. Centre for Neurobiology and Brain Restoration Skoltech Institute for Science and Technology Moscow Russian Federation\n4. British Heart Foundation Centre of Research Excellence, Centre of Cardiovascular Science, Queen's Medical Research Institute University of Edinburgh Edinburgh United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nExperience and changes in neuronal activity can alter CNS myelination, but the signalling pathways responsible remain poorly understood. Here we define a pathway in which endothelin, signalling through the G protein-coupled receptor endothelin receptor B and PKC epsilon, regulates the number of myelin sheaths formed by individual oligodendrocytes in mouse and zebrafish. We show that this phenotype is also observed in the prefrontal cortex of mice following social isolation, and is associated with reduced expression of vascular endothelin. Additionally, we show that increasing endothelin signalling rescues this myelination defect caused by social isolation. Together, these results indicate that the vasculature responds to changes in neuronal activity associated with experience by regulating endothelin levels, which in turn affect the myelinating capacity of oligodendrocytes. This pathway may be employed to couple the metabolic support function of myelin to activity-dependent demand and also represents a novel mechanism for adaptive myelination.\n\n## Introduction\n\nThere is increasing evidence that experience regulates CNS myelination. For example, social interactions, sensory stimulation and several forms of learning have been shown to alter white matter and myelin structure in both humans and animal models (Scholz et al., 2009; Makinodan et al., 2012; Liu et al., 2012; Sampaio-Baptista et al., 2013; McKenzie et al., 2014; Etxeberria et al., 2016; Xiao et al., 2016; Hughes et al., 2018). At the level of individual neurons and axons, increasing the level of activity by using optogenetics or chemogenetics enhances the generation of myelin-forming oligodendrocytes and increases the amount of myelin they form (Gibson et al., 2014; Mitew et al., 2018), whilst preventing synaptic vesicular release from axons reduces myelin formation (Hines et al., 2015; Mensch et al., 2015; Koudelka et al., 2016). Together, these findings have led to a new concept of CNS plasticity - adaptive myelination. This concept posits that changes in neuronal activity in response to experience of the extrinsic environment lead to local changes in myelination. Such changes could in turn contribute to the alterations in conduction that underpin CNS neural circuit plasticity (Sampaio-Baptista and Johansen-Berg, 2017; Foster et al., 2019; Suminaite et al., 2019).\n\nExploring this important concept requires that we understand the mechanisms that can link changes in neuronal activity to the regulation of myelination. In addition to the communication between axons of active neurons and the oligodendrocytes that myelinate them, neuronal activity might also affect myelination indirectly in the local area through signals from other glial cells or from vascular cells that can respond to dynamic changes in neuronal activity. Such indirect signalling has been implied by in vitro studies, wherein increased levels of LIF secreted by cultured astrocytes in the presence of neuronal activity enhances myelination (Ishibashi et al., 2006). However, whether the vasculature might relay information about neuronal activity and in turn influence myelination by oligodendrocytes in vivo is not known.\n\nHere we set out to test the hypothesis that the vasoactive peptide endothelin (EDN) enables blood vessels to play such a role in indirectly linking activity and myelination. This hypothesis is based on two sets of prior data. First, EDN expression by endothelial cells increases with enhanced blood flow (Yanagisawa et al., 1988; Dancu et al., 2004; Walshe et al., 2005; Pandit et al., 2015), which occurs in response to increased CNS activity. Second, the EDN G-protein coupled receptor (GPCR) endothelin receptor B (EDNRB) enhances myelination in slice cultures (Yuen et al., 2013). Here we show that EDN is expressed by CNS vascular cells, and that this expression lessens in the medial prefrontal cortex following social isolation, which we confirm also leads to impaired cortical myelination. Correspondingly, we show, by manipulating EDNRB signalling in rodent and zebrafish models, that reduced EDN signalling decreases the number of myelin sheaths formed by individual oligodendrocytes in vivo. Finally, we rescue the reduction in myelination associated with environmental social deprivation by intranasal administration of an EDNRB agonist to activate EDN signalling within the CNS. Together our data indicate that the vasculature responds to environmental signals associated with changes in neuronal activity and can, in turn, affect the myelinating capacity of oligodendrocytes in vivo. In this way, we propose a novel mode by which active neurons may regulate oligodendrocyte behaviour and provide a mechanism for adaptive myelination.\n\n## Results\n\n### The levels of EDN expression in blood vessels are reduced following social isolation\n\nIf EDN signalling from CNS blood vessels provides a link between circuit function and myelination, then an initial prediction would be that EDN expression by these vessels will be responsive to extrinsic environmental changes that alter neuronal activity and myelination. To test this prediction, we used a model in which the extrinsic environment has been shown to regulate CNS myelination: social isolation (Liu et al., 2012; Makinodan et al., 2012).\n\nPrior work has established that social isolation in mice during a critical period comprising 2 weeks after weaning reduces both the excitability of specific subtypes of pyramidal neurons of the medial prefrontal cortex (mPFC) and oligodendrocyte formation and myelination in the same area (Liu et al., 2012; Makinodan et al., 2012; Yamamuro et al., 2018). We repeated this protocol, confirming the previously-described effect on circuit function by showing that isolated mice spent significantly less time than socially-experienced controls interacting with a novel mouse (Figure 1A\u2013C). To quantify the myelination defects in these mice immediately following the isolation period we used a labelling strategy in which oligodendrocyte cell bodies, processes and myelin sheaths are revealed by CNPase immunostaining. The sparsely-myelinated layers II/III of the mPFC, a region myelinated during this isolation period (Figure 1D), enabled individual oligodendrocyte morphologies to be analysed for myelin sheath number and length (Figure 1D\u2013E, Figure 1\u2014figure supplement 1). Using this approach we showed that individual oligodendrocytes made fewer myelin sheaths (Figure 1F\u2013H), although the length of the myelin sheaths formed by oligodendrocytes in these mice was unaffected (Figure 1\u2014figure supplement 2E\u2013F). Further, we found that the isolated mice also generated fewer oligodendrocytes in the mPFC (Figure 1\u2014figure supplement 2C\u2013D). In contrast, social isolation had no effect on myelin sheath number in the visual cortex (Figure 1\u2014figure supplement 3A\u2013B), demonstrating the region-dependent effects of this protocol on myelination.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig1-v2.jpg)\n\n**Figure 1.:** (A) Timeline for social isolation experiment. At postnatal day 21 male mice were housed in a social environment containing 3\u20135 mice or on their own in isolation. Mice were analysed at P35. (B) Schematic of social interaction assay. Mice were recorded for 5 min exploring an arena containing two identical wire mesh containers: one container housed an unrelated male wild type mouse (social zone), while the other remained empty (non-social zone). (C) Time spent within 2.5 cm of non-social container: Grouped 37.58 s\u00a0\u00b1\u00a08.683 n\u00a0=\u00a012, Isolated 45.59\u00a0\u00b1\u00a036.28 n\u00a0=\u00a09 and social container: Grouped 110.7 s\u00a0\u00b1\u00a021.71 n\u00a0=\u00a012, Isolated 74.24 s\u00a0\u00b1\u00a037.07 n\u00a0=\u00a09 (mean\u00a0\u00b1\u00a0standard deviation). Unpaired T-test p=0.0107. (D) Coronal section of mouse prefrontal cortex stained for CNPase and nuclei. Layers II/III of the medial prefrontal cortex outlined by dashed box. Scale bars\u00a0=\u00a0100 \u03bcm. (E) Layer II/III oligodendrocyte stained for CNPase and MBP. (F) Representative images of medial prefrontal cortex oligodendrocytes stained for CNPase. (G) Mean number of myelin sheaths formed by oligodendrocytes per mouse. Grouped 47.66\u00a0\u00b1\u00a01.015 n\u00a0=\u00a07 mice, Isolated 37.11\u00a0\u00b1\u00a00.6425 n\u00a0=\u00a04 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test, p=0.0106. (H) Pooled data for number of myelin sheaths formed by layer II/III medial prefrontal cortex oligodendrocytes. Grouped 47.80\u00a0\u00b1\u00a07.289 n\u00a0=\u00a049 cells from seven mice, Isolated 37.11\u00a0\u00b1\u00a05.202 n\u00a0=\u00a028 cells from four\u00a0mice (mean\u00a0\u00b1\u00a0standard deviation). Mann-Whitney test, p=<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A full maximum intensity projection of a complete a layer II/III oligodendrocytes in mouse cortex stained for CNPase followed by 0.5 \u00b5m slices. Tracing the fine processes through each slice enables assessment of the myelin sheaths formed by individual oligodendrocytes.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Distance travelled by mice during 5 min of exploration of the social interaction assay. Grouped 15.48 meters\u00a0\u00b1\u00a03.326 n\u00a0=\u00a012 mice, Isolated 16.15 meters\u00a0\u00b1\u00a03.57 n\u00a0=\u00a09 mice (mean\u00a0\u00b1\u00a0standard deviation). (B) Maximum speed travelled by mice during 5 min of exploration of the social interaction assay. Grouped 0.2433\u00a0\u00b1\u00a00.04117 n\u00a0=\u00a012 mice, Isolated 0.2619 meters\u00a0\u00b1\u00a00.02792 n\u00a0=\u00a09 mice (mean\u00a0\u00b1\u00a0standard deviation). (C) Quantification of CNP positive cells in medial prefrontal cortex layers II/III: Grouped 7709\u00a0\u00b1\u00a0378.7 n\u00a0=\u00a05 mice, Isolated 4738\u00a0\u00b1\u00a0385.7 n\u00a0=\u00a04 mice (mean\u00a0\u00b1\u00a0standard error). (D) Quantification of CNP positive cells in medial prefrontal cortex layer V: Grouped 18879\u00a0\u00b1\u00a01559 n\u00a0=\u00a09 mice, Isolated 13099\u00a0\u00b1\u00a01052 n\u00a0=\u00a09 mice (mean\u00a0\u00b1\u00a0standard error). (E) Mean myelin sheath length formed by oligodendrocytes per mouse. Grouped 46.10 \u00b5m\u00a0\u00b1\u00a02.485 n=seven mice, Isolated 51.48 \u00b5m\u00a0\u00b1\u00a04.08 n=four mice (mean\u00a0\u00b1\u00a0standard error). (F) Frequency distribution of myelin sheath lengths.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Mean number of myelin sheath formed by oligodendrocytes per mouse. Wild type 52.57\u00a0\u00b1\u00a01.270 n\u00a0=\u00a04 mice, EDNRB CKO 42.39\u00a0\u00b1\u00a01.487 n\u00a0=\u00a04 mice, Isolated 50.32\u00a0\u00b1\u00a00.8755 n\u00a0=\u00a04 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test, p=0.0106. Kruskal-Wallis test, with Dunns post hoc. (B) Pooled data for number of myelin sheaths formed by layer II/III visual cortex oligodendrocytes. Grouped 52.57\u00a0\u00b1\u00a08.779 n\u00a0=\u00a028 cells from four mice, EDNRB CKO 42.39\u00a0\u00b1\u00a07.213 n\u00a0=\u00a028 cells from four mice, Isolated 50.32\u00a0\u00b1\u00a05.716 n\u00a0=\u00a028 cells from four mice (mean\u00a0\u00b1\u00a0standard deviation). Kruskal-Wallis test, with Dunns post hoc. (C) Quantification of the number of Edn1 expressing Pecam1 positive cells. Grouped 0.6449\u00a0\u00b1\u00a00.02814 n\u00a0=\u00a04 mice, Isolated 0.63535\u00a0\u00b1\u00a00.02120 n\u00a0=\u00a04 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test.\n\nHaving validated our social isolation protocol by demonstrating experience-dependent changes in myelination, we next analysed EDN expression in the mPFC. We performed in situ hybridization studies examining the expression of all three EDN ligands (Edn1-3) in controls and following isolation. We confirmed robust Edn1 and Edn3 mRNA expression in controls, localised to laminin-positive blood vessels, which co-expressed the endothelial/pericyte marker Pecam1 mRNA (Figure 2A) (Yanagisawa et al., 1988; Hammond et al., 2014). While previous studies have observed Edn1 expression also localised to astrocytes following demyelination (Hammond et al., 2014) and microglia (Zhang et al., 2014), here we observed no Edn1, Edn2 or Edn3 mRNA in S100\u03b2 positive astrocytes or IBA1 positive microglia (Figure 2\u2014figure supplement 1A\u2013B), indicating that endothelial cells and/or pericytes are the main source of Edn in the healthy mouse brain. Following social isolation, both the number of endothelial cells expressing Edn1 and Edn3 mRNA and the expression level of Edn1 mRNA within each cell was significantly reduced in the mPFC (Figure 2B\u2013D, Figure 2\u2014figure supplement 2F\u2013G). However, the vascular area and the number of cells expressing Pecam1 mRNA were unaffected (Figure 2\u2014figure supplement 2A\u2013E). In contrast to the mPFC, there was no effect of social isolation on Edn1 expression by Pecam1 cells in the visual cortex (Figure 1\u2014figure supplement 3C). We therefore conclude that the environmental deprivation associated with social isolation reduces vascular Edn production in the mouse mPFC.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig2-v2.jpg)\n\n**Figure 2.:** (A) Edn1 and Edn3 mRNA expression in laminin positive and CD31 positive blood vessels as revealed by RNAScope in situ hybridisation. (B) Representative images of Edn1 and Pecam1 mRNA expression in the mPFC. (C) Quantification of the number of Edn1 expressing Pecam1 positive endothelial cells. Grouped 0.8033\u00a0\u00b1\u00a00.04411 n\u00a0=\u00a04 mice, Isolated 0.5074\u00a0\u00b1\u00a00.05412 n\u00a0=\u00a05 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test, p=0.0159. (D) Quantification of the mean Edn1 mRNA molecules expressed by Pecam1 positive cells per mouse. Grouped 12.29\u00a0\u00b1\u00a03.312 n\u00a0=\u00a04 mice, Isolated 4.673\u00a0\u00b1\u00a00.4059 n\u00a0=\u00a05 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test, p=0.0159.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Expression of Edn1, Edn2 and Edn3 in S100\u03b2 positive astrocytes and IBA1 positive microglia. (A) RNAScope in situ hybridisation for Edn1, Edn2 and Edn3 mRNA in the mouse medial prefrontal cortex stained for S100\u03b2 positive astrocytes. Note that S100\u03b2 positive cells are negative for Edn1 and Edn3 mRNA while positive Edn signal can be seen in S100\u03b2 negative cells. (B) RNAScope in situ hybridisation for Edn1, Edn2 and Edn3 mRNA in the mouse medial prefrontal cortex stained for Iba1 positive microglia. Note that Iba1 positive cells are negative for Edn1\u00a0and Edn3\u00a0mRNA while positive Edn signal can be seen in Iba1 negative cells.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative images of medial prefrontal cortex vasculature staining for PECAM1. (B) Quantification of PECAM1 area in medial prefrontal cortex layer II/III: Grouped 2.468%\u00a0\u00b1\u00a00.3156 n\u00a0=\u00a06 mice, Isolated 2.086\u00a0\u00b1\u00a00.13 n\u00a0=\u00a06 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test. (C) Quantification of number of Pecam1 mRNA expressing cells per field of view. Grouped 9\u00a0\u00b1\u00a00.5888 n\u00a0=\u00a04 mice, Isolated 8.44\u00a0\u00b1\u00a01.162 n\u00a0=\u00a04 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test. (D) Quantification of the number of Pecam1 mRNA molecules. Grouped 13.47\u00a0\u00b1\u00a06.204 n\u00a0=\u00a077 cells from four mice, Isolated 10.89\u00a0\u00b1\u00a05.02 n\u00a0=\u00a092 cells from five mice (mean\u00a0\u00b1\u00a0standard deviation). Mann-Whitney test, p=0.002. (E) Quantification of the number of Pecam1 mRNA molecules per mouse. Grouped 13.53\u00a0\u00b1\u00a01.305 n\u00a0=\u00a04 mice, Isolated 10.48\u00a0\u00b1\u00a01.018 n\u00a0=\u00a05 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test. (F) Quantification of the number of Edn1 mRNA molecules in Pecam1\u00a0positive endothelial cells. Grouped 12.08\u00a0\u00b1\u00a09.759 n\u00a0=\u00a077 cells from four mice, Isolated 4.837\u00a0\u00b1\u00a04.406 n\u00a0=\u00a092 from five mice (mean\u00a0\u00b1\u00a0standard deviation). Mann-Whitney test, p<0.0001. (G) Quantification of the number of Edn3 expressing Pecam1 positive endothelial cells. Grouped 0.5463\u00a0\u00b1\u00a00.01586 n\u00a0=\u00a05 mice, Isolated 0.3674\u00a0\u00b1\u00a00.02163 n\u00a0=\u00a05 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test, p=0.0079.\n\n### EDNRB loss reduces the number of myelin sheaths formed by individual oligodendrocytes in vivo\n\nNext, we asked whether a reduction in EDN signalling could potentially contribute to the reduced levels of oligodendrocyte generation and myelination in the isolated mice. To do this, we defined the role of EDN signalling in myelination by performing genetic loss of function experiments to remove the relevant receptor in conditional knockout mice. We targeted the EDN receptor EDNRB due to the high levels of expression in forebrain oligodendrocytes and our own previous work identifying EDNRB as a regulator of myelination in vitro (Yuen et al., 2013; Horiuchi et al., 2017; Marques et al., 2018). We generated a conditional knock out (cKO) using a floxed Ednrb mouse line crossed with a line expressing cre recombinase driven by the Pdgfra promoter to delete Ednrb from oligodendrocytes and their precursor cells through development (Figure 3\u2014figure supplement 1A). Comparison of the number of oligodendrocyte lineage cells in the mPFC in the control (Pdgfra-cre;Ednrbwt/wt) mice shown in Figure 1 with EDNRB cKO (Pdgfra-cre;Ednrbflox/flox) mice revealed no significant difference in the oligodendrocyte progenitor cell (OPC) or oligodendrocyte generation (Figure 3A, Figure 3\u2014figure supplement 1B\u2013D). However, loss of EDNRB in the oligodendroglial lineage significantly reduced the number of myelin sheaths generated by individual oligodendrocytes (Figure 3B\u2013D). EDNRB cKO oligodendrocytes demonstrated a 22% reduction in myelin sheath number compared to wild type littermates, but the lengths of the remaining sheaths were unchanged (Figure 3\u2014figure supplement 1E\u2013F). A similar effect of EDNRB loss on myelin sheath number was also seen in the visual cortex (Figure 1\u2014figure supplement 3A\u2013B). These experiments show that oligodendroglial EDNRB regulates the number of myelin sheaths formed by individual oligodendrocytes and, strikingly, that this effect of deleting EDNRB was identical to the myelination deficits of individual oligodendrocytes within the mPFC following social isolation in wild-type animals.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig3-v2.jpg)\n\n**Figure 3.:** (A) Quantification of CNP positive cells in medial prefrontal cortex layers II/III: Wild type 7709\u00a0\u00b1\u00a0378.7 n\u00a0=\u00a05 mice, EDNRB CKO 7288\u00a0\u00b1\u00a01054 n\u00a0=\u00a04 mice (mean\u00a0\u00b1\u00a0standard error) and layer V: Wild type 18879\u00a0\u00b1\u00a01559 n\u00a0=\u00a09 mice, EDNRB CKO 21016\u00a0\u00b1\u00a02878 n\u00a0=\u00a03 mice (mean\u00a0\u00b1\u00a0standard error). Mann Whitney test, layer II/III p=0.9048, layer V p=0.3527. (B) Representative images of medial prefrontal cortex oligodendrocytes stained for CNPase. Scale bar\u00a0=\u00a020 \u03bcm. (C) Mean number of myelin sheath formed by oligodendrocytes per mouse. Wild type 47.66\u00a0\u00b1\u00a01.015 n\u00a0=\u00a07 mice, EDNRB CKO 37.39\u00a0\u00b1\u00a01.099 n\u00a0=\u00a04 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test, p=0.0106. (D) Pooled data for number of myelin sheaths formed by layer II/III medial prefrontal cortex oligodendrocytes. Wild type 47.80\u00a0\u00b1\u00a07.289 n\u00a0=\u00a049 cells from seven mice, EDNRB CKO 37.39\u00a0\u00b1\u00a07.208 n\u00a0=\u00a028 cells from four\u00a0mice (mean\u00a0\u00b1\u00a0standard deviation). Mann-Whitney test, p=<0.001. (E) Time spent within 2.5 cm of non-social container: Wild type 37.58 s\u00a0\u00b1\u00a08.683 n\u00a0=\u00a012, EDNRB CKO 41.06\u00a0\u00b1\u00a021.29 n\u00a0=\u00a014 and social container: Wild type 110.7 s\u00a0\u00b1\u00a021.71 n\u00a0=\u00a012, EDNRB CKO 88.39 s\u00a0\u00b1\u00a025.79 n\u00a0=\u00a014 (mean\u00a0\u00b1\u00a0standard deviation). Unpaired T-test p=0.0267.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative Images of Ednrb mRNA expressing Olig2 mRNA positive oligodendroglia. (B) Ratio of CC1 positive oligodendrocytes over total population of Olig2 positive oligodendroglia. Wild type 0.2086\u00a0\u00b1\u00a00.01087 n\u00a0=\u00a05 mice, EDNRB CKO 0.2003\u00a0\u00b1\u00a00.0248 n\u00a0=\u00a05 mice (mean\u00a0\u00b1\u00a0standard error). (C) Number of CC1 and Olig2 positive oligodendrocytes. Wild type 1626 \u00b1 170.6 n\u00a0=\u00a05 mice, EDNRB CKO 1419\u00a0\u00b1\u00a0220.5 n\u00a0=\u00a05 mice (mean\u00a0\u00b1\u00a0standard error). (D) Number Olig2 positive oligodendroglia. Wild type 7737\u00a0\u00b1\u00a0903.8 n\u00a0=\u00a05 mice, EDNRB CKO 7565\u00a0\u00b1\u00a01239 n\u00a0=\u00a05 mice (mean\u00a0\u00b1\u00a0standard error). (E) Mean myelin sheath length formed by oligodendrocytes per mouse. Wild type 46.10 \u00b5m\u00a0\u00b1\u00a02.485 n=seven mice, EDNRB CKO 49.64 \u00b5m\u00a0\u00b1\u00a04.688 n=four mice (mean\u00a0\u00b1\u00a0standard error). (F) Frequency distribution of myelin sheath lengths. (G) Distance travelled by mice during 5 min of exploration of the social interaction assay. Wild type 15.48 meters\u00a0\u00b1\u00a03.326 n\u00a0=\u00a012 mice, EDNRB CKO 17.62 meters\u00a0\u00b1\u00a03.677 n\u00a0=\u00a09 mice (mean\u00a0\u00b1\u00a0standard deviation). (H) Maximum speed travelled by mice during 5 min of exploration of the social interaction assay. Wild type 0.2433\u00a0\u00b1\u00a00.04117 n\u00a0=\u00a012 mice, EDNRB CKO 0.2748 meters\u00a0\u00b1\u00a00.05095 n\u00a0=\u00a014 mice (mean\u00a0\u00b1\u00a0standard deviation).\n\nBy contrast, the numbers of oligodendrocytes within the mPFC differs between the two experimental manipulations \u2013 reduced by social isolation (Figure 1\u2014figure supplement 2C\u2013D) but not affected by deleting oligodendroglial EDNRB. Given these similarities and difference in the cellular phenotypes of social isolation and EDNRB deletion, we therefore next asked to what extent the changes in behaviour following isolation were phenocopied in the EDNRB cKO mice. Surprisingly, despite the additional effects of social isolation on oligodendrocyte number, the cell type specific loss of EDNRB from the oligodendrocyte lineage was sufficient to cause a significant reduction in the amount of time that cKO mice spent with the novel mouse in the social interaction task, although, as might have been expected, the effect size was smaller than in socially isolated mice, with a 33% reduction following social isolation and 20% following EDNRB cKO as compared to wild type mice (Figure 3E, Figure 3\u2014figure supplement 1G\u2013H). We conclude that loss of EDNRB signalling in oligodendrocyte lineage cells phenocopies a specific component of the response of oligodendrocytes to social isolation and that this, in turn, contributes to the behavioural deficits that result from social isolation.\n\n### EDNRB signalling enhances myelin sheath number in 3D microfiber cultures\n\nGiven that cell-type specific loss of EDNRB results in oligodendrocytes making fewer myelin sheaths per cell, we wanted to ask whether activation of EDNRB signalling in oligodendrocytes might have the complementary effect and promote myelin sheath generation. To do this, we turned to a reductionist in vitro system in which myelination takes place in the absence of confounding influences from other cell types - a 3-dimensional microfiber culture system in which oligodendrocytes form myelin sheaths (Lee et al., 2012a; Bechler et al., 2015). In these cultures we tested both a peptide agonist (BQ3020) and a small molecule antagonist (BQ788) of the receptor. Rat oligodendrocyte precursors were seeded onto poly-l-lactic acid-coated microfibers and allowed to differentiate for 3 days before being treated with BQ3020 or BQ788. We saw a significant increase in the number of myelin sheaths produced by individual oligodendrocytes 11 days later in response to the EDNRB agonist (Figure 4A\u2013C). Similar results were obtained with wild type mouse oligodendrocytes (Pdgfra-cre;Ednrbwt/wt) while BQ3020 had no effect on EDNRB cKO (Pdgfra-cre;Ednrbflox/flox) oligodendrocytes (Figure 4F\u2013G), confirming the specificity of the agonist for EDNRB. In contrast to the agonist, treatment with the EDNRB antagonist had no effect on myelin sheath number in these cultures (Figure 4A\u2013C), as might be expected given the lack of EDN-expressing blood vessel cells, and neither agonist nor antagonist altered sheath length (Figure 4D). We conclude from these experiments that the BQ3020 agonist selectively activates EDNRB-mediated signalling pathways in oligodendrocytes that increase myelin sheath number in vitro.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative images of MBP positive oligodendrocytes in microfiber culture. Scale bar\u00a0=\u00a050 \u03bcm. (B) Mean number of myelin sheaths formed by rat oligodendrocytes on microfibers per independent culture preparation. Control 7.253\u00a0\u00b1\u00a00.4258 n\u00a0=\u00a08 independent cultures, BQ3020 11.21\u00a0\u00b1\u00a00.58635 n\u00a0=\u00a07 independent cultures, BQ788 6.026\u00a0\u00b1\u00a00.7046 (mean\u00a0\u00b1\u00a0standard error) n\u00a0=\u00a04 independent cultures. 1-way ANOVA with Tukey\u2019s post hoc test. (C) Pooled data for number of myelin sheaths formed by rat oligodendrocytes on microfibers. Control 7.194\u00a0\u00b1\u00a03.544 n\u00a0=\u00a0160 cells from eight independent cultures, BQ3020 11.25\u00a0\u00b1\u00a04.420 n\u00a0=\u00a0127 from seven independent cultures, BQ788 6.024\u00a0\u00b1\u00a03.059 n\u00a0=\u00a085 cells from four independent cultures (mean\u00a0\u00b1\u00a0standard deviation). Kruskal-Wallis test, with Dunns post hoc. (D) Frequency distribution of myelin sheath lengths formed on microfibers. (E) qPCR for EDNRB from mouse oligodendrocyte cultures. Wild type 1.292\u00a0\u00b1\u00a00.04933 n\u00a0=\u00a04 independent cultures, EDNRB CKO 0.5958\u00a0\u00b1\u00a00.1117 n\u00a0=\u00a04 independent cultures, BQ788 6.026\u00a0\u00b1\u00a00.7046 (mean\u00a0\u00b1\u00a0standard error). Unpaired T-test p=0.0013. (F) Mean number of myelin sheaths formed by mouse oligodendrocytes on microfibers per independent culture preparation. Wild type 6.18\u00a0\u00b1\u00a00.2082 n\u00a0=\u00a05 independent cultures, Wild type + BQ3020 9.732\u00a0\u00b1\u00a00.07548 n\u00a0=\u00a04 independent cultures, EDNRB CKO 5.380\u00a0\u00b1\u00a00.4181 n\u00a0=\u00a05 independent cultures, EDNRB CKO + BQ3020 5.989\u00a0\u00b1\u00a00.6125 n\u00a0=\u00a04 independent cultures (mean\u00a0\u00b1\u00a0standard error). 1-way ANOVA. (G) Pooled data for number of myelin sheaths formed by mouse oligodendrocytes on microfibers. Wild type 6.138\u00a0\u00b1\u00a01.499 n\u00a0=\u00a065 cells from five independent cultures, Wild type + BQ3020 9.705\u00a0\u00b1\u00a02.575 n\u00a0=\u00a044 from 4independent cultures, EDNRB CKO 5.345\u00a0\u00b1\u00a01.824 n\u00a0=\u00a065 cells from 5independent cultures, EDNRB CKO + BQ3020 5.955\u00a0\u00b1\u00a02.632 n\u00a0=\u00a044 cells from four independent cultures (mean\u00a0\u00b1\u00a0standard deviation). Kruskal-Wallis test, with Dunns post hoc.\n\n### EDNRB promotes myelin sheath formation through Protein Kinase C \u03b5\n\nThe observation that we can stimulate myelination by oligodendrocytes in an EDNRB-dependent manner in vitro enabled a biochemical approach to identify the downstream signalling mechanisms by which this was mediated. We therefore next used a forward-phase phosphorylated-protein antibody array of mouse oligodendroglial cultures treated with the EDNRB agonist as an initial screen to identify these downstream pathways. As shown in supplementary file 1, one of the largest changes in protein phosphorylation following EDNRB activation was an increase in the phosphorylation of serine-729 of PKC epsilon, an isozyme of the Protein Kinase C (PKC) family. We confirmed an instructive role of PKC\u03b5 in two ways. First, we examined myelination in oligodendrocyte microfiber cultures treated with FR 236924, a specific activator of PKC\u03b5, which promoted phosphorylation of PKC\u03b5 at serine-729 (Figure 5A) and significantly increased myelin sheath formation (Figure 5B\u2013C), similarly to BQ3020. Second, we used zebrafish, due to their amenability for rapid pharmacological treatment and assessment, to test the prediction that the effects on myelination caused by the loss of EDNRB signalling would be rescued by activating the downstream target PKC\u03b5 in vivo. We obtained a zebrafish line containing a mutation termed rose (rse) in one of the orthologues of Ednrb (ednrba). Analysis of individual oligodendrocytes enabled by sparse labelling of these cells in the fish larvae revealed the same phenotype as in the EDNRB cKO mice; the average number of myelin sheaths formed per oligodendrocyte was reduced by 31% in rse homozygous fish (EDNRB\u00a0Hom)\u00a0compared to wild type controls (Figure 5F\u2013G, Figure 5\u2014figure supplement 2A), while sheath length was unaffected (Figure 5\u2014figure supplement 2B\u2013C). As predicted, activation of PKC\u03b5 by FR\u00a0236924 treatment from 3 to 4 days post fertilisation, rescued myelin sheath number in rse homozygous fish (Figure 5D\u2013G). This result confirms a role for PKC\u03b5 downstream of EDNRB in the regulation of myelin sheath number in vivo.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig5-v2.jpg)\n\n**Figure 5.:** (A) Western blot images of rat oligodendrocytes treated with EDNRB agonist BQ3020 and PKC\u03b5 agonist FR 236924 for 15 min. Antibodies used: Phosphorylated PKC\u03b5 S729 and loading control GAPDH. (B) Mean number of myelin sheaths formed by rat oligodendrocytes on microfibers per experiment. Control 5.959\u00a0\u00b1\u00a00.4708 n\u00a0=\u00a04, FR 236924 9.542\u00a0\u00b1\u00a00.3614 n\u00a0=\u00a03 (mean\u00a0\u00b1\u00a0standard error). Unpaired T-test p=0.0024. (C) Pooled data for number of myelin sheaths formed by rat oligodendrocytes on microfibers. Control 5.952\u00a0\u00b1\u00a02.525 n\u00a0=\u00a062 cells from four experiments, FR 236924 9.542\u00a0\u00b1\u00a04.016 n\u00a0=\u00a048 from three experiments (mean\u00a0\u00b1\u00a0standard deviation). Mann-Whitney test, p=<0.001. (D) Schematic for zebrafish larvae treatment with FR 236924. (E) Representative images of 4 dpf zebrafish larvae treated with DMSO control or FR 236924. Scale bar\u00a0=\u00a0500 \u03bcm. (F) Representative images of mbp:EGFP-CAAX oligodendrocytes in four dpf zebrafish larvae. Scale bar\u00a0=\u00a010 \u03bcm. (G) Pooled data for number of myelin sheaths formed by zebrafish oligodendrocytes. EDNRB Het 12.35\u00a0\u00b1\u00a03.746 n\u00a0=\u00a020 cells, EDNRB Hom\u00a0(rse) 9.073\u00a0\u00b1\u00a02.229 n\u00a0=\u00a041 from four experiments, EDNRB Het + FR 236924 13.5\u00a0\u00b1\u00a03.098 n\u00a0=\u00a022 cells from five experiments, EDNRB Hom + FR 236924 14\u00a0\u00b1\u00a04.807 n\u00a0=\u00a019 cells (mean\u00a0\u00b1\u00a0standard deviation). 1-way ANOVA.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Representative images of MBP positive oligodendrocytes in the zebrafish spinal cord. (B) Oligodendrocyte cell numbers in the dorsal tract: EDNRB Het 20.23\u00a0\u00b1\u00a05.639, EDNRB Hom 21.21\u00a0\u00b1\u00a07.138, ventral tract: EDNRB Het 39.09\u00a0\u00b1\u00a07.157, EDNRB Hom 45.47\u00a0\u00b1\u00a07.09 and total: EDNRB Het 59.32\u00a0\u00b1\u00a09.766, EDNRB Hom 66.79\u00a0\u00b1\u00a011.73. EDNRB Het n\u00a0=\u00a022, EDNRB Hom n\u00a0=\u00a014. T-test, Ventral p=0.0119, Total p=0.0463.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Pooled data for number of myelin sheaths formed by zebrafish oligodendrocytes. Wild Type 11.9\u00a0\u00b1\u00a03.726 n\u00a0=\u00a020 cells, EDNRB Het 11.44\u00a0\u00b1\u00a01.999 n\u00a0=\u00a016 cells, EDNRB Hom 8.19\u00a0\u00b1\u00a02.994 n\u00a0=\u00a021 cells from four experiments, (mean\u00a0\u00b1\u00a0standard deviation). 1-way ANOVA. (B) Pooled data for mean myelin sheath length formed by zebrafish oligodendrocytes. Wild Type 28.45\u00a0\u00b1\u00a06.8 n\u00a0=\u00a020 cells, EDNRB Het 33.04\u00a0\u00b1\u00a08.629 n\u00a0=\u00a016 cells, EDNRB Hom 32.65\u00a0\u00b1\u00a07.098 n\u00a0=\u00a021 from four experiments, (mean\u00a0\u00b1\u00a0standard deviation). 1-way ANOVA. (C) Frequency distribution of myelin sheath length.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Mean myelin sheath lengths formed by oligodendrocytes in microfiber cultures. Control 16.87 \u00b5m\u00a0\u00b1\u00a00.7932, FR 16.42 \u00b5m\u00a0\u00b1\u00a01.176 n\u00a0=\u00a03\u20134 (mean\u00a0\u00b1\u00a0standard error). (B) Pooled data for number myelin sheath length formed by zebrafish oligodendrocytes. EDNRB Het 29.62\u00a0\u00b1\u00a08.685 n\u00a0=\u00a020 cells, EDNRB Hom 28.27\u00a0\u00b1\u00a07.242 n\u00a0=\u00a041 from, EDNRB Het + FR 236924 25.86\u00a0\u00b1\u00a010.25n\u00a0=\u00a021 cells, EDNRB Hom + FR 236924 26.48\u00a0\u00b1\u00a08.951 n\u00a0=\u00a019 cells (mean\u00a0\u00b1\u00a0standard deviation).\n\n### Increasing EDNRB signalling rescues the reduction in myelin sheath number resulting from social isolation\n\nOur results have shown that social isolation decreases the levels of EDN expression in the CNS vasculature, and that EDNRB signalling in oligodendrocytes influences myelin sheath number. It follows that the decreased EDN signalling is likely contributing to the reduction in myelin sheath numbers seen in the medial\u00a0prefrontal cortex following social isolation. If so, then we would predict that activation of EDNRB in vivo in the prefrontal cortex would rescue the myelin sheath phenotype associated with social isolation. To test this we used intranasal administration, a technique shown to enable the delivery of peptides into the CNS (Scafidi et al., 2014; Crowe et al., 2018), to introduce the EDNRB agonist BQ3020. Socially isolated mice were given 1 \u00b5g BQ3020 twice daily intranasal administration or saline for a period of 10 days from postnatal day 21 to 30 (during the period of isolation), and perfused at postnatal day 35 for analysis of mPFC myelination as above. Importantly, we confirmed that the daily handling involved in this protocol did not negate the effects of social isolation by showing that the sheath numbers in the control isolated mice administered saline had the same reduction in sheath numbers as completely isolated animals (Figure 6B and D\u2013E). Strikingly, and in keeping with our prediction, 10 days of BQ3020 treatment to socially-isolated animals rescued the myelination phenotype normally seen in these mice, with a 20% increase in the number of myelin sheaths formed by mPFC oligodendrocytes in treated animals, meaning that the sheath numbers were now not significantly different to wild-type animals housed in groups (Figure 6D\u2013E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig6-v2.jpg)\n\n**Figure 6.:** (A) Timeline for the intranasal experiment. At postnatal day 21 male mice were housed on their own in isolation. Mice were given two daily administrations of saline or EDNRB agonist BQ3020 from P21-P30. Mice were analysed at P35. (B) Time spent within 2.5 cm of non-social container: Saline 57.42 s\u00a0\u00b1\u00a024.44 n\u00a0=\u00a012, BQ3020 41.44\u00a0\u00b1\u00a017.43 n\u00a0=\u00a017 and social container: Saline 75.82 s\u00a0\u00b1\u00a013.26 n\u00a0=\u00a012, BQ3020 84.96 s\u00a0\u00b1\u00a037.20 n\u00a0=\u00a017 (mean\u00a0\u00b1\u00a0standard deviation). T-test. (C) Quantification of CNP positive cells in medial prefrontal cortex layers II/III: Saline 7278\u00a0\u00b1\u00a01165 n\u00a0=\u00a03 mice, BQ3020 9142\u00a0\u00b1\u00a0713.3 n\u00a0=\u00a03 mice (mean\u00a0\u00b1\u00a0standard error) and layer V: Saline 17114\u00a0\u00b1\u00a02750 n\u00a0=\u00a05 mice, BQ3020 16154\u00a0\u00b1\u00a01980 n\u00a0=\u00a04 mice (mean\u00a0\u00b1\u00a0standard error). (D) Mean number of myelin sheath formed by oligodendrocytes per mouse. Saline 39.54\u00a0\u00b10.4301 n\u00a0=\u00a04 mice, BQ3020 47.29\u00a0\u00b1\u00a01.687 n\u00a0=\u00a04 mice (mean\u00a0\u00b1\u00a0standard error). Mann-Whitney test, p=0.0286. (E) Pooled data for number of myelin sheaths formed by layer II/III medial prefrontal cortex oligodendrocytes. Saline 39.54\u00a0\u00b16.973 n\u00a0=\u00a028 cells from four mice, BQ3020 47.29\u00a0\u00b1\u00a010.18 n\u00a0=\u00a028 cells from seven mice (mean\u00a0\u00b1\u00a0standard deviation). Mann-Whitney test, p=0.0019.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Distance travelled by mice during 5 minutes of exploration of the social interaction assay. Saline 17.48 meters\u00a0\u00b1\u00a02.697 n\u00a0=\u00a012 mice, BQ3020 17.13 meters\u00a0\u00b1\u00a035.209 n\u00a0=\u00a017 mice (mean\u00a0\u00b1\u00a0standard deviation). (B) Maximum speed travelled by mice during 5 min of exploration of the social interaction assay. Saline 0.2769\u00a0\u00b1\u00a00.03276 n\u00a0=\u00a012 mice, BQ3020 0.2773 meters\u00a0\u00b1\u00a00.05085 n\u00a0=\u00a017 mice (mean\u00a0\u00b1\u00a0standard deviation). (C) Mean myelin sheath length formed by oligodendrocytes per mouse. Saline 59.38 \u00b5m\u00a0\u00b1\u00a04.831 n\u00a0=\u00a028 cells from four mice, BQ3020 53.98 \u00b5m\u00a0\u00b1\u00a05.748 n\u00a0=\u00a028 cells from four mice (mean\u00a0\u00b1\u00a0standard deviation). (D) Frequency distribution of myelin sheath lengths.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49493/elife-49493-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Summary of results from paper. In a social environment, EDN from the vasculature increases myelin sheath number in the medial prefrontal cortex, influencing sociability. In social isolation vascular EDN production is reduced, leading to a decreased number of myelin sheaths formed by oligodendrocytes and reduced sociability. Oligodendroglial knock out of EDNRB reduces the number of myelin sheaths formed by oligodendrocytes and reduced sociability. (B) Proposed hypothesis for how EDN signalling links neuronal activity to increased myelination and thus support of active axons. 1. Increased local neuronal activity signals to the vasculature to increase blood flow to the active area 2. The increased blood flow stimulates EDN production from endothelial cells 3. Increased EDN levels leads to the formation of more myelin sheaths by oligodendrocytes. Figures created with Biorender.\n\n## Discussion\n\nHere we identify a novel signalling pathway in which the oligodendroglial G-protein coupled receptor EDNRB regulates myelin sheath number and the response of oligodendrocytes to social experience (Figure 6\u2014figure supplement 2A). We studied mice following a previously established experimental manipulation in which early postnatal social isolation leads to a reduction in the number of myelin sheaths formed by individual oligodendrocytes in the medial prefrontal cortex (mPFC) of mice. We showed that isolated animals have reduced EDN mRNA expression in the blood vessels of the mPFC. We found that perturbing endothelin signalling in oligodendroglia by a conditional knockout of the EDN receptor EDNRB phenocopies the reduced number of sheaths seen in the isolated animals. In turn intranasal administration of an EDNRB agonist during the period of isolation rescues the effects of social deprivation on myelination. Together with additional experiments in cell culture and zebrafish, which identified the protein kinase C (PKC) epsilon isoform as being activated downstream of EDNRB to regulate myelination by oligodendrocytes, our loss- and gain-of-function experiments demonstrate a role for endothelin signalling in regulating the number of myelin sheaths formed by individual oligodendrocytes.\n\nOur work provides evidence for the importance of the interaction between the vasculature and oligodendroglia during myelination per se, extending observations indicating that the vasculature can influence earlier stages of the oligodendrocyte lineage. For example, during development, oligodendrocyte progenitor cells use blood vessels as a scaffold to migrate along (Tsai et al., 2016). Once in place, local oxygen levels influence their differentiation into oligodendrocytes, stalling the process when levels are low. Only when an adequate oxygen supply is established are the cells able to differentiate and begin the process of myelination (Yuen et al., 2014). Here, we demonstrate a third role \u2013 the regulation of myelination itself through the control by EDN of myelin sheath number by individual differentiated oligodendrocytes. Such a role is potentially important, as it provides an indirect mechanism by which the regulation of myelination in the CNS might be linked to levels of neuronal activity. A key function of myelin is the provision of metabolic substrates to the underlying axon via specific transporters within the inner layer of the sheath (F\u00fcnfschilling et al., 2012; Lee et al., 2012b; Meyer et al., 2018). These substrates drive ATP production within the axon, so providing a source of energy at some distance from the cell body as required to sustain axonal activity. Prior work has implicated that NMDA receptor activation in oligodendrocytes following glutamate release by active axons in relaying the need for metabolic support of axons to oligodendrocytes (Saab et al., 2016). We now propose that an increase in EDN production by endothelial cells, as predicted to occur in the presence of increased blood flow or hypoxia, will increase myelin sheath generation by local oligodendrocytes and so provide a further means of linking energy supply and demand. Changes in blood flow and hypoxaemia are associated with increased cortical activity (forming the basis of the BOLD signal detected by fMRI). Therefore, an EDN-mediated pathway driving an increase in myelination is a plausible mechanism for ensuring that the metabolic demands of active axons are met. Further work examining the effect of EDNRB loss in oligodendrocytes on axonal function and viability in ageing are required to test this further.\n\nA second important implication of our study relates to the emerging concept of adaptive myelination. This concept argues that myelination in the CNS is plastic, and regulated by differing codes of activity, each eliciting different effects on myelination that in turn alter circuit function. This hypothesis therefore proposes that adaptive myelination represents a form of neural plasticity that could, like synaptic plasticity, enable the brain to modify circuit function in response to experience-in other words, to adapt. However, this hypothesis remains to be fully explored, and a key requirement for these experiments is the identification of the mechanisms that link changes in activity patterns following experience to the changes in oligodendrocyte number and/or sheath formation that could alter circuit function. Prior work has identified a direct role for axon-derived signals in regulating myelination. We now identify a mechanism by which the effects of activity could lead to an increased number of myelin sheaths through indirect signalling via the vasculature. Our findings showing that social isolation reduces endothelial EDN expression, that an oligodendroglial-specific deletion of the relevant EDNRB receptor phenocopies the myelination defect caused by social isolation, and that an EDNRB agonist rescues the myelination defect of individual oligodendrocytes in the mPFC together argue strongly for a role of vascular EDN synthesis in mediating such indirect effects. Our results do not however imply that changes in EDN signalling are solely responsible for the effects of social isolation on myelination. It is clear, for example, that social isolation can affect oligodendrocyte number, a feature that does not appear to be controlled by EDN in the healthy nervous system. Other pathways could contribute to this aspect of adaptive myelination. Such potential pathways are BDNF signalling via oligodendroglia TrkB (Geraghty et al., 2019; Gibson et al., 2019) and glutaminergic signalling via AMPAR-mediated effects on newly differentiating oligodendrocytes (Kougioumtzidou et al., 2017). Further work manipulating EDN expression specifically in endothelial cells during social isolation is required to explore this.\n\nBased on recent live imaging studies showing that myelin sheath numbers in cortical oligodendrocytes remain largely stable throughout life (Hill et al., 2018; Hughes et al., 2018), we propose that any endothelin-mediated regulation of sheath number is likely to occur around the birth of each newly formed oligodendrocyte. The continuous generation of oligodendrocytes in the adult CNS, itself increased by activity-related signals ensures that dynamic regulation of endothelin signalling from the vasculature has the capacity to play a role in adaptive myelination throughout life.\n\nHow though might new myelin sheaths formed by individual oligodendrocytes in response to EDN signalling enhance circuit function the cortex? By linking metabolic demand to metabolic support for axons in regions of high activity (as discussed above), EDN signalling in cortical oligodendrocytes could play a central role in enhancing the ability of the axon to sustain higher levels of energy-requiring conduction, so enabling changes in circuit function. An intriguing possibility suggested by a comparison of gene expression in cortical oligodendroglia and spinal cord oligodendroglia showing higher levels of expression of EDNRB in the former (Horiuchi et al., 2017; Marques et al., 2018), is that these cortical oligodendrocytes are specialised for this role linking metabolic demand to support. By contrast, oligodendrocytes in white matter might be more specialised for rapid axonal conduction. Further work examining oligodendrocyte heterogeneity between grey matter and white matter regions of the CNS will be required to test this. Another way in which additional myelin sheaths might impact circuit function is the addition of sheaths to axons in the cortex that are discontinuously and sparsely myelinated (Tomassy et al., 2014; Hill et al., 2018; Hughes et al., 2018). The resulting effects on conduction velocity resulting from short stretches of axons now supporting rapid saltatory conduction could, as has been suggested elsewhere, enable activity-dependent myelination to have a role in signal synchrony (Seidl et al., 2010; Seidl et al., 2014; Freeman et al., 2015; Baraban et al., 2016; Timmler and Simons, 2019). However, such a model requires a very precise link between axonal selection and myelination, and the precision required may be difficult to achieve with a diffusible vascular-derived signal.\n\nOur findings on the role of EDN in myelination complement other investigations demonstrating a role of astrocytic EDN hindering oligodendrocyte differentiation during remyelination (Hammond et al., 2014; Hammond et al., 2015). In agreement with this observation, our global EDNRB mutant zebrafish were found to have an increased number of oligodendrocytes (Figure 5\u2014figure supplement 1). Together previous studies and ours suggest that EDN signalling plays two roles, indirectly inhibiting oligodendrocyte formation, but, promoting myelin sheath formation once differentiation has occurred. At apparent odds with this conclusion, conditional loss of EDNRB from oligodendrocyte progenitors had no effect on remyelination; having deleted OPC EDNRB from adult mice 3 days prior to demyelination of the external capsule, Hammond and colleagues observed that the percentage of remyelinated axons, assessed by electron microscopy, was unchanged 14 days after injury (Hammond et al., 2015). However, this divergence may result from the different microenvironments of developmental myelination and remyelination or from intrinsic differences between cortical and white matter oligodendrocytes, as discussed above, and further studies examining grey matter remyelination are required to resolve the point.\n\nThe conclusion that EDN has contrasting effects on oligodendrocyte formation and on myelination highlights that these two steps in oligodendrocyte development are regulated independently. This in turn has important implications for the development of regenerative therapies for the progressive neurodegenerative phase of the demyelinating disease Multiple Sclerosis (MS). Current strategies seeking to re-purpose FDA approved drugs to enhance remyelination, and so restore the neuroprotective effect of the myelin sheath to the axon, have focused largely on the differentiation step from precursor cell to oligodendrocyte, with one screen using micropillar arrays to examine the later stage of wrapping (Mei et al., 2014). None however specifically examine the key final step-formation of the sheath itself. Neuropathological studies of MS lesions revealing pre-myelinating oligodendrocytes unable to complete remyelination suggest for that failure of this final step may contribute to pathology. These findings emphasise that the already differentiated oligodendrocyte represents a possible target for remyelination strategies in MS, a conclusion reinforced by recent papers using Carbon14 dating, electron microscopy or snRNA seq of post mortem human MS material providing evidence that pre-existing adult oligodendrocytes contribute to repair (Duncan et al., 2018; J\u00e4kel et al., 2019; Yeung et al., 2019). Strategies to identify targets within pathways such as that activated by EDNRB that promote sheath formation directly will therefore be an important addition to the current approaches being taken in drug discovery for progressive multiple sclerosis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Ednrb flox/flox</td>\n      <td>The university of Edinburgh, Bagnall et al., 2006; Ge et al., 2006</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Pdgfra-cre</td>\n      <td>Jackson labs</td>\n      <td>#013148</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>Rse Tlf802</td>\n      <td>Frohnh\u00f6fer et al., 2013; Krauss et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>Tg(mbp:EGFP)</td>\n      <td>The University of Edinburgh, Almeida et al., 2011</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti CNPase</td>\n      <td>Atlas</td>\n      <td>AMAb91072</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat monoclonal anti MBP</td>\n      <td>Serotec</td>\n      <td>MCA409S</td>\n      <td>1:250</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat monoclonal anti PECAM1</td>\n      <td>BD Pharmingen</td>\n      <td>550274</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti S100\u03b2</td>\n      <td>Thermo</td>\n      <td>MA5-12969</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti IBA1</td>\n      <td>Abcam</td>\n      <td>ab178846</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti Laminin</td>\n      <td>Abcam</td>\n      <td>ab11575</td>\n      <td>1:300</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti OLIG2</td>\n      <td>Millipore</td>\n      <td>ab9610</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti CC1</td>\n      <td>Abcam</td>\n      <td>ab16794</td>\n      <td>1:300</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti GAPDH</td>\n      <td>Millipore</td>\n      <td>MAB374</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti Beta actin</td>\n      <td>Abcam</td>\n      <td>ab 8226</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti, Phospho-PKC\u03b5 S729</td>\n      <td>Abcam</td>\n      <td>88241</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Phospho-explorer antibody array</td>\n      <td>Full Moon Biosystems,</td>\n      <td>Phospho-explorer array (PEX100)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Edn1</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>435221</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Edn2</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>418221</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Edn3</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>Custom made</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Pecam1</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>316721-C3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Olig2</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>447091</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Ednrb</td>\n      <td>Advanced Cell Diagnostics</td>\n      <td>473801</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>BQ3020</td>\n      <td>Tocris</td>\n      <td>1189</td>\n      <td>100 ng/mL</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BQ788</td>\n      <td>Tocris</td>\n      <td>1500</td>\n      <td>100 ng/mL</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FR236924</td>\n      <td>Tocris</td>\n      <td>0373</td>\n      <td>25 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Microfibers</td>\n      <td>The Electrospinning company</td>\n      <td></td>\n      <td>1\u20132 mcro diameter poly-l-lactic acid</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Any-maze software</td>\n      <td>http://www.anymaze.co.uk/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>https://imagej.nih.gov/ij/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Graphpad Prism</td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nAnimal husbandry and experiments were performed under UK Home Office project licenses issued under the Animals (Scientific Procedures) Act. Ednrbflox/flox (Bagnall et al., 2006; Ge et al., 2006) were generously provided by Professor David Webb and Professor Yuri Kotelevtsev (Edinburgh University) where exons 3 and 4 are flanked with Cre-LoxP sites. Homozygous mice for the EDNRB floxed allele were crossed to Pdgfra-cre mice obtained from Jackson laboratories (013148). Offspring were then backcrossed to create mice Heterozygous for the floxed allele and carriers for the Cre transgene. Experimental mice were obtained by crossing animals heterozygous for the floxed Ednrb allele and carriers of the Cre transgene generating both Ednrb wild type control and Ednrb floxed homozygous mice in the same litters. Mice were genotyped by transnetyx and confirmed as a CKO by performing RNAScope for Ednrb (described below) Mice of each genotype were used at the ages and in the numbers stated in the Results. For the social isolation experiments, postnatal day 21 male mice were either group housed in a regular social environment, containing 3\u20135 mice, or in isolation, for 2 weeks.\n\n### Sociability test\n\nAt postnatal day 35 mice were allowed to freely explore an open field arena for 5 min containing two identical wire mesh containers. One container housed an unrelated male wild type mouse of a similar age, while the other remained empty. Mice were allowed to explore the arena for 5 min and the duration of time during which the mouse of interest came within 2.5 cm of either container was automatically recorded using Any-maze software. Speed and distance travelled were also recorded by the software. In all tests, mice were assessed with the experimenter blind to genotype.\n\n### Intranasal administration\n\nMice were given brief isoflurane inhalation anaesthesia before being held upside down. Using a pipette, 5 \u03bcL of either saline or 1 \u00b5g BQ3020 (Tocris - 1189) in saline was placed on either nostril. This was repeated twice daily (9am and 5pm) from postnatal day 21 to postnatal day 31.\n\n### Antibodies\n\nCNPase Atlas AMAb91072 (1:2000), MBP Serotec MCA409S (1:250), PECAM1 BD Pharmingen 550274 (1:100), S100\u00df Thermo MA5-12969 (1:100), IBA1 Abcam ab178846 (1:500), Laminin Abcam ab11575 (1:300), Olig2 Millipore AB9610 (1:100), CC1 Abcam ab16794 (1:300).\n\n### Immunofluorescence staining - Cryosections\n\nAnimals were intracardially perfused with 4% PFA (wt/vol; Sigma) in PBS, after which brains were post-fixed overnight and then cryoprotected in sucrose prior to embedding in OCT and storage at \u221280\u00b0C. Brains were cryosectioned coronally at a thickness of 16 \u03bcm using a Thermo cryostat and mounted onto Superfrost Plus slides. Sections were blocked for 1 hr at room temperature in 10% goat serum, 0.1% triton in PBS. Primary antibodies were incubated in block solution at 4\u00b0C overnight. Sections were washed with PBS for 3 \u00d7 15 min at room temperature and stained using species-specific Alexa fluorophore-conjugated antibodies in block solution for 1 hr at room temperature. Sections were washed in PBS for a further 3 \u00d7 15 min and stained with Hoechst for 5 min and mounted onto slides with fluoromount G. Mouse medial prefrontal cortex was defined as the infralimbic and prelimbic areas between bregma 1.7 mm and 2 mm and visual cortex bregma \u22123.5 mm and \u22124.5 mm.\n\n### Immunofluorescence staining - Vibratome Sections for Oligodendrocyte morphological analysis\n\nAnimals were intracardially perfused with 4% PFA (wt/vol; Sigma) in PBS, after which brains were post-fixed overnight and embedded in 2% low melting point agarose. Using a Leica vibratome, 100 \u00b5M coronal free-floating sections were cut. Sections underwent antigen retrieval in 0.05% Tween20, 10 mM tri-sodium citrate (pH 6.0) at 95\u00b0C for 20 min. Sections were then blocked for 3 hr at room temperature in 10% goat serum, 0.25% triton in PBS. Primary antibodies were incubated in block solution at 4\u00b0C on a rocker for 24 hr. Sections were washed with PBS for 3 hr at room temperature and stained using species-specific Alexa fluorophore-conjugated antibodies in block solution for 4 hr at room temperature. Sections were washed in PBS for a further 3 hr and stained with Hoechst for 20 min and mounted onto slides with fluoromount G. Sections were analysed with the experimenter blind to experimental condition and/or genotype as below.\n\nTo analyse oligodendrocyte number 10 fields of 40x magnification were taken from 2 100 \u00b5m sections per mouse of cortical layer II/III or layer V using a SP8 confocal microscope. CNP positive, Olig2 and CC1 cells were counted.\n\nTo analyse oligodendrocyte morphology, random areas of the medial prefrontal cortex layer II/III were imaged at 63x magnification using an SP8 confocal microscope. seven individual CNP positive oligodendrocytes per mouse, each with all myelin sheaths present within the 100 \u00b5m section as assessed by following each process from the cell body and ensuring none exited the section, were imaged using a z step size of 0.5 \u00b5m. Analysis was performed using an ImageJ plugin \u2013 simple neurite tracer (Longair et al., 2011).\n\n### RNAScope In situ hybridisation\n\nCryosections (cut as above) were processed as recommended by Advanced Cell Diagnostics. Briefly sections were dried overnight at 60\u00b0C, after which they were incubated at 40\u00b0C with pre-treatment 4 for 30 min before incubation with RNAScope probes for 2 hr at 40\u00b0C. RNAScope probes used were; Edn1 (435221), Edn2 (418221), Edn3 (custom made), Pecam1 (316721-C3), Oolig2 (447091-C2), Ednrb (473801). Following the RNAScope protocol, sections were stained as above.\n\nFor analysis, 5 random 63x areas of medial prefrontal cortex layer II/III were imaged using a SP8 confocal microscope. Cells positive for Pecam1 and Edn1/3 were counted. Sections were analysed with the experimenter blind to experimental condition and/or genotype.\n\n### Rat oligodendrocyte precursor cell culture\n\nRat OPCs were prepared from mixed glial cultures as described previously (McCarthy, 1980; Bechler et al., 2015). Briefly, cortices of postnatal day 0\u20132 Sprague Dawley rats were dissected out. The tissue was digested with 1.2 Units/mL papain, 0.1 mg/mL L-cysteine and 0.40 mg/mL DNase for 1 hr at 37\u00b0C. Tissue was cultured in DMEM, 10% FCS, 1% P/S in T75 flasks, pre-coated with 5 \u00b5g/mL poly-D-lysine, at a density of 1.5 brains per flask. Cells were grown at 37\u00b0C in 7.5% CO2 with medium changes every 2\u20133 days. After 10\u201312 days cells were mechanically separated on an orbital shaker at 250 rpm, 37\u00b0C. Loosely attached microglia were removed by shaking for 1 hr. Further shaking for 16\u201318 hr detached OPCs. Cell yield was counted using a haemocytometer and plated in assay-dependent conditions as below.\n\n### Microfiber cultures\n\nCustom parallel-aligned microfibers were purchased from the Electrospinning Company. 1\u20132 micron diameter poly-l-lactic acid microfibers were synthesised and suspended over plastic scaffolds fitting into 12-well tissue culture plates. Microfibers were washed with 70% EtOH for 10 min followed by coating with PDL for 1 hr at 37\u00b0C in a 12 well tissue culture plate. Microfibers were washed twice with sterile water and left in preheated myelination media. 35,000 rat OPCs and 50,000 mouse OPCs in myelination media (50:50 DMEM:Neurobasal Media, B27 (Invitrogen), 5 \u00b5g/mL N-acetyl cysteine, and 10 ng/mL D-biotin, ITS, and modified Sato (100 \u00b5g/mL BSA fraction V, 60 ng/ml Progesterone, 16 \u00b5g/ml Putrecsine, 400 ng/mL Tri-iodothyroxine, 400 ng/mL L-Thyroxine; reagents from Sigma-Aldrich)) were triturated to break up cell clumps and added dropwise to the microfibers. Cells were left to recover for 3 days before media changing and addition of treatment, followed by subsequent media changes every 3 days.\n\nAfter 14 days of culture cells were fixed in 4% PFA for 15 min. To visualise myelination, cells were permeabilised with 0.1% Triton-X for 10 min and stained with for MBP (1:250) overnight at 4\u00b0C followed by incubation with Alexa 488-conjugated goat ant-rat (1:1000) for 1 hr at room temperature and Hoescht for 5 min to visualise nuclei.\n\nTo analyse myelination 15\u201330 individual myelinating oligodendrocytes from one coverslip were imaged (with the experimenter blind to condition) using an SP8 confocal at 40x magnification with a z-step of 0.35 \u00b5m. The same settings (laser power, gain, offset etc.) were used between coverslips. ImageJ was used to analyse myelination, again with the experimenter blind to condition. A sheath was defined as a continuous MBP positive wrap fully surrounding a microfiber as assessed using the 0.35 \u00b5m z-series. Concentric tubes were traced and the length measured. In addition the number of concentric sheaths made per individual oligodendrocyte was recorded. Sheath lengths were grouped into 5 \u00b5m bins and the frequency from one experiment calculated. Mean frequencies from at least three experiments were generated and plotted as a frequency distribution.\n\nDrugs used: BQ3020 (100 ng/mL, Tocris - 1189) in 0.03M sodium bicarbonate, BQ788 (100 ng/mL, Tocris - 1500) in DMSO, FR236924 (25 \u00b5M, Tocris - 0373) in DMSO.\n\n### Mouse oligodendrocyte precursor cell culture\n\nMouse OPCs were isolated from P6-P9 pups as described (Watkins et al., 2008). Ear clips were taken for subsequent genotyping. Briefly, cerebral cortices were dissected, diced and dissociated into single-cell suspensions gently using MACS Neural Tissue Dissociation Kit P (130-092-628). Cells were resuspended in 0.2% BSA, Insulin, PBS and transferred to treated tissue culture dishes coated with BSL1 (L-1100, Vector Labs) for 15 min twice. Cell solutions were then transferred to dishes coated with anti-PDGFR\u03b1 (CD140a) for 45 min. Solutions were aspirated and attached cells washed twice with media and removed with a cell scraper. All collected cells were added to vented T75 flasks and grown at 37\u00b0C 7.5 CO2. Cells were grown in myelination media containing PDGF and NT3 and changed every 2 days and supplemented daily with PDGF. After 7\u20139 days confluent flasks were washed with PBS and then detached using TrypLE for 10 min at 37\u00b0C. Solutions were centrifuged at 1000 rpm for 5 min, resuspended and counted using a haemocytometer.\n\n### qPCR\n\n75,000 mouse OPCs were cultured on pre-coated PDL six well plates for 2 days. RNA was extracted from cells using a Qiagen RNeasy mini kit. RNA was then converted to cDNA libraries using a SuperScript First-Strand Synthesis System. Sybr green qPCR was performed using primers either bought from Qiagen or designed at 0.5 \u00b5M. qPCR was performed on a LightCycler 480 II. CT values from designed primers were normalised against GAPDH purchased from Qiagen.\n\n### Full moon Phospho-Explorer antibody array\n\nProcessing of the phospho-explorer array (PEX100) was performed following the Full Moon Biosystems guidelines. OPCs were immunopanned from wildtype mice and expanded in the presence of PDGF. Upon confluency, OPCs were differentiated through supplementation of CNTF, NT3 and T3. After 2 days of differentiation cells were starved for 4\u20135 hr in media devoid of supplementation to remove stimulation from the media and then treated for 15 min with either vehicle or BQ3020 (100 ng/mL). Cells were lysed in RIPA buffer containing protease and phosphatase inhibitors (Calbiochem \u2013 539134 and 524621) and processed for the array as recommended by Full Moon Biosystems.\n\nBriefly, proteins present in the lysates were biotinylated through incubation with biotin. Chips were blocked using milk and biotinylated protein lysates were washed over. Binding of the individual proteins to each antibody spot on the array was assessed through fluorescent labelling with a dye-labelled streptavidin read using an Innopsys 710-IR scanner and analysed using Mapix software.\n\nFor each antibody the background intensity was subtracted, dye signal normalised and an average calculated of the duplicate spots. The ratio was calculated of binding to the phosphorylated amino acids vs the binding to the non-modified regions of the protein for each molecule, calculating this for both control and BQ3020 treated cells. The fold change in phosphorylation for each targeted amino acid was generated by comparing BQ3020 to vehicle. For selection a fold change of greater than two and less than 0.5 was set as the cut-off.\n\nAntibody array was performed once \u2013 one cell lysate per condition.\n\n### Western blot\n\nFor western blot analysis, 9 cm treated plastic tissue culture dishes were coated with PDL for either 1 hr at 37\u00b0C or overnight at room temperature. 1 million OPCs were added in myelination media to coated plates. After 3 days in culture, oligodendrocytes were starved from media supplementation through incubation with DMEM and 1% P/S only for 4\u20135 hr. Fresh starvation media was then added containing either vehicle control, BQ3020 (100 ng/mL) or FR236924 (25 \u00b5M). After 10 minutes cells were lysed and scraped into RIPA buffer with protease and phosphatase inhibitors (Calbiochem \u2013 539134 and 524621) for 10 min on ice. Lysates were spun at 16,000 g for 10 min and supernatants retained.\n\nProtein concentration was estimated using a BCA assay kit and loaded into precast protein gels with a protein marker of known molecular weights. Gels were ran at 60 volts for 30 min and then increased to 100 volts for 1 hr. Protein was transferred from the gels to nitrocellulose membranes pre-treated with methanol at 400 mA for 2 hr on ice. Membranes were blocked in 4% BSA in TBS- 0.1% Tween for 40 min and incubated with primary antibodies (GAPDH Millipore MAB374, Beta-actin Abcam ab8226, Phospho-PKC\u03b5 S729 Abcam 88241) overnight at 4\u00b0C on an orbital shaker. Membranes were washed in TBS-Tween for 30 min and incubated with species specific secondary horseradish peroxide antibodies at room temperature for 1 hr. Membranes were washed for a further 30 min and incubated with ECL2 for 5 min. Blots were detected using a Licor scanner. Subsequent western blots were performed using the same membranes following removal of bound antibodies through incubation with stripping buffer for 15 min.\n\n### Zebrafish\n\nAnimal husbandry and experiments were maintained in accordance with UK Home Office guideline. The following zebrafish lines were used: Wild type WIK and AB, Tg(mbp:EGFP) and EDNRB Hom (Rse tLF802) (Frohnh\u00f6fer et al., 2013; Krauss et al., 2014). Rse zebrafish contain a point mutation in the ednrba gene at amino acid 163 where glutamine is substituted for lysine. This mutation creates a restriction site for the enzyme PsiI. Touchdown PCR was performed using a light cycler. To distinguish between wild type and homozygous mutants, the PCR product was incubated with restriction enzyme PsiI for 3 hr at 37\u00b0C and run on a 2% agarose TAE gel. Wild type DNA remains uncut at 363 bp whereas homozygous DNA generates two similar sized bands of 187 and 176 bp.\n\nRse Homozygous mutants were crossed to the stable transgenic line Tg(mbp:EGFP) expressing EGFP in all oligodendrocytes previously generated in the Lyons lab (Almeida et al., 2011). Five dpf larval zebrafish were embedded in 1.3% low melting point agarose with tricane. Lateral images of zebrafish spinal cords were taken on an Apatome2 microscope at 20x and stitched together using ZEN imaging software. Using ImageJ cell counter, GFP fluorescent oligodendrocytes were counted along the entire length of the dorsal and ventral spinal cord. Fish were genotyped after imaging and analysis \u2013 experimenters were therefore blinded to genotype during the data acquisition.\n\nOffspring of the paired mating of either Rse heterozygotes or Rse heterozygotes to Rse homozygotes were subject to single oligodendrocyte analysis. Single oligodendrocytes were labelled using the mbp:EGFP-CAAX plasmid developed within the Lyons lab (Almeida et al., 2011). In brief, plasmid DNA generated above for the mbp:EGFP transgenic line was adapted through the addition of the four amino acid CAAX motif therefore anchoring GFP to membranes of oligodendrocytes and myelin sheaths. Mosaic fish were generated by injecting fertilised eggs with 1 nL of a solution of 12.5 ng/\u00b5L mbp:EGFP-CAAX plasmid DNA and 12.5 ng/\u00b5L tol2 transposase mRNA between the 1\u20138 cell stage. Transposase mRNA was produced using an Ambion message machine kit SP6 from pre-digested DNA. Injections were performed using pulled glass needles using gas to force out a precise volume, measured prior to injection in a drop of mineral oil on a calibration slide. four dpf larval zebrafish were screened for fluorescent cells and embedded in 1.3% low melting point agarose with tricane. Lateral images of individual cells were taken on a Zeiss LSM710 confocal. Analysis was performed using ImageJ. GFP fluorescent sheaths longer than 5 \u00b5m were traced and the length measured. The number of sheaths made by individual oligodendrocytes was recorded and the mean sheath length was calculated per oligodendrocyte. Fish were genotyped after imaging and analysis - experimenters were therefore blinded to genotype during the data acquisition.\n\nFor the experiments asking whether a protein kinase C agonist would rescue myelination defects in the Rse Homozygous mutants, injected fish were treated with either 1%DMSO or 10 \u03bcM FR236924 in DMSO at 3 dpf for 24 hr before image acquisition.\n\n### Statistics\n\nAll analysis of cell counts and myelination and were performed on ImageJ blind to condition using a filename randomiser macro. Data is presented showing standard deviations to show the variability, or standard error of the mean when averaged data calculated as a mean per animal or per culture was used for each n. Statistical analysis was performed using GraphPad Prism software. Data was tested for normality using a Kolmogorov\u2013Smirnov test. When data fitted a normal distribution parametric t-tests and 1-way ANOVA, with Tukey\u2019s post hoc, were used. Where data did not meet normal distribution non-parametric Mann-Whitney U tests and Kruskal-Wallis tests, with Dunns post hoc, were used.\n",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "356a0e19-bfba-4a4b-b632-eca9304778a7",
+      "submission_id": "fa856c88-2e0f-456f-8c19-ef46412454a8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Klaus-Armin Nave, Max Planck Institute of Experimental Medicine Germany\n\nReviewers:\n- Klaus-Armin Nave, Max Planck Institute of Experimental Medicine Germany\n- Julia Edgar, University of Glasgow United Kingdom\n- Hannelore Ehrenreich, Max Planck Institute of Experimental Medicine Germany\n\n## Review text\n\nDOI: [10.7554/eLife.49493.022](https://doi.org/10.7554/eLife.49493.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nAcceptance summary:\n\nYour work marks an important contribution to the growing field of neuron-glia signaling and the emerging concept of \"adaptive\" myelination. The identification of signaling molecules and their receptors that inform oligodendrocyte lineage cells about the axonal spiking activity in myelinating fiber tracts has been insufficiently understood, specifically beyond glutamate receptor signaling. The identification of endothelin in this function, has been seen as an attractive solution to the brain\u2019s challenge of regulating both, an energy consuming myelin growth and the necessary supply lines for energy rich metabolites. The implication that with paracrine signaling the response of oligodendrocytes may lose its strict association with single axons is intriguing with respect to the overall role of adaptive myelination.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Endothelin signalling regulates experience-dependent myelination in the CNS\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Klaus-Armin Nave as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Huda Zoghbi as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Julia Edgar (Reviewer #2); Hannelore Ehrenreich (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe paper is interesting and timely for the myelin research field. The data are novel and important and add significantly to our knowledge of how activity modulates myelination. A few specific comments should be addressed in a revision:\n\n1) The authors should discuss the very recent paper by the Monje lab that identified a role for BDNF in adaptive myelination. This factor shares the caveat of endothelin being an \"indirect\" signaling system that loses axonal specificity but rather serves an entire local area.\n\n2) Discussion: the authors conclude that the \"myelination rescuing\" effect of intranasally administered PKC agonist in socially deprived mice proves that the underlying defect of social isolation is the reduction of endothelin (i.e. PKC)-mediated stimulation of oligodendrogenesis. We think that is formally incorrect. The intranasal PKC agonist could be a (behaviorally) unrelated promyelinating signal that nevertheless compensates the visible lack of myelin. This argument would be more convincing if the authors could show that (i) also the behavioral consequences of social isolation were rescued by this drug, and (ii) that there is no unspecific hypermyelination beyond the mPFC along the path of diffusion that this drug takes within the CNS. However, we do not say that these experiments must be part of a revision.\n\n3) The authors focus on EDN expressed by endothelial cells/pericytes. They claim that 'in keeping with previous studies, no Edn1, Edn2 or Edn3 was observed in S100\u00df positive astrocytes\u2026' They do not cite the respective source of information for this claim. This is difficult in light of many earlier papers clearly showing astrocytic expression of EDNs using different approaches.\n\nAbsence of evidence is not evidence of absence. Has astrocytic expression been checked under any other than baseline conditions? It appears that the contribution of astrocytes to the present findings cannot be excluded. Moreover, in their in situ figure (Figure 2\u2014figure supplement 1) no positive 'dots' are visible in the astrocyte pictures and no dots in the vicinity of astrocytes, i.e. pointing to endothelial cells as an internal positive control that the in situ hybridization has worked. This would make the data more convincing. Only mRNA data on endothelin and EDNRB are shown \u2013 are antibody stainings available?\n\n4) For Figures 1H and 3D statistics are not shown, please add (even in case of non-significance).\n\nGenerally, please add statistical information to all graphs/figure legends where applicable (e.g. Figure 5C etc.). Also, in some comparisons non-parametric tests were used (e.g. Figure 6D). Please mention in the statistic section on what criteria the decision was based to conduct parametric or non-parametric tests.\n\n5) Figure 3A: The legend mentions group sizes of n=5 and n=4, respectively, for both layers. This is not the number depicted in the graph for layer V; here it is n=9 in WT and n=3 in cKO; what do the dots represent then?\n\n6) Figure 4B: the number of mice used for BQ788 culture is missing. Just for clarity: according to number of cultures, more than one culture was prepared per mouse in control and BQ3020, is this correct? Furthermore, a 1-way ANOVA is mentioned, but for the depicted comparison a T-test would be appropriate (same in Figure 4F).\n",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "84018d03-ebd2-4d42-b433-5e303479995f",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C1",
+      "claim": "Experience and changes in neuronal activity can alter CNS myelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Experience and changes in neuronal activity can alter CNS myelination, but the signalling pathways responsible remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general premise of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "5a5ae739-3e1f-4ea3-b921-bfa7914c0342",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C2",
+      "claim": "Endothelin signalling through endothelin receptor B and PKC epsilon regulates the number of myelin sheaths formed by individual oligodendrocytes in mouse and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we define a pathway in which endothelin, signalling through the G protein-coupled receptor endothelin receptor B and PKC epsilon, regulates the number of myelin sheaths formed by individual oligodendrocytes in mouse and zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract and supported by multiple experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "e82a7996-404d-45f0-9137-93f097fba950",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C3",
+      "claim": "Social isolation in mice leads to reduced myelin sheath number in the prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this phenotype is also observed in the prefrontal cortex of mice following social isolation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "738904be-ad9a-4eac-94c9-a94f9e82e01c",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C4",
+      "claim": "Social isolation is associated with reduced expression of vascular endothelin in the prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "and is associated with reduced expression of vascular endothelin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in situ hybridization data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "80a5d1d9-5dfd-4e60-9900-d5e166f156d7",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C5",
+      "claim": "Increasing endothelin signalling rescues the myelination defect caused by social isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we show that increasing endothelin signalling rescues this myelination defect caused by social isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by intranasal administration of EDNRB agonist as shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "27f057b1-0562-4a54-9418-fd4248a30ea7",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C6",
+      "claim": "The vasculature responds to changes in neuronal activity associated with experience by regulating endothelin levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that the vasculature responds to changes in neuronal activity associated with experience by regulating endothelin levels, which in turn affect the myelinating capacity of oligodendrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "c588170d-32b7-421e-aa9c-f66b597a986a",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C7",
+      "claim": "Social interactions, sensory stimulation and several forms of learning alter white matter and myelin structure in both humans and animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, social interactions, sensory stimulation and several forms of learning have been shown to alter white matter and myelin structure in both humans and animal models (Scholz et al., 2009; Makinodan et al., 2012; Liu et al., 2012; Sampaio-Baptista et al., 2013; McKenzie et al., 2014; Etxeberria et al., 2016; Xiao et al., 2016; Hughes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "f161d741-f987-488e-854f-b9cc30f78984",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C8",
+      "claim": "Increasing the level of neuronal activity by using optogenetics or chemogenetics enhances the generation of myelin-forming oligodendrocytes and increases the amount of myelin they form.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of individual neurons and axons, increasing the level of activity by using optogenetics or chemogenetics enhances the generation of myelin-forming oligodendrocytes and increases the amount of myelin they form (Gibson et al., 2014; Mitew et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "4d85ac25-e92a-4714-9578-9da8b2bed8fb",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C9",
+      "claim": "Preventing synaptic vesicular release from axons reduces myelin formation.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst preventing synaptic vesicular release from axons reduces myelin formation (Hines et al., 2015; Mensch et al., 2015; Koudelka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "3d3c4c4a-18fb-44ae-b178-88717c421baa",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C10",
+      "claim": "EDN expression by endothelial cells increases with enhanced blood flow.",
+      "claim_type": "EXPLICIT",
+      "source": "First, EDN expression by endothelial cells increases with enhanced blood flow (Yanagisawa et al., 1988; Dancu et al., 2004; Walshe et al., 2005; Pandit et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "420261a1-2aa5-4430-848c-8710c0300ce4",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C11",
+      "claim": "The EDN G-protein coupled receptor endothelin receptor B enhances myelination in slice cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the EDN G-protein coupled receptor (GPCR) endothelin receptor B (EDNRB) enhances myelination in slice cultures (Yuen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "7bdc2882-a25e-4502-8c6e-21dc519afa2d",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C12",
+      "claim": "EDN is expressed by CNS vascular cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that EDN is expressed by CNS vascular cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in situ hybridization data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "05917c5a-281e-473e-91cf-ab15b2d395b7",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C13",
+      "claim": "EDN expression lessens in the medial prefrontal cortex following social isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "and that this expression lessens in the medial prefrontal cortex following social isolation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in situ hybridization data shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "48191d59-b44b-42ef-9fff-77cbd9907b52",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C14",
+      "claim": "Social isolation leads to impaired cortical myelination.",
+      "claim_type": "EXPLICIT",
+      "source": "which we confirm also leads to impaired cortical myelination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by oligodendrocyte morphology analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "d81c14f6-6cfa-489b-92da-31dfde9d46a7",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C15",
+      "claim": "Reduced EDN signalling decreases the number of myelin sheaths formed by individual oligodendrocytes in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, we show, by manipulating EDNRB signalling in rodent and zebrafish models, that reduced EDN signalling decreases the number of myelin sheaths formed by individual oligodendrocytes in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by conditional knockout experiments in mice (Figure 3) and zebrafish mutant analysis (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "8679eb84-150e-4e3b-85e9-95470cd3fdde",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C16",
+      "claim": "Intranasal administration of an EDNRB agonist rescues the reduction in myelination associated with environmental social deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we rescue the reduction in myelination associated with environmental social deprivation by intranasal administration of an EDNRB agonist to activate EDN signalling within the CNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "314c2dba-7706-47a7-bbf1-56d68d20ce0c",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C17",
+      "claim": "Social isolation in mice during a critical period comprising 2 weeks after weaning reduces the excitability of specific subtypes of pyramidal neurons of the medial prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has established that social isolation in mice during a critical period comprising 2 weeks after weaning reduces both the excitability of specific subtypes of pyramidal neurons of the medial prefrontal cortex (mPFC) and oligodendrocyte formation and myelination in the same area (Liu et al., 2012; Makinodan et al., 2012; Yamamuro et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "3931c57f-c13b-477f-aa49-64ab94f62a9e",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C18",
+      "claim": "Social isolation in mice during a critical period comprising 2 weeks after weaning reduces oligodendrocyte formation and myelination in the medial prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has established that social isolation in mice during a critical period comprising 2 weeks after weaning reduces both the excitability of specific subtypes of pyramidal neurons of the medial prefrontal cortex (mPFC) and oligodendrocyte formation and myelination in the same area (Liu et al., 2012; Makinodan et al., 2012; Yamamuro et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "bcffd55e-d32b-4163-aeef-cc4058cda746",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C19",
+      "claim": "Isolated mice spent significantly less time than socially-experienced controls interacting with a novel mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "We repeated this protocol, confirming the previously-described effect on circuit function by showing that isolated mice spent significantly less time than socially-experienced controls interacting with a novel mouse (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral testing data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "d6e3abac-b945-4256-908e-6b50bced77d8",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C20",
+      "claim": "Individual oligodendrocytes in socially isolated mice made fewer myelin sheaths in the medial prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach we showed that individual oligodendrocytes made fewer myelin sheaths (Figure 1F\u2013H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by CNPase immunostaining and morphological analysis shown in Figure 1F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "3fd691ff-1c5f-4772-b6b2-868cd9a08174",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C21",
+      "claim": "The length of the myelin sheaths formed by oligodendrocytes in socially isolated mice was unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "although the length of the myelin sheaths formed by oligodendrocytes in these mice was unaffected (Figure 1\u2014figure supplement 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by morphological analysis shown in Figure 1\u2014figure supplement 2E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "2a3cc38b-ed6c-4856-824c-ad470ccfc935",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C22",
+      "claim": "Isolated mice generated fewer oligodendrocytes in the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we found that the isolated mice also generated fewer oligodendrocytes in the mPFC (Figure 1\u2014figure supplement 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cell counting data shown in Figure 1\u2014figure supplement 2C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "6808f19d-4778-49ca-8b80-197826465ec6",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C23",
+      "claim": "Social isolation had no effect on myelin sheath number in the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, social isolation had no effect on myelin sheath number in the visual cortex (Figure 1\u2014figure supplement 3A\u2013B), demonstrating the region-dependent effects of this protocol on myelination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by morphological analysis shown in Figure 1\u2014figure supplement 3A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "5900d476-b445-46cc-a2c5-16de72b50a48",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C24",
+      "claim": "Edn1 and Edn3 mRNA are robustly expressed in laminin-positive blood vessels in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed robust Edn1 and Edn3 mRNA expression in controls, localised to laminin-positive blood vessels, which co-expressed the endothelial/pericyte marker Pecam1 mRNA (Figure 2A) (Yanagisawa et al., 1988; Hammond et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in situ hybridization shown in Figure 2A and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "5fc993cb-1c0f-4b2e-8bd2-2c4f9b4a8845",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C25",
+      "claim": "Edn1 expression has been observed in astrocytes following demyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous studies have observed Edn1 expression also localised to astrocytes following demyelination (Hammond et al., 2014) and microglia (Zhang et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "7bfe7c75-2503-4e12-ae22-65a9c121986e",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C26",
+      "claim": "No Edn1, Edn2 or Edn3 mRNA was observed in S100\u03b2 positive astrocytes or IBA1 positive microglia in the healthy mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "here we observed no Edn1, Edn2 or Edn3 mRNA in S100\u03b2 positive astrocytes or IBA1 positive microglia (Figure 2\u2014figure supplement 1A\u2013B), indicating that endothelial cells and/or pericytes are the main source of Edn in the healthy mouse brain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in situ hybridization shown in Figure 2\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "c1a547df-2477-4576-923a-99b9c22af262",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C27",
+      "claim": "Endothelial cells and/or pericytes are the main source of Edn in the healthy mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that endothelial cells and/or pericytes are the main source of Edn in the healthy mouse brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Edn is expressed in Pecam1-positive vascular cells but not in astrocytes or microglia.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "a1e1d95d-12f5-4525-9ac1-c72147328a9b",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C28",
+      "claim": "Following social isolation, the number of endothelial cells expressing Edn1 and Edn3 mRNA was significantly reduced in the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Following social isolation, both the number of endothelial cells expressing Edn1 and Edn3 mRNA and the expression level of Edn1 mRNA within each cell was significantly reduced in the mPFC (Figure 2B\u2013D, Figure 2\u2014figure supplement 2F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in situ hybridization quantification shown in Figure 2B\u2013D and Figure 2\u2014figure supplement 2F\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "4c99731d-1852-45be-adc2-d4dbaa52ffa7",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C29",
+      "claim": "Following social isolation, the expression level of Edn1 mRNA within each endothelial cell was significantly reduced in the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Following social isolation, both the number of endothelial cells expressing Edn1 and Edn3 mRNA and the expression level of Edn1 mRNA within each cell was significantly reduced in the mPFC (Figure 2B\u2013D, Figure 2\u2014figure supplement 2F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in situ hybridization quantification shown in Figure 2B\u2013D and Figure 2\u2014figure supplement 2F\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "ef90d27a-b014-411a-a557-7d1f6841d5df",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C30",
+      "claim": "The vascular area was unaffected by social isolation in the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the vascular area and the number of cells expressing Pecam1 mRNA were unaffected (Figure 2\u2014figure supplement 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification shown in Figure 2\u2014figure supplement 2A\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "eafde181-12f1-4780-b6e6-37899d768748",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C31",
+      "claim": "The number of cells expressing Pecam1 mRNA was unaffected by social isolation in the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the vascular area and the number of cells expressing Pecam1 mRNA were unaffected (Figure 2\u2014figure supplement 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification shown in Figure 2\u2014figure supplement 2A\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "932332ba-c52b-4230-abeb-ea4abcce46c9",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C32",
+      "claim": "There was no effect of social isolation on Edn1 expression by Pecam1 cells in the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the mPFC, there was no effect of social isolation on Edn1 expression by Pecam1 cells in the visual cortex (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "16ae7295-ddf1-41bf-aee9-655eb61cef6b",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C33",
+      "claim": "Loss of EDNRB in the oligodendrocyte lineage had no significant effect on oligodendrocyte progenitor cell or oligodendrocyte generation in the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the number of oligodendrocyte lineage cells in the mPFC in the control (Pdgfra-cre;Ednrbwt/wt) mice shown in Figure 1 with EDNRB cKO (Pdgfra-cre;Ednrbflox/flox) mice revealed no significant difference in the oligodendrocyte progenitor cell (OPC) or oligodendrocyte generation (Figure 3A, Figure 3\u2014figure supplement 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cell counting data shown in Figure 3A and Figure 3\u2014figure supplement 1B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "b0502bcd-a75d-4412-9a87-f3d17be9147d",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C34",
+      "claim": "Loss of EDNRB in the oligodendroglial lineage significantly reduced the number of myelin sheaths generated by individual oligodendrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, loss of EDNRB in the oligodendroglial lineage significantly reduced the number of myelin sheaths generated by individual oligodendrocytes (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by morphological analysis shown in Figure 3B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "b865b3ab-da1d-43ac-89c6-23c70dc38445",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C35",
+      "claim": "EDNRB cKO oligodendrocytes demonstrated a 22% reduction in myelin sheath number compared to wild type littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "EDNRB cKO oligodendrocytes demonstrated a 22% reduction in myelin sheath number compared to wild type littermates, but the lengths of the remaining sheaths were unchanged (Figure 3\u2014figure supplement 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by morphological analysis shown in Figure 3B\u2013D and Figure 3\u2014figure supplement 1E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "e0259d34-a202-4805-964e-9b97c28f8cc9",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C36",
+      "claim": "The lengths of myelin sheaths were unchanged in EDNRB cKO oligodendrocytes compared to wild type littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "EDNRB cKO oligodendrocytes demonstrated a 22% reduction in myelin sheath number compared to wild type littermates, but the lengths of the remaining sheaths were unchanged (Figure 3\u2014figure supplement 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by morphological analysis shown in Figure 3\u2014figure supplement 1E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "1f1c3cfd-a1a1-4599-ad78-3f3a4ead23e9",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C37",
+      "claim": "A similar effect of EDNRB loss on myelin sheath number was seen in the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar effect of EDNRB loss on myelin sheath number was also seen in the visual cortex (Figure 1\u2014figure supplement 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by morphological analysis shown in Figure 1\u2014figure supplement 3A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "a35a9ea2-ab22-46ad-9975-1ed4bc4d0208",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C38",
+      "claim": "The effect of deleting EDNRB on myelin sheath number was identical to the myelination deficits of individual oligodendrocytes within the mPFC following social isolation in wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments show that oligodendroglial EDNRB regulates the number of myelin sheaths formed by individual oligodendrocytes and, strikingly, that this effect of deleting EDNRB was identical to the myelination deficits of individual oligodendrocytes within the mPFC following social isolation in wild-type animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the phenotypes shown in Figure 1 and Figure 3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "7e8c8bf7-632c-4a52-8b87-09fcd6d92314",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C39",
+      "claim": "Cell type specific loss of EDNRB from the oligodendrocyte lineage caused a significant reduction in the amount of time that cKO mice spent with the novel mouse in the social interaction task.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, despite the additional effects of social isolation on oligodendrocyte number, the cell type specific loss of EDNRB from the oligodendrocyte lineage was sufficient to cause a significant reduction in the amount of time that cKO mice spent with the novel mouse in the social interaction task, although, as might have been expected, the effect size was smaller than in socially isolated mice, with a 33% reduction following social isolation and 20% following EDNRB cKO as compared to wild type mice (Figure 3E, Figure 3\u2014figure supplement 1G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral testing data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "2fb1861c-266c-4ae1-aaef-fe5303685ff3",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C40",
+      "claim": "The effect size on social interaction time was smaller in EDNRB cKO mice (20% reduction) than in socially isolated mice (33% reduction) compared to wild type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "although, as might have been expected, the effect size was smaller than in socially isolated mice, with a 33% reduction following social isolation and 20% following EDNRB cKO as compared to wild type mice (Figure 3E, Figure 3\u2014figure supplement 1G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing behavioral data from Figure 1C and Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "b8bafa67-ef51-4b45-b2ca-0fbdf7bc29ec",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C41",
+      "claim": "Loss of EDNRB signalling in oligodendrocyte lineage cells phenocopies a specific component of the response of oligodendrocytes to social isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that loss of EDNRB signalling in oligodendrocyte lineage cells phenocopies a specific component of the response of oligodendrocytes to social isolation and that this, in turn, contributes to the behavioural deficits that result from social isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the phenotypes of EDNRB cKO and social isolation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "3e61b88c-2a01-41c5-b205-c35adec32021",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C42",
+      "claim": "Loss of EDNRB signalling in oligodendrocyte lineage cells contributes to the behavioural deficits that result from social isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that loss of EDNRB signalling in oligodendrocyte lineage cells phenocopies a specific component of the response of oligodendrocytes to social isolation and that this, in turn, contributes to the behavioural deficits that result from social isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that EDNRB cKO mice show reduced social interaction similar to isolated mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "d3169d3b-f967-4f74-b0bf-fa9199b4c908",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C43",
+      "claim": "Treatment with the EDNRB agonist BQ3020 significantly increased the number of myelin sheaths produced by individual rat oligodendrocytes in microfiber cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw a significant increase in the number of myelin sheaths produced by individual oligodendrocytes 11 days later in response to the EDNRB agonist (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microfiber culture experiments shown in Figure 4A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "24c3c4f7-7f43-401d-8ff7-7428c511660a",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C44",
+      "claim": "BQ3020 increased myelin sheath number in wild type mouse oligodendrocytes but had no effect on EDNRB cKO oligodendrocytes in microfiber cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained with wild type mouse oligodendrocytes (Pdgfra-cre;Ednrbwt/wt) while BQ3020 had no effect on EDNRB cKO (Pdgfra-cre;Ednrbflox/flox) oligodendrocytes (Figure 4F\u2013G), confirming the specificity of the agonist for EDNRB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microfiber culture experiments shown in Figure 4F\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "2c9a9bf7-dece-4b99-998c-b563fa3a4c54",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C45",
+      "claim": "Treatment with the EDNRB antagonist BQ788 had no effect on myelin sheath number in microfiber cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the agonist, treatment with the EDNRB antagonist had no effect on myelin sheath number in these cultures (Figure 4A\u2013C), as might be expected given the lack of EDN-expressing blood vessel cells",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microfiber culture experiments shown in Figure 4A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "8d6dc94e-e589-4cae-b3db-ab712d5f6803",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C46",
+      "claim": "Neither EDNRB agonist nor antagonist altered myelin sheath length in microfiber cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "and neither agonist nor antagonist altered sheath length (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microfiber culture experiments shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "4ac107df-70e3-4ea6-a0f1-3080e7f6271c",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C47",
+      "claim": "BQ3020 selectively activates EDNRB-mediated signalling pathways in oligodendrocytes that increase myelin sheath number in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude from these experiments that the BQ3020 agonist selectively activates EDNRB-mediated signalling pathways in oligodendrocytes that increase myelin sheath number in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the microfiber culture experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "22534b04-2835-49db-8a66-8ee9ebaebc20",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C48",
+      "claim": "EDNRB activation increased the phosphorylation of serine-729 of PKC epsilon.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in supplementary file 1, one of the largest changes in protein phosphorylation following EDNRB activation was an increase in the phosphorylation of serine-729 of PKC epsilon, an isozyme of the Protein Kinase C (PKC) family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by phospho-protein antibody array data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "80cd80d0-fa6c-4649-b8dd-c9f7189f1742",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C49",
+      "claim": "FR 236924, a specific activator of PKC\u03b5, promoted phosphorylation of PKC\u03b5 at serine-729.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we examined myelination in oligodendrocyte microfiber cultures treated with FR 236924, a specific activator of PKC\u03b5, which promoted phosphorylation of PKC\u03b5 at serine-729 (Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "1a6633d2-9a32-4184-aa13-9147a49b6195",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C50",
+      "claim": "FR 236924 significantly increased myelin sheath formation in microfiber cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "and significantly increased myelin sheath formation (Figure 5B\u2013C), similarly to BQ3020.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microfiber culture experiments shown in Figure 5B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "3b38ae8b-2b07-4cdf-8563-1d427626732c",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C51",
+      "claim": "The average number of myelin sheaths formed per oligodendrocyte was reduced by 31% in rse homozygous zebrafish (EDNRB Hom) compared to wild type controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of individual oligodendrocytes enabled by sparse labelling of these cells in the fish larvae revealed the same phenotype as in the EDNRB cKO mice; the average number of myelin sheaths formed per oligodendrocyte was reduced by 31% in rse homozygous fish (EDNRB Hom) compared to wild type controls (Figure 5F\u2013G, Figure 5\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by zebrafish oligodendrocyte analysis shown in Figure 5F\u2013G and Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "11d224b9-e0b7-49d7-b1dc-050a400b18d4",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C52",
+      "claim": "Myelin sheath length was unaffected in rse homozygous zebrafish compared to wild type controls.",
+      "claim_type": "EXPLICIT",
+      "source": "while sheath length was unaffected (Figure 5\u2014figure supplement 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by zebrafish oligodendrocyte analysis shown in Figure 5\u2014figure supplement 2B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "d5527348-7a15-4fd3-8546-5eb2d08c1aca",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C53",
+      "claim": "Activation of PKC\u03b5 by FR 236924 treatment rescued myelin sheath number in rse homozygous zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, activation of PKC\u03b5 by FR 236924 treatment from 3 to 4 days post fertilisation, rescued myelin sheath number in rse homozygous fish (Figure 5D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by zebrafish experiments shown in Figure 5D\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "d1706e16-7b7c-4345-9563-89c8ce0702d7",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C54",
+      "claim": "PKC\u03b5 acts downstream of EDNRB in the regulation of myelin sheath number in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This result confirms a role for PKC\u03b5 downstream of EDNRB in the regulation of myelin sheath number in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the zebrafish rescue experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "2eb507b2-7435-4c7e-87ef-f070fbc349ba",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C55",
+      "claim": "10 days of BQ3020 treatment to socially-isolated animals rescued the myelination phenotype normally seen in these mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, and in keeping with our prediction, 10 days of BQ3020 treatment to socially-isolated animals rescued the myelination phenotype normally seen in these mice, with a 20% increase in the number of myelin sheaths formed by mPFC oligodendrocytes in treated animals, meaning that the sheath numbers were now not significantly different to wild-type animals housed in groups (Figure 6D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by intranasal administration experiments shown in Figure 6D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "b2b0e1f3-2c73-4738-9ba9-5c5140d989c4",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C56",
+      "claim": "Daily handling involved in the intranasal administration protocol did not negate the effects of social isolation on myelin sheath numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we confirmed that the daily handling involved in this protocol did not negate the effects of social isolation by showing that the sheath numbers in the control isolated mice administered saline had the same reduction in sheath numbers as completely isolated animals (Figure 6B and D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing data from Figure 1 and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "049bba13-f64c-412e-8fa2-8e437599ac15",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C57",
+      "claim": "EDN has contrasting effects on oligodendrocyte formation and on myelination.",
+      "claim_type": "EXPLICIT",
+      "source": "The conclusion that EDN has contrasting effects on oligodendrocyte formation and on myelination highlights that these two steps in oligodendrocyte development are regulated independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that EDNRB affects myelin sheath number but not oligodendrocyte number in the healthy CNS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "03728211-f637-4056-a03b-0eb6907a9dc5",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C58",
+      "claim": "Oligodendrocyte formation and myelination are two steps in oligodendrocyte development that are regulated independently.",
+      "claim_type": "EXPLICIT",
+      "source": "The conclusion that EDN has contrasting effects on oligodendrocyte formation and on myelination highlights that these two steps in oligodendrocyte development are regulated independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of EDN signaling on these processes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "2a50a5b3-7af1-4a36-9d2e-e4642767310c",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C59",
+      "claim": "Astrocytic EDN hinders oligodendrocyte differentiation during remyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings on the role of EDN in myelination complement other investigations demonstrating a role of astrocytic EDN hindering oligodendrocyte differentiation during remyelination (Hammond et al., 2014; Hammond et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "c2646fff-9938-4d6a-a5ef-0798fa625f6b",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C60",
+      "claim": "Global EDNRB mutant zebrafish have an increased number of oligodendrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this observation, our global EDNRB mutant zebrafish were found to have an increased number of oligodendrocytes (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by zebrafish oligodendrocyte counting shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "5703fd54-e339-4617-9be7-d1194c308eae",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C61",
+      "claim": "EDN signalling plays two roles: indirectly inhibiting oligodendrocyte formation, but promoting myelin sheath formation once differentiation has occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "Together previous studies and ours suggest that EDN signalling plays two roles, indirectly inhibiting oligodendrocyte formation, but, promoting myelin sheath formation once differentiation has occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from integrating current findings with prior literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "88acee10-e7d6-40af-b2c7-c55a3240b161",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C62",
+      "claim": "Conditional loss of EDNRB from adult oligodendrocyte progenitors 3 days prior to demyelination had no effect on the percentage of remyelinated axons 14 days after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "At apparent odds with this conclusion, conditional loss of EDNRB from oligodendrocyte progenitors had no effect on remyelination; having deleted OPC EDNRB from adult mice 3 days prior to demyelination of the external capsule, Hammond and colleagues observed that the percentage of remyelinated axons, assessed by electron microscopy, was unchanged 14 days after injury (Hammond et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "41f87d7b-0a0a-48e3-90f1-9918e3b76202",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C63",
+      "claim": "Myelin sheath numbers in cortical oligodendrocytes remain largely stable throughout life.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on recent live imaging studies showing that myelin sheath numbers in cortical oligodendrocytes remain largely stable throughout life (Hill et al., 2018; Hughes et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "fd243653-5a59-4e85-8eed-29ac08f49841",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C64",
+      "claim": "Endothelin-mediated regulation of sheath number is likely to occur around the birth of each newly formed oligodendrocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "we propose that any endothelin-mediated regulation of sheath number is likely to occur around the birth of each newly formed oligodendrocyte.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on prior imaging studies showing stable sheath numbers.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "74417a70-6c37-415d-b136-adf9771dbf3b",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C65",
+      "claim": "Oligodendrocytes are continuously generated in the adult CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "The continuous generation of oligodendrocytes in the adult CNS, itself increased by activity-related signals ensures that dynamic regulation of endothelin signalling from the vasculature has the capacity to play a role in adaptive myelination throughout life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about adult oligodendrogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "65b2aaf9-8fdc-4194-8032-a68c18a80590",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C66",
+      "claim": "Cortical oligodendroglia show higher levels of expression of EDNRB than spinal cord oligodendroglia.",
+      "claim_type": "EXPLICIT",
+      "source": "An intriguing possibility suggested by a comparison of gene expression in cortical oligodendroglia and spinal cord oligodendroglia showing higher levels of expression of EDNRB in the former (Horiuchi et al., 2017; Marques et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior gene expression studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "213b2252-0888-4f47-a349-4989154b574d",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C67",
+      "claim": "Cortical oligodendrocytes may be specialised for linking metabolic demand to support.",
+      "claim_type": "EXPLICIT",
+      "source": "is that these cortical oligodendrocytes are specialised for this role linking metabolic demand to support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on differential EDNRB expression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "bfec8798-e7a5-4e01-91bb-bee94d32f32a",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C68",
+      "claim": "Oligodendrocytes in white matter might be more specialised for rapid axonal conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, oligodendrocytes in white matter might be more specialised for rapid axonal conduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to contrast with cortical oligodendrocytes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "73e83c8d-a96c-4292-bc13-489f7c7bd4ae",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C69",
+      "claim": "Myelin provides metabolic substrates to the underlying axon via specific transporters within the inner layer of the sheath.",
+      "claim_type": "EXPLICIT",
+      "source": "A key function of myelin is the provision of metabolic substrates to the underlying axon via specific transporters within the inner layer of the sheath (F\u00fcnfschilling et al., 2012; Lee et al., 2012b; Meyer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "ded28334-a977-4c52-8371-6072ed69b675",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C70",
+      "claim": "NMDA receptor activation in oligodendrocytes following glutamate release by active axons relays the need for metabolic support of axons to oligodendrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has implicated that NMDA receptor activation in oligodendrocytes following glutamate release by active axons in relaying the need for metabolic support of axons to oligodendrocytes (Saab et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "94a88755-5e60-4ef0-b276-2260cc8f19df",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C71",
+      "claim": "An increase in EDN production by endothelial cells is predicted to occur in the presence of increased blood flow or hypoxia.",
+      "claim_type": "EXPLICIT",
+      "source": "We now propose that an increase in EDN production by endothelial cells, as predicted to occur in the presence of increased blood flow or hypoxia, will increase myelin sheath generation by local oligodendrocytes and so provide a further means of linking energy supply and demand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior knowledge about EDN regulation by blood flow.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "ea5f1a1e-7fb9-4cdb-842d-c98829ad1a6d",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C72",
+      "claim": "Changes in blood flow and hypoxaemia are associated with increased cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in blood flow and hypoxaemia are associated with increased cortical activity (forming the basis of the BOLD signal detected by fMRI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about neurovascular coupling and fMRI.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "e7afbaa8-63a8-4bbc-b9a2-2506a59aec9e",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C73",
+      "claim": "An EDN-mediated pathway driving an increase in myelination is a plausible mechanism for ensuring that the metabolic demands of active axons are met.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, an EDN-mediated pathway driving an increase in myelination is a plausible mechanism for ensuring that the metabolic demands of active axons are met.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "e6678536-3b93-49cd-b186-fd2a9e154dc6",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C74",
+      "claim": "Neuropathological studies of MS lesions reveal pre-myelinating oligodendrocytes unable to complete remyelination.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropathological studies of MS lesions revealing pre-myelinating oligodendrocytes unable to complete remyelination suggest for that failure of this final step may contribute to pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from MS neuropathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "54727ae1-b22c-47ed-a950-9a7837a99a1a",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C75",
+      "claim": "Pre-existing adult oligodendrocytes contribute to repair in MS.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings emphasise that the already differentiated oligodendrocyte represents a possible target for remyelination strategies in MS, a conclusion reinforced by recent papers using Carbon14 dating, electron microscopy or snRNA seq of post mortem human MS material providing evidence that pre-existing adult oligodendrocytes contribute to repair (Duncan et al., 2018; J\u00e4kel et al., 2019; Yeung et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "b8f8c118-1ddd-42b0-88f2-c8feac0c1dd0",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C76",
+      "claim": "The already differentiated oligodendrocyte represents a possible target for remyelination strategies in MS.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings emphasise that the already differentiated oligodendrocyte represents a possible target for remyelination strategies in MS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from neuropathological observations and recent studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "8f08146c-e49e-4f88-ae83-db335567082a",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C77",
+      "claim": "Increased levels of LIF secreted by cultured astrocytes in the presence of neuronal activity enhances myelination in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Such indirect signalling has been implied by in vitro studies, wherein increased levels of LIF secreted by cultured astrocytes in the presence of neuronal activity enhances myelination (Ishibashi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "1e6cf59b-53f6-4b35-a0b0-9a78250bae7b",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C78",
+      "claim": "Oligodendrocyte precursor cells use blood vessels as a scaffold to migrate along during development.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, during development, oligodendrocyte progenitor cells use blood vessels as a scaffold to migrate along (Tsai et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "b1b3b923-2f54-4483-9405-6d175e2abaa5",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C79",
+      "claim": "Local oxygen levels influence oligodendrocyte differentiation, stalling the process when levels are low.",
+      "claim_type": "EXPLICIT",
+      "source": "Once in place, local oxygen levels influence their differentiation into oligodendrocytes, stalling the process when levels are low. Only when an adequate oxygen supply is established are the cells able to differentiate and begin the process of myelination (Yuen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "78139622-4a42-4909-992c-36d7134db1c6",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "claim_id": "C80",
+      "claim": "Axons in the cortex are discontinuously and sparsely myelinated.",
+      "claim_type": "EXPLICIT",
+      "source": "Another way in which additional myelin sheaths might impact circuit function is the addition of sheaths to axons in the cortex that are discontinuously and sparsely myelinated (Tomassy et al., 2014; Hill et al., 2018; Hughes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4e0785bb-175b-4c80-bfeb-ac3fc77e6720",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Social isolation in mice during a critical postnatal period (P21-P35) reduces social interaction behavior and impairs myelination in the medial prefrontal cortex (mPFC), specifically reducing the number of myelin sheaths formed by individual oligodendrocytes and the total number of oligodendrocytes, without affecting myelin sheath length. This effect is region-specific, as the visual cortex shows no change in myelin sheath number following social isolation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C14, C19, C20, C21, C22, and C23 are well-supported by behavioral data (Figure 1C) and morphological analysis of oligodendrocytes (Figures 1F-H, Figure 1\u2014figure supplement 2C-F, Figure 1\u2014figure supplement 3A-B). The experimental design includes appropriate controls (grouped vs. isolated mice), quantitative measurements with statistical analysis, and demonstrates both behavioral and cellular phenotypes. The region-specificity (mPFC vs. visual cortex) strengthens the conclusion that this is not a general developmental defect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Social isolation reduces endothelin (Edn1 and Edn3) mRNA expression in vascular endothelial cells of the mPFC without affecting overall vascular area or endothelial cell number. In the healthy mouse brain, endothelial cells and/or pericytes are the main source of endothelin, not astrocytes or microglia. This reduction in vascular endothelin expression is region-specific to the mPFC and does not occur in the visual cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C12, C13, C24, C26-C32 are supported by in situ hybridization data (Figures 2A-D, Figure 2\u2014figure supplements 1-2). The study demonstrates both reduced number of Edn-expressing cells and reduced expression per cell, while controlling for vascular area and total endothelial cell number. The cell-type specificity is established through co-localization studies with multiple markers (Pecam1, laminin, S100\u03b2, IBA1), and region-specificity is confirmed by comparing mPFC and visual cortex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "8920607f-de89-4028-9012-5b6cfe32f1c0",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Oligodendrocyte-specific conditional knockout of EDNRB (Pdgfra-cre;Ednrbflox/flox) reduces the number of myelin sheaths formed by individual oligodendrocytes by approximately 22% in both mPFC and visual cortex, without affecting oligodendrocyte generation or myelin sheath length. This phenotype is identical to the myelination deficit observed following social isolation in wild-type animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15, C33-C38 are well-supported by genetic loss-of-function experiments using conditional knockout mice (Figures 3A-D, Figure 3\u2014figure supplement 1). The study includes appropriate controls (Pdgfra-cre;Ednrbwt/wt littermates), quantitative morphological analysis, and demonstrates specificity by showing no effect on oligodendrocyte number while specifically affecting myelin sheath number. The comparison to social isolation phenotype (C38) is a key inference that links the two experimental paradigms, though this is based on comparing effect sizes rather than direct mechanistic proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "67b8a293-09db-4b6a-bf60-491a0c8b05a9",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Oligodendrocyte-specific loss of EDNRB causes a significant reduction (20%) in social interaction behavior in mice, though the effect size is smaller than that observed following social isolation (33%). This demonstrates that loss of EDNRB signaling in oligodendrocytes phenocopies a specific component of the behavioral deficits resulting from social isolation and contributes to these deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by behavioral testing data (Figure 3E, Figure 3\u2014figure supplement 1G-H). The study appropriately compares EDNRB cKO mice to both wild-type controls and socially isolated mice, demonstrating a significant behavioral phenotype. The smaller effect size in cKO mice compared to isolated mice is consistent with social isolation having additional effects beyond EDNRB signaling (e.g., on oligodendrocyte number). However, the causal link between reduced myelin sheath number and behavioral deficits remains correlative rather than mechanistically proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "0dd3ec85-c8b1-49a9-a1a6-e986afa9227e",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Treatment with EDNRB agonist BQ3020 significantly increases myelin sheath number in oligodendrocyte microfiber cultures in a receptor-specific manner (effective in wild-type but not EDNRB cKO oligodendrocytes), while EDNRB antagonist BQ788 has no effect. Neither agonist nor antagonist affects myelin sheath length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by in vitro microfiber culture experiments (Figures 4A-G). The study demonstrates dose-response effects, receptor specificity through genetic controls (cKO cells), and appropriate negative controls (antagonist, which has no effect in the absence of endogenous ligand). The reductionist in vitro system effectively isolates the direct effects of EDNRB signaling on oligodendrocytes from confounding influences of other cell types. Statistical analysis shows significant effects with appropriate replication across independent culture preparations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "5e7754a5-4b76-4c51-a146-4a1e6e18cfb3",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "EDNRB activation increases phosphorylation of PKC\u03b5 at serine-729, and PKC\u03b5 acts downstream of EDNRB to regulate myelin sheath number. This is demonstrated by: (1) phospho-protein array showing increased PKC\u03b5 S729 phosphorylation following EDNRB activation, (2) PKC\u03b5 activator FR 236924 increasing myelin sheath formation in microfiber cultures, and (3) FR 236924 rescuing the myelin sheath deficit in EDNRB-deficient zebrafish (rse mutants) in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 are supported by multiple complementary approaches: phospho-protein antibody array (Supplementary file 1), Western blot (Figure 5A), microfiber cultures (Figures 5B-C), and zebrafish rescue experiments (Figures 5D-G, Figure 5\u2014figure supplement 2). The zebrafish experiments are particularly strong, showing that pharmacological activation of PKC\u03b5 can rescue the genetic loss of EDNRB, establishing PKC\u03b5 as a downstream effector. The use of multiple model systems (rat and mouse cultures, zebrafish) strengthens the conclusions. However, the phospho-protein array was performed only once, which is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "e626febb-aaa4-41d1-bc7c-61cf61a7dfd9",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Intranasal administration of EDNRB agonist BQ3020 to socially isolated mice for 10 days rescues the myelination deficit, increasing myelin sheath number by 20% such that treated isolated mice are no longer significantly different from group-housed controls. Daily handling associated with intranasal administration does not negate the effects of social isolation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C16, C55, C56 are supported by in vivo rescue experiments using intranasal drug delivery (Figures 6D-E). The study includes appropriate controls (saline-treated isolated mice) demonstrating that handling does not affect the phenotype, and shows that BQ3020 treatment specifically rescues the myelin sheath deficit. This is a critical experiment linking the mechanistic findings to the social isolation phenotype. However, the study does not assess whether the rescue of myelination also rescues the behavioral deficits, which would strengthen the causal link between myelination and behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "a2094580-6a77-4753-8a46-9ff109d7146a",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The vasculature responds to changes in neuronal activity associated with experience by regulating endothelin levels, which in turn affect the myelinating capacity of oligodendrocytes. Endothelin signaling has contrasting effects on oligodendrocyte formation (inhibitory) versus myelination (promoting), indicating these are independently regulated developmental steps. This pathway may link metabolic demand to metabolic support in active neural circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C57, C58, C61, C73 represent integrative conclusions and hypotheses drawn from the experimental data. While the individual experimental results support the components of this model (social isolation reduces vascular EDN, EDNRB regulates myelin sheath number, etc.), the direct mechanistic link between neuronal activity and vascular EDN production is not experimentally demonstrated in this study\u2014it is inferred from prior literature (C10) and the social isolation paradigm. The hypothesis about linking metabolic demand to support (C73) is plausible but speculative. The claim about contrasting effects on oligodendrocyte formation vs. myelination (C57, C58, C61) is supported by comparing current results with prior literature (C59, C60, C62), but requires additional experiments to fully validate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "5643a168-eac2-4755-ad01-057716835db7",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Experience and changes in neuronal activity can alter CNS myelination. Social interactions, sensory stimulation, and learning alter white matter and myelin structure in humans and animal models. Increasing neuronal activity enhances oligodendrocyte generation and myelin formation, while preventing synaptic vesicular release reduces myelination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7, C8, C9 are background knowledge claims supported by multiple citations to prior literature. These establish the context and rationale for the current study. The claims are well-established in the field based on the cited references, though they are not directly tested in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "2b3a304c-584f-42db-b864-395297d85074",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "EDN expression by endothelial cells increases with enhanced blood flow, and EDNRB enhances myelination in slice cultures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C11 are prior knowledge claims supported by citations that provide the rationale for investigating the EDN-EDNRB pathway in the context of activity-dependent myelination. These are not tested in the current study but are established findings that motivated the hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "8ce171b1-4381-4042-8d02-b99be5f7565c",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has established that social isolation during a critical postnatal period reduces both neuronal excitability and oligodendrocyte formation/myelination in the mPFC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C18 are background claims supported by citations to prior studies (Liu et al., 2012; Makinodan et al., 2012; Yamamuro et al., 2018). These establish the validity of the social isolation model used in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "b0d2d298-7b55-4cd4-9333-f98de7be6491",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior studies have shown that astrocytic EDN hinders oligodendrocyte differentiation during remyelination, and global EDNRB mutant zebrafish have increased oligodendrocyte numbers. However, conditional loss of EDNRB from oligodendrocyte progenitors had no effect on remyelination in a white matter lesion model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C59, C60, C62 integrate prior literature with current findings to discuss the context-dependent and cell-type-specific roles of EDN signaling. C60 is directly demonstrated in the current study (Figure 5\u2014figure supplement 1), while C25, C59, and C62 are from prior literature. These claims help reconcile apparently contradictory findings about EDN's role in oligodendrocyte biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "1e4828a1-ba56-4675-8beb-ecd08a93a262",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Myelin sheath numbers in cortical oligodendrocytes remain largely stable throughout life, suggesting that endothelin-mediated regulation of sheath number likely occurs around the birth of each newly formed oligodendrocyte. Continuous generation of oligodendrocytes in the adult CNS ensures that dynamic regulation of endothelin signaling can play a role in adaptive myelination throughout life.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C64, C65 combine established knowledge (C63, C65 from prior literature) with a hypothesis (C64) about the timing of EDNRB-mediated regulation. The hypothesis is reasonable given the cited imaging studies showing stable sheath numbers, but it is not directly tested in this manuscript. This represents an important prediction for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "f36bd904-4432-45c2-8b29-233b2c54c664",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cortical oligodendroglia show higher EDNRB expression than spinal cord oligodendroglia, suggesting cortical oligodendrocytes may be specialized for linking metabolic demand to support, while white matter oligodendrocytes may be more specialized for rapid axonal conduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66, C67, C68 are speculative hypotheses based on differential gene expression patterns from prior studies (C66). While the differential expression is established, the functional specialization proposed in C67 and C68 is not tested and remains speculative. This represents an interesting hypothesis for future investigation but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "69b189e4-411a-4da2-b4fa-a9966c9bab9d",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Myelin provides metabolic substrates to axons via specific transporters. NMDA receptor activation in oligodendrocytes relays the need for metabolic support. An increase in EDN production by endothelial cells in response to increased blood flow or hypoxia is predicted to increase myelin sheath generation, linking energy supply and demand. Changes in blood flow and hypoxemia are associated with increased cortical activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C70, C71, C72 integrate established knowledge (C69, C70, C72 from prior literature) with the current findings to propose a model (C71) for how EDN signaling might link metabolic demand to myelin production. The model is plausible and consistent with the data, but the direct link between neuronal activity, blood flow changes, and EDN production is not experimentally demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "662ed343-4442-4804-8995-42e303403dcf",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Neuropathological studies of MS lesions reveal pre-myelinating oligodendrocytes unable to complete remyelination, and recent evidence shows that pre-existing adult oligodendrocytes contribute to repair in MS. This suggests that differentiated oligodendrocytes represent a possible target for remyelination strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C75, C76 are based on established neuropathological observations and recent studies (Duncan et al., 2018; J\u00e4kel et al., 2019; Yeung et al., 2019). These claims provide important context for the translational relevance of the findings, suggesting that targeting the final step of myelin sheath formation (rather than just oligodendrocyte differentiation) may be therapeutically relevant for MS.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    },
+    {
+      "id": "2e6b2b94-1ab4-4d65-8052-184d07dc3707",
+      "content_id": "f8dd39c6-86bc-4a56-ac4d-e0df3932529d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior studies have shown that astrocyte-derived LIF enhances myelination in response to neuronal activity in vitro, oligodendrocyte precursors use blood vessels as migration scaffolds during development, local oxygen levels influence oligodendrocyte differentiation, and cortical axons are discontinuously and sparsely myelinated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C78, C79, C80 are background knowledge claims from prior literature that provide context for understanding vascular-oligodendrocyte interactions and the potential functional consequences of adding myelin sheaths to cortical axons. These are well-established findings that support the rationale and interpretation of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:01:25.834558Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e82a7996-404d-45f0-9137-93f097fba950",
+      "result_id": "4e0785bb-175b-4c80-bfeb-ac3fc77e6720"
+    },
+    {
+      "claim_id": "48191d59-b44b-42ef-9fff-77cbd9907b52",
+      "result_id": "4e0785bb-175b-4c80-bfeb-ac3fc77e6720"
+    },
+    {
+      "claim_id": "bcffd55e-d32b-4163-aeef-cc4058cda746",
+      "result_id": "4e0785bb-175b-4c80-bfeb-ac3fc77e6720"
+    },
+    {
+      "claim_id": "d6e3abac-b945-4256-908e-6b50bced77d8",
+      "result_id": "4e0785bb-175b-4c80-bfeb-ac3fc77e6720"
+    },
+    {
+      "claim_id": "3fd691ff-1c5f-4772-b6b2-868cd9a08174",
+      "result_id": "4e0785bb-175b-4c80-bfeb-ac3fc77e6720"
+    },
+    {
+      "claim_id": "2a3cc38b-ed6c-4856-824c-ad470ccfc935",
+      "result_id": "4e0785bb-175b-4c80-bfeb-ac3fc77e6720"
+    },
+    {
+      "claim_id": "6808f19d-4778-49ca-8b80-197826465ec6",
+      "result_id": "4e0785bb-175b-4c80-bfeb-ac3fc77e6720"
+    },
+    {
+      "claim_id": "738904be-ad9a-4eac-94c9-a94f9e82e01c",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "7bdc2882-a25e-4502-8c6e-21dc519afa2d",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "05917c5a-281e-473e-91cf-ab15b2d395b7",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "5900d476-b445-46cc-a2c5-16de72b50a48",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "7bfe7c75-2503-4e12-ae22-65a9c121986e",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "c1a547df-2477-4576-923a-99b9c22af262",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "a1e1d95d-12f5-4525-9ac1-c72147328a9b",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "4c99731d-1852-45be-adc2-d4dbaa52ffa7",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "ef90d27a-b014-411a-a557-7d1f6841d5df",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "eafde181-12f1-4780-b6e6-37899d768748",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "932332ba-c52b-4230-abeb-ea4abcce46c9",
+      "result_id": "402ca4b7-b93c-492a-b4a2-ab0c0993e866"
+    },
+    {
+      "claim_id": "5a5ae739-3e1f-4ea3-b921-bfa7914c0342",
+      "result_id": "8920607f-de89-4028-9012-5b6cfe32f1c0"
+    },
+    {
+      "claim_id": "d81c14f6-6cfa-489b-92da-31dfde9d46a7",
+      "result_id": "8920607f-de89-4028-9012-5b6cfe32f1c0"
+    },
+    {
+      "claim_id": "16ae7295-ddf1-41bf-aee9-655eb61cef6b",
+      "result_id": "8920607f-de89-4028-9012-5b6cfe32f1c0"
+    },
+    {
+      "claim_id": "b0502bcd-a75d-4412-9a87-f3d17be9147d",
+      "result_id": "8920607f-de89-4028-9012-5b6cfe32f1c0"
+    },
+    {
+      "claim_id": "b865b3ab-da1d-43ac-89c6-23c70dc38445",
+      "result_id": "8920607f-de89-4028-9012-5b6cfe32f1c0"
+    },
+    {
+      "claim_id": "e0259d34-a202-4805-964e-9b97c28f8cc9",
+      "result_id": "8920607f-de89-4028-9012-5b6cfe32f1c0"
+    },
+    {
+      "claim_id": "1f1c3cfd-a1a1-4599-ad78-3f3a4ead23e9",
+      "result_id": "8920607f-de89-4028-9012-5b6cfe32f1c0"
+    },
+    {
+      "claim_id": "a35a9ea2-ab22-46ad-9975-1ed4bc4d0208",
+      "result_id": "8920607f-de89-4028-9012-5b6cfe32f1c0"
+    },
+    {
+      "claim_id": "7e8c8bf7-632c-4a52-8b87-09fcd6d92314",
+      "result_id": "67b8a293-09db-4b6a-bf60-491a0c8b05a9"
+    },
+    {
+      "claim_id": "2fb1861c-266c-4ae1-aaef-fe5303685ff3",
+      "result_id": "67b8a293-09db-4b6a-bf60-491a0c8b05a9"
+    },
+    {
+      "claim_id": "b8bafa67-ef51-4b45-b2ca-0fbdf7bc29ec",
+      "result_id": "67b8a293-09db-4b6a-bf60-491a0c8b05a9"
+    },
+    {
+      "claim_id": "3e61b88c-2a01-41c5-b205-c35adec32021",
+      "result_id": "67b8a293-09db-4b6a-bf60-491a0c8b05a9"
+    },
+    {
+      "claim_id": "d3169d3b-f967-4f74-b0bf-fa9199b4c908",
+      "result_id": "0dd3ec85-c8b1-49a9-a1a6-e986afa9227e"
+    },
+    {
+      "claim_id": "24c3c4f7-7f43-401d-8ff7-7428c511660a",
+      "result_id": "0dd3ec85-c8b1-49a9-a1a6-e986afa9227e"
+    },
+    {
+      "claim_id": "2c9a9bf7-dece-4b99-998c-b563fa3a4c54",
+      "result_id": "0dd3ec85-c8b1-49a9-a1a6-e986afa9227e"
+    },
+    {
+      "claim_id": "8d6dc94e-e589-4cae-b3db-ab712d5f6803",
+      "result_id": "0dd3ec85-c8b1-49a9-a1a6-e986afa9227e"
+    },
+    {
+      "claim_id": "4ac107df-70e3-4ea6-a0f1-3080e7f6271c",
+      "result_id": "0dd3ec85-c8b1-49a9-a1a6-e986afa9227e"
+    },
+    {
+      "claim_id": "22534b04-2835-49db-8a66-8ee9ebaebc20",
+      "result_id": "5e7754a5-4b76-4c51-a146-4a1e6e18cfb3"
+    },
+    {
+      "claim_id": "80cd80d0-fa6c-4649-b8dd-c9f7189f1742",
+      "result_id": "5e7754a5-4b76-4c51-a146-4a1e6e18cfb3"
+    },
+    {
+      "claim_id": "1a6633d2-9a32-4184-aa13-9147a49b6195",
+      "result_id": "5e7754a5-4b76-4c51-a146-4a1e6e18cfb3"
+    },
+    {
+      "claim_id": "3b38ae8b-2b07-4cdf-8563-1d427626732c",
+      "result_id": "5e7754a5-4b76-4c51-a146-4a1e6e18cfb3"
+    },
+    {
+      "claim_id": "11d224b9-e0b7-49d7-b1dc-050a400b18d4",
+      "result_id": "5e7754a5-4b76-4c51-a146-4a1e6e18cfb3"
+    },
+    {
+      "claim_id": "d5527348-7a15-4fd3-8546-5eb2d08c1aca",
+      "result_id": "5e7754a5-4b76-4c51-a146-4a1e6e18cfb3"
+    },
+    {
+      "claim_id": "d1706e16-7b7c-4345-9563-89c8ce0702d7",
+      "result_id": "5e7754a5-4b76-4c51-a146-4a1e6e18cfb3"
+    },
+    {
+      "claim_id": "80a5d1d9-5dfd-4e60-9900-d5e166f156d7",
+      "result_id": "e626febb-aaa4-41d1-bc7c-61cf61a7dfd9"
+    },
+    {
+      "claim_id": "8679eb84-150e-4e3b-85e9-95470cd3fdde",
+      "result_id": "e626febb-aaa4-41d1-bc7c-61cf61a7dfd9"
+    },
+    {
+      "claim_id": "2eb507b2-7435-4c7e-87ef-f070fbc349ba",
+      "result_id": "e626febb-aaa4-41d1-bc7c-61cf61a7dfd9"
+    },
+    {
+      "claim_id": "b2b0e1f3-2c73-4738-9ba9-5c5140d989c4",
+      "result_id": "e626febb-aaa4-41d1-bc7c-61cf61a7dfd9"
+    },
+    {
+      "claim_id": "27f057b1-0562-4a54-9418-fd4248a30ea7",
+      "result_id": "a2094580-6a77-4753-8a46-9ff109d7146a"
+    },
+    {
+      "claim_id": "049bba13-f64c-412e-8fa2-8e437599ac15",
+      "result_id": "a2094580-6a77-4753-8a46-9ff109d7146a"
+    },
+    {
+      "claim_id": "03728211-f637-4056-a03b-0eb6907a9dc5",
+      "result_id": "a2094580-6a77-4753-8a46-9ff109d7146a"
+    },
+    {
+      "claim_id": "5703fd54-e339-4617-9be7-d1194c308eae",
+      "result_id": "a2094580-6a77-4753-8a46-9ff109d7146a"
+    },
+    {
+      "claim_id": "e7afbaa8-63a8-4bbc-b9a2-2506a59aec9e",
+      "result_id": "a2094580-6a77-4753-8a46-9ff109d7146a"
+    },
+    {
+      "claim_id": "84018d03-ebd2-4d42-b433-5e303479995f",
+      "result_id": "5643a168-eac2-4755-ad01-057716835db7"
+    },
+    {
+      "claim_id": "c588170d-32b7-421e-aa9c-f66b597a986a",
+      "result_id": "5643a168-eac2-4755-ad01-057716835db7"
+    },
+    {
+      "claim_id": "f161d741-f987-488e-854f-b9cc30f78984",
+      "result_id": "5643a168-eac2-4755-ad01-057716835db7"
+    },
+    {
+      "claim_id": "4d85ac25-e92a-4714-9578-9da8b2bed8fb",
+      "result_id": "5643a168-eac2-4755-ad01-057716835db7"
+    },
+    {
+      "claim_id": "3d3c4c4a-18fb-44ae-b178-88717c421baa",
+      "result_id": "2b3a304c-584f-42db-b864-395297d85074"
+    },
+    {
+      "claim_id": "420261a1-2aa5-4430-848c-8710c0300ce4",
+      "result_id": "2b3a304c-584f-42db-b864-395297d85074"
+    },
+    {
+      "claim_id": "314c2dba-7706-47a7-bbf1-56d68d20ce0c",
+      "result_id": "8ce171b1-4381-4042-8d02-b99be5f7565c"
+    },
+    {
+      "claim_id": "3931c57f-c13b-477f-aa49-64ab94f62a9e",
+      "result_id": "8ce171b1-4381-4042-8d02-b99be5f7565c"
+    },
+    {
+      "claim_id": "5fc993cb-1c0f-4b2e-8bd2-2c4f9b4a8845",
+      "result_id": "b0d2d298-7b55-4cd4-9333-f98de7be6491"
+    },
+    {
+      "claim_id": "2a50a5b3-7af1-4a36-9d2e-e4642767310c",
+      "result_id": "b0d2d298-7b55-4cd4-9333-f98de7be6491"
+    },
+    {
+      "claim_id": "c2646fff-9938-4d6a-a5ef-0798fa625f6b",
+      "result_id": "b0d2d298-7b55-4cd4-9333-f98de7be6491"
+    },
+    {
+      "claim_id": "88acee10-e7d6-40af-b2c7-c55a3240b161",
+      "result_id": "b0d2d298-7b55-4cd4-9333-f98de7be6491"
+    },
+    {
+      "claim_id": "41f87d7b-0a0a-48e3-90f1-9918e3b76202",
+      "result_id": "1e4828a1-ba56-4675-8beb-ecd08a93a262"
+    },
+    {
+      "claim_id": "fd243653-5a59-4e85-8eed-29ac08f49841",
+      "result_id": "1e4828a1-ba56-4675-8beb-ecd08a93a262"
+    },
+    {
+      "claim_id": "74417a70-6c37-415d-b136-adf9771dbf3b",
+      "result_id": "1e4828a1-ba56-4675-8beb-ecd08a93a262"
+    },
+    {
+      "claim_id": "65b2aaf9-8fdc-4194-8032-a68c18a80590",
+      "result_id": "f36bd904-4432-45c2-8b29-233b2c54c664"
+    },
+    {
+      "claim_id": "213b2252-0888-4f47-a349-4989154b574d",
+      "result_id": "f36bd904-4432-45c2-8b29-233b2c54c664"
+    },
+    {
+      "claim_id": "bfec8798-e7a5-4e01-91bb-bee94d32f32a",
+      "result_id": "f36bd904-4432-45c2-8b29-233b2c54c664"
+    },
+    {
+      "claim_id": "73e83c8d-a96c-4292-bc13-489f7c7bd4ae",
+      "result_id": "69b189e4-411a-4da2-b4fa-a9966c9bab9d"
+    },
+    {
+      "claim_id": "ded28334-a977-4c52-8371-6072ed69b675",
+      "result_id": "69b189e4-411a-4da2-b4fa-a9966c9bab9d"
+    },
+    {
+      "claim_id": "94a88755-5e60-4ef0-b276-2260cc8f19df",
+      "result_id": "69b189e4-411a-4da2-b4fa-a9966c9bab9d"
+    },
+    {
+      "claim_id": "ea5f1a1e-7fb9-4cdb-842d-c98829ad1a6d",
+      "result_id": "69b189e4-411a-4da2-b4fa-a9966c9bab9d"
+    },
+    {
+      "claim_id": "e6678536-3b93-49cd-b186-fd2a9e154dc6",
+      "result_id": "662ed343-4442-4804-8995-42e303403dcf"
+    },
+    {
+      "claim_id": "54727ae1-b22c-47ed-a950-9a7837a99a1a",
+      "result_id": "662ed343-4442-4804-8995-42e303403dcf"
+    },
+    {
+      "claim_id": "b8f8c118-1ddd-42b0-88f2-c8feac0c1dd0",
+      "result_id": "662ed343-4442-4804-8995-42e303403dcf"
+    },
+    {
+      "claim_id": "8f08146c-e49e-4f88-ae83-db335567082a",
+      "result_id": "2e6b2b94-1ab4-4d65-8052-184d07dc3707"
+    },
+    {
+      "claim_id": "1e6cf59b-53f6-4b35-a0b0-9a78250bae7b",
+      "result_id": "2e6b2b94-1ab4-4d65-8052-184d07dc3707"
+    },
+    {
+      "claim_id": "b1b3b923-2f54-4483-9405-6d175e2abaa5",
+      "result_id": "2e6b2b94-1ab4-4d65-8052-184d07dc3707"
+    },
+    {
+      "claim_id": "78139622-4a42-4909-992c-36d7134db1c6",
+      "result_id": "2e6b2b94-1ab4-4d65-8052-184d07dc3707"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1758 @@
+{
+  "submission": {
+    "id": "c59d5570-41df-49aa-b4bd-e5e16f40e3d4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:31:42.264433Z",
+    "updated_at": "2025-12-02T09:31:42.264433Z"
+  },
+  "content": [
+    {
+      "id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "submission_id": "c59d5570-41df-49aa-b4bd-e5e16f40e3d4",
+      "content_type": "manuscript",
+      "content_text": "# Single-cell lineage tracing by endogenous mutations enriched in transposase accessible mitochondrial DNA\n\n## Authors\n\n- Jin Xu<sup>1</sup> ([ORCID: 0000-0003-0944-9835](https://orcid.org/0000-0003-0944-9835))\n- Kevin Nuno<sup>4</sup>\n- Ulrike M Litzenburger<sup>1</sup>\n- Yanyan Qi<sup>1</sup>\n- M Ryan Corces<sup>1</sup>\n- Ravindra Majeti<sup>4</sup> \u2020\n- Howard Y Chang<sup>1</sup> ([ORCID: 0000-0002-9459-4393](https://orcid.org/0000-0002-9459-4393)) \u2020\n\n### Affiliations\n\n1. Center for Personal Dynamic Regulomes Stanford United States\n2. Department of Dermatology Stanford University School of Medicine Stanford United States\n3. Department of Genetics Stanford University School of Medicine Stanford United States\n4. Institute for Stem Cell Biology and Regenerative Medicine Stanford University School of Medicine Stanford United States\n5. Division of Hematology, Department of Medicine Stanford University School of Medicine Stanford United States\n6. Howard Hughes Medical Institute, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSimultaneous measurement of cell lineage and cell fates is a longstanding goal in biomedicine. Here we describe EMBLEM, a strategy to track cell lineage using endogenous mitochondrial DNA variants in ATAC-seq data. We show that somatic mutations in mitochondrial DNA can reconstruct cell lineage relationships at single cell resolution with high sensitivity and specificity. Using EMBLEM, we define the genetic and epigenomic clonal evolution of hematopoietic stem cells and their progenies in patients with acute myeloid leukemia. EMBLEM extends lineage tracing to any eukaryotic organism without genetic engineering.\n\n## Introduction\n\nResolving lineage relationships between cells is necessary to understand the fundamental mechanisms underlying normal development and the progression of disease. In recent years, new methods have emerged to enable cell lineage tracking with increasing resolution, leading to substantial biological insights (Woodworth et al., 2017). Specifically, genome editing of reporter constructs via CRISPR-Cas9 allowed synthetic reconstruction of cell lineage relationships in model organisms, and has been coupled with transcriptome profiling to inform cell fates (Spanjaard et al., 2018). These prospective \u2018mutate-and-record\u2019 methods provide powerful tools to resolve the developmental origin of cells in genetically engineered cells and organisms, but cannot be utilized in living humans, archival clinical samples, or any wild type organism (Woodworth et al., 2017). Given these limitations, retrospective lineage tracing using endogenous genetic markers is an alternative solution. Recent advances in sequencing enable naturally occurring somatic mutations to be used as lineage markers, which usually required single-cell genome sequencing to capture the sparse genetic information (Lee-Six et al., 2018; Wang et al., 2014). Regions with high mutation rates, such as microsatellite repeats, retrotransposons, and copy-number variants, has been used to resolve the lineage relationship for normal or cancerous tissue samples (Evrony et al., 2015; Biezuner et al., 2016). These methods reduce the cost of whole genome sequencing, but still lack information on cell phenotypes.\n\nSimultaneous measurement of the lineage relationship and cell fates is ultimately required to address many biomedical questions. Here we describe EMBLEM (Epigenome and Mitochondrial Barcode of Lineage from Endogenous Mutations), a strategy to track cell lineage using endogenous mitochondrial DNA variants in ATAC-seq data. The end result of EMBLEM is single-cell lineage information and rich global epigenomic profile from the same individual cells (Figure 1A and Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig1-v3.jpg)\n\n**Figure 1.:** (A) EMBLEM workflow.\u00a0Usings standard ATAC-seq data as input (left), an SNV calling step was added to enumerate all single nucleotide variants in mtDNA (middle). EMBLEM identifies heteroplasmic mtDNA mutations in single cells, groups mutations into diagnostic sets, and infers cell lineage based on mtDNA variants, and overlays clonotype information on epigenomic profile of the same cells (right). (B) ATAC-seq enriches for mtDNA reads compared to whole exome sequencing (WES), low coverage whole genome sequence (WGS_L), or PCR-free, high-coverage whole genome sequence (WGS_H). (C) Bimodal distribution of variant allele frequency (VAF) of mtDNA mutations discovered using ATAC-seq. Yellow bar presents the homoplastic variants that can distinguish different individuals. Heteroplasmic variants can distinguish clonal cell populations within one individual. (D) Two possible models for 25% mtDNA VAF in bulk: Homoplastic variants in a small proportion of cells (top) or heteroplasmic variants in nearly every single cell (bottom). Blue cells: cells with mutated mtDNA, blue dots: mtDNA with mutated allele. (E) VAF of mtDNA mutations in single cell ATAC-seq data of human B cells. Each dot presents the VAF (y-axis) in single cells, and rotated kernel density on each side presents their distribution. The x-axis indicates the mutation site (the nucleotide position in mitochondrial genome). (F) mtDNA mutations in human AML. Each row in the heap map is a single cell (LSC or AML blast); each column is a heteroplasmic mtDNA mutation. Blue color indicates the mtDNA variant is detected (>1 reads); white color indicates no mutation. The nucleotide position in mitochondrial genome for each mutation is indicated. (G) Combined set of heteroplasmic mtDNA mutations improve cell lineage assignment in single cells. Cells were first separated into bins according to their mtDNA coverage (x-axis). The detection rate (y-axis) for each site (indicated by different color and shape) is calculated with the number of cells with that mutations divided by total number of cells in that bin. The detection rate of combining four sites (black line, METHOD) is substantially increased. (H) Quantitation of mtDNA mutation detection rate as a function of sequencing depth and number of single cells. Cells were sorted in descending order by their sequencing depth and grouped into bins (10% of cells in each row). Distribution of sequencing depth is shown on the left panel. The black line and dark blue shade indicate mean\u00a0\u00b1\u00a0standard deviation, respectively. The light blue shade indicates remaining value of the bin. Cells with or without mtDNA variants are shown in blue and orange on the right panel, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Workflow for mitochondrial DNA variant calling from ATAC-seq data. This workflow was applied to both bulk and single cell ATAC-seq. The steps indicated with dotted lines were not applied to single-cell data. (B) Workflow for inferring lineage relationships from single-cell ATAC-seq data. BAM files from single cells were first merged and confident mtDNA variants were called. Mutated alleles from these variant sites were then counted for each single cell. The cell lineage was then inferred from mtDNA variants and analyzed alongside the chromatin profile for each cell.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Mitochondrial genome coverage from each of four different sequencing libraries including WGS_H (high coverage PCR-free whole genome sequencing), WGS_L\u00a0(low coverage whole genome sequencing), WES(whole exome sequencing), ATAC-seq. The Y axis shows coverage scaled in log10. 43M paired-end ATAC-seq reads\u00a0(2 \u00d7 50 bp) yielded the same coverage of mtDNA as 747M paired-end reads\u00a0(2 \u00d7 250 bp) from WGS-H data. (B) Comparison of variants detected in sequencing data from four different library preparations. The number of variants detected in each library is shown on the bottom left. The intersection of different libraries (bottom-right) and the number of variants are shown on the top. Homoplasmic variants are in yellow and heteroplasmic variants are in blue. (C) Heteroplasmic mtDNA mutations detected by WGS_H\u00a0(in blue) and ATAC-seq\u00a0(in red). The X axis is the position of the mutation on mitochondrial genome and Y axis is the variant allele frequency in percentage.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Percentage of mtDNA reads in ATAC-seq and whole genome sequence(WGS) libraries from human K562 cells. Four millions mtDNA reads from 32 millions total mapped reads in ATAC, seven millions mtDNA reads from 1775 millions total reads in WGS. (B) The average coverage of the mitochondrial genome in ATAC and WGS from K562 cells. (C) Number of heterplasmic mtDNA mutations detected in ATAC and WGS. The intersection size represents mutations detected by single or both methods. (D) Variant allele frequency of mtDNA mutations and their correlation between ATAC and WGS. The red dots indicate the mutations detected by both ATAC and WGS, with the same criteria. The black dots indicate the mutations detected by ATAC or WGS only.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Heatmap showing variant mitochrondrial sites (columns) in each AML blast from patient SU353(rows).\u00a0The color represents the number of reads supporting the variant allele (log2(depth)). The first two sites are negative controls, which are detected in pHSCs only. (B) Bar plot showing the number of cells in which we detect each mitochondrial variant. The last bar shows the number of cells with any one of the four variants detected. (C) The top right shows the number of cells with each different combination of variants detected. The number of cells is shown on top of the bar. The combination of variants detected is annotated below the bar. The total number of cells with each variant site detected is shown to the left. The average coverage of the mitochondrial genome for each intersection group is shown below. (D) VAF of mtDNA variants. The x-axis indicates the variant site notated by the nucleotide position in the mitochondrial genome. Each dot represents the VAF (y-axis) in single cells and the rotated kernel density on each side shows their distribution. (E\u2013H) Same as (A\u2013D), for leukemia stem cells (LSCs) from patient SU353.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A\u2013D) Same as Figure 1\u2014figure supplement 3A\u2013D for AML blasts from SU070.\u00a0(E\u2013H) Same as Figure 1\u2014figure supplement 3A\u2013D for LSCs from SU070. (I) Quantification of the detection rate for each heteroplasmic variant from mtDNA. Cells (both LSCs and AML blasts) were first separated into bins according to their coverage of mtDNA (x-axis). The detection rate (y-axis) for each site (notated by different color and shape) is calculated as the number of cells with that variant detected divided by the total number of cells in that bin. (J) Quantitation of mtDNA mutation detection rate as a function of sequencing depth and the number of single cells. Cells were sorted in descending order by their sequencing depth and grouped into bins (10% cells in each row). Distribution of sequencing depth is shown on the left panel. Cells with or without mtDNA mutations are shown in blue or orange, respectively.\n\nWe illustrate the utility of EMBLEM in human blood progenitor cells to clarify the process of pre-leukemic clonal evolution and the emerging biology of clonal hematopoiesis.\n\n## Results\n\nAssay of Transposase-Accessible Chromatin by sequencing (ATAC-seq) is a sensitive method used to study chromatin accessibility profiles in diverse cell types and organisms (Buenrostro et al., 2013). During DNA transposition and amplification in cells, mitochondrial DNA is also amplified at the same time (Figure 1A). Mitochondrial DNA (mtDNA) is a\u00a0~\u00a016 kb circular genome with\u00a0~10 fold higher mutation rate compared to the nuclear genome. Hence, mtDNA incrementally accumulates unique, irreversible genetic mutations that are passed on to daughter cells even in healthy humans and may be used for lineage tracing (Morris et al., 2017), (Fellous et al., 2009). The majority of somatic mtDNA mutations are noncoding and thought to be passenger (Ju et al., 2014). Importantly, the number of mitochondria (and therefore mtDNA) range from several hundreds to\u00a0>10,000 per cell in different cell types, facilitating robust mtDNA analysis even from a single cell.\n\nWe first observed that ATAC-seq effectively enriches for mtDNA. While mtDNA is present in many kinds of DNA sequence libraries, it is substantially enriched in ATAC-seq libraries due to the fact that mtDNA is not chromatinized and is therefore highly accessible (Supplementary file 1). ATAC-seq enables a 17-fold or greater enrichment of mtDNA compared to exome sequencing or whole genome sequencing in GM12878 human B cells (Figure 1B), leading to an average\u00a0~18,000X coverage of mtDNA (Figure 1\u2014figure supplement 2A). With this coverage, we detected 27 mitochondrial variants from GM12878 cells (Figure 1C). 13 of these variants have a variant allele frequency (VAF) greater than 90%, which are known as homoplasmic variants (Figure 1\u2014figure supplement 2B). We also detected 14 low frequency mitochondrial DNA variants, with VAFs ranging from 0.1% to 24% (Figure 1C and Figure 1\u2014figure supplement 2C). Similar results for mtDNA enrichment were observed in human K562 cells (Figure 1\u2014figure supplement 3, Supplementary file 1).\n\nThe VAF from bulk ATAC-seq data represents the average of the allele frequencies of the cell population. A 25% VAF may arise from 25% of cells in the population with a homoplasmic variant, or alternatively arise from 100% of cells all having a quarter of their mitochondria with the variant allele (Figure 1D). To distinguish between these two models, we analyzed single-cell ATAC-seq data from GM12878. For four mtDNA variants (VAF between 0.5%\u00a0~\u00a024% at population level), we find that a mixture of both models is in action for different variants (Figure 1E). For instance, mtDNA mutation 3082 is widely spread among single cells, but at low frequency per cell. Because it is extremely unlikely (see Materials\u00a0and\u00a0method) that the identical mutation arose independently in every single cell, cells sharing the same mitochondrial mutations are inferred to have descended from the same ancestral cell. These results suggest that even low frequency heteroplasmic mtDNA mutations can be exploited for lineage tracing.\n\nTo prove the principle that somatic mitochondrial mutations can track cells from the same ancestor and to quantify the power of lineage mapping, we next applied EMBLEM to primary blood cells from patients with acute myeloid leukemia (AML). Human AML is organized as a hierarchy: a hematopoietic stem cell first acquires an initiating mutation in one of a number of chromatin modifier genes, previously termed as \u2018pre-leukemic\u2019 hematopoietic stem cell (pHSC) (Jan et al., 2012; Corces-Zimmerman et al., 2014). pHSCs are functionally normal and are not able to transplant AML, but upon accumulation of additional mutations, they give rise to leukemic stem cells (LSCs) that are able to self-renew and recapitulate AML disease upon transplantation (Jan et al., 2012; Thomas and Majeti, 2017). Finally, LSCs give rise to the bulk leukemic blast cells in AML (Thomas and Majeti, 2017). Targeted exome sequencing in these samples have identified somatic mutations in tumor suppressor genes and oncogenes that link the lineage relationship of pHSCs, LSCs and blasts, providing the ground truth for our analyses (Corces-Zimmerman et al., 2014).\n\nWe applied EMBLEM to the ATAC-seq profiles of FACS-purified LSCs and leukemic blasts first (Supplementary file 1). Using high-confidence mtDNA mutations, detected both from bulk ATAC-seq and single cell ATAC-seq, we found the LSC and blast populations not only shared the same heteroplasmic variants, but also showed similar distribution and allele frequency at the cellular level (Figure 1\u2014figure supplement 4). These results indicate the two populations are identical at the genetic level, but divergent at the epigenomic level, consistent with previous studies (Corces et al., 2016; Schep et al., 2017). In patient SU353, we identified four diagnostic mtDNA mutations in the same cell (Figure 1F), which indicates these four mitochondrial variants already co-existed in the ancestral cell (see Materials\u00a0and\u00a0method). With the assumption that all these LSCs and blasts are clonal, we further quantified the detection rate of each mtDNA variant as a function of allele frequency and sequencing depth (Figure 1G). We found that when a single variant allele has a frequency greater than 20%, the detection rate can be up to 90% with\u00a0>20X coverage (e.g. site 6776). In contrast, when the variant allele has a frequency lower than 1%, the detection rate drops to 20% when the coverage is below 100X (e.g. site 6705). While high drop-out rate is a common challenge for single-cell technologies (Kharchenko et al., 2014), computational imputation of the missing information from single cell data can address this problem (Zhang and Zhang, 2018). When multiple mtDNA variants are co-detected in multiple single cells, we can infer their origin and linkage in the ancestral cell (see Materials\u00a0and\u00a0method). Thus, cells containing any one of these variants will still inform their origin from the same lineage. With any combination of the four variants, 90% (sensitivity) of the cells can be unambiguously assigned to the correct lineage with just 20x mtDNA coverage (Figure 1H). Furthermore, two mtDNA mutations identified in other cells (e.g. pHSC specific site 2967,6268) were never detected (false positive\u00a0=\u00a00) in LSCs and blasts (Figure 1\u2014figure supplement 4), showing a high specificity of the method. Similar performance of single cell lineage tracing for another patient (SU070) is shown in Figure 1\u2014figure supplement 5. These results demonstrate that somatic DNA mutations in the mitochondrial genome are a powerful endogenous marker to identify clonal cell populations.\n\nTo expand on these findings to additional different cell lineages, we applied EMBLEM to bulk ATAC-seq data from sorted blood cells from healthy human donors and patients with AML(Supplementary file 1) (Corces et al., 2016). We identified heteroplasmic mtDNA mutations in multiple cell populations of primary blood cells from healthy donors and all AML patients (Figure 2\u2014figure supplement 1A, Supplementary file 2). The heteroplasmic mtDNA mutations showed a similar mutant spectrum as observed by previous studies using cancer genomic data (Figure 2\u2014figure supplement 1B and C) (Ju et al., 2014).\n\nFurthermore, EMBLEM, not only confirmed the previous lineage hierarchy of AML, but also extended the previous model of pHSC heterogeneity (Figure 2A). In the AML cases with LSCs sequenced by ATAC-seq, the LSCs and their corresponding leukemic blasts have nearly identical heteroplasmic mtDNA mutations (Figure 2B\u2013C and Figure 2\u2014figure supplement 1D), suggesting a direct lineage relationship and short generation history between LSCs and blasts. We then examined whether any of the mtDNA variants present in LSCs can be seen in the pHSCs, where the first leukemia-associated protein-coding mutations have already occurred in functional normal hematopoietic stem cells (Corces-Zimmerman et al., 2014; Corces et al., 2016). We detected blast-associated mtDNA mutations in pHSCs in all 11 cases. Interestingly, we also detected additional heteroplasmic mtDNA mutations present specifically in pHSCs (Figure 2C). In the 11 cases we investigated, seven cases have pHSC-unique heteroplasmic mtDNA mutations (Figure 2\u2014figure supplement 1D and E), a previously unrecognized level of pHSC heterogeneity. pHSCs are capable of long-term self-renewal and possess a clonal growth advantage, allowing them to clonally outcompete normal HSCs. Indeed, the clonal frequency of pHSCs is a poor prognostic factor for overall survival in AML (Corces et al., 2016). Our discovery of pHSCs with distinct heteroplasmic mtDNA mutations suggests the existence of multiple distinct sub-clones of pHSCs in AML patients.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig2-v3.jpg)\n\n**Figure 2.:** (A) Lineage hierarchy in acute myeloid leukemia based on EMBLEM and prior genetic information. mtDNA mutations reveals pHSC clonal heterogeneity. The clonal precursor of the leukemic stem cell is not the clone with most representation in the pHSC pool, but rather the clone with epigenomic bias towards the leukemic regulatory program, as depicted by related color schemes. (B) EMBLEM deconvolutes AML clonal heterogeneity. Heteroplasmic mtDNA mutations in three cell populations from patients SU070 are shown. Mutations sites (in rows) in each FACS-sorted cell population (in columns) are shown, with size of each circle representing its VAF. Several mtDNA mutations (sites shown in purple) are detected in pHSCs and transmitted to LSCs and blasts, confirming those pHSC clones at the apex of leukemia lineage. LSCs accumulated additional mtDNA mutations (sites shown in green) and are transmitted to leukemic blasts in patient SU070. Allele frequency, sequencing depth and annotation of the variant allele are shown in Figure 2\u2014figure supplement 1 and Supplementary file 2. (C) Same plot as (B) shown for patient SU353. In addition to the shared mtDNA mutations in pHSCs, LSCs, and blasts (purple), two pHSCs-specific mtDNA mutations are also detected (yellow). Allele frequency, sequencing depth and annotation of the variant allele are shown in Figure 2\u2014figure supplement 1 and Supplementary file 2. (D) Heteroplasmic mutations in single pHSCs from one patient reveal clonal heterogeneity. Each column is a mtDNA nucleotide position; each row is one cell. Blue color indicates the presence of the mtDNA variant. Shown are cells with any mtDNA mutation detected, or cells with more than 40X coverage of the mitochondrial genome without any detected mutation(pHSC with WT mtDNA). The number of cells in each clonotype are indicated on the right. (E) Landscape of single-cell chromatin accessibility of blood progenitor and leukemic cells in patient SU353. tSNE map using bias-corrected deviations from chromatin accessibility showing cluster of AML blasts, LSCs, pHSCs and normal HSC, colored by cell types. (F) Chromatin accessibility of the FOS:JUN binding motif across the same single cells. tSNE map colored by deviation z-score for motif associated to FOS:JUN, the most variable TF motif. (G) pHSC clones possess distinct epigenomic signatures. Clone 1 that gives rise to the AML has a chromatin accessibility profile that more resembles LSCs and leukemic blasts. \u2018WT\u2019 pHSC refers to the pHSC with WT mtDNA. Clonotype information from EMBLEM is overlaid on the tSNE map defined by TF motif deviations, and colored by different lineal sub-populations defined by mtDNA mutations. (H) Quantitation of distinct single-cell chromatin accessibility at FOS:JUN motifs among different pHSC clones defined by EMBLE. Clone 1 pHSCs tend to down regulate FOS:JUN accessibility, while clone 2 pHSC shows substantially greater cell-to-cell variability. pHSCs with no detectable mtDNA variants and normal HSCs are shown for comparison. TF deviation of single cells (black dots) is shown on the distribution box-plot. The statistical significant were indicated by \u2018*\u201d when p<0.05, \u2018**\u201d when p<0.01(Wilcoxon rank-sum test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The number of heteroplasmic variants detected using ATAC-seq data from normal primary blood cells and cancer cells from AML patients. (B) The number of mtDNA variants identified from normal and cancer samples in different substitution classes are shown as a bar plot. Mutations from normal (gray) and cancer (yellow) samples are separated. The C\u00a0>\u00a0T and T\u00a0>\u00a0C signature in mtDNA mutations\u00a0has been observed in previous studies and it's equivalent to the one that has been operating during the evolution of human germline mtDNAs. (C) Annotation of mtDNA mutations and the proportion of mutations in coding and non-coding regions. Coding mutations are divided into synonymous, nonsynonymous, and gain of stop codon. Heteroplasmic mutations detected from cancer samples show a similar distribution as those from normal samples, with a slightly higher proportion falling within coding regions. (D)\u00a0Heteroplasmic mutations in three cell stages for each AML patient. Variant alleles (in rows) in each cell population (in columns) are shown with a circle, with size indicating their variant allele frequency. Sequencing depth of the variant allele is indicated by the color of the circle (in log2 scale). pHSC-specific mutation sites are in red. Allele frequency and annotation of mtDNA mutations were shown in Supplementary file 2 (E) Heteroplasmic mutations in two cell stages for each AML patient. Variant alleles (in rows) in each cell population (in columns) are shown with a circle, with size indicating their variant allele frequency. Sequencing depth of the variant allele is indicated by the color of the circle (in log2 scale). pHSC-specific mutation sites are in red. Allele frequency and annotation of mtDNA mutations were shown in Supplementary file 2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Phylogenetic relationship of cells from SU353 was inferred using the Neighbor-Joining method.\u00a0The phylogenetic tree is drawn to scale, with branch lengths in the units of the number of base difference per site. The clade in purple matched to clone\u00a01 and the clade in yellow matched to clone\u00a02 in Figure 2D. The cell type and mtDNA variants in each single cell are shown on the right. 229 single cells with at least one of the six heteroplasmic mtDNA mutations were included. (B) Heat map showing clusters of pHSCs from SU353 and normal HSCs from a healthy donor, based on the z-score of TF deviation. The Z-score deviation is shown for individual cells (columns) for each TF (rows). Clone information is shown on the top of the heat map. Top 50 most variable motifs were used in this heat map. (C) Volcano plot showing the difference in chromatin accessibility for transcription factor binding motifs between Clone 1 and Clone 2. The x-axis shows the mean difference of bias-corrected deviations and the y-axis shows the p-value (in log10 scale). The most significant differential motifs are annotated with TF names. (D)\u00a0Same as in (C) for Clone 1 vs. WT cells. (E)\u00a0Same as in (C) for Clone 2 vs. WT cells. No significantly differential motifs were detected.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Scheme of FACS sorting of the pHSC population from AML patient SU353.\u00a0Initial sort (top panel) and post-sort purity (bottom panel) are shown.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/45105/elife-45105-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Scatter plot shows the number of unique reads mapped to human and moue nuclear genome(nucDNA). Red circle indicates cell doublet. Sequence reads from each single cell were mapped to human and mouse combined reference genome. Unique mapped reads on nucDNA and mtDNA were counted respectively. (B) Scatter plot shows the number of unique reads mapped to human and moue mitochondrial genome(mtDNA). Red circle indicates cell doublet. (C)\u00a0Species-specific score for nucDNA and mtDNA. The species-specific score was calculated with (Chuman/(Chuman\u00a0+\u00a0Cmouse)\u22120.5. \u2018\u22120.5\u2019 or \u20180.5\u2019 indicate 100% alignment to mouse or human reference. The positive correlation between nucDNA and mtDNA indicates the species-specific mtDNA always paired with species-specific nucDNA.\n\nTo validate the heterogeneity of pHSCs inferred from EMBLEM of bulk cell populations, we performed single-cell ATAC-seq of HSCs from AML patient SU353, which exhibited both a high burden of pre-leukemic somatic coding gene mutations and high frequency of pHSC-specific heteroplasmic mtDNA mutations (Corces et al., 2016). We identified the heteroplasmic mtDNA variants from each single cell, which separated the HSCs into three lineages: Two clonal subpopulations termed \u2018clone 1\u2019 (18 cells) and \u2018clone 2\u2019 (104 cells), and a third population with no mtDNA variants despite sufficient mtDNA coverage (pHSC with WT mtDNA, 31 cells) (Figure 2D). Notably, clone 2 possessed pHSC-specific mtDNA mutations, while clone 1 possessed mtDNA mutations shared with LSCs, indicating clone1 is the lineage precursor of AML. These results confirm that multiple pHSC clones arise in AML patients, and one subclone eventually evolved to become the LSC (Figure 2\u2014figure supplement 2A).\n\nFinally, we related the clonotype of pHSCs to their single-cell chromatin accessibility profiles. We interrogated the patterns of active DNA elements and enriched transcription factor motifs in sequential stages of AML development from the same patient, and contrasted with HSCs from normal donors using ChromVAR (Schep et al., 2017) (Figure 2E and Figure 2\u2014figure supplement 2B). The chromatin accessibility profiles of pHSCs are more similar to HSCs than to LSCs or leukemic blasts. The greatest deviation between HSC and other cell types occurred at DNA binding motifs of the transcription factor Jun/Fos, a known key regulator of HSC biology (Santaguida et al., 2009) (Figure 2F). Furthermore, the three lineages of pHSCs revealed by mtDNA mutations also showed distinctive chromatin profiles (Figure 2G). Clone 1 pHSC, which gives rise to the LSC and AML leukemia, is already more similar to LSCs and blasts in its chromatin accessibility. In contrast, clone 2 that comprises the larger fraction of pHSCs exhibited variable chromatin profiles at the single-cell level that spanned the range of normal HSCs, pHSC with WT mtDNA(WT cells), is also diverged from normal HSCs. Thus, both lineage tracing and single cell epigenomic states indicate clone 1 as the original stem cell of the AML in patient SU353. Supervised comparison of the chromatin accessibility profiles among these clonal sub-populations further identified distinct and significantly enriched transcription factor motifs (Figure 2H and Figure 2\u2014figure supplement 2C\u2013E). These results indicate the heterogeneity of HSCs from AML patients both on a genetic and epigenomic level.\n\n## Discussion\n\nWe present a computational strategy to combine cell lineages tracing by endogenous mtDNA mutations and chromatin accessibility profiling in the same cell using single-cell ATAC-seq data. This approach is applicable to any eukaryote, does not require genetic engineering or genome editing, and is cost effective as the lineage information comes \u2018for free\u2019 on top of epigenomic insights. The relative merits of mtDNA vs other genetic markers for lineage tracing are outlined in Supplementary file 3. An important advantage of EMBLEM is that we enable clonotype tracing in existing ATAC-seq data sets and hierarchical lineage construction from ATAC-seq that thousands of labs have already generated. All future ATAC-seq data acquired for other inquiries will also have the benefit of lineage information. EMBLEM may also be extended to other single cell technologies, in which mtDNA is sequenced. We show that EMBLEM is successful even with low frequency heteroplasmic mutations, detection of rare clones in a population, and authentic clinical samples. With advances in the throughput and depth of single-cell genomic technologies, we believe EMBLEM may be a powerful tool to bring insight for many biomedical questions, including development, regeneration, immunity, and cancer with integration of genotype and phenotype information from the same cell. During revision of this work, Ludwig et al. (2019) reported the feasibility of using mtDNA and single cell genomics for lineage tracing, which independently validates the potentially broad utility of this approach.\n\nAlthough powerful and broadly applicable, mtDNA lineage tracing also has its limitations. One limitation of this method is absence of mtDNA mutations in cells and tissues of embryos and young animals, which precluded us from applying EMBLEM to published scATAC-seq data of early animal development. Moreover, the possibility of selective mitochondrial inheritance or intercellular mitochondria transfer may affect the accuracy of inferred lineages (Mishra and Chan, 2014; Moschoi et al., 2016; Marlein et al., 2017; Hayakawa et al., 2016). On the other hand, asymmetric transmission of mitochondria would not necessarily affect cellular lineage tracing, as long as the variant alleles are randomly segregated. Using scATAC-seq data from a mixing experiment with human and mouse cells (Satpathy et al., 2018), we found species-specific mtDNA always paired with species-specific nuclear genomic DNA (Figure 2\u2014figure supplement 4). These results suggest that mitochondrial horizontal transfer is not a confounder of our study and does not universally occur between cells. The aforementioned two scenarios reflect the potential uncoupling of nuclear and mitochondrial genomes, which would be of interest to investigate by EMBLEM in combination with other nucDNA tracing methods.\n\nmtDNA lineage tracing produced new insights concerning the pHSC, the human hematopoietic stem cell that suffers the first oncogenic mutation in AML evolution. Our results add to the evidence that the pHSC population is heterogeneous, with evidence of multiple mtDNA clones. Unexpectedly, the pHSC lineage that gives rise to the subsequent acute myeloid leukemia is not the lineage with the best competitive potential among pHSCs, as the leukemogenic lineage is often in the minority. pHSC burden is a strong poor prognostic predictor of AML survival (Corces et al., 2016). It is widely believed that the association between high pHSC burden and poor AML patient prognosis reflected the enhanced self-renewal and competitive ability of the mutant pHSC. Our analysis suggests that high pHSC burden may reflect the diversity of pHSCs or the underlying mutational processes. These alternative interpretations of the link between pHSC burden and poor clinical prognosis should be addressed in future studies.\n\n## Materials and methods\n\n### Public data accession\n\nAligned bam files for GM12878 whole exome, low coverage whole genome, and PCR free whole genome sequence, were downloaded through phase 3 release of 1000 genomes (ftp://ftp.1000genomes.ebi.ac.uk).\n\nThe alignment files were accessed via the following ftp links:\n\nATAC-seq and single cell ATAC-seq data for GM12878 generated by Buenrostro et al. were downloaded through GEO with accession number GSE47753 and GSE65360, respectively (Buenrostro et al., 2013; Buenrostro et al., 2015). Bulk ATAC-seq data from normal donors and AML patients generated by Corces et al. (2016), were downloaded through GEO with accession number GSE74912. Single cell ATAC-seq data for leukemia stem cell and leukemic blasts generated by the same study were downloaded through GEO with accession number GSE74310. Single cell ATAC-seq from normal HSC generated by Buenrostro et al. (2018), were downloaded through GEO with accession number GSE96772. Supplementary file 1 summarized the detail information of all the datasets used in this study.\n\n### Comparison of mitochondrial genome capture rate and coverage\n\nSequencing reads from ATAC-seq were aligned to the reference genome by BWA alignment tool (Li and Durbin, 2009a). The same reference, GRCh37(used by 1000 genome) and human reference mtDNA sequence rCRS (revised Cambridge reference sequence), were used for ATAC-seq data processing. Samtools (Li et al., 2009b) was used for manipulating sequence reads and calculating sequence depth. For all the data sets, the aligned reads were further filtered with mapping quality (Q\u00a0>\u00a030) and PCR redundancy was removed. The percentage of reads from mitochondrial genome compared to that of the nuclear genome were calculated after all the clean-up steps. The mitochondrial genome coverage was calculated using bases with sufficient sequence quality score (q\u00a0>\u00a030). A strong depletion region around 3107 due to the sequencing error(3170N) in the reference genome was excluded in the coverage plot (Ju et al., 2014).\n\n### Bulk ATAC-seq data process and mitochondrial DNA variants calling\n\nMost of the ATAC-seq pipelines remove mtDNA during their process. To rescue the genetic information from mtDNA, we modified our ATAC-seq pipeline and added SNP calling steps, which focuses on the mitochondrial genome. Briefly, adaptor sequences were trimmed from FASTQs using custom Python scripts. Paired-end reads were aligned to the reference genome using BWA. To improve the accuracy of heteroplasmic mutation calling, we followed the somatic mutation calling guidelines from GATK (McKenna et al., 2010), with additional clean-up steps before variant calling. Reads mapped to mtDNA were extracted using Samtools (Li et al., 2009b) from the final bam files and variants were called using VarScan2 (Koboldt et al., 2012) with \u2018--min-var-freq 0.001\u2019 (Figure 1\u2014figure supplement 1A). The heteroplasmic variants were further filtered through the following steps to exclude potential sequencing or mapping errors:\n\n1.\u00a0Thirteen frequent false-positive variants by misalignment due to extensive level of homopolymers in rCRS and due to sequencing error in the reference genome\u00a0(reported in the previous study [Ju et al., 2014]), were also observed and removed in this study. The following sites were explicitly removed:\n\n2.\u00a0Strand imbalance is a potential feature of sequencing error with various causes. To remove the potential sequence error from Illumina NextSeq (with a known high error rate at A bases) and sequence error from DNA damage(G->T, C->A) (Chen et al., 2017), we required\u00a0>2 reads detected from both the forward and reverse orientation, and strand is balanced (30%\u00a0<\u00a0forward/(forward\u00a0+reverse)<70%).\n\n3.\u00a0Variant sites with VAF\u00a0>0.9, but less than 1, were counted as homoplasmic variants. Although the germline polymorphic can be a backward heteroplasmic mutations, the observation of these events is higher than expected, which implies the false positive calling due to mapping bias for non-reference allele and sequencing errors.\n\n4.\u00a0For bulk ATAC-seq data from AML patients, heteroplasmic mutations with variant allele frequency\u00a0>1% were reported.\n\nFor all the AML cases\u00a0(n\u00a0=\u00a015) from Corces et al. (2016), we selected the cases\u00a0(n\u00a0=\u00a012) with at least one confident heteroplasmic mtDNA mutation detected in any cell type for lineage relationship comparison. We found that in one patient (SU209), the number of heteroplasmic mutations (37) and their VAF are significantly higher than other patients. Most of these heteroplasmic mutations also overlapped with common variants present in the general human population (http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chrMT.phase3_callmom-v0_4.20130502.genotypes.vcf.gz), which indicates potential sample contamination. Therefore, this case was excluded from lineage relationship comparison and 11 AML cases were finally shown in Figure 2\u2014figure supplement 1.\n\n### Single cell ATAC library resequencing\n\nTo better evaluate the detection rate in single cell ATAC-seq data, we re-sequenced the previous libraries\u00a0(LSCs and AML blasts from SU070 and SU373) from Corces et al. (2016). The re-sequenced data were uploaded to GEO and accession number is GSE122576.\n\n### Human AML samples\n\nHuman AML samples were obtained from patients at the Stanford Medical Center with informed consent, according to institutional review board (IRB)-approved protocols (Stanford IRB, 18329 and 6453). Mononuclear cells from each sample were isolated by Ficoll separation, resuspended in 90% FBS\u00a0+10% DMSO, and cryopreserved in liquid nitrogen. All analyses conducted here on AML cells used freshly thawed cells.\n\n### Cell sorting\n\nCell samples were first thawed and incubated at 37\u00b0C with 200 U/mL DNase in IMDM\u00a0+10% FBS. To enrich for CD34\u00a0+cells, magnetic bead separation was performed using MACS beads (Miltenyi Biotech) according to the manufacturer\u2019s protocol.\n\nFor cell staining and sorting, the following antibody cocktail was used with the schema shown in Figure 2\u2014figure supplement 3:\n\nSamples were sorted using a Becton Dickinson FACS Aria II. pHSCs were re-suspended and kept in cold FACS buffer containing 1 ug/mL propidium iodide prior to and after sorting. Cells were then immediately prepared for single cell ATAC-seq.\n\n### Single cell ATAC-seq from pHSC\n\nCells were washed two times in C1 DNA Seq Cell Wash Buffer (Fluidigm).~10 K cells were then re-suspended in 6 mL of C1 DNA Seq Cell Wash Buffer, and were combined with 4 mL of C1 Cell Suspension Reagent, 7 mL of this cell mix was loaded onto the Fluidigm IFC. Cells at a concentration of 260\u2013380 cells/\u00b5L were then assayed using scATAC-seq as previously described (Buenrostro et al., 2015). Briefly, single cells were captured using the C1 Single-Cell Auto Prep IFC microfluidic chips. Cells were permeabilized and accessible fragments were captured using 20 \u00b5L of Tn5 transposition mix (1.5x TD buffer, 1.5 \u00b5L transposease (Nextera DNA Sample Prep Kit, Illumina), 1x C1 Loading Reagent with low salt (Fluidigm), and 0.15% NP40) at 30 min at 37\u00b0C. In a 96-well plate, 7 \u00b5L of harvested libraries were amplified in 50 \u00b5L PCR for an additional 17 cycles (1.25 \u00b5M custom Nextera dual-index PCR primers in 1x NEBnext High-Fidelity PCR Master Mix using the following PCR conditions: 72\u00b0C for 5 min; 98\u00b0C for 30 s;) using the following PCR conditions: 72\u00b0C for 5 min; 98\u00b0C for 30 s; and thermocycling at 98\u00b0C for 10 s, 72\u00b0C for 30 s, and 72\u00b0C for 1 min. The PCR products were pooled creating a final volume of\u00a0~4.8 mL. The pooled library was purified on a single MinElute PCR purification column (Qiagen). Libraries were quantified using qPCR prior to sequencing. The scATAC-seq libraries were sequenced by Illumina MiSeq. The sequence data were uploaded to GEO under the accession number GSE122577.\n\n### Single cell ATAC-seq data processing and mitochondrial DNA variant calling\n\nSingle cell ATAC-seq were processed similarly to the bulk ATAC-seq, taking each individual cell as one sample. Recalibration steps were not applied for single cell data, as the sequence depth is not sufficient to empirically adjust the quality scores. After cleaning the alignment, files from every single cell were merged and heteroplasmic variants were first called with the merged bam and filtered using the same criteria as bulk data. Heteroplasmic variants called from merged data or from bulk data were re-counted in each individual cell using Samtools with \u2018-q 20 -Q 20\u2019. And the non-reference allele had to match the variants detected in merged or bulk data.\n\n### Detection rate estimation\n\nIn every single cell, if the variant allele detected in merged or bulk data were supported by any reads, it was considered positive; otherwise, it was counted as zero. A binary matrix was used to present the lineage relationship among single cells and plotted as a heat map. The intersections of the variants were quantified by the Upset R package (Conway et al., 2017). The number of detected variants showed a correlation with sequencing depth and the number of cells with all variants (Figure 1\u2014figure supplements 3 and 4) confirmed the variants already co-existed in the ancestral cell. Following this assumption, the detection rate can be measured as the proportion of cells with variants in the total number of cells. For each variant, cells were separated into different bins, increased by 10, according to the total sequencing depth at each variant. The detection rate for each variant site was then calculated in each bin. The combined detection rate was estimated by 1-(1 R1)*(1 R2)*(1 R3)*(1 R4), where Rn is the detection rate for each variant.\n\n### Lineage inference\n\nThe probability of observing a mutation at a given site is Pn\u00a0=\u00a0n*r, where r is the average mutation rate in the mitochondrial genome and n is the copy of mtDNAs in a single cell. r is estimated to be\u00a0~10^-7 per base (Coller et al., 2001), n is around 100\u00a0~\u00a010000 per cell (Miller et al., 2003), so Pn will be 10^-5\u00a0~\u00a010^-3. The probability of N cells sharing the same mtDNA mutations, but arising independently, will be (Pn)^N. Thus, when there are more than 3 cells in the population sharing a common mtDNA mutation, the probability of these independently occurring will be close to 0. Cells with common mtDNA mutations having\u00a0inherited the mutations from the same ancestral cell is more likely to explain the observed\u00a0result. Furthermore, when a set of mutations (more than 1) is detected in more than 1 cells, the null hypothesis (independent occurrence) is rejected more confidently. The mutations within the ancestral cells can be inferred from the intersection of mutations. If a set of mutations co-existed in the ancestral cell, the absence of one of several linked mutations in the daughter cells is more likely caused by false negative\u00a0detection in single-cell libraries or genetic draft during cell replication. Then the observed cells with different intersections (e.g V1\u00a0+V2)\u00a0are expected to be given by Pv1*Pv2*N, after normalization by sequencing depth. The divergence of intersections from high-frequency mutations indicates the separation of mtDNA mutations and multiple cell lineage. The intersections of the variants were quantified by the Upset R package (Conway et al., 2017). In the scATAC-seq from pHSCs from SU353, the intersection of variants showed most of the cells were separated by two sets of different variants (Figure 2D). But there are a few cells displaying a mixture of variants from the two sets. We suspected these may cause by the doublet of cells in the same well during single cell separation on C1 chip. We further separated the intersection map by the chip and observed the number of cells with mixture variants correlated to the concentration of cells loaded to C1 Chip. These cells were removed during subsequent analysis. Single cells with any variants in the two sets were kept and cells with more than 40X coverage of mtDNA, but\u00a0with no variants in the two sets were considered as HSCs with WT mtDNA. After all the filter steps, 153 pHSC\u00a0cells had lineage information and were separated into three subgroups.\n\n### Single cell ATAC-seq chromatin analysis\n\nATAC sequences mapped to the nuclear genome were used for chromatin accessibility profiling. Bam files were merged for the same cell types and used as input files for chromVAR (Schep et al., 2017). Peak files from Buenrostro et al. (2018) were used as open background regions to quantify the accessibility signal from every single cell. Cells with fewer than 200 unique reads or less than 25% of reads in peak regions were removed for chromatin analysis. chromVAR was applied to calculate TF motif-associated chromatin accessibility landscape changes and identify potential regulators of epigenomic variability. This approach quantifies accessibility variation across single-cells by aggregating accessible regions containing a specific TF motif, then compares the observed accessibility of all peaks containing a TF motif to a background set of peaks normalizing for known technical confounders. For determining differentially accessible motifs between different subpopulations, a Wilcoxon test was used to calculate the p values of the difference between the two groups.\n\n### Code availability\n\nCustom analysis code can be downloaded from GitHub (https://github.com/ChangLab/ATAC_mito_sc; Xu, 2019; copy archived at https://github.com/elifesciences-publications/ATAC_mito_sc).\n",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "5bd570ef-18f3-42ff-aba2-20f50bdacb47",
+      "submission_id": "c59d5570-41df-49aa-b4bd-e5e16f40e3d4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ross L Levine, Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- Ross L Levine, Memorial Sloan Kettering Cancer Center United States\n\n## Review text\n\nDOI: [10.7554/eLife.45105.032](https://doi.org/10.7554/eLife.45105.032)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Single-cell lineage tracing by endogenous mutations enriched in transposase accessible mitochondrial DNA\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Ross L Levine as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Marianne Bronner as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe work was thought to be of significant interest, particularly as a novel approach to lineage tracing. The reviewers did identify some areas where further work and clarification would strengthen the paper.\n\nEssential revisions:\n\n1) One important feature of mtDNA sequencing the authors mention is the possibility of horizontal transfer of mitochondrial DNA. This is especially interesting in the context of mtDNA mutations found at low VAF across many single cells. Can the authors determine if such low level of VAF is above the rate of horizontal transfer, or even the experimental doublet rate? A mixing experiment between mouse and human cells should solve this quickly.\n\n2) The authors demonstrate that ATAC-seq enriches for mtDNA compared to whole exome sequencing and whole genome sequencing (Figure 1B, 1C and Figure 1\u2014figure supplement 2). However, there is an important number of heteroplasmic mtDNA mutations (18) which are detected by high-coverage whole genome sequencing (WGS_H), which have failed to be detected by ATAC-seq (Figure 1\u2014figure supplement 2B). How can this be explained, given the fact that ATAC-seq leads to higher coverage of mitochondrial genome in respect to other approaches? Would a higher number of ATAC-seq reads lead to the identification of more existing mtDNA mutations? Do these 18 mtDNA mutations reside in a specific region of the mitochondrial genome? I would like to ask the authors to perform the same analysis and compare the mtDNA coverage and the number of mutations after ATAC-seq and WGS-H in one more human cell line, in order to validate their results from GM12878 cells.\n",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "875d720d-8a0e-4628-8e3c-6bb879dac644",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C1",
+      "claim": "EMBLEM is a strategy to track cell lineage using endogenous mitochondrial DNA variants in ATAC-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we describe EMBLEM, a strategy to track cell lineage using endogenous mitochondrial DNA variants in ATAC-seq data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary description of the method presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "f0a29790-b5fb-46ef-a071-455bbcdcbfcc",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C2",
+      "claim": "Somatic mutations in mitochondrial DNA can reconstruct cell lineage relationships at single cell resolution with high sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that somatic mutations in mitochondrial DNA can reconstruct cell lineage relationships at single cell resolution with high sensitivity and specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing detection rates and false positive rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "5dcfb253-3020-487e-9955-6b3f104de8a5",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C3",
+      "claim": "EMBLEM extends lineage tracing to any eukaryotic organism without genetic engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "EMBLEM extends lineage tracing to any eukaryotic organism without genetic engineering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key advantage of the method and is based on the fact that it uses endogenous mutations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "31050e8f-aa32-4382-b165-53ece564d431",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C4",
+      "claim": "CRISPR-Cas9 genome editing of reporter constructs allowed synthetic reconstruction of cell lineage relationships in model organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, genome editing of reporter constructs via CRISPR-Cas9 allowed synthetic reconstruction of cell lineage relationships in model organisms, and has been coupled with transcriptome profiling to inform cell fates (Spanjaard et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "caf510e9-dbf4-4872-a9eb-e1395afda4d1",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C5",
+      "claim": "Prospective 'mutate-and-record' methods cannot be utilized in living humans, archival clinical samples, or any wild type organism.",
+      "claim_type": "EXPLICIT",
+      "source": "These prospective 'mutate-and-record' methods provide powerful tools to resolve the developmental origin of cells in genetically engineered cells and organisms, but cannot be utilized in living humans, archival clinical samples, or any wild type organism (Woodworth et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and represents a known limitation of existing methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "8cb2baa2-8093-4ce1-993a-bac170422953",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C6",
+      "claim": "Recent advances in sequencing enable naturally occurring somatic mutations to be used as lineage markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in sequencing enable naturally occurring somatic mutations to be used as lineage markers, which usually required single-cell genome sequencing to capture the sparse genetic information (Lee-Six et al., 2018; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "54794230-3871-432f-aa2d-9dfeb5150d0b",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C7",
+      "claim": "ATAC-seq enriches for mtDNA reads compared to whole exome sequencing, low coverage whole genome sequence, or PCR-free, high-coverage whole genome sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "ATAC-seq enriches for mtDNA reads compared to whole exome sequencing (WES), low coverage whole genome sequence (WGS_L), or PCR-free, high-coverage whole genome sequence (WGS_H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B comparing different sequencing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "b528443f-ac1f-4e83-a63d-f13a4f66705a",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C8",
+      "claim": "ATAC-seq enables a 17-fold or greater enrichment of mtDNA compared to exome sequencing or whole genome sequencing in GM12878 human B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ATAC-seq enables a 17-fold or greater enrichment of mtDNA compared to exome sequencing or whole genome sequencing in GM12878 human B cells (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing different sequencing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "c349c0f9-b207-4d13-b89c-ab89ad64b7d5",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C9",
+      "claim": "ATAC-seq leads to an average ~18,000X coverage of mtDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "ATAC-seq enables a 17-fold or greater enrichment of mtDNA compared to exome sequencing or whole genome sequencing in GM12878 human B cells (Figure 1B), leading to an average ~18,000X coverage of mtDNA (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "ec02f394-3f72-43ec-b2b9-3288a2dca38a",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C10",
+      "claim": "27 mitochondrial variants were detected from GM12878 cells using ATAC-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "With this coverage, we detected 27 mitochondrial variants from GM12878 cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "01d2865f-5fab-4169-b465-9ca541dd985b",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C11",
+      "claim": "13 of the variants detected in GM12878 cells have a variant allele frequency greater than 90%, which are known as homoplasmic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "13 of these variants have a variant allele frequency (VAF) greater than 90%, which are known as homoplasmic variants (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2B and uses established terminology.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "8d6eb157-b6c8-43cf-b14c-beb0d8662ead",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C12",
+      "claim": "14 low frequency mitochondrial DNA variants were detected in GM12878 cells, with VAFs ranging from 0.1% to 24%.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected 14 low frequency mitochondrial DNA variants, with VAFs ranging from 0.1% to 24% (Figure 1C and Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "5c8b7ae9-d07c-4a7c-bbef-0ccbe9c65f63",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C13",
+      "claim": "mtDNA is not chromatinized and is therefore highly accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "ATAC-seq effectively enriches for mtDNA. While mtDNA is present in many kinds of DNA sequence libraries, it is substantially enriched in ATAC-seq libraries due to the fact that mtDNA is not chromatinized and is therefore highly accessible",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about mitochondrial DNA structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "2ef3e579-8c07-4dd1-a965-28718b5a9e1a",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C14",
+      "claim": "Mitochondrial DNA is a ~ 16 kb circular genome with ~10 fold higher mutation rate compared to the nuclear genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial DNA (mtDNA) is a ~ 16 kb circular genome with ~10 fold higher mutation rate compared to the nuclear genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about mitochondrial DNA characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "14fe905b-5450-47f5-b8ba-132ebbea3453",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C15",
+      "claim": "mtDNA incrementally accumulates unique, irreversible genetic mutations that are passed on to daughter cells even in healthy humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, mtDNA incrementally accumulates unique, irreversible genetic mutations that are passed on to daughter cells even in healthy humans and may be used for lineage tracing (Morris et al., 2017), (Fellous et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "76dcc6e9-3497-4b14-96b2-5c0303757f95",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C16",
+      "claim": "The majority of somatic mtDNA mutations are noncoding and thought to be passenger.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of somatic mtDNA mutations are noncoding and thought to be passenger (Ju et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "2fcfe329-a47a-4faf-8655-45f613a47d7d",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C17",
+      "claim": "The number of mitochondria (and therefore mtDNA) range from several hundreds to >10,000 per cell in different cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the number of mitochondria (and therefore mtDNA) range from several hundreds to >10,000 per cell in different cell types, facilitating robust mtDNA analysis even from a single cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about mitochondrial copy number in cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "2c628a1c-7c01-406e-bdbc-2f16599befc2",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C18",
+      "claim": "For mtDNA mutation 3082, a mixture of both homoplasmic and heteroplasmic models is in action.",
+      "claim_type": "EXPLICIT",
+      "source": "For four mtDNA variants (VAF between 0.5% ~ 24% at population level), we find that a mixture of both models is in action for different variants (Figure 1E). For instance, mtDNA mutation 3082 is widely spread among single cells, but at low frequency per cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "b8370239-d817-422d-9467-2f89ed07a748",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C19",
+      "claim": "It is extremely unlikely that the identical mutation arose independently in every single cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Because it is extremely unlikely (see Materials and method) that the identical mutation arose independently in every single cell, cells sharing the same mitochondrial mutations are inferred to have descended from the same ancestral cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical inference detailed in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "cd2eed32-9b28-4e24-8744-3a5de191b578",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C20",
+      "claim": "Cells sharing the same mitochondrial mutations are inferred to have descended from the same ancestral cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Because it is extremely unlikely (see Materials and method) that the identical mutation arose independently in every single cell, cells sharing the same mitochondrial mutations are inferred to have descended from the same ancestral cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical inference and is a key principle of the lineage tracing method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "d34e2c61-dd5b-41eb-a9b6-896a9a560c9d",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C21",
+      "claim": "Even low frequency heteroplasmic mtDNA mutations can be exploited for lineage tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that even low frequency heteroplasmic mtDNA mutations can be exploited for lineage tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the single-cell data showing detection of low-frequency mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "b9878bb5-6a0b-4963-902d-a5465ee51e40",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C22",
+      "claim": "A hematopoietic stem cell first acquires an initiating mutation in one of a number of chromatin modifier genes in human AML.",
+      "claim_type": "EXPLICIT",
+      "source": "Human AML is organized as a hierarchy: a hematopoietic stem cell first acquires an initiating mutation in one of a number of chromatin modifier genes, previously termed as 'pre-leukemic' hematopoietic stem cell (pHSC) (Jan et al., 2012; Corces-Zimmerman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on AML biology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "dbcdcee6-00bd-4a7a-99fb-76499d89e7d1",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C23",
+      "claim": "pHSCs are functionally normal and are not able to transplant AML.",
+      "claim_type": "EXPLICIT",
+      "source": "pHSCs are functionally normal and are not able to transplant AML, but upon accumulation of additional mutations, they give rise to leukemic stem cells (LSCs) that are able to self-renew and recapitulate AML disease upon transplantation (Jan et al., 2012; Thomas and Majeti, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on AML biology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "9dfbb29a-8266-4428-9e47-d9912e46a79c",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C24",
+      "claim": "pHSCs give rise to leukemic stem cells (LSCs) upon accumulation of additional mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "pHSCs are functionally normal and are not able to transplant AML, but upon accumulation of additional mutations, they give rise to leukemic stem cells (LSCs) that are able to self-renew and recapitulate AML disease upon transplantation (Jan et al., 2012; Thomas and Majeti, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on AML biology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "05197eb5-03cf-4ae8-86c4-1ded4192a5e7",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C25",
+      "claim": "LSCs are able to self-renew and recapitulate AML disease upon transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "pHSCs are functionally normal and are not able to transplant AML, but upon accumulation of additional mutations, they give rise to leukemic stem cells (LSCs) that are able to self-renew and recapitulate AML disease upon transplantation (Jan et al., 2012; Thomas and Majeti, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on AML biology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "5de01d51-0bcb-4c0e-a9c9-7c1ce08c5599",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C26",
+      "claim": "LSCs give rise to the bulk leukemic blast cells in AML.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, LSCs give rise to the bulk leukemic blast cells in AML (Thomas and Majeti, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work on AML biology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "46398e44-72bd-4d47-9d19-13b8cb8b98e6",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C27",
+      "claim": "Targeted exome sequencing in AML samples have identified somatic mutations in tumor suppressor genes and oncogenes that link the lineage relationship of pHSCs, LSCs and blasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted exome sequencing in these samples have identified somatic mutations in tumor suppressor genes and oncogenes that link the lineage relationship of pHSCs, LSCs and blasts, providing the ground truth for our analyses (Corces-Zimmerman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work that provides validation for the current study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "42c80a24-5fdf-4259-bcb1-c1b0e4b427b0",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C28",
+      "claim": "The LSC and blast populations not only shared the same heteroplasmic variants, but also showed similar distribution and allele frequency at the cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-confidence mtDNA mutations, detected both from bulk ATAC-seq and single cell ATAC-seq, we found the LSC and blast populations not only shared the same heteroplasmic variants, but also showed similar distribution and allele frequency at the cellular level (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "06f0a04e-e64a-4069-8137-e5e243c00a13",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C29",
+      "claim": "LSC and blast populations are identical at the genetic level, but divergent at the epigenomic level.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate the two populations are identical at the genetic level, but divergent at the epigenomic level, consistent with previous studies (Corces et al., 2016; Schep et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the mtDNA data and supported by citations to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "a7a07148-0c67-47d7-b726-ff77afdba2f2",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C30",
+      "claim": "Four diagnostic mtDNA mutations were identified in the same cell in patient SU353.",
+      "claim_type": "EXPLICIT",
+      "source": "In patient SU353, we identified four diagnostic mtDNA mutations in the same cell (Figure 1F), which indicates these four mitochondrial variants already co-existed in the ancestral cell (see Materials and method).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "b896bce3-963d-4220-8ca8-a1d3b42b22aa",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C31",
+      "claim": "When a single variant allele has a frequency greater than 20%, the detection rate can be up to 90% with >20X coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that when a single variant allele has a frequency greater than 20%, the detection rate can be up to 90% with >20X coverage (e.g. site 6776).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "e6c407d4-0cd9-459c-8cfb-53caf56f8d21",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C32",
+      "claim": "When the variant allele has a frequency lower than 1%, the detection rate drops to 20% when the coverage is below 100X.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the variant allele has a frequency lower than 1%, the detection rate drops to 20% when the coverage is below 100X (e.g. site 6705).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "0cf35f71-d26b-4e52-aff6-aa694ed4c59f",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C33",
+      "claim": "With any combination of the four variants, 90% (sensitivity) of the cells can be unambiguously assigned to the correct lineage with just 20x mtDNA coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "With any combination of the four variants, 90% (sensitivity) of the cells can be unambiguously assigned to the correct lineage with just 20x mtDNA coverage (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "9516910c-0321-488a-9c1a-c43a1cd2fe53",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C34",
+      "claim": "Two mtDNA mutations identified in pHSCs were never detected (false positive = 0) in LSCs and blasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, two mtDNA mutations identified in other cells (e.g. pHSC specific site 2967,6268) were never detected (false positive = 0) in LSCs and blasts (Figure 1\u2014figure supplement 4), showing a high specificity of the method.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "b25afde3-321d-4144-96a2-3d1befd76f4b",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C35",
+      "claim": "Somatic DNA mutations in the mitochondrial genome are a powerful endogenous marker to identify clonal cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that somatic DNA mutations in the mitochondrial genome are a powerful endogenous marker to identify clonal cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results showing high sensitivity and specificity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "e858be55-1dea-4ee9-9b48-0413ef21bb1c",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C36",
+      "claim": "Heteroplasmic mtDNA mutations were identified in multiple cell populations of primary blood cells from healthy donors and all AML patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified heteroplasmic mtDNA mutations in multiple cell populations of primary blood cells from healthy donors and all AML patients (Figure 2\u2014figure supplement 1A, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1A and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "340e64c7-1e39-4a42-9fef-53a8487eb851",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C37",
+      "claim": "The heteroplasmic mtDNA mutations showed a similar mutant spectrum as observed by previous studies using cancer genomic data.",
+      "claim_type": "EXPLICIT",
+      "source": "The heteroplasmic mtDNA mutations showed a similar mutant spectrum as observed by previous studies using cancer genomic data (Figure 2\u2014figure supplement 1B and C) (Ju et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1B and C and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "5f689a60-197e-4a0c-9609-9f6cf1f75476",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C38",
+      "claim": "EMBLEM confirmed the previous lineage hierarchy of AML.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, EMBLEM, not only confirmed the previous lineage hierarchy of AML, but also extended the previous model of pHSC heterogeneity (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data presented in the manuscript that is consistent with prior models.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "d6dc0c8c-c943-4c48-8229-462fbce0ede2",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C39",
+      "claim": "EMBLEM extended the previous model of pHSC heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, EMBLEM, not only confirmed the previous lineage hierarchy of AML, but also extended the previous model of pHSC heterogeneity (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the discovery of pHSC-specific mtDNA mutations indicating subclonal heterogeneity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "d0c65d3a-470c-462c-a181-00b905c46bd1",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C40",
+      "claim": "The LSCs and their corresponding leukemic blasts have nearly identical heteroplasmic mtDNA mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the AML cases with LSCs sequenced by ATAC-seq, the LSCs and their corresponding leukemic blasts have nearly identical heteroplasmic mtDNA mutations (Figure 2B\u2013C and Figure 2\u2014figure supplement 1D), suggesting a direct lineage relationship and short generation history between LSCs and blasts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 2B-C and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "b02686c3-f8b4-4c88-898d-da7ab7e24f9e",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C41",
+      "claim": "There is a direct lineage relationship and short generation history between LSCs and blasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the AML cases with LSCs sequenced by ATAC-seq, the LSCs and their corresponding leukemic blasts have nearly identical heteroplasmic mtDNA mutations (Figure 2B\u2013C and Figure 2\u2014figure supplement 1D), suggesting a direct lineage relationship and short generation history between LSCs and blasts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation of nearly identical mtDNA mutations between LSCs and blasts.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "bc9ad7ba-d21c-4e72-bf67-eaf39d067374",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C42",
+      "claim": "Blast-associated mtDNA mutations were detected in pHSCs in all 11 cases.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected blast-associated mtDNA mutations in pHSCs in all 11 cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from 11 AML patient samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "84362163-2ca6-4dc1-9c49-e01672e1ecb7",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C43",
+      "claim": "Additional heteroplasmic mtDNA mutations present specifically in pHSCs were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also detected additional heteroplasmic mtDNA mutations present specifically in pHSCs (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "eea9b8d2-e4be-4667-b388-ddeed7de7183",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C44",
+      "claim": "Seven out of 11 cases have pHSC-unique heteroplasmic mtDNA mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 11 cases we investigated, seven cases have pHSC-unique heteroplasmic mtDNA mutations (Figure 2\u2014figure supplement 1D and E), a previously unrecognized level of pHSC heterogeneity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "5d5f853f-80d3-489e-8491-177582fca77b",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C45",
+      "claim": "pHSC-unique heteroplasmic mtDNA mutations represent a previously unrecognized level of pHSC heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 11 cases we investigated, seven cases have pHSC-unique heteroplasmic mtDNA mutations (Figure 2\u2014figure supplement 1D and E), a previously unrecognized level of pHSC heterogeneity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the novel discovery of pHSC-specific mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "722b9d05-a6f5-4225-98af-21885f3f1fbf",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C46",
+      "claim": "pHSCs are capable of long-term self-renewal and possess a clonal growth advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "pHSCs are capable of long-term self-renewal and possess a clonal growth advantage, allowing them to clonally outcompete normal HSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about pHSC biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "df788c46-c9b8-4a51-925d-2e6c8cbbea60",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C47",
+      "claim": "The clonal frequency of pHSCs is a poor prognostic factor for overall survival in AML.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the clonal frequency of pHSCs is a poor prognostic factor for overall survival in AML (Corces et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "8c2c1dac-d691-4153-a913-e86564c13c11",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C48",
+      "claim": "The discovery of pHSCs with distinct heteroplasmic mtDNA mutations suggests the existence of multiple distinct sub-clones of pHSCs in AML patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery of pHSCs with distinct heteroplasmic mtDNA mutations suggests the existence of multiple distinct sub-clones of pHSCs in AML patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation of distinct mtDNA mutations in pHSCs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "86bbedb3-2d76-4b4e-bdf9-6456b469f259",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C49",
+      "claim": "Single-cell ATAC-seq of HSCs from AML patient SU353 separated the HSCs into three lineages: Two clonal subpopulations termed 'clone 1' (18 cells) and 'clone 2' (104 cells), and a third population with no mtDNA variants (31 cells).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the heteroplasmic mtDNA variants from each single cell, which separated the HSCs into three lineages: Two clonal subpopulations termed 'clone 1' (18 cells) and 'clone 2' (104 cells), and a third population with no mtDNA variants despite sufficient mtDNA coverage (pHSC with WT mtDNA, 31 cells) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "e841d21f-03ff-4347-b2fd-649a97fd3d17",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C50",
+      "claim": "Clone 2 possessed pHSC-specific mtDNA mutations, while clone 1 possessed mtDNA mutations shared with LSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, clone 2 possessed pHSC-specific mtDNA mutations, while clone 1 possessed mtDNA mutations shared with LSCs, indicating clone1 is the lineage precursor of AML.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single-cell mtDNA mutation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "a3fd05b0-f1c4-4074-a91b-5e7b389c9eb0",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C51",
+      "claim": "Clone 1 is the lineage precursor of AML.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, clone 2 possessed pHSC-specific mtDNA mutations, while clone 1 possessed mtDNA mutations shared with LSCs, indicating clone1 is the lineage precursor of AML.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that clone 1 shares mutations with LSCs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "e57db397-d085-4523-98f7-2ce68ea4f4a2",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C52",
+      "claim": "Multiple pHSC clones arise in AML patients, and one subclone eventually evolved to become the LSC.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that multiple pHSC clones arise in AML patients, and one subclone eventually evolved to become the LSC (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the single-cell lineage tracing data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "738f402c-5ac8-4c33-9cac-fec7acabf9db",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C53",
+      "claim": "The chromatin accessibility profiles of pHSCs are more similar to HSCs than to LSCs or leukemic blasts.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatin accessibility profiles of pHSCs are more similar to HSCs than to LSCs or leukemic blasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by chromatin accessibility analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "71f78914-058a-4126-9550-f9b166b5ea53",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C54",
+      "claim": "The greatest deviation between HSC and other cell types occurred at DNA binding motifs of the transcription factor Jun/Fos.",
+      "claim_type": "EXPLICIT",
+      "source": "The greatest deviation between HSC and other cell types occurred at DNA binding motifs of the transcription factor Jun/Fos, a known key regulator of HSC biology (Santaguida et al., 2009) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chromatin accessibility data shown in Figure 2F and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "cb95e559-b59d-4f9c-899a-6f585282f077",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C55",
+      "claim": "Jun/Fos is a known key regulator of HSC biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The greatest deviation between HSC and other cell types occurred at DNA binding motifs of the transcription factor Jun/Fos, a known key regulator of HSC biology (Santaguida et al., 2009) (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "16b0c01a-b87e-4652-908d-76ddcf307f96",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C56",
+      "claim": "The three lineages of pHSCs revealed by mtDNA mutations showed distinctive chromatin profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the three lineages of pHSCs revealed by mtDNA mutations also showed distinctive chromatin profiles (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chromatin accessibility data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "2c19e710-c4de-420a-ba84-a45212f3a0f4",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C57",
+      "claim": "Clone 1 pHSC, which gives rise to the LSC and AML leukemia, is already more similar to LSCs and blasts in its chromatin accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Clone 1 pHSC, which gives rise to the LSC and AML leukemia, is already more similar to LSCs and blasts in its chromatin accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by chromatin accessibility analysis comparing different clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "36647934-ac47-4255-b28a-e1a5d6641a2d",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C58",
+      "claim": "Clone 2 that comprises the larger fraction of pHSCs exhibited variable chromatin profiles at the single-cell level that spanned the range of normal HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, clone 2 that comprises the larger fraction of pHSCs exhibited variable chromatin profiles at the single-cell level that spanned the range of normal HSCs, pHSC with WT mtDNA(WT cells), is also diverged from normal HSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by chromatin accessibility analysis of clone 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "8c06df6e-8ddd-4a96-b6a9-2f6848d34338",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C59",
+      "claim": "Both lineage tracing and single cell epigenomic states indicate clone 1 as the original stem cell of the AML in patient SU353.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both lineage tracing and single cell epigenomic states indicate clone 1 as the original stem cell of the AML in patient SU353.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined lineage and epigenomic data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "971e08b0-8adf-4d62-9f2b-111f02389cbc",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C60",
+      "claim": "Supervised comparison of the chromatin accessibility profiles among clonal sub-populations identified distinct and significantly enriched transcription factor motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Supervised comparison of the chromatin accessibility profiles among these clonal sub-populations further identified distinct and significantly enriched transcription factor motifs (Figure 2H and Figure 2\u2014figure supplement 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by chromatin accessibility analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "c44ccbcf-b1e1-4a51-9269-5f1403fed447",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C61",
+      "claim": "The heterogeneity of HSCs from AML patients exists both on a genetic and epigenomic level.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate the heterogeneity of HSCs from AML patients both on a genetic and epigenomic level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the combined genetic and epigenomic data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "7e61d948-fbee-456c-85c7-ab5830a867a8",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C62",
+      "claim": "EMBLEM is applicable to any eukaryote.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach is applicable to any eukaryote, does not require genetic engineering or genome editing, and is cost effective as the lineage information comes 'for free' on top of epigenomic insights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the fact that all eukaryotes have mitochondria with mtDNA.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "4ca3e5ee-8db6-417a-9475-e98f0dffcb53",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C63",
+      "claim": "EMBLEM does not require genetic engineering or genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach is applicable to any eukaryote, does not require genetic engineering or genome editing, and is cost effective as the lineage information comes 'for free' on top of epigenomic insights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key feature of the method as it uses endogenous mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "30c5b1f4-28f4-457c-b843-bc9d516f33a1",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C64",
+      "claim": "EMBLEM is cost effective as the lineage information comes 'for free' on top of epigenomic insights.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach is applicable to any eukaryote, does not require genetic engineering or genome editing, and is cost effective as the lineage information comes 'for free' on top of epigenomic insights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the fact that mtDNA is already sequenced in ATAC-seq data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "38af4f05-48c3-4fae-8c04-22ece1535528",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C65",
+      "claim": "EMBLEM enables clonotype tracing in existing ATAC-seq data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "An important advantage of EMBLEM is that we enable clonotype tracing in existing ATAC-seq data sets and hierarchical lineage construction from ATAC-seq that thousands of labs have already generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the fact that the method can be applied to already-generated data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "be47daf0-1983-4c66-a097-27a5d63ff4f6",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C66",
+      "claim": "All future ATAC-seq data acquired for other inquiries will also have the benefit of lineage information.",
+      "claim_type": "EXPLICIT",
+      "source": "All future ATAC-seq data acquired for other inquiries will also have the benefit of lineage information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the fact that mtDNA is sequenced in all ATAC-seq experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "67ad2dfb-b705-4be9-98e6-6e5190997ef6",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C67",
+      "claim": "EMBLEM may be extended to other single cell technologies, in which mtDNA is sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "EMBLEM may also be extended to other single cell technologies, in which mtDNA is sequenced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "d99d8fc4-b51c-444f-837b-fed0afa151d8",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C68",
+      "claim": "EMBLEM is successful even with low frequency heteroplasmic mutations, detection of rare clones in a population, and authentic clinical samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that EMBLEM is successful even with low frequency heteroplasmic mutations, detection of rare clones in a population, and authentic clinical samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "6a49a862-71a3-4a77-976c-126ef33a60b3",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C69",
+      "claim": "Ludwig et al. (2019) reported the feasibility of using mtDNA and single cell genomics for lineage tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "During revision of this work, Ludwig et al. (2019) reported the feasibility of using mtDNA and single cell genomics for lineage tracing, which independently validates the potentially broad utility of this approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to concurrent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "de7979e8-d0f3-4693-ac89-0c8b965eda3e",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C70",
+      "claim": "One limitation of EMBLEM is absence of mtDNA mutations in cells and tissues of embryos and young animals.",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation of this method is absence of mtDNA mutations in cells and tissues of embryos and young animals, which precluded us from applying EMBLEM to published scATAC-seq data of early animal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation based on the biology of mtDNA mutation accumulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "73cdd43c-7c6a-47d8-a37e-a28fcff4259f",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C71",
+      "claim": "The possibility of selective mitochondrial inheritance or intercellular mitochondria transfer may affect the accuracy of inferred lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the possibility of selective mitochondrial inheritance or intercellular mitochondria transfer may affect the accuracy of inferred lineages (Mishra and Chan, 2014; Moschoi et al., 2016; Marlein et al., 2017; Hayakawa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "599dfb14-3379-4e37-bc24-80a4750fa9a6",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C72",
+      "claim": "Asymmetric transmission of mitochondria would not necessarily affect cellular lineage tracing, as long as the variant alleles are randomly segregated.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, asymmetric transmission of mitochondria would not necessarily affect cellular lineage tracing, as long as the variant alleles are randomly segregated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration about the method's robustness.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "42a1e5a3-17a9-46f4-93d2-7b4dbf055d0d",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C73",
+      "claim": "Species-specific mtDNA always paired with species-specific nuclear genomic DNA in a human-mouse mixing experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Using scATAC-seq data from a mixing experiment with human and mouse cells (Satpathy et al., 2018), we found species-specific mtDNA always paired with species-specific nuclear genomic DNA (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from a mixing experiment shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "99700f99-3a37-43f0-a9b4-66dca3dc8255",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C74",
+      "claim": "Mitochondrial horizontal transfer is not a confounder of this study and does not universally occur between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that mitochondrial horizontal transfer is not a confounder of our study and does not universally occur between cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the species-mixing experiment results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "229eba7b-0831-4fe8-9ca4-ef78a2e0f8ba",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C75",
+      "claim": "The pHSC population is heterogeneous, with evidence of multiple mtDNA clones.",
+      "claim_type": "EXPLICIT",
+      "source": "mtDNA lineage tracing produced new insights concerning the pHSC, the human hematopoietic stem cell that suffers the first oncogenic mutation in AML evolution. Our results add to the evidence that the pHSC population is heterogeneous, with evidence of multiple mtDNA clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the discovery of multiple distinct mtDNA clones in pHSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "57867f18-00fb-4b3b-9859-6e5f040f435b",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C76",
+      "claim": "The pHSC lineage that gives rise to the subsequent acute myeloid leukemia is not the lineage with the best competitive potential among pHSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the pHSC lineage that gives rise to the subsequent acute myeloid leukemia is not the lineage with the best competitive potential among pHSCs, as the leukemogenic lineage is often in the minority.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the observation that clone 1, which gives rise to AML, is smaller than clone 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "ea234945-3a36-4a2b-af89-8a3073b83952",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C77",
+      "claim": "pHSC burden is a strong poor prognostic predictor of AML survival.",
+      "claim_type": "EXPLICIT",
+      "source": "pHSC burden is a strong poor prognostic predictor of AML survival (Corces et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "7c377b92-94fc-44f1-93e7-35b0560b572c",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C78",
+      "claim": "High pHSC burden may reflect the diversity of pHSCs or the underlying mutational processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that high pHSC burden may reflect the diversity of pHSCs or the underlying mutational processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a new interpretation based on the findings of pHSC heterogeneity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "9fa5a2ad-2cff-4041-8ae4-2d0b4f3abc8f",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C79",
+      "claim": "43M paired-end ATAC-seq reads (2 \u00d7 50 bp) yielded the same coverage of mtDNA as 747M paired-end reads (2 \u00d7 250 bp) from WGS-H data.",
+      "claim_type": "EXPLICIT",
+      "source": "43M paired-end ATAC-seq reads (2 \u00d7 50 bp) yielded the same coverage of mtDNA as 747M paired-end reads (2 \u00d7 250 bp) from WGS-H data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "ec459278-7d01-4484-a570-76ba80783385",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C80",
+      "claim": "During DNA transposition and amplification in cells, mitochondrial DNA is also amplified at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "During DNA transposition and amplification in cells, mitochondrial DNA is also amplified at the same time (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of what happens during the ATAC-seq protocol.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "4f7acfd9-4d24-40f6-8eec-4433b2f5843b",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C81",
+      "claim": "High drop-out rate is a common challenge for single-cell technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "While high drop-out rate is a common challenge for single-cell technologies (Kharchenko et al., 2014), computational imputation of the missing information from single cell data can address this problem (Zhang and Zhang, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on single-cell technologies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "e9a24344-4c73-45b6-af11-63b2badeb5bb",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C82",
+      "claim": "Computational imputation of the missing information from single cell data can address the drop-out problem.",
+      "claim_type": "EXPLICIT",
+      "source": "While high drop-out rate is a common challenge for single-cell technologies (Kharchenko et al., 2014), computational imputation of the missing information from single cell data can address this problem (Zhang and Zhang, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work on computational methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "df3d2f67-ead4-4eef-a89f-a0201bb0fe36",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C83",
+      "claim": "When multiple mtDNA variants are co-detected in multiple single cells, we can infer their origin and linkage in the ancestral cell.",
+      "claim_type": "EXPLICIT",
+      "source": "When multiple mtDNA variants are co-detected in multiple single cells, we can infer their origin and linkage in the ancestral cell (see Materials and method).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological principle of the lineage inference approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "1ad9bbff-c2cf-4668-95d8-fed6ff6f9ba1",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "claim_id": "C84",
+      "claim": "Cells containing any one of the linked variants will still inform their origin from the same lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cells containing any one of these variants will still inform their origin from the same lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the principle of linked variants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "489fc50b-660e-432c-8412-83d6090cf568",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ATAC-seq substantially enriches for mitochondrial DNA compared to other sequencing methods. The authors demonstrate that ATAC-seq provides 17-fold or greater enrichment of mtDNA compared to whole exome or whole genome sequencing, achieving ~18,000X coverage of mtDNA in GM12878 cells. This enrichment is attributed to mtDNA being non-chromatinized and therefore highly accessible to transposase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 and C79 provide quantitative experimental data comparing ATAC-seq to other sequencing methods (Figure 1B, Figure 1\u2014figure supplement 2A), demonstrating substantial mtDNA enrichment. Claims C13 and C80 provide the mechanistic explanation based on established knowledge of mtDNA structure. The data are internally consistent and the comparison is appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "de66ba9c-59ac-4eb0-a901-c9f586fcc9cf",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ATAC-seq detects both homoplasmic and heteroplasmic mtDNA variants in GM12878 cells. The authors identified 27 mitochondrial variants total: 13 homoplasmic variants (VAF >90%) and 14 heteroplasmic variants with VAFs ranging from 0.1% to 24%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 are supported by experimental data shown in Figure 1C and supplementary figures. The bimodal distribution of variant allele frequencies is clearly demonstrated, and the classification into homoplasmic vs. heteroplasmic variants follows established definitions (C11).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "3aa20560-61e1-47df-9177-a1c2eee9948a",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mitochondrial DNA has properties that make it suitable for lineage tracing: it is a ~16 kb circular genome with ~10-fold higher mutation rate than nuclear DNA, accumulates irreversible mutations passed to daughter cells, mutations are mostly noncoding/passenger, and cells contain hundreds to >10,000 mitochondria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 are based on established knowledge about mtDNA biology and are supported by appropriate citations to prior work. These properties are well-documented in the literature and provide the biological foundation for the EMBLEM method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "a3a192e3-b448-4bd1-9187-f2a90aba6663",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single-cell analysis reveals that heteroplasmic mtDNA mutations can be used for lineage tracing. The authors show that mutation 3082 is widely distributed among single cells at low frequency per cell, and argue that cells sharing identical mutations must have descended from a common ancestor because independent occurrence is extremely unlikely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 is supported by single-cell data (Figure 1E). Claims C19-C20 provide the statistical reasoning for lineage inference, which is detailed in Materials and Methods. The probability calculation showing independent occurrence is extremely unlikely is mathematically sound. Claim C21 follows logically from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "805dcd71-7128-4be7-a47c-ae49110311c9",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EMBLEM achieves high sensitivity and specificity for single-cell lineage reconstruction. The method achieves 90% detection rate for variants with >20% VAF at >20X coverage, and combining four variants enables 90% sensitivity for lineage assignment. Specificity is demonstrated by zero false positives for pHSC-specific mutations in LSCs and blasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 provide quantitative performance metrics supported by data in Figures 1G-H and supplementary figures. The sensitivity analysis as a function of VAF and coverage is rigorous. The false positive rate of 0 (C34) demonstrates high specificity. These data collectively support the broader claim C2 about high sensitivity and specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "d427ce77-b0ab-426e-a273-a4581d885e6b",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The hierarchical model of AML development is established by prior work. HSCs acquire initiating mutations to become pre-leukemic HSCs (pHSCs), which are functionally normal. Upon additional mutations, pHSCs give rise to leukemic stem cells (LSCs) that can self-renew and transplant disease. LSCs then give rise to bulk leukemic blasts. This hierarchy has been validated by targeted exome sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 describe the established AML hierarchy model and are all supported by appropriate citations to prior work (Jan et al., 2012; Corces-Zimmerman et al., 2014; Thomas and Majeti, 2017). This provides the biological context and ground truth for validating EMBLEM.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "a7d724bc-e078-42bb-b0ba-94143328c30f",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LSCs and blast populations share identical heteroplasmic mtDNA mutations with similar distribution and allele frequency at the cellular level, indicating they are genetically identical but epigenomically divergent, with a direct lineage relationship and short generation history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C40 are supported by data in Figure 1\u2014figure supplement 4 and Figures 2B-C showing shared mtDNA mutations. Claims C29 and C41 are reasonable inferences from this data and are consistent with prior studies (Corces et al., 2016; Schep et al., 2017). The interpretation is logical and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "49570dc8-dc30-455b-be7f-bda80a9b13de",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Heteroplasmic mtDNA mutations were identified in multiple cell populations from healthy donors and all AML patients, showing a mutational spectrum similar to previous cancer genomic studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by data in Figure 2\u2014figure supplement 1A and Supplementary file 2. Claim C37 is supported by data in Figure 2\u2014figure supplement 1B-C and comparison to prior work (Ju et al., 2014). The consistency with prior studies validates the mutation calling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "3e1dc5f6-e95f-4792-9dc5-0b1747953ed8",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "EMBLEM confirms the AML lineage hierarchy and reveals previously unrecognized pHSC heterogeneity. Blast-associated mtDNA mutations were detected in pHSCs in all 11 cases, and 7 of 11 cases showed pHSC-unique heteroplasmic mutations, suggesting multiple distinct pHSC sub-clones exist in AML patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 provide quantitative data from 11 AML patient samples. The discovery of pHSC-specific mutations (C43-C45) is novel and well-documented in Figure 2C and supplementary figures. Claims C38-C39 and C48 are reasonable conclusions from this data. The finding extends prior models of pHSC biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "9802d266-7f86-4107-aafe-590b3b5d8ec8",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Single-cell ATAC-seq of pHSCs from patient SU353 identified three lineages: clone 1 (18 cells) with mutations shared with LSCs, clone 2 (104 cells) with pHSC-specific mutations, and cells with wild-type mtDNA (31 cells). Clone 1 is identified as the lineage precursor of AML, confirming that multiple pHSC clones arise and one evolves to become the LSC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by single-cell data in Figure 2D. Claims C50-C52 are logical inferences from the mutation patterns: clone 1 shares mutations with LSCs while clone 2 has unique mutations. The phylogenetic analysis (Figure 2\u2014figure supplement 2A) supports these lineage relationships. The interpretation is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "e814fb9c-6430-4dee-b35a-b2f6170e11e6",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Integration of lineage and epigenomic data reveals that pHSC clones have distinct chromatin accessibility profiles. Clone 1 pHSCs (which give rise to AML) are already more similar to LSCs and blasts in chromatin accessibility, particularly at Jun/Fos motifs. Clone 2 shows variable profiles spanning the range of normal HSCs. This demonstrates genetic and epigenomic heterogeneity in pHSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C60 are supported by chromatin accessibility analysis shown in Figures 2E-H and supplementary figures. The ChromVAR analysis appropriately quantifies TF motif accessibility. Claim C54 identifies Jun/Fos as the most variable motif, supported by citation (C55). The integration of clonotype with chromatin profiles (C56-C59) is a key strength of EMBLEM. Claim C61 is a well-supported conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "41a7125b-fa20-4d41-96ad-fa7d701e698e",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The pHSC population is heterogeneous with multiple mtDNA clones, and unexpectedly, the pHSC lineage that gives rise to AML is not the lineage with the best competitive potential, as the leukemogenic lineage is often in the minority.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is supported by the discovery of multiple distinct mtDNA clones in pHSCs across multiple patients. Claim C76 is supported by the observation that clone 1 (18 cells) is smaller than clone 2 (104 cells) in patient SU353, yet clone 1 gives rise to AML. This is a novel and unexpected finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "86f40c66-244e-44ae-87bd-69bb1c36479c",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "EMBLEM extends lineage tracing to any eukaryotic organism without genetic engineering. The method is applicable to any eukaryote, does not require genetic engineering or genome editing, is cost-effective as lineage information comes from existing ATAC-seq data, and can be applied to existing and future ATAC-seq datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are logically sound as all eukaryotes have mitochondria with mtDNA. Claim C64 is reasonable as mtDNA is already sequenced in ATAC-seq. Claims C65-C66 about applicability to existing/future datasets are valid. However, claim C3 overstates applicability to \"any eukaryotic organism\" given the acknowledged limitation (C70) that embryos and young animals lack sufficient mtDNA mutations. The result is supported but with caveats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "b374a9b6-0cc4-403f-8259-4a8064cca370",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "EMBLEM may be extended to other single-cell technologies that sequence mtDNA, and is successful with low-frequency heteroplasmic mutations, rare clones, and clinical samples. Independent work by Ludwig et al. (2019) validates the broad utility of using mtDNA for lineage tracing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by the experimental results throughout the manuscript. Claim C69 provides independent validation from concurrent work. Claim C67 is speculative but reasonable given the principle of the method. The success with challenging samples (low frequency mutations, rare clones, clinical samples) is well-demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "0dce5029-da07-44ec-8c5b-204dc602747a",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "EMBLEM has limitations including absence of mtDNA mutations in embryos and young animals, and potential confounding by selective mitochondrial inheritance or intercellular transfer. However, species-mixing experiments show mtDNA pairs with species-specific nuclear DNA, suggesting horizontal transfer is not a universal confounder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is a valid limitation based on mtDNA mutation biology. Claim C71 identifies potential confounders supported by citations. Claim C72 provides theoretical consideration of robustness. Claims C73-C74 are supported by mixing experiment data (Figure 2\u2014figure supplement 4) that addresses the horizontal transfer concern. The authors appropriately acknowledge limitations and provide data to address key concerns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "99e4c7fa-9b94-4039-bec8-9e82ed843f59",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "High pHSC burden is a poor prognostic factor in AML, and the authors suggest this may reflect pHSC diversity or underlying mutational processes rather than just enhanced self-renewal and competitive ability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C77 is supported by citation to prior work (Corces et al., 2016). However, claim C78 is speculative and represents a reinterpretation of the prognostic association based on the finding of pHSC heterogeneity. While this is a reasonable hypothesis, it requires additional validation and the authors acknowledge this should be addressed in future studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "ca336895-e69e-4124-9d1f-b2b3c63b52ff",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "High dropout rate is a common challenge in single-cell technologies but can be addressed by computational imputation. When multiple mtDNA variants are co-detected in multiple cells, their origin and linkage in the ancestral cell can be inferred, and cells containing any linked variant inform their common lineage origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 are supported by citations to prior work on single-cell technologies and computational methods. Claims C83-C84 describe the methodological approach for handling dropout and inferring linked variants, which is detailed in Materials and Methods. The logic is sound and addresses a key technical challenge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "6351db68-c9cc-4977-98c3-80681e248019",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior lineage tracing methods using CRISPR-Cas9 genome editing or naturally occurring somatic mutations have limitations. CRISPR-based methods cannot be used in living humans, archival samples, or wild-type organisms. Natural mutation-based methods typically require single-cell genome sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 accurately describe prior work and its limitations, supported by appropriate citations (Spanjaard et al., 2018; Woodworth et al., 2017; Lee-Six et al., 2018; Wang et al., 2014). This provides appropriate context for the motivation and novelty of EMBLEM.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "886918ac-23bf-459c-a25e-de4064579d29",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Four diagnostic mtDNA mutations were identified co-occurring in the same cell in patient SU353, indicating these variants co-existed in the ancestral cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by data in Figure 1F showing co-detection of four mutations in single cells. The inference that co-occurring mutations existed in the ancestral cell is logical and consistent with the lineage tracing framework detailed in Materials and Methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    },
+    {
+      "id": "6ab1f4ec-35a9-431e-a4f6-cf82463f000b",
+      "content_id": "8ca0d4a5-5add-4fae-b4f1-bca08edb57ed",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Pre-leukemic HSCs (pHSCs) are capable of long-term self-renewal and possess a clonal growth advantage, allowing them to outcompete normal HSCs. The clonal frequency of pHSCs is a poor prognostic factor for overall survival in AML.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is based on established knowledge about pHSC biology. Claim C47 is supported by citation to prior work (Corces et al., 2016). These claims provide important biological context for interpreting the findings about pHSC heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:31:42.264433Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "875d720d-8a0e-4628-8e3c-6bb879dac644",
+      "result_id": "489fc50b-660e-432c-8412-83d6090cf568"
+    },
+    {
+      "claim_id": "54794230-3871-432f-aa2d-9dfeb5150d0b",
+      "result_id": "489fc50b-660e-432c-8412-83d6090cf568"
+    },
+    {
+      "claim_id": "b528443f-ac1f-4e83-a63d-f13a4f66705a",
+      "result_id": "489fc50b-660e-432c-8412-83d6090cf568"
+    },
+    {
+      "claim_id": "c349c0f9-b207-4d13-b89c-ab89ad64b7d5",
+      "result_id": "489fc50b-660e-432c-8412-83d6090cf568"
+    },
+    {
+      "claim_id": "5c8b7ae9-d07c-4a7c-bbef-0ccbe9c65f63",
+      "result_id": "489fc50b-660e-432c-8412-83d6090cf568"
+    },
+    {
+      "claim_id": "9fa5a2ad-2cff-4041-8ae4-2d0b4f3abc8f",
+      "result_id": "489fc50b-660e-432c-8412-83d6090cf568"
+    },
+    {
+      "claim_id": "ec459278-7d01-4484-a570-76ba80783385",
+      "result_id": "489fc50b-660e-432c-8412-83d6090cf568"
+    },
+    {
+      "claim_id": "ec02f394-3f72-43ec-b2b9-3288a2dca38a",
+      "result_id": "de66ba9c-59ac-4eb0-a901-c9f586fcc9cf"
+    },
+    {
+      "claim_id": "01d2865f-5fab-4169-b465-9ca541dd985b",
+      "result_id": "de66ba9c-59ac-4eb0-a901-c9f586fcc9cf"
+    },
+    {
+      "claim_id": "8d6eb157-b6c8-43cf-b14c-beb0d8662ead",
+      "result_id": "de66ba9c-59ac-4eb0-a901-c9f586fcc9cf"
+    },
+    {
+      "claim_id": "2ef3e579-8c07-4dd1-a965-28718b5a9e1a",
+      "result_id": "3aa20560-61e1-47df-9177-a1c2eee9948a"
+    },
+    {
+      "claim_id": "14fe905b-5450-47f5-b8ba-132ebbea3453",
+      "result_id": "3aa20560-61e1-47df-9177-a1c2eee9948a"
+    },
+    {
+      "claim_id": "76dcc6e9-3497-4b14-96b2-5c0303757f95",
+      "result_id": "3aa20560-61e1-47df-9177-a1c2eee9948a"
+    },
+    {
+      "claim_id": "2fcfe329-a47a-4faf-8655-45f613a47d7d",
+      "result_id": "3aa20560-61e1-47df-9177-a1c2eee9948a"
+    },
+    {
+      "claim_id": "2c628a1c-7c01-406e-bdbc-2f16599befc2",
+      "result_id": "a3a192e3-b448-4bd1-9187-f2a90aba6663"
+    },
+    {
+      "claim_id": "b8370239-d817-422d-9467-2f89ed07a748",
+      "result_id": "a3a192e3-b448-4bd1-9187-f2a90aba6663"
+    },
+    {
+      "claim_id": "cd2eed32-9b28-4e24-8744-3a5de191b578",
+      "result_id": "a3a192e3-b448-4bd1-9187-f2a90aba6663"
+    },
+    {
+      "claim_id": "d34e2c61-dd5b-41eb-a9b6-896a9a560c9d",
+      "result_id": "a3a192e3-b448-4bd1-9187-f2a90aba6663"
+    },
+    {
+      "claim_id": "f0a29790-b5fb-46ef-a071-455bbcdcbfcc",
+      "result_id": "805dcd71-7128-4be7-a47c-ae49110311c9"
+    },
+    {
+      "claim_id": "b896bce3-963d-4220-8ca8-a1d3b42b22aa",
+      "result_id": "805dcd71-7128-4be7-a47c-ae49110311c9"
+    },
+    {
+      "claim_id": "e6c407d4-0cd9-459c-8cfb-53caf56f8d21",
+      "result_id": "805dcd71-7128-4be7-a47c-ae49110311c9"
+    },
+    {
+      "claim_id": "0cf35f71-d26b-4e52-aff6-aa694ed4c59f",
+      "result_id": "805dcd71-7128-4be7-a47c-ae49110311c9"
+    },
+    {
+      "claim_id": "9516910c-0321-488a-9c1a-c43a1cd2fe53",
+      "result_id": "805dcd71-7128-4be7-a47c-ae49110311c9"
+    },
+    {
+      "claim_id": "b25afde3-321d-4144-96a2-3d1befd76f4b",
+      "result_id": "805dcd71-7128-4be7-a47c-ae49110311c9"
+    },
+    {
+      "claim_id": "b9878bb5-6a0b-4963-902d-a5465ee51e40",
+      "result_id": "d427ce77-b0ab-426e-a273-a4581d885e6b"
+    },
+    {
+      "claim_id": "dbcdcee6-00bd-4a7a-99fb-76499d89e7d1",
+      "result_id": "d427ce77-b0ab-426e-a273-a4581d885e6b"
+    },
+    {
+      "claim_id": "9dfbb29a-8266-4428-9e47-d9912e46a79c",
+      "result_id": "d427ce77-b0ab-426e-a273-a4581d885e6b"
+    },
+    {
+      "claim_id": "05197eb5-03cf-4ae8-86c4-1ded4192a5e7",
+      "result_id": "d427ce77-b0ab-426e-a273-a4581d885e6b"
+    },
+    {
+      "claim_id": "5de01d51-0bcb-4c0e-a9c9-7c1ce08c5599",
+      "result_id": "d427ce77-b0ab-426e-a273-a4581d885e6b"
+    },
+    {
+      "claim_id": "46398e44-72bd-4d47-9d19-13b8cb8b98e6",
+      "result_id": "d427ce77-b0ab-426e-a273-a4581d885e6b"
+    },
+    {
+      "claim_id": "42c80a24-5fdf-4259-bcb1-c1b0e4b427b0",
+      "result_id": "a7d724bc-e078-42bb-b0ba-94143328c30f"
+    },
+    {
+      "claim_id": "06f0a04e-e64a-4069-8137-e5e243c00a13",
+      "result_id": "a7d724bc-e078-42bb-b0ba-94143328c30f"
+    },
+    {
+      "claim_id": "d0c65d3a-470c-462c-a181-00b905c46bd1",
+      "result_id": "a7d724bc-e078-42bb-b0ba-94143328c30f"
+    },
+    {
+      "claim_id": "b02686c3-f8b4-4c88-898d-da7ab7e24f9e",
+      "result_id": "a7d724bc-e078-42bb-b0ba-94143328c30f"
+    },
+    {
+      "claim_id": "e858be55-1dea-4ee9-9b48-0413ef21bb1c",
+      "result_id": "49570dc8-dc30-455b-be7f-bda80a9b13de"
+    },
+    {
+      "claim_id": "340e64c7-1e39-4a42-9fef-53a8487eb851",
+      "result_id": "49570dc8-dc30-455b-be7f-bda80a9b13de"
+    },
+    {
+      "claim_id": "5f689a60-197e-4a0c-9609-9f6cf1f75476",
+      "result_id": "3e1dc5f6-e95f-4792-9dc5-0b1747953ed8"
+    },
+    {
+      "claim_id": "d6dc0c8c-c943-4c48-8229-462fbce0ede2",
+      "result_id": "3e1dc5f6-e95f-4792-9dc5-0b1747953ed8"
+    },
+    {
+      "claim_id": "bc9ad7ba-d21c-4e72-bf67-eaf39d067374",
+      "result_id": "3e1dc5f6-e95f-4792-9dc5-0b1747953ed8"
+    },
+    {
+      "claim_id": "84362163-2ca6-4dc1-9c49-e01672e1ecb7",
+      "result_id": "3e1dc5f6-e95f-4792-9dc5-0b1747953ed8"
+    },
+    {
+      "claim_id": "eea9b8d2-e4be-4667-b388-ddeed7de7183",
+      "result_id": "3e1dc5f6-e95f-4792-9dc5-0b1747953ed8"
+    },
+    {
+      "claim_id": "5d5f853f-80d3-489e-8491-177582fca77b",
+      "result_id": "3e1dc5f6-e95f-4792-9dc5-0b1747953ed8"
+    },
+    {
+      "claim_id": "8c2c1dac-d691-4153-a913-e86564c13c11",
+      "result_id": "3e1dc5f6-e95f-4792-9dc5-0b1747953ed8"
+    },
+    {
+      "claim_id": "86bbedb3-2d76-4b4e-bdf9-6456b469f259",
+      "result_id": "9802d266-7f86-4107-aafe-590b3b5d8ec8"
+    },
+    {
+      "claim_id": "e841d21f-03ff-4347-b2fd-649a97fd3d17",
+      "result_id": "9802d266-7f86-4107-aafe-590b3b5d8ec8"
+    },
+    {
+      "claim_id": "a3fd05b0-f1c4-4074-a91b-5e7b389c9eb0",
+      "result_id": "9802d266-7f86-4107-aafe-590b3b5d8ec8"
+    },
+    {
+      "claim_id": "e57db397-d085-4523-98f7-2ce68ea4f4a2",
+      "result_id": "9802d266-7f86-4107-aafe-590b3b5d8ec8"
+    },
+    {
+      "claim_id": "738f402c-5ac8-4c33-9cac-fec7acabf9db",
+      "result_id": "e814fb9c-6430-4dee-b35a-b2f6170e11e6"
+    },
+    {
+      "claim_id": "71f78914-058a-4126-9550-f9b166b5ea53",
+      "result_id": "e814fb9c-6430-4dee-b35a-b2f6170e11e6"
+    },
+    {
+      "claim_id": "cb95e559-b59d-4f9c-899a-6f585282f077",
+      "result_id": "e814fb9c-6430-4dee-b35a-b2f6170e11e6"
+    },
+    {
+      "claim_id": "16b0c01a-b87e-4652-908d-76ddcf307f96",
+      "result_id": "e814fb9c-6430-4dee-b35a-b2f6170e11e6"
+    },
+    {
+      "claim_id": "2c19e710-c4de-420a-ba84-a45212f3a0f4",
+      "result_id": "e814fb9c-6430-4dee-b35a-b2f6170e11e6"
+    },
+    {
+      "claim_id": "36647934-ac47-4255-b28a-e1a5d6641a2d",
+      "result_id": "e814fb9c-6430-4dee-b35a-b2f6170e11e6"
+    },
+    {
+      "claim_id": "8c06df6e-8ddd-4a96-b6a9-2f6848d34338",
+      "result_id": "e814fb9c-6430-4dee-b35a-b2f6170e11e6"
+    },
+    {
+      "claim_id": "971e08b0-8adf-4d62-9f2b-111f02389cbc",
+      "result_id": "e814fb9c-6430-4dee-b35a-b2f6170e11e6"
+    },
+    {
+      "claim_id": "c44ccbcf-b1e1-4a51-9269-5f1403fed447",
+      "result_id": "e814fb9c-6430-4dee-b35a-b2f6170e11e6"
+    },
+    {
+      "claim_id": "229eba7b-0831-4fe8-9ca4-ef78a2e0f8ba",
+      "result_id": "41a7125b-fa20-4d41-96ad-fa7d701e698e"
+    },
+    {
+      "claim_id": "57867f18-00fb-4b3b-9859-6e5f040f435b",
+      "result_id": "41a7125b-fa20-4d41-96ad-fa7d701e698e"
+    },
+    {
+      "claim_id": "5dcfb253-3020-487e-9955-6b3f104de8a5",
+      "result_id": "86f40c66-244e-44ae-87bd-69bb1c36479c"
+    },
+    {
+      "claim_id": "7e61d948-fbee-456c-85c7-ab5830a867a8",
+      "result_id": "86f40c66-244e-44ae-87bd-69bb1c36479c"
+    },
+    {
+      "claim_id": "4ca3e5ee-8db6-417a-9475-e98f0dffcb53",
+      "result_id": "86f40c66-244e-44ae-87bd-69bb1c36479c"
+    },
+    {
+      "claim_id": "30c5b1f4-28f4-457c-b843-bc9d516f33a1",
+      "result_id": "86f40c66-244e-44ae-87bd-69bb1c36479c"
+    },
+    {
+      "claim_id": "38af4f05-48c3-4fae-8c04-22ece1535528",
+      "result_id": "86f40c66-244e-44ae-87bd-69bb1c36479c"
+    },
+    {
+      "claim_id": "be47daf0-1983-4c66-a097-27a5d63ff4f6",
+      "result_id": "86f40c66-244e-44ae-87bd-69bb1c36479c"
+    },
+    {
+      "claim_id": "67ad2dfb-b705-4be9-98e6-6e5190997ef6",
+      "result_id": "b374a9b6-0cc4-403f-8259-4a8064cca370"
+    },
+    {
+      "claim_id": "d99d8fc4-b51c-444f-837b-fed0afa151d8",
+      "result_id": "b374a9b6-0cc4-403f-8259-4a8064cca370"
+    },
+    {
+      "claim_id": "6a49a862-71a3-4a77-976c-126ef33a60b3",
+      "result_id": "b374a9b6-0cc4-403f-8259-4a8064cca370"
+    },
+    {
+      "claim_id": "de7979e8-d0f3-4693-ac89-0c8b965eda3e",
+      "result_id": "0dce5029-da07-44ec-8c5b-204dc602747a"
+    },
+    {
+      "claim_id": "73cdd43c-7c6a-47d8-a37e-a28fcff4259f",
+      "result_id": "0dce5029-da07-44ec-8c5b-204dc602747a"
+    },
+    {
+      "claim_id": "599dfb14-3379-4e37-bc24-80a4750fa9a6",
+      "result_id": "0dce5029-da07-44ec-8c5b-204dc602747a"
+    },
+    {
+      "claim_id": "42a1e5a3-17a9-46f4-93d2-7b4dbf055d0d",
+      "result_id": "0dce5029-da07-44ec-8c5b-204dc602747a"
+    },
+    {
+      "claim_id": "99700f99-3a37-43f0-a9b4-66dca3dc8255",
+      "result_id": "0dce5029-da07-44ec-8c5b-204dc602747a"
+    },
+    {
+      "claim_id": "ea234945-3a36-4a2b-af89-8a3073b83952",
+      "result_id": "99e4c7fa-9b94-4039-bec8-9e82ed843f59"
+    },
+    {
+      "claim_id": "7c377b92-94fc-44f1-93e7-35b0560b572c",
+      "result_id": "99e4c7fa-9b94-4039-bec8-9e82ed843f59"
+    },
+    {
+      "claim_id": "4f7acfd9-4d24-40f6-8eec-4433b2f5843b",
+      "result_id": "ca336895-e69e-4124-9d1f-b2b3c63b52ff"
+    },
+    {
+      "claim_id": "e9a24344-4c73-45b6-af11-63b2badeb5bb",
+      "result_id": "ca336895-e69e-4124-9d1f-b2b3c63b52ff"
+    },
+    {
+      "claim_id": "df3d2f67-ead4-4eef-a89f-a0201bb0fe36",
+      "result_id": "ca336895-e69e-4124-9d1f-b2b3c63b52ff"
+    },
+    {
+      "claim_id": "1ad9bbff-c2cf-4668-95d8-fed6ff6f9ba1",
+      "result_id": "ca336895-e69e-4124-9d1f-b2b3c63b52ff"
+    },
+    {
+      "claim_id": "31050e8f-aa32-4382-b165-53ece564d431",
+      "result_id": "6351db68-c9cc-4977-98c3-80681e248019"
+    },
+    {
+      "claim_id": "caf510e9-dbf4-4872-a9eb-e1395afda4d1",
+      "result_id": "6351db68-c9cc-4977-98c3-80681e248019"
+    },
+    {
+      "claim_id": "8cb2baa2-8093-4ce1-993a-bac170422953",
+      "result_id": "6351db68-c9cc-4977-98c3-80681e248019"
+    },
+    {
+      "claim_id": "a7a07148-0c67-47d7-b726-ff77afdba2f2",
+      "result_id": "886918ac-23bf-459c-a25e-de4064579d29"
+    },
+    {
+      "claim_id": "722b9d05-a6f5-4225-98af-21885f3f1fbf",
+      "result_id": "6ab1f4ec-35a9-431e-a4f6-cf82463f000b"
+    },
+    {
+      "claim_id": "df788c46-c9b8-4a51-925d-2e6c8cbbea60",
+      "result_id": "6ab1f4ec-35a9-431e-a4f6-cf82463f000b"
+    }
+  ],
+  "comparisons": []
+}

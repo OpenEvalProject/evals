@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Three monkeys showed robust decision biases toward the large-reward option that were sensitive to both reward asymmetry and experience-dependent changes in perceptual sensitivity. The monkeys differed in overall bias magnitude and showed session-by-session variations, with near-zero lapse rates indicating task comprehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, C12, C23-C28 collectively demonstrate that all three monkeys exhibited adaptive biases in response to reward asymmetries and perceptual sensitivity changes. The behavioral data (Figure 2) shows systematic relationships between bias and sensitivity, with statistical support for these patterns. The near-zero lapse rates confirm task engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C29",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The monkeys' choices and response times were consistent with a drift-diffusion model (DDM) that included both momentary-evidence (me) and decision-rule (z) bias parameters. Model fits indicated that both bias parameters were necessary to account for the data, with relatively small context-dependent differences in non-decision times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13, C29, C31-C32, C35-C37 are supported by the HDDM fitting results (Figure 3, Table 2). The model comparison (Table 2) shows that the full model with both me and z parameters significantly outperformed reduced models. The fits provided parsimonious accounts of both choice and RT data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The monkeys' adjustments to momentary evidence (me) favored the large-reward choice but were larger than optimal, while adjustments to decision rule (z) favored the small-reward choice. These adjustments led to near-maximal (97% of maximum) but not exactly maximal reward rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C15, C40-C42, C44-C46 are supported by the optimality analysis (Figures 4-5). The data show that monkeys achieved mean reward ratios of 0.977-0.983 relative to optimal (C42), with adjustments falling within 97% RTrialmax contours (C45). The systematic deviations from optimality in me and z are documented in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C99"
+    ],
+    "result": "The monkeys' session-by-session adjustments in me and z were adapted to idiosyncratic, context-specific reward functions that varied with perceptual sensitivity and reward ratios. The adjustments co-varied with properties of the reward function including its orientation and conditionally optimal values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53, C99 are supported by the reward function analysis (Figure 6). The data show that reward functions differed across monkeys and contexts (C47), with systematic relationships between bias adjustments and reward function properties (C50-C51). Control analyses with shuffled sessions weakened these correlations (C52), supporting session-specific tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C100",
+      "C101"
+    ],
+    "result": "The monkeys' bias adjustments can be accounted for by a satisficing, gradient-based learning model that assumes initial over-biasing in momentary evidence (me), followed by gradient-based adjustments that terminate at good-enough reward outcomes. The 'over-me' model outperformed alternative models in predicting the observed bias patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16, C55-C60, C100-C101 are supported by the model comparison (Figure 8). The 'over-me' model uniquely captured the pattern of positive \u0394me and negative \u0394z (C57), showed the strongest correlations with actual adjustments (C58), and recapitulated relationships with reward function orientation (C59). Control simulations with random starting points failed to reproduce the patterns (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The satisficing model's first key assumption is that monkeys started from an over-biased state rather than unbiased. This over-reaction is rational because the penalty for under-reaction exceeds that for over-reaction, as evidenced by asymmetric gradients in the reward function. The data were most consistent with initial over-biasing in momentary evidence (me).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C113 describe the first model assumption and its rationale. The assumption is supported by the finding that monkeys could have performed as well with unbiased decisions (C106), the asymmetric gradient structure (C110-C111), and the superior performance of the 'over-me' model (C113). The rationality argument is supported by prior literature (C108) and gradient analysis (C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The satisficing model's second key assumption is that monkeys made gradient-based adjustments to both me and z from the initial over-biased state. The primary support for this scheme is that steady-state biases measured in each session were tightly coupled to the shape of the reward function for that session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 describe the second model assumption. The assumption is supported by the tight coupling between session-specific biases and reward function properties shown in Figure 6 (C119). While the step-wise adjustments were too fast to observe directly (C118), the steady-state evidence provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The satisficing model's third key assumption is that the shallow plateau in the reward function near its peak supports satisficing solutions, as gradient-based adjustments may be sensitive only to relatively large gradients. The gradient magnitude near the peak can be increased by manipulating perceptual sensitivity, cautiousness, or timeout penalties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 describe the third model assumption and its implications. The assumption is supported by the observation that monkeys' adjustments fell within the shallow plateau region (Figure 5C) and the simulations showing how task parameters affect gradient steepness (Figure 8\u2014figure supplement 2, C122). The predictions are testable but not yet tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The satisficing model's fourth key assumption is that monkeys terminated adjustments upon reaching a good-enough reward outcome. This termination rule produced endpoints that approximated the monkeys' behavior reasonably well, though alternative mechanisms based on activity-dependent learning rates might also account for the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 describe the fourth model assumption and alternatives. The termination rule is supported by its ability to approximate monkey behavior (C125). The discussion of alternative mechanisms (C126-C127) acknowledges that other implementations might produce similar outcomes, which is appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The model predicts that changes in cautiousness (bound height) and perceptual sensitivity can alter the gradient asymmetry of the reward function, leading subjects with steeper gradients in the z dimension to show initial biases along that dimension. This prediction can be tested using speed-accuracy instructions and stimulus manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 present a testable prediction from the model. The prediction is supported by simulations (Figure 8\u2014figure supplement 3, C114) and is logically consistent with the model framework. The proposed experimental tests (C116) are appropriate and feasible, though not yet conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The model implies that the shape of the reward function peak can be manipulated to control whether behavior is more or less optimal. Increasing perceptual sensitivity or emphasizing accuracy sharpens the peak and should promote more optimal decision-making, while higher reward ratios create shallower gradients and may be more suitable for studying suboptimal behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 present implications of the model for experimental design. These implications are supported by simulations (Figure 8\u2014figure supplement 2, 4) showing how task parameters affect reward function shape. The predictions are logical extensions of the model framework and provide useful guidance for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C67",
+      "C68"
+    ],
+    "result": "The study used three rhesus macaques with extensive prior training on motion discrimination tasks. Data were collected from 61, 37, and 43 sessions for monkeys F, C, and A respectively, with large:small reward ratios averaging 1.34, 1.91, and 2.45 for the three monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20, C67-C68 describe the subjects and data collection. These are straightforward methodological details that are clearly stated and appropriately documented. The ethical approval (C20) and training history (C18-C19) are properly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "The study used hierarchical DDM (HDDM) fitting with Bayesian parameter estimation, performing 5 chains of MCMC sampling with 10,000-20,000 samples and accepting only fits with Gelman-Rubin statistic <1.01. Model comparisons showed that the full model significantly outperformed reduced models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72, C74 describe the HDDM fitting procedure and model comparison. The methods are appropriate and well-documented, with proper convergence criteria (C72) and statistical testing (C74). The use of established software (Wiecki et al., 2013) and standard priors (C70) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Assessing decision optimality requires a model of underlying computations. The DDM was chosen because it provides parsimonious accounts of choice and RT data, has links to normative theory, and has been useful for identifying neural substrates. The study focused on maximizing reward rate, and the monkeys showed suboptimal adjustments that were not consistent with alternative optimization goals like accuracy maximization or COBRA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C95 present the rationale for the modeling approach and optimality assessment. The justification for using the DDM (C87-C89) is well-supported by prior literature. The acknowledgment of model limitations (C90) is appropriate. The analysis of alternative optimization goals (C93-C95) strengthens the conclusion that monkeys were not simply optimizing for different objectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Lapse rates were consistently near zero for all three monkeys, and reward outcomes stayed close to optimal values without systematic changes over sessions. Suboptimal performance has been observed in human subjects even with explicit instructions, suggesting that additional factors beyond poor learning or lack of effort need to be considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 address alternative explanations for suboptimality. The data on lapse rates (C96) and stable reward outcomes (C97) argue against poor learning or lack of effort. The comparison to human studies (C98) provides broader context and is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Sequential-sampling models like the DDM are based on accumulation of noisy evidence to a threshold and have close ties to the sequential probability ratio test. In asymmetric-reward tasks, subjects show biases toward the larger payoff that are roughly consistent with reward-rate maximization, accomplished via adjustments in drift rate and bound heights, with substantial individual variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 present established background knowledge about DDMs and asymmetric-reward tasks. These claims are well-supported by extensive prior literature (multiple citations in C5-C10) and provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The DDM framework has been used effectively to identify neural substrates of decision processes. The RT task design provided richer constraints than choice data alone. Neural correlates of me adjustments may involve modulation of MT output, while z adjustments may involve baseline changes in decision variable representations. Neurons encoding me and z may show opposite patterns of reward modulation relative to choice preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 discuss neural mechanisms and predictions. The statements about prior neural work (C61, C63-C64) are appropriately cited. The methodological advantage of RT tasks (C62) is supported by citations. The neural predictions (C65-C66) are logical extensions of the model framework, though not yet tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "The me bias induces large asymmetries in RT between choices and between correct and error trials, whereas the z bias induces large asymmetries between choices but little asymmetry between correct and error trials. The monkeys' data showed negative correlations between \u0394biases and sensitivities, similar to optimal predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C79 describe model predictions and their relationship to data. The differential effects of me and z on RT distributions (C75-C76) are demonstrated in Figure 3\u2014figure supplement 1. The similarity between monkey data and optimal predictions (C79) is shown in Figure 2C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "When the large reward was paired with the leftward choice, the optimal strategy used z < 0.5 and me < 0. Conversely, when the large reward was paired with the rightward choice, the optimal strategy used z > 0.5 and me > 0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 describe optimal bias directions for the two reward contexts. These findings are shown in Figure 4B and are consistent with prior literature (Bogacz et al., 2006; Simen et al., 2009). The results are straightforward applications of reward optimization principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The proposed satisficing scheme couples gradient-following with principles used to explain decisions under uncertainty and complexity. It complements but differs from a previous satisficing strategy for speed-accuracy trade-offs, focusing instead on reward-biased behaviors for a given speed-accuracy tradeoff and operating on reward per trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 position the proposed model relative to prior work. The connections to satisficing principles (C102) are appropriately cited. The comparison to prior work (C103-C104) correctly identifies similarities and differences, particularly the focus on reward per trial rather than reward per unit time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The model assumes that the initial bias is along the dimension with the steeper gradient according to each monkey's idiosyncratic RTrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 states a key model assumption that is supported by the analysis of gradient asymmetries (Figure 8\u2014figure supplement 3) and the superior performance of the 'over-me' model. This assumption is central to explaining why different monkeys might show different initial bias patterns.",
+    "result_type": "MINOR"
+  }
+]

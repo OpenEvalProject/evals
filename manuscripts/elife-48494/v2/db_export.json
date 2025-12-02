@@ -1,0 +1,1257 @@
+{
+  "submission": {
+    "id": "55eb430b-4fa0-4623-be6f-e68700818983",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:56:04.561474Z",
+    "updated_at": "2025-12-02T11:56:04.561474Z"
+  },
+  "content": [
+    {
+      "id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "submission_id": "55eb430b-4fa0-4623-be6f-e68700818983",
+      "content_type": "manuscript",
+      "content_text": "# Velocity coupling of grid cell modules enables stable embedding of a low dimensional variable in a high dimensional neural attractor\n\n## Authors\n\n- Noga Mosheiff<sup>1</sup> ([ORCID: 0000-0002-3649-4183](https://orcid.org/0000-0002-3649-4183))\n- Yoram Burak<sup>1</sup> ([ORCID: 0000-0003-1198-8782](https://orcid.org/0000-0003-1198-8782)) \u2020\n\n### Affiliations\n\n1. Racah Institute of Physics Hebrew University Jerusalem Israel\n2. Edmond and Lily Safra Center for Brain Sciences Hebrew University Jerusalem Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nGrid cells in the medial entorhinal cortex (MEC) encode position using a distributed representation across multiple neural populations (modules), each possessing a distinct spatial scale. The modular structure of the representation confers the grid cell neural code with large capacity. Yet, the modularity poses significant challenges for the neural circuitry that maintains the representation, and updates it based on self motion. Small incompatible drifts in different modules, driven by noise, can rapidly lead to large, abrupt shifts in the represented position, resulting in catastrophic readout errors. Here, we propose a theoretical model of coupled modules. The coupling suppresses incompatible drifts, allowing for a stable embedding of a two-dimensional variable (position) in a higher dimensional neural attractor, while preserving the large capacity. We propose that coupling of this type may be implemented by recurrent synaptic connectivity within the MEC with a relatively simple and biologically plausible structure.\n\n## Introduction\n\nMuch of the research on neural coding in the brain is focused on sensory representations, which are driven by external inputs that can be precisely controlled experimentally. In comparison, less is known about neural coding in deep brain structures, in which the dynamics reflect the outcome of internal computations. A notable exception is the hippocampal formation, where neural activity has been linked to high level cognitive variables such as an animal's estimate of its position within its environment (O\u2019Keefe and Nadel, 1978; Moser et al., 2008; Taube et al., 1990), or its estimate of elapsed time within a trial of a trained behavioral task (Manns et al., 2007; Pastalkova et al., 2008; Itskov et al., 2011; Eichenbaum, 2014).\n\nSpecifically, the representation of position by grid cells (Hafting et al., 2005) in the medial entorhinal cortex (MEC) has led to new, unexpected insights on the neural coding of such quantities: even though position is a low dimensional variable, it is jointly encoded by several distinct populations of cells (modules: Stensola et al., 2012), exhibiting periodic spatial responses with varying spatial scales. The spatial responses of all grid cells within a module are characterized by the same grid spacing and orientation, while differing from each other only by a rigid translation. The representation of position by each module is ambiguous, but taken together, the joint activity in several modules constitutes a highly efficient and unambiguous neural code (see Burak, 2014). Due to its distributed organization, the grid cell code possesses a high dynamic range (ratio between the range of unambiguous representation and resolution; Burak, 2014), greatly exceeding the performance of unimodal coding schemes such as the representation of position by place cells in the hippocampus (Fiete et al., 2008; Sreenivasan and Fiete, 2011; Mathis et al., 2012b; Wei et al., 2015; Mosheiff et al., 2017).\n\nAlongside the potential benefits arising from the combinatorial nature of the grid cell code, the distributed representation of position over several modules and spatial scales poses a mechanistic challenge to the underlying neural circuitry. The difficulty lies in the hypothesized role of the hippocampal formation, and specifically the MEC, in maintenance of short-term memory and idiothetic path integration, as opposed to pure representation. When grid cells update their activity, for\u00a0example based on self motion, they must do so in a coordinated manner, in order for them to coherently represent a position in two-dimensional space, a variable of much lower dimensionality than the joint activity of all cells.\n\nNeurons within a module maintain strict relationships in their joint activity (Yoon et al., 2013). These relationships are maintained across environments (Fyhn et al., 2007); under abrupt distortions of the environment (Barry et al., 2007; Yoon et al., 2013); in novel environments (Barry et al., 2012; Yoon et al., 2013), in which stable place fields are absent; during hippocampal inactivation (Almog et al., 2019); under genetic perturbations that disrupt the spatial periodicity in the response of individual cells (Allen et al., 2014); and in sleep (Trettel et al., 2019; Gardner et al., 2019). The rigidity of the correlation structure strongly suggests that the neural activity within a module is tightly coordinated by recurrent connectivity, consistent with attractor models of grid cell activity (McNaughton et al., 2006; Fuhs and Touretzky, 2006; Guanella et al., 2007; Burak and Fiete, 2009), which propose that synaptic connectivity restricts the joint activity within a module to lie on a two-dimensional manifold. Additional support for attractor models has been recently obtained by imaging activity of multiple grid cells using calcium imaging in rats running on a virtual one-dimensional track (Heys et al., 2014; Gu et al., 2018). These studies revealed a relationship between position on the cortical sheet and the preferred firing locations of grid cells, as predicted by the variants of attractor models that rely on distance-dependent connectivity.\n\nIn contrast to the strong correlation in the activity of neurons within a module, much less is known about coupling of neurons that belong to different modules. A network of grid cells organized in $m$ modules, each independently structured as a two-dimensional continuous attractor, possesses a $2\u2062m$ dimensional space of accessible steady states. Yet at any given time, continuous motion of the animal corresponds to a two-dimensional subspace of the possible local changes in the state of the $m$ modules. Considering that noise may corrupt the representation of position in each module separately, the maintenance of a coherent representation of position across modules necessitates some form of coupling between them (Welinder et al., 2008; Sreenivasan and Fiete, 2011; Burak, 2014). Figure 1A demonstrates the need for this coupling: incoherent drifts in the positions represented by different modules, accrued due to noise, can rapidly produce a joint representation of position that is incompatible with any position in the close vicinity of the animal (Fiete et al., 2008; Welinder et al., 2008; Burak, 2014; V\u00e1g\u00f3 and Ujfalussy, 2018). The desired coupling across modules is more subtle than the one observed within a module: the coupling should restrict changes in the states of different modules to lie within the two-dimensional sub-space that corresponds to smooth movement of the animal within its local environment. However, to preserve the high dynamic range of the code, the coupling should not restrict the dimensionality of the accessible steady states.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48494/elife-48494-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Illustration of the detrimental consequences arising from uncoupled module drifts.\u00a0Black dot: location of a static animal. Top panels: schematic representation of the decoded position from the neural activity in module 1 (left panel) and module 2 (middle panel) at time $t=t_{0}$. The shaded areas (cyan, purple) represent locations whose likelihood, given the neural activity, is high. Top right panel: overlay of the likelihood read out from module 1 and module 2. The maximal likelihood location, based on activity in both modules, coincides with the animal\u2019s position. Bottom panels: decoded position based on the neural activity at time $t_{1}$. Due to independent, noise-driven drifts in each module, activity in module 1 represents positions that are slightly shifted to the left (bottom left), and activity in module 2 represents position that are slightly shifted upward (middle). Even though the shifts are small, the joint activity in both modules (bottom right) now represents a new maximum likelihood location (yellow), far away from the true location (black). We refer to such events as catastrophic readout errors. (B) Representation of position along a one-dimensional axis (black line) by the rotation angles $\\theta_{1}$ and $\\theta_{2}$ of two meshing gears that rotate in a coordinated manner in response to motion. The angles $\\theta_{1}$ and $\\theta_{2}$, corresponding to each position, are shown along the blue and red lines. If the radii $R_{1}$ and $R_{2}$ are incommensurate, a large range of positions can be unambiguously read out from the combination of the two angles. (C) An example of two phase coupled meshing gears that are fixed to each other, such that their angles $\\theta_{1}$ and $\\theta_{2}$ are always identical. Since $\\theta_{1}=\\theta_{2}$, there is effectively only one encoded angle, and the range of unambiguous representation corresponds to a single rotation of the gears.\n\nTo further illustrate this point, it is instructive to consider an analogy of grid cell coding to the representation of a one-dimensional position by the rotation angles $\\theta_{1}$ and $\\theta_{2}$ of two meshing gears (Figure 1B). We imagine that motion along the one-dimensional axis corresponds to coordinated rotation of the two gears (Figure 1B, bottom). If the radii $R_{1}$ and $R_{2}$ of the two gears are incommensurate, a large distance is traversed before the two meshing gears come close to a previously visited state, thus allowing for a large range of positions to be unambiguously represented. However, it is crucial in this scheme that during continuous motion, the gears rotate in a coordinated manner: $\\theta\u02d9_{1}\u2062R_{1}=\\theta\u02d9_{2}\u2062R_{2}$. This relationship between the phase velocities $\\theta\u02d9_{1}$ and $\\theta\u02d9_{2}$ is enforced by the meshing cogs along the circumference of the two gears. In the absence of this mechanical constraint, small movement of one gear relative to the other can abruptly transport the represented position to a distant location, unrelated to the original position. Note that the absolute angles of the two meshing gears are not constrained: in fact, the large capacity of the representation relies on the fact that any combination of the two angles is accessible (compare panels B-C in Figure 1).\n\nMotivated by this analogy, we ask whether synaptic connectivity between grid cell modules can enforce a similar dynamic relationship between their states. Below, we identify a simple form of synaptic connectivity between grid cells that can implement this desired form of coupling. Next, we show that the recurrent connectivity confers the joint representation of position with resilience to two types of noise: First, noise in the velocity inputs projecting to different modules. These may differ in different modules, for example, due to synaptic noise. Second, noise arising from the stochastic dynamics of spiking neural activity within each module. The outcome is a continuous-attractor representation of position that achieves two goals: First, the representation is distributed across several modules with different spatial scales, allowing for combinatorial capacity by preserving the high dimensionality of the accessible steady states. Second, the neural circuitry that supports this representation is highly robust to noise when updating the representation based on self-motion, or while maintaining a persistent representation in short-term memory.\n\nAlongside the recurrent connectivity, it is plausible that feedforward synaptic projections from the hippocampus to the entorhinal cortex play a role in shaping the grid cell response (Kropff and Treves, 2008; Dordek et al., 2016; D'Albis and Kempter, 2017; Weber and Sprekeler, 2018). Thus, hippocampal inputs may aid in coupling the states of different grid cell modules (Welinder et al., 2008; Sreenivasan and Fiete, 2011). In addition, sensory inputs that carry information about the animal\u2019s position may contribute as well, through synaptic projections to the MEC from other cortical areas. However, there are situations in which these types of inputs to the MEC cannot ensure appropriate coordination between grid cells modules. First, under conditions in which sensory inputs are absent or weak, the brain must rely on idiothetic path integration in order to update its estimate of position. Second, in novel environments, and following global remapping in the hippocampus (Muller and Kubie, 1987), it is highly unlikely that specific connections between place cells and grid cells, that couple the two spatial representations, are immediately established. Hence, coupling modules via hippocampal inputs would be ineffective in a novel environment. Thus, in this study, we focus on the ability of recurrent connectivity within the entorhinal cortex to maintain a coherent representation of position across grid-cell modules.\n\n## Results\n\n### Theoretical framework\n\nIn laying out the principles underlying our proposed synaptic connectivity, we consider first a one dimensional analogue of the grid cell representation, inspired by the analogy to meshing gears discussed above: we imagine that an animal moves in one dimension, and neurons in each grid cell module $\\mu$ jointly represent the modulus of position relative to the grid spacing $\\lambda_{\\mu}$ (for simplicity, from here on, we define the phases $\\theta_{\\mu}$ such that they are in the range $[0,1]$):\n\n$$\n\\theta_{\\mu}=\\frac{x\u2062mod \u2062\\lambda_{\\mu}}{\\lambda_{\\mu}}.\n$$\n\nWe hypothesize that the joint dynamics of all grid cells within a module are restricted to lie in a one dimensional attractor, which we model as a ring attractor (Ben-Yishai et al., 1995; Zhang, 1996). More specifically, we consider the double-ring architecture (Xie et al., 2002), which includes a mechanism for updates based on velocity inputs, and was proposed as a model for integration of angular velocity inputs by head direction cells in rodents. Recent discoveries in the Drosophila melanogaster central complex point to a representation of heading that is maintained by neural circuitry with close similarity to this architecture (Seelig and Jayaraman, 2015; Turner-Evans et al., 2017; Kim et al., 2017; Green et al., 2017). Attractor models of grid cells in the entorhinal cortex (Fuhs and Touretzky, 2006; Burak and Fiete, 2009) generalize the double-ring attractor model to motion in two dimensions.\n\nWithin the double-ring attractor model (Xie et al., 2002), a module consists of two recurrently connected neural sub-populations, each comprising $N$ neurons organized on a ring (left ring and right ring, Figure 2A). We denote by\n\n$$\ns\u2192=(s\u2192_{R}s\u2192_{L})\n$$\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48494/elife-48494-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Structure of a single module, consisting of a left ring (red) and a right ring (blue), in accordance with the double ring model (Xie et al., 2002).\u00a0The two rings receive external inputs proportional to velocity, with opposite polarities (purple). Synaptic weights project slightly anti-clockwise (red) and slightly clockwise (blue) from neurons in the left and right sub-populations. (B) Illustration of the firing rates of the right (blue) and left (red) sub-population during velocity integration. Both activity bumps are centered around the same phase. The right population is receiving stronger feed-forward input than the the left population, due to a positive velocity signal ($d\u2062I$ in (A) and Equation 3). Since the outgoing synaptic weights of the right sub-population project clockwise, the activity bump of both populations moves to the right. (C) True phase $\\theta$ as a function of time (black) in response to an external velocity input, representing a simulated trajectory, and an estimation of this phase from the velocity approximation $\\omega_{1}$ (magenta). Note that $\\theta$ is periodic with period 1, but for presentation clarity we unwrap $\\theta$ to depict a continuous path along the real axis. (D) The coupling of drifts in two modules is achieved by providing the velocity approximation $\\omega_{1}$ as a velocity input to module 2 (and vice versa, not shown). Each module is modelled as a double ring attractor, as in (A). (E) Two coupled modules. The velocity input of each module has three contributions: The external velocity input (purple), the coupling of velocity from the other module (green), and the self coupling (orange).\n\nthe vector of synaptic activations, where $s\u2192_{R}$ and $s\u2192_{L}$ represent the synaptic activation of the right and left sub-populations respectively. The synaptic activation $s_{i}$ of neuron $i$ follows the dynamics:\n\n$$\ns\u02d9_{i}+\\frac{s_{i}}{\\tau}=r_{i}=\u03d5\u2062(\\sumj=12\u2062NW_{i\u2062j}\u2062s_{j}+I_{0}\\pmd\u2062I),\n$$\n\nwhere $\\tau$ is the synaptic time constant, $r_{i}$ is the firing rate of neuron $i$, $\u03d5$ is a nonlinear transfer function, $W$ is the connectivity matrix (Equation 8; Equation 9), $I_{0}$ is a constant input, and $+d\u2062I$ ($-d\u2062I$) is the velocity input to a neuron in the right (left) sub-population. Synaptic weights projecting from neurons in each ring are shifted clockwise (right) or anti-clockwise (left). When both sub-populations receive identical feed-forward inputs, activity in the network settles on a stationary bump of activity. However, selective activation of the right (left) sub-population via the feed-forward inputs, induces clockwise (anti-clockwise) motion of the activity bump at a phase velocity proportional to the velocity input $d\u2062I$ (Figure 2B). Hence, in a noise-free network, the position of the activity bump is an integral of the velocity input.\n\nOur goal is to couple several such modules such that they will update their states in a coordinated manner in the presence of noisy inputs. It is essential to couple the modules based on their phase velocities $\\theta\u02d9_{\\mu}$ and not directly by their phases $\\theta_{\\mu}$, as we want to allow all phase combinations of the different modules to be possible steady states of the population neural dynamics. Our proposed coupling requires two ingredients: reading out the phase velocity of each module, and inducing corresponding phase velocities in the other modules. The double ring model already contains a mechanism for integration of velocity inputs, and therefore, our main challenge is in reading out the phases velocities.\n\n### Simple neural readout of velocity\n\nOur first goal is to read out the phase velocity of a single module in our system. It is possible to compute the phase velocity by projecting Equation 3 on the eigenvector with zero eigenvalue of the dynamics (see Appendix 1 and Burak and Fiete, 2012). However, this projection cannot be evaluated linearly from the neural activity, since the projection coefficients depend on the location of the activity bump. Instead, we seek a simple estimate of the phase velocity that can be implemented in a neural circuit with relatively simple architecture in a biologically plausible manner.\n\nIntuitively, in the described framework, most of the motion arises from the differences in activity between the right and left sub-populations Figure 2B. Therefore, this difference might be close to the phase velocity $\\theta\u02d9$. We find, indeed, that the difference between the synaptic activities of the right and left sub-populations,\n\n$$\n\\omega\u2261\\frac{\\beta}{\\tau}\u2062(\\sumi\\inRs_{i}-\\sumi\\inLs_{i})\n$$\n\nprovides a good approximation for the phase velocity (Figure 2C), where $\\beta$ is a proportionality factor. In Appendix 1 we show mathematically that $\\omega\u2248\\theta\u02d9$.\n\n### Coupling modules by synaptic connectivity\n\nIn order to couple the motion of different modules, we use the readout signal $\\omega_{\\mu}$ of each module $\\mu$ (Equation 4) as a velocity input to all other modules (Figure 2D\u2013E, green arrows). In addition, we include negative self coupling within each module using the same readout signal $\\omega_{\\mu}$ (necessary, as shown below, in order to prevent instabilities that otherwise arise from the positive feedback generated by the inter-module couplings), Figure 2E (orange arrows).\n\nNote that $\\omega_{\\mu}$ is a linear function of synaptic activities within the ring network, with coefficients that do not depend on the position of the activity bump. Thus, the coupling can be implemented by recurrent connectivity within the MEC, between modules and within a single module. The resulting synaptic connectivity between any two coupled modules is all-to-all in the sense that every neuron in one module is connected to every neuron in the other module, with synaptic weights whose magnitudes are uniform (see Materials\u00a0and\u00a0methods, Equation 12). The sign of each synaptic weight depends only on the sub-population (left or right) of the pre- and post-synaptic neurons. This connectivity is completely symmetric to rotation in the two modules, thus preserving the ability to obtain a combinatorially large manifold of steady states in which activity bumps can be placed in any combination of positions.\n\nTo understand how the couplings influence the joint dynamics of the coupled modules, we analyze the response of a network, consisting of $m$ coupled modules, to external velocity inputs, $b\u2192\u2062(t)$. The position of the bump in each module can be represented by a phase $\\theta_{\\mu}$. We find that the dynamics of these phases are governed by the following set of coupled differential equations\n\n$$\n\\theta\u2192\u02d9=\\alphab\u2192(t)+C(f\u2217\\theta\u2192\u02d9),\n$$\n\nwhere $C$ is an $m\\timesm$ matrix whose element $C_{\\mu\u2062\u03c1}$ represents the coupling strength from module $\u03c1$ to module $\\mu$, $f*\\theta\u2192\u02d9$ is the convolution of $\\theta\u2192\u02d9$ with an exponential filter $f$ with the synaptic time scale $\\tau$ (Equation 36), and $\\alpha$ is a constant factor (see full derivation of Equation 5 in Appendix 2). Thus, the phase of each module is updated in response to two signals: the external velocity input projecting into the module (first term in Equation 5), and the recent history of changes in the phases of the other modules, conveyed by the coupling signal (second term in Equation 5).\n\nMuch of the system\u2019s response to external velocity inputs can be understood by considering its dynamics under the assumption that the motion of the animal is sufficiently slow, such that the components of $\\theta\u2192\u02d9$ vary slowly compared to the synaptic time constant. Under this assumption, we obtain from Equation 5\n\n$$\n\\theta\u2192\u02d9=X\u22c5b\u2192\u2062(t),\n$$\n\nwhere\n\n$$\nX\u2261\\alpha\u2062(I-C)^{-1}\n$$\n\nis the linear response tensor.\n\nFor simplicity, let us consider first only two coupled modules (each of them one dimensional), with identical self coupling strength $C_{s}$ for both modules. The eigenvalues of $X$, denoted by $X_{+}$ and $X_{-}$ (Figure 3A\u2013C and Appendix 2), indicate how strongly the coupled modules respond to velocity inputs that drive coordinated and relative motion, respectively. If $X_{-}$ is small, the modules respond weakly to velocity inputs that attempt to update the phases in an uncoordinated manner. Thus, if $X_{-}$ is much smaller than $X_{+}$, we expect the motion of the two modules to remain coordinated, even if the velocity inputs to the two modules differ.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48494/elife-48494-fig3-v2.jpg)\n\n**Figure 3.:** (A-B)\u00a0Velocity response of the coupled system to velocity inputs that drive joint motion $X_{+}$.\u00a0(A) or relative motion $X_{-}$(B) in two coupled modules, as a function of the coupling strengths. (C)\u00a0$X_{\\pm}$ is a function of one parameter that depends on the coupling strengths ($C_{s}\\pm\\sqrt{C_{1}\u2062C_{2}}$). The magenta and black circles represent the parameters used in (F), and the corresponding value of $X_{+}$ and $X_{-}$. (D) Simulated trajectory, whose derivative is injected as a velocity input only to module one in panels (E\u2013F). (E) Response of two uncoupled modules ($C_{1}=C_{2}=C_{s}=0$): the position represented by module 1 tracks the velocity inputs, module 2 is unresponsive, and the updates in the two modules are not coordinated, as expected. (F) Same as (E) but the modules are coupled with coupling strengths: $C_{s}=-20$, $C_{1}=-C_{s}/\\lambda\u224314.1$, and $C_{2}=-C_{s}\u22c5\\lambda\u224328.3$. The phases of both modules track the velocity inputs in a coordinated manner, with the desirable velocity ratio $\\lambda$. The phase of module one is scaled by $\\lambda$ ($\\lambda\u2062\\theta_{1}$ is shown) in order to simplify the comparison between modules.\n\nWe choose coupling parameters $C_{1}$, $C_{2}$ and $C_{s}$ such that three requirements are fulfilled (see Appendix 2): First, the modules should respond significantly to inputs that drive coordinated motion (large $X_{+}$, Figure 3A,C). The response to such inputs should not be suppressed since the system must be able to update its state based on velocity inputs, to correctly represent the animal\u2019s position in its environment. Second, the modules should respond very weakly to inputs that drive anti-correlated motion (small relative motion $X_{-}$, Figure 3B,C). The self negative coupling $C_{s}$ enables us to achieve these two requirements while preserving stability (Figure 3A\u2013C and Appendices 2-3). Our last requirement is the maintenance of a specific ratio between the module phase velocities, $\\lambda$, that corresponds to the grid spacing ratio between successive modules (we set $\\lambda=\\sqrt{2}$ for all modules; Stensola et al., 2012).\n\nFigure 3E\u2013F demonstrates the response of two modules to an external velocity input, representing an animal\u2019s trajectory (shown in Figure 3D). The input is given only to module 1. In the the case of uncoupled modules ($C_{1}=C_{2}=C_{s}=0$), only module 1 follows the trajectory, as expected (Figure 3E). In the case of coupled modules, both of the modules follow the trajectory quite accurately, with the desired phase velocity ratio $\\lambda$. Hence, under these conditions, the two coupled modules shift in a coordinated manner, even if they receive incompatible velocity inputs. Next, we generalize these results to multiple modules, and to grid cells in two dimensions.\n\n### Generalization to two dimensions and several modules\n\nThe coupling of modules, described so far, can be easily extended to grid cell responses in two dimensions. In accordance with grid cell responses in two-dimensional arenas, each module is structured as a two-dimensional attractor, whose state is determined by two periodic phases. Thus, the steady states of the attractor are arranged on a torus instead of a ring. To obtain this topology, we use a network architecture in which neurons are arranged on a parallelogram, corresponding to a unit cell of the hexagonal grid (in similarity to Guanella et al., 2007). The synaptic connection between any two neurons depends on their distance on the parallelogram, defined using periodic boundary conditions (Figure 4A and Materials\u00a0and\u00a0methods). The position of the activity bump must be able to shift in response to a two-dimensional velocity input, in any direction in the plane. To implement this velocity response, each module contains four sub-populations (right, left, up, and down). The synaptic weights projecting from neurons in each sub-population are shifted in a corresponding direction within the neural population (Burak and Fiete, 2009).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48494/elife-48494-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0The neurons of each sub-population in the two dimensional case (right, left, up and down) are organized on a neuronal sheet in the shape of a parallelogram with periodic boundary conditions.\u00a0(B) Simulated firing rate of a single grid cell from each module, as a function of position, evaluated during response of the network to a rat trajectory lasting 800\u2009s (taken from Stensola et al., 2012). (C) Measured rat trajectory over an interval of 20 s (Stensola et al., 2012), whose derivative is injected as a velocity input to all modules in panels (D\u2013E), with addition of uncorrelated noise in each module. (D) Response of three uncoupled modules. (E) Response of three coupled modules. The phases of the three modules approximately track the velocity inputs in both cases, but the coordination between phases of the three modules is more tight in (E). The phases of modules 1 and 2 are scaled by $\\lambda^{2}$ and $\\lambda$, respectively, in order to simplify the comparison between modules (similar to Figure 3F). (F) Mean square displacement (MSD) between the scaled phases of any two modules over time. Responses of the three modules, as in (D\u2013E), were simulated over a hundred realizations of noise. The mismatch between module trajectories in the coupled case (blue lines) is very small compare to the uncoupled case (red lines). The units of scaled phases are the same as in (D\u2013E). The legend indicates which two module trajectories are compared. (G) Mean square error (MSE) of each module\u2019s trajectory relative to the animal\u2019s trajectory, computed from the same simulations presented in (F). To obtain each module\u2019s trajectory in units of spatial location, the module\u2019s phase was multiplied by its spacing. In the coupled case (blue), the slope of MSE is reduced by a factor of $m=3$ (the number of modules) compared to the uncoupled case (red), as the noise is averaged due to the coupling.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48494/elife-48494-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Three coupled modules as in Figure 4B,E, but module 1 is disconnected from the other modules, namely $C_{12}=C_{21}=0$. All other parameters are identical to Figure 4B,E. (A) Firing rate of a single grid cell from each module. The spacing of all modules increases as expected (compare to Figure 4B and see Discussion). (B) Response of three modules. The scales of phases are not coordinated, thus the spacing ratios change as well. The velocity of phases in response to the same animal\u2019s trajectory is much smaller (see scale of axes in panel B, in comparison to Figure 4E), which indicates larger spacings.\n\nIn addition, we generalize our network to $m$ grid cell modules. The coupling strengths $C_{\\mu\u2062\u03c1}$ thus comprise $m^{2}$ parameters that we are free to adjust to fulfill a set of requirements, similar to those applied in the case $m=2$. Our most important goal is that the motion of all modules should be coordinated, even if the velocity inputs are not identical. To achieve this goal, we define a joint motion vector $u\u2192$, such that $u_{\\mu}/u_{\u03c1}$ is the ratio of grid spacings of modules $\u03c1$ and $\\mu$. We require that this vector is an eigenvector of the linear response tensor, and minimize the eigenvalues corresponding to all other eigenvectors. If we were able to obtain eigenvalues that precisely vanish, the response tensor would be a rank one matrix whose columns are all proportional to $u\u2192$. Under this idealized outcome, any velocity input, regardless of its direction in the $2\u2062m$ dimensional input space would result in coordinated motion of the modules. However, the couplings $C_{\\mu\u2062\u03c1}$ that precisely achieve this goal diverge, in similarity to the two-module case (Appendix 2). Thus, we impose a constraint on the strength of the synaptic connections. Another constraint is that all eigenvalues of $C$ must be smaller than unity. Otherwise, the system exhibits dynamic instability (Appendix 3). We optimize an appropriate target function under these constraints (Appendix 3).\n\nFor $m=2$ the optimization results in the same solution of coupling parameters $C_{\\mu\u2062\u03c1}$ that we found previously. For $m>2$, we find that there is considerable freedom in choosing combinations of $C_{\\mu\u2062\u03c1}$ that achieve satisfactory coupling (See Appendix 3). One principled way to reduce this freedom, is to require that there is connectivity only between successive modules. This choice is compatible with recent observations (Fu et al., 2018) that excitatory synaptic connectivity within the MEC is relatively short ranged. In our numerical results, we use this assumption to constrain the structure of the connectivity matrix $C_{\\mu\u2062\u03c1}$, but other choices that include broader connectivity between modules lead to similar coupling between the modules.\n\nTo demonstrate how our proposed coupling affects the response of the modules to velocity inputs, we simulate the described network in two dimensions, with and without coupling, and with three modules. The velocity input is a measured rat trajectory from Stensola et al. (2012), with the addition of white Gaussian noise, drawn independently in the three modules. In each module, we set the proportionality coefficient that tunes the modulation of activity by the velocity input ($\\gamma_{\\mu}$ in Equation 21) to achieve the desired grid spacing, even in the absence of inter-module coupling. In the simulation, we assume that only velocity inputs are responsible for the update of the neural representation of position, thus mimicking a situation in which sensory cues, such as those arising from visual inputs and encounters with the walls (Hardcastle et al., 2015; Keinath et al., 2018), are absent. In a noise-free simulation, the single cell firing rates form a hexagonal grid pattern as a function of the animal\u2019s location (Figure 4B), as expected from the network structure, while the spacing ratio between modules is close to $\\lambda$.\n\nThe trajectories of the 2d phases, in response to noisy velocity inputs, are shown, for each of the three modules, in Figure 4D (uncoupled modules) and Figure 4E (coupled modules). In both cases, the phases follow the animal\u2019s trajectory (Figure 4C) quite closely, but the phases are much more similar to each other, and to the original trajectory, in the coupled case. Since panels D-E show results only from a single simulation, we repeat the analysis for 100 realizations of the noise in the velocity inputs, to obtain statistical measures on the coupled vs. uncoupled dynamics. The coupling substantially reduces the mismatch accrued between the trajectories of the different modules, compared to the uncoupled case, Figure 4F. For comparison, Figure 4G shows the mismatch between module trajectories and the true trajectory. In the uncoupled case, all modules exhibit similar accumulation of error, which arises from their independent responses to the noise in the velocity inputs. In the coupled case, only the projection of the noise on the direction of joint motion contributes to the accumulation of errors, leading to a reduction by a factor of $m$ (in our case 3) in the slope of the MSE curve.\n\nThe lack of deviations between the phase trajectories, seen in the coupled case (Figure 4E\u2013F), is an essential difference between the dynamics of the coupled and uncoupled modules. As discussed in the Introduction, we expect this difference to strongly impact the stability of the grid cell code. In the following section, we substantiate this point.\n\n### Consequences for spatial representation and readout\n\nWe next aim to validate our hypothesis that the coupling of modules stabilizes the grid cell code, and more specifically, prevents catastrophic errors that can be caused by uncoupled drift in the phases of different modules (Figure 1A). We simulate the dynamics of our three module network with noisy velocity inputs based on a measured rat trajectory from Stensola et al. (2012), as in Figure 4. We then generate Poisson spikes from the instantaneous firing rates of the neurons, and read out the animal\u2019s trajectory from the simulated spikes: we do so both for coupled modules (Figure 5A) and for uncoupled modules (Figure 5B). The readout is accomplished using a decoder that sums spikes from the recent history, with an exponentially decaying temporal kernel (see Materials\u00a0and\u00a0methods and Mosheiff et al., 2017). In Figure 5 the spikes are involved only in the readout process and not in the intrinsic dynamics of the neural network.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48494/elife-48494-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0Blue trace: measured rat trajectory over a 20\u00a0s interval (taken from Stensola et al., 2012), used as a velocity input to three coupled modules.\u00a0Red trace: readout of position, decoded from simulated Poisson spikes of the coupled system. The spikes are generated by a Poisson process from the instantaneous firing rates of all cells in the three modules (see Materials\u00a0and\u00a0methods). Top panel: the trajectory in the two-dimensional arena. Lower panels: $x$ and $y$ components of the trajectory as a function of time. The decoded position is continuous and similar to the input trajectory. (B) Same as (A), but in a network consisting of three uncoupled modules: all coupling strengths are set to zero. The decoded position is discontinuous in time, and often sharply deviates from the input trajectory. (C) Percentage of decoding success over time. We repeated the decoding of the animal\u2019s trajectory, as in (A\u2013B), over a hundred simulations with different realizations of the noise. A success at time $t$ is defined as a trial that did not contain any discontinuity in the readout up to that time. The success percentage was computed by counting the number of trials without discontinuities at each time point. The coupled network maintains 100% success over time (blue), whereas the success percentage of the uncoupled network decreases significantly over time: many trials contain discontinuities after a few seconds, and almost all of them contain discontinuities after 20\u00a0s (red). (D) Mean square error (MSE) of the decoded trajectory, computed from the same simulations presented in (C), in the coupled (blue) and uncoupled (red) cases. Gray trace: MSE computed by random guessing of location. The vertical black dashed line in (C\u2013D) represents the first time in which a discontinuity was observed in any of the trials of the uncoupled network. From this time point onward, the percentage of success of the uncoupled network descends, and the MSE sharply increases (note the logarithmic vertical scale).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48494/elife-48494-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Percentage of decoding success (A) and MSE (B) over time, in the coupled (blue) and uncoupled (red) networks, with varying time scales of temporal integration used in the decoding process. Figure 5\u2014figure supplement 2. Effect of the number of modules and environment size. Percentage of decoding success (A,C,E,F,G) and MSE (B,D,H,I,J) as a function of time. (A-D) Varying number of modules ($m=3$, $4$, or $5$), in the coupled (A\u2013B) and uncoupled (C\u2013D) networks. The coupling prevents the occurrence of readout discontinuities in all of these cases. Increase in the number of modules reduces the rate of these discontinuities even in the absence of coupling (C\u2013D). (E-J) Decoding in arena of dimensions 2.5\u00a0\u00d7\u00a02.5\u00a0m2 (red), compared to the original arena (blue,\u00a01.2\u00a0\u00d7\u00a01.2\u00a0m2), without coupling and with different number of modules. The rate of readout discontinuities increases, and the MSE increases, in larger arenas.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48494/elife-48494-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Percentage of decoding success (A,C,E,F,G) and MSE (B,D,H,I,J) as a function of time. (A-D) Varying number of modules ($m=3$, $4$, or $5$), in the coupled (A\u2013B) and uncoupled (C\u2013D) networks. The coupling prevents the occurrence of readout discontinuities in all of these cases. Increase in the number of modules reduces the rate of these discontinuities even in the absence of coupling (C\u2013D). (E-J) Decoding in arena of dimensions 2.5\u00a0\u00d7\u00a02.5\u00a0m2 (red), compared to the original arena (blue,\u00a01.2\u00a0\u00d7\u00a01.2\u00a0m2), without coupling and with different number of modules. The rate of readout discontinuities increases, and the MSE increases, in larger arenas.\n\nIn the case of coupled modules the decoded trajectory is similar to the input (Figure 5A), but due to the noise in the inputs, it gradually accrues an error relative to the true trajectory. Without coupling, the position read out from the network activity diverges sharply from the true trajectory (Figure 5B). Moreover, the readout trajectory is often discontinuous in time, and thus cannot be a good approximation to any reasonable path of the animal. The discontinuity arises from uncorrelated drifts of the modules which, combined with the periodic nature of the grid pattern, cause catastrophic readout errors, much larger than the errors accrued in the phases of each module separately (Figure 1A).\n\nIn order to quantitatively substantiate the relationship between the large deviation of the decoded trajectory from the true trajectory and the occurrence of catastrophic readout errors, we repeat the decoding process a hundred times with and without coupling, for a\u00a020s input trajectory. In all realizations with coupling, the readout is coordinated with the input trajectory (Figure 5C, blue). In contrast, without coupling almost all realizations exhibit discontinuities within a time interval of\u00a020s (Figure 5C, red). The mean square error (MSE) of the decoder increases as a function of time in the coupled as well as the uncoupled systems (Figure 5D), as expected due to noise in the input (as the coupling and inputs are of velocity and not location, there is no correcting mechanism that can correct coordinated shifts in the phases of all the modules). However, a few seconds after the start of the simulation, the MSE grows sharply in the uncoupled system (dashed line in Figure 5D). The time at which this starts to happen coincides with the first appearance of discontinuities in the decoded position (compare Figure 5 panels C and D). (Note that below this time the probability for occurrence of a readout discontinuity does not vanish, but can be inferred roughly to be small compared to 0.01 since we performed 100 simulations.) Thus, the dramatic reduction achieved by the coupling between modules arises primarily from the elimination of catastrophic readout errors. This conclusion is insensitive to the choice of the time scale of temporal integration used in the decoding process (Figure 5\u2014figure supplement 1).\n\nQualitatively similar conclusions, as demonstrated above, are obtained also when the number of modules $m$ is increased (Figure 5\u2014figure supplement 2). With larger $m$, the rate at which readout discontinuities occur in a given environment diminishes. Note, however, that additional modules enable unambiguous representation of larger environments (Fiete et al., 2008; Mathis et al., 2012a; Wei et al., 2015; V\u00e1g\u00f3 and Ujfalussy, 2018), and that the rate of readout discontinuities increases with the size of the environment (red traces in Figure 5\u2014figure supplement 2E\u2013J).\n\n### Intrinsic neural noise\n\nUp to this point we presented a theory of several grid cell modules, coupled to each other by synaptic connectivity within the MEC, such that the coupling significantly suppresses incompatible drifts caused by noisy inputs to the system. Next, we wish to address another important source of noise, arising from the variability in the spiking of individual neurons within the grid cell network (Softky and Koch, 1993; Shadlen and Newsome, 1994; Burak and Fiete, 2009). In similarity to noise in the inputs, stochasticity of the neurons participating in the attractor network drives errors that accumulate over time with diffusive dynamics (Burak and Fiete, 2009; Burak and Fiete, 2012). To model this process, we replace the firing rate of each neuron in Equation 3 by a Poisson spike train (see Equation 22).\n\nSince we designed our network to be resilient to noisy inputs, it is not obvious that the same architecture can also provide resilience to intrinsic noise. To address this question, we revisit first the simple case of two coupled modules in one dimension. In Appendix A.2 we show that the simple readout of velocity used to couple the modules (Equation 4), is a good approximation for the phase velocity driven by intrinsic neural noise, suggesting that the coupling introduced previously can help suppress uncoordinated drifts. To quantify the impact of coupling on coordination of the modules, we compute the diffusion tensor of their phases, using Equation 25 (the calculation is based on the theoretical framework laid out in Burak and Fiete, 2012; see specifically Eq. S24). In the uncoupled case, the diffusion tensor is isotropic as expected (Figure 6A, blue line). When the modules are coupled, with the same coupling strengths as in Figure 3, the diffusion of the two modules is highly anisotropic (Figure 6A). The first principal axis of the diffusion tensor (red ellipse in Figure 6A) closely matches the direction of coordinated motion (dashed line in Figure 6A). The diffusion coefficient $D_{-}$, associated with motion in the orthogonal direction, is much smaller than the diffusion coefficient $D_{+}$, associated with coordinated motion: $D_{+}/D_{-}\u223cX_{+}/X_{-}\u223c40$ (compare Figures Figure 3C and Figure 6A). Thus, the coupling strongly suppresses incompatible diffusion of the two modules.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48494/elife-48494-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0Diffusion tensor of a Poisson spiking neural network, consisting of two modules in one dimension, computed using Equation 25, and illustrated as an ellipse.\u00a0Axes of the ellipse are aligned with the eigenvectors of the diffusion tensor, and the lengths of each axis represents the diffusion coefficient along the corresponding direction. Without coupling the diffusion tensor is isotropic (blue circle). When coupling the modules using the same coupling strengths as in Figure 3F, the diffusion tensor becomes highly anisotropic (red ellipse). The diffusion in this case is almost exclusively in the direction of the first principal component (major axis of the ellipse). This direction closely matches the direction of coordinated drift ($u\u2192_{+}$ in Equation 55, dashed line). (B-C) same as Figure 5C\u2013D, but for the internal noise case.\n\nNext, we evaluate the consequences for representation and readout, arising from the suppression of incompatible diffusion arising from intrinsic neural noise. We repeat the simulation of three coupled modules in two dimensions, this time with stochastic (Poisson) neurons. Discontinuities in the decoded trajectory occur both in the uncoupled and coupled networks, but they are much more rare in the coupled network (Figure 6B). Accordingly, the readout MSE is reduced dramatically in the coupled network (Figure 6C, note the logarithmic scale). Thus, the coupling is effective not only in stabilizing the neural representation in response to noisy inputs, but also with respect to internal stochasticity within the grid cell network.\n\nIn principle, one could seek coupling parameters such that diffusion would be suppressed in all directions. However, recall our first requirement from the section Coupling modules by synaptic connectivity, that the network must respond with sufficient gain to external inputs, to follow an animal\u2019s trajectory. As we keep the joint response strong, we cannot reduce the joint diffusion simultaneously, and we are satisfied with coupling of the diffusive drift, without eliminating coordinated diffusion.\n\n## Discussion\n\nPrevious works (Fiete et al., 2008; Mathis et al., 2012b; Wei et al., 2015; Mosheiff et al., 2017) have shown that grid cell activity, viewed as a neural code for position, achieves a high dynamic range due to the splitting of the representation across multiple modules. In this work, we addressed a key difficulty with this idea: the combinatorial nature of the representation, arising from the existence of multiple modules, leads to high vulnerability to noise. Small uncoordinated errors in the phases of the different modules can shift the represented position to a far away location. As a possible solution to this difficulty, we proposed a simple architecture of synaptic connectivity between grid cell modules, that can suppress incompatible drifts. The functional coupling between modules, arising from our proposed synaptic connectivity involves velocities, but is completely insensitive to their phases. Consequently, the coupling does not limit the combinations of possible phases of the different modules, and thus does not affect the capacity of the code.\n\nSimilar principles may apply to storage in working memory and coding of other continuous, low dimensional variables in the brain. Thus, the main contribution of our work from the theoretical perspective, is that it identifies a way to couple several low dimensional continuous attractors of dimension $d$ (in the case of grid cells, $d=2$), to produce a persistent neural representation of a single, $d$ dimensional variable with high dynamic range. The dynamics of the network are characterized by two seemingly contradictory features: first, the steady states of the system span a space of dimension $m\u2062d$, where $m$ is the number of modules. Second, during maintenance and continuous update of the stored memory, the joint state of the modules is dynamically restricted to lie in a much smaller, $d$-dimensional subspace. This enables the continuous embedding of a $d$ dimensional variable in the larger, $m\u2062d$ dimensional space, without allowing for noise to shift the state of the system outside the appropriate, $d$ dimensional local subspace.\n\nIn the simulations of the coupled and uncoupled grid cell networks (Figure 5; Figure 6), our main goal was to demonstrate that with a reasonable choice of parameters, catastrophic readout errors are highly detrimental, and that the coupling mechanism greatly reduces the rate at which they occur. The rate of catastrophic readout errors, quantified in Figure 5C for specific choices of parameters, depends also on the noise sources, and on the probability that a set of shifted phases might match an alternative position in the environment. The latter quantity is influenced by the size of the environment, the number of modules, and the specific grid spacings and orientations (Fiete et al., 2008; Welinder et al., 2008; Burak and Fiete, 2009; Sreenivasan and Fiete, 2011; Burak, 2014; V\u00e1g\u00f3 and Ujfalussy, 2018) (see also Figure 5\u2014figure supplement 2).\n\nThe number of grid cell modules in the entorhinal cortices of rats and mice is unknown. So far there is direct evidence for the existence of four modules, but the number may be larger (Stensola et al., 2012; Rowland et al., 2016). A theoretical attempt to compare grid cell systems with different number of modules in terms of the rate of readout discontinuities, would require additional assumptions on the range of positions that are represented in each system: increasing the number of modules reduces the rate of readout discontinuities within the range of a given environment, but it offers the possibility to unambiguously represent larger environments (Fiete et al., 2008; Mathis et al., 2012a; Wei et al., 2015; V\u00e1g\u00f3 and Ujfalussy, 2018), for which the error rate is higher Figure 5\u2014figure supplement 2E\u2013J. Furtheremore, the gain in capacity of the grid cell code, obtained with addition of modules, may be harnessed by the entorhinal-hippocampal system to generate unique representations of different environments (Fyhn et al., 2007). Thus, incoherent phase errors may lead to confusion between different spatial maps, in addition to the confusion between two positions in any given environment. Accordingly, the rate of catastrophic readout errors may be influenced by the number of spatial maps represented in the brain.\n\nOur proposed mechanism for coupling modules is complementary to another possible mechanism, of coupling grid cell modules through the reciprocal synaptic connectivity between the entorhinal cortex and the hippocampus (Welinder et al., 2008; Sreenivasan and Fiete, 2011; Burak, 2014). Since biological systems often harness multiple mechanisms to achieve the same function, both mechanisms might act in parallel to stabilize the grid cell code against catastrophic readout errors. As discussed in the introduction, it is highly unlikely that coupling via the hippocampus could work in a novel environment, following global remapping. On the other hand, it is of particular importance for the brain to establish a geometric representation of position, aided by idiothetic path integration, under this scenario. Thus, the velocity coupling mechanism proposed in this work may play an especially important role in generating a cognitive map of a novel environment.\n\nInputs from cells within the MEC may play a role in stabilizing the grid cell representation, alongside inputs from the hippocampus or other areas. These may include inputs to grid cells from border cells (Solstad et al., 2008) or object-vector cells (H\u00f8ydal et al., 2019). Experimentally, it has been demonstrated that phase resets occur in the grid cell representation upon encounters with enviornmental boundaries (Hardcastle et al., 2015; Keinath et al., 2018; Ocko et al., 2018), and it has been argued theoretically that such resets can be implemented in attractor models of grid cells by inputs to grid cells from border cells (Hardcastle et al., 2015; Keinath et al., 2018; Ocko et al., 2018; Pollock et al., 2018). The origin of spatial specificity of border cells and object-vector cells is not yet identified, but since both types of cells are active even when an animal is not facing the features associated with their activation, their role in stabilizing the grid cell representation may be similar to the hypothesized role of place cell inputs in stabilizing the grid cell code, perhaps more so than the role of direct sensory inputs.\n\nA model that involves synaptic coupling between modules, of a different architecture than the one considered here, has been recently proposed in Kang and Balasubramanian (2019). This model does not explore the consequences of noise on coding stability, and its primary goal is to explain the ratios between grid spacings, and the emergence of modularity (see also Urdapilleta et al., 2017). Hence, Kang and Balasubramanian (2019) address different questions from those studied in the present work. Nevertheless, it is plausible that the synaptic connectivity proposed by Kang and Balasubramanian stabilizes the dynamics against incompatible motion of the modules. An important difference between the network architecture explored in Kang and Balasubramanian (2019) and the architecture explored here, is that we consider connectivity between modules which is all-to-all (every grid cell in one module projects to every grid cell in the other module), and is designed to be invariant to any static, relative shift in the module phases. Hence, all combinations of phases are steady states of the dynamics. In contrast, the synaptic connectivity considered in Kang and Balasubramanian (2019) is spatially local. Consequently, it tends to produce interlocked patterns of activity in adjacent modules, with shared spatial periodicity, and preferred relative spatial phases. These properties of the activity patterns are expected to limit the representational capacity of the code. Here, we addressed a different computational goal, of stabilizing a distributed representation of position over multiple modules, without compromising the dynamic range of the neural coding scheme.\n\nOur focus in this work was on the suppression of relative motion across modules, but noise in the inputs, or in the intrinsic activity within the network, drives also coordinated motion. It is possible to suppress the latter type of random motion by increasing the negative feedback in the system (Figure 3A,C). In choosing our optimization goal for the coupling parameters, we did not attempt to suppress coordinated drift for two reasons. First, coordinated drift is much less detrimental from the coding perspective than relative drifts, as discussed in the introduction. Second, suppressing the coordinated motion comes with an inevitable cost: a reduction in the gain of the system\u2019s velocity response. Nevertheless, it is interesting to consider also the suppression of coordinated drift. Next, we briefly discuss the possible implementation of this goal.\n\nFor simplicity, consider a single one-dimensional module, structured as a ring attractor: in this situation, there is only coordinated motion. As in any continuous attractor network, stochasticity of neural activity within the network drives diffusive motion of the bump\u2019s position. This diffusive motion gradually degrades the fidelity of the stored memory (Burak and Fiete, 2012). In the double ring architecture (Xie et al., 2002), much of the drift arises from fluctuations in the difference of activity between the two sub-populations that drive left and right motion. Using the negative self-coupling of velocities, introduced in this work, it is possible to suppress these fluctuations to substantially reduce the noise-driven diffusion and stabilize the represented memory. It is interesting to compare this mechanism with another proposal (Lim and Goldman, 2014) for stabilization of the memory stored in a single ring attractor, using negative derivative feedback (Lim and Goldman, 2013). In (Lim and Goldman, 2014) the stabilization slows down the dynamics of all neurons in the network, thereby slowing down the relaxation of any deformation in the shape of the activity bump \u2013 not only the position of the activity bump on the ring attractor. In contrast, within the architecture considered here, the unimodal shape of the activity bump is maintained, while the velocity feedback mechanism slows down only noise driven diffusion of its position. Thus, the velocity coupling mechanism identified in this work may be relevant to the stabilization of short-term memory in head directions cells of rodents (Taube, 2007) and insects (Seelig and Jayaraman, 2015), where there is no evidence for slowly decaying deformations in the shape of the activity bump.\n\n### Experimental predictions\n\nThe grid spacing of a single module is determined by the coefficient that tunes how strongly activity is modulated by velocity ($\\gamma_{\\mu}$ in Equation 21): larger values of $\\gamma_{\\mu}$ lead to smaller grid spacing. Thus, in an uncoupled network the grid spacing ratios are determined by the coefficients $\\gamma_{\\mu}$. However, in the network of coupled modules the spacing ratios are determined primarily by the inter-module coupling parameters. Each one of the coefficients $\\gamma_{\\mu}$ influences all the grid spacings, but has little effect on the spacing ratios. For example, even if the $\\gamma_{\\mu}$s are identical in all modules, or if only one module receives a velocity input, all modules shift their states with a velocity ratio that matches the desired grid spacing ratio. An interesting prediction arises under a scenario in which one of the modules is disconnected from the others. This removes positive couplings from the other modules, but leaves the negative self coupling within the module intact. Hence, the disconnected module is expected to weaken its response to velocity inputs, and increase its grid spacing. Similarly, other grid spacings, of modules that were originally connected to the disconnected module, are expected to increase as well (see Figure 4\u2014figure supplement 1).\n\nThe joint activity of grid cells can be expected to lie within a two-dimensional space when salient sensory cues are available to the animal, regardless of the existence of an inter-module coupling mechanism. The existence of a coupling mechanism must therefore be tested under conditions in which external sensory cues are weak (Burak, 2014). It is instructive to compare this goal with what has been learned about population activity within a single module (Yoon et al., 2013; Fyhn et al., 2007; Allen et al., 2014; Trettel et al., 2019; Gardner et al., 2019). In that context, simultaneous recordings from pairs of grid cells were highly informative, since grid cells from a single module exhibit strong correlations (or anti-correlations) in their joint spiking activity. The preservation of these correlations, under conditions in which the animal\u2019s sense of position is disrupted, supports an interpretation that the correlations are maintained by recurrent connectivity within each module. In contrast, cells belonging to different modules are expected to fire together in some positions in space, and refrain from firing together in other parts of the environment. Averaged over motion in a large environment, cell pairs from different modules are expected to exhibit weak correlations in their activity, even if the updates of module phases are fully coordinated.\n\nAnalysis of spike correlations in grid cells from different modules (Trettel et al., 2019; Gardner et al., 2019) confirms this expectation. During free running, spike correlation functions of grid cells from different modules are much weaker than those observed within a module. Despite being weak, these correlations can be statistically significant. Their existence originates from the fact that in any specific environment, and especially in small enclosures, the firing fields of two grid cells with different spatial scales slightly favor correlated or uncorrelated firing, depending on the precise overlap between the spatial receptive fields of the two cells. During sleep, these weak correlations are significantly reduced (Trettel et al., 2019; Gardner et al., 2019). A possible interpretation of this result is that there is no coupling between modules during sleep. However, an alternative explanation is that the reduction in correlations reflects an increase in the repertoire of positions and environments represented in the sleep state: regions of joint firing and regions of disjoint firing are expected to average out more evenly under such circumstances, leading to weaker correlations.\n\nIn order to test for the existence of a velocity coupling mechanism, it is desirable to test for correlations in the updates of phases of different modules, instead of directly testing for correlations in their phases. This will require simultaneous recordings from multiple grid cells, of sufficient numbers that will enable reliable tracking of the module phases. Appropriate recordings are not yet available, but techniques that enable simultaneous monitoring of large neural populations of the MEC (Jun et al., 2017; Gu et al., 2018; Obenhaus et al., 2018) are likely to enable their acquisition in the coming years. In similarity to the experiments that provided insights on the low dimensionality of activity within each module, it will be necessary to test for inter-module coupling under conditions in which the animal\u2019s internal sense of position is not anchored to salient external cues.\n\nOur model assumes that grid cells in the MEC are involved in idiothetic path integration, and harnesses ingredients from models of path integration in the grid cell system to generate the coupling between modules. It is widely hypothesized that grid cells are indeed involved in path integration (Hafting et al., 2005; McNaughton et al., 2006; Moser et al., 2008; Burak, 2014), but this involvement is not experimentally established (see, however, Gil et al., 2018). Accordingly, a specific role of any particular cell type within the MEC in idiothetic path integration is not yet identified. A specific population of cells that may provide the substrate for the connectivity proposed in our model are the conjunctive cells observed mostly in layer III and deeper layers of the MEC (Sargolini et al., 2006), which play a pivotal role in models of path integration in the grid cell system. We note that these cells are tuned to head direction more closely than heading (Raudies et al., 2015), a difficulty that faces all models of path integration within the MEC. The resolution of this difficulty may involve computational elements within the entorhinal circuitry that have not yet been identified. Thus, future experimental findings concerned with the mechanisms underlying path integration may call for (and enable) corresponding refinements of our model.\n\nVery little is known about synaptic connectivity between grid cells in the MEC, especially for cells belonging functionally to different modules. An important conclusion of our work is that synaptic connectivity between different modules may be beneficial for dynamically stabilizing the grid cell representation during path integration and memory maintenance. The specific form of connectivity that we identify is appealing for several reasons: first, it involves broad, relatively unstructured connectivity between grid cells, that depends only on their preferred heading preference. A second appealing feature of our proposed architecture is that it is sufficient to couple grid cells from modules with adjacent spacings, to achieve the desired stabilization of the grid cell representation. Since there is a relationship between grid spacing and position along the dorsal-ventral axis (Hafting et al., 2005; Stensola et al., 2012), all-to-all couplings between modules would require long-range connectivity within the MEC. Recent evidence (Fu et al., 2018) hints that synaptic connections between excitatory cells in the MEC may be more limited in range, but of sufficient spatial extent to allow for coupling of adjacent modules.\n\n## Materials and methods\n\n### Model and simulations details\n\nThe dynamics of the network are described by Equation 3 (or by Equation 22 for the Poisson spiking neuron case). The synaptic time constant $\\tau=10ms$, the transfer function $\u03d5\u2062(x)=\\tau^{-1}\u2062max\u2062(x,0)$, and $I_{0}=3$. All simulations were done using the Euler method for integration, with a time step $dt=0.1ms$.\n\n#### One-dimensional module\n\nIn the one-dimensional simulations the synaptic activation vector (Equation 2) includes synapses of the right and left sub-populations, each comprising $N=1000$ neurons. Each neuron has a preferred phase $\\theta_{i}\\in[0,1]$, uniformly arranged on a ring. The connectivity matrix $W$ is defined by\n\n$$\nW=(W^{+}W^{-}W^{+}W^{-}),\n$$\n\nwhere\n\n$$\nW_{i\u2062j}^{\\pm}=w\u2062(|\\theta_{i}-\\theta_{j}\\mp\\phi|_{P}),w\u2062(\\theta)=\\frac{A}{2\u2062N}\u2062[exp\u2062(-\\frac{\\theta^{2}}{2\u2062\\sigma^{2}})-1].\n$$\n\n$W^{\\pm}$ is a $N\\timesN$ matrix, $\\phi=0.2$, $A=200$, $\\sigma^{2}=0.1$, and $|x_{1}-x_{2}|_{P}$ is the minimal distance between two points ${x_{1},x_{2}}\\in[0,1]$ with periodic boundary conditions on $[0,1]$, namely\n\n$$\n|x|_{P}=min\u2062{|x|_{mod 1},1-|x|_{mod 1}}.\n$$\n\n#### Coupled modules\n\nConsider $m$ coupled modules. The firing rate (Equation 3) of neuron $i$ from module $\\mu$ is (Figure 2E):\n\n$$\nr_{\\mu,i}=\u03d5\u2062(\\sumj=12\u2062NW_{i\u2062j}\u2062s_{\\mu,j}+I_{0}\\pmb_{\\mu}\\pma\u2062\\sum\u03c1=1mC_{\\mu\u2062\u03c1}\u2062\\omega_{\u03c1}),\n$$\n\nwhere $\\omega_{\\mu}$ is the velocity estimation of module \u03bc (Equation 4) , $C_{\\mu\u2062\u03c1}$ is the coupling strength from module $\u03c1$ to module \u03bc ($C_{\\mu\u2062\\mu}$ is the self coupling strength of module \u03bc), and the sign \u00b1 is equal to + (\u2212) if the neuron $i$ belongs to a right (left) sub-population. The proportionality factor $a=[\\beta\u2062\\sum_{i=1}^{2\u2062N}\u03d5^{\u2032}\u2062(\\sum_{j=1}^{2\u2062N}W_{i\u2062j}\u2062s\u00af_{j}+I_{0})]^{-1}$ is included to simplify the units of the coupling strengths $C_{\\mu\u2062\u03c1}$. Note that $a\u22c5\\omega_{\\mu}$ does not depend on the parameter \u03b2. Thus, the choice of \u03b2 is of no consequence for the dynamics, and this parameter is included only for the sake of derivation convenience.\n\nThe coupling between the modules can be interpreted as arising from synaptic connectivity. This can be seen by re-writing Equation 11 as:\n\n$$\nr_{\\mu,i}=\u03d5\u2062(\\sumj=12\u2062NW_{i\u2062j}\u2062s_{\\mu,j}+a\u2062\\sum\u03c1=1mC_{\\mu\u2062\u03c1}\u2062\\sumj=12\u2062NW_{i\u2062j}^{c}\u2062s_{\\mu,j}+I_{0}\\pmb_{\\mu}),\n$$\n\nwhere the $2\u2062N\\times2\u2062N$ coupling connectivity matrix is:\n\n$$\nW^{c}=\\frac{\\beta}{\\tau}\u2062(1\u22ef1-1\u22ef-1\u22ee\u22ee\u22ee\u22ee1\u22ef1-1\u22ef-1-1\u22ef-11\u22ef1\u22ee\u22ee\u22ee\u22ee-1\u22ef-11\u22ef1)\n$$\n\nThus, the synapses responsible for the coupling of any two neurons belonging to modules $\\mu$ and $\u03c1$ are of the same magnitude, $a\u2062\\beta\u2062C_{\\mu\u2062\u03c1}/\\tau$ , and their signs depend only on the sub-populations (left or right) of the pre- and post-synaptic neurons. In the case of $m=2$, we use the coupling parameters: $C\u2062s=-20$, $C_{12}=C_{1}\u224814.14$ and $C_{21}=C_{2}\u224828.3$. In the case of $m=3$, we use the parameters: $C\u2062s=-20$, $C_{12}\u224814.14$, $C_{21}=C_{23}\u22489.4$, $C_{32}\u224828.3$, and $C_{13}=C_{31}=0$. Additional details on the choice of coupling parameters are provided in Appendices 2\u00a0and\u00a03.\n\n#### Two-dimensional modules\n\nIn two dimensions, each module contains four sub-populations, and the synaptic activation vector is:\n\n$$\ns\u2192=(s\u2192_{R}s\u2192_{L}s\u2192_{U}s\u2192_{D})\n$$\n\nEach sub-population contains $N^{2}=64^{2}$ neurons, arranged on a parallelogram. The preferred phase of the $i$\u2019th neuron in each sub-population is:\n\n$$\n\\theta_{i}\u2192=(\\theta_{x_{i}}\\theta_{y_{i}})=x_{i}u_{1}\u2192+y_{i}u_{2}\u2192,u\u2192_{1}=(10,)u\u2192_{2}=(0.5\\frac{\\sqrt{3}}{2}).\n$$\n\nwhere $x_{i}$ and $y_{i}$ are distributed uniformly in the interval $[0,1]$. The connectivity matrix is now:\n\n$$\nW=(W^{R}W^{L}W^{U}W^{D}W^{R}W^{L}W^{U}W^{D}W^{R}W^{L}W^{U}W^{D}W^{R}W^{L}W^{U}W^{D}),\n$$\n\nwhere\n\n$$\nW_{i\u2062j}^{R,L}=w\u2062(|\\theta_{i}\u2192-\\theta_{j}\u2192\\mp(\\phi0)|_{P_{2}}),W_{i\u2062j}^{U,D}=w\u2062(|\\theta_{i}\u2192-\\theta_{j}\u2192\\mp(0\\phi)|_{P_{2}}),\n$$\n\nand\n\n$$\nw\u2062(\\theta)=\\frac{A}{4\u2062N^{2}}\u2062[exp\u2062(-\\frac{\\theta^{2}}{2\u2062\\sigma^{2}})-1].\n$$\n\nThe distance measure $|\u22c5|_{P_{2}}$ is defined using periodic boundary conditions on the parallelogram (see Figure 4A): $|x\u2192_{1}-x\u2192_{2}|_{P_{2}}$ is the minimal distance between the two points $x\u2192_{1}$ and $x\u2192_{2}$ on the torus that is created by gluing the opposite edges of the parallelogram defined by the vertices $(0,0),(1,0),(\\frac{1}{2},\\frac{\\sqrt{3}}{2}),(\\frac{3}{2},\\frac{\\sqrt{3}}{2})$ (Figure 4A, compare with Equation 10, used in the one-dimensional case).\n\nThe firing rate of neuron $i\\in$\u00a0{sub-population\u00a0R\u00a0or\u00a0L}\u00a0from module $\\mu$ is:\n\n$$\nr_{\\mu,i}=\u03d5\u2062(\\sumj=14\u2062N^{2}W_{i\u2062j}\u2062s_{\\mu,j}+I_{0}\\pmb_{\\mu,x}\u2062(t)\\pma\u2062\\sum\u03c1=1mC_{\\mu\u2062\u03c1}\u2062\\omega_{\u03c1,x}),\n$$\n\nwhere\n\n$$\n\\omega_{\\mu,x}\u2261\\frac{\\beta}{\\tau}\u2062(\\sumi\\inRs_{\\mu,i}-\\sumi\\inLs_{\\mu,i}).\n$$\n\nFiring rates of neurons from the up and down sub-populations are obtained from Equation 19-Equation 20 by replacing $x\u2192y$, , $R\u2192U$, and $L\u2192D$.\n\nIn each module, responses to horizontal and vertical velocity inputs are independent: the right and left sub-populations respond to the horizontal velocity inputs, and affect $\\theta_{x}$, while the up and down sub-populations respond to the vertical velocity inputs and affect $\\theta_{y}$. Hence, the two-dimensional response tensor separates into independent, horizontal and vertical components with the same structure as in the one-dimensional case. Since the linear response tensor (in each direction) is identical to that of the one-dimensional case, the coupling parameters are chosen in the same way in one and two dimensions.\n\n#### External velocity input\n\nThe external velocity input to module $\\mu$ (in two dimensions) in $q\\in{x,y}$ direction is (Equation 19):\n\n$$\nb_{\\mu,q}\u2062(t)=\\gamma_{\\mu}\u2062(V_{q}\u2062(t)+\u03b7_{\\mu,q}\u2062(t)).\n$$\n\n$\\gamma_{\\mu}$ is a proportionality factor that depends on the module, $V_{q}\u2062(t)$ is a the component of the animal\u2019s velocity in the $q$ direction, and $\u03b7_{\\mu,q}\u2062(t)$ is a white noise process with $\u27e8\u03b7_{\\mu,q}\u2062(t)\u2062\u03b7_{\u03c1,q^{\u2032}}\u2062(t^{\u2032})\u27e9=\u03b7^{2}\u2062\\delta_{q\u2062q^{\u2032}}\u2062\\delta_{\\mu\u2062\u03c1}\u2062\\delta\u2062(t-t^{\u2032})$. In Figure 4B and Figure 6B\u2013C the external input is not noisy, so $\u03b7=0$. In Figure 4D\u2013E and Figure 5, $\u03b7=0.02\u2062m\u22c5s^{-0.5}$.\n\nIn Figure 3E\u2013F (one dimension) $\\gamma_{1}=0.06$ and $\\gamma_{2}=0$. In the simulations of Figure 4; Figure 6 (two dimensions) $\\gamma_{1}=0.06$ , $\\gamma_{2}=\\lambda\u20620.06$ , $\\gamma_{3}=\\lambda^{2}\u20620.06$. Thus, even without coupling of the modules, the spacing ratio $\\lambda$ is achieved by the ratios of the inputs strengths $\\gamma_{\\mu}$, and therefore, we can compare between the coupled and uncoupled phases and readout (Figure 4; Figure 6).\n\n### Spiking network\n\nIn the case of spiking Poisson neurons Equation 3 is replaced by:\n\n$$\ns\u02d9_{i}+\\frac{s_{i}}{\\tau}=\\sum\u03c7\\delta\u2062(t-t_{i}^{\u03c7}),\n$$\n\nwhere\n\n$$\n\\sum\u03c7\\delta\u2062(t-t_{i}^{\u03c7})\n$$\n\nis the spike train of neuron $i$, and $t_{i}^{\u03c7}$ are the spike times. Each neuron $i$ generates spikes sampled from a Poisson distribution with a firing rate $r_{i}\u2062(t)$, as defined in Equation 3 (Stevens and Zador, 1996; Gerstner and Kistler, 2002; Burak and Fiete, 2012).\n\n### Decoding\n\nDecoding of the animal\u2019s trajectory, based on spike trains, is performed in Figure 5; Figure 6 using a decoder that sums spikes from recent history with an exponential temporal kernel (Mosheiff et al., 2017). In Figure 5, we simulate a spike train for each neuron (Equation 23), sampled from an inhomogeneous Poisson process with a firing rate $r_{i}\u2062(t)$ (note that the the network dynamics are deterministic and spikes are used only in the readout process). In Figure 6, the stochastic spike train is part of of the dynamics (Equation 22). In both cases, the decoded location of the animal in time $t$ is (Eqs. S10, S11 and S13 in Mosheiff et al., 2017):\n\n$$\nx\u2192^(t)=argmax_{x\u2192}\\sumiln[r\u00af_{i}(x\u2192)]\\int_{\u2212\u221e}^{t}dt^{\u2032}exp(\u2212\\frac{t\u2212t^{\u2032}}{\\tau_{d}})\\sum\u03c7\\delta(t^{\u2032}\u2212t_{i}^{\u03c7}).\n$$\n\nThe summation is over all neurons. Here, $\\tau_{d}=10ms$ for all modules. The integral in Equation 24 yields an effective spike count of neuron $i$, weighted in time using a decaying exponential kernel, and $r\u00af_{i}\u2062(x\u2192)$ is the receptive field of neuron $i$ at location $x\u2192$, measured separately from the firing rate of each neuron in the steady state of the dynamics.\n\n### Diffusion tensor\n\nConsider a system of spiking Poisson neurons, and $m$ one-dimensional modules. The internal noise introduces a diffusive drift. The network is now a single continuous attractor with dimension $m$ (see Appendix 5). Hence, the diffusion tensor is a $m\\timesm$ matrix, that can be calculated using Eq. S24 in Burak and Fiete (2012), for the dynamics of the $m$ dimensional attractor (Equation 77, Equation 78 and Equation 79 in Appendix 5):\n\n$$\nD_{\\mu\u2062\u03c1}\u2062(\\theta\u2192)=\\frac{1}{2}\u2062\\sumi=12\u2062N\u2062m\u03bd_{\\mu,i}\u2062(\\theta\u2192)\u2062\u03bd_{\u03c1,i}\u2062(\\theta\u2192)\u2062r\u00af_{i}\u2062(\\theta\u2192).\n$$\n\nwhere the summation is over all neurons, $r\u00af_{i}\u2062(\\theta\u2192)$ is the firing rate of neuron $i$ in the steady state of the system, and $\u03bd_{\\mu}\u2062(\\theta\u2192)$ is the left null eigenvector of the dynamics (Equation 78) corresponding to a phase shift in the direction of module $\\mu$ (calculated numerically).\n",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "de01dafb-3381-4bca-a59e-2d91cdda13f8",
+      "submission_id": "55eb430b-4fa0-4623-be6f-e68700818983",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephanie Palmer, University of Chicago United States\n\nReviewers:\n- Ann M Hermundstad, Howard Hughes Medical Institute United States\n\n## Review text\n\nDOI: [10.7554/eLife.48494.019](https://doi.org/10.7554/eLife.48494.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Velocity coupling of grid modules enables stable embedding of a low dimensional variable in a high dimensional attractor\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Ann M Hermundstad (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper develops a model in which grid modules are formed by a standard attractor mechanism, and are also coupled together by recurrent interactions to coordinate stochastic drift (caused by noisy velocity inputs and/or spiking noise) between the modules. Independent drift in grid modules would severely impair the fidelity of their spatial representation (as is shown elegantly in this work), so that if grid cells represent space, it is critical to coordinate the drift in modules. The authors show that a simple mechanism \u2013 excitatory interaction between modules \u2013 can solve this problem, and suggest experimental tests of the theory. In particular, the theory makes interesting predictions arising from the inactivation of a subset of the modules (e.g. self-motion integration in the remaining modules should be affected in a specific way).\n\nEssential revisions:\n\n1) The choice of readout mechanisms might affect the results \u2013 hence this key aspect should be better explored.\n\n2) The system's performance and error should be better characterized \u2013 as these are the main observables used to draw conclusions about the effectiveness of the proposed model.\n\nSpecific points concerning these first two essential revisions (followed by more essential revisions below):\n\na) It would be good to provide further intuition on the structure of the C_ij that achieved \"satisfactory\" performance. In particular, even if one constrains the coupling to lie between neighboring modules, the structure of the C_ij was not entirely clear. Is it all-to-all? Does this coupling vary in any interesting way with separation on the neural sheet? Can this coupling be constrained to be somewhat local on the neural sheet and still achieve good results?\n\nb) The manuscript's main argument is that small differences in the phases of individual modules can lead to large errors in the estimate of position that is read out from these modules; by choosing the appropriate coupling between modules, one can reduce deviations in the phases between different modules, and in turn reduce the frequency of large readout errors. It appears that the existence and degree of these discontinuities is due at least in part to the choice of readout. As argued in the framing of the paper and shown in Figures 4D, 5B, these discontinuities are not present in the phases of individual modules, but rather arise in the readout stage. These discontinuities occur within a single timestep (at least as far as one can tell from Figure 5B), suggesting that a readout with a slightly longer timescale could potentially alleviate some of these errors. The form of the readout was derived by the same authors in a previous paper; in that paper, it was shown that the optimal readout should have different timescales for grid modules with different spacings, ranging from 1ms to 600ms. However, here a readout with a single timescale of 10ms was chosen for all modules. Based on this previous work, it's not clear why this choice was made, and what implications this has for the extent of readout errors that are shown in Figure 5B. To make the strongest argument possible, an optimal version of the readout should be used (with appropriately-chosen timescales for different modules) in order to construct the strongest null model in the absence of coupling. As it is now, it's unclear whether the observed readout errors arise from the construction of readout itself, rather than the lack of couplings. Given that this is the primary argument for necessitating couplings between modules, this should be addressed.\n\nc) The paper would be stronger if the analyses provided a better characterization of performance and error. As it's written now, it's difficult to gain an intuition as to why catastrophic errors are occurring when they do, and how much gradual error is accumulated between these catastrophic errors. There are some small fixes that could help (see minor points). Beyond these, there are some larger points that could be made more clear. Why does the first catastrophic error occur when it does (i.e., what is the significance of the timescale marked by the dotted line in Figure 5C-D)? This timescale might have been expected to relate to the distance that must be traveled before the three grid spacings are likely to overlap, given the scale of the noise; is this the case? If so, one would have expected a sharper drop off in the percentage of successes in Figure 5C. If not, is there an intuition as to why the errors occur when they do? Does gradual drift accumulate much more rapidly in the uncoupled model that in the coupled model? This itself is interesting and would be valuable to quantify.\n\nd) Finally, how does performance scale with the number of modules? A general theoretical model was derived for m modules but results are shown for only 2 and 3 modules (and because these two cases were illustrated in one and two dimensions, respectively, it's not possible to compare directly between them). Larger numbers of modules could presumably lead to a couple of different scenarios that might impact the conclusions in different ways: i) more modules could lead to a reduction in readout errors (even in the absence of coupling), because the readout is averaging over inconsistencies among modules; this would suggest that some of observed error could be alleviated with additional modules, or ii) more modules could lead to an increase in readout errors via the additional inter-module recurrence (e.g. in cases where assumptions about linearity or small input velocity break down). It would be useful to report more on these type of analyses and show how they depend on the source/magnitude of noise. Can these findings be interpreted in terms of the actual numbers of modules in mEC (which would be helpful to report somewhere)?\n\n3) Provide, in the main text, more details/intuition about the choice of inter- and intra-module couplings, which is indeed a fundamental aspect of the work. (See also point 1 and 2a above.)\n\nA key point of the theory is that modules should be coupled in a phase-independent manner, and that the coupling should only depend on the rate of change of the phase. There are two things that could be shown, perhaps in Figure 1 and incorporated into Figure 2:\n\n\u2013 show the detrimental effect of phase-dependent coupling for position encoding\n\n\u2013 recap the properties of self-motion integration networks (e.g. Seung's model used throughout the paper), showing the velocity dependent tuning of the left and right network and how a simple set of synaptic weights between modules can extract this information.\n\n4) Discuss the role of landmarks (e.g. boundaries) in path integration \u2013 this important aspect did not receive enough attention throughout the manuscript.\n\nFor example, the section on \"Intrinsic neural noise\" shows how the coupling between modules coordinates their drift. An alternate idea might have been to largely shut down the drift via interaction with border cells (or more generally with boundaries and landmarks). A comment on this alternative would be in order in the Results and in the Discussion since there has been a good bit of work on it lately. These kinds of error correction mechanisms that people have considered so far still work separately on each module, and so a coordination mechanism such as the one in the present paper will still be necessary because even a small amount of independent drift between modules can cause problems with the spatial representation.\n\n5) An additional figure should be added at the end of the paper, illustrating the non-trivial prediction related to the inactivation of one or more grid cell modules. This would help make the work for broadly accessible, and would strengthen the discussion.\n\n6) Discuss the possibility that other (published) mechanisms might be at work for the self-organized emergence of modular structure (which is otherwise assumed in the current manuscript).\n\nIn particular, a potential overlap is with recent work on the role of interactions with borders and landmarks in anchoring and reducing drift in the grid system (e.g. Keinath et al., eLife; Ocko et al., PNAS; Hardcastle et al., Neuron; Pollock et al., bioRxiv). The present paper is complementary in that it suggests a way of coordinating drift between modules, rather than reducing the overall amount of the drift. Indeed the border interaction mechanisms may not reduce drift enough on their own, and the coordination mechanism described in the present paper may be necessary also \u2013 both mechanisms could be in play. Some commentary would be worthwhile in the Discussion as an interesting direction for the future is to ask how border interactions and inter-module interactions could work together.\n",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f999e1fe-8c5b-4b23-a637-4f62c6a1cd31",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C1",
+      "claim": "Grid cells in the medial entorhinal cortex (MEC) encode position using a distributed representation across multiple neural populations (modules), each possessing a distinct spatial scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Grid cells in the medial entorhinal cortex (MEC) encode position using a distributed representation across multiple neural populations (modules), each possessing a distinct spatial scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding in the field, supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "e9575c83-ff7f-4f84-b714-f87e3982d9b7",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C2",
+      "claim": "The modular structure of the grid cell representation confers the neural code with large capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "The modular structure of the representation confers the grid cell neural code with large capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by theoretical work cited in the manuscript and is a central premise of the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "cc491e5c-0eb4-4dff-a4bc-d37e742ae453",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C3",
+      "claim": "Small incompatible drifts in different modules, driven by noise, can rapidly lead to large, abrupt shifts in the represented position, resulting in catastrophic readout errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Small incompatible drifts in different modules, driven by noise, can rapidly lead to large, abrupt shifts in the represented position, resulting in catastrophic readout errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations and theoretical analysis in the manuscript, particularly in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "4c15ab86-0d97-4a1a-bd64-884146723a06",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C4",
+      "claim": "The proposed coupling mechanism suppresses incompatible drifts between modules, allowing for a stable embedding of a two-dimensional variable (position) in a higher dimensional neural attractor.",
+      "claim_type": "EXPLICIT",
+      "source": "The coupling suppresses incompatible drifts, allowing for a stable embedding of a two-dimensional variable (position) in a higher dimensional neural attractor, while preserving the large capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical result of the paper, demonstrated through mathematical analysis and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "63a5c56b-8a82-485d-bc9b-de48158cfd99",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C5",
+      "claim": "The coupling mechanism may be implemented by recurrent synaptic connectivity within the MEC with a relatively simple and biologically plausible structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that coupling of this type may be implemented by recurrent synaptic connectivity within the MEC with a relatively simple and biologically plausible structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal based on the model architecture described in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "8b478e7f-6b7c-4142-93b2-91008082f928",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C6",
+      "claim": "Grid cells in the MEC have been linked to an animal's estimate of its position within its environment.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable exception is the hippocampal formation, where neural activity has been linked to high level cognitive variables such as an animal's estimate of its position within its environment (O'Keefe and Nadel, 1978; Moser et al., 2008; Taube et al., 1990), or its estimate of elapsed time within a trial of a trained behavioral task (Manns et al., 2007; Pastalkova et al., 2008; Itskov et al., 2011; Eichenbaum, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "f68f810a-0c10-4b10-83ba-b9c0450fa465",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C7",
+      "claim": "Grid cells were discovered in the medial entorhinal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the representation of position by grid cells (Hafting et al., 2005) in the medial entorhinal cortex (MEC) has led to new, unexpected insights on the neural coding of such quantities",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known discovery in neuroscience, cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "90e0165c-62e4-4ab5-ba74-d8d3b5434e8b",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C8",
+      "claim": "Grid cells are organized into modules with distinct spatial scales.",
+      "claim_type": "EXPLICIT",
+      "source": "even though position is a low dimensional variable, it is jointly encoded by several distinct populations of cells (modules: Stensola et al., 2012), exhibiting periodic spatial responses with varying spatial scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "e4e1a002-ec7a-4339-9953-2090094df4e1",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C9",
+      "claim": "All grid cells within a module are characterized by the same grid spacing and orientation, differing only by a rigid translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial responses of all grid cells within a module are characterized by the same grid spacing and orientation, while differing from each other only by a rigid translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established property of grid cells within modules, supported by experimental data.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "3bed4ddb-a5c1-41ec-80c0-ddafeee58868",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C10",
+      "claim": "The representation of position by each module is ambiguous, but the joint activity in several modules constitutes a highly efficient and unambiguous neural code.",
+      "claim_type": "EXPLICIT",
+      "source": "The representation of position by each module is ambiguous, but taken together, the joint activity in several modules constitutes a highly efficient and unambiguous neural code (see Burak, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "483cedf2-14bf-4115-8758-19b1fe9f5d6b",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C11",
+      "claim": "The grid cell code possesses a high dynamic range that greatly exceeds the performance of unimodal coding schemes such as place cells in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its distributed organization, the grid cell code possesses a high dynamic range (ratio between the range of unambiguous representation and resolution; Burak, 2014), greatly exceeding the performance of unimodal coding schemes such as the representation of position by place cells in the hippocampus (Fiete et al., 2008; Sreenivasan and Fiete, 2011; Mathis et al., 2012b; Wei et al., 2015; Mosheiff et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by theoretical analyses cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "899e4c50-dbcd-4701-bcb6-560371b22f19",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C12",
+      "claim": "Neurons within a module maintain strict relationships in their joint activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons within a module maintain strict relationships in their joint activity (Yoon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "c0b6aac4-cd45-4b26-87a4-35190359a5ad",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C13",
+      "claim": "The relationships between neurons within a module are maintained across environments.",
+      "claim_type": "EXPLICIT",
+      "source": "These relationships are maintained across environments (Fyhn et al., 2007); under abrupt distortions of the environment (Barry et al., 2007; Yoon et al., 2013); in novel environments (Barry et al., 2012; Yoon et al., 2013), in which stable place fields are absent; during hippocampal inactivation (Almog et al., 2019); under genetic perturbations that disrupt the spatial periodicity in the response of individual cells (Allen et al., 2014); and in sleep (Trettel et al., 2019; Gardner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "a4c0e744-c00f-42df-8dc5-f442bc21d974",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C14",
+      "claim": "The rigidity of the correlation structure suggests that neural activity within a module is tightly coordinated by recurrent connectivity, consistent with attractor models of grid cell activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The rigidity of the correlation structure strongly suggests that the neural activity within a module is tightly coordinated by recurrent connectivity, consistent with attractor models of grid cell activity (McNaughton et al., 2006; Fuhs and Touretzky, 2006; Guanella et al., 2007; Burak and Fiete, 2009), which propose that synaptic connectivity restricts the joint activity within a module to lie on a two-dimensional manifold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental observations and theoretical models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "937d8671-dc7a-4014-804c-ef6003621b7f",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C15",
+      "claim": "Attractor models propose that synaptic connectivity restricts the joint activity within a module to lie on a two-dimensional manifold.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with attractor models of grid cell activity (McNaughton et al., 2006; Fuhs and Touretzky, 2006; Guanella et al., 2007; Burak and Fiete, 2009), which propose that synaptic connectivity restricts the joint activity within a module to lie on a two-dimensional manifold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal from cited models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "c1c4d897-cf20-435b-b9ca-0a1e7813849d",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C16",
+      "claim": "Calcium imaging studies in rats running on a virtual one-dimensional track revealed a relationship between position on the cortical sheet and the preferred firing locations of grid cells, as predicted by attractor models.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional support for attractor models has been recently obtained by imaging activity of multiple grid cells using calcium imaging in rats running on a virtual one-dimensional track (Heys et al., 2014; Gu et al., 2018). These studies revealed a relationship between position on the cortical sheet and the preferred firing locations of grid cells, as predicted by the variants of attractor models that rely on distance-dependent connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental studies using calcium imaging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "02e0e031-9067-44a5-8fc4-c41c7ef0f246",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C19",
+      "claim": "The maintenance of a coherent representation of position across modules necessitates some form of coupling between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that noise may corrupt the representation of position in each module separately, the maintenance of a coherent representation of position across modules necessitates some form of coupling between them (Welinder et al., 2008; Sreenivasan and Fiete, 2011; Burak, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical argument supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "bc67e23d-47ff-410f-8423-4ecd51daa434",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C20",
+      "claim": "Incoherent drifts in the positions represented by different modules can rapidly produce a joint representation of position that is incompatible with any position in the close vicinity of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1A demonstrates the need for this coupling: incoherent drifts in the positions represented by different modules, accrued due to noise, can rapidly produce a joint representation of position that is incompatible with any position in the close vicinity of the animal (Fiete et al., 2008; Welinder et al., 2008; Burak, 2014; V\u00e1g\u00f3 and Ujfalussy, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1A and supported by theoretical work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "ad940494-569d-4697-86f3-66bbe555cfae",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C21",
+      "claim": "The coupling should restrict changes in the states of different modules to lie within the two-dimensional sub-space that corresponds to smooth movement of the animal within its local environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The desired coupling across modules is more subtle than the one observed within a module: the coupling should restrict changes in the states of different modules to lie within the two-dimensional sub-space that corresponds to smooth movement of the animal within its local environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design requirement for the coupling mechanism proposed in the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "82cbdeec-e2fe-432a-961d-94b7f7c66723",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C22",
+      "claim": "To preserve the high dynamic range of the code, the coupling should not restrict the dimensionality of the accessible steady states.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to preserve the high dynamic range of the code, the coupling should not restrict the dimensionality of the accessible steady states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design requirement for the coupling mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "1ddd5046-235b-4c63-88b2-67db566eb45e",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C23",
+      "claim": "The double-ring architecture includes a mechanism for updates based on velocity inputs and was proposed as a model for integration of angular velocity inputs by head direction cells in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, we consider the double-ring architecture (Xie et al., 2002), which includes a mechanism for updates based on velocity inputs, and was proposed as a model for integration of angular velocity inputs by head direction cells in rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an existing model from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "6c95bfbb-8492-4579-8c0b-c8f9025d0fea",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C24",
+      "claim": "Recent discoveries in the Drosophila melanogaster central complex point to a representation of heading that is maintained by neural circuitry with close similarity to the double-ring architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent discoveries in the Drosophila melanogaster central complex point to a representation of heading that is maintained by neural circuitry with close similarity to this architecture (Seelig and Jayaraman, 2015; Turner-Evans et al., 2017; Kim et al., 2017; Green et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental studies in Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "346fabc5-47b1-4a4e-b75e-4a104f1138f8",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C28",
+      "claim": "The coupling can be implemented by recurrent connectivity within the MEC, between modules and within a single module.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the coupling can be implemented by recurrent connectivity within the MEC, between modules and within a single module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the mathematical structure of the coupling mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "770e0bb3-dd92-4a82-9aae-dcc52a1de452",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C29",
+      "claim": "The synaptic connectivity between any two coupled modules is all-to-all in the sense that every neuron in one module is connected to every neuron in the other module, with synaptic weights whose magnitudes are uniform.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting synaptic connectivity between any two coupled modules is all-to-all in the sense that every neuron in one module is connected to every neuron in the other module, with synaptic weights whose magnitudes are uniform (see Materials and methods, Equation 12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the proposed connectivity structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "e79aedb6-8516-4de9-87a8-1c4abb42dbfd",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C30",
+      "claim": "The sign of each synaptic weight depends only on the sub-population (left or right) of the pre- and post-synaptic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The sign of each synaptic weight depends only on the sub-population (left or right) of the pre- and post-synaptic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the proposed connectivity structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "61d1b8c0-224f-412b-a771-8a06bc458347",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C31",
+      "claim": "The connectivity is completely symmetric to rotation in the two modules, thus preserving the ability to obtain a combinatorially large manifold of steady states.",
+      "claim_type": "EXPLICIT",
+      "source": "This connectivity is completely symmetric to rotation in the two modules, thus preserving the ability to obtain a combinatorially large manifold of steady states in which activity bumps can be placed in any combination of positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the symmetry in the connectivity structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "6332faf0-94c8-4744-88e7-5bb0017be28c",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C34",
+      "claim": "Under the coupling conditions, the two coupled modules shift in a coordinated manner, even if they receive incompatible velocity inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, under these conditions, the two coupled modules shift in a coordinated manner, even if they receive incompatible velocity inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "18ac0c60-5d28-472d-bfc1-f70c71a29b25",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C35",
+      "claim": "The coupling substantially reduces the mismatch accrued between the trajectories of the different modules, compared to the uncoupled case.",
+      "claim_type": "EXPLICIT",
+      "source": "The coupling substantially reduces the mismatch accrued between the trajectories of the different modules, compared to the uncoupled case, Figure 4F.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown quantitatively in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "9ec7475b-08e4-47b1-9736-c9c7df672545",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C37",
+      "claim": "The lack of deviations between the phase trajectories in the coupled case is an essential difference between the dynamics of the coupled and uncoupled modules.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of deviations between the phase trajectories, seen in the coupled case (Figure 4E\u2013F), is an essential difference between the dynamics of the coupled and uncoupled modules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "40f553f4-129c-49d9-980e-5500f1070903",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C38",
+      "claim": "The coupling of modules stabilizes the grid cell code and prevents catastrophic errors caused by uncoupled drift in the phases of different modules.",
+      "claim_type": "EXPLICIT",
+      "source": "We next aim to validate our hypothesis that the coupling of modules stabilizes the grid cell code, and more specifically, prevents catastrophic errors that can be caused by uncoupled drift in the phases of different modules (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is validated through simulations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "b3acc5b0-01fd-4de6-bbc4-46a6c0637ef6",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C39",
+      "claim": "In the case of coupled modules, the decoded trajectory is similar to the input, but gradually accrues an error relative to the true trajectory due to noise in the inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of coupled modules the decoded trajectory is similar to the input (Figure 5A), but due to the noise in the inputs, it gradually accrues an error relative to the true trajectory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "9d98e5ec-0a2e-45fa-80a0-b2579dc625d2",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C40",
+      "claim": "Without coupling, the position read out from the network activity diverges sharply from the true trajectory and is often discontinuous in time.",
+      "claim_type": "EXPLICIT",
+      "source": "Without coupling, the position read out from the network activity diverges sharply from the true trajectory (Figure 5B). Moreover, the readout trajectory is often discontinuous in time, and thus cannot be a good approximation to any reasonable path of the animal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "7d4b1a51-3d86-43ab-9afd-45d203d0ddda",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C41",
+      "claim": "The discontinuity in readout arises from uncorrelated drifts of the modules which, combined with the periodic nature of the grid pattern, cause catastrophic readout errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The discontinuity arises from uncorrelated drifts of the modules which, combined with the periodic nature of the grid pattern, cause catastrophic readout errors, much larger than the errors accrued in the phases of each module separately (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explained theoretically and demonstrated in simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "c15425ac-90ec-4d06-9855-8f0947b2aa87",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C42",
+      "claim": "In all realizations with coupling, the readout is coordinated with the input trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "In all realizations with coupling, the readout is coordinated with the input trajectory (Figure 5C, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C based on 100 simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "65c17ce5-be76-4208-85be-f5b4b8d6359d",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C43",
+      "claim": "Without coupling, almost all realizations exhibit discontinuities within a time interval of 20s.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, without coupling almost all realizations exhibit discontinuities within a time interval of 20s (Figure 5C, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C based on 100 simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "888af01b-c984-446d-abe2-669ccf6d6772",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C44",
+      "claim": "The MSE grows sharply in the uncoupled system a few seconds after the start of the simulation, coinciding with the first appearance of discontinuities in the decoded position.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a few seconds after the start of the simulation, the MSE grows sharply in the uncoupled system (dashed line in Figure 5D). The time at which this starts to happen coincides with the first appearance of discontinuities in the decoded position (compare Figure 5 panels C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "30bcf9f3-a87e-4e6a-b12f-984c84e40841",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C45",
+      "claim": "The dramatic reduction achieved by the coupling between modules arises primarily from the elimination of catastrophic readout errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the dramatic reduction achieved by the coupling between modules arises primarily from the elimination of catastrophic readout errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the analysis of the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "190cb9a9-78c0-4271-9c66-9f2bdc95b48b",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C46",
+      "claim": "The simple readout of velocity used to couple the modules is a good approximation for the phase velocity driven by intrinsic neural noise.",
+      "claim_type": "EXPLICIT",
+      "source": "In Appendix A.2 we show that the simple readout of velocity used to couple the modules (Equation 4), is a good approximation for the phase velocity driven by intrinsic neural noise, suggesting that the coupling introduced previously can help suppress uncoordinated drifts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown mathematically in Appendix A.2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "bfc14a9a-e0f5-4655-a529-47a54165b28d",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C47",
+      "claim": "When the modules are coupled, the diffusion of the two modules is highly anisotropic, with the first principal axis closely matching the direction of coordinated motion.",
+      "claim_type": "EXPLICIT",
+      "source": "When the modules are coupled, with the same coupling strengths as in Figure 3, the diffusion of the two modules is highly anisotropic (Figure 6A). The first principal axis of the diffusion tensor (red ellipse in Figure 6A) closely matches the direction of coordinated motion (dashed line in Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A through calculation of the diffusion tensor.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "f70bbe30-4ded-49c7-8f66-a7d9ccc49c3d",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C49",
+      "claim": "Discontinuities in the decoded trajectory occur both in the uncoupled and coupled networks with Poisson neurons, but they are much more rare in the coupled network.",
+      "claim_type": "EXPLICIT",
+      "source": "Discontinuities in the decoded trajectory occur both in the uncoupled and coupled networks, but they are much more rare in the coupled network (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B for networks with intrinsic neural noise.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "fc30fda8-d766-4f68-82b7-daecdd92d24b",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C50",
+      "claim": "The readout MSE is reduced dramatically in the coupled network with intrinsic neural noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the readout MSE is reduced dramatically in the coupled network (Figure 6C, note the logarithmic scale).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "d25fe2a4-3993-4fe7-9ef3-8a5d7677858d",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C51",
+      "claim": "The coupling is effective not only in stabilizing the neural representation in response to noisy inputs, but also with respect to internal stochasticity within the grid cell network.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the coupling is effective not only in stabilizing the neural representation in response to noisy inputs, but also with respect to internal stochasticity within the grid cell network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations with Poisson spiking neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "61ba5bee-aab4-498e-9a22-f33abfd0b1b1",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C54",
+      "claim": "The number of grid cell modules in the entorhinal cortices of rats and mice is unknown, but there is direct evidence for the existence of four modules.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of grid cell modules in the entorhinal cortices of rats and mice is unknown. So far there is direct evidence for the existence of four modules, but the number may be larger (Stensola et al., 2012; Rowland et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "fc70973b-c1a0-4d84-a5f2-1aaa70a95dc7",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C55",
+      "claim": "Increasing the number of modules reduces the rate of readout discontinuities within the range of a given environment, but offers the possibility to unambiguously represent larger environments.",
+      "claim_type": "EXPLICIT",
+      "source": "increasing the number of modules reduces the rate of readout discontinuities within the range of a given environment, but it offers the possibility to unambiguously represent larger environments (Fiete et al., 2008; Mathis et al., 2012a; Wei et al., 2015; V\u00e1g\u00f3 and Ujfalussy, 2018), for which the error rate is higher Figure 5\u2014figure supplement 2E\u2013J.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by theoretical work and demonstrated in supplementary figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "066dd9df-2a1d-44ef-8bfd-d1f670761010",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C56",
+      "claim": "The proposed velocity coupling mechanism may play an especially important role in generating a cognitive map of a novel environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the velocity coupling mechanism proposed in this work may play an especially important role in generating a cognitive map of a novel environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the limitations of hippocampal coupling in novel environments.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "211f2a92-99ee-4446-ab8a-c62e692f1740",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C57",
+      "claim": "Phase resets occur in the grid cell representation upon encounters with environmental boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentally, it has been demonstrated that phase resets occur in the grid cell representation upon encounters with enviornmental boundaries (Hardcastle et al., 2015; Keinath et al., 2018; Ocko et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "8637e164-6274-48bd-b0ef-7b484743a5b5",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C58",
+      "claim": "Phase resets can be implemented in attractor models of grid cells by inputs to grid cells from border cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and it has been argued theoretically that such resets can be implemented in attractor models of grid cells by inputs to grid cells from border cells (Hardcastle et al., 2015; Keinath et al., 2018; Ocko et al., 2018; Pollock et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal from cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "e2f8c61a-af11-4ce2-8ce7-7f244ef6c58f",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C59",
+      "claim": "The synaptic connectivity proposed by Kang and Balasubramanian (2019) is spatially local and tends to produce interlocked patterns of activity in adjacent modules with shared spatial periodicity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the synaptic connectivity considered in Kang and Balasubramanian (2019) is spatially local. Consequently, it tends to produce interlocked patterns of activity in adjacent modules, with shared spatial periodicity, and preferred relative spatial phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with another model from the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "e05b161c-9a82-4952-a0a0-74e943acb4bf",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C60",
+      "claim": "The connectivity considered in this work is all-to-all and designed to be invariant to any static, relative shift in the module phases, so all combinations of phases are steady states.",
+      "claim_type": "EXPLICIT",
+      "source": "An important difference between the network architecture explored in Kang and Balasubramanian (2019) and the architecture explored here, is that we consider connectivity between modules which is all-to-all (every grid cell in one module projects to every grid cell in the other module), and is designed to be invariant to any static, relative shift in the module phases. Hence, all combinations of phases are steady states of the dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the proposed architecture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "4ec20e56-0048-49ae-b2f0-2867ad179fe0",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C61",
+      "claim": "Using negative self-coupling of velocities, it is possible to suppress fluctuations to substantially reduce noise-driven diffusion and stabilize the represented memory in a single ring attractor.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the negative self-coupling of velocities, introduced in this work, it is possible to suppress these fluctuations to substantially reduce the noise-driven diffusion and stabilize the represented memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "91765667-de59-4d28-b81f-9f0273fc1748",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C62",
+      "claim": "The velocity coupling mechanism may be relevant to the stabilization of short-term memory in head direction cells of rodents and insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the velocity coupling mechanism identified in this work may be relevant to the stabilization of short-term memory in head directions cells of rodents (Taube, 2007) and insects (Seelig and Jayaraman, 2015), where there is no evidence for slowly decaying deformations in the shape of the activity bump.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of the mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "70c42068-9984-4574-957e-784921683600",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C64",
+      "claim": "If one module is disconnected from the others, the disconnected module is expected to weaken its response to velocity inputs and increase its grid spacing.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting prediction arises under a scenario in which one of the modules is disconnected from the others. This removes positive couplings from the other modules, but leaves the negative self coupling within the module intact. Hence, the disconnected module is expected to weaken its response to velocity inputs, and increase its grid spacing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a testable prediction, illustrated in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "df9d16f1-a069-4b91-9223-853a021749b9",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C65",
+      "claim": "The existence of a coupling mechanism must be tested under conditions in which external sensory cues are weak.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of a coupling mechanism must therefore be tested under conditions in which external sensory cues are weak (Burak, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation for experimental testing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "3de07f60-d575-42a6-88bd-4c6fbb318d4c",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C66",
+      "claim": "During sleep, weak correlations between grid cells from different modules are significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "During sleep, these weak correlations are significantly reduced (Trettel et al., 2019; Gardner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "457d1534-772f-4181-9766-1f8f5e46ba46",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C67",
+      "claim": "To test for the existence of a velocity coupling mechanism, it is desirable to test for correlations in the updates of phases of different modules, rather than directly testing for correlations in their phases.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to test for the existence of a velocity coupling mechanism, it is desirable to test for correlations in the updates of phases of different modules, instead of directly testing for correlations in their phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation for experimental testing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "2929d43b-d4a3-44d2-9044-7ddaece6da14",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C68",
+      "claim": "Conjunctive cells observed mostly in layer III and deeper layers of the MEC may provide the substrate for the connectivity proposed in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "A specific population of cells that may provide the substrate for the connectivity proposed in our model are the conjunctive cells observed mostly in layer III and deeper layers of the MEC (Sargolini et al., 2006), which play a pivotal role in models of path integration in the grid cell system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the biological implementation of the model.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "544e9e5b-f2b6-440a-9b1b-06d4002fc06a",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "claim_id": "C69",
+      "claim": "Recent evidence hints that synaptic connections between excitatory cells in the MEC may be more limited in range, but of sufficient spatial extent to allow for coupling of adjacent modules.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence (Fu et al., 2018) hints that synaptic connections between excitatory cells in the MEC may be more limited in range, but of sufficient spatial extent to allow for coupling of adjacent modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on recent experimental findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d57e2e4c-2a04-47f5-9211-7c2e6266bd45",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Grid cells in the medial entorhinal cortex encode position using a distributed, modular representation with distinct spatial scales, conferring the neural code with large capacity and high dynamic range that exceeds unimodal coding schemes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 establish well-documented properties of grid cells based on extensive prior experimental and theoretical work. These are foundational claims supported by multiple citations to established literature and represent accepted knowledge in the field rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "5a449ba3-3a8d-47c4-a0c9-5837eebbc3e9",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Neurons within a grid cell module maintain strict relationships in their joint activity that persist across diverse conditions, strongly suggesting coordination by recurrent connectivity consistent with attractor models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 summarize well-established experimental observations and theoretical interpretations from prior work. The rigidity of within-module correlations across multiple experimental conditions provides strong support for attractor dynamics, though these are not novel findings of the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "a73262f4-5aa4-45c2-8994-b281532d2091",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Uncoupled noise-driven drifts between modules can rapidly produce catastrophic readout errors, necessitating a coupling mechanism that restricts changes to a low-dimensional subspace while preserving the high-dimensional steady state manifold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19-C22 establish the core computational problem addressed by the manuscript. The demonstration in Figure 1A combined with theoretical arguments from prior work (C19-C20) and the design requirements (C21-C22) provide clear motivation for the proposed solution. The problem formulation is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "7d5bdbe8-07db-43a6-a8f8-ccffe363683c",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The double-ring attractor architecture, originally proposed for head direction cells and recently supported by Drosophila central complex findings, provides the foundation for the coupling mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 accurately describe prior theoretical and experimental work. The double-ring architecture is an established model, and the Drosophila findings provide biological validation. These claims appropriately contextualize the modeling framework used in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "e9d113c5-204f-49df-9441-18f2fa1977a0",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The proposed velocity coupling mechanism suppresses incompatible drifts through all-to-all synaptic connectivity between modules with uniform weight magnitudes and signs determined by sub-population identity, preserving rotational symmetry and the combinatorially large manifold of steady states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28-C31 describe the core theoretical contribution. The mathematical derivations (Equations 5-12) demonstrate that the proposed connectivity structure achieves the design goals: coupling velocities without restricting phase combinations. The symmetry properties (C31) are direct consequences of the connectivity structure, ensuring preservation of capacity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "0bd4849f-4514-42b2-a357-93e2c8523da9",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Simulations demonstrate that coupled modules shift in a coordinated manner even with incompatible velocity inputs, substantially reducing trajectory mismatch compared to uncoupled modules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35, C37 are directly supported by simulation results in Figures 3 and 4. Figure 4F quantitatively shows dramatic reduction in mean square displacement between module trajectories. The simulations use realistic parameters and measured rat trajectories, providing strong evidence for the coupling mechanism's effectiveness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "058edff4-298a-4925-89a2-3b2b7bdcc055",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The coupling mechanism prevents catastrophic readout errors: coupled modules maintain continuous, accurate position decoding over 20s with 100% success, while uncoupled modules exhibit discontinuous trajectories and sharply increasing MSE due to incompatible phase drifts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C45 are strongly supported by systematic simulations in Figure 5 with 100 realizations. The quantitative comparison shows coupled networks maintain 100% decoding success while uncoupled networks fail rapidly (Figure 5C). The MSE analysis (Figure 5D) demonstrates that catastrophic errors, not gradual drift, dominate uncoupled performance. The evidence is compelling and statistically robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "13f431e1-5b33-4d69-8c03-7875c2e20608",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The coupling mechanism is effective against intrinsic neural noise: the diffusion tensor becomes highly anisotropic with ~40-fold suppression of incompatible drift, dramatically reducing readout discontinuities and MSE in Poisson spiking networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47, C49-C51 extend the results to intrinsic stochasticity. The diffusion tensor analysis (Figure 6A, Equation 25) provides theoretical support, while simulations with Poisson neurons (Figure 6B-C) demonstrate practical effectiveness. The ~40-fold anisotropy ratio matches the velocity response ratio, showing consistency between input noise and intrinsic noise suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "4027a3a4-4fa1-45e1-8184-3a9cdf0c4d58",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The number of grid cell modules in rodents is unknown but at least four exist; increasing module number reduces discontinuity rates within a given environment but enables representation of larger environments with higher error rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 accurately represent experimental knowledge (C54) and theoretical predictions (C55). Figure 5\u2014figure supplement 2 demonstrates the trade-offs with varying module numbers and environment sizes. The claims appropriately acknowledge uncertainty about the actual number of modules while exploring the implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "9add27a6-3e35-4f79-9806-f47bc0d5bc32",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The velocity coupling mechanism may play an especially important role in generating cognitive maps of novel environments where hippocampal coupling is ineffective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is speculative and based on logical inference about when hippocampal inputs would be unavailable. While the reasoning is sound, there is no direct experimental evidence presented to support this specific functional role. The claim appropriately uses tentative language ('may play') but remains untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "85137efb-7111-4ca0-b7c6-68fe791a05af",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Phase resets occur at environmental boundaries and can theoretically be implemented through border cell inputs to grid cells in attractor models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 accurately summarize prior experimental findings (C57) and theoretical proposals (C58) from cited work. These claims provide context for how external inputs might interact with the proposed coupling mechanism but are not novel contributions of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "95c6cb4f-a08a-4ead-9859-7fce681d2a56",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The proposed all-to-all connectivity differs fundamentally from the spatially local connectivity in Kang and Balasubramanian (2019), which produces interlocked patterns with preferred relative phases that would limit representational capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 provide accurate comparison with alternative models. The distinction between phase-invariant all-to-all connectivity (preserving capacity) versus spatially local connectivity (producing phase preferences) is clearly articulated and represents an important conceptual difference in approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "5a754825-0117-4abe-b89d-a1fa6ca1224d",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Negative self-coupling of velocities can suppress noise-driven diffusion in single ring attractors, potentially stabilizing short-term memory in head direction cells of rodents and insects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C62 extend the mechanism to single-module systems but are largely speculative. While the theoretical reasoning is sound, no simulations or experimental evidence are provided for head direction cell applications. The claims appropriately use tentative language but require further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "449c010a-7618-4379-b3c0-0c53dd031f03",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Disconnecting one module from others is predicted to weaken its velocity response and increase its grid spacing due to removal of positive inter-module coupling while retaining negative self-coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 presents a testable experimental prediction supported by the model's mathematical structure and illustrated in Figure 4\u2014figure supplement 1. The prediction follows logically from the coupling architecture and provides a specific, falsifiable test of the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "5028fb77-c35a-47c8-a3c6-9cdfe60c5bc8",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Testing for inter-module coupling requires weak sensory cues and should focus on correlations in phase updates rather than phases themselves; sleep recordings show reduced correlations but this could reflect increased environmental repertoire rather than absent coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 provide methodologically sound recommendations for experimental testing. The distinction between phase correlations (which average out over large environments) and velocity correlations (which would reveal coupling) is important. The alternative interpretation of sleep data (C66) demonstrates appropriate consideration of confounds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "6aa55d6b-7caf-4ffd-926d-6079f7ba4312",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Conjunctive cells in layer III and deeper MEC layers may provide the substrate for the proposed connectivity, and recent evidence suggests excitatory connections have sufficient spatial extent for adjacent module coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 speculate about biological implementation. While conjunctive cells are plausible candidates and recent anatomical data (Fu et al., 2018) is consistent with the model, direct evidence for the proposed connectivity pattern is lacking. The claims appropriately acknowledge these as possibilities rather than established facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    },
+    {
+      "id": "852c38e8-7992-4aed-82d3-d70ffc9b4fb9",
+      "content_id": "5b9a3569-f892-443f-a6c1-a30a050fb2eb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The coupling mechanism may be implemented by recurrent synaptic connectivity within the MEC with a relatively simple and biologically plausible structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C5 proposes biological plausibility but lacks direct experimental validation. While the all-to-all connectivity with uniform weights is mathematically simple, whether this represents a 'simple' biological implementation is debatable. The claim requires experimental verification of the proposed connectivity patterns in MEC.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:04.561474Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f999e1fe-8c5b-4b23-a637-4f62c6a1cd31",
+      "result_id": "d57e2e4c-2a04-47f5-9211-7c2e6266bd45"
+    },
+    {
+      "claim_id": "e9575c83-ff7f-4f84-b714-f87e3982d9b7",
+      "result_id": "d57e2e4c-2a04-47f5-9211-7c2e6266bd45"
+    },
+    {
+      "claim_id": "8b478e7f-6b7c-4142-93b2-91008082f928",
+      "result_id": "d57e2e4c-2a04-47f5-9211-7c2e6266bd45"
+    },
+    {
+      "claim_id": "f68f810a-0c10-4b10-83ba-b9c0450fa465",
+      "result_id": "d57e2e4c-2a04-47f5-9211-7c2e6266bd45"
+    },
+    {
+      "claim_id": "90e0165c-62e4-4ab5-ba74-d8d3b5434e8b",
+      "result_id": "d57e2e4c-2a04-47f5-9211-7c2e6266bd45"
+    },
+    {
+      "claim_id": "e4e1a002-ec7a-4339-9953-2090094df4e1",
+      "result_id": "d57e2e4c-2a04-47f5-9211-7c2e6266bd45"
+    },
+    {
+      "claim_id": "3bed4ddb-a5c1-41ec-80c0-ddafeee58868",
+      "result_id": "d57e2e4c-2a04-47f5-9211-7c2e6266bd45"
+    },
+    {
+      "claim_id": "483cedf2-14bf-4115-8758-19b1fe9f5d6b",
+      "result_id": "d57e2e4c-2a04-47f5-9211-7c2e6266bd45"
+    },
+    {
+      "claim_id": "899e4c50-dbcd-4701-bcb6-560371b22f19",
+      "result_id": "5a449ba3-3a8d-47c4-a0c9-5837eebbc3e9"
+    },
+    {
+      "claim_id": "c0b6aac4-cd45-4b26-87a4-35190359a5ad",
+      "result_id": "5a449ba3-3a8d-47c4-a0c9-5837eebbc3e9"
+    },
+    {
+      "claim_id": "a4c0e744-c00f-42df-8dc5-f442bc21d974",
+      "result_id": "5a449ba3-3a8d-47c4-a0c9-5837eebbc3e9"
+    },
+    {
+      "claim_id": "937d8671-dc7a-4014-804c-ef6003621b7f",
+      "result_id": "5a449ba3-3a8d-47c4-a0c9-5837eebbc3e9"
+    },
+    {
+      "claim_id": "c1c4d897-cf20-435b-b9ca-0a1e7813849d",
+      "result_id": "5a449ba3-3a8d-47c4-a0c9-5837eebbc3e9"
+    },
+    {
+      "claim_id": "cc491e5c-0eb4-4dff-a4bc-d37e742ae453",
+      "result_id": "a73262f4-5aa4-45c2-8994-b281532d2091"
+    },
+    {
+      "claim_id": "02e0e031-9067-44a5-8fc4-c41c7ef0f246",
+      "result_id": "a73262f4-5aa4-45c2-8994-b281532d2091"
+    },
+    {
+      "claim_id": "bc67e23d-47ff-410f-8423-4ecd51daa434",
+      "result_id": "a73262f4-5aa4-45c2-8994-b281532d2091"
+    },
+    {
+      "claim_id": "ad940494-569d-4697-86f3-66bbe555cfae",
+      "result_id": "a73262f4-5aa4-45c2-8994-b281532d2091"
+    },
+    {
+      "claim_id": "82cbdeec-e2fe-432a-961d-94b7f7c66723",
+      "result_id": "a73262f4-5aa4-45c2-8994-b281532d2091"
+    },
+    {
+      "claim_id": "1ddd5046-235b-4c63-88b2-67db566eb45e",
+      "result_id": "7d5bdbe8-07db-43a6-a8f8-ccffe363683c"
+    },
+    {
+      "claim_id": "6c95bfbb-8492-4579-8c0b-c8f9025d0fea",
+      "result_id": "7d5bdbe8-07db-43a6-a8f8-ccffe363683c"
+    },
+    {
+      "claim_id": "4c15ab86-0d97-4a1a-bd64-884146723a06",
+      "result_id": "e9d113c5-204f-49df-9441-18f2fa1977a0"
+    },
+    {
+      "claim_id": "346fabc5-47b1-4a4e-b75e-4a104f1138f8",
+      "result_id": "e9d113c5-204f-49df-9441-18f2fa1977a0"
+    },
+    {
+      "claim_id": "770e0bb3-dd92-4a82-9aae-dcc52a1de452",
+      "result_id": "e9d113c5-204f-49df-9441-18f2fa1977a0"
+    },
+    {
+      "claim_id": "e79aedb6-8516-4de9-87a8-1c4abb42dbfd",
+      "result_id": "e9d113c5-204f-49df-9441-18f2fa1977a0"
+    },
+    {
+      "claim_id": "61d1b8c0-224f-412b-a771-8a06bc458347",
+      "result_id": "e9d113c5-204f-49df-9441-18f2fa1977a0"
+    },
+    {
+      "claim_id": "6332faf0-94c8-4744-88e7-5bb0017be28c",
+      "result_id": "0bd4849f-4514-42b2-a357-93e2c8523da9"
+    },
+    {
+      "claim_id": "18ac0c60-5d28-472d-bfc1-f70c71a29b25",
+      "result_id": "0bd4849f-4514-42b2-a357-93e2c8523da9"
+    },
+    {
+      "claim_id": "9ec7475b-08e4-47b1-9736-c9c7df672545",
+      "result_id": "0bd4849f-4514-42b2-a357-93e2c8523da9"
+    },
+    {
+      "claim_id": "40f553f4-129c-49d9-980e-5500f1070903",
+      "result_id": "058edff4-298a-4925-89a2-3b2b7bdcc055"
+    },
+    {
+      "claim_id": "b3acc5b0-01fd-4de6-bbc4-46a6c0637ef6",
+      "result_id": "058edff4-298a-4925-89a2-3b2b7bdcc055"
+    },
+    {
+      "claim_id": "9d98e5ec-0a2e-45fa-80a0-b2579dc625d2",
+      "result_id": "058edff4-298a-4925-89a2-3b2b7bdcc055"
+    },
+    {
+      "claim_id": "7d4b1a51-3d86-43ab-9afd-45d203d0ddda",
+      "result_id": "058edff4-298a-4925-89a2-3b2b7bdcc055"
+    },
+    {
+      "claim_id": "c15425ac-90ec-4d06-9855-8f0947b2aa87",
+      "result_id": "058edff4-298a-4925-89a2-3b2b7bdcc055"
+    },
+    {
+      "claim_id": "65c17ce5-be76-4208-85be-f5b4b8d6359d",
+      "result_id": "058edff4-298a-4925-89a2-3b2b7bdcc055"
+    },
+    {
+      "claim_id": "888af01b-c984-446d-abe2-669ccf6d6772",
+      "result_id": "058edff4-298a-4925-89a2-3b2b7bdcc055"
+    },
+    {
+      "claim_id": "30bcf9f3-a87e-4e6a-b12f-984c84e40841",
+      "result_id": "058edff4-298a-4925-89a2-3b2b7bdcc055"
+    },
+    {
+      "claim_id": "190cb9a9-78c0-4271-9c66-9f2bdc95b48b",
+      "result_id": "13f431e1-5b33-4d69-8c03-7875c2e20608"
+    },
+    {
+      "claim_id": "bfc14a9a-e0f5-4655-a529-47a54165b28d",
+      "result_id": "13f431e1-5b33-4d69-8c03-7875c2e20608"
+    },
+    {
+      "claim_id": "f70bbe30-4ded-49c7-8f66-a7d9ccc49c3d",
+      "result_id": "13f431e1-5b33-4d69-8c03-7875c2e20608"
+    },
+    {
+      "claim_id": "fc30fda8-d766-4f68-82b7-daecdd92d24b",
+      "result_id": "13f431e1-5b33-4d69-8c03-7875c2e20608"
+    },
+    {
+      "claim_id": "d25fe2a4-3993-4fe7-9ef3-8a5d7677858d",
+      "result_id": "13f431e1-5b33-4d69-8c03-7875c2e20608"
+    },
+    {
+      "claim_id": "61ba5bee-aab4-498e-9a22-f33abfd0b1b1",
+      "result_id": "4027a3a4-4fa1-45e1-8184-3a9cdf0c4d58"
+    },
+    {
+      "claim_id": "fc70973b-c1a0-4d84-a5f2-1aaa70a95dc7",
+      "result_id": "4027a3a4-4fa1-45e1-8184-3a9cdf0c4d58"
+    },
+    {
+      "claim_id": "066dd9df-2a1d-44ef-8bfd-d1f670761010",
+      "result_id": "9add27a6-3e35-4f79-9806-f47bc0d5bc32"
+    },
+    {
+      "claim_id": "211f2a92-99ee-4446-ab8a-c62e692f1740",
+      "result_id": "85137efb-7111-4ca0-b7c6-68fe791a05af"
+    },
+    {
+      "claim_id": "8637e164-6274-48bd-b0ef-7b484743a5b5",
+      "result_id": "85137efb-7111-4ca0-b7c6-68fe791a05af"
+    },
+    {
+      "claim_id": "e2f8c61a-af11-4ce2-8ce7-7f244ef6c58f",
+      "result_id": "95c6cb4f-a08a-4ead-9859-7fce681d2a56"
+    },
+    {
+      "claim_id": "e05b161c-9a82-4952-a0a0-74e943acb4bf",
+      "result_id": "95c6cb4f-a08a-4ead-9859-7fce681d2a56"
+    },
+    {
+      "claim_id": "4ec20e56-0048-49ae-b2f0-2867ad179fe0",
+      "result_id": "5a754825-0117-4abe-b89d-a1fa6ca1224d"
+    },
+    {
+      "claim_id": "91765667-de59-4d28-b81f-9f0273fc1748",
+      "result_id": "5a754825-0117-4abe-b89d-a1fa6ca1224d"
+    },
+    {
+      "claim_id": "70c42068-9984-4574-957e-784921683600",
+      "result_id": "449c010a-7618-4379-b3c0-0c53dd031f03"
+    },
+    {
+      "claim_id": "df9d16f1-a069-4b91-9223-853a021749b9",
+      "result_id": "5028fb77-c35a-47c8-a3c6-9cdfe60c5bc8"
+    },
+    {
+      "claim_id": "3de07f60-d575-42a6-88bd-4c6fbb318d4c",
+      "result_id": "5028fb77-c35a-47c8-a3c6-9cdfe60c5bc8"
+    },
+    {
+      "claim_id": "457d1534-772f-4181-9766-1f8f5e46ba46",
+      "result_id": "5028fb77-c35a-47c8-a3c6-9cdfe60c5bc8"
+    },
+    {
+      "claim_id": "2929d43b-d4a3-44d2-9044-7ddaece6da14",
+      "result_id": "6aa55d6b-7caf-4ffd-926d-6079f7ba4312"
+    },
+    {
+      "claim_id": "544e9e5b-f2b6-440a-9b1b-06d4002fc06a",
+      "result_id": "6aa55d6b-7caf-4ffd-926d-6079f7ba4312"
+    },
+    {
+      "claim_id": "63a5c56b-8a82-485d-bc9b-de48158cfd99",
+      "result_id": "852c38e8-7992-4aed-82d3-d70ffc9b4fb9"
+    }
+  ],
+  "comparisons": []
+}

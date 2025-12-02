@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Mice have a significantly larger proportion of cold-sensitive POA neurons (10.0 \u00b1 0.9%) compared to thirteen-lined ground squirrels (6.8 \u00b1 0.8%, p<0.05), while warm-sensitive neuron proportions are similar between species. This species-specific difference in cold-sensitive neurons suggests mice possess a cold-sensing mechanism absent in squirrels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium imaging data (C20-C23) with appropriate statistical testing (Mann-Whitney) demonstrates a significant species difference specific to cold-sensitive neurons (C24-C25). The sample sizes appear adequate (56 coverslips from 13 mice vs 33 coverslips from 9 squirrels), and the control comparison with warm-sensitive neurons strengthens the specificity of the finding. The inference about a mouse-specific mechanism (C26) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C5"
+    ],
+    "result": "CNGA3 is highly enriched (14-fold) in cold-sensitive mouse POA neurons compared to cold-insensitive neurons, as demonstrated by RNA sequencing and confirmed by RNA in situ hybridization showing CNGA3 expression in a subset of POA neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcriptomic analysis (C27) with 14-fold enrichment and statistical significance (p<0.001, GLM quasi-likelihood F-test) is supported by three biological replicates. RNA in situ hybridization (C28) provides independent validation. The methods describe appropriate quality control and normalization procedures for RNA-seq data, strengthening confidence in the enrichment finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Pharmacological inhibition with l-cis-diltiazem (50 \u00b5M), a specific inhibitor of CNGA3-containing heteromeric channels, drastically suppresses cold activation of mouse POA neurons without affecting potassium-induced depolarization or warm-sensitive neurons, indicating CNGA3 is necessary for cold sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological data (C32, C34, C36) demonstrate specific suppression of cold responses with appropriate controls (high K+ and warm-sensitive cells). The specificity controls (C34-C37) are critical and well-executed. However, the conclusion of necessity (C38) is somewhat strong given this is pharmacological evidence only\u2014genetic knockout or knockdown would provide stronger support. The drug concentration and specificity claim (C33) relies on prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C58",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mouse CNGA3 is potentiated by cold (22\u00b0C to 12\u00b0C) in the presence of sub-threshold cGMP (1-2 \u00b5M), showing 4-fold activation with a temperature threshold of 22.4 \u00b1 0.8\u00b0C and Q10 of 6.5 \u00b1 0.5. This effect is cell-type independent, occurring in both Xenopus oocytes and HEK293T cells, but cold alone does not activate the channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological data across multiple cell types (C39-C42, C58, C61-C62) with quantitative characterization provides strong support. The cell-type independence (C64) is demonstrated by replication in two systems. The requirement for sub-threshold cGMP (C40-C42) is well-controlled. The Q10 value of 6.5 indicates strong temperature sensitivity. Sample sizes appear adequate based on figure data points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57",
+      "C59",
+      "C67"
+    ],
+    "result": "Squirrel CNGA3 is not potentiated by cold in either Xenopus oocytes or HEK293T cells, despite abundant surface expression demonstrated by robust currents with saturating cGMP. The EC50 for cGMP shows no significant change with cooling (26.4 \u00b1 1.12 \u00b5M at 22\u00b0C vs 20.4 \u00b1 2.14 \u00b5M at 12\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result for squirrel CNGA3 (C56, C59, C67) is supported by multiple experimental systems and includes the critical control showing abundant expression (C57, C60). The lack of EC50 change (C67) provides mechanistic insight. This species difference parallels the neuronal data, strengthening the overall narrative. The replication across cell types reduces concerns about artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Cold potentiation of mouse CNGA3 is mediated by a decrease in EC50 for cGMP from 21.8 \u00b1 5.48 \u00b5M at 22\u00b0C to 3.5 \u00b1 0.63 \u00b5M at 12\u00b0C, as measured by inside-out patch recordings. At saturating cGMP, cooling inhibits maximal activity by 25% for mouse CNGA3 versus 60% for squirrel CNGA3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inside-out patch data (C66) provides direct mechanistic evidence with paired recordings from the same patches, which is methodologically strong. The EC50 shift is substantial (~6-fold) and statistically significant. The differential effects at saturating cGMP (C68-C69) add mechanistic detail. However, the large error bars on the 22\u00b0C EC50 for mouse CNGA3 (\u00b15.48 \u00b5M) suggest some variability, though paired analysis mitigates this concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C65",
+      "C87"
+    ],
+    "result": "CNGA3 forms both homomers and heteromers with CNGB1 in POA neurons. Co-expression of mouse CNGA3 with CNGB1 increases l-cis-diltiazem sensitivity of cold-activated current twofold compared to CNGA3 alone, with the drug-resistant fraction likely representing CNGA3 homomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression data (C46) shows CNGB1 but not CNGB3 in POA neurons. The heteromer formation (C47, C50) is supported by increased drug sensitivity, consistent with prior literature (C43-C44, C48). The inference about homomers (C49) is reasonable given CNGB1 cannot form functional channels alone. However, direct biochemical evidence of heteromer formation (e.g., co-immunoprecipitation) would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C76"
+    ],
+    "result": "Cold activation is specific to CNGA3 among cyclic nucleotide-gated channels. Mouse CNGA2, which is expressed at similar levels in cold-sensitive and cold-insensitive POA neurons, is not activated by cold in the presence of 1 \u00b5M cGMP, though it responds to saturating 250 \u00b5M cGMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specificity control with CNGA2 (C53-C55) is important for establishing that cold sensitivity is not a general property of CNG channels. The expression data (C52) shows CNGA2 is present but not enriched in cold-sensitive neurons. The functional validation (C54) confirms the channel is properly expressed. This strengthens the claim that CNGA3 has unique cold-sensing properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C77"
+    ],
+    "result": "The mechanism of cold activation is intrinsic to mouse CNGA3 and does not require cell-type-specific components or indirect pathways such as cold-induced cGMP production, as demonstrated by cold activation in inside-out patches and specificity to CNGA3 versus CNGA2 and squirrel CNGA3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inside-out patch data (C75) provides strong evidence against indirect mechanisms by isolating the channel from cellular machinery. The specificity arguments (C76-C77) based on CNGA2 and squirrel CNGA3 controls further support a direct mechanism. The inference (C74) is well-justified by the combined evidence. This addresses an important mechanistic question about whether cold acts directly on the channel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Cold may act by enhancing the affinity between CNGA3 and cGMP and/or facilitating channel opening in response to nucleotide binding, as suggested by the decreased EC50 for cGMP activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative mechanistic interpretations (C72-C73) based on the EC50 data. While the decreased EC50 is well-established, distinguishing between increased binding affinity versus enhanced gating cooperativity would require additional experiments (e.g., direct binding assays, single-channel recordings, or structural studies). The authors appropriately frame these as possibilities rather than definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C8"
+    ],
+    "result": "The correspondence between the proportion of cold-sensitive POA neurons and cold sensitivity of CNGA3 across mice and squirrels suggests CNGA3 acts as a hypothalamic cold sensor important for detecting cold temperatures in the POA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between neuronal cold sensitivity and CNGA3 properties across species (C81) provides strong circumstantial evidence. The pharmacological necessity data (C38) and enrichment in cold-sensitive neurons (C27) support this conclusion. However, the claim that CNGA3 'acts as' a cold sensor (C8) would be more definitively supported by genetic loss-of-function experiments in vivo, which the authors acknowledge in C99-C100.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A small fraction of squirrel POA neurons exhibits cold sensitivity despite cold-insensitive CNGA3, suggesting a CNGA3-independent cold-sensing mechanism that could be important for monitoring body temperature during hibernation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of residual cold-sensitive neurons in squirrels (C84, 6.8%) is supported by the calcium imaging data. The inference of a CNGA3-independent mechanism (C85) is logical given squirrel CNGA3 is cold-insensitive. However, the speculation about hibernation monitoring (C86) is reasonable but not directly tested. This represents an interesting observation that warrants future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "CNGA3-expressing cold-sensitive neurons in mice could be part of the mechanism orchestrating thermogenesis in response to body cooling, while in squirrels this mechanism is expected to be inhibited to allow core body temperature drop during torpor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative physiological interpretations (C82-C83) about the role of CNGA3 in thermoregulation. While the speculation is reasonable given the known physiology of hibernation (C83 based on knowledge), there is no direct evidence linking CNGA3 to thermogenic responses or torpor. The authors appropriately frame C82 as 'a tantalizing possibility.' In vivo functional studies would be needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The apparent activation threshold for homomeric CNGA3 (22.4\u00b0C) is lower than physiological brain temperature, but may depend on cellular environment and recording conditions. Temperature sensitivity of hypothalamic neurons is plastic and modulated by multiple factors, and CNGA3's impact on excitability will depend on expression level and cellular properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledgment of the threshold issue (C88) is important and appropriately caveated with citations to similar phenomena in other thermosensitive channels. The discussion of plasticity (C89, supported by citations) and context-dependence (C90, based on general principles) provides appropriate nuance. This addresses a potential concern about physiological relevance while acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The thermosensitivity of mouse CNGA3 may have a deep evolutionary origin, as suggested by the expression of the cyclic nucleotide-gated channel Tax-4 in C. elegans thermosensory neurons and aberrant thermotaxis in tax-4 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This evolutionary speculation (C80) is based on cited work in C. elegans (C78-C79). While the parallel is interesting, the evidence for evolutionary conservation is indirect. Functional characterization of Tax-4 temperature sensitivity and phylogenetic analysis would be needed to support this claim more strongly. The authors appropriately frame this as a suggestion rather than a conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Further understanding of CNGA3's role in thermoregulation requires conditional ablation in adult mouse POA and/or targeted disruption of cold-sensing capability while preserving cGMP sensor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriate suggestions for future work (C99-C100) that acknowledge the limitations of the current study. The complex phenotype of global Cnga3 knockout (C95-C98) justifies the need for conditional approaches. These represent logical next steps to establish physiological relevance, though they are speculative about experimental design rather than claims about current results.",
+    "result_type": "MINOR"
+  }
+]

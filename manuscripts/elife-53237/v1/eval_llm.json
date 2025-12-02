@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C46",
+      "C47"
+    ],
+    "result": "After 100 generations of experimental evolution at high temperature, 2366 genes in males and 4151 genes in females showed significant expression changes (FDR < 0.05). The majority of these changes were sex-specific: only 760 genes (14%) evolved concordantly in both sexes, while 1295 genes (24%) changed specifically in males, 3080 genes (57%) changed specifically in females, and 311 genes (6%) showed antagonistic responses. The changes were highly parallel across replicates (91% in males, 87% in females).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11, C46-C47 provide consistent quantitative results from differential expression analysis with appropriate statistical thresholds (FDR < 0.05) and high replication across independent populations. The high parallelism across replicates (>87%) strongly supports that these are genuine evolutionary responses rather than stochastic variation. The statistical methods (edgeR with likelihood ratio tests) are appropriate for RNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C2",
+      "C43"
+    ],
+    "result": "The discordant gene expression evolution between males and females indicates different functional requirements of the two sexes in the novel high-temperature environment, representing rapid sex-specific adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C2, and C43 are interpretations supported by the extensive sex-specific gene expression changes documented in C7-C11. The observation that 86% of evolved genes show sex-specific or antagonistic patterns, combined with high parallelism across replicates, provides strong evidence for different functional requirements. However, this remains an inference about functional requirements rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Sex-specific evolution of fatty acid metabolism was detected through tissue enrichment and GO analysis. Genes highly expressed in fat body tissue were over-represented among upregulated genes in males but downregulated genes in females (FET, FDR < 0.01). In males, both fatty acid synthesis and degradation pathways were upregulated, while in females only synthesis genes were downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 are supported by appropriate enrichment analyses (Fisher's exact test with FDR correction) and GO term analysis. The tissue-specific enrichment analysis uses published FlyAtlas data as reference. The apparent paradox of both synthesis and degradation being upregulated in males (C16) is noted but not explained, which could indicate increased metabolic flux or require further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C50",
+      "C51"
+    ],
+    "result": "Evolved females showed significantly lower fat content than ancestral females, while males showed no significant difference in fat content between evolved and ancestral populations (Two-way ANOVA and Tukey's HSD test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C50, C51 report phenotypic measurements with appropriate statistical testing (two-way ANOVA with post-hoc tests). The result is consistent with the gene expression changes in fatty acid metabolism (C13-C17). However, C18 cites Barghi et al. 2019 for this data, indicating it may not be original to this study but rather supporting evidence from a related publication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C19"
+    ],
+    "result": "Genes with decreased expression in males were enriched in brain and ganglion tissues (FET, FDR < 0.001), with no such enrichment in females. Dopaminergic pathway genes (Ddc, DAT, Dop1R2) evolved downregulation specifically in males, consistent with previous reports of dopamine signaling evolution in these populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by tissue enrichment analysis with stringent statistical thresholds (FDR < 0.001) and specific gene expression data shown in Figure 2c. C19 provides independent support through citation to a previous study on the same populations. The sex-specific pattern is clear and statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C52"
+    ],
+    "result": "GO enrichment analysis identified 'copulation' and 'male courtship behavior' among antagonistic genes upregulated in males, and 'oviposition' among female-specific upregulated genes. Females showed increased octopamine-related gene expression, consistent with increased fecundity and reduced ovarian dormancy at cold temperatures (10\u00b0C: Wilcoxon's test, W=1.5, p=0.028).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 report GO enrichment results. C26 makes an inference connecting fecundity to octopamine based on literature. C27 and C52 provide experimental validation of octopamine-related phenotypes with appropriate statistical testing. The dormancy assay provides independent validation of the octopamine hypothesis, though the sample size appears limited (3 ancestral replicates). The connection between gene expression and phenotype is correlative but biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C53"
+    ],
+    "result": "Evolved males spent significantly more time chasing females (Wilcoxon's test, W=1323.5, p<0.001) and made more copulation attempts than ancestral males after 100 generations of adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C53 report behavioral measurements with appropriate non-parametric statistical testing (Wilcoxon's test). The results are consistent with the gene expression changes in courtship-related genes (C24). The sample sizes appear adequate based on the test statistic, though exact numbers are not provided in the claims. The behavioral changes align with the molecular evolution patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C48",
+      "C49"
+    ],
+    "result": "In the ancestral population, 95% of genes showed sex-biased expression. During adaptation, 673 ancestrally unbiased genes evolved significant sexual dimorphism, while 136 genes evolved reduced sexual dimorphism after 100 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C48, C49 describe the baseline sex bias and its evolution. C30 is supported by analysis of ancestral population data. C48 and C49 quantify changes in sexual dimorphism shown in Figure 1\u2014figure supplement 2. The high baseline sex bias (95%) is consistent with literature (cited in C30). The gain and loss of dimorphism provides evidence for dynamic evolution of sex-biased expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C3",
+      "C44"
+    ],
+    "result": "The rapid, parallel sex-specific expression changes across replicates after only 100 generations indicate that selection on standing genetic variation in existing sex-specific genetic architecture, rather than de novo mutations, is the most likely mechanism driving rapid sex-specific adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C3, C44 present the central mechanistic hypothesis. The inference is well-supported by: (1) the short timescale (100 generations), (2) high parallelism across replicates (>87%, C46-C47), and (3) citation to Burke et al. 2010 regarding mutation rates. The logic is sound: de novo mutations would not produce parallel responses across independent replicates in 100 generations. However, this remains an inference rather than direct demonstration, and the simulation results (C35-C37) provide additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Of 656 expressed transcription factors, 300 evolved changes in sex-biased expression. Using three criteria (regulating sex-biased genes, regulating genes with evolving sex bias, and compatible direction of TF evolution), 19 TFs were identified as the most likely candidates targeted by discordant selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 describe a systematic filtering approach to identify candidate regulatory TFs. The analysis uses cis-regulatory element enrichment (RcisTarget) with appropriate parameters. The three-criteria filtering is logical and conservative. However, the authors acknowledge in the manuscript that extensive linkage precludes unambiguous identification of selected alleles, and functional validation is needed. The result identifies candidates but does not prove their causal role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C65",
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "Computer simulations using MimicrEE2 with 189 founder haplotypes and 100 generations of sexually discordant selection showed that without sex-biased effects (rmf=1), neither sex could respond to discordant selection. With 40% sex-specific/sex-biased loci, both sexes evolved toward opposing optima. Even two sex-specific loci (rmf=0.94\u00b10.08) significantly decoupled responses between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C65-C66, C68-C69 describe simulation results supporting the standing variation hypothesis. The simulations use realistic parameters (189 founder haplotypes matching the experiment, 100 generations, h\u00b2=0.8, 50 loci per trait). The results are based on 100 independent simulations per scenario with appropriate statistical testing (one-sample proportion test with Bonferroni correction). The simulations demonstrate feasibility of the proposed mechanism, though they are simplified models of reality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The rapid parallel sex-specific responses and dynamic sexual dimorphism highlight the importance of standing genetic variation in sex-biased regulatory architecture. Natural Drosophila populations experience seasonal temperature fluctuations that could maintain segregating variation through oscillating selection, and under polygenic adaptation, segregating variation is maintained over long timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 synthesize the results and propose mechanisms for maintaining variation. C38 is an inference well-supported by the data. C39 is general knowledge about Drosophila ecology. C40-C41 cite relevant theoretical and empirical literature (Bergland et al. 2014, Wittmann et al. 2017, Barton and Keightley 2002, etc.). The argument is logical and well-supported by citations, though it remains a proposed explanation rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C60"
+    ],
+    "result": "Comparison of gene-wise scaling coefficients between ancestral and evolved populations revealed significant differences for both sexes (Kolmogorov-Smirnov test: D=0.18 for females, D=0.12 for males; p<0.001), suggesting the gonad-carcass size ratio changed during adaptation. A second RNA-seq dataset at generation 140 with dissected tissues was generated to correct for these allometric differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 describe an important methodological consideration and correction. The Kolmogorov-Smirnov test is appropriate for comparing distributions. The authors recognized potential confounding from tissue size changes and generated additional data to correct for it. This is rigorous methodology. However, the correction method's validity depends on assumptions about the relationship between whole-body and tissue-specific expression, which are described but not fully validated in these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The experimental design involved 10 replicate populations founded from 202 isofemale lines from a natural D. simulans population, evolving independently for >100 generations at 18/28\u00b0C with census size 1000-1250. Ancestral populations were reconstituted from 184 founder lines, with no significant allele frequency differences expected from the original populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C54-C59 describe the experimental design. The design is well-replicated (10 populations) with adequate population sizes (1000-1250) to minimize drift. The reconstitution method for ancestral populations is validated by citation (Nouhaud et al. 2016, C59). The common garden experiment after 103 generations (C57) controls for environmental effects. This is a rigorous experimental evolution design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Male reproductive activity was measured for 5 reconstituted ancestral and 5 evolved populations at generation 140. Dormancy assays were performed on 3 ancestral and 10 evolved populations at generation 167.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 describe the experimental design for phenotypic assays. The sample sizes are adequate (5 populations for behavior, 3-10 for dormancy). The timing (generations 140 and 167) is after the main RNA-seq experiment (generation 103), which could introduce temporal variation but also demonstrates persistence of evolved differences. The designs are appropriate for the assays performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background literature establishes that males typically evolve to increase mating frequency and fertilization success while females benefit from better resource allocation to offspring, often resulting in sexual conflict. Clinal variation in sexual dimorphism for phenotypes and gene expression in Drosophila suggests sex-specific adaptation to environmental heterogeneity is not uncommon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 summarize relevant background literature with appropriate citations (Brengdahl et al. 2018, Civetta and Clark 2000, Bonduriansky and Chenoweth 2009, Blanckenhorn et al. 2006, Allen et al. 2017, etc.). These are standard concepts in sexual selection and sexual dimorphism research. The claims accurately represent the cited literature and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "No significant SNPs explaining sex differences for multiple human traits can be identified, providing indirect support for polygenic sex-specific adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 cites Randall et al. 2013 regarding human GWAS results. While this observation is used to support the polygenic hypothesis, the connection is indirect and the human genetic architecture may differ substantially from Drosophila. The claim accurately represents the cited study but the relevance to the Drosophila results is speculative. Without access to the cited paper, the accuracy of the attribution cannot be fully verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Replicated Drosophila populations exposed to a novel temperature regime demonstrated sex-specific changes in gene expression, metabolic and behavioral phenotypes in less than 100 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is the main summary claim from the abstract. It is well-supported by the comprehensive results including: gene expression changes (C7-C11), metabolic phenotypes (C18, C50-C51), and behavioral phenotypes (C27-C29, C52-C53). All changes occurred within 100-103 generations. This is an accurate summary of the major findings.",
+    "result_type": "MAJOR"
+  }
+]

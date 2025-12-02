@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript describes the established Drosophila neuroblast (NB) system where NBs undergo asymmetric divisions to produce ganglion mother cells (GMCs) that generate neurons, with neuronal identity determined by temporal transcription factors (TTFs: Hb, Kr, Pdm, Cas) expressed sequentially in the NB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C13 describe well-established background knowledge about the Drosophila NB system, supported by multiple citations to prior research. These claims provide the foundational context for the study and are consistently reported in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The TTF timer operates largely independently of the cell cycle and external developmental signals, with Hb initiated by external signals but subsequent TTF dynamics depending on cross-regulation between TTFs themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 are supported by multiple citations to prior experimental work showing that TTF progression is independent of cell division (C17-C20) and can occur in isolated NBs in vitro (C21). The evidence from mutants and in vitro culture experiments strongly supports this independence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C23"
+    ],
+    "result": "The TTF regulatory circuit contains both activator-relay interactions (commonly described) and repressor-decay interactions, where TTF expression can begin when its repressor decays, in addition to backward inhibitory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C22-C23 are supported by analysis of the regulatory circuit structure shown in Figure 1B. The identification of repressor-decay interactions alongside the traditionally described activator-relay is based on documented regulatory relationships, though the relative contribution of each mechanism was previously unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "A computational model with 17 parameters was developed to capture all experimentally described TTF interactions. Screening parameter space revealed that consistent circuits are distributed across both repressor-decay and activator-relay timer regimes, with higher density in the repressor-decay region, but existing low-resolution data cannot distinguish which mechanism dominates in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe the computational modeling approach and its results. The model formulation (C25-C26) is clearly described in methods. The finding that consistent circuits span both timer types (C27-C28) is supported by Figure 1H, appropriately acknowledging the limitation that low-resolution data cannot definitively distinguish the mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Theoretical analysis demonstrates that repressor-decay timers are more robust to parameter variations than activator-relay timers because decay time depends logarithmically on thresholds while accumulation time depends at least linearly on thresholds. Computational screening confirmed that robust circuits cluster in the repressor-decay region of parameter space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C29-C32 present the theoretical robustness analysis supported by prior work (Rappaport et al., 2005) and new computational results. The mathematical reasoning for differential robustness (C29-C30) is sound, and the computational analysis (C31-C32, Figure 2E) consistently shows higher robustness scores for repressor-decay timers across multiple noise levels (Figure 2\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Computational analysis revealed that TTF deletion phenotypes are tightly correlated with removal of specific regulatory interactions, particularly for Kr deletion and Kr-to-Pdm regulation, indicating that measuring TTF expression timing in mutants can distinguish between activator-relay and repressor-decay mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by the correlation analysis shown in Figure 3C-F. The tight correlation between TTF deletion and specific interaction removal (especially for Kr, C33) validates that deletion phenotypes can inform about regulatory mechanism contributions. This motivated the high-resolution experimental measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "High-resolution quantification revealed that Pdm expression lasts approximately 180 minutes, longer than previously reported, during which NB7-1 produces four GMCs (4th through 7th), including a previously unreported Kr+Pdm+ GMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by experimental data in Figures 4C and 4E. The quantification methodology is clearly described, and the identification of the novel Kr+Pdm+ GMC (C38) is consistent with the extended Pdm expression window. The finding revises previous understanding based on higher temporal resolution measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Mutant analysis at high temporal resolution showed that Pdm induction timing is insensitive to Kr deletion but advances by ~2 cell cycles in hb mutants, while Cas induction is more sensitive to Kr deletion than pdm deletion, demonstrating that both TTFs are induced primarily by repressor decay rather than activator relay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by experimental measurements in Figure 5A-F. The differential sensitivity to repressor versus activator deletion is clearly demonstrated for both Pdm (C39-C41) and Cas (C42-C43). The methodology for determining induction stages is described in Materials and methods, and the data directly address the central question of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Integration of experimental mutant data with computational modeling positioned the in vivo TTF circuit in the region of robust, repressor-decay-dominated timers in parameter space, leading to the conclusion that TTF progression is driven primarily by repressor-decay rather than activator-relay mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 represent the main conclusion, supported by combining experimental data (C39-C43) with computational predictions (C32). Figure 5G-I shows how experimental measurements position the in vivo circuit in the decay-dominated region. The conclusion is well-supported by converging evidence from theory, computation, and experiment, though the authors appropriately acknowledge limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Kr is maintained in hb mutants and remains constitutively expressed under constitutive Hb, indicating that Kr is induced by an external factor and that Hb controls Kr shut-off timing rather than induction, implementing a repressor-decay rather than activator-relay mechanism for the Hb-Kr transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by experimental observations (C48, C50) and logical inference (C49, C51). The finding that Kr persists in hb mutants and under constitutive Hb expression provides strong evidence that Hb functions to terminate rather than initiate Kr expression, consistent with a decay-based mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Based on Hb's rapid degradation (half-life ~15 min in early embryogenesis, likely similar in NBs based on transcription-protein correlation), and assuming Hb transcription for one cell cycle, Pdm expression begins when Hb levels decay to approximately 1-10% of maximum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 combine cited measurements (C52) with reasonable inferences (C53-C54). The half-life estimate is from prior work, the inference about NBs is justified by the 1:1 transcription-protein relationship, and the threshold estimate (C54) is consistent with the timing data and theoretical framework, though it remains an estimate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The newly discovered Kr+Pdm+ GMC may produce an Eve-negative motor neuron, interneuron, or undergo programmed cell death, potentially accounting for the discrepancy between six reported motor neurons and five Eve+ motor neurons in the NB7-1 lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C57 present speculation (C55) alongside established facts (C56-C57). While the observation of five Eve+ motor neurons (C57) is data-supported, the fate of the newly identified GMC (C55) is explicitly speculative. The discrepancy with prior reports (C56) provides context but doesn't definitively resolve the GMC's fate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Pdm shows an early expression burst during the Hb window, which may allow Pdm inheritance in first-born GMCs where it specifies identity together with Hb. The mechanism likely involves independent transcriptional activation followed by Hb-mediated repression, with Pdm protein persisting into the GMC, or alternatively a mechanism blocking Hb repression in early NBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is supported by data and prior observations, but C59-C62 are explicitly speculative about function and mechanism. While the speculation is reasonable and supported by citations to related work (C59-C60), these remain hypotheses requiring experimental validation. The alternative mechanisms (C61-C62) are presented appropriately as possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors propose that repressor-decay-dominated TTF progression was evolutionarily favored because it provides superior robustness to parameter variations, which is necessary to maintain synchrony between TTF progression and cell division cycles. This robustness advantage stems from fundamental differences in the dynamics of protein decay versus accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 present the evolutionary interpretation and mechanistic explanation for robustness differences. While the evolutionary claim (C63) is speculative, it is well-supported by the demonstrated robustness advantage (C69) and the requirement for synchrony (C64). The mechanistic explanation (C65-C68) is based on sound theoretical principles about accumulation versus decay dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study proposes that robustness serves as an evolutionary selection pressure favoring repressor-decay circuits in developmental patterning, extending previous findings about robustness in spatial patterning circuits to temporal patterning in neuronal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 place the findings in broader context. The hypothesis that robustness drives circuit design (C70) is supported by multiple prior studies. The main proposal (C71, C73) extends this principle from spatial to temporal patterning, supported by the current findings. While the evolutionary claim remains untested experimentally (as acknowledged), it is well-grounded in the demonstrated robustness differences.",
+    "result_type": "MAJOR"
+  }
+]

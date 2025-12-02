@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C54"
+    ],
+    "result": "Mycobacteria differ fundamentally from model bacteria (E. coli and B. subtilis) in cell wall synthesis and growth mode. While model bacteria use MreB-directed lateral wall synthesis with predominantly 4-3 crosslinks (>90% by PBPs), mycobacteria lack MreB, grow by polar elongation, and have abundant 3-3 crosslinks (\u226560% by LDTs). Polar growth segregates new and old cell wall, unlike the intermingled pattern in lateral-elongating bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19, C54, C68-C71 establish well-documented differences between mycobacterial and model bacterial cell wall biology through citations to prior research and established knowledge. The contrasts in growth mode, enzyme distribution, and crosslink abundance are consistently supported across multiple independent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C53",
+      "C78",
+      "C79"
+    ],
+    "result": "FDAA incorporation in M. smegmatis shows an unusual gradient pattern from old to new pole and is primarily LDT-dependent. A FACS-based transposon screen identified three LDTs (ldtA, ldtB, ldtE) responsible for FDAA incorporation. Deletion of all six LDTs (\u0394LDT strain, verified by whole genome sequencing) nearly abolished both FDAA incorporation and 3-3 crosslinking, with partial restoration by complementation with ldtE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26, C53, C78-C79 are well-supported by microscopy (Figure 1B), FACS screening data (Figure 1D), flow cytometry (Figure 1\u2014figure supplement 3), LC-MS/MS analysis (Figure 1\u2014figure supplement 4), and whole genome sequencing verification. The gradient pattern is reproducibly observed and the genetic characterization is thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C55",
+      "C56",
+      "C57",
+      "C80",
+      "C81"
+    ],
+    "result": "\u0394LDT cells progressively lose rod shape at sites of aging cell wall, forming localized spherical blebs that are prevented by high osmolarity. Blebs localize to the oldest cell wall (inherited by new pole daughters), lack new cell wall synthesis, and correlate with reduced cell stiffness measured by AFM. This demonstrates that 3-3 crosslinks are required to counteract turgor pressure and maintain rod shape specifically at aging cell wall, while 4-3 crosslinks maintain shape at newer cell wall near poles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C37, C55-C57, C80-C81 are strongly supported by time-lapse microscopy (Figure 2A, biological duplicate), pulse-chase labeling (Figure 2B, biological triplicate), AFM measurements (Figure 2C-D, two independent experiments), and lineage tracking (Figure 2E). The osmolarity rescue experiment provides direct evidence for turgor-related defects. The phenotype is specific, reproducible, and mechanistically interpretable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C5",
+      "C74"
+    ],
+    "result": "In the absence of LDTs, cells become hypersensitive to PBP inactivation. TnSeq analysis showed that pbpA and ponA2 mutants were recovered at significantly lower frequencies in \u0394LDT cells. Allele swapping experiments demonstrated that the transpeptidase activity of PonA1, non-essential in WT, becomes essential in \u0394LDT cells. This indicates that 4-3 crosslinks become more important for viability when 3-3 crosslinks are absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C5, C74 are supported by TnSeq data (Figure 3A-B) and allele swapping experiments (Figure 3D). However, the allele swapping was performed only once (noted in methods), which is a limitation. The TnSeq provides genome-wide support for the conclusion, and the genetic logic is sound, but additional replicates of the allele swapping would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C4",
+      "C73"
+    ],
+    "result": "PBPs and LDTs show distinctive subcellular localizations reflecting cell wall age. PonA1-RFP localizes highest at old and new poles (sites of new PG insertion), while LdtE-mRFP localizes farther from poles at sites of older PG. This differential distribution creates a non-uniform distribution of 4-3 and 3-3 crosslinks in single cells due to asymmetric polar growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C4, C73 are supported by fluorescence microscopy (Figure 4A-B, biological duplicate). The localization patterns are clear and consistent with the model of age-dependent crosslink distribution. However, only one biological replicate is shown in the quantification (Figure 4B), which is a limitation. The patterns are visually compelling and mechanistically coherent with other findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C59",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "DacB2, identified by homology to E. coli AmpH, has both D,D-carboxypeptidase and D,D-endopeptidase activity in vitro. DacB2-mRFP localizes to sites of old cell wall (similar to LdtE), and CRISPRi knockdown of dacB2 in \u0394LDT cells led to smaller blebs. This supports a model where blebs form due to unchecked D,D-endopeptidase activity cleaving 4-3 crosslinks in aging cell wall lacking 3-3 crosslinks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C59, C82-C84 are supported by in vitro biochemical assays (Figure 4C, technical duplicate), localization data (Figure 4A-B), and CRISPRi experiments (Figure 4\u2014figure supplement 3, biological duplicate). The incomplete rescue of blebs (C48) suggests additional endopeptidases exist, which is appropriately noted as speculation. The biochemical characterization is solid, though only technical replicates are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "There are likely additional D,D-endopeptidases in M. smegmatis besides DacB2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 is explicitly labeled as speculation by the authors, based on incomplete rescue of the bleb phenotype by dacB2 knockdown. While this is a reasonable inference, it remains unproven and requires identification of additional enzymes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "PonA1, LdtE, DacB2, and FDAAs all show local minima at mid-cell closer to the new pole, correlating with the asymmetric division site. The lack of enzyme localization and FDAA incorporation suggests depletion of penta- and tetrapeptide substrates, implying this region may be more abundantly crosslinked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by localization data (Figure 4) and cited prior work on division site placement. The inference about substrate depletion and increased crosslinking (C61-C62) is logical but indirect. The correlation with division site is interesting but the mechanistic connection remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "3-3 crosslinks might serve as a signal for septal placement in mycobacteria, which lack known septal placement mechanisms (Noc and Min systems). The major septal hydrolase RipA cleaves substrates available on 3-3 crosslinked material, and cell-envelope deformations travel from pole to mid-cell through polar growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C67 are explicitly speculative (C63, C67) and rely on correlations and prior work (C64-C66). While the hypothesis is intriguing and mechanistically plausible, no direct experimental evidence is provided linking 3-3 crosslinks to division site determination. This represents an interesting direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Mycobacteria utilize 3-3 crosslinks at asymmetrically distributed aging cell wall to provide lateral body stability, a function that may not be required in bacteria with MreB-directed PG synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is an inference well-supported by the collective experimental findings (bleb formation in \u0394LDT, localization patterns, mechanical measurements). The comparison to MreB-containing bacteria is logical given the fundamental differences in growth mode and the specific requirement for 3-3 crosslinks at aging cell wall.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C20",
+      "C49",
+      "C50",
+      "C51",
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Combining drugs targeting both PBPs (amoxicillin) and LDTs (meropenem) kills M. tuberculosis faster than either drug alone, with synergism in MIC observed in Mtb but not Msm. This validates the prediction that simultaneous inhibition of both crosslinking pathways would be therapeutically effective, consistent with prior clinical observations of early sputum clearance with this combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C49-C51, C6, C75-C77, C85-C88 are supported by luciferase-based killing assays (Figure 5A-B, Mtb in biological and technical triplicate) and MIC determinations (Figure 5\u2014figure supplement 2). The synergy in Mtb but not Msm (C51, C87-C88) may reflect species differences in LDT essentiality (C52, C85). The connection to prior clinical data (C76-C77) strengthens translational relevance. The experimental design is appropriate and results are reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The difference in drug synergism between Msm and Mtb may reflect differences in LDT expression or essentiality between the two species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 is speculation based on observed differences in drug synergy (C51, C87-C88) and prior TnSeq data suggesting LDT essentiality in Mtb (C85). While plausible, this remains unproven and would require direct comparative studies of LDT expression and function in both species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Cell wall processing must occur to destabilize older portions of the rod in \u0394LDT cells, as evidenced by the gradual manner of rod shape loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is a reasonable inference from the time-lapse data showing progressive bleb formation (C27, C57). The identification of DacB2 as a D,D-endopeptidase that localizes to old cell wall and whose knockdown reduces blebs (C44-C47) provides direct support for this processing model.",
+    "result_type": "MINOR"
+  }
+]

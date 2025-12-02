@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "HSV1 replication compartments (RCs) form rapidly within a few hours of infection and exhibit macroscopic properties characteristic of liquid droplets, including fusion events, spherical shape with aspect ratios close to 1 (median 1.18), and different phase values compared to surrounding nucleoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are well-supported by imaging data in Figure 1A-C showing RC formation, fusion events, and quantitative measurements of aspect ratios from 817 RCs across 134 cells. The data provide strong visual and quantitative evidence for these macroscopic properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Immediate early (IE) and viral tegument proteins have the highest fraction of predicted intrinsic disorder among HSV1 proteins and are even slightly more disordered than a curated list of proteins known to undergo LLPS in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by IUPred analysis shown in Figure 1D-E. The computational prediction of disorder is appropriate and the comparison to known LLPS proteins provides context, though this is a computational prediction rather than experimental validation of disorder.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Despite FRAP recovery slowing as infection progresses, Pol II recruitment to RCs is independent of CTD length, resistant to 1,6-hexanediol treatment, and does not require enrichment of IDRs known to interact with the CTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by FRAP data (Figure 1F), CTD length experiments (Figure 1G), hexanediol treatment (Figure 1H), and IDR localization experiments (Figure 1\u2014figure supplement 1). These results collectively argue against an IDR-mediated LLPS mechanism for Pol II recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Pol II molecules show unrestricted diffusion across RC boundaries with unchanged free diffusion coefficients inside versus outside RCs, constant FLIP decay rates regardless of infection time, and no evidence of boundary constraints for molecules entering or leaving RCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are strongly supported by spaSPT data (Figure 2E), FLIP experiments (Figure 2F, Figure 2\u2014figure supplement 2B-C), and boundary analysis (Figure 2G). The combination of these orthogonal approaches provides compelling evidence against RCs being a distinct liquid phase with boundary constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The fraction of Pol II molecules in the 'bound' state doubles inside RCs to ~70%, and this increase is due to an increase in the rate of Pol II binding rather than a decrease in the rate of unbinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by two-state model fitting of spaSPT data (Figure 2H) and the combination of FLIP and spaSPT results. The inference about binding versus unbinding rates is logical given the unchanged FLIP decay rates, though this is an indirect inference rather than direct measurement of kinetic rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Transcription inhibition with Triptolide or Flavopiridol significantly reduces nascent transcripts but ~80% of Pol II remains in RCs after 45 min of treatment. In uninfected cells, these drugs reduce bound Pol II by half, but inside RCs they reduce the bound fraction by only ~5-12%, while FRAP shows dramatically faster recovery after Triptolide treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are well-supported by RNA FISH (Figure 3C-D), quantification of Pol II localization (Figure 3E-F), spaSPT analysis (Figure 3G), and FRAP experiments (Figure 3H). The data convincingly demonstrate that Pol II recruitment to RCs is largely independent of active transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "HSV1 mutant strains n504 and n406, which carry mutations affecting ICP27-mediated Pol II-ICP8 interactions, recruit Pol II to RCs as efficiently as WT virus with indistinguishable FRAP dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by imaging and FRAP data in Figure 3\u2014figure supplement 1A-B. However, the authors note these mutants show deficiency in forming RCs, so the analysis is limited to cells where RCs do form, which may introduce selection bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The average RC at 6 hpi has a DNA concentration of 3.9 \u00d7 10^4 bp/\u00b5m^3 (240 times less concentrated than host chromatin), representing ~0.2% of total nuclear DNA. Despite this low concentration, inhibition of viral DNA replication with PAA decreases the bound Pol II fraction to ~50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by DNA FISH measurements (Figure 4C, Table 1) and spaSPT analysis (Figure 4D). The calculations appear sound, though they rely on assumptions about nuclear volume from literature and assume diploid DNA content despite using hypertriploid U2OS cells, which the authors acknowledge may overestimate relative concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Histone H2B is not incorporated into RCs, ATAC-seq shows viral DNA lacks nucleosomal laddering with flat, featureless profiles across the genome, and 24.2% of ATAC-seq reads map to viral DNA at 6 hpi despite representing only 0.2% of total DNA, indicating at least 100-fold greater accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are strongly supported by H2B imaging (Figure 4E), ATAC-seq fragment length distributions (Figure 4F), genome-wide profiles (Figure 4G), and quantitative analysis (Table 1). The data provide compelling evidence that the viral genome remains largely nucleosome-free and highly accessible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Viral DNA within RCs shows nearly three orders of magnitude variability in local density by STORM imaging. Pol II diffusion inside RCs is highly anisotropic with 1.7-fold greater probability of backward versus forward steps, and this anisotropy is further amplified by Triptolide treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by STORM imaging (Figure 5A), angular distribution analysis (Figure 5D-F), and quantification (Figure 5E). The anisotropic diffusion provides strong evidence for repetitive DNA binding events, and the Triptolide result elegantly demonstrates this is due to transient rather than stable binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "PALM imaging reveals heterogeneous Pol II distribution within RCs, and Ripley's L-function analysis shows Pol II forms hubs at multiple length scales up to one micron, inconsistent with LLPS-driven compartment formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by PALM imaging (Figure 5G) and spatial statistics analysis (Figure 5H). The Ripley's L-function analysis is appropriate for assessing spatial clustering, and the results are inconsistent with the homogeneous distribution expected for phase-separated condensates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "TetR-Halo and LacI-Halo, bacterial transcription factors lacking cognate binding sites in human and HSV1 genomes, show enrichment within RCs with increased short translocations consistent with higher bound fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by imaging (Figure 6) and single particle tracking analysis (Figure 6\u2014figure supplement 1). This is a particularly strong result demonstrating that nonspecific DNA binding is sufficient for RC enrichment, as these proteins have no evolutionary history with HSV1 or mammalian genomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C57",
+      "C58"
+    ],
+    "result": "RCs efficiently enrich host Pol II but operate via a distinct mechanism from LLPS, wherein unrestricted nonspecific protein-DNA interactions outcompete host chromatin without requiring stable macromolecular structures or producing single-molecule behaviors suggesting a separate liquid phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C57, C58 represent the central conclusion of the manuscript, supported by the totality of experimental evidence including spaSPT, FRAP, FLIP, ATAC-seq, and super-resolution imaging. The multiple orthogonal approaches provide strong support for this mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The viral genome remains largely nucleosome-free, and this increased accessibility allows Pol II and other DNA-binding proteins to repeatedly visit nearby DNA binding sites, creating local accumulations despite unrestricted diffusion across RC boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are supported by ATAC-seq data (Figure 4), angular distribution analysis (Figure 5D-F), and the combination of spaSPT and FLIP results. The mechanistic link between DNA accessibility and anisotropic diffusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The authors speculate that a less obvious function of nucleosomes may be to passivate genomic DNA to minimize nonspecific interactions and maintain an active pool of freely diffusing nuclear factors, and that maintaining nucleosome-depleted enhancers and promoters may facilitate local Pol II accumulation for transcription activation without invoking LLPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C60 are explicitly speculative extrapolations from the HSV1 findings to general chromatin biology. While the speculation is reasonable given the results, these claims about nucleosome function in uninfected cells are not directly tested in this manuscript and represent hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims about LLPS, Pol II hub formation, HSV1 infection biology, and RC properties are established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C17 represent background knowledge from the literature, appropriately cited. These provide context for the current work and are supported by the cited references. Claim C17 is additionally confirmed by data in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

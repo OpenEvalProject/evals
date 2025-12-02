@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ApoE3 and ApoE4 bind Apoer2 with high affinity, while ApoE2 shows much weaker binding (~100-fold reduced). This binding pattern is consistent with known LDL receptor interactions, and co-localization of ApoE3 and Apoer2 in endosomes was confirmed by immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by solid-phase binding assays (Figure 1A,B) showing dose-dependent interactions and immunofluorescence microscopy (Figure 1C, Videos 1-2) demonstrating co-localization. The results are consistent with established literature on ApoE-receptor binding affinities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75"
+    ],
+    "result": "ApoE4 selectively impairs Apoer2 recycling and surface expression in primary neurons, causing delayed reappearance at the cell surface compared to ApoE3. Other non-ApoE-binding receptors (insulin receptor, transferrin receptor, Lrp1, Ldlr) were unaffected, demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 are supported by cell surface biotinylation assays (Figure 2B,C) showing selective ApoE4-mediated reduction in Apoer2 surface levels and co-immunoprecipitation data (Figure 2D,E) showing prolonged ApoE4-Apoer2 retention. Controls with non-ApoE-binding receptors strengthen the specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "ApoE4 induces dose-dependent tyrosine phosphorylation of Dab1 in primary neurons, suggesting that ApoE4 in its molten-globule state causes receptor clustering in acidic endosomes. Dab1 binds to Apoer2's NPxY motif and undergoes phosphorylation when receptors cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by Western blot data (Figure 2F,G) showing dose-dependent Dab1 phosphorylation with ApoE4 treatment. The mechanistic interpretation (C79) is speculative but reasonable given the molten-globule properties of ApoE4 and established Dab1-Apoer2 interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "ApoE4's isoelectric point (~6.4) closely matches early endosomal pH (~6.5), and ApoE4 undergoes structural transformation to a molten-globule state at low pH. This isoelectric charge neutralization likely causes reduced solubility and aggregation, driving the recycling block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by cited literature (Morrow et al., 2002; Casey et al., 2010; Ordovas et al., 1987) and biophysical principles. Figure 3A illustrates the isoelectric point alignment. The mechanistic hypothesis (C54, C86) is well-reasoned based on protein chemistry principles, though direct measurement of ApoE4 aggregation in endosomes is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The NHE inhibitor EMD87580 dose-dependently restores Apoer2 recycling in the presence of ApoE4. EMD87580 also prevents the minor recycling impairment caused by ApoE3, suggesting ApoE3 may also lose some solubility in early endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by cell surface biotinylation assays (Figure 4B-E) showing dose-dependent restoration of Apoer2 surface expression with EMD87580 treatment. The inference about ApoE3 (C98) is reasonable given the data, though the effect is much smaller than for ApoE4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Bafilomycin (proton pump inhibitor) reverses EMD87580's correction of ApoE4-induced recycling defects in a dose-dependent manner, and higher EMD87580 concentrations are required when bafilomycin is present. This demonstrates that vesicular pH is the primary factor determining ApoE4's effects on endosomal trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by experimental data (Figure 4F-I) showing that alkalinizing the endosome with bafilomycin counteracts EMD87580's effects and shifts the dose-response curve. This provides strong evidence that pH manipulation is the mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Among all NHE isoforms tested (NHE1, 5-9), only shRNA-mediated knockdown of NHE6 completely restored Apoer2 surface expression in the presence of ApoE4. Three independent NHE6 shRNAs showed this effect, while shRNAs against other NHE isoforms had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by comprehensive shRNA screening data (Figure 5A-D) testing multiple NHE isoforms with appropriate controls. The use of three independent NHE6 shRNAs strengthens the specificity of the finding and rules out off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "NHE6 knockdown (>90% reduction) by three independent shRNAs completely restored surface expression of Apoer2 and glutamate receptors (GluN2B, GluA1, GluA2/3) in ApoE4-treated neurons, comparable to pharmacological NHE inhibition with EMD87580.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by Western blot data (Figure 6A-F) showing efficient NHE6 knockdown and restoration of multiple receptor types. The consistency between genetic and pharmacological approaches strengthens the conclusion that NHE6 is the relevant target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "In vivo EMD87580 treatment restored Reelin responsiveness in ApoE4-KI mice. While ApoE4-KI slices showed elevated baseline LTP and were resistant to Reelin enhancement, EMD87580 treatment reduced baseline LTP and restored Reelin-mediated LTP enhancement to levels comparable to ApoE3-KI mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C116 are supported by electrophysiology data (Figure 7) from acute hippocampal slices. The restoration of Reelin responsiveness in ApoE4-KI mice with EMD87580 treatment provides functional validation of the receptor trafficking findings. Statistical analysis appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "AD patient brain extracts containing A\u03b2 oligomers suppressed LTP in both ApoE3-KI and ApoE4-KI hippocampal slices. Reelin prevented this suppression in ApoE3-KI slices but not in ApoE4-KI slices. However, 4-hour pre-perfusion with EMD87580 completely abolished LTP suppression in ApoE4-KI slices treated with A\u03b2 and Reelin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by electrophysiology data (Figure 8) using human AD brain extracts. The rescue of A\u03b2-induced LTP suppression by EMD87580 in ApoE4-KI mice demonstrates therapeutic potential. The requirement for extended pre-treatment (4 hr) is noted but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C126",
+      "C128"
+    ],
+    "result": "Both pharmacological (EMD87580) and genetic (shRNA) inhibition of NHE6 completely reverse the ApoE4-induced recycling block of Apoer2 and glutamate receptors, restore normal receptor trafficking, and correct functional defects in vitro and in vivo by lowering endosomal pH away from ApoE4's isoelectric point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching result integrates claims C5-C6 and C58-C61 with supporting data from multiple experimental approaches (cell surface biotinylation, shRNA knockdown, electrophysiology). The convergence of pharmacological and genetic evidence, along with functional rescue in vivo, strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C117",
+      "C142",
+      "C144"
+    ],
+    "result": "NHE6 inhibition restores Reelin-mediated modulation of excitatory synapses impaired by ApoE4, neutralizes ApoE4's effects on vesicle trafficking and synaptic dysfunction, abolishes A\u03b2-induced synaptic impairment, and alters cell surface Apoer2 expression levels and synaptic plasticity in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C117, C142, and C144 represent the functional consequences of NHE6 inhibition and are supported by the electrophysiology data (Figures 7-8) and receptor trafficking assays (Figures 4-6). The mechanistic link between receptor trafficking and synaptic function is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C155"
+    ],
+    "result": "The findings suggest NHE6-specific inhibitors as a rational therapeutic approach for preventing AD risk in ApoE4 carriers. However, current non-specific NHE inhibitors cannot cross the blood-brain barrier, and development of brain-penetrant, NHE6-specific inhibitors that can modulate (rather than completely block) NHE6 activity is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130, C150-C153, and C155 represent therapeutic proposals and future directions. While the preclinical data support the concept, these claims are speculative regarding clinical translation. The limitations of current inhibitors (C152-C153) are acknowledged, and the need for specific tool development (C151) is a reasonable assessment but represents future work rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "ApoE4 impairs NMDA receptor activation and Ca2+ conductance by Reelin, leading to 'Reelin resistance' that prevents synaptic adaptation to accumulating A\u03b2 oligomers. This creates a self-reinforcing cycle where compensatory increases in synaptic activity drive further A\u03b2 production, and impaired vesicle recycling reduces A\u03b2 turnover, both contributing to accelerated amyloid accumulation in ApoE4 carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 synthesize the mechanistic model linking ApoE4's effects on receptor trafficking to AD pathogenesis. While the individual components are supported by data and citations, the complete pathogenic cascade (C133-C135) involves some inference and integration with prior literature. The model is plausible and well-reasoned but represents a synthesis rather than direct experimental demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "A recent study reported ApoE-insulin receptor interactions causing intracellular retention and impaired insulin signaling. However, the current study did not detect impaired insulin receptor trafficking, and there is no evidence that ApoE4 carriers are predisposed to insulin resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 accurately describe a discrepancy between the current findings and a prior study (Zhao et al., 2017). The negative result for insulin receptor trafficking (C137) is supported by Figure 2B,C. The assessment that ApoE4 carriers lack insulin resistance (C138) is reasonable but represents absence of evidence rather than evidence of absence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C143",
+      "C145"
+    ],
+    "result": "A recent astrocyte study (Prasad and Rao, 2018) proposed that ApoE4 causes endosomal acidification via NHE6 reduction, leading to impaired A\u03b2 clearance, and that increasing NHE6 expression alleviates this impairment. Both studies demonstrate that endosomal pH manipulation affects ApoE trafficking, but in different cell types (neurons vs. astrocytes) with potentially different mechanisms (Apoer2-mediated synaptic plasticity vs. Lrp1-mediated A\u03b2 clearance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141, C143, and C145 accurately describe findings from Prasad and Rao (2018) and compare them to the current study. The apparent contradiction (acidification vs. alkalinization) is acknowledged, and the cell-type-specific explanation (C145) is reasonable. However, the mechanistic reconciliation remains incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "ApoE4 genotype is the most prevalent and important genetic risk factor for late-onset AD, affecting ~15-20% of the population and present in >50% of LOAD cases. The root cause is proposed to be a trafficking defect at the early endosome level. ApoE is a lipid-carrying protein with three major human isoforms (E2, E3, E4), with E3 being most common (~77% homozygosity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C26-C32 represent established knowledge about ApoE and AD, supported by multiple citations. The characterization of ApoE4 as the most important genetic risk factor (C1, C26) is well-established. The proposal that trafficking defects are the root cause (C2) is the central hypothesis of this paper and is supported by the experimental data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "A\u03b2 plays a central early role in AD, while \u03c4 aggregation occurs later and is primarily responsible for neurodegeneration and dementia progression. Before forming visible plaques and tangles, A\u03b2 and \u03c4 exist as oligomeric aggregates that impair neuronal function by disrupting synaptic Ca2+ homeostasis, leading to synaptic dysfunction that represents the earliest AD stage and manifests as MCI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 represent established knowledge about AD pathology, supported by appropriate citations (Selkoe and Hardy, 2016; Kuchibhotla et al., 2008; Palop and Mucke, 2010; Shankar and Walsh, 2009). These claims provide necessary background context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ApoE4's effect on A\u03b2 accumulation is allele dosage-dependent, but ApoE4 can also independently impair synapse function by disrupting endocytic trafficking of ApoE receptors and glutamate receptors. Most ApoE receptors are LDL receptor family members expressed in brain synapses, with Apoer2 being the best characterized and functioning primarily as a Reelin receptor in both pre- and postsynaptic compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 represent established knowledge supported by appropriate citations (Corder et al., 1993; Chen et al., 2010; Lane-Donovan et al., 2014; Pohlkamp et al., 2017; Bal et al., 2013; Beffert et al., 2005). These provide essential background for understanding the experimental system but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Reelin is essential for cortical layer formation during development and later functions as a neuromodulator in the adult brain. It signals through Apoer2/Vldlr to activate Src-family kinases, increasing Ca2+ influx through NMDA receptors and maintaining synaptic potentiation. ApoE4 impairs this synaptic homeostasis independent of A\u03b2 accumulation, with ApoE4-specific brain alterations detected in children <2 years old.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 represent established knowledge about Reelin signaling and ApoE4's effects, supported by multiple citations (D'Arcangelo et al., 1995; Del R\u00edo et al., 1997; Alc\u00e1ntara et al., 1998; Chen et al., 2005; Hiesberger et al., 1999; Dean et al., 2014; Shaw et al., 2007). These provide important mechanistic context but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Early endosomal pH (~6.5) is maintained by opposing activities of the proton pump (v-ATPase, which decreases pH) and NHE6 (which increases pH). Functional disruption of NHE6 lowers endosomal pH and is predicted to restore ApoE4 solubility and vesicle trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C87-C89 describe established endosomal pH regulation (supported by Fuster and Alexander, 2014; Brett et al., 2002) and make a testable prediction (C89) that is subsequently validated by the experimental data. The prediction is well-reasoned based on the biophysical properties of ApoE4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "NHE6-specific inhibitors do not currently exist, but numerous inhibitors for the plasma membrane NHE1 isoform are available, including amiloride and its analogues that have been used clinically as diuretics for half a century. Some of these analogues might cross-inhibit NHE6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 accurately describe the state of available pharmacological tools and the rationale for testing amiloride analogues. This is supported by citation to Masereel et al., 2003 and represents the practical approach taken in the study to identify NHE6 inhibitors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C127",
+      "C129",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C154"
+    ],
+    "result": "Relief of the ApoE4 recycling block may require time to clear stuck vesicles. The propensity of proteins to lose hydrophilicity near their isoelectric point (a principle used for insulin purification) can explain ApoE isoform differences in neuronal function and AD mechanisms. ApoE4 increases early endosome size/number in AD patients and iPSC-derived neurons, consistent with the trafficking defect model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is speculative based on unpublished observations. Claims C125, C127, C129, C146-C149, and C154 synthesize the mechanistic model with supporting citations (Wintersteiner and Abramson, 1933; Morrow et al., 2002; Cataldo et al., 2000; Lin et al., 2018). The integration is logical and well-supported, though some elements involve inference.",
+    "result_type": "MINOR"
+  }
+]

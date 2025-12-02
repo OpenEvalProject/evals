@@ -1,0 +1,1573 @@
+{
+  "submission": {
+    "id": "531b4be9-d42b-4c46-b813-25c402c16bc7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:59:06.200270Z",
+    "updated_at": "2025-12-02T12:59:06.200270Z"
+  },
+  "content": [
+    {
+      "id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "submission_id": "531b4be9-d42b-4c46-b813-25c402c16bc7",
+      "content_type": "manuscript",
+      "content_text": "# Evolutionary and functional insights into the mechanism underlying body-size-related adaptation of mammalian hemoglobin\n\n## Authors\n\n- Olga Rapp<sup>1</sup>\n- Ofer Yifrach<sup>1</sup> ([ORCID: 0000-0001-9020-9745](https://orcid.org/0000-0001-9020-9745)) \u2020\n\n### Affiliations\n\n1. Department of Life Sciences, Zlotowski Center for Neuroscience Ben-Gurion University of the Negev Beer Sheva Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nHemoglobin (Hb) represents a model protein to study molecular adaptation in vertebrates. Although both affinity and cooperativity of oxygen binding to Hb affect tissue oxygen delivery, only the former was thought to determine molecular adaptations of Hb. Here, we suggest that Hb affinity and cooperativity reflect evolutionary and physiological adaptions that optimized tissue oxygen delivery. To test this hypothesis, we derived the relationship between the Hill coefficient and the relative affinity and conformational changes parameters of the Monod-Wymann-Changeux allosteric model and graphed the \u2018biophysical Hill landscape\u2019 describing this relation. We found that mammalian Hb cooperativity values all reside on a ridge of maximum cooperativity along this landscape that allows for both gross- and fine-tuning of tissue oxygen unloading to meet the distinct metabolic requirements of mammalian tissues for oxygen. Our findings reveal the mechanism underlying body size-related adaptation of mammalian Hb. The generality and implications of our findings are discussed.\n\n## Introduction\n\nTwo major obstacles hamper understanding the evolutionary origins of properties seen in modern-day proteins. One stems from the fact that mutation and selection are separated by several levels of biological organization such that it is difficult to elucidate the complex relationships between protein sequence and organismal/population fitness. Second, even in those cases where the molecular properties of a protein (e.g. affinity or cooperativity) have adaptive value with respect to organismal fitness, we often lack an understanding of the molecular mechanism underlying changes in the values of these properties. Given these challenges, we currently understand the mechanisms underlying adaptive behavior for only a very limited number of proteins (e.g. Mello and Tu, 2005; Keymer et al., 2006; Swem et al., 2008; Storz et al., 2009).\n\nHb represents an excellent model protein to study molecular adaptation in vertebrates (Perutz, 1983; Poyart et al., 1992; Hourdez and Weber, 2005; Storz and Moriyama, 2008). Hb is a tetrameric allosteric protein responsible for tissue oxygen delivery in a manner controlled by the midpoint and slope of its oxygen saturation curve. These macroscopic parameters reflect the effective affinity (p50) and cooperativity (nH) of oxygen binding by Hb, respectively and are traditionally evaluated using the Hill equation, derived assuming an all-or-none mode of binding (Hill, 1910). Over the years, many studies have indicated that Hb oxygen affinity (p50) is an adaptive trait, that\u00a0is its value has been tuned during evolution so as to tailor tissue oxygen delivery to the particular metabolic requirements of vertebrates due to variations in body size, lifestyle and/or environmental conditions. For example, vertebrates native to mountain habitats where low ambient oxygen pressures prevail usually possess Hb that exhibits higher affinity for oxygen than does the Hb of lowland dwellers (Lenfant, 1973; Bunn, 1980; Weber, 2007; Storz and Moriyama, 2008; Storz, 2016). Likewise, Hb in small-sized animals that display high metabolic rates presents lower affinity for oxygen than does the same protein in large-sized animals, again reflecting the adaptive adjustment of tissue oxygen unloading by Hb (Schmidt-Neilsen and Larimer, 1958; Schmidt-Nielsen, 1970). Accordingly, early respiratory system physiologists assigned great significance to the p50 parameter, terming it \u2018oxygen unloading tension\u2019, and proposed that Hb function could be explained in terms of adaptive evolution of this value (Schmidt-Neilsen and Larimer, 1958; Schmidt-Nielsen, 1970). At the same time, such studies ignored the adaptive potential of cooperativity (nH) with respect to Hb function. This is surprising, given that nH also affects Hb tissue oxygen delivery. Moreover, mechanisms underlying changes in p50, such as changes in oxygen affinity of the oxy- or deoxy-states of Hb, changes in the ratio between these states or changes in their sensitivity to allosteric effectors, are all also expected to affect nH. Indeed, the finding by Milo et al. (2007) that mammalian Hbs exhibit variations in the Hill cooperativity value hints at the adaptive potential of the nH trait.\n\nThe need to also consider nH in addressing adaptation of Hb function becomes evident when we examine the implications of accepting the notion that molecular adaptation of Hb function in vertebrates relies primarily on its p50 affinity property. Given the inherent tradeoff between arterial O2 loading and peripheral O2 unloading, it is not clear whether improved tissue oxygen delivery is achieved by increased oxygen affinity to improve Hb loading or by decreased affinity to favor unloading (Storz, 2016). Either very high or very low oxygen affinity would result in a low fraction of tissue oxygen delivery unless cooperativity (nH) between Hb subunits is introduced as a means to switch between low- and high-affinity Hb states. It would thus seem that the values of both p50 and nH of Hb should reflect physiological optimization of the tradeoff between O2 loading in the lungs and O2 unloading in tissues, so as to optimize tissue oxygen delivery. Although this is a seemingly obvious claim, it has yet to be tested experimentally.\n\nHere, we tested whether the values of both p50 and nH of Hb are indeed optimized in the case of body size-related adaptation of mammalian Hb, relying on extensive evolutionary and physiological oxygen saturation datasets available for mammalian Hb proteins. The former comprises a set of oxygen binding curves of homologous Hb proteins from different mammalian species, all measured under similar physiological conditions (Milo et al., 2007; Rapp and Yifrach, 2017). The latter comprises a set of binding curves of human Hb measured under a variety of different physiological conditions, that\u00a0is, in the presence of different concentrations of H+, CO2 and organophosphate, all inhibitory allosteric ligands of Hb (Rapp and Yifrach, 2017). For all data sets curves, reliable estimates for p50 and nH Hill parameters and for the elementary relative affinity (c) and conformational changes (L) parameters of the MWC concerted allosteric model (Monod et al., 1965; Rubin and Changeux, 1966) are available. By deriving the explicit mathematical dependence of both p50 and nH on the MWC parameters of a tetrameric protein, we were able to draw the theoretical \u2018biophysical Hill cooperativity landscape\u2019 at half-saturation that graphically describes how nH varies with changes in the values of the MWC parameters. The mapping of experimentally\u00a0derived Hill and MWC parameters of all evolutionary and physiological dataset curves on this landscape provided insight into the mechanism underlying the adaptive behavior of p50 and nH with respect to tissue oxygen delivery by mammalian Hb and their relation to organism fitness. The principles underlying the \u2018biophysical Hill landscape\u2019-mapping strategy are general and offer mechanistic-level understanding of how physiological and evolutionary variations operate to shape the molecular property of a protein.\n\n## Results\n\n### Hemoglobin evolutionary and physiology datasets\n\nThe evolutionary and physiological datasets for Hb used in the current study were respectively compiled in the meta-analysis of Hb function by Milo et al. (2007)\u00a0and by Rapp and Yifrach (2017). Specifically, the Hb evolutionary dataset comprises 14 different mammalian Hb oxygen saturation curves obtained under similar physiological conditions (Materials and methods and Supplementary file 1). The Hb physiological dataset comprises 26 different human Hb saturation curves collected under a variety of different physiological conditions, including those involving changes in H+\u00a0(Di Cera et al., 1988; Imai, 1983), CO2\u00a0(Doyle et al., 1987)\u00a0and 2,3-BPG (bis-phosphoglycerate)\u00a0(Benesch et al., 1971)\u00a0concentrations.\n\nFor each dataset curve, the magnitude of cooperativity in oxygen binding was evaluated using either the Hill (Figure 1a) or MWC model (Figure 1b). In the former, the sigmoidal saturation curve is fitted to the Hill equation (Equation 1) (Hill, 1910):\n\n$$\nY\u00af=\\frac{[S]_{}^{n_{H}}}{[S]_{}^{n_{H}}+K_{0.5}^{n_{H}}}\n$$\n\nwhere $Y\u00af$\u00a0represents the fraction of bound sites and p50 (~K0.5) and nH correspond to the midpoint and slope parameters of the curve. The Hill all-or-none binding mode corresponds to a simplification that is far from what occurs in reality. Instead, Hb oxygen binding generally involves intermediate ligation and conformational species, as delineated by the MWC allosteric model (Marzen et al., 2013; Monod et al., 1965; Rubin and Changeux, 1966) (Figure 1b) (see Appendix 1 for a detailed discussion on why we think the classical MWC allosteric model adequately describes hemoglobin oxygen ligation in the presence or absence of its allosteric ligands; see also Henry et al., 1997; Milo et al., 2007; Rapp and Yifrach, 2017; Storz, 2016). According to the MWC model, tetrameric Hb is assumed to be in equilibrium between the un-liganded low-affinity T (tense or deoxy) and the high-affinity R (relaxed or oxy) states, as described by the L allosteric constant (L=[T]/[R]). In the presence of oxygen, this equilibrium is shifted toward the R state in a manner determined by the ligation number and by the ratio of dissociation constants of oxygen from the two states, c (c=KR/KT). These aspects of the MWC model are quantitatively described by Equation 2\u00a0(Monod et al., 1965):\n\n$$\nY\u00af_{MWC}=\u00a0\\frac{\\frac{[S]}{K_{R}}(1+\\frac{[S]}{K_{R}})^{3}+L\u00a0\\frac{[S]}{K_{T}}(1+\\frac{[S]}{K_{T}})^{3}}{(1+\\frac{[S]}{K_{R}})^{4}\u00a0+\u00a0L(1+\\frac{[S]}{K_{T}})^{4}}=\\frac{a(1+a)^{3}+Lca(1+ca)^{3}}{(1+a)^{4}+L(1+ca)^{4}}\n$$\n\nwhere \u03b1 in the non-dimensional form of the MWC equation denotes substrate (S) concentration in KR units (\u03b1=[S]/KR). In the classical MWC model, cooperativity in substrate binding (homotropic interactions) is determined by both L and c (Monod et al., 1965). Heterotropic interactions, on the other hand, describing the effects of allosteric ligands on substrate binding, only affect the L parameter. Hb conformational equilibrium can thus be further shifted toward the T state upon binding of allosteric inhibitors. Such dependence is described by Equation 3 assuming non-exclusive binding of the inhibitor (I) to both the T and R MWC conformations exhibiting $K_{I}^{T}$ and $K_{I}^{R}$ affinities, respectively (Rubin and Changeux, 1966):\n\n$$\nL_{app}=L(\\frac{(1+I/K_{I}^{T})}{(1+I/K_{I}^{R})})^{4}\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47640/elife-47640-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic representation of the all-or-none Hill binding mode by a tetrameric protein (E), with K referring to the substrate (S) dissociation equilibrium constant. (b) Schematic representation of the MWC model applied to a tetrameric allosteric protein. Square and round symbols represent the tense (T) and relaxed (R) subunit conformations, respectively. L, KT and KR denote the T to R transition equilibrium constant in the absence of substrate and substrate affinity to the T and R conformations, respectively. The parameter c corresponds to the ratio of substrate affinity to the R\u00a0and T conformations (=KR/KT). (c) The theoretical three-dimensional Hill landscape describing the dependence of nHMWC at half-saturation on both the L and c parameters (calculated based on Equation 5). The red ridge line trajectory corresponds to parameter value pairs giving rise to maximum cooperativity. (d) Dependence of the Hill coefficient at half-saturation (nHMWC) on the allosteric constant L, as determined according to Equation 5. The curve was plotted assuming a c value of\u00a0~\u00a00.01, typical for the ratio of oxygen affinity to the R and T conformations of human Hb. The saddle point of the bell-shaped curve corresponds to a Hill value of\u00a0~\u00a02.8 (as observed for human Hb), fulfilling the L\u00a0=\u00a0c-2 criterion giving rise to maximum cooperativity.\n\nReliable values for the L and c MWC parameters of all evolutionary dataset Hb saturation curves and for the apparent L values of all physiological dataset human Hb saturation curves were recently reported (Rapp and Yifrach, 2017) and are given in Supplementary files 1 and 2, respectively. Values for nH and p50 for the same dataset curves were previously reported (Milo et al., 2007; Rapp and Yifrach, 2017).\n\n### The biophysical Hill landscape of a tetrameric MWC allosteric protein\n\nTo describe the driving force(s) that shape Hb affinity and cooperativity oxygen binding properties, one must first derive the exact relationship between p50 and nH and the parameters of the MWC model. Accordingly, to bridge between the non-realistic Hill analysis and the MWC ligation pathway, we followed others (Levitzki, 1978; Yifrach, 2004) and employed Equation 4 (Wyman, 1964) on the MWC model equation under conditions of half-saturation:\n\n$$\nn_{H}^{}=\\frac{\u2202log(\\frac{Y\u00af}{1\u2212Y\u00af})}{\u2202(log\u2061[S])}=\\frac{[S]\u2202(Y\u00af)/\u2202([S])}{(Y\u00af)(1\u2212Y\u00af)}\n$$\n\nPlugging the explicit mathematical expressions for\u00a0$Y\u00af_{MWC}$, $1\u2212Y\u00af_{MWC}$\u00a0and $\u2202(Y\u00af_{MWC})/\u2202([S])$ into Equation 4 yields the explicit mathematical dependence of nH on the L, KR and KT biophysical parameters of the MWC model. Earlier studies (Levitzki, 1978; Yifrach, 2004) employed this analysis for assessing variations of a dimeric MWC protein to obtain analytic solutions for the dependence of nH on model parameters. Here, we solved for the tetrameric MWC protein case, yielding Equation 5:\n\n$$\nn_{H}^{MWC}=\\frac{\u2202(\\frac{Y\u00af_{MWC}}{1\u2212Y\u00af_{MWC}})}{\u2202(log\u2061[S])}=(4[S](\\frac{\u2202(Y\u00af_{MWC})}{\u2202([S])}))|_{[S]=[S]_{0.5}}=\u00a0(4[S](\\frac{\\frac{3[S](1+\\frac{[S]}{K_{R}})^{2}}{K_{R}^{2}}+\\frac{(1+\\frac{[S]}{K_{R}})^{3}}{K_{R}}+\\frac{3L[S](1+\\frac{[S]}{K_{T}})^{2}}{K_{T}^{2}}+\\frac{L(1+\\frac{[S]}{K_{T}})^{3}}{K_{T}}}{(1+\\frac{[S]}{K_{R}})^{4}+L(1+\\frac{[S]}{K_{T}})^{4}}\u00a0\\frac{\u2212(\\frac{4(1+\\frac{[S]}{K_{R}})^{3}}{K_{R}}+\\frac{4L(1+\\frac{[S]}{K_{T}})^{3}}{K_{T}})(\\frac{[S](1+\\frac{[S]}{K_{R}})^{3}}{K_{R}}+\\frac{L[S](1+\\frac{[S]}{K_{T}})^{3}}{K_{T}})}{((1+\\frac{[S]}{K_{R}})^{4}+L(1+\\frac{[S]}{K_{T}})^{4})^{2}}))|_{[S]=[S]_{0.5}}\n$$\n\nThe expression for [S]0.5 can be obtained by setting $Y\u00af_{MWC}$ (Equation 2) to a value of 0.5. Given that [S] is raised to a power of up to 4, the exact analytic expression for [S]0.5(L, KR, KT) is not manually solvable and was obtained using Mathematica software (Wolfram Research Inc; see Materials and methods). Substituting the solution for [S]0.5(L, KR, KT) in Equation 5 then allows obtaining the explicit expression for $n_{H}^{MWC}$ in terms of the MWC model parameters. The long and complex expressions of both [S]0.5 and $n_{H}^{MWC}$\u00a0can be found at the GitHub repository under the following address: https://github.com/OlgaRL/MWC_Parameters (Rapp, 2019; copy archived at https://github.com/elifesciences-publications/MWC_Parameters). Thus, for any L, KR and KT values, $n_{H}^{MWC}$\u00a0is unequivocally determined (Equation 5). A good approximation for nH (based on the [S]0.5 expression of the $R\u00af$ conformational state function; Gruber et al., 2019) that is over 98% accurate across most of the range of L and c values is presented in Appendix 2.\n\nPlotting the three-dimensional surface of the Hill slope at half-saturation (now referred to as nHMWC) as a function of both logL and logc (based on equation 5) generates what we refer to as the theoretical \u2018biophysical Hill landscape\u2019 for a tetrameric MWC protein (Figure 1c). This landscape graphically describes the parameter space available for such a MWC protein and summarizes many of the known cooperativity-related aspects of the MWC model documented in classical papers (Monod et al., 1965; Rubin and Changeux, 1966; Edelstein, 1975; Perutz, 1989) and textbooks. In the Hill landscape, nHMWC values between one to four are obtained as a function of the L and c values chosen. The nHMWC surface presents a topology that resembles an upward-running ridge, with the maximum points obtained by introducing various L and c values (as indicated by the trajectory drawn in red). Such mapping is better appreciated in the bell-shaped dependence of nHMWC on logL at a given logc value (c\u00a0=\u00a00.01, a value typical for human Hb), seen in a cross-section of such a surface (Figure 1d) (Rubin and Changeux, 1966; Edelstein, 1971). Inspecting the landscape cross-sections reveals that systematically higher maximum Hill points are obtained when higher L and lower c values are simultaneously chosen. Furthermore, as indicated by Rubin and Changeux (1966), the different L and c value pairs underlying the maximum nHMWC points must all fulfill a particular dependence expressed by L\u00a0=\u00a0c -n/2, as obtained by setting \u2202nH/\u2202logL equals zero. Another important aspect of the maximum Hill points is that they reside at the apex of rather wide hilltops. This can be seen in the bell-shaped cross-sections of nHMWC as a function of logL at any particular logc value (Figure 1c,d), suggesting that around the maximum cooperativity points, only minor changes in nH are to be expected upon changes in L brought about by binding of allosteric inhibitors or activators (Equation 3). This relative insensitivity of nHMWC to changes in physiological conditions was referred to as a \u2018buffering of cooperativity\u2019 phenomenon by the MWC model founders (Rubin and Changeux, 1966; Edelstein, 1971). Using the biophysical Hill landscape described here, we can now examine where evolutionary and physiological considerations have affected Hb behavior.\n\n### The characteristic nH value of hemoglobin is a maximum cooperativity point\n\nWhere along the three-dimensional nHMWC landscape can one find the (L, c, nH) points of the different binding curves of the evolutionary and physiological Hb datasets? We first considered the 14 mammalian oxygen saturation curves comprising the evolutionary dataset. As can be seen in Supplementary file 1, the different mammal Hbs exhibit variations in both L and c values, thus giving rise to different Hill values (calculated based on the MWC model using Equation 5). These values resemble the observed \u2018Hill model\u2019-derived coefficients\u00a0(Milo et al., 2007), as indicated by the linear correlation between the observed and calculated Hill values reported by Rapp and Yifrach (2017) (Figure 1 therein; see also Supplementary file 1). When mapped onto the theoretical Hill landscape, the calculated Hill values of all mammalian Hbs reside close to the maximum points of the bell-shaped contours of the three-dimensional Hill landscape (Figure 2a). Furthermore, the logarithms of the values for L and c of the different Hbs are linearly correlated (Figure 2b) with a slope value of \u22122.7 (\u00b10.3), close to a value of \u22122 that would be expected for proteins that evolved to present maximum cooperativity in ligand binding (L\u00a0=\u00a0c -n/2). The observation that the logL-logc correlation crosses very close to the (0,0) axis origin point further supports this assertion. Given that L and c are independent parameters of the MWC model, the logarithms of their values for a given protein set are not expected to be linearly-dependent. This is, in particular, true if one considers that these values were derived using reliable data fitting strategies that prevent potential parameter dependence artifacts (Rapp and Yifrach, 2017) and that changes in either c or L (or in both) were reported for native or mutant Hb variants over many years of Hb research. We thus suggest that the observed linearity between mammalian logL and logc values does not imply causation or is an artifact but rather points to co-evolution of the two MWC parameters so as to shape Hb cooperativity close to the maximum value. Deviation between the observed and expected slope values of the logL-logc correlation can be explained by differences in the techniques and experimental protocols used to evaluate the Hb saturation data from the different organisms and inaccuracies in data collection and analysis (for detailed discussion, see Milo et al., 2007). Nevertheless, even with such limitations, the results derived from the evolutionary dataset support the hypothesis that changes in mammalian Hb binding and conformation have been tuned during evolution, giving rise to close to maximum cooperativity in oxygen binding, albeit yielding a different maximum nH value in each case. To further examine whether this indeed is the case, we considered the human Hb physiological dataset.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47640/elife-47640-fig2-v1.jpg)\n\n**Figure 2.:** (a) $n_{H}^{MWC}$\u00a0values of the different mammal Hbs from the evolutionary dataset, calculated based on derived values for the L, KT and KR elementary MWC parameters, reside close to the ridge line of the three-dimensional biophysical Hill landscape. (b) Correlation plot relating the logarithms of the relative affinity (c) and conformational ratio (L) of the T and R quaternary MWC states of different mammalian Hbs comprising the evolutionary dataset (Supplementary file 1). The solid curve corresponds to a linear regression with a R2 correlation coefficient of 0.93, a slope of -2.7 (\u00b1 0.3) and an intercept at logL of -0.2, very close to the 0 value expected based on the Lc2=1 criterion. In both panels, the red data point corresponds to the values for human Hb.\n\nAs highlighted above, a buffering of cooperativity regime is observed around a maximum cooperativity Hill point. As such, minor changes in nH are to be expected upon changes in L brought about by the binding of allosteric inhibitors or activators. Reliable estimates for the apparent L values of all of 26 different concentration-related saturation curves of the H+, CO2 and 2,3-BPG physiological datasets were recently obtained (Rapp and Yifrach, 2017), assuming a constant c value in each case, as predicted by the MWC model (Supplementary file 2). The different Lapp values obtained for each effector dataset saturation curve scales with effector concentration in a manner predicted by the MWC model (Rapp and Yifrach, 2017; Appendix 1), confirming the reliability of the values derived.\n\nFor the physiological Hb dataset, a cross-section of the biophysical Hill landscape at the characteristic c value of human Hb should be considered. We thus examined where along the bell-shaped human Hb nH-logL curve do the characteristic pairs of logL-nH values of the 26 physiological dataset curves reside. As can be seen in Figure 3a, logL-nH data points of the physiological dataset (black symbols) cluster around the maximum point of the bell-shaped curve. This pattern is in sharp contrast to the scattered pattern of the pairs of logL-nH values for Hb mutants reported in the literature (gray circles) (Baldwin, 1976) and assumed by Baldwin (1976) (and later by Fersht, 1985) to have the same c value. Significant deviations from the maximum cooperativity value of wild-type human Hb were also observed for naturally occurring Hb mutants, such as the Kansas and Chesapeake variants (Edelstein, 1971). A clustering pattern similar to that shown for human Hb is also seen for bovine and dog Hbs, despite being based on the limited physiological datasets available for these species (Figure 3b) (Jensen, 2004; Breepoel et al., 1981).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47640/elife-47640-fig3-v1.jpg)\n\n**Figure 3.:** (a) Mapping of the Hill coefficient and the logarithm of the apparent allosteric constant (L) values for all human oxygen saturation curves of the pH, CO2 and BPG physiological datasets (Supplementary file 2) onto the theoretical nH-logL curve of human Hb. The nH values for all physiological dataset curves were calculated using the derived apparent L value for each curve and assuming a common c value. The theoretical nH-logL curve was calculated assuming a c value of 0.007 (\u00b10.001), corresponding to the averaged c value of all human physiological datasets (Supplementary file 2). Black circles, squares and diamonds correspond to pH, CO2 and BPG data points, respectively. Gray symbols represent pairs of logL-nH values for Hb mutantS reported in the literature and assuming no change in c upon mutation (Baldwin, 1976). (b) Dependence of the Hill coefficient at half-saturation on the apparent allosteric constant for all oxygen saturation curves of the dog and bovine physiological datasets (squares and circles, respectively). For each species, the appropriate c value (Supplementary file 1) was used to calculate the theoretical curve, onto which the actual logL-nH data points were mapped.\n\nThe clustering of all logL-nH experimental data points of the H+, CO2 and 2,3-BPG datasets around the maximum point reveals that the Hill value for human Hb is relatively insensitive to changes in physiological conditions. Such nH-insensitive behavior was noted for the pH-related Bohr effect of Hb (Wyman, 1964; Di Cera et al., 1988) and later extended to other allosteric effectors of Hb (Milo et al., 2007). Our results showing the invariance of nH with respect to logL thus provide a mechanistic explanation, based on the MWC model parameters, for the \u2018buffering of cooperativity\u2019 property of Hb. Such behavior should only appear if human Hb had evolved to present maximum cooperativity in oxygen binding (Figure 1c,d). As site-directed point mutants of Hb are not subjected to the selection pressure that leads to maximum cooperativity, the values of logL-nH pairs for such mutants fall off the extremum point of the logL-nH cross-section (Baldwin, 1976).\n\n### The maximum Hill point of a MWC-type protein allows for gross- and fine-tuning of substrate unbinding sensitivity\n\nWe next explored the potential evolutionary and physiological advantages of setting Hb cooperativity around the maximum nH point. We asked the following questions: Does the value of the maximum Hill point determine the sensitivity of Hb to tissue oxygen unloading? Does the value of the maximum nH point affect the dynamic range of the buffering of cooperativity phenomenon? How is Hb protein unbinding sensitivity changes within the buffering of cooperativity range? To answer these questions, we turned to Equation 2 and the biophysical Hill landscape (Figure 1c).\n\nUsing the MWC equation, we generated ligand saturation binding curves exhibiting increasing maximum Hill cooperativity values (Figure 4a). This was achieved by appropriate selection of L and c values (indicated in Table 1), all fulfilling the L=c-2 parameter criterion. To allow direct comparison, the saturation curves were plotted as a function of the scaled concentration \u03b1 (=[S]/KR), as is commonly done (Monod et al., 1965; Rubin and Changeux, 1966). Under such conditions, the affinity and maximum Hill point are correlated (Figure 4a). The higher the value of the maximum Hill point of the appropriate binding curve, the more it is displaced to the right along the scaled concentration axis. This is reflected in Figure 4b, showing monotonic correlation between the maximum Hill value and log\u03b11/2 (\u03b11/2=[S]1/2/KR). It thus seems that under the maximum cooperativity parameter condition, a tradeoff exist between the cooperativity and affinity properties of a MWC-type protein. We next examined if and how this tradeoff affects the sensitivity of the protein for substrate unbinding upon chemical potential change. For each of the curves presented in Figure 4a, we considered the chemical potential difference (\u0394log\u03b1) needed to achieve a constant reduction in the fractional saturation from 100 to 40%, as typically observed for mammalian Hb saturation under physiological lung and tissue oxygen pressures (100 and 40 mmHg, respectively). The \u0394$Y\u00af_{100\u00a0\u2192\u00a040%}$/\u0394log\u03b1 parameter depends on both the affinity and cooperativity attributes of the binding curve and reflects the sensitivity of the MWC protein to substrate unloading. The narrower the difference in chemical potential that results in a 60% reduction in fractional saturation, the higher is the sensitivity of the protein to substrate unbinding. As can be seen in Figure 4c (filled black symbols), the value for this parameter increases monotonically in a power law manner with increases in the value of the maximum Hill point. Similar results were obtained when other \u0394$Y\u00af$ ranges were considered (e.g. \u0394$Y\u00af_{100\u00a0\u2192\u00a020%}$; not shown). Higher maximum Hill points thus ensure higher sensitivity for substrate unbinding by the MWC protein.\n\nWe next addressed the dynamic range implicated in physiology adaptation. The maximum nH points of the different curves shown in Figure 4a reside precisely at the apex of the appropriate bell-shaped nH-logL curve, calculated using the appropriate c value (Figure 4d and Table 1). As mentioned earlier, around this maximum nH point cooperativity is invariant to changes in L brought about by binding of allosteric modulators. To assess the broadness of the buffering of cooperativity regime around each maximum cooperativity point, we next generated a set of physiological dataset curves by systematically changing the value of L by several orders of magnitude, such that the resulting saturation curves exhibited essentially the same Hill value for ligand binding as did the original maximum Hill value (less than a 1% change). This ensured that our analysis remained within the \u2018buffering of cooperativity\u2019 region, characteristic of each maximum Hill value (see the yellow-marked logL range highlighted in each of the curves in Figure 4d). One such physiological dataset generated\u00a0around\u00a0the maximum point of human Hb (nH\u00a0=\u00a0~2.8) is shown in Figure 4e. For curves based on other maximum cooperativity points, see Figure 4\u2014figure supplement 1. For each of the different datasets, we calculated the logL range between the two extreme binding curves and defined this value (\u0394logL) as the broadness of the buffering of cooperativity regime, or the dynamic range for physiological adaptation where only affinity (p50) matters. Plotting the dependence of \u0394logL on the maximum cooperativity Hill value (Figure 4f) reveals that higher maximum Hill values give rise to broader L ranges, where \u2018buffering of cooperativity\u2019 is observed. The maximum Hill point thus further controls the dynamic range of physiological adaptation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47640/elife-47640-fig4-v1.jpg)\n\n**Figure 4.:** (a) Fractional saturation binding curves of a MWC protein as a function of the logarithm of the scaled concentration \u03b1, with parameter values that give rise to systematically higher maximum cooperativity nH values. The pairs of L and c values for all curves obey the maximum cooperativity criterion and are listed in Table 1. (b) Dependence of the logarithm of the scaled affinity (log\u03b11/2) of the curves presented in (a) on the maximum cooperativity Hill value (nHmax). (c) Dependence of the substrate unbinding sensitivity (\u0394$Y\u00af_{100\u00a0\u2192\u00a040%}$/\u0394log\u03b1) of a tetrameric MWC protein on nHmax (filled black symbols). The array of open yellow symbols decorating each maximum cooperativity point corresponds to changes in the Y axis values due to changes in L that\u00a0reside\u00a0within the correspondingly encoded buffering of cooperativity regime (see text) (d) Dependence of $n_{H}^{MWC}$ on the logarithm of the allosteric constant L around the different maximum cooperativity points indicated in (a) and Table 1 (and assuming their different c values). For each curve, the portion highlighted in yellow corresponds to the logL range fulfilling the \u2018buffering of cooperativity\u2019 regime, that\u00a0is the L range around the maximum Hill point that gives rise to fractional saturation curves all exhibiting less than 1% change in the maximum Hill coefficient value. Such a physiological dataset is observed for the maximum point of ~2.8, characteristic of human Hb in panel (e) (calculated using its appropriate c value; see Supplementary file 1). Similar data for different maximum cooperativity values are presented in Figure 4\u2014figure supplement 1. In each physiological dataset, the curve indicated in red corresponds to the maximum cooperativity curve (f) Dependence of the broadness of the \u2018buffering of cooperativity\u2019 regime (the dynamic range), as defined above, on the maximum cooperativity Hill value. In all figure panels, the curves indicated in red were calculated using the experimental values for human Hb reported in the literature. The red data points in several of the panels represent approximated values of human Hb.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47640/elife-47640-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** MWC-based simulated fractional saturation curves generated by changing the L value around different maximum cooperativity points, as indicated above each panel. These values are identical to those used to generate the saturation curves presented in Figure 4a. For each dataset, the reference saturation curve of the maximum cooperativity point is indicated in red. For each maximum cooperativity point, L values were chosen such that the nH value of any curve in the physiological dataset would not differ from the maximum nH point by more than 1%, and would thus still be contained within the \u2018buffering of cooperativity\u2019 regime. The logL range fulfilling this requirement is highlighted in yellow on the nH-logL bell-shaped plots appropriate for each maximum cooperativity point, as described in the legend to Figure 4d.\n\n**Table 1.**\n Values for the L and c MWC parameters giving rise to systematically higher maximum cooperativity Hill valuesa\n\n\n<table>\n  <thead>\n    <tr>\n      <th>c</th>\n      <th>L</th>\n      <th>Maximum Hill value (nHmax)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0.07071</td>\n      <td>200</td>\n      <td>2.02</td>\n    </tr>\n    <tr>\n      <td>0.04472</td>\n      <td>500</td>\n      <td>2.28</td>\n    </tr>\n    <tr>\n      <td>0.02582</td>\n      <td>1500</td>\n      <td>2.56</td>\n    </tr>\n    <tr>\n      <td>0.01741</td>\n      <td>3300</td>\n      <td>2.76</td>\n    </tr>\n    <tr>\n      <td>0.01222</td>\n      <td>6700</td>\n      <td>3.06</td>\n    </tr>\n    <tr>\n      <td>0.00524</td>\n      <td>36400</td>\n      <td>3.24</td>\n    </tr>\n    <tr>\n      <td>0.0035</td>\n      <td>81800</td>\n      <td>3.37</td>\n    </tr>\n    <tr>\n      <td>0.00262</td>\n      <td>145400</td>\n      <td>3.44</td>\n    </tr>\n    <tr>\n      <td>0.00175</td>\n      <td>327200</td>\n      <td>3.54</td>\n    </tr>\n  </tbody>\n</table>\n\n_aValues for the c and L parameters giving rise to the maximum Hill slopes (indicated in the right-most column), characteristic of the binding saturation curves analyzed in Figure 4a. All parameter sets meet the Lc2\u00a0=\u00a01 criterion. The parameter set giving rise to the maximum cooperativity of human Hb, as reported in the literature and in Supplementary file 1, is indicated in\u00a0bold. The different c values indicated were obtained by varying the KR affinity parameter while assuming a constant KT value of 143 (see Supplementary file 1)._\n\nLastly, we considered how protein sensitivity to substrate unbinding, as defined above, varied within the yellow marked buffering of cooperativity regime (Figure 4d). Thus, for each set of fractional saturation curves calculated around the different maximum cooperativity points and residing within this regime (Figure 4e and Figure 4\u2014figure supplement 1), we calculated \u0394$Y\u00af_{100\u00a0\u2192\u00a040%}$/\u0394log\u03b1. Variations in this parameter are plotted as open yellow symbols around each of the maximum cooperativity points presented in Figure 4c, with the lower and upper data points, respectively, corresponding to the lower and upper logL values defining the boundaries of this range. As can be seen, within this range, changes of up to 6% are observed in the value of protein unbinding sensitivity in response to changes in physiological conditions brought about by changes in L alone yet reflected in changes in p50 alone.\n\n### The maximum cooperativity point of hemoglobin is related to organismal fitness\n\nThe fact that different mammalian Hbs exhibit different maximum nH values (Figure 2a), combined with the observation made above whereby systematically higher maximum Hill value gives rise to higher sensitivities\u00a0to\u00a0substrate unloading by MWC proteins (Figure 4c), led us to hypothesize that the maximum cooperativity point of Hb has been tuned during evolution to satisfy the particular physiological requirements of different tissues for oxygen supply. We thus returned to the datasets comparing oxygen saturation of different mammalian Hbs (all measured using similar methodology) that revealed the linear correlation between animal metabolic rate and logp50 (Schmidt-Neilsen and Larimer, 1958; Schmidt-Nielsen, 1970). We are aware that these data may not necessarily reflect functional effects on a single Hb form. Still, in cases where adult mammalian Hb expresses more than one variant, both usually present similar sequences and functional properties (Storz, 2016). Rather than taking the affinity-centric approach employed in the earlier studies, we instead adopted a complementary cooperativity-centric mindset and re-fitted all of the saturation curves to the Hill equation to derive both nH and p50 values for Hb of each animal (Figure 5a and Table 2). The derived nH values, although obtained under the slightly different physiological conditions typical of the blood of each animal, nevertheless correspond to maximum cooperativity values, as nH is relatively invariant to physiological changes around the maximum point (Figures 2 and 3). This assertion is further strengthened by the results shown in Figure 5b describing the linear relation between affinity (logp50) and cooperativity (nH), as expected for parameter values underlying maximum cooperativity (Figure 4b). Finally, plotting either the affinity (~log(1/p50)) or cooperativity properties of Hb as a function of the logarithm of metabolic rate of an animal yielded linear correlations in both cases (Figure 5c). Specifically, the greater an animal\u2019s metabolic rate, the higher was the observed maximum Hill cooperativity value of oxygen binding by Hb. Furthermore, as previously shown (Schmidt-Neilsen and Larimer, 1958; Schmidt-Nielsen, 1970), an inverse linear correlation was found between the metabolic rate and Hb affinity. These empirical observations directly relate the maximum cooperativity and affinity properties of Hb to an organismal-level trait that is related to fitness (Dykhuizen et al., 1987; Kacser and Burns, 1981; Bershtein et al., 2017).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47640/elife-47640-fig5-v1.jpg)\n\n**Figure 5.:** (a) Dependence of the fractional oxygen saturation of animal blood sample Hbs on partial oxygen pressure, as reported by Schmidt-Neilsen and Larimer (1958), Schmidt-Nielsen (1970). Solid curves represent data fitting to the Hill equation (Equation 1). p50 and nH values for oxygen binding to the different mammalian Hb datasets are reported in Table 2. (b) Correlation plot relating the maximum nH and logp50 values of the curves shown in a. (c) Dependence of the values for both cooperativity (filled symbols) and affinity (open symbols) properties of different animal Hbs on normalized metabolic rates in that animal (relative to body weight). A linear trend is observed in both cases, with R2 values of 0.97 and 0.9 for the cooperativity and affinity correlations, respectively. Values for animal metabolic rates were taken from Schmidt-Neilsen and Larimer (1958). The red curve or data points presented in panels 5a-c correspond to the values for human Hb.\n\n**Table 2.**\n Values for the affinity and cooperativity parameters of animal blood hemoglobin binding curvesa\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Animal</th>\n      <th>P50 (mmHg)</th>\n      <th>nH</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Elephant</td>\n      <td>23.03\u00a0\u00b1\u00a00.32</td>\n      <td>2.49\u00a0\u00b1\u00a00.04</td>\n    </tr>\n    <tr>\n      <td>Horse</td>\n      <td>29.26\u00a0\u00b1\u00a00.16</td>\n      <td>2.59\u00a0\u00b1\u00a00.01</td>\n    </tr>\n    <tr>\n      <td>Human</td>\n      <td>33.02\u00a0\u00b1\u00a00.29</td>\n      <td>2.74\u00a0\u00b1\u00a00.03</td>\n    </tr>\n    <tr>\n      <td>Sheep</td>\n      <td>38.82\u00a0\u00b1\u00a00.11</td>\n      <td>2.83\u00a0\u00b1\u00a00.01</td>\n    </tr>\n    <tr>\n      <td>Fox</td>\n      <td>42.36\u00a0\u00b1\u00a00.22</td>\n      <td>2.92\u00a0\u00b1\u00a00.02</td>\n    </tr>\n    <tr>\n      <td>Cat</td>\n      <td>43.22\u00a0\u00b1\u00a00.62</td>\n      <td>3.01\u00a0\u00b1\u00a00.06</td>\n    </tr>\n    <tr>\n      <td>Rat</td>\n      <td>55.63\u00a0\u00b1\u00a00.57</td>\n      <td>3.23\u00a0\u00b1\u00a00.05</td>\n    </tr>\n    <tr>\n      <td>Mouse</td>\n      <td>57.86\u00a0\u00b1\u00a00.76</td>\n      <td>3.32\u00a0\u00b1\u00a00.07</td>\n    </tr>\n  </tbody>\n</table>\n\n_aValues for the point of half-saturation (P50) and the Hill coefficient at half-saturation (nH) were derived by fitting blood sample animal Hb oxygen saturation curves (Schmidt-Neilsen and Larimer, 1958; Schmidt-Nielsen, 1970) to the Hill equation._\n\n## Discussion\n\nIn the current study, we emphasized the need to consider the property of Hb cooperativity (nH), along with p50, in addressing molecular adaptation of Hb in mammals. We formulated the explicit mathematical dependences of the nH and p50 macroscopic Hb parameters on the elementary microscopic parameters of the MWC model, thus providing a quantitative framework to understand the mechanism underlying the adaptive behavior of these two parameters with respect to tissue oxygen delivery. Indeed, relying on the biophysical Hill landscape, we were able to rationalize mammalian Hb nH and p50 diversity among large and small body-sized animals. The biophysical Hill landscape mapping strategy may further serve to define the mechanism underlying other molecular adaptation modes involving Hb of organisms living at high altitudes or presenting burrowing or diving lifestyles, for example.\n\n### Mammalian Hb diversity resides on the ridge of maximum cooperativity\n\nOur findings revealed that mammalian Hb cooperativity values have been tuned during evolution to reside on a ridge of the theoretical biophysical Hill cooperativity landscape describing a MWC protein (Figures 2 and 3). These ridge-located Hill values all correspond to maximum cooperativity extremum points and were achieved by tuning of the relative affinity (c) and conformational ratio (L) of the T and R quaternary states of the protein (Figure 2). These maximum points are thus unique points along the Hill cooperativity scale continuum. There is no a\u00a0priori reason to expect that physiological and evolutionary diversity in Hb would be reflected by this low dimensional ridge feature of the Hill landscape. As can be seen in the three dimensional Hill landscape, many combinations of L and c values can give rise to the same Hill value. Yet, only one of these combinations obeys the L\u00a0=\u00a0c\u22122 maximum cooperativity criterion. The observed variations in maximum cooperativity Hill values among mammalian Hb proteins thus reflect co-evolution of binding and conformational changes of Hb. Such tuning gives rise to a buffering of cooperativity effect, suggesting that the degree of cooperativity is robust to changes in physiological conditions brought about by tuning L alone (Figure 3). Our results thus reveal the evolutionary strategy underlying the observed variations in Hb behavior.\n\n### Evolutionary and physiological adaptations of hemoglobin serve to optimize tissue oxygen delivery\n\nThe functional advantages of the balance between the relative affinity and conformational ratio of Hb quaternary states underlying the maximum Hill point become clear when considering that both the affinity and cooperativity parameters of Hb saturation curves affect tissue oxygen unloading. First, the c-L tradeoff gives rise to the highest possible Hill value for any given c value, thereby ensuring maximal oxygen unloading upon Hb transfer from the lungs to other tissues (Figure 1cd). Either very high or very low L values would give rise to hyperbolic oxygen saturation curves with an nH value of one (Figure 1c), which would ensure poor and unregulated tissue oxygen unloading by Hb. The same is true when c is assigned the value of one. Second, tuning the Hb maximum Hill point to higher values further leads to greater sensitivity to tissue oxygen unloading (Figure 4c filled, symbols). Third, parameter adjustments that lead to higher maximum nH values also give rise to reduced Hb oxygen affinity (p50) (Figures 4b and 5b), thus reinforcing oxygen unloading upon Hb transfer from the lungs to other tissues. Indeed, the affinity-cooperativity tradeoff typical of the ridge of maximum cooperativity suggests that cooperativity can compensate for changes in affinity, with respect to tissue oxygen unloading, as usually described in any Biochemistry textbook. Fourth, the balanced parameter values give rise to the \u2018buffering of cooperativity\u2019 regime, thus ensuring that the nH-related oxygen unloading effect is not compromised in response to physiological changes brought about by variations in L and reflected as changes in p50. Indeed, under such a regime, relatively minor changes in Hb sensitivity for oxygen release are expected in response to changes in allosteric effector binding (Figure 4c, open symbols). Finally, the co-varied c and L values underlying maximum cooperativity allow for control of the broadness of the \u2018buffering of cooperativity\u2019 regime (Figure 4d,f).\n\nTaken together, these points support the assertion that mammalian Hb nH and p50 values reflect evolutionary and physiological adaptations that serve to optimize the tradeoff between O2 loading in pulmonary capillaries and O2 unloading in tissue capillaries, so as to optimize tissue oxygen delivery. Based on experimental (Figures 2 and 3) and theoretical (Figure 4) results, we suggest that evolutionary (i.e., across species) variations allow for gross changes in Hb oxygen unloading sensitivity. Such changes are controlled by the maximum cooperativity and affinity values of Hb, in turn determined by changes in both L and c (Figure 4c, filled symbols). Fine-tuning changes in Hb oxygen unloading sensitivity may further be brought about by physiological variations within the buffering of cooperativity regime, this time, however, reflected in changes in L and p50 alone (Figure 4c, open symbols).\n\n### The biophysical Hill landscape as a low dimensional biophysical fitness landscape\n\nThe linear dependence between the metabolic rate of an animal and the maximum Hill value for Hb (Figure 5c), combined with the results presented in Figure 4c, indicates that nH, like p50, carries adaptive value with respect to mammalian Hb tissue oxygen unloading. As such, small body-sized animals presenting high metabolic rates require high oxygen supplies that can be more efficiently delivered by Hb presenting higher maximum Hill values. Considering that an animal\u2019s metabolic rate is a trait related to organism fitness, we suggest that both the affinity and cooperativity traits of Hb represent low dimensional components of the fitness landscape, independent of other components. In this respect, the biophysical nH landscape of Hb can be regarded as a biophysical fitness landscape that serves to bridge the genotype-phenotype gap in assessing the relation between sequence variations in Hb (that affect its affinity and cooperativity properties) and their ensuing fitness effects (Bershtein et al., 2017). Evolutionary tuning of mammalian Hb maximum cooperativity and affinity points, achieved by co-varying the relative affinity and conformational ratio of its quaternary states, thus regulates tissue oxygen delivery by Hb and serves as one mean to meet the distinct needs of different animal tissues for oxygen (Figures 4 and 5). Clearly, other mechanisms related to cardiac output and to convective and diffusive steps in the oxygen transport pathway are as well contribute to modulation of tissue oxygen transport (reviewed in Schmidt-Nielsen, 1975). For example, it has been shown that the capillary density of a mammal is also inversely correlated to body size (Schmidt-Nielsen, 1975).\n\n### How general are our findings regarding maximum cooperativity in ligand binding?\n\nThe buffering of cooperativity regime in Hb reflects the case where the fractional saturation curves of the protein seem parallel in shape and are only displaced along the substrate concentration axis in response to changes in effector ligand concentrations (see Figure 4e). As revealed by Olsman and Goentoro (2016), it is exactly this behavior the qualifies a MWC protein as a logarithmic sensor, reflecting the capacity of the protein to respond identically over a broad range of changes in chemical potential. Such behavior is in contrast to the case where the protein sensor responds to the absolute value of the signal intensity. Upon surveying the literature, Olsman and Goentoro (2016) found that many MWC allosteric proteins, including phosphofructokinase, Hb, cyclic nucleotide-gated ion channels, Tar receptors, G-protein coupled receptors and EGF receptors exhibit a buffering of cooperativity or logarithmic sensing regime in response to changes in the concentration (or magnitude) of the modulatory allosteric signal. The dynamic range for this behavior can vary from 10-fold (Hb) to 10,000-fold (GPCR). These findings suggest that all these MWC proteins evolved to present maximum cooperativity values in ligand binding and operate under the L\u00a0=\u00a0c -n/2 parameter regime that gives rise to the buffering of cooperativity phenomenon. However, other than Hb, the significance of this finding to organismal fitness is known only in the case of a single protein (Keymer et al., 2006). Realizing the physiological advantage(s) of attaining the maximum cooperativity point of any protein and its relation to organismal fitness, is, of course, case-specific.\n\n### The relation between physiological and evolutionary adaptations in shaping a protein molecular property\n\nFinally, the roadmap that underlies the \u2018biophysical Hill landscape\u2019-mapping strategy is general and can be applied to reveal the relation between evolutionary (i.e. sequence) and physiological (e.g. changes in metabolite concentrations) variations in shaping any molecular property of a protein. Although operating on different time scales and through different mechanisms, these traits are linked through the biophysical model describing the function of the protein. Elucidating this linkage requires extensive physiological and evolutionary datasets of the protein and that the steady-state biophysical model describing the function of the protein is known so that the explicit mathematical dependence of the molecular property under study on biophysical model parameters can be elucidated. This allows for constructing a \u2018biophysical molecular property landscape\u2019 onto which experimentally\u00a0derived values of the macroscopic and microscopic parameters of all physiological and evolutionary dataset measurements can be mapped. Rationalizing the pattern of such mapping in terms of the relation between model parameters reflecting particular protein processes, such as catalysis, binding or conformational changes, might then reveal the driving forces that shape the molecular property under study.\n\n## Materials and methods\n\n### Datasets\n\nThe functional data analyzed here considered the evolutionary and physiology Hb datasets respectively complied in Milo et al. (2007) and Rapp and Yifrach (2017). The evolutionary dataset comprised oxygen saturation curves of Hb from 14 different mammal samples obtained under similar physiological conditions. Using a three-equation system strategy (Rapp and Yifrach, 2017), the values for the L and c MWC allosteric parameters of all dataset curves were recently reported (Supplementary file 1). The physiological dataset comprised four independent human Hb sub-datasets, obtained from three different labs, with two reporting pH modulation, one considering CO2 modulation and the last addressing 2,3-BPG modulation, as discussed in the meta analyses by Rapp and Yifrach (2017). These sub-datasets each include between 5\u00a0and\u00a07 oxygen saturation curves obtained at different effector concentrations. Using global fitting analysis, we recently reported reliable estimates for the apparent L values for the different concentration-related physiological datasets curves (see Rapp and Yifrach, 2017 and Supplementary file 2).\n\n### The biophysical Hill landscape\n\nCooperativity in oxygen binding by Hb was assessed using the Hill or MWC models, as quantitatively described by Equation 1\u00a0and 2. The dependence of nH at half-saturation ($n_{H}^{MWC}$) on the MWC elementary parameters was obtained by applying Equation 4 to the MWC equation, assuming $Y\u00af_{MWC}$ equals \u00bd. Explicit solving for [S]1/2 in terms of KR, KT and L was obtained using the Mathematica 11.2 software package (Wolfram research Inc). Substituting this expression in Equation 5 using the same software yields the explicit expression for $n_{H}^{MWC}$ (at half-saturation) in terms of the MWC model parameters. It should be noted that $n_{H}^{MWC}$ (at half-saturation) is an approximate measure of\u00a0$n_{H,max}^{MWC}$, the more natural Hill value for specifying homotropic cooperativity in the framework of the MWC model (Rubin and Changuex, 1966). In our analysis, we used $n_{H}^{MWC}$ rather than the $n_{H,max}^{MWC}$ as the former is the actual parameter that is usually evaluated when fitting experimental data to the Hill equation (Equation 1). As for\u00a0$n_{H,max}^{MWC}$, the expression for $n_{H}^{MWC}$ at half-saturation also exhibits a bell-shaped dependence on L, thereby also describing the characteristic \u2018buffering of cooperativity\u2019 effect. Furthermore, $n_{H,max}^{MWC}$\u00a0is equal to $n_{H}^{MWC}$ exactly at the maximum cooperativity point (Rubin and Changeux, 1966). It should be emphasized that the $n_{H}^{MWC}$ expression derived here relates to cooperativity in ligand binding (as it is calculated based on\u00a0$Y\u00af$) and is different than the expressions for nH derived in other studies based on the active state function ($R\u00af$\u00a0in the case of an enzyme or $P\u00af_{open}$ in case of an ion channel) and which relates to cooperativity of conformational switching (Einav and Phillips, 2017; Martins and Swain, 2011; Marzen et al., 2013). For plotting the three-dimensional Hill landscape ($n_{H}^{MWC}$) as a function of both logL and logc, a constant KT (=143 mmHg, the average value for KT in the evolutionary dataset (See Supplementary file 1) and varying KR parameters were used. The Hill biophysical landscape shape, however, is invariant to other choices made for changing the relative affinity c parameter.\n\n### MWC model simulations\n\nSimulated MWC-based $Y\u00af$ data were generated using Equation 2 by changing the appropriate biophysical parameters (KT, KR or L), as described in the text and in figure legends. For evaluating the sensitivity of oxygen unloading, simulated MWC-based $Y\u00af$ curves were first generated around several maximum cooperativity values by systematically changing c and adjusting L so as to fulfill the Lc2=1 maximum cooperativity criterion. Nevertheless, since scaled $Y\u00af$ curves are presented, the analysis is invariant to parameter choice. Around each maximum cooperativity graph, the dependence of $n_{H}^{MWC}$ on the allosteric constant L was plotted assuming the appropriate constant c value in each case.\n\n### Data extraction and fitting\n\nTo extract $Y\u00af$ data from previously published graphs, the WebPlotDigitizer net-based program was used. Only experimental data points were sampled unless the reported graph presented the experimental trend by a continuous line rather than scattered data points, as is typical of saturation data presented in older manuscripts. In such cases, the curves were evenly sampled by taking systematic steps along the x-axis. $Y\u00af$\u00a0data were fitted using either the Hill or MWC equations (Equation 1 and 2, respectively). The adequacy of fit was judged based on attaining a R2 coefficient greater than 0.97.\n",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "b1a533f4-990d-4b2d-9801-acacb5a4b218",
+      "submission_id": "531b4be9-d42b-4c46-b813-25c402c16bc7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Kuriyan, University of California, Berkeley United States\n\nReviewers:\n- Rama Ranganathan, University of Chicago United States\n\n## Review text\n\nDOI: [10.7554/eLife.47640.017](https://doi.org/10.7554/eLife.47640.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"On the driving forces that shape the characteristic Hill cooperativity value of an allosteric protein\" for consideration by eLife. Your article has been reviewed by a Senior Editor, John Kuriyan as the Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Rama Ranganathan (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper concerns the relationship between the Hill coefficient for an allosteric system (as defined by the MWC model), and the physical parameters of the model (the equilibrium constant between states and the ligand affinities). As noted by Reviewer 1, this interesting paper is a follow up to an earlier excellent article recently published in PLOS One by the same authors in which they showed that the model of Monod-Wyman-Changeux can self-consistently describe the extant data on hemoglobin, including in the presence of a variety of effectors. The current article goes much farther now by providing an interpretative framework in terms of the \"Hill landscape\". The argument made is that there is a surface of nH,the effective Hill coefficient, as a function of the MWC parameters L and c and that hemoglobins have been tuned in evolution so as to live on a ridge on this surface.\n\nThe reviewers have raised a number of issues that should be addressed in a revised version of the manuscript. Note that no additional calculations or new work is called for. But it should be clear from the reviewer comments that a careful revision of the manuscript, with inclusion of explanatory points as well as the complete set of equations in the main text, will help make this paper more effective.\n\nNote that one of the reviewers (Reviewer 3) questions some of the fundamental assumptions underlying this work. Please respond to these concerns as well as possible.\n\nReviewer 1:\n\nEssential revisions:\n\n1) The lack of equations in the main text. For a paper that is performing a theoretical analysis couched in the language of mathematics, the relevant equations should not be relegated to the Supplementary information. Further, there are far more equations to be included (in my opinion) than the several presented there. For example, there is an equation in Figure 3 of their PLOS One paper that gives the effective L parameter that is very important and I think most people are not aware of that is the fundamental basis of interpreting how the \"bare\" MWC model can be used in the context of effector molecules and why the dissociation constants K_A and K_I are immune to the effector.\n\n2) Overarching concept \u2013 I find it is a missed opportunity that the authors do so little to talk about the generic truths they are making as opposed to the very specific comments relative to hemoglobin. Further, I challenge comments such as \"Hemoglobin is the only allosteric protein with a known mechanism of action\". I object to this comment on several grounds \u2013 first, these authors over and over again use the word \"mechanism\" without once attempting to define it (at least that I can find after reading the paper carefully twice) and second, I think this is false. People have done beautiful, deep work on ion channels, on transcription factors such as LacI, on chemotaxis receptors, etc.\n\n3) On a related point: I find the citations of the literature quite inconsistent with my own take on the literature on the field. For example, how can the amazing paper of Martins and Swain not be cited? They carried out deep analysis on the nature of allosteric molecules. Similarly, the work of \u2013 Keymer et al., 2006, Swem et al., 2009, the first on chemotaxis receptors, the latter on quorum sensing receptors. This work would benefit from embracing some of research that these people and others (Mirny, 2010; Tu et al., 2019, Marzen et al., 2015) have been doing.\n\n4) Abstract and beyond: I found the generally evolutionary tone of this paper to be not wholly scientific. In the abstract we have \"found it evolved\", \"showed that\" and \"evolutionary tuning\", all indicating that the authors are convinced that hemoglobin evolved in order to achieve some optimality. There is never any discussion of the fact that correlation does not imply causation \u2013 nor any discussion of the null hypothesis of neutrality, nor any discussion of the possible fitness landscape that would produce such optimality.\n\n5) Introduction: \u2013 \"the characteristic nH values of almost all allosteric proteins rarely approaches the maximal value n\". In some ways I completely disagree with this perspective. My take is that this is true for only one reason and that is because the model of the Hill function is the wrong model for those molecules. If you write the MWC model, the equation (which should be front and center in the paper \u2013 their equation 2 sort of) the \"4\" in the partition function in the denominator is perfectly well aligned with the fact that there are 4 binding sites for hemoglobin. If you do this same thing for cyclic nucleotide gated ion channels and fit a Hill function, you don't get the correct number of binding sites. If you use MWC, you do.\n\n6) Though the authors are constantly talking about c and L,, shouldn't we think of the MWC model as a three-parameter model? I just don't follow their thinking on this point.\n\n7) \"the molecular phenotype of a protein\" \u2013 to me, the molecular phenotype is much broader than this. IT includes the leakiness 1/(1+L), the EC50, the dynamic range as well as the Hill parameter.\n\n8) Subsection \u201cThe biophysical Hill landscape of a tetrameric MWC allosteric protein\u201d: \"summarizes all known aspects\" \u2013 As mentioned above, the known aspects of the model include Leakiness, EC50, saturation, dynamic range, effective Hill parameter, but there are other deep things such as the way Wingreen and coworkers have repeatedly shown the data collapse achieved in these models. See the Keymer et al., papers where the data collapse in chemotaxis is demonstrated\n\n9) I am not sure what they are talking about, but I think that there are mutants of MWC proteins that do something other than change L. See the work of Daber and Lewis for an example.\n\n10) Subsection /2The characteristic nH value of hemoglobin is a maximum cooperativity point\u201d: \"very close to a value of\u2026\" given that in physics people argue about exponents of 1/3 vs. 1/2 in the context of different scaling relations, it is hard to see how 2.7 and 2 are \"very close\".\n\n11) \"results imply that evolutionary tuning of.\u2026\" It would be very interesting to understand more about the multi-dimensional fitness landscape that a living organism faces and how a particular piece of that ends up as a low dimensional fitness landscape that only cares about nH. My point is that the organism as a whole faces the battle for existence. This depends upon all of its physiology, not just oxygen binding. Do all the separate pieces of physiology each optimize separately? Are some unique and privileged? The authors could attempt to address these kinds of issues rather than just giving the usual arguments about evolutionary tuning and optimization.\n\n12) Subsection \u201cDatasets\u201d, \"considered part\" some discussion of the logic of which parts are included would be great.\n\n13) Supplementary file 1. One thing I wondered about both here and in the PLOS paper (which I have also read many times) is about the \"sloppy\" nature of the parameters. I am not sure if these authors have encountered the work of Jim Sethna (Cornell, Physics), but they have done very interesting things about parameter nonuniqueness. I am not sure how that plays out here but in our own experience using MWC in many contexts, the nonuniqueness of parameters comes up again and again.\n\nReviewer 2:\n\nThis paper focuses on developing a general model that explains the mechanistic origin of the cooperativity displayed by allosteric proteins, and presents this model in the context of hemoglobin, a classic model system with the kind of diverse datasets required for this analysis. The authors claim (1) that they have rich datasets regarding oxygen saturation curves for 14 different mammalian hemoglobins in a similar physiological condition (the evolutionary dataset) and for human hemoglobin in 26 different physiological conditions (the physiological dataset), (2) that from these datasets they can derive half maximal saturation and the Hill coefficient (nH), and can derive the key parameters of the MWC model (L, the equilibrium constant of the T to R conformational change, and c, the ratio of binding affinity to the T and R states), (3) that using the so-called \"Hill transformation\" they can create an analytic relationship that shows by nH depends on the mechanistic parameters L and c (a \"biophysical landscape\"), (4) that slices through this landscape qualitatively account for many prior reports on the literature, (5) that despite considerable variation in the actual value, the characterstic nH of all the mammalian hemoglobins occur near to the maximum value possible given their mechanistic parameters, (6) that for physiological variations of human hemoglobin where c is fixed, all the data cluster around the maximum nH, indicating that the degree of cooperativity is rather robust to physiological changes, a property previously described as \"buffering of cooperativity\", (7) that adopting the maximum nH possible facilitates the delivery of oxygen to tissues, with the buffering property ensuring that the delivery is robust to changes in physiological conditions, (8) that animals with lower body weight and higher oxygen consumption also linearly show higher maximum cooperativities, a finding that suggests evolutionarily selection of nH for optimal organismal fitness and physiological robustness. From all this the authors conclude that they have a new global understanding of the mechanistic features that control the physiological and evolutionary dynamics of hemoglobin. By extension, there is the idea that this same framework might be useful for the study of multisubunit allosteric proteins in general (e.g. GroEL or K+ ion channels).\n\nIn general, this is a great paper. The logic is clear, the specific analyses and data presented do support the claims, and the general conclusions are of great interest. From this reviewer's point of view, the real value here lies in two findings: (1) that there is a low-dimensional feature (the ridge of maximum cooperativity) in the biophysical landscape in which the physiological and evolutionary diversity of hemoglobin lives, and (2) that using this landscape it is possible to argue for a logical evolutionary strategy that underlies the observed variation. These are non-trivial achievements; there are probably 10's of thousands of papers relating the various details of hemoglobin mechanism n various conditions but few that present a unifying picture. This work will be of great value to both mechanistic biochemists and evolutionary biologists.\n\nReviewer 3:\n\nThe manuscript by Rapp and Yifrach attempts to understand the mechanistic forces that guide evolutionary and physiological adaptations which determine the value of Hill coefficients in cooperative systems. Assuming a MWC model of four identical oxygen-binding sites, the authors plot nH as a function of L and c, assuming a homogeneous tetramer. They then map published hemoglobin measurements of nH, L and c. They argue that the published nH values lie along the maximal possible theoretical values. They also observe a linear correlation between log(L) and log[c] and suggest that this reflects some co-evolution. They further argue that their slope of the log(L)/log[c] correlation, 2.7, is very close to the maximum value allowed (2) and therefore hemoglobins have evolved to display maximal cooperativity.\n\nI am personally not convinced regarding the validity of the claims of maximal cooperativity in hemoglobin evolution. First of all, the authors do not define maximal cooperativity. Is the value of the slope of the Hill plot at 50% saturation necessarily synonymous with (degree of) cooperativity? Second, L, c and nH are mechanistically correlated by theory, and the correlation observed need not be taken as evidence of evolutionary cause and effect.\n\nEssential revisions:\n\n1) Hemoglobin is not a good model for a classical MWC-type cooperative tetramer. Many models will reproduce cooperative binding isotherms faithfully, even if they are physically implausible. A case in point is the original Hill plot itself. MWC-type cooperative binding assumes N indistinguishable binding sites, and hemoglobin has physically distinct \u03b1 and \u03b2 subunits whose oxygen binding sites are known to have different binding constants. The implication of two distinguishable classes of binding sites is that the maximal nH is- a priori- lower than 4. The fact that the authors do not take this into account is problematic, as they are focusing on understanding the reasons for nH not achieving its maximal value of 4.\n\n2) Subsection \u201cThe characteristic nH value of hemoglobin is a maximum cooperativity point\u201d and onward. The authors regenerate nH from calculated L and c values of different hemoglobins. However, the original datasets show significantly diverging empirical nH values. How good is the correspondence between the calculated and empirical nH values? Does this indicate a problem with the applicability of the model?\n\n3) Subsection \u201cThe characteristic nH value of hemoglobin is a maximum cooperativity point\u201d and Figure 2B. L and c are not linearly correlated. logL and log[c] are linearly correlated. I am also not sure why this indicates co-evolution, because the two parameters are linked by theory.\n\n4) Subsection \u201cThe characteristic nH value of hemoglobin is a maximum cooperativity point\u201d and Figure 2B: The original formula for the relationship between L and c (from Rubin and Changeux) is L=c\u22c0-(n/2), where for the case of hemoglobin n=4. The authors find n/2=2.7 (Figure2B). Does this imply n=5.4? What does this imply in terms of the physical reality? The authors state that this is very close to the maximal value of 2. I am not sure that I agree, since the scale is logarithmic, base 10. Finally, does the regression line in Figure 2B cross the origin? This is not evident from the graph.\n\n5) Figure 3A and related text. It is unclear where the authors derive their justification for invariant c values. I can see perhaps how this could, perhaps, be valid for WT hemoglobins but I cannot see any justification for constant c in the mutants.\n\n6) The authors fail to relate the physical significance of the slope of the Hill plot to the 'degree of cooperativity' and fail to cite literature on this subject.\n\n7) The Title is misleading and needs to explicitly state that the analysis is limited to MWC type cooperativity\n\n8) In some cases, the citation of Levitzki, (1978) is misapplied. For example, Wyman, (1963,1964) should be cited for the modern equation defining the slope of the Hill plot (which the authors incorrectly term \"Hill transformation\").\n",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f61e1574-fc5e-4f35-86fe-6b3aa1bad4b3",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C1",
+      "claim": "Hemoglobin (Hb) represents a model protein to study molecular adaptation in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Hemoglobin (Hb) represents a model protein to study molecular adaptation in vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work establishing Hb as a model system for studying adaptation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "08108f59-ed86-47eb-bb43-84af4398bbcd",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C2",
+      "claim": "Both affinity and cooperativity of oxygen binding to Hb affect tissue oxygen delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both affinity and cooperativity of oxygen binding to Hb affect tissue oxygen delivery, only the former was thought to determine molecular adaptations of Hb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about Hb function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "5c0fc7b4-a10a-479f-9ed9-ac49e85a1559",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C3",
+      "claim": "Only affinity was thought to determine molecular adaptations of Hb.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both affinity and cooperativity of oxygen binding to Hb affect tissue oxygen delivery, only the former was thought to determine molecular adaptations of Hb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the historical view in the field prior to this study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "ed60ec66-6784-4d19-b89c-ac3e6ce525b4",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C4",
+      "claim": "Mammalian Hb cooperativity values all reside on a ridge of maximum cooperativity along the biophysical Hill landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mammalian Hb cooperativity values all reside on a ridge of maximum cooperativity along this landscape that allows for both gross- and fine-tuning of tissue oxygen unloading to meet the distinct metabolic requirements of mammalian tissues for oxygen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on mapping experimental data onto the theoretical landscape.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "84b4f36b-9184-473c-b63a-1cd4b33ae544",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C5",
+      "claim": "The ridge of maximum cooperativity allows for both gross- and fine-tuning of tissue oxygen unloading.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mammalian Hb cooperativity values all reside on a ridge of maximum cooperativity along this landscape that allows for both gross- and fine-tuning of tissue oxygen unloading to meet the distinct metabolic requirements of mammalian tissues for oxygen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the theoretical analysis and experimental data mapping.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "55d72b23-ccbf-41d9-a8b8-9fe66d09a038",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C6",
+      "claim": "Mutation and selection are separated by several levels of biological organization.",
+      "claim_type": "EXPLICIT",
+      "source": "One stems from the fact that mutation and selection are separated by several levels of biological organization such that it is difficult to elucidate the complex relationships between protein sequence and organismal/population fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "8252b100-a8aa-4158-bceb-05025746c852",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C7",
+      "claim": "It is difficult to elucidate the complex relationships between protein sequence and organismal/population fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "One stems from the fact that mutation and selection are separated by several levels of biological organization such that it is difficult to elucidate the complex relationships between protein sequence and organismal/population fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general challenge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "10f5d3fa-8f38-4cf3-9ca1-35675f25461b",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C8",
+      "claim": "We currently understand the mechanisms underlying adaptive behavior for only a very limited number of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Given these challenges, we currently understand the mechanisms underlying adaptive behavior for only a very limited number of proteins (e.g. Mello and Tu, 2005; Keymer et al., 2006; Swem et al., 2008; Storz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to specific examples in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "a40d29c7-0bcd-48c6-9c5b-ae2401b8f4e0",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C9",
+      "claim": "Hb is a tetrameric allosteric protein responsible for tissue oxygen delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb is a tetrameric allosteric protein responsible for tissue oxygen delivery in a manner controlled by the midpoint and slope of its oxygen saturation curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Hb structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "6a24274c-8a29-46ad-b780-0acc10012a15",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C10",
+      "claim": "Tissue oxygen delivery by Hb is controlled by the midpoint and slope of its oxygen saturation curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb is a tetrameric allosteric protein responsible for tissue oxygen delivery in a manner controlled by the midpoint and slope of its oxygen saturation curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Hb function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "95145252-ffb2-4934-bd43-0df997bca1b8",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C11",
+      "claim": "The macroscopic parameters p50 and nH reflect the effective affinity and cooperativity of oxygen binding by Hb, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "These macroscopic parameters reflect the effective affinity (p50) and cooperativity (nH) of oxygen binding by Hb, respectively and are traditionally evaluated using the Hill equation, derived assuming an all-or-none mode of binding (Hill, 1910).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hill's original work and is established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "d9458951-ecbe-44f4-a2f9-258a1e4c2fd8",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C12",
+      "claim": "Hb oxygen affinity (p50) is an adaptive trait.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the years, many studies have indicated that Hb oxygen affinity (p50) is an adaptive trait, that is its value has been tuned during evolution so as to tailor tissue oxygen delivery to the particular metabolic requirements of vertebrates due to variations in body size, lifestyle and/or environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple studies cited in the text.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "e34fa9bc-a6b4-4b0e-ae81-3c92c6ddbbaa",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C13",
+      "claim": "Vertebrates native to mountain habitats usually possess Hb that exhibits higher affinity for oxygen than does the Hb of lowland dwellers.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, vertebrates native to mountain habitats where low ambient oxygen pressures prevail usually possess Hb that exhibits higher affinity for oxygen than does the Hb of lowland dwellers (Lenfant, 1973; Bunn, 1980; Weber, 2007; Storz and Moriyama, 2008; Storz, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "2ae78133-1787-4ec4-8421-228930e7cd6c",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C14",
+      "claim": "Hb in small-sized animals that display high metabolic rates presents lower affinity for oxygen than does the same protein in large-sized animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, Hb in small-sized animals that display high metabolic rates presents lower affinity for oxygen than does the same protein in large-sized animals, again reflecting the adaptive adjustment of tissue oxygen unloading by Hb (Schmidt-Neilsen and Larimer, 1958; Schmidt-Nielsen, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schmidt-Nielsen's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "0535e262-c222-4882-9f3c-a805e302d583",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C15",
+      "claim": "Early respiratory system physiologists assigned great significance to the p50 parameter, terming it 'oxygen unloading tension'.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, early respiratory system physiologists assigned great significance to the p50 parameter, terming it 'oxygen unloading tension', and proposed that Hb function could be explained in terms of adaptive evolution of this value (Schmidt-Neilsen and Larimer, 1958; Schmidt-Nielsen, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to historical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "2430a095-86f5-47b4-8a0d-ec31eb2cdf15",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C16",
+      "claim": "Early studies ignored the adaptive potential of cooperativity (nH) with respect to Hb function.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, such studies ignored the adaptive potential of cooperativity (nH) with respect to Hb function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical gap in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "5f597acd-4c4d-43e9-9fe1-9de12b0c350f",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C17",
+      "claim": "nH also affects Hb tissue oxygen delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "This is surprising, given that nH also affects Hb tissue oxygen delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about Hb function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "b1b794c0-0e5f-4181-af27-fe4eb2f106ed",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C18",
+      "claim": "Mechanisms underlying changes in p50 are all also expected to affect nH.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mechanisms underlying changes in p50, such as changes in oxygen affinity of the oxy- or deoxy-states of Hb, changes in the ratio between these states or changes in their sensitivity to allosteric effectors, are all also expected to affect nH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the biophysical properties of the MWC model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "4d8251f3-a3d0-427b-9d09-a00ea42a8483",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C19",
+      "claim": "Mammalian Hbs exhibit variations in the Hill cooperativity value.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the finding by Milo et al. (2007) that mammalian Hbs exhibit variations in the Hill cooperativity value hints at the adaptive potential of the nH trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Milo et al. (2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "b60a2b73-fd4f-49cf-980e-a08377005604",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C20",
+      "claim": "There is an inherent tradeoff between arterial O2 loading and peripheral O2 unloading.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the inherent tradeoff between arterial O2 loading and peripheral O2 unloading, it is not clear whether improved tissue oxygen delivery is achieved by increased oxygen affinity to improve Hb loading or by decreased affinity to favor unloading (Storz, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known principle with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "f6acdb47-0b1b-45f0-8ba5-d9c1f556a127",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C21",
+      "claim": "Very high or very low oxygen affinity would result in a low fraction of tissue oxygen delivery unless cooperativity (nH) between Hb subunits is introduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Either very high or very low oxygen affinity would result in a low fraction of tissue oxygen delivery unless cooperativity (nH) between Hb subunits is introduced as a means to switch between low- and high-affinity Hb states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from basic principles of Hb function.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "3d12318d-921f-4fa7-a53c-5af8246d9380",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C22",
+      "claim": "The values of both p50 and nH of Hb should reflect physiological optimization of the tradeoff between O2 loading in the lungs and O2 unloading in tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "It would thus seem that the values of both p50 and nH of Hb should reflect physiological optimization of the tradeoff between O2 loading in the lungs and O2 unloading in tissues, so as to optimize tissue oxygen delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central hypothesis of the study, based on logical inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "18ac1502-1746-4a49-a24d-ecbb42570655",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C23",
+      "claim": "The evolutionary dataset comprises a set of oxygen binding curves of homologous Hb proteins from different mammalian species, all measured under similar physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The former comprises a set of oxygen binding curves of homologous Hb proteins from different mammalian species, all measured under similar physiological conditions (Milo et al., 2007; Rapp and Yifrach, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the study with citation support.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "113b5720-872c-473e-b754-87b072804315",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C24",
+      "claim": "The physiological dataset comprises a set of binding curves of human Hb measured under a variety of different physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter comprises a set of binding curves of human Hb measured under a variety of different physiological conditions, that is, in the presence of different concentrations of H+, CO2 and organophosphate, all inhibitory allosteric ligands of Hb (Rapp and Yifrach, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the study with citation support.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "a1c1c922-7d93-4482-93a5-80033d4d46c6",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C25",
+      "claim": "H+, CO2 and organophosphate are all inhibitory allosteric ligands of Hb.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter comprises a set of binding curves of human Hb measured under a variety of different physiological conditions, that is, in the presence of different concentrations of H+, CO2 and organophosphate, all inhibitory allosteric ligands of Hb (Rapp and Yifrach, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Hb regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "bdb785e2-0a5a-4506-a2e6-b7e14976b00a",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C26",
+      "claim": "Reliable estimates for p50 and nH Hill parameters and for the elementary relative affinity (c) and conformational changes (L) parameters of the MWC model are available for all dataset curves.",
+      "claim_type": "EXPLICIT",
+      "source": "For all data sets curves, reliable estimates for p50 and nH Hill parameters and for the elementary relative affinity (c) and conformational changes (L) parameters of the MWC concerted allosteric model (Monod et al., 1965; Rubin and Changeux, 1966) are available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work where these parameters were derived.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "aebf8aab-372a-4b9e-afc8-3113fe7052d8",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C27",
+      "claim": "The Hb evolutionary dataset comprises 14 different mammalian Hb oxygen saturation curves obtained under similar physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the Hb evolutionary dataset comprises 14 different mammalian Hb oxygen saturation curves obtained under similar physiological conditions (Materials and methods and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "6bcd80f5-080f-4a8b-8ab9-7c080b595399",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C28",
+      "claim": "The Hb physiological dataset comprises 26 different human Hb saturation curves collected under a variety of different physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hb physiological dataset comprises 26 different human Hb saturation curves collected under a variety of different physiological conditions, including those involving changes in H+ (Di Cera et al., 1988; Imai, 1983), CO2 (Doyle et al., 1987) and 2,3-BPG (bis-phosphoglycerate) (Benesch et al., 1971) concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific dataset used with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "3739826c-6506-495f-99bd-91bd1269602b",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C29",
+      "claim": "In the MWC model, tetrameric Hb is assumed to be in equilibrium between the un-liganded low-affinity T (tense or deoxy) and the high-affinity R (relaxed or oxy) states.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the MWC model, tetrameric Hb is assumed to be in equilibrium between the un-liganded low-affinity T (tense or deoxy) and the high-affinity R (relaxed or oxy) states, as described by the L allosteric constant (L=[T]/[R]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the MWC model as applied to Hb.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "a1c151e3-226c-45c1-8d7b-c5ca1850a7c3",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C30",
+      "claim": "In the classical MWC model, cooperativity in substrate binding (homotropic interactions) is determined by both L and c.",
+      "claim_type": "EXPLICIT",
+      "source": "In the classical MWC model, cooperativity in substrate binding (homotropic interactions) is determined by both L and c (Monod et al., 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental property of the MWC model with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "0358d988-d11e-47e6-8bc0-3df58604fba4",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C31",
+      "claim": "Heterotropic interactions, describing the effects of allosteric ligands on substrate binding, only affect the L parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterotropic interactions, on the other hand, describing the effects of allosteric ligands on substrate binding, only affect the L parameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental property of the MWC model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "416a2238-1f25-4c0b-8164-ab15e3ed6077",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C32",
+      "claim": "The calculated Hill values of all mammalian Hbs reside close to the maximum points of the bell-shaped contours of the three-dimensional Hill landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "When mapped onto the theoretical Hill landscape, the calculated Hill values of all mammalian Hbs reside close to the maximum points of the bell-shaped contours of the three-dimensional Hill landscape (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on mapping experimental data onto the theoretical landscape.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "d6b0fb64-e235-4c71-9c75-b3959f73dc1a",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C33",
+      "claim": "The logarithms of the values for L and c of the different Hbs are linearly correlated with a slope value of \u22122.7 (\u00b10.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the logarithms of the values for L and c of the different Hbs are linearly correlated (Figure 2b) with a slope value of \u22122.7 (\u00b10.3), close to a value of \u22122 that would be expected for proteins that evolved to present maximum cooperativity in ligand binding (L = c -n/2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "f1ea96ac-2015-441b-b29b-dcfec91499ff",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C34",
+      "claim": "A slope value of \u22122 would be expected for proteins that evolved to present maximum cooperativity in ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the logarithms of the values for L and c of the different Hbs are linearly correlated (Figure 2b) with a slope value of \u22122.7 (\u00b10.3), close to a value of \u22122 that would be expected for proteins that evolved to present maximum cooperativity in ligand binding (L = c -n/2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the theoretical MWC model criterion for maximum cooperativity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "c1487d21-331d-4f91-9ea2-a9012306811e",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C35",
+      "claim": "The logL-logc correlation crosses very close to the (0,0) axis origin point.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that the logL-logc correlation crosses very close to the (0,0) axis origin point further supports this assertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the data analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "edcbb1f1-fa9e-4853-8174-2e55d499e6e9",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C36",
+      "claim": "L and c are independent parameters of the MWC model.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that L and c are independent parameters of the MWC model, the logarithms of their values for a given protein set are not expected to be linearly-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental property of the MWC model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "73badb1b-6678-4486-b7fa-63299e6ff721",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C37",
+      "claim": "The observed linearity between mammalian logL and logc values points to co-evolution of the two MWC parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus suggest that the observed linearity between mammalian logL and logc values does not imply causation or is an artifact but rather points to co-evolution of the two MWC parameters so as to shape Hb cooperativity close to the maximum value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data pattern and theoretical considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "c857d63c-4a90-4ef5-8c4d-8efd8d09ca12",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C38",
+      "claim": "A buffering of cooperativity regime is observed around a maximum cooperativity Hill point.",
+      "claim_type": "EXPLICIT",
+      "source": "As highlighted above, a buffering of cooperativity regime is observed around a maximum cooperativity Hill point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the MWC model at maximum cooperativity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "63c7dbe4-b4be-4ab6-a61b-5ca913796834",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C39",
+      "claim": "Minor changes in nH are to be expected upon changes in L brought about by the binding of allosteric inhibitors or activators around the maximum cooperativity point.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, minor changes in nH are to be expected upon changes in L brought about by the binding of allosteric inhibitors or activators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the buffering of cooperativity regime.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "73323ec2-c5c4-47d7-863d-664163043fc8",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C40",
+      "claim": "logL-nH data points of the physiological dataset cluster around the maximum point of the bell-shaped curve.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Figure 3a, logL-nH data points of the physiological dataset (black symbols) cluster around the maximum point of the bell-shaped curve.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "0c8ebf19-8648-42f9-ba0b-71d11f1c258f",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C41",
+      "claim": "This pattern is in sharp contrast to the scattered pattern of the pairs of logL-nH values for Hb mutants reported in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is in sharp contrast to the scattered pattern of the pairs of logL-nH values for Hb mutants reported in the literature (gray circles) (Baldwin, 1976) and assumed by Baldwin (1976) (and later by Fersht, 1985) to have the same c value.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the physiological dataset to literature data on mutants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "20a102a8-7973-4dd3-83e9-a1ba36245af9",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C42",
+      "claim": "Significant deviations from the maximum cooperativity value of wild-type human Hb were observed for naturally occurring Hb mutants, such as the Kansas and Chesapeake variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant deviations from the maximum cooperativity value of wild-type human Hb were also observed for naturally occurring Hb mutants, such as the Kansas and Chesapeake variants (Edelstein, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Edelstein's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "df7f43d0-5793-4bcb-b7b3-4485acd56a95",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C43",
+      "claim": "The clustering of all logL-nH experimental data points of the H+, CO2 and 2,3-BPG datasets around the maximum point reveals that the Hill value for human Hb is relatively insensitive to changes in physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustering of all logL-nH experimental data points of the H+, CO2 and 2,3-BPG datasets around the maximum point reveals that the Hill value for human Hb is relatively insensitive to changes in physiological conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data pattern shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "77725b54-05e0-4a92-a66c-d3ae7e9c9e0d",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C44",
+      "claim": "nH-insensitive behavior was noted for the pH-related Bohr effect of Hb.",
+      "claim_type": "EXPLICIT",
+      "source": "Such nH-insensitive behavior was noted for the pH-related Bohr effect of Hb (Wyman, 1964; Di Cera et al., 1988) and later extended to other allosteric effectors of Hb (Milo et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "b052df05-160b-44aa-9020-4807465bbb4c",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C45",
+      "claim": "The results provide a mechanistic explanation, based on the MWC model parameters, for the 'buffering of cooperativity' property of Hb.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showing the invariance of nH with respect to logL thus provide a mechanistic explanation, based on the MWC model parameters, for the 'buffering of cooperativity' property of Hb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "4a768658-ca2a-40fe-820f-d447372d4b7e",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C46",
+      "claim": "Human Hb had evolved to present maximum cooperativity in oxygen binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Such behavior should only appear if human Hb had evolved to present maximum cooperativity in oxygen binding (Figure 1c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the buffering of cooperativity behavior observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "961c4029-1033-4535-bc2a-268d9527244c",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C47",
+      "claim": "Site-directed point mutants of Hb are not subjected to the selection pressure that leads to maximum cooperativity.",
+      "claim_type": "EXPLICIT",
+      "source": "As site-directed point mutants of Hb are not subjected to the selection pressure that leads to maximum cooperativity, the values of logL-nH pairs for such mutants fall off the extremum point of the logL-nH cross-section (Baldwin, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from evolutionary principles and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "991e0f94-41a2-423d-8b65-dfe154d6b5c7",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C48",
+      "claim": "The higher the value of the maximum Hill point of the appropriate binding curve, the more it is displaced to the right along the scaled concentration axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Under such conditions, the affinity and maximum Hill point are correlated (Figure 4a). The higher the value of the maximum Hill point of the appropriate binding curve, the more it is displaced to the right along the scaled concentration axis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the simulated curves in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "79287520-c556-4aa9-bc31-aa8f51fdcc49",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C49",
+      "claim": "There is monotonic correlation between the maximum Hill value and log\u03b11/2.",
+      "claim_type": "EXPLICIT",
+      "source": "This is reflected in Figure 4b, showing monotonic correlation between the maximum Hill value and log\u03b11/2 (\u03b11/2=[S]1/2/KR).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4b based on theoretical calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "1632a22e-5705-4547-a48a-3ab7dde955e3",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C50",
+      "claim": "Under the maximum cooperativity parameter condition, a tradeoff exists between the cooperativity and affinity properties of a MWC-type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "It thus seems that under the maximum cooperativity parameter condition, a tradeoff exist between the cooperativity and affinity properties of a MWC-type protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the theoretical analysis shown in Figure 4.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "c2c81390-0a23-49a1-bfc0-0b89fdaa6118",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C51",
+      "claim": "The value for the \u0394$Y\u00af_{100 \u2192 40%}$/\u0394log\u03b1 parameter increases monotonically in a power law manner with increases in the value of the maximum Hill point.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Figure 4c (filled black symbols), the value for this parameter increases monotonically in a power law manner with increases in the value of the maximum Hill point.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4c based on theoretical calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "b59ae24c-77c8-48f6-8fb8-7abcb7a417e7",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C52",
+      "claim": "Higher maximum Hill points ensure higher sensitivity for substrate unbinding by the MWC protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher maximum Hill points thus ensure higher sensitivity for substrate unbinding by the MWC protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the analysis shown in Figure 4c.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "77a542c5-f07d-486d-b99d-e5e21e6ca44e",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C53",
+      "claim": "Higher maximum Hill values give rise to broader L ranges, where 'buffering of cooperativity' is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the dependence of \u0394logL on the maximum cooperativity Hill value (Figure 4f) reveals that higher maximum Hill values give rise to broader L ranges, where 'buffering of cooperativity' is observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4f based on theoretical calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "ab9bd839-817f-47e8-8cee-3f1c057e5ce6",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C54",
+      "claim": "Within the buffering of cooperativity range, changes of up to 6% are observed in the value of protein unbinding sensitivity in response to changes in physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, within this range, changes of up to 6% are observed in the value of protein unbinding sensitivity in response to changes in physiological conditions brought about by changes in L alone yet reflected in changes in p50 alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the theoretical analysis shown in Figure 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "c6078fe4-465a-4e34-92a5-1c6e197bf748",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C55",
+      "claim": "Different mammalian Hbs exhibit different maximum nH values.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that different mammalian Hbs exhibit different maximum nH values (Figure 2a), combined with the observation made above whereby systematically higher maximum Hill value gives rise to higher sensitivities to substrate unloading by MWC proteins (Figure 4c), led us to hypothesize that the maximum cooperativity point of Hb has been tuned during evolution to satisfy the particular physiological requirements of different tissues for oxygen supply.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "3b37b606-a711-44c9-b75d-339a40b89a56",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C56",
+      "claim": "The maximum cooperativity point of Hb has been tuned during evolution to satisfy the particular physiological requirements of different tissues for oxygen supply.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that different mammalian Hbs exhibit different maximum nH values (Figure 2a), combined with the observation made above whereby systematically higher maximum Hill value gives rise to higher sensitivities to substrate unloading by MWC proteins (Figure 4c), led us to hypothesize that the maximum cooperativity point of Hb has been tuned during evolution to satisfy the particular physiological requirements of different tissues for oxygen supply.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on combining observations from Figures 2a and 4c.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "0c9a84b6-c142-4281-a5be-9499907d84da",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C57",
+      "claim": "The greater an animal's metabolic rate, the higher was the observed maximum Hill cooperativity value of oxygen binding by Hb.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the greater an animal's metabolic rate, the higher was the observed maximum Hill cooperativity value of oxygen binding by Hb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "21715cbf-2ff8-4a74-9c66-bcf6f1ca65a1",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C58",
+      "claim": "An inverse linear correlation was found between the metabolic rate and Hb affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as previously shown (Schmidt-Neilsen and Larimer, 1958; Schmidt-Nielsen, 1970), an inverse linear correlation was found between the metabolic rate and Hb affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the data shown in Figure 5c and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "d806d0fa-3ba8-4876-86f2-460cf5503971",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C59",
+      "claim": "These empirical observations directly relate the maximum cooperativity and affinity properties of Hb to an organismal-level trait that is related to fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "These empirical observations directly relate the maximum cooperativity and affinity properties of Hb to an organismal-level trait that is related to fitness (Dykhuizen et al., 1987; Kacser and Burns, 1981; Bershtein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the correlations shown in Figure 5c with citation support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "b17b3db6-28c4-4d31-becc-290f8b126d0e",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C60",
+      "claim": "Mammalian Hb nH and p50 values reflect evolutionary and physiological adaptations that serve to optimize the tradeoff between O2 loading in pulmonary capillaries and O2 unloading in tissue capillaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these points support the assertion that mammalian Hb nH and p50 values reflect evolutionary and physiological adaptations that serve to optimize the tradeoff between O2 loading in pulmonary capillaries and O2 unloading in tissue capillaries, so as to optimize tissue oxygen delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all the evidence presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "4bf0c6dc-a1db-4dee-a2c1-38b53a196736",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C61",
+      "claim": "Evolutionary (i.e., across species) variations allow for gross changes in Hb oxygen unloading sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on experimental (Figures 2 and 3) and theoretical (Figure 4) results, we suggest that evolutionary (i.e., across species) variations allow for gross changes in Hb oxygen unloading sensitivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the combined experimental and theoretical results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "df3b24f3-5327-43bc-858c-5c07f3926363",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C62",
+      "claim": "Such gross changes are controlled by the maximum cooperativity and affinity values of Hb, in turn determined by changes in both L and c.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes are controlled by the maximum cooperativity and affinity values of Hb, in turn determined by changes in both L and c (Figure 4c, filled symbols).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the theoretical analysis shown in Figure 4c.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "1b6010ba-d2f6-43c3-a61b-f41cfacd01f8",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C63",
+      "claim": "Fine-tuning changes in Hb oxygen unloading sensitivity may be brought about by physiological variations within the buffering of cooperativity regime, reflected in changes in L and p50 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Fine-tuning changes in Hb oxygen unloading sensitivity may further be brought about by physiological variations within the buffering of cooperativity regime, this time, however, reflected in changes in L and p50 alone (Figure 4c, open symbols).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the theoretical analysis shown in Figure 4c.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "76bdd269-b84f-4e2c-81b9-dd2b0b88021c",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C64",
+      "claim": "The linear dependence between the metabolic rate of an animal and the maximum Hill value for Hb indicates that nH carries adaptive value with respect to mammalian Hb tissue oxygen unloading.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear dependence between the metabolic rate of an animal and the maximum Hill value for Hb (Figure 5c), combined with the results presented in Figure 4c, indicates that nH, like p50, carries adaptive value with respect to mammalian Hb tissue oxygen unloading.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from combining the results in Figures 5c and 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "344be0e5-62b0-48c6-8a49-8ecd62144e1a",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C65",
+      "claim": "Small body-sized animals presenting high metabolic rates require high oxygen supplies that can be more efficiently delivered by Hb presenting higher maximum Hill values.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, small body-sized animals presenting high metabolic rates require high oxygen supplies that can be more efficiently delivered by Hb presenting higher maximum Hill values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between metabolic rate and maximum Hill value.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "de318b49-eaa5-469a-8b29-a89ead10f497",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C66",
+      "claim": "Both the affinity and cooperativity traits of Hb represent low dimensional components of the fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that an animal's metabolic rate is a trait related to organism fitness, we suggest that both the affinity and cooperativity traits of Hb represent low dimensional components of the fitness landscape, independent of other components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between Hb properties and metabolic rate.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "812d86e1-beab-4cb5-af8b-6aaf67e7ec34",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C67",
+      "claim": "The biophysical nH landscape of Hb can be regarded as a biophysical fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, the biophysical nH landscape of Hb can be regarded as a biophysical fitness landscape that serves to bridge the genotype-phenotype gap in assessing the relation between sequence variations in Hb (that affect its affinity and cooperativity properties) and their ensuing fitness effects (Bershtein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual conclusion with citation support.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "583b682b-f9e4-4d93-bb4b-10d7dcbb516f",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C68",
+      "claim": "Evolutionary tuning of mammalian Hb maximum cooperativity and affinity points regulates tissue oxygen delivery by Hb and serves as one mean to meet the distinct needs of different animal tissues for oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary tuning of mammalian Hb maximum cooperativity and affinity points, achieved by co-varying the relative affinity and conformational ratio of its quaternary states, thus regulates tissue oxygen delivery by Hb and serves as one mean to meet the distinct needs of different animal tissues for oxygen (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a main conclusion of the study based on the results shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "02f2db9f-2d10-48d0-8979-64eed2afd6f3",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C69",
+      "claim": "Other mechanisms related to cardiac output and to convective and diffusive steps in the oxygen transport pathway also contribute to modulation of tissue oxygen transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, other mechanisms related to cardiac output and to convective and diffusive steps in the oxygen transport pathway are as well contribute to modulation of tissue oxygen transport (reviewed in Schmidt-Nielsen, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is acknowledged with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "73c380e0-f0a6-4464-b70c-3f05838504e9",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C70",
+      "claim": "The capillary density of a mammal is inversely correlated to body size.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it has been shown that the capillary density of a mammal is also inversely correlated to body size (Schmidt-Nielsen, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schmidt-Nielsen's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "58c1da31-8032-4a39-9a11-de95b6c8e4ad",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C71",
+      "claim": "The buffering of cooperativity regime in Hb reflects the case where the fractional saturation curves of the protein seem parallel in shape and are only displaced along the substrate concentration axis in response to changes in effector ligand concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The buffering of cooperativity regime in Hb reflects the case where the fractional saturation curves of the protein seem parallel in shape and are only displaced along the substrate concentration axis in response to changes in effector ligand concentrations (see Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the simulated curves in Figure 4e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "6eb9791d-2061-4185-9e10-d39d63a1b489",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C72",
+      "claim": "This behavior qualifies a MWC protein as a logarithmic sensor, reflecting the capacity of the protein to respond identically over a broad range of changes in chemical potential.",
+      "claim_type": "EXPLICIT",
+      "source": "As revealed by Olsman and Goentoro (2016), it is exactly this behavior the qualifies a MWC protein as a logarithmic sensor, reflecting the capacity of the protein to respond identically over a broad range of changes in chemical potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Olsman and Goentoro (2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "222d7d6a-e954-41b1-8676-790a6bf6ffb4",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C73",
+      "claim": "Many MWC allosteric proteins exhibit a buffering of cooperativity or logarithmic sensing regime in response to changes in the concentration of the modulatory allosteric signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon surveying the literature, Olsman and Goentoro (2016) found that many MWC allosteric proteins, including phosphofructokinase, Hb, cyclic nucleotide-gated ion channels, Tar receptors, G-protein coupled receptors and EGF receptors exhibit a buffering of cooperativity or logarithmic sensing regime in response to changes in the concentration (or magnitude) of the modulatory allosteric signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Olsman and Goentoro (2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "f4279153-8960-4f41-b3ac-f517b8ba9505",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C74",
+      "claim": "The dynamic range for buffering of cooperativity behavior can vary from 10-fold (Hb) to 10,000-fold (GPCR).",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic range for this behavior can vary from 10-fold (Hb) to 10,000-fold (GPCR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on literature survey results.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "d5545631-daaf-4907-9fe1-731bdd0be97b",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C75",
+      "claim": "All these MWC proteins evolved to present maximum cooperativity values in ligand binding and operate under the L = c -n/2 parameter regime.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that all these MWC proteins evolved to present maximum cooperativity values in ligand binding and operate under the L = c -n/2 parameter regime that gives rise to the buffering of cooperativity phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of buffering of cooperativity in multiple proteins.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "6c6e1c8b-10a8-4282-b58f-2dbeeae57986",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C76",
+      "claim": "Other than Hb, the significance of maximum cooperativity to organismal fitness is known only in the case of a single protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other than Hb, the significance of this finding to organismal fitness is known only in the case of a single protein (Keymer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "56767f3e-80d1-483f-916d-77095b5ce4dd",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C77",
+      "claim": "The roadmap that underlies the 'biophysical Hill landscape'-mapping strategy is general and can be applied to reveal the relation between evolutionary and physiological variations in shaping any molecular property of a protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the roadmap that underlies the 'biophysical Hill landscape'-mapping strategy is general and can be applied to reveal the relation between evolutionary (i.e. sequence) and physiological (e.g. changes in metabolite concentrations) variations in shaping any molecular property of a protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion about the applicability of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "040828ff-6b24-4ecd-a347-32b33e3ec7c2",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C78",
+      "claim": "The functional data analyzed considered the evolutionary and physiology Hb datasets respectively compiled in Milo et al. (2007) and Rapp and Yifrach (2017).",
+      "claim_type": "EXPLICIT",
+      "source": "The functional data analyzed here considered the evolutionary and physiology Hb datasets respectively complied in Milo et al. (2007) and Rapp and Yifrach (2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources used in the study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "a7cbe89c-8bf8-4b9d-a213-1c27836d4e95",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "claim_id": "C79",
+      "claim": "The physiological dataset comprised four independent human Hb sub-datasets, obtained from three different labs.",
+      "claim_type": "EXPLICIT",
+      "source": "The physiological dataset comprised four independent human Hb sub-datasets, obtained from three different labs, with two reporting pH modulation, one considering CO2 modulation and the last addressing 2,3-BPG modulation, as discussed in the meta analyses by Rapp and Yifrach (2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the physiological dataset.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f8bc9592-4e0c-4576-9dcf-d1c99e3f5d08",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Hemoglobin is established as a model protein for studying molecular adaptation in vertebrates, with its oxygen delivery function controlled by affinity (p50) and cooperativity (nH) parameters. Historical work has shown that p50 is an adaptive trait that varies with body size, lifestyle, and environmental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C12 establish well-documented background knowledge about hemoglobin structure, function, and the adaptive nature of p50, all supported by extensive citations to prior work. These foundational claims are uncontroversial and well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "876c06a5-4e2d-4f19-8a2a-05e9139974a4",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior to this study, cooperativity (nH) was largely ignored as an adaptive trait despite affecting tissue oxygen delivery and being mechanistically linked to changes in p50. Evidence from Milo et al. (2007) showed that mammalian Hbs exhibit variations in nH values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C16-C19 accurately characterize the historical gap in the field regarding cooperativity as an adaptive trait. The claims are supported by appropriate citations and establish the motivation for the current study. The observation of nH variation in mammals (C19) is directly supported by cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "5b80751d-b44b-4723-aef9-158365549527",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study tests the hypothesis that both p50 and nH reflect physiological optimization of oxygen delivery using two datasets: an evolutionary dataset of 14 mammalian Hb curves measured under similar conditions, and a physiological dataset of 26 human Hb curves measured under varying conditions (H+, CO2, 2,3-BPG). Reliable MWC parameters (L, c) and Hill parameters (p50, nH) are available for all curves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 clearly describe the study hypothesis and datasets. The datasets are well-characterized with appropriate citations (Milo et al. 2007, Rapp and Yifrach 2017), and the availability of reliable parameters is documented. The experimental design is appropriate for testing the hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "5779e181-533c-4428-b21f-bacedf651ba0",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The MWC model describes hemoglobin as existing in equilibrium between low-affinity T and high-affinity R states, with cooperativity determined by both L (conformational ratio) and c (relative affinity), while allosteric effectors only affect L. L and c are independent parameters of the MWC model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31, C36 accurately describe fundamental properties of the MWC model as applied to hemoglobin, supported by appropriate citations to foundational work (Monod et al. 1965, Rubin and Changeux 1966). These are well-established theoretical principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "6bba9f40-d547-420a-bd9c-d9ec05085fb7",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mammalian Hb cooperativity values reside on a ridge of maximum cooperativity in the biophysical Hill landscape. The logarithms of L and c values are linearly correlated with a slope of -2.7 (\u00b10.3), close to the theoretical value of -2 expected for maximum cooperativity (L = c^(-n/2)). This linear correlation crosses near the origin and reflects co-evolution of L and c parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 present a major finding supported by mapping experimental data onto the theoretical landscape (Figure 2). The observed slope of -2.7 is statistically close to the theoretical prediction of -2, and the intercept near zero provides additional support. The authors appropriately acknowledge potential sources of deviation and argue convincingly that the linearity reflects co-evolution rather than artifact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "1603deb3-b0f8-447a-be9f-19359ea43fab",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Human Hb exhibits a 'buffering of cooperativity' regime where nH remains relatively insensitive to changes in L brought about by allosteric effectors. Physiological dataset points cluster around the maximum cooperativity point, contrasting with scattered mutant data. This behavior provides mechanistic explanation for the buffering phenomenon and indicates that human Hb evolved to present maximum cooperativity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C46 are well-supported by data shown in Figure 3, where physiological dataset points cluster around the maximum while mutants scatter. The mechanistic explanation based on MWC parameters is logically sound. Previous observations of nH-insensitivity (C44) are appropriately cited, and the current work provides the underlying mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "71d5425a-3231-4e8b-8476-8aaf48fb97c2",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Under maximum cooperativity conditions, there is a tradeoff between cooperativity and affinity properties. Higher maximum Hill values correlate with increased affinity (rightward shift on scaled concentration axis) and monotonically increase substrate unbinding sensitivity in a power-law manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are supported by theoretical simulations shown in Figure 4a-c. The relationships are derived from the MWC model and demonstrated through systematic parameter variation. The power-law relationship between maximum Hill value and unbinding sensitivity is clearly shown in Figure 4c.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "2dc60c47-afda-44c9-b6d8-dcc644250bec",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Higher maximum Hill values give rise to broader L ranges where buffering of cooperativity is observed. Within this buffering range, changes of up to 6% occur in protein unbinding sensitivity in response to physiological changes in L (reflected as changes in p50 alone).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by theoretical analysis shown in Figure 4d-f. The relationship between maximum Hill value and dynamic range is clearly demonstrated. The 6% variation within the buffering regime is calculated from the theoretical framework and represents fine-tuning capacity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "ab9e8f6d-7640-412a-b825-cc6c2bb9ce7b",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Different mammalian Hbs exhibit different maximum nH values that correlate with metabolic rate. Higher metabolic rates (smaller animals) are associated with higher maximum Hill cooperativity values and lower Hb affinity. These observations directly relate Hb properties to organismal fitness, indicating that nH carries adaptive value.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59, C64-C65 are supported by data shown in Figure 5, demonstrating linear correlations between metabolic rate and both cooperativity (R\u00b2=0.97) and affinity (R\u00b2=0.9). The connection to fitness is appropriately supported by citations. This represents a key finding linking molecular properties to organismal traits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "24da59e0-9857-44da-b411-993d8bc0417c",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mammalian Hb nH and p50 values reflect evolutionary and physiological adaptations that optimize tissue oxygen delivery. Evolutionary variations allow gross changes in oxygen unloading sensitivity (controlled by both L and c), while physiological variations enable fine-tuning within the buffering regime (controlled by L and p50 alone).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63, C68 represent the main conclusions of the study, integrating findings from both experimental datasets and theoretical analysis (Figures 2-5). The distinction between gross evolutionary tuning and fine physiological tuning is well-supported by the combined evidence. The optimization framework is logically consistent with all presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "447e4552-b0b5-491e-a159-dc29c3f2025c",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both affinity and cooperativity traits of Hb represent low-dimensional components of the fitness landscape. The biophysical nH landscape can be regarded as a biophysical fitness landscape that bridges the genotype-phenotype gap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 present a conceptual framework supported by the demonstrated relationship between Hb properties and metabolic rate (a fitness-related trait). The interpretation is appropriately supported by citation to relevant fitness landscape literature (Bershtein et al. 2017). This represents a significant conceptual contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "e06c064b-bba2-49d5-89e0-e85ff51e08d2",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The buffering of cooperativity regime, where saturation curves appear parallel and displaced along the concentration axis, qualifies MWC proteins as logarithmic sensors. Many MWC allosteric proteins exhibit this behavior with dynamic ranges from 10-fold to 10,000-fold, suggesting they evolved to present maximum cooperativity values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 appropriately cite and interpret work by Olsman and Goentoro (2016) showing that buffering of cooperativity is a general phenomenon across multiple MWC proteins. The inference that these proteins evolved for maximum cooperativity is logical but extends beyond direct evidence for most proteins except Hb.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "e5b90bf3-4ce4-4352-84d8-d526e51c4666",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Other than Hb, the significance of maximum cooperativity to organismal fitness is known only for one protein. The biophysical Hill landscape mapping strategy is general and can be applied to reveal relationships between evolutionary and physiological variations in shaping any protein molecular property.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is appropriately supported by citation (Keymer et al. 2006), highlighting the novelty of the current work. Claim C77 presents a reasonable generalization of the methodological approach, though its applicability to other systems remains to be demonstrated empirically.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "f48d1592-b23b-4b2f-ba1b-396c4a738b55",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Naturally occurring Hb mutants (Kansas, Chesapeake) and site-directed mutants show significant deviations from maximum cooperativity because they are not subjected to the selection pressure that leads to maximum cooperativity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C47 are supported by appropriate citations (Edelstein 1971, Baldwin 1976) and provide important controls showing that the maximum cooperativity pattern is specific to wild-type proteins under selection. The scattered pattern of mutants in Figure 3a contrasts with the clustering of physiological variants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "ca57c746-9fef-4a61-8ef9-427b7146ced8",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Other mechanisms related to cardiac output, convective and diffusive oxygen transport steps, and capillary density (which is inversely correlated with body size) also contribute to tissue oxygen transport modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 appropriately acknowledge that Hb properties are not the only determinants of tissue oxygen delivery. These claims are supported by citation to Schmidt-Nielsen (1975) and provide important context for interpreting the significance of Hb adaptations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    },
+    {
+      "id": "c197b4a4-8580-4e2c-8abe-236573a6c6b7",
+      "content_id": "f2ccd8d1-2d3c-41a8-b613-5ef60cdddd9e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The functional data analyzed used evolutionary and physiological Hb datasets compiled in prior work (Milo et al. 2007, Rapp and Yifrach 2017). The physiological dataset comprised four independent human Hb sub-datasets from three different labs examining pH, CO2, and 2,3-BPG modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 accurately describe the data sources with appropriate citations. The use of previously compiled and analyzed datasets is clearly documented, and the composition of the physiological dataset is well-characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:59:06.200270Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f61e1574-fc5e-4f35-86fe-6b3aa1bad4b3",
+      "result_id": "f8bc9592-4e0c-4576-9dcf-d1c99e3f5d08"
+    },
+    {
+      "claim_id": "a40d29c7-0bcd-48c6-9c5b-ae2401b8f4e0",
+      "result_id": "f8bc9592-4e0c-4576-9dcf-d1c99e3f5d08"
+    },
+    {
+      "claim_id": "6a24274c-8a29-46ad-b780-0acc10012a15",
+      "result_id": "f8bc9592-4e0c-4576-9dcf-d1c99e3f5d08"
+    },
+    {
+      "claim_id": "95145252-ffb2-4934-bd43-0df997bca1b8",
+      "result_id": "f8bc9592-4e0c-4576-9dcf-d1c99e3f5d08"
+    },
+    {
+      "claim_id": "d9458951-ecbe-44f4-a2f9-258a1e4c2fd8",
+      "result_id": "f8bc9592-4e0c-4576-9dcf-d1c99e3f5d08"
+    },
+    {
+      "claim_id": "5c0fc7b4-a10a-479f-9ed9-ac49e85a1559",
+      "result_id": "876c06a5-4e2d-4f19-8a2a-05e9139974a4"
+    },
+    {
+      "claim_id": "2430a095-86f5-47b4-8a0d-ec31eb2cdf15",
+      "result_id": "876c06a5-4e2d-4f19-8a2a-05e9139974a4"
+    },
+    {
+      "claim_id": "5f597acd-4c4d-43e9-9fe1-9de12b0c350f",
+      "result_id": "876c06a5-4e2d-4f19-8a2a-05e9139974a4"
+    },
+    {
+      "claim_id": "b1b794c0-0e5f-4181-af27-fe4eb2f106ed",
+      "result_id": "876c06a5-4e2d-4f19-8a2a-05e9139974a4"
+    },
+    {
+      "claim_id": "4d8251f3-a3d0-427b-9d09-a00ea42a8483",
+      "result_id": "876c06a5-4e2d-4f19-8a2a-05e9139974a4"
+    },
+    {
+      "claim_id": "3d12318d-921f-4fa7-a53c-5af8246d9380",
+      "result_id": "5b80751d-b44b-4723-aef9-158365549527"
+    },
+    {
+      "claim_id": "18ac1502-1746-4a49-a24d-ecbb42570655",
+      "result_id": "5b80751d-b44b-4723-aef9-158365549527"
+    },
+    {
+      "claim_id": "113b5720-872c-473e-b754-87b072804315",
+      "result_id": "5b80751d-b44b-4723-aef9-158365549527"
+    },
+    {
+      "claim_id": "a1c1c922-7d93-4482-93a5-80033d4d46c6",
+      "result_id": "5b80751d-b44b-4723-aef9-158365549527"
+    },
+    {
+      "claim_id": "bdb785e2-0a5a-4506-a2e6-b7e14976b00a",
+      "result_id": "5b80751d-b44b-4723-aef9-158365549527"
+    },
+    {
+      "claim_id": "aebf8aab-372a-4b9e-afc8-3113fe7052d8",
+      "result_id": "5b80751d-b44b-4723-aef9-158365549527"
+    },
+    {
+      "claim_id": "6bcd80f5-080f-4a8b-8ab9-7c080b595399",
+      "result_id": "5b80751d-b44b-4723-aef9-158365549527"
+    },
+    {
+      "claim_id": "3739826c-6506-495f-99bd-91bd1269602b",
+      "result_id": "5779e181-533c-4428-b21f-bacedf651ba0"
+    },
+    {
+      "claim_id": "a1c151e3-226c-45c1-8d7b-c5ca1850a7c3",
+      "result_id": "5779e181-533c-4428-b21f-bacedf651ba0"
+    },
+    {
+      "claim_id": "0358d988-d11e-47e6-8bc0-3df58604fba4",
+      "result_id": "5779e181-533c-4428-b21f-bacedf651ba0"
+    },
+    {
+      "claim_id": "edcbb1f1-fa9e-4853-8174-2e55d499e6e9",
+      "result_id": "5779e181-533c-4428-b21f-bacedf651ba0"
+    },
+    {
+      "claim_id": "416a2238-1f25-4c0b-8164-ab15e3ed6077",
+      "result_id": "6bba9f40-d547-420a-bd9c-d9ec05085fb7"
+    },
+    {
+      "claim_id": "d6b0fb64-e235-4c71-9c75-b3959f73dc1a",
+      "result_id": "6bba9f40-d547-420a-bd9c-d9ec05085fb7"
+    },
+    {
+      "claim_id": "f1ea96ac-2015-441b-b29b-dcfec91499ff",
+      "result_id": "6bba9f40-d547-420a-bd9c-d9ec05085fb7"
+    },
+    {
+      "claim_id": "c1487d21-331d-4f91-9ea2-a9012306811e",
+      "result_id": "6bba9f40-d547-420a-bd9c-d9ec05085fb7"
+    },
+    {
+      "claim_id": "73badb1b-6678-4486-b7fa-63299e6ff721",
+      "result_id": "6bba9f40-d547-420a-bd9c-d9ec05085fb7"
+    },
+    {
+      "claim_id": "c857d63c-4a90-4ef5-8c4d-8efd8d09ca12",
+      "result_id": "1603deb3-b0f8-447a-be9f-19359ea43fab"
+    },
+    {
+      "claim_id": "63c7dbe4-b4be-4ab6-a61b-5ca913796834",
+      "result_id": "1603deb3-b0f8-447a-be9f-19359ea43fab"
+    },
+    {
+      "claim_id": "73323ec2-c5c4-47d7-863d-664163043fc8",
+      "result_id": "1603deb3-b0f8-447a-be9f-19359ea43fab"
+    },
+    {
+      "claim_id": "0c8ebf19-8648-42f9-ba0b-71d11f1c258f",
+      "result_id": "1603deb3-b0f8-447a-be9f-19359ea43fab"
+    },
+    {
+      "claim_id": "df7f43d0-5793-4bcb-b7b3-4485acd56a95",
+      "result_id": "1603deb3-b0f8-447a-be9f-19359ea43fab"
+    },
+    {
+      "claim_id": "77725b54-05e0-4a92-a66c-d3ae7e9c9e0d",
+      "result_id": "1603deb3-b0f8-447a-be9f-19359ea43fab"
+    },
+    {
+      "claim_id": "b052df05-160b-44aa-9020-4807465bbb4c",
+      "result_id": "1603deb3-b0f8-447a-be9f-19359ea43fab"
+    },
+    {
+      "claim_id": "4a768658-ca2a-40fe-820f-d447372d4b7e",
+      "result_id": "1603deb3-b0f8-447a-be9f-19359ea43fab"
+    },
+    {
+      "claim_id": "991e0f94-41a2-423d-8b65-dfe154d6b5c7",
+      "result_id": "71d5425a-3231-4e8b-8476-8aaf48fb97c2"
+    },
+    {
+      "claim_id": "79287520-c556-4aa9-bc31-aa8f51fdcc49",
+      "result_id": "71d5425a-3231-4e8b-8476-8aaf48fb97c2"
+    },
+    {
+      "claim_id": "1632a22e-5705-4547-a48a-3ab7dde955e3",
+      "result_id": "71d5425a-3231-4e8b-8476-8aaf48fb97c2"
+    },
+    {
+      "claim_id": "c2c81390-0a23-49a1-bfc0-0b89fdaa6118",
+      "result_id": "71d5425a-3231-4e8b-8476-8aaf48fb97c2"
+    },
+    {
+      "claim_id": "b59ae24c-77c8-48f6-8fb8-7abcb7a417e7",
+      "result_id": "71d5425a-3231-4e8b-8476-8aaf48fb97c2"
+    },
+    {
+      "claim_id": "77a542c5-f07d-486d-b99d-e5e21e6ca44e",
+      "result_id": "2dc60c47-afda-44c9-b6d8-dcc644250bec"
+    },
+    {
+      "claim_id": "ab9bd839-817f-47e8-8cee-3f1c057e5ce6",
+      "result_id": "2dc60c47-afda-44c9-b6d8-dcc644250bec"
+    },
+    {
+      "claim_id": "c6078fe4-465a-4e34-92a5-1c6e197bf748",
+      "result_id": "ab9e8f6d-7640-412a-b825-cc6c2bb9ce7b"
+    },
+    {
+      "claim_id": "3b37b606-a711-44c9-b75d-339a40b89a56",
+      "result_id": "ab9e8f6d-7640-412a-b825-cc6c2bb9ce7b"
+    },
+    {
+      "claim_id": "0c9a84b6-c142-4281-a5be-9499907d84da",
+      "result_id": "ab9e8f6d-7640-412a-b825-cc6c2bb9ce7b"
+    },
+    {
+      "claim_id": "21715cbf-2ff8-4a74-9c66-bcf6f1ca65a1",
+      "result_id": "ab9e8f6d-7640-412a-b825-cc6c2bb9ce7b"
+    },
+    {
+      "claim_id": "d806d0fa-3ba8-4876-86f2-460cf5503971",
+      "result_id": "ab9e8f6d-7640-412a-b825-cc6c2bb9ce7b"
+    },
+    {
+      "claim_id": "76bdd269-b84f-4e2c-81b9-dd2b0b88021c",
+      "result_id": "ab9e8f6d-7640-412a-b825-cc6c2bb9ce7b"
+    },
+    {
+      "claim_id": "344be0e5-62b0-48c6-8a49-8ecd62144e1a",
+      "result_id": "ab9e8f6d-7640-412a-b825-cc6c2bb9ce7b"
+    },
+    {
+      "claim_id": "b17b3db6-28c4-4d31-becc-290f8b126d0e",
+      "result_id": "24da59e0-9857-44da-b411-993d8bc0417c"
+    },
+    {
+      "claim_id": "4bf0c6dc-a1db-4dee-a2c1-38b53a196736",
+      "result_id": "24da59e0-9857-44da-b411-993d8bc0417c"
+    },
+    {
+      "claim_id": "df3b24f3-5327-43bc-858c-5c07f3926363",
+      "result_id": "24da59e0-9857-44da-b411-993d8bc0417c"
+    },
+    {
+      "claim_id": "1b6010ba-d2f6-43c3-a61b-f41cfacd01f8",
+      "result_id": "24da59e0-9857-44da-b411-993d8bc0417c"
+    },
+    {
+      "claim_id": "583b682b-f9e4-4d93-bb4b-10d7dcbb516f",
+      "result_id": "24da59e0-9857-44da-b411-993d8bc0417c"
+    },
+    {
+      "claim_id": "de318b49-eaa5-469a-8b29-a89ead10f497",
+      "result_id": "447e4552-b0b5-491e-a159-dc29c3f2025c"
+    },
+    {
+      "claim_id": "812d86e1-beab-4cb5-af8b-6aaf67e7ec34",
+      "result_id": "447e4552-b0b5-491e-a159-dc29c3f2025c"
+    },
+    {
+      "claim_id": "58c1da31-8032-4a39-9a11-de95b6c8e4ad",
+      "result_id": "e06c064b-bba2-49d5-89e0-e85ff51e08d2"
+    },
+    {
+      "claim_id": "6eb9791d-2061-4185-9e10-d39d63a1b489",
+      "result_id": "e06c064b-bba2-49d5-89e0-e85ff51e08d2"
+    },
+    {
+      "claim_id": "222d7d6a-e954-41b1-8676-790a6bf6ffb4",
+      "result_id": "e06c064b-bba2-49d5-89e0-e85ff51e08d2"
+    },
+    {
+      "claim_id": "f4279153-8960-4f41-b3ac-f517b8ba9505",
+      "result_id": "e06c064b-bba2-49d5-89e0-e85ff51e08d2"
+    },
+    {
+      "claim_id": "d5545631-daaf-4907-9fe1-731bdd0be97b",
+      "result_id": "e06c064b-bba2-49d5-89e0-e85ff51e08d2"
+    },
+    {
+      "claim_id": "6c6e1c8b-10a8-4282-b58f-2dbeeae57986",
+      "result_id": "e5b90bf3-4ce4-4352-84d8-d526e51c4666"
+    },
+    {
+      "claim_id": "56767f3e-80d1-483f-916d-77095b5ce4dd",
+      "result_id": "e5b90bf3-4ce4-4352-84d8-d526e51c4666"
+    },
+    {
+      "claim_id": "20a102a8-7973-4dd3-83e9-a1ba36245af9",
+      "result_id": "f48d1592-b23b-4b2f-ba1b-396c4a738b55"
+    },
+    {
+      "claim_id": "961c4029-1033-4535-bc2a-268d9527244c",
+      "result_id": "f48d1592-b23b-4b2f-ba1b-396c4a738b55"
+    },
+    {
+      "claim_id": "02f2db9f-2d10-48d0-8979-64eed2afd6f3",
+      "result_id": "ca57c746-9fef-4a61-8ef9-427b7146ced8"
+    },
+    {
+      "claim_id": "73c380e0-f0a6-4464-b70c-3f05838504e9",
+      "result_id": "ca57c746-9fef-4a61-8ef9-427b7146ced8"
+    },
+    {
+      "claim_id": "040828ff-6b24-4ecd-a347-32b33e3ec7c2",
+      "result_id": "c197b4a4-8580-4e2c-8abe-236573a6c6b7"
+    },
+    {
+      "claim_id": "a7cbe89c-8bf8-4b9d-a213-1c27836d4e95",
+      "result_id": "c197b4a4-8580-4e2c-8abe-236573a6c6b7"
+    }
+  ],
+  "comparisons": []
+}

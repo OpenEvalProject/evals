@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Complete pharmacological inactivation of all feedback pathways (direct and indirect) from nP to ELL pyramidal cells strongly attenuated neural and behavioral responses to envelope stimuli, with responses to high frequencies more attenuated than low frequencies, resulting in broadband (frequency-independent) tuning and compromised temporal whitening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C100-C103 provide converging experimental evidence from pharmacological manipulations (bilateral lidocaine injection into nP), neural recordings showing frequency-dependent attenuation, tuning curve changes, white index decreases, and behavioral measurements. The data are statistically significant (p<0.05) and supported by appropriate controls (C26, saline injection). The conclusion that complete feedback inactivation compromises optimal coding is well-supported by the experimental design and data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C29",
+      "C30"
+    ],
+    "result": "Selective pharmacological inactivation of indirect feedback (via lidocaine into PET or CNQX into ELL molecular layer) increased neural and behavioral sensitivity to envelopes, with enhancement primarily at low frequencies, resulting in broadband tuning and compromised temporal whitening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C104-C107 are supported by experimental data from two independent pharmacological approaches (lidocaine into PET and CNQX into ELL molecular layer, C29-C30), both showing consistent effects. Statistical significance is demonstrated (p<0.05), and the results converge on the conclusion that indirect feedback selectively attenuates low-frequency responses. The consistency across methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C5",
+      "C6",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C108",
+      "C109"
+    ],
+    "result": "Two distinct populations of nP neurons projecting to ELL show differential envelope frequency tuning: stellate cells (direct pathway) display broadband tuning without temporal whitening, while multipolar cells (indirect pathway) display high-pass tuning and perform temporal whitening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C33-C36 are supported by direct electrophysiological recordings from identified nP stellate and multipolar cells (C31-C32, C96-C99). The cell types were distinguished based on established electrophysiological criteria consistent with literature (C98-C99). Statistical analyses show significant differences in power law exponents and white index values between cell types (C108-C109, p<0.001). The data directly demonstrate the differential tuning properties of the two feedback pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C3"
+    ],
+    "result": "The direct feedback pathway from nP stellate cells enhances ELL pyramidal cell responses to envelopes independently of temporal frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by the combination of stellate cell recordings showing broadband tuning (C23, C35-C36) and the effects of complete feedback inactivation showing uniform attenuation (C3, C18). The inference that direct feedback provides frequency-independent enhancement is logically consistent with the data, though it relies on combining results from different experiments rather than direct manipulation of only the direct pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C4",
+      "C22"
+    ],
+    "result": "The indirect feedback pathway mediates optimized coding of envelope stimuli by selectively attenuating responses to low frequencies, thereby creating high-pass tuning necessary for temporal whitening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by the selective inactivation experiments (C21-C22, C104-C107) showing that blocking indirect feedback specifically enhances low-frequency responses and compromises whitening. This is further supported by multipolar cell recordings showing high-pass tuning (C24, C71). The mechanistic interpretation is consistent with the experimental data and represents a novel finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Indirect feedback excitation provides intracellular calcium entry via NMDA receptors that activates SK1 channels, which mediate spike frequency adaptation and selective attenuation of low-frequency envelope responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C57 are mechanistic hypotheses proposed by the authors but not directly tested in this study. While the anatomical support (C58-C59) and similarity to previous SK1 channel manipulation effects (C54) provide circumstantial evidence, no direct measurements of calcium dynamics, NMDA receptor activity, or SK1 channel function were performed. The hypothesis is plausible and well-reasoned but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Multipolar cells in nP perform temporal whitening, implying that the output sent to EGp and subsequently to ELL via the indirect pathway is already temporally whitened, though this signal likely undergoes further filtering by EGp granule cells and SK1 channels in ELL pyramidal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is directly supported by multipolar cell recordings showing high-pass tuning and temporal whitening (C24, C108-C109). Claim C72 is a logical inference from C71 supported by the data. Claim C73 is a hypothesis about signal processing that, while plausible, is not directly tested. The core finding about multipolar cell whitening is well-supported, but the downstream processing mechanisms remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C28",
+      "C30"
+    ],
+    "result": "Feedback manipulations differentially affect responses to envelopes versus amplitude modulations (AMs): complete feedback inactivation does not affect AM responses, while indirect feedback inactivation increases AM responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C28, and C30 are supported by spike-triggered average measurements showing differential effects on AM versus envelope responses. This demonstrates stimulus-specific effects of feedback pathways and is consistent with previous literature (C28, C30 cite prior work). The finding supports the interpretation that feedback pathways can perform multiple functions depending on stimulus type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Feedback inactivation alters the relationship between neural tuning and behavioral responses in a complex manner: both overall neural sensitivity and tuning exponent contribute to determining behavioral responses, not tuning exponent alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by the observation that complete and indirect feedback inactivation produced similar changes in neural tuning exponent but opposite changes in behavioral tuning exponent (Figures 4E, 5E). This demonstrates that the neural-behavioral relationship is more complex than previously assumed. However, the mechanistic understanding of how downstream areas decode ELL output remains incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Control experiments validate the specificity of pharmacological manipulations: saline injection (sham) does not alter responses, and unilateral contralateral lidocaine injection produces similar effects to bilateral injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by control experiments shown in supplementary figures. These controls are essential for validating that the observed effects are due to feedback inactivation rather than injection artifacts or non-specific effects. The controls strengthen confidence in the main experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Sensory neurons achieve optimal encoding by matching tuning properties to natural stimulus statistics through temporal whitening, a phenomenon observed across species and systems, though underlying mechanisms have remained unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7-C9 establish the theoretical framework and prior knowledge context for the study. These are well-supported by citations to established literature (Rieke et al., 1996; Dan et al., 1996; Wang et al., 2003; etc.). Claim C9 identifies the knowledge gap that the current study addresses. This provides appropriate scientific context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C81"
+    ],
+    "result": "The findings regarding feedback-mediated temporal whitening in the electrosensory system are likely applicable to cerebellum, cerebellum-like structures, and other sensory systems due to architectural similarities and the ubiquity of temporal whitening across systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76 and C81 are predictions about generalizability based on structural similarities (C74-C75, C77-C80) and cross-system observations of whitening. While the comparative arguments are reasonable and supported by citations, these remain speculative predictions that require experimental validation in other systems. The claims appropriately use cautious language ('likely', 'it is likely').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Methodological details: experiments used Apteronotus leptorhynchus, pooled ON- and OFF-type pyramidal cells, and employed envelope stimuli consisting of amplitude-modulated EODs where the envelope represents behaviorally relevant second-order stimulus features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 describe methodological choices that are well-justified. Pooling ON/OFF cells is supported by lack of differences (C83) and consistency with prior work. The stimulus design (C84-C86) is appropriate for studying envelope responses. The anatomical descriptions (C87-C88) are established knowledge. These methodological details are adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Stellate and multipolar cells in nP can be reliably distinguished based on electrophysiological properties: stellate cells have low baseline firing rates and do not respond to high AM frequencies, while multipolar cells have high baseline firing rates and respond well to high AM frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by electrophysiological recordings and statistical analysis (\u03c7\u00b2=12, p<0.001 for baseline firing rates). The properties match established literature (Bastian and Bratton, 1990; Bratton and Bastian, 1990), validating the cell type identification. This is essential for interpreting the differential tuning results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C62",
+      "C63",
+      "C68"
+    ],
+    "result": "Several mechanistic questions remain unresolved and require future investigation: how SK1 channels differentially affect envelope versus AM responses, the electrophysiological properties of other nP cell types projecting to EGp, and how animals distinguish between envelope and prey stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C62-C63, and C68 appropriately identify limitations and gaps in current understanding. These are honest assessments of what the study does not address and what future work is needed. The identification of these gaps is important for guiding future research and does not diminish the significance of the current findings.",
+    "result_type": "MINOR"
+  }
+]

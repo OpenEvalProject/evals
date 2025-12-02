@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C83"
+    ],
+    "result": "P. falciparum has an extremely AT-rich genome (81%) with over 60% of genes containing polyA tract motifs, which is significantly higher than other organisms including its human host and represents a unique feature among Plasmodium species that is conserved regardless of genomic AT-content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13, C20-C30 provide converging bioinformatic evidence from multiple databases (Ensembl, PlasmoDB) showing quantitative differences in polyA tract abundance between P. falciparum and other organisms. The data are internally consistent and supported by Figure 1, demonstrating that P. falciparum is an outlier with 63% of genes containing polyA tracts versus 0.7-2% in humans/mosquitoes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C71"
+    ],
+    "result": "PolyA tract-containing genes in Plasmodium are evolutionarily conserved across species (70-85% ortholog conservation), enriched in essential cellular processes (protein synthesis, RNA biogenesis, chromosome segregation), and include genes involved in cell adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by gene ontology analysis (C33, C34) and citations to previous comparative genomic studies (C31). The essentiality data (C32) is supported by reference to mutagenesis studies. The conservation across species (C71) is demonstrated in Figure 1 and supported by multiple citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Reporter constructs containing 36 consecutive adenosines (polyA36) are efficiently translated in P. falciparum cells without reduction in mRNA or protein levels, in stark contrast to human dermal fibroblasts and T. thermophila where polyA tracts cause substantial mRNA degradation and protein loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 present consistent experimental evidence from multiple orthogonal approaches (qRT-PCR, Western blot, fluorescence microscopy, luminescence assays) across three organisms. The data in Figures 2A-D show minimal effects in P. falciparum versus robust effects in HDFs and T. thermophila. The absence of frameshifted products (C40, C41) is demonstrated by Western blot and immunoprecipitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "2D PAGE electrophoresis demonstrates that polyA36 constructs produce poly-lysine peptides in P. falciparum, as evidenced by the expected shift in isoelectric point consistent with translation of all 12 lysine codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by 2D PAGE data in Figure 3 showing the predicted pI shift from 6.25-6.5 to 7.2-7.4, which matches the calculated shift expected if all AAA codons are translated into lysine residues. The same shift is observed with AAG codons, providing internal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Ribosome profiling data show substantial translational pausing on polyA tracts in human cells but no evidence of ribosome stalling in P. falciparum transcripts containing polyA tracts, with equal ribosome occupancy across polyA sequences independent of developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by analysis of published ribosome profiling datasets shown in Figure 4A-B and Figure 4\u2014figure supplement 2. The human data show clear pausing (C44) while P. falciparum data show uniform occupancy (C45-C46). The stage-independence (C47) is demonstrated across multiple IDC timepoints. The authors appropriately acknowledge mapping artifacts for longer polyA tracts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Time-course qRT-PCR analysis of synchronized P. falciparum cultures shows that polyA tract-containing transcripts are efficiently transcribed at all time points during the intraerythrocytic development cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by qRT-PCR data in Figure 4\u2014figure supplement 4 showing expression profiles of three polyA tract genes (PfZFP, PfCRK5, PfIWS1L) across 48 hours. The data demonstrate consistent transcription following the expected 'just-in-time' profile during trophozoite and schizont stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In silico RNA structure analysis reveals that P. falciparum and T. thermophila coding sequences have higher predicted minimum free energy than human sequences due to AT-content, but thermodynamic z-scores show no significant differences between P. falciparum and T. thermophila, indicating P. falciparum sequences are not ordered to adopt more stable structures than expected by nucleotide content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by computational analysis shown in Figure 4\u2014figure supplement 5. The MFE differences (C49) correlate with nucleotide composition, while z-score analysis (C50) appropriately normalizes for this bias. The inference (C51) logically follows from the z-score data, though the authors acknowledge this doesn't explain the differential translation observed in T. thermophila versus P. falciparum.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Bioinformatic searches of the P. falciparum genome failed to identify apparent homologs of Hbs1 or the endonuclease Cue2/NONU-1, key components of the NGD pathway in other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by bioinformatic analysis documented in Supplementary file 2. The absence of these key NGD components is consistent with the observed lack of mRNA degradation in response to stalling. However, the search methodology and criteria for homology are not detailed in the methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "A stem-loop stalling reporter causes severe protein reduction and ribosome stalling (disome accumulation) in P. falciparum but results in increased rather than decreased mRNA levels, demonstrating that P. falciparum lacks a fully functional NGD pathway that couples ribosome stalling to mRNA degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by Western blot (Figure 5A), qRT-PCR (Figure 5B), and polysome profiling (Figure 5C) data. The stem-loop construct shows disome accumulation (C56) indicating stalling, reduced protein (C54), but increased mRNA (C55), which is opposite to the canonical NGD response. This supports the conclusion (C8, C58) that P. falciparum has an altered NGD pathway. The polyA constructs show normal polysome distribution (C57) as controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Isoleucine starvation induces moderate upregulation of PfPelo (2-fold) and strong induction of PfHsp70 (5-fold) but does not cause mRNA degradation of Ile-rich transcripts, instead showing slight increases in mRNA abundance, indicating that RQC/NGD pathways in P. falciparum are not directly connected to targeted mRNA degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by Western blot and qRT-PCR data in Figure 6B-D. The upregulation of Pelo and Hsp70 (C59-C60) is clearly demonstrated, while the lack of mRNA degradation (C61-C62) is shown for multiple Ile-rich genes. The inference (C63-C64) that NGD is uncoupled from mRNA degradation is reasonable given the data, though the authors appropriately note this is speculative (C63 includes SPECULATION evidence type).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C84",
+      "C85"
+    ],
+    "result": "Structural analysis of P. falciparum ribosomes reveals a more hydrophilic peptide exit tunnel including at the constriction site, and differences in rRNA expansion segments (shorter 28S ESs, larger 18S ESs) compared to human ribosomes, suggesting adaptation to accommodate synthesis of long poly-lysine runs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65 and C84-C85 are supported by structural analysis shown in Figure 7 and Figure 7\u2014figure supplement 1 using published cryo-EM structures. However, claim C66 is speculative about functional adaptation. The hydrophobicity analysis is based on computational prediction (MOLE 2.5), and the authors acknowledge that experimental validation is needed. The causal link between structural features and polyA tract translation remains to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "P. falciparum ribosomes lack interaction with RACK1 protein, which in other organisms is required for NGD and affects translation of polybasic peptides, potentially contributing to P. falciparum's ability to translate polyA tracts without frameshifting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C88 are supported by citations to published cryo-EM structures and functional studies in other organisms. However, claim C77 is speculative about the functional benefit for P. falciparum. While RACK1 absence is documented structurally (Figure 7\u2014figure supplement 1), the causal connection to polyA tract translation efficiency has not been experimentally tested in P. falciparum. The role of RACK1 in frameshifting (C87-C88) is from other organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The ribosome nucleotides that interact with \u03c0-stacked polyA sequences (A1756 and C1634) are universally conserved across species, suggesting the mechanism for polyA stalling induction should not depend on species-specific differences in the ribosome A-site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by sequence alignment data shown in Figure 7\u2014figure supplement 2 demonstrating conservation of key nucleotides. This is an important observation that argues against A-site differences as the explanation for P. falciparum's unique behavior, though it doesn't explain what does account for the difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C81"
+    ],
+    "result": "P. falciparum has adapted its translational machinery and mRNA surveillance pathways to accommodate polyA tract translation, though the loss of Cue2/Nonu-1 endonuclease alone cannot fully explain the lack of mRNA degradation observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 and C81 represent integrative conclusions from the experimental data. C74 is supported by the stem-loop and starvation experiments (Figures 5-6). C75 correctly notes that endonuclease loss doesn't explain all observations since canonical exonucleolytic decay should still occur. C76 and C81 are reasonable inferences from the totality of data, though they remain somewhat speculative about mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C79"
+    ],
+    "result": "Prior research demonstrates that polyA runs cause ribosome stalling, frameshifting, and reduced protein synthesis in multiple organisms including humans, yeast, plants, and E. coli, with effects mediated by both mRNA conformation and nascent peptide interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15-C17, C67-C70, and C79 are all supported by citations to previous research. These establish the context and contrast for the P. falciparum findings. The citations appear appropriate and the claims accurately represent prior work, though the manuscript doesn't independently validate these prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C18",
+      "C19"
+    ],
+    "result": "Background information on P. falciparum biology, including its role in malaria, life cycle characteristics, genome features, and gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12, C14, C18-C19 provide established background information supported by citations to previous research. These are standard facts about P. falciparum biology that provide context for the study. C1 and C9 are well-established epidemiological facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C78",
+      "C80",
+      "C82"
+    ],
+    "result": "Speculative hypotheses about evolutionary drivers and mechanisms for polyA tract tolerance in P. falciparum, including selective pressure from biosynthetic pathways, benefits for host cell adhesion, roles of ribosome extension segments, and the possibility of specialized ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73, C78, C80, and C82 are explicitly speculative (all include SPECULATION in evidence_type). While these are reasonable hypotheses supported by citations to relevant literature, they are not tested in this study. C72 about biosynthetic pressure and C73 about adhesion benefits are plausible but lack direct evidence. C78 and C82 about specialized ribosomes and ribosome-associated factors are interesting ideas for future work but remain unproven.",
+    "result_type": "MINOR"
+  }
+]

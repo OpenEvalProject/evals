@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Wlsfl/-;Gfap-Cre mice are viable but exhibit reduced body size/weight at early post-weaning ages (normalizing by 6 weeks) and male infertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe basic phenotypic characterization of the mutant mice. The observations of viability, body weight changes, and male infertility are straightforward phenotypic assessments that are well-documented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Wlsfl/-;Gfap-Cre mice show two major neuroanatomical defects: complete absence of corpus callosum and large reduction in dentate gyrus size, with DGCs largely missing while mossy cells are retained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 collectively establish the primary anatomical phenotype through multiple complementary approaches (DAPI/cresyl violet staining, \u03bcDTI imaging, immunostaining for cell-type markers). The convergent evidence from histology and imaging strongly supports these anatomical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Gfap-Cre is expressed in the cortical hem by E14.5, and LEF1 levels (a marker of \u03b2-catenin signaling) are reduced in the cortical hem of Wlsfl/-;Gfap-Cre brains by E15.5, with reduced LEF1 persisting at E18.5 in the developing DG region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 trace the developmental basis of the DG phenotype through reporter analysis and LEF1 immunostaining at multiple embryonic timepoints. The temporal progression from normal LEF1 at E14.5 to reduced LEF1 at E15.5 and E18.5 provides a coherent developmental narrative supported by imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The reduction in DGCs results from decreased progenitor proliferation (~5-fold reduction in EdU+ cells in the DG region at E18.5) rather than increased cell death, consistent with reduced \u03b2-catenin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 establish the cellular mechanism underlying DGC loss. The EdU proliferation data (C21-C22) and Caspase-3 apoptosis data (C23) provide direct evidence distinguishing between proliferation defects and cell death. The conclusion (C24) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Bulk RNAseq reveals 60 transcripts with reduced abundance (55 of which are DGC-enriched) and 34 transcripts with increased abundance (27 of which are choroid plexus-specific, likely representing contamination).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe bulk RNAseq findings with appropriate statistical thresholds (FC>3, FDR<0.05). The interpretation that reduced transcripts are DGC-specific and increased transcripts reflect choroid plexus contamination is reasonable given the known cell-type expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "snRNAseq shows DGCs comprise 32% of control nuclei but only 3.5% of mutant nuclei, with compensatory increases in other cell types (inhibitory neurons: 9% to 15.5%; other excitatory neurons: 8% to 21%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present snRNAseq cell composition data with specific percentages and cell counts. The mathematical inference (C33) that DGC reduction should produce a 1.3-fold increase in other cell types is correct, though the observed increases exceed this, suggesting additional biological effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Differential expression analysis of snRNAseq data reveals only two transcripts (Trps1 and Cntnap5a) meeting significance criteria (FC>2, q<0.05) in excitatory neurons, with very high correlation (R\u00b2=0.98-0.99) between mutant and control transcriptomes across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 demonstrate minimal transcriptional changes at the single-cell level despite dramatic loss of DGCs. The high R\u00b2 values and identification of only two differentially expressed genes support the conclusion that remaining cells maintain normal transcriptional programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CA3 pyramidal cells show normal morphology and dendrite lengths, with modest but statistically significant reductions in complex spine density on apical dendrites and simple spine density on basal dendrites, and reduced dendritic coverage with complex spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 describe detailed morphometric analysis of CA3 pyramidal cells using Golgi staining. The findings of normal overall morphology with modest spine density changes are supported by quantitative measurements and appropriate statistical tests (Wilcoxon rank sum tests).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Stereological analysis confirms ~35% reduction in total complex spines in mutant CA3, with significant reductions in basic and big/prototypical spine subtypes but not tall, long, or thin spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 provide unbiased stereological quantification complementing the Golgi analysis. The subtype-specific effects on complex spines are well-documented with appropriate statistical tests. The conclusion (C55) appropriately synthesizes the morphological findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Baseline behavioral testing shows no sex differences and no genotype effects on locomotor activity, rotarod performance, elevated plus maze, or Y-maze performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 establish that mutant mice have normal baseline neurological function and no confounding motor or anxiety deficits. This is critical for interpreting subsequent cognitive testing results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mutant mice show normal performance in Barnes maze probe trial and trace fear conditioning (both training and testing), indicating intact fear learning/memory and ability to discriminate between marked places.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 demonstrate that certain forms of spatial learning and fear conditioning are preserved in mutant mice. The statistical analyses show no significant differences between genotypes in these tasks, supporting the conclusion of intact function in these domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Mutant mice show impaired performance across all phases of Morris water maze testing (pretraining with visible platform, hidden platform training, probe trial, and reversal learning), with longer latencies but similar swimming speeds and quadrant preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C78 document consistent deficits in MWM performance with appropriate statistical analyses. The finding that swimming speed is normal (C70) rules out motor confounds. The preserved quadrant preference (C75) despite longer latencies suggests deficits in precise spatial localization rather than general spatial memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Active place avoidance testing reveals compromised learning in mutant mice during initial training, modestly poorer retention performance, and impaired cognitive flexibility during conflict trials, with variable locomotion across different trial types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C104 present extensive active place avoidance data with detailed statistical analyses. The pattern of deficits is consistent across multiple measures (entrances, latency, maximum avoidance time). However, the variable locomotion differences (C82, C87, C89) complicate interpretation, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "T-maze alternation testing shows mutant mice perform similarly to controls in early trials but significantly worse in the fourth trial, suggesting deficits emerge with increased cognitive demand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 describe a task-difficulty-dependent deficit. The significant genotype \u00d7 trial interaction (C107) supports the interpretation that mutants are impaired when cognitive demands increase. However, the sample size and number of trials are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The Wlsfl/-;Gfap-Cre model exhibits complete corpus callosum loss and ~90% DGC loss (mostly dorsal) with minimal effects on other hippocampal cell types, resulting from reduced Wnt signaling and decreased progenitor proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 provide a comprehensive summary of the model's key features. These conclusions are well-supported by the anatomical, developmental, and transcriptomic data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Behavioral testing reveals modest deficits in complex spatial learning/memory tasks and impaired performance in finding a visible platform in MWM pretraining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 summarize the behavioral phenotype. The finding of deficits in both complex tasks and the simpler visible platform task (C115) suggests broader cognitive impairments than initially hypothesized, though the deficits are consistently modest in magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The nearly complete absence of DGCs in the dorsal hippocampus makes this model well-suited for studying DGC contributions to spatial tasks, given the dorsal hippocampus's role in spatial processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 present a logical argument for the model's utility. The preferential loss of dorsal DGCs combined with established functional specialization along the dorsal-ventral axis supports this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The Wlsfl/-;Gfap-Cre phenotype represents an intermediate point in a continuum of hippocampal defects from Wnt signaling disruption, with LEF1 concentration in the cortical hem consistent with a role in driving DGC progenitor proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 contextualize the findings within the broader Wnt signaling literature. The comparisons to other mutants (C120-C124) are appropriately cited, and the mechanistic interpretation (C125) is consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "DGC transcriptome diversity exists along dorsal/ventral and other dimensions, potentially related to functional specialization, with additional heterogeneity from adult neurogenesis and activity-dependent gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 discuss DGC heterogeneity based on snRNAseq data and literature. The dorsal/ventral transcriptome differences are well-documented in the data, while other sources of heterogeneity (C129-C131) are appropriately cited from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The modest secondary changes in CA3 pyramidal cells suggest partial compensation for mossy fiber loss, potentially by increased entorhinal inputs, making this model useful for studying circuit responses to developmental DGC loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C138 present speculation about compensatory mechanisms (C132) supported by analogies to other systems (C133-C136). While the modest secondary changes are well-documented, the specific mechanism of compensation (entorhinal input increase) is speculative and not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "The behavioral deficits are consistent with DGCs enhancing performance in complex spatial tasks, though impairment in the simpler visible platform task suggests broader cognitive deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 interpret the behavioral findings. The pattern of deficits across tasks supports these conclusions, though the interpretation is complicated by the corpus callosum loss and the variable nature of the deficits across different tasks.",
+    "result_type": "MAJOR"
+  }
+]

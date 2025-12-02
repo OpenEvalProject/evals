@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Single-cell RNA-sequencing of PDGFR\u03b2+ cells from visceral WAT identified three molecularly distinct clusters: Cluster 1A/1B (adipocyte precursor cells, APCs), Cluster 2 (fibro-inflammatory progenitors, FIPs), and Cluster 3 (mesothelial-like cells, MLCs). APCs express adipogenic markers (Pparg, Fabp4, Hsd11b1, Lpl), with Cluster 1B representing committed preadipocytes. FIPs express fibrogenic and inflammatory markers (Fn1, Loxl2, Tgfb2, Ccl2). MLCs express mesothelial markers (Msln, Upk3b, Krt8, Krt14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scRNA-seq analysis (C33) identified distinct clusters with characteristic gene expression patterns validated by multiple approaches including GSEA (C38, C39, C42), qPCR (C56-C58), and imaging (C50, C51). The molecular characterization is comprehensive with appropriate statistical clustering (k-means=4) and independent validation through a second scRNA-seq experiment (Figure 1\u2014figure supplement 2). The interpretation of cluster identities (C40, C43) is well-supported by the gene expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "FACS-based isolation strategy using LY6C and CD9 surface markers successfully separates the three PDGFR\u03b2+ subpopulations: LY6C- CD9- (APCs), LY6C+ (FIPs), and LY6C- CD9+ (MLCs). Gene expression analysis by qPCR confirmed that sorted populations match the molecular signatures identified by scRNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FACS strategy (C54) is validated by qPCR confirmation (C56-C58) showing that sorted populations express the expected cluster-defining genes. The approach provides independent validation of the scRNA-seq findings using a different technical platform. Flow cytometry data (C55) establishes relative frequencies of the populations. This represents a critical methodological advance enabling functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C59",
+      "C62",
+      "C65",
+      "C67"
+    ],
+    "result": "LY6C- CD9- PDGFR\u03b2+ cells (APCs) are highly adipogenic, undergoing spontaneous adipocyte differentiation in vitro upon reaching confluence and forming adipocytes in vivo following transplantation into lipodystrophic mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The adipogenic capacity of APCs is demonstrated through multiple complementary approaches: enriched Pparg expression (C59), spontaneous differentiation in vitro (C62), and in vivo adipogenesis following transplantation (C65). The transplantation experiment provides functional validation in a physiological context. The consistency across in vitro and in vivo assays strengthens the conclusion (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C63",
+      "C64",
+      "C66",
+      "C68"
+    ],
+    "result": "LY6C+ PDGFR\u03b2+ cells (FIPs) lack significant adipogenic capacity, showing minimal differentiation even under strong adipogenic stimulation with hormonal cocktails (dexamethasone, IBMX, insulin, rosiglitazone) and failing to form adipocytes following transplantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of adipogenic capacity in FIPs is demonstrated through multiple assays: minimal spontaneous differentiation (C6), limited response to strong adipogenic cocktails (C63, C64), and absence of adipocyte formation in transplantation experiments (C66). The comparison to APCs under identical conditions strengthens the conclusion. However, the observation that FIPs show some differentiation with hormonal cocktails (C63) suggests they are not completely refractory, which slightly qualifies the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "FIPs display pro-fibrogenic and pro-inflammatory phenotypes, expressing high levels of collagens and extracellular matrix genes, and exhibiting robust inflammatory responses to LPS and TNF\u03b1 treatment. FIPs can activate macrophages through secreted factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fibrogenic phenotype is supported by enriched collagen expression (C104) and TGF\u03b2 responsiveness (C105). The pro-inflammatory phenotype is demonstrated through differential responses to LPS (C108) and TNF\u03b1 (C109), with FIPs showing more robust cytokine induction than APCs. The functional consequence is validated by macrophage activation assays (C110). The multiple complementary assays provide strong support for the dual fibro-inflammatory phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "FIPs exert an anti-adipogenic effect on APCs through secreted factors. Conditioned media from FIPs reduces Pparg expression in APCs and significantly inhibits their adipogenic differentiation, while conditioned media from MLCs has minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anti-adipogenic effect is demonstrated through conditioned media experiments showing reduced Pparg expression (C94) and decreased adipogenic capacity (C95) in APCs exposed to FIP-conditioned media. The specificity is supported by the minimal effect of MLC-conditioned media (C96). This provides a mechanistic explanation for the observation that total PDGFR\u03b2+ cultures show limited differentiation despite containing APCs (C93). The experimental design appropriately controls for non-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The pro-inflammatory phenotype of FIPs is regulated by NR4A nuclear receptors (Nr4a1, Nr4a2, Nr4a3), which are enriched in FIPs and induced by TNF\u03b1. Overexpression of NR4A family members attenuates inflammatory responses, while Nr4a1 knockdown exaggerates responses to TNF\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regulatory role of NR4A receptors is supported by multiple lines of evidence: enriched expression in FIPs (C122, C123), induction by TNF\u03b1 (C125), and functional validation through gain-of-function (C126) and loss-of-function (C127) experiments using three independent shRNAs. The bidirectional manipulation provides strong evidence for a regulatory role. However, the mechanism is described as counter-regulatory (C128), suggesting NR4A acts as a brake rather than a driver of inflammation, which is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The three PDGFR\u03b2+ subpopulations (APCs, FIPs, MLCs) identified in gonadal WAT are also present in other visceral depots (mesenteric, retroperitoneal, peri-ovarian) from both male and female mice, with LY6C- CD9- cells representing functional APCs. However, all PDGFR\u03b2+ cells in subcutaneous depots (inguinal, anterior subcutaneous) express LY6C, indicating depot-specific heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The presence of the three populations in multiple visceral depots is demonstrated by FACS analysis (C87, C90) and functional validation through differentiation assays (C91). The inclusion of both male and female mice (C90, C91) strengthens generalizability. The observation that subcutaneous depots show uniform LY6C expression (C88) is important for defining the scope of the findings. The conclusion about depot-specific heterogeneity (C89) is well-supported by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "High-fat diet (HFD) feeding differentially regulates APC and FIP frequencies and gene expression. The FIP:APC ratio increases as early as one week of HFD, with FIPs showing higher proliferation (BrdU incorporation). HFD induces Pparg expression in APCs but not FIPs, while inflammatory and fibrogenic genes are further induced in FIPs. APCs can adopt some FIP characteristics during HFD feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential regulation is demonstrated through multiple time points (1 week, 4 weeks) and multiple assays: FACS for frequency (C112, C113), BrdU incorporation for proliferation (C114, C115), and qPCR for gene expression (C117-C120). The observation that APCs can activate inflammatory genes during HFD (C120, C121) suggests plasticity and is appropriately qualified. The comprehensive characterization across multiple parameters provides strong support for the physiological regulation of these populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Traditional APC markers (SCA-1, CD34, CD24) are expressed across all three PDGFR\u03b2+ subpopulations, with Ly6a and Cd34 actually lower in APCs than FIPs. CD38 is predominantly expressed in APCs. Selection based on SCA-1/CD34 yields functionally heterogeneous populations and may bias against APCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression analysis by scRNA-seq and qPCR (C70, C71) demonstrates that traditional markers are not specific for APCs. The finding that SCA-1 and CD34 are higher in FIPs than APCs (C71) is counterintuitive but well-documented. CD38 enrichment in APCs (C74) is consistent with recent literature. The conclusion about functional heterogeneity (C75) is a logical inference from the data and has important implications for interpreting previous studies using these markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Comparison with published scRNA-seq data from Burl et al. suggests that ASC1 corresponds to APCs and ASC2 corresponds to FIPs based on molecular profile similarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison is based on molecular profile analysis (C77, C78) shown in Figure 3\u2014figure supplement 1I. This cross-study validation strengthens the findings by showing consistency with independent data. However, the comparison is limited to molecular profiles without functional validation from the Burl et al. study, which is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Zfp423 expression is not confined exclusively to APCs but is present in all PDGFR\u03b2+ subpopulations, with highest levels in APCs. Zfp423GFP-High cells are enriched for committed preadipocyte markers (Cluster 1B genes), indicating that Zfp423GFP reporter mice can be used to enrich for committed preadipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of Zfp423 expression by qPCR (C81) and comparison of Zfp423GFP-High vs -Low cells (C82-C84) provides clear evidence that the reporter enriches for committed preadipocytes despite not being exclusive to APCs. The conclusion (C85, C86) appropriately qualifies the utility of the reporter as an enrichment tool rather than a definitive marker. This clarifies the interpretation of previous studies using this reporter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Despite functional similarities, visceral WAT FIPs and inguinal WAT Aregs (identified by Schwalie et al.) are molecularly distinct. Areg markers (CD142/F3, ABCG1) are not enriched in FIPs, and the broader set of Areg-defining genes shows no selective enrichment in FIPs or APCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison is based on analysis of published Areg markers in the scRNA-seq dataset (C99, C100, C102) and validation by qPCR (C101). The lack of molecular overlap despite functional similarities (both are anti-adipogenic) suggests depot-specific mechanisms. The analysis is thorough, examining both the defining markers and a broader gene set. The conclusion about molecular distinctness (C103) is well-supported and highlights important depot-specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "In vitro, LY6C+ PDGFR\u03b2+ cells (FIPs) proliferate at a greater rate than LY6C- CD9- PDGFR\u03b2+ cells (APCs), while LY6C- CD9+ PDGFR\u03b2+ cells (MLCs) adopt a cobblestone-like morphology characteristic of mesothelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proliferation difference is demonstrated by cell counting over time (C60), and the morphological characterization of MLCs (C61) is consistent with their mesothelial identity. These observations provide additional characterization of the populations' behavior in culture. The data support the distinct properties of the three populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Background knowledge establishing the importance of WAT remodeling, depot-specific differences, the role of PDGFR\u03b2+ cells in adipogenesis, and the developmental relationship between mesothelial cells and stromal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout. They provide essential context for the study but are not novel findings. The citations support the statements about WAT biology, depot differences, and the role of PDGFR\u03b2+ cells in adipogenesis from the authors' previous work.",
+    "result_type": "MINOR"
+  }
+]

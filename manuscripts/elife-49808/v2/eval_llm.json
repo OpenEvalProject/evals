@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Sox9 mRNA and protein expression patterns differ between mouse, ferret, and human developing neocortex. In mouse, Sox9 is restricted to the VZ and expressed in aRG but not BPs. In ferret and human, Sox9 is expressed in VZ, ISVZ, and OSVZ, including in BPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 are well-supported by transcriptome data (FPKM values) from published datasets and immunofluorescence imaging across three species. The data consistently show species-specific differences in Sox9 expression patterns, with mouse showing VZ-restricted expression while ferret and human show broader SVZ expression. The nuclear localization and BP expression in gyrencephalic species are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Sox9-expressing cells in the SVZ of ferret and human neocortex co-express Sox2, identifying them as proliferative BPs. These Sox9+Sox2+ cells comprise approximately half of Sox2+ BPs in the SVZ, and 70-80% of VZ Sox2+ cells also express Sox9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 are supported by double immunofluorescence data with quantification shown in Figure 1. The co-expression patterns are clearly demonstrated, and the quantitative assessments provide specific percentages. The inference that these are proliferative BPs/cNPCs is reasonable based on established Sox2 expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Sox9 and Tbr2 show mutually exclusive expression in germinal zones across mouse, ferret, and human neocortex. This pattern indicates that Sox9+Sox2+ cells in the VZ are aRG, while Sox9-Sox2+ cells are newborn bIPs, and Sox9+Sox2+ cells in the SVZ are proliferative BPs (likely bRG) rather than neurogenic bIPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 are well-supported by double immunofluorescence data (Figure 1G-L) showing mutually exclusive expression patterns. The inferences about cell identity (C20-C22) are reasonable based on established marker expression profiles, though they rely on known literature rather than direct functional validation in this study. The conclusion about Sox9 downregulation during neurogenic commitment (C23) is a logical inference from the Tbr2 exclusion pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Sox9-expressing cells in ferret neocortex are highly proliferative. The vast majority are cycling (PCNA+) and can re-enter the cell cycle after division, indicating that Sox9-expressing BPs in the OSVZ exhibit high proliferative capacity similar to aRG in the VZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by PCNA immunofluorescence and EdU pulse-chase experiments (Figure 2A-C). The cell cycle re-entry data provide direct evidence for proliferative capacity. However, the time intervals between EdU administration and analysis could be better justified based on known cell cycle lengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In human fetal neocortex, essentially all mitotic aRG and the overwhelming majority of mitotic BPs are Sox9-positive. Mitotic BPs in the SVZ are bRG (exhibiting basal processes), and all mitotic bRG express Sox9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by immunofluorescence for Sox9 and phospho-vimentin in human tissue (Figure 2D-G). The identification of bRG by basal process morphology is consistent with established criteria (Fietz et al., 2010). The quantification shows clear Sox9 expression in mitotic cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CRISPR/Cas9-mediated knockout of Sox9 in embryonic ferret neocortex reduces BP proliferation. Sox9 KO results in decreased PCNA+ cells (50% reduction in OSVZ), decreased mitoses, and reduced Sox2+ bRG-like cells, affecting both multipolar BPs and bRG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are supported by immunofluorescence data showing Sox9 protein reduction and decreased proliferation markers (Figure 3, Figure 3-supplements). The CRISPR/Cas9 approach is validated by showing Sox9 protein reduction. Multiple proliferation markers (PCNA, pVim, Sox2) consistently show decreased BP proliferation. Statistical significance is reported for key measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Conditional Sox9 expression in mouse BPs doubles the proportion of cycling cells and increases basal mitoses. The Sox9-induced proliferation increase pertains primarily to bIPs, and BP progeny show increased cell cycle re-entry ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by multiple proliferation assays (Ki67, PH3, EdU pulse-chase) with statistical significance reported (Figure 4). The identification of bIPs as the primary affected population is supported by morphological analysis (lack of radial processes) and Pax6 staining. The cell cycle re-entry data provide evidence for sustained proliferative capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Conditional Sox9 expression in mouse BPs decreases Tbr2 expression, particularly in the SVZ, reducing the proportion of Tbr2+ BPs by half. This suggests Sox9 may alter BP identity and fate, possibly reducing neurogenic commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by Tbr2 immunofluorescence with quantification (Figure 5A-C). The reduction in Tbr2 expression is statistically significant. The inference about altered identity and reduced neurogenic commitment (C49) is reasonable given Tbr2's role as a neurogenic marker, though it remains somewhat speculative without direct fate-mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In ferret neocortex at E40/P1, less than one-fifth of Sox9+ cells in ISVZ/OSVZ are Olig2+, and essentially all Sox9+ cells are Sox2+ BPs. This indicates only a minority of Sox9+ BPs are committed to gliogenesis at these developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by double immunofluorescence for Sox9/Olig2 and Sox9/Sox2 with quantification (Figure 5-supplement 1). The data clearly show limited Olig2 co-expression with Sox9, supporting the conclusion about minority gliogenic commitment. However, this is a snapshot at specific timepoints and may not capture dynamic changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Conditional Sox9 expression in mouse BPs induces premature gliogenesis. While no Olig2 is detected in control E15.5 neocortex, Sox9 expression for two days results in many Olig2+ cells in SVZ/IZ, with 22% of targeted BPs adopting gliogenic identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by Olig2 immunofluorescence (Figure 5D-F). The absence of Olig2 in controls is consistent with known timing of mouse gliogenesis (Miller and Gauthier, 2007). The appearance of Olig2+ cells upon Sox9 expression is striking and well-quantified, demonstrating premature gliogenic fate switch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "High Sox9 levels in mouse BPs induce a dose-dependent switch to gliogenesis by inducing Olig2 mRNA and repressing Tbr2 mRNA. The High RFP population shows highest Sox9 expression, almost complete Tbr2 repression, and specific Olig2 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by qPCR analysis of FACS-sorted cell populations (Figure 5-supplement 2C, Figure 5H-I). The dose-dependent relationship between Sox9 levels and fate markers is clearly demonstrated. The conclusion about Sox9-induced gliogenic switch (C59) is well-supported by the molecular data, though functional validation would strengthen it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Conditional Sox9 expression increases Sox2+ cells in the SVZ at E14.5. Given that 10-15% of RFP+ cells remain Tbr2+ at E15.5, the increased BP population consists of a mix of neurogenic and gliogenic progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by Sox2 immunofluorescence (Figure 5J-L) and reference to earlier Tbr2 data (Figure 5C). The inference about mixed neurogenic/gliogenic populations (C62) is reasonable based on the marker expression patterns, though direct demonstration of both fates in the same lineage would be more definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Transcriptome analysis reveals that conditional Sox9 expression in mouse BPs predominantly upregulates ECM-related genes. Of 870 upregulated genes, 203 are ECM-related, with highest enrichment for ECM organization, production, and degradation pathways. Sox9 also induces gliogenic genes (Olig2, S100b).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by RNA-seq analysis with appropriate bioinformatics (Figure 6, Figure 6-supplement 2). The differential expression analysis uses appropriate statistical cutoffs (q<0.01). GO term and KEGG pathway enrichment analyses consistently identify ECM-related processes. The gliogenic gene induction corroborates immunofluorescence findings. Sample clustering shows clear separation between conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Conditional Sox9 expression in mouse BPs results in cell non-autonomous stimulation of BP proliferation. Significant increases are observed in Ki67+ RFP- cells, PH3+ RFP- mitoses, and Sox2+ RFP- cells in SVZ+IZ, indicating proliferation of non-targeted BPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by quantification of RFP-negative proliferating cells (Figure 7A-F). The use of RFP as a lineage marker allows clear distinction between targeted and non-targeted cells. Multiple proliferation markers consistently show cell non-autonomous effects. Statistical significance is reported. The conclusion about non-autonomous stimulation (C71) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Conditional Sox9 expression in mouse BPs increases neuron production, particularly from non-targeted BPs. The percentage of NeuN+ nuclei in CP increases significantly, with a specific increase in RFP-negative NeuN+ neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by NeuN immunofluorescence at E17.5 (Figure 7G-K). The increase in total NeuN+ neurons and specifically RFP-negative NeuN+ neurons is statistically significant. The conclusion about increased neuron production from non-autonomously stimulated BPs (C74) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Conditional Sox9 expression increases upper-layer neuron production from non-targeted BPs. There is a >2-fold increase in Satb2+ RFP- EdU+ cells, while Tbr1+ RFP+ EdU+ cells are massively decreased, indicating increased upper-layer and decreased deep-layer neuron production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by EdU pulse-chase combined with layer marker immunofluorescence (Figure 7L-O, Figure 7-supplement 1). The opposing effects on upper-layer (Satb2+) and deep-layer (Tbr1+) markers are clearly demonstrated with statistical significance. The conclusion about non-autonomous effects on upper-layer neuron production (C77) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "At E18.5, conditional Sox9 expression shifts RFP+ cell distribution toward upper CP layers and decreases Tbr1+ RFP+ cells. There are significant increases in Satb2+ RFP- cells and total Satb2+ cells, with the increase pertaining mostly to non-electroporated cell progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by layer distribution analysis and marker quantification at E18.5 (Figure 8). The shift in RFP+ cell distribution is statistically significant for specific bins. The changes in Tbr1+ and Satb2+ populations are well-quantified. The conclusion about non-autonomous effects (C82) is consistent with the RFP-negative cell increases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Conditional Sox9 expression increases expression of laminin and collagen mRNAs. Laminin \u03b12 shows ~2-fold increase, Lamb1 and Lamc1 are expressed at levels consistent with laminin 211 formation, and collagen 4\u03b11 shows >3-fold increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by RNA-seq FPKM values (Figure 9A-D). The increases in ECM component mRNAs are consistent with the broader transcriptome analysis showing ECM upregulation. However, the claim about laminin 211 formation (C84) is inferential based on subunit expression levels without direct protein complex validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Laminin 211, but not collagen IV, promotes BP proliferation in organotypic slice cultures. Laminin 211 causes significant increase in Ki67+ cells specifically in SVZ and strikingly increases basal mitoses, while apical mitoses are unaffected by either ECM component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by organotypic slice culture experiments with recombinant ECM proteins (Figure 9E-G). The specific effect of laminin 211 on SVZ proliferation and basal mitoses is clearly demonstrated with statistical significance. This provides direct functional evidence linking ECM components to BP proliferation. Sample size appears adequate (n=3 embryos).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Sox9 is a major inducer of ECM components, and the cell non-autonomous stimulation of BP proliferation by Sox9 is likely mediated by secreted ECM components acting on neighboring BPs in autocrine and paracrine manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 integrate multiple lines of evidence: transcriptome showing ECM upregulation (C90), organotypic culture showing laminin effects on proliferation, and cell non-autonomous proliferation effects. The conclusion about Sox9 as ECM inducer (C90) is well-supported. The mechanism proposed for non-autonomous effects (C91) is reasonable but somewhat speculative, as direct evidence for secretion and paracrine signaling is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Sox9 has three major effects: promoting BP proliferation both cell-autonomously and non-autonomously, increasing upper-layer neuron production, and switching BPs to gliogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are summary statements integrating multiple experimental findings. Each is well-supported by the data: C92 by proliferation assays in targeted and non-targeted cells, C93 by Satb2+ neuron quantification, and C94 by Olig2 induction. These represent the major conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Sox9 shows hallmarks of a transcription factor contributing to neocortical expansion. Upper-layer neuron increase is a hallmark of expansion, Sox9 has established roles in adult neurogenesis and embryonic layer generation, and neocortical expansion involves both neurogenesis and gliogenesis increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 integrate current findings with established literature. C95, C98 cite appropriate references for general principles. C96-C97, C99 cite specific prior studies. The synthesis conclusion (C100) is reasonable given the demonstrated effects on proliferation, ECM, neurogenesis, and gliogenesis, though it remains somewhat speculative regarding evolutionary relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Neocortical expansion is linked to increased BP proliferative capacity and pool size. In non-expanded cortices (mouse), BPs have low proliferative capacity and thin SVZ. In expanded cortices (human), BPs have high proliferative capacity and thick SVZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are background knowledge claims supported by extensive citations. These represent well-established principles in the field and provide appropriate context for the study. The citations are appropriate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "ECM component expression differs between mouse and human neocortex. In mouse, BPs downregulate ECM compared to aRG, and ECM expression is downregulated in SVZ vs VZ. In human, ECM expression is maintained in VZ, ISVZ, and OSVZ, with both aRG and bRG showing characteristic ECM expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are based on appropriate citations of prior work (Arai et al., 2011; Fietz et al., 2012; Florio et al., 2015; Pollen et al., 2015). These provide important background for the study's hypothesis about Sox9 and ECM regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "ECM-integrin signaling promotes BP proliferation. Integrin \u03b1v\u03b23 activation promotes mouse BP proliferation, its inhibition reduces ferret BP pool size, BPs in expanded cortices have increased processes for integrin signaling, and integrin \u03b21 blocking reduces human BP proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 are based on appropriate citations including prior work by the authors (Stenzel et al., 2014; Fietz et al., 2010; Kalebic et al., 2019). These establish the ECM-integrin-proliferation axis that motivates the current study. The general concept (C112) is well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Sox9 was identified as a candidate ECM driver in human SVZ through in silico analysis. Sox9 is known to drive glia-specific gene expression and mediate the neurogenesis-to-gliogenesis switch in developing spinal cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 provide the rationale for studying Sox9. C113 cites the in silico analysis (Fietz et al., 2012) that motivated the study. C114-C115 cite appropriate literature on Sox9's known roles in gliogenesis, providing context for the gliogenic effects observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Neurogenesis and gliogenesis timing differs between species. In mouse, they occur sequentially with gliogenesis after neurogenesis. In gyrencephalic species (human, macaque, ferret), neurogenic and gliogenic progenitors co-exist at later neurogenesis stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are background knowledge supported by appropriate citations. These establish important species differences in developmental timing that contextualize the premature gliogenesis findings in the Sox9 experiments.",
+    "result_type": "MINOR"
+  }
+]

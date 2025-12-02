@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A two-step genetic engineering strategy using bacteriophage integrases was developed to insert cuO and tetO arrays at specific locations in the Sox2 locus of 129/Cast F1 hybrid ESCs. The cuO array was inserted 8 kb centromeric to Sox2 TSS and the tetO array 117 kb telomeric to Sox2 TSS (Sox2-SCR configuration). Allele-specific CRISPR guide RNAs were used to target only the 129 allele. The insertions did not disrupt Sox2 expression or Sox2-SCR contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 describe a methodological approach that is well-documented with PCR genotyping (Figure 1\u2014figure supplement 1), qPCR validation of Sox2 expression (Figure 1\u2014figure supplement 2, ANOVA p=0.215), and 4C data confirming intact Sox2-SCR contacts (Figure 1\u2014figure supplement 3). The experimental design is clearly illustrated and validated through multiple orthogonal approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Live-cell imaging of ESCs expressing CymR-GFP and TetR-tdTom revealed single, bright foci for cuO and tetO labels in close proximity, with many showing two juxtaposed sister chromatids. Localization precision was estimated at 12 nm (X), 10 nm (Y), 36 nm (Z) for cuO/CymR and 16 nm (X), 16 nm (Y), 50 nm (Z) for tetO/TetR, translating to 40-50 nm uncertainty in 3D distance measurements. Distances below 55 nm are dominated by measurement error (>50% error).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 describe imaging methodology and precision estimates based on fluorescent bead measurements (Figure 2\u2014figure supplement 2) and simulations (Figure 2\u2014figure supplement 3). The localization precision estimates are appropriately derived from control experiments and the error propagation analysis is mathematically sound. The acknowledgment of measurement limitations for small distances (<55 nm) demonstrates appropriate rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The Sox2/SCR pair shows a unimodal distance distribution (Hartigan's Dip Test, p=1) with mean separation of 339 nm in ESCs. The SCR-Control pair showed similar distribution to Sox2/SCR, while Control-Control showed significantly increased distances. SCR does not show greater proximity to Sox2 than to a non-specific control region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 present distance measurements with appropriate statistical analysis (Hartigan's Dip Test, Mann-Whitney tests) and are supported by data in Figures 2B-D. The comparison with control pairs is critical for interpretation. However, the conclusion that SCR shows no enhanced proximity to Sox2 (C47) conflicts with prior 3C data showing enriched contacts (C14, C112), which the authors acknowledge but do not fully resolve. The interpretation is reasonable given the data but requires careful consideration of methodological differences between microscopy and 3C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Deletion of ~111 kb between cuO and tetO labels (Sox2-del-SCR), leaving a 14 kb tether, resulted in a significant shift to more proximal distance values compared to Sox2-SCR. This validates the experimental capacity to measure differences in 3D distances and confirms that a direct Sox2/SCR interaction would show shorter distances than observed for Sox2-SCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 describe a critical control experiment that validates the measurement system. The deletion experiment (Figure 2C,D) demonstrates that the imaging approach can detect changes in spatial proximity when the genomic distance is reduced. This strengthens the interpretation that the lack of enhanced proximity in Sox2-SCR reflects biological reality rather than technical limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The Sox2-SCR pair shows no unique spatial characteristics in ESCs compared to control pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is a summary conclusion supported by the distance measurements (C38-C47) and the deletion control (C48-C50). The conclusion is appropriately cautious and acknowledges the limitations of the microscopy approach. However, this conclusion is in tension with 3C data showing enriched Sox2-SCR contacts, which the authors discuss but do not fully reconcile.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Upon differentiation of ESCs to neural precursor cells (NPCs) or mesodermal precursors (MES), all label pairs in the Sox2 locus showed significantly greater proximity compared to ESCs (Figure 3C,D). This suggests the entire Sox2 locus adopts a more compact conformation upon differentiation, regardless of Sox2 or SCR transcriptional status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 describe differentiation experiments with appropriate controls (NPCs maintain Sox2 expression, MES downregulate Sox2). The observation that all label pairs show increased proximity in differentiated cells (Figure 3C,D) with statistical significance (Mann-Whitney, p<0.01) supports the conclusion of locus-wide compaction. The interpretation that compaction is independent of transcriptional status is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Genetic deletion of SCR in ESCs led to loss of Sox2 expression from the cis allele but only a slight shift toward greater proximity compared to differentiation-induced compaction. Hierarchical clustering showed SCR-deleted ESCs were most similar to other ESC lines. Sox2 locus organization is significantly altered with differentiation but largely robust to changes in Sox2 or SCR activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 describe a critical experiment distinguishing between transcription-dependent and differentiation-dependent changes in locus organization. The SCR deletion experiment (Figure 3\u2014figure supplement 2) with qPCR validation (Figure 1\u2014figure supplement 2) and hierarchical clustering analysis provides strong evidence that locus compaction is driven by differentiation rather than SCR inactivation. This is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Live-cell imaging revealed striking cell-to-cell variation in Sox2 locus organization, with label pairs showing prolonged compact or extended conformations and gradual or sharp transitions. Few label pairs explored their full distance range during the ~25 min imaging window, demonstrating slow locus conformation dynamics. Relative step sizes and changes in 3D separation distance were significant (e.g., 180 nm and 79 nm for Sox2-SCR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe dynamic properties of the Sox2 locus based on time-lapse imaging (Figure 4A,B, Video 2). The measurements of step sizes and distance changes (Figure 4\u2014figure supplement 1) are appropriately quantified. The observation of slow dynamics and limited exploration of the full distance range is well-supported by the data and has important implications for understanding enhancer-promoter interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Autocorrelation analysis revealed monotonic decay with increasing lag times, with initial rapid reduction driven by local exploration. At long time lags (>10 mins), the autocorrelation function for control pairs flattened to near zero slope, suggesting conformational memory may be long-lived for some loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 describe autocorrelation analysis (Figure 4D) that quantifies the temporal dynamics of locus conformation. The analysis is appropriate for time-series data and the interpretation of slow decay as reflecting conformational memory is reasonable. However, C74 is somewhat speculative as the flattening of autocorrelation at long lags could reflect other factors. The confidence intervals shown in Figure 4D support the statistical robustness of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Encounters between loci are highly dependent on initial configuration. 73% of Sox2-SCR pairs starting within 200 nm have at least one encounter below 100 nm over 25 min, dropping to 18% for pairs starting >600 nm away. Enhancer proximity and capacity for direct enhancer-promoter contact is likely highly variable across time within cells and between cells in a population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 describe analysis of encounter probability as a function of initial distance (Figure 4E). The quantitative measurements (C76-C77) are clearly derived from the imaging data. The conclusion about variability in enhancer-promoter contact capacity (C78) is a reasonable inference from the slow dynamics and initial-configuration dependence. This has important implications for models of enhancer function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "An MS2 transcriptional reporter was integrated into the endogenous Sox2 allele using CRISPR/Cas9. The Sox2-MS2 reporter showed 35% transcription levels compared to the untargeted allele, potentially due to reduced transcript stability. Western blotting confirmed proper expression of both wild-type SOX2 and SOX2-P2A fusion. Time-lapse microscopy revealed MS2 transcriptional bursts similar to those observed elsewhere, enabling visualization of Sox2 transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 describe the generation and validation of the MS2 reporter system. The approach is well-documented with PCR genotyping (Figure 5\u2014figure supplement 1B), qPCR (Figure 1\u2014figure supplement 2), and Western blotting (Figure 5\u2014figure supplement 1C). The observation of reduced transcription from the MS2 allele (C80) is appropriately noted and attributed to a known phenomenon (C81, citation to Ochiai et al., 2014). The validation that MS2 bursts are similar to those in other systems (C84) strengthens confidence in the reporter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Analysis of 603 bursts across 1,208 cells revealed sporadic Sox2 transcriptional activity. 66.1% of nuclei lacked detectable transcription during the 30 min window, with 29.3% showing activity in <20% of frames and 0.25% showing robust activity in >50% of frames. Substantial variability was observed in burst intensity and duration. As a population, Sox2-MS2 ESCs spent 4% of time with detectable bursts, suggesting short, intermittent transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 describe quantitative analysis of transcriptional bursting based on automated detection (Figure 5B-E, Supplementary files 5-6, Videos 3-4). The statistics are clearly derived from the imaging data and the characterization of bursting as sporadic and intermittent is well-supported. The observation of substantial cell-to-cell variability (Figure 5\u2014figure supplement 1D) is consistent with stochastic transcription models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Bursting frequency was significantly reduced in three control conditions: ESCs lacking the Sox2-MS2 reporter, Sox2-MS2 ESCs with SCR deletion in cis, and Sox2-MS2 ESCs treated with transcriptional inhibitor DRB (Figure 5E). These controls demonstrate the MS2 reporter accurately identifies Sox2 transcriptional events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 describe critical negative controls that validate the MS2 detection system. The three independent controls (no reporter, SCR deletion, DRB treatment) all show significantly reduced bursting frequency (Figure 5E), providing strong evidence that the detected bursts represent bona fide Sox2 transcription. This validation is essential for interpreting the subsequent analysis of transcription-distance relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Analysis of the relationship between Sox2/SCR distance and transcription revealed no association. Some cells showed transcriptional bursting despite prolonged extended Sox2 conformation (Figure 6B, Video 5). All distance bins showed similar transcriptional activity (Figure 6C). No significant differences were found between bursting and non-bursting frames (Mann-Whitney, p=0.68). Aligned burst analysis showed no significant differences from random controls (Figure 6E), suggesting Sox2/SCR proximity and transcription are not separated by a characteristic lag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 present the central finding that Sox2 transcription is not associated with Sox2/SCR proximity. The analysis includes multiple approaches: binning by distance (Figure 6C), comparing bursting vs non-bursting frames (Figure 6D, p=0.68), and aligned burst analysis (Figure 6E). The statistical tests are appropriate and the conclusion is well-supported. However, the interpretation requires careful consideration of temporal resolution and the possibility of transient contacts below the detection limit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Rank-ordering cells by transcriptional activity showed no correlation with mean Sox2/SCR distance for either non-transcribing cells (Spearman's \u03c1 = -0.01) or transcribing cells (Spearman's \u03c1 = 0.06). Transcribing cells showed no significant difference in mean Sox2/SCR separation compared to non-transcribing cells (Mann-Whitney, p=0.15). These data suggest little relation between 3D conformation of Sox2 relative to SCR and transcriptional output, indicating SCR is unlikely to directly activate Sox2 through promoter contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 present additional analyses supporting the lack of association between proximity and transcription. The correlation analysis (Figure 6F) and comparison of transcribing vs non-transcribing cells (Figure 6G) use appropriate statistical tests. The conclusion (C108-C109) is strongly supported by the data but represents a significant departure from the canonical looping model. The authors appropriately acknowledge alternative interpretations in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors observe few unique spatial characteristics for Sox2/SCR in ESCs, with distance distributions and dynamics similar to SCR paired with a non-specific region. This contrasts with 3C-based assays showing enriched Sox2/SCR contacts. The authors note that 3C and microscopy are distinct measures with unique biases and limitations. 3C may capture rare conformations or very proximal conformations (<50 nm) that are below the resolution of microscopy, or may reflect crosslinking over larger distances via macromolecular bridges. The absence of enhanced proximity suggests stable, direct pairing of Sox2 promoter with SCR is unlikely to be the predominant structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C118 present a critical discussion reconciling the microscopy findings with prior 3C data. The authors appropriately acknowledge the apparent discrepancy (C112) and provide thoughtful discussion of methodological differences (C113-C117). The speculation about technical limitations (C114-C117) is reasonable but remains speculative. The conclusion (C118) is appropriately cautious. This discussion demonstrates scientific rigor in acknowledging limitations and alternative interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126"
+    ],
+    "result": "No association was observed between Sox2/SCR proximity and Sox2 transcription in real time, including no correlation with instantaneous distances, no reduction prior to bursts, and no tendency for transcribing cells to show reduced distance. The authors note they cannot exclude the importance of direct contacts if these lead to complex, multi-step activation with stochastic delays, or if contacts lead to long-lived activation through delivery of durable factors. This might explain why acute RAD21 degradation leads to only modest transcriptional changes after 6 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 summarize the main findings and discuss alternative interpretations. The summary (C119-C122) accurately reflects the data. The discussion of alternative mechanisms (C123, C125) is appropriately speculative and acknowledges limitations of the temporal resolution. The connection to RAD21 degradation studies (C126) provides context from the literature. This represents a balanced interpretation of surprising findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The Sox2 locus displays distinct behavior from the Drosophila even-skipped (eve) enhancer reporter system, which shows bimodality in distance measurements and clear correlation between enhancer-reporter proximity and transcription. The authors note considerable differences in 3D distances (339 nm for Sox2/SCR vs 709 nm unpaired/353 nm paired for eve) and speculate that the more extended Drosophila chromosome may necessitate pairing. In other contexts like olfactory receptor choice or Drosophila transvection, regulation occurs over very large distances and transcription may be more closely tied to pairing events. Genomic interactions may differ in importance depending on spatial distances navigated by enhancer-gene pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C135 provide important context by comparing the Sox2 system to other well-studied enhancer-promoter pairs. The comparison to the Drosophila eve system (C127-C131) highlights system-specific differences and the speculation about distance-dependent mechanisms (C130-C131, C135) is reasonable. The discussion of olfactory receptor choice and transvection (C133-C134) provides additional context. This comparative analysis strengthens the interpretation that enhancer mechanisms may be context-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The observations open the possibility that direct Sox2/SCR contacts are dispensable for SCR function. SCR may play a role in nucleating and spreading epigenetic activators and chromatin accessibility. As a super-enhancer, SCR may nucleate large (>300 nm) phase-separated condensates of coactivators and transcription complexes, delivering activation factors over hundreds of nanometers through inclusion of the Sox2 promoter into an activator hub. Such a mechanism would present challenges for achieving precise transcriptional control, particularly SCR selectivity for Sox2. Future studies coupling visualization of the Sox2 locus with molecular components of transcriptional activation are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C142 present speculative mechanisms for how SCR might regulate Sox2 without direct contact. The speculation about epigenetic spreading (C137) and phase-separated condensates (C139-C140) is supported by citations to recent literature (Cho et al., 2018; Sabari et al., 2018) but remains hypothetical for the Sox2 system. The acknowledgment of challenges for this model (C141) demonstrates appropriate scientific caution. The call for future studies (C142) is reasonable but indicates the mechanism remains unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Coexpression of CymR-GFP and TetR-tdTom did not significantly alter Sox2 expression by qPCR (Figure 1\u2014figure supplement 2) or Sox2-SCR contacts by 4C (Figure 1\u2014figure supplement 3). 84% and 62% of assembled tracks for cuO and tetO, respectively, spanned the full time series (>75 frames).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 describe important controls validating that the labeling system does not perturb the biological system. The qPCR and 4C validation (C143-C144) are essential controls shown in supplementary figures. The tracking statistics (C145-C146) demonstrate good data quality, though the lower percentage for tetO (62%) suggests some technical challenges. These controls strengthen confidence in the biological relevance of the findings.",
+    "result_type": "MINOR"
+  }
+]

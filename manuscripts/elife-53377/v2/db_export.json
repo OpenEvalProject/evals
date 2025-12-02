@@ -1,0 +1,1984 @@
+{
+  "submission": {
+    "id": "a97a5658-99d7-4ec0-b6db-6508281baa2d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:16:56.188250Z",
+    "updated_at": "2025-12-02T15:16:56.188250Z"
+  },
+  "content": [
+    {
+      "id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "submission_id": "a97a5658-99d7-4ec0-b6db-6508281baa2d",
+      "content_type": "manuscript",
+      "content_text": "# Tailless/TLX reverts intermediate neural progenitors to stem cells driving tumourigenesis via repression of asense/ASCL1\n\n## Authors\n\n- Anna E Hakes<sup>1</sup> ([ORCID: 0000-0002-8664-1014](https://orcid.org/0000-0002-8664-1014))\n- Andrea H Brand<sup>1</sup> ([ORCID: 0000-0002-2089-6954](https://orcid.org/0000-0002-2089-6954)) \u2020\n\n### Affiliations\n\n1. The Gurdon Institute and Department of Physiology, Development and Neuroscience, University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding the sequence of events leading to cancer relies in large part upon identifying the tumour cell of origin. Glioblastoma is the most malignant brain cancer but the early stages of disease progression remain elusive. Neural lineages have been implicated as cells of origin, as have glia. Interestingly, high levels of the neural stem cell regulator TLX correlate with poor patient prognosis. Here we show that high levels of the Drosophila TLX homologue, Tailless, initiate tumourigenesis by reverting intermediate neural progenitors to a stem cell state. Strikingly, we could block tumour formation completely by re-expressing Asense (homologue of human ASCL1), which we show is a direct target of Tailless. Our results predict that expression of TLX and ASCL1 should be mutually exclusive in glioblastoma, which was verified in single-cell RNA-seq of human glioblastoma samples. Counteracting high TLX is a potential therapeutic strategy for suppressing tumours originating from intermediate progenitor cells.\n\n## Introduction\n\nThe underlying mechanisms of glioblastoma initiation and growth have proved challenging to elucidate. This is due, in part, to the extensive molecular heterogeneity of glioblastoma, both between patients and within individual tumours. As such, there are many potential routes to tumourigenesis and the cell fate changes that contribute to glioblastoma initiation and progression remain to be fully elucidated. Cell fates can be altered in many different ways during tumourigenesis, depending upon the combination of genetic mutations present and the tumour cell of origin.\n\nMouse models have revealed many of the different cell types that can give rise to glioblastoma. In the central nervous system (CNS), tumours have been induced experimentally from differentiated glial cells, glial precursors and neural stem/progenitor cells (Alcantara\u00a0Llaguno et al., 2015; Alcantara Llaguno et al., 2009; Bachoo et al., 2002; Chow et al., 2011; Friedmann-Morvinski et al., 2012; Holland et al., 2000; Lindberg et al., 2009; Marumoto et al., 2009). A recent study revealed that astrocyte-like neural stem cells (NSCs) in the SVZ of glioblastoma patients harbour driver mutations that are found in the patient\u2019s tumour, suggesting that astrocyte-like NSCs are cells of origin of glioblastoma in humans (Lee et al., 2018). Neural lineages become more resistant to glioblastoma transformation as differentiation progresses, supporting stem cells or early progenitor cells as a common source of glioblastoma (Alcantara Llaguno et al., 2019). However, it is difficult to state unequivocally which cell type gives rise to tumours in mouse models of glioblastoma due in part to the lack of specific markers and driver lines. For example, both stem and progenitor cells express Nestin (Chen et al., 2009) and GFAP labels both stem cells and astrocytes (Doetsch et al., 1999). Furthermore, the mechanism through which cells within NSC lineages change identity during tumourigenesis and contribute to tumour aggressiveness remains unclear.\n\nThe Drosophila CNS has proved extremely valuable for understanding the fundamental principles of cancer (Deng, 2019; Villegas, 2019). The availability of an unparalleled Drosophila genetic toolkit and extensive knowledge of neural cell fate transitions has enabled diverse aspects of tumourigenesis to be investigated. One Drosophila model of glioblastoma is based on co-activation of EGFR and PI3K in glial cells (Chen and Read, 2019; Chen et al., 2019; Chen et al., 2018; Read et al., 2009; Read et al., 2013; Witte et al., 2009). This model recapitulates some of the features of glioblastoma, however, co-activation of EGFR and PI3K does not transform NSCs or their progeny. As a result the model does not address the contribution of neural lineages to glioblastoma (Read et al., 2009).\n\nHigh levels of the orphan nuclear receptor TLX (also known as NR2E1, Nuclear Receptor Subfamily 2 Group E Member 1) have been observed in glioblastoma and been shown to correlate with poor patient prognosis (Park et al., 2010; Zou et al., 2012). TLX is expressed in adult NSCs, where it is required for neurogenesis in both the subventricular zone (SVZ) and the subgranular zone (SGZ) (Liu et al., 2008; Liu et al., 2010; Shi et al., 2004; Zhang et al., 2008; Zou et al., 2012). TLX is also expressed in glioblastoma stem cells (Zhu et al., 2014) and upregulation of TLX promotes gliomagenesis in the mouse SVZ (Liu et al., 2010). These results indicate that TLX is an important stem cell regulator both in normal and tumourigenic conditions. However, it is not known how abnormally high TLX levels affect the identity of cells in NSC lineages nor has the cell type vulnerable to TLX overexpression been identified.\n\nIn Drosophila, different NSC lineages exhibit distinct vulnerabilities to tumour-inducing mutations (Hakes and Brand, 2019). The majority of lineages arise from Type I NSCs (Figure 1A) that divide asymmetrically to self-renew and generate ganglion mother cells (GMCs), which then undergo terminal division (Figure 1B; Harding and White, 2018; Ramon-Ca\u00f1ellas et al., 2019). A much smaller number of Type II NSCs, by contrast, generate intermediate neural progenitors (INPs) (Figure 1B\u2019; Bello et al., 2008; Boone and Doe, 2008; Bowman et al., 2008) that are themselves able to self-renew and produce GMCs. These transit amplifying Type II lineages more closely resemble neural lineages in the vertebrate CNS and provide an opportunity to investigate whether conserved mechanisms regulate how NSCs and their progeny respond to tumourigenic insults.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic showing the position of the eight Type II NSCs (red) in each brain lobe. The majority of stem cells in the Drosophila brain are Type I NSCs (green). The optic lobes, which generate the adult\u00a0visual processing centre, are shown in grey. (B\u2013B\u2019) Schematics showing the expression of cell fate markers in (B) Type I and (B\u2019) Type II lineages. NSC: neural stem cell; imm INP: immature intermediate neural progenitor; mat INP: mature intermediate neural progenitor; GMC: ganglion mother cell. (C) RNA FISH shows tll mRNA (green) expression in Type II NSCs (solid outline) but not in their lineages (dotted outline). Type II lineages were identified by pntP1-GAL4\u00a0>\u00a0mCD8-GFP expression in the central brain at wandering third instar larval stage. (D\u2013D\u2019) Immunostaining for Tll (green) shows strong expression in Type II NSCs (Dpn+ (red), solid outline) and weak expression in Dpn- immature INPs (immINPs, arrow heads). Mature INPs (small Dpn+ cells in the lineage) do not express Tll. Type II lineages were identified by pntP1-GAL4\u00a0>\u00a0mCD8-GFP expression in the central brain at wandering third instar larval stage. (E) Amino acid conservation between human TLX and Drosophila Tll. (F) Schematic showing that TLX (green) is expressed in NSCs and intermediate progenitors (IPs) in SVZ of the adult mouse brain (Li et al., 2012; Obernier et al., 2011). (G) Schematic showing tll mRNA (red) and Tll protein (green) expression in Drosophila Type II NSC lineages. Single section confocal images. Scale bars represent 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) Tll-GFP (green) is expressed in Type II NSCs (Dpn+ (red) and Ase- (blue)) (arrowheads and outlined with solid white lines) and downregulated in differentiating lineages (dotted white lines) during larval development. (A) 24, (B) 48, or (C) 72 hours\u00a0(h) after larval hatching (ALH). Seven of eight Type II lineages per brain lobe are shown in each panel. pntP1-GAL4\u00a0>\u00a0myr-RFP expression was used to identify Type II lineages. Single section confocal images. Scale bars represent 15 \u03bcm.\n\nHere we show that the Drosophila TLX homologue, Tailless (Tll), is required to direct the identity of Type II NSCs during development. We found that high levels of Tll are sufficient to initiate tumours from differentiating Type II NSC lineages by directing a cell fate change from INP to NSC. To identify downstream effectors of Tll action, we mapped the genome-wide targets of Tll and identified the proneural gene asense as a direct target of Tll repression, both during development and in tumourigenesis. Strikingly, we were able to rescue Tll tumours completely, and restore normal neurogenesis, by re-expressing asense. Our results demonstrate a reciprocal relationship between Tll and Asense expression and we hypothesized that this relationship might hold true in glioblastoma. We found that expression of TLX and ASCL1 (human counterparts of Tll and Asense) are also mutually exclusive in glioblastoma, suggesting a potentially conserved route to tumourigenesis.\n\n## Results\n\n### Tailless is necessary for Type II NSC identity and lineage progression\n\nTo understand the role Tailless (Tll) plays in the development of Type II NSC lineages, we first assessed its expression pattern. We found that Tll was expressed in Type II NSCs throughout larval development (Figure 1\u2014figure supplement 1A\u2013C). We detected tll mRNA in Type II NSCs but not in their progeny (INPs) (Figure 1C), while Tll protein was present in NSCs and at low levels in newly-born INPs (Figure 1D\u2013D\u2019). Tll shares a high degree of homology with human TLX (Figure 1E; Jackson et al., 1998): their DNA binding domains are 81% identical (94% similarity) and their ligand binding domains are 40% identical (77% similarity). In addition, TLX and Tll bind to the same consensus DNA sequence (Yu et al., 1994) and recruit conserved cofactors, such as Atrophin, via their ligand binding domains (Wang et al., 2006; Zhi et al., 2015). TLX is expressed in the neurogenic regions of the adult mouse brain (Liu et al., 2008; Niu et al., 2011; Shi et al., 2004; Zhang et al., 2008). In the SVZ, TLX is detected in NSCs and their progeny, intermediate progenitor cells (Figure 1F; Li et al., 2012; Obernier et al., 2011), which is very similar to the expression pattern of Tll in Drosophila Type II lineages (Figure 1G).\n\nThe enrichment of Tll expression in Type II NSCs suggested a role for Tll in regulating Type II NSC identity or proliferation. We knocked down Tll in larval NSCs using wor-GAL4 using two independent RNAi constructs that target different regions of the tll coding\u00a0sequence (Figure 2\u2014figure supplement 1A). We scored expression of Deadpan (Dpn), a Hes family bHLH-O transcription factor that is expressed in all NSCs (Bier et al., 1992), and Asense (Ase), a proneural bHLH factor expressed in Type I but not Type II NSCs (Bowman et al., 2008). Expressing either tll RNAi construct resulted in the absence of all Type II NSC in all brains assessed (i.e. all NSCs expressed Dpn and Ase) (Figure 2\u2014figure supplement 1B\u2013C\u2019). We also generated tll null MARCM (Mosaic Analysis with a Repressible Cell Marker) clones (Lee and Luo, 1999). We found that Type II lineages were often labelled in wild type clones (Figure 2\u2014figure supplement 1D\u2013D\u2019), demonstrating that MARCM clones could encompass Type II NSCs. However, we were unable to recover tll null Type II NSC clones, despite mutant clones being visible in other NSC lineages (Figure 2\u2014figure supplement 1E). This suggested that tll null Type II NSCs underwent a cell fate transition that resulted in the loss of Type II markers. In support of this, quantification of the number of Type II lineages in brains with tll null clones revealed a reduction in the number of Type II lineages (Figure 2\u2014figure supplement 1F). Furthermore, the number of absent Type II lineages in brains with tll null clones was comparable to the number of Type II lineages encompassed in MARCM clones in control brains (Figure 2\u2014figure supplement 1F).\n\nNext, we knocked down Tll expression specifically in Type II lineages by driving tll RNAi (tll-miRNA[s], which effectively knocked down Tll protein (Figure 2\u2014figure supplement 1G)) with pntP1-GAL4 (Zhu et al., 2011) in combination with a \u2018FLP-out\u2019 GAL4 cassette to immortalise GAL4 expression (Figure 2\u2014figure supplement 2A) and followed alterations in cell fate. While Dpn expression was unaffected, tll knockdown resulted in derepression of Ase in all Type II NSCs (Figure 2\u2014figure supplement 2B), suggesting a switch in mode of neurogenesis from Type II to Type I.\n\nTo test whether Type II NSCs were transformed into Type I NSCs, we assessed lineage composition and gene expression. Type I NSCs express Dpn and Ase and segregate cortically localised Prospero (Pros) to their daughter cells (GMCs). In GMCs, Ase is expressed and Pros, a pro-differentiation transcription factor, translocates to the nucleus. In contrast, Type II NSCs express Dpn but not Ase or Pros. Type II NSCs give rise to INPs, which express Dpn, Ase and cortical Pros. INPs then generate GMCs that are Ase+ Pros+. In addition, the Ets transcription factor PointedP1 (PntP1) is expressed in Type II NSCs and immature INPs but not in Type I lineages (Zhu et al., 2011). Type II lineages can also be labelled by expression driven by a regulatory fragment of the FezF transcription factor earmuff (erm), which is expressed from INPs onwards (Pfeiffer et al., 2008; Weng et al., 2010) but not in Type I lineages.\n\nStrikingly, upon tll knockdown, no INPs (small\u00a0Dpn+ Ase+) could be found in Type II lineages and instead GMCs (Ase+ Pros+) were positioned adjacent to the NSCs (compare Figure 2A\u2013A\u2019\u2019 to Figure 2B-B\u2019\u2019). In 6 out of 10 tll knockdown brains, at least one Type II NSC expressed Pros that localised in a crescent at the cell cortex, indicating asymmetric segregation of Pros to daughter cells (Figure 2B\u2019\u2019). Asymmetric segregation of Pros is a feature characteristic of Type I NSCs and INPs that is never observed in Type II NSCs (Bayraktar et al., 2010; Bello et al., 2008). Furthermore, expression of Pnt-GFP (Boisclair Lachance et al., 2014) in Type II NSCs (Figure 2\u2014figure supplement 2C\u2013C\u2019) and the Type II lineage marker, erm-CD4-tdTomato (Han et al., 2011), was lost in the absence of tll (Figure 2\u2014figure supplement 2D). We conclude that, in the absence of tll, Type II NSC lineages are transformed into Type I lineages which exhibit lower neurogenic capacity due to the lack of INPs (Figure 2C\u2013C\u2019 and Figure 2\u2014figure supplement 2E\u2013E\u2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013A\u2019\u2019) Control Type II NSCs (Dpn+ (red) and Ase- (green)) generate INPs (arrowheads, Dpn+, Ase+ and Pros- (blue)). Dotted lines outline three Type II lineages. Red asterisks (*) indicate Type II NSCs. n\u00a0=\u00a010 brains, dissected at the end of second larval instar stage. (B\u2013B\u2019\u2019) Upon tll knockdown using pntP1\u00a0>act-GAL4 to drive UAS-tll-miRNA[s], Type II NSCs express Ase and generate GMCs directly (arrowheads, Ase+ and Pros+) and exhibit Pros crescents (red arrowhead). Dotted lines outline three Type II lineages identified by pntP1\u00a0>act-GAL4 driving UAS-GFP. Red asterisks (*) indicate Type II NSCs. n\u00a0=\u00a010 brains, dissected at the end of second larval instar stage. (C\u2013C\u2019) Schematic summarising the tll loss of function (LOF) phenotype in Type II NSCs. Single section confocal images. Scale bars represent 10 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The tll coding sequence (blue regions of tll mRNA) codes for two protein domains (grey): DBD and LBD. tll RNAi lines miRNA[s] (Lin et al., 2009) and shRNA (from VDRC) target different regions of tll mRNA. tlll49 contains a point mutation (x) at the 3\u2019 end of the DBD that creates a stop codon, resulting in a null mutant (Diaz et al., 1996; Pignoni et al., 1990). (B\u2013B\u2019) Knockdown of tll during larval stages (wor-GAL4,UAS-mCD8-GFP;tub-GAL80ts>tll-miRNA[s]) resulted in the absence of all Type II NSCs. Control brains contained eight Type II NSCs (Dpn+ (red) and Ase- (green), white outlines; seven visible in the section shown). In tll-miRNA[s] brains, all NSCs expressed Dpn and Ase. Images in (B') are magnifications of the boxed regions in (B). n\u00a0=\u00a010 brain lobes for Control; n\u00a0=\u00a011 brain lobes for tll-miRNA[s]. (C\u2013C\u2019) Using wor-GAL4,UAS-mCD8-GFP;tub-GAL80ts to drive tll-shRNA also resulted in the loss of all Type II NSCs (Dpn+ and Ase-, white outlines in Control). Images in (C') are magnifications of the boxed regions in (C). n\u00a0=\u00a011 brain lobes for Control and tll-shRNA. (D\u2013D\u2019) Type II NSCs (Dpn+ and Ase-) could be encompassed within control MARCM clones at 72 hr after clone induction. wor-GAL4\u00a0>mCD8-mCherry (white) identified NSC clones and erm-lacZ (\u03b2-Gal (blue)) labelled Type II lineages. (D\u2019) shows magnifications of the boxed regions in (D). Type II NSCs (arrowheads) and their lineages marked by clones are highlighted by dotted white lines. 20 Type II NSC MARCM clones were observed in 24 brain lobes analysed (from 12 brains). (E)\u00a0Central brain Type I tlll49 NSCs could be visualised (arrowheads), but no tlll49 Type II lineage clones could be recovered at 72 hours after clone induction. n = 20 brain lobes (from 10 brains). (F)\u00a0Quantifications of the number of Type II lineages labelled by control MARCM clones per brain lobe (20 clones in 24 brain lobes) compared to the number of Type II lineages absent in tlll49 brain lobes (15 absent lineages in 20 brains). Mann-Whitney U test, P = n.s. (P = 0.849). (G)\u00a0Driving expression of tll-miRNA[s] with insc-GAL4;tub-GAL80ts during larval development effectively knocks down Tll (green) in all NSCs (Dpn+ (red)). In the control panel, Type II NSCs are highlighted by solid circles (6 of 8 are visible in the section shown) and mushroom body (MB) lineages express high levels of Tll (dotted circle) as reported previously (Kurusu et al., 2009). The dotted line in both panels indicates the boundary between the optic lobe (left) and the central brain (right). Note that insc-GAL4 is not expressed in neuroepithelial cells of the optic lobe and so Tll expression is unaffected in these cells (yellow outline highlights the neuroepithelium of the optic lobe inner proliferation centre). Brains dissected at wandering third instar stage.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Schematic showing pntP1\u00a0>act-GAL4, an immortalised Type II NSC driver. (B) Driving UAS-tll-miRNA[s] with pntP1\u00a0>act-GAL4 resulted in the derepression of Ase (green) in all Type II NSCs (Dpn+ (red)) at the end of the first larval instar. n\u00a0=\u00a014 brains for Control; n\u00a0=\u00a011 brains for tll-miRNA[s]). Type II lineages identified by pntP1\u00a0>act-GAL4 driving UAS-GFP are outlined with dotted white lines.\u00a0(C-C') Driving UAS-tll-miRNA[s] with pntP1\u00a0>act-GAL4 resulted in the loss of Pnt-GFP (green) expression from Type II NSCs (Dpn+ (red)). Pnt-GFP was lost from all Type II NSCs in 11 brains assessed with the exception of 4 dorsal-lateral lineages, which maintained weak Pnt-GFP expression (i.e. 172 Type\u00a0II\u00a0NSCs out of 176 total lost Pnt-GFP expression upon tll\u00a0knockdown). n\u00a0=\u00a012 brains for Control; n\u00a0=\u00a011 brains for tll-miRNA[s]. Brains were dissected at the end of second larval instar stage. Dotted lines outline three Type II lineages identified by pntP1\u00a0>act-GAL4 driving UAS-lacZ(nls). White asterisks (*) indicate Type II NSCs.\u00a0(D)\u00a0erm-CD4-tdTomato\u00a0(white) is absent in all\u00a0tll-miRNA[s] Type II lineages at the end of the first larval instar. In control brains,\u00a0erm-CD4-tdTomato\u00a0is expressed in INPs and is a Type II lineage marker.\u00a0n\u00a0=\u00a014\u00a0brains\u00a0for Control;\u00a0n\u00a0=\u00a011\u00a0brains\u00a0for\u00a0tll-miRNA[s]. Type II lineages identified by\u00a0pntP1>act-GAL4 driving UAS-GFP\u00a0are outlined with dotted yellow lines. Images are max projections over\u00a010\u00a0\u00b5m. (E\u2013E\u2019) Schematic summarising the tll loss of function (LOF) phenotype in Type II NSCs, showing that tll LOF lineages switch to Type I fate. Single section confocal images unless stated otherwise. Scale bars represent 15 \u00b5m.\n\n### Tailless tumours can arise from Type II INPs and Type I NSCs\n\nWe have shown that Type II NSCs are lost when Tll is downregulated. As a corollary, we hypothesised that ectopic expression of Tll might result in excess Type II NSCs. To test this, we drove Tll expression in INPs and their progeny with erm-GAL4 (Pfeiffer et al., 2008; Weng et al., 2010) in combination with a \u2018FLP-out\u2019 GAL4 cassette to immortalise GAL4 expression (Ito et al., 1997; Figure 3A and Figure 3\u2014figure supplement 1A\u2013B). In control brain lobes there are only eight Type II NSCs. Tll misexpression in INPs resulted in a dramatic increase in the number of Type II NSCs, from 8 to 109\u00a0\u00b1\u00a012.12 per brain lobe (Figure 3B\u2013B\u2019 and quantified in Figure 3C). We also observed a strong reduction in the number of differentiating progeny in Type II lineages (Figure 3\u2014figure supplement 1C\u2013D\u2019). We tested whether Tll expression in more differentiated neural precursors (GMCs) or post-mitotic neurons would also generate excess NSCs but, interestingly, we found that both cell types were resistant to ectopic Tll expression: we observed neither additional NSCs nor neuronal dedifferentiation (Figure 3D\u2013E\u2019). Therefore, ectopic Tll expression in Type II lineages promotes NSC fate at the expense of self-renewing cells, specifically INPs (Figure 3\u2014figure supplement 1E\u2013E\u2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic showing the expression of erm-GAL4, which begins to be expressed in Type II lineages during the final stages of INP maturation. (B\u2013B\u2019) In Control (zoom), solid white outlines indicate Type II NSCs and erm\u00a0>act-GAL4 is expressed in their lineages (dotted white lines). Tll OE in INPs with erm\u00a0>act-GAL4 resulted in a large expansion of Type II NSCs (Dpn+ (red) and Ase- (green)) in Type II lineages. Arrowheads in Tll OE \u2013 INP (zoom) highlight ectopic Type II NSCs.\u00a0Zoom panels are magnifications of boxed regions in Control and Tll overexpression (OE) \u2013 INP. n\u00a0=\u00a010 brain lobes for Control and Tll. UAS-tll expression was restricted to larval stages with tub-GAL80ts and brains were dissected at wandering third instar larval stage. (C) Quantification of the total number of Type II NSCs (Dpn+ Ase-) in Control or Tll OE erm\u00a0>act-GAL4 brains. Kolmogorov-Smirnov test ***, p<0.001 (p=0.000091). (D\u2013D\u2019) Expressing Tll in GMCs (using GMR71C09-GAL4\u00a0>\u00a0mCD8-GFP (green)) does not result in ectopic NSCs (i.e. no Dpn+ GFP+ cells) nor defects in differentiation, as assessed by Pros (blue) staining. n\u00a0=\u00a010 brains for Control, n\u00a0=\u00a012 brains for Tll OE. Brains were dissected at wandering third instar larval stage. (E\u2013E\u2019) Expressing Tll in neurons using OK371-GAL4\u00a0>\u00a0mCD8-GFP (green) does not result in ectopic NSCs (i.e. no Dpn+ GFP+ cells). n\u00a0=\u00a04 brains for Control and Tll. Brains were dissected at wandering third instar larval stage. Single section confocal images. Scale bars represent 30 \u03bcm in (B, B\u2019, E, E\u2019) and 10 \u00b5m in (D, D\u2019).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) erm-GAL4\u00a0>mCD8-GFP (blue) is not expressed in Type II NSCs (Dpn+ (red), Ase- (green) arrowheads and white outlines) but is expressed in their lineages. Brains were dissected at\u00a0wandering third instar larval stage. (B) Schematic showing erm\u00a0>act-GAL4, an immortalised Type II INP driver, which includes tub-GAL80ts to allow for temporal regulation of GAL4 activity. (C\u2013C\u2019) Expressing high levels of Tll with erm\u00a0>act-GAL4 during larval development resulted in a decrease in differentiating progeny compared to Control, as assessed by Pros staining (white). n\u00a0=\u00a010 brain lobes for Control and Tll OE. Brains dissected at wandering third instar larval stage. (D\u2013D\u2019) Expressing high levels of Tll with erm\u00a0>act-GAL4 during larval development reduced the generation of neurons from INPs, as assessed by staining for Elav (white). n\u00a0=\u00a013 brain lobes for Control; n\u00a0=\u00a012 brain lobes for Tll overexpression (Tll OE). Brains dissected at wandering third instar larval stage. (E\u2013E\u2019) Schematic depicting the effect of Tll OE on Type II lineages. Single section confocal images. Scale bars represent 30 \u03bcm.\n\nINPs closely resemble Type I NSCs, in that they divide in the same manner and express common cell fate markers (Dpn, Ase and cortical Pros; Figure 1B\u2013B\u2019). We tested if Type I NSCs, which are found throughout the CNS, are also vulnerable to high levels of Tll expression. When we expressed Tll throughout the CNS, we observed large tumour-like growths in the adult brain that consisted almost entirely of NSCs (Dpn+ cells) (compare Figure 4A\u2013A\u2019). At larval stages, we found that high levels of Tll resulted in Dpn+ NSCs in both the central brain and ventral nerve cord, indicating that ectopic Tll can induce tumours from Type I NSCs (Figure 4B\u2013B\u2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013A\u2019) Overexpression of Drosophila Tll in neural lineages using wor-GAL4 resulted in NSC tumours (Dpn+ (white)) in all adult brains assessed. Control adult brains did not contain any NSCs. n\u00a0=\u00a07 brains for Control and Tll OE. UAS-tll expression was restricted to late larval stages with tub-GAL80ts and brains were dissected from newly-eclosed adult flies. Images are projections over 15 \u00b5m (Control) or 17 \u00b5m (Tll). (B\u2013B\u2019) Overexpression of Tll during larval development with wor-GAL4 resulted in large tumours consisting of ectopic NSCs (Dpn+ (red) and wor-GAL4\u00a0>mCD8-GFP (green)) in the central brain and VNC of all brains assessed. UAS-tll expression was restricted to larval stages with tub-GAL80ts and brains were dissected at wandering third instar larval stage. (C\u2013C\u2019) NSCs in the VNC are Type I (Dpn+ (red) and Ase+ (green)) in Control brains. Tll-induced tumours (ectopic Dpn+ cells) derived from Type I NSCs in the VNC are negative for Ase. UAS-tll expression was restricted to larval stages with tub-GAL80ts and brains were dissected at wandering third instar larval stage. (D\u2013D\u2019) Tll tumours in the VNC occur at the expense of differentiating progeny (Pros (blue)). UAS-tll expression was restricted to larval stages with tub-GAL80ts and brains were dissected at wandering third instar larval stage. (E) Schematic showing the organisation of Type I NSCs (Ase+ (grey)) and Type II NSCs (Ase- (red)) in Control brains and Tll OE brains. Note that in Control brains the VNC contains only Type I NSCs, whereas Tll OE VNCs contain many ectopic Type II NSCs. (E\u2019) Schematic showing transformation of Type I NSC lineages in the VNC to ectopic Type II NSCs when Tll is expressed at high levels. Single section confocal images unless stated otherwise. Scale bars represent 100 \u00b5m in (A-B') and 30 \u00b5m in (C-D'). n\u00a0=\u00a010 brains for all conditions unless stated otherwise.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) In Control VNCs, all lineages are generated from Type I NSCs (Dpn+ (red)). Type I NSCs do not express PntP1 (white) and do not give rise to INPs (as\u00a0assessed by erm-mCD8-GFP expression\u00a0(green)). n\u00a0=\u00a010 VNCs for Control. Images are a projection over 25 \u00b5m. (A\u2019) When Tll is expressed at high levels in VNC NSCs, a subset of the ectopic NSCs (Dpn+) express PntP1 and generate INPs (erm-mCD8-GFP+). UAS-tll expression was restricted to larval stages with tub-GAL80ts. n\u00a0=\u00a010 VNCs for Tll overexpression (Tll OE). Brains dissected at wandering third instar larval stage. Images are a projection over 58 \u00b5m. Scale bars represent 30 \u00b5m.\n\nExpression of Tll in Type I NSCs (normally Tll-, Ase+) might convert them to a Type II fate (Tll+, Ase-). To determine if tumour initiation occurred via conversion of Type I to Type II NSCs, we assessed the expression of Ase in tumours in the ventral nerve cord, which normally contains only Type I NSCs. Remarkably, Tll-induced tumours consisted almost entirely of NSCs that were negative for Ase, indicating a Type II-like NSC fate (Figure 4C\u2013C\u2019). Consistent with a change in identity to Type II NSC, the tumour NSCs lacked Pros (Figure 4D\u2013D\u2019; Bayraktar et al., 2010). Furthermore, a subset of these transformed Type I NSCs generated INPs (Figure 4\u2014figure supplement 1A\u2013A\u2019), indicating that Tll is sufficient to induce a switch in NSC identity. Interestingly, the absence of Pros from Tll-induced hyperplasia had been reported previously (Kurusu et al., 2009) but had not been linked to a transformation from Type I to Type II NSC fate, or the ectopic appearance of INPs in the ventral nerve cord.\n\nThe appearance of the ectopic Type II-like NSCs (Dpn+ Ase-) was associated with a reduction in GMCs and neurons, as assessed by expression of Pros (Figure 4D\u2013D\u2019). We conclude that expressing Tll in Type I lineages not only directs a change in NSC identity but also blocks differentiation in these newly transformed lineages, resulting in large NSC tumours comprised of Type II NSCs (Figure 4E\u2013E\u2019).\n\n### TLX/Tailless tumour initiation occurs via the reversion of INPs to NSC fate\n\nTo determine the cell of origin of Tll-induced tumours, we used G-TRACE (GAL4 technique for real-time and clonal expression) (Evans et al., 2009) to follow cell fate transformations within the Type II lineage. G-TRACE reports both current and historic GAL4 expression and so can be used to follow cell lineages (Figure 5\u2014figure supplement 1A). erm-GAL4 driving G-TRACE labels INPs, but not Type II NSCs, in control brains (Figure 5A). Expressing high levels of Tll in INPs resulted in supernumerary Type II NSCs, which had previously expressed erm-GAL4 but lacked current expression (Figure 5A\u2019 and quantified in Figure 5B). This would be expected if the cells had originally been INPs (erm-GAL4 expressing) and were then transformed into Type II NSCs (erm-GAL4 negative). We conclude that Tll expression is sufficient to induce a cell fate change from INP to NSC and our results implicate INP reversion to NSCs as the mechanism of tumour initiation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013A\u2019\u2019) G-TRACE reveals current (RFP (red)) and historic (EGFP (green)) erm-GAL4 expression (top panels). Dpn (red) and Ase (green) were used to assess the reversion of INPs to Type II NSCs (bottom panels). (A) In Control Type II lineages, NSCs (Dpn+ Ase-, solid outline) are negative for both components of G-TRACE, whereas lineages show transition from RFP to EGFP (dotted outline). Overexpression (OE) of (A\u2019) Tll or (A\u2019\u2019) human TLX in INPs resulted in ectopic Type II NSCs (Dpn+ Ase-, white outlines) that express the EGFP component of the G-TRACE only (solid outline). Dpn+ Ase- NSCs with dotted white outline either express neither G-TRACE component (as in Control) or express both RFP and GFP (indicating current expression of erm-GAL4). n\u00a0=\u00a08 brain lobes for Control and n\u00a0=\u00a010 for Tll and human TLX. Brains were dissected at wandering third instar stage. (B) Quantification of Type II NSCs expressing G-TRACE memory only (i.e. Dpn+ Ase- and RFP- EGFP+). Kolmogorov-Smirnov test ***, p<0.001 (p=0.000103). n\u00a0=\u00a07 brain lobes for Control; n\u00a0=\u00a010 brain lobes for Tll overexpression (OE). Brains were dissected at wandering third instar larval\u00a0stage. (C\u2013C\u2019) Schematic showing the expression of G-TRACE with the INP-specific erm-GAL4 in Control brains or with Tll/TLX OE. (D) A model for how Tll/TLX generates ectopic NSCs and, consequently, tumours from INPs. Single section confocal images. Scale bars represent 15 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic showing the G-TRACE system. When erm-GAL4 is used to drive the G-TRACE cassette, GAL4 drives the expression of (1) UAS-RFP (real-time expression) and (2) UAS-FLP, which excises a transcriptional stop sequence to allow a Ubi promoter to drive EGFP expression (historic expression). The cell colour gradient shows the transition from current (red) to historic (green) GAL4 expression: RFP-only (real-time), to RFP and EGFP co-expression (lineage), to EGFP-only (historic).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013A\u2019) Expressing Human TLX in neurons with OK371-GAL4\u00a0>\u00a0mCD8-GFP (green) does not result in ectopic NSCs (Dpn+ (red)). n\u00a0=\u00a08 brains for Control and Human TLX overexpression. Brains were dissected at wandering third instar larval stage. Single section confocal images. Scale bars represent 30 \u00b5m.\n\nTo investigate whether human TLX could also initiate tumours from INPs via similar regulatory pathways, we expressed TLX in combination with G-TRACE in INPs. As for Tll, we observed ectopic Type II NSCs with historic erm-GAL4 expression only (Figure 5A\u2019\u2019). Our results indicate that both Tll and TLX can initiate tumourigenesis from neural lineages by reverting INPs to NSCs (Figure 5C). Interestingly, neither TLX nor Tll could revert post-mitotic neurons to NSCs, demonstrating that neurons are resistant to tumour initiation (see Figure 3D and Figure 5\u2014figure supplement 2). We conclude that INPs represent a tumour-susceptible cell type and are the tumour cells of origin for TLX- and Tll-induced tumours in Drosophila (Figure 5D).\n\n### Ase restores progenitor identity and enforces differentiation to block Tailless tumours\n\nWe have shown that Tll is both necessary and sufficient to repress Ase expression during development and in tumourigenesis. To investigate if Tll represses ase directly, we identified the genome-wide Tll binding sites in vivo using Targeted DamID (TaDa) (Southall et al., 2013). We profiled Tll binding in Type II NSCs (16 per brain; approximately 700 NSCs per replicate) (Figure 6\u2014figure supplement 1A\u2013B) and identified Tll-binding peaks at 2495 protein-coding genes (see \u2018Tll TaDa binding targets.xlsx\u2019 for full list of Tll targets), including ase (Figure 6\u2014figure supplement 1C). We conclude that Tll binds ase directly and represses its expression to promote Type II NSC fate. However, the loss of Ase alone is not sufficient to induce Type II fate in Type I NSCs (Bowman et al., 2008), indicating that Tll acts on additional target genes to mediate this cell fate change and tumour initiation. One potential candidate is Pros, which we found was also bound by Tll in Type II NSCs (Figure 6\u2014figure supplement 1D). Pros is known to negatively regulate NSC proliferation (Cabernard and Doe, 2009) and is also repressed when Tll is expressed at high levels (Figure 3\u2014figure supplement 1C\u2013C\u2019 and Figure 4D\u2013D\u2019; Kurusu et al., 2009).\n\nAs ectopic expression of Tll results in repression of ase and tumour formation, we investigated whether reinstating ase expression might be sufficient to block Tll-induced tumourigenesis. We expressed Ase together with Tll and found, remarkably, that tumourigenesis was completely abolished in all brains analysed (n\u00a0=\u00a010) (Figure 6A\u2013A\u2019\u2019). Strikingly, not only did Ase prevent the production of ectopic NSCs, it also re-established normal neurogenesis in Type I NSC lineages: the production of GMCs and neurons was restored, as revealed by expression of Pros and Elav (Figure 6A\u2013A\u2019\u2019 and B\u2013B\u2019\u2019). However, re-introducing Ase into Tll tumours did not repress the expression of Tll (Figure 6\u2014figure supplement 2A\u2013A\u2019\u2019) nor does the ectopic expression of Ase turn off Tll in Type II NSCs (Figure 6\u2014figure supplement 2B\u2013B\u2019). Therefore, by expressing Ase we were able to reinstate the normal neurogenic programme and prevent tumour initiation by Tll (Figure 6C\u2013C\u2019\u2019).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013A\u2019\u2019) Expressing Ase in combination with Tll during larval development using wor-GAL4 prevents tumour formation (ectopic Dpn+ cells (red)) and restores neuronal differentiation (Elav (green)) in all brains assessed. n\u00a0=\u00a010 brains for all conditions. Brains were dissected at wandering third instar stage. (B\u2013B\u2019\u2019) Ase (green) rescues Tll tumours by promoting differentiation (Pros (red)). n\u00a0=\u00a09 brains for Control; n\u00a0=\u00a010 brains for Tll overexpression (Tll OE) and Ase rescue. Brains were dissected at wandering third instar\u00a0larval stage. (C\u2013C\u2019\u2019) Schematic depicting Type NSC I lineages (C) during development, (C\u2019) with Tll-induced tumours and (C\u2019\u2019) with Ase expression in Tll tumours. Single section confocal images. Scale bars represent 30 \u00b5m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Schematic showing the recombinase-dependent GAL4 tool used to perform Targeted DamID in Type II NSCs. stg14 drives the expression of KD recombinase in Type II NSCs (and a small number of Type I NSCs), which excises a transcriptional stop (txnSTOP) resulting in the dpnEE promoter driving GAL4. ase-GAL80 was included to prevent GAL4 activity in Type I lineages. This system resulted in the expression of TaDa constructs (under the control of UAS) in Type II NSCs specifically. (B) stg14-patterned dpn-GAL4 (stg \u2229 dpn-GAL4) driving UAS-mCD8-GFP (green) with ase-GAL80 is expressed only in Type II NSCs and their lineages. The image is a projection over 75 \u03bcm in z. Brains dissected 50 hours ALH\u00a0at\u00a025\u00a0\u00b0C. Scale bar represents 50 \u03bcm. (C) Tll binding (Tll-Dam/Dam) across the ase locus in Type II NSCs. (D) Tll binding (Tll-Dam/Dam) across the pros locus in Type II NSCs. Tll binding in (C) and (D) is represented as scores in GATC fragments on an untransformed scale (y-axis).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A\u2013A\u2019\u2019) Tll (red) is not expressed in (A) Control VNCs. (A\u2019) Tll is expressed at high levels in Tll OE tumours. (A\u2019\u2019) Despite rescuing the formation of Tll-induced tumours, expressing Ase does not repress the expression of Tll. wor-GAL4,UAS-mCD8-GFP;tub-GAL80ts (green) was used to express transgenes under the control of UAS during larval stages. n\u00a0=\u00a010 brains for all conditions. Brains were dissected at wandering third instar stage. Single section confocal images. Scale bars represent 30 \u00b5m. (B\u2013B\u2019) Tll (green) is expressed in (B) Control Type II NSCs (Dpn+ (red) filled arrowhead) and at weaker levels in immature INPs (Dpn-, arrowhead outline) but not in other cells in the Type II lineages. (B\u2019) Tll is still expressed in Ase Overexpression (Ase OE) Type II NSCs (arrowhead). Dotted outlines highlight three Type II lineages identified by pntP1\u00a0>act-GAL4 driving UAS-GFP. n\u00a0=\u00a011 brain lobes for Control and Ase OE. Brains were dissected at wandering third instar larval\u00a0stage. Single section confocal images. Scale bars represent 15 \u00b5m.\n\n### TLX and ASCL1 appear to be mutually exclusive in human glioblastoma\n\nWe showed that, in Drosophila, Tll represses Ase both during development and in tumourigenesis. In other words, high levels of Tll correspond to low levels of Ase.\n\nIn human glioblastoma, high TLX expression is correlated with poor patient prognosis (Park et al., 2010; Zou et al., 2012). Intriguingly, ASCL1 levels also vary between human glioblastoma samples and low levels are correlated with shorter survival time (Park et al., 2017). Increasing ASCL1 levels was shown to promote terminal differentiation and attenuate tumorigenicity. Based on our results, we would predict that glioblastoma cells with high levels of TLX would exhibit low ASCL1 expression.\n\nTo determine if TLX and ASCL1 expression are mutually exclusive in glioblastoma, we analysed a previously published single-cell RNA sequencing (scRNA seq) data set that profiled glioblastoma samples from 28 patients, including both adult and pediatric tumours (Neftel et al., 2019). Our analysis identified 7,835 single cells in this data set and, following cluster annotation based on previously known markers (Neftel et al., 2019), we found that expression of both TLX and ASCL1 was restricted to the malignant glioblastoma cells (6,766 cells) (Figure 7A\u2013A\u2019). However, when we compared TLX and ASCL1 expression within the malignant population, we found\u00a0very\u00a0few cells that expressed both transcripts (Figure 7B), suggesting that TLX and ASCL1 are indeed mutually exclusive in malignant glioblastoma cells.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig7-v2.jpg)\n\n**Figure 7.:** (A) Uniform Manifold Approximation and Projection (UMAP) plot of 7,835 single cells coloured by TLX expression (red). Clusters were annotated based on previously known markers. TLX expression is only detected in the malignant cells. (A\u2019) UMAP plot coloured by ASCL1 expression (green). ASCL1 expression is only detected in the malignant cells. (B) UMAP plot coloured by expression of both TLX (red) and ASCL1 (green), which appear mutually exclusive. Yellow indicates cells that express high levels of both TLX and ASCL1. Single cell RNA sequencing data and cluster markers obtained from Neftel et al. (2019).\n\n## Discussion\n\nOur results revealed the mechanism through which high levels of the orphan nuclear receptor Tll initiate tumours in the Drosophila CNS (Figure 8A). We showed that Tll is expressed in Type II NSCs during larval development, where it is required for Type II NSC identity and subsequent lineage progression. In the absence of Tll, the proneural transcription\u00a0factor Ase is derepressed in Type II NSCs. As a consequence, transit amplifying INPs are no longer generated and the resulting NSC lineages have a lower neurogenic potential.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/53377/elife-53377-fig8-v2.jpg)\n\n**Figure 8.:** (A) Schematics depicting the promotion of Type II NSC fate by Tll (red) in development and tumourigenesis. Tll must be down regulated in Type II lineages to allow differentiation. Ase (green) expression is activated during differentiation. If Tll is high in INPs, or in Type I lineages, Type II NSC fate is maintained, or induced, and tumours form. (B) In the adult mouse SVZ, TLX expression is high in NSCs and lower in intermediate progenitors (IPs) (Li et al., 2012; Obernier et al., 2011), whereas ASCL1 is high in IPs and low in NSCs (Kim et al., 2011; Parras et al., 2004). Based on our results, we predict that high levels of TLX associated with aggressive glioblastoma revert IPs through the repression of ASCL1 to promote the generation of glioblastoma stem cells.\n\nA recent study examined the role of Tll in embryonic brain and showed that tll mutant embryos lack Type II NSCs (Curt et al., 2019). However, it was shown many years ago that tll mutant embryos fail to generate many NCSs, not just Type II NSCs, due to lack of l\u2019sc expression that precedes NSC delamination (Younossi-Hartenstein et al., 1997). As a result, tll null mutants are not viable and the effect of tll loss of function on Type II NSCs specifically has not been addressed.\n\nIn mice, TLX is expressed in NSCs during embryonic development and in adulthood (Li et al., 2012; Li et al., 2008; Liu et al., 2008; Shi et al., 2004). Embryonic NSCs display defects in proliferation in the absence of TLX (Li et al., 2008) and the loss of TLX in adults results in the loss of transit-amplifying intermediates and reduction in neurogenesis (Li et al., 2012; Liu et al., 2008; Niu et al., 2011; Shi et al., 2004). While these effects were previously attributed to changes in the NSC cell cycle, our results suggest a cell fate change may occur due to the loss of TLX.\n\nHigh levels of TLX in human\u00a0glioblastoma are correlated with tumour\u00a0aggressiveness (Park et al., 2010; Zou et al., 2012). High level expression of TLX results in glioblastoma-like lesions derived from SVZ NSC lineages in mouse models of glioblastoma (Liu et al., 2010) indicating that TLX can also promote glioblastoma development. However, it was not known how high TLX leads to glioblastoma, nor had the cellular origin of TLX-induced tumours been identified. TLX and its Drosophila homologue, Tll, are highly conserved proteins (Yu et al., 1994) and we found that both genes are able to revert INPs to NSC fate as a first step in tumour initiation. Ectopic expression of Tll was also sufficient to induce the expansion of NSCs throughout the Drosophila CNS, demonstrating the widespread vulnerability of NSC and progenitor populations to ectopic Tll expression.\n\nWe found that the ectopic NSCs resulting from high Tll expression are negative for Ase. We showed that Tll binds to the ase locus, suggesting that Tll directly represses ase. The absence of Ase is a hallmark of Type II NSCs. Therefore, ectopic Tll promotes a cell fate change from INP/Type I NSC to Type II NSC and thereby initiates tumourigenesis.\n\nThe capacity of Tll to induce NSC expansion had been reported previously as part of a study showing that Tll regulates the proliferation of larval mushroom body NSCs and GMCs (Kurusu et al., 2009). The authors showed that overexpressing Tll resulted in ectopic NSCs, but they did not identify the origin of these tumours and argued against a role for Tll in Type II NSC fate (Kurusu et al., 2009). Tll-induced tumourigenesis could be blocked by ectopic expression of Pros (Kurusu et al., 2009). However, ectopic Pros results in the loss of NSCs even in wild type brains (Cabernard and Doe, 2009). In contrast, Type I NSC lineages appear normal after Ase misexpression in wild type brains (Bowman et al., 2008). Furthermore, it has been reported that high levels of the human homologue of Pros, PROX1, exacerbate glioblastoma (Elsir et al., 2010; Goudarzi et al., 2018; Roodakker et al., 2016; Xu et al., 2017), arguing against PROX1 expression as a therapeutic strategy.\n\nWe found that the tumourigenic capacity of Drosophila Tll and human TLX was highly conserved (Figure 8B). Human TLX could also induce ectopic Type II NSCs from INPs through the repression of Ase. Analysis of scRNA seq from glioblastoma revealed that TLX and ASCL1 expression is mutually exclusive. It is notable that the origin of human glioblastoma has been mapped to the SVZ (Lee et al., 2018). While TLX positive NSCs have been identified in both the SVZ and dentate gyrus, high levels of TLX giving rise to glioblastoma has only been shown robustly in the SVZ (Liu et al., 2010). Furthermore, a recent study demonstrated that low expression levels of ASCL1 correlate with glioblastoma malignancy (Park et al., 2017). Ectopic expression of ASCL1 in glioblastoma\u00a0stem\u00a0cells was sufficient to promote neuronal differentiation. Based on our results in Drosophila, we predict that introducing ASCL1 would override the repressive effect of TLX, induce neuronal differentiation and reduce tumour growth, thereby providing an effective treatment.\n\nOur results indicate that INPs are the tumour initiating cells in Type II NSC lineages expressing high levels of the orphan nuclear receptor Tll and potentially implicate intermediate progenitors as one of the cells of origin in TLX+ glioblastomas, an aggressive and lethal brain tumour. We found that Ase is a direct target of Tll and that Ase expression not only blocks Tll-induced tumourigenesis, but also reinstates a normal neural differentiation programme.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w1118;+;+</td>\n      <td>BDSC</td>\n      <td>RRID:BSDC_3605</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Ay-GAL4, UAS-GFP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_4411</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Ay-GAL4, UAS-lacZ(nls)</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_4410</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>btd-GAL4</td>\n      <td>(Estella et al., 2003)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>erm-GAL4</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_40731</td>\n      <td>GMR9D11-GAL4</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>GMR71C09-GAL4</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_39575</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>insc-GAL4</td>\n      <td>(Luo et al., 1994)</td>\n      <td></td>\n      <td>GAL4MZ1407</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>pntP114-94-GAL4</td>\n      <td>(Zhu et al., 2011)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>wor-GAL4</td>\n      <td>(Albertson et al., 2004)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>OK371-GAL4</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_26160</td>\n      <td>VGlutOK371</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>tub-GAL80ts</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_7018</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-ase</td>\n      <td>(Brand et al., 1993)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-FLP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_4539</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-FLP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_4540</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-lacZ</td>\n      <td>(Brand and Perrimon, 1993)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-LT3-NDam</td>\n      <td>(Southall et al., 2013)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-LT3-NDam-tll</td>\n      <td>this study</td>\n      <td></td>\n      <td>Tll-Dam fusion for Targeted DamID</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-mCD8-GFP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_5130</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-mCD8-GFP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_5137</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-mCD8-mCherry</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_27391</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-myr-mRFP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_7118</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-myr-mRFP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_7119</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-tll</td>\n      <td>Kyoto DGRC</td>\n      <td>109680</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-tll-miRNA[s]</td>\n      <td>(Lin et al., 2009)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-tll-shRNA</td>\n      <td>VDRC</td>\n      <td>330031</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-TLX</td>\n      <td>this study</td>\n      <td></td>\n      <td>Human TLX under the control of UAS</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>G-TRACE</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_28280</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>G-TRACE</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_28281</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>erm-CD4-tdTomato</td>\n      <td>(Han et al., 2011)</td>\n      <td></td>\n      <td>R9D11-CD4-tdTomato</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>erm-mCD8-GFP</td>\n      <td>(Zhu et al., 2011)</td>\n      <td></td>\n      <td>R9D11-mCD8-GFP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>erm-lacZ</td>\n      <td>(Haenfler et al., 2012)</td>\n      <td></td>\n      <td>R9D11-lacZ</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Tll-GFP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_30874</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Pnt-GFP</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_42680</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>FRT82B, tub-GAL80</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_5135</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>FRT82B</td>\n      <td>BDSC</td>\n      <td>RRID:BDSC_2035</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>FRT82B,tlll49/TM6B</td>\n      <td>(Pignoni et al., 1990)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>dpn&gt;KDRTs-stop-KDRTs&gt;GAL4</td>\n      <td>(Yang et al., 2016)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>ase-GAL80</td>\n      <td>(Neum\u00fcller et al., 2011)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>stg14-kd</td>\n      <td>(Yang et al., 2016)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-Ase (polyclonal)</td>\n      <td>(Brand et al., 1993) Gift from the Jan Lab</td>\n      <td></td>\n      <td>IF 1:2,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>chicken anti-\u03b2-Galactosidase (polyclonal)</td>\n      <td>abcam</td>\n      <td>ab9361</td>\n      <td>IF 1:1,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-\u03b2-Galactosidase (polyclonal)</td>\n      <td>Cappel (now MP Biomedicals)</td>\n      <td>55976</td>\n      <td>IF 1:10,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>guinea pig anti-Dpn (polyclonal)</td>\n      <td>(Caygill and Brand, 2017)</td>\n      <td></td>\n      <td>IF 1:5,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rat anti-Elav (monoclonal)</td>\n      <td>DSHB</td>\n      <td>7E8A10 conc.</td>\n      <td>IF 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>chicken anti-GFP (polyclonal)</td>\n      <td>abcam</td>\n      <td>ab13970</td>\n      <td>IF 1:2,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-PntP1 (polyclonal)</td>\n      <td>A gift from Jim Skeath</td>\n      <td></td>\n      <td>IF 1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-Pros (monoclonal)</td>\n      <td>DSHB</td>\n      <td>MR1A</td>\n      <td>IF 1:30</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-Tll (polyclonal)</td>\n      <td>(Kosman et al., 1998) Asian Distribution Center for Segmentation Antibodies</td>\n      <td></td>\n      <td>IF 1:300</td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly stocks and husbandry\n\nDrosophila melanogaster were reared in cages at 25 \u00b0C. Embryos were collected on yeasted apple juice plates. For experiments involving GAL80ts embryos were kept at 18 \u00b0C until hatching. After hatching, larvae were transferred to a yeasted food plate and reared to the desired stage before dissection. Please see Supplementary file 1 for experimental genotypes and the\u00a0temperature at which larvae were raised for each experiment.\n\nThe following GAL4 lines were used: Ay-GAL4, UAS-GFP (BL4411), Ay-GAL4, UAS-lacZ(nls) (BL4410), btd-GAL4 (Estella et al., 2003),\u00a0erm-GAL4 (Pfeiffer et al., 2008; Weng et al., 2010) (R9D11-GAL4, BL40731), GMR71C09-GAL4 (Li et al., 2014) (BL39575), insc-GAL4 (GAL4MZ1407) (Luo et al., 1994), pntP114-94-GAL4 (Zhu et al., 2011), wor-GAL4 (Albertson et al., 2004), OK371-GAL4 (VGlutOK371-GAL4) (BL26160). tub-GAL80ts (BL7018) was used to restrict GAL4 activity to larval stages as indicated.\n\nThe following UAS-transgenes were used: UAS-ase (Brand et al., 1993), UAS-FLP (BL4539 and BL4540), UAS-lacZ (Brand and Perrimon, 1993), UAS-LT3-NDam (Southall et al., 2013) and UAS-LT3-NDam-tll (this study), UAS-mCD8-GFP (BL5130 and BL5137), UAS-mCD8-mCherry (BL27391), UAS-myr-mRFP (BL7118\u00a0and\u00a0BL7119), UAS-tll (Kurusu et al., 2009) (Kyoto Stock Center 109680), UAS-tll-miRNA[s] (Lin et al., 2009), UAS-tll-shRNA (VDRC 330031), UAS-TLX (this study), G-TRACE (BL28280 and BL28281). w1118 was used as a reference stock.\n\nThe following reporter lines were used: erm-CD4-tdTomato (R9D11-CD4-tdTomato) (Han et al., 2011), erm-mCD8-GFP (R9D11-mCD8-GFP) (Zhu et al., 2011), erm-lacZ (R9D11-lacZ) (Haenfler et al., 2012) and Tll-GFP (Venken et al., 2009) (BL30874). Tll-GFP is a protein fusion under the control of a 20 kb insert containing the tll coding sequence and surrounding regulatory sequences. Importantly, this construct can rescue the lethality of homozygous tlll49 mutants (data not shown). Pnt-GFP (BL42680) is a protein fusion under the control of a 90.7 kb insert containing the pnt coding sequence and surrounding regulatory sequences. This construct can rescue the lethality of pnt amorphic heteroallelic combinations (Boisclair Lachance et al., 2014).\n\nFor MARCM clone analysis, virgin female flies carrying hsFLP122; wor-GAL4, UAS-mCD8-mCherry/(CyOact-GFP); FRT82B, tub-GAL80 were crossed to male flies carrying w; erm-lacZ; FRT82B or w; erm-lacZ; FRT82B, tlll49/TM6B. tlll49 is strong tll point mutation that is homozygous embryonic lethal (Pignoni et al., 1990). Embryos were collected on apple juice plates at 25\u00b0C and newly hatched larvae were transferred to yeasted food plates and raised at 25\u00b0C. Clones were induced by a heat shock in a water bath (5 min 37\u00b0C, 5 min rest at room temperature, 1 hr 37\u00b0C) at 24 hr ALH and larvae were dissected 72 hr later.\n\n### Immunostaining\n\nBrains were dissected in PBS, fixed in 4% formaldehyde/PBS for 20 min at room temperature and washed with PBS with 0.3% TritonX-100 (PBTx). Samples were blocked with 10% normal goat serum before overnight incubation with the following antisera: rabbit anti-Ase 1:2,000 (Brand et al., 1993) (a gift from the Jan lab), chicken anti-\u03b2-Galactosidase 1:1,000 (abcam ab9361), rabbit anti-\u03b2-Galactosidase 1:10,000 (Cappel), guinea pig anti-Dpn 1:5,000 (Caygill and Brand, 2017), rat anti-Elav 1:100 (DSHB, 7E8A10 conc.), chicken anti-GFP 1:2,000 (abcam ab13970), rabbit anti-PntP1 (1:500) (a gift from the Jim Skeath), mouse anti-Pros 1:30 (DSHB, MR1A), rabbit anti-Tll 1:300 (Kosman et al., 1998). Secondary antibodies conjugated to Alexa-405, Alexa-488, Alexa-546, Alexa-568, Alexa-633 all 1:500 (Life Technologies) or DyLight-405 1:200 (Jackson Laboratories) were used. Samples were mounted in Vectashield (Vector Laboratories) for imaging.\n\n### tll RNA FISH\n\nA set of 38 Stellaris FISH probes was designed against the tll coding sequence and labeled with Quasar 570. Third instar larval brains were fixed in 4% formaldehyde/PBS for 45 min at room temperature and then permeabilized in 70% ethanol/PBS for 6 hr at 4 \u00b0C. Brains were washed with Wash Buffer (10% formamide, 2xSSC) for 5 min before being incubated with probes (125 nM) in hybridisation buffer (100 mg/mL dextran sulfate, 10% formamide, 2xSSC) overnight at 45 \u00b0C. Brains were washed with Wash Buffer, stained with DAPI and mounted in Vectashield (Vector Laboratories) for imaging.\n\n### Image acquisition and processing\n\nFluorescent images were acquired using a Leica SP8 confocal microscope. Images were analysed using Fiji (Schindelin et al., 2012), which was also used to adjust brightness and contrast in images. Adobe Illustrator was used to compile figures.\n\n### Quantification and statistical analysis\n\nGraphPad Prism version 7.00 for Mac OS X (www.graphpad.com) was used for statistical analysis. No data were excluded.\n\n### Sequence alignment of human TLX and Drosophila Tll\n\nSequence alignment performed using EMBOSS Needle (https://www.ebi.ac.uk/Tools/psa/emboss_needle/) and UniProt alignment (https://www.uniprot.org/align/) tools.\n\n### Generation of UAS-TLX\n\nThe coding sequence of human TLX (Jackson et al., 1998) was amplified from cDNA prepared from H9 ESCs (a kind gift from T. Otani) using the primers fwd: 5\u2019-AGATGAATTCATGAGCAAGCCAGCCGG-3\u2019 and rev: 5\u2019-ATGACTCGAGTTAGATATCACTGGATTTGTACATATCTGAAAGCAGTC-3\u2019. The amplified product was cloned (using restriction enzymes EcoR1 and XhoI) into pUAST-attB and then integrated into attP40 by standard methods.\n\n### Generation of UAS-LT3-NDam-tll\n\nThe coding sequence of tll was amplified from an embryonic cDNA library using the primers fwd: 5\u2019-cagaaactcatctctgaagaggatctgcgagatctaATGCAGTCGTCGGAGG-3\u2019 and rev: 5\u2019 acagaagtaaggttccttcacaaagatcctctagaTCAGATCTTGCGCTGACT 3\u2019. The amplified product was cloned via Gibson assembly into pUASTattB-LT3-NDam (Southall et al., 2013) cut with BglII and XbaI and then integrated into attP40 by standard methods.\n\n### Targeted DamID\n\nWe used a recombinase-dependent system to restrict GAL4 expression to Type II lineages (Yang et al., 2016). dpn\u00a0>KDRTs-stop-KDRTs>GAL4; ase-GAL80/CyOact-GFP; + virgins were crossed to w; UAS-LT3-NDam-tll; stg14-kd or w; UAS-LT3-NDam; stg14-kd males at 25 \u00b0C. Larvae were transferred to yeasted food plates within an hour of hatching and dissected 50 hr later. Analysis was performed using the damidseq_pipeline as described previously (Marshall et al., 2016). dpn\u00a0>KDRTs-stop-KDRTs>GAL4 and stg14-kd flies were provided by T. Lee (Yang et al., 2016) and ase-GAL80 flies by J. Knoblich (Neum\u00fcller et al., 2011). DamID analysis was performed as described previously (Marshall and Brand, 2015) and the Integrative Genomics Viewer (IGV, version 2.3.68) was used to visualise binding tracks aligned to release 6 of the Drosophila genome.\n\n### RNA single cell sequencing analysis\n\nSingle cell sequencing analysis was performed using Seurat version 3. Data was obtained from Neftel et al. (2019), which was made available through the Broad Institute Single-Cell Portal (https://portals.broadinstitute.org/ single_cell/study/SCP393/single-cell-rna-seq-of-adult-and-pediatric-glioblastoma) and the Gene Expression Omnibus (GEO: GSE131928).\n",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "aa7f646c-41bd-4b56-a585-7950b2eb52a5",
+      "submission_id": "a97a5658-99d7-4ec0-b6db-6508281baa2d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Claude Desplan, New York University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53377.sa1](https://doi.org/10.7554/eLife.53377.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper demonstrates very elegantly that the transcription factor Tailless that is expressed in type II neuroblasts is required to repress Asense (the ortholog of ASCL1), and that its loss leads to the switch of identity from type II to type I neuroblasts. Interestingly, the paper shows that tumorgenesis resulting from overexpression of Tll is due to the reversion of intermediate neural progenitors to dividing neuroblasts, and that this is due to the Ase down-regulation. But the most exciting point of this paper is the demonstration that these brain tumors can be avoided by restoring Ase expression, which might be an important tool to eventually address why human glioblastoma have a poor prognosis when ASCL1 is also affected.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Tailless/TLX reverts intermediate neural progenitors to stem cells driving tumourigenesis via repression of asense/ASCL1\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Utpal Banerjee as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Yan Song (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn short, the three reviewers are very positive about the paper and its relevance to human cancer.\n\nOne of the reviewers mentioned that the fact that overexpression of Tll causes brain tumors was known and so was its role in Type II/Type I neuroblasts, in particular with a recent paper from the Thor lab in eLife. However, all three reviewers are conscious of the mechanistic insights that your paper provides, and, more importantly, the connection to human brain tumors and the different prognosis depending on the levels of ASCL1/Ase.\n\nHowever, before proceeding with publication, the reviewers would like you to add two points, which you should be able to achieve in the coming two months:\n\n\u2013 One is to present the DamID data in more detail, in particular genes other than Ase that might play a role in the process.\n\n\u2013 The reviewers would also like you to explore the link between Tll and the Notch pathway since some of the phenotypes are quite similar. It should be fairly simple in your hands to look at interactions between these pathways.\n\nReviewer #1\n\nThe orphan nuclear receptor TLX is an important neural stem cell regulator in both normal and tumorigenic conditions. TLX is expressed in neural stem cells (NSCs) during mouse embryonic development and in adulthood and is required for neurogenesis. High levels of TLX have been detected in glioblastoma and correlate with poor patient prognosis. However, the cellular origin and the molecular mechanisms underlying high TLX-induced brain tumor formation remain unclear. In the study, the authors used Drosophila larval brain neural stem cell lineages as model system to tackle these important questions. The authors showed that fly TLX homolog, Tailless (Tll), is specifically expressed in type II NSCs. Downregulation of Tll led to upregulation of Asense (Ase; fly homolog of ASCL1) and a NSC identity switch from type II to type I. The authors further showed that high levels of Tll induced tumorigenesis by reverting intermediate neural progenitors (INPs) to a NSC state and identified INPs as the cellular origin of Tll-induced tumors. More importantly, the authors identified Ase as a key direct target of Tll. Ase is downregulated in high Tll-induced brain tumors and restoring Ase expression prevented Tll-induced tumorigenesis and reinstated normal neurogenesis. Finally, the authors suggested that such mutually exclusive relationship between Tll and Ase holds true in human glioblastoma samples via analysis of single-cell RNA-seq.\n\nOverall, this is a very interesting study of potential therapeutic values. Most experiments are well-controlled and well performed. However, before recommending publication the following points need be addressed:\n\n1) Through DamID-seq, the authors identified Ase as the major target of Tll in NSC lineages. Indeed, high Tll-induce tumor could be completely blocked by Ase co-expression. However, since Ase inactivation itself does not lead to tumor formation (Bowman et al., 2008), downregulation of Ase seems to be a permissive but not sufficient step in Tll-induced tumorigenesis. Therefore, other self-renewal or differentiation gene(s) is very likely to be important target gene of Tll in NSC lineages. Can the authors re-examine their DamID-seq results and find out such important target gene(s)?\n\n2) Figure 4 showed that Tll can induced tumor from type I NSCs. However, downregulation of Ase alone might lead to a type I to type II NSC identity switch, but not tumorigenesis (Bowman et al., 2008). What is the cellular origin and molecular mechanisms underlying Tll-induced tumorigenesis in type I NSC lineages?\n\n3) Whether Ase, in turn, inhibits Tll expression in INPs or type I NSCs?\n\nReviewer #2\n\nThey identify a role for tll in the developing Drosophila CNS, in Type II neuroblasts (NBs). They identify ase as a key target of tll, and find that simultaneous overexpression of ase can suppress the tll overexpression effects. They furthermore use DamID to identify ase as a putative direct target of Tll. These are very interesting findings. However, three major points temper my enthusiasm for this study.\n\nMajor points:\n\n1) The role of tll in Drosophila NB biology is not novel. tll was previously shown to be important for brain NB generation (Younossi-Hartenstein et al., 1997) and MBNB proliferation (Kurusu et al., 2009). Even more importantly, tll was recently show to be expressed in Type II NBs in the embryo and necessary for their generation/development, and tll could act with erm to convert Type I NBs in the embryonic nerve cord to Type II NBs, as well as act in the developing wing disc to generate ectopic Type II NBs (Curt et al., 2019). Against this backdrop, the current study does take major strides in our understanding of Type II NB biology.\n\n2) In the same vein, there is a large body of work on the NB->INP->GMC->Neuron transition in Type II NBs. This has identified key \"gating\" roles for Notch-Dpn-E(spl), as well as for Brm, Brat, Klu, PntP1, Btd, Erm, Mediator-Complex, Barc and Trx. However, the possible connection between tll and these other regulators is not addressed (at least 24 publications). In particular, the connection between Notch pathway and tll is certainly worthy of more scrutiny, as Notch signalling, similar to tll, acts in Type II to repress Ase and Erm expression, hence preventing NBs from prematurely becoming INPs. Moreover, there is growing connection between tll/Tlx and Notch: tll mutants show loss of expression of the proneural gene l'sc (Younossi-Hartenstein et al., 1997), which is negatively regulated by Notch; tll and Notch signalling intersect in the developing Drosophila embryonic optic placodes (Mishra et al., 2018, PLoS Genet.); the C. elegans tll orthologue nhr-67 regulates both lin-12 (Notch) and lag-2 (Delta) during uterus development (Vergehese et al., 2011, Dev. Biol.); mouse tll orthologue Nr2E1 (aka Tlx) negatively regulates the canonical Notch target gene Hes1 (Luque-Molina et al., 2019, Stem Cell Reports). Hence, a key issue to address would be the intersection between tll and Notch, and given that NHRs are able to act both as transcriptional repressors and activators, two simple models emerge: (A) Tll acts with NotchICD-Su(H)-Mam on E(spl), and the obligate E(spl) repressors then act to directly repress ase, (B) alternatively, Tll acts combinatorially with E(spl) to directly repress ase. A straightforward way to test these two models would be to analyse expression of E(spl)-reporters in Tll LOF and GOF. In addition, it would be important to analyse Tll/tll expression in Notch pathway GOF and LOF.\n\n3) DamID: Does Tll-Dam bind to other genes in the NB-INP-GMC-neuron pathway e.g., pnt, erm, E(spl), btd, klu, pros, dpn? Importantly, the evidence for Tll binding to the ase gene, but possibly also to dpn and E(spl), has bearing on the model for tll action. In addition, the DamID results are not described in great detail.\n\nReviewer #3\n\nThe Hakes and Brand manuscript contains detailed insightful information on the function of Drosophila Tailless. It covers both the role of Tll in normal neurogenesis and the tumourigenic effect of Tll overexpression.\n\nThe authors show that tll is required to maintain the Type II state: strikingly, upon tll loss, Type II neural stem cells are transformed into Type I, hence significantly compromising neurogenesis due to the lack of intermediate neural progenitors. They also show tll levels are critical: TLL over expression in the larval brain causes tumours derived from both Type II and Type I lineages. In the former, tumours develop as a consequence of intermediate progenitors reverting to a neural stem cell-like state. In the later, ectopic Tll results in the loss of Ase and in some cases even in the generation of intermediate neural progenitors, both suggestive of a certain degree of transdetermination from Type I towards Type II neural stem cells.\n\nThe manuscript goes on to demonstrate that Asense is a direct target of Tll repression during normal development as well as in the tumours that develop upon Tll upregulation to the extent that forcing Ase expression suppresses Tll-induced tumours\n\nOverexpression of the human homologue TLX, which shares a remarkable level of protein sequence identity, cofactors, and function with Drosophila Tll, has been linked to the development of malignant astrocytomas. Interestingly, the authors find that TLX and ASCL1 (human Ase) are mutually exclusive in cells from human glioblastomas, which indeed is closely reminiscent of the results reported in the manuscript regarding fly neurogenesis and brain tumour development.\n\nThe reported studies take advantage of state-of-the-art techniques to perform sophisticated cell type-specific experimental manipulations to create the mutant conditions, and to trace the cell lineages of interest. The results are very well documented, presented, and discussed. Altogether, this is a high quality manuscript that I am happy to recommend for publication.\n",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "83ed00e5-5f95-4732-9b49-26449e996121",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C1",
+      "claim": "High levels of TLX correlate with poor patient prognosis in glioblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, high levels of the neural stem cell regulator TLX correlate with poor patient prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Park et al., 2010 and Zou et al., 2012 in the introduction section",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "c4a24190-4f29-41a5-a570-be05220ebd23",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C2",
+      "claim": "Tailless initiates tumourigenesis by reverting intermediate neural progenitors to a stem cell state.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that high levels of the Drosophila TLX homologue, Tailless, initiate tumourigenesis by reverting intermediate neural progenitors to a stem cell state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 3-5 demonstrating INP to NSC conversion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "4d5bc05b-5021-4664-a3ba-5f3270346788",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C3",
+      "claim": "Asense is a direct target of Tailless.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we could block tumour formation completely by re-expressing Asense (homologue of human ASCL1), which we show is a direct target of Tailless.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TaDa data showing Tll binding to ase locus (Figure 6\u2014figure supplement 1C)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "798e2a35-f2cb-42bc-a14f-baa4c1a7e5c5",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C4",
+      "claim": "Expression of TLX and ASCL1 are mutually exclusive in glioblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results predict that expression of TLX and ASCL1 should be mutually exclusive in glioblastoma, which was verified in single-cell RNA-seq of human glioblastoma samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single-cell RNA-seq analysis shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "e0780d1c-8080-4e39-921d-c813f01d2783",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C5",
+      "claim": "Counteracting high TLX is a potential therapeutic strategy for suppressing tumours originating from intermediate progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Counteracting high TLX is a potential therapeutic strategy for suppressing tumours originating from intermediate progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from rescue experiments showing Ase can block Tll-induced tumours",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "6af7208a-8513-44f2-adf8-fa503b4def78",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C6",
+      "claim": "Tll mRNA is expressed in Type II NSCs but not in their progeny (INPs).",
+      "claim_type": "EXPLICIT",
+      "source": "We detected tll mRNA in Type II NSCs but not in their progeny (INPs) (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA FISH data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "032cd1f4-52b3-43a0-868e-c91639d750f5",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C7",
+      "claim": "Tll protein is present in NSCs and at low levels in newly-born INPs.",
+      "claim_type": "EXPLICIT",
+      "source": "while Tll protein was present in NSCs and at low levels in newly-born INPs (Figure 1D\u2013D').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 1D-D'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "90ebe293-dbbf-43b7-92dd-7365784e8ca3",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C8",
+      "claim": "The DNA binding domains of Tll and TLX are 81% identical (94% similarity).",
+      "claim_type": "EXPLICIT",
+      "source": "their DNA binding domains are 81% identical (94% similarity)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "7f353186-3794-409e-8a6e-2957d66f5f30",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C9",
+      "claim": "The ligand binding domains of Tll and TLX are 40% identical (77% similarity).",
+      "claim_type": "EXPLICIT",
+      "source": "their ligand binding domains are 40% identical (77% similarity)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "4760209e-2743-4af8-8413-48259a39a1a3",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C10",
+      "claim": "TLX and Tll bind to the same consensus DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, TLX and Tll bind to the same consensus DNA sequence (Yu et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yu et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "ab25b6de-bbbf-47a5-8c33-80b036cfc830",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C11",
+      "claim": "TLX and Tll recruit conserved cofactors, such as Atrophin, via their ligand binding domains.",
+      "claim_type": "EXPLICIT",
+      "source": "and recruit conserved cofactors, such as Atrophin, via their ligand binding domains (Wang et al., 2006; Zhi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2006 and Zhi et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "846d22b8-9289-4ab1-98ba-3fe6ac945828",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C12",
+      "claim": "TLX is expressed in NSCs and intermediate progenitor cells in the SVZ of the adult mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SVZ, TLX is detected in NSCs and their progeny, intermediate progenitor cells (Figure 1F; Li et al., 2012; Obernier et al., 2011)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Li et al., 2012 and Obernier et al., 2011, and schematic in Figure 1F",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "98eb067a-dbb5-46fd-bce7-b0c92aa70d7e",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C13",
+      "claim": "Expressing tll RNAi resulted in the absence of all Type II NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing either tll RNAi construct resulted in the absence of all Type II NSC in all brains assessed (i.e. all NSCs expressed Dpn and Ase) (Figure 2\u2014figure supplement 1B\u2013C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1B-C'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "5a3aab79-b10d-4c86-98b5-3f50528f2ae8",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C14",
+      "claim": "tll null Type II NSCs underwent a cell fate transition that resulted in the loss of Type II markers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were unable to recover tll null Type II NSC clones, despite mutant clones being visible in other NSC lineages (Figure 2\u2014figure supplement 1E). This suggested that tll null Type II NSCs underwent a cell fate transition that resulted in the loss of Type II markers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from MARCM clone analysis shown in Figure 2\u2014figure supplement 1D-F",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "a8968d7d-ee2e-4b85-998e-0bdd52d1d8c8",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C15",
+      "claim": "tll knockdown resulted in derepression of Ase in all Type II NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "While Dpn expression was unaffected, tll knockdown resulted in derepression of Ase in all Type II NSCs (Figure 2\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "226acb9f-4eca-4a46-8003-8759d024daef",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C16",
+      "claim": "Upon tll knockdown, no INPs could be found in Type II lineages and instead GMCs were positioned adjacent to the NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, upon tll knockdown, no INPs (small Dpn+ Ase+) could be found in Type II lineages and instead GMCs (Ase+ Pros+) were positioned adjacent to the NSCs (compare Figure 2A\u2013A'' to Figure 2B-B'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A-B''",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "30dd1033-ee5e-422d-9e15-b3ccd2004923",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C17",
+      "claim": "In 6 out of 10 tll knockdown brains, at least one Type II NSC expressed Pros that localised in a crescent at the cell cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In 6 out of 10 tll knockdown brains, at least one Type II NSC expressed Pros that localised in a crescent at the cell cortex, indicating asymmetric segregation of Pros to daughter cells (Figure 2B'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B''",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "c2287732-3280-4745-993b-99d1dae56dd5",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C18",
+      "claim": "Asymmetric segregation of Pros is a feature characteristic of Type I NSCs and INPs that is never observed in Type II NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric segregation of Pros is a feature characteristic of Type I NSCs and INPs that is never observed in Type II NSCs (Bayraktar et al., 2010; Bello et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bayraktar et al., 2010 and Bello et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "6ef32d2e-3727-4ff4-b89d-1903e1eafa53",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C19",
+      "claim": "Expression of Pnt-GFP in Type II NSCs was lost in the absence of tll.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, expression of Pnt-GFP (Boisclair Lachance et al., 2014) in Type II NSCs (Figure 2\u2014figure supplement 2C\u2013C') and the Type II lineage marker, erm-CD4-tdTomato (Han et al., 2011), was lost in the absence of tll (Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 2C-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "d38878f1-adcf-4d83-8a7c-a3ff571c39ae",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C20",
+      "claim": "In the absence of tll, Type II NSC lineages are transformed into Type I lineages which exhibit lower neurogenic capacity due to the lack of INPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, in the absence of tll, Type II NSC lineages are transformed into Type I lineages which exhibit lower neurogenic capacity due to the lack of INPs (Figure 2C\u2013C' and Figure 2\u2014figure supplement 2E\u2013E').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2 and Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "ba08f9b4-1dd3-4bf1-a755-eefe4aad950b",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C21",
+      "claim": "Tll misexpression in INPs resulted in a dramatic increase in the number of Type II NSCs, from 8 to 109 \u00b1 12.12 per brain lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Tll misexpression in INPs resulted in a dramatic increase in the number of Type II NSCs, from 8 to 109 \u00b1 12.12 per brain lobe (Figure 3B\u2013B' and quantified in Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "294da5f6-13ca-419f-96e3-d638fcac927e",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C22",
+      "claim": "A strong reduction in the number of differentiating progeny in Type II lineages was observed upon Tll overexpression in INPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a strong reduction in the number of differentiating progeny in Type II lineages (Figure 3\u2014figure supplement 1C\u2013D').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1C-D'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "7cd4ca1f-1bdc-4e1b-bef8-cdedae9839af",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C23",
+      "claim": "Ectopic Tll expression in GMCs or post-mitotic neurons did not generate excess NSCs nor neuronal dedifferentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether Tll expression in more differentiated neural precursors (GMCs) or post-mitotic neurons would also generate excess NSCs but, interestingly, we found that both cell types were resistant to ectopic Tll expression: we observed neither additional NSCs nor neuronal dedifferentiation (Figure 3D\u2013E').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D-E'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "c1b2dd19-9708-4a49-94bb-3c1bef54f972",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C24",
+      "claim": "Ectopic Tll expression in Type II lineages promotes NSC fate at the expense of self-renewing cells, specifically INPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, ectopic Tll expression in Type II lineages promotes NSC fate at the expense of self-renewing cells, specifically INPs (Figure 3\u2014figure supplement 1E\u2013E').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from experimental data shown in Figure 3 and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "11a8e7c5-3017-4447-876e-4a23f9d649d9",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C25",
+      "claim": "Expressing Tll throughout the CNS resulted in large tumour-like growths in the adult brain that consisted almost entirely of NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "When we expressed Tll throughout the CNS, we observed large tumour-like growths in the adult brain that consisted almost entirely of NSCs (Dpn+ cells) (compare Figure 4A\u2013A').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A-A'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "ca1c38fe-6f7a-4f78-bf9c-f0ce1ac08bbb",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C26",
+      "claim": "High levels of Tll resulted in Dpn+ NSCs in both the central brain and ventral nerve cord at larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "At larval stages, we found that high levels of Tll resulted in Dpn+ NSCs in both the central brain and ventral nerve cord, indicating that ectopic Tll can induce tumours from Type I NSCs (Figure 4B\u2013B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B-B'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "7cb6b6b6-8739-43df-b756-645ab2d0ac5d",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C27",
+      "claim": "Tll-induced tumours in the ventral nerve cord consisted almost entirely of NSCs that were negative for Ase, indicating a Type II-like NSC fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, Tll-induced tumours consisted almost entirely of NSCs that were negative for Ase, indicating a Type II-like NSC fate (Figure 4C\u2013C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C-C'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "af392630-88c6-4a37-8e6f-c5839c31a189",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C28",
+      "claim": "The tumour NSCs lacked Pros, consistent with a change in identity to Type II NSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a change in identity to Type II NSC, the tumour NSCs lacked Pros (Figure 4D\u2013D'; Bayraktar et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D-D' and citation to Bayraktar et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "140294fa-538b-4c73-b9f1-8cf304ef54c2",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C29",
+      "claim": "A subset of transformed Type I NSCs generated INPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a subset of these transformed Type I NSCs generated INPs (Figure 4\u2014figure supplement 1A\u2013A'), indicating that Tll is sufficient to induce a switch in NSC identity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1A-A'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "fcacd61d-64ba-4c8c-8b9a-27ef18e07600",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C30",
+      "claim": "The appearance of ectopic Type II-like NSCs was associated with a reduction in GMCs and neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of the ectopic Type II-like NSCs (Dpn+ Ase-) was associated with a reduction in GMCs and neurons, as assessed by expression of Pros (Figure 4D\u2013D').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D-D'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "94c31dd5-e24e-4ead-8d5c-c5b246aea5fc",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C31",
+      "claim": "Expressing Tll in Type I lineages directs a change in NSC identity and blocks differentiation, resulting in large NSC tumours comprised of Type II NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that expressing Tll in Type I lineages not only directs a change in NSC identity but also blocks differentiation in these newly transformed lineages, resulting in large NSC tumours comprised of Type II NSCs (Figure 4E\u2013E').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "f8660656-6363-402a-aa84-b45a2b35ff10",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C32",
+      "claim": "Expressing high levels of Tll in INPs resulted in supernumerary Type II NSCs, which had previously expressed erm-GAL4 but lacked current expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing high levels of Tll in INPs resulted in supernumerary Type II NSCs, which had previously expressed erm-GAL4 but lacked current expression (Figure 5A' and quantified in Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by G-TRACE data shown in Figure 5A' and 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "f5368000-08b6-472a-9de3-21f5ae73501d",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C33",
+      "claim": "Tll expression is sufficient to induce a cell fate change from INP to NSC.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Tll expression is sufficient to induce a cell fate change from INP to NSC and our results implicate INP reversion to NSCs as the mechanism of tumour initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from G-TRACE data shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "af6ae2dc-f4ba-4e20-9dbd-7bb0850bbc17",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C34",
+      "claim": "Human TLX can initiate tumours from INPs via similar regulatory pathways as Drosophila Tll.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether human TLX could also initiate tumours from INPs via similar regulatory pathways, we expressed TLX in combination with G-TRACE in INPs. As for Tll, we observed ectopic Type II NSCs with historic erm-GAL4 expression only (Figure 5A'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A''",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "1f19e92e-d238-4c4c-9449-b8a616e7e38f",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C35",
+      "claim": "Both Tll and TLX can initiate tumourigenesis from neural lineages by reverting INPs to NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that both Tll and TLX can initiate tumourigenesis from neural lineages by reverting INPs to NSCs (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "854eaa02-4323-4093-96d7-f9efe3bdef02",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C36",
+      "claim": "Neither TLX nor Tll could revert post-mitotic neurons to NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, neither TLX nor Tll could revert post-mitotic neurons to NSCs, demonstrating that neurons are resistant to tumour initiation (see Figure 3D and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D and Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "15ad2603-430a-4e1a-9581-021856b7b4e9",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C37",
+      "claim": "INPs represent a tumour-susceptible cell type and are the tumour cells of origin for TLX- and Tll-induced tumours in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that INPs represent a tumour-susceptible cell type and are the tumour cells of origin for TLX- and Tll-induced tumours in Drosophila (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "95b6d766-b11b-4fc3-b27a-caf56ae66c6e",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C38",
+      "claim": "Tll binds to the ase locus in Type II NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We profiled Tll binding in Type II NSCs (16 per brain; approximately 700 NSCs per replicate) (Figure 6\u2014figure supplement 1A\u2013B) and identified Tll-binding peaks at 2495 protein-coding genes (see 'Tll TaDa binding targets.xlsx' for full list of Tll targets), including ase (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TaDa data shown in Figure 6\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "5446b7b8-e74f-4b65-bb6e-13c34f987ea4",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C39",
+      "claim": "Tll binds ase directly and represses its expression to promote Type II NSC fate.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Tll binds ase directly and represses its expression to promote Type II NSC fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from TaDa data and expression analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "caeff22c-b53f-4540-aac8-49ed71281645",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C40",
+      "claim": "The loss of Ase alone is not sufficient to induce Type II fate in Type I NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the loss of Ase alone is not sufficient to induce Type II fate in Type I NSCs (Bowman et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bowman et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "08220974-9ef5-40cc-bd6c-09fc643abf26",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C41",
+      "claim": "Tll acts on additional target genes beyond ase to mediate cell fate change and tumour initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that Tll acts on additional target genes to mediate this cell fate change and tumour initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the fact that Ase loss alone is not sufficient",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "76b4ac57-7510-4730-9f8f-0f52c826e5a9",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C42",
+      "claim": "Pros is bound by Tll in Type II NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential candidate is Pros, which we found was also bound by Tll in Type II NSCs (Figure 6\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TaDa data shown in Figure 6\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "8349eecc-a7e4-435a-9a8a-975585a61a00",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C43",
+      "claim": "Pros is known to negatively regulate NSC proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pros is known to negatively regulate NSC proliferation (Cabernard and Doe, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cabernard and Doe, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "0da0e091-9cba-49dd-b612-4e695249ee34",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C44",
+      "claim": "Pros is repressed when Tll is expressed at high levels.",
+      "claim_type": "EXPLICIT",
+      "source": "and is also repressed when Tll is expressed at high levels (Figure 3\u2014figure supplement 1C\u2013C' and Figure 4D\u2013D'; Kurusu et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1C-C' and Figure 4D-D', and citation to Kurusu et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "a24fb03b-245b-4b7b-926b-effe57b2559e",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C45",
+      "claim": "Expressing Ase together with Tll completely abolished tumourigenesis in all brains analysed.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed Ase together with Tll and found, remarkably, that tumourigenesis was completely abolished in all brains analysed (n = 10) (Figure 6A\u2013A'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A-A''",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "bc6118d2-8f37-44f4-a5f9-cee89b3c6fa5",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C46",
+      "claim": "Ase prevented the production of ectopic NSCs and re-established normal neurogenesis in Type I NSC lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, not only did Ase prevent the production of ectopic NSCs, it also re-established normal neurogenesis in Type I NSC lineages: the production of GMCs and neurons was restored, as revealed by expression of Pros and Elav (Figure 6A\u2013A'' and B\u2013B'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A-B''",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "35631b18-6613-4142-bf3f-15b4ace497ba",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C47",
+      "claim": "Re-introducing Ase into Tll tumours did not repress the expression of Tll.",
+      "claim_type": "EXPLICIT",
+      "source": "However, re-introducing Ase into Tll tumours did not repress the expression of Tll (Figure 6\u2014figure supplement 2A\u2013A'')",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 2A-A''",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "c0565716-752a-4122-9ad6-5b4d6577a6f7",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C48",
+      "claim": "Ectopic expression of Ase does not turn off Tll in Type II NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "nor does the ectopic expression of Ase turn off Tll in Type II NSCs (Figure 6\u2014figure supplement 2B\u2013B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 2B-B'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "62957796-b82e-440e-a29a-3eb3fbdd5dff",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C49",
+      "claim": "Expressing Ase reinstates the normal neurogenic programme and prevents tumour initiation by Tll.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, by expressing Ase we were able to reinstate the normal neurogenic programme and prevent tumour initiation by Tll (Figure 6C\u2013C'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from experimental data shown in Figure 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "c65692d6-14af-439e-878a-e2b6add57a93",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C50",
+      "claim": "High TLX expression is correlated with poor patient prognosis in human glioblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "In human glioblastoma, high TLX expression is correlated with poor patient prognosis (Park et al., 2010; Zou et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Park et al., 2010 and Zou et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "00537252-b96f-4516-adaa-c2cfec2a9d0c",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C51",
+      "claim": "Low ASCL1 levels are correlated with shorter survival time in glioblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, ASCL1 levels also vary between human glioblastoma samples and low levels are correlated with shorter survival time (Park et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Park et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "4becee3b-8855-4ffd-a140-da17e774d87a",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C52",
+      "claim": "Increasing ASCL1 levels promotes terminal differentiation and attenuates tumorigenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing ASCL1 levels was shown to promote terminal differentiation and attenuate tumorigenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from Park et al., 2017 study mentioned in context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "a14701e1-003e-4256-b92e-5274423bf1cb",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C53",
+      "claim": "Expression of both TLX and ASCL1 is restricted to malignant glioblastoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis identified 7,835 single cells in this data set and, following cluster annotation based on previously known markers (Neftel et al., 2019), we found that expression of both TLX and ASCL1 was restricted to the malignant glioblastoma cells (6,766 cells) (Figure 7A\u2013A').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single-cell RNA-seq analysis shown in Figure 7A-A'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "ee9f143f-c764-4e00-b50b-1d321e90ab17",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C54",
+      "claim": "Very few malignant glioblastoma cells expressed both TLX and ASCL1 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we compared TLX and ASCL1 expression within the malignant population, we found very few cells that expressed both transcripts (Figure 7B), suggesting that TLX and ASCL1 are indeed mutually exclusive in malignant glioblastoma cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single-cell RNA-seq analysis shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "7bd7c1d7-56d3-49ee-a5ea-7bfa430cde34",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C55",
+      "claim": "Tll is expressed in Type II NSCs during larval development, where it is required for Type II NSC identity and subsequent lineage progression.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that Tll is expressed in Type II NSCs during larval development, where it is required for Type II NSC identity and subsequent lineage progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "70d9793a-8fee-4149-bcfa-38c0f5d10505",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C56",
+      "claim": "In the absence of Tll, the proneural transcription factor Ase is derepressed in Type II NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Tll, the proneural transcription factor Ase is derepressed in Type II NSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "cb503a9d-3b53-47a3-bb6e-f94cb9a152e9",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C57",
+      "claim": "Transit amplifying INPs are no longer generated in the absence of Tll, and the resulting NSC lineages have a lower neurogenic potential.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, transit amplifying INPs are no longer generated and the resulting NSC lineages have a lower neurogenic potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "f466704f-1ef4-4a96-b756-4cdebb01f07b",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C58",
+      "claim": "High levels of TLX in human glioblastoma are correlated with tumour aggressiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "High levels of TLX in human glioblastoma are correlated with tumour aggressiveness (Park et al., 2010; Zou et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Park et al., 2010 and Zou et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "20bbc1fe-cd27-420d-8d26-78cfe2bf92ed",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C59",
+      "claim": "High level expression of TLX results in glioblastoma-like lesions derived from SVZ NSC lineages in mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "High level expression of TLX results in glioblastoma-like lesions derived from SVZ NSC lineages in mouse models of glioblastoma (Liu et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "3196410b-7224-4e9a-a447-2126f6461f7b",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C60",
+      "claim": "TLX and Drosophila Tll are highly conserved proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "TLX and its Drosophila homologue, Tll, are highly conserved proteins (Yu et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yu et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "5d0b03a0-c910-4005-a425-a3f411fe7082",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C61",
+      "claim": "Both TLX and Tll are able to revert INPs to NSC fate as a first step in tumour initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "and we found that both genes are able to revert INPs to NSC fate as a first step in tumour initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "ce523376-a89c-49ac-ae8a-7f8ec1219997",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C62",
+      "claim": "Ectopic expression of Tll was sufficient to induce the expansion of NSCs throughout the Drosophila CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of Tll was also sufficient to induce the expansion of NSCs throughout the Drosophila CNS, demonstrating the widespread vulnerability of NSC and progenitor populations to ectopic Tll expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "16da519a-21fe-4145-b838-6faafd1561f7",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C63",
+      "claim": "The ectopic NSCs resulting from high Tll expression are negative for Ase.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the ectopic NSCs resulting from high Tll expression are negative for Ase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "07a44551-419b-4f8a-a7c3-9cc7071c046a",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C64",
+      "claim": "The absence of Ase is a hallmark of Type II NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of Ase is a hallmark of Type II NSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about Type II NSC markers",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "83615871-150e-4fa3-a4fb-2e245550a37a",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C65",
+      "claim": "Ectopic Tll promotes a cell fate change from INP/Type I NSC to Type II NSC and thereby initiates tumourigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, ectopic Tll promotes a cell fate change from INP/Type I NSC to Type II NSC and thereby initiates tumourigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental data shown in Figures 3-5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "d2b2b888-f2b0-4909-be6d-e2a637c94690",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C66",
+      "claim": "The capacity of Tll to induce NSC expansion had been reported previously as part of a study on mushroom body NSCs and GMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The capacity of Tll to induce NSC expansion had been reported previously as part of a study showing that Tll regulates the proliferation of larval mushroom body NSCs and GMCs (Kurusu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kurusu et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "028ba33a-0c95-44d0-91b1-fc3334fd8620",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C67",
+      "claim": "Tll-induced tumourigenesis could be blocked by ectopic expression of Pros.",
+      "claim_type": "EXPLICIT",
+      "source": "Tll-induced tumourigenesis could be blocked by ectopic expression of Pros (Kurusu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kurusu et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "90215505-0847-466c-9e28-edbe8a43b2dd",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C68",
+      "claim": "Ectopic Pros results in the loss of NSCs even in wild type brains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ectopic Pros results in the loss of NSCs even in wild type brains (Cabernard and Doe, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cabernard and Doe, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "976b40e1-1541-4202-a459-ffd9d48c39df",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C69",
+      "claim": "Type I NSC lineages appear normal after Ase misexpression in wild type brains.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Type I NSC lineages appear normal after Ase misexpression in wild type brains (Bowman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bowman et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "cbb5e05b-0cdf-42f7-a2b1-2b5cc650dd0d",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C70",
+      "claim": "High levels of PROX1 exacerbate glioblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been reported that high levels of the human homologue of Pros, PROX1, exacerbate glioblastoma (Elsir et al., 2010; Goudarzi et al., 2018; Roodakker et al., 2016; Xu et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Elsir et al., 2010; Goudarzi et al., 2018; Roodakker et al., 2016; Xu et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "a5aec3c5-2901-483b-9316-b08f3dd920d7",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C71",
+      "claim": "The tumourigenic capacity of Drosophila Tll and human TLX is highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the tumourigenic capacity of Drosophila Tll and human TLX was highly conserved (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "c465c202-0e55-493b-9bf1-e6c64122b863",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C72",
+      "claim": "Human TLX can induce ectopic Type II NSCs from INPs through the repression of Ase.",
+      "claim_type": "EXPLICIT",
+      "source": "Human TLX could also induce ectopic Type II NSCs from INPs through the repression of Ase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "4424e7b4-43bb-4536-ad26-261b2996703a",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C73",
+      "claim": "The origin of human glioblastoma has been mapped to the SVZ.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that the origin of human glioblastoma has been mapped to the SVZ (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "1c62431d-5a08-4ae5-a8bd-2f4246303a5d",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C74",
+      "claim": "TLX positive NSCs have been identified in both the SVZ and dentate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "While TLX positive NSCs have been identified in both the SVZ and dentate gyrus, high levels of TLX giving rise to glioblastoma has only been shown robustly in the SVZ (Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "41295985-e766-428a-8266-de614448a51d",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C75",
+      "claim": "Low expression levels of ASCL1 correlate with glioblastoma malignancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a recent study demonstrated that low expression levels of ASCL1 correlate with glioblastoma malignancy (Park et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Park et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "52138fea-a3ea-4921-8b3a-bbbbcdc72190",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C76",
+      "claim": "Ectopic expression of ASCL1 in glioblastoma stem cells was sufficient to promote neuronal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of ASCL1 in glioblastoma stem cells was sufficient to promote neuronal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from Park et al., 2017 study mentioned in context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "3f873d11-b805-4c8d-b02f-c1b25ed3fd6b",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C77",
+      "claim": "Introducing ASCL1 would override the repressive effect of TLX, induce neuronal differentiation and reduce tumour growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our results in Drosophila, we predict that introducing ASCL1 would override the repressive effect of TLX, induce neuronal differentiation and reduce tumour growth, thereby providing an effective treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation from Drosophila results",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "7bc95362-74a9-445c-84c3-8358504ea058",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C78",
+      "claim": "INPs are the tumour initiating cells in Type II NSC lineages expressing high levels of Tll.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that INPs are the tumour initiating cells in Type II NSC lineages expressing high levels of the orphan nuclear receptor Tll",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "60117ef1-9c65-4948-a45b-936ec569fdf3",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C79",
+      "claim": "Intermediate progenitors are potentially implicated as one of the cells of origin in TLX+ glioblastomas.",
+      "claim_type": "EXPLICIT",
+      "source": "and potentially implicate intermediate progenitors as one of the cells of origin in TLX+ glioblastomas, an aggressive and lethal brain tumour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation from Drosophila results",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "a47a637c-9293-4cd0-a66f-47083c5a13ad",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C80",
+      "claim": "Ase is a direct target of Tll.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Ase is a direct target of Tll",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TaDa data showing Tll binding to ase locus",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "50ef10fc-11d7-4e18-a67b-a0540ec562d9",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C81",
+      "claim": "Ase expression blocks Tll-induced tumourigenesis and reinstates a normal neural differentiation programme.",
+      "claim_type": "EXPLICIT",
+      "source": "and that Ase expression not only blocks Tll-induced tumourigenesis, but also reinstates a normal neural differentiation programme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "80f87ecd-662c-427c-a2f9-aa9f488c430c",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C82",
+      "claim": "TLX is expressed in adult NSCs, where it is required for neurogenesis in both the subventricular zone (SVZ) and the subgranular zone (SGZ).",
+      "claim_type": "EXPLICIT",
+      "source": "TLX is expressed in adult NSCs, where it is required for neurogenesis in both the subventricular zone (SVZ) and the subgranular zone (SGZ) (Liu et al., 2008; Liu et al., 2010; Shi et al., 2004; Zhang et al., 2008; Zou et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liu et al., 2008; Liu et al., 2010; Shi et al., 2004; Zhang et al., 2008; Zou et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "cc2f3fc4-de14-4e40-996d-3b07c83e8359",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C83",
+      "claim": "TLX is expressed in glioblastoma stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TLX is also expressed in glioblastoma stem cells (Zhu et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "a1c07709-360c-40dc-a727-5f87bb130ddc",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C84",
+      "claim": "Upregulation of TLX promotes gliomagenesis in the mouse SVZ.",
+      "claim_type": "EXPLICIT",
+      "source": "and upregulation of TLX promotes gliomagenesis in the mouse SVZ (Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "0b47ef9f-1400-418a-80c8-823bf54739f4",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C85",
+      "claim": "TLX is an important stem cell regulator both in normal and tumourigenic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that TLX is an important stem cell regulator both in normal and tumourigenic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from cited studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "adb43f93-bb1e-4bd2-a9a8-489dd9615e80",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C86",
+      "claim": "Astrocyte-like neural stem cells (NSCs) in the SVZ of glioblastoma patients harbour driver mutations that are found in the patient's tumour.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study revealed that astrocyte-like neural stem cells (NSCs) in the SVZ of glioblastoma patients harbour driver mutations that are found in the patient's tumour, suggesting that astrocyte-like NSCs are cells of origin of glioblastoma in humans (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "e5b36829-4192-4adf-86e4-3b4653c0bbf8",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C87",
+      "claim": "Neural lineages become more resistant to glioblastoma transformation as differentiation progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural lineages become more resistant to glioblastoma transformation as differentiation progresses, supporting stem cells or early progenitor cells as a common source of glioblastoma (Alcantara Llaguno et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alcantara Llaguno et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "8893a351-4fa5-4b34-bdcb-b62013477e16",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C88",
+      "claim": "Both stem and progenitor cells express Nestin.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both stem and progenitor cells express Nestin (Chen et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "2996fcf3-c3ba-42bc-94c7-7beb02d6a2f4",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C89",
+      "claim": "GFAP labels both stem cells and astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "and GFAP labels both stem cells and astrocytes (Doetsch et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Doetsch et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "432cbb33-6ba0-4296-936f-dacea57cfc2b",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C90",
+      "claim": "TLX is expressed in NSCs during embryonic development and in adulthood in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, TLX is expressed in NSCs during embryonic development and in adulthood (Li et al., 2012; Li et al., 2008; Liu et al., 2008; Shi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Li et al., 2012; Li et al., 2008; Liu et al., 2008; Shi et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "fab52a90-6f48-4102-9cfa-1eba5b5e8ef9",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C91",
+      "claim": "Embryonic NSCs display defects in proliferation in the absence of TLX.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryonic NSCs display defects in proliferation in the absence of TLX (Li et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "75e73eb7-15b5-455d-abd8-ca049d826930",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C92",
+      "claim": "The loss of TLX in adults results in the loss of transit-amplifying intermediates and reduction in neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "and the loss of TLX in adults results in the loss of transit-amplifying intermediates and reduction in neurogenesis (Li et al., 2012; Liu et al., 2008; Niu et al., 2011; Shi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Li et al., 2012; Liu et al., 2008; Niu et al., 2011; Shi et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "0ae44e9e-acac-4e8c-8a4f-718758342f15",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C93",
+      "claim": "A cell fate change may occur due to the loss of TLX in mouse NSCs.",
+      "claim_type": "IMPLICIT",
+      "source": "While these effects were previously attributed to changes in the NSC cell cycle, our results suggest a cell fate change may occur due to the loss of TLX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation from Drosophila results",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "6276e2d7-de4e-4ad1-b26d-f865b5f52393",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C94",
+      "claim": "Tll was expressed in Type II NSCs throughout larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Tll was expressed in Type II NSCs throughout larval development (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "fa9dcfd5-162c-40ee-bb37-b9cf093be8d7",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C95",
+      "claim": "Tll protein was present in NSCs and at low levels in newly-born INPs.",
+      "claim_type": "EXPLICIT",
+      "source": "while Tll protein was present in NSCs and at low levels in newly-born INPs (Figure 1D\u2013D').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 1D-D'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "53075300-0819-403e-bf5e-caa43ba8dccd",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C96",
+      "claim": "Mature INPs do not express Tll.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature INPs (small Dpn+ cells in the lineage) do not express Tll.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 1D-D'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "61dee1b3-db5d-4c2f-a53b-c0716cda447a",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C97",
+      "claim": "Tll is expressed in Type II NSCs and downregulated in differentiating lineages during larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "Tll-GFP (green) is expressed in Type II NSCs (Dpn+ (red) and Ase- (blue)) (arrowheads and outlined with solid white lines) and downregulated in differentiating lineages (dotted white lines) during larval development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "57c4a70b-59a2-4c09-9a35-9da78f7731ce",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "claim_id": "C98",
+      "claim": "Tll identified 2495 protein-coding gene targets in Type II NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We profiled Tll binding in Type II NSCs (16 per brain; approximately 700 NSCs per replicate) (Figure 6\u2014figure supplement 1A\u2013B) and identified Tll-binding peaks at 2495 protein-coding genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TaDa data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fc450bf0-f633-4b60-8246-83aac1c08bc2",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Tll is expressed in Type II NSCs throughout larval development, with mRNA restricted to NSCs and protein present in NSCs and at low levels in newly-born INPs but not in mature INPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C94-C97 collectively demonstrate Tll expression pattern through RNA FISH (C6) and immunostaining (C7, C95-C96) data shown in Figure 1 and supplementary figures. The data consistently show Tll mRNA in NSCs only and protein in NSCs with weak expression in immature INPs, providing converging evidence for the expression pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "1c53a209-34b5-4690-8bf4-ee0ddfa2ca06",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Drosophila Tll and human TLX are highly conserved proteins with 81% identity in DNA binding domains, 40% identity in ligand binding domains, binding to the same consensus DNA sequence, and recruiting conserved cofactors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 and C60 are supported by sequence alignment data (Figure 1E) and citations to prior work (Yu et al., 1994; Wang et al., 2006; Zhi et al., 2015). The sequence identity percentages are directly shown in the alignment, and the functional conservation is supported by cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Tll is required for Type II NSC identity during development; loss of Tll results in derepression of Ase, transformation to Type I NSC fate, loss of INPs, and reduced neurogenic capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C20 and C55-C57 are supported by multiple experimental approaches including RNAi knockdown (Figure 2\u2014figure supplement 1B-C', 2\u2014figure supplement 2B), MARCM clone analysis (Figure 2\u2014figure supplement 1D-F), and marker analysis (Figure 2A-B''). The data consistently show loss of Type II markers, gain of Type I markers, and altered lineage composition upon tll loss of function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "1ef88b6a-bdd7-4f51-905e-2d8bbd52ddac",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Tll overexpression in INPs dramatically increases Type II NSC numbers (from 8 to 109\u00b112.12 per brain lobe) and reduces differentiating progeny, promoting NSC fate at the expense of INPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C22, and C24 are supported by experimental data in Figure 3B-C and Figure 3\u2014figure supplement 1C-D'. The quantification shows a statistically significant increase in Type II NSCs (p<0.001), and the reduction in differentiation markers (Pros, Elav) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "77b53ff3-2a7e-4f05-8a37-5dd1755e2ef6",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GMCs and post-mitotic neurons are resistant to Tll/TLX-induced transformation, showing neither excess NSCs nor dedifferentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C36 are supported by experimental data in Figure 3D-E' and Figure 5\u2014figure supplement 2. The negative results are clearly documented with appropriate controls, demonstrating that more differentiated cell types cannot be reverted by Tll/TLX overexpression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "79ab9469-c33c-4079-8880-9bb07e901f19",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "High levels of Tll induce large NSC tumors throughout the CNS by converting Type I NSCs to Type II-like NSCs (Ase-negative, Pros-negative) that can generate INPs, blocking differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 and C62-C65 are supported by extensive experimental data in Figure 4A-E' showing tumors in adult brains, larval central brain and VNC, with consistent loss of Ase and Pros markers and gain of Type II characteristics. The data demonstrate both identity change and differentiation block.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "b8054d59-ed0c-46a0-8d36-d5e038b9b116",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Both Drosophila Tll and human TLX initiate tumors by reverting INPs to NSC fate, as demonstrated by G-TRACE lineage tracing showing ectopic NSCs with historic but not current erm-GAL4 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35, C37, C61, C71-C72, and C78 are supported by G-TRACE data in Figure 5A-B showing NSCs with historic (EGFP+) but not current (RFP-) erm-GAL4 expression, indicating they originated from INPs. The quantification shows significant increase in such cells (p<0.001), and the result holds for both Tll and human TLX.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "5f15b03d-ff95-4943-926e-fc05d8ca3c04",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Tll directly binds to the ase locus in Type II NSCs and represses its expression to promote Type II NSC fate, as shown by TaDa profiling identifying 2495 protein-coding gene targets including ase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C39, C80, and C98 are supported by TaDa data shown in Figure 6\u2014figure supplement 1C demonstrating Tll binding peaks at the ase locus. The direct binding is clearly shown, though the repression is inferred from binding data combined with expression analysis. The genome-wide profiling provides additional context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "6b366681-bdec-421c-8c08-16a0066f786d",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Tll acts on additional targets beyond ase to mediate cell fate change, including Pros which is bound by Tll, negatively regulates NSC proliferation, and is repressed when Tll is high.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by TaDa data showing Tll binding to pros locus (Figure 6\u2014figure supplement 1D), experimental data showing Pros repression (Figure 3\u2014figure supplement 1C-C', Figure 4D-D'), and citations to prior work (Bowman et al., 2008; Cabernard and Doe, 2009; Kurusu et al., 2009). The logic that additional targets are needed is sound given C40.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "3c6dd5fd-50cc-4ff7-a4a7-0a8baf435e03",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Expressing Ase completely blocks Tll-induced tumourigenesis and restores normal neurogenesis (GMC and neuron production) without repressing Tll expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 and C81 are supported by experimental data in Figure 6A-B'' showing complete rescue of tumors (n=10 brains) with restoration of Pros and Elav expression. Figure 6\u2014figure supplement 2A-B' demonstrates that Ase does not repress Tll, indicating Ase acts downstream to override Tll effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "6474a96c-c4df-4e3d-a10b-c475d990a810",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TLX and ASCL1 expression are mutually exclusive in malignant glioblastoma cells, with very few cells expressing both transcripts in single-cell RNA-seq analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C53, and C54 are supported by single-cell RNA-seq analysis of 7,835 cells from human glioblastoma samples (Neftel et al., 2019) shown in Figure 7A-B. The UMAP plots clearly show that TLX and ASCL1 expression are largely non-overlapping in the malignant cell population (6,766 cells).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "cf4b8bb0-b75c-4811-a5de-ecac5cec2510",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "High levels of TLX correlate with poor patient prognosis and tumor aggressiveness in human glioblastoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C50, and C58 are supported by citations to Park et al., 2010 and Zou et al., 2012. While the authors did not generate this data themselves, the citations are appropriate and the claim is consistently stated throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "9398fa99-da87-4d4a-b5b4-d4b2a2606834",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Low ASCL1 levels correlate with shorter survival time and increased malignancy in glioblastoma, while increasing ASCL1 promotes terminal differentiation and attenuates tumorigenicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C52, C75, and C76 are supported by citation to Park et al., 2017. The claims accurately represent prior work, though the authors did not generate this data themselves. The relevance to the current study is clear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "fb98533f-9bc0-4cec-8a78-535d6270f452",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Counteracting high TLX by introducing ASCL1 is predicted to override TLX repression, induce neuronal differentiation, reduce tumor growth, and provide an effective therapeutic strategy for tumors originating from intermediate progenitor cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C77, and C79 are speculative predictions based on the Drosophila results. While the Drosophila data (Ase rescue of Tll tumors) is strong, the translation to human therapy is not tested. The prediction is reasonable but requires experimental validation in mammalian systems and human glioblastoma models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "cd8780de-7b54-4b82-8996-401154eeeb7d",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TLX is expressed in NSCs and intermediate progenitors in the mammalian SVZ and SGZ, is required for neurogenesis, and is an important stem cell regulator in both normal and tumorigenic conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C82-C85, and C90-C92 are supported by multiple citations to prior work (Li et al., 2012; Obernier et al., 2011; Liu et al., 2008; Shi et al., 2004; Zhang et al., 2008; Zou et al., 2012; Zhu et al., 2014; Li et al., 2008; Niu et al., 2011). The claims accurately represent established knowledge about TLX function in mammals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "b7ff5524-855f-46a5-9b10-181f8f397d8f",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Astrocyte-like NSCs in the SVZ of glioblastoma patients harbor driver mutations found in tumors, neural lineages become more resistant to transformation as differentiation progresses, and the origin of human glioblastoma has been mapped to the SVZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86, C87, and C73 are supported by citations to Lee et al., 2018 and Alcantara Llaguno et al., 2019. The claims accurately represent prior work establishing the SVZ as a glioblastoma origin site and the role of differentiation state in transformation susceptibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "dc34dc26-1fa9-4f01-9f36-e377107bd41e",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Both stem and progenitor cells express Nestin, and GFAP labels both stem cells and astrocytes, making it difficult to definitively identify cell types in mouse glioblastoma models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88 and C89 are supported by citations to Chen et al., 2009 and Doetsch et al., 1999. The claims accurately represent a known limitation in the field regarding marker specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "a1e7bb6b-61ec-42ef-bd5e-044efdb29f82",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A cell fate change may occur due to loss of TLX in mouse NSCs, rather than just cell cycle changes as previously attributed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C93 is speculative, extrapolating from Drosophila Tll loss-of-function results to mammalian TLX function. While the speculation is reasonable given the conservation between Tll and TLX, it requires experimental validation in mammalian systems. The claim is explicitly presented as speculation ('our results suggest').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "159b5b8f-dfce-4027-8584-95fa4b0a09bb",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work showed Tll can induce NSC expansion and that Pros overexpression blocks Tll tumors, but Pros causes NSC loss in wild-type brains while Ase does not, and high PROX1 exacerbates glioblastoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 are supported by citations to Kurusu et al., 2009; Cabernard and Doe, 2009; Bowman et al., 2008; and Elsir et al., 2010; Goudarzi et al., 2018; Roodakker et al., 2016; Xu et al., 2017. The claims accurately represent prior work and provide important context for why Ase rescue is superior to Pros rescue.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    },
+    {
+      "id": "4f69aaff-789a-40d5-98c5-73b7c78564d9",
+      "content_id": "d108eda3-bf58-4d78-955b-74834e1cf4c8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "High level TLX expression results in glioblastoma-like lesions from SVZ NSC lineages in mouse models, and high TLX giving rise to glioblastoma has been shown robustly in the SVZ but not dentate gyrus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C74 are supported by citation to Liu et al., 2010. The claims accurately represent prior work establishing the SVZ as the primary site where TLX overexpression induces glioblastoma in mice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:16:56.188250Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6af7208a-8513-44f2-adf8-fa503b4def78",
+      "result_id": "fc450bf0-f633-4b60-8246-83aac1c08bc2"
+    },
+    {
+      "claim_id": "032cd1f4-52b3-43a0-868e-c91639d750f5",
+      "result_id": "fc450bf0-f633-4b60-8246-83aac1c08bc2"
+    },
+    {
+      "claim_id": "6276e2d7-de4e-4ad1-b26d-f865b5f52393",
+      "result_id": "fc450bf0-f633-4b60-8246-83aac1c08bc2"
+    },
+    {
+      "claim_id": "fa9dcfd5-162c-40ee-bb37-b9cf093be8d7",
+      "result_id": "fc450bf0-f633-4b60-8246-83aac1c08bc2"
+    },
+    {
+      "claim_id": "53075300-0819-403e-bf5e-caa43ba8dccd",
+      "result_id": "fc450bf0-f633-4b60-8246-83aac1c08bc2"
+    },
+    {
+      "claim_id": "61dee1b3-db5d-4c2f-a53b-c0716cda447a",
+      "result_id": "fc450bf0-f633-4b60-8246-83aac1c08bc2"
+    },
+    {
+      "claim_id": "90ebe293-dbbf-43b7-92dd-7365784e8ca3",
+      "result_id": "1c53a209-34b5-4690-8bf4-ee0ddfa2ca06"
+    },
+    {
+      "claim_id": "7f353186-3794-409e-8a6e-2957d66f5f30",
+      "result_id": "1c53a209-34b5-4690-8bf4-ee0ddfa2ca06"
+    },
+    {
+      "claim_id": "4760209e-2743-4af8-8413-48259a39a1a3",
+      "result_id": "1c53a209-34b5-4690-8bf4-ee0ddfa2ca06"
+    },
+    {
+      "claim_id": "ab25b6de-bbbf-47a5-8c33-80b036cfc830",
+      "result_id": "1c53a209-34b5-4690-8bf4-ee0ddfa2ca06"
+    },
+    {
+      "claim_id": "3196410b-7224-4e9a-a447-2126f6461f7b",
+      "result_id": "1c53a209-34b5-4690-8bf4-ee0ddfa2ca06"
+    },
+    {
+      "claim_id": "98eb067a-dbb5-46fd-bce7-b0c92aa70d7e",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "5a3aab79-b10d-4c86-98b5-3f50528f2ae8",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "a8968d7d-ee2e-4b85-998e-0bdd52d1d8c8",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "226acb9f-4eca-4a46-8003-8759d024daef",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "30dd1033-ee5e-422d-9e15-b3ccd2004923",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "c2287732-3280-4745-993b-99d1dae56dd5",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "6ef32d2e-3727-4ff4-b89d-1903e1eafa53",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "d38878f1-adcf-4d83-8a7c-a3ff571c39ae",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "7bd7c1d7-56d3-49ee-a5ea-7bfa430cde34",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "70d9793a-8fee-4149-bcfa-38c0f5d10505",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "cb503a9d-3b53-47a3-bb6e-f94cb9a152e9",
+      "result_id": "8a652230-f0c3-4ee7-ab0b-ccaf2cd845ef"
+    },
+    {
+      "claim_id": "ba08f9b4-1dd3-4bf1-a755-eefe4aad950b",
+      "result_id": "1ef88b6a-bdd7-4f51-905e-2d8bbd52ddac"
+    },
+    {
+      "claim_id": "294da5f6-13ca-419f-96e3-d638fcac927e",
+      "result_id": "1ef88b6a-bdd7-4f51-905e-2d8bbd52ddac"
+    },
+    {
+      "claim_id": "c1b2dd19-9708-4a49-94bb-3c1bef54f972",
+      "result_id": "1ef88b6a-bdd7-4f51-905e-2d8bbd52ddac"
+    },
+    {
+      "claim_id": "7cd4ca1f-1bdc-4e1b-bef8-cdedae9839af",
+      "result_id": "77b53ff3-2a7e-4f05-8a37-5dd1755e2ef6"
+    },
+    {
+      "claim_id": "854eaa02-4323-4093-96d7-f9efe3bdef02",
+      "result_id": "77b53ff3-2a7e-4f05-8a37-5dd1755e2ef6"
+    },
+    {
+      "claim_id": "11a8e7c5-3017-4447-876e-4a23f9d649d9",
+      "result_id": "79ab9469-c33c-4079-8880-9bb07e901f19"
+    },
+    {
+      "claim_id": "ca1c38fe-6f7a-4f78-bf9c-f0ce1ac08bbb",
+      "result_id": "79ab9469-c33c-4079-8880-9bb07e901f19"
+    },
+    {
+      "claim_id": "7cb6b6b6-8739-43df-b756-645ab2d0ac5d",
+      "result_id": "79ab9469-c33c-4079-8880-9bb07e901f19"
+    },
+    {
+      "claim_id": "af392630-88c6-4a37-8e6f-c5839c31a189",
+      "result_id": "79ab9469-c33c-4079-8880-9bb07e901f19"
+    },
+    {
+      "claim_id": "140294fa-538b-4c73-b9f1-8cf304ef54c2",
+      "result_id": "79ab9469-c33c-4079-8880-9bb07e901f19"
+    },
+    {
+      "claim_id": "fcacd61d-64ba-4c8c-8b9a-27ef18e07600",
+      "result_id": "79ab9469-c33c-4079-8880-9bb07e901f19"
+    },
+    {
+      "claim_id": "94c31dd5-e24e-4ead-8d5c-c5b246aea5fc",
+      "result_id": "79ab9469-c33c-4079-8880-9bb07e901f19"
+    },
+    {
+      "claim_id": "ce523376-a89c-49ac-ae8a-7f8ec1219997",
+      "result_id": "79ab9469-c33c-4079-8880-9bb07e901f19"
+    },
+    {
+      "claim_id": "16da519a-21fe-4145-b838-6faafd1561f7",
+      "result_id": "79ab9469-c33c-4079-8880-9bb07e901f19"
+    },
+    {
+      "claim_id": "83615871-150e-4fa3-a4fb-2e245550a37a",
+      "result_id": "79ab9469-c33c-4079-8880-9bb07e901f19"
+    },
+    {
+      "claim_id": "f8660656-6363-402a-aa84-b45a2b35ff10",
+      "result_id": "b8054d59-ed0c-46a0-8d36-d5e038b9b116"
+    },
+    {
+      "claim_id": "f5368000-08b6-472a-9de3-21f5ae73501d",
+      "result_id": "b8054d59-ed0c-46a0-8d36-d5e038b9b116"
+    },
+    {
+      "claim_id": "af6ae2dc-f4ba-4e20-9dbd-7bb0850bbc17",
+      "result_id": "b8054d59-ed0c-46a0-8d36-d5e038b9b116"
+    },
+    {
+      "claim_id": "1f19e92e-d238-4c4c-9449-b8a616e7e38f",
+      "result_id": "b8054d59-ed0c-46a0-8d36-d5e038b9b116"
+    },
+    {
+      "claim_id": "15ad2603-430a-4e1a-9581-021856b7b4e9",
+      "result_id": "b8054d59-ed0c-46a0-8d36-d5e038b9b116"
+    },
+    {
+      "claim_id": "5d0b03a0-c910-4005-a425-a3f411fe7082",
+      "result_id": "b8054d59-ed0c-46a0-8d36-d5e038b9b116"
+    },
+    {
+      "claim_id": "a5aec3c5-2901-483b-9316-b08f3dd920d7",
+      "result_id": "b8054d59-ed0c-46a0-8d36-d5e038b9b116"
+    },
+    {
+      "claim_id": "c465c202-0e55-493b-9bf1-e6c64122b863",
+      "result_id": "b8054d59-ed0c-46a0-8d36-d5e038b9b116"
+    },
+    {
+      "claim_id": "7bc95362-74a9-445c-84c3-8358504ea058",
+      "result_id": "b8054d59-ed0c-46a0-8d36-d5e038b9b116"
+    },
+    {
+      "claim_id": "95b6d766-b11b-4fc3-b27a-caf56ae66c6e",
+      "result_id": "5f15b03d-ff95-4943-926e-fc05d8ca3c04"
+    },
+    {
+      "claim_id": "5446b7b8-e74f-4b65-bb6e-13c34f987ea4",
+      "result_id": "5f15b03d-ff95-4943-926e-fc05d8ca3c04"
+    },
+    {
+      "claim_id": "a47a637c-9293-4cd0-a66f-47083c5a13ad",
+      "result_id": "5f15b03d-ff95-4943-926e-fc05d8ca3c04"
+    },
+    {
+      "claim_id": "57c4a70b-59a2-4c09-9a35-9da78f7731ce",
+      "result_id": "5f15b03d-ff95-4943-926e-fc05d8ca3c04"
+    },
+    {
+      "claim_id": "caeff22c-b53f-4540-aac8-49ed71281645",
+      "result_id": "6b366681-bdec-421c-8c08-16a0066f786d"
+    },
+    {
+      "claim_id": "08220974-9ef5-40cc-bd6c-09fc643abf26",
+      "result_id": "6b366681-bdec-421c-8c08-16a0066f786d"
+    },
+    {
+      "claim_id": "76b4ac57-7510-4730-9f8f-0f52c826e5a9",
+      "result_id": "6b366681-bdec-421c-8c08-16a0066f786d"
+    },
+    {
+      "claim_id": "8349eecc-a7e4-435a-9a8a-975585a61a00",
+      "result_id": "6b366681-bdec-421c-8c08-16a0066f786d"
+    },
+    {
+      "claim_id": "0da0e091-9cba-49dd-b612-4e695249ee34",
+      "result_id": "6b366681-bdec-421c-8c08-16a0066f786d"
+    },
+    {
+      "claim_id": "a24fb03b-245b-4b7b-926b-effe57b2559e",
+      "result_id": "3c6dd5fd-50cc-4ff7-a4a7-0a8baf435e03"
+    },
+    {
+      "claim_id": "bc6118d2-8f37-44f4-a5f9-cee89b3c6fa5",
+      "result_id": "3c6dd5fd-50cc-4ff7-a4a7-0a8baf435e03"
+    },
+    {
+      "claim_id": "35631b18-6613-4142-bf3f-15b4ace497ba",
+      "result_id": "3c6dd5fd-50cc-4ff7-a4a7-0a8baf435e03"
+    },
+    {
+      "claim_id": "c0565716-752a-4122-9ad6-5b4d6577a6f7",
+      "result_id": "3c6dd5fd-50cc-4ff7-a4a7-0a8baf435e03"
+    },
+    {
+      "claim_id": "62957796-b82e-440e-a29a-3eb3fbdd5dff",
+      "result_id": "3c6dd5fd-50cc-4ff7-a4a7-0a8baf435e03"
+    },
+    {
+      "claim_id": "50ef10fc-11d7-4e18-a67b-a0540ec562d9",
+      "result_id": "3c6dd5fd-50cc-4ff7-a4a7-0a8baf435e03"
+    },
+    {
+      "claim_id": "798e2a35-f2cb-42bc-a14f-baa4c1a7e5c5",
+      "result_id": "6474a96c-c4df-4e3d-a10b-c475d990a810"
+    },
+    {
+      "claim_id": "a14701e1-003e-4256-b92e-5274423bf1cb",
+      "result_id": "6474a96c-c4df-4e3d-a10b-c475d990a810"
+    },
+    {
+      "claim_id": "ee9f143f-c764-4e00-b50b-1d321e90ab17",
+      "result_id": "6474a96c-c4df-4e3d-a10b-c475d990a810"
+    },
+    {
+      "claim_id": "83ed00e5-5f95-4732-9b49-26449e996121",
+      "result_id": "cf4b8bb0-b75c-4811-a5de-ecac5cec2510"
+    },
+    {
+      "claim_id": "c65692d6-14af-439e-878a-e2b6add57a93",
+      "result_id": "cf4b8bb0-b75c-4811-a5de-ecac5cec2510"
+    },
+    {
+      "claim_id": "f466704f-1ef4-4a96-b756-4cdebb01f07b",
+      "result_id": "cf4b8bb0-b75c-4811-a5de-ecac5cec2510"
+    },
+    {
+      "claim_id": "00537252-b96f-4516-adaa-c2cfec2a9d0c",
+      "result_id": "9398fa99-da87-4d4a-b5b4-d4b2a2606834"
+    },
+    {
+      "claim_id": "4becee3b-8855-4ffd-a140-da17e774d87a",
+      "result_id": "9398fa99-da87-4d4a-b5b4-d4b2a2606834"
+    },
+    {
+      "claim_id": "41295985-e766-428a-8266-de614448a51d",
+      "result_id": "9398fa99-da87-4d4a-b5b4-d4b2a2606834"
+    },
+    {
+      "claim_id": "52138fea-a3ea-4921-8b3a-bbbbcdc72190",
+      "result_id": "9398fa99-da87-4d4a-b5b4-d4b2a2606834"
+    },
+    {
+      "claim_id": "e0780d1c-8080-4e39-921d-c813f01d2783",
+      "result_id": "fb98533f-9bc0-4cec-8a78-535d6270f452"
+    },
+    {
+      "claim_id": "3f873d11-b805-4c8d-b02f-c1b25ed3fd6b",
+      "result_id": "fb98533f-9bc0-4cec-8a78-535d6270f452"
+    },
+    {
+      "claim_id": "60117ef1-9c65-4948-a45b-936ec569fdf3",
+      "result_id": "fb98533f-9bc0-4cec-8a78-535d6270f452"
+    },
+    {
+      "claim_id": "846d22b8-9289-4ab1-98ba-3fe6ac945828",
+      "result_id": "cd8780de-7b54-4b82-8996-401154eeeb7d"
+    },
+    {
+      "claim_id": "80f87ecd-662c-427c-a2f9-aa9f488c430c",
+      "result_id": "cd8780de-7b54-4b82-8996-401154eeeb7d"
+    },
+    {
+      "claim_id": "cc2f3fc4-de14-4e40-996d-3b07c83e8359",
+      "result_id": "cd8780de-7b54-4b82-8996-401154eeeb7d"
+    },
+    {
+      "claim_id": "a1c07709-360c-40dc-a727-5f87bb130ddc",
+      "result_id": "cd8780de-7b54-4b82-8996-401154eeeb7d"
+    },
+    {
+      "claim_id": "0b47ef9f-1400-418a-80c8-823bf54739f4",
+      "result_id": "cd8780de-7b54-4b82-8996-401154eeeb7d"
+    },
+    {
+      "claim_id": "432cbb33-6ba0-4296-936f-dacea57cfc2b",
+      "result_id": "cd8780de-7b54-4b82-8996-401154eeeb7d"
+    },
+    {
+      "claim_id": "fab52a90-6f48-4102-9cfa-1eba5b5e8ef9",
+      "result_id": "cd8780de-7b54-4b82-8996-401154eeeb7d"
+    },
+    {
+      "claim_id": "75e73eb7-15b5-455d-abd8-ca049d826930",
+      "result_id": "cd8780de-7b54-4b82-8996-401154eeeb7d"
+    },
+    {
+      "claim_id": "adb43f93-bb1e-4bd2-a9a8-489dd9615e80",
+      "result_id": "b7ff5524-855f-46a5-9b10-181f8f397d8f"
+    },
+    {
+      "claim_id": "e5b36829-4192-4adf-86e4-3b4653c0bbf8",
+      "result_id": "b7ff5524-855f-46a5-9b10-181f8f397d8f"
+    },
+    {
+      "claim_id": "4424e7b4-43bb-4536-ad26-261b2996703a",
+      "result_id": "b7ff5524-855f-46a5-9b10-181f8f397d8f"
+    },
+    {
+      "claim_id": "8893a351-4fa5-4b34-bdcb-b62013477e16",
+      "result_id": "dc34dc26-1fa9-4f01-9f36-e377107bd41e"
+    },
+    {
+      "claim_id": "2996fcf3-c3ba-42bc-94c7-7beb02d6a2f4",
+      "result_id": "dc34dc26-1fa9-4f01-9f36-e377107bd41e"
+    },
+    {
+      "claim_id": "0ae44e9e-acac-4e8c-8a4f-718758342f15",
+      "result_id": "a1e7bb6b-61ec-42ef-bd5e-044efdb29f82"
+    },
+    {
+      "claim_id": "d2b2b888-f2b0-4909-be6d-e2a637c94690",
+      "result_id": "159b5b8f-dfce-4027-8584-95fa4b0a09bb"
+    },
+    {
+      "claim_id": "028ba33a-0c95-44d0-91b1-fc3334fd8620",
+      "result_id": "159b5b8f-dfce-4027-8584-95fa4b0a09bb"
+    },
+    {
+      "claim_id": "90215505-0847-466c-9e28-edbe8a43b2dd",
+      "result_id": "159b5b8f-dfce-4027-8584-95fa4b0a09bb"
+    },
+    {
+      "claim_id": "976b40e1-1541-4202-a459-ffd9d48c39df",
+      "result_id": "159b5b8f-dfce-4027-8584-95fa4b0a09bb"
+    },
+    {
+      "claim_id": "cbb5e05b-0cdf-42f7-a2b1-2b5cc650dd0d",
+      "result_id": "159b5b8f-dfce-4027-8584-95fa4b0a09bb"
+    },
+    {
+      "claim_id": "20bbc1fe-cd27-420d-8d26-78cfe2bf92ed",
+      "result_id": "4f69aaff-789a-40d5-98c5-73b7c78564d9"
+    },
+    {
+      "claim_id": "1c62431d-5a08-4ae5-a8bd-2f4246303a5d",
+      "result_id": "4f69aaff-789a-40d5-98c5-73b7c78564d9"
+    }
+  ],
+  "comparisons": []
+}

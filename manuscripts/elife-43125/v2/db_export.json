@@ -1,0 +1,1508 @@
+{
+  "submission": {
+    "id": "ed3fa7be-cad1-459f-9285-4c47af5393e1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:36:22.507671Z",
+    "updated_at": "2025-12-02T08:36:22.507671Z"
+  },
+  "content": [
+    {
+      "id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "submission_id": "ed3fa7be-cad1-459f-9285-4c47af5393e1",
+      "content_type": "manuscript",
+      "content_text": "# zGrad is a nanobody-based degron system that inactivates proteins in zebrafish\n\n## Authors\n\n- Naoya Yamaguchi<sup>1</sup> ([ORCID: 0000-0003-0573-695X](https://orcid.org/0000-0003-0573-695X))\n- Tugba Colak-Champollion<sup>1</sup> ([ORCID: 0000-0001-5843-1717](https://orcid.org/0000-0001-5843-1717))\n- Holger Knaut<sup>1</sup> ([ORCID: 0000-0002-8399-8720](https://orcid.org/0000-0002-8399-8720)) \u2020\n\n### Affiliations\n\n1. Skirball Institute of Biomolecular Medicine New York University School of Medicine New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe analysis of protein function is essential to modern biology. While protein function has mostly been studied through gene or RNA interference, more recent approaches to degrade proteins directly have been developed. Here, we adapted the anti-GFP nanobody-based system deGradFP from flies to zebrafish. We named this system zGrad and show that zGrad efficiently degrades transmembrane, cytosolic and nuclear GFP-tagged proteins in zebrafish in an inducible and reversible manner. Using tissue-specific and inducible promoters in combination with functional GFP-fusion proteins, we demonstrate that zGrad can inactivate transmembrane and cytosolic proteins globally, locally and temporally with different consequences. Global protein depletion results in phenotypes similar to loss of gene activity, while local and temporal protein inactivation yields more restricted and novel phenotypes. Thus, zGrad is a versatile tool to study the spatial and temporal requirement of proteins in zebrafish.\n\n## Introduction\n\nThe study of the consequences of the loss of gene function is a central technique in biology. In principle, loss of gene function can be achieved through gene, mRNA or protein inactivation. While there are many techniques available to inactivate genes and mRNA globally, spatially and temporally (Housden et al., 2017), methods to reduce protein function in the same manner are more limited. One strategy to inactivate a specific protein is to fuse it to a degron, a protein domain that targets its fusion partner for degradation. Degrons are recognized by adapter proteins. These adapter proteins target the degron together with its fusion partner to the E3 ubiquitin ligase complex for degradation by the proteasome. By manipulating degrons with temperature, light, small molecules or another protein, protein-degron fusions can also be degraded in a controlled manner (Natsume and Kanemaki, 2017). While different versions of these approaches have been adapted to zebrafish, it is mostly unclear whether they degrade the protein-degron efficiently enough to cause a phenotype (Bonger et al., 2014; Shin et al., 2015; Daniel et al., 2018; Neklesa et al., 2011).\n\nGFP-based fluorescent proteins (FPs) are convenient degrons because they are often used to tag proteins and their degradation can be easily monitored by light microscopy. deGradFP, a system developed in flies, depletes FP-tagged proteins (Caussinus et al., 2011; Nagarkar-Jaiswal et al., 2015). It relies on the expression of an anti-GFP nanobody/F-box fusion protein. This fusion protein recruits FP-tagged proteins to the SKP1- CUL1-F-box (SCF) E3 ubiquitin ligase complex, leading to its ubiquitylation and proteasome-mediated degradation in 2-3 hr. Slight variations of this system have been used to deplete FP-tagged proteins in different tissues in nematodes (Wang et al., 2017), flies (Brauchle et al., 2014) and in zebrafish nuclei (Shin et al., 2015).\n\nHere, we surveyed different degron systems in zebrafish and identified an anti-GFP nanobody/F-box fusion protein, which we named zGrad, that efficiently degrades FP-tagged proteins in zebrafish. We used this system to show that zGrad depletes FP-tagged proteins within 30 to 150 min depending on the subcellular localization and the nature of the tagged protein. We found that zGrad-mediated protein degradation recapitulates genetic loss-of-function phenotypes and can uncover severe maternal and maternal-zygotic phenotypes. When we induced zGrad from a heat-shock-inducible promoter, we found temporal degradation of FP-tagged proteins with acute and reversible loss-of-protein function phenotypes. Lastly, we expressed zGrad from a tissue-specific promoter and found degradation of FP-tagged proteins exposing a phenotype similar to but less severe than the genetic loss-of-function phenotype. These observations indicate that zGrad is a versatile tool to rapidly and reversibly deplete FP-tagged proteins with temporal or spatial control in zebrafish.\n\n## Results\n\n### zGrad efficiently degrades GFP-tagged proteins in zebrafish\n\nTo establish a method to reduce the activity of proteins in zebrafish, we tested several degron-based protein degradation systems. First, we tested the auxin-inducible degron (AID) system (Natsume et al., 2016; Nishimura et al., 2009; Holland et al., 2012; Gu et al., 2018). This system uses the plant F box transport inhibitor response 1 (TIR1) protein to recruit proteins tagged with the small AID degron to the SCF E3 ubiquitin ligase complex in an auxin-dependent manner (Figure 1A). We co-injected one-cell stage embryos with sfGFP-mAID mRNA and varying amounts of OsTIR1-mCherry mRNA and treated them for 3 hr with or without the auxin analog indole-3-acetic acid (IAA). We found that expression of OsTIR1-mCherry induced degradation of sfGFP-mAID in a dose-dependent manner irrespective of IAA (Figure 1D, Figure 1\u2014figure supplement 1A). We also found that 50 pg/embryo or higher concentrations of OsTIR1-mCherry mRNA led to deformed and dying embryos (Figure 1\u2014figure supplement 1B,C). Thus, low levels of OsTIR1 induce degradation of AID-tagged proteins, higher levels of OsTIR1 are toxic and OsTIR degrades AID-tagged proteins in the absence of auxin, suggesting that, in its current form, the AID system is not suitable to degrade proteins in zebrafish.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig1-v2.jpg)\n\n**Figure 1.:** (A) Overview of degron-based protein degradation systems.\u00a0POI: protein of interest. (B) Comparison of deGradFP and zGrad fusion proteins. (C) Schematic of zGrad-mediated target protein degradation. (D) Representative images of embryos injected with sfGFP-mAID mRNA (210 pg) only (top) or with sfGFP-mAID mRNA (210 pg) and OsTIR1-mCherry mRNA (42 pg) (bottom) before (left, 8 hpf) and after IAA (500 \u00b5M) induction for 3 hr (middle and right, 11 hpf). Red channel is shown as a fire map (right). Scale bar: 1 mm. (E) Representative images of embryos injected with sfGFP-ZF1 mRNA and mScarlet-V5 mRNA only (left) or with sfGFP-ZF1 mRNA and mScarlet-V5 mRNA and zif-1 mRNA (right) at 9 hpf. Scale bar: 200 \u00b5m. Note that mScarlet-V5 fluorescence served as an internal control. (F) Single-plane confocal images of cells in embryos injected with sfGFP-ZF1 mRNA, mScarlet-V5 mRNA and abmut-spop mRNA (left) or ab-spop mRNA (right) at 9 hpf. Scale bar: 20 \u00b5m. (G) Representative images of embryos injected with sfGFP-ZF1 mRNA and mScarlet-V5 mRNA (left) or with sfGFP-ZF1 mRNA and mScarlet-V5 mRNA and deGradFP mRNA (middle) or zGrad mRNA (right) at 9 hpf. Scale bar: 200 \u00b5m. (H) Quantification of control and Zif-1-mediated sfGFP-ZF1 degradation shown in E (blue), Abmut-SPOP control and Ab-SPOP-mediated sfGFP-ZF1 degradation shown in F (green), and deGradFP-mediated and zGrad-mediated sfGFP-ZF1 degradation shown in G (red). Mean, SD and n are indicated. **p<0.01.\u00a0.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Images of embryos injected with sfGFP-mAID mRNA and different amounts of OsTIR1-mCherry mRNA and incubated with 0.2%EtOH (left) or the auxin IAA 500 \u00b5M (right) over a 3 hr time course.\u00a0Scale bar: 1 mm. (B) Images of embryos injected with zGrad mRNA and OsTIR1-mCherry mRNA at 24 hpf. Scale bar: 1 mm. (C) Percentage of deformed embryos among embryos injected with zGrad mRNA and OsTIR1-mCherry mRNA at 24 hpf.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Images of embryos injected with sfGFP-ZF1 mRNA, mScarlet-V5 mRNA and abmut-spop mRNA (left) or ab-spop mRNA (right) at 8 hpf. Scale bar: 1 mm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Images of embryos injected with sfGFP-ZF1 mRNA and mScarlet-V5 mRNA (left) or sfGFP-ZF1 mRNA and mScarlet-V5 mRNA and zGrad mRNA (middle) and uninjected control embryos (right) at 2.5 hpf. Scale bar: 1 mm.\n\nSecond, we tested the ZIF-1/ZF1 tag degradation system. This system uses the C. elegans SOCS-box adaptor protein ZIF-1 which binds to the zinc-finger domain ZF1 to recruit ZF1-containing protein to the ECS (Elongin-C, Cul2, SOCS-box family) E3 ubiquitin ligase complex for proteasomal destruction (Figure 1A) (Armenti et al., 2014). We co-injected one-cell stage embryos with sfGFP-ZF1 mRNA, zif-1 mRNA and mScarlet-V5 mRNA and assessed sfGFP-ZF1 degradation 9 hr later at the epiboly stage. The sequences of the ZF1 tag and ZIF-1 were codon optimized for zebrafish and mScarlet-V5 served as an internal standard. Using the ratio of sfGFP to mScarlet fluorescence intensity as a measure, we found that the ZIF-1/ZF1 tag degradation only reduced the levels of sfGFP-ZF1 by 17% (Figure 1E,H), indicating that the ZIF-1/ZF1 tag degradation system does not efficiently degrade ZF1-tagged proteins in zebrafish.\n\nThird, we tested the Ab-SPOP/FP-tag degradation system. This system uses the CULLIN-binding domain from the human Speckle Type BTB/POZ Protein (SPOP) adaptor protein fused to the single domain anti-GFP nanobody vhhGFP4 (Figure 1A) (Shin et al., 2015). The Ab-SPOP hybrid adaptor protein targets nuclear but not cytoplasmic FP-tagged proteins for degradation. We co-injected one-cell stage embryos with sfGFP-ZF1 mRNA, Ab-SPOP mRNA or Abmut-SPOP mRNA and mScarlet-V5 mRNA and assessed sfGFP-ZF1 degradation 9 hr later at the epiboly stage. Abmut-SPOP is a negative control and does not bind FPs because the GFP-binding domain in the nanobody is deleted (Shin et al., 2015). We assessed the degree of GFP degradation as the ratio of sfGFP to mScarlet fluorescence intensity in the cytoplasm and the nucleus. Consistent with the initial description (Shin et al., 2015), Ab-SPOP efficiently degraded nuclear sfGFP-ZF1 (70% reduction, Figure 1F,H, Figure 1\u2014figure supplement 2) but not cytoplasmic sfGFP-ZF1 (13% reduction, Figure 1F,H, Figure 1\u2014figure supplement 2). Abmut-SPOP did not cause any detectable sfGFP-ZF1 degradation (Figure 1F, Figure 1\u2014figure supplement 2). As reported previously (Shin et al., 2015), this confirms that the Ab-SPOP/FP-tag degradation system degrades nuclear proteins efficiently but is not suitable for the degradation of non-nuclear proteins in zebrafish.\n\nFourth, we tested the degrade Green Fluorescent Protein (deGradFP) system. This system uses the F-box domain from the Drosophila Slimb adaptor protein fused to the anti-GFP nanobody vhhGFP4 to target FP-tagged proteins for degradation (Figure 1A and B and Caussinus et al., 2011). We co-injected one-cell stage embryos with sfGFP-ZF1 mRNA, deGradFP mRNA and mScarlet-V5 mRNA and assessed sfGFP-ZF1 degradation 9 hr later at the epiboly stage. As above, mScarlet-V5 served as an internal standard and GFP degradation was assessed as the ratio of sfGFP to mScarlet fluorescence intensity. We found that deGradFP reduced sfGFP-ZF1 only slightly (19% reduction, Figure 1G,H). Since the fusion of the anti-GFP nanobody to the Cullin-binding domain from SPOP resulted in efficient albeit only nuclear degradation of GFP, we reasoned that the anti-GFP nanobody recognizes GFP-tagged proteins but that the Slimb F-box domain is not efficiently recruited to the E3 ligase complex in zebrafish. We therefore replaced the Slimb F-box domain in deGradFP with the homologuous F-box domain from zebrafish, reasoning that this should result in more efficient GFP degradation in zebrafish. Based on sequence homology, we identified the zebrafish F-box and WD repeat domain containing 11b (fbxw11b) gene as the Drosophila slmb orthologue. We then replaced the Drosophila F-box domain from Slimb in deGradFP with the zebrafish F-box domain from Fbxw11b (Figure 1B,C). We named this hybrid adaptor protein zGrad for zebrafish deGradFP. To test whether zGrad degrades GFP-tagged proteins, we co-injected one-cell stage embryos with sfGFP-ZF1 mRNA, zGrad mRNA and mScarlet-V5 mRNA and assessed sfGFP-ZF1 degradation 9 hr later at the epiboly stage using the ratio of sfGFP to mScarlet fluorescence intensity. In contrast to deGradFP, which depleted 19% of sfGFP-ZF1, zGrad depleted sfGFP-ZF1 in both the cytoplasm and the nucleus by 89% (Figure 1G,H). Importantly, we observed degradation of sfGFP-ZF1 by zGrad already at 2.5 hpf (Figure 1\u2014figure supplement 3). Together, this indicates that zGrad efficiently targets tagged GFP in the cytoplasm for degradation and should be suitable for assessing protein function in zebrafish.\n\n### zGrad degrades nuclear, transmembrane and cytoplasmic FP-tagged proteins\n\nNext, we asked whether zGrad degrades GFP-tagged proteins in different cellular compartments using a transgenic line that expresses zGrad from a heat-shock-inducible promoter in the embryo (hsp70l:zGrad).\n\nFirst, we tested whether zGrad degrades the nuclear protein Histone 2A (H2A). We generated hsp70l:zGrad embryos that also expressed H2A-EGFP and H2A-mCherry from two identical 69 kb genomic fragments spanning the cxcr4b locus (cxcr4b:H2A-GFP; cxcr4b:H2A-mCherry). Among other tissues, the cxcr4b promoter drives expression in the somites and the posterior lateral line primordium (primordium) (Figure 2\u2014figure supplement 1) (Chong et al., 2001). Such embryos were heat shocked at 30 hpf for 1 hr and imaged over 9.5 hr. Compared to control embryos that did not carry the hsp70l:zGrad transgene, H2A-EGFP degradation was discernible in zGrad-expressing embryos within 2-3\u00a0hr post heat shock in all tissues that expressed nuclear EGFP from the cxcr4b promoter (skin, pronephros, somites, neural tube and primordium, Figure 2A\u2013E, Figure 2\u2014Video 1). We quantified H2A-EGFP levels in heat-shocked control embryos and heat-shocked hsp70l:zGrad embryos using the fluorescence intensity of H2A-mCherry as a reference. Since H2A-mCherry was expressed from the same promoter as H2A-EGFP and since H2A-mCherry is not recognized by the anti-GFP nanobody and should not be subjected to zGrad-mediated protein degradation (Caussinus et al., 2011), comparing the ratio of H2A-mCherry expression levels to H2A-EGFP should be a measure of H2A-EGFP in the absence of zGrad-mediated degradation. Further, we normalized the H2A-EGFP-to-H2A-mCherry fluorescence intensity ratios between zGrad-expressing and heat-shocked control embryos. In the somites, the levels of H2A-EGFP was decreased by 87% (Figure 2C), while in the primordium, the levels of H2A-EGFP was decreased by 22% (Figure 2E). The more efficient degradation of H2A-EGFP in the somites than in the primordium is probably due to the lower levels of H2A-EGFP and the lack of H2A-EGFP production in the somites at the time of zGrad induction (Figure 2\u2014figure supplements 1 and 2) (Chong et al., 2001).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of strategy to assess zGrad-mediated H2A-EGFP degradation in the somites and the primordium.\u00a0(B) Maximum-projected confocal images of nuclei in the somites in heat-shocked cxcr4b:H2A-EGFP; cxcr4b:H2A-mCherry embryos transgenic for hsp70l:zGrad (right) or not (left) at indicated time in min after the end of heat shock (29\u201330 hpf). Scale bar: 20 \u00b5m. (C) Left, quantification of H2A-EGFP-to-H2A-mCherry ratios in the somites of control (blue) and zGrad-expressing embryos (red) after the end of heat shock in min. Mean and SD are indicated. Right, H2A-EGFP-to-H2A-mCherry ratio of zGrad-expressing embryos normalized to control embryos (black dots) and fitted to a one-exponential decay model (red). (D) Maximum-projected confocal images of primordium nuclei in heat-shocked cxcr4b:H2A-EGFP; cxcr4b:H2A-mCherry embryos transgenic for hsp70l:zGrad (bottom) or not (top) at indicated time in min after the end of heat shock (29\u201330 hpf). Scale bar: 50 \u00b5m. (E) Left, quantification of H2A-EGFP-to-H2A-mCherry ratios in the primordia of control (blue) and zGrad-expressing embryos (red) after the end of heat shock in min. Mean and SD are indicated. Right, H2A-EGFP-to-H2A-mCherry ratio of zGrad-expressing embryos normalized to control embryos (black dots) and fit to a one-exponential decay model (red). (F) Schematic of strategy to assess zGrad-mediated Cdh1-sfGFP degradation in the skin (enveloping and epidermal basal layer). (G) Maximum-projected confocal images of the skin in heat-shocked cdh1:cdh1-sfGFP; cdh1:cdh1-TagRFP embryos transgenic for hsp70l:zGrad (right) or not (left) at indicated time in min after the end of heat shock (31 hpf). Scale bar: 10 \u00b5m. (H) Top, quantification of Cdh1-sfGFP-to-Cdh1-TagRFP ratios in the primordia of control (blue) and zGrad-expressing embryos (red) after the end of heat shock in min. Mean and SD are indicated. Bottom, Cdh1-sfGFP-to-Cdh1-TagRFP ratio of zGrad-expressing embryos normalized to control embryos (black dots) and fit to a one-exponential decay model (red). (I) Schematic of strategy to assess zGrad-mediated Ctnna-Citrine degradation in the skin. (J) Maximum-projected confocal images of skin cells in heat-shocked ctnna:ctnna-Citrine/+ embryos transgenic for hsp70l:zGrad (right) or non-hsp70l:zGrad transgenic controls (left) at indicated time in min past the end of heat shock (31 hpf). Scale bar: 50 \u00b5m. (K) Left, quantification of Ctnna-Citrine levels in the skin of control (blue) and zGrad-expressing embryos (red) after the end of heat shock in min. Mean and SD are indicated. Right, Ctnna-Citrine levels in zGrad-expressing embryos normalized to Ctnna-Citrine levels in control embryos (black dots) and fit to a one-exponential decay model (red).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) Images of cxcr4b:h2a-EGFP embryos fixed at 13 hpf (A) and 33 hpf (B) and stained by in situ hybridization against EGFP mRNA.\u00a0(C, D) Images of cxcr4b:h2a-mCherry embryos fixed at 13 hpf (C) and 33 hpf (D) and stained by in situ hybridization against mCherry mRNA. Scale Bars: 200 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Quantification of H2A-EGFP fluorescence intensity in the primordium (blue) and in the somites (red) of control embryos shown in Figure 2A\u2013E.\u00a0Time after the end of the heat shock is indicated in min on the x-axis. Mean and SD are indicated. Note that the H2A-EGFP fluorescence intensity in the primordium was on average 3.8 times brighter than the H2A-EGFP fluorescence intensity in the somites. (B) Quantification of H2A-mCherry fluorescence intensity in the primordium (blue) and in the somites (red) of control embryos in Figure 2A\u2013E. Time after the end of the heat shock is indicated in min on the x-axis. Mean and SD are indicated. Note that the H2A-mCherry fluorescence intensity in the primordium was on average 5.1 times brighter than the H2A-mCherry fluorescence intensity in the somites.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Images of hsp70l:sec-GFP; hsp70:sec-mCherry control embryos (left) and hsp70l:sec-GFP; hsp70:sec-mCherry; hsp70l:zGrad embryos (right) 5 hr post heat-shock at 30 hpf.\u00a0Scale bar: 50 \u00b5m.\n\nWe further characterized the kinetics of zGrad-mediated degradation by determining the time interval between the start of the heat shock to induce zGrad expression and the first observable difference in EGFP/mCherry levels between zGrad-expressing embryos and control embryos. We called this time interval the time for onset of degradation. We also fitted the EGFP/mCherry ratio to a one-phase exponential decay model to extract the half-life of zGrad-mediated degradation. Although this is a simplification because the model does not account for EGFP production \u2013 a variable that we cannot easily measure \u2013 we expect that it gives a rough estimate for the time it takes to degrade a GFP-tagged protein once zGrad is expressed. The time for onset of degradation and half-life for H2A-EGFP in the somites was 200 min and 156 min, respectively (Figure 2C, Table 1). The time for onset of degradation and the half-life for H2A-EGFP degradation in the primordium was 140 min and 29 min, respectively (Figure 2E, Table 1).\n\n**Table 1.**\n Cdh1 transgenic lines rescue cdh1 mutants.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Transgenic line</th>\n      <th>Total number of embryos</th>\n      <th>Transgenic embryos phenotypically wild type</th>\n      <th>Non-transgenic embryos phenotypically wild type</th>\n      <th>Embryos phenotypically cdh1 mutant</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>cdh1:cdh1-sfGFP</td>\n      <td>306 (100 %)</td>\n      <td>149 (47 %)</td>\n      <td>96 (33 %)</td>\n      <td>61 (20 %)</td>\n    </tr>\n    <tr>\n      <td>cdh1:cdh1-TagRFP</td>\n      <td>432 (100 %)</td>\n      <td>204 (47 %)</td>\n      <td>172 (40 %)</td>\n      <td>56 (13%)</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Summary of degradation kinetics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>FP-Tagged protein</th>\n      <th>Promoter expressing zGrad</th>\n      <th>Percent reduction</th>\n      <th>Degradation half-life in min</th>\n      <th>Time for onset of degradation in min</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>sfGFP-ZF1</td>\n      <td>mRNA</td>\n      <td>89%</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Cxcr4b-EGFP</td>\n      <td>cxcr4b</td>\n      <td>86%</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>H2A-EGFP (in somites)</td>\n      <td>hsp70l</td>\n      <td>87%</td>\n      <td>156</td>\n      <td>200</td>\n    </tr>\n    <tr>\n      <td>H2A-EGFP (in primordium)</td>\n      <td>hsp70l</td>\n      <td>22%</td>\n      <td>29\u2020</td>\n      <td>140</td>\n    </tr>\n    <tr>\n      <td>Cdh1-sfGFP</td>\n      <td>hsp70l</td>\n      <td>79%</td>\n      <td>24</td>\n      <td>75</td>\n    </tr>\n    <tr>\n      <td>Ctnna-Citrine</td>\n      <td>hsp70l</td>\n      <td>58%</td>\n      <td>19</td>\n      <td>65</td>\n    </tr>\n  </tbody>\n</table>\n\n_\u2020Note that the zGrad-mediated degradation of H2A-EGFP in the primordium is obscured by the continued production of H2A-EGFP._\n\nSecond, we tested whether zGrad degrades the transmembrane protein E-Cadherin (Cdh1). We generated two transgenes that express Cdh1-sfGFP and Cdh1-TagRFP from a 72 kb genomic fragment spanning the cdh1 locus (cdh1:cdh1-sfGFP; cdh1:cdh1-TagRFP). These transgenes recapitulated the endogenous Cdh1 expression pattern and rescued the lethality of cdh1 mutant embryos (Table 2), indicating that Cdh1-sfGFP and Cdh1-TagRFP are functional. Using these lines, we generated hsp70l:zGrad; cdh1:cdh1-sfGFP; cdh1:cdh1-TagRFP embryos and cdh1:cdh1-sfGFP; cdh1:cdh1-TagRFP control embryos. These embryos were heat shocked at 31 hpf for\u00a030\u00a0min and imaged for 4.8 hr. In zGrad-expressing embryos, Cdh1-sfGFP degradation was uniformly detected within 15 min post heat shock in the skin of the embryo (enveloping layer and epidermal basal layer) (Figure 2F\u2013H, Figure 2\u2014Video 2). As detailed above for the quantification of zGrad-mediated H2A-EGFP degradation, we used the fluorescence intensity of Cdh1-TagRFP as a reference to quantify the reduction of Cdh1-sfGFP. We divided the Cdh1-sfGFP fluorescence intensity by the Cdh1-TagRFP fluorescence intensity and normalized the ratio in the zGrad-expressing embryos to the ratio in the heat-shocked control embryos. This analysis showed that zGrad expression reduced the levels of Cdh1-sfGFP in the primordium by 79% with a degradation half-life of 24 min (Figure 2H). The time for onset of Cdh1-sfGFP degradation was 75 min (Table 1).\n\nThird, we tested whether zGrad degrades the cytoplasmic protein \u03b1E-Catenin (Ctnna). To address this, we used a gene-trap line that expresses \u03b1E-Catenin-Citrine (Ctnna-Citrine) from the ctnna locus (Trinh et al., 2011; \u017digman et al., 2011). In this line an artificial exon containing the Citrine coding sequence flanked by a splice donor and a splice acceptor is inserted between the exons 7 and 8 of the ctnna gene (\u017digman et al., 2011). Homozygous ctnna:ctnna-Citrine fish are viable, indicating that Ctnna-Citrine is functional (Trinh et al., 2011). We generated hsp70l:zGrad; ctnna:ctnna-Citrine/+ embryos and ctnna:ctnna-Citrine/+ control embryos and heat shocked these embryos at 31 hpf for 30\u00a0min and imaged the embryos for 8 hr (Figure 2I). In contrast to heat-shocked control embryos, Ctnna-Citrine was degraded in zGrad-expressing embryos (Figure 2J,K). Since Ctnna tagged with a red fluorescent protein is not available, we could not perform a ratiometric analysis and instead quantified the total Ctnna-Citrine fluorescent intensity. This analysis showed that the time for onset of degradation of Ctnna-Citrine was 65 min and that Ctnna-Citrine was degraded by 58% with a half-life of 19 min in zGrad-expressing embryos (Figure 2K, Table 1).\n\nFinally, we tested whether zGrad degrades GFP targeted to the secretory pathway by a signal peptide. Using fish that express secreted EGFP and secreted mCherry from a heat shock promoter (hsp70l:sec-GFP; hsp70:sec-mCherry), we generated hsp70l:sec-GFP; hsp70:sec-mCherry; hsp70l:zGrad embryos and hsp70l:sec-GFP; hsp70:sec-mCherry control embryos. Unlike H2A-EGFP, Cdh1-sfGFP and Ctnna-Citrine, expression of zGrad did not degrade secreted GFP (Figure 2\u2014figure supplement 3).\n\nTogether, these observations indicate that zGrad targets nuclear, cytoplasmic, and transmembrane proteins tagged with EGFP or Citrine for degradation.\n\n### zGrad-mediated protein degradation results in loss-of-protein function\n\nSince zGrad efficiently degrades proteins from different cellular compartments (Figure 2), we asked whether we can use zGrad-mediated protein depletion to replicate known loss of protein function phenotypes and uncover novel ones. We addressed this question in several ways. First, we tested whether zGrad degrades cytoplasmic Ctnna-Citrine to disrupt its function in cell-cell adhesion (Kofron et al., 1997) using the ctnna:ctnna-Citrine gene trap line. We injected zGrad mRNA or sfGFP control mRNA into one-cell stage embryos that were maternal-zygotic Ctnna-Citrine (MZ ctnna:ctnna-Citrine, Figure 3A), maternal Ctnna-Citrine (M ctnna:ctnna-Citrine, Figure 3D) or zygotic Ctnna-Citrine (Z ctnna:ctnna-Citrine, Figure 3G). In zGrad mRNA-injected MZ ctnna:ctnna-Citrine and M ctnna:ctnna-Citrine embryos the cells started to become detached and partly shed from the embryo resulting in embryonic lethality around 3 to 5 hpf (Figure 3B,C,E,F). Control embryos injected with sfGFP mRNA developed normally (Figure 3B,C,E,F). Similarly but delayed by 20 hr, in zGrad mRNA-injected Z ctnna:ctnna-Citrine embryos, cells detached from the embryo by 24 hpf and about half of the embryos died (note, half the embryos were zygotically homozygous for ctnna:ctnna-Citrine since we crossed ctnna:ctnna-Citrine/ctnna:ctnna-Citrine males to ctnna:ctnna-Citrine/+\u00a0females, Figure 3G,H,I) while control injected embryos were unaffected (Figure 3H,I). The observed phenotype in Z ctnna:ctnna-Citrine embryos injected with zGrad mRNA is similar to the defects reported for zygotic ctnna-/- embryos (Han et al., 2016). Thus, zGrad depletes Ctnna-Citrine to levels too low to sustain cell-cell adhesion and embryonic development. Moreover, it suggests that maternally supplied Ctnna can sustain cell-cell adhesion and embryonic development for about 1 day before the embryo requires zygotic Ctnna.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig3-v2.jpg)\n\n**Figure 3.:** (A) Breeding strategy to assess zGrad-mediated degradation of maternally and zygotically provided Ctnna-Citrine on embryonic development.\u00a0(B) Images of MZ ctnna:ctnna-Citrine embryos injected with sfGFP control mRNA (left) or zGrad mRNA (right). Scale bar: 100 \u00b5m. (C) Quantification of MZ ctnna:ctnna-Citrine embryos injected with sfGFP control mRNA or zGrad mRNA that disintegrated and died. (D) Breeding strategy to assess zGrad-mediated degradation of maternally provided Ctnna-Citrine on embryonic development. (E) Images of M ctnna:ctnna-Citrine embryos injected with sfGFP control mRNA (left) or zGrad mRNA (right). Scale bar: 100 \u00b5m. (F) Quantification of M ctnna:ctnna-Citrine embryos injected with sfGFP control mRNA or zGrad mRNA that disintegrated and died. (G) Breeding strategy to assess zGrad-mediated degradation of zygotically provided Ctnna-Citrine on embryonic development. (H) Images of Z ctnna:ctnna-Citrine embryos injected with sfGFP control mRNA (left) or zGrad mRNA (right). Scale bar: 100 \u00b5m. (I) Quantification of Z ctnna:ctnna-Citrine embryos injected with sfGFP control mRNA and zGrad mRNA that displayed tissue rupture (arrow) and died.\n\nSecond, we tested whether zGrad degrades transmembrane Cdh1-sfGFP efficiently enough to disrupt its function (Yoshida-Noro et al., 1984; Stephenson et al., 2010; Larue et al., 1994) and uncover late requirements of Cdh1 in cell-cell adhesion. Such an analysis is currently not possible because cdh1-/- embryos die during late gastrulation stages (Kane et al., 1996; Kane et al., 2005; Montero et al., 2005). To address this, we crossed hsp70l:zGrad/+; cdh1+/-; cdh1:cdh1-sfGFP/+ fish to cdh1+/- fish and as a control cdh1+/-; cdh1:cdh1-sfGFP/+ fish to cdh1+/- fish. We separated cdh1:cdh1-sfGFP transgenic from cdh1:cdh1-sfGFP non-transgenic embryos from both crosses and separately heat-shocked the embryos for 1 hr at 25 hpf (Figure 4A, Figure 4\u2014figure supplement 1A). In contrast to control embryos which showed no visible defects (Figure 4B,C), we found cdh1-/-; cdh1:cdh1-sfGFP/+; hsp70l:zGrad/+ embryos shed their skin and rapidly died (Figure 4D and Figure 4\u2014figure supplement 1A), consistent with the idea that zGrad-mediated Cdh1-sfGFP degradation disrupts the cell-cell adhesion between the skin cells of the embryos that lack endogenous\u00a0Cdh1 function. We would like to note that the skin phenotype in embryos with depletion of Cdh1-sfGFP was not always fully penetrant (Figure 4\u2014figure supplement 1A). Depending on the stage and the duration of the heat shock, we believe that Cdh1-sfGFP is not always depleted to low enough levels to cause a cell-cell adhesion defect. In summary, these observations suggest that transient expression of zGrad can efficiently degrade GFP-tagged proteins and, if GFP-tagged proteins are depleted sufficiently, cause loss-of-protein function and uncover phenotypes past the initial requirements of essential proteins.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig4-v2.jpg)\n\n**Figure 4.:** (A) Breeding strategy to assess heat shock-induced zGrad-mediated degradation of Cdh1-sfGFP on embryonic development.\u00a0(B, C, D) Images of cdh1+/-; hsp70l:zgrad/+; cdh1:cdh1-sfGFP/+ control embryo (B), cdh1-/-; cdh1:cdh1-sfGFP/+ control embryo (C) and cdh1-/-; hsp70l:zGrad/+; cdh1:cdh1-sfGFP embryo with skin defects (D) at 29 hpf. Embryos were heat shocked at 25 hpf for 1 hr. Scale bar: 200 \u00b5m. Insets in (C, D) are magnified images of the skin in the same embryos. Scale bar: 50 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Crossing scheme of indicated genotypes and % of embryos with expected and observed phenotype.\n\nThird, we asked whether induction of zGrad can degrade the Sdf1 chemokine receptor Cxcr4b tagged with EGFP to temporarily disrupt its function as a guidance receptor for the migration of the primordium (Haas and Gilmour, 2006; David et al., 2002). For this, we heat shocked hsp70l:zGrad; cxcr4b-/-; cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7 embryos and cxcr4b-/-; cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7 control embryos at 28 hpf when the primordium has completed a third of its migration along the body of the embryo and recorded the levels of Cxcr4b-EGFP and the migration of the primordium by time lapse microscopy. Cxcr4b-EGFP expressed from the cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7 transgene restores the migration of the primordium in cxcr4b-/- embryos and Kate2-CaaX expressed from an internal ribosomal entry site (IRES) serves as a marker for the primordium and an internal reference for how much Cxcr4b-EGFP is produced (Venkiteswaran et al., 2013; Lewellis et al., 2013). This analysis showed that induction of zGrad degraded Cxcr4b-EGFP (Figure 5A,B,E) and resulted in rounded primordium morphology (Figure 5A,C) and stalled primordium migration (Figure 5A,D,E) 90 min after heat shock. After 120 min newly produced Cxcr4b-EGFP was detectable again and the primordium resumed its migration (Figure 5A,E, Figure 5\u2014Video 1). Thus, a pulse of zGrad expression can deplete Cxcr4b-EGFP to levels unable to sustain directed cell migration of the primordium. This suggests that temporal zGrad induction from the heat shock promoter can be used to induce reversible protein loss-of-function scenarios.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig5-v2.jpg)\n\n**Figure 5.:** (A) Maximum-projected confocal images of the primordia in heat-shocked cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7; cxcr4b-/- embryos transgenic for hsp70l:zGrad (lower panels) or not (upper panels) at indicated time in min after the end of heat shock (31 hpf).\u00a0Scale bar: 50 \u00b5m. (B) Quantification of Cxcr4b-EGFP-to-Kate2-CaaX ratios in the primordia of control (blue) and zGrad-expressing embryos (red) after the end of heat shock in min. Mean and SD are indicated. (C) Quantification of circularity of the primordia of control (blue) and zGrad-expressing embryos (red) after the end of heat shock in min. Mean and SD are indicated. (D) Quantification of the cumulative primordium migration distance in control (blue) and zGrad-expressing embryos (red) after the end of heat shock in min. Mean and SD are indicated. Inset shows magnification of the 30 min to 240 min time interval. **=p\u00a0<\u00a00.01. (E) Kymograph of the primordia in heat-shocked cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7; cxcr4b-/- embryos transgenic for hsp70l:zGrad (bottom) or not (top). Cxcr4b-EGFP is shown in green and Kate2-CaaX in red. Asterisk indicates the time interval in which Cxcr4b-EGFP is transiently degraded and the primordium transiently ceases to migrate.\n\nFourth, we asked whether tissue-specific expression of zGrad from the cxcr4b promoter can degrade Cxcr4b-EGFP and recapitulate the cxcr4b mutant primordium migration phenotype (Haas and Gilmour, 2006). To address this question, we expressed zGrad from a 69 kb genomic fragment spanning the cxcr4b locus (cxcr4b:zGrad) (Figure 6A). The expression pattern of zGrad mRNA in cxcr4b:zGrad embryos faithfully recapitulated the cxcr4b mRNA expression pattern (Figure 6B). We crossed this line into the cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1; cxcr4b-/- background and determined the degree of Cxcr4b-EGFP degradation compared to Kate2-CaaX expression in primordia of cxcr4b:zGrad embryos and control embryos. Similar to the cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7 transgenic line used above, the cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 fully restores primordium migration in cxcr4b mutant embryos, however, it expresses Cxcr4b-EGFP at two-fold lower levels (Fuentes et al., 2016). This analysis showed that zGrad efficiently depleted Cxcr4b-EGFP below detectable levels (Figure 6C,D). Next, we assessed the primordium migration by staining for cxcr4b mRNA at 38 hpf. In cxcr4b mutant control embryos that carried the rescuing cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 transgene but lacked the cxcr4b:zGrad transgene, the primordium completed its migration and deposited the same number of neuromasts with the same spacing as in wild-type embryos (Figure 6E,F, Figure 6\u2014figure supplement 1B). In contrast, embryos with the cxcr4b:zGrad transgene migrated on average only 72.5% of the distance (Figure 6E,F). Compared to primordia in cxcr4b-/- embryos, which showed little to no directed migration (Figure 6E,F) (Haas and Gilmour, 2006), primordia in cxcr4b-/-; cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1; cxcr4b:zGrad embryos migrated directionally but at reduced speed, did not fully complete their migration and failed to deposit the terminal neuromasts by 4 dpf (Figure 6E,F, Figure 6\u2014figure supplement 1B,C). Importantly, expression of zGrad in the primordium did not affect its migration (Figure 6\u2014figure supplement 1A). This suggests that zGrad expression from the cxcr4b promoter efficiently degrades Cxcr4b-EGFP to levels low enough to slow primordium migration but not low enough to recapitulate the primordium migration defect observed in embryos with loss of Cxcr4b function, probably because the cxcr4b promoter does not express zGrad at high enough levels for complete degradation of Cxcr4b-EGFP driven from the same promoter. More generally, these observations indicate that expression of zGrad from a tissue-specific promoter can result in efficient degradation of GFP-tagged proteins to levels low enough to perturb protein function and cause tissue-specific defects.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic of strategy to assess zGrad-mediated Cxcr4b-EGFP degradation in the primordium on primordium migration.\u00a0(B) In situ hybridization against cxcr4b mRNA in a wildtype embryo and against zGrad mRNA in a cxcr4b:zGrad embryo at 24hpf. Scale bar: 0.5 mm. (C) Single-plane confocal images of the primordium in cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 control (left) and cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1; cxcr4b:zGrad embryos (right) at 36 hpf. Note that the embryos are cxcr4b\u00a0+/-\u00a0or cxcr4b -/-. Scale bar: 50 \u00b5m. (D) Quantification of Cxcr4b-EGFP to Kate2-CaaX fluorescence intensity ratio in the primordia of control embryos (blue) and embryos expressing zGrad in the primordium at 36 hpf. Mean and SD are indicated. **=p\u00a0<\u00a00.01. (E) In situ hybridization against cxcr4b mRNA in cxcr4b-/+ (top left), cxcr4b-/- (top right), cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1; cxcr4b-/- (bottom left) and cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1; cxcr4b-/-; cxcr4b:zGrad embryos (bottom right) at 38 hpf. Arrows indicate the location of the primordium. Scale bar: 0.5 mm. (F) Quantification of primordia migration distance of the indicated genotypes at 38 hpf. Mean, SD and n are indicated. **=p\u00a0<\u00a00.01, N.S.\u00a0= p > 0.05.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43125/elife-43125-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) In situ hybridization against cxcr4b mRNA in a 38 hpf cxcr4b:zGrad; cxcr4b -/+ embryo.\u00a0Arrow indicates the location of the primordium. Scale bar: 0.5 mm. (B) Images of live embryos of indicated genotypes stained for neuromasts with DASPEI at 4 dpf. Note that the cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 transgene carries cryaa:dsRed, which expresses dsRED in the lens, and the cxcr4b:zGrad transgene carries myl7:mScarlet, which expresses mScarlet in the myocardium, as transgenic markers. Arrows indicate the position of the last neuromast. Scale bar: 1 mm. (C) Quantification of the position of the last neuromast normalized to body length of embryos shown in B. **=p\u00a0<\u00a00.01, N.S.\u00a0= p > 0.05.\n\n## Discussion\n\nIn our study, we sought to develop a tool that allows for the acute inactivation of proteins in zebrafish. We modified the anti-GFP nanobody-based deGradFP system from flies (Brauchle et al., 2014) and adapted it to zebrafish and named it zGrad. zGrad efficiently degrades GFP-tagged transmembrane, cytoplasmic and nuclear proteins. It recognizes different GFP versions (EGFP, sfGFP and Citrine, Figures 1 and 2) and targets the tagged proteins for degradation. In contrast to other degron systems (Natsume and Kanemaki, 2017) and similar to deGradFP (Caussinus et al., 2011), zGrad degraded proteins tagged at the N-terminus, embedded within the protein and at the C-terminus in the examples reported here (Figures 1 and 2). We found that zGrad rapidly degrades GFP-tagged proteins with half-lives of around 20 min for transmembrane and cytoplasmic proteins (Figure 2 and Table 1). These kinetics are similar to the kinetics reported for other degron-based systems (Daniel et al., 2018; Nishimura et al., 2009; Armenti et al., 2014). The degradation of H2A-EGFP was significantly slower displaying a half-life of about 2.5 hr (Figure 2 and Table 1). This could be due to the long life-time of histone proteins (Clift et al., 2017) and the possibility that protein degradation is less efficient in nuclei. Importantly, in our system zGrad expression needs to be induced. This delays the onset of degradation by 65 to 200 min for the proteins we investigated. Nevertheless, zGrad degrades proteins rapidly enough to assess the consequences of abrupt protein inactivation.\n\nRecently, the AID system was combined with the deGradFP system by fusing AID to the vhhGFP4 anti-GFP nanobody and shown to degrade GFP-tagged proteins in an auxin-dependent manner in zebrafish (Daniel et al., 2018). This elegant approach adds temporal control to the spatial control provided by the deGradFP system. Also, the fusion of AID to the vhhGFP4 nanobody overcomes the leakiness that we observed with the AID system (Daniel et al., 2018). However, compared to zGrad system, which requires the fusion of the protein of interest to GFP and the expression of zGrad, the mAID-nanobody system requires the expression of an additional component, the mAID-nanobody fusion protein \u2013 a feature that adds more versatility but also requires additional effort.\n\nOne simple use of zGrad is the study of the contribution of maternally supplied proteins in early development. Depletion of maternal proteins by expressing zGrad from injected mRNA or as purified protein should uncover early protein requirements and can circumvent the laborious process of generating maternal mutants for essential genes by germline replacement (Ciruna et al., 2002). Our finding that the depletion of maternal Ctnna results in an early and severe cell-cell adhesion defect is consistent with this idea (Figure 3). Alternatively, a pulse of zGrad should allow one to dissect the temporal requirements of proteins. Depending on the protein function this could result in a reversible phenotype as observed when we transiently stalled the migration of the primordium by depleting Cxcr4b (Figure 5) or to an irreversible phenotype if the function of the protein is continually required for viability as observed when we depleted Cdh1 and disrupted the integrity of the embryo (Figure 4). Another use of zGrad is to deplete proteins from certain tissues. By expressing zGrad from tissue-specific promoters, one can circumvent essential early requirements, assess later protein functions and disentangle the contribution of tissues to complex phenotypes. Our observation that depletion of Cxcr4b in the primordium by expressing zGrad from the cxcr4b promoter results in slowed migration supports this idea (Figure 6).\n\nAn important consideration is that zGrad needs to be expressed at high enough levels to deplete proteins to sufficiently low levels to fully disrupt protein function. One way to achieve high and\u00a0tissue-specific zGrad expression is to amplify the production of zGrad through such systems as Gal4/UAS (Scheer and Campos-Ortega, 1999) or \u2013 to also add temporal control \u2013 inducible systems such as the Tet-On system (Campbell et al., 2012). Such modifications combined with the increasing number of GFP-tagged transgenic (Trinh et al., 2011; Kawakami et al., 2010) and knock-in lines (Hoshijima et al., 2016) should render zGrad as a useful tool for the study of the consequences of acute loss-of-protein function in zebrafish, possibly also circumventing the problem of genetic compensation observed in studies of genetic mutants (Rossi et al., 2015).\n\n## Materials and methods\n\n### Zebrafish strains\n\nEmbryos were staged as previously described (Kimmel et al., 1995). Hours post fertilization (hpf) was used to determine the developmental age of the embryos. Embryos were incubated at 28.5\u00b0C from one-cell-stage (0 hpf) until the indicated time. cxcr4bt26035 (Knaut et al., 2003) homozygous mutant embryos were generated by inbreeding heterozygous adults, crossing homozygous adult with heterozygous adults or inbreeding homozygous adults. tg(cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX) (Venkiteswaran et al., 2013; Lewellis et al., 2013) embryos were generated by crossing heterozygous adults with wild-type adults and sorted by GFP expression. Gt(ctnna-citrine)Ct3a (Trinh et al., 2011; \u017digman et al., 2011) lines were maintained by inbreeding of heterozygous adults or homozygous adults. cdh1(tx230) (Kane et al., 1996) were kept as heterozygous adults and cdh1 homozygous embryos were generated by inbreeding heterozygous adults. The hsp70:sec-mCherry (Wang et al., 2018), cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 (Lewellis et al., 2013), cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7 (Venkiteswaran et al., 2013), cxcr4b:h2a-EGFP (Kozlovskaja-Gumbrien\u0117 et al., 2017) and cxcr4b:h2a-mCherry (Wang et al., 2018) were previously described. Zebrafish were maintained under the approval from IACUC (protocol number: 170105\u201302).\n\n### Generation of transgenic animals\n\n#### hsp70l:zGrad-IRES-h2a-TagBFP\n\nzGrad, IRES-h2a and TagBFP sequences were amplified by PCR and cloned into the plasmid pDEST-tol2-hsp70l (Kwan et al., 2007) by Gibson assembly (Gibson et al., 2009). pDEST-tol2-hsp70l contains a genomic fragment spanning 1.5 kb upstream of the hsp70l start codon (Halloran et al., 2000). 50 ng/\u00b5l of the pDEST-tol2-hsp70l-zGrad-IRES-TagBFP plasmid was co-injected with 25 ng/\u00b5l tol2 mRNA into one-cell-stage embryos. Founder fish were identified by in situ hybridization against vhhgfp4 sequence of heat-shocked offspring. Briefly, adult fish that were injected as embryos were outcrossed with wild-type adults and embryos were collected. At the shield stage, the embryos were heat-shocked at 39.5\u00b0C for 30 min. Preparation of the antisense RNA probe and whole-mount in situ hybridization were performed as previously described (Knaut et al., 2003). Fish that gave rise to hsp70l:zGrad-IRES-H2A-TagBFP offspring were kept as founder fish. zGrad activity was confirmed by heat shocking hsp70l:zGrad-IRES-H2A-TagBFP; cxcr4b:h2a-EGFP embryos and observation of H2A-GFP degradation. The line from the founder that showed the strongest GFP degradation was kept and used in this study. The full name of this line is tg(hsp70l:zGrad-IRES-h2a-TagBFP)p1. Note H2A-TagBFP expression from the IRES is not detectable in this line.\n\n#### cxcr4b:zGrad-IRES-h2a-TagBFP\n\nFor the cxcr4b:zGrad-IRES-h2a-TagBFP BAC transgene, we used the BAC clone DKEY-169F10 (Suster et al., 2011). This BAC clone contains the cxcr4b locus. We modified this BAC in two ways by recombineering. First, we modified pBS-IndHom-Tol2-FRT-GalK-cryaa-dsRed (Addgene plasmid # 73203 (Fuentes et al., 2016)) by replacing the cryaa:dsRed sequence with myl7:mScarlet and the FRT-GalK-FRT sequence with the kanR sequence. The myl7 (synonym cmlc2) promoter drives expression in the myocardium (Huang et al., 2003) and kanR allows for rapid kanamycin-based selection of recombinants. The full name of this plasmid is pBS-IndHom-Tol2(exon4)-Kan-Tol2(exon1)- myl7:mScarlet-Hom. We amplified Tol2(exon4)-Kan-Tol2(exon1)- myl7:mScarlet cassette by PCR and inserted it into the pIndigoBAC-5 backbone of the DKEY-169F10 BAC clone using kanamycin as a selection marker. Second, a cassette containing zGrad-IRES-h2a-TagBFP-FRT-galK-FRT flanked by homology arms upstream of the cxcr4b exon2 and downstream of the cxcr4b stop codon was inserted to replace the cxcr4b coding sequence in exon2 using galK as a selection marker. The galK cassette was removed by Flippase. The obtained BAC was characterized with sequencing the modified region in the BAC and EcoRI finger printing. This transgene expresses zGrad-IRES-H2A-TagBFP fused to five amino acids from cxcr4b exon1 under the cxcr4b promoter. The BAC was prepared with the nucleobond BAC 100 kit (Clonetech) and co-injected with 25 ng/\u00b5l tol2 mRNA into one-cell-stage embryos. Stable transgenic animals were identified by out-crossing injected adults and screening for the red hearts in 4 dpf larvae. Embryos were collected from each stable transgenic fish and tested for expression of zGrad by whole mount in situ hybridization 30 hpf. We selected the transgenic line that expressed the highest level of zGrad from the BAC transgene and used it in this study. The full name of this transgenic line is TgBAC(cxcr4b:zGrad-IRES-h2a-TagBFP)p3. Note H2A-TagBFP expression from the IRES is not detectable in this line.\n\nFor the hsp70l:sec-GFP transgene, the pDestTol2pA-hsp70l-anos1b-sv40pA plasmid was used as a template (Wang et al., 2018). Using Gibson cloning (Gibson et al., 2009), we replaced the anos1b coding sequence with the coding sequence of GFP fused to the 3\u2019 end of the fgf3 secretion signal (amino acids 1 to 18). We verified the final construct by sequencing and co-injected it along with tol2 transposase mRNA into zebrafish embryos at the one-cell stage. Stable transgenic fish were identified by out-crossing adults injected with the transgene and raising larvae from fish whose offspring were identified to express GFP upon heat shock as determined by green fluorescence. Founder fish were verified to carry a single copy of the transgene by determining the fraction of progeny carrying the transgene. The full name of this transgenic line is Tg(hsp70l:sec-GFP)p1.\n\n#### cdh1:cdh1-sfGFP and cdh1:cdh1-TagRFP lines\n\nFor the cdh1:cdh1-sfGFP and cdh1:cdh1-TagRFP BAC transgenes, we used the BAC clone CHORI-211\u2013175 C23. This BAC clone spans 72 kb of genomic sequence and contains the cdh1 locus and was modified in two ways by recombineering. First, the Tol2 sites and the cryaa:Cerulean transgenesis marker were inserted into the BAC backbone (Fuentes et al., 2016). Second, a cassette consisting of sfGFP-FRT-galK-FRT or TagRFP-FRT-galK-FRT flanked by 446 bp and 590 bp of homology upstream of the stop codon in cdh1 exon 16, and downstream of the stop codon in cdh1 exon 16, respectively, was inserted before the cdh1 stop codon using galK-mediated recombineering (Warming et al., 2005). The galK cassette was removed by Flippase-mediated recombination. This transgene expresses the full length of Cdh1 fused to sfGFP or TagRFP from the cdh1 promoter. The final BAC transgenes were characterized by EcoRI restriction digestion and sequencing of PCR amplicons of the modified locus. The CHORI-211\u2013175 C23 BAC clone was obtained from BACPAC Resources, Children' Hospital Oakland Research Institute, CA (bacpacorders@chori.org). The BACs were purified with the nucleobond BAC 100 kit (Clontech). We co-injected 1 nl of 40 ng/\u00b5l Tol2 mRNA and 50\u2013250 ng/\u00b5l of the cdh1:cdh1-sfGFP or cdh1:cdh1-TagRFP BAC transgene DNA into the lifting cell of the zygote of 0 to 20 min old embryos. The Tol2 mRNA was transcribed from the pCS2FA-transposase plasmid (Kwan et al., 2007) using the mMessage mMachine SP6 Transcription Kit (Thermo Fisher). Stable transgenic larvae were identified by out-crossing adults injected with the cdh1:cdh1-sfGFP or cdh1:cdh1-TagRFP BAC transgenes, and by raising larvae positive for the blue fluorescent transgenesis marker in the lens of the eye at 4 dpf. The full names of these two transgenic lines are TgBAC(cdh1:cdh1-sfGFP)p1 and TgBAC(cdh1:cdh1-TagRFP)p1.\n\nAll transgenic lines generated for this study are available upon request.\n\n### Generation of plasmids for in vitro transcription\n\nTo construct pCS2+-mScarlet-V5, the mScarlet coding sequence was amplified from pmScarlet-C1 (Addgene plasmid # 85042, (Bindels et al., 2017)) by PCR with a 5\u2019 primer containing V5-tag sequence and cloned into pCS2+ plasmid by Gibson assembly. To construct pCS2+-sfGFP, sfGFP coding sequence was amplified by PCR and cloned into pCS2+ plasmid by Gibson assembly.\n\nTo construct pCS2+-Nslmb-vhhGFP4, Nslmb-vhhGFP4 coding sequence was amplified from pcDNA3-NSlmb-vhhGFP4 (Addgene plasmid #35579, (Caussinus et al., 2011)) by PCR and cloned into pCS2+ plasmid by Gibson assembly.\n\nTo construct pCS2+-OsTIR1-mCherry, the OsTIR1 and mCherry coding sequences were amplified from pMK232-CMV-OsTIR1-PURO (Addgene plasmid #72834, (Natsume et al., 2016)) and pCS2+-lyn2mCherry (kind gift from Reinhard K\u00f6ster and Scott Fraser) respectively, by PCR and cloned into pCS2+ plasmid by Gibson assembly.\n\nTo construct pCS2+-sfGFP-mAID, the sfGFP coding sequence was amplified by PCR and the mAID tag sequence (Morawska and Ulrich, 2013) was generated by primer annealing and cloned into pCS2+ plasmid by Gibson assembly.\n\nTo construct pCS2+-fbxw11b-vhhGFP (pCS2+-zGrad), the coding sequence for the N-terminal 217 amino acids of Fbxw11b was amplified by PCR from cDNA of 36 hpf embryos, fused to the vhhGFP4 coding sequence and inserted into the pCS2+ plasmid by Gibson assembly. This plasmid is available from addgene (plasmid #119716).\n\nTo construct pCS2+-zif-1, the coding sequence of zif-1 was codon optimized for zebrafish by gene synthesis (IDT) and inserted into the pCS2+ plasmid by Gibson assembly.\n\nTo construct pCS2+-sfGFP-ZF1, the coding sequence of ZF1 was codon optimized for zebrafish by gene synthesis (IDT) and inserted together with sfGFP into the pCS2+ plasmid by Gibson assembly.\n\nThe pCS2+-vhhGFP4-hSPOP and pCS2+-vhhGFPmut-hSPOP plasmids were previously described (Shin et al., 2015) and kindly gifted by Byung Joon Hwang.\n\n### mRNA injection\n\nTemplates for in vitro mRNA transcription were generated by PCR or restriction digest of mRNA expression plasmids. mRNAs were transcribed using the mMESSAGE mMACHINE SP6 transcription Kit (Thermo Fisher Scientific). Injection mixes contained 50 ng/\u00b5l mRNAs except for the mAID experiment, where OsTIR1-mCherry mRNA was prepared as 10 ng/\u00b5l, 5 ng/\u00b5l and 1 ng/\u00b5l, with 0.1% Phenol Red Solution (LIFE TECHNOLOGIES). The injection mix was injected in one-cell-stage embryos. The quality of the\u00a0mRNA was assessed post injection through gel electrophoresis using the\u00a0remaining mix in the injection needle.\n\n### Auxin-inducible degradation\n\nNatural auxin 3-Indoleacetic acid (IAA, Sigma Aldrich) was dissolved in 100% ethanol at a concentration of 250 mM, protected from light and stored at \u221220\u00b0C. Injected embryos were raised in fish water (4 g/l instant ocean salt) without Methylene blue to avoid possible interference from the dye. 50 ng/\u00b5l sfGFP-mAID mRNA was co-injected with 10 ng/\u00b5l, 5 ng/\u00b5l or 1 ng/\u00b5l OsTIR1-mCherry mRNA. Injected embryos were dechorionated manually. At 8 hpf IAA was added to 500 \u00b5M final concentration (Daniel et al., 2018; Zhang et al., 2015). Images were taken on a Leica 165M FC Fluorescent Stereo Microscope equipped with a Leica DFC345 FX camera every hour for 3 hr.\n\n### Image acquisition and quantification of mRNA-injected embryos\n\nTo quantify the ratio of sfGFP-ZF1 fluorescence to mScarlet-V5 fluorescence, injected embryos were dechorionated manually or by adding Pronase (Sigma Aldrich) to 0.3 mg/ml on petri dishes coated with 2% agarose in fish water at 9 hpf. Injected embryos were mounted in 0.5% low-melt agarose (National Diagnostics)/Ringer\u2019s solution (MgSO4 0.6 mM, CaCl2 1 mM, KCl 5 mM, NaCl 111 mM, HEPES 5 mM) on a slide. Mounted embryos were imaged on Leica SP5 II confocal microscope equipped with HyD detectors (Leica Microsystems) using a Leica 20x (NA 0.7) objective and a Leica 40x water immersion lens (NA 1.1) in the case of Ab-SPOP-mediated GFP degradation.\n\nAll images were collected in the photon-counting mode with identical microscope settings. Quantification of signal intensity from injected embryos was performed using a custom-written ImageJ macro (Source code 1). Briefly, the macro selects a single Z-slice and generates a mask based on the mScarlet intensities using the Otsu thresholding algorithm. The mScarlet mask is then applied to the green and red channels of the same Z-slice to extract average GFP and mScarlet signal intensities only from the masked region. These procedures are repeated on the whole Z-stack. Average signal intensities from the first 40 Z-slices (62 \u00b5m) starting at the animal pole were used to calculate the green-to-red fluorescence intensity ratio of an embryo. The sfGFP-ZF1/mScarlet-V5 fluorescence intensity ratios for Ab-SPOP-mediated GFP degradation were calculated manually using ImageJ. Briefly, five nuclei per embryo were outlined and the average nuclear signal intensities in the green and red channels was extracted and used for the calculation of the green-to-red fluorescence intensity ratios in the nuclei. For quantification of signal intensities in the cytoplasm, a 20 \u00d7 20 pixels (3.79 \u00b5m x 3.79 \u00b5m) region was manually selected and the average signal intensities in the green and red channels were extracted to calculate the green-to-red fluorescence intensity ratio. The regions from five cells per embryo for five embryos were analyzed for each condition. The overview fluorescence images in Figure 1D and Figure 1\u2014figure supplement 1A (AID) were collected on Leica 165M FC Fluorescent Stereo Microscope equipped with a Leica DFC345 FX camera.\n\n### Heat-shock regimens\n\nTo determine the degradation kinetics of H2A-EGFP, cxcr4b:h2a-EGFP; cxcr4b:h2a-mCherry embryos with and without the hsp70l:zGrad-IRES-h2a-TagBFP transgene were heat shocked around 29\u201330 hpf at 39.5\u00b0C for 1 hr in a water bath, mounted in the 0.5% low-melt agarose/Ringer\u2019s solution with\u00a00.4 mg/ml MS-222 anesthetic\u00a0and imaged 80 min after the end of heat shock every 10 min for 9.5 hr on a Leica SP5 II confocal microscope equipped with HyD detectors (Leica Microsystems) using a 20x (NA 0.5) objective. Laser power was calibrated to 30 \u00b5W for 488 and 120 \u00b5W for 561. Pinhole was set to 85 \u00b5m.\n\nTo determine the degradation kinetics of Cdh1-sfGFP, cdh1:cdh1-sfGFP; cdh1:cdh1-TagRFP embryos with and without the hsp70l:zGrad-IRES-h2a-TagBFP transgene were mounted in the 0.5% low-melt agarose/Ringer\u2019s solution with\u00a00.4 mg/ml MS-222 anesthetic, heat shocked around 31 hpf at 39.5\u00b0C for 30 min in a water bath and imaged 35 min after the end of heat shock every 10 min for 4.8 hr on a Leica SP5 II confocal microscope equipped with HyD detectors (Leica Microsystems) using a 40x (NA 0.8) objective. The laser power was calibrated to 32 \u00b5W for the 488 nm laser line and 115 \u00b5W for the 594 nm laser line. The pinhole was set to 230 \u00b5m.\n\nTo determine the degradation kinetics of Ctnna-Citrine, ctnna:ctnna-Citrine/+ embryos with or without the hsp70l:zGrad-IRES-h2a-TagBFP transgene were mounted in the 0.5% low-melt agarose/Ringer\u2019s solution with\u00a00.4 mg/ml MS-222 anesthetic, heat shocked around 31 hpf at 39.5\u00b0C for 30 min in a water bath and imaged 35 min after the end of the heat shock every 20 min for 8 hr on a Leica SP8 confocal microscope equipped with HyD detectors (Leica Microsystems) using a 40x (NA 0.8) objective. The laser power was set to 31 \u00b5W for the 488 nm laser line. The pinhole was set to 106 \u00b5m. All\u00a0imaged embryos were genotyped for hsp70l:zGrad-IRES-h2a-TagBFP by PCR.\n\nTo test the degradation of Sec-GFP by zGrad, hsp70l:sec-GFP; hsp70:sec-mCherry with and without the hsp70l:zGrad-IRES-h2a-TagBFP transgene were heat shocked around 24 hpf at 39.5\u00b0C for 1 hr in a water bath. Embryos were imaged at 30 hpf with a Leica 165M FC Fluorescent Stereo Microscope equipped with a Leica DFC345 FX camera. Imaged embryos were digested and genotyped for hsp70l:zGrad-IRES-h2a-TagBFP by PCR.\n\nTo observe the consequences of transient loss of Cxcr4b function, cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7; cxcr4b -/- embryos with and without the hsp70l:zGrad-IRES-h2a-TagBFP transgene were heat shocked at 31 hpf and 39.5\u00b0C for 1 hr in a water bath and imaged 30 min after the end of the heat shock every 20 min for 8 hr on a Leica SP8 confocal microscope equipped with HyD detectors (Leica Microsystems) using a 20x (NA 0.5) objective. The laser power was adjusted to 31 \u00b5W for the 488 nm laser line and to 73 \u00b5W for 594 nm laser line. The pinhole was set to 85 \u00b5m. Imaged embryos were genotyped for hsp70l:zGrad-IRES-h2a-TagBFP by PCR as described below.\n\n### Analysis of the degradation kinetics after heat shock\n\nQuantification of signal intensity from heat shocked embryos was performed using a custom-written ImageJ macro (Source code 2). For H2A-EGFP/H2A-mCherry ratio imaging, a region encompassing the primordium and the somites (100 \u00d7 50 pixels, 75.76 \u00b5m x 37.88 \u00b5m) was manually selected. The macro script duplicates the red channel, applies a Gaussian Blur (sigma\u00a0=\u00a01) and generates a mask based on the mCherry intensities using Renyi Entropy Thresholding algorithm for the primordium and the imageJ Default Thresholding for the somites. Then, the macro applies the mask on the green and red channels to extract H2A-EGFP and H2A-mCherry signal intensities only from the masked region. Then, the macro sum-projects the green and red channels and extracts mean intensities of H2A-EGFP and H2A-mCherry for each time point. Data from two independent imaging sessions were pooled for the analysis. Four embryos with hsp70l:zGrad transgene (two from each imaging session) and four embryos without hsp70l:zGrad transgene as control (two from each imaging session) were analyzed.\n\nFor Cdh1-sfGFP/Cdh1-TagRFP ratio imaging, first a region of 300 \u00d7 300 pixel (77.27 \u00b5m x 77.27 \u00b5m) at the center of the embryo was manually selected. The macro duplicates the red channel, applies a Gaussian Blur (sigma\u00a0=\u00a01) and generates a mask based on the TagRFP intensities using the imageJ Default Thresholding. Then, it applies the mask on the green and red channels to extract Cdh1-sfGFP and Cdh1-mCherry signal intensities only from the masked region. Then, the macro sum-projects the green and red channels and extracts the mean intensities of the Cdh1-sfGFP and Cdh1-TagRFP fluorescences for each time point. Three embryos with carrying the hsp70l:zGrad transgene and four control embryos without the hsp70l:zGrad transgene were analyzed.\n\nFor Ctnna-Citrine fluorescence intensity approximation, a region of 300 \u00d7 300 pixel (85.23 \u00d7 85.23 \u00b5m) at the center of the embryo was manually selected. The Z-stack comprising this region was maximum projected. The mean intensities of maximum-projected images were extracted over all time points. Four embryos with hsp70l:zGrad transgene and four embryos without hsp70l:zGrad transgene as control were analyzed.\n\nFor Cxcr4b-EGFP-to-Kate2-CaaX ratio imaging, the region of the primordium was manually selected and signal intensities were quantified using a custom-written ImageJ macro (Source code 3). Briefly, the macro script duplicates the red channel, applies a Gaussian Blur (sigma\u00a0=\u00a02), maximum-projects the Z-stack, generates a mask based on the Kate2 intensities using the imageJ Default Thresholding, fills holes, erodes and dilates once (erosion and dilation reduces noise). Then, the macro sum-projects the green and red channels and applies the mask to the green and red channels to extract Cxcr4b-EGFP and Kate2-CaaX signal intensities only from the masked regions for each time point. Five embryos with hsp70l:zGrad transgene and five embryos without hsp70l:zGrad transgene as control were analyzed.\n\n### Analysis of the circularity of the primordium\n\nTo quantify the morphology of the primordium, we defined the extension of the primordium as the first 100 \u00b5m from the tip of the primordium. Using Fiji, the primordium region was manually cropped in the red channel based on the Kate2-CaaX fluorescence intensities. Then, a median filter (six pixels) was applied and the background was subtracted. Images were rendered binary using the Huang thresholding algorithm to obtain clear outlines of the primordium. Finally, we quantified the circularity of the primordium for each time point using the \u2018Analyze Particles\u2019 macro in Fiji. The circularity is defined as circularity\u00a0=\u00a04pi(area/perimeter^2).\n\n### Cumulative migration distance and kymographs analysis\n\nTo quantify the migration distance of the primordium over time, the \u2018Manual Tracking\u2019 plugin by Fabrice\u00a0Cordelieres\u00a0in Fiji was used to track the tip of the primordium. Kymographs were drawn using the \u2018KymoResliceWide\u2019 plugin by\u00a0Eugene Katrukha and Laurie Young\u00a0in Fiji with a width of 5 pixel.\n\nImage acquisition and quantification of zGrad-mediated Cxcr4b-EGFP degradation with zGrad expressed from the cxcr4b promoter cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 embryos and cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1; cxcrb4:zGrad-IRES-h2a-TagBFP embryos were sorted for the expression of the transgenesis marker (the cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 transgene expresses dsRed in the lens and the cxcrb4:zGrad-IRES-h2a-TagBFP transgene expresses mScarlet in the myocardium of the heart) at 29 hpf. Ten embryos of each genotype were mounted in 0.5% low-melt agarose/Ringer\u2019s solution with\u00a00.4 mg/ml MS-222 anesthetic on a slide. Embryos were imaged at 33 to 34 hpf using a Leica SP8 confocal microscope equipped with HyD detectors (Leica Microsystems) using a 40x (NA 1.1) objective. The laser power was calibrated to 27 \u03bcW for the 488 nm laser line and 82 \u00b5W for the 594 nm laser line. The pinhole was set to 77.17 \u00b5m. To quantify the signal intensity ratio of EGFP/Kate2 in the primordium, the primordium was manually selected and fluorescent intensities for EGFP and Kate2 were extracted using the same custom-written ImageJ macro as described in the quantification of Cdh1-sfGFP degradation kinetics.\n\n### Degradation of Ctnna-Citrine by zGrad mRNA injection\n\n1\u20132 nl of 50 ng/\u00b5l of zGrad mRNA or 50 ng/\u00b5l of sfGFP mRNA were injected in one-cell stage zygotic, maternal and maternal zygotic ctnna:ctnna-Citrine/ctnna:ctnna-Citrine embryos. Possible degradation of the mRNA in the injection mix was assessed by electrophoresis of the injection mix in the needle after injection of the embryos. For imaging, the embryos were mounted in 0.5% low-melt agarose/Ringer\u2019s solution on a slide. Images of injected embryos were obtained using an Axioplan Microscope (Zeiss) equipped with an Axiocam (Zeiss) and a 10x (NA 0.5) objective for Figure 3B and E and a 5x (NA 0.25) objective for Figure 3H. The number of dead and alive embryos was scored at 24 hpf.\n\n### Genotyping of cxcr4bt26035 and hsp70l:zGrad-IRES-H2A-TagBFP\n\nTo distinguish endogenous cxcr4b-/+ and cxcr4b-/- from the cxcr4b:cxcr4b-EGFP-IRES-kate2-CaaX transgene in Figure 6 and Figure 6\u2014figure supplement 1, the following outer and nested primer pairs were used: forward outer primer: GCAGACCTCCTGTTTGTCC reverse outer primer: CTAAGTGCACACATACACACATT forward nested primer: TCGAGCATGGGTACCATC reverse nested primer: CTTAATCATCCATGTGGAAAAG.\n\nThe reverse primers are designed to anneal to 3\u2019UTR of the cxcr4b gene so that cxcr4b-EGFP-IRES-Kate2-CaaX transgene will not be amplified due to its large size. The PCR product was digested with the restriction enzyme HpyAV (NEB) to distinguish heterozygous and homozygous mutants.\n\nTo genotype hsp70l:zGrad-IRES-h2a-TagBFP, the region between hsp70l promoter and fbxw11b was amplified by PCR using the following outer and nested primer pairs: forward outer primer: TGAGCATAATAACCATAAATACTA reverse outer primer: ACCAGTTGGACTTGATCCATATGTCGACCACACCTCCAG forward nested primer: AGCAAATGTCCTAAATGAAT reverse nested primer: CAGAGGTGTTCATCTGCTC.\n\n### Whole-mount in situ hybridization\n\nThe procedures for RNA probe synthesis and whole-mount in situ hybridization were done as previously described (Thisse and Thisse, 2008). The RNA probe against cxcr4b was previously described (Knaut et al., 2003). The template for the synthesis of the in situ RNA probe against vhhGFP4 was amplified from pcDNA3-NSlmb-vhhGFP4 (Addgene plasmid #35579) using the following primer pair: forward primer: ggccgtcgacATGATGAAAATGGAGACTGAC reverse primer: TAATACGACTCACTATAGGGTTAGCTGGAGACGGTGACCTG.\n\nThe template for the synthesis of the in situ RNA probe against EGFP was amplified using the following primer pair: forward primer: GTGAGCAAGGGCGAGGAGCTG reverse primer: gaaatTAATACGACTCACTATAgggCTTGTACAGCTCGTCCATGCC.\n\nThe template for the synthesis of the in situ RNA probe against mCherry was amplified using the following primer pair: forward primer: GTGAGCAAGGGCGAGGAGGACA reverse primer: gaaatTAATACGACTCACTATAgggCTTGTACAGCTCGTCCATGCCGCCGG.\n\nThe RNA probe was synthesized using the Roche DIG labeling mix (Roche) and detected with an anti-DIG antibody coupled to alkaline phosphatase (1:5000, Roche) and NBT/BCIP stain (Roche). Embryos were mounted in the 3% Methyl cellulose (Sigma Aldrich). Images were collected on a Axioplan Microscope (Zeiss) equipped with an Axiocam (Zeiss) using a 10x (NA 0.5) objective.\n\n### Quantification of the primordium migration distance\n\ncxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1; cxcr4b-/+ fish were crossed to cxcrb4:zGrad-IRES-h2a-TagBFP; cxcr4b-/- fish and embryos were sorted based on the transgenesis markers (dsRed in lens for cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 and mScarlet in myocardium of heart for cxcrb4:zGrad-IRES-h2a-TagBFP) at 38 hpf and fixed in 4% PFA (Sigma Aldrich) in PBST overnight at room temperature. Whole-mount in situ hybridization against cxcr4b mRNA was performed as described above. Images for quantification of migration distance were taken in PBST on an Axioplan Microscope (Zeiss) equipped with an Axiocam (Zeiss) using a 10x (NA 0.5) objective. Both sides of the embryo were imaged and counted as individual replicates. Images for Figure 6E were taken by mounting embryos in 3% Methyl cellulose. cxcr4b mutant embryos were genotyped by PCR after image acquisition. The migrating distance of the primordium was quantified manually using ImageJ.\n\n### Conditional Cdh1 loss-of-protein function through zGrad expression from a heat-shock promoter\n\nThe number of embryos from cdh1:cdh1-sfGFP/+; cdh1+/- with or without hsp70l:zGrad females crossed with cdh1+/- males was counted at 5 hpf. The dead embryos were removed at 24 hpf and embryos were sorted by Cdh1-sfGFP expression. At 25 hpf, embryos were heat shocked at 39.5\u00b0C for 1 hr in a water bath. The embryos were mounted in 0.5% low-melt agarose/Ringer\u2019s solution on a plastic dish filled with Ringer\u2019s solution which was supplemented with 0.4 mg/ml MS-222 anesthetic. Images of embryos were recorded with an Axioplan Microscope (Zeiss) equipped with an Axiocam (Zeiss) and a 5x (NA 0.25) objective (panels B, C and D in Figure 4) and a 10x (NA 0.5) objective (panels C and D insets in Figure 4). The number of embryos with and without skin defects and lethality was scored at 32 hpf. Embryos were transferred into TRIzol reagent (Thermo Fisher Scientific) to extract mRNA. mRNA was reverse transcribed into cDNA with the Super Script III First-Strand Synthesis System kit (Thermo Fisher Scientific). To distinguish cDNA from the endogenous cdh1 mRNA and the transgenic cdh1:cdh1-sfGFP mRNA, the following outer and nested primer pairs were used: forward outer primer: CAATATAACAGGCTCTGGGCAGAT reverse outer primer: ATAAAAGAGTCTCATATTTTGC forward nested primer: GTCAAGAATGCTTTGGATCG reverse nested primer: AATCATTGAGCCTTTTGCACC.\n\nDue to the short elongation time, these PCRs only amplified the cDNA from the endogenous cdh1 locus. The PCR amplicons were purified with the QIAquick PCR Purification Kit (QIAGEN) and sequenced with the primer TGTCCGTTATAGAGAGAAGC. Genotyping for hsp70l:zGrad transgenic embryos was also done from cDNA by PCR with the following primer pair: forward primer: ATGGATCAAGTCCAACTGG reverse primer: TTAGCTGGAGACGGTGACCC.\n\n### DASPEI staining and neuromast position quantification\n\nThe location of neuromasts was assessed by staining 4 dpf live embryos with 25 ug/mL DASPEI (2-(4-(dimethylamino)styryl)-N-Ethylpyridinium Iodide, Invitrogen). Images were collected on Leica 165M FC Fluorescent Stereo Microscope equipped with a Leica DFC345 FX camera. The location of the last neuromast on the trunk was quantified as ratio between the length from the head to the last neuromast on the trunk divided by the length of the whole embryo (see Figure 6\u2014figure supplement 1B,C).\n\n### Statistical analysis\n\nStatistical tests were performed using R and R-studio software. To compare two sample sets, first each sample set was tested using the Kolmogorov-Smirnov test to determine whether the sample set was normally distributed. Then, we tested whether the sample sets had the same standard deviation using the F-test. Based on the result of F-test, the two sample sets were compared by either the Welch\u2019s t-test or the Student\u2019s t-test (Figures 1H, 6D and F, Figure 6\u2014figure supplement 1C). To analyze the fold-change curves in Figure 2C, E, H and K, the curves were fitted to a one-exponential decay model (Y\u00a0=\u00a0Span*exp(-k*X)+Plateau) using Prism 7 (Graphpad). The values of T1/2 and the plateau, which we assumed to be the value of maximal degradation, were extracted from the fitted curves. In Figure 5D (inset, 30 min to 240 min), two data sets were compared by paired-t test using Prism.\n",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "9b98f9c6-35fa-4297-b09b-c837fc486c78",
+      "submission_id": "ed3fa7be-cad1-459f-9285-4c47af5393e1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Markus Affolter, Biozentrum der Universit\u00e4t Basel Switzerland\n\nReviewers:\n- Thomas F Schilling, University of California, Irvine United States\n\n## Review text\n\nDOI: [10.7554/eLife.43125.027](https://doi.org/10.7554/eLife.43125.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"zGrad is a nanobody-based degron system that inactivates proteins in zebrafish\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Didier Stainier as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Thomas F Schilling (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. There was broad agreement that your work would be suitable for eLife after the points raised below are addressed.\n\nReviewer #1:\n\nThe manuscript submitted by Holger Knaut and colleagues for publication in eLife describes a novel approach to study protein function in zebrafish, a model system that has made major contribution to a better understanding of vertebrate development due to its ease to do live imaging studies at cellular resolution.\n\nUpon testing a number of different degradation systems, the authors adapted a previously described method to degrade GFP-fusion proteins with a nanobody recognizing GFP, fused itself to a F-box of the Drosophila protein Slmb, targeting the GFP-fusion protein to the proteasome. Since the authors found that the Drosophila F-box did not lead to efficient degradation, they exchanged the latter with the F-box of the corresponding gene from zebrafish, and then showed that this construct is capable to degrade nuclear, transmembrane and cytoplasmic FP-tagged proteins. Most importantly, using endogenously tagged FP proteins, the authors showed that zGrad was capable to generate loss of function phenotypes in the zebrafish, opening the door to degrade proteins in a time- and tissue-dependent manner in unprecedented fashion. More importantly, protein degradation allows removing maternal contribution of the protein of interest (if a FP tagged rescue or endogenous version is available); this is particularly important for cell biological studies, since many widely expressed proteins are also maternally contributed.\n\nThe study is done very carefully and in a quantitative manner. This study was only possible since the authors had functional FP constructs of their genes of interest.\n\nReviewer #2:\n\nIn this paper the authors report their development of a nanobody-based method for targeted protein degradation in zebrafish. They show that by adapting a deGradFP system used in Drosophila they can obtain efficient degradation of nuclear, cytoplasmic and transmembrane proteins in both a temporally- and spatially-controlled manner, while other similar degradation systems are less effective. They confirm that using this zGrad system they can obtain previously published loss-of-function phenotypes for E-cadherin, E-catenin and Cxcr4b. They then go beyond previous mutant studies of these factors to address temporal requirements \u2013 such as maternal versus zygotic functions of E-catenin, and Cxcr4b in collective migration of the lateral line primordium \u2013 as well as tissue-specific promoters to disrupt Cxcr4b in specific cell types. This is a major technical advance, as tools for conditional loss-of-function approaches in zebrafish are desperately needed. The experiments are well designed, rigorously analyzed and the results are convincing. It is somewhat less innovative conceptually given the fact that a similar system exists in flies and functions of all of the genes examined here have been studied before. In addition, there are some concerns about variability in the effectiveness of zGrad and its reproducibility.\n\n1) The paper shows a wide variety of efficiencies in the reduction in levels as well as the timing of degradation for different zGrad target proteins. As proof of principle with sfGFP-ZF1 they co-inject one-cell stage embryos and assay protein levels 9 hours later (Figure 1). What are the results if assayed at 2-3 hpf? The authors argue that the system should work within that time frame. For H2A-EGFP the onset of degradation is estimated as 140-200 min while for Ctnna-Citrine it appears to be as early as 65 min. How do the authors account for these differences in onset?\n\n2) Experiments with H2A-EGFP show widely varied reductions in protein levels in different tissues, which the authors argue reflects different levels of endogenous H2A production. This raises the question of how functional experiments with proteins for which function is unknown can deal with the potential differences in efficiency introduced by variation in the synthesis of new protein? Negative results obtained with zGrad will be extremely hard to interpret. For Figure 2D-E the authors should confirm the hypothesis that the difference in degradation efficiency between somites and lateral line primordia is due to different expression levels of H2A-GFP with in situs for eGFP and mCherry.\n\n3) Variability in the effectiveness of zGrad for Cdh1 to cause cell adhesion defects is explained as being due to variability in zGrad levels. However again this complicates interpretation. Can zGrad levels be monitored and correlated with variability in phenotypic defects? The authors should genotype the embryos to identify those that are cadh+/-;cdh1:cd1-sfgfp;hsp70l:zGrad as the phenotype can only be visualized in these embryos.\n\n4) Interpretation of the results also depends to a great extent on what is co-injected in a given experiment, in terms of amount, and how long it persists in the embryo. This is particularly a potential problem in experiments addressing maternal versus zygotic function.\n\n5) The authors should compare the different deGradFP systems used in zebrafish more clearly either in the Introduction or Discussion section to help the reader appreciate the improvements in their system over the previous ones. Since the authors start with results from existing methods and show them in figure supplements, it would be helpful if they present their general experimental strategy including the model for the degron system in the first supplementary figure.\n\n6) Clarify the choice of the Slimb system over the C. elegans system, considering that both had similar efficiency of knockdown (19% and 17%).\n\n7) Clarify why the results shown in Figure 2\u2014video 1 and Figure 5\u2014video 1 are so similar \u2013 slight delays in lateral line migration in zGrad expression embryos, which recover over time \u2013 considering the difference in their backgrounds?\n\n8) Figure 3. The ctnna-citrine strategy is unclear. Are the authors using ctnna heterozygotes for the cross? What is zGrad targeting in this cross, since the embryos appear to be expressing a citrine fusion protein? Does vhhGFP4 recognize citrine?\n\nReviewer #3:\n\nIn the manuscript \"zGrad is a nanobody-based degron system that inactivates proteins in zebrafish\u201d Yamaguchi, Colak-Champollion and Knaut report the establishment of a nanobody-based tool to degrade GFP-tagged proteins in zebrafish. The authors developed a simple, efficient and spatially- and temporally inducible 1-component system that targets GFP-tagged proteins of interest with different subcellular localizations for degradation by the endogenous ubiquitin-based machinery. Degradation is sufficiently efficient to result in a) loss-of-function phenotypes after global induction of protein degradation, and b) hypomorphic and/or more restricted phenotypes for tissue/time-specific induction of protein degradation.\n\nCompared to the recently published mAID nanobody based 2-component system for zebrafish by the Mansfeld/Norden labs (Daniel et al., 2018), which is most similar to the zGrad tool presented here, zGrad provides a valuable and potentially superior drug-independent 1-component alternative. The main difference of the two systems is the Auxin/TIR1-dependence (mAID) versus independence (zGrad) by using a different degradation-inducing fusion protein to the vhh-GFP4 nanobody: In the case of the published mAID system (Daniel et al., 2018), the nanobody vhh-GFP4 is fused to AID to link via the adaptor protein TIR1 and Auxin to the SCF degradation complex. Degradation in this system was reported to depend on the presence of Auxin. In case of zGrad, the nanobody vhh-GFP4 is fused to Fbxw11b, which binds directly in an Auxin-independent manner to the SCF-complex member Skp1 and thus does not need an additional adaptor to link to the SCF degradation complex. The authors show that the system is inducible by hs- or tissue-specific control of the nanobody fusion construct. Thus, no drugs are needed to induce degradation of GFP-tagged proteins of interest and the newly developed system presented here. Most importantly, the authors present convincing data that zGrad is efficient enough to cause protein-depletion at a level that results in loss-of-function phenotypes.\n\nOverall, zGrad provides a very elegant, simple system to induce protein degradation without the need of drugs or additional adaptor proteins, which also circumvents the problem of potential leakiness of directly AID-tagged target proteins (degradation even in the absence of Auxin). zGrad presents a valuable contribution for functional studies in zebrafish, and will be an important, versatile alternative (and potentially superior, depending on the application) tool that nicely complements other available tools for protein degradation.\n\nThe data is of very high quality, and the experiments support the conclusions of the paper.\n\nI have no major concerns.\n",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "306588bd-8b8a-40b2-8442-bfc6639884df",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C1",
+      "claim": "zGrad efficiently degrades transmembrane, cytosolic and nuclear GFP-tagged proteins in zebrafish in an inducible and reversible manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We named this system zGrad and show that zGrad efficiently degrades transmembrane, cytosolic and nuclear GFP-tagged proteins in zebrafish in an inducible and reversible manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, which is supported by experimental data presented throughout the manuscript showing degradation of different protein types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "e8da9293-520a-4833-b8ac-4ff8ffd9e044",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C2",
+      "claim": "Global protein depletion by zGrad results in phenotypes similar to loss of gene activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Global protein depletion results in phenotypes similar to loss of gene activity, while local and temporal protein inactivation yields more restricted and novel phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this conclusion, which is supported by experimental data showing that zGrad-mediated protein depletion recapitulates genetic loss-of-function phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "ed82a9dd-9936-4d97-b944-083a56da9394",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C3",
+      "claim": "Local and temporal protein inactivation by zGrad yields more restricted and novel phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Global protein depletion results in phenotypes similar to loss of gene activity, while local and temporal protein inactivation yields more restricted and novel phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, supported by experiments showing tissue-specific and temporal protein depletion effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "8b3da760-22ad-4654-8625-963da3f02f43",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C4",
+      "claim": "OsTIR1-mCherry induces degradation of sfGFP-mAID in a dose-dependent manner irrespective of IAA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that expression of OsTIR1-mCherry induced degradation of sfGFP-mAID in a dose-dependent manner irrespective of IAA (Figure 1D, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 1D and Figure 1\u2014figure supplement 1A showing dose-dependent degradation without auxin requirement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "549a4e9d-da2e-41f1-865a-a097d082d43a",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C5",
+      "claim": "50 pg/embryo or higher concentrations of OsTIR1-mCherry mRNA led to deformed and dying embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that 50 pg/embryo or higher concentrations of OsTIR1-mCherry mRNA led to deformed and dying embryos (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing embryo toxicity at high OsTIR1 concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "ebe34666-af3c-4bf6-92fa-07fb995b7174",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C6",
+      "claim": "The AID system is not suitable to degrade proteins in zebrafish in its current form.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, low levels of OsTIR1 induce degradation of AID-tagged proteins, higher levels of OsTIR1 are toxic and OsTIR degrades AID-tagged proteins in the absence of auxin, suggesting that, in its current form, the AID system is not suitable to degrade proteins in zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on experimental data showing toxicity and lack of auxin-dependence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "444e060e-a671-457e-8bda-9dc5bb3d44aa",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C7",
+      "claim": "The ZIF-1/ZF1 tag degradation system only reduced the levels of sfGFP-ZF1 by 17%.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the ZIF-1/ZF1 tag degradation only reduced the levels of sfGFP-ZF1 by 17% (Figure 1E,H), indicating that the ZIF-1/ZF1 tag degradation system does not efficiently degrade ZF1-tagged proteins in zebrafish.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 1E,H showing quantification of degradation efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "482fe8b9-3167-4729-a081-47c80be92ae8",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C8",
+      "claim": "Ab-SPOP efficiently degraded nuclear sfGFP-ZF1 (70% reduction) but not cytoplasmic sfGFP-ZF1 (13% reduction).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the initial description (Shin et al., 2015), Ab-SPOP efficiently degraded nuclear sfGFP-ZF1 (70% reduction, Figure 1F,H, Figure 1\u2014figure supplement 2) but not cytoplasmic sfGFP-ZF1 (13% reduction, Figure 1F,H, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing differential degradation in nuclear vs. cytoplasmic compartments, with citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "58161ccd-25f5-4929-9a35-b609144741e4",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C9",
+      "claim": "The Ab-SPOP/FP-tag degradation system is not suitable for the degradation of non-nuclear proteins in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported previously (Shin et al., 2015), this confirms that the Ab-SPOP/FP-tag degradation system degrades nuclear proteins efficiently but is not suitable for the degradation of non-nuclear proteins in zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The conclusion is based on experimental data and cites prior work by Shin et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "53f1c31b-a72b-4985-9a49-f298972ed88d",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C10",
+      "claim": "deGradFP reduced sfGFP-ZF1 only slightly (19% reduction).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that deGradFP reduced sfGFP-ZF1 only slightly (19% reduction, Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 1G,H showing quantification of deGradFP-mediated degradation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "6838ab4f-e3e6-4752-917c-54722494954a",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C11",
+      "claim": "The zebrafish F-box and WD repeat domain containing 11b (fbxw11b) gene is the Drosophila slmb orthologue.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on sequence homology, we identified the zebrafish F-box and WD repeat domain containing 11b (fbxw11b) gene as the Drosophila slmb orthologue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The identification is based on sequence homology analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "9b0d857f-0f25-4d51-8917-d266e9af0de2",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C12",
+      "claim": "zGrad depleted sfGFP-ZF1 in both the cytoplasm and the nucleus by 89%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to deGradFP, which depleted 19% of sfGFP-ZF1, zGrad depleted sfGFP-ZF1 in both the cytoplasm and the nucleus by 89% (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 1G,H showing quantification of zGrad-mediated degradation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "30397875-82bd-48e1-89bd-43f1b8675d09",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C13",
+      "claim": "Degradation of sfGFP-ZF1 by zGrad was observed already at 2.5 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed degradation of sfGFP-ZF1 by zGrad already at 2.5 hpf (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references a figure showing early degradation timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "2a35f6ae-def7-4b28-9cc3-ef76b9f2a5b1",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C14",
+      "claim": "H2A-EGFP degradation was discernible in zGrad-expressing embryos within 2-3 hr post heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control embryos that did not carry the hsp70l:zGrad transgene, H2A-EGFP degradation was discernible in zGrad-expressing embryos within 2-3 hr post heat shock in all tissues that expressed nuclear EGFP from the cxcr4b promoter (skin, pronephros, somites, neural tube and primordium, Figure 2A\u2013E, Figure 2\u2014Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing time-course of H2A-EGFP degradation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "22b0933d-ae67-492c-8001-ea7c196bcafe",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C15",
+      "claim": "In the somites, the levels of H2A-EGFP was decreased by 87%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the somites, the levels of H2A-EGFP was decreased by 87% (Figure 2C), while in the primordium, the levels of H2A-EGFP was decreased by 22% (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 2C showing quantification of H2A-EGFP degradation in somites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "e408e9c3-127a-4b86-958e-702a1d7508c7",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C16",
+      "claim": "In the primordium, the levels of H2A-EGFP was decreased by 22%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the somites, the levels of H2A-EGFP was decreased by 87% (Figure 2C), while in the primordium, the levels of H2A-EGFP was decreased by 22% (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 2E showing quantification of H2A-EGFP degradation in primordium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "98fb4436-6019-4e80-a9ff-589c1893b84b",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C17",
+      "claim": "The more efficient degradation of H2A-EGFP in the somites than in the primordium is probably due to the lower levels of H2A-EGFP and the lack of H2A-EGFP production in the somites at the time of zGrad induction.",
+      "claim_type": "EXPLICIT",
+      "source": "The more efficient degradation of H2A-EGFP in the somites than in the primordium is probably due to the lower levels of H2A-EGFP and the lack of H2A-EGFP production in the somites at the time of zGrad induction (Figure 2\u2014figure supplements 1 and 2) (Chong et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The explanation is based on data from supplementary figures and cited literature (Chong et al., 2001).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "bb4002b2-3582-491a-9e45-413de329dc21",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C18",
+      "claim": "The time for onset of degradation and half-life for H2A-EGFP in the somites was 200 min and 156 min, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The time for onset of degradation and half-life for H2A-EGFP in the somites was 200 min and 156 min, respectively (Figure 2C, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 2C and Table 1 showing degradation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "bfaa75ee-31e5-4405-af26-58d9297eed5d",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C19",
+      "claim": "The time for onset of degradation and the half-life for H2A-EGFP degradation in the primordium was 140 min and 29 min, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The time for onset of degradation and the half-life for H2A-EGFP degradation in the primordium was 140 min and 29 min, respectively (Figure 2E, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 2E and Table 1 showing degradation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "91b3a03b-1969-42f4-8669-755975027fde",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C20",
+      "claim": "Cdh1-sfGFP and Cdh1-TagRFP transgenes recapitulated the endogenous Cdh1 expression pattern and rescued the lethality of cdh1 mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "These transgenes recapitulated the endogenous Cdh1 expression pattern and rescued the lethality of cdh1 mutant embryos (Table 2), indicating that Cdh1-sfGFP and Cdh1-TagRFP are functional.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Table 2 showing rescue data, indicating functional transgenes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "d48f839d-5307-4e79-92e8-9a139212d8a4",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C21",
+      "claim": "In zGrad-expressing embryos, Cdh1-sfGFP degradation was uniformly detected within 15 min post heat shock in the skin of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "In zGrad-expressing embryos, Cdh1-sfGFP degradation was uniformly detected within 15 min post heat shock in the skin of the embryo (enveloping layer and epidermal basal layer) (Figure 2F\u2013H, Figure 2\u2014Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing rapid Cdh1-sfGFP degradation timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "1f58a807-a21a-46cf-b81d-d4a336a1b05a",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C22",
+      "claim": "zGrad expression reduced the levels of Cdh1-sfGFP in the primordium by 79% with a degradation half-life of 24 min.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that zGrad expression reduced the levels of Cdh1-sfGFP in the primordium by 79% with a degradation half-life of 24 min (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 2H showing quantification of Cdh1-sfGFP degradation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "00a46c11-25f0-4003-baf1-6d14bd98dbf3",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C23",
+      "claim": "The time for onset of Cdh1-sfGFP degradation was 75 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The time for onset of Cdh1-sfGFP degradation was 75 min (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Table 1 showing degradation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "fb19719a-c0cf-4163-b209-e13da783af0a",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C24",
+      "claim": "Homozygous ctnna:ctnna-Citrine fish are viable, indicating that Ctnna-Citrine is functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous ctnna:ctnna-Citrine fish are viable, indicating that Ctnna-Citrine is functional (Trinh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The viability of homozygous fish indicates functionality, with citation to Trinh et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "8635d1fc-7cf2-437c-9cdd-1717d8e5e7cc",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C25",
+      "claim": "The time for onset of degradation of Ctnna-Citrine was 65 min and Ctnna-Citrine was degraded by 58% with a half-life of 19 min in zGrad-expressing embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that the time for onset of degradation of Ctnna-Citrine was 65 min and that Ctnna-Citrine was degraded by 58% with a half-life of 19 min in zGrad-expressing embryos (Figure 2K, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 2K and Table 1 showing degradation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "750fbe99-1170-46c8-b212-01c4350ecdca",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C26",
+      "claim": "Expression of zGrad did not degrade secreted GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike H2A-EGFP, Cdh1-sfGFP and Ctnna-Citrine, expression of zGrad did not degrade secreted GFP (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references a figure showing lack of secreted GFP degradation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "eb72c7aa-5c82-46a5-94d6-b9e3f6b90103",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C27",
+      "claim": "zGrad targets nuclear, cytoplasmic, and transmembrane proteins tagged with EGFP or Citrine for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations indicate that zGrad targets nuclear, cytoplasmic, and transmembrane proteins tagged with EGFP or Citrine for degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing degradation of proteins in different cellular compartments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "cae7800e-c584-41d6-99ad-a5d5797c7d5a",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C28",
+      "claim": "In zGrad mRNA-injected MZ ctnna:ctnna-Citrine embryos the cells started to become detached and partly shed from the embryo resulting in embryonic lethality around 3 to 5 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "In zGrad mRNA-injected MZ ctnna:ctnna-Citrine and M ctnna:ctnna-Citrine embryos the cells started to become detached and partly shed from the embryo resulting in embryonic lethality around 3 to 5 hpf (Figure 3B,C,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing cell detachment and lethality phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "b8c7fcd3-ef58-4dba-938b-f3d118e0edfd",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C29",
+      "claim": "In zGrad mRNA-injected Z ctnna:ctnna-Citrine embryos, cells detached from the embryo by 24 hpf and about half of the embryos died.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly but delayed by 20 hr, in zGrad mRNA-injected Z ctnna:ctnna-Citrine embryos, cells detached from the embryo by 24 hpf and about half of the embryos died (note, half the embryos were zygotically homozygous for ctnna:ctnna-Citrine since we crossed ctnna:ctnna-Citrine/ctnna:ctnna-Citrine males to ctnna:ctnna-Citrine/+ females, Figure 3G,H,I) while control injected embryos were unaffected (Figure 3H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing delayed phenotype in zygotic embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "3ffc1df4-5a9d-462e-89db-2c31423f54ff",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C30",
+      "claim": "The observed phenotype in Z ctnna:ctnna-Citrine embryos injected with zGrad mRNA is similar to the defects reported for zygotic ctnna-/- embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed phenotype in Z ctnna:ctnna-Citrine embryos injected with zGrad mRNA is similar to the defects reported for zygotic ctnna-/- embryos (Han et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The comparison is based on experimental data and cites Han et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "b37164f2-a41c-45d5-bb9f-6d5a79678ba5",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C31",
+      "claim": "Maternally supplied Ctnna can sustain cell-cell adhesion and embryonic development for about 1 day before the embryo requires zygotic Ctnna.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it suggests that maternally supplied Ctnna can sustain cell-cell adhesion and embryonic development for about 1 day before the embryo requires zygotic Ctnna.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the timing difference between maternal and zygotic phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "9240e40a-86fc-4875-bdda-3fdf7e4ba611",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C32",
+      "claim": "cdh1-/-; cdh1:cdh1-sfGFP/+; hsp70l:zGrad/+ embryos shed their skin and rapidly died.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to control embryos which showed no visible defects (Figure 4B,C), we found cdh1-/-; cdh1:cdh1-sfGFP/+; hsp70l:zGrad/+ embryos shed their skin and rapidly died (Figure 4D and Figure 4\u2014figure supplement 1A), consistent with the idea that zGrad-mediated Cdh1-sfGFP degradation disrupts the cell-cell adhesion between the skin cells of the embryos that lack endogenous Cdh1 function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing skin shedding and lethality phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "90ccd2af-c2b9-4367-bece-07e03ec09720",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C33",
+      "claim": "The skin phenotype in embryos with depletion of Cdh1-sfGFP was not always fully penetrant.",
+      "claim_type": "EXPLICIT",
+      "source": "We would like to note that the skin phenotype in embryos with depletion of Cdh1-sfGFP was not always fully penetrant (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references a figure showing variable penetrance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "bca48b36-a970-42a1-ab77-604413ac9116",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C34",
+      "claim": "Transient expression of zGrad can efficiently degrade GFP-tagged proteins and, if GFP-tagged proteins are depleted sufficiently, cause loss-of-protein function and uncover phenotypes past the initial requirements of essential proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these observations suggest that transient expression of zGrad can efficiently degrade GFP-tagged proteins and, if GFP-tagged proteins are depleted sufficiently, cause loss-of-protein function and uncover phenotypes past the initial requirements of essential proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing phenotypes from protein depletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "d8aac2c6-5946-4844-830e-60806bef64e9",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C35",
+      "claim": "Induction of zGrad degraded Cxcr4b-EGFP and resulted in rounded primordium morphology and stalled primordium migration 90 min after heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that induction of zGrad degraded Cxcr4b-EGFP (Figure 5A,B,E) and resulted in rounded primordium morphology (Figure 5A,C) and stalled primordium migration (Figure 5A,D,E) 90 min after heat shock.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references multiple figures showing Cxcr4b-EGFP degradation and migration defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "9b10858d-1639-409f-ad80-d8ea31b7f652",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C36",
+      "claim": "After 120 min newly produced Cxcr4b-EGFP was detectable again and the primordium resumed its migration.",
+      "claim_type": "EXPLICIT",
+      "source": "After 120 min newly produced Cxcr4b-EGFP was detectable again and the primordium resumed its migration (Figure 5A,E, Figure 5\u2014Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing recovery of Cxcr4b-EGFP and migration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "d1d876c2-4c31-4dbb-8b7e-ff7137757f25",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C37",
+      "claim": "A pulse of zGrad expression can deplete Cxcr4b-EGFP to levels unable to sustain directed cell migration of the primordium.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a pulse of zGrad expression can deplete Cxcr4b-EGFP to levels unable to sustain directed cell migration of the primordium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing transient migration defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "4596fb22-4bb5-46ef-a671-b980bbdc1d17",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C38",
+      "claim": "Temporal zGrad induction from the heat shock promoter can be used to induce reversible protein loss-of-function scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that temporal zGrad induction from the heat shock promoter can be used to induce reversible protein loss-of-function scenarios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing reversible phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "a83701a2-7b45-4ba1-b4d8-a7586b520053",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C39",
+      "claim": "The expression pattern of zGrad mRNA in cxcr4b:zGrad embryos faithfully recapitulated the cxcr4b mRNA expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression pattern of zGrad mRNA in cxcr4b:zGrad embryos faithfully recapitulated the cxcr4b mRNA expression pattern (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 6B showing expression pattern comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "8bd86769-224d-41e2-aa77-92216a3e4b21",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C40",
+      "claim": "zGrad efficiently depleted Cxcr4b-EGFP below detectable levels when expressed from the cxcr4b promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that zGrad efficiently depleted Cxcr4b-EGFP below detectable levels (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing Cxcr4b-EGFP depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "4425c568-f43f-4b35-9620-590d181efbb8",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C41",
+      "claim": "Embryos with the cxcr4b:zGrad transgene migrated on average only 72.5% of the distance.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, embryos with the cxcr4b:zGrad transgene migrated on average only 72.5% of the distance (Figure 6E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing quantification of migration distance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "798e68e6-5e79-4455-8af4-51fe5d475f53",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C42",
+      "claim": "Primordia in cxcr4b-/-; cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1; cxcr4b:zGrad embryos migrated directionally but at reduced speed, did not fully complete their migration and failed to deposit the terminal neuromasts by 4 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to primordia in cxcr4b-/- embryos, which showed little to no directed migration (Figure 6E,F) (Haas and Gilmour, 2006), primordia in cxcr4b-/-; cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1; cxcr4b:zGrad embryos migrated directionally but at reduced speed, did not fully complete their migration and failed to deposit the terminal neuromasts by 4 dpf (Figure 6E,F, Figure 6\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing migration phenotypes and cites Haas and Gilmour, 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "77e2ba41-52a9-492d-8ddd-57f39f0822f7",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C43",
+      "claim": "Expression of zGrad in the primordium did not affect its migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, expression of zGrad in the primordium did not affect its migration (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references a figure showing normal migration with zGrad expression alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "e2c64e7c-28d6-4229-a596-7b94c08d386d",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C44",
+      "claim": "zGrad expression from the cxcr4b promoter efficiently degrades Cxcr4b-EGFP to levels low enough to slow primordium migration but not low enough to recapitulate the primordium migration defect observed in embryos with loss of Cxcr4b function.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that zGrad expression from the cxcr4b promoter efficiently degrades Cxcr4b-EGFP to levels low enough to slow primordium migration but not low enough to recapitulate the primordium migration defect observed in embryos with loss of Cxcr4b function, probably because the cxcr4b promoter does not express zGrad at high enough levels for complete degradation of Cxcr4b-EGFP driven from the same promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing partial phenotype and infers the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "9cb17d80-e244-4b88-930c-aa1abab209fe",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C45",
+      "claim": "Expression of zGrad from a tissue-specific promoter can result in efficient degradation of GFP-tagged proteins to levels low enough to perturb protein function and cause tissue-specific defects.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, these observations indicate that expression of zGrad from a tissue-specific promoter can result in efficient degradation of GFP-tagged proteins to levels low enough to perturb protein function and cause tissue-specific defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing tissue-specific phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "4043ed79-68c4-48a0-ad16-713240b5a17f",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C46",
+      "claim": "zGrad rapidly degrades GFP-tagged proteins with half-lives of around 20 min for transmembrane and cytoplasmic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that zGrad rapidly degrades GFP-tagged proteins with half-lives of around 20 min for transmembrane and cytoplasmic proteins (Figure 2 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 2 and Table 1 showing degradation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "11faaef2-3889-4c53-a40a-bdcc40f633ad",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C47",
+      "claim": "The degradation of H2A-EGFP was significantly slower displaying a half-life of about 2.5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The degradation of H2A-EGFP was significantly slower displaying a half-life of about 2.5 hr (Figure 2 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 2 and Table 1 showing degradation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "81e631d2-8cbd-4b8a-9521-4fa749e6c384",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C48",
+      "claim": "The slow degradation of H2A-EGFP could be due to the long life-time of histone proteins and the possibility that protein degradation is less efficient in nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be due to the long life-time of histone proteins (Clift et al., 2017) and the possibility that protein degradation is less efficient in nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explanation is based on cited literature (Clift et al., 2017) and speculation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "7ccff873-ac7a-4fde-b1f5-85a779afb7e8",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C49",
+      "claim": "zGrad expression needs to be induced, which delays the onset of degradation by 65 to 200 min for the proteins investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in our system zGrad expression needs to be induced. This delays the onset of degradation by 65 to 200 min for the proteins we investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing time to onset of degradation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "277c4d21-8a2f-48d6-a62b-55be33c318c9",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C50",
+      "claim": "zGrad degrades proteins rapidly enough to assess the consequences of abrupt protein inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, zGrad degrades proteins rapidly enough to assess the consequences of abrupt protein inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on experimental data showing degradation kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "f215cc61-ccdf-4331-9d7c-2f1d24cbb02b",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C51",
+      "claim": "The AID system was combined with the deGradFP system by fusing AID to the vhhGFP4 anti-GFP nanobody and shown to degrade GFP-tagged proteins in an auxin-dependent manner in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the AID system was combined with the deGradFP system by fusing AID to the vhhGFP4 anti-GFP nanobody and shown to degrade GFP-tagged proteins in an auxin-dependent manner in zebrafish (Daniel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement cites Daniel et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "15ec7caf-2830-487e-87b6-ce7d4eb96084",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C52",
+      "claim": "The fusion of AID to the vhhGFP4 nanobody overcomes the leakiness observed with the AID system.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the fusion of AID to the vhhGFP4 nanobody overcomes the leakiness that we observed with the AID system (Daniel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement cites Daniel et al., 2018 and compares to their own observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "146e8575-fc75-4399-88c3-e408a7bda03c",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C53",
+      "claim": "Compared to zGrad system, the mAID-nanobody system requires the expression of an additional component, the mAID-nanobody fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, compared to zGrad system, which requires the fusion of the protein of interest to GFP and the expression of zGrad, the mAID-nanobody system requires the expression of an additional component, the mAID-nanobody fusion protein \u2013 a feature that adds more versatility but also requires additional effort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on the design of the two systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "0745cc90-db72-4384-a0e2-3248ee14033a",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C54",
+      "claim": "Depletion of maternal proteins by expressing zGrad from injected mRNA or as purified protein should uncover early protein requirements and can circumvent the laborious process of generating maternal mutants for essential genes by germline replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of maternal proteins by expressing zGrad from injected mRNA or as purified protein should uncover early protein requirements and can circumvent the laborious process of generating maternal mutants for essential genes by germline replacement (Ciruna et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application based on experimental results and cites Ciruna et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "06eede0a-852f-4e22-b39a-33961aa52da3",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C55",
+      "claim": "The depletion of maternal Ctnna results in an early and severe cell-cell adhesion defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that the depletion of maternal Ctnna results in an early and severe cell-cell adhesion defect is consistent with this idea (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figure 3 showing maternal Ctnna depletion phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "a70026a3-a3cf-4bf6-9e6f-1cd999a452ff",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C56",
+      "claim": "zGrad needs to be expressed at high enough levels to deplete proteins to sufficiently low levels to fully disrupt protein function.",
+      "claim_type": "EXPLICIT",
+      "source": "An important consideration is that zGrad needs to be expressed at high enough levels to deplete proteins to sufficiently low levels to fully disrupt protein function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental observations of partial phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "caf4d37f-b48e-4589-9e49-01680ea41a77",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C57",
+      "claim": "Systems such as Gal4/UAS or inducible systems such as the Tet-On system can be used to achieve high and tissue-specific zGrad expression.",
+      "claim_type": "EXPLICIT",
+      "source": "One way to achieve high and tissue-specific zGrad expression is to amplify the production of zGrad through such systems as Gal4/UAS (Scheer and Campos-Ortega, 1999) or \u2013 to also add temporal control \u2013 inducible systems such as the Tet-On system (Campbell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed strategy citing relevant systems from Scheer and Campos-Ortega, 1999 and Campbell et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "40a0dd12-71a2-42fc-939e-aa6bd2c8801f",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C58",
+      "claim": "zGrad should be a useful tool for the study of the consequences of acute loss-of-protein function in zebrafish, possibly also circumventing the problem of genetic compensation observed in studies of genetic mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Such modifications combined with the increasing number of GFP-tagged transgenic (Trinh et al., 2011; Kawakami et al., 2010) and knock-in lines (Hoshijima et al., 2016) should render zGrad as a useful tool for the study of the consequences of acute loss-of-protein function in zebrafish, possibly also circumventing the problem of genetic compensation observed in studies of genetic mutants (Rossi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental results and cites multiple references (Trinh et al., 2011; Kawakami et al., 2010; Hoshijima et al., 2016; Rossi et al., 2015).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "7faf0568-6f4a-4957-b542-b5e420c1d851",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C59",
+      "claim": "zGrad recognizes different GFP versions (EGFP, sfGFP and Citrine).",
+      "claim_type": "EXPLICIT",
+      "source": "It recognizes different GFP versions (EGFP, sfGFP and Citrine, Figures 1 and 2) and targets the tagged proteins for degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references Figures 1 and 2 showing degradation of different GFP variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "d5729332-8a8d-40a0-965f-b61a855ddb3c",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C60",
+      "claim": "Similar to deGradFP, zGrad degraded proteins tagged at the N-terminus, embedded within the protein and at the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to other degron systems (Natsume and Kanemaki, 2017) and similar to deGradFP (Caussinus et al., 2011), zGrad degraded proteins tagged at the N-terminus, embedded within the protein and at the C-terminus in the examples reported here (Figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures and cites Natsume and Kanemaki, 2017 and Caussinus et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "4b5b0f57-114d-403a-a884-ca3c6963feb0",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C61",
+      "claim": "The kinetics of zGrad-mediated degradation are similar to the kinetics reported for other degron-based systems.",
+      "claim_type": "EXPLICIT",
+      "source": "These kinetics are similar to the kinetics reported for other degron-based systems (Daniel et al., 2018; Nishimura et al., 2009; Armenti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison cites Daniel et al., 2018; Nishimura et al., 2009; Armenti et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "9971db18-b466-4dca-adf9-974c64e6ee76",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C62",
+      "claim": "The cxcr4b promoter drives expression in the somites and the posterior lateral line primordium.",
+      "claim_type": "EXPLICIT",
+      "source": "Among other tissues, the cxcr4b promoter drives expression in the somites and the posterior lateral line primordium (primordium) (Figure 2\u2014figure supplement 1) (Chong et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references a figure and cites Chong et al., 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "c6547400-2fa6-48c5-bcbf-ca1ae6f810f8",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C63",
+      "claim": "H2A-mCherry is not recognized by the anti-GFP nanobody and should not be subjected to zGrad-mediated protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since H2A-mCherry was expressed from the same promoter as H2A-EGFP and since H2A-mCherry is not recognized by the anti-GFP nanobody and should not be subjected to zGrad-mediated protein degradation (Caussinus et al., 2011), comparing the ratio of H2A-mCherry expression levels to H2A-EGFP should be a measure of H2A-EGFP in the absence of zGrad-mediated degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement cites Caussinus et al., 2011 and explains the rationale for using mCherry as a control.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "a373e004-e0db-44cf-bc87-5fce6e3f260c",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C64",
+      "claim": "The H2A-EGFP fluorescence intensity in the primordium was on average 3.8 times brighter than the H2A-EGFP fluorescence intensity in the somites.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the H2A-EGFP fluorescence intensity in the primordium was on average 3.8 times brighter than the H2A-EGFP fluorescence intensity in the somites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the figure legend for Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "922b9ba5-27bf-4ee1-a06a-a673e43af79c",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C65",
+      "claim": "The H2A-mCherry fluorescence intensity in the primordium was on average 5.1 times brighter than the H2A-mCherry fluorescence intensity in the somites.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the H2A-mCherry fluorescence intensity in the primordium was on average 5.1 times brighter than the H2A-mCherry fluorescence intensity in the somites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the figure legend for Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "aed39fde-e5e7-42d4-9b4f-9b82679601f5",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C66",
+      "claim": "The zGrad-mediated degradation of H2A-EGFP in the primordium is obscured by the continued production of H2A-EGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2020Note that the zGrad-mediated degradation of H2A-EGFP in the primordium is obscured by the continued production of H2A-EGFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in a footnote to Table 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "b9c36791-a532-417e-8d87-51ae527396cf",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C68",
+      "claim": "Cdh1 is required for cell-cell adhesion.",
+      "claim_type": "IMPLICIT",
+      "source": "Second, we tested whether zGrad degrades transmembrane Cdh1-sfGFP efficiently enough to disrupt its function (Yoshida-Noro et al., 1984; Stephenson et al., 2010; Larue et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge and cites Yoshida-Noro et al., 1984; Stephenson et al., 2010; Larue et al., 1994.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "f60552e3-abb3-4b57-a7a3-898858d23b35",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C69",
+      "claim": "cdh1-/- embryos die during late gastrulation stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an analysis is currently not possible because cdh1-/- embryos die during late gastrulation stages (Kane et al., 1996; Kane et al., 2005; Montero et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement cites Kane et al., 1996; Kane et al., 2005; Montero et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "fa08db8e-9f58-4186-b5e0-3c363bffbc7b",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C70",
+      "claim": "Cxcr4b functions as a guidance receptor for the migration of the primordium.",
+      "claim_type": "IMPLICIT",
+      "source": "Third, we asked whether induction of zGrad can degrade the Sdf1 chemokine receptor Cxcr4b tagged with EGFP to temporarily disrupt its function as a guidance receptor for the migration of the primordium (Haas and Gilmour, 2006; David et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge and cites Haas and Gilmour, 2006; David et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "eb90e1e1-1635-4aa0-9eb5-1b0d5ba4cb40",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C71",
+      "claim": "Cxcr4b-EGFP expressed from the cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7 transgene restores the migration of the primordium in cxcr4b-/- embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Cxcr4b-EGFP expressed from the cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7 transgene restores the migration of the primordium in cxcr4b-/- embryos and Kate2-CaaX expressed from an internal ribosomal entry site (IRES) serves as a marker for the primordium and an internal reference for how much Cxcr4b-EGFP is produced (Venkiteswaran et al., 2013; Lewellis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement cites Venkiteswaran et al., 2013; Lewellis et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "f6b712d7-4d6c-484a-b0ca-dbbc174033db",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C72",
+      "claim": "The cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 fully restores primordium migration in cxcr4b mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p7 transgenic line used above, the cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 fully restores primordium migration in cxcr4b mutant embryos, however, it expresses Cxcr4b-EGFP at two-fold lower levels (Fuentes et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement cites Fuentes et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "3d3d806c-d31f-4178-8ed1-623b05e82f65",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C73",
+      "claim": "In cxcr4b mutant control embryos that carried the rescuing cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 transgene but lacked the cxcr4b:zGrad transgene, the primordium completed its migration and deposited the same number of neuromasts with the same spacing as in wild-type embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In cxcr4b mutant control embryos that carried the rescuing cxcr4b:cxcr4b-EGFP-IRES-Kate2-CaaX-p1 transgene but lacked the cxcr4b:zGrad transgene, the primordium completed its migration and deposited the same number of neuromasts with the same spacing as in wild-type embryos (Figure 6E,F, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures showing rescue of migration phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "220b9fd7-57d4-45ee-aa48-2445f4231c52",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C74",
+      "claim": "Primordia in cxcr4b-/- embryos showed little to no directed migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to primordia in cxcr4b-/- embryos, which showed little to no directed migration (Figure 6E,F) (Haas and Gilmour, 2006)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text references figures and cites Haas and Gilmour, 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "1098298f-0451-49bb-9e78-61ca5ce036b8",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "claim_id": "C75",
+      "claim": "The observed phenotype in Z ctnna:ctnna-Citrine embryos injected with zGrad mRNA is similar to the defects reported for zygotic ctnna-/- embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed phenotype in Z ctnna:ctnna-Citrine embryos injected with zGrad mRNA is similar to the defects reported for zygotic ctnna-/- embryos (Han et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison cites Han et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f513a922-9243-4a96-9d57-2555b281697f",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The AID system is not suitable for protein degradation in zebrafish because OsTIR1-mCherry induces degradation of sfGFP-mAID in a dose-dependent manner irrespective of auxin (IAA), and higher concentrations (\u226550 pg/embryo) cause embryo toxicity and lethality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 provide converging evidence that the AID system lacks auxin-dependence in zebrafish and shows toxicity at higher concentrations. The data from Figure 1D and supplements demonstrate dose-dependent degradation without IAA requirement and embryo deformation at high OsTIR1 levels, supporting the conclusion that this system is unsuitable in its current form.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "8e726e6d-b640-4211-beef-9534d9ab0dd9",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The ZIF-1/ZF1 tag degradation system only reduced sfGFP-ZF1 levels by 17%, indicating inefficient degradation in zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C7 is supported by quantitative data in Figure 1E,H showing minimal (17%) reduction in sfGFP-ZF1 levels. This result clearly demonstrates that the ZIF-1/ZF1 system does not efficiently degrade tagged proteins in zebrafish.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "47dd8e2d-9285-49c8-8c45-841b4db894b2",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Ab-SPOP/FP-tag degradation system efficiently degrades nuclear proteins (70% reduction) but not cytoplasmic proteins (13% reduction), making it unsuitable for non-nuclear protein degradation in zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 are supported by data in Figure 1F,H showing compartment-specific degradation efficiency. The results are consistent with prior work (Shin et al., 2015) and demonstrate clear differential degradation between nuclear and cytoplasmic compartments, supporting the conclusion about limited applicability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "db42ac04-5752-4dbf-a887-ea07e9d752b0",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "zGrad, a modified version of deGradFP using the zebrafish fbxw11b F-box domain instead of Drosophila Slimb, efficiently degrades sfGFP-ZF1 by 89% in both cytoplasm and nucleus, with degradation observable as early as 2.5 hpf.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 demonstrate the development and validation of zGrad. The sequence homology-based identification of fbxw11b (C11) is reasonable, and the dramatic improvement from 19% (deGradFP) to 89% (zGrad) degradation (C12) with early onset (C13) is well-supported by Figure 1G,H data. This represents a key methodological advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "0ea13928-f9dd-43d0-acb8-f6b529ca70ec",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "zGrad degrades nuclear H2A-EGFP with tissue-specific efficiency: 87% reduction in somites (onset 200 min, half-life 156 min) versus 22% reduction in primordium (onset 140 min, half-life 29 min), likely due to differences in H2A-EGFP expression levels and continued production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 present comprehensive kinetic data for H2A-EGFP degradation. The differential efficiency between tissues is well-documented with quantitative measurements. The explanation for tissue differences (C17) is reasonable given the supporting data on expression levels (C64-C65) and continued production (C66), though it remains somewhat speculative. The use of H2A-mCherry as an internal control is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "4011d6db-9793-4a90-8474-388ca7b05dab",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "zGrad efficiently degrades transmembrane Cdh1-sfGFP with 79% reduction in the primordium, rapid onset (75 min), and short half-life (24 min). The Cdh1-sfGFP and Cdh1-TagRFP transgenes are functional as they rescue cdh1 mutant lethality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 demonstrate efficient degradation of a transmembrane protein. The functional validation of transgenes through rescue experiments (C20, Table 2) is critical and well-executed. The kinetic parameters are precisely measured using ratiometric analysis with Cdh1-TagRFP as control, providing strong evidence for rapid and efficient degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "150ce1a0-62b8-4d17-a068-ff0e2fa799f4",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "zGrad degrades cytoplasmic Ctnna-Citrine by 58% with onset at 65 min and half-life of 19 min. The Ctnna-Citrine fusion is functional as homozygous fish are viable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 demonstrate degradation of a cytoplasmic protein. The functional validation through viability of homozygous fish (C24) is appropriate. However, the quantification is less robust than for other proteins as it lacks a ratiometric control (acknowledged by authors), which introduces some uncertainty in the absolute degradation efficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "d3cddb5e-3c80-4d2a-a9b5-710b5e64053a",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "zGrad targets nuclear, cytoplasmic, and transmembrane proteins tagged with EGFP or Citrine for degradation, but does not degrade secreted GFP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 synthesize the compartment-specificity results. The data from multiple protein types (H2A, Cdh1, Ctnna) support broad applicability across compartments. The lack of secreted GFP degradation (C26) is an important limitation that is appropriately documented, suggesting the nanobody cannot access the secretory pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "74e4e7d9-6f40-420f-8d6b-796863392060",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "zGrad-mediated depletion of Ctnna-Citrine causes cell detachment and embryonic lethality in maternal-zygotic and maternal embryos at 3-5 hpf, and in zygotic embryos at ~24 hpf, demonstrating that maternal Ctnna sustains development for approximately one day before zygotic Ctnna is required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 demonstrate that zGrad can recapitulate genetic loss-of-function phenotypes and reveal temporal requirements. The phenotypes match published zygotic mutants (C30, Han et al., 2016). The inference about maternal contribution (C31) is well-supported by the ~20 hour delay between maternal and zygotic phenotypes. This represents a key functional validation of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "89971a23-c678-4a83-8496-62aba4050246",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Heat shock-induced zGrad expression depletes Cdh1-sfGFP in cdh1-/- embryos, causing skin shedding and rapid death, though penetrance is variable. This demonstrates that zGrad can cause loss-of-protein function and uncover phenotypes beyond initial essential requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 show that temporal induction of zGrad can reveal late-stage protein requirements. The incomplete penetrance (C33) is a limitation that the authors acknowledge, likely reflecting insufficient depletion in some embryos. Despite this, the result demonstrates proof-of-concept for uncovering post-gastrulation Cdh1 functions that cannot be studied in cdh1-/- mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "6a735d64-a920-42d8-9725-f979a562b6a1",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Heat shock-induced zGrad transiently depletes Cxcr4b-EGFP, causing stalled primordium migration and rounded morphology at 90 min post-heat shock. Migration resumes after 120 min when Cxcr4b-EGFP is re-produced, demonstrating reversible protein loss-of-function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 demonstrate temporal and reversible protein inactivation. The time-lapse data showing transient migration arrest followed by recovery provides strong evidence for reversibility. This is a key advantage of the system over genetic approaches and represents a novel phenotype distinct from complete loss-of-function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "d3c038a9-b6a1-4025-90cf-5c42261b7dc4",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Tissue-specific expression of zGrad from the cxcr4b promoter efficiently depletes Cxcr4b-EGFP below detectable levels but only partially phenocopies the cxcr4b mutant migration defect (72.5% migration distance vs. near-zero in mutants), likely because zGrad expression levels are insufficient for complete functional depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C45 demonstrate tissue-specific protein depletion with partial phenocopy. The expression pattern validation (C39) and efficient depletion (C40) are well-documented. The partial phenotype (C41-C42) is appropriately interpreted as insufficient zGrad expression (C44), which is a reasonable explanation. The control showing zGrad alone doesn't affect migration (C43) is important. This demonstrates both the potential and limitations of tissue-specific approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "4db32478-f190-4231-bce9-c5d48fa2152e",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "zGrad degrades transmembrane and cytoplasmic proteins with half-lives around 20 min, while nuclear H2A-EGFP degradation is slower (~2.5 hr), possibly due to histone stability and reduced nuclear degradation efficiency. Despite a 65-200 min delay for induction, zGrad is rapid enough for studying acute protein inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 synthesize the kinetic properties of zGrad. The differential degradation rates between compartments are well-documented. The explanation for slow H2A degradation (C48) cites relevant literature but remains somewhat speculative. The conclusion about suitability for acute inactivation studies (C50) is reasonable given the demonstrated kinetics, though the induction delay is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "5d4ddbe0-4501-4902-9b86-eb8fec147880",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The mAID-nanobody fusion system (Daniel et al., 2018) overcomes AID system leakiness and provides auxin-dependent degradation in zebrafish, but requires expression of an additional component compared to zGrad.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 appropriately cite and compare to contemporary work. The comparison is fair and acknowledges both advantages (auxin control) and disadvantages (additional component) of the alternative system. This contextualizes zGrad within the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "9253407c-8f08-4160-9067-c3e7b15622d0",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "zGrad can be used to deplete maternal proteins and uncover early requirements, as demonstrated by maternal Ctnna depletion causing early severe cell-cell adhesion defects, potentially circumventing the need for germline replacement to generate maternal mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 propose and validate an application of zGrad. The maternal Ctnna depletion phenotype (C55, Figure 3) provides proof-of-concept. The proposed advantage over germline replacement (C54) is reasonable, though this remains a prospective application rather than a fully demonstrated result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "1ee2e757-52d7-4875-b8da-a40bee0755c7",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "zGrad requires sufficiently high expression levels for complete protein depletion and functional disruption. Amplification systems like Gal4/UAS or Tet-On could enhance tissue-specific expression. Combined with increasing GFP-tagged lines, zGrad should be useful for studying acute loss-of-function and potentially circumventing genetic compensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C58 discuss limitations and future directions. The need for high zGrad expression (C56) is supported by the partial Cxcr4b phenotype. The proposed solutions (C57) are reasonable but not experimentally validated in this study. The potential to circumvent genetic compensation (C58) is speculative and would require direct experimental comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "4d17f4cf-e1af-44ca-afee-b0d8c92ad22b",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "zGrad recognizes multiple GFP variants (EGFP, sfGFP, Citrine) and degrades proteins tagged at N-terminus, C-terminus, or internally, with kinetics similar to other degron systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 characterize zGrad's versatility. Recognition of multiple GFP variants (C59) is demonstrated across experiments. Tag position flexibility (C60) is shown with different proteins, though systematic testing of all positions on the same protein was not performed. The kinetic comparison (C61) appropriately cites relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    },
+    {
+      "id": "602fa973-06f0-4044-9d39-d347d64533a0",
+      "content_id": "873e2733-2282-40b7-b960-f94cca55b0e9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "zGrad efficiently degrades transmembrane, cytosolic, and nuclear GFP-tagged proteins in zebrafish in an inducible and reversible manner. Global depletion recapitulates genetic loss-of-function phenotypes, while local and temporal inactivation yields more restricted and novel phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 represent the main conclusions of the manuscript. These are well-supported by the comprehensive experimental data showing degradation across compartments (C14-C27), global phenotypes matching mutants (C28-C34), and restricted phenotypes from temporal/spatial control (C35-C45). This synthesis accurately reflects the body of evidence presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:36:22.507671Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8b3da760-22ad-4654-8625-963da3f02f43",
+      "result_id": "f513a922-9243-4a96-9d57-2555b281697f"
+    },
+    {
+      "claim_id": "549a4e9d-da2e-41f1-865a-a097d082d43a",
+      "result_id": "f513a922-9243-4a96-9d57-2555b281697f"
+    },
+    {
+      "claim_id": "ebe34666-af3c-4bf6-92fa-07fb995b7174",
+      "result_id": "f513a922-9243-4a96-9d57-2555b281697f"
+    },
+    {
+      "claim_id": "444e060e-a671-457e-8bda-9dc5bb3d44aa",
+      "result_id": "8e726e6d-b640-4211-beef-9534d9ab0dd9"
+    },
+    {
+      "claim_id": "482fe8b9-3167-4729-a081-47c80be92ae8",
+      "result_id": "47dd8e2d-9285-49c8-8c45-841b4db894b2"
+    },
+    {
+      "claim_id": "58161ccd-25f5-4929-9a35-b609144741e4",
+      "result_id": "47dd8e2d-9285-49c8-8c45-841b4db894b2"
+    },
+    {
+      "claim_id": "53f1c31b-a72b-4985-9a49-f298972ed88d",
+      "result_id": "db42ac04-5752-4dbf-a887-ea07e9d752b0"
+    },
+    {
+      "claim_id": "6838ab4f-e3e6-4752-917c-54722494954a",
+      "result_id": "db42ac04-5752-4dbf-a887-ea07e9d752b0"
+    },
+    {
+      "claim_id": "9b0d857f-0f25-4d51-8917-d266e9af0de2",
+      "result_id": "db42ac04-5752-4dbf-a887-ea07e9d752b0"
+    },
+    {
+      "claim_id": "30397875-82bd-48e1-89bd-43f1b8675d09",
+      "result_id": "db42ac04-5752-4dbf-a887-ea07e9d752b0"
+    },
+    {
+      "claim_id": "2a35f6ae-def7-4b28-9cc3-ef76b9f2a5b1",
+      "result_id": "0ea13928-f9dd-43d0-acb8-f6b529ca70ec"
+    },
+    {
+      "claim_id": "22b0933d-ae67-492c-8001-ea7c196bcafe",
+      "result_id": "0ea13928-f9dd-43d0-acb8-f6b529ca70ec"
+    },
+    {
+      "claim_id": "e408e9c3-127a-4b86-958e-702a1d7508c7",
+      "result_id": "0ea13928-f9dd-43d0-acb8-f6b529ca70ec"
+    },
+    {
+      "claim_id": "98fb4436-6019-4e80-a9ff-589c1893b84b",
+      "result_id": "0ea13928-f9dd-43d0-acb8-f6b529ca70ec"
+    },
+    {
+      "claim_id": "bb4002b2-3582-491a-9e45-413de329dc21",
+      "result_id": "0ea13928-f9dd-43d0-acb8-f6b529ca70ec"
+    },
+    {
+      "claim_id": "bfaa75ee-31e5-4405-af26-58d9297eed5d",
+      "result_id": "0ea13928-f9dd-43d0-acb8-f6b529ca70ec"
+    },
+    {
+      "claim_id": "91b3a03b-1969-42f4-8669-755975027fde",
+      "result_id": "4011d6db-9793-4a90-8474-388ca7b05dab"
+    },
+    {
+      "claim_id": "d48f839d-5307-4e79-92e8-9a139212d8a4",
+      "result_id": "4011d6db-9793-4a90-8474-388ca7b05dab"
+    },
+    {
+      "claim_id": "1f58a807-a21a-46cf-b81d-d4a336a1b05a",
+      "result_id": "4011d6db-9793-4a90-8474-388ca7b05dab"
+    },
+    {
+      "claim_id": "00a46c11-25f0-4003-baf1-6d14bd98dbf3",
+      "result_id": "4011d6db-9793-4a90-8474-388ca7b05dab"
+    },
+    {
+      "claim_id": "fb19719a-c0cf-4163-b209-e13da783af0a",
+      "result_id": "150ce1a0-62b8-4d17-a068-ff0e2fa799f4"
+    },
+    {
+      "claim_id": "8635d1fc-7cf2-437c-9cdd-1717d8e5e7cc",
+      "result_id": "150ce1a0-62b8-4d17-a068-ff0e2fa799f4"
+    },
+    {
+      "claim_id": "750fbe99-1170-46c8-b212-01c4350ecdca",
+      "result_id": "d3cddb5e-3c80-4d2a-a9b5-710b5e64053a"
+    },
+    {
+      "claim_id": "eb72c7aa-5c82-46a5-94d6-b9e3f6b90103",
+      "result_id": "d3cddb5e-3c80-4d2a-a9b5-710b5e64053a"
+    },
+    {
+      "claim_id": "cae7800e-c584-41d6-99ad-a5d5797c7d5a",
+      "result_id": "74e4e7d9-6f40-420f-8d6b-796863392060"
+    },
+    {
+      "claim_id": "b8c7fcd3-ef58-4dba-938b-f3d118e0edfd",
+      "result_id": "74e4e7d9-6f40-420f-8d6b-796863392060"
+    },
+    {
+      "claim_id": "3ffc1df4-5a9d-462e-89db-2c31423f54ff",
+      "result_id": "74e4e7d9-6f40-420f-8d6b-796863392060"
+    },
+    {
+      "claim_id": "b37164f2-a41c-45d5-bb9f-6d5a79678ba5",
+      "result_id": "74e4e7d9-6f40-420f-8d6b-796863392060"
+    },
+    {
+      "claim_id": "9240e40a-86fc-4875-bdda-3fdf7e4ba611",
+      "result_id": "89971a23-c678-4a83-8496-62aba4050246"
+    },
+    {
+      "claim_id": "90ccd2af-c2b9-4367-bece-07e03ec09720",
+      "result_id": "89971a23-c678-4a83-8496-62aba4050246"
+    },
+    {
+      "claim_id": "bca48b36-a970-42a1-ab77-604413ac9116",
+      "result_id": "89971a23-c678-4a83-8496-62aba4050246"
+    },
+    {
+      "claim_id": "d8aac2c6-5946-4844-830e-60806bef64e9",
+      "result_id": "6a735d64-a920-42d8-9725-f979a562b6a1"
+    },
+    {
+      "claim_id": "9b10858d-1639-409f-ad80-d8ea31b7f652",
+      "result_id": "6a735d64-a920-42d8-9725-f979a562b6a1"
+    },
+    {
+      "claim_id": "d1d876c2-4c31-4dbb-8b7e-ff7137757f25",
+      "result_id": "6a735d64-a920-42d8-9725-f979a562b6a1"
+    },
+    {
+      "claim_id": "4596fb22-4bb5-46ef-a671-b980bbdc1d17",
+      "result_id": "6a735d64-a920-42d8-9725-f979a562b6a1"
+    },
+    {
+      "claim_id": "a83701a2-7b45-4ba1-b4d8-a7586b520053",
+      "result_id": "d3c038a9-b6a1-4025-90cf-5c42261b7dc4"
+    },
+    {
+      "claim_id": "8bd86769-224d-41e2-aa77-92216a3e4b21",
+      "result_id": "d3c038a9-b6a1-4025-90cf-5c42261b7dc4"
+    },
+    {
+      "claim_id": "4425c568-f43f-4b35-9620-590d181efbb8",
+      "result_id": "d3c038a9-b6a1-4025-90cf-5c42261b7dc4"
+    },
+    {
+      "claim_id": "798e68e6-5e79-4455-8af4-51fe5d475f53",
+      "result_id": "d3c038a9-b6a1-4025-90cf-5c42261b7dc4"
+    },
+    {
+      "claim_id": "77e2ba41-52a9-492d-8ddd-57f39f0822f7",
+      "result_id": "d3c038a9-b6a1-4025-90cf-5c42261b7dc4"
+    },
+    {
+      "claim_id": "e2c64e7c-28d6-4229-a596-7b94c08d386d",
+      "result_id": "d3c038a9-b6a1-4025-90cf-5c42261b7dc4"
+    },
+    {
+      "claim_id": "9cb17d80-e244-4b88-930c-aa1abab209fe",
+      "result_id": "d3c038a9-b6a1-4025-90cf-5c42261b7dc4"
+    },
+    {
+      "claim_id": "4043ed79-68c4-48a0-ad16-713240b5a17f",
+      "result_id": "4db32478-f190-4231-bce9-c5d48fa2152e"
+    },
+    {
+      "claim_id": "11faaef2-3889-4c53-a40a-bdcc40f633ad",
+      "result_id": "4db32478-f190-4231-bce9-c5d48fa2152e"
+    },
+    {
+      "claim_id": "81e631d2-8cbd-4b8a-9521-4fa749e6c384",
+      "result_id": "4db32478-f190-4231-bce9-c5d48fa2152e"
+    },
+    {
+      "claim_id": "7ccff873-ac7a-4fde-b1f5-85a779afb7e8",
+      "result_id": "4db32478-f190-4231-bce9-c5d48fa2152e"
+    },
+    {
+      "claim_id": "277c4d21-8a2f-48d6-a62b-55be33c318c9",
+      "result_id": "4db32478-f190-4231-bce9-c5d48fa2152e"
+    },
+    {
+      "claim_id": "f215cc61-ccdf-4331-9d7c-2f1d24cbb02b",
+      "result_id": "5d4ddbe0-4501-4902-9b86-eb8fec147880"
+    },
+    {
+      "claim_id": "15ec7caf-2830-487e-87b6-ce7d4eb96084",
+      "result_id": "5d4ddbe0-4501-4902-9b86-eb8fec147880"
+    },
+    {
+      "claim_id": "146e8575-fc75-4399-88c3-e408a7bda03c",
+      "result_id": "5d4ddbe0-4501-4902-9b86-eb8fec147880"
+    },
+    {
+      "claim_id": "0745cc90-db72-4384-a0e2-3248ee14033a",
+      "result_id": "9253407c-8f08-4160-9067-c3e7b15622d0"
+    },
+    {
+      "claim_id": "06eede0a-852f-4e22-b39a-33961aa52da3",
+      "result_id": "9253407c-8f08-4160-9067-c3e7b15622d0"
+    },
+    {
+      "claim_id": "a70026a3-a3cf-4bf6-9e6f-1cd999a452ff",
+      "result_id": "1ee2e757-52d7-4875-b8da-a40bee0755c7"
+    },
+    {
+      "claim_id": "caf4d37f-b48e-4589-9e49-01680ea41a77",
+      "result_id": "1ee2e757-52d7-4875-b8da-a40bee0755c7"
+    },
+    {
+      "claim_id": "40a0dd12-71a2-42fc-939e-aa6bd2c8801f",
+      "result_id": "1ee2e757-52d7-4875-b8da-a40bee0755c7"
+    },
+    {
+      "claim_id": "7faf0568-6f4a-4957-b542-b5e420c1d851",
+      "result_id": "4d17f4cf-e1af-44ca-afee-b0d8c92ad22b"
+    },
+    {
+      "claim_id": "d5729332-8a8d-40a0-965f-b61a855ddb3c",
+      "result_id": "4d17f4cf-e1af-44ca-afee-b0d8c92ad22b"
+    },
+    {
+      "claim_id": "4b5b0f57-114d-403a-a884-ca3c6963feb0",
+      "result_id": "4d17f4cf-e1af-44ca-afee-b0d8c92ad22b"
+    },
+    {
+      "claim_id": "306588bd-8b8a-40b2-8442-bfc6639884df",
+      "result_id": "602fa973-06f0-4044-9d39-d347d64533a0"
+    },
+    {
+      "claim_id": "e8da9293-520a-4833-b8ac-4ff8ffd9e044",
+      "result_id": "602fa973-06f0-4044-9d39-d347d64533a0"
+    },
+    {
+      "claim_id": "ed82a9dd-9936-4d97-b944-083a56da9394",
+      "result_id": "602fa973-06f0-4044-9d39-d347d64533a0"
+    }
+  ],
+  "comparisons": []
+}

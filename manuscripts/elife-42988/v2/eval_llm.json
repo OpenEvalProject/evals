@@ -1,0 +1,489 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Wild-type huntingtin (wtHTT) forms a transcription-coupled DNA repair (TCR) complex with POLR2A, ATXN3, PNKP, CBP, LIG3, and other transcription factors. This complex was demonstrated through co-immunoprecipitation experiments in multiple cell types and confirmed by proximity ligation assays and immunofluorescence colocalization in both cultured cells and postmortem human brain tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (co-IP from endogenous proteins in SH-SY5Y cells, co-IP from tagged proteins in PC12 cells, proximity ligation assays, and immunofluorescence colocalization) consistently demonstrate physical association of HTT with PNKP, ATXN3, POLR2A, CBP, LIG3, and TAF4. The absence of APE1 in the immunocomplexes serves as an appropriate negative control demonstrating specificity. The convergence of evidence from different methodologies and cell systems strongly supports the existence of this multiprotein complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The C-terminal catalytic domain (PHOS+KIN) of PNKP interacts with both full-length and N-terminal fragments of HTT. Domain mapping experiments show that neither individual FHA, PHOS, nor KIN domains alone are sufficient for HTT interaction, but the combined PHOS+KIN domain is necessary and sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-immunoprecipitation experiments with FLAG-tagged PNKP domains clearly demonstrate that the PHOS+KIN domain co-precipitates with both wtHTT and mHTT, while individual domains do not. This is confirmed with both full-length HTT and N-terminal fragments in multiple cell systems. BiFC assays provide additional orthogonal validation. The experimental design appropriately tests all domain combinations to map the interaction interface.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Mutant HTT (mHTT) dramatically reduces PNKP 3'-phosphatase activity (70-90% reduction) in HD iPSC-derived neurons, HD mouse models (zQ175 and N171-82Q), and cultured cells expressing mHTT, while wild-type HTT stimulates PNKP activity (30-40% increase). PNKP protein levels remain unchanged, indicating the effect is on enzymatic activity rather than protein abundance. The effect is region-specific in mouse brain, with substantial reduction in cortex and striatum but minimal change in cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by consistent measurements across multiple experimental systems (iPSC-derived neurons with different CAG repeat lengths, two different HD mouse models, and multiple cell culture systems). The enzymatic assays are appropriately controlled with purified PNKP as positive control and include measurements of protein levels to rule out changes in expression. The region-specific effects in mouse brain correlate with known patterns of HD pathology. HTT depletion experiments provide additional evidence for wtHTT's role in stimulating PNKP activity. The magnitude of effects is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Mutant HTT specifically impairs PNKP-dependent DNA repair without affecting PNKP-independent repair pathways. Nuclear extracts from mHTT-expressing cells and zQ175 mouse brain show normal repair of DNA substrates requiring only polymerase and ligase activities, but impaired repair of substrates requiring PNKP activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design appropriately tests specificity by comparing repair of two different DNA substrates: one requiring PNKP activity (3'-phosphate ends) and one not requiring PNKP (3'-OH ends). The selective impairment of PNKP-dependent repair while PNKP-independent repair remains intact demonstrates that mHTT specifically affects PNKP rather than causing general DNA repair defects. This is a well-controlled experiment that addresses potential alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C101",
+      "C105",
+      "C106"
+    ],
+    "result": "HD neurons and mouse models show chronic activation of the DNA damage response ATM-p53 pathway, evidenced by increased phosphorylation of ATM, H2AX, and p53, and increased expression of p53 target genes in striatum and cortex but not cerebellum. PNKP overexpression reduces this pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data demonstrate increased phosphorylation of key DDR pathway components in HD iPSC-derived neurons and zQ175 mouse cortex. qRT-PCR shows increased expression of multiple p53 target genes (Bcl2L11, Pmaip1, Bid, Pidd1, Apaf1) in affected brain regions but not cerebellum, consistent with the pattern of PNKP activity changes. The rescue of DDR activation by PNKP overexpression provides evidence for a causal relationship between PNKP inactivation and DDR pathway activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Cells expressing N-terminal mutant HTT show increased DNA strand breaks (measured by comet assay), increased caspase-3 activity, and increased cell toxicity. PNKP overexpression substantially rescues these phenotypes, reducing DNA strand breaks, caspase-3 activation, and cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays (comet assay for DNA damage, caspase-3 activity assay for apoptosis, and flow cytometry for cell toxicity) consistently show that PNKP overexpression ameliorates mHTT-induced cellular dysfunction. The rescue experiments provide strong evidence that PNKP inactivation is a key mechanism underlying mHTT toxicity. The use of multiple independent readouts strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "HTT preferentially associates with actively transcribing genes (demonstrated by ChIP), and DNA damage accumulates preferentially in actively transcribing genes versus non-transcribing genes in HD models. LA-qPCR analysis shows 60-70% reduced amplification of actively transcribing genes in zQ175 cortex and striatum, but only 10-15% reduction for non-transcribing genes. Similar patterns are observed in HD iPSC-derived neurons and N171-82Q mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP experiments demonstrate significantly higher HTT occupancy on brain-specific actively transcribing genes compared to muscle-specific genes not transcribed in brain. LA-qPCR, which measures DNA damage by reduced PCR amplification efficiency, shows selective accumulation of DNA damage in actively transcribing genes across multiple HD models (zQ175 mice, N171-82Q mice, and HD iPSC-derived neurons). The consistency across models and the specificity for transcriptionally active genes strongly support the hypothesis that the HTT-TCR complex functions during transcription and its dysfunction leads to preferential DNA damage in active genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "CBP protein levels are dramatically reduced (~80%) in HD neurons and zQ175 cortex, while other TCR components (ATXN3, PNKP, POLR2A, CREB) remain unchanged. ATXN3 depletion similarly reduces CBP levels. ATXN3 interacts with CBP (demonstrated by co-IP, PLA, and colocalization), and CBP ubiquitination is increased in zQ175 brain, suggesting that decreased ATXN3 deubiquitinase activity leads to CBP degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data consistently show selective reduction of CBP in HD models while other TCR components are unchanged. The interaction between ATXN3 and CBP is demonstrated by multiple independent methods (co-IP, PLA, immunofluorescence). The observation that ATXN3 depletion phenocopies the CBP reduction seen in HD provides evidence for a functional relationship. Increased CBP ubiquitination in HD brain is consistent with the known deubiquitinase function of ATXN3. The convergence of evidence supports the proposed mechanism, though the claim that this is due to decreased ATXN3 activity (rather than sequestration or other mechanisms) involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The effects of mHTT on PNKP activity and DNA damage are region-specific in HD mouse brain. Cortex and striatum (the most affected regions in HD) show substantial PNKP activity reduction and DNA damage accumulation, while cerebellum (relatively spared in HD) shows minimal changes. Protein levels of TCR components are similar across regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The region-specific pattern of PNKP activity changes and DNA damage accumulation correlates well with the known pattern of neurodegeneration in HD. The observation that protein levels are unchanged across regions while activity differs suggests a functional rather than expression-level mechanism. This regional specificity is demonstrated consistently across multiple assays (PNKP activity assays, LA-qPCR for DNA damage, p53 target gene expression) and provides important insight into selective vulnerability in HD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C173",
+      "C174"
+    ],
+    "result": "The authors propose a mechanistic model in which wtHTT acts as a scaffold to assemble the TCR complex and stimulates PNKP activity to repair DNA damage during transcription. PolyQ expansion in mHTT disrupts this function by impairing PNKP and ATXN3 activities, leading to DNA damage accumulation, ATM-p53 pathway activation, CBP degradation, and transcriptional dysregulation, ultimately causing neurotoxicity in HD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative model is well-supported by the collective experimental evidence: (1) HTT forms a complex with TCR components, (2) wtHTT stimulates PNKP activity while mHTT inhibits it, (3) HTT depletion reduces PNKP activity, (4) mHTT causes DNA damage preferentially in transcribed genes, (5) DNA damage leads to ATM-p53 activation, (6) ATXN3 activity is compromised leading to CBP degradation, and (7) PNKP overexpression rescues multiple mHTT-induced phenotypes. While individual steps involve some inference, the overall model is strongly supported by convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims about Huntington's disease: HD is caused by CAG repeat expansion in HTT gene encoding polyglutamine expansions, leading to progressive neurodegeneration primarily affecting striatal and cortical neurons, with altered protein conformation causing loss of function and toxic gain of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about HD supported by extensive prior literature and appropriately cited. These background claims provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims about HD pathomechanisms: Transcriptional dysregulation, mitochondrial dysfunction, DNA damage, and ATM pathway activation are key players in HD pathogenesis. Genetic or pharmacological ATM ablation reduces neurotoxicity in HD models. GWA studies suggest DNA damage and repair pathways are central to HD pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately supported by citations to prior literature and provide important context for the current study. They establish the rationale for investigating DNA repair mechanisms in HD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims about PNKP and ATXN3: PNKP is a bifunctional DNA repair enzyme that processes DNA ends and plays roles in TC-BER and TC-DSBR. wtATXN3 enhances PNKP activity while mATXN3 abrogates it, inducing DNA damage and activating DDR pathways in SCA3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to prior work, including the authors' previous publications. They establish the foundation for investigating similar mechanisms in HD and demonstrate that the ATXN3-PNKP interaction is relevant to polyglutamine diseases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background claims about HTT interactions: Both wtHTT and mHTT interact with various transcription factors and co-activators (CBP, TBP, p53, TFIID, TFIIF, Sp1). POLR2A interacts with HTT and is found in HD nuclear inclusions. HTT interacts with HAP-1, and ATXN3 interacts with both HAP-1 and PNKP. It is hypothesized that wtHTT assists in assembling transcription factor complexes and that polyQ expansion disrupts this function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately supported by citations to prior literature and provide important context for the current study's investigation of HTT's role in a TCR complex. The hypothesis about HTT's scaffolding function is clearly identified as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PLA signals for HTT-ATXN3-PNKP interactions are predominantly nuclear but with substantial cytoplasmic/perinuclear signals. In control brain, ~60-70% of signal is nuclear, while in HD brain the complexes are predominantly perinuclear/cytoplasmic. Since PNKP and HTT are present in mitochondria, extranuclear signals may represent mitochondrial complexes, suggesting HTT may form similar complexes in mitochondria regulating mtDNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the PLA data showing subcellular distribution is presented, the interpretation that extranuclear signals represent mitochondrial complexes is speculative and not directly tested. The authors mention unpublished data showing mitochondrial colocalization but do not present it. The shift to more cytoplasmic localization in HD brain is interesting but the functional significance is unclear. The claim about mitochondrial function is explicitly speculative ('may form') and would require additional experiments (e.g., mitochondrial fractionation, co-staining with mitochondrial markers in the figures) for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Background claims about PNKP structure and function: PNKP contains FHA, PHOS, and KIN domains. The PHOS domain hydrolyzes 3'-phosphate groups and the KIN domain phosphorylates 5'-OH groups for DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts about PNKP structure and function, appropriately cited and providing necessary background for the domain mapping experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Background claim: Transgenic mice expressing N-terminal mHTT fragments (exon 1 or N171) recapitulate HD-like neurological and behavioral abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an established fact about HD mouse models, appropriately cited, providing justification for studying N-terminal HTT fragments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Background claim: In response to DNA strand breaks, ATM is activated by phosphorylation, which phosphorylates p53, which activates pro-apoptotic gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is established knowledge about the DNA damage response pathway, appropriately cited and providing necessary context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Background claims: mHTT expression activates p53 in HD, and deleting p53 in HD transgenic brain rescues behavioral abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citation to prior literature and provide important context for the role of p53 activation in HD pathogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Background claims: The TCR complex plays a pivotal role in repairing strand breaks in actively transcribing DNA to maintain genome integrity, and its inactivation leads to preferential DNA damage accumulation in transcriptionally active genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to prior literature including the authors' previous work, establishing the conceptual framework for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Background claim: A previous study showed increased CBP ubiquitination and reduced CBP levels in HdhQ7/Q111 HD transgenic mouse brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is appropriately cited to prior literature and provides supporting context for the current findings about CBP in HD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The HTT-TCR complex preferentially associates with transcriptionally active genes (demonstrated by ChIP), suggesting it is actively involved in repairing DNA lesions during transcription. This may provide an additional protective mechanism for maintaining sequence integrity of highly transcribed genes in post-mitotic neurons. The findings extend previous reports and support the hypothesis that polyQ expansions result in preferential DNA damage accumulation in transcriptionally active genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP data clearly demonstrate preferential HTT occupancy on actively transcribing genes. The LA-qPCR data showing preferential DNA damage in these genes in HD models supports the functional significance of this association. While the claim about providing 'an additional layer of protection' involves some speculation, the core observation of preferential association and preferential damage is well-supported. The extension of previous work is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors propose that persistent DNA strand breaks in actively transcribing genes may stall transcription elongation, preventing adequate gene expression and contributing to HD pathology complexity. Unrepaired lesions induce chronic ATM-p53 activation and increased expression of p53 target genes, facilitating neuronal apoptosis. Decreased PNKP activity could be an important proximal event triggering early neurotoxicity in HD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proposal that DNA damage in transcribed genes impairs transcription is a reasonable inference from the data, though direct measurement of transcription elongation is not provided. The chronic ATM-p53 activation and increased p53 target gene expression are directly demonstrated by the data. The characterization of decreased PNKP activity as a 'proximal event' is supported by the rescue experiments showing that PNKP overexpression ameliorates multiple downstream phenotypes. However, the authors appropriately note that whether PNKP restoration can rescue behavioral defects in vivo remains to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "ATXN3 is a key regulatory component of the TCR complex. The authors propose that mHTT-mediated decrease in ATXN3 activity either enhances degradation of TCR components or prevents appropriate complex formation, and that abrogating ATXN3 activity is a mechanism by which mHTT decreases CBP activity and adversely impacts CREB-dependent transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data demonstrate that ATXN3 is present in the TCR complex, interacts with CBP, and that ATXN3 depletion reduces CBP levels similar to mHTT expression. The increased CBP ubiquitination in HD is consistent with decreased ATXN3 deubiquitinase activity. While the exact mechanism (degradation vs. mislocalization vs. sequestration) is not definitively established, the overall model is well-supported by the data. The proposal is appropriately presented as a hypothesis ('propose that') rather than established fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Background and interpretive claims: ATXN3 deubiquitinates both mono- and polyubiquitin chains. ATXN3 inactivation in mice increases protein ubiquitination. Disruption of CREB activity triggers neurodegeneration. The authors propose that mHTT-mediated decreases in ATXN3, CBP, and CREB activities might compromise neuronal function and trigger neurotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims about ATXN3 and CREB function are appropriately cited. The proposal about mHTT effects is a reasonable inference from the data showing decreased CBP levels and is appropriately presented as a hypothesis ('might compromise').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The authors hypothesize a model for TCR complex regulation: In normal cells, transcription pauses at DNA lesions, leading to mono-ubiquitination of TCR components signaling complex assembly for repair, followed by ATXN3-mediated deubiquitination and transcription resumption. In HD, the complex stalls at breaks, and reduced ATXN3 activity leads to polyubiquitination and aberrant accumulation in polyQ inclusions. The combination of chronic DDR signaling and CREB-dependent gene dysregulation could trigger selective neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is an explicitly hypothetical model ('we hypothesize') that integrates the findings but goes beyond what is directly demonstrated. While the model is consistent with the data (TCR complex formation, ATXN3's deubiquitinase function, CBP ubiquitination and degradation, DNA damage and DDR activation), key aspects are not directly tested: the proposed ubiquitination-deubiquitination cycle during normal repair, the stalling of the complex at breaks in HD, and the accumulation of polyubiquitinated components in inclusions. This represents a speculative mechanistic model that would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Background and interpretive claims: Defective DNA repair in post-mitotic neurons is an emerging causative factor in neurodegenerative diseases. Point mutations and frameshift mutations in PNKP cause microcephaly, seizures, and epilepsy. The authors conclude that mHTT-mediated ablation of PNKP activity could lead to impaired DNA repair and persistent DNA damage contributing to neurotoxicity in HD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims about PNKP mutations and neurological disease are appropriately cited and provide supporting context. The conclusion about mHTT effects on PNKP is well-supported by the experimental data presented in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The authors propose potential therapeutic strategies: molecular approaches to interfere with mHTT-TCR complex interaction or to stimulate PNKP activity could reduce neurotoxicity in HD. They also propose that compromised TCR efficiency in basal ganglia/cortex could render these neurons more vulnerable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative proposals ('could reduce', 'could render') about potential therapeutic strategies and mechanisms of selective vulnerability. While they are reasonable hypotheses based on the findings, they represent future directions rather than tested conclusions. The proposal about selective vulnerability is consistent with the regional differences observed but the causal relationship is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "The authors suggest that increased CBP ubiquitination may cause aberrant CBP localization impacting its solubility, or may facilitate CBP degradation in HD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While increased CBP ubiquitination and decreased soluble CBP levels are demonstrated, the mechanism (mislocalization vs. degradation) is not definitively established. The authors appropriately present these as alternative possibilities ('may cause', 'it is also possible'). Additional experiments (e.g., measuring total vs. soluble CBP, proteasome inhibitor studies, localization studies) would be needed to distinguish between these mechanisms.",
+    "result_type": "MINOR"
+  }
+]

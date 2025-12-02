@@ -1,0 +1,1719 @@
+{
+  "submission": {
+    "id": "160053e9-48e5-48ca-97aa-22001d76af99",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:21:19.033266Z",
+    "updated_at": "2025-12-02T15:21:19.033266Z"
+  },
+  "content": [
+    {
+      "id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "submission_id": "160053e9-48e5-48ca-97aa-22001d76af99",
+      "content_type": "manuscript",
+      "content_text": "# Bacterial contribution to genesis of the novel germ line determinant oskar\n\n## Authors\n\n- Leo Blondel<sup>1</sup> ([ORCID: 0000-0003-2276-4821](https://orcid.org/0000-0003-2276-4821))\n- Tamsin EM Jones<sup>2</sup> ([ORCID: 0000-0002-0027-0858](https://orcid.org/0000-0002-0027-0858))\n- Cassandra G Extavour<sup>1</sup> ([ORCID: 0000-0003-2922-5855](https://orcid.org/0000-0003-2922-5855)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology, Harvard University Cambridge United States\n2. Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNew cellular functions and developmental processes can evolve by modifying existing genes or creating novel genes. Novel genes can arise not only via duplication or mutation but also by acquiring foreign DNA, also called horizontal gene transfer (HGT). Here we show that HGT likely contributed to the creation of a novel gene indispensable for reproduction in some insects. Long considered a novel gene with unknown origin, oskar has evolved to fulfil a crucial role in insect germ cell formation. Our analysis of over 100 insect Oskar sequences suggests that oskar arose de novo via fusion of eukaryotic and prokaryotic sequences. This work shows that highly unusual gene origin processes can give rise to novel genes that may facilitate evolution of novel developmental mechanisms.\n\n## Introduction\n\nHeritable variation is the raw material of evolutionary change. Genetic variation can arise from mutation and gene duplication of existing genes (Taylor and Raes, 2004), or through de novo processes (Tautz and Domazet-Lo\u0161o, 2011), but the extent to which such novel, or 'orphan' genes participate significantly in the evolutionary process is unclear. Mutation of existing cis-regulatory (Wittkopp and Kalay, 2012) or protein coding regions (Hoekstra and Coyne, 2007) can drive evolutionary change in developmental processes. However, recent studies in animals and fungi suggest that novel genes can also drive phenotypic change (Chen et al., 2013). Although counterintuitive, novel genes may be integrating continuously into otherwise conserved gene networks, with a higher rate of partner acquisition than subtler variations on preexisting genes (Zhang et al., 2015). Moreover, in humans and fruit flies, a large proportion of novel genes are expressed in the brain, suggesting their participation in the evolution of major organ systems (Zhang et al., 2012; Chen et al., 2012). However, while next generation sequencing has improved their discovery, the developmental and evolutionary significance of novel genes remains understudied.\n\nThe mechanism of formation of a novel gene may have implications for its function. Novel genes that arise by duplication, thus possessing the same biophysical properties as their parent genes, have innate potential to participate in preexisting cellular and molecular mechanisms (Taylor and Raes, 2004). However, orphan genes lacking sequence similarity to existing genes must form novel functional molecular relationships with extant genes, in order to persist in the genome. When such genes arise by introduction of foreign DNA into a host genome through horizontal gene transfer (HGT), they may introduce novel, already functional sequence information into a genome. Whether genes created by HGT show a greater propensity to contribute to or enable novel processes is unclear. Endosymbionts in the host germ line cytoplasm (germ line symbionts) could increase the occurrence of evolutionarily relevant HGT events, as foreign DNA integrated into the germ line genome is transferred to the next generation. HGT from bacterial endosymbionts into insect genomes appears widespread, involving transfer of metabolic genes or even larger genomic fragments to the host genome (see for example Dunning Hotopp et al., 2007; Acuna et al., 2012; Sloan et al., 2014; Husnik et al., 2013).\n\nHere we examined the evolutionary origins of the oskar (osk) gene, long considered a novel gene that evolved to be indispensable for insect reproduction (Lehmann, 2016). First discovered in Drosophila melanogaster (Lehmann and N\u00fcsslein-Volhard, 1986), osk is necessary and sufficient for assembly of germ plasm, a cytoplasmic determinant that specifies the germ line in the embryo. Germ plasm-based germ line specification appears derived within insects, confined to insects that undergo metamorphosis (Holometabola) (Ewen-Campen et al., 2012; Extavour and Akam, 2003). Initially thought exclusive to Diptera (flies and mosquitoes), its discovery in a wasp, another holometabolous insect with germ plasm (Lynch et al., 2011), led to the hypothesis that oskar originated as a novel gene at the base of the Holometabola approximately 300 Mya, facilitating the evolution of insect germ plasm as a novel developmental mechanism (Lynch et al., 2011). However, its subsequent discovery in a cricket (Ewen-Campen et al., 2012), a hemimetabolous insect without germ plasm (Ewen-Campen et al., 2013), implied that osk was instead at least 50 My older, and that its germ plasm role was derived rather than ancestral (Abouheif, 2013). Despite its orphan gene status, osk plays major developmental roles, interacting with the products of many genes highly conserved across animals (Lehmann, 2016; Jeske et al., 2015; Jeske et al., 2017). osk thus represents an example of a novel gene that not only functions within pre-existing gene networks in the nervous system (Ewen-Campen et al., 2012), but has also evolved into the only animal gene that has been experimentally demonstrated to be both necessary and sufficient to specify functional primordial germ line cells (Ephrussi and Lehmann, 1992; Kim-Ha et al., 1991).\n\nThe evolutionary origins of this remarkable gene are unknown. Osk contains two biophysically conserved domains, an N-terminal LOTUS domain and a C-terminal hydrolase-like domain called OSK (Jeske et al., 2015; Yang et al., 2015; Figure 1a). An initial BLASTp search using the full-length D. melanogaster osk sequence as a query yielded either other holometabolous insect osk genes, or partial hits for the LOTUS or OSK domains (E-value < 0.01; Source data 1: BLAST search results). This suggested that full length osk was unlikely to be a duplication of any other known gene. This prompted us to perform two more BLASTp searches, one using each of the two conserved Osk protein domains individually as query sequences. Strikingly, in this BLASTp search, although we recovered several eukaryotic hits for the LOTUS domain, we recovered no eukaryotic sequences that resembled the OSK domain, even with very low E-value stringency (E-value < 10; see Materials\u00a0and\u00a0methods section \u201cBLAST searches of oskar\u201d for an explanation of E-value threshold choices; Source data 1: BLAST search results).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic representation of the Oskar gene. The LOTUS and OSK hydrolase-like domains are separated by a poorly conserved region of predicted high disorder and variable length between species. In some dipterans, a region 5\u2019 to the LOTUS domain is translated to yield a second isoform, called Long Oskar. Residue numbers correspond to the D. melanogaster Osk sequence. (b) Stackplot of domain of life identity of HMMER hits across the protein sequence. For a sliding window of 60 Amino Acids across the protein sequence (X axis), the number of hits in the Trembl (UniProt) database (Y axis) is represented and color coded by domain of life origin (see Materials\u00a0and\u00a0methods: Iterative HMMER search of OSK and LOTUS domains), stacked on top of each other. (c, d) EFI-EST-generated graphs of the sequence similarity network of the LOTUS (c) and OSK (d) domains of Oskar (Gerlt et al., 2015). Sequences were obtained using HMMER against the UniProtKB database. Most Oskar LOTUS sequences cluster within eukaryotes and arthropods. In contrast, Oskar OSK sequences cluster most strongly with a small subset of bacterial sequences.\n\nTo understand this anomaly, we built an alignment of 95 Oskar sequences (Source data 1 Alignments>OSKAR_MUSCLE_FINAL.fasta; Supplementary file 1A and B) and used a custom iterative HMMER sliding window search tool to compare each domain with protein sequences from all domains of life. Sequences most similar to the LOTUS domain were almost exclusively eukaryotic sequences (Supplementary file 1C). In contrast, those most similar to the OSK domain were bacterial, specifically sequences similar to SGNH-like hydrolases (Jeske et al., 2015; Yang et al., 2015) (Pfam Clan: SGNH_hydrolase - CL0264; Supplementary file 1D; Figure 1b). To visualize their relationships, we graphed the sequence similarity network for the sequences of these domains and their closest hits. We observed that the majority of LOTUS domain sequences clustered within eukaryotic sequences (Figure 1c). In contrast, OSK domain sequences formed an isolated cluster, a small subset of which formed a connection to bacterial sequences (Figure 1d). These data are consistent with a previous suggestion, based on BLAST results (Lynch et al., 2011), that HGT from a bacterium into an ancestral insect genome may have contributed to the evolution of osk. However, this possibility was not formally addressed by previous analyses, which were based on alignments of full length Osk containing only eukaryotic sequences as outgroups (Ewen-Campen et al., 2012). To rigorously test this hypothesis, we therefore performed phylogenetic analyses of the two domains independently. A finding that LOTUS sequences were nested within eukaryotes, while OSK sequences were nested within bacteria, would provide support for the HGT hypothesis.\n\nBoth Maximum likelihood and Bayesian approaches confirmed this prediction (Figure 2a, Figure 2\u2014figure supplements 1 and 2), and these results were robust to changes in the methods of sequence alignment (Figure 2\u2014figure supplements 6, 7, 8, 9, 10). As expected, LOTUS sequences from Osk proteins were related to other eukaryotic LOTUS domains, to the exclusion of the only three bacterial sequences that met our E-value cutoff for inclusion in the analyses (Figure 2a, Figure 2\u2014figure supplements 1 and 2; see Materials\u00a0and\u00a0methods and Supplemental Text). LOTUS sequences from non-Oskar proteins were almost exclusively eukaryotic. (Supplementary file 1); only three bacterial sequences matched the LOTUS domain with an E-value < 0.01. Osk LOTUS domains clustered into two distinct clades, one comprising all Dipteran sequences, and the other comprising all other Osk LOTUS domains examined from both holometabolous and hemimetabolous orders (Figure 2a). Dipteran Osk LOTUS sequences formed a monophyletic group that branched sister to a clade of LOTUS domains from Tud5 family proteins of non-arthropod animals (NAA). NAA LOTUS domains from Tud7 family members were polyphyletic, but most of them formed a clade branching sister to (Osk LOTUS + NAA Tud5 LOTUS). Non-Dipteran Osk LOTUS domains formed a monophyletic group that was related in a polytomy to the aforementioned (NAA Tud7 LOTUS + (Dipteran Osk LOTUS + NAA Tud5 LOTUS)) clade, and to various arthropod Tud7 family LOTUS domains.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-v2.jpg)\n\n**Figure 2.:** (a) Bayesian consensus tree for the LOTUS domain. Three major LOTUS-containing protein families are represented within the tree: Tudor 5, Tudor 7, and Oskar. Oskar LOTUS domains form two clades, one containing only dipterans and one containing all other represented insects (hymenopterans and orthopterans). The tree was rooted to the three bacterial sequences added in the dataset. (b) Bayesian consensus tree for the OSK domain. The OSK domain is nested within GDSL-like domains of bacterial species from phyla known to contain germ line symbionts in insects. The ten non-Oskar eukaryotic sequences in the analysis form a\u00a0single clade comprising fungal Carbohydrate Active Enzyme 3 (CAZ3) proteins. For Bayesian and RaxML trees with all accession numbers and node support values see Figure 2\u2014figure supplements 1\u20134.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Phylogenetic tree of the HMMER sequences retrieved from the UniProt database using the LOTUS alignment HMM model. The top 97 hits were selected for phylogenetic analysis, and the only three bacterial sequences found to be a match were added to the alignment manually. The resulting 100 sequences were aligned using MUSCLE with default settings. The sequences were filtered to contain only one sequence per species (best E-value kept) yielding 100 sequences for analysis. Finally, the tree was created using RaxML v8.2.4, using 1000 bootstraps and model selection performed by the RaxML automatic model selection tool. See \u2018Phylogenetic Analysis\u2019 in Materials\u00a0and\u00a0methods for further detail. Sequences are color-coded as follows: Purple\u00a0=\u00a0Oskar; Red\u00a0=\u00a0Non Oskar Arthropod; Green\u00a0=\u00a0Non Arthropod Eukaryote; Blue\u00a0=\u00a0Bacteria. Names following leaves display the UniProt accession number followed by the species name and the UniProt protein name.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Phylogenetic tree of the HMMER sequences retrieved from the UniProt database using the LOTUS alignment HMM model. 100 sequences were chosen for analysis as described for Figure 2\u2014figure supplement 1. The tree was created using Mr Bayes V3.2.6 using a Mixed model (prset aamodel\u00a0=\u00a0Mixed) and a gamma distribution (lset rates\u00a0=\u00a0Gamma). The algorithm was allowed to run for 3 million generations to achieve a std\u00a0<0.01. See \u2018Phylogenetic Analysis\u2019 in Materials\u00a0and\u00a0methods for further detail. Sequences are color-coded as follows: Purple\u00a0=\u00a0Oskar; Red\u00a0=\u00a0Non Oskar Arthropod; Green\u00a0=\u00a0Non Arthropod Eukaryote; Blue\u00a0=\u00a0Bacteria. Names following leaves display the UniProt accession number followed by the species name and the UniProt protein name.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Phylogenetic tree of the HMMER sequences retrieved from the UniProt database using the OSK alignment HMM model. The top 95 hits were selected for phylogenetic analysis, and the only five non-Oskar eukaryotic sequences found to be a match were added to the alignment manually. The resulting 100 sequences were aligned using MUSCLE with default settings. The sequences were filtered to contain only one sequence per species (best E-value kept), yielding 87 sequences for analysis. Finally, the tree was created using RaxML v8.2.4, using 1000 bootstraps and model selection performed by the RaxML automatic model selection tool. See \u2018Phylogenetic Analysis\u2019 in Materials\u00a0and\u00a0methods for further detail. Sequences are color-coded as follows: Purple\u00a0=\u00a0Oskar; Red\u00a0=\u00a0Non Oskar Arthropod; Green\u00a0=\u00a0Non Arthropod Eukaryote; Blue\u00a0=\u00a0Bacteria. Names following leaves display the UniProt accession number followed by the species name and the UniProt protein name.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Phylogenetic tree of the HMMER sequences hit on the UniProt database using the OSK alignment HMM model. 87 sequences were chosen for analysis as described for Figure 2\u2014figure supplement 3.The tree was created using Mr Bayes V3.2.6 using a Mixed model (prset aamodel\u00a0=\u00a0Mixed) and a gamma distribution (lset rates\u00a0=\u00a0Gamma). The algorithm was allowed to run for 4 million generations to achieve a std\u00a0<0.01. See \u2018Phylogenetic Analysis\u2019 in Materials\u00a0and\u00a0methods for further detail. Sequences are color-coded as follows: Purple\u00a0=\u00a0Oskar; Red\u00a0=\u00a0Non Oskar Arthropod; Green\u00a0=\u00a0Non Arthropod Eukaryote; Blue\u00a0=\u00a0Bacteria. Names following leaves display the UniProt accession number followed by the species name and the UniProt protein name.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Two trees constrained by alternative relationships that would be expected under vertical transmission of sequences were designed and tested against our result supporting a putative HGT event of the OSK domain. (a) The first tree (right) is constrained by domain of life, requiring bacterial and eukaryotic sequences to be monophyletic, and disallowing sister group relationships of subsets of eukaryotic sequences and bacterial sequences. Our unconstrained tree topology (left) outperformed this topology with a p-value of 0.002 (95% confidence interval upper: 0.007 lower: 0.0002). (b) The second tree requires monophyly of Eukaryota. Our unconstrained tree topology (left) outperformed this topology with a p-value of 0.009 (95% confidence interval upper: 0.017 lower: 0.004). (c) The third tree tested whether the LOTUS domain split observed in the tree generated with the MUSCLE alignment was significantly different from a tree where the LOTUS sequences formed a monophyly. The unconstrained tree (left) outperformed this topology with a p-value of 0.037 (95% confidence interval upper: 0.05 lower: 0.026).\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Phylogenetic tree of the same sequences used for the previous LOTUS trees. The sequences were aligned using PRANK and the tree generated with RaxML as described in Phylogenetic Analysis Based on PRANK alignment. Sequences are color-coded as follows: Purple\u00a0=\u00a0Oskar; Red\u00a0=\u00a0Non Oskar Arthropod; Green\u00a0=\u00a0Non Arthropod Eukaryote; Blue\u00a0=\u00a0Bacteria. Names following leaves display the UniProt accession number followed by the species name and the UniProt protein name.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Phylogenetic tree of the same sequences used for the previous OSK trees. The sequences were aligned using PRANK and the tree generated with RaxML as described in Phylogenetic Analysis Based on PRANK alignment. Sequences are color-coded as follows: Purple\u00a0=\u00a0Oskar; Red\u00a0=\u00a0Non Oskar Arthropod; Green\u00a0=\u00a0Non Arthropod Eukaryote; Blue\u00a0=\u00a0Bacteria. Names following leaves display the UniProt accession number followed by the species name and the UniProt protein name.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** Comparison of the tree obtained with RaxML starting from the MUSCLE alignment (left) versus the PRANK alignment (right) for the OSK domain. Similarity scores for the branching events are color coded from yellow to blue (see figure color bar legend). The OSK (purple) clade and CAZ3 (green) clade have been colored and compacted for readability as they do not have any internal branching changes. Node color is blue if the leaf is a sequence, and red if this is a compacted group of sequences.\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp9-v2.jpg)\n\n**Figure 2\u2014figure supplement 9.:** Comparison of the tree obtained with RaxML starting from the MUSCLE alignment (left) versus the PRANK alignment (right) for the LOTUS domain. Similarity scores for the branching events are color coded from yellow to blue (see figure color bar legend). The LOTUS (purple) clades have been colored and compacted for readability as they do not have any internal branching changes. Node color is blue if the leaf is a sequence, and red if this is a compacted group of sequences.\n\n![Figure 2\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp10-v2.jpg)\n\n**Figure 2\u2014figure supplement 10.:** Phylogenetic tree of the same sequences used for the previous LOTUS trees. The sequences were aligned using T-Coffee and the tree generated with RaxML as described in Phylogenetic Analysis Based on T-Coffee alignment. Sequences are color-coded as follows: Purple\u00a0=\u00a0Oskar; Red\u00a0=\u00a0Non Oskar Arthropod; Green\u00a0=\u00a0Non Arthropod Eukaryote; Blue\u00a0=\u00a0Bacteria. Names following leaves display the UniProt accession number followed by the species name and the UniProt protein name.\n\n![Figure 2\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp11-v2.jpg)\n\n**Figure 2\u2014figure supplement 11.:** Phylogenetic tree of the same sequences used for the previous OSK trees. The sequences were aligned using T-Coffee and the tree generated with RaxML as described in Phylogenetic Analysis Based on T-Coffee alignment. Sequences are color-coded as follows: Purple\u00a0=\u00a0Oskar; Red\u00a0=\u00a0Non Oskar Arthropod; Green\u00a0=\u00a0Non Arthropod Eukaryote; Blue\u00a0=\u00a0Bacteria. Names following leaves display the UniProt accession number followed by the species name and the UniProt protein name.\n\n![Figure 2\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp12-v2.jpg)\n\n**Figure 2\u2014figure supplement 12.:** Comparison of the tree obtained with RaxML starting from the MUSCLE alignment (left) versus the T-Coffee alignment (right) for the OSK domain. Similarity scores for the branching events are color coded from yellow to blue (see figure color bar legend). The OSK (purple) clade and CAZ3 (green) clade have been colored and compacted for readability as they do not have any internal branching changes. Node color is blue if the leaf is a sequence, and red if this is a compacted group of sequences.\n\n![Figure 2\u2014figure supplement 13.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig2-figsupp13-v2.jpg)\n\n**Figure 2\u2014figure supplement 13.:** Comparison of the tree obtained with RaxML starting from the MUSCLE alignment (left) versus the T-Coffee alignment (right) for the LOTUS domain. Similarity scores for the branching events are color coded from yellow to blue (see figure color bar legend). The LOTUS (purple) clades have been colored and compacted for readability as they do not have any internal branching changes. Node color is blue if the leaf is a sequence, and red if this is a compacted group of sequences.\n\nThe fact that Tud7 LOTUS domains are polyphyletic suggests that arthropod domains in this family may have evolved differently than their homologues in other animals. The relationships of Dipteran LOTUS sequences were consistent with the current hypothesis for interrelationships between Dipteran species (Kirk-Spriggs and Sinclair, 2017). Similarly, among the non-Dipteran Osk LOTUS sequences, the hymenopteran sequences form a clade to the exclusion of the single hemimetabolous sequence (from the cricket Gryllus bimaculatus), consistent with the monophyly of Hymenoptera (Peters et al., 2017). It is unclear why Dipteran Osk LOTUS domains cluster separately from those of other insect Osk proteins. We speculate that the evolution of the Long Oskar domain (Vanzo and Ephrussi, 2002; Hurd et al., 2016), which appears to be a novelty within Diptera (Source data 1: Alignments>OSKAR_MUSCLE_FINAL.fasta), may have influenced the evolution of the Osk LOTUS domain in at least some of these insects. Consistent with this hypothesis, of the 17 Dipteran oskar genes we examined, the seven oskar genes possessing a Long Osk domain clustered into two clades based on the sequences of their LOTUS domain. One of these clades comprised five\u00a0Drosophila\u00a0species (D. willistoni, D. mojavensis, D. virilis, D. grimshawi and D. immigrans), and the second was composed of two calyptrate flies from different superfamilies, Musca domestica (Muscoidea) and Lucilia cuprina (Oestroidea).\n\nIn summary, the LOTUS domain of Osk proteins is most closely related to a number of other LOTUS domains found in eukaryotic proteins, as would be expected for a gene of animal origin, and the phylogenetic interrelationships of these sequences are largely consistent with the current species or family level trees for the corresponding insects.\n\nIn contrast, OSK domain sequences were nested within bacterial sequences (Figure 2b, Figure 2\u2014figure supplements 3 and 4). This bacterial, rather than eukaryotic, affinity of the OSK domain was recovered even when different sequence alignment methods were used (Figure 2\u2014figure supplements 7, 8, 9, 10 and 11). The only eukaryotic proteins emerging from the iterative HMMER search for OSK domain sequences that had an E-value < 0.01 were all from fungi. All five of these sequences were annotated as Carbohydrate Active Enzyme 3 (CAZ3), and all CAZ3 sequences formed a clade that was sister to a clade of primarily Firmicutes. Most bacterial sequences used in this analysis were annotated as lipases and hydrolases, with a high representation of GDSL-like hydrolases (Supplementary file 1D). OSK sequences formed a monophyletic group but did not branch sister to the other eukaryotic sequences in the analysis. Within this OSK clade, the topology of sequence relationships was largely concordant with the species tree for insects (Misof et al., 2014), as we recovered monophyletic Diptera to the exclusion of other insect species. However, the single orthopteran OSK sequence (from the cricket G. bimaculatus) grouped within the Hymenoptera, rather than branching as sister to all other insect sequences in the tree, as would be expected for this hemimetabolous sequence (Misof et al., 2014).\n\nImportantly, OSK sequences did not simply form an outgroup to bacterial sequences. To formally reject the possibility that the eukaryotic OSK clade has a sister group relationship to all bacterial sequences in the analysis, we performed topology constraint analyses using the Swofford\u2013Olsen\u2013Waddell\u2013Hillis (SOWH) test, which assigns statistical support to alternative phylogenetic topologies (Swofford et al., 1996). We used the SOWHAT tool (Church et al., 2015) to compare the HGT-supporting topology to two alternative topologies with constraints more consistent with vertical inheritance. The first was constrained by domain of life, disallowing paraphyletic relationships between sequences from the same domain of life (Figure 2\u2014figure supplement 5a). The second required monophyly of Eukaryota but allowed paraphyletic relationships between bacterial and archaeal sequences (Figure 2\u2014figure supplement 5b). We found that the topologies of both of these constrained trees were significantly worse than the result we had recovered with our phylogenetic analysis (Figure 2\u2014figure supplement 5), namely that the closest relatives of the OSK domain were bacterial rather than eukaryotic sequences Figure 2b, Figure 2\u2014figure supplements 3 and 4).\n\nOSK sequences formed a well-supported clade nested within bacterial GDSL-like lipase sequences. The majority of these bacterial sequences were from the Firmicutes, a bacterial phylum known to include insect germ\u00a0line symbionts (Wheeler et al., 2013; Chepkemoi et al., 2017). All other sequences from classified bacterial species, including a clade branching as sister to all other sequences, belonged either to the Bacteroidetes or to the Proteobacteria. Members of both of these phyla are also known germ\u00a0line symbionts of insects (Dunning Hotopp et al., 2007; Zchori-Fein et al., 2004) and other arthropods (Zchori-Fein and Perlman, 2004). In sum, the distinct phylogenetic relationships of the two domains of Oskar are consistent with a bacterial origin for the OSK domain. Further, the specific bacterial clades close to OSK suggest that an ancient arthropod germ line endosymbiont could have been the source of a GDSL-like sequence that was transferred into an ancestral insect genome, and ultimately gave rise to the OSK domain of oskar (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45539/elife-45539-fig3-v2.jpg)\n\n**Figure 3.:** Integration of the OSK domain close to a LOTUS domain in an ancestral insect genome. (a) DNA containing a GDSL-like domain from an endosymbiotic germ line bacterium is transferred to the nucleus of a germ cell in an insect common ancestor.\u00a0(b) DNA damage or transposable element activity induces an integration event in the host genome, close to a pre-existing LOTUS-like domain. (c) The region between the two domains undergoes de novo coding evolution, creating an open reading frame with a unique, chimeric domain structure. (d) In some Diptera, including D. melanogaster, part of the 5\u2019 UTR of oskar has undergone de novo coding evolution to form the Long Oskar domain.\n\nWhile multiple mechanisms can give rise to novel genes, HGT is arguably among the least well understood, as it involves multiple genomes and ancient biotic interactions between donor and host organisms that are often difficult to reconstruct. In the case of oskar, however, the fact that both germ\u00a0line symbionts (Bourtzis and Miller, 2006) and HGT events (Dunning Hotopp et al., 2007) are widespread in insects, provides a plausible biological mechanism consistent with our hypothesis that fusion of eukaryotic and bacterial domain sequences led to the birth of this novel gene. Under this hypothesis, this fusion would have taken place before the major diversification of insects, nearly 500 million years ago (Misof et al., 2014).\n\nOnce arisen, novel genes might be expected to disappear rapidly, given that pre-existing gene regulatory networks operated successfully without them (Taylor and Raes, 2004). However, it is clear that novel genes can evolve functional connections with existing networks, become essential (Chen et al., 2010), and in some cases lead to new functions (Cornelis et al., 2012) and contribute to phenotypic diversity (Chen et al., 2013). Even given the growing number of convincing examples of HGT from both prokaryotic and eukaryotic origins (see for example Husnik and McCutcheon, 2018; Di Lelio et al., 2019; Wybouw et al., 2016; Quispe-Huamanquispe et al., 2017), some authors suspect that the contribution of horizontal gene transfer to the acquisition of novel traits has been underestimated across animals (Boto, 2014). Moreover, the functional contribution of genes horizontally transferred specifically from bacteria to insects has been documented for a range of adaptive phenotypes (see for example Wilson and Duncan, 2015; L\u00f3pez-Madrigal and Gil, 2017; Provorov and Onishchuk, 2018), including digestive metabolism (Acuna et al., 2012; Sloan et al., 2014; Shelomi et al., 2016), glycolysis (Zeng et al., 2018) complex symbiosis (Husnik et al., 2013) and endosymbiont cell wall construction (Bublitz et al., 2019). oskar plays multiple critical roles in insect development, from neural patterning (Ewen-Campen et al., 2012; Xu et al., 2013) to oogenesis (Jenny et al., 2006). In the Holometabola, a clade of nearly one million extant species (Rees and Cranston, 2017), oskar\u2019s co-option to become necessary and sufficient for germ plasm assembly is likely the cell biological mechanism underlying the evolution of this derived mode of insect germ line specification (Ewen-Campen et al., 2012; Lynch et al., 2011; Abouheif, 2013). Our study thus provides evidence that HGT can not only introduce functional genes into a host genome, but also, by contributing sequences of individual domains, generate genes with entirely novel domain structures that may facilitate the evolution of novel developmental mechanisms.\n\n## Materials and methods\n\n### BLAST searches of Oskar\n\nAll BLAST (Altschul et al., 1990) searches were performed using the NCBI BLASTp tool suite on the non-redundant (nr) database. Amino Acid (AA) sequences of D. melanogaster full length Oskar (EMBL ID AAF54306.1), as well as the AA sequences for the D. melanogaster Oskar LOTUS (AA 139\u2013238) and OSK (AA 414\u2013606) domains were used for the BLAST searches. We used the default NCBI cut-off parameters (E-value cut-off of 10) for searches using OSK and LOTUS as queries, and a more stringent E-value threshhold of 0.01 for the search using full length D. melanogaster Oskar as a query. We chose an E-value threshold of 10 for LOTUS and OSK to capture potentially highly divergent homologs of the two domains, especially for the OSK domain, where we were looking for any viable candidate for a homologous eukaryotic domain. All BLAST searches results are included in the Source data 1: BLAST search results.\n\n### Hidden Markov Model (HMM) generation and alignments of the OSK and LOTUS domains\n\n101 1KITE transcriptomes (Misof et al., 2014; Supplementary file 1A) were downloaded and searched using the local BLAST program (BLAST+) using the tblastn algorithm with default parameters, with Oskar protein sequences of Drosophila melanogaster, Aedes aegypti, Nasonia vitripennis and Gryllus bimaculatus as queries (EntrezIDs: NP_731295.1, ABC41128.1, NP_001234884.1 and AFV31610.1 respectively). For all of these 1KITE transcriptome searches, predicted protein sequences from transcript data were obtained by in silico translation using the online ExPASy translate tool (https://web.expasy.org/translate/), taking the longest open reading frame. Publicly available sequences in the non-redundant (nr), TSA databases at NCBI, and a then-unpublished transcriptome (Benton et al., 2016) (kind gift of Matthew Benton and Siegfried Roth, University of Cologne) were subsequently searched using the web-based BLAST tool hosted at NCBI, using the tblastn algorithm with default parameters. Sequences used for queries were the four Oskar proteins described above, and newfound oskar sequences from the 1KITE transcriptomes of Baetis pumilis, Cryptocercus wright, and Frankliniella cephalica. For both searches, oskar orthologs were identified by the presence of BLAST hits on the same transcript to both the LOTUS (N-terminal) and OSK (C-terminal) regions of any of the query oskar sequences, regardless of E-values. The sequences found were aligned using MUSCLE (eight iterations) (Edgar, 2004) into a 46-sequence alignment (Source data 1: Alignments\u00a0>\u00a0OSKAR_MUSCLE_INITIAL.fasta). From this alignment, the LOTUS and OSK domains were extracted (Source data 1: Alignments\u00a0>\u00a0LOTUS_MUSCLE_INITIAL.fasta and Alignments\u00a0>\u00a0OSK_MUSCLE_INITIAL.fasta) to define the initial Hidden Markov Models (HMM) using the hmmbuild tool from the HMMER tool suite with default parameters (http://hmmer.org/;\u00a0Eddy, 2011). 126 insect genomes and 128 insect transcriptomes (from the Transcriptome Shotgun Assembly TSA database: https://www.ncbi.nlm.nih.gov/Traces/wgs/?view=TSA) were subsequently downloaded from NCBI (download date September 29, 2015; Supplementary file 1A). Genomes were submitted to Augustus v2.5.5 (Stanke et al., 2004) (using the D. melanogaster exon HMM predictor) and SNAP v2006-07-28 (Korf, 2004) (using the default \u2018fly\u2019 HMM) for gene discovery. The resulting nucleotide sequence database comprising all 309 downloaded and annotated genomes and transcriptomes, was then translated in six frames to generate a non-redundant amino acid database (where all sequences with the same amino acid content are merged into one). This process was automated using a series of custom scripts available here: https://github.com/Xqua/Genomes. The non-redundant amino acid database was searched using the HMMER v3.1 tool suite (Eddy, 2011) and the HMM for the LOTUS and OSK domains described above. A hit was considered positive if it consisted of a contiguous sequence containing both a LOTUS domain and an OSK domain, with the two domains separated by an inter-domain sequence. We imposed no length, alignment or conservation criteria on the inter-domain sequence, as this is a rapidly-evolving region of Oskar protein with predicted high disorder (Jeske et al., 2015; Yang et al., 2015; Ahuja and Extavour, 2014). Positive hits were manually curated and added to the main alignment, and the search was performed iteratively until no more new sequences meeting the above criteria were discovered. This resulted in a total of 95 Oskar protein sequences, (see Supplementary file 1B for the complete list). Using the final resulting alignment (Source data 1: Alignments\u00a0>\u00a0OSKAR_MUSCLE_FINAL.fasta), the LOTUS and OSK domains were extracted from these sequences (Source data 1: Alignments > LOTUS_MUSCLE_FINAL.fasta and Alignments\u00a0>\u00a0OSK_MUSCLE_FINAL.fasta), and the final three HMM (for full-length Oskar, OSK, and LOTUS domains) used in subsequent analyses were created using hmmbuild with default parameters (Source data 1: HMM\u00a0>OSK.hmm, HMM\u00a0>LOTUS.hmm and HMM\u00a0>OSKAR.hmm).\n\n### Iterative HMMER search of OSK and LOTUS domains\n\nA reduced version of TrEMBL (U Consortium, 2005) (v2016-06) was created by concatenating all hits (regardless of E-value) for sequences of the LOTUS domain, the OSK domain and full-length Oskar, using hmmsearch with default parameters and the HMM models created above from the final alignment. This reduced database was created to reduce potential false positive results that might result from the limited size of the sliding window used in the search approach described here. The full-length Oskar alignment of 1133 amino acids (Source data 1: Alignments\u00a0>\u00a0OSKAR_MUSCLE_FINAL.fasta) was split into 934 sub-alignments of 60 amino acids each using a sliding window of one amino acid. Each alignment was converted into a HMM using hmmbuild, and searched against the reduced TrEMBL database using hmmsearch using default parameters. Domain of life origin of every hit sequence at each position was recorded. Eukaryotic sequences were further classified as Oskar/Non-Oskar and Arthropod/Non-Arthropod. Finally, for the whole alignment, the counts for each category were saved and plotted in a stack plot representing the proportion of sequences from each category to create Figure 1b. The python code used for this search is available at https://github.com/Xqua/Iterative-HMMER.\n\n### Sequence similarity networks\n\nLOTUS and OSK domain sequences from the final alignment obtained as described above (see \u2018Hidden Markov Model (HMM) generation and alignments of the OSK and LOTUS domains\u2019; Source data 1: Alignments\u00a0>\u00a0LOTUS_MUSCLE_FINAL.fasta and Alignments\u00a0>\u00a0OSK_MUSCLE_FINAL.fasta) were searched against TrEMBL (U Consortium, 2005) (v2016-06) using HMMER. All hits with E-value\u00a0<0.01 were consolidated into a fasta file that was then entered into the EFI-EST tool (Gerlt et al., 2015) using default parameters to generate a sequence similarity network. An alignment score corresponding to 30% sequence identity was chosen for the generation of the final sequence similarity network. Finally, the network was graphed using Cytoscape 3 (Shannon et al., 2003).\n\n### Phylogenetic analysis based on MUSCLE alignment\n\nFor both the LOTUS and OSK domains, in cases where more than one sequence from the same organism was retrieved by the search described above in \u2018Iterative HMMER Search of OSK and LOTUS domains\u2019, only the sequence with the lowest E-value was used for phylogenetic analysis. For the LOTUS domain, the first 97 best hits (lowest E-value) were selected, and the only three bacterial sequences that satisfied an E-value\u00a0<0.01 were manually added. For oskar sequences, if more than one sequence per species was obtained by the search, only the single sequence per species with the lowest E-value was kept for analysis, generating a set of 100 sequences for the LOTUS domain, and 87 sequences for the OSK domain. Unique identifiers for all sequences used to generate alignments for phylogenetic analysis are available in Supplementary files 1C, 1D. For both datasets, the sequences were then aligned using MUSCLE (Edgar, 2004) (eight iterations) and trimmed using trimAl (Capella-Guti\u00e9rrez et al., 2009) with 70% occupancy. The resulting alignments that were subject to phylogenetic analysis are available in Source data 1: Alignments\u00a0>\u00a0LOTUS_MUSCLE_TREE.fasta and Alignments\u00a0>\u00a0OSK_MUSCLE_TREE.fasta. For the maximum likelihood tree, we used RaxML v8.2.4 (Stamatakis, 2014) with 1000 bootstraps, and the models were selected using the automatic RaxML model selection tool. The substitution model chosen for both domains was LGF. For the Bayesian tree inference, we used MrBayes V3.2.6 (Huelsenbeck and Ronquist, 2001) with a Mixed model (prset aamodel\u00a0=\u00a0Mixed) and a gamma distribution (lset rates\u00a0=\u00a0Gamma). We ran the MonteCarlo for 4 million generations (std\u00a0<0.01) for the OSK domain, and for 3 million generations (std\u00a0<0.01) for the LOTUS domain. For the tree comparisons (Figure 2\u2014figure supplements 8, 9), the RaxML best tree output from the MUSCLE and PRANK alignments were compared using the tool Phylo.io (Robinson et al., 2016).\n\n### Phylogenetic analysis based on PRANK alignment\n\nFor the OSK domain, the raw full length sequences obtained from the HMMER search were aligned to each other using the\u00a0HMMER HMM-based alignment tool: hmmalign, with the same HMM used to do the search, namely OSK.hmm (supplementary data: Data/HMM/OSK.hmm). Starting from this base alignment, we used the default alignment method option offered by PRANK (version: v.170427) (L\u00f6ytynoja, 2014). We then used PRANK to realign those sequences, which in turn led to a usable alignment for phylogenetic analysis. This alignment was trimmed using the same parameters as described in Hidden Markov Model (HMM) generation and alignments of the OSK and LOTUS domains above. The final alignment is available in supplementary data: Alignment/OSK_prank_aligned.fasta. We then performed a phylogenetic analysis of this alignment using RAXML with the same parameters described in Phylogenetic Analysis Based on MUSCLE Alignment above. The resulting tree is presented in Figure 2\u2014figure supplements 7 and 8.\n\nFor the LOTUS domain, the raw full length sequences obtained from the HMMER search were aligned to each other using the HMMER HMM-based alignment tool: hmmalign, with the same HMM used to do the search, namely LOTUS.hmm (Supplementary data: Data/HMM/LOTUS.hmm). Starting from this base alignment, we then used PRANK with default options to realign those sequences. This alignment was trimmed using the same parameters as described in the Hidden Markov Model (HMM) generation and alignments of the OSK and LOTUS domains. The final alignment is available in supplementary data: Alignments/LOTUS_prank_aligned.fasta. We then performed a phylogenetic analysis using RAXML with the same parameters described above in Phylogenetic Analysis Based on MUSCLE alignment. The resulting trees are presented in Figure 2\u2014figure supplements 6 and 9.\n\n### Phylogenetic analysis based on T coffee alignment\n\nFor the LOTUS and OSK domains, the raw full length sequences obtained from the HMMER search were aligned to each other using T-Coffee with its default parameters (Notredame et al., 2000). This alignment was trimmed using the same parameters as described in Hidden Markov Model (HMM) generation and alignments of the OSK and LOTUS domains above. The final alignment is available in supplementary data: Alignment/LOTUS_tcoffee_aligned.fasta Alignment/OSK_tcoffee_aligned.fasta. We then performed a phylogenetic analysis of this alignment using RAXML with the same parameters described in Phylogenetic Analysis Based on MUSCLE Alignment above. The resulting trees are presented in Figure 2\u2014figure supplements 10 and 11.\n\n### Visual comparison of phylogenetic trees\n\nTo compare the trees obtained with different alignment tools, we used Phylo.io (Robinson et al., 2016). The trees were imported in Newick format, and the Phylo.io tool generated the mirrored and aligned versions of the trees represented in Figure 2\u2014figure supplements 8, 9, 12 and 13. The color of the branches is the tree similarity score, where lighter colors represent a higher number of topological differences. It is a custom implementation of the Jacard Index by Phylo.io.\n\n### Statistical analysis of tree topology\n\nTo statistically evaluate our best-supported topology of the OSK and LOTUS trees, we compared constrained topologies to the highest likelihood trees using the SOWHAT tool (Church et al., 2015). SOWHAT automates the stringent SOWH phylogenetic topology test (Swofford et al., 1996), and compares the log likelihood between generated trees. We defined three constrained trees to test our results, one requiring monophyly of all domains of life, a second requiring only eukaryotic monophyly, and the last one requiring monophyly of the Oskar LOTUS domain (Source data 1: Data > Trees > constrained_kingdom_tree.tre, constrained_eukmono_tree.tre and constrained_lotus_mono_tree.tre). We then ran SOWHAT using its default parameters, 1000 bootstraps, and the two constrained trees against the OSK or LOTUS alignment used to generate the phylogenetic trees (Source data 1: Alignments\u00a0>\u00a0OSK_MUSCLE_TREE.fasta and LOTUS_MUSCLE_TREE.fasta). All best trees generated by SOWHAT are available in (Source data 1: Data > Trees > SOWHAT_*_test.tre).\n\n### Code availability\n\nAll custom code generated for this study is available in the GitHub repository https://github.com/extavourlab/Oskar_HGT, commit ID 6f6c4c50dfb9391567d70f9eea922f3876a4e153\u00a0(Blondel et al., 2020; copy archived at https://github.com/elifesciences-publications/Oskar_HGT).\n\n### Scripts\n\nAll scripts used herein are hosted on GitHub at https://github.com/extavourlab/Oskar_HGT.\n",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "8cfc1fb8-07b7-4f60-9155-d5a8b315233e",
+      "submission_id": "160053e9-48e5-48ca-97aa-22001d76af99",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antonis Rokas, Vanderbilt University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.45539.sa1](https://doi.org/10.7554/eLife.45539.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\noskar is a master regulatory gene involved in insect early development that is only found in holometabolan insects. The gene's functions are well studied but its origins remain unknown. This study provides convincing phylogenetic evidence that the OSK domain of the protein encoded by the oskar gene appears to have been originally acquired from a bacterium. The study sheds significant light on the origin of a gene that is uniquely present in holometabolan insects and that plays a major role in insect early development.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Bacterial contribution to genesis of the novel germ line determinant oskar\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Eve Gazave (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this short report submitted to ELife, Blondel and collaborators aim at understanding the evolutionary history of a crucial gene for reproduction in some insects, oskar. This gene, not found outside this group of organisms, plays a sufficient and mandatory role for germ line determination. So far, the evolutionary history of this enigmatic gene was unknown. In this study, the authors conduct a suite of molecular evolutionary and bioinformatic analyses to unravel the origin of this important gene. They notably performed parametric and phylogenetic methods to detect potential HGT that has been suggested to be at the origin of Oskar. Based on these analyses and findings, they argue:\n\ni) That one of the two domains of the Oskar protein, OSK, is more related to bacterial sequences while the other one, LOTUS, is clustering with eukaryotic sequences.\n\nii) That LOTUS is related to eukaryotes and that OSK clusters within bacterial sequences, more specifically with GDSL-like hydrolases, thanks to phylogenetic analyses of the two domains separately, as well as topology-constraint tests.\n\niii) That sequence characteristics, notably the GC3 content and the codon use, through the cosine distance analysis, are very different from the LOTUS and OSK domains which is consistent with the hypothesis of distinct origins for the two domains composing the Oskar gene.\n\nEssential revisions:\n\nThe essential revisions fall into two major categories: concerns about the phylogenetic analyses and concerns about the codon usage analyses. The concerns about the codon usage analyses are quite substantial. Here, the authors have two options \u2013 one would be to remove completely this part from the manuscript (given that the HGT inference can stand on its own). The other would be to address the reviewers' concerns, which may reveal additional interesting biology.\n\nConcerns about codon usage analyses:\n\nMain text, twelfth paragraph: The reviewers were surprised that you were able to detect codon usage differences for HGT events that occurred that far back in time (e.g., third position synonymous sites are saturated between D. melanogaster and D. pseudoobscura). Thus, explanations of any differences between LOTUS and OSK parts of the oskar gene should be carefully scrutinized. In particular:\n\n1) If we understand the methods correctly, the process used to calculate codon usage is somewhat unorthodox. By calculating the frequency of all 64 codons, rather than usage of alternate synonymous codons, this metric of similarity will be influenced by amino acid composition. Thus, genes where the 5' and 3' ends look quite different in their codon usage could result from very different amino acid composition between the two halves, rather than differences in synonymous codon usage. This raises the possibility that the large differences in codon usage between the LOTUS and OSK domains could be driven by differences in amino acid composition. Do either of these domains (especially OSK) have a particularly unusual or distinctive amino acid composition, relative to other arthropod genes?\n\n2) We recommend that you conduct this analysis using a metric of codon usage that is independent of amino acid composition, such as the codon adaptation index or relative synonymous codon usage.\n\n3) There are many other possible explanations for why the coding sequences of two domains in a protein may exhibit different codon usage that may have to do with domain folding, translational selection, etc. that would be worth considering as alternative explanations.\n\n4) If the oskar gene is cut in half following the procedure used for the genes in the 17 genomes, rather than comparing just the LOTUS and OSK domains, are the 5' and 3' halves still significantly discordant for AT3/GC3/codon usage?\n\n5) The manuscript states: \"if evolutionary time had not completely erased the original GC3 content and codon use signatures from the putative bacterially donated sequence (OSK), we might detect some differences in these parameters both from the LOTUS domain, and from the host genome.\" All of the analyses presented appear to address the first issue (OSK vs. LOTUS), but I did not see any analyses addressing the second question, whether these parameters systematically differ between the OSK domain and the rest of the host genome. If some of the analyses in the paper do bear on this question, this connection should be made more explicit. This seems like an important question, and would help to inform whether the observed differences between the LOTUS and OSK domains are in fact due to unusual features of the OSK domain specifically.\n\n6) In Figure 3\u2014figure supplement 1, why is the correlation for AT3 between the 5' and 3' ends of genes positive, but negative for GC3? This seems counter-intuitive to me.\n\n7) We don't understand this sentence: \"Thus, we sampled each codon at least twice, preserving the coding frame.\" Why does cutting each gene in half at a randomly chosen location sample each codon twice (or more)?\n\n8) Barplots in Figure 3A and B: it would be more informative to see the full distribution of correlations for all non-oskar genes. It would also be useful to see the points for the LOTUS and OSK domains highlighted in Figure 3\u2014figure supplement 1. In general, Figure 3\u2014figure supplement 1 appears to be more informative than Figure 3.\n\n9) Figure 3C: we expect there are many points within the \"intra-gene\" set that are not displayed? If this is true, it would be more transparent to allow the boxplot whiskers to extend to the full range of the data.\n\n10) Figure 3D is hard to understand \u2013 those two boxplots show two null distributions, but we don't see where the differences between the LOTUS and OSK domains are indicated.\n\nConcerns about phylogenetic analyses/results:\n\n11) Although the reviewers appreciate that the MUSCLE sequence alignment program is one of the state-of-the-art software for this type of analyses, it is fair to say that the use of different alignment programs can sometimes generate considerable variation in phylogenetic inference (e.g., https://academic.oup.com/mbe/article/30/3/642/1038709). We request that the authors use at least a couple of additional programs for sequence alignment (e.g., PRANK and T-Coffee) and rebuild the trees for the two domains. This should provide a sanity check that the key conclusions of their work are not sensitive to method/alignment software.\n\n12) Main text, seventh paragraph: to really claim that the dipteran LOTUS domain sequences do not group together with the LOTUS domain sequences from other insects, you should do a topology constraint analysis (like you've done for the HGT). Is the ML topology where these two groups of sequences are forced into monophyly significantly different from the unconstrained ML topology? The reviewers think you need to show that these two topologies are significantly different to be able to claim that this is not simply an artifact of doing phylogenetic analyses using a short sequence alignment. Also note that your statement, \"the phylogenetic interrelationships of these [LOTUS] sequences is largely consistent with the current species or family level trees for the corresponding insects\", contradicts your findings/arguments in the aforementioned paragraph.\n\n13) It is not clear how the two domains fused and when (approximately) they did so. I think it would be useful for the readers if the authors speculated in a small paragraph their hypothesis (based on their knowledge of the distribution of these two domains in insects) when the fused oskar gene originated.\n\nOther broad comments:\n\n14) Main text, fourth paragraph: why are you using two different thresholds for your blast searches of the protein versus the two domains?\n\n15) The discussion and cited studies on HGT were too narrow and well known examples of bacterial to insect HGT not cited (e.g., Husnik et al., 2013; Sloan et al., 2014; Acuna et al., 2012, to mention just a few).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Bacterial contribution to genesis of the novel germ line determinant oskar\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Eve Gazave (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe study by Blondel et al. provides phylogenetic evidence that the OSK domain of the key developmental gene oskar appears to have been originally acquired from a bacterium. oskar is a key developmental gene and its functions are well studied but its origins remain unknown. This study sheds significant light on its origin and believe will be of interest not just to evo-devo afficionados, but more broadly to developmental biologists and evolutionary biologists. The manuscript is overall clearly written and straightforward to understand.\n\nEssential revisions:\n\nWhile the reviewers appreciated the authors' additional analyses on codon usage between the two domains of the oskar gene, they raised numerous concerns about the statistical analyses performed as well as for the inference that the observed patterns of codon usage may stem from the HGT event (see detailed comments below). The reviewers thought that the argument that the observed patterns are remnants of the HGT event is highly unlikely and hard to reconcile with everything that we know about the (fast) rate with which codon bias evolves. The reviewers also raised several remaining issues in the calculations of the codon usage statistics, which are substantial and would require additional, extensive analyses.\n\nGiven that the manuscript is a short communication and that the codon bias analyses are not mentioned in the title or Abstract (so their removal does not impact the manuscript's key result and discovery), our recommendation is that the authors remove all analyses associated with codon usage. If the authors can do so, there is broad agreement that the rest of this manuscript would be suitable for publication and would be accepted without the need for additional revisions (everyone concurred that the phylogenetic aspects of the manuscript are well done and will be interesting to a broad audience). Alternatively, if the authors feel strongly that they wish to keep the codon usage analyses in their manuscript, our recommendation is that the manuscript should be rejected. We sincerely hope that you decide to implement the reviewers' suggestions so that your manuscript can be accepted for publication at eLife.\n\nSpecific comments about codon usage analyses:\n\nThe reviewers appreciate the additional analyses that the authors have included regarding the differences in codon useage between the LOTUS and OSK domains of oskar. However, some of the changes are not presented clearly, and the rest appear to undermine the authors' claim that codon useage in oskar reflects its HGT hybrid origin.\n\nFirst, there are some ambiguities and contradictions within the manuscript about the new analyses. The legend to Figure 3A states \"Scatter plot representing the full distribution of correlations from Pearson correlation analysis for AT3 use in 3' and 5' halves\". However, what is shown in Figure 3A is a bivariate plot \u2013 unless we misunderstand, calculating the correlation coefficient between the AT3 content for the 5' and 3' halves of each gene should yield a univariate distribution (one correlation coefficient for each gene) \u2013 and according to the axis labels, what is shown are the residuals (?) or Z-score (are these the same thing?) of AT3 for each 5' and 3' half of each gene. We are similarly confused about this statement: \"The Z score ranges of correlations for the oskar domains are within the distribution for all genes in the genome, although correlations of use across the gene are lower for oskar than for non-oskar genes\".\n\nIt is stated in the main text and in the Materials and methods that the residuals/Z-scores are calculated for each insect genome separately: \"Pooling the residuals together revealed that the GC3 content was significantly different between the LOTUS and OSK domains, compared to what would be expected within an average gene in that genome\"; \"Then, Z scores for each sequence from the Intra-Gene, OSK or LOTUS domain sequences were calculated against the corresponding genome frequency distribution.\" But if this were the case, wouldn't the plots in Figure 3\u2014figure supplements 1 and 2 be centered on (0,0)? At least Figure 3\u2014figure supplement 1 looks as if the Z-scores were calculated from the combined distributions of AT3 pooled across all 17 genomes, which we do not think is appropriate, since genomes differ in AT/GC content. For this reason, we also think Figure 3A should be changed to Z-scores calculated for each genome separately.\n\nSecond, comparing the correlation in AT3/GC3 between the LOTUS and OSKAR domains with the average intra-gene correlation (either within a genome or across all genomes) does not seem to be a good indication of whether the correlation for oskar is unusual \u2013 as suggested by Figure 3A, many genes have correlations well above or below the mean for that genome, and likely have a lower correlation than observed for oskar. If even some genes in these genomes have AT3/GC3 correlations between their 5' and 3' halves that are as low or lower than oskar's (are some even negative?), and presumably this is not due to the same hybrid evolutionary origin as hypothesized for oskar , then how confident can we be that this low correlation reflects the HGT origin for oskar? We apologize for not raising this issue in the first round of review, but we did not quite understand what was represented in Figure 3C, D, E.\n\nThird, we still think that the methods used to compare codon usage between the 5' and 3' ends of non-oskar genes are not fully comparable to comparing codon usage between the LOTUS and OSK domains. The OSK domain comprises the 3' 33% of oskar while the LOTUS domain comprises 16% of the protein, from 23-39% of the length from the 5' end. So the LOTUS domain makes up a smaller fraction of oskar than the methods used to sample the 5' halves of other genes, which could generate a more biased usage in the LOTUS domain. Probably more importantly, assuming that the LOTUS and OSKAR domains are functional, coherent units within the oskar protein, we might expect their amino acid composition to be unrepresentative of simply the 5' or 3' halves of genes, if most of those halves include multiple protein domains and/or truncate protein domains. It's hard to know what the perfect control set is here, but it would be informative to at least compare codon usage across two different discrete protein domains within a number of genes as was done for oskar.\n\nFourth, as the revised manuscript states, and as is clearly shown in Figures 3A, B (our questions about those figures notwithstanding), Figure 3\u2014figure supplement 2, and Figure 3\u2014figure supplement 6: codon useage in oskar genes is actually not unusual relative to their host genomes, or when it is unusual, this is true for both OSKAR and LOTUS domains (Figure 3\u2014figure supplement 6A). Drawing the alternate conclusion in the face of these results confuses the manuscript.\n\nFinally, we reiterate that we have difficulty believing, a priori, that \"evolutionary time had not completely erased the original GC3 content and codon use signatures from the putative bacterially donated sequence (OSK)\". Codon usage evolves over very rapid evolutionary timescales, (for example Akashi 1996, Genetics 144:1297), and can diverge genome-wide within a genus (see the 12 Drosophila genomes paper: Clark et al. 2007, Nature 450: 203-218, Figure 5). There is still much we do not understand about the evolution of synonymous codon usage (for example https://doi.org/10.1534/genetics.119.302542). Nonetheless, everything we do know suggests that either neutral or selective pressures should have long ago erased any codon usage signatures retained from a bacterial origin of the OSKAR domain. If the difference in AT3/GC3/codon useage is indeed unusual between the OSKAR and LOTUS domains of oskar (a conclusion that the manuscript has yet to convincingly demonstrate), then we insist that this is much more likely to be due to some unknown feature of oskar function that constrains its codon usage, than it is to reflect its evolutionary origin. As the authors mention in the revised manuscript, given that oskar mRNA is localized in the oocyte, this provides an entirely plausible constraint on the mRNA sequence independent of its coding role. We note that FlyBase also has annotated a lncRNA that almost entirely overlaps with the oskar mRNA in D. melanogaster; we don't know what evidence supports this annotation, but if true, this could indicate additional constraints that could shape codon usage. But in the end, we think such speculation is of limited value to the manuscript if the reader is not convinced that the codon usage is indeed unusually different between the two domains in oskar.\n",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e7529ea4-0bd8-44a0-9c85-e759d9d882ec",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C1",
+      "claim": "oskar has been long considered a novel gene with unknown origin",
+      "claim_type": "EXPLICIT",
+      "source": "Long considered a novel gene with unknown origin, oskar has evolved to fulfil a crucial role in insect germ cell formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as background information about the gene's status in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "b05b7599-ba9c-4f2a-9ba6-260e80d10596",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C2",
+      "claim": "oskar has evolved to fulfill a crucial role in insect germ cell formation",
+      "claim_type": "EXPLICIT",
+      "source": "Long considered a novel gene with unknown origin, oskar has evolved to fulfil a crucial role in insect germ cell formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about oskar's function",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "3a4bdf49-a66b-45ac-89c7-497eaa3481a5",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C3",
+      "claim": "Analysis of over 100 insect Oskar sequences suggests that oskar arose de novo via fusion of eukaryotic and prokaryotic sequences",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of over 100 insect Oskar sequences suggests that oskar arose de novo via fusion of eukaryotic and prokaryotic sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study based on phylogenetic analysis of 95+ Oskar sequences",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "2d8bd349-d7b3-482f-bf08-7041918dc330",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C4",
+      "claim": "Novel genes can arise from mutation and gene duplication of existing genes",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic variation can arise from mutation and gene duplication of existing genes (Taylor and Raes, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Taylor and Raes, 2004",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "d3bfcb17-74fe-4fda-879d-34171233bde6",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C5",
+      "claim": "Novel genes can arise through de novo processes",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic variation can arise from mutation and gene duplication of existing genes (Taylor and Raes, 2004), or through de novo processes (Tautz and Domazet-Lo\u0161o, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tautz and Domazet-Lo\u0161o, 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "d99c34ab-1374-4857-bc4d-e3ca1c36fb2e",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C6",
+      "claim": "The extent to which novel genes participate significantly in the evolutionary process is unclear",
+      "claim_type": "EXPLICIT",
+      "source": "but the extent to which such novel, or 'orphan' genes participate significantly in the evolutionary process is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "661a8bb3-c25c-4b89-ba20-b8feaab86538",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C7",
+      "claim": "Mutation of existing cis-regulatory regions can drive evolutionary change in developmental processes",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of existing cis-regulatory (Wittkopp and Kalay, 2012) or protein coding regions (Hoekstra and Coyne, 2007) can drive evolutionary change in developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wittkopp and Kalay, 2012",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "0b3d13f9-8192-4aab-bb7c-cff7e0ea89b0",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C8",
+      "claim": "Mutation of existing protein coding regions can drive evolutionary change in developmental processes",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of existing cis-regulatory (Wittkopp and Kalay, 2012) or protein coding regions (Hoekstra and Coyne, 2007) can drive evolutionary change in developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hoekstra and Coyne, 2007",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "e75ef217-542e-4630-8376-79acbcc39a2c",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C9",
+      "claim": "Recent studies in animals and fungi suggest that novel genes can also drive phenotypic change",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies in animals and fungi suggest that novel genes can also drive phenotypic change (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chen et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "16a99064-8718-4fb5-be4f-af53a0f4f649",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C10",
+      "claim": "Novel genes may be integrating continuously into otherwise conserved gene networks, with a higher rate of partner acquisition than subtler variations on preexisting genes",
+      "claim_type": "EXPLICIT",
+      "source": "Although counterintuitive, novel genes may be integrating continuously into otherwise conserved gene networks, with a higher rate of partner acquisition than subtler variations on preexisting genes (Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "bf1631d6-825f-402b-92ce-edf876fc28b2",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C11",
+      "claim": "In humans and fruit flies, a large proportion of novel genes are expressed in the brain",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in humans and fruit flies, a large proportion of novel genes are expressed in the brain, suggesting their participation in the evolution of major organ systems (Zhang et al., 2012; Chen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhang et al., 2012 and Chen et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "49f07ac0-66a4-4826-bac8-9e31aa166401",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C12",
+      "claim": "Novel genes expressed in the brain suggest their participation in the evolution of major organ systems",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in humans and fruit flies, a large proportion of novel genes are expressed in the brain, suggesting their participation in the evolution of major organ systems (Zhang et al., 2012; Chen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "3d9d4a46-1c70-440a-a043-55341137662d",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C13",
+      "claim": "The developmental and evolutionary significance of novel genes remains understudied",
+      "claim_type": "EXPLICIT",
+      "source": "However, while next generation sequencing has improved their discovery, the developmental and evolutionary significance of novel genes remains understudied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "596152dd-30b1-4b60-a821-b32214b19b1a",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C14",
+      "claim": "Novel genes that arise by duplication possess the same biophysical properties as their parent genes",
+      "claim_type": "EXPLICIT",
+      "source": "Novel genes that arise by duplication, thus possessing the same biophysical properties as their parent genes, have innate potential to participate in preexisting cellular and molecular mechanisms (Taylor and Raes, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Taylor and Raes, 2004",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "f5cfdf4d-aa52-40ff-9a3b-9a856d888a6c",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C15",
+      "claim": "Novel genes arising by duplication have innate potential to participate in preexisting cellular and molecular mechanisms",
+      "claim_type": "EXPLICIT",
+      "source": "Novel genes that arise by duplication, thus possessing the same biophysical properties as their parent genes, have innate potential to participate in preexisting cellular and molecular mechanisms (Taylor and Raes, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Taylor and Raes, 2004",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "342d948c-8306-4f39-8bff-73ac9ab825d5",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C16",
+      "claim": "Orphan genes lacking sequence similarity to existing genes must form novel functional molecular relationships with extant genes in order to persist in the genome",
+      "claim_type": "EXPLICIT",
+      "source": "However, orphan genes lacking sequence similarity to existing genes must form novel functional molecular relationships with extant genes, in order to persist in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical requirement for orphan gene persistence",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "7b4994a2-8425-4710-8209-1c7ee83a8d90",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C17",
+      "claim": "When genes arise by horizontal gene transfer, they may introduce novel, already functional sequence information into a genome",
+      "claim_type": "EXPLICIT",
+      "source": "When such genes arise by introduction of foreign DNA into a host genome through horizontal gene transfer (HGT), they may introduce novel, already functional sequence information into a genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of HGT",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "07fcdd5b-7105-4e1c-808d-1a29b5e87bd0",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C18",
+      "claim": "It is unclear whether genes created by HGT show a greater propensity to contribute to or enable novel processes",
+      "claim_type": "EXPLICIT",
+      "source": "Whether genes created by HGT show a greater propensity to contribute to or enable novel processes is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an open question in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "1bb2326e-9ef3-4ae1-9389-5289f3972199",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C19",
+      "claim": "Endosymbionts in the host germ line cytoplasm could increase the occurrence of evolutionarily relevant HGT events",
+      "claim_type": "EXPLICIT",
+      "source": "Endosymbionts in the host germ line cytoplasm (germ line symbionts) could increase the occurrence of evolutionarily relevant HGT events, as foreign DNA integrated into the germ line genome is transferred to the next generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference about germ line symbionts",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "2b406d20-fa52-4d10-93e2-45405bbd2e18",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C20",
+      "claim": "Foreign DNA integrated into the germ line genome is transferred to the next generation",
+      "claim_type": "EXPLICIT",
+      "source": "Endosymbionts in the host germ line cytoplasm (germ line symbionts) could increase the occurrence of evolutionarily relevant HGT events, as foreign DNA integrated into the germ line genome is transferred to the next generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "df696512-1140-496a-b57f-0fd2922c8eaf",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C21",
+      "claim": "HGT from bacterial endosymbionts into insect genomes appears widespread",
+      "claim_type": "EXPLICIT",
+      "source": "HGT from bacterial endosymbionts into insect genomes appears widespread, involving transfer of metabolic genes or even larger genomic fragments to the host genome (see for example Dunning Hotopp et al., 2007; Acuna et al., 2012; Sloan et al., 2014; Husnik et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "709810d9-6d4d-4981-9923-1aa5309073e3",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C22",
+      "claim": "HGT from bacterial endosymbionts to insect genomes involves transfer of metabolic genes or even larger genomic fragments",
+      "claim_type": "EXPLICIT",
+      "source": "HGT from bacterial endosymbionts into insect genomes appears widespread, involving transfer of metabolic genes or even larger genomic fragments to the host genome (see for example Dunning Hotopp et al., 2007; Acuna et al., 2012; Sloan et al., 2014; Husnik et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "4100f762-34bd-44d3-af53-2a7db0d03674",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C23",
+      "claim": "oskar was first discovered in Drosophila melanogaster",
+      "claim_type": "EXPLICIT",
+      "source": "First discovered in Drosophila melanogaster (Lehmann and N\u00fcsslein-Volhard, 1986)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lehmann and N\u00fcsslein-Volhard, 1986",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "ee9f260d-f47c-4cd2-aced-f2516477feff",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C24",
+      "claim": "oskar is necessary and sufficient for assembly of germ plasm",
+      "claim_type": "EXPLICIT",
+      "source": "osk is necessary and sufficient for assembly of germ plasm, a cytoplasmic determinant that specifies the germ line in the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about oskar function",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "28664278-723f-4ff2-968f-9b8696331a20",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C25",
+      "claim": "Germ plasm is a cytoplasmic determinant that specifies the germ line in the embryo",
+      "claim_type": "EXPLICIT",
+      "source": "osk is necessary and sufficient for assembly of germ plasm, a cytoplasmic determinant that specifies the germ line in the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about germ plasm function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "a8ecfb5c-5971-41c7-ba13-43e21cf896fe",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C26",
+      "claim": "Germ plasm-based germ line specification appears derived within insects, confined to insects that undergo metamorphosis (Holometabola)",
+      "claim_type": "EXPLICIT",
+      "source": "Germ plasm-based germ line specification appears derived within insects, confined to insects that undergo metamorphosis (Holometabola) (Ewen-Campen et al., 2012; Extavour and Akam, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ewen-Campen et al., 2012 and Extavour and Akam, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "53e833ec-3bb0-4bc5-95b2-426c808443a3",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C27",
+      "claim": "oskar was initially thought exclusive to Diptera (flies and mosquitoes)",
+      "claim_type": "EXPLICIT",
+      "source": "Initially thought exclusive to Diptera (flies and mosquitoes), its discovery in a wasp, another holometabolous insect with germ plasm (Lynch et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge that was later revised",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "afdd9b14-6637-483e-b5b3-b880cc213458",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C28",
+      "claim": "oskar was discovered in a wasp, another holometabolous insect with germ plasm",
+      "claim_type": "EXPLICIT",
+      "source": "its discovery in a wasp, another holometabolous insect with germ plasm (Lynch et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lynch et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "a974b24e-038a-4bef-b8de-8f04ab941c38",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C29",
+      "claim": "The discovery of oskar in a wasp led to the hypothesis that oskar originated as a novel gene at the base of the Holometabola approximately 300 Mya",
+      "claim_type": "EXPLICIT",
+      "source": "its discovery in a wasp, another holometabolous insect with germ plasm (Lynch et al., 2011), led to the hypothesis that oskar originated as a novel gene at the base of the Holometabola approximately 300 Mya",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lynch et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "5a4c0729-5d07-4017-801a-cba03088dab9",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C30",
+      "claim": "The discovery of oskar in a wasp led to the hypothesis that oskar facilitated the evolution of insect germ plasm as a novel developmental mechanism",
+      "claim_type": "EXPLICIT",
+      "source": "led to the hypothesis that oskar originated as a novel gene at the base of the Holometabola approximately 300 Mya, facilitating the evolution of insect germ plasm as a novel developmental mechanism (Lynch et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lynch et al., 2011",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "dda72716-75ff-4f8a-92d3-4e18540c397e",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C31",
+      "claim": "oskar was subsequently discovered in a cricket, a hemimetabolous insect without germ plasm",
+      "claim_type": "EXPLICIT",
+      "source": "However, its subsequent discovery in a cricket (Ewen-Campen et al., 2012), a hemimetabolous insect without germ plasm (Ewen-Campen et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ewen-Campen et al., 2012 and 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "f1dd5f06-193a-4026-b521-d0afd9ab9628",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C32",
+      "claim": "The discovery of oskar in a cricket implied that oskar was at least 50 My older than previously thought",
+      "claim_type": "EXPLICIT",
+      "source": "However, its subsequent discovery in a cricket (Ewen-Campen et al., 2012), a hemimetabolous insect without germ plasm (Ewen-Campen et al., 2013), implied that osk was instead at least 50 My older",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "eea580aa-dc19-493b-ae7d-5f9b028d49c5",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C33",
+      "claim": "The discovery of oskar in a cricket implied that oskar's germ plasm role was derived rather than ancestral",
+      "claim_type": "EXPLICIT",
+      "source": "implied that osk was instead at least 50 My older, and that its germ plasm role was derived rather than ancestral (Abouheif, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Abouheif, 2013",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "1e99959b-81c4-4b81-bc65-d070b5706bf3",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C34",
+      "claim": "oskar plays major developmental roles, interacting with the products of many genes highly conserved across animals",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its orphan gene status, osk plays major developmental roles, interacting with the products of many genes highly conserved across animals (Lehmann, 2016; Jeske et al., 2015; Jeske et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lehmann, 2016; Jeske et al., 2015; Jeske et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "05b35728-52c6-4000-899d-08e3873d39df",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C35",
+      "claim": "oskar represents an example of a novel gene that functions within pre-existing gene networks in the nervous system",
+      "claim_type": "EXPLICIT",
+      "source": "osk thus represents an example of a novel gene that not only functions within pre-existing gene networks in the nervous system (Ewen-Campen et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ewen-Campen et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "f0233da7-b360-406b-af51-10cfe7ced1f5",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C36",
+      "claim": "oskar is the only animal gene that has been experimentally demonstrated to be both necessary and sufficient to specify functional primordial germ line cells",
+      "claim_type": "EXPLICIT",
+      "source": "but has also evolved into the only animal gene that has been experimentally demonstrated to be both necessary and sufficient to specify functional primordial germ line cells (Ephrussi and Lehmann, 1992; Kim-Ha et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ephrussi and Lehmann, 1992 and Kim-Ha et al., 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "88e38eb8-44d9-45a3-9bd7-304e41854693",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C37",
+      "claim": "The evolutionary origins of oskar are unknown",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary origins of this remarkable gene are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap that the study addresses",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "f3ef1938-3af6-49c5-b325-84c6966499d3",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C38",
+      "claim": "Oskar contains an N-terminal LOTUS domain",
+      "claim_type": "EXPLICIT",
+      "source": "Osk contains two biophysically conserved domains, an N-terminal LOTUS domain and a C-terminal hydrolase-like domain called OSK (Jeske et al., 2015; Yang et al., 2015; Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and shown in Figure 1a",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "6c95cbd7-752c-4478-94cc-6be41b9ef885",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C39",
+      "claim": "Oskar contains a C-terminal hydrolase-like domain called OSK",
+      "claim_type": "EXPLICIT",
+      "source": "Osk contains two biophysically conserved domains, an N-terminal LOTUS domain and a C-terminal hydrolase-like domain called OSK (Jeske et al., 2015; Yang et al., 2015; Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and shown in Figure 1a",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "2dcca83f-ab6b-49f3-be90-4b0693a20125",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C40",
+      "claim": "An initial BLASTp search using full-length D. melanogaster osk sequence yielded either other holometabolous insect osk genes, or partial hits for the LOTUS or OSK domains",
+      "claim_type": "EXPLICIT",
+      "source": "An initial BLASTp search using the full-length D. melanogaster osk sequence as a query yielded either other holometabolous insect osk genes, or partial hits for the LOTUS or OSK domains (E-value < 0.01; Source data 1: BLAST search results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the BLAST search performed by the authors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "98d0d926-5ece-43f7-b412-570cdbe3e8af",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C41",
+      "claim": "The BLAST results suggested that full length oskar was unlikely to be a duplication of any other known gene",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that full length osk was unlikely to be a duplication of any other known gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the BLAST results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "26029221-9841-434e-a5fd-15d4e93d2d51",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C42",
+      "claim": "BLASTp search using the LOTUS domain as query recovered several eukaryotic hits",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in this BLASTp search, although we recovered several eukaryotic hits for the LOTUS domain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the BLAST search performed by the authors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "0343eea7-7068-4b10-9a2b-d3693e113ff3",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C43",
+      "claim": "BLASTp search using the OSK domain as query recovered no eukaryotic sequences, even with very low E-value stringency",
+      "claim_type": "EXPLICIT",
+      "source": "we recovered no eukaryotic sequences that resembled the OSK domain, even with very low E-value stringency (E-value < 10; see Materials and methods section \"BLAST searches of oskar\" for an explanation of E-value threshold choices; Source data 1: BLAST search results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the BLAST search performed by the authors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "a5da8e7d-fd0f-4dd3-9c7d-6b62c6d4868c",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C44",
+      "claim": "Sequences most similar to the LOTUS domain were almost exclusively eukaryotic sequences",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences most similar to the LOTUS domain were almost exclusively eukaryotic sequences (Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the iterative HMMER search performed by the authors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "d80f9253-23eb-462f-8539-79e711d0ae13",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C45",
+      "claim": "Sequences most similar to the OSK domain were bacterial, specifically sequences similar to SGNH-like hydrolases",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, those most similar to the OSK domain were bacterial, specifically sequences similar to SGNH-like hydrolases (Jeske et al., 2015; Yang et al., 2015) (Pfam Clan: SGNH_hydrolase - CL0264; Supplementary file 1D; Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the iterative HMMER search performed by the authors, shown in Figure 1b",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "86c16e3b-880e-4885-8ac2-b48ce849f5a1",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C46",
+      "claim": "The majority of LOTUS domain sequences clustered within eukaryotic sequences",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the majority of LOTUS domain sequences clustered within eukaryotic sequences (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the sequence similarity network in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "71c229a1-cf01-4b22-b977-8d1ecd94bfa4",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C47",
+      "claim": "OSK domain sequences formed an isolated cluster, a small subset of which formed a connection to bacterial sequences",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, OSK domain sequences formed an isolated cluster, a small subset of which formed a connection to bacterial sequences (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the sequence similarity network in Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "9a9e352f-2377-4386-891c-74425364142a",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C48",
+      "claim": "The data are consistent with a previous suggestion that HGT from a bacterium into an ancestral insect genome may have contributed to the evolution of oskar",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with a previous suggestion, based on BLAST results (Lynch et al., 2011), that HGT from a bacterium into an ancestral insect genome may have contributed to the evolution of osk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data and supported by citation to Lynch et al., 2011",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "7111a7b8-33a3-4220-ae78-a6926b2f7678",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C49",
+      "claim": "The HGT hypothesis was not formally addressed by previous analyses",
+      "claim_type": "EXPLICIT",
+      "source": "However, this possibility was not formally addressed by previous analyses, which were based on alignments of full length Osk containing only eukaryotic sequences as outgroups (Ewen-Campen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous work, supported by citation to Ewen-Campen et al., 2012",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "3ccebe4b-02c9-4e59-a769-edac0ad37ed2",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C50",
+      "claim": "Both Maximum likelihood and Bayesian approaches confirmed that LOTUS sequences were nested within eukaryotes while OSK sequences were nested within bacteria",
+      "claim_type": "EXPLICIT",
+      "source": "Both Maximum likelihood and Bayesian approaches confirmed this prediction (Figure 2a, Figure 2\u2014figure supplements 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the phylogenetic trees in Figure 2a and supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "76dfda4d-acdd-43a3-855e-1ec0908090fa",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C51",
+      "claim": "The phylogenetic results were robust to changes in the methods of sequence alignment",
+      "claim_type": "EXPLICIT",
+      "source": "and these results were robust to changes in the methods of sequence alignment (Figure 2\u2014figure supplements 6, 7, 8, 9, 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the supplementary figures comparing different alignment methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "d8331590-0981-4dbc-bbe2-4413b4d650b9",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C52",
+      "claim": "LOTUS sequences from Osk proteins were related to other eukaryotic LOTUS domains, to the exclusion of bacterial sequences",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, LOTUS sequences from Osk proteins were related to other eukaryotic LOTUS domains, to the exclusion of the only three bacterial sequences that met our E-value cutoff for inclusion in the analyses (Figure 2a, Figure 2\u2014figure supplements 1 and 2; see Materials and methods and Supplemental Text).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the phylogenetic trees",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "87b7a663-8c19-4d1a-88d1-42df7aba5e00",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C53",
+      "claim": "LOTUS sequences from non-Oskar proteins were almost exclusively eukaryotic",
+      "claim_type": "EXPLICIT",
+      "source": "LOTUS sequences from non-Oskar proteins were almost exclusively eukaryotic. (Supplementary file 1); only three bacterial sequences matched the LOTUS domain with an E-value < 0.01.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the sequence search",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "160024b4-7308-499c-8848-ab729403851c",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C54",
+      "claim": "Osk LOTUS domains clustered into two distinct clades, one comprising all Dipteran sequences, and the other comprising all other Osk LOTUS domains examined",
+      "claim_type": "EXPLICIT",
+      "source": "Osk LOTUS domains clustered into two distinct clades, one comprising all Dipteran sequences, and the other comprising all other Osk LOTUS domains examined from both holometabolous and hemimetabolous orders (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the phylogenetic tree in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "0ab3e3c6-5d0c-45bb-a26b-74e3625289f2",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C55",
+      "claim": "Dipteran Osk LOTUS sequences formed a monophyletic group that branched sister to a clade of LOTUS domains from Tud5 family proteins of non-arthropod animals",
+      "claim_type": "EXPLICIT",
+      "source": "Dipteran Osk LOTUS sequences formed a monophyletic group that branched sister to a clade of LOTUS domains from Tud5 family proteins of non-arthropod animals (NAA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the phylogenetic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "f45e62c4-4905-4803-aa10-061f7088de39",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C56",
+      "claim": "The relationships of Dipteran Osk LOTUS sequences were consistent with the current hypothesis for interrelationships between Dipteran species",
+      "claim_type": "EXPLICIT",
+      "source": "The relationships of Dipteran LOTUS sequences were consistent with the current hypothesis for interrelationships between Dipteran species (Kirk-Spriggs and Sinclair, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kirk-Spriggs and Sinclair, 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "f4e11e48-fd5c-4a90-8817-fe6f356a95b1",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C57",
+      "claim": "Among non-Dipteran Osk LOTUS sequences, the hymenopteran sequences form a clade to the exclusion of the single hemimetabolous sequence",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, among the non-Dipteran Osk LOTUS sequences, the hymenopteran sequences form a clade to the exclusion of the single hemimetabolous sequence (from the cricket Gryllus bimaculatus), consistent with the monophyly of Hymenoptera (Peters et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Peters et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "f9b50581-2439-45f1-8c4f-3319cec3d54d",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C58",
+      "claim": "It is unclear why Dipteran Osk LOTUS domains cluster separately from those of other insect Osk proteins",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear why Dipteran Osk LOTUS domains cluster separately from those of other insect Osk proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an open question",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "d2c0ade1-2cf1-4220-a3cb-a722d36b309e",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C59",
+      "claim": "The evolution of the Long Oskar domain may have influenced the evolution of the Osk LOTUS domain in at least some Diptera",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the evolution of the Long Oskar domain (Vanzo and Ephrussi, 2002; Hurd et al., 2016), which appears to be a novelty within Diptera (Source data 1: Alignments>OSKAR_MUSCLE_FINAL.fasta), may have influenced the evolution of the Osk LOTUS domain in at least some of these insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation by the authors, supported by citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "2f8d3398-94fb-475e-9139-a552f80fe59b",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C60",
+      "claim": "Of the 17 Dipteran oskar genes examined, seven possess a Long Osk domain",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, of the 17 Dipteran oskar genes we examined, the seven oskar genes possessing a Long Osk domain clustered into two clades based on the sequences of their LOTUS domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the phylogenetic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "89b4a33c-6775-484a-98a4-f96dc4b61547",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C61",
+      "claim": "The LOTUS domain of Osk proteins is most closely related to a number of other LOTUS domains found in eukaryotic proteins",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the LOTUS domain of Osk proteins is most closely related to a number of other LOTUS domains found in eukaryotic proteins, as would be expected for a gene of animal origin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the phylogenetic results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "12860805-560a-47a9-b308-b8aaeaa609d0",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C62",
+      "claim": "The phylogenetic interrelationships of LOTUS sequences are largely consistent with the current species or family level trees for the corresponding insects",
+      "claim_type": "EXPLICIT",
+      "source": "and the phylogenetic interrelationships of these sequences are largely consistent with the current species or family level trees for the corresponding insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the phylogenetic results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "410c91bd-e1ab-4d1b-8cde-688dc607d0dc",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C63",
+      "claim": "OSK domain sequences were nested within bacterial sequences",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, OSK domain sequences were nested within bacterial sequences (Figure 2b, Figure 2\u2014figure supplements 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the phylogenetic trees",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "1ebe4b61-c338-445a-84c4-710d497fdd2a",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C64",
+      "claim": "The bacterial affinity of the OSK domain was recovered even when different sequence alignment methods were used",
+      "claim_type": "EXPLICIT",
+      "source": "This bacterial, rather than eukaryotic, affinity of the OSK domain was recovered even when different sequence alignment methods were used (Figure 2\u2014figure supplements 7, 8, 9, 10 and 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the supplementary figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "e9c2e8c9-1f1f-4207-926f-bb9af69b57e3",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C65",
+      "claim": "The only eukaryotic proteins emerging from the iterative HMMER search for OSK domain sequences with E-value < 0.01 were all from fungi",
+      "claim_type": "EXPLICIT",
+      "source": "The only eukaryotic proteins emerging from the iterative HMMER search for OSK domain sequences that had an E-value < 0.01 were all from fungi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the HMMER search",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "4b020682-febd-455c-a2fb-80602f12c684",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C66",
+      "claim": "All five fungal eukaryotic sequences were annotated as Carbohydrate Active Enzyme 3 (CAZ3)",
+      "claim_type": "EXPLICIT",
+      "source": "All five of these sequences were annotated as Carbohydrate Active Enzyme 3 (CAZ3), and all CAZ3 sequences formed a clade that was sister to a clade of primarily Firmicutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the phylogenetic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "8f2515ee-cafd-49a7-aa18-8a486e3b5f2d",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C67",
+      "claim": "Most bacterial sequences used in the OSK analysis were annotated as lipases and hydrolases, with a high representation of GDSL-like hydrolases",
+      "claim_type": "EXPLICIT",
+      "source": "Most bacterial sequences used in this analysis were annotated as lipases and hydrolases, with a high representation of GDSL-like hydrolases (Supplementary file 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the sequence annotation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "416f6398-d844-4be0-8236-1768abb11590",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C68",
+      "claim": "OSK sequences formed a monophyletic group but did not branch sister to the other eukaryotic sequences in the analysis",
+      "claim_type": "EXPLICIT",
+      "source": "OSK sequences formed a monophyletic group but did not branch sister to the other eukaryotic sequences in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the phylogenetic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "e93be955-cb1b-49a3-a27b-ab671fd1468a",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C69",
+      "claim": "Within the OSK clade, the topology of sequence relationships was largely concordant with the species tree for insects",
+      "claim_type": "EXPLICIT",
+      "source": "Within this OSK clade, the topology of sequence relationships was largely concordant with the species tree for insects (Misof et al., 2014), as we recovered monophyletic Diptera to the exclusion of other insect species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the phylogenetic analysis, supported by citation to Misof et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "2b779a14-47d1-45b2-9ca7-3ea447de9863",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C70",
+      "claim": "The single orthopteran OSK sequence grouped within the Hymenoptera, rather than branching as sister to all other insect sequences",
+      "claim_type": "EXPLICIT",
+      "source": "However, the single orthopteran OSK sequence (from the cricket G. bimaculatus) grouped within the Hymenoptera, rather than branching as sister to all other insect sequences in the tree, as would be expected for this hemimetabolous sequence (Misof et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the phylogenetic analysis that is inconsistent with the expected species tree",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "46c77bbb-c372-4127-9c26-fd64cff8b746",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C71",
+      "claim": "Topology constraint analyses using the SOWH test formally rejected the possibility that the eukaryotic OSK clade has a sister group relationship to all bacterial sequences",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, OSK sequences did not simply form an outgroup to bacterial sequences. To formally reject the possibility that the eukaryotic OSK clade has a sister group relationship to all bacterial sequences in the analysis, we performed topology constraint analyses using the Swofford\u2013Olsen\u2013Waddell\u2013Hillis (SOWH) test, which assigns statistical support to alternative phylogenetic topologies (Swofford et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the statistical topology test, supported by citation to Swofford et al., 1996",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "a80c737f-a88d-4aac-86e9-c92f62fa64dd",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C72",
+      "claim": "The topologies of constrained trees requiring domain of life monophyly or eukaryotic monophyly were significantly worse than the HGT-supporting topology",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the topologies of both of these constrained trees were significantly worse than the result we had recovered with our phylogenetic analysis (Figure 2\u2014figure supplement 5), namely that the closest relatives of the OSK domain were bacterial rather than eukaryotic sequences Figure 2b, Figure 2\u2014figure supplements 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the SOWH test shown in Figure 2\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "c32d49da-c0d1-4a65-acec-99654d420894",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C73",
+      "claim": "OSK sequences formed a well-supported clade nested within bacterial GDSL-like lipase sequences",
+      "claim_type": "EXPLICIT",
+      "source": "OSK sequences formed a well-supported clade nested within bacterial GDSL-like lipase sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the phylogenetic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "ece4a79b-0cff-4c11-a4fa-0d90469220d4",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C74",
+      "claim": "The majority of bacterial sequences closest to OSK were from the Firmicutes, a bacterial phylum known to include insect germ line symbionts",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these bacterial sequences were from the Firmicutes, a bacterial phylum known to include insect germ line symbionts (Wheeler et al., 2013; Chepkemoi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the phylogenetic analysis, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "c334134d-d008-475b-9541-006acb14069b",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C75",
+      "claim": "Other bacterial sequences close to OSK belonged to Bacteroidetes or Proteobacteria, which are also known germ line symbionts of insects",
+      "claim_type": "EXPLICIT",
+      "source": "All other sequences from classified bacterial species, including a clade branching as sister to all other sequences, belonged either to the Bacteroidetes or to the Proteobacteria. Members of both of these phyla are also known germ line symbionts of insects (Dunning Hotopp et al., 2007; Zchori-Fein et al., 2004) and other arthropods (Zchori-Fein and Perlman, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the phylogenetic analysis, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "cbbd948b-9637-4613-b507-391f6df2ebae",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C76",
+      "claim": "The distinct phylogenetic relationships of the two domains of Oskar are consistent with a bacterial origin for the OSK domain",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, the distinct phylogenetic relationships of the two domains of Oskar are consistent with a bacterial origin for the OSK domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the phylogenetic analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "f369bfef-11b1-443c-803f-c7f9d9eed8a8",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C77",
+      "claim": "An ancient arthropod germ line endosymbiont could have been the source of a GDSL-like sequence that was transferred into an ancestral insect genome and gave rise to the OSK domain",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the specific bacterial clades close to OSK suggest that an ancient arthropod germ line endosymbiont could have been the source of a GDSL-like sequence that was transferred into an ancestral insect genome, and ultimately gave rise to the OSK domain of oskar (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the phylogenetic results, illustrated in Figure 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "115609df-857e-4754-a5e1-34879955c40d",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C78",
+      "claim": "Both germ line symbionts and HGT events are widespread in insects",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of oskar, however, the fact that both germ line symbionts (Bourtzis and Miller, 2006) and HGT events (Dunning Hotopp et al., 2007) are widespread in insects, provides a plausible biological mechanism consistent with our hypothesis that fusion of eukaryotic and bacterial domain sequences led to the birth of this novel gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bourtzis and Miller, 2006 and Dunning Hotopp et al., 2007",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "c2400848-08fb-49c8-b371-2e02332c74e8",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C79",
+      "claim": "Under the HGT hypothesis, the fusion of eukaryotic and bacterial sequences would have taken place before the major diversification of insects, nearly 500 million years ago",
+      "claim_type": "EXPLICIT",
+      "source": "Under this hypothesis, this fusion would have taken place before the major diversification of insects, nearly 500 million years ago (Misof et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phylogenetic results and insect phylogeny, supported by citation to Misof et al., 2014",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "e4d0a102-83b8-4558-9860-bb156e2ec99b",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C80",
+      "claim": "Novel genes might be expected to disappear rapidly, given that pre-existing gene regulatory networks operated successfully without them",
+      "claim_type": "EXPLICIT",
+      "source": "Once arisen, novel genes might be expected to disappear rapidly, given that pre-existing gene regulatory networks operated successfully without them (Taylor and Raes, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Taylor and Raes, 2004",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "0d6c014a-478d-4052-89b5-09c39c8710a1",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C81",
+      "claim": "Novel genes can evolve functional connections with existing networks and become essential",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is clear that novel genes can evolve functional connections with existing networks, become essential (Chen et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chen et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "79532e4a-7ba6-4aff-a897-1e8697b409a0",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C82",
+      "claim": "Novel genes can lead to new functions",
+      "claim_type": "EXPLICIT",
+      "source": "and in some cases lead to new functions (Cornelis et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cornelis et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "6017f374-fc57-4bcf-aae6-36bfb44ff8f8",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C83",
+      "claim": "Novel genes can contribute to phenotypic diversity",
+      "claim_type": "EXPLICIT",
+      "source": "and contribute to phenotypic diversity (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chen et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "dea34e67-4b82-451c-9432-4ef7b67fb8bc",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C84",
+      "claim": "Some authors suspect that the contribution of horizontal gene transfer to the acquisition of novel traits has been underestimated across animals",
+      "claim_type": "EXPLICIT",
+      "source": "Even given the growing number of convincing examples of HGT from both prokaryotic and eukaryotic origins (see for example Husnik and McCutcheon, 2018; Di Lelio et al., 2019; Wybouw et al., 2016; Quispe-Huamanquispe et al., 2017), some authors suspect that the contribution of horizontal gene transfer to the acquisition of novel traits has been underestimated across animals (Boto, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "a2d5d84e-7fd5-4108-8ae4-64efedb13ecf",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C85",
+      "claim": "The functional contribution of genes horizontally transferred from bacteria to insects has been documented for a range of adaptive phenotypes",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the functional contribution of genes horizontally transferred specifically from bacteria to insects has been documented for a range of adaptive phenotypes (see for example Wilson and Duncan, 2015; L\u00f3pez-Madrigal and Gil, 2017; Provorov and Onishchuk, 2018), including digestive metabolism (Acuna et al., 2012; Sloan et al., 2014; Shelomi et al., 2016), glycolysis (Zeng et al., 2018) complex symbiosis (Husnik et al., 2013) and endosymbiont cell wall construction (Bublitz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "f8d39339-d60b-47f1-9927-585a05272782",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C86",
+      "claim": "oskar plays multiple critical roles in insect development, from neural patterning to oogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "oskar plays multiple critical roles in insect development, from neural patterning (Ewen-Campen et al., 2012; Xu et al., 2013) to oogenesis (Jenny et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "e9e638d4-ba10-4a56-8e7d-13fa01b1461b",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C87",
+      "claim": "In the Holometabola, oskar's co-option to become necessary and sufficient for germ plasm assembly is likely the cell biological mechanism underlying the evolution of this derived mode of insect germ line specification",
+      "claim_type": "EXPLICIT",
+      "source": "In the Holometabola, a clade of nearly one million extant species (Rees and Cranston, 2017), oskar's co-option to become necessary and sufficient for germ plasm assembly is likely the cell biological mechanism underlying the evolution of this derived mode of insect germ line specification (Ewen-Campen et al., 2012; Lynch et al., 2011; Abouheif, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "6290f159-d6f3-4389-bbbe-b639a80b5627",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C88",
+      "claim": "The Holometabola is a clade of nearly one million extant species",
+      "claim_type": "EXPLICIT",
+      "source": "In the Holometabola, a clade of nearly one million extant species (Rees and Cranston, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rees and Cranston, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "459eb6d3-24f1-434f-8409-e3102ba80f56",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C89",
+      "claim": "This study provides evidence that HGT can introduce functional genes into a host genome",
+      "claim_type": "EXPLICIT",
+      "source": "Our study thus provides evidence that HGT can not only introduce functional genes into a host genome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "3b20470a-32af-4de3-ba85-38ada417ba25",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C90",
+      "claim": "HGT can generate genes with entirely novel domain structures by contributing sequences of individual domains",
+      "claim_type": "EXPLICIT",
+      "source": "but also, by contributing sequences of individual domains, generate genes with entirely novel domain structures that may facilitate the evolution of novel developmental mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "36a2c215-e41b-4f65-8a0c-22d45e30bd50",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "claim_id": "C91",
+      "claim": "Genes with novel domain structures generated by HGT may facilitate the evolution of novel developmental mechanisms",
+      "claim_type": "EXPLICIT",
+      "source": "but also, by contributing sequences of individual domains, generate genes with entirely novel domain structures that may facilitate the evolution of novel developmental mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5ccd2864-85f9-4bb8-922a-f2d046034840",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Oskar protein contains two conserved domains (LOTUS and OSK), and initial sequence similarity searches revealed that the LOTUS domain matches eukaryotic sequences while the OSK domain shows no eukaryotic matches but instead resembles bacterial SGNH-like hydrolases. Sequence similarity networks confirm that LOTUS sequences cluster with eukaryotes while OSK sequences form an isolated cluster with connections to bacterial sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C47 provide converging evidence from multiple complementary approaches (BLAST searches, HMMER searches, sequence similarity networks) all consistently showing differential evolutionary origins for the two domains. The data are internally consistent and supported by visual evidence in Figures 1b-d.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "05226635-a66a-4a46-a468-4b0e53ce4aec",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenetic analyses using both Maximum Likelihood and Bayesian approaches demonstrate that LOTUS domain sequences from Oskar proteins are nested within eukaryotic sequences and show phylogenetic relationships consistent with known insect phylogeny. The results are robust to different alignment methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C62 describe comprehensive phylogenetic analyses with multiple methods (ML and Bayesian), multiple alignment approaches (MUSCLE, PRANK, T-Coffee), and results that are internally consistent with established insect phylogeny. The concordance with known species relationships (C56, C57, C62) provides independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "5bb9491e-26d1-41d2-be82-8dd1632c235b",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phylogenetic analyses demonstrate that OSK domain sequences are nested within bacterial sequences, specifically within GDSL-like lipase/hydrolase sequences from bacterial phyla known to include insect germ line symbionts (Firmicutes, Bacteroidetes, Proteobacteria). This bacterial affinity is robust to different alignment methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C76 provide strong phylogenetic evidence for bacterial origin of the OSK domain. The results are robust across multiple alignment methods (C64), and the specific bacterial clades identified (C74, C75) are biologically plausible as they include known insect symbionts, strengthening the HGT hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "c42bd6c7-e6f6-4a01-b14c-89bc15eb628c",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Statistical topology testing using the SOWH test formally rejected alternative phylogenetic hypotheses requiring domain-of-life monophyly or eukaryotic monophyly, providing statistical support for the HGT-supporting topology where OSK sequences are nested within bacterial sequences rather than forming an outgroup.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 describe rigorous statistical hypothesis testing that formally rejects alternative explanations. The SOWH test is an appropriate method for comparing phylogenetic topologies, and the significant p-values (0.002 and 0.009) provide strong statistical support for the HGT hypothesis over vertical inheritance scenarios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "1d2745d4-c970-4e2f-b53a-5a8f8f595590",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors conclude that oskar arose de novo via fusion of eukaryotic (LOTUS) and prokaryotic (OSK) sequences through horizontal gene transfer from an ancient arthropod germ line endosymbiont, approximately 500 million years ago before major insect diversification. This represents a novel mechanism by which HGT can generate genes with entirely novel domain structures that may facilitate evolution of novel developmental mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C48, C77-C79, C89-C91 represent the main conclusions synthesizing all phylogenetic and sequence analyses. The HGT hypothesis is well-supported by the phylogenetic data (nested within bacteria, not sister to bacteria), the biological plausibility (known germ line symbionts), and the timing inference based on insect phylogeny. However, C91 includes speculative language ('may facilitate') which is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "60ff70ea-0092-4927-a823-15300889d62e",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors observe that Dipteran Osk LOTUS domains cluster separately from other insect Osk LOTUS domains and speculate this may be related to evolution of the Long Oskar domain, which appears to be a Dipteran novelty. Among 17 Dipteran oskar genes examined, seven possess a Long Osk domain and cluster into two clades.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C60 describe an interesting phylogenetic pattern but the explanation is explicitly speculative (C59). While the observation is data-supported (C60), the mechanistic connection between Long Oskar evolution and LOTUS domain clustering lacks direct evidence and remains a hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors provide background on oskar as a novel gene with unknown origin that is necessary and sufficient for germ plasm assembly in insects. Its discovery across different insect orders (Diptera, Hymenoptera, Orthoptera) revised hypotheses about its evolutionary age and functional origins, establishing it as at least 350 million years old with a germ plasm role that is derived rather than ancestral.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C37 provide well-cited background establishing the biological context and prior knowledge about oskar. The evolutionary history is supported by multiple citations to primary literature (Lynch et al. 2011, Ewen-Campen et al. 2012, 2013, Abouheif 2013), and the functional importance is well-established (C24, C36).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "198c3295-617d-46bf-9b9a-b7deac46b061",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors review general principles of novel gene evolution, including origins via duplication, de novo processes, and horizontal gene transfer. They note that while novel genes can drive phenotypic change and integrate into conserved networks, the developmental and evolutionary significance of novel genes, particularly those arising via HGT, remains understudied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C22 provide well-cited background on novel gene evolution from the literature. Each claim is supported by appropriate citations to review articles and primary research. This establishes the conceptual framework and knowledge gaps that motivate the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    },
+    {
+      "id": "5e097427-56e8-4801-9173-6a73a92d84fb",
+      "content_id": "9e359ea6-bd26-492b-ad11-699798271fe1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors discuss the broader implications of their findings, noting that while novel genes might be expected to disappear rapidly, they can become essential and contribute to phenotypic diversity. HGT from bacteria to insects has been documented for various adaptive phenotypes, and oskar's role in Holometabola (nearly one million species) likely represents the mechanism underlying evolution of germ plasm-based germ line specification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C88 synthesize the implications of the findings within the broader context of novel gene evolution and HGT. The claims are well-supported by citations and represent reasonable inferences from the data presented. The connection to Holometabola evolution (C87) is appropriately qualified as 'likely' given the correlative nature of the evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:21:19.033266Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f3ef1938-3af6-49c5-b325-84c6966499d3",
+      "result_id": "5ccd2864-85f9-4bb8-922a-f2d046034840"
+    },
+    {
+      "claim_id": "6c95cbd7-752c-4478-94cc-6be41b9ef885",
+      "result_id": "5ccd2864-85f9-4bb8-922a-f2d046034840"
+    },
+    {
+      "claim_id": "2dcca83f-ab6b-49f3-be90-4b0693a20125",
+      "result_id": "5ccd2864-85f9-4bb8-922a-f2d046034840"
+    },
+    {
+      "claim_id": "98d0d926-5ece-43f7-b412-570cdbe3e8af",
+      "result_id": "5ccd2864-85f9-4bb8-922a-f2d046034840"
+    },
+    {
+      "claim_id": "26029221-9841-434e-a5fd-15d4e93d2d51",
+      "result_id": "5ccd2864-85f9-4bb8-922a-f2d046034840"
+    },
+    {
+      "claim_id": "0343eea7-7068-4b10-9a2b-d3693e113ff3",
+      "result_id": "5ccd2864-85f9-4bb8-922a-f2d046034840"
+    },
+    {
+      "claim_id": "a5da8e7d-fd0f-4dd3-9c7d-6b62c6d4868c",
+      "result_id": "5ccd2864-85f9-4bb8-922a-f2d046034840"
+    },
+    {
+      "claim_id": "d80f9253-23eb-462f-8539-79e711d0ae13",
+      "result_id": "5ccd2864-85f9-4bb8-922a-f2d046034840"
+    },
+    {
+      "claim_id": "86c16e3b-880e-4885-8ac2-b48ce849f5a1",
+      "result_id": "5ccd2864-85f9-4bb8-922a-f2d046034840"
+    },
+    {
+      "claim_id": "71c229a1-cf01-4b22-b977-8d1ecd94bfa4",
+      "result_id": "5ccd2864-85f9-4bb8-922a-f2d046034840"
+    },
+    {
+      "claim_id": "3ccebe4b-02c9-4e59-a769-edac0ad37ed2",
+      "result_id": "05226635-a66a-4a46-a468-4b0e53ce4aec"
+    },
+    {
+      "claim_id": "76dfda4d-acdd-43a3-855e-1ec0908090fa",
+      "result_id": "05226635-a66a-4a46-a468-4b0e53ce4aec"
+    },
+    {
+      "claim_id": "d8331590-0981-4dbc-bbe2-4413b4d650b9",
+      "result_id": "05226635-a66a-4a46-a468-4b0e53ce4aec"
+    },
+    {
+      "claim_id": "87b7a663-8c19-4d1a-88d1-42df7aba5e00",
+      "result_id": "05226635-a66a-4a46-a468-4b0e53ce4aec"
+    },
+    {
+      "claim_id": "160024b4-7308-499c-8848-ab729403851c",
+      "result_id": "05226635-a66a-4a46-a468-4b0e53ce4aec"
+    },
+    {
+      "claim_id": "0ab3e3c6-5d0c-45bb-a26b-74e3625289f2",
+      "result_id": "05226635-a66a-4a46-a468-4b0e53ce4aec"
+    },
+    {
+      "claim_id": "f45e62c4-4905-4803-aa10-061f7088de39",
+      "result_id": "05226635-a66a-4a46-a468-4b0e53ce4aec"
+    },
+    {
+      "claim_id": "f4e11e48-fd5c-4a90-8817-fe6f356a95b1",
+      "result_id": "05226635-a66a-4a46-a468-4b0e53ce4aec"
+    },
+    {
+      "claim_id": "89b4a33c-6775-484a-98a4-f96dc4b61547",
+      "result_id": "05226635-a66a-4a46-a468-4b0e53ce4aec"
+    },
+    {
+      "claim_id": "12860805-560a-47a9-b308-b8aaeaa609d0",
+      "result_id": "05226635-a66a-4a46-a468-4b0e53ce4aec"
+    },
+    {
+      "claim_id": "410c91bd-e1ab-4d1b-8cde-688dc607d0dc",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "1ebe4b61-c338-445a-84c4-710d497fdd2a",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "e9c2e8c9-1f1f-4207-926f-bb9af69b57e3",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "4b020682-febd-455c-a2fb-80602f12c684",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "8f2515ee-cafd-49a7-aa18-8a486e3b5f2d",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "416f6398-d844-4be0-8236-1768abb11590",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "e93be955-cb1b-49a3-a27b-ab671fd1468a",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "c32d49da-c0d1-4a65-acec-99654d420894",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "ece4a79b-0cff-4c11-a4fa-0d90469220d4",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "c334134d-d008-475b-9541-006acb14069b",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "cbbd948b-9637-4613-b507-391f6df2ebae",
+      "result_id": "5bb9491e-26d1-41d2-be82-8dd1632c235b"
+    },
+    {
+      "claim_id": "2b779a14-47d1-45b2-9ca7-3ea447de9863",
+      "result_id": "c42bd6c7-e6f6-4a01-b14c-89bc15eb628c"
+    },
+    {
+      "claim_id": "46c77bbb-c372-4127-9c26-fd64cff8b746",
+      "result_id": "c42bd6c7-e6f6-4a01-b14c-89bc15eb628c"
+    },
+    {
+      "claim_id": "a80c737f-a88d-4aac-86e9-c92f62fa64dd",
+      "result_id": "c42bd6c7-e6f6-4a01-b14c-89bc15eb628c"
+    },
+    {
+      "claim_id": "3a4bdf49-a66b-45ac-89c7-497eaa3481a5",
+      "result_id": "1d2745d4-c970-4e2f-b53a-5a8f8f595590"
+    },
+    {
+      "claim_id": "9a9e352f-2377-4386-891c-74425364142a",
+      "result_id": "1d2745d4-c970-4e2f-b53a-5a8f8f595590"
+    },
+    {
+      "claim_id": "f369bfef-11b1-443c-803f-c7f9d9eed8a8",
+      "result_id": "1d2745d4-c970-4e2f-b53a-5a8f8f595590"
+    },
+    {
+      "claim_id": "115609df-857e-4754-a5e1-34879955c40d",
+      "result_id": "1d2745d4-c970-4e2f-b53a-5a8f8f595590"
+    },
+    {
+      "claim_id": "c2400848-08fb-49c8-b371-2e02332c74e8",
+      "result_id": "1d2745d4-c970-4e2f-b53a-5a8f8f595590"
+    },
+    {
+      "claim_id": "459eb6d3-24f1-434f-8409-e3102ba80f56",
+      "result_id": "1d2745d4-c970-4e2f-b53a-5a8f8f595590"
+    },
+    {
+      "claim_id": "3b20470a-32af-4de3-ba85-38ada417ba25",
+      "result_id": "1d2745d4-c970-4e2f-b53a-5a8f8f595590"
+    },
+    {
+      "claim_id": "36a2c215-e41b-4f65-8a0c-22d45e30bd50",
+      "result_id": "1d2745d4-c970-4e2f-b53a-5a8f8f595590"
+    },
+    {
+      "claim_id": "f9b50581-2439-45f1-8c4f-3319cec3d54d",
+      "result_id": "60ff70ea-0092-4927-a823-15300889d62e"
+    },
+    {
+      "claim_id": "d2c0ade1-2cf1-4220-a3cb-a722d36b309e",
+      "result_id": "60ff70ea-0092-4927-a823-15300889d62e"
+    },
+    {
+      "claim_id": "2f8d3398-94fb-475e-9139-a552f80fe59b",
+      "result_id": "60ff70ea-0092-4927-a823-15300889d62e"
+    },
+    {
+      "claim_id": "e7529ea4-0bd8-44a0-9c85-e759d9d882ec",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "b05b7599-ba9c-4f2a-9ba6-260e80d10596",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "4100f762-34bd-44d3-af53-2a7db0d03674",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "ee9f260d-f47c-4cd2-aced-f2516477feff",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "28664278-723f-4ff2-968f-9b8696331a20",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "a8ecfb5c-5971-41c7-ba13-43e21cf896fe",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "53e833ec-3bb0-4bc5-95b2-426c808443a3",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "afdd9b14-6637-483e-b5b3-b880cc213458",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "a974b24e-038a-4bef-b8de-8f04ab941c38",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "5a4c0729-5d07-4017-801a-cba03088dab9",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "dda72716-75ff-4f8a-92d3-4e18540c397e",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "f1dd5f06-193a-4026-b521-d0afd9ab9628",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "eea580aa-dc19-493b-ae7d-5f9b028d49c5",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "1e99959b-81c4-4b81-bc65-d070b5706bf3",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "05b35728-52c6-4000-899d-08e3873d39df",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "f0233da7-b360-406b-af51-10cfe7ced1f5",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "88e38eb8-44d9-45a3-9bd7-304e41854693",
+      "result_id": "3c2eee15-f109-40ea-b55a-2e72df9e76b1"
+    },
+    {
+      "claim_id": "2d8bd349-d7b3-482f-bf08-7041918dc330",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "d3bfcb17-74fe-4fda-879d-34171233bde6",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "d99c34ab-1374-4857-bc4d-e3ca1c36fb2e",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "661a8bb3-c25c-4b89-ba20-b8feaab86538",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "0b3d13f9-8192-4aab-bb7c-cff7e0ea89b0",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "e75ef217-542e-4630-8376-79acbcc39a2c",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "16a99064-8718-4fb5-be4f-af53a0f4f649",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "bf1631d6-825f-402b-92ce-edf876fc28b2",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "49f07ac0-66a4-4826-bac8-9e31aa166401",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "3d9d4a46-1c70-440a-a043-55341137662d",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "596152dd-30b1-4b60-a821-b32214b19b1a",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "f5cfdf4d-aa52-40ff-9a3b-9a856d888a6c",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "342d948c-8306-4f39-8bff-73ac9ab825d5",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "7b4994a2-8425-4710-8209-1c7ee83a8d90",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "07fcdd5b-7105-4e1c-808d-1a29b5e87bd0",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "1bb2326e-9ef3-4ae1-9389-5289f3972199",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "2b406d20-fa52-4d10-93e2-45405bbd2e18",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "df696512-1140-496a-b57f-0fd2922c8eaf",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "709810d9-6d4d-4981-9923-1aa5309073e3",
+      "result_id": "198c3295-617d-46bf-9b9a-b7deac46b061"
+    },
+    {
+      "claim_id": "e4d0a102-83b8-4558-9860-bb156e2ec99b",
+      "result_id": "5e097427-56e8-4801-9173-6a73a92d84fb"
+    },
+    {
+      "claim_id": "0d6c014a-478d-4052-89b5-09c39c8710a1",
+      "result_id": "5e097427-56e8-4801-9173-6a73a92d84fb"
+    },
+    {
+      "claim_id": "79532e4a-7ba6-4aff-a897-1e8697b409a0",
+      "result_id": "5e097427-56e8-4801-9173-6a73a92d84fb"
+    },
+    {
+      "claim_id": "6017f374-fc57-4bcf-aae6-36bfb44ff8f8",
+      "result_id": "5e097427-56e8-4801-9173-6a73a92d84fb"
+    },
+    {
+      "claim_id": "dea34e67-4b82-451c-9432-4ef7b67fb8bc",
+      "result_id": "5e097427-56e8-4801-9173-6a73a92d84fb"
+    },
+    {
+      "claim_id": "a2d5d84e-7fd5-4108-8ae4-64efedb13ecf",
+      "result_id": "5e097427-56e8-4801-9173-6a73a92d84fb"
+    },
+    {
+      "claim_id": "f8d39339-d60b-47f1-9927-585a05272782",
+      "result_id": "5e097427-56e8-4801-9173-6a73a92d84fb"
+    },
+    {
+      "claim_id": "e9e638d4-ba10-4a56-8e7d-13fa01b1461b",
+      "result_id": "5e097427-56e8-4801-9173-6a73a92d84fb"
+    },
+    {
+      "claim_id": "6290f159-d6f3-4389-bbbe-b639a80b5627",
+      "result_id": "5e097427-56e8-4801-9173-6a73a92d84fb"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2179 @@
+{
+  "submission": {
+    "id": "ea436dca-ee86-4352-8910-580d3ccad50a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:06:45.969476Z",
+    "updated_at": "2025-12-02T19:06:45.969476Z"
+  },
+  "content": [
+    {
+      "id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "submission_id": "ea436dca-ee86-4352-8910-580d3ccad50a",
+      "content_type": "manuscript",
+      "content_text": "# A large effective population size for established within-host influenza virus infection\n\n## Authors\n\n- Casper K Lumby<sup>1</sup> ([ORCID: 0000-0001-8329-9228](https://orcid.org/0000-0001-8329-9228))\n- Lei Zhao<sup>1</sup>\n- Judith Breuer<sup>2</sup>\n- Christopher JR Illingworth<sup>1</sup> ([ORCID: 0000-0002-0030-2784](https://orcid.org/0000-0002-0030-2784)) \u2020\n\n### Affiliations\n\n1. Department of Genetics, University of Cambridge Cambridge United Kingdom\n2. Great Ormond Street Hospital London United Kingdom\n3. Division of Infection and Immunity, University College London London United Kingdom\n4. Department of Applied Mathematics and Theoretical Physics, University of Cambridge Cambridge United Kingdom\n5. Department of Computer Science, Institute of Biotechnology, University of Helsinki Helsinki Finland\n\n\u2020 Corresponding author\n\n## Abstract\n\nStrains of the influenza virus form coherent global populations, yet exist at the level of single infections in individual hosts. The relationship between these scales is a critical topic for understanding viral evolution. Here we investigate the within-host relationship between selection and the stochastic effects of genetic drift, estimating an effective population size of infection Ne for influenza infection. Examining whole-genome sequence data describing a chronic case of influenza B in a severely immunocompromised child we infer an Ne of 2.5 \u00d7 107 (95% confidence range 1.0 \u00d7 107 to 9.0 \u00d7 107) suggesting that genetic drift is of minimal importance during an established influenza infection. Our result, supported by data from influenza A infection, suggests that positive selection during within-host infection is primarily limited by the typically short period of infection. Atypically long infections may have a disproportionate influence upon global patterns of viral evolution.\n\n## Introduction\n\nThe evolution of the influenza virus may be considered across a broad range of scales. On a global level, populations exhibit coherent behaviour (Buonagurio et al., 1986; Fitch et al., 1997; Bedford et al., 2015), evolving rapidly under collective host immune pressure (Ferguson et al., 2003; Grenfell et al., 2004). On another level, these global populations are nothing more than very large numbers of individual host infections, separated by transmission events.\n\nDespite the clear role for selection in global influenza populations, recent studies of within-host infection have suggested that positive selection does not strongly influence evolution at this smaller scale (Debbink et al., 2017; McCrone et al., 2018; Han et al., 2019). Contrasting explanations have been given for this, with suggestions either that selection at the within-host level is intrinsically inefficient, being dominated by stochastic processes (McCrone et al., 2018), or that while selection is efficient, a mismatch in timing between the peak viral titre and the host adaptive immune response prevents selection from taking effect (Han et al., 2019).\n\nTo resolve this issue, we evaluated the relative importance of selection and genetic drift during a case of influenza infection. The balance between these factors is determined by the effective size of the population, denoted Ne. If Ne is high, selection will outweigh genetic drift, even where differences in viral fitness are small (Rouzine et al., 2001). By contrast, if Ne is low, less fit viruses are more likely to outcompete their fitter compatriots.\n\nEstimating Ne is a difficult task, with a long history of method development in this area (Wright, 1938; Wang et al., 2016; Khatri and Burt, 2019). A simple measure of Ne may be calculated by matching the genetic change in allele frequencies in a population with the changes occurring in an idealised population evolving under genetic drift (Kimura and Crow, 1963). However, such estimates are vulnerable to distortion, for example being reduced by the effect of positive selection in a population. Where the global influenza A/H3N2 population is driven by repeated selective sweeps (Fitch et al., 1991; Rambaut et al., 2008; Strelkowa and L\u00e4ssig, 2012) a neutral estimation method suggests a value for Ne not much greater than 100 (Bedford et al., 2010). While methods for jointly estimating Ne and selection exist, they are limited in considering only a few loci in linkage disequililbrium (Bollback et al., 2008; Feder et al., 2014; Foll et al., 2014; Terhorst et al., 2015; Rousseau et al., 2017). Non-trivial population structure can affect estimates (Laporte and Charlesworth, 2002); a growing body of evidence supports the existence of structure in within-host influenza infection (Lakdawala et al., 2015; Sobel Leonard et al., 2017a; Richard et al., 2018; Hamada et al., 2012). While careful experimental techniques can reduce sequencing error (McCrone and Lauring, 2016), noise from sequencing and unrepresentative sample collection combine (Illingworth et al., 2017), potentially confounding estimates of Ne in viral populations (Lumby et al., 2018). If Ne is high, any signal of drift can be obscured by noise.\n\nWe here estimate a mean effective population size for an established within-host influenza B infection using data collected from a severely immunocompromised host. While the viral load of the infection was not unusual for a hospitalised childhood infection (Wishaupt et al., 2017), an absence of cell-mediated immunity led to the persistence of the infection for several months (Lumby et al., 2020). Given extensive sequence data collected during infection, the reduced role of positive selection, combined with novel methods to account for noise and population structure, enabled an improved inference of Ne. The large effective size we infer suggests that selection acts in an efficient manner during an established influenza infection. Even in more typical cases, the influence of positive selection is likely to be limited only by the duration of infection.\n\n## Results and discussion\n\nViral samples were collected at 41 time points spanning 8 months during the course of an influenza B infection in a severely immunocompromised host (Figure 1A). Clinical details of the case, and the use of viral sequence data in evaluating the effectiveness of clinical intervention, have been described elsewhere (Lumby et al., 2020). After unsuccessful treatment with oseltamivir, zanamivir and nitazoxanide, a bone marrow transplant and favipiravir combination therapy led to the apparent clearance of infection. Apart from a single exception, biweekly samples tested negative for influenza across a period of close to two months. A subsequent resurgence of zanamivir-resistant infection was cleared by favipiravir and zanamivir in combination.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0CT values from viral samples collected over time indicate the viral load of the infection; a higher number corresponds to a lower viral load. Drug information, above, shows the times during which oseltamivir (green), zanamivir (yellow), nitazoxanide (blue) and favipiravir (purple) were prescribed. Black dots show samples from which viral sequence data were collected; gray dots show samples from which viral sequence data were not collected. The green box shows the window of time over which samples were analysed, preceding the use of favipiravir in January. The mean viral load (dashed horizontal line, red) was close to the mean reported for a set of samples from hospitalised children with influenza (dashed horizontal blue line) (Wishaupt et al., 2017). A black arrow shows the date of a bone marrow transplant (BMT). (B) A phylogeny of whole-genome viral consensus sequences identified two distinct clades in the viral population. Clade B featured three samples, distributed across the period of infection, with the remaining samples contained in Clade A. (C) Sub-consensus structure of the viral population inferred via a haplotype reconstruction algorithm using data from the neuraminidase segment. The same division of sequences into two clades is visible, with samples being comprised of distinct viral genotypes. The area of each circle is proportional to the inferred frequency of the corresponding haplotype in the viral population. Haplotypes reaching a frequency of at least 10% in at least one time point are shown. Multiple drugs were administered to the patient through time, with a favipiravir/zanamivir combination first causing a temporary reduction of the population to undetectable levels, then finally clearing the infection. Haplotypes spanned the loci 96, 170, 177, 402, 403, 483, 571, 653, 968, 973, 1011, 1079, 1170, and 1240 in the NA segment. (D) Evolutionary relationship between the haplotypes; clade B is distinct from and evolves away from those sequences comprising the initial infection. Numbers refer to the distinct haplotypes identified within the population.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u00a0Sub-consensus structure of the viral population inferred via a haplotype reconstruction algorithm using data from the haemagglutinin segment. A division of sequences into two clades is visible, with samples including largely distinct viral genotypes. The area of each circle is proportional to the amount of virus in each clade. Haplotypes reaching a frequency of at least 10% in at least one time point are shown. Haplotypes spanned the loci 258, 261, 364, 451, 521, 541, 635, and 641 in the HA segment. (B) Evolutionary relationship between the haplotypes; clade B is distinct from and evolves away from those sequences comprising the initial infection. Numbers refer to the distinct haplotypes identified within the population.\n\nPhylogenetic analysis of whole-genome viral consensus sequences showed the existence of non-trivial population structure, with at least two distinct clades emerging over time (Figure 1B, Figure 1\u2014figure supplement 1); we term these clades A and B. Having diverged, the two clades persisted across several months of infection. Haplotype reconstruction showed that samples from clade B were comprised of distinct viral haplotypes to those from clade A; similar patterns were observed in different viral segments (Figure 1\u2014figure supplement 2). The October 4th sample is intermediate between the initial and final samples collected (Figure 1D). We suggest that, from a common evolutionary origin, Clade B slowly evolved away from the initial consensus, while viruses in clade A stayed close in sequence space to this consensus. The cladal structure suggests the existence of spatially distinct viral populations in the host, samples stochastically representing one population or the other.\n\nTo estimate the effective population size, we analysed genome-wide sequence data from samples in clade A collected before first use of favipiravir. A method of linear regression was used to quantify the rate of viral evolution, measuring the genetic distance between samples as a function of increasing time between dates of sample collection. We inferred a rate equivalent to 0.051 substitutions per day (97.5% confidence interval 0.034 to 0.068) (Figure 2A), equivalent to 7.94 substitutions genome-wide across 157 days of evolution. The vertical intercept of this line provides an estimate of the contribution of noise to the measured distance between samples, potentially arising from sequencing error or undiagnosed population structure. The identified value of close to 40 substitutions is equivalent to a between-sample allele frequency difference of approximately +/-\u00a00.3% per locus. While considerable noise affects each sample, the dataset as a whole provides a clear signal of evolutionary change.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Computed rate of evolution for viruses in clade A up to the time of the first use of favipiravir. The distance between two sequences is calculated as the total absolute difference in four-allele frequencies measured across the genome. The calculated rate per generation is based upon a generation time for influenza of 10 hours (Nobusawa and Sato, 2006). (B) Distribution of evolutionary distances in influenza populations simulated using a Wright-Fisher model compared to the distance per generation calculated in the regression fit. A solid blue line shows the mean, with shading indicating an approximate 97.5% confidence interval around the mean. Statistics were calculated from sets of 400 simulations conducted at each value of Ne. The dashed black line shows the rate of evolution of the real population; gray shading shows a 97.5% confidence interval for this statistic. (C) Calculated rate of evolution for viruses in clade B. For the purposes of calculating a rate of evolution the first sample collected from the patient was included as part of clade B. (D) Estimation of Ne for clade B. The results of simulations shown here are identical to those in part B of the figure.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The consensus glutamate nucleotide (blue) was sometimes replaced by glycine (green), valine (yellow), and alanine (red). Glycine and alanine are associated with zanamivir resistance in influenza B.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A)\u00a0Comparison of rates of synonymous and non-synonymous evolution for viruses in clade A up to the time of the administration of favipiravir. The distance between two samples is calculated as the mean absolute difference in allele frequency, as averaged over synonymous and non-synonymous positions in the genome. (B) Comparison of rates of synonymous and non-synonymous evolution for viruses in clade (B) The rate of evolution in both clades was slower at non-synonymous sites than at synonymous sites, suggesting a general pattern of purifying selection at non-synonymous sites. Change in the population was not as a whole driven by positive selection.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Patients are denoted with the letters assigned them in the original study (Xue et al., 2017). Rates of evolution within each patient were calculated by linear regression, conducted on a plot of evolutionary versus temporal distance between samples. The inferred regression line is shown in red for each dataset. For Patient W samples collected at two time points appear as outliers in the distance plot; distances involving these samples, shown in yellow, were excluded from the calculation. Accompanying plots show distances inferred via simulation compared to the inferred rates. A solid blue line shows the mean, with shading indicating an approximate 97.5% confidence interval around the mean. Statistics were calculated from sets of 400 simulations conducted at each value of Ne.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Allele frequencies from across the genome are sorted and shown on a log scale.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Samples in this dataset were split following RNA extraction with replicate sets of RNA being processed and sequenced independently. Variants at higher frequencies were identified at more consistent frequencies than variants at lower frequencies.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** V indicates the identification of a variant, while X indicates the non-identification of a variant. Combinations of V and X indicate observations made in two replicate samples.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** While high frequency variants were very reliably identified, the reliability of identifying variants was significantly impaired at lower frequencies.\n\nA simulation based analysis, measuring the extent of evolution in idealised Wright-Fisher populations (Kimura and Crow, 1963), inferred an effective population size of 2.5 \u00d7 107 (95% confidence range 1.0 \u00d7 107 to 9.0 \u00d7 107) for viruses in clade A before the use of favipiravir (Figure 2B). This value is substantially larger than estimates made recently for within-host HIV infection (Pennings et al., 2014; Rouzine et al., 2014), and suggests that even weak selection could easily overcome genetic drift. Data from clade B gave a lower estimated value of 2 \u00d7 106, (95% confidence range 4 \u00d7 105 to 2 \u00d7 108) perhaps reflecting the less frequent observation of samples in that clade (Figure 2C,D), and the bottleneck induced by favipiravir, which was spanned by the data used in this calculation.\n\nOur value of Ne is representative of the population after the initial establishment of infection; the initial expansion of the viral population was not represented in our data. Population structure during the infection might have lowered the value we obtain (Whitlock and Barton, 1997). The partial onset of zanamivir resistant alleles (Jackson et al., 2005), sporadically observed at intermediate frequency in clade A after the administration of the drug (Figure 2\u2014figure supplement 1), is suggestive of sampling a random mixture of viruses from resistant and susceptible subpopulations.\n\nOur method equates change in a population with genetic drift (Kimura and Crow, 1963), neglecting the role of selection. As such, the influence of positive selection might have led us to underestimate Ne. While viral evolution was generally not driven by selection (Figure 2\u2014figure supplement 2), positive selection (e.g. for zanamivir resistance) would increase the rate of viral evolution, lowering our inferred value. Selection may have influenced the division between clades, perhaps through the adaptation of the virus to specific local environments. Purifying selection may also have influenced the population in ways not accounted for by our method. Yet our result is clear. Once an infection is established, selection will dominate the stochastic effects of drift upon within-host evolution.\n\nThe dataset we considered is particularly suited to our calculation. The long period of infection combined with frequent sampling allowed for the characterisation of a slow rate of evolution amidst population structure and noise in the data. Further, the absence of strong selection reduced the error in our inference approach, which assumed an idealised neutral population. To provide further validation we repeated our approach on data describing long-term influenza A/H3N2 infection in four immunocompromised adults (Xue et al., 2017). The estimates for Ne we obtained, of between 3 \u00d7 105 and 1 \u00d7 106 (Figure 2\u2014figure supplement 3), while high, were smaller than for our flu B case, potentially being reduced by an increased influence of selection.\n\nWe believe that our study provides a first realistic estimate of within-host effective population size for severe influenza infection in humans. The viral load in the influenza B case was high, representative of hospitalised cases of childhood influenza infection. However, the magnitude of our inferred effective size, of order 107, suggests that selection will predominate over drift even in more typical cases. Mean CT values for influenza in non-hospitalised children have been reported as around 10 units lower than those for hospitalised cases (Wishaupt et al., 2017); an order of magnitude calculation suggests an Ne, upon the establishment of infection, of approximately 104 in such cases. Such a value again reflects an established population, not accounting for the initial population bottleneck. It has the implication that the evolution of a measurable variant (i.e. at a frequency of 1% or above) will be dominated by selection of a magnitude of 1% or greater per generation (Rouzine et al., 2001).\n\nOur result supports the idea that a tight transmission bottleneck (McCrone et al., 2018; Valesano, 2020; Ghafari et al., 2020)\u00a0followed by a short period of infection is sufficient to explain the observed lack of within-host variation in typical cases of influenza (Debbink et al., 2017; McCrone et al., 2018); the stochastic effects of genetic drift do not limit the impact of positive selection. Variants arising through de novo mutation would require strong selection to reach a substantial frequency during infection (Zhao et al., 2019), particularly if the onset of selection is delayed (Miao et al., 2010; Illingworth et al., 2014; Morris, 2020). We suggest that, while not being confounded by drift, selection does not usually have time to fix novel variants in the population, exceptions including the emergence of antiviral resistance and some cases of longer infection (Xue et al., 2017; Gubareva et al., 1998; Snydman, 2006; Centers for Disease Control and Prevention (CDC), 2009; Imai et al., 2020; Rogers et al., 2015).\n\nOur result highlights the potential importance of longer infections in the adaptation of global influenza populations, particularly where some adaptive immune response remains. A newly emergent variant under strong positive selection increases faster than linearly in frequency (Haldane, 1924). Given a large Ne, implying efficient selection, additional days of infection will have a disproportionate influence upon the potential transmission of adaptive variants. This does not imply that longer infections are the sole driving force behind global viral adaptation; selective effects affecting viral transmissibility (Lumby et al., 2018) would provide an alternative explanation. However, our work suggests that longer-term infections may be an important area of study in the quest to better understand global influenza virus evolution.\n\n## Materials and methods\n\n### Summary\n\nIn a single-locus haploid system, the expected change in a variant allele with frequency q caused by genetic drift is given by the formula (Charlesworth, 2009)\n\n$$\n\u0395\u0394q=\\sqrt{\\frac{q(1-q)}{N_{e}}}\n$$\n\nThis fact has been exploited to evaluate the size of transmission bottlenecks in influenza infection, comparing statistics of genome sequence data collected before and after a transmission event (Poon et al., 2016; Sobel Leonard et al., 2017b). Such a calculation may be affected by noise in the sampling or sequencing of a population, particularly where the extent of noise outweighs the genuine change in a population (Lumby et al., 2018). Here we suggest that, given multiple samples from a population, an alternative approach is possible; we use this to derive a more robust estimate of Ne. By means of evolutionary simulations we estimate Ne for cases of within-host influenza infection.\n\n### Sequence data and bioinformatics\n\nSequence data describing the evolution of the infection was generated as part of a previous study (Lumby et al., 2020). Data, edited to remove human genome sequence data, have been deposited in the Sequence Read Archive with BioProject ID PRJNA601176. The HCV data used in validating the sequencing pipeline (see below) were previously deposited in the Sequence Read Archive with BioProject ID PRJNA380188. Processed files describing raw variant frequencies for both datasets are available, along with code used in this project, at https://github.com/cjri/FluBData (copy archived at https://github.com/elifesciences-publications/FluBData;\u00a0Illingworth, 2020a).\n\nShort-read data were aligned first to a broad set of influenza sequences. Sequences from this set to which the highest number of reads aligned were identified and used to carry out a second short-read alignment. The SAMFIRE software package was then used to filter the short-read data with a PHRED score cutoff of 30, to identify consensus sequences, and to calculate the number of each nucleotide found at each position in the genome. SAMFIRE is available from https://github.com/cjri/samfire\u00a0(Illingworth, 2020b).\n\n### Calculation of evolutionary distances\n\nVariant frequencies at different time points during infection were used to calculate a rate of change in the population over time. We define q(t) as a 4 x L element vector describing the frequencies of each of the nucleotides A, C, G, and T at each locus in the viral genome at time t. We next define a distance between vectors q. Considering a single locus in the genome, we calculate the change in allele frequencies over time via a generalisation of the Hamming distance\n\n$$\ndq_{i}t_{1},q_{i}t_{2}=\\frac{1}{2}\\suma\u03f5A,C,G,Tq_{i}^{a}t_{1}-q_{i}^{a}t_{2}\n$$\n\nwhere the term inside the sum indicates the absolute difference between the frequency of allele a at locus i. The statistic di is equal to one in the case of a substitution, for example where only A nucleotides are observed in one sample and only G nucleotides in another. However, in contrast to the Hamming distance it further captures smaller changes in allele frequencies, lesser changes producing values between zero and one, such that a change of a variant frequency from 45% to 55% at a two-allele locus would equate to a distance of 0.1, representing half of the sum of the absolute changes in each of the two frequencies. The total distance between the two vectors may now be calculated as\n\n$$\nDqt_{1},qt_{2}=\\sumidq_{i}t_{1},q_{i}t_{2}\n$$\n\nwhere the sum over i is conducted over all loci in the viral genome.\n\nSequence distances for non-synonymous and synonymous mutations were calculated in a similar manner, with the exception that distances were calculated over individual nucleotides rather than in a per-locus manner. We calculated\n\n$$\nD^{NS}qt_{1},qt_{2}=\\frac{1}{2A_{N,i}}\\suma,i\u03f5A_{N,i}q_{i}^{a}t_{1}-q_{i}^{a}t_{2}\n$$\n\nand\n\n$$\nD^{S}qt_{1},qt_{2}=\\frac{1}{2A_{S,i}}\\suma,i\u03f5A_{S,i}q_{i}^{a}t_{1}-q_{i}^{a}t_{2}\n$$\n\nwhere AN,i and AS,i are the sets of nucleotides a and positions i in the genome which respectively induce non-synonymous and synonymous changes in the consensus sequence. Synonymous and non-synonymous variants were identified with respect to influenza B protein sequences; a nucleotide substitution was defined as being non-synonymous if it induced a change in the coded protein in at least one viral protein sequence. By contrast to our primary distance measurement, values for synonymous and non-synonymous sites were calculated as mean distances per nucleotide, reflecting the differing numbers of each type of potential substitution in the viral genome.\n\n### Estimation of effective population size\n\nWe converted our measurements of sequence distance into an estimate of Ne by means of a simplified evolutionary model, assuming that all of the change in the population results from genetic drift. We first note the effect of error in measurements of the population upon our distance metric.\n\nWe suppose that at the time t, we make the observation:\n\n$$\nq^(t)=q(t)+e(t)\n$$\n\nwhere e is the error in measuring the population. Our definition of \u2018error\u2019 here is a broad one; we include both the potential for viral material in a single swab to not fully capture the entire viral diversity within the host and the potential for the sequencing pipeline to distort the composition of the material in the swab (Illingworth et al., 2017). In our distance calculation, we now have:\n\n$$\nD(q^(t_{1}),q^(t_{2}))=\\frac{1}{2}\\sumi\\suma\u03f5{A,C,G,T}|(q_{i}^{a}(t_{1})\u2212q_{i}^{a}(t_{2}))+((e_{i}^{a}(t_{1})\u2212e_{i}^{a}(t_{2}))|\n$$\n\nwhere the terms ei are locus-specific errors in the measurement of allele frequencies; we write this equation in the form:\n\n$$\nD(q^(t_{1}),q^(t_{2}))=D(q(t_{1}),q(t_{2}))+E(q(t_{1}),q(t_{2}))\n$$\n\nwhere E is the deviation incurred from the true distance.\n\nHere, given only two error-prone samples from a system, separation of the real population distance and the error term is impossible. However, given multiple samples, an approximate separation can be made. We here use linear regression to fit a model to the observed distances, fitting the model:\n\n$$\nD(q^(t_{i}),q^(t_{j}))\u2248k|t_{j}\u2212t_{i}|+E\n$$\n\nfor constant values k, approximating the rate of evolutionary change in the population per unit time, and E, approximating the mean amount of error in a measurement; here the term in vertical brackets is the absolute difference in time between samples i and j. This approach makes two approximations, which we believe to be either reasonable or possible to account for. Firstly, the model assumes that a linear model is appropriate to describe the change in the population over time; within our drift framework this is correct if the effective population size Ne is constant, and if the distribution of allele frequencies does not change over time. In our data, the consensus population declines approximately eight-fold (Lumby et al., 2020), then undergoes a bottleneck due to the influence of favipiravir; we infer a representative mean value of N, selecting for clade A only samples collected before the bottleneck. Secondly, our model assumes that the deviation from truth in our distance metric does not change in a manner that is systematically associated with the time between samples. Regarding the sequencing process we believe this to be correct in so far as a consistent sequencing pipeline was used throughout. Regarding within-host population structure we note in our data a divergence over time between samples from clade A and clade B, but split these samples to obtain distinct estimates of Ne for each clade. We note that large deviations from our model assumptions can be qualitatively identified by a poor fit between a simple regression model and the data.\n\nLinear regression was performed using the Mathematica 11 software package, using the same package to calculate a 97.5% confidence interval for the calculated gradient, k.\n\n### Wright-Fisher simulation\n\nWe next approximated the behaviour of our system using a Wright-Fisher model, re-writing the first component of Equation 9 as\n\n$$\nD(q(t_{1}),q(t_{2}))\u2248\u0394D(N_{e},q(t_{1}))|t_{2}\u2212t_{1}|\n$$\n\nHere \u0394D is a stochastic function describing the change in the population, measured according to the metric D, that arises from a single generation of genetic drift in a population with effective size Ne and initial allele frequencies q(t1). Regarding these allele frequencies we note that the distribution of minor allele frequencies across the genome was reasonably constant between samples for which a good read depth was achieved (Figure 2\u2014figure supplement 4; read depths for these data have previously been reported Lumby et al., 2020). To account for variance in these statistics we used different samples to initiate our simulations, reporting error bars across choices of q(t1).\n\nOur Wright-Fisher model simulated the evolution of the viral population for a single generation. Rates of evolution calculated from the sequence data were rates of change per day whereas a Wright-Fisher simulation gives an estimated rate of evolution per generation. We therefore scaled the former to match the experimentally ascertained estimate of 10 hr per generation for influenza B (Nobusawa and Sato, 2006).\n\nTo conduct a simulation we constructed a population of N viruses. Each simulated virus had a genome comprised of eight segments, each identical in length to the corresponding segment of the influenza B virus sampled from the patient. Observations from the clinical viral population were used to specify the genetic composition of the viral population at the beginning of the simulation. A simulated population of viral genomes was established. For each viral segment, a clinical sample was chosen at random. Nucleotide frequencies at each locus in the clinical sample (modified as described below) were used to generate a multinomial sample of viruses from the simulated population, assigning alleles to viruses in the simulated population according to the random sample. This step was repeated for each locus in the segment, with no intrinsic association between alleles at different loci. The sample collected on 30th November 2017 was excluded as a starting point from this analysis due to its low read depth; all other samples had a mean read depth in excess of 2000-fold coverage.\n\nSimulation of the population was conducted at the genome-wide level. We simulated a single generation of the evolution of our population under genetic drift, generating a random sample of N whole viral genomes from the population. Intra-segment recombination was assumed to be negligible (Boni et al., 2008), while reassortment between segments was neglected in line with evidence from cases of human infection (Sobel Leonard et al., 2017a). We collected allele frequency data from the initial and final populations, using these to calculate the distance in sequence space through which the population had evolved according to the modified Hamming distance described above.\n\nFor each population size tested, our simulation was run 400 times, using the data to produce a 97.5% confidence interval for the extent of evolutionary change at a given effective population size. For each of these 400 replicate simulations, an independent random set of samples was chosen to initiate each of the eight simulated viral segments. The extent of evolution of the real population was compared to the results from our simulated populations, giving an inference of the effective size of the viral population.\n\nAmendments were made to the above approach.\n\n### Accounting for false-positive variants in sequencing: Estimating a false positive rate\n\nThe evolutionary distance \u0394D(N,q(t1)) calculated by our method is dependent upon the vector of allele frequencies q. Given a greater number of polymorphic alleles in a system, the evolutionary distance, calculated as the sum of allele frequency changes, will also increase. While the experimental pipeline we used has been shown to perform well in capturing within-host viral diversity (STOP-HCV Consortium et al., 2016), the possibility remains that sequencing could contribute additional diversity to the initial populations used in our simulation. We therefore made an estimate of the extent to which our sequencing process led to the false identification of variants. To achieve this, we used data from a previous study describing the repeat sequencing of hepatitis C virus (HCV) samples from a host (Illingworth et al., 2017); data in this previous study were collected using the same sequencing pipeline as that used to collect the data considered here and therefore provide a generic measure of the level of false positive variation. The data we analysed, coded as HCV01 in the original study, comprised four clinical HCV samples, each of which was split following nucleic acid extraction. Some replicate samples were processed using a DNase depletion method before all samples went through cDNA synthesis, library preparation and sequencing. DNase depletion led to samples with lower read depth; we here compared sequence data collected from the non-depleted replicates of each sample. Variant frequencies within this dataset, where variation was observed in more than one sample, are shown in Figure 2\u2014figure supplement 5.\n\nConsidering the real viral sample, we note that at any given genetic locus, a minority variant either exists or does not exist according to some well-defined criterion. (For the moment the way in which variation is defined is not important; methods for defining variation, which include the use of a frequency threshold, are discussed later.) We denote the possible states of a locus as P and N, according to whether the locus is positive or negative for variation. We suppose that the probability that a random locus in the genome has a minority variant is given by PP, leading to the equivalent statistic PN\u00a0=\u00a01- PP.\n\nSequencing of a specific position in the genome results in the observation or non-observation of a variant. In our data we have sets of two replicate observations of each position in the genome, giving for each minority variant the possible outcomes VV, VX, XV, and XX, where V corresponds to the observation of a variant, and X corresponds to the non-observation of a variant. These observations contain errors; we denote the true positive, false positive, true negative and false negative rates of the variant identification process by PV|P, PV|N, PX|N, and PX|P respectively. In this notation, V|P indicates the observation of a variant conditional on the variant being a true positive.\n\nThe underlying purpose of our calculation is to remove falsely detected variation from the population. We begin by assuming that the false negative rate of detecting variants is equal to zero. That is, where we do not see a variant in the sequence data, we assume that a variant is never actually present. This is a conservative step in so far as we never add unobserved variation to the population. Our assumption gives the result that the false negative rate, PX|P = 0. In so far that a variant is never unobserved it follows that the true positive rate PV|P = 1.\n\nWe may now construct expressions for the probabilities of observing each of the four possible outcomes. Noting that PV|N + PX|N = 1 we obtain\n\n$$\nP_{VV}=P_{P}P_{V|P}^{2}+1-P_{P}P_{V|N}^{2}=P_{P}+1-P_{P}P_{V|N}^{2}\n$$\n\n\n\n$$\nP_{VX}=P_{XV}=P_{P}P_{X|P}P_{V|P}+1-P_{P}P_{X|N}P_{V|N}=1-P_{P}1-P_{V|N}P_{V|N}\n$$\n\n\n\n$$\nP_{XX}=P_{P}P_{X|P}^{2}+1-P_{P}P_{X|N}^{2}=1-P_{P}1-P_{V|N}^{2}\n$$\n\nThus the outcome probabilities may be expressed in terms of the underlying probability of a position having a variant, PP, and the false positive rate PV|N.\n\nWe next processed our sequence replicate data, considering only sites that were sequenced to a read depth of at least 2000-fold coverage. For each locus in a dataset, we calculated the observed frequency of each of the nucleotides A, C, G, and T, generating pairs which described these frequencies in each of our two replicate datasets. Removing pairs in which an allele has a frequency of more than 0.5 in either of the two datasets, we obtained a list of minority variants from each locus, generally comprising three allele frequency pairs per locus. If it is correct that two of the three minority alleles have very low frequencies, the frequencies are close to being statistically independent; the existence of a very few alleles of one minority type does not greatly affect the probability of another variant allele being observed in another read. We note that, of the more than 73 thousand sites sequenced, only 56, fewer than 0.1%, had more than one minority variant at a frequency greater than 1%. We proceeded on the assumption that each pair of minority frequencies was statistically independent of the others.\n\nFrom the repeated observations of sites, we may count the number of observations of each of the four outcomes; given a total of N pairs we denote these as NVV, NVX, NXV, and NXX. Under our model of independent pairs we constructed the multinomial log likelihood of the underlying variant and false positive rates.\n\n$$\nL(P_{P},P_{V|N})=log\u2061NN_{VV}N_{VX}N_{XV}N_{XX}P_{VV}^{N_{VV}}P_{VX}^{N_{VX}}P_{XV}^{N_{XV}}P_{XX}^{N_{XX}}\n$$\n\nwhere the terms Pab are constructed from PP and PV|N according to the equations above.\n\nGiven a set of paired observations, we calculated the maximum likelihood values of PP and PV|N. From these statistics we are able to calculate the positive predictive value of sequencing, namely the proportion of observed variants that are true positives. This is achieved by dividing the probability that a true positive was detected (equal to the number of true positives as PV|P = 1), by the probability that a variant was detected:\n\n$$\nPPV=\\frac{P_{P}}{P_{P}+(1-P_{P})P_{V|N}}\n$$\n\n### Frequency dependence of false-positive variant calling\n\nWithin our data, our expectation was that minority variants at higher allele frequencies would be more likely to be observed as variants in both replicate samples. We note that, where a frequency cutoff is applied to identify variants, care is required in the above protocol. For example, if a hard threshold was applied, in which variants were called at 1% frequency, a variant that was detected at frequencies of 1.01% and 0.99% would be regarded as having been observed in one case, and not observed in the other, although it likely represents a consistent observation.\n\nIn order to assess the frequency dependence of our true positive rate, we defined minimum and maximum variant frequency thresholds qmin and qmax, and denoted the replicate observations of a minority variant frequency as qA and qB in the two samples. We further defined the frequency qcut according to the formula:\n\n$$\nq^{cut}=min\u2061q^{min},max\u2061\\frac{q^{min}}{2},0.001\n$$\n\nWe then defined regions of frequency space as follows:\n\n$$\nVV:q^{A}\\geqq^{cut};q^{A}<q^{max};\u00a0q^{B}\\geqq^{cut};q^{B}<q^{max};\u00a0q^{A}+q^{B}\\geq\\frac{3q^{max}}{2};q^{A}+q^{B}<\\frac{3q^{max}}{2};\n$$\n\n\n\n$$\nVX:q^{min}\\leqq^{A}<q^{max};\u00a0q^{B}<q^{cut}\n$$\n\n\n\n$$\nXV:\u00a0q^{A}<q^{cut};\u00a0q^{min}\\leqq^{B}<q^{max}\n$$\n\n\n\n$$\nXX:q^{A}<q^{cut};\u00a0q^{B}<q^{cut};\u00a0q^{A}+q^{B}<\\frac{3q^{min}}{2}\n$$\n\nThese inequalities are illustrated in Figure 2\u2014figure supplement 6.\n\nIn the above, qcut functions to slightly harshen the criteria for detecting variants at low frequencies. If a variant is observed in one sample at frequency greater than qmin, then if qmin is greater than 0.2%, the frequency in the second sample had to be at least half qmin to be counted. If qmin was between 0.1% and 0.2%, the frequency in the second sample had to be at least 0.1%, while if qmin was less than 0.1%, the frequency in the second sample had to be at least qmin.\n\nFor different ranges of frequency values, qmin and qmax, the proportion of observed variants that were true positives was calculated according to the maximum likelihood method above, using these categorisations. Results are shown in Figure 2\u2014figure supplement 7. In the process of setting up the initial state of our Wright-Fisher simulation variants observed in the sequence data were considered in turn, drawing a Bernoulli random variable for each variant. Variants were included in the initial simulated population with probability equal to the proportion of observed variants that were estimated to be true positives.\n\n### Accounting for mutation-selection balance\n\nTo account for our neglect of mutation, a frequency cutoff was applied to our simulation data. Under a pure process of genetic drift, low-frequency variants in our population are likely to die out, reaching a frequency of zero. In a real population, this would not occur, variants being sustained at low frequencies by a balance of mutation and purifying selection (Haldane, 1937; Haigh, 1978). To correct for this we post-processed the initial and final frequency values from our simulations before calculating our distance, imposing a minimum minority allele frequency of 0.1%. All changes in allele frequency below this threshold were ignored, such that, for example, if a variant changed from 0.5% to 0%, this was processed after the fact so that the variant changed from 0.5% to 0.1%. The choice of threshold here is conservative; leading to a conservatively low estimate of Ne.\n\n### Confidence intervals\n\nConfidence intervals for the effective population size were calculated as the overlap of 97.5% confidence intervals for the evolutionary rates in the observed data, calculated from the regression for the real data, and estimated from the simulated statistics. The overlap of these values gives an approximate 95% confidence interval for Ne.\n\n### Variations in methodology\n\nA number of choices were made in our estimation of an effective population size. The effects of each of these choices were explored through further calculation and simulation. Results are shown in Supplementary file 1.\n\n### Approximations in the Wright-Fisher model\n\nIn the calculation to set up an initial viral population, the assignment of minority alleles to sequences becomes slow at large population sizes. Our code simulated viral genomes; a variant allele was included into the population by choosing an appropriate proportion of genomes to which the variant was assigned. For greater computational efficiency we used a pseudo-random approach for choosing genomes. Given a population size N, we generated a set P of prime numbers that were each larger than N. Given some desired allele frequency q we wish to choose qN genomes to which to assign the variant. We therefore calculated the set of numbers:\n\n$$\na^{k}(modp)\n$$\n\nwhere p is a prime number sampled at random from the set P, and a is a randomly chosen primitive root of p. Given this choice of a and p, the values ak (where k is an integer between one and p-1) form a pseudorandom permutation of the numbers from one to p-1. We constructed a set of qN genomes by choosing genomes indexed in turn by the elements of this set, beginning from k\u00a0=\u00a01, and discarding values greater than N.\n\nTo achieve calculations for population sizes larger than 107 we implemented a statistical averaging method. We generated a single population of size 106, then generated 200 outcomes of a single generation of the same size, recording allele frequencies in each case. In order to simulate a value of N of size r x 106 we compared the frequencies of the initial population to the mean frequencies of a random set of r outcomes. This is equivalent of simulating transmission from a population of size r x 106 in which the initial population contains r copies of each of one of 106 genotypes.\n\n### Phylogenetic analysis\n\nConsensus sequences of data were analysed using the BEAST2 software package (Bouckaert et al., 2014). Consensus sequences from each viral segment were concatenated then aligned using MUSCLE (Edgar, 2004) before performing a phylogenetic analysis on the whole genome sequence alignment. The B/Venezuela/02/2016 sequence was used to root the alignment, the haemagglutinin segment of this virus having been identified as being very close to those from the patient. Trees were generated using the HKY substitution model (Hasegawa et al., 1985). A Monte Carlo process was run for 10 million iterations, generating a consensus tree with TreeAnnotator using the first 10% of trees as burn-in. Figures were made using the FigTree package (http://tree.bio.ed.ac.uk/software/figtree/).\n\n### Haplotype reconstruction\n\nHaplotype reconstruction was performed using multi-locus polymorphism data generated by the SAMFIRE software package (Illingworth, 2016). Variant loci in the genome were identified as those at which a change in the consensus nucleotide was observed between the initial and the final consensus. The short-read data were then processed, converting reads into strings of alleles observed at these loci; a single paired-end read may describe alleles at none, one, or multiple loci. Next, these strings were combined using a combinatorial algorithm to construct a list of single-segment haplotypes, sufficient to explain all of the observed data; no frequencies were inferred at this point. Finally, a Dirichlet-multinomial model was used to infer the maximum likelihood frequencies of each haplotype given the data from each time point (Illingworth, 2015). Formally, we divided reads into sets, according to the loci at which they described alleles. A multi-locus variant consists of an observation of some specific alleles at the loci in question. By way of notation, we denote by $n_{i}^{a}$ the number of reads in set i which describe the multi-locus variant a, and denote the total number of reads in the set as Ni. Given a set of haplotypes with frequencies given by the elements of the vector q, we write as $q_{i}^{a}$ the summed frequencies of haplotypes that match each multi-locus variant a in set i. For example, the haplotypes ATA and ATG would both match the multi-locus variant AT- describing alleles at only the first two loci. We now express a likelihood for the haplotype frequencies:\n\n$$\n\u2112q=\\sumilog\u2061\\frac{\u0393(N_{i}+1)}{\\prod_{a}\u0393(n_{i}^{a}+1)}\\frac{\u0393(\\sum_{a}Cq_{i}^{a})}{\u0393(\\sum_{a}n_{i}^{a}+Cq_{i}^{a})}\\proda\\frac{\u0393(n_{i}^{a}+Cq_{i}^{a})}{\u0393(Cq_{i}^{a})}\n$$\n\nHere the parameter C describes the extent of noise in the sequence data, a lower value indicating a lower confidence in the sequence data. Haplotype reconstruction was performed by finding the maximum likelihood value of the vector of haplotype frequencies q. A value of C\u00a0=\u00a0200 was chosen for the calculation, representing a conservative estimate given the prior performance of the sequencing pipeline used in this study (Illingworth et al., 2017). In contrast to previous calculations in which an evolutionary model was fitted to data (Illingworth, 2015), haplotype frequencies for each time point and for each viral segment were in this case inferred independently, with no underlying evolutionary model.\n\n### Data describing influenza A/H3N2 infection\n\nOur analysis of data describing long-term influenza A/H3N2 infection was performed on data from a previous study (Xue et al., 2017). As our method does not require an exceptional quality of sequencing data to calculate a rate of evolution more samples were included in our analysis than were examined in the original study. Using the codes established in the previous study, we used samples from patient W from days 0, 7, 14, 21, 28, 56, 62, 69 and 76; from patient X from days 0, 7, 14, 21, 28, 42, and 72; from patient Y from days 0, 7, 14, 21, 28, 35, 48, 56, and 70; from patient Z from days 14, 15, 20, 25, 41, 48, 55, 62, and 69. An identical procedure to that used to estimate Ne from the influenza B data was applied, calculating a rate of evolution per day from sequence data, scaling this to a rate per generation (in this case a seven hour generation time was modelled [Nobusawa and Sato, 2006]), and then running simulations to estimate Ne. We note that the estimates of false positive rate generated for the influenza B data were applied equally in this case, due to not having equivalent data to re-estimate these values. Examining the data from patient W, our distance measurements suggested potential population structure involving the samples collected on days 62 and 69; these samples were excluded from our regression analysis.\n",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "ae376171-e837-4ea9-ae58-13794fe423da",
+      "submission_id": "ea436dca-ee86-4352-8910-580d3ccad50a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56915.sa1](https://doi.org/10.7554/eLife.56915.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript assesses the intra-host effective population size of influenza based on longitudinal deep sequencing data from a chronic influenza B infection. Using principles modeling and statistical approaches, the authors show that the short length of a typical influenza infection is the key limiting factor upon selection at the within-host level. The topic is important, as it sheds light on the interplay between the two scales of selection within- and between-host in shaping the evolution of influenza virus.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A large effective population size for within-host influenza virus infection\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Georgii A. Bazykin (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe manuscript presents a study on within-host population genetics of influenza virus and in particular, inference of effective population size during chronic infection in immunocompromised patients. The topic is important as it explores the interplay between the two scales of selection: within-host and between-host selection that shape the evolution of influenza. Based on the analysis of sequence polymorphism, authors infer a relatively large effective population size ~107 during chronic infection, in contrast to previously inferred values of ~102 or less during transmission and in acute infections. All of the reviewers agree that the findings in this manuscript are interesting and a large effective population would have significant implications for efficacy of selection during within-host evolution of influenza. However, there are still some concerns regarding methodology, interpretation and presentation of the results which we would like to see addressed.\n\nEssential revisions:\n\n1) Comparison between chronic and acute infections:\n\nThe authors analyzed data from chronic influenza infections and concluded that the effective population size of the virus is high, including during acute infections. For instance, the authors argue that \"the observed lack of within-host variation in typical cases of influenza can be explained by the short period of infection; the stochastic effects of genetic drift do not limit the impact of positive selection\". It is however not evident that the authors' estimates of effective population size from chronic infections apply to acute infections given the exponential increase and decrease of viral load that dominate the course of acute infections. In fact, it's not clear that effective population size is even a very useful concept in this case.\n\nAlso, McCrone et al., 2018, and Xue and Bloom, 2020, have both shown that within-host variation in acute infections is dominated by non-synonymous mutations, and Xue and Bloom, 2020, also document stop-codon mutations within acute infections that are rarely found at appreciable frequencies in chronic infections. These observations suggest that selection is inefficient within hosts in acute infections, contrary to the authors' claims.\n\nMoreover, McCrone et al. see radical changes in variant frequencies over the course of a few days (Figure 2E in that work) \u2013 but lineages in chronic infections (this work) persist for many months. If the authors think that Ne is comparable between acute and chronic infections, how do they explain the lack of diversity observed in acute infections? One way to explain this is to maintain a high Ne but with strong transmission bottleneck to impose stochasticity. But as point out above, \"Ne\" is really not a well-defined quantity in this case. Alternatively, could the difference imply a lower census size in acute infections, and if so, is this consistent with differences in viral load? This issue is important in view of the proposed relevance of high Ne for long-term influenza evolution (e.g., last phrase of the Abstract and the last phrase of the Introduction).\n\nOverall, the authors should acknowledge the differences between acute and chronic infections, and discuss their estimates in light of the previous observations. Moreover, it may also be helpful to revise the title to indicate that the manuscript focuses on chronic infections.\n\n2) High Ne is inferred from small drift and a small rate of \"substitutions\" (which under the authors' terminology also account for minor changes in allele frequencies). In other words, the authors are inferring a large Ne based on the longer-term coexistence of multiple lineages within a host. Therefore, it would be important that the manuscript also discusses alternative explanations that could lead to such patterns of polymorphism. Importantly, as Ne in the manuscript is inferred from a Wright-Fisher (WF) model, violations in the underlying assumptions of the model can bias the results. For example, one can imagine that demographic effects like population structure could be responsible for long-term coexistence and survival of lineages, e.g., if each of the samples represents a mixture of persistent subpopulations? The authors seem to suggest this by analyzing clades A and B separately, Results and Discussion, second paragraph. Alternatively, could balancing selection in the host be responsible for maintaining this polymorphism (seems unlikely, but still a formal possibility)? A discussion and/or analysis of such alternative scenarios would be useful in assessing the robustness of the manuscript's findings.\n\n3) Robustness of the analysis and proposed statistics:\n\na) It would be useful to have a clearer sense of the sensitivity of Ne to the cutoffs used. While a lot of care has gone into the choice, some diagrams showing the sensitivity of Ne to cutoff choice would better demonstrate the degree to which it is a function of low frequency variants in a straightforward way.\n\nb) To estimate how Ne affects changes in allele frequencies, the authors simulate a single generation of Wright-Fisher evolution using initial allele frequencies from a randomly selected sample from the infection. As the equation in the subsection \u201cSummary\u201d indicates, populations with high-frequency alleles will experience larger changes in allele frequency at a given effective population size, so the initial distribution of allele frequencies from this randomly chosen sample can have a major effect on the expected change in allele frequencies. The authors show in Figure 2\u2014figure supplement 1 that mutations can reach frequencies of 20-30% in neuraminidase, and in the influenza A patients analyzed in Figure 2\u2014figure supplement 3, many mutations reach these and even higher frequencies, particularly at later points in the infection. The authors should run their Wright-Fisher simulations with different initial allele frequencies to evaluate how this choice of allele frequencies may affect estimates of effective population size.\n\nc) The authors design statistic D to assess their estimation of Ne. This statistic is a sum of changes in variant frequencies across sites (subsection \u201cCalculation of evolutionary rates\u201d), which is then compared between data and Wright-Fisher simulations for different Ne values. The authors seem to suggest that D should be more robust to noise (subsection \u201cSummary\u201d), without providing any evidence. In particular, the authors should clearly state how the assumptions they made about recombination structure in WF simulation could impact the statistics D and the interpretation of the inferred Ne. From the manuscript it is not clear whether WF simulations are done at the site-wise, segment-wise, or genome-wise level, which would impact the correlation between changes in variant frequencies. For example, simulations done with high (free) recombination would expect a lower variance D compared to the case with strong linkage (data), for the same Ne. These points should be better clarified.\n\n4) In Figure 1A, it is clear (and the authors also mention) that the patient's viral load drops to undetectable levels for over a month of the infection, and viral load also varies substantially while the patient is continually infected. Effective population size and census population size are not always directly related, but the authors should discuss how changing population sizes affect their estimate of effective population size and whether a single effective population size is adequate to represent the infection.\n\n5) The authors calculate sequence distance between every pair of sequenced timepoints to reduce the influence of noise from sequencing error, but as a result, the points in Figure 2A are non-independent and may contribute to a tighter confidence interval around the evolutionary rate than is realistic. In particular, changes in variant frequencies that take place during the middle of the infection will be overcounted in these pairs and will disproportionately influence the overall estimate of evolutionary rates. When the authors estimate the evolutionary distance between consecutive timepoints and divide by the number of days between them, how well does the estimate correspond to the estimates in Figure 2? What is the variance in these estimates?\n\n6) The regression performed in Figure 2A, C, and analogous figures may be especially influenced by the few points at the right end of the distribution, which represent evolutionary distances between points spaced further apart in time. How robust is the estimate of evolutionary rate to removal of these points, or by calculation of evolutionary rate as suggested in comment 4?\n\n7) The authors chose to infer effective population size using variants and haplotypes on the neuraminidase and hemagglutinin segments. This is an odd choice since these regions tend to experience the strongest selection, which can strongly influence the estimates of effective population size. Selection can act on linked haplotypes across the genome in some cases, but have the authors tested to see if these results hold for other gene segments as well?\n\n8) Why are the effective population size estimates for the clade B samples calculated separately from the clade A samples? It's not evident from the SAMFIRE inference of haplotypes that clades A and B constitute separate subpopulations; it seems that they could be distinct genotypes in a well-mixed population as well, as might result from a coinfection.\n\n9) The authors assume the generation time of 10 hours per generation for influenza B. However, if generations are longer in immunocompromised individuals, the analysis would lead to an overestimation of Ne. Given that the main result in this manuscript is that Ne is high, this possibility should at least be discussed.\n",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1b7b4a29-07ea-415b-9564-015adfa79f5d",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C1",
+      "claim": "Viral samples were collected at 41 time points spanning 8 months during the course of an influenza B infection in a severely immunocompromised host.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral samples were collected at 41 time points spanning 8 months during the course of an influenza B infection in a severely immunocompromised host (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of time points and duration of sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "7d1c7d34-d3e0-4979-a8af-7bf8343b9191",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C2",
+      "claim": "After unsuccessful treatment with oseltamivir, zanamivir and nitazoxanide, a bone marrow transplant and favipiravir combination therapy led to the apparent clearance of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "After unsuccessful treatment with oseltamivir, zanamivir and nitazoxanide, a bone marrow transplant and favipiravir combination therapy led to the apparent clearance of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the treatment history and outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "353951a9-7f78-4cf3-92a7-43afc785ceee",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C3",
+      "claim": "Apart from a single exception, biweekly samples tested negative for influenza across a period of close to two months.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from a single exception, biweekly samples tested negative for influenza across a period of close to two months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the testing results during a specific period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "6140de72-9e1e-465a-80a5-1c2b0f75cd50",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C4",
+      "claim": "A subsequent resurgence of zanamivir-resistant infection was cleared by favipiravir and zanamivir in combination.",
+      "claim_type": "EXPLICIT",
+      "source": "A subsequent resurgence of zanamivir-resistant infection was cleared by favipiravir and zanamivir in combination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the final treatment outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "cde22931-437b-4a0f-860e-f86363f87d16",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C5",
+      "claim": "The mean viral load was close to the mean reported for a set of samples from hospitalised children with influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean viral load (dashed horizontal line, red) was close to the mean reported for a set of samples from hospitalised children with influenza (dashed horizontal blue line) (Wishaupt et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares the viral load to published data and shows this in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "96badd11-b25c-4d83-83b5-0964522031ed",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C6",
+      "claim": "Phylogenetic analysis of whole-genome viral consensus sequences showed the existence of non-trivial population structure, with at least two distinct clades emerging over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis of whole-genome viral consensus sequences showed the existence of non-trivial population structure, with at least two distinct clades emerging over time (Figure 1B, Figure 1\u2014figure supplement 1); we term these clades A and B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes phylogenetic analysis results shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "4892a6cd-fc85-45cb-a556-191cb90e7e80",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C7",
+      "claim": "Having diverged, the two clades persisted across several months of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Having diverged, the two clades persisted across several months of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the temporal persistence of the clades.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "b46b8730-5ec0-479b-9589-e4e0c48458db",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C8",
+      "claim": "Haplotype reconstruction showed that samples from clade B were comprised of distinct viral haplotypes to those from clade A.",
+      "claim_type": "EXPLICIT",
+      "source": "Haplotype reconstruction showed that samples from clade B were comprised of distinct viral haplotypes to those from clade A; similar patterns were observed in different viral segments (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes haplotype reconstruction results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "ddf8a2f8-ffcf-4566-b28f-58f70eb6a963",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C9",
+      "claim": "From a common evolutionary origin, Clade B slowly evolved away from the initial consensus, while viruses in clade A stayed close in sequence space to this consensus.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that, from a common evolutionary origin, Clade B slowly evolved away from the initial consensus, while viruses in clade A stayed close in sequence space to this consensus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the evolutionary patterns observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "4920484a-f091-493a-af10-0e214bee6ba2",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C10",
+      "claim": "The cladal structure suggests the existence of spatially distinct viral populations in the host, samples stochastically representing one population or the other.",
+      "claim_type": "EXPLICIT",
+      "source": "The cladal structure suggests the existence of spatially distinct viral populations in the host, samples stochastically representing one population or the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers population structure from the observed cladal patterns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "9ccf0214-531b-4bc4-8283-d74ed32fefaa",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C11",
+      "claim": "A method of linear regression was used to quantify the rate of viral evolution, measuring the genetic distance between samples as a function of increasing time between dates of sample collection.",
+      "claim_type": "EXPLICIT",
+      "source": "A method of linear regression was used to quantify the rate of viral evolution, measuring the genetic distance between samples as a function of increasing time between dates of sample collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the analytical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "bac667a7-6f38-42f4-bb64-ed430156bf29",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C12",
+      "claim": "The rate of viral evolution was inferred to be 0.051 substitutions per day (97.5% confidence interval 0.034 to 0.068).",
+      "claim_type": "EXPLICIT",
+      "source": "We inferred a rate equivalent to 0.051 substitutions per day (97.5% confidence interval 0.034 to 0.068) (Figure 2A), equivalent to 7.94 substitutions genome-wide across 157 days of evolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the calculated evolutionary rate with confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "4b3ac6fe-ad01-408e-a511-eb790c9f933d",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C13",
+      "claim": "The identified value of close to 40 substitutions is equivalent to a between-sample allele frequency difference of approximately +/- 0.3% per locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The identified value of close to 40 substitutions is equivalent to a between-sample allele frequency difference of approximately +/- 0.3% per locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the vertical intercept of the regression line.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "8c96f776-26bf-4546-871d-87896f29da5b",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C14",
+      "claim": "While considerable noise affects each sample, the dataset as a whole provides a clear signal of evolutionary change.",
+      "claim_type": "EXPLICIT",
+      "source": "While considerable noise affects each sample, the dataset as a whole provides a clear signal of evolutionary change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript assesses the quality of the evolutionary signal in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "128b01b0-4d43-48e0-88db-1e2f10d97626",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C15",
+      "claim": "A simulation based analysis inferred an effective population size of 2.5 \u00d7 10^7 (95% confidence range 1.0 \u00d7 10^7 to 9.0 \u00d7 10^7) for viruses in clade A before the use of favipiravir.",
+      "claim_type": "EXPLICIT",
+      "source": "A simulation based analysis, measuring the extent of evolution in idealised Wright-Fisher populations (Kimura and Crow, 1963), inferred an effective population size of 2.5 \u00d7 107 (95% confidence range 1.0 \u00d7 107 to 9.0 \u00d7 107) for viruses in clade A before the use of favipiravir (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the Ne estimate from Wright-Fisher simulations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "a889d4a8-dc31-4408-8cde-097a4f0b3c90",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C16",
+      "claim": "This value is substantially larger than estimates made recently for within-host HIV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This value is substantially larger than estimates made recently for within-host HIV infection (Pennings et al., 2014; Rouzine et al., 2014), and suggests that even weak selection could easily overcome genetic drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares the Ne estimate to published HIV estimates.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "a669201c-1cbe-4d2b-b764-3f6749f079bb",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C17",
+      "claim": "Data from clade B gave a lower estimated value of 2 \u00d7 10^6, (95% confidence range 4 \u00d7 10^5 to 2 \u00d7 10^8).",
+      "claim_type": "EXPLICIT",
+      "source": "Data from clade B gave a lower estimated value of 2 \u00d7 106, (95% confidence range 4 \u00d7 105 to 2 \u00d7 108) perhaps reflecting the less frequent observation of samples in that clade (Figure 2C,D), and the bottleneck induced by favipiravir, which was spanned by the data used in this calculation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the Ne estimate for clade B with explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "f73bfbcf-2779-43d3-bdbd-c8de3da2346e",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C18",
+      "claim": "The value of Ne is representative of the population after the initial establishment of infection; the initial expansion of the viral population was not represented in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our value of Ne is representative of the population after the initial establishment of infection; the initial expansion of the viral population was not represented in our data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript clarifies the temporal scope of the Ne estimate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "3eeacef1-dcd0-48e1-b3e5-e9073b0fb5ba",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C19",
+      "claim": "Population structure during the infection might have lowered the value obtained for Ne.",
+      "claim_type": "EXPLICIT",
+      "source": "Population structure during the infection might have lowered the value we obtain (Whitlock and Barton, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses potential biases in the Ne estimate.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "97b9a122-b8ca-4f67-a5af-e763ed96da4e",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C20",
+      "claim": "The partial onset of zanamivir resistant alleles is suggestive of sampling a random mixture of viruses from resistant and susceptible subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The partial onset of zanamivir resistant alleles (Jackson et al., 2005), sporadically observed at intermediate frequency in clade A after the administration of the drug (Figure 2\u2014figure supplement 1), is suggestive of sampling a random mixture of viruses from resistant and susceptible subpopulations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript interprets the pattern of resistance alleles.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "26679cf0-5ef7-4752-a360-d9a038b648df",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C21",
+      "claim": "The influence of positive selection might have led to an underestimate of Ne.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the influence of positive selection might have led us to underestimate Ne.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses potential biases in the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "2074ce5e-6b20-4830-9f38-914fdb9e72c0",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C22",
+      "claim": "Viral evolution was generally not driven by selection.",
+      "claim_type": "EXPLICIT",
+      "source": "While viral evolution was generally not driven by selection (Figure 2\u2014figure supplement 2), positive selection (e.g. for zanamivir resistance) would increase the rate of viral evolution, lowering our inferred value.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript assesses the role of selection in the observed evolution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "e8ab2e07-d60a-4809-86fe-3551554d7c90",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C23",
+      "claim": "Once an infection is established, selection will dominate the stochastic effects of drift upon within-host evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet our result is clear. Once an infection is established, selection will dominate the stochastic effects of drift upon within-host evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws a conclusion from the Ne estimate.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "be764f3c-2c26-4ce3-88cc-54bb353b5710",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C24",
+      "claim": "The dataset considered is particularly suited to the calculation due to the long period of infection combined with frequent sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset we considered is particularly suited to our calculation. The long period of infection combined with frequent sampling allowed for the characterisation of a slow rate of evolution amidst population structure and noise in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains why the dataset is appropriate for the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "f022f553-c762-4018-88ef-d588db39f1b8",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C25",
+      "claim": "The absence of strong selection reduced the error in the inference approach, which assumed an idealised neutral population.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the absence of strong selection reduced the error in our inference approach, which assumed an idealised neutral population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses the validity of the methodological assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "1c3826f3-55f8-4e46-a476-b16da8cea1a7",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C26",
+      "claim": "The approach was repeated on data describing long-term influenza A/H3N2 infection in four immunocompromised adults.",
+      "claim_type": "EXPLICIT",
+      "source": "To provide further validation we repeated our approach on data describing long-term influenza A/H3N2 infection in four immunocompromised adults (Xue et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes validation using additional data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "50bceb58-347a-42f4-a585-845f001e87a3",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C27",
+      "claim": "The estimates for Ne obtained from influenza A/H3N2 data were between 3 \u00d7 10^5 and 1 \u00d7 10^6.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimates for Ne we obtained, of between 3 \u00d7 105 and 1 \u00d7 106 (Figure 2\u2014figure supplement 3), while high, were smaller than for our flu B case, potentially being reduced by an increased influence of selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports Ne estimates from the validation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "4b609785-b72b-4c81-af46-21c7d34927e4",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C28",
+      "claim": "The viral load in the influenza B case was high, representative of hospitalised cases of childhood influenza infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The viral load in the influenza B case was high, representative of hospitalised cases of childhood influenza infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript characterizes the viral load in the studied case.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "bd81ea0a-0274-4b50-a130-9e55d0bc8dd4",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C29",
+      "claim": "The magnitude of the inferred effective size, of order 10^7, suggests that selection will predominate over drift even in more typical cases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the magnitude of our inferred effective size, of order 107, suggests that selection will predominate over drift even in more typical cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript extrapolates from the findings to typical cases.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "9682abdf-fc26-4dd5-92b7-4c43528b0d8a",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C30",
+      "claim": "Mean CT values for influenza in non-hospitalised children have been reported as around 10 units lower than those for hospitalised cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean CT values for influenza in non-hospitalised children have been reported as around 10 units lower than those for hospitalised cases (Wishaupt et al., 2017); an order of magnitude calculation suggests an Ne, upon the establishment of infection, of approximately 104 in such cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published data and performs a calculation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "e1434a1f-0627-444a-9f16-2a8e2ff3835d",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C31",
+      "claim": "An order of magnitude calculation suggests an Ne, upon the establishment of infection, of approximately 10^4 in non-hospitalised cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean CT values for influenza in non-hospitalised children have been reported as around 10 units lower than those for hospitalised cases (Wishaupt et al., 2017); an order of magnitude calculation suggests an Ne, upon the establishment of infection, of approximately 104 in such cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript estimates Ne for non-hospitalised cases.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "bd1d07c4-650c-4667-a007-d8a826072939",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C32",
+      "claim": "The evolution of a measurable variant (i.e. at a frequency of 1% or above) will be dominated by selection of a magnitude of 1% or greater per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has the implication that the evolution of a measurable variant (i.e. at a frequency of 1% or above) will be dominated by selection of a magnitude of 1% or greater per generation (Rouzine et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws an implication from the Ne estimate.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "bcc629e5-5396-4128-b340-99fa565c9f90",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C33",
+      "claim": "The result supports the idea that a tight transmission bottleneck followed by a short period of infection is sufficient to explain the observed lack of within-host variation in typical cases of influenza.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result supports the idea that a tight transmission bottleneck (McCrone et al., 2018; Valesano, 2020; Ghafari et al., 2020) followed by a short period of infection is sufficient to explain the observed lack of within-host variation in typical cases of influenza (Debbink et al., 2017; McCrone et al., 2018); the stochastic effects of genetic drift do not limit the impact of positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the findings in the context of published literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "727c66ed-3757-4730-967f-044d79a93e85",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C34",
+      "claim": "The stochastic effects of genetic drift do not limit the impact of positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result supports the idea that a tight transmission bottleneck (McCrone et al., 2018; Valesano, 2020; Ghafari et al., 2020) followed by a short period of infection is sufficient to explain the observed lack of within-host variation in typical cases of influenza (Debbink et al., 2017; McCrone et al., 2018); the stochastic effects of genetic drift do not limit the impact of positive selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a conclusion about the relative importance of drift and selection.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "9692f9ea-b060-4630-b8ac-e8aeb97517c0",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C35",
+      "claim": "Variants arising through de novo mutation would require strong selection to reach a substantial frequency during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants arising through de novo mutation would require strong selection to reach a substantial frequency during infection (Zhao et al., 2019), particularly if the onset of selection is delayed (Miao et al., 2010; Illingworth et al., 2014; Morris, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses the requirements for de novo variants to increase in frequency.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "be84e9cc-c49d-4790-8547-49fb5fac2577",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C36",
+      "claim": "Selection does not usually have time to fix novel variants in the population, exceptions including the emergence of antiviral resistance and some cases of longer infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that, while not being confounded by drift, selection does not usually have time to fix novel variants in the population, exceptions including the emergence of antiviral resistance and some cases of longer infection (Xue et al., 2017; Gubareva et al., 1998; Snydman, 2006; Centers for Disease Control and Prevention (CDC), 2009; Imai et al., 2020; Rogers et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes an explanation for the limited within-host adaptation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "19b08639-ba66-418e-bd79-0b0679ae5c16",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C37",
+      "claim": "The result highlights the potential importance of longer infections in the adaptation of global influenza populations, particularly where some adaptive immune response remains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result highlights the potential importance of longer infections in the adaptation of global influenza populations, particularly where some adaptive immune response remains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses implications for global influenza evolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "d8fcdfc9-c118-4e29-b724-b55a4aa8f333",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C38",
+      "claim": "A newly emergent variant under strong positive selection increases faster than linearly in frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "A newly emergent variant under strong positive selection increases faster than linearly in frequency (Haldane, 1924).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established population genetics theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "a940c82d-8b8c-441b-88ff-ebb041492422",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C39",
+      "claim": "Given a large Ne, implying efficient selection, additional days of infection will have a disproportionate influence upon the potential transmission of adaptive variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Given a large Ne, implying efficient selection, additional days of infection will have a disproportionate influence upon the potential transmission of adaptive variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws an inference from the Ne estimate and selection theory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "8be6ba4b-31d0-42a4-b92a-f1fa5a70607d",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C40",
+      "claim": "Longer infections may be an important area of study in the quest to better understand global influenza virus evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our work suggests that longer-term infections may be an important area of study in the quest to better understand global influenza virus evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript suggests a research direction based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "372ad2f0-1c5e-4272-9939-2b040d31b1fa",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C41",
+      "claim": "Strains of the influenza virus form coherent global populations, yet exist at the level of single infections in individual hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains of the influenza virus form coherent global populations, yet exist at the level of single infections in individual hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a fundamental characteristic of influenza.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "93d9155b-ddf8-4ac5-b304-e2d55012cb3c",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C42",
+      "claim": "The effective population size for influenza infection was estimated to be Ne of 2.5 \u00d7 10^7 (95% confidence range 1.0 \u00d7 10^7 to 9.0 \u00d7 10^7).",
+      "claim_type": "EXPLICIT",
+      "source": "Examining whole-genome sequence data describing a chronic case of influenza B in a severely immunocompromised child we infer an Ne of 2.5 \u00d7 107 (95% confidence range 1.0 \u00d7 107 to 9.0 \u00d7 107) suggesting that genetic drift is of minimal importance during an established influenza infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports the main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "40571610-268c-4d42-9120-d44306f5e0c6",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C43",
+      "claim": "Genetic drift is of minimal importance during an established influenza infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining whole-genome sequence data describing a chronic case of influenza B in a severely immunocompromised child we infer an Ne of 2.5 \u00d7 107 (95% confidence range 1.0 \u00d7 107 to 9.0 \u00d7 107) suggesting that genetic drift is of minimal importance during an established influenza infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as an inference from the Ne estimate.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "469591de-f160-4ae1-89a9-03d5e719a84e",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C44",
+      "claim": "Positive selection during within-host infection is primarily limited by the typically short period of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result, supported by data from influenza A infection, suggests that positive selection during within-host infection is primarily limited by the typically short period of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "bbca2352-7c36-4a4b-901d-66c5394c5aa6",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C45",
+      "claim": "Atypically long infections may have a disproportionate influence upon global patterns of viral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Atypically long infections may have a disproportionate influence upon global patterns of viral evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as an implication of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "22bb378a-cd19-4f88-adb0-3d8525c62052",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C46",
+      "claim": "On a global level, influenza populations exhibit coherent behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "On a global level, populations exhibit coherent behaviour (Buonagurio et al., 1986; Fitch et al., 1997; Bedford et al., 2015), evolving rapidly under collective host immune pressure (Ferguson et al., 2003; Grenfell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites published literature on global influenza evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "a5ac6157-9697-4656-88e6-7b1d371f9a32",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C47",
+      "claim": "Influenza populations evolve rapidly under collective host immune pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "On a global level, populations exhibit coherent behaviour (Buonagurio et al., 1986; Fitch et al., 1997; Bedford et al., 2015), evolving rapidly under collective host immune pressure (Ferguson et al., 2003; Grenfell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites published literature on immune-driven evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "c34f0864-91a6-46bd-af83-dd6e8495e325",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C48",
+      "claim": "Recent studies of within-host infection have suggested that positive selection does not strongly influence evolution at this smaller scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the clear role for selection in global influenza populations, recent studies of within-host infection have suggested that positive selection does not strongly influence evolution at this smaller scale (Debbink et al., 2017; McCrone et al., 2018; Han et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites recent literature on within-host selection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "0278abdb-35c2-4d3b-bc7c-3d1324c19544",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C49",
+      "claim": "Contrasting explanations have been given for the limited role of positive selection within-host, with suggestions either that selection is intrinsically inefficient, being dominated by stochastic processes, or that while selection is efficient, a mismatch in timing between the peak viral titre and the host adaptive immune response prevents selection from taking effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrasting explanations have been given for this, with suggestions either that selection at the within-host level is intrinsically inefficient, being dominated by stochastic processes (McCrone et al., 2018), or that while selection is efficient, a mismatch in timing between the peak viral titre and the host adaptive immune response prevents selection from taking effect (Han et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction summarizes competing hypotheses from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "ba868cc3-023a-4550-bcac-f0ab7ffb7143",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C50",
+      "claim": "The balance between selection and genetic drift is determined by the effective size of the population, denoted Ne.",
+      "claim_type": "EXPLICIT",
+      "source": "The balance between these factors is determined by the effective size of the population, denoted Ne.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states a fundamental principle of population genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "a8c26c08-7b85-494d-829a-d533377968fd",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C51",
+      "claim": "If Ne is high, selection will outweigh genetic drift, even where differences in viral fitness are small.",
+      "claim_type": "EXPLICIT",
+      "source": "If Ne is high, selection will outweigh genetic drift, even where differences in viral fitness are small (Rouzine et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a theoretical result about Ne and selection.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "33525e4c-754d-4bc0-b843-fd326873d6be",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C52",
+      "claim": "If Ne is low, less fit viruses are more likely to outcompete their fitter compatriots.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, if Ne is low, less fit viruses are more likely to outcompete their fitter compatriots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states a consequence of low Ne.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "4cabb805-ebd5-4f3e-a436-cb6b8d014b02",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C53",
+      "claim": "Estimating Ne is a difficult task, with a long history of method development in this area.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimating Ne is a difficult task, with a long history of method development in this area (Wright, 1938; Wang et al., 2016; Khatri and Burt, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites historical and recent literature on Ne estimation methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "27981932-c47a-432f-8712-0c602f65a090",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C54",
+      "claim": "A simple measure of Ne may be calculated by matching the genetic change in allele frequencies in a population with the changes occurring in an idealised population evolving under genetic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple measure of Ne may be calculated by matching the genetic change in allele frequencies in a population with the changes occurring in an idealised population evolving under genetic drift (Kimura and Crow, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction describes a classical method for estimating Ne.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "dbed8e26-17c9-46aa-8559-85e85673fa6d",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C55",
+      "claim": "Such estimates are vulnerable to distortion, for example being reduced by the effect of positive selection in a population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such estimates are vulnerable to distortion, for example being reduced by the effect of positive selection in a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction discusses limitations of simple Ne estimation methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "24a8f2ac-7023-44be-bf41-09d06b3d4876",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C56",
+      "claim": "Where the global influenza A/H3N2 population is driven by repeated selective sweeps, a neutral estimation method suggests a value for Ne not much greater than 100.",
+      "claim_type": "EXPLICIT",
+      "source": "Where the global influenza A/H3N2 population is driven by repeated selective sweeps (Fitch et al., 1991; Rambaut et al., 2008; Strelkowa and L\u00e4ssig, 2012) a neutral estimation method suggests a value for Ne not much greater than 100 (Bedford et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites published estimates of Ne for global influenza.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "76887b01-0fb1-4fa7-8466-7616bde717bd",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C57",
+      "claim": "Methods for jointly estimating Ne and selection exist, but they are limited in considering only a few loci in linkage disequilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "While methods for jointly estimating Ne and selection exist, they are limited in considering only a few loci in linkage disequililbrium (Bollback et al., 2008; Feder et al., 2014; Foll et al., 2014; Terhorst et al., 2015; Rousseau et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction discusses limitations of more sophisticated Ne estimation methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "4b8b4518-e258-43d6-938d-06db9a931de5",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C58",
+      "claim": "Non-trivial population structure can affect estimates of Ne.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-trivial population structure can affect estimates (Laporte and Charlesworth, 2002); a growing body of evidence supports the existence of structure in within-host influenza infection (Lakdawala et al., 2015; Sobel Leonard et al., 2017a; Richard et al., 2018; Hamada et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites literature on population structure effects on Ne estimation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "dc5b91f8-c9e7-40c3-baeb-eabe033b4433",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C59",
+      "claim": "A growing body of evidence supports the existence of structure in within-host influenza infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-trivial population structure can affect estimates (Laporte and Charlesworth, 2002); a growing body of evidence supports the existence of structure in within-host influenza infection (Lakdawala et al., 2015; Sobel Leonard et al., 2017a; Richard et al., 2018; Hamada et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites literature on within-host population structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "18d7e3ac-8fdf-448c-8ff8-70d791c62c2a",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C60",
+      "claim": "Noise from sequencing and unrepresentative sample collection combine, potentially confounding estimates of Ne in viral populations.",
+      "claim_type": "EXPLICIT",
+      "source": "While careful experimental techniques can reduce sequencing error (McCrone and Lauring, 2016), noise from sequencing and unrepresentative sample collection combine (Illingworth et al., 2017), potentially confounding estimates of Ne in viral populations (Lumby et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction discusses sources of error in Ne estimation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "b370dba7-6dc0-4c8e-99a5-42dbf2110c9a",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C61",
+      "claim": "If Ne is high, any signal of drift can be obscured by noise.",
+      "claim_type": "EXPLICIT",
+      "source": "If Ne is high, any signal of drift can be obscured by noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction discusses a challenge in estimating high Ne values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "fe11e24c-eb1a-49e9-bc39-95257ea26c38",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C62",
+      "claim": "An absence of cell-mediated immunity led to the persistence of the infection for several months.",
+      "claim_type": "EXPLICIT",
+      "source": "While the viral load of the infection was not unusual for a hospitalised childhood infection (Wishaupt et al., 2017), an absence of cell-mediated immunity led to the persistence of the infection for several months (Lumby et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction describes the clinical characteristics of the case.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "2604664a-610e-453f-a85e-0510408f421d",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C63",
+      "claim": "The reduced role of positive selection, combined with novel methods to account for noise and population structure, enabled an improved inference of Ne.",
+      "claim_type": "EXPLICIT",
+      "source": "Given extensive sequence data collected during infection, the reduced role of positive selection, combined with novel methods to account for noise and population structure, enabled an improved inference of Ne.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explains why the dataset is suitable for Ne estimation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "d3904e7a-bfa6-438f-a5f6-a9c7513e7365",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C64",
+      "claim": "The large effective size inferred suggests that selection acts in an efficient manner during an established influenza infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The large effective size we infer suggests that selection acts in an efficient manner during an established influenza infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states a key conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "c2eb54e4-33a9-4fd2-86a0-845f4a7ffb1f",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C65",
+      "claim": "Even in more typical cases, the influence of positive selection is likely to be limited only by the duration of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in more typical cases, the influence of positive selection is likely to be limited only by the duration of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states an implication of the findings for typical infections.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "039270d9-6c50-4135-8aaf-f756c7e9b544",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C66",
+      "claim": "Clinical details of the case, and the use of viral sequence data in evaluating the effectiveness of clinical intervention, have been described elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical details of the case, and the use of viral sequence data in evaluating the effectiveness of clinical intervention, have been described elsewhere (Lumby et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript references a previous publication for clinical details.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "13abfefa-9645-45e7-b284-3bfe458b6e3e",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C67",
+      "claim": "The rate of evolution in both clades was slower at non-synonymous sites than at synonymous sites, suggesting a general pattern of purifying selection at non-synonymous sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of evolution in both clades was slower at non-synonymous sites than at synonymous sites, suggesting a general pattern of purifying selection at non-synonymous sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 2 caption states this finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "6aa8db1a-4256-401e-a2cc-822ed874331b",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C68",
+      "claim": "Change in the population was not as a whole driven by positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Change in the population was not as a whole driven by positive selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 2 caption states this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "c09e9750-bf5e-4753-a60f-1a05c7e7fe5f",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C69",
+      "claim": "The consensus glutamate nucleotide was sometimes replaced by glycine, valine, and alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus glutamate nucleotide (blue) was sometimes replaced by glycine (green), valine (yellow), and alanine (red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 1 caption describes the observed substitutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "3d133148-8b97-4557-ade8-4face4602914",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C70",
+      "claim": "Glycine and alanine are associated with zanamivir resistance in influenza B.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycine and alanine are associated with zanamivir resistance in influenza B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 1 caption states this association.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "7645c6d6-5660-496d-8103-dca756cb5a38",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C71",
+      "claim": "Variants at higher frequencies were identified at more consistent frequencies than variants at lower frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants at higher frequencies were identified at more consistent frequencies than variants at lower frequencies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 5 caption describes the pattern in replicate data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "065e8fdf-63ea-451a-9c90-c2c7cb5f62f6",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C72",
+      "claim": "High frequency variants were very reliably identified, but the reliability of identifying variants was significantly impaired at lower frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "While high frequency variants were very reliably identified, the reliability of identifying variants was significantly impaired at lower frequencies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 7 caption describes the frequency-dependent reliability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "30d1c934-4acc-4ffe-ac37-740296176fea",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C73",
+      "claim": "Samples in the dataset were split following RNA extraction with replicate sets of RNA being processed and sequenced independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples in this dataset were split following RNA extraction with replicate sets of RNA being processed and sequenced independently.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 5 caption describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "2af5dc1b-fe90-482c-a32f-d55c39a92c3a",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C74",
+      "claim": "The distribution of minor allele frequencies across the genome was reasonably constant between samples for which a good read depth was achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding these allele frequencies we note that the distribution of minor allele frequencies across the genome was reasonably constant between samples for which a good read depth was achieved (Figure 2\u2014figure supplement 4; read depths for these data have previously been reported Lumby et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the consistency of allele frequency distributions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "7b573080-f23d-4b33-b29e-efb6e02cd26f",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C75",
+      "claim": "Rates of evolution calculated from the sequence data were rates of change per day whereas a Wright-Fisher simulation gives an estimated rate of evolution per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rates of evolution calculated from the sequence data were rates of change per day whereas a Wright-Fisher simulation gives an estimated rate of evolution per generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the need for scaling between time units.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "065fbeff-dda4-4360-bf5a-23f0d671d70e",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C76",
+      "claim": "The experimentally ascertained estimate of generation time for influenza B is 10 hours per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore scaled the former to match the experimentally ascertained estimate of 10 hr per generation for influenza B (Nobusawa and Sato, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a published estimate of influenza B generation time.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "060e06c0-8628-45c0-98b9-b42dbe849b7b",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C77",
+      "claim": "Intra-segment recombination was assumed to be negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "Intra-segment recombination was assumed to be negligible (Boni et al., 2008), while reassortment between segments was neglected in line with evidence from cases of human infection (Sobel Leonard et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states assumptions of the simulation model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "0932a047-52e4-4c68-ad61-beede33c2e60",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C78",
+      "claim": "Reassortment between segments was neglected in line with evidence from cases of human infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Intra-segment recombination was assumed to be negligible (Boni et al., 2008), while reassortment between segments was neglected in line with evidence from cases of human infection (Sobel Leonard et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states assumptions of the simulation model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "8b004609-b3f6-4902-929d-a0c8e7e5d3ce",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C79",
+      "claim": "The experimental pipeline used has been shown to perform well in capturing within-host viral diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "While the experimental pipeline we used has been shown to perform well in capturing within-host viral diversity (STOP-HCV Consortium et al., 2016), the possibility remains that sequencing could contribute additional diversity to the initial populations used in our simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites validation of the sequencing pipeline.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "9cdd492c-c1ca-45aa-b5b4-0cf41a0c1c17",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C80",
+      "claim": "Data from a previous study describing the repeat sequencing of hepatitis C virus (HCV) samples from a host were used to estimate the extent to which the sequencing process led to the false identification of variants.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this, we used data from a previous study describing the repeat sequencing of hepatitis C virus (HCV) samples from a host (Illingworth et al., 2017); data in this previous study were collected using the same sequencing pipeline as that used to collect the data considered here and therefore provide a generic measure of the level of false positive variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the use of HCV data to estimate false positive rates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "8ce29644-7f72-40c9-a4c5-0e06bf1a2163",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C81",
+      "claim": "The HCV data were collected using the same sequencing pipeline as that used to collect the influenza data.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this, we used data from a previous study describing the repeat sequencing of hepatitis C virus (HCV) samples from a host (Illingworth et al., 2017); data in this previous study were collected using the same sequencing pipeline as that used to collect the data considered here and therefore provide a generic measure of the level of false positive variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript justifies the use of HCV data for estimating error rates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "36e6b099-19fe-4fd1-9918-8f09a12a361e",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C82",
+      "claim": "The data analyzed, coded as HCV01 in the original study, comprised four clinical HCV samples, each of which was split following nucleic acid extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "The data we analysed, coded as HCV01 in the original study, comprised four clinical HCV samples, each of which was split following nucleic acid extraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the HCV dataset used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "a1e5732f-47c0-4b07-b78f-2479be3de986",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C83",
+      "claim": "DNase depletion led to samples with lower read depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Some replicate samples were processed using a DNase depletion method before all samples went through cDNA synthesis, library preparation and sequencing. DNase depletion led to samples with lower read depth; we here compared sequence data collected from the non-depleted replicates of each sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the effect of DNase depletion on sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "71ea5525-157b-48ff-b56a-a139ff0cb717",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C84",
+      "claim": "Only 56 sites, fewer than 0.1% of the more than 73 thousand sites sequenced, had more than one minority variant at a frequency greater than 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that, of the more than 73 thousand sites sequenced, only 56, fewer than 0.1%, had more than one minority variant at a frequency greater than 1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the frequency of multi-allelic sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "41b260f1-d515-45b8-ab41-955e8d1e22c7",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C85",
+      "claim": "The assumption was made that the false negative rate of detecting variants is equal to zero.",
+      "claim_type": "EXPLICIT",
+      "source": "We begin by assuming that the false negative rate of detecting variants is equal to zero. That is, where we do not see a variant in the sequence data, we assume that a variant is never actually present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states an assumption of the false positive rate estimation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "a4fdb1fd-32fb-46a9-a38e-9f8749c0c04f",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C86",
+      "claim": "This is a conservative step in so far as unobserved variation is never added to the population.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a conservative step in so far as we never add unobserved variation to the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript justifies the assumption as conservative.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "6465f78e-1886-4e05-aad4-91f6e87209b2",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C87",
+      "claim": "To account for the neglect of mutation, a frequency cutoff was applied to the simulation data.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for our neglect of mutation, a frequency cutoff was applied to our simulation data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a correction applied to the simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "c487d069-2a83-4e6f-8ba9-f47cb59df20b",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C88",
+      "claim": "Under a pure process of genetic drift, low-frequency variants in the population are likely to die out, reaching a frequency of zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Under a pure process of genetic drift, low-frequency variants in our population are likely to die out, reaching a frequency of zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states an expected outcome of genetic drift.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "99e69091-81ba-4dc3-ab8b-7b680150c055",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C89",
+      "claim": "In a real population, variants would not reach zero frequency, being sustained at low frequencies by a balance of mutation and purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In a real population, this would not occur, variants being sustained at low frequencies by a balance of mutation and purifying selection (Haldane, 1937; Haigh, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites theory on mutation-selection balance.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "8832b467-f7f7-4d23-8643-41a0fdeec2a6",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C90",
+      "claim": "A minimum minority allele frequency of 0.1% was imposed on the simulation data.",
+      "claim_type": "EXPLICIT",
+      "source": "To correct for this we post-processed the initial and final frequency values from our simulations before calculating our distance, imposing a minimum minority allele frequency of 0.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the frequency cutoff applied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "a6a28d4a-197a-4b07-b22b-c87f51f8f451",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C91",
+      "claim": "The choice of 0.1% threshold is conservative, leading to a conservatively low estimate of Ne.",
+      "claim_type": "EXPLICIT",
+      "source": "The choice of threshold here is conservative; leading to a conservatively low estimate of Ne.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript assesses the impact of the threshold choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "22e6b8f7-9214-4834-87cb-fd2376c9c375",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C92",
+      "claim": "Confidence intervals for the effective population size were calculated as the overlap of 97.5% confidence intervals for the evolutionary rates in the observed data and estimated from the simulated statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Confidence intervals for the effective population size were calculated as the overlap of 97.5% confidence intervals for the evolutionary rates in the observed data, calculated from the regression for the real data, and estimated from the simulated statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the method for calculating confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "6372a422-d309-4f63-987c-79609e9c24e0",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C93",
+      "claim": "The overlap of confidence intervals gives an approximate 95% confidence interval for Ne.",
+      "claim_type": "EXPLICIT",
+      "source": "The overlap of these values gives an approximate 95% confidence interval for Ne.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the interpretation of the confidence interval calculation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "88efeed9-f7af-49eb-a717-786b6ca598e7",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C94",
+      "claim": "Data describing the evolution of the infection was generated as part of a previous study.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence data describing the evolution of the infection was generated as part of a previous study (Lumby et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript references the source of the sequence data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "3bf3783f-7235-4d76-bcc5-a237b039367d",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C95",
+      "claim": "Data, edited to remove human genome sequence data, have been deposited in the Sequence Read Archive with BioProject ID PRJNA601176.",
+      "claim_type": "EXPLICIT",
+      "source": "Data, edited to remove human genome sequence data, have been deposited in the Sequence Read Archive with BioProject ID PRJNA601176.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides data availability information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "df30d135-a4ad-49e7-8bcf-dc8f5f9032fb",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C96",
+      "claim": "The HCV data used in validating the sequencing pipeline were previously deposited in the Sequence Read Archive with BioProject ID PRJNA380188.",
+      "claim_type": "EXPLICIT",
+      "source": "The HCV data used in validating the sequencing pipeline (see below) were previously deposited in the Sequence Read Archive with BioProject ID PRJNA380188.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides data availability information for the HCV data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "f2d270da-8714-424a-96cb-22509b60f5ce",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C97",
+      "claim": "Processed files describing raw variant frequencies for both datasets are available, along with code used in this project, at https://github.com/cjri/FluBData.",
+      "claim_type": "EXPLICIT",
+      "source": "Processed files describing raw variant frequencies for both datasets are available, along with code used in this project, at https://github.com/cjri/FluBData (copy archived at https://github.com/elifesciences-publications/FluBData; Illingworth, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides code and data availability information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "28f70fbf-527b-49d0-b5d4-52a565d89858",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C98",
+      "claim": "The SAMFIRE software package was used to filter the short-read data with a PHRED score cutoff of 30, to identify consensus sequences, and to calculate the number of each nucleotide found at each position in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The SAMFIRE software package was then used to filter the short-read data with a PHRED score cutoff of 30, to identify consensus sequences, and to calculate the number of each nucleotide found at each position in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the bioinformatics pipeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "ecf59daa-e4a4-4e06-aec9-fd221f4c6956",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C99",
+      "claim": "SAMFIRE is available from https://github.com/cjri/samfire.",
+      "claim_type": "EXPLICIT",
+      "source": "SAMFIRE is available from https://github.com/cjri/samfire (Illingworth, 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides software availability information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "79c550a4-581f-4c56-9fc8-880eccfcbd4d",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C100",
+      "claim": "Consensus sequences from each viral segment were concatenated then aligned using MUSCLE before performing a phylogenetic analysis on the whole genome sequence alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consensus sequences from each viral segment were concatenated then aligned using MUSCLE (Edgar, 2004) before performing a phylogenetic analysis on the whole genome sequence alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the phylogenetic analysis method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "ca22c0e6-51c0-45e3-ab5b-97a8c01f26fe",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C101",
+      "claim": "The B/Venezuela/02/2016 sequence was used to root the alignment, the haemagglutinin segment of this virus having been identified as being very close to those from the patient.",
+      "claim_type": "EXPLICIT",
+      "source": "The B/Venezuela/02/2016 sequence was used to root the alignment, the haemagglutinin segment of this virus having been identified as being very close to those from the patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the choice of outgroup for phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "3902f282-4dbb-4122-9996-b9824a2e013c",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C102",
+      "claim": "Trees were generated using the HKY substitution model.",
+      "claim_type": "EXPLICIT",
+      "source": "Trees were generated using the HKY substitution model (Hasegawa et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the phylogenetic model used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "37f1d148-a6c4-4576-ab08-3cc3de102ba0",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C103",
+      "claim": "A Monte Carlo process was run for 10 million iterations, generating a consensus tree with TreeAnnotator using the first 10% of trees as burn-in.",
+      "claim_type": "EXPLICIT",
+      "source": "A Monte Carlo process was run for 10 million iterations, generating a consensus tree with TreeAnnotator using the first 10% of trees as burn-in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the MCMC parameters for phylogenetic inference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "54ee4cc5-e73f-4387-a918-36546217a120",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C104",
+      "claim": "Haplotype reconstruction was performed using multi-locus polymorphism data generated by the SAMFIRE software package.",
+      "claim_type": "EXPLICIT",
+      "source": "Haplotype reconstruction was performed using multi-locus polymorphism data generated by the SAMFIRE software package (Illingworth, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the haplotype reconstruction method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "1399e9a1-e52e-429b-8e60-e11514a77faf",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C105",
+      "claim": "Variant loci in the genome were identified as those at which a change in the consensus nucleotide was observed between the initial and the final consensus.",
+      "claim_type": "EXPLICIT",
+      "source": "Variant loci in the genome were identified as those at which a change in the consensus nucleotide was observed between the initial and the final consensus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes how variant loci were identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "c3542a39-45d6-4678-b5a0-1723036126c3",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C106",
+      "claim": "A Dirichlet-multinomial model was used to infer the maximum likelihood frequencies of each haplotype given the data from each time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a Dirichlet-multinomial model was used to infer the maximum likelihood frequencies of each haplotype given the data from each time point (Illingworth, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the statistical model for haplotype frequency inference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "aaa9f298-b231-4143-84ec-940b129d662b",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C107",
+      "claim": "A value of C = 200 was chosen for the calculation, representing a conservative estimate given the prior performance of the sequencing pipeline used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A value of C = 200 was chosen for the calculation, representing a conservative estimate given the prior performance of the sequencing pipeline used in this study (Illingworth et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript justifies the choice of parameter value.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "e9a7e027-d93e-4e69-94dd-2aef88e7cde2",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C108",
+      "claim": "Haplotype frequencies for each time point and for each viral segment were inferred independently, with no underlying evolutionary model.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous calculations in which an evolutionary model was fitted to data (Illingworth, 2015), haplotype frequencies for each time point and for each viral segment were in this case inferred independently, with no underlying evolutionary model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the approach to haplotype frequency inference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "7c389915-f6a3-4d51-9ff9-3ca1b38451a5",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C109",
+      "claim": "An identical procedure to that used to estimate Ne from the influenza B data was applied to the influenza A data.",
+      "claim_type": "EXPLICIT",
+      "source": "An identical procedure to that used to estimate Ne from the influenza B data was applied, calculating a rate of evolution per day from sequence data, scaling this to a rate per generation (in this case a seven hour generation time was modelled [Nobusawa and Sato, 2006]), and then running simulations to estimate Ne.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the analysis of influenza A data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "da3ce02c-4d68-4791-a41c-2e039485450b",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C110",
+      "claim": "The estimates of false positive rate generated for the influenza B data were applied equally to the influenza A data, due to not having equivalent data to re-estimate these values.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the estimates of false positive rate generated for the influenza B data were applied equally in this case, due to not having equivalent data to re-estimate these values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes an assumption made in analyzing the influenza A data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "31199ed5-4ec7-4ba0-9c2d-522818453669",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "claim_id": "C111",
+      "claim": "Examining the data from patient W, distance measurements suggested potential population structure involving the samples collected on days 62 and 69; these samples were excluded from the regression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the data from patient W, our distance measurements suggested potential population structure involving the samples collected on days 62 and 69; these samples were excluded from our regression analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes data filtering for the influenza A analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a2fb5a6d-dc0a-4a4f-8134-ce06923ab10a",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed an 8-month chronic influenza B infection in a severely immunocompromised child with 41 time points of viral sampling. The infection persisted due to absence of cell-mediated immunity, had viral loads comparable to hospitalized children, and was eventually cleared through combination therapy including bone marrow transplant and favipiravir.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C28, C62, and C66 provide consistent clinical and virological characterization of the case. The viral load comparison (C5) is supported by citation to published data (Wishaupt et al., 2017), and the clinical details are cross-referenced to a previous publication (C66, Lumby et al., 2020), providing independent validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "57c46379-5c3c-4697-9b8f-bff4583b3199",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenetic and haplotype analyses revealed non-trivial population structure with two distinct viral clades (A and B) that diverged and persisted for several months. This structure suggests spatially distinct viral subpopulations within the host, with samples stochastically representing one population or the other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 are supported by phylogenetic trees (Figure 1B) and haplotype reconstruction (Figure 1C-D, Figure 1\u2014figure supplement 2). The interpretation of spatial structure (C10) is reasonable given the cladal persistence and intermediate frequency of resistance alleles (C20). The authors appropriately acknowledge that population structure may bias Ne estimates (C19), citing relevant literature (C58-C59).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "982729fd-d221-4527-8ece-173953c11afb",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Linear regression analysis of genetic distance versus time yielded an evolutionary rate of 0.051 substitutions per day (97.5% CI: 0.034-0.068) for clade A. The regression intercept (~40 substitutions, equivalent to \u00b10.3% allele frequency difference per locus) quantifies noise from sequencing and population structure, yet the dataset provides a clear evolutionary signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 describe a standard regression approach with appropriate confidence intervals (C12). The interpretation of the intercept as noise (C13) is methodologically sound. Figure 2A shows the regression fit with substantial scatter but clear trend, supporting C14's assessment of signal despite noise. The method is well-suited to the longitudinal dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "c8a45c7f-d18d-40e0-94a2-33b3f9ee9b85",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Wright-Fisher simulations estimated an effective population size (Ne) of 2.5 \u00d7 10^7 (95% CI: 1.0 \u00d7 10^7 to 9.0 \u00d7 10^7) for clade A before favipiravir treatment. This large Ne, substantially higher than HIV estimates, indicates that genetic drift is minimal and selection acts efficiently during established influenza infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C42 report the primary Ne estimate with confidence intervals, supported by simulation results in Figure 2B. The comparison to HIV (C16) appropriately cites Pennings et al., 2014 and Rouzine et al., 2014. The inference that drift is minimal (C43, C64) follows logically from population genetics theory (C50-C52). The method accounts for noise and population structure as described in Materials and Methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "e1c16b6e-523a-4b5b-9199-f4601d208d90",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Clade B yielded a lower Ne estimate of 2 \u00d7 10^6 (95% CI: 4 \u00d7 10^5 to 2 \u00d7 10^8), potentially due to less frequent sampling and the favipiravir-induced bottleneck. The Ne estimates represent established infection, not the initial population expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 provides the clade B estimate with appropriate caveats about sampling frequency and drug-induced bottleneck, shown in Figure 2C-D. Claim C18 appropriately clarifies the temporal scope of the inference, acknowledging that initial infection dynamics are not captured. The wider confidence interval for clade B reflects greater uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "4e6f5a0d-0abd-4fdb-98ed-88e2eaec9f60",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The analysis assumes neutral evolution, which could lead to underestimating Ne if positive selection is present. However, evidence suggests viral evolution was generally not driven by positive selection, with slower evolution at non-synonymous versus synonymous sites indicating purifying selection. This validates the neutral assumption and supports the conclusion that selection dominates drift in established infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 acknowledge potential bias from selection, while C67-C68 (supported by Figure 2\u2014figure supplement 2) provide evidence that evolution was predominantly neutral with purifying selection. This justifies the neutral Wright-Fisher model assumption (C25). The conclusion that selection dominates drift (C23) follows logically from the high Ne estimate. The reasoning is internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "72b7c0f2-2fea-4ee8-abde-3779051c9d9f",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The influenza B dataset is particularly suited for Ne estimation due to long infection duration and frequent sampling. Validation using influenza A/H3N2 data from four immunocompromised adults yielded Ne estimates of 3 \u00d7 10^5 to 1 \u00d7 10^6, lower than influenza B but still indicating efficient selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C63 explain why the dataset is appropriate. The validation analysis (C26-C27, C109) using independent data (Xue et al., 2017) strengthens confidence in the method, shown in Figure 2\u2014figure supplement 3. The authors appropriately note limitations: applying influenza B false positive rates to influenza A data (C110) and excluding outlier samples (C111). Lower Ne estimates for influenza A may reflect increased selection (C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "c0032ed5-756e-4e4d-94e8-0105be068834",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Extrapolating from the Ne estimate of ~10^7 in this severe case, the authors estimate Ne ~10^4 for typical non-hospitalized infections based on CT value differences. Even this lower Ne suggests selection predominates over drift, with variants at \u22651% frequency requiring selection coefficients \u22651% per generation to be detectable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The extrapolation from hospitalized to non-hospitalized cases (C30-C31) relies on an \"order of magnitude calculation\" based on CT value differences from Wishaupt et al., 2017. While the cited CT difference is plausible, the conversion to Ne is approximate and lacks detailed justification. The inference about selection thresholds (C32) cites Rouzine et al., 2001 appropriately, but the overall extrapolation (C29, C65) involves substantial uncertainty not fully quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "99fa1c1c-d011-492e-83a7-ead33ac331ec",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The high Ne supports the hypothesis that limited within-host variation in typical influenza cases results from tight transmission bottlenecks and short infection duration rather than inefficient selection due to genetic drift. De novo variants require strong selection to reach substantial frequency, and selection typically lacks time to fix variants except in cases of antiviral resistance or prolonged infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 synthesize the findings with appropriate citations to recent literature (McCrone et al., 2018; Valesano, 2020; Ghafari et al., 2020; Debbink et al., 2017). The interpretation addresses competing hypotheses from prior work (C48-C49) and resolves them in favor of time-limited rather than drift-limited selection (C44). Claims C35-C36 provide mechanistic explanation citing relevant theory and observations. The logic is coherent and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "4e722085-9b98-4b1f-966c-e5feb2155809",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The findings highlight the potential importance of prolonged infections for global influenza evolution. Given large Ne and efficient selection, variants under strong positive selection increase faster than linearly (Haldane, 1924), making additional days of infection disproportionately influential for transmission of adaptive variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40, C45 present implications for global influenza evolution. The reasoning is logical: high Ne enables efficient selection (established in prior results), and Haldane's principle (C38, appropriately cited) means selected variants increase super-linearly. The inference that prolonged infections may disproportionately contribute to adaptation (C39-C40, C45) follows, though the authors appropriately note this doesn't exclude other mechanisms like transmissibility selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "afc5f9b3-4709-43f1-a05b-26075c5c71e1",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Zanamivir resistance-associated substitutions (glycine and alanine at neuraminidase codon 117) were observed at intermediate frequencies in clade A after drug administration, suggesting sampling from mixed resistant and susceptible subpopulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 describe observed substitutions shown in Figure 2\u2014figure supplement 1, with C70 correctly identifying resistance associations. Claim C20 interprets the intermediate frequencies as evidence of population structure, citing Jackson et al., 2005. The interpretation is reasonable given the phylogenetic evidence of spatial structure (Result 2) and the sporadic appearance of resistance alleles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "9712a192-f338-4d6a-acba-c122695074ff",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Sequencing validation using replicate samples showed frequency-dependent reliability: high-frequency variants were reliably identified, but reliability decreased at lower frequencies. False positive rates were estimated using HCV replicate data from the same sequencing pipeline, assuming zero false negative rate as a conservative approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 describe replicate sequencing results shown in Figure 2\u2014figure supplement 5 and 7. The use of HCV data (C80-C83) to estimate false positive rates is justified by identical sequencing pipelines (C81), citing Illingworth et al., 2017 and STOP-HCV Consortium et al., 2016 (C79). The assumption of zero false negative rate (C85-C86) is explicitly acknowledged as conservative. The approach is methodologically sound for accounting for technical noise.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Wright-Fisher simulations incorporated several corrections: scaling from per-day to per-generation rates using a 10-hour generation time for influenza B, neglecting intra-segment recombination and reassortment based on literature, and imposing a 0.1% minimum allele frequency cutoff to account for mutation-selection balance not explicitly modeled.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 describe time scaling using published generation time (Nobusawa and Sato, 2006). Claims C77-C78 state model assumptions justified by citations (Boni et al., 2008; Sobel Leonard et al., 2017a). Claims C87-C91 explain the frequency cutoff correction for mutation-selection balance, citing relevant theory (Haldane, 1937; Haigh, 1978). The authors acknowledge this is conservative (C91), leading to potentially underestimated Ne. All corrections are scientifically justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "4276eae2-11ce-4a42-bf6f-eb0209185468",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Confidence intervals for Ne were calculated by overlapping 97.5% confidence intervals from observed evolutionary rates and simulated statistics, yielding approximate 95% confidence intervals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 describe a reasonable approach to confidence interval estimation. The method compares uncertainty in observed rates (from regression) with simulation-based uncertainty in the Ne-to-rate relationship. While approximate, this approach is appropriate given the complexity of the simulation-based inference. The confidence intervals are shown in Figures 2B and 2D.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "09b4c003-04e2-43d4-9014-1fb76727f6ad",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study used established bioinformatics methods including SAMFIRE for variant calling (PHRED \u226530), MUSCLE for alignment, BEAST2 with HKY model for phylogenetics, and Dirichlet-multinomial models for haplotype reconstruction. Data and code are publicly available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C108 describe standard bioinformatics methods with appropriate software citations (SAMFIRE, MUSCLE, BEAST2, etc.). The phylogenetic approach (C100-C103) uses appropriate models and MCMC parameters. Haplotype reconstruction (C104-C108) employs published methods (Illingworth, 2015, 2016) with justified parameter choices (C107). Data availability (C95-C97) meets reproducibility standards. All methods are adequately described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "b604287e-dbf5-4922-ad61-1e8e99a1195d",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background context: Influenza populations exhibit coherent global evolution under immune pressure, yet exist as individual host infections, creating a multi-scale evolutionary system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 provide established background on global influenza evolution, appropriately citing foundational literature (Buonagurio et al., 1986; Fitch et al., 1997; Bedford et al., 2015; Ferguson et al., 2003; Grenfell et al., 2004). Claim C41 frames the multi-scale nature of influenza evolution. These are well-established facts providing context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    },
+    {
+      "id": "53cf8a76-808d-4119-86ae-563ed6d100d6",
+      "content_id": "6f821459-cae2-4e21-aa5f-c1433b094624",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on Ne estimation challenges: Estimating Ne is difficult with a long methodological history. Simple drift-based methods can be distorted by selection, joint Ne-selection methods are limited to few loci, and high Ne can obscure drift signals with noise. Global influenza Ne estimates are ~100 when using neutral methods on selection-driven populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54, C56-C57, C60-C61 provide methodological background with appropriate citations (Wright, 1938; Wang et al., 2016; Kimura and Crow, 1963; Bedford et al., 2010; Bollback et al., 2008; etc.). The discussion of methodological challenges (selection bias, linkage limitations, noise) accurately represents the literature and motivates the study's approach. Claim C56's example of global influenza Ne ~100 is correctly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:45.969476Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1b7b4a29-07ea-415b-9564-015adfa79f5d",
+      "result_id": "a2fb5a6d-dc0a-4a4f-8134-ce06923ab10a"
+    },
+    {
+      "claim_id": "7d1c7d34-d3e0-4979-a8af-7bf8343b9191",
+      "result_id": "a2fb5a6d-dc0a-4a4f-8134-ce06923ab10a"
+    },
+    {
+      "claim_id": "353951a9-7f78-4cf3-92a7-43afc785ceee",
+      "result_id": "a2fb5a6d-dc0a-4a4f-8134-ce06923ab10a"
+    },
+    {
+      "claim_id": "6140de72-9e1e-465a-80a5-1c2b0f75cd50",
+      "result_id": "a2fb5a6d-dc0a-4a4f-8134-ce06923ab10a"
+    },
+    {
+      "claim_id": "cde22931-437b-4a0f-860e-f86363f87d16",
+      "result_id": "a2fb5a6d-dc0a-4a4f-8134-ce06923ab10a"
+    },
+    {
+      "claim_id": "4b609785-b72b-4c81-af46-21c7d34927e4",
+      "result_id": "a2fb5a6d-dc0a-4a4f-8134-ce06923ab10a"
+    },
+    {
+      "claim_id": "fe11e24c-eb1a-49e9-bc39-95257ea26c38",
+      "result_id": "a2fb5a6d-dc0a-4a4f-8134-ce06923ab10a"
+    },
+    {
+      "claim_id": "039270d9-6c50-4135-8aaf-f756c7e9b544",
+      "result_id": "a2fb5a6d-dc0a-4a4f-8134-ce06923ab10a"
+    },
+    {
+      "claim_id": "96badd11-b25c-4d83-83b5-0964522031ed",
+      "result_id": "57c46379-5c3c-4697-9b8f-bff4583b3199"
+    },
+    {
+      "claim_id": "4892a6cd-fc85-45cb-a556-191cb90e7e80",
+      "result_id": "57c46379-5c3c-4697-9b8f-bff4583b3199"
+    },
+    {
+      "claim_id": "b46b8730-5ec0-479b-9589-e4e0c48458db",
+      "result_id": "57c46379-5c3c-4697-9b8f-bff4583b3199"
+    },
+    {
+      "claim_id": "ddf8a2f8-ffcf-4566-b28f-58f70eb6a963",
+      "result_id": "57c46379-5c3c-4697-9b8f-bff4583b3199"
+    },
+    {
+      "claim_id": "4920484a-f091-493a-af10-0e214bee6ba2",
+      "result_id": "57c46379-5c3c-4697-9b8f-bff4583b3199"
+    },
+    {
+      "claim_id": "3eeacef1-dcd0-48e1-b3e5-e9073b0fb5ba",
+      "result_id": "57c46379-5c3c-4697-9b8f-bff4583b3199"
+    },
+    {
+      "claim_id": "97b9a122-b8ca-4f67-a5af-e763ed96da4e",
+      "result_id": "57c46379-5c3c-4697-9b8f-bff4583b3199"
+    },
+    {
+      "claim_id": "4b8b4518-e258-43d6-938d-06db9a931de5",
+      "result_id": "57c46379-5c3c-4697-9b8f-bff4583b3199"
+    },
+    {
+      "claim_id": "dc5b91f8-c9e7-40c3-baeb-eabe033b4433",
+      "result_id": "57c46379-5c3c-4697-9b8f-bff4583b3199"
+    },
+    {
+      "claim_id": "9ccf0214-531b-4bc4-8283-d74ed32fefaa",
+      "result_id": "982729fd-d221-4527-8ece-173953c11afb"
+    },
+    {
+      "claim_id": "bac667a7-6f38-42f4-bb64-ed430156bf29",
+      "result_id": "982729fd-d221-4527-8ece-173953c11afb"
+    },
+    {
+      "claim_id": "4b3ac6fe-ad01-408e-a511-eb790c9f933d",
+      "result_id": "982729fd-d221-4527-8ece-173953c11afb"
+    },
+    {
+      "claim_id": "8c96f776-26bf-4546-871d-87896f29da5b",
+      "result_id": "982729fd-d221-4527-8ece-173953c11afb"
+    },
+    {
+      "claim_id": "128b01b0-4d43-48e0-88db-1e2f10d97626",
+      "result_id": "c8a45c7f-d18d-40e0-94a2-33b3f9ee9b85"
+    },
+    {
+      "claim_id": "a889d4a8-dc31-4408-8cde-097a4f0b3c90",
+      "result_id": "c8a45c7f-d18d-40e0-94a2-33b3f9ee9b85"
+    },
+    {
+      "claim_id": "93d9155b-ddf8-4ac5-b304-e2d55012cb3c",
+      "result_id": "c8a45c7f-d18d-40e0-94a2-33b3f9ee9b85"
+    },
+    {
+      "claim_id": "40571610-268c-4d42-9120-d44306f5e0c6",
+      "result_id": "c8a45c7f-d18d-40e0-94a2-33b3f9ee9b85"
+    },
+    {
+      "claim_id": "ba868cc3-023a-4550-bcac-f0ab7ffb7143",
+      "result_id": "c8a45c7f-d18d-40e0-94a2-33b3f9ee9b85"
+    },
+    {
+      "claim_id": "a8c26c08-7b85-494d-829a-d533377968fd",
+      "result_id": "c8a45c7f-d18d-40e0-94a2-33b3f9ee9b85"
+    },
+    {
+      "claim_id": "33525e4c-754d-4bc0-b843-fd326873d6be",
+      "result_id": "c8a45c7f-d18d-40e0-94a2-33b3f9ee9b85"
+    },
+    {
+      "claim_id": "d3904e7a-bfa6-438f-a5f6-a9c7513e7365",
+      "result_id": "c8a45c7f-d18d-40e0-94a2-33b3f9ee9b85"
+    },
+    {
+      "claim_id": "a669201c-1cbe-4d2b-b764-3f6749f079bb",
+      "result_id": "e1c16b6e-523a-4b5b-9199-f4601d208d90"
+    },
+    {
+      "claim_id": "f73bfbcf-2779-43d3-bdbd-c8de3da2346e",
+      "result_id": "e1c16b6e-523a-4b5b-9199-f4601d208d90"
+    },
+    {
+      "claim_id": "26679cf0-5ef7-4752-a360-d9a038b648df",
+      "result_id": "4e6f5a0d-0abd-4fdb-98ed-88e2eaec9f60"
+    },
+    {
+      "claim_id": "2074ce5e-6b20-4830-9f38-914fdb9e72c0",
+      "result_id": "4e6f5a0d-0abd-4fdb-98ed-88e2eaec9f60"
+    },
+    {
+      "claim_id": "e8ab2e07-d60a-4809-86fe-3551554d7c90",
+      "result_id": "4e6f5a0d-0abd-4fdb-98ed-88e2eaec9f60"
+    },
+    {
+      "claim_id": "f022f553-c762-4018-88ef-d588db39f1b8",
+      "result_id": "4e6f5a0d-0abd-4fdb-98ed-88e2eaec9f60"
+    },
+    {
+      "claim_id": "dbed8e26-17c9-46aa-8559-85e85673fa6d",
+      "result_id": "4e6f5a0d-0abd-4fdb-98ed-88e2eaec9f60"
+    },
+    {
+      "claim_id": "13abfefa-9645-45e7-b284-3bfe458b6e3e",
+      "result_id": "4e6f5a0d-0abd-4fdb-98ed-88e2eaec9f60"
+    },
+    {
+      "claim_id": "6aa8db1a-4256-401e-a2cc-822ed874331b",
+      "result_id": "4e6f5a0d-0abd-4fdb-98ed-88e2eaec9f60"
+    },
+    {
+      "claim_id": "be764f3c-2c26-4ce3-88cc-54bb353b5710",
+      "result_id": "72b7c0f2-2fea-4ee8-abde-3779051c9d9f"
+    },
+    {
+      "claim_id": "1c3826f3-55f8-4e46-a476-b16da8cea1a7",
+      "result_id": "72b7c0f2-2fea-4ee8-abde-3779051c9d9f"
+    },
+    {
+      "claim_id": "50bceb58-347a-42f4-a585-845f001e87a3",
+      "result_id": "72b7c0f2-2fea-4ee8-abde-3779051c9d9f"
+    },
+    {
+      "claim_id": "2604664a-610e-453f-a85e-0510408f421d",
+      "result_id": "72b7c0f2-2fea-4ee8-abde-3779051c9d9f"
+    },
+    {
+      "claim_id": "7c389915-f6a3-4d51-9ff9-3ca1b38451a5",
+      "result_id": "72b7c0f2-2fea-4ee8-abde-3779051c9d9f"
+    },
+    {
+      "claim_id": "da3ce02c-4d68-4791-a41c-2e039485450b",
+      "result_id": "72b7c0f2-2fea-4ee8-abde-3779051c9d9f"
+    },
+    {
+      "claim_id": "31199ed5-4ec7-4ba0-9c2d-522818453669",
+      "result_id": "72b7c0f2-2fea-4ee8-abde-3779051c9d9f"
+    },
+    {
+      "claim_id": "bd81ea0a-0274-4b50-a130-9e55d0bc8dd4",
+      "result_id": "c0032ed5-756e-4e4d-94e8-0105be068834"
+    },
+    {
+      "claim_id": "9682abdf-fc26-4dd5-92b7-4c43528b0d8a",
+      "result_id": "c0032ed5-756e-4e4d-94e8-0105be068834"
+    },
+    {
+      "claim_id": "e1434a1f-0627-444a-9f16-2a8e2ff3835d",
+      "result_id": "c0032ed5-756e-4e4d-94e8-0105be068834"
+    },
+    {
+      "claim_id": "bd1d07c4-650c-4667-a007-d8a826072939",
+      "result_id": "c0032ed5-756e-4e4d-94e8-0105be068834"
+    },
+    {
+      "claim_id": "c2eb54e4-33a9-4fd2-86a0-845f4a7ffb1f",
+      "result_id": "c0032ed5-756e-4e4d-94e8-0105be068834"
+    },
+    {
+      "claim_id": "bcc629e5-5396-4128-b340-99fa565c9f90",
+      "result_id": "99fa1c1c-d011-492e-83a7-ead33ac331ec"
+    },
+    {
+      "claim_id": "727c66ed-3757-4730-967f-044d79a93e85",
+      "result_id": "99fa1c1c-d011-492e-83a7-ead33ac331ec"
+    },
+    {
+      "claim_id": "9692f9ea-b060-4630-b8ac-e8aeb97517c0",
+      "result_id": "99fa1c1c-d011-492e-83a7-ead33ac331ec"
+    },
+    {
+      "claim_id": "be84e9cc-c49d-4790-8547-49fb5fac2577",
+      "result_id": "99fa1c1c-d011-492e-83a7-ead33ac331ec"
+    },
+    {
+      "claim_id": "469591de-f160-4ae1-89a9-03d5e719a84e",
+      "result_id": "99fa1c1c-d011-492e-83a7-ead33ac331ec"
+    },
+    {
+      "claim_id": "c34f0864-91a6-46bd-af83-dd6e8495e325",
+      "result_id": "99fa1c1c-d011-492e-83a7-ead33ac331ec"
+    },
+    {
+      "claim_id": "0278abdb-35c2-4d3b-bc7c-3d1324c19544",
+      "result_id": "99fa1c1c-d011-492e-83a7-ead33ac331ec"
+    },
+    {
+      "claim_id": "19b08639-ba66-418e-bd79-0b0679ae5c16",
+      "result_id": "4e722085-9b98-4b1f-966c-e5feb2155809"
+    },
+    {
+      "claim_id": "d8fcdfc9-c118-4e29-b724-b55a4aa8f333",
+      "result_id": "4e722085-9b98-4b1f-966c-e5feb2155809"
+    },
+    {
+      "claim_id": "a940c82d-8b8c-441b-88ff-ebb041492422",
+      "result_id": "4e722085-9b98-4b1f-966c-e5feb2155809"
+    },
+    {
+      "claim_id": "8be6ba4b-31d0-42a4-b92a-f1fa5a70607d",
+      "result_id": "4e722085-9b98-4b1f-966c-e5feb2155809"
+    },
+    {
+      "claim_id": "bbca2352-7c36-4a4b-901d-66c5394c5aa6",
+      "result_id": "4e722085-9b98-4b1f-966c-e5feb2155809"
+    },
+    {
+      "claim_id": "c09e9750-bf5e-4753-a60f-1a05c7e7fe5f",
+      "result_id": "afc5f9b3-4709-43f1-a05b-26075c5c71e1"
+    },
+    {
+      "claim_id": "3d133148-8b97-4557-ade8-4face4602914",
+      "result_id": "afc5f9b3-4709-43f1-a05b-26075c5c71e1"
+    },
+    {
+      "claim_id": "97b9a122-b8ca-4f67-a5af-e763ed96da4e",
+      "result_id": "afc5f9b3-4709-43f1-a05b-26075c5c71e1"
+    },
+    {
+      "claim_id": "7645c6d6-5660-496d-8103-dca756cb5a38",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "065e8fdf-63ea-451a-9c90-c2c7cb5f62f6",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "30d1c934-4acc-4ffe-ac37-740296176fea",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "8b004609-b3f6-4902-929d-a0c8e7e5d3ce",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "9cdd492c-c1ca-45aa-b5b4-0cf41a0c1c17",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "8ce29644-7f72-40c9-a4c5-0e06bf1a2163",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "36e6b099-19fe-4fd1-9918-8f09a12a361e",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "a1e5732f-47c0-4b07-b78f-2479be3de986",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "71ea5525-157b-48ff-b56a-a139ff0cb717",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "41b260f1-d515-45b8-ab41-955e8d1e22c7",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "a4fdb1fd-32fb-46a9-a38e-9f8749c0c04f",
+      "result_id": "9712a192-f338-4d6a-acba-c122695074ff"
+    },
+    {
+      "claim_id": "2af5dc1b-fe90-482c-a32f-d55c39a92c3a",
+      "result_id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89"
+    },
+    {
+      "claim_id": "7b573080-f23d-4b33-b29e-efb6e02cd26f",
+      "result_id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89"
+    },
+    {
+      "claim_id": "065fbeff-dda4-4360-bf5a-23f0d671d70e",
+      "result_id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89"
+    },
+    {
+      "claim_id": "060e06c0-8628-45c0-98b9-b42dbe849b7b",
+      "result_id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89"
+    },
+    {
+      "claim_id": "0932a047-52e4-4c68-ad61-beede33c2e60",
+      "result_id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89"
+    },
+    {
+      "claim_id": "6465f78e-1886-4e05-aad4-91f6e87209b2",
+      "result_id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89"
+    },
+    {
+      "claim_id": "c487d069-2a83-4e6f-8ba9-f47cb59df20b",
+      "result_id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89"
+    },
+    {
+      "claim_id": "99e69091-81ba-4dc3-ab8b-7b680150c055",
+      "result_id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89"
+    },
+    {
+      "claim_id": "8832b467-f7f7-4d23-8643-41a0fdeec2a6",
+      "result_id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89"
+    },
+    {
+      "claim_id": "a6a28d4a-197a-4b07-b22b-c87f51f8f451",
+      "result_id": "a59cdfca-ac88-431d-8de1-65b9fc4bcc89"
+    },
+    {
+      "claim_id": "22e6b8f7-9214-4834-87cb-fd2376c9c375",
+      "result_id": "4276eae2-11ce-4a42-bf6f-eb0209185468"
+    },
+    {
+      "claim_id": "6372a422-d309-4f63-987c-79609e9c24e0",
+      "result_id": "4276eae2-11ce-4a42-bf6f-eb0209185468"
+    },
+    {
+      "claim_id": "88efeed9-f7af-49eb-a717-786b6ca598e7",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "3bf3783f-7235-4d76-bcc5-a237b039367d",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "df30d135-a4ad-49e7-8bcf-dc8f5f9032fb",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "f2d270da-8714-424a-96cb-22509b60f5ce",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "28f70fbf-527b-49d0-b5d4-52a565d89858",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "ecf59daa-e4a4-4e06-aec9-fd221f4c6956",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "79c550a4-581f-4c56-9fc8-880eccfcbd4d",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "ca22c0e6-51c0-45e3-ab5b-97a8c01f26fe",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "3902f282-4dbb-4122-9996-b9824a2e013c",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "37f1d148-a6c4-4576-ab08-3cc3de102ba0",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "54ee4cc5-e73f-4387-a918-36546217a120",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "1399e9a1-e52e-429b-8e60-e11514a77faf",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "c3542a39-45d6-4678-b5a0-1723036126c3",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "aaa9f298-b231-4143-84ec-940b129d662b",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "e9a7e027-d93e-4e69-94dd-2aef88e7cde2",
+      "result_id": "09b4c003-04e2-43d4-9014-1fb76727f6ad"
+    },
+    {
+      "claim_id": "22bb378a-cd19-4f88-adb0-3d8525c62052",
+      "result_id": "b604287e-dbf5-4922-ad61-1e8e99a1195d"
+    },
+    {
+      "claim_id": "a5ac6157-9697-4656-88e6-7b1d371f9a32",
+      "result_id": "b604287e-dbf5-4922-ad61-1e8e99a1195d"
+    },
+    {
+      "claim_id": "372ad2f0-1c5e-4272-9939-2b040d31b1fa",
+      "result_id": "b604287e-dbf5-4922-ad61-1e8e99a1195d"
+    },
+    {
+      "claim_id": "4cabb805-ebd5-4f3e-a436-cb6b8d014b02",
+      "result_id": "53cf8a76-808d-4119-86ae-563ed6d100d6"
+    },
+    {
+      "claim_id": "27981932-c47a-432f-8712-0c602f65a090",
+      "result_id": "53cf8a76-808d-4119-86ae-563ed6d100d6"
+    },
+    {
+      "claim_id": "24a8f2ac-7023-44be-bf41-09d06b3d4876",
+      "result_id": "53cf8a76-808d-4119-86ae-563ed6d100d6"
+    },
+    {
+      "claim_id": "76887b01-0fb1-4fa7-8466-7616bde717bd",
+      "result_id": "53cf8a76-808d-4119-86ae-563ed6d100d6"
+    },
+    {
+      "claim_id": "18d7e3ac-8fdf-448c-8ff8-70d791c62c2a",
+      "result_id": "53cf8a76-808d-4119-86ae-563ed6d100d6"
+    },
+    {
+      "claim_id": "b370dba7-6dc0-4c8e-99a5-42dbf2110c9a",
+      "result_id": "53cf8a76-808d-4119-86ae-563ed6d100d6"
+    }
+  ],
+  "comparisons": []
+}

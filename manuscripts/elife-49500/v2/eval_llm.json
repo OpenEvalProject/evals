@@ -1,0 +1,529 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "IFI16 knockdown in BCBL-1 cells results in decreased H3K9me3 and increased H3K4me3 recruitment on KSHV promoters, with increased RNA Pol II recruitment on lytic promoters but not the latent pORF73 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by ChIP data in Figure 1A-C showing ~70% IFI16 KD, 6-fold increase in ORF50, consistent changes in H3K9me3 (decrease) and H3K4me3 (increase) across KSHV promoters, and selective RNA Pol II enrichment on lytic promoters. The data are internally consistent and include appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "IFI16 depletion during de novo KSHV infection of TIME cells reduces H3K9me3 recruitment on lytic promoters, increases lytic ORF50 transcripts, decreases latent ORF73 transcripts, and prevents latency establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 are supported by ChIP data (Figure 1F) showing reduced H3K9me3 and increased RNA Pol II on lytic promoters, and qRT-PCR data (Figure 1G-H) showing altered ORF73/ORF50 expression patterns. The interpretation that KSHV fails to establish latency (C92) is a reasonable inference from the data showing increased lytic and decreased latent gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "During lytic reactivation of TRExBCBL1-Rta cells, H3K9me3 and H3K27me3 decrease on the ORF63 promoter while H3K4me3 increases, with RNA Pol II recruitment occurring at days 3-4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by time-course ChIP data in Figure 1I showing dynamic changes in histone modifications during lytic reactivation. The temporal patterns are consistent with ORF63 being a late gene. However, the study lacks biological replicates clearly indicated in the figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Treatment with 100 \u00b5M A366 specifically inhibits H3K9me2/me3 and induces KSHV lytic gene transcription in BCBL-1 cells without affecting IFI16 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by MTT assay (Figure 2A), qRT-PCR (Figure 2B), and Western blot (Figure 2C) data. The specificity of A366 for H3K9me2/me3 and the induction of lytic genes at 100 \u00b5M but not 10 \u00b5M are clearly demonstrated. This provides functional evidence for the importance of H3K9 methylation in KSHV latency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "IFI16 immunoprecipitates pull down significant H3K9 methyltransferase activity, and KSHV infection does not alter this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by enzymatic activity assay data in Figure 2D showing IFI16 pulls down H3K9 MTase activity compared to IgG control, with comparable activities in uninfected and infected conditions. This provides functional evidence for IFI16-H3K9 MTase interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Six H3K9 methyltransferases (SUV39H1, SUV39H2, GLP, G9A, SETDB1, SETDB2) associate with the KSHV genome during de novo infection, as shown by EdU-genome pulldown and immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 are supported by EdU-genome pulldown (Figure 2E) and IFA (Figure 2F) data showing association of six H3K9 MTases with the KSHV genome. The negative controls (RIZ1 not detected, \u03b2-actin not in pulldown) strengthen the findings. The subcellular localization data add important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "IFI16 co-immunoprecipitates efficiently with SUV39H1 and GLP, weakly with G9A, but not with other H3K9 MTases, EZH2, H3, H3K9me3, or HP1\u03b1 in PEL cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 are supported by co-IP data in Figure 3A showing selective interactions between IFI16 and SUV39H1/GLP. The inclusion of multiple negative controls (other MTases, EZH2, H3, HP1\u03b1) and positive control (ASC) strengthens the specificity of the findings. The reverse IPs in Figure 3B confirm these interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "LANA1 interacts with SETDB1, SETDB2, and EZH2, but not with SUV39H1 in PEL cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 are supported by co-IP data in Figure 3A showing LANA1 interactions with SETDB1/SETDB2/EZH2 but not SUV39H1. The EZH2 interaction is consistent with cited literature (Toth et al., 2016). This establishes distinct epigenetic pathways for IFI16 and LANA1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "IFI16 interactions with SUV39H1 and GLP are confirmed in de novo infected TIME cells and by ectopic expression in 293T cells, demonstrating specificity of the interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 are supported by co-IP data in TIME cells (Figure 4A-B) and 293T cells (Figure 4C-D). The use of His-tagged IFI16 and ectopic expression in 293T cells (which lack endogenous IFI16) provides strong evidence that the interactions are specific and not artifacts of the antibody or cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "IFI16 knockdown reduces recruitment of SUV39H1, GLP, G9A, H3K9me3, and H3K9me2 to the KSHV genome during de novo infection, while H3K9me1, total H3, and H3K27me3 remain unaltered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 are supported by EdU-genome pulldown data in Figure 5A showing selective reduction of specific H3K9 MTases and methylation marks upon IFI16 KD. The specificity (no change in H3K9me1, total H3, H3K27me3) strengthens the conclusion that IFI16 specifically recruits SUV39H1/GLP for H3K9me2/me3 deposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "IFI16 knockdown reduces recruitment of SUV39H1, GLP, and G9A at KSHV lytic promoters (ORF63, ORF25, ORF64) in latently infected BCBL-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 is supported by ChIP data in Figure 5B showing reduced recruitment of the three H3K9 MTases at specific lytic promoters upon IFI16 KD. The choice of these promoters is justified as they fall within H3K9me3-enriched regions identified in prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Proximity ligation assay demonstrates physical interaction between IFI16 and SUV39H1/GLP on the KSHV genome, but not with G9A, suggesting G9A may interact indirectly via GLP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are supported by PLA data in Figure 5C showing colocalization of IFI16+SUV39H1 and IFI16+GLP PLA signals with EdU-labeled KSHV genome. The absence of IFI16+G9A PLA signal despite G9A detection in co-IPs suggests indirect interaction, which is a reasonable interpretation supported by literature showing G9A-GLP interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "IFI16 knockout in U2OS cells reduces H3K9me3, SUV39H1, and GLP recruitment on the KSHV ORF63 promoter, and rescue with IFI16 restores recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 are supported by ChIP data in Figures 5D-E showing reduced recruitment in IFI16 KO cells and restoration upon IFI16 rescue. The rescue experiment is critical for establishing causality and ruling out off-target effects of the knockout. Total H3 serving as a control strengthens the specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "PLA in U2OS cells shows IFI16-dependent recruitment of H3K9me3, SUV39H1, and GLP to the KSHV genome, but not H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 are supported by PLA data in Figure 6A-D showing reduced BrdU-genome+H3K9me3, BrdU-genome+SUV39H1, and BrdU-genome+GLP PLA signals in IFI16 KO cells, while BrdU-genome+H3K27me3 signals remain unchanged. This provides single-cell visual confirmation of the ChIP results and demonstrates specificity for H3K9 pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "IFI16 rescue in U2OS 67 cells restores BrdU-genome+H3K9me3, BrdU-genome+SUV39H1, and BrdU-genome+GLP PLA signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 are supported by PLA data in Figure 7A-C showing restoration of PLA signals upon IFI16 transfection in KO cells. The observation that PLA signals increase only in cells expressing IFI16 (not in untransfected cells in the same field) provides strong cell-autonomous evidence for IFI16's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "During lytic reactivation of TRExBCBL-1 cells, SUV39H1, GLP, and IFI16 abundance on the KSHV genome decreases with different kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 are supported by ChIP time-course data in Figure 8A showing differential kinetics of SUV39H1, GLP, and IFI16 loss from the KSHV genome during lytic reactivation. The more rapid loss of GLP compared to SUV39H1 and IFI16 suggests sequential or differential regulation during reactivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Knockdown of SUV39H1 or GLP, but not G9A, induces KSHV lytic gene expression in BCBL-1 cells, demonstrating their importance for latency maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C155 are supported by qRT-PCR data in Figures 8C, E, G showing lytic gene induction upon SUV39H1 or GLP KD but not G9A KD. The differential effects of SUV39H1 (earlier induction) vs GLP (later, stronger induction) vs G9A (no effect) provide functional validation of their roles and support the interpretation that G9A has minimal role in KSHV regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C156"
+    ],
+    "result": "GLP knockdown, but not SUV39H1 or G9A knockdown, results in increased KSHV genome copy numbers in BCBL-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 is supported by DNA-PCR data in Figure 8H showing 2-fold increase in viral genome copies only after GLP KD. This suggests GLP KD leads to more complete lytic reactivation with viral DNA replication, while SUV39H1 KD may induce lytic transcription without full replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C157",
+      "C158"
+    ],
+    "result": "SUV39H1 and GLP knockdown during de novo KSHV infection of TIME cells increases lytic ORF50 transcripts while latent ORF73 transcripts remain unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C158 are supported by qRT-PCR data in Figures 8J-K showing increased ORF50 but not ORF73 upon SUV39H1/GLP KD during de novo infection. This confirms the role of these MTases in establishing latency and demonstrates selectivity for lytic gene repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "HP1\u03b1 colocalizes with the KSHV genome and its knockdown induces lytic gene expression without affecting latent genes or IFI16 expression in BCBL-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C162 are supported by IFA data (Figure 9A) showing HP1\u03b1-genome colocalization and qRT-PCR data (Figure 9D) showing selective lytic gene induction upon HP1\u03b1 KD. The lack of effect on latent genes and IFI16 demonstrates specificity and positions HP1\u03b1 downstream of IFI16-mediated H3K9me3 deposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "IFI16 knockdown reduces HP1\u03b1 recruitment to the KSHV genome, suggesting HP1\u03b1 recruitment depends on IFI16-mediated H3K9me3 deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C165 are supported by EdU-genome pulldown (Figure 9F) and ChIP (Figure 9G) data showing reduced HP1\u03b1 on KSHV genome upon IFI16 KD. The interpretation that HP1\u03b1 recruitment depends on IFI16-mediated H3K9me3 (C165) is reasonable given that IFI16 does not directly interact with HP1\u03b1 (Figure 3A) and HP1\u03b1 is known to bind H3K9me3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C166"
+    ],
+    "result": "HP1\u03b1 abundance on the KSHV genome decreases by ~60% during lytic reactivation of TRExBCBL-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C166 is supported by ChIP data in Figure 9H showing reduced HP1\u03b1 on KSHV genome during reactivation. This is consistent with the loss of H3K9me3 and the H3K9 MTases shown earlier, supporting a model where the entire repressive pathway is dismantled during reactivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C167"
+    ],
+    "result": "HP1\u03b1 knockdown does not significantly induce KSHV genome replication in BCBL-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C167 is supported by DNA-PCR data in Figure 9I showing no significant increase in viral genome copies upon HP1\u03b1 KD. This contrasts with GLP KD and suggests HP1\u03b1 KD induces lytic transcription but not full replication, possibly indicating additional barriers to complete reactivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "IFI16 forms complexes with H3K9 methyltransferases SUV39H1 and GLP in both uninfected and KSHV-infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C67-C70 are supported by co-IP data in Figures 3-4 showing IFI16-SUV39H1 and IFI16-GLP interactions in multiple cell types and infection states. The consistency across different experimental systems (PEL cells, TIME cells, 293T cells, uninfected vs infected) provides strong evidence for these interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C71",
+      "C72"
+    ],
+    "result": "IFI16 recruits SUV39H1 and GLP to the KSHV genome during de novo infection and latency, as demonstrated by reduced recruitment upon IFI16 knockdown/knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C71-C72 are supported by ChIP data (Figures 5A-B, 5D-E) and PLA data (Figures 5C, 6C-D, 7B-C) showing IFI16-dependent recruitment of SUV39H1 and GLP to KSHV genome. The rescue experiments provide strong evidence for causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C171"
+    ],
+    "result": "IFI16-recruited GLP mono- and di-methylates H3K9, while SUV39H1 establishes tri-methylated H3K9me3 marks on the KSHV genome through concerted action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 and C171 propose a sequential mechanism based on known substrate specificities of GLP (me1/me2) and SUV39H1 (me2\u2192me3). While supported by the observation that both enzymes are recruited and H3K9me2/me3 are reduced upon IFI16 KD, direct evidence for the sequential mechanism (e.g., order of recruitment, substrate specificity on KSHV genome) is not provided. The model is plausible but requires additional experiments to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C11",
+      "C75",
+      "C76",
+      "C77",
+      "C172"
+    ],
+    "result": "H3K9me2/me3 depositions serve as docking sites for HP1\u03b1, leading to heterochromatization and silencing of KSHV lytic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C75-C77, and C172 are supported by data showing: (1) IFI16-dependent H3K9me3 deposition, (2) IFI16-dependent HP1\u03b1 recruitment, (3) HP1\u03b1 binding to H3K9me3 (established knowledge), and (4) lytic gene silencing. While the complete mechanistic chain is not directly demonstrated in a single experiment, the individual steps are well-supported and the model is consistent with established chromatin biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C12",
+      "C78",
+      "C185"
+    ],
+    "result": "IFI16 interactions with SUV39H1 and GLP facilitate epigenetic silencing of foreign viral DNA, representing a novel function of this innate immune sensor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C78, and C185 represent the central conclusion of the study. They are supported by the comprehensive data showing: (1) IFI16-MTase interactions, (2) IFI16-dependent recruitment to viral genome, (3) IFI16-dependent H3K9me3 deposition, (4) IFI16-dependent HP1\u03b1 recruitment, and (5) lytic gene silencing. This establishes a novel epigenetic function for IFI16 beyond its known innate immune roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "IFI16 knockdown most significantly reduces H3K9me3 and increases H3K4me3 on KSHV gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by ChIP data in Figure 1C showing consistent changes in H3K9me3 (decrease) and H3K4me3 (increase) across multiple KSHV promoters upon IFI16 KD. The claim that H3K9me3 is 'most significantly' affected is supported by the magnitude and consistency of changes compared to other marks tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "G9A may not directly interact with IFI16 but may be pulled down via its interaction with GLP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 is a reasonable interpretation supported by: (1) G9A detection in co-IPs (Figures 3-4), (2) absence of IFI16+G9A PLA signal (Figure 5C), (3) known G9A-GLP interaction from literature, and (4) minimal functional role of G9A in KSHV regulation (Figure 8G). This interpretation reconciles the biochemical and functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C168",
+      "C169",
+      "C170",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Background knowledge and prior work establishing the context for IFI16's role in viral restriction, KSHV biology, and epigenetic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature and prior work by the authors. They are appropriately cited and provide necessary context for the current study. The claims about IFI16's known functions (C1-C4, C19-C22), KSHV biology (C47-C64), and chromatin biology (C168-C177) are well-established in the field.",
+    "result_type": "MINOR"
+  }
+]

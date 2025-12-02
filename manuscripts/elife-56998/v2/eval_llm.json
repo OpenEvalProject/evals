@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors developed a microfluidic platform that operates within an anaerobic chamber to isolate, cultivate, and sort anaerobic bacteria in picoliter droplets. The platform successfully cultured all 8 ASF strains including extremely oxygen-sensitive anaerobes, and droplets remained stable for several days with sorting at ~30 Hz based on a Wavelet OD metric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C31-C44 collectively demonstrate the technical development and validation of the droplet platform. The successful cultivation of extremely oxygen-sensitive ASF strains (C37, C38) provides strong validation of anaerobic capability. Experimental parameters (droplet volumes C33, loading density C34, sorting rate C42) are clearly documented with supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C87"
+    ],
+    "result": "Droplet cultivation of FMT donor stool across three media showed significantly increased taxonomic richness compared to plates (15-410% increase, p<0.005), with more consistent taxonomic composition across different media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C45-C47, C49, C87 present consistent experimental data with appropriate statistical testing (Mann-Whitney U test, p<0.005). The range of richness increase (15-410%) is clearly documented and medium-dependent. The claim of reduced variability across media (C49) is supported by Figure 2d and supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C88",
+      "C89"
+    ],
+    "result": "Droplet cultivation enhanced representation of rare taxa (<1% in stool) and showed phylum-specific differences, with greater richness of Bacteroidetes and Proteobacteria in droplets versus plates, while Firmicutes showed greater diversity on plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C58, C88-C89 are supported by experimental data with statistical analysis (p<0.005, Mann-Whitney U test). The detection of 105 vs 57 low-abundance ASVs (C58) provides quantitative support. However, the authors acknowledge sample size limitations for within-media comparisons (C52-C53), appropriately tempering conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Hierarchical clustering of Bacteroides oligotypes showed droplet-based cultures were more similar to raw stool than plate-based cultures (p<0.005), indicating reduced cultivation bias in droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by oligotyping analysis with appropriate statistical testing (multiscale bootstrap resampling, p<0.005). The analysis focuses on a single genus (Bacteroides) which limits generalizability, but the approach is methodologically sound for assessing cultivation bias at high taxonomic resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C90",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Sorting droplets based on colony density (Wavelet OD) with low false positive rate (\u22648%) further enhanced low-abundance taxa, increasing amplified ASVs from 6.5 to 12.5 on average, with particular enrichment of six Alistipes populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67, C90, C99-C101 demonstrate the sorting functionality with quantitative data. The false positive rate (C63) is appropriately characterized. The increase in amplified ASVs (C65-C66) is modest but statistically significant (p<0.005, Kolmogorov-Smirnov test, C64). The Alistipes enrichment (C99-C101) provides a specific example, though the mechanistic interpretation (slow growth) is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C91"
+    ],
+    "result": "Antibiotic resistance screening in droplets detected 21 organisms with strong resistance that were not detected on plates, including known resistance patterns and clinically relevant organisms like Pseudomonas and Shewanella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C77-C85, C91 present antibiotic screening data across three antibiotics. The detection of 21 additional resistant organisms (C6, C78) is clearly documented. Known resistance patterns (C79-C81) provide validation. However, the filtering criteria (\u22650.5% abundance, 10x difference) are empirically defined and may affect the count. The use of sorting to remove nonviable cells in droplets but not plates introduces a methodological difference that could contribute to the observed differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Plate-based dilution cultures would require at least 65 standard culture plates to have a 90% chance of isolating the 6 Alistipes populations enhanced by droplet sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by a probabilistic calculation based on Poisson statistics (Figure 5\u2014figure supplement 1). The calculation assumes optimal conditions (f=1) where every cell grows, making this a conservative estimate. The mathematical approach is sound, though it relies on assumptions about plating density and growth probability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C124",
+      "C125"
+    ],
+    "result": "Bacteria remained viable after droplet cultivation and sorting, as demonstrated by successful recovery and Sanger sequencing of 24 colonies (Hafnia 12/24, Enterococcus 8/24, Bacteroides 4/24) from sorted droplets streaked onto plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C124-C125 demonstrate compatibility with downstream techniques. The Sanger sequencing of 24 colonies (C70) provides direct evidence of viability. However, the sample size is small and only three genera were detected, which may not fully represent the diversity present in the sorted droplets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C36",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Physical isolation in droplets eliminates interspecies competition that favors fast-growers in plate cultures, as evidenced by the lack of Bacteroidetes and Proteobacteria on YCFA plates suggesting competitive advantage of Firmicutes in that medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C36, C95-C98 present the competition elimination hypothesis with supporting observational data. The phylum-specific differences on YCFA plates (C96-C98) provide indirect evidence. However, the mechanistic interpretation is largely inferential\u2014while physical isolation logically prevents competition, the study does not directly test this mechanism versus alternative explanations like differential quorum sensing or nutrient availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Faster accumulation of quorum sensing molecules in small droplet volumes may contribute to improved growth, with Hafnia spp. (predominant in droplets, 24% mean abundance) as a likely candidate given that some Hafnia alvei strains are modulated by quorum sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C30, C102-C105 present the quorum sensing hypothesis supported by citations (C29-C30, C102-C103, C105) and the observation that Hafnia spp. were predominant (C104). However, the study does not directly test quorum sensing involvement. The connection between Hafnia predominance and quorum sensing is speculative (C104-C105), and the authors acknowledge uncertainty about the extent of quorum sensing utilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Some organisms grow preferentially in competitive plate environments while a larger majority prefer confined isolation in droplets, likely due to removal of competition or increased quorum sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is based on the observation that 27 ASVs were only detected on plates versus 6 only in droplets (C54-C55, though there appears to be a textual error). The mechanistic interpretation is speculative and the study does not distinguish between competition removal and quorum sensing effects. The claim also conflicts with the overall finding that droplets show greater richness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The technology serves as an effective tool for screening FMT donor samples, addressing the clinical need highlighted by a case where rare ESBL E. coli went undetected in initial screening and caused fatal bacteremia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 connect the technology to a clinical application. The case study (C106-C108) is well-documented by citation. The inference that the technology addresses this need (C109) is reasonable given the demonstrated ability to detect 21 additional resistant organisms (C6, C78). However, the study did not specifically test for ESBL E. coli detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C116",
+      "C117"
+    ],
+    "result": "Droplet volume decreased approximately 10-fold over 4 days due to evaporation in the arid anaerobic chamber atmosphere, limiting longitudinal studies, though this could potentially be resolved through humidity control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C116 present experimental observations of evaporation with quantitative data (10-fold decrease). This is a clear technical limitation. The proposed solution (C117) is speculative but reasonable. The limitation is honestly reported and does not undermine the main findings conducted over 1-2 days.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Hafnia/Obesumbacterium was the most abundant ASV in nearly all droplet samples with 24% mean abundance across media and cultivation time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 presents a clear observational finding supported by experimental data (Figure 2\u2014figure supplement 5). The high abundance of this taxon is consistently observed across conditions, though the biological significance and whether this represents a cultivation artifact is not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "41 ASVs detected in cultivation experiments were not detected in raw stool sequencing, likely due to insufficient sequencing depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 presents an observation with a reasonable interpretation about sequencing depth limitations. This highlights that some 'rare' taxa may be artifacts of sequencing depth rather than true biological rarity, which is an important consideration for interpreting cultivation enrichment results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C86",
+      "C92",
+      "C93",
+      "C94",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The manuscript provides extensive background on limitations of traditional cultivation, prior microfluidic approaches, droplet microfluidics capabilities, and the clinical importance of antibiotic resistance screening for FMT applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C28, C71-C76, C86, C92-C94, C118-C120 provide background context supported by appropriate citations. These claims establish the rationale for the study and are generally well-supported by the literature. They do not represent novel findings but provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C121",
+      "C122",
+      "C123",
+      "C126"
+    ],
+    "result": "The authors discuss future directions including commercial availability of droplet generators, need for commercial anaerobic sorters, limitations for organisms requiring co-culture, and potential improvements through defined media, combinatorial gradients, or modified surfactants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C115, C121-C123, C126 are primarily speculative about future developments and applications. While C110 about commercial availability is factual, most other claims (C111-C112, C117, C121-C123, C126) are speculative. Claims about limitations for co-culture dependent organisms (C113-C115) are supported by citations but not tested in this study.",
+    "result_type": "MINOR"
+  }
+]

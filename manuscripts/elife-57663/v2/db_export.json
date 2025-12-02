@@ -1,0 +1,1923 @@
+{
+  "submission": {
+    "id": "61c8dc27-8ae8-4cb4-9e7b-5aa54e9c98fc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:38:56.216554Z",
+    "updated_at": "2025-12-02T17:38:56.216554Z"
+  },
+  "content": [
+    {
+      "id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "submission_id": "61c8dc27-8ae8-4cb4-9e7b-5aa54e9c98fc",
+      "content_type": "manuscript",
+      "content_text": "# Diverse nucleosome Site-Selectivity among histone deacetylase complexes\n\n## Authors\n\n- Zhipeng A Wang<sup>1</sup> ([ORCID: 0000-0002-5693-7359](https://orcid.org/0000-0002-5693-7359))\n- Christopher J Millard<sup>3</sup>\n- Chia-Liang Lin<sup>3</sup>\n- Jennifer E Gurnett<sup>3</sup>\n- Mingxuan Wu<sup>1</sup>\n- Kwangwoon Lee<sup>1</sup> ([ORCID: 0000-0002-2021-5186](https://orcid.org/0000-0002-2021-5186))\n- Louise Fairall<sup>3</sup>\n- John WR Schwabe<sup>3</sup> ([ORCID: 0000-0003-2865-4383](https://orcid.org/0000-0003-2865-4383)) \u2020\n- Philip A Cole<sup>1</sup> ([ORCID: 0000-0001-6873-7824](https://orcid.org/0000-0001-6873-7824)) \u2020\n\n### Affiliations\n\n1. Division of Genetics, Department of Medicine, Brigham and Women\u2019s Hospital Boston United States\n2. Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School Boston United States\n3. Leicester Institute of Structural and Chemical Biology, Department of Molecular and Cell Biology, University of Leicester Leicester United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHistone acetylation regulates chromatin structure and gene expression and is removed by histone deacetylases (HDACs). HDACs are commonly found in various protein complexes to confer distinct cellular functions, but how the multi-subunit complexes influence deacetylase activities and site-selectivities in chromatin is poorly understood. Previously we reported the results of studies on the HDAC1 containing CoREST complex and acetylated nucleosome substrates which revealed a notable preference for deacetylation of histone H3 acetyl-Lys9 vs. acetyl-Lys14 (Wu et al, 2018). Here we analyze the enzymatic properties of five class I HDAC complexes: CoREST, NuRD, Sin3B, MiDAC and SMRT with site-specific acetylated nucleosome substrates. Our results demonstrate that these HDAC complexes show a wide variety of deacetylase rates in a site-selective manner. A Gly13 in the histone H3 tail is responsible for a sharp reduction in deacetylase activity of the CoREST complex for H3K14ac. These studies provide a framework for connecting enzymatic and biological functions of specific HDAC complexes.\n\n## Introduction\n\nReversible histone acetylation (Cole, 2008) regulates a range of major fundamental biological processes including gene expression, DNA replication, cell growth, and differentiation (Jamaladdin et al., 2014). Histone acetyltransferases (HATs) catalyze Lys sidechain acetylation on the N-terminal tails of each of the four core histones (Weinert et al., 2018), H2A, H2B, H3, and H4 that comprise nucleosomes, the building blocks of chromatin (Helin and Dhanak, 2013;\u00a0Figure 1A). Enzymological and cellular analysis has shown that particular HATs such as p300/CBP, PCAF/GCN5, and Myst family members display varying degrees of site selectivity in the context of histone tail peptides and/or chromatin (Shortt et al., 2017). For example, p300/CBP is best known to acetylate Lys18 and Lys27 in histone H3 (Dancy and Cole, 2015), whereas PCAF/GCN5 prefers to acetylate Lys14 and Lys9 of histone H3 (Ali et al., 2018). Histone deacetylases (HDACs) remove acetyl-Lys modifications in chromatin and other proteins and belong to two major families in humans (Taunton et al., 1996), classical HDACs which include 11 Zn metallohydrolase enzymes and seven sirtuins (Wang et al., 2017), that catalyze NAD-dependent Lys deacetylation (Falkenberg and Johnstone, 2014). The class I HDACs, HDAC1, HDAC2, and HDAC3 are relatively similar at the amino acid sequence level and show overlapping pharmacological sensitivities to the benzamide class of HDAC inhibitors represented by entinostat (Yang et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig1-v2.jpg)\n\n**Figure 1.:** (A) Different acetylation sites on H3 N-terminal tail studied in this manuscript; (B) Components of four well- established HDAC1 complexes CoREST (LSD1, HDAC1, CoREST1), NuRD (MTA1, HDAC1, RBBP4), Sin3B (Sin3, HDAC1, RBBP4), MiDAC (MIDEAS, HDAC1, DNTTP1), and one HDAC3 complex SMRT (GPS2-NCoR2 chimera, HDAC3, and\u00a0TBL1 ).\n\nHDAC1 and HDAC2 (Kelly and Cowley, 2013) are the most similar HDACs and are interchangeably found in a variety of multisubunit protein complexes including CoREST, Sin3(A/B), NuRD, and MiDAC whereas HDAC3 is commonly associated with the SMRT/NCoR complex (Bantscheff et al., 2011;\u00a0Figure 1B). The CoREST (Humphrey et al., 2001), Sin3 (Laherty et al., 1997), NuRD (Xue et al., 1998), (Zhang et al., 1999), and SMRT (Guenther et al., 2000), (Wen et al., 2000), (Li et al., 2000) complexes are generally believed to be involved in silencing of gene expression and are recruited by various transcription factors to chromatin in a cell type and cell state dependent manner (Ooi and Wood, 2007). Less is known about the MiDAC complex although it has been associated with mitotic processes (Bantscheff et al., 2011). Recent structural studies on each of these five HDAC complexes have provided insights into their distinct molecular architectures (Millard et al., 2017) (CoREST (Song et al., 2020), NuRD (Millard et al., 2016), Sin3A (Clark et al., 2015), MiDAC (Itoh et al., 2015), and SMRT (Watson et al., 2012a) and inositol phosphates have been shown to have varying roles in regulating their stabilities and catalytic activities (Millard et al., 2013).\n\nHistone substrate site-selectivity experiments with HDAC enzymes have generally involved analyzing the isolated HDAC polypeptides or catalytic domains and acetyl-Lys containing histone peptide tails rather than the more physiological HDAC complexes and nucleosome substrates (Zhang et al., 2016), (Riester et al., 2007), (Gurard-Levin et al., 2009). Such studies have typically shown little to no amino acid sequence site-selectivities for HDACs. As the physiological enzyme forms of HDAC1-3 exist in multisubunit complexes (Millard et al., 2017) and the natural substrates are chromatin comprised of nucleosomes, histone octamers wrapped by 146 bp of double stranded DNA, the biological relevance of the free HDAC and histone tail substrate peptide experiments is unclear. Recent studies on the CoREST complex and acetylated nucleosome substrates revealed a notable preference for deacetylation of histone H3 acetyl-Lys9 vs. acetyl-Lys14 (Wu et al., 2018). This was especially interesting because the CoREST complex also includes the enzyme LSD1 which specifically demethylates methyl-Lys4 in histone H3 and this activity is strongly inhibited when the H3 tail also contains acetyl-Lys14 but not acetyl-Lys9 (Kalin et al., 2018). These properties suggest a biological role in histone H3 marked by Lys14 acetylation and Lys4 methylation to protect against CoREST complex silencing. The CoREST complex enzymatic studies also raise the possibility that different HDAC complexes may show distinct deacetylase kinetics and nucleosome site selectivities.\n\nIn this study, we evaluate the catalytic actions of five purified class I HDAC complexes CoREST, MiDAC, NuRD, Sin3B, and SMRT with five different histone H3 acetylated mononucleosomes as well as the corresponding free histone H3 substrates. We find that the kinetics of the HDAC complexes across the range of free acetylated histone H3 substrates are fairly similar, whereas there are large differences between the complexes with respect to deacetylase rates and site-selectivity with nucleosome substrates. Among these complexes, the CoREST complex shows a special resistance to H3K14ac which we find is largely driven by the preceding Gly13 residue.\n\n## Results\n\n### Production of H3 acetylated nucleosomes and HDAC complexes\n\nSemisynthetic X. laevis histone H3 proteins (Wang et al., 2015) mono-acetylated at positions Lys9, Lys14, Lys18, Lys23, and Lys27 were prepared using F40 sortase (Piotukh et al., 2011). In this approach, the N-terminal tails aa1-34 were prepared as synthetic peptides containing the acetyl-Lys and terminating in a depsipeptide linkage between Thr and Gly and the H3 globular domain aa34-135 was\u00a0produced recombinantly. F40 sortase treatment of the H3 peptide and H3 globular domain catalyzes transpeptidation leading to ligation of the fragments to produce pure, scarless full-length modified histone H3s (Figure 2A\u2013D and Figure 2\u2014figure supplements 1\u20132). Western blot analysis with the site-specific relevant acetyl-Lys antibodies demonstrated that each of the semisynthetic histone H3s contained the designated marks (Figure 3\u2014figure supplement 1 and Wu et al., 2018). The semisynthetic acetylated H3s were incorporated into mononucleosomes containing 146 bp DNA 601 Widom sequence (Luger et al., 1997;\u00a0Figure 2\u2014figure supplement 3A\u2013B). The HDAC complexes CoREST (LSD1, HDAC1, CoREST1), NuRD (MTA1, HDAC1, RBBP4), Sin3B (Sin3, HDAC1, RBBP4), MiDAC (MIDEAS, HDAC1, DNTTIP1), and SMRT (GPS2-NCOR2 chimera, HDAC3, and\u00a0TBL1) were expressed in HEK293F cells by transient transfection of three plasmids encoding the relevant proteins (Figure 3\u2014figure supplement 2A). The details of how these complexes have been arrived at and are produced have been described previously (Song et al., 2020), (Millard et al., 2016), (Clark et al., 2015), (Itoh et al., 2015), (Watson et al., 2012a), (Zhang et al., 2018), (Watson et al., 2012b), (Portolano et al., 2014). In general, the two non-HDAC proteins in each case were selected based on the following criteria: 1) A set of proteins that included both well-established HDAC and nucleosome binding partners for a given complex, 2) Efficient transient co-expression of soluble proteins in HEK293F that stay associated by immunoaffinity chromatography and lead to relatively pure and concentrated complexes in peak fractions (>50% purity), 3) The ability of the core complexes to be reproducibly isolated as monodisperse peaks in appropriate stoichiometries after size exclusion chromatography. The HDAC complexes employed here were shown to be relatively pure and in the expected stoichiometries by SDS-PAGE (Figure 3\u2014figure supplement 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig2-v2.jpg)\n\n**Figure 2.:** (A) Synthesis of H3 proteins with site-specific acetylations; gH3: globular region of histone H3; (B) MALDI-MS for a semi-synthetic histone H3 product, using H3K27ac as an example, *: an unknown minor impurity; (C) SDS-PAGE of all the H3 proteins with acetylations, as H3K9ac, H3K14ac, H3K18ac, H3K23ac, H3K27ac, H3K9acR8G, H3K14acG13R; (D) Native 6% TBE gel of the nucleosome folding results with acetylated H3s, each showing\u00a0\u226595% purity. #: minor free DNA band.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Final product with single charged peak (1H+) and double charged peak (2H+) are labeled; minor gH3 impurity is also labeled; For H3K9ac(C110A) and H3K27ac, *: an unknown minor impurity.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Assembly of nucleosome with site-specific acetylated H3 in vitro with 146 bp Widom 601 DNA; (B) SDS-PAGE for octamer, using H3K9ac and H3K14ac as examples.\n\n**Table 1.**\n Rate constants of different HDAC1/HDAC3 complexes on various histone proteins with site-specific acetylation.Kinetic values shown are\u00a0\u00b1\u00a0S.E.M. For each enzymatic reaction on histone proteins: the semi-synthetic H3K9/14/18/23/27ac histone H3 proteins (1.0 \u03bcM) were incubated with different HDAC1 and HDAC3 complexes at the following concentrations (2 nM CoREST, 10 nM MiDAC, 5 nM NuRD, 4 nM Sin3B, 2 nM SMRT, and 5 nM HDAC1, n\u00a0=\u00a02\u20135) under a reaction buffer of 50 mM HEPES 7.5 containing 100 mM KCl, 100 \u03bcM IP6, and 0.2 mg/mL BSA at 37 \u00b0C. The reaction time was counted, and multiple samples were taken at different time points between 0\u201330 min. The complexes include CoREST, NuRD, Sin3B, MiDAC, and SMRT, together with free HDAC1 enzyme. The kinetic data were divided by a factor of 5 in order to be comparable with the kinetic data on nucleosomes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Normalized V/[E] (min\u22121)</th>\n      <th>HDAC1</th>\n      <th>CoREST(RCOR1)</th>\n      <th>MiDAC(MiDEAS)</th>\n      <th>NuRD(MTA1)</th>\n      <th>Sin3B(Sin3)</th>\n      <th>SMRT(NCoR2)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>H3K9ac</td>\n      <td>0.30\u00a0\u00b1\u00a00.046</td>\n      <td>2.1\u00a0\u00b1\u00a00.38</td>\n      <td>0.42\u00a0\u00b1\u00a00.086</td>\n      <td>0.84\u00a0\u00b1\u00a00.38</td>\n      <td>0.56\u00a0\u00b1\u00a00.15</td>\n      <td>0.44\u00a0\u00b1\u00a00.10</td>\n    </tr>\n    <tr>\n      <td>H3K14ac</td>\n      <td>0.65\u00a0\u00b1\u00a00.40</td>\n      <td>2.8\u00a0\u00b1\u00a00.18</td>\n      <td>0.79\u00a0\u00b1\u00a00.29</td>\n      <td>1.5\u00a0\u00b1\u00a00.58</td>\n      <td>1.1\u00a0\u00b1\u00a00.093</td>\n      <td>0.78\u00a0\u00b1\u00a00.34</td>\n    </tr>\n    <tr>\n      <td>H3K18ac</td>\n      <td>1.1\u00a0\u00b1\u00a00.27</td>\n      <td>1.8\u00a0\u00b1\u00a00.37</td>\n      <td>0.45\u00a0\u00b1\u00a00.29</td>\n      <td>0.86\u00a0\u00b1\u00a00.32</td>\n      <td>1.2\u00a0\u00b1\u00a00.24</td>\n      <td>1.5\u00a0\u00b1\u00a00.57</td>\n    </tr>\n    <tr>\n      <td>H3K23ac</td>\n      <td>0.64\u00a0\u00b1\u00a00.10</td>\n      <td>2.6\u00a0\u00b1\u00a00.55</td>\n      <td>0.22\u00a0\u00b1\u00a00.037</td>\n      <td>0.36\u00a0\u00b1\u00a00.12</td>\n      <td>0.93\u00a0\u00b1\u00a00.20</td>\n      <td>0.65\u00a0\u00b1\u00a00.32</td>\n    </tr>\n    <tr>\n      <td>H3K27ac</td>\n      <td>1.1\u00a0\u00b1\u00a00.25</td>\n      <td>2.0\u00a0\u00b1\u00a00.35</td>\n      <td>0.43\u00a0\u00b1\u00a00.038</td>\n      <td>1.5\u00a0\u00b1\u00a00.48</td>\n      <td>1.1\u00a0\u00b1\u00a00.31</td>\n      <td>1.8\u00a0\u00b1\u00a00.80</td>\n    </tr>\n  </tbody>\n</table>\n\n### Deacetylase assays with HDAC complexes\n\nEach of the HDAC complexes was assayed with isolated acetylated histone H3 proteins or acetylated nucleosomes as substrates, using Western blot to monitor the disappearance of the requisite acetyl-Lys modification. The five HDAC complexes displayed robust catalytic activities with isolated acetylated H3 substrates with velocities (V/E) averaging in the range of 0.5\u20132 min\u22121 and modest differences (largely\u00a0<3 fold) in acetyl-Lys site-selectivity among K9ac, K14ac, K18ac, K23ac, and K27ac. These HDAC complexes show similar deacetylase activities as the isolated commercial HDAC1 (averaging\u00a0~0.8 min\u22121) with free histone H3 substrates. These results are generally consistent with the prior studies that have indicated that local amino acid context within peptide substrates does not have a large impact on HDAC-catalyzed deacetylation kinetics (Table 1, Figure 4\u2014figure supplements 1\u20136A\u2013E,G).\n\nIn contrast to the results with isolated H3 substrates, the results with acetylated nucleosome substrates showed dramatic differences among the HDAC complexes. The HDAC complex velocities (V/E) with acetylated nucleosomes varied over 200-fold, ranging from\u00a0<0.005 min\u22121 to 1.2 min\u22121. The MiDAC complex showed the fastest velocities with V/E up to 1.2 min\u22121 whereas the NuRD and Sin3B complexes showed V/E\u00a0~\u00a00.007 min\u22121. The CoREST and SMRT complexes were intermediate with V/E values averaging in the range of 0.03\u20130.1 min\u22121 (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig3-v2.jpg)\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** SDS-PAGE with histone H3K9ac, H3K23ac and H3K27ac was stained by (A) Coomassie, or transferred to membrane followed by blotting with (B) anti-H3K9ac, (C) anti-H3K23ac, or (D) anti-H3K27ac, separately.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** CoREST including LSD1 (1\u2013852), HDAC1 (1\u2013482), Flag tagged CoREST1(86\u2013485); NuRD including Flag tagged MTA1 (1\u2013715), HDAC1 (1\u2013482), RBBP4 (1\u2013425); Sin3B including Flag tagged Sin3B (1\u20131162), HDAC1 (1\u2013482), RBBP4(1\u2013425); MiDAC including Flag tagged MIDEAS (628-887), HDAC1 (1\u2013482), DNTTP1(1\u2013329), and SMRT including Flag tagged GPS2-NCOR2 chimera ((1-49 - 220-480)), HDAC3 (1\u2013428), TBL1(1-526) in HEK293F cells. (A) Scheme of the expression and purification of HDAC1 and HDAC3 complexes from mammalian HEK293F cells; (B) SDS-PAGE for four HDAC1 and HDAC3 complexes. The HDAC1 and HDAC3 are shown with black arrows. The scaffold proteins are shown in red, and the third components of each complex are shown in blue. The impurity bands and calculated purity of each HDAC complexes as for CoREST 84% purity, *: impurity band 1, #: impurity band 2; for NuRD 93% purity, *: impurity band 1; for Sin3B, 63% purity, *: impurity band 1, #: impurity band 2, \u2020: impurity band 3; for MiDAC 84% purity, *: impurity band 1, #: impurity band 2; for SMRT 99% purity, no significant impurity band.\n\nAmong the five HDAC complexes, there were distinct substrate selectivity features that are notable. CoREST showed similar velocities (V/E 0.06\u20130.1 min\u22121) for K9ac, K18ac, K23ac, and K27ac that were markedly greater than the V/E for K14ac (<0.005 min\u22121). In contrast, the MiDAC complex velocity for deacetylating K9ac (V/E 1.2 min\u22121) was only about 2-fold greater than for K14ac (V/E 0.52 min\u22121). However, the MiDAC complex deacetylated K23ac at a much lower rate (V/E 0.048 min\u22121) relative to K9ac removal and in general, MiDAC deacetylase activity decreased when comparing more C-terminal acetyl-Lys sites in H3 with more N-terminal locations (Figure 4A\u2013F). The one HDAC3 complex investigated here, SMRT, showed the highest rates of deacetylase activities on K9ac and K27ac and in general had more similar rates across the five sites compared with CoREST and MiDAC. The activities of NuRD and Sin3B displayed very low similar deacetylase activity at every H3 acetyl-Lys site (Table 2, Figure 4\u2014figure supplements 1\u20136A\u2013F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig4-v2.jpg)\n\n**Figure 4.:** (A) nucleosome with H3K9ac, n\u00a0=\u00a02, V/E\u00a0=\u00a01.2\u00a0\u00b1\u00a00.19 min\u22121; (B) nucleosome with H3K14ac, n\u00a0=\u00a03, V/E\u00a0=\u00a00.52\u00a0\u00b1\u00a00.034 min\u22121; (C) nucleosome with H3K18ac, n\u00a0=\u00a02, V/E\u00a0=\u00a00.17\u00a0\u00b1\u00a00.0051 min\u22121; (D) nucleosome with H3K23ac, n\u00a0=\u00a04, V/E\u00a0=\u00a00.048\u00a0\u00b1\u00a00.0071 min\u22121; (E) nucleosome with H3K27ac, n\u00a0=\u00a05, V/E\u00a0=\u00a00.18\u00a0\u00b1\u00a00.036 min\u22121, and (F) the curve fitting for kinetics analysis.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0H3K9ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a03 for histone assay), (B) H3K14ac (n\u00a0=\u00a03 for nucleosome assay; n\u00a0=\u00a02 for histone assay); n\u00a0=\u00a03 for histone assay), (C) H3K18ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a02 for histone assay), (D) H3K23ac (n\u00a0=\u00a04 for nucleosome assay; n\u00a0=\u00a06 for histone assay), (E) H3K27ac (n\u00a0=\u00a03 for nucleosome assay; n\u00a0=\u00a02 for histone assay). (F) Curve fitting for nucleosome kinetics with 30 nM CoREST labeled in the graph, and G. Curve fitting for histone kinetics with 2 or 2.5 nM CoREST labeled in the graph.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A)\u00a0H3K9ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a02 for histone assay), (B) H3K14ac (n\u00a0=\u00a03 for nucleosome assay; n\u00a0=\u00a03 for histone assay), (C) H3K18ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a02 for histone assay), (D) H3K23ac (n\u00a0=\u00a04 for nucleosome assay; n\u00a0=\u00a04 for histone assay), (E) H3K27ac (n\u00a0=\u00a05 for nucleosome assay; n\u00a0=\u00a05 for histone assay). (F) Curve fitting for nucleosome kinetics with 5 nM MiDAC labeled in the graph, and G. Curve fitting for histone kinetics with 10 nM MiDAC labeled in the graph.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A)\u00a0H3K9ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a02 for histone assay), (B) H3K14ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a02 for histone assay), (C) H3K18ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a02 for histone assay), (D) H3K23ac (n\u00a0=\u00a03 for nucleosome assay; n\u00a0=\u00a03 for histone assay), (E) H3K27ac (n\u00a0=\u00a03 for nucleosome assay; n\u00a0=\u00a03 for histone assay). (F) Curve fitting for nucleosome kinetics with 80 nM NuRD labeled in the graph, and G. Curve fitting for histone kinetics with 2 or 5 nM NuRD labeled in the graph.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A)\u00a0H3K9ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a02 for histone assay), (B) H3K14ac (n\u00a0=\u00a03 for nucleosome assay; n\u00a0=\u00a03 for histone assay), (C) H3K18ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a02 for histone assay), (D) H3K23ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a02 for histone assay), (E) H3K27ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a02 for histone assay). (F) Curve fitting for nucleosome kinetics with 45, 48 or 60 nM Sin3B labeled in the graph, and (G) Curve fitting for histone kinetics with 4 nM Sin3B labeled in the graph.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A)\u00a0H3K9ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a03 for histone assay), (B) H3K14ac (n\u00a0=\u00a03 for nucleosome assay; n\u00a0=\u00a04 for histone assay), (C) H3K18ac (n\u00a0=\u00a05 for nucleosome assay; n\u00a0=\u00a04 for histone assay), (D) H3K23ac (n\u00a0=\u00a05 for nucleosome assay; n\u00a0=\u00a03 for histone assay), (E) H3K27ac (n\u00a0=\u00a03 for nucleosome assay; n\u00a0=\u00a04 for histone assay). (F) Curve fitting for nucleosome kinetics with 60 nM SMRT labeled in the graph, and (G) Curve fitting for histone kinetics with 2 or 5 nM SMRT labeled in the graph.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A)\u00a0H3K9ac (n\u00a0=\u00a03 for nucleosome assay; n\u00a0=\u00a03 for histone assay), (B) H3K14ac (n\u00a0=\u00a05 for nucleosome assay; n\u00a0=\u00a03 for histone assay), (C) H3K18ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a04 for histone assay), (D) H3K23ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a03 for histone assay), (E) H3K27ac (n\u00a0=\u00a02 for nucleosome assay; n\u00a0=\u00a04 for histone assay). (F) Curve fitting for nucleosome kinetics with 60 nM HDAC1 labeled in the graph; and (G) Curve fitting for histone kinetics with 5 or 10 nM HDAC1 labeled in the graph.\n\n**Table 2.**\n Rate constants of different HDAC1 and HDAC3 complexes on various nucleosomes with site-specific acetylation on H3.Kinetic values shown are\u00a0\u00b1\u00a0S.E.M. For each enzymatic reaction on nucleosomes: the semi-synthetic H3K9/14/18/23/27ac nucleosomes (100 nM) were incubated with different HDAC1 and HDAC3 complexes at the following concentrations (30 nM CoREST, 5 nM MiDAC, 80 nM NuRD, 45 nM Sin3B, 60 nM SMRT, and 60 nM HDAC1, n\u00a0=\u00a02\u20135), under a reaction buffer of 50 mM HEPES 7.5 containing 100 mM KCl, 100 \u03bcM IP6, and 0.2 mg/mL BSA at 37 \u00b0C. The reaction time was counted, and multiple samples were taken at different time points generally between 0\u2013120 min (The MiDAC complex on H3K9ac was between 0\u201390 min). The complexes include CoREST, NuRD, Sin3B, MiDAC, and SMRT, together with free HDAC1 enzyme.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>V/[E] (min\u22121)</th>\n      <th>HDAC1</th>\n      <th>CoREST(RCOR1)</th>\n      <th>MiDAC(MiDEAS)</th>\n      <th>NuRD(MTA1)</th>\n      <th>Sin3B(Sin3)</th>\n      <th>SMRT(NCoR2)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>H3K9ac</td>\n      <td>N.D.</td>\n      <td>0.10\u00a0\u00b1\u00a00.012</td>\n      <td>1.2\u00a0\u00b1\u00a00.19</td>\n      <td>0.012\u00a0\u00b1\u00a00.0032</td>\n      <td>0.0050\u00a0\u00b1\u00a00.0043</td>\n      <td>0.046\u00a0\u00b1\u00a00.0045</td>\n    </tr>\n    <tr>\n      <td>H3K14ac</td>\n      <td>N.D.</td>\n      <td>&lt;0.005</td>\n      <td>0.52\u00a0\u00b1\u00a00.034</td>\n      <td>0.0091\u00a0\u00b1\u00a00.00080</td>\n      <td>&lt;0.005</td>\n      <td>0.019\u00a0\u00b1\u00a00.0022</td>\n    </tr>\n    <tr>\n      <td>H3K18ac</td>\n      <td>N.D.</td>\n      <td>0.062\u00a0\u00b1\u00a00.0019</td>\n      <td>0.17\u00a0\u00b1\u00a00.0051</td>\n      <td>0.0046\u00a0\u00b1\u00a00.00088</td>\n      <td>0.0082\u00a0\u00b1\u00a00.0030</td>\n      <td>0.021\u00a0\u00b1\u00a00.0039</td>\n    </tr>\n    <tr>\n      <td>H3K23ac</td>\n      <td>N.D.</td>\n      <td>0.067\u00a0\u00b1\u00a00.010</td>\n      <td>0.048\u00a0\u00b1\u00a00.0071</td>\n      <td>0.0071\u00a0\u00b1\u00a00.00083</td>\n      <td>0.0084\u00a0\u00b1\u00a00.0033</td>\n      <td>0.0081\u00a0\u00b1\u00a00.0028</td>\n    </tr>\n    <tr>\n      <td>H3K27ac</td>\n      <td>N.D.</td>\n      <td>0.093\u00a0\u00b1\u00a00.0088</td>\n      <td>0.18\u00a0\u00b1\u00a00.036</td>\n      <td>0.0077\u00a0\u00b1\u00a00.0028</td>\n      <td>0.0089\u00a0\u00b1\u00a00.00053</td>\n      <td>0.039\u00a0\u00b1\u00a00.0027</td>\n    </tr>\n  </tbody>\n</table>\n\n### CoREST and MiDAC analysis on mutant acetylated nucleosomes\n\nThree out of the five acetyl-Lys positions in the H3 tail examined here contain an Arg directly preceding the Lys (K9, K18, and K27) whereas Lys14 is preceded by Gly, the smallest amino acid. Given that among the five HDAC complexes studied here, K14ac cleavage from nucleosomes is in all cases slower than K9ac (most dramatically with the CoREST complex) we swapped amino acid residues at the 8 and 13 positions in H3. That is, we prepared K9ac nucleosomes containing R8G and K14ac nucleosomes bearing G13R (Figure 5, Figure 5\u2014figure supplements 1 and 2\u20133A\u2013D). Fortunately, the corresponding K9ac and K14ac selective antibodies were still able to recognize these mutant nucleosomes and could be used in HDAC assays. We performed deacetylase assays on these nucleosomes using the two most robust nucleosome HDAC complexes in our hands, the CoREST complex and MiDAC complex. The kinetic measurements with the CoREST complex showed striking differences relative to WT acetylated nucleosomes. The K9acR8G nucleosomes displayed a\u00a0~\u00a03 fold deacetylase rate reduction compared with WT K9ac (K9acR8G V/E 0.029 min\u22121 vs WT K9ac V/E 0.1 min\u22121). Remarkably, K14acG13R nucleosomes showed a\u00a0>\u00a017 fold increase in deacetylase rate vs. WT K14ac (K14acG13R V/E 0.084 min\u22121 vs. WT K14ac V/E\u00a0<\u00a00.005 min\u22121). The near matching of V/E deacetylase values of the CoREST complex on K14acG13R and WT K9ac nucleosomes suggests a profound rejection of a Gly at the H3 13th position in nucleosomes by the CoREST complex although it is more tolerated at the 8 position of H3. The kinetic studies with the MiDAC complex showed much less sensitivity to changes in Arg8 and Gly13. In fact, K9acR8G nucleosome deacetylation by the MiDAC complex matched that of WT K9ac nucleosomes (V/E 1.2 min\u22121 for both). K14acG13R nucleosome deacetylation by MiDAC was accelerated by 2.5 fold relative to WT K14ac nuclesomes, indicating a minor preference for Arg at the H3 13th position.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig5-v2.jpg)\n\n**Figure 5.:** (A) The sequence of H3K9acR8G comparing with WT-H3K9ac; (B) The sequence of H3K14acG13R comparing with WT-H3K14ac; (C) Table for the rate constants of different complexes on nucleosomes with H3K9ac/9acR8G/14ac/14acG13R. The reaction conditions were similar to the enzymatic reactions on H3K9/14/18/23/27ac nucleosomes described in Table 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A)\u00a0H3K9acR8G (n\u00a0=\u00a03 for nucleosome assay), (B) H3K14acG13R (n\u00a0=\u00a06 for nucleosome assay). (C) Curve fitting for H3K9acR8G nucleosome kinetics with 30 nM CoREST, and (D) Curve fitting for H3K14acG13R nucleosome kinetics with 30 nM CoREST.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A)\u00a0H3K9acR8G (n\u00a0=\u00a05 for nucleosome assay), (B) H3K14acG13R (n\u00a0=\u00a03 for nucleosome assay). (C) Curve fitting for H3K9acR8G nucleosome kinetics with 5 nM MiDAC, and (D) Curve fitting for H3K14acG13R nucleosome kinetics with 5 nM MiDAC.\n\n### NuRD (HDAC1-MTA1-RBBP4) deacetylation of H4K16ac nucleosomes\n\nThe very slow rates of nucleosome H3 deacetylation by the RBBP4 containing NuRD and Sin3B complexes prompted us to consider that the scaffold protein RBBP4 might be impeding the catalytic activity by obstructing the H3 tails (Millard et al., 2016). We thus examined whether a nucleosome containing acetylation on histone H4 might be an improved substrate for an RBBP4 complex. However, the deacetylation rate (V/E) for NuRD was low and similar to those of the acetylated H3 nucleosomes (Figure 6, Figure 6\u2014figure supplement 1A,B). These results suggest that the low nucleosome deacetylase activity of RBBP4-containing HDAC complexes may be unrelated to RBBP4/H3 interaction.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig6-v2.jpg)\n\n**Figure 6.:** (A) Western-blot based deacetylation activity assay with 40 nM NuRD complex (HDAC1-MTA1-RBBP4) on H4K16ac nucleosomes blot with site-specific acetylation antibody and anti-H3 antibody to show the overall nucleosome amount remaining unchanged (n\u00a0=\u00a03); (B) rate constant of NuRD complex deacetylation on H4K16ac nucleosome. The reaction conditions were similar to the enzymatic reactions on H3K9/14/18/23/27ac nucleosomes described in Table 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57663/elife-57663-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A)\u00a0H4K16ac nucleosome (n\u00a0=\u00a03 for nucleosome assay), and (B) Curve fitting for the nucleosome kinetics with 40 nM NuRD.\n\n## Discussion\n\nA principal finding of this study is that distinct HDAC1 complexes can show sharply different deacetylase activities toward different nucleosome substrates. This would appear to suggest that the unique biological consequences of the various HDAC1 complexes are not simply dependent on where they are recruited to in chromatin and by which particular transcription factor (Watson et al., 2012b). Rather, the different catalytic properties and site-selectivities of the HDAC1 complexes likely drive different patterns of histone deacetylation and chromatin states. Although it is possible that the closely related paralog HDAC2 replaces HDAC1 in some population of the HDAC complexes analyzed here, because of the massive overexpression of HDAC1 we believe this to be a very minor pool. Prior published structural studies of these complexes and mass spectroscopic analyses are also consistent with this idea (Song et al., 2020), (Millard et al., 2016; Itoh et al., 2015; Millard et al., 2013; Zhang et al., 2018), (Portolano et al., 2014). Furthermore, because HDAC1 and HDAC2 have very high sequence homology, we believe it is likely that HDAC1 and HDAC2 will behave in similar ways in terms of the nucleosome deacetylation assays carried out here.\n\nThe data with the CoREST complex selectivity stand out for the strong resistance to one of the five H3 tail acetylation sites, H3K14ac, investigated (Wu et al., 2018). It is likely not a coincidence that K14ac blocks the removal of H3K4 methylation as this could allow doubly modified H3K4me1/2 and H3K14ac tails to be immune from the silencing action of the CoREST complex. H3K4 methylation is known to be commonly found in the context of enhancer elements in DNA (Hsu et al., 2018), which is also associated with H3K14ac (Karmodiya et al., 2012), possibly insulating such K4 methylation by CoREST. Although this has not been rigorously evaluated with JMJ family demethylases, a yeast homolog JHD2 has been shown to be more weakly able to demethylate H3K4me3 in the context of H3K14ac (Maltby et al., 2012).\n\nThe Gly/Arg swaps at positions 8 and 13 in histone H3 clearly demonstrate that the presence of Gly13 rather than an Arg residue is a principal determinant of the meager rate of CoREST-mediated deacetylation of K14ac in nucleosome substrates. However, each of the five class I HDAC\u00a0complexes examined here were relatively ineffective at deacetylating K14ac in the context of nucleosomes presumably at least partly due to Gly13. That this K14ac deselection is not true in isolated H3 indicates that the molecular recognition of Lys14ac by these HDAC complexes is altered when the H3 tail is presented to the HDAC1 active site in a chromatin context. We are unsure if this represents kcat or KM differences conferred by histone H3 Gly13 vs. Arg13 because of the challenges of making such measurements with nucleosome substrates. We speculate that these effects may not be reflected in overall affinities between the various HDAC complexes and particular acetylated nucleosomes, but rather are driven by subtle local differences between the HDAC complex active sites and the nucleosomal substrates. The cellular relevance of these findings is supported by the fact that H3K14ac is a relatively abundant mark at baseline (Sidoli and Garcia, 2017) and is rather unaffected by class I HDAC inhibitor treatment compared with H3K9ac and H3K27ac which show substantial increases with such inhibitors (Sch\u00f6lz et al., 2015). It is also possible that robust histone acetyltransferase targeting H3K14 contributes to the elevated H3K14 acetylation levels in cells.\n\nThe MiDAC complex showed far and away the speediest average deacetylation rate across the five acetyl-Lys marks looked at in nucleosomes. Impressively, MiDAC deacetylated K9ac nucleosomes (V/E 1.2 min\u22121) more rapidly than K9ac in free H3 histones. Unlike CoREST, NuRD, Sin3B, and SMRT which are thought to be transcriptional silencers and recruited to chromatin by transcription factors, MiDAC is not known to be employed in this way. Furthermore, its ground state affinity to chromatin is thought to be quite high (Itoh et al., 2015). It is interesting that there was a modest trend for the rate of deacetylation to be highest closest to the N-terminus of H3 in the context of nucleosome substrates. We speculate that this may represent a greater accessibility of the extreme N-terminus of the H3 tail in chromatin to the HDAC1 active site in this complex.\n\nIn contrast to MiDAC, the NuRD and Sin3B complexes showed the lowest deacetylation rates with H3 acetylated nucleosomes. There are several possible reasons for this. It is plausible the NuRD and Sin3B may have a more extreme requirement for recruitment to nucleosomes by a transcription factor compared with the other HDAC complexes looked at here (Zhang et al., 2018), (Walsh, 2006). This could offer the advantage of preventing gene silencing except when triggered for by a cellular stimulus (Millard et al., 2017). In addition, there could be an additional macromolecular component or post-translational modification (Wang, 2019) lacking in our system that would unleash the deacetylase activity or alter substrate selectivities of any of the HDAC complexes on nucleosomes (Hudson et al., 2015). Indeed, NuRD and the other HDAC complexes investigated here have been reported to have a variety of additional protein subunits depending on cell type and cell state (Millard et al., 2016), (Lai and Wade, 2011), (Yang and Seto, 2008). For the NuRD complex, however, it is established that the chromatin remodelling module is rather loosely associated, and we do not expect that its absence would greatly influence HDAC activity. In addition to roles for transcription factors and additional subunits, the NuRD or Sin3B complexes could show very high site-selectivity on one or more sites in histones beyond the acetylated-Lys that we have examined thus far in H3 or H4. Future studies will be needed to determine if one or more of these possibilities is operative.\n\nWe have focused on classical HDAC acetyl-Lys selectivities in chromatin. However, there is reason to believe that the NAD-dependent sirtuins may also show site-selectivities. Recent studies on Sirt7 have shown that this enzyme shows a strong preference for H3K36ac in the context of chromatin (Wang et al., 2019). It will be important in future experiments to extend the analysis of deacetylase actions across the full complement of the HDAC enzymes to create a deeper understanding of the connections between reversible acetylation in health and disease states.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (X. laevis)</td>\n      <td>Histone H2A, H2B, H4 (X. laevis)</td>\n      <td>DOI: 10.7554/eLife.37231</td>\n      <td>Construct shared by Cynthia Wolberger (Johns Hopkins)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (X. laevis)</td>\n      <td>Histone gH3 (X. laevis)</td>\n      <td>DOI: 10.7554/eLife.37231 DOI: 10.1021/ja205630g</td>\n      <td>Construct shared by Dirk Schwarzer (T\u00fcbingen)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. aureus)</td>\n      <td>F40-sortase (Originally mutated fromS. aureus sortase A)</td>\n      <td>DOI: 10.7554/eLife.37231 DOI: 10.1021/ja205630g</td>\n      <td>Construct shared by Dirk Schwarzer (T\u00fcbingen)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (E. coli)</td>\n      <td>146 bp 601 DNA (Widom sequence forE. coliexpression)</td>\n      <td>DOI: 10.7554/eLife.37231</td>\n      <td>Construct shared by Song Tan (Penn State)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BL21 Rosetta (DE3) pLysS (E. coli)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# 70956\u20134</td>\n      <td>Competent cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HEK293F (Homo-sapiens)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>RRID:CVCL_6642</td>\n      <td>Transfected with plasmids to express different HDAC1 complexes. Mycoplasma tested negative. Authenticated by the venfor. Not on ICLAC misidentified cell line registry.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-H3K9ac (Rabbit)</td>\n      <td>Cell Signaling</td>\n      <td>Cat# 9671, RRID:AB_331532</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-H3K14ac (Rabbit)</td>\n      <td>EMP Millipore</td>\n      <td>Cat# 07\u2013353, RRID:AB_310545</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-H3K18ac (Rabbit)</td>\n      <td>EMP Millipore</td>\n      <td>Cat# 07\u2013354, RRID:AB_ 441945</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-H3K23ac (Rabbit)</td>\n      <td>EMP Millipore</td>\n      <td>Cat# 07\u2013355, RRID:AB_310546</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-H3K27ac (Rabbit)</td>\n      <td>Cell Signaling</td>\n      <td>Cat# 8173, RRID:AB_10949503</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-H3 (Rabbit)</td>\n      <td>Abcam</td>\n      <td>Cat# ab1791, RRID:AB_302613</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-H4K16ac (Rabbit)</td>\n      <td>Active Motif</td>\n      <td>Cat# 39167, RRID:AB_2636968</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HRP conjugated anti-Rabbit secondary (Goat)</td>\n      <td>Cell Signaling</td>\n      <td>Technology Cat# 7074, RRID:AB_2099233</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>HDAC1/HSP70</td>\n      <td>BPS Bioscience</td>\n      <td>Cat# 50051</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Nucleosome with H4K16ac</td>\n      <td>Epicypher</td>\n      <td>Cat# 16\u20130354</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>20 Fmoc-amino acids</td>\n      <td>EMP Millipore DOI: 10.7554/eLife.37231</td>\n      <td>Fmoc-Gly-OH as example: Cat# 852001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>DOI: 10.7554/eLife.37231 Download fromimagej.nih.gov/ij/</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism Eight</td>\n      <td>DOI: 10.7554/eLife.37231 Download fromwww.graphpad.com</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Reagents\n\n20 amino acids were purchased from EMP Millipore. Site specific primary antibodies include anti-H3K9ac (Cell Signaling), anti-H3K14ac (EMP Millipore), anti-H3K18ac (EMP Millipore), anti-H3K23ac (EMP Millipore), anti-H3K27ac (Cell Signaling), anti-H4K16ac (Active Motif) antibodies, as well as anti-histone H3 (Abcam). Secondary antibody as HRP-conjugated anti-rabbit antibody from Cell Signaling. H4K16ac nucleosome was purchased from Epicypher. The free enzyme HDAC1 (in the complex with HSP70) is purchased from BPS Bioscience.\n\n### The synthesis of depsipeptide Fmoc-Thr(OtBu)-glycolic acid (TOG)\n\nThe depsipeptide Fmoc-Thr(OtBu)-glycolic acid was synthesized based on a reported two-step protocol (Williamson et al., 2012).\n\n### Peptide synthesis\n\nAll the histone H3 peptides 1\u201334 containing site-specific lysine acetylation (Kac) were synthesized by Fmoc-SPPS by Fmoc-Gly-Wang resin. For 0.2 mmol resin, 0.8 mmol (four eq) Fmoc-amino acid, 3.2 mmol (3.75 eq) HATU and 1.6 mmol (eight eq) N-methylmorpholine (NMM) in 8 mL DMF was added to do the peptide coupling for 90 min, followed by the deprotection of Fmoc with 20% piperidine in dimethylformamide (DMF) for 15 min. The resin was then completely washed with DMF before entering the next coupling cycle. The first depsipeptide TOG was coupled following a similar protocol. After all the coupling steps and deprotection steps, the resin was washed by DMF and dichloromethane (DCM) to dry. Reagent B (5% water, 5% phenol, 2.5% triisopropyl silane (TIPS), 87.5% trifluoroacetic acid (TFA)) for 2.5 hr at room temperature. The crude peptide was concentrated before the addition of cold diethyl ether to precipitate and dried over nitrogen gas flow. After being dissolved in 10% acetonitrile (CH3CN)-water, the crude peptides were further purified by reversed phase HPLC with the C18 column (Varian Dynamax Microsorb 100), with a gradient of 5% CH3CN/0.05% TFA in H2O/0.05% TFA for 2 min and a linear gradient from 5% CH3CN/0.05% TFA to 32% CH3CN/0.05% TFA over 25 min, and the flow rate is 10 mL/min. All the synthetic peptides were lyophilized to powders, followed by the characterization by MALDI-TOF at the Molecular Biology Core Facilities of Dana Farber Cancer Institute (Figure 2\u2014figure supplement 1, Figure 5\u2014figure supplement 1).\n\n### Expression and purification of F40 sortase from E. coli\n\nF40 sortase was purified in a manner reported previously (Wu et al., 2018). The pET21-F40-sortase plasmid was used for the transformation of the E. coli Rosetta (DE3) pLysS strain. A single colony from the LB agar plate was inoculated into 5 mL LB media with 100 mg/L ampicillin at 37 \u00b0C overnight, and subsequently inoculated into 1 L large 2YT culture at 37 \u00b0C until OD600 reached 0.6. F40 sortase was then induced with 0.25 mM IPTG for 4 hr at 37 \u00b0C. The cells were harvested by centrifugation at 4,000 rpm for 15 min and the cell-pellet was resuspended in Lysis buffer containing 20 mM Tris, 0.1% Triton X-100 and 1 mM phenylmethylsulfonyl fluoride (PMSF) at pH 7.5. The cells were then lysed by passing through a french press cell disrupter at about 1,000 psi three times, followed by centrifuging the lysate at 20,000 g for 40 min. The supernatant was loaded to a Ni-NTA Sepharose 6 Fast Flow (GE Healthcare) resin, followed by repeated wash with Wash buffer containing 20 mM Tris, 500 mM NaCl, 20 mM imidazole and 1 mM PMSF at pH 7.5. The F40 sortase was then eluted with Elution buffer containing 20 mM Tris, 500 mM NaCl, 400 mM imidazole and 1 mM PMSF at pH 7.5 in different fractions. All the fractions were analyzed by SDS-PAGE gel and fractions containing F40 sortase were pooled together and dialyzed against Dialysis buffer with 20 mM Tris, 150 mM NaCl, and 5 mM CaCl2 at pH 7.5. After dialysis, F40 sortase (>95% pure based on coomassie stained SDS-PAGE) was concentrated using an Amicon Ultra spin column (10K MWCO, EMD Millipore) to about 1 mM final concentration, and then aliquoted and stored at \u221280 \u00b0C for future usage.\n\n### Expression of WT-histone H2A, H2B, H4, and histone core region gH3\n\nBacterial expression and purification of X. laevis core histones H2A, H2B, globular H3 (gH3; amino acids 34\u2013135 with the first Met cleaved by E. coli), and H4 were performed using a previously reported method (Piotukh et al., 2011), (Luger et al., 1997). Please note that we used gH3 containing Cys110 for K23ac and K27ac semi-synthesis and Ala110 for K9ac, K14ac, K18ac semi-synthesis (Shimko et al., 2011) and the impact of this aa110 difference in the nucleosomes derived from these histone H3 isoforms is assumed to be negligible (Wilkinson and Gozani, 2014). Consequently, H3 C110A has been widely employed in nucleosome chemical biology (Jani et al., 2019) and structural studies (Gatchalian et al., 2017). The pET23-gH3 plasmid was used to transform E. coli Rosetta (DE3) pLysS strain, and a single colony was inoculated into 1 L LB media with 100 mg/L ampicillin at 37 \u00b0C. The culture was let to shake and grow at 37 \u00b0C until OD600 reached 0.6. Then, gH3 was induced with 0.5 mM IPTGat 37 \u00b0C for 3 hr. The cells were then harvested by centrifugation at 4,000 rpm for 15 min and the cell pellet was resuspended in Histone Wash Buffer (50 mM Tris-HCl at pH 7.5, 100 mM NaCl, 1 mM EDTA, 5 mM 2-mercaptoethanol (BME), 0.2 mM phenylmethylsulfonyl fluoride (PMSF) with 1% Triton X-100). The cells were then lysed by passing through a french press cell disrupter at about 1,000 psi three times, followed by centrifugation of the cell lysate at 20,000 g for 40 min. After discarding the supernatants, the pellets were washed with Histone Wash Buffer with 1% Triton X-100 once and Histone Wash Buffer without Triton X-100 twice. The pellets were dissolved in Histone Solubilization Buffer (7 M guanidinium hydrochloride, 20 mM Tris at pH 7.5 and 10 mM dithiothreitol). After centrifuging at 20,000 g for 15 min, the supernatant was dialyzed three times against IEX (ion exchange) buffer (7 M urea, 10 mM Tris pH 7.8, 1 mM EDTA, 0.2 mM PMSF and 5 mM BME). The resulting gH3 solution in IEX buffer was diluted 5-fold in IEX buffer before being loaded onto a tandem Q-SP column (GE healthcare, HiTrap Q HP and HiTrap SP HP, 5 mL each). Both Q and SP column were first equilibrated and washed with IEX buffer containing 100 mM NaCl. Then, gH3 was eluted from the 100 mM - 500 mM NaCl with 100 mM increment. The fractions containing gH3 (>90% pure by coomassie stained SDS-PAGE) were pooled after analyzing each fraction by SDS-PAGE. The combined IEX solution was then dialyzed three times against pure water containing 2 mM BME (3.5K MWCO, Spectra/Por) for 6 hr each. The solution was finally concentrated with an Amicon Ultra spin column (3.5 K MWCO, EMD Millipore) to 10 mL (~100 \u03bcM) and stored at 4 \u00b0C until usage.\n\n### F40 sortase catalyzed histone H3 semi-synthesis\n\nThe histone H3 N-terminal peptide (aa1-34 depsipeptide, 1 mM) and gH3 (aa34-135,~70 \u03bcM) was mixed in Sortase Reaction Buffer (50 mM HEPES at pH 7.5, 150 mM NaCl and 5 mM CaCl2). The reaction was initiated by the addition of F40 Sortase (300 \u03bcM) and was incubated at 37 \u00b0C for overnight. The reaction mixture was centrifuged to precipitate H3 with some sortase, which was then dissolved in 10 mL IEX buffer (7 M urea, 10 mM Tris at pH 7.8, 1 mM EDTA and 5 mM BME). The solution was loaded onto a SP column (GE healthcare, HiTrap SP HP, 1 mL) preequilibrated with IEX buffer containing 100 mM NaCl. After washing with IEX buffer containing 100 mM NaCl, H3 was eluted with a gradient of IEX buffer containing increasing NaCl from 100 to 500 mM. All the fractions were analyzed by SDS-PAGE, and the fractions with pure ligated H3 product (>90% based on coomassie stained SDS-PAGE gels) were pooled and dialyzed three times against pure water with 2 mM BME (3.5K MWCO, Spectra/Por). The solution was then concentrated using an Amicon Ultra spin column (10 K MWCO, EMD Millipore), and was lyophilized to a white powder for storage at \u221280 \u00b0C until usage. Semi-synthesized histone H3 structures were characterized by MALDI-TOF Mass Spectrometry ((matrixed with CHCA) at the Molecular Biology Core Facilities of Dana Farber Cancer Institute (Figure 2\u2014figure supplement 2, Figure 5\u2014figure supplement 1).\n\n### Octamer refolding and nucleosome reconstitution\n\nThe octamer refolding and nucleosome assembly were performed following a previous report (Dyer et al., 2004). All four histone proteins H2A, H2B, H3 and H4, each two copies, were dissolved in Unfolding Buffer (7 M guanidine, 20 mM Tris-HCl at pH 7.5 and 10 mM DTT) and quantified by reading A280. The mixed solution with a molar ratio at 1.1: 1.1: 1:1 one was then dialyzed three times against high salt buffer (20 mM Tris at pH 7.5, 2.0 M NaCl, 1 mM EDTA and 5 mM BME). The octamer was purified by size exclusion chromatography using a Superdex 200 10/300 GL column (GE Healthcare). In addition, 146 Widom 601 DNA was prepared by previously reported methods used for nucleosome reassembly (Luger et al., 1997). The 146 bp DNA was obtained from the restriction digests of a specially designed DNA plasmid from E. coli and purified by precipitation with polyethylene glycol. The histone octamer (Figure 2\u2014figure supplement 3B, using H3K9ac and H3K14ac as examples) and Widom DNA were mixed at a 1:1 molar ratio at high salt buffer (10 mM Tris at pH 7.5, 2.0 M KCl, 1 mM EDTA and 1 mM DTT) with a final concentration of 7 \u03bcM DNA. Continuous-flow gradient dialysis was used to lower the salt concentration from the mixture to low salt buffer (10 mM Tris at pH 7.5, 250 mM KCl, 1 mM EDTA and 1 mM DTT) by a Minipuls two peristaltic pump (Gilson). The final mixture was subjected to HPLC (Waters, 1525 binary pump, 2489 UV-Vis detector). HPLC using a TEKgel DEAE ion exchange column was employed to purify the final nucleosome product. The liquid phase buffers A and B were as follow: A. TES 250 (10 mM Tris 7.5, 250 mM KCl, 0.5 mM EDTA), B. TES 600 (10 mM Tris 7.5, 600 mM KCl, 0.5 mM EDTA), were used to generate with a 0% B wash for 12 min and a linear gradient from 25% to 75% B over 30 min at 1 mL/min flow rate. The fractions containing the nucleosome were pooled together and dialyzed against a TCS Buffer (20 mM Tris at pH 7.5 and 1 mM DTT, no EDTA) and concentrated to about\u00a020 \u03bcM using an Amicon Ultra spin column (10K MWCO, EMD Millipore). The final nucleosome products were analyzed by native TBE gels and all showed over 95% purity based on the fact that free DNA band fluoresces 2.5-fold more brightly than the nucleosome DNA band in this setting (Shahian and Narlikar, 2012).\n\n### Expression and purification of HDAC complexes\n\nThe expression and purification of HDAC complexes were performed as described previously (Song et al., 2020), (Millard et al., 2016), (Itoh et al., 2015), (Watson et al., 2012b), (Portolano et al., 2014). For each complex, three plasmids corresponding to the different components of the HDAC complex were co-transfected into HEK293F cells: LSD1 (1\u2013852), HDAC1 (1\u2013482), and Flag tagged CoREST1 (86\u2013485) for the CoREST complex; Flag tagged MTA1 (1\u2013715), HDAC1 (1\u2013482), and RBBP4 (1\u2013425) for the NuRD complex; Flag tagged Sin3B (1\u20131162), HDAC1 (1\u2013482), RBBP4 (1\u2013425) for the Sin3B complex; Flag tagged MIDEAS (628-887), HDAC1 (1\u2013482), DNTTP1 (1\u2013329) for the MiDAC complex; Flag tagged GPS2-NCoR2 chimera ((1-49) - (220-480)), HDAC3 (1\u2013428), and\u00a0TBL1 (1\u2013526) for the SMRT complex. After cell lysis by sonication, the complexes were purified by FLAG tag immunoaffinity chromatography and liberated from the column with TEV protease. These mixtures were further purified by gel filtration on either a Superdex 200 Increase 10/300 GL column (MiDAC, SMRT) or a Superose 6 10/300 GL column (CoREST, NuRD, Sin3B). The purified complexes were analyzed by SDS-PAGE stained with coomassie and concentrated to 3\u20135 \u03bcM (Figure 3\u2014figure supplement 2B). After the addition of glycerol to 10%, the complexes are stored at \u221280\u00b0C until further use (Wu et al., 2018). The final HDAC complexes were analyzed by SDS-PAGE gel stained with coomassie and each showed greater than 60% purity.\n\n### Analysis of deacetylation of acetylated nucleosomes and acetylated histone H3s\n\nFor all the deacetylation assays, the semi-synthetic H3K9/14/18/23/27ac histone H3 proteins (1.0 \u03bcM) or the corresponding nucleosomes (100 nM) assembled in vitro were incubated with different HDAC1 and HDAC3 complexes at different concentrations, under a reaction buffer containing 50 mM HEPES at pH 7.5, 100 mM KCl, 100 \u03bcM IP6 (Watson et al., 2016), and 0.2 mg/mL BSA at 37 \u00b0C. The complexes include CoREST, NuRD, Sin3B, MiDAC, and SMRT, together with HDAC1 enzyme not involved in specific complex binding from commercial source (BPS Bioscience). The reaction time was counted, and multiple samples were taken at different time points. Typically, 10 \u03bcL aliquots of the reaction were quenched with gel loading buffer made by mixing 2 \u03bcL 80 mM EDTA and 4 \u03bcL 4 x Laemmli sample buffer at each time point. The samples were then boiled for 3 min at 95 \u00b0C and loaded onto a 15% SDS-PAGE gel (160 Volts for 35 min). After transferring to nitrocellulose membrane, site-specific antibodies for acetylated H3, such as for anti-H3K9ac, anti-H3K14ac, anti-H3K18ac, anti-H3K23ac and anti-H3K27ac, as well as total H3 antibody, anti-H3, were used to blot the membrane. The specificities of the primary antibodies, anti-H3K23ac and anti-H3K27ac, were validated using histone H3K9ac as a negative control (Figure 3\u2014figure supplement 1), while the specificities of the primary antibodies anti-H3K9ac, anti-H3K14ac and anti-H3K18ac have been confirmed previously (Wu et al., 2018). After treating with the ECL substrate (Bio-Rad), the blotted membrane was and visualized by the G:BOX mini gel imager (Syngene), and then quantified using ImageJ. The intensity values from ImageJ were fit to a single-phase exponential decay curve software (GraphPad Prism Eight). Then, the kinetic data V/E were calculated for nucleosome assays, while normalized V/E were calculated for histone assays (Two H3 molecules to one nucleosome ratio was taken into account for calculation).\n\n### Analysis of deacetylation of H4K16ac nucleosomes\n\nFor the H4 deacetylation assays, the commercial H4K16ac nucleosomes (100 nM) was incubated with 40 nM NuRD complexes in a reaction buffer containing 50 mM HEPES at pH 7.5, 100 mM KCl, 100 \u03bcM IP6, and 0.2 mg/mL BSA at 37 \u00b0C. Multiple samples were taken at different time points and analyzed by Western Blot with anti-H4K16ac antibody, following similar steps of the deacetylation assays of the H3Kac nucleosomes.\n",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "6c069dcf-6f02-4a48-afc4-4739c0da6c9c",
+      "submission_id": "61c8dc27-8ae8-4cb4-9e7b-5aa54e9c98fc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wilfred A van der Donk, University of Illinois at Urbana-Champaign United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57663.sa1](https://doi.org/10.7554/eLife.57663.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Diverse nucleosome site-selectivity among histone deacetylase complexes\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Wilfred van der Donk as Reviewing Editor and John Kuriyan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis work is an extension of previous work from the Cole lab that reported (1) the use of F40 sortase to generate semi-synthetic acetylated H3, (2) its incorporation in nucleosomes, and (3) assays with the LSD1-CoREST-HDAC1 complex. In this work, the authors expand upon this prior work by testing various acetylated nucleosomes against 4 different HDAC1-containing and one HDAC3-containing protein complex (CoREST, NuRD, Sin3B, MiDAC and SMRT). Interestingly, the authors observe that H3K14ac is a poor substrate for the CoREST and Sin3B complexes, and speculate that this may be due to the presence of Gly13 at the P2 position. They demonstrate that mutating Gly13 to Arg13 leads to faster deacetylation by the CoREST complex. Another interesting discovery is that HDAC1 activity at various H3 lysines is modulated by its specific complex. This work is important towards obtaining a molecular level understanding of how various HDAC complexes act on chromatin depending on both enzyme context and substrate context. The reviewers feel this Research Advance is suitable for publication in eLife after minor clarifications.\n\nRevisions:\n\n1) Enzyme activity that is modulated by its context in various complexes is perhaps not too surprising, but gaining information of such modulation is important and valuable. In the current system, the complexes likely bind nucleosomes at different sites and/or allosterically regulate kcat or KM. One aspect of this study that is not well-explained is why complexes were chosen to be limited to three proteins. NuRD, for example, has six known components. The authors should address the choice for a limited set of proteins, and why three components were chosen in each case.\n\n2) The authors propose that HDAC1 activity is inhibited by G13 in the CoREST complex. However, it is unclear why the same residue adjacent to K14ac in the HDAC1 active site would have vastly different effects (CoREST vs MIDAC1). Do the authors have any insights into whether Gly13Arg induces activity due to an effect on kcat or KM (or both)? In future work, determination of binding constants would be valuable.\n\n3) Many of the semisynthetic H3 proteins have additional large unlabeled peaks in the MALDI-TOF mass spectra. These are less visible in the charge states in the ESI spectra due to the large mass range shown but also appear to show up in the western blots (Figure 3\u2014figure supplement 1). The authors should clearly label the additional peaks. It also appears there would be free DNA in the nucleosome preparations. Free DNA is known to inhibit enzymatic activities in some instances, for e.g. for p300. It would be valuable to add a statement to the manuscript as to the percent purity of the nucleosome substrates.\n\n4) Similarly the protein complexes in Figure 3\u2014figure supplement 2B are not homogenous. While purifying complexes using epitope tags from eukaryotic cells is unlikely to yield perfectly homogenous preps, it is important for the authors to mention the percent purity of each complex. Given point 1 above, can they comment whether other components are entirely missing from these complexes and do not have an effect on activity?\n\n5) One concern is that HDAC1 is often exchanged with HDAC2 in many complexes, including NuRD. It appears that the authors did not interrogate HDAC2 directly, but can they confirm that no residual HDAC2 was present in their complexes? Varying degrees of HDAC1/2 may contribute toward some of the differences seen in kinetics data.\n\n6) The authors extend their discovery to the discussion that H3K14ac and H3K4me2 may co-exist at enhancers to prevent CoREST activity. This may be the case, however other enzymes such as KDM4 (Jumonji-domain containing lysine specific demethylase 4) are equally able to demethylate H3K4me2. There is no evidence that these KDMs are sensitive to inhibition by H3K14ac, or that they are excluded from enhancers while CoREST is recruited to enhancers. Therefore, the presented argument may need some additional discussion. Could the presence of H3K14ac at high basal levels equally likely reflect higher degrees of basal HAT activity at this site?\n",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "10e537f8-2aed-4882-b8b0-06a24279b9a9",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C1",
+      "claim": "Histone acetylation regulates chromatin structure and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone acetylation regulates chromatin structure and gene expression and is removed by histone deacetylases (HDACs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by extensive literature and scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "4689646c-6026-4c72-804e-efb04c6717c1",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C2",
+      "claim": "Histone acetylation is removed by histone deacetylases (HDACs).",
+      "claim_type": "EXPLICIT",
+      "source": "Histone acetylation regulates chromatin structure and gene expression and is removed by histone deacetylases (HDACs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental concept in epigenetics, supported by scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "de891d58-d205-4683-a74c-c3c96c1e2178",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C3",
+      "claim": "HDACs are commonly found in various protein complexes to confer distinct cellular functions.",
+      "claim_type": "EXPLICIT",
+      "source": "HDACs are commonly found in various protein complexes to confer distinct cellular functions, but how the multi-subunit complexes influence deacetylase activities and site-selectivities in chromatin is poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field and is referenced throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "89a20b03-0582-4d73-a3a1-67b32d50f9f1",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C4",
+      "claim": "How multi-subunit HDAC complexes influence deacetylase activities and site-selectivities in chromatin is poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "HDACs are commonly found in various protein complexes to confer distinct cellular functions, but how the multi-subunit complexes influence deacetylase activities and site-selectivities in chromatin is poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement establishes the knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "09fd8e16-0d59-40cc-be1b-2d8c4ee0a5ea",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C5",
+      "claim": "The CoREST complex shows a notable preference for deacetylation of histone H3 acetyl-Lys9 vs. acetyl-Lys14.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we reported the results of studies on the HDAC1 containing CoREST complex and acetylated nucleosome substrates which revealed a notable preference for deacetylation of histone H3 acetyl-Lys9 vs. acetyl-Lys14 (Wu et al, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work (Wu et al, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "69cabfa4-ab4c-46f5-bfd5-29360a757ac9",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C6",
+      "claim": "Five class I HDAC complexes (CoREST, NuRD, Sin3B, MiDAC and SMRT) show a wide variety of deacetylase rates in a site-selective manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we analyze the enzymatic properties of five class I HDAC complexes: CoREST, NuRD, Sin3B, MiDAC and SMRT with site-specific acetylated nucleosome substrates. Our results demonstrate that these HDAC complexes show a wide variety of deacetylase rates in a site-selective manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "ef3e31f6-dc7a-455c-89b5-ee51c990a4c4",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C7",
+      "claim": "A Gly13 in the histone H3 tail is responsible for a sharp reduction in deacetylase activity of the CoREST complex for H3K14ac.",
+      "claim_type": "EXPLICIT",
+      "source": "A Gly13 in the histone H3 tail is responsible for a sharp reduction in deacetylase activity of the CoREST complex for H3K14ac.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data from mutant nucleosome studies presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "fed46cc2-a355-469d-b5cd-731f40d36c2a",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C8",
+      "claim": "Reversible histone acetylation regulates gene expression, DNA replication, cell growth, and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reversible histone acetylation (Cole, 2008) regulates a range of major fundamental biological processes including gene expression, DNA replication, cell growth, and differentiation (Jamaladdin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "2e73ce2d-bc16-4662-9247-721e97b1fbe9",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C9",
+      "claim": "Histone acetyltransferases (HATs) catalyze Lys sidechain acetylation on the N-terminal tails of each of the four core histones (H2A, H2B, H3, and H4).",
+      "claim_type": "EXPLICIT",
+      "source": "Histone acetyltransferases (HATs) catalyze Lys sidechain acetylation on the N-terminal tails of each of the four core histones (Weinert et al., 2018), H2A, H2B, H3, and H4 that comprise nucleosomes, the building blocks of chromatin (Helin and Dhanak, 2013; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "e9d77c06-accd-4408-abcd-17a9ce657de4",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C10",
+      "claim": "Nucleosomes are the building blocks of chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone acetyltransferases (HATs) catalyze Lys sidechain acetylation on the N-terminal tails of each of the four core histones (Weinert et al., 2018), H2A, H2B, H3, and H4 that comprise nucleosomes, the building blocks of chromatin (Helin and Dhanak, 2013; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental concept in chromatin biology, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "724efd67-84bd-4527-92c9-ec0616a33939",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C11",
+      "claim": "Particular HATs such as p300/CBP, PCAF/GCN5, and Myst family members display varying degrees of site selectivity in the context of histone tail peptides and/or chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymological and cellular analysis has shown that particular HATs such as p300/CBP, PCAF/GCN5, and Myst family members display varying degrees of site selectivity in the context of histone tail peptides and/or chromatin (Shortt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "7e82b7e2-2afb-4e90-83c1-bab03486d197",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C12",
+      "claim": "p300/CBP is best known to acetylate Lys18 and Lys27 in histone H3.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, p300/CBP is best known to acetylate Lys18 and Lys27 in histone H3 (Dancy and Cole, 2015), whereas PCAF/GCN5 prefers to acetylate Lys14 and Lys9 of histone H3 (Ali et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "84b84648-cece-4015-8c14-cc2e4b6e8f53",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C13",
+      "claim": "PCAF/GCN5 prefers to acetylate Lys14 and Lys9 of histone H3.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, p300/CBP is best known to acetylate Lys18 and Lys27 in histone H3 (Dancy and Cole, 2015), whereas PCAF/GCN5 prefers to acetylate Lys14 and Lys9 of histone H3 (Ali et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "955ee736-f7cb-4c1e-8400-be5fba60c330",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C14",
+      "claim": "Histone deacetylases (HDACs) remove acetyl-Lys modifications in chromatin and other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone deacetylases (HDACs) remove acetyl-Lys modifications in chromatin and other proteins and belong to two major families in humans (Taunton et al., 1996), classical HDACs which include 11 Zn metallohydrolase enzymes and seven sirtuins (Wang et al., 2017), that catalyze NAD-dependent Lys deacetylation (Falkenberg and Johnstone, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental concept supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "ca31f726-d4b3-4af2-8c36-a9478629a5cc",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C15",
+      "claim": "HDACs belong to two major families in humans: classical HDACs which include 11 Zn metallohydrolase enzymes and seven sirtuins.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone deacetylases (HDACs) remove acetyl-Lys modifications in chromatin and other proteins and belong to two major families in humans (Taunton et al., 1996), classical HDACs which include 11 Zn metallohydrolase enzymes and seven sirtuins (Wang et al., 2017), that catalyze NAD-dependent Lys deacetylation (Falkenberg and Johnstone, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "c7093d2c-243b-4eb5-8dbf-d5d0df2ad4eb",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C16",
+      "claim": "Sirtuins catalyze NAD-dependent Lys deacetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone deacetylases (HDACs) remove acetyl-Lys modifications in chromatin and other proteins and belong to two major families in humans (Taunton et al., 1996), classical HDACs which include 11 Zn metallohydrolase enzymes and seven sirtuins (Wang et al., 2017), that catalyze NAD-dependent Lys deacetylation (Falkenberg and Johnstone, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "3bd87266-5460-45c1-abdd-f73c2813473a",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C17",
+      "claim": "The class I HDACs, HDAC1, HDAC2, and HDAC3 are relatively similar at the amino acid sequence level.",
+      "claim_type": "EXPLICIT",
+      "source": "The class I HDACs, HDAC1, HDAC2, and HDAC3 are relatively similar at the amino acid sequence level and show overlapping pharmacological sensitivities to the benzamide class of HDAC inhibitors represented by entinostat (Yang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "6a5932b6-edc1-4004-b90c-b04c0f696489",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C18",
+      "claim": "Class I HDACs show overlapping pharmacological sensitivities to the benzamide class of HDAC inhibitors represented by entinostat.",
+      "claim_type": "EXPLICIT",
+      "source": "The class I HDACs, HDAC1, HDAC2, and HDAC3 are relatively similar at the amino acid sequence level and show overlapping pharmacological sensitivities to the benzamide class of HDAC inhibitors represented by entinostat (Yang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "044a9544-a550-4559-8176-3f8c0de00bad",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C19",
+      "claim": "HDAC1 and HDAC2 are the most similar HDACs.",
+      "claim_type": "EXPLICIT",
+      "source": "HDAC1 and HDAC2 (Kelly and Cowley, 2013) are the most similar HDACs and are interchangeably found in a variety of multisubunit protein complexes including CoREST, Sin3(A/B), NuRD, and MiDAC whereas HDAC3 is commonly associated with the SMRT/NCoR complex (Bantscheff et al., 2011; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "1a3dd25d-6fe4-45a2-89f1-fd558baa7a46",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C20",
+      "claim": "HDAC1 and HDAC2 are interchangeably found in a variety of multisubunit protein complexes including CoREST, Sin3(A/B), NuRD, and MiDAC.",
+      "claim_type": "EXPLICIT",
+      "source": "HDAC1 and HDAC2 (Kelly and Cowley, 2013) are the most similar HDACs and are interchangeably found in a variety of multisubunit protein complexes including CoREST, Sin3(A/B), NuRD, and MiDAC whereas HDAC3 is commonly associated with the SMRT/NCoR complex (Bantscheff et al., 2011; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "6c3d291c-f888-42f4-94db-fb8b39565f35",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C21",
+      "claim": "HDAC3 is commonly associated with the SMRT/NCoR complex.",
+      "claim_type": "EXPLICIT",
+      "source": "HDAC1 and HDAC2 (Kelly and Cowley, 2013) are the most similar HDACs and are interchangeably found in a variety of multisubunit protein complexes including CoREST, Sin3(A/B), NuRD, and MiDAC whereas HDAC3 is commonly associated with the SMRT/NCoR complex (Bantscheff et al., 2011; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "14bfb76a-dca0-4e5b-8733-4183c4964938",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C22",
+      "claim": "The CoREST, Sin3, NuRD, and SMRT complexes are generally believed to be involved in silencing of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The CoREST (Humphrey et al., 2001), Sin3 (Laherty et al., 1997), NuRD (Xue et al., 1998), (Zhang et al., 1999), and SMRT (Guenther et al., 2000), (Wen et al., 2000), (Li et al., 2000) complexes are generally believed to be involved in silencing of gene expression and are recruited by various transcription factors to chromatin in a cell type and cell state dependent manner (Ooi and Wood, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "8c5e3ea5-d0d7-4712-944f-103e96d43ca6",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C23",
+      "claim": "CoREST, Sin3, NuRD, and SMRT complexes are recruited by various transcription factors to chromatin in a cell type and cell state dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The CoREST (Humphrey et al., 2001), Sin3 (Laherty et al., 1997), NuRD (Xue et al., 1998), (Zhang et al., 1999), and SMRT (Guenther et al., 2000), (Wen et al., 2000), (Li et al., 2000) complexes are generally believed to be involved in silencing of gene expression and are recruited by various transcription factors to chromatin in a cell type and cell state dependent manner (Ooi and Wood, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "c02a340c-fb5e-4b50-a4f9-c29bb03d392f",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C24",
+      "claim": "The MiDAC complex has been associated with mitotic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Less is known about the MiDAC complex although it has been associated with mitotic processes (Bantscheff et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "effa5815-e93d-49c6-9ac2-10e2e5aed873",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C25",
+      "claim": "Recent structural studies on each of the five HDAC complexes have provided insights into their distinct molecular architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structural studies on each of these five HDAC complexes have provided insights into their distinct molecular architectures (Millard et al., 2017) (CoREST (Song et al., 2020), NuRD (Millard et al., 2016), Sin3A (Clark et al., 2015), MiDAC (Itoh et al., 2015), and SMRT (Watson et al., 2012a) and inositol phosphates have been shown to have varying roles in regulating their stabilities and catalytic activities (Millard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "15efbe5f-9a69-4620-b25a-eb7b9a7d9f2b",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C26",
+      "claim": "Inositol phosphates have been shown to have varying roles in regulating HDAC complex stabilities and catalytic activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structural studies on each of these five HDAC complexes have provided insights into their distinct molecular architectures (Millard et al., 2017) (CoREST (Song et al., 2020), NuRD (Millard et al., 2016), Sin3A (Clark et al., 2015), MiDAC (Itoh et al., 2015), and SMRT (Watson et al., 2012a) and inositol phosphates have been shown to have varying roles in regulating their stabilities and catalytic activities (Millard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "1c5ef816-0ea0-4db2-a0a6-78e2056024fc",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C27",
+      "claim": "Histone substrate site-selectivity experiments with HDAC enzymes have generally involved analyzing the isolated HDAC polypeptides or catalytic domains and acetyl-Lys containing histone peptide tails rather than the more physiological HDAC complexes and nucleosome substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone substrate site-selectivity experiments with HDAC enzymes have generally involved analyzing the isolated HDAC polypeptides or catalytic domains and acetyl-Lys containing histone peptide tails rather than the more physiological HDAC complexes and nucleosome substrates (Zhang et al., 2016), (Riester et al., 2007), (Gurard-Levin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "39dab234-1133-426b-a11b-f06e821a27c9",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C28",
+      "claim": "Studies with isolated HDACs and histone peptide substrates have typically shown little to no amino acid sequence site-selectivities for HDACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such studies have typically shown little to no amino acid sequence site-selectivities for HDACs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited literature and represents a summary of previous findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "6425fb86-4c38-47f4-82f7-f8a73bc90afa",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C29",
+      "claim": "The physiological enzyme forms of HDAC1-3 exist in multisubunit complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "As the physiological enzyme forms of HDAC1-3 exist in multisubunit complexes (Millard et al., 2017) and the natural substrates are chromatin comprised of nucleosomes, histone octamers wrapped by 146 bp of double stranded DNA, the biological relevance of the free HDAC and histone tail substrate peptide experiments is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "91bee837-7d5c-48dd-9bf0-3f5ad72d41fc",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C30",
+      "claim": "The natural substrates of HDACs are chromatin comprised of nucleosomes, histone octamers wrapped by 146 bp of double stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As the physiological enzyme forms of HDAC1-3 exist in multisubunit complexes (Millard et al., 2017) and the natural substrates are chromatin comprised of nucleosomes, histone octamers wrapped by 146 bp of double stranded DNA, the biological relevance of the free HDAC and histone tail substrate peptide experiments is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in chromatin biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "f73ae9ae-54e4-43f5-9cb1-8c87ff48f047",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C31",
+      "claim": "The biological relevance of free HDAC and histone tail substrate peptide experiments is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "As the physiological enzyme forms of HDAC1-3 exist in multisubunit complexes (Millard et al., 2017) and the natural substrates are chromatin comprised of nucleosomes, histone octamers wrapped by 146 bp of double stranded DNA, the biological relevance of the free HDAC and histone tail substrate peptide experiments is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mismatch between experimental systems and physiological conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "f61a5823-4d44-4d48-b54d-44250d3b76c8",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C32",
+      "claim": "The CoREST complex includes the enzyme LSD1 which specifically demethylates methyl-Lys4 in histone H3.",
+      "claim_type": "EXPLICIT",
+      "source": "This was especially interesting because the CoREST complex also includes the enzyme LSD1 which specifically demethylates methyl-Lys4 in histone H3 and this activity is strongly inhibited when the H3 tail also contains acetyl-Lys14 but not acetyl-Lys9 (Kalin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "a3298cb1-82f6-4ed7-9914-ca25515d1909",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C33",
+      "claim": "LSD1 demethylase activity is strongly inhibited when the H3 tail contains acetyl-Lys14 but not acetyl-Lys9.",
+      "claim_type": "EXPLICIT",
+      "source": "This was especially interesting because the CoREST complex also includes the enzyme LSD1 which specifically demethylates methyl-Lys4 in histone H3 and this activity is strongly inhibited when the H3 tail also contains acetyl-Lys14 but not acetyl-Lys9 (Kalin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "806b26fb-11ac-4e26-a773-c272461fc756",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C34",
+      "claim": "Histone H3 marked by Lys14 acetylation and Lys4 methylation may be protected against CoREST complex silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "These properties suggest a biological role in histone H3 marked by Lys14 acetylation and Lys4 methylation to protect against CoREST complex silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the enzymatic properties described.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "ca0c87e1-41b8-4d5e-82e2-848e1139d448",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C35",
+      "claim": "Different HDAC complexes may show distinct deacetylase kinetics and nucleosome site selectivities.",
+      "claim_type": "EXPLICIT",
+      "source": "The CoREST complex enzymatic studies also raise the possibility that different HDAC complexes may show distinct deacetylase kinetics and nucleosome site selectivities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that the study aims to test.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "665bf8cb-16d3-46ed-a71c-191fb797dbed",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C36",
+      "claim": "The kinetics of the HDAC complexes across the range of free acetylated histone H3 substrates are fairly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the kinetics of the HDAC complexes across the range of free acetylated histone H3 substrates are fairly similar, whereas there are large differences between the complexes with respect to deacetylase rates and site-selectivity with nucleosome substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "9bb33999-a941-4540-a8a4-d35b115af74f",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C37",
+      "claim": "There are large differences between the HDAC complexes with respect to deacetylase rates and site-selectivity with nucleosome substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the kinetics of the HDAC complexes across the range of free acetylated histone H3 substrates are fairly similar, whereas there are large differences between the complexes with respect to deacetylase rates and site-selectivity with nucleosome substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "518ddfb7-dd48-42cd-b2ee-ca26739b048b",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C38",
+      "claim": "The CoREST complex shows a special resistance to H3K14ac which is largely driven by the preceding Gly13 residue.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these complexes, the CoREST complex shows a special resistance to H3K14ac which we find is largely driven by the preceding Gly13 residue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data from mutant nucleosome studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "5e0cea93-2980-4aa6-a04b-a1214709436b",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C39",
+      "claim": "Semisynthetic X. laevis histone H3 proteins mono-acetylated at positions Lys9, Lys14, Lys18, Lys23, and Lys27 were prepared using F40 sortase.",
+      "claim_type": "EXPLICIT",
+      "source": "Semisynthetic X. laevis histone H3 proteins (Wang et al., 2015) mono-acetylated at positions Lys9, Lys14, Lys18, Lys23, and Lys27 were prepared using F40 sortase (Piotukh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "6da29465-393c-4a6b-bc17-045ac994c02b",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C40",
+      "claim": "F40 sortase treatment catalyzes transpeptidation leading to ligation of H3 peptide and H3 globular domain fragments to produce pure, scarless full-length modified histone H3s.",
+      "claim_type": "EXPLICIT",
+      "source": "F40 sortase treatment of the H3 peptide and H3 globular domain catalyzes transpeptidation leading to ligation of the fragments to produce pure, scarless full-length modified histone H3s (Figure 2A\u2013D and Figure 2\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental methodology, supported by figures showing the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "599c698e-a455-4bc2-a520-108cd9861776",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C41",
+      "claim": "Western blot analysis with site-specific acetyl-Lys antibodies demonstrated that each of the semisynthetic histone H3s contained the designated marks.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis with the site-specific relevant acetyl-Lys antibodies demonstrated that each of the semisynthetic histone H3s contained the designated marks (Figure 3\u2014figure supplement 1 and Wu et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "c53cfe62-7c4c-4f39-a43c-29981bcdaea6",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C42",
+      "claim": "The semisynthetic acetylated H3s were incorporated into mononucleosomes containing 146 bp DNA 601 Widom sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The semisynthetic acetylated H3s were incorporated into mononucleosomes containing 146 bp DNA 601 Widom sequence (Luger et al., 1997; Figure 2\u2014figure supplement 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental methodology, supported by citation and figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "1cba0662-4d0c-449b-8e06-5b130a8923ec",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C43",
+      "claim": "The five HDAC complexes displayed robust catalytic activities with isolated acetylated H3 substrates with velocities (V/E) averaging in the range of 0.5\u20132 min\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The five HDAC complexes displayed robust catalytic activities with isolated acetylated H3 substrates with velocities (V/E) averaging in the range of 0.5\u20132 min\u22121 and modest differences (largely <3 fold) in acetyl-Lys site-selectivity among K9ac, K14ac, K18ac, K23ac, and K27ac.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "f47d7e37-8832-4295-b8ea-54a4d20339e7",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C44",
+      "claim": "The five HDAC complexes showed modest differences (largely <3 fold) in acetyl-Lys site-selectivity among K9ac, K14ac, K18ac, K23ac, and K27ac with isolated H3 substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The five HDAC complexes displayed robust catalytic activities with isolated acetylated H3 substrates with velocities (V/E) averaging in the range of 0.5\u20132 min\u22121 and modest differences (largely <3 fold) in acetyl-Lys site-selectivity among K9ac, K14ac, K18ac, K23ac, and K27ac.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "de7b063d-872f-4ab4-b930-463c0230c9bc",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C45",
+      "claim": "HDAC complexes show similar deacetylase activities as the isolated commercial HDAC1 with free histone H3 substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "These HDAC complexes show similar deacetylase activities as the isolated commercial HDAC1 (averaging ~0.8 min\u22121) with free histone H3 substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing HDAC complexes to isolated HDAC1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "65111f1d-b3c6-4210-8f41-ad4b6afa8494",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C46",
+      "claim": "Local amino acid context within peptide substrates does not have a large impact on HDAC-catalyzed deacetylation kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are generally consistent with the prior studies that have indicated that local amino acid context within peptide substrates does not have a large impact on HDAC-catalyzed deacetylation kinetics (Table 1, Figure 4\u2014figure supplements 1\u20136A\u2013E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the current data and consistency with prior studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "b6abcae8-ae5b-41ca-8efd-10f236fc5181",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C47",
+      "claim": "The HDAC complex velocities (V/E) with acetylated nucleosomes varied over 200-fold, ranging from <0.005 min\u22121 to 1.2 min\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The HDAC complex velocities (V/E) with acetylated nucleosomes varied over 200-fold, ranging from <0.005 min\u22121 to 1.2 min\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "579494e3-2130-4754-abed-60e6e8d1aa7a",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C48",
+      "claim": "The MiDAC complex showed the fastest velocities with V/E up to 1.2 min\u22121 with acetylated nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The MiDAC complex showed the fastest velocities with V/E up to 1.2 min\u22121 whereas the NuRD and Sin3B complexes showed V/E ~ 0.007 min\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "52a6c1ac-c95e-4473-b571-80d8e2c5b8c0",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C49",
+      "claim": "The NuRD and Sin3B complexes showed V/E ~ 0.007 min\u22121 with acetylated nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The MiDAC complex showed the fastest velocities with V/E up to 1.2 min\u22121 whereas the NuRD and Sin3B complexes showed V/E ~ 0.007 min\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "c766e04d-5da4-4030-a3f7-2f9f1ae9b126",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C50",
+      "claim": "The CoREST and SMRT complexes were intermediate with V/E values averaging in the range of 0.03\u20130.1 min\u22121 with acetylated nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The CoREST and SMRT complexes were intermediate with V/E values averaging in the range of 0.03\u20130.1 min\u22121 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "832acb6e-9338-463d-b6b6-1635d9db58fd",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C51",
+      "claim": "CoREST showed similar velocities (V/E 0.06\u20130.1 min\u22121) for K9ac, K18ac, K23ac, and K27ac that were markedly greater than the V/E for K14ac (<0.005 min\u22121) with nucleosome substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "CoREST showed similar velocities (V/E 0.06\u20130.1 min\u22121) for K9ac, K18ac, K23ac, and K27ac that were markedly greater than the V/E for K14ac (<0.005 min\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "65e6ac96-7b6b-46f0-b520-eb0a69ede660",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C52",
+      "claim": "The MiDAC complex velocity for deacetylating K9ac (V/E 1.2 min\u22121) was only about 2-fold greater than for K14ac (V/E 0.52 min\u22121) with nucleosome substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the MiDAC complex velocity for deacetylating K9ac (V/E 1.2 min\u22121) was only about 2-fold greater than for K14ac (V/E 0.52 min\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "bb1c82f7-19f1-4638-883e-05b9364de155",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C53",
+      "claim": "The MiDAC complex deacetylated K23ac at a much lower rate (V/E 0.048 min\u22121) relative to K9ac removal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the MiDAC complex deacetylated K23ac at a much lower rate (V/E 0.048 min\u22121) relative to K9ac removal and in general, MiDAC deacetylase activity decreased when comparing more C-terminal acetyl-Lys sites in H3 with more N-terminal locations (Figure 4A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "db606118-0b00-4a18-8756-19c289dbfb74",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C54",
+      "claim": "MiDAC deacetylase activity decreased when comparing more C-terminal acetyl-Lys sites in H3 with more N-terminal locations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the MiDAC complex deacetylated K23ac at a much lower rate (V/E 0.048 min\u22121) relative to K9ac removal and in general, MiDAC deacetylase activity decreased when comparing more C-terminal acetyl-Lys sites in H3 with more N-terminal locations (Figure 4A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "895816e3-a2ad-4dd4-ac94-34a980b14506",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C55",
+      "claim": "The SMRT complex showed the highest rates of deacetylase activities on K9ac and K27ac.",
+      "claim_type": "EXPLICIT",
+      "source": "The one HDAC3 complex investigated here, SMRT, showed the highest rates of deacetylase activities on K9ac and K27ac and in general had more similar rates across the five sites compared with CoREST and MiDAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "a90311f3-0ecc-43fe-91c7-bdfb2af7c5ff",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C56",
+      "claim": "SMRT had more similar rates across the five acetylation sites compared with CoREST and MiDAC.",
+      "claim_type": "EXPLICIT",
+      "source": "The one HDAC3 complex investigated here, SMRT, showed the highest rates of deacetylase activities on K9ac and K27ac and in general had more similar rates across the five sites compared with CoREST and MiDAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "ad67c0cc-d04c-4bdf-9535-af78ff7588b4",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C57",
+      "claim": "NuRD and Sin3B displayed very low similar deacetylase activity at every H3 acetyl-Lys site.",
+      "claim_type": "EXPLICIT",
+      "source": "The activities of NuRD and Sin3B displayed very low similar deacetylase activity at every H3 acetyl-Lys site (Table 2, Figure 4\u2014figure supplements 1\u20136A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "410a1f88-af85-4447-8e46-1c200c434ac7",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C58",
+      "claim": "K9acR8G nucleosomes displayed a ~ 3 fold deacetylase rate reduction compared with WT K9ac when treated with the CoREST complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The K9acR8G nucleosomes displayed a ~ 3 fold deacetylase rate reduction compared with WT K9ac (K9acR8G V/E 0.029 min\u22121 vs WT K9ac V/E 0.1 min\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "34bfdbab-b108-4451-984d-00db25c005b2",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C59",
+      "claim": "K14acG13R nucleosomes showed a > 17 fold increase in deacetylase rate vs. WT K14ac when treated with the CoREST complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, K14acG13R nucleosomes showed a > 17 fold increase in deacetylase rate vs. WT K14ac (K14acG13R V/E 0.084 min\u22121 vs. WT K14ac V/E < 0.005 min\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "9df4a7d3-3ffe-4e6c-a803-cebcce323202",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C60",
+      "claim": "The near matching of V/E deacetylase values of the CoREST complex on K14acG13R and WT K9ac nucleosomes suggests a profound rejection of a Gly at the H3 13th position in nucleosomes by the CoREST complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The near matching of V/E deacetylase values of the CoREST complex on K14acG13R and WT K9ac nucleosomes suggests a profound rejection of a Gly at the H3 13th position in nucleosomes by the CoREST complex although it is more tolerated at the 8 position of H3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data, representing an inference from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "b0698518-0458-4e37-88bd-e9346ef07f27",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C61",
+      "claim": "Gly at the H3 13th position is more tolerated at the 8 position of H3 by the CoREST complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The near matching of V/E deacetylase values of the CoREST complex on K14acG13R and WT K9ac nucleosomes suggests a profound rejection of a Gly at the H3 13th position in nucleosomes by the CoREST complex although it is more tolerated at the 8 position of H3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of mutant and wild-type nucleosome deacetylation rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "8a16d21f-7c59-4624-88f2-781623721aa5",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C62",
+      "claim": "K9acR8G nucleosome deacetylation by the MiDAC complex matched that of WT K9ac nucleosomes (V/E 1.2 min\u22121 for both).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, K9acR8G nucleosome deacetylation by the MiDAC complex matched that of WT K9ac nucleosomes (V/E 1.2 min\u22121 for both).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "60247911-42ca-42db-b070-1572b696a331",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C63",
+      "claim": "K14acG13R nucleosome deacetylation by MiDAC was accelerated by 2.5 fold relative to WT K14ac nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "K14acG13R nucleosome deacetylation by MiDAC was accelerated by 2.5 fold relative to WT K14ac nuclesomes, indicating a minor preference for Arg at the H3 13th position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "1c2af6b1-5503-4624-8b6d-617fa4d06c56",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C64",
+      "claim": "MiDAC shows a minor preference for Arg at the H3 13th position.",
+      "claim_type": "EXPLICIT",
+      "source": "K14acG13R nucleosome deacetylation by MiDAC was accelerated by 2.5 fold relative to WT K14ac nuclesomes, indicating a minor preference for Arg at the H3 13th position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "7c331037-6aaa-4339-98a2-316fd2c38b93",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C65",
+      "claim": "The deacetylation rate (V/E) for NuRD on H4K16ac nucleosomes was low and similar to those of the acetylated H3 nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the deacetylation rate (V/E) for NuRD was low and similar to those of the acetylated H3 nucleosomes (Figure 6, Figure 6\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "13987fca-8126-41b4-b49b-ae5a11732767",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C66",
+      "claim": "The low nucleosome deacetylase activity of RBBP4-containing HDAC complexes may be unrelated to RBBP4/H3 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the low nucleosome deacetylase activity of RBBP4-containing HDAC complexes may be unrelated to RBBP4/H3 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the H4K16ac nucleosome data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "7bd83314-30ac-4064-a748-788b3abdd0d5",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C67",
+      "claim": "Distinct HDAC1 complexes can show sharply different deacetylase activities toward different nucleosome substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "A principal finding of this study is that distinct HDAC1 complexes can show sharply different deacetylase activities toward different nucleosome substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study, supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "0695d705-cb74-47bc-9383-43647e37f085",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C68",
+      "claim": "The unique biological consequences of the various HDAC1 complexes are not simply dependent on where they are recruited to in chromatin and by which particular transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "This would appear to suggest that the unique biological consequences of the various HDAC1 complexes are not simply dependent on where they are recruited to in chromatin and by which particular transcription factor (Watson et al., 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding of different catalytic properties among complexes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "51760e27-5326-47a9-ba1e-33472890d15b",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C69",
+      "claim": "The different catalytic properties and site-selectivities of the HDAC1 complexes likely drive different patterns of histone deacetylation and chromatin states.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the different catalytic properties and site-selectivities of the HDAC1 complexes likely drive different patterns of histone deacetylation and chromatin states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "c79e1f9f-26a6-4b82-a46b-076e0210cc35",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C70",
+      "claim": "HDAC1 and HDAC2 have very high sequence homology.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, because HDAC1 and HDAC2 have very high sequence homology, we believe it is likely that HDAC1 and HDAC2 will behave in similar ways in terms of the nucleosome deacetylation assays carried out here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "250c1088-6c1e-40b7-a889-c42421ef481c",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C71",
+      "claim": "HDAC1 and HDAC2 will likely behave in similar ways in terms of nucleosome deacetylation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, because HDAC1 and HDAC2 have very high sequence homology, we believe it is likely that HDAC1 and HDAC2 will behave in similar ways in terms of the nucleosome deacetylation assays carried out here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on sequence homology.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "0b203d24-e3f5-42e8-b6b3-d9534d889406",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C72",
+      "claim": "K14ac blocks the removal of H3K4 methylation by the CoREST complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely not a coincidence that K14ac blocks the removal of H3K4 methylation as this could allow doubly modified H3K4me1/2 and H3K14ac tails to be immune from the silencing action of the CoREST complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the enzymatic properties described and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "e0af6818-b8b1-45b6-ac23-ed1ddd48dcaf",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C73",
+      "claim": "Doubly modified H3K4me1/2 and H3K14ac tails could be immune from the silencing action of the CoREST complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely not a coincidence that K14ac blocks the removal of H3K4 methylation as this could allow doubly modified H3K4me1/2 and H3K14ac tails to be immune from the silencing action of the CoREST complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the enzymatic data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "a437d83d-83de-4d0d-9088-c4660abb57cb",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C74",
+      "claim": "H3K4 methylation is commonly found in the context of enhancer elements in DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K4 methylation is known to be commonly found in the context of enhancer elements in DNA (Hsu et al., 2018), which is also associated with H3K14ac (Karmodiya et al., 2012), possibly insulating such K4 methylation by CoREST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "4d9b0472-dc57-47e8-9e5d-938890b09736",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C75",
+      "claim": "H3K14ac is associated with enhancer elements in DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K4 methylation is known to be commonly found in the context of enhancer elements in DNA (Hsu et al., 2018), which is also associated with H3K14ac (Karmodiya et al., 2012), possibly insulating such K4 methylation by CoREST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "806cf703-ed7c-4eba-8f6d-2e7d0ef0d005",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C76",
+      "claim": "H3K14ac may insulate H3K4 methylation from CoREST action.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K4 methylation is known to be commonly found in the context of enhancer elements in DNA (Hsu et al., 2018), which is also associated with H3K14ac (Karmodiya et al., 2012), possibly insulating such K4 methylation by CoREST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the enzymatic properties and genomic context.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "e476dd35-e2f9-445a-9865-ce343592c975",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C77",
+      "claim": "The presence of Gly13 rather than an Arg residue is a principal determinant of the meager rate of CoREST-mediated deacetylation of K14ac in nucleosome substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gly/Arg swaps at positions 8 and 13 in histone H3 clearly demonstrate that the presence of Gly13 rather than an Arg residue is a principal determinant of the meager rate of CoREST-mediated deacetylation of K14ac in nucleosome substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion supported by the mutant nucleosome experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "1c2e5dea-b20e-477f-a515-0ad890a17218",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C78",
+      "claim": "Each of the five class I HDAC complexes examined were relatively ineffective at deacetylating K14ac in the context of nucleosomes presumably at least partly due to Gly13.",
+      "claim_type": "EXPLICIT",
+      "source": "However, each of the five class I HDAC complexes examined here were relatively ineffective at deacetylating K14ac in the context of nucleosomes presumably at least partly due to Gly13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "f4a389e4-e47b-4f34-b361-f58bca119b7e",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C79",
+      "claim": "The molecular recognition of Lys14ac by HDAC complexes is altered when the H3 tail is presented to the HDAC1 active site in a chromatin context.",
+      "claim_type": "EXPLICIT",
+      "source": "That this K14ac deselection is not true in isolated H3 indicates that the molecular recognition of Lys14ac by these HDAC complexes is altered when the H3 tail is presented to the HDAC1 active site in a chromatin context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of isolated H3 and nucleosome substrate data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "86b23cc5-8a6d-4e35-b07a-11ba778443bc",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C80",
+      "claim": "H3K14ac is a relatively abundant mark at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular relevance of these findings is supported by the fact that H3K14ac is a relatively abundant mark at baseline (Sidoli and Garcia, 2017) and is rather unaffected by class I HDAC inhibitor treatment compared with H3K9ac and H3K27ac which show substantial increases with such inhibitors (Sch\u00f6lz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "afde8158-2d3e-41db-860e-c5a05657b2fb",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C81",
+      "claim": "H3K14ac is rather unaffected by class I HDAC inhibitor treatment compared with H3K9ac and H3K27ac which show substantial increases with such inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular relevance of these findings is supported by the fact that H3K14ac is a relatively abundant mark at baseline (Sidoli and Garcia, 2017) and is rather unaffected by class I HDAC inhibitor treatment compared with H3K9ac and H3K27ac which show substantial increases with such inhibitors (Sch\u00f6lz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "8da42c52-f694-4015-87bf-d41abab5878c",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C82",
+      "claim": "Robust histone acetyltransferase targeting H3K14 may contribute to the elevated H3K14 acetylation levels in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that robust histone acetyltransferase targeting H3K14 contributes to the elevated H3K14 acetylation levels in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the cellular data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "3a3b2c65-7570-41bb-9ad7-f7ef6946efeb",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C83",
+      "claim": "The MiDAC complex showed the speediest average deacetylation rate across the five acetyl-Lys marks in nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The MiDAC complex showed far and away the speediest average deacetylation rate across the five acetyl-Lys marks looked at in nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "58035bca-36f4-43d5-b69f-b64169e2b7ab",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C84",
+      "claim": "MiDAC deacetylated K9ac nucleosomes (V/E 1.2 min\u22121) more rapidly than K9ac in free H3 histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Impressively, MiDAC deacetylated K9ac nucleosomes (V/E 1.2 min\u22121) more rapidly than K9ac in free H3 histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data comparing nucleosome and free histone substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "abdab72e-325e-41ae-bdb4-cd814c248572",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C85",
+      "claim": "MiDAC is not known to be recruited to chromatin by transcription factors like CoREST, NuRD, Sin3B, and SMRT.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike CoREST, NuRD, Sin3B, and SMRT which are thought to be transcriptional silencers and recruited to chromatin by transcription factors, MiDAC is not known to be employed in this way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about MiDAC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "44e2f3c8-321a-4b51-b446-425112eface9",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C86",
+      "claim": "MiDAC's ground state affinity to chromatin is thought to be quite high.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, its ground state affinity to chromatin is thought to be quite high (Itoh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "4ace4aab-5f1b-4500-97f2-155173f0e5df",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C87",
+      "claim": "There was a modest trend for the rate of MiDAC deacetylation to be highest closest to the N-terminus of H3 in the context of nucleosome substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting that there was a modest trend for the rate of deacetylation to be highest closest to the N-terminus of H3 in the context of nucleosome substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "60817955-1fe7-46c6-ba96-8b8919020a99",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C88",
+      "claim": "The extreme N-terminus of the H3 tail in chromatin may have greater accessibility to the HDAC1 active site in the MiDAC complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this may represent a greater accessibility of the extreme N-terminus of the H3 tail in chromatin to the HDAC1 active site in this complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the positional trend in deacetylation rates.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "274238d3-ba14-4acc-993d-5f07fa272958",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C89",
+      "claim": "The NuRD and Sin3B complexes showed the lowest deacetylation rates with H3 acetylated nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to MiDAC, the NuRD and Sin3B complexes showed the lowest deacetylation rates with H3 acetylated nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "e52c2196-8bad-4ebd-8a74-3ea125e67ba9",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C90",
+      "claim": "NuRD and Sin3B may have a more extreme requirement for recruitment to nucleosomes by a transcription factor compared with the other HDAC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is plausible the NuRD and Sin3B may have a more extreme requirement for recruitment to nucleosomes by a transcription factor compared with the other HDAC complexes looked at here (Zhang et al., 2018), (Walsh, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "fb34ba88-b280-4007-90b3-617c564747fd",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C91",
+      "claim": "There could be an additional macromolecular component or post-translational modification lacking in the experimental system that would unleash the deacetylase activity or alter substrate selectivities of HDAC complexes on nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there could be an additional macromolecular component or post-translational modification (Wang, 2019) lacking in our system that would unleash the deacetylase activity or alter substrate selectivities of any of the HDAC complexes on nucleosomes (Hudson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "7bf24d7f-366f-45ea-a0e1-18665bb16627",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C92",
+      "claim": "NuRD and other HDAC complexes have been reported to have a variety of additional protein subunits depending on cell type and cell state.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, NuRD and the other HDAC complexes investigated here have been reported to have a variety of additional protein subunits depending on cell type and cell state (Millard et al., 2016), (Lai and Wade, 2011), (Yang and Seto, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "ea961bad-cd13-4048-af26-9f05cf2ff5fa",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C93",
+      "claim": "The chromatin remodelling module of NuRD is rather loosely associated.",
+      "claim_type": "EXPLICIT",
+      "source": "For the NuRD complex, however, it is established that the chromatin remodelling module is rather loosely associated, and we do not expect that its absence would greatly influence HDAC activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about NuRD complex structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "8027d325-af5f-4aa9-a46c-e161b0b7bc7d",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C94",
+      "claim": "The absence of the chromatin remodelling module would not greatly influence NuRD HDAC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For the NuRD complex, however, it is established that the chromatin remodelling module is rather loosely associated, and we do not expect that its absence would greatly influence HDAC activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on structural knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "ff6756c3-9665-4f51-910e-bc487f720ed4",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C95",
+      "claim": "The NuRD or Sin3B complexes could show very high site-selectivity on one or more sites in histones beyond the acetylated-Lys examined in H3 or H4.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to roles for transcription factors and additional subunits, the NuRD or Sin3B complexes could show very high site-selectivity on one or more sites in histones beyond the acetylated-Lys that we have examined thus far in H3 or H4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation suggesting future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "d360cd14-c191-46fe-bf9f-4c6cf0663550",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C96",
+      "claim": "NAD-dependent sirtuins may also show site-selectivities.",
+      "claim_type": "EXPLICIT",
+      "source": "We have focused on classical HDAC acetyl-Lys selectivities in chromatin. However, there is reason to believe that the NAD-dependent sirtuins may also show site-selectivities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings with classical HDACs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "4cc52b1a-9ad9-4263-9fc5-d964b7c5ce50",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "claim_id": "C97",
+      "claim": "Sirt7 shows a strong preference for H3K36ac in the context of chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies on Sirt7 have shown that this enzyme shows a strong preference for H3K36ac in the context of chromatin (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on histone acetylation, HDACs, and HDAC complexes, establishing the knowledge gap that the study addresses regarding how multi-subunit HDAC complexes influence deacetylase activities and site-selectivities in chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C26 establish well-supported background knowledge from the literature, citing appropriate references for established facts about histone acetylation, HATs, HDACs, and HDAC complex composition and function. These claims provide the scientific context and rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "13fbb29e-f2ab-4f61-a663-631484e5f3fd",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous HDAC site-selectivity studies used isolated HDAC polypeptides and histone peptide substrates rather than physiological HDAC complexes and nucleosome substrates, showing little site-selectivity, raising questions about biological relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 accurately summarize prior work limitations based on cited literature (C27-C28) and established knowledge (C29-C30), with the inference about biological relevance (C31) being a reasonable conclusion from the mismatch between experimental systems and physiological conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "4fc237fc-4461-44ce-93e5-b5e1815705f7",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior work on the CoREST complex showed preference for H3K9ac over H3K14ac deacetylation, and the CoREST complex contains LSD1 which is inhibited by H3K14ac but not H3K9ac, suggesting a protective role for H3K14ac/H3K4me marks and raising the possibility that different HDAC complexes may show distinct kinetics and site selectivities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C32-C33 are supported by citations to prior work (Wu et al., 2018; Kalin et al., 2018). Claims C34-C35 are speculative interpretations that logically follow from the enzymatic properties described and serve as hypotheses for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "acc670e1-da7b-4a0c-9e17-742757ae7e73",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Semisynthetic histone H3 proteins with site-specific acetylation at K9, K14, K18, K23, and K27 were prepared using F40 sortase-mediated ligation and incorporated into mononucleosomes with 146 bp Widom 601 DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 describe the methodology for substrate preparation, supported by citations to established methods and experimental data shown in Figures 2 and 3 (supplementary figures). Western blot validation (C41) and nucleosome assembly (C42) are documented with appropriate figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "ebfd9e4d-4924-4020-944e-895b14da338f",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Five HDAC complexes showed robust and similar catalytic activities with isolated acetylated H3 substrates (V/E 0.5-2 min\u207b\u00b9) with modest site-selectivity differences (<3-fold), consistent with prior studies showing local amino acid context has limited impact on HDAC-catalyzed deacetylation kinetics with peptide substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by experimental data in Table 1 and supplementary figures. The finding that HDAC complexes show similar activities with free H3 substrates and modest site-selectivity is well-documented and consistent with prior literature, as noted in C46.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HDAC complexes showed dramatically different deacetylase activities with nucleosome substrates (200-fold range, <0.005 to 1.2 min\u207b\u00b9), with MiDAC being fastest, NuRD and Sin3B slowest, and CoREST and SMRT intermediate. Each complex displayed distinct site-selectivity patterns: CoREST strongly discriminated against H3K14ac, MiDAC showed positional preference (N-terminal > C-terminal), SMRT had more uniform rates, and NuRD/Sin3B showed uniformly low activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C57 represent the major findings of the study, supported by extensive experimental data in Table 2, Figure 3, Figure 4, and supplementary figures. The kinetic measurements are well-documented with multiple replicates (n=2-5) and appropriate controls. The site-selectivity patterns are clearly demonstrated across multiple acetylation sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "3c7d070c-d213-4174-9292-a143fadc37bb",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Amino acid swaps at positions 8 and 13 in H3 revealed that Gly13 is responsible for CoREST's resistance to H3K14ac deacetylation: K9acR8G showed 3-fold reduction while K14acG13R showed >17-fold increase in CoREST deacetylation rate. MiDAC showed minimal sensitivity to these mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64 are supported by experimental data in Figure 5 and supplementary figures. The mutant nucleosome experiments provide direct evidence for the role of Gly13 in CoREST site-selectivity. The contrasting behavior of MiDAC (C62-C64) serves as an important control showing the effect is complex-specific.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "6d34f7ac-2e96-4016-ae62-1a1b552185ee",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gly13 in the H3 tail is a principal determinant of reduced CoREST deacetylase activity toward H3K14ac in nucleosomes, and all five class I HDAC complexes examined were relatively ineffective at deacetylating H3K14ac in nucleosomes, indicating that molecular recognition of K14ac is altered in the chromatin context compared to isolated H3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C38, C77-C79 synthesize the major mechanistic finding of the study. The role of Gly13 is directly demonstrated by the mutant experiments (C58-C61), and the broader ineffectiveness of all complexes toward nucleosomal H3K14ac (C78) is supported by Table 2 data. The inference about altered molecular recognition in chromatin context (C79) is reasonable given the contrast with isolated H3 data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "3ae32682-ef37-4b55-aa7f-662b4931b6ee",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NuRD showed low deacetylase activity on H4K16ac nucleosomes similar to H3 acetylated nucleosomes, suggesting the low nucleosome deacetylase activity of RBBP4-containing complexes may be unrelated to RBBP4/H3 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by experimental data in Figure 6. The H4K16ac experiment tests whether RBBP4 binding to H3 tails impedes activity, and the negative result (low activity on H4 substrate) supports the interpretation in C66, though this remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "964b2fd8-72f8-4ae9-afe2-6fc7414c32ce",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates that distinct HDAC1 complexes show sharply different deacetylase activities and site-selectivities toward nucleosome substrates, suggesting that the unique biological consequences of HDAC1 complexes are not simply dependent on recruitment location but are driven by their different catalytic properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C36-C37, C67-C69 represent the overarching conclusions of the study. The experimental data (Tables 1-2, Figures 3-4) clearly support the finding of differential activities (C6, C37, C67). The interpretations about biological consequences (C68-C69) are reasonable inferences from the data, though they remain speculative without direct biological validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "46ae0e8b-dbdf-4463-8792-63d96456f687",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "HDAC1 and HDAC2 have very high sequence homology and will likely behave similarly in nucleosome deacetylation assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is established knowledge, but C71 is speculation based on sequence homology. While the reasoning is plausible, the study does not directly test HDAC2-containing complexes, so this remains an untested hypothesis. The authors acknowledge this is a belief/speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "00134c0b-c510-4b59-95f5-9d985f0761c2",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "K14ac blocks H3K4 methylation removal by CoREST, and doubly modified H3K4me/H3K14ac tails may be immune from CoREST silencing. Both marks are associated with enhancer elements, possibly providing insulation from CoREST action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 are supported by citations to published literature. Claim C76 is a speculative interpretation connecting the enzymatic properties to genomic context. While the speculation is reasonable given the cited associations, it requires further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "2e4b541b-25aa-46d2-b19e-ab30086a63e8",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The cellular relevance of the findings is supported by the fact that H3K14ac is relatively abundant at baseline and is less affected by HDAC inhibitor treatment compared to H3K9ac and H3K27ac, though robust HAT activity targeting H3K14 may also contribute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 are supported by citations to published cellular studies (Sidoli and Garcia, 2017; Sch\u00f6lz et al., 2015). Claim C82 is speculation about an alternative explanation. The cited cellular data provide important validation that the in vitro findings have biological relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "979fb72f-f54e-4e62-bac3-7eb50b3b85d0",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MiDAC showed the fastest average deacetylation rate across nucleosome substrates, deacetylating K9ac nucleosomes faster than free H3, with a modest trend for higher activity at N-terminal sites. MiDAC is not known to be recruited by transcription factors and has high ground-state chromatin affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 are supported by experimental data in Table 2 and Figure 4. Claims C85-C86 are based on established knowledge about MiDAC function. Claims C87-C88 represent observations and speculative interpretations of the positional trend in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "5e6c00da-c958-412d-8a54-8bc01dc2ca55",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "NuRD and Sin3B showed the lowest deacetylation rates with H3 nucleosomes. Possible explanations include more extreme requirements for transcription factor recruitment, missing macromolecular components or post-translational modifications, or high site-selectivity for sites not examined. The absence of the chromatin remodeling module in NuRD is not expected to greatly influence HDAC activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is supported by experimental data in Table 2. Claims C90-C95 are speculative interpretations and alternative explanations for the low activity, supported by citations to relevant literature. These remain hypotheses requiring further testing. The speculation about the chromatin remodeling module (C93-C94) is based on structural knowledge but is not experimentally tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    },
+    {
+      "id": "e8d90985-9b41-4db6-af52-9fe1de22ca36",
+      "content_id": "7c6cdb1b-b345-4b0e-9c89-612de8bb29aa",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "NAD-dependent sirtuins may also show site-selectivities, as Sirt7 shows strong preference for H3K36ac in chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is speculation extending the findings to sirtuins. Claim C97 is supported by citation to published work (Wang et al., 2019). This provides context for future work but is not a primary finding of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:38:56.216554Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "10e537f8-2aed-4882-b8b0-06a24279b9a9",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "4689646c-6026-4c72-804e-efb04c6717c1",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "de891d58-d205-4683-a74c-c3c96c1e2178",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "89a20b03-0582-4d73-a3a1-67b32d50f9f1",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "fed46cc2-a355-469d-b5cd-731f40d36c2a",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "2e73ce2d-bc16-4662-9247-721e97b1fbe9",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "e9d77c06-accd-4408-abcd-17a9ce657de4",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "724efd67-84bd-4527-92c9-ec0616a33939",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "7e82b7e2-2afb-4e90-83c1-bab03486d197",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "84b84648-cece-4015-8c14-cc2e4b6e8f53",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "955ee736-f7cb-4c1e-8400-be5fba60c330",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "ca31f726-d4b3-4af2-8c36-a9478629a5cc",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "c7093d2c-243b-4eb5-8dbf-d5d0df2ad4eb",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "3bd87266-5460-45c1-abdd-f73c2813473a",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "6a5932b6-edc1-4004-b90c-b04c0f696489",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "044a9544-a550-4559-8176-3f8c0de00bad",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "1a3dd25d-6fe4-45a2-89f1-fd558baa7a46",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "6c3d291c-f888-42f4-94db-fb8b39565f35",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "14bfb76a-dca0-4e5b-8733-4183c4964938",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "8c5e3ea5-d0d7-4712-944f-103e96d43ca6",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "c02a340c-fb5e-4b50-a4f9-c29bb03d392f",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "effa5815-e93d-49c6-9ac2-10e2e5aed873",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "15efbe5f-9a69-4620-b25a-eb7b9a7d9f2b",
+      "result_id": "ac7fbc63-7aba-4592-98e3-0706d8acb74d"
+    },
+    {
+      "claim_id": "1c5ef816-0ea0-4db2-a0a6-78e2056024fc",
+      "result_id": "13fbb29e-f2ab-4f61-a663-631484e5f3fd"
+    },
+    {
+      "claim_id": "39dab234-1133-426b-a11b-f06e821a27c9",
+      "result_id": "13fbb29e-f2ab-4f61-a663-631484e5f3fd"
+    },
+    {
+      "claim_id": "6425fb86-4c38-47f4-82f7-f8a73bc90afa",
+      "result_id": "13fbb29e-f2ab-4f61-a663-631484e5f3fd"
+    },
+    {
+      "claim_id": "91bee837-7d5c-48dd-9bf0-3f5ad72d41fc",
+      "result_id": "13fbb29e-f2ab-4f61-a663-631484e5f3fd"
+    },
+    {
+      "claim_id": "f73ae9ae-54e4-43f5-9cb1-8c87ff48f047",
+      "result_id": "13fbb29e-f2ab-4f61-a663-631484e5f3fd"
+    },
+    {
+      "claim_id": "09fd8e16-0d59-40cc-be1b-2d8c4ee0a5ea",
+      "result_id": "4fc237fc-4461-44ce-93e5-b5e1815705f7"
+    },
+    {
+      "claim_id": "f61a5823-4d44-4d48-b54d-44250d3b76c8",
+      "result_id": "4fc237fc-4461-44ce-93e5-b5e1815705f7"
+    },
+    {
+      "claim_id": "a3298cb1-82f6-4ed7-9914-ca25515d1909",
+      "result_id": "4fc237fc-4461-44ce-93e5-b5e1815705f7"
+    },
+    {
+      "claim_id": "806b26fb-11ac-4e26-a773-c272461fc756",
+      "result_id": "4fc237fc-4461-44ce-93e5-b5e1815705f7"
+    },
+    {
+      "claim_id": "ca0c87e1-41b8-4d5e-82e2-848e1139d448",
+      "result_id": "4fc237fc-4461-44ce-93e5-b5e1815705f7"
+    },
+    {
+      "claim_id": "5e0cea93-2980-4aa6-a04b-a1214709436b",
+      "result_id": "acc670e1-da7b-4a0c-9e17-742757ae7e73"
+    },
+    {
+      "claim_id": "6da29465-393c-4a6b-bc17-045ac994c02b",
+      "result_id": "acc670e1-da7b-4a0c-9e17-742757ae7e73"
+    },
+    {
+      "claim_id": "599c698e-a455-4bc2-a520-108cd9861776",
+      "result_id": "acc670e1-da7b-4a0c-9e17-742757ae7e73"
+    },
+    {
+      "claim_id": "c53cfe62-7c4c-4f39-a43c-29981bcdaea6",
+      "result_id": "acc670e1-da7b-4a0c-9e17-742757ae7e73"
+    },
+    {
+      "claim_id": "1cba0662-4d0c-449b-8e06-5b130a8923ec",
+      "result_id": "ebfd9e4d-4924-4020-944e-895b14da338f"
+    },
+    {
+      "claim_id": "f47d7e37-8832-4295-b8ea-54a4d20339e7",
+      "result_id": "ebfd9e4d-4924-4020-944e-895b14da338f"
+    },
+    {
+      "claim_id": "de7b063d-872f-4ab4-b930-463c0230c9bc",
+      "result_id": "ebfd9e4d-4924-4020-944e-895b14da338f"
+    },
+    {
+      "claim_id": "65111f1d-b3c6-4210-8f41-ad4b6afa8494",
+      "result_id": "ebfd9e4d-4924-4020-944e-895b14da338f"
+    },
+    {
+      "claim_id": "b6abcae8-ae5b-41ca-8efd-10f236fc5181",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "579494e3-2130-4754-abed-60e6e8d1aa7a",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "52a6c1ac-c95e-4473-b571-80d8e2c5b8c0",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "c766e04d-5da4-4030-a3f7-2f9f1ae9b126",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "832acb6e-9338-463d-b6b6-1635d9db58fd",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "65e6ac96-7b6b-46f0-b520-eb0a69ede660",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "bb1c82f7-19f1-4638-883e-05b9364de155",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "db606118-0b00-4a18-8756-19c289dbfb74",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "895816e3-a2ad-4dd4-ac94-34a980b14506",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "a90311f3-0ecc-43fe-91c7-bdfb2af7c5ff",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "ad67c0cc-d04c-4bdf-9535-af78ff7588b4",
+      "result_id": "5e8de4c3-f031-4f0c-a8f1-a39914ae4b78"
+    },
+    {
+      "claim_id": "410a1f88-af85-4447-8e46-1c200c434ac7",
+      "result_id": "3c7d070c-d213-4174-9292-a143fadc37bb"
+    },
+    {
+      "claim_id": "34bfdbab-b108-4451-984d-00db25c005b2",
+      "result_id": "3c7d070c-d213-4174-9292-a143fadc37bb"
+    },
+    {
+      "claim_id": "9df4a7d3-3ffe-4e6c-a803-cebcce323202",
+      "result_id": "3c7d070c-d213-4174-9292-a143fadc37bb"
+    },
+    {
+      "claim_id": "b0698518-0458-4e37-88bd-e9346ef07f27",
+      "result_id": "3c7d070c-d213-4174-9292-a143fadc37bb"
+    },
+    {
+      "claim_id": "8a16d21f-7c59-4624-88f2-781623721aa5",
+      "result_id": "3c7d070c-d213-4174-9292-a143fadc37bb"
+    },
+    {
+      "claim_id": "60247911-42ca-42db-b070-1572b696a331",
+      "result_id": "3c7d070c-d213-4174-9292-a143fadc37bb"
+    },
+    {
+      "claim_id": "1c2af6b1-5503-4624-8b6d-617fa4d06c56",
+      "result_id": "3c7d070c-d213-4174-9292-a143fadc37bb"
+    },
+    {
+      "claim_id": "ef3e31f6-dc7a-455c-89b5-ee51c990a4c4",
+      "result_id": "6d34f7ac-2e96-4016-ae62-1a1b552185ee"
+    },
+    {
+      "claim_id": "518ddfb7-dd48-42cd-b2ee-ca26739b048b",
+      "result_id": "6d34f7ac-2e96-4016-ae62-1a1b552185ee"
+    },
+    {
+      "claim_id": "e476dd35-e2f9-445a-9865-ce343592c975",
+      "result_id": "6d34f7ac-2e96-4016-ae62-1a1b552185ee"
+    },
+    {
+      "claim_id": "1c2e5dea-b20e-477f-a515-0ad890a17218",
+      "result_id": "6d34f7ac-2e96-4016-ae62-1a1b552185ee"
+    },
+    {
+      "claim_id": "f4a389e4-e47b-4f34-b361-f58bca119b7e",
+      "result_id": "6d34f7ac-2e96-4016-ae62-1a1b552185ee"
+    },
+    {
+      "claim_id": "7c331037-6aaa-4339-98a2-316fd2c38b93",
+      "result_id": "3ae32682-ef37-4b55-aa7f-662b4931b6ee"
+    },
+    {
+      "claim_id": "13987fca-8126-41b4-b49b-ae5a11732767",
+      "result_id": "3ae32682-ef37-4b55-aa7f-662b4931b6ee"
+    },
+    {
+      "claim_id": "69cabfa4-ab4c-46f5-bfd5-29360a757ac9",
+      "result_id": "964b2fd8-72f8-4ae9-afe2-6fc7414c32ce"
+    },
+    {
+      "claim_id": "665bf8cb-16d3-46ed-a71c-191fb797dbed",
+      "result_id": "964b2fd8-72f8-4ae9-afe2-6fc7414c32ce"
+    },
+    {
+      "claim_id": "9bb33999-a941-4540-a8a4-d35b115af74f",
+      "result_id": "964b2fd8-72f8-4ae9-afe2-6fc7414c32ce"
+    },
+    {
+      "claim_id": "7bd83314-30ac-4064-a748-788b3abdd0d5",
+      "result_id": "964b2fd8-72f8-4ae9-afe2-6fc7414c32ce"
+    },
+    {
+      "claim_id": "0695d705-cb74-47bc-9383-43647e37f085",
+      "result_id": "964b2fd8-72f8-4ae9-afe2-6fc7414c32ce"
+    },
+    {
+      "claim_id": "51760e27-5326-47a9-ba1e-33472890d15b",
+      "result_id": "964b2fd8-72f8-4ae9-afe2-6fc7414c32ce"
+    },
+    {
+      "claim_id": "c79e1f9f-26a6-4b82-a46b-076e0210cc35",
+      "result_id": "46ae0e8b-dbdf-4463-8792-63d96456f687"
+    },
+    {
+      "claim_id": "250c1088-6c1e-40b7-a889-c42421ef481c",
+      "result_id": "46ae0e8b-dbdf-4463-8792-63d96456f687"
+    },
+    {
+      "claim_id": "0b203d24-e3f5-42e8-b6b3-d9534d889406",
+      "result_id": "00134c0b-c510-4b59-95f5-9d985f0761c2"
+    },
+    {
+      "claim_id": "e0af6818-b8b1-45b6-ac23-ed1ddd48dcaf",
+      "result_id": "00134c0b-c510-4b59-95f5-9d985f0761c2"
+    },
+    {
+      "claim_id": "a437d83d-83de-4d0d-9088-c4660abb57cb",
+      "result_id": "00134c0b-c510-4b59-95f5-9d985f0761c2"
+    },
+    {
+      "claim_id": "4d9b0472-dc57-47e8-9e5d-938890b09736",
+      "result_id": "00134c0b-c510-4b59-95f5-9d985f0761c2"
+    },
+    {
+      "claim_id": "806cf703-ed7c-4eba-8f6d-2e7d0ef0d005",
+      "result_id": "00134c0b-c510-4b59-95f5-9d985f0761c2"
+    },
+    {
+      "claim_id": "86b23cc5-8a6d-4e35-b07a-11ba778443bc",
+      "result_id": "2e4b541b-25aa-46d2-b19e-ab30086a63e8"
+    },
+    {
+      "claim_id": "afde8158-2d3e-41db-860e-c5a05657b2fb",
+      "result_id": "2e4b541b-25aa-46d2-b19e-ab30086a63e8"
+    },
+    {
+      "claim_id": "8da42c52-f694-4015-87bf-d41abab5878c",
+      "result_id": "2e4b541b-25aa-46d2-b19e-ab30086a63e8"
+    },
+    {
+      "claim_id": "3a3b2c65-7570-41bb-9ad7-f7ef6946efeb",
+      "result_id": "979fb72f-f54e-4e62-bac3-7eb50b3b85d0"
+    },
+    {
+      "claim_id": "58035bca-36f4-43d5-b69f-b64169e2b7ab",
+      "result_id": "979fb72f-f54e-4e62-bac3-7eb50b3b85d0"
+    },
+    {
+      "claim_id": "abdab72e-325e-41ae-bdb4-cd814c248572",
+      "result_id": "979fb72f-f54e-4e62-bac3-7eb50b3b85d0"
+    },
+    {
+      "claim_id": "44e2f3c8-321a-4b51-b446-425112eface9",
+      "result_id": "979fb72f-f54e-4e62-bac3-7eb50b3b85d0"
+    },
+    {
+      "claim_id": "4ace4aab-5f1b-4500-97f2-155173f0e5df",
+      "result_id": "979fb72f-f54e-4e62-bac3-7eb50b3b85d0"
+    },
+    {
+      "claim_id": "60817955-1fe7-46c6-ba96-8b8919020a99",
+      "result_id": "979fb72f-f54e-4e62-bac3-7eb50b3b85d0"
+    },
+    {
+      "claim_id": "274238d3-ba14-4acc-993d-5f07fa272958",
+      "result_id": "5e6c00da-c958-412d-8a54-8bc01dc2ca55"
+    },
+    {
+      "claim_id": "e52c2196-8bad-4ebd-8a74-3ea125e67ba9",
+      "result_id": "5e6c00da-c958-412d-8a54-8bc01dc2ca55"
+    },
+    {
+      "claim_id": "fb34ba88-b280-4007-90b3-617c564747fd",
+      "result_id": "5e6c00da-c958-412d-8a54-8bc01dc2ca55"
+    },
+    {
+      "claim_id": "7bf24d7f-366f-45ea-a0e1-18665bb16627",
+      "result_id": "5e6c00da-c958-412d-8a54-8bc01dc2ca55"
+    },
+    {
+      "claim_id": "ea961bad-cd13-4048-af26-9f05cf2ff5fa",
+      "result_id": "5e6c00da-c958-412d-8a54-8bc01dc2ca55"
+    },
+    {
+      "claim_id": "8027d325-af5f-4aa9-a46c-e161b0b7bc7d",
+      "result_id": "5e6c00da-c958-412d-8a54-8bc01dc2ca55"
+    },
+    {
+      "claim_id": "ff6756c3-9665-4f51-910e-bc487f720ed4",
+      "result_id": "5e6c00da-c958-412d-8a54-8bc01dc2ca55"
+    },
+    {
+      "claim_id": "d360cd14-c191-46fe-bf9f-4c6cf0663550",
+      "result_id": "e8d90985-9b41-4db6-af52-9fe1de22ca36"
+    },
+    {
+      "claim_id": "4cc52b1a-9ad9-4263-9fc5-d964b7c5ce50",
+      "result_id": "e8d90985-9b41-4db6-af52-9fe1de22ca36"
+    }
+  ],
+  "comparisons": []
+}

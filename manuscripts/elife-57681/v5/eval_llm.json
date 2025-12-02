@@ -1,0 +1,460 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Light-sheet fluorescence microscopy (LSFM) has evolved to become a powerful imaging modality with advantages including single-cell resolution, inherent optical sectioning, low phototoxicity, high temporal resolution, and the ability to image diverse biological systems from macromolecular complexes to intact organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by citations to established literature (Huisken et al., 2004; Keller et al., 2007; Chakraborty et al., 2019; Voigt et al., 2019; Dean et al., 2017) and represent established knowledge about LSFM capabilities. These claims provide appropriate background context for the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Despite its advantages, widespread adoption of LSFM remains limited due to slow commercial adoption requiring custom instrument construction, geometric constraints that occlude standard imaging dishes, sterility concerns with high-NA water-dipping objectives, and lack of user-friendly features like environmental control and autofocusing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 identify legitimate practical limitations of LSFM systems based on established knowledge and reasonable inferences about the field. These claims effectively motivate the need for the improved OPM design presented in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Previous single-objective LSFM approaches including cantilever-based methods, micromirror microfluidics, and high-NA oil immersion systems have significant limitations including low-NA illumination, limited volumetric imaging capacity, restricted field of view, specialized imaging chambers, thick tilted light-sheets, spherical aberrations, and incompatibility with standard sample formats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 are supported by appropriate citations (Gebhardt et al., 2013; Galland et al., 2015; Meddens et al., 2016; Fadero et al., 2018) and provide accurate assessments of limitations in prior single-objective LSFM designs. These claims establish the context for the improvements offered by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Oblique plane microscopy (OPM) offers advantages over traditional LSFM by using a single objective for oblique illumination and detection, enabling standard microscope geometry and sample mounting. Previous OPM systems had low resolution due to incomplete capture of high-angle rays, but recent work achieved ~300 nm resolution using air and water objectives with a coverslip-walled immersion chamber, though this approach is technically challenging to align and limited to NA 0.9 secondary objectives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 accurately describe OPM principles and cite appropriate prior work (Botcherby et al., 2012; Yang et al., 2019). The optical principles regarding refractive index compression are well-established, and the practical limitations of the immersion chamber approach are reasonable inferences supported by the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The authors built an OPM with a bespoke glass-tipped tertiary objective to improve resolution, field of view, and usability over previous variants, providing a unique combination of these performance characteristics compared to other single-objective LSFMs and OPMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by the citation to Millett-Sikking and York, 2019 for the glass-tipped objective and by the extensive characterization data presented throughout the manuscript (C33-C65, C124-C145). The authors demonstrate their system's performance through multiple resolution measurements and biological imaging applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors demonstrate the OPM's capabilities by imaging diverse biological processes including nuclear rupture in melanoma cells migrating through microfluidic constrictions, immunological synapse formation, cleavage furrow ingression in Drosophila embryos, rheological cytosolic flows, optogenetic activation of Rac1, and intact coronal murine brain slices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are supported by extensive imaging data presented in Figures 3-9 and associated videos. Each biological application is documented with appropriate image data, demonstrating the versatility and performance of the OPM system across diverse sample types and imaging challenges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The OPM design uses a high-NA silicone immersion primary objective (100X, NA 1.35) matched to a secondary air objective (40X, NA 0.95) with a tertiary imaging system oriented 30 degrees off-axis. The system includes a galvanometer-based scan-descan geometry enabling high imaging rates (~800 planes/second), versatile illumination modes, and standard inverted microscope format with environmental control. Transmission efficiency is 41-53% at 30 degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C44 describe the microscope design and are supported by detailed Materials and Methods, Figure 1 supplements, and transmission measurements. The design choices are well-justified (e.g., silicone immersion for refractive index matching, cited to Phillips et al., 2012), and the galvanometer-based approach is appropriately cited to prior work (Kumar et al., 2018; Voleti et al., 2019; Yang et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The OPM illuminates samples with a 30-degree oblique light-sheet, acquiring 3D volumes by scanning in the Y-direction. Computational shearing transforms data into proper Euclidean geometry. Raw axial resolution varies with illumination NA: 587\u00b118 nm (NA 0.34), 736\u00b110 nm (NA 0.16), and 918\u00b112 nm (NA 0.06). Most experiments used NA 0.16 illumination. The system provides adequate optical sectioning across all excitation NAs, with theoretical maximum imaging depth of ~60 microns and gradual resolution loss from 0 to 30-degree tilt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 are supported by Figure 2A-E and Figure 2-figure supplement 1. The resolution measurements are quantitative with appropriate statistics (mean \u00b1 standard deviation), and the relationship between illumination NA and resolution is clearly demonstrated. The theoretical imaging depth calculation is reasonable given the optical design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Unlike single-objective light-sheet systems using oil immersion objectives, spherical aberrations are not immediately evident in the OPM. At 30-degree illumination angle and NA 0.16 excitation, the raw axial resolution (736\u00b110 nm) is similar to the 666 nm resolution reported for square lattice mode lattice light-sheet microscopy and comparable to spinning-disk microscopy with the same objective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by Figure 2D-E, Figure 2-figure supplement 2-3, and appropriate citations (Fadero et al., 2018; Chang et al., 2020; Valm et al., 2017). The comparison to other microscopy modalities is fair and well-documented with both imaging data and literature references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Using 100 nm coverslip-immobilized fluorescent beads with NA 0.16 illumination, raw resolution was measured as 299\u00b121, 336\u00b116, and 731\u00b121 nm in X, Y, and Z across a ~180\u00d7180 micron field of view. Resolution was relatively uniform across this field, which is 2.6-268\u00d7 larger than other single-objective LSFM methods. The X-dimension field of view in laser-scanning format is ~2.6\u00d7 larger than eSPIM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by Figure 2F-G with quantitative measurements and appropriate statistics. The comparisons to other methods are well-cited (Chen et al., 2014; Yang et al., 2019; Galland et al., 2015; Meddens et al., 2016; Gebhardt et al., 2013) and the field of view advantage is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Image decorrelation analysis yielded aggregate raw lateral resolution of 325\u00b125 nm, in agreement with FWHM measurements. Richardson-Lucy deconvolution (20 iterations) improved resolution to 203\u00b124, 209\u00b133, and 523\u00b160 nm in X, Y, Z. Microscope performance remained robust beyond the nominal focal plane. Fourier Ring Correlation analysis of GEMs yielded aggregate lateral resolution of 343\u00b112 nm (raw) and 220\u00b123 nm (deconvolved), comparable to lattice light-sheet microscopy's 312 nm for GFP-like fluorophores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by Figure 2-figure supplements 4-5, Figure 2H-J, and appropriate citations (Valm et al., 2017). Multiple independent resolution measurement methods (FWHM, decorrelation, FRC) provide converging evidence. The comparison to lattice light-sheet microscopy is well-documented and fair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The OPM successfully imaged diverse subcellular structures and dynamics including: highly dynamic endoplasmic reticulum tubules in U2OS cells throughout the cell volume; moderately dynamic vimentin filaments extending from perinuclear region to cell periphery in RPE cells, occupying both apical and basal surfaces; clathrin-mediated endocytosis showing pit initialization, diffusion, and scission; and dynamic cellular protrusions (blebs and filopodia) in MV3 melanoma cells, including filopodial buckling events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 are supported by Figure 3A-H, Figure 3-figure supplements 1-2, and Videos 1-5. The imaging data clearly demonstrates the claimed subcellular structures and dynamics. The comparison to TIRF-based methods (Li et al., 2015) appropriately highlights the advantage of volumetric imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors imaged NK cell-mediated cytotoxicity, revealing immunological synapse formation with rapid actin accumulation and retrograde flow, accompanied by long membrane tethers pulled from the target cell synchronously with actin flow. This could represent direct visualization of the first stage of trogocytosis, consistent with recent work on tension transmission in cytolytic T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 are supported by Figure 4A-D and Video 6, with appropriate background citations (Mace et al., 2014; Mace and Orange, 2014; Carisey et al., 2018; Brown et al., 2011; Chen et al., 2014; Ritter et al., 2015; Miner et al., 2015; Kumari et al., 2020). The observation of membrane tethers is clearly documented, though the interpretation as trogocytosis is appropriately presented as speculative (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The OPM enabled volumetric imaging of melanoma cells migrating through microfluidic constrictions (~4 microns tall with 2-2.5 micron junctions), revealing nuclear compression, microtubule-rich protrusions, polarized migration, microtubules surrounding both apical and basal nuclear surfaces, and elongated morphologies (~80 microns). This addresses the incompatibility of traditional LSFM with microfluidic device geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 are supported by Figure 5A-E and Video 7, with appropriate background citations (Wolf et al., 2013; Denais et al., 2016; Raab et al., 2016; Garcia-Arcos et al., 2019). The imaging clearly demonstrates the claimed cellular behaviors and the advantage of OPM geometry for microfluidic imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The galvanometer-based scan-descan geometry enables camera framerate-limited imaging. The authors demonstrated high-speed volumetric imaging at 10.4 Hz for calcium transients in rat cardiomyocytes and 13.7 Hz for tracking genetically encoded multimeric nanoparticles as rheological tracers, enabling observation of calcium translocation during spontaneous contraction and cytoplasmic diffusion dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 are supported by Figure 6A-B, Videos 8-9, and appropriate citations (Kumar et al., 2018; Voleti et al., 2019; Yang et al., 2019; Gilbert et al., 2020; Jaqaman et al., 2008; Delarue et al., 2018; Hannezo and Heisenberg, 2019). The high-speed imaging capabilities are clearly demonstrated, though claims about future impact (C96, C98) are appropriately speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Using simultaneous volumetric imaging and optical stimulation, the authors deployed photoactivatable Rac1 (PA-Rac1) in mouse embryonic fibroblasts. Subcellular optical stimulation resulted in large-scale dorsal ruffles propagating from cell edge to nucleus. Quantitative analysis showed PA-Rac1 cells (N=7) had statistically significant increases in protrusion speed (p=0.04) and duration (p=0.02) but not frequency upon photoactivation, while control cells (N=6) showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by Figure 7A-E, Videos 10-12, appropriate citations (Mohan et al., 2019; Wu et al., 2009), and quantitative analysis with statistical testing. The experimental design includes appropriate controls, and the statistical analysis is properly reported with p-values and sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Imaging neuronal processes requires a combination of field of view, resolution, and speed due to neurons' large spatial extent and sub-micron features like synaptic boutons. The authors imaged cortical neurons expressing GCaMP6f at 7 Hz volumetric rate, visualizing both small-scale morphological features and rapid action potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by Figure 8A and Video 13. The imaging requirements for neurons are well-established knowledge, and the demonstration of simultaneous morphological and functional imaging at 7 Hz volumetric rate clearly shows the system's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors imaged ventral furrow ingression in stage 6 Drosophila embryos, a three-dimensional developmental process occurring over minutes along the ~230 micron anteroposterior axis. The imaging captured the prominent ventral furrow groove formation, followed by germ band extension with cells moving toward the ventral midline and intercalating, causing tissue elongation and subsequent rapid cellular rounding and mitotic events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 are supported by Figure 8B, Figure 8-figure supplement 1, Video 14, and appropriate citation (Blankenship et al., 2006). The imaging clearly demonstrates the developmental processes described, showcasing the system's ability to capture rapid 3D morphogenetic events over large fields of view.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The stage-scanning OPM variant can image ~1 cm\u00b2 of thin tissue in <45 min per color with automated fluidic handling for sequential multiplexed labeling. The authors imaged a complete 30-micron thick coronal mouse brain slice (~6\u00d78 mm) with DAPI, resolving small features like nucleoli throughout the tissue, and a ~4\u00d714 mm human lung tissue slice (12 microns thick) labeled for nuclei, ACE2 mRNA, and SFTPC protein, revealing characteristic histological features with molecular contrast and subcellular resolution across ~20,000 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 are supported by Figure 9A-G, Videos 15-16, and citation to Muus and Luecken, 2020. The large-scale tissue imaging is clearly demonstrated with appropriate image data showing subcellular resolution across centimeter-scale samples. The quantification of ~20,000 cells provides validation of prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The human lung specimen's lateral dimensions were 8- and 1.5-fold larger than the largest sample imaged with lattice light-sheet microscopy, though lattice light-sheet microscopy has 6.7\u00d7 larger theoretical working distance (2 mm vs 300 microns). In practice, optical aberrations limit high-resolution light-sheet microscopy to hundreds of microns depth even for transparent samples. The OPM approach is fully compatible with automated fluid exchange for iterative spatial-omics imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 are supported by Figure 9-figure supplement 1, appropriate citations (Gao et al., 2019; Chen et al., 2015), and reasonable inferences about practical imaging depth limitations. The comparison to lattice light-sheet microscopy is fair, acknowledging both advantages and limitations of each approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "High-resolution light-sheet microscopy has limited adoption due to sample drift, contamination, and lack of user friendliness. The OPM overcomes these challenges by combining ease of traditional sample mounting, environment maintenance, and stage control with selective plane illumination. The system delivers spatial resolution on par with square lattice mode lattice light-sheet microscopy, with larger field of view and volumetric imaging speed limited only by camera framerate and photon flux, requiring only a single imaging perspective unlike multiview LSFM techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are supported by the extensive characterization data (C33-C65) and appropriate citations (Chen et al., 2014; Guo et al., 2020; Wu et al., 2013). The comparison to other methods is well-documented throughout the manuscript, and the practical advantages are clearly demonstrated through the diverse biological applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Higher axial resolution can be achieved with Axially Swept Light-Sheet Microscopy or hexagonal/structured illumination modes of lattice light-sheet microscopy, but these require a separate illumination objective introducing steric limitations and additional drawbacks including shorter effective exposure time, increased out-of-focus blur, or acquisition of five images per plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 are supported by citation to Dean et al., 2015 and represent accurate assessments of alternative approaches. The tradeoffs described are well-established in the field and appropriately contextualize the OPM's performance relative to other high-resolution methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Previous OPM generations provided only moderate resolution or limited field of view. The revolution in OPM performance came from combining high-NA air secondary objectives (~0.9) with high-NA water-immersion tertiary objectives (~1.0), where the refractive index interface compresses and refracts the optical cone toward the tertiary objective. The current work takes this concept to its extreme with an optimized optical train and solid immersion objective, achieving lateral and axial resolving power similar to or better than many LSFM systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 are supported by appropriate citations (Bouchard et al., 2015; Dunsby, 2008; Kumar et al., 2011; Yang et al., 2019; Millett-Sikking and York, 2019) and the extensive characterization data presented throughout the manuscript. The progression from previous OPM designs to the current system is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The theoretical NA of 1.28 would in principle allow even higher spatial resolution. At zero-tilt angle, the system routinely delivered 270 nm scale raw lateral resolution across its field of view, indicating that reduced tilt angles could enable even higher resolution than demonstrated at 30 degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by the zero-tilt resolution measurements and represent reasonable inferences about the system's potential. The authors appropriately note that the reason for resolution drop with tilt is under investigation, showing appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The galvanometer-based design enables very high temporal resolution not limited by piezoelectric scanning. The authors demonstrated volumetric subcellular imaging at 10 Hz for intracellular flows and calcium propagation, and performed imaging in microfluidic channels and subcellular optogenetic activation of Rac1. The stage-scanning variant enables applications not feasible with comparable high-resolution light-sheet platforms, as demonstrated by cm-scale tissue imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141 are supported by the high-speed imaging data (Figure 6, C94-C98), optogenetics experiments (Figure 7, C100-C103), microfluidic imaging (Figure 5, C88-C92), and large-scale tissue imaging (Figure 9, C114-C118). The diverse applications clearly demonstrate the system's versatility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The OPM could displace laser-scanning and spinning-disk confocal microscopes as the workhorse of cell biology. Its design allows integration into existing epi-fluorescence frameworks, decreasing instrument cost. It combines spinning-disk spatial resolution with high volumetric acquisition speed and low phototoxicity of LSFM, providing comparable resolution to square lattice mode lattice light-sheet microscopy but with simpler sample handling, sterile environment maintenance, simultaneous multicolor imaging capability, and essentially unlimited field of view in sample scanning format.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C145 include both well-supported technical comparisons (C144-C145, supported by Figure 2-figure supplement 3 and citations) and speculative statements about future impact (C142). While the technical advantages are clearly demonstrated, whether the OPM will actually displace other microscopy modalities depends on factors beyond the current work (cost, commercial availability, user adoption, etc.).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The principle drawback of OPM systems is reduced collection efficiency from the large number of optics (59% and 47% fluorescence transmission loss for laser-scanning and stage-scanning variants at 30 degrees). However, losses are partly offset by the higher overall NA (\u22651.2) relative to other light-sheet microscopes, collecting ~1.35\u00d7 and ~2.56\u00d7 more photons than NA 1.1 or NA 0.8 objectives. For given laser power, the OPM achieves image contrast and photobleaching rates comparable to lattice light-sheet microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 are supported by transmission measurements (C42-C43), theoretical calculations in Appendix 3, and photobleaching comparison data (Figure 9-figure supplement 2). The authors appropriately acknowledge the limitation while providing quantitative evidence that it is partially compensated by higher NA and does not significantly impact practical performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "Many different OPM variants operating across a range of NAs (1.0-1.35) and magnifications (20-100X) have been designed and numerically evaluated. The authors consider this work the opening prelude to the next generation of user-friendly, broadly accessible LSFMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C149 is supported by the statement that variants have been designed and evaluated, though the data is not shown in this manuscript. Claim C150 is a reasonable forward-looking statement based on the demonstrated performance and advantages of the system. Both claims appropriately acknowledge this is the beginning of broader OPM development.",
+    "result_type": "MINOR"
+  }
+]

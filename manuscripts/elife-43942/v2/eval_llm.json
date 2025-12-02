@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The experimental design successfully created artificial objects defined solely by statistical contingencies without informative boundary cues. Objects were defined as unique pairs of unfamiliar shapes, with only individual shapes having visible boundaries. The separation between shapes was uniform regardless of whether they belonged to the same or different objects, making boundary cues uninformative for object identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C113 collectively describe a well-controlled experimental design where objects are defined purely by statistical co-occurrence rather than visual boundaries. The methodology is clearly described with appropriate controls (uniform spacing, no color differences, no explicit instructions about objects), and the design directly addresses the research question about statistical learning without boundary cues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "After visual exposure to scenes containing true pairs, participants performed significantly above chance (77% correct, 95% CI: 0.67-0.87, p=1.9\u00d710\u207b\u2075, Bayes factor=1253) in judging true pairs as more familiar than pseudo pairs, despite equal exposure to all constituent shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 report strong within-modality visual learning with robust statistical support (large effect size, highly significant p-value, strong Bayes factor). The finding replicates previous work (Fiser & Aslin 2001, 2005) and demonstrates that participants learned the statistical structure of the visual scenes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Visual statistical learning generalized to haptic judgments: participants performed significantly above chance (\u03c1=0.27, 95% CI: 0.07-0.47, p=0.0095, Bayes factor=5) in predicting pulling forces for novel objects without any haptic experience. The correlation between visual and haptic performance covered 87% of the possible performance range, with no significant learning trend during testing (p=0.07), suggesting immediate generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 demonstrate cross-modal generalization from visual to haptic domain. While the average effect is modest (Bayes factor=5), the correlation analysis and lack of learning during testing support genuine zero-shot generalization. The statistical model fit (87% coverage) provides quantitative evidence for the relationship between visual learning and haptic performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "After haptic exposure, participants performed significantly above chance in the haptic pulling test (\u03c1=0.28, 95% CI: 0.14-0.42, p=3.8\u00d710\u207b\u00b3, Bayes factor=91) and generalized to visual familiarity judgments (60% correct, 95% CI: 0.51-0.69, p=0.038, Bayes factor=2). True pairs were judged more visually familiar despite identical visual statistics, with the effect appearing immediately without gradual learning (p=0.58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 demonstrate bidirectional cross-modal transfer. The haptic learning is well-supported (strong Bayes factor=91), though the visual generalization is weaker (Bayes factor=2) as expected given the explicit conflict between visual and haptic statistics in this experiment. The immediate appearance of effects supports genuine generalization rather than learning during testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Comparison across experiments revealed similar haptic performance levels (t(18)=0.09, p=0.93, Bayes factor=3) despite the first experiment having no haptic exposure. Visual familiarity performance was higher after visual exposure than haptic exposure (t(18)=2.65, p=0.01, Bayes factor=4), consistent with the different cue conflict structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide important cross-experiment comparisons. The similar haptic performance despite different exposure conditions (C48-C49) strengthens the generalization argument. The difference in visual performance (C50-C51) is appropriately explained by the experimental design differences (cue conflict in haptic exposure experiment).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Within-participant analysis revealed significantly positive consistency (correlation=0.297\u00b10.104, t(34)=2.86, p=0.007, Bayes factor=6) between which pairs participants treated as objects in visual familiarity versus haptic pulling tests, demonstrating modality-generic object representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide critical evidence that the cross-modal effects reflect unified object representations rather than generic attention effects. The within-participant consistency analysis is methodologically sound and the statistical support is adequate (Bayes factor=6), though the effect is modest in magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Visual and haptic performance strongly correlated across participants (R=0.84, p=6.2\u00d710\u207b\u2077, Bayes factor=3225). When controlling for explicit knowledge of pairs, a highly significant partial correlation remained (R=0.69, p=3.1\u00d710\u207b\u2074, Bayes factor=23.4), with 67% of the generalization effect attributable to implicit transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 demonstrate that cross-modal generalization occurs largely through implicit mechanisms rather than explicit reasoning. The partial correlation analysis appropriately controls for explicit knowledge, and the strong statistical support (high Bayes factors) indicates robust implicit transfer. The quantification of implicit vs explicit contributions (67% implicit) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Participants demonstrated strong within-modality learning and zero-shot across-modality generalization that were highly correlated, enabling scene segmentation into objects based purely on statistical information without boundary cues. This learning produced genuinely coherent object-like representations consistent across visual and haptic modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C58-C60 represent the main conclusions synthesizing the experimental findings. These are well-supported by the convergent evidence from within-modality learning (C23-C25, C38-C40), cross-modal generalization (C26-C33, C39-C47), within-participant consistency (C52-C53), and implicit transfer analyses (C54-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C71"
+    ],
+    "result": "The authors propose that statistical learning mechanisms revealed in adults might operate in infant cognitive development, based on infant studies using similar stimuli and the parsimony principle that infants possess similar sensitivity to co-occurrence statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C37 and C71 extend findings to developmental implications. While the citations to infant literature are appropriate (C34-C35) and the parsimony argument is reasonable (C36), this remains speculative (C37, C71) as no infant data were collected in the current study. The proposal is plausible but requires empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The results suggest that classical object identification criteria (cohesion, boundedness, rigidity, no action at a distance) may be sufficient but not necessary, potentially representing special cases of a more general principle of statistical coherence. However, statistically-defined representations may need to pass additional criteria to become full mental objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C76 propose theoretical reinterpretation of classical object criteria. While the current findings (C73-C74) challenge necessity of classical criteria, the proposal that they are special cases of statistical coherence (C75) is speculative. The acknowledgment that additional criteria may be needed (C76) appropriately recognizes limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Previous statistical learning studies focused on single modalities or simultaneous multimodal presentation but did not test cross-modal generalization or investigate objectness of representations. The current findings suggest deeper integration where statistically-defined information in one modality automatically integrates into modality-general object representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 appropriately characterize prior work (C63-C69 with citations) and position the current contribution. The characterization of previous limitations is accurate, and the conclusion about deeper integration (C70) is supported by the cross-modal generalization and within-participant consistency findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "While not providing direct mechanistic evidence, the results suggest participants developed compressed representations (latent chunks) during exposure that mediated cross-modal effects. This occurred without specialized learning cues and despite the large number of stimuli (444 scenes) that could not be retained in raw form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 appropriately acknowledge the lack of direct mechanistic evidence (C81) while proposing plausible computational mechanisms based on prior work (C82, C86-C87). The inference about compressed representations (C84-C85) is reasonable given the stimulus complexity, and the proposal about latent chunks (C88) is consistent with cited theoretical frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Statistical learning is proposed to be not only domain-general but also to produce domain-general internal representations that could underlie affordances and object concept abstraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 synthesize the findings with appropriate citations. The domain-generality claim (C90) is supported by the cross-modal transfer findings. The proposal about affordances and object concepts (C91) is appropriately framed as speculative ('could be') while being grounded in the empirical results and relevant theoretical frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study included 28 participants in the visual exposure experiment (8 excluded for failing haptic training, final N=20) and 20 participants in the haptic exposure experiment (none excluded). All protocols were ethically approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 describe participant samples and ethical approval. The exclusion criteria (C93) are clearly justified and applied consistently. The different exclusion rates between experiments (C93 vs C96) are explained by the different roles of haptic training in each design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C125",
+      "C126"
+    ],
+    "result": "The experimental procedures involved specific numbers of trials and force levels: 444 unique visual scenes with each pair appearing 222 times; pulling forces of 7.5N (separating objects) and 22.5N (breaking objects) in visual exposure experiment; three force levels (7.5N, 15N, 22.5N) in haptic exposure experiment; 48 haptic pulling test trials and 72 visual familiarity trials in visual exposure experiment; 192 haptic exposure trials and 32 visual familiarity trials in haptic exposure experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C126 provide detailed methodological specifications. These are clearly described and internally consistent. The different numbers of trials across experiments are appropriate given the different experimental designs and complexity of the tasks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Participants showed discriminable pulling forces: 9.3\u00b13.3N difference between force levels in visual exposure experiment; 5.4\u00b11.2N difference between low-medium and 2.8\u00b11.7N between medium-high levels in haptic exposure experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 report manipulation checks showing participants could discriminate the force levels. The larger difference in the visual exposure experiment (C128) compared to haptic exposure (C129-C130) is consistent with the two-level vs three-level design. These data validate that the haptic task was performed appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes that objects are fundamental to cognition, defined by consistent sensory properties and affordances. While classic theories emphasize visual boundaries, these are insufficient alone. Statistical learning can segment inputs without boundary cues, but whether this produces real object-like representations was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide appropriate background and motivation. The characterization of prior work is accurate with proper citations (C3, C8-C10, C12-C13, C15). The identification of the knowledge gap (C2, C14) appropriately motivates the current study. The definition of objects (C16) provides a clear operational criterion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "While implicit statistical learning over short periods is difficult and performance was not perfect, participants who learned well within one modality showed strong cross-modal generalization beyond what explicit knowledge would predict.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 appropriately contextualize the findings. The acknowledgment of imperfect performance (C61) with citation is honest, while the emphasis on individual differences and strong generalizers (C62) correctly identifies the key pattern in the data shown in Figures 2 and 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors acknowledge that objectness may exist on a continuum and that further work is needed to refine necessary and sufficient conditions. Differences in behavioral measures (looking times vs cross-modal generalization) also require attention. The work represents an important first step connecting statistical learning to infant object representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 appropriately identify limitations and future directions. The acknowledgment of a continuum of objectness (C77) and need for further work (C78-C79) shows appropriate scientific caution. The characterization of the contribution (C80) is reasonable given the novel cross-modal generalization paradigm.",
+    "result_type": "MINOR"
+  }
+]

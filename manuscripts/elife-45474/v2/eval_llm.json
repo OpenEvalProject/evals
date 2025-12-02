@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "The authors developed a Bayesian MCMC framework to estimate average forces of infection (FOI) from age-specific dengue case data for 148 administrative level 1 units and 211 Colombian municipalities across Thailand, Colombia, Brazil, and Mexico. Country-level average FOI estimates ranged from 0.052 in Mexico to 0.132 in Colombia, with substantial within-country heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C21, C94-C97, C99-C102, and C104 collectively describe the data sources, statistical methodology, and primary FOI estimates. The methods are clearly described with appropriate Bayesian MCMC implementation including convergence diagnostics (C101), and the results provide specific point estimates with credible intervals for each country. The approach is methodologically sound for the stated objective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C86",
+      "C87"
+    ],
+    "result": "FOI estimates derived from age-specific case data showed good correlation (R\u00b2 = 0.73, 95% CI 0.51\u20130.87) with estimates from seroprevalence data (the gold standard) for 16 locations, while recent incidence showed no correlation (R\u00b2 = 0.002) with seroprevalence-derived FOI estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, and C35 provide validation of the method against the gold standard with specific statistical measures. The correlation coefficient and confidence intervals support the claim of good agreement. Claims C86-C87 appropriately acknowledge expected discrepancies due to spatial and temporal mismatches between data sources, demonstrating scientific rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Substantial spatial heterogeneity in dengue transmission intensity was observed both between and within countries, with coefficients of variation ranging from 0.27 in Thailand to 0.56 in Brazil at the administrative level 1, and averaging 0.4 within Colombian departments at administrative level 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C33 collectively document spatial heterogeneity with specific quantitative measures (ranges, coefficients of variation, and regional patterns). The data are internally consistent and supported by the figures. The finding of within-country heterogeneity is well-documented with appropriate statistical descriptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C73"
+    ],
+    "result": "FOI estimates for 211 Colombian municipalities correlated with known environmental drivers of dengue transmission, with temperature, elevation, population density, and precipitation explaining 35% (95% CI 23\u201350%) of variance in the best-fitting adjusted model. In contrast, recent incidence showed no correlation with these environmental drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36-C44, and C73 provide comprehensive validation against environmental drivers with specific regression coefficients, R\u00b2 values, and confidence intervals. The contrast between FOI and incidence correlations (C41-C44) strengthens the argument for FOI as a superior metric. The statistical analyses appear appropriate with weighted regression accounting for sample size differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C76",
+      "C77"
+    ],
+    "result": "Application of FOI estimates to dengue vaccination policy revealed that only a small minority of locations (2/28 Colombian departments, 4/25 Brazilian states, 0/72 Thai provinces, 0/27 Mexican states) would meet the 80% seropositivity threshold at age 9 recommended for vaccination, and over 70% of locations would require targeting individuals \u226514 years old to achieve this threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C59, C76-C77 translate FOI estimates into actionable vaccination policy recommendations using established formulas. The calculations are mathematically sound (proportion seropositive = 1 - e^(-4\u03bba)), and the results are clearly presented with specific counts and proportions. The policy implications are appropriately framed as suggestions rather than definitive recommendations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "FOI estimates outperformed traditional surveillance metrics (crude incidence, standardized incidence) in ranking spatial units and correlating with the gold standard, while being more robust to differences in surveillance efficiency. The age distribution-based metrics (proportion of incidence under 10 years, mean age of cases) performed better than aggregate metrics but still inferior to FOI for cross-country comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C68-C72 provide systematic comparison of alternative metrics with clear performance rankings supported by Figure 1\u2014figure supplements 1-2. The mechanistic explanation for why incidence is misleading (C69-C70) is scientifically sound. The stated advantages of FOI (C71-C72) are logical consequences of the methodology and supported by the validation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Sensitivity analyses comparing FOI estimates from all dengue cases versus DHF/severe cases showed good correlation for Colombia (r=0.74) and Mexico (r=0.78) but lower correlation for Brazil (r=0.48), with discrepancies primarily occurring in locations with very low DHF case counts (<265 cases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 present sensitivity analysis results with specific correlation coefficients and identify sample size as a likely explanation for discrepancies (C66-C67). Claims C78-C80 provide appropriate context about case definition specificity. The analysis appropriately acknowledges limitations while demonstrating robustness of the method across different case definitions when sample sizes are adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C103",
+      "C105"
+    ],
+    "result": "The model makes several simplifying assumptions including that the age distribution of cases represents secondary infections, that risk and health-seeking behavior are age-independent, that all serotypes circulate equally, and that FOI is constant over 20-year periods, despite evidence suggesting some of these assumptions may not hold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85, C103, and C105 transparently acknowledge model assumptions and their potential limitations, with citations to contradictory evidence (C82-C84). This demonstrates appropriate scientific rigor in discussing model limitations. The assumptions are clearly stated and their implications for interpretation are acknowledged, though the validation results (C34) suggest the model performs well despite these simplifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Age-specific case data provides a more robust picture of transmission trends than overall incidence for immunizing infections because the age distribution is largely robust to under-reporting, while serological surveys (the gold standard) are rarely available despite being routinely collected by surveillance systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C12 establish the rationale for the study by documenting limitations of current surveillance approaches (C7-C8), scarcity of serosurveys (C10-C11), and advantages of age-specific data (C12). These are supported by citations (C10-C11) and represent established knowledge in infectious disease epidemiology. The logical framework is sound and motivates the methodological development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C45",
+      "C46",
+      "C47",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Dengue is the most widely spread mosquito-transmitted virus with large gaps in epidemiological understanding, and the WHO has issued evolving recommendations for Dengvaxia vaccination requiring knowledge of population seropositivity, which motivated making FOI estimates available online in June 2017 to help countries make vaccination decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C45-C47, C89-C93 provide context about dengue epidemiology and vaccination policy with appropriate citations to WHO guidelines. The evolution of WHO recommendations (C89-C92) is accurately described with citations. Claim C93 documents the practical application and dissemination of the research findings, demonstrating real-world impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C74",
+      "C75",
+      "C88"
+    ],
+    "result": "The FOI estimates translate to 12% of susceptible populations in Colombia and Brazil and 5% in Mexico getting infected yearly, and the approach should be generalizable to other immunizing infections including chikungunya and Zika, which share the same mosquito vector (A. aegypti) as dengue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 provide interpretable translations of FOI estimates using the formula 1-e^(-FOI), which is mathematically correct. Claims C74-C75 appropriately connect findings to Zika epidemiology with citation support. Claim C88 is appropriately framed as speculation about generalizability to other immunizing infections, which is reasonable given the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Methods to estimate transmission parameters from age-stratified data have been available for many years and previously applied to dengue in endemic settings, based on the principle that in high-transmission settings cases concentrate in younger age groups due to adult immunity, while in low-transmission settings the age distribution resembles the population distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 provide appropriate background on existing methods with citations (C106-C107) and explain the mechanistic basis for age-structured approaches (C108-C109). This establishes the scientific foundation for the work and appropriately positions it within the existing literature. The mechanistic explanation is consistent with established immunological principles.",
+    "result_type": "MINOR"
+  }
+]

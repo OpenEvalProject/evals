@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors assembled a comprehensive gill transcriptome for threespine sticklebacks containing 29,295 transcribed loci with 171,620 transcripts, including 7,147 novel loci not present in Ensembl gene build v90. The assembly shows high sensitivity (81%) and moderate specificity (59%), with 73% of loci expressed in at least one individual and enrichment for respiratory functions in highly expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 provide detailed transcriptome assembly statistics with specific numbers and validation metrics. The assembly methodology is described in Materials and Methods, and the results are internally consistent. The comparison to Ensembl annotations provides appropriate benchmarking, and the functional enrichment analysis (C15) is supported by referenced supplementary data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Principal component analysis identified PC2 and PC5 as axes separating marine and freshwater transcriptomes, capturing parallel expression divergence. The authors identified 586 transcripts (1% composite PC outliers, median FDR 2.6%) showing parallel marine-freshwater divergence, enriched for osmoregulation and ion transport genes including key osmoregulatory transporters and channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 describe a coherent analytical approach with PCA identifying parallel divergence axes and specific genes. The composite PC method is described in Materials and Methods, FDR calculations are provided (C19), and gene ontology enrichment (C20-C21) is supported by Supplementary file 3. The identification of known osmoregulatory genes provides biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Parallel divergently expressed transcripts are distributed across all 21 chromosomes but are significantly proximal to previously identified adaptive loci (Jones et al., 2012), with >13% within 10 kb and nearly 40% within 75 kb of regions showing parallel genetic divergence at the DNA sequence level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are supported by genomic distribution analysis (Figure 2a) and randomization tests (p<<0.025, Figure 2b-c). The proximity analysis provides specific distance thresholds and percentages. The comparison to adaptive loci from Jones et al. (2012) is appropriate, though the authors rely on prior work for identification of these adaptive regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In Little Campbell fish, parallel divergently expressed loci show molecular signatures of selection including reduced nucleotide diversity (Pi) and elevated genetic divergence (FST) centered on transcription start sites with upstream bias. River Tyne shows slightly increased FST but no reduction in Pi, possibly due to soft sweeps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 present population genetic evidence for selection with specific patterns around TSSs. The Little Campbell results (C26-C27) are clearly supported by Figure 2e-g. The Tyne results (C28) show weaker signatures, and the soft sweep explanation is speculative but acknowledged as such. The asymmetry between populations is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Allele-specific expression analysis in F1 hybrids from four river systems revealed that marine-freshwater expression differences are predominantly driven by cis-regulatory divergence, with 13-34.5% of genes testable across populations. The degree of cis-divergence scales positively with genetic divergence, ranging from ~350 to ~2000 cis-diverged transcripts across river systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe the core finding of predominant cis-regulation supported by allele-specific expression data from F1 hybrids (Figure 3b, Figure 3\u2014figure supplement 3-4). The methodology is detailed in Materials and Methods. The positive correlation between cis-divergence and genetic divergence (C31) provides internal consistency. Sample sizes and percentages are specific and verifiable from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Parallel diverged loci show significant enrichment for cis-regulation (11-26% above average) and cis+trans co-regulation compared to random expectations, with lower and non-significant enrichment for trans-regulation alone. The excess of amplifying cis+trans regulation is consistent with directional selection rather than drift, and includes key osmoregulatory genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 are supported by randomization tests (Figure 4) comparing parallel diverged loci to random expectations. The statistical approach is appropriate, and the interpretation linking cis+trans co-regulation to directional selection (C39) is supported by citation to Fraser et al. (2010). The identification of specific osmoregulatory genes (C40) provides biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Parallel divergent loci upregulated in freshwater show strong positive correlations among populations in the quantitative extent of both cis- and trans-divergence, with larger effect sizes than downregulated loci. This correlation is lost in non-parallel loci and is weaker for freshwater-downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe asymmetric patterns of regulatory parallelism supported by correlation analysis (Figure 5) and effect size analysis (Figure 5c, Figure 5\u2014figure supplement 1). The sliding threshold approach for defining parallel divergence is described in Methods. The asymmetry between upregulated and downregulated genes is consistently observed across multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Cis-regulatory divergence shows the strongest additivity among all regulatory classes and is most stable across different genetic backgrounds (lowest epistasis), making it favorable for adaptive divergence. These findings are consistent with previous studies on between-species expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by dominance-additivity ratio analysis (Figure 6a) and sibling comparison analysis (Figure 6b, Figure 6\u2014figure supplement 1). The methodology for quantifying additivity and epistasis is described. The consistency with prior literature (C46, citations to Lemos et al. 2008, McManus et al. 2010) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Salinity acclimation experiments revealed 2,542 differentially expressed transcripts (FDR 1%), with freshwater (0.2 ppt) eliciting markedly different responses than brackish (3.5 ppt) or marine (35 ppt) conditions. Despite plastic expression responses, cis-divergence of parallel diverged salinity-responsive genes was highly correlated across salinities, indicating trans-mediated plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe salinity response experiments with specific numbers and statistical thresholds. The key finding that cis-regulation is stable across salinities while expression is plastic (C51-C52) is supported by correlation analysis (Figure 6c). However, the inference that plasticity is trans-mediated (C52) is logical but not directly demonstrated\u2014it's inferred from the stability of cis-regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C101"
+    ],
+    "result": "The authors hypothesize that stable cis-regulatory divergence independent of environmental salinity provides a mechanism for genetic assimilation of plastic responses into heritable variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53 and C101 present a hypothesis about genetic assimilation based on the salinity experiment results. While the observation of stable cis-regulation across environments is supported (C51), the genetic assimilation hypothesis is speculative and not directly tested. The authors appropriately frame this as a hypothesis, but no experimental evidence for actual genetic assimilation is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Parallel transcriptomic divergence involves a few hundred genes with small individual effects, similar to genomic DNA-level divergence. These genes are proximal to adaptive loci, show signatures of selection around TSSs, are enriched for osmoregulation functions, and include both parallel and population-specific components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 synthesize multiple lines of evidence from earlier results. The small proportion of parallel divergence (C54) is supported by PCA (C18-C19), proximity to adaptive loci (C55) by C23-C25, selection signatures (C58) by C26-C28, and functional enrichment (C57) by C20-C21. The acknowledgment of population-specific divergence (C56) is supported by Appendix 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C108",
+      "C111"
+    ],
+    "result": "Cis-acting regulation consistently predominates gene expression divergence across four independent marine-freshwater ecotype pairs, both genome-wide and with enrichment in parallel diverged loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C108, and C111 restate the central finding of predominant cis-regulation. This is supported by allele-specific expression analysis across all four river systems (C30-C33) and enrichment analysis (C35-C36). The consistency across independent populations strengthens the conclusion. This represents the paper's primary finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69"
+    ],
+    "result": "The proportion of cis-regulatory divergence scales positively with genomic divergence between ecotype pairs, suggesting that genetic differences accumulating during early adaptive divergence with gene flow translate to cis-regulatory differences. The predominance of cis- over trans-divergence points toward selection rather than drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C69 present an interpretation of the correlation between cis-divergence and genomic divergence (supported by C31). The inference that this reflects early-stage divergence (C67) is reasonable given the known timescales. The argument for selection over drift (C69) is supported by comparison to mutation-accumulation experiments (C68) showing drift favors trans-divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Reinforcing cis+trans regulatory divergence, though rare, contributes importantly to early ecotype divergence and appears to increase with genetic and expression divergence. Selection may favor linkage disequilibrium between coevolved regulatory factors, potentially contributing to the genomic landscape of incipient speciation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C71 are supported by the observed excess of cis+trans co-regulation (C38) and its scaling with divergence. However, claims C72-C74 about long-term consequences for speciation and genomic architecture are speculative extrapolations. While theoretically plausible and supported by citation (C73), these predictions are not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Parallelism exists not only in the predominance of cis-divergence but also in the quantitative extent of cis- and trans-regulation, particularly for genes upregulated in freshwater. This suggests shared genetic basis and predictability of regulatory architecture among freshwater populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by correlation analysis (Figure 5) showing strong parallelism for upregulated genes but weaker parallelism for downregulated genes. The inference of shared genetic basis (C78) is reasonable given the known reuse of standing genetic variation in sticklebacks. The asymmetry between up- and downregulated genes is consistently observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C91",
+      "C93",
+      "C104",
+      "C114"
+    ],
+    "result": "Cis-regulatory divergence shows higher additivity and lower epistasis compared to other regulatory mechanisms, acting robustly across different genetic and environmental contexts. Parallel evolution favors non-epistatic regulatory alleles with consistent effects across genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C91, C93, C104, and C114 synthesize findings about the properties of cis-regulation from multiple analyses: additivity (C45, Figure 6a), epistasis (C47, Figure 6b), and environmental stability (C51, Figure 6c). The inference that these properties favor cis-regulation in parallel evolution (C93, C106) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C85"
+    ],
+    "result": "The authors speculate that there may be fewer molecular mechanisms to upregulate gene expression in freshwater fish compared to downregulation, and that larger effect sizes enable more efficient selection. Evolutionary context may have influenced which regulatory mechanisms efficiently respond to selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79, C81, and C85 are explicitly speculative explanations for observed asymmetries in parallelism and effect sizes. While the observations they attempt to explain are supported (C76-C77, C80), these mechanistic explanations are not directly tested. The authors appropriately frame these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C100"
+    ],
+    "result": "The authors infer that observed plasticity in expression is mediated via trans-regulation and that cis-regulation may play a particularly important role in the evolution of reduced plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95 and C100 present inferences about the mechanistic basis of plasticity based on the stability of cis-regulation across salinities (C51). While the inference is logical\u2014if cis is stable and expression is plastic, trans must mediate plasticity\u2014this is not directly demonstrated. The role of cis-divergence in evolving reduced plasticity (C95) is an interpretation rather than a tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background context: Parallel evolution of freshwater sticklebacks from marine ancestors has occurred repeatedly following Pleistocene ice sheet retreat, involving reuse of standing genetic variation at ~81 predominantly intergenic loci. Prior work has identified cis-regulatory mutations underlying morphological trait loss and linked expression changes in osmoregulatory genes and plasticity to freshwater adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide background context from prior literature, all supported by appropriate citations. These establish the biological system and prior knowledge about stickleback parallel evolution, regulatory mechanisms, and osmoregulation. While not original findings of this study, they provide essential context and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C89",
+      "C90",
+      "C92",
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Discussion context: The authors place their findings in the context of prior work on cis-regulation over various evolutionary timescales, stickleback evolutionary history, theoretical expectations about selection on additive alleles and epistasis, and previous findings on plasticity and genetic assimilation in sticklebacks and other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C98 (selected) provide discussion context from prior literature and established theory, all supported by appropriate citations. These contextualize the current findings within broader evolutionary biology and provide theoretical frameworks for interpretation. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The authors speculate that differences in tissue pleiotropy and genetic architecture between gill and dental tissue might explain contrasting findings with Hart et al. (2018), who reported predominance of trans-regulation in pharyngeal tooth plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 attempts to reconcile conflicting findings between studies. The speculation about tissue-specific differences in genetic architecture is plausible and supported by citation to Cleves et al. (2014), but this explanation is not tested. The contrast with Hart et al. (2018) is accurately noted (C86), but the mechanistic explanation remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C115"
+    ],
+    "result": "Synthesis: Parallel divergently expressed loci are dispersed genome-wide but proximal to adaptive loci, show selection signatures around TSSs, are predominantly cis-regulated with additive and environmentally stable effects, show parallelism in regulatory architecture for upregulated genes, and collectively suggest cis-divergence as a key contributor to the dispersed genomic landscape of adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C115 (selected) synthesize the major findings into an integrated conclusion. Each component is supported by earlier results: genomic distribution (C22-C25), selection signatures (C26-C28), cis-predominance (C30-C33, C35-C36), additivity and stability (C45-C47, C51), and parallelism (C41, C75-C76). The synthesis into a coherent model of adaptive divergence is well-supported.",
+    "result_type": "MAJOR"
+  }
+]

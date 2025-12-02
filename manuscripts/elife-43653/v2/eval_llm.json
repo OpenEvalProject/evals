@@ -1,0 +1,465 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Her2 downregulation induces a pro-inflammatory gene expression program driven by TNF\u03b1/NF\u03baB signaling. RNA-seq analysis showed enrichment of inflammatory and TNF\u03b1/NF\u03baB gene signatures following Her2 downregulation, with upregulation of chemokines (CCL2, CCL5, CCL20, CXCL1-5, CXCL10) and NF\u03baB pathway components. This program is mediated by autocrine TNF\u03b1 (increased 10-100 fold) and dependent on IKK activity, as demonstrated by conditioned media experiments and IKK inhibition studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C13 provide converging evidence from RNA-seq (C5-C7), qPCR (C8-C9), Western blots (C10, C12), and pharmacological inhibition (C11, C13) that Her2 downregulation activates NF\u03baB signaling through autocrine TNF\u03b1. Control experiments (C12-C13, C82-C84) address potential confounding effects of doxycycline and confirm the pathway is activated by Her2 inhibition specifically. The mechanistic chain from Her2 downregulation \u2192 TNF\u03b1 upregulation \u2192 NF\u03baB activation \u2192 chemokine expression is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C41"
+    ],
+    "result": "Her2 downregulation leads to dramatic immune cell infiltration in regressing tumors, which remains elevated in residual tumors. CD45+ leukocytes, particularly F4/80+ macrophages, increase dramatically during regression and remain high in residual tumors. T cells (CD3+, CD4+, CD8+) also infiltrate regressing and residual tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by immunohistochemistry data showing increased CD45, F4/80, and CD3 staining in regressing and residual tumors compared to primary tumors. Quantification is provided in supplementary figures. The observation that immune infiltration remains high in residual tumors (C15, C18) is particularly important for the study's conclusions about microenvironment-tumor interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C36",
+      "C41"
+    ],
+    "result": "Residual tumors exhibit prominent collagen deposition consistent with a desmoplastic response. Masson's trichrome staining revealed increased collagen in residual and recurrent tumors compared to primary tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C36 are supported by Masson's trichrome staining shown in Figures 2D and 6E. The histological evidence clearly shows blue collagen staining in residual and recurrent tumors. This finding is important for establishing the altered microenvironment in residual disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "CCL5 is elevated following Her2 downregulation and remains high in residual tumors in both mouse models and human patients. CCL5 was identified as one of only two cytokines both acutely induced after Her2 downregulation and persistently elevated in residual tumors. CCL5 expression increases further in recurrent tumors and is elevated in human residual breast tumors following neoadjuvant therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20, C23-C25, C87-C89 are supported by multiple orthogonal approaches: RNA-seq (C3), cytokine arrays (C20), ELISA (C25, C89), and analysis of human gene expression datasets GSE10281 and GSE21974 (C23-C24). The convergence of mouse and human data strengthens the translational relevance. The progressive increase from residual to recurrent tumors (C89) suggests functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C42"
+    ],
+    "result": "CCL5 expression is sufficient to accelerate tumor recurrence. Orthotopic tumors overexpressing CCL5 recurred significantly earlier than control tumors (HR=2.14, p=0.023).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by Kaplan-Meier survival analysis with appropriate statistical testing (log-rank test, hazard ratio). The cohort sizes (20-21 tumors per group) were determined by power calculations. The result demonstrates sufficiency of CCL5 for accelerating recurrence, though the effect size is modest (HR~2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C43",
+      "C55"
+    ],
+    "result": "Tumor-derived CCL5 is not necessary for recurrence following Her2 downregulation. CRISPR/Cas9 knockout of CCL5 in tumor cells had no effect on recurrence latency (HR=0.76, p=0.46), suggesting redundancy with other chemokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C43 are supported by Kaplan-Meier analysis of CCL5 knockout tumors (Figure 4E). The lack of effect despite successful knockout (confirmed by ELISA in C91) suggests compensatory mechanisms. Claim C55 provides a reasonable interpretation that other chemokines (CCL2, CXCL1-2) may be redundant. The contrast between sufficiency (C26) and lack of necessity (C27) is appropriately discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C63",
+      "C94"
+    ],
+    "result": "CCR5 expression is dynamically regulated on different cell types during tumor progression. CCR5 levels on macrophages increase in residual tumors and remain elevated, while CCR5 on T cells increases transiently during regression but returns to baseline in residual tumors. CCR5 is expressed at higher levels on macrophages than tumor cells, especially in residual tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C63, C94 are supported by flow cytometry (measuring median fluorescence intensity of CCR5+ cells) and qPCR on sorted cell populations. The cell-type-specific and stage-specific patterns of CCR5 expression are important for understanding which cells are poised to respond to CCL5. The higher expression on macrophages vs tumor cells (C31, C63) supports the focus on macrophage recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C46",
+      "C104"
+    ],
+    "result": "CCL5 expression in tumors promotes macrophage infiltration but not fibroblast recruitment. Flow cytometry showed CCL5-expressing residual tumors had a modest but consistent increase in macrophage infiltration, while fibroblast levels were unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by flow cytometry data (Figures 5F-G). The selective effect on macrophages but not fibroblasts, despite both cell types expressing CCR5 in residual tumors (C28, C30), suggests cell-type-specific responses. The effect on macrophages is described as 'modest but consistent,' which is appropriately cautious. This provides mechanistic support for how CCL5 promotes recurrence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Tumor-associated macrophages express collagen and collagen deposition genes that increase progressively during tumor regression, residual disease, and recurrence. RNA-seq identified ~200 differentially expressed genes between primary and recurrent TAMs, including collagen genes (COL5A1, COL24A1) and collagen processing genes (PCOLCE, ASPN). Expression of these genes was validated by qPCR in sorted TAMs and bulk tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C97-C102 are supported by RNA-seq of sorted macrophages and qPCR validation. The authors appropriately filtered the RNA-seq data to remove potential tumor cell contamination (C96). The progressive increase in collagen gene expression from primary through residual to recurrent TAMs (C35) is well-documented. The functional annotations of the genes (C98-C100) are accurate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Expression of collagen genes (ASPN, COL5A1, COL24A1, PCOLCE) increases in human residual breast tumors following neoadjuvant targeted therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by analysis of human gene expression dataset GSE10281 (Figure 6\u2014figure supplement 1A). This provides translational validation that the collagen gene expression pattern observed in mouse TAMs is also present in human residual disease, strengthening clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C103",
+      "C104"
+    ],
+    "result": "CCL5 promotes collagen deposition in a subset of recurrent tumors. While control recurrent tumors had uniform collagen levels, a subset of CCL5-expressing tumors showed very high collagen deposition by Masson's trichrome staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38 and C103 are supported by Masson's trichrome staining (Figure 6F, Figure 6\u2014figure supplement 1B-C). However, the result is described as occurring in 'a subset' of CCL5-expressing tumors, suggesting heterogeneity. No quantification or statistical analysis is provided to determine if the overall difference is significant. The mechanistic link between CCL5, macrophage recruitment, and collagen deposition is inferred but not directly tested (e.g., by depleting macrophages in CCL5-expressing tumors).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C67",
+      "C68"
+    ],
+    "result": "Over half of breast cancer deaths are due to late recurrence (\u22655 years), with approximately 270,000 diagnoses and 41,000 deaths expected in 2018.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C67-C68 are supported by citations to Sosa et al., 2014 and Siegel et al., 2018. These provide epidemiological context for the study's focus on late recurrence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The MTB;TAN mouse model recapitulates key features of Her2-driven breast cancer and residual disease. Doxycycline administration induces Her2 expression and tumor formation; dox withdrawal causes Her2 downregulation, apoptosis, and regression. A small population of residual cells can survive for up to 6 months before forming Her2-independent recurrent tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C74-C77 describe the experimental model and are supported by citations to prior work (Moody et al., 2002; Alvarez et al., 2013) and observations in the current study. This establishes the validity of the model for studying residual disease and recurrence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "VCAM-1 regulates breast cancer dormancy and OPG regulates breast cancer cell survival, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by citations to Lu et al., 2011 and Neville-Webbe et al., 2004. These provide context for why VCAM-1 and OPG were of interest among the upregulated cytokines, though they were not pursued further in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "CCL5 is a chemoattractant for multiple cell types and signals predominantly through CCR5, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by citations to established literature (Dembic, 2015; Lacy, 2017; Lee et al., 2017; Soria and Ben-Baruch, 2008). This provides biological context for interpreting the CCL5 results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C56",
+      "C57"
+    ],
+    "result": "Macrophages can mediate collagen deposition in colorectal cancer, though collagen deposition is traditionally attributed to fibroblasts, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C56-C57 are supported by citations (Afik et al., 2016; Thannickal, 2012). This provides precedent for the finding that macrophages express collagen genes in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Her2 signaling activates NF\u03baB and this pathway is required for macrophage recruitment in Her2-driven tumors, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by citations to Liu et al., 2009 and Liu et al., 2010. This provides context for the unexpected finding that Her2 inhibition further activates NF\u03baB.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "CCL5 plays important roles in tumor progression including invasion, metastasis, and immune infiltration, and has been correlated with recurrence in glioblastoma and residual disease in triple-negative breast cancer, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by citations (Aldinucci and Colombatti, 2014; Hudson et al., 2018; Araujo et al., 2018). This provides context for the focus on CCL5 in Her2+ breast cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C105"
+    ],
+    "result": "Collagen deposition promotes tumor progression and invasiveness, and collagen crosslinking enzymes are upregulated in breast cancer and correlate with poor prognosis, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C105 are supported by citations (Provenzano et al., 2008; Lu et al., 2012). This provides biological rationale for why CCL5-mediated collagen deposition might promote recurrence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "Breast cancer cells can express CCR5, which promotes stem cell expansion and metastasis. Tumor cell-expressed CCR5 may contribute to CCL5's effects on recurrence, though this was not directly tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by citations (Jiao et al., 2018; Velasco-Vel\u00e1zquez et al., 2012). Claim C64 is appropriately speculative, acknowledging a limitation that the relative contributions of CCR5 on macrophages vs tumor cells were not distinguished.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Multiple mechanisms contribute to tumor cell survival following therapy, including genetic resistance, epigenetic adaptations (drug-tolerant persisters), EMT, and alterations in apoptotic pathways, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by citations to established literature. This provides context for the study's focus on microenvironment-mediated mechanisms of residual cell survival.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "A similar inflammatory gene expression program was identified in EGFR-mutant lung cancer following EGFR inhibitor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by citation to Gong et al., 2018. This suggests the TNF\u03b1/NF\u03baB inflammatory program may be a common response to oncogene inhibition across cancer types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "High concentrations of doxycycline (>40 \u03bcg/ml) can inhibit NF\u03baB, but the concentrations used in this study (2 \u03bcg/ml) are well below this threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by citations (Alexander-Savino et al., 2016; Santa-Cec\u00edlia et al., 2016) and experimental design details. This addresses a potential confounding variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Her2 is required for proliferation of Her2-driven tumor cells, consistent with E2F signature enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by citation to Lee et al., 2000 and GSEA data (C5). This validates the model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Many chemokines induced after Her2 downregulation function as chemoattractants for immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by citations (Binnewies et al., 2018; L\u00f3pez et al., 2017). This provides biological rationale for examining immune infiltration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "CCL5 expression had no effect on primary tumor growth in either overexpression or knockout experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 state that tumor growth was similar between groups, but note 'data not shown.' Without seeing the data or statistical analysis, these claims cannot be fully evaluated. However, the lack of effect on primary tumor growth is important for interpreting the specific effect on recurrence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Her2 was downregulated following dox withdrawal in all tumors analyzed by flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by qRT-PCR data (Figure 5\u2014figure supplement 1A). This confirms the experimental manipulation was successful.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "A slight increase in CCR5 expression was observed in residual tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by flow cytometry (Figure 5E). The modest increase in tumor cell CCR5 contrasts with the larger increase in macrophage CCR5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Residual tumor-associated macrophages did not yield sufficient RNA for sequencing. FACS-sorted TAMs from other timepoints may have been partially contaminated with tumor cells based on Her2 expression detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 acknowledge technical limitations. The authors appropriately filtered the TAM RNA-seq data to account for potential contamination. This transparency strengthens confidence in the filtered results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C47",
+      "C60",
+      "C64",
+      "C66",
+      "C106",
+      "C109"
+    ],
+    "result": "Speculative claims about mechanisms and therapeutic implications: CCL5 may signal through CCR5 on macrophages to modulate function; collagen deposition may promote residual cell survival/proliferation; tumor cell CCR5 may contribute to recurrence; targeting the TNF\u03b1-CCL5-macrophage axis may prevent recurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C60, C64, C66, C106, C109 are appropriately speculative, using language like 'may' and 'possible.' These represent reasonable hypotheses based on the data but require additional experiments for validation. The speculation is appropriate for a Discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Interactions between residual tumor cells and their microenvironment are critical for recurrent tumor formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is a summary conclusion supported by the collective findings: inflammatory program induction (C2), immune infiltration (C14-C19), CCL5 elevation (C3), CCL5-mediated macrophage recruitment (C33), and CCL5-accelerated recurrence (C26). This represents the main conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Maraviroc is a CCR5 antagonist and PLX3397 is a CSF-1R inhibitor that blocks macrophage infiltration/function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by citations. These identify potential therapeutic agents for future testing based on the study's findings.",
+    "result_type": "MINOR"
+  }
+]

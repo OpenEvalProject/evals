@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C58",
+      "C60",
+      "C65",
+      "C66",
+      "C67",
+      "C103",
+      "C105"
+    ],
+    "result": "SETD3 is identified as the actin-specific histidine N-methyltransferase through purification from rat muscle and in vitro validation. The enzyme was purified approximately 1200-fold from rat leg muscle, eluted as a single peak, and identified by mass spectrometry. Recombinant rat and human SETD3 methylated \u03b2-actin at H73 in vitro but not the H73A mutant, with specific activity of ~5 nmol/min/mg protein. Mass spectrometry confirmed tri-deuterium methylation specifically at H73.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification is well-supported by multiple converging lines of evidence: biochemical purification showing a single enzyme species (C45-C47), mass spectrometry identification of SETD3 as the only methyltransferase in purified fractions (C49-C51), in vitro activity of recombinant enzyme with specificity for H73 (C58, C60), and direct mass spectrometry confirmation of H73 methylation (C65-C67). The molecular weight matches previous reports (C103), and the enzyme shows appropriate substrate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Knockout of SETD3 in HAP1 cells and Drosophila eliminates \u03b2-actin H73 methylation in vivo. CRISPR/Cas9-generated SETD3-KO HAP1 cell lines showed ~90% loss of H73 methylation compared to >90% methylation in wildtype cells. Similarly, SETD3 knockout in Drosophila prevented methylation of all three actin isoforms (actin-42A, -57B, -87E) at H74, while wildtype flies showed complete methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo validation is strongly supported by mass spectrometry analysis in two independent model systems (C74-C77). The quantitative data showing >90% methylation in wildtype and ~90% loss in knockouts (C9-C10, C75) provides compelling evidence. The consistency across human cells and Drosophila, including all three fly actin isoforms (C76-C77), demonstrates evolutionary conservation and establishes SETD3 as the sole enzyme responsible for this modification in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C78",
+      "C92"
+    ],
+    "result": "Loss of SETD3 results in decreased cellular F-actin content. Confocal microscopy with TRITC-phalloidin staining showed a clear decrease in F-actin in SETD3-KO HAP1 cells compared to wildtype, indicating disruption of SETD3 activity leads to depletion of F-actin and loss of cytoskeleton integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The F-actin phenotype is supported by confocal microscopy imaging (C78) across multiple knockout clones. The visual evidence clearly demonstrates reduced F-actin staining in SETD3-KO cells. However, the evaluation would be strengthened by quantitative analysis of F-actin levels rather than qualitative assessment. The claim of 'loss of cytoskeleton integrity' (C92) is somewhat interpretive but reasonable given the imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C80",
+      "C96",
+      "C129"
+    ],
+    "result": "SETD3-deficient HAP1 cells exhibit an increased glycolytic phenotype with 15-20% increases in both glucose consumption and lactate production. This metabolic shift is hypothesized to result from increased ATP demand due to accelerated degradation of hypomethylated F-actin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The metabolic phenotype is well-documented with quantitative measurements showing statistically significant 15-20% increases in both glucose consumption and lactate production (C80). The measurements were performed across three independent knockout clones with appropriate controls. However, the mechanistic link to F-actin instability (C96, C129) is inferential rather than directly demonstrated. The hypothesis is plausible but would require additional experiments (e.g., ATP measurements, actin turnover assays) for full validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C94"
+    ],
+    "result": "Non-methylated actin from SETD3-KO cells shows decreased thermal stability compared to methylated actin from wildtype cells. Thermal stability assays demonstrated that absence of H73 methylation destabilized actin in the temperature range of 30-46\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The thermal stability data (C79, C94) provides direct biochemical evidence for the stabilizing effect of H73 methylation. The temperature-dependent denaturation assay shows clear differences between wildtype and knockout cells. This supports the functional importance of the methylation and is consistent with previous in vitro studies cited in the manuscript. The experimental design appropriately controls for protein concentration and other variables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C86",
+      "C87",
+      "C115"
+    ],
+    "result": "SETD3 exhibits high affinity for both SAM and \u03b2-actin with KM values well below physiological concentrations. Human SETD3 shows KM ~0.8 \u03bcM for \u03b2-actin and ~0.1 \u03bcM for SAM, with 3-fold higher catalytic efficiency than rat SETD3. Both enzymes have kcat of 0.6-0.8 min\u207b\u00b9, suggesting they operate near Vmax in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic characterization is thorough and well-documented (C61-C63, C86). The comparison of KM values with physiological concentrations (C87) supports the inference that enzymes operate near saturation in vivo (C115). However, the authors acknowledge (C116-C117) that the recombinant actin used may not represent the physiological substrate, which introduces uncertainty about the in vivo relevance of these specific kinetic parameters. The data are internally consistent and technically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C68",
+      "C83",
+      "C113",
+      "C114"
+    ],
+    "result": "SETD3 shows poor activity toward peptide substrates compared to full-length actin. Peptide H (YPIEHGIVT) was methylated at least 200-fold less efficiently than recombinant \u03b2-actin, and histone peptide H3N4 showed 4000-fold lower activity, indicating that structural features beyond the primary sequence are important for substrate recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The peptide substrate data (C64, C113) clearly demonstrate the requirement for proper protein context for efficient methylation. The comparison with histone peptide (C68, C83) supports the conclusion that SETD3 is primarily a histidine rather than lysine methyltransferase. The inference about structural requirements (C114) is reasonable given the large differences in activity. This is important for understanding substrate specificity but is a supporting rather than primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C84",
+      "C85",
+      "C88",
+      "C89"
+    ],
+    "result": "SETD3 does not methylate nucleotide-bound (ATP/ADP) actin but efficiently methylates nucleotide-free refolded actin. Actin complexed with profilin or cofilin shows negligible or low methylation. This suggests nucleotide-free actin monomers, possibly in complex with unknown actin-binding proteins, may be the physiological substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation that nucleotide-bound actin is not methylated (C69) is clear and reproducible, while refolded nucleotide-free actin is methylated (C70). However, the authors acknowledge the recombinant actin may have non-native structures (C84-C85), which complicates interpretation. The hypothesis about nucleotide-free actin complexes as physiological substrates (C89) is speculative and based on negative results with profilin and cofilin (C71-C72). The structural hindrance hypothesis (C88) is reasonable but unproven. This requires further investigation to determine the actual physiological substrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "SETD3 orthologs are found in almost all eukaryotes including vertebrates, insects, plants, and fungi, but are absent from S. cerevisiae and N. gruberi. All identified SETD3 proteins contain SET and Rubisco LSMT substrate-binding domains. H73 methylation is highly conserved among eukaryotic actins but absent in species lacking SETD3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis (C52) and domain structure characterization (C55) are well-documented. The correlation between SETD3 presence and actin methylation (C53-C54, C106-C108) provides strong evolutionary support for the enzyme-substrate relationship. The bioinformatic analysis is appropriately conducted and the conclusions about domain structure (C56-C57) are reasonable inferences from structural data. This provides important evolutionary context for the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C100",
+      "C101"
+    ],
+    "result": "Prior to this study, protein histidine methylation was considered rare with few known examples in vertebrates, including \u03b2-actin. The enzyme responsible for actin methylation was unknown, though partially purified. SETD3 represents the first protein-histidine methyltransferase identified in vertebrates and potentially the first SET-domain enzyme with dual Lys/His specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent the state of knowledge prior to the current study (C1-C3, C18-C28) and are appropriately supported by citations. The conclusions about SETD3 being the first vertebrate histidine methyltransferase (C100) and potentially having dual specificity (C101) are justified by the experimental findings, though the dual specificity claim is more tentative and requires further validation. This provides essential context for understanding the significance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "The phenotype of SETD3-deficient cells resembles malignant cells, suggesting SETD3 may play a role in tumor suppression. Actin hypomethylation has been observed in Src-transformed cells, and enzymatically inactive SETD3 promotes oncogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The similarity to cancer cell metabolism (C97, C102) is based on the observed glycolytic phenotype, which is a reasonable observation but represents only one aspect of the cancer phenotype. The supporting evidence from prior studies (C98-C99) is appropriately cited but does not directly demonstrate a causal role for actin methylation in tumorigenesis. This is an interesting hypothesis that requires substantial additional investigation including tumor models, patient samples, and mechanistic studies to be validated.",
+    "result_type": "MINOR"
+  }
+]

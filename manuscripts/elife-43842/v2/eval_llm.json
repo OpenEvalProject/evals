@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Wind speed is the primary factor affecting landing success in auks, with landing success declining from nearly 100% in calm conditions to 60% failure in strong breezes (11 m/s) and 80% failure in near-gale conditions (15 m/s). Statistical modeling shows wind speed explained 25% of variation in landing success, with probability decreasing significantly as wind speed increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C34-C38, C55-C57 are well-supported by extensive observational data (8623 landing attempts), statistical modeling (p<0.01, F=223.22), and probabilistic modeling. The relationship between wind speed and landing failure is quantified with appropriate statistical rigor, and the results are consistent across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C108"
+    ],
+    "result": "Wind interferes with auks' ability to maintain flight control during the final phase of landing, preventing cliff-breeding birds from accessing their nests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C108 are supported by the observational data showing systematic landing failures correlated with wind speed, combined with CFD modeling demonstrating complex airflow patterns near cliffs. The inference that loss of flight control is the mechanism is reasonable given the aerodynamic constraints and observed failure patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C69",
+      "C70",
+      "C71",
+      "C8"
+    ],
+    "result": "Ledge size significantly affects landing success, with smaller ledges associated with lower landing probability (16.27% explained deviance). Larger platforms provide greater airspace for maneuvering, which improves landing success despite being more crowded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C69-C71, and C8 are supported by statistical analysis showing ledge size as the second most important factor after wind speed. The interpretation that airspace rather than physical platform area drives this effect (C71) is a reasonable inference supported by observational data (C70) and aerodynamic principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Razorbills show significantly better landing success than guillemots (13.75% explained deviance), with razorbills having 0.85 probability of landing in 10 attempts versus 0.55 for guillemots in strong winds. This difference is attributed to razorbills' lower wing loading and greater maneuverability despite guillemots being larger and dominating access to larger platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C80-C87 are well-supported by statistical analysis and observational data. The species difference is quantified (C40, C80-C82), morphological basis is cited (C83-C84), behavioral patterns are documented (C85, C100-C101), and the mechanistic explanation via wing loading and maneuverability (C86) is a reasonable inference from aerodynamic principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C58",
+      "C109"
+    ],
+    "result": "Computational fluid dynamics modeling reveals that wind speeds near cliffs are reduced compared to open water, with areas of high turbulence intensity occurring in regions of reduced wind. At the Wick colony, birds must approach with a tailwind before making a crosswind final approach in prevailing SW winds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C58, and C109 are supported by CFD modeling using validated OpenFOAM software. The modeling approach is appropriate for atmospheric boundary flow, and results are visualized in Figures 1-2. The specific finding about approach trajectories at the Wick colony (C109) is directly supported by the airflow modeling outputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The number of landing attempts required increases with wind speed, with all birds predicted to land within 3-8 attempts at low wind speeds (4 m/s), but guillemots requiring up to 20 attempts in 10 m/s winds while razorbills need roughly half as many attempts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by probabilistic modeling that integrates the statistical model results with wind speed distributions. The predictions are quantitative and species-specific, with results shown in Figure 3. The modeling approach appropriately accounts for variability in wind conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Multiple landing attempts impose substantial energetic costs on auks due to their extreme flight costs. One landing circuit takes 34 seconds and costs 4.9 kJ, equivalent to ~1/6 the energy value of one sandeel. With 3-4 provisioning trips per day, the cumulative cost of multiple attempts could be substantial, especially as landing probability in 6 attempts drops from 1.0 to 0.4 between moderate and near-gale conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C61-C65 are supported by direct measurements (C61), calculations using cited flight cost data (C62-C63), and probabilistic modeling (C64). The energetic context is well-established (C4) and the daily cost implications (C65) are supported by cited provisioning rates. The calculations are transparent and appropriately contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C53",
+      "C54",
+      "C59",
+      "C77"
+    ],
+    "result": "Auk colonies appear to be oriented away from prevailing SW winds, with unoccupied sites showing south-westerly orientation. However, a Rayleigh test failed to reject uniform distribution of the 11 densest colonies (Z=0.314, p=0.346), and birds appear not to breed in the most exposed sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C53-C54, C59, and C77 present conflicting evidence. While visual inspection suggests colonies avoid prevailing winds (C7, C54, C59), the statistical test (C53) fails to support non-uniform distribution. The sample size (11 colonies) may be insufficient for detecting the pattern, and the authors acknowledge this as preliminary data requiring more substantial analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C78",
+      "C94"
+    ],
+    "result": "Exposure to wind conditions influences breeding habitat suitability for auks, with sheltered sites offering more reliable landing conditions. Habitat quality varies according to prevailing conditions, topography, and ledge characteristics. Cliff-nesting species with low maneuverability should select sheltered sites for breeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C73, C78, and C94 are supported as reasonable inferences from the demonstrated effects of wind on landing success (C1-C2, C34-C38) and the observed patterns of colony orientation (C7, C54, C59). While these are predictive/speculative claims, they follow logically from the empirical findings and represent appropriate scientific extrapolation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Significant interactions exist between ledge size and wind speed (3.19% explained deviance) and between ledge and turbulence (0.95% explained deviance). Birds were more likely to land on higher ledges (1.32% explained deviance). Turbulence as a main effect did not significantly affect landing probability, possibly because turbulence was highest in areas with low horizontal wind speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by statistical analysis with appropriate interaction terms in the model. The low explanatory power of some effects (C42-C43) is honestly reported. The interpretation of the turbulence result (C44) is reasonable given the CFD modeling showing turbulence-wind speed relationships, though this remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Errors during parental changeover almost invariably result in loss of eggs or chicks in auks. Adult changeovers are periods when eggs and young are vulnerable to gull predation. High winds could impede auk flight while promoting gull maneuverability near breeding ledges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by appropriate citations (Kokko et al. 2004, Gilchrist et al. 1998, Ashbrook et al. 2008, Gilchrist and Gaston 1997). These claims provide important ecological context for understanding why auks persist in multiple landing attempts despite energetic costs. C68 is somewhat speculative but supported by cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Guillemots on large ledges experience benefits beyond predator protection. Shelter from strong winds could reduce exposure to low temperatures, prevent young from being swept off ledges, and improve fledgling ability to reach the sea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72, C74-C76 mix supported inferences (C72 based on study data) with speculative alternative explanations (C74-C75). The authors appropriately acknowledge difficulty in disentangling ultimate drivers of site selection. These represent reasonable hypotheses but lack direct empirical support in this study, requiring future work to evaluate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C79",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C96"
+    ],
+    "result": "The interplay between wind and flight capacities could impact breeding distributions across species and scales. Wind conditions influence migration routes, species distributions, and breeding shift durations. Seabird diversity increases with latitude and wind speed. Preference for low wind speeds may affect breeding timing, and wind regimes are changing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C79, C88-C92, C95-C96 appropriately contextualize the study findings within broader ecological patterns. Most claims are supported by appropriate citations (C88-C92, C96). C9, C79, and C95 are reasonable extrapolations from the study findings, though they represent predictions requiring future validation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study was conducted on Skomer Island with 8623 landing attempts recorded (6140 guillemots, 2483 razorbills). Wind speeds at observer locations ranged 0-11.6 m/s with median speeds of 2.1-3.5 m/s across colonies. At-sea breeding season median wind speed was 6.1 m/s with reasonable maximum of 13.5 m/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C97-C107 provide methodological details and descriptive statistics that are directly stated in the methods and results. These are factual descriptions of the study design, sample sizes, and environmental conditions, appropriately documented and transparent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C110"
+    ],
+    "result": "The cliff area occupied by breeding auks was 76,673 m\u00b2 compared to 122,302 m\u00b2 of unoccupied cliff. Mean density of auks on breeding ledges is 20 per m\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by spatial analysis described in methods. C110 is supported by citation to Harris and Birkhead 1985. These provide important context for understanding colony characteristics and space constraints affecting landing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C60",
+      "C93"
+    ],
+    "result": "Background claims about flight ecology, landing challenges, and auk morphology establish context for the study. These include general principles about flight benefits and constraints, landing risks in aircraft and other animals, and specific characteristics of auks including high wing loading and low maneuverability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C31, C60, and C93 provide essential background context, primarily supported by appropriate citations to established literature. These claims are not novel findings but rather establish the scientific foundation and rationale for the study. The citations appear appropriate and the general principles are well-established in the field.",
+    "result_type": "MINOR"
+  }
+]

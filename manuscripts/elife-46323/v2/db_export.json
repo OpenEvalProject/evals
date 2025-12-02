@@ -1,0 +1,1977 @@
+{
+  "submission": {
+    "id": "1df90a5b-a0b6-47ae-aa99-ad1fb7fa6947",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:47:45.668896Z",
+    "updated_at": "2025-12-02T09:47:45.668896Z"
+  },
+  "content": [
+    {
+      "id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "submission_id": "1df90a5b-a0b6-47ae-aa99-ad1fb7fa6947",
+      "content_type": "manuscript",
+      "content_text": "# A consensus guide to capturing the ability to inhibit actions and impulsive behaviors in the stop-signal task\n\n## Authors\n\n- Frederick Verbruggen<sup>1</sup> ([ORCID: 0000-0002-7958-0719](https://orcid.org/0000-0002-7958-0719)) \u2020\n- Adam R Aron<sup>2</sup>\n- Guido PH Band<sup>3</sup>\n- Christian Beste<sup>4</sup>\n- Patrick G Bissett<sup>5</sup>\n- Adam T Brockett<sup>6</sup> ([ORCID: 0000-0001-7712-5053](https://orcid.org/0000-0001-7712-5053))\n- Joshua W Brown<sup>7</sup>\n- Samuel R Chamberlain<sup>8</sup>\n- Christopher D Chambers<sup>9</sup>\n- Hans Colonius<sup>10</sup> ([ORCID: 0000-0002-9733-6939](https://orcid.org/0000-0002-9733-6939))\n- Lorenza S Colzato<sup>3</sup>\n- Brian D Corneil<sup>11</sup> ([ORCID: 0000-0002-4702-7089](https://orcid.org/0000-0002-4702-7089))\n- James P Coxon<sup>12</sup> ([ORCID: 0000-0003-2351-8489](https://orcid.org/0000-0003-2351-8489))\n- Annie Dupuis<sup>13</sup>\n- Dawn M Eagle<sup>8</sup>\n- Hugh Garavan<sup>14</sup>\n- Ian Greenhouse<sup>15</sup> ([ORCID: 0000-0003-1467-739X](https://orcid.org/0000-0003-1467-739X))\n- Andrew Heathcote<sup>16</sup>\n- Ren\u00e9 J Huster<sup>17</sup>\n- Sara Jahfari<sup>18</sup> ([ORCID: 0000-0002-1979-589X](https://orcid.org/0000-0002-1979-589X))\n- J Leon Kenemans<sup>19</sup>\n- Inge Leunissen<sup>20</sup>\n- Chiang-Shan R Li<sup>21</sup>\n- Gordon D Logan<sup>22</sup>\n- Dora Matzke<sup>23</sup>\n- Sharon Morein-Zamir<sup>24</sup>\n- Aditya Murthy<sup>25</sup>\n- Martin Par\u00e9<sup>26</sup>\n- Russell A Poldrack<sup>5</sup> ([ORCID: 0000-0001-6755-0259](https://orcid.org/0000-0001-6755-0259))\n- K Richard Ridderinkhof<sup>23</sup>\n- Trevor W Robbins<sup>8</sup>\n- Matthew Roesch<sup>6</sup> ([ORCID: 0000-0003-2854-6593](https://orcid.org/0000-0003-2854-6593))\n- Katya Rubia<sup>27</sup>\n- Russell J Schachar<sup>13</sup>\n- Jeffrey D Schall<sup>22</sup>\n- Ann-Kathrin Stock<sup>4</sup>\n- Nicole C Swann<sup>15</sup> ([ORCID: 0000-0003-2463-5134](https://orcid.org/0000-0003-2463-5134))\n- Katharine N Thakkar<sup>28</sup>\n- Maurits W van der Molen<sup>23</sup>\n- Luc Vermeylen<sup>1</sup>\n- Matthijs Vink<sup>19</sup>\n- Jan R Wessel<sup>29</sup> ([ORCID: 0000-0002-7298-6601](https://orcid.org/0000-0002-7298-6601))\n- Robert Whelan<sup>30</sup>\n- Bram B Zandbelt<sup>31</sup>\n- C Nico Boehler<sup>1</sup> ([ORCID: 0000-0001-5963-2780](https://orcid.org/0000-0001-5963-2780))\n\n### Affiliations\n\n1. Experimental Psychology Ghent University Ghent Belgium\n2. University of California, San Diego San Diego United States\n3. Leiden University Leiden Netherlands\n4. Dresden University of Technology Dresden Germany\n5. Stanford University Stanford United States\n6. University of Maryland College Park United States\n7. Indiana University Bloomington United States\n8. University of Cambridge Cambridge United Kingdom\n9. Cardiff University Cardiff United Kingdom\n10. Oldenburg University Oldenburg Germany\n11. University of Western Ontario London Canada\n12. Monash University Clayton Australia\n13. University of Toronto Toronto Canada\n14. University of Vermont Burlington United States\n15. University of Oregon Eugene United States\n16. University of Tasmania Hobart Australia\n17. University of Oslo Oslo Norway\n18. Spinoza Centre Amsterdam Amsterdam Netherlands\n19. Utrecht University Utrecht Netherlands\n20. KU Leuven Leuven Belgium\n21. Yale University New Haven United States\n22. Vanderbilt University Nashville United States\n23. University of Amsterdam Amsterdam Netherlands\n24. Anglia Ruskin University Cambridge United Kingdom\n25. Indian Institute of Science Bangalore India\n26. Queen's University Kingston Canada\n27. King's College London London United Kingdom\n28. Michigan State University East Lansing United States\n29. University of Iowa Iowa City United States\n30. Trinity College Dublin Dublin Ireland\n31. Donders Institute Nijmegen Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nResponse inhibition is essential for navigating everyday life. Its derailment is considered integral to numerous neurological and psychiatric disorders, and more generally, to a wide range of behavioral and health problems. Response-inhibition efficiency furthermore correlates with treatment outcome in some of these conditions. The stop-signal task is an essential tool to determine how quickly response inhibition is implemented. Despite its apparent simplicity, there are many features (ranging from task design to data analysis) that vary across studies in ways that can easily compromise the validity of the obtained results. Our goal is to facilitate a more accurate use of the stop-signal task. To this end, we provide 12 easy-to-implement consensus recommendations and point out the problems that can arise when they are not followed. Furthermore, we provide user-friendly open-source resources intended to inform statistical-power considerations, facilitate the correct implementation of the task, and assist in proper data analysis.\n\n## Introduction\n\nThe ability to suppress unwanted or inappropriate actions and impulses (\u2018response inhibition\u2019) is a crucial component of flexible and goal-directed behavior. The stop-signal task (Lappin and Eriksen, 1966; Logan and Cowan, 1984; Vince, 1948) is an essential tool for studying response inhibition in neuroscience, psychiatry, and psychology (among several other disciplines; see Appendix 1), and is used across various human (e.g. clinical vs. non-clinical, different age groups) and non-human (primates, rodents, etc.) populations. In this task, participants typically perform a go task (e.g. press left when an arrow pointing to the left appears, and right when an arrow pointing to the right appears), but on a minority of the trials, a stop\u00a0signal (e.g. a cross replacing the arrow) appears after a variable stop-signal delay (SSD), instructing participants to suppress the imminent go response (Figure 1). Unlike the latency of go responses, response-inhibition latency cannot be observed directly (as successful response inhibition results in the absence of an observable response). The stop-signal task is unique in allowing the estimation of this covert latency (stop-signal reaction time or SSRT; Box 1). Research using the task has revealed links between inhibitory-control capacities and a wide range of behavioral and impulse-control problems in everyday life, including attention-deficit/hyperactivity disorder, substance abuse, eating disorders, and obsessive-compulsive behaviors (for meta-analyses, see e.g. Bartholdy et al., 2016; Lipszyc and Schachar, 2010; Smith et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46323/elife-46323-fig1-v2.jpg)\n\n**Figure 1.:** In this example, participants respond to the direction of green arrows (by pressing the corresponding arrow key) in the go task. On one fourth of the trials, the arrow is replaced by \u2018XX\u2019 after a variable stop-signal delay (FIX\u00a0=\u00a0fixation duration; SSD\u00a0=\u00a0stop signal delay; MAX.RT\u00a0=\u00a0maximum reaction time; ITI\u00a0=\u00a0intertrial interval).\n\nToday, the stop-signal field is flourishing like never before (see Appendix 1). There is a risk, however, that the task falls victim to its own success, if it is used without sufficient regard for a number of important factors that jointly determine its validity. Currently, there is considerable heterogeneity in how stop-signal studies are designed and executed, how the SSRT is estimated, and how results of stop-signal studies are reported. This is highly problematic. First, what might seem like small design details can have an immense impact on the nature of the stop process and the task. The heterogeneity in designs also complicates between-study comparisons, and some combinations of design and analysis features are incompatible. Second, SSRT estimates are unreliable when inappropriate estimation methods are used or when the underlying race-model assumptions are (seriously) violated (see Box 1 for a discussion of the race model). This can lead to artefactual and plainly incorrect results. Third, the validity of SSRT can be checked only if researchers report all relevant methodological information and data.\n\nHere, we aim to address these issues by consensus. After an extensive consultation round, the authors of the present paper agreed on 12 recommendations that should safeguard and further improve the overall quality of future stop-signal research. The recommendations are based on previous methodological studies or, where further empirical support was required, on novel simulations (which are reported in Appendices 2\u20133). A full overview of the stop-signal literature is beyond the scope of this study (but see e.g. Aron, 2011; Bari and Robbins, 2013; Chambers et al., 2009; Schall et al., 2017; Verbruggen and Logan, 2017, for comprehensive overviews of the clinical, neuroscience, and cognitive stop-signal domains; see also the meta-analytic reviews mentioned above).\n\nBelow, we provide a concise description of the recommendations. We briefly introduce all important concepts in the main manuscript and the boxes. Appendix 4 provides an additional systematic overview of these concepts and their common alternative terms. Moreover, this article is accompanied by novel open-source resources that can be used to execute a stop-signal task and analyze the resulting data, in an easy-to-use way that complies with our present recommendations (https://osf.io/rmqaw/). The source code of the simulations (Appendices 2\u20133) is also provided, and can be used in the planning stage (e.g. to determine the required sample size under varying conditions, or acceptable levels of go omissions and RT distribution skew).\n\n## Results and discussion\n\nThe following recommendations are for stop-signal users who are primarily interested in obtaining a reliable SSRT estimate under standard situations. The stop-signal task (or one of its variants) can also be used to study various aspects of executive control (e.g. performance monitoring, strategic adjustments, or learning) and their interactions, for which the design might have to be adjusted. However, researchers should be aware that this will come with specific challenges (e.g. Bissett and Logan, 2014; Nelson et al., 2010; Verbruggen et al., 2013; Verbruggen and Logan, 2015).\n\n### How to design stop-signal experiments\n\n#### Recommendation 1: Use an appropriate go task\n\nStandard two-choice reaction time tasks (e.g. in which participants have to discriminate between left and right arrows) are recommended for most purposes and populations. When very simple go tasks are used, the go stimulus and the stop signal will closely overlap in time (because the SSD has to be very short to still allow for the possibility to inhibit a response), leading to violations of the race model as stop-signal presentation might interfere with encoding of the go stimulus. Substantially increasing the difficulty of the go task (e.g. by making the discrimination much harder) might also influence the stop process (e.g. the underlying latency distribution or the probability that the stop process is triggered). Thus, very simple and very difficult go tasks should be avoided unless the researcher has theoretical or methodological reasons for using them\u00a0(for example, simple detection tasks have been used in animal studies. To avoid responses before the go stimulus is presented or close overlap between the presentation of go stimulus and stop signal, the intertrial interval can be drawn from a random exponential distribution. This will make the occurrence of the go stimulus unpredictable, discouraging anticipatory responses). While two-choice tasks are the most common, we note that the \u2018anticipatory response\u2019 variant of the stop-signal task (in which participants have to press a key when a moving indicator reaches a stationary target) also holds promise (e.g. Leunissen et al., 2017).\n\n#### Recommendation 2: Use a salient stop signal\n\nSSRT is the overall latency of a chain of processes involved in stopping a response, including the detection of the stop signal. Unless researchers are specifically interested in such perceptual or attentional processes, salient, easily detectable stop signals should be used (when auditory stop signals are used, these should not be too loud either, as very loud (i.e. >80 dB) auditory stimuli may produce a startle reflex). Salient stop signals will reduce the relative contribution of perceptual (afferent) processes to the SSRT, and the probability that within- or between-group differences can be attributed to them. Salient stop signals might also reduce the probability of a \u2018trigger failures\u2019 on stop trials (see Box 2).\n\n#### Recommendation 3: Present stop signals on a minority of trials\n\nWhen participants strategically wait for a stop signal to occur, the nature of the stop-signal process and task change (complicating the comparison between conditions or groups; e.g. SSRT group differences might be caused by differential slowing or strategic adjustments). Importantly, SSRT estimates will also become less reliable when participants wait for the stop\u00a0signal to occur (Verbruggen et al., 2013, see also Figure 2\u00a0and Appendix 2). Such waiting strategies can be discouraged by reducing the overall probability of a stop signal. For standard stop-signal studies, 25% stop signals is recommended. When researchers prefer a higher percentage of stop signals, additional measures to minimize slowing are required (see Recommendation 5).\n\n#### Recommendation 4: Use the tracking procedure to obtain a broad range of stop-signal delays\n\nIf participants can predict when a stop signal will occur within a trial, they might also wait for it. Therefore, a broad range of SSDs is required. The stop-signal delay can be continuously adjusted via a standard adaptive tracking procedure: SSD increases after each successful stop, and decreases after each unsuccessful stop; this converges on a probability of responding [p(respond|signal)] \u2248\u00a00.50. Many studies adjust SSD in steps of 50 ms (which corresponds to three screen \u2018refreshes\u2019 for 60 Hz monitors). When step size is too small (for\u00a0example 16 ms)\u00a0the tracking may not converge in short experiments, whereas it may not be sensitive enough if step size is too large. Importantly, SSD should decrease after all responses on unsuccessful stop trials; this includes premature responses on unsuccessful stop trials (i.e. responses executed before the stop signal was presented) and choice errors on unsuccessful stop trials (e.g. when a left go response would have been executed on the stop\u00a0trial depicted in Figure 1, even though the arrow was pointing to the right).\n\nAn adaptive tracking procedure typically results in a sufficiently varied set of SSD values. An additional advantage of the tracking procedure is that fewer stop\u00a0trials are required to obtain a reliable SSRT estimate (Band et al., 2003). Thus, the tracking procedure is recommended for standard applications.\n\n#### Recommendation 5: Instruct participants not to wait and include block-based feedback\n\nIn human studies, task instructions should also be used to discourage waiting. At the very least, participants should be told that \u2018[they] should respond as quickly as possible to the go stimulus and not wait for the stop signal to occur\u2019 (or something along these lines). To adults, the tracking procedure (if used) can also be explained to further discourage a waiting strategy (i.e. inform participants that the probability of an unsuccessful stop trial will approximate 0.50, and that SSD will increase if they gradually slow their responses).\n\nInclusion of a practice block in which adherence to instructions is carefully monitored is recommended. In certain populations, such as young children, it might furthermore be advisable to start with a practice block without stop signals to emphasize the importance of the go component of the task.\n\nBetween blocks, participants should also be reminded about the instructions. Ideally, this is combined with block-based feedback, informing participants about their mean RT on go trials, number of go omissions (with a reminder that this should be 0), and p(respond|signal) (with a reminder that this should be close to .50). The feedback could even include an explicit measure of response slowing.\n\n#### Recommendation 6: Include sufficient trials\n\nThe number of stop\u00a0trials varies widely between studies. Our novel simulation results (see Figure 2 and Appendix 2) indicate that reliable and unbiased SSRT group-level estimates can be obtained with 50 stop trials (with 25% stop signals in an experiment, this amounts to 200 trials in total. Usually, this corresponds to an experiment of 7\u201310 min including breaks), but only under \u2018optimal\u2019 or very specific circumstances (e.g. when the probability of go omissions is low and the go-RT distribution is not strongly skewed). Lower trial numbers (here we tested 25 stop trials) rarely produced reliable SSRT estimates (and the number of excluded subjects was much higher;\u00a0see\u00a0Figure 2). Thus, as a general rule of thumb, we recommend to have at least 50 stop trials for standard group-level comparisons. However, it should again be stressed that this may not suffice to obtain reliable individual estimates (which are required for e.g. individual-differences research or diagnostic purposes).\n\nThus, our simulations reported in Appendix 2 suggest that reliability increases with number of trials. However, in some clinical populations, adding trials may not always be possible (e.g. when patients cannot concentrate for a sufficiently long period of time), and might even be counterproductive (as strong fluctuations over time can induce extra noise). Our simulations reported in Appendix 3 show that for standard group-level comparisons, researchers can compensate for lower trial numbers by increasing sample size. Above all, we strongly encourage researchers to make informed decisions about number of trials and participants, aiming for sufficiently\u00a0powered studies. The accompanying open-source simulation code can be used for this purpose.\n\n### When and how to estimate SSRT\n\n#### Recommendation 7: Do not estimate the SSRT when the assumptions of the race model are violated\n\nSSRTs can be estimated based on the independent race model, which assumes an independent race between a go and a stop runner (Box 1). When this independence assumption is (seriously) violated, SSRT estimates become unreliable (Band et al., 2003). Therefore, the assumption should be checked. This can be done by comparing the mean RT on unsuccessful stop trials with the mean RT on go trials. Note that this comparison should include all trials with a response (including choice errors and premature responses), and it should be done for each participant and condition separately. SSRT should not be estimated when RT on unsuccessful stop trials is numerically longer than RT on go trials (see also, Appendix 2\u2014table 1). More formal and in-depth tests of the race model can be performed (e.g. examining probability of responding and RT on unsuccessful stop trials as a function of delay); however, a large number of stop trials is required for such tests to be meaningful and reliable.\n\n#### Recommendation 8: If using a non-parametric approach, estimate SSRT using the integration method (with replacement of go omissions)\n\nDifferent SSRT estimation methods have been proposed (see Materials and methods). When the tracking procedure is used, the \u2018mean estimation\u2019 method is still the most popular (presumably because it is very easy to use). However, the mean method is strongly influenced by the right tail (skew) of the go RT distribution (see Appendix 2 for examples), as well as by go omissions (i.e. go trials on which no response is executed). The simulations reported in Appendix 2 and summarized in Figure 2 indicate that the integration method (which replaces go omissions with the maximum RT in order to compensate for the lacking response) is generally less biased and more reliable than the mean method when combined with the tracking procedure. Unlike the mean method, the integration method also does not assume that p(respond|signal) is exactly 0.50 (an assumption that is often not met in empirical data). Therefore, we recommend the use of the integration method (with replacement of go\u00a0omissions) when non-parametric estimation methods are used. We provide software and the source code for this estimation method (and all other recommended measures; Recommendation 12).\n\nPlease note that some parametric SSRT estimation methods are less biased than even the best non-parametric methods and avoid other problems that can beset them (see Box 2); however, they can be harder for less technically adept researchers to use, and they may require more trials (see Matzke et al., 2018, for a discussion).\n\n#### Recommendation 9: Refrain from estimating SSRT when the probability of responding on stop\u00a0trials deviates substantially from 0.50 or when the probability of omissions on go trials is high\n\nEven though the preferred integration method (with replacement of go omissions) is less influenced by deviations in p(respond|signal) and go omissions than other methods, it is not completely immune to them either (Figure 2 and Appendix 2). Previous work suggests that SSRT estimates are most reliable (Band et al., 2003) when probability of responding on a stop trial is relatively close to 0.50. Therefore, we recommend that researchers refrain from estimating individual SSRTs when p(respond|signal) is lower than 0.25 or higher than 0.75 (Congdon et al., 2012). Reliability of the estimates is also influenced by go performance. As the probability of a go omission increases, SSRT estimates also become less reliable. Figure 2\u00a0and the resources described in Appendix 3 can be used to determine an acceptable level of go omissions at a study level. Importantly, researchers should decide on these cut-offs or exclusion criteria before data collection has started.\n\n### How to report stop-signal experiments\n\n#### Recommendation 10: Report the methods in enough detail\n\nTo allow proper evaluation and replication of the study findings, and to facilitate follow-up studies, researchers should carefully describe the stimuli, materials, and procedures used in the study, and provide a detailed overview of the performed analyses (including a precise description of how SSRT was estimated). This information can be presented in Supplementary Materials in case of journal restrictions. Box 3 provides a check-list that can be used by authors and reviewers. We also encourage researchers to share their software and materials (e.g. the actual stimuli).\n\n#### Recommendation 11: Report possible exclusions in enough detail\n\nAs outlined above, researchers should refrain from estimating SSRT when the independence assumptions are seriously violated or when sub-optimal task performance might otherwise compromise the reliability of the estimates. The number of participants for whom SSRT was not estimated should be clearly mentioned. Ideally, dependent variables which are directly observed (see Recommendation 12) are separately reported for the participants that are not included in the SSRT analyses. Researchers should also clearly mention any other exclusion criteria (e.g. outliers based on distributional analyses, acceptable levels of go omissions, etc.), and whether those were set a-priori (analytic plans can be preregistered on a public repository, such as the Open Science Framework; Nosek et al., 2018).\n\n#### Recommendation 12: Report all relevant behavioral data\n\nResearchers should report all relevant descriptive statistics that are required to evaluate the findings of their stop-signal study (see Box 3 for a check-list). These should be reported for each group or condition separately. As noted above (Recommendation 7), additional checks of the independent race model can be reported when the number of stop\u00a0trials is sufficiently high. Finally, we encourage researchers to share their anonymized raw (single-trial) data when possible (in accordance with the FAIR data guidelines; Wilkinson et al., 2016).\n\n### Conclusion\n\nResponse inhibition and impulse control are central topics in various fields of research, including neuroscience, psychiatry, psychology, neurology, pharmacology, and behavioral sciences, and the stop-signal task has become an essential tool in their study. If properly used, the task can reveal unique information about the underlying neuro-cognitive control mechanisms. By providing clear recommendations, and open-source resources, this paper aims to further increase the quality of research in the response-inhibition and impulse-control domain and to\u00a0significantly accelerate its progress across the various important domains in which it is routinely applied.\n\n## Materials and methods\n\nThe independent race model (Box 1) provides two common \u2018non-parametric\u2019 methods for estimating SSRT: the integration method and the mean method. Both methods have been used in slightly different flavors in combination with the SSD tracking procedure (see Recommendation 4). Here, we discuss the two most typical estimation variants, which we further scrutinized in our simulations (Appendix 2). We refer the reader to Appendices 2 and 3 for a detailed description of the simulations.\n\n### Integration method (with replacement of go omissions)\n\nIn the integration method, the point at which the stop process finishes (Box 1) is estimated by \u2018integrating\u2019 the RT distribution and finding the point at which the integral equals p(respond|signal). The finishing time of the stop process corresponds to the nth RT, with n\u00a0=\u00a0the number of RTs in the RT distribution of go trials multiplied by p(respond|signal). When combined with the tracking procedure, overall p(respond|signal) is used. For example, when there are 200 go trials, and overall p(respond|signal) is 0.45, then the nth RT is the 90th fastest go RT. SSRT can then be estimated by subtracting mean SSD from the nth RT. To determine the nth RT, all go trials with a response are included (including go trials with a choice error and go trials with a premature response). Importantly, go omissions (i.e. go trials on which the participant did not respond before the response deadline) are assigned the maximum RT in order to compensate for the lacking response. Premature responses on unsuccessful stop trials (i.e. responses executed before the stop signal is presented) should also be included when calculating p(respond|signal) and mean SSD (as noted in Recommendation 4, SSD should also be adjusted after such trials). This version of the integration method produces the most reliable and least biased non-parametric SSRT estimates (Appendix 2).\n\n### The mean method\n\nThe mean method uses the mean of the inhibition function (which describes the relationship between p(respond|signal) and SSD). Ideally, this mean corresponds to the average SSD obtained with the tracking procedure when p(respond|signal)\u00a0=\u00a00.50 (and often this is taken as a given despite some variation). In other words, the mean method assumes that the mean RT equals SSRT\u00a0+\u00a0mean SSD, so SSRT can be estimated easily by subtracting mean SSD from mean RT on go trials when the tracking procedure is used. The ease of use has made this the most popular estimation method. However, our simulations show that this simple version of the mean method is biased and generally less reliable than the integration method with replacement of go omissions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46323/elife-46323-fig2-v2.jpg)\n\n**Figure 2.:** Here, we show a comparison of the integration method (with replacement of go omissions) and the mean method, as a function of percentage of go omissions, skew of the RT distribution ($\\tau_{g\u2062o}$), and number of trials. Appendix 2 provides a full overview of all methods. (A) The number of excluded \u2018participants\u2019 (RT on unsuccessful stop trials $>$ RT on go trials). As this check was performed before SSRTs were estimated (see Recommendation 7), the number was the same for both estimation methods. (B) The average difference between the estimated and true SSRT (positive values\u00a0=\u00a0overestimation; negative values\u00a0=\u00a0underestimation). SD\u00a0=\u00a0standard deviation of the difference scores (per panel). (C) Correlation between the estimated and true SSRT (higher values\u00a0=\u00a0more reliable estimate). Overall R\u00a0=\u00a0correlation when collapsed across percentage of go omissions and $\\tau_{g\u2062o}$. Please note that the overall correlation does not necessarily correspond to the average of individual correlations.\n",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "3445d765-4ec0-495e-b10d-6c7b5926355d",
+      "submission_id": "1df90a5b-a0b6-47ae-aa99-ad1fb7fa6947",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Badre, Brown University United States\n\nReviewers:\n- Tobias Egner, Duke University United States\n- Diane Swick\n\n## Review text\n\nDOI: [10.7554/eLife.46323.026](https://doi.org/10.7554/eLife.46323.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nYour article, \"Capturing the ability to inhibit actions and impulsive behaviors: A consensus guide to the stop-signal task\", has been reviewed by two reviewers and accepted for publication in eLife. This decision was overseen by Michael Frank (Senior Editor) and David Badre (Reviewing Editor).\n\nThis article provides an expert consensus view and practical guide of best practices in measuring response inhibition with the stop-signal task. It is a well-written and timely piece. The authors have done a great service for the field. The guide and resources provided will be tools of high value to both basic scientists and those in applied domains, such as clinicians interested in leveraging inhibition. The reviewers and the editors were in consensus on these strengths. There was also agreement that no major weaknesses were found in review. As eLife only asks revision for essential revisions, the unanimous decision was to accept the paper.\n\nIn our opinion, the paper could be made even stronger by addressing the following comments in the final submission of the paper. However, acceptance is not contingent on addressing them and they will not be reviewed again. We list these below. Congratulations on a valuable contribution to the field.\n\nReviewer suggestions for your consideration:\n\n- Please provide references for this statement in the Introduction: \"Research using the task has revealed links between inhibitory-control capacities and a wide range of behavioral and impulse-control problems in everyday life (e.g., attention de\ufb01cit/hyperactivity disorder, substance abuse, obesity, obsessive-compulsive behaviors, excessive risk-taking).\" To be most accurate, this statement would need to cite studies that show a correlation between SSRT and symptom severity in the clinical populations mentioned above. This is important because SSRT may not always correlate with impulsivity (see Skippen et al., 2019).\n\n- Trials that are called \"trigger failures\" (Box 2) might represent different underlying processes, depending on when the stop signal is presented in relation to the go signal. Trials in which the go and stop signals are presented simultaneously are similar to no-go trials in the go/no-go task, with trigger failures analogous to false alarm errors on no-go trials. This type of trial is thought to measure restraint, rather than cancellation (Schachar et al., 2007, 2011). Restraint (refraining from responding) and cancellation (stopping an already-prepared response, measured by SSRT) might have some distinctive neural correlates (e.g., Eagle et al., 2008; Swick et al., 2011; Sebastian et al., 2013; Zhang et al., 2017), although there is much overlap as well. Certain clinical populations could show differential impairment on restraint vs. cancellation trials. This conception of trigger failures doesn't affect any of the recommended guidelines for non-parametric estimation methods, but might be considered by the authors.\n\n- Though the manuscript is clear and uncluttered, there was concern that the referencing may be over sparse. The authors might consider a table of key papers in this domain to aid practitioners.\n\n- Recommendations 10-12 might be summarized in a box or table rather than bulleted in the main test.\n",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ad47b025-eec5-4ecb-bc9d-4dc522016003",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C1",
+      "claim": "Response inhibition is essential for navigating everyday life.",
+      "claim_type": "EXPLICIT",
+      "source": "Response inhibition is essential for navigating everyday life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement presented as established knowledge in the abstract without specific supporting data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "0b321c6d-36de-43c6-9d23-92089ee12fb9",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C2",
+      "claim": "Derailment of response inhibition is considered integral to numerous neurological and psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Its derailment is considered integral to numerous neurological and psychiatric disorders, and more generally, to a wide range of behavioral and health problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established scientific consensus in the field, as indicated by the phrase 'is considered'.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "c9d336f8-598f-4def-a31d-c1b7ea996ac9",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C3",
+      "claim": "Response-inhibition efficiency correlates with treatment outcome in some neurological and psychiatric conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Response-inhibition efficiency furthermore correlates with treatment outcome in some of these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge without specific citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "4e3b731a-f5ca-455d-b8c7-73fac6139e25",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C4",
+      "claim": "The stop-signal task is an essential tool to determine how quickly response inhibition is implemented.",
+      "claim_type": "EXPLICIT",
+      "source": "The stop-signal task is an essential tool to determine how quickly response inhibition is implemented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge about the purpose and utility of the stop-signal task.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "eaec98be-19f4-4ab3-b1de-557d399d07d3",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C5",
+      "claim": "The stop-signal task was developed by Lappin and Eriksen (1966), Logan and Cowan (1984), and Vince (1948).",
+      "claim_type": "EXPLICIT",
+      "source": "The stop-signal task (Lappin and Eriksen, 1966; Logan and Cowan, 1984; Vince, 1948) is an essential tool for studying response inhibition in neuroscience, psychiatry, and psychology (among several other disciplines; see Appendix 1), and is used across various human (e.g. clinical vs. non-clinical, different age groups) and non-human (primates, rodents, etc.) populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the original publications that developed the task.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "5026dc5d-728b-4dc2-b8be-2bc45ebcd71f",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C6",
+      "claim": "The stop-signal task is used across various human and non-human populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The stop-signal task (Lappin and Eriksen, 1966; Logan and Cowan, 1984; Vince, 1948) is an essential tool for studying response inhibition in neuroscience, psychiatry, and psychology (among several other disciplines; see Appendix 1), and is used across various human (e.g. clinical vs. non-clinical, different age groups) and non-human (primates, rodents, etc.) populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the broad application of the task.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "9bb6bd20-d226-4b55-8ddc-b91fa1f961bf",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C7",
+      "claim": "In the stop-signal task, participants perform a go task but on a minority of trials a stop signal appears after a variable stop-signal delay instructing participants to suppress the imminent go response.",
+      "claim_type": "EXPLICIT",
+      "source": "In this task, participants typically perform a go task (e.g. press left when an arrow pointing to the left appears, and right when an arrow pointing to the right appears), but on a minority of the trials, a stop signal (e.g. a cross replacing the arrow) appears after a variable stop-signal delay (SSD), instructing participants to suppress the imminent go response (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the basic structure of the task, with reference to Figure 1 for visual illustration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "84f16187-2b31-4476-9b33-0efaa0b1261f",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C8",
+      "claim": "Response-inhibition latency cannot be observed directly because successful response inhibition results in the absence of an observable response.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the latency of go responses, response-inhibition latency cannot be observed directly (as successful response inhibition results in the absence of an observable response).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the nature of successful inhibition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "cab9c223-1bbd-4d48-9936-4847b7fec771",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C9",
+      "claim": "The stop-signal task is unique in allowing the estimation of covert response-inhibition latency (SSRT).",
+      "claim_type": "EXPLICIT",
+      "source": "The stop-signal task is unique in allowing the estimation of this covert latency (stop-signal reaction time or SSRT; Box 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the unique capability of the task.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "503b0782-1b66-465a-b9c4-ab56a032f879",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C10",
+      "claim": "Links exist between inhibitory-control capacities and attention-deficit/hyperactivity disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Research using the task has revealed links between inhibitory-control capacities and a wide range of behavioral and impulse-control problems in everyday life, including attention-deficit/hyperactivity disorder, substance abuse, eating disorders, and obsessive-compulsive behaviors (for meta-analyses, see e.g. Bartholdy et al., 2016; Lipszyc and Schachar, 2010; Smith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to meta-analytic reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "25774519-7556-44d6-938f-826566ec0e7e",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C11",
+      "claim": "Links exist between inhibitory-control capacities and substance abuse.",
+      "claim_type": "EXPLICIT",
+      "source": "Research using the task has revealed links between inhibitory-control capacities and a wide range of behavioral and impulse-control problems in everyday life, including attention-deficit/hyperactivity disorder, substance abuse, eating disorders, and obsessive-compulsive behaviors (for meta-analyses, see e.g. Bartholdy et al., 2016; Lipszyc and Schachar, 2010; Smith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to meta-analytic reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "9645ed11-e788-4041-9655-7f52784b96b2",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C12",
+      "claim": "Links exist between inhibitory-control capacities and eating disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Research using the task has revealed links between inhibitory-control capacities and a wide range of behavioral and impulse-control problems in everyday life, including attention-deficit/hyperactivity disorder, substance abuse, eating disorders, and obsessive-compulsive behaviors (for meta-analyses, see e.g. Bartholdy et al., 2016; Lipszyc and Schachar, 2010; Smith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to meta-analytic reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "af7d8c3d-e353-4e16-9d06-15096fd0f2b4",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C13",
+      "claim": "Links exist between inhibitory-control capacities and obsessive-compulsive behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Research using the task has revealed links between inhibitory-control capacities and a wide range of behavioral and impulse-control problems in everyday life, including attention-deficit/hyperactivity disorder, substance abuse, eating disorders, and obsessive-compulsive behaviors (for meta-analyses, see e.g. Bartholdy et al., 2016; Lipszyc and Schachar, 2010; Smith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to meta-analytic reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "8459bdae-75d4-4f73-b1a3-541547516eab",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C14",
+      "claim": "There is considerable heterogeneity in how stop-signal studies are designed and executed.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, there is considerable heterogeneity in how stop-signal studies are designed and executed, how the SSRT is estimated, and how results of stop-signal studies are reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the current state of the field, likely based on the authors' collective knowledge and review of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "8b0758d7-5f3d-49a3-8b71-4270ac9f2158",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C15",
+      "claim": "Small design details can have an immense impact on the nature of the stop process and the task.",
+      "claim_type": "EXPLICIT",
+      "source": "First, what might seem like small design details can have an immense impact on the nature of the stop process and the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge based on the authors' expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "7539d855-8c18-4431-a560-76ec817361fc",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C16",
+      "claim": "SSRT estimates are unreliable when inappropriate estimation methods are used or when the underlying race-model assumptions are seriously violated.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, SSRT estimates are unreliable when inappropriate estimation methods are used or when the underlying race-model assumptions are (seriously) violated (see Box 1 for a discussion of the race model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the conditions that affect SSRT reliability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "3d945b63-7e32-4f5e-a9d6-f7aab7403dc0",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C17",
+      "claim": "The validity of SSRT can be checked only if researchers report all relevant methodological information and data.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the validity of SSRT can be checked only if researchers report all relevant methodological information and data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the requirements for validating SSRT estimates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "3d61d937-892d-481a-8df4-a62c2f670bb5",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C18",
+      "claim": "The authors agreed on 12 recommendations that should safeguard and improve the quality of future stop-signal research.",
+      "claim_type": "EXPLICIT",
+      "source": "After an extensive consultation round, the authors of the present paper agreed on 12 recommendations that should safeguard and further improve the overall quality of future stop-signal research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the consensus process and outcome of the current manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "9543b674-477c-47e8-9ce5-394e065eb398",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C19",
+      "claim": "The recommendations are based on previous methodological studies or novel simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The recommendations are based on previous methodological studies or, where further empirical support was required, on novel simulations (which are reported in Appendices 2\u20133).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the basis for the recommendations, including both existing literature and new simulations conducted for this study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "1ef66d83-b292-4437-af09-34b9221ccba4",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C20",
+      "claim": "Standard two-choice reaction time tasks are recommended for most purposes and populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard two-choice reaction time tasks (e.g. in which participants have to discriminate between left and right arrows) are recommended for most purposes and populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "b170cbb9-9923-41d4-abd7-67a1ebe6810b",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C21",
+      "claim": "When very simple go tasks are used, the go stimulus and the stop signal will closely overlap in time, leading to violations of the race model.",
+      "claim_type": "EXPLICIT",
+      "source": "When very simple go tasks are used, the go stimulus and the stop signal will closely overlap in time (because the SSD has to be very short to still allow for the possibility to inhibit a response), leading to violations of the race model as stop-signal presentation might interfere with encoding of the go stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the temporal dynamics of the task and the race model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "c3c28244-d2fd-47ae-885c-91fecb2ef101",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C22",
+      "claim": "Substantially increasing the difficulty of the go task might influence the stop process.",
+      "claim_type": "EXPLICIT",
+      "source": "Substantially increasing the difficulty of the go task (e.g. by making the discrimination much harder) might also influence the stop process (e.g. the underlying latency distribution or the probability that the stop process is triggered).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential effects of task difficulty, indicated by the word 'might'.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "065e511e-11ee-4ec8-9b4d-a9a7c4885d1f",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C23",
+      "claim": "Very simple and very difficult go tasks should be avoided unless the researcher has theoretical or methodological reasons for using them.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, very simple and very difficult go tasks should be avoided unless the researcher has theoretical or methodological reasons for using them (for example, simple detection tasks have been used in animal studies. To avoid responses before the go stimulus is presented or close overlap between the presentation of go stimulus and stop signal, the intertrial interval can be drawn from a random exponential distribution. This will make the occurrence of the go stimulus unpredictable, discouraging anticipatory responses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "1759956c-4e56-44dc-9389-7131f75e5f16",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C24",
+      "claim": "The 'anticipatory response' variant of the stop-signal task holds promise.",
+      "claim_type": "EXPLICIT",
+      "source": "While two-choice tasks are the most common, we note that the 'anticipatory response' variant of the stop-signal task (in which participants have to press a key when a moving indicator reaches a stationary target) also holds promise (e.g. Leunissen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study demonstrating this variant.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "fe4c115b-aeca-444c-930f-14fcc9c0a295",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C25",
+      "claim": "SSRT is the overall latency of a chain of processes involved in stopping a response, including the detection of the stop signal.",
+      "claim_type": "EXPLICIT",
+      "source": "SSRT is the overall latency of a chain of processes involved in stopping a response, including the detection of the stop signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on established knowledge about what SSRT represents.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "0872615a-8935-4750-a941-5f4d86613f5d",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C26",
+      "claim": "Salient, easily detectable stop signals should be used unless researchers are specifically interested in perceptual or attentional processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unless researchers are specifically interested in such perceptual or attentional processes, salient, easily detectable stop signals should be used (when auditory stop signals are used, these should not be too loud either, as very loud (i.e. >80 dB) auditory stimuli may produce a startle reflex).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "eb801d62-0d92-42fb-8721-a868fb5af328",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C27",
+      "claim": "Very loud auditory stimuli (>80 dB) may produce a startle reflex.",
+      "claim_type": "EXPLICIT",
+      "source": "Unless researchers are specifically interested in such perceptual or attentional processes, salient, easily detectable stop signals should be used (when auditory stop signals are used, these should not be too loud either, as very loud (i.e. >80 dB) auditory stimuli may produce a startle reflex).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the effects of loud auditory stimuli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "deee5bf9-7fd9-4873-be46-933bc0457a21",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C28",
+      "claim": "Salient stop signals will reduce the relative contribution of perceptual (afferent) processes to the SSRT.",
+      "claim_type": "EXPLICIT",
+      "source": "Salient stop signals will reduce the relative contribution of perceptual (afferent) processes to the SSRT, and the probability that within- or between-group differences can be attributed to them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the effects of using salient stop signals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "6dd88035-7f61-44e7-9c32-a36506813dd2",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C29",
+      "claim": "Salient stop signals might reduce the probability of 'trigger failures' on stop trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Salient stop signals might also reduce the probability of a 'trigger failures' on stop trials (see Box 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential effects, indicated by the word 'might'.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "c69ce566-6082-4684-9541-2b80277edf30",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C30",
+      "claim": "When participants strategically wait for a stop signal to occur, the nature of the stop-signal process and task change.",
+      "claim_type": "EXPLICIT",
+      "source": "When participants strategically wait for a stop signal to occur, the nature of the stop-signal process and task change (complicating the comparison between conditions or groups; e.g. SSRT group differences might be caused by differential slowing or strategic adjustments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the effects of waiting strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "51543bbd-9929-4bac-b5a8-7847f26b2ae8",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C31",
+      "claim": "SSRT estimates will become less reliable when participants wait for the stop signal to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, SSRT estimates will also become less reliable when participants wait for the stop signal to occur (Verbruggen et al., 2013, see also Figure 2 and Appendix 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and reference to data presented in Figure 2 and Appendix 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "394f0461-cf19-4597-8e4a-160ee6ef2729",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C32",
+      "claim": "For standard stop-signal studies, 25% stop signals is recommended.",
+      "claim_type": "EXPLICIT",
+      "source": "For standard stop-signal studies, 25% stop signals is recommended.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "394b7809-2d75-4985-96fb-2913db5c99b4",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C33",
+      "claim": "If participants can predict when a stop signal will occur within a trial, they might wait for it.",
+      "claim_type": "EXPLICIT",
+      "source": "If participants can predict when a stop signal will occur within a trial, they might also wait for it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about participant behavior based on predictability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "b8f61056-9c4e-4791-8c13-e9bedc49a865",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C34",
+      "claim": "A broad range of SSDs is required to prevent participants from predicting when a stop signal will occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a broad range of SSDs is required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on inference about preventing predictability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "ba9cc702-539f-4f1e-82e7-9110d494671d",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C35",
+      "claim": "The stop-signal delay can be continuously adjusted via a standard adaptive tracking procedure that converges on a probability of responding of approximately 0.50.",
+      "claim_type": "EXPLICIT",
+      "source": "The stop-signal delay can be continuously adjusted via a standard adaptive tracking procedure: SSD increases after each successful stop, and decreases after each unsuccessful stop; this converges on a probability of responding [p(respond|signal)] \u2248 0.50.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard tracking procedure and its properties, which is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "abcb8c06-c201-4769-8c4e-3171b745bfeb",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C36",
+      "claim": "Many studies adjust SSD in steps of 50 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies adjust SSD in steps of 50 ms (which corresponds to three screen 'refreshes' for 60 Hz monitors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about common practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "c539c507-0283-4ec0-9431-86a4179f005c",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C37",
+      "claim": "When step size is too small (for example 16 ms) the tracking may not converge in short experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "When step size is too small (for example 16 ms) the tracking may not converge in short experiments, whereas it may not be sensitive enough if step size is too large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the effects of step size on tracking convergence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "cfe62a3b-c587-4bdc-872d-f8cd326c40e1",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C38",
+      "claim": "SSD should decrease after all responses on unsuccessful stop trials, including premature responses and choice errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, SSD should decrease after all responses on unsuccessful stop trials; this includes premature responses on unsuccessful stop trials (i.e. responses executed before the stop signal was presented) and choice errors on unsuccessful stop trials (e.g. when a left go response would have been executed on the stop trial depicted in Figure 1, even though the arrow was pointing to the right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise, with reference to Figure 1 for illustration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "ae9e5d81-7938-425b-b387-f72ad51830f8",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C39",
+      "claim": "An adaptive tracking procedure typically results in a sufficiently varied set of SSD values.",
+      "claim_type": "EXPLICIT",
+      "source": "An adaptive tracking procedure typically results in a sufficiently varied set of SSD values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the properties of the tracking procedure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "314d5c3e-9623-450c-ae28-aea09d653adf",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C40",
+      "claim": "The tracking procedure requires fewer stop trials to obtain a reliable SSRT estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional advantage of the tracking procedure is that fewer stop trials are required to obtain a reliable SSRT estimate (Band et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a methodological study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "ae4307fb-e485-44e0-9fae-0668d07ecaaa",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C41",
+      "claim": "The tracking procedure is recommended for standard applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the tracking procedure is recommended for standard applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "315be1d5-da12-4f86-8403-3d2859ee96c9",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C42",
+      "claim": "Task instructions should be used to discourage waiting in human studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In human studies, task instructions should also be used to discourage waiting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "2b7e756f-3cf0-4de7-bd73-97bfeb314049",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C43",
+      "claim": "Participants should be told to respond as quickly as possible to the go stimulus and not wait for the stop signal to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "At the very least, participants should be told that '[they] should respond as quickly as possible to the go stimulus and not wait for the stop signal to occur' (or something along these lines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "46eeefba-f174-4bca-a1c7-012bdc5203f2",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C44",
+      "claim": "The tracking procedure can be explained to adults to further discourage a waiting strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "To adults, the tracking procedure (if used) can also be explained to further discourage a waiting strategy (i.e. inform participants that the probability of an unsuccessful stop trial will approximate 0.50, and that SSD will increase if they gradually slow their responses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "e910f9bf-4b2a-4444-8a26-f7fc989bad22",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C45",
+      "claim": "Inclusion of a practice block in which adherence to instructions is carefully monitored is recommended.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of a practice block in which adherence to instructions is carefully monitored is recommended.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "9634a6d4-47e9-4893-af1a-a54a1cdd1eaa",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C46",
+      "claim": "In certain populations, such as young children, it might be advisable to start with a practice block without stop signals to emphasize the importance of the go component of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "In certain populations, such as young children, it might furthermore be advisable to start with a practice block without stop signals to emphasize the importance of the go component of the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative recommendation for specific populations, indicated by 'might be advisable'.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "00b3a6bb-8553-4790-937e-11be8512bc70",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C47",
+      "claim": "Between blocks, participants should be reminded about the instructions and provided with block-based feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Between blocks, participants should also be reminded about the instructions. Ideally, this is combined with block-based feedback, informing participants about their mean RT on go trials, number of go omissions (with a reminder that this should be 0), and p(respond|signal) (with a reminder that this should be close to .50).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "11102dbb-a143-44a4-b5c2-4765565ea4bc",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C48",
+      "claim": "The number of stop trials varies widely between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of stop trials varies widely between studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about current practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "e85d5d4e-8b19-4f06-ae36-e89a0a9621ff",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C49",
+      "claim": "Reliable and unbiased SSRT group-level estimates can be obtained with 50 stop trials, but only under optimal or very specific circumstances.",
+      "claim_type": "EXPLICIT",
+      "source": "Our novel simulation results (see Figure 2 and Appendix 2) indicate that reliable and unbiased SSRT group-level estimates can be obtained with 50 stop trials (with 25% stop signals in an experiment, this amounts to 200 trials in total. Usually, this corresponds to an experiment of 7\u201310 min including breaks), but only under 'optimal' or very specific circumstances (e.g. when the probability of go omissions is low and the go-RT distribution is not strongly skewed).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on novel simulation data presented in Figure 2 and Appendix 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "3c68149a-7e42-44bb-be7b-4f5678758bbe",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C50",
+      "claim": "Lower trial numbers (25 stop trials) rarely produced reliable SSRT estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower trial numbers (here we tested 25 stop trials) rarely produced reliable SSRT estimates (and the number of excluded subjects was much higher; see Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on simulation data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "500cf7dd-1176-4e66-98e2-0b8c7caa1639",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C51",
+      "claim": "At least 50 stop trials are recommended for standard group-level comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as a general rule of thumb, we recommend to have at least 50 stop trials for standard group-level comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "53295ff0-d24a-4925-9c93-b09fdf5e0abf",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C52",
+      "claim": "50 stop trials may not suffice to obtain reliable individual estimates required for individual-differences research or diagnostic purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should again be stressed that this may not suffice to obtain reliable individual estimates (which are required for e.g. individual-differences research or diagnostic purposes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and understanding of reliability requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "b4fe981b-2fd9-4fb1-978a-fd72e8e232ad",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C53",
+      "claim": "Reliability of SSRT estimates increases with number of trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our simulations reported in Appendix 2 suggest that reliability increases with number of trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on simulation data reported in Appendix 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "7dfb7ad0-e016-4b6a-bb6b-13d62e6b048f",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C54",
+      "claim": "In some clinical populations, adding trials may not always be possible or might be counterproductive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in some clinical populations, adding trials may not always be possible (e.g. when patients cannot concentrate for a sufficiently long period of time), and might even be counterproductive (as strong fluctuations over time can induce extra noise).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about practical limitations in clinical populations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "c0473160-5fb6-4c90-9991-72783895711a",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C55",
+      "claim": "For standard group-level comparisons, researchers can compensate for lower trial numbers by increasing sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations reported in Appendix 3 show that for standard group-level comparisons, researchers can compensate for lower trial numbers by increasing sample size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on simulation data reported in Appendix 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "257b235d-24ab-4ab8-a5cd-dd61e5f74159",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C56",
+      "claim": "SSRTs can be estimated based on the independent race model, which assumes an independent race between a go and a stop runner.",
+      "claim_type": "EXPLICIT",
+      "source": "SSRTs can be estimated based on the independent race model, which assumes an independent race between a go and a stop runner (Box 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical foundation for SSRT estimation, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "ef6b7db4-08a5-4ef3-9ffc-f683521bbd74",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C57",
+      "claim": "When the independence assumption of the race model is seriously violated, SSRT estimates become unreliable.",
+      "claim_type": "EXPLICIT",
+      "source": "When this independence assumption is (seriously) violated, SSRT estimates become unreliable (Band et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a methodological study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "70c9a9a5-5e58-45bc-bf4b-615cd45f58a0",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C58",
+      "claim": "The independence assumption should be checked by comparing the mean RT on unsuccessful stop trials with the mean RT on go trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the assumption should be checked. This can be done by comparing the mean RT on unsuccessful stop trials with the mean RT on go trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on established methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "09955773-3563-4dee-ad95-8bcf0a9d1139",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C59",
+      "claim": "The comparison of RT on unsuccessful stop trials versus go trials should include all trials with a response and should be done for each participant and condition separately.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this comparison should include all trials with a response (including choice errors and premature responses), and it should be done for each participant and condition separately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "1c61a8e9-7ce3-43de-b5af-a40e941c42c6",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C60",
+      "claim": "SSRT should not be estimated when RT on unsuccessful stop trials is numerically longer than RT on go trials.",
+      "claim_type": "EXPLICIT",
+      "source": "SSRT should not be estimated when RT on unsuccessful stop trials is numerically longer than RT on go trials (see also, Appendix 2\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and supported by data in Appendix 2.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "2f4e6b25-d3b9-4450-bd5b-c3c2711e5982",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C61",
+      "claim": "A large number of stop trials is required for formal and in-depth tests of the race model to be meaningful and reliable.",
+      "claim_type": "EXPLICIT",
+      "source": "More formal and in-depth tests of the race model can be performed (e.g. examining probability of responding and RT on unsuccessful stop trials as a function of delay); however, a large number of stop trials is required for such tests to be meaningful and reliable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on statistical considerations for testing the race model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "477fd42e-32c3-4a99-bb58-ddfed8efed56",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C62",
+      "claim": "When the tracking procedure is used, the 'mean estimation' method is the most popular SSRT estimation method.",
+      "claim_type": "EXPLICIT",
+      "source": "When the tracking procedure is used, the 'mean estimation' method is still the most popular (presumably because it is very easy to use).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about current practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "2299a9f0-10c8-4511-bab8-4eec25d1e030",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C63",
+      "claim": "The mean method is strongly influenced by the right tail (skew) of the go RT distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mean method is strongly influenced by the right tail (skew) of the go RT distribution (see Appendix 2 for examples), as well as by go omissions (i.e. go trials on which no response is executed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by examples in Appendix 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "fd18b6f7-d218-4ae8-8141-95a9b8b55388",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C64",
+      "claim": "The mean method is strongly influenced by go omissions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mean method is strongly influenced by the right tail (skew) of the go RT distribution (see Appendix 2 for examples), as well as by go omissions (i.e. go trials on which no response is executed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the properties of the mean method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "27b2f206-7c8f-41bd-b62b-f37d841e7ca3",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C65",
+      "claim": "The integration method (which replaces go omissions with the maximum RT) is generally less biased and more reliable than the mean method when combined with the tracking procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations reported in Appendix 2 and summarized in Figure 2 indicate that the integration method (which replaces go omissions with the maximum RT in order to compensate for the lacking response) is generally less biased and more reliable than the mean method when combined with the tracking procedure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on simulation data presented in Appendix 2 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "e9631f55-b085-43fd-bd80-7c1857fa1944",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C66",
+      "claim": "The integration method does not assume that p(respond|signal) is exactly 0.50.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the mean method, the integration method also does not assume that p(respond|signal) is exactly 0.50 (an assumption that is often not met in empirical data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a property of the integration method, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "5b4f70f1-d3af-4cfd-bb95-4e8330375756",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C67",
+      "claim": "The use of the integration method (with replacement of go omissions) is recommended when non-parametric estimation methods are used.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we recommend the use of the integration method (with replacement of go omissions) when non-parametric estimation methods are used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "ee301080-329b-47a9-871a-71c5b5bdcfcf",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C68",
+      "claim": "Some parametric SSRT estimation methods are less biased than even the best non-parametric methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Please note that some parametric SSRT estimation methods are less biased than even the best non-parametric methods and avoid other problems that can beset them (see Box 2); however, they can be harder for less technically adept researchers to use, and they may require more trials (see Matzke et al., 2018, for a discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a methodological discussion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "dc4e10f1-0363-4d9c-8b9e-10512274c719",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C69",
+      "claim": "Parametric SSRT estimation methods can be harder for less technically adept researchers to use and may require more trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Please note that some parametric SSRT estimation methods are less biased than even the best non-parametric methods and avoid other problems that can beset them (see Box 2); however, they can be harder for less technically adept researchers to use, and they may require more trials (see Matzke et al., 2018, for a discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a methodological discussion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "d4b575dc-302a-4554-b579-e731888dc5b0",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C70",
+      "claim": "The integration method (with replacement of go omissions) is not completely immune to deviations in p(respond|signal) and go omissions.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the preferred integration method (with replacement of go omissions) is less influenced by deviations in p(respond|signal) and go omissions than other methods, it is not completely immune to them either (Figure 2 and Appendix 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on simulation data presented in Figure 2 and Appendix 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "36ad760a-a223-468e-a50b-bef9445edec3",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C71",
+      "claim": "SSRT estimates are most reliable when probability of responding on a stop trial is relatively close to 0.50.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work suggests that SSRT estimates are most reliable (Band et al., 2003) when probability of responding on a stop trial is relatively close to 0.50.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a methodological study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "316c627c-c1ad-401b-bbcc-ae1ddf0f354b",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C72",
+      "claim": "Researchers should refrain from estimating individual SSRTs when p(respond|signal) is lower than 0.25 or higher than 0.75.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we recommend that researchers refrain from estimating individual SSRTs when p(respond|signal) is lower than 0.25 or higher than 0.75 (Congdon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "4e624b95-259d-4091-b9a4-51d950b30fd0",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C73",
+      "claim": "As the probability of a go omission increases, SSRT estimates become less reliable.",
+      "claim_type": "EXPLICIT",
+      "source": "Reliability of the estimates is also influenced by go performance. As the probability of a go omission increases, SSRT estimates also become less reliable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about factors affecting SSRT reliability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "a4fb75d2-67e5-401c-8b4c-1863f57687cd",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C74",
+      "claim": "Figure 2 and the resources described in Appendix 3 can be used to determine an acceptable level of go omissions at a study level.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 and the resources described in Appendix 3 can be used to determine an acceptable level of go omissions at a study level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the utility of the provided resources based on the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "c30f48a1-092e-4426-aeec-14f83566d440",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C75",
+      "claim": "Researchers should decide on cut-offs or exclusion criteria before data collection has started.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, researchers should decide on these cut-offs or exclusion criteria before data collection has started.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on best practices in research methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "7fe98258-cf45-4095-9b53-76c404be143d",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C76",
+      "claim": "Researchers should carefully describe the stimuli, materials, and procedures used in the study to allow proper evaluation and replication.",
+      "claim_type": "EXPLICIT",
+      "source": "To allow proper evaluation and replication of the study findings, and to facilitate follow-up studies, researchers should carefully describe the stimuli, materials, and procedures used in the study, and provide a detailed overview of the performed analyses (including a precise description of how SSRT was estimated).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on best practices in research methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "d0362577-f676-48b6-ad97-990f00bb70c8",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C77",
+      "claim": "The number of participants for whom SSRT was not estimated should be clearly mentioned.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of participants for whom SSRT was not estimated should be clearly mentioned.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on best practices in research reporting.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "9fe24ac8-e67a-409d-adf7-2ab55cd41b71",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C78",
+      "claim": "Dependent variables which are directly observed should be separately reported for the participants that are not included in the SSRT analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideally, dependent variables which are directly observed (see Recommendation 12) are separately reported for the participants that are not included in the SSRT analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on best practices in research reporting.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "904c8ed8-6b55-4755-8850-f7653b411662",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C79",
+      "claim": "Researchers should clearly mention any exclusion criteria and whether those were set a-priori.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers should also clearly mention any other exclusion criteria (e.g. outliers based on distributional analyses, acceptable levels of go omissions, etc.), and whether those were set a-priori (analytic plans can be preregistered on a public repository, such as the Open Science Framework; Nosek et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on best practices in research methodology, with a citation to support preregistration.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "a21cf5c8-ce80-491e-8453-9b439a1c4dc7",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C80",
+      "claim": "Researchers should report all relevant descriptive statistics required to evaluate the findings of their stop-signal study.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers should report all relevant descriptive statistics that are required to evaluate the findings of their stop-signal study (see Box 3 for a check-list).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on best practices in research reporting.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "c02e0b26-5dff-40a6-a59f-b4928adf2a7d",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C81",
+      "claim": "Researchers are encouraged to share their anonymized raw (single-trial) data when possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we encourage researchers to share their anonymized raw (single-trial) data when possible (in accordance with the FAIR data guidelines; Wilkinson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on best practices in open science, with a citation to the FAIR data guidelines.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "4912d928-85f9-4d06-812c-1e79cf5742ad",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C82",
+      "claim": "If properly used, the stop-signal task can reveal unique information about the underlying neuro-cognitive control mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "If properly used, the task can reveal unique information about the underlying neuro-cognitive control mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the potential of the task.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "29a48c01-62ee-46db-a075-3d6c7679a010",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C83",
+      "claim": "The paper aims to increase the quality of research in the response-inhibition and impulse-control domain and to accelerate its progress.",
+      "claim_type": "EXPLICIT",
+      "source": "By providing clear recommendations, and open-source resources, this paper aims to further increase the quality of research in the response-inhibition and impulse-control domain and to significantly accelerate its progress across the various important domains in which it is routinely applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the goal of the current manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "fe00eda6-27bb-4431-8dfb-483e133187a4",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C84",
+      "claim": "The independent race model provides two common 'non-parametric' methods for estimating SSRT: the integration method and the mean method.",
+      "claim_type": "EXPLICIT",
+      "source": "The independent race model (Box 1) provides two common 'non-parametric' methods for estimating SSRT: the integration method and the mean method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established methods for SSRT estimation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "9f49ac59-ea7b-4556-a678-2c025624089b",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C85",
+      "claim": "In the integration method, the point at which the stop process finishes is estimated by 'integrating' the RT distribution and finding the point at which the integral equals p(respond|signal).",
+      "claim_type": "EXPLICIT",
+      "source": "In the integration method, the point at which the stop process finishes (Box 1) is estimated by 'integrating' the RT distribution and finding the point at which the integral equals p(respond|signal).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the procedure for the integration method, which is established methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "994e5a74-282a-40c8-a31c-519d759ebac4",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C86",
+      "claim": "When combined with the tracking procedure, overall p(respond|signal) is used in the integration method.",
+      "claim_type": "EXPLICIT",
+      "source": "When combined with the tracking procedure, overall p(respond|signal) is used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific implementation detail of the integration method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "2dabb66e-7b8e-410d-b984-ee2553be5d51",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C87",
+      "claim": "To determine the nth RT in the integration method, all go trials with a response are included (including go trials with a choice error and go trials with a premature response).",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the nth RT, all go trials with a response are included (including go trials with a choice error and go trials with a premature response).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific implementation detail of the integration method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "06db3a9e-c784-40ea-9c1c-8e8226589daa",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C88",
+      "claim": "In the integration method, go omissions are assigned the maximum RT in order to compensate for the lacking response.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, go omissions (i.e. go trials on which the participant did not respond before the response deadline) are assigned the maximum RT in order to compensate for the lacking response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific implementation detail of the integration method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "e2b26a2e-ea7e-4b77-9da2-b95e0ce28ee2",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C89",
+      "claim": "Premature responses on unsuccessful stop trials should be included when calculating p(respond|signal) and mean SSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Premature responses on unsuccessful stop trials (i.e. responses executed before the stop signal is presented) should also be included when calculating p(respond|signal) and mean SSD (as noted in Recommendation 4, SSD should also be adjusted after such trials).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the authors' consensus and expertise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "055ff9cf-4965-4af6-a9d1-520fd898e389",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C90",
+      "claim": "The integration method with replacement of go omissions produces the most reliable and least biased non-parametric SSRT estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "This version of the integration method produces the most reliable and least biased non-parametric SSRT estimates (Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on simulation data presented in Appendix 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "83ff05a0-2cfb-464e-a599-0b9d9f5f44bd",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C91",
+      "claim": "The mean method uses the mean of the inhibition function, which describes the relationship between p(respond|signal) and SSD.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean method uses the mean of the inhibition function (which describes the relationship between p(respond|signal) and SSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the procedure for the mean method, which is established methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "6d4827f6-3d35-47ae-ae5d-28268eeba828",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C92",
+      "claim": "The mean method assumes that the mean RT equals SSRT + mean SSD.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the mean method assumes that the mean RT equals SSRT + mean SSD, so SSRT can be estimated easily by subtracting mean SSD from mean RT on go trials when the tracking procedure is used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption of the mean method, which is established methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "76f9b9e4-8e4f-4186-9baf-443351ed76b7",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "claim_id": "C93",
+      "claim": "The simple version of the mean method is biased and generally less reliable than the integration method with replacement of go omissions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our simulations show that this simple version of the mean method is biased and generally less reliable than the integration method with replacement of go omissions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a7d20441-78c3-4704-89fa-7de4ba7c4bbb",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Novel simulations demonstrate that the integration method with replacement of go omissions produces more reliable and less biased SSRT estimates than the mean method, and that at least 50 stop trials are required for reliable group-level estimates under optimal conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51, C53, C65, C90, and C93 are directly supported by simulation data presented in Figure 2 and Appendices 2-3. The simulations systematically varied trial numbers, go omission rates, and RT distribution skew to demonstrate the superiority of the integration method and establish minimum trial requirements. The visual data in Figure 2 clearly shows lower bias, higher correlations, and fewer exclusions for the integration method compared to the mean method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "84b2dac7-dc42-4430-b100-ce242d677bb4",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Strategic waiting by participants reduces SSRT estimate reliability and changes the nature of the stop-signal process, which can be mitigated by using 25% stop signal probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by both citation (Verbruggen et al., 2013) and reference to simulation data in Figure 2 and Appendix 2. Claim C30 represents established knowledge about how waiting strategies affect task validity. The recommendation in C32 follows logically from these findings, though the specific 25% threshold is presented as consensus rather than empirically derived.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "54f2abdc-f10c-4cea-803e-791c6b7ca68a",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For group-level comparisons, researchers can compensate for lower trial numbers by increasing sample size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is explicitly supported by simulation data reported in Appendix 3. This provides practical guidance for study design when trial number constraints exist, particularly relevant for clinical populations where longer tasks may not be feasible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "a8cfa6e0-6ead-46c1-9d77-ea26b567e156",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A consensus of 50+ experts developed 12 recommendations for stop-signal task research based on prior methodological studies and novel simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 accurately describe the consensus process and the dual basis (prior literature + novel simulations) for the recommendations. The extensive author list and stated consultation process support the consensus nature of the work. Claim C83 states the manuscript's goal, which is clearly achieved through the comprehensive recommendations provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "e81ed9d8-32d2-4e68-b102-91c6798c39f5",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Standard two-choice reaction time tasks are recommended because very simple tasks cause temporal overlap between go and stop signals (violating race model assumptions) while very difficult tasks may alter the stop process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 provides the recommendation, while C21 offers logical reasoning based on temporal dynamics and race model assumptions. Claim C23 synthesizes these into practical guidance. The reasoning is sound: very short SSDs in simple tasks would cause stimulus overlap, while very difficult discriminations could affect stopping probability or latency distributions. This represents well-reasoned methodological guidance based on established principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "7d751f72-480d-47df-93a5-a36c3d2e80d5",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Salient stop signals should be used to minimize the contribution of perceptual processes to SSRT and reduce between-group differences attributable to detection rather than inhibition, while avoiding startle reflexes from very loud signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 form a coherent recommendation with clear rationale. C25 defines SSRT as including detection processes, C26-C27 provide the recommendation with caveats about startle reflexes (established knowledge), and C28 explains the logical consequence. The reasoning is sound: if SSRT includes detection time, using salient signals minimizes variability in this component, allowing focus on inhibitory processes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "1bd9e256-e99d-45f4-bf27-110e038194c4",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Adaptive tracking procedures with broad SSD ranges (typically 50ms steps) are recommended because they prevent temporal predictability, converge on p(respond|signal)\u22480.50, and require fewer trials than fixed SSD designs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C41 provide comprehensive guidance on tracking procedures. C35 describes the standard procedure and its convergence properties (established knowledge). C36-C37 discuss practical implementation details about step size. C38 specifies that all unsuccessful stop trials should trigger SSD decreases (important methodological detail). C40 is supported by citation (Band et al., 2003). The recommendations are internally consistent and well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "9e30c450-a3f9-4706-b56d-d680bb1f51a6",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multiple instructional strategies should be employed to discourage waiting, including explicit instructions, explanation of tracking procedures, practice blocks with monitoring, and block-based feedback on RT and p(respond|signal).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 provide a comprehensive set of instructional recommendations to prevent strategic waiting. These represent best practices based on the authors' collective expertise. C46 appropriately notes uncertainty for specific populations (young children) with the qualifier \"might be advisable.\" The recommendations are practical and logically connected to preventing the waiting problem established in earlier claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "7e2ec6a3-1147-4a35-a4c4-1a133595da32",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While 50 stop trials may suffice for group comparisons, individual-differences research requires more trials, though clinical populations may face practical constraints that make longer tasks counterproductive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 appropriately qualifies the 50-trial recommendation by noting it may be insufficient for individual differences research, which requires higher reliability. Claim C54 acknowledges practical limitations in clinical populations. These caveats demonstrate appropriate nuance in the recommendations, recognizing that one-size-fits-all guidance is inadequate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "ca045af2-9588-4c3a-b406-192820a1ce61",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SSRT estimation assumes race model independence, which should be verified by comparing RT on unsuccessful stop trials versus go trials, with SSRT estimation prohibited when unsuccessful stop RT exceeds go RT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 provide clear guidance on checking race model assumptions. C56 establishes the theoretical foundation (established knowledge). C57 is supported by citation (Band et al., 2003). C58-C60 provide practical implementation details for the independence check. C60 is supported by data in Appendix 2. C61 notes that more formal tests require many trials (logical inference). This represents sound methodological guidance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "6d49fc6f-403c-4ba7-9119-ad50d25d6c14",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The mean method, while popular, is strongly influenced by RT distribution skew and go omissions, and incorrectly assumes p(respond|signal)=0.50, unlike the integration method.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 identify limitations of the mean method, with C63 supported by examples in Appendix 2. C66 notes an advantage of the integration method (doesn't assume p(respond|signal)=0.50). These claims accurately characterize methodological differences between estimation approaches and are consistent with the simulation results showing the mean method's inferiority.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "14936ad4-8139-4ca6-a4cc-3de393199f22",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The integration method with replacement of go omissions is recommended for non-parametric SSRT estimation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 provides the key methodological recommendation, directly supported by the simulation results (C65, C90, C93) showing this method's superiority. This is a clear, actionable recommendation based on empirical evidence presented in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "102ac1cd-2617-45b5-807a-d17336ae5f6c",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Parametric SSRT estimation methods may be less biased than non-parametric methods but are harder to implement and may require more trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are supported by citation to Matzke et al. (2018). These claims appropriately acknowledge that better methods exist while recognizing practical barriers to their adoption. This provides balanced guidance that considers both statistical optimality and practical feasibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "c2ed16bd-2763-4fce-87ff-042f8ba0d42a",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "SSRT reliability is affected by deviations in p(respond|signal) from 0.50 and by go omission rates, leading to recommendations to exclude participants with p(respond|signal)<0.25 or >0.75.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is supported by simulation data in Figure 2 and Appendix 2. C71 is supported by citation (Band et al., 2003). C72 provides a specific exclusion criterion supported by citation (Congdon et al., 2012). C73 represents established knowledge. These claims provide evidence-based quality control criteria.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "660e03c1-e223-4e87-8872-e08f2e93358e",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Resources are provided to determine acceptable go omission levels, and exclusion criteria should be pre-specified before data collection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 describes the utility of provided resources (Figure 2, Appendix 3) based on simulation data. C75 recommends pre-specification of criteria, representing best practice in research methodology to prevent p-hacking and selective reporting. These are appropriate methodological recommendations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "65e75b5d-2b23-4feb-b93c-8d729d72d80c",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Comprehensive reporting standards are recommended, including detailed methods, exclusion information, descriptive statistics, and sharing of raw data when possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81 provide reporting recommendations aligned with open science best practices. C79 mentions preregistration with citation to support it (Nosek et al., 2018). C81 references FAIR data guidelines (Wilkinson et al., 2016). These represent consensus best practices for transparent and reproducible research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "f67dac43-896f-47a6-a38c-312475ef0821",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The integration method estimates SSRT by finding the nth RT where n equals the number of go RTs multiplied by p(respond|signal), with go omissions replaced by maximum RT and premature responses included in calculations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C89 provide detailed procedural description of the integration method. These represent established methodology being clearly documented. The specificity is appropriate for a methods-focused consensus paper, ensuring researchers can correctly implement the recommended approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "f4582909-fed0-4607-9bfd-c4dfef832869",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The mean method assumes mean RT equals SSRT + mean SSD, allowing simple SSRT calculation by subtraction when using tracking procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 accurately describe the mean method's procedure and underlying assumption. This is established methodology being documented for comparison with the recommended integration method. The description is accurate and helps readers understand why the mean method is simpler but less reliable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "c19380d7-33af-45d2-bad6-f9286e4a3232",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Response inhibition is essential for everyday life, its derailment is integral to neurological and psychiatric disorders, inhibition efficiency correlates with treatment outcomes, and the stop-signal task is an essential tool for measuring inhibition speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the importance and clinical relevance of response inhibition and the stop-signal task. These represent established knowledge in the field and provide appropriate motivation for the methodological recommendations. While no specific citations are provided for C1-C4 individually, they reflect scientific consensus and are supported by the meta-analyses cited later (C10-C13).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "3232e7a2-8e34-4701-9557-addee7f5bb42",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The stop-signal task was developed by Vince (1948), Lappin and Eriksen (1966), and Logan and Cowan (1984), and is used across diverse human and non-human populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is supported by citations to the original publications. C6 represents established knowledge about the task's broad application. These claims provide appropriate historical context and establish the task's widespread use, justifying the need for consensus recommendations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "d536fa21-bdec-4b18-8810-4d504dfa9a53",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The stop-signal task involves suppressing go responses when stop signals appear after variable delays, and is unique in allowing estimation of covert response-inhibition latency (SSRT) despite successful inhibition producing no observable response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 accurately describe the task structure and its unique capability. C7 is supported by Figure 1 illustration. C8 represents logical inference about the measurement challenge. C9 states the task's unique capability (established knowledge). These claims provide essential background for understanding the methodological recommendations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "ce8a4c7a-3dee-4e94-9fcd-eff6c6e02eeb",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Research using the stop-signal task has revealed links between inhibitory control and ADHD, substance abuse, eating disorders, and obsessive-compulsive behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are supported by citations to meta-analytic reviews (Bartholdy et al., 2016; Lipszyc and Schachar, 2010; Smith et al., 2014). Meta-analyses provide strong evidence for these associations. These claims establish the clinical importance of accurate SSRT measurement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "75560f30-4c16-4e55-93b5-1ac564781273",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Current stop-signal research shows considerable heterogeneity in design and analysis, with small design details having major impacts, inappropriate methods producing unreliable estimates, and validity checking requiring complete reporting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 identify problems motivating the consensus recommendations. C14 represents the authors' observation of the field. C15-C16 represent established knowledge about methodological sensitivity. C17 is logical inference about reporting requirements. These claims effectively motivate the need for standardization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "647c0305-d3f1-4c6e-a9e8-0f6f5fe3b717",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The anticipatory response variant of the stop-signal task holds promise as an alternative to standard two-choice tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is supported by citation to Leunissen et al. (2017). This appropriately acknowledges an alternative task design while maintaining focus on standard implementations. The claim is appropriately tentative (\"holds promise\") given it's not the main focus of the recommendations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    },
+    {
+      "id": "383c6fcc-52fe-4bee-8e96-ef2fdd981ece",
+      "content_id": "a2f42645-c336-438e-8f4c-a04cf0ba40ff",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Several speculative claims are made about potential effects: difficult go tasks might influence stopping, salient signals might reduce trigger failures, practice blocks might help children, and adding trials might be counterproductive in clinical populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C22, C29, C46, and C54 are explicitly speculative, indicated by \"might\" qualifiers. These represent reasonable hypotheses based on the authors' expertise but lack direct empirical support in the manuscript. The speculative nature is appropriately signaled, and the claims are used to provide nuanced guidance rather than firm recommendations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:47:45.668896Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e85d5d4e-8b19-4f06-ae36-e89a0a9621ff",
+      "result_id": "a7d20441-78c3-4704-89fa-7de4ba7c4bbb"
+    },
+    {
+      "claim_id": "3c68149a-7e42-44bb-be7b-4f5678758bbe",
+      "result_id": "a7d20441-78c3-4704-89fa-7de4ba7c4bbb"
+    },
+    {
+      "claim_id": "500cf7dd-1176-4e66-98e2-0b8c7caa1639",
+      "result_id": "a7d20441-78c3-4704-89fa-7de4ba7c4bbb"
+    },
+    {
+      "claim_id": "b4fe981b-2fd9-4fb1-978a-fd72e8e232ad",
+      "result_id": "a7d20441-78c3-4704-89fa-7de4ba7c4bbb"
+    },
+    {
+      "claim_id": "27b2f206-7c8f-41bd-b62b-f37d841e7ca3",
+      "result_id": "a7d20441-78c3-4704-89fa-7de4ba7c4bbb"
+    },
+    {
+      "claim_id": "055ff9cf-4965-4af6-a9d1-520fd898e389",
+      "result_id": "a7d20441-78c3-4704-89fa-7de4ba7c4bbb"
+    },
+    {
+      "claim_id": "76f9b9e4-8e4f-4186-9baf-443351ed76b7",
+      "result_id": "a7d20441-78c3-4704-89fa-7de4ba7c4bbb"
+    },
+    {
+      "claim_id": "51543bbd-9929-4bac-b5a8-7847f26b2ae8",
+      "result_id": "84b2dac7-dc42-4430-b100-ce242d677bb4"
+    },
+    {
+      "claim_id": "c69ce566-6082-4684-9541-2b80277edf30",
+      "result_id": "84b2dac7-dc42-4430-b100-ce242d677bb4"
+    },
+    {
+      "claim_id": "394f0461-cf19-4597-8e4a-160ee6ef2729",
+      "result_id": "84b2dac7-dc42-4430-b100-ce242d677bb4"
+    },
+    {
+      "claim_id": "c0473160-5fb6-4c90-9991-72783895711a",
+      "result_id": "54f2abdc-f10c-4cea-803e-791c6b7ca68a"
+    },
+    {
+      "claim_id": "3d61d937-892d-481a-8df4-a62c2f670bb5",
+      "result_id": "a8cfa6e0-6ead-46c1-9d77-ea26b567e156"
+    },
+    {
+      "claim_id": "9543b674-477c-47e8-9ce5-394e065eb398",
+      "result_id": "a8cfa6e0-6ead-46c1-9d77-ea26b567e156"
+    },
+    {
+      "claim_id": "29a48c01-62ee-46db-a075-3d6c7679a010",
+      "result_id": "a8cfa6e0-6ead-46c1-9d77-ea26b567e156"
+    },
+    {
+      "claim_id": "1ef66d83-b292-4437-af09-34b9221ccba4",
+      "result_id": "e81ed9d8-32d2-4e68-b102-91c6798c39f5"
+    },
+    {
+      "claim_id": "b170cbb9-9923-41d4-abd7-67a1ebe6810b",
+      "result_id": "e81ed9d8-32d2-4e68-b102-91c6798c39f5"
+    },
+    {
+      "claim_id": "065e511e-11ee-4ec8-9b4d-a9a7c4885d1f",
+      "result_id": "e81ed9d8-32d2-4e68-b102-91c6798c39f5"
+    },
+    {
+      "claim_id": "fe4c115b-aeca-444c-930f-14fcc9c0a295",
+      "result_id": "7d751f72-480d-47df-93a5-a36c3d2e80d5"
+    },
+    {
+      "claim_id": "0872615a-8935-4750-a941-5f4d86613f5d",
+      "result_id": "7d751f72-480d-47df-93a5-a36c3d2e80d5"
+    },
+    {
+      "claim_id": "eb801d62-0d92-42fb-8721-a868fb5af328",
+      "result_id": "7d751f72-480d-47df-93a5-a36c3d2e80d5"
+    },
+    {
+      "claim_id": "deee5bf9-7fd9-4873-be46-933bc0457a21",
+      "result_id": "7d751f72-480d-47df-93a5-a36c3d2e80d5"
+    },
+    {
+      "claim_id": "394b7809-2d75-4985-96fb-2913db5c99b4",
+      "result_id": "1bd9e256-e99d-45f4-bf27-110e038194c4"
+    },
+    {
+      "claim_id": "b8f61056-9c4e-4791-8c13-e9bedc49a865",
+      "result_id": "1bd9e256-e99d-45f4-bf27-110e038194c4"
+    },
+    {
+      "claim_id": "ba9cc702-539f-4f1e-82e7-9110d494671d",
+      "result_id": "1bd9e256-e99d-45f4-bf27-110e038194c4"
+    },
+    {
+      "claim_id": "abcb8c06-c201-4769-8c4e-3171b745bfeb",
+      "result_id": "1bd9e256-e99d-45f4-bf27-110e038194c4"
+    },
+    {
+      "claim_id": "c539c507-0283-4ec0-9431-86a4179f005c",
+      "result_id": "1bd9e256-e99d-45f4-bf27-110e038194c4"
+    },
+    {
+      "claim_id": "cfe62a3b-c587-4bdc-872d-f8cd326c40e1",
+      "result_id": "1bd9e256-e99d-45f4-bf27-110e038194c4"
+    },
+    {
+      "claim_id": "ae9e5d81-7938-425b-b387-f72ad51830f8",
+      "result_id": "1bd9e256-e99d-45f4-bf27-110e038194c4"
+    },
+    {
+      "claim_id": "314d5c3e-9623-450c-ae28-aea09d653adf",
+      "result_id": "1bd9e256-e99d-45f4-bf27-110e038194c4"
+    },
+    {
+      "claim_id": "ae4307fb-e485-44e0-9fae-0668d07ecaaa",
+      "result_id": "1bd9e256-e99d-45f4-bf27-110e038194c4"
+    },
+    {
+      "claim_id": "315be1d5-da12-4f86-8403-3d2859ee96c9",
+      "result_id": "9e30c450-a3f9-4706-b56d-d680bb1f51a6"
+    },
+    {
+      "claim_id": "2b7e756f-3cf0-4de7-bd73-97bfeb314049",
+      "result_id": "9e30c450-a3f9-4706-b56d-d680bb1f51a6"
+    },
+    {
+      "claim_id": "46eeefba-f174-4bca-a1c7-012bdc5203f2",
+      "result_id": "9e30c450-a3f9-4706-b56d-d680bb1f51a6"
+    },
+    {
+      "claim_id": "e910f9bf-4b2a-4444-8a26-f7fc989bad22",
+      "result_id": "9e30c450-a3f9-4706-b56d-d680bb1f51a6"
+    },
+    {
+      "claim_id": "9634a6d4-47e9-4893-af1a-a54a1cdd1eaa",
+      "result_id": "9e30c450-a3f9-4706-b56d-d680bb1f51a6"
+    },
+    {
+      "claim_id": "00b3a6bb-8553-4790-937e-11be8512bc70",
+      "result_id": "9e30c450-a3f9-4706-b56d-d680bb1f51a6"
+    },
+    {
+      "claim_id": "53295ff0-d24a-4925-9c93-b09fdf5e0abf",
+      "result_id": "7e2ec6a3-1147-4a35-a4c4-1a133595da32"
+    },
+    {
+      "claim_id": "7dfb7ad0-e016-4b6a-bb6b-13d62e6b048f",
+      "result_id": "7e2ec6a3-1147-4a35-a4c4-1a133595da32"
+    },
+    {
+      "claim_id": "257b235d-24ab-4ab8-a5cd-dd61e5f74159",
+      "result_id": "ca045af2-9588-4c3a-b406-192820a1ce61"
+    },
+    {
+      "claim_id": "ef6b7db4-08a5-4ef3-9ffc-f683521bbd74",
+      "result_id": "ca045af2-9588-4c3a-b406-192820a1ce61"
+    },
+    {
+      "claim_id": "70c9a9a5-5e58-45bc-bf4b-615cd45f58a0",
+      "result_id": "ca045af2-9588-4c3a-b406-192820a1ce61"
+    },
+    {
+      "claim_id": "09955773-3563-4dee-ad95-8bcf0a9d1139",
+      "result_id": "ca045af2-9588-4c3a-b406-192820a1ce61"
+    },
+    {
+      "claim_id": "1c61a8e9-7ce3-43de-b5af-a40e941c42c6",
+      "result_id": "ca045af2-9588-4c3a-b406-192820a1ce61"
+    },
+    {
+      "claim_id": "2f4e6b25-d3b9-4450-bd5b-c3c2711e5982",
+      "result_id": "ca045af2-9588-4c3a-b406-192820a1ce61"
+    },
+    {
+      "claim_id": "477fd42e-32c3-4a99-bb58-ddfed8efed56",
+      "result_id": "6d49fc6f-403c-4ba7-9119-ad50d25d6c14"
+    },
+    {
+      "claim_id": "2299a9f0-10c8-4511-bab8-4eec25d1e030",
+      "result_id": "6d49fc6f-403c-4ba7-9119-ad50d25d6c14"
+    },
+    {
+      "claim_id": "fd18b6f7-d218-4ae8-8141-95a9b8b55388",
+      "result_id": "6d49fc6f-403c-4ba7-9119-ad50d25d6c14"
+    },
+    {
+      "claim_id": "e9631f55-b085-43fd-bd80-7c1857fa1944",
+      "result_id": "6d49fc6f-403c-4ba7-9119-ad50d25d6c14"
+    },
+    {
+      "claim_id": "5b4f70f1-d3af-4cfd-bb95-4e8330375756",
+      "result_id": "14936ad4-8139-4ca6-a4cc-3de393199f22"
+    },
+    {
+      "claim_id": "ee301080-329b-47a9-871a-71c5b5bdcfcf",
+      "result_id": "102ac1cd-2617-45b5-807a-d17336ae5f6c"
+    },
+    {
+      "claim_id": "dc4e10f1-0363-4d9c-8b9e-10512274c719",
+      "result_id": "102ac1cd-2617-45b5-807a-d17336ae5f6c"
+    },
+    {
+      "claim_id": "d4b575dc-302a-4554-b579-e731888dc5b0",
+      "result_id": "c2ed16bd-2763-4fce-87ff-042f8ba0d42a"
+    },
+    {
+      "claim_id": "36ad760a-a223-468e-a50b-bef9445edec3",
+      "result_id": "c2ed16bd-2763-4fce-87ff-042f8ba0d42a"
+    },
+    {
+      "claim_id": "316c627c-c1ad-401b-bbcc-ae1ddf0f354b",
+      "result_id": "c2ed16bd-2763-4fce-87ff-042f8ba0d42a"
+    },
+    {
+      "claim_id": "4e624b95-259d-4091-b9a4-51d950b30fd0",
+      "result_id": "c2ed16bd-2763-4fce-87ff-042f8ba0d42a"
+    },
+    {
+      "claim_id": "a4fb75d2-67e5-401c-8b4c-1863f57687cd",
+      "result_id": "660e03c1-e223-4e87-8872-e08f2e93358e"
+    },
+    {
+      "claim_id": "c30f48a1-092e-4426-aeec-14f83566d440",
+      "result_id": "660e03c1-e223-4e87-8872-e08f2e93358e"
+    },
+    {
+      "claim_id": "7fe98258-cf45-4095-9b53-76c404be143d",
+      "result_id": "65e75b5d-2b23-4feb-b93c-8d729d72d80c"
+    },
+    {
+      "claim_id": "d0362577-f676-48b6-ad97-990f00bb70c8",
+      "result_id": "65e75b5d-2b23-4feb-b93c-8d729d72d80c"
+    },
+    {
+      "claim_id": "9fe24ac8-e67a-409d-adf7-2ab55cd41b71",
+      "result_id": "65e75b5d-2b23-4feb-b93c-8d729d72d80c"
+    },
+    {
+      "claim_id": "904c8ed8-6b55-4755-8850-f7653b411662",
+      "result_id": "65e75b5d-2b23-4feb-b93c-8d729d72d80c"
+    },
+    {
+      "claim_id": "a21cf5c8-ce80-491e-8453-9b439a1c4dc7",
+      "result_id": "65e75b5d-2b23-4feb-b93c-8d729d72d80c"
+    },
+    {
+      "claim_id": "c02e0b26-5dff-40a6-a59f-b4928adf2a7d",
+      "result_id": "65e75b5d-2b23-4feb-b93c-8d729d72d80c"
+    },
+    {
+      "claim_id": "9f49ac59-ea7b-4556-a678-2c025624089b",
+      "result_id": "f67dac43-896f-47a6-a38c-312475ef0821"
+    },
+    {
+      "claim_id": "994e5a74-282a-40c8-a31c-519d759ebac4",
+      "result_id": "f67dac43-896f-47a6-a38c-312475ef0821"
+    },
+    {
+      "claim_id": "2dabb66e-7b8e-410d-b984-ee2553be5d51",
+      "result_id": "f67dac43-896f-47a6-a38c-312475ef0821"
+    },
+    {
+      "claim_id": "06db3a9e-c784-40ea-9c1c-8e8226589daa",
+      "result_id": "f67dac43-896f-47a6-a38c-312475ef0821"
+    },
+    {
+      "claim_id": "e2b26a2e-ea7e-4b77-9da2-b95e0ce28ee2",
+      "result_id": "f67dac43-896f-47a6-a38c-312475ef0821"
+    },
+    {
+      "claim_id": "83ff05a0-2cfb-464e-a599-0b9d9f5f44bd",
+      "result_id": "f4582909-fed0-4607-9bfd-c4dfef832869"
+    },
+    {
+      "claim_id": "6d4827f6-3d35-47ae-ae5d-28268eeba828",
+      "result_id": "f4582909-fed0-4607-9bfd-c4dfef832869"
+    },
+    {
+      "claim_id": "ad47b025-eec5-4ecb-bc9d-4dc522016003",
+      "result_id": "c19380d7-33af-45d2-bad6-f9286e4a3232"
+    },
+    {
+      "claim_id": "0b321c6d-36de-43c6-9d23-92089ee12fb9",
+      "result_id": "c19380d7-33af-45d2-bad6-f9286e4a3232"
+    },
+    {
+      "claim_id": "c9d336f8-598f-4def-a31d-c1b7ea996ac9",
+      "result_id": "c19380d7-33af-45d2-bad6-f9286e4a3232"
+    },
+    {
+      "claim_id": "4e3b731a-f5ca-455d-b8c7-73fac6139e25",
+      "result_id": "c19380d7-33af-45d2-bad6-f9286e4a3232"
+    },
+    {
+      "claim_id": "eaec98be-19f4-4ab3-b1de-557d399d07d3",
+      "result_id": "3232e7a2-8e34-4701-9557-addee7f5bb42"
+    },
+    {
+      "claim_id": "5026dc5d-728b-4dc2-b8be-2bc45ebcd71f",
+      "result_id": "3232e7a2-8e34-4701-9557-addee7f5bb42"
+    },
+    {
+      "claim_id": "9bb6bd20-d226-4b55-8ddc-b91fa1f961bf",
+      "result_id": "d536fa21-bdec-4b18-8810-4d504dfa9a53"
+    },
+    {
+      "claim_id": "84f16187-2b31-4476-9b33-0efaa0b1261f",
+      "result_id": "d536fa21-bdec-4b18-8810-4d504dfa9a53"
+    },
+    {
+      "claim_id": "cab9c223-1bbd-4d48-9936-4847b7fec771",
+      "result_id": "d536fa21-bdec-4b18-8810-4d504dfa9a53"
+    },
+    {
+      "claim_id": "503b0782-1b66-465a-b9c4-ab56a032f879",
+      "result_id": "ce8a4c7a-3dee-4e94-9fcd-eff6c6e02eeb"
+    },
+    {
+      "claim_id": "25774519-7556-44d6-938f-826566ec0e7e",
+      "result_id": "ce8a4c7a-3dee-4e94-9fcd-eff6c6e02eeb"
+    },
+    {
+      "claim_id": "9645ed11-e788-4041-9655-7f52784b96b2",
+      "result_id": "ce8a4c7a-3dee-4e94-9fcd-eff6c6e02eeb"
+    },
+    {
+      "claim_id": "af7d8c3d-e353-4e16-9d06-15096fd0f2b4",
+      "result_id": "ce8a4c7a-3dee-4e94-9fcd-eff6c6e02eeb"
+    },
+    {
+      "claim_id": "8459bdae-75d4-4f73-b1a3-541547516eab",
+      "result_id": "75560f30-4c16-4e55-93b5-1ac564781273"
+    },
+    {
+      "claim_id": "8b0758d7-5f3d-49a3-8b71-4270ac9f2158",
+      "result_id": "75560f30-4c16-4e55-93b5-1ac564781273"
+    },
+    {
+      "claim_id": "7539d855-8c18-4431-a560-76ec817361fc",
+      "result_id": "75560f30-4c16-4e55-93b5-1ac564781273"
+    },
+    {
+      "claim_id": "3d945b63-7e32-4f5e-a9d6-f7aab7403dc0",
+      "result_id": "75560f30-4c16-4e55-93b5-1ac564781273"
+    },
+    {
+      "claim_id": "1759956c-4e56-44dc-9389-7131f75e5f16",
+      "result_id": "647c0305-d3f1-4c6e-a9e8-0f6f5fe3b717"
+    },
+    {
+      "claim_id": "c3c28244-d2fd-47ae-885c-91fecb2ef101",
+      "result_id": "383c6fcc-52fe-4bee-8e96-ef2fdd981ece"
+    },
+    {
+      "claim_id": "6dd88035-7f61-44e7-9c32-a36506813dd2",
+      "result_id": "383c6fcc-52fe-4bee-8e96-ef2fdd981ece"
+    },
+    {
+      "claim_id": "9634a6d4-47e9-4893-af1a-a54a1cdd1eaa",
+      "result_id": "383c6fcc-52fe-4bee-8e96-ef2fdd981ece"
+    },
+    {
+      "claim_id": "7dfb7ad0-e016-4b6a-bb6b-13d62e6b048f",
+      "result_id": "383c6fcc-52fe-4bee-8e96-ef2fdd981ece"
+    }
+  ],
+  "comparisons": []
+}

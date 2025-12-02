@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the background and motivation for studying adaptive processing in the human brain. Prior work demonstrates that sensory adaptation involves reduced brain responses to repeated stimuli and changes in perceptual sensitivity and neural selectivity, but the fine-scale circuit mechanisms (feedforward vs. feedback) remain unknown due to limitations of standard fMRI resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide well-supported background from established literature (multiple review articles and studies cited). The gap in knowledge (C2, C21) is clearly articulated and justified by the limitations of standard fMRI techniques. These claims appropriately set up the rationale for the current study using ultra-high field imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C54",
+      "C55",
+      "C102",
+      "C103"
+    ],
+    "result": "Ultra-high field (UHF) imaging provides sub-millimeter resolution to examine fMRI signals across cortical depth, enabling investigation of laminar circuits. The study uses an equi-volume approach to assign voxels to three cortical depths (deeper, middle, superficial), though these MRI-defined layers represent distance from boundaries rather than one-to-one mapping to cytoarchitectonic layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C54-C55, C102-C103 are well-supported by citations to methodological reviews and studies. The authors appropriately acknowledge the limitations of the spatial resolution (C103) and cite established anatomical models of laminar connectivity. The methodological approach is standard for UHF laminar fMRI studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Orientation-specific fMRI adaptation (decreased BOLD for repeated vs. varying orientations) occurs across cortical depths in visual areas V1-V4, with significantly stronger adaptation in superficial and middle layers compared to deeper layers. This pattern is consistent across visual areas and persists after spatial regression correction for signal bleed between adjacent layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C22-C36 present the primary experimental finding with comprehensive statistical support. The repeated measures ANOVA shows significant main effects and interactions (C22-C26), and post-hoc comparisons provide detailed layer-specific results across multiple visual areas (C28-C35). The spatial regression analysis (C27) addresses potential confounds from signal mixing between layers. Statistical tests are appropriate and consistently significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C88",
+      "C105",
+      "C106"
+    ],
+    "result": "Control analyses demonstrate that the observed layer-specific fMRI adaptation is not simply due to vascular confounds. Corrections for superficial bias (removing low tSNR and high t-value voxels) significantly reduced the superficial bias in GE-EPI BOLD signals. Additionally, 3D GRASE imaging (less affected by large veins) showed similar fMRI adaptation patterns to corrected GE-EPI data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43, C88, C105-C106 provide critical validation of the main findings. The vascular correction procedures are well-justified by citations (C37, C40, C88) and show significant effects (C39). The 3D GRASE control experiment (N=5) shows consistent patterns with corrected GE-EPI data (C41-C43, C105), though the small sample limits statistical power. The correspondence across sequences (C105-C106) strengthens confidence that results are not artifacts of vascular bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C104"
+    ],
+    "result": "Layer-specific fMRI adaptation in superficial layers correlates with perceptual bias in orientation discrimination (tilt aftereffect). Performance on the attention control task (RSVP) did not differ between conditions, ruling out attention differences as an explanation. The perceptual adaptation index showed significant correlation with fMRI adaptation in superficial layers (r=0.656, p=0.039) but not middle or deeper layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48, C104 link neural and behavioral measures. The RSVP task control (C44) appropriately rules out attention confounds. The behavioral experiment (C104, N=12) demonstrates significant perceptual bias. The correlation analysis (C45-C48) shows layer-specific relationship between neural adaptation and perception, though the correlations for middle and deeper layers approach significance (p=0.091, p=0.087), suggesting the specificity to superficial layers may be modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Posterior parietal cortex regions (IPS1, IPS2) show fMRI adaptation (decreased responses for repeated stimuli) but without layer-specific effects. There were significant main effects of condition and cortical depth, but no significant interactions, indicating similar adaptation across all cortical layers in IPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are well-supported. The role of IPS in expectation processing is established by multiple citations (C49). The statistical analysis (C50-C53) appropriately shows main effects but no interactions, supporting the interpretation of non-layer-specific adaptation in parietal cortex. This contrasts with the layer-specific effects in visual cortex and suggests different mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Functional connectivity analysis reveals enhanced feedforward connectivity during adaptation between V1 superficial layers and middle layers of extrastriate visual areas (V2, V3, V4), and enhanced short-range feedback connectivity between V1 and V2 deeper layers. A significant three-way interaction and pathway \u00d7 connection interaction support differential connectivity changes across feedforward and feedback pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C56-C63 present functional connectivity findings with appropriate statistical support. The three-way interaction (C56) and pathway \u00d7 connection interaction (C57) provide overall evidence for differential effects. Post-hoc tests show consistent feedforward enhancement across V1-V2, V1-V3, and V1-V4 (C58-C60), while feedback enhancement is specific to V1-V2 (C63). The ICA-based denoising and FIR deconvolution methods are appropriate for task-based connectivity analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Enhanced long-range feedback connectivity from posterior parietal cortex (IPS1) to V1 deeper layers occurs during adaptation. Functional connectivity between V1 deeper layers and IPS1 was significantly higher for adaptation (t(14)=3.014, p=0.009), and fMRI adaptation in IPS1 deeper layers significantly predicted adaptation in V1 deeper layers (r=0.715, p=0.003). This connectivity was specific to IPS1 and not observed for IPS2 or feedforward pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C64-C70 demonstrate long-range feedback connectivity with strong statistical support. The functional connectivity increase (C64) and regression analysis (C69) both show significant effects. The specificity analyses (C66-C68) appropriately rule out alternative explanations. The consistency between fMRI adaptation in V1 deeper layers (C65) and enhanced feedback from IPS1 supports the interpretation of top-down influences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Control analysis using hMT+ (a motion-processing area anatomically connected to V1 but not involved in orientation processing) showed no significant fMRI adaptation and no changes in functional connectivity with V1 during adaptation. This demonstrates specificity of the connectivity changes to orientation-relevant visual areas and IPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 provide an important negative control. The anatomical connection between V1 and hMT+ is established (C71), but the functional dissociation for orientation processing (C72) is well-known. The lack of adaptation effects (C73) and connectivity changes (C74) in hMT+ strengthens the interpretation that observed effects are specific to the orientation adaptation circuit rather than general properties of V1 connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors conclude that visual adaptation involves recurrent processing within visual cortex, with stronger effects in superficial and middle layers. This is interpreted as reflecting horizontal connections mediating iso-orientation inhibition in superficial layers, consistent with anatomical evidence and a recent study on the Flash Grab aftereffect. The circuit integrates local recurrent processing with top-down feedback influences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83, C91-C92 synthesize the findings with appropriate citations to anatomical and neurophysiological literature. The interpretation is consistent with known V1 circuitry (C78-C81) and prior laminar fMRI studies (C77, C82). However, the interpretation involves some speculation about mechanisms (horizontal connections, iso-orientation inhibition) that cannot be directly tested with the current fMRI data. The overall conclusion (C91-C92) appropriately integrates the multiple findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The findings are discussed in the context of predictive coding theory, which proposes that perception results from comparing feedback prediction signals with feedforward sensory signals. The authors cite a microcircuit model of predictive coding that could account for their observations of layer-specific adaptation and connectivity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 appropriately place the findings in theoretical context. Predictive coding theory is well-established (C85-C86), and the cited microcircuit model (C87) provides a plausible framework. However, the study was not designed to directly test predictive coding predictions, so this remains an interpretive framework rather than a tested hypothesis. The discussion appropriately presents this as one possible interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors discuss consistency with previous laminar imaging studies and suggest future directions, including combining laminar imaging with electrophysiology to examine oscillatory dynamics (gamma for feedforward, alpha/beta for feedback) and using advanced techniques like VASO to enhance spatial specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C93-C94 appropriately contextualize findings and suggest future work. The consistency with prior studies (C89) is supported by citations. The suggestions for future research (C90, C93-C94) are reasonable and cite relevant methodological advances and electrophysiological findings. These are appropriately framed as future directions rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study included 18 participants (15 in final analysis after exclusions for head motion and technical problems), with subsets participating in control experiments (N=5 for 3D GRASE, N=12 for behavioral). The study received appropriate ethical approval and used standard oriented grating stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 describe the participant sample and basic methods. The sample size (N=15) is reasonable for UHF fMRI though modest. Exclusion criteria (C96) are appropriate. The control experiments have small samples (N=5, N=12) which limits statistical power but is typical for resource-intensive UHF imaging. Ethical approval is documented (C100). The stimulus description (C101) is standard.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1495 @@
+{
+  "submission": {
+    "id": "1023f30d-3d19-4422-84e9-ab95bed6229a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:18:40.043293Z",
+    "updated_at": "2025-12-02T08:18:40.043293Z"
+  },
+  "content": [
+    {
+      "id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "submission_id": "1023f30d-3d19-4422-84e9-ab95bed6229a",
+      "content_type": "manuscript",
+      "content_text": "# Collider bias and the apparent protective effect of glucose-6-phosphate dehydrogenase deficiency on cerebral malaria\n\n## Authors\n\n- James A Watson<sup>1</sup> ([ORCID: 0000-0001-5524-0325](https://orcid.org/0000-0001-5524-0325)) \u2020\n- Stije J Leopold<sup>1</sup> ([ORCID: 0000-0002-0482-5689](https://orcid.org/0000-0002-0482-5689)) \u2020\n- Julie A Simpson<sup>3</sup> ([ORCID: 0000-0002-2660-2013](https://orcid.org/0000-0002-2660-2013))\n- Nicholas PJ Day<sup>1</sup>\n- Arjen M Dondorp<sup>2</sup> ([ORCID: 0000-0001-5190-2395](https://orcid.org/0000-0001-5190-2395))\n- Nicholas J White<sup>2</sup> ([ORCID: 0000-0002-1897-1978](https://orcid.org/0000-0002-1897-1978)) \u2020\n\n### Affiliations\n\n1. Mahidol Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine Mahidol University Bangkok Thailand\n2. Nuffield Department of Medicine, Centre for Tropical Medicine and Global Health University of Oxford Oxford United Kingdom\n3. Centre for Epidemiology and Biostatistics, Melbourne School of Population and Global Health The University of Melbourne Melbourne Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nCase fatality rates in severe falciparum malaria depend on the pattern and degree of vital organ dysfunction. Recent large-scale case-control analyses of pooled severe malaria data reported that glucose-6-phosphate dehydrogenase deficiency (G6PDd) was protective against cerebral malaria but increased the risk of severe malarial anaemia. A novel formulation of the balancing selection hypothesis was proposed as an explanation for these findings, whereby the selective advantage is driven by the competing risks of death from cerebral malaria and death from severe malarial anaemia. We re-analysed these claims using causal diagrams and showed that they are subject to collider bias. A simulation based sensitivity analysis, varying the strength of the known effect of G6PDd on anaemia, showed that this bias is sufficient to explain all of the observed association. Future genetic epidemiology studies in severe malaria would benefit from the use of causal reasoning.\n\n## Introduction\n\nSevere falciparum malaria is defined by one or more criteria indicating vital organ dysfunction in the presence of microscopy confirmed asexual blood stages of Plasmodium falciparum in the peripheral blood film (WHO, 2015). Multiple vital organ dysfunction is associated with increased mortality (WHO, 2014). Common major clinical manifestations of severe malaria include coma, acidosis, renal failure and anaemia. Of these manifestations, anaemia is an inevitable consequence of symptomatic malaria (White et al., 2014). However, anaemia in individuals at risk of Plasmodium falciparum infection can also be the consequence of red cell genetic polymorphisms frequent in the populations at risk, such as glucose-6-phosphate dehydrogenase deficiency (G6PDd) or haemoglobinopathies.\n\nThere is considerable interest in understanding the mechanisms conferring protective effects against severe falciparum malaria of the genetic polymorphisms which are common in malaria endemic areas (Weatherall, 2008). For some, such as the sickle cell trait, several different mechanisms have been proposed. These include reduced parasite erythrocyte invasion, enhanced parasitised red cell phagocytosis and a reduced propensity of infected red cells to sequester in the microvasculature (Malaria Genomic Epidemiology Network et al., 2014; Band et al., 2015; Cholera et al., 2008; Williams, 2016). The mechanism underlying protection from severe falciparum malaria is less clear for others such as glucose-6-phosphate dehydrogenase deficiency (G6PDd). This X-linked genetic polymorphism results in the most common human enzymopathy. Nearly 200 different genetic variants have been reported (Howes et al., 2012; Luzzatto and Arese, 2018). The mechanism whereby G6PD deficiency protects against malaria, and the natural selection forces which have resulted in the different genotypes are still debated. Prospective observational hospital or clinic based patient studies have provided the major component of the evidence base. Estimating causal effects from observational studies in severe malaria patients is difficult due to both confounding and selection bias. This work focuses on collider bias introduced by inappropriate data filtering (Snoep et al., 2014; Pearce and Richiardi, 2014).\n\nIt has been suggested that G6PDd both increases the risk of severe malarial anaemia (SMA) and decreases the risk of cerebral malaria (CM) (Malaria Genomic Epidemiology Network et al., 2014; Clarke et al., 2017). These conclusions were based on a pooled analysis of observational data from over 11,000 patients with severe malaria studied in Africa and Asia, and relevant population controls. Based on these genetic association studies, a new formulation of the balancing-selection hypothesis was proposed in which G6PD polymorphisms are maintained in human populations, at least in part, by an evolutionary trade-off between different adverse outcomes of P. falciparum infection (Clarke et al., 2017). Collider bias probably explains this negative association between G6PDd and CM, suggesting that causal interpretations of this association and the novel formulation of balancing selection in G6PDd are invalid.\n\n## Results\n\nTwo published analyses of pooled data from observational studies of patients with severe falciparum malaria used severe malarial anaemia (SMA) and cerebral malaria (CM) as the main endpoints (outcomes) of interest (Malaria Genomic Epidemiology Network et al., 2014; Clarke et al., 2017). Both these published analyses defined cases of CM as the presence of coma but without concomitant SMA, and cases of SMA as patients with severe anaemia but who were conscious. Therefore, these case definitions excluded patients who had both SMA and CM. All other presentations of severe malaria were also excluded (pulmonary oedema, shock, etc.). Population controls were recruited at each site to match the ethnic composition of cases, and in some instances cord blood samples were used as controls. The consequence of these case definitions is to create an artificial dependency between SMA and CM: if a patient has SMA then they cannot have CM. G6PDd is known to influence haemoglobin concentrations directly by causing haemolysis of older erythrocytes in acute malaria. Therefore it is to be expected that SMA is positively correlated with G6PDd, thus creating a negative correlation between CM and G6PDd. In probabilistic terms, this conditional dependence is written as $P(SMA|CM)\\neqP(SMA)$. Indeed, when all the G6PDd mutations were mapped onto the WHO severity classification score (Yoshida et al., 1971), it was observed that \"The mean G6PDd score was 13.5% in controls, 13% in cerebral malaria cases and 16.9% in severe malarial anaemia cases [..].\" (page 8, Clarke et al., 2017). This pattern remained consistent (6, 5.6, and 7.1%, respectively) after exclusion of the G6PD c.202C\u00a0>\u00a0T mutation (one of the \u2018A-\u2019 mutations and the most prevalent in the pooled data).\n\nBy excluding patients with both SMA and CM (approximately 12% of those with either SMA or CM in the pooled data), the number of G6PDd patients in the CM category is artificially reduced and we would expect there to be fewer G6PDd patients than in the control group. Figure 1 proposes a simple causal diagram which posits plausible inter-dependencies limited to the variables of interest. A simple simulation study based on the assumptions shown in Figure 1 can be used to estimate the relationship between G6PDd and SMA which would result in the observed odds ratio for G6PDd in CM cases versus controls reported in Clarke et al. (2017). We assessed the null model in which there is no direct causal link between G6PDd and CM in severe falciparum malaria (i.e. no arrow from G6PD deficiency to CM). We also assume that there is no direct link between SMA and CM. We calibrated the model with the marginal probabilities of SMA and CM reported in Clarke et al. (2017) and only varied the odds ratio of G6PDd in SMA cases versus controls from 1 (assuming no effect of G6PDd on SMA) to 2 (twice as likely to be G6PDd in the SMA cases than in the controls). For simplicity (avoiding assumptions concerning gene dose effects) we restricted the analysis to males and only compare the simulation results with the reported associations in males.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43154/elife-43154-fig1-v2.jpg)\n\n**Figure 1.:** G6PD deficiency is the exposure of interest (green) and cerebral malaria (CM) is the outcome of interest (red). By defining the CM cases as those who had coma but no severe anaemia, collider bias operates on the effect of G6PDd on CM.\n\nFigure 2 shows that if the odds ratio for G6PDd in SMA cases versus controls is strictly greater than 1, the estimated odds ratio for G6PDd in CM cases versus controls is biased (the thick red line is below the true simulated value of 1). The magnitude of this bias increases monotonically as the odds ratio for G6PDd in SMA cases versus controls increases. As can be seen from the causal diagram in Figure 1, there is no bias in the estimated odds ratio for G6PDd in SMA cases versus controls (in Figure 2 the thick blue line approximates the identity line). This simple simulation model, restricted to males, shows that for any value of the odds ratio for G6PDd in SMA cases versus controls taken inside the reported 95% confidence interval (CI) [1.2\u20131.8] from Clarke et al. (2017), will result in a biased odds ratio for G6PDd in CM cases versus controls inside the interval [0.69\u20130.98], the reported 95% CI for G6PDd in CM cases versus controls (Clarke et al., 2017). Moreover, if we use their reported point estimate of 1.48, restricted to males, for the odds ratio of G6PDd in SMA cases versus controls, the simulation model estimates that the observed (biased) odds ratio for G6PDd in CM cases versus controls is 0.87, qualitatively very close to their estimate of 0.82. We note that the effect of G6PDd on severe anaemia in homozygous G6PDd girls and hemizygous G6PDd boys reported in Uyoga et al. (2015), an odds ratio of 1.71 (95% CI: 1.34\u20132.18) for G6PDd in SMA cases versus controls, is also consistent with these results. Therefore collider bias could be sufficient to explain all the observed association.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43154/elife-43154-fig2-v2.jpg)\n\n**Figure 2.:** The simulation assumes that CM is independent of G6PD status but that SMA is dependent on G6PDd status (Figure 1). Case definitions of CM and SMA exclude patients with both. The left panel shows the observed simulation based estimate of the odds ratio (OR) for G6PDd in SMA cases versus controls (y-axis) as a function of the true simulated value (x-axis). No bias arises (the observed and true values lie on the line of identity). The right panel shows the observed simulation based estimate of the OR for G6PDd in CM cases versus controls (y-axis), again as a function of the true simulated value of the OR for G6PDd in SMA cases versus controls (x-axis). This estimate suffers from collider bias since the true value of the OR for G6PDd in SMA cases versus controls was set to 1). The faint blue shaded areas show the 95% CI [1.22\u20131.8] for the odds ratio of G6PDd in SMA cases versus controls, restricted to males (Clarke et al., 2017). The point estimate (1.48) is shown by the dashed blue line. The faint red shaded area shows the 95% CI [0.69\u20130.98] for G6PDd in CM cases versus controls, also restricted to males, with the point estimate (0.82) shown by the dashed red line. CI: confidence interval.\n\n## Discussion\n\nThis re-analysis of recent reports that G6PDd reduced the risk of CM directly (Malaria Genomic Epidemiology Network et al., 2014; Clarke et al., 2017) suggests that the observations could have resulted entirely from collider bias. This highlights the difficulty of inferring causal relationships between baseline patient covariates (in this case G6PDd) and covariates which define inclusion criteria. The necessary causal odds ratios for G6PDd in SMA cases versus controls which would give rise to the biased observed association between G6PD status and CM fit with the recent estimate of 1.71 in homozygous girls and hemizygous boys (Uyoga et al., 2015). This is not to say that the risk of CM is unaffected by G6PDd, but that the observations reported could have arisen purely as a result of the implicit collider bias induced by the selection of patients by the severe malaria criteria.\n\nThe example reported here highlights a major difficulty when attempting to estimate causal contributions when factors of interest define inclusion into the clinical study and the subsequent data analysis. All prospective observational severe malaria studies suffer from two major issues. First, case definitions are subjective and change over time (even though standard guidelines exist, see WHO (2015))\u00a0and mortality is strongly dependent on the case definition. Second, enrolment into studies can only be done at the hospital or clinic level and neither duration of illness nor treatment seeking behaviour can be accounted for adequately.\n\nThe notion and definition of \u2018severe malaria\u2019 has two operational purposes. First it is a clinical tool for appropriate triage of malaria patients at high risk of death. Second it is a research tool for the evaluation of novel interventions seeking to reduce mortality. Interventions aimed at reducing mortality need to be trialled in the most severely ill patients in order to demonstrate intervention efficacy in this important subgroup. Pooled analyses of severe malaria studies need to take into account the variability of study inclusion and exclusion criteria. Researchers must appreciate that severe malaria is not an objective category but a subjective case definition subset\u00a0from a spectrum of severity. Moreover, restricting analyses to specific patient subgroups, especially in the analysis of large pooled datasets, can have a considerable impact on the final result (Gelman and Loken, 2013). With increased emphasis on providing open access data so that analyses can be evaluated and best use made of clinical research it would be very helpful if investigators could publish reproducible code alongside their analyses. Future genetic epidemiological studies could benefit from use of causal diagrams and would be more readily evaluable by provision of accompanying code.\n\n## Materials and methods\n\n### Data analysis in Clarke et al. (2017) and Malaria Genomic Epidemiology Network et al. (2014)\n\nThe odds ratios for G6PDd in cases versus controls are given in Table 3 of Malaria Genomic Epidemiology Network et al. (2014) (page 1201). The results, restricted to males, are 0.81 (95% CI: 0.68\u20130.96) for CM and 1.49 (95% CI: 1.24\u20131.79) for SMA. The case phenotype definitions are denoted \u2018Cerebral malaria only\u2019 for CM and \u2018Severe malarial anaemia\u2019 only for SMA. These case definitions, whereby patients with both SMA and CM are excluded, are also given in their Table 1. A total of 6283 cases had cerebral malaria or severe malarial anaemia, broken down as 3345 had cerebral malaria only; 2196 had severe malarial anaemia only; 742 had both cerebral malaria and severe malarial anaemia. The reported odds ratios were computed using logistic regression models with the main adjustment of interest being sickle haemoglobin\u00a0genotype\u00a0(HbS). We only consider the reported results restricted to males. The relevant section from the paper is: \"Single-SNP tests, adjusted for HbS genotype, sex and ancestry, for association with severe malaria and the severe malaria subtypes cerebral malaria only and severe malarial anemia only were performed for the 55 SNPs with a known association with severe malaria. Standard logistic regression models were used for tests of association at each autosomal SNP (Supplementary Table 25). Primary analyses comprised tests of association between each SNP and severe malaria phenotypes across all individuals combined as well as separately by sex (X-chromosome SNPs only) and study site: genotypic, additive, dominant, recessive and heterozygote advantage genetic models of inheritance were considered.\"\u00a0(online Methods, Statistical analysis, (Malaria Genomic Epidemiology Network et al., 2014)).\n\n### Clarke et al., 2017\n\nThe odds ratios for G6PDd in cases versus controls are given in Table 3 of Clarke et al. (2017) (page 6). In this publication, the results, restricted to males, are 0.82 (95% CI: 0.69\u20130.98) for CM and 1.48 (95% CI: 1.22\u20131.8) for SMA (their Table 3). The reason for the slight discrepancy between the two publications does not appear to be stated. They included a total of 6284 patients with cerebral malaria or severe malarial anaemia, broken down as: 3359 individuals had cerebral malaria only; 2184 had severe malarial anaemia only; 741 had both cerebral malaria and severe malarial anaemia. Table 1 and 6 of Clarke et al. (2017) show the case definitions for CM and SMA, highlighting that those who have both clinical presentations are excluded from the respective case definitions. This is further confirmed on page 18 where the authors state: \"For reasons of sample size, we did not conduct a detailed analysis of other sub-types of severe malaria, or of those individuals who had both cerebral malaria and severe malarial anaemia\u2019. Standard logistic regression models were also used to obtain the odds ratios: \u2018In primary analyses, standard fixed effects logistic regression methods were used for tests of association with severe malaria and sub-types at each SNP under additive, dominant, recessive and heterozygous models. [..] Results were adjusted for sickle hemoglobin (HbS), gender and ethnicity.\" (bottom of page 18).\n\n### Sensitivity analysis\n\nIn order to characterise the proportion of the reported association explained by collider bias we constructed a simple simulation study based on the analytical procedures in Malaria Genomic Epidemiology Network et al. (2014); Clarke et al. (2017). We restrict our simulation to males, and calibrate and test the model using only the results reported in males in both publications (identical up to one decimal point). For simplicity, the simulation ignores the effect of HbS which is a confounder between SMA and CM, and generates data where the two presentations occur independently, which is equivalent to adjusting for HbS in the regression model. The procedure generates simulated data dependent on a parameter characterising the effect of G6PDd on severe malarial anaemia. As no adjustment is necessary, we then compute the non-parametric odds ratio for G6PDd in CM cases versus controls, excluding from the CM case definition all those who have SMA. This simulated \u2018observed\u2019 odds ratio estimated from the 2 x\u00a02 table (cases and controls versus G6PDd and G6PD normals) is thereby directly comparable to the reported odds ratios (obtained from logistic regression with the appropriate adjustments) in Malaria Genomic Epidemiology Network et al. (2014); Clarke et al. (2017), if we assume that only sex, ethnicity and HbS are the true confounders (i.e. all necessary adjustments were made in both publications).\n\nThe hypothetical data were simulated based on the following assumptions:\n\nFrom the data in Clarke et al. (2017) and Malaria Genomic Epidemiology Network et al. (2014), we can estimate the marginal probability of CM as 0.34, independent of G6PD status (assumption 2). We can also estimate the marginal probability of SMA as 0.24. The probability of G6PDd in males was 0.15.\n\nIf we denote $\\pi=P(SMA|G6PDd)\\geqP(SMA)=0.24,$ then by the law of total probability:\n\n$$\nP(SMA|G6PDn)=\\frac{P(SMA)\u2212P(SMA|G6PDd)P(G6PDd)}{1\u2212P(G6PDd)}=\\frac{0.24\u22120.15\\pi}{0.85}\n$$\n\nwhere G6PDd denotes G6PD deficient and\u00a0G6PDn denotes\u00a0G6PD normal.\n\nThe true proportion of\u00a0G6PDd in the controls is known and fixed as $P(G6PDd)$, with the proportion of G6PDn in the controls is given by $1\u2212P(G6PDd)$, therefore the odds of G6PDd in the control group is given by $\\frac{P(G6PDd)}{1\u2212P(G6PDd)}$.\n\nWe then simulate cases as follows. For each value of $\\pi\\in[0.24,0.5]$:\n\nStep 1.\u00a0Simulate 1 million patients such that:\n\n$P(CM)=0.34$,\n\n$P(G6PDd)=0.15$.\n\n$P(SMA|G6PDd)=\\pi$.\n\nStep 2.\u00a0Select only the patients who have either just CM, or just SMA, filtering out those with concomitant SMA and CM.\n\nStep 3.\u00a0In the remaining data compute $N_{G6PDd}^{SMA}$ (number of\u00a0G6PDd\u00a0with SMA); $N_{G6PDn}^{SMA}$ (number of G6PDn patients with SMA); $N_{G6PDd}^{CM}$ (number of\u00a0G6PDd patients with CM); $N_{G6PDn}^{CM}$ (number of G6PDn patients with CM). The simulated odds ratio for\u00a0G6PDd in SMA cases versus controls is $\\frac{N_{G6PDd}^{SMA}/N_{G6PDn}^{SMA}}{P(G6PDd)/(1\u2212P(G6PDd))}$, and the simulated odds ratio for\u00a0G6PDd in CM cases versus controls is $\\frac{N_{G6PDd}^{CM}/N_{G6PDn}^{CM}}{P(G6PDd)/(1\u2212P(G6PDd))}$.\n\nThe causal diagram which corresponds to exclusion operating in Step two is shown in Figure 1. Selection bias can be seen via the role of the vertex Case definition which is a collider between \u00a0G6PD\u00a0deficiency and Cerebral malaria (CM).\u00a0Implementation of the simulation model in R can be found at: https://github.com/Stije/SevereMalariaAnalysis/SelectionBiasSimulation.Rmd (Watson and Leopold, 2019; copy archived at https://github.com/elifesciences-publications/SevereMalariaAnalysis).\n",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "65dc803f-dc2a-40b7-9b87-363cdaa755f6",
+      "submission_id": "1023f30d-3d19-4422-84e9-ab95bed6229a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marc Lipsitch, Harvard TH Chan School of Public Health United States\n\nReviewers:\n- Ellie Murray, Harvard Chan School of Public Health United States\n\n## Review text\n\nDOI: [10.7554/eLife.43154.006](https://doi.org/10.7554/eLife.43154.006)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Causal pathways in severe falciparum malaria\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ellie Murray (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThis is a very interesting and thoughtful effort to bring causal reasoning to the extremely complex world of malaria clinical outcomes. Such approaches will be important to generating hypotheses for how to improve clinical care in this field, as the authors note, and I am glad to see these efforts. Toward that end, however, we have substantial concerns about the way it has been applied.\n\nHowever for reasons stated below, both reviewers have major concerns with the analysis. As a result, this paper cannot be published in something like its current form. The first Case Study is not appropriate because it doesn't ask well-posed causal questions, and the second Case Study is essentially a critique of another paper that I can't verify includes a correct description of what the other paper did. If it is a correct description, it is a very important point that should be made as a letter or some other way, and the simulation is superfluous except to provide an illustration to those outside the epidemiology field.\n\nNormally when eLife declines a paper the reviews are appended verbatim to the review, while only revise and resubmit decisions have a combined letter detailing required changes. In this instance, the reviewers had considerable dialogue post review and pre-decision, so we have written a combined letter that contains our key points from the original reviews, revised after discussion.\n\nMajor comments:\n\n1) In Case Study I, most of the exposures studied are health states, rather than interventions. As has been discussed in the context of obesity (a health state), the causal question \"what is the effect of (a particular health state) on (a particular outcome)\" is incoherent, or at best incomplete; causal questions imply a specified (hypothetical) intervention that could be applied in a hypothetical randomized trial to change the health state in a particular way. If the intervention is not specified, then two hypothetical trials employing different interventions to achieve the same change in a patient's health state would potentially get different (even different signs of) results.\n\nThe most important implications of a lack of well-defined interventions are (1) that confounding can be hard to define when the way in which a variable is changed is unknown; (2) the practical utility of the estimate is limited since we do not know how to act upon it; and (3) when there are methods of changing the variable that have effects in different directions we are estimating a weighted average and may make the wrong conclusion. For an example of this 3rd issue, consider the exposure weight loss. Some individuals lose weight by diet and/or exercise and this is expected to improve their health status, but other individuals lose weight by developing cancer and this is expected to worsen their health status. If we don't know the relative frequency of these interventions then we might find that losing weight is harmful to overall health even though intentional weight loss via diet and exercise would be beneficial.\n\nTo take a key example for this paper, anemia on admission could be changed by (1) moving up the date of admission, presumably to an earlier time in the disease course \u2013 e.g. by active case finding and referral; (2) administering blood transfusions on admission; (3) administering drugs to stimulate red cell production on admission; (4) iron dietary supplements at the population level (pre-admission). Even if these were calibrated to achieve exactly the same mean change in hematocrit, (1) could be beneficial; (2) could be slightly harmful (as suggested by the slight increase in mortality in this study); (3) and (4) might go either way, depending on whether they protect the host more or enhance parasite replication more. Similarly, almost any of the other harmful states could be changed on admission by either earlier admission or changing treatment at admission, with potentially different effects. As a result, even if all confounding pathways were blocked, the interpretation of the resulting estimate would be as a weighted average of the effects of 1-4 (and any other possible methods of changing anemia) with unknown weights, making the answer uninterpretable for clinical or public health decision-making.\n\nBy this logic, the effects in Figure 4, with the exception of the treatment effect, are not the answers to well-posed causal questions and should be removed.\n\nWe note that both reviewers, who are knowledgeable about causal inference, acknowledge that the view taken here \u2013 that well-defined interventions are required for a well-posed causal question \u2013 is not universal in the field. Some have defended the use, for example, of race or sex as causes of disease outcomes, without a well-defined notion of how an intervention could change these. However, we make a distinction between effectively \"unalterable\" states (such as sex and race), about which controversy exists as to whether they can be considered in causal analyses, and readily alterable states (such as hematocrit) in which very straightforward alterations (transfusion, nutrition, earlier presentation) plausibly have opposite signs of effect. Here, using the machinery of causal inference to isolate the \"causal\" effect of hematocrit does not helpfully inform interventions, because the interventions might have the same or the opposite effect as suggested by the analysis. Besides this there were other concerns about the causal reasoning in Case Study I.\n\n2) It was not clear that the DAG in Figure 3 supports the authors conclusions about the identifiability of a causal effect of parasitemia as drawn \u2013 in the fifth paragraph of the subsection Case study 1: factors determining survival in \"severe malaria\", this is described as biased through an open path at immunity, while in the subsection \"Simulation study for case study 2\" as through an open path at anaemia. But, assuming that all the blue and green nodes represented measured covariates which can be adjusted for, there are no open backdoor paths from parasitemia to death through either immunity (the path becomes blocked again at anaemia) or anaemia itself (the open collider path is blocked at age). However, it is certainly reasonable that there exist other unmeasured common causes of anaemia or immunity (for example, the gene from case study 2 is not included in this DAG, nor are diet or other co-infections), and if those were included (or if some of the green or blue nodes especially age or AKI were not measured) there would indeed be an open backdoor path. Most common biases in real data analyses occur because of paths that involve unmeasured variables, so including unmeasured variables such as genes, diet, or coinfections as unknowns in your figure would also be useful for didactic purposes. Furthermore, it's not clear that it would be appropriate to condition on all the blue and green variables for exactly this reason \u2013 they are likely to be colliders and therefore conditioning can induce bias; and conditioning on them would remove some of the effect of parasitemia.\n\n3) If this paper is intended to be a tutorial for readers who have not had prior exposure to causal inference or directed acyclic graphs, the description of the assumptions required for these methods and their comparison to other approaches is insufficient. A simpler example would be more useful and the paper should probably include more detail on how to read the DAG to determine potential for bias. In general, a separate DAG should be drawn for each causal question \u2013 the DAG in Figure 3 contains many more variables than are necessary to estimate an effect of parasitemia (presuming we could define one sufficiently well), but does not include sufficient variables to estimate the effect of anti-malarial drugs except from a randomized controlled trial (and in that case has too many variables). Finally, it seems likely that a number of these variables have a cyclic / feedback relationship, in which case there may be time-varying exposure-confounder feedback which could exacerbate the problems of a lack of well-defined interventions.\n\n4) For Case Study II, it is hard to understand what was done in Clarke et al., the paper in eLife that they criticize. We can't tell on a brief look at that paper whether the comparison was between:\n\na) Severe malaria anemia (SMA) (+- cerebral malaria CM) vs. population controls, and separately CM+-SMA vs. population controls, for G6PD status (which would not suffer from the problem the authors posit);\n\nb) SMA only vs. population controls, and CM only vs. population controls (in which the CM only group would be depleted of those with SMA, and thus a risk factor for SMA would falsely look protective against CM only);\n\nc) SMA vs. CM among severe malaria (which appears to be the case for the DAG presented in Figure 7, though I'm not sure), which seems to be what the R code posted on GitHub assumes.\n\nThis needs to be clarified further before it can be evaluated.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted an appeal.]\n\nI and the reviewers have read and considered your letter of appeal, which makes a number of thoughtful points. After discussion among the reviewers, our view is as follows:\n\n1) The first half of the paper could be a focused effort to assess the evidence for the effectiveness of rapid transfusion in preventing malaria mortality, with causal machinery used to improve the credibility of this inference compared to more informal methods. Such a study would avoid attributing causal effects to state variables such as hematocrit or temperature or the like, and would focus on a well-defined intervention. Without resolving the philosophical question of whether causal questions can ever be asked without a well-defined intervention, it seems that in the context of acute malaria mortality, with an explicit justification in the introduction that the authors seek to inspire clinical studies, this is a reasonable constraint. If you resubmit a version with this issue, please also attend to the other issues raised by the second reviewer.\n\n2) The second half of the paper is really quite unrelated, except by the use of causal methodology, and while it seems to make a very important point, it does so in a way that is confusing in the sense that the back-story and evidence for what was done in previous studies is obscure. In my personal opinion, this seems to be a short paper of its own, where the history of prior studies needs to be presented in such a way that the reader can clearly tell what has been done, before the authors of the present manuscript explain why that is fallacious.\n\n3) There is a third, implicit purpose of the paper, which is to introduce the malaria clinical epi community to causal reasoning. This is in our view not ideally done by the first half of the paper, which is extremely complex and raises the issue of what is a causal question as well as the rather complicated mechanics of how to control for various confounders. The second half may be better suited to this purpose as it is simpler.\n\nWe can think of a few different ways you might proceed; a focused paper on the second part (which would seem appropriate for eLife given the publication of the prior paper in the journal); a tutorial paper that uses the second part as an example but is more generally about causal reasoning; or perhaps the full paper (in which case we would suggest switching the order of the parts because the G6PD piece is easier to understand so could naturally come first). This last possibility seems unwieldy for the same reasons as the original paper.\n\nYou are free to take or leave any of these suggestions, but this is how we see the paper. If you do split it up, we would suggest that the G6PD part (with or without surrounding tutorial material) would be of greatest interest to eLife given the prior publication. The mortality prediction part is a large and complex approach to a focused clinical question that might by itself be a very good paper for a more specialized journal.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Berkson's bias and the apparent protective effect of glucose-6-phosphate dehydrogenase deficiency on cerebral malaria\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Neil Ferguson as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis paper attributes findings of a protective effect of G6PD deficiency against cerebral malaria to a statistical/causal artifact known as Berkson's bias (though maybe not the orthodox version thereof) or more generally selection or collider bias. It uses argumentation and simulation to suggest that the problem is:\n\n1)G6PDd is a cause of increased risk of severe malarial anemia (SMA);\n\n2) Two prior studies compared cases with various forms of severe malaria, specifically SMA and CM, to community controls for the prevalence of G6PDd, and found it was higher than controls in SMA and lower than controls for CM. They concluded a likely causal protective effect of G6PDd on CM;\n\n3) The case definitions used were CM alone (i.e. no other severe malaria diagnosis) and SMA alone (i.e. no other severe malaria diagnosis. Under the assumption that CM and SMA risk are independent complications of malaria, and that G6PDd predisposes to SMA, this exclusion means that the CM cases in the analysis were SMA-free, thus less likely to have a predisposing allele to SMA. This would show up as a \"protective\" effect of the allele on CM because CM really means, in this study, CM and not SMA;\n\n4) Simulation shows this could account for the full effect.\n\nThe reviewers and reviewing editor have discussed the manuscript and believe it can be made acceptable for publication after some crucial but relatively minor revisions:\n\n1) Clarity about what was done. Reviewers had a hard time establishing precisely what was done in the two papers, and how that relates to the simulations. In particular, please:\n\na) State precisely the regression that was made in each paper [which we believe was Pr(CM and not SMA) vs. Pr (control), in logistic regression with G6PD genotype as predictor in a case-control format, and similarly for SMA and not CM) and quote the relevant passage in each paper that states the exclusion of dual cases.\n\nb) State that this is the same comparison (with certain simplifications e.g. males only) in the simulation.\n\n2) Address a reviewer concern that the statistical noise around the estimated OR looks large in your simulations given the use of 1 million people. This may be a false impression or may be due to the rarity of one cell in the odds ratio, but please explain.\n\n3) Address a reviewer concern that producing a close quantitative match to the biased odds ratio for CM is not easily interpretable given the simplifying assumptions notably males only \u2013 would that not change the value substantially so that the agreement becomes qualitative rather than quantitative? A simulation including females would be simple to do.\n\n4) Reviewers found point #1 confusing perhaps for several reasons, one of which is the use of Berkson's bias as the explanation here. Indeed, on first reading I had thought that the mistake was that the earlier papers had looked at predictors of SMA and CM among all severe malaria patients (without healthy controls). That would be classic Berkson's bias as taught in basic epidemiology classes. The bias you have identified is closely related, is still a form of collider bias, but is not exactly the same; it is that \"CM\" is really \"CM and not SMA\" and vice versa. The wording about Berkson's bias may just mislead people \u2013 maybe you want to say collider bias, and make clearer in the DAG how this works. Removing Berkson from the title could also clarify for those who only read the title!\n",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f7be0c70-f756-455b-956a-6bfdfc41b4ad",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C1",
+      "claim": "Case fatality rates in severe falciparum malaria depend on the pattern and degree of vital organ dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Case fatality rates in severe falciparum malaria depend on the pattern and degree of vital organ dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific data or citations provided in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "30317eb8-2467-41ce-addb-1442085c12d3",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C2",
+      "claim": "Recent large-scale case-control analyses of pooled severe malaria data reported that glucose-6-phosphate dehydrogenase deficiency (G6PDd) was protective against cerebral malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent large-scale case-control analyses of pooled severe malaria data reported that glucose-6-phosphate dehydrogenase deficiency (G6PDd) was protective against cerebral malaria but increased the risk of severe malarial anaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references findings from prior studies (Malaria Genomic Epidemiology Network et al., 2014; Clarke et al., 2017) that are being re-analyzed in this manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "8defb5db-d691-4e75-9383-efe18f55fd43",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C3",
+      "claim": "Recent large-scale case-control analyses of pooled severe malaria data reported that G6PDd increased the risk of severe malarial anaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent large-scale case-control analyses of pooled severe malaria data reported that glucose-6-phosphate dehydrogenase deficiency (G6PDd) was protective against cerebral malaria but increased the risk of severe malarial anaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references findings from prior studies that are being re-analyzed.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "12a16394-fe5b-4e19-b329-21eb53d629f5",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C4",
+      "claim": "A novel formulation of the balancing selection hypothesis was proposed whereby the selective advantage is driven by the competing risks of death from cerebral malaria and death from severe malarial anaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "A novel formulation of the balancing selection hypothesis was proposed as an explanation for these findings, whereby the selective advantage is driven by the competing risks of death from cerebral malaria and death from severe malarial anaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a hypothesis proposed in Clarke et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "eb42a0ba-9f78-4179-9f70-dbd664221dca",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C5",
+      "claim": "The claims about G6PDd being protective against cerebral malaria are subject to collider bias.",
+      "claim_type": "EXPLICIT",
+      "source": "We re-analysed these claims using causal diagrams and showed that they are subject to collider bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the current manuscript, supported by simulation analysis and causal diagrams presented in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "ada2cc15-ddc5-4720-badf-174627c40129",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C6",
+      "claim": "Collider bias is sufficient to explain all of the observed association between G6PDd and cerebral malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "A simulation based sensitivity analysis, varying the strength of the known effect of G6PDd on anaemia, showed that this bias is sufficient to explain all of the observed association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the simulation analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "72e039a4-b487-48c5-a78c-f02f78fd0a63",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C7",
+      "claim": "Severe falciparum malaria is defined by one or more criteria indicating vital organ dysfunction in the presence of microscopy confirmed asexual blood stages of Plasmodium falciparum in the peripheral blood film.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe falciparum malaria is defined by one or more criteria indicating vital organ dysfunction in the presence of microscopy confirmed asexual blood stages of Plasmodium falciparum in the peripheral blood film (WHO, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to WHO guidelines.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "96dc5885-bf6c-4189-bce8-58167d960a15",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C8",
+      "claim": "Multiple vital organ dysfunction is associated with increased mortality in severe malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple vital organ dysfunction is associated with increased mortality (WHO, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to WHO documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "f851f085-7af8-41cc-ae36-2a855ee7c404",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C9",
+      "claim": "Common major clinical manifestations of severe malaria include coma, acidosis, renal failure and anaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Common major clinical manifestations of severe malaria include coma, acidosis, renal failure and anaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "64978449-3540-4022-9189-5c29cca8ebc9",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C10",
+      "claim": "Anaemia is an inevitable consequence of symptomatic malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these manifestations, anaemia is an inevitable consequence of symptomatic malaria (White et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "c6a50ae5-ee2a-4cf8-8991-2cc729a70200",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C11",
+      "claim": "Anaemia in individuals at risk of Plasmodium falciparum infection can be the consequence of red cell genetic polymorphisms such as G6PDd or haemoglobinopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, anaemia in individuals at risk of Plasmodium falciparum infection can also be the consequence of red cell genetic polymorphisms frequent in the populations at risk, such as glucose-6-phosphate dehydrogenase deficiency (G6PDd) or haemoglobinopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about genetic factors affecting anaemia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "2cde9617-02de-416f-acf4-81473a31eeb5",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C12",
+      "claim": "There is considerable interest in understanding the mechanisms conferring protective effects against severe falciparum malaria of genetic polymorphisms common in malaria endemic areas.",
+      "claim_type": "EXPLICIT",
+      "source": "There is considerable interest in understanding the mechanisms conferring protective effects against severe falciparum malaria of the genetic polymorphisms which are common in malaria endemic areas (Weatherall, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "90240a1d-02fc-4f22-a953-bb803446aaa3",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C13",
+      "claim": "For sickle cell trait, several different protective mechanisms have been proposed including reduced parasite erythrocyte invasion, enhanced parasitised red cell phagocytosis and a reduced propensity of infected red cells to sequester in the microvasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "For some, such as the sickle cell trait, several different mechanisms have been proposed. These include reduced parasite erythrocyte invasion, enhanced parasitised red cell phagocytosis and a reduced propensity of infected red cells to sequester in the microvasculature (Malaria Genomic Epidemiology Network et al., 2014; Band et al., 2015; Cholera et al., 2008; Williams, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "95a42e8c-c7bf-4981-a161-d26af2b031b5",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C14",
+      "claim": "The mechanism underlying protection from severe falciparum malaria is less clear for G6PDd.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism underlying protection from severe falciparum malaria is less clear for others such as glucose-6-phosphate dehydrogenase deficiency (G6PDd).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "86ffcade-e11e-4321-91d9-00d5e2fadbd3",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C15",
+      "claim": "G6PDd is an X-linked genetic polymorphism that results in the most common human enzymopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "This X-linked genetic polymorphism results in the most common human enzymopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about G6PDd.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "f9a1283d-5961-4f9c-ae70-2133b2d9a15a",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C16",
+      "claim": "Nearly 200 different genetic variants of G6PD have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly 200 different genetic variants have been reported (Howes et al., 2012; Luzzatto and Arese, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "2dfff232-7882-4cd6-9771-fbf4feb9e864",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C17",
+      "claim": "The mechanism whereby G6PD deficiency protects against malaria is still debated.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism whereby G6PD deficiency protects against malaria, and the natural selection forces which have resulted in the different genotypes are still debated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an ongoing debate in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "0090e01a-7a1b-4c3e-bd60-9ead16071146",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C18",
+      "claim": "The natural selection forces which have resulted in the different G6PD genotypes are still debated.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism whereby G6PD deficiency protects against malaria, and the natural selection forces which have resulted in the different genotypes are still debated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an ongoing debate in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "57728cfb-f25b-4197-90cf-24cd26dc2866",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C19",
+      "claim": "Prospective observational hospital or clinic based patient studies have provided the major component of the evidence base for G6PD and malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Prospective observational hospital or clinic based patient studies have provided the major component of the evidence base.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the existing evidence base.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "4d19a34f-7de8-4114-b32c-67262053a76d",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C20",
+      "claim": "Estimating causal effects from observational studies in severe malaria patients is difficult due to both confounding and selection bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimating causal effects from observational studies in severe malaria patients is difficult due to both confounding and selection bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological challenge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "9efbc753-6abc-4184-997c-0b60e2caa320",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C21",
+      "claim": "The work focuses on collider bias introduced by inappropriate data filtering.",
+      "claim_type": "EXPLICIT",
+      "source": "This work focuses on collider bias introduced by inappropriate data filtering (Snoep et al., 2014; Pearce and Richiardi, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the stated focus of the manuscript, with citations to relevant methodological literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "d04b315f-4d6f-4d46-ae6a-9b4d642da181",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C22",
+      "claim": "Previous studies suggested that G6PDd both increases the risk of severe malarial anaemia (SMA) and decreases the risk of cerebral malaria (CM).",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that G6PDd both increases the risk of severe malarial anaemia (SMA) and decreases the risk of cerebral malaria (CM) (Malaria Genomic Epidemiology Network et al., 2014; Clarke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references findings from prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "2ac2fa90-d8a5-471b-add6-3e4ebac0d07f",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C23",
+      "claim": "The conclusions about G6PDd effects were based on a pooled analysis of observational data from over 11,000 patients with severe malaria studied in Africa and Asia, and relevant population controls.",
+      "claim_type": "EXPLICIT",
+      "source": "These conclusions were based on a pooled analysis of observational data from over 11,000 patients with severe malaria studied in Africa and Asia, and relevant population controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for the prior studies being re-analyzed.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "7034edf5-a6fd-410b-997a-78d07b807501",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C24",
+      "claim": "Based on genetic association studies, a new formulation of the balancing-selection hypothesis was proposed in which G6PD polymorphisms are maintained in human populations by an evolutionary trade-off between different adverse outcomes of P. falciparum infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these genetic association studies, a new formulation of the balancing-selection hypothesis was proposed in which G6PD polymorphisms are maintained in human populations, at least in part, by an evolutionary trade-off between different adverse outcomes of P. falciparum infection (Clarke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a hypothesis from Clarke et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "d97d1a3f-cb40-4294-8116-696bc319e7c0",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C25",
+      "claim": "Collider bias probably explains the negative association between G6PDd and CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Collider bias probably explains this negative association between G6PDd and CM, suggesting that causal interpretations of this association and the novel formulation of balancing selection in G6PDd are invalid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the manuscript, supported by the simulation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "6f0974a7-1095-41b3-8ad4-b060309921c9",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C26",
+      "claim": "Causal interpretations of the association between G6PDd and CM and the novel formulation of balancing selection in G6PDd are invalid.",
+      "claim_type": "EXPLICIT",
+      "source": "Collider bias probably explains this negative association between G6PDd and CM, suggesting that causal interpretations of this association and the novel formulation of balancing selection in G6PDd are invalid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "5b8e3720-0b74-4acf-850e-d2b8326faaa7",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C27",
+      "claim": "Two published analyses of pooled data from observational studies of patients with severe falciparum malaria used severe malarial anaemia (SMA) and cerebral malaria (CM) as the main endpoints.",
+      "claim_type": "EXPLICIT",
+      "source": "Two published analyses of pooled data from observational studies of patients with severe falciparum malaria used severe malarial anaemia (SMA) and cerebral malaria (CM) as the main endpoints (outcomes) of interest (Malaria Genomic Epidemiology Network et al., 2014; Clarke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "4b8633ca-7a61-489a-8a62-c27ee451b414",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C28",
+      "claim": "Both published analyses defined cases of CM as the presence of coma but without concomitant SMA.",
+      "claim_type": "EXPLICIT",
+      "source": "Both these published analyses defined cases of CM as the presence of coma but without concomitant SMA, and cases of SMA as patients with severe anaemia but who were conscious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the case definitions used in the prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "e24c3422-be22-478c-928c-aa07bfdbb4ec",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C29",
+      "claim": "Both published analyses defined cases of SMA as patients with severe anaemia but who were conscious.",
+      "claim_type": "EXPLICIT",
+      "source": "Both these published analyses defined cases of CM as the presence of coma but without concomitant SMA, and cases of SMA as patients with severe anaemia but who were conscious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the case definitions used in the prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "e1ab5af6-9e5d-46b7-9f40-d2957387a088",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C30",
+      "claim": "The case definitions excluded patients who had both SMA and CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these case definitions excluded patients who had both SMA and CM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the case definitions described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "aef68184-19d3-4ceb-a171-97128fa6946c",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C31",
+      "claim": "All other presentations of severe malaria were excluded (pulmonary oedema, shock, etc.).",
+      "claim_type": "EXPLICIT",
+      "source": "All other presentations of severe malaria were also excluded (pulmonary oedema, shock, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria of the prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "b99cc02a-4578-431e-a9c5-9db6c91f3bb4",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C32",
+      "claim": "Population controls were recruited at each site to match the ethnic composition of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Population controls were recruited at each site to match the ethnic composition of cases, and in some instances cord blood samples were used as controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control selection in the prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "4bd0ad4b-65e8-4dfb-9757-1881e22cc710",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C33",
+      "claim": "In some instances cord blood samples were used as controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Population controls were recruited at each site to match the ethnic composition of cases, and in some instances cord blood samples were used as controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control selection in the prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "66919d5e-0728-407f-af02-45fcd2d0f793",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C34",
+      "claim": "The consequence of these case definitions is to create an artificial dependency between SMA and CM: if a patient has SMA then they cannot have CM.",
+      "claim_type": "EXPLICIT",
+      "source": "The consequence of these case definitions is to create an artificial dependency between SMA and CM: if a patient has SMA then they cannot have CM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the case definitions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "146a4075-2279-41d1-8357-740611b18eea",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C35",
+      "claim": "G6PDd is known to influence haemoglobin concentrations directly by causing haemolysis of older erythrocytes in acute malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "G6PDd is known to influence haemoglobin concentrations directly by causing haemolysis of older erythrocytes in acute malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about G6PDd.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "9c83a12a-fd75-46ba-831f-59b15dbeb41e",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C36",
+      "claim": "It is to be expected that SMA is positively correlated with G6PDd, thus creating a negative correlation between CM and G6PDd.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore it is to be expected that SMA is positively correlated with G6PDd, thus creating a negative correlation between CM and G6PDd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the known effect of G6PDd on anaemia and the case definitions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "e3a495c9-7ad3-4cbf-888e-44ba4b1f8009",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C37",
+      "claim": "The mean G6PDd score was 13.5% in controls, 13% in cerebral malaria cases and 16.9% in severe malarial anaemia cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when all the G6PDd mutations were mapped onto the WHO severity classification score (Yoshida et al., 1971), it was observed that \"The mean G6PDd score was 13.5% in controls, 13% in cerebral malaria cases and 16.9% in severe malarial anaemia cases [..].\" (page 8, Clarke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from Clarke et al. (2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "e7d49f6e-7338-4642-956c-f0950b29e4ce",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C38",
+      "claim": "After exclusion of the G6PD c.202C > T mutation, the pattern of G6PDd scores remained consistent (6, 5.6, and 7.1%, respectively for controls, CM cases, and SMA cases).",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern remained consistent (6, 5.6, and 7.1%, respectively) after exclusion of the G6PD c.202C > T mutation (one of the 'A-' mutations and the most prevalent in the pooled data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from Clarke et al. (2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "938e957e-b3fb-432f-97f6-a460fa455b0a",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C39",
+      "claim": "By excluding patients with both SMA and CM (approximately 12% of those with either SMA or CM in the pooled data), the number of G6PDd patients in the CM category is artificially reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "By excluding patients with both SMA and CM (approximately 12% of those with either SMA or CM in the pooled data), the number of G6PDd patients in the CM category is artificially reduced and we would expect there to be fewer G6PDd patients than in the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the case definitions and the known effect of G6PDd on SMA.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "419a155c-81c0-495b-ad0a-abce07b65854",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C40",
+      "claim": "We would expect there to be fewer G6PDd patients in the CM category than in the control group due to the exclusion of patients with both SMA and CM.",
+      "claim_type": "EXPLICIT",
+      "source": "By excluding patients with both SMA and CM (approximately 12% of those with either SMA or CM in the pooled data), the number of G6PDd patients in the CM category is artificially reduced and we would expect there to be fewer G6PDd patients than in the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the case definitions and collider bias.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "c83daf54-1dfb-40da-b7c0-b9b4fcb18df7",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C41",
+      "claim": "Figure 1 proposes a simple causal diagram which posits plausible inter-dependencies limited to the variables of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1 proposes a simple causal diagram which posits plausible inter-dependencies limited to the variables of interest.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This refers to the causal diagram presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "9b06b479-4e4c-4aa2-a905-172d247f74c4",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C42",
+      "claim": "A simple simulation study based on the assumptions shown in Figure 1 can be used to estimate the relationship between G6PDd and SMA which would result in the observed odds ratio for G6PDd in CM cases versus controls.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple simulation study based on the assumptions shown in Figure 1 can be used to estimate the relationship between G6PDd and SMA which would result in the observed odds ratio for G6PDd in CM cases versus controls reported in Clarke et al. (2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the simulation methodology used in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "8bc58ff5-1054-4281-bc7e-f74847dc794f",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C43",
+      "claim": "The null model assessed assumes there is no direct causal link between G6PDd and CM in severe falciparum malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the null model in which there is no direct causal link between G6PDd and CM in severe falciparum malaria (i.e. no arrow from G6PD deficiency to CM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the null hypothesis tested in the simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "5fac0eb1-af11-4ba7-aa26-7e8ca5f7dfca",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C44",
+      "claim": "The simulation assumes there is no direct link between SMA and CM.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assume that there is no direct link between SMA and CM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption of the simulation model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "f29dc9bd-44ab-4191-828c-37d81072cb8d",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C45",
+      "claim": "The model was calibrated with the marginal probabilities of SMA and CM reported in Clarke et al. (2017).",
+      "claim_type": "EXPLICIT",
+      "source": "We calibrated the model with the marginal probabilities of SMA and CM reported in Clarke et al. (2017) and only varied the odds ratio of G6PDd in SMA cases versus controls from 1 (assuming no effect of G6PDd on SMA) to 2 (twice as likely to be G6PDd in the SMA cases than in the controls).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration of the simulation model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "c5d5046a-ade6-44c3-8a9e-b283eb731315",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C46",
+      "claim": "The analysis was restricted to males to avoid assumptions concerning gene dose effects.",
+      "claim_type": "EXPLICIT",
+      "source": "For simplicity (avoiding assumptions concerning gene dose effects) we restricted the analysis to males and only compare the simulation results with the reported associations in males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "6e629abc-ea1f-4f6a-9338-cb97297e54d0",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C47",
+      "claim": "If the odds ratio for G6PDd in SMA cases versus controls is strictly greater than 1, the estimated odds ratio for G6PDd in CM cases versus controls is biased.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 shows that if the odds ratio for G6PDd in SMA cases versus controls is strictly greater than 1, the estimated odds ratio for G6PDd in CM cases versus controls is biased (the thick red line is below the true simulated value of 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "bc5f1321-dc46-4394-ab78-2a6bee29fa2b",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C48",
+      "claim": "The magnitude of the bias in the estimated odds ratio for G6PDd in CM cases versus controls increases monotonically as the odds ratio for G6PDd in SMA cases versus controls increases.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of this bias increases monotonically as the odds ratio for G6PDd in SMA cases versus controls increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "b3b3f6bf-e451-40e1-b538-df9ed1c6eb39",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C49",
+      "claim": "There is no bias in the estimated odds ratio for G6PDd in SMA cases versus controls.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen from the causal diagram in Figure 1, there is no bias in the estimated odds ratio for G6PDd in SMA cases versus controls (in Figure 2 the thick blue line approximates the identity line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "ca654f50-d4f0-4c2c-a3f0-8b6c6d2943ac",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C50",
+      "claim": "For any value of the odds ratio for G6PDd in SMA cases versus controls taken inside the reported 95% confidence interval [1.2\u20131.8] from Clarke et al. (2017), the simulation will result in a biased odds ratio for G6PDd in CM cases versus controls inside the interval [0.69\u20130.98].",
+      "claim_type": "EXPLICIT",
+      "source": "This simple simulation model, restricted to males, shows that for any value of the odds ratio for G6PDd in SMA cases versus controls taken inside the reported 95% confidence interval (CI) [1.2\u20131.8] from Clarke et al. (2017), will result in a biased odds ratio for G6PDd in CM cases versus controls inside the interval [0.69\u20130.98], the reported 95% CI for G6PDd in CM cases versus controls (Clarke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "99d1ad41-f45f-49e8-ab2d-37cdaa2bc4bf",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C51",
+      "claim": "Using the reported point estimate of 1.48 for the odds ratio of G6PDd in SMA cases versus controls (restricted to males), the simulation model estimates that the observed (biased) odds ratio for G6PDd in CM cases versus controls is 0.87.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, if we use their reported point estimate of 1.48, restricted to males, for the odds ratio of G6PDd in SMA cases versus controls, the simulation model estimates that the observed (biased) odds ratio for G6PDd in CM cases versus controls is 0.87, qualitatively very close to their estimate of 0.82.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "21146ef7-5502-44ab-a1b3-7bad48e1a884",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C52",
+      "claim": "The simulated odds ratio of 0.87 is qualitatively very close to the Clarke et al. estimate of 0.82.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, if we use their reported point estimate of 1.48, restricted to males, for the odds ratio of G6PDd in SMA cases versus controls, the simulation model estimates that the observed (biased) odds ratio for G6PDd in CM cases versus controls is 0.87, qualitatively very close to their estimate of 0.82.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between simulation results and prior study findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "03e1e904-0cfd-480d-b92a-5fd5f460d3e2",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C53",
+      "claim": "The effect of G6PDd on severe anaemia in homozygous G6PDd girls and hemizygous G6PDd boys reported in Uyoga et al. (2015) was an odds ratio of 1.71 (95% CI: 1.34\u20132.18) for G6PDd in SMA cases versus controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the effect of G6PDd on severe anaemia in homozygous G6PDd girls and hemizygous G6PDd boys reported in Uyoga et al. (2015), an odds ratio of 1.71 (95% CI: 1.34\u20132.18) for G6PDd in SMA cases versus controls, is also consistent with these results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites data from Uyoga et al. (2015).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "ee8678e3-c716-46f0-ba1f-32e1364a20e1",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C54",
+      "claim": "The effect of G6PDd on severe anaemia reported in Uyoga et al. (2015) is consistent with the simulation results.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the effect of G6PDd on severe anaemia in homozygous G6PDd girls and hemizygous G6PDd boys reported in Uyoga et al. (2015), an odds ratio of 1.71 (95% CI: 1.34\u20132.18) for G6PDd in SMA cases versus controls, is also consistent with these results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference comparing external data to the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "a39fc53e-a9ce-4827-b26a-b102aeb71337",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C55",
+      "claim": "The re-analysis of recent reports that G6PDd reduced the risk of CM directly suggests that the observations could have resulted entirely from collider bias.",
+      "claim_type": "EXPLICIT",
+      "source": "This re-analysis of recent reports that G6PDd reduced the risk of CM directly (Malaria Genomic Epidemiology Network et al., 2014; Clarke et al., 2017) suggests that the observations could have resulted entirely from collider bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "968e7f9d-12e9-4f73-997b-9cace72f1cac",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C56",
+      "claim": "The findings highlight the difficulty of inferring causal relationships between baseline patient covariates and covariates which define inclusion criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights the difficulty of inferring causal relationships between baseline patient covariates (in this case G6PDd) and covariates which define inclusion criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general methodological conclusion from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "99e6ef11-2f5d-47c3-b6df-2896c8b33860",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C57",
+      "claim": "The necessary causal odds ratios for G6PDd in SMA cases versus controls which would give rise to the biased observed association between G6PD status and CM fit with the recent estimate of 1.71 in homozygous girls and hemizygous boys.",
+      "claim_type": "EXPLICIT",
+      "source": "The necessary causal odds ratios for G6PDd in SMA cases versus controls which would give rise to the biased observed association between G6PD status and CM fit with the recent estimate of 1.71 in homozygous girls and hemizygous boys (Uyoga et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing simulation results with external data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "a0068a4d-c187-4847-87c6-975f83b46f4a",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C58",
+      "claim": "The observations reported could have arisen purely as a result of the implicit collider bias induced by the selection of patients by the severe malaria criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not to say that the risk of CM is unaffected by G6PDd, but that the observations reported could have arisen purely as a result of the implicit collider bias induced by the selection of patients by the severe malaria criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "832e0680-9c5e-43df-8868-089093709846",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C59",
+      "claim": "All prospective observational severe malaria studies suffer from two major issues: case definitions are subjective and change over time, and mortality is strongly dependent on the case definition.",
+      "claim_type": "EXPLICIT",
+      "source": "All prospective observational severe malaria studies suffer from two major issues. First, case definitions are subjective and change over time (even though standard guidelines exist, see WHO (2015)) and mortality is strongly dependent on the case definition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general limitation of observational severe malaria studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "09ca70a4-f45f-4b54-9fff-ac4615af311b",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C60",
+      "claim": "Enrolment into severe malaria studies can only be done at the hospital or clinic level and neither duration of illness nor treatment seeking behaviour can be accounted for adequately.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, enrolment into studies can only be done at the hospital or clinic level and neither duration of illness nor treatment seeking behaviour can be accounted for adequately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general limitation of observational severe malaria studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "7cfb8e46-a858-4863-a55b-d8b0783e446d",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C61",
+      "claim": "The notion and definition of 'severe malaria' has two operational purposes: it is a clinical tool for appropriate triage of malaria patients at high risk of death, and it is a research tool for the evaluation of novel interventions seeking to reduce mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion and definition of 'severe malaria' has two operational purposes. First it is a clinical tool for appropriate triage of malaria patients at high risk of death. Second it is a research tool for the evaluation of novel interventions seeking to reduce mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the purposes of the severe malaria definition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "fe0091e7-70da-43cb-b17b-5e7f7e839779",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C62",
+      "claim": "Interventions aimed at reducing mortality need to be trialled in the most severely ill patients in order to demonstrate intervention efficacy in this important subgroup.",
+      "claim_type": "EXPLICIT",
+      "source": "Interventions aimed at reducing mortality need to be trialled in the most severely ill patients in order to demonstrate intervention efficacy in this important subgroup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for studying severe malaria patients.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "5e5c399a-2051-448f-8aaa-bdb21f943af8",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C63",
+      "claim": "Pooled analyses of severe malaria studies need to take into account the variability of study inclusion and exclusion criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooled analyses of severe malaria studies need to take into account the variability of study inclusion and exclusion criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "15846566-7c35-4ee7-a710-195058e89eca",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C64",
+      "claim": "Researchers must appreciate that severe malaria is not an objective category but a subjective case definition subset from a spectrum of severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers must appreciate that severe malaria is not an objective category but a subjective case definition subset from a spectrum of severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "1270a053-17c8-46b7-b978-46133aa7c2c8",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C65",
+      "claim": "Restricting analyses to specific patient subgroups, especially in the analysis of large pooled datasets, can have a considerable impact on the final result.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, restricting analyses to specific patient subgroups, especially in the analysis of large pooled datasets, can have a considerable impact on the final result (Gelman and Loken, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "a55f6972-35da-4fa0-8b0f-72edc28fa300",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C66",
+      "claim": "It would be very helpful if investigators could publish reproducible code alongside their analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "With increased emphasis on providing open access data so that analyses can be evaluated and best use made of clinical research it would be very helpful if investigators could publish reproducible code alongside their analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research practices.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "49340645-f9fb-4be1-82bf-2e72a215eccf",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C67",
+      "claim": "Future genetic epidemiological studies could benefit from use of causal diagrams.",
+      "claim_type": "EXPLICIT",
+      "source": "Future genetic epidemiological studies could benefit from use of causal diagrams and would be more readily evaluable by provision of accompanying code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research practices.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "5d4d37e7-4bc3-4f02-82e9-f1261d100d30",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C68",
+      "claim": "Future genetic epidemiological studies would be more readily evaluable by provision of accompanying code.",
+      "claim_type": "EXPLICIT",
+      "source": "Future genetic epidemiological studies could benefit from use of causal diagrams and would be more readily evaluable by provision of accompanying code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research practices.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "5c9e27e6-99b5-4ca9-8e3e-5e4f3e3dbe4f",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C69",
+      "claim": "The odds ratios for G6PDd in cases versus controls in males were 0.81 (95% CI: 0.68\u20130.96) for CM and 1.49 (95% CI: 1.24\u20131.79) for SMA in Malaria Genomic Epidemiology Network et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "The odds ratios for G6PDd in cases versus controls are given in Table 3 of Malaria Genomic Epidemiology Network et al. (2014) (page 1201). The results, restricted to males, are 0.81 (95% CI: 0.68\u20130.96) for CM and 1.49 (95% CI: 1.24\u20131.79) for SMA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites specific data from Malaria Genomic Epidemiology Network et al. (2014).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "97a15ef1-673e-4a5d-bf4c-d6c69cc7ebcc",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C70",
+      "claim": "A total of 6283 cases had cerebral malaria or severe malarial anaemia in the Malaria Genomic Epidemiology Network et al. (2014) study, broken down as 3345 had cerebral malaria only; 2196 had severe malarial anaemia only; 742 had both cerebral malaria and severe malarial anaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 6283 cases had cerebral malaria or severe malarial anaemia, broken down as 3345 had cerebral malaria only; 2196 had severe malarial anaemia only; 742 had both cerebral malaria and severe malarial anaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites specific data from Malaria Genomic Epidemiology Network et al. (2014).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "d8a3439b-1991-43a3-941c-c0c8d9ba07fd",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C71",
+      "claim": "The odds ratios for G6PDd in cases versus controls in males were 0.82 (95% CI: 0.69\u20130.98) for CM and 1.48 (95% CI: 1.22\u20131.8) for SMA in Clarke et al. (2017).",
+      "claim_type": "EXPLICIT",
+      "source": "The odds ratios for G6PDd in cases versus controls are given in Table 3 of Clarke et al. (2017) (page 6). In this publication, the results, restricted to males, are 0.82 (95% CI: 0.69\u20130.98) for CM and 1.48 (95% CI: 1.22\u20131.8) for SMA (their Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites specific data from Clarke et al. (2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "70f1a7a6-d0a5-4db7-84de-dffedb400d63",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C72",
+      "claim": "Clarke et al. (2017) included a total of 6284 patients with cerebral malaria or severe malarial anaemia, broken down as: 3359 individuals had cerebral malaria only; 2184 had severe malarial anaemia only; 741 had both cerebral malaria and severe malarial anaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "They included a total of 6284 patients with cerebral malaria or severe malarial anaemia, broken down as: 3359 individuals had cerebral malaria only; 2184 had severe malarial anaemia only; 741 had both cerebral malaria and severe malarial anaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites specific data from Clarke et al. (2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "66118fdc-befe-4afc-8615-81003c4ba779",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C73",
+      "claim": "The marginal probability of CM can be estimated as 0.34, independent of G6PD status.",
+      "claim_type": "EXPLICIT",
+      "source": "From the data in Clarke et al. (2017) and Malaria Genomic Epidemiology Network et al. (2014), we can estimate the marginal probability of CM as 0.34, independent of G6PD status (assumption 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter estimated from the prior studies for use in the simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "3b017ca4-5d85-4e90-ba2a-b777f83e5101",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C74",
+      "claim": "The marginal probability of SMA can be estimated as 0.24.",
+      "claim_type": "EXPLICIT",
+      "source": "We can also estimate the marginal probability of SMA as 0.24.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter estimated from the prior studies for use in the simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "df751722-5c41-4d70-9b3a-90650aa18b90",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C75",
+      "claim": "The probability of G6PDd in males was 0.15.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of G6PDd in males was 0.15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter estimated from the prior studies for use in the simulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "9e68b1ba-36e8-48b5-b2f4-161cf5044ff8",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C76",
+      "claim": "G6PD deficiency is the exposure of interest and cerebral malaria (CM) is the outcome of interest in the causal diagram.",
+      "claim_type": "EXPLICIT",
+      "source": "G6PD deficiency is the exposure of interest (green) and cerebral malaria (CM) is the outcome of interest (red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the causal diagram in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "4064ae5f-beea-4b0d-9374-74a61768b218",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "claim_id": "C77",
+      "claim": "By defining the CM cases as those who had coma but no severe anaemia, collider bias operates on the effect of G6PDd on CM.",
+      "claim_type": "EXPLICIT",
+      "source": "By defining the CM cases as those who had coma but no severe anaemia, collider bias operates on the effect of G6PDd on CM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the caption of Figure 1 explaining the collider bias mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "45ee95af-bcd0-4ae7-a1af-96f060be9276",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior studies (Malaria Genomic Epidemiology Network et al., 2014; Clarke et al., 2017) reported that G6PDd was protective against cerebral malaria (OR ~0.81-0.82) but increased risk of severe malarial anaemia (OR ~1.48-1.49) in males, based on pooled analysis of >11,000 patients. A balancing selection hypothesis was proposed based on these findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C22, C23, C69, C71 accurately cite the findings from prior studies with specific odds ratios and confidence intervals. Claims C70, C72 provide the sample sizes and breakdown of patient categories. Claim C24 correctly describes the hypothesis proposed by Clarke et al. (2017). These are well-documented citations of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "df51c66f-0ded-487a-9e1d-cc4764596f26",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The prior studies defined CM cases as patients with coma but without concomitant SMA, and SMA cases as patients with severe anaemia who were conscious, thereby excluding patients with both conditions (~12% of cases) and other severe malaria presentations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 accurately describe the case definitions used in the prior studies, which are critical to understanding the collider bias argument. The exclusion of patients with both SMA and CM (C30) is a logical inference from the mutually exclusive case definitions (C28, C29) and is supported by the data showing ~12% had both conditions (C39, C70, C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "4a6d6d6e-1c7b-4aee-8f8a-5486b952f294",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The mutually exclusive case definitions create an artificial dependency between SMA and CM. Since G6PDd causes haemolysis and increases SMA risk, excluding patients with both SMA and CM artificially reduces G6PDd patients in the CM category, creating a spurious negative association between G6PDd and CM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 present the logical argument for collider bias based on established knowledge about G6PDd's effect on haemolysis (C35). Claims C39-C40 apply this logic to the specific case definitions. Claim C77 summarizes the collider bias mechanism. The reasoning is sound and follows from the case definitions and known biological effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "2227f178-703e-44c5-9aaa-3992f37d7f1b",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A causal diagram (Figure 1) and simulation study were constructed to test whether collider bias alone could explain the observed associations. The null model assumed no direct causal link between G6PDd and CM, and no direct link between SMA and CM. The model was calibrated with marginal probabilities from prior studies and restricted to males.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 and C73-C76 describe the simulation methodology clearly. The causal diagram is presented in Figure 1, and the simulation parameters (C73-C75) are derived from the prior studies. The restriction to males (C46) is justified to avoid gene dose effect assumptions. The methodology is transparent and appropriate for testing the collider bias hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "bccf0dc2-d1e7-4aab-b968-4e875a48fe50",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The simulation showed that when the OR for G6PDd in SMA cases versus controls is >1, the estimated OR for G6PDd in CM cases versus controls is biased downward (below the true value of 1). Using the reported point estimate of OR=1.48 for SMA, the simulation produced an OR of 0.87 for CM, closely matching the observed 0.82.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 describe the simulation results shown in Figure 2. The quantitative agreement between simulated (0.87) and observed (0.82) odds ratios for CM (C51-C52) is compelling. The simulation demonstrates that the entire observed association can be explained by collider bias when realistic values for the G6PDd-SMA association are used (C50). The results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "a46c0ca5-791a-435e-b30b-dd9eeb99287e",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "External validation from Clarke et al. (2017) showed mean G6PDd scores of 13.5% in controls, 13% in CM cases, and 16.9% in SMA cases. Independent data from Uyoga et al. (2015) reported OR=1.71 for G6PDd in SMA cases, consistent with the simulation results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 cite specific data from Clarke et al. (2017) showing the pattern of G6PDd prevalence across groups. Claims C53-C54, C57 cite independent evidence from Uyoga et al. (2015) that is consistent with the simulation's required OR values. This external validation strengthens the collider bias explanation, though the Uyoga study used a different population (homozygous girls and hemizygous boys).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "fe8ca404-be3e-43c5-937e-42beb8ca6a43",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The main conclusion is that collider bias is sufficient to explain all of the observed protective association between G6PDd and CM, invalidating causal interpretations and the novel balancing selection hypothesis based on these associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C25, C55 state the main conclusion that collider bias explains the observed associations. The simulation results (C47-C52) demonstrate quantitative sufficiency. However, C26, C58 appropriately acknowledge that this does not prove G6PDd has no effect on CM risk, only that the observed association could arise entirely from bias. The conclusion is well-supported but appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "1721c5c3-f745-4748-b651-b08256ced7e9",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The findings highlight general methodological challenges in severe malaria research: difficulty inferring causal relationships when covariates define inclusion criteria, subjective and time-varying case definitions, inability to account for illness duration and treatment-seeking behavior, and the impact of patient subgroup selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C59-C60, C63-C65 describe broader methodological implications. These are reasonable generalizations from the specific collider bias example demonstrated in the paper. The limitations of observational severe malaria studies (C59-C60) are well-recognized in the field. The recommendation about pooled analyses (C63) follows logically from the demonstrated bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "2985d64d-ae05-4e74-b53d-9f049baf15c7",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors recommend that future genetic epidemiological studies use causal diagrams and publish reproducible code alongside analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are reasonable recommendations based on the demonstrated value of causal reasoning in this re-analysis. The authors practiced what they recommend by providing their simulation code. These are forward-looking suggestions rather than empirical findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    },
+    {
+      "id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b",
+      "content_id": "9af38134-fe48-4b9e-9b15-804353673ceb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establish that severe malaria case fatality depends on organ dysfunction patterns, G6PDd is a common X-linked enzymopathy with unclear protective mechanisms, anaemia is inevitable in symptomatic malaria but can also result from genetic polymorphisms, and observational studies face confounding and selection bias challenges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C21, C61-C62 provide background knowledge and context. These are appropriately cited or stated as established knowledge. They set up the rationale for the study but are not novel findings. The characterization of methodological challenges (C20) is accurate and relevant to the study's focus on collider bias (C21).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:18:40.043293Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "30317eb8-2467-41ce-addb-1442085c12d3",
+      "result_id": "45ee95af-bcd0-4ae7-a1af-96f060be9276"
+    },
+    {
+      "claim_id": "8defb5db-d691-4e75-9383-efe18f55fd43",
+      "result_id": "45ee95af-bcd0-4ae7-a1af-96f060be9276"
+    },
+    {
+      "claim_id": "d04b315f-4d6f-4d46-ae6a-9b4d642da181",
+      "result_id": "45ee95af-bcd0-4ae7-a1af-96f060be9276"
+    },
+    {
+      "claim_id": "2ac2fa90-d8a5-471b-add6-3e4ebac0d07f",
+      "result_id": "45ee95af-bcd0-4ae7-a1af-96f060be9276"
+    },
+    {
+      "claim_id": "7034edf5-a6fd-410b-997a-78d07b807501",
+      "result_id": "45ee95af-bcd0-4ae7-a1af-96f060be9276"
+    },
+    {
+      "claim_id": "5c9e27e6-99b5-4ca9-8e3e-5e4f3e3dbe4f",
+      "result_id": "45ee95af-bcd0-4ae7-a1af-96f060be9276"
+    },
+    {
+      "claim_id": "97a15ef1-673e-4a5d-bf4c-d6c69cc7ebcc",
+      "result_id": "45ee95af-bcd0-4ae7-a1af-96f060be9276"
+    },
+    {
+      "claim_id": "d8a3439b-1991-43a3-941c-c0c8d9ba07fd",
+      "result_id": "45ee95af-bcd0-4ae7-a1af-96f060be9276"
+    },
+    {
+      "claim_id": "70f1a7a6-d0a5-4db7-84de-dffedb400d63",
+      "result_id": "45ee95af-bcd0-4ae7-a1af-96f060be9276"
+    },
+    {
+      "claim_id": "5b8e3720-0b74-4acf-850e-d2b8326faaa7",
+      "result_id": "df51c66f-0ded-487a-9e1d-cc4764596f26"
+    },
+    {
+      "claim_id": "4b8633ca-7a61-489a-8a62-c27ee451b414",
+      "result_id": "df51c66f-0ded-487a-9e1d-cc4764596f26"
+    },
+    {
+      "claim_id": "e24c3422-be22-478c-928c-aa07bfdbb4ec",
+      "result_id": "df51c66f-0ded-487a-9e1d-cc4764596f26"
+    },
+    {
+      "claim_id": "e1ab5af6-9e5d-46b7-9f40-d2957387a088",
+      "result_id": "df51c66f-0ded-487a-9e1d-cc4764596f26"
+    },
+    {
+      "claim_id": "aef68184-19d3-4ceb-a171-97128fa6946c",
+      "result_id": "df51c66f-0ded-487a-9e1d-cc4764596f26"
+    },
+    {
+      "claim_id": "b99cc02a-4578-431e-a9c5-9db6c91f3bb4",
+      "result_id": "df51c66f-0ded-487a-9e1d-cc4764596f26"
+    },
+    {
+      "claim_id": "4bd0ad4b-65e8-4dfb-9757-1881e22cc710",
+      "result_id": "df51c66f-0ded-487a-9e1d-cc4764596f26"
+    },
+    {
+      "claim_id": "66919d5e-0728-407f-af02-45fcd2d0f793",
+      "result_id": "4a6d6d6e-1c7b-4aee-8f8a-5486b952f294"
+    },
+    {
+      "claim_id": "146a4075-2279-41d1-8357-740611b18eea",
+      "result_id": "4a6d6d6e-1c7b-4aee-8f8a-5486b952f294"
+    },
+    {
+      "claim_id": "9c83a12a-fd75-46ba-831f-59b15dbeb41e",
+      "result_id": "4a6d6d6e-1c7b-4aee-8f8a-5486b952f294"
+    },
+    {
+      "claim_id": "938e957e-b3fb-432f-97f6-a460fa455b0a",
+      "result_id": "4a6d6d6e-1c7b-4aee-8f8a-5486b952f294"
+    },
+    {
+      "claim_id": "419a155c-81c0-495b-ad0a-abce07b65854",
+      "result_id": "4a6d6d6e-1c7b-4aee-8f8a-5486b952f294"
+    },
+    {
+      "claim_id": "4064ae5f-beea-4b0d-9374-74a61768b218",
+      "result_id": "4a6d6d6e-1c7b-4aee-8f8a-5486b952f294"
+    },
+    {
+      "claim_id": "c83daf54-1dfb-40da-b7c0-b9b4fcb18df7",
+      "result_id": "2227f178-703e-44c5-9aaa-3992f37d7f1b"
+    },
+    {
+      "claim_id": "9b06b479-4e4c-4aa2-a905-172d247f74c4",
+      "result_id": "2227f178-703e-44c5-9aaa-3992f37d7f1b"
+    },
+    {
+      "claim_id": "8bc58ff5-1054-4281-bc7e-f74847dc794f",
+      "result_id": "2227f178-703e-44c5-9aaa-3992f37d7f1b"
+    },
+    {
+      "claim_id": "5fac0eb1-af11-4ba7-aa26-7e8ca5f7dfca",
+      "result_id": "2227f178-703e-44c5-9aaa-3992f37d7f1b"
+    },
+    {
+      "claim_id": "f29dc9bd-44ab-4191-828c-37d81072cb8d",
+      "result_id": "2227f178-703e-44c5-9aaa-3992f37d7f1b"
+    },
+    {
+      "claim_id": "c5d5046a-ade6-44c3-8a9e-b283eb731315",
+      "result_id": "2227f178-703e-44c5-9aaa-3992f37d7f1b"
+    },
+    {
+      "claim_id": "66118fdc-befe-4afc-8615-81003c4ba779",
+      "result_id": "2227f178-703e-44c5-9aaa-3992f37d7f1b"
+    },
+    {
+      "claim_id": "3b017ca4-5d85-4e90-ba2a-b777f83e5101",
+      "result_id": "2227f178-703e-44c5-9aaa-3992f37d7f1b"
+    },
+    {
+      "claim_id": "df751722-5c41-4d70-9b3a-90650aa18b90",
+      "result_id": "2227f178-703e-44c5-9aaa-3992f37d7f1b"
+    },
+    {
+      "claim_id": "9e68b1ba-36e8-48b5-b2f4-161cf5044ff8",
+      "result_id": "2227f178-703e-44c5-9aaa-3992f37d7f1b"
+    },
+    {
+      "claim_id": "6e629abc-ea1f-4f6a-9338-cb97297e54d0",
+      "result_id": "bccf0dc2-d1e7-4aab-b968-4e875a48fe50"
+    },
+    {
+      "claim_id": "bc5f1321-dc46-4394-ab78-2a6bee29fa2b",
+      "result_id": "bccf0dc2-d1e7-4aab-b968-4e875a48fe50"
+    },
+    {
+      "claim_id": "b3b3f6bf-e451-40e1-b538-df9ed1c6eb39",
+      "result_id": "bccf0dc2-d1e7-4aab-b968-4e875a48fe50"
+    },
+    {
+      "claim_id": "ca654f50-d4f0-4c2c-a3f0-8b6c6d2943ac",
+      "result_id": "bccf0dc2-d1e7-4aab-b968-4e875a48fe50"
+    },
+    {
+      "claim_id": "99d1ad41-f45f-49e8-ab2d-37cdaa2bc4bf",
+      "result_id": "bccf0dc2-d1e7-4aab-b968-4e875a48fe50"
+    },
+    {
+      "claim_id": "21146ef7-5502-44ab-a1b3-7bad48e1a884",
+      "result_id": "bccf0dc2-d1e7-4aab-b968-4e875a48fe50"
+    },
+    {
+      "claim_id": "e3a495c9-7ad3-4cbf-888e-44ba4b1f8009",
+      "result_id": "a46c0ca5-791a-435e-b30b-dd9eeb99287e"
+    },
+    {
+      "claim_id": "e7d49f6e-7338-4642-956c-f0950b29e4ce",
+      "result_id": "a46c0ca5-791a-435e-b30b-dd9eeb99287e"
+    },
+    {
+      "claim_id": "03e1e904-0cfd-480d-b92a-5fd5f460d3e2",
+      "result_id": "a46c0ca5-791a-435e-b30b-dd9eeb99287e"
+    },
+    {
+      "claim_id": "ee8678e3-c716-46f0-ba1f-32e1364a20e1",
+      "result_id": "a46c0ca5-791a-435e-b30b-dd9eeb99287e"
+    },
+    {
+      "claim_id": "99e6ef11-2f5d-47c3-b6df-2896c8b33860",
+      "result_id": "a46c0ca5-791a-435e-b30b-dd9eeb99287e"
+    },
+    {
+      "claim_id": "eb42a0ba-9f78-4179-9f70-dbd664221dca",
+      "result_id": "fe8ca404-be3e-43c5-937e-42beb8ca6a43"
+    },
+    {
+      "claim_id": "ada2cc15-ddc5-4720-badf-174627c40129",
+      "result_id": "fe8ca404-be3e-43c5-937e-42beb8ca6a43"
+    },
+    {
+      "claim_id": "d97d1a3f-cb40-4294-8116-696bc319e7c0",
+      "result_id": "fe8ca404-be3e-43c5-937e-42beb8ca6a43"
+    },
+    {
+      "claim_id": "6f0974a7-1095-41b3-8ad4-b060309921c9",
+      "result_id": "fe8ca404-be3e-43c5-937e-42beb8ca6a43"
+    },
+    {
+      "claim_id": "a39fc53e-a9ce-4827-b26a-b102aeb71337",
+      "result_id": "fe8ca404-be3e-43c5-937e-42beb8ca6a43"
+    },
+    {
+      "claim_id": "a0068a4d-c187-4847-87c6-975f83b46f4a",
+      "result_id": "fe8ca404-be3e-43c5-937e-42beb8ca6a43"
+    },
+    {
+      "claim_id": "968e7f9d-12e9-4f73-997b-9cace72f1cac",
+      "result_id": "1721c5c3-f745-4748-b651-b08256ced7e9"
+    },
+    {
+      "claim_id": "832e0680-9c5e-43df-8868-089093709846",
+      "result_id": "1721c5c3-f745-4748-b651-b08256ced7e9"
+    },
+    {
+      "claim_id": "09ca70a4-f45f-4b54-9fff-ac4615af311b",
+      "result_id": "1721c5c3-f745-4748-b651-b08256ced7e9"
+    },
+    {
+      "claim_id": "5e5c399a-2051-448f-8aaa-bdb21f943af8",
+      "result_id": "1721c5c3-f745-4748-b651-b08256ced7e9"
+    },
+    {
+      "claim_id": "15846566-7c35-4ee7-a710-195058e89eca",
+      "result_id": "1721c5c3-f745-4748-b651-b08256ced7e9"
+    },
+    {
+      "claim_id": "1270a053-17c8-46b7-b978-46133aa7c2c8",
+      "result_id": "1721c5c3-f745-4748-b651-b08256ced7e9"
+    },
+    {
+      "claim_id": "a55f6972-35da-4fa0-8b0f-72edc28fa300",
+      "result_id": "2985d64d-ae05-4e74-b53d-9f049baf15c7"
+    },
+    {
+      "claim_id": "49340645-f9fb-4be1-82bf-2e72a215eccf",
+      "result_id": "2985d64d-ae05-4e74-b53d-9f049baf15c7"
+    },
+    {
+      "claim_id": "5d4d37e7-4bc3-4f02-82e9-f1261d100d30",
+      "result_id": "2985d64d-ae05-4e74-b53d-9f049baf15c7"
+    },
+    {
+      "claim_id": "f7be0c70-f756-455b-956a-6bfdfc41b4ad",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "72e039a4-b487-48c5-a78c-f02f78fd0a63",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "96dc5885-bf6c-4189-bce8-58167d960a15",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "f851f085-7af8-41cc-ae36-2a855ee7c404",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "64978449-3540-4022-9189-5c29cca8ebc9",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "c6a50ae5-ee2a-4cf8-8991-2cc729a70200",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "2cde9617-02de-416f-acf4-81473a31eeb5",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "90240a1d-02fc-4f22-a953-bb803446aaa3",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "95a42e8c-c7bf-4981-a161-d26af2b031b5",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "86ffcade-e11e-4321-91d9-00d5e2fadbd3",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "f9a1283d-5961-4f9c-ae70-2133b2d9a15a",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "2dfff232-7882-4cd6-9771-fbf4feb9e864",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "0090e01a-7a1b-4c3e-bd60-9ead16071146",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "57728cfb-f25b-4197-90cf-24cd26dc2866",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "4d19a34f-7de8-4114-b32c-67262053a76d",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "9efbc753-6abc-4184-997c-0b60e2caa320",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "7cfb8e46-a858-4863-a55b-d8b0783e446d",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    },
+    {
+      "claim_id": "fe0091e7-70da-43cb-b17b-5e7f7e839779",
+      "result_id": "9c70e1b0-7f93-46b9-82cf-493a3c55559b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1860 @@
+{
+  "submission": {
+    "id": "2369f362-63fa-4759-be7b-721a49436288",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:16:21.691404Z",
+    "updated_at": "2025-12-02T11:16:21.691404Z"
+  },
+  "content": [
+    {
+      "id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "submission_id": "2369f362-63fa-4759-be7b-721a49436288",
+      "content_type": "manuscript",
+      "content_text": "# The distribution of fitness effects among synonymous mutations in a gene under directional selection\n\n## Authors\n\n- Eleonore Lebeuf-Taylor<sup>1</sup> ([ORCID: 0000-0001-9082-6049](https://orcid.org/0000-0001-9082-6049))\n- Nick McCloskey<sup>1</sup>\n- Susan F Bailey<sup>2</sup> ([ORCID: 0000-0002-2294-1229](https://orcid.org/0000-0002-2294-1229))\n- Aaron Hinz<sup>1</sup>\n- Rees Kassen<sup>1</sup> ([ORCID: 0000-0002-5617-4259](https://orcid.org/0000-0002-5617-4259)) \u2020\n\n### Affiliations\n\n1. Department of Biology University of Ottawa Ottawa Canada\n2. Department of Biology Clarkson University Potsdam United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe fitness effects of synonymous mutations, nucleotide changes that do not alter the encoded amino acid, have often been assumed to be neutral, but a growing body of evidence suggests otherwise. We used site-directed mutagenesis coupled with direct measures of competitive fitness to estimate the distribution of fitness effects among synonymous mutations for a gene under directional selection and capable of adapting via synonymous nucleotide changes. Synonymous mutations had highly variable fitness effects, both deleterious and beneficial, resembling those of nonsynonymous mutations in the same gene. This variation in fitness was underlain by changes in transcription linked to the creation of internal promoter sites. A positive correlation between fitness and the presence of synonymous substitutions across a phylogeny of related Pseudomonads suggests these mutations may be common in nature. Taken together, our results provide the most compelling evidence to date that synonymous mutations with non-neutral fitness effects may in fact be commonplace.\n\n## Introduction\n\nOur ability to use DNA sequence data to make inferences about the evolutionary process from genes or genomes often relies on the assumption that synonymous mutations, those that do not result in an amino acid change, are neutral with respect to fitness. Yet there is compelling evidence that this assumption is sometimes wrong: comparative (Lawrie et al., 2013) and experimental (Lind et al., 2010) data show that synonymous mutations can have a range of fitness effects from negative to positive, and can even contribute to adaptation (Bailey et al., 2014; Agashe et al., 2016; Kristofich et al., 2018; She and Jarosz, 2018). A range of mechanisms including codon usage bias, altered mRNA structure, and the creation of promoter sequences could lead to changes in the rate or efficiency of transcription, translation, and/or protein folding and/or expression that, in turn, impact fitness (Plotkin and Kudla, 2011). The specific mechanism notwithstanding, it is clear that synonymous mutations are not always neutral; however, the degree of variability in their fitness effects, and how often they contribute to adaptation, remains unknown.\n\nOur work focuses on testing fitness effects of synonymous mutations in a gene known to be under selection. Previous work by Bailey et al. (2014) reported the discovery of two spontaneous, highly beneficial synonymous mutations arising independently over the course of a selection experiment in gtsB, a gene that codes for a membrane-bound permease subunit of an ABC glucose-transporter in the Gram-negative bacterium Pseudomonas fluorescens SBW25. The gts operon is crucial to glucose uptake, as it encodes a four-protein system that binds glucose in the periplasm and actively transports it across the inner membrane. Knockouts of gtsB show that this particular gene, the second in the operon, is targeted by selection in an environment where low glucose limits growth (Bailey et al., 2014).\n\n## Results\n\nAs a first step towards understanding the evolutionary effects of synonymous mutations, we estimated the distribution of fitness effects (DFE) for 39 synonymous, 65 nonsynonymous, and six nonsense substitutions at 34 sites along gtsB. Single nucleotide mutants were generated through site-directed mutagenesis and competed against the ancestor strain in glucose-limited medium. We previously reported on two beneficial synonymous mutations in this gene recovered from a population that had evolved for\u00a0~1000 generations in glucose-limited medium and confirmed that gtsB is a target of selection under these conditions (Bailey et al., 2014). Visual inspection of the DFEs for nonsynonymous and synonymous mutations (Figure 1A) reveals they are similar, with both having modes close to neutrality (w\u00a0~\u00a01) and substantial variation that includes mutants with both positive and deleterious effects. However, the distributions differ significantly (p=0.0002 based on a bootstrapped estimate of the Kolmogorov-Smirnov D-statistic from 10,000 permutations) due to the presence of a handful of strongly deleterious nonsense mutations in the non-synonymous set that presumably produce a truncated, non-functional protein.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig1-v2.jpg)\n\n**Figure 1.:** (A) Counts of nonsynonymous (blue; n\u00a0=\u00a071) and synonymous (red; n\u00a0=\u00a039) mutations display a wide range of fitness effects, with ticks under the bars indicating the relative fitness values of nonsense mutations. Dashed and dotted lines show the mean relative fitness of the wild type (WT) competed against the marked competitor. (B) The DFE of beneficial-effect mutations (proportions; pooled synonymous and nonsynonymous samples, n\u00a0=\u00a055) is fit by a \u03ba value of \u22120.35, which corresponds to the Weibull domain of attraction of the Generalised Pareto Distribution. On this normalised histogram (total area\u00a0=\u00a01), relative fitness values are shifted to the smallest observed value and expressed as selection coefficients. See Figure 1\u2014source data 1.\n\nRemarkably, the DFEs for beneficial nonsynonymous and synonymous mutations are indistinguishable (bootstrapped K-S test, p=0.59), suggesting that both kinds of mutation could contribute to adaptation. The combined DFE for both kinds of beneficial mutations is approximately L-shaped, with many mutations of small effect and a few of large effect (Figure 1B), as expected from theory (Gillespie, 1984; Orr, 2003; Martin and Lenormand, 2008). More formally, the DFE among beneficial mutations is significantly different from an exponential distribution (likelihood ratio test, p=0.0077) and falls within the Weibull domain of the Generalised Pareto Distribution (K\u00a0=\u00a0\u22120.37), suggesting the existence of a local fitness optimum similar to what has been seen previously for nonsynonymous mutations (Rokyta et al., 2008; Schoustra et al., 2009).\n\nWhat cellular processes underlie the wide range of fitness effects observed here? Our fitness data allow us to test some of the leading hypotheses through in silico analyses. Fitness could be higher if synonymous mutations result in codon usage that is more closely aligned with that of highly expressed genes. Alternatively, it has been suggested that suboptimal codon usage within the first\u00a0~50 codons -- the translational ramp -- is required to ensure efficient translation initiation (Tuller et al., 2010; Navon and Pilpel, 2011), suggesting that higher fitness should be associated with the introduction of rarer codons close to the start of a gene. We could find no evidence for either explanation in our sample: a regression of fitness on distance from the start codon of gtsB was not statistically significant (permutation of residuals, p=0.20), nor was there a significant relationship between change in fitness and change in codon adaptation index (CAI; p=0. 40) or tRNA adaptation index (tAI; p=0.53), both measures of the degree of codon usage bias. This is perhaps unsurprising given that CAI is a gene-level codon usage metric, and a change in a single codon is unlikely to have a large effect on the overall CAI value for either the whole gene or a portion thereof. Notably, there is little evidence for a translational ramp in WT gtsB: the first 50 codons are not significantly enriched for rare codons (adj. R2\u00a0=\u00a00.0058, p=0.21); further, the interaction of codon position with CAI or tAI does not yield significant results (p=0.45 and 0.90, respectively).\n\nIt has also been suggested that synonymous mutations could impact fitness through their effects on mRNA transcript secondary structure and hence the rate and fidelity of translation. Higher fitness could result from faster translation due to transcripts that are less thermodynamically stable and, so, more accessible to the ribosome during translation (Kudla et al., 2009) or from more efficient translation due to more stable mRNAs that persist longer due to slower degradation rates (Deutscher, 2006). A linear model linking change in mRNA stability and fitness is significant for the nonsynonymous subset of mutations (permutation of residuals, p=0.0039), although the effect is weak (adj. R2\u00a0=\u00a00.11) and driven by less stable, highly deleterious mutations. We could not detect a relationship between change in mRNA stability and fitness for synonymous mutations, even when we account for the possibility of strong 5\u2019 end secondary structures by adding a position term reflecting distance from the start codon (Frumkin et al., 2017).\n\nThe absence of any relationship between synonymous mutation fitness and codon usage bias or mRNA stability, both measures affecting translation, suggests that fitness effects stem from changes in transcription. Testing this hypothesis requires comparing estimates of transcript and protein abundance, the difference being a measure of the effect of translation. We evaluated mRNA and GtsB protein levels by proxy via the insertion of a yellow fluorescent protein (YFP) bioreporter into the WT or mutant gtsB background just before or just after the stop codon. The former construct (a translational fusion) produces a single reading frame where gtsB and YFP are translated together; the latter, with YFP inserted after the gtsB stop codon (a transcriptional fusion), results in gtsB and YFP being translated separately (Figure 2A). A mutation upstream of these fusions that leads to increased translation, but not transcription, is expected to generate a higher YFP expression level in the translational fusion compared to the transcriptional fusion. The expression levels of these different constructs relative to the WT are shown in Figure 2A for the two synonymous mutations (A15A, G38G) and a third, independently evolved non-synonymous mutation (A10T) recovered from the original experiment by Bailey et al. (2014). Transcription is elevated in all three mutants relative to the WT but we could not detect any additional effect of translation in the two synonymous mutations, although there is a modest increase in expression associated with translation for the nonsynonymous mutation. These results suggest that these synonymous mutations primarily affect levels of transcription rather than translation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig2-v2.jpg)\n\n**Figure 2.:** (A) The schematic shows the sites of YFP insertion for transcriptional and translational fusions. The plot compares maximum YFP expression (\u00b1\u00a0SEM) from transcriptional and translational YFP fusions at the Tn7 site for the WT (n\u00a0=\u00a014 replicates) and evolved mutants (n\u00a0=\u00a07, 7, and six technical replicates, respectively). Significance with respect to transcriptional fusion: ***p<0.001. See Figure 2\u2014source data 1. (B) Linear regression of fluorescent signal of YFP transcriptional fusions as a proxy for transcript levels and relative fitness measures for a subset of synonymous mutations (n\u00a0=\u00a027). Grey shading indicates the 95% confidence interval for the regression (adjusted R2\u00a0=\u00a00.69, p<0.001). See Figure 2\u2014source data 2. (C) Expression of transcriptional YFP fusions inserted across the gts operon of evolved mutants. Maximum fluorescence (\u00b1\u00a0SEM) of the YFP transcriptional fusions at different loci in the gts operon relative to SBW25. See Figure 2\u2014source data 3; YFP fusion positions are depicted in Figure 2\u2014figure supplement 1. **p<0.01, ***p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig2-figsupp1-v2.jpg)\n\nTwo additional lines of evidence point to changes in transcription levels as the likely proximate cause of variation in fitness among our synonymous mutations. First, there is a strong positive relationship between transcript abundance and relative fitness for 27 synonymous mutations (including the A15A and G38G mutations examined above) (Figure 2B; R2\u00a0=\u00a00.691, p=1.46\u00d710\u22128). Notably, the range of the regression includes mutants with both negative and positive fitness effects, suggesting that the link between transcript abundance and fitness is not limited to beneficial synonymous mutations alone. Second, Figure 2C shows that the increased transcription caused by A15A, G38G, and A10T extends downstream to gtsC (p<5.0\u00d710\u22125) but not upstream to gtsA, which remains largely unaffected (p>0.60). These synonymous mutations thus have polar effects on transcription that extend beyond the gene in which they occur. Taken together with our previous observation that overexpression of WT gtsB increases fitness only when the rest of the gts operon is also overexpressed (Bailey et al., 2014), these results suggest that co-expression of downstream genes is necessary for increased fitness in this system.\n\nWhat mechanism accounts for the observed changes in transcription and fitness among the synonymous mutations? Previous work has shown that synonymous mutations can generate beneficial effects by creating novel promoters in regions upstream of a gene under selection (Ando et al., 2014; Kershner et al., 2016). At face value, this mechanism cannot explain our results since we observe a range of fitness effects for synonymous mutations along the entire length of gtsB. However, the existence of polar effects on transcription suggests that some synonymous mutations in gtsB might be playing a similar role by creating internal promoters causing changes in expression of the downstream genes gtsC or gtsD. To evaluate this idea, we used Softberry BPROM online software to search the entire gts operon for internal sigma 70 bacterial promoter sequences in the ancestral sequence and mutant sequences. We find relatively few hits in our collection, perhaps because BPROM searches for promoters using Escherichia coli rather than P. fluorescens consensus sequences; however, among the top five hits is a predicted promoter sequence spanning codons 30\u201342 that includes G38G and 39\u20133T, the latter being the synonymous mutation with highest fitness in our collection. Both mutations, and an additional beneficial synonymous mutation at 232\u20133T, result in predicted \u221210 promoter sequences that are more closely aligned to the \u221210 consensus sequence for P. aeruginosa (TATAAT) than the WT. Notably, there is a tendency for promoter strength to vary positively with both transcription and fitness (Figure 3A), although this effect is based on just six mutations and is not significant (permutation of residuals, p=0.17 and 0.11, respectively). These results suggest that fitness changes associated with these synonymous mutations could be caused by the ability of transcription factors to bind to promoter-like sequences in gtsB and alter transcription of downstream genes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig3-v2.jpg)\n\n**Figure 3.:** (A) Bars represent the mean of each variable in units relative to the WT. Experimental relative fitness and transcriptional expression of YFP measures include standard error. See Figure 3\u2014source data 1. (B) Locations of potential transcriptional start sites in the gts operon are represented by vertical arrows. 5\u2019 ends were identified by 5\u2019 RACE analysis of RNA isolated from cultures of the wild type (SBW25) and four gtsB mutants. The location of each gtsB mutation is indicated by a red line, and the nucleotide distance from each 5\u2019 end to the nearest start codon is given. See Figure 3\u2014source data 2; sequence information for the 5\u2019 RACE analysis is found in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The precise nucleotide positions of the 5\u2019 ends are highlighted yellow within the intergenic (pink) and coding sequences of gtsA (green), gtsB (blue), and gtsC (brown). Positions of gtsB mutations (A10T, A15A, G38G, and 232\u20133T) are in red text and underlined. Predicted promoter sites using Softberry\u2019s BPROM prediction software are highlighted grey.\n\nFurther support for this interpretation comes from mapping transcriptional start sites for the gts operon using a 5\u2019 RACE kit for the WT and four additional mutants: G38G and 232\u20133T (an introduced C \u2192 T mutation at the third site of codon 232), the sites identified as being among the top predicted promoters, as well as A10T and A15A which, along with G38G, were recovered from the original experiment in Bailey et al. (2014). The results are summarised in Figure 3B and Figure 3\u2014figure supplement 1. As expected, we found a transcriptional start site mapping 30 base pairs upstream of the gtsA start codon, 25 base pairs downstream of the predicted \u221210 box. Importantly, and consistent with the hypothesis that mutations in the coding region of gtsB can improve promoter binding for the RNA polymerase complex, we mapped transcription start sites 7 and 15 base pairs downstream of the predicted \u221210 box of the G38G internal promoter, four base pairs downstream of the A15A mutation, and 21 base pairs downstream of the A10T mutation. These results, taken together with an additional transcriptional start site 70 nucleotides upstream of 232\u20133T, suggest that synonymous mutations in gtsB may be strengthening weak internal promoters that were not detected by the available online prediction software. Note that the observation of transcriptional start sites at nucleotide positions near the start of gtsB in the WT likely reflects varying degrees of promoter binding strength for the sequences in this region and so is not incompatible with our hypothesis. We also identified transcriptional start sites mapping 19 and 57 base pairs upstream of the gtsB start codon within the intergenic space following gtsA, implying that gtsB may be under independent transcriptional control from gtsA.\n\nHow often do these synonymous mutations contribute to adaptation in more natural settings beyond the highly contrived conditions we have studied here? We can get part way towards an answer by asking whether fitness in vitro predicts prevalence of a mutation across a phylogeny of pseudomonads. We generated a phylogeny of 77 strains closely related to SBW25 and converted the probability of observing a given mutation to a binary variable based on its presence or absence in the phylogeny while accounting for evolutionary relatedness. For our entire synonymous and nonsynonymous sample, we find a positive relationship between the presence of a particular mutation in the phylogeny and its fitness in glucose-limited medium (Figure 4, p=0.0210). Notably, our highest fitness mutation, 39\u20133T, which is synonymous, arises independently multiple times across the phylogeny, even when common ancestry is taken into consideration. These results lend support to the idea that the variation in fitness effects observed here are not an idiosyncratic result of life in a laboratory environment. Rather, the synonymous mutations conferring the highest fitness effects may often contribute to adaptation in more complex, and more natural, environments as well.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig4-v2.jpg)\n\n**Figure 4.:** There was a significant logarithmic relationship between the probability of observing a given mutation as a binary variable (present/absent) and relative fitness (p=0.0121).\n\n## Discussion\n\nDespite mounting evidence to the contrary, the assumption that synonymous mutations are neutral remains deeply embedded in genetics. One need only look as far as the growing number of fitness landscape studies focusing on amino acid replacements which, by definition, involve only nonsynonymous substitutions (Wu et al., 2016; Bank et al., 2016), the exception being a recent study in yeast showing that most synonymous mutations have small or negligible effects on fitness (Fragata et al., 2018). By contrast, our work shows that the DFE among synonymous mutations in gtsB, at least, can be highly variable and include both deleterious and beneficial mutations. In fact, aside from the absence of strongly deleterious mutations associated with premature stop codons, the DFE of synonymous mutations in this gene is strikingly similar to that of nonsynonymous mutations and is formally indistinguishable from it if we consider only beneficial mutations. Taken together with the observation of a positive correlation between in vitro estimates of fitness of a given mutation, its prevalence among sequenced isolates, and previous evidence of adaptation via beneficial synonymous mutations (Bailey et al., 2014), these results suggest that synonymous mutations in this gene can, and sometimes do, contribute to adaptation.\n\nThe cause of the fitness variation among synonymous mutations observed here stems from changes to transcription that impact downstream genes in the same operon. Whether these transcriptional effects occur by changing an internal promoter sequence, as our data suggests, or through some other, still undiscovered mechanisms, remains to be elucidated. It is notable that promoter-associated effects on transcription have been shown to underlie the fitness effects of synonymous mutations in two other microbial systems (Ando et al., 2014; Kershner et al., 2016), suggesting this mechanism may be quite general, at least for organisms with operon-like genetic architectures. Nevertheless, others have pointed to changes in translational efficiency associated with the accessibility of mRNA near a start codon as the primary mediator of fitness in Salmonella enterica (Kristofich et al., 2018) and synonymous mutations are known to impact fitness in a wide range of organisms beyond prokaryotes (Lawrie et al., 2013; Cuevas et al., 2012; Kashiwagi et al., 2014). Uncovering the full spectrum of mechanisms by which synonymous mutations impact fitness, and how often they contribute to adaptation, remains a major task for the future.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Pseudomonas fluorescens)</td>\n      <td>SBW25; wild type</td>\n      <td>PMID: 8564013</td>\n      <td></td>\n      <td>Ancestral strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas fluorescens)</td>\n      <td>SBW25-lacZ</td>\n      <td>PMID: 17669526</td>\n      <td></td>\n      <td>SBW25 with neutral chromosomal lacZ insertion</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH5\u03b1 \u03bbpir</td>\n      <td>PMID: 11207743</td>\n      <td></td>\n      <td>E. coli cloning strain</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAH79 (plasmid)</td>\n      <td>PMID: 24912567</td>\n      <td></td>\n      <td>P. fluorescens allelic exchange vector</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>gtsB mutagenesis vector (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>pAH79 modified for Golden Gate Assembly of mutant gtsB alleles</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Pseudomonas fluorescens)</td>\n      <td>gtsB site-directed mutagenesis library</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Collection of gtsB single nucleotide mutants in SBW25 background</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pUC18T-mini-Tn7T-Gm (plasmid)</td>\n      <td>PMID: 15908923</td>\n      <td>GenBank: AY599232.2</td>\n      <td>Source of mini-Tn7T-Gm transposon</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pUC18T-mini-Tn7T-Gm-eYFP (plasmid)</td>\n      <td>PMID: 17406227</td>\n      <td>GenBank: DQ493879.2</td>\n      <td>Source of YFP</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Pseudomonas fluorescens)</td>\n      <td>Mini-Tn7 gtsB-YFP transcriptional fusions</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Transcriptional YFP fusions at SBW25 Tn7 site (see Figure 2A and B)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Pseudomonas fluorescens)</td>\n      <td>Mini-Tn7 gtsB-YFP translational fusions</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Translational YFP fusions at SBW25 Tn7 site (see Figure 2A)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Pseudomonas fluorescens)</td>\n      <td>gts operon YFP transcriptional fusions</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Transcriptional YFP fusions at sites within gts operon (see Figure 2C and Figure 2C\u2014figure supplement 1)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Culture conditions\n\nE. coli was grown on Luria-Bertani (LB), X-gal sucrose, or tetracycline media. Pseudomonas fluorescens SBW25, which was used as the ancestral strain, was grown on LB or X-gal minimal salts media (48 mM Na2HPO4, 22 mM KH2PO4, 9 mM NaCl, 19 mM NH4Cl, 2 mM MgSO4, 0.1 mM CaCl2) with glucose (53 \u03bcM), succinate (80 \u03bcM) or mannitol (53 \u03bcM) as indicated. Media were supplemented with 5-bromo-4-chloro-3-indolyl-b-D-galactopyranoside (X-gal) at 40 mg/ml. Antibiotics were used at the following concentrations: 100 \u03bcg/ml nitrofurantoin (Nf), 100 \u03bcg/ml ampicillin (Ap), 10 \u03bcg/ml tetracycline (Tc).\n\n### Molecular cloning\n\nPolymerase chain reactions (PCR) were performed with Phusion High-Fidelity DNA Polymerase (Thermo Fisher Scientific) using custom oligonucleotide primers (Invitrogen) and SBW25 genomic templates (Promega Wizard DNA Extraction Kit). PCR products were purified with the Wizard SV Gel and PCR Cleanup System (Promega). Plasmid DNA was isolated from E. coli cultures using the QIAprep Spin Miniprep Kit (Qiagen). Restriction endonucleases and T4 DNA ligase were purchased from New England Biolabs.\n\nGolden Gate assembly reactions (Engler et al., 2008) contained approximately equimolar amounts (~20\u201340 fmol) of destination vector and purified PCR products, 1 \u03bcl of 10X T4 ligase buffer, 0.5 \u03bcl (200 units) of T4 ligase, and 0.5 \u03bcl (10 units) of BsaI enzyme in 10 \u03bcl reactions, with incubation for 2 hr at 37\u00b0C, 5 min at 50\u00b0C, and 5 min at 80\u00b0C. Traditional restriction enzyme cloning was performed according to standard protocols, with separate digestion of vector and insert DNA (2 hr at 37\u00b0C) followed by spin column purification and overnight ligation at 16\u00b0C. Ligation reactions were transformed into chemically-competent E. coli DH5\u03b1 \u03bbpir by the Inoue method (Sambrook et al., 1989).\n\n### Construction of gtsB mutagenesis vector\n\nThe P. fluorescens allelic exchange vector pAH79 (Bailey et al., 2014) was modified for rapid generation of mutant gtsB alleles by Golden Gate assembly (GGA) of polymerase chain reaction (PCR) amplicons. A three-part ligation between a digested pAH79 derivative (BglII and SpeI), lacZ\u03b1 amplicon (BglII and MfeI), and SBW25 amplicon spanning 114 to 865 bp downstream of the gtsB stop codon (MfeI and XbaI) yielded the final gtsB mutagenesis vector. The vector includes two BsaI cloning sites compatible for Golden Gate assembly of PCR products amplified with primers F2-gtsB-F and R3-gtsB-R (Table 1) in combination with mutagenic primers (Tables S1 and S2 in Supplementary file 1).\n\n**Table 1.**\n Oligonucleotides used in this study.Restriction enzyme recognition sequences are capitalised.\u00a0BsaI overhangs are underlined. Introduced mutations are in bolded capital letters. Additional oligonucleotides used for site-directed mutagenesis are listed in Tables S1 and S2 of Supplementary file 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Sequence (5\u2019 to 3\u2019)</th>\n      <th>Function</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>F2-pUC19-BsaI</td>\n      <td>gcgAGATCTgtcgtGAGACCggtgatgacggtgaaaacct</td>\n      <td>gtsB mutagenesis vector construction</td>\n    </tr>\n    <tr>\n      <td>R3-pUC19-MfeI-SpeI</td>\n      <td>actgcgACTAGTCAATTGattaatgcagctggcacgac</td>\n      <td>gtsB mutagenesis vector construction</td>\n    </tr>\n    <tr>\n      <td>F-800Right</td>\n      <td>actgcgCAATTGagaccccggaagacatcag</td>\n      <td>gtsB mutagenesis vector construction</td>\n    </tr>\n    <tr>\n      <td>R-800Right</td>\n      <td>actgcgTCTAGAcattgcgaagttcaagcgta</td>\n      <td>gtsB mutagenesis vector construction</td>\n    </tr>\n    <tr>\n      <td>F2-gtsB-F</td>\n      <td>actgcgGGTCTCagtcgaaaagtcgcgacctacatgg</td>\n      <td>Conserved gtsB forward primer</td>\n    </tr>\n    <tr>\n      <td>R3-gtsB-R</td>\n      <td>actgcgGGTCTCctgccggaCaccacggtcggccagctc</td>\n      <td>Conserved gtsB reverse primer</td>\n    </tr>\n    <tr>\n      <td>4845-M13F</td>\n      <td>GTAAAACGACGGCCAGTTCCGACAGGCTGTAGTCCTT</td>\n      <td>gtsB sequencing primer</td>\n    </tr>\n    <tr>\n      <td>R2-M13R-gtsB</td>\n      <td>GGAAACAGCTATGACCATGTGGTCCTCAGCTCGGAATA</td>\n      <td>gtsB sequencing primer</td>\n    </tr>\n    <tr>\n      <td>SP1</td>\n      <td>ACCACACCGAACAGGAAGTC</td>\n      <td>5\u2019 RACE cDNA synthesis</td>\n    </tr>\n    <tr>\n      <td>B-SP2</td>\n      <td>ACTGCGTCTAGAGACCAAGGTGATACCGATAAACA</td>\n      <td>5\u2019 RACE gtsB amplification</td>\n    </tr>\n    <tr>\n      <td>B-SP3</td>\n      <td>ACTGCGTCTAGACGAACAAGGCCAGGTTTTT</td>\n      <td>5\u2019 RACE gtsB amplification</td>\n    </tr>\n    <tr>\n      <td>A-SP2</td>\n      <td>ACTGCGTCTAGATTTCTTGTCGAGCAGGGAGT</td>\n      <td>5\u2019 RACE gtsA amplification</td>\n    </tr>\n    <tr>\n      <td>A-SP3</td>\n      <td>ACTGCGTCTAGATTCTTCTTTGGCGACGTCTT</td>\n      <td>5\u2019 RACE gtsA amplification</td>\n    </tr>\n  </tbody>\n</table>\n\n### Site-directed mutagenesis of gtsB\n\nSite-directed mutagenesis of gtsB (PFLU4845) was accomplished by cloning gtsB alleles with a single mutation into the mutagenesis vector described above, generating an E. coli library, followed by allelic replacements in SBW25. Primers (Supplementary file 1) were designed to introduce mutations at 112 sites spanning the gtsB gene, at every tenth codon along the gene and saturating the sites neighbouring three previously identified beneficial mutations. Sequences from 715 base pairs upstream to 173 base pairs downstream of gtsB were amplified as two PCR fragments, one of which contained a threefold degenerate polymorphism introduced by a mutagenic primer. BsaI recognition sequences were included in each primer to enable seamless ligation between the PCR products and mutagenesis vectors using GGA (Engler et al., 2008). Cloning reactions were transformed into E. coli DH5\u03b1 \u03bbpir with selection on ampicillin.\n\nTransformations yielded libraries of E. coli strains for introduction of mutations into SBW25. Recombination of each mutant gtsB allele into the chromosome was selected for in two steps: selection for TcR followed by selection for sucrose resistance as previously described (Bailey et al., 2014). We used an SBW25 recipient strain in which the native gtsB was replaced by lacZ, allowing us to use blue-white screening on LB 5% sucrose X-gal agar to identity recombinants in which lacZ was replaced by the vector-encoded mutant gtsB. The sucrose-resistant white colonies were used as PCR templates for amplification of the gtsB locus using an M13F-tagged primer (Table 1), for sequencing by the McGill University and Genome Quebec Innovation Centre.\n\n### DNA extraction and whole genome sequencing\n\nStrains were grown in LB liquid media overnight; genomic DNA was extracted using the QIAGEN DNeasy Blood and Tissue Kit. Sequence data were generated on the Illumina MiSeq platform with paired-end reads using the Nextera XT kit. Reads generated were approximately 300 bp in length.\n\n### Reference-based mapping and variant calling\n\nThe genome of P. fluorescens SBW25 is publicly available from NCBI (PRJEA31229). A modified version of the bioinformatics pipeline described in Dettman et al. (2012) was used to analyse the reads. Briefly, reads were trimmed using Popoolation (ver. 1.2.2; Kofler et al., 2011) with a Phred quality threshold of 20 and a minimum retention length of 75% of original read length. Trimmed reads were then mapped to the SBW25 reference genome using Novoalign (ver. 3.02.08, www.novocraft.com). Single nucleotide polymorphisms and indels were annotated using Samtools (ver. 1.9; Li et al., 2009), BCFtools (ver. 1.9), VarScan (ver. 2.3.7; Koboldt et al., 2012), and snpEff (ver. 4.0; Cingolani et al., 2012). Read and alignment quality were assessed using FastQC (ver. 0.11.7 www.bioinformatics.babraham.ac.uk/projects/fastqc/). Sequence data are available from the NCBI Short Read Archive under BioProject PRJNA515918: Pseudomonas fluorescens SBW25 gtsB mutants.\n\n### Competitions\n\nCompetitions were performed as outlined in Lenski et al. (1991) on four to six replicates (genetically identical clones) of 110 mutant strains. This method encompasses all growth phases of bacterial culture, including lag and exponential growth. These replicates provide a measure of the variability inherent in our experimental procedure, and are\u00a0thus considered technical replicates. All strains, including SBW25-lacZ, were removed from storage at \u221280\u00b0C and grown overnight at 28\u00b0C on LB agar. Single colonies were inoculated into 2 mL LB broth for overnight incubation at 28\u00b0C under shaking conditions. Each mutant strain was transferred into minimal glucose media for a 24 hr acclimation period at 28\u00b0C, then mixed in a 1:1 volumetric ratio with SBW25-lacZ and inoculated into 2 mL of minimal media with glucose. Initial and final aliquots from mixed cultures were frozen in 20% glycerol after 1 and 24 hr\u2019 growth and plated on minimal agar with glucose. Only plates containing 30 or more colonies of each strain were included. Relative fitness was calculated using w = (ffinal/finitial)^(1/doublings), where ffinal and finitial are ratios of the frequency of mutant to the frequency of SBW25-lacZ strain after and before the competition. The number of doublings was estimated from the dilution factor and corresponded to\u00a0~6.7 or 13.2 generations depending on the dilution factor. The effect of the lacZ marker was tested by competing SBW25-lacZ against the WT with each batch of competitions. The mean relative fitness of SBW25-lacZ was 1.005\u00a0\u00b1\u00a00.0007 SEM.\n\n### Estimating codon preference and mRNA stability\n\nIn order to estimate the change in codon bias attributable to each synonymous mutation, we compared the CAI value of the mutant to the WT using SBW25 ribosomal protein genes as a reference (Sharp and Li, 1987). The \u2018cai\u2019 function in the \u2018seqinr\u2019 package in R (Charif and Lobry, 2007) was used to calculate change in CAI at each site. tAI values were calculated by inputting tRNA gene copy number, a proxy for tRNA expression (Tuller et al., 2010), in the stAIcalc interface (Sabi et al., 2017). As per previous work (Kudla et al., 2009), we predicted the most likely folding energy of 42-nucleotide windows centred on each mutation using the \u2018mfold\u2019 server (Zuker, 2003).\n\n### Comparison and characterisation of DFEs\n\nAll statistical analyses were conducted in R Studio (version 1.0.136; www.rstudio.com). Six nonsense mutations were omitted from our analysis, since they likely do not result in a complete protein. We compared synonymous and nonsynonymous DFEs for all mutations and for the subset of beneficial mutations by bootstrapping the Kolmogorov-Smirnov (K-S) statistic. We found no significant difference between K-S values for nonsynonymous and synonymous beneficial mutations, so we pooled the data to infer the properties of the tail distribution following the method outlined in Beisel et al. (2007). Relative fitness values were transformed to selection coefficients by subtracting 1; we shifted the threshold to the smallest observed selection coefficient, as suggested by Beisel et al.\u00a0(2007). Using the \u2018GenSA\u2019 package in R, we estimated the optimal value of the scale parameter \ud835\udf0f, which characterises the stretch of the distribution, with \u03ba (the tail parameter) set to 0, corresponding to an exponential distribution; in the alternative model, optimal \ud835\udf0f and \u03ba values were calculated without restricting \u03ba. A likelihood ratio test was used to determine whether the model with the unconstrained \u03ba value was a better fit than the exponential distribution.\n\n### Statistical analysis\n\nPermutation of residuals was used as per Still and White (1981) to test for significant relationships between explanatory variables and fitness. We tested for significant differences in YFP expression between mutant and WT alleles using a two-tailed T-test assuming equal variance. Threshold for significance was \u03b1\u00a0=\u00a00.05.\n\n### Transcriptional and translational fusion of YFP at Tn7 site\n\nTranscriptional and translational fusion constructs were generated using GGA (Engler et al., 2008) and the use of site-specific mini-Tn7 transposon and yellow fluorescent protein (YFP) sequences (Choi et al., 2005; Choi and Schweizer, 2006). A 2.6 kb PCR product was amplified from genomic template DNA containing the target locus, and included the 346 bp promoter region of gtsA, the open reading frame of gtsA and the open reading frame of gtsB. This PCR product and the downstream YFP fusion PCR product were seamlessly ligated together into a derivative of the Tn7 vector pUC18T-mini-Tn7T-Gm through GGA.\n\nThe YFP transcriptional fusion after gtsB required additional modifications due to the eight nucleotide overlap between the stop codon of gtsB and start codon of gtsC. To preserve the gtsB sequence and predicted gtsC ribosomal binding site, the start codon of the YFP transcriptional fusion was inserted in-frame after the first four codons gtsC. Translational YFP fusions had a 6-glycine ((GGC)6) linker sequence (Chen et al., 2013) between the second-last codon (302) of gtsB and the second codon of YFP, which removed both the stop codon of gtsB and start codon of YFP to create a single peptide. The 3\u2019 UTR of both the transcriptional and translational YFP fusions includes an intrinsic transcriptional terminator. Tn7 vectors were transformed into E. coli DH5\u03b1 \u03bbpir following the Inoue method, then incorporated into SBW25 and verified as described in Bailey et al. (2014).\n\n### YFP transcriptional fusions at the native gts operon\n\nYFP transcriptional fusions across the gts operon were constructed using an allelic replacement strategy similar to the site-directed mutagenesis method described above. YFP sequences were PCR amplified from a YFP storage vector, and sequences upstream and downstream of the desired YFP insertion locus were amplified from SBW25 template DNA as two PCR products ranging from 400 to 900 base pairs in length. Upstream PCR products included predicted native ribosomal binding sites to enable YFP translation. Forward and reverse primers for all PCR products were engineered with BsaI recognition sites to allow for 4-part seamless ligation by GGA (Engler et al., 2008) of the YFP PCR product and upstream and downstream flanking PCR products to an GGA allelic replacement vector derived from pAH79 (Bailey et al., 2014). YFP fusions were transformed into E. coli DH5\u03b1 \u03bbpir and recombined into P. fluorescens SBW25 by two-step allelic replacement as previously described (Bailey et al., 2014). Fusion junctions and gtsB mutations were confirmed through diagnostic PCR and Sanger sequencing.\n\n### Glucose induction assays\n\nCultures were inoculated from individual colonies (biological replicate) and grown shaking at 28\u00b0C in 200 \u03bcL minimal (M9) media supplemented with 25.6 mM of succinate as the sole carbon source. After 24 hr of growth, 20 \u00b5L of culture was transferred to 180 \u00b5L of minimal (M9) media supplemented with 212 \u03bcM glucose in a transparent 96 well plate. The 96 well plate was incubated for 10 hr static at 28\u00b0C in a Tecan Infinite M200 Pro fluorescent plate reader where optical density (OD) and fluorescence measurements were taken every 10 min. OD was measure by absorbance at 595 nm wavelength and fluorescence was measured with 500 nm excitation and 535 nm emission wavelengths. The maximum fluorescence was calculated as the maximum YFP signal (~7 hr), subtracted by the background fluorescence of unmarked SBW25 and then standardised by dividing by the blank corrected OD. Maximum fluorescence values were then divided by the ancestral SBW25 values to determine relative effect sizes.\n\n### RNA isolation and identification of transcriptional start sites\n\nIsolated colonies were cultured in 1.7 mL of M9 media supplemented with 25.6 mM succinate and incubated overnight at 28\u00b0C shaking. Vials with 7.2 mL of M9 media supplemented with 212 \u03bcM glucose were inoculated with 800 \u03bcL of culture and incubated at 28\u00b0C shaking. OD600 was measured every 15 min and cells were harvested at mid-log phase (2 hr) by centrifugation at 6770 x g for 10 min at 4\u00b0C. Pellets were resuspended in 500 \u03bcL M9 media and treated with RNAprotect Bacteria Reagent (Qiagen). RNA was isolated using RNeasy Mini Kit (Qiagen) with additional DNase treatment with RNase-free DNase Set (Qiagen). RNA concentration was quantified using NanoDrop 2000 Spectrophotometer (Thermo Scientific). cDNA synthesis, cDNA purification and poly(A) tailing were completed using 5\u2019/3\u2019 Random Amplification of cDNA ends (RACE) kit, 2nd generation (Roche) and Wizard SV Gel and PCR Clean-Up System (Promega). First strand gts operon cDNA was generated using primer SP1 and cDNA was amplified using Phusion High-Fidelity DNA Polymerase (Thermo Fisher Scientific). First and second rounds of amplification of dA-tailed cDNA used primers B-SP2 and B-SP3 for gtsB an A-SP2 and A-SP3 for gtsA respectively (see Table 1 for primer sequences). 2nd round amplification products were run on 2% agarose gel and expected bands (150\u2013400 base pairs) were excised and purified using Qiaquick Gel Extraction Kit (Qiagen). DNA fragments were digested with SalI-HF and XbaI and cloned into a pUC19 vector using T4 DNA Ligase (NEB). Inserted DNA fragments were sequenced using Sanger sequencing to identify possible transcriptional start sites in gtsA and gtsB. Sequences were aligned to the gts operon using CodonCode Aligner.\n\n### Phylogeny construction\n\nA phylogeny was constructed using full DNA sequences of rpoB, rpoD, and gyrB for 77 closely related Pseudomonas strains obtained from NCBI, as per Gomila et al. (2015). The concatenated sequences were aligned using NCBI\u2019s BLAST. MEGA7 (Kumar et al., 2016) was used to build the tree based on the aligned concatenated sequences using maximum likelihood to generate a bootstrapped consensus tree (n\u00a0=\u00a0500). For each site in the gtsB alignment, maximum parsimony was used to estimate the ancestral state at all internal nodes in the phylogeny with the function \u2018ancestral.pars\u2019 from the phangorn package in R (Schliep, 2011). As our phylogeny had polytomies, the ancestral states were estimated for 100 randomly resolved bifurcating phylogenies and the frequency of the inferred ancestral state at each internal node was calculated. For each site in gtsB, the number of evolutionary events was calculated by comparing the inferred state at the beginning and end of each branch and counting the number of transitions. A binary model was fit expressing whether mutations of interest were observed in the phylogeny.\n",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "ad42bca3-d572-4f1d-9f1c-a8ff8e7d9759",
+      "submission_id": "2369f362-63fa-4759-be7b-721a49436288",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian R Landry, Universit\u00e9 Laval Canada\n\nReviewers:\n- Sandeep Venkataram, University of California, San Diego United States\n\n## Review text\n\nDOI: [10.7554/eLife.45952.024](https://doi.org/10.7554/eLife.45952.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The distribution of fitness effects among synonymous mutations in a gene under selection\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Sandeep Venkataram (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis is a very interesting paper and a potentially important contribution to the field of evolution. The study provides a significant contribution to our knowledge of the fitness effects of synonymous variants and uncovers possible mechanisms of action of adaptive synonymous mutations. The reviewer's comments are summarized here.\n\n1) As the authors state, the fitness changes associated with synonymous mutations could be caused by TF binding capacity. The sign of the changes on Figure 3 are correlated but not so much the magnitude. It would have been useful to also have additional experiments or analyses strengthening the results, for instance the introduction of other mutations that would be predicted from promoter sequences to increase and decrease binding and see how it affects fitness. An examination of the data suggests that most of the correlation between TATA box strength and YFP expression seems to be driven by 39-3T and 38-3G, which have the largest mismatches between expression and TATA box strength. Also, it is not clear if all the mutations considered are synonymous since 39-2T maybe a non-synonymous one (Tyr -> Phe, correct?). Therefore, the causal link between synonymous mutations, expression levels and fitness remains to be completely shown and most importantly the link with the creation of a novel promoter element. This is critical for the study as the mechanism linking synonymous mutations to fitness is one of the most striking findings of the paper.\n\n2) Another important aspect could be to try to see how frequent such synonymous mutations with strong impact could be across the genome, i.e. how easy it would be in general to create transcription factor binding sites in coding sequences. This could help generalize the results.\n\n3) The Abstract states: \"We used site-directed mutagenesis coupled with direct measures of competitive fitness to estimate the distribution of fitness effects among synonymous mutations for a gene under selection.\" However, the authors have prior information that the gene they have chosen to characterize can adapt via synonymous mutations from their prior work, making it unclear if the measured distribution is truly representative of \"the\" synonymous DFE. This also carries over to their primary conclusion that the \"DFE of synonymous mutations is strikingly similar to that of nonsynonymous mutations and is formally indistinguishable from it if we consider only beneficial mutations\". While this does not detract substantially from the impact of the work, as the identification of a large number of adaptive synonymous mutations in any gene has a significant impact on the typical assumption that synonymous variants are selectively neutral, these sentences should be reworded to reflect this limitation. If the gene chosen for this study is an exceptional case, the DFE established remains true but regards a very small number of genes. At minimum, the wording should be changed throughout the paper and this aspect discussed in the Discussion section.\n\n4) Another concern related to 3) about the manuscript is that some statements are too strong, for instance in the first paragraph of the Discussion it says that DFE among synonymous mutations can be highly variable contrary to what has often been assumed. Is it still the case in the community? It would be important to substantiate this with references showing that it is still the case.\n\n5) Regarding the use of the codon adaptation index (CAI) as a metric of adaptation for codon usage. CAI is that it is a metric that looks for gene-level codon usage differences by comparing the distribution of codons used within the gene to a reference set. As the gene used in the study consists of ~300 codons, changing a single codon through a point mutation is highly unlikely to ever result in a significant change in CAI as it has little impact on the total codon distribution of the gene. The lack of association is therefore not surprising. As an alternative method for testing for codon usage adaptation, the authors could quantify the difference in ancestral and mutant codon usage for the specific mutated codon and compare that difference to the fitness benefit shown by that isolate. If adaptation is driven by codon usage, one would expect a significant positive correlation between the gain in codon preference at the mutated site and fitness. The use of this or any similar metric that specifically focuses on the mutated codons would substantially improve the work. Note that these additional experiments would strengthen the paper but are not required. Nevertheless, the limitation of the CAI metric used should be taken into account.\n\n6) One piece of information that may not have been taken full advantage of is the difference between the number of sites targeted for mutagenesis (112) and the number recovered (34). Assuming that the authors sampled a large number of clones from the transformed library (say 1000+), the loss of sites from the sampled mutants means that mutation at these sites is lethal. This could add significant new information into the deleterious region of the DFE. If a saturating number of clones was not sampled, it should be made clear in the Materials and methods.\n\n7) The phylogenetic analyses showing that the 38-3T has arisen independently should be detailed because the correlation shown relies on the fact that these mutations are independent. If the points shown on Figure 4 are not independent, i.e. some strains share the mutations because of common ancestry and not because it was acquired, the correlation could derive from other factors also correlated with this ancestry.\n",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "541ef87d-15e2-4ee9-8969-73e9472804dd",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C1",
+      "claim": "Site-directed mutagenesis coupled with direct measures of competitive fitness was used to estimate the distribution of fitness effects among synonymous mutations for a gene under directional selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We used site-directed mutagenesis coupled with direct measures of competitive fitness to estimate the distribution of fitness effects among synonymous mutations for a gene under directional selection and capable of adapting via synonymous nucleotide changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "f2c909a0-ba0d-4b63-95a8-405fac532913",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C2",
+      "claim": "Synonymous mutations had highly variable fitness effects, both deleterious and beneficial.",
+      "claim_type": "EXPLICIT",
+      "source": "Synonymous mutations had highly variable fitness effects, both deleterious and beneficial, resembling those of nonsynonymous mutations in the same gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states the main finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "132f199b-4736-471e-a626-9d4f5871be1e",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C3",
+      "claim": "The fitness effects of synonymous mutations resemble those of nonsynonymous mutations in the same gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Synonymous mutations had highly variable fitness effects, both deleterious and beneficial, resembling those of nonsynonymous mutations in the same gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract compares the DFEs of synonymous and nonsynonymous mutations based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "ed2e7898-c0e7-47bd-b8c6-26ca43f8b657",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C4",
+      "claim": "Variation in fitness among synonymous mutations was underlain by changes in transcription linked to the creation of internal promoter sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This variation in fitness was underlain by changes in transcription linked to the creation of internal promoter sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states the mechanistic explanation supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "b377d5dc-8bb2-4146-b55f-1d04e982522a",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C5",
+      "claim": "There is a positive correlation between fitness and the presence of synonymous substitutions across a phylogeny of related Pseudomonads.",
+      "claim_type": "EXPLICIT",
+      "source": "A positive correlation between fitness and the presence of synonymous substitutions across a phylogeny of related Pseudomonads suggests these mutations may be common in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes a correlation found through phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "d588a044-87bd-462a-8896-7a01a6d038ab",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C6",
+      "claim": "Synonymous mutations with non-neutral fitness effects may be commonplace.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results provide the most compelling evidence to date that synonymous mutations with non-neutral fitness effects may in fact be commonplace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents the main conclusion based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "e00c291b-8daf-45e8-9f34-0e5eacdebae4",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C7",
+      "claim": "The assumption that synonymous mutations are neutral is often used to make inferences about the evolutionary process from DNA sequence data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ability to use DNA sequence data to make inferences about the evolutionary process from genes or genomes often relies on the assumption that synonymous mutations, those that do not result in an amino acid change, are neutral with respect to fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states a common assumption in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "e0bf771a-daf1-4bae-8e38-6aef4f5d5865",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C8",
+      "claim": "Comparative data show that synonymous mutations can have a range of fitness effects from negative to positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet there is compelling evidence that this assumption is sometimes wrong: comparative (Lawrie et al., 2013) and experimental (Lind et al., 2010) data show that synonymous mutations can have a range of fitness effects from negative to positive, and can even contribute to adaptation (Bailey et al., 2014; Agashe et al., 2016; Kristofich et al., 2018; She and Jarosz, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites comparative studies showing variable fitness effects of synonymous mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "73d1c529-8ce1-4153-ae5a-aeb21fef48df",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C9",
+      "claim": "Experimental data show that synonymous mutations can have a range of fitness effects from negative to positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet there is compelling evidence that this assumption is sometimes wrong: comparative (Lawrie et al., 2013) and experimental (Lind et al., 2010) data show that synonymous mutations can have a range of fitness effects from negative to positive, and can even contribute to adaptation (Bailey et al., 2014; Agashe et al., 2016; Kristofich et al., 2018; She and Jarosz, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites experimental studies showing variable fitness effects of synonymous mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "d1d0b66c-2985-40b4-b720-9f0f6a62bedf",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C10",
+      "claim": "Synonymous mutations can contribute to adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet there is compelling evidence that this assumption is sometimes wrong: comparative (Lawrie et al., 2013) and experimental (Lind et al., 2010) data show that synonymous mutations can have a range of fitness effects from negative to positive, and can even contribute to adaptation (Bailey et al., 2014; Agashe et al., 2016; Kristofich et al., 2018; She and Jarosz, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites studies showing synonymous mutations contributing to adaptation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "30033538-f2d5-4665-ad43-b77e502b5528",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C11",
+      "claim": "Codon usage bias can lead to changes in the rate or efficiency of transcription, translation, and/or protein folding and/or expression that impact fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "A range of mechanisms including codon usage bias, altered mRNA structure, and the creation of promoter sequences could lead to changes in the rate or efficiency of transcription, translation, and/or protein folding and/or expression that, in turn, impact fitness (Plotkin and Kudla, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a review discussing mechanisms by which synonymous mutations affect fitness.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "1c0f67e7-8f92-472f-b13f-9fd9a5f9c18c",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C12",
+      "claim": "Altered mRNA structure can lead to changes in the rate or efficiency of transcription, translation, and/or protein folding and/or expression that impact fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "A range of mechanisms including codon usage bias, altered mRNA structure, and the creation of promoter sequences could lead to changes in the rate or efficiency of transcription, translation, and/or protein folding and/or expression that, in turn, impact fitness (Plotkin and Kudla, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a review discussing mechanisms by which synonymous mutations affect fitness.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "ea455f27-386f-45f9-b4f4-6f3738f5f848",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C13",
+      "claim": "The creation of promoter sequences can lead to changes in the rate or efficiency of transcription, translation, and/or protein folding and/or expression that impact fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "A range of mechanisms including codon usage bias, altered mRNA structure, and the creation of promoter sequences could lead to changes in the rate or efficiency of transcription, translation, and/or protein folding and/or expression that, in turn, impact fitness (Plotkin and Kudla, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites a review discussing mechanisms by which synonymous mutations affect fitness.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "4a5324cb-c6a6-47d8-b5dd-bed04c986e0b",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C14",
+      "claim": "The degree of variability in fitness effects of synonymous mutations remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific mechanism notwithstanding, it is clear that synonymous mutations are not always neutral; however, the degree of variability in their fitness effects, and how often they contribute to adaptation, remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction identifies a knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "60ae9d94-6b9e-4652-ab86-4e46db424974",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C15",
+      "claim": "How often synonymous mutations contribute to adaptation remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific mechanism notwithstanding, it is clear that synonymous mutations are not always neutral; however, the degree of variability in their fitness effects, and how often they contribute to adaptation, remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction identifies a knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "8298591c-4169-4b2f-ad1c-9ac40ded6ff2",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C16",
+      "claim": "Bailey et al. (2014) reported the discovery of two spontaneous, highly beneficial synonymous mutations arising independently in gtsB during a selection experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work by Bailey et al. (2014) reported the discovery of two spontaneous, highly beneficial synonymous mutations arising independently over the course of a selection experiment in gtsB, a gene that codes for a membrane-bound permease subunit of an ABC glucose-transporter in the Gram-negative bacterium Pseudomonas fluorescens SBW25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites previous work that motivated the current study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "7734ac7d-bfa6-4ad5-a36a-a2c0a4caca27",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C17",
+      "claim": "gtsB codes for a membrane-bound permease subunit of an ABC glucose-transporter in Pseudomonas fluorescens SBW25.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work by Bailey et al. (2014) reported the discovery of two spontaneous, highly beneficial synonymous mutations arising independently over the course of a selection experiment in gtsB, a gene that codes for a membrane-bound permease subunit of an ABC glucose-transporter in the Gram-negative bacterium Pseudomonas fluorescens SBW25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction describes the function of the gene under study, citing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "c9caa336-2dce-4acf-b883-65319ae75f1d",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C18",
+      "claim": "The gts operon encodes a four-protein system that binds glucose in the periplasm and actively transports it across the inner membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The gts operon is crucial to glucose uptake, as it encodes a four-protein system that binds glucose in the periplasm and actively transports it across the inner membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction describes the function of the gts operon.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "da4cbe0f-afd0-4ab8-bf0a-49b645f74a6a",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C19",
+      "claim": "Knockouts of gtsB show that this gene is targeted by selection in an environment where low glucose limits growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockouts of gtsB show that this particular gene, the second in the operon, is targeted by selection in an environment where low glucose limits growth (Bailey et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites previous work showing gtsB is under selection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "67045464-bcce-4c78-93f8-c15ca6059d93",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C20",
+      "claim": "The distribution of fitness effects was estimated for 39 synonymous, 65 nonsynonymous, and six nonsense substitutions at 34 sites along gtsB.",
+      "claim_type": "EXPLICIT",
+      "source": "As a first step towards understanding the evolutionary effects of synonymous mutations, we estimated the distribution of fitness effects (DFE) for 39 synonymous, 65 nonsynonymous, and six nonsense substitutions at 34 sites along gtsB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the experimental design and sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "94ef09ea-c18c-4ab8-9aaf-895d2387a208",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C21",
+      "claim": "Single nucleotide mutants were generated through site-directed mutagenesis and competed against the ancestor strain in glucose-limited medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Single nucleotide mutants were generated through site-directed mutagenesis and competed against the ancestor strain in glucose-limited medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "b4149f9f-d15e-4244-8fa0-115fc845f3d7",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C22",
+      "claim": "Two beneficial synonymous mutations in gtsB were recovered from a population that had evolved for ~1000 generations in glucose-limited medium.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported on two beneficial synonymous mutations in this gene recovered from a population that had evolved for ~1000 generations in glucose-limited medium and confirmed that gtsB is a target of selection under these conditions (Bailey et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites previous work that identified beneficial synonymous mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "f92cb432-1361-4db4-9e3a-90424ea547db",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C23",
+      "claim": "gtsB is a target of selection under glucose-limited conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported on two beneficial synonymous mutations in this gene recovered from a population that had evolved for ~1000 generations in glucose-limited medium and confirmed that gtsB is a target of selection under these conditions (Bailey et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites previous work confirming selection on gtsB.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "5c4b4036-d43d-4a55-8dce-3c515108b9ad",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C24",
+      "claim": "The DFEs for nonsynonymous and synonymous mutations are similar, with both having modes close to neutrality and substantial variation including both positive and deleterious effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of the DFEs for nonsynonymous and synonymous mutations (Figure 1A) reveals they are similar, with both having modes close to neutrality (w ~ 1) and substantial variation that includes mutants with both positive and deleterious effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the DFEs shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "b5e47ae7-7628-4f12-a309-c2f944ad6100",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C25",
+      "claim": "The distributions of fitness effects for nonsynonymous and synonymous mutations differ significantly (p=0.0002).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the distributions differ significantly (p=0.0002 based on a bootstrapped estimate of the Kolmogorov-Smirnov D-statistic from 10,000 permutations) due to the presence of a handful of strongly deleterious nonsense mutations in the non-synonymous set that presumably produce a truncated, non-functional protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports a statistical test comparing the DFEs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "f5b5897c-c98f-48b8-9798-aaa273689155",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C26",
+      "claim": "The difference between nonsynonymous and synonymous DFEs is due to the presence of strongly deleterious nonsense mutations in the non-synonymous set.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the distributions differ significantly (p=0.0002 based on a bootstrapped estimate of the Kolmogorov-Smirnov D-statistic from 10,000 permutations) due to the presence of a handful of strongly deleterious nonsense mutations in the non-synonymous set that presumably produce a truncated, non-functional protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides an explanation for the statistical difference between DFEs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "9a4b2ebf-939f-42b7-9626-91c4a5437b28",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C27",
+      "claim": "Nonsense mutations presumably produce a truncated, non-functional protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the distributions differ significantly (p=0.0002 based on a bootstrapped estimate of the Kolmogorov-Smirnov D-statistic from 10,000 permutations) due to the presence of a handful of strongly deleterious nonsense mutations in the non-synonymous set that presumably produce a truncated, non-functional protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the mechanism of nonsense mutations based on biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "0f739de5-bf27-42b1-840f-2b49fe1f611d",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C28",
+      "claim": "The DFEs for beneficial nonsynonymous and synonymous mutations are indistinguishable (p=0.59).",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the DFEs for beneficial nonsynonymous and synonymous mutations are indistinguishable (bootstrapped K-S test, p=0.59), suggesting that both kinds of mutation could contribute to adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports a statistical test comparing beneficial mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "c2678e19-c322-43c8-b26d-9edd89350574",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C29",
+      "claim": "Both nonsynonymous and synonymous mutations could contribute to adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the DFEs for beneficial nonsynonymous and synonymous mutations are indistinguishable (bootstrapped K-S test, p=0.59), suggesting that both kinds of mutation could contribute to adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the evolutionary implication from the statistical test.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "4d811220-5af1-4d08-869c-21a2fe01a763",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C30",
+      "claim": "The combined DFE for beneficial nonsynonymous and synonymous mutations is approximately L-shaped, with many mutations of small effect and a few of large effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined DFE for both kinds of beneficial mutations is approximately L-shaped, with many mutations of small effect and a few of large effect (Figure 1B), as expected from theory (Gillespie, 1984; Orr, 2003; Martin and Lenormand, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the shape of the DFE shown in Figure 1B and cites theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "8382b35a-805f-48c3-85de-aff2183872b3",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C31",
+      "claim": "The DFE among beneficial mutations is significantly different from an exponential distribution (p=0.0077).",
+      "claim_type": "EXPLICIT",
+      "source": "More formally, the DFE among beneficial mutations is significantly different from an exponential distribution (likelihood ratio test, p=0.0077) and falls within the Weibull domain of the Generalised Pareto Distribution (K = \u22120.37), suggesting the existence of a local fitness optimum similar to what has been seen previously for nonsynonymous mutations (Rokyta et al., 2008; Schoustra et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports a statistical test of the DFE shape.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "0ec2f6fc-c2a2-4c5d-9e8a-2fad6d4a82d8",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C32",
+      "claim": "The DFE among beneficial mutations falls within the Weibull domain of the Generalised Pareto Distribution (K = \u22120.37).",
+      "claim_type": "EXPLICIT",
+      "source": "More formally, the DFE among beneficial mutations is significantly different from an exponential distribution (likelihood ratio test, p=0.0077) and falls within the Weibull domain of the Generalised Pareto Distribution (K = \u22120.37), suggesting the existence of a local fitness optimum similar to what has been seen previously for nonsynonymous mutations (Rokyta et al., 2008; Schoustra et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the statistical characterization of the DFE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "c274863e-a6f3-4a2b-8ef9-f2a01eb5db1f",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C33",
+      "claim": "The shape of the DFE suggests the existence of a local fitness optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "More formally, the DFE among beneficial mutations is significantly different from an exponential distribution (likelihood ratio test, p=0.0077) and falls within the Weibull domain of the Generalised Pareto Distribution (K = \u22120.37), suggesting the existence of a local fitness optimum similar to what has been seen previously for nonsynonymous mutations (Rokyta et al., 2008; Schoustra et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the existence of a fitness optimum from the DFE shape, citing similar findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "67346f1d-ee1f-4735-9245-0c4763b239f1",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C34",
+      "claim": "A regression of fitness on distance from the start codon of gtsB was not statistically significant (p=0.20).",
+      "claim_type": "EXPLICIT",
+      "source": "We could find no evidence for either explanation in our sample: a regression of fitness on distance from the start codon of gtsB was not statistically significant (permutation of residuals, p=0.20), nor was there a significant relationship between change in fitness and change in codon adaptation index (CAI; p=0. 40) or tRNA adaptation index (tAI; p=0.53), both measures of the degree of codon usage bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports a statistical test of the translational ramp hypothesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "62aeb9cd-a41e-40fd-8610-8912d5078c2c",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C35",
+      "claim": "There was no significant relationship between change in fitness and change in codon adaptation index (CAI; p=0.40).",
+      "claim_type": "EXPLICIT",
+      "source": "We could find no evidence for either explanation in our sample: a regression of fitness on distance from the start codon of gtsB was not statistically significant (permutation of residuals, p=0.20), nor was there a significant relationship between change in fitness and change in codon adaptation index (CAI; p=0. 40) or tRNA adaptation index (tAI; p=0.53), both measures of the degree of codon usage bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports a statistical test of the codon usage bias hypothesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "d0f87012-6910-4508-b90b-dd7e1f646317",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C36",
+      "claim": "There was no significant relationship between change in fitness and change in tRNA adaptation index (tAI; p=0.53).",
+      "claim_type": "EXPLICIT",
+      "source": "We could find no evidence for either explanation in our sample: a regression of fitness on distance from the start codon of gtsB was not statistically significant (permutation of residuals, p=0.20), nor was there a significant relationship between change in fitness and change in codon adaptation index (CAI; p=0. 40) or tRNA adaptation index (tAI; p=0.53), both measures of the degree of codon usage bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports a statistical test of the codon usage bias hypothesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "a67c637f-b777-4618-9556-59bad477032b",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C37",
+      "claim": "A change in a single codon is unlikely to have a large effect on the overall CAI value for either the whole gene or a portion thereof.",
+      "claim_type": "EXPLICIT",
+      "source": "This is perhaps unsurprising given that CAI is a gene-level codon usage metric, and a change in a single codon is unlikely to have a large effect on the overall CAI value for either the whole gene or a portion thereof.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides a logical explanation for the lack of relationship with CAI.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "e50caec9-bece-4780-931a-bc4427e8bca4",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C38",
+      "claim": "The first 50 codons of WT gtsB are not significantly enriched for rare codons (adj. R2 = 0.0058, p=0.21).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is little evidence for a translational ramp in WT gtsB: the first 50 codons are not significantly enriched for rare codons (adj. R2 = 0.0058, p=0.21); further, the interaction of codon position with CAI or tAI does not yield significant results (p=0.45 and 0.90, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports statistical tests for the presence of a translational ramp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "0585fc6e-b775-4bf1-893b-a6c5ed075759",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C39",
+      "claim": "The interaction of codon position with CAI does not yield significant results (p=0.45).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is little evidence for a translational ramp in WT gtsB: the first 50 codons are not significantly enriched for rare codons (adj. R2 = 0.0058, p=0.21); further, the interaction of codon position with CAI or tAI does not yield significant results (p=0.45 and 0.90, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports statistical tests for the presence of a translational ramp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "c4d6c5d8-7c47-49be-a79e-babc0a7064b6",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C40",
+      "claim": "The interaction of codon position with tAI does not yield significant results (p=0.90).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is little evidence for a translational ramp in WT gtsB: the first 50 codons are not significantly enriched for rare codons (adj. R2 = 0.0058, p=0.21); further, the interaction of codon position with CAI or tAI does not yield significant results (p=0.45 and 0.90, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports statistical tests for the presence of a translational ramp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "0f6fc548-a041-4eec-82ac-2af4a92e5845",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C41",
+      "claim": "Higher fitness could result from faster translation due to transcripts that are less thermodynamically stable and more accessible to the ribosome during translation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been suggested that synonymous mutations could impact fitness through their effects on mRNA transcript secondary structure and hence the rate and fidelity of translation. Higher fitness could result from faster translation due to transcripts that are less thermodynamically stable and, so, more accessible to the ribosome during translation (Kudla et al., 2009) or from more efficient translation due to more stable mRNAs that persist longer due to slower degradation rates (Deutscher, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites a hypothesis about mRNA stability and fitness.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "893f190f-b107-4d9c-a5b4-f96a5fb558a7",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C42",
+      "claim": "Higher fitness could result from more efficient translation due to more stable mRNAs that persist longer due to slower degradation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been suggested that synonymous mutations could impact fitness through their effects on mRNA transcript secondary structure and hence the rate and fidelity of translation. Higher fitness could result from faster translation due to transcripts that are less thermodynamically stable and, so, more accessible to the ribosome during translation (Kudla et al., 2009) or from more efficient translation due to more stable mRNAs that persist longer due to slower degradation rates (Deutscher, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites a hypothesis about mRNA stability and fitness.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "c38504dc-1ed9-4d0e-ad6f-0ea7e5ce0220",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C43",
+      "claim": "A linear model linking change in mRNA stability and fitness is significant for the nonsynonymous subset of mutations (p=0.0039).",
+      "claim_type": "EXPLICIT",
+      "source": "A linear model linking change in mRNA stability and fitness is significant for the nonsynonymous subset of mutations (permutation of residuals, p=0.0039), although the effect is weak (adj. R2 = 0.11) and driven by less stable, highly deleterious mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports a statistical test of the mRNA stability hypothesis for nonsynonymous mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "e5f1941d-a0f2-4cf5-94ca-a4f765e31ac5",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C44",
+      "claim": "The relationship between change in mRNA stability and fitness for nonsynonymous mutations is weak (adj. R2 = 0.11) and driven by less stable, highly deleterious mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "A linear model linking change in mRNA stability and fitness is significant for the nonsynonymous subset of mutations (permutation of residuals, p=0.0039), although the effect is weak (adj. R2 = 0.11) and driven by less stable, highly deleterious mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section characterizes the relationship between mRNA stability and fitness for nonsynonymous mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "9adbb61f-832d-46a6-8e27-d45f81650a60",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C45",
+      "claim": "No relationship between change in mRNA stability and fitness could be detected for synonymous mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "We could not detect a relationship between change in mRNA stability and fitness for synonymous mutations, even when we account for the possibility of strong 5' end secondary structures by adding a position term reflecting distance from the start codon (Frumkin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the absence of a relationship between mRNA stability and fitness for synonymous mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "47629626-e8bf-47ef-963f-05a0bf950b3c",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C46",
+      "claim": "The absence of any relationship between synonymous mutation fitness and codon usage bias or mRNA stability suggests that fitness effects stem from changes in transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of any relationship between synonymous mutation fitness and codon usage bias or mRNA stability, both measures affecting translation, suggests that fitness effects stem from changes in transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the mechanism based on the absence of relationships with translational factors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "7a360c99-e076-43fc-805c-55c0332822bb",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C47",
+      "claim": "Testing the hypothesis that fitness effects stem from changes in transcription requires comparing estimates of transcript and protein abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing this hypothesis requires comparing estimates of transcript and protein abundance, the difference being a measure of the effect of translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the logic of the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "0fb333d2-04d6-4598-9457-911f6691fe8d",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C48",
+      "claim": "mRNA and GtsB protein levels were evaluated by proxy via the insertion of a yellow fluorescent protein (YFP) bioreporter into the WT or mutant gtsB background.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated mRNA and GtsB protein levels by proxy via the insertion of a yellow fluorescent protein (YFP) bioreporter into the WT or mutant gtsB background just before or just after the stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the experimental methodology for measuring transcription and translation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "14d621b6-fb31-4980-b68f-e3af68ef37d1",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C49",
+      "claim": "A translational fusion produces a single reading frame where gtsB and YFP are translated together.",
+      "claim_type": "EXPLICIT",
+      "source": "The former construct (a translational fusion) produces a single reading frame where gtsB and YFP are translated together; the latter, with YFP inserted after the gtsB stop codon (a transcriptional fusion), results in gtsB and YFP being translated separately (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the design of the translational fusion construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "63f6daab-d433-4991-9ba1-4b432022db5c",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C50",
+      "claim": "A transcriptional fusion results in gtsB and YFP being translated separately.",
+      "claim_type": "EXPLICIT",
+      "source": "The former construct (a translational fusion) produces a single reading frame where gtsB and YFP are translated together; the latter, with YFP inserted after the gtsB stop codon (a transcriptional fusion), results in gtsB and YFP being translated separately (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section describes the design of the transcriptional fusion construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "31a55e61-4f4c-42f2-bb64-feafecae4b50",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C51",
+      "claim": "A mutation upstream of YFP fusions that leads to increased translation, but not transcription, is expected to generate a higher YFP expression level in the translational fusion compared to the transcriptional fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "A mutation upstream of these fusions that leads to increased translation, but not transcription, is expected to generate a higher YFP expression level in the translational fusion compared to the transcriptional fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the expected outcome of the YFP fusion experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "5b5784f3-aba5-4664-9f63-51d8a43c2612",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C52",
+      "claim": "Transcription is elevated in all three mutants (A15A, G38G, A10T) relative to the WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription is elevated in all three mutants relative to the WT but we could not detect any additional effect of translation in the two synonymous mutations, although there is a modest increase in expression associated with translation for the nonsynonymous mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the findings from the YFP fusion experiment shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "db52ec45-8bc0-49a8-84d6-274ea8de4469",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C53",
+      "claim": "No additional effect of translation could be detected in the two synonymous mutations (A15A, G38G).",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription is elevated in all three mutants relative to the WT but we could not detect any additional effect of translation in the two synonymous mutations, although there is a modest increase in expression associated with translation for the nonsynonymous mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the findings from the YFP fusion experiment shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "b457f31c-dfde-4924-9512-44e235439c87",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C54",
+      "claim": "There is a modest increase in expression associated with translation for the nonsynonymous mutation A10T.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription is elevated in all three mutants relative to the WT but we could not detect any additional effect of translation in the two synonymous mutations, although there is a modest increase in expression associated with translation for the nonsynonymous mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the findings from the YFP fusion experiment shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "4e1bd94c-319f-420b-9e4d-8de153c8f9bd",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C55",
+      "claim": "Synonymous mutations A15A and G38G primarily affect levels of transcription rather than translation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that these synonymous mutations primarily affect levels of transcription rather than translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the mechanism from the YFP fusion experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "7ba02ea1-866f-4650-875c-5f477b05cb6f",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C56",
+      "claim": "There is a strong positive relationship between transcript abundance and relative fitness for 27 synonymous mutations (R2 = 0.691, p=1.46\u00d710\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "First, there is a strong positive relationship between transcript abundance and relative fitness for 27 synonymous mutations (including the A15A and G38G mutations examined above) (Figure 2B; R2 = 0.691, p=1.46\u00d710\u22128).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports a statistical relationship shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "e26887ca-b4cc-4cfb-ad44-6c25685ff5ed",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C57",
+      "claim": "The link between transcript abundance and fitness is not limited to beneficial synonymous mutations alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the range of the regression includes mutants with both negative and positive fitness effects, suggesting that the link between transcript abundance and fitness is not limited to beneficial synonymous mutations alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the generality of the relationship from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "de2f1e7d-779d-4916-a315-c74cc3338426",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C58",
+      "claim": "The increased transcription caused by A15A, G38G, and A10T extends downstream to gtsC (p<5.0\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Figure 2C shows that the increased transcription caused by A15A, G38G, and A10T extends downstream to gtsC (p<5.0\u00d710\u22125) but not upstream to gtsA, which remains largely unaffected (p>0.60).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the findings from YFP fusions at different positions in the operon, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "4b52816a-7061-47f5-9a5b-768570dfdeb8",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C59",
+      "claim": "The increased transcription caused by A15A, G38G, and A10T does not extend upstream to gtsA, which remains largely unaffected (p>0.60).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Figure 2C shows that the increased transcription caused by A15A, G38G, and A10T extends downstream to gtsC (p<5.0\u00d710\u22125) but not upstream to gtsA, which remains largely unaffected (p>0.60).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the findings from YFP fusions at different positions in the operon, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "ffaee6cf-6d8e-499c-ba10-19db3cd08ebe",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C60",
+      "claim": "Synonymous mutations A15A, G38G, and A10T have polar effects on transcription that extend beyond the gene in which they occur.",
+      "claim_type": "EXPLICIT",
+      "source": "These synonymous mutations thus have polar effects on transcription that extend beyond the gene in which they occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the polar effects from the YFP fusion data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "c10726b3-46f8-49e6-ab8c-7e3f8139528a",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C61",
+      "claim": "Overexpression of WT gtsB increases fitness only when the rest of the gts operon is also overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with our previous observation that overexpression of WT gtsB increases fitness only when the rest of the gts operon is also overexpressed (Bailey et al., 2014), these results suggest that co-expression of downstream genes is necessary for increased fitness in this system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites previous work showing the importance of operon co-expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "8f0b0ac5-0cf1-43d5-b341-432cf69f73a1",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C62",
+      "claim": "Co-expression of downstream genes is necessary for increased fitness in this system.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with our previous observation that overexpression of WT gtsB increases fitness only when the rest of the gts operon is also overexpressed (Bailey et al., 2014), these results suggest that co-expression of downstream genes is necessary for increased fitness in this system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the necessity of co-expression from the current and previous data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "334f8923-1672-421e-8269-65c3a90e973e",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C63",
+      "claim": "Synonymous mutations can generate beneficial effects by creating novel promoters in regions upstream of a gene under selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that synonymous mutations can generate beneficial effects by creating novel promoters in regions upstream of a gene under selection (Ando et al., 2014; Kershner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section cites previous work on promoter creation by synonymous mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "41f6445e-5539-4863-a8dd-96e16e5cbe17",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C64",
+      "claim": "Some synonymous mutations in gtsB might be creating internal promoters causing changes in expression of the downstream genes gtsC or gtsD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the existence of polar effects on transcription suggests that some synonymous mutations in gtsB might be playing a similar role by creating internal promoters causing changes in expression of the downstream genes gtsC or gtsD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section proposes a hypothesis based on the observed polar effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "ac6df3df-ad83-4995-bd2c-2b7e4fdc8e26",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C65",
+      "claim": "Softberry BPROM online software was used to search the entire gts operon for internal sigma 70 bacterial promoter sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate this idea, we used Softberry BPROM online software to search the entire gts operon for internal sigma 70 bacterial promoter sequences in the ancestral sequence and mutant sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the computational method used to test the promoter hypothesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "5a540b03-64e5-4338-be97-4c7606b88c5d",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C66",
+      "claim": "BPROM searches for promoters using Escherichia coli rather than P. fluorescens consensus sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We find relatively few hits in our collection, perhaps because BPROM searches for promoters using Escherichia coli rather than P. fluorescens consensus sequences; however, among the top five hits is a predicted promoter sequence spanning codons 30\u201342 that includes G38G and 39\u20133T, the latter being the synonymous mutation with highest fitness in our collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section explains a limitation of the promoter prediction software.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "58d6dc4a-47e7-4bfd-9a4c-18b45b3807c7",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C67",
+      "claim": "A predicted promoter sequence spans codons 30\u201342 and includes G38G and 39\u20133T.",
+      "claim_type": "EXPLICIT",
+      "source": "We find relatively few hits in our collection, perhaps because BPROM searches for promoters using Escherichia coli rather than P. fluorescens consensus sequences; however, among the top five hits is a predicted promoter sequence spanning codons 30\u201342 that includes G38G and 39\u20133T, the latter being the synonymous mutation with highest fitness in our collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the findings from the promoter prediction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "fd319aee-42e7-4157-8b43-2adc29522e5f",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C68",
+      "claim": "39\u20133T is the synonymous mutation with highest fitness in the collection.",
+      "claim_type": "EXPLICIT",
+      "source": "We find relatively few hits in our collection, perhaps because BPROM searches for promoters using Escherichia coli rather than P. fluorescens consensus sequences; however, among the top five hits is a predicted promoter sequence spanning codons 30\u201342 that includes G38G and 39\u20133T, the latter being the synonymous mutation with highest fitness in our collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section identifies the highest fitness synonymous mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "dc8b0b04-07bb-4354-9f98-e2e089ea69d8",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C69",
+      "claim": "Mutations G38G, 39\u20133T, and 232\u20133T result in predicted \u221210 promoter sequences that are more closely aligned to the \u221210 consensus sequence for P. aeruginosa (TATAAT) than the WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mutations, and an additional beneficial synonymous mutation at 232\u20133T, result in predicted \u221210 promoter sequences that are more closely aligned to the \u221210 consensus sequence for P. aeruginosa (TATAAT) than the WT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the findings from the promoter prediction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "73a89e83-8eb2-42fe-bf38-19a8aa8bb6b4",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C70",
+      "claim": "There is a tendency for promoter strength to vary positively with both transcription and fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is a tendency for promoter strength to vary positively with both transcription and fitness (Figure 3A), although this effect is based on just six mutations and is not significant (permutation of residuals, p=0.17 and 0.11, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports a trend shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "a49b3e0f-c775-4f4d-87fa-47bd587a3fd2",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C71",
+      "claim": "The relationship between promoter strength and transcription is not significant (p=0.17).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is a tendency for promoter strength to vary positively with both transcription and fitness (Figure 3A), although this effect is based on just six mutations and is not significant (permutation of residuals, p=0.17 and 0.11, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports a statistical test of the relationship between promoter strength and transcription.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "a40a23b2-ffa3-4801-a5dd-7fad6e557273",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C72",
+      "claim": "The relationship between promoter strength and fitness is not significant (p=0.11).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is a tendency for promoter strength to vary positively with both transcription and fitness (Figure 3A), although this effect is based on just six mutations and is not significant (permutation of residuals, p=0.17 and 0.11, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports a statistical test of the relationship between promoter strength and fitness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "aa2c6f7e-7146-4f4a-b554-3d91dac1f956",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C73",
+      "claim": "Fitness changes associated with synonymous mutations could be caused by the ability of transcription factors to bind to promoter-like sequences in gtsB and alter transcription of downstream genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that fitness changes associated with these synonymous mutations could be caused by the ability of transcription factors to bind to promoter-like sequences in gtsB and alter transcription of downstream genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section proposes a mechanism based on the promoter prediction analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "d4c113c2-efbd-4bce-9267-080578191840",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C74",
+      "claim": "Transcriptional start sites for the gts operon were mapped using a 5' RACE kit for the WT and four mutants (G38G, 232\u20133T, A10T, A15A).",
+      "claim_type": "EXPLICIT",
+      "source": "Further support for this interpretation comes from mapping transcriptional start sites for the gts operon using a 5' RACE kit for the WT and four additional mutants: G38G and 232\u20133T (an introduced C \u2192 T mutation at the third site of codon 232), the sites identified as being among the top predicted promoters, as well as A10T and A15A which, along with G38G, were recovered from the original experiment in Bailey et al. (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the experimental method used to map transcriptional start sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "5c02c774-6f8a-480a-aa9a-3d3c92cd02da",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C75",
+      "claim": "A transcriptional start site maps 30 base pairs upstream of the gtsA start codon, 25 base pairs downstream of the predicted \u221210 box.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we found a transcriptional start site mapping 30 base pairs upstream of the gtsA start codon, 25 base pairs downstream of the predicted \u221210 box.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the findings from the 5' RACE analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "ed0f61bc-1619-4553-ba53-96b25e468161",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C76",
+      "claim": "Transcription start sites map 7 and 15 base pairs downstream of the predicted \u221210 box of the G38G internal promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, and consistent with the hypothesis that mutations in the coding region of gtsB can improve promoter binding for the RNA polymerase complex, we mapped transcription start sites 7 and 15 base pairs downstream of the predicted \u221210 box of the G38G internal promoter, four base pairs downstream of the A15A mutation, and 21 base pairs downstream of the A10T mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the findings from the 5' RACE analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "1fd10eb4-20e5-4550-8569-267e0dc7fbce",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C77",
+      "claim": "A transcription start site maps four base pairs downstream of the A15A mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, and consistent with the hypothesis that mutations in the coding region of gtsB can improve promoter binding for the RNA polymerase complex, we mapped transcription start sites 7 and 15 base pairs downstream of the predicted \u221210 box of the G38G internal promoter, four base pairs downstream of the A15A mutation, and 21 base pairs downstream of the A10T mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the findings from the 5' RACE analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "ae593048-b5b2-488c-a7fe-17976c6d9b49",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C78",
+      "claim": "A transcription start site maps 21 base pairs downstream of the A10T mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, and consistent with the hypothesis that mutations in the coding region of gtsB can improve promoter binding for the RNA polymerase complex, we mapped transcription start sites 7 and 15 base pairs downstream of the predicted \u221210 box of the G38G internal promoter, four base pairs downstream of the A15A mutation, and 21 base pairs downstream of the A10T mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the findings from the 5' RACE analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "ae928d6c-81a3-4446-9a8b-17762c38aba2",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C79",
+      "claim": "An additional transcriptional start site maps 70 nucleotides upstream of 232\u20133T.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, taken together with an additional transcriptional start site 70 nucleotides upstream of 232\u20133T, suggest that synonymous mutations in gtsB may be strengthening weak internal promoters that were not detected by the available online prediction software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the findings from the 5' RACE analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "5e68f5f6-3506-4f81-89b8-949180b534d1",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C80",
+      "claim": "Synonymous mutations in gtsB may be strengthening weak internal promoters that were not detected by the available online prediction software.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, taken together with an additional transcriptional start site 70 nucleotides upstream of 232\u20133T, suggest that synonymous mutations in gtsB may be strengthening weak internal promoters that were not detected by the available online prediction software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the mechanism from the 5' RACE data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "23bdcc6b-b29e-49d5-a36d-0f448d0da46d",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C81",
+      "claim": "The observation of transcriptional start sites at nucleotide positions near the start of gtsB in the WT likely reflects varying degrees of promoter binding strength for the sequences in this region.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the observation of transcriptional start sites at nucleotide positions near the start of gtsB in the WT likely reflects varying degrees of promoter binding strength for the sequences in this region and so is not incompatible with our hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section provides an interpretation of the WT transcriptional start sites.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "c2c355a8-75bd-41e9-b734-512ab47532ad",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C82",
+      "claim": "Transcriptional start sites map 19 and 57 base pairs upstream of the gtsB start codon within the intergenic space following gtsA.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified transcriptional start sites mapping 19 and 57 base pairs upstream of the gtsB start codon within the intergenic space following gtsA, implying that gtsB may be under independent transcriptional control from gtsA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the findings from the 5' RACE analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "e5bdcdde-f5bb-4e83-ac66-74f8f4291c76",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C83",
+      "claim": "gtsB may be under independent transcriptional control from gtsA.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified transcriptional start sites mapping 19 and 57 base pairs upstream of the gtsB start codon within the intergenic space following gtsA, implying that gtsB may be under independent transcriptional control from gtsA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the transcriptional control from the 5' RACE data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "c1b1444a-1b59-4b91-b6a5-c971ef275866",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C84",
+      "claim": "A phylogeny of 77 strains closely related to SBW25 was generated.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a phylogeny of 77 strains closely related to SBW25 and converted the probability of observing a given mutation to a binary variable based on its presence or absence in the phylogeny while accounting for evolutionary relatedness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section describes the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "48f0a283-bc14-49ab-960b-7aacd1be8ad0",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C85",
+      "claim": "There is a positive relationship between the presence of a particular mutation in the phylogeny and its fitness in glucose-limited medium (p=0.0210).",
+      "claim_type": "EXPLICIT",
+      "source": "For our entire synonymous and nonsynonymous sample, we find a positive relationship between the presence of a particular mutation in the phylogeny and its fitness in glucose-limited medium (Figure 4, p=0.0210).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The Results section reports the findings from the phylogenetic analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "ab12b0f6-c065-4675-bc0a-a4074f64c01e",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C86",
+      "claim": "The highest fitness mutation, 39\u20133T, which is synonymous, arises independently multiple times across the phylogeny, even when common ancestry is taken into consideration.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our highest fitness mutation, 39\u20133T, which is synonymous, arises independently multiple times across the phylogeny, even when common ancestry is taken into consideration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section reports the findings from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "75ba7bdc-126c-43c4-97b2-3b8ecce5d67a",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C87",
+      "claim": "The variation in fitness effects observed are not an idiosyncratic result of life in a laboratory environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results lend support to the idea that the variation in fitness effects observed here are not an idiosyncratic result of life in a laboratory environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the generality of the findings from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "4a0bf56d-62a2-402c-b625-61120b7efbc2",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C88",
+      "claim": "The synonymous mutations conferring the highest fitness effects may often contribute to adaptation in more complex, and more natural, environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the synonymous mutations conferring the highest fitness effects may often contribute to adaptation in more complex, and more natural, environments as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Results section infers the evolutionary relevance from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "8e96dd65-bb7e-45a4-a70b-d6747093416c",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C89",
+      "claim": "The assumption that synonymous mutations are neutral remains deeply embedded in genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite mounting evidence to the contrary, the assumption that synonymous mutations are neutral remains deeply embedded in genetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion states a prevailing assumption in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "95c88e89-e77a-4142-a9a5-6b19bbca2e49",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C90",
+      "claim": "A growing number of fitness landscape studies focus on amino acid replacements, which by definition involve only nonsynonymous substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "One need only look as far as the growing number of fitness landscape studies focusing on amino acid replacements which, by definition, involve only nonsynonymous substitutions (Wu et al., 2016; Bank et al., 2016), the exception being a recent study in yeast showing that most synonymous mutations have small or negligible effects on fitness (Fragata et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion cites studies that focus on nonsynonymous mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "26ae9e2e-1e21-4845-9ca3-888e120929ca",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C91",
+      "claim": "A recent study in yeast showed that most synonymous mutations have small or negligible effects on fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "One need only look as far as the growing number of fitness landscape studies focusing on amino acid replacements which, by definition, involve only nonsynonymous substitutions (Wu et al., 2016; Bank et al., 2016), the exception being a recent study in yeast showing that most synonymous mutations have small or negligible effects on fitness (Fragata et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion cites a study showing small effects of synonymous mutations in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "eb7d5b57-0497-4d10-b46f-3d82eb28d80d",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C92",
+      "claim": "The DFE among synonymous mutations in gtsB can be highly variable and include both deleterious and beneficial mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, our work shows that the DFE among synonymous mutations in gtsB, at least, can be highly variable and include both deleterious and beneficial mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes the main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "1e00eb43-89cc-4d81-ba4d-ce7c33199c90",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C93",
+      "claim": "Aside from the absence of strongly deleterious mutations associated with premature stop codons, the DFE of synonymous mutations in gtsB is strikingly similar to that of nonsynonymous mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, aside from the absence of strongly deleterious mutations associated with premature stop codons, the DFE of synonymous mutations in this gene is strikingly similar to that of nonsynonymous mutations and is formally indistinguishable from it if we consider only beneficial mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes the comparison of DFEs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "1ad82809-e6ed-4186-a445-c9ed2b084a6e",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C94",
+      "claim": "The DFE of synonymous mutations in gtsB is formally indistinguishable from that of nonsynonymous mutations if we consider only beneficial mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, aside from the absence of strongly deleterious mutations associated with premature stop codons, the DFE of synonymous mutations in this gene is strikingly similar to that of nonsynonymous mutations and is formally indistinguishable from it if we consider only beneficial mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes the statistical comparison of beneficial mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "3682f27c-c3af-459b-93a7-2ebde0bf9b38",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C95",
+      "claim": "Synonymous mutations in gtsB can, and sometimes do, contribute to adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with the observation of a positive correlation between in vitro estimates of fitness of a given mutation, its prevalence among sequenced isolates, and previous evidence of adaptation via beneficial synonymous mutations (Bailey et al., 2014), these results suggest that synonymous mutations in this gene can, and sometimes do, contribute to adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion infers the evolutionary significance from the combined evidence.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "dafbaff3-7ce8-4151-9568-e5d0a3a84694",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C96",
+      "claim": "The cause of the fitness variation among synonymous mutations stems from changes to transcription that impact downstream genes in the same operon.",
+      "claim_type": "EXPLICIT",
+      "source": "The cause of the fitness variation among synonymous mutations observed here stems from changes to transcription that impact downstream genes in the same operon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion summarizes the mechanistic finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "90d7de33-19da-4b79-a0af-106659c32096",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C97",
+      "claim": "Whether transcriptional effects occur by changing an internal promoter sequence or through some other, still undiscovered mechanisms, remains to be elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether these transcriptional effects occur by changing an internal promoter sequence, as our data suggests, or through some other, still undiscovered mechanisms, remains to be elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion acknowledges uncertainty about the precise mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "420d3d81-babd-49d2-8938-a3a03e054647",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C98",
+      "claim": "Promoter-associated effects on transcription have been shown to underlie the fitness effects of synonymous mutations in two other microbial systems.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that promoter-associated effects on transcription have been shown to underlie the fitness effects of synonymous mutations in two other microbial systems (Ando et al., 2014; Kershner et al., 2016), suggesting this mechanism may be quite general, at least for organisms with operon-like genetic architectures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion cites studies showing similar mechanisms in other systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "78cbe4cb-1441-44ea-ad0e-32b8e962b8f0",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C99",
+      "claim": "The promoter mechanism may be quite general, at least for organisms with operon-like genetic architectures.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that promoter-associated effects on transcription have been shown to underlie the fitness effects of synonymous mutations in two other microbial systems (Ando et al., 2014; Kershner et al., 2016), suggesting this mechanism may be quite general, at least for organisms with operon-like genetic architectures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion infers the generality of the mechanism from multiple studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "5d43cdad-5411-4336-8d38-962420dd8c73",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C100",
+      "claim": "Changes in translational efficiency associated with the accessibility of mRNA near a start codon have been pointed to as the primary mediator of fitness in Salmonella enterica.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, others have pointed to changes in translational efficiency associated with the accessibility of mRNA near a start codon as the primary mediator of fitness in Salmonella enterica (Kristofich et al., 2018) and synonymous mutations are known to impact fitness in a wide range of organisms beyond prokaryotes (Lawrie et al., 2013; Cuevas et al., 2012; Kashiwagi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion cites a study showing a different mechanism in another organism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "81d5f24e-182e-4829-9130-f0b280b23744",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C101",
+      "claim": "Synonymous mutations are known to impact fitness in a wide range of organisms beyond prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, others have pointed to changes in translational efficiency associated with the accessibility of mRNA near a start codon as the primary mediator of fitness in Salmonella enterica (Kristofich et al., 2018) and synonymous mutations are known to impact fitness in a wide range of organisms beyond prokaryotes (Lawrie et al., 2013; Cuevas et al., 2012; Kashiwagi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion cites studies showing fitness effects of synonymous mutations in diverse organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "af5da55b-818e-4297-949c-7dd2cbf03e5f",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "claim_id": "C102",
+      "claim": "Uncovering the full spectrum of mechanisms by which synonymous mutations impact fitness, and how often they contribute to adaptation, remains a major task for the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Uncovering the full spectrum of mechanisms by which synonymous mutations impact fitness, and how often they contribute to adaptation, remains a major task for the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The Discussion identifies future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b91b7e5a-e403-41f1-8bde-9a50c9642f46",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors used site-directed mutagenesis to generate 39 synonymous, 65 nonsynonymous, and 6 nonsense mutations at 34 sites in gtsB, then measured fitness through competitive assays in glucose-limited medium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C20, and C21 describe the experimental methodology clearly. The approach is standard and well-documented in the Materials and Methods section, with appropriate sample sizes for estimating a distribution of fitness effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "c3b0d781-d924-4a95-930b-76018aeac936",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Synonymous mutations in gtsB exhibit highly variable fitness effects, both deleterious and beneficial, with a distribution similar to nonsynonymous mutations except for strongly deleterious nonsense mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C24-C27 are supported by Figure 1A and statistical testing (K-S test, p=0.0002). The significant difference is appropriately attributed to nonsense mutations. Visual and statistical evidence converge to support the variability claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "fb179b05-1410-4d80-840e-6b9c8161c557",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The distribution of fitness effects for beneficial synonymous mutations is statistically indistinguishable from that of beneficial nonsynonymous mutations, suggesting both can contribute to adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by a bootstrapped K-S test (p=0.59) comparing beneficial mutations. The statistical test is appropriate, though the inference about adaptation (C29) is reasonable but extends beyond the direct data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "4cc7c2c6-108a-4cb1-b04e-3aa931ca2d93",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The combined distribution of beneficial mutations is L-shaped and fits a Weibull distribution (K=-0.37), suggesting a local fitness optimum consistent with theoretical predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by Figure 1B and likelihood ratio test (p=0.0077). The statistical characterization is appropriate and the inference about a fitness optimum is consistent with cited theory, though the optimum itself is not directly measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "728b8c26-9dda-4f77-8c51-1bb2e7d27105",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "No significant relationship was found between fitness and codon position, CAI, or tAI, and there is no evidence for a translational ramp in gtsB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40 report negative results with appropriate statistical tests (p>0.05 for all). The explanation in C37 about CAI being a gene-level metric is logical. These negative findings help rule out codon usage bias as the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "cc64f019-feeb-4ed2-a62c-85cdf5b9cdd7",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "mRNA stability shows a weak relationship with fitness for nonsynonymous mutations but no relationship for synonymous mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 report statistical tests with appropriate p-values. The weak effect for nonsynonymous mutations (R\u00b2=0.11) and absence of effect for synonymous mutations help rule out mRNA stability as the primary mechanism for synonymous mutation effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "YFP fusion experiments demonstrate that synonymous mutations A15A and G38G affect transcription but not translation, while the nonsynonymous mutation A10T shows effects on both.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C55 describe a well-designed experiment using transcriptional vs. translational YFP fusions (Figure 2A). The logic is sound and the data clearly distinguish transcriptional from translational effects. Statistical significance is reported (p<0.001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "2a11caa7-abe8-4a34-841b-5fff8491e0da",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "There is a strong positive correlation (R\u00b2=0.691, p=1.46\u00d710\u207b\u2078) between transcript abundance and fitness for 27 synonymous mutations, spanning both beneficial and deleterious effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by Figure 2B showing a clear linear relationship with strong statistical significance. The sample size (n=27) is adequate and the relationship holds across the fitness spectrum.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "16c3c350-1947-49ed-9d37-f977bc3aa5f9",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mutations in gtsB cause polar effects, increasing transcription of downstream gene gtsC but not upstream gene gtsA, and co-expression of downstream genes is necessary for fitness increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by Figure 2C with strong statistical significance (p<5.0\u00d710\u207b\u2075 for gtsC, p>0.60 for gtsA). The inference about co-expression necessity (C62) integrates current data with prior work (Bailey et al., 2014).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Computational promoter prediction identifies potential internal promoter sequences at beneficial mutation sites, with a non-significant trend toward positive correlation between promoter strength and fitness/transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C73 describe promoter predictions using BPROM software. While specific promoter sequences are identified (C67, C69), the relationships with fitness and transcription are not statistically significant (p=0.11-0.17, C71-C72). The limitation that BPROM uses E. coli rather than P. fluorescens sequences (C66) weakens confidence. The mechanism (C73) remains suggestive rather than proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "17bb637f-9050-41c8-aed5-ae0cbc74853f",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "5' RACE mapping identifies transcriptional start sites near predicted promoters and mutation sites, supporting the hypothesis that synonymous mutations strengthen internal promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C83 describe 5' RACE experiments (Figure 3B) that provide direct evidence for transcriptional start sites. The mapping of start sites near mutations (C76-C78) and the predicted promoter (C76) supports the internal promoter hypothesis. The interpretation (C80) is reasonable given the data, though alternative mechanisms are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "db835796-c109-4ac0-aef2-c19b9b88d4b1",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The fitness variation among synonymous mutations is caused by changes in transcription linked to the creation or strengthening of internal promoter sites that affect downstream gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C96 synthesize multiple lines of evidence: YFP fusions showing transcriptional effects (C52-C55), correlation between transcription and fitness (C56), polar effects (C58-C60), promoter predictions (C67-C69), and 5' RACE mapping (C76-C80). While the precise mechanism remains somewhat uncertain (C97), the overall evidence strongly supports transcriptional changes as the primary cause.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "5018602b-0111-473d-8fba-6ea552f092f9",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis of 77 Pseudomonas strains shows a positive correlation between mutation fitness in vitro and prevalence in nature (p=0.0210), with the highest-fitness synonymous mutation arising independently multiple times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 describe phylogenetic analysis (Figure 4) with appropriate statistical significance (p=0.0210). The independent occurrence of the highest-fitness mutation (C86) is particularly compelling. The inference that results are not laboratory artifacts (C87-C88) is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    },
+    {
+      "id": "43b71ed4-38a2-4eb1-95dc-573675ee0615",
+      "content_id": "f55cf864-14cd-4804-a390-538b5ebf00bd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Synonymous mutations with non-neutral fitness effects may be commonplace in nature and can contribute to adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, and C95 represent the main conclusion, integrating the DFE data (C2-C3), mechanistic findings (C4), and phylogenetic evidence (C85-C86). The evidence is compelling within the specific system studied (gtsB under glucose limitation), though generalization to all genes and conditions requires caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:16:21.691404Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "541ef87d-15e2-4ee9-8969-73e9472804dd",
+      "result_id": "b91b7e5a-e403-41f1-8bde-9a50c9642f46"
+    },
+    {
+      "claim_id": "67045464-bcce-4c78-93f8-c15ca6059d93",
+      "result_id": "b91b7e5a-e403-41f1-8bde-9a50c9642f46"
+    },
+    {
+      "claim_id": "94ef09ea-c18c-4ab8-9aaf-895d2387a208",
+      "result_id": "b91b7e5a-e403-41f1-8bde-9a50c9642f46"
+    },
+    {
+      "claim_id": "f2c909a0-ba0d-4b63-95a8-405fac532913",
+      "result_id": "c3b0d781-d924-4a95-930b-76018aeac936"
+    },
+    {
+      "claim_id": "5c4b4036-d43d-4a55-8dce-3c515108b9ad",
+      "result_id": "c3b0d781-d924-4a95-930b-76018aeac936"
+    },
+    {
+      "claim_id": "b5e47ae7-7628-4f12-a309-c2f944ad6100",
+      "result_id": "c3b0d781-d924-4a95-930b-76018aeac936"
+    },
+    {
+      "claim_id": "f5b5897c-c98f-48b8-9798-aaa273689155",
+      "result_id": "c3b0d781-d924-4a95-930b-76018aeac936"
+    },
+    {
+      "claim_id": "9a4b2ebf-939f-42b7-9626-91c4a5437b28",
+      "result_id": "c3b0d781-d924-4a95-930b-76018aeac936"
+    },
+    {
+      "claim_id": "132f199b-4736-471e-a626-9d4f5871be1e",
+      "result_id": "fb179b05-1410-4d80-840e-6b9c8161c557"
+    },
+    {
+      "claim_id": "0f739de5-bf27-42b1-840f-2b49fe1f611d",
+      "result_id": "fb179b05-1410-4d80-840e-6b9c8161c557"
+    },
+    {
+      "claim_id": "c2678e19-c322-43c8-b26d-9edd89350574",
+      "result_id": "fb179b05-1410-4d80-840e-6b9c8161c557"
+    },
+    {
+      "claim_id": "4d811220-5af1-4d08-869c-21a2fe01a763",
+      "result_id": "4cc7c2c6-108a-4cb1-b04e-3aa931ca2d93"
+    },
+    {
+      "claim_id": "8382b35a-805f-48c3-85de-aff2183872b3",
+      "result_id": "4cc7c2c6-108a-4cb1-b04e-3aa931ca2d93"
+    },
+    {
+      "claim_id": "0ec2f6fc-c2a2-4c5d-9e8a-2fad6d4a82d8",
+      "result_id": "4cc7c2c6-108a-4cb1-b04e-3aa931ca2d93"
+    },
+    {
+      "claim_id": "c274863e-a6f3-4a2b-8ef9-f2a01eb5db1f",
+      "result_id": "4cc7c2c6-108a-4cb1-b04e-3aa931ca2d93"
+    },
+    {
+      "claim_id": "67346f1d-ee1f-4735-9245-0c4763b239f1",
+      "result_id": "728b8c26-9dda-4f77-8c51-1bb2e7d27105"
+    },
+    {
+      "claim_id": "62aeb9cd-a41e-40fd-8610-8912d5078c2c",
+      "result_id": "728b8c26-9dda-4f77-8c51-1bb2e7d27105"
+    },
+    {
+      "claim_id": "d0f87012-6910-4508-b90b-dd7e1f646317",
+      "result_id": "728b8c26-9dda-4f77-8c51-1bb2e7d27105"
+    },
+    {
+      "claim_id": "a67c637f-b777-4618-9556-59bad477032b",
+      "result_id": "728b8c26-9dda-4f77-8c51-1bb2e7d27105"
+    },
+    {
+      "claim_id": "e50caec9-bece-4780-931a-bc4427e8bca4",
+      "result_id": "728b8c26-9dda-4f77-8c51-1bb2e7d27105"
+    },
+    {
+      "claim_id": "0585fc6e-b775-4bf1-893b-a6c5ed075759",
+      "result_id": "728b8c26-9dda-4f77-8c51-1bb2e7d27105"
+    },
+    {
+      "claim_id": "c4d6c5d8-7c47-49be-a79e-babc0a7064b6",
+      "result_id": "728b8c26-9dda-4f77-8c51-1bb2e7d27105"
+    },
+    {
+      "claim_id": "c38504dc-1ed9-4d0e-ad6f-0ea7e5ce0220",
+      "result_id": "cc64f019-feeb-4ed2-a62c-85cdf5b9cdd7"
+    },
+    {
+      "claim_id": "e5f1941d-a0f2-4cf5-94ca-a4f765e31ac5",
+      "result_id": "cc64f019-feeb-4ed2-a62c-85cdf5b9cdd7"
+    },
+    {
+      "claim_id": "9adbb61f-832d-46a6-8e27-d45f81650a60",
+      "result_id": "cc64f019-feeb-4ed2-a62c-85cdf5b9cdd7"
+    },
+    {
+      "claim_id": "47629626-e8bf-47ef-963f-05a0bf950b3c",
+      "result_id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466"
+    },
+    {
+      "claim_id": "7a360c99-e076-43fc-805c-55c0332822bb",
+      "result_id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466"
+    },
+    {
+      "claim_id": "0fb333d2-04d6-4598-9457-911f6691fe8d",
+      "result_id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466"
+    },
+    {
+      "claim_id": "14d621b6-fb31-4980-b68f-e3af68ef37d1",
+      "result_id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466"
+    },
+    {
+      "claim_id": "63f6daab-d433-4991-9ba1-4b432022db5c",
+      "result_id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466"
+    },
+    {
+      "claim_id": "31a55e61-4f4c-42f2-bb64-feafecae4b50",
+      "result_id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466"
+    },
+    {
+      "claim_id": "5b5784f3-aba5-4664-9f63-51d8a43c2612",
+      "result_id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466"
+    },
+    {
+      "claim_id": "db52ec45-8bc0-49a8-84d6-274ea8de4469",
+      "result_id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466"
+    },
+    {
+      "claim_id": "b457f31c-dfde-4924-9512-44e235439c87",
+      "result_id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466"
+    },
+    {
+      "claim_id": "4e1bd94c-319f-420b-9e4d-8de153c8f9bd",
+      "result_id": "0c9807d6-c80b-4eb9-a42d-d32a841c0466"
+    },
+    {
+      "claim_id": "7ba02ea1-866f-4650-875c-5f477b05cb6f",
+      "result_id": "2a11caa7-abe8-4a34-841b-5fff8491e0da"
+    },
+    {
+      "claim_id": "e26887ca-b4cc-4cfb-ad44-6c25685ff5ed",
+      "result_id": "2a11caa7-abe8-4a34-841b-5fff8491e0da"
+    },
+    {
+      "claim_id": "de2f1e7d-779d-4916-a315-c74cc3338426",
+      "result_id": "16c3c350-1947-49ed-9d37-f977bc3aa5f9"
+    },
+    {
+      "claim_id": "4b52816a-7061-47f5-9a5b-768570dfdeb8",
+      "result_id": "16c3c350-1947-49ed-9d37-f977bc3aa5f9"
+    },
+    {
+      "claim_id": "ffaee6cf-6d8e-499c-ba10-19db3cd08ebe",
+      "result_id": "16c3c350-1947-49ed-9d37-f977bc3aa5f9"
+    },
+    {
+      "claim_id": "c10726b3-46f8-49e6-ab8c-7e3f8139528a",
+      "result_id": "16c3c350-1947-49ed-9d37-f977bc3aa5f9"
+    },
+    {
+      "claim_id": "8f0b0ac5-0cf1-43d5-b341-432cf69f73a1",
+      "result_id": "16c3c350-1947-49ed-9d37-f977bc3aa5f9"
+    },
+    {
+      "claim_id": "41f6445e-5539-4863-a8dd-96e16e5cbe17",
+      "result_id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd"
+    },
+    {
+      "claim_id": "ac6df3df-ad83-4995-bd2c-2b7e4fdc8e26",
+      "result_id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd"
+    },
+    {
+      "claim_id": "5a540b03-64e5-4338-be97-4c7606b88c5d",
+      "result_id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd"
+    },
+    {
+      "claim_id": "58d6dc4a-47e7-4bfd-9a4c-18b45b3807c7",
+      "result_id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd"
+    },
+    {
+      "claim_id": "fd319aee-42e7-4157-8b43-2adc29522e5f",
+      "result_id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd"
+    },
+    {
+      "claim_id": "dc8b0b04-07bb-4354-9f98-e2e089ea69d8",
+      "result_id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd"
+    },
+    {
+      "claim_id": "73a89e83-8eb2-42fe-bf38-19a8aa8bb6b4",
+      "result_id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd"
+    },
+    {
+      "claim_id": "a49b3e0f-c775-4f4d-87fa-47bd587a3fd2",
+      "result_id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd"
+    },
+    {
+      "claim_id": "a40a23b2-ffa3-4801-a5dd-7fad6e557273",
+      "result_id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd"
+    },
+    {
+      "claim_id": "aa2c6f7e-7146-4f4a-b554-3d91dac1f956",
+      "result_id": "a7ace384-1ddc-4a4e-91e7-8bbc01d06abd"
+    },
+    {
+      "claim_id": "d4c113c2-efbd-4bce-9267-080578191840",
+      "result_id": "17bb637f-9050-41c8-aed5-ae0cbc74853f"
+    },
+    {
+      "claim_id": "5c02c774-6f8a-480a-aa9a-3d3c92cd02da",
+      "result_id": "17bb637f-9050-41c8-aed5-ae0cbc74853f"
+    },
+    {
+      "claim_id": "ed0f61bc-1619-4553-ba53-96b25e468161",
+      "result_id": "17bb637f-9050-41c8-aed5-ae0cbc74853f"
+    },
+    {
+      "claim_id": "1fd10eb4-20e5-4550-8569-267e0dc7fbce",
+      "result_id": "17bb637f-9050-41c8-aed5-ae0cbc74853f"
+    },
+    {
+      "claim_id": "ae593048-b5b2-488c-a7fe-17976c6d9b49",
+      "result_id": "17bb637f-9050-41c8-aed5-ae0cbc74853f"
+    },
+    {
+      "claim_id": "ae928d6c-81a3-4446-9a8b-17762c38aba2",
+      "result_id": "17bb637f-9050-41c8-aed5-ae0cbc74853f"
+    },
+    {
+      "claim_id": "5e68f5f6-3506-4f81-89b8-949180b534d1",
+      "result_id": "17bb637f-9050-41c8-aed5-ae0cbc74853f"
+    },
+    {
+      "claim_id": "23bdcc6b-b29e-49d5-a36d-0f448d0da46d",
+      "result_id": "17bb637f-9050-41c8-aed5-ae0cbc74853f"
+    },
+    {
+      "claim_id": "c2c355a8-75bd-41e9-b734-512ab47532ad",
+      "result_id": "17bb637f-9050-41c8-aed5-ae0cbc74853f"
+    },
+    {
+      "claim_id": "e5bdcdde-f5bb-4e83-ac66-74f8f4291c76",
+      "result_id": "17bb637f-9050-41c8-aed5-ae0cbc74853f"
+    },
+    {
+      "claim_id": "ed2e7898-c0e7-47bd-b8c6-26ca43f8b657",
+      "result_id": "db835796-c109-4ac0-aef2-c19b9b88d4b1"
+    },
+    {
+      "claim_id": "dafbaff3-7ce8-4151-9568-e5d0a3a84694",
+      "result_id": "db835796-c109-4ac0-aef2-c19b9b88d4b1"
+    },
+    {
+      "claim_id": "c1b1444a-1b59-4b91-b6a5-c971ef275866",
+      "result_id": "5018602b-0111-473d-8fba-6ea552f092f9"
+    },
+    {
+      "claim_id": "48f0a283-bc14-49ab-960b-7aacd1be8ad0",
+      "result_id": "5018602b-0111-473d-8fba-6ea552f092f9"
+    },
+    {
+      "claim_id": "ab12b0f6-c065-4675-bc0a-a4074f64c01e",
+      "result_id": "5018602b-0111-473d-8fba-6ea552f092f9"
+    },
+    {
+      "claim_id": "75ba7bdc-126c-43c4-97b2-3b8ecce5d67a",
+      "result_id": "5018602b-0111-473d-8fba-6ea552f092f9"
+    },
+    {
+      "claim_id": "4a0bf56d-62a2-402c-b625-61120b7efbc2",
+      "result_id": "5018602b-0111-473d-8fba-6ea552f092f9"
+    },
+    {
+      "claim_id": "b377d5dc-8bb2-4146-b55f-1d04e982522a",
+      "result_id": "43b71ed4-38a2-4eb1-95dc-573675ee0615"
+    },
+    {
+      "claim_id": "d588a044-87bd-462a-8896-7a01a6d038ab",
+      "result_id": "43b71ed4-38a2-4eb1-95dc-573675ee0615"
+    },
+    {
+      "claim_id": "3682f27c-c3af-459b-93a7-2ebde0bf9b38",
+      "result_id": "43b71ed4-38a2-4eb1-95dc-573675ee0615"
+    }
+  ],
+  "comparisons": []
+}

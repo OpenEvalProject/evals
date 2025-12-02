@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21"
+    ],
+    "result": "Mass spectrometry methods were used to determine physiological enzyme concentrations and Michaelis-Menten kinetic parameters. Single reaction monitoring (SRM) mass spectrometry estimated cellular concentrations of ARIH1, UBE2D1/2/3, UBE2R1/2, CUL1, and SKP1 in multiple cell lines (C4, C21). Multi-turnover Michaelis-Menten kinetic assays determined the enzyme levels necessary to saturate SCF complexes (C20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-supported by the data presented in Tables 1 and 2 and Figures 1 and supplementary figures. The SRM mass spectrometry approach is appropriate for absolute quantification, and the Michaelis-Menten kinetic assays are standard methods for determining enzyme saturation levels. The methods are described in sufficient detail in the Materials and Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "ARIH1 catalyzes rapid ubiquitin chain initiation and modest elongation at both saturating and physiological concentrations. At saturating concentrations, ARIH1 transfers the first ubiquitin at 0.5 sec\u207b\u00b9, the second at 0.2 sec\u207b\u00b9, and the third at 0.08 sec\u207b\u00b9 (C22-C24). Reducing ARIH1 to physiological levels resulted in only modest rate reductions (C25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic data from pre-steady state quench flow experiments (Figure 2, Table 3) directly support these rate measurements. The finding that rates remain substantial at physiological concentrations is important and well-documented. The progressive decrease in rates with successive ubiquitin transfers is consistent with the observed product distributions in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C53"
+    ],
+    "result": "UBE2D3 exhibits pronounced substrate/receptor specificity in chain initiation. With SCFFBW7 and Cyclin E, UBE2D3 initiates chains at 0.1 sec\u207b\u00b9 (C26), but with SCF\u03b2TRCP and \u03b2-Catenin, the rate is 50-fold faster at 5 sec\u207b\u00b9 (C27, C53), indicating strong substrate/receptor preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 50-fold difference in chain initiation rates between the two substrate/receptor combinations (Figure 2\u2014figure supplements 2 and 3, Table 3) provides strong evidence for substrate specificity. This is a key finding that distinguishes UBE2D3 from ARIH1, which shows more uniform activity across substrates. The data are internally consistent and well-replicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C6",
+      "C52"
+    ],
+    "result": "UBE2R2 exhibits concentration-dependent activity: robust at saturating levels but negligible at physiological concentrations. At 10 \u03bcM, UBE2R2 initiates chains at 0.1-0.2 sec\u207b\u00b9 and extends chains rapidly at 30-40 sec\u207b\u00b9 (C28-C29). However, at physiological concentrations (~0.5 \u03bcM), product formation is nearly eliminated (C30, C6), indicating UBE2R2 cannot support chain initiation in vivo (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dramatic concentration dependence is well-documented in Figures 2\u2014figure supplements 4 and 5, and Figure 3. The comparison between saturating and physiological conditions is critical and clearly demonstrates that UBE2R2's impressive in vitro activity at high concentrations does not translate to physiological relevance. This reconciles the apparent paradox between UBE2R2's biochemical capabilities and its dispensability in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "ARIH1 and UBE2D3 promote SCF-mediated polyubiquitylation in combination with UBE2R1/2 in a substrate-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim is supported by the detailed kinetic data showing that both ARIH1 and UBE2D3 can initiate chains that are then extended by UBE2R1/2, with the efficiency varying by substrate (Figures 2\u2014figure supplements 6-9, Figure 3). The substrate specificity is particularly evident for UBE2D3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C7"
+    ],
+    "result": "UBE2R1/2 are dispensable for SCF substrate degradation and cell cycle progression. Loss of UBE2R1 alone (C31-C32) or both UBE2R1/2 (C33-C36) did not affect the stability of SCF substrates (\u03b2-CATENIN, CYCLIN E, p27, I\u03baB\u03b1) or cell cycle distribution, demonstrating that UBE2R1/2 are not essential for these processes (C37, C7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic data from multiple independent knockout clones (Figure 5) consistently show no significant stabilization of multiple SCF substrates or cell cycle defects. The cycloheximide chase experiments, TNF\u03b1-induced degradation assays, and flow cytometry provide converging evidence. This is a surprising finding given the in vitro activity of UBE2R2 and the essential role of yeast Cdc34.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C8",
+      "C64"
+    ],
+    "result": "A genome-wide CRISPR screen identified UBE2G1 as the sole significant genetic interactor buffering UBE2R1/2 loss. UBE2G1 scored as the top synthetic lethal hit in UBE2R1/2 double knockout screens but not in single knockouts (C39), and was the only statistically significant hit (FDR < 0.05) across all screens (C40). No other significant interactions were detected, including with ARIH1 or UBE2D3 (C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR screen data (Figure 6) provide unbiased genome-wide evidence for the specific genetic interaction between UBE2G1 and UBE2R1/2. The statistical analysis is appropriate, and the validation experiments (Figure 6\u2014figure supplement 2) confirm the screen results. The absence of other significant hits is notable and suggests that ARIH1 and UBE2D3 elongation activities cannot compensate for loss of all three elongation E2s.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C10"
+    ],
+    "result": "UBE2G1 knockdown in UBE2R1/2 double knockout cells causes stabilization of multiple CRL substrates. In UBE2R1/2 knockout cells, UBE2G1 depletion strongly increased p27 and CYCLIN E (SCF substrates) as well as HIF1\u03b1 (CRL2 substrate) levels (C41-C43), demonstrating functional redundancy across the CRL family (C10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The siRNA knockdown experiments (Figure 7a,b) show clear and statistically significant stabilization of multiple substrates specifically in the UBE2R1/2 knockout background. The extension to CRL2 substrates (HIF1\u03b1) demonstrates that UBE2G1 functions broadly across CRL complexes. The quantification and statistical analysis support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C9",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "UBE2G1 functions as a dedicated chain elongation E2 for SCF complexes. UBE2G1 lacks chain initiation activity but exhibits robust elongation activity on mono-ubiquitylated substrates (C44) with a Km of 1.30 \u00b1 0.2 \u03bcM (C45). UBE2G1 cooperates with ARIH1 or UBE2D3 in hand-off reactions (C46) with transfer rates of 1 \u00b1 0.1 sec\u207b\u00b9 (C47). While less efficient than UBE2R2 (173-fold lower efficiency for first transfer, C48), UBE2G1 activity is sufficient for substrate polyubiquitylation (C49) and can buffer against UBE2R1/2 loss (C50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro kinetic data (Figure 7, Figure 7\u2014figure supplements) comprehensively characterize UBE2G1's enzymatic properties. The lack of initiation activity combined with robust elongation activity clearly defines UBE2G1 as a dedicated elongation enzyme. The efficiency comparison with UBE2R2 is quantitative and well-supported. The integration of in vitro biochemistry with cellular genetic data provides strong evidence for UBE2G1's buffering function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "ARIH1 and UBE2D3 chain initiation rates are relatively insensitive to enzyme concentration across physiological to saturating levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is supported by the kinetic data showing that reducing ARIH1 or UBE2D3 from saturating to physiological levels results in only modest (2-fold or less) rate reductions (Figures 2, 4, Table 3). This contrasts sharply with UBE2R2 and has important implications for understanding which enzymes are functionally relevant in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C63",
+      "C65"
+    ],
+    "result": "Human CRL function is genetically buffered compared to yeast. Loss of UBE2R1/2 alone causes no proliferation defects, but simultaneous loss of UBE2R1/2 and UBE2G1 is lethal (C54). The genome-wide screen detected no other significant genetic interactions (C63), implying ARIH1 and UBE2D3 elongation activities cannot compensate for loss of all three elongation E2s (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic data from knockout cells (Figure 5) and CRISPR screens (Figure 6) provide strong evidence for genetic buffering. The synthetic lethality of the triple knockout (Figure 6\u2014figure supplement 2c) combined with viability of the double knockout demonstrates the buffering relationship. The comparison to yeast Cdc34, which has many synthetic lethal interactions, highlights the evolutionary divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C55",
+      "C75"
+    ],
+    "result": "The human SCF system is diversified through multiple catalytic enzyme partners. The results demonstrate that human SCF function involves multiple initiating (ARIH1, UBE2D3) and elongating (UBE2R1/2, UBE2G1) enzymes (C11), representing additional regulatory layers compared to yeast (C55). This multiplicity allows elaborate specificity across the SCF substrate repertoire (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates the kinetic, genetic, and biochemical data presented throughout the manuscript. The evidence for multiple functional enzyme partners is strong, and the comparison to the simpler yeast system (which uses only Cdc34) is well-supported. The substrate specificity data (particularly for UBE2D3) support the claim about elaborate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "UBE2R1/2 concentrations in human cells are insufficient for chain initiation but adequate for elongation. Human UBE2R1/2 levels (~0.2 \u03bcM) are at least 10-fold lower than yeast Cdc34 and well below the Km for unmodified substrate (C58), but similar to the Km (~0.3 \u03bcM) for mono-ubiquitylated substrate (C59), explaining why UBE2R1/2 can promote elongation but not initiation in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation effectively reconciles the biochemical and cellular data by comparing the measured cellular concentrations (Table 2) with the Km values for different substrate states (Table 1). The logic is sound: UBE2R1/2 concentrations are below the Km for initiation but near the Km for elongation, explaining the concentration-dependent activity observed in vitro.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "A fraction of UBE2R1 localizes to cellular foci where local concentrations may be higher.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The immunofluorescence data (Figure 5\u2014figure supplement 5) show UBE2R1 foci, but the functional significance is unclear. The authors appropriately note this as a \"possible exception\" to their interpretation about UBE2R1/2 concentrations. Without quantification of local concentrations in foci or demonstration that SCF substrates co-localize, the functional relevance remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "UBE2R1/2 function may be essential in other cell lines or organismal contexts despite viability in transformed cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is appropriately presented as speculation. The viability of UBE2R1/2 double knockouts in two transformed cell lines (HEK293T and NALM-6) is clear, but the authors correctly note that essentiality may vary by cell type or in vivo context. The citation of partial I\u03baB\u03b1 stabilization in U2OS cells (C68) supports this possibility, but definitive evidence would require testing in additional contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Separation of chain initiation and elongation functions provides additional regulatory opportunities. ARIH1 activity is restricted to neddylated, substrate-bound SCF complexes (C70-C71), preventing unwanted auto-ubiquitylation since UBE2R1/2 can modify un-neddylated SCF in vitro (C72). This separation of function affords opportunities to diversify SCF ligase control (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the biochemical properties of ARIH1 (neddylation-dependence) and UBE2R1/2 (activity with un-neddylated SCF) are supported by citations to prior work, the proposed regulatory advantage is speculative. The authors appropriately present this as a hypothesis (\"may prevent\") rather than demonstrated fact. Direct evidence that this mechanism prevents auto-ubiquitylation in cells is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "E2-E3 affinity and competition between initiating enzymes contribute to substrate specificity. The Km of UBE2D3 for SCFFBW7 is significantly higher than for SCF\u03b2TRCP (C73), and ARIH1 but not UBE2D3 supports ubiquitylation of CRY1 bound to SCFFbxL3 (C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Km comparison is directly supported by Table 1 data. The CRY1/SCFFbxL3 example is supported by citation to prior work (Scott et al., 2016). These observations support the broader claim about substrate/receptor specificity determining which initiating enzyme is used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C56",
+      "C57",
+      "C66",
+      "C68",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Background and context claims about the ubiquitin-proteasome system, CRLs, and prior work on SCF enzymes in yeast and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background context and are supported by appropriate citations to the literature. They establish the foundation for understanding the significance of the current work. The claims about yeast SCF function (C2, C15, C56-C57, C66) and prior work on human SCF enzymes (C3, C16-C19) are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Cell line authentication and quality control measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The NALM-6 cell line source, authentication by whole genome sequencing, and mycoplasma testing are appropriately documented. These quality control measures are important for reproducibility and are adequately described.",
+    "result_type": "MINOR"
+  }
+]

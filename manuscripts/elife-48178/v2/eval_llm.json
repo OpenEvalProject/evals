@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors developed a multipatch setup capable of recording up to 10 neurons simultaneously using custom-made stages and hardware configurations. Ten Sensapex manipulators were arranged on a custom stage with a Nikon microscope, and an 8-manipulator setup was established with Scientifica equipment. The custom stages used aluminum and steel construction with optimized 27\u00b0 approach angles, and hardware solutions included five amplifiers connected to enable 10-channel recording with a custom routing device to overcome DAC limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C32 provide detailed technical specifications and are supported by explicit descriptions in the methods section and visual evidence in Figure 1. The hardware configuration is thoroughly documented with specific component details, demonstrating the feasibility of the 10-channel recording system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "An automated pressure control system was developed that can be built within a week using basic equipment. The system uses specific pressure levels (20 mbar LOW, 70 mbar HIGH) for different experimental phases, with fine adjustment of suction being crucial for achieving high success rates (up to 88%). The cleaning process takes approximately 1 minute and can be executed for multiple pipettes simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are well-supported by detailed methods descriptions and Figure 2 showing the pressure system design. The success rate data (C36) is supported by performance results (C48), and the comparison to automated systems (C37) is properly cited. The practical characteristics are explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Pipette cleaning using Alconox detergent does not systematically alter cellular or synaptic physiology in rat neurons. Control experiments showed no significant changes (p>0.05) in cellular and synaptic parameters after cleaning, with mean relative differences between 0-10%. The estimated adherent Alconox volume (<0.2 \u00b5l) is far below the amount needed to reach critical concentrations, and a 98% success rate was achieved after cleaning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are strongly supported by control experiments in rat tissue with appropriate statistical analysis (repeated measures ANOVA, p>0.05) and data shown in Figure 3. The calculations regarding detergent concentration (C41-C42) are based on reasonable assumptions. The high success rate (C46) provides additional validation of the method's effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Performance analysis of multipatch setups without cleaning showed that success rates decreased as the number of manipulators increased: 88\u00b112% for 6 pipettes (5.3\u00b10.7 cells, 23\u00b17 connections), 85\u00b113% for 8 pipettes (6.8\u00b11 cells, 41\u00b113 connections), and 79\u00b111% for 10 pipettes (7.9\u00b11.1 cells, 56\u00b117 connections). Experimental time increased from 36.6\u00b12.3 min to 46.1\u00b14.6 min when scaling from 8 to 10 pipettes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by quantitative data from rodent experiments (n=30, 33, and 10 for different configurations) shown in Figure 4B-D. The trend of decreasing success rates with increasing pipette numbers is clearly documented with appropriate statistics (mean\u00b1SD). This establishes baseline performance for comparison with cleaning strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C21",
+      "C24",
+      "C25"
+    ],
+    "result": "The clean-to-complete strategy dramatically increased cluster completion rates to 97\u00b15% (8 pipettes) and 92\u00b16% (10 pipettes). Combined cleaning strategies (clean-to-complete and clean-to-extend) increased tested connections from 140\u00b124 to 244\u00b152 per animal on the 8-pipette setup. This approach overcomes spatial limitations and increases experimental yield while decreasing experimental time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C24-C25, C52-C53 are well-supported by data in Figure 5B-D showing substantial improvements in success rates and connection numbers. The clean-to-complete strategy addresses the declining success rates documented in C47-C50, and the quantitative improvements are clearly demonstrated with appropriate sample sizes (n=16, 9, and 6 animals).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The distance distribution of tested connections remained consistent across multiple rounds of recording with clean-to-extend, with median distances of 84 \u00b5m (IQR 61-110 \u00b5m) for initial clusters, 85 \u00b5m (IQR 62-109 \u00b5m) for second round, and 84 \u00b5m (IQR 60-107 \u00b5m) for third round.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by analysis of 1324 connections (662 pairs) showing no systematic shift in distance distributions across recording rounds. This addresses potential bias concerns about the clean-to-extend approach and validates that the method samples similar spatial scales across sessions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C55",
+      "C56"
+    ],
+    "result": "The method enabled recording of up to 17 neurons in a single human slice (150 tested connections) and screening of 300-700 connections per patient within 24 hours using two setups simultaneously. This represents a substantial increase in throughput allowing microcircuit analysis at the individual patient level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C26, C55-C56 are strongly supported by data in Figure 6A showing the 17-neuron recording and Figure 6F showing 336-694 tested connections across three patients. This demonstrates the practical application of the method to human tissue and validates the claimed throughput improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Excitatory connectivity between pyramidal cells in human cortical layer 2/3 ranged from 12.9% to 17.7% across three patients. Inter-individual differences were not statistically different (p>0.05 for all comparisons) but were statistically equivalent within a range of -5% to 9.5%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by connectivity data from three patients with appropriate statistical analysis (Fisher's exact test and equivalence testing). The connection probabilities are consistent with prior studies (properly cited), and the equivalence analysis provides evidence for limited inter-individual variability in this parameter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The semi-automated approach achieved higher success rates (88%/85%/79% on 6-/8-/10-manipulator setups) compared to fully automated systems (43-51%) and was faster for pipette positioning (53-55 s per pipette) than fully automated methods (103 s), though manual cell approach took slightly longer (126-154 s vs 120 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by performance data from this study compared to properly cited prior work (Wu et al., 2016; Kolb et al., 2019). The comparison demonstrates advantages of the semi-automated approach, though the slightly longer manual approach time is acknowledged. The success rate advantage is substantial and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Multipatch recordings represent the gold standard for microcircuit analysis, offering sub-millisecond and subthreshold resolution to reliably detect unitary synaptic connections, detailed electrophysiological and morphological characterization, and applicability across species without genetic modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C15 are supported by established knowledge and appropriate citations (Hochbaum et al., 2014; Packer et al., 2015; Geiger et al., 1997; Markram et al., 2004). These claims establish the rationale for the multipatch approach and are consistent with the field's understanding of the method's capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "While feedforward cortical connectivity is stereotypical, intralaminar connectivity is heterogeneous across brain regions. Distinctive microcircuit features in humans remain unresolved, and the scarcity of human tissue necessitates pooling data across patients, which is problematic given high inter-individual variability in genetic background, medical history, and medication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 establish the scientific context and motivation for the study. They are supported by appropriate citations (Douglas and Martin, 2004; Jiang et al., 2015; Peng et al., 2017; Seeman et al., 2018) and represent accurate characterizations of knowledge gaps and practical constraints in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23"
+    ],
+    "result": "Increasing the number of simultaneously recorded neurons substantially increases testable connections, but operating multiple manipulators is challenging due to spatial constraints. While various groups have increased recording numbers and developed automation approaches, setups with 8+ manipulators are used by only a few labs. Pipette cleaning has been implemented for single-neuron automated patch-clamp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20, C22-C23 are supported by appropriate citations and logical reasoning. The scaling relationship for connections (C16) is demonstrated in Figure 4A. The practical challenges (C18, C22) and limited adoption of large setups (C20) represent accurate characterizations of the field, and prior automation work (C19, C23) is properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Underestimation of synaptic connectivity in slice experiments is an ongoing concern. Simulations suggest correction factors of 1.3-1.7 for slicing effects, though in vivo recordings found lower connectivity (6.7%) than slice experiments (9.3%) in mouse barrel cortex. Detection limits from background noise suggest a correction factor of 1.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 accurately characterize methodological limitations and are supported by appropriate citations (Seeman et al., 2018; Jiang et al., 2015, 2016; Barth et al., 2016; Levy and Reyes, 2012; Jouhanneau et al., 2018; Lefort et al., 2009). These claims provide important context for interpreting connectivity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Alternative optical and stimulation methods can probe connectivity in more neurons than multipatch but have limitations. All-optical approaches with calcium imaging (up to 20 neurons) cannot resolve single action potentials or subthreshold signals. Voltage indicators offer better resolution but face technical challenges. Multipatch in vivo is limited to 4 pipettes. Glutamate uncaging and optogenetic stimulation can map inputs from 10-200 presynaptic neurons but lack reciprocal connectivity information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 provide accurate comparisons to alternative methods with appropriate citations (Emiliani et al., 2015; Packer et al., 2015; Hochbaum et al., 2014; Jouhanneau et al., 2018; Kodandaramaiah et al., 2018; Fino and Yuste, 2011; J\u00e4ckel et al., 2017; Izquierdo-Serra et al., 2018). The limitations and capabilities of each method are fairly characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Human tissue was obtained from epilepsy patients with written consent and ethical approval (EA2/111/14). Rodent experiments used transgenic rats (19-35 days) and C57BL/6N mice (21-42 days) with appropriate ethical approvals. Detailed slice preparation, recording conditions (34\u00b0C, specific aCSF compositions, 400 \u00b5m human/300 \u00b5m rodent slices), and data acquisition parameters (6 kHz filtering, 20 kHz sampling, 4 APs at 20 Hz, 30-50 sweeps) are specified. Quality criteria for successful recordings are defined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C85 provide comprehensive methodological details that are explicitly stated in the methods section. These technical specifications are essential for reproducibility and are appropriately documented with specific parameters, ethical approvals, and quality criteria. The methods are consistent with standard practices in the field.",
+    "result_type": "MINOR"
+  }
+]

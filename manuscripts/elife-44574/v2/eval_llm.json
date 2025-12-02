@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "B cells form BCR-Ag microclusters that move centripetally and coalesce into a cSMAC within ~10 minutes when encountering antigen on APCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C25-C28 are well-supported by imaging data in Figure 1B and Video 1, showing BCR microcluster formation, centripetal movement, and cSMAC formation. This is a well-established phenomenon in the field with strong visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The Arp2/3 complex is required for BCR microcluster coalescence into a cSMAC, with inhibition or depletion preventing this process without affecting initial microcluster formation or antigen gathering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C47 are strongly supported by data in Figure 2 showing that Arp3 siRNA depletion or CK-666 inhibition prevents cSMAC formation (~15% vs ~60% in controls) while maintaining similar numbers and total antigen content of microclusters. The mechanistic link is well-demonstrated through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C56"
+    ],
+    "result": "Arp2/3 complex activity is essential for BCR-induced actin reorganization, with inhibition or depletion causing dramatic alterations in actin structure and substantially reduced cell spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C55-C56 are supported by STED microscopy data in Figure 3A,B showing that Arp2/3 complex inhibition/depletion transforms dense peripheral branched actin networks into long, loosely packed filopodia-like structures and reduces spreading. The conclusion about essentiality is justified by the dramatic phenotypic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Arp2/3 complex activity is required for peripheral actin dynamics, with inhibition causing peripheral actin structures to become nearly static compared to ~2.5 \u00b5m/min retrograde flow in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by TIRF-SIM imaging and kymograph analysis in Figure 3E and Videos 8-9, demonstrating quantifiable differences in actin dynamics. The dramatic reduction in actin flow provides strong evidence for the Arp2/3 complex's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Arp2/3 complex-dependent actin structures encage BCR-Ag microclusters and drive their centripetal movement through actin retrograde flow, which is required for cSMAC formation, though the complex may be dispensable for initial APC surface probing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C69 are supported by high-resolution ISIM imaging (Figures 4-5, Videos 10-11) showing that BCR-Ag microclusters move with similar velocities as surrounding actin structures in controls but become immobile when Arp2/3 is inhibited. The inference about encagement and retrograde flow driving centralization is well-supported, though the claim about dispensability for probing (C64) is more tentative as it's based on similar area explored despite different protrusion architectures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Arp2/3 complex activity amplifies proximal BCR signaling (CD79 and Syk phosphorylation) in response to APC-bound antigens but not soluble antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 are supported by immunofluorescence imaging (Figure 6A,B,E,F) and immunoblotting (Figure 6C,D) showing significantly reduced pCD79 and pSyk levels at multiple time points when Arp2/3 is inhibited in response to APC-bound antigens, but not soluble anti-Ig. The differential effect on membrane-bound vs soluble antigens is a key finding well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Inhibiting the Arp2/3 complex increases tonic BCR signaling and BCR mobility, suggesting the complex contributes to actin-based barriers that normally limit BCR diffusion and basal signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by immunoblotting data (Figure 6C,D, 7A) showing increased basal pCD79, pERK, and pAkt in CK-666-treated cells, and single-particle tracking data (Figure 7B-D) showing ~2.8-fold increased BCR diffusion coefficients and larger confinement diameters. The inference about actin-based barriers is reasonable given the coordinated changes in signaling and mobility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Arp2/3 complex-dependent actin structures limit CD19 mobility, promote APC-induced CD19 phosphorylation, and enhance BCR-CD19 interactions in response to membrane-bound antigens but not soluble antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C97 are supported by single-particle tracking showing 2.3-fold increased CD19 mobility with Arp2/3 inhibition (Figure 8A), immunofluorescence showing diminished and delayed CD19 phosphorylation (Figure 8B,C), and Manders' coefficient analysis showing reduced pCD19-BCR overlap (Figure 8D,E). The specificity for membrane-bound antigens is demonstrated by lack of effect on soluble anti-Ig responses. The mechanistic link between mobility, phosphorylation, and BCR-CD19 interactions is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Arp2/3 complex inhibition impairs APC-induced B cell activation responses including transcriptional responses (~30% of control), activation marker upregulation (40-50% inhibition), and this effect is B cell-intrinsic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C108 are supported by flow cytometry data showing reduced Nur77-GFP expression (Figure 9B), CD69 and CD86 upregulation (Figure 9C,D) with CK-666 treatment. The B cell-intrinsic nature is demonstrated by experiments with Arp3-depleted APCs (Figure 9\u2014figure supplement 3). The specificity is shown by lack of effect on PMA+ionomycin responses (Figure 9E). The quantitative effects are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Arp2/3 complex-dependent processes during the initial stages (first 24 hours) of B cell-APC interactions are required for B cell activation, with effects being rapidly reversible upon drug removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111, C121-C123 are supported by time-course experiments showing that CK-666 added early but not late (after 5 min or 24 hr) impairs activation (Figure 9F,H), and drug washout experiments showing recovery of cSMAC formation and activation (Figure 9\u2014figure supplement 4). This temporal specificity is important for understanding the mechanism and is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C124"
+    ],
+    "result": "Arp2/3 complex activity is important for B cells to enter S phase and proliferate, with inhibition reducing blast cell formation (from 30-55% to 5-16%) and proliferation (from >90% to ~55% dividing cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120, C124 are supported by flow cytometry data showing reduced blast cell formation (Figure 9G) and CFSE dilution assays showing reduced proliferation with increased cell death (Figure 9H). The quantitative effects are substantial and well-documented. The conclusion about importance for S phase entry is justified by the coordinated effects on blast formation and proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Myosin contractility has little or no involvement in APC-induced activation marker expression and cSMAC formation under the experimental conditions tested, in contrast to Arp2/3 complex activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are supported by data showing that pnBB treatment (myosin inhibitor) does not significantly reduce CD69/CD86 upregulation or cSMAC formation (Figure 9\u2014figure supplement 5), unlike CK-666. However, the authors appropriately qualify this as being specific to their experimental conditions, acknowledging that myosin may have roles in other contexts. The negative result is adequately controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "B cells continually extend and retract short-lived actin-rich protrusions to scan ~100 \u00b5m\u00b2 of APC surface over 4 minutes, with BCR-Ag microclusters forming within these protrusions and moving centripetally with the actin at similar velocities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are supported by high-resolution ISIM imaging (Figure 1C-E, Video 2) showing dynamic protrusions, area quantification, and kymograph analysis demonstrating similar velocities for actin and BCR-Ag microclusters. The inference that actin dynamics drive microcluster movement (C34) is reasonable given the velocity correlation, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "B cells exhibit largely radial spreading when contacting immobilized anti-IgG on rigid glass coverslips, reaching ~150 \u00b5m\u00b2 after 10 minutes and forming multiple large lamellipodia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by imaging data in Figure 1F,G and Video 3. This serves as an important control showing different B cell behavior on rigid surfaces versus APCs, which is relevant for interpreting the biological significance of the APC-based experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23"
+    ],
+    "result": "The Arp2/3 complex nucleates branched actin networks by binding to existing filaments and nucleating new filaments at 70\u00b0 angles, underlying formation of lamellipodia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C23 are established knowledge about Arp2/3 complex function, supported by citations to previous work (Goley and Welch, 2006; Pollard and Borisy, 2003). This background information is accurately presented and relevant for understanding the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24"
+    ],
+    "result": "Background claims about immune synapse formation, B cell function, BCR signaling mechanisms, and Wiskott-Aldrich Syndrome are accurately presented based on established knowledge and citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C21, C24 represent established knowledge in the field, supported by appropriate citations. These provide necessary context for the experimental work. The statement that a role for actin retrograde flow in B cell cSMAC formation had not been established (C21) accurately describes the knowledge gap this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Summary claims that B cells use Arp2/3 complex-dependent dynamic actin-rich protrusions to scan APCs, generate retrograde flow for BCR microcluster centralization and cSMAC formation, and amplify BCR signaling, transcriptional responses, and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 are high-level summary statements that accurately synthesize the major findings demonstrated throughout the paper. These are supported by the collective evidence from imaging (Figures 1-5), signaling (Figure 6), and functional assays (Figure 9). The claims appropriately integrate the mechanistic and functional findings.",
+    "result_type": "MAJOR"
+  }
+]

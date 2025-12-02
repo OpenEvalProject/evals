@@ -1,0 +1,575 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The NMR spectrum of NTR-ACD shows widespread chemical shift perturbations compared to B1-ACD, indicating that the ACD does not behave independently of the NTR. Despite these perturbations, the majority of residues give rise to similar chemical shifts, indicating the ACD structure is retained but the environment is altered due to NTR proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 are supported by NMR spectral data (Figure 2A) showing few perfectly overlapping peaks between B1-ACD and NTR-ACD, yet similar chemical shift fingerprints. The conclusion that the ACD structure is retained but its environment is altered by NTR proximity is a reasonable inference from the CSP data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The largest chemical shift perturbations in the NTR-ACD spectrum map to the \u03b23, \u03b24, and \u03b28 strands and loop L3/4, which compose the \u03b24/\u03b28 groove and dimer interface groove. Some residues show absent or broadened resonances due to intermediate exchange, indicating NTR interactions with these grooves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by CSP analysis (Figure 2B) and 3D NMR spectra showing missing peaks. The inference that broadening arises from NTR-induced dynamics is reasonable given the absence of such behavior in B1-ACD alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Multiple peaks are observed for four ACD residues (110, 114, 148, 123) in the NTR-ACD spectrum, indicating slow exchange between different chemical environments with lifetimes >500 ms. This behavior is not observed in B1-ACD and occurs near regions showing CSPs and exchange broadening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by NMR spectral analysis showing peak doubling and frequency differences. The calculation of exchange lifetime from frequency differences is standard NMR practice and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A mixing experiment with 15N-B1-ACD and unlabeled NTR-ACD reveals that new peaks in the mixed-dimer spectrum align with NTR-ACD peaks, particularly for residues in the \u03b24/\u03b28 groove. This provides unambiguous evidence that NTR/ACD interactions occur between subunits within a dimer, with the \u03b24/\u03b28 groove as a primary interaction site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 are supported by the mixing experiment NMR data (Figure 2A). The experimental design is sound, using reducing conditions to prevent disulfide formation and allowing mixed dimer formation. The conclusion that inter-subunit NTR-ACD interactions occur is well-supported by the appearance of new peaks matching the NTR-ACD spectrum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Peptide binding experiments show that peptides from the distal, aromatic, conserved motif, and boundary regions cause distinct changes in the B1-ACD NMR spectrum, while the Trp-rich peptide shows no perturbations. PRE experiments confirm these interactions are recapitulated in full-length protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by peptide binding NMR data (Figures 3, 4) and PRE data (Figure 5). The negative control (Trp-rich peptide) strengthens confidence in the specificity of observed interactions. Agreement between peptide binding and PRE results validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The distal peptide (residues 1-13) binds to the \u03b24/\u03b28 groove, causing CSPs that shift along a trajectory from B1-ACD to NTR-ACD positions. This indicates the distal region binds to the \u03b24/\u03b28 groove of the other subunit in a domain-swap relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by peptide binding NMR data (Figures 3, 4A-B) showing CSPs mapping to the \u03b24/\u03b28 groove and peak trajectories. The domain-swap conclusion is a reasonable inference combining peptide binding with the mixing experiment results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "PRE data from a spin label at position 2 shows discrete intensity loss in loops L7/8 and L4/5 near the \u03b24/\u03b28 groove, indicating the distal region inhabits a highly localized position oriented parallel to \u03b28 and antiparallel to \u03b24. This is opposite to the CTR IXI motif orientation and represents a novel interaction where alternating hydrophobic residues (6VPFSLL11) bind the groove.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C88 are supported by PRE NMR data (Figures 3, 5A) showing discrete intensity losses. The inference about orientation is reasonable from the PRE pattern. The comparison to the CTR IXI motif (C81) is supported by citation to a crystal structure. The proposal about alternating hydrophobic residues (C85) is speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The conserved motif binds at the dimer interface groove, while the aromatic region spans between the \u03b24/\u03b28 groove and dimer interface, contacting loops L3/4 and L5/6. Phosphorylation at Ser15 disrupts aromatic region binding, potentially through an electrostatic mechanism involving negatively-charged residues in L3/4 and L5/6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are supported by peptide binding and PRE NMR data (Figures 3, 4C-E, 5B). The effect of Ser15 phosphorylation is demonstrated by comparing phosphorylated and non-phosphorylated peptides (Figure 4\u2014figure supplement 1A). The proposed electrostatic mechanism (C95) is speculative but reasonable given the sequence composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The conserved motif binds at the dimer interface groove, as shown by intensity loss in \u03b23, \u03b26+7, and L3/4 upon peptide addition and PRE from position 26. This interaction has been observed in HSPB6 and HSPB2/3 structures and likely exists in HSPB1 given sequence conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by peptide binding and PRE NMR data (Figures 3, 4E, 5B). The comparison to other sHSPs (C98) is supported by citations. The inference about HSPB1 (C99) is reasonable based on sequence conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The Trp-rich region is highly sensitive to mutagenesis, with cysteine substitutions causing oligomerization that overrides dimer-promoting mutations. This implicates the Trp-rich region in maintaining oligomeric balance and is consistent with it harboring the disease mutation P39L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by experimental observations of mutant behavior. The inability to obtain suitable PRE constructs is a limitation but the inference about the region's role in oligomerization is reasonable from the observed effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The insertion region does not make sustained contact with any specific ACD region but rather 'hovers' over all faces of the ACD, as indicated by widespread but modest PREs from a spin label at position 65.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by PRE NMR data (Figure 5C) showing widespread but modest intensity losses. The 'hovering' interpretation is reasonable for this PRE pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The boundary region interacts at the dimer interface groove, spanning it in an antiparallel direction to \u03b23 consistent with \u03b22 strand formation. Spin labels at positions 83 and 91 flanking the putative \u03b22 strand show PREs on opposite sides of the ACD, providing strong evidence for this orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 are supported by peptide binding and PRE NMR data (Figures 3, 4G, 5D-E). The inference about \u03b22 strand formation and orientation is well-supported by the complementary PRE patterns from positions 83 and 91.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Phosphorylation at positions 78 and 82 in the boundary region does not directly affect binding to the dimer interface groove. However, PRE data suggest the boundary region phosphorylation sites may be spatially close to the Ser15 phosphorylation site despite being >60 residues apart in sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by peptide binding NMR data (Figure 4\u2014figure supplement 1B). Claims C116-C117 are supported by PRE data (Figures 3, 5D) but the spatial proximity suggestion is speculative, appropriately indicated as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "NMR assignments of NTR residues 62-79 (insertion and boundary regions) show high intensities and random coil chemical shifts. Residues 64-69 and Ser49 show two distinct peak sets indicating slow exchange between conformations (exchange rate \u226425 s\u207b\u00b9) with the second conformation representing >20% of the population. This may arise from cis/trans proline isomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C128 are supported by NMR spectral analysis (Figure 6A). The exchange rate calculation (C124) is appropriate. The proline isomerization hypothesis (C128) is speculative but reasonable given the numerous prolines in these regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "PRE data from spin labels at NTR positions show extensive NTR-NTR contacts: conserved and Trp-rich regions are in close contact, as are insertion and boundary regions. Only the distal region lacks extensive NTR-NTR contacts. This supports a compact NTR state with extensive NTR/ACD and NTR/NTR contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 are supported by PRE NMR data (Figure 6B). The inference of a compact NTR state is reasonable from the pattern of inter-region PREs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "15N R2 relaxation measurements show ACD residues have R2 ~40 s\u207b\u00b9 (consistent with ordered structure), insertion region residues have R2 ~10 s\u207b\u00b9 (consistent with flexibility), and other assigned NTR residues have R2 ranging from 20-60 s\u207b\u00b9 (consistent with conformational restriction and/or millisecond exchange).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 are supported by NMR relaxation data (Figure 6D). The interpretations of R2 values are standard in NMR and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "HDXMS of HSPB1dimer shows the ACD (residues 87-172) is protected consistent with \u03b2-sandwich structure, while aromatic, insertion, and boundary regions are highly deuterated within 3 seconds. Distal, conserved, and Trp-rich regions show moderate protection. Distal region peptides display bimodal isotopic envelopes indicating two populations (bound/protected and free/accessible) with bound state lifetime of several seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 are supported by HDXMS data (Figure 7, Figure 7\u2014figure supplement 1). The bimodal analysis is appropriate and the interpretation of bound vs. free populations is reasonable. The lifetime estimate from kinetics is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "HDXMS of oligomeric HSPB1 shows similar general features to HSPB1dimer with the ACD most protected. However, the aromatic region shows more protection in oligomers, and a large number of bimodal peptides are observed in conserved, Trp-rich, and boundary regions, indicating two populations with interaction lifetimes of several minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C153 are supported by HDXMS data (Figure 7). The comparison between dimer and oligomer is appropriate and the inference about interaction lifetimes from bimodal kinetics is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "In oligomeric HSPB1, a CTR peptide containing the IXI motif shows ~45% protected population, consistent with IXI-CTRs existing in both free and \u03b24/\u03b28-bound states. Combined with distal region data, this indicates the majority of \u03b24/\u03b28 grooves are occupied with on average half the distal regions and half the CTR-IXIs bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C159 are supported by HDXMS data (Figure 7). The interpretation of bimodal populations and the stoichiometric inference about groove occupancy are reasonable from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The ACD shows similar deuterium uptake in dimers and oligomers, indicating exchange is dictated by \u03b2-sandwich structure. The distal region shows more protection in HSPB1dimer than oligomers, consistent with a larger fraction bound in the dimer, possibly due to CTR mutations removing IXI competition for the \u03b24/\u03b28 groove.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C164 are supported by comparison of HDXMS data (Figure 7). The proposed explanation for increased distal binding in the dimer (C164) is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Peptides spanning conserved and Trp-rich regions show greater protection in HSPB1dimer than oligomers, with distinct protection patterns suggesting different interactions. The Trp-rich region has high predicted helical propensity, and HSPB1dimer shows an unusual CD peak at 230 nm attributed to Trp ring interactions, suggesting the Trp-rich region adopts specific structure in dimers not populated in oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C171 are supported by HDXMS data (Figure 7), secondary structure predictions, and CD data cited from prior work (C169). The inference about Trp-rich region structure in dimers is reasonable from combining HDXMS and CD data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The aromatic and boundary regions (containing phosphorylation-mimicking mutations) are less protected in HSPB1dimer. The increased aromatic region accessibility is consistent with reduced binding of phosphorylated peptide. Release of the aromatic region may be coupled to decreased boundary region protection, and Trp-rich region structure formation might require neighboring regions to be released from ACD contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C172-C173 are supported by HDXMS and peptide binding data. However, C174-C175 are speculative about coupled structural changes without direct evidence. The coupling hypothesis is reasonable but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Structural modeling shows it is possible to develop realistic models containing all identified NTR-ACD interactions with all possible loop connectivities. The dimer interface groove can accommodate two \u03b22 strands plus the conserved motif, both \u03b24/\u03b28 grooves can bind distal motifs, and these can be connected in all four conceivable ways. Model surfaces agree well with NMR-perturbed ACD surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C181 are supported by the modeling work (Figure 8) and comparison with experimental data (Figure 3). The modeling demonstrates physical feasibility of the proposed interactions, though it does not prove they all occur simultaneously in solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "While models show maximum NTR-ACD interactions, any interacting motif could dissociate and adopt disordered conformations. NMR and HDXMS indicate most NTR regions occupy both bound and unbound conformations, suggesting multiple combinations of interactions occur. Protected regions are similar in dimers and oligomers, indicating dimeric interactions also occur in oligomers where fragments could connect to other dimers/monomers. This combinatorial possibility contributes to observed heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C187 are supported by the modeling combined with NMR and HDXMS data showing dynamic behavior. The inference about combinatorial interactions contributing to heterogeneity is reasonable from the totality of data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Disease mutations G34R and P39L were selected for study based on prior characterization showing they increase oligomer size. G34 is the final conserved residue in the conserved motif and its mutation to Arg is expected to reduce backbone flexibility. P39 is conserved among orthologs, located before a predicted helical region (41-46), and its mutation to Leu might increase flexibility and/or favor helix formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C193 are supported by citation to prior work (C188) and sequence analysis (C189, C191, C192). The predictions about mutation effects (C190, C193) are reasonable based on amino acid properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "A conserved motif peptide with G34R substitution shows greatly reduced perturbations in B1-ACD binding, indicating the bulky charged Arg disrupts dimer interface groove interaction. HDXMS of G34R-HSPB1 shows increased deuterium uptake (up to 25%) in the conserved region fragment, likely reflecting true increased flexibility. Unexpectedly, the boundary region also shows enhanced uptake and loss of bimodal behavior, while other regions are unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C200 are supported by peptide binding NMR (Figure 9B) and HDXMS data (Figure 9A). The magnitude of HDXMS change and consideration of intrinsic exchange rates support the flexibility interpretation (C197).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "HDXMS of G84R-HSPB1 shows enhanced deuterium uptake in both boundary and conserved regions, confirming these non-contiguous regions are inter-dependent. This implies each region enhances the other's ability to contact the groove and that the protected conformation has both regions present in the groove.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C201-C204 are supported by HDXMS data (Figure 9A) showing reciprocal effects of G34R and G84R mutations. The inference about interdependence and cooperative binding is reasonable from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "A Trp-rich peptide with P39L substitution shows no binding to B1-ACD, indicating no gain of function. However, P39L-HSPB1 shows marked HDXMS effects with the first four NTR regions substantially more protected while the ACD is unaffected. The largest protection increase is in the fragment containing the mutation (29-41), with a 25% decrease in exchange consistent with predicted increased helical propensity and observed CD helicity increase. Subunit exchange is 3-fold slower for P39L, suggesting the mutation increases local secondary structure and/or promotes NTR-NTR contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C205-C214 are supported by peptide binding NMR (Figure 9C), HDXMS (Figure 9A), CD (Figure 9\u2014figure supplement 1), and subunit exchange data (Figure 9\u2014figure supplement 1). The inference about increased structure and NTR-NTR contacts is reasonable from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221"
+    ],
+    "result": "Single NTR mutations have profound widespread effects on dynamics. Mutations five positions apart (G34R and P39L) have distinct, opposite effects, while mutations 50 residues apart (G34R and G84R) produce similar effects with coupled deuterium exchange increases in conserved and boundary regions. The mutant G34R peptide shows lower affinity for the dimer interface groove. This identifies interplay between non-local NTR regions where occupancy by one region favors occupancy by the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C215-C221 are supported by the disease mutant HDXMS and peptide binding data (Figure 9). The inference about non-local interplay is well-supported by the reciprocal effects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C222",
+      "C223",
+      "C224"
+    ],
+    "result": "P39L-HSPB1 shows increased protection in aromatic, conserved, and Trp-rich regions but no large change in the boundary region. This suggests the interdependence observed for G34R and G84R is due to substitution of a bulky/charged amino acid in the conserved or boundary regions specifically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C222-C224 are supported by HDXMS data (Figure 9A). The suggestion about the basis for interdependence (C224) is reasonable from comparing the different mutation effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230"
+    ],
+    "result": "Increased helicity in P39L-HSPB1 CD spectrum is consistent with stabilized helical structure in the Trp-rich region, likely from the helix-favoring Pro-to-Leu substitution. No Trp-rich/ACD interactions were detected in WT or mutant, implying the region is involved in NTR-NTR interactions. The inability to make Trp-rich mutations without affecting oligomer size and the decreased subunit exchange rate support the region's central role in oligomerization with NTR-NTR interactions playing a rate-limiting role in subunit dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C225-C230 are supported by CD data (Figure 9\u2014figure supplement 1), peptide binding results, mutagenesis observations, and subunit exchange data (Figure 9\u2014figure supplement 1). The inferences about NTR-NTR interactions and their role in oligomerization are reasonable from the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C231",
+      "C232"
+    ],
+    "result": "The NTR of HSPB1 is quasi-ordered with six sub-regions displaying distinct properties and binding preferences. The heterogeneity and polydispersity of HSPB1 derives not from fuzzy disorder but from an array of combinatorial interactions involving discrete NTR sub-regions and specific ACD surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C231-C232 represent the main conclusions of the study, supported by the totality of NMR, HDXMS, and modeling data. The concept of 'quasi-order' is well-defined and supported by the evidence of specific, long-lived but dynamic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C233",
+      "C234"
+    ],
+    "result": "Other oligomeric sHSPs are expected to be similarly defined and can be parsed using similar approaches. There are likely other examples of quasi-order with multiple interacting regions that can be defined by similar experimental approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C233-C234 are speculative about broader applicability. While reasonable based on the success with HSPB1, these claims require validation in other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Multiple grooves on the ACD interact with specific NTR regions creating an ensemble of 'quasi-ordered' NTR states. HDXMS reveals protected NTR regions consistent with transient order. NMR peptide binding and PRE experiments reveal specific NTR-ACD interactions in full-length HSPB1. HDXMS patterns are remarkably similar between HSPB1dimer and WT oligomers, indicating conserved interactions. Disease mutations cause non-local structural effects showing NTR sensitivity to single residue changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central result of the manuscript, supported by the comprehensive NMR, HDXMS, and modeling data. The quasi-ordered model is well-supported by evidence of specific, orientationally-defined interactions with lifetimes from milliseconds to minutes, combined with conformational heterogeneity.",
+    "result_type": "MAJOR"
+  }
+]

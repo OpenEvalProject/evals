@@ -1,0 +1,1719 @@
+{
+  "submission": {
+    "id": "455f6a4c-1646-4f11-ad66-c750f4627564",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:03:22.738316Z",
+    "updated_at": "2025-12-02T17:03:22.738316Z"
+  },
+  "content": [
+    {
+      "id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "submission_id": "455f6a4c-1646-4f11-ad66-c750f4627564",
+      "content_type": "manuscript",
+      "content_text": "# Cohesin and condensin extrude DNA loops in a cell cycle-dependent manner\n\n## Authors\n\n- Stefan Golfier<sup>1</sup> ([ORCID: 0000-0002-4726-667X](https://orcid.org/0000-0002-4726-667X))\n- Thomas Quail<sup>1</sup>\n- Hiroshi Kimura<sup>5</sup> ([ORCID: 0000-0003-0854-083X](https://orcid.org/0000-0003-0854-083X))\n- Jan Brugu\u00e9s<sup>1</sup> ([ORCID: 0000-0002-6731-4130](https://orcid.org/0000-0002-6731-4130)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n2. Max Planck Institute for the Physics of Complex Systems Dresden Germany\n3. Centre for Systems Biology Dresden Dresden Germany\n4. Cluster of Excellence Physics of Life, TU Dresden Dresden Germany\n5. Cell Biology Center, Institute of Innovative Research, Tokyo Institute of Technology Yokohama Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nLoop extrusion by structural maintenance of chromosomes (SMC) complexes has been proposed as a mechanism to organize chromatin in interphase and metaphase. However, the requirements for chromatin organization in these cell cycle phases are different, and it is unknown whether loop extrusion dynamics and the complexes that extrude DNA also differ. Here, we used Xenopus egg extracts to reconstitute and image loop extrusion of single DNA molecules during the cell cycle. We show that loops form in both metaphase and interphase, but with distinct dynamic properties. Condensin extrudes DNA loops non-symmetrically in metaphase, whereas cohesin extrudes loops symmetrically in interphase. Our data show that loop extrusion is a general mechanism underlying DNA organization, with dynamic and structural properties that are biochemically regulated during the cell cycle.\n\n## Introduction\n\nChromatin undergoes a dramatic reorganization during the cell cycle (Hirano and Mitchison, 1991; Rowley and Corces, 2018; Nagano et al., 2017). In interphase, chromatin is organized into compartments and topological-associating domains (TADs) that are cell-type specific (Bonev and Cavalli, 2016; Dekker and Mirny, 2016; Rao et al., 2014). TADs are composed of chromatin loops that have been hypothesized to regulate gene expression by spatially restricting contacts between genes and regulatory elements (Smith et al., 2016; Lupi\u00e1\u00f1ez et al., 2015; Ren et al., 2017; Schoenfelder and Fraser, 2019). In metaphase, chromosomes undergo large-scale compaction, leading to the loss of specific boundaries and the shutdown of transcription, which is achieved by arranging chromatin into an array of condensed loops (Marsden and Laemmli, 1979; Earnshaw and Laemmli, 1983; Naumova et al., 2013; Goloborodko et al., 2016; Uhlmann, 2016; Kinoshita and Hirano, 2017). These different degrees of organization require the coordinated activity of protein complexes such as structural maintenance of chromosomes (SMCs) proteins (Nasmyth, 2001; Yatskevich et al., 2019; Fudenberg et al., 2016; Nuebler et al., 2018; Hirano et al., 1997; Bouwman and de Laat, 2015), but how these complexes organize chromatin dynamically during the cell cycle is still unknown. SMCs are thought to organize DNA by actively extruding DNA loops (Rao et al., 2014; Fudenberg et al., 2016; Alipour and Marko, 2012; Sanborn et al., 2015). Recent experimental studies have shown that yeast condensin extrudes DNA loops in a one-sided manner in vitro (Ganji et al., 2018). Although consistent with the loop-extrusion hypothesis, it is inconsistent with the requirement for two-sided loop extrusion predicted by theory (Banigan and Mirny, 2018; Banigan et al., 2019). One reason for this discrepancy could be that the properties of loop extrusion in cellular contexts differ from those in vitro and may be regulated during the cell cycle (Abramo et al., 2019; Losada et al., 1998). Notably, condensin complexes do not structure the genome during interphase (Abdennur, 2018), which raises intriguing questions about the molecular players that regulate DNA architecture in interphase. Recent in vitro work demonstrated that cohesin can extrude DNA loops symmetrically (Davidson et al., 2019; Kim et al., 2019), though this activity has not been directly visualized in cellular contexts (Rao et al., 2017; Schwarzer et al., 2017; Hansen et al., 2017). To bridge the gap between in vitro biochemical assays and physiological conditions, we used histone H3/H4-depleted Xenopus laevis egg extracts to reconstitute loop formation on single DNA molecules. These extracts can be cycled between metaphase and interphase and recapitulate many sub-cellular biological processes, such as the formation of mitotic chromatids and interphase nuclei (Hirano and Mitchison, 1991; Murray, 1991).\n\n## Results\n\nTo visualize DNA loop formation in Xenopus laevis egg extracts, we attached lambda-phage DNA to a cover slide using biotin-streptavidin linkers (Ganji et al., 2016) in custom-built microfluidic chambers (Figure 1A). Addition of either metaphase-arrested or interphase Xenopus egg extracts into the chamber triggered the formation of small DNA enrichments, consistent with nucleosomal deposition (Yan et al., 2007; Gruszka et al., 2019), that rapidly reduced any slack in the DNA molecules (Figure 1\u2014figure supplement 1A and Figure 1\u2014videos 1\u20132). To increase the amount of available slack to allow for loop extrusion, we abolished nucleosomal assembly along the strand by depleting\u00a0~90\u201395% of soluble H3-H4 heterodimers in the extract (Zierhut et al., 2014; Figure 1\u2014figure supplement 1B). This led to the formation of compacted DNA clusters that grew in size over time in both metaphase and interphase (Figure 1B and Videos 1\u20132; Figure 1\u2014videos 3\u20136). To investigate whether these clusters exhibited a topology consistent with DNA loops, we hydrodynamically stretched the DNA strand by applying a flow in the perpendicular direction to the strand. This procedure revealed DNA clusters with a characteristic loop topology in both inter- and metaphase extracts (Figure 1C, Figure 1\u2014figure supplement 1C and Figure 2\u2014video 1; Figure 1\u2014videos 7\u20139). In mock-depleted extracts, loops also formed but at a much lower frequency (Figure 1\u2014figure supplement 1D and Figure 1\u2014video 10) and seemed to compete with nucleosomes for available DNA slack. These results show that DNA loop extrusion can be reconstituted in Xenopus egg extracts in metaphase and interphase.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig1-v2.jpg)\n\n**Figure 1.:** (A) (i) Side and top view schematics of a single strand of \u03bb-phage DNA attached to a functionalized cover slip via biotin-streptavidin linkers. (ii) Xenopus egg extract is flowed into the microfluidic chamber. (iii) Side and top view schematics visualizing how soluble active loop-extruding factors extrude loops in H3-H4-depleted extract. (B) Dynamics of the formation of DNA loops induced by H3-H4-depleted extract in metaphase (upper) and interphase (lower). Snapshot of a single molecule of \u03bb-phage DNA visualized using Sytox Orange preceding treatment with H3-H4-depleted extract (left). Kymograph of DNA signal over time displaying a looping event upon addition of H3-H4-depleted extract (middle). Snapshot of steady-state DNA looping event after\u00a0~60 s (right). (C) Hydrodynamic flows reveal loop topology within DNA cluster. (i) Schematic of the loop topology revealed upon flow. (ii) Topology of extract-induced DNA loops in metaphase (upper) and interphase (lower) visualized using Sytox Orange revealed upon flow in the direction of the arrow.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Addition of crude extract to \u03bb-phage DNA molecules leads to the generation of multiple highly-enriched DNA clusters, suggestive of nucleosomal formation along the strand. Alexa488-labeled anti-H3 and anti-H4k12ac localize to these DNA clusters (left). Kymographs of nucleosomal cluster formation in both metaphase (upper) and interphase (lower) along a strand upon addition of crude extract. See also Figure 1\u2014videos 1\u20132. (B) Quantitative western blot showing approximately 90\u201395% depletion of soluble H3-H4 heterodimers. (C) Examples of completely stretched loops in metaphase (left and middle) and a partially extended interphase loop (right) upon hydrodynamic stretching with buffer flow perpendicular to strand orientation. (D) Kymograph of a looping event on a strand upon treatment with crude extract. See also Figure 1\u2014video 10.\n\n![Video 1.](https://cdn.elifesciences.org/articles/53885/elife-53885-video1.mp4.jpg)\n\n**Video 1.:** The movie duration is 87 s and the scale bar is 5 \u03bcm.\n\n![Video 2.](https://cdn.elifesciences.org/articles/53885/elife-53885-video2.mp4.jpg)\n\n**Video 2.:** The movie duration is 80 s and the scale bar is 2 \u03bcm.\n\nTo characterize the dynamic properties of loop formation in Xenopus egg extracts, we quantified the DNA distribution inside the loop and to the left and right of the loop as a function of time (Figure 2). We computed the loop extrusion rate from the DNA amount that entered the loop over time, and could determine whether this DNA came from one or both of the non-looped regions. Briefly, we summed the fluorescence intensity of the DNA along the perpendicular direction to the DNA strand, and tracked the loop position defined by the local maximum of the DNA intensity. We then fitted a Gaussian function to the loop region and defined the loop boundaries as\u00a0\u00b12 standard deviations away from the maximum value of the fit (Figure 2A). We obtained the amount of DNA inside the loop as the difference between the integrated intensity in the loop region minus the offset intensity from the Gaussian fit. Finally, the amount of DNA to the left and right of the loop corresponded to the integrated intensity of the DNA strands outside the loop region (see Supplementary Methods). This assay allows us to observe loop extrusion in extract, to quantify the partitioning of DNA between the looped and non-looped regions, and to examine the symmetry of the underlying DNA extrusion process.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig2-v2.jpg)\n\n**Figure 2.:** (A) Method to track DNA-loop dynamics through space and time. Upper: Schematic of the top view of a DNA-looping event segmented into three regions: region I (orange), region II (green), and the loop region (blue). Middle: Snapshot of DNA-looping event where DNA is labelled using Sytox Orange. Bottom: The integrated fluorescence intensity of the DNA generated by summing the intensity values along the perpendicular axis of the strand. The dashed red line represents a Gaussian fit to the data. Signal values above the fit\u2019s offset define the looped region given in blue; signal values below this threshold correspond to the non-looped regions I and II, given in orange and in green. To convert the signal into DNA length, the integrated intensity of each region is divided by the total summed intensity of the DNA strand and multiplied by the total length of \u03bb-phage DNA (48.5 kb). (B) Dynamics of DNA looping in H3-H4-depleted extract in metaphase and interphase. (Bi,iv left) DNA amount as a function of time computed for the looped region (blue) and non-looped regions I and II (green and orange). The dots represent experimental data and the solid lines represent exponential fits to the data. (Bi,iv right) The redistribution of DNA during the looping events shown in the left panel quantified as the change in DNA content in each region. (Bii,v) Change in the amount of DNA in the looped region and non-loop regions I and II (as in Bi,iv right) for the entire population of meta- and interphase looping events plotted as a function of the initial relative DNA extension of the corresponding molecules. Error bars correspond to standard deviations of data clustered by proximity. Points represent raw data. (Biii, vi) Analysis of loop extrusion symmetry shows predominantly non-symmetric extrusion (symmetry score\u00a0~1) in metaphase (Biii) and symmetric extrusion (symmetry score\u00a0~0) in interphase (Bvi). (C) Initial growth rates of DNA loop extrusion in metaphase (red) and interphase (blue) as a function of initial relative DNA extension. These rates were obtained from the slopes of the exponential fits to the loop data at time t\u00a0=\u00a00 for the subset of loop extrusion events that allowed for a fitting that converged within a tolerance (10\u22128relative change of the cost function), that corresponded to N\u00a0=\u00a021 out of 30 in interphase, and N\u00a0=\u00a024 out of 34 for metaphase. Error bars were obtained from error propagation of the uncertainties of the exponential fit parameters. (D) Box plots of the stall forces for DNA loop extrusion in metaphase and interphase obtained from the final relative extension of the DNA strand at the end of loop formation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We tracked the position of the loop and segmented the DNA signal into a loop region (blue) and region I and II (orange and green). The integrated fluorescence intensity in each region was converted into the relative amount of DNA in that region as described above and plotted as a function of time. The dots are data from the analysis and the lines represent single exponential fits to the data. (A) In metaphase, we observed a saturating exponential increase in the DNA amount in the looped region, and only a single non-looped region decreasing in DNA amount, suggestive of one-sided\u00a0(non-symmetric)\u00a0DNA loop extrusion. (B) In interphase, we observed a similar saturating exponential increase in the DNA amount in the looped region, whereas both non-loop regions decreased in DNA amount, suggestive of two-sided\u00a0(symmetric)\u00a0DNA loop extrusion. (C) Representative snapshots of DNA looping in H3-H4-depleted interphase and metaphase extracts ordered by end-to-end distance. Left image represents the initial DNA configuration and right image the corresponding final loop configuration. Scale bar is 5 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Example of one metaphase loop extrusion event (blue dots) smoothed by a Savitzky-Golay filtering with a 2nd-order polynomial and a window size of 63 points (black dashes). (B) The extrusion rate of the looping event was obtained from the first-order derivative of the smoothed curve. (C) Relative DNA extension was calculated as the end-to-end distance divided by the amount of DNA outside of the loop region using the raw loop data (blue shaded curve) and the smoothed loop data from (A). (D) Tension on the DNA strand, resulting from the reeling of DNA into the loop, was obtained from applying the worm like chain model (Marko and Siggia, 1995) for DNA to the relative extension values in (C) with the raw data as the shaded curve. (E) Rate of loop extrusion plotted over the tension on the DNA strand for the single looping event in (A). (F) Loop extrusion rates over DNA tension for the population of metaphase (blue dots and envelope) and interphase looping events (green dots and envelope) from exponential fit curves to the loop data. Dots represent mean values, error bars and envelope represent standard deviation.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** We quantified the amount of DNA inside the loop (blue dots) and the regions left and right of the loop (region I in orange and region II in green) from the relative integrated DNA fluorescence intensities in each region for each time point. The lines represent exponential fits to the data. (A) Examples of metaphase looping events exhibiting two-sided\u00a0(symmetric)\u00a0DNA loop extrusion where DNA is reeled in from both regions outside of the loop. (B) Examples of one-sided\u00a0(non-symmetric)\u00a0DNA loop extrusion events in interphase, showing one-sided reeling of DNA into the loop from only one region outside of the loop.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Schematics of two-sided\u00a0(symmetric)\u00a0DNA loop extrusion. Reeling in DNA from both sides at similar rates displaces the loop towards the shorter end of the DNA, as the smaller amount of slack in the shorter region is used up faster. (B) The displacement of a loop along the DNA strand by one-sided\u00a0(non-symmetric) extrusion depends on the direction of extrusion. If the orientation of the extrusion machinery is random, it has equal chances to be directed towards the center of the DNA or the closest boundary. (C) We followed the movement of the DNA loop by tracking the relative location of the maximum of signal intensity for each time point. Top: kymograph of a metaphase looping event. Bottom: corresponding relative position of the loop for each time point. We then quantified the relative change in loop position along the DNA strand with respect to the centre of the DNA strand and the nearest boundary. This allowed us to plot the relative change in loop position over the corresponding symmetry score for all looping events in (D) metaphase and (E) interphase. We classified each looping event by its displacement towards the center, the nearest boundary, or as static, if the displacement did not exceed a threshold of 0.08 (see Materials\u00a0and\u00a0methods). (F) Based on the displacement of all looping events, we could compare the probability for a loop to move to the centre of the DNA strand in metaphase and interphase.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** We quantified the loop extrusion rate as a function of extrusion symmetry (symmetry score) in both (A) interphase and (B) metaphase (C) for the events corresponding to Figure 2C. Using the worm-like chain model (Marko and Siggia, 1995), we computed the stall forces for both interphase and metaphase looping events from the plateau size of the loop and plot these values as a function of initial relative extension of the DNA strand before the loop formed. The hatched line shows the initial tension on the DNA strand before the onset of loop formation as a function of end-to-end distance of the DNA molecules. The resulting stall forces are conserved between inter- and metaphase and show a slight dependency on the initial relative extension of the DNA strand, possibly by selecting for stronger loops in stretched-out DNA molecules.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (A) To correct for the concentration-dependent lengthening of DNA by intercalating dye Sytox Orange, we measured the extension (in \u03bcm) of DNA molecules that we hydrodynamically stretched using a buffer flow-rate corresponding to a force of 1.54 pN, for all Sytox Orange concentrations employed in the study. The exponential fit to the data serves as a guide to the eye. (B) The corresponding contour lengths (cl) were determined for each dye concentration by applying the worm like chain model (Marko and Siggia, 1995) to the average measured DNA extension at the known stretching force of 1.54 pN.\n\nWhen applied to metaphase-arrested, H3-H4-depleted extract (n=7 extract days), this assay showed that\u00a0DNA loops are initially extruded at 2.36 \u00b1 0.35 kb/s (mean \u00b1 SEM) (Figure 2Bi, C; Figure 2\u2014figure supplement 1A). However, loop growth rapidly slowed down as more DNA was pulled into the looped region (Figure 2\u2014figure supplement 2A), suggesting that extrusion rates depend on DNA tension. To examine the relationship between loop extrusion and DNA tension, we used the worm-like chain model (Marko and Siggia, 1995) that relates the relative extension of the DNA outside the loop to the corresponding force on the DNA strand (see supplementary methods, Figure 2\u2014figure supplement 2 and Figure 2\u2014figure supplement 26). The relative extension outside the loop is a dynamic quantity defined as: RE(t)=L/(CL\u03bb-DNAloop(t)),\u00a0where L represents the end-to-end binding distance of the DNA molecule on the coverslip, CL\u03bb is the contour length of lambda-phage DNA, and DNAloop is the amount of DNA in the looped region. These results show that the relationship between extrusion rates and DNA tension is generally conserved for all looping events (Figure 2\u2014figure supplement 2F). Finally, loop extrusion stopped when the relative extension of DNA outside of the loop reached on average ~65%, corresponding to a stall force of 0.16 pN \u00b1 0.01 pN (mean \u00b1 SEM), (Figure 2D). In rare cases, we observed individual looping events stalling at DNA extensions of up to ~85%, corresponding to forces up to ~1 pN (Figure 2\u2014figure supplement 2C\u20135C).\n\nTo characterize the extrusion symmetry in metaphase, we quantified the total decrease in DNA from the left and right regions of the loop between the onset of loop formation and the final steady-state size of the loop (Figure 2Bii). We used these quantities to define a symmetry score as the relative difference between the decrease of these two regions and the total amount of DNA extruded (supplementary methods). The majority of metaphase looping events had a symmetry score close to 1, which corresponds to one-sided\u00a0(non-symmetric) loop extrusion (Figure 2Biii). However, a small population of\u00a0~20% of all metaphase looping events were two-sided (as defined by a symmetry score of less than 0.5, Figure 2\u2014figure supplement 3A). To complement these symmetry score results, we tracked loop movement along the DNA strand (Figure 2\u2014figure supplement 4). Consistent with one-sided loop extrusion, loops that were displaced during loop formation, moved with equal probability towards the boundaries or the center of the strand. This behavior is suggestive of non-symmetric\u00a0DNA extruding factors landing in a random orientation on the DNA molecule. Taken together, our analysis demonstrates that DNA loop extrusion in metaphase is predominantly one-sided, with extrusion speeds and stall forces similar to those measured in vitro (Ganji et al., 2018; Strick et al., 2004; Kong et al., 2019).\n\nNext, we used interphase H3-H4-depleted extract (n\u00a0=\u00a08 extract days) to investigate whether the dynamics of loop extrusion share similar properties throughout the cell cycle (Figure 2 Civ-vi). Loop extrusion in interphase displayed a similar distribution of extrusion rates, with a mean of 1.94\u00a0\u00b1\u00a00.26 kb/s, and average stall forces of 0.18 pN\u00a0\u00b10.03 pN, with maximal forces of up to 0.82 pN (Figure 2C and D, Figure 2\u2014figure supplement 2F). However, the distribution of symmetry scores of these looping events peaked towards zero, indicating that these loops are symmetrically extruded. Similar to metaphase looping, we observed that a sub-population of\u00a0~20% of all loops had the opposite symmetry (symmetry score larger than 0.5, Figure 2\u2014figure supplement 3B). As predicted for symmetric extrusion, loops that started off-center on the strand displayed a strong bias to move towards the DNA boundary of the shorter DNA portion (Figure 2\u2014figure supplement 4). Thus, we conclude that the mechanisms of DNA loop extrusion are different in interphase and metaphase.\n\nThe different dynamic properties of DNA loop formation that we observe in interphase and metaphase suggest that different molecular activities may be responsible for loop formation during the cell cycle (Dekker and Mirny, 2016; Losada et al., 1998). The cell\u00a0cycle-dependent activities of condensin and cohesin could account for the transition between symmetric and non-symmetric loop extrusion (Banigan et al., 2019; Abramo et al., 2019). To assess the role of cohesin and condensin during loop extrusion in interphase and metaphase, we selectively depleted these protein complexes in Xenopus egg extract. We used custom-made antibodies against XSMC1 and XRad21 for cohesin, and XCAP-C and XCAP-E (SMC2 and SMC4) for simultaneous depletion of condensin I and II (Figure 3\u2014figure supplement 1). We then tested for loop extrusion activity in each depleted condition. We found that, in metaphase (n\u00a0=\u00a03 extract days), the occurrence of DNA\u00a0loop extrusion was significantly reduced (p<0.01) upon depletion of condensin I and II but was unaffected by cohesin depletion (Figure 3A). In contrast, there was a significant decrease (p<0.01) in loop extrusion following cohesin depletion in interphase (n\u00a0=\u00a03 extract days), but was unaffected by condensin depletion (Figure 3A). We confirmed these depletions with immunostainings that showed colocalization of cohesin and condensin with the DNA\u00a0loops observed in interphase and metaphase, respectively (Figure 3B). Additionally, we tested for ATPase activity of the loop extrusion factors by enzymatically depleting ATP using apyrase\u2014which for technical reasons was limited to interphase in extract (see supplementary methods). When applied to interphase extract, apyrase-mediated\u00a0ATP\u00a0depletion resulted in a near-complete elimination of DNA\u00a0looping\u00a0activity , suggesting that cohesin actively extrudes loops in an ATP-dependent manner. Altogether, our results show that cohesin actively extrudes DNA\u00a0loops symmetrically during interphase, whereas condensin extrudes DNA\u00a0loops non-symmetrically in metaphase. This demonstrates that the molecular mechanisms of DNA\u00a0loop extrusion are differentially regulated during the cell cycle.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig3-v2.jpg)\n\n**Figure 3.:** (A) DNA\u00a0loop extrusion probability\u2014the frequency at which looping occurs on a DNA\u00a0strand with sufficient slack\u2014in metaphase and interphase under different depletion conditions. In metaphase, co-depleting condensin I, condensin II, and H3-H4 (using anti-XCAP-C/E and anti-H4K12Ac) significantly (** represents p<0.01, Binomial test) reduced loop extrusion probability, whereas the same depletion condition in interphase had no effect on loop extrusion probability compared to\u00a0the\u00a0control H3-H4-depleted extract. However, co-depleting cohesin and H3-H4 (using anti-XRAD21/XSMC1 and anti-H4K12Ac) had no effect in metaphase, though significantly (p<0.01) decreased loop extrusion probability in interphase compared to H3-H4-depleted extract. (B) Snapshots of antibody stainings of representative loops in metaphase and interphase. (Top) In metaphase, Alexa488-labeled anti-XRad21 bound to cohesin does not localize to the DNA\u00a0loop, whereas in interphase (right panels), the anti-XRad21 co-localizes to the loop. (Bottom) Alexa488-labeled anti-XCAP-C bound to condensin localizes to the\u00a0DNA loop in metaphase, but does not localize to the loop in interphase.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53885/elife-53885-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Co-immunodepletion of H3-H4 using anti-H4K12Ac antibodies and cohesin using anti-XRAD21 and anti-XSMC1 antibodies. H3 protein levels are detected using anti-H3 and exhibits a\u00a0~\u00a090\u201395% depletion of soluble H3-H4 heterodimers compared to IgG-depleted extract. XSMC1 protein levels are detected using anti-XSMC1, which exhibits a\u00a0~\u00a090% depletion. We used anti-DM1a that detects tubulin as a loading control. (B) Co-immunodepletion of H3-H4 using anti-H4K12Ac antibodies and condensin using anti-XCAP-C and anti-XCAP-E antibodies. H3 protein levels are detected using anti-H3 and exhibits a\u00a0~\u00a090% depletion of soluble H3-H4 heterodimers compared to IgG-depleted extract. XCAP-C protein levels are detected using anti-XCAP-C, which displays a\u00a0~\u00a085% reduction, although the signal is rather weak and made it challenging to quantify. We used anti-DM1a that detects tubulin as a loading control. (C) Enzymatic depletion of ATP by apyrase (left) in H3H4-depleted interphase extract greatly reduces loop formation probability compared to control H3H4 depleted interphase extract (right).\n\n## Discussion\n\nOur findings provide the first direct evidence that loop extrusion is a general mechanism of DNA organization in a cellular context, and, furthermore, that it is differentially regulated during the cell cycle. This regulation is achieved by the distinct activities of cohesin (Rao et al., 2017; Schwarzer et al., 2017; Losada et al., 1998) and condensin (Kinoshita and Hirano, 2017; Hirano et al., 1997; Shintomi et al., 2017) during interphase and metaphase, and may control different levels of DNA organization during the cell cycle: from chromatin that is mostly decondensed and spatially organized into TAD structures during interphase to highly compacted chromosomes in metaphase (Abramo et al., 2019). Symmetric loop extrusion by cohesin in interphase may ensure the formation of specific TAD boundaries by bringing together distal CTCF sites (Sanborn et al., 2015; Tang et al., 2015). In metaphase, reorganization of loosely packed interphase chromatin into condensed chromosomes leads to the loss of TAD boundaries and the shutdown of transcription (Nagano et al., 2017; Naumova et al., 2013), which may be achieved by condensin activity (Goloborodko et al., 2016). However, many questions remain regarding how the cell cycle regulates condensin and cohesin activities. Previous studies have shown that condensin binds to chromatin in metaphase, but is largely undetected on chromatin in interphase (Hirano and Mitchison, 1994); whereas cohesin is bound to chromatin in interphase, but not as strongly in metaphase (Losada et al., 1998; Sumara et al., 2000). The CDK1-mediated phosphorylation of condensin HEAT subunits in metaphase may be the biochemical signal that triggers the association of condensin to chromatin (Hirano et al., 1997). In contrast, most cohesin is released from chromatin by a mechanism that involves the phosphorylation of cohesin\u2019s SA subunit (Losada and Hirano, 2001; Hauf et al., 2005). Thus, the different affinities of condensin and cohesin for chromatin during the cell cycle could be a natural explanation for the different\u00a0DNA loop extrusion activities that we see in our experiments.\n\nOur demonstration of predominantly non-symmetric DNA\u00a0loop extrusion during metaphase is consistent with recent in vitro data, but it is at odds with the theoretical requirements to fully compact chromosomes in metaphase (Banigan and Mirny, 2018; Banigan et al., 2019). However, these studies suggest that a small fraction of\u00a0two-sided loop extruders\u2014including extrusion events that reel in DNA at different rates from left and right\u2014can facilitate higher levels of chromosome compaction. Our metaphase data suggest that loops with symmetry scores below 0.8 could be considered \u2018slow\u2019 two-sided extrusion events, as DNA is reeled into the loop from both sides, but at different rates. These events account for about 50% of the total population of metaphase looping events, which, according to theoretical predictions, could be sufficient to achieve 100-fold linear chromosome compaction (Banigan and Mirny, 2018). Thus, the mixed populations of loop extrusion symmetries we observe could play a crucial role for proper chromosome organization in metaphase. What is the origin of the small population of symmetric loop extrusion in metaphase? One possibility is that condensin I and condensin II compact DNA using different symmetries (Kong et al., 2019). In Xenopus egg extract, the relative abundances of condensin I and condensin II is roughly 5:1 (Ono et al., 2003), which would be consistent with the fraction of nearly symmetric loop extrusion events that we observe in metaphase (~20%). One limitation of our work, however, is that our antibodies simultaneously depleted those two complexes. As a consequence, we cannot rule out that the small population of symmetric loop extrusion may arise from residual cohesin activity in metaphase. In the future it will be interesting to investigate the origin of the different looping\u00a0symmetries by using specific antibodies for condensin I and II. In addition, we observe a small sub-population (~20%) of non-symmetric loop extrusion events in interphase, suggesting a differential regulation of extrusion symmetries in both cell cycle phases.\n\nDespite the differences in\u00a0loop extrusion symmetries between interphase and metaphase, extrusion rates and stall forces seem to be conserved during the cell cycle. The mean extrusion rates we observe, however, are three to four times higher than those observed in previous in vitro studies (Ganji et al., 2018; Kim et al., 2019) for cohesin and condensin respectively. One possibility for this discrepancy could be that, in extract, several extruding factors participate in the extrusion of the same DNA loop in a cooperative manner. However, the average stall forces we estimate are about five to seven times lower than previous estimates in vitro (Ganji et al., 2018; Kim et al., 2019). We speculate that in cytoplasmic context of the H3-H4-depleted egg extract, many other DNA-binding factors\u2014such as linker histone (Xiao et al., 2012)\u2014may compete with the loop extrusion machinery for DNA slack. The large spread in the distribution of stall forces, with individual examples reaching values that compare to those reported in vitro, may suggest that secondary factors could cause the loop extrusion machinery to stop prematurely, and, consequently, we may underestimate the magnitude of the looping stall forces. We wonder, however, how condensin and cohesin share such similar extrusion rates, even though condensin predominantly extrudes non-symmetrically while cohesin extrudes loops symmetrically. The similar loop growth velocities would suggest that condensin reels in DNA from one side at twice the rate that cohesin reels in DNA from each of its two sides. This assumes, however, that cohesin functions by simultaneously extruding DNA from two sides. Alternatively, cohesin may be a one-sided motor that alternates its extrusion direction (Banigan et al., 2019)\u2014though we did not observe this kind of switching within the temporal resolution of our measurements. We speculate that symmetric cohesin loop\u00a0extrusion could originate from the dimerization of two identical non-symmetric motors, though recent in vitro work shows that this idea is controversial (Davidson et al., 2019; Kim et al., 2019). Interestingly, our results comparing extrusion velocities and corresponding symmetries in interphase show that, on average, symmetric loop extrusion rates are higher (roughly twice) compared to the non-symmetric events (Figure 2\u2014figure supplement 5A). This difference in extrusion rates would be consistent with symmetric and non-symmetric loop extrusion mediated by a dimer and a monomer respectively. Our assay will allow for the dissection of the biochemical underpinnings of these processes, and more generally make it possible to reconstitute complex processes such as the formation of boundary elements and the interplay between transcription, replication, and loop extrusion in cellular contexts.\n\n## Materials and methods\n\n### Xenopus laevis egg extract preparation, immunodepletions, and ATP depletion\n\nCytostatic factor (CSF)-arrested Xenopus laevis (RRID:XEP_XIa_100) egg extract was prepared as described previously (Murray, 1991). In brief, unfertilized oocytes were dejellied and crushed by centrifugation, generating an extract that was arrested in meiosis II. We added protease inhibitors (LPC: leupeptin, pepstatin, chymostatin) and cytochalasin D (CyD) to a final concentration of 10 \u03bcg/ml each to the extract. In order to generate interphase extracts, CaCl2 was added to a final concentration of 0.4 mM. To immunodeplete soluble H3-H4 heterodimers from the extract (Zierhut et al., 2014), we coupled 130 \u03bcg of a mouse monoclonal anti-H4K12Ac to 12.5 \u03bcl rProtein A Sepharose (GE Healthcare) slurry in antibody coupling buffer (10 mM K-HEPES pH\u00a0=\u00a08, 150 mM NaCl), rotating overnight at 4\u00b0C. After several washes with a wash buffer (10 mM HEPES pH\u00a0=\u00a07.7, 100 mM KCl, 150 mM Sucrose, 1 mM MgCl2), we combined 50 \u03bcl fresh CSF extract with the beads and incubated the bead-extract mixture for 1.5 hr on ice, occasionally flicking the tubes in order to prevent the beads settling to the bottom. After recovering the extract from the beads, we immediately proceeded with the experiment. We generated mock-depleted extracts with the same protocol using 130 \u03bcg random mouse IgG antibodies (IgG from Mouse (polyclonal)-unconjugated, Jackson Immuno Research) in 50 \u03bcl of fresh CSF extract. To co-deplete H3-H4 and both condensin I and condensin II, we coupled 130 \u03bcg anti-H4K12Ac and 10 \u03bcg rabbit polyclonal antibodies of both anti-XCAP-C and anti-XCAP-E to 15 \u03bcl rProtein A Sepharose slurry and performed the same H3-H4 depletion method. To co-deplete H3-H4 and cohesin, we coupled 130 \u00b5g anti-H4K12Ac and 10 \u03bcg rabbit polyclonal anti-XRad21 and 10 \u03bcg anti-XSMC1 to 15 \u03bcl rProtein A Sepharose and performed the same H3-H4 depletion method. ATP was depleted by adding 0.03 U/\u03bcl apyrase (A6410; Sigma-Aldrich) to the extract reaction in the presence of 5 mM CaCl2, followed by a 15 min incubation at room temperature. The ATP-depleted extract was then introduced into the DNA channels as described below.\n\n### Western blots\n\nWe prepared 1:25 dilutions of immunodepleted extract in 1X sample loading buffer (50 mM Tris-HCl, pH\u00a0=\u00a06.8, 2% SDS, 10% glycerol, 0.006% bromophenol blue, 100 mM DTT), ran a gel electrophoresis on a gradient gel, transferred to a nitrocellulose membrane with a semi-dry transfer approach, and performed primary antibody incubation with polyclonal rabbit antibodies anti-H3 (1:10000, ab1791, RRID:AB_302613), anti-XSMC1 (1:2500, MPI-CBG antibody facility), anti-XCAP-C (1:2000, MPI-CBG antibody facility) and monoclonal mouse antibodies to detect tubulin using anti-DM1a (1:10000, MPI-CBG antibody facility). We detected primary antibodies using LI-COR IRDye secondary antibodies and imaged the western blots using an Odyssey Infrared Imaging System. We analyzed the blots using FIJI.\n\n### Antibody production and labeling\n\nWe raised rabbit polyclonal antibodies for immunodepletion against peptides SDIVATPGPRFHTV and DLTKYPDANPNPND corresponding to antibodies that targeted cohesin\u2019s XRAD21 and XSMC1 subunits. We also raised rabbit polyclonal antibodies against peptides AAKGLAEMQSVG and SKTKERRNRMEVDK corresponding to antibodies that targeted XCAP-C and XCAP-E for both condensin I and II for immunodepletion (Hirano et al., 1997). We added a cysteine residue on the peptide\u2019s N-terminus for sulfhydryl coupling, and subsequent keyhole limpet hemocyanin conjugation and affinity purification was performed by MPI-CBG antibody facility. We labeled antibodies with fluorophores for localization using the small-scale on-resin labeling technique from Groen et al., 2014. Briefly, we prepared a 200 \u03bcl pipette tip to act as our resin bed. We then loaded 40 \u03bcl of rProtein A Sepharose (GE Healthcare) resin into the tip, washing three times with 10 mM K-HEPES (pH\u00a0=\u00a07.7), 150 mM NaCl. We labeled both the antibody targeting the cohesin subunit XRad21 and the antibody targeting condensin I and II\u2019s subunit XCAP-C. We flowed 70 \u03bcg antibody 5 times consecutively through the packed resin bed in order to bind the antibody to the resin. The resin was then washed three times with 200 mM K-HEPES (pH\u00a0=\u00a07.7). We then added 0.5 \u03bcl 50 mM NHS-Ester-Alexa488 (Alexa Fluor NHS Ester, A20000, Thermo Fischer) to 25 \u03bcl 200 mM K-HEPES (pH\u00a0=\u00a07.7), and immediately added it to the resin, incubating the resin, antibody, and dye for 60 min at room temperature. To remove the unbound dye, the resin bed was washed 5 times with 10 mM K-HEPES (pH\u00a0=\u00a07.7), 150 mM NaCl. We eluted the labelled antibody with 5 \u00d7 15 \u03bcl of 200 mM acetic acid. We neutralized each eluate immediately with 5 \u03bcl of 1 M Tris-HCl, pH\u00a0=\u00a09, and cooled to 0\u00b0C\u00a0on\u00a0ice. The labelled antibody is stable for months kept at 4\u00b0C.\n\n### DNA functionalization\n\nTo biotinylate DNA purified from lambda-phage (\u03bb-DNA) (Smith et al., 1996), we combined 10 \u03bcg of \u03bb-DNA (NEB, N3011S) and 5 \u03bcl of a 10X polymerase buffer (50 mM Tris-HCl, pH\u00a0=\u00a07.2, 10 mM MgSO4,100 \u03bcM DTT) to a total reaction volume of 50 \u03bcl. We then heated the mixture up to 65\u00b0C for 7 min to break apart the \u03bb-DNA\u2019s sticky ends. After heat treatment, we added 100x molar excess of biotinylated dATP, biotinylated dUTP, and dGTP, and dCTP. We then added one unit (~1 \u03bcl) of Klenow enzyme, mixed well, and incubated overnight at room temperature. We purified the biotinylated \u03bb-DNA using ethanol precipitation and stored aliquotes\u00a0at \u221220\u00b0C.\n\n### PEGylation of cover slips and DNA micro-channel preparation\n\nWe functionalized glass cover slips with mPEG and PEG-Biotin. We sonicated coverslips first in acetone for 15 min followed by 5 rinses with MilliQ water, and then another sonication step in 5 M KOH for 40 min. After rinsing the coverslips 3 times with water and then 3 times with methanol, we dried the coverslips with N2. We silanized the coverslips combining 250 ml methanol, 12.5 ml acetic acid, and 2.5 ml (3-aminopropyl)-trimethoxysilane, incubating the coverslips in this mixture for 10 min at room temperature, sonicating for 1 min, and then incubating the coverslips for an additional 10 min. Next, we rinsed the coverslips once with methanol, once with water, and once again methanol, and dried with N2. Then we mixed 100 mg mPEG and\u00a0~1.5 mg Biotin-PEG with 450 \u03bcl PEGylation buffer (0.1M Sodium Bicarbonate, pH\u00a0=\u00a08.5), and spun the reaction at 10.000 RPM for 1 min to remove air bubbles. We pipetted 25 \u03bcl of the PEG mixture onto a dried, silanized coverslip and put another coverslip on top, generating a coverslip sandwich. We incubated these sandwiches over night in distilled water-filled pipette tip-boxes in the dark. After incubation, we carefully disassembled the coverslips, rinsed with MilliQ water, and dried with N2. To generate a channel for imaging, we first drilled holes through a cleaned cover slide\u2014these holes acted as channel inlets and outlets. We placed custom-designed, laser-cut double-sided tape onto the coverslip, defining the channel geometry. We then placed a functionalized PEG-biotinylated coverslip on top of the double-sided tape, sealing the channel on either end with Valap. We filled the channel with\u00a0~10\u201315 \u03bcl of 0.1 mg/ml free streptavidin, incubating the channel with streptavidin for 1 min. To remove the free, unbound streptavidin, we flushed\u00a0~100 \u03bcl channel washing buffer (40 mM Tris-HCl, pH\u00a0=\u00a08.0, 20 mM NaCl, 0.4 mM EDTA) through the channel, using the drilled holes as channel inlets and outlets. We added 20 \u03bcl of 1:1000 biotinylated \u03bb-DNA (~5 pM), incubating it for\u00a0~1 min and then washed the channel with 3 \u00d7 100 \u03bcl of channel washing buffer.\n\n### Imaging\n\nFor live imaging of looping events, we fluorescently stained immobilized DNA strands with 50\u2013500 nM Sytox Orange (S11368, ThermoFisher), a DNA intercalating dye, in imaging buffer (50 mM Tris-HCl pH 7.7, 50 mM KCl, 2.5 mM MgCl2, 2 mM ATP) similar to Ganji et al., 2018 or Xenopus Buffer (XB: 100 mM KCl, 1 mM MgCl2, 0.1 mM CaCl2, 2 mM ATP). We excited Sytox Orange-labelled DNA using a 561 nm laser, and imaged the strands using a Nikon Eclipse microscope stand with a Nikon 100x/NA 1.49 oil SR Apo TIRF and an Andor iXon3 EMCCD camera using a frame-rate of 100\u2013300 ms. A highly inclined and laminated optical sheet (HILO) microscopy mode was established using a Nikon Ti-TIRF-E unit mounted onto the microscope stand to improve signal-to-noise ratio by excluding background fluorescence signal from unbound DNA dye in the buffer. To trigger the formation of DNA loops, we flowed about 2 ul of H3-H4-depleted extract into the channel (total channel volume\u00a0~10 ul) and let the extract diffuse further down the channel. We then imaged looping events at the moving front of the diffusing extract. A typical field of view contained 5\u201320 individual DNA molecules with typically between 2\u20137 strands having sufficient slack to support loop extrusion. Of these about 30% displayed looping events (Figure 3). As we could not control the concentration of loop extrusion factors, the majority of looping events displayed competition between two loops on the same strand. For this study we selected DNA strands that contained only a single looping event per strand.\n\n### Hydrodynamic stretching of loops\n\nTo visualize DNA loop topology which cannot be observed in the normal mode of data acquisition, we hydrodynamically stretched DNA strands that exhibited looping events using a flow-controlled syringe pump (Pro Sense B.V., NE-501), see also Figure 2\u2014video 1; Figure 1\u2014videos 7\u20139. The flow direction was set to be perpendicular to the strand orientation by a cross-shaped channel design. Depending on the width of the channel, we used flow rates between 100 \u03bcl/min and 500 \u03bcl/min to extend DNA loops. Specifically, we introduced H3-H4-depleted extract into the channel as described above and, upon loop formation, stretched DNA strands by flowing imaging buffer from the opposite side.\n\n### Correction of dye-induced DNA lengthening\n\nAs mentioned above, we used the DNA intercalating dye Sytox Orange at a range of concentrations to visualize our immobilized lambda DNA molecules. The intercalation of small dye molecules in between adjacent base pairs leads to a dye-concentration-dependent lengthening of the DNA molecules\u2019 contour length (Ganji et al., 2016). As this effect influences downstream analysis, we sought to correct for the dye-induced lengthening of our DNA molecules by determining the effective contour length of the lambda DNA for each dye concentration used in this study. To this end, we hydrodynamically stretched immobilized DNA molecules in the absence of dye using a buffer flow perpendicular to the strand orientation. DNA molecules were visualized by previous covalently labelling of the DNA backbone with Cy5 fluorescent molecules (label IT nucleic acid labelling kit, Mirus) which does not compromise the DNA contour length. By measuring the extension of these DNA molecules at a certain flow rate, we calculated the corresponding force experienced by the DNA molecules using the worm-like chain model (Marko and Siggia, 1995). We then performed the same stretching experiment with DNA molecules exposed to various concentrations of Sytox Orange, keeping the flow rate (and thus the stretching force) constant (1.54 pN) (Figure 2\u2014figure supplement 6A). The application of the worm-like chain model to the mean measured DNA extension values for a known force allowed us finally to obtain the contour length of lambda DNA at all examined dye concentrations (Figure 2\u2014figure supplement 6B). All these calibrations were done in the same buffer that is present in the channels prior to introduction of the egg extract\u2014which matches the pH and salt concentration of the extract. However, we want to point out, that in the extract, DNA molecules are exposed to a multitude of DNA binding proteins, which may further influence the properties of the DNA. However, for technical reasons, our calibrations of the effect of the dye on DNA length were limited to the buffer condition.\n\n### Loop extrusion analysis\n\nDNA traces were analyzed using custom-written Python scripts motivated by Ganji et al., 2018, resulting in data files for further analysis that we added together with the source code in the supplement. We converted movies of fluorescent DNA molecules into one-dimensional intensity profiles by summing the intensity values along the direction perpendicular to the DNA strand in each frame. We removed the background signal using a median filter. From the summed intensity profile for each frame we built kymographs by concatenating all time points (Figure 2 and Figure 1\u2014figure supplement 1). To yield the amount of DNA inside and outside the loop for each time point, we segmented the DNA intensity profiles into a loop region and two regions outside of the loop by first finding the maximum intensity value as the position of the loop and subsequent fitting of a Gaussian around that position. We defined the boundaries of the loop region and the regions outside of the loop by the positions + / - 2 standard deviations from the center of the Gaussian fit. Summing the intensity values of the regions outside of the loop and integrating the intensity under the Gaussian fit yielded the proportions of total signal intensity in each of the three regions for each time point. The difference between the integrated intensity below the loop and the offset from the Gaussian fit (corresponding to the intensity outside of the loop) was equally distributed to the regions outside of the loop as the signal from the incoming and outgoing DNA strands that are not part of the loop itself (Figure 2A).\n\nWe calculated the relative sizes of the three regions in kilo-base pairs (kb) for each time frame by multiplying the 48.5 kb total length of lambda DNA with the ratio of each summed intensity value and the total summed intensity of the strand for every time point. From these values we calculated the relative change\u00a0of\u00a0DNA in each region over time by subtracting the averaged ten last data points from the averaged ten first data points in each region. We used the resulting values a and b for the region left and right of the loop to assign a symmetry score for each looping event by calculating\n\n$$\nsymmetryscore=\\frac{Maxa,b-Min(a,b)}{a+b}\n$$\n\nThis procedure orders the extrusion from region a and b such that the symmetry score is always positive and ranges from 0 to 1. Our symmetry score intends to quantify the amount of DNA extruded into the loop from the outer regions. A positive relative change from one side implies that no DNA from that side has been extruded into the loop\u2014and indicates that DNA slipped from the loop to that region\u2014 and thus we set that change to 0 (if a\u00a0>\u00a00: a\u00a0=\u00a00; if b\u00a0>\u00a00: b\u00a0=\u00a00). The slipping of substantial amounts of DNA (>2 kb) was a rare event with three cases in metaphase (p=0.08) and 0 cases in interphase.\n\nThis procedure additionally allowed us to track the position of the loop for each time point during every loop extrusion event and study the movement of loops along the DNA strands in inter- and metaphase (Figure 2\u2014figure supplement 4). To this end we quantified the change in relative position of the loop by subtracting the average loop positions of the last ten time point from the average loop positions of the first ten time points. (Figure 2\u2014figure supplement 4C) This analysis was set up in such a way that, independent of a loop starting left or right of the center of the DNA, the change in loop position was always positive if the loop moved towards or crossed the center of the DNA molecule, and negative if the loop moved towards the closest DNA boundary. The absolute quantity of the change in loop position reflects the relative displacement of the loop along the DNA strand during the process of loop formation and it is referred to as static, if the displacement is below a threshold of 0.08. This analysis allowed us to display the relative displacements of loops as a function of the symmetry score of the corresponding looping in between meta- and interphase (Figure 2\u2014figure supplement 4D&E) and compare the probability of the loop to move towards the center of the strand between both cell cycle phases (Figure 2\u2014figure supplement 4F).\n\nWe extracted the initial loop extrusion rates from the first derivative at time point zero of a single exponential fit to the values of the loop growth over time (Figure 2B\u2013C). The size of the loop at each time point further allowed us to continuously calculate the relative extension of the DNA molecule during the loop formation, by dividing the end-to-end distance of the DNA strand by the length of the regions outside of the loop. We estimated the tension on the DNA strand for each time point by applying the Worm Like Chain Model (WLC) of DNA (Marko and Siggia, 1995) to these relative extension values (Figure 2\u2014figure supplement 2C & D). Since small fluctuations in the estimated relative extension of the DNA, as they occur via thermal agitation of the molecule, can lead to large fluctuations in the corresponding tension, we decided to reduce fluctuations by smoothing the initial loop data. To this end we applied a Savitzky-Golay filter with a 2nd order polynomial and a window size of 63 points to the initial loop data, which significantly reduced fluctuations in the resulting relative DNA extension. The rate of loop extrusion was then extracted from a first order derivative of the smoothed curve and yielded similar initial rates as determined from the exponential fit to the raw loop data. We then applied the WLC model to the smoothed relative extension curve to obtain tension of the DNA molecule for each time point during the loop formation. This procedure allowed us to visualize the decrease in extrusion rate with the increasing tension on the DNA molecule (Figure 2\u2014figure supplement 2E). To investigate the dependence of the rate of loop extrusion on the tension on the DNA strand for the entire population of inter- and metaphase looping events, we extracted the extrusion rates and corresponding tension values for each time point during every looping event from the exponential fits to the loop data. This allowed us to display the average decrease in extrusion rate (+ / - standard deviation) for the interphase and metaphase looping populations (Figure 2\u2014figure supplement 2F). The stall force of each loop extrusion event (Figure 2D) was determined by taking the average steady state loop size of the last ten time points and converting the corresponding relative extension of the DNA molecule into one tension value per looping event using the WLC model. For the analysis of extrusion stall forces we only used DNA strands where the loop extrusion did not end (or was stalled) at the DNA end-binding sites (N\u00a0=\u00a052).\n\nTo quantify the effect of cohesin and condensin depletion, we determined the probability of loop extrusion by counting the number of observable loop extrusion events in all data taken for one condition and dividing it by the total number of DNA strands with sufficient slack (<0.6 relative extension) to support the formation of a loop for that condition.\n",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "ff94f6a1-4558-4c1c-9948-d611dd2aa7f0",
+      "submission_id": "455f6a4c-1646-4f11-ad66-c750f4627564",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Job Dekker, University of Massachusetts Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53885.sa1](https://doi.org/10.7554/eLife.53885.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work is an important and timely contribution that addresses modalities of loop extrusion by SMC complexes. The present study goes beyond recent published work in this area, by having reconstituted both cohesin and condensin reactions in extracts and having demonstrated the cell cycle dependence of the activity of cohesin and condensin. Presented single-molecule experiments in mitotic and interphase extracts show different modes of loop extrusion, with condensins operating in the mitotic extract as one-sided extruders, and cohesin acting in interphase as a two-sided extruder. Although the process of loop extrusion by yeast condensin has been visualized by single-molecule experiments (Ganji et al., 2018), many questions remain, particularly the mode of loop extrusion by different SMCs complexes of higher eukaryotes. The study of Golfier et al. is the first to examine extrusion by both condensin and cohesin from the same higher organism, in cell extracts, and in a cell-cycle-stage dependent manner. The study also provides important quantitative estimates of the rates and stall forces of extrusion that can be important for future studies aiming to decipher the mechanism of extrusion.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cohesin and condensin extrude loops in a cell-cycle dependent manner\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Leonid A Mirny (Reviewer #1); Andrea Musacchio (Reviewer #2); John F Marko (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Some caveats need to be included regarding the results. It is emphasized that the experiments put the looping experiments in a cellular context. Yes, extracts are used, but the first result of the paper is that H3-H4 dimers must be removed which makes these experiments rather more like in vitro experiments on naked DNA (e.g., by the Dekker and Peters labs) than experiments on chromatin. Further, it is emphasized that the experiments indicate that cohesin carries out symmetric extrusion which condensin is asymmetric, while Figure 2 indicates a mixed distribution, with peaks towards the symmetric and asymmetric cases for interphase/cohesin and metaphase/condensin. According to Figure 2 there is an appreciable subfraction of asymmetric cohesin traces and symmetric condensin traces in the data. The work of Banigan and Mirny puts a 90% compaction limit on pure-one-sided extrusion (with random orientation of extruders) but mixing even a small fraction of two-sided extruders will lead to appreciable further compaction by filling in gaps between the quiet sides of adjacent one-sided extruders.\n\n2) No differentiation is made between condensin I and condensin II; the initial structure of metaphase chromosomes during mitotic prophase is established by condensin II, but Xenopus extracts contain condensin I in excess (estimates of Hirano's group are in the 5:1 range for condensin II:condensin I). Have experiments been done along the lines of those in Figure 2 to determine the nature of loop extrusion (symmetric vs. asymmetric) for depletions of condensin I and condensin II-specific components (e.g., XCAP-H and XCAP-H2)? It is therefore not clear whether the two species of condensin have the same loop-extrusion-symmetry properties and it could well be that the more symmetric cases in Figure 2Diii correspond to more symmetric activities of condensin II. For the extracts with excess condensin I it would seem wise to not draw conclusions about condensin II. I do not require new experiments with specific depletions of either condensin I or II (although if they can be added that would be interesting), but do ask for a more careful discussion of the possible roles of the two complexes.\n\n3) There seems to be some inconsistency between the stall forces reported in the text (0.41 pN for condensin, and 0.23pN for cohesin) and those shown in Figure 2D (the mean ~0.1pN for both). I also wonder whether errors in determining the relative extension of DNA could have contributed to the estimate of the stall force. Perhaps authors can test whether estimated stall force for each trajectory depends on the initial and final slack.\n\n4) Looking at Figure 2Biv and v I was a bit surprised that the sum of the length of three regions: DNA to the left from the loop, to the right from the loop, and in the loop don't appear to sum up to a constant. On Figure 2Biv the sum of the three at t=0 is 37Kb, at 30sec its about 43Kb\u2026 May be this is just a measurement error\u2026 The loop gained 25Kb, but the flanks lost less than 20Kb together. In fitting these curves, I wonder whether the assumption about the sum of the three to be constant was used (and whether using it would make a difference for the rates and the stall forces). Also, in Figure 2Bv, it looks like the loop is getting smaller for trajectories with larger relative extension, (initial, I assume) but the flanks are not getting smaller or larger. This plot is generally hard to understand. Authors may want to have a diagram to help the reader with Figure 2Bii, v and also explain what's shown: one point per trajectory or one point per time from a single (or multiple trajectories).\n\n5) Figure 2C is very important as it provides the estimate of the speed of extrusion. It looks like this plot shows one point (rate at t=0) per trajectory. It may be interesting to see (i) whether rate vs. extension is a universal dependence; and (ii) the extent of variation around this dependence for individual trajectories. Perhaps authors can put not only t=0, but some smoothed velocity vs. extension for different time points on the same plot and/or their exp fits. In other words, if one trajectory starts with less extension and at a higher speed, while another starts at a greater extension and lower speed, will the speed of the first one gets down to the same level when it achieves the same extension as the initial one of the second trajectory. Using these data for all trajectories together (data for different t, not only t=0) may provide a more robust estimate of the rate of extrusion that the two exp fits (one to get rate(t=0) for each trajectory, and the other for rate(t=0) vs. extension).\n\nI wonder whether more accuracy way of measuring the speed of extrusion (or reeling) could be achieved by using very low level of DNA labeling so that individual speckles of DNA can be vitalized and tracked in the flanking regions. This can, in principle, be precise enough to see pausing or switching events. May be this can be tried in future studies.\n\n6) The difference in extrusion dynamics between interphase and mitotic extracts is one of the most exciting aspects of the manuscript. Since cohesin and condensins are labeled it would be great to look closer at the deviations from the textbook picture. So, I wonder whether authors can look at cohesin dynamics in the mitotic extract, and condensin dynamics in the interphase. Are cohesins completely unable to bind or to extrude in the mitotic exact? Can condensins bind/extrude in the interphase, though less efficiently? In other words, are these mere abundances of cohesin in the interphase and condensin in the metaphase, or is there a mechanistic control. Testing for such unconventional roles can be a very exciting twist of the story.\n\n7) The major limit of the study is that there are no mechanistic details to explain the cell-cycle dependency of the reactions. Importantly, DNA loop extrusion by Cohesin had not been demonstrated until very recently, and it is clear that the authors reconstituted this reaction independently from the other two groups. I feel that at least some initial mechanistic detail on how the cell cycle regulates loop extrusion should be discussed.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for re-submitting your article \"Cohesin and condensin extrude loops in a cell-cycle dependent manner\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Leonid A Mirny (Reviewer #1); Andrea Musacchio (Reviewer #2); John F Marko (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nEssential revisions:\n\n1) Reviewer #1 brought up these points:\n\nI found the wording \"symmetric\" and \"non-symmetric loops\" a bit confusing, as loops are symmetric, and it is the process that generates them can be either symmetric or non-symmetric. The authors may want to replace \"extrudes symmetric loops\" with \"extrudes loops symmetrically\" (and similarly \"extrudes loops non-symmetrically\") in the Abstract and in the rest of the manuscript.\n\n2) While presenting an equation for the Relative Extension (RE) is really helpful, some inconsistencies between RE presented on different plots remain an issue. Figure 2\u2014figure supplement 5A and B largely disagree with all other plots presenting RE. According to Figure 2\u2014figure supplement 5A, extrusion during interphase results in RE<0.5 for most of the cases, while extrusion during metaphase (Figure 2\u2014figure supplement 5B) appears to be much more processive, resulting in RE>0.5 for most of the cases and at least 8 trajectories showing complete extrusion of all the slack in DNA into a loop (RE=1). Figure 2\u2014figure supplement 5C, on the contrary, has all the points with RE<0.6; including 4 metaphase trajectories with RE<0.2, while only one such point is shown on Figure 2\u2014figure supplement 5B. The number of trajectories (~20) on Figures 2\u2014figure supplement 5A and B also disagree with the numbers of points shown in Figure 2\u2014figure supplement 5C, and all inconsistent with the tallies of trajectories on Figure 2\u2014figure supplement 4D. While Figure 2\u2014figure supplement 5C agrees the main Figure 2, where most of RE <0.6 for both interphase and metaphase, they disagree with the text which states the typical maximum (stalling) RE is ~65% in the metaphase extract (consistent with Figure 2\u2014figure supplement 5B, but not all other figures). Overall, if indeed RE is vastly different in mitotic and interphase trajectories \u2013 it's a very interesting result.\n\n3) Since RE was used to infer the stall force, inconsistencies in RE may have propagated to those in the stall force estimates. In general, 0.16-0.18 pN forces reported here (with a smaller stall force for metaphase than for interphase, inconsistent with Figure 2\u2014figure supplement 5C) is a factor of 10 lower than those found by for yeast condensin 1.2+-0.5pN and >0.8pN for human cohesin). It would be great if authors can comment on this. It appears that the quantification of force-extension (Figure 2\u2014figure supplement 6) can make detecting of ~1pN forces extremely unlikely. According to Figure 2\u2014figure supplement 6B, getting a force of about 1pN would require >96% extension. Works of Cees Dekker's lab use magnetic bead quantification (their Nano Letter 2016) where ~1pN are achieved at 80% extension. According to Figure 2\u2014figure supplement 6B, 80% extension gives the force <0.1pN. This factor of 10 difference between force-extension quantification deserves authors attention. Furthermore, Figure 2\u2014figure supplement 2F shows extrusion, albeit at a lower speed, above 0.1pN and up to 1pN force, raising further questions about the estimate of 0.16pN stall force.\n\n4) At the end of the Discussion, the authors bring up a very interesting result (not mentioned in the Results section): \"Interestingly, our results comparing interphase extrusion velocities with looping symmetries show that, on average, symmetric loops extrude with a higher rate (roughly twice) compared to the non-symmetric events (Figure 2\u2014figure supplement 5).\" Unfortunately, Figure 2\u2014figure supplement 5 doesn't present symmetry vs. rate data. This is very interesting and important result that should be presented in the Results section, and further highlighted in the Discussion. Alongside with the missing symmetry vs. velocity, the authors may want to present symmetry as a function of the initial relative extension, as those slower and one-sided events might reflect partial stalling of the motor activity, and thus may be more abundant at higher extension.\n\n5) The revision presents insightful new analysis of the movement of the loop relative to the border. While interesting, it may be hard for a reader to follow its logic without an illustration (and possibly also a mathematical formula in the Materials and methods). Such a figure can just explain why (i) two-sided extrusion initiated close to the border would make the loop move towards to the nearest border, while those initiated away from the border wouldn't; and (ii) why one-sided extrusion would move a loop to the border or toward the center with 50/50 chances.\n\n6) Sentences comparing one-sided extrusion in metaphase with our recent theory paper are somewhat confusing. The manuscript reads \"This (theory) work puts the lower limit on symmetric extrusion at 10%. In contrast to in vitro studies of condensin loop extrusion, we found a small sub-population of symmetric loop extrusion in metaphase (~20%) that is above the 10% theoretical limit.\" Our theory work states that purely one-sided extrusion would leave ~10% of DNA unextruded, setting a limit of ~10-fold compaction due to one-sided extrusion. Hence \"10%\" in our study does not refer to the fraction of one-sided or two-sided extruders that is required for compaction. However, we did consider mixtures of one-sided and two-sided extruders, demonstrating that a mixture of 40% one-sided and 60% two-sided extruders can achieve 100-fold linear compaction, while achieving 1000-fold compaction would require ~85% two-sided extruders in the mixture. Data presented in the revised manuscript indeed show that in the mitotic extract about 50% of condensins are one-sided (symmetry 0.8-1.0), while the remaining 50% are asymmetric, but two-sided events. As discussed in our PRX paper, even highly asymmetric extrusion can be consistent with \"two-sided\" extrusion if such asymmetric extruders stay on the chromatin long enough to close the gaps on their \"slowly\" extruding sides. Thus, the authors can state that this 50% asymmetric extrusion could be sufficient to achieve about 100-fold compaction. Further studies of extruders with different distributions of symmetries and speeds or residence times are underway in our group.\n\n7) Reviewer #3 brings up these points:\n\nThe revision has addressed the comments and suggestions of the first round of review. I still think the paper is not as crystal clear as it should be about a key point, namely the use of H3/H4-depleted extracts (without which the effects reported in the paper could not be observed). It should be made very clear that these experiments are not on chromatinized DNA, as most people in the field know is rapidly formed when naked DNA is put into Xenopus extracts.\n\nI think that the phrase \"histone H3/H4-depleted\" should be put in front of \"Xenopus egg extracts\" either in the Abstract or in the last paragraph of the Results.\n\nNumbers of molecules are now included in the Results which is helpful. However, numbers of separate experiments are not listed (N=52 means 52 molecules in one flow cell or 13 molecules observed in 4 separate experiments (flow cells)). Perhaps this information is included in the revision and I apologize if I missed it. However, a clear statement of the number of separate experiments that were used in the study speaks to reproducibility of the results.\n",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cd807f71-28ee-4692-b2b1-9afc9535f72e",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C1",
+      "claim": "Loop extrusion by structural maintenance of chromosomes (SMC) complexes has been proposed as a mechanism to organize chromatin in interphase and metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Loop extrusion by structural maintenance of chromosomes (SMC) complexes has been proposed as a mechanism to organize chromatin in interphase and metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to existing literature proposing the loop extrusion hypothesis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "d6e1a0c1-95c5-4b64-8413-110e5c3ed35f",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C2",
+      "claim": "Loops form in both metaphase and interphase, but with distinct dynamic properties.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that loops form in both metaphase and interphase, but with distinct dynamic properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations and data presented in the manuscript showing loop formation in both cell cycle phases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "d813e876-8808-47dc-9b29-050124a959df",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C3",
+      "claim": "Condensin extrudes DNA loops non-symmetrically in metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin extrudes DNA loops non-symmetrically in metaphase, whereas cohesin extrudes loops symmetrically in interphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing the symmetry properties of loop extrusion in metaphase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "28505b7b-432b-42a8-8697-99f2bd8597c7",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C4",
+      "claim": "Cohesin extrudes loops symmetrically in interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin extrudes DNA loops non-symmetrically in metaphase, whereas cohesin extrudes loops symmetrically in interphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing the symmetry properties of loop extrusion in interphase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "4b84614c-cb9b-485d-b06b-9e61ac514f02",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C5",
+      "claim": "Loop extrusion is a general mechanism underlying DNA organization, with dynamic and structural properties that are biochemically regulated during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that loop extrusion is a general mechanism underlying DNA organization, with dynamic and structural properties that are biochemically regulated during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented throughout the manuscript showing differential regulation of loop extrusion in different cell cycle phases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "1aa96035-4228-4a6f-98d6-55b3c7199133",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C6",
+      "claim": "Chromatin undergoes a dramatic reorganization during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin undergoes a dramatic reorganization during the cell cycle (Hirano and Mitchison, 1991; Rowley and Corces, 2018; Nagano et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "478e974a-5a94-42d8-b57c-abf4a8c19ed8",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C7",
+      "claim": "In interphase, chromatin is organized into compartments and topological-associating domains (TADs) that are cell-type specific.",
+      "claim_type": "EXPLICIT",
+      "source": "In interphase, chromatin is organized into compartments and topological-associating domains (TADs) that are cell-type specific (Bonev and Cavalli, 2016; Dekker and Mirny, 2016; Rao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "42355e09-ded6-41c7-b9af-e0fca89be5aa",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C8",
+      "claim": "TADs are composed of chromatin loops that have been hypothesized to regulate gene expression by spatially restricting contacts between genes and regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "TADs are composed of chromatin loops that have been hypothesized to regulate gene expression by spatially restricting contacts between genes and regulatory elements (Smith et al., 2016; Lupi\u00e1\u00f1ez et al., 2015; Ren et al., 2017; Schoenfelder and Fraser, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies proposing this hypothesis.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "0c747a0b-ecba-4fa8-8312-4c734a66f8e3",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C9",
+      "claim": "In metaphase, chromosomes undergo large-scale compaction, leading to the loss of specific boundaries and the shutdown of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In metaphase, chromosomes undergo large-scale compaction, leading to the loss of specific boundaries and the shutdown of transcription, which is achieved by arranging chromatin into an array of condensed loops (Marsden and Laemmli, 1979; Earnshaw and Laemmli, 1983; Naumova et al., 2013; Goloborodko et al., 2016; Uhlmann, 2016; Kinoshita and Hirano, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "478cbbe3-e0a6-4080-88c9-aec9684b6eb5",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C10",
+      "claim": "Metaphase chromosome compaction is achieved by arranging chromatin into an array of condensed loops.",
+      "claim_type": "EXPLICIT",
+      "source": "In metaphase, chromosomes undergo large-scale compaction, leading to the loss of specific boundaries and the shutdown of transcription, which is achieved by arranging chromatin into an array of condensed loops (Marsden and Laemmli, 1979; Earnshaw and Laemmli, 1983; Naumova et al., 2013; Goloborodko et al., 2016; Uhlmann, 2016; Kinoshita and Hirano, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "59497604-39bc-4014-882b-7d602681f758",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C11",
+      "claim": "SMCs are thought to organize DNA by actively extruding DNA loops.",
+      "claim_type": "EXPLICIT",
+      "source": "SMCs are thought to organize DNA by actively extruding DNA loops (Rao et al., 2014; Fudenberg et al., 2016; Alipour and Marko, 2012; Sanborn et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "ca52eef6-0f1f-403b-ac5a-44724b1ad3dd",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C12",
+      "claim": "Yeast condensin extrudes DNA loops in a one-sided manner in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experimental studies have shown that yeast condensin extrudes DNA loops in a one-sided manner in vitro (Ganji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "c8a38fa5-8091-4d43-baf0-d465a7d919cf",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C13",
+      "claim": "One-sided loop extrusion by yeast condensin in vitro is inconsistent with the requirement for two-sided loop extrusion predicted by theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Although consistent with the loop-extrusion hypothesis, it is inconsistent with the requirement for two-sided loop extrusion predicted by theory (Banigan and Mirny, 2018; Banigan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "5c3057ba-b13b-41ef-abab-872911f2ea81",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C14",
+      "claim": "The properties of loop extrusion in cellular contexts may differ from those in vitro and may be regulated during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "One reason for this discrepancy could be that the properties of loop extrusion in cellular contexts differ from those in vitro and may be regulated during the cell cycle (Abramo et al., 2019; Losada et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and represents a hypothesis to explain observed discrepancies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "063885a4-b361-4230-ac2c-e0f5ded7a622",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C15",
+      "claim": "Condensin complexes do not structure the genome during interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, condensin complexes do not structure the genome during interphase (Abdennur, 2018), which raises intriguing questions about the molecular players that regulate DNA architecture in interphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "f2dacee8-5ad5-4855-8065-6f68e1b77dd3",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C16",
+      "claim": "Cohesin can extrude DNA loops symmetrically in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent in vitro work demonstrated that cohesin can extrude DNA loops symmetrically (Davidson et al., 2019; Kim et al., 2019), though this activity has not been directly visualized in cellular contexts (Rao et al., 2017; Schwarzer et al., 2017; Hansen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "8b6224f6-ec64-4366-91b9-0d926bf36475",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C17",
+      "claim": "Cohesin's symmetric loop extrusion activity has not been directly visualized in cellular contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent in vitro work demonstrated that cohesin can extrude DNA loops symmetrically (Davidson et al., 2019; Kim et al., 2019), though this activity has not been directly visualized in cellular contexts (Rao et al., 2017; Schwarzer et al., 2017; Hansen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations indicating the absence of direct visualization in cellular contexts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "04488408-6192-487d-b9ea-b00c35e0718b",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C18",
+      "claim": "Xenopus laevis egg extracts can be cycled between metaphase and interphase and recapitulate many sub-cellular biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "These extracts can be cycled between metaphase and interphase and recapitulate many sub-cellular biological processes, such as the formation of mitotic chromatids and interphase nuclei (Hirano and Mitchison, 1991; Murray, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies establishing the properties of Xenopus egg extracts.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "4dfd6552-f446-4aa2-a6df-95dc2e534a22",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C19",
+      "claim": "Addition of either metaphase-arrested or interphase Xenopus egg extracts into the chamber triggered the formation of small DNA enrichments, consistent with nucleosomal deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of either metaphase-arrested or interphase Xenopus egg extracts into the chamber triggered the formation of small DNA enrichments, consistent with nucleosomal deposition (Yan et al., 2007; Gruszka et al., 2019), that rapidly reduced any slack in the DNA molecules (Figure 1\u2014figure supplement 1A and Figure 1\u2014videos 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations, citations, and reference to supplementary figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "e822a0f1-5cd3-4330-809a-958a4657f75d",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C20",
+      "claim": "Depletion of ~90\u201395% of soluble H3-H4 heterodimers in the extract led to the formation of compacted DNA clusters that grew in size over time in both metaphase and interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase the amount of available slack to allow for loop extrusion, we abolished nucleosomal assembly along the strand by depleting ~90\u201395% of soluble H3-H4 heterodimers in the extract (Zierhut et al., 2014; Figure 1\u2014figure supplement 1B). This led to the formation of compacted DNA clusters that grew in size over time in both metaphase and interphase (Figure 1B and Videos 1\u20132; Figure 1\u2014videos 3\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data, citation, and reference to figures and videos.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "8baa1811-0105-4aa3-bbd7-69d61b0a23fc",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C21",
+      "claim": "Hydrodynamic stretching revealed DNA clusters with a characteristic loop topology in both inter- and metaphase extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure revealed DNA clusters with a characteristic loop topology in both inter- and metaphase extracts (Figure 1C, Figure 1\u2014figure supplement 1C and Figure 2\u2014video 1; Figure 1\u2014videos 7\u20139).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations and reference to figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "3b0ff65d-1893-43ab-bcb0-86bef827817a",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C22",
+      "claim": "In mock-depleted extracts, loops also formed but at a much lower frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "In mock-depleted extracts, loops also formed but at a much lower frequency (Figure 1\u2014figure supplement 1D and Figure 1\u2014video 10) and seemed to compete with nucleosomes for available DNA slack.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations and reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "c06894ca-0d8c-413b-baa5-5d04733d5a3e",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C23",
+      "claim": "DNA loop extrusion can be reconstituted in Xenopus egg extracts in metaphase and interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that DNA loop extrusion can be reconstituted in Xenopus egg extracts in metaphase and interphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental results described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "bf2addaf-d41b-4210-ba70-d8cf1b3cdfa1",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C24",
+      "claim": "DNA loops in metaphase-arrested, H3-H4-depleted extract are initially extruded at 2.36 \u00b1 0.35 kb/s (mean \u00b1 SEM).",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to metaphase-arrested, H3-H4-depleted extract (n=7 extract days), this assay showed that DNA loops are initially extruded at 2.36 \u00b1 0.35 kb/s (mean \u00b1 SEM) (Figure 2Bi, C; Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative experimental data and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "4f41e801-8217-4a87-a4ae-b8a57f4b4c8a",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C25",
+      "claim": "Loop growth rapidly slowed down as more DNA was pulled into the looped region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, loop growth rapidly slowed down as more DNA was pulled into the looped region (Figure 2\u2014figure supplement 2A), suggesting that extrusion rates depend on DNA tension.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations and reference to supplementary figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "30b9799a-0867-4681-aa49-ae6825ee3415",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C26",
+      "claim": "Extrusion rates depend on DNA tension.",
+      "claim_type": "EXPLICIT",
+      "source": "However, loop growth rapidly slowed down as more DNA was pulled into the looped region (Figure 2\u2014figure supplement 2A), suggesting that extrusion rates depend on DNA tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that loop growth slows as DNA tension increases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "0333290a-6cbb-43cc-acfa-e2b1f7a145a6",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C27",
+      "claim": "The relationship between extrusion rates and DNA tension is generally conserved for all looping events.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the relationship between extrusion rates and DNA tension is generally conserved for all looping events (Figure 2\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "da1f67d5-b3d7-428d-b5cd-12df57df1fcb",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C28",
+      "claim": "Loop extrusion in metaphase stopped when the relative extension of DNA outside of the loop reached on average ~65%, corresponding to a stall force of 0.16 pN \u00b1 0.01 pN (mean \u00b1 SEM).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, loop extrusion stopped when the relative extension of DNA outside of the loop reached on average ~65%, corresponding to a stall force of 0.16 pN \u00b1 0.01 pN (mean \u00b1 SEM), (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative experimental data and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "166751ea-51b4-42f7-a5f5-47c79891c873",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C29",
+      "claim": "In rare cases, individual looping events stalled at DNA extensions of up to ~85%, corresponding to forces up to ~1 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "In rare cases, we observed individual looping events stalling at DNA extensions of up to ~85%, corresponding to forces up to ~1 pN (Figure 2\u2014figure supplement 2C\u20135C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations and reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "2554f2fc-e282-4262-b1a9-24aed8a50af3",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C30",
+      "claim": "The majority of metaphase looping events had a symmetry score close to 1, which corresponds to one-sided (non-symmetric) loop extrusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of metaphase looping events had a symmetry score close to 1, which corresponds to one-sided (non-symmetric) loop extrusion (Figure 2Biii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of experimental data and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "20214aaa-bc83-4c85-a071-56274771e8f4",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C31",
+      "claim": "A small population of ~20% of all metaphase looping events were two-sided.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a small population of ~20% of all metaphase looping events were two-sided (as defined by a symmetry score of less than 0.5, Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of experimental data and reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "8c0258d7-87ed-4359-8a6f-6ce56ce50f4c",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C32",
+      "claim": "Loops that were displaced during loop formation in metaphase moved with equal probability towards the boundaries or the center of the strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with one-sided loop extrusion, loops that were displaced during loop formation, moved with equal probability towards the boundaries or the center of the strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of loop movement data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "f3c1168f-768d-4d2f-9182-e626fdc49914",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C33",
+      "claim": "The equal probability of loop movement towards boundaries or center is suggestive of non-symmetric DNA extruding factors landing in a random orientation on the DNA molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior is suggestive of non-symmetric DNA extruding factors landing in a random orientation on the DNA molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an interpretation of the observed loop movement patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "a929cb47-ea76-4e7e-a31e-8e8716cfd839",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C34",
+      "claim": "DNA loop extrusion in metaphase is predominantly one-sided, with extrusion speeds and stall forces similar to those measured in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our analysis demonstrates that DNA loop extrusion in metaphase is predominantly one-sided, with extrusion speeds and stall forces similar to those measured in vitro (Ganji et al., 2018; Strick et al., 2004; Kong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and comparison with cited in vitro studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "1519c3e5-c827-4104-ab2c-fef440f1c731",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C35",
+      "claim": "Loop extrusion in interphase displayed a mean extrusion rate of 1.94 \u00b1 0.26 kb/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Loop extrusion in interphase displayed a similar distribution of extrusion rates, with a mean of 1.94 \u00b1 0.26 kb/s, and average stall forces of 0.18 pN \u00b10.03 pN, with maximal forces of up to 0.82 pN (Figure 2C and D, Figure 2\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative experimental data and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "f014f2a7-19e5-4f82-b85d-ecd420e71cb3",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C36",
+      "claim": "Loop extrusion in interphase displayed average stall forces of 0.18 pN \u00b10.03 pN, with maximal forces of up to 0.82 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Loop extrusion in interphase displayed a similar distribution of extrusion rates, with a mean of 1.94 \u00b1 0.26 kb/s, and average stall forces of 0.18 pN \u00b10.03 pN, with maximal forces of up to 0.82 pN (Figure 2C and D, Figure 2\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative experimental data and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "ad1bf3e8-fe8a-40ea-8e3b-700446625f26",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C37",
+      "claim": "The distribution of symmetry scores of interphase looping events peaked towards zero, indicating that these loops are symmetrically extruded.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the distribution of symmetry scores of these looping events peaked towards zero, indicating that these loops are symmetrically extruded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "f1265698-7de8-4b98-8757-71896916d21e",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C38",
+      "claim": "A sub-population of ~20% of all interphase loops had the opposite symmetry (symmetry score larger than 0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to metaphase looping, we observed that a sub-population of ~20% of all loops had the opposite symmetry (symmetry score larger than 0.5, Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of experimental data and reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "8335a923-866c-4323-94ad-d5ceb78631cd",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C39",
+      "claim": "Loops that started off-center on the strand in interphase displayed a strong bias to move towards the DNA boundary of the shorter DNA portion.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted for symmetric extrusion, loops that started off-center on the strand displayed a strong bias to move towards the DNA boundary of the shorter DNA portion (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations and reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "820e8f79-c243-436f-b773-c7a49cc0ff3f",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C40",
+      "claim": "The mechanisms of DNA loop extrusion are different in interphase and metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that the mechanisms of DNA loop extrusion are different in interphase and metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data showing different symmetry properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "ce715a08-2ff2-4322-91b6-d5625b2ae5a2",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C41",
+      "claim": "The cell cycle-dependent activities of condensin and cohesin could account for the transition between symmetric and non-symmetric loop extrusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell cycle-dependent activities of condensin and cohesin could account for the transition between symmetric and non-symmetric loop extrusion (Banigan et al., 2019; Abramo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "09c2e356-dd87-4ff8-aa91-d1bf44e6671e",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C42",
+      "claim": "In metaphase, the occurrence of DNA loop extrusion was significantly reduced (p<0.01) upon depletion of condensin I and II but was unaffected by cohesin depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, in metaphase (n = 3 extract days), the occurrence of DNA loop extrusion was significantly reduced (p<0.01) upon depletion of condensin I and II but was unaffected by cohesin depletion (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from depletion experiments and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "48c82b23-8304-43ed-973c-a5802198e594",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C43",
+      "claim": "In interphase, there was a significant decrease (p<0.01) in loop extrusion following cohesin depletion but was unaffected by condensin depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was a significant decrease (p<0.01) in loop extrusion following cohesin depletion in interphase (n = 3 extract days), but was unaffected by condensin depletion (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from depletion experiments and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "1d2d3cda-5ea4-49e6-b280-47e1c407b306",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C44",
+      "claim": "Immunostainings showed colocalization of cohesin with the DNA loops observed in interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed these depletions with immunostainings that showed colocalization of cohesin and condensin with the DNA loops observed in interphase and metaphase, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "db7ccd65-8041-4146-bf2f-819e4fad70d0",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C45",
+      "claim": "Immunostainings showed colocalization of condensin with the DNA loops observed in metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed these depletions with immunostainings that showed colocalization of cohesin and condensin with the DNA loops observed in interphase and metaphase, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining data and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "2fb18f91-4483-4778-9865-7790b8693717",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C46",
+      "claim": "Apyrase-mediated ATP depletion in interphase extract resulted in a near-complete elimination of DNA looping activity.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to interphase extract, apyrase-mediated ATP depletion resulted in a near-complete elimination of DNA looping activity , suggesting that cohesin actively extrudes loops in an ATP-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from ATP depletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "7e64cc0c-cfbb-4b08-b99d-b1afae2a437c",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C47",
+      "claim": "Cohesin actively extrudes loops in an ATP-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to interphase extract, apyrase-mediated ATP depletion resulted in a near-complete elimination of DNA looping activity , suggesting that cohesin actively extrudes loops in an ATP-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that ATP depletion eliminates looping activity in interphase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "37bb6327-6c32-4903-9b04-ba5330696a8b",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C48",
+      "claim": "Cohesin actively extrudes DNA loops symmetrically during interphase, whereas condensin extrudes DNA loops non-symmetrically in metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results show that cohesin actively extrudes DNA loops symmetrically during interphase, whereas condensin extrudes DNA loops non-symmetrically in metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the combined experimental data from loop dynamics and depletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "e3552803-e2f3-48d6-afa7-25ed59e5613a",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C49",
+      "claim": "The molecular mechanisms of DNA loop extrusion are differentially regulated during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the molecular mechanisms of DNA loop extrusion are differentially regulated during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data showing different complexes are responsible for loop extrusion in different cell cycle phases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "f6ca5837-3bd7-49da-9b4b-81f3f4ed54d3",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C50",
+      "claim": "Loop extrusion is a general mechanism of DNA organization in a cellular context.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings provide the first direct evidence that loop extrusion is a general mechanism of DNA organization in a cellular context, and, furthermore, that it is differentially regulated during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental demonstration of loop extrusion in both cell cycle phases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "b40838de-c493-4cf8-97de-cde871d3ae1c",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C51",
+      "claim": "Loop extrusion regulation is achieved by the distinct activities of cohesin and condensin during interphase and metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "This regulation is achieved by the distinct activities of cohesin (Rao et al., 2017; Schwarzer et al., 2017; Losada et al., 1998) and condensin (Kinoshita and Hirano, 2017; Hirano et al., 1997; Shintomi et al., 2017) during interphase and metaphase, and may control different levels of DNA organization during the cell cycle: from chromatin that is mostly decondensed and spatially organized into TAD structures during interphase to highly compacted chromosomes in metaphase (Abramo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to relevant studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "11e1f544-e207-4622-a6a9-cb7fbc692797",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C52",
+      "claim": "Symmetric loop extrusion by cohesin in interphase may ensure the formation of specific TAD boundaries by bringing together distal CTCF sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Symmetric loop extrusion by cohesin in interphase may ensure the formation of specific TAD boundaries by bringing together distal CTCF sites (Sanborn et al., 2015; Tang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "027a7f15-c20c-4cb1-916b-8a0d7c4070ed",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C53",
+      "claim": "Reorganization of loosely packed interphase chromatin into condensed chromosomes leads to the loss of TAD boundaries and the shutdown of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In metaphase, reorganization of loosely packed interphase chromatin into condensed chromosomes leads to the loss of TAD boundaries and the shutdown of transcription (Nagano et al., 2017; Naumova et al., 2013), which may be achieved by condensin activity (Goloborodko et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "6b2fd6c6-4afb-46a8-b391-c61a0b962a65",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C54",
+      "claim": "The loss of TAD boundaries and shutdown of transcription in metaphase may be achieved by condensin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In metaphase, reorganization of loosely packed interphase chromatin into condensed chromosomes leads to the loss of TAD boundaries and the shutdown of transcription (Nagano et al., 2017; Naumova et al., 2013), which may be achieved by condensin activity (Goloborodko et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis supported by citation to a relevant study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "6eaeed52-ce69-4ae6-97a5-fc065baa4017",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C55",
+      "claim": "Condensin binds to chromatin in metaphase, but is largely undetected on chromatin in interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that condensin binds to chromatin in metaphase, but is largely undetected on chromatin in interphase (Hirano and Mitchison, 1994); whereas cohesin is bound to chromatin in interphase, but not as strongly in metaphase (Losada et al., 1998; Sumara et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "c0ae5677-18b7-4691-becb-25855724cc6d",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C56",
+      "claim": "Cohesin is bound to chromatin in interphase, but not as strongly in metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that condensin binds to chromatin in metaphase, but is largely undetected on chromatin in interphase (Hirano and Mitchison, 1994); whereas cohesin is bound to chromatin in interphase, but not as strongly in metaphase (Losada et al., 1998; Sumara et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "106d2781-74dc-4370-b06a-35f3e08601f9",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C57",
+      "claim": "The CDK1-mediated phosphorylation of condensin HEAT subunits in metaphase may be the biochemical signal that triggers the association of condensin to chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The CDK1-mediated phosphorylation of condensin HEAT subunits in metaphase may be the biochemical signal that triggers the association of condensin to chromatin (Hirano et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis supported by citation to a relevant study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "0c6f61a9-8a10-43ee-a531-55a424243e01",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C58",
+      "claim": "Most cohesin is released from chromatin by a mechanism that involves the phosphorylation of cohesin's SA subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, most cohesin is released from chromatin by a mechanism that involves the phosphorylation of cohesin's SA subunit (Losada and Hirano, 2001; Hauf et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "8793c0fb-4f9a-4e67-a03a-9438556d1ace",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C59",
+      "claim": "The different affinities of condensin and cohesin for chromatin during the cell cycle could be a natural explanation for the different DNA loop extrusion activities observed in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the different affinities of condensin and cohesin for chromatin during the cell cycle could be a natural explanation for the different DNA loop extrusion activities that we see in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis that connects known binding properties with observed experimental results.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "70f1759c-0a16-4e62-a8e2-dae49666d8cd",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C60",
+      "claim": "The demonstration of predominantly non-symmetric DNA loop extrusion during metaphase is consistent with recent in vitro data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our demonstration of predominantly non-symmetric DNA loop extrusion during metaphase is consistent with recent in vitro data, but it is at odds with the theoretical requirements to fully compact chromosomes in metaphase (Banigan and Mirny, 2018; Banigan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the experimental findings with previous in vitro studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "58ef347e-ba4b-4750-ae33-28525ac01d5f",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C61",
+      "claim": "Predominantly non-symmetric DNA loop extrusion during metaphase is at odds with the theoretical requirements to fully compact chromosomes in metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our demonstration of predominantly non-symmetric DNA loop extrusion during metaphase is consistent with recent in vitro data, but it is at odds with the theoretical requirements to fully compact chromosomes in metaphase (Banigan and Mirny, 2018; Banigan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the experimental findings with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "7b94677b-6e30-44aa-a31e-541c210ed879",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C62",
+      "claim": "A small fraction of two-sided loop extruders can facilitate higher levels of chromosome compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these studies suggest that a small fraction of two-sided loop extruders\u2014including extrusion events that reel in DNA at different rates from left and right\u2014can facilitate higher levels of chromosome compaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "08d3b8d6-d446-4fdc-9269-3959278c2038",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C63",
+      "claim": "Loops with symmetry scores below 0.8 could be considered 'slow' two-sided extrusion events.",
+      "claim_type": "EXPLICIT",
+      "source": "Our metaphase data suggest that loops with symmetry scores below 0.8 could be considered 'slow' two-sided extrusion events, as DNA is reeled into the loop from both sides, but at different rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an interpretation of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "9a19eae4-6f87-45b7-b8b4-2c9f33f77ec0",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C64",
+      "claim": "Loops with symmetry scores below 0.8 account for about 50% of the total population of metaphase looping events.",
+      "claim_type": "EXPLICIT",
+      "source": "These events account for about 50% of the total population of metaphase looping events, which, according to theoretical predictions, could be sufficient to achieve 100-fold linear chromosome compaction (Banigan and Mirny, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "07151ed7-2fea-4f38-a539-fbc8b0ce4822",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C65",
+      "claim": "About 50% of metaphase looping events could be sufficient to achieve 100-fold linear chromosome compaction according to theoretical predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "These events account for about 50% of the total population of metaphase looping events, which, according to theoretical predictions, could be sufficient to achieve 100-fold linear chromosome compaction (Banigan and Mirny, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects experimental observations with theoretical predictions through citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "d776e606-be1f-43d3-9caa-aa36bf6087ba",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C66",
+      "claim": "The mixed populations of loop extrusion symmetries could play a crucial role for proper chromosome organization in metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mixed populations of loop extrusion symmetries we observe could play a crucial role for proper chromosome organization in metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis based on the experimental observations and theoretical considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "d4c5f220-982f-483e-b236-c1be535f5da6",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C67",
+      "claim": "Condensin I and condensin II may compact DNA using different symmetries.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that condensin I and condensin II compact DNA using different symmetries (Kong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis supported by citation to a relevant study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "47bcabb6-398c-42c0-8098-559842b6e962",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C68",
+      "claim": "In Xenopus egg extract, the relative abundances of condensin I and condensin II is roughly 5:1.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus egg extract, the relative abundances of condensin I and condensin II is roughly 5:1 (Ono et al., 2003), which would be consistent with the fraction of nearly symmetric loop extrusion events that we observe in metaphase (~20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "722f2c6d-0abb-4a62-9ff4-1121ecb1bb13",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C69",
+      "claim": "The 5:1 ratio of condensin I to condensin II would be consistent with the fraction of nearly symmetric loop extrusion events observed in metaphase (~20%).",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus egg extract, the relative abundances of condensin I and condensin II is roughly 5:1 (Ono et al., 2003), which would be consistent with the fraction of nearly symmetric loop extrusion events that we observe in metaphase (~20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects cited information with experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "9729ee3c-01bd-49d6-b686-f3ef537c9664",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C70",
+      "claim": "The small population of symmetric loop extrusion in metaphase may arise from residual cohesin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, we cannot rule out that the small population of symmetric loop extrusion may arise from residual cohesin activity in metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation about an alternative explanation for the observed data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "0de12268-e795-4b30-8a54-7a7866f0b97a",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C71",
+      "claim": "Extrusion rates and stall forces seem to be conserved during the cell cycle despite differences in loop extrusion symmetries between interphase and metaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the differences in loop extrusion symmetries between interphase and metaphase, extrusion rates and stall forces seem to be conserved during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of experimental data from both cell cycle phases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "2917eb75-25ad-420c-950b-f2c7a3bc511d",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C72",
+      "claim": "The mean extrusion rates observed are three to four times higher than those observed in previous in vitro studies for cohesin and condensin respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean extrusion rates we observe, however, are three to four times higher than those observed in previous in vitro studies (Ganji et al., 2018; Kim et al., 2019) for cohesin and condensin respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares experimental findings with previous in vitro studies through citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "b1b56457-be0f-4d8e-96f8-b26415fe63b9",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C73",
+      "claim": "In extract, several extruding factors may participate in the extrusion of the same DNA loop in a cooperative manner.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility for this discrepancy could be that, in extract, several extruding factors participate in the extrusion of the same DNA loop in a cooperative manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis to explain the observed higher extrusion rates.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "fbd0a9b4-7857-4d0f-8179-050ebea60cdb",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C74",
+      "claim": "The average stall forces estimated are about five to seven times lower than previous estimates in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the average stall forces we estimate are about five to seven times lower than previous estimates in vitro (Ganji et al., 2018; Kim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares experimental findings with previous in vitro studies through citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "29439d6f-fba6-4445-b9c8-8ff995e9f4a1",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C75",
+      "claim": "In cytoplasmic context of the H3-H4-depleted egg extract, many other DNA-binding factors may compete with the loop extrusion machinery for DNA slack.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that in cytoplasmic context of the H3-H4-depleted egg extract, many other DNA-binding factors\u2014such as linker histone (Xiao et al., 2012)\u2014may compete with the loop extrusion machinery for DNA slack.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation to explain the lower stall forces, supported by citation to a relevant study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "9c5f10c9-a58e-4ee5-bbc4-473d83e114de",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C76",
+      "claim": "Secondary factors could cause the loop extrusion machinery to stop prematurely.",
+      "claim_type": "EXPLICIT",
+      "source": "The large spread in the distribution of stall forces, with individual examples reaching values that compare to those reported in vitro, may suggest that secondary factors could cause the loop extrusion machinery to stop prematurely, and, consequently, we may underestimate the magnitude of the looping stall forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation based on the observed distribution of stall forces.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "e2b393f5-5f3d-407a-a14a-0c40baa815f2",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C77",
+      "claim": "Condensin and cohesin share similar extrusion rates, even though condensin predominantly extrudes non-symmetrically while cohesin extrudes loops symmetrically.",
+      "claim_type": "EXPLICIT",
+      "source": "We wonder, however, how condensin and cohesin share such similar extrusion rates, even though condensin predominantly extrudes non-symmetrically while cohesin extrudes loops symmetrically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an observation from the experimental data that raises a question.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "a11b6931-c560-44f3-b955-19d16708224a",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C78",
+      "claim": "The similar loop growth velocities would suggest that condensin reels in DNA from one side at twice the rate that cohesin reels in DNA from each of its two sides.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar loop growth velocities would suggest that condensin reels in DNA from one side at twice the rate that cohesin reels in DNA from each of its two sides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the observed similar extrusion rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "699bfd96-999f-425d-9441-73cc7dc67703",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C79",
+      "claim": "Cohesin may be a one-sided motor that alternates its extrusion direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, cohesin may be a one-sided motor that alternates its extrusion direction (Banigan et al., 2019)\u2014though we did not observe this kind of switching within the temporal resolution of our measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis supported by citation, with a note about the limitations of the current observations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "88a5011f-2308-4b7e-a618-8d78575a4e7a",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C80",
+      "claim": "Symmetric cohesin loop extrusion could originate from the dimerization of two identical non-symmetric motors.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that symmetric cohesin loop extrusion could originate from the dimerization of two identical non-symmetric motors, though recent in vitro work shows that this idea is controversial (Davidson et al., 2019; Kim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation with acknowledgment of controversy based on citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "bf155d1a-0388-4a6d-aa76-c6516284588c",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C81",
+      "claim": "On average, symmetric loop extrusion rates in interphase are higher (roughly twice) compared to the non-symmetric events.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our results comparing extrusion velocities and corresponding symmetries in interphase show that, on average, symmetric loop extrusion rates are higher (roughly twice) compared to the non-symmetric events (Figure 2\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of experimental data and reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "42cada65-23dc-4f27-bf64-e91b30b0de22",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C82",
+      "claim": "The difference in extrusion rates between symmetric and non-symmetric events would be consistent with symmetric and non-symmetric loop extrusion mediated by a dimer and a monomer respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in extrusion rates would be consistent with symmetric and non-symmetric loop extrusion mediated by a dimer and a monomer respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the observed difference in extrusion rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "876baf60-bb97-4f15-a825-c879e7fbde6f",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C83",
+      "claim": "Lambda-phage DNA was attached to a cover slide using biotin-streptavidin linkers in custom-built microfluidic chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "To visualize DNA loop formation in Xenopus laevis egg extracts, we attached lambda-phage DNA to a cover slide using biotin-streptavidin linkers (Ganji et al., 2016) in custom-built microfluidic chambers (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "156295a2-3f69-4bad-b81b-5550589e41e6",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C84",
+      "claim": "A typical field of view contained 5\u201320 individual DNA molecules with typically between 2\u20137 strands having sufficient slack to support loop extrusion.",
+      "claim_type": "EXPLICIT",
+      "source": "A typical field of view contained 5\u201320 individual DNA molecules with typically between 2\u20137 strands having sufficient slack to support loop extrusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "9ed81a3f-9fbc-47bc-9169-41397467ad7e",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "claim_id": "C85",
+      "claim": "About 30% of DNA strands with sufficient slack displayed looping events.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these about 30% displayed looping events (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "40ed9cb2-855f-4ebb-9c92-9978b020b9e9",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DNA loop extrusion can be reconstituted in Xenopus egg extracts in both metaphase and interphase. H3-H4 depletion (~90-95%) enables loop formation by providing DNA slack, with loops displaying characteristic topology upon hydrodynamic stretching. About 30% of DNA strands with sufficient slack displayed looping events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 and C83-C85 collectively demonstrate successful reconstitution of loop extrusion in egg extracts. The experimental approach is well-documented with appropriate controls (mock-depleted extracts, C22), quantitative Western blots confirming depletion efficiency (C20), and visual confirmation via hydrodynamic stretching (C21). The methodology is sound and reproducible across multiple extract preparations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "35465f1b-9dfd-4305-a2d9-8e95ba89f9df",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In metaphase, DNA loops are initially extruded at 2.36 \u00b1 0.35 kb/s but slow down as DNA tension increases. Loop extrusion stalls at ~65% relative DNA extension (0.16 \u00b1 0.01 pN stall force on average), with rare events reaching up to ~85% extension (~1 pN).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 provide quantitative characterization of metaphase loop dynamics with appropriate statistical reporting (n=7 extract days, mean \u00b1 SEM). The tension-dependent slowing (C25-C27) is supported by worm-like chain modeling and consistent across events. The distribution of stall forces is well-documented with both average and extreme values reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "8fb218cb-5265-48f2-a0e6-67da1c08afeb",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DNA loop extrusion in metaphase is predominantly one-sided (non-symmetric), with the majority of events having symmetry scores close to 1. A small population (~20%) showed two-sided extrusion. Loop movement analysis supports random orientation of non-symmetric extruding factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 demonstrate non-symmetric extrusion in metaphase through multiple complementary analyses: symmetry score distribution (C30-C31), loop movement patterns (C32-C33), and comparison with in vitro data (C34). The quantitative symmetry metric is well-defined and the ~20% two-sided population is acknowledged. The conclusion is consistent with cited in vitro studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "2b7179cd-5a5e-4bb0-8631-eff4ff9a904e",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loop extrusion in interphase displays similar rates (1.94 \u00b1 0.26 kb/s) and stall forces (0.18 \u00b1 0.03 pN) to metaphase, but differs fundamentally in symmetry. Interphase loops are predominantly symmetrically extruded (symmetry scores peaked toward zero), with ~20% showing non-symmetric extrusion. Loop movement patterns confirm symmetric extrusion behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 establish the key finding of symmetric extrusion in interphase through quantitative analysis (n=8 extract days). The symmetry score distribution (C37), minority non-symmetric population (C38), and predicted loop movement bias (C39) provide converging evidence. The conclusion that mechanisms differ between cell cycle phases (C40) is well-supported by the contrasting symmetry patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "93e598bd-9617-4e95-8104-377feb009032",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Condensin mediates loop extrusion in metaphase while cohesin mediates loop extrusion in interphase. Depletion experiments show condensin depletion significantly reduces metaphase looping (p<0.01) but not interphase looping, while cohesin depletion significantly reduces interphase looping (p<0.01) but not metaphase looping. Immunostaining confirms colocalization, and ATP depletion eliminates interphase looping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 provide strong evidence for differential SMC complex activity through complementary approaches: depletion experiments with statistical significance (C42-C43, n=3 extract days each), immunolocalization (C44-C45), and ATP dependence (C46-C47). The reciprocal pattern of depletion effects and colocalization data provide convincing support for the cell cycle-dependent regulation conclusion (C49).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "0f961046-2a66-4d15-8575-980d750f1896",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Loop extrusion is a general mechanism of DNA organization in cellular contexts, with dynamic and structural properties biochemically regulated during the cell cycle through distinct activities of cohesin (symmetric, interphase) and condensin (non-symmetric, metaphase).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5, C50-C51 represent the overarching conclusions supported by the combined experimental evidence from loop dynamics characterization, symmetry analysis, and depletion experiments. The claim of 'first direct evidence' (C50) is justified as prior work was either in vitro or indirect. The cell cycle regulation mechanism is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "ef92619d-8c45-4d6f-9630-7f842db0723f",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Extrusion rates and stall forces are conserved between interphase and metaphase despite symmetry differences. However, observed rates are 3-4\u00d7 higher and stall forces are 5-7\u00d7 lower than previous in vitro measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72, C74 accurately report quantitative comparisons with in vitro studies. The conservation of rates/forces between cell cycle phases (C71) is supported by the data in C24, C28, C35-C36. The discrepancies with in vitro measurements (C72, C74) are clearly documented with appropriate citations, though the authors acknowledge these differences require explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "68d1b458-90e9-417d-935e-0db4c04e9b4a",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The higher extrusion rates observed in extract compared to in vitro may result from cooperative participation of multiple extruding factors. The lower stall forces may result from competition with other DNA-binding factors or premature stopping by secondary factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73, C75-C76 are speculative explanations for observed discrepancies with in vitro data. While the hypotheses are reasonable and C75 cites supporting evidence for competing factors (linker histone), these remain untested explanations. The large spread in stall force distribution (C76) suggests complexity but does not definitively establish the proposed mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "520bb61a-1554-4376-ba53-205e469e1f77",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Condensin and cohesin share similar overall loop growth rates despite different symmetries. Analysis suggests symmetric extrusion rates in interphase are roughly twice those of non-symmetric events, consistent with symmetric extrusion by dimers versus non-symmetric extrusion by monomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78, C81-C82 present an interesting observation (C77) with quantitative support (C81) and logical inference (C78, C82). The 2\u00d7 difference in rates between symmetric and non-symmetric events in interphase (C81) supports the dimer/monomer hypothesis (C82), though this remains an inference rather than direct demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "3ff0b89c-628e-4797-b615-439457c54ae8",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The predominantly non-symmetric loop extrusion in metaphase is consistent with in vitro data but appears inconsistent with theoretical requirements for full chromosome compaction. However, ~50% of metaphase events with symmetry scores <0.8 ('slow' two-sided extrusion) may be sufficient for 100-fold compaction according to theory, suggesting mixed symmetry populations play a crucial role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C66 address an apparent contradiction between observations and theory. The consistency with in vitro data (C60) and tension with theory (C61) are accurately stated with appropriate citations. The reinterpretation of events with symmetry <0.8 as 'slow' two-sided extrusion (C63) is reasonable, and the quantification of ~50% of events (C64) with theoretical support for sufficiency (C65) provides a plausible resolution, though C66 remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "9d6c832d-79f4-4ddc-9b38-d0af79019c95",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ~20% symmetric loop extrusion events in metaphase may arise from condensin II activity (distinct from condensin I) or residual cohesin activity. The 5:1 ratio of condensin I to condensin II in Xenopus extract would be consistent with the ~20% symmetric events if condensin II extrudes symmetrically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C70 present alternative hypotheses for the minority symmetric population in metaphase. The condensin I/II hypothesis (C67) is supported by citation and the abundance ratio (C68-C69) provides circumstantial support, but the authors acknowledge they cannot distinguish between this and residual cohesin (C70) due to simultaneous depletion of both condensin complexes. This limitation prevents definitive support for either explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "974c363c-2f0f-4fb5-93c8-2ef63c76f514",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cohesin may function as a one-sided motor that alternates direction, or symmetric extrusion could arise from dimerization of two non-symmetric motors, though both mechanisms remain controversial and were not directly observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 present mechanistic hypotheses for symmetric cohesin extrusion with appropriate citations, but explicitly acknowledge controversy (C80) and lack of direct observation within the study's temporal resolution (C79). These remain speculative mechanisms that require further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "4fa13fbf-3eb5-4db6-ad57-29a11e6e52e6",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Symmetric cohesin extrusion in interphase may ensure TAD boundary formation by bringing together distal CTCF sites. The loss of TAD boundaries in metaphase may be achieved by condensin activity. Cell cycle regulation may occur through CDK1-mediated phosphorylation affecting chromatin binding affinities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52, C54, C57, C59 present functional hypotheses connecting the observed loop extrusion mechanisms to chromatin organization and cell cycle regulation. While these are reasonable interpretations supported by citations to relevant literature, they remain speculative extensions beyond the direct experimental observations. The study demonstrates the mechanisms but does not directly test these functional consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context establishing that loop extrusion has been proposed as a chromatin organization mechanism, that chromatin reorganizes during the cell cycle with different requirements in interphase versus metaphase, and that prior in vitro and in vivo studies have shown conflicting results regarding loop extrusion symmetry and cellular activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C18 provide literature context and rationale for the study. These are appropriately cited background claims that accurately represent prior knowledge and identify gaps (e.g., C17 - lack of direct visualization in cells, C13 - inconsistency between in vitro observations and theory) that motivate the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "c3ee0370-ceee-4b86-9df0-889f362e9ddb",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior studies have established that condensin binds chromatin in metaphase but not interphase, while cohesin binds in interphase but less strongly in metaphase. Cohesin release involves phosphorylation of its SA subunit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C55-C56, C58 accurately cite established findings from prior literature regarding cell cycle-dependent chromatin binding of SMC complexes and cohesin release mechanisms. These provide important context for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    },
+    {
+      "id": "3f3891dc-37e6-432c-93e8-f80a222a1259",
+      "content_id": "ec435840-cdf8-46d7-a4d0-4a211f4bb5b4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The cell cycle-dependent activities of condensin and cohesin could account for the transition between symmetric and non-symmetric loop extrusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 represents a well-supported hypothesis that directly follows from the experimental demonstration of differential SMC complex activities (C42-C49) and is consistent with cited literature on cell cycle regulation. This serves as a bridge between observations and mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:03:22.738316Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4dfd6552-f446-4aa2-a6df-95dc2e534a22",
+      "result_id": "40ed9cb2-855f-4ebb-9c92-9978b020b9e9"
+    },
+    {
+      "claim_id": "e822a0f1-5cd3-4330-809a-958a4657f75d",
+      "result_id": "40ed9cb2-855f-4ebb-9c92-9978b020b9e9"
+    },
+    {
+      "claim_id": "8baa1811-0105-4aa3-bbd7-69d61b0a23fc",
+      "result_id": "40ed9cb2-855f-4ebb-9c92-9978b020b9e9"
+    },
+    {
+      "claim_id": "3b0ff65d-1893-43ab-bcb0-86bef827817a",
+      "result_id": "40ed9cb2-855f-4ebb-9c92-9978b020b9e9"
+    },
+    {
+      "claim_id": "c06894ca-0d8c-413b-baa5-5d04733d5a3e",
+      "result_id": "40ed9cb2-855f-4ebb-9c92-9978b020b9e9"
+    },
+    {
+      "claim_id": "876baf60-bb97-4f15-a825-c879e7fbde6f",
+      "result_id": "40ed9cb2-855f-4ebb-9c92-9978b020b9e9"
+    },
+    {
+      "claim_id": "156295a2-3f69-4bad-b81b-5550589e41e6",
+      "result_id": "40ed9cb2-855f-4ebb-9c92-9978b020b9e9"
+    },
+    {
+      "claim_id": "9ed81a3f-9fbc-47bc-9169-41397467ad7e",
+      "result_id": "40ed9cb2-855f-4ebb-9c92-9978b020b9e9"
+    },
+    {
+      "claim_id": "bf2addaf-d41b-4210-ba70-d8cf1b3cdfa1",
+      "result_id": "35465f1b-9dfd-4305-a2d9-8e95ba89f9df"
+    },
+    {
+      "claim_id": "4f41e801-8217-4a87-a4ae-b8a57f4b4c8a",
+      "result_id": "35465f1b-9dfd-4305-a2d9-8e95ba89f9df"
+    },
+    {
+      "claim_id": "30b9799a-0867-4681-aa49-ae6825ee3415",
+      "result_id": "35465f1b-9dfd-4305-a2d9-8e95ba89f9df"
+    },
+    {
+      "claim_id": "0333290a-6cbb-43cc-acfa-e2b1f7a145a6",
+      "result_id": "35465f1b-9dfd-4305-a2d9-8e95ba89f9df"
+    },
+    {
+      "claim_id": "da1f67d5-b3d7-428d-b5cd-12df57df1fcb",
+      "result_id": "35465f1b-9dfd-4305-a2d9-8e95ba89f9df"
+    },
+    {
+      "claim_id": "166751ea-51b4-42f7-a5f5-47c79891c873",
+      "result_id": "35465f1b-9dfd-4305-a2d9-8e95ba89f9df"
+    },
+    {
+      "claim_id": "2554f2fc-e282-4262-b1a9-24aed8a50af3",
+      "result_id": "8fb218cb-5265-48f2-a0e6-67da1c08afeb"
+    },
+    {
+      "claim_id": "20214aaa-bc83-4c85-a071-56274771e8f4",
+      "result_id": "8fb218cb-5265-48f2-a0e6-67da1c08afeb"
+    },
+    {
+      "claim_id": "8c0258d7-87ed-4359-8a6f-6ce56ce50f4c",
+      "result_id": "8fb218cb-5265-48f2-a0e6-67da1c08afeb"
+    },
+    {
+      "claim_id": "f3c1168f-768d-4d2f-9182-e626fdc49914",
+      "result_id": "8fb218cb-5265-48f2-a0e6-67da1c08afeb"
+    },
+    {
+      "claim_id": "a929cb47-ea76-4e7e-a31e-8e8716cfd839",
+      "result_id": "8fb218cb-5265-48f2-a0e6-67da1c08afeb"
+    },
+    {
+      "claim_id": "1519c3e5-c827-4104-ab2c-fef440f1c731",
+      "result_id": "2b7179cd-5a5e-4bb0-8631-eff4ff9a904e"
+    },
+    {
+      "claim_id": "f014f2a7-19e5-4f82-b85d-ecd420e71cb3",
+      "result_id": "2b7179cd-5a5e-4bb0-8631-eff4ff9a904e"
+    },
+    {
+      "claim_id": "ad1bf3e8-fe8a-40ea-8e3b-700446625f26",
+      "result_id": "2b7179cd-5a5e-4bb0-8631-eff4ff9a904e"
+    },
+    {
+      "claim_id": "f1265698-7de8-4b98-8757-71896916d21e",
+      "result_id": "2b7179cd-5a5e-4bb0-8631-eff4ff9a904e"
+    },
+    {
+      "claim_id": "8335a923-866c-4323-94ad-d5ceb78631cd",
+      "result_id": "2b7179cd-5a5e-4bb0-8631-eff4ff9a904e"
+    },
+    {
+      "claim_id": "820e8f79-c243-436f-b773-c7a49cc0ff3f",
+      "result_id": "2b7179cd-5a5e-4bb0-8631-eff4ff9a904e"
+    },
+    {
+      "claim_id": "09c2e356-dd87-4ff8-aa91-d1bf44e6671e",
+      "result_id": "93e598bd-9617-4e95-8104-377feb009032"
+    },
+    {
+      "claim_id": "48c82b23-8304-43ed-973c-a5802198e594",
+      "result_id": "93e598bd-9617-4e95-8104-377feb009032"
+    },
+    {
+      "claim_id": "1d2d3cda-5ea4-49e6-b280-47e1c407b306",
+      "result_id": "93e598bd-9617-4e95-8104-377feb009032"
+    },
+    {
+      "claim_id": "db7ccd65-8041-4146-bf2f-819e4fad70d0",
+      "result_id": "93e598bd-9617-4e95-8104-377feb009032"
+    },
+    {
+      "claim_id": "2fb18f91-4483-4778-9865-7790b8693717",
+      "result_id": "93e598bd-9617-4e95-8104-377feb009032"
+    },
+    {
+      "claim_id": "7e64cc0c-cfbb-4b08-b99d-b1afae2a437c",
+      "result_id": "93e598bd-9617-4e95-8104-377feb009032"
+    },
+    {
+      "claim_id": "37bb6327-6c32-4903-9b04-ba5330696a8b",
+      "result_id": "93e598bd-9617-4e95-8104-377feb009032"
+    },
+    {
+      "claim_id": "e3552803-e2f3-48d6-afa7-25ed59e5613a",
+      "result_id": "93e598bd-9617-4e95-8104-377feb009032"
+    },
+    {
+      "claim_id": "d6e1a0c1-95c5-4b64-8413-110e5c3ed35f",
+      "result_id": "0f961046-2a66-4d15-8575-980d750f1896"
+    },
+    {
+      "claim_id": "d813e876-8808-47dc-9b29-050124a959df",
+      "result_id": "0f961046-2a66-4d15-8575-980d750f1896"
+    },
+    {
+      "claim_id": "28505b7b-432b-42a8-8697-99f2bd8597c7",
+      "result_id": "0f961046-2a66-4d15-8575-980d750f1896"
+    },
+    {
+      "claim_id": "4b84614c-cb9b-485d-b06b-9e61ac514f02",
+      "result_id": "0f961046-2a66-4d15-8575-980d750f1896"
+    },
+    {
+      "claim_id": "f6ca5837-3bd7-49da-9b4b-81f3f4ed54d3",
+      "result_id": "0f961046-2a66-4d15-8575-980d750f1896"
+    },
+    {
+      "claim_id": "b40838de-c493-4cf8-97de-cde871d3ae1c",
+      "result_id": "0f961046-2a66-4d15-8575-980d750f1896"
+    },
+    {
+      "claim_id": "0de12268-e795-4b30-8a54-7a7866f0b97a",
+      "result_id": "ef92619d-8c45-4d6f-9630-7f842db0723f"
+    },
+    {
+      "claim_id": "2917eb75-25ad-420c-950b-f2c7a3bc511d",
+      "result_id": "ef92619d-8c45-4d6f-9630-7f842db0723f"
+    },
+    {
+      "claim_id": "fbd0a9b4-7857-4d0f-8179-050ebea60cdb",
+      "result_id": "ef92619d-8c45-4d6f-9630-7f842db0723f"
+    },
+    {
+      "claim_id": "b1b56457-be0f-4d8e-96f8-b26415fe63b9",
+      "result_id": "68d1b458-90e9-417d-935e-0db4c04e9b4a"
+    },
+    {
+      "claim_id": "29439d6f-fba6-4445-b9c8-8ff995e9f4a1",
+      "result_id": "68d1b458-90e9-417d-935e-0db4c04e9b4a"
+    },
+    {
+      "claim_id": "9c5f10c9-a58e-4ee5-bbc4-473d83e114de",
+      "result_id": "68d1b458-90e9-417d-935e-0db4c04e9b4a"
+    },
+    {
+      "claim_id": "e2b393f5-5f3d-407a-a14a-0c40baa815f2",
+      "result_id": "520bb61a-1554-4376-ba53-205e469e1f77"
+    },
+    {
+      "claim_id": "a11b6931-c560-44f3-b955-19d16708224a",
+      "result_id": "520bb61a-1554-4376-ba53-205e469e1f77"
+    },
+    {
+      "claim_id": "bf155d1a-0388-4a6d-aa76-c6516284588c",
+      "result_id": "520bb61a-1554-4376-ba53-205e469e1f77"
+    },
+    {
+      "claim_id": "42cada65-23dc-4f27-bf64-e91b30b0de22",
+      "result_id": "520bb61a-1554-4376-ba53-205e469e1f77"
+    },
+    {
+      "claim_id": "70f1759c-0a16-4e62-a8e2-dae49666d8cd",
+      "result_id": "3ff0b89c-628e-4797-b615-439457c54ae8"
+    },
+    {
+      "claim_id": "58ef347e-ba4b-4750-ae33-28525ac01d5f",
+      "result_id": "3ff0b89c-628e-4797-b615-439457c54ae8"
+    },
+    {
+      "claim_id": "7b94677b-6e30-44aa-a31e-541c210ed879",
+      "result_id": "3ff0b89c-628e-4797-b615-439457c54ae8"
+    },
+    {
+      "claim_id": "08d3b8d6-d446-4fdc-9269-3959278c2038",
+      "result_id": "3ff0b89c-628e-4797-b615-439457c54ae8"
+    },
+    {
+      "claim_id": "9a19eae4-6f87-45b7-b8b4-2c9f33f77ec0",
+      "result_id": "3ff0b89c-628e-4797-b615-439457c54ae8"
+    },
+    {
+      "claim_id": "07151ed7-2fea-4f38-a539-fbc8b0ce4822",
+      "result_id": "3ff0b89c-628e-4797-b615-439457c54ae8"
+    },
+    {
+      "claim_id": "d776e606-be1f-43d3-9caa-aa36bf6087ba",
+      "result_id": "3ff0b89c-628e-4797-b615-439457c54ae8"
+    },
+    {
+      "claim_id": "d4c5f220-982f-483e-b236-c1be535f5da6",
+      "result_id": "9d6c832d-79f4-4ddc-9b38-d0af79019c95"
+    },
+    {
+      "claim_id": "47bcabb6-398c-42c0-8098-559842b6e962",
+      "result_id": "9d6c832d-79f4-4ddc-9b38-d0af79019c95"
+    },
+    {
+      "claim_id": "722f2c6d-0abb-4a62-9ff4-1121ecb1bb13",
+      "result_id": "9d6c832d-79f4-4ddc-9b38-d0af79019c95"
+    },
+    {
+      "claim_id": "9729ee3c-01bd-49d6-b686-f3ef537c9664",
+      "result_id": "9d6c832d-79f4-4ddc-9b38-d0af79019c95"
+    },
+    {
+      "claim_id": "699bfd96-999f-425d-9441-73cc7dc67703",
+      "result_id": "974c363c-2f0f-4fb5-93c8-2ef63c76f514"
+    },
+    {
+      "claim_id": "88a5011f-2308-4b7e-a618-8d78575a4e7a",
+      "result_id": "974c363c-2f0f-4fb5-93c8-2ef63c76f514"
+    },
+    {
+      "claim_id": "11e1f544-e207-4622-a6a9-cb7fbc692797",
+      "result_id": "4fa13fbf-3eb5-4db6-ad57-29a11e6e52e6"
+    },
+    {
+      "claim_id": "6b2fd6c6-4afb-46a8-b391-c61a0b962a65",
+      "result_id": "4fa13fbf-3eb5-4db6-ad57-29a11e6e52e6"
+    },
+    {
+      "claim_id": "106d2781-74dc-4370-b06a-35f3e08601f9",
+      "result_id": "4fa13fbf-3eb5-4db6-ad57-29a11e6e52e6"
+    },
+    {
+      "claim_id": "8793c0fb-4f9a-4e67-a03a-9438556d1ace",
+      "result_id": "4fa13fbf-3eb5-4db6-ad57-29a11e6e52e6"
+    },
+    {
+      "claim_id": "cd807f71-28ee-4692-b2b1-9afc9535f72e",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "1aa96035-4228-4a6f-98d6-55b3c7199133",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "478e974a-5a94-42d8-b57c-abf4a8c19ed8",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "42355e09-ded6-41c7-b9af-e0fca89be5aa",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "0c747a0b-ecba-4fa8-8312-4c734a66f8e3",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "478cbbe3-e0a6-4080-88c9-aec9684b6eb5",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "59497604-39bc-4014-882b-7d602681f758",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "ca52eef6-0f1f-403b-ac5a-44724b1ad3dd",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "c8a38fa5-8091-4d43-baf0-d465a7d919cf",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "5c3057ba-b13b-41ef-abab-872911f2ea81",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "063885a4-b361-4230-ac2c-e0f5ded7a622",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "f2dacee8-5ad5-4855-8065-6f68e1b77dd3",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "8b6224f6-ec64-4366-91b9-0d926bf36475",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "04488408-6192-487d-b9ea-b00c35e0718b",
+      "result_id": "ad795faa-e2d3-40d5-b500-d6ffed9a3a10"
+    },
+    {
+      "claim_id": "027a7f15-c20c-4cb1-916b-8a0d7c4070ed",
+      "result_id": "c3ee0370-ceee-4b86-9df0-889f362e9ddb"
+    },
+    {
+      "claim_id": "6eaeed52-ce69-4ae6-97a5-fc065baa4017",
+      "result_id": "c3ee0370-ceee-4b86-9df0-889f362e9ddb"
+    },
+    {
+      "claim_id": "c0ae5677-18b7-4691-becb-25855724cc6d",
+      "result_id": "c3ee0370-ceee-4b86-9df0-889f362e9ddb"
+    },
+    {
+      "claim_id": "0c6f61a9-8a10-43ee-a531-55a424243e01",
+      "result_id": "c3ee0370-ceee-4b86-9df0-889f362e9ddb"
+    },
+    {
+      "claim_id": "ce715a08-2ff2-4322-91b6-d5625b2ae5a2",
+      "result_id": "3f3891dc-37e6-432c-93e8-f80a222a1259"
+    }
+  ],
+  "comparisons": []
+}

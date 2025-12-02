@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C55",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "KCNQ2/3 channels regulate interneuron excitability in a cell type-specific manner, with deletion increasing firing in PV+ interneurons but not affecting SST+ interneurons. This effect is consistent across multiple forebrain regions (CA1 and L2/3 cortex).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C27, C28, C48-51, C55, and C75 are well-supported by experimental data in Figure 2 showing differential effects on PV+ versus SST+ interneurons. Statistical analyses demonstrate significant increases in action potential number in PV+ cells (p<0.05) but not SST+ cells. The finding is replicated across brain regions and with multiple genetic models (Nkx2.1-Cre and Pvalb-Cre), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "Loss of KCNQ2/3 channels from PV+/SST+ interneurons increases both inhibitory (sIPSC) and excitatory (sEPSC and mEPSC) synaptic transmission in CA1 pyramidal neurons, while mIPSC frequency remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-36 and C38 are supported by experimental data in Figure 1 with appropriate statistical tests showing significant increases in sIPSC frequency (p=0.036), sEPSC frequency (p=0.0085), and mEPSC frequency (p=0.002), while mIPSC frequency showed no change (p=0.43). The data support the interpretation in C39 that sIPSC changes are due to elevated interneuron excitability rather than changes in release probability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C31",
+      "C37"
+    ],
+    "result": "The increase in excitatory transmission (mEPSCs) represents homeostatic compensation to maintain excitation/inhibition balance, as evidenced by unchanged sEPSC/sIPSC ratio but altered mEPSC/mIPSC ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C42-43 show statistically significant data (unchanged sEPSC/sIPSC ratio vs. changed mEPSC/mIPSC ratio, p=0.004), the homeostatic interpretation in C40, C31, and C37 is speculative. The authors acknowledge this with 'likely' and 'perhaps' language. Direct tests of homeostatic mechanisms (e.g., activity blockade experiments, developmental time course) would be needed to definitively support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The effects on mEPSC frequency are specific to interneuron KCNQ2/3 loss, as pyramidal neuron-specific KCNQ2 deletion (PYR:Kcnq2 null) does not alter mEPSC frequency but only increases spontaneous frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-46 are supported by control experiments in Figure 1 showing no change in mEPSC frequency in PYR:Kcnq2 null mice but increased sEPSC frequency (p=0.0067). This specificity control strengthens the conclusion that the mEPSC changes in interneuron knockouts are not due to general network effects. C47 is appropriately cited to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C6",
+      "C7",
+      "C29",
+      "C30"
+    ],
+    "result": "Loss of KCNQ2 alone from PV+ interneurons is sufficient to increase PV+ interneuron excitability and sEPSC frequency in pyramidal neurons, without affecting pyramidal neuron intrinsic excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-61 are supported by experimental data in Figure 3 showing increased PV+ interneuron firing and increased sEPSC frequency (p=0.0098) without changes in pyramidal neuron excitability. This demonstrates that KCNQ2 loss alone (without KCNQ3) is sufficient to produce the phenotype, which is clinically relevant given C58 (KCNQ2 variants are more common). Statistical analyses are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C83"
+    ],
+    "result": "Pvalb-Kcnq2 null mice show increased seizure susceptibility with significantly reduced latency to Stage 5 seizures following picrotoxin administration, demonstrating that loss of KCNQ2 from PV+ interneurons leads to network hyperexcitability in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C62-63, and C83 are supported by in vivo seizure data in Figure 4 with appropriate statistical analysis (Log-rank test, p=0.0370 for heterozygotes, p=0.0047 for homozygotes). The dose-dependent effect (heterozygotes show intermediate phenotype) strengthens the conclusion. C64 is a reasonable interpretation of these data, though the mechanism linking interneuron dysfunction to network hyperexcitability involves inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The mechanism underlying increased PV+ interneuron excitability may involve increased input resistance, but pharmacological blockade with XE-991 does not change input resistance in control neurons, leaving the mechanism uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C52 shows increased input resistance in Kcnq2/3 null PV+ neurons (p=0.017), but C53 shows that acute KCNQ blockade with XE-991 does not change input resistance (p=0.233). This discrepancy, acknowledged in C54, suggests the input resistance change may be an indirect/compensatory effect rather than direct loss of KCNQ2/3 conductance. The mechanism remains unclear and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C57",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose that decreased interneuron KCNQ2/3 activity remodels excitatory networks, potentially contributing to neurodevelopmental effects in epileptic encephalopathy patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C9, C56-57 represent reasonable interpretations of the experimental data, C73-74 extend these findings to clinical implications without direct evidence. The proposed mechanism of excitatory network remodeling is supported by the observed changes in mEPSC frequency, but the link to human neurodevelopmental outcomes is speculative. Clinical validation or developmental studies would be needed to support these broader claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors speculate that the mechanism underlying excitatory synapse potentiation may involve developmental GABA-mediated depolarization promoting NMDA receptor activation and AMPA receptor insertion, similar to prior work with 4-AP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-70 appropriately cite established knowledge about developmental GABA signaling and synapse maturation. However, C71 explicitly states this is speculation ('We thus speculate'). The authors provide no direct experimental evidence testing this mechanism (e.g., no bumetanide experiments, no developmental time course, no NMDA receptor blockade). This remains an untested hypothesis requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Acute pharmacological blockade of KCNQ channels with XE-991 increases action potential number in control PV+ interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C81 is supported by data in Figure 2\u2014figure supplement 3 showing a significant effect of XE-991 on action potential number (p=0.0016). This demonstrates that acute KCNQ blockade can increase PV+ interneuron excitability, consistent with the genetic deletion experiments, though the lack of effect on input resistance (C53) suggests complex mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C32",
+      "C33",
+      "C47",
+      "C58",
+      "C72"
+    ],
+    "result": "Background claims establishing prior knowledge about KCNQ2/3 channels, their role in epilepsy, expression patterns, and gaps in understanding of interneuron function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C10-C26, C32-C33, C47, C58, C72) are appropriately supported by citations to prior literature and represent established knowledge in the field. They provide necessary context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The lower sag ratio observed in some Kcnq2/3 null PV+ interneurons might indicate immature cells, but other possibilities cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C80 is explicitly speculative and the authors acknowledge uncertainty ('might indicate...however, other possibilities cannot be excluded'). While C76-79 document the heterogeneity in PV+ interneuron responses, the interpretation of what this represents remains unclear. This observation may warrant future investigation but does not constitute a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Methodological definition of Stage 5 seizure onset used for in vivo experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C82 provides a clear methodological definition validated by simultaneous video-EEG monitoring (Figure 4a). This is a standard approach in seizure research and the definition is appropriate for the experimental design.",
+    "result_type": "MINOR"
+  }
+]

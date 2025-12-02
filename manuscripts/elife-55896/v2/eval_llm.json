@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Pex14 is phosphorylated in mammalian cells under basal conditions and this phosphorylation is transiently enhanced by oxidative stress (H2O2 treatment). Phosphorylation was detected in mouse tissues (testis, liver, heart) and cultured cells, with phosphorylated forms appearing as slower-migrating bands in Phos-tag PAGE that were sensitive to \u03bb-protein phosphatase treatment. H2O2 treatment induced phosphorylation that peaked at 30 min to 1 hr and gradually decreased to basal levels within 5 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C54 provide converging evidence from multiple experimental approaches (Phos-tag PAGE, phosphatase treatment, time-course analysis) demonstrating Pex14 phosphorylation in vivo. The data show clear phosphorylation-dependent mobility shifts that are reversed by phosphatase treatment (C43, C52), tissue-specific variation (C45-C46), and transient H2O2-induced enhancement (C47-C49, C54). The experimental controls (phosphatase treatment, time course) are appropriate and the conclusions are well-supported by the data in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69"
+    ],
+    "result": "H2O2-induced phosphorylation of Pex14 occurs primarily at Ser232, with additional minor sites at Ser247 and Ser252. Mass spectrometry identified four phosphorylated peptides, with Ser232 showing a 21.7-fold increase upon H2O2 treatment. Ser232 is conserved in vertebrates and its phosphorylation was detected across multiple mammalian cell lines (human HepG2, HuH7, HeLa; rat RCR1; mouse MEF). Mutation of Ser232 to Ala eliminated the major phosphorylated bands but residual phosphorylation remained, indicating additional minor sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C66 and C69 are strongly supported by complementary approaches: mutagenesis (C55-C58), mass spectrometry (C59-C61), sequence conservation analysis (C62-C63), and cross-species validation (C64-C65). The LC-MS/MS data (Figure 2B-C) provides direct identification and quantification of phosphorylation sites, while the S232A mutant analysis (Figure 2A) confirms Ser232 as the major site. The triple mutant data (C66) validates the MS findings. The conservation analysis and multi-cell line validation strengthen the biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "Phosphorylation of Pex14 at Ser247 and Ser252 is mediated by ERK1/2 signaling. Pre-treatment with ERK1/2 inhibitor U0126, but not p38 inhibitor SB203580, specifically eliminated the slower-migrating phosphorylated band of Pex14 upon H2O2 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 and C70 are based on pharmacological inhibitor data (Figure 2F) showing differential effects of U0126 vs SB203580. However, the evidence is limited: (1) only one ERK inhibitor was tested, (2) ERK2 knockdown (Figure 2\u2014figure supplement 2) showed no effect on Pex14 phosphorylation, possibly due to ERK1 compensation, (3) no direct kinase assays were performed, and (4) the conclusion that Ser247/252 are ERK-mediated is inferred rather than directly demonstrated. The discrepancy between inhibitor and knockdown data raises concerns about specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Phosphorylation of Pex14 at Ser232 selectively suppresses peroxisomal import of catalase but not canonical PTS1 proteins. The phosphomimetic mutant Pex14-S232D showed ~50% reduction in catalase import restoration efficiency compared to wild-type Pex14 in pex14 mutant cells, while PTS1 protein import was unaffected. The triple phosphomimetic mutant S232D/S247D/S252D showed additive effects, further reducing catalase import (~20% additional reduction) with only weak (~20%) effects on PTS1 protein import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are well-supported by immunofluorescence microscopy (Figure 3B-C) and quantitative analysis showing differential effects of phosphomimetic vs phosphorylation-deficient mutants on catalase vs PTS1 protein import. The use of the pex14 null mutant ZP161 as a complementation system is appropriate, and the data show clear dose-dependent effects with single, double, and triple mutants. All Pex14 variants localized properly to peroxisomes (C76), ruling out mislocalization artifacts. The selectivity for catalase over PTS1 proteins is a key finding supported by multiple mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Stable expression of phosphomimetic Pex14-S232D in pex14 mutant cells specifically reduces peroxisomal import of catalase while maintaining normal import of PTS1 and PTS2 proteins. Cells expressing Pex14-S232D showed elevated cytosolic catalase levels compared to wild-type Pex14, while AOx (PTS1), thiolase and ADAPS (PTS2) were imported normally. Conversely, the phosphorylation-deficient mutant Pex14-S232A showed more efficient catalase import than wild-type Pex14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 are strongly supported by multiple complementary approaches in stable cell lines: immunofluorescence microscopy (Figure 4B-C), subcellular fractionation (Figure 4D-E), and biochemical analysis of PTS1/PTS2 protein processing (Figure 4A, 4D). The data demonstrate cargo-specific effects with appropriate controls (multiple cargo proteins, multiple cell lines). The finding that S232A is more efficient than wild-type (C83-C84) is particularly important as it suggests endogenous phosphorylation regulates catalase import under basal conditions. The use of stable cell lines eliminates transient expression artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "H2O2 treatment selectively suppresses peroxisomal import of newly synthesized catalase but not PTS1 proteins. Pulse-chase experiments showed that in the presence of H2O2, the ratio of 35S-catalase in the organelle fraction was barely elevated during 1 hr chase, while 35S-DHAPAT (a PTS1 protein) import was unaffected. This suppression correlated with Pex14 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by pulse-chase experiments (Figure 4F-G) that directly measure import of newly synthesized proteins. This is a critical experiment that demonstrates the functional consequence of Pex14 phosphorylation on catalase import in real-time. The selective effect on catalase vs DHAPAT (a canonical PTS1 protein) is clearly demonstrated. The correlation with Pex14 phosphorylation status strengthens the mechanistic link. However, the experiment would be strengthened by including phosphorylation-deficient mutants as controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Phosphorylation of Pex14 at Ser232 selectively impairs the formation of the Pex5-mediated ternary complex with catalase but not with canonical PTS1 proteins. In vitro binding assays showed that phosphomimetic Pex14-S232D bound Pex5 normally but showed dramatically reduced binding to catalase in the presence of Pex5, while binding to EGFP-PTS1 was only slightly reduced. H2O2 treatment increased Pex13 levels in Pex14 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are well-supported by in vitro GST pull-down assays (Figure 5A-B) that dissect the molecular interactions. The key finding is that S232D mutation does not affect Pex14-Pex5 binding (C95) but specifically impairs the ternary complex with catalase (C96) while having minimal effect on EGFP-PTS1 binding (C97). This provides a molecular mechanism for the cargo selectivity observed in vivo. The increased Pex13 in phosphorylated Pex14 complexes (C92-C94) adds mechanistic insight, though the functional significance requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Phosphorylation at Ser232 is the primary determinant of reduced catalase binding, with Ser247/252 phosphorylation providing additive effects. In vitro binding assays showed that S232D mutation reduced HA-catalase binding to ~40% of wild-type, S247/252D to ~70%, and the triple mutant S232D/S247D/S252D to ~20%. For EGFP-PTS1, only the triple mutant showed significant reduction, indicating that simultaneous phosphorylation at all three sites affects PTS1 protein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 are supported by systematic analysis of single, double, and triple phosphomimetic mutants in in vitro binding assays (Figure 5C). The data show clear additive effects and dose-dependent reduction in catalase binding with increasing numbers of phosphomimetic substitutions. The differential effects on catalase vs EGFP-PTS1 (C102, C105) are consistent with the in vivo data. The quantification is appropriate and the conclusions about the relative contributions of different sites are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Phosphomimetic Pex14-S232D confers higher cell resistance to H2O2 by elevating cytosolic catalase levels. Cell viability assays showed that cells expressing Pex14-S232D were more resistant to H2O2 than those expressing wild-type Pex14, while cells expressing phosphorylation-deficient Pex14-S232A were more sensitive. The differential sensitivities were completely abrogated by catalase inhibitor 3-aminotriazole, demonstrating catalase-dependent protection. Cell resistance correlated with cytosolic catalase levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 are strongly supported by cell viability assays (Figure 6) that demonstrate the functional consequence of altered catalase localization. The use of the catalase inhibitor 3-AT (C110) is a critical control that establishes causality between cytosolic catalase and H2O2 resistance. The correlation between cytosolic catalase levels (from Figure 4D-E) and cell viability (C111) strengthens the mechanistic link. The opposing effects of S232A (more sensitive) and S232D (more resistant) compared to wild-type provide strong evidence for the physiological relevance of Pex14 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C112",
+      "C132",
+      "C133",
+      "C140"
+    ],
+    "result": "H2O2-induced phosphorylation of Pex14 spatiotemporally regulates peroxisomal import of catalase, functioning as an acute cellular response to oxidative stress by increasing cytosolic catalase. The authors propose that Pex14 phosphorylation plays an essential role in counteracting oxidative stress through this mechanism, with the protein import machinery of peroxisomes playing a crucial role in the regulatory network against exogenous oxidative stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C112, C132-C133, and C140 represent the main conclusions integrating all experimental findings. These conclusions are well-supported by the collective evidence: (1) transient H2O2-induced phosphorylation (Figure 1D), (2) selective suppression of catalase import (Figures 3-4), (3) molecular mechanism via impaired ternary complex formation (Figure 5), and (4) functional consequence of increased H2O2 resistance (Figure 6). The term 'spatiotemporal regulation' is justified by the transient nature of phosphorylation and the redistribution of catalase between compartments. However, the claim of 'essential role' (C133) may be overstated as no loss-of-function experiments (e.g., non-phosphorylatable knock-in) were performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose that phosphorylation at Ser232 induces conformational changes in Pex14-containing protein complexes, leading to increased Pex13 association and altered Pex13-Pex5 interactions that preferentially suppress catalase import. This is based on observations that phosphorylated Pex14 shows increased Pex13 binding and that Pex13-Pex5 interaction is specifically required for import of folded/oligomeric proteins like catalase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C120 represent mechanistic speculation based on limited direct evidence. While C113 is supported by in vitro data (Figure 5B-C), claims C114 and C120 about conformational changes and modulation of Pex13-Pex5 interaction are speculative (C114 explicitly uses 'might'). The increased Pex13 in phosphorylated Pex14 complexes (C116, Figure 5A) is an interesting observation, but the functional significance is unclear. The citations about Pex13's role (C117-C119) are from prior work, not demonstrated here. No structural or biophysical data support the conformational change hypothesis. This represents reasonable speculation but requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The phosphorylation of Pex14 at Ser232 is conserved only in vertebrates, and the functional significance of Pex14 phosphorylation at the C-terminal region is likely distinct between species. The authors suggest that modulated intracellular distribution of catalase may be beneficial for organism survival during evolution, noting that yeast and worms have both cytosolic and peroxisomal catalase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 are supported by sequence alignment data (Figure 2D) showing Ser232 conservation in vertebrates but not in yeast. The inference about species-specific functional significance (C123) is reasonable given the sequence divergence and the fact that yeast have different catalase isoforms (C124). However, claims C124-C125 about evolutionary benefit are speculative, based on a single citation and no experimental data. The evolutionary speculation (C125) is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "H2O2-induced phosphorylation of Pex14 occurs independently of ATM kinase. The ATM inhibitor KU55933, which blocks H2O2-induced Pex5 phosphorylation, had no effect on Pex14 phosphorylation, indicating that ATM-dependent Pex5 phosphorylation/ubiquitination (leading to pexophagy) is distinct from Pex14 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 are supported by pharmacological inhibitor data (Figure 5\u2014figure supplement 2) showing that ATM inhibitor KU55933 does not affect Pex14 phosphorylation. This is an important control that distinguishes the Pex14 phosphorylation pathway from the previously reported ATM-Pex5 pathway. However, the evidence is limited to a single inhibitor experiment. Additional controls (e.g., ATM knockdown, other ATM inhibitors) would strengthen the conclusion. The distinction between the two pathways (C129) is a reasonable inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Pex14 phosphorylation is transiently induced by H2O2 treatment and gradually reverts to the unmodified form, likely through dephosphorylation by unidentified phosphatase(s). The turnover of Pex14 protein itself is not altered during this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by time-course data (Figure 1D, Figure 1\u2014figure supplement 1A) showing transient phosphorylation that peaks at 30 min-1 hr and returns to baseline by 5 hr, while total Pex14 levels remain relatively stable. The conclusion about phosphatase involvement (C131) is a reasonable inference from the reversibility of phosphorylation, though no phosphatase was identified. The stability data rule out protein degradation as the mechanism for phosphorylation reversal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors discuss the balance between acute and chronic effects of cytosolic catalase. While acute cytosolic catalase elevation (via Pex14 phosphorylation) protects against H2O2, chronic cytosolic catalase compromises peroxisomal redox homeostasis leading to mitochondrial dysfunction or senescence. They propose that both Pex14 phosphorylation and BAK-mediated catalase release mechanisms might operate simultaneously for cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C139 represent discussion and integration with prior literature. C134-C135 are supported by citations to prior work. C136 is a reasonable inference from the cited literature. C137-C138 integrate prior work with current findings. C139 is speculation about how two mechanisms (Pex14 phosphorylation from this study and BAK-mediated release from prior work) might work together, which is reasonable but not experimentally tested here. These claims appropriately contextualize the findings within existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors suggest that Pex14 phosphorylation may be induced by various stimuli beyond exogenous H2O2, including rotenone (mitochondrial complex I inhibitor) and peroxisome proliferators (clofibrate, bezafibrate) that elevate intracellular H2O2. They propose that H2O2 from various sources could modulate catalase localization via Pex14 phosphorylation, and draw parallels to nutrient-dependent regulation of mitochondrial protein import via Tom protein phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C141 states that Pex14 phosphorylation was observed with rotenone, clofibrate, and bezafibrate, but explicitly notes 'data not shown,' which is a significant limitation. Without seeing the data, the strength of this claim cannot be evaluated. C142 is reasonable speculation based on C141 but lacks experimental support. C143 is a citation to prior work on mitochondrial import regulation, which is appropriate context. C144 cites prior work on catalase's role in disease. These claims represent reasonable speculation and contextualization but lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background claims establishing the biological context: peroxisome functions, PTS1/PTS2 targeting signals, Pex14's role in protein import, catalase structure and localization, posttranslational modifications of peroxins, and prior observations of Pex14 phosphorylation in yeast. These claims provide the foundation and rationale for investigating Pex14 phosphorylation in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C11-C41 are background/introduction claims supported by appropriate citations to prior literature. These establish the biological context and rationale for the study. The claims accurately represent established knowledge about peroxisome biology, protein import mechanisms, and prior observations of Pex14 phosphorylation in yeast. The citations appear appropriate and the knowledge claims are consistent with the field. These are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  }
+]

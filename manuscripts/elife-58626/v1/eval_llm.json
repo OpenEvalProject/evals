@@ -1,0 +1,420 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "During C. elegans head morphogenesis, pharynx retraction via apical constriction drives coordinated involution of the neuroectoderm. The authors show that neurons maintain persistent cell contacts and move in parallel tracts following the retracting pharynx, while the hypodermis moves anteriorly with persistent contact to the trailing neurons. This coordinated tissue movement indicates tissue cohesion and supports a model where pharynx retraction propels neuroectoderm involution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C42 provide converging evidence from live imaging (Figures 1a-c), showing pharynx contraction, coordinated neuron movement, persistent cell contacts, and parallel movement trajectories. The temporal and spatial coordination of these events, along with the proposed mechanical model (C42), is well-supported by the imaging data and quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "hmr-1/cadherin is required for successful neuroectoderm involution but not for pharynx retraction. In hmr-1 mutants, 75% of embryos fail to have bilateral neurons meet at the midline (28 \u03bcm separation vs 0 \u03bcm in WT), while pharynx retraction remains normal (17 \u03bcm vs 18 \u03bcm in WT). This demonstrates that hmr-1 has functions beyond pharynx apical constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 present quantitative phenotypic data from hmr-1 mutants (n=12 embryos) showing specific defects in neuroectoderm involution without affecting pharynx retraction (Figure 2a-c). The statistical significance and sample sizes support the conclusion that hmr-1 is specifically required for neuroectoderm involution independent of its role in pharynx morphogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In hmr-1 mutants, leading edge neurons show altered movement trajectories, moving anteriorly instead of toward the midline, with 40-70% reduction in convergent movement distance (7.5-15 \u03bcm less) in three out of four neuron pairs measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide quantitative tracking data showing specific changes in neuron movement trajectories in hmr-1 mutants (Figure 2d-e). The measurements are statistically significant and demonstrate that loss of hmr-1 disrupts the directional movement of neurons during involution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "HMR-1 localizes to a transient supracellular patch at the interface between the basal pharyngeal surface and neuroectoderm during involution. This interface localization has distinct temporal dynamics from apical pharynx localization, appearing earlier and disappearing after involution completes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 describe HMR-1::GFP localization patterns with temporal resolution (Figure 3b-c). The quantification across n=5 embryos shows statistically significant differences in temporal dynamics between interface and apical localization, supporting the existence of a distinct basal interface patch that coincides with the involution process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Computational analysis identified a ventral group of neurons (SMDD, RIS, RMEV) that maintain pharyngeal neighbors during >75% of involution timepoints. This group spatially coincides with the HMR-1 patch, supporting the concept that HMR-1 promotes cohesion at the neuron-pharynx interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 present computational neighbor analysis from 3 WT embryos using Delaunay triangulation (Figure 3d, Table 1). The spatial correlation between persistent neuron-pharynx contacts and HMR-1 localization provides strong support for the proposed role of HMR-1 in mediating inter-tissue attachment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Four interface neurons (SMDDL, SMDDR, RIS, RMEV) show coordinated motion with pharyngeal neighbors in WT, but in hmr-1 mutants their trajectories diverge and they move 38% less (15 \u03bcm) while pharynx displacement remains unchanged. This demonstrates that HMR-1 mediates attachment between interface neurons and pharynx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 provide cell tracking data from 3 embryos showing specific loss of coordination between interface neurons and pharynx in hmr-1 mutants (Figure 3e-f). The quantitative measurements and statistical significance support the conclusion about HMR-1's role in inter-tissue attachment, though the authors acknowledge that tissue-specific mutant studies would provide definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "HMR-1 localizes between involuting neurons at higher levels than in non-involuting amphid neurons. In hmr-1 mutants, neurons show reduced directional movement and loss of movement correlation both ipsilaterally and contralaterally, supporting that HMR-1 mediates intratissue cohesion within the neuroectoderm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 combine localization data (Figure 4b-c, n=6 embryos) with movement correlation analysis (Figure 4d-e, n=3 embryos each). The statistically significant differences in HMR-1 levels between involuting and non-involuting neurons, coupled with loss of movement correlation in mutants, support the role of HMR-1 in maintaining neuroectoderm cohesion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "C. elegans head involution and chordate neurulation share topological features: medial involution of cohesive neuroectoderm with an underlying mesodermal organ at the ventral midline, flanked by hypodermal/epidermal ectoderm. The main difference is dorsal-ventral axis orientation, which is explained by the established D-V axis flip in deuterostome evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 present comparative morphological analysis supported by established evolutionary knowledge (C87 citing Arendt and N\u00fcbler-Jung, 1994). The topological similarities are clearly described and the D-V axis difference is appropriately contextualized within accepted evolutionary theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The vertebrate floor plate and notochord share developmental features with the C. elegans pharynx: both are extrinsic to the neuroectoderm, derived from organizer/node region precursors, and express pha-4/foxa2. This suggests potential homology in the force-generating tissues driving neurulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are well-supported by multiple citations to established literature on vertebrate development (Teillet et al., 1998; Le Douarin and Halpern, 2000; Peyrot et al., 2011; Horner et al., 1998; Jeong and Epstein, 2003; Patten et al., 2003). The comparative analysis of lineage origin and gene expression is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "HMR-1/cadherin plays a critical role in coordinating nervous system internalization through both inter-tissue attachment and intra-tissue cohesion. Loss of cadherins similarly causes neurulation defects in vertebrates (zebrafish, Xenopus, rat), making C. elegans a useful model for studying neurulation biomechanics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 synthesize the experimental findings with comparative vertebrate data from multiple cited studies. The conclusion about HMR-1's dual role is well-supported by the experimental results presented in the paper, and the comparative vertebrate data appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C118"
+    ],
+    "result": "In vertebrates, functional attachment between floor plate and notochord occurs at their basal sides, where cadherin is transiently localized. This suggests a non-canonical use of cadherin on the basal side of epithelia during neurulation that may be conserved between C. elegans and vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by citations (Smith and Schoenwolf, 1997; Dady et al., 2012). Claim C118 appropriately presents this as a speculative connection ('may apply') based on the parallel observations in C. elegans and vertebrates. The inference is reasonable but correctly qualified as requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C119",
+      "C120"
+    ],
+    "result": "The striking similarity between C. elegans and vertebrate nervous system internalization could imply homology with bona fide neurulation, potentially strengthening the urbilaterian brain theory by providing shared morphogenetic mechanisms beyond molecular differentiation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 and C119-C120 present speculative evolutionary interpretations appropriately qualified with terms like 'could imply,' 'potentially,' and 'may help.' While the morphological similarities are well-documented in the paper, the homology claim requires extensive additional comparative work across multiple species (as acknowledged in C108-C111) and remains a hypothesis rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study demonstrates that apical constriction in the retracting pharynx drives neuroectoderm involution, with HMR-1/cadherin mediating both inter-tissue attachment and intra-tissue cohesion. HMR-1 is capable of mediating embryo-wide reorganization driven by a centrally located force generator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 accurately summarize the main experimental findings of the paper. The conclusions are well-supported by the combined evidence from imaging, mutant analysis, localization studies, and computational analysis presented throughout the results section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on C. elegans nervous system: The nervous system and cell lineage have been fully mapped, with most neurons born between 300-320 mpf and internalizing before projecting axons around 360 mpf. VNC neuron movement has been characterized, but head neuron internalization mechanisms remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide well-cited background information from established literature (Graham et al., 1986; Sulston et al., 1983; Harrell and Goldstein, 2011; Santella et al., 2015; Moyle et al., 2020; George et al., 1998; Shah et al., 2017). Claim C10 appropriately identifies the knowledge gap that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on pharynx development: The pharynx develops alongside the head nervous system, retracts via apical constriction, and signals to regulate nerve ring placement. The link between pharynx retraction and nervous system formation has not been studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 provide appropriately cited background on pharynx development (Kennerdell et al., 2009; Harrell and Goldstein, 2011; Pohl et al., 2012; Santella et al., 2010; Rasmussen et al., 2012). Claim C18 identifies a specific knowledge gap addressed by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on hypodermis development: The hypodermis forms dorsally and extends to close at the anterior and ventral midline. Neuroblasts are required for proper closure, and hmr-1/cadherin is necessary for hypodermis closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide well-cited background on hypodermis development and its relationship to neurons (George et al., 1998; Wernike et al., 2016; Grimbert et al., 2020; Costa et al., 1998). This contextualizes the role of hmr-1 examined in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "hmr-1/cadherin plays an important role in cell adhesion and is widely expressed during the embryogenesis stage when involution occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by citation to Achilleos et al., 2010 and provide rationale for examining hmr-1 in the context of neuroectoderm involution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background on brain evolution: Neurons originated in radially symmetric phyla but assembled into centralized systems only in Bilateria. The urbilaterian theory proposes the brain evolved once, based on anatomical and gene expression similarities. The term 'neurulation' has been used loosely in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 provide well-cited background on evolutionary theories of brain origin (Hirth et al., 2003; Magie et al., 2005; Denes et al., 2007; Watanabe et al., 2009; Bailly et al., 2013; Holland et al., 2013; Arendt et al., 2016; Wadsworth et al., 1996; Harrell and Goldstein, 2011). This contextualizes the evolutionary implications discussed in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "C. elegans is the first protostome system where nervous system internalization mechanisms are defined. Additional comparative work in amphioxus, hemichordates, and D. melanogaster is needed to examine conservation of neurulation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 appropriately position the novelty of the findings and identify future comparative work needed. The citations support the statements about other organisms (Albuixech-Crespo et al., 2017; Holland et al., 1996; Annona et al., 2015; Mizutani and Bier, 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The morphogenesis of the C. elegans VNC also shows parallels to chordate neurulation, with both processes based on PCP-mediated mediolateral cell intercalation and convergent extension along the A-P axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 reference previous work (Shah et al., 2017) and comparative vertebrate studies (Elul et al., 1997; Williams et al., 2014) to draw parallels between VNC and chordate neurulation. This provides additional context for the evolutionary arguments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Background on vertebrate neurulation: Neurulation establishes nervous system internalization via neuroectoderm involution, with variations across species (tetrapods, Xenopus, zebrafish). Ancient clades show involution of cohesive neural epithelium, supporting a consistent role for epithelial involution in neurulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C128 provide comprehensive, well-cited background on vertebrate neurulation mechanisms across multiple species (Gilbert and Michael J, 2019; Harrington et al., 2009; Nikolopoulou et al., 2017; Davidson and Keller, 1999; Lowery and Sive, 2004; Hong and Brewster, 2006). This establishes the comparative framework for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Background on apical constriction in neurulation: Apical constriction generates force through actomyosin contraction anchored by cadherin at adherens junctions. This occurs at hingepoints in tetrapods and zebrafish, with variations in epithelial organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C134 provide well-cited background on the molecular and cellular mechanisms of apical constriction during neurulation (Sawyer et al., 2010; Ilina and Friedl, 2009; Martin and Goldstein, 2014; Nikolopoulou et al., 2017; Araya et al., 2019; Nyholm et al., 2009).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Background on apical constriction perturbations: Genetic and pharmacological perturbations that impair apical constriction result in cranial neural tube defects in mice, Xenopus, and zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are well-supported by multiple citations across different model organisms (Copp and Greene, 2010; Hildebrand and Soriano, 1999; Ybot-Gonzalez and Copp, 1999; Morriss-Kay and Tuckett, 1985; Haigo et al., 2003; Itoh et al., 2014; Nyholm et al., 2009; Araya et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Background on tissue coordination in neurulation: Coordination between adjacent tissues is important, with attachment potentially mediating morphogenetic forces. Notochord-neuroectoderm attachment stabilizes involution, while epidermis-neuroectoderm connections may propel epidermal movement. Much remains unknown about inter-tissue attachment mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 provide appropriately cited background on tissue interactions during neurulation (Smith and Schoenwolf, 1997; Yang and Trasler, 1991; Harrington et al., 2009). Claim C143 identifies a knowledge gap that the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "At early bean stage (~300 mpf), the C. elegans neuroectoderm is on the embryo exterior and pharyngeal cells have formed a two-sheet structure in the head center after gastrulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 describe the initial state of tissues before involution, providing context for the observations. These are direct statements about tissue organization that set up the experimental observations.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors report that 32% of tested yeast proteins form homomers, with duplicated proteins (SSDs 38%, WGDs 33%, 2D 38%) showing significantly higher homomerization rates than singletons (25%). Both expression level and duplication status independently contribute to homomer formation probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C21-C22 are well-supported by experimental PCA data and statistical analyses (Figure 2A, Supplementary Tables). The enrichment of homomers among duplicates is statistically significant (p<2.0e-16 for SSDs), and GLM analysis confirms both expression and duplication have independent effects. The correlation with expression is appropriately acknowledged as a potential detection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C27",
+      "C53"
+    ],
+    "result": "Heteromerization is frequent among duplicated homomers, with 79% of heteromer-forming pairs also forming at least one homomer. WGDs show proportionally more HM&HET motifs than SSDs, suggesting heteromers are inherited from ancestral homomers rather than gained de novo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25, C27, and C53 are supported by comprehensive PCA screening data covering 462 paralog pairs (Figure 2D-E, Supplementary Table S3). The classification of interaction motifs is systematic and the statistical comparisons between SSDs and WGDs are appropriate. The inference that heteromers are inherited is logically sound given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The ancestral proteins of current paralog pairs that form homomers were themselves homomers, as demonstrated by parsimony arguments and experimental validation showing orthologs from pre-WGD species form homomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by both logical inference (parsimony principle) and experimental validation using PCA with orthologs from L. kluyveri and Z. rouxii (Figure 2B-C). However, the experimental validation is limited to two paralog pairs, and some orthologs failed to show interactions, which could reflect technical limitations rather than true negatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "Paralogs forming HM&HET show higher sequence identity than those forming only HM, particularly at binding interfaces. SSDs are generally older and more divergent than WGDs, and among WGDs, true ohnologs form heteromers more frequently than homeologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 are well-supported by sequence analysis and structural data (Figure 2F-H, Figure 2\u2014supplements 5-6). The sequence identity analyses use appropriate phylogenetic data from PhylomeDB, and the structural interface analyses are based on crystallographic data. The relative conservation score analysis (C35) provides mechanistic insight, though the sample size for structures is limited (n=58 interfaces for yeast).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Heteromerization correlates with functional similarity between paralogs across multiple measures (GO terms, phenotypes, genetic interactions), and this correlation persists even when controlling for sequence identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C39 are supported by comprehensive functional analyses using multiple independent datasets (Figure 3, Figure 3\u2014supplements 2-4). The GLM analysis controlling for sequence identity (C38) is appropriate and strengthens the conclusion. However, some comparisons for WGDs show marginal or non-significant differences, which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In silico evolution simulations demonstrate that mutations at shared binding interfaces have pleiotropic effects on both homomers and heteromers (Pearson's r 0.64-0.9). Selection maintaining homomers significantly slows heteromer loss compared to neutral evolution, and reciprocally, selection on heteromers maintains homomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C40-C44 are supported by systematic in silico evolution simulations using FoldX on six high-quality crystal structures (Figure 4, Figure 4\u2014supplements 2-4). The simulations appropriately model mutation sampling, selection, and fixation. The pleiotropic effects are quantified with strong correlations. However, the simulations are limited to interface mutations only and use specific parameter values (\u03b2=10, N=1000) that may not capture all biological scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C62",
+      "C74"
+    ],
+    "result": "Heteromers can be preserved indirectly through selection on homomers without requiring direct selection on the heteromer itself, potentially slowing functional divergence between paralogs through structural pleiotropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C62, and C74 represent the central mechanistic conclusion, supported by the integration of simulation results (Figure 4) showing correlated responses to selection and empirical observations of functional similarity correlating with heteromer retention. The logic is sound: pleiotropic mutations affecting shared interfaces maintain heteromers as a byproduct of homomer selection. This is a novel non-adaptive mechanism for heteromer maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Mutations show slightly positive epistasis overall (regression slopes 0.89-0.91), with stronger positive epistasis when heteromers are under selection (slope 0.51). This epistasis may make heteromers more robust to mutations than homomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by analysis of double mutants from simulations (Figure 5, Figure 5\u2014supplements 1-3). The epistasis analysis is appropriate, comparing observed vs. expected effects on heteromers. The enrichment of positive epistasis under heteromer selection is statistically significant (t-test p=0.009). However, the mechanistic interpretation (C48) is somewhat speculative and would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C72"
+    ],
+    "result": "Paralogs can overcome structural pleiotropy through regulatory evolution. HM&HET pairs show higher expression correlation and localization similarity than HM pairs, with co-expression showing significant effects on HM&HET formation for SSDs when controlling for sequence identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C49-C52, and C72 are supported by expression correlation analysis using microarray data across 1000+ conditions and localization data (Figure 6, Figure 6\u2014supplements 1-4). The GLM analysis controlling for sequence identity is appropriate. However, the effect is significant only for SSDs, not WGDs (C50), and the mechanistic link between regulatory divergence and heteromer loss is correlative rather than causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "PCA signal correlates with expression level (Spearman's r=0.33 for mRNA, r=0.46 for protein), with roughly two-fold increase in homomer detection probability per order of magnitude change in mRNA. Homomers not detected by PCA have lower expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are well-supported by expression analysis of PCA data (Figure 2\u2014supplement 1). The correlations are statistically significant and the kernel regression analysis appropriately quantifies the detection bias. This is important for interpreting the PCA results and acknowledging potential false negatives due to low expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The majority (59%) of HM&HET pairs are simple oligomers not part of large complexes, with only 41% found in complexes with more than two distinct subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by analysis of complex composition using database annotations (5535 complexes). This finding is important for interpreting the biological significance of heteromers, suggesting many are not embedded in larger functional complexes. However, the analysis relies on database completeness and annotation quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "82% of paralog pairs (367 of 448) share all their Pfam domain annotations, with no significant difference in domain similarity between HM and HM&HET pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by Pfam domain analysis (Supplementary Table S3, Figure 3\u2014supplement 1). This negative result is important as it rules out domain gain/loss as a major mechanism for heteromer loss. The analysis is straightforward and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "WGDs show proportionally more HM&HET motifs than SSDs, which the authors attribute to the younger age of WGDs, preservation of stoichiometry during whole-genome duplication, lower evolutionary rates, and selection for gene dosage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 integrate multiple observations and cite appropriate literature. The age explanation (C64) is supported by sequence identity data (C28). However, the relative contributions of different mechanisms (stoichiometry preservation C65-C66, evolutionary rates C67, dosage selection C68) are not quantitatively assessed, making this more of a discussion of possibilities than definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Duplicated genes diverge quickly in transcriptional regulation due to cis-regulatory mutations, and this transcriptional divergence can directly change PPI profiles, as demonstrated by coding sequence swapping experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by appropriate citations to previous literature. These are established findings from prior work that provide context for the regulatory evolution hypothesis. The citation to Gagnon-Arsenault et al. (2013) for C71 is particularly relevant as direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Gene duplication drives evolution of new functions, and duplication of homomeric proteins creates both homomers and heteromers. Protein-protein interactions constrain evolution through pleiotropic effects, which is particularly important after duplication events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C14 represent established background knowledge appropriately cited from the literature. These provide the conceptual framework for the study. C2 and C14 specifically describe the model illustrated in Figure 1, which is the foundation for the entire investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The HM&HET state is more readily achieved by duplication of ancestral homomers than by de novo gain. Previous studies have shown enrichment of homomers among duplicates and that interactions between paralogs are more common than expected by chance. Various adaptive hypotheses have been proposed for this enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 synthesize findings from previous literature with appropriate citations. These provide important context for interpreting the current results. The inference in C54 about the relative likelihood of different evolutionary paths is logical and supported by models cited (Gibson and Goldberg 2009, Presser et al. 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Duplication of self-interacting proteins creates paralogs whose evolution is constrained by pleiotropy in ways not expected for monomeric paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is the overarching conclusion synthesizing all major findings. It is well-supported by the integration of empirical observations (heteromer frequency, functional similarity, sequence conservation) and simulation results (pleiotropic effects, correlated selection responses). This represents the main conceptual advance of the paper.",
+    "result_type": "MAJOR"
+  }
+]

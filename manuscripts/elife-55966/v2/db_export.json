@@ -1,0 +1,1450 @@
+{
+  "submission": {
+    "id": "e6e77882-34e0-4ed3-892c-df5029815277",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:51:37.103864Z",
+    "updated_at": "2025-12-02T15:51:37.103864Z"
+  },
+  "content": [
+    {
+      "id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "submission_id": "e6e77882-34e0-4ed3-892c-df5029815277",
+      "content_type": "manuscript",
+      "content_text": "# A dynamic charge-charge interaction modulates PP2A:B56 substrate recruitment\n\n## Authors\n\n- Xinru Wang<sup>1</sup> ([ORCID: 0000-0001-5994-707X](https://orcid.org/0000-0001-5994-707X))\n- Dimitriya H Garvanska<sup>2</sup>\n- Isha Nasa<sup>3</sup> ([ORCID: 0000-0001-7699-795X](https://orcid.org/0000-0001-7699-795X))\n- Yumi Ueki<sup>2</sup>\n- Gang Zhang<sup>2</sup> ([ORCID: 0000-0001-7697-7203](https://orcid.org/0000-0001-7697-7203))\n- Arminja N Kettenbach<sup>3</sup> ([ORCID: 0000-0003-3979-4576](https://orcid.org/0000-0003-3979-4576))\n- Wolfgang Peti<sup>1</sup>\n- Jakob Nilsson<sup>2</sup> ([ORCID: 0000-0003-4100-1125](https://orcid.org/0000-0003-4100-1125)) \u2020\n- Rebecca Page<sup>1</sup> ([ORCID: 0000-0002-4645-1232](https://orcid.org/0000-0002-4645-1232)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Biochemistry, University of Arizona Tucson United States\n2. The Novo Nordisk Foundation Center for Protein Research, Faculty of Health and Medical Sciences, University of Copenhagen Copenhagen Denmark\n3. Department of Biochemistry and Cell Biology, Geisel School of Medicine at Dartmouth Hanover United States\n4. Norris Cotton Cancer Center, Geisel School of Medicine at Dartmouth, Medical Center Drive Lebanon United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe recruitment of substrates by the ser/thr protein phosphatase 2A (PP2A) is poorly understood, limiting our understanding of PP2A-regulated signaling. Recently, the first PP2A:B56 consensus binding motif, LxxIxE, was identified. However, most validated LxxIxE motifs bind PP2A:B56 with micromolar affinities, suggesting that additional motifs exist to enhance PP2A:B56 binding. Here, we report the requirement of a positively charged motif in a subset of PP2A:B56 interactors, including KIF4A, to facilitate B56 binding via dynamic, electrostatic interactions. Using molecular and cellular experiments, we show that a conserved, negatively charged groove on B56 mediates dynamic binding. We also discovered that this positively charged motif, in addition to facilitating KIF4A dephosphorylation, is essential for condensin I binding, a function distinct and exclusive from PP2A-B56 binding. Together, these results reveal how dynamic, charge-charge interactions fine-tune the interactions mediated by specific motifs, providing a new framework for understanding how PP2A regulation drives cellular signaling.\n\n## Introduction\n\nProtein serine/threonine phosphatase 2A (PP2A) is one of the defining members of the ser/thr phosphoprotein phosphatase (PPP) family that, together with protein phosphatase 1 (PP1), regulates over 90% of all ser/thr dephosphorylation events in eukaryotic cells (Eichhorn et al., 2009). PP2A is also recognized as a tumor suppressor because its inactivation by small molecules, viral proteins or endogenous inhibitors leads to tumor formation (Bialojan and Takai, 1988; Pallas et al., 1990; Ruvolo, 2016; Williams et al., 2019). Cellular and biochemical studies further confirmed this by demonstrating the role of PP2A in orchestrating mitotic events, cell apoptosis, metabolism and many other fundamental cellular signaling pathways (Nilsson, 2019; Reid et al., 2013; Reynhout and Janssens, 2019; Wlodarchak and Xing, 2016). In spite of our advances in understanding PP2A signaling, there is a comparative lack of information about how substrates are specifically recruited to PP2A.\n\nThe PP2A holoenzyme is a heterotrimer, composed of a scaffolding subunit A (PPP2R1), a regulatory subunit B (PPP2R2-PPP2R5) and a catalytic subunit C (PPP2C) (Cho and Xu, 2007; Xu et al., 2008; Xu et al., 2006). The A and C subunits form the PP2A core enzyme. Although this core enzyme is relatively invariant, the variable and interchangeable regulatory B subunits result in a diversity of distinct PP2A holoenzymes. There are four known families of B subunits, B55 (B\u2019), B56 (B\u2019, PR61), PR72 (B\u2019\u2019), and PR93 (B\u2019\u2019\u2019), that differ in both their primary sequences and tertiary structures. Moreover, within each B subunit family, the existence of multiple isoforms and splicing variants further increases the overall number of potential PP2A holoenzymes (Eichhorn et al., 2009). Thus, it is the highly variable B subunits that determine PP2A holoenzyme substrate specificity. However, how the B subunits mediate substrate binding at a molecular level is only now beginning to become clear.\n\nRecent structural and biochemical studies showed that PP2A, like other PPPs (i.e., PP1, PP2B/Calcineurin (CN)) bind conserved short linear motifs (SLiMs) found within the intrinsically disordered region (IDR) of its substrates and regulators (Tompa et al., 2014; Van Roey and Davey, 2015; Wang et al., 2016). These SLiMs are disordered in their free form but typically become ordered upon binding structured domains (Dyson and Wright, 2002). Crystal structures of ordered SLiMs in complex with PPPs show that these recognition events are, in most cases, driven by the interaction of hydrophobic SLiM residues that bind deep hydrophobic pockets on the PPPs (Peti et al., 2013). Single SLiMs typically bind to their cognate PPPs with moderate affinities (Li et al., 2007). However, the existence of multiple SLiMs within a single regulator/substrate, coupled with post-translational modifications like phosphorylation, can greatly alter their affinity for their respective PPP (Bajaj et al., 2018; Grigoriu et al., 2013; Kumar et al., 2016; Nasa et al., 2018).\n\nMore recently, it has been discovered that IDPs can also form high affinity complexes that are dynamic; that\u00a0is, in which the IDPs simultaneously retain their intrinsic structural disorder (Borgia et al., 2018). In these cases, binding is typically driven by electrostatics (Borgia et al., 2018; Hendus-Altenburger et al., 2019; Luo et al., 2016). That is, multiple residues of opposite charge facilitate binding while the lack of a requirement for deep pockets allows the IDPs to retain their inherent dynamics. This emerging paradigm for biomolecular interactions may explain, in part, why hundreds of IDPs have long stretches of positive (lys, arg) and and/or negative (asp, glu) residues (Borgia et al., 2018). Namely, that they dynamically contribute to intermolecular interactions.\n\nRecently, the first PP2A:B56 specific SLiM, the LxxIxE motif, was identified (Hertz et al., 2016; Wang et al., 2016; Wu et al., 2017). Proteins containing validated LxxIxE motifs bind B56, an all \u03b1-helical heat repeat protein, in a deep, highly conserved hydrophobic pocket. Most LxxIxE motifs bind PP2A:B56 with moderate affinities (low micromolar KD), similar to those observed for other PPP-specific SLiMs. However, for PP1 and CN, enhanced affinities are achieved by exploiting avidity; namely, regulators and substrates contain two or more distinct SLiMs which, together, result in tight affinities for their cognate PPP (Choy et al., 2014; Grigoriu et al., 2013). Thus far, no such enhancement has been identified for PP2A:B56 as only the LxxIxE motif has been identified. Whether PP2A:B56 uses a similar mechanism to enhance and or modulate the affinities of LxxIxE containing regulators/substrates is thus a major outstanding question.\n\n## Results\n\n### A subset of PP2A:B56 specific substrates depend on a conserved acidic patch in B56 for PP2A:B56 binding\n\nAn analysis of the amino acid conservation among 150 distinct B56 sequences shows that the residues that comprise the concave surface of B56 are exceptionally conserved (Figure 1A). This conserved region includes the deep, hydrophobic binding pocket that specifically binds the LxxIxE SLiM (Figure 1A;\u00a0Hertz et al., 2016; Wang et al., 2016). However, the conserved region is much larger, suggesting that regions adjacent to the LxxIxE pocket might also contribute to regulator/substrate binding. An examination of the electrostatic potential of the same region led to the identification of a surface adjacent to the LxxIxE pocket that is not hydrophobic, but instead is highly negatively charged (Figure 1B). This surface is defined by multiple acidic residues that are perfectly conserved in B56, both among its various isoforms and throughout evolution (Figure 1A, Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig1-v2.jpg)\n\n**Figure 1.:** (A) PP2A:B56\u03b3 holoenzyme (PDBID 2NPP): scaffolding subunit A (beige) and catalytic subunit C (grey; bound metals shown as pink spheres) illustrated as cartoons with transparent surfaces. The regulatory B subunit, B56, is shown as a surface and colored by sequence conservation. An LxxIxE peptide (RepoMan: 588PLLpSPIPELPE598; p indicates residue is phosphorylated) bound to B56\u03b3 is shown in green (PDBIDs 5SW9 and 2NPP superimposed using B56). The location of the conserved acidic patch in B56 (see B) is highlighted with a dashed, yellow square. (B) The B56\u03b3:LxxIxE complex (PDBID 5SW9) colored according to electrostatic potential; LxxIxE peptide is in green. The B56 residues that comprise the conserved acidic patch (yellow dashed square) are shown as sticks and labeled (right; residues mutated in the \u20182R\u2019 mutants underlined). (C) Sequences of B56\u03b1 and B56\u03b3 that comprise the acidic patch, with the acidic residues colored red. The B56 \u20182R\u2019 variants indicate the acidic residues mutated to arginine \u2018R\u2019. (D) Volcano plot representing the mass spectrometry-identified proteins co-purifying with YFP-B56\u03b1 versus YFP-B56\u03b12R (E335R/D338R) from mitotic HeLa cells expressing YFP-B56\u03b1 or YFP-B56\u03b12R. PPP2R1A (PP2A regulatory subunit A, \u03b1 isoform), PPP2CA (PP2A catalytic subunit, \u03b1 isoform) are labeled in grey. Predicted and confirmed LxxIxE containing proteins (Hertz et al., 2016; Wang et al., 2016) are highlighted in orange. Four of the six most significantly affected LxxIxE containing B56 interactors selected for further study [NHS, AIM1, CDCA2 (RepoMan) and KIF4A] are labeled. (E) Same as (D) except for YFP-B56\u03b3 versus YFP-B56\u03b32R (E310R/D313R).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Human B56 variants. (B) B56 from various organisms. Residues that define the acidic patch are highlighted in red (human B56\u03b11: E301, E334, E335, D338, E341). The species are: Homo sapiens (human), Mus musculus (mouse), Gallus gallus (chicken), Danio rerio (fish), and Xenopus laevis (frog), Candida albicans (Candida), Arabidopsis thaliana (A. thaliana), Chlamydomonas reinhardtii (Algae).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Protocols by which endogenous B56 (all isoforms except \u03b2) was depleted by RNAi and complemented with the indicated YFP-B56 variants. (B) Depletion efficiency of endogenous B56 using RNAi. (C) The time spent from the nuclear envelope breakdown (NEBD) to the completion of anaphase was determined from at least two independent experiments. Circles represent single cells. The number of cells and median (red line) times are indicated. Mann\u2013Whitney test was used to determine the p-values indicated. \u2217\u2217\u2217\u2217 p<0.0001; *p<0.05; ns, not significant.\n\nTo identify if PP2A:B56 substrates/regulators are affected by mutating the conserved B56 acidic patch, we mutated two acidic amino acids in this negatively charged area to arginines (B56\u03b12R: E335R/D338R, B56\u03b32R: E310R/D313R; Figure 1C) and identified proteins associated with YFP-B56\u03b1/\u03b3 or YFP-B56\u03b1/\u03b32R from mitotic HeLa cells using quantitative label free mass spectrometry (MS). The MS analysis shows that a subset of the LxxIxE-containing B56 interactors are regulated specifically by the acidic patch for B56 binding in both isoforms. This includes the mitotic regulators KIF4A, RepoMan (CDCA2), Nance-Horan syndrome protein (NHS) and absent in melanoma 1 protein (AIM1), (ratio WT/2R\u00a0>\u00a09, p-value<0.05; Figure 1D,E, Figure 1\u2014source data 1). While the perturbation of these interactions is not sufficient to perturb B56 function in supporting mitotic timing in HeLa cells (Figure 1\u2014figure supplement 2A,B,C), it does reveal that the B56 acidic patch is a key binding determinant for a subset of LxxIxE containing PP2A-B56 interactors (Figure 1D,E).\n\nTo delineate the contribution of the acidic patch, we investigated the molecular site in KIF4A, RepoMan, NHS and AIM1 that is responsible for binding the B56 acidic patch. We reasoned that the B56 acidic patch interacts with a complementary basic patch in B56 interactors. Analysis of the primary sequences of these regulators highlighted the presence of a conserved basic charged rich region within\u00a0~15 amino acid N-terminal to an established LxxIxE motif, which we defined as a basic patch (Figure 2A, Figure 2\u2014figure supplement 1). To measure the contribution of each basic patch to B56 binding, we used isothermal titration calorimetry (ITC). The data showed that mutating the KIF4A basic patch (bpm, basic patch mutant: 1208KKK1210 to AAA) reduced the affinity of KIF4A1192-1232 for B56\u03b3 by\u00a0~4 fold (Figure 2B,C,D, Table 1, Figure 2\u2014figure supplement 2A,B). Similarly statistically significant reduced affinities were observed when the basic patch motif of RepoMan, NHS and AIM1 were mutated (CDCA2/RepoMan 563RKKK566 to AAAA; NHS 1618RCR1620 to ACA; AIM1 716KRKKAR721 to AAAAAA; Table 1, Figure 2\u2014figure supplement 2C\u2013H). Together, these data illustrate that the key role of proximally located basic patches for B56 binding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig2-v2.jpg)\n\n**Figure 2.:** (A) B56 interactors with the basic patch (blue) and LxxIxE motif (green) sequences shown; \u0394 indicates the number of residues between the basic patch and the LxxIxE motif. (B) Binding isotherm of WT KIF4A1192-1232 with B56\u03b3. (C) Binding isotherm of KIF4A1192-1232,bpm (1208KKK1210 to AAA) with B56\u03b3. (D) Cartoon representation of the effect of mutating the basic patch (BP) of the bp-dependent interactors on their interaction with B56 (AP, acidic patch). (E) Immunoprecipitation of YFP-B56\u03b1 from cells stably expressing YFP-B56\u03b1 and transfected with the indicated myc-tagged full-length KIF4A variants; asterisk indicates YFP, which was used as a control. The amounts of myc-KIF4AFL co-purified with YFP-B56\u03b1 were normalized to the band intensity of YFP. The wt is set to 1. (F) Immunoprecipitation of YFP-B56\u03b1 from cells stably expressing YFP-B56\u03b1 and transfected with the indicated myc-tagged AIM1625-900 variants. The amounts of myc- AIM1625-900 co-purified with YFP-B56\u03b1 were normalized to the band intensity of YFP. (G) Immunoprecipitation of YFP-B56\u03b1 from cells stably expressing YFP-B56\u03b1 and transfected with the indicated myc-tagged NHS1419-1631 variants. The amounts of myc-NHS1419-1631 co-purified with YFP-B56\u03b1 were normalized to the band intensity of YFP.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Sequence alignment of the basic patch and the proximal LxxIxE motif of KIF4A, RepoMan, NHS and Aim1 (Residue are numbered based on human proteins).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) ITC data for B56WT with KIF4AWT(1192\u20131232). (B) ITC data for B56WT with KIF4Abpm(1192\u20131232; 1208KKK1210 to AAA). (C) ITC data for B56WT with RepoMan (533-603; RM). (D) ITC data for B56WT with RMbpm(533\u2013603, 563RKKK566 to AAAA). (E) ITC data for B56WT with NHS (1616\u20131635). (F) ITC data for B56WT with NHSbpm(1616\u20131635, 1618RCR1620 to AAA). (G) ITC data for B56WT with AIM1 (716\u2013741). (F) ITC data for B56WT with AIM1bpm (716-741; 716KRKKAK721 to AAAAA). (I) ITC data for B56WT with KIF4ALE(1192\u20131232; 1224CS1225 to LE). (J) ITC data for B56WT with KIF4ALE,PE(1192\u20131232; 1224CS1225 to LE, 1231AH1232 to PE). (K) ITC data for B56WT with KIF4ALE,PE, bpm(1192\u20131232; 1224CS1225 to LE, 1231AH1232 to PE, 1208KKK1210 to AAA). (L) ITC data for B56\u03b32R (E310R/D313R) with KIF4ALE,PE. (M) ITC data for B56\u03b33R (E276R/E310R/D313R) with KIF4ALE,PE.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Mutating the basic patch or the LxxIxE motif of KIF4A1001-1232 reduces KIF4A:B56\u03b1 binding. Immunoprecipitation of YFP-B56\u03b1 from cells stably expressing YFP-B56\u03b1 and transfected with the indicated myc-tagged KIF4A1001-1232 C-terminal variants (bpm: 1209KKK1211 to AAA). (B) Mutating the basic patch or the LxxIxE motif of KIF4ALE also reduces KIF4A:B56\u03b1 binding. Immunoprecipitation of YFP-B56\u03b1 from cells stably expressing YFP-B56\u03b1 and transfected with the indicated myc-tagged KIF4AFL variants (LE: 1224CS1225 to LE).\n\n**Table 1.**\n Isothermal titration calorimetry (ITC) measurements between B56\u03b3 and KIF4A.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>B56\u03b312-380</th>\n      <th>Titrant</th>\n      <th>KD (\u00b5M)*</th>\n      <th>\u0394H (kcal/mol)</th>\n      <th>T\u0394S (kcal/mol)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WT</td>\n      <td>KIF4A\u2021\u00a0WT</td>\n      <td>15.2\u00a0\u00b1\u00a00.1</td>\n      <td>\u221211.7\u00a0\u00b1\u00a00.7</td>\n      <td>\u22125.1\u00a0\u00b1\u00a00.7</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>KIF4Abpm\u2020 (K1208A/K1209A/K1210A)</td>\n      <td>55.6\u00a0\u00b1\u00a016.8</td>\n      <td>\u221211.5\u00a0\u00b1\u00a02.2</td>\n      <td>\u22125.6\u00a0\u00b1\u00a02.4</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>KIF4ALE (C1224L/S1225E)</td>\n      <td>0.32\u00a0\u00b1\u00a00.01</td>\n      <td>\u221210.0\u00a0\u00b1\u00a00.1</td>\n      <td>\u22122.0\u00a0\u00b1\u00a00.1</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>KIF4ALE,PE (C1224L/S1225E/A1231P/H1232E)</td>\n      <td>0.10\u00a0\u00b1\u00a00.01</td>\n      <td>\u221213.1\u00a0\u00b1\u00a01.1</td>\n      <td>\u22123.6\u00a0\u00b1\u00a01.1</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>KIF4ALE,PE,bpm (K1208A/K1209A/K1210A/C1224L/ S1225E/A1231P/H1232E)</td>\n      <td>0.22\u00a0\u00b1\u00a00.02</td>\n      <td>\u221210.7\u00a0\u00b1\u00a00.1</td>\n      <td>\u22121.6\u00a0\u00b1\u00a00.3</td>\n    </tr>\n    <tr>\n      <td>E310R D313R</td>\n      <td>KIF4ALE,PE (C1224L/S1225E/A1231P/H1232E)</td>\n      <td>0.19\u00a0\u00b1\u00a00.01</td>\n      <td>\u221211.7\u00a0\u00b1\u00a00.1</td>\n      <td>\u22122.5\u00a0\u00b1\u00a00.1</td>\n    </tr>\n    <tr>\n      <td>E276R E310R D313R</td>\n      <td>KIF4ALE,PE (C1224L/S1225E/A1231P/H1232E)</td>\n      <td>0.21\u00a0\u00b1\u00a00.01</td>\n      <td>\u22128.2\u00a0\u00b1\u00a00.4</td>\n      <td>\u22120.9\u00a0\u00b1\u00a00.3</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>RM\u00a7 WT</td>\n      <td>0.13\u00a0\u00b1\u00a00.01</td>\n      <td>\u22126.0\u00a0\u00b1\u00a00.1</td>\n      <td>3.3\u00a0\u00b1\u00a00.1</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>RMbpm (R563A/K564A/K565A/K566A)</td>\n      <td>0.28\u00a0\u00b1\u00a00.01</td>\n      <td>\u22127.5\u00a0\u00b1\u00a00.1</td>\n      <td>1.4\u00a0\u00b1\u00a00.1</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>NHS\u00b6WT</td>\n      <td>4.9\u00a0\u00b1\u00a00.9</td>\n      <td>\u221217.0\u00a0\u00b1\u00a02.2</td>\n      <td>\u22129.8\u00a0\u00b1\u00a02.1</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>NHSbpm (R1618A/R1620A)</td>\n      <td>54.5\u00a0\u00b1\u00a016.9</td>\n      <td>\u221218.1\u00a0\u00b1\u00a02.7</td>\n      <td>\u221212.2\u00a0\u00b1\u00a02.5</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>AIM1** WT</td>\n      <td>0.80\u00a0\u00b1\u00a00.09</td>\n      <td>\u22129.2\u00a0\u00b1\u00a00.4</td>\n      <td>\u22120.9\u00a0\u00b1\u00a00.5</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>AIM1bpm (K716A/R717A/K718A/K719A/K721A)</td>\n      <td>14.9\u00a0\u00b1\u00a01.8</td>\n      <td>\u22128.2\u00a0\u00b1\u00a00.2</td>\n      <td>\u22121.6\u00a0\u00b1\u00a00.2</td>\n    </tr>\n  </tbody>\n</table>\n\n_*All reported measurements are performed with ITC buffer (50 mM sodium phosphate pH 7.5, 150 mM NaCl, 0.5 mM TCEP). Errors are from duplicate or triplicate measurements.\u2020 bpm, basic patch mutant.\u2021KIF4A variants, KIF4A1192-1232.\u00a7RepoMan (RM) variants, RM533-603.\u00b6NHS variants, NHS1616-1635.**AIM1 variants, AIM1716-741._\n\nTo determine if this change in affinity also alters B56 binding in cells, we generated myc-tagged constructs of KIF4A, NHS and AIM1 either as WT or a version where the basic patch was mutated (bpm). For KIF4A, we also mutated the LxxIxE motif by mutating the key Ile residue to Ala (I1227A). We then expressed these variants in a cell line stably expressing inducible YFP-B56\u03b1 and the binding to the myc-tagged variants monitored by affinity purifying YFP-B56\u03b1\u00a0and blotting against the myc-tag. Although all three KIF4A variants (wt, bpm and I1227A) expressed to similar levels, only the WT KIF4A co-purified efficiently with B56\u03b1 (Figure 2E). Similar results were obtained for a myc-tagged basic patch and LxxIxE containing fragment of KIF4A1001-1232 (Figure 2\u2014figure supplement 3A), AIM1625-900 (Figure 2F) and NHS1419-1631 (Figure 2G). Together, these data show that, for a subset of PP2A-B56 interactors, the basic patch motif contributes significantly to B56 binding.\n\n### The binding contribution of the basic patch motif is independent of the strength of the LxxIxE motif\n\nOne possible role of the basic patch motif is to selectively enhance B56 affinity for more weakly binding LxxIxE motifs. The LxxIxE motifs have a range of affinities for B56, from stronger (i.e., TLSIKKL(pS)PIIEDDREADH, phosphorylated BUBR1: KD, 0.55 \u03bcM) to weaker (i.e., LSTLREQSSQS, Emi2: KD,41 \u03bcM) (Hertz et al., 2016). The KIF4A LxxIxE motif peptide (CSPIEEEAH), like that of Emi2, was previously shown to bind B56 weakly (KD, 32 \u03bcM) (Hertz et al., 2016). The basic charged motif may not contribute significantly to B56 binding in presence of a tight LxxIxE motif. In order to test this, the KIF4A sequence was mutated to the stronger LxxIxE motif by mutating 1224CS1225 to LE (KIF4ALE; the structures of B56\u03b3:LxxIxE complexes show that the \u2018L, Leu\u2019 binds the deep hydrophobic pocket on B56\u03b3 while the \u2018E, Glu\u2019 mimics a phosphorylated Ser, which forms multiple salt bridges with B56\u03b3 residues H187, R188 [these residues are conserved in all B56 isoforms]). The affinity of KIF4A1192-1232,LE for B56\u03b3 increased 50-fold compared to WT KIF4A (Table 1, Figure 2\u2014figure supplement 2I; KD of 0.32 \u03bcM). Mutating KIF4ALE residues 1231AH1232 to PE (KIF4ALE,PE: the \u2018P, Pro\u2019 positions the \u2018E, Glu\u2019 to form a bidentate salt bridge with B56\u03b3\u00a0R201\u00a0Wang et al., 2016) further enhanced KIF4A binding (KD of 0.10 \u00b5M; Table 1, Figure 2\u2014figure supplement 2J). To determine if the basic patch also contributed to B56\u03b3-KIF4A binding in a tight LxxIxE background, we used ITC. Mutating the KIF4ALE,PE\u00a0basic patch (1208KKK1210 to AAA) again reduced the binding affinity by\u00a0~2 fold (KD of 0.22 \u00b5M; Table 1, Figure 2\u2014figure supplement 2K), a reduction similar to that observed for WT KIF4A (Table 1, Figure 2B,C, Figure 2\u2014figure supplement 2A,B). This was further confirmed with myc-tagged KIF4ALE and KIF4ALE,bpm variants in cells, showing that while the KIF4ALE variant binds more tightly to B56\u03b1 compared to WT, mutating the basic patch (KIF4ALE,bpm) again reduced binding (Figure 2\u2014figure supplement 3B). Together, these data show that the basic patch, together with the LxxIxE motif, are critical for a\u00a0subset of regulators, including KIF4A, to stably interact with B56, independent of the strength of the LxxIxE motif.\n\n### The basic patch retains its structural disorder when bound to PP2A:B56\n\nTo understand how, at a molecular level, the 1208KKKKR1212\u00a0basic patch binds B56, we used NMR spectroscopy. An overlay of the 2D [1H,15N] HSQC spectra of 15N-labeled KIF4A1192-1232,LE,PE in the presence and absence of B56\u03b3 showed that multiple peaks disappear upon complex formation (Figure 3A). Specifically, KIF4A residues 1207 to 1232, which includes the basic patch and the LxxIxE motif, were broadened beyond detection upon binding B56\u03b3. The peaks corresponding to the residues between the two motifs (residues 1213 to 1224) were also broadened beyond detection, indicating this region either is involved in binding or that the conformational freedom of the linker is limited, due to the anchoring of the basic patch and the LxxIxE motifs to B56\u03b3. A crystal structure of the KIF4A1192-1232,LEPE:B56\u03b3 complex (Figure 3\u2014figure supplement 1; Table 2) showed that while the LxxIxE motif is well-ordered, electron density corresponding to a single conformation of the basic patch bound to B56 was, as expected, not observed. A crystal structure of the AIM1716-741:B56\u03b3 complex (Figure 3\u2014figure supplement 1; Table 2) was similar. Namely, while the AIM1 LxxIxE motif was well-ordered, electron density corresponding to a single conformation of the basic patch bound to B56 was not observed. Together, these data, coupled with the ITC results, show that the KIF4A basic patch interaction with B56 belongs to an emerging class of biomolecular complexes in which one or more partners of the complex retains their structural disorder upon complex binding. That is, the basic charged patch of KIF4A binds B56\u03b3 but does so via dynamic, rapidly interchanging conformations even when bound to B56.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig3-v2.jpg)\n\n**Figure 3.:** (A) Overlay of the 2D [1H,15N] HSQC spectra of 15N-labeled KIF4A1192-1232,LE,PE in the presence (red) and absence (black) of B56\u03b3 (1:1 ratio); basic patch and LxxIxE residues labeled blue and green, respectively. (B) Overlay of the 2D [1H,15N] HSQC spectra of 15N-labeled KIF4A1192-1232,LE,PE in the presence (red) and absence (black) of B56\u03b33R E276R/E310R/E316R (1:1 ratio); basic patch and LxxIxE residues highlighted in blue and green, respectively. (C) [1H,15N] HSQC peak intensity ratios for spectra shown in A, B (black, red, respectively). (D) Cartoon representation of the effect of mutating the acidic patch (AP) of B56 on KIF4A:B56 binding (AP: acidic patch, BP: basic patch). (E) Immunoprecipitation of stably expressed YFP-B56\u03b1 variants (wt, B56\u03b12R: E335R/D338R, and B56\u03b13R E301R/E335R/D338R and probed for endogenous KIF4A, PP2AC (PP2A catalytic subunit) and GFP (YFP-B56\u03b1). (F) Immunoprecipitation of transiently transfected myc-tagged KIF4A1001-1232 C-terminal variants (A1: K1208A; A2: 1208KK1209 to AA; A3: 1208KKK1210 to AAA; A4: 1208KKKK1211 to AAAA) from cells stably expressing YFP-B56\u03b1 or YFP-B56\u03b3. The amounts of myc-KIF4A co-purified with YFP-B56 were normalized to the band intensity of YFP.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) KIF4ALE,PE peptide (1192\u20131232; 1224CS1225 to LE, 1231AH1232 to PE; yellow sticks) binds B56 between heat repeats 3 and 4 (HR3 and 4; lavender and blue; B56 heat repeat schematic, with corresponding helices numbered, is shown below). (B) The KIF4ALE,PE:B56\u03b3 and AIM1:B56\u03b3 complexes are superimposed on the pS-RepoMan:B56\u03b3 complex (PDB: 5SW9) via B56\u03b3. B56\u03b3 is colored according to electrostatic potential; KIF4A, AIM1 and RepoMan peptides are shown as yellow, purple and green sticks, respectively. The sequences of KIF4ALE,PE, AIM1, and RepoMan that include the basic patch (colored in blue) and the LxxIxE motif are shown below. The residues with electron density in the KIF4ALE,PE:B56\u03b3, AIM1:B56\u03b3, and pS-RepoMan:B56\u03b3 complexes are highlighted in yellow, purple and green, respectively. (C) Electrostatic and hydrogen bonding interactions between phosphomimetic KIF4ALE,PE S1225E (yellow) and B56\u03b3 H187/R188 (orange). (D) Electrostatic and hydrogen bonding interactions between RepoMan pS591 (green) and B56\u03b3 H187/R188 (blue, 5SW9). (E) The B56\u03b3 LxxIxE binding pocket (colored in light blue) and the electron density (2Fo\u2013Fc, \u03c3\u00a0=\u00a01.0) of the AIM1 peptide; 14 residues of the AIM1 peptide were modeled into the electron density (purple: 716KRKKARMPNSPAPHFAMPPIHEDHLE741). (F) The C-terminal residues of AIM1 peptide also interact with B56\u03b3, with the formation of a bidentate salt bridge between AIM1 E741 and B56\u03b3 R201.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Overlay of the 2D [1H,15N] HSQC spectra of\u00a015N-labeled KIF4ALE,PE(1192\u20131232;\u00a01224CS1225\u00a0to LE,\u00a01231AH1232\u00a0to PE) in the presence (red) and absence (black) of B564R\u00a0(B56\u03b3 E276R/E310R/D313R/E316R; 1:1 ratio).The residues corresponding to the basic patch of KIF4A are labeled in blue and those corresponding to the LxxIxE motif are labeled in green. The rest are labeled in black.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Immunoprecipitation of YFP-B56 from cells stably expressing YFP-B56\u03b3WT or YFP-B56\u03b32R (E310R/D313R) and probed for the indicated proteins: KIF4A, GFP (YFP-B56) and PP2AC (PP2A catalytic subunit). (B) Immunoprecipitation of YFP-B56 from cells stably expressing YFP-B56\u03b3WT, YFP-B56\u03b32R (E310R/D313R) YFP-B56\u03b1WT, YFP-B56\u03b12R (E3335R/D338R) and probed for the indicated proteins: RepoMan, GFP (YFP-B56) and PP2AC (PP2A catalytic subunit).\n\n**Table 2.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>B56:KIF4ALE,PE*,\u2020</th>\n      <th>B56:AIM1*,\u2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDB Data collection</td>\n      <td>6OYL</td>\n      <td>6VRO</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P 21 21 21</td>\n      <td>I4</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>53.3, 108.0, 117.8</td>\n      <td>111.0, 111.0, 108.9</td>\n    </tr>\n    <tr>\n      <td>\u0391, \u03b2, \u03b3(\u00b0)</td>\n      <td>90, 90, 90</td>\n      <td>90, 90, 90</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>39.52\u20133.15</td>\n      <td>39.26\u20132.45</td>\n    </tr>\n    <tr>\n      <td>Rmerge</td>\n      <td>0.100 (1.104)</td>\n      <td>0.091 (1.721)</td>\n    </tr>\n    <tr>\n      <td>Mean I /\u03c3I</td>\n      <td>11.5 (1.8)</td>\n      <td>12.4 (1.2)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>96.6 (83.1)</td>\n      <td>99.8 (99.4)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>8.2 (7.7)</td>\n      <td>7.0 (7.0)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.999 (0.730)</td>\n      <td>0.999\u00a0(0.673)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>39.52\u20133.15 (3.26\u20133.15)</td>\n      <td>38.88\u20132.45 (2.54\u20132.45)</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td>11868</td>\n      <td>24208</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.22 (0.36)/0.24 (0.41)</td>\n      <td>0.22 (0.33)/0.23 (0.38)</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>2796</td>\n      <td>2777</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>7</td>\n      <td>36</td>\n    </tr>\n    <tr>\n      <td>B-factors</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>66.4</td>\n      <td>70.1</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>60.4</td>\n      <td>62.1</td>\n    </tr>\n    <tr>\n      <td>RMS deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.002</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.54</td>\n      <td>0.54</td>\n    </tr>\n    <tr>\n      <td>Ramachandran</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0.3</td>\n      <td>0.9</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>5.8</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>93.9</td>\n      <td>95.7</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>4.3</td>\n      <td>2.7</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Data was collected from a single crystal.\u2020KIF4ALE,PE 1192ELKHVATEYQENKAPGKKKKRALASNTSFFSGLEPIEEEPE1232.\u2021AIM1 716KRKKARMPNSPAPHFAMPPIHEDHLE741.*Values in parentheses are for highest-resolution shell._\n\nThe current data suggest that this emerging class of biomolecular interactions is driven almost exclusively by electrostatics (Borgia et al., 2018). To confirm that the KIF4A basic patch interacts dynamically with the conserved acidic patch on B56 (Figure 1B), we used mutagenesis coupled with NMR spectroscopy. Specifically, the interaction of 15N-labeled KIF4A1192-1232,LE,PE with four distinct B56\u03b3 acidic patch variants was tested: (1) B562R, E310R/D313R, (2) B562Rb, E276R/E316R, (3) B563R, E276R/E310R/E316R and (4) B564R, E276R/D313R/E310R/E316R (Figure 3B, Figure 3\u2014figure supplement 2). The NMR data showed that the peaks corresponding to the KIF4A basic patch residues are present only with B56 variants with mutated acidic patch residues (Figure 3B,C). That is, they no longer interact with these variants of B56 (Figure 3D). Consistent with these results, ITC showed that KIF4A binds the B56\u03b3 acidic patch variants more weakly (Table 1, Figure 2\u2014figure supplement 2L,M). Interestingly, mutating only E310R/D313R was sufficient to reduce the binding affinity to the same extent as mutating the basic patch in KIF4A (KD: 0.19\u00a0\u00b1\u00a00.01 \u03bcM and 0.21\u00a0\u00b1\u00a00.01 \u03bcM for B56\u03b32R:KIF4ALEPE, and B56\u03b3:KIF4ALEPE,bpm, respectively, Table 1, Figure 2\u2014figure supplement 2L); additional mutations (i.e., E276R/E310R/D313R) did not further affect the binding (Table 1, Figure 2\u2014figure supplement 2M). In agreement with this result, we found that the binding of KIF4A and other bp-containing B56 interactors to B56 in cells was dependent on both an intact acidic patch in B56 (Figure 3E, Figure 3\u2014figure supplement 3) and an intact basic patch in KIF4A, as even single amino acid substitutions in the KIF4A basic patch lowered binding (Figure 3F). This requirement of the acidic patch for binding is consistent with a charge-charge interaction where KIF4A interacts with B56 in a dynamic manner and each amino acid contributes similarly to the overall KD. Together, these data show that the KIF4A basic patch interacts directly with the B56 conserved acidic patch and this interaction is critical for KIF4A binding.\n\n### KIF4A dephosphorylation by PP2A:B56 requires the KIF4A basic patch\n\nTo determine if the basic charge motif in KIF4A affects dephosphorylation of KIF4A T799, a residue phosphorylated by Aurora B kinase during cytokinesis, we generated a T799 phospho-specific antibody (Bastos et al., 2014). Strikingly, the observed phosphorylation level of T799 was inversely correlated with affinities of PP2A-B56 for the different KIF4A variants in mitotic cells (Figure 4A). Specifically, mutating either the LxxIxE motif (I1227A) or the basic patch (1209KKK1211 to AAA) resulted in an increase of phosphorylation of T799, as less PP2A-B56 was recruited to counteract the activity of Aurora B kinase. Further, this phenotype was rescued by enhancing the LxxIxE motif binding affinity; namely, introducing the 1224CS1225 to LE mutation in KIF4Abpm (KIF4ALE,bpm) increased the amount of PP2A recruited and, in turn, the amount of KIF4A dephosphorylated. Together, these data show that the dephosphorylation of KIF4A T779 by PP2A-B56 requires the basic patch as the PP2A-B56 dephosphorylation efficacy is directly correlated with PP2A-B56 affinity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig4-v2.jpg)\n\n**Figure 4.:** (A) The indicated YFP-KIF4A constructs were purified using GFP-Trap and analyzed for phosphorylation by immunoblotting. The T799-phospho signal was normalized to YFP. YFP only was used as a control. (B) Endogenous KIF4A was depleted by RNAi and complemented with the indicated YFP-KIF4A variants. (C) Live cell imaging of cells expressing YFP-KIF4A variants as they go through mitosis. The beginning of the NEBD was considered as time 0 (min). Bar represents 5 \u03bcm. CFP, cyan fluorescent protein. (D) Quantification of mitotic duration. Circles represent single cells. The number of cells and median (red line) times are indicated from at least two independent experiments. Mann-Whitney test was used to determine the p-values indicated. \u2217\u2217\u2217\u2217 p<0.0001; *p<0.05; ns, not significant. (E) The mass spectrometry-identified condensin complex associated proteins co-purifying with YFP-KIF4Awt versus KIF4Abpm or KIF4AI1227A from mitotic HeLa cells stably expressing YFP-KIF4A variants. (F) The binding of chromosome and B56 to KIF4A is mutually exclusive because both binding events strictly require the basic patch.\n\n### KIF4A chromosome targeting and PP2A-B56 binding are mutually exclusive as both KIF4A functions strictly require the basic patch\n\nKIF4A is a chromosome-binding kinesin that is important for maintaining normal chromosome architecture during cell division (Mazumdar et al., 2004). To determine if the KIF4A basic patch has a mitotic function, we performed RNAi complementation assays in cells where we depleted KIF4A and hKid and then induced the expression of the different YFP-tagged KIF4A variants (Figure 4B,C,D; KIF4A and hKid are simultaneously depleted because they have nearly fully redundant functions during mitosis Wandke et al., 2012). Depleting both KIF4A and hKid resulted in a strong mitotic delay, with multiple unaligned chromosomes. As expected, this phenotype was fully rescued by complementation with WT YFP-KIF4A. However, mutating the basic patch (bpm) resulted in a non-functional KIF4A and this variant failed to localize to mitotic chromosomes (Figure 4C, bottom panel). Further analysis revealed that this defect in KIF4A function due to the bpm was not due to a lack of PP2A-B56 binding, as evidenced by the observation that the I1127A variant fully rescued both the mitotic timing and the chromosome alignment phenotypes (Figure 4C, middle panel,\u00a0Figure 4D). This demonstrates that the KIF4A basic patch has a function in mitosis, which is distinct from its role in PP2A-B56 binding.\n\nTo determine if additional proteins bind specifically to the KIF4A basic patch, we purified the different KIF4A mutants from mitotic arrested cells and identified the interacting proteins using MS. These data showed that the abundance of all components of the condensin I complex were strongly reduced in the KIF4A bpm variant (Figure 4E, Figure 4\u2014source data 1), data that are consistent with the observation that this variant does not localize to chromosomes (Figure 4C, bottom panel). In contrast, the abundance of the components of the condensin I complex with the I1227A variant was unaffected, consistent with the ability of this variant to properly target chromosomes during mitosis (Figure 4C, middle panel). These data confirm that the basic patch has a second, independent function; namely, it targets KIF4A to chromosomes by binding condensin I. Because we show that both condensin I and PP2A-B56 binding strictly require the basic patch, KIF4A cannot bind both proteins simultaneously, that\u00a0is, condensin I and PP2A-B56 binding by KIF4A is mutually exclusive (Figure 4F). These data reveal how additional motifs in PP2A-B56 substrates can modulate PP2A-B56 binding to control phospho-dependent signaling in cells.\n\n## Discussion\n\nThe traditional view of protein binding is one in which the interacting proteins have well-defined, complementary interfaces (Lee and Richards, 1971). However, an emerging mode of binding is that in which one or both proteins exhibit different degrees of disorder in the bound complex (Berlow et al., 2015). In particular, the role of highly dynamic, charge-charge interactions that lack well-defined complementary interfaces are becoming increasingly recognized for their central roles in biomolecular interactions and, in turn, a diversity of biological processes like signaling (Borgia et al., 2018). The advantage of such a dynamic interaction is that it facilitates fast and responsive regulation. Further, the associated conformational fluctuations also provide ready access for enzymes that mediate post-translational modifications. Because IDPs are not only widely prevalent in eukaryotic genomes (Brown et al., 2002), but also unusually enriched in charged amino acids (Habchi et al., 2014), the emerging view is that electrostatically-driven dynamic protein:protein interactions are critical for many biological functions.\n\nHere we describe a novel dynamic, charge-charge interaction for a major protein phosphatase, PP2A-B56, which significantly contributes to our understanding of the diversity of mechanisms used by this phosphatase to select its substrates. This novel interaction is mediated by a patch of basic residues that dynamically bind a highly conserved acidic surface present on all B56 isoforms and therefore constitutes a novel pan PP2A-B56 binding motif (Figure 5). Charge-charge interactions are generally weak (low \u00b5M to mM), yet are becoming increasingly recognized for their importance in increasing the binding affinity of protein:protein interactions, in part by lowering entropy (Bertran et al., 2019; Borgia et al., 2018; Luo et al., 2016; Sharma et al., 2015). Further, their emerging role in regulating the protein:protein interactions of PPPs with their substrates and regulators is only now beginning to be fully understood. For example, the unrelated B55 subunit also recognizes basic stretches of residues in substrates (Cundell et al., 2016) but clearly the substrates for PP2A-B55 and PP2A-B56 are distinct. Thus, additional interactions confer specificity. In the case of PP2A-B56 the binding affinity provided by the basic patch motif is insufficient for B56 binding and requires the presence of an LxxIxE motif, which is specific for B56, in the interactor as well. Thus, the function of the dynamic basic patch is to modulate and enhance the interactions mediated by the LxxIxE motif. It may also facilitate LxxIxE binding by providing an initial docking interaction after which the stronger LxxIxE stabilizes substrate binding; this is consistent with the view that long-range dynamic electrostatic interactions may function as an initial \u2018tether\u2019, after which the specific hydrophobic interactions that, in this case, define the LxxIxE-B56 complex, stabilize binding (Borgia et al., 2018). Finally, we show that the presence and contribution of the basic patch is important for a number of interaction partners to bind PP2A-B56 underscoring its relevance and generality.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig5-v2.jpg)\n\n**Figure 5.:** B56 is shown as an electrostatic surface with KIF4A and NHS shown as cartoons. The LxxIxE sequences of KIF4A and NHS bind B56 in a single conformation in the LxxIxE binding pocket (NHS sequence in this pocket modeled using the KIF4A structure, PDBID). As can be seen by these models (generated using COOT and PYMOL), the KIF4A (KKKKR) and NHS (RCR) basic patches (bp, colored dark blue) are optimally positioned to interact dynamically with the B56 acidic patch (ap, red). The dots reflect that these sequences do not adopt a single conformation, but instead retain their intrinsic disorder when bound to the acidic patch.\n\nIn the case of KIF4A, we also show that the basic patch motif has a second function. Namely, it is strictly required for KIF4A association with chromatin via condensin I binding;see also Poser et al. (2019). Because both KIF4A functions, binding to PP2A-B56 and condensin, strictly require the basic patch, the binding of both proteins to KIF4A is mutually exclusive. This implies that KIF4A only binds PP2A-B56 upon dissociation from chromosomes, consistent with the reported function of the KIF4A-PP2A-B56 complex in regulating the anaphase central spindle (Bastos et al., 2014). Since basic patch motifs resemble nuclear localization motifs (NLSs) recognized by importin \u03b1/\u03b2, the basic patch motifs would also be inaccessible for PP2A-B56 binding during nuclear transport (Lange et al., 2007). Thus, the accessibility of basic patch motifs provide an additional layer of regulation that shapes the PP2A-B56 interaction and dephosphorylation landscape in cells. Together, these discoveries are advancing our understanding of how, at a molecular level, PP2A-B56 engages its substrates and how these interactions are subject to additional regulation via competition for other binding interactions, which has broad implications for understanding cellular signaling.\n\n## Materials and methods\n\n### Sequence alignment\n\nThe ConSurf server (using 150 unique B56 sequences with the lowest E values) was used to calculate the conservation scores illustrate in Figure 1A (Ashkenazy et al., 2016). Clustal Omega (Madeira et al., 2019) was used to generate sequence alignments in Figure 1C, Figure 1\u2014figure supplement 1 and Figure 2\u2014figure supplement 2. The following species are included in Figure 1\u2014figure supplement 1: Homo sapiens (human), Mus musculus (mouse), Gallus gallus (chicken), Danio rerio (fish), and Xenopus laevis (frog), Candida albicans (Candida), Arabidopsis thaliana (A. thaliana), Chlamydomonas reinhardtii (Algae).\n\n### Cloning and expression\n\nHuman B56\u03b31 (B56\u03b312-380 and B56\u03b331-380) was sub-cloned into the\u00a0pRP1b vector (Peti and Page, 2007). B56\u03b312-380 and B56\u03b331-380 were expressed in E. coli BL21 (DE3) (Agilent). Cells were grown in Luria Broth in the presence of selective antibiotics at 37\u00b0C to an OD600 of\u00a0~0.8, and expression was induced by the addition of 0.5 mM isopropyl \u03b2-D-thiogalactoside (IPTG). Induction proceeded for\u00a0~18\u201320 hr at 18\u00b0C prior to harvesting by centrifugation at 6000 xg. Cell pellets were stored at \u221280\u00b0C until purification. Human KIF4A (KIF4A1192-1232) and RepoMan (RepoMan560-603) were sub-cloned into a MBP-fusion vector. Mutants were generated using the QuikChange site-directed mutagenesis kit (Agilent) and sequence confirmed. KIF4A1192-1232 and RepoMan560-603 variants were expressed in E. coli BL21 (DE3-RIL) (Agilent). Cells were grown in Luria Broth in the presence of selective antibiotics at 37\u00b0C to an OD600 of\u00a0~0.6, and expression was induced by the addition of 0.5 mM isopropyl \u03b2-D-thiogalactoside (IPTG). Induction proceeded for 5 hr at 37\u00b0C prior to harvesting by centrifugation at 6000 xg. Cell pellets were stored at \u221280\u00b0C until purification.\n\nMammalian expression constructs were cloned into pcDNA5/FRT/TO and derivatives of this vector using standard cloning procedures. Point mutations were introduced by whole plasmid PCR using complementary primers containing the mutations and confirmed by full sequencing of insert. YFP tagged versions of B56\u03b1 and B56\u03b3 were described previously (Kruse et al., 2013).\n\n### Generation of stable cell lines\n\nThe generation of stable HeLa cell lines expressing constructs under the control of a doxycycline-inducible promoter was carried out as previously described (Hein and Nilsson, 2014).\n\n### Cell culture\n\nHeLa-FRT stable cell lines and HeLa cells were passaged in DMEM supplemented with 10% fetal bovine serum (FBS, HyClone) and 1% penicillin-streptomycin (Life Technologies). Protein expression was induced by the addition of doxycycline (Clontech Laboratories) at final concentration of 4 ng/ml.\n\n### Transfection and RNAi\n\nFor biochemical experiments cells were transfected with 1.5 \u00b5g plasmid and Lipofectamine 2000 (2 \u03bcl/ml) for 5 hr, where applicable.\n\n### B56 RNAi rescue\n\nB56 RNAi depletion was done using the following protocol: 250 \u03bcl transfection mix with 2 \u03bcl siRNA Max (Invitrogen) and 1 \u03bcl siRNA oligo (stock concentration 10 \u03bcmol) in Optimem (Life Technologies) was added to 750 \u03bcl Optimem in 6-well dishes with cells. After 5\u20136 hr of treatment, FBS was added (10%) until the medium was changed the next day. B56 isoforms were depleted using Dharmacon oligonucleotides against B56\u03b1 (UGAAUGAACUGGUUGAGUAUU), B56\u03b3 (GGAAGAUGAACCAACGUUAUU), B56\u03b4 (UGACUGAGCCGGUAAUUGUUU) and B56\u03b5 (GCACAGCUGGCAUAUUGUAUU) and used at final concentration of 20 nmol (80 nmol total for all four isoforms). Luciferase (Sigma) was used as control. In live cell experiments, YFP-B56 expressing Hela FRT cell lines were depleted by RNAi 48 hr and 24 hr prior to filming. For KIF4A live cell experiments cells were treated with RNAi 48 hr prior to imaging. YFP-tagged proteins were induced before imaging by the addition of 0.5 ng/ml Doxycycline.\n\n### KIF4A RNAi rescue\n\nHeLa cells were seeded in 6-well plates and synchronized by thymidine the day before transfection. Double RNAi against Kid (CAAGCUCACUCGCCUAUUGTT) and KIF4A (GAAAGATCCTGGCTCAAGA) were performed at 48 and 24 hr before live cell imaging analysis. 800 ng of YFP-tagged wild type KIF4A and mutant plasmids were co-transfected with 30 ng of CFP-Histone3 and RNAi oligos in the first RNAi. Thymidine was added again in the second transfection. After the second RNAi, the cells were re-seeded into 8-well chamber dishes (Ibidi). Cells were released from thymidine in the morning for live cell imaging, which was performed 5 hr later on a DeltaVision Microscope (GE Healthcare).\n\n### Microscopy\n\nCells were seeded in an 8-well chamber dishes (Ibidi) the day before imaging. After changing the medium to L-15 (Life Technologies) supplemented with 10% FBS and 0.5 ng/ml Doxycycline (where applicable) cells were imaged on a DeltaVision Elite microscope (GE Healthcare) using a 40\u00a0\u00d7\u00a0oil immersion objective (1.35 NA, WD 0.10). DIC and YFP channels where imaged with 5 min intervals for 17 hr, taking three z-stacks 5 \u03bcm apart. SoftWork software (GE Healthcare) was used for data analysis. Cells expressing within a certain YFP expression window was all analyzed while cells expressing high levels of YFP tagged proteins was excluded from the analysis. ImageJ (NIH) was used to extract still images.\n\n### Immunoprecipitation\n\nCells were seeded and transfected with myc-tagged constructs (where applicable) on the day after seeding. Following 24 hr thymidine (2.5 mM) block, cells were released into Nocodazole (200 ng/ml) overnight. Inducible cell-lines (YFP-B56, YFP-KIF4A or YFP) were induced 24 hr prior collection with 4 ng/ml Doxycycline. Mitotic cells were collected by shake-off. Cells were lysed in low salt lysis buffer (50 mM Tris pH 7.4, 50 mM NaCl, 1 mM EDTA, 1 mM DTT, 0.1% vol/vol NP40), supplemented with protease and phosphatase inhibitors (Roche) for 25 min on ice. Lysates were cleared for 15 min at 20,000 xg. Lysates were incubated with 10 \u03bcl pre-equilibrated GFP-trap beads (Chromotek) for 1 hr at 4\u00b0C and rotation. Beads were washed three times with lysis buffer and eluted in 25 \u03bcl 2x LSB (Life Technology) supplemented with 10% \u03b2-mercaptoethanol.\n\n### Western blotting\n\nFollowing SDS\u2013PAGE separation, gels were blotted onto Immobilion FL membrane (Millipore). Membranes were incubated with the indicated primary antibody and subsequently with IRDye 800 or 680 secondary antibodies (Li-Cor). Membranes were scanned using the Odyssey Sa imaging system (Li-Cor) and quantification was carried out using the Odyssey Sa Application software (Li-Cor). Representative images from at least two independent experiments is shown in all figures.\n\n### Antibodies\n\nThe following antibodies were used for western-blotting: KIF4A rabbit (Cat# A301-074A; 1:1000, Bethyl laboratories), KIF4A T799 rabbit (raised against peptide CLRRR(pT)FSLT, 1:100, Moravian biotechnology), PP2A-C mouse monoclonal (Cat# 05\u2013421, 1:2,000, Merck), C-myc mouse monoclonal (Cat# SC-40, 1:1000, Santa Cruz), GFP rabbit (raised against full length GFP, 1:10000, Moravian Biotechnology), GFP mouse monoclonal (Cat# 11814460001, 1:1000, Roche), B56\u03b1 mouse monoclonal (Cat# 610615, 1:1000, BD Transduction Laboratories), BubR1 mouse monoclonal (raised against BubR1 TPR domain, 1:1000, BRIC monoclonal antibody facility), CDC2A rabbit (Cat# HPA030049, 1:1000, Sigma).\n\n### Protein purification\n\nB56\u03b3 cell pellets were resuspended in ice-cold lysis buffer (50 mM Tris pH 8.0, 0.5 M NaCl, 5 mM imidazole, 0.1% Triton X-100 containing EDTA-free protease inhibitor tablet [Sigma]), lysed by high-pressure cell homogenization (Avestin C3 Emulsiflex) and centrifuged (35,000 xg, 40 min, 4\u00b0C). The supernatant was loaded onto a HisTrap HP column (GE Healthcare) pre-equilibrated with Buffer A (50 mM Tris pH 8.0, 500 mM NaCl and 5 mM imidazole) and was eluted using a linear gradient of Buffer B (50 mM Tris pH 8.0, 500 mM NaCl, 500 mM imidazole). Fractions containing the protein were pooled and dialyzed overnight at 4\u00b0C (50 mM Tris pH 8.0, 500 mM NaCl) with TEV protease to cleave the His6-tag. The cleaved protein was incubated with Ni2+-NTA beads (GEHealthcare) and the flow-through collected. The protein was concentrated and purified using size exclusion chromatography (SEC; Superdex 75 26/60 [GE Healthcare]) pre-equilibrated in ITC buffer (50 mM sodium phosphate pH 7.5, 150 mM NaCl, 0.5 mM TCEP) or crystallization buffer (20 mM HEPES pH 7.8, 500 mM NaCl, 0.5 mM TCEP). Fractions were pooled, concentrated to designated concentration for experiments or stored at \u221280 \u00b0C. KIF4A1192-1232 was purified similarly except that it was heated at 80\u00b0C for 10 min and centrifuged (15,000 xg, 10 min, 4\u00b0C) prior to SEC purification (SEC buffer: 20 mM HEPES pH 7.8, 500 mM NaCl, 0.5 mM TCEP).\n\n### Crystallization and structure determination\n\nPooled B56\u03b331-380 (hereafter, B56) in SEC buffer was concentrated and combined with KIF4A1192-1232,LE,PE or AIM1 peptide (716KRKKARMPNSPAPHFAMPPIHEDHLE741, Bio-Synthesis Inc), in the same buffer at a 1:5 molar ratio to a final concentration of 10 mg/ml. Crystals of the complex were identified in 0.1 M HEPES pH 7.75, 0.8 M LiCl and 8% PEG8K (B56: KIF4A1192-1232,LE,PE) or 0.1 M Tris pH 8.0, 0.9 M LiCl and 9% PEG6K (B56: AIM1) using vapor diffusion hanging drops. Crystals were cryo-protected by a 30 s soak in mother liquor with 30% glycerol and immediately flash frozen. Data were collected at SSRL beamline 12.2 at 100 K and a wavelength of 0.98 \u00c5 using a Pilatus 6M PAD detector. The data were processed using XDS (Kabsch, 2010), Aimless (Evans and Murshudov, 2013) and truncate (French and Wilson, 1978). The structures of the complexes were solved by molecular replacement using Phaser (Adams et al., 2010), using B56 (PDBID 5K6S) as the search model (Wang et al., 2016). A solution was obtained in space group P212121 (B56: KIF4A1192-1232,LE,PE) or I4 (B56: AIM1); strong electron density for both peptides was visible in the initial maps. The initial models of the complex were built without the peptide using AutoBuild, followed by iterative rounds of refinement in PHENIX and manual building using Coot (Emsley and Cowtan, 2004). The peptide coordinates were then added followed by iterative rounds of refinement in PHENIX and manual building using Coot. Data collection and refinement details are provided in Table 2.\n\n### Isothermal titration calorimetry\n\nSEC was performed to polish B56\u03b312-380, RepoMan, KIF4A and exchange into ITC Buffer (50 mM sodium phosphate pH 7.5, 150 mM NaCl, 0.5 mM TCEP). Purified or purchased peptides were titrated into B56\u03b312-380 (30 \u00b5M) using an Affinity ITC SV microcalorimeter at 25\u00b0C (TA Instruments). Data were analyzed using NITPIC, SEDPHAT and GUSSI (Scheuermann and Brautigam, 2015; Zhao et al., 2015).\n\n### Nuclear magnetic resonance spectroscopy\n\nNMR data were recorded at 283 K using a Bruker Neo 600 MHz (1H Larmor frequency) NMR spectrometer equipped with a HCN TCI active z-gradient cryoprobe. NMR Measurements of KIF4A were recorded using either 15N- or 15N,13C-labeled protein at a final concentration of 0.1 or 3 mM in NMR buffer (20 mM sodium phosphate pH 6.8, 200 or 50 mM NaCl, 0.5 mM TCEP) and 90% H2O/10% D2O. Unlabeled B56\u03b312-38 and 1H,15N-labeled KIF4A complex was formed via co-SEC (20 mM sodium phosphate pH 6.8, 200 mM NaCl, 0.5 mM TCEP). The sequence-specific backbone assignments of KIF4A and variants were achieved using 3D triple resonance experiments including 2D [1H,15N] HSQC, 3D HNCA, 3D HN(CO)CA, 3D HN(CO)CACB and 3D HNCACB. All NMR data were processed using Topspin 4.0.5 and analyzed using Cara. NMR chemical shifts have been deposited in the BioMagResBank (BMRB: 27913).\n\n### Mass spectrometry\n\nPulldowns were performed in triplicates and analyzed by SDS gel electrophoresis followed by label-free LC-MS/MS on a Q-Exactive Plus quadrupole Orbitrap mass spectrometer (ThermoScientific) equipped with an Easy-nLC 1000 (ThermoScientific) and nanospray source (ThermoScientific) as previously described (Petrone et al., 2016). Peptides were resuspended in 5% methanol/1.5% formic acid and loaded on to a trap column (1 cm length, 100 \u03bcm inner diameter trap packed with ReproSil C18 AQ 5 \u03bcm 120 \u00c5 pore beads (Dr. Maisch, Ammerbuch, Germany)) vented to waste via a micro-tee and eluted across a fritless analytical resolving column (35 cm length, 100 \u03bcm inner diameter fused silica packed with ReproSil C18 AQ 3 \u03bcm 120 \u00c5 pore beads) pulled in-house (Sutter P-2000, Sutter Instruments, San Francisco, CA) with a 60 min gradient of 5\u201330% LC-MS buffer B (LC-MS buffer A: 0.0625% formic acid, 3% ACN; LC-MS buffer B: 0.0625% formic acid, 95% ACN). The Q-Exactive Plus was set to perform an Orbitrap MS scan (R\u00a0=\u00a070K; AGC target\u00a0=\u00a03e6) from 350 to 1500 Thomson, followed by HCD MS2 spectra on the 10 most abundant precursor ions detected by Orbitrap scanning (R\u00a0=\u00a017.5K; AGC target\u00a0=\u00a01e5; max ion time\u00a0=\u00a075 ms) before repeating the cycle. Precursor ions were isolated for HCD by quadrupole isolation at width\u00a0=\u00a00.8 Thomson and HCD fragmentation at 26 normalized collision energy (NCE). Charge state 2, 3 and 4 ions were selected for MS2. Precursor ions were added to a dynamic exclusion list +/-\u00a020 ppm for 20 s. Raw data were searched using COMET in high resolution mode (Eng et al., 2013) against a target-decoy (reversed)(Elias and Gygi, 2007) version of the human (UniProt; downloaded 2/2013, 40482 entries of forward and reverse protein sequences) with a precursor mass tolerance of +/-\u00a01 Da and a fragment ion mass tolerance of 0.02 Da, and requiring fully tryptic peptides (K, R; not preceding P) with up to three mis-cleavages. Static modifications included carbamidomethyl cysteine and variable modifications included: oxidized methionine. Searches were filtered using orthogonal measures including mass measurement accuracy (+/-\u00a03 ppm), Xcorr for charges from +two through +4, and dCn targeting a\u00a0<\u00a01% FDR at the peptide level. Quantification of LC-MS/MS spectra was performed using MassChroQ (Valot et al., 2011) and the iBAQ method (Schwanh\u00e4usser et al., 2011). Keratin and proteins with a maximum total peptide count of 1 were removed from further analysis. IBAQ quantifications were imported into Perseus (Tyanova et al., 2016), and log2 transformed. Missing values were imputed from a normal distribution to enable statistical analysis and visualization by volcano plot. Statistical analysis of protein quantification was carried out in Perseus by two-tailed Student\u2019s t-test.\n\n### Data and software availability\n\nAll NMR chemical shifts have been deposited in the BioMagResBank (BMRB 27913). Atomic coordinates and structure factors have been deposited in the Protein Data Bank (6OYL, 6VRO). The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium (Vizca\u00edno et al., 2014) through the PRIDE partner repository (PXD013886).\n",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "df866b44-0251-4220-a9f3-007f61cd5002",
+      "submission_id": "e6e77882-34e0-4ed3-892c-df5029815277",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tony Hunter, Salk Institute for Biological Studies United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55966.sa1](https://doi.org/10.7554/eLife.55966.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe concept that multisite interactions are the important for the recognition of substrates by protein kinases and phosphatases is gaining traction. It was already known that the B56 regulatory subunit of the PP2A phosphatase ternary complex can recognize substrates for dephosphorylation through binding to an LXXIXE short motif in the substrate. Here the authors have defined a second substrate recognition mechanism acting in concert with the LXXIXE motif, which involves interaction between a negatively charged groove on the surface of B56 and a basic patch on the substrate protein. They demonstrated that a bidentate substrate interaction involving both the LXXIXE motif and the basic patch is important for PP2A-mediated dephosphorylation of the KIF4A mitotic kinesin and is functionally relevant in mitosis. These findings represent an important advance in our understanding of how PP2A can recognize its phosphoprotein substrates with high affinity and specificity.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"A dynamic charge:charge interaction modulates PP2A:B56 interactions\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Tony Hunter as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor.\n\nOur decision has been reached after consultation between the three reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers expressed interest in the possibility that the acidic surface patch adjacent to the LpSPIxE SLiM-binding groove in the B56 PP2A holoenzyme regulatory subunit might serve as an additional substrate recognition motif for PP2A/B56 protein phosphatase substrates possessing a basic patch adjacent to the SLiM. The structural and biochemical data you present are largely consistent with the idea that the B56 acidic patch promotes its interaction with KIF4A via its basic patch both in vitro and in vivo and thereby facilitates KIF4A dephosphorylation, although the proposed charge-charge interaction was not evident in the KIF4A/B56 structure you present. The main issue is that you provide no convincing evidence that the B56 acidic patch/KIF4A basic patch interaction is essential for PP2A/B56's or KIF4A biological function in vivo, and this type of evidence would need to be presented for at least one PP2A/B56 substrate of this type. Thus, while the conserved nature of the B56 acidic patch suggests it could be important in PP2A/B56 substrate selection, a stronger example where this is functionally important needs to be established. Whilst the reviewers recognise the potential importance of your findings they concur that as it presently stands your paper does not provide enough new biological insight into PP2A substrate selection to be considered further by eLife.\n\nReviewer #1:\n\nThe authors have previously defined LpSPIxE as short linear interacting motif (SLiM) through which the PP2A/B56 protein phosphatase complex targets a subset of its phosphoprotein substrates, such as RepoMan and BubR1. Here, they have extended their investigation of how PP2A-B56 recognizes its substrates. In their original report, three structures of B56 associated with SLiM phosphopeptides from RepoMan and BubR1 were solved to define the mode of LpSPIxE binding to B56. A study of these PP2A/B56/LpSPIxE structures combined with evolutionary analysis of B56 sequences revealed an acidic surface patch adjacent to the hydrophobic pocket that binds the LpSPIxE motif. To investigate a possible functional role of this acidic patch in PP2A/B56 substrate selection, they stably expressed WT and E335R/D338R acidic patch mutant B56\u03b1-YFP in HeLa cells, and used MS analysis to compare the repertoire of proteins pulled down with the WT and mutant B56\u03b1 proteins from nocodazole-arrested mitotic cells. They found several proteins, including RepoMan and KIF4A, that were more weakly associated with the acidic patch B56\u03b1 mutant. Both B56\u03b1 and B56\u03b3 isoform acidic patch mutants, however, were able to support mitotic progression in HeLa cells depleted of B56\u03b1 or B56\u03b3, indicating that the mitotic function of PP2A/B56 was not severely perturbed. They then focused on the KIF4A mitotic kinesin as a PP2A/B56 substrate, and investigated the importance of the acidic patch in interaction and dephosphorylation of KIF4A. When KKK in the basic patch N-terminal to the LXXIXE motif was mutated to AAA, they found this reduced the affinity of recombinant KIF4A for recombinant B56 by ~4 fold in vitro. A parallel analysis carried out by mutating the basic patch upstream of the LXXIXE in RepoMan yielded a similar decline in binding to B56. By coexpression in HeLa cells, they observed that unlike basic patch or LXXIXE KIF4A mutants only WT KIF4A was efficiently coprecipitated with B56. By making mutations in the KIF4A LXXIXE motif, they showed that the affinity of the LXXIXE motif for B56 did not affect the contribution of the basic patch to the interaction of the substrate protein with B56 in vitro. Next, they investigated the consequences of mutating the KIF4A basic patch on its T799 phosphorylation status in cells, finding that mutation of either the LXXIXE motif or the basic patch increased pT799 levels, but did not affect the time taken for cells to move from NEBD to anaphase, consistent with the fact that KIF4A depletion also did not affect mitotic timing. However, they did note that KIF4A basic patch mutant failed to associate with mitotic chromosomes, while retaining the ability to localize to the spindle midzone. On this basis, they argue that the KIF4A basic patch will not be accessible to PP2A/B56 when it is associated with chromosomes. Finally, they investigated the dynamics of B56\u03b1-KIF4A interaction using NMR perturbation analysis, and found that the basic patch in KIF4A binds the acidic patch of B56 in a dynamic fashion via a charge-charge interaction between the acidic patch n B56 and the basic patch in KIF4A.\n\nThe evidence that the acidic patch on the surface of the PP2A B56 regulatory subunit is important for recognition of a subset of PP2A/B56 substrates is reasonably strong, and supported by the structural, biophysical and in vivo data. The disappointing aspect of these studies is that the activity of the single PP2A/B56 substrate they analyzed in depth, i.e. the KIF4A kinesin, that potentially requires the acidic patch for PP2A/B56 recognition, does not exhibit an obvious in vivo phenotype when its basic patch is mutated.\n\n1) Figure 1A, B: The authors need to define the sequence(s) of the LXXIXE peptide(s) displayed in the structure in the figure legend (was this a pSer.Pro-containing peptide).\n\n2) Figure 2C: The binding studies were done with bacterially-expressed MBP-KIF4A1192-1232. Presumably this protein was not phosphorylated at S1225 \u2013 what difference does the phosphate at S1225 make to binding affinity, and how does the affinity of a pSer-containing motif compare to the affinity when the Ser is changed to the phosphomimic Glu (this is relevant to the B56/KIF4A structure shown in Figure 4\u2014figure supplement 1, where the LE,PE high affinity LXXIXE mutant version of KIF4A was used)?\n\n3) Figure 3B: The myc-KIF4A pT799 bands need quantifying to demonstrate the magnitude of the effects of mutating either the basic patch or the LXXIXE motif on KIF4A dephosphorylation.\n\n4) Figure 4\u2014figure supplement 1: The authors show the crystal structure of the KIF4A basic patch-LEPIEEEPEE motif peptide bound to the B56 HEAT repeat region, where FSGLEPIEEEEPE residues are observed binding between heat repeats 3 and 4, but the atomic level interactions are not shown, and panel with these should be included. A surface representation of the complex like that in Figure 1A, B would also be helpful. Apparently, the KIF4A KKKKR basic patch did not make a stable enough interaction with the B56 acidic patch to be detected in the crystal structure. The NMR perturbation data in Figure 4\u2014figure supplement 1 indicate that K1208 makes the strongest interaction, consistent with the effect of K2208A mutation on binding affinity, while K1209, K1210, K1211 and R1212 interactions are less prominent. Conversely, one would like to know which of the acidic patch residues in B56 are most important. For instance, what is the role of the E335 and D338 B56 residues that were mutated in interacting with the basic patch residues, and which of the five basic residues interact with the four acidic residues (four residues in the B56 acidic patch were mutated to Arg in Figure 4\u2014figure supplement 1)? Can the authors model the basic patch residues into their structure, and, if so, what sort of turn would the intervening sequence between the LXXIXE motif and the basic motif have to make for both motifs to be bound simultaneously (also see point 8).\n\n5) It is not always clear which isoform of B56 was used in different experiments, and this should be indicated e.g. B56\u03b3 was used for the crystal studies shown in Figure 4\u2014figure supplement 1.\n\n6) Did the authors try a charge reversal experiment in which they mutated the basic patch in KIF4A to an acidic patch based on their structural information, and test whether this restores KIF4A dephosphorylation mediated by the E335R/D338R acidic patch mutant B56\u03b1-YFP in HeLa cells.\n\n7) Could the dynamic basic patch-acidic patch interaction be used as an initial docking interaction between a in a candidate substrate protein that collides with PP2A/B56 and PP2A/B56, which could then allow stabilization of substrate binding by the LXXIXE motif, if one is present adjacent to the basic patch?\n\n8) The number of residues between the LXXIXE motif and the basic motif differs significantly between RepoMan and KIF4A, and this should be discussed. Based on analysis of other PP2A/B56 substrates that might use an analogous basic motif, can the authors deduce rules for how close and how far away the two motifs can be?\n\n9) What does the basic patch of KIF4A interact with on chromosomes \u2013 is it an acidic patch on another chromosomal protein or perhaps DNA itself?\n\nReviewer #2:\n\nThe manuscript from groups doing leading work in understanding how serine-threonine phosphatases interact with their substrates. A high affinity interaction site on the 'B56' family of PP2A subunits has previously been identified. Here, they demonstrate a highly conserved acidic patch on the surface of B56 subunits, and mutation of this patch affects the affinity of a few selected substrates of B56 containing PP2A holoenzymes. In the case of the most markedly modified interaction, with KIF4A, the effect of the mutation on affinity is 4-fold, with changes documented with several diverse techniques. The limitation of the impact of this result is that the mutation has biochemical consequences but no detectable effect of the mutants on mitotic timing. The binding affinity effect size is smaller with a second substrate, RepoMan, at only two-fold. A crystal structure of the B56 and KIF4A peptide apparently fails to identify the interaction, which they suggest might be due to the dynamic nature of the interaction. So in the end, there is a small quantitative effect of this acidic patch on the one best substrate, and no biological consequence detected. The findings will be of interest to PP2A aficionados but do not rise to the level of broad biological significance.\n\nFigure 1: There is no table detailing the other proteins that were differentially affected in the pulldown in Figure 1C, D. Shouldn't this data be presented in the appendix? How many of these have SLiM domains and basic patches?\n\nAlso, how were the P values calculated and what method was used to correct for multiple comparisons?\n\nThere is no alignment of RepoMan identifying its basic patch. Did other interactions from the experiments in Figure 1C, D have basic patches?\n\nThe legend for Figure 1C states the 2R mutant B56\u03b1 is E335R/D338R. Figure 1B shows neither of these as being labelled in the acidic patch. I found this confusing. Is this just a nomenclature/numbering issue? 2NPP and 5SW9 structures both are with B56\u03b3 \u2013 it would be helpful to label it as such in Figure 1A, and identify the specific amino acids mutated in Figure 1C, D instead of the non-obvious 2R.\n\nThe authors use an unconventional naming criteria for PP2A subunits, adding to the nomenclature confusion in the field. The Aa subunit is PPP2R1A, not 2AAA. 2AAA is meaningless. If they need shorthand, why not just use 2R1A? Similarly, PP2AA should be PPP2CA, and if they need 4 letter shorthand, why not use P2CA?\n\nThere is a 4-fold effect of mutating the KIF4A patch; there is a twofold effect of mutating the RepoMan patch. This twofold effect is not claimed by the authors to be significant, and I see no statistical test. Please explain.\n\nFigure 3F: No indication of significance is given on the figure, just noted in legend. Please clarify. The text indicates there is no significant effect of the mutants on mitotic timing. Also, the labelling of the figure is out of register.\n\nFigure 3E: The statement that mutating the basic patch on KIF4A abolishes chromosome association goes beyond the data presented here. Additional assays would be needed to show this was not just a problem with the assay or selection of specific images. And that it was due to the binding to B56 rather than to another chromatin binding partner. This section should temper its conclusions or provide additional data.\n\nFigure 4: the text suggest the NMR data is with full length KIF4A. \"15N-labeled KIF4A in the presence and absence of B56\". However, this may be misleading, as the figure legend and figure suggest a different experiment, a small fragment of KIF4A that is mutated to bind B56 with high affinity. Please be careful in the text to describe this accurately. Please explain in the text why the mutant KIF4A fragment was used, if this is indeed the case. Please help me understand why the results with mutant KIF4A should be applicable to non-mutant KIF4A? Does the dynamic interaction with the basic patch require the high-affinity mutation of KIF4A?\n\nIf I understand correctly, the crystal of the peptide of KIF4A with B56 did not resolve the interaction of the basic patch with the conserved acidic groove, thus not providing support for the model.\n\nResults paragraph two: \u201cThese mutants were able to support normal mitotic timing in B56 RNAi\u2026\u201d So how biologically important can this patch be? It's confusing to me that they find the mutation alters binding of two mitotic regulators yet there is normal timing?\n\nReviewer #3:\n\nThe manuscript by Wang et al., \"A dynamic charge:charge interaction modulates PP2A:B56 interactions\", presents some novel observations, about substrate binding to PP2A:B56, with most of the experiments focusing on a single protein, KIF4A. Authors identify a conserved acidic groove on B56 (PPP2R5A-E) and show that it binds a basic patch in KIF4A through interaction studies with wild type proteins and mutants in both the B56 acidic groove and the KIF4A basic patch. NMR analyses further demonstrate the presence of this interaction. The experimental results presented are generally of high quality, and this paper will be of interest to anyone studying PP2A. Main weaknesses are the lack of biological impact of the B56 mutants with disruptions in the acidic groove, lack of in vitro dephosphorylation kinetics, and narrow focus on the KIF4A protein, which limits the authors' ability to make broad conclusions about the significance of this interaction. Also, much of the data presented in the manuscript is in the form of immunoblots which should be quantified, and presented with statistical analysis of the results.\n\nSpecific comments:\n\n1) Figure 1: Authors provide very limited analysis/discussion of the interaction studies carried out with B56\u03b1 and B56\u03b3 (WT vs. 2R mutant), mentioning only KIF4A and RepoMan. However, there are many orange dots in Figure 1C, D (proteins containing LxxIxE motifs), some of which also show significantly altered interactions. The story would be significantly strengthened by making this story more general: Are there basic patches present in LxxIxE containing proteins that are disrupted by the 2R mutations as compared to proteins that are not disrupted? For KIF4A the basic patch is 8 amino acids N terminal to LxxIxE. Is this spacing similar in RepoMan? If so, how many other candidates similarly display the presence of a basic patch close to LxxIxE (again vs. proteins whose interaction was not disrupted). Does addition of a strongly basic peptide selectively elute these interactors from B56?\n\n\u2013 Furthermore, many proteins that do show significant changes with WT vs. 2R mutants do not have predicted LxxIxE motifs. Authors should comment on this. Are they indirect interactors? Do they have LxxIxE motifs not previously identified? Or another B56 binding motif?\n\n\u2013 Authors state that the acidic patch in B56 is conserved, but Figure 1\u2014figure supplement 1 shows an alignment of human sequences only. This should be modified to include a broader evolutionary distribution-is this acid groove conserved in lower eukaryotes? Plants?\n\n2) In Figure 2E, F, Myc KIF4A FL containing the basic patch mutations (bpm) shows reduced interaction with B56. However, the KIF4A fragment (1001-1232) is expressed at much higher levels than full length in vivo, contains both basic patch and LxxIxE motifs, and shows complete loss of binding when the basic patch is mutated. Does this indicate the presence of additional interactions between KIF4A and B56 beyond the basic patch and LxxIxE motif? Authors should comment.\n\n3) In Figure 3B a phospho-specific antibody is used to look at steady state phosphorylation levels in vivo, which could be due to altered phosphorylation and/or dephosphorylation. In vitro dephosphorylation assays should be included to determine if the basic patch influences dephosphorylation kinetics.\n\n4) Figure 3E: Authors state that mutating the basic patch in KIF4A abolished chrosmosome association but not localization to the midzone, however the images shown are difficult to interpret as there is no co-staining with chromosomal or kinetochore proteins. There is clearly a bright blob that is present in all images except those for the KIF4A basic patch mutant. What does this blob represent? How many cells were analyzed?\n",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ea66772e-c75e-4ee9-9863-1c0ed712797a",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C1",
+      "claim": "PP2A is one of the defining members of the ser/thr phosphoprotein phosphatase (PPP) family.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein serine/threonine phosphatase 2A (PP2A) is one of the defining members of the ser/thr phosphoprotein phosphatase (PPP) family that, together with protein phosphatase 1 (PP1), regulates over 90% of all ser/thr dephosphorylation events in eukaryotic cells (Eichhorn et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Eichhorn et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "57d5eb38-b996-40ef-9939-5a2d2a2af3c7",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C2",
+      "claim": "PP2A together with PP1 regulates over 90% of all ser/thr dephosphorylation events in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein serine/threonine phosphatase 2A (PP2A) is one of the defining members of the ser/thr phosphoprotein phosphatase (PPP) family that, together with protein phosphatase 1 (PP1), regulates over 90% of all ser/thr dephosphorylation events in eukaryotic cells (Eichhorn et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Eichhorn et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "f59efa12-df26-4e01-ab07-34632d11b46d",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C3",
+      "claim": "PP2A is recognized as a tumor suppressor.",
+      "claim_type": "EXPLICIT",
+      "source": "PP2A is also recognized as a tumor suppressor because its inactivation by small molecules, viral proteins or endogenous inhibitors leads to tumor formation (Bialojan and Takai, 1988; Pallas et al., 1990; Ruvolo, 2016; Williams et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to Bialojan and Takai, 1988; Pallas et al., 1990; Ruvolo, 2016; Williams et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "a85bce28-36bf-45cb-a179-a3227c4649bb",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C4",
+      "claim": "Inactivation of PP2A by small molecules, viral proteins or endogenous inhibitors leads to tumor formation.",
+      "claim_type": "EXPLICIT",
+      "source": "PP2A is also recognized as a tumor suppressor because its inactivation by small molecules, viral proteins or endogenous inhibitors leads to tumor formation (Bialojan and Takai, 1988; Pallas et al., 1990; Ruvolo, 2016; Williams et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to Bialojan and Takai, 1988; Pallas et al., 1990; Ruvolo, 2016; Williams et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "6d05eb5c-7693-4d64-baf9-70de8284b177",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C5",
+      "claim": "PP2A plays a role in orchestrating mitotic events, cell apoptosis, metabolism and many other fundamental cellular signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular and biochemical studies further confirmed this by demonstrating the role of PP2A in orchestrating mitotic events, cell apoptosis, metabolism and many other fundamental cellular signaling pathways (Nilsson, 2019; Reid et al., 2013; Reynhout and Janssens, 2019; Wlodarchak and Xing, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to Nilsson, 2019; Reid et al., 2013; Reynhout and Janssens, 2019; Wlodarchak and Xing, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "e58ac9a8-a1b3-49de-86ad-98c10c88fe6f",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C6",
+      "claim": "The PP2A holoenzyme is a heterotrimer composed of a scaffolding subunit A (PPP2R1), a regulatory subunit B (PPP2R2-PPP2R5) and a catalytic subunit C (PPP2C).",
+      "claim_type": "EXPLICIT",
+      "source": "The PP2A holoenzyme is a heterotrimer, composed of a scaffolding subunit A (PPP2R1), a regulatory subunit B (PPP2R2-PPP2R5) and a catalytic subunit C (PPP2C) (Cho and Xu, 2007; Xu et al., 2008; Xu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cho and Xu, 2007; Xu et al., 2008; Xu et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "04a4796e-cbc6-44a6-9b7c-ccce574d49a6",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C7",
+      "claim": "The A and C subunits form the PP2A core enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The A and C subunits form the PP2A core enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "2ab1f1ad-4809-44ff-b5fd-62b52994ebd4",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C8",
+      "claim": "There are four known families of B subunits: B55 (B'), B56 (B', PR61), PR72 (B''), and PR93 (B''').",
+      "claim_type": "EXPLICIT",
+      "source": "There are four known families of B subunits, B55 (B'), B56 (B', PR61), PR72 (B''), and PR93 (B'''), that differ in both their primary sequences and tertiary structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "27612ec8-d6f6-41ae-ab59-440f2ba8fd08",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C9",
+      "claim": "The four families of B subunits differ in both their primary sequences and tertiary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "There are four known families of B subunits, B55 (B'), B56 (B', PR61), PR72 (B''), and PR93 (B'''), that differ in both their primary sequences and tertiary structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "3cc309ad-2278-4cd8-b471-a66c4c22a517",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C10",
+      "claim": "The highly variable B subunits determine PP2A holoenzyme substrate specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is the highly variable B subunits that determine PP2A holoenzyme substrate specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "ca5b51f9-e282-4157-aedf-066dc6ccc9e3",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C11",
+      "claim": "PP2A binds conserved short linear motifs (SLiMs) found within the intrinsically disordered region (IDR) of its substrates and regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structural and biochemical studies showed that PP2A, like other PPPs (i.e., PP1, PP2B/Calcineurin (CN)) bind conserved short linear motifs (SLiMs) found within the intrinsically disordered region (IDR) of its substrates and regulators (Tompa et al., 2014; Van Roey and Davey, 2015; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tompa et al., 2014; Van Roey and Davey, 2015; Wang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "178105eb-5533-4ad2-9df5-63c5d7344783",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C12",
+      "claim": "SLiMs are disordered in their free form but typically become ordered upon binding structured domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These SLiMs are disordered in their free form but typically become ordered upon binding structured domains (Dyson and Wright, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dyson and Wright, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "0baceb51-6cc5-4f93-89da-4400bf1d99fc",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C13",
+      "claim": "PPP recognition events are driven by the interaction of hydrophobic SLiM residues that bind deep hydrophobic pockets on the PPPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures of ordered SLiMs in complex with PPPs show that these recognition events are, in most cases, driven by the interaction of hydrophobic SLiM residues that bind deep hydrophobic pockets on the PPPs (Peti et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Peti et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "9a1d607e-24e0-4d88-a40f-106875b142b6",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C14",
+      "claim": "Single SLiMs typically bind to their cognate PPPs with moderate affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "Single SLiMs typically bind to their cognate PPPs with moderate affinities (Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Li et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "dbee04e6-ff1e-4879-bf79-60dff5cb43de",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C15",
+      "claim": "The existence of multiple SLiMs within a single regulator/substrate, coupled with post-translational modifications like phosphorylation, can greatly alter their affinity for their respective PPP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the existence of multiple SLiMs within a single regulator/substrate, coupled with post-translational modifications like phosphorylation, can greatly alter their affinity for their respective PPP (Bajaj et al., 2018; Grigoriu et al., 2013; Kumar et al., 2016; Nasa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bajaj et al., 2018; Grigoriu et al., 2013; Kumar et al., 2016; Nasa et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "d055c11f-089d-4a68-8f88-d53be023edf5",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C16",
+      "claim": "IDPs can form high affinity complexes that are dynamic, in which the IDPs simultaneously retain their intrinsic structural disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, it has been discovered that IDPs can also form high affinity complexes that are dynamic; that is, in which the IDPs simultaneously retain their intrinsic structural disorder (Borgia et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Borgia et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "20cd5cb3-d00f-4cfe-82e2-6bb26d081fce",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C17",
+      "claim": "Dynamic IDP binding is typically driven by electrostatics.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, binding is typically driven by electrostatics (Borgia et al., 2018; Hendus-Altenburger et al., 2019; Luo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Borgia et al., 2018; Hendus-Altenburger et al., 2019; Luo et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "4676048a-c1df-4595-93f2-2f465bcb16f1",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C18",
+      "claim": "The LxxIxE motif is the first PP2A:B56 specific SLiM.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the first PP2A:B56 specific SLiM, the LxxIxE motif, was identified (Hertz et al., 2016; Wang et al., 2016; Wu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hertz et al., 2016; Wang et al., 2016; Wu et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "fb9ed8e4-40bf-42e9-ac34-800d55aadf1d",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C19",
+      "claim": "Proteins containing validated LxxIxE motifs bind B56 in a deep, highly conserved hydrophobic pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins containing validated LxxIxE motifs bind B56, an all \u03b1-helical heat repeat protein, in a deep, highly conserved hydrophobic pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "119f6e5d-1c1c-4b26-80a3-ac48684435d0",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C20",
+      "claim": "Most LxxIxE motifs bind PP2A:B56 with moderate affinities (low micromolar KD).",
+      "claim_type": "EXPLICIT",
+      "source": "Most LxxIxE motifs bind PP2A:B56 with moderate affinities (low micromolar KD), similar to those observed for other PPP-specific SLiMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "9edbe4ad-da30-48ff-92ab-f8a2613d1d80",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C21",
+      "claim": "For PP1 and CN, enhanced affinities are achieved by exploiting avidity through regulators and substrates containing two or more distinct SLiMs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for PP1 and CN, enhanced affinities are achieved by exploiting avidity; namely, regulators and substrates contain two or more distinct SLiMs which, together, result in tight affinities for their cognate PPP (Choy et al., 2014; Grigoriu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Choy et al., 2014; Grigoriu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "1459c08b-c459-484c-95bb-f47abae0382b",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C22",
+      "claim": "The residues that comprise the concave surface of B56 are exceptionally conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of the amino acid conservation among 150 distinct B56 sequences shows that the residues that comprise the concave surface of B56 are exceptionally conserved (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence conservation analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "8baddf47-000c-433a-856c-f4277d1b2ce6",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C23",
+      "claim": "A surface adjacent to the LxxIxE pocket on B56 is highly negatively charged.",
+      "claim_type": "EXPLICIT",
+      "source": "An examination of the electrostatic potential of the same region led to the identification of a surface adjacent to the LxxIxE pocket that is not hydrophobic, but instead is highly negatively charged (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrostatic potential analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "42c48eae-cbdf-438b-9bf9-48462b126c7a",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C24",
+      "claim": "The negatively charged surface on B56 is defined by multiple acidic residues that are perfectly conserved in B56.",
+      "claim_type": "EXPLICIT",
+      "source": "This surface is defined by multiple acidic residues that are perfectly conserved in B56, both among its various isoforms and throughout evolution (Figure 1A, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by conservation analysis shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "b01434a9-ce69-46ae-9927-f535fcaf771c",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C25",
+      "claim": "A subset of LxxIxE-containing B56 interactors including KIF4A, RepoMan (CDCA2), NHS and AIM1 are regulated specifically by the acidic patch for B56 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The MS analysis shows that a subset of the LxxIxE-containing B56 interactors are regulated specifically by the acidic patch for B56 binding in both isoforms. This includes the mitotic regulators KIF4A, RepoMan (CDCA2), Nance-Horan syndrome protein (NHS) and absent in melanoma 1 protein (AIM1), (ratio WT/2R > 9, p-value<0.05; Figure 1D,E, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "14bdbbcb-5027-4438-8672-c2b7989e4900",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C26",
+      "claim": "The perturbation of interactions between the acidic patch and B56 interactors is not sufficient to perturb B56 function in supporting mitotic timing in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While the perturbation of these interactions is not sufficient to perturb B56 function in supporting mitotic timing in HeLa cells (Figure 1\u2014figure supplement 2A,B,C), it does reveal that the B56 acidic patch is a key binding determinant for a subset of LxxIxE containing PP2A-B56 interactors (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2A,B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "c701e9bb-6155-47d0-a26b-afbc9f637e65",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C27",
+      "claim": "A conserved basic charged rich region exists within ~15 amino acid N-terminal to an established LxxIxE motif in KIF4A, RepoMan, NHS and AIM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the primary sequences of these regulators highlighted the presence of a conserved basic charged rich region within ~15 amino acid N-terminal to an established LxxIxE motif, which we defined as a basic patch (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence analysis shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "dae22b7b-1d23-4caa-adc6-f55017d27a66",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C28",
+      "claim": "Mutating the KIF4A basic patch (bpm, basic patch mutant: 1208KKK1210 to AAA) reduced the affinity of KIF4A1192-1232 for B56\u03b3 by ~4 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The data showed that mutating the KIF4A basic patch (bpm, basic patch mutant: 1208KKK1210 to AAA) reduced the affinity of KIF4A1192-1232 for B56\u03b3 by ~4 fold (Figure 2B,C,D, Table 1, Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Figure 2B,C,D, Table 1, and Figure 2\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "22972d2b-0d2a-47b5-ac04-24cda023e80a",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C29",
+      "claim": "Mutating the basic patch motif of RepoMan, NHS and AIM1 resulted in statistically significant reduced affinities for B56.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly statistically significant reduced affinities were observed when the basic patch motif of RepoMan, NHS and AIM1 were mutated (CDCA2/RepoMan 563RKKK566 to AAAA; NHS 1618RCR1620 to ACA; AIM1 716KRKKAR721 to AAAAAA; Table 1, Figure 2\u2014figure supplement 2C\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Table 1 and Figure 2\u2014figure supplement 2C\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "039108f4-42a5-4c83-adc3-a6f0fb3f605e",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C30",
+      "claim": "Only WT KIF4A co-purified efficiently with B56\u03b1, while basic patch mutant and I1227A mutant did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all three KIF4A variants (wt, bpm and I1227A) expressed to similar levels, only the WT KIF4A co-purified efficiently with B56\u03b1 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "c196e3a0-9bf2-48c3-91ea-5b6c4bf44ff5",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C31",
+      "claim": "The basic patch motif contributes significantly to B56 binding for a subset of PP2A-B56 interactors.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that, for a subset of PP2A-B56 interactors, the basic patch motif contributes significantly to B56 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "eb0252e5-695d-44b9-9b8b-b591a68a9559",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C32",
+      "claim": "The KIF4A LxxIxE motif peptide (CSPIEEEAH) binds B56 weakly (KD, 32 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "The KIF4A LxxIxE motif peptide (CSPIEEEAH), like that of Emi2, was previously shown to bind B56 weakly (KD, 32 \u03bcM) (Hertz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hertz et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "fc886711-19f4-4222-9a5f-867da5118fcc",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C33",
+      "claim": "The affinity of KIF4A1192-1232,LE for B56\u03b3 increased 50-fold compared to WT KIF4A (KD of 0.32 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "The affinity of KIF4A1192-1232,LE for B56\u03b3 increased 50-fold compared to WT KIF4A (Table 1, Figure 2\u2014figure supplement 2I; KD of 0.32 \u03bcM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Table 1 and Figure 2\u2014figure supplement 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "ab3416b7-74c5-4e7e-8b30-74ea3036c0fe",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C34",
+      "claim": "Mutating KIF4ALE residues 1231AH1232 to PE (KIF4ALE,PE) further enhanced KIF4A binding (KD of 0.10 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating KIF4ALE residues 1231AH1232 to PE (KIF4ALE,PE: the 'P, Pro' positions the 'E, Glu' to form a bidentate salt bridge with B56\u03b3 R201 Wang et al., 2016) further enhanced KIF4A binding (KD of 0.10 \u00b5M; Table 1, Figure 2\u2014figure supplement 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Table 1 and Figure 2\u2014figure supplement 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "925904ca-dca9-4eb4-8e70-eb089cd7bd5f",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C35",
+      "claim": "Mutating the KIF4ALE,PE basic patch (1208KKK1210 to AAA) reduced the binding affinity by ~2 fold (KD of 0.22 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating the KIF4ALE,PE basic patch (1208KKK1210 to AAA) again reduced the binding affinity by ~2 fold (KD of 0.22 \u00b5M; Table 1, Figure 2\u2014figure supplement 2K), a reduction similar to that observed for WT KIF4A (Table 1, Figure 2B,C, Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Table 1 and Figure 2\u2014figure supplement 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "3a6523a7-a42d-41cd-b601-e29128744974",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C36",
+      "claim": "The basic patch, together with the LxxIxE motif, are critical for a subset of regulators, including KIF4A, to stably interact with B56, independent of the strength of the LxxIxE motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that the basic patch, together with the LxxIxE motif, are critical for a subset of regulators, including KIF4A, to stably interact with B56, independent of the strength of the LxxIxE motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "aeea2cb2-51c9-4738-addd-b914d844fc28",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C37",
+      "claim": "KIF4A residues 1207 to 1232, which includes the basic patch and the LxxIxE motif, were broadened beyond detection upon binding B56\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, KIF4A residues 1207 to 1232, which includes the basic patch and the LxxIxE motif, were broadened beyond detection upon binding B56\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing NMR spectroscopy results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "bb91ba17-ed24-4229-a6db-e1dab1e295c2",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C38",
+      "claim": "In the crystal structure of the KIF4A1192-1232,LEPE:B56\u03b3 complex, while the LxxIxE motif is well-ordered, electron density corresponding to a single conformation of the basic patch bound to B56 was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "A crystal structure of the KIF4A1192-1232,LEPE:B56\u03b3 complex (Figure 3\u2014figure supplement 1; Table 2) showed that while the LxxIxE motif is well-ordered, electron density corresponding to a single conformation of the basic patch bound to B56 was, as expected, not observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by crystallographic data shown in Figure 3\u2014figure supplement 1 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "97f3e6aa-8ec5-4655-9fb6-d1de003461bc",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C39",
+      "claim": "In the crystal structure of the AIM1716-741:B56\u03b3 complex, while the AIM1 LxxIxE motif was well-ordered, electron density corresponding to a single conformation of the basic patch bound to B56 was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "A crystal structure of the AIM1716-741:B56\u03b3 complex (Figure 3\u2014figure supplement 1; Table 2) was similar. Namely, while the AIM1 LxxIxE motif was well-ordered, electron density corresponding to a single conformation of the basic patch bound to B56 was not observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by crystallographic data shown in Figure 3\u2014figure supplement 1 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "7c6fd716-45f8-4c95-a685-fab5825e1d8b",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C40",
+      "claim": "The KIF4A basic patch binds B56\u03b3 via dynamic, rapidly interchanging conformations even when bound to B56.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data, coupled with the ITC results, show that the KIF4A basic patch interaction with B56 belongs to an emerging class of biomolecular complexes in which one or more partners of the complex retains their structural disorder upon complex binding. That is, the basic charged patch of KIF4A binds B56\u03b3 but does so via dynamic, rapidly interchanging conformations even when bound to B56.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on NMR and crystallographic data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "b276b2bc-3981-4cfb-82c1-48630f9ab9f2",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C41",
+      "claim": "The peaks corresponding to the KIF4A basic patch residues are present only with B56 variants with mutated acidic patch residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The NMR data showed that the peaks corresponding to the KIF4A basic patch residues are present only with B56 variants with mutated acidic patch residues (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NMR data shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "debe1334-315d-481c-9ab8-3860488eb688",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C42",
+      "claim": "KIF4A binds the B56\u03b3 acidic patch variants more weakly than wild-type B56\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, ITC showed that KIF4A binds the B56\u03b3 acidic patch variants more weakly (Table 1, Figure 2\u2014figure supplement 2L,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Table 1 and Figure 2\u2014figure supplement 2L,M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "8cb6cccf-e119-43a2-a354-c45f8cc175cb",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C43",
+      "claim": "Mutating only E310R/D313R in B56\u03b3 was sufficient to reduce the binding affinity to the same extent as mutating the basic patch in KIF4A.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mutating only E310R/D313R was sufficient to reduce the binding affinity to the same extent as mutating the basic patch in KIF4A (KD: 0.19 \u00b1 0.01 \u03bcM and 0.21 \u00b1 0.01 \u03bcM for B56\u03b32R:KIF4ALEPE, and B56\u03b3:KIF4ALEPE,bpm, respectively, Table 1, Figure 2\u2014figure supplement 2L); additional mutations (i.e., E276R/E310R/D313R) did not further affect the binding (Table 1, Figure 2\u2014figure supplement 2M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ITC data shown in Table 1 and Figure 2\u2014figure supplement 2L,M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "58af609e-6532-40fa-9d82-a4ac2996a0e4",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C44",
+      "claim": "The binding of KIF4A and other bp-containing B56 interactors to B56 in cells was dependent on both an intact acidic patch in B56 and an intact basic patch in KIF4A.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this result, we found that the binding of KIF4A and other bp-containing B56 interactors to B56 in cells was dependent on both an intact acidic patch in B56 (Figure 3E, Figure 3\u2014figure supplement 3) and an intact basic patch in KIF4A, as even single amino acid substitutions in the KIF4A basic patch lowered binding (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation data shown in Figure 3E, Figure 3\u2014figure supplement 3, and Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "ab71c578-46e1-449c-84f6-c21e9ebf2b3c",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C45",
+      "claim": "The KIF4A basic patch interacts directly with the B56 conserved acidic patch and this interaction is critical for KIF4A binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that the KIF4A basic patch interacts directly with the B56 conserved acidic patch and this interaction is critical for KIF4A binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "4ef3d267-6194-4652-81d5-6ee65a461081",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C46",
+      "claim": "The observed phosphorylation level of KIF4A T799 was inversely correlated with affinities of PP2A-B56 for the different KIF4A variants in mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the observed phosphorylation level of T799 was inversely correlated with affinities of PP2A-B56 for the different KIF4A variants in mitotic cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "504e04a8-18a6-40a0-8e81-e252036e9709",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C47",
+      "claim": "Mutating either the LxxIxE motif (I1227A) or the basic patch (1209KKK1211 to AAA) resulted in an increase of phosphorylation of KIF4A T799.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, mutating either the LxxIxE motif (I1227A) or the basic patch (1209KKK1211 to AAA) resulted in an increase of phosphorylation of T799, as less PP2A-B56 was recruited to counteract the activity of Aurora B kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "7ff2196f-0278-49bd-90c3-6666b169ca7d",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C48",
+      "claim": "The dephosphorylation of KIF4A T779 by PP2A-B56 requires the basic patch as the PP2A-B56 dephosphorylation efficacy is directly correlated with PP2A-B56 affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that the dephosphorylation of KIF4A T779 by PP2A-B56 requires the basic patch as the PP2A-B56 dephosphorylation efficacy is directly correlated with PP2A-B56 affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "d9d7eaaf-417d-4c83-a0b7-cf67ae5792fb",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C49",
+      "claim": "Depleting both KIF4A and hKid resulted in a strong mitotic delay, with multiple unaligned chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Depleting both KIF4A and hKid resulted in a strong mitotic delay, with multiple unaligned chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "7f0a522d-2f5f-41fc-9ff0-97bc73b3ea9f",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C50",
+      "claim": "The mitotic delay phenotype from KIF4A and hKid depletion was fully rescued by complementation with WT YFP-KIF4A.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this phenotype was fully rescued by complementation with WT YFP-KIF4A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "62d4fe84-6634-43f7-a2c0-40c448975258",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C51",
+      "claim": "Mutating the basic patch (bpm) resulted in a non-functional KIF4A that failed to localize to mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mutating the basic patch (bpm) resulted in a non-functional KIF4A and this variant failed to localize to mitotic chromosomes (Figure 4C, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "3cc88f14-c0ec-460e-afce-452a2da0ac6e",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C52",
+      "claim": "The defect in KIF4A function due to the bpm was not due to a lack of PP2A-B56 binding, as evidenced by the I1127A variant fully rescuing both the mitotic timing and the chromosome alignment phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis revealed that this defect in KIF4A function due to the bpm was not due to a lack of PP2A-B56 binding, as evidenced by the observation that the I1127A variant fully rescued both the mitotic timing and the chromosome alignment phenotypes (Figure 4C, middle panel, Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4C and Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "804b69ca-f3be-4baf-b489-e9d740c5c493",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C54",
+      "claim": "The abundance of all components of the condensin I complex were strongly reduced in the KIF4A bpm variant.",
+      "claim_type": "EXPLICIT",
+      "source": "These data showed that the abundance of all components of the condensin I complex were strongly reduced in the KIF4A bpm variant (Figure 4E, Figure 4\u2014source data 1), data that are consistent with the observation that this variant does not localize to chromosomes (Figure 4C, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "1ad2b398-3778-4062-bbf3-7ac4b3f0839a",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C55",
+      "claim": "The abundance of the components of the condensin I complex with the I1227A variant was unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the abundance of the components of the condensin I complex with the I1227A variant was unaffected, consistent with the ability of this variant to properly target chromosomes during mitosis (Figure 4C, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "419d719f-e773-4854-91a5-b81c2b3cd1e2",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C56",
+      "claim": "The basic patch targets KIF4A to chromosomes by binding condensin I.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm that the basic patch has a second, independent function; namely, it targets KIF4A to chromosomes by binding condensin I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "9803b55e-0d1a-42e4-a49a-98e658c7a870",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C57",
+      "claim": "Both condensin I and PP2A-B56 binding strictly require the basic patch, so KIF4A cannot bind both proteins simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we show that both condensin I and PP2A-B56 binding strictly require the basic patch, KIF4A cannot bind both proteins simultaneously, that is, condensin I and PP2A-B56 binding by KIF4A is mutually exclusive (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "d5310c9a-33bc-4623-a721-ac402057f966",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C58",
+      "claim": "The novel dynamic, charge-charge interaction significantly contributes to understanding the diversity of mechanisms used by PP2A-B56 to select its substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we describe a novel dynamic, charge-charge interaction for a major protein phosphatase, PP2A-B56, which significantly contributes to our understanding of the diversity of mechanisms used by this phosphatase to select its substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the manuscript's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "28360648-b82f-4f54-b569-14d47e533465",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C59",
+      "claim": "The novel interaction is mediated by a patch of basic residues that dynamically bind a highly conserved acidic surface present on all B56 isoforms and therefore constitutes a novel pan PP2A-B56 binding motif.",
+      "claim_type": "EXPLICIT",
+      "source": "This novel interaction is mediated by a patch of basic residues that dynamically bind a highly conserved acidic surface present on all B56 isoforms and therefore constitutes a novel pan PP2A-B56 binding motif (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement of the manuscript's findings, supported by Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "486ef8c2-ac19-40e7-9c79-8d2bf9f9f542",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C60",
+      "claim": "Charge-charge interactions are generally weak (low \u00b5M to mM).",
+      "claim_type": "EXPLICIT",
+      "source": "Charge-charge interactions are generally weak (low \u00b5M to mM), yet are becoming increasingly recognized for their importance in increasing the binding affinity of protein:protein interactions, in part by lowering entropy (Bertran et al., 2019; Borgia et al., 2018; Luo et al., 2016; Sharma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bertran et al., 2019; Borgia et al., 2018; Luo et al., 2016; Sharma et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "ceda706b-c6f2-4c3b-823a-13f4cdede8d0",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C61",
+      "claim": "The unrelated B55 subunit also recognizes basic stretches of residues in substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the unrelated B55 subunit also recognizes basic stretches of residues in substrates (Cundell et al., 2016) but clearly the substrates for PP2A-B55 and PP2A-B56 are distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cundell et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "cbf8980d-fbfe-4f9a-ac37-701b2bf3f354",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C62",
+      "claim": "The substrates for PP2A-B55 and PP2A-B56 are distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the unrelated B55 subunit also recognizes basic stretches of residues in substrates (Cundell et al., 2016) but clearly the substrates for PP2A-B55 and PP2A-B56 are distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "14e1a584-fbbb-4875-b485-7dc9bdbf7b2e",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C63",
+      "claim": "The binding affinity provided by the basic patch motif is insufficient for B56 binding and requires the presence of an LxxIxE motif.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of PP2A-B56 the binding affinity provided by the basic patch motif is insufficient for B56 binding and requires the presence of an LxxIxE motif, which is specific for B56, in the interactor as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "dca98a16-116c-4a18-9b2f-2f3a0cf67337",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C64",
+      "claim": "The function of the dynamic basic patch is to modulate and enhance the interactions mediated by the LxxIxE motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the function of the dynamic basic patch is to modulate and enhance the interactions mediated by the LxxIxE motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "11ea911b-4480-48db-bc10-d131b0de6ebd",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C65",
+      "claim": "The basic patch may facilitate LxxIxE binding by providing an initial docking interaction after which the stronger LxxIxE stabilizes substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "It may also facilitate LxxIxE binding by providing an initial docking interaction after which the stronger LxxIxE stabilizes substrate binding; this is consistent with the view that long-range dynamic electrostatic interactions may function as an initial 'tether', after which the specific hydrophobic interactions that, in this case, define the LxxIxE-B56 complex, stabilize binding (Borgia et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by a citation to Borgia et al., 2018.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "a7248292-e440-4872-9201-1a09713c5d0f",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C66",
+      "claim": "The presence and contribution of the basic patch is important for a number of interaction partners to bind PP2A-B56.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that the presence and contribution of the basic patch is important for a number of interaction partners to bind PP2A-B56 underscoring its relevance and generality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the manuscript's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "38d562e6-b45c-49e5-a28e-757104232d8a",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C67",
+      "claim": "The basic patch motif is strictly required for KIF4A association with chromatin via condensin I binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of KIF4A, we also show that the basic patch motif has a second function. Namely, it is strictly required for KIF4A association with chromatin via condensin I binding;see also Poser et al. (2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement describing experimental results, with a citation to Poser et al. (2019).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "2da787fc-0eb2-46bf-b87f-5da3298f2ebc",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C68",
+      "claim": "Because both KIF4A functions, binding to PP2A-B56 and condensin, strictly require the basic patch, the binding of both proteins to KIF4A is mutually exclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Because both KIF4A functions, binding to PP2A-B56 and condensin, strictly require the basic patch, the binding of both proteins to KIF4A is mutually exclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "ec35fecf-878d-45ac-a8b0-665d7b2a1683",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C69",
+      "claim": "KIF4A only binds PP2A-B56 upon dissociation from chromosomes, consistent with the reported function of the KIF4A-PP2A-B56 complex in regulating the anaphase central spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that KIF4A only binds PP2A-B56 upon dissociation from chromosomes, consistent with the reported function of the KIF4A-PP2A-B56 complex in regulating the anaphase central spindle (Bastos et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented, supported by a citation to Bastos et al., 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "5be38252-bfc7-4957-ac75-f7685f5c8fb7",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C70",
+      "claim": "Basic patch motifs resemble nuclear localization motifs (NLSs) recognized by importin \u03b1/\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Since basic patch motifs resemble nuclear localization motifs (NLSs) recognized by importin \u03b1/\u03b2, the basic patch motifs would also be inaccessible for PP2A-B56 binding during nuclear transport (Lange et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lange et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "358f4556-966b-49ea-9eba-ea952ff7fecb",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "claim_id": "C71",
+      "claim": "The accessibility of basic patch motifs provide an additional layer of regulation that shapes the PP2A-B56 interaction and dephosphorylation landscape in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the accessibility of basic patch motifs provide an additional layer of regulation that shapes the PP2A-B56 interaction and dephosphorylation landscape in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4d7adfde-4f6c-483d-9764-81eb61d15443",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify a highly conserved, negatively charged acidic patch on the B56 subunit of PP2A adjacent to the known LxxIxE binding pocket. This acidic patch is defined by multiple perfectly conserved acidic residues across B56 isoforms and throughout evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are well-supported by sequence conservation analysis (Figure 1A) and electrostatic potential mapping (Figure 1B). The bioinformatic analysis of 150 B56 sequences provides strong evidence for the exceptional conservation of this surface feature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "cf23a2c3-62d3-449f-b579-c9be34adc1ce",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mass spectrometry analysis reveals that a subset of LxxIxE-containing B56 interactors (KIF4A, RepoMan, NHS, AIM1) depend on the B56 acidic patch for binding, though perturbation of this interaction does not affect mitotic timing in HeLa cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by quantitative MS data (Figure 1D,E) showing significant reduction in binding for specific interactors when the acidic patch is mutated (ratio WT/2R > 9, p<0.05), and by mitotic timing assays (Figure 1\u2014figure supplement 2) showing no phenotype. The statistical thresholds and experimental controls appear appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "3ab3894d-3e0b-4b69-9781-4e894ad7ceb8",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors identify a conserved basic patch motif ~15 amino acids N-terminal to the LxxIxE motif in KIF4A, RepoMan, NHS, and AIM1. Mutating this basic patch reduces B56 binding affinity by 2-4 fold in vitro (ITC) and abolishes co-purification in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are well-supported by sequence analysis (Figure 2A, Figure 2\u2014figure supplement 1), quantitative ITC measurements (Figure 2B-D, Table 1, Figure 2\u2014figure supplement 2), and immunoprecipitation experiments (Figure 2E-G). The biophysical and cellular data are consistent and demonstrate the functional importance of the basic patch.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "d341b047-638c-4245-be1e-f7668cbdcd6b",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The contribution of the basic patch to B56 binding is independent of LxxIxE motif strength. Even when the KIF4A LxxIxE motif is strengthened (LE and LE,PE variants with 50-150 fold improved affinity), mutating the basic patch still reduces binding affinity by ~2 fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by systematic ITC measurements (Table 1, Figure 2\u2014figure supplement 2I-K) comparing wild-type and enhanced LxxIxE motifs with and without basic patch mutations. The data demonstrate that the basic patch contribution is additive and independent of LxxIxE strength, though the magnitude of effect is modest (2-4 fold).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "26ab4822-ef44-4979-ab37-f1639ccac5f0",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The basic patch retains structural disorder when bound to B56. NMR spectroscopy shows that basic patch residues broaden beyond detection upon B56 binding, while crystal structures show no electron density for a single conformation of the basic patch despite well-ordered LxxIxE motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by complementary structural techniques: NMR (Figure 3A showing peak broadening) and X-ray crystallography (Figure 3\u2014figure supplement 1, Table 2 showing absence of electron density for basic patch). The convergence of evidence from two independent methods strongly supports the conclusion of dynamic binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "f74c4ef7-67a1-4ff6-9ff2-4219b9df52e9",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The KIF4A basic patch interacts directly with the B56 acidic patch through dynamic electrostatic interactions. Mutating acidic residues in B56 (particularly E310R/D313R) weakens KIF4A binding and causes NMR peaks corresponding to the basic patch to reappear, indicating loss of interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are supported by NMR experiments with B56 acidic patch mutants (Figure 3B,C), ITC measurements (Table 1, Figure 2\u2014figure supplement 2L,M), and cellular immunoprecipitation assays (Figure 3E,F, Figure 3\u2014figure supplement 3). The data demonstrate direct interaction between the basic and acidic patches, with E310/D313 being the critical residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "b5088ce6-978d-40be-b74d-384531d835be",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The basic patch is required for efficient PP2A-B56-mediated dephosphorylation of KIF4A T799. Phosphorylation levels of T799 inversely correlate with PP2A-B56 binding affinity, with mutations in either the basic patch or LxxIxE motif increasing T799 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by phospho-specific antibody data (Figure 4A) showing inverse correlation between binding affinity and T799 phosphorylation across multiple KIF4A variants. The data demonstrate functional consequences of the basic patch for substrate dephosphorylation, though the analysis is limited to a single phosphorylation site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "971d1aab-c084-4da7-874b-1b30c9edf1fb",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The basic patch has a dual function: it mediates both PP2A-B56 binding and KIF4A localization to chromosomes via condensin I binding. These two functions are mutually exclusive because both require the same basic patch. The basic patch mutant fails to localize to chromosomes and shows reduced condensin I binding, while the LxxIxE mutant (I1227A) localizes normally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C57 are supported by RNAi rescue experiments (Figure 4B-D), live cell imaging (Figure 4C), and mass spectrometry of KIF4A interactors (Figure 4E). The data clearly demonstrate that the basic patch is essential for chromosome localization and condensin I binding, independent of PP2A-B56 binding. The mutual exclusivity conclusion is logical given both interactions require the same motif.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "0c265360-c1c3-411b-9aed-5625b43e2b79",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors describe a novel dynamic charge-charge interaction mechanism for PP2A-B56 substrate recruitment. The basic patch motif constitutes a pan-B56 binding motif that modulates and enhances LxxIxE-mediated interactions, but is insufficient for binding without the LxxIxE motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59, C63-C64, C66 represent the main conceptual conclusions of the manuscript. These are well-supported by the collective experimental evidence showing: (1) the basic patch enhances binding but requires LxxIxE (ITC data), (2) the interaction is dynamic (NMR/crystallography), (3) it involves conserved acidic/basic patches (mutagenesis), and (4) it applies to multiple interactors (MS, ITC for KIF4A, RepoMan, NHS, AIM1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "e9e61c9a-26e2-4096-83dd-bb2aabe8957b",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that the basic patch may facilitate LxxIxE binding by providing an initial docking interaction, functioning as an electrostatic 'tether' before the LxxIxE motif stabilizes binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 is explicitly speculative ('may also facilitate') and supported only by analogy to other systems (Borgia et al., 2018). No direct kinetic or mechanistic data are provided to test this 'tethering' model. The speculation is reasonable but remains unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "f58195e0-4d6a-43fe-94a4-254a0271e09c",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The basic patch is required for KIF4A-condensin I interaction and chromosome localization. Because both PP2A-B56 and condensin I binding require the basic patch, these interactions are mutually exclusive, implying KIF4A binds PP2A-B56 only after dissociating from chromosomes during anaphase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 are supported by MS data showing loss of condensin I binding in the basic patch mutant (Figure 4E), microscopy showing loss of chromosome localization (Figure 4C), and citation to prior work on KIF4A-PP2A-B56 function in anaphase (Bastos et al., 2014; Poser et al., 2019). The mutual exclusivity is a logical inference from the data, and the temporal model is consistent with known biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "48f534bb-b1b2-4a96-9c8e-33decea4fe34",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Basic patch motifs resemble nuclear localization signals (NLS), suggesting they would be inaccessible during nuclear transport. This provides an additional regulatory layer shaping PP2A-B56 interactions in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C71 are speculative extrapolations based on sequence similarity to NLS motifs (Lange et al., 2007). No experimental data are provided to test whether importin binding actually competes with PP2A-B56 binding or whether this represents a physiologically relevant regulatory mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "0727f5be-5158-4578-9f42-ba38928980a4",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about PP2A structure, function, and biological importance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 are standard background information supported by appropriate citations to prior literature. These establish the context for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims about short linear motifs (SLiMs), intrinsically disordered proteins (IDPs), and the LxxIxE motif in PP2A-B56 substrate recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C21 provide background on SLiMs, IDPs, and the previously identified LxxIxE motif, all supported by appropriate citations. These establish the conceptual framework but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    },
+    {
+      "id": "06a068aa-c724-43ea-9c4a-e35e9d25ed11",
+      "content_id": "e7495afd-05fd-41fd-ae1c-2e6105068b29",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Discussion claims about the general properties of charge-charge interactions and comparison to B55 substrate recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are discussion points supported by citations to prior literature. They contextualize the findings but do not represent primary results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:51:37.103864Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1459c08b-c459-484c-95bb-f47abae0382b",
+      "result_id": "4d7adfde-4f6c-483d-9764-81eb61d15443"
+    },
+    {
+      "claim_id": "8baddf47-000c-433a-856c-f4277d1b2ce6",
+      "result_id": "4d7adfde-4f6c-483d-9764-81eb61d15443"
+    },
+    {
+      "claim_id": "42c48eae-cbdf-438b-9bf9-48462b126c7a",
+      "result_id": "4d7adfde-4f6c-483d-9764-81eb61d15443"
+    },
+    {
+      "claim_id": "b01434a9-ce69-46ae-9927-f535fcaf771c",
+      "result_id": "cf23a2c3-62d3-449f-b579-c9be34adc1ce"
+    },
+    {
+      "claim_id": "14bdbbcb-5027-4438-8672-c2b7989e4900",
+      "result_id": "cf23a2c3-62d3-449f-b579-c9be34adc1ce"
+    },
+    {
+      "claim_id": "c701e9bb-6155-47d0-a26b-afbc9f637e65",
+      "result_id": "3ab3894d-3e0b-4b69-9781-4e894ad7ceb8"
+    },
+    {
+      "claim_id": "dae22b7b-1d23-4caa-adc6-f55017d27a66",
+      "result_id": "3ab3894d-3e0b-4b69-9781-4e894ad7ceb8"
+    },
+    {
+      "claim_id": "22972d2b-0d2a-47b5-ac04-24cda023e80a",
+      "result_id": "3ab3894d-3e0b-4b69-9781-4e894ad7ceb8"
+    },
+    {
+      "claim_id": "039108f4-42a5-4c83-adc3-a6f0fb3f605e",
+      "result_id": "3ab3894d-3e0b-4b69-9781-4e894ad7ceb8"
+    },
+    {
+      "claim_id": "c196e3a0-9bf2-48c3-91ea-5b6c4bf44ff5",
+      "result_id": "3ab3894d-3e0b-4b69-9781-4e894ad7ceb8"
+    },
+    {
+      "claim_id": "eb0252e5-695d-44b9-9b8b-b591a68a9559",
+      "result_id": "d341b047-638c-4245-be1e-f7668cbdcd6b"
+    },
+    {
+      "claim_id": "fc886711-19f4-4222-9a5f-867da5118fcc",
+      "result_id": "d341b047-638c-4245-be1e-f7668cbdcd6b"
+    },
+    {
+      "claim_id": "ab3416b7-74c5-4e7e-8b30-74ea3036c0fe",
+      "result_id": "d341b047-638c-4245-be1e-f7668cbdcd6b"
+    },
+    {
+      "claim_id": "925904ca-dca9-4eb4-8e70-eb089cd7bd5f",
+      "result_id": "d341b047-638c-4245-be1e-f7668cbdcd6b"
+    },
+    {
+      "claim_id": "3a6523a7-a42d-41cd-b601-e29128744974",
+      "result_id": "d341b047-638c-4245-be1e-f7668cbdcd6b"
+    },
+    {
+      "claim_id": "aeea2cb2-51c9-4738-addd-b914d844fc28",
+      "result_id": "26ab4822-ef44-4979-ab37-f1639ccac5f0"
+    },
+    {
+      "claim_id": "bb91ba17-ed24-4229-a6db-e1dab1e295c2",
+      "result_id": "26ab4822-ef44-4979-ab37-f1639ccac5f0"
+    },
+    {
+      "claim_id": "97f3e6aa-8ec5-4655-9fb6-d1de003461bc",
+      "result_id": "26ab4822-ef44-4979-ab37-f1639ccac5f0"
+    },
+    {
+      "claim_id": "7c6fd716-45f8-4c95-a685-fab5825e1d8b",
+      "result_id": "26ab4822-ef44-4979-ab37-f1639ccac5f0"
+    },
+    {
+      "claim_id": "b276b2bc-3981-4cfb-82c1-48630f9ab9f2",
+      "result_id": "f74c4ef7-67a1-4ff6-9ff2-4219b9df52e9"
+    },
+    {
+      "claim_id": "debe1334-315d-481c-9ab8-3860488eb688",
+      "result_id": "f74c4ef7-67a1-4ff6-9ff2-4219b9df52e9"
+    },
+    {
+      "claim_id": "8cb6cccf-e119-43a2-a354-c45f8cc175cb",
+      "result_id": "f74c4ef7-67a1-4ff6-9ff2-4219b9df52e9"
+    },
+    {
+      "claim_id": "58af609e-6532-40fa-9d82-a4ac2996a0e4",
+      "result_id": "f74c4ef7-67a1-4ff6-9ff2-4219b9df52e9"
+    },
+    {
+      "claim_id": "ab71c578-46e1-449c-84f6-c21e9ebf2b3c",
+      "result_id": "f74c4ef7-67a1-4ff6-9ff2-4219b9df52e9"
+    },
+    {
+      "claim_id": "4ef3d267-6194-4652-81d5-6ee65a461081",
+      "result_id": "b5088ce6-978d-40be-b74d-384531d835be"
+    },
+    {
+      "claim_id": "504e04a8-18a6-40a0-8e81-e252036e9709",
+      "result_id": "b5088ce6-978d-40be-b74d-384531d835be"
+    },
+    {
+      "claim_id": "7ff2196f-0278-49bd-90c3-6666b169ca7d",
+      "result_id": "b5088ce6-978d-40be-b74d-384531d835be"
+    },
+    {
+      "claim_id": "d9d7eaaf-417d-4c83-a0b7-cf67ae5792fb",
+      "result_id": "971d1aab-c084-4da7-874b-1b30c9edf1fb"
+    },
+    {
+      "claim_id": "7f0a522d-2f5f-41fc-9ff0-97bc73b3ea9f",
+      "result_id": "971d1aab-c084-4da7-874b-1b30c9edf1fb"
+    },
+    {
+      "claim_id": "62d4fe84-6634-43f7-a2c0-40c448975258",
+      "result_id": "971d1aab-c084-4da7-874b-1b30c9edf1fb"
+    },
+    {
+      "claim_id": "3cc88f14-c0ec-460e-afce-452a2da0ac6e",
+      "result_id": "971d1aab-c084-4da7-874b-1b30c9edf1fb"
+    },
+    {
+      "claim_id": "804b69ca-f3be-4baf-b489-e9d740c5c493",
+      "result_id": "971d1aab-c084-4da7-874b-1b30c9edf1fb"
+    },
+    {
+      "claim_id": "1ad2b398-3778-4062-bbf3-7ac4b3f0839a",
+      "result_id": "971d1aab-c084-4da7-874b-1b30c9edf1fb"
+    },
+    {
+      "claim_id": "419d719f-e773-4854-91a5-b81c2b3cd1e2",
+      "result_id": "971d1aab-c084-4da7-874b-1b30c9edf1fb"
+    },
+    {
+      "claim_id": "9803b55e-0d1a-42e4-a49a-98e658c7a870",
+      "result_id": "971d1aab-c084-4da7-874b-1b30c9edf1fb"
+    },
+    {
+      "claim_id": "d5310c9a-33bc-4623-a721-ac402057f966",
+      "result_id": "0c265360-c1c3-411b-9aed-5625b43e2b79"
+    },
+    {
+      "claim_id": "28360648-b82f-4f54-b569-14d47e533465",
+      "result_id": "0c265360-c1c3-411b-9aed-5625b43e2b79"
+    },
+    {
+      "claim_id": "14e1a584-fbbb-4875-b485-7dc9bdbf7b2e",
+      "result_id": "0c265360-c1c3-411b-9aed-5625b43e2b79"
+    },
+    {
+      "claim_id": "dca98a16-116c-4a18-9b2f-2f3a0cf67337",
+      "result_id": "0c265360-c1c3-411b-9aed-5625b43e2b79"
+    },
+    {
+      "claim_id": "a7248292-e440-4872-9201-1a09713c5d0f",
+      "result_id": "0c265360-c1c3-411b-9aed-5625b43e2b79"
+    },
+    {
+      "claim_id": "11ea911b-4480-48db-bc10-d131b0de6ebd",
+      "result_id": "e9e61c9a-26e2-4096-83dd-bb2aabe8957b"
+    },
+    {
+      "claim_id": "38d562e6-b45c-49e5-a28e-757104232d8a",
+      "result_id": "f58195e0-4d6a-43fe-94a4-254a0271e09c"
+    },
+    {
+      "claim_id": "2da787fc-0eb2-46bf-b87f-5da3298f2ebc",
+      "result_id": "f58195e0-4d6a-43fe-94a4-254a0271e09c"
+    },
+    {
+      "claim_id": "ec35fecf-878d-45ac-a8b0-665d7b2a1683",
+      "result_id": "f58195e0-4d6a-43fe-94a4-254a0271e09c"
+    },
+    {
+      "claim_id": "5be38252-bfc7-4957-ac75-f7685f5c8fb7",
+      "result_id": "48f534bb-b1b2-4a96-9c8e-33decea4fe34"
+    },
+    {
+      "claim_id": "358f4556-966b-49ea-9eba-ea952ff7fecb",
+      "result_id": "48f534bb-b1b2-4a96-9c8e-33decea4fe34"
+    },
+    {
+      "claim_id": "ea66772e-c75e-4ee9-9863-1c0ed712797a",
+      "result_id": "0727f5be-5158-4578-9f42-ba38928980a4"
+    },
+    {
+      "claim_id": "57d5eb38-b996-40ef-9939-5a2d2a2af3c7",
+      "result_id": "0727f5be-5158-4578-9f42-ba38928980a4"
+    },
+    {
+      "claim_id": "f59efa12-df26-4e01-ab07-34632d11b46d",
+      "result_id": "0727f5be-5158-4578-9f42-ba38928980a4"
+    },
+    {
+      "claim_id": "a85bce28-36bf-45cb-a179-a3227c4649bb",
+      "result_id": "0727f5be-5158-4578-9f42-ba38928980a4"
+    },
+    {
+      "claim_id": "6d05eb5c-7693-4d64-baf9-70de8284b177",
+      "result_id": "0727f5be-5158-4578-9f42-ba38928980a4"
+    },
+    {
+      "claim_id": "e58ac9a8-a1b3-49de-86ad-98c10c88fe6f",
+      "result_id": "0727f5be-5158-4578-9f42-ba38928980a4"
+    },
+    {
+      "claim_id": "04a4796e-cbc6-44a6-9b7c-ccce574d49a6",
+      "result_id": "0727f5be-5158-4578-9f42-ba38928980a4"
+    },
+    {
+      "claim_id": "2ab1f1ad-4809-44ff-b5fd-62b52994ebd4",
+      "result_id": "0727f5be-5158-4578-9f42-ba38928980a4"
+    },
+    {
+      "claim_id": "27612ec8-d6f6-41ae-ab59-440f2ba8fd08",
+      "result_id": "0727f5be-5158-4578-9f42-ba38928980a4"
+    },
+    {
+      "claim_id": "3cc309ad-2278-4cd8-b471-a66c4c22a517",
+      "result_id": "0727f5be-5158-4578-9f42-ba38928980a4"
+    },
+    {
+      "claim_id": "ca5b51f9-e282-4157-aedf-066dc6ccc9e3",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "178105eb-5533-4ad2-9df5-63c5d7344783",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "0baceb51-6cc5-4f93-89da-4400bf1d99fc",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "9a1d607e-24e0-4d88-a40f-106875b142b6",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "dbee04e6-ff1e-4879-bf79-60dff5cb43de",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "d055c11f-089d-4a68-8f88-d53be023edf5",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "20cd5cb3-d00f-4cfe-82e2-6bb26d081fce",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "4676048a-c1df-4595-93f2-2f465bcb16f1",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "fb9ed8e4-40bf-42e9-ac34-800d55aadf1d",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "119f6e5d-1c1c-4b26-80a3-ac48684435d0",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "9edbe4ad-da30-48ff-92ab-f8a2613d1d80",
+      "result_id": "50c6e4ac-e9a0-48a9-b13f-5573ab835221"
+    },
+    {
+      "claim_id": "486ef8c2-ac19-40e7-9c79-8d2bf9f9f542",
+      "result_id": "06a068aa-c724-43ea-9c4a-e35e9d25ed11"
+    },
+    {
+      "claim_id": "ceda706b-c6f2-4c3b-823a-13f4cdede8d0",
+      "result_id": "06a068aa-c724-43ea-9c4a-e35e9d25ed11"
+    },
+    {
+      "claim_id": "cbf8980d-fbfe-4f9a-ac37-701b2bf3f354",
+      "result_id": "06a068aa-c724-43ea-9c4a-e35e9d25ed11"
+    }
+  ],
+  "comparisons": []
+}

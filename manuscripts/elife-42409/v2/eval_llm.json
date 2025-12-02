@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C31"
+    ],
+    "result": "Rats were successfully trained on an audiomotor frequency recognition go/no-go task with high behavioral performance (88\u00b17% hit rates, 7\u00b15% false alarm rates) using 100 ms pure tone stimuli at 70 dB SPL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C31 provide comprehensive description of the behavioral task and demonstrate successful training with quantitative performance metrics. The behavioral data shows clear discrimination between target and non-target tones with high d' values, establishing the foundation for subsequent neural recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24"
+    ],
+    "result": "Both auditory cortex (AC) and frontal cortical area 2 (FR2) are necessary for successful task performance, as demonstrated by pharmacological inactivation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C24 demonstrate that bilateral muscimol inactivation of either AC (p=0.03) or FR2 (p=0.009) significantly impairs task performance without affecting general motor function. The statistical significance and appropriate controls support the necessity of both regions for this behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C32"
+    ],
+    "result": "Approximately 60% of recorded neurons in both AC and FR2 were non-classically responsive, showing neither tone modulation nor ramping activity, consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C32 report that 64/103 AC cells and 43/74 FR2 cells were non-classically responsive using rigorous statistical criteria (p<0.05, bootstrapping). The fraction observed is consistent with prior literature, strengthening the validity of this classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C33"
+    ],
+    "result": "ISI distributions and trial-averaged firing rates capture different spike train statistics, with ISI distributions potentially varying between task conditions even without changes in firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C33 are supported by model neurons demonstrating dissociation between ISI distributions and firing rates, and by citations to prior work. This theoretical foundation justifies the ISI-based decoding approach and distinguishes it from rate-based methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C10",
+      "C11"
+    ],
+    "result": "Non-classically responsive cells in both AC and FR2 contain significant spike-timing-based information about task variables, with decoding performance comparable to classically responsive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C10, and C11 demonstrate that non-classically responsive cells encode task information as effectively as classically responsive cells (AC choice: p=0.32; FR2 stimulus: p=0.29). This is a major finding revealing hidden information in neurons previously considered uninformative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "FR2 neurons encode stimulus category more accurately than AC neurons (p=0.0013), while AC neurons encode choice more accurately than stimulus category (p=0.016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 report statistically significant differences in information content between regions and task variables using appropriate non-parametric tests. This surprising finding challenges traditional views of sensory versus frontal cortex function and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The ISI-based decoder outperforms conventional rate-based decoders and captures distinct information, as evidenced by superior performance and weak correlations between methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C13 provide direct statistical comparisons showing ISI-based decoding superiority (AC stimulus: p=0.0001; FR2 stimulus: p=8\u00d710\u207b\u2076) and low Matthews correlation coefficients (medians 0.06-0.11) indicating the methods capture different information. This validates the novel approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Observed ISI distributions are better modeled by non-parametric kernel density estimation than by rate-modulated Poisson processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 demonstrate through log-likelihood comparisons that KDE provides superior fits (AC: p=1.1\u00d710\u207b\u00b9\u2075; FR2: p=1.2\u00d710\u207b\u00b9\u2076). This justifies the non-parametric approach and shows that neural firing patterns deviate from simple Poisson assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "The ISI-based decoding algorithm successfully generalizes to an independent dataset, revealing that non-classically responsive cells encode selection rule information more effectively than classically responsive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 demonstrates generalizability by applying the algorithm to the Rodgers and DeWeese dataset with highly significant results (AC: p=5\u00d710\u207b\u2076; PFC: p<0.0002). This external validation strengthens confidence in the method's broad applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "Ensemble decoding with 2-8 neurons significantly improves performance for both task variables in FR2 and stimulus decoding in AC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 shows statistically significant improvements with ensemble size (FR2 stimulus: p=1\u00d710\u207b\u2075; FR2 choice: p=7\u00d710\u207b\u2075; AC stimulus: p=0.04). The lack of improvement for AC choice (p=0.29) suggests regional differences in information representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Neural ensembles predict behavioral errors on single trials, with AC ensembles performing better than FR2, and performance improving with more non-classically responsive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 demonstrate error prediction capability with significant regional differences (3-member: p=1.2\u00d710\u207b\u2075; 4-member: p=0.03) and improvement with non-classically responsive cell number (AC: p=0.013; FR2: p=0.046). This reveals functional significance of non-classically responsive neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Non-classically responsive ensembles exhibit temporally precise consensus-building dynamics on correct trials that are absent on error trials, with distinct patterns for stimulus and choice encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 demonstrate statistically significant consensus dynamics on correct trials (stimulus: p=3.9\u00d710\u207b\u2074; choice: p=2.0\u00d710\u207b\u2075) that differ from error trials (stimulus: p=0.007; choice: p=0.0048). This reveals coordinated ensemble activity invisible in trial-averaged responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Non-classically responsive ensembles in AC and FR2 show shared unsigned consensus patterns that increase during correct trials but not error trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 demonstrate unsigned consensus increases on correct trials (stimulus: p=1.7\u00d710\u207b\u2075; response: p=0.0011) that are absent on error trials (p=1.9\u00d710\u207b\u2079). This suggests coordinated ISI partitioning across regions is critical for successful behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Achieving shared ISI representation through ensemble consensus is relevant for successful task execution, with behavioral errors potentially resulting from lack of consensus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide a coherent interpretation of the consensus dynamics data, showing that non-classically responsive cells encode information collectively through synchronized representations. The differential dynamics on correct versus error trials support this functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Individual neurons are multiplexed, simultaneously encoding information about both stimulus category and behavioral choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by decoding analysis and validated by regression-based multiplexing analysis (Figure 4\u2014figure supplement 4). The multiplexing is not simply due to task variable correlation, as demonstrated by the independent regression analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Stimulus decoding performance is independent of receptive field properties including best frequency and tuning curve bandwidth in AC neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by analysis showing no significant relationship between decoding performance and receptive field properties (Figure 4\u2014figure supplement 3). This suggests ISI-based information is distinct from classical frequency tuning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C48"
+    ],
+    "result": "Short-term synaptic plasticity and synaptic integration provide biologically plausible mechanisms for ISI-based coding, as demonstrated by whole-cell recordings showing differential responses to identical input patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, and C48 are supported by whole-cell recordings from AC and FR2 showing that different cells respond differently to identical input patterns with similar rates but different spike timings. This provides experimental evidence for biological plausibility of the ISI-based coding scheme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "ISI-based decoding requires few assumptions about implementation and could be generally applicable across brain areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by the successful application of the method to both AC and FR2, as well as to an independent dataset. The minimal assumptions and model-free approach support the claim of general applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Task information is distributed across AC and FR2 in a manner that blurs traditional modular views, with FR2 critical for sensory-motor associations and showing more homogeneous stimulus encoding than AC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 provide interpretations well-supported by the data showing distributed multiplexed representations, superior stimulus encoding in FR2, and differential ensemble encoding patterns. These interpretations are logical extensions of the empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Potential mechanisms for ISI-based coding include cholinergic neuromodulation, coordinated plasticity during learning, spike-timing-dependent plasticity, and downstream resonator neurons attuned to consensus ISIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C46 are speculative hypotheses about mechanisms, supported by citations to relevant literature but not directly tested in this study. While plausible and well-reasoned, these remain hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background knowledge claims about neural response properties, non-classically responsive neurons, and cortical function are consistent with established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C49-C57 represent background knowledge supported by appropriate citations to established literature. These provide context for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  }
+]

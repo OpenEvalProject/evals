@@ -1,0 +1,1283 @@
+{
+  "submission": {
+    "id": "42ef5014-de6a-428c-8d18-b3beb65e9bd6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:50:34.893055Z",
+    "updated_at": "2025-12-02T10:50:34.893055Z"
+  },
+  "content": [
+    {
+      "id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "submission_id": "42ef5014-de6a-428c-8d18-b3beb65e9bd6",
+      "content_type": "manuscript",
+      "content_text": "# Metabolic constraints drive self-organization of specialized cell groups\n\n## Authors\n\n- Sriram Varahan<sup>1</sup> ([ORCID: 0000-0002-3609-4032](https://orcid.org/0000-0002-3609-4032))\n- Adhish Walvekar<sup>1</sup> ([ORCID: 0000-0001-7344-7653](https://orcid.org/0000-0001-7344-7653))\n- Vaibhhav Sinha<sup>2</sup> ([ORCID: 0000-0002-5169-5485](https://orcid.org/0000-0002-5169-5485))\n- Sandeep Krishna<sup>2</sup> ([ORCID: 0000-0002-0581-173X](https://orcid.org/0000-0002-0581-173X))\n- Sunil Laxman<sup>1</sup> ([ORCID: 0000-0002-0861-5080](https://orcid.org/0000-0002-0861-5080)) \u2020\n\n### Affiliations\n\n1. InStem - Institute for Stem Cell Science and Regenerative Medicine Bangalore India\n2. Simons Centre for the Study of Living Machines National Centre for Biological Sciences-Tata Institute of Fundamental Research Bangalore India\n3. Manipal Academy of Higher Education Manipal India\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow phenotypically distinct states in isogenic cell populations appear and stably co-exist remains unresolved. We find that within a mature, clonal yeast colony developing in low glucose, cells arrange into metabolically disparate cell groups. Using this system, we model and experimentally identify metabolic constraints sufficient to drive such self-assembly. Beginning in a uniformly gluconeogenic state, cells exhibiting a contrary, high pentose phosphate pathway activity state, spontaneously appear and proliferate, in a spatially constrained manner. Gluconeogenic cells in the colony produce and provide a resource, which we identify as trehalose. Above threshold concentrations of external trehalose, cells switch to the new metabolic state and proliferate. A self-organized system establishes, where cells in this new state are sustained by trehalose consumption, which thereby restrains other cells in the trehalose producing, gluconeogenic state. Our work suggests simple physico-chemical principles that determine how isogenic cells spontaneously self-organize into structured assemblies in complimentary, specialized states.\n\n## Introduction\n\nDuring the course of development, groups of isogenic cells often form spatially organized, interdependent communities. The emergence of such phenotypically heterogeneous, spatially constrained sub-populations of cells is considered a requisite first step towards multicellularity. Here, clonal cells proliferate and differentiate into phenotypically distinct cells that stably coexist, and organize spatially with distinct patterns and shapes (Newman, 2016; Niklas, 2014). Through such collective behavior, groups of cells can maintain orientation, stay together, and specialize in different tasks through the division of labor, while remaining organized with intricate spatial arrangements (Ackermann, 2015; Newman, 2016). In both eukaryotic and prokaryotic microbes, such organization into structured, isogenic but phenotypically heterogeneous communities, is widely prevalent, and also reversible (Ackermann, 2015). Such phenotypic heterogeneity within groups of clonal cells enables several microbes to persist in fluctuating environments, thereby providing an adaptive benefit for the cell community (Wolf et al., 2005; Thattai and van Oudenaarden, 2004).\n\nA well studied example of spatially organized, phenotypically heterogeneous groups of cells comes from the Dictyostelid social amoeba, which upon starvation transition from individual protists to collective cellular aggregates that go on to form slime-molds, or fruiting bodies (Bonner, 1949; Du et al., 2015; Kaiser, 1986). Indeed, most microbes show some such complex, heterogeneous cell behavior, for example in the extensive spatial organization within clonal bacterial biofilms and swarms (Kearns et al., 2004; Kolter, 2007), or in the individuality exhibited in Escherichia coli populations (Spudich and Koshland, 1976). Despite its popular perception as a unicellular microbe, natural isolates of the budding yeast, Saccharomyces cerevisiae, also form phenotypically heterogeneous, multicellular communities (C\u00e1p et al., 2012; Koschwanez et al., 2011; Palkov\u00e1 and V\u00e1chov\u00e1, 2016; Ratcliff et al., 2012; V\u00e1chov\u00e1 and Palkov\u00e1, 2018; Veelders et al., 2010; Wloch-Salamon et al., 2017). However, despite striking descriptions on the nature and development of phenotypically heterogeneous states within groups of cells, the rules governing the emergence and maintenance of new phenotypic states within isogenic cell populations remain unclear.\n\nCurrent studies emphasize genetic and epigenetic changes that are required to maintain phenotypic heterogeneity within a cell population (Ackermann, 2015; Sneppen et al., 2015). In particular, many studies emphasize stochastic gene expression changes that can drive phenotypic heterogeneity (S\u00fcel et al., 2007; Ackermann, 2015; Bal\u00e1zsi et al., 2011; Blake et al., 2003). Further, groups of cells can produce adhesion molecules to bring themselves together (Halfmann et al., 2012; Halme et al., 2004; Octavio et al., 2009; V\u00e1chov\u00e1 and Palkov\u00e1, 2018), or support possible co-dependencies (such as commensal or mutual dependencies on shared resources) within the populations (Ackermann, 2015). Such studies now provide insight into why such heterogeneous cell groups might exist, and what the evolutionary benefits might be. However, an underlying biochemical logic to explain how distinct, specialized cell states can emerge and persist in the first place is largely absent. This is particularly so for isogenic (and therefore putatively identical) groups of cells in seemingly uniform environments. In essence, are there simple chemical or physical constraints, derived from existing biochemical rules and limitations, that explain the emergence and maintenance of heterogeneous phenotypic states of groups of clonal cells in space and over time?\n\nContrastingly, a common theme occurs in nearly all described examples of phenotypically heterogeneous, isogenic groups of cells. This is a requirement of some \u2018metabolic stress\u2019 or nutrient limitation that is necessary for the emergence of phenotypic heterogeneity and spatial organization, typically in the form of metabolically inter-dependent cells (Ackermann, 2015; Campbell et al., 2016; C\u00e1p et al., 2012; Johnson et al., 2012; Liu et al., 2015). This idea has been explored experimentally, where approaches that systems-engineer metabolic dependencies between non-isogenic cells can result in interdependent populations that constitute mixed communities (Campbell et al., 2016; Campbell et al., 2015; Embree et al., 2015; Wintermute and Silver, 2010). These findings suggest that biochemical constraints derived from metabolism may determine the nature of phenotypic heterogeneity, and the spatial organization of cells in distinct states within the population. Therefore, if we can understand what these biochemical constraints are, and discern how metabolic states can be altered through these constraints, this may address how genetically identical cells can self-organize into distinct states.\n\nIn this study, using clonal yeast cells, we experimentally and theoretically show how metabolic constraints imposed on a population of isogenic cells can determine the production, accumulation, and utilization of a specific, shared resource. The selective utilization of this resource enables the spontaneous emergence and persistence of cells exhibiting a counter-intuitive metabolic state, with spatial organization. These metabolic constraints create inherent threshold effects, enabling some cells to switch to new metabolic states, while restraining other cells to the original state which produces the resource. This thereby drives the overall self-organization of cells into specialized, spatially ordered communities. Finally, this group of spatially organized, metabolically distinct cells confer a collective growth advantage to the community of cells, rationalizing why such spatial self-organization of cells into distinct metabolic states benefits the cell community.\n\n## Results\n\n### Cells within S. cerevisiae colonies exhibit ordered metabolic specialization\n\nUsing a well-studied S. cerevisiae isolate as a model (Reynolds and Fink, 2001), we established a simple system to study the formation of a clonal colony with irregular morphology. On 2% agar plates containing a complex rich medium with low glucose concentrations, S. cerevisiae forms rugose colonies with distinct architecture, after\u00a0~5\u20136 days (Figure 1A). Such colonies do not form in the typical, high (1\u20132%) glucose medium used for yeast growth (Figure 1A). Thus, as previously well established (Granek and Magwene, 2010; Reynolds and Fink, 2001), glucose limitation (with other nutrients such as amino acids being non-limiting) drives this complex colony architecture formation. Currently, the description of such colonies is limited to this external rugose morphology, and does not describe the phenotypic states of cells and/or any spatial organization in the colony. With only such a description, as observed in Figure 1A, the mature colony surface has an internal circle and some radial streaks near the periphery. We carried out a more detailed observation of entire colonies under a microscopic bright-field (using a 4x lens). Here, we unexpectedly noticed what appeared to be distinct internal patterning, and apparent spatial organization of cells within the colony (Figure 1B). As categorized purely based on these observed differences in visual optical density (\u2018dark\u2019 or \u2018light\u2019), regions between the colony center and periphery had optically dense (dark) networks spanning the circumference of the colony, interspersed with optically rare regions. In contrast, the periphery of the mature colony appeared entirely light (Figure 1B). Based simply on these optical traits alone, we categorized cells present in these regions of the colony as dark cells and light cells (Figure 1B). At this point, our description is visual and qualitative, and does not imply any other difference in the cells in either region. However, this visual description is both robust and simple, and hence we use this nomenclature for the remainder of this manuscript.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig1-v3.jpg)\n\n**Figure 1.:** (A) Low glucose is required for rugose colonies to develop. The panel shows the morphology of mature yeast colonies in rich medium, with supplemented glucose as the sole variable. Scale bar: 2 mm. (B) Reconstructed bright-field images of a mature wild-type colony. Within the colony, a network of dark and bright regions is clearly visible, as classified based purely on optical density. We classify the cells in the dark region as dark cells, and in the peripheral light region as light cells. Scale bar: 2 mm. (C) Spatial distribution of mCherry fluorescence across a colony, indicating the activity of (i) a reporter for hexokinase (HXK1) activity, or (ii) a gluconeogenesis dependent reporter (PCK1), in two different colonies. The percentage of fluorescent cells (in isolated light and dark cells from the respective colonies) were also estimated by flow cytometry, and is shown as bar graphs. Scale bar: 2 mm. Also see Figure 1\u2014figure supplement 1A\u2013B and Figure 1\u2014figure supplement 2A for more information. (D) Western blot based detection of proteins involved in gluconeogenesis (Fbp1p and Pck1p), or associated with increased gluconeogenic activity (Icl1p), in isolated dark or light cells. The blot is representative of three biological replicates (n\u00a0=\u00a03). Also see Figure 1\u2014figure supplement 2B for more information. (E) Comparative steady-state amounts of trehalose and glycogen (as gluconeogenesis end point metabolites), in light and dark cells (n\u00a0=\u00a03). Statistical significance was calculated using unpaired t test (*** indicates p<0.001) and error bars represent standard deviation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Western blot based detection of proteins involved in gluconeogenesis (Fbp1p and Pck1p), from cells grown in high (2%) and low (0.1%) conditions. The blot is representative of three biological replicates (n\u00a0=\u00a03). Quantification of the band intensities were done using ImageJ and the intensity values were normalized to the protein loading controls. (B) Plasmid maps of the different reporters used in this study. Gene cassette containing the specific promoter and mCherry was cloned into the p417 centromeric plasmid using the SacI and EcoRI restriction sites. (C) Scatter plot depicting distribution of mCherry positive light cells isolated from wild-type colonies with the gluconeogenesis or HXK1 reporter. Density plot of mCherry positive light cells in the HXK1 reporter is shown. SSC-A represents side scatter measurement and NF represents non-fluorescent population.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Whole colony fluorescence image of wildtype colony with the gluconeogenesis reporter. Heat map histogram analysis of the fluorescent intensity of the same colony was done using ImageJ. Values represent pixel intensities.B) Quantification of the Fbp1, Pck1 and Icl1 protein levels from light and dark cells (Figure 1D). Quantification of the western blot band intensities were done using ImageJ and the intensity values were normalized to the protein loading controls. Statistical significance was calculated using unpaired t test (*** indicates p<0.001) and error bars represent standard deviation.\n\nSince these structured colonies form only in glucose-limited conditions, we hypothesized that dissecting the expected metabolic requirements during glucose limitation might reveal drivers of this internal organization within the colony. The expected metabolic requirements of cells growing in glucose limited conditions are as follows: first, all cells would be expected to have constitutively high expression of the high-affinity hexokinase (Hxk1p) (Lobo and Maitra, 1977; Rodr\u00edguez et al., 2001). Further, during glucose-limited growth, all cells are expected to carry out extensive gluconeogenesis, as the default metabolic state (Broach, 2012; Haarasilta and Oura, 1975; Yin et al., 2000). Indeed, we confirmed this second expectation by measuring the amounts of the gluconeogenic enzymes Pck1 (phosphoenolpyruvate carboxykinase) and Fbp1 (fructose-1,6-bisphosphatase), in short-term (4\u20135 hr) liquid cultures of log-phase cells growing in either high glucose medium, or in the same glucose-limited medium we used for colony growth. Expectedly, we observed very high amounts of these gluconeogenic enzymes in cells growing in glucose-limited medium (Figure 1\u2014figure supplement 1A), reiterating that even in well-mixed glucose-limited, cells are in a strongly gluconeogenic state. In order to now examine the mature colony and dissecting expected metabolic requirements in these conditions, we first designed visual indicators for these metabolic hallmarks of yeast cell growth in low glucose. We engineered two different fluorescent reporters, one dependent on HXK1 expression (mCherry under the HXK1 gene promoter), and the second on PCK1 expression as an indicator of gluconeogenic activity (mCherry under the PCK1 gene promoter) (Figure 1\u2014figure supplement 1B). Cells carrying these reporters were seeded to develop into colonies, and the expression levels of these reporters were monitored in the mature, rugose colony (5\u20136 days). Expectedly, the HXK1-promoter dependent reporter showed constitutive, high expression in all cells across the entire colony (Figure 1C). Contrastingly, only the dark cells exhibited high gluconeogenesis reporter activity (Figure 1C). Notably, the light cells entirely lacked detectable gluconeogenic reporter activity (Figure 1C). To better quantify this phenomenon, cells were dissected out from dark or light regions respectively (under the light microscope, using a fine needle), and the percentage of fluorescent cells in each region was measured using flow cytometry. Based on flow cytometric readouts,~80% of the isolated dark cells showed strong fluorescence for the gluconeogenic reporter, while\u00a0~97% of the light cells were non-fluorescent for gluconeogenic activity (Figure 1C, Figure 1\u2014figure supplement 1C). This spatial distribution of gluconeogenic activity is shown as a quantitative heat-map histogram overlaid on the entire colony, in Figure 1\u2014figure supplement 2A. Since this observation was based solely on reporter activity, in order to more directly examine this observation, we estimated native protein amounts of enzymes associated with gluconeogenesis (Pck1, Fbp1, and Icl1- Isocitrate lyase from the glyoxylate shunt) in isolated light cells and dark cells. Only the dark cells showed expression of the gluconeogenic enzymes (Figure 1D, Figure 1\u2014figure supplement 2B). Finally, we measured steady-state amounts of trehalose and glycogen within dark and light cells, using these metabolites as unambiguous biochemical readouts of the end-point biochemical outputs of gluconeogenesis (Fran\u00e7ois et al., 1991). We observed that the dark cells had substantially higher amounts of both trehalose and glycogen (Figure 1E), indicating greater gluconeogenic activity in these cells. Collectively, these results strikingly reveal that intracellular gluconeogenic activity is spatially restricted to specific regions, resulting in a distinct pattern of metabolically specialized zones within the colony.\n\n### Cells organize into spatially restricted, contrary metabolic states within the colony\n\nIn the given nutrient conditions of low glucose, gluconeogenesis is an expected, constitutive metabolic process, essential for cells. This can therefore be considered as a necessary, permitted metabolic state in this condition. Paradoxically, in these mature colonies, gluconeogenic activity was spatially restricted to only within the dark cell region, with no discernible gluconeogenic activity in the cells located in the light region. This absence of gluconeogenic activity in these light cells, while concomitant with a constitutively high level of hexokinase activity, therefore poses a biochemical paradox. What might the metabolic state of these light cells be? To quickly address this using a crude but useful readout, we compared the ability of freshly isolated light and dark cells to proliferate in both gluconeogenic (low glucose), and non-gluconeogenic (high glucose) growth conditions. For simplicity, isolated light cells and dark cells were inoculated either into a medium where gluconeogenesis is essential (2% ethanol\u00a0+glycerol as a sole carbon source), or in high (2%) glucose medium where cells rely on high glycolytic and pentose phosphate pathway (PPP) activity, and initial cell proliferation was monitored. Here, cells that had been growing in high glucose were used as a control. Expectedly, the dark cells grew robustly and reached significantly higher cell numbers (0D600) compared to the light cells in the gluconeogenic condition (Figure 2A). Conversely, light cells grew robustly when transferred to the high glucose medium, as compared to the dark cells (Figure 2A). While this was an overly simple, and not definitive experiment, counter-intuitively, this result suggested that despite being in a low-glucose environment, the light cells were well suited for growth in high glucose, and therefore might be in a metabolic state suited for growth in glucose. We therefore decided to more systematically investigate this phenomenon.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig2-v3.jpg)\n\n**Figure 2.:** (A) Comparative immediate growth of isolated light cells and dark cells, transferred to a \u2018gluconeogenic medium\u2019 (2% ethanol as carbon source), or a \u2018glycolytic medium\u2019 (2% glucose as carbon source), based on increased absorbance (OD600) in culture.\u00a0Wild-type cells growing in liquid medium (2% glucose) in log phase (i.e. in a glycolytic state) were used as controls for growth comparison (n\u00a0=\u00a03). (B) A schematic showing metabolic flow in glycolysis and the pentose phosphate pathway (PPP), and also illustrating the synthesis of nucleotides (dependent upon pentose phosphate pathway). TKL1 controls an important step in the PPP, and is strongly induced during high PPP flux. (C) Spatial distribution of mCherry fluorescence across a colony, based on the activity of a PPP- dependent reporter. Scale bar: 2 mm. Also see Figure 1\u2014figure supplement 1A and Figure 2\u2014figure supplement 1A. (D) LC-MS/MS based metabolite analysis, using exogenously added 13C Glucose, to compare flux of 13C Glucose into the PPP metabolite ribulose-5-phosphate (R-5-P), in light and dark cells. The red circles represent 13C labeled carbon atoms (n\u00a0=\u00a03). Also see Figure 2\u2014figure supplement 1B. (E) Comparative metabolic-flux based analysis comparing 15N incorporation into newly synthesized nucleotides, in dark and light cells. Also see S2, and Materials and methods. (F) Light cells and dark cells isolated from a 7 day old wild-type complex colony re-form indistinguishable mature colonies when re-seeded onto fresh agar plates, and allowed to develop for 7 days. Scale bar\u00a0=\u00a02 mm. Statistical significance was calculated using unpaired t test (*** indicates p<0.001, ** indicates p<0.01) and error bars represent standard deviation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Whole colony fluorescence image of wildtype colony with the pentose phosphate pathway (PPP) reporter. Heat map histogram analysis of the fluorescent intensity of the same colony was done using ImageJ. Values represent pixel intensities. (B) LC-MS/MS based metabolite analysis, using exogenously added 13C glucose, to compare flux of 13C glucose into the PPP metabolite sedoheptulose-7-phosphate (S-7-P), in light and dark cells. The red circles represent 13C labeled carbon atoms. Relative label incorporation of 13C labeled carbon atoms in dark cells with respect to light cells were quantified. Statistical significance was calculated using unpaired t tests (*** indicates p<0.001) and error bars represent standard deviation.\n\nIn the presence of glucose, yeast cells typically show high glycolytic and PPP activities, as part of the Crabtree (analogous to the Warburg) effect (Crabtree, 1929; De Deken, 1966;\u00a0Figure 2B). Therefore, if the light cells in the colony were indeed behaving as though present in more glucose-replete conditions, they should exhibit high PPP activity. To test this, we first designed a fluorescent PPP-activity reporter (mCherry under the control of the transketolase 1 (TKL1) (Walfridsson et al., 1995) gene promoter, Figure 1\u2014figure supplement 1B), and monitored reporter activity across the mature colony. Indeed, only the light cells exhibited high PPP-reporter activity (Figure 2C, Figure 2\u2014figure supplement 1A). This spatial restriction of high PPP activity across the colony is also shown as an overlaid quantitative heat-map histogram in Figure 2\u2014figure supplement 1A. Next, we directly addressed the possibility of these light cells exhibiting relatively high PPP activity. For unambiguously testing this, we utilized a stable-isotope based metabolic flux experiment to assess the flux towards PPP in light and dark cells. Light and dark cells isolated from colonies were pulsed with 13C-labeled glucose (for\u00a0~5 min), metabolites extracted, and the incorporation of this carbon label into the late PPP intermediates ribulose-5-phosphate (R-5-P) and sedoheptulose-7-phosphate (S-7-P) was measured by liquid chromatography/mass spectrometry (LC/MS/MS). The relative amounts of these all-carbon labeled PPP intermediates were compared between the two cell types (light or dark). Notably, light cells incorporated significantly higher levels of 13C labeled glucose into PPP metabolites compared to the dark cells (Figure 2D, and Figure 2\u2014figure supplement 1B, and see Table 1 for MS parameters), showing that the light cells are in a high PPP activity state. Finally, we assessed if other biochemical end-point outputs requiring high PPP activity/flux were also high in the light cells. High nucleotide synthesis is a canonical consequence of enhanced PPP activity (Nelson and Cox, 2013). The carbon backbone (ribose-5-phosphate) of newly synthesized nucleotides is derived from the PPP, while the nitrogen backbone comes from amino acids (Nelson and Cox, 2013;\u00a0Figure 2B, and see Table 1 for MS parameters). We devised another metabolic flux-based experiment to assess de novo nucleotide biosynthesis in light and dark cells, as an end-point collective readout of high PPP activity coupled with amino acid utilization. Light and dark cells, isolated from colonies were pulsed with a 15N-label (ammonium sulfate\u00a0+aspartate), and incorporation of this label into nucleotides was measured by liquid chromatography/mass spectrometry (LC/MS/MS). Light cells had higher flux into nucleotide biosynthesis, compared to the dark cells (Figure 2E, and see Table 1 for MS parameters). Taken together, we surprisingly find that light cells exhibit multiple metabolic hallmarks of cells growing in glucose-replete conditions, including increased PPP activity, and increased nucleotide biosynthesis. Thus, in the spatially organized colony, the light cells and dark cells have contrary metabolic states. This is despite the expectation that the gluconeogenic state, exhibited by the dark cells, is the plausible metabolic state in the given growth conditions.\n\n**Table 1.**\n Mass transitions used for LC-MS/MS experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Nucleotides</th>\n      <th>Formula</th>\n      <th>Parent/Product (positive polarity)</th>\n      <th>Comment (for 15N experiment)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AMP</td>\n      <td>C10H14N5O7P</td>\n      <td>348/136</td>\n      <td>Product has all N</td>\n    </tr>\n    <tr>\n      <td>15N_AMP_1</td>\n      <td></td>\n      <td>349/137</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_AMP_2</td>\n      <td></td>\n      <td>350/138</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_AMP_3</td>\n      <td></td>\n      <td>351/139</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_AMP_4</td>\n      <td></td>\n      <td>352/140</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_AMP_5</td>\n      <td></td>\n      <td>353/141</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GMP</td>\n      <td>C10H14N5O8P</td>\n      <td>364/152</td>\n      <td>Product has all N</td>\n    </tr>\n    <tr>\n      <td>15N_GMP_1</td>\n      <td></td>\n      <td>365/153</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_GMP_2</td>\n      <td></td>\n      <td>366/154</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_GMP_3</td>\n      <td></td>\n      <td>367/155</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_GMP_4</td>\n      <td></td>\n      <td>368/156</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_GMP_5</td>\n      <td></td>\n      <td>369/157</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CMP</td>\n      <td>C9H14N3O8P</td>\n      <td>324/112</td>\n      <td>Product has all N</td>\n    </tr>\n    <tr>\n      <td>15N_CMP_1</td>\n      <td></td>\n      <td>325/113</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_CMP_2</td>\n      <td></td>\n      <td>326/114</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_CMP_3</td>\n      <td></td>\n      <td>327/115</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UMP</td>\n      <td>C9H13N2O9P</td>\n      <td>325/113</td>\n      <td>Product has all N</td>\n    </tr>\n    <tr>\n      <td>15N_UMP_1</td>\n      <td></td>\n      <td>326/114</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_UMP_2</td>\n      <td></td>\n      <td>327/115</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Trehalose and sugar phosphates</td>\n      <td>Formula</td>\n      <td>Parent/Product (negative polarity)</td>\n      <td>Comment (for 13C experiment)</td>\n    </tr>\n    <tr>\n      <td>Trehalose</td>\n      <td>C12H22O11</td>\n      <td>341.3/179.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>13C_Trehalose_12</td>\n      <td></td>\n      <td>353.3/185.3</td>\n      <td>Product has 6 C all of which are labeled</td>\n    </tr>\n    <tr>\n      <td>G3P</td>\n      <td>C3H7O6P</td>\n      <td>169/97</td>\n      <td>Monitoring the phosphate release</td>\n    </tr>\n    <tr>\n      <td>13C_G3P_3</td>\n      <td></td>\n      <td>172/97</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>3 PG</td>\n      <td>C3H7O7P</td>\n      <td>185/97</td>\n      <td>Monitoring the phosphate release</td>\n    </tr>\n    <tr>\n      <td>13C_3 PG_3</td>\n      <td></td>\n      <td>188/97</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>G6P</td>\n      <td>C6H13O9P</td>\n      <td>259/97</td>\n      <td>Monitoring the phosphate release</td>\n    </tr>\n    <tr>\n      <td>13C_G6P_6</td>\n      <td></td>\n      <td>265/97</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>6 PG</td>\n      <td>C6H13O10P</td>\n      <td>275/97</td>\n      <td>Monitoring the phosphate release</td>\n    </tr>\n    <tr>\n      <td>13C_6 PG_6</td>\n      <td></td>\n      <td>281/97</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R5P</td>\n      <td>C5H11O8P</td>\n      <td>229/97</td>\n      <td>Monitoring the phosphate release</td>\n    </tr>\n    <tr>\n      <td>13C_R5P_5</td>\n      <td></td>\n      <td>234/97</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>S7P</td>\n      <td>C7H15O10P</td>\n      <td>289/97</td>\n      <td>Monitoring the phosphate release</td>\n    </tr>\n    <tr>\n      <td>13C_S7P_5</td>\n      <td></td>\n      <td>294/97</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nNotably, the light cells or dark cells, when isolated and reseeded as a new colony, both develop into indistinguishable, complex colonies (Figure 2F). This reiterates that these phenotypic differences between the light and dark cells are fully reversible, and do not require genetic changes. Collectively, these data reveal that cells within the colony organize into spatially separated, metabolically specialized regions. Within these regions, cells exhibit complimentary metabolic states. One of these states, where cells have high PPP activity, is counter-intuitive and cannot obviously be sustained given the external nutrient environment.\n\n### A mathematical model suggests constraints for the emergence and organization of cells in complimentary metabolic states\n\nWhat determines the emergence and spatial organization of a group of cells, in these contrary metabolic states? Particularly, what can explain the emergence and proliferation of the light cells, which exhibit this counter-intuitive metabolic state, while the colony maintains a large subset of cells in the dark state? To address this, we built a coarse-grained mathematical model. This model incorporates simple processes derived from our current experimental data, to simulate the formation of a colony of \u2018light\u2019 and \u2018dark\u2019 cells. The model was intentionally coarse-grained, since its purpose was only to find a minimal, biologically consistent combination of processes that is sufficient to produce the overall spatial structure and composition of cell states observed in the colonies. The intention behind the model was not to decipher all possible molecular details that explain this phenomenon. The model should only sufficiently account for both the emergence of light cells, as well as their spatial organization with dark cells. Such a model could therefore suggest constraints that determine the emergence of light cells, and the organization of the colony with the observed organization, which can then be experimentally tested.\n\nWhile building this model, we included a range of processes that must be considered, based on our experimental data thus far (Figure 3A). This includes (i) the dark cells switching to a light state, (ii) the production of some resource by dark cells, which may be shared/utilized by the cells, (iii) diffusion parameters for this resource, (iv) consumption of this resource, and (v) rates of cell division are included (Figure 3A). Next, we constructed a two-dimensional square grid of \u2018locations\u2019 for groups of cells within the colony (Figure 3B). Here, each location is either empty or occupied by a group of\u00a0~100 cells (also see Materials and methods for full details). Note: we intentionally coarse-grain the grid (for computational simplicity, in order to simulate colony sizes comparable to real colonies) by approximating that the locations either consist of all light or all dark cells. This is a major simplification that was necessary. At each time step (12 min of real time), all the processes shown in Figure 3A are executed across the spatial grid using the outlined algorithm (Figure 3C). In such an implemented algorithm, (i) all cells consume all available nutrients (present in saturating amounts), while free glucose concentrations are negligible, (ii) dark cells grow and divide in the given conditions, (iii) dark cells produce a resource/resources as a consequence of their existing metabolic (gluconeogenic) state, (iv) this resource diffuses around the grid and is freely available, (v) dark cells switch to the light state if sufficient resource is present at their location, and lastly, (vi) the resource when consumed can sustain the light state cells, which can expand if there is an empty location in the neighborhood. If the resource is not present in that location the light cells will switch back to dark cells. All processes occur at specified rates, allowing for stochasticity. Finally, this existence of a shared resource is surmised because, logically the emergence of light cells from dark can happen only if the local nutrient environment enables a switch to the new metabolic state.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig3-v3.jpg)\n\n**Figure 3.:** (A) Processes, based on experimental data, incorporated into developing a simple mathematical model to simulate colony development. The dark and light cells are appropriately colored, and the parameters incorporated are resource production (\u03c3), diffusion parameters for the resource (D), consumption of the resource (\u00b5), and fast or slow rates of division (\u03b1 or \u03b3), based on resource or amino acid consumption. (B) The spatial distribution of cells is reduced to a grid like lattice within the model, to allow coarse graining of the location of cells across a colony. The rules for cell division and expansion incorporate the ability to consume existing nutrients in the medium, produce a resource and/or consume a produced resource, and a threshold amount of resource build up before utilization. (C) A flow-chart of the algorithm used in the mathematical model. The decision making process in the algorithm, incorporating all the elements described in panels (A) and (B) is illustrated. Also see Figure 3\u2014figure supplement 1A\u2013C and Materials and methods. (D) A simulation of the development of a wild-type colony, based on the default model developed. The inset shows an image of a real wild-type colony\u00a0(same brightfield image used in Figure 1B), which has developed for an equivalent time (~6 days). Also see Figure 3\u2014figure supplement 1A\u2013C and Video 1. (E) A simulation of colony development using the model, where key parameters have been altered. (i) The sharing of a produced resource is restricted. (ii) The ability to switch from a dark to a light state is restricted. (iii) Light cells produce a resource taken up by dark cells is included. Note that in all three scenarios the colony size remains small, and fairly static. Also see Figure 3\u2014figure supplement 2A\u2013D and Videos 2, 3 and 4.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Changing the diffusion constant (D [L2T\u22121]) of the resource in the medium. The diffusion constant used to simulate the left panel colony is 100 times smaller than the default colony (middle panel). The right panel colony was simulated with a very large effective diffusion constant. To get this fast diffusion, the total available resource was uniformly redistributed over the grid between every two time steps. Thus, every grid location had the same level of resource before the cells consume or produce it, as if the resource diffused very quickly over the grid. (B) Changing the growth rate of the cells. gd and gl are growth rate parameters of the dark and light cells respectively. The light cells grow four times faster than the dark cells in all cases. The middle panel colony is the default colony. gd\u00a0=\u00a00.01. The one on the left has half the growth rate and the one on the right has twice the growth rate in comparison. (C) Changing the resource (R) produced by the dark cells. The light cells consume resource at a fixed rate if available. The middle panel has R\u00a0=\u00a00.07. The left colony simulation has half the produced value and the right colony simulation has double the produced value. All colony simulations were started with 1257 grids (each containing\u00a0~100 cells), of which 99% were dark cells, and were run for 750 time steps.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Since the colony simulations have elements of stochasticity present in the model, presented are a few replicate colonies from independent simulation. These showcase crucial and reproducible aspects of the different conditions explored in Figure 3D and Figure 3E. (A) three wild-type colonies generated with the default parameter set. The common features are a circular centre with mostly light cells, an annular region with dark cells and a few light cells, and the colony periphery with mostly light cells. (B) three replicate colonies with the \u2018no sharing\u2019 condition. The dark cells do not produce any shared resource. The final colonies have mostly dark cells as the number of light cells doesn't change. (C) three replicate colonies with the \u2018no switching\u2019 condition. If there are a few light cells at the periphery, they can consume the shared resource produced by the dark cells and grow into the empty space. However, the centre of the colonies has mostly dark cells. (D) three replicate colonies with the \u2018wrong sharing\u2019 condition (sharing of a resource made by light cells, taken up by dark cells), which are similar to the \u2018no sharing\u2019 condition.\n\nIn each simulation, empty grids are seeded with 1257 occupied locations, with 95\u201399% of the cells in the dark state. After\u00a0~750 time steps (corresponding to\u00a0~6 days) a simulated wild-type colony looks typically as shown in Figure 3D (also see Video 1). A range of resource amounts, growth rates and diffusion of the resource were included in control simulations (see Figure 3\u2014figure supplement 1A\u2013C). Strikingly, the simulated spatial organization (Figure 3D, and Video 1) recapitulates most obvious features of a real colony (Figure 3D). These are: at the edge of the initial circular inoculation of the colony is a ring of dark cells, the outermost part of the colony is made up of outcrops of light cells, and from this ring of dark cells emanate clusters of dark cells penetrating into the outcrops of light cells. This is despite the simplicity of the rules in the model, including its flattening into 2D. In the simulation, for the first 40\u201345 time steps, the colony remains small and predominantly dark, while the resource builds up. Then, dark cells start to switch to light. When this happens within the bulk of the colony, these light cells have restricted division due to spatial constraints. Around 100 to 150 time steps later, light cells emerge at the perimeter of the colony, and then rapidly divide and expand (Figure 3D, Video 1). In order to test if the processes of Figure 3A are all required for this behavior, we examined three comprehensive control scenarios: (i) dark cells do not produce a resource (and therefore in this case for growth light cells depend only on amino acids or other pre-supplied resources in the medium), (ii) dark cells cannot switch to the light state, or (iii) light cells produce a resource that is needed by dark cells to grow (a straw-man scenario, since initially in the actual colony all cells were in a dark state, as shown earlier). None of these cases produces the wild-type spatial organization, over a wide range of parameter values (Figure 3E, as well as a range of parameters explored in Figure 3\u2014figure supplement 2A\u2013D, and simulations in Videos 2\u20134).\n\n![Video 1.](https://cdn.elifesciences.org/articles/46735/elife-46735-video1.mp4.jpg)\n\n**Video 1.:** Simulation video showing the changes in a wild-type model colony. After a small lag, dark cells at the edge start dividing into empty space and due to the threshold switching effect, the center of the colony now has light cells. Cells at the periphery also switch to light cells which divide faster by utilizing resource shared by the dark cells.\n\n![Video 2.](https://cdn.elifesciences.org/articles/46735/elife-46735-video2.mp4.jpg)\n\n**Video 2.:** Simulation video showing changes in a colony where the dark cells don't share any resource for the light cells to consume. The number of light cells doesn't increase and the final colonies predominantly comprise of dark cells.\n\n![Video 3.](https://cdn.elifesciences.org/articles/46735/elife-46735-video3.mp4.jpg)\n\n**Video 3.:** Simulation video showing changes in a colony where the dark cells don't switch to light cells but continue to produce resource on to the resource grid. In certain cases, there can be light cells at the very edge of the starting colony. This is because the composition of the colonies might be the same between simulations, but individual cell block locations are done at random. Such cells at the edge can utilize the shared resource and divide into empty space on the grid.\n\n![Video 4.](https://cdn.elifesciences.org/articles/46735/elife-46735-video4.mp4.jpg)\n\n**Video 4.:** Simulation video showing changes in a colony where the dark cells don't share any resource for the light cells but the light cells provide amino acids for the dark cells to consume (wrong sharing). The dark cells have an abundance of amino acids to grow and divide. The final colonies predominantly comprise of dark cells.\n\nSummarizing, this simple model successfully recaptures the general features of the spatial patterning and organization of real colonies. This includes the overall general architecture, and spatial organization of light and dark cells. Two simple take-home points emerge from this model, for such spatial distribution of cells in these two metabolic states, across the developing colony. First, the model requires that dark (gluconeogenic) cells will produce a resource that is needed by dark cells to switch to the light state. Second, a resource produced by the dark cells is required to sustain the light state. Collectively, in our model, these metabolic constraints are sufficient to determine the overall spatial organization of metabolically distinct, specialized cells.\n\n### Trehalose satisfies criteria to be the metabolic resource determining the emergence of light cells\n\nDoes any gluconeogenic metabolite(s) determine the organization of these cells, consistent with these requirements suggested by experimental and modeled data? Such a metabolite must logically satisfy the following three criteria. First, this resource should be available in the extracellular environment (i.e. released by cells), second, cells must selectively be able to take up this resource, and third, the resource should be metabolized within cells to produce glucose/a glucose-like product capable of fueling a glycolytic and PPP-active state. Further, if this were indeed a \u2018controlling resource\u2019 that determined the emergence of light cells, preventing the uptake and utilization of this resource should prevent the emergence and proliferation of only the light cells, but leave the dark cells unaffected. In order to identify such a candidate metabolite, we considered all possible outputs of gluconeogenesis: the storage carbohydrates/sugars glycogen and trehalose, the polysaccharides of the cell wall (chitin, mannans, glycans), and glycoproteins (Figure 4A) (Jules et al., 2008; Kayikci and Nielsen, 2015). The large molecular size of glycogen, chitins, and complex glycosylated proteins, the lack of known cellular machinery for their uptake, and the difficulty in efficiently breaking them down make them all unlikely candidates to be the resource controlling the emergence of light cells. Contrastingly, trehalose has unique properties making it a plausible candidate. It is a small, non-reducing disaccharide composed of two glucose molecules. Trehalose has been observed in the extracellular environment in yeast (Parrou et al., 2005), and yeast can uptake trehalose through disaccharide transporters (Jules et al., 2008; Stambuk, 1998). Further, trehalose can be rapidly and specifically hydrolyzed to two glucose molecules, which can fuel glycolysis and re-entry into the cell division cycle (Laporte et al., 2011; Shi et al., 2010; Shi and Tu, 2013). These diverse data therefore presented trehalose as an excellent putative candidate metabolite that controlled the emergence of cells in the light state. To test this possibility, we first measured extracellular trehalose in colonies. Free trehalose was readily detectable in the extracellular environment of these colonies (Figure 4B). To test if trehalose could be differentially transported into either light or dark cells, we first estimated amounts of a primary trehalose transporter, Mal11 (Stambuk, 1998) in these cells. Mal11 protein amounts were substantially higher in the light cells compared to the dark cells (Figure 4C, and quantified in Figure 4\u2014figure supplement 1A). To unambiguously, directly estimate trehalose uptake, we isolated light and dark cells from a mature colony, and exogenously added 13C-trehalose. We then measured intracellular levels of labeled trehalose present in these cells, by extracting and estimating metabolite amounts (by LC/MS/MS) (see Table 1 for MS parameters). Notably, the light cells rapidly accumulated 13C-trehalose (Figure 4D), while the dark cells did not, suggesting robust, preferential uptake of extracellular trehalose.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig4-v3.jpg)\n\n**Figure 4.:** (A) A schematic illustrating the metabolic intermediates and different end-point metabolites of gluconeogenesis. (B) Extracellular amounts of trehalose measured from developing wild-type colonies. Entire colonies were isolated, and only exogenous trehalose estimated, at the respective days. Fold change in the amount of extracellular trehalose produced by a 4 day old colony with respect to a 1 day old colony was calculated (n\u00a0=\u00a03). (C) Comparative protein amounts of Mal11, a major transporter of trehalose in S. cerevisiae, in light and dark cells, as measured using a Western blot is shown. The blot is representative of 3 independent experiments (n\u00a0=\u00a03). (D) Estimates of the relative ability of light and dark cells to uptake trehalose is shown. 13C Trehalose was exogenously added to light and dark cells, and intracellular amounts of the same are shown (as intensity of the MS/MS peak corresponding to 13C-trehalose) (n\u00a0=\u00a03). (E) Comparative amounts of Nth1, the major intracellular trehalase enzyme in S. cerevisiae, in light and dark cells, as measured using a Western blot is shown. The blot is representative of 3 independent experiments (n\u00a0=\u00a03). (F) in vitro neutral trehalase activity present in lysed light or dark cells is shown (n\u00a0=\u00a03). Statistical significance was calculated using unpaired t test (** indicates p<0.01) and error bars represent standard deviation.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Quantification of the Mal11 protein levels from light and dark cells (Figure 4C). Quantification of the western blot band intensities were done using ImageJ and the intensity values were normalized to the protein loading controls. (B) Quantification of the Nth1 protein levels from light and dark cells (Figure 4E). Quantification of the western blot band intensities were done using ImageJ and the intensity values were normalized to the protein loading controls. Statistical significance was calculated using unpaired t test (*** indicates p<0.001, ** indicates p<0.01) and error bars represent standard deviation.\n\nFinally, we estimated the ability of light and dark cells to break-down and utilize trehalose. For this, we first measured the expression of the predominant neutral trehalase in yeast (Nth1) (Jules et al., 2008), in the light and dark cells. Light cells had substantially higher Nth1 amounts than the dark cells (Figure 4E, and quantified data shown in Figure 4\u2014figure supplement 1B). We also measured enzymatic activity for Nth1 (in vitro, using cell lysates), and found that the light cells had\u00a0~2 fold higher in vitro enzymatic activity, compared to the dark cells (Figure 4F). Collectively, these data suggested that the light cells were uniquely able to preferentially take up more trehalose, break it down to glucose, in order to potentially utilize it to sustain a metabolic state with high PPP activity.\n\n### Trehalose uptake and utilization determines the existence of light cells\n\nSince these data suggested that trehalose uptake and utilization would be preferentially high in the light cells, we directly tested this using a quantitative metabolic flux based approach. For this we used stable-isotope labeled trehalose, and measured trehalose uptake, breakdown and utilization. To the isolated light and dark cells, 13C-labeled trehalose was externally provided, and intracellular metabolites extracted from the respective cells. The intracellular amounts of 13C -labeled glycolytic and PPP intermediates were subsequently measured using LC/MS/MS (Figure 5A and Figure 5\u2014figure supplement 1A, also see Table 1 for MS parameters). 13C \u2013labeled glucose-6-phosphate (which enters both glycolysis and the PPP), the glycolytic intermediates glyceraldehyde-3-phosphate and 3-phosphoglycerate, and the PPP intermediates 6-phosphogluconate, ribulose-5-phosphate and sedoheptulose-7-phosphate all rapidly accumulated exclusively in the light cells (Figure 5A, Figure 5\u2014figure supplement 1A). Since the labeled carbon can come only from trehalose, these data indicate both the breakdown of trehalose to glucose, as well as the subsequent utilization of glucose for these pathways. Indeed, the labeled forms of these metabolites were only above the detection limit in dark cells (Figure 5A and Figure 5\u2014figure supplement 1A). Thus, these data demonstrate that external trehalose is preferentially taken up only by the light cells, and utilized to fuel the complimentary metabolic state of the light cells, with high glycolytic and PPP activity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig5-v3.jpg)\n\n**Figure 5.:** (A) Estimation of trehalose uptake and breakdown/utilization in light and dark cells. LC-MS/MS based metabolite analysis, using exogenously added 13C Trehalose, to compare breakdown and utilization of 13C Trehalose for glycolysis and the PPP, in light and dark cells. The red circles represent 13C labeled carbon atoms. Data for 13C labeled glycolytic and PPP intermediates (derived from trehalose) are shown. The data presented is from a single flux experiment, which was repeated independently (with different colonies) twice (n\u00a0=\u00a02). Also see Figure 5\u2014figure supplement 1A. (B) Comparative development of wild-type colonies (same image used in\u00a0Figure 1A)\u00a0with colonies lacking the major trehalose transporter (\u2206mal11), or the intracellular neutral trehalase (\u2206nth1). Colonies are shown after 7 days of development. Scale bar: 2 mm. (C) Visualization (left panel) and quantification (right bar graphs) of light cells in wild-type\u00a0(same image used in Figure 2C), \u2206mal11, or \u2206nth1 cells, based on fluorescence emission dependent upon the PPP reporter activity. The quantification is based on flow cytometry data (n\u00a0=\u00a03). Scale bar: 2 mm. (D) Estimate of the percentage of gluconeogenic cells in wild-type, \u2206mal11 and \u2206nth1 (strains that cannot up-take or breakdown trehalose). This was based on quantifying the expression of the gluconeogenesis reporter plasmid (pPCK1-mCherry), expressed in all these cells. Cells from the entire colony were isolated and percentage of fluorescent cells (i.e. cells expressing the gluconeogenic reporter) in each colony was calculated by analyzing the samples by flow cytometry (n\u00a0=\u00a03). Statistical significance was calculated using unpaired t test (* indicates p<0.05, ** indicates p<0.01) and error bars represent standard deviation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Trehalose breakdown by light cells and dark cells were monitored by isolating light and dark cells from a\u00a0~\u00a05 to 6 day old wild-type colony and incubating them briefly (30 min) with labeled 13C Trehalose. Post incubation, metabolites from light and dark cells were extracted and analyzed for the pentose phosphate pathway (PPP) intermediates 13C 6-phosphogluconate (13C 6 PG), 13C Sedoheptulose-7-phosphate (13C S-7-P) and glycolytic intermediate 13C Glyceraldehyde-3-phosphate (13C G-3-P) using LC-MS/MS.\n\nFinally, we tested if the sharing and differential utilization of trehalose determined both the emergence and the proliferation of light cells. An explicit prediction is made both in our model, and our hypothesis based on these experimental data. This is: preventing uptake and/or utilization of trehalose should prevent cells from switching to the light state. To test this prediction, we generated strains lacking NTH1 (which cannot break-down trehalose to glucose), and MAL11 (which will have reduced trehalose uptake), allowed them to develop into mature colonies, and compared the amounts of light cells in each. Compared to wild-type colonies, cells lacking the major trehalose uptake transporter (\u0394mal11) formed colonies with very few light cells (Figure 5B). Note: while Mal11 shows a high affinity for trehalose, S. cerevisiae has multiple sugar transporters with reduced affinity for any disaccharide. Therefore, cells lacking MAL11 may take up trehalose with lower efficiency. In these cells, the ability to break-down trehalose remains intact. More importantly, in colonies of cells lacking trehalase (\u0394nth1), and which therefore cannot efficiently breakdown internal trehalose, had nearly no detectable light cells, based on brightfield microscope observations (Figure 5B). This result was more quantitatively estimated in colonies of cells with these respective genetic backgrounds, using the expression of the fluorescent PPP reporter. Again, almost no PPP reporter activity was observed in the \u0394nth1 cell colonies, while very few cells with PPP reporter activity were seen in \u0394mal11 colonies (Figure 5C). As controls, we ensured that there were no defects in the expression of the PPP reporters in cells from these genetic backgrounds. Correspondingly, we also quantified the percentage of dark, highly gluconeogenic cells (as determined using the gluconeogenesis reporter), in colonies from each of these genetic backgrounds. The percentage of gluconeogenic cells was proportionately higher in the \u0394mal11 (~73%), and \u0394nth1 (~80%) colonies compared to the wild-type colony (~65%) (Figure 5D). Thus, controlling the uptake and utilization of the resource (trehalose) directly regulates the emergence of cells in the light state.\n\nCollectively, these data demonstrate that trehalose is the shared gluconeogenic resource that determines the emergence, and persistence, of light cells within the structured colony.\n\n### A resource threshold effect controls cooperative switching of cells to the light state\n\nOur experimental data showing the organization of dark and light cells was obtained from\u00a0~5\u20136 day old, mature colonies. However, in our simulations of the temporal development of the colony, we observed that the dense network of dark (gluconeogenic) cells form first, followed by a very late appearance of light cells (Figure 6A and Video 1). This late appearance of light cells in the simulations comes from an inherent threshold effect included within the model. Here, the external build-up of the shared resource made by the dark cells is required. At a sufficient built-up concentration, this resource will trigger the switching of some cells to light cells. Light cells in turn will consume the resource, reducing the available amounts, thereby preventing other cells from switching to this new state. This threshold-effect therefore predicts a delayed, rapid emergence of light cells, and also enables such a pattern of distinct cell groups to form. If this threshold requirement is removed in the simulation (for example when replaced by a rate of switching from dark to light that depends linearly on the amount of resource), the resultant colony remains small, and the organized pattern of cells in two states does not occur. This is shown in Figure 6A, and Video 5. This small colony size is largely due to low resource amounts to support the proliferation of the light cells, since there are insufficient dark cells remaining to produce the resource. This is also clearly seen in control simulations with a range of resource amounts, and linear switching, as shown in Figure 6\u2014figure supplement 1A\u20131D. Contrastingly, in the model that successfully simulates the colony development, the externally available amount of the resource builds-up, reaches the threshold (where cells switch to the light state), and then rapidly decreases, if the light cells also consume the resource (Figure 6B, upper panel).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig6-v3.jpg)\n\n**Figure 6.:** (A) Simulation of colony development, based on the default model (which incorporates a resource threshold buildup, followed by consumption, switching to a light state, and expansion), compared to a model where the threshold amounts of the resource is removed. Note the final expansion size of the colony. Also see Figure 6\u2014figure supplement 1A\u2013D and Video 5. (B) (i) Changes in the availability of the resource as the colony develops, based on the model. (Ii) Extracellular amounts of trehalose measured from developing wild-type colonies. Data from three independent colonies. Note: in the model, in\u00a0~3\u20134 days the resource is highest, and reduces sharply after that. In the experimentally obtained data, extracellular trehalose amounts are highest at\u00a0~day 4, and then rapidly decreases over day 5. This correlates to when the light cells emerge and expand. (C) A time-course of bright-field images of the developing wild-type colony, illustrating the distribution of dark cells, and the emergence and distribution of light cells. (D) A time-course revealing fluorescence based estimation of the (i) reporter for gluconeogenic activity (dark cells), or (ii) the PPP activity reporter (light cells). Note the delayed, rapid appearance and increase in the PPP activity reporter. (E) Quantification of the increase in the gluconeogenic reporter activity in the colony, and the PPP reporter activity (based on fluorescence intensity) within the colony. The increase in gluconeogenic reporter activity, when plotted, is linear, and saturates. The increase in PPP activity over the first 5 days is highly cooperative (as estimated using a Hill coefficient as a proxy for cooperativity), before saturating (n\u00a0=\u00a03). Error bars represent standard deviation.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Wild-type colony with a resource threshold switching rule. In every time step, the algorithm checks if the shared resource levels at the locations of dark cells are more than a threshold value of 3 units. If so, there is a 50% chance of those cells switching to light cells. (B) A colony generated without the need for a resource threshold level. Dark cells switch by random chance. Light cells cannot switch to dark. (C and D) Colonies generated using a linear switching rule. The probability of switching increases linearly with the locally available resource levels till a maximum value of 1.0. The probability of switching is of the form p=mU (if mU less than 1.0) and p=1.0 otherwise. Here U is the resource level at the location of the dark cells and m is the slope of the linear relationship. In panel (C) m\u00a0=\u00a01. In panel (D) m\u00a0=\u00a00.01. (E) Total number of viable cells in a developing colony was estimated over time. CFU denotes colony forming units. Error bars represent standard deviation. Video clip legends.\n\n![Video 5.](https://cdn.elifesciences.org/articles/46735/elife-46735-video5.mp4.jpg)\n\n**Video 5.:** Simulation video showing changes in a colony where the dark cells switch to light by random chance (probability p=0.5). They don't need the resource levels to reach a certain threshold. Once they become light cells, they cannot switch back to dark. Due to lack of the produced resource, the colony doesn't grow discernibly.\n\nThis therefore prompted us to more closely examine the development of actual colonies over time, for these properties. We first estimated the relative amounts of extracellular, free trehalose in the colony over time. Notably, trehalose amounts steadily increased over 4 days, and subsequently rapidly decreased (Figure 6B lower panel). This rapid decrease in trehalose after day four is despite a steady, continuing increase in the total number of cells in the colony (Figure 6\u2014figure supplement 1E). We next monitored the development of colonies over time, to determine when the light cells emerge. Using just the bright-field image reconstruction of the colonies, during this time course, the intensity of dark cells steadily increased, and organized into the mesh-like network over 4 days (Figure 6C). However, the light cells appeared only after\u00a0~4 days, and rapidly increased in number (Figure 6C). We more quantitatively estimated this, using strains expressing the gluconeogenic- or the PPP-reporter (Figure 6D). Notably, the increase in total fluorescence intensity due to the gluconeogenic-reporter in the colony (over time) was relatively linear over the first four days (r2\u00a0=\u00a00.99), increasing with the steady increase in the number of cells (Figure 6\u2014figure supplement 1E). Contrastingly, the increase in the PPP reporter activity over the first five days was clearly non-linear and switch like, with very low signal intensity for the first three days, and then a rapid emergence of signal over days four and five (Figure 6E). This indicated a cooperative, switch like emergence of, and increase in these light cells. A useful biophysical measure of cooperativity (more commonly used for protein-ligand binding characteristics) is the Hill coefficient. We adopted the Hill equation, using the amount of PPP reporter fluorescence (instead of ligand-receptor binding), to estimate cooperativity in the system. Over the first five days the increase in PPP-reporter activity showed a Hill coefficient greater than 1, indicating a positively cooperative switch of cells to the light state (Figure 6E). This nicely correlates with the build-up, and rapid decrease in external trehalose around day 4 (Figure 6B). These data also show that the peripheral location of the light cells cannot simply be due to possible greater access to glucose in the medium, since for the first\u00a0~4 days, there are no cells in the periphery with high PPP reporter activity. Their emergence is indeed rapid, and switch-like.\n\nIn summary, data from model simulations and experiments show that initially the gluconeogenic cells increase in number, leading to release and build-up of the resource (trehalose) in the local environment. At this time there are no light cells in the colony. Above a threshold concentration of trehalose, some cells rapidly switch to light state with high PPP activity. The further expansion of these light cells correlates with rapid consumption of the extracellular trehalose that sustains this state. These data suggest a threshold effect, where the controlling resource, trehalose, needs to build up above a certain amount, in order for cells to switch to the contrary, high PPP activity state.\n\n### Cells in distinct metabolic states provide a collective growth advantage to the colony\n\nFinally, we wondered if such an emergence of light cells with high PPP activity might benefit the community of cells as a whole. To address this, we compared the long term colony expansion of wild-type cells, with colonies comprised of cells lacking the neutral trehalase (\u0394nth1). Cells in the \u0394nth1 colonies cannot utilize trehalose to produce glucose, and as shown earlier, will remain in a gluconeogenic state. Therefore, in these \u0394nth1 cell colonies light cells will be absent. However, these cells are still capable of normal gluconeogenesis (and trehalose production). Strikingly, we observed that as the respective colonies expanded over time (~21 days), the wild-type colonies spread over a significantly greater area on the plate, while the \u0394nth1 colonies were unable to expand as efficiently (Figure 7A and Figure 7B). This shows that the emergence and proliferation of light cells are important for the expansion of the colony. Since the dark cells are required for the emergence and existence of the light cells, collectively, these data suggest how the community uses cells in distinct metabolic states to maximize growth and spatial expansion, possibly to forage for new nutrients.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/46735/elife-46735-fig7-v3.jpg)\n\n**Figure 7.:** (A) Foraging response of wild-type cells\u00a0(same image used in Figure 1A) and \u0394nth1 cells measured as a function of their ability to spread on a plate. Colony spreading was quantified by measuring the diameter of the colonies every day for 21 days (n\u00a0=\u00a03). (B) Cells in low glucose perform gluconeogenesis, as required in low glucose medium. As gluconeogenic reserves build up, trehalose builds up in the extracellular environment. At a threshold concentration of trehalose, some cells switch to a high glycolytic, PPP state. This state depends upon the utilization of trehalose to fuel it. This utilization of trehalose by the light cells results in decreased external trehalose to below a threshold. This in turn restrains the other, remaining cells in a gluconeogenic state, where they continue to produce trehalose. This gives rise to the final, self-organized community, with specialization of function and division of labor. Statistical significance was calculated using unpaired t test (** indicates p<0.01) and error bars represent standard deviation.\n\n## Discussion\n\nCollectively, we present a simple model proposing how cells in metabolically distinct states spontaneously emerge and spatially self-organize within a yeast colony, as summarized in Figure 7C. In low glucose conditions, cells begin in a uniform gluconeogenic state, which is the expected metabolic state in this nutrient condition. The gluconeogenic cells produce a resource (trehalose), that is now externally available. This resource builds up to above a threshold amount. At this threshold, some cells take up and consume trehalose, breaking it down to glucose. These cells spontaneously switch to the complimentary metabolic state, with high PPP and glycolytic activity (i.e. the light state) (Figure 7C). These light cells can remain in this metabolic state only so as long as the resource (trehalose) is externally available. However, as trehalose is consumed by these cells, the available amount of external trehalose itself drops below the threshold. The surrounding dark cells therefore remain trapped in a gluconeogenic state, continuing to produce trehalose. Thereby, a predictable fraction of cells, constrained spatially, will remain in each metabolic state, resulting in specialized cell groups and division of metabolic labor. Thus, biochemically heterogeneous cell states can spontaneously emerge and spatially self-organize. An implicit concept emerging from this study is that of threshold amounts of a controlling or sentinel metabolite that regulates a switch to a new metabolic state. By definition, such a metabolite must be produced by cells present in a certain (original) metabolic state. But when this metabolite is utilized, it must have the ability to switch cells to an entirely distinct metabolic state. Further, the emergence and expansion of cells in the new state will be rapid and switch-like, resembling a bistable system (Pomerening, 2008). This idea of metabolites controlling cell states is an emerging area of interest (Cai and Tu, 2011; Krishna and Laxman, 2018), but has not been studied in the context of groups of cells organizing into distinct groups or metabolic states (and therefore different phenotypic properties).\n\nWe speculate what the advantages of such spatially organized, phenotypically distinct states within a group of clonal cells might be, in this example. Here, we observe that the organized community with cells in distinct states has clear advantages, in being able to spatially expand better (Figure 7C). For sessile microbes such as yeast, this ability to forage for better nutrients is important for their survival. This might also convey other advantages, and uncovering those are obvious areas of future studies. Since the inherent properties of the cells in the distinct states are different, this raises the deeper possibility that these advantages come from physical and chemical properties of the cells, which arise from their distinct metabolic states. Regardless, our study substantially advances descriptions of yeast \u2018multicellularity\u2019 from simple dimorphism, aggregated cells, or three-dimensional colony forms (C\u00e1p et al., 2012; Koschwanez et al., 2011; Palkov\u00e1 and V\u00e1chov\u00e1, 2016; Ratcliff et al., 2012; V\u00e1chov\u00e1 and Palkov\u00e1, 2018; Veelders et al., 2010; Wloch-Salamon et al., 2017), to self-organized, phenotypically heterogeneous cell states exhibiting division of labor and metabolic interdependence. Strikingly, the nature of spatial patterning allied with division of labor that we observe in yeast is reminiscent of true multicellular systems (Newman, 2016; Niklas, 2014). Also, the cell states in these yeast colonies can be considered commensal, since trehalose is a necessary output of gluconeogenesis, and therefore a default, biochemically non-limiting output in dark cells. Since trehalose controls the emergence and maintenance of light cells in the complimentary metabolic state, it thus can be considered a resource benefiting the light state. Thus simple, metabolism-derived constraints are sufficient to determine how contrary biochemical states can spontaneously emerge and be supported, in conjunction with spatial structure. Such organization of cells into specialized, labor-divided communities expands on the role of reaction-diffusion systems (particularly activator-depleted substrate schemes) in controlling cellular patterning (Gierer and Meinhardt, 1972; Kondo and Miura, 2010; Newman, 2016), with a metabolic resource threshold being central to the emergence and stabilization of a new phenotype (Cai and Tu, 2011; Krishna and Laxman, 2018). A deeper dissection of what such constraints can permit will therefore advance our general understanding of how specialized cell states can emerge and be stabilized.\n\nMetabolic cross-feeding is best understood currently in multi-species microbial communities, where this has been inferred largely using inter-species genomic comparisons (Ackermann, 2015; D'Souza et al., 2018; Goldford et al., 2018; Tyson et al., 2004). Further, metabolic sharing has typically been demonstrated using synthetically engineered systems where mutual dependencies are created (Campbell et al., 2016; D'Souza et al., 2018; Mee et al., 2014; Pande et al., 2015; Wintermute and Silver, 2010). The spatial organizations of any such populations remain challenging to model. Biochemically identifying metabolites that are conclusively exchanged between cooperating cells remains difficult, and the significance of such putative metabolite exchange challenging to interpret (Ackermann, 2015; D'Souza et al., 2018). Finally, such studies have emphasized non-isogenic systems, where genetic changes stabilize different phenotypes, and auxotrophies define the nutrient sharing or cooperation (Ackermann, 2015). Contrastingly, here we directly identify a produced metabolic resource, and demonstrate how its availability and differential utilization can control the emergence of cells in opposing metabolic states, in a clonal population. We also explain how the spontaneous spatial organization into phenotypically distinct cell groups occurs. Thus, our study also goes beyond stochastic gene expression (Ackermann, 2015; Bal\u00e1zsi et al., 2011; Blake et al., 2003) to explain how phenotypic heterogeneity and specialization can emerge in clonal populations. By considering these metabolism-derived rules, and thereby manipulating available metabolic resources, we suggest how it can be viable to program the formation, structure or phenotypic composition of isogenic cell populations. Collectively, such simple physico-chemical constraints can advance our understanding of how isogenic cells can self-organize into specialized, labor-divided groups, as a first step towards multicellularity.\n\n## Materials and methods\n\n### Yeast strains and growth media\n\nThe prototrophic sigma 1278b strain (referred to as wild-type or WT) was used in all experiments. Strains with gene deletions or chromosomally tagged proteins (at the C-terminus) were generated as described (Longtine et al., 1998). Strains used in this study are listed in Table 2. The growth medium used in this study is rich medium (1% yeast extract, 2% peptone and 2% glucose or 0.1% glucose).\n\n**Table 2.**\n Strains and plasmids used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain/genotype</th>\n      <th>Information</th>\n      <th>Source/reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wild-type (WT)</td>\n      <td>YBC16G1, prototrophic sigma1278b, MAT a</td>\n      <td>Isolate via Fink Lab</td>\n    </tr>\n    <tr>\n      <td>WT (pPCK1-mCherry)</td>\n      <td>Wild-type strain with gluconeogenesis reporter plasmid (mCherry with PCK1 promoter)</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>WT (pHXK1-mCherry)</td>\n      <td>Wild-type strain with constitutive reporter plasmid (mCherry with HXK1 promoter)</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>WT (pTKL1-mCherry)</td>\n      <td>Wild-type strain with pentose phosphate pathway reporter plasmid (mCherry with TKL1 promoter)</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>PCK1-flag</td>\n      <td>MAT a PCK1-3xFLAG::natNT2</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>FBP1-flag</td>\n      <td>MAT a FBP1-3xFLAG::natNT2</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>ICL1-flag</td>\n      <td>MAT a ICL1-3xFLAG::natNT2</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>MAL11-flag</td>\n      <td>MAT a MAL11-3xFLAG::natNT2</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>NTH1-flag</td>\n      <td>MAT a NTH1-3xFLAG::natNT2</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>\u2206nth1</td>\n      <td>MAT a nth1::kanMX6</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>\u2206mal11</td>\n      <td>MAT a mal11::kanMX6</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>\u2206nth1 (pPCK1-mCherry)</td>\n      <td>\u2206nth1 strain with gluconeogenesis reporter plasmid (mCherry with PCK1 promoter)</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>\u2206mal11 (pPCK1-mCherry)</td>\n      <td>\u2206mal11 strain with gluconeogenesis reporter plasmid (mCherry with PCK1 promoter)</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>\u2206nth1 (pTKL1-mCherry)</td>\n      <td>\u2206nth1 strain with pentose phosphate pathway reporter plasmid (mCherry with TKL1 promoter)</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>\u2206mal11 (pTKL1-mCherry)</td>\n      <td>\u2206mal11 strain with pentose phosphate pathway reporter plasmid (mCherry with TKL1 promoter)</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>Plasmid</td>\n      <td>Information</td>\n      <td>Source/reference</td>\n    </tr>\n    <tr>\n      <td>pPCK1-mCherry</td>\n      <td>mCherry under the PCK1 promoter and CYC1 termin- ator. p417 centromeric plasmid backbone, G418R.</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>pHXK1-mCherry</td>\n      <td>mCherry under the HXK1 promoter and CYC1 termin- ator. p417 centromeric plasmid backbone, G418R.</td>\n      <td>this study</td>\n    </tr>\n    <tr>\n      <td>pTKL1-mCherry</td>\n      <td>mCherry under the TKL1 promoter and CYC1 termin- ator. p417 centromeric plasmid backbone, G418R.</td>\n      <td>this study</td>\n    </tr>\n  </tbody>\n</table>\n\n### Colony spotting assay\n\nAll strains were grown overnight at 30 \u00b0C in either rich medium or minimal medium. 5 microliters of the overnight cultures were spotted on rich medium (low glucose) (1% yeast extract, 2% peptone, 0.1% glucose and 2% agar). Plates were incubated at 30 \u00b0C for 7 days unless mentioned otherwise.\n\n### Colony imaging\n\nFor observing colony morphology, colonies were imaged using SZX-16 stereo microscope (Olympus) wherein the light source was above the colony. Bright-field imaging of 7 day old colonies were done using SZX-16 stereo microscope (Olympus) wherein the light source was below the colony. Epifluorescence microscopy imaging of 7 day old gluconeogenesis reporter colonies (pPCK1-mCherry), pentose phosphate pathway (PPP) reporter colonies (pTKL1-mCherry) and HXK1 reporter colonies (pHXK1-mCherry) were imaged using the red filter (excitation of 587 nm, emission of 610 nm) of SZX-16 stereo microscope (Olympus). Similar protocol was followed for imaging 1 day to 6 day old colonies.\n\n### Analysis of fluorescent cell populations in reporter strain colonies\n\nLight cells and dark cells isolated from 7 day old wild-type colonies harboring either the gluconeogenesis reporter, PPP reporter or the HXK1 reporter were re-suspended in 1 ml of water. The percentage of fluorescent cells were determined by running the samples through a flow cytometer, and counting the total number of mCherry positive cells in a total of 1 million cells. Light cells and dark cells isolated from wild-type colonies without the fluorescent reporter were used as control.\n\n### Biochemical estimation of trehalose/glycogen levels\n\nTrehalose and glycogen from yeast samples were quantified as described previously, with minor modifications (Shi et al., 2010). 10 OD600 of light cells and dark cells from 7 day old wild-type colonies (rich medium, 0.1% glucose) were collected. After re-suspension in water, 0.5 ml of cell suspension was transferred to four tubes (two tubes for glycogen assay and the other two tubes for trehalose assay). When sample collections were complete, cell samples (in 0.25 M sodium carbonate) were boiled at 95\u201398\u00b0C for 4 hr, and then 0.15 ml of 1 M acetic acid and 0.6 ml of 0.2 M sodium acetate were added into each sample. Each sample was incubated overnight with 1 U/ml amyloglucosidase (Sigma-Aldrich) rotating at 57\u00b0C for the glycogen assay, or 0.025 U/ml trehalase (Sigma-Aldrich) at 37\u00b0C for the trehalose assay. Samples were then assayed for glucose using a glucose assay kit (Sigma-Aldrich). Glucose assays were done using a 96-well plate format. Samples were added into each well with appropriate dilution within the dynamic range of the assay (20\u201380 \u00b5g/ml glucose). The total volume of sample (with or without dilution) in each well was 40 microliters. The plate was pre-incubated at 37\u00b0C for 5 min, and then 80 \u00b5l of the assay reagent from the kit was added into each well to start the colorimetric reaction. After 30 min of incubation at 37\u00b0C, 80 microliters of 12 N sulfuric acid was added to stop the reaction. Absorbance at 540 nm was determined to assess the quantity of glucose liberated from either glycogen or trehalose. For measurement of extracellular trehalose measurement, single wild-type colony (1 day to 7 day old colony) was re-suspended in 100 microliters of water and centrifuged at 20000 g for 5 min. Supernatant was collected and buffered to a pH of 5.4 (optimal for trehalase activity) using sodium acetate buffer (pH 5.0). 0.025 U/ml trehalase (Sigma-Aldrich) was added and samples were incubated at 37\u00b0C overnight. Glucose concentration was estimated as described earlier.\n\n### Neutral trehalase activity assay\n\nNeutral trehalase activity assay was performed as described earlier with the following modifications (De Virgilio et al., 1991). Briefly, 1 OD600 of light cells and dark cells isolated from 7 day old wild-type colonies (rich medium, 0.1% glucose) were washed twice with ice-cold water. For permeabilization, cells were re-suspended in tubes containing equal volume of 1% Triton-X in assay buffer (200 mM tricine buffer (Na+) (pH 7.0)) and immediately frozen in liquid nitrogen. After thawing (1\u20134 min at 30\u00b0C), the cells were centrifuged (2 min at 12000 g), washed twice with 1 ml of ice-cold assay buffer and immediately used for the trehalase assay. Trehalase assay was performed in 50 mM tricine buffer (Na+) (pH 7.0), 0.1 M trehalose, 2 mM manganese chloride (MnCl2) and the Triton X-100 permeabilized cells in a total volume of 400 microliters. After incubation for 30 min at 30\u00b0C, the reaction was stopped in a boiling water bath for 3 min. Glucose concentration in the supernatant was determined using the glucose assay kit (Sigma-Aldrich).\n\n### Western blot analysis\n\nApproximately ten OD600 cells were collected from respective cultures, pelleted and flash frozen in liquid nitrogen until further use. The cells were re-suspended in 400 microliters of 10% trichloroacetic acid (TCA) and lysed by bead-beating three times: 30 s of beating and then 1 min of cooling on ice. The precipitates were collected by centrifugation, re-suspended in 400 microliters of SDS-glycerol buffer (7.3% SDS, 29.1% glycerol and 83.3 mM tris base) and heated at 100\u00b0C for 10 min. The supernatant after centrifugation was treated as the crude extract. Protein concentrations from extracts were estimated using bicinchoninic acid assay (Thermo Scientific). Equal amounts of samples were resolved on 4% to 12% bis-tris gels (Invitrogen). Western blots were developed using the antibodies against the respective tags. We used the following primary antibody: 538 monoclonal FLAG M2 (Sigma-Aldrich). Horseradish peroxidase\u2013conjugated secondary antibody (anti-mouse) was obtained from Sigma-Aldrich. For Western blotting, standard enhanced chemiluminescence reagents (GE Healthcare) were used.\n\n### Metabolite extractions and measurements by LC-MS/MS\n\nLight cells and dark cells isolated from wild-type colonies grown in different media were rapidly harvested and metabolites were extracted as described earlier (Walvekar et al., 2018). Metabolites were measured using LC-MS/MS method as described earlier (Walvekar et al., 2018). Standards were used for developing multiple reaction monitoring (MRM) methods on Sciex QTRAP 6500. Metabolites were separated using a Synergi 4\u00b5 Fusion-RP 80A column (100\u00a0\u00d7\u00a04.6 mm, Phenomenex) on Agilent\u2019s 1290 infinity series UHPLC system coupled to the mass spectrometer. For positive polarity mode, buffers used for separation were- buffer A: 99.9% H2O/0.1% formic acid and buffer B: 99.9% methanol/0.1% formic acid (Column temperature, 40\u00b0C; Flow rate, 0.4 ml/min; T\u00a0=\u00a00 min, 0% B; T\u00a0=\u00a03 min, 5% B; T\u00a0=\u00a010 min, 60% B; T\u00a0=\u00a011 min, 95% B; T\u00a0=\u00a014 min, 95% B; T\u00a0=\u00a015 min, 5% B; T\u00a0=\u00a016 min, 0% B; T\u00a0=\u00a021 min, stop). For negative polarity mode, buffers used for separation were- buffer A: 5 mM ammonium acetate in H2O and buffer B: 100% acetonitrile (Column temperature, 25\u00b0C; Flow rate: 0.4 ml/min; T\u00a0=\u00a00 min, 0% B; T\u00a0=\u00a03 min, 5% B; T\u00a0=\u00a010 min, 60% B; T\u00a0=\u00a011 min, 95% B; T\u00a0=\u00a014 min, 95% B; T\u00a0=\u00a015 min, 5% B; T\u00a0=\u00a016 min, 0% B; T\u00a0=\u00a021 min, stop). The area under each peak was calculated using AB SCIEX MultiQuant software 3.0.1.\n\n### 15N- and 13C- based metabolite labeling experiments\n\nFor detecting 15N label incorporation in nucleotides, 15N Ammonium sulfate (Sigma-Aldrich) and 15N Aspartate (Cambridge Isotope Laboratories) with all nitrogens labeled were used. For 13C-labeling experiment, 13C Trehalose with all carbons labeled (Cambridge Isotope Laboratories) was used. All the parent/product masses measured are enlisted in Table 1. For all the nucleotide measurements, release of the nitrogen base was monitored in positive polarity mode. For all sugar phosphates, the phosphate release was monitored in negative polarity mode. The HPLC and MS/MS protocol was similar to those explained above.\n\n### Building and implementing the model\n\nThe model simulation code is available via GitHub ref:\u00a0https://github.com/vaibhhav/yeastmetabcolony.\n\n### Components\n\nThe model consists of (i) a population of light and dark cells, and (ii) a shared metabolic resource that is produced by, and is accessible to the cells. Therefore, the dynamic processes involved can be broadly divided into those pertaining to the cells of the colony and those pertaining to the shared resource. The cells and resource occupy a 2-D square grid, which represents the surface of an agar plate. If one takes each grid length to correspond to 50 \u00b5m in real space, then, given the average size of a yeast cell at 5 \u00b5m, a single grid location can be imagined to contain upto 100 cells, which we term \u2018cell blocks\u2019. We coarse-grain the model such that each location is either empty, occupied by light cell block, or a dark cell block. That is, we ignore the possibility that cell blocks might be mixed. This is simply for computational ease. A more detailed model consisting of smaller grid lengths such that each location could hold at most a single cell would exhibit the same behavior as the coarse-grained one, but would require much larger grid sizes and longer computational times in order to simulate realistic sized colonies. With the coarse-graining, our simulations use a 250 \u00d7 250 grid. Each grid location also contains saturating amounts of amino acids, as well as a certain level of the shared metabolic resource. If a location has a cell block, that block also has internal levels of the amino acids and the resource, which may be different from the external level in that location.\n\n### Initial state of the grid\n\nWe start with an approximately circular colony 20 grid lengths in radius (covering 1257 grid locations) in the center of the 250 \u00d7 250 grid. 95\u201399% of these 1257 cell blocks are in the dark state, while 1\u20135% are in the light state, distributed randomly in the colony. The concentration or level of the shared resource is set to zero at every location. However, at all times, we assume the presence, throughout the grid, of saturating amounts of amino acids that are required for the (slow) growth of the dark cells.\n\n### Dynamics of the model\n\nThe grid is updated at discrete time steps. Each time step corresponds to 12 min in real time, and all simulations are run for 750 time steps, that\u00a0is 150 hours of real time (~6 days). In each time step, we first go over every cell block to implement the following processes:\n\nIf a block at location (x,y) is dark, then:\n\nIf a block at location (x,y) is light, then:\n\n(The above set of rules and parameters is for simulating the wild-type colony. For the variations highlighted in the main text (Figures 3E and 6A, bottom row), see the \u2018Variants of the wild-type model\u2019 section below.)\n\nThese processes implement growth of cells, as well as production and consumption of amino acids and the shared metabolic resource. Subsequent to this, in each time step, we allow diffusion of the resource levels across the grid (the \u201cexternal\u201d level at the location, not the internal levels in cell blocks), using a numerical scheme called Forward Time Central Space (FTCS). Say that the value of the resource at time t and location (x,y) is given by\u00a0$U_{x,y}^{t}$. The FTCS scheme updates the value simultaneously at all locations using the following formula:\n\n$$\nU_{x,y}^{t+\u0394T}=U_{x,y}^{t}+D\\frac{\u0394T}{\u0394L^{2}}(U_{x-1,y}^{t}+U_{x+1,y}^{t}+U_{x,y-1}^{t}+U_{x,y+1}^{t}-4U_{x,y}^{t})\n$$\n\nwhere $\u0394T$\u00a0is the time step and $\u0394L$\u00a0is the space step, or grid length, and D is the diffusion constant for the resource.\n\n### Model parameters\n\n**Table 3.**\n Parameters of the model for the wild-type case.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Notation</th>\n      <th>Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Growth rate (dark cell block)</td>\n      <td>gd</td>\n      <td>0.01/T</td>\n    </tr>\n    <tr>\n      <td>Growth rate (light cell block)</td>\n      <td>gl</td>\n      <td>0.04/T</td>\n    </tr>\n    <tr>\n      <td>Switching threshold</td>\n      <td>S</td>\n      <td>3.0 units</td>\n    </tr>\n    <tr>\n      <td>Resource produced by each dark cell block</td>\n      <td>R</td>\n      <td>0.07 units/T</td>\n    </tr>\n    <tr>\n      <td>Resource or amino acids consumed per cell block (light or dark)</td>\n      <td>C</td>\n      <td>0.05 units/T</td>\n    </tr>\n    <tr>\n      <td>Minimum resource or amino acid reserve needed for division (light or dark)</td>\n      <td>--</td>\n      <td>1.0 unit</td>\n    </tr>\n    <tr>\n      <td>Chance to switch to light cell if threshold reached</td>\n      <td>P</td>\n      <td>0.5/T</td>\n    </tr>\n    <tr>\n      <td>Diffusion constant of the resource</td>\n      <td>D</td>\n      <td>0.24 L2/T</td>\n    </tr>\n  </tbody>\n</table>\n\n### Variants of the wild-type model in different figures\n\nFigure 3E, Figure 6A (bottom row) and Figure 6\u2014figure supplement 1C\u2013D showcase some of the final colonies generated by the simulations when the rules described above are varied. The following changes were made to the rules/parameters to generate these. 3E(i): No sharing: Set R\u00a0=\u00a00.\n\n3E(ii): No switching from dark to light state: Set p=0.\n\n3E(iii): \u2018Reverse\u2019 sharing: Set R\u00a0=\u00a00. When a cell block is light it adds R\u2019=0.07 to the amino acid grid at the same location.\n\n6A(bottom row): No resource thresholding: Set S\u00a0=\u00a00.\n\nFigure 6\u2014figure supplement 1C\u2013D: Linear switching: Set S = 0. The probability of switching from dark to light state, p, is now a linear function of the locally available resource with a maximum value of 1.0. That is, p = max ($m*U_{x,y}^{t}$, 1.0), where m is a parameter that sets the slope of this linear relationship.\n",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "42dd521c-de10-4a3b-a708-67f8c5bf7162",
+      "submission_id": "42ef5014-de6a-428c-8d18-b3beb65e9bd6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kevin J Verstrepen, VIB-KU Leuven Center for Microbiology Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.46735.sa1](https://doi.org/10.7554/eLife.46735.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Metabolic constraints drive self-organization of specialized cell groups\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Martin Ackermann (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe two reviewers agree that this is a very interesting manuscript that sheds new light on physiological heterogeneity and possibly even spatially organized metabolic states within an isogenic population of yeast cells. However, both reviewers also raise important questions and are not yet fully convinced by the data presented. We would therefore ask you to consider the following major essential issues:\n\n1) Please provide more arguments, controls and discussion regarding the hypothesized metabolic states, and especially addressing to what extent these might be the consequence of spatial gradients.\n\n2) Can you explain in more detail what you hypothesize to be the physiological/evolutionary reason for the different states?\n\n3) Please expand the statistical analyses.\n\nPlease also consider the questions and comments made by the individual reviewers.\n\nReviewer #1:\n\nThe results show that within a yeast colony, cells in specific region of the colony show higher activity in the gluconeogenesis pathway (as estimated using Pck1 levels as a biomarker), whereas others do not. Further experiments show that the so-called \"light\" cells show hallmarks of cells that are actively growing on glucose, whereas dark cells seem to be more starved. A metabolic model is used to try and explain how these two different states could be the result of some cells producing glucose through gluconeogenesis, while others benefit from this resource as some of the glucose (in the form of trehalose) diffused away from the cells with high gluconeogenesis. Deletion of the trehalose transporter Mal11 or the trehalase (Nth1) abolished (or at least reduced) the differences between the two distinct groups of cells.\n\n1) The authors claim that all cells would be expected to have high gluconeogenesis activity, but it is unclear to me whether that is really true. Since (low) glucose is used as a carbon source, it seems possible (or even likely) that some cells may be able to take up sufficient amounts of glucose from the medium, while others (e.g. in more dense and internal regions of the colony) are not. It is of course difficult to avoid such differences in nutrient availability in a colony. However, in principle, it should be possible to obtain less confounded results in a medium that does not contain any glucose (e.g. ethanol + glycerol), which would force all cells to enter gluconeogenesis, unless some cells indeed receive some form of glucose (trehalose) produced by other cells.\n\n2) The test where cells are transferred to medium where gluconeogenesis is really essential (ethanol+glycerol) seems flawed, as in this medium, not only gluconeogenesis but also respiration is required. Furthermore, although I do believe the conclusions coming from this experiment, the control glucose grown cells were pre-grown in liquid instead of on a plate, making them not a true control, since the cells coming from plate will also have to adapt to a liquid medium. You are also missing error bars on graph 2A (i)? Moreover in subsection \u201cCells organize into spatially restricted, contrary metabolic states within the colony\u201d and Figure 2A, the authors claim a difference in lag, but since only the first 9 hours of growth were measured, I find it difficult to conclude from this graph if it is truly only a lag difference or if the cells perhaps also show differences in growth rate for a much longer time (especially in the gluconeogenic medium).\n\n3) If trehalose uptake is really required for light cells, then why does deletion of MAL11 and NTH1 not abolish the existence of light cells and the specific colony morphology (as seen in Figure 5D)?\n\nReviewer #2:\n\nThis manuscript by Varahan and colleagues describes what I think is an intriguing discovery: genetically identical cells in colonies of Saccharomyces cerevisiae differentiate into two distinct phenotypic states. The two phenotypes specialise on different metabolic processes and are coupled by the transfer of a metabolite from one cell type to the other. I think the work is both interesting and novel. It is interesting because it shows a clear case of a 'distributed metabolism' in a clonal population: metabolic processes are distributed to different cell types in a clonal population, and the population as a whole exhibits metabolic activity that is based on the coupling between the different sub-processes. The distribution of different metabolic processes to individual cell types could have important consequences. It could alleviate biochemical incompatibilities and allow individual cells to perform metabolic processes faster or more efficiently through specialization. While such metabolic differentiation is thus potentially important, we currently do not understand well how common it is in clonal population.\n\nWhile a small number of recent studies have focused on this concept (including e.g. Wolfsberg et al. Metab. Engineering 2018 https://www.ncbi.nlm.nih.gov/pubmed/30179665 and Rosenthal et al. eLife 2018 https://elifesciences.org/articles/33099), I think this study here describes one of the clearest and most compelling cases. This is also what makes this study novel: the authors use a combination of approaches (including transcriptional reporters, measurements of proteins and metabolite abundances and metabolic flux analysis) to characterize the metabolic states of the two cell types and understand how they are coupled. And they use mathematical modeling to probe the plausibility of their metabolic analysis and to derive predictions that they then address experimentally.\n\nI therefore think this manuscript has the potential to make an important contribution to the field: it addressed a concept that is potentially important but largely unexplored and used a strong combination of experimental and computational approaches that provide substantial insights into how metabolic processes can be distributed across two interacting cell types.\n\nI have two main comments. The first comment is scientific: it did not become clear to me why, on a fundamental level, cells differentiate into two distinct metabolic states, instead of all cells attaining a common intermediate metabolic state. I think this question emerges most clearly in the Discussion, where the authors summarize the main insights. All cells are initially in the same state (gluconeogenesis). They produce trehalose. The trehalose accumulates externally until it reaches a concentration where some cells switch to a different state (glycolytic/high PPP) and start consuming trehalose. Is it understood why there is not a different outcome \u2013 that all cells together decrease gluconeogenetic activity over time and all attain the same intermediate metabolic state? I would be very interested in the author's perspective on this issue.\n\nThe second comment is about the text: I found the Introduction difficult to understand and am not convinced about how some of the concepts are discussed. For example, in the second paragraph of the Introduction section, almost every sentence contains a statement that I don't understand or that I think does not correspond to how terms are commonly used in the field. I suggest that the authors revisit the Introduction.\n",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "823226c3-65bf-46a8-8eb6-8a0f12a09227",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C1",
+      "claim": "Low glucose is required for rugose colonies to develop in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "On 2% agar plates containing a complex rich medium with low glucose concentrations, S. cerevisiae forms rugose colonies with distinct architecture, after ~5\u20136 days (Figure 1A). Such colonies do not form in the typical, high (1\u20132%) glucose medium used for yeast growth (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 1A comparing colony morphology in high vs low glucose conditions, and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "c5425db9-a5b8-4054-a189-f850fa60ac0a",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C2",
+      "claim": "Glucose limitation drives complex colony architecture formation in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as previously well established (Granek and Magwene, 2010; Reynolds and Fink, 2001), glucose limitation (with other nutrients such as amino acids being non-limiting) drives this complex colony architecture formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies and experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "ea3e80e3-1e19-4260-b47e-8d77a503aa9f",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C3",
+      "claim": "Within mature yeast colonies, cells arrange into regions with distinct optical densities, categorized as dark cells and light cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we unexpectedly noticed what appeared to be distinct internal patterning, and apparent spatial organization of cells within the colony (Figure 1B). As categorized purely based on these observed differences in visual optical density ('dark' or 'light'), regions between the colony center and periphery had optically dense (dark) networks spanning the circumference of the colony, interspersed with optically rare regions. In contrast, the periphery of the mature colony appeared entirely light (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on direct microscopic observations shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "df8a52c2-5928-4114-a909-344b040c46f3",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C4",
+      "claim": "Cells in low glucose conditions are expected to have constitutively high expression of the high-affinity hexokinase (Hxk1p).",
+      "claim_type": "EXPLICIT",
+      "source": "The expected metabolic requirements of cells growing in glucose limited conditions are as follows: first, all cells would be expected to have constitutively high expression of the high-affinity hexokinase (Hxk1p) (Lobo and Maitra, 1977; Rodr\u00edguez et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge cited from previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "ad7994e2-a91f-4152-9fa9-1a43bbb4b505",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C5",
+      "claim": "During glucose-limited growth, all cells are expected to carry out extensive gluconeogenesis as the default metabolic state.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, during glucose-limited growth, all cells are expected to carry out extensive gluconeogenesis, as the default metabolic state (Broach, 2012; Haarasilta and Oura, 1975; Yin et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge cited from previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "893dbca7-5f46-4adf-a769-53155a443d21",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C6",
+      "claim": "Cells growing in glucose-limited medium have very high amounts of gluconeogenic enzymes Pck1 and Fbp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Expectedly, we observed very high amounts of these gluconeogenic enzymes in cells growing in glucose-limited medium (Figure 1\u2014figure supplement 1A), reiterating that even in well-mixed glucose-limited, cells are in a strongly gluconeogenic state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "dd647700-9817-44ba-a2ea-7209085806a1",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C7",
+      "claim": "The HXK1-promoter dependent reporter showed constitutive, high expression in all cells across the entire colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Expectedly, the HXK1-promoter dependent reporter showed constitutive, high expression in all cells across the entire colony (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "0903d7e9-c8f0-411e-a5c9-316891adb25f",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C8",
+      "claim": "Only the dark cells exhibited high gluconeogenesis reporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, only the dark cells exhibited high gluconeogenesis reporter activity (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "753f233d-fc8c-4422-bde8-b89cb319563b",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C9",
+      "claim": "Light cells entirely lacked detectable gluconeogenic reporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the light cells entirely lacked detectable gluconeogenic reporter activity (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "27c6f17e-f97f-4085-b122-d8991e16457e",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C10",
+      "claim": "Approximately 80% of isolated dark cells showed strong fluorescence for the gluconeogenic reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on flow cytometric readouts,~80% of the isolated dark cells showed strong fluorescence for the gluconeogenic reporter, while ~97% of the light cells were non-fluorescent for gluconeogenic activity (Figure 1C, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "3ff3da52-711b-46f2-a518-58065105d814",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C11",
+      "claim": "Approximately 97% of light cells were non-fluorescent for gluconeogenic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on flow cytometric readouts,~80% of the isolated dark cells showed strong fluorescence for the gluconeogenic reporter, while ~97% of the light cells were non-fluorescent for gluconeogenic activity (Figure 1C, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "b4fb3616-8acd-4d64-ad82-e3f1734658e7",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C13",
+      "claim": "Dark cells had substantially higher amounts of both trehalose and glycogen compared to light cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the dark cells had substantially higher amounts of both trehalose and glycogen (Figure 1E), indicating greater gluconeogenic activity in these cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by biochemical measurements shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "791a2426-402b-4b9e-9f85-0a0f2ed52ebb",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C14",
+      "claim": "Intracellular gluconeogenic activity is spatially restricted to specific regions within the colony, resulting in a distinct pattern of metabolically specialized zones.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results strikingly reveal that intracellular gluconeogenic activity is spatially restricted to specific regions, resulting in a distinct pattern of metabolically specialized zones within the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from multiple experimental observations including reporter activity, protein expression, and metabolite measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "a1a9473b-de9f-41ad-933f-ce3902395a1a",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C15",
+      "claim": "Dark cells grew robustly and reached significantly higher cell numbers compared to light cells in gluconeogenic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Expectedly, the dark cells grew robustly and reached significantly higher cell numbers (0D600) compared to the light cells in the gluconeogenic condition (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth curve data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "8f19e09e-fc75-4298-bdd2-39972c39b6eb",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C16",
+      "claim": "Light cells grew robustly when transferred to high glucose medium, as compared to dark cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, light cells grew robustly when transferred to the high glucose medium, as compared to the dark cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth curve data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "60c33edf-9508-4859-b1c4-5f4cb0662870",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C17",
+      "claim": "Only the light cells exhibited high PPP-reporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, only the light cells exhibited high PPP-reporter activity (Figure 2C, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "03f1b78b-2aed-4133-ad1a-bff1bed58980",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C18",
+      "claim": "Light cells incorporated significantly higher levels of 13C labeled glucose into PPP metabolites compared to dark cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, light cells incorporated significantly higher levels of 13C labeled glucose into PPP metabolites compared to the dark cells (Figure 2D, and Figure 2\u2014figure supplement 1B, and see Table 1 for MS parameters), showing that the light cells are in a high PPP activity state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by stable-isotope metabolic flux data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "8c475cdf-d9d7-462c-af9b-f4e7c9ab0e14",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C19",
+      "claim": "Light cells had higher flux into nucleotide biosynthesis compared to dark cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Light cells had higher flux into nucleotide biosynthesis, compared to the dark cells (Figure 2E, and see Table 1 for MS parameters).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 15N-labeling metabolic flux data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "4c2fae09-6397-4074-a33e-b82c900b962c",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C20",
+      "claim": "Light cells exhibit multiple metabolic hallmarks of cells growing in glucose-replete conditions, including increased PPP activity and increased nucleotide biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we surprisingly find that light cells exhibit multiple metabolic hallmarks of cells growing in glucose-replete conditions, including increased PPP activity, and increased nucleotide biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from multiple experimental observations including reporter activity and metabolic flux measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "28cef18a-28b2-4ff6-bbbb-e1bccc060a7a",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C21",
+      "claim": "Light cells and dark cells have contrary metabolic states in the spatially organized colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the spatially organized colony, the light cells and dark cells have contrary metabolic states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the observed differences in metabolic activities between light and dark cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "98300586-0976-4183-afcc-c87974a85f97",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C22",
+      "claim": "Light cells or dark cells, when isolated and reseeded as a new colony, both develop into indistinguishable, complex colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the light cells or dark cells, when isolated and reseeded as a new colony, both develop into indistinguishable, complex colonies (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colony morphology observations shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "4be78378-1a5b-4e04-b3f5-cab2c617cfde",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C23",
+      "claim": "The phenotypic differences between light and dark cells are fully reversible and do not require genetic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This reiterates that these phenotypic differences between the light and dark cells are fully reversible, and do not require genetic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that isolated light or dark cells can both reform complete colonies with both cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "5012f121-b8af-4d5b-9f7c-5b1c2b80543e",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C24",
+      "claim": "The mathematical model successfully recaptures the general features of the spatial patterning and organization of real colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Summarizing, this simple model successfully recaptures the general features of the spatial patterning and organization of real colonies. This includes the overall general architecture, and spatial organization of light and dark cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison between model simulations and experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "d439f799-5949-43b5-b3c0-40e57141d55e",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C25",
+      "claim": "The model requires that dark (gluconeogenic) cells produce a resource that is needed by dark cells to switch to the light state.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the model requires that dark (gluconeogenic) cells will produce a resource that is needed by dark cells to switch to the light state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is derived from the mathematical model requirements to reproduce observed colony patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "fa15ade1-3ec9-4382-b953-b2d6b5de0500",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C26",
+      "claim": "A resource produced by the dark cells is required to sustain the light state.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a resource produced by the dark cells is required to sustain the light state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is derived from the mathematical model requirements to reproduce observed colony patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "11ff7526-c977-483f-aac5-bf3b1e275fe1",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C27",
+      "claim": "Free trehalose was readily detectable in the extracellular environment of yeast colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Free trehalose was readily detectable in the extracellular environment of these colonies (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by biochemical measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "75517027-ee89-4dba-aa93-ce635c70937a",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C28",
+      "claim": "Mal11 protein amounts were substantially higher in light cells compared to dark cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mal11 protein amounts were substantially higher in the light cells compared to the dark cells (Figure 4C, and quantified in Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "3a19a98c-1672-41a6-9e68-9365dfd26f53",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C29",
+      "claim": "Light cells rapidly accumulated 13C-trehalose while dark cells did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the light cells rapidly accumulated 13C-trehalose (Figure 4D), while the dark cells did not, suggesting robust, preferential uptake of extracellular trehalose.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by stable-isotope labeling data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "bf8c27c8-2094-48dd-b9b1-88ce16b19243",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C30",
+      "claim": "Light cells had substantially higher Nth1 amounts than dark cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Light cells had substantially higher Nth1 amounts than the dark cells (Figure 4E, and quantified data shown in Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "d595c997-9a40-45b7-8315-5f63553378de",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C31",
+      "claim": "Light cells had approximately 2-fold higher in vitro enzymatic activity for Nth1 compared to dark cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured enzymatic activity for Nth1 (in vitro, using cell lysates), and found that the light cells had ~2 fold higher in vitro enzymatic activity, compared to the dark cells (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by enzymatic activity assay data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "732dddbe-673c-4a8b-8e97-fea74559c485",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C32",
+      "claim": "13C-labeled glycolytic and PPP intermediates rapidly accumulated exclusively in light cells when provided with 13C-labeled trehalose.",
+      "claim_type": "EXPLICIT",
+      "source": "13C \u2013labeled glucose-6-phosphate (which enters both glycolysis and the PPP), the glycolytic intermediates glyceraldehyde-3-phosphate and 3-phosphoglycerate, and the PPP intermediates 6-phosphogluconate, ribulose-5-phosphate and sedoheptulose-7-phosphate all rapidly accumulated exclusively in the light cells (Figure 5A, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by stable-isotope metabolic flux data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "6ee2b8ec-ece3-426a-a548-54c5274f6bc6",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C33",
+      "claim": "External trehalose is preferentially taken up only by light cells and utilized to fuel the complimentary metabolic state of the light cells with high glycolytic and PPP activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these data demonstrate that external trehalose is preferentially taken up only by the light cells, and utilized to fuel the complimentary metabolic state of the light cells, with high glycolytic and PPP activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the 13C-trehalose labeling experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "e97426fa-00a5-4b6c-b261-c45e150cd83e",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C34",
+      "claim": "Cells lacking the major trehalose transporter (\u0394mal11) formed colonies with very few light cells compared to wild-type colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to wild-type colonies, cells lacking the major trehalose uptake transporter (\u0394mal11) formed colonies with very few light cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colony morphology observations shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "395b281f-77a6-4ead-b113-f214e1677353",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C35",
+      "claim": "In colonies of cells lacking trehalase (\u0394nth1), there were nearly no detectable light cells based on brightfield microscope observations.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, in colonies of cells lacking trehalase (\u0394nth1), and which therefore cannot efficiently breakdown internal trehalose, had nearly no detectable light cells, based on brightfield microscope observations (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colony morphology observations shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "010e0b61-0d73-4800-8d25-1408765cf905",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C36",
+      "claim": "Almost no PPP reporter activity was observed in \u0394nth1 cell colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, almost no PPP reporter activity was observed in the \u0394nth1 cell colonies, while very few cells with PPP reporter activity were seen in \u0394mal11 colonies (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy and flow cytometry data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "bddc2b48-c12c-4ee3-9fba-68f13c621b64",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C37",
+      "claim": "The percentage of gluconeogenic cells was proportionately higher in \u0394mal11 (~73%) and \u0394nth1 (~80%) colonies compared to wild-type colony (~65%).",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of gluconeogenic cells was proportionately higher in the \u0394mal11 (~73%), and \u0394nth1 (~80%) colonies compared to the wild-type colony (~65%) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "b5438a95-2e90-4576-a1f4-f55dcdca1018",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C38",
+      "claim": "Controlling the uptake and utilization of trehalose directly regulates the emergence of cells in the light state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, controlling the uptake and utilization of the resource (trehalose) directly regulates the emergence of cells in the light state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from the genetic deletion experiments showing reduced light cells in \u0394mal11 and \u0394nth1 colonies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "6413c8f3-d202-4ea3-9eca-a270441a1965",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C39",
+      "claim": "Trehalose is the shared gluconeogenic resource that determines the emergence and persistence of light cells within the structured colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data demonstrate that trehalose is the shared gluconeogenic resource that determines the emergence, and persistence, of light cells within the structured colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference drawn from multiple experiments showing trehalose production, uptake, utilization, and genetic requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "c37125d9-6fec-4c4a-818d-2f9da0ffab76",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C40",
+      "claim": "Trehalose amounts steadily increased over 4 days and subsequently rapidly decreased in developing colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, trehalose amounts steadily increased over 4 days, and subsequently rapidly decreased (Figure 6B lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by biochemical measurements of extracellular trehalose over time shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "216ae384-e960-4d4d-a193-475c66358cb2",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C41",
+      "claim": "The rapid decrease in trehalose after day four occurs despite a steady, continuing increase in the total number of cells in the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "This rapid decrease in trehalose after day four is despite a steady, continuing increase in the total number of cells in the colony (Figure 6\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell count data shown in Figure 6\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "9d333b2e-7824-440f-a8f9-bad557f4b819",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C42",
+      "claim": "Light cells appeared only after approximately 4 days and rapidly increased in number.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the light cells appeared only after ~4 days, and rapidly increased in number (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-course microscopy observations shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "6d7094e5-76d0-477d-9d6f-8d4f807a0c5c",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C43",
+      "claim": "The increase in total fluorescence intensity due to the gluconeogenic-reporter in the colony over time was relatively linear over the first four days (r2 = 0.99).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the increase in total fluorescence intensity due to the gluconeogenic-reporter in the colony (over time) was relatively linear over the first four days (r2 = 0.99), increasing with the steady increase in the number of cells (Figure 6\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorescence measurements shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "18b68289-15d8-4fe2-89c1-65845dc569f0",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C44",
+      "claim": "The increase in the PPP reporter activity over the first five days was clearly non-linear and switch-like, with very low signal intensity for the first three days and then a rapid emergence of signal over days four and five.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, the increase in the PPP reporter activity over the first five days was clearly non-linear and switch like, with very low signal intensity for the first three days, and then a rapid emergence of signal over days four and five (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorescence measurements shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "567b9f6d-e9d3-4a34-b720-a5ef3571df85",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C45",
+      "claim": "Over the first five days, the increase in PPP-reporter activity showed a Hill coefficient greater than 1, indicating a positively cooperative switch of cells to the light state.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the first five days the increase in PPP-reporter activity showed a Hill coefficient greater than 1, indicating a positively cooperative switch of cells to the light state (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of fluorescence data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "41f38b47-5349-4568-ab6a-a992643de11c",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C46",
+      "claim": "Wild-type colonies spread over a significantly greater area on the plate compared to \u0394nth1 colonies over approximately 21 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed that as the respective colonies expanded over time (~21 days), the wild-type colonies spread over a significantly greater area on the plate, while the \u0394nth1 colonies were unable to expand as efficiently (Figure 7A and Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colony spreading measurements shown in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "efd11d24-54eb-4d9d-b389-83d405fbde00",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C47",
+      "claim": "The emergence and proliferation of light cells are important for the expansion of the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the emergence and proliferation of light cells are important for the expansion of the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that \u0394nth1 colonies lacking light cells expand less than wild-type colonies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "8f7c78c0-bbf3-4c13-9a8e-fa1f54b591e1",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C48",
+      "claim": "The community uses cells in distinct metabolic states to maximize growth and spatial expansion, possibly to forage for new nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the dark cells are required for the emergence and existence of the light cells, collectively, these data suggest how the community uses cells in distinct metabolic states to maximize growth and spatial expansion, possibly to forage for new nutrients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observed growth advantage of colonies with both cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "73a27aa8-3b9e-4c1c-a74c-aa1824ca7414",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C49",
+      "claim": "Metabolic constraints imposed on a population of isogenic cells can determine the production, accumulation, and utilization of a specific, shared resource.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, using clonal yeast cells, we experimentally and theoretically show how metabolic constraints imposed on a population of isogenic cells can determine the production, accumulation, and utilization of a specific, shared resource.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the overall findings from both experimental and modeling work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "03059c58-d423-43e1-bba7-b73baabe629e",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C50",
+      "claim": "The selective utilization of trehalose enables the spontaneous emergence and persistence of cells exhibiting a counter-intuitive metabolic state with spatial organization.",
+      "claim_type": "EXPLICIT",
+      "source": "The selective utilization of this resource enables the spontaneous emergence and persistence of cells exhibiting a counter-intuitive metabolic state, with spatial organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the overall findings from experimental work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "a6c2072f-19f7-462e-a375-ffdf61dcf58c",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C51",
+      "claim": "Metabolic constraints create inherent threshold effects, enabling some cells to switch to new metabolic states while restraining other cells to the original state which produces the resource.",
+      "claim_type": "EXPLICIT",
+      "source": "These metabolic constraints create inherent threshold effects, enabling some cells to switch to new metabolic states, while restraining other cells to the original state which produces the resource.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is derived from both modeling and experimental observations of threshold-dependent switching.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "3380ab29-5130-407f-bc28-d60fb6f4f843",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C52",
+      "claim": "This group of spatially organized, metabolically distinct cells confer a collective growth advantage to the community of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, this group of spatially organized, metabolically distinct cells confer a collective growth advantage to the community of cells, rationalizing why such spatial self-organization of cells into distinct metabolic states benefits the cell community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the colony expansion experiments comparing wild-type and \u0394nth1 colonies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "89a8fa78-c8a2-454b-8cfa-bb4255046613",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C53",
+      "claim": "Trehalose has been observed in the extracellular environment in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Trehalose has been observed in the extracellular environment in yeast (Parrou et al., 2005), and yeast can uptake trehalose through disaccharide transporters (Jules et al., 2008; Stambuk, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "593d9b93-0583-405f-afaf-951577051d21",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C54",
+      "claim": "Yeast can uptake trehalose through disaccharide transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Trehalose has been observed in the extracellular environment in yeast (Parrou et al., 2005), and yeast can uptake trehalose through disaccharide transporters (Jules et al., 2008; Stambuk, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "decf3550-6b73-4f96-9f7a-9fb9e5aa71d2",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C55",
+      "claim": "Trehalose can be rapidly and specifically hydrolyzed to two glucose molecules, which can fuel glycolysis and re-entry into the cell division cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, trehalose can be rapidly and specifically hydrolyzed to two glucose molecules, which can fuel glycolysis and re-entry into the cell division cycle (Laporte et al., 2011; Shi et al., 2010; Shi and Tu, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "7c622995-763a-401d-8106-3b886c96a321",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C56",
+      "claim": "During the course of development, groups of isogenic cells often form spatially organized, interdependent communities.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of development, groups of isogenic cells often form spatially organized, interdependent communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "75563274-4890-4286-9412-176ed842787c",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C57",
+      "claim": "The emergence of phenotypically heterogeneous, spatially constrained sub-populations of cells is considered a requisite first step towards multicellularity.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of such phenotypically heterogeneous, spatially constrained sub-populations of cells is considered a requisite first step towards multicellularity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about multicellularity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "436fc2ea-a897-4f7a-91ac-7738aa95429c",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C58",
+      "claim": "Phenotypic heterogeneity within groups of clonal cells enables several microbes to persist in fluctuating environments, thereby providing an adaptive benefit for the cell community.",
+      "claim_type": "EXPLICIT",
+      "source": "Such phenotypic heterogeneity within groups of clonal cells enables several microbes to persist in fluctuating environments, thereby providing an adaptive benefit for the cell community (Wolf et al., 2005; Thattai and van Oudenaarden, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "38ee5d02-ad01-4c26-a5dd-6baff7829f26",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C59",
+      "claim": "Natural isolates of Saccharomyces cerevisiae form phenotypically heterogeneous, multicellular communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its popular perception as a unicellular microbe, natural isolates of the budding yeast, Saccharomyces cerevisiae, also form phenotypically heterogeneous, multicellular communities (C\u00e1p et al., 2012; Koschwanez et al., 2011; Palkov\u00e1 and V\u00e1chov\u00e1, 2016; Ratcliff et al., 2012; V\u00e1chov\u00e1 and Palkov\u00e1, 2018; Veelders et al., 2010; Wloch-Salamon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "aadfb0dd-4131-4084-aeed-b6cd4e0c56e5",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C60",
+      "claim": "A common theme in nearly all described examples of phenotypically heterogeneous, isogenic groups of cells is a requirement of some 'metabolic stress' or nutrient limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, a common theme occurs in nearly all described examples of phenotypically heterogeneous, isogenic groups of cells. This is a requirement of some 'metabolic stress' or nutrient limitation that is necessary for the emergence of phenotypic heterogeneity and spatial organization, typically in the form of metabolically inter-dependent cells (Ackermann, 2015; Campbell et al., 2016; C\u00e1p et al., 2012; Johnson et al., 2012; Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "11349a06-d035-4014-bc17-65d88342f38e",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C61",
+      "claim": "The carbon backbone (ribose-5-phosphate) of newly synthesized nucleotides is derived from the PPP, while the nitrogen backbone comes from amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The carbon backbone (ribose-5-phosphate) of newly synthesized nucleotides is derived from the PPP, while the nitrogen backbone comes from amino acids (Nelson and Cox, 2013; Figure 2B, and see Table 1 for MS parameters).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established biochemical knowledge cited from a textbook.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "689a18ee-3c4f-4a2d-b3a3-4bbbca8a1287",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "claim_id": "C62",
+      "claim": "High nucleotide synthesis is a canonical consequence of enhanced PPP activity.",
+      "claim_type": "EXPLICIT",
+      "source": "High nucleotide synthesis is a canonical consequence of enhanced PPP activity (Nelson and Cox, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established biochemical knowledge cited from a textbook.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9c463659-ee3f-482c-b8f3-94425296ebe7",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Low glucose concentration is required for S. cerevisiae to form rugose colonies with complex architecture, as colonies do not form in high glucose medium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are supported by direct experimental observations (Figure 1A) comparing colony morphology under different glucose conditions, and are consistent with previously established findings cited in C2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "4d89ea52-88a5-4871-9d62-522f35a63556",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Within mature yeast colonies grown in low glucose, cells spatially organize into metabolically distinct regions: dark cells with high gluconeogenic activity (high Pck1, Fbp1, trehalose, and glycogen) and light cells lacking gluconeogenic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C14 collectively demonstrate spatial metabolic specialization through multiple complementary approaches: visual observation (C3), fluorescent reporters (C7-C11), protein expression (implied in C8-C9), and metabolite measurements (C13). The flow cytometry data showing ~80% of dark cells and ~97% of light cells with distinct gluconeogenic profiles provides strong quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "2e7dc5f8-4cf7-4f00-85fb-49a4075aaca8",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cells growing in glucose-limited conditions are expected to have constitutively high hexokinase (Hxk1p) expression and extensive gluconeogenesis with high levels of gluconeogenic enzymes Pck1 and Fbp1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 establish the expected metabolic state in low glucose conditions based on established knowledge (C4, C5) and confirm this experimentally with Western blot data (C6, Figure 1\u2014figure supplement 1A). This provides the baseline expectation against which the unexpected spatial organization is compared.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "6dab4118-2b71-4756-b886-41b69d398848",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Light cells exhibit metabolic characteristics of glucose-replete conditions (high PPP activity, high nucleotide biosynthesis, better growth in high glucose) while dark cells show gluconeogenic characteristics, representing contrary metabolic states within the same colony.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C21 are well-supported by multiple lines of evidence: growth assays (C15-C16, Figure 2A), fluorescent reporters (C17), stable isotope tracing showing differential 13C-glucose incorporation into PPP metabolites (C18, Figure 2D), and 15N incorporation into nucleotides (C19, Figure 2E). The convergence of these independent measurements strongly supports the conclusion of contrary metabolic states (C20-C21).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "39824d70-cf74-4f90-a249-f29324e26ee7",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The phenotypic differences between light and dark cells are fully reversible without genetic changes, as isolated cells from either population can reform complete colonies with both cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by colony reformation experiments (Figure 2F) showing that isolated light or dark cells both regenerate indistinguishable complex colonies. This demonstrates phenotypic plasticity rather than genetic differentiation, though the number of replicates and quantitative assessment of similarity are not specified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "72437c03-488b-42da-afac-7fb0ad5df3e1",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A mathematical model incorporating resource production by dark cells, resource-dependent switching to the light state, and resource consumption by light cells successfully recaptures the spatial patterning and organization observed in real colonies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by model simulations (Figure 3D, Video 1) that reproduce key features of colony organization. The model's requirements (C25-C26) are validated by control simulations (Figure 3E) showing that removing these features prevents proper colony formation. However, the model is intentionally coarse-grained and simplified, which limits its quantitative predictive power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "7709584b-5a42-4a53-8006-e783083430f3",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Trehalose is present extracellularly in colonies and is preferentially taken up and utilized by light cells, which have higher levels of the trehalose transporter Mal11 and trehalase Nth1, and show exclusive accumulation of 13C-labeled metabolites from 13C-trehalose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 provide strong convergent evidence for trehalose as the key resource: extracellular detection (C27, Figure 4B), differential protein expression (C28, C30), 13C-trehalose uptake (C29, Figure 4D), enzymatic activity (C31, Figure 4F), and metabolic flux showing 13C-labeled glycolytic/PPP intermediates exclusively in light cells (C32, Figure 5A). The multiple independent measurements strongly support the conclusion (C33).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "f20221fb-6cc7-4617-a316-c7a8efb3ad71",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genetic deletion of the trehalose transporter (\u0394mal11) or trehalase (\u0394nth1) prevents the emergence of light cells, demonstrating that trehalose uptake and utilization directly control the emergence and persistence of the light cell state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are strongly supported by genetic deletion experiments showing that \u0394mal11 and \u0394nth1 colonies have very few or nearly no light cells (C34-C36, Figure 5B-C), with correspondingly higher percentages of gluconeogenic cells (C37, Figure 5D). This genetic validation provides strong causal evidence that trehalose metabolism controls light cell emergence (C38-C39).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "e1901dbd-0614-457c-bdb4-abb789c42d8b",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "During colony development, extracellular trehalose builds up over 4 days then rapidly decreases, coinciding with the delayed, switch-like emergence of light cells after day 4, with PPP reporter activity showing cooperative switching (Hill coefficient >1) while gluconeogenic activity increases linearly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 are supported by time-course measurements of extracellular trehalose (C40-C41, Figure 6B), microscopy observations (C42, Figure 6C), and quantitative fluorescence measurements (C43-C45, Figure 6E). The correlation between trehalose dynamics and light cell emergence, along with the Hill coefficient analysis indicating cooperativity, provides strong support for a threshold-based switching mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "80c379a1-7523-426d-bc5a-f05689053f98",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Wild-type colonies with both light and dark cells spread over significantly greater area compared to \u0394nth1 colonies lacking light cells, demonstrating that metabolic specialization provides a collective growth advantage for spatial expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by long-term colony expansion measurements (Figure 7A-B) showing significantly greater spreading of wild-type versus \u0394nth1 colonies over 21 days. However, C48's speculation about foraging for nutrients is not directly tested and represents an interpretation rather than demonstrated fact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "ea52d84e-6954-4104-a077-1ab45b01631d",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Metabolic constraints in isogenic cell populations can drive the production, accumulation, and threshold-dependent utilization of a shared resource (trehalose), enabling spontaneous emergence of cells in contrary metabolic states with spatial organization that confers collective growth advantages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 represent the overarching conclusions synthesizing experimental and modeling results. These are well-supported by the collective evidence from metabolic characterization, trehalose identification, genetic validation, temporal dynamics, and colony expansion experiments. The integration of experimental and theoretical approaches provides strong support for these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "f5d64c46-c81c-43d1-9250-4183a302fff1",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has established that trehalose can be found extracellularly in yeast, can be taken up through disaccharide transporters, and can be hydrolyzed to glucose to fuel glycolysis and cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by appropriate citations to previous studies. These establish the biological plausibility of trehalose as the key metabolic resource and provide the foundation for the experimental investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "cfc1e89f-28a6-473a-a0b6-eb90ba1ba036",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has established that isogenic cells form spatially organized communities during development, that phenotypic heterogeneity is a step toward multicellularity, that such heterogeneity provides adaptive benefits, that S. cerevisiae forms such communities, and that metabolic stress is commonly required for this organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 provide appropriate background context supported by citations to relevant literature. These establish the broader scientific context and significance of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    },
+    {
+      "id": "6518dad8-d884-4611-9938-c40847bbdac1",
+      "content_id": "fc04e22a-46d4-4c4a-b525-07a40c71b72f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The carbon backbone of nucleotides comes from the pentose phosphate pathway (PPP) while nitrogen comes from amino acids, and high nucleotide synthesis is a canonical consequence of enhanced PPP activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 represent established biochemical knowledge appropriately cited from a standard textbook. This provides the biochemical rationale for using nucleotide synthesis as a readout of PPP activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:50:34.893055Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "823226c3-65bf-46a8-8eb6-8a0f12a09227",
+      "result_id": "9c463659-ee3f-482c-b8f3-94425296ebe7"
+    },
+    {
+      "claim_id": "c5425db9-a5b8-4054-a189-f850fa60ac0a",
+      "result_id": "9c463659-ee3f-482c-b8f3-94425296ebe7"
+    },
+    {
+      "claim_id": "ea3e80e3-1e19-4260-b47e-8d77a503aa9f",
+      "result_id": "4d89ea52-88a5-4871-9d62-522f35a63556"
+    },
+    {
+      "claim_id": "dd647700-9817-44ba-a2ea-7209085806a1",
+      "result_id": "4d89ea52-88a5-4871-9d62-522f35a63556"
+    },
+    {
+      "claim_id": "0903d7e9-c8f0-411e-a5c9-316891adb25f",
+      "result_id": "4d89ea52-88a5-4871-9d62-522f35a63556"
+    },
+    {
+      "claim_id": "753f233d-fc8c-4422-bde8-b89cb319563b",
+      "result_id": "4d89ea52-88a5-4871-9d62-522f35a63556"
+    },
+    {
+      "claim_id": "27c6f17e-f97f-4085-b122-d8991e16457e",
+      "result_id": "4d89ea52-88a5-4871-9d62-522f35a63556"
+    },
+    {
+      "claim_id": "3ff3da52-711b-46f2-a518-58065105d814",
+      "result_id": "4d89ea52-88a5-4871-9d62-522f35a63556"
+    },
+    {
+      "claim_id": "b4fb3616-8acd-4d64-ad82-e3f1734658e7",
+      "result_id": "4d89ea52-88a5-4871-9d62-522f35a63556"
+    },
+    {
+      "claim_id": "791a2426-402b-4b9e-9f85-0a0f2ed52ebb",
+      "result_id": "4d89ea52-88a5-4871-9d62-522f35a63556"
+    },
+    {
+      "claim_id": "df8a52c2-5928-4114-a909-344b040c46f3",
+      "result_id": "2e7dc5f8-4cf7-4f00-85fb-49a4075aaca8"
+    },
+    {
+      "claim_id": "ad7994e2-a91f-4152-9fa9-1a43bbb4b505",
+      "result_id": "2e7dc5f8-4cf7-4f00-85fb-49a4075aaca8"
+    },
+    {
+      "claim_id": "893dbca7-5f46-4adf-a769-53155a443d21",
+      "result_id": "2e7dc5f8-4cf7-4f00-85fb-49a4075aaca8"
+    },
+    {
+      "claim_id": "a1a9473b-de9f-41ad-933f-ce3902395a1a",
+      "result_id": "6dab4118-2b71-4756-b886-41b69d398848"
+    },
+    {
+      "claim_id": "8f19e09e-fc75-4298-bdd2-39972c39b6eb",
+      "result_id": "6dab4118-2b71-4756-b886-41b69d398848"
+    },
+    {
+      "claim_id": "60c33edf-9508-4859-b1c4-5f4cb0662870",
+      "result_id": "6dab4118-2b71-4756-b886-41b69d398848"
+    },
+    {
+      "claim_id": "03f1b78b-2aed-4133-ad1a-bff1bed58980",
+      "result_id": "6dab4118-2b71-4756-b886-41b69d398848"
+    },
+    {
+      "claim_id": "8c475cdf-d9d7-462c-af9b-f4e7c9ab0e14",
+      "result_id": "6dab4118-2b71-4756-b886-41b69d398848"
+    },
+    {
+      "claim_id": "4c2fae09-6397-4074-a33e-b82c900b962c",
+      "result_id": "6dab4118-2b71-4756-b886-41b69d398848"
+    },
+    {
+      "claim_id": "28cef18a-28b2-4ff6-bbbb-e1bccc060a7a",
+      "result_id": "6dab4118-2b71-4756-b886-41b69d398848"
+    },
+    {
+      "claim_id": "98300586-0976-4183-afcc-c87974a85f97",
+      "result_id": "39824d70-cf74-4f90-a249-f29324e26ee7"
+    },
+    {
+      "claim_id": "4be78378-1a5b-4e04-b3f5-cab2c617cfde",
+      "result_id": "39824d70-cf74-4f90-a249-f29324e26ee7"
+    },
+    {
+      "claim_id": "5012f121-b8af-4d5b-9f7c-5b1c2b80543e",
+      "result_id": "72437c03-488b-42da-afac-7fb0ad5df3e1"
+    },
+    {
+      "claim_id": "d439f799-5949-43b5-b3c0-40e57141d55e",
+      "result_id": "72437c03-488b-42da-afac-7fb0ad5df3e1"
+    },
+    {
+      "claim_id": "fa15ade1-3ec9-4382-b953-b2d6b5de0500",
+      "result_id": "72437c03-488b-42da-afac-7fb0ad5df3e1"
+    },
+    {
+      "claim_id": "11ff7526-c977-483f-aac5-bf3b1e275fe1",
+      "result_id": "7709584b-5a42-4a53-8006-e783083430f3"
+    },
+    {
+      "claim_id": "75517027-ee89-4dba-aa93-ce635c70937a",
+      "result_id": "7709584b-5a42-4a53-8006-e783083430f3"
+    },
+    {
+      "claim_id": "3a19a98c-1672-41a6-9e68-9365dfd26f53",
+      "result_id": "7709584b-5a42-4a53-8006-e783083430f3"
+    },
+    {
+      "claim_id": "bf8c27c8-2094-48dd-b9b1-88ce16b19243",
+      "result_id": "7709584b-5a42-4a53-8006-e783083430f3"
+    },
+    {
+      "claim_id": "d595c997-9a40-45b7-8315-5f63553378de",
+      "result_id": "7709584b-5a42-4a53-8006-e783083430f3"
+    },
+    {
+      "claim_id": "732dddbe-673c-4a8b-8e97-fea74559c485",
+      "result_id": "7709584b-5a42-4a53-8006-e783083430f3"
+    },
+    {
+      "claim_id": "6ee2b8ec-ece3-426a-a548-54c5274f6bc6",
+      "result_id": "7709584b-5a42-4a53-8006-e783083430f3"
+    },
+    {
+      "claim_id": "e97426fa-00a5-4b6c-b261-c45e150cd83e",
+      "result_id": "f20221fb-6cc7-4617-a316-c7a8efb3ad71"
+    },
+    {
+      "claim_id": "395b281f-77a6-4ead-b113-f214e1677353",
+      "result_id": "f20221fb-6cc7-4617-a316-c7a8efb3ad71"
+    },
+    {
+      "claim_id": "010e0b61-0d73-4800-8d25-1408765cf905",
+      "result_id": "f20221fb-6cc7-4617-a316-c7a8efb3ad71"
+    },
+    {
+      "claim_id": "bddc2b48-c12c-4ee3-9fba-68f13c621b64",
+      "result_id": "f20221fb-6cc7-4617-a316-c7a8efb3ad71"
+    },
+    {
+      "claim_id": "b5438a95-2e90-4576-a1f4-f55dcdca1018",
+      "result_id": "f20221fb-6cc7-4617-a316-c7a8efb3ad71"
+    },
+    {
+      "claim_id": "6413c8f3-d202-4ea3-9eca-a270441a1965",
+      "result_id": "f20221fb-6cc7-4617-a316-c7a8efb3ad71"
+    },
+    {
+      "claim_id": "c37125d9-6fec-4c4a-818d-2f9da0ffab76",
+      "result_id": "e1901dbd-0614-457c-bdb4-abb789c42d8b"
+    },
+    {
+      "claim_id": "216ae384-e960-4d4d-a193-475c66358cb2",
+      "result_id": "e1901dbd-0614-457c-bdb4-abb789c42d8b"
+    },
+    {
+      "claim_id": "9d333b2e-7824-440f-a8f9-bad557f4b819",
+      "result_id": "e1901dbd-0614-457c-bdb4-abb789c42d8b"
+    },
+    {
+      "claim_id": "6d7094e5-76d0-477d-9d6f-8d4f807a0c5c",
+      "result_id": "e1901dbd-0614-457c-bdb4-abb789c42d8b"
+    },
+    {
+      "claim_id": "18b68289-15d8-4fe2-89c1-65845dc569f0",
+      "result_id": "e1901dbd-0614-457c-bdb4-abb789c42d8b"
+    },
+    {
+      "claim_id": "567b9f6d-e9d3-4a34-b720-a5ef3571df85",
+      "result_id": "e1901dbd-0614-457c-bdb4-abb789c42d8b"
+    },
+    {
+      "claim_id": "41f38b47-5349-4568-ab6a-a992643de11c",
+      "result_id": "80c379a1-7523-426d-bc5a-f05689053f98"
+    },
+    {
+      "claim_id": "efd11d24-54eb-4d9d-b389-83d405fbde00",
+      "result_id": "80c379a1-7523-426d-bc5a-f05689053f98"
+    },
+    {
+      "claim_id": "8f7c78c0-bbf3-4c13-9a8e-fa1f54b591e1",
+      "result_id": "80c379a1-7523-426d-bc5a-f05689053f98"
+    },
+    {
+      "claim_id": "73a27aa8-3b9e-4c1c-a74c-aa1824ca7414",
+      "result_id": "ea52d84e-6954-4104-a077-1ab45b01631d"
+    },
+    {
+      "claim_id": "03059c58-d423-43e1-bba7-b73baabe629e",
+      "result_id": "ea52d84e-6954-4104-a077-1ab45b01631d"
+    },
+    {
+      "claim_id": "a6c2072f-19f7-462e-a375-ffdf61dcf58c",
+      "result_id": "ea52d84e-6954-4104-a077-1ab45b01631d"
+    },
+    {
+      "claim_id": "3380ab29-5130-407f-bc28-d60fb6f4f843",
+      "result_id": "ea52d84e-6954-4104-a077-1ab45b01631d"
+    },
+    {
+      "claim_id": "89a8fa78-c8a2-454b-8cfa-bb4255046613",
+      "result_id": "f5d64c46-c81c-43d1-9250-4183a302fff1"
+    },
+    {
+      "claim_id": "593d9b93-0583-405f-afaf-951577051d21",
+      "result_id": "f5d64c46-c81c-43d1-9250-4183a302fff1"
+    },
+    {
+      "claim_id": "decf3550-6b73-4f96-9f7a-9fb9e5aa71d2",
+      "result_id": "f5d64c46-c81c-43d1-9250-4183a302fff1"
+    },
+    {
+      "claim_id": "7c622995-763a-401d-8106-3b886c96a321",
+      "result_id": "cfc1e89f-28a6-473a-a0b6-eb90ba1ba036"
+    },
+    {
+      "claim_id": "75563274-4890-4286-9412-176ed842787c",
+      "result_id": "cfc1e89f-28a6-473a-a0b6-eb90ba1ba036"
+    },
+    {
+      "claim_id": "436fc2ea-a897-4f7a-91ac-7738aa95429c",
+      "result_id": "cfc1e89f-28a6-473a-a0b6-eb90ba1ba036"
+    },
+    {
+      "claim_id": "38ee5d02-ad01-4c26-a5dd-6baff7829f26",
+      "result_id": "cfc1e89f-28a6-473a-a0b6-eb90ba1ba036"
+    },
+    {
+      "claim_id": "aadfb0dd-4131-4084-aeed-b6cd4e0c56e5",
+      "result_id": "cfc1e89f-28a6-473a-a0b6-eb90ba1ba036"
+    },
+    {
+      "claim_id": "11349a06-d035-4014-bc17-65d88342f38e",
+      "result_id": "6518dad8-d884-4611-9938-c40847bbdac1"
+    },
+    {
+      "claim_id": "689a18ee-3c4f-4a2d-b3a3-4bbbca8a1287",
+      "result_id": "6518dad8-d884-4611-9938-c40847bbdac1"
+    }
+  ],
+  "comparisons": []
+}

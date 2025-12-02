@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C157"
+    ],
+    "result": "The anchor-away system effectively depletes GTFs from the nucleus without affecting their function under non-depleting conditions. Growth of anchor-away strains is comparable to wild-type in the absence of rapamycin, but fails upon rapamycin treatment. GTF binding at promoters is reduced to background levels within 1 hour of rapamycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 and C157 provide converging evidence that the anchor-away system is functional and effective. Growth assays (C45, C47) demonstrate that FRB tagging does not impair function (C46), while ChIP data (C48) confirms efficient depletion (C49). The methodology is clearly described (C157) and validated through multiple independent measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C62",
+      "C116",
+      "C117"
+    ],
+    "result": "All GTFs are essential for Pol II transcription in vivo. Depletion of any individual GTF (TBP, TFIIA, TFIIB, TFIIE, TFIIF, TFIIH) drastically reduces Pol II occupancy at coding regions to near-background levels across the genome. The residual transcription observed is due to incomplete depletion rather than GTF-independent transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51, C52, C62, C116, and C117 are strongly supported by genome-wide ChIP-seq data (Figure 2) and individual gene analyses (Figure 1C). The interpretation that residual transcription reflects incomplete depletion is validated by constant GTF:Pol II occupancy ratios (C60, C102), which would not be maintained if GTF-independent transcription were occurring. This represents a major finding that resolves prior controversies about GTF requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Loss of TBP results in immediate cessation of transcriptional initiation, as demonstrated by kinetically similar decreases in TBP and Pol II occupancies upon TBP depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C55 are supported by time-course ChIP data (Figure 2C) showing parallel kinetics of TBP and Pol II loss. The inference that this reflects immediate cessation of initiation (C55) is logical given that continued initiation would maintain Pol II levels even as TBP is depleted. This provides direct evidence for TBP's essential role in each initiation event.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "Induction of heat shock genes is very strongly decreased upon GTF depletion, though not completely eliminated. The residual induction is due to incomplete depletion, as GTF:Pol II occupancy ratios remain constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, C60, and C61 are supported by experimental data (Figures 3A, 3B). The interpretation that residual activity reflects incomplete depletion (C61) is validated by constant occupancy ratios (C60), consistent with the anchor-away system working less efficiently under stress conditions (C58). This extends the finding of universal GTF requirement to inducible genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C71"
+    ],
+    "result": "Each GTF is required for stable PIC formation in vivo, and partial PICs containing GTF subsets do not exist at appreciable levels. TBP occupancy is drastically reduced upon depletion of any individual GTF, and TBP:Pol II and TBP:GTF occupancy ratios remain constant upon GTF depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C63-C65, C67, and C71 are strongly supported by ChIP data (Figures 4A-C) showing that TBP occupancy drops dramatically when any GTF is depleted, while occupancy ratios remain constant. This contrasts sharply with in vitro observations of stable partial PICs (C4, C20, C126) and represents a major finding about PIC dynamics in vivo. The caveat that metastable partial PICs at earlier time points cannot be excluded (C135) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors challenge a prior report claiming partial PICs exist during heat shock. Re-analysis shows the reported occupancy ratio changes were modest, and direct measurements at the same genes show no increased TFIIB:Pol II ratios upon heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by re-analysis of prior data (C69) and new experimental measurements (C70, Figure 4D). The critical evaluation of Zanton and Pugh (2006) is appropriate and the new data directly address the prior claim. This strengthens the conclusion that partial PICs do not exist at appreciable levels in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C81",
+      "C88"
+    ],
+    "result": "PICs are absent in cells deprived of uracil, with TBP and Pol II occupancies dropping to extremely low levels after 4 hours. This effect is specific to uracil depletion and not observed with leucine depletion, suggesting that transcriptionally inactive PICs are removed from promoters in vivo due to absence of UTP precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C74-C76, C80, C81, and C88 are supported by time-course experiments comparing uracil and leucine depletion (Figure 5). The specificity of the effect to uracil depletion (C84-C86) and its occurrence at Pol I, II, and III promoters (C81) support the interpretation that UTP limitation causes PIC removal (C88, C143). The control showing that growth arrest per se does not cause PIC loss (C82) strengthens this conclusion. This represents a novel finding about PIC stability in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The TBP:Pol II occupancy ratio decreases at intermediate times (15-60 min) of uracil depletion, consistent with Pol II buildup caused by reduced elongation due to decreased UTP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C78 are supported by experimental data (Figure 5D) and the interpretation is mechanistically sound. The transient change in occupancy ratio provides evidence that UTP levels are decreasing but not yet absent at intermediate time points, supporting the overall model of UTP-dependent PIC stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C90",
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "Depletion of FACT, a histone chaperone that travels with elongating Pol II, strongly reduces both Pol II occupancy throughout the genome and TFIIB occupancy at promoters, indicating that FACT is important for PIC formation or stability despite not being a PIC component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C90-C92, and C94 are supported by ChIP-seq data (Figure 6) showing coordinate reduction of Pol II and TFIIB upon FACT depletion. The interpretation that elongation factors can affect PIC levels (C94) is novel and mechanistically interesting, though the mechanism remains unknown. This finding connects elongation and initiation processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C53",
+      "C95",
+      "C96",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C115",
+      "C148",
+      "C168"
+    ],
+    "result": "TAFs contribute to transcription of most genes but are not required for Pol II transcription. Taf1 depletion causes only a modest (~2-fold) decrease in transcription overall, with significantly stronger effects at TATA-lacking vs. TATA-containing genes. Substantial transcription and TBP occupancy occurs when Tafs are virtually absent from promoters, demonstrating the existence of functional PICs lacking TAFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C53, C95, C96, C103-C105, C107, C115, C148, and C168 are strongly supported by genome-wide ChIP-seq data (Figures 2, 7) and individual gene analyses showing that TBP, TFIIA, and TFIIB remain at promoters when Taf1 is depleted to undetectable levels (C97-C101). The differential effects on SAGA vs. TFIID genes (C96, C111, C168) and the demonstration that Taf1 behaves differently from GTFs (C102, C103) represent major findings that resolve controversies in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C169"
+    ],
+    "result": "The authors reconcile their findings with a prior study (Warfield et al. 2017) that claimed Taf depletion affects all genes equally. Re-analysis shows that when restricted to actively transcribed genes, both datasets show clear distinctions between SAGA and TFIID genes, with the prior study's conclusions likely masked by poor signal-to-noise in lowly expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111, C113, C114, and C169 are supported by re-analysis of published data (Figure 7F, Figure 7\u2014figure supplement 2) showing that the same dataset yields different conclusions depending on which genes are analyzed. The critical evaluation of methodology (C109) is appropriate and the reconciliation strengthens confidence in both studies' experimental results while clarifying the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C147",
+      "C149",
+      "C150",
+      "C151",
+      "C153"
+    ],
+    "result": "There are TAF-containing (TFIID) and TAF-lacking forms of transcriptionally active TBP. The relative usage of these forms depends on the promoter and occurs in a continuum, with the TFIID form particularly important at TATA-lacking promoters and the TAF-independent form typically requiring a canonical TATA element. Both forms typically contribute to transcriptional activity of a given gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147, C149-C151, and C153 are supported by the Taf1 depletion experiments (Figure 7) showing variable Taf1:TBP ratios (C106, C165) and differential effects on different promoter classes (C96, C98-C101). This model integrates the current findings with prior work (C37-C40) and provides a mechanistic framework for understanding TFIID function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The discrepancies between in vitro and in vivo GTF requirements are noteworthy. The observation that TFIIE, TFIIF, and TFIIH are not required for in vitro transcription on negatively supercoiled templates is not relevant under physiological conditions, suggesting that DNA templates are not negatively supercoiled in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 provide important context for interpreting the in vivo findings relative to prior in vitro work (C2, C14-C16). The inference that DNA is not negatively supercoiled in vivo (C120) is logical given that the factors dispensable on supercoiled templates in vitro are essential in vivo. This discussion appropriately addresses the relationship between in vitro and in vivo systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The general requirement for TFIIA in vivo is unexpected given prior in vitro and in vivo studies suggesting it is stimulatory but not essential. The findings indicate that TFIIA's ability to stabilize TBP binding to promoters is essential under physiological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121 and C122 are supported by the GTF depletion experiments showing TFIIA behaves like other essential GTFs (C5, C51, C52, C62). The discussion appropriately addresses prior conflicting results (C14, C24) and explains how methodological limitations (use of mRNA measurements, inability to assess depletion completeness) may have led to incorrect conclusions. This represents an important clarification of TFIIA's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C141"
+    ],
+    "result": "Cells have mechanism(s) to prevent stable, transcriptionally inactive PICs despite the intrinsic ability of GTFs to form them. The PIC is extremely dynamic, both with respect to Mediator dissociation and to the instability of partial PICs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127 and C141 are supported by the contrast between in vitro PIC stability (C3, C17, C125) and in vivo instability (C6, C11, C67). The integration with prior findings about Mediator dynamics (C136-C140) provides a comprehensive view of PIC dynamics. However, the specific mechanism(s) preventing inactive PIC accumulation remain unknown (C144-C146), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "TAFs and Mediator contribute to PIC levels at most (and probably all) promoters, but they are not essential for PIC formation and hence are not GTFs. Transcriptionally active PICs can exist in the absence of TAFs or Mediator but not GTFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123 and C124 are supported by the differential effects of depleting GTFs (drastic reduction) versus TAFs (modest reduction) on transcription (Figures 2, 7). The distinction between factors that contribute to PIC levels versus those essential for PIC formation is important for defining GTFs. This clarifies the functional roles of different transcription factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors critically evaluate prior experiments using temperature-sensitive mutants, noting that incomplete inactivation, lack of occupancy measurements, and use of mRNA levels at early time points may have led to incorrect conclusions about TBP retention at TAF-dependent promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C132 are speculative (C130 is explicitly marked as speculation) about limitations of prior experiments, while C133-C134 cite more recent work that supports the current findings. The critical evaluation is reasonable but the speculation about prior experiments' limitations (C130-C132) cannot be definitively verified without re-examining those experiments. The reconciliation with more recent work (C133-C134) is more solid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C146"
+    ],
+    "result": "The lack of PICs in uracil-depleted cells does not simply reflect growth arrest or metabolic stress, but specifically the elimination of UTP precursors. The effect on both Pol II and Pol III PICs suggests the target might be a common factor such as TBP or common polymerase subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142, C143, and C146 are supported by comparative experiments showing PIC retention during leucine depletion and Kin28/Taf1 depletion despite growth arrest (C82-C86). The inference about a common target (C146) is logical given the effect on multiple polymerases (C81), though the specific mechanism remains unknown (C144-C145). This provides important mechanistic insights into the uracil depletion phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C152",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The relative usage of TFIID versus SAGA-dependent TBP forms depends on growth conditions, possibly due to different levels of activator function. The reduced activator function in YPD medium makes transcription more dependent on TFIID than SAGA, explaining why Taf1 depletion has stronger effects in YPD than SC medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152, C160-C162 are supported by comparison of Taf1 depletion effects in different media (C158-C159) and prior work on activator function (C161). The model connecting activator function, growth conditions, and TFIID/SAGA usage is mechanistically coherent and integrates multiple observations. This provides important context for interpreting Taf depletion experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C154",
+      "C155"
+    ],
+    "result": "The terms 'TFIID-dependent' and 'TFIID-independent' (SAGA-dependent) genes are misleading because both TAF-containing and TAF-lacking TBP forms typically contribute to transcription of a given gene, and TATA elements are not the sole determinant of relative usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154 and C155 are supported by the finding that both forms contribute to varying extents at most genes (C153) and that TFIID is specifically recruited to some TATA-containing promoters (C41). The critique of terminology is appropriate given the experimental evidence, though the terms remain useful for describing the predominant mechanism at different promoter classes.",
+    "result_type": "MINOR"
+  }
+]

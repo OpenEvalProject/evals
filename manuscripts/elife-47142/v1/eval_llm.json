@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Agency was operationalized as the average of thoughtfulness and feelings ratings, justified by their high correlation (\u03c4 = 0.70) which was at the noise ceiling of both measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 provide a methodologically sound justification for combining thoughtfulness and feelings ratings. The correlation at noise ceiling indicates these measures capture the same underlying construct, supporting their aggregation into a single agency measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Image categorizability was quantified using a pre-trained VGG-16 CNN that achieved 92.2% cross-validation accuracy in classifying animate vs. inanimate objects from 960 images, with activations extracted from the final fully-connected layer and reduced to 495 dimensions via PCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C48-C50 describe a standard and well-documented CNN-based approach. The high classification accuracy (92.2%) validates the method, and the use of a pre-trained network on ImageNet is appropriate. The PCA dimensionality reduction is adequately justified for computational efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Perceptual categorizability was measured using a visual search task with 21 participants (selected from 29) who achieved 90%+ accuracy, with animate-inanimate classification reaching 63.4% training and 70.0% test accuracy (both significantly above chance, p < 10-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe appropriate participant selection criteria and demonstrate above-chance classification performance. The high task accuracy (90%+) indicates participants understood the task, and the significant classification accuracies validate the perceptual categorizability measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The final stimulus set of 12 animals successfully orthogonalized image categorizability, agency, and familiarity (\u03c4 < 0.13 for all correlations), while image and perceptual categorizability remained positively correlated (\u03c4 = 0.64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 demonstrate successful experimental design. The low correlations between key variables (C9) enable independent assessment of their contributions, while the moderate correlation between the two categorizability measures (C8) validates their convergent validity as measures of visual properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The fMRI experiment involved 17 participants viewing 12 animals plus 4 other objects across 8 runs, with a separate animacy localizer using 72 objects. Data were acquired at 4T with 3mm isotropic voxels, preprocessed without smoothing, and analyzed using searchlight spheres of 100 voxels with TFCE correction and bootstrap statistics (10,000 samples).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 and C51-C56 provide comprehensive methodological details. The sample size (N=17) is adequate for within-subject fMRI designs, acquisition parameters are standard, and statistical corrections (TFCE, bootstrap) are appropriate for the analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11"
+    ],
+    "result": "The study replicated the animacy continuum in VTC, with 89.6% cross-validated training accuracy and 71.3% cross-experiment accuracy for animate-inanimate classification. Humans were most animate while reptiles and insects were least animate among the animals tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, and C11 successfully replicate prior findings of an animacy continuum. The high classification accuracies demonstrate reliable animacy information in VTC, and the ordering of animals along the continuum is consistent with prior literature and theoretical expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "VTC animacy scores correlated positively with image categorizability (\u03c4 = 0.16; p = 10-3), perceptual categorizability (\u03c4 = 0.26; p < 10-4), and agency (\u03c4 = 0.30; p < 10-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 demonstrate significant correlations between VTC animacy and all three predictor variables. The statistical significance is well-established with appropriate non-parametric tests (Kendall's \u03c4), though the modest effect sizes suggest these factors explain only part of the variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "After regression to control for confounds, both agency (\u03c4 = 0.23; p < 10-4, controlling for visual categorizability) and visual categorizability (\u03c4 = 0.12; p = 4.7 \u00d7 10-3, controlling for agency) independently contributed to VTC animacy scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 provide critical evidence for independent contributions through appropriate regression analyses. Both correlations remain significant after controlling for the other factor, demonstrating that visual categorizability and agency explain distinct variance in VTC animacy organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C4"
+    ],
+    "result": "A combined model of visual categorizability and agency fully explained the VTC animacy continuum, with correlation (\u03c4 = 0.37) reaching the noise ceiling (\u03c4NC = 0.39) and significantly outperforming individual factors (all p < 0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C17, and C18 demonstrate that the combined model accounts for all reliable variance in VTC animacy. The noise ceiling analysis is methodologically sound, and the leave-one-out cross-validation approach appropriately guards against overfitting. This is a key finding supporting the dual-factor account.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C5"
+    ],
+    "result": "Searchlight analysis revealed anatomical dissociation: independent visual categorizability contributions were localized to posterior VTC (extending to lateral occipital cortex), while independent agency contributions were localized to anterior VTC, with this posterior-anterior organization observed bilaterally but stronger in the right hemisphere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C19-C21 provide converging spatial evidence for the dual-factor account. The searchlight analysis with appropriate multiple comparison correction (TFCE) demonstrates anatomically distinct contributions. The posterior-anterior gradient aligns with known hierarchical organization of visual cortex, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study situates findings within two theoretical frameworks: the visual categorization hypothesis (emphasizing rapid animate-inanimate categorization with potential evolutionary advantages) and the agency hypothesis (emphasizing psychological properties and social cognition), both supported by prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 accurately represent prior theoretical frameworks and supporting evidence from the literature. The citations are appropriate and the characterization of competing hypotheses provides necessary context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The findings demonstrate that VTC animacy organization is not fully explained by visual categorization demands alone, with agency contributing independently. The posterior-anterior spatial organization mirrors hierarchical visual cortex organization and parallels prior findings dissociating shape from category representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C44-C47 appropriately interpret the findings in light of prior work. The conclusion that agency contributes beyond visual features is supported by the regression analyses (C15), and the comparison to hierarchical organization and prior shape-category dissociations (C45) is well-justified by the spatial findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Visual cortex regions responsive to social stimuli are functionally connected to social cognition networks (precuneus, medial prefrontal cortex), and category-selective responses are increasingly understood as parts of large-scale domain-selective networks rather than purely bottom-up visual processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 accurately represent current understanding of visual cortex organization based on appropriate citations. These claims provide theoretical context for how agency might influence VTC responses through network-level interactions, though they describe prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Visual categorizability and agency are naturally correlated properties of animals (e.g., four-legged mammals are both fast to categorize as animate and judged psychologically similar to humans), creating a challenge for distinguishing their independent contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 accurately describe the confound that motivated the experimental design. This is based on logical inference and general knowledge about animal properties, appropriately setting up the rationale for orthogonalizing these factors in the stimulus selection.",
+    "result_type": "MINOR"
+  }
+]

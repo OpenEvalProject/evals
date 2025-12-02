@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C23",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "YAP5SA expression increases both the population growth rate (k) at low density and the carrying capacity (Ymax) at high density in HEK293 cells. The effect on k is cell autonomous, while the effect on Ymax is non-cell autonomous, as demonstrated by co-culture experiments showing that increasing the ratio of YAP5SA feeder cells increases Ymax but not k in recipient cells, and that YAPKDs have lower k regardless of feeder type but increased Ymax when co-cultured with YAP5SA feeders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 establish the logistic growth model and demonstrate YAP5SA increases both k and Ymax. Claims C39-C42 provide strong experimental evidence from co-culture experiments with varying ratios and YAPKD cells that distinguish cell autonomous (k) from non-cell autonomous (Ymax) effects. The experimental design with isogenic cells and multiple controls is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C65",
+      "C66"
+    ],
+    "result": "YAP5SA expression increases cell size by approximately 17-30% depending on measurement method (nuclear area, volume, protein content, dry mass) in low-density cultures. The most reliable measurements show 17% increase in nuclear area and 20% increase in dry mass. This size increase occurs across all cell cycle phases and is density-dependent, with cells becoming smaller at higher densities. YAPWT overexpression increases size only at low density where YAP is nuclear, and YAP knockdown decreases cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent measurement methods (C24-C29, C65-C66) converge on a consistent ~17-20% increase in cell size with YAP5SA expression. The use of QPM, Coulter Counter, protein content, and nuclear area provides robust validation. Controls with YAPWT (C30) and YAPKD (C31) support the specificity of the effect. Cell cycle analysis (C28) rules out confounding effects from cell cycle distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C64"
+    ],
+    "result": "YAP5SA's effect on cell size is non-cell autonomous and mediated by secreted factors. WT cells co-cultured with YAP5SA cells become ~30% larger even without expressing YAP5SA themselves. This effect persists in Transwell experiments (~50% increase) where cells share medium but have no physical contact, and conditioned medium from YAP5SA cells increases size in naive HEK293 cells and NIH 3T3 fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The progression from co-culture (C32-C34) to Transwell (C35-C36) to conditioned medium (C37-C38) experiments provides strong evidence for secreted factor-mediated effects. The observation that uninduced YAP5SA cells are larger than controls (C32) initially suggested non-autonomous effects, which were then rigorously tested. The effect extends to a different cell type (3T3 fibroblasts, C38), supporting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "CYR61, a secreted YAP target, mediates the non-cell autonomous increase in Ymax by reducing density-dependent apoptosis. Neutralizing CYR61 decreases Ymax by up to ~50% in a dose-dependent manner and increases cell death three-fold, which can be rescued by anti-apoptotic peptides. Adding recombinant CYR61 increases Ymax in both control and YAPKD cells, demonstrating that CYR61's effect does not require active YAP in responding cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of loss-of-function (C50, C57-C58) and gain-of-function (C52) experiments with CYR61 provides strong bidirectional evidence. The rescue with anti-apoptotic peptide (C57) mechanistically links CYR61 to apoptosis. The effect in YAPKDs (C52-C53) demonstrates non-cell autonomous signaling. Cell cycle analysis (C56) rules out proliferation as the mechanism, supporting the apoptosis hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C55",
+      "C49"
+    ],
+    "result": "An unidentified secreted factor, distinct from CYR61 and CTGF, mediates YAP's non-cell autonomous effect on cell size. Neither CYR61 nor CTGF neutralization or addition affects cell size, despite their effects on cell number. CTGF has only mild effects on population growth parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative results for CYR61 and CTGF on cell size (C55) combined with the established non-autonomous size effects (from previous result group) logically support the existence of another factor. However, this is primarily an exclusion-based inference rather than direct identification. The claim is appropriately cautious in stating the factor is 'unidentified.' CTGF's minimal effects (C49) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Mass spectrometry and RNA-Seq analysis reveals that extracellular proteins are eight-fold enriched among proteins upregulated by YAP5SA expression (p<10\u207b\u00b9\u00b2). Canonical YAP targets CTGF, CYR61, and AMOTL2 are elevated at both protein and mRNA levels, while LOX and TNC proteins decrease four-fold without mRNA changes. Amphiregulin is expressed at very low levels and not detected by mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multi-omics approach combining RNA-Seq and mass spectrometry (C44-C46) provides robust evidence for extracellular protein enrichment. The statistical significance (p<10\u207b\u00b9\u00b2) is strong. The discordance between mRNA and protein levels for some targets (C46) highlights post-transcriptional regulation. The negative result for Amphiregulin (C48) appropriately addresses a potential alternative mechanism from prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "YAP affects cell size and number through independent circuits, with some effects being cell autonomous (proliferation) and others mediated by secreted signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central thesis claim supported by all the detailed experimental results grouped above. Claims C4-C6 are validated by the comprehensive evidence showing: (1) cell autonomous effects on k/proliferation, (2) non-cell autonomous effects on Ymax/survival mediated by CYR61, and (3) non-cell autonomous effects on size mediated by unknown factors. The independence of circuits is demonstrated by differential responses to various manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Nuclear area correlates strongly with cell dry mass measured by Quantitative Phase Microscopy with a Pearson correlation coefficient of ~0.9 across various conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological validation (C22) is well-supported by the data in Figure 1\u2014figure supplement 2 showing measurements across multiple clones and conditions. The high correlation coefficient (r~0.9) justifies using nuclear area as a proxy for cell size throughout the study. This is critical for the validity of the automated image analysis approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "CTGF and CYR61 have opposing effects on population growth parameters, with CYR61 having dominant effects due to higher expression levels (FPKM >100 for CYR61 vs <50 for CTGF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The opposing effects are documented in the neutralization experiments (C67), and the expression level difference (C68) provides a reasonable explanation for why CYR61 effects dominate. The inference linking expression levels to functional dominance is logical but somewhat speculative\u2014other factors like receptor affinity or stability could also contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Both Ymax and cell size are affected by serum levels in the culture medium, with Ymax decreasing at serum concentrations below 1%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These observations (C70-C71) are supported by the supplementary data but represent relatively standard findings about serum dependence. They provide important context for interpreting the YAP-specific effects but are not novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background and established knowledge about the Hippo/YAP pathway, organ size regulation, and liver regeneration from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C19) represent established knowledge from prior literature, appropriately cited. They provide necessary context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are generally accepted in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C69",
+      "C72"
+    ],
+    "result": "Prior literature on CYR61 function in various contexts including apoptosis, liver regeneration, fibrosis, and CCN protein family characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C60-C63, C69, C72) appropriately cite and summarize prior work on CYR61 and related proteins. They provide important context for interpreting the current findings, particularly regarding CYR61's role in apoptosis and tissue remodeling. The citations appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Speculative discussion about the implications of non-cell autonomous YAP signaling for tissue regeneration and organ size control, suggesting that YAP activation in a small fraction of cells could engage wider tissue regions through secreted signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C73-C75) are explicitly speculative (as noted in evidence_type: SPECULATION) and represent reasonable extrapolations from the cell culture findings to in vivo contexts. However, they lack direct experimental validation in tissue/organ systems. The speculation is appropriately cautious but would require in vivo experiments to be definitively supported.",
+    "result_type": "MINOR"
+  }
+]

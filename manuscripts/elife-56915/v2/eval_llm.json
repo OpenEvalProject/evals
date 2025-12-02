@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C28",
+      "C62",
+      "C66"
+    ],
+    "result": "The study analyzed an 8-month chronic influenza B infection in a severely immunocompromised child with 41 time points of viral sampling. The infection persisted due to absence of cell-mediated immunity, had viral loads comparable to hospitalized children, and was eventually cleared through combination therapy including bone marrow transplant and favipiravir.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C28, C62, and C66 provide consistent clinical and virological characterization of the case. The viral load comparison (C5) is supported by citation to published data (Wishaupt et al., 2017), and the clinical details are cross-referenced to a previous publication (C66, Lumby et al., 2020), providing independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C19",
+      "C20",
+      "C58",
+      "C59"
+    ],
+    "result": "Phylogenetic and haplotype analyses revealed non-trivial population structure with two distinct viral clades (A and B) that diverged and persisted for several months. This structure suggests spatially distinct viral subpopulations within the host, with samples stochastically representing one population or the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 are supported by phylogenetic trees (Figure 1B) and haplotype reconstruction (Figure 1C-D, Figure 1\u2014figure supplement 2). The interpretation of spatial structure (C10) is reasonable given the cladal persistence and intermediate frequency of resistance alleles (C20). The authors appropriately acknowledge that population structure may bias Ne estimates (C19), citing relevant literature (C58-C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Linear regression analysis of genetic distance versus time yielded an evolutionary rate of 0.051 substitutions per day (97.5% CI: 0.034-0.068) for clade A. The regression intercept (~40 substitutions, equivalent to \u00b10.3% allele frequency difference per locus) quantifies noise from sequencing and population structure, yet the dataset provides a clear evolutionary signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 describe a standard regression approach with appropriate confidence intervals (C12). The interpretation of the intercept as noise (C13) is methodologically sound. Figure 2A shows the regression fit with substantial scatter but clear trend, supporting C14's assessment of signal despite noise. The method is well-suited to the longitudinal dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C42",
+      "C43",
+      "C50",
+      "C51",
+      "C52",
+      "C64"
+    ],
+    "result": "Wright-Fisher simulations estimated an effective population size (Ne) of 2.5 \u00d7 10^7 (95% CI: 1.0 \u00d7 10^7 to 9.0 \u00d7 10^7) for clade A before favipiravir treatment. This large Ne, substantially higher than HIV estimates, indicates that genetic drift is minimal and selection acts efficiently during established influenza infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C42 report the primary Ne estimate with confidence intervals, supported by simulation results in Figure 2B. The comparison to HIV (C16) appropriately cites Pennings et al., 2014 and Rouzine et al., 2014. The inference that drift is minimal (C43, C64) follows logically from population genetics theory (C50-C52). The method accounts for noise and population structure as described in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Clade B yielded a lower Ne estimate of 2 \u00d7 10^6 (95% CI: 4 \u00d7 10^5 to 2 \u00d7 10^8), potentially due to less frequent sampling and the favipiravir-induced bottleneck. The Ne estimates represent established infection, not the initial population expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 provides the clade B estimate with appropriate caveats about sampling frequency and drug-induced bottleneck, shown in Figure 2C-D. Claim C18 appropriately clarifies the temporal scope of the inference, acknowledging that initial infection dynamics are not captured. The wider confidence interval for clade B reflects greater uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C55",
+      "C67",
+      "C68"
+    ],
+    "result": "The analysis assumes neutral evolution, which could lead to underestimating Ne if positive selection is present. However, evidence suggests viral evolution was generally not driven by positive selection, with slower evolution at non-synonymous versus synonymous sites indicating purifying selection. This validates the neutral assumption and supports the conclusion that selection dominates drift in established infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 acknowledge potential bias from selection, while C67-C68 (supported by Figure 2\u2014figure supplement 2) provide evidence that evolution was predominantly neutral with purifying selection. This justifies the neutral Wright-Fisher model assumption (C25). The conclusion that selection dominates drift (C23) follows logically from the high Ne estimate. The reasoning is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C27",
+      "C63",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The influenza B dataset is particularly suited for Ne estimation due to long infection duration and frequent sampling. Validation using influenza A/H3N2 data from four immunocompromised adults yielded Ne estimates of 3 \u00d7 10^5 to 1 \u00d7 10^6, lower than influenza B but still indicating efficient selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C63 explain why the dataset is appropriate. The validation analysis (C26-C27, C109) using independent data (Xue et al., 2017) strengthens confidence in the method, shown in Figure 2\u2014figure supplement 3. The authors appropriately note limitations: applying influenza B false positive rates to influenza A data (C110) and excluding outlier samples (C111). Lower Ne estimates for influenza A may reflect increased selection (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C65"
+    ],
+    "result": "Extrapolating from the Ne estimate of ~10^7 in this severe case, the authors estimate Ne ~10^4 for typical non-hospitalized infections based on CT value differences. Even this lower Ne suggests selection predominates over drift, with variants at \u22651% frequency requiring selection coefficients \u22651% per generation to be detectable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The extrapolation from hospitalized to non-hospitalized cases (C30-C31) relies on an \"order of magnitude calculation\" based on CT value differences from Wishaupt et al., 2017. While the cited CT difference is plausible, the conversion to Ne is approximate and lacks detailed justification. The inference about selection thresholds (C32) cites Rouzine et al., 2001 appropriately, but the overall extrapolation (C29, C65) involves substantial uncertainty not fully quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C44",
+      "C48",
+      "C49"
+    ],
+    "result": "The high Ne supports the hypothesis that limited within-host variation in typical influenza cases results from tight transmission bottlenecks and short infection duration rather than inefficient selection due to genetic drift. De novo variants require strong selection to reach substantial frequency, and selection typically lacks time to fix variants except in cases of antiviral resistance or prolonged infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 synthesize the findings with appropriate citations to recent literature (McCrone et al., 2018; Valesano, 2020; Ghafari et al., 2020; Debbink et al., 2017). The interpretation addresses competing hypotheses from prior work (C48-C49) and resolves them in favor of time-limited rather than drift-limited selection (C44). Claims C35-C36 provide mechanistic explanation citing relevant theory and observations. The logic is coherent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C45"
+    ],
+    "result": "The findings highlight the potential importance of prolonged infections for global influenza evolution. Given large Ne and efficient selection, variants under strong positive selection increase faster than linearly (Haldane, 1924), making additional days of infection disproportionately influential for transmission of adaptive variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40, C45 present implications for global influenza evolution. The reasoning is logical: high Ne enables efficient selection (established in prior results), and Haldane's principle (C38, appropriately cited) means selected variants increase super-linearly. The inference that prolonged infections may disproportionately contribute to adaptation (C39-C40, C45) follows, though the authors appropriately note this doesn't exclude other mechanisms like transmissibility selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C20"
+    ],
+    "result": "Zanamivir resistance-associated substitutions (glycine and alanine at neuraminidase codon 117) were observed at intermediate frequencies in clade A after drug administration, suggesting sampling from mixed resistant and susceptible subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe observed substitutions shown in Figure 2\u2014figure supplement 1, with C70 correctly identifying resistance associations. Claim C20 interprets the intermediate frequencies as evidence of population structure, citing Jackson et al., 2005. The interpretation is reasonable given the phylogenetic evidence of spatial structure (Result 2) and the sporadic appearance of resistance alleles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Sequencing validation using replicate samples showed frequency-dependent reliability: high-frequency variants were reliably identified, but reliability decreased at lower frequencies. False positive rates were estimated using HCV replicate data from the same sequencing pipeline, assuming zero false negative rate as a conservative approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe replicate sequencing results shown in Figure 2\u2014figure supplement 5 and 7. The use of HCV data (C80-C83) to estimate false positive rates is justified by identical sequencing pipelines (C81), citing Illingworth et al., 2017 and STOP-HCV Consortium et al., 2016 (C79). The assumption of zero false negative rate (C85-C86) is explicitly acknowledged as conservative. The approach is methodologically sound for accounting for technical noise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The Wright-Fisher simulations incorporated several corrections: scaling from per-day to per-generation rates using a 10-hour generation time for influenza B, neglecting intra-segment recombination and reassortment based on literature, and imposing a 0.1% minimum allele frequency cutoff to account for mutation-selection balance not explicitly modeled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 describe time scaling using published generation time (Nobusawa and Sato, 2006). Claims C77-C78 state model assumptions justified by citations (Boni et al., 2008; Sobel Leonard et al., 2017a). Claims C87-C91 explain the frequency cutoff correction for mutation-selection balance, citing relevant theory (Haldane, 1937; Haigh, 1978). The authors acknowledge this is conservative (C91), leading to potentially underestimated Ne. All corrections are scientifically justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Confidence intervals for Ne were calculated by overlapping 97.5% confidence intervals from observed evolutionary rates and simulated statistics, yielding approximate 95% confidence intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe a reasonable approach to confidence interval estimation. The method compares uncertainty in observed rates (from regression) with simulation-based uncertainty in the Ne-to-rate relationship. While approximate, this approach is appropriate given the complexity of the simulation-based inference. The confidence intervals are shown in Figures 2B and 2D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study used established bioinformatics methods including SAMFIRE for variant calling (PHRED \u226530), MUSCLE for alignment, BEAST2 with HKY model for phylogenetics, and Dirichlet-multinomial models for haplotype reconstruction. Data and code are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C108 describe standard bioinformatics methods with appropriate software citations (SAMFIRE, MUSCLE, BEAST2, etc.). The phylogenetic approach (C100-C103) uses appropriate models and MCMC parameters. Haplotype reconstruction (C104-C108) employs published methods (Illingworth, 2015, 2016) with justified parameter choices (C107). Data availability (C95-C97) meets reproducibility standards. All methods are adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C41"
+    ],
+    "result": "Background context: Influenza populations exhibit coherent global evolution under immune pressure, yet exist as individual host infections, creating a multi-scale evolutionary system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 provide established background on global influenza evolution, appropriately citing foundational literature (Buonagurio et al., 1986; Fitch et al., 1997; Bedford et al., 2015; Ferguson et al., 2003; Grenfell et al., 2004). Claim C41 frames the multi-scale nature of influenza evolution. These are well-established facts providing context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "Background on Ne estimation challenges: Estimating Ne is difficult with a long methodological history. Simple drift-based methods can be distorted by selection, joint Ne-selection methods are limited to few loci, and high Ne can obscure drift signals with noise. Global influenza Ne estimates are ~100 when using neutral methods on selection-driven populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C56-C57, C60-C61 provide methodological background with appropriate citations (Wright, 1938; Wang et al., 2016; Kimura and Crow, 1963; Bedford et al., 2010; Bollback et al., 2008; etc.). The discussion of methodological challenges (selection bias, linkage limitations, noise) accurately represents the literature and motivates the study's approach. Claim C56's example of global influenza Ne ~100 is correctly attributed.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2221 @@
+{
+  "submission": {
+    "id": "8ec0383c-34aa-43ab-8b1d-cd9db9dc82c7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:16:41.232999Z",
+    "updated_at": "2025-12-02T14:16:41.232999Z"
+  },
+  "content": [
+    {
+      "id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "submission_id": "8ec0383c-34aa-43ab-8b1d-cd9db9dc82c7",
+      "content_type": "manuscript",
+      "content_text": "# The structure of the endogenous ESX-3 secretion system\n\n## Authors\n\n- Nicole Poweleit<sup>1</sup> ([ORCID: 0000-0002-2700-0241](https://orcid.org/0000-0002-2700-0241))\n- Nadine Czudnochowski<sup>1</sup> ([ORCID: 0000-0002-3146-4110](https://orcid.org/0000-0002-3146-4110))\n- Rachel Nakagawa<sup>1</sup>\n- Donovan D Trinidad<sup>1</sup> ([ORCID: 0000-0002-1439-9927](https://orcid.org/0000-0002-1439-9927))\n- Kenan C Murphy<sup>3</sup>\n- Christopher M Sassetti<sup>3</sup>\n- Oren S Rosenberg<sup>1</sup> ([ORCID: 0000-0002-5736-4388](https://orcid.org/0000-0002-5736-4388)) \u2020\n\n### Affiliations\n\n1. Department of Medicine, Division of Infectious Diseases University of California, San Francisco San Francisco United States\n2. Chan-Zuckerberg Biohub University of California, San Francisco San Francisco United States\n3. Department of Microbiology and Physiological Systems University of Massachusetts Medical School Worcester United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ESX (or Type VII) secretion systems are protein export systems in mycobacteria and many Gram-positive bacteria that mediate a broad range of functions including virulence, conjugation, and metabolic regulation. These systems translocate folded dimers of WXG100-superfamily protein substrates across the cytoplasmic membrane. We report the cryo-electron microscopy structure of an ESX-3 system, purified using an epitope tag inserted with recombineering into the chromosome of the model organism Mycobacterium smegmatis. The structure reveals a stacked architecture that extends above and below the inner membrane of the bacterium. The ESX-3 protomer complex is assembled from a single copy of the EccB3, EccC3, and EccE3 and two copies of the EccD3 protein. In the structure, the protomers form a stable dimer that is consistent with assembly into a larger oligomer. The ESX-3 structure provides a framework for further study of these important bacterial transporters.\n\n## Introduction\n\nMycobacteria use a set of specialized secretion systems called ESX to transport proteins across their complex, diderm cell walls (Gr\u00f6schel et al., 2016). Originally described as virulence factors in Mycobacteria tuberculosis (Guinn et al., 2004; Hsu et al., 2003; Lewis et al., 2003; Stanley et al., 2003), orthologs of ESX have since been discovered in most Gram-positive bacteria (Bottai et al., 2017), and are more generally referred to as Type VII secretion systems (Bitter et al., 2009). In mycobacteria there are five paralogous ESX operons (ESX 1\u20135) each of which encodes an inner membrane translocon complex consisting of three conserved Ecc proteins: EccB, EccC, and EccD. A fourth protein, EccE is conserved in all ESX operons except the ancestral ESX-4 operon and is also considered a part of the ESX translocon complex as it copurifies with EccB, EccC, and EccD (Houben et al., 2012). All Type VII secretion systems translocate proteins in the WXG100-superfamily, which share a common two-helix hairpin structure and are found as homo- or heterodimers (Poulsen et al., 2014) and are mutually dependent for secretion with other substrates (Fortune et al., 2005). In contrast to the general secretory apparatus (Sec), ESX substrates have been shown to be secreted in their folded, dimeric state (Sysoeva et al., 2014).\n\nStructural and functional information has been reported for truncated and isolated, soluble domains of the ESX translocon complexes and their homologs (Korotkova et al., 2015; Korotkova et al., 2014; Renshaw et al., 2005; Rosenberg et al., 2015; Strong et al., 2006; Wagner et al., 2016; Wagner et al., 2014; Wagner et al., 2013; Zhang et al., 2015; Zoltner et al., 2016). A low resolution, negative stain electron microscopy structure of ESX-5 shows a translocon complex assembled into a hexamer (Beckham et al., 2017). Structures of other proteins encoded in ESX operons including secreted substrates (Ilghari et al., 2011), substrate chaperons (Ekiert and Cox, 2014), and the protease MycP (Solomonson et al., 2013) have been solved. Despite revealing important functional information about ESX, structures of overexpressed and isolated proteins are insufficient to understand the regulated secretion of fully folded substrates. We therefore undertook structural studies of an endogenously expressed ESX-3 complex from the model organism M. smegmatis using cryo-electron microscopy (cryo-EM). During the preparation of this work for publication, a similar structure of the ESX-3 system expressed from a plasmid was published by another group (Famelis et al., 2019).\n\nThe ESX-3 translocon complex is important for iron acquisition (Serafini et al., 2013; Siegrist et al., 2009), cell survival (Tinaztepe et al., 2016), and virulence in pathogenic mycobacteria (Tufariello et al., 2016), and its role in iron homeostasis is conserved in the model system, M. smegmatis (Siegrist et al., 2009). The ESX-3 translocon complex proteins are transcribed in a single operon (Li et al., 2017), and expression of the ESX-3 operon is dependent on the transcriptional regulator IdeR, which controls iron metabolism (Rodriguez et al., 2002) and is required for growth in the human pathogen M. tuberculosis (Pandey and Rodriguez, 2014). The ESX-3 operon is 67% identical between the non-pathogenic model organism M. smegmatis and the pathogen M. tuberculosis over the 4354 amino acids of the ESX-3 operon. This high degree of conservation and essential role in cell growth makes ESX-3 an important candidate for small molecule inhibition (Bottai et al., 2014), as blockade of ESX-3 will both inhibit virulence in M. tuberculosis and kill a broad range of pathogenic mycobacteria.\n\n## Results\n\nA major innovation made possible by the dramatic improvements in cryo-EM (Cheng, 2018) is the ability to examine challenging protein samples at atomic resolution, even when samples are only available at low concentrations. When coupled with recent genetic manipulations that allow for facile insertion of chromosomal epitope and purification tags (Murphy et al., 2018), cryo-EM now holds the promise of routine structural characterization of many endogenously expressed protein complexes not previously tractable by structural techniques. We undertook the purification of the ESX-3 complex from the native host without the need for overexpression. To facilitate purification of the endogenous translocon complex, a cleavable EGFP tag was inserted into the chromosome of M. smegmatis mc(2)155\u00a0(wild type) and \u0394ideR (Dussurget et al., 1996) strains at the C-terminus of EccE3 via the ORBIT method (Murphy et al., 2018) (Figure 1A, Figure 1\u2014figure supplement 1). EccE3 is the final gene in the 11 gene long ESX-3 operon making insertion at this site less likely to disrupt regulation and expression of the operon. Deletion of the gene for the iron acquisition regulator IdeR greatly increases chromosomal expression of ESX-3 from negligible amounts of protein to a yield sufficient for purification and structure determination (Figure 1\u2014figure supplement 2A). Components of ESX-3 were pulled down using an anti-GFP nanobody (Rothbauer et al., 2008) and the EGFP tag was proteolytically cleaved. After size exclusion chromatography, the peak fractions were pooled and analyzed biochemically and by cryo-EM .\n\n### Global structure of the ESX-3 dimer\n\nFour components of the ESX-3 translocon complex EccB3, EccC3, EccD3 and EccE3 were stably affinity-purified as a large molecular weight species of about 900 kDa (Figure 1B and C, Figure 1\u2014figure supplement 2B). The sample was imaged by cryo-EM and reconstructed revealing a dimeric structure, which can be divided into four areas: the flexible periplasmic multimerization domain, the stable transmembrane region, the stable upper cytoplasmic region, and the flexible lower cytoplasmic motor domain (Figure 1D, Table 1). While the peak fraction does not contain particles of a larger size consistent with higher order oligomers, thorough examination of the void volume revealed a small number of particles in a higher oligomeric state (Figure 1\u2014figure supplement 3A\u2013E). The resolution of the ESX-3 dimer varies substantially in different parts of the electron microscopy map and this heterogeneity was partially resolved through data processing (Figure 1\u2014figure supplement 4 and Figure 1\u2014figure supplement 5). Initially, the entire ESX-3 dimer was reconstructed to 4.0 \u00c5 resolution (Figure 1\u2014figure supplement 6A). Using symmetry expansion, and focused classification and refinement techniques, the resolutions of targeted regions of the ESX-3 complex were improved to 3.7 \u00c5 for the transmembrane region and upper cytoplasmic region (Figure 1\u2014figure supplement 6B\u2013D), 5.8 \u00c5 for the periplasmic region (Figure 1\u2014figure supplement 6E), and\u00a0~7 \u00c5 resolution for the lower cytoplasmic region (Figure 1\u2014figure supplement 6F). The highest resolution maps for each region were combined and filtered to the threshold of the lowest resolution map to form an overall 10 \u00c5 combination map for the entire ESX-3 dimer.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig1-v2.jpg)\n\n**Figure 1.:** (A) The ESX-3 operon in M.\u00a0smegmatis and the placement of the purification tag. Genomic deletion of ideR derepresses ESX-3 to boost expression for purification. (B) SDS-PAGE of purified ESX-3 shows four major bands corresponding to EccB3, EccC3, EccD3, and EccE3. (C) Blue native page of the purified ESX-3 complex shows a large molecular weight band around 900 kDa. (D) Merged maps of all focused refinement maps (gray transparency) of the ESX-3 dimer filtered to 10 \u00c5 resolution. The transmembrane and upper cytoplasmic focused maps (3.7 \u00c5) are\u00a0segmented by subunit showing one copy per protomer of EccB3 (pink), EccC3 (blue), EccE3 (orange), EccD3-bent (yellow), and\u00a0EccD3-extended (green). (E) Atomic models of the transmembrane and upper cytoplasmic regions. (F) A combined map of the full complex filtered to 10 \u00c5 resolution (gray transparency) with full models for each protein, EccD3-bent (yellow), EccD3-extended (green), EccE3 (orange), EccC3 (blue), and EccB3 (pink).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Diagram of the ESX-3 operon in M.\u00a0smegmatis mc(2)155. (B) The targeting oligo used to insert the attP site into the chromosome. (C) The tagging plasmid.(D) Cartoon of the resulting change to the chromosome after ORBIT.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Western blot of solubilized cell material with EccE3 tagged with EGFP.\u00a0Lane 1, wild type background. Lane 2, \u0394ideR background. (B) Size exclusion profile for the ESX-3 dimer\u00a0purified on a Superose 6\u00a010/300column.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Size exclusion profile with void volume and peak fractions indicated.\u00a0(B) SDS-PAGE of all fractions from the beginning of elution until the end of the peak fraction. (C) BN-PAGE of the void and peak fractions (D) Cryo-EM of the void volume. Scale bar 50 nm (E) 2D class averages of the particles picked from the void volume, some classes reveal possible higher order oligomers. Scale bar 20 nm.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** An initial data set was collected on a Talos Arctica microscope. The final refinement from this data processing was used as the starting model for future data processing.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Data was collected on a Titan Krios. Particles from the final reconstruction were subsequently used for focused classification and refinement.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) Consensus refinement map and FSC curve for the ESX-3 complex.\u00a0Focused refinement maps and FSC curves for (B) the left protomer of the ESX-3 complex, (C) the right protomer of the ESX-3 complex, (D) a symmetry expanded protomer, (E) the periplasmic domain of EccB\u00a0and (F) the lower ATPase domains of EccC. All maps are unsharpened and unmasked.\n\n**Table 1.**\n Data collection and refinement statistics.Collection parameters for initial test data set and void peak analysis on the Talos Arctica and final collection on Titan Krios microscopes. Refinement details for initial model, consensus map, and focused refinements.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"5\">Data Collection</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Collection</td>\n      <td>Initial Screening</td>\n      <td>Collection 1</td>\n      <td>Collection 2</td>\n      <td>Void peak</td>\n    </tr>\n    <tr>\n      <td>Microscope</td>\n      <td>Talos Arctica</td>\n      <td>Titan Krios</td>\n      <td>Titan Krios</td>\n      <td>Talos Arctica</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>200</td>\n      <td>300</td>\n      <td>300</td>\n      <td>200</td>\n    </tr>\n    <tr>\n      <td>Detector</td>\n      <td>Gatan K2</td>\n      <td>Gatan K2</td>\n      <td>Gatan K2</td>\n      <td>Gatan K3</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5/pixel)</td>\n      <td>1.14</td>\n      <td>0.82</td>\n      <td>0.82</td>\n      <td>0.9</td>\n    </tr>\n    <tr>\n      <td>Exposure Time (s)</td>\n      <td>9</td>\n      <td>10</td>\n      <td>10</td>\n      <td>11.7</td>\n    </tr>\n    <tr>\n      <td>Electron dose (e-/\u00c52)</td>\n      <td>63</td>\n      <td>80</td>\n      <td>67</td>\n      <td>58</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u00b5m)</td>\n      <td>1.5-2.5</td>\n      <td>0.4-1.2</td>\n      <td>0.6-1.4</td>\n      <td>1.5-2.5</td>\n    </tr>\n    <tr>\n      <td>Number of micrographs</td>\n      <td>2,499</td>\n      <td>2,705</td>\n      <td>4,632</td>\n      <td>1,215</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Consensus Reconstruction</td>\n    </tr>\n    <tr>\n      <td>Data Set</td>\n      <td>Initial Screening</td>\n      <td>Collection 1 &amp; 2</td>\n      <td></td>\n      <td>Void peak</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Relion 2.1, cisTEM, and cryosparc</td>\n      <td>Relion 3.0</td>\n      <td></td>\n      <td>cisTEM</td>\n    </tr>\n    <tr>\n      <td># of particles, picked</td>\n      <td>240,000</td>\n      <td>778,149</td>\n      <td></td>\n      <td>259,333</td>\n    </tr>\n    <tr>\n      <td># of particles post, Class2D</td>\n      <td>138,000</td>\n      <td>554,901</td>\n      <td></td>\n      <td>640</td>\n    </tr>\n    <tr>\n      <td># of particles post, Class3D</td>\n      <td>46,830</td>\n      <td>362,438</td>\n      <td></td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td># of particles post, skip align Class3D</td>\n      <td>NA</td>\n      <td>90,479</td>\n      <td></td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Symmetry</td>\n      <td>C1</td>\n      <td>C1</td>\n      <td></td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B-factor (\u00c52)</td>\n      <td>NA</td>\n      <td>-160</td>\n      <td></td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Final resolution (\u00c5)</td>\n      <td>4.7 \u00c5</td>\n      <td>4.0 \u00c5</td>\n      <td></td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Focused Refinements</td>\n    </tr>\n    <tr>\n      <td>Location of focus</td>\n      <td># of particles</td>\n      <td>Resolution</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protomer i</td>\n      <td>76,967</td>\n      <td>3.8</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protomer ii</td>\n      <td>90,479</td>\n      <td>3.8</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Symmetry expanded protomer</td>\n      <td>52,067</td>\n      <td>3.7</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Periplasmic EccB3</td>\n      <td>70,000</td>\n      <td>5.8</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ATPase 1,\u00a02, and 3</td>\n      <td>30,000</td>\n      <td>7</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nThe ESX-3 dimer is comprised of ten total proteins, two copies each of EccB3, EccC3, and EccE3 and four copies of EccD3. Two pseudo-symmetric protomers referred to as i and ii, combine to form the ESX-3 dimer. Each protomer contains one copy of EccB3, EccC3, and EccE3 and two conformationally distinct copies of EccD3, referred to as EccD3-bent and EccD3-extended (Figure 1E) based on their highly asymmetric conformations. At 3.7 \u00c5 resolution, it was possible to build de novo atomic models for all observable amino acids in the transmembrane and upper cytoplasmic regions, except the two transmembrane helices of EccC3 (Figure 1E and Supplementary file 1). The lower resolution regions of density, the EccC3 transmembrane helices, EccC3 ATPase 1, 2, and 3 domains and the EccB3 periplasmic domain, were flexibly fit using homology models. Using this hybrid approach, a model of the entire ESX-3 dimer has been produced (Figure 1F).\n\n### EccD3 forms a homodimer that encloses a large hydrophobic cavity\n\nThere are two copies of EccD3 in each ESX-3 protomer (Figure 2A). The ubiquitin-like N-terminal domain of each EccD3 molecule interacts with EccE3 and EccC3 in the cytoplasm, and a long linker joins the soluble domain of EccD3 to 11 transmembrane helices (Figure 2B and Figure 2\u2014figure supplement 1A\u2013F). The four EccD3 molecules account for 44 of the total 54 transmembrane helices observed in the ESX-3 dimer. A distinct transmembrane cavity is formed by dimerization of the two copies of EccD3 in each protomer with a cross-sectional diameter of\u00a0~20\u00d730 \u00c5 without significant regions of constriction. Transmembrane helices 1, 9 and 10 interact across the cavity dimer interface in a tight bundle making passive lipid transport into the membrane from the cavity unlikely (Figure 2C). The inner surface of the periplasmic half of the cavity is composed primarily of hydrophobic residues and in our maps, eight extended densities consistent with hydrophobic lipid tails or detergent molecules line the periplasmic inner face of the cavity (Figure 2C). In contrast, the cytoplasmic face of the cavity has several polar residues and ordered hydrophobic densities are not visible.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig2-v2.jpg)\n\n**Figure 2.:** (A) EccD3-bent (yellow) and EccD3-extended (green) in the context of the overall ESX-3 dimer (gray transparency).\u00a0(B) Atomic models of EccD3-bent and EccD3-extended (C) An unsharpened electron microscopy density map of the ESX-3 dimer shows extra densities consistent with lipid or detergent molecules (teal) on the periplasmic face of the EccD3 cavity. (D) EccD3-bent (yellow) and EccD3-extended (green) aligned based on the transmembrane regions shows two distinct conformations of the EccD3 cytoplasmic domains. Amino acids 100\u2013127 of EccD3 adopt a bent (yellow) and an extended (green)\u00a0conformation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Map to model fits for EccD3-bent for (A) transmembrane helix 1, amino acids 136\u2013153, (B) transmembrane \u03b1-helix 1, amino acids 385\u2013402, and\u00a0(C) soluble domain \u03b2-strands amino acids 10\u201315 and 90\u201396.\u00a0Map to model fits for EccD3-extended for (D) transmembrane helix 1, amino acids 163\u2013181 (E) transmembrane helix 11, amino acids 446\u2013469 (F) soluble loop, amino acids 297\u2013315. (G) Conservation mapping onto the residues of the EccD3 linker, amino acids 100\u2013127. (H) Amino acids 100\u2013127 from EccD3-bent (yellow) interact with EccB3 (pink) and EccC3 (blue). (I) Amino acids 100\u2013127 of EccD3-extended (green), in a distinct conformation, interact with EccE3 (orange) and EccD3-bent (yellow).\n\nIn the cytoplasm below the membrane, a stable, upper cytoplasmic region is formed by interactions between the soluble domains of EccD3-bent, EccD3-extended, EccE3, and EccC3. The linker joining the cytoplasmic ubiquitin-like domain to transmembrane helix 1 (residues 100\u2013127) of EccD3 conserves a high sequence identity throughout evolution (Ashkenazy et al., 2016), yet it adopts two distinct secondary structures resulting in the asymmetric placement of the cytoplasmic domains of EccD3 (Figure 2D and Figure 2\u2014figure supplement 1A\u2013G). In EccD3-bent, residues 100\u2013127 are bent, folding into an \u03b1-helix and forming a nexus of stabilizing contacts with EccB3 and EccC3 (Figure 2\u2014figure supplement 1H). In EccD3-extended, residues 100\u2013127 are extended and fold into a shorter \u03b1-helix that interacts with EccE3 and the cytoplasmic domain of EccD3-bent (Figure 2\u2014figure supplement 1I). This conformational flexibility suggests that if residues 100\u2013127 were released from their associations with EccC3 and EccE3 they could rearrange into the alternative bent or extended conformation with little energetic barrier.\n\n### EccC3 and EccE3 make extensive, stabilizing interactions with the asymmetric, cytoplasmic domains of EccD3\n\nThe next component of the stable upper cytoplasmic region is EccE3. EccE3 is positioned at the front of the ESX-3 dimer (Figure 3A), where the conserved transmembrane helix 1 of EccE3 interacts with helix 11 of EccD3-bent in the membrane. Helix 1 is followed by a second EccE3 transmembrane helix, a linker helix, and then extends into the cytoplasm (Figure 3B and C and Figure 3\u2014figure supplement 1A\u2013D). The anti-parallel \u03b2-sheets of the cytoplasmic domain of EccE3 have weak structural homology to glycosyl transferase proteins, however, the nucleotide binding pocket is absent in EccE3, leaving it incapable of performing this function (Figure 3\u2014figure supplement 1E and F, Supplementary file 2). EccE3 does not have another obvious ligand or catalytic site. Two conserved helices in the cytoplasmic region of EccE3 between amino acids 133 and 163 form extensive stabilizing interactions with both subunits of EccD3 (Figure 3D, Figure 3\u2014figure supplement 1G). These interactions hold the flexible linker of EccD3-extended in the extended conformation and sterically hinder EccD3-extended from assuming the bent conformation (Figure 3\u2014figure supplement 1H). EccE3 does not form direct protein-protein interactions with either EccB3 or EccC3 suggesting the contacts with EccD3-extended and EccD3-bent are extremely stable as EccE3 was the tagged protein used to immunoprecipitate the ESX-3 dimer.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig3-v2.jpg)\n\n**Figure 3.:** (A) The placement of EccE3 in the overall ESX-3 dimer.\u00a0(B) Atomic model of EccE3 (C) Transmembrane helix 1 of EccE3 interacts with transmembrane helix 11 of EccD3-bent (D) Two soluble helices of EccE3 interact with EccD3-extended and EccD3-bent.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Map and model comparison for transmembrane helix 1, amino acids 1 to 18.\u00a0(B) Beta strand separation, amino acids amino acids 221 to 240. (C) A single beta strand, amino acids 117 to 126. (D) Conservation mapping onto transmembrane\u00a0helix1 of EccE3 and transmembrane\u00a0helix11 of EccD3-bent.\u00a0(E) Comparison between the structure of EccE3 and the top DALI hit 5FXF-B. (F) Close up on the FADH (cyan) binding pocket of 5fxf-B which is not present in EccE3. (G) Conservation mapping onto the protein-protein interaction soluble helix of EccE3. (H) Residues 133\u2013163 of EccE3 interact substantially with EccD3-bent and EccD3-extended, holding the flexible linker of EccD3-extended in the extended conformation. (H) EccE3 (orange) stabilizes the extended conformation of EccD3-extended (green) and sterically hinders it from adopting the bent conformation (neon green).\n\nThe final component of the stable upper cytoplasmic region is the domain of unknown function (DUF) of EccC3. EccC3 extends from the membrane into the upper and lower cytoplasmic regions (Figure 4A). Amino acids 1\u201333 and 94\u2013403 of EccC3 were built de novo into the higher resolution region of the electron microscopy map revealing the structure of the DUF domain (Figure 4B, Figure 4\u2014figure supplement 1A\u2013C). The de novo model of the DUF has the typical Rossman fold of a nucleotide hydrolysis domain (Figure 4\u2014figure supplement 1D and E) and its closest homolog by Dali search is the ATPase 1 domain of EccC of T. curvata. It is linked to the transmembrane domains by a long helical bundle making extensive contacts with the flexible linker region of EccD3-bent (Figure 4C). The DUF makes additional stabilizing contacts with the ubiquitin-like domains of EccD3-bent and EccD3-extended in the cytoplasm (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig4-v2.jpg)\n\n**Figure 4.:** (A) The placement of EccC3 in the overall ESX-3 dimer.\u00a0(B) Atomic model of the EccC3 DUF (C) The stalk helices of EccC3 interact with EccB3, EccD3-bent, and EccD3-extended (D) Interactions between EccC3 and the ubiquitin-like domains of EccD3-bent and EccD3-extended in the cytoplasm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Map and model of the EccC DUF domain, amino acids amino acids 97 to 130.\u00a0(B) Two beta strands in the EccC DUF domain, amino acids 314 to 319 and 337 to 343. (C) Beta strand in the EccC DUF domain, amino acids 314 to 319. (D) Overlay of the model of the EccC DUF domain with the top DALI hit, 4NH0-A (white). (E) Close up of the ATP binding pocket of 4NH0-A. The ATPase fold remains intact in the DUF domain.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Overlay of the focused refined maps of the transmembrane and upper cytoplasmic regions of protomer i (red) and protomer ii (blue).\u00a0The two protomers are nearly identical except in the transmembrane domains of EccC3 and the N-terminal tail of EccB3. (B) Density subtraction of the two protomers in A highlights the regions of difference. Specifically, the transmembrane helixes of EccC3 adopt distinct conformations across protomers. (C) In protomer i, 4NH0, the crystal structure of EccC from T. curvata, fits well in the density. In protomer ii, ATPase 2 and 3 fit well into the density but the position of ATPase 1 in the crystal structure, shown by the red dotted circle, does not fit into the density. A density of about the right size for ATPase 1 is shown in yellow. Fitting of ATPase 1\u00a0in this density requires the disruption of the interface between ATPase 1\u00a0and ATPase 2.\n\nWhen the transmembrane and upper cytoplasmic regions are compared between protomers, only the transmembrane helices of EccC3 and the N-terminal tail of EccB3 differ (Figure 4\u2014figure supplement 2A and B), otherwise the protomers are superimposable. All four EccC3 transmembrane helices were modeled at 6 \u00c5 resolution through a combination of homology modeling and molecular dynamics. In protomer i, transmembrane helix 2 forms lipid mediated hydrophobic interactions with the transmembrane helix of EccB3 in protomer i, and transmembrane helix 1 interacts with transmembrane helix 2 of EccC3 in protomer ii. Transmembrane helix 1 of EccC3 in protomer ii is shifted relative to the protomer i conformation and does not directly interact with other proteins.\n\n### The EccC3 motor domains are flexible and asymmetric across the dimer\n\nThe motor domains containing the EccC3 ATPase 1, 2 and 3 hang below the DUF domain in the flexible lower cytoplasmic region. They were resolved at a lower resolution than the upper cytoplasmic domain, but they are clearly asymmetric between protomers i and ii (Figure 4A). Although the EccC3 ATPase 1 domains in both protomers are in a similar location relative to the DUF, the ATPase 2 and 3 domains do not superimpose across protomers even at low resolution (Figure 4\u2014figure supplement 2C) suggesting significant asymmetry between these domains. In protomer i, a homology model based on existing EccC structures fits well into the density; however in protomer ii, the interface between ATPase 1 and 2 is broken relative to the crystal structure with ATPase 2 and ATPase 3 rotated away from the crystal structure interface.\n\n### EccB3 extends into the periplasm and stabilizes dimer formation\n\nThe ESX-3 dimer is stabilized by cross-protomer interactions formed by the two EccB3 proteins. EccB3 begins in the cytoplasm with a flexible N-terminal tail leading into a linker helix, followed by a single-pass transmembrane helix, and an extended periplasmic domain (Figure 5A and B, Figure 5\u2014figure supplement 1A and B). The N-terminal tail of EccB3 from protomer i forms extensive cross-protomer contacts with EccB3, EccC3, EccD3-bent and EccD3-extended from protomer ii (Figure 5C, Supplementary file 3). The linker helix of EccB3 forms further protein-protein interactions with EccC3 and EccD3-bent. The transmembrane helix of EccB3 interacts with transmembrane helix 11 of EccD3-extended. Two hydrophobic tails consistent with a lipid or detergent molecules link the transmembrane helix of EccB3 to transmembrane helix 2 of EccC3 (Figure 5D). The two EccB3 periplasmic domains share a large interaction interface across the protomers further stabilizing dimerization. Homology models of two EccB3 proteins can be docked into the periplasmic domain (Figure 5\u2014figure supplement 1C); however, this region is not resolved sufficiently to identify specific interactions. The majority of cross-protomer interactions involve EccB3, suggesting the periplasmic domain is essential for oligomerization.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig5-v2.jpg)\n\n**Figure 5.:** (A) EccB3 (pink) in the context of the overall ESX-3 dimer (gray transparency).\u00a0EccB3 has a single-pass transmembrane domain which extends into a large periplasmic domain which was resolved at 5.8 \u00c5 resolution. (B) Atomic models of the EccB3 cytoplasmic and transmembrane domains, amino acids 14\u201393 and 32\u201393. (C) The N-terminus of EccB3 forms extensive cross-protomer contacts with EccC3 (blue), EccD3-bent (yellow), and EccD3-extended (green). (D) An unsharpened map of the ESX-3 dimer reveals ordered densities consistent with lipids or detergent molecules mediating the interactions between the EccB3 transmembrane helix (marked with a pink dot) and the EccC3 transmembrane helices.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Fit between map and model in the linker helix, amino acids 34 to 54.\u00a0(B) Fit between map and model in the transmembrane helix, amino acids 65 to 85. (C) Fit between homology models of the soluble domain of EccB3 and the periplasmic focused refinement map.\n\n### A hexameric model of ESX-3\n\nPrevious reports have shown ESX-1 and ESX-5 form hexamers or higher order multimers (Beckham et al., 2017; Houben et al., 2012). We modeled a higher order oligomeric state of ESX-3 based on the low-resolution negative stain structure of ESX-5, which had C6 symmetry imposed during refinement (EMDB 3596). The ESX-3 translocon complex was modeled as a trimer of dimers by low pass filtering the density to 6 \u00c5 and docking into the ESX-5 negative stain map (Figure 6\u2014figure supplement 1A). The model of the ESX-3 dimer transmembrane and upper cytoplasmic regions, including the EccC3 transmembrane helices modeled to 6 \u00c5 resolution, was fitted into the trimerically\u00a0positioned\u00a0ESX-3 density\u00a0maps (Figure 6\u2014figure supplement 1B). The angle between protomers in the trimer of dimers model alternates between 72\u00b0 (the angle between protomers i and ii in the ESX-3 dimer map) and 48\u00b0 and contains both experimentally observed conformations of EccC3. The complete model of the ESX-3 translocon complex was docked into the ESX-5 negative stain map in the same manner revealing major clashes between the low resolution periplasmic and motor domains in a hexameric form (Figure 6\u2014figure supplement 1C). Accommodation of a hexameric complex would require extensive rearrangement of both EccC3 and EccB3.\n\n## Discussion\n\nThe ESX-3 structure presented here is purified without the addition of substrates or nucleotide. It is therefore likely to be in a conformation representing the end of the translocation cycle, awaiting either the direct binding of substrates, the binding of nucleotide or both, to reset a substrate-binding competent state. By fitting our dimer structure into a prior low resolution envelope we suggest a model of the oligomeric state of the complex, in close agreement with Famelis et al. However, even allowing for major rearrangements in the more flexible regions of EccC3 and EccB3, a model built by the static trimerization of the experimentally determined dimer structure cannot itself explain the mechanism of action of ESX-3 secretion. The existence of an R-finger catalytic site for ATPase 1 of EccC3 (Rosenberg et al., 2015)\u00a0requires the R-finger of one protomer to insert into the active site of another protomer. Given the\u00a0~65 \u00c5 distance we observe between ATPase 1 domains, the completion and activation of the catalytic site of ATPase 1 by an R-finger will necessitate an extremely large rearrangement of the position of the ATPase domains. How might this rearrangement occur? We propose movements in the highly flexible EccD3 linker lead to the release of EccE3 and EccC3 from their rigid positions, thus allowing for a rearrangement of the ATPase domains into an active conformation (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig6-v2.jpg)\n\n**Figure 6.:** ATPase activity entails, at a minimum, oligomerization of ATPase 1 to bring the R-finger (R) into proximity of the catalytic site, marked by the Walker A motif (WA).\u00a0This requires at least 65 \u00c5 of movement from the position seen in the structure. (A) The first model of ESX substrate secretion involves trimerization of the ESX-3 dimer followed by multimerization of the EccC ATPase domains into a stack of one to four rings of ATPases (B) The second model shown through the function of a single protomer of the ESX-3 complex. Substrates are selected by interaction with ATPase 3 of EccC and transported via the upper cytoplasmic\u00a0region\u00a0to the EccD cavity for secretion.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52983/elife-52983-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Fit of three copies of the transmembrane and upper cytoplasmic regions of the ESX-3 translocon complex into the ESX-5 hexameric structure (EMDB 3596).\u00a0The ESX-3 translocon complex was filtered to 6 \u00c5 resolution to permit easy visualization of the EccC3 transmembrane helices. (B) The model of the ESX-3 translocon complex for the full transmembrane and upper cytoplasmic domains (including homology models of the EccC3 transmembrane helices accurate to 6 \u00c5 resolution) colored by protein. (C) The full model of the ESX-3 translocon complex including homology models for all three EccC3 ATPase domains and the periplasmic domain of EccB3 docked into the ESX-5 negative stain map. Red represents areas were atoms clash substantially.\n\nOnce EccC3 assembles into an oligomeric state, the substrate proteins will need to translocate through the inner membrane. We have considered two models for how pore formation and transit might occur: 1) through a pore created by the oligomerization of EccC3 and EccB3 or 2) through the large cavity created by the dimerization of EccD3. In the first model (Figure 6A), the resting state of an ESX translocon complex is a hexamer, with disordered EccC3 ATPase domains free in the cytosol, stabilized by interactions with proteins not seen in the structures presented here (van Winden et al., 2016). It is possible the rare multi-dimer oligomeric state we see in the void volume, and also seen by Famelis et al., represents this state. In a hexamer model, the center of the multimer is formed by the transmembrane helices of EccC3 and EccB3, which create a cavity that could serve as a pore for translocation of substrates. These transmembrane helices are largely hydrophobic and do not contain obvious residues that would allow for the conductance of hydrated substrates. Thus the production of a protein transit channel would require either a large, conformational change in the transmembrane helices, likely facilitated by movements in the cytoplasmic domains of EccC3, EccD3 and EccE3, or a novel mechanism of action for transit through the central pore.\n\nA hexameric pore created by EccC3 agrees well with the documented mechanism of action for motor ATPases in the additional strand catalytic E (ASCE) division of P-loop NTPases (Erzberger and Berger, 2006), which includes EccC3. A hexameric pore also agrees with the proposed mechanism of action for other bacterial secretion systems, such as the Type IV secretion system VirD4 coupling protein (Gomis-R\u00fcth et al., 2001; Hormaeche et al., 2002), which is related evolutionarily to EccC3 (Iyer et al., 2004). The hexamer model is thus firmly grounded in the motor ATPase and bacterial secretion systems literature, although the oligomeric state of VirD4 has recently been called into question (Redzej et al., 2017) and remains controversial (Llosa and Alkorta, 2017).\n\nIn a second, more speculative model, EccD3 dimers form a channel for translocation of substrates (Figure 6B). The large cavity found in the EccD3 dimer is striking and by structural homology, is unlike any other membrane protein in the Protein Data Bank. In our density maps, the EccD3 dimer cavity appears capped on the periplasmic side by a dense layer of lipids. In contrast, on the cytoplasmic side the cavity does not exhibit bound lipids due to the polar residues lining the lower half of the cavity. The large cavity is of sufficient diameter to transit a folded EsxG/H dimer, however given the strong hydrophobicity of the cavity the mechanism would not be mediated by water and would require a novel mechanism of secretion that has not been seen in other bacterial secretion systems. It is also possible that the cavity exists to transit a non-protein substrate such as a specific mycobacterial lipid. The ability to transport non-protein substrates could resolve some of the mysteries that remain about the relationships between ESX systems, cell wall stability, lipid content, and nutrient acquisition (Barczak et al., 2017; Bosserman and Champion, 2017; Siegrist et al., 2014; Tufariello et al., 2016).\n\nAs each protomer contains an EccD3 cavity, the second model, proposing translocation through EccD3, does not require hexamerization. However, this model is also not incompatible with hexamerization, which would not block a substrate path through EccD3. Further, the role of the hexamer may not be to form a central channel for substrate transit. Rather, hexamerization could serve some other purpose. For example, it may tether functional dimers together, facilitate localization, or increase local concentration and allosteric control of enzymatic activity (Kuriyan and Eisenberg, 2007).\n\nAlthough the ESX-3 structure presented here allows for mechanistic hypotheses about the transit of substrates across the inner-membrane, it does not provide sufficient information to allow for a structural model of transit across the outer\u00a0mycomembrane. The EccB3 periplasmic domain (Wagner et al., 2016) has been found to have similarity to the peptidoglycan binding phage protein PlyCB, which forms a ring inside the bacterial cell wall facilitating phage entrance into the cell. A hypothesis is that EccB3 is anchored to a larger outer membrane complex, but the purification conditions we have employed remove proteins required for its stabilization.\n\nThe description of ESX-3 presented here agrees in both protein composition and structure with the work recently published by Famelis et al. Given the high sequence conservation among the ESX systems in mycobacteria and related actinobacteria, these structures likely represent an excellent framework for the structural modeling of the other ESX systems. Together, these structures provide a wealth of information about protein-protein interaction interfaces and ESX complex architecture, which can be used to guide structure-based drug design and to generate hypotheses for further mechanistic investigations.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional Information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample Mycobacterium smegmatis</td>\n      <td>mc(2)155</td>\n      <td>ATCC</td>\n      <td>700084</td>\n      <td>Wild type strain</td>\n    </tr>\n    <tr>\n      <td>Biological sample Mycobacterium smegmatis</td>\n      <td>mc(2)155 with ideR::m\u03b3\u03b4200 (KanR)</td>\n      <td>Dussurget et al., 1996, Provided by GM Rodriguez</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample Mycobacterium smegmatis</td>\n      <td>mc(2)155, MSMEG_0626-3C-EGFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample Mycobacterium smegmatis</td>\n      <td>mc(2)155 with ideR::m\u03b3\u03b4200 (KanR), MSMEG_0626-3C-EGFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKM444</td>\n      <td>Murphy et al., 2018</td>\n      <td>Addgene Plasmid #108319</td>\n      <td>Plasmid encoding for Che9c phage RecT and Bxb1 phage Integrase</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKM444 - zeo</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Addition of zeocin resistance cassette to pKM444 plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKM468-3C-EGFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Modified ORBIT tagging plasmid</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>ORBIT targeting oligonucleotide</td>\n      <td>This paper</td>\n      <td>Oligo</td>\n      <td>5\u2019 TGTGCGTTCCACTGGTTCCCCGGCAACCACCTGCTGCACGTGAGCCAGCCGGACTACCTAGGTTTGTACCGTACACCACTGAGACCGCGGTGGTTGACCAGACAAACCCGCCGGATGACCCGCTTCCTGCGCGGCTTCATGTTCGACTGAACCCTTCACCGAGGTCCG 3\u2019</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP stabilized antibody preparation</td>\n      <td>Roche</td>\n      <td>Cat. #: 11814460001</td>\n      <td>Dilution 1:10000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IgG HRP-conjugated antibody</td>\n      <td>R&amp;D Systems</td>\n      <td>Cat. #: HAF007</td>\n      <td>Dilution 1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit IgG antibody HRP</td>\n      <td>GenScript</td>\n      <td>Cat. #: A00098</td>\n      <td>Dilution 1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-GroEL</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. #: G6532-.5ML</td>\n      <td>Dilution 1:5000</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Human Rhinovirus (HRV) 3C Protease</td>\n      <td>Thermo Scientific Pierce</td>\n      <td>Cat. #: 88946</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Superose 6 Increase 10/300 GL</td>\n      <td>GE Healthcare</td>\n      <td>Cat. #: 29091596</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, detergent</td>\n      <td>DDM, n-Dodecyl-\u03b2-D-Maltopyranoside</td>\n      <td>Inalco</td>\n      <td>Cat. #: 1758-1350</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, detergent</td>\n      <td>GDN, glyco-diosgenin</td>\n      <td>Anatrace</td>\n      <td>Cat. #: GDN101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>NativePAGE 3-12% Bis-Tris Protein Gels, 1.0 mm, 10-well</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat. #: BN1001BOX</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pierce Silver Stain Kit</td>\n      <td>Pierce</td>\n      <td>Cat. #: PI24612</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SerialEM</td>\n      <td>Mastronarde, 2005</td>\n      <td></td>\n      <td>https://bio3d.colorado.edu/SerialEM/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>Zheng et al., 2017</td>\n      <td></td>\n      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CTFfind4</td>\n      <td>Rohou and Grigorieff, 2015</td>\n      <td></td>\n      <td>https://grigoriefflab.umassmed.edu/ctffind4</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION</td>\n      <td>Scheres, 2012</td>\n      <td></td>\n      <td>cam.ac.uk/relion/index.php/Download_%26_install</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cisTEM</td>\n      <td>Grant et al., 2018</td>\n      <td></td>\n      <td>https://cistem.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryosparc</td>\n      <td>Punjani et al., 2017</td>\n      <td></td>\n      <td>https://cryosparc.com/docs/reference/install/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pyem</td>\n      <td>Asarnow et al., 2019</td>\n      <td></td>\n      <td>https://github.com/asarnow/pyem</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>coot</td>\n      <td>Emsley et al., 2010</td>\n      <td></td>\n      <td>https://www2.mrc-lmb.cam.</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>raptorX</td>\n      <td>K\u00e4llberg et al., 2012</td>\n      <td></td>\n      <td>http://raptorx.uchicago.edu/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>phenix real space refine</td>\n      <td>Afonine et al., 2018</td>\n      <td></td>\n      <td>https://www.phenix-online.</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MDFF</td>\n      <td>Trabuco et al., 2009</td>\n      <td></td>\n      <td>org/documentation/reference/refinement.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>namdinator</td>\n      <td>Kidmose et al., 2019</td>\n      <td></td>\n      <td>https://namdinator.au.dk/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pisa</td>\n      <td>Krissinel, 2015</td>\n      <td></td>\n      <td>http://www.ccp4.ac.uk/pisa/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>chimera</td>\n      <td>Pettersen et al., 2004</td>\n      <td></td>\n      <td>https://www.cgl.ucsf.edu/chimera/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>chimeraX</td>\n      <td>Goddard et al., 2018</td>\n      <td></td>\n      <td>https://www.cgl.ucsf.edu/chimerax/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DALI</td>\n      <td>Holm and Laakso, 2016</td>\n      <td></td>\n      <td>http://ekhidna2.biocenter.helsinki.fi/dali/</td>\n    </tr>\n  </tbody>\n</table>\n\n### Strain construction\n\nMycobacteria smegmatis mc(2)155\u00a0(wild type) and \u0394ideR cells were chromosomally tagged using the ORBIT protocol (Figure 1\u2014figure supplement 1). For wild type cells, the integrase and annealase expressing plasmid was pKM444. For recombineering in the \u0394ideR strain, which already contained a kanamycin resistance marker, we created a modified pKM444 plasmid with a zeocin resistance cassette inserted at the EcoIV restriction site. The tagging plasmid was pKM468 with a 3C protease cleavage site added before the EGFP tag. The targeting oligo had the sequence: 5\u2019 TGTGCGTTCCACTGGTTCCCCGGCAACCACCTGCTGCACGTGAGCCAGCCGGACTACCTAGGTTTGTACCGTACACCACTGAGACCGCGGTGGTTGACCAGACAAACCCGCCGGATGACCCGCTTCCTGCGCGGCTTCATGTTCGACTGAACCCTTCACCGAGGTCCG 3\u2019. M. smegmatis cells containing pKM444 were grown in an overnight liquid culture and induced for annealase and integrase expression. Cells were prepared for electroporation and electroporated with the targeting oligo and tagging plasmid. The transformed M. smegmatis were plated on hygromycin (wild type) or hygromycin and\u00a0kanamycin\u00a0(\u0394ideR)\u00a0containing 7H9 plates and incubated at 37\u00b0 C for 3 days. Colonies were verified for insertion of the tagging plasmid into the chromosome by PCR.\n\n### Western blotting\n\n100 mL of EccE3 tagged wild type and\u00a0\u0394ideR\u00a0knock out cells were grown overnight to an OD600 of 1.0\u20131.2. Cells were pelleted and resuspended in 1 mL of buffer (50 mM Tris-HCl pH 8.0, 150 mM NaCl, 1% DDM) and sonicated for 30 s. Cell lysates were run on a 4\u201320% SDS-PAGE gel (GenScript) and transferred to PVDF\u00a0membrane\u00a0(BioRad) using a BioRad Trans-Blot Turbo Transfer System. The blot was washed with PBS and blocked in a 5% milk/PBS-T solution for 1 hr. The blot was incubated with mouse anti-GFP monoclonal antibody (Roche) overnight. After rinsing with PBS-T, the blot was incubated with anti-mouse IgG HRP-conjugated antibody (R&D Systems) for 2 hr. After activation (Amersham) the blot was imaged on a BioRad ChemiDoc. The blot was stripped with stripping buffer (ThermoFisher Scientific) as per the manufacture's instructions, and incubated overnight with rabbit anti-GroEL monoclonal antibody (Sigma-Aldrich). The blot was incubated with goat anti-rabbit IgG antibody HRP (GenScript) for 2 hr, activated (Amersham), and imaged on a BioRad ChemiDoc.\n\n### Protein purification\n\nPurification for high resolution structural determination: M. smegmatis was grown in 6\u00a0L\u00a0of\u00a07H9 supplemented with 0.05% Tween 80 and 20 \u00b5g/mL kanamycin to an OD600\u00a0of\u00a0~0.8. After harvest, cells were washed three times with PBS and frozen in liquid nitrogen before lysis with a cryogenic grinder (SPEX SamplePrep). 24.9 g of powdered cell material was resuspended by\u00a0adding 56.3 mL 50 mM Tris-HCl pH 8.0, 150 mM NaCl, 1% DDM supplemented with 1X\u00a0protease inhibitor cocktail (SigmaFast) and 224 units Benzonase endonuclease. The suspension was stirred for 120 min at 4\u00b0C. After centrifugation for 30 min at 98,000 g, the supernatant was incubated with 1.4 mL anti-GFP-nanobody resin for 110 min at 4\u00b0C. The resin was transferred to a column and washed sequentially with 28 ml of wash buffer (50 mM Tris-HCl pH 8.0, 150 mM NaCl and 0.1% GDN), 14 mL of high salt wash buffer (50 mM Tris-HCl pH 8.0, 400 mM NaCl, and 0.1% GDN), and 14 mL of wash buffer (50 mM Tris-HCl pH 8.0, 150 mM NaCl, and 0.1% GDN). To cleave off the purification tag, the resin was incubated o/n at 4\u00b0C with 70 units Pierce HRV 3C protease (Thermo Scientific Pierce) in 2.8 mL wash buffer supplemented with 0.2 mM DTT. This resin was sedimented by gentle centrifugation (300 x g for 3 min), the supernatant collected, and the resin was subsequently washed with 1.4 mL wash buffer. The supernatant and wash fraction were combined and concentrated using an Amicon Ultra-4 centrifugal filter unit with a 100 kDa molecular weight cut-off. The sample was centrifuged at 16,000 g before injection on a Superose 6 10/300 column equilibrated in 50 mM Tris-HCl pH 8.0, 150 mM NaCl and 0.021% GDN. Peak fractions were concentrated using a 0.5 mL centrifugal filter unit (Amicon, 100 kDa cut-off) to an A280 of 5.52 by Nanodrop reading in about ~30 \u00b5L . Purification completed for examination of the void fractions was similar except: volumes were scaled for a powder weight of 21.1 g. and the high salt wash was omitted.\n\n### Blue-Native polyacrylamide gel electrophoresis (BN-PAGE)\n\nBN-PAGE\u00a0experiments were carried out using the Invitrogen NativePAGE Novex Bis-Tris Gel system as recommended by the manufacturer. Samples were prepared in a total volume of 10 \u00b5L using\u00a00.5 \u00b5L 5% G-250 sample additive. Electrophoresis was performed at a constant voltage of\u00a0105-120 V for 2-3.5 hr at 4\u00b0C. The gel was fixed and stained using the Pierce silver stain kit.\n\n### Cryo-EM \u2013 data acquisition\n\nSamples were frozen for cryo-EM. Quantifoil R1.2/1.3, 400 mesh, copper grids were glow discharged using a Solarus plasma cleaner (Gatan) with an H2/O2 mixture for 30 s. 2 \u00b5L of sample were applied per grid and the grids were plunged into liquid ethane using a FEI Vitrobot Mark IV.\n\nInitially, samples were screened, and test data sets were collected on a FEI Talos Arctica 200kV microscope equipped with a Gatan K2 Summit detector. For the initial screen of freezing conditions, 2499 movies were collected at a magnification of 36,000 with a pixel size of 1.14, and a defocus range of \u22121.5 to \u22122.5 \u00b5m, an exposure time of 9 s, and a dose rate of 7 electrons/\u00c52/second (Table 1). Data collection for the final structure presented in the main text was collected on a FEI Titan Krios at 300kV with a Gatan K2 Summit detector. Two imaging sessions were used. In the first imaging session, 2705 movies were collected at a magnification of 29,000 with a pixel size of 0.82, and a defocus of \u22120.4 to \u22121.2 \u00b5m, an exposure time of 10 s to collect 100 total frames, and a dose rate\u00a0of 8 electrons/\u00c52/second (Table 1). In the second imaging session, data was collected on the same microscope with the same detector, 4632 movies were collected at a magnification of 29,000 with a pixel size of 0.82, and a defocus range of \u22120.6 to \u22121.4 \u00b5m, an exposure time of 10 s to collect 80 total frames, and a dose\u00a0rate\u00a0of 6.7 electrons/\u00c52/second. Data used to analyze the void, plateau, and peak regions of the SEC profile were collected on a FEI Talos Arctica at 200kV with a Gatan K3 detector. All micrographs were collected at a magnification of 28,000 with a pixel size of 0.9, and a defocus range of \u22121.5 to \u22122.5 \u00b5m, an exposure time of 11.7 s to collect 117 total frames at a total dose of 58 electrons/ \u00c52. For the void region, 1215 micrographs were collected.\n\n### Cryo-EM \u2013 data processing\n\nFor all data, movies were motion corrected using MotionCor2 (Zheng et al., 2017) and CTF correction was performed using CTFfind4 (Rohou and Grigorieff, 2015). For the Arctica dataset, particles were picked using a gaussian blob in either RELION (Zivanov et al., 2018) or cisTEM (Grant et al., 2018) and initial 2D classification was performed to remove obvious artifactual particles. Initially, a shotgun approach was taken to generate several initial models using RELION, cisTEM, and cryosparc (Punjani et al., 2017). Once an initial model which contained realistic low-resolution features was generated, a user defined descent gradient was performed to improve the model with the goal of achieving accurate secondary structure features. First, all particles selected during 2D classification were refined in 3D against the randomly generated initial model. Second, a round of 3D classification with four classes and default RELION settings was performed and the best class selected. Third, the best class was refined as a single class in 3D classification with increasing Tau2_Fudge and decreasing search angle size. The resulting EM density map had clear transmembrane helix densities and was used as the model for a new 3D reconstruction. This reconstruction was used to back project models for reference-based particle picking in RELION. Two rounds of 2D classification were performed and the best classes selected. One round of 3D classification was performed using the Tau2_Fudge value optimized during the previous run through (T\u00a0=\u00a012) and the best class selected. A final 3D reconstruction of the Arctica data set yielded a map of about 4.7 \u00c5 resolution (Figure 1\u2014figure supplement 4).\n\nAfter motion correction and CTF determination, the final Titan Krios dataset was processed entirely using RELION. Particles were picked using a gaussian blob, and extracted as 4x binned particles. Two rounds of initial 2D classification were performed with T\u00a0=\u00a03 on the binned particles and obvious artifactual particles were removed. The final reconstruction from the Arctica dataset was used as the initial model for a 3D reconstruction of the binned particles. 3D classification with four classes and the previously optimized Tau2_Fudge value, T\u00a0=\u00a012, was performed on the binned particles. The two best classes were selected and re-extracted without binning. A 3D reconstruction was performed. A mask was created for the high-resolution region of the reconstruction and 3D classification without image alignment was performed focused on this region. The best class was selected and the subsequent 4.0 \u00c5 reconstruction is the consensus structure for the entire complex (Figure 1\u2014figure supplement 5). Focused classification of each protomer, the periplasmic EccB region, and the ATPase 1,\u00a02, and 3 domains of EccC were performed. To perform focused classification, the center of mass of the region of interest was determined using chimera (Pettersen et al., 2004). Particles were recentered on this area and reextracted. Masks for the region of interest were generated and 3D classification without image alignment was performed. The best class was selected and used for a focused 3D reconstruction without image alignment of the region of interest. A reconstruction was generated and density outside of the region of interest was subtracted. A final reconstruction of the masked and density subtracted particles was then performed. This procedure improved the resolution of the protomer i to 3.75 \u00c5 and protomer ii 3.83 \u00c5, 5.8 \u00c5 resolution for the EccB3 periplasmic domain, and\u00a0~7 \u00c5 resolution for the EccC3 lower cytoplasmic region.\n\nTo generate the symmetry expanded protomers based on non-point group symmetry (also known as non-crystallographic symmetry or NCS), a transformation matrix between the two protomers was calculated using chimera. Particles were then transformed and aligned using the subparticles.py and star.py utilities in pyem (Asarnow et al., 2019) resulting in a particle stack with twice as many particles as the input file, each focused on protomer i or protomer ii. Density subtraction was performed to remove density outside of the symmetry expanded protomer, and focused classification and refinement were performed as described above. This procedure improved the resolution of the symmetry expanded protomer to 3.69 \u00c5 resolution.\n\n### Atomic model building\n\nThe cytoplasmic domain from the crystal structure of EccD1 (PDB 4KV2) was docked into the cytoplasmic domains of the two EccD3 molecules and the sequence was mutated. The remaining transmembrane domains of EccD3 and the residues 14\u201393 of EccB3 were built de novo in Coot (Emsley et al., 2010) using baton building. The alpha helices of EccE3 and EccC3 were initially modeled using the RaptorX (K\u00e4llberg et al., 2012) homology server. The loops and strands of EccE3 and EccC3 were built in Coot using baton building. All models were subsequently refined individually, as a symmetry expanded protomer, left and right protomers, and as the full model using phenix real space refine (Afonine et al., 2018), Coot, and the MDFF (Trabuco et al., 2009) server, Namdinator (Kidmose et al., 2019;\u00a0Supplementary file 1).\n\n### Low resolution modeling\n\nThe left and right protomer map, periplasmic focused refined map, and lower cytoplasmic focused refined map were all docked into the consensus map and added together using chimera. The combined map was filtered to 10 \u00c5 resolution to match the lowest resolution component. Homology models for amino acids 94\u2013516 of EccB3, the transmembrane helixes of EccC3, and 404\u20131268 of EccC3 were generated using RaptorX. These models were fit into the combined map density using the fit map to model utility in Chimera. The full model was refined using phenix.real_space_refine.\n\n### Model interpretation and display\n\nBuried surface area between subunits was calculated by PISA\u00a0(Krissinel, 2015). Atomic models for individual proteins were compared against the PDB using the DALI server (Holm and Laakso, 2016). Chimera and ChimeraX (Goddard et al., 2018) were used to display maps and models for figure creation. Consurf (Ashkenazy et al., 2016) was used to produce multisequence alignments and to color structural models by homology.\n",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "59dd69a5-299b-4948-8963-0ebdc7293f7b",
+      "submission_id": "8ec0383c-34aa-43ab-8b1d-cd9db9dc82c7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward H Egelman, University of Virginia United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52983.sa1](https://doi.org/10.7554/eLife.52983.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript by Poweleit et al. describes the cryoEM structure of a natively purified ESX-3 (Type VII) secretion system from Mycobacterium smegmatis. Our understanding of the type VII secretion mechanism has been limited by the lack of high-resolution structural information of the fully assembled, ~900 kDa machine. Here the authors isolate the native ESX-3 complex from M. smegmatis and solve the structure by single-particle cryoEM in detergent. This is a beautiful and informative structure, and the analysis is rigorous. The work is significant because it corroborates the structural observations recently published by a competing group (Famelis et al., 2019), and provides a framework for understanding how this secretion machine transports its folded clients across the cytoplasmic membrane.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The native structure of an ESX translocon\" for consideration by eLife. Your article has been reviewed by four peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript by Poweleit et al. describes the high-resolution structure of an ESX-3 complex of M. smegmatis obtained by cryo-electron microscopy. A virtually identical structure of the same complex has been published in Nature by Famelis et al. as the authors were preparing to submit this paper. In contrast to the structure published by Famelis et al., which was obtained by overexpressing the ESX-3 system from a plasmid, Poweleit et al. tagged the complex chromosomally, on the last gene (EccE) of the operon, to bypass potential transcriptional defects. While the presented work therefore represents a native structure, as opposed to the already published structure by Famelis and colleagues, the observed structural features/composition are the same for both structures. It was felt that the eLife policy on \"scoops\" protects the authors of this manuscript and that it therefore should be considered further after suitable revisions.\n\nEssential revisions:\n\n1) The authors fail to see any higher order oligomers, which have been previously reported in native (Houben et al., 2012, van Winden et al., 2016) and also plasmid expressed conditions (Famelis et al., 2019; Beckham et al., 2017). These publications have reported higher order oligomers in multiple mycobacterial species (M. bovis BCG, M. marinum and M. smegmatis) and from different type VII secretion systems (ESX-1, ESX-3 and ESX-5). Higher order multimerization has also been suggested/observed by the corresponding author in previously published work (Rosenberg et al., 2015) for the EccC ATPase. Importantly, Beckham et al. and Famelis et al. showed that these higher order oligomers are only present in the void peak fraction of the SEC analysis. In the current study it is unfortunately not mentioned which SEC fractions were used for the cryo-EM analysis, but it is suspected that the void peak fractions were not analyzed. To confirm that the native ESX-3 complex forms higher order oligomers, the authors should more thoroughly investigate the presence of these multimers, e.g. by including the void peak fractions in the analysis and/or analyzing the ESX-3 membrane complex by BN-PAGE analysis before SEC (including crosslinking).\n\n2) The authors propose an alternative and contentious model for protein translocation through the membrane complex, i.e. through a hydrophobic cavity formed by two EccD subunits, which is (partially) filled with lipids. Indeed, the presence of such a large cavity in between these two subunits is striking. However, the surface of this cavity consists, except for a number of polar residues, solely of hydrophobic residues. In agreement with a hydrophobic interface, the structure reveals extra densities at the periplasmic part of the cavity suggesting the presence of lipids or detergent. The cytoplasmic half of the cavity does not reveal these extra densities, which could be caused by the presence of several polar residues here, as also discussed by the authors. However, lipids in this part of the cavity could have been removed during solubilization of the complex. To show that partially lipid-filled cavities have been observed also in other membrane complexes, the authors refer to a publication describing the presence of a similar lipid plug in the central cavity of a reconstituted rotor cylinder of the ATP synthase (Meiers et al. Febs Lett 2001). However, it is explicitly mentioned in this article that \"As the detergent-purified c cylinder is completely devoid of phospholipids, these are incorporated into the central hole from one side of the cylinder during the reconstitution procedure\". It therefore remains unclear whether such lipid-plugged membrane pores actually exists in vivo. In addition, Poweleit et al. propose a \"lipid mediated\" mechanism of protein translocation through this hydrophobic pore. It is difficult to envision though how lipids would be able to mediate translocation of folded substrate dimers with mostly hydrophilic surfaces. This would be a completely new mechanism of protein translocation not seen for any other protein secretion machineries. In addition, the authors speculate even further that besides (hydrophilic) proteins also hydrophobic molecules, such as lipids, could be transported through this cavity, while there is no clear evidence that type VII secretion systems are able mediate lipid transport. In conclusion, while it is indeed striking that such a large cavity is present in the ESX-3 complex, the authors should more cautiously discuss this model, by also mentioning the major problems with this model as discussed above. The translocation model of substrates through the central pore of a hexameric complex is far less speculative, as it is supported by experimental data, published by several groups (as also mentioned in the Discussion). This model should therefore get more emphasis.\n\n3) The regulatory role of the \"cytoplasmic bridge\" is speculative and should be more carefully discussed. e.g. \"multimeric cytoplasmic domain is poised to regulate the translocation of ESX substrates\" and \"EccC3 and EccE3 collaborate to buttress the cytoplasmic domains of EccD3 and form a stable regulatory bridge\".\n",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8f037b6f-da45-4aa3-86d4-91b565e73507",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C1",
+      "claim": "ESX (or Type VII) secretion systems are protein export systems in mycobacteria and many Gram-positive bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX (or Type VII) secretion systems are protein export systems in mycobacteria and many Gram-positive bacteria that mediate a broad range of functions including virulence, conjugation, and metabolic regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about ESX systems that is supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "5f679c5f-bfcf-4616-9bff-2a5315301995",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C2",
+      "claim": "ESX secretion systems mediate a broad range of functions including virulence, conjugation, and metabolic regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX (or Type VII) secretion systems are protein export systems in mycobacteria and many Gram-positive bacteria that mediate a broad range of functions including virulence, conjugation, and metabolic regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about ESX system functions is supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "5e49f19e-9afc-4756-ac7a-99d435544683",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C3",
+      "claim": "ESX systems translocate folded dimers of WXG100-superfamily protein substrates across the cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These systems translocate folded dimers of WXG100-superfamily protein substrates across the cytoplasmic membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about the mechanism of ESX systems is supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "219519b0-a3da-409b-85f9-d5559f5ef28b",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C4",
+      "claim": "The cryo-electron microscopy structure of an ESX-3 system was determined from protein purified using an epitope tag inserted into the chromosome of Mycobacterium smegmatis.",
+      "claim_type": "EXPLICIT",
+      "source": "We report the cryo-electron microscopy structure of an ESX-3 system, purified using an epitope tag inserted with recombineering into the chromosome of the model organism Mycobacterium smegmatis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "88eb4173-c0f7-44f5-89e2-9c447b44bf88",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C5",
+      "claim": "The ESX-3 structure reveals a stacked architecture that extends above and below the inner membrane of the bacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure reveals a stacked architecture that extends above and below the inner membrane of the bacterium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cryo-EM structure determined in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "29fa83ec-ebc4-469a-990a-524e8aabf173",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C6",
+      "claim": "The ESX-3 protomer complex is assembled from a single copy of EccB3, EccC3, and EccE3 and two copies of EccD3 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 protomer complex is assembled from a single copy of the EccB3, EccC3, and EccE3 and two copies of the EccD3 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This stoichiometry is determined from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "358f1189-fa14-480a-9207-592d26a6e17e",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C7",
+      "claim": "In the structure, the ESX-3 protomers form a stable dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure, the protomers form a stable dimer that is consistent with assembly into a larger oligomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "39e9f101-3166-4b1e-afef-6d86b4f2ed5c",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C8",
+      "claim": "The ESX-3 dimer is consistent with assembly into a larger oligomer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure, the protomers form a stable dimer that is consistent with assembly into a larger oligomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural features observed in the cryo-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "33bfe9d5-4ac1-41e2-ac58-1ef4e5d02211",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C9",
+      "claim": "ESX systems were originally described as virulence factors in Mycobacterium tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally described as virulence factors in Mycobacteria tuberculosis (Guinn et al., 2004; Hsu et al., 2003; Lewis et al., 2003; Stanley et al., 2003), orthologs of ESX have since been discovered in most Gram-positive bacteria (Bottai et al., 2017), and are more generally referred to as Type VII secretion systems (Bitter et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "7eb0006e-85b7-4f3e-8df1-5b20ef2fb85a",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C10",
+      "claim": "Orthologs of ESX have been discovered in most Gram-positive bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally described as virulence factors in Mycobacteria tuberculosis (Guinn et al., 2004; Hsu et al., 2003; Lewis et al., 2003; Stanley et al., 2003), orthologs of ESX have since been discovered in most Gram-positive bacteria (Bottai et al., 2017), and are more generally referred to as Type VII secretion systems (Bitter et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Bottai et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "2c02d087-87ac-4744-8cd8-ada8bc0800ad",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C11",
+      "claim": "ESX systems are more generally referred to as Type VII secretion systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally described as virulence factors in Mycobacteria tuberculosis (Guinn et al., 2004; Hsu et al., 2003; Lewis et al., 2003; Stanley et al., 2003), orthologs of ESX have since been discovered in most Gram-positive bacteria (Bottai et al., 2017), and are more generally referred to as Type VII secretion systems (Bitter et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This nomenclature is supported by citation to Bitter et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "03197934-c5f5-487c-a912-0db801bf1031",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C12",
+      "claim": "In mycobacteria there are five paralogous ESX operons (ESX 1\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "In mycobacteria there are five paralogous ESX operons (ESX 1\u20135) each of which encodes an inner membrane translocon complex consisting of three conserved Ecc proteins: EccB, EccC, and EccD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mycobacterial ESX systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "9286a8dc-b64b-4cce-bd8b-e480b17a4405",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C13",
+      "claim": "Each ESX operon encodes an inner membrane translocon complex consisting of three conserved Ecc proteins: EccB, EccC, and EccD.",
+      "claim_type": "EXPLICIT",
+      "source": "In mycobacteria there are five paralogous ESX operons (ESX 1\u20135) each of which encodes an inner membrane translocon complex consisting of three conserved Ecc proteins: EccB, EccC, and EccD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the composition of ESX systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "12c78439-6563-42cd-a765-d9244634cfbe",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C14",
+      "claim": "EccE is conserved in all ESX operons except the ancestral ESX-4 operon.",
+      "claim_type": "EXPLICIT",
+      "source": "A fourth protein, EccE is conserved in all ESX operons except the ancestral ESX-4 operon and is also considered a part of the ESX translocon complex as it copurifies with EccB, EccC, and EccD (Houben et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge and citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "e558849d-7be9-4ed9-a89f-bad391d1be4b",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C15",
+      "claim": "EccE is considered a part of the ESX translocon complex as it copurifies with EccB, EccC, and EccD.",
+      "claim_type": "EXPLICIT",
+      "source": "A fourth protein, EccE is conserved in all ESX operons except the ancestral ESX-4 operon and is also considered a part of the ESX translocon complex as it copurifies with EccB, EccC, and EccD (Houben et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Houben et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "38ad1c76-13d1-459d-82a3-6e98c1f9bf25",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C16",
+      "claim": "All Type VII secretion systems translocate proteins in the WXG100-superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "All Type VII secretion systems translocate proteins in the WXG100-superfamily, which share a common two-helix hairpin structure and are found as homo- or heterodimers (Poulsen et al., 2014) and are mutually dependent for secretion with other substrates (Fortune et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "18da07d2-e9b8-4424-8ac0-010ae5d48058",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C17",
+      "claim": "WXG100-superfamily proteins share a common two-helix hairpin structure and are found as homo- or heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "All Type VII secretion systems translocate proteins in the WXG100-superfamily, which share a common two-helix hairpin structure and are found as homo- or heterodimers (Poulsen et al., 2014) and are mutually dependent for secretion with other substrates (Fortune et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Poulsen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "8af1d5e6-02b1-4a9a-92e1-f42714e14b9c",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C18",
+      "claim": "WXG100-superfamily proteins are mutually dependent for secretion with other substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "All Type VII secretion systems translocate proteins in the WXG100-superfamily, which share a common two-helix hairpin structure and are found as homo- or heterodimers (Poulsen et al., 2014) and are mutually dependent for secretion with other substrates (Fortune et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fortune et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "bcf884d7-4e89-4b95-b42d-6d8eb3683a41",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C19",
+      "claim": "In contrast to the general secretory apparatus (Sec), ESX substrates have been shown to be secreted in their folded, dimeric state.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the general secretory apparatus (Sec), ESX substrates have been shown to be secreted in their folded, dimeric state (Sysoeva et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sysoeva et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "76ae22b9-eedc-47ff-83c4-dd400210ba1c",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C20",
+      "claim": "A low resolution, negative stain electron microscopy structure of ESX-5 shows a translocon complex assembled into a hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "A low resolution, negative stain electron microscopy structure of ESX-5 shows a translocon complex assembled into a hexamer (Beckham et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Beckham et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "8cb39b0e-4306-4d2c-95c6-3af0e01d8e95",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C21",
+      "claim": "During the preparation of this work for publication, a similar structure of the ESX-3 system expressed from a plasmid was published by another group.",
+      "claim_type": "EXPLICIT",
+      "source": "During the preparation of this work for publication, a similar structure of the ESX-3 system expressed from a plasmid was published by another group (Famelis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about concurrent research supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "e041b281-f061-4b75-94dd-c8b458589d8f",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C22",
+      "claim": "The ESX-3 translocon complex is important for iron acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 translocon complex is important for iron acquisition (Serafini et al., 2013; Siegrist et al., 2009), cell survival (Tinaztepe et al., 2016), and virulence in pathogenic mycobacteria (Tufariello et al., 2016), and its role in iron homeostasis is conserved in the model system, M. smegmatis (Siegrist et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Serafini et al., 2013 and Siegrist et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "0449c338-b200-44ec-b213-f2aec7750bdd",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C23",
+      "claim": "The ESX-3 translocon complex is important for cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 translocon complex is important for iron acquisition (Serafini et al., 2013; Siegrist et al., 2009), cell survival (Tinaztepe et al., 2016), and virulence in pathogenic mycobacteria (Tufariello et al., 2016), and its role in iron homeostasis is conserved in the model system, M. smegmatis (Siegrist et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tinaztepe et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "e16d5fd4-d74e-48ac-bde8-2886d9a8b6dc",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C24",
+      "claim": "The ESX-3 translocon complex is important for virulence in pathogenic mycobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 translocon complex is important for iron acquisition (Serafini et al., 2013; Siegrist et al., 2009), cell survival (Tinaztepe et al., 2016), and virulence in pathogenic mycobacteria (Tufariello et al., 2016), and its role in iron homeostasis is conserved in the model system, M. smegmatis (Siegrist et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tufariello et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "208c6046-8f69-4a77-b871-6371646b40b2",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C25",
+      "claim": "The role of ESX-3 in iron homeostasis is conserved in the model system, M. smegmatis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 translocon complex is important for iron acquisition (Serafini et al., 2013; Siegrist et al., 2009), cell survival (Tinaztepe et al., 2016), and virulence in pathogenic mycobacteria (Tufariello et al., 2016), and its role in iron homeostasis is conserved in the model system, M. smegmatis (Siegrist et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Siegrist et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "3c96ae15-d323-421d-b157-948e7c2c577b",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C26",
+      "claim": "The ESX-3 translocon complex proteins are transcribed in a single operon.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 translocon complex proteins are transcribed in a single operon (Li et al., 2017), and expression of the ESX-3 operon is dependent on the transcriptional regulator IdeR, which controls iron metabolism (Rodriguez et al., 2002) and is required for growth in the human pathogen M. tuberculosis (Pandey and Rodriguez, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Li et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "e3a1eb79-ed97-4f2b-96a3-000e8f37c69d",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C27",
+      "claim": "Expression of the ESX-3 operon is dependent on the transcriptional regulator IdeR.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 translocon complex proteins are transcribed in a single operon (Li et al., 2017), and expression of the ESX-3 operon is dependent on the transcriptional regulator IdeR, which controls iron metabolism (Rodriguez et al., 2002) and is required for growth in the human pathogen M. tuberculosis (Pandey and Rodriguez, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge and citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "5fdc6e33-fa6f-4846-88bc-1b957f930275",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C28",
+      "claim": "IdeR controls iron metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 translocon complex proteins are transcribed in a single operon (Li et al., 2017), and expression of the ESX-3 operon is dependent on the transcriptional regulator IdeR, which controls iron metabolism (Rodriguez et al., 2002) and is required for growth in the human pathogen M. tuberculosis (Pandey and Rodriguez, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rodriguez et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "e5d71a73-2985-4099-912d-493bff6f40a4",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C29",
+      "claim": "IdeR is required for growth in the human pathogen M. tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 translocon complex proteins are transcribed in a single operon (Li et al., 2017), and expression of the ESX-3 operon is dependent on the transcriptional regulator IdeR, which controls iron metabolism (Rodriguez et al., 2002) and is required for growth in the human pathogen M. tuberculosis (Pandey and Rodriguez, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pandey and Rodriguez, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "297b620a-7c02-47d1-8bdf-7a4fe27a8e1d",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C30",
+      "claim": "The ESX-3 operon is 67% identical between M. smegmatis and M. tuberculosis over 4354 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 operon is 67% identical between the non-pathogenic model organism M. smegmatis and the pathogen M. tuberculosis over the 4354 amino acids of the ESX-3 operon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a sequence comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "fa8c77df-4429-4f33-be20-1c8b26e9436a",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C31",
+      "claim": "The high degree of conservation and essential role in cell growth makes ESX-3 an important candidate for small molecule inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This high degree of conservation and essential role in cell growth makes ESX-3 an important candidate for small molecule inhibition (Bottai et al., 2014), as blockade of ESX-3 will both inhibit virulence in M. tuberculosis and kill a broad range of pathogenic mycobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of ESX-3 and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "18ea7475-8b0b-4dd9-aea0-83159ab42d32",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C32",
+      "claim": "Blockade of ESX-3 will both inhibit virulence in M. tuberculosis and kill a broad range of pathogenic mycobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This high degree of conservation and essential role in cell growth makes ESX-3 an important candidate for small molecule inhibition (Bottai et al., 2014), as blockade of ESX-3 will both inhibit virulence in M. tuberculosis and kill a broad range of pathogenic mycobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the essential nature of ESX-3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "405d163f-b90d-4173-a82f-8cbc88782bbf",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C33",
+      "claim": "A cleavable EGFP tag was inserted into the chromosome of M. smegmatis at the C-terminus of EccE3 via the ORBIT method.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate purification of the endogenous translocon complex, a cleavable EGFP tag was inserted into the chromosome of M. smegmatis mc(2)155 (wild type) and \u0394ideR (Dussurget et al., 1996) strains at the C-terminus of EccE3 via the ORBIT method (Murphy et al., 2018) (Figure 1A, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental method used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "497b9cc6-bd17-4aaf-9ebf-7790cb1d19de",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C34",
+      "claim": "Deletion of the gene for the iron acquisition regulator IdeR greatly increases chromosomal expression of ESX-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the gene for the iron acquisition regulator IdeR greatly increases chromosomal expression of ESX-3 from negligible amounts of protein to a yield sufficient for purification and structure determination (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "e8bd5439-2d09-431a-b188-df4c9dcbce92",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C35",
+      "claim": "Four components of the ESX-3 translocon complex EccB3, EccC3, EccD3 and EccE3 were stably affinity-purified as a large molecular weight species of about 900 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Four components of the ESX-3 translocon complex EccB3, EccC3, EccD3 and EccE3 were stably affinity-purified as a large molecular weight species of about 900 kDa (Figure 1B and C, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from biochemical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "eba64db3-c875-4444-a5db-c83f3a4f3f92",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C36",
+      "claim": "The ESX-3 dimer can be divided into four areas: the flexible periplasmic multimerization domain, the stable transmembrane region, the stable upper cytoplasmic region, and the flexible lower cytoplasmic motor domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample was imaged by cryo-EM and reconstructed revealing a dimeric structure, which can be divided into four areas: the flexible periplasmic multimerization domain, the stable transmembrane region, the stable upper cytoplasmic region, and the flexible lower cytoplasmic motor domain (Figure 1D, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "862d7755-025f-4512-9059-fa48ca1c3388",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C37",
+      "claim": "The entire ESX-3 dimer was initially reconstructed to 4.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, the entire ESX-3 dimer was reconstructed to 4.0 \u00c5 resolution (Figure 1\u2014figure supplement 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a technical detail about the cryo-EM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "5cc42167-e79b-42e0-be5b-98c1854ef102",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C38",
+      "claim": "Using symmetry expansion and focused classification and refinement techniques, the resolution of the transmembrane region and upper cytoplasmic region was improved to 3.7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Using symmetry expansion, and focused classification and refinement techniques, the resolutions of targeted regions of the ESX-3 complex were improved to 3.7 \u00c5 for the transmembrane region and upper cytoplasmic region (Figure 1\u2014figure supplement 6B\u2013D), 5.8 \u00c5 for the periplasmic region (Figure 1\u2014figure supplement 6E), and ~7 \u00c5 resolution for the lower cytoplasmic region (Figure 1\u2014figure supplement 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data processing methods and resulting resolutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "cf2d2406-505c-433c-945e-e2ad66f43d41",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C39",
+      "claim": "The periplasmic region was resolved to 5.8 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Using symmetry expansion, and focused classification and refinement techniques, the resolutions of targeted regions of the ESX-3 complex were improved to 3.7 \u00c5 for the transmembrane region and upper cytoplasmic region (Figure 1\u2014figure supplement 6B\u2013D), 5.8 \u00c5 for the periplasmic region (Figure 1\u2014figure supplement 6E), and ~7 \u00c5 resolution for the lower cytoplasmic region (Figure 1\u2014figure supplement 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the resolution achieved for the periplasmic region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "ba94d9b3-450c-4621-839b-e84793cec435",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C40",
+      "claim": "The lower cytoplasmic region was resolved to ~7 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Using symmetry expansion, and focused classification and refinement techniques, the resolutions of targeted regions of the ESX-3 complex were improved to 3.7 \u00c5 for the transmembrane region and upper cytoplasmic region (Figure 1\u2014figure supplement 6B\u2013D), 5.8 \u00c5 for the periplasmic region (Figure 1\u2014figure supplement 6E), and ~7 \u00c5 resolution for the lower cytoplasmic region (Figure 1\u2014figure supplement 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the resolution achieved for the lower cytoplasmic region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "ef12c918-4e68-4bb9-b574-7abdb1bcfb98",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C41",
+      "claim": "The ESX-3 dimer is comprised of ten total proteins: two copies each of EccB3, EccC3, and EccE3 and four copies of EccD3.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 dimer is comprised of ten total proteins, two copies each of EccB3, EccC3, and EccE3 and four copies of EccD3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "c77006d8-5bd0-497d-985e-718152139384",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C42",
+      "claim": "Two pseudo-symmetric protomers combine to form the ESX-3 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Two pseudo-symmetric protomers referred to as i and ii, combine to form the ESX-3 dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "e767dce5-ccdf-4b45-9f80-e3b73fadb25f",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C43",
+      "claim": "Each protomer contains one copy of EccB3, EccC3, and EccE3 and two conformationally distinct copies of EccD3.",
+      "claim_type": "EXPLICIT",
+      "source": "Each protomer contains one copy of EccB3, EccC3, and EccE3 and two conformationally distinct copies of EccD3, referred to as EccD3-bent and EccD3-extended (Figure 1E) based on their highly asymmetric conformations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "15dd1acd-773b-4b42-88e0-196bddccf923",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C44",
+      "claim": "The two copies of EccD3 are referred to as EccD3-bent and EccD3-extended based on their highly asymmetric conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Each protomer contains one copy of EccB3, EccC3, and EccE3 and two conformationally distinct copies of EccD3, referred to as EccD3-bent and EccD3-extended (Figure 1E) based on their highly asymmetric conformations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a nomenclature based on structural observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "ef4c6776-4364-4be7-96fb-0a8404ed63c5",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C45",
+      "claim": "At 3.7 \u00c5 resolution, it was possible to build de novo atomic models for all observable amino acids in the transmembrane and upper cytoplasmic regions, except the two transmembrane helices of EccC3.",
+      "claim_type": "EXPLICIT",
+      "source": "At 3.7 \u00c5 resolution, it was possible to build de novo atomic models for all observable amino acids in the transmembrane and upper cytoplasmic regions, except the two transmembrane helices of EccC3 (Figure 1E and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the model building process based on the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "11ced29d-0031-42f6-9704-2016ebad4483",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C46",
+      "claim": "There are two copies of EccD3 in each ESX-3 protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two copies of EccD3 in each ESX-3 protomer (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "211b7aab-aecf-4492-8048-bd0a66b0012c",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C47",
+      "claim": "The ubiquitin-like N-terminal domain of each EccD3 molecule interacts with EccE3 and EccC3 in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitin-like N-terminal domain of each EccD3 molecule interacts with EccE3 and EccC3 in the cytoplasm, and a long linker joins the soluble domain of EccD3 to 11 transmembrane helices (Figure 2B and Figure 2\u2014figure supplement 1A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "8864d549-f2a3-4e2a-ae50-43626c48d57b",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C48",
+      "claim": "A long linker joins the soluble domain of EccD3 to 11 transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitin-like N-terminal domain of each EccD3 molecule interacts with EccE3 and EccC3 in the cytoplasm, and a long linker joins the soluble domain of EccD3 to 11 transmembrane helices (Figure 2B and Figure 2\u2014figure supplement 1A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "7e047c68-07c1-4db3-b9df-8cf396579d09",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C49",
+      "claim": "The four EccD3 molecules account for 44 of the total 54 transmembrane helices observed in the ESX-3 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The four EccD3 molecules account for 44 of the total 54 transmembrane helices observed in the ESX-3 dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "6d2c182b-3cbd-4ab3-8afd-13394afeffb6",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C50",
+      "claim": "A distinct transmembrane cavity is formed by dimerization of the two copies of EccD3 in each protomer with a cross-sectional diameter of ~20\u00d730 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "A distinct transmembrane cavity is formed by dimerization of the two copies of EccD3 in each protomer with a cross-sectional diameter of ~20\u00d730 \u00c5 without significant regions of constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "2bc4b0da-1daa-48a4-bce1-cf07ed4c6eaa",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C51",
+      "claim": "The transmembrane cavity formed by EccD3 has no significant regions of constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "A distinct transmembrane cavity is formed by dimerization of the two copies of EccD3 in each protomer with a cross-sectional diameter of ~20\u00d730 \u00c5 without significant regions of constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "f8ef8551-dc00-43b3-b2f9-f44362735779",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C52",
+      "claim": "Transmembrane helices 1, 9 and 10 of EccD3 interact across the cavity dimer interface in a tight bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmembrane helices 1, 9 and 10 interact across the cavity dimer interface in a tight bundle making passive lipid transport into the membrane from the cavity unlikely (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "16ebe580-0e5b-47fc-abe2-5df76c800893",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C53",
+      "claim": "The tight bundle of transmembrane helices makes passive lipid transport into the membrane from the cavity unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmembrane helices 1, 9 and 10 interact across the cavity dimer interface in a tight bundle making passive lipid transport into the membrane from the cavity unlikely (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the structural observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "303c25f5-0b2e-408d-aa58-3f46ed2173e4",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C54",
+      "claim": "The inner surface of the periplasmic half of the cavity is composed primarily of hydrophobic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner surface of the periplasmic half of the cavity is composed primarily of hydrophobic residues and in our maps, eight extended densities consistent with hydrophobic lipid tails or detergent molecules line the periplasmic inner face of the cavity (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "d11cc664-0c17-475a-afba-44309d17b81b",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C55",
+      "claim": "Eight extended densities consistent with hydrophobic lipid tails or detergent molecules line the periplasmic inner face of the cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner surface of the periplasmic half of the cavity is composed primarily of hydrophobic residues and in our maps, eight extended densities consistent with hydrophobic lipid tails or detergent molecules line the periplasmic inner face of the cavity (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "5a91a987-13cd-41af-a3b4-99ca5009dab7",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C56",
+      "claim": "The cytoplasmic face of the cavity has several polar residues and ordered hydrophobic densities are not visible.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the cytoplasmic face of the cavity has several polar residues and ordered hydrophobic densities are not visible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "2e4109a3-5def-4c84-a062-5fb595f5a03c",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C57",
+      "claim": "Residues 100\u2013127 of EccD3 conserve a high sequence identity throughout evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The linker joining the cytoplasmic ubiquitin-like domain to transmembrane helix 1 (residues 100\u2013127) of EccD3 conserves a high sequence identity throughout evolution (Ashkenazy et al., 2016), yet it adopts two distinct secondary structures resulting in the asymmetric placement of the cytoplasmic domains of EccD3 (Figure 2D and Figure 2\u2014figure supplement 1A\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence conservation analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "4237e5cf-747f-4154-bcad-df485a864b82",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C58",
+      "claim": "Residues 100\u2013127 of EccD3 adopt two distinct secondary structures resulting in the asymmetric placement of the cytoplasmic domains of EccD3.",
+      "claim_type": "EXPLICIT",
+      "source": "The linker joining the cytoplasmic ubiquitin-like domain to transmembrane helix 1 (residues 100\u2013127) of EccD3 conserves a high sequence identity throughout evolution (Ashkenazy et al., 2016), yet it adopts two distinct secondary structures resulting in the asymmetric placement of the cytoplasmic domains of EccD3 (Figure 2D and Figure 2\u2014figure supplement 1A\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "3622c3fd-08d7-4c4a-8164-a95ded8210bf",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C59",
+      "claim": "In EccD3-bent, residues 100\u2013127 are bent, folding into an \u03b1-helix and forming a nexus of stabilizing contacts with EccB3 and EccC3.",
+      "claim_type": "EXPLICIT",
+      "source": "In EccD3-bent, residues 100\u2013127 are bent, folding into an \u03b1-helix and forming a nexus of stabilizing contacts with EccB3 and EccC3 (Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "2d177db6-b615-4e8d-9ffa-f0f83b6732a5",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C60",
+      "claim": "In EccD3-extended, residues 100\u2013127 are extended and fold into a shorter \u03b1-helix that interacts with EccE3 and the cytoplasmic domain of EccD3-bent.",
+      "claim_type": "EXPLICIT",
+      "source": "In EccD3-extended, residues 100\u2013127 are extended and fold into a shorter \u03b1-helix that interacts with EccE3 and the cytoplasmic domain of EccD3-bent (Figure 2\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "f4d05dbe-2785-413d-b1d1-03b98f18d14b",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C61",
+      "claim": "The conformational flexibility of residues 100\u2013127 suggests that if they were released from their associations with EccC3 and EccE3 they could rearrange into the alternative bent or extended conformation with little energetic barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "This conformational flexibility suggests that if residues 100\u2013127 were released from their associations with EccC3 and EccE3 they could rearrange into the alternative bent or extended conformation with little energetic barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "0ca38c03-648b-456d-b20f-c81b12b6f07f",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C62",
+      "claim": "EccE3 is positioned at the front of the ESX-3 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The next component of the stable upper cytoplasmic region is EccE3. EccE3 is positioned at the front of the ESX-3 dimer (Figure 3A), where the conserved transmembrane helix 1 of EccE3 interacts with helix 11 of EccD3-bent in the membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "4e526302-1b03-4756-8833-05384fb89108",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C63",
+      "claim": "The conserved transmembrane helix 1 of EccE3 interacts with helix 11 of EccD3-bent in the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The next component of the stable upper cytoplasmic region is EccE3. EccE3 is positioned at the front of the ESX-3 dimer (Figure 3A), where the conserved transmembrane helix 1 of EccE3 interacts with helix 11 of EccD3-bent in the membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "36f17c83-92a3-46e0-a249-1aa362aa58e9",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C64",
+      "claim": "The anti-parallel \u03b2-sheets of the cytoplasmic domain of EccE3 have weak structural homology to glycosyl transferase proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-parallel \u03b2-sheets of the cytoplasmic domain of EccE3 have weak structural homology to glycosyl transferase proteins, however, the nucleotide binding pocket is absent in EccE3, leaving it incapable of performing this function (Figure 3\u2014figure supplement 1E and F, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "cdc5bcac-b204-4720-a4c2-54eeca14dcc1",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C65",
+      "claim": "The nucleotide binding pocket is absent in EccE3, leaving it incapable of performing glycosyl transferase function.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-parallel \u03b2-sheets of the cytoplasmic domain of EccE3 have weak structural homology to glycosyl transferase proteins, however, the nucleotide binding pocket is absent in EccE3, leaving it incapable of performing this function (Figure 3\u2014figure supplement 1E and F, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "9a253c57-9166-4543-ae2f-696a9acbf9bc",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C66",
+      "claim": "EccE3 does not have another obvious ligand or catalytic site.",
+      "claim_type": "EXPLICIT",
+      "source": "EccE3 does not have another obvious ligand or catalytic site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "06ee453b-4cfc-482e-ab61-e5fd6f20c7ef",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C67",
+      "claim": "Two conserved helices in the cytoplasmic region of EccE3 between amino acids 133 and 163 form extensive stabilizing interactions with both subunits of EccD3.",
+      "claim_type": "EXPLICIT",
+      "source": "Two conserved helices in the cytoplasmic region of EccE3 between amino acids 133 and 163 form extensive stabilizing interactions with both subunits of EccD3 (Figure 3D, Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "b8fe218c-7100-4922-9f2a-52eb001d5722",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C68",
+      "claim": "These interactions hold the flexible linker of EccD3-extended in the extended conformation and sterically hinder EccD3-extended from assuming the bent conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions hold the flexible linker of EccD3-extended in the extended conformation and sterically hinder EccD3-extended from assuming the bent conformation (Figure 3\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "ee27270c-376d-4cef-b4d1-5063ed286d8e",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C69",
+      "claim": "EccE3 does not form direct protein-protein interactions with either EccB3 or EccC3.",
+      "claim_type": "EXPLICIT",
+      "source": "EccE3 does not form direct protein-protein interactions with either EccB3 or EccC3 suggesting the contacts with EccD3-extended and EccD3-bent are extremely stable as EccE3 was the tagged protein used to immunoprecipitate the ESX-3 dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "a8941a35-e3c2-456c-87d5-02c40abd3c1f",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C70",
+      "claim": "The contacts between EccE3 and EccD3-extended and EccD3-bent are extremely stable as EccE3 was the tagged protein used to immunoprecipitate the ESX-3 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "EccE3 does not form direct protein-protein interactions with either EccB3 or EccC3 suggesting the contacts with EccD3-extended and EccD3-bent are extremely stable as EccE3 was the tagged protein used to immunoprecipitate the ESX-3 dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental approach and structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "45e3b8c1-a019-45bd-a493-fbba79a1925d",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C71",
+      "claim": "Amino acids 1\u201333 and 94\u2013403 of EccC3 were built de novo into the higher resolution region of the electron microscopy map revealing the structure of the DUF domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids 1\u201333 and 94\u2013403 of EccC3 were built de novo into the higher resolution region of the electron microscopy map revealing the structure of the DUF domain (Figure 4B, Figure 4\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the model building process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "143906f7-ee9f-45d3-b056-ce29f1c40406",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C72",
+      "claim": "The de novo model of the DUF has the typical Rossman fold of a nucleotide hydrolysis domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The de novo model of the DUF has the typical Rossman fold of a nucleotide hydrolysis domain (Figure 4\u2014figure supplement 1D and E) and its closest homolog by Dali search is the ATPase 1 domain of EccC of T. curvata.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis and comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "cec0a460-d2cf-47eb-aa26-0eeafd7ec847",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C73",
+      "claim": "The closest homolog of the EccC3 DUF domain by Dali search is the ATPase 1 domain of EccC of T. curvata.",
+      "claim_type": "EXPLICIT",
+      "source": "The de novo model of the DUF has the typical Rossman fold of a nucleotide hydrolysis domain (Figure 4\u2014figure supplement 1D and E) and its closest homolog by Dali search is the ATPase 1 domain of EccC of T. curvata.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "054432de-5ffa-4b35-b1b0-d1d8054b21fd",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C74",
+      "claim": "The DUF domain is linked to the transmembrane domains by a long helical bundle making extensive contacts with the flexible linker region of EccD3-bent.",
+      "claim_type": "EXPLICIT",
+      "source": "It is linked to the transmembrane domains by a long helical bundle making extensive contacts with the flexible linker region of EccD3-bent (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "471a542f-8173-4bfe-8373-a77d63e5f166",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C75",
+      "claim": "The DUF makes additional stabilizing contacts with the ubiquitin-like domains of EccD3-bent and EccD3-extended in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The DUF makes additional stabilizing contacts with the ubiquitin-like domains of EccD3-bent and EccD3-extended in the cytoplasm (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "c6468b0f-8e11-4c99-802e-3f62e0b00eaf",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C76",
+      "claim": "When the transmembrane and upper cytoplasmic regions are compared between protomers, only the transmembrane helices of EccC3 and the N-terminal tail of EccB3 differ.",
+      "claim_type": "EXPLICIT",
+      "source": "When the transmembrane and upper cytoplasmic regions are compared between protomers, only the transmembrane helices of EccC3 and the N-terminal tail of EccB3 differ (Figure 4\u2014figure supplement 2A and B), otherwise the protomers are superimposable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "6ee8843a-ee3b-4955-9f3b-8e144d690244",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C77",
+      "claim": "The protomers are superimposable except for the transmembrane helices of EccC3 and the N-terminal tail of EccB3.",
+      "claim_type": "EXPLICIT",
+      "source": "When the transmembrane and upper cytoplasmic regions are compared between protomers, only the transmembrane helices of EccC3 and the N-terminal tail of EccB3 differ (Figure 4\u2014figure supplement 2A and B), otherwise the protomers are superimposable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "f011e4d7-5de9-4084-a8d3-3254a0221d7f",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C78",
+      "claim": "All four EccC3 transmembrane helices were modeled at 6 \u00c5 resolution through a combination of homology modeling and molecular dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "All four EccC3 transmembrane helices were modeled at 6 \u00c5 resolution through a combination of homology modeling and molecular dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "3a0662f6-5634-4232-b861-b9f69bfe11ff",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C79",
+      "claim": "In protomer i, transmembrane helix 2 of EccC3 forms lipid mediated hydrophobic interactions with the transmembrane helix of EccB3 in protomer i.",
+      "claim_type": "EXPLICIT",
+      "source": "In protomer i, transmembrane helix 2 forms lipid mediated hydrophobic interactions with the transmembrane helix of EccB3 in protomer i, and transmembrane helix 1 interacts with transmembrane helix 2 of EccC3 in protomer ii.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "f63bf625-015b-4247-b675-f43236bb4fe7",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C80",
+      "claim": "Transmembrane helix 1 of EccC3 in protomer i interacts with transmembrane helix 2 of EccC3 in protomer ii.",
+      "claim_type": "EXPLICIT",
+      "source": "In protomer i, transmembrane helix 2 forms lipid mediated hydrophobic interactions with the transmembrane helix of EccB3 in protomer i, and transmembrane helix 1 interacts with transmembrane helix 2 of EccC3 in protomer ii.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "779d990a-eedc-4d81-9eff-fc8ad5f6f167",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C81",
+      "claim": "Transmembrane helix 1 of EccC3 in protomer ii is shifted relative to the protomer i conformation and does not directly interact with other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmembrane helix 1 of EccC3 in protomer ii is shifted relative to the protomer i conformation and does not directly interact with other proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "4d50646c-b33b-4487-8f2e-81cb35908173",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C82",
+      "claim": "The motor domains containing the EccC3 ATPase 1, 2 and 3 hang below the DUF domain in the flexible lower cytoplasmic region.",
+      "claim_type": "EXPLICIT",
+      "source": "The motor domains containing the EccC3 ATPase 1, 2 and 3 hang below the DUF domain in the flexible lower cytoplasmic region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "c1670ef4-ff4a-4543-a7ae-d00c2f7a01c1",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C83",
+      "claim": "The motor domains were resolved at a lower resolution than the upper cytoplasmic domain, but they are clearly asymmetric between protomers i and ii.",
+      "claim_type": "EXPLICIT",
+      "source": "They were resolved at a lower resolution than the upper cytoplasmic domain, but they are clearly asymmetric between protomers i and ii (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "8d3c7b8a-0794-47fa-9db5-5c157dfdf5ba",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C84",
+      "claim": "The EccC3 ATPase 1 domains in both protomers are in a similar location relative to the DUF.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the EccC3 ATPase 1 domains in both protomers are in a similar location relative to the DUF, the ATPase 2 and 3 domains do not superimpose across protomers even at low resolution (Figure 4\u2014figure supplement 2C) suggesting significant asymmetry between these domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "36d498c4-876b-4d68-b392-973f8191edc2",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C85",
+      "claim": "The ATPase 2 and 3 domains do not superimpose across protomers even at low resolution suggesting significant asymmetry between these domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the EccC3 ATPase 1 domains in both protomers are in a similar location relative to the DUF, the ATPase 2 and 3 domains do not superimpose across protomers even at low resolution (Figure 4\u2014figure supplement 2C) suggesting significant asymmetry between these domains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "1afaad85-f774-4414-83b3-daf8a66c38d4",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C86",
+      "claim": "In protomer i, a homology model based on existing EccC structures fits well into the density.",
+      "claim_type": "EXPLICIT",
+      "source": "In protomer i, a homology model based on existing EccC structures fits well into the density; however in protomer ii, the interface between ATPase 1 and 2 is broken relative to the crystal structure with ATPase 2 and ATPase 3 rotated away from the crystal structure interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach and fit to the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "61a23e83-c4be-4bb4-a4f3-5ee03b791d52",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C87",
+      "claim": "In protomer ii, the interface between ATPase 1 and 2 is broken relative to the crystal structure with ATPase 2 and ATPase 3 rotated away from the crystal structure interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In protomer i, a homology model based on existing EccC structures fits well into the density; however in protomer ii, the interface between ATPase 1 and 2 is broken relative to the crystal structure with ATPase 2 and ATPase 3 rotated away from the crystal structure interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "246d666a-655c-4974-adad-ff39aebb32db",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C88",
+      "claim": "The ESX-3 dimer is stabilized by cross-protomer interactions formed by the two EccB3 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 dimer is stabilized by cross-protomer interactions formed by the two EccB3 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "3f2a02b7-9869-4596-a38c-51743abcac9a",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C89",
+      "claim": "EccB3 begins in the cytoplasm with a flexible N-terminal tail leading into a linker helix, followed by a single-pass transmembrane helix, and an extended periplasmic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "EccB3 begins in the cytoplasm with a flexible N-terminal tail leading into a linker helix, followed by a single-pass transmembrane helix, and an extended periplasmic domain (Figure 5A and B, Figure 5\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "c9f632d7-256d-4727-b5c6-06bfad82066c",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C90",
+      "claim": "The N-terminal tail of EccB3 from protomer i forms extensive cross-protomer contacts with EccB3, EccC3, EccD3-bent and EccD3-extended from protomer ii.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal tail of EccB3 from protomer i forms extensive cross-protomer contacts with EccB3, EccC3, EccD3-bent and EccD3-extended from protomer ii (Figure 5C, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "67465586-9e71-4813-ac3d-833bd5b19c1c",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C91",
+      "claim": "The linker helix of EccB3 forms further protein-protein interactions with EccC3 and EccD3-bent.",
+      "claim_type": "EXPLICIT",
+      "source": "The linker helix of EccB3 forms further protein-protein interactions with EccC3 and EccD3-bent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "bc2e8cd8-62a2-430f-a856-f4812980074b",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C92",
+      "claim": "The transmembrane helix of EccB3 interacts with transmembrane helix 11 of EccD3-extended.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane helix of EccB3 interacts with transmembrane helix 11 of EccD3-extended.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "6ff32684-f207-4a8b-a184-cc6cceb8bb5f",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C93",
+      "claim": "Two hydrophobic tails consistent with a lipid or detergent molecules link the transmembrane helix of EccB3 to transmembrane helix 2 of EccC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Two hydrophobic tails consistent with a lipid or detergent molecules link the transmembrane helix of EccB3 to transmembrane helix 2 of EccC3 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "d99e5364-99f8-4369-91be-a58fa2a29159",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C94",
+      "claim": "The two EccB3 periplasmic domains share a large interaction interface across the protomers further stabilizing dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The two EccB3 periplasmic domains share a large interaction interface across the protomers further stabilizing dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "19b0c2d8-6707-4070-a9be-3fdb40fc5672",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C95",
+      "claim": "The majority of cross-protomer interactions involve EccB3, suggesting the periplasmic domain is essential for oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of cross-protomer interactions involve EccB3, suggesting the periplasmic domain is essential for oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "81c07889-7b21-42d4-b468-81c776345087",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C96",
+      "claim": "Previous reports have shown ESX-1 and ESX-5 form hexamers or higher order multimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports have shown ESX-1 and ESX-5 form hexamers or higher order multimers (Beckham et al., 2017; Houben et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "ca052fab-9cf0-46ea-a5ea-c2ce45844cfc",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C97",
+      "claim": "A higher order oligomeric state of ESX-3 was modeled based on the low-resolution negative stain structure of ESX-5, which had C6 symmetry imposed during refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "We modeled a higher order oligomeric state of ESX-3 based on the low-resolution negative stain structure of ESX-5, which had C6 symmetry imposed during refinement (EMDB 3596).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "9313dc84-c078-487d-995e-d58a80f1d355",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C98",
+      "claim": "The ESX-3 translocon complex was modeled as a trimer of dimers by low pass filtering the density to 6 \u00c5 and docking into the ESX-5 negative stain map.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 translocon complex was modeled as a trimer of dimers by low pass filtering the density to 6 \u00c5 and docking into the ESX-5 negative stain map (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the modeling approach used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "b333d393-c78a-42e5-a193-f31933ef3773",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C99",
+      "claim": "The angle between protomers in the trimer of dimers model alternates between 72\u00b0 and 48\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The angle between protomers in the trimer of dimers model alternates between 72\u00b0 (the angle between protomers i and ii in the ESX-3 dimer map) and 48\u00b0 and contains both experimentally observed conformations of EccC3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "db3ecb72-8e9c-4655-8d8a-b3d25aa6caee",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C100",
+      "claim": "The trimer of dimers model contains both experimentally observed conformations of EccC3.",
+      "claim_type": "EXPLICIT",
+      "source": "The angle between protomers in the trimer of dimers model alternates between 72\u00b0 (the angle between protomers i and ii in the ESX-3 dimer map) and 48\u00b0 and contains both experimentally observed conformations of EccC3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "4d64e037-db6b-4ae9-b843-5530c5c18acb",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C101",
+      "claim": "Accommodation of a hexameric complex would require extensive rearrangement of both EccC3 and EccB3.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete model of the ESX-3 translocon complex was docked into the ESX-5 negative stain map in the same manner revealing major clashes between the low resolution periplasmic and motor domains in a hexameric form (Figure 6\u2014figure supplement 1C). Accommodation of a hexameric complex would require extensive rearrangement of both EccC3 and EccB3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "692ca8f2-bbaa-4c96-9777-cb6d3a17b075",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C102",
+      "claim": "The ESX-3 structure presented here is purified without the addition of substrates or nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "The ESX-3 structure presented here is purified without the addition of substrates or nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "36db32cb-8c99-4634-a532-c07bc4b9a36c",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C103",
+      "claim": "The structure is likely to be in a conformation representing the end of the translocation cycle, awaiting either the direct binding of substrates, the binding of nucleotide or both, to reset a substrate-binding competent state.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore likely to be in a conformation representing the end of the translocation cycle, awaiting either the direct binding of substrates, the binding of nucleotide or both, to reset a substrate-binding competent state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental conditions and structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "a765996e-4b5e-4dce-a9e1-7c45d3f41dac",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C104",
+      "claim": "The existence of an R-finger catalytic site for ATPase 1 of EccC3 requires the R-finger of one protomer to insert into the active site of another protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of an R-finger catalytic site for ATPase 1 of EccC3 (Rosenberg et al., 2015) requires the R-finger of one protomer to insert into the active site of another protomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior knowledge about R-finger catalytic sites and citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "73c75487-2db6-4cad-8434-0340aafb002b",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C105",
+      "claim": "Given the ~65 \u00c5 distance observed between ATPase 1 domains, the completion and activation of the catalytic site of ATPase 1 by an R-finger will necessitate an extremely large rearrangement of the position of the ATPase domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the ~65 \u00c5 distance we observe between ATPase 1 domains, the completion and activation of the catalytic site of ATPase 1 by an R-finger will necessitate an extremely large rearrangement of the position of the ATPase domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "9930d1c5-9e89-4642-82b3-4b574174d78e",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C106",
+      "claim": "Movements in the highly flexible EccD3 linker lead to the release of EccE3 and EccC3 from their rigid positions, thus allowing for a rearrangement of the ATPase domains into an active conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose movements in the highly flexible EccD3 linker lead to the release of EccE3 and EccC3 from their rigid positions, thus allowing for a rearrangement of the ATPase domains into an active conformation (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative mechanistic proposal based on structural observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "c3e8af3c-130c-4eec-a9cd-d6c4ea62dd77",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C107",
+      "claim": "The description of ESX-3 presented here agrees in both protein composition and structure with the work recently published by Famelis et al.",
+      "claim_type": "EXPLICIT",
+      "source": "The description of ESX-3 presented here agrees in both protein composition and structure with the work recently published by Famelis et al.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with concurrent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "56600a4f-76b6-4400-acdb-fc5a3f22ead1",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C108",
+      "claim": "Given the high sequence conservation among the ESX systems in mycobacteria and related actinobacteria, these structures likely represent an excellent framework for the structural modeling of the other ESX systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the high sequence conservation among the ESX systems in mycobacteria and related actinobacteria, these structures likely represent an excellent framework for the structural modeling of the other ESX systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on sequence conservation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "5fa19527-aad9-4812-8858-fdc2058e1568",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C109",
+      "claim": "These structures provide a wealth of information about protein-protein interaction interfaces and ESX complex architecture, which can be used to guide structure-based drug design and to generate hypotheses for further mechanistic investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these structures provide a wealth of information about protein-protein interaction interfaces and ESX complex architecture, which can be used to guide structure-based drug design and to generate hypotheses for further mechanistic investigations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applications of the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "ae35f34f-3a5f-40bc-9823-c9fccc835b24",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C110",
+      "claim": "The large cavity found in the EccD3 dimer is unlike any other membrane protein in the Protein Data Bank by structural homology.",
+      "claim_type": "EXPLICIT",
+      "source": "The large cavity found in the EccD3 dimer is striking and by structural homology, is unlike any other membrane protein in the Protein Data Bank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "3e371d05-4686-4284-b883-de75c7c6fdea",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C111",
+      "claim": "The EccD3 dimer cavity appears capped on the periplasmic side by a dense layer of lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "In our density maps, the EccD3 dimer cavity appears capped on the periplasmic side by a dense layer of lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "bb97f84f-449a-43f4-af4f-94b504486085",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C112",
+      "claim": "The large cavity is of sufficient diameter to transit a folded EsxG/H dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The large cavity is of sufficient diameter to transit a folded EsxG/H dimer, however given the strong hydrophobicity of the cavity the mechanism would not be mediated by water and would require a novel mechanism of secretion that has not been seen in other bacterial secretion systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "58ff8fad-fd47-4e6a-b941-aaed4a1b62ad",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C113",
+      "claim": "Given the strong hydrophobicity of the cavity the mechanism would not be mediated by water and would require a novel mechanism of secretion that has not been seen in other bacterial secretion systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The large cavity is of sufficient diameter to transit a folded EsxG/H dimer, however given the strong hydrophobicity of the cavity the mechanism would not be mediated by water and would require a novel mechanism of secretion that has not been seen in other bacterial secretion systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the structural properties of the cavity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "f37902e0-8466-431c-834c-49263ef91a1d",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C114",
+      "claim": "It is possible that the cavity exists to transit a non-protein substrate such as a specific mycobacterial lipid.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that the cavity exists to transit a non-protein substrate such as a specific mycobacterial lipid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "2a343329-828e-4da6-a0c7-0b8633c65977",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C115",
+      "claim": "The ability to transport non-protein substrates could resolve some of the mysteries that remain about the relationships between ESX systems, cell wall stability, lipid content, and nutrient acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to transport non-protein substrates could resolve some of the mysteries that remain about the relationships between ESX systems, cell wall stability, lipid content, and nutrient acquisition (Barczak et al., 2017; Bosserman and Champion, 2017; Siegrist et al., 2014; Tufariello et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "6f49eee2-c45a-46b4-8178-7b6665cac2c6",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C116",
+      "claim": "The EccB3 periplasmic domain has been found to have similarity to the peptidoglycan binding phage protein PlyCB, which forms a ring inside the bacterial cell wall facilitating phage entrance into the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The EccB3 periplasmic domain (Wagner et al., 2016) has been found to have similarity to the peptidoglycan binding phage protein PlyCB, which forms a ring inside the bacterial cell wall facilitating phage entrance into the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wagner et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "ff48cfdd-201d-44d0-8067-5c04491c7e6a",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "claim_id": "C117",
+      "claim": "A hypothesis is that EccB3 is anchored to a larger outer membrane complex, but the purification conditions employed remove proteins required for its stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "A hypothesis is that EccB3 is anchored to a larger outer membrane complex, but the purification conditions we have employed remove proteins required for its stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the structural observations and purification conditions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined the cryo-EM structure of the endogenous ESX-3 secretion system from M. smegmatis by chromosomally tagging EccE3 with EGFP and purifying the complex from a \u0394ideR strain. The structure reveals a dimeric assembly with each protomer containing one copy each of EccB3, EccC3, and EccE3, and two conformationally distinct copies of EccD3 (EccD3-bent and EccD3-extended). Different regions were resolved at varying resolutions: 3.7 \u00c5 for transmembrane and upper cytoplasmic regions, 5.8 \u00c5 for the periplasmic region, and ~7 \u00c5 for the lower cytoplasmic region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural determination is well-supported by detailed cryo-EM data processing (C37-C40), biochemical purification (C33-C35), and model building (C45). The stoichiometry and architecture are directly observed in the electron density maps with appropriate resolution for the conclusions drawn. The use of endogenous expression via chromosomal tagging (C33-C34) represents a methodological strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "97d6c7ce-b6cd-4513-bacb-d079c89fc71a",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The ESX-3 structure reveals a stacked architecture extending above and below the inner membrane, with protomers forming a stable dimer that is consistent with assembly into larger oligomers. Each protomer contains one copy of EccB3, EccC3, and EccE3 and two copies of EccD3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The overall architecture and stoichiometry are directly supported by the cryo-EM structure (C5-C7). The inference about larger oligomer assembly (C8) is reasonable based on structural features and prior literature on ESX systems, though the structure itself shows a dimer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "45ebce09-d20e-4330-8c83-194b5490d62a",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EccD3 forms a homodimer creating a large transmembrane cavity (~20\u00d730 \u00c5) with distinct properties: the periplasmic half is hydrophobic with ordered lipid/detergent densities, while the cytoplasmic half contains polar residues. The two EccD3 copies adopt conformationally distinct states (bent and extended) due to flexibility in a conserved linker region (residues 100-127) that can adopt different secondary structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural observations of the EccD3 cavity and conformational states are well-supported by the 3.7 \u00c5 resolution data (C46-C56). The sequence conservation analysis (C57) and structural flexibility interpretation (C58-C61) are appropriately supported. The inference about conformational interconversion (C61) is reasonable based on the observed structural plasticity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "93cf6987-ce4d-4535-83ec-ccfe3093fee9",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EccE3 is positioned at the front of the ESX-3 dimer and forms extensive stabilizing interactions with both EccD3 subunits through conserved helices (amino acids 133-163). These interactions hold EccD3-extended in its extended conformation and prevent it from adopting the bent conformation. EccE3 has weak structural homology to glycosyl transferases but lacks the nucleotide binding pocket and has no obvious catalytic function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural observations about EccE3 positioning and interactions are well-supported by the high-resolution data (C62-C63, C67). The structural homology analysis and functional inference (C64-C66) are appropriately cautious. The mechanistic interpretation about conformational stabilization (C68) is a reasonable inference from the structural data. The stability inference from the purification strategy (C70) is logical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "f1a8df3c-c32a-4456-9c48-acd7cecdc29f",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The EccC3 domain of unknown function (DUF) was built de novo and reveals a Rossmann fold typical of nucleotide hydrolysis domains, with closest homology to the ATPase 1 domain of T. curvata EccC. The DUF makes extensive stabilizing contacts with EccD3-bent and EccD3-extended. The two protomers are nearly identical in the transmembrane and upper cytoplasmic regions except for the EccC3 transmembrane helices and EccB3 N-terminal tail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The de novo model building of the DUF domain (C71) and its structural characterization (C72-C73) are supported by the 3.7 \u00c5 resolution data. The structural homology search provides appropriate context. The interaction observations (C74-C75) and protomer comparison (C76-C77) are direct structural observations that are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The EccC3 motor domains (ATPase 1, 2, and 3) are flexible and asymmetric between protomers. The transmembrane helices were modeled at 6 \u00c5 resolution using homology modeling and molecular dynamics. While ATPase 1 domains are similarly positioned in both protomers, ATPase 2 and 3 domains show significant asymmetry, with protomer ii showing a broken interface between ATPase 1 and 2 relative to crystal structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observations about motor domain flexibility and asymmetry (C82-C85, C87) are supported by the lower resolution (~7 \u00c5) focused refinement data. The modeling approach for transmembrane helices (C78) is appropriate given the resolution limitations. The asymmetry between protomers (C83-C85) is clearly observed even at lower resolution, supporting the conclusions about conformational heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "a754b9be-f1c8-4a2f-b55c-00ca6bce93d2",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "EccB3 stabilizes the ESX-3 dimer through extensive cross-protomer interactions. It contains a flexible N-terminal tail, linker helix, single-pass transmembrane helix, and extended periplasmic domain. The N-terminal tail forms extensive cross-protomer contacts with multiple components, and the periplasmic domains share a large interaction interface, suggesting the periplasmic domain is essential for oligomerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural observations about EccB3 architecture (C89) and cross-protomer interactions (C90-C94) are well-supported by the structural data. The inference about the importance of the periplasmic domain for oligomerization (C95) is reasonable based on the extensive interaction interface observed, though direct functional validation would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "bde07e55-efc3-4806-a740-858282c15278",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A hexameric model of ESX-3 was constructed by modeling the complex as a trimer of dimers based on the low-resolution ESX-5 negative stain structure. The model shows alternating angles between protomers (72\u00b0 and 48\u00b0) and contains both observed EccC3 conformations. However, accommodation of a hexameric complex would require extensive rearrangement of EccC3 and EccB3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The modeling approach (C97-C100) is reasonable for generating hypotheses about higher-order assembly, but the model is based on a low-resolution structure of a different ESX system (ESX-5) with imposed C6 symmetry. The observation of clashes requiring extensive rearrangement (C101) suggests the static hexamer model may not represent the native state. The authors appropriately present this as a model rather than a definitive structure, but the uncertainty about the physiological oligomeric state limits the strength of these conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "0dc4acca-e062-4493-be4e-422497cfba0d",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The ESX-3 structure represents a post-translocation state awaiting substrate or nucleotide binding. The large distance (~65 \u00c5) between ATPase 1 domains would require extensive rearrangement for R-finger-mediated catalysis. The authors propose that movements in the flexible EccD3 linker could release EccE3 and EccC3, allowing ATPase domain rearrangement into an active conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The interpretation of the functional state (C103) is reasonable given the purification conditions (C102), but remains speculative. The observation about the distance between ATPase 1 domains (C105) is supported by the structure, and the requirement for rearrangement (C104-C105) is logical. However, the proposed mechanism (C106) is explicitly speculative and lacks direct experimental support. This represents a reasonable hypothesis for future testing rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "3e28d6fd-6433-43e7-bb38-7335ce48095f",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The EccD3 cavity is structurally unique among membrane proteins and appears capped by lipids on the periplasmic side. While large enough to transit a folded EsxG/H dimer, the strong hydrophobicity suggests a novel, non-water-mediated secretion mechanism. Alternatively, the cavity might transport non-protein substrates such as mycobacterial lipids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The structural uniqueness of the cavity (C110) and lipid capping observation (C111) are supported by the data. The size calculation (C112) is straightforward. However, the mechanistic interpretations (C113) and alternative hypotheses (C114-C115) are explicitly speculative. These represent interesting hypotheses that require experimental validation through functional studies, substrate identification, or structures with bound cargo.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "2dee8f5a-05e8-4c82-b98c-34d620ee3c0c",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ESX-3 operon shows 67% sequence identity between M. smegmatis and M. tuberculosis over 4354 amino acids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a straightforward sequence comparison analysis (C30) that can be independently verified and is appropriately quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "9bae884a-bc2f-4a27-8d9c-1523c212bef4",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ESX-3 structure agrees with concurrent work by Famelis et al. and, given high sequence conservation among ESX systems, provides a framework for modeling other ESX systems and for structure-based drug design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The agreement with concurrent work (C107) provides independent validation. The inference about applicability to other ESX systems (C108) is reasonable given documented sequence conservation. The statement about utility for drug design and hypothesis generation (C109) is appropriately modest about future applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    },
+    {
+      "id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e",
+      "content_id": "c3ba1285-0ec1-4ce8-b7c7-88258fe94ad8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information on ESX/Type VII secretion systems, including their distribution, functions, substrate properties, regulation, and biological importance, particularly for ESX-3's role in iron acquisition, cell survival, and virulence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout. They provide necessary context but are not novel findings from this study. The speculative hypothesis about EccB3 anchoring (C117) is appropriately presented as such.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:41.232999Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "219519b0-a3da-409b-85f9-d5559f5ef28b",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "405d163f-b90d-4173-a82f-8cbc88782bbf",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "497b9cc6-bd17-4aaf-9ebf-7790cb1d19de",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "e8bd5439-2d09-431a-b188-df4c9dcbce92",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "eba64db3-c875-4444-a5db-c83f3a4f3f92",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "862d7755-025f-4512-9059-fa48ca1c3388",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "5cc42167-e79b-42e0-be5b-98c1854ef102",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "cf2d2406-505c-433c-945e-e2ad66f43d41",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "ba94d9b3-450c-4621-839b-e84793cec435",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "ef12c918-4e68-4bb9-b574-7abdb1bcfb98",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "c77006d8-5bd0-497d-985e-718152139384",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "e767dce5-ccdf-4b45-9f80-e3b73fadb25f",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "15dd1acd-773b-4b42-88e0-196bddccf923",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "ef4c6776-4364-4be7-96fb-0a8404ed63c5",
+      "result_id": "32b6d6f6-177b-4be8-a980-8e9adfa0a685"
+    },
+    {
+      "claim_id": "88eb4173-c0f7-44f5-89e2-9c447b44bf88",
+      "result_id": "97d6c7ce-b6cd-4513-bacb-d079c89fc71a"
+    },
+    {
+      "claim_id": "29fa83ec-ebc4-469a-990a-524e8aabf173",
+      "result_id": "97d6c7ce-b6cd-4513-bacb-d079c89fc71a"
+    },
+    {
+      "claim_id": "358f1189-fa14-480a-9207-592d26a6e17e",
+      "result_id": "97d6c7ce-b6cd-4513-bacb-d079c89fc71a"
+    },
+    {
+      "claim_id": "39e9f101-3166-4b1e-afef-6d86b4f2ed5c",
+      "result_id": "97d6c7ce-b6cd-4513-bacb-d079c89fc71a"
+    },
+    {
+      "claim_id": "11ced29d-0031-42f6-9704-2016ebad4483",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "211b7aab-aecf-4492-8048-bd0a66b0012c",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "8864d549-f2a3-4e2a-ae50-43626c48d57b",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "7e047c68-07c1-4db3-b9df-8cf396579d09",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "6d2c182b-3cbd-4ab3-8afd-13394afeffb6",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "2bc4b0da-1daa-48a4-bce1-cf07ed4c6eaa",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "f8ef8551-dc00-43b3-b2f9-f44362735779",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "16ebe580-0e5b-47fc-abe2-5df76c800893",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "303c25f5-0b2e-408d-aa58-3f46ed2173e4",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "d11cc664-0c17-475a-afba-44309d17b81b",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "5a91a987-13cd-41af-a3b4-99ca5009dab7",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "2e4109a3-5def-4c84-a062-5fb595f5a03c",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "4237e5cf-747f-4154-bcad-df485a864b82",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "3622c3fd-08d7-4c4a-8164-a95ded8210bf",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "2d177db6-b615-4e8d-9ffa-f0f83b6732a5",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "f4d05dbe-2785-413d-b1d1-03b98f18d14b",
+      "result_id": "45ebce09-d20e-4330-8c83-194b5490d62a"
+    },
+    {
+      "claim_id": "0ca38c03-648b-456d-b20f-c81b12b6f07f",
+      "result_id": "93cf6987-ce4d-4535-83ec-ccfe3093fee9"
+    },
+    {
+      "claim_id": "4e526302-1b03-4756-8833-05384fb89108",
+      "result_id": "93cf6987-ce4d-4535-83ec-ccfe3093fee9"
+    },
+    {
+      "claim_id": "36f17c83-92a3-46e0-a249-1aa362aa58e9",
+      "result_id": "93cf6987-ce4d-4535-83ec-ccfe3093fee9"
+    },
+    {
+      "claim_id": "cdc5bcac-b204-4720-a4c2-54eeca14dcc1",
+      "result_id": "93cf6987-ce4d-4535-83ec-ccfe3093fee9"
+    },
+    {
+      "claim_id": "9a253c57-9166-4543-ae2f-696a9acbf9bc",
+      "result_id": "93cf6987-ce4d-4535-83ec-ccfe3093fee9"
+    },
+    {
+      "claim_id": "06ee453b-4cfc-482e-ab61-e5fd6f20c7ef",
+      "result_id": "93cf6987-ce4d-4535-83ec-ccfe3093fee9"
+    },
+    {
+      "claim_id": "b8fe218c-7100-4922-9f2a-52eb001d5722",
+      "result_id": "93cf6987-ce4d-4535-83ec-ccfe3093fee9"
+    },
+    {
+      "claim_id": "ee27270c-376d-4cef-b4d1-5063ed286d8e",
+      "result_id": "93cf6987-ce4d-4535-83ec-ccfe3093fee9"
+    },
+    {
+      "claim_id": "a8941a35-e3c2-456c-87d5-02c40abd3c1f",
+      "result_id": "93cf6987-ce4d-4535-83ec-ccfe3093fee9"
+    },
+    {
+      "claim_id": "45e3b8c1-a019-45bd-a493-fbba79a1925d",
+      "result_id": "f1a8df3c-c32a-4456-9c48-acd7cecdc29f"
+    },
+    {
+      "claim_id": "143906f7-ee9f-45d3-b056-ce29f1c40406",
+      "result_id": "f1a8df3c-c32a-4456-9c48-acd7cecdc29f"
+    },
+    {
+      "claim_id": "cec0a460-d2cf-47eb-aa26-0eeafd7ec847",
+      "result_id": "f1a8df3c-c32a-4456-9c48-acd7cecdc29f"
+    },
+    {
+      "claim_id": "054432de-5ffa-4b35-b1b0-d1d8054b21fd",
+      "result_id": "f1a8df3c-c32a-4456-9c48-acd7cecdc29f"
+    },
+    {
+      "claim_id": "471a542f-8173-4bfe-8373-a77d63e5f166",
+      "result_id": "f1a8df3c-c32a-4456-9c48-acd7cecdc29f"
+    },
+    {
+      "claim_id": "c6468b0f-8e11-4c99-802e-3f62e0b00eaf",
+      "result_id": "f1a8df3c-c32a-4456-9c48-acd7cecdc29f"
+    },
+    {
+      "claim_id": "6ee8843a-ee3b-4955-9f3b-8e144d690244",
+      "result_id": "f1a8df3c-c32a-4456-9c48-acd7cecdc29f"
+    },
+    {
+      "claim_id": "f011e4d7-5de9-4084-a8d3-3254a0221d7f",
+      "result_id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931"
+    },
+    {
+      "claim_id": "3a0662f6-5634-4232-b861-b9f69bfe11ff",
+      "result_id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931"
+    },
+    {
+      "claim_id": "f63bf625-015b-4247-b675-f43236bb4fe7",
+      "result_id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931"
+    },
+    {
+      "claim_id": "779d990a-eedc-4d81-9eff-fc8ad5f6f167",
+      "result_id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931"
+    },
+    {
+      "claim_id": "4d50646c-b33b-4487-8f2e-81cb35908173",
+      "result_id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931"
+    },
+    {
+      "claim_id": "c1670ef4-ff4a-4543-a7ae-d00c2f7a01c1",
+      "result_id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931"
+    },
+    {
+      "claim_id": "8d3c7b8a-0794-47fa-9db5-5c157dfdf5ba",
+      "result_id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931"
+    },
+    {
+      "claim_id": "36d498c4-876b-4d68-b392-973f8191edc2",
+      "result_id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931"
+    },
+    {
+      "claim_id": "1afaad85-f774-4414-83b3-daf8a66c38d4",
+      "result_id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931"
+    },
+    {
+      "claim_id": "61a23e83-c4be-4bb4-a4f3-5ee03b791d52",
+      "result_id": "ba9fad96-d3f8-49ef-8b4a-67bb4607d931"
+    },
+    {
+      "claim_id": "246d666a-655c-4974-adad-ff39aebb32db",
+      "result_id": "a754b9be-f1c8-4a2f-b55c-00ca6bce93d2"
+    },
+    {
+      "claim_id": "3f2a02b7-9869-4596-a38c-51743abcac9a",
+      "result_id": "a754b9be-f1c8-4a2f-b55c-00ca6bce93d2"
+    },
+    {
+      "claim_id": "c9f632d7-256d-4727-b5c6-06bfad82066c",
+      "result_id": "a754b9be-f1c8-4a2f-b55c-00ca6bce93d2"
+    },
+    {
+      "claim_id": "67465586-9e71-4813-ac3d-833bd5b19c1c",
+      "result_id": "a754b9be-f1c8-4a2f-b55c-00ca6bce93d2"
+    },
+    {
+      "claim_id": "bc2e8cd8-62a2-430f-a856-f4812980074b",
+      "result_id": "a754b9be-f1c8-4a2f-b55c-00ca6bce93d2"
+    },
+    {
+      "claim_id": "6ff32684-f207-4a8b-a184-cc6cceb8bb5f",
+      "result_id": "a754b9be-f1c8-4a2f-b55c-00ca6bce93d2"
+    },
+    {
+      "claim_id": "d99e5364-99f8-4369-91be-a58fa2a29159",
+      "result_id": "a754b9be-f1c8-4a2f-b55c-00ca6bce93d2"
+    },
+    {
+      "claim_id": "19b0c2d8-6707-4070-a9be-3fdb40fc5672",
+      "result_id": "a754b9be-f1c8-4a2f-b55c-00ca6bce93d2"
+    },
+    {
+      "claim_id": "ca052fab-9cf0-46ea-a5ea-c2ce45844cfc",
+      "result_id": "bde07e55-efc3-4806-a740-858282c15278"
+    },
+    {
+      "claim_id": "9313dc84-c078-487d-995e-d58a80f1d355",
+      "result_id": "bde07e55-efc3-4806-a740-858282c15278"
+    },
+    {
+      "claim_id": "b333d393-c78a-42e5-a193-f31933ef3773",
+      "result_id": "bde07e55-efc3-4806-a740-858282c15278"
+    },
+    {
+      "claim_id": "db3ecb72-8e9c-4655-8d8a-b3d25aa6caee",
+      "result_id": "bde07e55-efc3-4806-a740-858282c15278"
+    },
+    {
+      "claim_id": "4d64e037-db6b-4ae9-b843-5530c5c18acb",
+      "result_id": "bde07e55-efc3-4806-a740-858282c15278"
+    },
+    {
+      "claim_id": "692ca8f2-bbaa-4c96-9777-cb6d3a17b075",
+      "result_id": "0dc4acca-e062-4493-be4e-422497cfba0d"
+    },
+    {
+      "claim_id": "36db32cb-8c99-4634-a532-c07bc4b9a36c",
+      "result_id": "0dc4acca-e062-4493-be4e-422497cfba0d"
+    },
+    {
+      "claim_id": "a765996e-4b5e-4dce-a9e1-7c45d3f41dac",
+      "result_id": "0dc4acca-e062-4493-be4e-422497cfba0d"
+    },
+    {
+      "claim_id": "73c75487-2db6-4cad-8434-0340aafb002b",
+      "result_id": "0dc4acca-e062-4493-be4e-422497cfba0d"
+    },
+    {
+      "claim_id": "9930d1c5-9e89-4642-82b3-4b574174d78e",
+      "result_id": "0dc4acca-e062-4493-be4e-422497cfba0d"
+    },
+    {
+      "claim_id": "ae35f34f-3a5f-40bc-9823-c9fccc835b24",
+      "result_id": "3e28d6fd-6433-43e7-bb38-7335ce48095f"
+    },
+    {
+      "claim_id": "3e371d05-4686-4284-b883-de75c7c6fdea",
+      "result_id": "3e28d6fd-6433-43e7-bb38-7335ce48095f"
+    },
+    {
+      "claim_id": "bb97f84f-449a-43f4-af4f-94b504486085",
+      "result_id": "3e28d6fd-6433-43e7-bb38-7335ce48095f"
+    },
+    {
+      "claim_id": "58ff8fad-fd47-4e6a-b941-aaed4a1b62ad",
+      "result_id": "3e28d6fd-6433-43e7-bb38-7335ce48095f"
+    },
+    {
+      "claim_id": "f37902e0-8466-431c-834c-49263ef91a1d",
+      "result_id": "3e28d6fd-6433-43e7-bb38-7335ce48095f"
+    },
+    {
+      "claim_id": "2a343329-828e-4da6-a0c7-0b8633c65977",
+      "result_id": "3e28d6fd-6433-43e7-bb38-7335ce48095f"
+    },
+    {
+      "claim_id": "297b620a-7c02-47d1-8bdf-7a4fe27a8e1d",
+      "result_id": "2dee8f5a-05e8-4c82-b98c-34d620ee3c0c"
+    },
+    {
+      "claim_id": "c3e8af3c-130c-4eec-a9cd-d6c4ea62dd77",
+      "result_id": "9bae884a-bc2f-4a27-8d9c-1523c212bef4"
+    },
+    {
+      "claim_id": "56600a4f-76b6-4400-acdb-fc5a3f22ead1",
+      "result_id": "9bae884a-bc2f-4a27-8d9c-1523c212bef4"
+    },
+    {
+      "claim_id": "5fa19527-aad9-4812-8858-fdc2058e1568",
+      "result_id": "9bae884a-bc2f-4a27-8d9c-1523c212bef4"
+    },
+    {
+      "claim_id": "8f037b6f-da45-4aa3-86d4-91b565e73507",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "5f679c5f-bfcf-4616-9bff-2a5315301995",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "5e49f19e-9afc-4756-ac7a-99d435544683",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "33bfe9d5-4ac1-41e2-ac58-1ef4e5d02211",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "7eb0006e-85b7-4f3e-8df1-5b20ef2fb85a",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "2c02d087-87ac-4744-8cd8-ada8bc0800ad",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "03197934-c5f5-487c-a912-0db801bf1031",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "9286a8dc-b64b-4cce-bd8b-e480b17a4405",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "12c78439-6563-42cd-a765-d9244634cfbe",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "e558849d-7be9-4ed9-a89f-bad391d1be4b",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "38ad1c76-13d1-459d-82a3-6e98c1f9bf25",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "18da07d2-e9b8-4424-8ac0-010ae5d48058",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "8af1d5e6-02b1-4a9a-92e1-f42714e14b9c",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "bcf884d7-4e89-4b95-b42d-6d8eb3683a41",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "76ae22b9-eedc-47ff-83c4-dd400210ba1c",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "8cb39b0e-4306-4d2c-95c6-3af0e01d8e95",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "e041b281-f061-4b75-94dd-c8b458589d8f",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "0449c338-b200-44ec-b213-f2aec7750bdd",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "e16d5fd4-d74e-48ac-bde8-2886d9a8b6dc",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "208c6046-8f69-4a77-b871-6371646b40b2",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "3c96ae15-d323-421d-b157-948e7c2c577b",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "e3a1eb79-ed97-4f2b-96a3-000e8f37c69d",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "5fdc6e33-fa6f-4846-88bc-1b957f930275",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "e5d71a73-2985-4099-912d-493bff6f40a4",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "fa8c77df-4429-4f33-be20-1c8b26e9436a",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "18ea7475-8b0b-4dd9-aea0-83159ab42d32",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "81c07889-7b21-42d4-b468-81c776345087",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "6f49eee2-c45a-46b4-8178-7b6665cac2c6",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    },
+    {
+      "claim_id": "ff48cfdd-201d-44d0-8067-5c04491c7e6a",
+      "result_id": "6b5814d4-a30d-42a9-a01d-13450d4bcc2e"
+    }
+  ],
+  "comparisons": []
+}

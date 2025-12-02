@@ -1,0 +1,1329 @@
+{
+  "submission": {
+    "id": "f6dcfc7e-0739-47e8-a58f-e9c6025fedec",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:24:53.573717Z",
+    "updated_at": "2025-12-02T16:24:53.573717Z"
+  },
+  "content": [
+    {
+      "id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "submission_id": "f6dcfc7e-0739-47e8-a58f-e9c6025fedec",
+      "content_type": "manuscript",
+      "content_text": "# Reinforcement biases subsequent perceptual decisions when confidence is low, a widespread behavioral phenomenon\n\n## Authors\n\n- Armin Lak<sup>1</sup> ([ORCID: 0000-0003-1926-5458](https://orcid.org/0000-0003-1926-5458)) \u2020\n- Emily Hueske<sup>3</sup>\n- Junya Hirokawa<sup>6</sup> ([ORCID: 0000-0003-1238-5713](https://orcid.org/0000-0003-1238-5713))\n- Paul Masset<sup>3</sup> ([ORCID: 0000-0003-2001-7515](https://orcid.org/0000-0003-2001-7515))\n- Torben Ott<sup>6</sup>\n- Anne E Urai<sup>6</sup> ([ORCID: 0000-0001-5270-6513](https://orcid.org/0000-0001-5270-6513))\n- Tobias H Donner<sup>10</sup> ([ORCID: 0000-0002-7559-6019](https://orcid.org/0000-0002-7559-6019))\n- Matteo Carandini<sup>2</sup> ([ORCID: 0000-0003-4880-7682](https://orcid.org/0000-0003-4880-7682))\n- Susumu Tonegawa<sup>4</sup>\n- Naoshige Uchida<sup>3</sup> ([ORCID: 0000-0002-5755-9409](https://orcid.org/0000-0002-5755-9409))\n- Adam Kepecs<sup>6</sup> \u2020\n\n### Affiliations\n\n1. Department of Physiology, Anatomy and Genetics, University of Oxford Oxford United Kingdom\n2. UCL Institute of Ophthalmology, University College London London United Kingdom\n3. Department of Molecular and Cellular Biology and Center for Brain Science, Harvard University Cambridge United States\n4. RIKEN-MIT Laboratory at the Picower Institute for Learning and Memory at Department of Biology and Department of Brain and Cognitive Science, Massachusetts Institute of Technology Cambridge United States\n5. McGovern Institute for Brain Research at Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology Cambridge United States\n6. Cold Spring Harbor Laboratory Cold Spring Harbor United States\n7. Graduate School of Brain Science, Doshisha University, Kyotanabe Kyoto Japan\n8. Watson School of Biological Sciences Cold Spring Harbor United States\n9. Departments of Neuroscience and Psychiatry, Washington University School of Medicine St. Louis United States\n10. Department of Neurophysiology, University Medical Center, Hamburg-Eppendorf Hamburg Germany\n11. Howard Hughes Medical Institute at Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLearning from successes and failures often improves the quality of subsequent decisions. Past outcomes, however, should not influence purely perceptual decisions after task acquisition is complete since these are designed so that only sensory evidence determines the correct choice. Yet, numerous studies report that outcomes can bias perceptual decisions, causing spurious changes in choice behavior without improving accuracy. Here we show that the effects of reward on perceptual decisions are principled: past rewards bias future choices specifically when previous choice was difficult and hence decision confidence was low. We identified this phenomenon in six datasets from four laboratories, across mice, rats, and humans, and sensory modalities from olfaction and audition to vision. We show that this choice-updating strategy can be explained by reinforcement learning models incorporating statistical decision confidence into their teaching signals. Thus, reinforcement learning mechanisms are continually engaged to produce systematic adjustments of choices even in well-learned perceptual decisions in order to optimize behavior in an uncertain world.\n\n## Introduction\n\nLearning from the outcomes of decisions can improve subsequent decisions and yield greater success. For instance, to find the best meal on a busy street where restaurants often change menus, one needs to frequently sample food and learn. Humans and other animals efficiently learn from past rewards and choose actions that have recently lead to the best rewards (Daw et al., 2006; Lee et al., 2012; Samejima et al., 2005; Tai et al., 2012). In addition to evaluating past rewards, decision making often require consideration of present perceptual signals; the restaurants\u2019 signs along the busy street might be too far and faded to be trusted. Therefore, good decisions ought to take into account both current sensory evidence as well as the prior history of successes and failures.\n\nDecisions guided by the history of rewards can be studied in a reinforcement learning framework (Sutton and Barto, 1998). Perceptual decisions, on the other hand, have been classically conceptualized within a statistical, psychometric framework (Green and Swets, 1966). Although statistical decision theory and reinforcement learning provide two largely distinct frameworks for studying decisions, we are often challenged by both limits in our perception as well as limits in learning from past rewards. For sensory decisions, classical psychometric analysis estimates three fundamental variables that determine the quality of choices: the bias, lapse rate and sensitivity (Green and Swets, 1966; Wichmann and Hill, 2001). When bias and lapse rates are negligible and sensitivity has reached its maximum over time, then fluctuations in decisions are solely attributed to the noise in the perceptual processing. Under these assumptions, incorrect decisions are caused by perceptual noise creating imperfect percepts. Here, we show a systematic deviation from the assumption of no learning during well-trained perceptual decisions: past rewards bias perceptual choices specifically when the previous stimulus was difficult to judge, and the confidence in obtaining the reward was low.\n\nIn laboratory perceptual decision-making paradigms, there is typically no overt learning after the task acquisition is complete. Nevertheless, several studies have shown that past rewards, actions, and stimuli can appreciably influence subsequent perceptual choices (Abrahamyan et al., 2016; Akaishi et al., 2014; Akrami et al., 2018; Braun et al., 2018; Busse et al., 2011; Cho et al., 2002; Fan et al., 2018; Fischer and Whitney, 2014; Fritsche et al., 2017; Fr\u00fcnd et al., 2014; Gold et al., 2008; Hwang et al., 2017; Lueckmann et al., 2018; Luu and Stocker, 2018; Marcos et al., 2013; Tsunada et al., 2019; Urai et al., 2017). Some of these observations support the view that simple forms of reward-based learning are at work during asymptotic perceptual performance. For instance, subjects might repeat the previously rewarded choice or avoid it after an unsuccessful trial (Abrahamyan et al., 2016; Busse et al., 2011; Tsunada et al., 2019; Urai et al., 2017). However, these types of choices biases seem to be suboptimal and might reflect simple heuristics. Thus, the extent to which choice biases in perceptual decisions can be expected from normative considerations in reinforcement learning has been unclear. Perhaps, the most prominent prediction of reinforcement learning under perceptual uncertainty is that the strength of sensory evidence (i.e. confidence in the accuracy of a decision) should modulate how much to learn from the outcome of a decision (Lak et al., 2017; Lak et al., 2019). Outcomes of easy decisions are highly predictable, and thus there is little to be learned from such decisions. In contrast, outcomes of difficult, low confidence decisions, provide the most prominent opportunity to learn and adjust subsequent decisions (Lak et al., 2017; Lak et al., 2019). These considerations lead to the hypothesis that decision confidence regulates trial-by-trial biases in perceptual choices.\n\nHere, we demonstrate that well-trained perceptual decisions can be systematically biased based on previous outcomes in addition to current sensory evidence. We show that these outcome-dependent biases depend on the strength of past sensory evidence, suggesting that they are consequences of confidence-guided updating of choice strategy. We demonstrate that this form of choice updating is a widespread behavioral phenomenon that can be observed across various perceptual decision-making paradigms in mice, rats and humans. This trial-to-trial choice bias was also present in different sensory modalities and transferred across modalities in an interleaved auditory/olfactory choice task. To explain these observations, we present a class of reinforcement learning models and Bayesian classifiers that adjust learning based on the statistical confidence in the accuracy of previous decisions.\n\n## Results\n\n### Perceptual decisions are systematically updated by past rewards and past sensory stimuli\n\nTo investigate how the history of rewards and stimuli influences subsequent perceptual decisions, we began with an olfactory decision task (Figure 1a). Rats were trained on a two-alternative choice olfactory decision task (Uchida and Mainen, 2003). Two primary odors were associated with rewards at left and right choice ports and mixtures (morphs) of these odors were rewarded according to a categorical boundary (50:50 mixture; Figure 1a). To manipulate perceptual uncertainty, we varied the odor mixtures, that\u00a0is the ratio of odor A and B in a trial-by-trial manner, testing mixtures 100:0, 80:20, 65:35, 55:45, 45:55, 35:65, 20:80 and 0:100. Rats showed near-perfect performance for easy mixtures and made errors more frequently for difficult mixtures (Figure 1a, bottom panel).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig1-v3.jpg)\n\n**Figure 1.:** (a) Top: Schematic of a 2AFC olfactory decision-making task for rats. Bottom) Average performance of an example rat. (b) Following learning, the psychometric curves showed minimal fluctuations across test sessions. Bias, sensitivity and lapse were measured for each test session. (c) After successful completion of a trial, rats tended to shift their choice toward the previously rewarded side. Left and right panels illustrate example animal and population average. (d) Schematic of analysis procedure for computing conditional psychometric curves and updating plots. Left: Black curve shows the overall psychometric curve and the green curve shows the curve only after trials with 48% odor A\u00a0(i.e.\u00a0conditional on the stimulus (48%\u00a0A) in the previous trial). Middle: Each point in the heatmap indicates the vertical difference between data\u00a0points of the conditional psychometric curve and the overall psychometric curve. Red and purple boxes indicate\u00a0data points which are averaged to compute data points shown in the rightmost plot. Right: Updating averaged across current easy trials (in this case the easiest two stimulus levels) and current\u00a0difficult trials. (e) Performance of the example rat (left) and population (right) computed separately based on the quality of olfactory stimulus (shown as colors mixtures from blue to green) in the previously rewarded trial. After successful completion of a trial, rats tended to shift their choices towards the previously rewarded side but only when the previous trial was difficult. (f) Choice updating, that\u00a0is the size of shift of psychometric curve relative to the average psychometric curve, as a function of sensory evidence in the previously rewarded trial, and current trial. Positive numbers refer to a bias towards choice A and negative numbers refer to a bias toward the alternative choice. The left and right plots refer to the example rat and population, respectively. (g) Choice updating as a function of previous stimulus separated for current easy (square) and difficult (circle) trials. These plots are representing averages across graphs presented in f.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Right: Performance of population of rats (n=16) computed from trials in which the previous stimulus was easy (20% odor A, 80% odor B), separated based on whether the previous choice was rewarded (correct) or unrewarded (error).\n\nAfter task learning, rats showed stable behavior across testing sessions (Figure 1b). To quantify behavioral performance and stability across sessions, we fitted choice behavior with psychometric functions that included parameters for sensitivity (reflecting perceptual noise), bias (the tendency to take one specific action) and lapse rate (stimulus-independent occasional errors possibly reflecting attentional or learning deficits) (Figure 1a, b). We found that in well-trained rats, the bias was near zero (2\u00b14.6 %Odor A (mean\u00b1 S.D), p = 0.08, signed rank test). Likewise, lapse rates were low (3\u00b14%), indicating that for easy stimuli rats\u2019 performance was near perfect and not substantially degraded by attention or incomplete learning. Lapse rate, sensitivity and bias remained stable over sessions, indicating that rats reached asymptotic performance (Figure 1b, 14/16 rats, p > 0.1, linear regression).\n\nDespite the stable, asymptotic performance for easy decisions, previous trials had substantial effects on subsequent choices (Figure 1c). In order to assess the effects of reinforcement on perceptual decisions, we calculated conditional psychometric functions. We first considered the effect of previous choice (Figure 1c). Psychometric functions were systematically biased by previously rewarded choices: after correct leftward choices rats tended to make a left choice. Conversely, following correct rightward choices, animals made rightward choices more often (F\u00a0=\u00a029.8, p=0.001, 2-way ANOVA).\n\nThe effects of the previous decision on subsequent choices also depended on the difficulty of the previous choices (Figure 1d-g). We computed psychometric functions after correct (and hence rewarded) trials separately for different stimuli of the previous trial (Figure 1d). The resulting psychometric functions were systematically biased towards the recently rewarded side for difficult decisions (Figure 1e). Rats tended to repeat their previous choices particularly when they succeeded to correctly categorize a challenging odor mixture and earn reward (Figure 1e). We quantified the magnitude of this choice bias for each pair of current and previous stimuli (Figure 1d, see Materials\u00a0and\u00a0methods). To do so, we subtracted the average psychometric curve (computed from all trials) from each psychometric curve computed conditional on the\u00a0specific previous correct stimulus, and plotted the size and sign of this difference (positive: bias to choose A; negative: bias to choose B) (Figure 1d,f). To summarize choice biases, we then averaged these differences across trials in which the current choice was easy or difficult (Figure 1d,g). The magnitude of this choice bias was proportional to the difficulty of the previous decision, in addition to the difficulty of the current decision (Figure 1f). Updating was minimal when the current stimulus was easy, regardless of the difficulty of the\u00a0previous decision (Figure 1g, squares). This is because the data\u00a0points are overlapping when the current stimulus is easy, and hence the distance between them is close to zero (Figure 1d,e). When the\u00a0current stimulus was difficult, updating was also minimal after correct easy choices, whereas it was strong following correct difficult choices (Figure 1g, circles, p=0.0002, rank sum test). Thus, when the current sensory evidence was strong, it determined the choice, without detectable effects of the previous trial (Figure 1g, squares). However, when the sensory evidence in the current trial was weak, the\u00a0previous reward influenced choices only if the reward was earned in a difficult trial (Figure 1g, circles). The difficulty of previous decision did not influence the slope (sensitivity) nor the lapse of psychometric curves in the next trial (p>0.1 rank sum test). Additionally, plotting the psychometric curves conditional on the\u00a0specific stimulus in the previous trial but separated according to the outcome of the previous trial (correct vs error) further illustrated that past outcome influence subsequent choice in particular when the previous choice was difficult (Figure 1\u2014figure supplement 1). Together, these observations indicate that the effects of past rewards on perceptual choices depend on the difficulty of the previous perceptual judgments.\n\n### Choice updating is not due to slow drifts in choice side bias\n\nThe results so far demonstrate that previous rewards influence subsequent perceptual decisions especially when the previous decision was difficult. One possibility is that these behavioral effects arise as a byproduct of slow fluctuations of side bias causing correlations across consecutive trials and hence systematic shifts in choices. This scenario can be illustrated within a signal detection theory (SDT) framework. In SDT, the perceived stimulus is compared to a decision boundary and produces a correct choice when the stimulus falls on the appropriate side of the boundary (Figure 2a). When the decision boundary is fixed, there is no apparent updating, as expected (Figure 2\u2014figure supplement 1a, b). However, simulating a slowly drifting decision boundary reveals systematic effects of previous trials on next choices, because the drifting boundary induces correlations across trials, producing apparent choice updating based on the previous trials (Figure 2b; Figure 2\u2014figure supplement 1c, d). For instance, if the decision boundary slowly drifts to the left side then rightward choices will be more frequent and occur in succession, producing a shift in the psychometric curve (Figure 2b). Importantly, this effect is independent of decision outcomes and is observed in a sequence of trials, both before and after a rewarded trial (Figure 2b). An\u00a0alternative, more intriguing, scenario for explaining our results is an active learning process that produces trial-by-trial adjustment of the decision boundary. If the decision boundary is adjusted in a trial-by-trial manner according to the outcome of the previous trial, psychometric shifts will be observed in the next trial contingent on the past reward, but absent in the preceding trial (Figure 2c). It is thus critical to remove slow fluctuations of side bias, before concluding that psychometric shifts are signatures of an active learning process.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig2-v3.jpg)\n\n**Figure 2.:** (a) Signal detection theory-inspired schematic of task performance. The psychometric curve illustrates the average choice behavior. (b) Slow non-specific drift in choice bias, visualized here as drift in the decision boundary, could lead to shift in psychometric curves which persisted for several trials and was not specific to stimulus and outcome of the previous trial. This global bias effect is cancelled when subtracting the psychometric curve of trialt-1 (orange) from trialt+1 (brown). (c) Trial-by-trial updating of decision boundary shifts psychometric curves depending on the outcome and perceptual difficulty of the preceding trial. Subtracting psychometric curves does not cancel this effect. (d) Choice bias of the example rat following a rewarded trial. (e) Similar to d but for population. (f) Choice bias of the example rat in one trial prior to current trial, reflecting global nonspecific bias visualized in b. (g) Similar to f but for population. (h) Subtracting choice bias in trialt-1 from trialt+1 reveals the trial-by-trial choice updating in the example rat. (i) Similar to h but for the population. See Figure 2\u2014figure supplement 1 for details of the normalization procedure.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a,b) A simple signal detection theory-based simulation with a fixed decision boundary. In this model, stimuli are drawn from a normal distribution and are compared to a fixed\u00a0decision boundary (50%) for choice computation. This model generates psychometric curves that are not depending on the previous trial (left panel in a) and hence no updating is observed (middle and right panel in a). Our normalization (explained in e) does not influence updating in this model, as shown in b. (c,d) A signal detection theory-based simulation using a slowly drifting decision boundary. Psychometric curves appear to depend on the previous trial (left panel in c), resulting in apparent updating effect (middle and right panels in c). However, this effect is removed after applying our normalization as shown in d. (e) The normalization procedure for isolating trial-by-trial updating. Upper row middle panel shows the performance for two levels of stimuli (48 and 52%) which were both rewarded, hence the delta function. Upper row left panel shows the psychometric curves separately for trials followed by 48% or 52% stimuli. Any separation between these curves indicates a side bias which extend beyond a single trial. Upper right panel shows psychometric curves separately computed based on whether the stimulus in trial\u00a0t was 48 or 52%. The full conditional psychometric curves in trial t-1\u00a0and\u00a0t and in trial t and t+1 were used to compute heatmaps\u00a0(middle\u00a0row). The heatmap of t-1 was subtracted from the heatmap of t+1 to compute normalized trial-by-trial updating\u00a0(lowest\u00a0row).\n\nWe next asked to what extent the trial history effects we observed reflect\u00a0correlations across consecutive trials due to slowly fluctuating bias over trials. To do so, we devised a model-independent analysis to identify and remove slow fluctuations of side bias (Figure 2\u2014figure supplement 1). While it is possible to formulate model-based analyses to correct for slow biases, there are numerous possibilities that could produce similar fluctuations. Therefore, we sought a model-independent technique, reasoning that slow fluctuations are, by definition, slower than one trial, and hence should have largely similar impact across adjacent trials. Specifically, slow fluctuations will produce similar biases one trial before and after a given decision outcome. This assumption leads to a simple strategy to correct for possible slow drifts and isolate psychometric curve shifts due to active processes: subtracting the psychometric shifts between trial t and t-1 from that of trial t+1 and t removes the effect of slow response bias, that\u00a0is slow boundary drift. Importantly, applying this normalization to the STD model with a drifting decision boundary removes the apparent but artefactual dependence of decisions on previous trials (Figure 2\u2014figure supplement 1d). This subtraction technique thus provides an estimate of how the current trial influences choices in the next trial. Another intuition for this analysis is that future rewards cannot influence past choices, and therefore any systematic dependence of psychometric curves on next trials cannot reflect causal mechanisms and need to be adjusted for. We thus define \u2018choice updating\u2019 as a trial-by-trial bias beyond slowly fluctuating and non-specific side biases.\n\nWe found that the difficulty of previous choices had a strong effect on subsequent choices in rat olfactory discriminations even after correcting for slow fluctuations in the choice bias (Figure 2d\u2013i). We computed the psychometric curves conditional on stimuli and outcomes, for both the next trial (Figure 2d,e) and also the previous trial (Figure 2f,g). Choice biases tended to be larger when considering the next trial compared to the previous trial. The difference between these provides an estimate of choice updating that is due to the most recent reward and without slow and non-outcome specific fluctuations in side bias (Figure 2h,i). The choice updating effect remained statistically significant even after this correction (p=0.003, rank sum test). These results rule out the possibility that psychometric shifts are only due to slow drift in side bias and indicate that reward received in the past trial influences subsequent perceptual decisions specifically if the sensory evidence in the previous trial was uncertain and difficult to judge.\n\n### Belief-based reinforcement learning models account for choice updating\n\nWe next considered what types of reinforcement learning processes could account for the observed choice updating effects. Reinforcement learning models have been long used to study how choices are influenced by past decisions and rewards (Daw and Doya, 2006; Sutton and Barto, 1998). A key distinction between RL model variants is whether and how they treat ambiguous signals for state inference and prediction error computation.\n\nWe show that a reinforcement learning model with a belief-state representing ambiguous perceptual stimuli accounts for choice updating (Figure 3a,b). A reinforcement model for our behavioral task has to consider the inherent perceptual ambiguity in sensory decisions in addition to tracking reward outcomes. The normative way to cope with such ambiguity about state representations is to introduce a partially observable Markov decision process (POMDP) framework for the temporal difference RL (TDRL) algorithm (Dayan and Daw, 2008; Lak et al., 2017; Lak et al., 2019; Rao, 2010). POMDPs capture the intuitive notion that when perception is ambiguous, the model needs to estimate current perceptual experience as a \u2018belief state\u2019, which expresses state uncertainty as a probability distribution over states.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig3-v3.jpg)\n\n**Figure 3.:** (a) Left: schematics of the temporal difference reinforcement learning (TDRL) model that includes belief state reflecting perceptual decision confidence. Right: predicted values and reward prediction errors of the model. After receiving a reward, reward prediction errors depend on the difficulty of the choice and are largest after a hard decision. Reward prediction errors of this model are sufficient to replicate our observed choice updating effect. (b) Choice updating of the model shown in a. This effect can be observed even after correcting for non-specific drifts in the choice bias (right panel). The model in all panels had $\\sigma^{2}$=0.2 and $\\alpha$=0.5. (c) A TDRL model which follows a Markov decision process (MDP) and that does not include decision confidence into prediction error computation produces choice updating that is largely independent of the difficulty of the previous decision. (d) A MDP TDRL model that includes slow non-specific drift in choice bias fails to produce true choice updating. The normalization removes the effect of drift in the choice bias, but leaves the difficulty-independent effect of past reward (e) A MDP TDRL model that includes win-stay-lose-switch strategy fails to produce true choice updating. For this simulation, win-stay-lose-switch strategy is applied to 10% of randomly-selected trials. See Figure 3\u2014figure supplement 1 and the Materials\u00a0and\u00a0methods for further details of the models.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Confidence-dependent TDRL model which uses a softmax for computing choice produces confidence-dependent updating similar to the model run that uses argmax for choice computation. (b) Confidence-dependent choice updating is stronger after two rewarded difficult trials (left), consistent with the model predictions (right). Left panel shows the absolute size of choice updating computed after one rewarded difficult choice (black) and after two rewarded difficult choices to the same choice side (light red)\u00a0(n=16\u00a0rats). Right panel shows the size of updating after one reward and two rewarded difficult choices.\u00a0(c) The stored values of actions converge to different quantities in the confidence-dependent model and the MDP TDRL model. The stored value of left actions averaged over 1000 model runs are shown (the results would be same for the right actions). In both models, the size of delivered reward in correct trials was 1. (d) The difference in the prediction errors of the confidence-dependent model and the MDP TDRL model. The prediction errors in the confidence-dependent model results in choice updating in the next trial.\n\nPreviously, we showed that such a model is analogous to a TDRL model that uses statistical decision confidence, the conditional probability of getting reward given the choice, to scale prediction errors (Lak et al., 2017). We reasoned that this model could also account for how uncertainty of past perceptual decisions influences learning and updating of subsequent perceptual choice. In the model, the rewards received after difficult, low confidence, choices lead to large reward prediction errors and hence the strong updating of decision values in the next trial (Figure 3a, b). The belief state in the model reflects\u00a0the subject\u2019s internal representations of a stimulus, which in the case of our 2AFC task is the probability that the stimulus belongs to the left or right category ($p_{L}$ and $p_{R}$). To estimate these probabilities, the model assumes that the internal estimate of the stimulus, $s^$, is normally distributed with constant variance around the true stimulus contrast: $p(s^|s)=N(s^;s,\\sigma^{2})$, where $s^$ parameterizes a belief distribution over all possible values of $s$ that are consistent with the sensory evidence, given by Bayes rule:\n\n$$\np(s|s^)=\\frac{p(s^|s).p(s)}{p(s^)}\n$$\n\nAssuming that the prior belief about $s$ is uniform, then the optimal belief will also be Gaussian, with the same variance as the sensory noise distribution, and mean given by $s^$: $p(s|s^)=N(s;s^,\\sigma^{2})$.\n\nFrom this, the agent computes a belief, that\u00a0is the probability that the stimulus was on the right side of the monitor, $p_{R}=p(s>0|s^$), according to:\n\n$$\np_{R}(s^)=\\int_{0}^{\u221e}p(s|s^)ds\n$$\n\nwhere\u00a0$p_{R}$ represents the trial-by-trial probability of the stimulus being on the right side and $p_{L}=1-p_{R}$\u00a0similarly\u00a0represents the probability of it being on the left. Multiplying these probabilities with the\u00a0learned action values of left and right, $V_{L}$\u00a0and $V_{R}$, provides the expected values of left and right choices: $Q_{L}=p_{L}V_{L}$ and\u00a0$Q_{R}=p_{R}V_{R}$. The higher of these two determines the choice $C$ (either $L$ or $R$), its associated confidence $p_{C}$, and its predicted value $Q_{c}=p_{C}V_{C}$. Note that although the choice computation is deterministic, the same stimulus can produce left or right choices caused by fluctuations in the percept due to randomized trial-to-trial variation around the stimulus identity (Figure 3\u2014figure supplement 1a). Following the choice outcome, the model learns by updating the value of the chosen action by $V_{C}\u2190V_{C}+\\alpha\\delta$, where $\\alpha$ is a learning rate, and $\\delta=r-Q_{C}$ is the reward prediction error. Thus, in this model, prediction error computation has access to the belief state used for computing the choice, and hence reward prediction error is scaled by the confidence in obtaining the reward (Lak et al., 2017; Lak et al., 2019). The largest positive prediction error occurs when receiving a reward after a difficult, low confidence, choice while receiving a reward after an easy choice results in a small prediction error (Figure 3a, right). After training, the choices produced by this model exhibit confidence-guided updating (Figure 3b, left), similar to those we observed in choices of rats. Similar to the data, the choice updating in this model persisted after accounting for possible slow fluctuations in the choice bias (Figure 3b, right). Note that RL models can produce correlations in choices across trials due to the correlation of stored values across trials, and hence it is important to evaluate the size of the updating effect after the normalization. An additional prediction of our model is that updating effect should be slightly stronger when considering trials preceded by two (rather than one) rewarded difficult choices in the same direction (Figure 3\u2014figure supplement 1b), which we also observed in rats\u2019 choices (Figure 3\u2014figure supplement 1b).\n\nWe next considered whether classical TDRL models that follow a Markov decision process (MDP), could also produce confidence-guided updating. Such a model is largely similar to the model described above with one fundamental difference: the computation of prediction error does not have access to the belief state. In other words, prediction errors are computed by comparing the outcome with the average value of chosen action, without consideration of the belief in the accuracy of that action. In the model variant with two states (L and R), after learning, $V_{L}$\u00a0and $V_{R}$ reflect the average reward expectations for each choice and prediction errors are computed by comparing the outcome with this average expectation. Decisions made by this model show substantial effects of past reward (Figure 3c): after receiving a reward, the model has a tendency to make the same decision. However, compared to the belief-based model, this bias shows little dependence on the difficulty of the previous choice, and this dependence is absent after applying our normalization (Figure 3c, left). An extended version of this model that represents stimuli across multiple states also cannot reproduce confidence-dependent updating (see Materials\u00a0and\u00a0methods). Thus, MDP TDRL models (i.e. TDRL without a stimulus belief state) do not exhibit confidence-guided choice updating. We also considered whether a MDP TDRL model with slowly fluctuating response side bias could show trial-by-trial choice updating (Figure 3d). A modified MDP TDRL model that includes a slowly drifting side bias term showed a substantial effect of past reward on choices, which was mildly dependent on the difficulty of the previous sensory judgement (Figure 3d, left). This dependence, however, vanished after normalizing the choices to account for slowly drifting side bias (Figure 3d, right). This reveals that slowly fluctuating side bias in TDRL models without a belief state does not result in confidence-guided choice updating, despite apparent trial to trial fluctuations. The results also further confirm the effectiveness of our normalization procedure (i.e. subtracting the bias in the previous trials from next trials) in isolating trial-by-trial confidence-guided choice updating. We also ruled out the possibility that choice updating reflected an elementary win-stay strategy (Figure 3e). The decisions of an MDP TDRL model that was modified to include win-stay strategy (to repeat the previously rewarded choice, with p=10% in this example) show strong dependence on past rewards. The normalization removes the dependence of updating size on choice difficulty that is due to a correlation across choices. However, it does not remove the signatures of win-stay / loose-switch behavior (Figure 3e). Thus, in this model variant\u00a0the effect of past rewards is independent of the difficulty of the previous choice, differing from the rat data in which the size of the bias induced by previous reward is proportional to the difficulty of the previous decision.\n\nThe predictions of the confidence-dependent TDRL and MDP TDRL models differ in two principal ways. First, the learned values of actions ($V_{L}$\u00a0and $V_{R}$)\u00a0converge to different values over learning (Figure 3\u2014figure supplement 1c). In the confidence-dependent TDRL, $V_{L}$\u00a0and $V_{R}$ both converge to just below the true size of reward. However, in the MDP TDRL model they converge to the average choice accuracy (average reward harvest), which is lower than the true reward size (Figure 3\u2014figure supplement 1c). This difference emerges because in the belief-based model values are updated using prediction errors scaled by confidence. Confidence is relatively low in the error trials, leading to small adjustments (reductions) of values after those trials, and hence the convergence of values to just below the true reward size (i.e. reward value, when the reward is given). This difference is important for understanding updating in particular in the case of very easy correct trials. In the confidence-dependent model, large confidence associated with a correct easy choice together with higher values of stored values produce Q values similar to the true reward size, and hence near-zero prediction errors when receiving the reward. However, in the MDP model, Q values are compared with relatively low stored values (compared to the\u00a0reward value), and hence reward prediction errors persist even for very easy correct choices. The second major difference between the two models is how choice difficulty determines reward prediction errors and hence updating. While in the confidence-dependent model prediction errors depend on the choice difficulty (Figure 3a; Figure 3\u2014figure supplement 1d), in the MDP TDRL the prediction errors do not reflect choice difficulty (Figure 3\u2014figure supplement 1d, see Materials\u00a0and\u00a0methods). The prediction errors of the belief-based model thus result in graded levels of updating in the subsequent trials depending on the difficulty of the previous choice.\n\n### On-line learning in margin-based classifiers explains choice updating\n\nWe next considered whether another class of models based on classifiers could also explain choice updating. Perceptual decision-making processes produce discrete choices from ambiguous sensory evidence. This process can be modelled with classifiers that learn a boundary in the space of sensory evidence. For instance, in our olfactory decision task evidence is a two-dimensional space spanned by the\u00a0odor components A and B (Figure 4a). The hyperplane separating choice options creates a decision boundary determining whether each odor mixture is classified as A or B, which can be learned over trials. To apply these ideas to our decision tasks, we examine a probabilistic interpretation of Support Vector Machine (SVM) classifiers, a powerful technique from machine learning (see Materials\u00a0and\u00a0methods). SVMs learn classification hyperplanes that produce decision boundaries that are maximally far away from any data sample. Applying this framework to our particular decision problem requires an on-line implementation of a probabilistic interpretation of SVMs (Sollich, 2002). In the SVM terminology, the distance of a sample x from the category boundary or hyperplane is called the \u2018margin\u2019 of the data point (orange arrow in Figure 4a). The size of the margin for a stimulus is proportional to the likelihood of that data point belonging to a class given the current classifier. After appropriate normalization, this model yields an estimate of the classification success for a given decision. Indeed, the Bayesian posterior of classification success is a normative definition of confidence (Hangya et al., 2016; Pouget et al., 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig4-v3.jpg)\n\n**Figure 4.:** (a) Schematic of a classifier using Support Vector Machine for learning to categorize odor samples. The dashed line shows one possible hyperplane for classification and shaded area around the dashed line indicates the margin. Orange arrow indicates the distance between one data point and the classification hyperplane, that\u00a0is the margin for that data point, given the hyperplane. Each circle is one odor sample in one trial. (b) Average estimates of the margins of the classifier. (c) The size of shift in the classification as a function of previous and current stimulus. (d) Choice updating as a function previous odor separated for current easy and hard choices.\n\nSimulation of this on-line, Bayesian SVM produces choice updating similar to that from the RL model (Figure 4b, c). Thus, statistical classifiers, in which the decision boundary is continuously updated in proportion to the estimated classification success (i.e. decision confidence), provides another account of choice updating. The core computational feature common to reinforcement learning and classifier models is that statistical decision confidence contributes to the trial-by-trial adjustment of choice bias.\n\nIn the following sections, we examine whether confidence-guided choice updating is observed in sensory modalities other than olfaction, and in species other than rats.\n\n### Confidence-guided choice updating in rat auditory decisions\n\nWe next investigated decisions of rats performing a two-alternative auditory decision task (Figure 5). Rats were trained to report which of two auditory click trains delivered binaurally had a greater number of clicks (Sanders et al., 2016; Sanders and Kepecs, 2012; Brunton et al., 2013;\u00a0Figure 5a). The click trains were presented for 250 ms and generated using a Poisson process with the sum of the two rates held constant across trials. To control decision difficulty, the ratio of click rates for each side was randomly varied from trial to trial. The strength of evidence on a given trial was computed based on the number of clicks, that\u00a0is the difference in the number of clicks between left and right divided by the total number of clicks. Rats showed steep psychometric curves (slope: 0.37\u00b10.03, mean\u00b1 S.D) with minor overall bias (-1\u00b14.9% sound A) and near-zero lapse for easy stimuli (0.05\u00b10.09%). We found that, similar to the olfactory task, difficult choices were biased in proportion to the difficulty of previous choice (Figure 5b-d, p=0.007, rank sum test).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig5-v3.jpg)\n\n**Figure 5.:** (a) Schematic of a 2AFC auditory decision-making task for rat. (b) Performance of an example rat computed separately based on the quality of auditory stimulus (shown as colors from blue to green) in the previously rewarded trial. (c) Choice updating as a function of sensory evidence in the previous and current trial in the population of rats (n\u00a0=\u00a05). (d) Choice updating as a function of previous stimulus separated for current easy (square) and difficult (circle) trials, averaged across rats.\n\n### Confidence-guided choice updating in mouse auditory decisions\n\nWe next considered decisions of mice performing an auditory decisions task (Figure 6). Mice were trained on a two-alternative auditory tone decision task. The auditory stimuli in different trials were presented as percentages of a high and low frequency complex tone, morph A and morph B (Figure 6a). To manipulate perceptual uncertainty, we varied the amplitude ratio of the two spectral peaks in a trial-by-trial manner. Mice showed steep psychometric curves (slope: 0.25\u00b10.06, mean\u00a0\u00b1 S.D) with minor overall bias (-1\u00b16.9% sound A) and negligible lapse for easy stimuli (3\u00b12%). The choices showed significant dependence on the difficulty of previous choice (Figure 6b-d, p=0.01, rank sum test).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig6-v3.jpg)\n\n**Figure 6.:** (a) Schematic of a 2AFC auditory decision making task for mice. (b) Performance of an example mouse computed separately based on the quality of auditory stimulus (shown as colors from blue to green) in the previously rewarded trial. (c) Choice updating as a function of sensory evidence in the previous and current trial in the population of mice (n\u00a0=\u00a06). (d) Choice updating as a function of previous stimulus separated for current easy (square) and difficult (circle) trials, averaged across mice.\n\n### Confidence-guided choice updating in mouse visual decisions\n\nWe next considered mice trained to perform visual decisions (Figure 7;\u00a0Burgess et al., 2017). Head-fixed mice were trained to report the position of a grating on the monitor by turning a steering wheel placed under their front paws (Figure 7a). If the mouse turned the wheel such that the stimulus reached the center of the screen, the animal received water. If instead the mouse moved the stimulus by the same distance in the opposite direction, this incorrect decision was penalized with a timeout of 2 s (Burgess et al., 2017). We varied task difficulty by varying the contrast of the stimulus in different trials. Mice showed steep psychometric curves (slope: 0.260\u00b111, mean \u00b1\u00a0S.D) with minor overall bias (1\u00b19.1% stimulus\u00a0contrast) and negligible lapse for easy stimuli (5\u00b14.9%). The decisions showed significant dependence on the difficulty of previous choice (Figure 7b-d, p=0.001, rank sum test), consistent with similar results in a different version of this task that also included manipulation of reward size (Lak et al., 2019).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig7-v3.jpg)\n\n**Figure 7.:** (a) Schematic of a 2AFC visual decision making task for mice. (b) Performance of an example mouse computed separately based on the quality of visual stimulus (shown as colors from blue to green) in the previously rewarded trial. (c) Choice updating as a function of sensory evidence, that\u00a0is the contrast of stimulus, in the previous and current trial in the population of mice (n\u00a0=\u00a012). (d) Choice updating as a function of previous stimulus separated for current easy (square) and difficult (circle) trials, averaged across mice.\n\n### Confidence-guided choice updating in human visual decisions\n\nNext, we asked whether confidence-guided choice strategy was specific to rodents or could also be observed in humans (Urai et al., 2017). Human observers performing a visual decision task updated their choices in a confidence-dependent manner (Figure 8). Observers performed a two-interval forced choice (2IFC) motion coherence discrimination task (Figure 8a). They judged the difference in motion coherence between two successively presented random dot kinematograms: a constant reference stimulus (70% motion coherence) and a test stimulus with varying motion coherence in different trials (Urai et al., 2017). Observers performed the task well (slope: 0.2\u00b10.01, bias: 0\u00b13% stimulus\u00a0coherence, lapse: 1\u00b12%), and their choices showed significant dependence on the difficulty of previous choice (Figure 8b-d, P<0.05, rank sum test).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig8-v3.jpg)\n\n**Figure 8.:** (a) Schematic of a 2IFC visual decision making task in human subjects. (b) Performance of an example subject computed separately based on the quality of visual stimulus (shown as colors from blue to green) in the previously rewarded trial. (c) Choice updating as a function of sensory evidence,\u00a0that\u00a0is the difference in coherence of moving dots between two intervals, in the previous and current trial, averaged across subjects (n\u00a0=\u00a023). (d) Choice updating as a function of previous stimulus strength, separated for current easy (square) and difficult (circle) trials, averaged across subjects.\n\n### Confidence-guided choice updating transfers across sensory modalities\n\nWe found that rats exhibit confidence-dependent choice updating even if the sensory modality of current decision differed from the modality of the previous decision (Figure 9). We trained rats in a dual sensory modality 2AFC task with\u00a0randomly\u00a0interleaved trials of auditory and olfactory decisions (Figure 9a-b). Rats performed the task well (slope: 0.35\u00b10.03, bias: -2\u00b16%, lapse: 1\u00b10.4%) and their choices showed significant dependence on the difficulty of the past choice, and this dependence transferred across the sensory modalities. Rats updated their olfactory decisions after difficult auditory decisions (Figure 9c-e p=0.008, rank sum test), and similarly, they updated their auditory choices after difficult olfactory decisions (Figure 9f, h, p=0.01, rank sum test). The updating occurred also across trials in which the modality of the choice did not change (i.e. in consecutive auditory choices and consecutive olfactory choices). Choice updating appeared largest in two consecutive olfactory decisions, yet updating was present in consecutive auditory choices as\u00a0well\u00a0as in consecutive trials with a\u00a0modality switch (Figure 9\u2014figure supplement 1). These results show that the updating effect depends on the choice outcome, rather than the identity, that\u00a0is modality, of the sensory stimulus. This observation further indicates that choice updating mainly occurs in the space of action values, similar to our RL model.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig9-v3.jpg)\n\n**Figure 9.:** (a-b) Schematic of a 2AFC task in which rats performed either an olfactory (a) or auditory (b) decisions in randomly interleaved trials. (c) Performance of an example rat computed for olfactory trials separately based on the quality of auditory stimulus (shown as colors from blue to green) in the previously rewarded trial. (d) Choice updating as a function of sensory evidence (auditory stimulus) in the previous trial and odor mixture in the current trial, averaged across subjects (n\u00a0=\u00a06). (e) Choice updating as a function of previous auditory stimulus separated for current odor-guided easy (square) and difficult (circle) trials, averaged across subjects. (f-h) Similar to c-e but for trials in which the current stimulus has been auditory and the previous trial has been based on olfactory stimulus.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig9-figsupp1-v3.jpg)\n\n**Figure 9\u2014figure supplement 1.:** See Figure 10 for the definition of Updating Index.\n\n### Diversity of confidence-guided choice updating across individuals\n\nHaving observed confidence-guided choice updating across various data\u00a0sets, we next quantified this behavioral effect in each individual, and observed a weak but negative correlation between the strength of choice updating and psychometric lapse rate (Figure 10). To quantify the choice updating effect for each individual, we performed\u00a0linear\u00a0regressions on the updating data (Figure 10a inset) and computed the updating index as the difference in the slope of the fits for current easy and current difficult trials. A large fraction of individuals in each data\u00a0set showed substantial choice updating consistent with the predictions of the model (positive numbers in Figure 10a). Nevertheless, we also observed individuals with negligible updating, and even in rare instances a choice bias in the direction opposite to the model\u2019s prediction (negative numbers in Figure 10a). Quantifying individual behavior enabled us to ask whether this observed diversity could be explained by variations in the quality of perceptual processing (psychometric slope and lapse rate; Figure 10b,c). The slope and updating did not exhibit a significant relationship (p=0.21), but the lapse rate and updating showed a weak significant negative correlation (p=0.03). In other words, choice updating was strongest among individuals with lower lapse rate (Figure 10c). The results suggest that choice updating of the form we observed, is strongest when subjects are well trained in the perceptual task, with stable psychometric slope and minimal lapse rate.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig10-v3.jpg)\n\n**Figure 10.:** (a) The strength of choice updating among individuals. The vertical lines show the mean. Inset: schematics illustrates the calculation of updating index. The index is defined as the difference in the slope of lines fitted to the data. (b) Scatter plot of choice updating as a function of the slope of psychometric curve. Each circle is one individual. Dashed lines illustrate a linear fit on each data\u00a0set, and the gray solid line shows a linear fit on all subjects. (c) Scatter plot of choice updating as a function of the lapse rate of the fitted psychometric curve.\n\n### Different strategies for choice updating after error trials due to different noise sources\n\nLastly, we asked whether subjects show choice updating following error trials. We observed substantial diversity in choice bias after error trials, both across individuals and data\u00a0sets. For example, two rats that performed olfactory decisions with similar choice updating after correct choices (Figure 11a,b top panel), showed divergent patterns of updating after incorrect choices (Figure 11a,b bottom panel). Interestingly, reinforcement learning models with different parameter settings also produced diverse choice bias patterns after error trials, depending on the dominant source of noise, that\u00a0is whether errors were produced by sensory noise (external) or due to value fluctuations (internal). When sensory noise is high and leads to errors, these errors cannot be systematically corrected hence there is little or no net updating effect (Figure 11c, bottom panel). On the other hand, when the internal noise is high, such as high learning rate producing over-correction, systematic post-error updating is observed (Figure 11d, bottom panel). Although we found individual subjects matching these specific patterns of post-error updating (Figure 11a,b), the diversity across individuals and populations, as well as the low number of error trials precludes a more in-depth analysis. Note that for post-correct updating our RL model makes qualitatively similar predictions about choice updating, independent of whether the dominant source of noise is external or internal (Figure 11c,d top panels).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/49834/elife-49834-fig11-v3.jpg)\n\n**Figure 11.:** (a) Choice updating after correct trials (top) and after error trials (bottom) in one example rat. (b) Similar to a for another example rat. (c) Choice updating of the TDRL model ran with large sensory noise ($\\sigma^{2}=$\u00a00.5). This model exhibit choice updating qualitatively similar to the rat shown in a. (d) Choice updating in the TDRL model with large internal noise ($\\alpha=0.8$). This model run exhibits choice updating similar to the rat shown in b.\n\n## Discussion\n\nOur central observation is that even well-trained and well-performed perceptual decisions can be informed by past sensory evidence and outcomes. When the sensory evidence is strong, it determines choices, as expected, and past outcomes have little influence. When sensory evidence is weak, however, choices are influenced by trial history. We show that this effect of past rewards can depend on the difficulty of past sensory decisions: subjects repeat the previously\u00a0rewarded choice mainly when past sensory decision was difficult. This confidence-guided choice updating occurs in a trial-by-trial manner, and it is not due to slow drifts in choice strategy. We demonstrate that these history-dependent choice biases can be explained with reinforcement learning models that consider sensory ambiguity as a belief state computation, and hence produce confidence-scaled reward prediction error signals. We illustrate that this form of choice updating is a robust and widespread behavioral phenomenon observed across various perceptual decision-making paradigms in mice, rats and humans. Notably we found evidence for the same reinforcement learning process across data sets despite substantial variations in experimental setups and other conditions across the experiments examined.\n\nThe influence of past trials on perceptual decisions does not necessarily reflect active, trial-by-trial learning. In fact, our simulations illustrate that slow and non-specific drifts in the decision boundary result in correlations between consecutive choices, which can produce psychometric shifts similar to choice bias updating (Figures 2 and 3). To correct for this and isolate reinforcement learning-based choice updating, we used a simple procedure to compute choice updating with respect to slow fluctuations in the choice bias. We show the trial history effects persisting after this correction reflect confidence-guided reinforcement learning processes. These analyses also indicate that trial history effects and serial choice biases should be considered with care because correlations across choices at various time scales can produce apparent updating of perceptual choices. A similar confound has been previously reported in post-error slowing analysis, and similar normalization procedures were used to correct for it (Dutilh et al., 2012; Purcell and Kiani, 2016).\n\nConfidence in the correctness of a choice determines the degree to which the reward can be expected. Hence, decision confidence informs how much the decision maker should learn from the decision outcome, as suggested by RL models that incorporate belief states representing confidence (Lak et al., 2017; Lak et al., 2019). Rewards received after decisions with high confidence are expected and hence there is not much to learn from them. In contrast, rewards received after decisions with lower confidence are relatively unexpected and could provide an opportunity to learn (Figure 3). Our results reveal that rodents and humans exhibit this form of learning (Figure 10). These results were robust across various\u00a0datasets, enabling us to isolate an elementary cognitive computation driving choice biases.\n\nTrial-by-trial transfer of choice updating across sensory modalities provides some evidence that this form of learning is driven by comparing the decision outcome with confidence-dependent expectation and performing updating in the space of action values. However,\u00a0updating across trials with different modalities was relatively weaker compared to trials within the same sensory modality. This later\u00a0observation might point to the fact that in trial-by-trial learning animals follow a mixture of two strategies: one which updates values in the space of actions, and one that keeps track of stimulus identity and statistics across trials for such learning. The trade-off between these model-free and model-based trial-by-trial learning during perceptual decisions remains to be explored in future studies.\n\nWhat are the neuronal substrates of confidence-dependent choice updating? Several lines of evidence indicate that the dopaminergic system is centrally involved in this phenomenon. First, dopamine neuron responses during perceptual decisions quantitatively match confidence-dependent prediction errors in both monkeys and mice (Lak et al., 2017; Lak et al., 2019). Second, dopamine responses predict the magnitude of the psychometric choice bias in the subsequent trial (Lak et al., 2019). Third, optogenetic\u00a0manipulation of dopamine neurons biases psychometric curves in a trial-by-trial fashion (Lak et al., 2019). In addition, different frontal cortical regions, medial prefrontal cortex (Lak et al., 2019) and orbitofrontal cortex (Hirokawa et al., 2019) are also likely to contribute to confidence-guided choice updating strategies.\n\n### Rewards induce choices bias in perceptual decisions\n\nThere is mounting evidence that in perceptual decision making tasks, even though reward is only contingent on accurate judgment about the current sensory stimulus, choices can be influenced by previous trials across species (Abrahamyan et al., 2016; Akaishi et al., 2014; Akrami et al., 2018; Braun et al., 2018; Busse et al., 2011; Cho et al., 2002; Fan et al., 2018; Fischer and Whitney, 2014; Fritsche et al., 2017; Fr\u00fcnd et al., 2014; Gold et al., 2008; Hwang et al., 2017; Lueckmann et al., 2018; Luu and Stocker, 2018; Marcos et al., 2013; Tsunada et al., 2019; Urai et al., 2017). Several such studies have shown that subjects might repeat the previously rewarded choice or avoid it after an unsuccessful trial, suggesting that basic forms of reward-based learning are at work even at asymptotic, steady-state perceptual performance. Given that these trial-history effects diminish the overall reward return, and are hence suboptimal, the question is why they persist even after subjects are well trained in the task? Our results showed a similar phenomenon across various data\u00a0sets and species that produced choice bias in perceptual decisions after rewarded decisions that were difficult, consistent with recent reports (Mendon\u00e7a et al., 2018; Lak et al., 2019). We show that these behavioral effects are normatively expected from various models that consider the uncertainty of stimulus states inherent in perceptual decisions. It is worth noting that the confidence-gauged learning described here requires observing the trial feedback, and it might thus differ from sequential choice effects in the absence of trial feedback (Braun et al., 2018;\u00a0Glaze et al., 2015). Moreover, confidence-dependent learning differs from trial\u00a0history-effects for highly discriminable stimuli, that\u00a0is \u201cpriming of popout\u201c\u00a0effect (Maljkovic and Nakayama, 1994). These observations\u00a0suggest that there are various types of selection-history mechanism operating in the brain with distinct constraints and properties.\n\n### Computational mechanisms of confidence-driven choices bias\n\nWhat classes of models can account for our behavioral observations? It is clear that a purely sensory-based model or a purely reward-based model cannot account for our data. One approach is to start with a reinforcement learning model and add a belief\u00a0state to account for stimulus-induced uncertainty (Lak et al., 2017; Lak et al., 2019). We show that this class of models provides teaching signal reflecting past confidence and accounts for the observed choice bias strategy. Alternatively, we also considered a statistical classifier model that on-line adjusts the decision boundary in proportion to estimated classification success (Sollich, 2002). We show that this Bayesian on-line support vector machine also accounts for the observed choice bias strategy. Similarly, Bayesian learning in drift-diffusion models of decision making also makes similar predictions about confidence-dependent choice biases (Drugowitsch et al., 2019). Thus, either a sensory-based classification model modified to produce statistically optimal adjustments based on on-line feedback, or a reward-based model modified to account for the ambiguity in stimulus states produce broadly similar confidence-dependent choice biases. These models share one main computation: they adjust the degree of learning based on the statistical confidence in the accuracy of previous decisions. Therefore, the key features of our data can be accounted for by either reinforcement learning mechanisms or on-line statistical classifiers.\n\nThese model classes can be distinguished chiefly on the basis of their respective decision variables: RL updates value, while classifiers update boundaries in sensory coordinates. Using a mixed sensory modality decision task it is possible to test whether updating is based on action values or stimulus variables. Actions value updating, predicted by RL models, leads to the transfer of choice bias across decisions with mixed sensory modalities. Category boundary updating in sensory coordinates, predicted by classifier models, leads to updating solely across the same sensory modality. We found that choice bias transferred across sensory modalities, suggesting that updating occurs in the space of action values. However, across-modality choice bias updating was weaker than within-modality updating, pointing to the possibility that animals update choices both based on stimulus statistics and action values.\n\n### All correct trials are alike; each incorrect trial is incorrect in its own way\n\nWhen learning from outcomes, it is natural to consider not only correct choices but also what happens after incorrect choices. Surprisingly, we found that post-error behavioral effects were highly variable across subjects and datasets, unlike the post-correct choice updating we observed.\n\nTo paraphrase Leo Tolstoy\u2019s famous opening sentence of the novel Anna Karenina: all correct trials are alike; each incorrect trial is incorrect in its own way. Correct perceptual performance requires appropriate processing and evaluation of the stimulus. In contrast there are many processes that can lead to incorrect performance without consideration of the stimulus, from inattention to lack of motivation to exploration. Indeed, in our behavioral data, the post-error behavioral effects were diverse, usually even within the same dataset.\n\nWe examined the RL model to gain insights into the possible origins of this post-error diversity. Note that the model\u2019s qualitative predictions about post-correct trials are largely independent of model parameters. In contrast, the predictions of the model for post-error trials depend on parameter settings, in part based on the balance in the sources of decision noise. When stimulus-noise was dominant there was little post-error updating. However, when the model\u2019s internal noise was high (e.g. large learning rate), it exhibited post-error updating. We found that individual subjects match these specific patterns but in fact the diversity in the data was greater, as expected, since the modeling framework does not take into account many relevant sources of decision noise, such as attentional lapses, lack of motivation or exploration, a multitude of processes that can all lead to errors.\n\nIdentifying the origin of decision noise is critical for the appropriate interpretation of any psychometric decision task. In the signal detection theory-based psychometric framework, negligible lapse rates and asymptotic psychometric slopes point to the interpretation that fluctuations in decisions are solely due to noise in perceptual processing. However, the ongoing learning mechanisms described here contribute to apparent fluctuations in the decisions, indicating that the contribution of sensory processing to decision noise may be often lower than previously thought (Zariwala et al., 2013). This ongoing learning might eventually go away after extended behavioral training yet we still observed signatures of this learning process in many subjects after 3\u20134 months of almost daily training.\n\n### Consilience of perceptual and reward-guided decisions\n\nChoice biases in perceptual decisions are typically considered maladaptive and suboptimal because in laboratory experiments trials are often designed to be independent from each other and isolate the perceptual process under study (Britten et al., 1992; Hern\u00e1ndez et al., 1997). Indeed, perceptual choice biases that are entirely stimulus-independent are suboptimal. However, the confidence-guided choice bias we examined could point to an underlying optimal choice strategy from various perspectives. First, this strategy is optimal when considering that the world can change, and hence the precise decision category boundary may not be stable over trials. In this situation, the outcome of decisions closer to the category boundary provide the most informative feedback as to where the category boundary should be set. Second, confidence-guided choice updating is optimal when considering that in natural environments external events can be temporally correlated. In such environments, when the evidence in favor of choice options is limited and hence there is uncertainty in decisions, it is beneficial to consider prior beliefs and the temporal statistics of events and adjust choices accordingly (Yu and Cohen, 2008). Thus, despite being suboptimal from the experimenter\u2019s perspective, confidence-guided learning can be optimal in dynamic, real world situations, revealing that perceptual and reinforcement learning processes jointly contribute to many previously studied decision paradigms.\n\n## Materials and methods\n\n### Data analysis and psychometric fitting\n\nFor the psychometric analysis, we calculated the percentage of choice as a function of sensory stimuli. We fitted these data with the psychometric function $\u03c8s=\\lambda+1-2\\lambdaFs;\\mu,\\sigma$ where $Fx$ is a cumulative Gaussian. The parameter \u00b5 represents the mean of the Gaussian and define the side bias. The parameter $\\sigma$ determines the slope of the fitted curve. The parameter $\\lambda$ represents the lapse rate of the curve. We fitted this function via maximum likelihood estimation (Wichmann and Hill, 2001).\n\nWe used the psychometric fits to evaluate whether the performance was substantially differed across days of testing in each subject. In addition, we computed conditional psychometric curves by computing the curves from a subset of trials, that\u00a0is those that were preceded by specific stimulus level, action direction and outcome in the previous trial. We used the same procedure as above for fitting these conditional curves.\n\nSubtracting the average performance (for each level of stimulus) from performance in the conditional curves for the same level of stimulus provided an estimate of choice updating, that\u00a0is the level of side bias for each stimulus (Figure 2). The size of these side biases was plotted in the heatmaps for each dataset.\n\nTo isolate trial-by-trial updating independent of possible slow\u00a0fluctuation in the choice bias, we estimated the slow side bias and subtracted it from the updating heatmaps (Figure 2, Figure 2\u2014figure supplement 1e, Figure 3). This procedure involved computing conditional psychometric curves after a subset of trials (with specific stimulus, action and outcome) as well as computing the conditional curves prior to these trials, plotting heatmaps for both these sets of curves, and subtracting the later heatmap from the former heatmap (Figure 2\u2014figure supplement 1e, Figure 3).\n\n### Behavioral models\n\n#### TDRL model with stimulus belief state\n\nIn order to examine the nature of choice updating during perceptual decision making, we adopted a reinforcement learning model which accommodate trial-by-trial estimates of perceptual uncertainty (Lak et al., 2017; Lak et al., 2019). In all our tasks, the subject can select one of two responses (often left vs right) to indicates its judgement about the stimulus (i.e. whether it belongs to category A or B, or left or right for simplicity). Knowing the state of the trial (left or right) is only partially observable, and it depends on the quality of sensory evidence.\n\nIn keeping with the standard psychophysical treatments of sensory noise, the model assumes that the internal estimate of the stimulus, $s^$, is normally distributed with constant variance around the true stimulus contrast: $p(s^|s)=N(s^;s,\\sigma^{2})$. In the Bayesian view, the observer\u2019s belief about the stimulus $s$ is not limited to a single estimated value $s^$. Instead, $s^$ parameterizes a belief distribution over all possible values of $s$ that are consistent with the sensory evidence. The optimal form for this belief distribution is given by Bayes rule:\n\n$$\np(s|s^)=\\frac{p(s^|s).p(s)}{p(s^)}\n$$\n\nWe assume that the prior belief about $s$ is uniform, which implies that this optimal belief will also be Gaussian, with the same variance as the sensory noise distribution, and mean given by $s^$: $p(s|s^)=N(s;s^,\\sigma^{2})$. From this, the agent computes a belief, that\u00a0is the probability that the stimulus was indeed on the right side of the monitor, $p_{R}=p(s>0|s^$), according to:\n\n$$\np_{R}(s^)=\\int_{0}^{\u221e}p(s|s^)ds\n$$\n\nwhere\u00a0$p_{R}$ represents the trial-by-trial probability of the stimulus being on the right side and $p_{L}=1-p_{R}$\u00a0similarly\u00a0represents the probability of it being on the left.\n\nThe expected values of the two choices L and R are computed as $Q_{L}=p_{L}V_{L}$ and\u00a0$Q_{R}=p_{R}V_{R}$, where $V_{L}$ and $V_{R}$ represent the stored values of L and R actions. Over learning these values are converging to a quantity just below the true reward size available in correct choices (Figure 3\u2014figure supplement 1c). To choose between the two options, we used an argmax rule which selects the action with higher expected value deterministically. Using other decision functions such as softmax did not substantially change our results (Figure 3\u2014figure supplement 1a). The outcome of this is thus the choice c (L or R), its associated confidence $p_{C}$, and its predicted value $Q_{C}$.\n\n$$\nQ_{C}={Q_{L}ifchoice=LQ_{R}ifchoice=R\n$$\n\nWhen the trial begins, the expected reward prior to any information about the stimulus is $V_{trialonset}=(V_{L}+V_{R})/2$. Upon observing the stimulus and making a choice, the prediction error signal is: $Q_{C}-V_{trialonset}$. After receiving the reward, $r$, the reward prediction error is $\\delta=r-Q_{C}$.\n\nGiven this prediction error, the value of the chosen action will be updated according to:\n\n$V_{C}\u2190V_{C}+\\alpha.\\delta$ where $\\alpha$ is the learning rate. For simplicity, the model does not include temporal discounting. Parameter values used in Figure 3 are: $\\sigma^{2}$=0.2 and $\\alpha$=0.5. Each agent received 500 trials per stimulus level (randomly presented to the model), and plots reflect averages across 1000 agents.\n\n#### TDRL models without stimulus belief state\n\nThe TDRL model without the belief state was largely similar to the model described above with one fundamental difference; computation of prediction error did not have access to the belief state used for choice computation. In other words, prediction errors are computed by comparing the outcome with the average value of chosen action, without consideration of the belief in the accuracy of that action.\n\nSimilar to the model above, the expected values of the two choices L and R are computed as $Q_{L}=p_{L}V_{L}$ and\u00a0$Q_{R}=p_{R}V_{R}$, where $V_{L}$ and $V_{R}$ represent the stored values of L and R actions. Over learning these values are converging to the average value of reward received in the past trials, that\u00a0is average performance in the task (Figure 3\u2014figure supplement 1c). To choose between the two options, we used an argmax rule which selects the action with higher expected value deterministically. The outcome of this is thus the choice (L or R), its associated confidence $p_{C}$, and its predicted value $Q_{C}$.\n\n$$\nQ_{C}={Q_{L}ifchoice=LQ_{R}ifchoice=R\n$$\n\nAfter receiving the reward, $r$, the reward prediction error is $\\delta=r-V_{C}$, where c is choice, as before. Given this prediction error, the value of the chosen action will be updated according to:\n\n$$\nV_{C}\u2190V_{C}+\\alpha.\\delta\n$$\n\nBecause $V_{C}$ does not reflect decision confidence, the prediction errors only reflect the presence or absence of reward, but are not modulated by the decision confidence (Figure 3\u2014figure supplement 1d). Thus, they drive learning based on past outcome but not past decision confidence. Note that prior to normalization, there is an apparent small tendency for this model to exhibit updating that depends on the difficulty of the previous choice (Figure 3c, left). This reflect the correlation of stored values across trials and transient regimes in these stored values that make it more probable to achieve two consecutive correct same-side difficult choice. However, after the normalization, the updating does not show any effect of previous difficulty, and merely reflects the presence or absence of reward in the previous trial (Figure 3c, right).\n\nAn extended version of this model is the one that includes multiple states: that\u00a0is one state for storing the average value of each stimulus level. In this model, reward prediction error can be computed in two ways: with or without access to the inferred state. The first scenario makes prediction errors independent of past difficulty. The second scenario has access to the inferred state and compares reward with the value of that state to produce confidence-dependent prediction errors. However, since the updates only impact the current state there is no learning expected for different (nearby) stimuli.\n\n### Modifications to include slowly drifting choice bias\n\nWe modified the TDRL model without the belief state to include slowly drifting side bias (Figure 3d). The bias over trials was defined as the moving average (across 50 trials) of $sint+A+B$, where A is the temporal noise over trials (drawn from a normal distribution, $N0,1$), and B is the amplitude noise (drawn from a normal distribution, $N0,1.$ On each trial, the bias (a negative or positive number), was added to $Q_{L}$, and choice was made by comparing $Q_{L}$ and $Q_{R}$, as described before. This induced drift causes a strong correlation across trials that influence choices. However, the normalization removes this correlation and the model shows an effect of past reward which is independent of the difficulty of the past stimulus.\n\n### Modifications to include with win-stay-lose-switch strategy\n\nWe incorporated a simple probabilistic win-stay-lose-switch strategy into the TDRL model without the stimulus belief state. To do so, in 10% of randomly chosen trial, the choice was determined by the choice and outcome of the previous trial, rather than comparing $Q_{L}$ and\u00a0$Q_{R}$. In these trials, the previous choice was repeated when the previous trial was rewarded (win-stay), or the alternative choice was reported if the previous trial was not rewarded (lose-switch).\n\n### On-line Bayesian support vector machine (SVM)\n\nThe SVM algorithm finds the decision hyperplane that maximizes the margin between the data points belonging to two classes. The margin refers to the space around the classification boundary in which there is no data point, that\u00a0is the largest minimal distance from any of the data points (Figure 4a). The data points falling on the margin are referred to as support vectors.\n\nFollowing the conventional form of a linear SVM, stimuli are represented as $x_{i}$ each representing the two odor components A and B, and $y_{i}\\in-1,1$ corresponding to different class labels reflecting dominant odor A or B in the stimulus. The algorithm finds the hyperplane in this feature space that separate the stimuli. Assuming that the classification is determined by the following decision function $fx=signwT.\u03d5x+b$, the classification hyperplane would be $w.x+b=0$, where $w$ is a weight vector and $b$ is an offset. Thus, data point $x$ is assigned to the first class if $fx=signwT.\u03d5x+b$\u00a0equals +1 or to the second class if $fx$ equals \u22121. In the simplest form (linear separability and hard margin), it is possible to select two parallel hyperplanes that separate the two classes of data, the distance between these hyperplanes is $2/\u2016w\u2016$, and hence to maximize this distance, $\u2016w\u2016$ should be minimized. In a more general form, the weights $w$ can be found by minimizing the following equation subject to the SVM constraints (i.e. no data point within the margin):\n\n$$\n\\frac{\\lambda}{2}\u2016w\u2016_{2}^{2}+\\sumi1\u2212y_{i}w^{T}x_{i}\n$$\n\nwhere $\\lambda$ is the optimization hyperparameter that determines the trade-off between increasing the margin size and ensuring that the $x_{i}$ lie on the correct side of the margin. The equation above thus ensures a tradeoff between classification errors and the level of separability.\n\nIn the online active form, weights can be iteratively adjusted. In this form, is updated iteratively according to\n\n$$\nw={w+\\alpha(\u2212\\lambdaw+yx)ifyw^{T}x<1w\u2212\\alpha\\lambdaw\u00a0ifyw^{T}x>=1\n$$\n\nwhere $\\alpha$ is a learning rate. In Bayesian SVMs the size of the margin for one data point is proportional to the likelihood of that point belonging to a class given the classifier. Thus, the posterior class probabilities, $P(y_{i}=+1|x_{i},D)$, can be obtained by integrating over the posterior distribution of $w$ and $b$ after appropriate normalization. This quantity is proportional to the statistical decision confidence, that\u00a0is an estimate of confidence about which odor mixture component predominates (Figure 4b). In simulation presented in Figure 4, we used $\\alpha=0.15$ as the learning rate for updating of weight vector and the $\\sigma^{2}$=0.25 for underlying noise level of stimuli to be classified. Each agent received 500 trials per stimulus level (randomly presented to the model), and plots reflect averages across 1000 agents.\n\n### Behavioral experiments\n\nThe experimental procedures were approved by Institutional committees at Cold Spring Harbor Laboratory (for experiments on rats), MIT and Harvard University (for mice auditory experiments) and were in accordance with National Institute of Health standards (project ID: 18-14-11-08-1). Experiments on mice visual decisions were approved by the home Office of the United Kingdom (license 70/8021). Experiments in humans were approved by the ethics committee at the University of Amsterdam (project ID: 2014-BC-3376).\n\n### Rat olfactory experiment\n\nThe apparatus and task have been described previously (Hirokawa et al., 2019; Kepecs et al., 2008; Uchida and Mainen, 2003). The apparatus was controlled using PulsePal and Bpod (Sanders and Kepecs, 2014) or with the BControl system (https://brodylabwiki.princeton.edu/bcontrol/index.php?title=Main_Page). Rats self-initiated each experimental trial by introducing their snout into the central port where odor was delivered. After a variable delay, drawn from a uniform random distribution of 0.2\u20130.5 s, a binary mixture of two pure odorants, S(+)\u22122-octanol and R()\u22122-octanol, was delivered at one of six concentration ratios (80:20, 65:35, 55:45, 45:55, 35:65, 20:80) in pseudorandom order within a session. In some animals we also used ratios of 100:0 and 0:100. After a variable odor sampling time up to 0.7 s, rats responded by withdrawing from the central port, and moved to the left or right choice port. Choices were rewarded with 0.025 ml of water delivered from stainless tube inside of the choice port according to the dominant component of the mixture, that is, at the left port for mixtures A/B\u00a0>\u00a050/50 and at the right port for A/B\u00a0<\u00a050/50. The task training for these data and other dataset presented here focused on achieving high accuracy and did not specifically promote the confidence-dependent choice bias we have observed.\n\n### Rat auditory experiment\n\nRats self-initiated each trial by entering the central stimulus port. After a random delay of 0.2\u20130.4 s, auditory stimuli were presented. Rats had to determine the side with the higher number of clicks in binaural streams of clicks (Brunton et al., 2013; Sanders et al., 2016; Sanders and Kepecs, 2012). Auditory stimuli were Poisson-distributed click trains played binaurally at the two speakers placed outside of the behavioral box for a fixed time of 0.25 s. For each rat, we chose a maximum click rate according to the performance of the animal, typically 50 clicks/s. This maximum click rate was fixed for each animal. For each trial, we randomly chose a delta click rate between left and right from a uniform distribution between 0 and maximum click rate. The sum of the left and right click rate was kept constant at maximum click rate. Rats indicated their choice by exiting the stimulus port and entering one of two choice ports (left or right) with a maximum response time of 3 s after leaving the stimulus port. Choices were rewarded according the higher number of clicks presented between the left and right click train. Exiting the stimulus port during the pre-stimulus delay or during the stimulus time (first 0.25 s) were followed by a white noise and a time out of 3\u20137 s.\n\n### Rat randomly\u00a0interleaved auditory-olfactory experiment\n\nRats self-initiated each trial by entering the central stimulus port. After a random delay of 0.2\u20130.4 s, either an olfactory or auditory stimulus was presented (randomly interleaved). For olfactory stimuli, rats had to determine the dominant odor of a mix of pure odorants +2-octanol and \u20132-octanol. Odor stimuli were delivered for at least 0.35 s or until the rat left the center port (max. 3 s). Odor mixtures were fixed at seven concentration ratios, which we adjusted to match the performance levels for each mixture ratio across animals, as described above in the rat olfactory experiment. One of the stimuli was a 50/50 ratio stimulus for which correct side is randomly assigned and those trials were removed from the analysis. After a variable odor sampling time, rats exited the stimulus port, which terminated odor delivery, and indicated their choice by entering one of two choice ports (left or right) with a maximum response time of 3 s after leaving the stimulus port. Choices were rewarded according to the dominant odor component in the mixture. For auditory stimuli, rats had to determine the side with the higher number of clicks in binaural streams of clicks. Auditory stimuli were random Poisson-distributed click trains played binaurally at the two speakers placed outside of the behavioral box for a fixed time of 0.25 s, as described above for the rat auditory experiment. Exiting the stimulus port during the pre-stimulus delay or during the stimulus time (first 0.35 s for olfactory trials) were followed by a white noise and a time out of 3\u20137 s. Choices were rewarded according the higher number of clicks presented between the left and right click train. Reward timing was sampled from a truncated exponential distribution: minimum reward delay was 0.6 s, maximum delay 8 s and decay tine constant of 1.5 s.\n\n### Mouse auditory experiment\n\nMice were water restricted for a week (administered 1.2 ml of water in a single session per day), handled for 2 days and then gradually shaped for 5\u20137 sessions to the contingencies of a two-alternative choice paradigm and subsequently trained to discriminate two complex stimuli before introducing 6 morphs of those stimuli. Trials were self-initiated upon the breaking of an infrared beam by a nose poke into the center port of three adjacent ports. Once mice remain in the center port over 0.2 s, mice were presented with one of two complex tones, following a 0.2\u20130.5 s delay (uniformly distributed). Auditory cues were presented until the mouse exited the center port. If a mouse entered the correct side port within 4 s, a 4 \u00b5l water drop was delivered from gravity-fed reservoirs regulated by solenoid valves. Trials in which mice did not remain in the center port long enough to elicit a cue were not considered valid trials and are not represented in our analyses. During the training period only, error trials were followed by a progressively increasing 3\u201310 s timeout in order to prevent rapid guessing. During initial training of the task, two complex tones were used for training. These are comprised of three tones centered on 3 kHz and three tones centered on 7.5 kHz, all components share base frequency of 1.5 kHz. These two training tones are described as 0 and 100 (%A) stimuli, respectively. In the perceptual decision-making task, each of the 36 complex tones varied in the balance of 6 components of Tones A and B. To vary discrimination difficulty, we varied the amplitude ratio of the two spectral peaks (3 kHz and 7.5 kHz). Morph tones comprised six sets of auditory stimuli described here as percentages of a high- and low-frequency complex tone, morph A and morph B, respectively. Each of six sets is comprised of six similar stimuli with percentages in terms of morph A of 5\u201310, 25\u201330, 35\u201340, 60\u201365, 70\u201375, 90\u201395. We thereby challenged mice with a variety of 36 stimuli, and were able to pool members of each stimulus set for the analysis. Stimuli were delivered through generic electromagnetic dynamic speakers located on each side of the behavior chamber.\n\n### Mouse visual experiment\n\nMice were trained in a 2-alternative forced choice visual detection task (Burgess et al., 2017). After mouse kept the wheel still for at least 0.5 s, a sinusoidal grating stimulus of varying contrast appeared on either the left or right monitor, together with a brief tone (0.1 s, 12 kHz) indicating that the trial had started. The mouse could immediately report its decision by turning the wheel located underneath its forepaws. Wheel movements drove the stimulus on the monitor, and a reward was delivered if the stimulus reached the center of the middle monitor (a successful trial), but a 2 s white noise was played if the stimulus reached the center of the either left or right monitors (an error trial). The inter trial interval was set to 3 s. As previously reported, well-trained mice often reported their decisions using fast stereotypical wheel movements (Burgess et al., 2017). After 2\u20133 weeks of training, the task typically included 6 or 7 levels of contrast (three on the left, three on the right) which were presented in a random order across trials with equal probability.\n\n### Human visual experiment\n\nThe experiments are described in detail in Urai et al. (2017). Observers performed a two-interval forced choice motion coherence discrimination task at constant luminance. Specifically, observers judged the difference in motion coherence between two successively presented random dot kinematograms (RDKs): a constant reference stimulus (70% motion coherence) and a test stimulus (varying motion coherence levels specified below). A beep indicated the onset of each (test and reference) stimulus. The intervals before, in between, and after (until the inter-trial interval) these two task-relevant stimuli had variable duration and contained randomly moving dots. After offset of the test stimulus, observers had 3 s to report their judgment (button press with left or right index finger, counterbalanced across observers). After a variable interval (1.5\u20132.5 s), a feedback tone was played. Dot motion was stopped 2\u20132.5 s after feedback, with stationary dots indicating the inter-trial interval, during which observers were allowed to blink their eyes. Observers self-initiated the next trial by button press. The difference between motion coherence of test and reference was taken from three sets: easy (2.5, 5, 10, 20, 30), medium (1.25, 2.5, 5, 10, 30) and hard (0.625, 1.25, 2.5, 5, 20). All observers started with the easy set and were switched to the medium set when their psychophysical thresholds (70% accuracy) dropped below 15%, and to the hard set when thresholds dropped below 10%, in a given session. Motion coherence differences were randomly shuffled within each block.\n",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "ab22b099-c4ca-44e3-82dd-34d8a64ef95e",
+      "submission_id": "f6dcfc7e-0739-47e8-a58f-e9c6025fedec",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emilio Salinas, Wake Forest School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49834.sa1](https://doi.org/10.7554/eLife.49834.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study investigates how past choice history influences decisions that, in principle, should be guided just by currently available sensory information. It combines two classic approaches, perceptual decision making and reinforcement learning, to show that the success of prior choices and the quality of the perceptual information guiding them are automatically tracked, and that both factors are used to bias upcoming choices that are difficult, i.e., those for which the quality of the sensory information is poor and the subject is largely guessing. The effect is robust across sensory modalities, species, task details, and labs. It explains an important source of variance in behavior.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"Confidence-guided updating of choice bias during perceptual decisions is a widespread behavioral phenomenon\" for peer review at eLife. Your article has been evaluated by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Frank as the Senior Editor.\n\nAll reviewers found the work interesting and appealing. However, some potentially\n\nserious issues were identified that could undermine the main conclusions. The full set of recommendations is below. Please focus your revisions on points 1, 2, and 4, which are most critical.\n\nEssential revisions:\n\n1) The first major concern is in regard to a claim made throughout the paper, namely that how easy or hard the current stimulus is affects the strength of the modulation. This is first presented in Figures 1F and 1G, and then repeated in almost all the figures. However, the measure presented in figures of the style of Figure 1F and summarized in Figure 1G is the% change in responses (given a particular current and previous stimulus, and relative to the overall average for that stimulus). This measure suffers from a large problem that, unfortunately, appears to not be addressed (apologies if it was missed on reading): there is a ceiling effect, in the sense that when a choice is easy (near 100%) it cannot increase further, even if there were strong underlying plasticity. The ceiling applies preferentially to easy stimuli, and therefore will manifest as a difference between easy and hard stimuli. It is currently impossible to tell whether the data shown in support of the claim of \"current stimulus strength modulates effect\" is merely an artifact resulting from this ceiling issue, or an actual finding. It is very important that the authors clarify this issue.\n\n2a) Another key claim is that only the model with a belief state could account for the results. But the data are not convincing. Let's start with a TD model, without learning of actions, merely learning the values VR and VL, and let's suppose the value of VR is modified only after R choices (and similarly for VL and L choices). Under these conditions (and assuming R-L symmetry) VR and VL will converge to the overall% correct. This will be more than 50%; for a typical smooth psychometric curve it might be 75% or 80%. Now move to a TDRL model that also learns actions: because there are more errors for hard stimuli, the error signal (VC \u2013 r) will, on average, be greater for hard stimuli than for easy stimuli. And therefore, in this situation, there will on average be greater plasticity after hard stimuli than after easy stimuli, entirely without a belief state. Could this not account for the authors' experimental data?\n\nThe situation and conclusion sketched here could be wrong. But readers are likely to think about it and wonder whether it undermines the authors' conclusions. Thus, explicitly addressing this argument, and whether it is qualitatively or quantitatively incorrect, would strengthen the manuscript.\n\n2b) A related concern is that, if we understand correctly, the model produces only step-function psychometric curves: for a given stimulus s, the response is deterministic, and when VR = VL, the model would produce 100% correct behavior. This might seem unimportant, since the details of the shapes of psychometric curves are not the focus of the manuscript, and replacing the distribution-based model with one that uses noisy samples might seem a trivial change. However, distinguishing between hard and easy trials is central to the arguments in the manuscript, and the corresponding difference in error rates might easily become important (as in the situation sketched in point 2a above). So a model that produces smooth psychometric functions (as opposed to step-shaped) might be important after all (and at least cosmetically would be an obviously better match to the data).\n\n2c) The authors posit that the subjects use an internal measure of decision confidence to update their decision policy. In support of this claim, they show that a qualitatively similar modulation can be produced by a temporal difference reinforcement learning (TDRL) model with prediction errors based on perceived stimulus strength. In this model, the prediction errors are used to update the stored value of each choice. We found this model design counterintuitive. It seems that an equivalent model could be constructed in which prior stimulus probabilities (pR and pL) are updated instead. This would be more consistent with the fact that the animal always receives the same amount of reward on rewarded trials, but may have uncertainty about exactly where to set the decision boundary leading to trial-to-trial updating. It would be helpful if the authors reformulated their model, or explained why reward values are being updated rather than reward probabilities.\n\n2d) The Bayesian model that updates stimulus statistics seems to ignore which choice was made in the previous trial or whether it was correct. That is, there is a built-in handicap of no feedback, compared to the confidence-based models. How much does this \"handicap\" contribute to the poor match between model predictions and data in Figure 9A?\n\n2e) Model predictions should be comparable to real data. In Figure 2, the plots for rats' average performance show three levels of previous stim (%A) for each direction, more or less evenly distributed. In Figure 3, however, previous stim (%A) are 20, 50 and another value very close to 50. Does the model performance depend on the stimulus strength used? The same stimulus strengths used in behavioral testing should be used for model predictions.\n\n2f) Parameter values used to generate Figure 3 should be reported.\n\n3) More detail and clarity are needed regarding the description of the basic phenomenon (e.g., sorting and analysis of the shown quantities). The Materials and methods section should include a brief section on how the psychophysical results were generated. That could include all the details of what was conditioned on what, as well as how the trials were divided into \"Hard\" and \"Easy\".\n\nMany of the key figures depict \"updating% \" and \"updating index.\" These terms should also be mathematically defined in the Materials and methods.\n\nThe equation used to fit the bias, lapse, sensitivity of psychometric curves should also be presented in the Materials and methods. These parameters are said to be \"stable.\" What is the criterion for determining stability?\n\nAlso, the trial nomenclature and labels used in Figure 2 (e.g., \"Next\" and \"Previous\") were confusing.\n\nDo subjects also show adjustments of sensitivity after correct trials? Would a change in sensitivity contribute to the observed confidence dependence (e.g., if the psychometric curves are shallower, the difference in choice might appear larger for difficult trials)?\n\n4) What happens after errors? The results demonstrate an effect akin to a win-stay strategy but limited to \"guesses\" only. Is there also a trend toward the corresponding lose-switch strategy? That is, when the choice in trial n-1 is difficult and not rewarded, is the subject more likely to choose the alternative option in trial n (when such decision is also difficult)? There is no obvious reason to expect that confidence-guided choice updating would not also happen after errors, but in any case, error trials should not simply be put aside. The authors should present an analysis of error trials and if they do not see the effect predicted by the model, should propose an explanation for the inconsistency. Other work from the same first author (Lak et al., 2017), presented an alternative TDRL model without the \"belief state,\" which seemed to have qualitatively similar results for correct trials but divergent results for errors. It seems that error trials are needed again in order to rule out this other model.\n\n5) Related to this: \"The choice updating remained statistically significant even after this correction.\" True, but the effect did seem to get a bit weaker. I imagine this is because the history effects are not limited to one trial in the past, but possibly more. If so, you would expect the effect to become stronger when the current difficult choice is preceded by two rewarded guesses made in the same direction. Whether the trend is weak or not, it could be compared to the model's prediction.\n\n6) The transfer of choice updating across modalities is interesting. Comparing Figure 2, 4C, and 8D, it seems that the updating is larger on pure olfactory tasks and about the same for the pure auditory or mixed tasks (this is more obvious in Figure 10). I assume the rats have different sensitivity to olfactory and auditory stimuli. Then the difference seems to contradict the statement that \"updating is guided by outcome expectations, rather than stimulus statistics\". How much updating was there for trials in the mixed modality task but without modality switches?\n\n7) Figure 10B and C should show scatterplots separately for each task. The authors' hypothesis is that updating is independent of stimulus statistics. If this is true, it makes sense to pool data across tasks. However, if the alternative is true that updating depends on certain properties of sensory stimulus, i.e., there could be different relationships between updating and slope/lapse, which could be obscured by pooling across tasks. A more direct test would be to fit the model to one task and predict results for the other tasks.\n\n8) In Introduction and Discussion, the authors seem to suggest that this phenomenon persists after training is completed or after the subjects performed the task for extended periods and thus may reflect some optimal strategy. Was the training specifically targeting the suboptimal bias? Or is it possible that the subjects just settled on a suboptimal strategy that satisfies the training requirements? It might be useful to clarify what criteria were used to deem these subjects \"well-learned\".\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your article \"Confidence-guided updating of choice bias during perceptual decisions is a widespread behavioral phenomenon\" for consideration by eLife. Your revised article has been reviewed by three peer reviewers, including Emilio Salinas as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Michael Frank as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Carlos D Brody (Reviewer #2); Long Ding (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript presents interesting, important data characterizing how past choice history influences decisions that, in principle, should be guided just by currently available sensory information. The results show that the success of prior choices and the quality of the perceptual information guiding them are automatically tracked, and that this information is used to bias upcoming choices that are difficult, i.e., for which the quality of the sensory information is poor and the subject is largely guessing. The work is significant because the phenomenon seems robust across sensory modalities, species, task details, and labs, and because the modeling results provide insight into the underlying associative mechanisms responsible for the biasing effects.\n\nEssential revisions:\n\nThe paper is significantly improved, and the reviewers are now convinced that it contains important work that should be published. Nevertheless, the presentation of the data is still confusing, and some further clarifications would substantially strengthen the manuscript.\n\n1) Explaining more in detail the fundamental difference between the standard TDRL model and the belief model would be important. Specifically, the updating that they generate during easy trials, and how that updating depends on reward, could be the critical reason why the standard TDRL model fails.\n\n2) The control analysis that corrects for potential slow drifts in the internal categorical boundary may also be implicitly addressing a separate issue (whether the shifts in the psychometric curve depend on the previous trial outcome, i.e., rewarded vs. not rewarded). Making this distinction explicit would be helpful.\n\n3) The zig-zag patterns of the main data plots can be confusing because sometimes it is unclear what matters, the slope, the discontinuity, or both. Some suggestions for modifying the plots are provided below. That and/or additional text to guide the reader to the relevant features of the data would be helpful.\n\n4) Figure 4 is a very nice addition to the manuscript. However, the results do differ somewhat from the data and from those of the belief model. Does this simply reflect a fundamental, qualitative difference between the classifier and the other models? It would be helpful to clarify whether the classifier has parameters that can be adjusted.\n\nDetails about each of these points are provided below.\n\nReviewer #2:\n\n1) Figure 3 TDRL model: In the previous round of review, we (the reviewers) presented an argument as to why the TDRL model would lead to updating that depended on previous trial difficulty. The authors replied that this model results \"in updating which is independent of previous difficulty.\" I believe that response is simply not true: in Figure 3C left, one can clearly see a non-zero slope to the updating% on hard trials. (And Figure 3C right worries me no end: since in the TDRL model there are no slow side biases independent of outcome, I am unsettled by the correction for such biases changing the results of the model.) [Note that doing the zig-zag plots in the style suggested below for Figure 1G would focus the eye on that slope much better.] What am I supposed to focus on? That the slope is less than in the belief model? That the belief model reaches zero updating for the easiest previous trials?\n\nI spent a lot of time trying to think this one through \u2013 if the TDRL model could indeed be described as accounting for the data, that would be a pretty bad hit at the heart of the manuscript \u2013 and eventually hit upon something that I think could help the authors. Assuming I'm not getting this wrong, perhaps the authors had already thought of this, but either way, the suggestion is that it might be clarifying to have it in the manuscript. Here's the idea: in the TDRL model, VL and VR converge onto the average reward given when the subject chooses those ports, where the average is over both correct and incorrect trials. In other words, VL and VR are the value of the port, averaged over all trials. But in the belief model, VL and VR converge onto the value of the reward when a reward is given. Not an average over all trials, but conditioned on the reward having been given. Thus if the reward r = 1, in the belief model, VL and VR will converge on 1. And that means that for very easy trials, the reward prediction error will be zero, and the updating will be zero. In contrast, in TDRL they will converge on something like 0.8; and thus even on very easy correct trials there will be a non-zero RPE and non-zero updating. I may have gotten this wrong, but if it is correct, there are two interesting things here: (a) the difference on what VL and VR converge to in the two cases, in the sense of one being reward averaged over errors and corrects, the other being average reward conditioned on trials being correct; (b) I believe the real difference between TDRL and belief is not that TDRL has a zero slope for updating versus previous stimulus (the non-zero slope is right there in Figure 3C). It is that TDRL will never have zero updating for the easiest stimuli, whereas the belief model will.\n\nWhile on this topic: don't Figure 9E and 9H look more like TDRL in Figure 3 than like the belief model? Why are they being interpreted as supporting the belief model?\n\n2) Subsection \u201cChoice updating is not due to slow drift in choice side bias\u201d: This confused me the second, the third, and the fourth time I read it. Eventually I realized that there may be two issues being treated simultaneously here. I think things would be a lot clearer if you separated them. Issue (a) is \"are shifts in the psychometric curve contingent on the previous trial's outcome?\" Issue (b) is \"are there slow drifts in the decision boundary that would induce correlations across trials that would make one trial appear to depend on the previous one\"? The thing that confused me is that to solve issue (a), the obvious and easiest thing is to compare two psychometric curves, both conditioned on a previous stimulus p, according to the previous trial's outcome, i.e., whether the previous trial was rewarded or not. That would be a really easy plot to make, understand, and interpret: if previous trial's outcome matters, it will be obvious. Why not add it to the paper?\n\nIssue (b) is also interesting. The approach in Figure 2 addresses issue (b). If this section and figure were described as focused on issue (b), it would be a lot easier to understand.\n\n3) Figure 3 model: the full model really needs to be fully explained, in the main text. Please use equations. In particular, while the sentences \u201cNote that although the choice computation is deterministic, the same stimulus can produce left or right choices caused by fluctuations in the percept due to randomized trial-to-trial variation around the stimulus identity (Figure 3\u2014figure supplement 1)\u201d is a welcome addition, it is not enough. Please specify, in the main text, how pR and pL are computed. Note that the integral in subsection \u201cTDRL model with stimulus belief state\u201d needs to specify what you're integrating with respect to (it needs a \"ds\"), this would make it clear that pR is a function of \u015d, which is itself a random variable drawn anew on each trial. I suggest that you make this explicit in the equation, by writing the left-hand-side as pR(\u015d). (Note that I'm suggesting you bring this integral and some of the description into the main text.)\n\n4) In the previous round, we requested substantial clarifications for panels of the type of Figure 1F and 1G. Even with the clarifications provided, I still find these panels hard to read.\n\n\u2013 Figure 1F: this should be explained in a way that readers can understand without having to trawl through the Materials and methods. Here's my current understanding: (a) you plot the average psychometric curve; (b) you plot the psychometric curve conditioned on a particular previous trial stimulus p; (c) for each current stimulus c, you compute the vertical distance between those two curves, and that is what you call \"updating\".\n\nWhy not show this graphically directly, to make it easy for readers to understand? That is, something along the lines of: add a panel to Figure 1 where you show the average curve and the curve conditioned on p, add arrows pointing to the vertical differences between those two curves, and add an arrow from there to Figure 1F to indicate that these two particular curves and the vertical shift between them are what become column pFigure 1F.\n\nAmong other things, this would make it obvious why, if the psychometric curves asymptote at 0% and 100%, updating is necessarily going to be small for easy current stimuli. Which is why I don't like the plot of Figure 1F so much: the eye gets drawn to the dominant pattern, which is that the top and bottom row are lighter than the middle rows. But that's the unimportant part, that's the \"expected\" part, as the authors now write. The important part is happening in the middle rows. Could the authors think of a display format that focuses the eye on that, on the middle rows, instead of the already-expected parts?\n\n\u2013 Figure 1G: The zig-zag pattern confused me no end. What is it that I'm supposed to focus on here? The difference between easy and hard? The fact that the pattern is antisymmetrical? The slope on the hard stimuli?\n\nIt eventually dawned on me that the \"A\" response and \"B\" response are of course anti-symmetrical with each other. For a model which has no intrinsic side bias, this has to be true. And there appears to be no systematic, overall, side bias across the experimental rat data in the paper. So the zig and the zag are actually redundant with each other.\n\nI would therefore suggest the following: collapse the two with each other (the zig and the zag), which gives you better statistics, and in addition focuses the eye on the important parts, not the antisymmetry. In other words, instead of plotting as a function of previous odor A% , plot (% updating towards correct side) as a function of |A% \u2013 50|. By halving the x and y axes, that would also allow you to zoom in by 2x, so readers can see the data better. (An added suggestion would be to plot the easy trials in a light grey, to emphasize that it's in the hard trials that the action is.) And then you'd have a plot that, at a single glance, tells the reader \"there is bigger updating for harder stimuli\".\n\nReviewer #3:\n\nThe authors addressed my earlier concerns. But their new data raised a new concern:\n\nI think it is good of the authors to try another class of models to explain the data. However, the predictions of the statistical classifier in Figure 4D differ from experimental data in Figure 1G in three aspects: (1) there appears to be a strong dependence on previous stimul us strength for easy choices; (2) perhaps as a consequence, there is a large jump in Updating% going from green to blue at% A = 50; and (3) the range of updating% is only about half of the experimental data. It is hard to judge if these differences represent fundamental deficits of the model or just wrong parameterization. Because this model is not as intuitive as the RL model in Figure 3B, it would be helpful if the authors can expand this section (or add a supplemental figure) to give the readers a sense of how varying each model parameter changes the predictions.\n",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d1a99ebf-df93-4254-be2f-120925cf0bcb",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C1",
+      "claim": "Past rewards bias future choices specifically when previous choice was difficult and decision confidence was low.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the effects of reward on perceptual decisions are principled: past rewards bias future choices specifically when previous choice was difficult and hence decision confidence was low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central finding stated in the abstract, supported by data across multiple experiments shown in Figures 1-9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "6a987926-a6b4-4b48-b359-5ebf18fc15ca",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C2",
+      "claim": "This confidence-dependent choice updating phenomenon was identified in six datasets from four laboratories, across mice, rats, and humans, and sensory modalities from olfaction and audition to vision.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified this phenomenon in six datasets from four laboratories, across mice, rats, and humans, and sensory modalities from olfaction and audition to vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data from rat olfactory (Figure 1), rat auditory (Figure 5), mouse auditory (Figure 6), mouse visual (Figure 7), human visual (Figure 8), and rat cross-modality (Figure 9) experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "e7a93432-dbd1-4ee7-8120-0b373f509793",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C3",
+      "claim": "Reinforcement learning models incorporating statistical decision confidence into their teaching signals can explain this choice-updating strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this choice-updating strategy can be explained by reinforcement learning models incorporating statistical decision confidence into their teaching signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents TDRL models with belief states (Figure 3) that successfully reproduce the observed choice updating patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "c6de747c-e415-4775-8f85-ebd6a263a026",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C4",
+      "claim": "Reinforcement learning mechanisms are continually engaged to produce systematic adjustments of choices even in well-learned perceptual decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, reinforcement learning mechanisms are continually engaged to produce systematic adjustments of choices even in well-learned perceptual decisions in order to optimize behavior in an uncertain world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the observation that choice updating persists even after extensive training (3-4 months) and at asymptotic performance levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "1d47baca-5b0c-43e2-a69c-0d221a8b732d",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C5",
+      "claim": "Rats trained on olfactory decision tasks showed near-zero bias and low lapse rates after task learning.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in well-trained rats, the bias was near zero (2\u00b14.6 %Odor A (mean\u00b1 S.D), p = 0.08, signed rank test). Likewise, lapse rates were low (3\u00b14%), indicating that for easy stimuli rats' performance was near perfect and not substantially degraded by attention or incomplete learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of psychometric fits from rat olfactory experiments (n=16 rats).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "904b2191-e43b-4594-b5fa-cc12ce6b5fee",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C6",
+      "claim": "Lapse rate, sensitivity and bias remained stable over sessions in well-trained rats, indicating asymptotic performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Lapse rate, sensitivity and bias remained stable over sessions, indicating that rats reached asymptotic performance (Figure 1b, 14/16 rats, p > 0.1, linear regression).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Linear regression analysis across sessions for 14/16 rats showed no significant trends, as illustrated in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "a200ccfe-6eed-46cd-b353-f664d6ce0230",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C7",
+      "claim": "After correct leftward choices, rats tended to make left choices, and after correct rightward choices, rats made rightward choices more often.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychometric functions were systematically biased by previously rewarded choices: after correct leftward choices rats tended to make a left choice. Conversely, following correct rightward choices, animals made rightward choices more often (F = 29.8, p=0.001, 2-way ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of conditional psychometric functions based on previous choice direction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "ca7b4369-2343-4ffb-9dd7-55ac0fb84df0",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C8",
+      "claim": "Rats tended to repeat their previous choices particularly when they succeeded to correctly categorize a challenging odor mixture and earn reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats tended to repeat their previous choices particularly when they succeeded to correctly categorize a challenging odor mixture and earn reward (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of conditional psychometric curves separated by difficulty of previous stimulus, shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "8c842fe1-ac48-4fea-9fac-8ca92621c1af",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C9",
+      "claim": "When the current stimulus was easy, choice updating was minimal regardless of the difficulty of the previous decision.",
+      "claim_type": "EXPLICIT",
+      "source": "Updating was minimal when the current stimulus was easy, regardless of the difficulty of the previous decision (Figure 1g, squares).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative analysis shown in Figure 1g comparing updating for easy vs difficult current trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "666811ca-7bb3-4a99-8168-d59fdc3a2521",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C10",
+      "claim": "When the current stimulus was difficult, updating was minimal after correct easy choices but strong following correct difficult choices.",
+      "claim_type": "EXPLICIT",
+      "source": "When the current stimulus was difficult, updating was also minimal after correct easy choices, whereas it was strong following correct difficult choices (Figure 1g, circles, p=0.0002, rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of updating magnitude for difficult current trials following easy vs difficult previous trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "85559343-89b0-49d5-ae84-1eee91b571db",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C11",
+      "claim": "The difficulty of previous decision did not influence the slope (sensitivity) nor the lapse of psychometric curves in the next trial.",
+      "claim_type": "EXPLICIT",
+      "source": "The difficulty of previous decision did not influence the slope (sensitivity) nor the lapse of psychometric curves in the next trial (p>0.1 rank sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of psychometric parameters conditional on previous trial difficulty.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "30f40ad0-73a1-4326-8a13-515924e6d043",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C12",
+      "claim": "Slow fluctuations in decision boundary can produce apparent choice updating that is not specific to stimulus and outcome of the previous trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Slow non-specific drift in choice bias, visualized here as drift in the decision boundary, could lead to shift in psychometric curves which persisted for several trials and was not specific to stimulus and outcome of the previous trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results from signal detection theory model with drifting boundary (Figure 2b, Figure 2\u2014figure supplement 1c,d).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "f1985a94-90df-49ce-81a0-2c1f7f98aba9",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C13",
+      "claim": "Trial-by-trial updating of decision boundary shifts psychometric curves depending on the outcome and perceptual difficulty of the preceding trial in a way that is not cancelled by subtraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Trial-by-trial updating of decision boundary shifts psychometric curves depending on the outcome and perceptual difficulty of the preceding trial. Subtracting psychometric curves does not cancel this effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conceptual explanation illustrated in Figure 2c showing how active learning differs from slow drift.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "ae6352f5-146c-4cc7-a67c-ab40326fe16b",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C14",
+      "claim": "The choice updating effect remained statistically significant after correcting for slow fluctuations in side bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The choice updating effect remained statistically significant even after this correction (p=0.003, rank sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test after applying normalization procedure to remove slow bias fluctuations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "3d940eeb-01f5-46e5-859c-9ad10a1d60cb",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C15",
+      "claim": "A reinforcement learning model with a belief-state representing ambiguous perceptual stimuli accounts for choice updating.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a reinforcement learning model with a belief-state representing ambiguous perceptual stimuli accounts for choice updating (Figure 3a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model simulations shown in Figure 3a,b demonstrate that the TDRL model with belief states reproduces the observed choice updating patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "bc625f17-3be0-4db4-931a-d360ffbe50bb",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C16",
+      "claim": "In the belief-based TDRL model, rewards received after difficult, low confidence choices lead to large reward prediction errors and strong updating of decision values in the next trial.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model, the rewards received after difficult, low confidence, choices lead to large reward prediction errors and hence the strong updating of decision values in the next trial (Figure 3a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model mechanics illustrated in Figure 3a showing how prediction errors scale with confidence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "a6ad8ee9-7196-445c-9d14-51b298a3f15a",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C17",
+      "claim": "Classical TDRL models following a Markov decision process (MDP) without belief states do not exhibit confidence-guided choice updating.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MDP TDRL models (i.e. TDRL without a stimulus belief state) do not exhibit confidence-guided choice updating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model simulations shown in Figure 3c demonstrate that MDP TDRL models show updating independent of previous trial difficulty.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "215516d8-be17-4adb-95f3-8bdbc2621003",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C18",
+      "claim": "An MDP TDRL model with slowly fluctuating response side bias does not show trial-by-trial choice updating after normalization.",
+      "claim_type": "EXPLICIT",
+      "source": "This reveals that slowly fluctuating side bias in TDRL models without a belief state does not result in confidence-guided choice updating, despite apparent trial to trial fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model simulations shown in Figure 3d demonstrate that normalization removes apparent updating in MDP TDRL with drift.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "7e36bcd7-d8da-4dee-9d9c-5f51afdd88d3",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C19",
+      "claim": "An MDP TDRL model with win-stay strategy shows updating effects independent of choice difficulty after normalization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it does not remove the signatures of win-stay / loose-switch behavior (Figure 3e). Thus, in this model variant the effect of past rewards is independent of the difficulty of the previous choice, differing from the rat data in which the size of the bias induced by previous reward is proportional to the difficulty of the previous decision.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model simulations shown in Figure 3e demonstrate that win-stay strategy produces difficulty-independent updating.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "e9f2be50-52cf-48a4-93bb-c6de8ada0264",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C21",
+      "claim": "In the confidence-dependent TDRL model, prediction errors depend on choice difficulty, while in MDP TDRL they do not.",
+      "claim_type": "EXPLICIT",
+      "source": "While in the confidence-dependent model prediction errors depend on the choice difficulty (Figure 3a; Figure 3\u2014figure supplement 1d), in the MDP TDRL the prediction errors do not reflect choice difficulty (Figure 3\u2014figure supplement 1d, see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of prediction errors between model types shown in Figure 3\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "59ed96d9-82f7-4d19-86ce-280eaeadb496",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C22",
+      "claim": "An on-line Bayesian Support Vector Machine classifier produces choice updating similar to the reinforcement learning model.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulation of this on-line, Bayesian SVM produces choice updating similar to that from the RL model (Figure 4b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "SVM model simulations shown in Figure 4b,c demonstrate similar updating patterns to TDRL model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "5cf72211-c5b0-4b14-a911-3f0c79886f1b",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C23",
+      "claim": "Statistical classifiers that continuously update the decision boundary in proportion to estimated classification success provide an account of choice updating.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, statistical classifiers, in which the decision boundary is continuously updated in proportion to the estimated classification success (i.e. decision confidence), provides another account of choice updating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from SVM model simulations and comparison with TDRL model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "5df17b86-c271-4bc5-a29f-785d4efaec40",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C24",
+      "claim": "Rats performing auditory click discrimination showed steep psychometric curves with minor bias and near-zero lapse rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats showed steep psychometric curves (slope: 0.37\u00b10.03, mean\u00b1 S.D) with minor overall bias (-1\u00b14.9% sound A) and near-zero lapse for easy stimuli (0.05\u00b10.09%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Psychometric analysis of rat auditory task performance (n=5 rats).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "84961cb4-dc99-4a0c-82b2-7d57133c12b8",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C25",
+      "claim": "In rat auditory decisions, difficult choices were biased in proportion to the difficulty of previous choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, similar to the olfactory task, difficult choices were biased in proportion to the difficulty of previous choice (Figure 5b-d, p=0.007, rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of choice updating in rat auditory task shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "f91a4dd0-74f0-4b8a-b743-1670d60f2e17",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C26",
+      "claim": "Mice performing auditory tone discrimination showed steep psychometric curves with minor bias and negligible lapse rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice showed steep psychometric curves (slope: 0.25\u00b10.06, mean \u00b1 S.D) with minor overall bias (-1\u00b16.9% sound A) and negligible lapse for easy stimuli (3\u00b12%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Psychometric analysis of mouse auditory task performance (n=6 mice).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "1f824dc4-b86f-49ce-bec6-942da2375ae8",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C27",
+      "claim": "In mouse auditory decisions, choices showed significant dependence on the difficulty of previous choice.",
+      "claim_type": "EXPLICIT",
+      "source": "The choices showed significant dependence on the difficulty of previous choice (Figure 6b-d, p=0.01, rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of choice updating in mouse auditory task shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "9cc2ac40-31b2-470f-a8e3-859db7b14a93",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C28",
+      "claim": "Mice performing visual contrast discrimination showed steep psychometric curves with minor bias and negligible lapse rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice showed steep psychometric curves (slope: 0.260\u00b111, mean \u00b1 S.D) with minor overall bias (1\u00b19.1% stimulus contrast) and negligible lapse for easy stimuli (5\u00b14.9%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Psychometric analysis of mouse visual task performance (n=12 mice).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "4ce65ac4-05fc-4866-92e3-965f3afc70b7",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C30",
+      "claim": "Human observers performing visual motion coherence discrimination showed good performance with minimal bias and lapse rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Observers performed the task well (slope: 0.2\u00b10.01, bias: 0\u00b13% stimulus coherence, lapse: 1\u00b12%), and their choices showed significant dependence on the difficulty of previous choice (Figure 8b-d, P<0.05, rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Psychometric analysis and choice updating analysis of human visual task performance (n=23 subjects) shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "52e6c5ba-6d91-43bc-afb2-2f007af6cb1c",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C31",
+      "claim": "Rats exhibit confidence-dependent choice updating even when the sensory modality of current decision differs from the modality of the previous decision.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that rats exhibit confidence-dependent choice updating even if the sensory modality of current decision differed from the modality of the previous decision (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of cross-modality task where auditory and olfactory trials were randomly interleaved (n=6 rats), shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "9350a0eb-ea48-41d8-8944-1368551e93cc",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C32",
+      "claim": "Rats updated their olfactory decisions after difficult auditory decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats updated their olfactory decisions after difficult auditory decisions (Figure 9c-e p=0.008, rank sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of cross-modality updating from auditory to olfactory trials shown in Figure 9c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "8897c37e-6135-42ee-baf9-03bcb74ab84d",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C33",
+      "claim": "Rats updated their auditory choices after difficult olfactory decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "and similarly, they updated their auditory choices after difficult olfactory decisions (Figure 9f, h, p=0.01, rank sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of cross-modality updating from olfactory to auditory trials shown in Figure 9f,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "8ec59819-0b0a-4473-9072-7acdc600b685",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C34",
+      "claim": "Choice updating appeared largest in two consecutive olfactory decisions, but was present in consecutive auditory choices and across modality switches.",
+      "claim_type": "EXPLICIT",
+      "source": "Choice updating appeared largest in two consecutive olfactory decisions, yet updating was present in consecutive auditory choices as well as in consecutive trials with a modality switch (Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of updating magnitude across different trial type transitions shown in Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "69b99fa1-d97c-4251-920e-fe0e30127fb8",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C35",
+      "claim": "Choice updating depends on the choice outcome rather than the identity (modality) of the sensory stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the updating effect depends on the choice outcome, rather than the identity, that is modality, of the sensory stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from cross-modality transfer of choice updating effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "c0b07e27-51b3-4e8f-9190-f0e779f886ff",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C36",
+      "claim": "Choice updating mainly occurs in the space of action values rather than stimulus coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation further indicates that choice updating mainly occurs in the space of action values, similar to our RL model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from cross-modality transfer supporting RL model over classifier model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "0ec846f0-0ff1-40e7-baa7-fff35d9242f3",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C37",
+      "claim": "A large fraction of individuals in each dataset showed substantial choice updating consistent with model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "A large fraction of individuals in each data set showed substantial choice updating consistent with the predictions of the model (positive numbers in Figure 10a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Distribution of updating indices across individuals shown in Figure 10a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "85cb87d2-09ab-4c6e-b5f4-185a1adb0a6e",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C38",
+      "claim": "Some individuals showed negligible updating or even choice bias opposite to model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we also observed individuals with negligible updating, and even in rare instances a choice bias in the direction opposite to the model's prediction (negative numbers in Figure 10a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Distribution of updating indices showing variability across individuals in Figure 10a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "3a9d387f-35d0-4415-a062-7c2f413d8406",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C39",
+      "claim": "Psychometric slope and updating did not exhibit a significant relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope and updating did not exhibit a significant relationship (p=0.21)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of correlation between slope and updating index across all subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "ab7a93c2-12a7-4f92-8515-506173678059",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C40",
+      "claim": "Lapse rate and updating showed a weak significant negative correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "but the lapse rate and updating showed a weak significant negative correlation (p=0.03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of correlation between lapse rate and updating index across all subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "7afb0324-2d36-4cca-8911-c5529aee1426",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C41",
+      "claim": "Choice updating was strongest among individuals with lower lapse rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, choice updating was strongest among individuals with lower lapse rate (Figure 10c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Scatter plot showing negative correlation between lapse rate and updating in Figure 10c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "1cd22e62-de63-4f69-9908-45a6c57b08cb",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C42",
+      "claim": "Choice updating is strongest when subjects are well trained in the perceptual task with stable psychometric slope and minimal lapse rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that choice updating of the form we observed, is strongest when subjects are well trained in the perceptual task, with stable psychometric slope and minimal lapse rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from correlation analysis between task performance metrics and updating strength.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "534dec01-7075-4b2d-b25d-9cb0698cab93",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C43",
+      "claim": "Post-error behavioral effects were highly variable across subjects and datasets, unlike post-correct choice updating.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that post-error behavioral effects were highly variable across subjects and datasets, unlike the post-correct choice updating we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of post-correct and post-error updating patterns shown in Figure 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "5853999c-d242-46b1-b382-2162c2324aca",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C44",
+      "claim": "When sensory noise is high and leads to errors, there is little or no net updating effect in the RL model.",
+      "claim_type": "EXPLICIT",
+      "source": "When sensory noise is high and leads to errors, these errors cannot be systematically corrected hence there is little or no net updating effect (Figure 11c, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model simulation with high sensory noise shown in Figure 11c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "57be4049-aebe-42a5-bc7e-00df6129a384",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C45",
+      "claim": "When internal noise is high in the RL model, systematic post-error updating is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when the internal noise is high, such as high learning rate producing over-correction, systematic post-error updating is observed (Figure 11d, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model simulation with high learning rate shown in Figure 11d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "f25831e3-f6d8-4be0-9152-09d51cd1da14",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C46",
+      "claim": "The RL model makes qualitatively similar predictions about post-correct updating independent of whether the dominant source of noise is external or internal.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that for post-correct updating our RL model makes qualitatively similar predictions about choice updating, independent of whether the dominant source of noise is external or internal (Figure 11c,d top panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of model predictions for post-correct trials across different noise conditions in Figure 11c,d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "bef12110-f891-4d82-8d61-c6cda107f14d",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C47",
+      "claim": "Confidence-guided choice updating can be optimal when considering that the world can change and the decision category boundary may not be stable over trials.",
+      "claim_type": "EXPLICIT",
+      "source": "First, this strategy is optimal when considering that the world can change, and hence the precise decision category boundary may not be stable over trials. In this situation, the outcome of decisions closer to the category boundary provide the most informative feedback as to where the category boundary should be set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical argument for optimality of confidence-guided updating in dynamic environments.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "86a224a8-8bb3-4811-b83b-14afc1d361ba",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C48",
+      "claim": "Confidence-guided choice updating is optimal when external events can be temporally correlated in natural environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, confidence-guided choice updating is optimal when considering that in natural environments external events can be temporally correlated. In such environments, when the evidence in favor of choice options is limited and hence there is uncertainty in decisions, it is beneficial to consider prior beliefs and the temporal statistics of events and adjust choices accordingly (Yu and Cohen, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical argument supported by citation to Yu and Cohen, 2008.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "cc826e72-f520-450e-a704-d53a6960e044",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C49",
+      "claim": "Despite being suboptimal from the experimenter's perspective, confidence-guided learning can be optimal in dynamic, real world situations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite being suboptimal from the experimenter's perspective, confidence-guided learning can be optimal in dynamic, real world situations, revealing that perceptual and reinforcement learning processes jointly contribute to many previously studied decision paradigms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Synthesis of theoretical arguments about optimality in natural vs laboratory settings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "1cca466c-1a8b-4ea9-bab4-a2c07a29d013",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C50",
+      "claim": "Numerous studies report that outcomes can bias perceptual decisions, causing spurious changes in choice behavior without improving accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, numerous studies report that outcomes can bias perceptual decisions, causing spurious changes in choice behavior without improving accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to existing literature on trial history effects in perceptual decisions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "0289678a-b9de-4851-97ef-4f493188825f",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C51",
+      "claim": "Several studies have shown that past rewards, actions, and stimuli can appreciably influence subsequent perceptual choices.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, several studies have shown that past rewards, actions, and stimuli can appreciably influence subsequent perceptual choices (Abrahamyan et al., 2016; Akaishi et al., 2014; Akrami et al., 2018; Braun et al., 2018; Busse et al., 2011; Cho et al., 2002; Fan et al., 2018; Fischer and Whitney, 2014; Fritsche et al., 2017; Fr\u00fcnd et al., 2014; Gold et al., 2008; Hwang et al., 2017; Lueckmann et al., 2018; Luu and Stocker, 2018; Marcos et al., 2013; Tsunada et al., 2019; Urai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Extensive citation of prior literature documenting trial history effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "4ad8087c-32bb-4fbd-a544-b236570ed354",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C52",
+      "claim": "Outcomes of easy decisions are highly predictable, and thus there is little to be learned from such decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Outcomes of easy decisions are highly predictable, and thus there is little to be learned from such decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical prediction from reinforcement learning under perceptual uncertainty.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "1d0423f1-be34-48a4-a8ee-0bdda4eef6f0",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C53",
+      "claim": "Outcomes of difficult, low confidence decisions provide the most prominent opportunity to learn and adjust subsequent decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, outcomes of difficult, low confidence decisions, provide the most prominent opportunity to learn and adjust subsequent decisions (Lak et al., 2017; Lak et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical prediction supported by citations to Lak et al., 2017 and 2019.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "eed12508-bdab-4396-ab11-e16c63d259c6",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C54",
+      "claim": "Dopamine neuron responses during perceptual decisions quantitatively match confidence-dependent prediction errors in both monkeys and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "First, dopamine neuron responses during perceptual decisions quantitatively match confidence-dependent prediction errors in both monkeys and mice (Lak et al., 2017; Lak et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior neurophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "f6578d41-f1a5-4ba8-8b33-fca10b0cff1e",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C55",
+      "claim": "Dopamine responses predict the magnitude of the psychometric choice bias in the subsequent trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, dopamine responses predict the magnitude of the psychometric choice bias in the subsequent trial (Lak et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior study linking dopamine activity to choice updating.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "cc358fba-e62a-45dd-bb94-843fc2fdcea8",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C56",
+      "claim": "Optogenetic manipulation of dopamine neurons biases psychometric curves in a trial-by-trial fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, optogenetic manipulation of dopamine neurons biases psychometric curves in a trial-by-trial fashion (Lak et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to prior causal manipulation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "c211977b-c355-413b-8968-e516a8fef986",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C57",
+      "claim": "Medial prefrontal cortex and orbitofrontal cortex are likely to contribute to confidence-guided choice updating strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, different frontal cortical regions, medial prefrontal cortex (Lak et al., 2019) and orbitofrontal cortex (Hirokawa et al., 2019) are also likely to contribute to confidence-guided choice updating strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to studies implicating frontal cortical regions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "03ac539e-98b0-4cb9-875c-1610999cc751",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C58",
+      "claim": "Confidence-dependent learning differs from trial history-effects for highly discriminable stimuli (priming of popout effect).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, confidence-dependent learning differs from trial history-effects for highly discriminable stimuli, that is \"priming of popout\" effect (Maljkovic and Nakayama, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation distinguishing the current findings from a different type of sequential effect.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "f7f7b310-4b08-4c02-9067-039bc6b88862",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C59",
+      "claim": "Bayesian learning in drift-diffusion models of decision making makes similar predictions about confidence-dependent choice biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Bayesian learning in drift-diffusion models of decision making also makes similar predictions about confidence-dependent choice biases (Drugowitsch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to another modeling framework that produces similar predictions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "02b3f07e-8cb0-40f0-9802-0241498b09ec",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C60",
+      "claim": "The confidence-guided learning described here requires observing trial feedback and may differ from sequential choice effects in the absence of trial feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the confidence-gauged learning described here requires observing the trial feedback, and it might thus differ from sequential choice effects in the absence of trial feedback (Braun et al., 2018; Glaze et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations distinguishing feedback-dependent from feedback-independent sequential effects.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "a3c1e915-6edd-4468-95f7-cd69f7f428c3",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C61",
+      "claim": "Updating was still observed after 3-4 months of almost daily training in many subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "This ongoing learning might eventually go away after extended behavioral training yet we still observed signatures of this learning process in many subjects after 3\u20134 months of almost daily training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation about persistence of updating effects despite extensive training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "2518d6b6-8353-4810-a315-cd6ff68c9512",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C62",
+      "claim": "Updating is stronger after two rewarded difficult trials compared to one rewarded difficult trial.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional prediction of our model is that updating effect should be slightly stronger when considering trials preceded by two (rather than one) rewarded difficult choices in the same direction (Figure 3\u2014figure supplement 1b), which we also observed in rats' choices (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model prediction and empirical confirmation shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "31703f80-b0a1-4af2-ad98-b1351069a0e5",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "claim_id": "C64",
+      "claim": "Animals may follow a mixture of two strategies: one which updates values in the space of actions, and one that keeps track of stimulus identity and statistics across trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This later observation might point to the fact that in trial-by-trial learning animals follow a mixture of two strategies: one which updates values in the space of actions, and one that keeps track of stimulus identity and statistics across trials for such learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the difference between within-modality and cross-modality updating strength.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "53c236c9-7ee8-445a-89f7-b10a340fcaf7",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Past rewards bias future perceptual choices specifically when the previous decision was difficult and confidence was low. This confidence-dependent choice updating persists after correcting for slow fluctuations in side bias, indicating active trial-by-trial learning rather than passive drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 provide direct empirical evidence from rat olfactory experiments showing that choice updating is strongest after difficult previous trials (p=0.0002), minimal after easy previous trials, and minimal for easy current trials regardless of previous difficulty. Claim C14 confirms this effect survives normalization for slow bias drift (p=0.003). The statistical evidence and experimental controls strongly support this core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "db8c66d0-a6a2-4470-b717-713df9e082b9",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Confidence-dependent choice updating is observed across six datasets from four laboratories, spanning rats, mice, and humans, and across olfactory, auditory, and visual modalities. All subjects showed asymptotic performance with low bias and lapse rates, yet exhibited significant choice updating dependent on previous trial difficulty.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 establish asymptotic performance in rats (14/16 rats, p>0.1 for stability). Claims C24-C30 document similar patterns across rat auditory (p=0.007), mouse auditory (p=0.01), mouse visual (p=0.001), and human visual (p<0.05) tasks. The consistency of statistical significance across diverse experimental paradigms, species, and sensory modalities provides strong convergent evidence for the generality of the phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "c9db24d0-0fa2-4c30-94b6-17ce211d9482",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A normalization procedure successfully distinguishes active trial-by-trial choice updating from slow, non-specific drift in decision boundaries. Slow drift produces apparent updating that is cancelled by subtracting psychometric shifts from trial t-1, while active learning produces shifts specific to trial t that persist after normalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 demonstrates through simulation that slow drift produces non-specific correlations across trials. Claim C13 provides the conceptual framework for why subtraction isolates active learning. Claim C14 provides empirical validation that the effect remains significant (p=0.003) after normalization. The combination of simulation validation, conceptual justification, and empirical confirmation supports this methodological result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "4d908bd5-2721-438d-8eb1-6024f1e321b7",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A reinforcement learning model incorporating belief states (representing perceptual confidence) successfully accounts for confidence-dependent choice updating, while classical MDP TDRL models without belief states fail to reproduce this pattern. The key difference is that belief-based models scale prediction errors by confidence, producing larger updates after difficult decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 show the belief-based TDRL model reproduces observed updating patterns through confidence-scaled prediction errors. Claims C17 and C21 demonstrate that MDP TDRL models without belief states show difficulty-independent updating. The model simulations (Figure 3) provide clear qualitative and quantitative matches to behavioral data, supporting the mechanistic explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "a741f61e-6e90-4152-b8bf-a070cfa2f783",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Alternative explanations for choice updating\u2014including MDP TDRL with slow drift or win-stay strategies\u2014fail to account for confidence-dependent updating after normalization. These models produce updating patterns that are either removed by normalization or independent of previous trial difficulty.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 shows that MDP TDRL with drift loses apparent updating after normalization (Figure 3d). Claim C19 demonstrates that win-stay strategies produce difficulty-independent effects (Figure 3e). These control simulations effectively rule out alternative explanations and strengthen the case for confidence-dependent mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "b94bdaec-5f7a-4ffe-8cb2-3978b9f75e32",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "An on-line Bayesian Support Vector Machine classifier that updates decision boundaries in proportion to classification confidence (margin) produces choice updating patterns similar to the belief-based RL model, providing an alternative computational account.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 presents SVM simulations (Figure 4b,c) showing similar updating patterns to the TDRL model. Claim C23 generalizes this to statistical classifiers that weight updates by confidence. While the SVM model provides an alternative framework, the simulations demonstrate qualitative similarity to both the TDRL model and behavioral data, supporting this as a viable alternative mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "e48a5885-817d-475b-a05f-9c935bb604d7",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Choice updating transfers across sensory modalities in rats performing randomly interleaved auditory and olfactory decisions. Rats updated olfactory choices after difficult auditory trials (p=0.008) and vice versa (p=0.01), indicating updating occurs in action-value space rather than stimulus-specific coordinates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 provide direct statistical evidence for cross-modality transfer with significant p-values. Claim C34 shows updating is present across all transition types but strongest within-modality. Claims C35-C36 provide the inference that this pattern supports action-value updating over stimulus-coordinate updating. The cross-modality transfer is a strong test that distinguishes RL from classifier models, and the data support the RL interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "96005ee7-0f26-4b06-bdbd-774d4537ae24",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Individual variability in choice updating correlates with task performance: updating is strongest in well-trained subjects with low lapse rates (p=0.03 negative correlation), but shows no relationship with psychometric slope (p=0.21). Some individuals show negligible or opposite updating patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 document the distribution of updating indices across individuals (Figure 10a). Claims C39-C41 provide statistical analyses showing significant correlation with lapse rate but not slope. Claim C42 synthesizes these findings. The statistical evidence is clear, though the correlation with lapse rate is weak (p=0.03), and the interpretation that updating is strongest in well-trained subjects is reasonable but somewhat circular given that low lapse rates define good training.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "24789ac1-6b5f-4d72-80d4-081178a2b49b",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Post-error behavioral effects are highly variable across subjects and datasets, unlike the consistent post-correct updating. RL model simulations show that post-error patterns depend on the dominant noise source: high sensory noise produces minimal updating, while high internal noise (learning rate) produces systematic post-error updating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 documents the empirical variability in post-error effects (Figure 11). Claims C44-C45 show model simulations with different noise parameters produce different post-error patterns. Claim C46 notes that post-correct predictions are robust across noise conditions. The model provides a principled explanation for the observed variability, though the low number of error trials limits strong conclusions about individual patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "a441ce66-79db-4c38-8843-417b3e7a8b5f",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Reinforcement learning mechanisms remain engaged even after extensive training (3-4 months), producing systematic choice adjustments in well-learned perceptual decisions. This ongoing learning persists despite asymptotic performance levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 establishes asymptotic performance (14/16 rats, p>0.1 for stability over sessions). Claim C61 notes updating persists after 3-4 months of training. Claim C4 synthesizes this into the conclusion about continual RL engagement. The persistence of updating despite stable psychometric parameters supports this interpretation, though the authors acknowledge this learning might eventually disappear with even more extended training.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "3d1c666f-bd40-4b71-b315-632ce44bec99",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Confidence-guided choice updating, while suboptimal in laboratory settings with independent trials, can be optimal in natural environments where decision boundaries may shift over time or events are temporally correlated. This reveals joint contributions of perceptual and reinforcement learning processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C49 present theoretical arguments about optimality in natural vs. laboratory settings. While the reasoning is plausible and supported by citation to Yu and Cohen (2008), these are speculative interpretations rather than empirically tested hypotheses. The manuscript provides no direct evidence that the observed updating is actually optimal in natural settings or that decision boundaries are unstable in the animals' experience. This remains an interesting but unvalidated theoretical framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "3585b48d-e0a9-4e7b-ae6f-a28e54c178b1",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous rewards bias choices toward the previously rewarded side (F=29.8, p=0.001), but this effect does not alter psychometric sensitivity or lapse rates (p>0.1), indicating the updating specifically affects decision bias rather than perceptual processing or attention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C7 provides strong statistical evidence for the basic choice repetition effect. Claim C11 rules out effects on other psychometric parameters. This establishes that the updating is specific to bias rather than reflecting changes in sensory processing or attention, which is important for interpreting the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "e072e7f1-2a61-428f-8797-cf255872ec10",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Choice updating is stronger after two consecutive rewarded difficult trials in the same direction compared to one rewarded difficult trial, as predicted by the RL model and confirmed in rat behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 presents both model prediction and empirical confirmation (Figure 3\u2014figure supplement 1b). This provides additional validation of the model's quantitative predictions beyond the main updating effect. However, the manuscript does not provide statistical tests for this comparison, limiting the strength of the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "89ef353f-6fac-4afa-bd35-2a52546ea19b",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Animals may employ a mixture of two learning strategies: one updating values in action space and one tracking stimulus identity and statistics across trials. This interpretation is suggested by the observation that within-modality updating is stronger than cross-modality updating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 is explicitly speculative (\"might point to the fact\") and is based on the difference between within- and cross-modality updating strength (C34). While this is a reasonable interpretation of the pattern, no direct evidence is provided for a mixture model, and alternative explanations (e.g., partial generalization across modalities) are not ruled out. This remains an interesting hypothesis for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "d9a84160-6562-4cf8-8c0e-7fd2512ad95a",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior literature documents that outcomes bias perceptual decisions, and reinforcement learning theory predicts that difficult, low-confidence decisions provide greater learning opportunities than easy decisions because outcomes are less predictable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 accurately cite extensive prior literature on trial history effects. Claims C52-C53 present standard predictions from RL theory under uncertainty, supported by citations to Lak et al. 2017, 2019. These claims appropriately contextualize the current work within existing literature and theory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "5e015d38-9f7e-44fa-abb5-63a40ff868e4",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior neurophysiological studies show that dopamine neurons encode confidence-dependent prediction errors during perceptual decisions, predict subsequent choice biases, and causally influence psychometric curves when manipulated. Frontal cortical regions (mPFC, OFC) also likely contribute to confidence-guided updating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 accurately cite prior work (Lak et al. 2017, 2019; Hirokawa et al. 2019) establishing neural substrates. These citations are appropriate and accurately represent the cited work. However, these are not new findings from the current manuscript but rather contextualization of the behavioral results within existing neural evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    },
+    {
+      "id": "5a8ff0c8-07fc-4c4d-9ecb-42fdd37c4243",
+      "content_id": "b7ce3de0-a07d-4c49-b626-3203fa40757e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Confidence-dependent learning differs from other sequential effects including priming of popout, is consistent with predictions from Bayesian drift-diffusion models, and requires trial feedback unlike some other sequential choice effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 appropriately distinguish the current findings from related phenomena through citations to relevant literature (Maljkovic & Nakayama 1994; Drugowitsch et al. 2019; Braun et al. 2018; Glaze et al. 2015). These distinctions are important for positioning the work but represent literature review rather than new empirical findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:24:53.573717Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d1a99ebf-df93-4254-be2f-120925cf0bcb",
+      "result_id": "53c236c9-7ee8-445a-89f7-b10a340fcaf7"
+    },
+    {
+      "claim_id": "ca7b4369-2343-4ffb-9dd7-55ac0fb84df0",
+      "result_id": "53c236c9-7ee8-445a-89f7-b10a340fcaf7"
+    },
+    {
+      "claim_id": "8c842fe1-ac48-4fea-9fac-8ca92621c1af",
+      "result_id": "53c236c9-7ee8-445a-89f7-b10a340fcaf7"
+    },
+    {
+      "claim_id": "666811ca-7bb3-4a99-8168-d59fdc3a2521",
+      "result_id": "53c236c9-7ee8-445a-89f7-b10a340fcaf7"
+    },
+    {
+      "claim_id": "ae6352f5-146c-4cc7-a67c-ab40326fe16b",
+      "result_id": "53c236c9-7ee8-445a-89f7-b10a340fcaf7"
+    },
+    {
+      "claim_id": "6a987926-a6b4-4b48-b359-5ebf18fc15ca",
+      "result_id": "db8c66d0-a6a2-4470-b717-713df9e082b9"
+    },
+    {
+      "claim_id": "1d47baca-5b0c-43e2-a69c-0d221a8b732d",
+      "result_id": "db8c66d0-a6a2-4470-b717-713df9e082b9"
+    },
+    {
+      "claim_id": "904b2191-e43b-4594-b5fa-cc12ce6b5fee",
+      "result_id": "db8c66d0-a6a2-4470-b717-713df9e082b9"
+    },
+    {
+      "claim_id": "5df17b86-c271-4bc5-a29f-785d4efaec40",
+      "result_id": "db8c66d0-a6a2-4470-b717-713df9e082b9"
+    },
+    {
+      "claim_id": "84961cb4-dc99-4a0c-82b2-7d57133c12b8",
+      "result_id": "db8c66d0-a6a2-4470-b717-713df9e082b9"
+    },
+    {
+      "claim_id": "f91a4dd0-74f0-4b8a-b743-1670d60f2e17",
+      "result_id": "db8c66d0-a6a2-4470-b717-713df9e082b9"
+    },
+    {
+      "claim_id": "1f824dc4-b86f-49ce-bec6-942da2375ae8",
+      "result_id": "db8c66d0-a6a2-4470-b717-713df9e082b9"
+    },
+    {
+      "claim_id": "9cc2ac40-31b2-470f-a8e3-859db7b14a93",
+      "result_id": "db8c66d0-a6a2-4470-b717-713df9e082b9"
+    },
+    {
+      "claim_id": "4ce65ac4-05fc-4866-92e3-965f3afc70b7",
+      "result_id": "db8c66d0-a6a2-4470-b717-713df9e082b9"
+    },
+    {
+      "claim_id": "30f40ad0-73a1-4326-8a13-515924e6d043",
+      "result_id": "c9db24d0-0fa2-4c30-94b6-17ce211d9482"
+    },
+    {
+      "claim_id": "f1985a94-90df-49ce-81a0-2c1f7f98aba9",
+      "result_id": "c9db24d0-0fa2-4c30-94b6-17ce211d9482"
+    },
+    {
+      "claim_id": "ae6352f5-146c-4cc7-a67c-ab40326fe16b",
+      "result_id": "c9db24d0-0fa2-4c30-94b6-17ce211d9482"
+    },
+    {
+      "claim_id": "e7a93432-dbd1-4ee7-8120-0b373f509793",
+      "result_id": "4d908bd5-2721-438d-8eb1-6024f1e321b7"
+    },
+    {
+      "claim_id": "3d940eeb-01f5-46e5-859c-9ad10a1d60cb",
+      "result_id": "4d908bd5-2721-438d-8eb1-6024f1e321b7"
+    },
+    {
+      "claim_id": "bc625f17-3be0-4db4-931a-d360ffbe50bb",
+      "result_id": "4d908bd5-2721-438d-8eb1-6024f1e321b7"
+    },
+    {
+      "claim_id": "a6ad8ee9-7196-445c-9d14-51b298a3f15a",
+      "result_id": "4d908bd5-2721-438d-8eb1-6024f1e321b7"
+    },
+    {
+      "claim_id": "e9f2be50-52cf-48a4-93bb-c6de8ada0264",
+      "result_id": "4d908bd5-2721-438d-8eb1-6024f1e321b7"
+    },
+    {
+      "claim_id": "215516d8-be17-4adb-95f3-8bdbc2621003",
+      "result_id": "a741f61e-6e90-4152-b8bf-a070cfa2f783"
+    },
+    {
+      "claim_id": "7e36bcd7-d8da-4dee-9d9c-5f51afdd88d3",
+      "result_id": "a741f61e-6e90-4152-b8bf-a070cfa2f783"
+    },
+    {
+      "claim_id": "59ed96d9-82f7-4d19-86ce-280eaeadb496",
+      "result_id": "b94bdaec-5f7a-4ffe-8cb2-3978b9f75e32"
+    },
+    {
+      "claim_id": "5cf72211-c5b0-4b14-a911-3f0c79886f1b",
+      "result_id": "b94bdaec-5f7a-4ffe-8cb2-3978b9f75e32"
+    },
+    {
+      "claim_id": "52e6c5ba-6d91-43bc-afb2-2f007af6cb1c",
+      "result_id": "e48a5885-817d-475b-a05f-9c935bb604d7"
+    },
+    {
+      "claim_id": "9350a0eb-ea48-41d8-8944-1368551e93cc",
+      "result_id": "e48a5885-817d-475b-a05f-9c935bb604d7"
+    },
+    {
+      "claim_id": "8897c37e-6135-42ee-baf9-03bcb74ab84d",
+      "result_id": "e48a5885-817d-475b-a05f-9c935bb604d7"
+    },
+    {
+      "claim_id": "8ec59819-0b0a-4473-9072-7acdc600b685",
+      "result_id": "e48a5885-817d-475b-a05f-9c935bb604d7"
+    },
+    {
+      "claim_id": "69b99fa1-d97c-4251-920e-fe0e30127fb8",
+      "result_id": "e48a5885-817d-475b-a05f-9c935bb604d7"
+    },
+    {
+      "claim_id": "c0b07e27-51b3-4e8f-9190-f0e779f886ff",
+      "result_id": "e48a5885-817d-475b-a05f-9c935bb604d7"
+    },
+    {
+      "claim_id": "0ec846f0-0ff1-40e7-baa7-fff35d9242f3",
+      "result_id": "96005ee7-0f26-4b06-bdbd-774d4537ae24"
+    },
+    {
+      "claim_id": "85cb87d2-09ab-4c6e-b5f4-185a1adb0a6e",
+      "result_id": "96005ee7-0f26-4b06-bdbd-774d4537ae24"
+    },
+    {
+      "claim_id": "3a9d387f-35d0-4415-a062-7c2f413d8406",
+      "result_id": "96005ee7-0f26-4b06-bdbd-774d4537ae24"
+    },
+    {
+      "claim_id": "ab7a93c2-12a7-4f92-8515-506173678059",
+      "result_id": "96005ee7-0f26-4b06-bdbd-774d4537ae24"
+    },
+    {
+      "claim_id": "7afb0324-2d36-4cca-8911-c5529aee1426",
+      "result_id": "96005ee7-0f26-4b06-bdbd-774d4537ae24"
+    },
+    {
+      "claim_id": "1cd22e62-de63-4f69-9908-45a6c57b08cb",
+      "result_id": "96005ee7-0f26-4b06-bdbd-774d4537ae24"
+    },
+    {
+      "claim_id": "534dec01-7075-4b2d-b25d-9cb0698cab93",
+      "result_id": "24789ac1-6b5f-4d72-80d4-081178a2b49b"
+    },
+    {
+      "claim_id": "5853999c-d242-46b1-b382-2162c2324aca",
+      "result_id": "24789ac1-6b5f-4d72-80d4-081178a2b49b"
+    },
+    {
+      "claim_id": "57be4049-aebe-42a5-bc7e-00df6129a384",
+      "result_id": "24789ac1-6b5f-4d72-80d4-081178a2b49b"
+    },
+    {
+      "claim_id": "f25831e3-f6d8-4be0-9152-09d51cd1da14",
+      "result_id": "24789ac1-6b5f-4d72-80d4-081178a2b49b"
+    },
+    {
+      "claim_id": "c6de747c-e415-4775-8f85-ebd6a263a026",
+      "result_id": "a441ce66-79db-4c38-8843-417b3e7a8b5f"
+    },
+    {
+      "claim_id": "a3c1e915-6edd-4468-95f7-cd69f7f428c3",
+      "result_id": "a441ce66-79db-4c38-8843-417b3e7a8b5f"
+    },
+    {
+      "claim_id": "bef12110-f891-4d82-8d61-c6cda107f14d",
+      "result_id": "3d1c666f-bd40-4b71-b315-632ce44bec99"
+    },
+    {
+      "claim_id": "86a224a8-8bb3-4811-b83b-14afc1d361ba",
+      "result_id": "3d1c666f-bd40-4b71-b315-632ce44bec99"
+    },
+    {
+      "claim_id": "cc826e72-f520-450e-a704-d53a6960e044",
+      "result_id": "3d1c666f-bd40-4b71-b315-632ce44bec99"
+    },
+    {
+      "claim_id": "a200ccfe-6eed-46cd-b353-f664d6ce0230",
+      "result_id": "3585b48d-e0a9-4e7b-ae6f-a28e54c178b1"
+    },
+    {
+      "claim_id": "85559343-89b0-49d5-ae84-1eee91b571db",
+      "result_id": "3585b48d-e0a9-4e7b-ae6f-a28e54c178b1"
+    },
+    {
+      "claim_id": "2518d6b6-8353-4810-a315-cd6ff68c9512",
+      "result_id": "e072e7f1-2a61-428f-8797-cf255872ec10"
+    },
+    {
+      "claim_id": "31703f80-b0a1-4af2-ad98-b1351069a0e5",
+      "result_id": "89ef353f-6fac-4afa-bd35-2a52546ea19b"
+    },
+    {
+      "claim_id": "1cca466c-1a8b-4ea9-bab4-a2c07a29d013",
+      "result_id": "d9a84160-6562-4cf8-8c0e-7fd2512ad95a"
+    },
+    {
+      "claim_id": "0289678a-b9de-4851-97ef-4f493188825f",
+      "result_id": "d9a84160-6562-4cf8-8c0e-7fd2512ad95a"
+    },
+    {
+      "claim_id": "4ad8087c-32bb-4fbd-a544-b236570ed354",
+      "result_id": "d9a84160-6562-4cf8-8c0e-7fd2512ad95a"
+    },
+    {
+      "claim_id": "1d0423f1-be34-48a4-a8ee-0bdda4eef6f0",
+      "result_id": "d9a84160-6562-4cf8-8c0e-7fd2512ad95a"
+    },
+    {
+      "claim_id": "eed12508-bdab-4396-ab11-e16c63d259c6",
+      "result_id": "5e015d38-9f7e-44fa-abb5-63a40ff868e4"
+    },
+    {
+      "claim_id": "f6578d41-f1a5-4ba8-8b33-fca10b0cff1e",
+      "result_id": "5e015d38-9f7e-44fa-abb5-63a40ff868e4"
+    },
+    {
+      "claim_id": "cc358fba-e62a-45dd-bb94-843fc2fdcea8",
+      "result_id": "5e015d38-9f7e-44fa-abb5-63a40ff868e4"
+    },
+    {
+      "claim_id": "c211977b-c355-413b-8968-e516a8fef986",
+      "result_id": "5e015d38-9f7e-44fa-abb5-63a40ff868e4"
+    },
+    {
+      "claim_id": "03ac539e-98b0-4cb9-875c-1610999cc751",
+      "result_id": "5a8ff0c8-07fc-4c4d-9ecb-42fdd37c4243"
+    },
+    {
+      "claim_id": "f7f7b310-4b08-4c02-9067-039bc6b88862",
+      "result_id": "5a8ff0c8-07fc-4c4d-9ecb-42fdd37c4243"
+    },
+    {
+      "claim_id": "02b3f07e-8cb0-40f0-9802-0241498b09ec",
+      "result_id": "5a8ff0c8-07fc-4c4d-9ecb-42fdd37c4243"
+    }
+  ],
+  "comparisons": []
+}

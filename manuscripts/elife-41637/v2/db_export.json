@@ -1,0 +1,1498 @@
+{
+  "submission": {
+    "id": "fba5b2c6-2623-4782-9afd-6a41ea70242e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:21:38.129093Z",
+    "updated_at": "2025-12-02T08:21:38.129093Z"
+  },
+  "content": [
+    {
+      "id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "submission_id": "fba5b2c6-2623-4782-9afd-6a41ea70242e",
+      "content_type": "manuscript",
+      "content_text": "# Mi-2/NuRD complex protects stem cell progeny from mitogenic Notch signaling\n\n## Authors\n\n- Evanthia Zacharioudaki<sup>1</sup>\n- Julia Falo Sanjuan<sup>1</sup> ([ORCID: 0000-0002-3563-4789](https://orcid.org/0000-0002-3563-4789))\n- Sarah Bray<sup>1</sup> ([ORCID: 0000-0002-1642-599X](https://orcid.org/0000-0002-1642-599X)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Development and Neuroscience University of Cambridge Cambridge United Knigdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo progress towards differentiation, progeny of stem cells need to extinguish expression of stem-cell maintenance genes. Failures in such mechanisms can drive tumorigenesis. In Drosophila neural stem cell (NSC) lineages, excessive Notch signalling results in supernumerary NSCs causing hyperplasia. However, onset of hyperplasia is considerably delayed implying there are mechanisms that resist the mitogenic signal. Monitoring the live expression of a Notch target gene, E(spl)m\u03b3, revealed that normal attenuation is still initiated in the presence of excess Notch activity so that re-emergence of NSC properties occurs only in older progeny. Screening for factors responsible, we found that depletion of Mi-2/NuRD ATP remodeling complex dramatically enhanced Notch-induced hyperplasia. Under these conditions, E(spl)m\u03b3 was no longer extinguished in NSC progeny. We propose that Mi-2 is required for decommissioning stem-cell enhancers in their progeny, enabling the switch towards more differentiated fates and rendering them insensitive to mitogenic factors such as Notch.\n\n## Introduction\n\nAn important property of many stem cells is their ability to undergo asymmetrical divisions, generating one progeny cell that retains stem cell identity while the other is routed towards differentiation. Critically, the stem cell properties must be rapidly shut off in the latter to ensure it transitions to a different state. Failure to do so effectively can result in reactivation of stem cell programmes in the progeny, leading to hyperplasia and tumorigenesis. For example, a subset of the cells in many solid tumours (e.g glioblastomas, neuroblastomas) have characteristics of stem cells, deploying programmes that normal stem cells would use for tissue development and repair to support the development and progressive growth of the tumour (Azzarelli et al., 2018; Lathia et al., 2015; Reya et al., 2001; Singh et al., 2004). How some cells reacquire stem-cell properties and what events are required to ensure that daughter cells are normally programmed towards differentiation are currently unclear.\n\nNeural Stem Cells, known as neuroblasts (NBs) in Drosophila, have served as a powerful model to identify mechanisms that regulate asymmetrical stem-cell divisions. Similar to mammalian neural stem cells, NBs divide asymmetrically to generate a larger daughter cell that retains stem-cell identity and a smaller daughter cell that will follow a more differentiated fate (Homem et al., 2015; Knoblich, 2008; Sousa-Nunes et al., 2010). After entering quiescence at the end of embryogenesis, NBs resume divisions in larval stages, upon receiving proper nutrition signals from their adjacent glial cells (Chell and Brand, 2010; Sousa-Nunes et al., 2011). In each division, key cell fate determinants such as Prospero, Numb and Brat are segregated into the smaller progeny cell. Together these factors help switch off the stem-cell programme and their loss disturbs the balance between self-renewal and differentiation (Bello et al., 2006; Betschinger et al., 2006; Choksi et al., 2006; Hirata et al., 1995; Ikeshima-Kataoka et al., 1997; Knoblich et al., 1995; Lee et al., 2006b; Rhyu et al., 1994). For example, Numb inhibits Notch activity, and the loss of Numb or other mechanisms giving excess Notch signalling can lead to hyperplasia\u00a0(Bowman et al., 2008; Lee et al., 2006a; Wang et al., 2006; Weng et al., 2010). However, certain lineages, so-called Type I lineages, appear resistant to the ectopic Notch activity as the majority of their daughter cells continue to be routed towards differentiation even in these conditions.\n\nType I and Type II NBs can be distinguished based on their mode of division as well as the differential expression of specific molecular markers. In Type I lineages, the smaller daughter, so-called Ganglion Mother Cell (GMC), divides only once to generate two post-mitotic neurons or glia cells. In Type II lineages, the smaller progeny of the NBs become intermediate neural progenitors (INP), which then divide three\u00a0to\u00a0six times asymmetrically to self-renew and to generate GMCs that, like the GMCs derived from Type I NBs, then divide into two post-mitotic neurons or glia cells (Bello et al., 2008; Boone and Doe, 2008; Bowman et al., 2008; Izergina et al., 2009; Kang and Reichert, 2015; Knoblich, 2008). Both Type I and Type II neuroblasts exhibit high levels of Notch activity and express key targets deadpan (dpn), Enhancer of split-HLHm\u03b3 (E(spl)m\u03b3) and klumpfuss (klu), that are shut off in the progeny (Almeida and Bray, 2005; Berger et al., 2012; San-Ju\u00e1n and Baonza, 2011; Xiao et al., 2012; Zacharioudaki et al., 2016; Zacharioudaki et al., 2012). Type II lineages are highly sensitive to excessive Notch activity, which brings about ectopic expression of stem cell markers in INPs to drive NB-like behaviour and tumour formation (Bowman et al., 2008; Wang et al., 2006; Weng et al., 2010; Zacharioudaki et al., 2016; Zacharioudaki et al., 2012). In contrast, Type I lineages only become hyperplastic under extreme conditions. Many factors have been found that enhance the sensitivity of Type II lineages to hyperplasia (Bayraktar and Doe, 2013; Berger et al., 2012; Eroglu et al., 2014; Koe et al., 2014; Liu et al., 2017; Weng et al., 2010; Xiao et al., 2012; Xie et al., 2016); however, few of these moderate the onset of hyperplasia in Type I lineages and it remains unclear how ultimately Type I progeny cells become engaged to re-initiate a stem-cell program.\n\nMonitoring the emergence of hyperplasia in NB lineages with constitutive Notch activity, we show that prolonged exposure is required before NB-like tumour cells are formed in Type I lineages. Furthermore, these NB-like cells arise from a reversion of the post-mitotic progeny, rather than from newly born GMCs. Reasoning that there are intrinsic mechanisms that attenuate stem-cell programmes and Notch activity in NB progeny, we screened for genes whose depletion accelerated tumourigenesis of Type I NB lineages. To do this, we used RNAi knock-down and focused on genes that have been associated with tumour formation in human neuroblastomas. Our results reveal that Mi-2, and other members of the NuRD ATP-remodelling complex, suppress the emergence of stem-cell characteristics in Notch-induced conditions. We propose Mi-2/NuRD complex normally acts to decommission enhancers that are active in the stem cells, so that they become refractory to Notch and other signals in the stem-cell progeny.\n\n## Results\n\n### NB lineages are initially resistant to excessive Notch signalling\n\nProlonged expression of constitutively active Notch in NB lineages results in their overproliferation and the formation of many NB-like cells expressing key targets such as dpn, E(spl)m\u03b3 and klu (Bowman et al., 2008; Wang et al., 2006; Weng et al., 2010; Xiao et al., 2012; Zacharioudaki et al., 2016; Zacharioudaki et al., 2012). To better characterise the onset and progression of Notch-driven hyperplasia, constitutive active Notch (N\u0394ecd, here referred to as Nact) was expressed for a short (8 hr), medium (24 hr) or long (48 hr) period of time in larval Type I NBs (via grhNB-Gal4 Gal80ts) to produce nerve cords bearing supernumerary Dpn-expressing cells (Figure 1A,B). In the early stages of Notch-driven hyperplasia (8 hr), only a small proportion of Type I lineages turned hyperplastic (22%, Figure 1C) and these contained only a few extra cells expressing stem-cell markers. Testing a panel of such stem-cell markers revealed that E(spl)m\u03b3 and dpn were the first to be expressed and, of the two, E(spl)m\u03b3 appeared to be the earliest as there was a subset of cells in hyperplastic lineages that express E(spl)m\u03b3-GFP only (2\u00a0\u00b1\u00a00.2; Figure 1A,D; Figure 1\u2014figure supplement 1). Slightly more cells per lineage expressed both E(spl)m\u03b3-GFP and Dpn (6.6\u00a0\u00b1\u00a00.5; Figure 1A,D). Nevertheless, it is striking that relatively few Type I lineages exhibit ectopic expression of these direct Notch targets even after 8 hr of exposure to active Notch.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig1-v2.jpg)\n\n**Figure 1.:** (A) Expression of stem-cell markers in wild type (grhNBGal4\u00a0>LacZ, E(spl)m\u03b3-GFP) ventral nerve cords (VNC) and in VNCs where NSC lineages were exposed to constitutive Notch activity (Nact; (grhNBGal4\u00a0>N\u0394ecd; E(spl)m\u03b3-GFP). Gal80ts was used to control the onset of expression to provide 8, 24 or 48 hr of Gal4. E(spl)m\u03b3-GFP (green or white) and Dpn (blue or white) two Notch-responsive genes expressed in NSCs become upregulated in longer exposure times. High levels of N\u0394ecd (anti-NICD,\u00a0red) are present at even the earliest time-point. Red arrowheads indicate normal lineages, yellow arrowheads indicate hyperplastic lineages, yellow arrows indicate E(spl)m\u03b3-GFP+ve, Dpn-ve progeny. Scale bars: 25 \u03bcm. (B) Schematic representation of NB lineages at different times of Nact exposure; NBs, large green cells with grey nucleus, GMCs yellow and neurons grey. Ectopic NB-like cells are depicted as intermediate sized green cells. (C) Percent of lineages that were hyperplastic following 8 hr, 24 hr and 48 hr of Nact expression. Box represents IQR, black line indicates median and whiskers indicate\u00a0\u00b11.5\u00a0\u00d7 IQR. N\u00a0=\u00a015, three experiments. (D) Number of cells per hyperplastic lineage that are E(spl)m\u03b3-GFP+ve Dpn-ve (green) or E(spl)m\u03b3-GFP+ve Dpn+ve (blue) in 8 or 24 hr Nact expression. Box represents IQR, black line indicates median and whiskers indicate\u00a0\u00b11.5\u00a0\u00d7 IQR. N\u00a0=\u00a0120, three experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Control NB lineages (grhNBGal4 Gal80ts\u00a0>\u00a0LacZ; E(spl)m\u03b3-GFP) or NBs exposed to constitutively active Notch (grhNBGal4 Gal80ts\u00a0>\u00a0Nact; E(spl)m\u03b3-GFP) for 8 hr or 24 hr in relatively young animals (72ALH). Note that \u0395(spl)m\u03b3-GFP (green) and Dpn (red) are among the earliest markers expressed by NB-like cells, Grh (blue) appears shortly after (B) Control NB lineages or NB lineages expressing Nact. Note that m\u03b3GFP (green) and soon afterwards Dpn (red) are among the earliest markers expressed by NB-like cells, whereas Mira (blue) is expressed many hours later in NB-like cells. See lineages in yellow squares or progeny pointed by yellow arrows or red arrowheads.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Expression of Dpn, Mira (blue) and Pon (red) in Control NB lineages (grhNBGal4 Gal80ts\u00a0>\u00a0LacZ; Ase-mcherryPonLD) or NB lineages exposed to Nact (grhNBGal4 Gal80ts\u00a0>\u00a0Nact; Ase-mcherryPonLD) for 24 hr. Note that Mira (blue) becomes localised asymmetrically into the progeny of mitotic NBs (see NBs with magenta asterisks) in lineages with excessive Notch signaling as in control NBs. (B) Live imaging of NB lineages in larval brain expressing\u00a0>N\u0394ecd (grhNBGal4 Gal80ts at the permissive temperature for 24 hr), with an example of dividing NB. After mitosis, re-emerging NB is larger and maintains \u0395(spl)m\u03b3-GFP expression, whereas progeny GMC is smaller and rapidly loses \u0395(spl)m\u03b3-GFP (green). Histone-RFP (white) is used to monitor nuclei. Purple circles indicate dividing NB and its emerging progeny. Time is depicted below each panel, scale bar 15 \u03bcm. (C) Graph summarizing nuclear volume of tracked NB before and after division and of newly born GMCs. Note that the large size of the NB is maintained, whereas newly born GMC is smaller.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Expression of Dpn (white) in NB lineages exposed to Nact (grhNBGal4 Gal80ts\u00a0>\u00a0N\u0394ecd; E(spl)m\u03b3-GFP) in two distinct time windows of larval life (72ALH vs 96ALH). Gal80ts was used to control the onset of expression to provide Gal4 driven Nact expression for either 24 or 48 hr. Scale bars: 50 \u03bcm. Note that the extent of hyperplasia was very similar between younger and older stages, for a given period of exposure. (B) Box and whiskers diagram, percent of hyperplastic lineages following 24 hr and 48 hr of Nact expression in young (72ALH) vs older (96ALH) stages. Box represents IQR, black line indicates median and whiskers indicate\u00a0\u00b11.5\u00a0\u00d7 IQR. N\u00a0=\u00a015, three experiments (D) Number of cells per hyperplastic lineage that are Dpn+ve following 24 or 48 hr Nact expression in young vs older stages. Box represents IQR, black line indicates median and whiskers indicate\u00a0\u00b11.5\u00a0\u00d7 IQR. N\u00a0=\u00a080, two experiments.\n\nContinued expression of Nact for 24 hr led to an increase in the number of Type I lineages with ectopic NB markers (36.3%; Figure 1A,C), as well as to an expanded number of cells per lineage with ectopic E(spl)m\u03b3-GFP only (4.6\u00a0\u00b1\u00a00.6; Figure 1A,D) and with both E(spl)m\u03b3-GFP and dpn expression (18.8\u00a0\u00b1\u00a01.1; Figure 1A,D). However, it was only with more prolonged Notch activity (48 hr) that the majority of lineages became hyperplastic (89.3%; Figure 1A,C) with a large fraction of the cells in each lineage expressing stem-cell markers so that large regions were occupied by NB-like cells (Figure 1A). Notably, the cells that acquired stem-cell characteristics were intermediate in size between a GMC and a NB, suggesting that they do not arise from a symmetrical division of a pre-existing NB. Furthermore, the NBs themselves continued to divide asymmetrically even in the presence of excessive Notch signaling (Figure 1\u2014figure supplement 2). To rule out the possibility that the change in tumourigenic potential was due to the age of the NBs rather than the time of exposure to Notch activity, we also performed experiments where we varied the time of onset of exposure. This yielded identical results, that\u00a0is the extent of hyperplasia correlated with the duration of exposure not the developmental stage at which the NBs were exposed (Figure 1\u2014figure supplement 3).\n\nIn summary, even after 24 hr of exposure to Notch activity, only a few Type I stem-cell lineages become hyperplastic and these contain only a small number of cells expressing the \u2018early\u2019 stem-cell identity markers, E(spl)m\u03b3 and dpn. This differs from the situation in Type II lineages, which undergo much more severe overproliferation and suggests that there is a mechanism conferring resistance to Notch in the Type I NB progeny. With more prolonged Notch activity, this resistance is overcome and a large majority of cells acquire stem-cell like markers (Figure 1B).\n\n### Hyperplasia involves NSC progeny re-acquiring stem-cell properties\n\nNotch activity drives additional cells to acquire NB-like characteristics. However, it is unclear whether this arises at the time of NB division, so that the GMC retains a stem cell fate, or whether the neuronal progeny re-acquire stemness. To distinguish between these possibilities, we analysed the expression of E(spl)m\u03b3-GFP in NB lineages in real time, by culturing NBs from normal brains and Notch-driven hyperplastic brains (after 24 hr with Nact). NBs were imaged continuously for 10 to 14 hr and their progeny tracked following each division to determine whether or not they maintained or reacquired E(spl)m\u03b3-GFP expression. In these conditions, normal NBs underwent asymmetric cell divisions and E(spl)m\u03b3-GFP expression was rapidly extinguished in the GMC progeny (Figure 2A,C,E and Figure 2\u2014video 1). In the NB itself the levels fluctuated, with a defined temporal pattern through the cell cycle where the highest expression occurred as the NBs entered and exited mitosis (Figure 2A,C,E and Figure 2\u2014video 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) Time points from time lapse movie of (A) wild type (>LacZ) and (B) Nact expressing NB lineage, Histone-RFP (red, H2Av-RFP) marks all nuclei, corresponding \u0395(spl)m\u03b3-GFP levels in grey scale below. \u0395(spl)m\u03b3-GFP is rapidly extinguished in NB progeny in wild-type and in Nact expressing lineages but appears in some progeny after a delay. Time is indicated below each panels and cartoons summarise the cell populations in each lineage. NBs are show in darker shades of green, GMCs in yellow, newly born GMCs in pale green and neurons in grey. NB-like cells are shown in green. Coloured asterisks indicate cells coming from the same ancestor. White arrows indicate cells arising from a mitotic division. Numbers correspond to different cells indexed in the following diagrams. Scale bar 25 \u03bcm. (C, D) Bar chart diagram showing the progression over time of each cell in a wild-type NB lineage (C) or of selected NB progeny over time from one Nact expressing lineage. The diameter of the bar represents cell size and the colour represents expression levels of \u0395(spl)m\u03b3-GFP according to the scale (Blue, low to yellow, high). Dashed lines indicate mitotic events and the emerging daughter cells. (E, F) Diagrams depicting changes in the intensity of E(spl)m\u03b3-GFP in NBs and their progeny over time from control (E) and Nact-expressing (F) NB lineages. Note the decay in E(spl)m\u03b3-GFP levels in the newly born GMCs in both control and Nact lineages and the re-expression of E(spl)m\u03b3-GFP in an older Nact progeny P2.\n\nIn the presence of high levels of Notch activity, the NBs continued to undergo asymmetric cell divisions and the expression of E(spl)m\u03b3-GFP was extinguished in the GMC, albeit with slightly slower kinetics than in normal conditions (Figure 2B,D,F and Figure 2\u2014video\u00a02). After a few hours, however, some of the NB progeny reacquired E(spl)m\u03b3-GFP expression. The reappearance of E(spl)m\u03b3-GFP only occurred in progeny born before the onset of imaging (Figure 2B,D,F and Figure 2\u2014video\u00a02), indicating that it must occur in cells that had been born from the NSC\u00a0>\u00a08 hr earlier. As the GMC divides after\u00a0~4 hr, it is likely that the cells regaining E(spl)m\u03b3-GFP are progeny of a GMC division. Furthermore, in most cases they were intermediate in size between NBs and GMCs, suggesting that these changes precede the expression of E(spl)m\u03b3-GFP (see P3.1 in Figure 2B and D). Subsequent to expressing E(spl)m\u03b3-GFP, the cells adopted an asymmetric mode of division and only the larger daughter cell retained expression (see P2 in Figure 2B and D). These profiles indicate that NB-like cells arise from a reactivation of the stem-cell programme in the progeny, rather than an expansion of the stem cells themselves, and that the normal process of stem-cell fate attenuation is initiated but subsequently overcome.\n\n### Mi-2 attenuates the response to Notch in NSC lineages\n\nTo identify the mechanisms that attenuate the response to Notch, delaying the transformation towards tumourigenesis, we screened for genes whose depletion by RNAi was sufficient to accelerate Notch-induced tumourigenesis. The candidates were primarily drawn from the pool of genes that are frequently mutated in human solid brain tumours (e.g neuroblastomas and glioblastomas) based on genome-wide sequencing studies (Bosse and Maris, 2016; Chmielecki et al., 2017; Huether et al., 2014; Lin et al., 2016; Parsons et al., 2011; Pugh et al., 2013; Wu et al., 2014). To probe function in the context of Notch-induced tumours, we used GrhNB-Gal4 to drive Nact in combination with RNAi lines targeting candidate genes and monitored the consequences on Dpn. Expression was restricted to a 24 hr window, using Gal80ts, a condition where constitutively Nact produces only mild hyperplasia, as described above (Figure 1A).\n\nFrom a total of 124 genes screened in this way, only a small proportion (13.7%) modified the Notch-induced hyperplasia. Of those, the most striking effect was seen with the knock down of Mi-2, a member of the NuRD ATP-remodelling complex. This significantly enhanced the number of Dpn-positive (Dpn+ve) cells elicited by Nact: the total number of Dpn expressing cells was enhanced 2.7-fold when Mi-2 was depleted compared to Nact alone (1322\u00a0\u00b1\u00a071 vs 485\u00a0\u00b1\u00a027; Figure 3A and D). In contrast, Mi-2 depletion alone was not sufficient to bring about any increase in Dpn+ve cells (161\u00a0\u00b1\u00a02 vs 158\u00a0\u00b1\u00a02), despite that this treatment robustly extinguished Mi-2 protein levels in the NB lineages (Figure 3\u2014figure supplement 1A). Similar effects, where Mi-2 depletion enhanced the hyperplasia from Nact, were obtained using a range of different Gal4 lines that drive expression in the NB and its early born progeny (Figure 3\u2014figure supplement 1B,C,E,F). No such effects were seen when active Notch and Mi-2 RNAi, were co-expressed in more mature neuronal progeny (Figure 3\u2014figure supplement 1D,G), indicating there is a limited window during which they can revert these cells to NBs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig3-v2.jpg)\n\n**Figure 3.:** (A) Depletion of Mi-2 increases the number of hyperplastic Dpn+ve cells (white) caused by Nact expression in type I lineages. Expression of Dpn in wild type (>LacZ;>w Ri, first column), Mi-2 depleted only (>LacZ;>Mi-2-Ri; BL33415, 2nd column), Nact expressing (>N\u0394ecd;>w Ri; 3rd column) and Nact with Mi-2 depleted (>N\u0394ecd;>Mi-2-Ri, 4th column). (B\u2013C) Loss of MTA-like (B) or Caf1-p55 (C) increases the number of hyperplastic Dpn+ve cells (white) caused by Nact expression. Expression of Dpn (white) in Nact expressing lineages (1st column:\u00a0>N\u0394ecd;\u00a0>w-Ri) and in Nact with MTA-like or Caf1p55 depleted (2nd column:\u00a0>N\u0394ecd;\u00a0>MTA-like-Ri; or\u00a0>N\u0394ecd;\u00a0>Caf1 p55-Ri). (D) Number of Dpn+ve cells per VNC induced by expression of Nact was significantly increased by depletion of Mi-2, whereas depletion of Mi-2 alone had little effect. (E\u2013F) Number of Dpn+ve cells per VNC induced by Nact was significantly increased upon knock down of MTA-like (E) or Caf1-p55 (F). Scatter dot plots where narrow black lines represent IQR, wider black line indicates median and whiskers indicate\u00a0\u00b11.5\u00a0\u00d7 IQR. (*p<0.05, **0.001\u00a0< P < 0.05, ***p<0.001, ****p<0.0001, t-test). N\u00a0=\u00a025\u201328 for each genotype tested; light and darker shades indicate data points from the three independent experiments. (G) Schematic depiction of NuRD Complex, with subunits tested here in dark orange.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Mi-2 knockdown leads to severe depletion of Mi-2 protein levels. Mi-2 protein (red) levels in VNCs of the indicated genotypes: Nact alone (grhNBGal4Gal80ts\u00a0>N\u0394ecd;\u00a0>w-Ri), Mi-2 knockdown in Nact (>N\u0394ecd;\u00a0>Mi-2-Ri) or Mi-2 knockdown alone (>LacZ;\u00a0>Mi-2-Ri). Dpn (green) and Mira (blue) mark NBs. (B) Depletion of Mi-2 in NBs using insc-Gal4 leads to an increase of the number of hyperplastic Dpn+ve cells in Nact conditions. Expression of Dpn (green or white) is shown in VNCs with Nact alone (>N\u0394ecd;\u00a0>w-Ri) and with knock down of Mi-2 in combination with Nact (>N\u0394ecd;\u00a0>Mi-2-Ri). Ase (red) marks NBs and GMCs, whereas Mira (blue) marks NBs (C) Depletion of Mi-2 in GMCs and newly born NSC progeny using casGMR71C09-Gal4 leads to an increase in the number of hyperplastic Dpn+ve cells in Nact conditions. Dpn (white) in wild type (>LacZ;\u00a0>w-Ri), Nact expressing (>N\u0394ecd;\u00a0>w-Ri) knock down of Mi-2 only (>LacZ;\u00a0>Mi-2-Ri Bloomington line #33415), and knock down of Mi-2 in Nact expressing (>N\u0394ecd;\u00a0>Mi-2-Ri) lineages. Ase (red) marks NBs and GMCs, whereas Mira (blue) marks NBs. (D) Neither Nact nor Mi-2 depletion nor combination of Nact with Mi-2 depletion in mature neurons via nsyb-Gal4 lead to increase in Dpn+ve cells. Dpn (white) in knock-down of Mi-2 only (>LacZ;\u00a0>Mi-2-Ri; Bloomington line #33415), Nact expressing (>N\u0394ecd;\u00a0>w-Ri) and knock down of Mi-2 in Nact expressing (>N\u0394ecd;\u00a0>Mi-2-Ri) lineages. Ase (red) marks NBs and GMCs, whereas Mira (blue) marks NBs. (E). Quantification of the number of Dpn+ve cells per VNC under the conditions indicated. When Mi-2 was depleted in GMCs using casGMR71C09-Gal4 in Nact conditions compared to Nact alone the number of Dpn+ve cells per VNC was significantly increased. VNCs from WT or Mi-2 knockdown backgrounds exhibit normal number of Dpn+ve cells. Box represents IQR, black line indicates median and whiskers indicate\u00a0\u00b11.5\u00a0\u00d7 IQR. (*p<0.05, ****p<0.001, t-test) (F) Quantification of the number of Dpn+ve cells per VNC under the conditions indicated, where Mi-2 was depleted in NBs using insc-Gal4 in Nact conditions compared to Nact alone. Box represents IQR, black line indicates median and whiskers indicate\u00a0\u00b11.5\u00a0\u00d7 IQR. (*p<0.05, ****p<0.001, t-test). (G) The number of Dpn+ve cells per VNC did not change where Mi-2 was depleted in neurons using nsyb-Gal4 in Nact conditions compared to Nact alone or Mi-2-depletion alone and was indistinguishable from wild-type (circa 150\u2013160 Dpn+ve cells). Box plots, where Box represents IQR, black line indicates median and whiskers indicate\u00a0\u00b11.5\u00a0\u00d7 IQR. (*p<0.05, **0.001\u00a0< P < 0.05, ***p<0.001, ****p<0.0001, t-test).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013B)\u00a0Depletion of Mi-2 in NB lineages that receive excessive Notch signalling results in an increase in the expression of the Notch regulated enhancers from pathetic (A; path[NRE]-GFP, green) (A) or CycE (B; CycE[NRE]-GFP, green) as indicated. Expression of Dpn (red) and Notch reporters (green) in wild type (control), Nact expressing (>Nact;\u00a0>w-Ri) and Nact with Mi-2 depleted (>Nact;\u00a0>Mi-2-Ri). Hyperplastic lineages with low/no (arrows) or high (arrowheads) levels of Notch reporter expression are indicated. (C) Grainy head (Grh) and Miranda (Mira) are upregulated when Mi-2 is depleted in NB lineages expressing Nact; Dpn+ve (green), Grh+ve (red) and Mira+ve (blue) in the indicated genotypes.\n\nAs Mi-2 is a core member of the NuRD chromatin remodelling complex, we next asked whether loss of other members of this complex would exhibit similar effects in the Notch driven hyperplasia. Knock down of MTA-like (Figure 3B) or Caf1-p55 (Figure 3C) both produced a 1.4-fold enhancement of Notch-induced hyperplasia (Figure 3E,F). The fact that these phenotypes are relatively weak, compared to that from depleting Mi-2 may be technical, due to differences in knock-down or protein stability, or it may indicate that the other subunits, which are involved in protein-protein interactions, are less critical than the catalytic Mi-2. Nevertheless, the results suggest that Mi-2 functions in attenuating Notch activity via its participation in the NuRD complex.\n\nTo investigate whether the increase in Dpn+ve cells occurs because Mi-2/NuRD complex is necessary to switch off the response to Notch in GMCs, we performed live imaging of E(spl)m\u03b3-GFP in NSC lineages with reduced Mi-2 with and without Nact. Depletion of Mi-2 alone had no discernible effect on E(spl)m\u03b3-GFP in GMCs: it was extinguished as in normal conditions (Figure 4\u2014figure supplement 1 and Figure 4\u2014video 1). However, in the context of Nact there was a striking persistence of E(spl)m\u03b3-GFP in the GMCs in a substantial proportion of lineages (27.8%; Figure 4A\u2013E and Figure 4\u2014video 2,3). Thus, the newly born GMCs retained high levels of E(spl)m\u03b3-GFP for the full duration of the movie, while the NB underwent several rounds of division (Figure 4A\u2013D and Figure 4\u2014video 2,3). Furthermore, when E(spl)m\u03b3-GFP expressing progeny then divided, both daughter cells retained E(spl)m\u03b3-GFP unlike the situation in the presence of Nact alone, where the acquisition of E(spl)m\u03b3-GFP in the progeny was linked to them adopting asymmetrical divisions. These data demonstrate therefore that Mi-2/NuRD complex has an important role in suppressing the ability of the stem-cell progeny to respond to Notch and suggests that it contributes to the shut-down of stem-cell promoting genes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Time points from two different time lapse movies of Nact Mi-2-RNAi NB lineages (dissociated from larval brains with grhNBGal4 Gal80ts at the permissive temperature for 24 hr). \u0395(spl)m\u03b3-GFP remains at high levels in emerging GMCs. Upper panels, bright-field images of NB and its progeny combined with Histone-RFP (red, H2Av-RFP) to monitor cell cycle stages; lower panels, expression of \u0395(spl)m\u03b3-GFP (greyscale). Time is depicted below each panel along with cartoons of the lineages where NBs are in darker shades of green, GMCs with low expression of \u0395(spl)m\u03b3-GFP in light green. Numbers correspond to different cells indexed in C, D. Scale bar 25 \u03bcm. (C, D) Bar chart depicting progression of each cell in a Nact Mi-2 RNAi NB lineage, bar thickness indicates cell-size and the colour represents \u0395(spl)m\u03b3-GFP levels according to the scale (blue low levels, yellow high levels). Dashed lines mark mitotic events linking to the emerging daughter cells. (E) Bar diagram depicted the percent of lineages with newly born GMCs that retain expression of \u0395(spl)m\u03b3-GFP in WT, Nact expressing and Nact expressing with compromised Mi-2. (F) Levels of \u0395(spl)m\u03b3-GFP during one division cycle in NBs from WT,>Nact and>Nact, Mi-2 RNAi. \u0395(spl)m\u03b3-GFP levels are high in interphase, immediately after mitosis in early G1 and before mitosis in late G2. However, in\u00a0>Nact, Mi-2 knockdown, the second phase of high \u0395(spl)m\u03b3-GFP is lost. (G) Plot of \u0395(spl)m\u03b3-GFP levels in newly born GMCs in WT,>Nact and>Nact; Mi-2 RNAi. Note that \u0395(spl)m\u03b3-GFP levels decay in newly born GMCS in WT and\u00a0>Nact but are maintained in\u00a0>Nact; Mi-2 RNAi lineages.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Time points from a time lapse movie of LacZ; Mi-2-Ri NB lineages (dissociated from larval brains with grhNBGal4 Gal80ts at the permissive temperature for 24 hr). \u0395(spl)m\u03b3-GFP is switched off in emerging GMCs as in WT lineages. Upper panels, bright field images of NB and its progeny combined with Histone-RFP (red, H2Av-RFP) to monitor cell cycle stages; lower panels, expression of \u0395(spl)m\u03b3-GFP (black). Time is depicted below each panel along with cartoons of the lineages where NBs are in darker shades of green, emerging GMCs with low expression of \u0395(spl)m\u03b3-GFP in light green and GMCs with no expression of E(spl)m\u03b3-GFP in yellow. Asterisks indicate progeny from same ancestor cell. Numbers correspond to different cells indexed in B. Scale bar 25 \u03bcm. (B) Bar chart depicting progression of each cell in a Mi-2-Ri NB lineage, bar thickness indicates cell-size and the colour represents \u0395(spl)m\u03b3-GFP levels according to the scale (blue low levels, yellow high levels). Dashed lines mark mitotic events linking to the emerging daughter cells. (C) Plot of \u0395(spl)m\u03b3-GFP levels in NBs, newly born GMCs and progeny in\u00a0>LacZ; Mi-2-Ri. Note that \u0395(spl)m\u03b3-GFP levels decay in newly born GMCS in\u00a0>LacZ; Mi-2-Ri lineages.\n\n### Mi-2 loss leads to de-repression of E(spl)-C genes\n\nTo investigate further whether Mi-2 is important for attenuating the response of Notch regulated enhancers, we analysed its effects at the E(spl)-Complex in Kc cells, where we have previously analysed the changes in expression and in the recruitment of the Notch pathway transcription factor, Suppressor of Hairless [Su(H)], in the presence and absence of Notch activity (Skalska et al., 2015). Down-regulating Mi-2 by treating cells with RNAi resulted in a robust increase in the expression of E(spl)m\u03b2, \u0395(spl)m3 (Figure 5A\u2013C). These effects were similar to those seen when the co-repressor Hairless was depleted (Figure 5C,D and Figure 5\u2014figure supplement 1A). Furthermore, loss of Mi-2 in the context of conditions where Notch signalling was activated, led to an enhanced induction of the E(spl) genes that are normally up-regulated in these conditions (Figure 5C). Similar effects were observed for three other Notch regulated genes in Kc cells, which were up-regulated following depletion of Mi-2 (Figure 5\u2014figure supplement 1B). Thus, loss of Mi-2 leads to de-repression of E(spl) genes and of other Kc cell Notch targets in Notch off conditions and enhances their activation in Notch on conditions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig5-v2.jpg)\n\n**Figure 5.:** (A) Genomic region spanning \u0395(spl)-C locus with graphs depicting Mi-2 bound regions in S2 cells (purple) (Kreher et al., 2017) and Kc cells (magenta) (modEncode; Ho et al., 2014), Su(H)-bound regions in Kc cells (cyan) (Skalska et al., 2015) and chromatin signatures from Kc cells (Skalska et al., 2015). Gene models are depicted in black. (B) Levels of Mi-2 protein are reduced upon knockdown of Mi-2 via RNAi in Kc cells for 3 days compared to knockdown of GFP or Hairless via RNAi. Anti-tubulin is a control for loading. (C, D) Fold change in RNA levels in Kc cells upon knockdown of Mi-2 (C) or Hairless (D) compared to control conditions (con: GFP RNAi) and to cells with Notch activation (Nact). Note that E(spl)m\u03b2 and E(spl)m3 are both significantly de-repressed in Notch-off state and show even higher increase in expression in Notch-on state. (E) Fold change in RNA levels in Kc cells upon combined knockdown of Mi-2 and Hairless compared to control conditions and single knockdown of Mi-2 or Hairless. Note additive effects on E(spl)m\u03b2 and E(spl)m3 de-repression in combined knock-down conditions. (F) Mi-2 does not directly interact with Hairless. Immunoprecipitations with anti-GFP from Kc cells expressing Hairless-GFP or MCP-GFP as control, Su(H) is co-purified with Hairless but not Mi-2. (G) Enrichment of Su(H) is indicated at E(spl)-C or regions in Kc cells as revealed by ChIP in control (grey) or Mi-2 knockdown (for 3 days, green) conditions in Notch off (light shading) and Notch active (EGTA treatment 30 min; dark shading). Su(H) recruitment in Notch active and in control conditions is not altered by knockdown of Mi-2. (H) Enrichment of Mi-2 at indicated positions in E(spl)-C or other regions in Kc cells as revealed by ChIP. (P values: *0.01\u00a0< P < 0.05, ** 0.001\u00a0< P < 0.01, ***p<0,001, Multiple t-tests).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A)\u00a0Fold change in RNA levels in Kc cells upon knockdown of Mi-2 or Hairless compared to control conditions (con: GFP RNAi). Mi-2 or Hairless knock down was performed for 3 days prior to the experiment. Note that Mi-2 and H are both downregulated indicating that the knockdown strategy was successful and E(spl)m\u03b4, E(spl)m\u03b3, E(spl)m\u03b1 and E(spl)m7 are all significantly de-repressed in Notch-off state. (B) Fold change in RNA levels in Kc cells upon knockdown of Mi-2 compared to control conditions (con: GFP RNAi) and to cells with Notch activation (Nact). Note that other Notch regulated genes such as CG12290, CG17119, Notch and regular (rgl) are de-repressed in Notch-off state and have enhanced expression in Notch-on state (C) Fold change in RNA levels in Kc cells upon combined knockdown of Mi-2 and Hairless compared to control conditions and single knockdown of Mi-2 or Hairless. Note that Mi-2 and H are downregulated in both single and double conditions indicating that the knockdown strategy was successful. (D) Enrichment of Histone H3 is indicated at E(spl)-C or regions in Kc cells as revealed by ChIP in control (grey) or Mi-2 knockdown (for 3 days, green) conditions in Notch-off (light shading) and Notch-on (EGTA treatment 30 min; dark shading). H3 distribution in Notch active and in control conditions is not altered by knockdown of Mi-2. (E) Enrichment for various histone modifications such as H3K27acetylation, H3K27trimethylation and H3K56acetylation is indicated at E(spl)-C locus in Kc cells as revealed by ChIP in control (grey) or Mi-2 knockdown (for 3 days, green) conditions in Notch-off (light shading) and Notch-on (EGTA treatment 30 min; dark shading). No change in the levels of these modifications was detected following knockdown of Mi-2. (p values: *0.01\u00a0< p < 0.05, ** 0.001\u00a0< p < 0.01, ***p<0.001, Multiple T tests).\n\nThe effects of Mi-2 depletion are similar to those when Hairless is removed. Thus, one model is that Mi-2 is normally recruited by the Su(H)/Hairless corepressor complex to shut down target enhancers. If Hairless is required to recruit Mi-2, the combined knock down should produce similar effects to knockdown of Hairless alone. In contrast, concomitant knock down of both Mi-2 and Hairless led to a much greater de-repression of E(spl)m\u03b2 and E(spl)m3 than from either knock down alone, suggesting the two factors work independently to repress these genes (Figure 5E and Figure 5\u2014figure supplement 1C). In agreement, no interaction between Su(H) and Mi-2 was detected (Figure 5F) arguing that Mi-2 acts independently of the SuH-Hairless co-repressor complex to attenuate the expression of E(spl) genes. A second hypothesis was that Mi-2 reorganises the chromatin at target enhancers, preventing enhanced recruitment of Su(H) in the presence of Nact (Kreher et al., 2017). However, loss of Mi-2 had no effect on Su(H) recruitment in either Notch off or Notch on conditions (Figure 5G) neither did it affect the levels of H3K27 trimethylation, the repressive histone modification deposited by Polycomb complexes, or of H3K27ac (Figure 5\u2014figure supplement 1D,E).\n\nThese data raise the question whether the Mi-2 complex acts directly at the target enhancers or exerts its effects indirectly. We therefore examined the overlap between Notch regulated enhancers and Mi-2-bound regions based on previous genome-wide profiling of Su(H) (Skalska et al., 2015) and Mi-2 (Ho et al., 2014) by chromatin immunoprecipitation in Kc cells. Strikingly, 72% of Su(H) bound regions overlapped with Mi-2 occupied sites. These included significant enrichments for Mi-2 at the E(spl)m\u03b2 and E(spl)m3 regulatory regions in the E(spl)-C (Figure 5A), which we verified by ChIP qPCR (Figure 5H). Thus, Mi-2 is present at Notch regulated enhancers suggesting it has a direct effect on their activity.\n\nIn summary, Mi-2 binds directly to Notch target genes and exerts a repressive effect on them, even in Kc cells, but it appears to do so independently of Su(H) and Hairless. This implies that other factors must be involved in its recruitment.\n\n### Zfh1 cooperates with Mi-2 in stem-cell lineages\n\nIf Mi-2 recruitment is not dependent on Su(H), this implies that other DNA-binding transcription factors are required. Likely candidates in the NB lineages include transcription factors that are required to promote differentiation or that have been linked to Mi-2. The former include Prospero, which is asymmetrically segregated and accumulates in the nuclei of the GMCs, and Lola, which is highly expressed in stem-cell progeny and is necessary to prevent their de-differentiation (Southall et al., 2014). The latter include Tramtrack, a BTB zinc-finger protein shown to bind directly to Mi-2 (Murawsky et al., 2001; Reddy et al., 2010), and Zfh1, a zinc-finger- homeodomain repressor whose homologue ZEB2 cooperates with NuRD complex to antagonise Notch in Schwann cells (Wu et al., 2016). We therefore tested whether depletion of any of the candidate factors was sufficient to enhance Nact-induced hyperplasia in a similar way to Mi-2. Of those tested, only two factors significantly enhanced the hyperplasia, namely Prospero and Zfh1, indicating that they were plausible candidates to recruit Mi-2 (Figure 6A,B and Figure 6\u2014figure supplement 1A,B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig6-v2.jpg)\n\n**Figure 6.:** (A) Zfh1 depletion enhances the number of Dpn+ve cells (green or white channels) caused by Nact over-expression, Ase marks NBs and GMCs, Pros marks progeny. (B) Scatter dot plot, the number of Dpn+ve cells per VNC in\u00a0>Nact;>zfh1 Ri (N\u00a0=\u00a024, three experiments) was significantly increased compared to\u00a0>Nact;>wRi larvae (N\u00a0=\u00a034, three experiments). (C) Overexpression of Zfh (>zfh1 PB; w\u2013Ri) results in decreased number of Dpn+ve cells per VNC (N\u00a0=\u00a031, three experiments) compared to wild type (>LacZ;>w Ri; N\u00a0=\u00a017, three experiments) or Mi-2 knockdown alone (>LacZ;>Mi-2-Ri; N\u00a0=\u00a025, three experiments). Concomitant loss of Mi-2 (>zfh1 PB;>Mi-2Ri; N\u00a0=\u00a033, three experiments) rescues Zfh1-induced loss of NBs. Ase and Pros as in (A). (D) Scatter dot plot with number of Dpn+ve cells in each condition quantified. (E) zfh1-GFP expression in type I NB lineages. Zfh1 is expressed in newly born neurons and at low levels in GMCs (yellow arrowheads). Ase marks neuroblasts and GMCs whereas Pros marks older neuronal progeny in NB lineages.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Depletion of Pros enhances the number of Dpn+ve cells (green or white channels) caused by Nact over-expression, Ase marks NBs and GMCs, Pros marks progeny. (B) Scatter dot plot, the number of Dpn+ve cells per VNC in\u00a0>Nact;>Pros Ri (N\u00a0=\u00a024, three experiments) was significantly increased compared to\u00a0>Nact;>w Ri larvae (N\u00a0=\u00a027, three experiments). (C) Overexpression of Pros (>YFP Pros; w\u2013Ri) results in decreased number of Dpn+ve cells per VNC (N\u00a0=\u00a015, four experiments) compared to wild type (>LacZ;>w Ri; N\u00a0=\u00a017, four experiments) or Mi-2 knockdown alone (>LacZ;>Mi-2-Ri; N\u00a0=\u00a016, four experiments). Concomitant loss of Mi-2 (>YFP Pros;>Mi-2-Ri; N\u00a0=\u00a014, four experiments) does not rescue Pros-induced NB loss, instead it further decreases the number of Dpn+ve cells. Ase marks NBs and GMCs, Mira marks NBs. (D) Quantification of Dpn+ve cells in each condition, where shading of symbols indicates different experimental replicates for each genotype, with mean and SEM indicated by black lines.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Ectopic expression of Zfh1 reduces the number of Dpn+ve cells (green or white channels) caused by Nact overexpression. This effect is partially rescued by the loss of Mi-2. Ase marks NBs and GMCs, Pros marks progeny. (B) Quantification of Dpn+ve cells per VNC in each condition, where shading of symbols indicates different experimental replicates for each genotype, mean and SEM indicated by black lines.\u00a0>\u00a0Nact;>zfh1 PB,>w Ri (N\u00a0=\u00a026, three experiments) was significantly decreased compared to\u00a0>Nact;>LacZ,>w Ri larvae (N\u00a0=\u00a011, three experiments), whereas it remained unaltered in\u00a0>Nact;>zfh1 PB,>Mi-2-Ri (N\u00a0=\u00a020, three experiments). (C) Mi-2-YFP and zfh1-GFP expression in type II NB lineages. Mi-2 is expressed in high levels in the Type II NB and lower levels in INPs, whereas Zfh1 is expressed only in some neurons. Yellow outlines of Type II lineages. Dpn (red) and Mira (blue) mark neuroblasts and INPs.\n\nIf Prospero or Zfh1 are involved in attenuating the activity of stem-cell genes via their recruitment of Mi-2, their ectopic expression in NBs might promote their differentiation in a Mi-2-dependent manner. Indeed, expression of either Prospero or Zfh1 was sufficient to significantly reduce the number of Dpn+ve cells, suggesting they have suppressed NB identity (Figure 6C,D and Figure 6\u2014figure supplement 1C,D). Furthermore, depletion of Mi-2 partially overcame the effects of Zfh1 overexpression, restoring the number of NBs to close to normal levels (Figure 6B and D). In contrast, Mi-2 depletion failed to rescue the effects from Prospero over-expression (Figure 6\u2014figure supplement 1C,D). Finally, if Zfh1 antagonises the ability of Notch to promote expression of stem-cell genes, its ectopic expression in NBs with excessive Notch should prevent the formation of hyperplasia. In agreement, Zfh1 overexpression attenuated the Notch-induced hyperplasia, an effect that was partially abolished by loss of Mi-2 (Figure 6\u2014figure supplement 2A\u2013B) Together these data argue that Zfh1 cooperates with Mi-2 to suppress stem-cell identity.\n\nIf Zfh1 is involved in shutting down the stem-cell programme with Mi-2, it should be present in the NSC progeny during the period where they are resistant to ectopic Notch activity. Indeed, using a fly line in which the endogenous Zfh1 is fused to GFP (Albert et al., 2018). Zfh1 was detected in the progeny that are located in proximity to the NB and in the Asense-labelled GMCs, albeit at lower levels (Figure 6E) in Type I NB lineages. In contrast, Zfh1 was absent from the NB and INPs in Type II lineages albeit these cells exhibited strong or moderate Mi-2 levels, respectively (Figure 6\u2014figure supplement 2C). Together the results point to Zfh1 as an important intermediary in recruiting Mi-2/NuRD complex to shut off stem-cell enhancers in the NB progeny of Type I lineages. However, it is likely that different factors will recruit Mi2 in other contexts where it is required to tune Notch-responsive enhancers.\n\n## Discussion\n\nIn order to progress towards differentiation, stem-cell progeny need to shut off the transcription of genes involved in maintaining the self-renewing stem-cell programme. Our results demonstrate the importance of Mi-2/NuRD chromatin complex in making this switch in Drosophila NB lineages, specifically in Type I lineages. Under normal conditions, these stem-cell progeny are remarkably resistant to ectopic Notch activity, only reverting to a more-stem-cell-like fate after prolonged exposure to a constitutively active Notch. However, when Mi-2 or other members of the NuRD complex were depleted, progeny cells reverted with much higher frequency when exposed to high levels of Notch activity, leading to rapid onset of hyperplasia. Thus, we propose that Mi-2/NuRD complex functions to decommission the stem-cell enhancers in the differentiating progeny\u00a0(Figure 7) rendering them resistant to stem-cell promoting factors like Notch (Whyte et al., 2012). As the iterative use of signaling pathways, including Notch, is important throughout development to generate different tissue and cell types, it is likely that NuRD will be widely deployed in such developmental transitions to decommission enhancers in readiness for subsequent lineage decisions.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/41637/elife-41637-fig7-v2.jpg)\n\n**Figure 7.:** The presence of Zfh1 and Mi-2 favours the decommissioning of enhancers from E(spl) and other Notch target genes in GMCs (yellow) to ensure their expression is switched off. Notch is on in NBs (green) and off in GMCs (yellow cells) due to asymmetrical segregation of Numb (ref). GMCs divide to produce two post-mitotic neuronal cells (grey). In NB lineages with constitutive Notch activity (Nact), the presence of Mi-2 at enhancers, recruited by Zfh1 (and potentially by other factors too), is sufficient to attenuate Nact, so that E(spl) and other target genes are switched off in GMCs. In a few NB progeny the effects of Mi-2 are overcome with time, and E(spl) genes are up-regulated as they revert to NB-like cells. Depletion of Mi-2 in NB lineages expressing Nact severely compromises enhancer decommissioning so that E(spl) and other Notch target genes are upregulated in many of the GMCs. The majority of the NB progeny acquire an NB-like fate. SUPPLEMENTARY MATERIAL: Legends for videos.\n\nThe fact that expression of Nact fails to sustain expression of even its direct target genes, E(spl)m\u03b3-GFP and dpn, in the progeny GMCs argues that their enhancers have become refractory. As the multi-protein NuRD complex contains both the Mi-2/CHD4 ATP-dependent chromatin remodelling and histone deacetylase subunits it could curtail enhancer activity by promoting an increase in local nucleosome density at these enhancers or by depleting H3K27 actetylation, as occurs in mouse embryonic stem cells where Mi-2 enables recruitment of Polycomb repression complexes (Reynolds et al., 2012b). Based on the results from analysing chromatin changes following Mi-2 knock-down in cultured cells, we favour the former model. No change in H3K27ac or H3K27me3 was observed at Notch target enhancers despite the fact that the genes were de-repressed. Furthermore, there was no evidence for eviction of the key transcription factor Su(H) from these enhancers. This is more compatible with a model where NuRD remodelling perturbs the recruitment of Mediator and PolII to restrict initiation from these genes (Bornel\u00f6v et al., 2018).\n\nAlthough originally considered a repressive complex, NuRD is found at most sites of active transcription in embryonic stem cells, where it appears to fine-tune gene expression as well as having a major role in allowing cells to exit self-renewal (Bornel\u00f6v et al., 2018; de Dieuleveult et al., 2016; Miller et al., 2016; Reynolds et al., 2012a; Reynolds et al., 2012b). It remains unclear what triggers the changes that enable this transition towards differentiation. One possibility is that the first step towards decommissioning or repurposing these enhancers involves removal of positive factors that keep a \u2018check\u2019 on NuRD activity with the consequence that NuRD predominates to increase local nucleosome density (Whyte et al., 2012). At the same time, the upregulation of differentiation factors that favour NuRD complex recruitment can enhance such a switch. This is the mechanism we propose for Zfh1, which is upregulated in the NB progeny and whose ability to suppress the stem-cell programme when ectopically expressed appears to require Mi-2 (Figure 7). Depletion of Zfh1 in the context of ectopic Nact also enhanced hyperplasia, similarly to depletion of Mi-2. Although there are caveats to using RNAi for establishing epistatic relationships, the data argue that Zfh1 and NuRD act together to render enhancers of genes such as E(spl)m\u03b3-GFP and dpn refractory to Notch activity. This is similar to the role proposed for the mammalian homologue ZEB2 during Schwann Cell differentiation, where it engages the NuRD complex to antagonise Notch and Sox2 (Wu et al., 2016). Indeed, a missense mutation in the Zeb2 that abolished its association with the NuRD complex rendered it incapable of promoting Schwann Cell differentiation (Wu et al., 2016).\n\nOther factors have also been shown to block responsiveness to Notch. For example eyeless/Pax6 is switched on in the progeny of old Type II NBs and makes them refractory to Notch (Farnsworth et al., 2015) and Ikaros expression during T-cell differentiation shapes the timing and repertoire of Notch target genes (Zhang et al., 2011). Whether these factors rely on Mi-2 remains to be explored but as Ikaros was found to associate with the Mi-2/NuRD complex, it could rely on similar mechanism to Zfh1/Zeb2 (Sridharan and Smale, 2007). Likewise, PROX 1, the mammalian homologue of Prospero, interacted with NuRD complex to suppress Notch pathway in colorectal cancer cells. We propose therefore that different factors will be involved in recruiting Mi-2 depending on the cell-type. For example, in Kc cells the Su(H) bound regions are enriched for the binding motif for Tramtrack, which has been shown to physically interact with Mi-2 (Murawsky et al., 2001) and is thus a good candidate. Conversely, the fact that Type II neuroblast lineages are exquisitely sensitive to ectopic Notch activity argues that these cells lack factor(s) that recruit Mi-2 to the target enhancers. Indeed Zfh1 is not expressed in the intermediate progeny of these lineages and it has been shown that an alternate mechanism, involving the repressor earmuff/dFezf is deployed to repress the competence of INPs to respond to Notch targets and thus their dedifferentiation into NBs (Janssens et al., 2014; Koe et al., 2014). .\n\nThe fact that prolonged Notch activity can ultimately reprogramme progeny towards the stem-cell fates, driving hyperplasia even in the presence of Mi2, argues that NuRD is not fully silencing target genes. This fits with the model that NuRD is involved in fine-tuning transcriptional responses (Bornel\u00f6v et al., 2018). Thus, at enhancers where NuRD predominates it would increase nucleosome density rendering the enhancer less accessible so that higher amounts of signal are required to overcome it. If active Notch accumulates in the older progeny, it could reach a critical threshold to win-out over NuRD. Alternatively, Mi2/NuRD may only be required during the acute phase of transitions and be replaced at later times with other modes of repression that can be more easily overcome by Notch activity. The fact that Zfh1 expression is not sustained in older progeny fits with this model. However, distinguishing these possibilities will require an understanding of the real-time dynamics of the chromatin changes at target loci in individual progeny.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (D. melanogaster)</td>\n      <td>Notch</td>\n      <td>NA</td>\n      <td>ID_FLYBASE:FBgn0004647</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. melanogaster)</td>\n      <td>Mi-2</td>\n      <td>NA</td>\n      <td>ID_FLYBASE:FBgn0262519</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. melanogaster)</td>\n      <td>E(spl)m\u03b3</td>\n      <td>NA</td>\n      <td>ID_FLYBASE:FBgn0002735</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. melanogaster)</td>\n      <td>dpn</td>\n      <td>NA</td>\n      <td>ID_FLYBASE:FBgn0010109</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. melanogaster)</td>\n      <td>zfh1</td>\n      <td>NA</td>\n      <td>ID_FLYBASE:FBgn0004606</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>grh-Gal4</td>\n      <td>PMID: 9651493</td>\n      <td></td>\n      <td>Prokop et al., 1998</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-N\u0394ecd</td>\n      <td>PMID: 8413612,8343959</td>\n      <td></td>\n      <td>Fortini et al., 1993; Rebay et al., 1993</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Mi-2-RNAi</td>\n      <td>Bloomington Stock Center</td>\n      <td>ID_BDSC:33419</td>\n      <td>Genotype: y[1] sc[*] v[1]; P{y[+t7.7] v[+t1.8]=TRiP.HMS00301}attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-MTA1-like RNAi</td>\n      <td>Bloomington Stock Center</td>\n      <td>ID_BDSC:33745</td>\n      <td>Genotype: y[1] sc[*] v[1]; P{y[+t7.7]v[+t1.8]=TRiP. HMS01084}attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Caf1p-55 RNAi</td>\n      <td>Bloomington Stock Center</td>\n      <td>ID_BDSC:34069</td>\n      <td>Genotype: y[1] sc[*] v[1]; P{y[+t7.7] v[+t1.8]=TRiP.HMS00051}attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-zfh1-RNAi</td>\n      <td>Bloomington Stock Center</td>\n      <td>ID_BDSC:29347</td>\n      <td>Genotype: y[1] v[1]; P{y[+t7.7] v[+t1.8]=TRiP.JF02509}attP2/TM3, Sb[1]</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent\u00a0(D. melanogaster)</td>\n      <td>UAS-Pros RNAi</td>\n      <td>Bloomington Stock Center</td>\n      <td>ID_BDSC: 26745</td>\n      <td>Genotype: y[1] v[1]; P{y[+t7.7] v[+t1.8]=TRiP.JF02308}attP2/TM3, Sb[1]</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-zfh1-RB</td>\n      <td>Bloomington Stock Center</td>\n      <td>ID_BDSC: 6879</td>\n      <td>made by Antonio Postigo (Siles et al., 2013); genotype: w[1118]; P{w[+mC]=UAS-zfh1.P}2B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>H2Av-RFP</td>\n      <td>Bloomington Stock Center</td>\n      <td>ID_BDSC:23651</td>\n      <td>w*; P {His2Av-mRFP1}II.2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>zfh1-GFP</td>\n      <td>PMID: 30002131</td>\n      <td></td>\n      <td>Albert et al., 2018</td>\n    </tr>\n    <tr>\n      <td>Cell line \u00a0(D.\u00a0melanogaster)</td>\n      <td>Kc 167 cells</td>\n      <td>Drosophila Genomics Resource Center</td>\n      <td>ID_DGRC: 1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>guinea pig polyclonal anti-Deadpan</td>\n      <td>Christos Delidakis, Heraklion, Greece</td>\n      <td></td>\n      <td>(Immuno fluorescence dilution 1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-Mi-2</td>\n      <td>Alexander Brehm, Marburg, Germany</td>\n      <td></td>\n      <td>(Immunofluorescence dilution 1:10,000) Kreher et al., 2017; PMID: 28378812</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-Asense</td>\n      <td>Y.N.Yan, San Fransisco, USA</td>\n      <td></td>\n      <td>(Immunofluorescence dilution 1:2000) Brand et al., 1993; PMID 8565817</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal anti-Pros</td>\n      <td>Drosophila Hybridoma Studies Bank</td>\n      <td>ID_DHSB: MR1A</td>\n      <td>(Immuno fluorescence dilution 1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal anti-Mira</td>\n      <td>Fumio Matsuzaki, Kobe, Japan</td>\n      <td></td>\n      <td>(Immuno fluorescence dilution 1:100) Ohshiro et al., 2000; PMID 11117747</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>goat polyclonal anti-Su(H)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>ID_SC: sc15813</td>\n      <td>(12 \u03bcl per ChIP with 15\u00a0\u00d7\u00a0106 cells)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-H3K56ac</td>\n      <td>Active Motif</td>\n      <td>ID_Active Motif: 39281</td>\n      <td>(3 \u03bcl per ChIP with 15\u00a0\u00d7\u00a0106 cells)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-H3K27me3</td>\n      <td>Millipore</td>\n      <td>ID_Millipore: 07\u2013449</td>\n      <td>(1 \u03bcl per ChIP with 15\u00a0\u00d7\u00a0106 cells)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-H3K27ac</td>\n      <td>Abcam</td>\n      <td>ID_ABCAM: ab4729</td>\n      <td>(10 \u03bcl per ChIP with 15\u00a0\u00d7\u00a0106 cells)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-H3</td>\n      <td>Abcam</td>\n      <td>ID_ABCAM: ab1791</td>\n      <td>(1 \u03bcl per ChIP with 15\u00a0\u00d7\u00a0106 cells)</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n      <td>oligonucleotides for mRNA levels and ChIP qPCR assays;\u00a0Tables 1 and 2</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>MEGAscript T7 Transcription Kit</td>\n      <td>ThermoFischer Scientific</td>\n      <td>ID_TFS: AMB 13345</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Ambion,DNA-free kit</td>\n      <td>ThermoFischer Scientific</td>\n      <td>ID_TFS: AM1906</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>M-MLV reverse transcriptase</td>\n      <td>Promega Corporation</td>\n      <td>ID_Promega: M531A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>LightCycler 480 SYBR Green I Master PCR Kit</td>\n      <td>Roche</td>\n      <td>ID_Roche: 4707516001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical \u00a0compound, drug</td>\n      <td>Collagenase</td>\n      <td>Sigma</td>\n      <td>ID_Sigma: C0130</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Drosophila genetics\n\nDrosophila stocks are described in FlyBase and were obtained from the Bloomington, Vienna or Kyoto Stocks Centres unless otherwise indicated. Over-proliferating third instar larval CNSs were generated by crossing UAS-N\u0394ecd; UAS-wRNAi flies with tub-Gal80ts; grh-Gal4 flies to drive expression in most NSCs (Prokop et al., 1998). Crosses were kept at 18\u00b0C for 7 days, then shifted to 30\u00b0C for 8 hr, 24 hr or 48 hr prior to dissection.\n\nFlies for the live imaging experiments were of the following genotypes:\n\nControl: UAS-LacZ, E(spl)m\u03b3-GFP; H2Av-RFP,\n\nOverexpressing active Notch: UAS-N\u0394ecd, E(spl)m\u03b3-GFP; H2Av-RFP\n\nDepletion of Mi-2 in presence of Nact: UAS-N\u0394ecd, E(spl)m\u03b3-GFP; UAS-Mi-2RNAi\n\nAll above flies were crossed to tub-Gal80ts, H2Av-RFP; grhNB-Gal4 flies. These crosses were kept at 18\u00b0C for 7 days, then shifted to 30\u00b0C for 24 hr prior to dissection and brain dissociation.\n\nFor knock down of members of the NuRD complex or differentiation TFs in NSCs, the following RNAi lines were initially combined with UAS-N\u0394ecd or UAS-LacZ and then crossed to tub-Gal80ts; grhNB-Gal4 flies: UAS-w RNAi (BL35573), UAS-Mi-2 RNAi (BL33419), UAS-MTA1-like RNAi (BL33745), UAS-Caf1p-55 RNAi(BL34069), UAS-zfh1 RNAi (BL29347), UAS-Pros RNAi (BL26745). Crosses were kept at 18\u00b0C for 7 days, then shifted to 30\u00b0C for 24 hr prior to dissection. Transgenic Flies carrying the putative Notch-regulated enhancers (NREs) in Cyclin E and pathetic\u00a0(Djiane et al., 2013) were also crossed with the above genotypes to assess the effects of Mi-2 knockdown in other Notch target genes in Nact NB lineages.\n\nFor overexpression of TFs in NBs, the following lines: UAS-lacZ (control), orUAS-zfh-RB (made by Antonio Postigo (Siles et al., 2013); BL6879) were combined with UAS-Mi-2 RNAi or UAS-w RNAi (control) and crossed to insc-Gal4; tub-Gal80ts. UAS-ProsYFP (Choksi et al., 2006) or UAS-LacZ were combined with UAS-Mi-2 RNAi or UAS-w RNAi (control) and crossed to tub-Gal80ts; grhNBGal4. The progeny were kept at 18\u00b0C for 7 days and transferred to 30\u00b0C for 24 (, Pros) or 48 (Zfh1) hr prior to dissection.\n\nFlies for assessing changes in NB asymmetric mode of division were of the following genotypes:\n\nControl: UAS-LacZ; Ase-mcherryPonLD, (Derivery et al., 2015)\n\nOverexpressing active Notch: UAS-N\u0394ecd; Ase-mcherryPonLD\n\nThese flies were crossed to tub-Gal80ts; grh-Gal4 flies. Crosses were kept at 18\u00b0C for 7 days, then shifted to 30\u00b0C for 24 hr prior to dissection.\n\nFlies with a CRISPR engineered insertion of GFP into the zfh1 locus, (Zfh1-GFP (Albert et al., 2018) were used to visualise the expression of Zfh1.\n\n### Immunofluorescence\n\nFixation and immunohistochemistry of larval tissues were performed according to standard protocols. Primary antibodies were guinea pig anti-Dpn (1:2000) courtesy of Christos Delidakis; mouse anti-Mira [1:100, (Ohshiro et al., 2000); mouse anti-Pros MR1A (1:50, DHSB); rabbit anti-Ase (1:5000, courtesy of Y.N.Jan); rabbit anti-Grh (1:2000,gift of Christos Samakovlis); rabbit anti-Mi-2 (1:10,000, courtesy of Alexander Brehm (Kreher et al., 2017). Mouse, rabbit or guinea pig secondary antibodies were conjugated to Alexa 488, 555, 568, 633 or 647 (Molecular Probes) or to FiTC, Cy3 or Cy5 (Jackson ImmunoResearch). Samples were imaged on a Leica TCS SP8 confocal microscope (Cambridge Advanced Imaging Center (CAIC), University of Cambridge).\n\n### Live imaging of NBs\n\nLarval brains were dissected in dissection media (1.4M NaCl, 26 mM KCl, 4 mM NaH2PO4, 120 mM NAHCO3 and 50 mM Glucose). Brains were dissociated in collagenase solution [2 mg/ml (Sigma, C0130)] for 15 min, rinsed with culture media [Schneider medium (GIBCO 21720\u2013024), 1 mg/ml Glucose (D-L- glucose monohydrate) with 10% FBS (F4135), 2.5% fly extract, 1 mg/ml human insulin (Sigma, I9278) and 1x Antibiotic Antimycotic (GIBCO, 15240\u2013062)] and transferred into microcentrifuge tubes with 40 \u03bcl/brain culture media. Brains were subsequently sheared mechanically and the emerging dissociated cells were placed into Poly-D-Lysine coated plates. Cells were left to rest for 30 min prior to imaging for 10\u201314 hr (Pampalona et al., 2015) on a Leica TCS SP8 confocal microscope (Cambridge Advanced Imaging Center (CAIC), University of Cambridge).\n\n### Live imaging of whole brain explants\n\nWhole brains were dissected from 3rd instar larvae in Schneider\u2019s medium and cultured according to an improved protocol for long term culturing and imaging of larval brains (Cabernard and Doe, 2013; Hailstone et al., 2017). Live imaging was performed for 26 hr in an inverted Olympus FV1200 confocal microscope (Ilan Davis Group, Department of Biochemistry, University of Oxford).\n\n### Cell tracking and time-lapse movie image analysis\n\nCells were segmented in 3D from the his2Av-RFP signal using a combination of median filtering, thresholding, active contour segmentation and 3D watershed to separate nuclei in contact. They were then tracked over time by finding the closest neighbour in a 12px radius and allowing to search in the five previous frames. The mean intensity in the green channel (from E(spl)m\u03b3-GFP) was obtained from the overlap with the tracked nuclei. Cells that were not correctly tracked were manually corrected afterwards and mother-daughter cells assigned. To account for possible differences in fluorescence levels between movies, mean intensity values were normalised to an average of the whole movie. The tracking and posterior analysis codes were implemented in MATLAB (2018a, Mathworks) and R respectively and the scripts are available\u00a0at\u00a0https://github.com/juliafs93/CellTracker (Falo Sanjuan, 2019; copy archived at https://github.com/elifesciences-publications/CellTracker).\n\n### Cell culture\n\nDrosophila Kc 167 cell line was used. They were obtained from the Drosophila Genomics Resource Centre (https://dgrc.bio.indiana.edu/Home), the community repository for Drosophila cell lines. These cells are not susceptible to Mycoplasma. Kc cells were cultured at 25\u00b0C in Schneider\u2019s media (GIBCO S0146), supplemented with 5% FBS (Sigma, F9665) and 1x Antibiotic Antimycotic (GIBCO, 15240\u2013062). For Notch activation, Kc cells were treated with 4 mM EGTA in PBS for 30 min. EGTA destabilises the Notch negative regulatory region, exposing the site for ADAM proteases which renders the reminaig transmembrane fragment a substrate for \u03b3-secretase cleavage and release of NICD (Gupta-Rossi et al., 2001; Ilagan et al., 2011; Krejc\u00ed and Bray, 2007).\n\n### Mi-2 RNAi in Kc cells\n\ndsRNA for Mi-2, H or GFP (control) was prepared as following: dsRNA was transcribed with MEGAscript T7 Transcription Kit (AMB 13345) using 500 bp PCR fragments specific for each gene flanked by T7 promoter sequences. The newly synthesised dsRNA was treated with DNase, purified with phenol chloroform extraction, precipitated with isopropanol, re-suspended in DEPC water and annealed at 45\u00b0C for 1 hr and 15 min. dsRNA was subsequently stored at \u221220\u00b0C.\n\nFor single Mi-2 RNAi, H RNAi or GFP RNAi treatment: In a six-well plate, the medium from Kc cells (2 \u00d7 106 cells per well) was replaced with 20 \u03bcg dsRNA diluted in 600 \u03bcl Optimem media [Gibco/Life technologies (now part of Thermo-Fisher), 51985\u2013026] for 30 min and 1.5 ml of tissue culture media were subsequently added according to standard protocols. Changes in RNA levels were assessed 72 hr later. For double knockdown, Kc cell medium was replaced with 10 \u00b5g dsRNA of each gene diluted in 600 \u03bcl Optimem media for 30 min. 1.5 ml of tissue culture media were subsequently added according to standard protocols. mRNA levels were measured again after 72 hr.\n\n### RNA isolation and qPCR\n\nKc cells were harvested in Tri reagent and incubated for 10 min. RNA was extracted using phenol chloroform and precipitated in isopropanol overnight at \u221220\u00b0C. RNA was resuspended in DEPC treated water and treated with DNAse (Ambion,DNA-free kit, AM1906) to remove genomic DNA. The equivalent of 2 \u03bcg of RNA was reverse transcribed with random primers [Oligo(dT)15 Primers (Promega C1101)] using M-MLV reverse transcriptase (Promega M531A). The cDNA products were subsequently diluted 1:5 and 1 \u03bcl was used as a template in each quantitative PCR reaction. Quantitative PCR was performed using LightCycler 480 SYBR Green I Master PCR Kit (Roche 04707516001) with a Roche Light Cycler. Samples were normalised to Rpl32. All primers are listed in Table 1.\n\n**Table 1.**\n PCR primers for RNA analysis:\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer name (for RNA)</th>\n      <th>Primer sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>m\u03b2 coding sequence for</td>\n      <td>AGAAGTGAGCAGCAGCCATC</td>\n    </tr>\n    <tr>\n      <td>m\u03b2 coding sequence rev</td>\n      <td>GCTGGACTTGAAACCGCACC</td>\n    </tr>\n    <tr>\n      <td>m3 coding sequence for</td>\n      <td>CGTCTGCAGCTCAATTAGTC</td>\n    </tr>\n    <tr>\n      <td>m3 coding sequence rev</td>\n      <td>AGCCCACCCACCTCAACCAG</td>\n    </tr>\n    <tr>\n      <td>m\u03b4 coding sequence for</td>\n      <td>AGGATCTCATCGTGGACACC</td>\n    </tr>\n    <tr>\n      <td>m\u03b4 coding sequence rev</td>\n      <td>CAGACTTCTTCGCCATGATG</td>\n    </tr>\n    <tr>\n      <td>m\u03b1 coding sequence for</td>\n      <td>TCCCAATGCTCGCCTTTAGA</td>\n    </tr>\n    <tr>\n      <td>m\u03b1 coding sequence rev</td>\n      <td>TGATCTCCAAGCGGAGTATG</td>\n    </tr>\n    <tr>\n      <td>m\u03b3 coding sequence for</td>\n      <td>TCAGATCCAGCCAGCAGAAA</td>\n    </tr>\n    <tr>\n      <td>m\u03b3 coding sequence rev</td>\n      <td>CTGGAGATTGGCGAAATGGG</td>\n    </tr>\n    <tr>\n      <td>m7 coding sequence for</td>\n      <td>GCACTGCACACACACACTTC</td>\n    </tr>\n    <tr>\n      <td>m7 coding sequence rev</td>\n      <td>AACAATATACGTGGCCGGTT</td>\n    </tr>\n    <tr>\n      <td>Rpl32 sense</td>\n      <td>ATGCTAAGCTGTCGCACAAATG</td>\n    </tr>\n    <tr>\n      <td>Rpl32 antisense</td>\n      <td>GTTCGATCCGTAACCGATGT</td>\n    </tr>\n    <tr>\n      <td>Mi-2 coding sequence for</td>\n      <td>GAGCGGCCTACCTTAACCTC</td>\n    </tr>\n    <tr>\n      <td>Mi-2 coding sequence rev</td>\n      <td>TCAGATGCTGATGGGATTCA</td>\n    </tr>\n    <tr>\n      <td>Hairless coding sequence for</td>\n      <td>TACGAGCGAGGATGAGGAAC</td>\n    </tr>\n    <tr>\n      <td>Hairless coding sequence rev</td>\n      <td>TCCCAATGCTCGCCTTTAGA</td>\n    </tr>\n    <tr>\n      <td>CG17119 coding sequence for</td>\n      <td>TCGTTGAGCATCACAGGATTCA</td>\n    </tr>\n    <tr>\n      <td>CG17119 coding sequence rev</td>\n      <td>TCAACTGCGGCCTCTATTTCAT</td>\n    </tr>\n    <tr>\n      <td>CG12290 coding sequence for</td>\n      <td>AACTGATGCCCGTACAGGAG</td>\n    </tr>\n    <tr>\n      <td>CG12290 coding sequence rev</td>\n      <td>GCTGTCTGGCGGAGTAGTTC</td>\n    </tr>\n    <tr>\n      <td>Notch coding sequence for</td>\n      <td>CGGACTCGACTGTGAGAACA</td>\n    </tr>\n    <tr>\n      <td>Notch coding sequence rev</td>\n      <td>GGAACTGAGCCTGAATCTCG</td>\n    </tr>\n    <tr>\n      <td>Rgl coding sequence for</td>\n      <td>GAGGATTGGCACGAGGATAA</td>\n    </tr>\n    <tr>\n      <td>Rgl coding sequence rev</td>\n      <td>ACTGTTTGATGAGCCGTTCC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Chromatin immunoprecipitation\n\nChIP experiments were performed as previously described (Krejc\u00ed and Bray, 2007; Skalska et al., 2015) except for Mi-2 ChIP where a combination of 1% formaldehyde with 1mmM EGS (ethylene glycol bis(succinimidyl succinate)) was used for cross\u2010linking, (15 min at room temperature). A plate with 15\u00a0\u00d7\u00a0106 cells was used as a starting material for each ChIP and the following antibodies were used: goat \u03b1-Su(H) (Santa Cruz Biotechnology sc15813; 12 \u03bcl), rabbit \u03b1-H3K56ac (Active Motif 39281; 3 \u03bcl), rabbit \u03b1-H3K27ac (Abcam ab4729; 10 \u03bcl from 0.1 \u03bcg/\u03bcl), rabbit \u03b1-H3K27me3 (Millipore, 07\u2013449; 1 \u03bcl), rabbit \u03b1-H3 (Abcam ab1791; 1 \u03bcl), rabbit-a-Mi-2, (courtesy of Alexander Brehm; 2 \u03bcl). Regions of enrichment were analyzed by qPCR using the primers in Table 2.\n\n**Table 2.**\n Primers for ChIP \u2013 qPCR:\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer name (for ChIP)</th>\n      <th>Primer sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>m\u03b2 for</td>\n      <td>AGAGGTCTGTGCGACTTGG</td>\n    </tr>\n    <tr>\n      <td>m\u03b2 rev</td>\n      <td>GGATGGAAGGCATGTGCT</td>\n    </tr>\n    <tr>\n      <td>m3 for</td>\n      <td>ACACACACAAACACCCATCC</td>\n    </tr>\n    <tr>\n      <td>m3 rev</td>\n      <td>CGAGGCAGTAGCCTATGTGA</td>\n    </tr>\n    <tr>\n      <td>con for</td>\n      <td>CAATTCCACGAAGCACAGTC</td>\n    </tr>\n    <tr>\n      <td>conrev</td>\n      <td>GAGGAGCAGTCCATCGAGTT</td>\n    </tr>\n    <tr>\n      <td>CG17119_qPCR_5</td>\n      <td>TACATGGGCTTTGTCGGTCG</td>\n    </tr>\n    <tr>\n      <td>CG17119_qPCR_3</td>\n      <td>CACGGCCCTCGCCATATAAA</td>\n    </tr>\n    <tr>\n      <td>Br-5 for</td>\n      <td>CACAGAAGGAAGAAGCAGCA</td>\n    </tr>\n    <tr>\n      <td>Br-5 rev</td>\n      <td>CGGGACTGGCAAATTTCTT</td>\n    </tr>\n    <tr>\n      <td>Vri-2 for</td>\n      <td>TGTGGACGTGGAATTGGAT</td>\n    </tr>\n    <tr>\n      <td>Vri-2 rev</td>\n      <td>CAATGACACTTGGGCATGG</td>\n    </tr>\n    <tr>\n      <td>m\u03b4 for</td>\n      <td>AGCAGAAACCCACACCCATA</td>\n    </tr>\n    <tr>\n      <td>m\u03b4 rev</td>\n      <td>TTCCCTCGAGAAAAGAGAGC</td>\n    </tr>\n    <tr>\n      <td>m\u03b4\u22123 for</td>\n      <td>AGACCAGAGACCCAGAGCAA</td>\n    </tr>\n    <tr>\n      <td>m\u03b4\u22123 rev</td>\n      <td>GGCGCAATAAAGTTGAAAGC</td>\n    </tr>\n    <tr>\n      <td>m\u03b1\u22123 for</td>\n      <td>AAGCCAGTGGACTCTGCTCT</td>\n    </tr>\n    <tr>\n      <td>m\u03b1\u22123 rev</td>\n      <td>TGATCTCCAAGCGGAGTATG</td>\n    </tr>\n    <tr>\n      <td>m6 for</td>\n      <td>CGAACGTTGGGCTGATAGTT</td>\n    </tr>\n    <tr>\n      <td>m6 rev</td>\n      <td>AAAAGTCCAACCACCCAACA</td>\n    </tr>\n    <tr>\n      <td>m7 for</td>\n      <td>CAAGCATGCGCACACATATT</td>\n    </tr>\n    <tr>\n      <td>m7 rev</td>\n      <td>CATCGGGGTTGGCTTATTGT</td>\n    </tr>\n    <tr>\n      <td>Sav-cds-5</td>\n      <td>GAGTAGGTGTTCCGACTGGTG</td>\n    </tr>\n    <tr>\n      <td>Sav-cds-3</td>\n      <td>ATCAGCGGGCCAAGAAGAAAT</td>\n    </tr>\n    <tr>\n      <td>P53 cds for</td>\n      <td>TTATAGCAATGCACCGACGC</td>\n    </tr>\n    <tr>\n      <td>P53 cds rev</td>\n      <td>GACGAACGCCAGCTCAATAG</td>\n    </tr>\n    <tr>\n      <td>Him/Her for</td>\n      <td>CGAACCGAGTTGTGGGAAAT</td>\n    </tr>\n    <tr>\n      <td>Him/Her rev</td>\n      <td>CCCTTGGAGTGACAATTAGCTG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Co-immunoprecipitation and western blot\n\nFor detecting protein levels, control, Mi-2RNAi and H-RNAi-treated Kc cells (~8\u00d7106 cells) were harvested and incubated in Lysis Buffer (50 mM Tris pH7.5, 150 mM NaCl, 10% glycerol, 0.5% triton X-100, Complete protease inhibitors (Roche)) on ice for 30 min. Upon centrifugation, cell debris was pelleted and the supernatant with the nuclear protein extracts was collected and denatured in SDS-sample buffer (100 mM Tris-Cl, pH6.8, 20% Glycerol, 4% SDS, 0.025% Bromophenol blue, 2% \u03b2-mercaptoethanol).\n\nFor co-immunoprecipitations, 15 \u00d7 106 cells from Hairless-GFP or a control GFP-expressing stable Kc cell line were incubated in IP Lysis buffer (50 mM Tris-HCL pH8, 150 mM NaCl, 10% Glycerol, 0.5% Triton X-100, and proteinase inhibitor cocktail) on ice for 40 min. Cell debris was pelleted via centrifugation and the supernatants were incubated with 100\u00a0\u03bcl of Protein G agarose beads (Roche) for 1 hr at 4\u00b0C for preclearing. Rabbit anti-GFP (1:1.000, Invitrogen A11122) was then added to the protein extracts and incubated overnight at 4\u00b0C. 60 \u03bcl of protein G-Agarose beads were added and incubated with the protein extracts for 2 hr at 4\u00b0C before washing five times in IP buffer. The pelleted beads were then resuspended in SDS-sample buffer.\n\nTotal denatured proteins or immunoprecipitated proteins were resolved by 7% SDS\u2013polyacrylamide gel electrophoresis (BioRad) and transferred to nitrocellulose membrane. Membranes were blocked in TBTM (TBS, 0.05% tween, 3% milk) for 1 hr prior to an overnight incubation at 4\u00b0C with primary antibodies (Rabbit anti-GFP 1:2000, Invitrogen A11122; Rabbit anti-Su(H) 1:400 Santa Cruz sc-28713; Rabbit anti-Mi-2 1:10,000 courtesy of A. Brehm; rat anti-tubulin 1:2000). Following three washes of 15 min at RT in TBT (TBS\u00a0+0.05 Tween), membranes were incubated with horseradish peroxidase-conjugated secondary antibodies (1:2000, HRP Goat anti-rabbit or 1:2000, HRP Goat anti-rat) for 1 hr at RT then washed 3 times for 15 min in TBT. Bound antibodies were detected by the Amersham ECL detection system (GE Healthcare Life Sciences) and documented on X-Ray film.\n",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "51a5bcb3-bf89-4102-bca6-32bfea66b325",
+      "submission_id": "fba5b2c6-2623-4782-9afd-6a41ea70242e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Buszczak, University of Texas Southwestern Medical Center United States\n\nReviewers:\n- Michael Buszczak, University of Texas Southwestern Medical Center United States\n- Hongyan Wang, Duke-NUS Medical School Singapore\n\n## Review text\n\nDOI: [10.7554/eLife.41637.027](https://doi.org/10.7554/eLife.41637.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mi-2/NuRD complex protects stem cell progeny from mitogenic Notch signalling\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Michael Buszczak as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen K VijayRaghavan as the Senior Editor. The following individual involved in review of your submission has also agreed to reveal their identity: Hongyan Wang (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Bray and colleagues show that ectopic activation of Notch signaling results in NB progeny reverting back to a stem cell-like state after a brief period of time using a number of assays including live cell imaging. Loss of Mi-2 and other components of the NuRD complex enhance hyperplasia in response to activated Notch. To investigate how Mi-2 could be regulating cell fate choice, the authors examined how loss of Mi-2 influenced the expression of Notch target genes. Depletion of Mi-2 alone had no discernible effect on E(spl)m\u03b3-GFP in GMCs. However, in the context of activated Notch, they observed a striking persistence of E(spl)m\u03b3-GFP in the GMCs in a substantial proportion of lineages. Further examination revealed that mRNA levels of several Notch target genes increase in the absence of MI-2. To investigate the mechanisms by which loss of Mi-2 influences the expression of these Notch target genes, the authors carried out co-IPs and chromatin immunoprecipitation. Work performed using Kc cells suggest Mi-2 does not physically interact with Hairless. In Kc cells, Su(H) recruitment to specific gene promoters in the presence or absence of Notch activation is not altered by knockdown of Mi-2. While these data are mostly negative, the authors do go on to show that Mi-2 does cooperate with Zhf-1 to repress Notch target genes.\n\nThe paper provides novel insights into the mechanism by which Mi-2 and the NuRD complex influence Notch target gene expression in NB progeny. In general, the data are nicely presented and the story will likely be of broad interest to the fields of neurodevelopment and stem cell biology.\n\nEssential revisions:\n\nThe reviewers raise a number of concerns that must be adequately addressed before the paper can be accepted. Some of the required revisions will likely require further experimentation within the framework of the presented studies and techniques.\n\n1) The hyperplasia phenotype may require more than the ectopic activation of E(spl) genes. It is important to extend the observations to other Notch target genes. One way to address this would be to compare the list of Notch targets genes in Kc cells with expression profiling produced upon knock-down of Mi-2.\n\n2) The authors should provide better evidence of direct recruitment of Mi-2/NuRD to Notch target genes in Kc cells.\n\n3) The authors should test whether zfh1 loss also enhances Nact hyperplasia and whether zfh1 suppresses the ability of NB progeny to respond to Notch? If they do, these results will strengthen the link between Zfh1 and Notch signaling in NB progeny.\n\n4) The intermediate size of the ectopic NBs observed upon Nact expression may arise from symmetric division of pre-existing NBs. To exclude this possibility, asymmetric division of NBs needs to be examined in Nact VNC NBs.\n",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1b2ca1f0-a417-4172-a449-e66572978dfe",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C1",
+      "claim": "Excessive Notch signalling in Drosophila neural stem cell (NSC) lineages results in supernumerary NSCs causing hyperplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila neural stem cell (NSC) lineages, excessive Notch signalling results in supernumerary NSCs causing hyperplasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known phenomenon that forms the basis for the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "ada85d19-b209-4d2a-813d-021e3bdff908",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C2",
+      "claim": "The onset of hyperplasia from excessive Notch signaling is considerably delayed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, onset of hyperplasia is considerably delayed implying there are mechanisms that resist the mitogenic signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated in the abstract and is a key finding that motivates the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "10061522-b81d-4104-a441-2220e8afc796",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C3",
+      "claim": "Normal attenuation of E(spl)m\u03b3 is still initiated in NSC progeny in the presence of excess Notch activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitoring the live expression of a Notch target gene, E(spl)m\u03b3, revealed that normal attenuation is still initiated in the presence of excess Notch activity so that re-emergence of NSC properties occurs only in older progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from live imaging experiments described in the abstract and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "843d25ba-3793-4f87-bc08-3b5f2e01d43c",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C4",
+      "claim": "Re-emergence of NSC properties occurs only in older progeny when excess Notch activity is present.",
+      "claim_type": "EXPLICIT",
+      "source": "Monitoring the live expression of a Notch target gene, E(spl)m\u03b3, revealed that normal attenuation is still initiated in the presence of excess Notch activity so that re-emergence of NSC properties occurs only in older progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from live imaging experiments showing temporal dynamics of NSC marker expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "cf6a454a-4cdb-46b7-9d9c-07c6fc401fb9",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C5",
+      "claim": "Depletion of Mi-2/NuRD ATP remodeling complex dramatically enhanced Notch-induced hyperplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening for factors responsible, we found that depletion of Mi-2/NuRD ATP remodeling complex dramatically enhanced Notch-induced hyperplasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the RNAi screen described in the abstract and results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "89bf7ecc-9a72-45b7-9a56-ee57193e9531",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C6",
+      "claim": "E(spl)m\u03b3 was no longer extinguished in NSC progeny when Mi-2 was depleted under conditions of excess Notch activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, E(spl)m\u03b3 was no longer extinguished in NSC progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from live imaging experiments with Mi-2 depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "ffb5f12e-6e66-4f13-8209-280dc5e82b52",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C7",
+      "claim": "Mi-2 is required for decommissioning stem-cell enhancers in NSC progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that Mi-2 is required for decommissioning stem-cell enhancers in their progeny, enabling the switch towards more differentiated fates and rendering them insensitive to mitogenic factors such as Notch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main mechanistic proposal of the paper based on multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "33520be9-4138-4656-b425-1cdcec724182",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C8",
+      "claim": "A subset of cells in many solid tumours have characteristics of stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a subset of the cells in many solid tumours (e.g glioblastomas, neuroblastomas) have characteristics of stem cells, deploying programmes that normal stem cells would use for tissue development and repair to support the development and progressive growth of the tumour (Azzarelli et al., 2018; Lathia et al., 2015; Reya et al., 2001; Singh et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "8cbdf7df-d207-4602-a660-1cdd2aeab09f",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C9",
+      "claim": "Drosophila neuroblasts divide asymmetrically to generate a larger daughter cell that retains stem-cell identity and a smaller daughter cell that follows a more differentiated fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to mammalian neural stem cells, NBs divide asymmetrically to generate a larger daughter cell that retains stem-cell identity and a smaller daughter cell that will follow a more differentiated fate (Homem et al., 2015; Knoblich, 2008; Sousa-Nunes et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila neuroblast biology supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "36a98f6e-1d5a-4239-a5c6-46ef610877bd",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C10",
+      "claim": "Neuroblasts resume divisions in larval stages upon receiving nutrition signals from adjacent glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After entering quiescence at the end of embryogenesis, NBs resume divisions in larval stages, upon receiving proper nutrition signals from their adjacent glial cells (Chell and Brand, 2010; Sousa-Nunes et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "e229cc8b-89a0-480d-b397-4becd526d750",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C11",
+      "claim": "Key cell fate determinants such as Prospero, Numb and Brat are segregated into the smaller progeny cell during neuroblast division.",
+      "claim_type": "EXPLICIT",
+      "source": "In each division, key cell fate determinants such as Prospero, Numb and Brat are segregated into the smaller progeny cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about asymmetric cell division in neuroblasts.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "82ece195-213c-42a7-9f29-50b5a8e46942",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C12",
+      "claim": "Loss of Numb or mechanisms giving excess Notch signalling can lead to hyperplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Numb inhibits Notch activity, and the loss of Numb or other mechanisms giving excess Notch signalling can lead to hyperplasia (Bowman et al., 2008; Lee et al., 2006a; Wang et al., 2006; Weng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "87ca6603-385b-4992-b610-cdabe8aafcc2",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C13",
+      "claim": "Type I lineages appear resistant to ectopic Notch activity as the majority of their daughter cells continue to be routed towards differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, certain lineages, so-called Type I lineages, appear resistant to the ectopic Notch activity as the majority of their daughter cells continue to be routed towards differentiation even in these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation that forms a key motivation for the study.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "6dd1d5fd-3f18-422f-8668-d49c44c31b0d",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C14",
+      "claim": "In Type I lineages, the smaller daughter Ganglion Mother Cell (GMC) divides only once to generate two post-mitotic neurons or glia cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Type I lineages, the smaller daughter, so-called Ganglion Mother Cell (GMC), divides only once to generate two post-mitotic neurons or glia cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Type I neuroblast lineages.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "4a1ded71-8d07-40d1-a1d4-3ab414cf4331",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C15",
+      "claim": "In Type II lineages, the smaller progeny become intermediate neural progenitors (INP) which divide three to six times asymmetrically.",
+      "claim_type": "EXPLICIT",
+      "source": "In Type II lineages, the smaller progeny of the NBs become intermediate neural progenitors (INP), which then divide three to six times asymmetrically to self-renew and to generate GMCs that, like the GMCs derived from Type I NBs, then divide into two post-mitotic neurons or glia cells (Bello et al., 2008; Boone and Doe, 2008; Bowman et al., 2008; Izergina et al., 2009; Kang and Reichert, 2015; Knoblich, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Type II neuroblast lineages supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "8e68e3d3-3119-4f58-981e-b34725c99f43",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C16",
+      "claim": "Both Type I and Type II neuroblasts exhibit high levels of Notch activity and express key targets deadpan (dpn), Enhancer of split-HLHm\u03b3 (E(spl)m\u03b3) and klumpfuss (klu).",
+      "claim_type": "EXPLICIT",
+      "source": "Both Type I and Type II neuroblasts exhibit high levels of Notch activity and express key targets deadpan (dpn), Enhancer of split-HLHm\u03b3 (E(spl)m\u03b3) and klumpfuss (klu), that are shut off in the progeny (Almeida and Bray, 2005; Berger et al., 2012; San-Ju\u00e1n and Baonza, 2011; Xiao et al., 2012; Zacharioudaki et al., 2016; Zacharioudaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "5deede78-0630-4ac4-8ad4-6755d292b8e3",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C17",
+      "claim": "Type II lineages are highly sensitive to excessive Notch activity, which brings about ectopic expression of stem cell markers in INPs to drive NB-like behaviour and tumour formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Type II lineages are highly sensitive to excessive Notch activity, which brings about ectopic expression of stem cell markers in INPs to drive NB-like behaviour and tumour formation (Bowman et al., 2008; Wang et al., 2006; Weng et al., 2010; Zacharioudaki et al., 2016; Zacharioudaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "62f5a70e-60e5-44fd-980c-4dff34bc16c7",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C18",
+      "claim": "Type I lineages only become hyperplastic under extreme conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Type I lineages only become hyperplastic under extreme conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation that distinguishes Type I from Type II lineages.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "10ae7253-7192-441f-9f54-17e76ca94843",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C19",
+      "claim": "After 8 hr of exposure to active Notch, only 22% of Type I lineages turned hyperplastic.",
+      "claim_type": "EXPLICIT",
+      "source": "In the early stages of Notch-driven hyperplasia (8 hr), only a small proportion of Type I lineages turned hyperplastic (22%, Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "ba246cce-2286-42da-b73e-ed34277843f0",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C20",
+      "claim": "E(spl)m\u03b3 and dpn were the first stem-cell markers to be expressed in hyperplastic Type I lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing a panel of such stem-cell markers revealed that E(spl)m\u03b3 and dpn were the first to be expressed and, of the two, E(spl)m\u03b3 appeared to be the earliest as there was a subset of cells in hyperplastic lineages that express E(spl)m\u03b3-GFP only (2 \u00b1 0.2; Figure 1A,D; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of marker expression shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "262e978c-56ce-4e1b-984c-eab74edff3f4",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C21",
+      "claim": "After 24 hr of Nact expression, 36.3% of Type I lineages exhibited ectopic NB markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Continued expression of Nact for 24 hr led to an increase in the number of Type I lineages with ectopic NB markers (36.3%; Figure 1A,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "d1b0b151-5d9b-4a2a-9205-8c431271b6b7",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C22",
+      "claim": "After 48 hr of Notch activity, 89.3% of Type I lineages became hyperplastic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was only with more prolonged Notch activity (48 hr) that the majority of lineages became hyperplastic (89.3%; Figure 1A,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "1a69e6d4-204e-4487-b12f-0ee98a915276",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C23",
+      "claim": "Cells that acquired stem-cell characteristics were intermediate in size between a GMC and a NB.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the cells that acquired stem-cell characteristics were intermediate in size between a GMC and a NB, suggesting that they do not arise from a symmetrical division of a pre-existing NB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from imaging data that informs the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "d80c34eb-b391-4020-99d7-13a651ed7cf1",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C24",
+      "claim": "NBs continued to divide asymmetrically even in the presence of excessive Notch signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the NBs themselves continued to divide asymmetrically even in the presence of excessive Notch signaling (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "204b34a5-2dca-4e21-a0eb-2490e67b79bd",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C25",
+      "claim": "The extent of hyperplasia correlated with the duration of exposure to Notch activity, not the developmental stage at which NBs were exposed.",
+      "claim_type": "EXPLICIT",
+      "source": "This yielded identical results, that is the extent of hyperplasia correlated with the duration of exposure not the developmental stage at which the NBs were exposed (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experiments varying the timing of Notch exposure shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "27bbb71e-2eef-4e80-b730-9c4fef06bbad",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C26",
+      "claim": "In normal NBs, E(spl)m\u03b3-GFP expression was rapidly extinguished in the GMC progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "In these conditions, normal NBs underwent asymmetric cell divisions and E(spl)m\u03b3-GFP expression was rapidly extinguished in the GMC progeny (Figure 2A,C,E and Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from live imaging experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "cb26c984-5102-40f1-b70f-0ea6c4e92940",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C27",
+      "claim": "E(spl)m\u03b3-GFP levels in NBs fluctuated with a defined temporal pattern through the cell cycle, with highest expression as NBs entered and exited mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the NB itself the levels fluctuated, with a defined temporal pattern through the cell cycle where the highest expression occurred as the NBs entered and exited mitosis (Figure 2A,C,E and Figure 2\u2014video 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from live imaging shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "33b0b7c6-27af-414f-920f-d21ba78cf617",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C28",
+      "claim": "In the presence of high levels of Notch activity, NBs continued to undergo asymmetric cell divisions and E(spl)m\u03b3-GFP was extinguished in the GMC, albeit with slightly slower kinetics than in normal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of high levels of Notch activity, the NBs continued to undergo asymmetric cell divisions and the expression of E(spl)m\u03b3-GFP was extinguished in the GMC, albeit with slightly slower kinetics than in normal conditions (Figure 2B,D,F and Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from live imaging experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "7bbda3ce-83ec-457f-bdc0-d866e81a954c",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C29",
+      "claim": "Some NB progeny reacquired E(spl)m\u03b3-GFP expression after a few hours in the presence of Nact.",
+      "claim_type": "EXPLICIT",
+      "source": "After a few hours, however, some of the NB progeny reacquired E(spl)m\u03b3-GFP expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key observation from live imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "e70a1f49-7b74-497f-b27c-431176d578cb",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C30",
+      "claim": "The reappearance of E(spl)m\u03b3-GFP only occurred in progeny born before the onset of imaging (>8 hr earlier).",
+      "claim_type": "EXPLICIT",
+      "source": "The reappearance of E(spl)m\u03b3-GFP only occurred in progeny born before the onset of imaging (Figure 2B,D,F and Figure 2\u2014video 2), indicating that it must occur in cells that had been born from the NSC > 8 hr earlier.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on tracking cells over time in live imaging experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "cc7cd354-6be1-4a98-aa40-cfa48a0f71bf",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C32",
+      "claim": "Mi-2 depletion significantly enhanced the number of Dpn-positive cells elicited by Nact by 2.7-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "This significantly enhanced the number of Dpn-positive (Dpn+ve) cells elicited by Nact: the total number of Dpn expressing cells was enhanced 2.7-fold when Mi-2 was depleted compared to Nact alone (1322 \u00b1 71 vs 485 \u00b1 27; Figure 3A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the RNAi screen shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "ff5c6d67-8dc7-4aa7-8b82-89d74dcd973f",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C33",
+      "claim": "Mi-2 depletion alone was not sufficient to bring about any increase in Dpn+ve cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Mi-2 depletion alone was not sufficient to bring about any increase in Dpn+ve cells (161 \u00b1 2 vs 158 \u00b1 2), despite that this treatment robustly extinguished Mi-2 protein levels in the NB lineages (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment showing Mi-2 depletion alone has no effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "039895fe-e83c-4828-b4bb-d26678226151",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C34",
+      "claim": "Knock down of MTA-like produced a 1.4-fold enhancement of Notch-induced hyperplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock down of MTA-like (Figure 3B) or Caf1-p55 (Figure 3C) both produced a 1.4-fold enhancement of Notch-induced hyperplasia (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from testing other NuRD complex members shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "b1f1b60f-db06-4dab-bd78-fed322796a37",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C35",
+      "claim": "Knock down of Caf1-p55 produced a 1.4-fold enhancement of Notch-induced hyperplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock down of MTA-like (Figure 3B) or Caf1-p55 (Figure 3C) both produced a 1.4-fold enhancement of Notch-induced hyperplasia (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from testing other NuRD complex members shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "23a2886a-8184-4dcf-a208-932fd66c6613",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C36",
+      "claim": "Mi-2 functions in attenuating Notch activity via its participation in the NuRD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the results suggest that Mi-2 functions in attenuating Notch activity via its participation in the NuRD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the effects of depleting multiple NuRD complex members.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "7114dc2c-6636-40d3-9d43-8ab73dbbb76c",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C37",
+      "claim": "Depletion of Mi-2 alone had no discernible effect on E(spl)m\u03b3-GFP in GMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of Mi-2 alone had no discernible effect on E(spl)m\u03b3-GFP in GMCs: it was extinguished as in normal conditions (Figure 4\u2014figure supplement 1 and Figure 4\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in live imaging experiments in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "ef2b7037-e035-41ac-93fb-6406de89daa5",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C38",
+      "claim": "In the context of Nact, Mi-2 depletion resulted in striking persistence of E(spl)m\u03b3-GFP in GMCs in 27.8% of lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the context of Nact there was a striking persistence of E(spl)m\u03b3-GFP in the GMCs in a substantial proportion of lineages (27.8%; Figure 4A\u2013E and Figure 4\u2014video 2,3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from live imaging shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "272115d4-fd51-453b-93c9-f95077af010c",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C39",
+      "claim": "Mi-2/NuRD complex has an important role in suppressing the ability of stem-cell progeny to respond to Notch.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate therefore that Mi-2/NuRD complex has an important role in suppressing the ability of the stem-cell progeny to respond to Notch and suggests that it contributes to the shut-down of stem-cell promoting genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the live imaging experiments showing persistence of E(spl)m\u03b3-GFP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "32ca0c4a-a0f3-4995-b5cc-49ba33b259be",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C40",
+      "claim": "Down-regulating Mi-2 by RNAi resulted in a robust increase in the expression of E(spl)m\u03b2 and E(spl)m3 in Kc cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Down-regulating Mi-2 by treating cells with RNAi resulted in a robust increase in the expression of E(spl)m\u03b2, \u0395(spl)m3 (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from qPCR experiments in cultured cells shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "c8b95177-eafb-48cb-8c25-b0ac032044e2",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C41",
+      "claim": "The effects of Mi-2 depletion on E(spl) gene expression were similar to those seen when Hairless was depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects were similar to those seen when the co-repressor Hairless was depleted (Figure 5C,D and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of effects from depleting different factors shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "6dc1ce8e-1a14-496f-8635-e4726ad23b2e",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C42",
+      "claim": "Loss of Mi-2 in the context of Notch signalling activation led to enhanced induction of E(spl) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, loss of Mi-2 in the context of conditions where Notch signalling was activated, led to an enhanced induction of the E(spl) genes that are normally up-regulated in these conditions (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experiments with Notch activation in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "9129600a-9a7b-4a49-b9f4-17d5db8dfc04",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C43",
+      "claim": "Loss of Mi-2 leads to de-repression of E(spl) genes and other Notch regulated genes in Notch off conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loss of Mi-2 leads to de-repression of E(spl) genes and of other Kc cell Notch targets in Notch off conditions and enhances their activation in Notch on conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the effects observed in Kc cell experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "6ac967ac-e713-4691-9f97-696bc31763e5",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C44",
+      "claim": "Concomitant knock down of both Mi-2 and Hairless led to much greater de-repression of E(spl)m\u03b2 and E(spl)m3 than from either knock down alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, concomitant knock down of both Mi-2 and Hairless led to a much greater de-repression of E(spl)m\u03b2 and E(spl)m3 than from either knock down alone, suggesting the two factors work independently to repress these genes (Figure 5E and Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in double knockdown experiments in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "1b97d2c3-691f-4671-908f-80c6c84aa347",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C45",
+      "claim": "No interaction between Su(H) and Mi-2 was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, no interaction between Su(H) and Mi-2 was detected (Figure 5F) arguing that Mi-2 acts independently of the SuH-Hairless co-repressor complex to attenuate the expression of E(spl) genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in co-immunoprecipitation experiments in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "c303323f-75a7-4ad2-87ed-c57a057e165e",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C46",
+      "claim": "Loss of Mi-2 had no effect on Su(H) recruitment in either Notch off or Notch on conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, loss of Mi-2 had no effect on Su(H) recruitment in either Notch off or Notch on conditions (Figure 5G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in ChIP experiments in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "0d6a23ab-93e3-4b96-a9b7-b7b64d5c826a",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C47",
+      "claim": "Loss of Mi-2 did not affect the levels of H3K27 trimethylation or H3K27ac at Notch target enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "neither did it affect the levels of H3K27 trimethylation, the repressive histone modification deposited by Polycomb complexes, or of H3K27ac (Figure 5\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in ChIP experiments in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "0f9dc0de-2de4-4605-894a-deab3bf31d1e",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C48",
+      "claim": "72% of Su(H) bound regions overlapped with Mi-2 occupied sites in Kc cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 72% of Su(H) bound regions overlapped with Mi-2 occupied sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of genome-wide ChIP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "5ba5268c-c2dc-4f1f-81f9-614431721efe",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C49",
+      "claim": "Mi-2 is present at significant levels at the E(spl)m\u03b2 and E(spl)m3 regulatory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These included significant enrichments for Mi-2 at the E(spl)m\u03b2 and E(spl)m3 regulatory regions in the E(spl)-C (Figure 5A), which we verified by ChIP qPCR (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in ChIP-qPCR experiments in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "349905ac-660a-4453-a3c8-6b1d43950447",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C50",
+      "claim": "Mi-2 binds directly to Notch target genes and exerts a repressive effect on them independently of Su(H) and Hairless.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, Mi-2 binds directly to Notch target genes and exerts a repressive effect on them, even in Kc cells, but it appears to do so independently of Su(H) and Hairless.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the Kc cell experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "ff2eddc0-75a5-479c-ac1c-ff9378fead43",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C51",
+      "claim": "Depletion of Zfh1 significantly enhanced Nact-induced hyperplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those tested, only two factors significantly enhanced the hyperplasia, namely Prospero and Zfh1, indicating that they were plausible candidates to recruit Mi-2 (Figure 6A,B and Figure 6\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experiments testing candidate factors in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "ff9de439-4fa0-4224-aa56-8d6eb098c660",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C52",
+      "claim": "Depletion of Prospero significantly enhanced Nact-induced hyperplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those tested, only two factors significantly enhanced the hyperplasia, namely Prospero and Zfh1, indicating that they were plausible candidates to recruit Mi-2 (Figure 6A,B and Figure 6\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experiments testing candidate factors in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "7b623d78-97eb-4ca5-bddf-3e10b9e4a2f5",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C53",
+      "claim": "Expression of Zfh1 was sufficient to significantly reduce the number of Dpn+ve cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, expression of either Prospero or Zfh1 was sufficient to significantly reduce the number of Dpn+ve cells, suggesting they have suppressed NB identity (Figure 6C,D and Figure 6\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in overexpression experiments in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "b4e050a7-1f19-4100-9f7c-7a2402a4f827",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C54",
+      "claim": "Depletion of Mi-2 partially overcame the effects of Zfh1 overexpression, restoring the number of NBs to close to normal levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, depletion of Mi-2 partially overcame the effects of Zfh1 overexpression, restoring the number of NBs to close to normal levels (Figure 6B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in epistasis experiments in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "d5c67ea8-2ca0-48ee-84af-508f24ab8772",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C55",
+      "claim": "Mi-2 depletion failed to rescue the effects from Prospero over-expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Mi-2 depletion failed to rescue the effects from Prospero over-expression (Figure 6\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in epistasis experiments in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "27852dac-a1c0-4772-9e97-ece8ac6ad221",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C56",
+      "claim": "Zfh1 overexpression attenuated Notch-induced hyperplasia, an effect that was partially abolished by loss of Mi-2.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, Zfh1 overexpression attenuated the Notch-induced hyperplasia, an effect that was partially abolished by loss of Mi-2 (Figure 6\u2014figure supplement 2A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in experiments combining Zfh1 overexpression with Mi-2 depletion in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "38205b45-92fe-4589-81d1-3712ad96cb5a",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C57",
+      "claim": "Zfh1 cooperates with Mi-2 to suppress stem-cell identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data argue that Zfh1 cooperates with Mi-2 to suppress stem-cell identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the genetic interaction experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "86d5081b-4762-44a0-80a4-9710b6e18cbf",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C58",
+      "claim": "Zfh1 was detected in the progeny located in proximity to the NB and in Asense-labelled GMCs in Type I NB lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using a fly line in which the endogenous Zfh1 is fused to GFP (Albert et al., 2018). Zfh1 was detected in the progeny that are located in proximity to the NB and in the Asense-labelled GMCs, albeit at lower levels (Figure 6E) in Type I NB lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown using a Zfh1-GFP reporter in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "afb102d7-3e35-41de-a8b4-748fa365aaa0",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C59",
+      "claim": "Zfh1 was absent from the NB and INPs in Type II lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Zfh1 was absent from the NB and INPs in Type II lineages albeit these cells exhibited strong or moderate Mi-2 levels, respectively (Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "6a7b1aaf-da39-4581-b0cd-602ebdbf497b",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C60",
+      "claim": "Zfh1 is an important intermediary in recruiting Mi-2/NuRD complex to shut off stem-cell enhancers in the NB progeny of Type I lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Together the results point to Zfh1 as an important intermediary in recruiting Mi-2/NuRD complex to shut off stem-cell enhancers in the NB progeny of Type I lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the expression pattern and genetic interaction data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "5a96d4a9-2859-421f-ba5e-b1aced7c62c0",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C61",
+      "claim": "Mi-2/NuRD complex functions to decommission stem-cell enhancers in differentiating progeny, rendering them resistant to stem-cell promoting factors like Notch.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that Mi-2/NuRD complex functions to decommission the stem-cell enhancers in the differentiating progeny (Figure 7) rendering them resistant to stem-cell promoting factors like Notch (Whyte et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main mechanistic model proposed based on all the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "a3fd09e7-e446-4f89-9c6b-1954f2192784",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C62",
+      "claim": "NuRD will be widely deployed in developmental transitions to decommission enhancers in readiness for subsequent lineage decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "As the iterative use of signaling pathways, including Notch, is important throughout development to generate different tissue and cell types, it is likely that NuRD will be widely deployed in such developmental transitions to decommission enhancers in readiness for subsequent lineage decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about broader implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "a6251e6f-380f-4164-a8eb-ab23fb51a0e8",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C63",
+      "claim": "NuRD is found at most sites of active transcription in embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although originally considered a repressive complex, NuRD is found at most sites of active transcription in embryonic stem cells, where it appears to fine-tune gene expression as well as having a major role in allowing cells to exit self-renewal (Bornel\u00f6v et al., 2018; de Dieuleveult et al., 2016; Miller et al., 2016; Reynolds et al., 2012a; Reynolds et al., 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "c66e66e5-d7bd-47d7-a039-c2dca96c8f2d",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C64",
+      "claim": "The mammalian homologue ZEB2 cooperates with NuRD complex to antagonise Notch in Schwann cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is similar to the role proposed for the mammalian homologue ZEB2 during Schwann Cell differentiation, where it engages the NuRD complex to antagonise Notch and Sox2 (Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "78a2c3d6-098f-4592-a6c1-6c0b0a2f9dc2",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C65",
+      "claim": "A missense mutation in Zeb2 that abolished its association with the NuRD complex rendered it incapable of promoting Schwann Cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a missense mutation in the Zeb2 that abolished its association with the NuRD complex rendered it incapable of promoting Schwann Cell differentiation (Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "026ae661-5ba9-4eda-8bce-7f093d0d1ea1",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C66",
+      "claim": "Eyeless/Pax6 is switched on in the progeny of old Type II NBs and makes them refractory to Notch.",
+      "claim_type": "EXPLICIT",
+      "source": "For example eyeless/Pax6 is switched on in the progeny of old Type II NBs and makes them refractory to Notch (Farnsworth et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "41f63625-555c-4a29-acda-b3f8ec0a7f54",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C67",
+      "claim": "Ikaros expression during T-cell differentiation shapes the timing and repertoire of Notch target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "and Ikaros expression during T-cell differentiation shapes the timing and repertoire of Notch target genes (Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "e71e26f5-8f5a-4f64-8094-f9a73aff62d0",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C68",
+      "claim": "Ikaros was found to associate with the Mi-2/NuRD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether these factors rely on Mi-2 remains to be explored but as Ikaros was found to associate with the Mi-2/NuRD complex, it could rely on similar mechanism to Zfh1/Zeb2 (Sridharan and Smale, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "069239e4-b3ba-4384-8ca0-a4317ad2a735",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C69",
+      "claim": "PROX1, the mammalian homologue of Prospero, interacted with NuRD complex to suppress Notch pathway in colorectal cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, PROX 1, the mammalian homologue of Prospero, interacted with NuRD complex to suppress Notch pathway in colorectal cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge without a specific citation in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "01f318f1-3902-4bb9-b157-491f72594938",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C70",
+      "claim": "Type II neuroblast lineages are exquisitely sensitive to ectopic Notch activity because they lack factor(s) that recruit Mi-2 to target enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the fact that Type II neuroblast lineages are exquisitely sensitive to ectopic Notch activity argues that these cells lack factor(s) that recruit Mi-2 to the target enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential sensitivity of Type I vs Type II lineages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "8a337a5b-e779-4ef0-851f-140ac392084b",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C71",
+      "claim": "An alternate mechanism involving the repressor earmuff/dFezf is deployed to repress the competence of INPs to respond to Notch targets in Type II lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed Zfh1 is not expressed in the intermediate progeny of these lineages and it has been shown that an alternate mechanism, involving the repressor earmuff/dFezf is deployed to repress the competence of INPs to respond to Notch targets and thus their dedifferentiation into NBs (Janssens et al., 2014; Koe et al., 2014). .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "34d3c12c-6500-4237-ab25-d180f08b065a",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C72",
+      "claim": "Prolonged Notch activity can ultimately reprogramme progeny towards stem-cell fates, driving hyperplasia even in the presence of Mi2.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that prolonged Notch activity can ultimately reprogramme progeny towards the stem-cell fates, driving hyperplasia even in the presence of Mi2, argues that NuRD is not fully silencing target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the observation that hyperplasia eventually occurs even with Mi-2 present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "74cef257-d590-4bbb-86f5-be1362d8c9eb",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "claim_id": "C73",
+      "claim": "NuRD is involved in fine-tuning transcriptional responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This fits with the model that NuRD is involved in fine-tuning transcriptional responses (Bornel\u00f6v et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c81cb22f-e3b4-4580-a810-da2ad0b366be",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Type I neuroblast lineages exhibit delayed onset of hyperplasia in response to constitutive Notch activity. Only 22% of lineages became hyperplastic after 8 hours, increasing to 36.3% at 24 hours and 89.3% at 48 hours. The extent of hyperplasia correlated with duration of Notch exposure rather than developmental stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C19, C21, C22, and C25 provide quantitative time-course data showing progressive hyperplasia with prolonged Notch exposure. The data are internally consistent and supported by Figure 1 with appropriate statistical analysis. The temporal correlation is demonstrated through controlled experiments varying exposure timing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "80ef6ea4-f9d2-42f1-9740-60b75f534d25",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Live imaging reveals that E(spl)m\u03b3-GFP expression is initially extinguished in GMC progeny even with excess Notch activity, but re-emerges only in older progeny (>8 hours after birth). This indicates normal attenuation mechanisms are initially functional but eventually overcome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C26-C30 are supported by live imaging data in Figure 2 showing temporal dynamics of E(spl)m\u03b3-GFP expression. The tracking of individual cells over time provides direct evidence for the delayed re-emergence of stem cell markers. The conclusion that reversion occurs in older progeny is well-supported by the observation that only cells born >8 hours before imaging reacquired expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "b2612cdc-ad27-4a1c-b617-cee9546588f9",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cells acquiring stem-cell characteristics are intermediate in size between GMCs and NBs, and NBs continue asymmetric division even with excess Notch signaling, suggesting hyperplastic cells arise from progeny reversion rather than symmetric NB division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C24 are supported by imaging data in Figures 1 and 2. The size measurements and observation of continued asymmetric division provide morphological evidence against symmetric division as the source of hyperplastic cells. This supports the reversion model, though direct lineage tracing would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "7e9edef6-7217-4bfd-ac3f-9fd34ca08b2a",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mi-2/NuRD complex depletion dramatically enhances Notch-induced hyperplasia. Mi-2 depletion increased Dpn+ cells 2.7-fold in Nact conditions but had no effect alone. Other NuRD complex members (MTA-like, Caf1-p55) showed similar but weaker effects (1.4-fold), suggesting Mi-2 functions via the NuRD complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C32-C36 are well-supported by quantitative data in Figure 3 with appropriate controls and statistics. The lack of effect from Mi-2 depletion alone (C33) is a critical control. The weaker effects of other NuRD members could reflect technical issues with knockdown efficiency or genuine differences in requirement, but the overall pattern supports NuRD complex involvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "95b372f8-c80a-4c0f-897c-0af571ca7a7f",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mi-2 depletion in the context of excess Notch activity prevents extinction of E(spl)m\u03b3-GFP in GMCs. While Mi-2 depletion alone has no effect, combined with Nact it causes persistent E(spl)m\u03b3-GFP expression in 27.8% of lineages, demonstrating Mi-2/NuRD suppresses Notch responsiveness in stem cell progeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C37-C39 are supported by live imaging data in Figure 4. The contrast between Mi-2 depletion alone (no effect) versus with Nact (persistent expression) provides strong evidence for Mi-2's role in suppressing Notch response. The quantification (27.8% of lineages) provides appropriate statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "1f98f89d-eade-4375-80b3-24cb8a92a0b4",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In Kc cells, Mi-2 depletion causes de-repression of E(spl) genes in Notch-off conditions and enhanced induction in Notch-on conditions. Double knockdown of Mi-2 and Hairless produces additive effects, suggesting independent repression mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by qPCR data in Figure 5. The additive effects of double knockdown (C44) provide strong evidence for independent action of Mi-2 and Hairless. The data are quantitative with appropriate replication and statistical analysis. The conclusion of independent mechanisms is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "850e230c-97d3-410c-b29b-97afc5ac257c",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mi-2 acts independently of the Su(H)-Hairless co-repressor complex. No interaction between Su(H) and Mi-2 was detected, Mi-2 loss does not affect Su(H) recruitment or histone modifications (H3K27me3, H3K27ac), yet Mi-2 binds directly to Notch target genes and represses them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47, C50 are supported by co-IP (Figure 5F), ChIP (Figure 5G), and histone modification data (Figure 5 supplement 1). The lack of interaction and unchanged Su(H) recruitment provide strong evidence for independent action. However, the mechanism by which Mi-2 represses without affecting these marks remains unclear and requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "46263e42-3152-46fb-b6ce-331458b61191",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mi-2 occupies Notch target enhancers genome-wide. 72% of Su(H) bound regions overlap with Mi-2 occupied sites, including significant enrichment at E(spl)m\u03b2 and E(spl)m3 regulatory regions, indicating direct action at target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C49 are supported by genome-wide ChIP data analysis and validated by ChIP-qPCR (Figure 5H). The high overlap (72%) provides strong evidence for direct Mi-2 action at Notch targets. The validation by independent method (ChIP-qPCR) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "cc29fc42-8a3c-4567-a4e1-f7a85fd0496c",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Zfh1 cooperates with Mi-2 to suppress stem-cell identity. Zfh1 depletion enhances Nact-induced hyperplasia, Zfh1 overexpression reduces Dpn+ cells in a partially Mi-2-dependent manner, and Zfh1 overexpression attenuates Notch hyperplasia in a Mi-2-dependent manner. Prospero shows similar enhancement but Mi-2-independent suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 are supported by genetic interaction data in Figure 6. The epistasis experiments (C54, C56) provide evidence for Zfh1-Mi-2 cooperation. The contrast with Prospero (C55) suggests specificity. However, RNAi-based epistasis has caveats regarding incomplete knockdown, and the partial rescue could reflect this or genuine complexity in the pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "4b32d799-47ff-4a92-9a96-03c1abdb14d3",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Zfh1 expression pattern supports its role as Mi-2 recruiter in Type I lineages. Zfh1 is detected in progeny and GMCs of Type I lineages but absent from NBs and INPs in Type II lineages, consistent with Type I resistance and Type II sensitivity to Notch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by Zfh1-GFP reporter expression data in Figure 6E and supplement 2C. The differential expression pattern between Type I and Type II lineages correlates well with their differential Notch sensitivity. This provides strong circumstantial evidence for Zfh1's role, though direct demonstration of Mi-2 recruitment by Zfh1 would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "268f878a-f7c1-4a38-b77f-d79e89626b1c",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that Mi-2/NuRD complex decommissions stem-cell enhancers in differentiating progeny, rendering them resistant to mitogenic factors like Notch. This model integrates the observed delayed hyperplasia, Mi-2's role in suppressing Notch response, and Zfh1-Mi-2 cooperation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C61 represent the main mechanistic model. This model is well-supported by the convergent evidence from multiple experimental approaches: temporal dynamics of hyperplasia, live imaging of marker expression, genetic interactions, and chromatin binding data. However, direct demonstration of enhancer decommissioning (e.g., chromatin accessibility changes) in vivo would strengthen the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "5e0b6fa5-12e7-4462-89c2-0f0e74a68517",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "E(spl)m\u03b3 and dpn are the earliest stem-cell markers expressed in hyperplastic Type I lineages, with E(spl)m\u03b3 appearing first as some cells express E(spl)m\u03b3-GFP only (2\u00b10.2 cells) before co-expressing dpn.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is supported by systematic analysis of multiple markers shown in Figure 1. The quantification and temporal ordering provide clear evidence for the sequence of marker expression. This establishes E(spl)m\u03b3 as an early readout of Notch response.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "de68640e-9b77-403b-a212-eb19cfc82207",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on Drosophila neuroblast biology and Notch signaling: NBs divide asymmetrically, Type I and Type II lineages differ in division patterns, both express Notch targets, Type II lineages are sensitive to excess Notch while Type I are resistant, and excess Notch can cause hyperplasia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C18 represent established knowledge supported by appropriate citations. These provide necessary context for the study. The claims are accurately stated and properly attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "7e6d2030-ab0f-489e-bee0-a3e3726d5406",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that NuRD will be widely deployed in developmental transitions to decommission enhancers in readiness for subsequent lineage decisions, given the iterative use of signaling pathways like Notch throughout development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 is explicitly speculative about broader implications. While the logic is reasonable given NuRD's known roles in other systems, this represents a hypothesis for future testing rather than a conclusion supported by data in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "911a43e4-ff2b-4da4-af7b-0def2ce26560",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work shows NuRD functions in stem cell exit and differentiation across systems. NuRD is found at active transcription sites in ES cells, ZEB2 cooperates with NuRD in Schwann cells, and other factors (Pax6, Ikaros, PROX1) modulate Notch responsiveness, some via NuRD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69, C71, C73 represent prior knowledge properly cited to support the discussion. These contextualize the findings within broader understanding of NuRD function and Notch regulation. The citations appear appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    },
+    {
+      "id": "3781f67f-7f8a-4001-9e1a-fb73978da77d",
+      "content_id": "ceca5c7f-69ff-40f2-a50a-d3ecf281e81b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Type II lineages lack factors recruiting Mi-2 to target enhancers, explaining their sensitivity to Notch. Prolonged Notch activity can eventually overcome Mi-2-mediated resistance, suggesting NuRD fine-tunes rather than fully silences target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70 and C72 are inferences from the data. C70 is supported by the differential Zfh1 expression and Notch sensitivity between Type I and Type II lineages. C72 is supported by the eventual hyperplasia even with Mi-2 present. Both represent reasonable interpretations of the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:21:38.129093Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ada85d19-b209-4d2a-813d-021e3bdff908",
+      "result_id": "c81cb22f-e3b4-4580-a810-da2ad0b366be"
+    },
+    {
+      "claim_id": "10ae7253-7192-441f-9f54-17e76ca94843",
+      "result_id": "c81cb22f-e3b4-4580-a810-da2ad0b366be"
+    },
+    {
+      "claim_id": "262e978c-56ce-4e1b-984c-eab74edff3f4",
+      "result_id": "c81cb22f-e3b4-4580-a810-da2ad0b366be"
+    },
+    {
+      "claim_id": "d1b0b151-5d9b-4a2a-9205-8c431271b6b7",
+      "result_id": "c81cb22f-e3b4-4580-a810-da2ad0b366be"
+    },
+    {
+      "claim_id": "204b34a5-2dca-4e21-a0eb-2490e67b79bd",
+      "result_id": "c81cb22f-e3b4-4580-a810-da2ad0b366be"
+    },
+    {
+      "claim_id": "10061522-b81d-4104-a441-2220e8afc796",
+      "result_id": "80ef6ea4-f9d2-42f1-9740-60b75f534d25"
+    },
+    {
+      "claim_id": "843d25ba-3793-4f87-bc08-3b5f2e01d43c",
+      "result_id": "80ef6ea4-f9d2-42f1-9740-60b75f534d25"
+    },
+    {
+      "claim_id": "27bbb71e-2eef-4e80-b730-9c4fef06bbad",
+      "result_id": "80ef6ea4-f9d2-42f1-9740-60b75f534d25"
+    },
+    {
+      "claim_id": "cb26c984-5102-40f1-b70f-0ea6c4e92940",
+      "result_id": "80ef6ea4-f9d2-42f1-9740-60b75f534d25"
+    },
+    {
+      "claim_id": "33b0b7c6-27af-414f-920f-d21ba78cf617",
+      "result_id": "80ef6ea4-f9d2-42f1-9740-60b75f534d25"
+    },
+    {
+      "claim_id": "7bbda3ce-83ec-457f-bdc0-d866e81a954c",
+      "result_id": "80ef6ea4-f9d2-42f1-9740-60b75f534d25"
+    },
+    {
+      "claim_id": "e70a1f49-7b74-497f-b27c-431176d578cb",
+      "result_id": "80ef6ea4-f9d2-42f1-9740-60b75f534d25"
+    },
+    {
+      "claim_id": "1a69e6d4-204e-4487-b12f-0ee98a915276",
+      "result_id": "b2612cdc-ad27-4a1c-b617-cee9546588f9"
+    },
+    {
+      "claim_id": "d80c34eb-b391-4020-99d7-13a651ed7cf1",
+      "result_id": "b2612cdc-ad27-4a1c-b617-cee9546588f9"
+    },
+    {
+      "claim_id": "cf6a454a-4cdb-46b7-9d9c-07c6fc401fb9",
+      "result_id": "7e9edef6-7217-4bfd-ac3f-9fd34ca08b2a"
+    },
+    {
+      "claim_id": "cc7cd354-6be1-4a98-aa40-cfa48a0f71bf",
+      "result_id": "7e9edef6-7217-4bfd-ac3f-9fd34ca08b2a"
+    },
+    {
+      "claim_id": "ff5c6d67-8dc7-4aa7-8b82-89d74dcd973f",
+      "result_id": "7e9edef6-7217-4bfd-ac3f-9fd34ca08b2a"
+    },
+    {
+      "claim_id": "039895fe-e83c-4828-b4bb-d26678226151",
+      "result_id": "7e9edef6-7217-4bfd-ac3f-9fd34ca08b2a"
+    },
+    {
+      "claim_id": "b1f1b60f-db06-4dab-bd78-fed322796a37",
+      "result_id": "7e9edef6-7217-4bfd-ac3f-9fd34ca08b2a"
+    },
+    {
+      "claim_id": "23a2886a-8184-4dcf-a208-932fd66c6613",
+      "result_id": "7e9edef6-7217-4bfd-ac3f-9fd34ca08b2a"
+    },
+    {
+      "claim_id": "89bf7ecc-9a72-45b7-9a56-ee57193e9531",
+      "result_id": "95b372f8-c80a-4c0f-897c-0af571ca7a7f"
+    },
+    {
+      "claim_id": "7114dc2c-6636-40d3-9d43-8ab73dbbb76c",
+      "result_id": "95b372f8-c80a-4c0f-897c-0af571ca7a7f"
+    },
+    {
+      "claim_id": "ef2b7037-e035-41ac-93fb-6406de89daa5",
+      "result_id": "95b372f8-c80a-4c0f-897c-0af571ca7a7f"
+    },
+    {
+      "claim_id": "272115d4-fd51-453b-93c9-f95077af010c",
+      "result_id": "95b372f8-c80a-4c0f-897c-0af571ca7a7f"
+    },
+    {
+      "claim_id": "32ca0c4a-a0f3-4995-b5cc-49ba33b259be",
+      "result_id": "1f98f89d-eade-4375-80b3-24cb8a92a0b4"
+    },
+    {
+      "claim_id": "c8b95177-eafb-48cb-8c25-b0ac032044e2",
+      "result_id": "1f98f89d-eade-4375-80b3-24cb8a92a0b4"
+    },
+    {
+      "claim_id": "6dc1ce8e-1a14-496f-8635-e4726ad23b2e",
+      "result_id": "1f98f89d-eade-4375-80b3-24cb8a92a0b4"
+    },
+    {
+      "claim_id": "9129600a-9a7b-4a49-b9f4-17d5db8dfc04",
+      "result_id": "1f98f89d-eade-4375-80b3-24cb8a92a0b4"
+    },
+    {
+      "claim_id": "6ac967ac-e713-4691-9f97-696bc31763e5",
+      "result_id": "1f98f89d-eade-4375-80b3-24cb8a92a0b4"
+    },
+    {
+      "claim_id": "1b97d2c3-691f-4671-908f-80c6c84aa347",
+      "result_id": "850e230c-97d3-410c-b29b-97afc5ac257c"
+    },
+    {
+      "claim_id": "c303323f-75a7-4ad2-87ed-c57a057e165e",
+      "result_id": "850e230c-97d3-410c-b29b-97afc5ac257c"
+    },
+    {
+      "claim_id": "0d6a23ab-93e3-4b96-a9b7-b7b64d5c826a",
+      "result_id": "850e230c-97d3-410c-b29b-97afc5ac257c"
+    },
+    {
+      "claim_id": "349905ac-660a-4453-a3c8-6b1d43950447",
+      "result_id": "850e230c-97d3-410c-b29b-97afc5ac257c"
+    },
+    {
+      "claim_id": "0f9dc0de-2de4-4605-894a-deab3bf31d1e",
+      "result_id": "46263e42-3152-46fb-b6ce-331458b61191"
+    },
+    {
+      "claim_id": "5ba5268c-c2dc-4f1f-81f9-614431721efe",
+      "result_id": "46263e42-3152-46fb-b6ce-331458b61191"
+    },
+    {
+      "claim_id": "ff2eddc0-75a5-479c-ac1c-ff9378fead43",
+      "result_id": "cc29fc42-8a3c-4567-a4e1-f7a85fd0496c"
+    },
+    {
+      "claim_id": "ff9de439-4fa0-4224-aa56-8d6eb098c660",
+      "result_id": "cc29fc42-8a3c-4567-a4e1-f7a85fd0496c"
+    },
+    {
+      "claim_id": "7b623d78-97eb-4ca5-bddf-3e10b9e4a2f5",
+      "result_id": "cc29fc42-8a3c-4567-a4e1-f7a85fd0496c"
+    },
+    {
+      "claim_id": "b4e050a7-1f19-4100-9f7c-7a2402a4f827",
+      "result_id": "cc29fc42-8a3c-4567-a4e1-f7a85fd0496c"
+    },
+    {
+      "claim_id": "d5c67ea8-2ca0-48ee-84af-508f24ab8772",
+      "result_id": "cc29fc42-8a3c-4567-a4e1-f7a85fd0496c"
+    },
+    {
+      "claim_id": "27852dac-a1c0-4772-9e97-ece8ac6ad221",
+      "result_id": "cc29fc42-8a3c-4567-a4e1-f7a85fd0496c"
+    },
+    {
+      "claim_id": "38205b45-92fe-4589-81d1-3712ad96cb5a",
+      "result_id": "cc29fc42-8a3c-4567-a4e1-f7a85fd0496c"
+    },
+    {
+      "claim_id": "86d5081b-4762-44a0-80a4-9710b6e18cbf",
+      "result_id": "4b32d799-47ff-4a92-9a96-03c1abdb14d3"
+    },
+    {
+      "claim_id": "afb102d7-3e35-41de-a8b4-748fa365aaa0",
+      "result_id": "4b32d799-47ff-4a92-9a96-03c1abdb14d3"
+    },
+    {
+      "claim_id": "6a7b1aaf-da39-4581-b0cd-602ebdbf497b",
+      "result_id": "4b32d799-47ff-4a92-9a96-03c1abdb14d3"
+    },
+    {
+      "claim_id": "ffb5f12e-6e66-4f13-8209-280dc5e82b52",
+      "result_id": "268f878a-f7c1-4a38-b77f-d79e89626b1c"
+    },
+    {
+      "claim_id": "5a96d4a9-2859-421f-ba5e-b1aced7c62c0",
+      "result_id": "268f878a-f7c1-4a38-b77f-d79e89626b1c"
+    },
+    {
+      "claim_id": "ba246cce-2286-42da-b73e-ed34277843f0",
+      "result_id": "5e0b6fa5-12e7-4462-89c2-0f0e74a68517"
+    },
+    {
+      "claim_id": "1b2ca1f0-a417-4172-a449-e66572978dfe",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "33520be9-4138-4656-b425-1cdcec724182",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "8cbdf7df-d207-4602-a660-1cdd2aeab09f",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "36a98f6e-1d5a-4239-a5c6-46ef610877bd",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "e229cc8b-89a0-480d-b397-4becd526d750",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "82ece195-213c-42a7-9f29-50b5a8e46942",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "87ca6603-385b-4992-b610-cdabe8aafcc2",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "6dd1d5fd-3f18-422f-8668-d49c44c31b0d",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "4a1ded71-8d07-40d1-a1d4-3ab414cf4331",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "8e68e3d3-3119-4f58-981e-b34725c99f43",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "5deede78-0630-4ac4-8ad4-6755d292b8e3",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "62f5a70e-60e5-44fd-980c-4dff34bc16c7",
+      "result_id": "de68640e-9b77-403b-a212-eb19cfc82207"
+    },
+    {
+      "claim_id": "a3fd09e7-e446-4f89-9c6b-1954f2192784",
+      "result_id": "7e6d2030-ab0f-489e-bee0-a3e3726d5406"
+    },
+    {
+      "claim_id": "a6251e6f-380f-4164-a8eb-ab23fb51a0e8",
+      "result_id": "911a43e4-ff2b-4da4-af7b-0def2ce26560"
+    },
+    {
+      "claim_id": "c66e66e5-d7bd-47d7-a039-c2dca96c8f2d",
+      "result_id": "911a43e4-ff2b-4da4-af7b-0def2ce26560"
+    },
+    {
+      "claim_id": "78a2c3d6-098f-4592-a6c1-6c0b0a2f9dc2",
+      "result_id": "911a43e4-ff2b-4da4-af7b-0def2ce26560"
+    },
+    {
+      "claim_id": "026ae661-5ba9-4eda-8bce-7f093d0d1ea1",
+      "result_id": "911a43e4-ff2b-4da4-af7b-0def2ce26560"
+    },
+    {
+      "claim_id": "41f63625-555c-4a29-acda-b3f8ec0a7f54",
+      "result_id": "911a43e4-ff2b-4da4-af7b-0def2ce26560"
+    },
+    {
+      "claim_id": "e71e26f5-8f5a-4f64-8094-f9a73aff62d0",
+      "result_id": "911a43e4-ff2b-4da4-af7b-0def2ce26560"
+    },
+    {
+      "claim_id": "069239e4-b3ba-4384-8ca0-a4317ad2a735",
+      "result_id": "911a43e4-ff2b-4da4-af7b-0def2ce26560"
+    },
+    {
+      "claim_id": "8a337a5b-e779-4ef0-851f-140ac392084b",
+      "result_id": "911a43e4-ff2b-4da4-af7b-0def2ce26560"
+    },
+    {
+      "claim_id": "74cef257-d590-4bbb-86f5-be1362d8c9eb",
+      "result_id": "911a43e4-ff2b-4da4-af7b-0def2ce26560"
+    },
+    {
+      "claim_id": "01f318f1-3902-4bb9-b157-491f72594938",
+      "result_id": "3781f67f-7f8a-4001-9e1a-fb73978da77d"
+    },
+    {
+      "claim_id": "34d3c12c-6500-4237-ab25-d180f08b065a",
+      "result_id": "3781f67f-7f8a-4001-9e1a-fb73978da77d"
+    }
+  ],
+  "comparisons": []
+}

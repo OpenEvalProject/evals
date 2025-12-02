@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study used two groups of eight adult Long-Evans rats each, housed under controlled conditions with food restriction and ethical approval. One group participated in four foraging experiments (scale, travel time, depletion rate, handling time), while a separate group was tested on the post-reward delay foraging experiment followed by the intertemporal choice task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide complete methodological details about animal subjects, housing, experimental design, and ethical approval. The experimental design with two separate cohorts is clearly described and appropriate for the study's objectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In the Travel Time Experiment, rats stayed longer in patches with larger starting rewards and when travel time between patches was longer, consistent with MVT predictions. However, rats uniformly overharvested relative to MVT predictions, with no significant difference in overharvesting between 10s and 30s travel conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 present statistical results with appropriate tests, effect sizes, and p-values. The findings demonstrate both qualitative agreement with MVT (sensitivity to reward and travel time) and quantitative deviation (overharvesting), which is central to the study's thesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In the Depletion Rate Experiment, rats left patches earlier when depletion was faster (consistent with MVT), but overharvested relative to MVT predictions. Overharvesting was greater in the slower depletion condition (8\u03bcL vs 16\u03bcL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide statistical evidence with appropriate tests and significance values. The differential overharvesting between depletion rates is a novel finding that helps distinguish between competing hypotheses about the mechanism of overharvesting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In the Scale Experiment, rats overharvested in both conditions but stayed significantly longer when rewards and delays were proportionally scaled up (condition B: 180\u03bcL/20s vs condition A: 90\u03bcL/10s), contrary to MVT predictions. This suggests nonlinearity in perception of reward value and/or time contributes to overharvesting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 present clear statistical evidence for a violation of MVT's scale-invariance prediction. Claim C48's inference about nonlinearity is reasonable given the data, though it represents one of several possible interpretations that are tested more rigorously in the modeling section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "In the Pre-vs-Post Experiment, rats left patches earlier when there was a pre-reward delay (3s) compared to when the same delay occurred post-reward, despite constant total trial time. This suggests a bias in time perception or delayed reward valuation contributes to overharvesting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 provide statistical evidence for differential sensitivity to pre- vs post-reward delays, which is inconsistent with MVT and nonlinear reward utility but consistent with temporal discounting. This is a critical discriminative test between competing hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In the Post-Reward Delay Experiment, rats were sensitive to post-reward delays, leaving patches earlier with longer delays (12s vs 3s). The degree of overharvesting did not differ between delay conditions, suggesting overharvesting is not due to insensitivity to post-reward delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide statistical evidence that rats incorporate post-reward delays into decisions, contradicting the hypothesis that overharvesting results from insensitivity to these delays. This is important for ruling out alternative explanations and was tested in a separate cohort, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In the Intertemporal Choice Experiment, rats were more likely to choose larger rewards and were sensitive to pre-reward delays in both constant delay and constant rate conditions. Rats were less sensitive to delays when they did not affect reward rate (constant rate condition), demonstrating sensitivity to opportunity costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims reference statistical results from mixed-effects logistic regression with appropriate post-hoc comparisons. The finding that rats are sensitive to both reward magnitude and opportunity costs in intertemporal choice parallels the foraging results, supporting the hypothesis of common mechanisms. However, the manuscript text describing these results appears to be missing from the provided claims (C54-C56 are not in the claim list), though C57 summarizes the key conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Model comparison across all foraging tasks using iBIC showed that quasi-hyperbolic discounting provided the best fit, followed by constant sensitivity discounting and hyperbolic discounting. All three top models predict hyperbolic time preferences, suggesting suboptimal foraging is due to time preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 present model comparison results using an appropriate Bayesian criterion (iBIC) that accounts for model complexity. The convergence of the top three models on hyperbolic time preferences strengthens the inference in C61, though the claim could be stated more cautiously given that other mechanisms weren't definitively ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "For the intertemporal choice task, quasi-hyperbolic discounting had the lowest iBIC and hyperbolic discounting the second lowest, while constant sensitivity discounting performed worse than biased time perception models. This suggests hyperbolic time preferences without insensitivity to delays best explains intertemporal choice behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 present model comparison results for the intertemporal choice task. The inference in C64 is reasonable given that constant sensitivity produces hyperbolic preferences via insensitivity to delays, and its poorer performance suggests this mechanism is not primary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Cross-validation showed that quasi-hyperbolic discounting parameters fit to foraging data predicted foraging behavior better than parameters fit to intertemporal choice data for all rats. For intertemporal choice, foraging-derived parameters provided better predictions for 3 of 8 rats, suggesting the model generalizes reasonably well across tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 present cross-validation results that test the external validity of the quasi-hyperbolic model. The asymmetric generalization (foraging\u2192intertemporal choice works for some rats, but not vice versa) is honestly reported and discussed. This provides partial support for a common mechanism while acknowledging limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "All-future horizon discounting models (considering all future rewards) had lower iBIC and produced smaller discount factors than one-trial horizon models for intertemporal choice. However, one-trial horizon parameters predicted foraging behavior better for 6 of 8 rats. Overall, full horizon models explained intertemporal choice data better and produced smaller discount estimates, but did not improve cross-task prediction in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 present a thorough analysis of decision horizon effects with appropriate statistical tests and model comparisons. The finding that including future rewards improves intertemporal choice model fit but doesn't improve cross-task prediction is important for understanding the limitations of the approach and is honestly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The study's main finding is that rats exhibit similar time preferences in both foraging and intertemporal choice contexts\u2014preferring immediate rewards and being sensitive to opportunity costs\u2014and that a quasi-hyperbolic discounting model explains individual rats' behavior across both contexts, providing evidence for a common mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 represent the study's primary conclusions, which are well-supported by the experimental results (C39-C57) and modeling analyses (C58-C73). The quasi-hyperbolic model consistently outperformed alternatives, and cross-validation demonstrated some generalization across tasks. However, the evidence for a 'common mechanism' (C16) is somewhat overstated given the asymmetric cross-task prediction and the fact that alternative mechanisms weren't definitively ruled out (acknowledged in C97-C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The introduction establishes that animals exhibit myopic behavior in both foraging (overharvesting) and intertemporal choice (preference for immediate rewards), describes optimal foraging theory (MVT) and various explanations for deviations from optimality, and notes that prior attempts to link foraging and intertemporal choice behavior through common models have failed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C38 accurately summarize established knowledge and prior work in the field, supported by appropriate citations. These claims establish the motivation and context for the current study. The characterization of prior work as having 'failed' (C11, C37) is supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The discussion summarizes that rats exhibit behavior qualitatively consistent with MVT but consistently overharvest, which may reflect time preferences similar to those in intertemporal choice. The study found that rats were sensitive to post-reward delays in both tasks, contradicting the hypothesis that insensitivity to these delays explains suboptimal behavior, with quantitative modeling supporting time preferences as the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C84 accurately summarize the study's findings and their interpretation. The conclusion that time preferences rather than insensitivity to delays drives behavior is well-supported by both the Post-Reward Delay Experiment (C51-C53) and the modeling results (C58-C64, C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The discussion addresses the apparent conflict with prior studies that found animals perform better in foraging than intertemporal choice tasks. The authors suggest their success in finding a common model (quasi-hyperbolic discounting) may be due to testing more flexible discounting functions and considering all future rewards in both tasks. Including future rewards reduced discount factor estimates but did not improve cross-task predictions in this study, though it might in cases where discounting models overpredict overharvesting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C96 provide a thoughtful discussion of how the current results relate to prior work and potential reasons for different conclusions. The speculation in C96 about when the approach might work better is appropriately qualified. The discussion honestly acknowledges the limitations of the cross-task prediction results (C94) while explaining why the approach might still be valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The discussion acknowledges that while quasi-hyperbolic discounting provided the best explanation, other mechanisms (subjective costs, diminishing marginal utility, biased time estimation) may contribute independently, and untested hypotheses may provide alternative explanations. The authors conclude that quasi-hyperbolic discounting may link foraging and intertemporal choice, and discuss recent theoretical work suggesting time preferences could emerge from rational value construction processes with increasing temporal uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 provide appropriate caveats about the study's conclusions and place the findings in the context of recent theoretical developments. The acknowledgment of alternative explanations (C97-C98) is important for scientific integrity. The connection to theoretical work on uncertainty and sequential sampling (C101-C103) is well-supported by citations and provides a mechanistic framework for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Rats were trained on lever pressing for reward, then on a patch depletion paradigm. For each experiment, rats were trained for 5 days on each condition then tested for 5 days, with conditions counterbalanced across rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 describe the training and testing procedures. The methods are clearly described and appropriate for the behavioral paradigm. Counterbalancing (C108) is important for controlling order effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C112"
+    ],
+    "result": "All models were constructed as continuous-time semi-Markov processes, with optimal policies found using value iteration. Group-level and individual parameters were fit simultaneously using an expectation-maximization algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110, C112 describe the modeling approach with appropriate citations to established methods. The use of semi-Markov processes is appropriate for capturing the temporal dynamics of the tasks, and the EM algorithm is a standard approach for hierarchical parameter estimation. However, important details about model implementation, convergence criteria, and validation are not captured in these claims.",
+    "result_type": "MINOR"
+  }
+]

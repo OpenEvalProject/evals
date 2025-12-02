@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The lateral horn (LH) occupies 70% of the mushroom body (MB) volume, but total LHN arbor volume is 40% greater than the MB when including axonal projections outside the LH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 provide volumetric measurements based on standard template brain analysis. The measurements are clearly stated with appropriate methodology (neuropil volume calculations), and the distinction between LH neuropil and total LHN arbor volume is appropriately made. The data support the conclusion about the significant investment in LH circuitry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The lateral horn contains approximately 1410 LHNs (580 local neurons, 830 output neurons), which is comparable to the number of mushroom body Kenyon cells and exceeds the number of projection neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 present cell count estimates from EM tracing with confidence intervals (C3: 90% CI 1368-1454). The methodology is described (random sampling of 17/31 primary neurite tracts), and the comparative statements (C5, C6) are appropriately qualified. The estimates provide a rigorous lower bound given incomplete tract sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "A genetic screen identified 31 primary neurite tracts and 69 distinct LHN anatomy groups, with most driver lines labeling only a few anatomy groups (mean 3.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 describe results from the anatomical screen with quantitative data. The identification of 31 tracts is supported by EM and imaging data (C9), the mean of 3.8 anatomy groups per line is clearly stated (C10), and the 69 anatomy groups represent a systematic classification (C11). The data are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "LHONs and LHLNs have higher input resistance and lower capacitance than PNs, suggesting lower energetic costs per spike.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 presents electrophysiological measurements with figure references, while C13 makes a reasonable inference about energetic costs based on these electrical properties. The inference is appropriately qualified as a suggestion rather than a definitive conclusion. The measurements are standard biophysical parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "LHONs have 10x lower baseline firing rates than PNs (0.1 Hz vs 1.4 Hz), respond to 3x more odors (35% vs 12%), but with lower evoked firing rates (14 Hz vs 21 Hz), resulting in similar total spike counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 present a comprehensive characterization of firing properties from 410 cells meeting inclusion criteria. The measurements are quantitative with clear statistical definitions of significant responses. The comparative statements are internally consistent and supported by the data. The conclusion about similar total spike counts (C21, C22) follows logically from the individual measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Manual classification identified 64 functional cell types, which were validated by automated clustering (median ARI 0.64 for anatomy, 0.60 for odor responses), demonstrating 33 cell types with stereotyped odor responses and morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 describe the cell type classification and validation. The use of Adjusted Rand Index provides quantitative validation of the manual classification (C24). The conclusion of 33 validated cell types (C25) is appropriately conservative, representing those with sufficient replicates for cross-validation. The methodology is sound and the validation metrics are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "LHONs show significantly higher cross-correlation and off-diagonal correlation structure compared to PNs, reflecting inhomogeneous sampling of odor space rather than tuning breadth or cell number effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 present correlation analysis with appropriate controls. The shuffling analysis (C29) effectively rules out alternative explanations related to tuning breadth and cell numbers. The conclusion about inhomogeneous odor space sampling (C28) is well-supported by the data and control analyses. The statistical approach is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "LHONs convey odor category information with 70% of cells being category-informative, outperforming PNs in population-level category decoding, with amine categorizers showing highest selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 present ROC analysis and population decoding results with appropriate shuffled controls. The quantitative metrics (70% category-informative cells, C31) and comparative statements are supported by statistical tests. The population decoding analysis (C33, C34) uses appropriate machine learning methods with cross-validation. The results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "EM connectomics reveals LHONs receive strong input from 3-7 glomeruli (comparable to KCs), but with more total synapses (467\u00b1278 vs 77\u00b129) and lower proportion of feedforward PN input (41\u00b114% vs 79\u00b15%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 present EM connectivity data with quantitative measurements and error estimates. The comparison with prior optogenetic mapping (C38) and KC connectivity (C39-C42) provides validation. The measurements are clearly stated with standard deviations. The observation of one LHON with no uniglomerular PN input (C37) appropriately highlights circuit diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "LHNs are genetically and anatomically defined cell types with stereotyped odor responses, showing 3x broader tuning than PNs and improved odor categorization through stereotyped pooling of related odor channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 synthesize the major findings. The stereotypy claim (C43, C44) is supported by the cross-validation results. The 3x broader tuning (C45) is directly measured. The interpretation about behavioral relevance (C46) is appropriately qualified as speculative. The categorization improvement (C47) is supported by the ROC and decoding analyses. This represents a well-supported synthesis of the main results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study identified 165 anatomically distinct LHN cell types, with predictions of >250 total types from complete EM data, exceeding the number of cell types in mammalian neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 states the identification of 165 cell types as a major finding. The prediction of >250 types (C70) is appropriately qualified as speculative based on incomplete sampling. The comparison to mammalian neocortex (C71) is supported by citation. However, the prediction relies on extrapolation from incomplete data, which introduces uncertainty about the exact number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Anatomical classification was more reliable than functional classification alone, contrasting with retinal ganglion cells but consistent with EM connectomics showing stereotyped integration of olfactory channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by the clustering analysis showing better performance for anatomy. The comparison to retinal ganglion cells (C73) provides context. The EM connectomics evidence (C74-C76) from this and other studies supports the anatomical approach. The reasoning is sound and the conclusion is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study screened 2769 Split-GAL4 lines selecting 234 with LHNs, annotated FlyLight and Vienna Tiles libraries, and created an online 3D atlas of 1619 LHNs and 1258 input neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 describe the methodological resources generated. The numbers are clearly stated and the resources are documented. These represent significant community resources that enable the functional studies. The scale of the effort (2769 lines screened) is substantial and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Anatomical analysis identified 26 new input classes including non-olfactory inputs concentrated ventromedially, 261 LHN cell types (34 local, 227 output), with major projections to superior protocerebrum and ventrolateral protocerebrum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 present comprehensive anatomical characterization. The identification of new input classes (C103) and multimodal integration (C104) expand understanding of LH function. The cell type counts (C105) and projection patterns (C106-C108) are well-documented with appropriate citations. The observation about limited contralateral projections (C108) includes reasonable speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "LH odor coding differs from mushroom body (lacking stereotypy, sparser tuning) and mammalian cortical amygdala (which shows decorrelated representations without categorization or stereotypy), but shares low baseline firing rates with KCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 provide comparative analysis with appropriate citations. The comparisons to MB (C48-C50) and mammalian systems (C51-C54) are well-supported by literature. However, the authors appropriately note that detecting stereotypy in mammalian systems may require genetic tools similar to those used in flies. The comparisons are fair and appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Circuit mechanisms for response broadening differ between LH and MB: LHONs receive 3-7 strong PN inputs with broadly distributed synapses and linear integration, while KCs have clustered inputs at dendritic claws acting as coincidence detectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 synthesize circuit mechanisms with appropriate citations. The EM data (C56) and comparisons to prior work (C57-C60) are well-integrated. The distinction between distributed vs. clustered inputs (C61-C62) provides mechanistic insight. The reasoning about integration properties is sound, though some aspects (C61) rely on work in preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Circuit architecture differs between LH and MB: LH receives inhibitory PN input and contains ~580 local neurons (mostly inhibitory) integrating 2-3 input channels, while MB has only one inhibitory neuron (APL) implementing winner-take-all gain control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 contrast inhibitory circuit architecture with appropriate citations. The cell counts (C64-C65) are supported by EM data. The functional interpretation of APL (C67) is well-cited. The preliminary EM results on LHLNs (C68) are appropriately qualified. The comparison highlights important circuit differences that may explain functional properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C90",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Integration across multiple odor channels is the norm in LH, with evidence for improved odor categorization and integration of both innate and learned olfactory information, supporting the hypothesis that stereotyped LH integration enables categorical odor representations while MB enables specific odor identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 synthesize functional and circuit findings with appropriate citations to companion papers. The conclusion about integration being the norm (C86) is supported by electrophysiology and EM data. The evidence for categorization (C90) is from the current study. The integration of innate and learned information (C92-C93) is supported by cited work. The synthesis (C94) is appropriately qualified as a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "LHNs likely show both stereotyped odor category selectivity and behavioral specificity, with specific cell types (e.g., AV1a1 for geosmin aversion) mediating distinct behaviors despite broad information distribution, potentially modulated by internal state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 propose a model for LH function. While the geosmin example (C96-C97) is well-supported by citation, the broader claims about behavioral specificity (C95) and state modulation (C98) are appropriately qualified as speculative. The model is reasonable but requires additional experimental validation. The uncertainty reflects the speculative nature of the synthesis rather than problems with the data.",
+    "result_type": "MAJOR"
+  }
+]

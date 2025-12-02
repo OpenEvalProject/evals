@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "UBE2G1 is identified as the dominant E2 enzyme regulating cereblon modulating agent-induced degradation of neomorphic substrates through a CRISPR screen of 41 E2 enzymes. UBE2G1 knockout significantly attenuated POM-induced IKZF1 degradation, and this defect was rescued by wild-type but not catalytically-dead UBE2G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR screen data (C33, Figure 1B) clearly identifies UBE2G1 as having the strongest effect among 41 E2 enzymes. The rescue experiments with wild-type vs C90S mutant (C35, Figure 1C) demonstrate that UBE2G1's catalytic activity is required. MLN4924 control (C34) validates CRL4 dependence. The experimental design is sound with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "UBE2D3 cooperates with UBE2G1 in substrate degradation, as double knockout of UBE2G1 and UBE2D3 produces greater inhibition of IKZF1 degradation than either single knockout alone, though UBE2D3 knockout alone has minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual CRISPR screen data (C37, Figure 2B-C) demonstrates additive effects of double knockout. The minimal effect of UBE2D3 alone (C36, Figure 2C) combined with the enhanced effect when combined with UBE2G1 knockout supports cooperative function. The data consistently show this pattern across multiple substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "UBE2G1 ablation significantly diminishes the degradation of multiple cereblon neomorphic substrates (IKZF1, IKZF3, ZFP91, CK1\u03b1, GSPT1) induced by various cereblon modulating agents (LEN, POM, CC-220, CC-885) across multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by extensive immunoblot data across multiple myeloma cell lines (C39-C42, Figure 3A, Figure 7B), AML cell lines (C43-C44, Figure 3\u2014figure supplement 1E-H), and 293T cells (C45-C46, Figure 3\u2014figure supplement 1I). The rescue with wild-type but not C90S mutant (C46) confirms specificity. The breadth of substrates and compounds tested strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "UBE2G1 loss blocks degradation of BRD4 induced by cereblon-based PROTAC dBET1 but not VHL-based PROTAC MZ1, demonstrating specificity for CRL4CRBN-mediated degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effect on dBET1 vs MZ1 (C47-C48, Figure 3C) provides strong evidence for CRL4CRBN specificity. This is an important control demonstrating that UBE2G1 is not generally required for all targeted protein degradation, only for cereblon-dependent pathways. The experimental design appropriately tests both PROTACs in parallel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "UBE2G1 depletion specifically prolongs the half-lives of cereblon neomorphic substrates IKZF1 and IKZF3 but does not affect SCF substrates p27 and c-Myc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cycloheximide chase experiment (C49-C50, Figure 3D) demonstrates prolonged half-lives for IKZF1/IKZF3 while p27 and c-Myc remain unaffected. This specificity control is critical for establishing that UBE2G1 functions specifically with CRL4CRBN rather than having general effects on protein stability or other E3 ligases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In vitro reconstitution experiments demonstrate that UBE2D3 alone produces mono- or di-ubiquitinated substrates, UBE2G1 alone has no activity, but together they produce K48-linked polyubiquitin chains on IKZF1 and GSPT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro ubiquitination assays (C55-C58, Figure 4A-D) provide direct biochemical evidence for the cooperative mechanism. The use of K48-only and K48R ubiquitin mutants (C58) definitively establishes the linkage specificity. The reconstituted system with purified components eliminates cellular confounders and demonstrates sufficiency of these components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C77"
+    ],
+    "result": "UBE2G1 functions as a ubiquitin chain elongation enzyme that requires prior substrate monoubiquitination and the presence of CC-885 and Cul4A-Rbx1, establishing a sequential ubiquitination mechanism where UBE2D3 initiates and UBE2G1 extends K48-linked chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequential ubiquitination experiment (C59-C60, Figure 4E) elegantly demonstrates that UBE2G1 can only act on pre-ubiquitinated substrate and requires the E3 ligase complex. This establishes the mechanistic order and explains the cooperative function. The experimental design with purified pre-ubiquitinated substrate is rigorous and directly tests the sequential model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "FLAG-tagged UBE2G1 and UBE2D3 purified from human cells recapitulate the cooperative ubiquitination activity observed with bacterial recombinant proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation with mammalian-expressed proteins (C61, Figure 4\u2014figure supplement 1C) addresses potential concerns about bacterial protein artifacts. This control strengthens confidence that the observed mechanism is physiologically relevant and not an artifact of the expression system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In vivo ubiquitination assays in 293T cells demonstrate that double knockout of UBE2G1 and UBE2D3 reduces but does not eliminate IKZF1 ubiquitination, and reintroduction of UBE2G1 dramatically enhances polyubiquitination while UBE2D3 primarily promotes monoubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo ubiquitination data (C62-C66, Figure 5A-C) corroborates the in vitro findings in a cellular context. The incomplete block with double knockout (C62) suggests additional E2 redundancy, which is appropriately acknowledged. The rescue experiments (C63-C65) demonstrate the relative contributions of each E2, with UBE2G1 being more critical for polyubiquitination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "LEN-sensitive myeloma cell lines express higher levels of UBE2G1 than resistant lines, and reintroduction of wild-type UBE2G1 into the UBE2G1-deficient resistant line SKMM-2 restores sensitivity to LEN and POM through enhanced IKZF1/IKZF3 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between UBE2G1 expression and drug sensitivity (C67-C68, Figure 6B) combined with the functional rescue in SKMM-2 cells (C69-C70, Figure 6C-D) provides strong evidence linking UBE2G1 levels to therapeutic response. The rescue with wild-type but not C90S mutant confirms the mechanism. However, correlation across cell lines has limitations as other factors may contribute to resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "UBE2G1 loss confers resistance to CC-885 in multiple AML cell lines and 293T cells, and to cereblon-based PROTAC dBET1 but not VHL-based PROTAC MZ1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell proliferation data across multiple AML lines (C71-C72, Figure 6\u2014figure supplement 1A-E) and the differential PROTAC sensitivity (C73, Figure 6\u2014figure supplement 1F) extend the findings beyond myeloma. The consistency across cell types and the specificity for cereblon-based degraders strengthen the generalizability of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "UBE2G1 knockout in myeloma cells confers significant resistance to LEN and POM but only partial resistance to the more potent degrader CC-220.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential resistance to CC-220 vs LEN/POM (C74-C75, Figure 7A-B) is an important finding suggesting that more potent degraders can overcome UBE2G1 deficiency. This has clear therapeutic implications. The data are consistent across multiple myeloma cell lines, though the mechanism of CC-220's retained activity is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "UBE2G1 deficiency impairs degradation of other CRL4 substrates p21 and RBM39 induced by UV irradiation and E7070 treatment, suggesting broader involvement in CRL4-mediated degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data for p21 and RBM39 (C83, Figure 3\u2014figure supplement 2A-B) extend UBE2G1's role beyond cereblon neomorphic substrates to other CRL4 substrates. This supports the broader significance of the findings. However, these are limited to two substrates and would benefit from more extensive characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C89"
+    ],
+    "result": "UBE2D1 and UBE2D2 can synergize with UBE2G1 in vitro for GSPT1 ubiquitination, and UBE2D1/D2 can catalyze some polyubiquitination without UBE2G1, suggesting functional redundancy among UBE2D family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro data (C85-C86, C89, Figure 4\u2014figure supplement 2B) demonstrate that other UBE2D family members can functionally substitute for UBE2D3. This explains why UBE2D3 knockout alone has minimal effect (C36). The sequence homology data (Figure 4\u2014figure supplement 2A) supports the potential for functional redundancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "UBE2D3 overexpression can promote IKZF1 polyubiquitination in UBE2G1/UBE2D3 double knockout cells and GSPT1 degradation in UBE2G1 knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overexpression data (C90-C91, Figure 5B, Figure 4\u2014figure supplement 1B) demonstrate that high levels of UBE2D3 can partially compensate for UBE2G1 loss. This supports the model of redundant but non-equivalent E2 functions and explains residual activity in knockout cells. However, overexpression may not reflect physiological conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The myeloma cell line SKMM-2 has lost both copies of the UBE2G1 gene and was derived from a patient who never received IMiD treatment, suggesting UBE2G1 loss can occur independently of drug selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene copy number data from CCLE (C94) and the clinical history (C95, citation to Eton et al., 1989) establish that UBE2G1 loss can occur naturally rather than only as acquired resistance. This has important implications for patient stratification. However, this is a single cell line example and clinical validation in patient samples is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "UBE2G1, UBE2G2, and CDC34 share structural features including an acidic loop near the active site cysteine that facilitates ubiquitin binding and K48-linked chain assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence alignment (C51-C52, Figure 4\u2014figure supplement 1A) and citation to Choi et al., 2015 (C53) establish the structural similarity. This provides mechanistic context for understanding UBE2G1's chain elongation function. This is primarily descriptive background rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Cereblon modulating agents repurpose CRL4CRBN to degrade neomorphic substrates via polyubiquitination, but the E2 enzymes involved have been elusive until now.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2) establish the background and knowledge gap that motivates the study. The mechanism of CM action is well-established in the literature, and the identification of the E2 enzymes is the novel contribution of this work. This is context-setting rather than a result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C78"
+    ],
+    "result": "Sequential recruitment of two E2 enzymes by a single E3 is a conserved mechanism, and the UBE2D3-UBE2G1 cooperation resembles the UBE2D3-Cdc34 mechanism for SCF substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C76, C78) place the findings in the context of established mechanisms. The citations support that sequential E2 mechanisms are known, and the comparison to SCF is appropriate. This is primarily discussion/interpretation rather than a novel result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "UBE2G1 cannot promote GSPT1 ubiquitination without CC-885 or Cul4A-Rbx1, indicating that proximity to the substrate via the E3 complex is required for UBE2G1 processivity at physiological concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequential ubiquitination data (C80, Figure 4E) directly demonstrate the requirement for the E3 complex. The interpretation about proximity and processivity (C81) is a reasonable inference from the data, though alternative explanations (e.g., E3-mediated conformational changes) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C87",
+      "C88",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose that CM-induced proteolysis is redundantly and cooperatively regulated by UBE2D family proteins and UBE2G1/2, with additional E2s potentially contributing to mixed polyubiquitin chains in UBE2G1's absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C82, C87-C88, C92-C93) are explicitly speculative and represent proposed models rather than demonstrated results. While the speculation is reasonable based on the data (incomplete block with double knockout, UBE2G2 homology), direct evidence for UBE2G2 involvement or mixed chain formation is lacking. The authors appropriately acknowledge these as hypotheses requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C98"
+    ],
+    "result": "The authors suggest that UBE2G1 status could be used for patient stratification and that patients with UBE2G1-mediated resistance might respond to more potent next-generation cereblon modulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C96, C98) are speculative clinical implications based on the cell line data. While the CC-220 data (C75) supports that more potent degraders can overcome UBE2G1 deficiency, clinical validation in patient samples is absent. The suggestions are reasonable but require prospective clinical studies to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background claims establishing the ubiquitin-proteasome system, cullin-RING ligases, cereblon modulating agents, and clinical context for multiple myeloma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C9-C31) provide established background knowledge supported by appropriate citations. They set the context for the study but do not represent novel findings. The information is accurately presented and properly attributed to the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "UBE2G2 in association with gp78 directly tags misfolded proteins with K48-linked ubiquitin chains for ERAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C54) is established knowledge from Li et al., 2007 and provides mechanistic context for understanding UBE2G1/G2 function. It is background information rather than a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Unlike Cdc34, UBE2G1 cannot transfer ubiquitin to substrates without prior ubiquitin conjugation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This distinction (C79) is clearly demonstrated by the in vitro data (Figure 4A-B) showing UBE2G1 alone has no activity. This is an important mechanistic difference from Cdc34 and helps explain the requirement for UBE2D3 to initiate ubiquitination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "CC-220 retained strong antitumor activity at clinically achievable concentrations in UBE2G1-deficient myeloma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C97) is supported by the cell proliferation data (Figure 7A) and the citation to Schafer et al., 2018 for clinically achievable concentrations. The finding has clear therapeutic implications, though the mechanism of CC-220's retained activity is not fully explained.",
+    "result_type": "MAJOR"
+  }
+]

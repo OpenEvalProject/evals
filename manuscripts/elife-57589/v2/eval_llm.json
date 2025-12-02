@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C126",
+      "C127",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors establish that computational simulations are subject to statistical fluctuations and that proper uncertainty estimation through multiple repeats is essential for drawing reliable conclusions. They demonstrate that insufficient sampling and reliance on single realizations can lead to incorrect conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C126-C136 collectively establish the methodological framework. The importance of statistics is demonstrated throughout the manuscript with multiple concrete examples (Figures 1, 4, 5, 7) showing how single realizations can produce spurious trends. The practical advantages of multiple repeats (C133-C134) and risks of insufficient sampling (C135) are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "For anthracene hydration free energy, no box size dependence is observed when sufficient statistics (N=20 repeats) are used, though single realizations can produce arbitrary trends suggesting box size effects that are not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are directly supported by Figure 1B showing that with N=20 repeats, no trend is observed, while single realizations can show upward, downward, or mixed trends. C19 demonstrates the importance of confidence intervals. C20 provides independent validation through citation to previous work. The statistical analysis is appropriate with adequate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "For GB protein, switching on charges in water is box size independent when proper simulation setup is used (\u22651 nm solvent shell), while vacuum simulations show strong box size dependence due to periodic boundary effects and lack of electrostatic screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 are well-supported by Figure 2B and Figure 3A. The mechanistic explanation (C24-C26) based on PME electrostatics and water screening is sound and supported by established knowledge. The demonstration that extremely small boxes (~0.5 nm distance, C29-C30) introduce artifacts validates the importance of proper setup. The distinction between solvated and vacuum conditions is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Reducing water charge to 10% of original value reduces electrostatic screening, making the system behave more like vacuum and introducing box size dependence in protein charge introduction free energies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by Figure 3B showing that scaled water charges produce results intermediate between full water and vacuum. This provides mechanistic validation that electrostatic screening by water is responsible for box size independence in properly solvated systems. The experimental design is appropriate for testing the screening hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors' GB protein solvation calculations differ from Asthagiri and Tomar (2020) in methodology (no analytical corrections needed, different restraint protocols, extensive equilibration, and much longer sampling time), resulting in different absolute \u0394G values but consistent box size independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C46 provide detailed methodological comparison. The differences in absolute \u0394G values (C37: -662 vs -994 kcal/mol) are explained by multiple methodological factors (C38-C46) including restraint protocols, equilibration procedures, and sampling time. The explanation is logical and well-reasoned. The key finding of box size independence is consistent despite methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Van der Waals contributions to GB protein solvation show no box size dependence in either solvated or vacuum states, indicating that the box size dependence reported by Asthagiri and Tomar is specific to their quasichemical theory method rather than a general phenomenon. The hydrophobic effect is not significantly affected by solvation beyond first solvation layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is directly supported by Figure 2C. C48 draws an appropriate conclusion about method-specific effects. C49-C50 extend the interpretation to the hydrophobic effect with appropriate caveats about system size. The conclusion is well-supported by data from both anthracene and GB protein systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "For alanine dipeptide, limited sampling (0.1% of data) can lead to erroneous conclusions about box size-dependent conformer ratios, but these discrepancies disappear with increased sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are directly supported by Figure 4C showing convergence of free energy profiles with increasing data inclusion (0.1%, 1%, 10%, 100%). The system is appropriate for demonstrating sampling effects due to its fast transitions. Statistical analysis with 10 independent repeats provides adequate uncertainty estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "For dihydrofolate reductase M20 loop motion, short simulations (2.5 ns) show apparent box size dependence, but this disappears with longer sampling (50 ns). Autocorrelation analysis reveals that short simulations have insufficient equilibration, and the apparent statistical significance from short runs is due to remaining dependence between repeats starting from the same structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C70 are comprehensively supported by Figure 5C-D. The progression from apparent box size dependence (2.5 ns) to convergence (50 ns) is clearly demonstrated. Autocorrelation analysis (C60-C61, Figure 5D) provides mechanistic insight into why short simulations fail. The philosophical observation about convergence assessment (C63) is apt. The explanation of underestimated standard errors (C67-C69) is sound. This is a particularly strong demonstration of the importance of adequate sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "For alanine dipeptide transition kinetics, sampling only 10 transitions provides sparse distributions but no systematic bias in rate estimates. The effect of statistics manifests in uncertainty rather than bias. The required number of transitions depends on desired precision, with single transitions sufficient for order-of-magnitude estimates but multiple repeats needed for higher precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by Figure 6A-B showing unbiased rate estimates with varying sample sizes. C76-C79 provide appropriate nuanced conclusions about precision requirements. The 1/\u221aN behavior of uncertainty (Figure 6C) is expected and validates the statistical framework. The conclusion that there is no single rule of thumb (C79) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "For hemoglobin T to R transitions, all studied box sizes show some repeats transitioning and others remaining in T state. With only one repeat per box size, all scenarios about box size effects could be obtained with substantial probability, illustrating the risk of N=1 statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by Figure 7B-C. The probabilistic analysis in Figure 7C effectively demonstrates how single repeats can lead to any conclusion. The data from 21 total repeats across three box sizes provides adequate statistical power for this demonstration. This is a compelling illustration of the dangers of insufficient replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Frequentist analysis of hemoglobin transition times shows no significant differences between box sizes for any number of repeats. The null hypothesis that all samples were drawn from the same distribution cannot be rejected, and the hypothesis of box size effects is not supported. However, frequentist inference cannot quantify evidence for the null hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by Figure 8 showing overlapping confidence intervals and 1/\u221aN behavior of standard errors. C88 correctly identifies a limitation of frequentist inference. The statistical analysis is appropriate, though the limitation noted in C88 motivates the subsequent Bayesian analysis. The conclusion is appropriately cautious about what can and cannot be inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Bayesian analysis of hemoglobin transitions shows that prior choice strongly influences single-simulation rate estimates but has minimal effect with 10-100 repeats. For single repeats, Bayes factors are ~1 (no distinction possible). For higher repeat numbers (N=10-20), several comparisons show Bayes factors \u22640.33, providing substantial evidence that transition times were drawn from a single distribution, thus supporting box size independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 are supported by Figure 9, Table 1, and Figure 10. The Bayesian framework is correctly applied with appropriate interpretation of Bayes factors using Jeffreys' scale (C91-C94). The distinction between inconclusive evidence (0.33-3) and positive evidence for single distribution (<0.33) is clearly explained in C97. The analysis provides stronger conclusions than frequentist approach while acknowledging limitations for low sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Water diffusion shows well-documented mild box size dependence in bulk water due to periodic boundary effects (correctable by Yeh-Hummer correction). In hemoglobin simulations, apparent strong box size effects on water diffusion are largely normalization artifacts from different protein-to-water ratios. After renormalization, the strong effect vanishes, though a small trend remains that may reflect either the crude extrapolation procedure or genuine periodic boundary effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by Figure 11B. The explanation of the normalization artifact (C102-C104) is logical and the renormalization procedure is reasonable. C105 appropriately acknowledges uncertainty about the remaining small trend. The distinction between bulk water effects (well-established) and protein solution effects (largely artifactual) is clearly demonstrated. The analysis could be strengthened with more rigorous extrapolation methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Radial distribution function (RDF) analysis is complicated by box size-dependent normalization artifacts. After implementing spherical RDF normalization, no significant box size effects are observed for protein solvation, confirming no thermodynamic effect on the solvent shell and no significant box size dependence of the hydrophobic effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 correctly explain the mathematical basis of the normalization issue. C109-C110 are supported by Figure 11C and citations to previous work. C111-C112 draw appropriate conclusions. The spherical normalization approach is more rigorous than the previous cut-out procedure. The consistency across multiple systems (anthracene, GB, hemoglobin) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C137"
+    ],
+    "result": "The main finding is that simulation box size has minimal effects on biomolecular thermodynamics and kinetics when proper simulation setup is used (\u22651 nm solvent shell). Previously reported box size effects based on single repeats are not confirmed with order-of-magnitude more statistics. Box size independence is limited to boxes exceeding 1 nm distance between biomolecule and box edge; smaller boxes may show artifacts due to periodic self-interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C113-C117 represent the main conclusions, supported by comprehensive data across multiple systems (anthracene, GB protein, alanine dipeptide, dihydrofolate reductase, hemoglobin). C137 directly addresses the motivation from prior work. The caveat about minimum box size (C114-C117) is appropriately stated and supported by Figure 3A. The conclusion is well-supported but appropriately limited in scope to the systems and conditions studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors identify several known cases where box size effects do occur: lateral lipid diffusion in small boxes, hydrodynamic effects on membrane protein diffusion and rotation, and charged systems where Ewald methods introduce box size-dependent potentials. Analytical corrections exist for these effects, and neutralizing simulation systems is recommended when possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 are appropriately cited to previous work and represent established knowledge in the field. These caveats are important for defining the scope of the main conclusions. The recommendation to neutralize systems (C125) is sound methodological advice. This discussion appropriately acknowledges limitations and contexts where the main conclusions may not apply.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The authors demonstrate that previous conclusions by El Hage et al. (2018) based on single simulation trajectories do not hold when larger data samples are generated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 are supported by Figure 7 showing that with adequate statistics, the previously reported box size effects on hemoglobin transitions are not observed. This represents a direct refutation of prior work through more rigorous statistical analysis. The critique is substantiated by data rather than merely methodological arguments.",
+    "result_type": "MAJOR"
+  }
+]

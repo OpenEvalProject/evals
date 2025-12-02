@@ -1,0 +1,1554 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Recent years have seen a surge in methods to track and analyze animal behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent years have seen a surge in methods to track and analyze animal behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the field supported by the context of the manuscript and citations throughout the introduction.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Tracking individuals in closely interacting, group-living organisms remains a challenge.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, tracking individuals in closely interacting, group-living organisms remains a challenge.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by the discussion of limitations in existing methods throughout the introduction.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "anTraX combines neural network classification of animals with a novel approach for representing tracking data as a graph.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX combines neural network classification of animals with a novel approach for representing tracking data as a graph, enabling individual tracking even in cases where it is difficult to segment animals from one another, or where tags are obscured.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the core methodology of anTraX as presented in the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "anTraX enables individual tracking even in cases where it is difficult to segment animals from one another, or where tags are obscured.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX combines neural network classification of animals with a novel approach for representing tracking data as a graph, enabling individual tracking even in cases where it is difficult to segment animals from one another, or where tags are obscured.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This capability is demonstrated through the benchmark datasets and validation results presented in the Results section.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The use of color tags is a well-established and robust method for marking individual insects in groups.",
+    "claim_type": "EXPLICIT",
+    "source": "The use of color tags, a well-established and robust method for marking individual insects in groups, relaxes requirements for image size and quality, and makes the software broadly applicable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work using color tags in the introduction.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Color tagging relaxes requirements for image size and quality.",
+    "claim_type": "EXPLICIT",
+    "source": "The use of color tags, a well-established and robust method for marking individual insects in groups, relaxes requirements for image size and quality, and makes the software broadly applicable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the successful tracking in benchmark datasets with varying image resolutions.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "anTraX can handle large-scale experiments with minimal human involvement.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX can handle large-scale experiments with minimal human involvement, allowing researchers to simultaneously monitor many social groups over long time periods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the large-scale experiment tracking 10 colonies over 14 days described in the Results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Solutions for automated video tracking of insects in social groups can be roughly divided into two categories: methods for tracking unmarked individuals and methods for tracking marked individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Solutions for automated video tracking of insects in social groups can be roughly divided into two categories (for reviews see Dell et al., 2014; Robie et al., 2017a): methods for tracking unmarked individuals (Branson et al., 2009; P\u00e9rez-Escudero et al., 2014; Romero-Ferrero et al., 2019; Sridhar et al., 2019; Feldman et al., 2012; Khan et al., 2005; Fasciano et al., 2014; Fasciano et al., 2013; Bozek et al., 2020), and methods for tracking marked individuals (Mersch et al., 2013; Robinson et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This categorization is supported by citations to review papers and examples of each category.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Tracking unmarked individuals has the advantages of reduced interference with natural behavior, unbounded number of tracked individuals, and not having the burden of tagging animals.",
+    "claim_type": "EXPLICIT",
+    "source": "The former category has the obvious advantages of reduced interference with natural behavior, unbounded number of tracked individuals, and not having the burden of tagging animals and maintaining these tags throughout the experiment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the advantages of unmarked tracking methods.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Unmarked tracking approaches are limited by more extensive computational burden, higher error rates, and stricter requirements for image quality when applied to individual tracking.",
+    "claim_type": "EXPLICIT",
+    "source": "At the same time, these approaches, when applied to individual tracking, are limited by a more extensive computational burden, higher error rates, and stricter requirements for image quality.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the discussion of limitations in existing unmarked tracking methods.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The most common approach for tracking unmarked individuals is to try and follow the trajectory of an individual for the duration of the video.",
+    "claim_type": "EXPLICIT",
+    "source": "The most common approach for tracking unmarked individuals is to try and follow the trajectory of an individual for the duration of the video.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to methods using this approach.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Once identities are swapped in trajectory-based tracking, the error is unrecoverable and will propagate from that moment on.",
+    "claim_type": "EXPLICIT",
+    "source": "The reason is that once identities are swapped, the error is unrecoverable, and will propagate from that moment on.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the nature of trajectory-based tracking errors.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Tagging individuals with unique IDs has the advantage of having a stable reference, enabling error recovery.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, tagging individuals with unique IDs has the advantage of having a stable reference, enabling error recovery.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical advantage of ID-based tracking systems.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The use of general-purpose libraries such as AprilTags and ArUco has become the gold standard for marked individual tracking in recent years.",
+    "claim_type": "EXPLICIT",
+    "source": "The use of general-purpose libraries such as AprilTags (Mersch et al., 2013; Olson, 2011; Heyman et al., 2017; Greenwald et al., 2018; Stroeymeyt et al., 2018) and ArUco (Garrido-Jurado et al., 2014), or application-specific patterned tags (Crall et al., 2015; Boenisch et al., 2018; Wario et al., 2015; Wild et al., 2018), has become the gold standard for this approach in recent years.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations to recent work using these libraries.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Barcode-based tags are applicable only to species with body sizes sufficiently large to attach them.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these tags are applicable only to species with body sizes sufficiently large to attach them, have adverse effects on the animals' behavior, and are often lost during experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known limitation of barcode-based tagging systems.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Barcode-based tags have adverse effects on the animals' behavior and are often lost during experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these tags are applicable only to species with body sizes sufficiently large to attach them, have adverse effects on the animals' behavior, and are often lost during experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known limitation of barcode-based tagging systems.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Barcode-based tags require relatively high image resolution to correctly read the barcode pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "They also require relatively high image resolution to correctly read the barcode pattern.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical requirement of barcode reading systems.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Much experimental work still relies on manual annotation or partially automated analysis pipelines that require considerable manual effort.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, much of the experimental work still relies on manual annotation, or on partially automated analysis pipelines that require considerable manual effort to correct computer-generated annotations (see Aguilar et al., 2018; Gelblum et al., 2015; Leitner and Dornhaus, 2019; Valentini et al., 2020 for recent examples).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to recent examples of such work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Color tagging is one of the best-established and widely used methods to mark insects, both in the field and in the laboratory.",
+    "claim_type": "EXPLICIT",
+    "source": "Color tagging is one of the best-established and widely used methods to mark insects, both in the field and in the laboratory (Leitner and Dornhaus, 2019; Valentini et al., 2020; Walker and Wineriter, 1981; Gordon, 1989; Hagler and Jackson, 2001; Ulrich et al., 2018; Holbrook et al., 2011; Holbrook, 2009), with long-term durability and minimal effects on behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations to work using color tagging.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Color tags have long-term durability and minimal effects on behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Color tagging is one of the best-established and widely used methods to mark insects, both in the field and in the laboratory (Leitner and Dornhaus, 2019; Valentini et al., 2020; Walker and Wineriter, 1981; Gordon, 1989; Hagler and Jackson, 2001; Ulrich et al., 2018; Holbrook et al., 2011; Holbrook, 2009), with long-term durability and minimal effects on behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work using color tags.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "anTraX works by combining traditional segmentation-based object tracking with image-based classification using convolutional neural networks (CNNs).",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX works by combining traditional segmentation-based object tracking with image-based classification using convolutional neural networks (CNNs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the core methodology of anTraX.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "anTraX uses a graph object for representing tracking data, enabling the inference of identity of unidentified objects by propagating temporal and spatial information.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, anTraX uses a graph object for representing tracking data (Nillius et al., 2006), enabling the inference of identity of unidentified objects by propagating temporal and spatial information, thereby optimizing the use of partial tag information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key methodological innovation of anTraX, with citation to prior work on graph-based tracking.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "anTraX is uniquely suited for tracking small social insects that form dense aggregates, in which individuals are unidentifiable over large parts of the experiment even for the human observer.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX is uniquely suited for tracking small social insects that form dense aggregates, in which individuals are unidentifiable over large parts of the experiment even for the human observer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the benchmark datasets showing successful tracking in dense aggregations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "anTraX was specifically developed for experiments with the clonal raider ant Ooceraea biroi.",
+    "claim_type": "EXPLICIT",
+    "source": "While we tested anTraX and found it useful for behavioral analyses in a range of study systems, it was specifically developed for experiments with the clonal raider ant Ooceraea biroi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated explicitly in the manuscript.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The clonal raider ant is an emerging social insect model system with a range of genomic and functional genetic resources.",
+    "claim_type": "EXPLICIT",
+    "source": "The clonal raider ant is an emerging social insect model system with a range of genomic and functional genetic resources (Ulrich et al., 2018; Oxley et al., 2014; Trible et al., 2017; McKenzie and Kronauer, 2018; Chandra et al., 2018; Teseo et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations to work on the clonal raider ant.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The unique biological features of the clonal raider ant enable precise control over the size, demographics and genetic composition of the colony.",
+    "claim_type": "EXPLICIT",
+    "source": "The unique biological features of the species enable precise control over the size, demographics and genetic composition of the colony, parameters that are essential for systematic study of collective behavior in ants (Ulrich et al., 2018; Chandra et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to work on the clonal raider ant.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The clonal raider ant is amenable to genetic manipulations.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the species is amenable to genetic manipulations (Trible et al., 2017), which opens new possibilities not only for understanding the genetic and neural bases of social and collective behaviors, but also for developing and validating theoretical models by manipulating behavioral rules at the level of the individual and studying the effects on group behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to work demonstrating genetic manipulation in this species.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Clonal raider ants are hard to track using available approaches, due to their small size and tendency to form dense aggregates.",
+    "claim_type": "EXPLICIT",
+    "source": "While these ants have great promise for the study of collective behavior, they are hard to track using available approaches, due to their small size and tendency to form dense aggregates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference based on the limitations of existing tracking methods discussed earlier.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "anTraX was designed with large-scale behavioral experiments in mind, where hundreds of colonies are recorded in parallel for periods of weeks or months.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX was designed with large-scale behavioral experiments in mind, where hundreds of colonies are recorded in parallel for periods of weeks or months, making manual tracking or even error correction impractical.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This design goal is stated explicitly and demonstrated by the large-scale experiments described.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "anTraX output data can be directly imported into software packages for higher level analysis of behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Its output data can be directly imported into software packages for higher level analysis of behavior (e.g. Kabra et al., 2013) or higher resolution postural analysis of individuals in the group (Pereira et al., 2019; Mathis et al., 2018; Berman et al., 2014; Graving et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This capability is demonstrated in the Results section with JAABA and DeepLabCut integration.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The anTraX algorithm consists of three main steps: segmentation and tracklet construction, tracklet classification, and ID propagation.",
+    "claim_type": "EXPLICIT",
+    "source": "The anTraX algorithm consists of three main steps. First, similar to other multi-object tracking algorithms (P\u00e9rez-Escudero et al., 2014; Romero-Ferrero et al., 2019), it segments the frames into background and ant-containing blobs and organizes the extracted blobs into trajectory fragments termed tracklets. The tracklets are linked together to form a directed tracklet graph (Nillius et al., 2006). The second step of the algorithm is tracklet classification, in which identifiable single-animal tracklets are labeled with a specific ID by a pre-trained CNN, while other tracklets are marked as either unidentified single-animal tracklets, or as multi-animal tracklets. Third, we infer the identity of unclassifiable tracklets in the tracklet graph by using temporal, spatial and topological propagation rules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the core algorithmic steps of anTraX.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "anTraX does not attempt to separate multi-animal blobs into single animal blobs during segmentation because such attempts are based on heuristic decisions that do not generalize well across species and experimental conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike other tracking solutions, we do not attempt to separate these larger blobs into single animal blobs at this stage, because those attempts are based on heuristic decisions that do not generalize well across species and experimental conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a design decision explained in the manuscript.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "anTraX uses Optical Flow to decide which blobs should be linked across frames.",
+    "claim_type": "EXPLICIT",
+    "source": "We use Optical Flow to decide which blobs should be linked across frames (Figure 1D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated explicitly and illustrated in Figure 1D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Optical Flow is computationally expensive but significantly more accurate than alternatives such as simple overlap or linear assignment.",
+    "claim_type": "EXPLICIT",
+    "source": "While Optical Flow is computationally expensive, we found it to be significantly more accurate than alternatives such as simple overlap or linear assignment (based either on simple spatial distance or on distance in some feature space).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on empirical comparison of methods by the authors.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Tracklets are defined as a list of linked blobs in consecutive frames that are composed of the same group of individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Blobs are organized into tracklets, defined as a list of linked blobs in consecutive frames that are composed of the same group of individuals (Figure 1E\u2013F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is the definition of tracklets used in anTraX.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The tracklet classification step labels tracklets containing single animals that can be reliably identified with a specific ID.",
+    "claim_type": "EXPLICIT",
+    "source": "The next step is tracklet classification, in which we label tracklets containing single animals that can be reliably identified with a specific ID (Appendix section 2.3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the tracklet classification step.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "anTraX applies a conservative algorithm that classifies only reliable cases and leaves ambiguous ones as unidentified.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, we apply a conservative algorithm that classifies only reliable cases and leaves ambiguous ones as unidentified.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a design decision of the classification algorithm.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Classification is done by training and applying a convolutional neural network (CNN) on each blob image in the tracklet.",
+    "claim_type": "EXPLICIT",
+    "source": "Classification is done by training and applying a convolutional neural network (CNN) on each blob image in the tracklet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the classification methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The most frequent ID is applied to the entire tracklet after CNN classification of individual blobs.",
+    "claim_type": "EXPLICIT",
+    "source": "The most frequent ID is then applied to the entire tracklet (Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes how blob-level classifications are aggregated to tracklet-level classifications.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "anTraX assigns a classification confidence score to each classified tracklet.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to the ID label, we also assign a classification confidence score to each classified tracklet, which takes into account the number of identified blobs in the tracklet, the confidence of each classification, and the prevalence of contradictory classifications across blobs in the tracklet (see Appendix section 2.4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the confidence scoring methodology.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The ID propagation step propagates ID assignments on the tracklet graph using an ad-hoc greedy iterative process.",
+    "claim_type": "EXPLICIT",
+    "source": "The last part of the algorithm is the propagation of ID assignments on the tracklet graph. While formal approaches for solving this problem using Bayesian inference have been proposed (Nillius et al., 2006), we chose to implement an ad-hoc greedy iterative process that we found to work best in our particular context.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the propagation methodology and justifies the choice of algorithm.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Propagation is done vertically on the graph, horizontally, and using topological constraints.",
+    "claim_type": "EXPLICIT",
+    "source": "Propagation is done vertically on the graph on top of edges, both positively (an ID that is assigned to a node must also be assigned to at least one of its successors and one of its predecessors) and negatively (an ID cannot be in the possible list of a node, if it is not in at least one successor and one predecessor node), horizontally (if an ID is assigned to a node, it cannot be assigned to any other time-overlapping node), and using topological constraints (Figure 2B, Figure 2\u2014video 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the propagation rules used in the algorithm.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Only non-ambiguous propagation is performed, and propagation is halted whenever an ambiguity or contradiction arises.",
+    "claim_type": "EXPLICIT",
+    "source": "Only non-ambiguous propagation is performed, and propagation is halted whenever an ambiguity or contradiction arises.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key feature of the propagation algorithm.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "For frames where the location is derived from single animal tracklets, the animal orientation is also returned.",
+    "claim_type": "EXPLICIT",
+    "source": "For frames where the location is derived from single animal tracklets (i.e. the animal was segmented individually), the animal orientation is also returned.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the output data format.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Locations estimated from multi-animal tracklets are necessarily less accurate than locations from single-animal tracklets.",
+    "claim_type": "EXPLICIT",
+    "source": "Locations estimated from multi-animal tracklets are necessarily less accurate than locations from single-animal tracklets, and users should be aware of this when analyzing the data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of the tracking methodology.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "anTraX has many parameters that control the image segmentation step, the classifier architecture and training procedure, and the propagation algorithm.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX has many parameters that control the image segmentation step, the classifier architecture and training procedure, and the propagation algorithm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the configurability of the software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The optimal value for each parameter depends on the specific nature and settings of the processed experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "The optimal value for each depends on the specific nature and settings of the processed experiment, from the resolution and quality of the camera, to the details of the organisms and number of tags.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical statement about parameter tuning.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "anTraX comes with a graphical user interface to tune and verify the value of parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX comes with a graphical user interface to tune and verify the value of these parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of the software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "anTraX was specifically designed to process large-scale behavioral experiments, which can contain hundreds of video files and tens of terabytes of data.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX was specifically designed to process large-scale behavioral experiments, which can contain hundreds of video files and tens of terabytes of data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a stated design goal of the software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "anTraX includes scripts to process large datasets in batch mode where individual video files are tracked in parallel on multicore computers and high-performance computer clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX includes scripts to process such large datasets in batch mode where individual video files are tracked in parallel on multicore computers and high-performance computer clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of the software for scalability.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The core tracking steps of anTraX are implemented using MATLAB version 2019a.",
+    "claim_type": "EXPLICIT",
+    "source": "The core tracking steps of anTraX are implemented using MATLAB version 2019a, while the classification parts are implemented using TensorFlow v1.15 in the Python 3.6 environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation details of the software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The classification parts of anTraX are implemented using TensorFlow v1.15 in the Python 3.6 environment.",
+    "claim_type": "EXPLICIT",
+    "source": "The core tracking steps of anTraX are implemented using MATLAB version 2019a, while the classification parts are implemented using TensorFlow v1.15 in the Python 3.6 environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation details of the software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Compiled binaries are available for use with the freely available MATLAB Runtime Library.",
+    "claim_type": "EXPLICIT",
+    "source": "Compiled binaries are available for use with the freely available MATLAB Runtime Library and can be run with a command line interface.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the distribution format of the software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "anTraX can be run on Linux/OSX systems.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX can be run on Linux/OSX systems, and large datasets benefit considerably from parallelization on computer clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the system requirements of the software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "anTraX depends on the free FFmpeg library for handling video files.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX depends on the free FFmpeg library for handling video files.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a software dependency.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "anTraX is distributed under the GPLv3 license.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX is distributed under the GPLv3 license, and its source code and binaries are freely available (Gal et al., 2020a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the licensing of the software.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "anTraX was benchmarked using a number of datasets spanning a variety of experimental conditions and study organisms, including four different ant species and Drosophila melanogaster.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX was benchmarked using a number of datasets spanning a variety of experimental conditions (e.g. image quality and resolution, number of tracked individuals, number of tags and colors, size variability in the colony) and study organisms, including four different ant species, as well as the fruit fly Drosophila melanogaster (Table 1, Figure 3 and its supplements).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the validation approach and is supported by the benchmark datasets presented.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "All benchmark datasets, together with the raw videos, full description, configuration files, and trained classifiers are available for download.",
+    "claim_type": "EXPLICIT",
+    "source": "All benchmark datasets, together with the raw videos, full description, configuration files, and trained classifiers are available for download (Gal et al., 2020b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes data availability.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The performance of the tracking algorithm can be captured using two separate measures: the rate of assignment and the assignment error.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of the tracking algorithm can be captured using two separate measures. The first is the rate of assignment, defined as the ratio of assigned locations in the experiments to the total possible assignments (i.e. the number of IDs times the number of frames). The second measure is the assignment error, defined as the ratio of wrong assignments to the total number of assignments made.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines the performance metrics used for validation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The assignment rate can be computed directly and precisely from the tracking results.",
+    "claim_type": "EXPLICIT",
+    "source": "While the assignment rate can be computed directly and precisely from the tracking results, the error rate in assigning IDs for a given data set needs to be tested against human annotation of the same dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how the assignment rate metric is calculated.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The error rate in assigning IDs needs to be tested against human annotation of the same dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "While the assignment rate can be computed directly and precisely from the tracking results, the error rate in assigning IDs for a given data set needs to be tested against human annotation of the same dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the validation methodology for error rate.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "A validation approach was employed in which datasets were subsampled in a random and uniform way to estimate error rates.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead of using fewer or smaller datasets, which would have introduced a sampling bias, we employed a validation approach in which datasets were subsampled in a random and uniform way.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the validation methodology.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "In the validation procedure, a human observer was presented with a sequence of randomly selected test points and asked to classify each assignment as either 'correct' or 'incorrect'.",
+    "claim_type": "EXPLICIT",
+    "source": "In this procedure, a human observer was presented with a sequence of randomly selected test points, where each test point corresponded to a location assignment made by the software to a specific ID in a specific frame. The user was then asked to classify the assignment as either 'correct' or 'incorrect'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the validation procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The validation process was repeated until the user had identified 500 points as either correct or incorrect.",
+    "claim_type": "EXPLICIT",
+    "source": "The process was repeated until the user had identified 500 points as either correct or incorrect.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the validation procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The accuracy of the tracking was measured as the ratio of correct test points to the sum of correct and incorrect test points, as determined by the human observer.",
+    "claim_type": "EXPLICIT",
+    "source": "The accuracy of the tracking was measured as the ratio of correct test points to the sum of correct and incorrect test points, as determined by the human observer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines how accuracy was calculated in the validation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "anTraX performed at a level close to the human observer in all benchmark datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, anTraX performed at a level close to the human observer in all benchmark datasets (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the performance metrics presented in Table 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Graph propagation dramatically improves tracking performance by increasing assignment coverage and decreasing assignment errors.",
+    "claim_type": "EXPLICIT",
+    "source": "Table 2 and Figure 4A\u2013B show the increase in assignment coverage and decrease in assignment errors following graph propagation in all benchmark datasets.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the comparison of performance before and after graph propagation in Table 2 and Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Graph propagation allows identification of tracklets that are unidentifiable by the classifier, using propagation of IDs from classified tracklets.",
+    "claim_type": "EXPLICIT",
+    "source": "First, it allows identification of tracklets that are unidentifiable by the classifier, using propagation of IDs from classified tracklets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes one benefit of graph propagation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Graph propagation corrects classification errors by overriding low-reliability assignments made by the classifier with IDs propagated from high-reliability tracklets.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, it corrects classification errors by overriding low-reliability assignments made by the classifier with IDs propagated from high-reliability tracklets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes another benefit of graph propagation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Graph propagation assigns IDs to multi-individual blobs and tracklets, providing an approximate location for analysis even when an animal cannot be individually segmented.",
+    "claim_type": "EXPLICIT",
+    "source": "Third, it assigns IDs to multi-individual blobs and tracklets. This provides an approximate location for analysis, even when an animal cannot be individually segmented.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a third benefit of graph propagation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "A large-scale experiment tracked the behavior of 10 clonal raider ant colonies, each consisting of 16 ants, for 14 days.",
+    "claim_type": "EXPLICIT",
+    "source": "To further demonstrate the utility of graph propagation, we used data from a full, large-scale experiment. We tracked the behavior of 10 clonal raider ant colonies, each consisting of 16 ants, for 14 days.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a large-scale validation experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The colonies in the large-scale experiment were filmed at relatively low resolution using simple webcams (Logitech C910, 960 \u00d7 720 pixels image size, 10 frames per second).",
+    "claim_type": "EXPLICIT",
+    "source": "The colonies were filmed at relatively low resolution using simple webcams (Logitech C910, 960 \u00d7 720 pixels image size, 10 frames per second), similar to that of benchmark dataset J16.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup of the large-scale validation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The large-scale dataset represents a relatively challenging classification scenario because the tags are small and the colors are dull.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset represents a relatively challenging classification scenario, because the tags are small, and the colors are dull.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This characterizes the difficulty of the large-scale validation dataset.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The assignments made by the propagation algorithm are as reliable as the assignments made directly by the classifier.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the assignments made by the propagation algorithm are as reliable as the assignments made directly by the classifier (Figure 4\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the analysis presented in Figure 4\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The propagation algorithm is robust to classification errors and successfully blocks their propagation on the tracklet graph.",
+    "claim_type": "EXPLICIT",
+    "source": "The propagation algorithm is also robust to classification errors, and successfully blocks their propagation on the tracklet graph (Figure 4\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the analysis presented in Figure 4\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Collecting examples and training the blob classifier is the most time-consuming step in the tracking pipeline.",
+    "claim_type": "EXPLICIT",
+    "source": "Collecting examples and training the blob classifier is the most time-consuming step in the tracking pipeline, and a good classification is essential for high-quality tracking (Figure 4\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a practical observation about the workflow.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "A good classification is essential for high-quality tracking.",
+    "claim_type": "EXPLICIT",
+    "source": "Collecting examples and training the blob classifier is the most time-consuming step in the tracking pipeline, and a good classification is essential for high-quality tracking (Figure 4\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the analysis in Figure 4\u2014figure supplement 3 showing the relationship between classification error and tracking error.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "CNN classifiers do not generalize well outside the image distribution they were trained on.",
+    "claim_type": "EXPLICIT",
+    "source": "CNN classifiers do not generalize well outside the image distribution they were trained on, so even apparently small changes in experimental conditions (e.g. the type or level of lighting used, or the color tuning of the camera) can markedly decrease classification performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known limitation of CNN classifiers.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "When experiments are conducted using similar conditions, it is possible to construct a classifier that will generalize across these experiments with minimal or no retraining.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, when experiments are conducted using similar conditions (e.g. study organism, marking technique, experimental setup, etc), it is possible to construct a classifier that will generalize across these experiments with minimal or no retraining.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the generalization analysis in Figure 4E.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "A classifier trained on examples from one replicate performs well when used to classify blobs sampled from other replicates recorded under similar conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "We trained a classifier on examples from one replicate, and then used it to classify blobs sampled from the other replicates. We similarly evaluated the performance of classifiers trained with examples from two, three, and four replicates, and compared the results to the performance of a classifier trained on examples from all replicates. The comparison shows that, despite variability in animal shape and behavior, tagging process, cameras, and experimental setups across replicates, the classifier performs remarkably well (Figure 4E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the generalization analysis in Figure 4E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "When a classifier is trained with an example set obtained from as few as two replicates, it performs similarly well as a classifier trained with examples from all replicates.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, when a classifier is trained with an example set obtained from as few as two replicates, it performs similarly well as a classifier trained with examples from all replicates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 4E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "anTraX includes functions to generate per-frame data in a JAABA-compatible way.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX includes functions to generate the per-frame data in a JAABA-compatible way.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of the software for integration with JAABA.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "A set of anTraX-specific features is generated in addition to the original list of JAABA features.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to the original list of JAABA features, a set of anTraX-specific features is also generated (see online documentation for details).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes additional features provided for JAABA integration.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "anTraX-specific features provide information about whether an animal was segmented individually or was part of a multi-animal blob.",
+    "claim_type": "EXPLICIT",
+    "source": "Beyond useful information about the appearance and kinematics of the tracked animals, these extra features provide information about whether an animal was segmented individually or was part of a multi-animal blob.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the content of anTraX-specific features.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "JAABA can learn behaviors that can only be assigned to individually segmented animals using anTraX-specific features.",
+    "claim_type": "EXPLICIT",
+    "source": "This enables JAABA to learn behaviors that can only be assigned to individually segmented animals, such as those that depend on the velocity of the animal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of providing segmentation status information to JAABA.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "O. biroi ants carry their larva under their body in a way not always obvious even to a human observer.",
+    "claim_type": "EXPLICIT",
+    "source": "O. biroi ants carry their larva under their body, in a way not always obvious even to a human observer (Figure 5A, Figure 5\u2014video 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is illustrated in Figure 5A and Figure 5\u2014video 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "JAABA is able to classify the behavior of ants carrying larvae with >93% accuracy using subtle changes in the ants' appearance and kinematics.",
+    "claim_type": "EXPLICIT",
+    "source": "By using subtle changes in the ants' appearance and kinematics, JAABA is able to classify this behavior with >93% accuracy (tested on a set of annotated examples not used for training).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a validation result for the JAABA classifier.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "JAABA was used to classify the behavior of ants during periods when they are not moving into four distinct behaviors: rest, local search, self-grooming, and object-interaction.",
+    "claim_type": "EXPLICIT",
+    "source": "In the second example, we used JAABA to classify the behavior of ants during periods when they are not moving. We trained a classifier to detect four distinct behaviors (Figure 5\u2014video 2): rest, in which the ant is completely immobile; local search, in which the ant does not move but uses its antennae to explore the immediate environment; self-grooming, in which the ant stops to groom itself; and object-interaction, in which the ant interacts with a non-ant object such as a piece of food, a larva or a trash item.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the second JAABA classification example.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "JAABA was able to identify the four stop behaviors with >92% accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "JAABA was able to identify these behaviors with >92% accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a validation result for the JAABA classifier.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "anTraX includes an option to run pre-trained DeepLabCut models on segmented and cropped images of individual animals.",
+    "claim_type": "EXPLICIT",
+    "source": "To track body parts of individual animals within a group or a colony, we took advantage of the fact that anTraX segments and crops the images of individual animals as part of its workflow, and included an option to run pre-trained DeepLabCut models (Mathis et al., 2018) on these images, without the need to export the data in a DeepLabCut-readable format (which would have resulted in a heavy computational overhead).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the integration of DeepLabCut with anTraX.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The position of tracked body parts relative to the animal's centroid are returned together with the spatial location of the centroid when using DeepLabCut with anTraX.",
+    "claim_type": "EXPLICIT",
+    "source": "This way, the position of the tracked body parts relative to the animal's centroid are returned together with the spatial location of the centroid.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the output format of the DeepLabCut integration.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "anTraX enables exporting cropped single animal videos that are loadable into the DeepLabCut user interface for training pose estimation models.",
+    "claim_type": "EXPLICIT",
+    "source": "For training such a model, anTraX enables exporting cropped single animal videos that are loadable into the DeepLabCut user interface.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature for training DeepLabCut models.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Pose estimation with DeepLabCut is currently only supported for single-animal tracklets in anTraX.",
+    "claim_type": "EXPLICIT",
+    "source": "Currently, this is only supported for single-animal tracklets, where animals are segmented individually.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the current DeepLabCut integration.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The ability to perform accurate and useful pose estimation depends on the resolution at which animals appear in the video.",
+    "claim_type": "EXPLICIT",
+    "source": "Of course, the ability to perform accurate and useful pose estimation depends on the resolution at which animals appear in the video.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical statement about the requirements for pose estimation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "A simple DeepLabCut model was trained to track the main body axis and antennae positions of ants from benchmark dataset A36.",
+    "claim_type": "EXPLICIT",
+    "source": "To demonstrate the potential of this approach, we trained a simple DeepLabCut model to track the main body axis and antennae positions of ants from benchmark dataset A36.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a demonstration of the DeepLabCut integration.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Ants use different antennation patterns to explore their environment.",
+    "claim_type": "EXPLICIT",
+    "source": "Ants use different antennation patterns to explore their environment (Draft et al., 2018), and the ability to track these patterns in parallel to their movement in space can contribute to our understanding of their sensory processing during free behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to prior work on ant antennation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The ability to track antennation patterns in parallel to movement in space can contribute to understanding of sensory processing during free behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Ants use different antennation patterns to explore their environment (Draft et al., 2018), and the ability to track these patterns in parallel to their movement in space can contribute to our understanding of their sensory processing during free behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the utility of tracking antennae.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "anTraX provides a solution for a range of behavioral tracking problems not well addressed by available methods.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX is a new algorithm and software package that provides a solution for a range of behavioral tracking problems not well addressed by available methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary claim supported by the entire manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "anTraX enables the tracking of insects that are individually marked with color tags by using a deep neural network for image classification.",
+    "claim_type": "EXPLICIT",
+    "source": "First, by using a deep neural network for image classification, it enables the tracking of insects that are individually marked with color tags.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key capability of anTraX demonstrated throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "anTraX handles cases where insects tightly aggregate and are not segmentable, as well as cases where the tags are obscured.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, unlike other existing approaches, it handles cases where insects tightly aggregate and are not segmentable, as well as cases where the tags are obscured.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This capability is demonstrated in the benchmark datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "anTraX can easily be integrated into the expanding ecosystem of open-source software packages for behavioral analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, anTraX can easily be integrated into the expanding ecosystem of open-source software packages for behavioral analysis, making a broad range of cutting-edge ethological tools available to the social insect community.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the integration examples with JAABA and DeepLabCut.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "anTraX is an open-source software and conveniently modular.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX is an open-source software and conveniently modular, with each step of the algorithm (segmentation, linking, classification, and propagation) implemented as a separate module that can be easily augmented or replaced to fit experimental designs that are not well handled by the current version of the algorithm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the software architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Each step of the anTraX algorithm is implemented as a separate module that can be easily augmented or replaced.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX is an open-source software and conveniently modular, with each step of the algorithm (segmentation, linking, classification, and propagation) implemented as a separate module that can be easily augmented or replaced to fit experimental designs that are not well handled by the current version of the algorithm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the modularity of the software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Traditional background subtracted segmentation can be replaced with deep learning-based semantic segmentation in anTraX.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the traditional background subtracted segmentation can be replaced with a deep learning-based semantic segmentation, that is training and using a classifier to distinguish pixels of the image as belonging to either background or foreground (Rajchl et al., 2017; Moen et al., 2019; Badrinarayanan et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a proposed extension to the software with citations to relevant methods.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Deep learning-based semantic segmentation could potentially allow analysis of field experiments with natural backgrounds or experiments with non-static backgrounds.",
+    "claim_type": "EXPLICIT",
+    "source": "This can potentially allow analysis of field experiments with natural backgrounds, or experiments with non-static backgrounds, such as videos taken with a moving camera.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about potential future capabilities.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "An informed 'second pass segmentation' step could further segment multi-animal blobs into single-animal blobs, taking into account the composition of the blob.",
+    "claim_type": "EXPLICIT",
+    "source": "Another possible extension is an informed 'second pass segmentation' step, where multi-animal blobs are further segmented into single-animal blobs, taking into account the composition of the blob (number and IDs of animals).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a proposed extension to the algorithm.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Knowing the composition of a blob provides a method to algorithmically validate the segmentation, allowing a 'riskier' segmentation approach.",
+    "claim_type": "EXPLICIT",
+    "source": "Knowing the composition of the blob provides a method to algorithmically validate the segmentation, allowing a 'riskier' segmentation approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about how composition information could be used.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Neural network-based detection of the tags themselves could be used to locate animals in aggregations more precisely.",
+    "claim_type": "EXPLICIT",
+    "source": "Another approach to locate animals in aggregations more precisely is to use neural network-based detection of the tags themselves. This method has successfully been used for bees tagged with fiducial markers inside a hive (Wild et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a proposed extension with a citation to prior work using this approach.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Having a record of the composition of tracklets and blobs paves the way for performing image-based behavioral analysis of interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "Having a record of the composition of tracklets and blobs also paves the way for performing image-based behavioral analysis of interactions (Dankert et al., 2009; Klibaite et al., 2017; Klibaite and Shaevitz, 2019), or constructing specialized image classifiers for interaction types (e.g. allogrooming, trophallaxis, aggression, etc).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a proposed future application with citations to relevant methods.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "A newer generation of pose-estimation tools, including SLEAP and DeepLabCut with multi-animal support, enable the tracking of body parts for multiple interacting animals in an image.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, a newer generation of pose-estimation tools, including SLEAP (Pereira et al., 2020) and the recent release of DeepLabCut with multi-animal support, enable the tracking of body parts for multiple interacting animals in an image.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about recent developments in pose estimation tools with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "These newer pose-estimation tools can be combined with anTraX in the future to extend pose tracking to multi-animal tracklets.",
+    "claim_type": "EXPLICIT",
+    "source": "These tools can be combined with anTraX in the future to extend pose tracking to multi-animal tracklets, and to augment positional information for individual animals within aggregations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a proposed future extension.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "anTraX fills an important gap in the range of available tools for tracking social insects.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, anTraX fills an important gap in the range of available tools for tracking social insects, and considerably expands the range of trackable species and experimental conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary claim supported by the entire manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "anTraX considerably expands the range of trackable species and experimental conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, anTraX fills an important gap in the range of available tools for tracking social insects, and considerably expands the range of trackable species and experimental conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the diverse benchmark datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "anTraX interfaces with established ethological analysis software, thereby making these tools broadly accessible for the study of social insects.",
+    "claim_type": "EXPLICIT",
+    "source": "It also interfaces with established ethological analysis software, thereby making these tools broadly accessible for the study of social insects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the JAABA and DeepLabCut integration examples.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "anTraX has the potential to greatly accelerate our understanding of the mechanisms and principles underlying complex social and collective behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "anTraX therefore has the potential to greatly accelerate our understanding of the mechanisms and principles underlying complex social and collective behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a forward-looking statement about the potential impact of the tool.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  }
+]

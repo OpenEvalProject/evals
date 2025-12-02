@@ -1,0 +1,2033 @@
+{
+  "submission": {
+    "id": "2c4a6f24-4f07-47e2-b672-05c40a4815ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:39:31.463409Z",
+    "updated_at": "2025-12-02T07:39:31.463409Z"
+  },
+  "content": [
+    {
+      "id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "submission_id": "2c4a6f24-4f07-47e2-b672-05c40a4815ff",
+      "content_type": "manuscript",
+      "content_text": "# Gi/o protein-coupled receptors in dopamine neurons inhibit the sodium leak channel NALCN\n\n## Authors\n\n- Fabian Philippart<sup>1</sup>\n- Zayd M Khaliq<sup>1</sup> ([ORCID: 0000-0002-1445-1457](https://orcid.org/0000-0002-1445-1457)) \u2020\n\n### Affiliations\n\n1. Cellular Neurophysiology Unit National Institute of Neurological Disorders and Stroke, National Institutes of Health Maryland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDopamine (D2) receptors provide autoinhibitory feedback onto dopamine neurons through well-known interactions with voltage-gated calcium channels and G protein-coupled inwardly-rectifying potassium (GIRK) channels. Here, we reveal a third major effector involved in D2R modulation of dopaminergic neurons - the sodium leak channel, NALCN. We found that activation of D2 receptors robustly inhibits isolated sodium leak currents in wild-type mice but not in NALCN conditional knockout mice. Intracellular GDP-\u03b2S abolished the inhibition, indicating a G protein-dependent signaling mechanism. The application of dopamine reliably slowed pacemaking even when GIRK channels were pharmacologically blocked. Furthermore, while spontaneous activity was observed in nearly all dopaminergic neurons in wild-type mice, neurons from NALCN knockouts were mainly silent. Both observations demonstrate the critical importance of NALCN for pacemaking in dopaminergic neurons. Finally, we show that GABA-B receptor activation also produces inhibition of NALCN-mediated currents. Therefore, we identify NALCN as a core effector of inhibitory G protein-coupled receptors.\n\n## Introduction\n\nDopamine (D2R) receptors are Gi/o protein-coupled receptors that are expressed widely throughout the brain to control a range of behaviors including locomotion, motivation, action selection, and appetitive reward-seeking (Gerfen and Surmeier, 2011; Tritsch and Sabatini, 2012). Drugs that target D2 receptors have been used for decades as therapies against schizophrenia, but also for bipolar disorder, obsessive-compulsive disorder, Huntington\u2019s disease and Parkinson\u2019s disease. A critical step in improving therapeutic approaches that involve these and other Gi/o protein-coupled receptors is to obtain a more complete knowledge of their primary effectors.\n\nAn extensive literature has been devoted to understanding D2 receptor modulation of midbrain dopamine neurons. D2-receptors provide feedback autoinhibition of dopaminergic neurons (Ford, 2014). Drugs of abuse such as cocaine increase dopamine levels which then inhibits the activity of dopamine neurons (Einhorn et al., 1988). Genetic ablation of D2-autoreceptors leads to hyperactivity and enhanced locomotor responses to cocaine in mice (Anzalone et al., 2012; Bello et al., 2011).\n\nAt the cellular level, most studies examining D2-autoreceptor modulation focus primarily on two ion channel effectors: voltage-gated calcium channels and G protein-coupled inwardly-rectifying potassium (GIRK) channels (Beaulieu and Gainetdinov, 2011). In midbrain dopamine neurons, somatodendritic D2 receptors autoregulate excitability through inhibition of high-threshold voltage-gated calcium channels (Cardozo and Bean, 1995). In addition, D2 receptors couple to GIRK channels to hyperpolarize cells and inhibit tonic firing (Aghajanian and Bunney, 1977; Beckstead et al., 2004; Lacey et al., 1987). Genetic ablation of the GIRK2 subunit alone abolishes all GIRK-mediated currents in dopaminergic neurons, resulting in a substantial reduction in both D2 and GABA-B receptor-mediated currents (Beckstead et al., 2004; Cruz et al., 2004; McCall et al., 2017). Interestingly, a non-GIRK component remains in GIRK2 knockout mice and has yet to be identified (Cruz et al., 2004; McCall et al., 2017). A potential candidate may be Kv1 channels that are recruited by D2 receptors to inhibit dopamine release from axon terminals (Fulton et al., 2011). However, examination of somatic firing in dopamine cells has shown that block of somatodendritic Kv1 channels has little effect on the rate of firing (Khaliq and Bean, 2008), suggesting that somatic Kv1 channels are unlikely to account for this current. Considering this evidence, the modulated current remaining in GIRK2 knockouts may be a protein class separate from potassium conductances. In this study, we investigate whether activation of Gi/o protein-coupled receptors results in modulation of the resting sodium leak conductance.\n\nNALCN is a non-selective sodium leak channel that is expressed widely in neurons throughout the brain (Ren, 2011). Mutations in NALCN leads to dysfunction of brainstem respiratory systems in mice (Lu et al., 2007; Yeh et al., 2017), disrupted circadian rhythms in flies (Flourakis et al., 2015), motor dysfunction in C. elegans (Gao et al., 2015), and cognitive defects in humans (Bend et al., 2016; Chong et al., 2015; Lozic et al., 2016). At the cellular level, NALCN-mediated currents depolarize the resting membrane potential in hippocampal neurons (Lu et al., 2007) and drive spontaneous firing in GABAergic neurons of the substantia nigra pars reticulata (Lutas et al., 2016). In addition to generating a sodium leak current, NALCN channels are activated by tachykinin- and neurotensin-receptors through a G protein-independent, tyrosine kinase-dependent mechanism (Lu et al., 2009). By contrast, the calcium sensor receptor (CaSR) regulates NALCN in a G-protein dependent manner (Lu et al., 2010). Interestingly, behavioral experiments in C. elegans suggest that the nematode dopamine receptor, Dop-3, modulates ortholog Na+ leak channels, NCA-1 and NCA-2 (Topalidou et al., 2017). However, direct electrophysiological evidence for modulation is lacking and results may differ in mammalian neurons. Therefore, whether NALCN-mediated currents are regulated by Gi/o-coupled receptors such as the D2 receptor has yet to be examined.\n\nHere, we show that NALCN-mediated sodium leak currents are strongly inhibited by activation of D2 receptors. Moreover, in the presence of GIRK channel blockers, the D2 receptor inhibition of NALCN alone decreases firing rate in dopamine neurons. In addition, this inhibition was observed following GABA-B activation. Thus, our data identify the NALCN channel as a core effector of Gi/o protein-coupled receptors that functions along with GIRK channels to modulate neuronal firing.\n\n## Results\n\n### Determining the contribution of NALCN to sodium leak currents in SNc dopamine neurons\n\nWe set out to test the involvement of NALCN channels in Gi/o protein-coupled receptor modulation of midbrain dopamine neurons. Previous work has demonstrated the expression of NALCN channels in primary dopamine neuron cultures from postnatal mice (Lu et al., 2009). To test the role of NALCN channels in excitability of dopaminergic neurons from adult animals, we generated mice in which the NALCN allele was flanked by lox-P sites (Nalcnflox). These mice were then bred to DAT-Cre mice, resulting in offspring (Nalcnflox/flox;Slc6a3Cre) that lack expression of NALCN in dopaminergic neurons.\n\nTo determine the contribution of NALCN to background leak currents in dopamine neurons in coronal brain slices from adult mice, we first isolated sodium leak currents using a Cs+-based intracellular recording solution (CsMeSO3) to block potassium conductances. In addition, tetrodotoxin (1 \u00b5M), CsCl (3 mM), and apamin (300 nM) were included in the extracellular solution to block voltage-gated sodium channels, hyperpolarization-gated (Ih) channels and small-conductance calcium-activated (SK) channels (Figure 1). Finally, to block resting sodium leak currents, we replaced Na+ ions in the extracellular bath with a large impermeant ion, N-methyl-D-glucamine (NMDG). As shown in Figure 1B,C, sodium replacement with NMDG resulted in a reduction of the average holding current (Vhold = \u221270 mV) from \u221240.7\u00a0\u00b1\u00a010.18 to \u221213.75\u00a0\u00b1\u00a07.39 pA (n\u00a0=\u00a08; p\u00a0=\u00a00.0078, Wilcoxon). Consistent with previous work in dopamine neurons (Khaliq and Bean, 2010), these results demonstrate the presence of a small amplitude resting sodium leak conductance.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40984/elife-40984-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Top, schematic of a coronal section (left) and confocal image of coronal section from TH-GFP mouse. Bottom, schematic of recording solutions, with cesium based internal and external sodium leak isolation cocktail. (B) Example trace of isolated sodium current recorded at \u221270 mV from wild-type mouse SNc dopamine neuron before and after Na+ replacement with NMDG. (C) Left, Average time course of isolated sodium current before and after replacement of external Na+ by NMDG. Right, summary plot of isolated sodium current (pA) recorded at \u221270 mV in control (gray) and in NMDG solution (green). (D) Example trace of isolated sodium leak current showing potentiation of the sodium leak in 0.1 mM Ca2+ solution and the block induced by Na+ substitution by NMDG. (E) Time course of the averaged 0.1 mM Ca2+ mediated current (left) and the block of this current after replacement of Na+ by NMDG (right). (F) Summary plot of isolated sodium current amplitude at \u221270 mV in control (gray), 0.1 mM Ca2+ (black) and after Na+ substitution by NMDG (green). (G) Example trace of isolated sodium leak current in NALCN cKO mouse. Note, low external Ca2+ and Na+ substitution with NMDG has relatively little effect on holding current. (H) Same as in E but in NALCN KO mice. (I) Summary plot of isolated sodium current in control (open symbols, gray), 0.1 mM Ca2+ (black) and after sodium substitution (green). *p\u00a0<\u00a00.05; **p < 0.01****p < 0.0001.\n\nIn hippocampal neurons, a striking potentiation of the resting sodium leak conductance has been shown to occur under conditions of low extracellular calcium (Chu et al., 2003). The molecular basis of the potentiation involves relief of tonic inhibition from the calcium sensing receptor (CaSR) onto NALCN channels (Lu et al., 2010). In dopamine neurons, low external calcium results in faster spontaneous firing (Khaliq and Bean, 2010), but whether the\u00a0increase in spontaneous firing is caused by potentiation of resting sodium leak\u00a0current in low extracellular\u00a0calcium\u00a0solutions has not been tested.\n\nWe tested the effect of lowering extracellular calcium from 2 mM to 0.1 mM on the isolated sodium leak current. Switching to low calcium solution, the resting sodium leak current increased dramatically over a time-course of 6\u201310 min from an amplitude of \u221250.69\u00a0\u00b1\u00a05.35 pA to \u2212192\u00a0\u00b1\u00a020.07 pA (n\u00a0=\u00a022, Figure 1D\u2013F; p < 0.0001, RM one-way ANOVA followed by Tukey test). Blocking the resting sodium leak conductance with NMDG substitution reduced the holding current from \u2212192\u00a0\u00b1\u00a020.07 pA to \u221264.53\u00a0\u00b1\u00a08.96 pA (n\u00a0=\u00a022; Figure 1D\u2013F; p < 0.0001, RM one-way ANOVA followed by Tukey test). These recordings were made using Cs+-based internal solutions, but in separate experiments we tested the amplitude of NMDG-sensitive currents in low extracellular calcium measured using K+-based internal solutions. We observed no difference in the amplitude of NMDG-sensitive currents when\u00a0recording with\u00a0either Cs+-based or\u00a0K+-based internal solutions (NMDG-sensitive current at \u221270 mV; Cs+-based, 138\u00a0\u00b1\u00a018 pA, n\u00a0=\u00a022; K+-based, 107.9\u00a0\u00b1\u00a017 pA, n\u00a0=\u00a08; p\u00a0=\u00a00.36).\n\nTo test directly for the involvement of NALCN channels in the low calcium potentiation of the resting leak, we recorded from dopaminergic neurons in NALCN conditional knockout mice. In knockout cells, there was relatively little effect of lowering extracellular calcium. Instead, we observed only a slight increase in Na+ leak current from \u221220.83\u00a0\u00b1\u00a02.279 to \u221234.76\u00a0\u00b1\u00a03.659 pA (n\u00a0=\u00a09; p\u00a0=\u00a00.03, RM one-way ANOVA followed by Tukey test). Moreover, subsequent substitution of sodium with NMDG solution did not significantly reduce the holding current (normal Na+, \u221234.76\u00a0\u00b1\u00a03.659 pA; NMDG, \u221224.58\u00a0\u00b1\u00a04.72 pA; n\u00a0=\u00a09, p\u00a0=\u00a00.14, RM one-way ANOVA followed by Tukey test) (Figure 1G\u2013I). Therefore, in agreement with the work of Ren and colleagues in hippocampal neurons (Lu et al., 2010), our experiments in dopaminergic neurons demonstrate that the low calcium potentiation of the sodium leak reflects potentiation of current flowing through NALCN channels.\n\n### Dopamine D2 receptors robustly inhibit NALCN current\n\nD2 receptors play a dominant role in shaping the activity of midbrain dopamine neurons (Anzalone et al., 2012; Bello et al., 2011; Gantz et al., 2013). NALCN channels are activated by Gq protein-coupled receptors (Lu et al., 2009), but it is unknown whether NALCN-mediated currents are modulated by Gi/o coupled receptors. Therefore, we tested the effect of D2 receptor activation on the sodium leak current by bath applied dopamine (100 \u00b5M). GIRK channels are not Cs+ permeable, suggesting that our Cs+-based internal solution is sufficient to block most of GIRK currents (Watts et al., 1996). To ensure that GIRK channels were blocked in this set of experiments, we added 100 \u00b5M BaCl2 to the bath solution.\n\nActivation of D2 receptors with dopamine resulted in a dramatic reduction in the amplitude of the sodium leak current. Bath application of dopamine led to inhibition of the leak current from \u2212201.1\u00a0\u00b1\u00a019.03 pA under control conditions to \u2212133.9\u00a0\u00b1\u00a014.68 pA at the time of maximal dopamine inhibition (n\u00a0=\u00a014; p < 0.0001, RM one-way ANOVA followed by Tukey test) (Figure 2A,G and H). To determine the fraction of the sodium leak conductance that was inhibited by dopamine, we then substituted sodium for NMDG to block sodium leak current. Subsequent NMDG substitution did not further reduce holding current (dopamine, \u2212133.9\u00a0\u00b1\u00a014.68 pA;NMDG, \u2212116.2\u00a0\u00b1\u00a013.31 pA, n\u00a0=\u00a014; p\u00a0=\u00a00.43, RM one-way ANOVA followed by Tukey test) (Figure 2A and G). We found that 88.08 \u00b1 8.36% of the total sodium leak was inhibited by dopamine.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40984/elife-40984-fig2-v2.jpg)\n\n**Figure 2.:** (A)Left, Example trace of isolated sodium leak current in wildtype dopamine neuron recorded at \u221270 mV in 2 mM Ca2+\u00a0and 0.1 mM Ca2+,\u00a0followed\u00a0by bath application of 100 \u00b5M dopamine\u00a0and subsequent substitution of Na+ with NMDG. Right, Summary plot of data in different conditions. (B) Example trace of isolated sodium leak current in NALCN cKO mice. Note, dopamine inhibition of sodium leak is abolished. (C) Left, Example traces showing inhibition of sodium leak current induced by 100 nM (n\u00a0=\u00a05), 1 \u03bcM (n\u00a0=\u00a03), 10 \u03bcM (n\u00a0=\u00a03), and 300 \u03bcM (n\u00a0=\u00a04) dopamine followed by block of leak current in NMDG solution. Traces have been normalized to control current amplitude. Right, Concentration-response curve for inhibition of leak current by dopamine. (D) Example trace of leak current in \u03b2-arrestin2 KO mice. Right, Summary plot. (E) Left, Example trace of the isolated sodium leak current recorded with GDP-\u03b2S added to internal solutions.\u00a0Dopamine applied to cell in 2 mM Ca2+\u00a0external solutions.\u00a0Note the slow increase in leak current with GDP-\u03b2S internal. Right, Summary plot. (F) Example trace of sodium leak current with GDP-\u03b2S internal solution.\u00a0Dopamine applied to cell in 0.1 mM Ca2+ external solutions. Right, Summary plot of data. (G) Summary plot of data shown\u00a0in\u00a0A, B, D and E. (H) Bar plot of the dopamine-sensitive current\u00a0shown in A, B, D and E. *p\u00a0<\u00a00.05; **p\u00a0<\u00a00.01; ***p\u00a0<\u00a00.001; ****p\u00a0<\u00a00.001.\n\nTo test the involvement of NALCN in the D2 modulation of sodium leak, we repeated these experiments in NALCN knockout mice. The dopamine inhibition of the sodium leak was completely abolished in the NALCN conditional knockout mouse (low Ca2+, \u221257.94\u00a0\u00b1\u00a011.62 pA; dopamine, \u221265.31\u00a0\u00b1\u00a019 pA; n\u00a0=\u00a07; p\u00a0=\u00a00.185, RM one-way ANOVA followed by Tukey test) (Figure 2B,G and H). Therefore, these experiments demonstrate that dopamine inhibits sodium leak current flowing through NALCN channels.\n\nNext, we tested the concentration dependence of NALCN inhibition by dopamine. To generate a concentration-response curve, we tested the amplitude of sodium leak current inhibited by dopamine applied over a range of concentrations. Following application of dopamine in each cell, external sodium was then substituted with NMDG, which resulted in a maximal inhibition of sodium leak current. To calculate values for percent inhibition, the leak current inhibited by dopamine was normalized to the total sodium leak current amplitude, which is the leak current measured under controlled conditions minus the current recorded in NMDG. Examination of the concentration-response curve in Figure 2C shows that the concentration of half-maximal inhibition (IC50) of NALCN by dopamine was 725 nM (range, 491\u2013961 nM; Hill coefficient, \u22120.6; range, 0.4\u20130.7). This value is comparable to the published EC50 values of 155 nM and 233 nM for dopamine activation of GIRK channels (Kim et al., 1995; Uchida et al., 2000).\n\nIt is well established that G protein-coupled receptors, including D2 receptors, signal through G protein-dependent and G protein-independent mechanisms. We first sought to test if inhibition of the sodium leak current relied on \u03b2-arrestin, which functions independently of G proteins (Beaulieu and Gainetdinov, 2011). To examine whether \u03b2-arrestin is involved in the inhibition of NALCN, we recorded D2 receptor mediated signal in cells from Arr2 knockout mice (Figure 2D,G and H). We found that dopamine inhibition of NALCN was still present in Arr2 knockout mice with a reduction of the sodium leak current from \u2212179.3\u00a0\u00b1\u00a018.72 to \u2212122.5\u00a0\u00b1\u00a012.82 pA (n\u00a0=\u00a06; p\u00a0=\u00a00.012, RM one-way ANOVA followed by Tukey test). Comparing the amplitude of the dopamine-sensitive sodium leak current, we observed no difference between wild-type (67.24\u00a0\u00b1\u00a08.96 pA; n\u00a0=\u00a014) and Arr2 knockouts (56.86\u00a0\u00b1\u00a010.75 pA; n\u00a0=\u00a06) (p\u00a0=\u00a00.866, one-way ANOVA followed by Tukey test).\n\nWe next investigated the G protein-dependence of the dopamine inhibition of NALCN (Figure 2E\u2013F). To test this, we substituted the GTP contained in our intracellular solutions for 1 mM GDP-\u03b2S, a nonhydrolyzable form of GDP which prevents G protein signaling. The first set of experiments were performed with 2 mM Ca2+ in the extracellular solution (Figure 2E). Upon breakthrough, cells that were recorded using GDP-\u03b2S internal solution showed a slow but steady increase in the inward leak current (1\u20132 min after breakthrough, \u221267.69\u00a0\u00b1\u00a012.75 pA;~15 min following breakthrough, \u2212125.9\u00a0\u00b1\u00a020.73 pA; n\u00a0=\u00a08; p\u00a0=\u00a00.0027, RM one-way ANOVA followed by Tukey test) (Figure 2E). The enhancement in leak current is likely due to GDP-\u03b2S dependent disruption in signaling from calcium sensing (CaSR) receptors, which produce an incomplete but constitutive inhibition of NALCN-mediated leak currents in the presence of extracellular calcium (Lu et al., 2010).\n\nSubstitution of GTP with GDP-\u03b2S in the intracellular solution completely abolished the D2 receptor-mediated inhibition of the NALCN current. Internal GDP-\u03b2S blocked the effect of dopamine when recordings were made in external solution containing 2 mM Ca2+ (control, \u2212125.9\u00a0\u00b1\u00a020.73 pA; dopamine, \u2212131.2\u00a0\u00b1\u00a019.9 pA; n\u00a0=\u00a08; p\u00a0=\u00a00.4196, RM one-way ANOVA followed by Tukey test) (Figure 2E). Similar results were obtained in recordings made in 0.1 mM external Ca2+ solution (control, \u2212196.4\u00a0\u00b1\u00a012.07 pA; dopamine, \u2212195.0\u00a0\u00b1\u00a014.72 pA; n\u00a0=\u00a05; p\u00a0=\u00a00.9992, RM one-way ANOVA followed by Tukey test)\u00a0(Figure 2F). All together, these results demonstrate that D2 receptors inhibit NALCN in a G protein-dependent manner.\n\n### D2 receptor modulation of NALCN channels slows firing independent of signaling through GIRK channels\n\nThe small amplitude of the sodium leak currents recorded in 2 mM external calcium raises the question of whether inhibition of NALCN by dopamine would have a significant physiological effect on firing in the absence of GIRK activation (holding current at \u221270 mV; wild-type, \u221255.74\u00a0\u00b1\u00a04.29 pA, n\u00a0=\u00a039; NALCN KO, \u221219.69\u00a0\u00b1\u00a03.72 pA, n\u00a0=\u00a020; p\u00a0<\u00a00.0001, Mann-Whitney U-test) (Figure 3A). To test this, we first compared spontaneous activity recorded in cell-attached configuration in neurons from wild-type and NALCN knockout mice (Figure 3B). In wild-type animals, we found that 135 out of 148 of dopaminergic neurons (91.21%, 33 mice) were spontaneously active with firing frequencies above 0.1 Hz. In NALCN conditional knockout mice, however, we were surprised to find that only a minor fraction of dopamine neurons, 18 out of 60 (30%, 18 mice) were spontaneously active (Figure 3C). We confirmed that silent neurons were dopaminergic cells by breaking through and checking for the presence of a sag potential (Ih). In these silent dopaminergic neurons, the resting membrane potential immediately following breakthrough was hyperpolarized at an average of \u221253.65\u00a0\u00b1\u00a00.71 mV (n\u00a0=\u00a015). However, small current injections of 10\u201320 pA in these cells was sufficient to restore a regular tonic firing activity at 0.5 to 5 Hz (Figure 3B), indicating that these cells were healthy and capable of firing action potentials. These data show that although NALCN currents are small in amplitude when recorded in physiological external calcium, they play a central role in generating the depolarization necessary for driving pacemaking in dopaminergic neurons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40984/elife-40984-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Summary plot of isolated sodium leak currents measured at \u221270 mV in wildtype (black) versus NALCN cKO mice (red). (B) Cell-attached (top) and whole-cell (bottom) recordings of pacemaking from dopamine neurons recorded in wildtype (black) and NALCN cKO mice (red). (C) Histogram plots of firing rates obtained during cell-attached recordings in wildtype and NALCN cKO mice. (D) Effect of dopamine puff (300 \u00b5M, 1 s) on the firing rate of dopamine neuron recorded in cell-attached mode with 2 mM external Ca2+, before (black) and after block of GIRK channels by bath application of Ba2+ and tertiapin-Q (gray). (E) Left, Averaged normalized firing frequency plotted against time showing the effect of dopamine puff in control conditions (black) and after the block of GIRK channels (gray). Right, Averaged absolute firing rate before and after dopamine puff in control conditions and after the block of GIRK channels. (F,G) Same experiment as D and E but in whole-cell configuration. (H) and (I) Same as F and G in NALCN cKO mice. ***p\u00a0<\u00a00.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40984/elife-40984-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Summary plot showing dopamine inhibition of cell-attached firing. Data from individual neurons are shown as open symbols. Recordings were made in the presence of 500 \u03bcM barium chloride (left), 100 \u03bcM barium chloride plus 300 nM tertiapin-Q (middle), and 300 nM tertiapin-Q alone (right). For the barium (500 \u03bcM) only and barium (100 \u03bcM) plus terQ experiments, extracellular solutions contained CNQX, D-APV and picrotoxin to block AMPA, NMDA and GABA-A receptors. For terQ only experiments, CGP 55845, SCH 39166 and nomifensin were added to extracellular solutions to block GABA-B and D1 receptors as well as dopamine transporters. Addition of CGP 55845, SCH 39166 and nomifensin to the bath had no effect on the D2 receptor mediated inhibition of firing (dopamine inhibition of firing, Ba and terQ versus terQ condition, p\u00a0=\u00a00.54). This suggests that the inhibition of firing observed here is produced by direct activation of D2 receptors present on dopamine neurons and are unlikely to involve circuit effects.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40984/elife-40984-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Plot of the percent reduction of the firing rate following puff application of dopamine versus pacemaker firing rate immediately preceding the puff. Cells were recorded in the presence of 100 \u03bcM Ba2\u00a0+and 300 nM terQ. Analysis of points shows little to no correlation (Pr\u00a0=\u00a0\u22120.298, n\u00a0=\u00a017, p\u00a0=\u00a00.24).\n\nWe next examined the impact of dopamine inhibition of the NALCN current on spontaneous firing. To minimize non-specific effects due to leaky pipette seals, we first recorded in cell-attached configuration. Under control conditions, we found that puff application of dopamine (300 \u00b5M, 1 s) resulted in a long duration pause in firing (47.88\u00a0\u00b1\u00a010.28 s, n\u00a0=\u00a08) as expected. To isolate effects mainly due to inhibition of NALCN channels alone, we then applied dopamine in the presence of extracellular BaCl2 (0.1 mM) plus the high affinity peptide blocker tertiapin-Q (300 nM), which are both effective blockers of GIRK channels (Jin and Lu, 1998; Sodickson and Bean, 1996). In the presence of GIRK channel blockers, dopamine application resulted in a substantial reduction in firing from 2.56\u00a0\u00b1\u00a00.18 to 0.89\u00a0\u00b1\u00a00.26 Hz (n\u00a0=\u00a08; p\u00a0=\u00a00.0078, Wilcoxon test) (Figure 3D,E). We obtained similar results using a high concentration (0.5 mM) of extracellular BaCl2 alone which was shown to completely block GIRK channels (Sodickson and Bean, 1996). Under these conditions, puff application of dopamine resulted in a 73.81 \u00b1 10.47% reduction in the firing (n\u00a0=\u00a05) (Figure 3\u2014figure supplement 1). Lastly, dopamine puff in solutions containing 300 nM tertiapin-Q only without added barium resulted in similar inhibition as well (n\u00a0=\u00a05) (Figure 3\u2014figure supplement 1), suggesting that low concentrations of barium present in the extracellular solution do not significantly contribute to the observed effects.\n\nThe lack of spontaneous activity in neurons from NALCN knockout mice precluded cell-attached experiments examining effects of dopamine on spontaneous firing. Therefore, we performed a parallel set of experiments in whole-cell configuration where we drove tonic firing with small current injections. Similar to our cell-attached recordings, dopamine reduced firing in wild-type mice even in the presence of GIRK channel blockers 3.71\u00a0\u00b1\u00a00.32 to 1.71\u00a0\u00b1\u00a00.32 Hz (n\u00a0=\u00a09; p\u00a0=\u00a00.0039, Wilcoxon test) (Figure 3F,G). By contrast, dopamine neurons recorded in the NALCN conditional knockout showed no reduction in firing when dopamine was applied in the presence of BaCl2 and tertiapin-Q. In fact, we observed a trend toward a small increase in the firing rate following puff application of dopamine (NALCN cKO mice; control, 3.024\u00a0\u00b1\u00a00.22 Hz; dopamine, 3.31\u00a0\u00b1\u00a00.25 Hz; n\u00a0=\u00a08; p\u00a0=\u00a00.078, Wilcoxon test) (Figure 3F and G). This increase in firing rate is similar to the excitation seen following activation of dopamine transporters (Ingram et al., 2002). Therefore, these results demonstrate that NALCN channels contribute significantly to pacemaking in dopamine neurons. Moreover, we show that even under conditions where GIRK currents are blocked, spontaneous firing is slowed by dopamine inhibition of NALCN channels alone.\n\n### NALCN-mediated sodium leak currents are inhibited by activation of GABA-B receptors\n\nThe experiments described above revealed NALCN as a major ion channel effector for D2 receptor regulation of dopamine neuron activity. To extend this idea, we hypothesized that inhibition of NALCN channels may be part of a more general mechanism for modulation involving other Gi/o protein-coupled receptors. GABA-B receptors also trigger GIRK channel opening and are expressed in dopamine neurons (Labou\u00e8be et al., 2007; L\u00fcscher and Slesinger, 2010). Therefore, we tested whether their activation would produce a similar inhibition of the NALCN-mediated sodium leak current.\n\nActivation of GABA-B receptors with baclofen resulted in a substantial inhibition of sodium leak current. Recording the isolated sodium leak current at \u221270 mV in low calcium, we found that bath application of baclofen 10 \u00b5M reduced the holding current from \u2212185\u00a0\u00b1\u00a016.06 pA to \u2212106\u00a0\u00b1\u00a013.89 pA in baclofen (n\u00a0=\u00a08; p\u00a0=\u00a00.0041, RM one-way ANOVA followed by Tukey test) (Figure 4A). Furthermore, the baclofen-sensitive current was similar in amplitude to the dopamine-sensitive current (baclofen-sensitive current, 79\u00a0\u00b1\u00a014.13 pA, n\u00a0=\u00a08; dopamine-sensitive current, 67.24\u00a0\u00b1\u00a08.96 pA, n\u00a0=\u00a014; p\u00a0=\u00a00.66, Mann-Whitney U-test). Immediately following baclofen application, we washed in a low sodium NMDG external solution to block the sodium leak current that remained in baclofen. We found that following baclofen application, substitution of sodium with NMDG produced no further block of the sodium leak currents (p\u00a0=\u00a00.21, RM one-way ANOVA followed by Tukey test) indicating that activation of GABA-B receptors results in nearly complete inhibition of sodium leak currents. Similar to our results examining dopamine, the baclofen inhibition of the isolated sodium leak current recorded at \u221270 mV was completely abolished in cells from NALCN conditional knockout mice (low Ca2+, \u221254.47\u00a0\u00b1\u00a013.57 pA; baclofen, \u221261.89\u00a0\u00b1\u00a012.52 pA, n\u00a0=\u00a07, p\u00a0=\u00a00.0436, RM one-way ANOVA followed by Tukey test) (Figure 4B), demonstrating that GABA-B receptors inhibit sodium leak currents flowing through NALCN channels.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40984/elife-40984-fig4-v2.jpg)\n\n**Figure 4.:** (A) Left, Example trace of showing effect of 10 \u00b5M baclofen on isolated sodium leak current recorded in wildtype mice. Note, Na+ substitution with NMDG produces\u00a0no further effect following baclofen. Right, Summary plot. (B) Example trace of showing effect of baclofen on sodium leak current recorded in NALCN cKO mice.\n\n### GABA-B receptor modulation of NALCN channels slows firing independent of GIRK channel signaling\n\nTo better understand the functional impact of GABA-B modulation through NALCN, we tested the effect of the GABA-B receptor-mediated inhibition of NALCN channels on spontaneous firing in dopamine neurons. In control conditions, puff application of baclofen (10 \u00b5M, 1 s) paused the firing as expected. In the presence of BaCl2 and tertiapin-Q, a significant decrease of the firing was induced by the baclofen puff in wild-type (from 3.67\u00a0\u00b1\u00a00.29 to 0.76\u00a0\u00b1\u00a00.37 Hz; n\u00a0=\u00a08, p\u00a0=\u00a00.0002, Wilcoxon) (Figure 5A,B). By contrast, BaCl2 and tertiapin-Q completely abolished the effect of baclofen on firing in dopamine neurons recorded in NALCN conditional knockout mice (frequency, control, 3.02\u00a0\u00b1\u00a00.71 Hz; baclofen, 3.02\u00a0\u00b1\u00a00.66 Hz; n\u00a0=\u00a08; p\u00a0>\u00a00.99, Wilcoxon) (Figure 5C,D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40984/elife-40984-fig5-v2.jpg)\n\n**Figure 5.:** (A) Effect of baclofen puff (10 \u00b5M, 1 s) on the firing rate of dopamine neuron recorded in whole-cell configuration with 2 mM external Ca2+, before (black) and after block of GIRK channels by Ba2+ and tertiapin-Q (gray). (B) Left, Averaged normalized firing frequency plotted against time showing the effect of 10 \u00b5M baclofen puff in control (black) and after the block of GIRK channels (gray). Right, Absolute firing rates before and after baclofen puff in control conditions and after the block of GIRK channels. (C) and (D). Same as C and D in NALCN cKO mice. **p\u00a0<\u00a00.01; ***p\u00a0<\u00a00.001.\n\n### Baclofen activation of GABA-B receptors potently inhibits NALCN channels\n\nPast studies have tested the sensitivity of GIRK channels to baclofen and have reported EC50 values of 9.2 \u00b5M and 14.8 \u00b5M (Chan et al., 1998; Cruz et al., 2004). By contrast, our experiments above show that 10 \u00b5M baclofen produced a near complete inhibition of sodium leak current (Figure 4A), suggesting a much higher potency of baclofen in the modulation of NALCN channels. Therefore, we tested the sensitivity of the NALCN current to baclofen (Figure 6A,B). Interestingly, our data showed inhibition of NALCN current by baclofen concentrations as low as 100 nM. Concentration-dependence curves yielded an IC50 value for baclofen of 267 nM (range, 234\u2013301 nM; Hill coefficient, \u22121.1; range, 0.9\u20131.3), more than an order of magnitude lower than the published EC50 value for baclofen activation of GIRK.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/40984/elife-40984-fig6-v2.jpg)\n\n**Figure 6.:** (A) Example traces showing inhibition of sodium leak current by 100 nM (n\u00a0=\u00a04), 300 nM (n\u00a0=\u00a05), 1 \u03bcM (n\u00a0=\u00a05), and 10 \u03bcM (n\u00a0=\u00a05) baclofen. Traces have been normalized to control current amplitude. (B) Concentration-response curve of NALCN channel block by baclofen. (C) Cell-attached recording in control conditions (black), in the presence of 300 nM baclofen (orange) and after blocking GABA-B receptors with 1 \u00b5M CGP 55845 (blue). All recordings were made in the presence of tertiapin-Q (300 nM). (D) Time course of the instantaneous firing rate for the cell shown in C. (E) Summary plot of firing frequencies of 7 cells in experiments similar to those shown in C,D. Averaged values are shown as closed symbols. **p\u00a0<\u00a00.01.\n\nGiven the high sensitivity of NALCN to baclofen, we asked\u00a0whether firing in the dopamine neurons would be inhibited by baclofen concentrations near or below the minimum necessary to activate substantial GIRK current (Figure 6C\u2013E). Therefore, we tested bath application of 300 nM baclofen on a background of tertiapin-Q to block GIRK. Baclofen delivered at 300 nM reduced the firing frequency of dopamine neurons by 44.79%, from 2.39\u00a0\u00b1\u00a00.41 Hz to 1.07\u00a0\u00b1\u00a00.28 Hz (n\u00a0=\u00a07, p\u00a0=\u00a00.0039, one-way ANOVA followed by Tukey test). Subsequent application of the GABA-B specific blocker, CGP 55845 (1 \u00b5M), restored cells to their initial firing rate. Therefore, these results demonstrate that baclofen delivered at concentrations that are below the range necessary to activate GIRK channels can significantly inhibit excitability, primarily through inhibition of NALCN.\n\n## Discussion\n\nThese data demonstrate that NALCN is a major ionic contributor to the generation of spontaneous activity in midbrain dopaminergic neurons. Furthermore, we provide the first evidence that the NALCN-mediated sodium leak conductance is negatively modulated by both dopamine D2 receptors and GABA-B receptors. We also show that modulation of NALCN leads to significant slowing of spontaneous activity, consistent with its role in driving pacemaking. Lastly, we show that baclofen exhibits a higher potency in inhibiting NALCN than for activating GIRK channels. Thus, we identify the NALCN channel as a core effector of Gi/o protein-coupled receptors that functions in concert with GIRK channels to inhibit neuronal firing in midbrain dopaminergic neurons.\n\n### Contribution of NALCN to pacemaking in dopaminergic neurons\n\nIt has been long appreciated that sodium leak currents are present in a variety of spontaneously active neurons. Voltage-clamp experiments using ion substitution have identified prominent subthreshold sodium leak currents in dopamine neurons (Khaliq and Bean, 2010), GABAergic neurons of the substantia nigra pars reticulata (SNr) (Atherton and Bevan, 2005), neurons of the cerebellar nucleus (Raman et al., 2000) and suprachiasmatic nucleus neurons (Jackson et al., 2004). However, the lack of specific blockers coupled with imprecise knowledge of the channels that generate leak currents have complicated efforts to study their role in pacemaking.\n\nUsing NALCN conditional knockout mice, we provide clear evidence that pacemaking in dopaminergic neurons is driven in part by sodium leak current flowing through NALCN channels. Specifically, we found that knockout of NALCN in dopaminergic neurons results in significantly smaller resting sodium leak currents measured at \u221270 mV. Second, direct inhibition of NALCN by D2 and GABA-B receptors slows pacemaking. Lastly, the majority of SNc neurons (70%) recorded in brain slices from NALCN conditional knockout mice lack spontaneous activity. Consistent with these findings, recent studies in SNr GABAergic neurons and chemosensory neurons of the retrotrapezoid nucleus have found that knockout of NALCN results in hyperpolarization of the resting membrane potential and a\u00a0~\u00a050% reduction in spontaneous firing rate (Lutas et al., 2016; Yeh et al., 2017). In circadian pacemaker neurons, knockout of NALCN leads to nearly complete abolishment of pacemaking (Flourakis et al., 2015). In agreement with these observations, therefore, our results in dopaminergic neurons suggest that NALCN plays a central role in pacemaking.\n\nA previous study of the conductances that drive pacemaking reported that background sodium leak currents in VTA dopamine neurons are large in amplitude, while sodium leak currents in SNc neurons are relatively small (Khaliq and Bean, 2010). Given this prior result, we were surprised to see that the majority of SNc neurons in NALCN knockout mice lack spontaneous firing, and that D2R and GABA-BR modulation of the NALCN current produces such a significant inhibition of pacemaking. Although we also observed small amplitude sodium leak currents with 2 mM external calcium (Figure 1B), this study focuses on G protein receptor modulation of spontaneous firing which is highly sensitive to small conductance changes. In addition to the previously described differences in leak currents between VTA and SNc neurons (Khaliq and Bean, 2010), however, heterogeneity may also exist across subpopulations of SNc neurons either in NALCN expression and/or differences in the regulation of NALCN by external calcium through the calcium sensing receptor (CaSR). Therefore, it will be important for future studies to examine the expression and regulation of NALCN in midbrain dopamine neurons subpopulations.\n\nThe absence of spontaneous activity in dopamine neurons from the NALCN knockout mice was also surprising given the known robustness of firing. Action potential firing is generate by multiple subthreshold conductances with overlapping functions, an arrangement that favors compensatory adaptation when single conductances are inhibited (Drion et al., 2011; Guzman et al., 2010; Kimm et al., 2015; Marder and Goaillard, 2006; Swensen and Bean, 2005). In addition, homeostatic mechanisms can compensate for genetic ablation of ion channels in knockout mice. As an example, CaV1.3 L-type calcium channels are active during pacemaking in dopamine neurons, but knockout of CaV1.3 has little effect on firing (Blythe et al., 2009) due to upregulation of T-type channels (Poetschke et al., 2015). In the NALCN knockout mice, by contrast, autonomously-generated spontaneous firing was absent in most dopaminergic neurons. It is possible that homeostatic compensation was not sufficient to restore firing, which may be evidence for the critical role of NALCN in pacemaking. Alternatively, compensation may have occurred at the level of synaptic drive onto the dopamine neurons. Therefore, future experiments should test whether compensatory adaptations have occurred in excitatory synaptic signaling.\n\n### Gi/o protein-coupled receptor modulation of NALCN\n\nWe provide the first direct evidence of Gi/o protein-coupled receptor modulation of NALCN. However, G protein-coupled receptors are known to influence multiple effector targets which raises the question of whether other channels may contribute to the effects described here. For example, GABA-B receptors in hippocampus and entorhinal cortex have been shown to activate background leak tandem-pore potassium (K2P) channels, TREK1 and 2 (Breton and Stuart, 2017; Deng et al., 2009; Sandoz et al., 2012). In VTA dopamine neurons recorded in GIRK2 knockouts, activation of GABA-B receptors evokes a Ba2+ insensitive, non-GIRK current that was hypothesized to be produced by K2P channels (Cruz et al., 2004). Importantly in SNc neurons, we found the that Ba2+-insensitive effects of GABA-B and D2 receptors observed in wildtype mice were abolished in NALCN knockout mice. These observations suggest that differences may exist between GABA-B signaling in SNc and VTA dopamine neurons.\n\nOur data show that the sensitivity of NALCN to baclofen is high, with an IC50 of 267 nM. By comparison, GIRK channels exhibit a much lower sensitivity to baclofen according to published EC50 values in dopamine neurons (9.2 and 14.8 \u03bcM) (Chan et al., 1998; Cruz et al., 2004) and in other neurons such as midbrain GABAergic neurons and hippocampal neurons (range, 0.9\u20134.5 \u03bcM) (Chan et al., 1998; Cruz et al., 2004; Sodickson and Bean, 1996). The functional importance of this difference is currently unknown. However, one possibility is that the proximity of GABA-B receptor to inhibitory synapses may determine the extent to which NALCN or GIRK channels are recruited. GABA-B receptors located close to synapses are exposed to high GABA concentrations which would favor GIRK activation. On the other hand, modulation through extrasynaptic GABA-B receptors, which are activated by lower concentrations of GABA, may primarily involve inhibition of NALCN.\n\nThe Gi/o protein-coupled receptor inhibition of NALCN may add new features to signal processing mechanisms in dopamine neurons. For instance, GIRK and NALCN could potentially play a synergistic role in membrane hyperpolarization. While both hyperpolarize the membrane potential, activation of GIRK channels decreases input resistance while inhibition of NALCN increases input resistance. As a result, simultaneous inhibition of NALCN may function to potentiate GIRK-mediated hyperpolarization. Moreover, the tightened membrane may allow synaptic inputs to drive rebound firing more effectively from hyperpolarized membrane potentials (Evans et al., 2017).\n\nThe spatial proximity of NALCN and GIRKs could also enable potential interactions between these channels. Indeed, we find that NALCN currents are inhibited nearly maximally by activation of either GABA-B and D2 receptors (see Figures 2A and 4A). This suggests an interesting scenario where GABA-B and D2 receptors may be arranged spatially into overlapping microdomains in which both receptors have access to GIRK channels and the NALCN signaling complex. Likewise, it has been shown that GIRK channels are inhibited by intracellular calcium but enhanced by internal sodium ions (Kramer and Williams, 2016; Wang et al., 2016). This raises the question of whether NALCN and GIRK channels colocalize in a complex with Gi/o protein-coupled receptors and whether Na+ flowing through NALCN channels potentiates GIRK currents. Future studies should focus on determining the subcellular locations of NALCN, GIRKs and other effectors of Gi/o protein-coupled receptors.\n\nAs mentioned, existing evidence indicates that the mechanisms of GABA-B modulation may differ substantially between subpopulations of VTA dopamine neurons and SNc neurons. Specifically, VTA dopamine neurons that project to medial and lateral nucleus accumbens differ markedly in their responses to baclofen (Yang et al., 2018). In addition, past work has shown that the expression level of GIRK2 mRNA is 10 times lower in dopaminergic neurons of the medial VTA relative to laterally located mesostriatal dopamine neurons (Lammel et al., 2008). Interestingly, despite the low expression of GIRK expression in mesocortical cells, it was shown that bath application of both GABA and baclofen silenced the firing of mesocortical dopamine neurons completely. Our data demonstrate that inhibition of NALCN channels alone is sufficient to slow down the firing rate. Therefore, it will be important to determine the extent to which inhibition of NALCN contributes to the GIRK-independent GABA-B inhibition of medial VTA dopamine neurons.\n\nCollectively, our findings provide evidence that NALCN is an effector of Gi/o coupled receptors in dopamine neurons. Both GABA-B and D2 receptors modulate NALCN, raising the possibility that this may be a common feature to other Gi/o protein-coupled receptors across different neuronal cell types. These results may provide a novel avenue for drug development strategies and molecular therapeutics that target Gi/o protein-coupled receptor signaling pathways.\n\n## Materials and methods\n\n### Animal use and generation of transgenic mice\n\nAll procedures were carried out in accordance with guidelines set by the animal care and use committee for the National Institute of Neurological Disorders and stroke and the National Institutes of Health. Adult (2\u20135 months) tyrosine hydroxylase-GFP (Th-GFP; C57BL/6 background)(Matsushita et al., 2002), Arr2 knockout (Jackson Labs) and NALCN conditional knockout mice (C57BL/6 background) of either sex were used for electrophysiology. We generated mice in which positions between exons 5 and 6 of the NALCN allele was flanked by lox-P sites (Nalcnflox). To do this, we acquired ES cells from KOMP (UC Davis). ES Cells were microinjected into a mouse blastocyst and implanted into a female mouse (NIMH/NINDS Transgenic Core). Chimeras were born and bred to a Flp-deleter strain (C57BL/6 background; Jackson Labs) to make conditional ready mice Nalcnflox. Nalcnflox mice were then bred to Slc6a3-Cre mice, resulting in offspring (Nalcnflox/flox; Slc6a3Cre) that lack expression of NALCN in dopaminergic neurons. A recent publication reported Nalcnflox mice that were generated independently using ES cells obtained from the same source (KOMP), with exon deletion sites that are exactly the same as those reported in this study (Yeh et al., 2017).\n\n### Slice preparation\n\nMice were anesthetized with isoflurane and transcardially perfused with an ice-cold glycerol-based slicing solution containing (in mM): 198 glycerol, 2.5 KCl, 1.2 NaHPO4, 10 HEPES, 21 NaHCO3, five glucose, 2 MgCl2, 2 CaCl2, 5 Na-ascorbate, 3 Na-pyruvate and two thiourea. Coronal 250 \u00b5m thick slices were then cut using a DTK-ZERO1 Microslicer and incubated at 34\u00b0C for 35 min and then stored at room temperature in a holding solution containing (in mM): 92 NaCl, 30 NaHCO3, 1.2 NaH2PO4, 2.5 KCl, 35 glucose, 20 HEPES, 2 MgCl2, 2 CaCl2, 5 Na-ascorbate, 3 Na-pyruvate, and two thiourea. Recordings 40 min to 6 hr after being removed from the bath.\n\n### Electrophysiological recordings\n\nFor patch-clamp recordings, slices were placed into a recording chamber and continuously superfused with warm (34\u00b0C) recording solution of the following composition (in mM): 125 NaCl, 25 NaHCO3, 1.25 NaH2PO4, 3.5 KCl, 10 glucose, 1 MgCl2, and 2 CaCl2 (unless otherwise indicated). Neurons were visualized using a BX51WI Olympus microscope equipped with a CCD camera (W105AE, Watec). Patch-clamp recordings were obtained using low-resistance pipettes (3\u20135 M\u03a9) that were pulled from filamented borosilicate glass with a flaming/brown micropipette puller (Sutter Instruments). In voltage-clamp experiments, the internal solution contained the following (in mM): 122 CsMeSO3, 9 HEPES, 1.8 MgCl2, 4 Mg-ATP, 0.3 Na-GTP, 14 phosphocreatine, 0.45 EGTA and 0.09 CaCl2. Current-clamp recordings were performed using an internal solution containing (in mM): 122 KMeSO3, 9 NaCl, 9 HEPES, 1.8 MgCl2, 4 Mg-ATP, 0.3 Na-GTP, 14 phosphocreatine, 0.45 EGTA and 0.09 CaCl2. Salts were purchased from Sigma-Aldrich (St-Louis, MO).\n\nCell-attached recordings for the agonist \u2018puff experiments\u2019 shown in Figures 3 and 6 were performed in a loose-seal voltage-clamp configuration (holding at \u221260 mV) using our normal extracellular recording solutions. The puffer pipette was positioned near cells, just above the slice to prevent direct mechanical effects of puff application. A subset of the spontaneous firing rates reported in Figure 3C were obtained from cell-attached recordings made using high-resistance seals. We routinely recorded cell-attached firing prior to breakthrough. These recordings were performed using either Cs-based or K-based intracellular solutions, as described above.\n\nLow sodium solution experiments were performed using extracellular solutions in which 125 mM NaCl was replaced by N-methyl-D-glucamine (NMDG)-Cl. Solutions were made by first adding (in mM) 125 NMDG, 25 NaHCO3 and 1.25 NaH2PO4 to the beaker. Next, the NMDG solution was titrated with HCl to a pH of 7.3\u20137.4. We then added 10 glucose and then bubbled the solution with 95/5% O2/CO2 to saturation. Last, either 1 MgCl2 alone or 1 MgCl2 plus 2 CaCl2 were added. The osmolarity of both high and low Na external solutions was typically in the range of 300\u2013315 mOsM.\n\nSignals were digitized with a Digidata 1440A interface, amplified using a Multiclamp 700B amplifier and acquired using pClamp 10 software (Molecular Devices, Sunnyvale, CA). Data were sampled at 20 kHz and filtered at 10 kHz. Recordings were post hoc filtered at 1 kHz. Reported voltages were not corrected for liquid\u00a0junction potential, which in our MeSO3 based solutions measured at \u22128 mV.\n\nAll recordings were performed on dopamine neurons from the substantia nigra. Dopamine neurons were first targeted by their location and their large cell bodies. They were then identified based on various electrophysiological characteristics such as the firing frequency (<5 Hz), the presence of Ih and the GFP fluorescence in TH-GFP mice. In gap-free voltage-clamp experiments, a 10 mV step was applied each time a different solution entered in the bath allowing us to evaluate the access resistance of the cell.\n\n### Drugs\n\nVoltage-clamp and current-clamp recordings were performed in the continuous presence of synaptic blockers (20 \u00b5M CNQX, 50 \u00b5M APV, 50 \u00b5M picrotoxin). For the voltage-clamp experiments, 1 \u00b5M tetrodotoxin, 100 \u00b5M BaCl2, 300 nM apamin and 3 mM Cs+ were added to the bath. For experiments examining the concentration-dependence of dopamine (Figure 3C) were recorded with 1 \u00b5M CGP 55845, 1 \u00b5M SCH 39166, and 50 \u00b5M nomifensin were added to the bath. Experiments examining concentration dependence baclofen as well as accompanying cell-attached recordings (all data shown in Figure 6) were made with 1 \u00b5M SCH 39166, and 50 \u00b5M nomifensin were added to the bath. Drugs were purchased from Tocris Bioscience (Bristol,UK), except for tertiapin-Q which was purchased from Alomone (Jerusalem, Israel).\n\n### Data analysis\n\nData were analyzed using both Prism (GraphPad software), Clampfit (Molecular Devices) and IGOR (Wavemetrics) and were expressed in mean\u00a0\u00b1SEM. Statistical significance was determined in two group comparisons by two-tailed Mann-Whitney U-test or Wilcoxon signed-rank test (paired comparisons) and in more than two group comparisons by one-way ANOVAs or one-way repeated measures ANOVAs (paired comparisons) followed by the Tukey\u2019s post hoc test. The difference was considered significant at p\u00a0<\u00a00.05. At least three animals were tested per condition.\n\nIn our analysis of the dopamine inhibition of NALCN (Figure 2A), we minimized effects of D2 receptor desensitization (Gantz et al., 2015) by comparing the amplitude of the leak current in control condition to the amplitude at maximal inhibition. For plots of the normalize firing rate (Figure 3E,G,I), firing rates from individual experiments were normalized to the baseline firing rate, which was obtained from 10 averages a period of 10 s before the puff of dopamine (300 \u00b5M, 1 s) or baclofen (10 \u00b5M, 1 s). The instantaneous firing rate was obtained by averaging the number of spikes that occur within 1 s window. Summary plots show baseline values, which are 10 s averages before the puff application, and the minimum firing rates following puff application of dopamine or baclofen.\n",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "32b26d87-3538-4f64-8b09-2a3e5cfe8d65",
+      "submission_id": "2c4a6f24-4f07-47e2-b672-05c40a4815ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary L Westbrook, Vollum Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40984.020](https://doi.org/10.7554/eLife.40984.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Gi/o protein-coupled receptors in dopamine neurons inhibit the sodium leak channel NALCN\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Gary Westbrook as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michael Beckstead (Reviewer #1); Andrew Lutas (Reviewer #2). The reviewers have discussed the reviews with one another and the Senior Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers were intrigued by the manuscript, but had a number of mostly non-overlapping concerns that would in some cases require additional data to address. The reviewers each made extensive comments, but in our post-review discussion we agreed that we thought you would be able to address these issues with additional comments and some additional experiments within a timeframe of 2 months. Because of the explanatory text in each review, I thought it was more helpful to you to provide the text of the original reviews rather than attempt to consolidate the comments into a single set of major and minor comments.\n\nReviewer #1:\n\nThis interesting manuscript by Philippart and Khaliq identifies the sodium leak channel NALCN as a mediator of Gi/o receptor inhibition in midbrain dopaminergic neurons. In spite of the large body of literature describing D2 and GABAB receptor signaling in these neurons, the investigators (aided by a NALCN knockout mouse) have found a new effector of Gi/o receptor signaling. The current amplitudes observed were small under physiological conditions, however the authors nonetheless showed that the channel has major effects on pacemaker firing in this cell type (consistent with previous work by the senior author showing that small sub-threshold currents can have large effects on firing). As midbrain dopaminergic neurons are involved in complex behavioral processes and the etiology of many neurological disorders, these findings could have far-reaching consequences. Furthermore, it is likely that these effects occur in at least some of the other neuron types throughout the CNS where Gi/o receptor signaling is a prominent inhibitory mechanism. The experiments themselves range from voltage clamp to current clamp to cell-attached recordings, and consistent with this group's reputation are expertly performed. The manuscript itself is well-written. However, the final contribution to the literature could be enhanced with a few straightforward additions.\n\nIn the Gi/o inhibition experiments, only single concentrations of drugs were used. Using GIRK channel activation in these neurons as a guide, 100 \u00b5M dopamine might be expected to be maximally effective while 10 \u00b5M baclofen might be expected to be somewhat less than maximal. Strikingly, 10 \u00b5M baclofen completely walloped the NALCN current (Figure 4A). This suggests that this effector may be more sensitive to GABAB receptor activation than GIRK channels, which would be extremely interesting and have implications for the physiological relevance of these findings. Full concentration-response curves with high n's are probably too much to ask. However, given that this manuscript is describing a new effector of Gi/o signaling in these heavily studied neurons, a rough concentration-response with maybe ~2 more concentrations of baclofen and dopamine would allow for an estimate of the EC50s, and would be a valuable addition for the literature record.\n\nThe D2 receptor desensitization finding should be further clarified. A previous report (Beckstead and Williams, 2007, J Neurosci, 27: 2074-2080) suggested that the percent desensitization of GIRK channel signaling produced by 100 \u00b5M dopamine in these same neurons is not different in slices from \u03b2-arrestin 2 KO mice. The current manuscript suggests a different result for NALCN inhibition, although the experiment may be a bit underpowered for high confidence (n=4 in the arrestin group). Oddly, the wild-type trace in Figure 2A shows zero dopamine-induced desensitization, but the summary data in panel 2D suggests that the smallest amount of desensitization observed in any single neuron in wild-type mice was around 15%. The authors should clarify why the trace doesn't match the summary data and maybe get a few more arrestin cells to enhance confidence in this conclusion.\n\nReviewer #2:\n\nThis study presents convincing evidence that NALCN-mediated currents are inhibited by Gi/o GPCR activation in nigral dopamine neurons. The manuscript will benefit from additional text clarifying methodological details and more general improvements to the clarity of the writing several of which are pointed out below. Additional pharmacological experiments that definitively show that dopamine is acting cell-autonomously to mediate the inhibition of NALCN current would be helpful.\n\nWhile the experiments using NALCN cKO are convincing and key for the argument of NALCN-specific inhibition, the manuscript would benefit from a more detailed description of bath solution composition and control for osmolality/pH when solution changes are made. This is important for addressing a concern about leaky-patch clamp artifacts that the authors bring up in the third paragraph of the subsection \u201cDetermining the contribution of NALCN to sodium leak currents in SNc dopamine neurons\u201d, which could be a real concern if change in osmolality/pH are altering the \"leakiness\" of the seal.\n\n1) The authors should more clearly describe the composition of the bath solutions in the Results/Materials and methods section. How was osmolality and pH confirmed to be identical between different ACSF composition. In particular, what replaced calcium in the low calcium solution and was Na-bicarbonate (Na-HCO3) replaced in the low sodium solution and if so by what? If HEPES was used to replace Na-bicarbonate, was the solution bubbled with 100% oxygen instead of 95%Oxygen/5%CO2 to account for the different buffer? The authors should clarify that NMDG-chloride was used and that the pH did not change between solutions.\n\nA potential confound could exist for the interpretation of the dopamine and baclofen experiments as cell-autonomous. The following pharmacological experiments would help make this more convincing and at the very least the authors should discuss this possibility. It would be sufficient to perform these additional experiments using cell-attached recordings of firing.\n\n1) Since only picrotoxin was used to block GABA-A receptors and since dopamine application to slices could increase GABAergic neuron input onto the recorded cells, the effects could be mediated by GABA-B receptor suppression of NALCN current rather than direct D2 receptor mediated effects. Therefore, to make the major claim that D2 receptors are involved, the authors must show that dopamine can reduce NALCN current in the presence of GABA-B blocker (e.g. CGP35348). For the voltage clamp experiments, TTX was included which the authors should, at the very least, make a stronger point of arguing that it is unlikely that dopamine is increasing GABA spontaneous firing and thus releasing more GABA onto dopamine neurons in an action potential dependent manner. However, the pharmacological block of GABA-B receptors would directly rule this out this potential confound.\n\n2) Similarly, but less concerning than point 1 above, the baclofen experiments should be performed in the presence of dopamine receptor blockers to rule out similar non-cell-autonomous effects.\n\n3) Additionally, the experiments could benefit from D1 receptor antagonist (SCH23390), which would help prevent excitation of GABAergic neurons in the slice and rule out any effects of this receptor on the inhibition of NALCN current.\n\nAn even more convincing, but longer experiment would be to obtain the Drd2-Flox mice from Jackson Laboratory, eliminate the D2 receptor from dopamine neurons by crossing with DAT-cre, and show in slices that dopamine no longer can inhibit NALCN currents.\n\nReviewer #3:\n\nThe study by Philippart and Khaliq reports D2 and GABA-B receptor activation inhibits a tonic current carried by NALCN channels in substantia nigra pars compacta (SNc) dopamine neurons. The data are well-organized, very clearly illustrated, and intriguing. The only major concern is that it is difficult to determine if the experimental conditions employed to isolate NALCN exaggerates its magnitude and contribution to regulation of cell firing. A better understanding of the context in which this form of auto-regulation is important, physiologically, would be beneficial to all readers.\n\n1) Since NALCN is permeable to Na+, K+, and Cs+ (Ren 2011), does the inclusion of Cs+ in and outside of the cell alter NALCN conductance measured in voltage-clamp? This may be tested by examining the effect of low calcium and NMDG on the tonic NALCN current using KMeSO3-based internal (as was done for current-clamp recordings).\n\n2) Does Ba2+ affect NALCN? This becomes a concern if Ba2+ potentiates NALCN conductance; then the inhibitory effects of D2 receptor activation of GIRK and inhibition of NALCN are difficult to compare. This could be tested in voltage-clamp.\n\n3) Does inhibition of NALCN slow dopamine neuron firing across a range of firing rates? The baseline firing rates after addition of BaCl2 and Ter-Q are much faster than in control conditions, presumably by block of other potassium channels by BaCl2. However, this could render the neurons more sensitive to very small hyperpolarizations and is not demonstration that D2 receptor inhibition of NALCN regulates firing in physiological conditions. Can this be tested using Ter-Q only (omitting Ba2+)? Alternatively, current injection may be employed to speed the firing rate of dopamine neurons and then puff DA, to test whether slowing of firing rate is more pronounced when the neurons are firing very quickly.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Gi/o protein-coupled receptors in dopamine neurons inhibit the sodium leak channel NALCN\" for further consideration at eLife. Your revised article has been favorably evaluated by Gary Westbrook (Senior Editor) and the two of the original three reviewers. The reviewers are satisfied with your revisions but we would like you to address a few comments as below, before we can make final acceptance.\n\nReviewer #2:\n\nThe authors have completely addressed all of my original comments. They provide exciting and compelling evidence that dopamine actions via D2 receptors and baclofen actions via GABAB receptors can gate SNc neuron firing specifically via NALCN channels. The manuscript is clear and convincing. These data already motivate exciting future directions to study how NALCN contributes to the function of dopamine neurons.\n\nReviewer #3:\n\nThe revisions have greatly improved the manuscript and addressed the points raised in my review. The study is very interesting. There are only a few points remaining to consider.\n\n1) The impact statement and Introduction (last paragraph) state that the NALCN mechanism functions synergistically with GIRK channels. \"Synergistic\" should be removed. This study does not address interactions between NALCN and GIRK to conclude that the effects are greater than the sum of the effect of D2/GABAB at each channel individually. The discussion regarding a potential synergistic effect is very informative and should remain.\n\n2) It would be beneficial to the readers to include the data of NMDG-sensitive currents recorded with Cs-based internal compared with K-based internal, in Materials and methods or Results. Notably, presenting that GIRK and NALCN can be recorded with the same internal solution helps advance future studies.\n",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "df1d846f-ee6f-4af7-b2be-54847a7f6692",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C1",
+      "claim": "Dopamine (D2) receptors provide autoinhibitory feedback onto dopamine neurons through interactions with voltage-gated calcium channels and G protein-coupled inwardly-rectifying potassium (GIRK) channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine (D2) receptors provide autoinhibitory feedback onto dopamine neurons through well-known interactions with voltage-gated calcium channels and G protein-coupled inwardly-rectifying potassium (GIRK) channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature on D2 receptor function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "49d2963e-465b-4369-9dc7-46eed3ea873f",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C2",
+      "claim": "Activation of D2 receptors robustly inhibits isolated sodium leak currents in wild-type mice but not in NALCN conditional knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that activation of D2 receptors robustly inhibits isolated sodium leak currents in wild-type mice but not in NALCN conditional knockout mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing differential effects in wild-type versus knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "07345bf6-909f-4ab4-9108-cdec120528cc",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C3",
+      "claim": "Intracellular GDP-\u03b2S abolished the D2 receptor-mediated inhibition of sodium leak current, indicating a G protein-dependent signaling mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular GDP-\u03b2S abolished the inhibition, indicating a G protein-dependent signaling mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data using GDP-\u03b2S to block G protein signaling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "4fb90d35-f210-4dcb-9733-ff32b08c597d",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C4",
+      "claim": "The application of dopamine reliably slowed pacemaking even when GIRK channels were pharmacologically blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "The application of dopamine reliably slowed pacemaking even when GIRK channels were pharmacologically blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing dopamine effects in the presence of GIRK channel blockers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "a80016a5-cac9-495d-a53d-30238a05312c",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C5",
+      "claim": "Spontaneous activity was observed in nearly all dopaminergic neurons in wild-type mice, but neurons from NALCN knockouts were mainly silent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while spontaneous activity was observed in nearly all dopaminergic neurons in wild-type mice, neurons from NALCN knockouts were mainly silent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations comparing wild-type and knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "7732b6fb-a0d1-4182-8f8e-bebea1b11848",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C6",
+      "claim": "NALCN is critical for pacemaking in dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Both observations demonstrate the critical importance of NALCN for pacemaking in dopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of reduced spontaneous activity in NALCN knockouts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "8f30be9e-8c72-4cbe-993b-b2199f808490",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C7",
+      "claim": "GABA-B receptor activation produces inhibition of NALCN-mediated currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that GABA-B receptor activation also produces inhibition of NALCN-mediated currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing GABA-B receptor effects on NALCN currents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "d4d41b7c-f675-492a-9a07-8fa843bb5711",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C8",
+      "claim": "NALCN is a core effector of inhibitory G protein-coupled receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we identify NALCN as a core effector of inhibitory G protein-coupled receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing modulation by both D2 and GABA-B receptors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "c854f1ea-3c35-4630-942f-a645e317dcae",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C9",
+      "claim": "D2-receptors are Gi/o protein-coupled receptors that are expressed widely throughout the brain to control a range of behaviors including locomotion, motivation, action selection, and appetitive reward-seeking.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine (D2R) receptors are Gi/o protein-coupled receptors that are expressed widely throughout the brain to control a range of behaviors including locomotion, motivation, action selection, and appetitive reward-seeking (Gerfen and Surmeier, 2011; Tritsch and Sabatini, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "9d5fd5a7-a116-4e64-9ec2-795503ea054d",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C10",
+      "claim": "Drugs that target D2 receptors have been used for decades as therapies against schizophrenia, bipolar disorder, obsessive-compulsive disorder, Huntington's disease and Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Drugs that target D2 receptors have been used for decades as therapies against schizophrenia, but also for bipolar disorder, obsessive-compulsive disorder, Huntington's disease and Parkinson's disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established medical knowledge about D2 receptor-targeting drugs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "200e89da-8b76-4375-bce8-df97fe6074ca",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C11",
+      "claim": "Cocaine increases dopamine levels which then inhibits the activity of dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Drugs of abuse such as cocaine increase dopamine levels which then inhibits the activity of dopamine neurons (Einhorn et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "09594694-794c-4e87-ab71-8cd8aa3ee12e",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C12",
+      "claim": "Genetic ablation of D2-autoreceptors leads to hyperactivity and enhanced locomotor responses to cocaine in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic ablation of D2-autoreceptors leads to hyperactivity and enhanced locomotor responses to cocaine in mice (Anzalone et al., 2012; Bello et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "40eeb7fc-aab1-410c-8171-b9cca4cea1ed",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C13",
+      "claim": "In midbrain dopamine neurons, somatodendritic D2 receptors autoregulate excitability through inhibition of high-threshold voltage-gated calcium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In midbrain dopamine neurons, somatodendritic D2 receptors autoregulate excitability through inhibition of high-threshold voltage-gated calcium channels (Cardozo and Bean, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "a866821e-e30a-4ca6-b37b-ddd46511fd4c",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C14",
+      "claim": "D2 receptors couple to GIRK channels to hyperpolarize cells and inhibit tonic firing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, D2 receptors couple to GIRK channels to hyperpolarize cells and inhibit tonic firing (Aghajanian and Bunney, 1977; Beckstead et al., 2004; Lacey et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "db5a86a0-fa7c-4b5e-8401-43fb187a90b2",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C15",
+      "claim": "Genetic ablation of the GIRK2 subunit alone abolishes all GIRK-mediated currents in dopaminergic neurons, resulting in a substantial reduction in both D2 and GABA-B receptor-mediated currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic ablation of the GIRK2 subunit alone abolishes all GIRK-mediated currents in dopaminergic neurons, resulting in a substantial reduction in both D2 and GABA-B receptor-mediated currents (Beckstead et al., 2004; Cruz et al., 2004; McCall et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "d70a749c-ed84-465b-945f-68725d31c252",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C16",
+      "claim": "A non-GIRK component remains in GIRK2 knockout mice and has yet to be identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a non-GIRK component remains in GIRK2 knockout mice and has yet to be identified (Cruz et al., 2004; McCall et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "4d343cc7-9595-4965-b244-905e5d4cbd54",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C17",
+      "claim": "Kv1 channels are recruited by D2 receptors to inhibit dopamine release from axon terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "A potential candidate may be Kv1 channels that are recruited by D2 receptors to inhibit dopamine release from axon terminals (Fulton et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "980db044-6a30-469a-a0d1-dbc7aae08b08",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C18",
+      "claim": "Block of somatodendritic Kv1 channels has little effect on the rate of firing in dopamine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, examination of somatic firing in dopamine cells has shown that block of somatodendritic Kv1 channels has little effect on the rate of firing (Khaliq and Bean, 2008), suggesting that somatic Kv1 channels are unlikely to account for this current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "c402f8fa-00d0-4f23-88df-b3890109b311",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C19",
+      "claim": "NALCN is a non-selective sodium leak channel that is expressed widely in neurons throughout the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "NALCN is a non-selective sodium leak channel that is expressed widely in neurons throughout the brain (Ren, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "35bd86c3-3b1b-4ad5-889d-ff2fd5aab4ec",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C20",
+      "claim": "Mutations in NALCN lead to dysfunction of brainstem respiratory systems in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in NALCN leads to dysfunction of brainstem respiratory systems in mice (Lu et al., 2007; Yeh et al., 2017), disrupted circadian rhythms in flies (Flourakis et al., 2015), motor dysfunction in C. elegans (Gao et al., 2015), and cognitive defects in humans (Bend et al., 2016; Chong et al., 2015; Lozic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "d23220d8-948f-4ca3-850a-e15eb75d63b6",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C21",
+      "claim": "Mutations in NALCN lead to disrupted circadian rhythms in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in NALCN leads to dysfunction of brainstem respiratory systems in mice (Lu et al., 2007; Yeh et al., 2017), disrupted circadian rhythms in flies (Flourakis et al., 2015), motor dysfunction in C. elegans (Gao et al., 2015), and cognitive defects in humans (Bend et al., 2016; Chong et al., 2015; Lozic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "e65c17fd-3080-490f-84a6-4741ec04acf7",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C22",
+      "claim": "Mutations in NALCN lead to motor dysfunction in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in NALCN leads to dysfunction of brainstem respiratory systems in mice (Lu et al., 2007; Yeh et al., 2017), disrupted circadian rhythms in flies (Flourakis et al., 2015), motor dysfunction in C. elegans (Gao et al., 2015), and cognitive defects in humans (Bend et al., 2016; Chong et al., 2015; Lozic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "f7c14302-7721-464b-a291-22f4aa139c27",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C23",
+      "claim": "Mutations in NALCN lead to cognitive defects in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in NALCN leads to dysfunction of brainstem respiratory systems in mice (Lu et al., 2007; Yeh et al., 2017), disrupted circadian rhythms in flies (Flourakis et al., 2015), motor dysfunction in C. elegans (Gao et al., 2015), and cognitive defects in humans (Bend et al., 2016; Chong et al., 2015; Lozic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "10aec27a-5199-498d-bd32-c294906d84aa",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C24",
+      "claim": "NALCN-mediated currents depolarize the resting membrane potential in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, NALCN-mediated currents depolarize the resting membrane potential in hippocampal neurons (Lu et al., 2007) and drive spontaneous firing in GABAergic neurons of the substantia nigra pars reticulata (Lutas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "3cc47a17-4972-48aa-9fb2-18234a1501e2",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C25",
+      "claim": "NALCN-mediated currents drive spontaneous firing in GABAergic neurons of the substantia nigra pars reticulata.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, NALCN-mediated currents depolarize the resting membrane potential in hippocampal neurons (Lu et al., 2007) and drive spontaneous firing in GABAergic neurons of the substantia nigra pars reticulata (Lutas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "da4211c9-8bc9-4e76-af1e-e72134ba6ea7",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C26",
+      "claim": "NALCN channels are activated by tachykinin- and neurotensin-receptors through a G protein-independent, tyrosine kinase-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to generating a sodium leak current, NALCN channels are activated by tachykinin- and neurotensin-receptors through a G protein-independent, tyrosine kinase-dependent mechanism (Lu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "965a4cf0-d885-4a7b-8354-07c9b0df2f87",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C27",
+      "claim": "The calcium sensor receptor (CaSR) regulates NALCN in a G-protein dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the calcium sensor receptor (CaSR) regulates NALCN in a G-protein dependent manner (Lu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "45903f96-9ea4-4c8d-a520-b5075de37f86",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C28",
+      "claim": "Behavioral experiments in C. elegans suggest that the nematode dopamine receptor, Dop-3, modulates ortholog Na+ leak channels, NCA-1 and NCA-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, behavioral experiments in C. elegans suggest that the nematode dopamine receptor, Dop-3, modulates ortholog Na+ leak channels, NCA-1 and NCA-2 (Topalidou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "d05274d8-cb0d-47ff-9768-3e5931ce4304",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C29",
+      "claim": "Direct electrophysiological evidence for modulation of NALCN by dopamine receptors in mammalian neurons is lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "However, direct electrophysiological evidence for modulation is lacking and results may differ in mammalian neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the absence of prior evidence in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "414d2aa6-bebb-479b-b03f-5382b84d190a",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C30",
+      "claim": "Sodium replacement with NMDG resulted in a reduction of the average holding current from \u221240.7 \u00b1 10.18 to \u221213.75 \u00b1 7.39 pA (n = 8; p = 0.0078).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1B,C, sodium replacement with NMDG resulted in a reduction of the average holding current (Vhold = \u221270 mV) from \u221240.7 \u00b1 10.18 to \u221213.75 \u00b1 7.39 pA (n = 8; p = 0.0078, Wilcoxon).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "5f8f6241-a6cf-4938-994c-2d9020ff7aa2",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C31",
+      "claim": "Lowering extracellular calcium from 2 mM to 0.1 mM increased the resting sodium leak current from \u221250.69 \u00b1 5.35 pA to \u2212192 \u00b1 20.07 pA (n = 22, p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Switching to low calcium solution, the resting sodium leak current increased dramatically over a time-course of 6\u201310 min from an amplitude of \u221250.69 \u00b1 5.35 pA to \u2212192 \u00b1 20.07 pA (n = 22, Figure 1D\u2013F; p < 0.0001, RM one-way ANOVA followed by Tukey test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "0a5f8971-2f5c-439b-b02e-874c854ffc29",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C32",
+      "claim": "Blocking the resting sodium leak conductance with NMDG substitution reduced the holding current from \u2212192 \u00b1 20.07 pA to \u221264.53 \u00b1 8.96 pA (n = 22; p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the resting sodium leak conductance with NMDG substitution reduced the holding current from \u2212192 \u00b1 20.07 pA to \u221264.53 \u00b1 8.96 pA (n = 22; Figure 1D\u2013F; p < 0.0001, RM one-way ANOVA followed by Tukey test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "5edaa1be-ff51-4a93-baca-6d480b3ef4d5",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C33",
+      "claim": "In NALCN conditional knockout mice, lowering extracellular calcium resulted in only a slight increase in Na+ leak current from \u221220.83 \u00b1 2.279 to \u221234.76 \u00b1 3.659 pA (n = 9; p = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "In knockout cells, there was relatively little effect of lowering extracellular calcium. Instead, we observed only a slight increase in Na+ leak current from \u221220.83 \u00b1 2.279 to \u221234.76 \u00b1 3.659 pA (n = 9; p = 0.03, RM one-way ANOVA followed by Tukey test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from NALCN knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "2fd927f7-f1b4-43f9-b4b6-4547420e162e",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C34",
+      "claim": "In NALCN conditional knockout mice, subsequent substitution of sodium with NMDG solution did not significantly reduce the holding current (normal Na+, \u221234.76 \u00b1 3.659 pA; NMDG, \u221224.58 \u00b1 4.72 pA; n = 9, p = 0.14).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, subsequent substitution of sodium with NMDG solution did not significantly reduce the holding current (normal Na+, \u221234.76 \u00b1 3.659 pA; NMDG, \u221224.58 \u00b1 4.72 pA; n = 9, p = 0.14, RM one-way ANOVA followed by Tukey test) (Figure 1G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "05345bb2-6f27-477c-86a7-17f9c5817a67",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C35",
+      "claim": "The low calcium potentiation of the sodium leak reflects potentiation of current flowing through NALCN channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in agreement with the work of Ren and colleagues in hippocampal neurons (Lu et al., 2010), our experiments in dopaminergic neurons demonstrate that the low calcium potentiation of the sodium leak reflects potentiation of current flowing through NALCN channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and comparison with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "94dcf577-9828-4192-b466-3db8d4bb3786",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C36",
+      "claim": "Bath application of dopamine led to inhibition of the leak current from \u2212201.1 \u00b1 19.03 pA under control conditions to \u2212133.9 \u00b1 14.68 pA at the time of maximal dopamine inhibition (n = 14; p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Bath application of dopamine led to inhibition of the leak current from \u2212201.1 \u00b1 19.03 pA under control conditions to \u2212133.9 \u00b1 14.68 pA at the time of maximal dopamine inhibition (n = 14; p < 0.0001, RM one-way ANOVA followed by Tukey test) (Figure 2A,G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A,G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "3ca6de2c-c69b-4e78-b5cd-28a6f07c8a34",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C37",
+      "claim": "88.08 \u00b1 8.36% of the total sodium leak was inhibited by dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 88.08 \u00b1 8.36% of the total sodium leak was inhibited by dopamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "d68469dd-f339-4d51-8dea-1f15affd3c92",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C38",
+      "claim": "The dopamine inhibition of the sodium leak was completely abolished in the NALCN conditional knockout mouse (low Ca2+, \u221257.94 \u00b1 11.62 pA; dopamine, \u221265.31 \u00b1 19 pA; n = 7; p = 0.185).",
+      "claim_type": "EXPLICIT",
+      "source": "The dopamine inhibition of the sodium leak was completely abolished in the NALCN conditional knockout mouse (low Ca2+, \u221257.94 \u00b1 11.62 pA; dopamine, \u221265.31 \u00b1 19 pA; n = 7; p = 0.185, RM one-way ANOVA followed by Tukey test) (Figure 2B,G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B,G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "1be32caf-03e7-4475-8cea-eb2ca5281fb9",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C39",
+      "claim": "The concentration of half-maximal inhibition (IC50) of NALCN by dopamine was 725 nM (range, 491\u2013961 nM; Hill coefficient, \u22120.6; range, 0.4\u20130.7).",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the concentration-response curve in Figure 2C shows that the concentration of half-maximal inhibition (IC50) of NALCN by dopamine was 725 nM (range, 491\u2013961 nM; Hill coefficient, \u22120.6; range, 0.4\u20130.7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "1b8c6227-1039-4b8d-b60f-efd1b208e2f2",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C40",
+      "claim": "The IC50 value for dopamine inhibition of NALCN is comparable to the published EC50 values of 155 nM and 233 nM for dopamine activation of GIRK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This value is comparable to the published EC50 values of 155 nM and 233 nM for dopamine activation of GIRK channels (Kim et al., 1995; Uchida et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with cited literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "c77b03fb-9556-49fd-b679-1504569eb8cf",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C41",
+      "claim": "Dopamine inhibition of NALCN was still present in Arr2 knockout mice with a reduction of the sodium leak current from \u2212179.3 \u00b1 18.72 to \u2212122.5 \u00b1 12.82 pA (n = 6; p = 0.012).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that dopamine inhibition of NALCN was still present in Arr2 knockout mice with a reduction of the sodium leak current from \u2212179.3 \u00b1 18.72 to \u2212122.5 \u00b1 12.82 pA (n = 6; p = 0.012, RM one-way ANOVA followed by Tukey test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from \u03b2-arrestin2 knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "91dd47fe-fca1-40a8-9fab-c58a0413350f",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C42",
+      "claim": "There was no difference in the amplitude of the dopamine-sensitive sodium leak current between wild-type (67.24 \u00b1 8.96 pA; n = 14) and Arr2 knockouts (56.86 \u00b1 10.75 pA; n = 6) (p = 0.866).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the amplitude of the dopamine-sensitive sodium leak current, we observed no difference between wild-type (67.24 \u00b1 8.96 pA; n = 14) and Arr2 knockouts (56.86 \u00b1 10.75 pA; n = 6) (p = 0.866, one-way ANOVA followed by Tukey test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "b1d1631a-d52f-46f0-8e97-9ebb4afa6061",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C43",
+      "claim": "Substitution of GTP with GDP-\u03b2S in the intracellular solution completely abolished the D2 receptor-mediated inhibition of the NALCN current.",
+      "claim_type": "EXPLICIT",
+      "source": "Substitution of GTP with GDP-\u03b2S in the intracellular solution completely abolished the D2 receptor-mediated inhibition of the NALCN current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data using GDP-\u03b2S.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "8849f062-fce5-4b7e-b6b6-bd700371f0eb",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C44",
+      "claim": "Internal GDP-\u03b2S blocked the effect of dopamine when recordings were made in external solution containing 2 mM Ca2+ (control, \u2212125.9 \u00b1 20.73 pA; dopamine, \u2212131.2 \u00b1 19.9 pA; n = 8; p = 0.4196).",
+      "claim_type": "EXPLICIT",
+      "source": "Internal GDP-\u03b2S blocked the effect of dopamine when recordings were made in external solution containing 2 mM Ca2+ (control, \u2212125.9 \u00b1 20.73 pA; dopamine, \u2212131.2 \u00b1 19.9 pA; n = 8; p = 0.4196, RM one-way ANOVA followed by Tukey test) (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "86303d9b-6cd2-44ce-abea-5e669a8a7748",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C45",
+      "claim": "Internal GDP-\u03b2S blocked the effect of dopamine when recordings were made in 0.1 mM external Ca2+ solution (control, \u2212196.4 \u00b1 12.07 pA; dopamine, \u2212195.0 \u00b1 14.72 pA; n = 5; p = 0.9992).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained in recordings made in 0.1 mM external Ca2+ solution (control, \u2212196.4 \u00b1 12.07 pA; dopamine, \u2212195.0 \u00b1 14.72 pA; n = 5; p = 0.9992, RM one-way ANOVA followed by Tukey test) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "f7dae6be-7429-48f9-b1b5-8ad4dd080eaa",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C46",
+      "claim": "D2 receptors inhibit NALCN in a G protein-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, these results demonstrate that D2 receptors inhibit NALCN in a G protein-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the GDP-\u03b2S experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "81d57219-b574-43d2-890c-815e7c7eed6e",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C47",
+      "claim": "In wild-type animals, 135 out of 148 of dopaminergic neurons (91.21%, 33 mice) were spontaneously active with firing frequencies above 0.1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type animals, we found that 135 out of 148 of dopaminergic neurons (91.21%, 33 mice) were spontaneously active with firing frequencies above 0.1 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations in wild-type mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "25d585d9-d73a-4a23-9f64-263a16582f15",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C48",
+      "claim": "In NALCN conditional knockout mice, only 18 out of 60 (30%, 18 mice) dopamine neurons were spontaneously active.",
+      "claim_type": "EXPLICIT",
+      "source": "In NALCN conditional knockout mice, however, we were surprised to find that only a minor fraction of dopamine neurons, 18 out of 60 (30%, 18 mice) were spontaneously active (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "b8f4ad41-ecd3-4a4c-914a-82867be9dab2",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C49",
+      "claim": "In silent dopaminergic neurons from NALCN knockout mice, the resting membrane potential immediately following breakthrough was hyperpolarized at an average of \u221253.65 \u00b1 0.71 mV (n = 15).",
+      "claim_type": "EXPLICIT",
+      "source": "In these silent dopaminergic neurons, the resting membrane potential immediately following breakthrough was hyperpolarized at an average of \u221253.65 \u00b1 0.71 mV (n = 15).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "4ac2f007-56b4-4799-b6b2-938f5b3ed8d2",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C50",
+      "claim": "Small current injections of 10\u201320 pA in silent NALCN knockout neurons was sufficient to restore a regular tonic firing activity at 0.5 to 5 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "However, small current injections of 10\u201320 pA in these cells was sufficient to restore a regular tonic firing activity at 0.5 to 5 Hz (Figure 3B), indicating that these cells were healthy and capable of firing action potentials.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "a6ef4f5c-e7ed-48e6-beef-ca9ad0e0de10",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C51",
+      "claim": "NALCN currents play a central role in generating the depolarization necessary for driving pacemaking in dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that although NALCN currents are small in amplitude when recorded in physiological external calcium, they play a central role in generating the depolarization necessary for driving pacemaking in dopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of reduced spontaneous activity in NALCN knockouts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "87fae462-e4bb-4f19-94e8-e3330d02521f",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C52",
+      "claim": "In the presence of GIRK channel blockers, dopamine application resulted in a substantial reduction in firing from 2.56 \u00b1 0.18 to 0.89 \u00b1 0.26 Hz (n = 8; p = 0.0078).",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of GIRK channel blockers, dopamine application resulted in a substantial reduction in firing from 2.56 \u00b1 0.18 to 0.89 \u00b1 0.26 Hz (n = 8; p = 0.0078, Wilcoxon test) (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "64edea4a-4abc-4dfe-93ba-61ba1ee888d5",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C53",
+      "claim": "Dopamine reduced firing in wild-type mice even in the presence of GIRK channel blockers from 3.71 \u00b1 0.32 to 1.71 \u00b1 0.32 Hz (n = 9; p = 0.0039) in whole-cell configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our cell-attached recordings, dopamine reduced firing in wild-type mice even in the presence of GIRK channel blockers 3.71 \u00b1 0.32 to 1.71 \u00b1 0.32 Hz (n = 9; p = 0.0039, Wilcoxon test) (Figure 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "9c9cfff6-943c-48ba-aad8-b1b5ae012a68",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C54",
+      "claim": "Dopamine neurons recorded in the NALCN conditional knockout showed no reduction in firing when dopamine was applied in the presence of BaCl2 and tertiapin-Q (NALCN cKO mice; control, 3.024 \u00b1 0.22 Hz; dopamine, 3.31 \u00b1 0.25 Hz; n = 8; p = 0.078).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, dopamine neurons recorded in the NALCN conditional knockout showed no reduction in firing when dopamine was applied in the presence of BaCl2 and tertiapin-Q. In fact, we observed a trend toward a small increase in the firing rate following puff application of dopamine (NALCN cKO mice; control, 3.024 \u00b1 0.22 Hz; dopamine, 3.31 \u00b1 0.25 Hz; n = 8; p = 0.078, Wilcoxon test) (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "1de02eac-3dd5-410a-b534-29491372ec71",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C55",
+      "claim": "NALCN channels contribute significantly to pacemaking in dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results demonstrate that NALCN channels contribute significantly to pacemaking in dopamine neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "0d31c773-b08b-4c0e-adb5-03d41c197e3c",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C56",
+      "claim": "Even under conditions where GIRK currents are blocked, spontaneous firing is slowed by dopamine inhibition of NALCN channels alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we show that even under conditions where GIRK currents are blocked, spontaneous firing is slowed by dopamine inhibition of NALCN channels alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing dopamine effects in the presence of GIRK blockers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "c9e9a137-f529-4e4f-97ad-efed3af110f0",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C57",
+      "claim": "Bath application of baclofen 10 \u00b5M reduced the holding current from \u2212185 \u00b1 16.06 pA to \u2212106 \u00b1 13.89 pA in baclofen (n = 8; p = 0.0041).",
+      "claim_type": "EXPLICIT",
+      "source": "Recording the isolated sodium leak current at \u221270 mV in low calcium, we found that bath application of baclofen 10 \u00b5M reduced the holding current from \u2212185 \u00b1 16.06 pA to \u2212106 \u00b1 13.89 pA in baclofen (n = 8; p = 0.0041, RM one-way ANOVA followed by Tukey test) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "b47015ca-3ab4-449b-b70a-7b9ef6c46baa",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C58",
+      "claim": "The baclofen-sensitive current was similar in amplitude to the dopamine-sensitive current (baclofen-sensitive current, 79 \u00b1 14.13 pA, n = 8; dopamine-sensitive current, 67.24 \u00b1 8.96 pA, n = 14; p = 0.66).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the baclofen-sensitive current was similar in amplitude to the dopamine-sensitive current (baclofen-sensitive current, 79 \u00b1 14.13 pA, n = 8; dopamine-sensitive current, 67.24 \u00b1 8.96 pA, n = 14; p = 0.66, Mann-Whitney U-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "0d1c80a1-2ea9-4b0c-b3a0-a429825701de",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C59",
+      "claim": "Following baclofen application, substitution of sodium with NMDG produced no further block of the sodium leak currents (p = 0.21).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that following baclofen application, substitution of sodium with NMDG produced no further block of the sodium leak currents (p = 0.21, RM one-way ANOVA followed by Tukey test) indicating that activation of GABA-B receptors results in nearly complete inhibition of sodium leak currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "d9ec3957-a44c-4f13-9695-4072b3d97608",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C60",
+      "claim": "Activation of GABA-B receptors results in nearly complete inhibition of sodium leak currents.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that following baclofen application, substitution of sodium with NMDG produced no further block of the sodium leak currents (p = 0.21, RM one-way ANOVA followed by Tukey test) indicating that activation of GABA-B receptors results in nearly complete inhibition of sodium leak currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observation that NMDG produced no further block after baclofen.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "36d4a4fa-01e0-4eba-b0ed-5a9676d08aed",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C61",
+      "claim": "The baclofen inhibition of the isolated sodium leak current recorded at \u221270 mV was completely abolished in cells from NALCN conditional knockout mice (low Ca2+, \u221254.47 \u00b1 13.57 pA; baclofen, \u221261.89 \u00b1 12.52 pA, n = 7, p = 0.0436).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our results examining dopamine, the baclofen inhibition of the isolated sodium leak current recorded at \u221270 mV was completely abolished in cells from NALCN conditional knockout mice (low Ca2+, \u221254.47 \u00b1 13.57 pA; baclofen, \u221261.89 \u00b1 12.52 pA, n = 7, p = 0.0436, RM one-way ANOVA followed by Tukey test) (Figure 4B), demonstrating that GABA-B receptors inhibit sodium leak currents flowing through NALCN channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "c049d001-7222-4709-b12f-f214152e3a87",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C62",
+      "claim": "GABA-B receptors inhibit sodium leak currents flowing through NALCN channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our results examining dopamine, the baclofen inhibition of the isolated sodium leak current recorded at \u221270 mV was completely abolished in cells from NALCN conditional knockout mice (low Ca2+, \u221254.47 \u00b1 13.57 pA; baclofen, \u221261.89 \u00b1 12.52 pA, n = 7, p = 0.0436, RM one-way ANOVA followed by Tukey test) (Figure 4B), demonstrating that GABA-B receptors inhibit sodium leak currents flowing through NALCN channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data in NALCN knockout mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "10607f2c-3e61-4ea3-863e-b7de976a62f4",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C63",
+      "claim": "In the presence of BaCl2 and tertiapin-Q, a significant decrease of the firing was induced by the baclofen puff in wild-type (from 3.67 \u00b1 0.29 to 0.76 \u00b1 0.37 Hz; n = 8, p = 0.0002).",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of BaCl2 and tertiapin-Q, a significant decrease of the firing was induced by the baclofen puff in wild-type (from 3.67 \u00b1 0.29 to 0.76 \u00b1 0.37 Hz; n = 8, p = 0.0002, Wilcoxon) (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "f95087ec-2fdd-4fc9-b506-bd344aa0abf4",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C64",
+      "claim": "BaCl2 and tertiapin-Q completely abolished the effect of baclofen on firing in dopamine neurons recorded in NALCN conditional knockout mice (frequency, control, 3.02 \u00b1 0.71 Hz; baclofen, 3.02 \u00b1 0.66 Hz; n = 8; p > 0.99).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, BaCl2 and tertiapin-Q completely abolished the effect of baclofen on firing in dopamine neurons recorded in NALCN conditional knockout mice (frequency, control, 3.02 \u00b1 0.71 Hz; baclofen, 3.02 \u00b1 0.66 Hz; n = 8; p > 0.99, Wilcoxon) (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "2440054a-a10f-4e8d-a85b-869958e2126f",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C65",
+      "claim": "Past studies have reported EC50 values of 9.2 \u00b5M and 14.8 \u00b5M for baclofen activation of GIRK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Past studies have tested the sensitivity of GIRK channels to baclofen and have reported EC50 values of 9.2 \u00b5M and 14.8 \u00b5M (Chan et al., 1998; Cruz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "df6c7ca2-09cd-4ecd-ad75-7374462df29f",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C66",
+      "claim": "10 \u00b5M baclofen produced a near complete inhibition of sodium leak current.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, our experiments above show that 10 \u00b5M baclofen produced a near complete inhibition of sodium leak current (Figure 4A), suggesting a much higher potency of baclofen in the modulation of NALCN channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "c9c907dd-d72d-47a5-b588-f94cf866963c",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C67",
+      "claim": "The IC50 value for baclofen inhibition of NALCN is 267 nM (range, 234\u2013301 nM; Hill coefficient, \u22121.1; range, 0.9\u20131.3).",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration-dependence curves yielded an IC50 value for baclofen of 267 nM (range, 234\u2013301 nM; Hill coefficient, \u22121.1; range, 0.9\u20131.3), more than an order of magnitude lower than the published EC50 value for baclofen activation of GIRK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from concentration-response curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "a2a1d444-60e4-4300-8e55-d93bcd56c579",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C68",
+      "claim": "The IC50 for baclofen inhibition of NALCN is more than an order of magnitude lower than the published EC50 value for baclofen activation of GIRK.",
+      "claim_type": "EXPLICIT",
+      "source": "Concentration-dependence curves yielded an IC50 value for baclofen of 267 nM (range, 234\u2013301 nM; Hill coefficient, \u22121.1; range, 0.9\u20131.3), more than an order of magnitude lower than the published EC50 value for baclofen activation of GIRK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of experimental data with published values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "f8f57fed-7076-469b-90d4-de3411bc1951",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C69",
+      "claim": "Baclofen delivered at 300 nM reduced the firing frequency of dopamine neurons by 44.79%, from 2.39 \u00b1 0.41 Hz to 1.07 \u00b1 0.28 Hz (n = 7, p = 0.0039).",
+      "claim_type": "EXPLICIT",
+      "source": "Baclofen delivered at 300 nM reduced the firing frequency of dopamine neurons by 44.79%, from 2.39 \u00b1 0.41 Hz to 1.07 \u00b1 0.28 Hz (n = 7, p = 0.0039, one-way ANOVA followed by Tukey test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "55841088-47a4-42dc-a91c-02918831ff92",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C70",
+      "claim": "Baclofen delivered at concentrations that are below the range necessary to activate GIRK channels can significantly inhibit excitability, primarily through inhibition of NALCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results demonstrate that baclofen delivered at concentrations that are below the range necessary to activate GIRK channels can significantly inhibit excitability, primarily through inhibition of NALCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations with 300 nM baclofen.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "13704492-1fb2-468f-aab3-29ac7d407849",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C71",
+      "claim": "NALCN is a major ionic contributor to the generation of spontaneous activity in midbrain dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that NALCN is a major ionic contributor to the generation of spontaneous activity in midbrain dopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations throughout the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "00dbf7dc-def1-4ced-b965-bf4927a5d400",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C72",
+      "claim": "The NALCN-mediated sodium leak conductance is negatively modulated by both dopamine D2 receptors and GABA-B receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we provide the first evidence that the NALCN-mediated sodium leak conductance is negatively modulated by both dopamine D2 receptors and GABA-B receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing inhibition by both receptor types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "cd35bb09-2253-4a73-a51c-b894baa031fe",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C73",
+      "claim": "Modulation of NALCN leads to significant slowing of spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that modulation of NALCN leads to significant slowing of spontaneous activity, consistent with its role in driving pacemaking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data on firing rate changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "57c2b83f-87a4-4b6d-8a07-612f024104e8",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C74",
+      "claim": "Baclofen exhibits a higher potency in inhibiting NALCN than for activating GIRK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we show that baclofen exhibits a higher potency in inhibiting NALCN than for activating GIRK channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of IC50 and EC50 values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "0bb42fd5-c1f5-4213-9678-8168491ad0ae",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C75",
+      "claim": "NALCN is a core effector of Gi/o protein-coupled receptors that functions in concert with GIRK channels to inhibit neuronal firing in midbrain dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we identify the NALCN channel as a core effector of Gi/o protein-coupled receptors that functions in concert with GIRK channels to inhibit neuronal firing in midbrain dopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations throughout the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "166dc7ef-892d-4c1b-9f31-9da06ae6e4e1",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C76",
+      "claim": "Voltage-clamp experiments using ion substitution have identified prominent subthreshold sodium leak currents in dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-clamp experiments using ion substitution have identified prominent subthreshold sodium leak currents in dopamine neurons (Khaliq and Bean, 2010), GABAergic neurons of the substantia nigra pars reticulata (SNr) (Atherton and Bevan, 2005), neurons of the cerebellar nucleus (Raman et al., 2000) and suprachiasmatic nucleus neurons (Jackson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "97d14281-de9a-4711-90eb-a39babba7355",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C77",
+      "claim": "Knockout of NALCN in SNr GABAergic neurons and chemosensory neurons of the retrotrapezoid nucleus results in hyperpolarization of the resting membrane potential and a ~ 50% reduction in spontaneous firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, recent studies in SNr GABAergic neurons and chemosensory neurons of the retrotrapezoid nucleus have found that knockout of NALCN results in hyperpolarization of the resting membrane potential and a ~ 50% reduction in spontaneous firing rate (Lutas et al., 2016; Yeh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "fa957559-af63-4339-ba9b-dfb4ae1c1ec9",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C78",
+      "claim": "In circadian pacemaker neurons, knockout of NALCN leads to nearly complete abolishment of pacemaking.",
+      "claim_type": "EXPLICIT",
+      "source": "In circadian pacemaker neurons, knockout of NALCN leads to nearly complete abolishment of pacemaking (Flourakis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "2837aa87-241b-4a44-884b-8225fffb8b51",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C79",
+      "claim": "Background sodium leak currents in VTA dopamine neurons are large in amplitude, while sodium leak currents in SNc neurons are relatively small.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study of the conductances that drive pacemaking reported that background sodium leak currents in VTA dopamine neurons are large in amplitude, while sodium leak currents in SNc neurons are relatively small (Khaliq and Bean, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "2e554486-b7f4-43e3-82a6-16ebbd2f0446",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C80",
+      "claim": "Heterogeneity may exist across subpopulations of SNc neurons either in NALCN expression and/or differences in the regulation of NALCN by external calcium through the calcium sensing receptor (CaSR).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the previously described differences in leak currents between VTA and SNc neurons (Khaliq and Bean, 2010), however, heterogeneity may also exist across subpopulations of SNc neurons either in NALCN expression and/or differences in the regulation of NALCN by external calcium through the calcium sensing receptor (CaSR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, suggesting possible explanations for observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "34470513-6599-45e6-b301-046e67486cdf",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C81",
+      "claim": "Action potential firing is generated by multiple subthreshold conductances with overlapping functions, an arrangement that favors compensatory adaptation when single conductances are inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Action potential firing is generate by multiple subthreshold conductances with overlapping functions, an arrangement that favors compensatory adaptation when single conductances are inhibited (Drion et al., 2011; Guzman et al., 2010; Kimm et al., 2015; Marder and Goaillard, 2006; Swensen and Bean, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "c10dae49-775b-489e-9fdb-d02d3281b1ab",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C82",
+      "claim": "Knockout of CaV1.3 L-type calcium channels has little effect on firing in dopamine neurons due to upregulation of T-type channels.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, CaV1.3 L-type calcium channels are active during pacemaking in dopamine neurons, but knockout of CaV1.3 has little effect on firing (Blythe et al., 2009) due to upregulation of T-type channels (Poetschke et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "19796f25-8c53-4e27-9446-6e01e24ae89b",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C83",
+      "claim": "Homeostatic compensation in NALCN knockout mice may have occurred at the level of synaptic drive onto the dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, compensation may have occurred at the level of synaptic drive onto the dopamine neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, suggesting a possible explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "e98ffd27-6482-4857-a72a-89843d6d011a",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C84",
+      "claim": "GABA-B receptors in hippocampus and entorhinal cortex have been shown to activate background leak tandem-pore potassium (K2P) channels, TREK1 and 2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, GABA-B receptors in hippocampus and entorhinal cortex have been shown to activate background leak tandem-pore potassium (K2P) channels, TREK1 and 2 (Breton and Stuart, 2017; Deng et al., 2009; Sandoz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "ff153970-b18a-43f6-87a5-531c9284e09a",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C85",
+      "claim": "In VTA dopamine neurons recorded in GIRK2 knockouts, activation of GABA-B receptors evokes a Ba2+ insensitive, non-GIRK current that was hypothesized to be produced by K2P channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In VTA dopamine neurons recorded in GIRK2 knockouts, activation of GABA-B receptors evokes a Ba2+ insensitive, non-GIRK current that was hypothesized to be produced by K2P channels (Cruz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "1de6787f-8b0e-404f-924f-418a38acc8b7",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C86",
+      "claim": "Differences may exist between GABA-B signaling in SNc and VTA dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that differences may exist between GABA-B signaling in SNc and VTA dopamine neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations in this study compared to prior research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "2906c49e-3861-4418-b36b-a8666ac84855",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C87",
+      "claim": "GIRK channels exhibit EC50 values for baclofen in the range of 0.9\u20134.5 \u03bcM in midbrain GABAergic neurons and hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, GIRK channels exhibit a much lower sensitivity to baclofen according to published EC50 values in dopamine neurons (9.2 and 14.8 \u03bcM) (Chan et al., 1998; Cruz et al., 2004) and in other neurons such as midbrain GABAergic neurons and hippocampal neurons (range, 0.9\u20134.5 \u03bcM) (Chan et al., 1998; Cruz et al., 2004; Sodickson and Bean, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "5854e9a9-49ae-4dc7-831f-b0b4f684a7a9",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C88",
+      "claim": "The proximity of GABA-B receptor to inhibitory synapses may determine the extent to which NALCN or GIRK channels are recruited.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one possibility is that the proximity of GABA-B receptor to inhibitory synapses may determine the extent to which NALCN or GIRK channels are recruited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, suggesting a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "7db3d334-def2-4a6a-aba6-65ca1a300ba5",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C89",
+      "claim": "GABA-B receptors located close to synapses are exposed to high GABA concentrations which would favor GIRK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "GABA-B receptors located close to synapses are exposed to high GABA concentrations which would favor GIRK activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on logical inference about receptor location and GABA concentration.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "1b8b2f46-77d4-4be8-bab7-f7700299694f",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C90",
+      "claim": "Modulation through extrasynaptic GABA-B receptors, which are activated by lower concentrations of GABA, may primarily involve inhibition of NALCN.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, modulation through extrasynaptic GABA-B receptors, which are activated by lower concentrations of GABA, may primarily involve inhibition of NALCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, suggesting a possible mechanism based on receptor location.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "82f22b19-2436-4be4-8ddb-899954b6c2bb",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C91",
+      "claim": "Activation of GIRK channels decreases input resistance while inhibition of NALCN increases input resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "While both hyperpolarize the membrane potential, activation of GIRK channels decreases input resistance while inhibition of NALCN increases input resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about the effects of these channels on membrane properties.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "f5cd118d-b1e7-4bc2-a60e-f8f1bf76e6dc",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C92",
+      "claim": "Simultaneous inhibition of NALCN may function to potentiate GIRK-mediated hyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, simultaneous inhibition of NALCN may function to potentiate GIRK-mediated hyperpolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, suggesting a possible functional interaction.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "2ef3c768-16b2-4958-9789-842baac17230",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C93",
+      "claim": "NALCN currents are inhibited nearly maximally by activation of either GABA-B and D2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that NALCN currents are inhibited nearly maximally by activation of either GABA-B and D2 receptors (see Figures 2A and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2A and 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "54d1285f-cea8-4577-96d0-1ffd569732cc",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C94",
+      "claim": "GABA-B and D2 receptors may be arranged spatially into overlapping microdomains in which both receptors have access to GIRK channels and the NALCN signaling complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests an interesting scenario where GABA-B and D2 receptors may be arranged spatially into overlapping microdomains in which both receptors have access to GIRK channels and the NALCN signaling complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, suggesting a possible spatial arrangement.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "22716256-974c-47fc-9a45-e0aed9bf3069",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C95",
+      "claim": "GIRK channels are inhibited by intracellular calcium but enhanced by internal sodium ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, it has been shown that GIRK channels are inhibited by intracellular calcium but enhanced by internal sodium ions (Kramer and Williams, 2016; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "a1b5b3fd-4f32-4ad5-8849-725dda984d11",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C96",
+      "claim": "VTA dopamine neurons that project to medial and lateral nucleus accumbens differ markedly in their responses to baclofen.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, VTA dopamine neurons that project to medial and lateral nucleus accumbens differ markedly in their responses to baclofen (Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "4c60e703-1781-4e21-ad71-c1814f952aa5",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C97",
+      "claim": "The expression level of GIRK2 mRNA is 10 times lower in dopaminergic neurons of the medial VTA relative to laterally located mesostriatal dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, past work has shown that the expression level of GIRK2 mRNA is 10 times lower in dopaminergic neurons of the medial VTA relative to laterally located mesostriatal dopamine neurons (Lammel et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "364ee821-8063-4e97-9d82-f8b1dfb1eac9",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C98",
+      "claim": "Bath application of both GABA and baclofen silenced the firing of mesocortical dopamine neurons completely despite low GIRK expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, despite the low expression of GIRK expression in mesocortical cells, it was shown that bath application of both GABA and baclofen silenced the firing of mesocortical dopamine neurons completely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on prior research findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "e4d37440-9f90-4bcd-8a9b-3bd5030a6747",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C99",
+      "claim": "Inhibition of NALCN channels alone is sufficient to slow down the firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that inhibition of NALCN channels alone is sufficient to slow down the firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "ed8e48f1-8295-4f5f-a03b-7821af80b0d4",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C100",
+      "claim": "Both GABA-B and D2 receptors modulate NALCN, raising the possibility that this may be a common feature to other Gi/o protein-coupled receptors across different neuronal cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our findings provide evidence that NALCN is an effector of Gi/o coupled receptors in dopamine neurons. Both GABA-B and D2 receptors modulate NALCN, raising the possibility that this may be a common feature to other Gi/o protein-coupled receptors across different neuronal cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, extrapolating from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "a8dd8f9d-fca0-4ade-a1ae-638de1a97b73",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C101",
+      "claim": "Mice were generated in which positions between exons 5 and 6 of the NALCN allele was flanked by lox-P sites (Nalcnflox).",
+      "claim_type": "EXPLICIT",
+      "source": "We generated mice in which positions between exons 5 and 6 of the NALCN allele was flanked by lox-P sites (Nalcnflox).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used to generate the knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "9acc2da5-62e9-458d-94a3-e164f1eb258d",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C102",
+      "claim": "Nalcnflox mice were bred to Slc6a3-Cre mice, resulting in offspring (Nalcnflox/flox; Slc6a3Cre) that lack expression of NALCN in dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nalcnflox mice were then bred to Slc6a3-Cre mice, resulting in offspring (Nalcnflox/flox; Slc6a3Cre) that lack expression of NALCN in dopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used to generate the conditional knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "eb1b63af-82c1-404a-9787-8e431b317f89",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C103",
+      "claim": "A recent publication reported Nalcnflox mice that were generated independently using ES cells obtained from the same source (KOMP), with exon deletion sites that are exactly the same as those reported in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent publication reported Nalcnflox mice that were generated independently using ES cells obtained from the same source (KOMP), with exon deletion sites that are exactly the same as those reported in this study (Yeh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "7677cdfd-58c9-4a55-9cce-a846015a1ce8",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C104",
+      "claim": "Cs+-based intracellular recording solution (CsMeSO3) was used to block potassium conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the contribution of NALCN to background leak currents in dopamine neurons in coronal brain slices from adult mice, we first isolated sodium leak currents using a Cs+-based intracellular recording solution (CsMeSO3) to block potassium conductances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "281823a3-545c-44d1-b7b1-161b4809166c",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C105",
+      "claim": "Tetrodotoxin (1 \u00b5M), CsCl (3 mM), and apamin (300 nM) were included in the extracellular solution to block voltage-gated sodium channels, hyperpolarization-gated (Ih) channels and small-conductance calcium-activated (SK) channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, tetrodotoxin (1 \u00b5M), CsCl (3 mM), and apamin (300 nM) were included in the extracellular solution to block voltage-gated sodium channels, hyperpolarization-gated (Ih) channels and small-conductance calcium-activated (SK) channels (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "71b2f2fe-4e88-49fd-80cb-3ff9f0c36531",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C106",
+      "claim": "There was no difference in the amplitude of NMDG-sensitive currents when recording with either Cs+-based or K+-based internal solutions (NMDG-sensitive current at \u221270 mV; Cs+-based, 138 \u00b1 18 pA, n = 22; K+-based, 107.9 \u00b1 17 pA, n = 8; p = 0.36).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no difference in the amplitude of NMDG-sensitive currents when recording with either Cs+-based or K+-based internal solutions (NMDG-sensitive current at \u221270 mV; Cs+-based, 138 \u00b1 18 pA, n = 22; K+-based, 107.9 \u00b1 17 pA, n = 8; p = 0.36).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing different recording conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "c565266a-a836-488e-ba28-a9826eb05249",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C107",
+      "claim": "GIRK channels are not Cs+ permeable.",
+      "claim_type": "EXPLICIT",
+      "source": "GIRK channels are not Cs+ permeable, suggesting that our Cs+-based internal solution is sufficient to block most of GIRK currents (Watts et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "b508b997-a7ec-4132-a14b-0f9d816f0776",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C108",
+      "claim": "100 \u00b5M BaCl2 was added to the bath solution to ensure that GIRK channels were blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that GIRK channels were blocked in this set of experiments, we added 100 \u00b5M BaCl2 to the bath solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "f379dad4-6681-40cf-9548-b8689e2b210b",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C109",
+      "claim": "Subsequent NMDG substitution did not further reduce holding current after dopamine application (dopamine, \u2212133.9 \u00b1 14.68 pA;NMDG, \u2212116.2 \u00b1 13.31 pA, n = 14; p = 0.43).",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent NMDG substitution did not further reduce holding current (dopamine, \u2212133.9 \u00b1 14.68 pA;NMDG, \u2212116.2 \u00b1 13.31 pA, n = 14; p = 0.43, RM one-way ANOVA followed by Tukey test) (Figure 2A and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "6b6b7caf-fc0f-4d65-9d63-37d0373cbe87",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C110",
+      "claim": "Cells that were recorded using GDP-\u03b2S internal solution showed a slow but steady increase in the inward leak current (1\u20132 min after breakthrough, \u221267.69 \u00b1 12.75 pA;~15 min following breakthrough, \u2212125.9 \u00b1 20.73 pA; n = 8; p = 0.0027).",
+      "claim_type": "EXPLICIT",
+      "source": "Upon breakthrough, cells that were recorded using GDP-\u03b2S internal solution showed a slow but steady increase in the inward leak current (1\u20132 min after breakthrough, \u221267.69 \u00b1 12.75 pA;~15 min following breakthrough, \u2212125.9 \u00b1 20.73 pA; n = 8; p = 0.0027, RM one-way ANOVA followed by Tukey test) (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "d96ce4d2-b5d6-4e8f-a24a-4976e2058fbe",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C111",
+      "claim": "The enhancement in leak current with GDP-\u03b2S is likely due to GDP-\u03b2S dependent disruption in signaling from calcium sensing (CaSR) receptors, which produce an incomplete but constitutive inhibition of NALCN-mediated leak currents in the presence of extracellular calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhancement in leak current is likely due to GDP-\u03b2S dependent disruption in signaling from calcium sensing (CaSR) receptors, which produce an incomplete but constitutive inhibition of NALCN-mediated leak currents in the presence of extracellular calcium (Lu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "4d9adfab-a97d-4390-8216-f9dcffd747bf",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C112",
+      "claim": "The isolated sodium leak current holding current at \u221270 mV in wild-type mice was \u221255.74 \u00b1 4.29 pA (n = 39).",
+      "claim_type": "EXPLICIT",
+      "source": "The small amplitude of the sodium leak currents recorded in 2 mM external calcium raises the question of whether inhibition of NALCN by dopamine would have a significant physiological effect on firing in the absence of GIRK activation (holding current at \u221270 mV; wild-type, \u221255.74 \u00b1 4.29 pA, n = 39; NALCN KO, \u221219.69 \u00b1 3.72 pA, n = 20; p < 0.0001, Mann-Whitney U-test) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "baae67f4-f85f-4b8e-99f8-0439479fcfd1",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C113",
+      "claim": "The isolated sodium leak current holding current at \u221270 mV in NALCN KO mice was \u221219.69 \u00b1 3.72 pA (n = 20).",
+      "claim_type": "EXPLICIT",
+      "source": "The small amplitude of the sodium leak currents recorded in 2 mM external calcium raises the question of whether inhibition of NALCN by dopamine would have a significant physiological effect on firing in the absence of GIRK activation (holding current at \u221270 mV; wild-type, \u221255.74 \u00b1 4.29 pA, n = 39; NALCN KO, \u221219.69 \u00b1 3.72 pA, n = 20; p < 0.0001, Mann-Whitney U-test) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "ee64cf4f-28d6-4ece-b683-11386b51ee39",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C114",
+      "claim": "The difference in holding current at \u221270 mV between wild-type and NALCN KO mice was statistically significant (p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The small amplitude of the sodium leak currents recorded in 2 mM external calcium raises the question of whether inhibition of NALCN by dopamine would have a significant physiological effect on firing in the absence of GIRK activation (holding current at \u221270 mV; wild-type, \u221255.74 \u00b1 4.29 pA, n = 39; NALCN KO, \u221219.69 \u00b1 3.72 pA, n = 20; p < 0.0001, Mann-Whitney U-test) (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "7a2c2e88-b712-43e0-9157-a0fff777beda",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C115",
+      "claim": "Under control conditions, puff application of dopamine (300 \u00b5M, 1 s) resulted in a long duration pause in firing (47.88 \u00b1 10.28 s, n = 8).",
+      "claim_type": "EXPLICIT",
+      "source": "Under control conditions, we found that puff application of dopamine (300 \u00b5M, 1 s) resulted in a long duration pause in firing (47.88 \u00b1 10.28 s, n = 8) as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "a3e10553-953f-4c9f-8e0d-dde9855c4830",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C116",
+      "claim": "Puff application of dopamine using a high concentration (0.5 mM) of extracellular BaCl2 alone resulted in a 73.81 \u00b1 10.47% reduction in the firing (n = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained similar results using a high concentration (0.5 mM) of extracellular BaCl2 alone which was shown to completely block GIRK channels (Sodickson and Bean, 1996). Under these conditions, puff application of dopamine resulted in a 73.81 \u00b1 10.47% reduction in the firing (n = 5) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "90c1b1b3-7707-407e-b3e3-392d71c525e8",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "claim_id": "C117",
+      "claim": "0.5 mM extracellular BaCl2 alone completely blocks GIRK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained similar results using a high concentration (0.5 mM) of extracellular BaCl2 alone which was shown to completely block GIRK channels (Sodickson and Bean, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "11def823-b68d-4d12-a0db-5069501bd02f",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NALCN channels mediate calcium-sensitive sodium leak currents in dopaminergic neurons. In wild-type neurons, lowering extracellular calcium from 2 mM to 0.1 mM dramatically increased sodium leak current (from \u221250.69 \u00b1 5.35 pA to \u2212192 \u00b1 20.07 pA), which was blocked by NMDG substitution. In NALCN conditional knockout mice, this calcium-dependent potentiation was abolished, demonstrating that NALCN channels are responsible for the calcium-sensitive sodium leak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 provide converging evidence using ion substitution experiments and genetic knockout controls. The dramatic potentiation in low calcium (C31), complete block by NMDG (C32), and absence of these effects in NALCN knockout mice (C33-C34) strongly support that NALCN mediates calcium-sensitive sodium leak currents. The experimental design includes appropriate controls (Cs+-based vs K+-based internal solutions, C106) and statistical significance (p < 0.0001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "0fa8164f-9264-46cb-8657-48a15d84969d",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "D2 receptor activation inhibits NALCN-mediated sodium leak currents through a G protein-dependent mechanism. Dopamine application reduced sodium leak current by 88.08 \u00b1 8.36% in wild-type neurons (IC50 = 725 nM), but this inhibition was completely abolished in NALCN knockout mice. The effect was blocked by intracellular GDP-\u03b2S, confirming G protein dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C36-C38 demonstrate robust dopamine inhibition of sodium leak that is NALCN-dependent using knockout controls. The concentration-response curve (C39) provides quantitative characterization. GDP-\u03b2S experiments (C3, C43-C46) establish G protein dependence. GIRK channels were appropriately blocked with BaCl2 (C108) to isolate NALCN effects. The convergence of pharmacological, genetic, and biochemical evidence strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "dbc0ee82-263f-462d-97e9-7bd450ea8ac2",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "D2 receptor inhibition of NALCN does not require \u03b2-arrestin2. Dopamine inhibition of sodium leak current was preserved in \u03b2-arrestin2 knockout mice with no significant difference in amplitude compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 use \u03b2-arrestin2 knockout mice to test G protein-independent signaling. The preservation of dopamine effects in knockouts (p = 0.012) with similar amplitude to wild-type (p = 0.866) provides clear evidence against \u03b2-arrestin involvement. This complements the GDP-\u03b2S experiments supporting G protein-dependent signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "NALCN is critical for spontaneous pacemaking in dopaminergic neurons, and D2 receptor inhibition of NALCN slows firing independent of GIRK channels. In NALCN knockout mice, 70% of neurons were silent compared to 9% in wild-type. Dopamine application in the presence of GIRK blockers significantly reduced firing in wild-type (from 2.56 \u00b1 0.18 to 0.89 \u00b1 0.26 Hz) but had no effect in NALCN knockouts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 demonstrate the critical role of NALCN in pacemaking using genetic knockout with dramatic phenotype (91% vs 30% spontaneously active). Claims C52-C56 show functional consequences of D2-NALCN modulation using pharmacological GIRK blockade in both cell-attached and whole-cell recordings. The convergence of genetic and pharmacological approaches with appropriate controls strongly supports both the role of NALCN in pacemaking and its modulation by D2 receptors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "64e9c5fd-5ea2-4317-a449-8164cfa04946",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GABA-B receptor activation inhibits NALCN-mediated sodium leak currents. Baclofen (10 \u00b5M) reduced sodium leak current from \u2212185 \u00b1 16.06 pA to \u2212106 \u00b1 13.89 pA in wild-type neurons, with nearly complete inhibition of the sodium leak. This effect was abolished in NALCN knockout mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 demonstrate GABA-B receptor inhibition of NALCN using similar experimental logic as the D2 receptor experiments. The baclofen-sensitive current was similar in amplitude to dopamine-sensitive current (C58), and NMDG substitution after baclofen produced no further block (C59), indicating near-complete inhibition. Genetic knockout controls (C61) confirm NALCN dependence. The parallel findings with D2 receptors strengthen both results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "d3ed2843-6b17-4771-9d9e-b10b118150d5",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GABA-B receptor inhibition of NALCN slows firing independent of GIRK channels. In the presence of GIRK blockers, baclofen significantly reduced firing in wild-type neurons (from 3.67 \u00b1 0.29 to 0.76 \u00b1 0.37 Hz) but had no effect in NALCN knockout mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 demonstrate functional consequences of GABA-B-NALCN modulation using the same experimental approach as the D2 receptor experiments (GIRK blockade plus genetic knockout). The parallel results with D2 receptors strengthen the conclusion that NALCN is a common effector of Gi/o-coupled receptors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "b694a823-b4fd-477f-86a3-dda82708c600",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Baclofen inhibits NALCN with higher potency (IC50 = 267 nM) than it activates GIRK channels (EC50 = 9.2-14.8 \u00b5M). At 300 nM baclofen, a concentration below the threshold for GIRK activation, firing frequency was reduced by 44.79%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 provide concentration-response data showing IC50 for NALCN inhibition is >30-fold lower than published EC50 values for GIRK activation (C65). Claim C69 demonstrates functional effects at 300 nM baclofen, near the IC50 for NALCN but well below GIRK activation threshold. This differential sensitivity has important physiological implications and is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "c790744a-0df8-4737-b9f3-a3229d8c0b2b",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NALCN is a core effector of Gi/o protein-coupled receptors that functions in concert with GIRK channels to inhibit neuronal firing in dopaminergic neurons. Both D2 and GABA-B receptors modulate NALCN, suggesting this may be a common feature of Gi/o-coupled receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative conclusion (C8, C72, C75) is well-supported by the convergence of results showing both D2 and GABA-B receptors inhibit NALCN through G protein-dependent mechanisms and modulate firing independent of GIRK. The extrapolation to other Gi/o-coupled receptors (C100) is appropriately presented as speculative but is a reasonable hypothesis based on the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "081a15ac-9461-4a61-bf98-c12f78891e1a",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NALCN conditional knockout mice were generated by flanking exons 5-6 with loxP sites and crossing with Slc6a3-Cre mice to delete NALCN specifically in dopaminergic neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C103 describe the generation of the conditional knockout mouse model. The methodology is standard and appropriate. Claim C103 notes that an independent group generated identical mice from the same ES cell source, providing validation of the approach. This is a critical methodological foundation for the genetic experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "619e5692-15ed-4de6-88e0-f772f3c0a971",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate about potential mechanisms including heterogeneity in NALCN expression across dopamine neuron subpopulations, spatial organization of receptors and effectors into microdomains, and differential recruitment of NALCN vs GIRK based on receptor location and agonist concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C80, C83, C88-C90, C92, C94) are explicitly speculative, proposing potential mechanisms and future directions. While the speculations are reasonable and grounded in the data, they are not directly tested in this study. The authors appropriately present these as hypotheses rather than conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "bb716500-9e4d-467b-af1e-a6edb6bd9300",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors note that prior work found smaller sodium leak currents in SNc compared to VTA neurons, and suggest differences may exist in GABA-B signaling between SNc and VTA dopamine neurons based on comparison with prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C79 cites prior work showing regional differences, while C86 infers differences in GABA-B signaling based on comparison with prior VTA studies. However, the current study focuses on SNc neurons and does not directly compare SNc and VTA. The inference about regional differences is reasonable but not directly tested here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "97372a36-a844-469e-ba73-5456da2d8d0d",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "GDP-\u03b2S in the internal solution caused a slow increase in leak current over 15 minutes, likely due to disruption of constitutive CaSR-mediated inhibition of NALCN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C110 reports the observation of increasing leak current with GDP-\u03b2S (p = 0.0027). Claim C111 provides a mechanistic interpretation based on prior work showing CaSR constitutively inhibits NALCN in a G protein-dependent manner. The interpretation is reasonable and supported by citation, though the CaSR mechanism is not directly tested here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    },
+    {
+      "id": "96ca58cd-530f-4124-b405-fbebef969204",
+      "content_id": "2ba75eb9-8ac5-4c6c-9243-5a444e0566a1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "GIRK channels are not Cs+ permeable, and 0.5 mM BaCl2 completely blocks GIRK channels, as established in prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C107, C117) cite established prior work to justify the use of Cs+-based internal solutions and barium to block GIRK channels. The citations are appropriate and these are well-established properties used to isolate NALCN currents in the experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:39:31.463409Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "414d2aa6-bebb-479b-b03f-5382b84d190a",
+      "result_id": "11def823-b68d-4d12-a0db-5069501bd02f"
+    },
+    {
+      "claim_id": "5f8f6241-a6cf-4938-994c-2d9020ff7aa2",
+      "result_id": "11def823-b68d-4d12-a0db-5069501bd02f"
+    },
+    {
+      "claim_id": "0a5f8971-2f5c-439b-b02e-874c854ffc29",
+      "result_id": "11def823-b68d-4d12-a0db-5069501bd02f"
+    },
+    {
+      "claim_id": "5edaa1be-ff51-4a93-baca-6d480b3ef4d5",
+      "result_id": "11def823-b68d-4d12-a0db-5069501bd02f"
+    },
+    {
+      "claim_id": "2fd927f7-f1b4-43f9-b4b6-4547420e162e",
+      "result_id": "11def823-b68d-4d12-a0db-5069501bd02f"
+    },
+    {
+      "claim_id": "05345bb2-6f27-477c-86a7-17f9c5817a67",
+      "result_id": "11def823-b68d-4d12-a0db-5069501bd02f"
+    },
+    {
+      "claim_id": "7677cdfd-58c9-4a55-9cce-a846015a1ce8",
+      "result_id": "11def823-b68d-4d12-a0db-5069501bd02f"
+    },
+    {
+      "claim_id": "281823a3-545c-44d1-b7b1-161b4809166c",
+      "result_id": "11def823-b68d-4d12-a0db-5069501bd02f"
+    },
+    {
+      "claim_id": "71b2f2fe-4e88-49fd-80cb-3ff9f0c36531",
+      "result_id": "11def823-b68d-4d12-a0db-5069501bd02f"
+    },
+    {
+      "claim_id": "49d2963e-465b-4369-9dc7-46eed3ea873f",
+      "result_id": "0fa8164f-9264-46cb-8657-48a15d84969d"
+    },
+    {
+      "claim_id": "94dcf577-9828-4192-b466-3db8d4bb3786",
+      "result_id": "0fa8164f-9264-46cb-8657-48a15d84969d"
+    },
+    {
+      "claim_id": "3ca6de2c-c69b-4e78-b5cd-28a6f07c8a34",
+      "result_id": "0fa8164f-9264-46cb-8657-48a15d84969d"
+    },
+    {
+      "claim_id": "d68469dd-f339-4d51-8dea-1f15affd3c92",
+      "result_id": "0fa8164f-9264-46cb-8657-48a15d84969d"
+    },
+    {
+      "claim_id": "1be32caf-03e7-4475-8cea-eb2ca5281fb9",
+      "result_id": "0fa8164f-9264-46cb-8657-48a15d84969d"
+    },
+    {
+      "claim_id": "1b8c6227-1039-4b8d-b60f-efd1b208e2f2",
+      "result_id": "0fa8164f-9264-46cb-8657-48a15d84969d"
+    },
+    {
+      "claim_id": "f7dae6be-7429-48f9-b1b5-8ad4dd080eaa",
+      "result_id": "0fa8164f-9264-46cb-8657-48a15d84969d"
+    },
+    {
+      "claim_id": "b508b997-a7ec-4132-a14b-0f9d816f0776",
+      "result_id": "0fa8164f-9264-46cb-8657-48a15d84969d"
+    },
+    {
+      "claim_id": "f379dad4-6681-40cf-9548-b8689e2b210b",
+      "result_id": "0fa8164f-9264-46cb-8657-48a15d84969d"
+    },
+    {
+      "claim_id": "c77b03fb-9556-49fd-b679-1504569eb8cf",
+      "result_id": "dbc0ee82-263f-462d-97e9-7bd450ea8ac2"
+    },
+    {
+      "claim_id": "91dd47fe-fca1-40a8-9fab-c58a0413350f",
+      "result_id": "dbc0ee82-263f-462d-97e9-7bd450ea8ac2"
+    },
+    {
+      "claim_id": "4fb90d35-f210-4dcb-9733-ff32b08c597d",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "81d57219-b574-43d2-890c-815e7c7eed6e",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "25d585d9-d73a-4a23-9f64-263a16582f15",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "b8f4ad41-ecd3-4a4c-914a-82867be9dab2",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "4ac2f007-56b4-4799-b6b2-938f5b3ed8d2",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "a6ef4f5c-e7ed-48e6-beef-ca9ad0e0de10",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "87fae462-e4bb-4f19-94e8-e3330d02521f",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "64edea4a-4abc-4dfe-93ba-61ba1ee888d5",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "9c9cfff6-943c-48ba-aad8-b1b5ae012a68",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "1de02eac-3dd5-410a-b534-29491372ec71",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "0d31c773-b08b-4c0e-adb5-03d41c197e3c",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "4d9adfab-a97d-4390-8216-f9dcffd747bf",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "baae67f4-f85f-4b8e-99f8-0439479fcfd1",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "ee64cf4f-28d6-4ece-b683-11386b51ee39",
+      "result_id": "6a2a83bd-ffc8-4f2c-bc45-75b3ba4c9d50"
+    },
+    {
+      "claim_id": "8f30be9e-8c72-4cbe-993b-b2199f808490",
+      "result_id": "64e9c5fd-5ea2-4317-a449-8164cfa04946"
+    },
+    {
+      "claim_id": "c9e9a137-f529-4e4f-97ad-efed3af110f0",
+      "result_id": "64e9c5fd-5ea2-4317-a449-8164cfa04946"
+    },
+    {
+      "claim_id": "b47015ca-3ab4-449b-b70a-7b9ef6c46baa",
+      "result_id": "64e9c5fd-5ea2-4317-a449-8164cfa04946"
+    },
+    {
+      "claim_id": "0d1c80a1-2ea9-4b0c-b3a0-a429825701de",
+      "result_id": "64e9c5fd-5ea2-4317-a449-8164cfa04946"
+    },
+    {
+      "claim_id": "d9ec3957-a44c-4f13-9695-4072b3d97608",
+      "result_id": "64e9c5fd-5ea2-4317-a449-8164cfa04946"
+    },
+    {
+      "claim_id": "36d4a4fa-01e0-4eba-b0ed-5a9676d08aed",
+      "result_id": "64e9c5fd-5ea2-4317-a449-8164cfa04946"
+    },
+    {
+      "claim_id": "c049d001-7222-4709-b12f-f214152e3a87",
+      "result_id": "64e9c5fd-5ea2-4317-a449-8164cfa04946"
+    },
+    {
+      "claim_id": "10607f2c-3e61-4ea3-863e-b7de976a62f4",
+      "result_id": "d3ed2843-6b17-4771-9d9e-b10b118150d5"
+    },
+    {
+      "claim_id": "f95087ec-2fdd-4fc9-b506-bd344aa0abf4",
+      "result_id": "d3ed2843-6b17-4771-9d9e-b10b118150d5"
+    },
+    {
+      "claim_id": "2440054a-a10f-4e8d-a85b-869958e2126f",
+      "result_id": "b694a823-b4fd-477f-86a3-dda82708c600"
+    },
+    {
+      "claim_id": "df6c7ca2-09cd-4ecd-ad75-7374462df29f",
+      "result_id": "b694a823-b4fd-477f-86a3-dda82708c600"
+    },
+    {
+      "claim_id": "c9c907dd-d72d-47a5-b588-f94cf866963c",
+      "result_id": "b694a823-b4fd-477f-86a3-dda82708c600"
+    },
+    {
+      "claim_id": "a2a1d444-60e4-4300-8e55-d93bcd56c579",
+      "result_id": "b694a823-b4fd-477f-86a3-dda82708c600"
+    },
+    {
+      "claim_id": "f8f57fed-7076-469b-90d4-de3411bc1951",
+      "result_id": "b694a823-b4fd-477f-86a3-dda82708c600"
+    },
+    {
+      "claim_id": "55841088-47a4-42dc-a91c-02918831ff92",
+      "result_id": "b694a823-b4fd-477f-86a3-dda82708c600"
+    },
+    {
+      "claim_id": "57c2b83f-87a4-4b6d-8a07-612f024104e8",
+      "result_id": "b694a823-b4fd-477f-86a3-dda82708c600"
+    },
+    {
+      "claim_id": "d4d41b7c-f675-492a-9a07-8fa843bb5711",
+      "result_id": "c790744a-0df8-4737-b9f3-a3229d8c0b2b"
+    },
+    {
+      "claim_id": "00dbf7dc-def1-4ced-b965-bf4927a5d400",
+      "result_id": "c790744a-0df8-4737-b9f3-a3229d8c0b2b"
+    },
+    {
+      "claim_id": "0bb42fd5-c1f5-4213-9678-8168491ad0ae",
+      "result_id": "c790744a-0df8-4737-b9f3-a3229d8c0b2b"
+    },
+    {
+      "claim_id": "ed8e48f1-8295-4f5f-a03b-7821af80b0d4",
+      "result_id": "c790744a-0df8-4737-b9f3-a3229d8c0b2b"
+    },
+    {
+      "claim_id": "a8dd8f9d-fca0-4ade-a1ae-638de1a97b73",
+      "result_id": "081a15ac-9461-4a61-bf98-c12f78891e1a"
+    },
+    {
+      "claim_id": "9acc2da5-62e9-458d-94a3-e164f1eb258d",
+      "result_id": "081a15ac-9461-4a61-bf98-c12f78891e1a"
+    },
+    {
+      "claim_id": "eb1b63af-82c1-404a-9787-8e431b317f89",
+      "result_id": "081a15ac-9461-4a61-bf98-c12f78891e1a"
+    },
+    {
+      "claim_id": "2e554486-b7f4-43e3-82a6-16ebbd2f0446",
+      "result_id": "619e5692-15ed-4de6-88e0-f772f3c0a971"
+    },
+    {
+      "claim_id": "19796f25-8c53-4e27-9446-6e01e24ae89b",
+      "result_id": "619e5692-15ed-4de6-88e0-f772f3c0a971"
+    },
+    {
+      "claim_id": "5854e9a9-49ae-4dc7-831f-b0b4f684a7a9",
+      "result_id": "619e5692-15ed-4de6-88e0-f772f3c0a971"
+    },
+    {
+      "claim_id": "7db3d334-def2-4a6a-aba6-65ca1a300ba5",
+      "result_id": "619e5692-15ed-4de6-88e0-f772f3c0a971"
+    },
+    {
+      "claim_id": "1b8b2f46-77d4-4be8-bab7-f7700299694f",
+      "result_id": "619e5692-15ed-4de6-88e0-f772f3c0a971"
+    },
+    {
+      "claim_id": "f5cd118d-b1e7-4bc2-a60e-f8f1bf76e6dc",
+      "result_id": "619e5692-15ed-4de6-88e0-f772f3c0a971"
+    },
+    {
+      "claim_id": "54d1285f-cea8-4577-96d0-1ffd569732cc",
+      "result_id": "619e5692-15ed-4de6-88e0-f772f3c0a971"
+    },
+    {
+      "claim_id": "2837aa87-241b-4a44-884b-8225fffb8b51",
+      "result_id": "bb716500-9e4d-467b-af1e-a6edb6bd9300"
+    },
+    {
+      "claim_id": "1de6787f-8b0e-404f-924f-418a38acc8b7",
+      "result_id": "bb716500-9e4d-467b-af1e-a6edb6bd9300"
+    },
+    {
+      "claim_id": "6b6b7caf-fc0f-4d65-9d63-37d0373cbe87",
+      "result_id": "97372a36-a844-469e-ba73-5456da2d8d0d"
+    },
+    {
+      "claim_id": "d96ce4d2-b5d6-4e8f-a24a-4976e2058fbe",
+      "result_id": "97372a36-a844-469e-ba73-5456da2d8d0d"
+    },
+    {
+      "claim_id": "c565266a-a836-488e-ba28-a9826eb05249",
+      "result_id": "96ca58cd-530f-4124-b405-fbebef969204"
+    },
+    {
+      "claim_id": "90c1b1b3-7707-407e-b3e3-392d71c525e8",
+      "result_id": "96ca58cd-530f-4124-b405-fbebef969204"
+    }
+  ],
+  "comparisons": []
+}

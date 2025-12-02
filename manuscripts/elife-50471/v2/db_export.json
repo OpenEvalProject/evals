@@ -1,0 +1,1942 @@
+{
+  "submission": {
+    "id": "b650e359-f503-4060-931a-4811ba517218",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:58:44.251736Z",
+    "updated_at": "2025-12-02T12:58:44.251736Z"
+  },
+  "content": [
+    {
+      "id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "submission_id": "b650e359-f503-4060-931a-4811ba517218",
+      "content_type": "manuscript",
+      "content_text": "# Extraction of active RhoGTPases by RhoGDI regulates spatiotemporal patterning of RhoGTPases\n\n## Authors\n\n- Adriana E Golding<sup>1</sup> ([ORCID: 0000-0003-4305-0764](https://orcid.org/0000-0003-4305-0764))\n- Ilaria Visco<sup>2</sup> ([ORCID: 0000-0003-3753-6434](https://orcid.org/0000-0003-3753-6434))\n- Peter Bieling<sup>2</sup> ([ORCID: 0000-0002-7458-4358](https://orcid.org/0000-0002-7458-4358)) \u2020\n- William M Bement<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Graduate Program in Cell and Molecular Biology University of Wisconsin Madison United States\n2. Department of Systemic Cell Biology Max Planck Institute of Molecular Physiology Dortmund Germany\n3. Laboratory of Cell and Molecular Biology University of Wisconsin-Madison Madison United States\n4. Department of Integrative Biology University of Wisconsin-Madison Madison United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe RhoGTPases are characterized as membrane-associated molecular switches that cycle between active, GTP-bound and inactive, GDP-bound states. However, 90\u201395% of RhoGTPases are maintained in a soluble form by RhoGDI, which is generally viewed as a passive shuttle for inactive RhoGTPases. Our current understanding of RhoGTPase:RhoGDI dynamics has been limited by two experimental challenges: direct visualization of the RhoGTPases in vivo and reconstitution of the cycle in vitro. We developed methods to directly image vertebrate RhoGTPases in vivo or on lipid bilayers in vitro. Using these methods, we identified pools of active and inactive RhoGTPase associated with the membrane, found that RhoGDI can extract both inactive and active RhoGTPases, and found that extraction of active RhoGTPase contributes to their spatial regulation around cell wounds. These results indicate that RhoGDI directly contributes to the spatiotemporal patterning of RhoGTPases by removing active RhoGTPases from the plasma membrane.\n\n## Introduction\n\nThe Rho family GTPases, including Rho, Rac and Cdc42, are essential signaling proteins that mediate morphological changes in cells by directing local cytoskeletal rearrangements (Bishop and Hall, 2000; Kimura et al., 1996). These rearrangements are generally initiated at and confined to specific subcellular regions. For example, a narrow, concentrated zone of Rho activity directs the formation of a ring of actin filaments and myosin-2 at the equatorial cortex that drives cytokinesis (Bement et al., 2005; Yonemura et al., 2004; Y\u00fcce et al., 2005). Similarly, Rho, Rac and Cdc42 are activated near the leading edge of crawling cells in patterns that correspond to local cycles of protrusion, adhesion and retraction (Machacek et al., 2009; Martin et al., 2016). Because tight spatiotemporal regulation of the GTPases is a fundamental feature of these cellular processes, considerable effort has been invested in studying GTPase regulation.\n\nThe RhoGTPases are classically characterized as cycling between membrane-associated, active states and soluble, inactive states as a result of interactions with three classes of regulatory proteins: guanine nucleotide exchange factors (GEFs), which activate GTPases by promoting exchange of GDP for GTP (Rossman et al., 2005); GTPase activating proteins (GAPs), which inactivate GTPases by promoting GTP hydrolysis (Moon and Zheng, 2003); and guanine nucleotide dissociation inhibitors (GDIs), which solubilize GTPases to generate a large reservoir of heterodimeric GTPase:GDI complexes in the cytoplasm (Garcia-Mata et al., 2011). In the canonical model of GTPase regulation, GTPase cycling is thought to proceed as follows: a GTPase is activated by a GEF at the plasma membrane following its release from GDI, is subsequently inactivated by a GAP, and is then returned to the soluble pool by GDI. Thus, the lifetime of GTPase activity at the plasma membrane is generally thought to be controlled entirely by GEFs and GAPs, with GDIs essentially serving as passive shuttles that interact exclusively with inactive GTPases.\n\nThe notion that RhoGDIs work as passive shuttles rests largely on two findings. First, when GTPase:GDI complexes are purified from cell lysates, the great majority of GTPase within the complex is in the inactive, GDP-bound form (Abo et al., 1994), as expected if GDI solubilizes GTPases after inactivation by a GAP. Second, binding of GTPases by GDI strongly suppresses GTP hydrolysis (Hart et al., 1992), indicating that hydrolysis must precede extraction from the membrane. However, work by several labs has shown that GDIs bind both inactive and active GTPases with relatively high affinity in vitro (Hancock and Hall, 1993; Hart et al., 1992; Nomanbhoy and Cerione, 1996; Tnimov et al., 2012), leading to the suggestion that GDIs may interact with active as well as inactive GTPases in vivo. As such, GDIs might have the potential to exert a more direct role in the regulation of GTPase activity than currently appreciated.\n\nIn contrast to GEFs and GAPs, the biochemical activities of GDIs are not well understood. Presently, no consensus exists as to (1) the mechanism by which GDIs extract GTPases from membranes (Johnson et al., 2009; Zhang et al., 2014), (2) whether GDIs interact with GTPases in a nucleotide-specific manner (Nomanbhoy and Cerione, 1996; Tnimov et al., 2012), or (3) how GDI activity is coordinated with GEFs or GAPs (Garcia-Mata et al., 2011). This uncertainty stems in part from experimental limitations in studying GTPase:GDI dynamics. First, fusion with fluorescent proteins at the amino terminus can impair GTPase localization (Yonemura et al., 2004; Y\u00fcce et al., 2005) and function (Watson et al., 2014; Freisinger et al., 2013; Howell et al., 2012; Bendez\u00fa et al., 2015; Lee et al., 2015; Coll et al., 2007) while fusion with the carboxyl-terminus prevents prenylation (Howell et al., 2012). In the absence of direct visualization, GTPase dynamics had to be inferred from activity probes. Second, with a few important exceptions (Johnson et al., 2009; Nomanbhoy et al., 1999), in vitro studies of GTPase:GDI dynamics have utilized unprenylated GTPases, omitted membranes, or both. Additionally, nearly all of these reconstitution experiments focused on the effect of GDI on membrane-associated or soluble GTPases at thermodynamic equilibrium (Zhang et al., 2014). Thus, we do not currently understand how GDI affects the transitions between membrane and soluble GTPase states kinetically. This is especially true under conditions which mimic the cellular environment, which is far from equilibrium due to the constant dissipation of energy.\n\nTo overcome these limitations, we developed two distinct methods to directly visualize vertebrate RhoGTPases in vivo and on supported lipid bilayers in vitro. Using these tools, we identify co-existing pools of active and inactive GTPases associated with the plasma membrane and provide additional evidence that GDI can extract both inactive and active GTPases in vitro, as suggested by previous steady-state affinity measurements (Hancock and Hall, 1993; Leonard et al., 1992; Nomanbhoy and Cerione, 1996; Tnimov et al., 2012). Finally, we show that the extraction of active GTPase also occurs in vivo and that this contributes to the spatial regulation of GTPase activity. Collectively, these results indicate that GDI itself can indeed directly mediate the spatiotemporal regulation of GTPase activity.\n\n## Results\n\n### Visualization of RhoGTPases around single-cell wounds\n\nFusion of fluorescent proteins with the carboxy-terminus of RhoGTPases prevents prenylation, while fusion with the amino-terminus can impair their localization and function. This is likely due to occlusion of the switch I/II regions of the GTPase, which is the binding interface for all of its protein:protein interactions (Dvorsky and Ahmadian, 2004). Regardless of the explanation, it has been demonstrated that GFP- and YFP-Rho fail to concentrate at the cell equator during cytokinesis in mammalian cells (Yonemura et al., 2004; Y\u00fcce et al., 2005). Further, in gene replacement studies in yeast, amino-terminally tagged Cdc42 fails to localize properly, yields temperature sensitivity and/or aberrant morphology (Bendez\u00fa et al., 2015; Coll et al., 2007; Freisinger et al., 2013; Howell et al., 2012; Lee et al., 2015; Watson et al., 2014). We have also found that mCh-Rho, Rac and Cdc42 are not properly recruited to wounds in Xenopus laevis oocytes. Specifically, the zones of recruitment defined by amino-terminally tagged GTPases are much less focused and much less intense than those obtained with either the activity reporters or the internally-tagged GTPases (Figure 1\u2014figure supplement 1; see below for functional analysis).\n\nTo overcome this problem, we first adapted an approach described by Bendez\u00fa et al. (2015) for labeling of yeast Cdc42. We inserted GFP into a solvent-exposed external loop of the X. laevis GTPases (see Methods). To test the internally-tagged (IT) GTPases in vivo, we exploited the cell wound repair model in X. laevis oocytes where wounding elicits a robust accumulation of active Rho and Cdc42 in discrete, concentric zones at the cortex as previously indicated by GTPase activity reporters (Figure 1A; Benink and Bement, 2005). It is important to note that (1) IT-GTPases were co-expressed with wild-type (WT) GDI to avoid disrupting the GTPase:GDI stoichiometric ratio, thereby preventing GTPase aggregation (Boulter et al., 2010), and (2) IT-GTPases were expressed at the minimal level necessary to detect signal around the wound (36% above endogenous Rho, based on proteomic data from W\u00fchr et al., 2014) to avoid potential overexpression phenotypes (see Materials\u00a0and\u00a0methods; Figure 1\u2014figure supplement 2). Both IT-Rho and IT-Cdc42 were recruited to concentric rings around the wound (Figure 1B,C). Comparison of IT-Rho to a Rho activity reporter (mRFP-2xrGBD; Davenport et al., 2016) revealed that IT-Rho spatially overlapped with the Rho activity zone. Comparison of IT-Cdc42 to a Cdc42 activity reporter (mRFP-wGBD; Benink and Bement, 2005) revealed that IT-Cdc42 localized throughout the active Cdc42 zone, as well as extended slightly beyond it towards the wound center (see also below). We also tested the behavior of IT-Rac and found that it concentrated around wounds in the same region as IT-Cdc42, as expected from previous experiments (Figure 1\u2014figure supplement 3; Abreu-Blanco et al., 2014; Benink and Bement, 2001).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left: image of active Cdc42 (magenta) and active Rho (green) around single-cell wound in Xenopus laevis oocyte; right: schematic diagram indicating zone regions; (B) Wound in oocyte microinjected with rGBD (active Rho, magenta) and IT-Rho (green); (B\u2019) Line scan of normalized fluorescence intensity from (B); (C) As in B but with wGBD (active Cdc42, magenta) and IT-Cdc42 (green); (D,D') As in B but with Cy3-Rho (magenta) and rGBD (green); (E,E') As in B but with Cy3-Cdc42 (magenta) and wGBD (green); (F,F') As in B but with Cy3-Rho (magenta) and IT-Rho (green); (G,G') As in B but with Cy3-Cdc42 (magenta) and IT-Cdc42 (green) and line scan. Scale bar 10 \u03bcm, time min:sec.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Oocytes injected with (A) mCh-Cdc42 (magenta) and wGBD (green), (B) mCh-Rho (magenta) and rGBD (green) or C) mCh-Rac (magenta) and wGBD (green) with A\u2019-C\u2019) Corresponding line scans. Scale bar 10 \u03bcm, time min:sec.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Western blot stained with \u03b1GFP antibody to determine expression of Rho internally-tagged (IT) with GFP in X. laevis oocytes; lanes 1,2: whole cell lysate (WCL) of 1 X. laevis oocyte, lanes 3,4: WCL of 1 oocyte expressing IT-Rho, lanes 5,6: WCL of 2 oocytes expressing IT-Rho; lanes 8\u201312: purified GFP-UtrCH 261, used to generate a standard curve.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Oocyte injected with wGBD (magenta) and IT-Rac (green); (A\u2019) Corresponding line scan. Scale bar 10 \u03bcm, time min:sec.\n\nAs an alternative approach, and as a means to obtain labeled RhoGTPases that could be used both in vivo and in vitro, purified recombinant Rho and Cdc42 were prenylated, coupled to Cy3 via a short N-terminal peptide by sortase-mediated ligation, and bound to GDI (see Materials\u00a0and\u00a0methods). Cy3-Rho and Cy3-Cdc42, bound to GDI for stabilization, were microinjected into oocytes 41% and 53% above endogenous levels, respectively. Both Cy3-Rho and Cy3-Cdc42 localized to wounds (Figure 1D,E), in a manner indistinguishable from their IT counterparts expressed in the oocyte (Figure 1F,G). As observed with IT-Rho and IT-Cdc42, Cy3-Rho completely overlapped with the zone of Rho activity while Cy3-Cdc42 localized throughout and slightly interior to the active Cdc42 zone. These results indicate that the IT- and Cy3-tagged GTPase variants faithfully mimic endogenous GTPases during cell wound repair.\n\n### Visualization of RhoGTPases in other cellular contexts\n\nTo further test the behavior of the IT- and Cy3-labeled RhoGTPases, we sought to determine if they localize to the plasma membrane in other cellular processes. This is important because these processes likely depend on different regulators from those that operate during cell wound repair. IT-Rho and Cy3-Rho localized to the cytokinetic apparatus and epithelial junctions in Xenopus embryos, consistent with previous results obtained with a Rho activity reporter (Figure 2A\u2013C; Bement et al., 2005). Similarly, IT-Cdc42 localized to exocytosing cortical granules (Figure 2D), consistent with previous results obtained with a Cdc42 activity reporter (Yu and Bement, 2007). IT-Cdc42 was also recruited to cell-cell junctions and enriched there upon wounding (Figure 2E), a behavior previously revealed using a Cdc42 activity reporter (Clark et al., 2009).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cytokinesis in X. laevis embryo microinjected with IT-Rho; IT-Rho accumulates at nascent cleavage furrow (arrowhead); (B) Cytokinesis in X. laevis embryo microinjected with Cy3-Rho; Cy3-Rho accumulates at nascent cleavage furrow (arrowhead); (C) X. laevis embryo microinjected with IT-Rho (left) and Cy3-Rho (right); both are enriched at cell-cell junctions; (D) Meiotically mature Xenopus egg microinjected with IT-Cdc42; IT-Cdc42 is recruited to exocytosing cortical granules (arrowheads) following egg activation (0:42); (E) X. laevis embryo microinjected with IT-Cdc42; IT-Cdc42 concentrates at cell-cell junctions (arrowhead; 0:00) and, following damage, is recruited to the wound and becomes enriched at junctions (arrow); (F) C3-insensitive IT-Rho rescues Rho activity in presence of C3. Control: oocyte microinjected with rGBD shows normal Rho activation and wound closure; C3: cell microinjected with rGBD fails to activate Rho in presence of C3; IT-Rho-N41V: cell microinjected with rGBD and C3-insensitive IT-Rho activates Rho normally; IT-Rho-N41V+C3: cell microinjected with rGBD and C3-insensitive IT-Rho rescues Rho activity in presence of C3. Scale bar 10 \u03bcm, time min:sec; (G) Quantification of Rho activity, corrected for background (n\u00a0=\u00a08\u201312); (H) As in G but with amino-terminally tagged mCh-Rho (n\u00a0=\u00a08\u20139). One-way ANOVA with Tukey post-test statistical analysis. *p<0.05, ***p<0.001, ****p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** C3-insensitive amino-terminally tagged mCh-Rho fails to rescue Rho activity in presence of C3. Control: oocyte microinjected with rGBD shows normal Rho activation and wound closure; C3: cell microinjected with rGBD fails to activate Rho in presence of C3; mCh-Rho-N41V: cell microinjected with rGBD and C3-insensitive mCh-Rho activates Rho, albeit it an ill-defined zone; mCh-Rho-N41V+C3: cell microinjected with rGBD and C3-insensitive mCh-Rho fails to rescue Rho activity in presence of C3. Scale bar 10 \u03bcm, time min:sec.\n\nNext, we wanted to determine whether IT-RhoGTPases can functionally substitute for the endogenous GTPases. The X. laevis oocyte system is not conducive to traditional knockdown approaches due to its large stores of maternal protein and relatively slow protein turnover. Therefore, we employed C3-exotransferase, a Rho-specific toxin, to inhibit endogenous Rho activity, and expressed an IT-Rho in which the C3 ribosylation site (N41) is mutated to a residue that cannot be ribosylated (N41V; Sekine et al., 1989). In control oocytes expressing the probe for active Rho, Rho activity around wounds was suppressed by C3 (Figure 2F,G), while cells expressing IT-Rho-N41V generated a spatially defined zone of Rho activity around the wound that closed over similar timescales as the control. While there is a slight decrease in Rho activity in IT-Rho-N41V cells exposed to C3 versus without, we attribute the difference to the loss in endogenous Rho activity. In contrast, cells expressing amino-terminally tagged Rho (mCh-Rho-N41V) failed to rescue Rho activity upon inhibition of endogenous Rho by C3 (Figure 2H, Figure 2\u2014figure supplement 1). Collectively, these results indicate that, unlike amino-terminally tagged GTPases, both IT- and Cy3-labeled GTPases are faithful reporters of the distribution of GTPases and show that IT-Rho can functionally substitute for its endogenous counterpart.\n\n### Pools of active and inactive RhoGTPase accumulate in the plasma membrane\n\nThe observation that Cdc42 extends slightly interior to its zone of activity suggests that there may be a pool of inactive, membrane-bound Cdc42 at this location. This notion is consistent with the previous observation that Abr, a Cdc42-GAP thought to regulate Cdc42 activity at wounds, also localizes interior to the Cdc42 zone (Vaughan et al., 2011). To understand the relationship between activity and membrane-association of Cdc42, we overexpressed Abr, a manipulation previously shown to decrease Cdc42 activity around wounds (Vaughan et al., 2011). Remarkably, this resulted in a dose-dependent loss of active Cdc42 at wounds while having far less effect on Cy3-Cdc42 (Figure 3A,B). These results further demonstrate that the IT- and Cy3-GTPases are functional. More importantly, they demonstrate that substantial pools of both active and inactive GTPases can be dynamically maintained at the plasma membrane.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig3-v2.jpg)\n\n**Figure 3.:** (A) Oocytes microinjected with wGBD (green), Cy3-Cdc42 (magenta) and indicated concentrations of mRNA encoding the Cdc42-GAP Abr. Scale bar 10 \u03bcm, time min:sec.; (B) Quantification of Cy3-Cdc42, active Cdc42 and ratio of active Cdc42 to Cy3-Cdc42 for each condition. n\u00a0=\u00a08\u201324. One-way ANOVA with Tukey post-test statistical analysis. *p<0.05, **p<0.01, ***p<0.001, ***p<0.0001.\n\n### RhoGDI is recruited to concentrated areas of RhoGTPase activity\n\nEfforts to visualize RhoGDI at the plasma membrane have generally failed (Ngo et al., 2017), likely because GDI only transiently interacts with GTPases upon release into or extraction from the membrane. However, we reasoned it might be possible to detect GDI at wound sites due to the high local concentration of Rho and Cdc42. Indeed, we found that 3xGFP-GDI is enriched at wounds and forms a broad zone that peaks between active Rho and active Cdc42 (Figure 4A,B). To confirm that endogenous GDI also localizes to wounds, antibodies were raised against X. laevis GDI (Figure 4\u2014figure supplement 1) and used to immunolabel wounded oocytes. Consistent with the results obtained with 3XGFP-GDI, endogenous GDI accumulated at wounds (Figure 4C). These results demonstrate that GDI accumulation occurs at discrete regions of the plasma membrane that are enriched with its GTPase clients.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig4-v2.jpg)\n\n**Figure 4.:** (A) Oocytes microinjected with wGBD (magenta), rGBD (blue) and GDI (green); (A\u2019) Kymograph of wound closure and line scan of radially-averaged fluorescence intensity from (A); (B) Quantification of distance between peaks (n\u00a0=\u00a016); (C) Wounded oocytes fixed and stained with anti-X. laevis GDI. Scale bar 10 \u03bcm, time min:sec.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Western blot stained with \u03b1GDI antibody to determine specificity; lane 1: X. laevis oocyte whole cell lysate (WCL), lane 2: WCL of oocytes overexpressing GDI, lane 3: WCL of oocytes expressing 3xGFP-GDI, lane 4: purified FLAG-GDI.\n\n### RhoGDI differentially regulates rho and Cdc42\n\nThe localization of RhoGDI around wounds suggests that it might play an active role in delivery to or extraction of GTPases from the membrane and thus their spatiotemporal patterning. As an initial test of this possibility, we overexpressed GDI via mRNA microinjection. This manipulation potently suppressed both Rho and Cdc42 activity, as well as Cy3-Rho and Cy3-Cdc42 localization, suggesting that GDI exerts its effects via extraction of the GTPases (Figure 5A). To obtain a more quantitative understanding of the relationship between GDI and GTPase activity, we microinjected purified GDI (Figure 5\u2014figure supplement 1) at increasing concentrations prior to wounding. High concentrations of microinjected GDI suppressed both Rho and Cdc42 activity at wounds (Figure 5B,C), consistent with the results obtained from GDI via mRNA-mediated overexpression. However, more modest increases revealed differential effects on Rho and Cdc42. Specifically, slight increases (15.8%) in GDI levels resulted in a greater reduction of Cdc42 activity compared to Rho (Figure 5C,D). We found the same to be true for bovine GDI (Figure 5\u2014figure supplement 2). These results show that GDI differentially impacts Rho and Cdc42 activity in vivo and that this effect does not require gross overexpression.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig5-v2.jpg)\n\n**Figure 5.:** (A) Top two rows: oocytes microinjected with Cy3-Cdc42 (magenta) and wGBD (green) alone or with GDI. Bottom two rows: Oocytes microinjected with Cy3-Rho (magenta) and rGBD (green) alone or with GDI; (B) Oocytes microinjected with wGBD (magenta), rGBD (green) and increasing concentrations of GDI protein. Scale bar 10 \u03bcm, time min:sec; (C) Standard curve of Rho and Cdc42 activity with increasing concentrations of GDI (n\u00a0=\u00a010\u201323 for each concentration); (D) Quantification of Rho and Cdc42 activity at 15.8% above endogenous GDI (n\u00a0=\u00a017\u201320). Unpaired student\u2019s t-test, 2-tailed distribution, equal variance statistical analysis. *p<0.05.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Coomassie stain of 12% SDS-PAGE to assess purity of FLAG-GDI; lane 1: start, lane 2: void, lanes 3\u201310: elution fractions.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Standard curve of Rho and Cdc42 activity with increasing concentrations of bovine GDI (n\u00a0=\u00a02\u201330 for each concentration); (B) Quantification of Rho and Cdc42 activity at 4.8% above endogenous GDI (n\u00a0=\u00a024); (C) As in B but at 9.6% above endogenous GDI (n\u00a0=\u00a030\u201331). Unpaired student\u2019s t-test, 2-tailed distribution, equal variance statistical analysis. *p<0.05, ***p<0.001.\n\n### RhoGDI extracts active and inactive RhoGTPase in vitro\n\nTo directly probe the mechanism by which RhoGDI inhibits Rho and Cdc42 activity in vivo, we established a real-time GTPase dissociation assay on supported lipid-bilayers (SLBs) (Figure 6A, Figure 6\u2014figure supplement 1; see Materials\u00a0and\u00a0methods). Cy3-Cdc42 was added to SLBs and binding was detected by total internal reflection microscopy (TIRF). Binding was dependent on its C-terminal prenyl moiety, as expected (Figure 6B). We then studied the time course of Cdc42 release from SLBs under buffer flow which continuously flushed out unbound proteins from solution. Spontaneous release of inactive, GDP-bound Cdc42 from the membrane was rather slow (t1/2\u00a0=\u00a037.24\u00a0\u00b1\u00a03.05 s), however the addition of excess GDI lead to a dramatic acceleration of dissociation (ca.20-fold; Figure 6C, Figure 6\u2014figure supplement 2). To determine whether this was the result of either simple sequestration in solution or, alternatively, direct extraction of Cdc42 from membranes, we performed assays in the presence of an alternative solubilizer (RabGGTase beta) that sequesters the GTPase prenyl moiety (Figure 6C). Sequestration alone only marginally affected the rate of dissociation, demonstrating that GDI directly extracts GTPases from membranes (Figure 6D,E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig6-v2.jpg)\n\n**Figure 6.:** (A) Experimental setup of in vitro experiments: prenylated RhoGTPases were reconstituted on supported lipid bilayers (SLBs) in flow chambers and imaged by TIRF. Wash off experiments were designed to avoid RhoGTPase rebinding to membranes and performed controlling the flow rate via a syringe pump; (B) TIRF imaging allows for selective imaging of RhoGTPases at the membrane. Prenylated and unprenylated Cdc42 were imaged in the same conditions and TIRF signal at membranes was quantified (n\u00a0=\u00a04 for each condition); (C) Wash off experiments: prenylated Cdc42 reconstituted on SLBs were washed with imaging buffer only (control), in presence of 5 \u03bcM RhoGDI or RabGTTase Beta. Time lapse images at selected time points and quantification of the full experiments are shown. Decay curves were fitted with a monoexponential function; (D) Comparison of the Koff values obtained by fitting the decay curves (n\u00a0=\u00a03 for control and RabGTTase Beta, n\u00a0=\u00a02 for RhoGDI); (E) Schematic representation of the proposed mode of action of the two RhoGTPases solubilizers. RabGGTase Beta sequesters RhoGTPases in solution, whereas RhoGDI actively extracts RhoGTPases from the membranes. Scale bar 10 \u03bcm. Unpaired student\u2019s t-test, 2-tailed distribution, equal variance statistical analysis. **p<0.01, ***p<0.001, ****p<0.0001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Raw data. Wash off experiments were started after the GTPase signal at the membrane was stable. After starting the syringe pump, a signal overshoot occurred; (B) The overshoot signal was used as a reference point to align different experiments and cut off for further analysis; (C) Data were background corrected and normalized to display multiple curve on the same graph; (D) Data were fitted with a monoexponential decay curve to obtain dissociation constants (Koff) of the GTPases from the membrane.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Coomassie stain of 12% SDS-PAGE to assess purity of RhoGDI purified from bacteria; lane 1: start, lane 2: flow through, lane 3: TEV cleavage, lane 4: tag removal, lane 5: end product after gel filtration.\n\nTo characterize membrane extraction more quantitatively, we carried out experiments over a wide range of RhoGDI concentrations using either inactive (GDP-bound) or active (GTP-bound, constitutively-active) forms of Cdc42 or Rho. We observed that WT GTPases hydrolyze even GTP analogs such as GTP\u03b3S over the long time period (hours) required for performing a full titration in our SLB assay (data not shown), which led to them accumulating in the inactive, GDP-bound form during the course of the experiment. We therefore turned to two constitutively-active GTPase variants: Q61L and G12V for Cdc42 (Q63L and G14V for Rho). While often used interchangeably, the biochemical properties of these two mutants are not entirely equivalent (Smith et al., 2013). The Q61L substitution directly and strongly impairs spontaneous nucleotide hydrolysis, whereas the G12V mutation only moderately inhibits spontaneous GTPase activity. The constitutive activity of G12V variants rather originates from defects in GAP-induced stimulation of GTP hydrolysis. Previous work suggests that RhoGDI interacts much more weakly with Q61L variants compared to G12V in cells (Hodgson et al., 2016; Michaelson et al., 2001; Pertz et al., 2006). Whether this is due to these mutations differentially weakening affinity for GDI directly or, alternatively, indirect effects resulting from differences in the nucleotide states these variants assume in the cytoplasm is unknown. We therefore tested the extraction of both of these variants in an active state from membranes by GDI.\n\nIn line with the known catalytic differences of these RhoGTPase variants (Smith et al., 2013), we found that they, when purified recombinantly, assume different nucleotide states as determined by HPLC analysis: Q61L GTPases were exclusively GTP-bound, whereas G12V mutants purified as a mix of GTP and GDP bound states (Figure 7\u2014figure supplement 1). To mimic a homogenously active state of G12V variants in vitro, we exchanged their bound GTP and GDP nucleotides for GTP\u03b3S directly before the extraction experiment.\n\nRemarkably, RhoGDI was able to extract both inactive (GDP-bound) and active (GTP\u03b3S-bound, G12V/G14V) Cdc42 and Rho in a concentration-dependent manner (Figure 7A,B). Although GDI extracted GDP-bound GTPase more efficiently than GTP\u03b3S-bound, G12V/G14V GTPases (1.5 fold difference), it was still able to effectively facilitate the dissociation of the latter (Figure 7C,F). We made qualitatively similar observations for the GTP-bound Q61L/Q63L variants, which were also extracted by GDI, albeit with reduced rates compared to their G12V/G14V counterparts (Figure 7\u2014figure supplements 2 and 3). The affinities of GDI for the active and inactive GTPases on membranes, determined by hyperbolic fits to the extraction rates, were surprisingly similar (Figure 7G,H, Supplementary file 1). On the other hand, the maximal rates of extraction were not, indicating that the rate-limiting step of membrane extraction depends on the activity state of GTPases. To investigate whether extraction of active and inactive GTPases is a conserved ability among GDI proteins, we also studied mammalian GDI. Similar to its Xenopus ortholog, bovine GDI1 was able to extract both GDP- as well as GTP-bound Cdc42Q61L and RhoQ63L variants (Figure 7\u2014figure supplement 4). These data clearly demonstrate that GDIs can directly extract both inactive and active GTPase from membranes in vitro.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig7-v2.jpg)\n\n**Figure 7.:** (A) Wash off experiments: prenylated Cdc42 in both inactive (Cdc42:GDP) and constitutively-active (Cdc42G12V:GTP\u03b3S) states were reconstituted on SLBs and washed in presence of 5 \u03bcM GDI. Time lapse images at selected time points are shown; (B) Quantification of wash off experiments in which the concentration of GDI was titrated between 0 and 20 \u03bcM; (C) Koff values obtained for inactive and constitutively-active Cdc42G12V fitting the decay curves with a monoexponential decay function are plotted against GDI concentration. Extraction rates were fitted with a hyperbolic function; fitting parameters Kd and Vmax are reported in table G; (D) Ratio of Koff obtained for inactive and constitutively-active Cdc42G12V at the same GDI concentration; (E\u2013F,\u00a0H) Same as in C-D and G for inactive (Rho:GDP) and constitutively-active (RhoG14V:GTP\u03b3S) Rho. Scale bar 10 \u03bcm.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The nucleotide state of Cdc42G12V (A), RhoG14V (B), Cdc42Q61L (D) and RhoQ63L (E) was assessed by reversed phase chromatography monitoring absorbance at 254 nm. A sample containing nucleotide standards was run on the same day of the samples (C for A and B; F for D and E).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Wash off experiments: prenylated Cdc42 in both inactive (Cdc42:GDP) and constitutively-active (Cdc42Q61L:GTP) states were reconstituted on SLBs and washed in presence of 5 \u03bcM GDI. Time lapse images at selected time points are shown; (B) Quantification of wash off experiments in which the concentration of GDI was titrated between 0 and 20 \u03bcM; (C) Koff values obtained for inactive and constitutively-active Cdc42Q61L fitting the decay curves with a monoexponential decay function are plotted against GDI concentration. Extraction rates were fitted with a hyperbolic function; (D) Ratio of Koff obtained for inactive and constitutively-active Cdc42Q61L at the same GDI concentration; (F) Same as in C-D for inactive (Rho:GDP) and constitutively-active (RhoQ63L:GTP) Rho. Scale bar 10 \u03bcm.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Comparison of Koff values obtained for the two constitutively-active variants of Cdc42 (Cdc42G12V and Cdc42Q61L, (A and C) and Rho (RhoG14V and RhoQ63L, (B and D) from wash off experiments in presence of either WT (A\u2013B) or E158/9Q GDI (C\u2013D). Extraction rates were fitted with a hyperbolic function.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig7-figsupp4-v2.jpg)\n\n**Figure 7\u2014figure supplement 4.:** (A) Koff values obtained for inactive (Cdc42:GDP) and constitutively-active (Cdc42Q61L:GTP) Cdc42 at different bovine GDI concentrations. Extraction rates were fitted with a hyperbolic function; (A\u2019) Ratio of Koff obtained for inactive and constitutively-active Cdc42 at the same bovine GDI concentration; (B\u2013B\u2019) same as in A-A\u2019 for inactive (Rho:GDP) and constitutively-active (RhoQ63L:GTP) Rho.\n\n### Identification of an extraction-deficient RhoGDI\n\nThe canonical RhoGTPase cycle assumes that GDI does not extract GTPase without its prior inactivation by a GAP (Garcia-Mata et al., 2011). However, the above results suggest that GDI might directly attenuate GTPase activity at the plasma membrane via extraction of active GTPase. If this hypothesis is correct, then expression of an extraction-deficient GDI would influence the spatiotemporal patterning of GTPase activity. We therefore sought to generate an extraction-deficient GDI that would still initiate contact with GTPases but fail to extract them from the plasma membrane. Mutants were screened by quantifying their recruitment to wounds relative to WT GDI, based on the rationale that mutants capable of binding but not extracting should remain at the membrane longer and thus accumulate at wounds more than WT GDI.\n\nUsing this screen, we first tested RhoGDI mutants that were previously reported to be deficient in extraction (Dransart et al., 2005; Ueyama et al., 2013). None of these extraction-deficient mutants were recruited to wounds more strongly than WT GDI, suggesting that they were impaired in binding to GTPases at wounds rather than extracting GTPases from wounds (Figure 8\u2014figure supplement 1). We therefore designed three novel mutants: (1) the isolated regulatory arm of GDI that initiates contact with the GTPase but lacks a binding pocket for the hydrophobic prenyl group (\u039451\u2013199) and (2,3) mutation of residues E158/9 previously hypothesized to be responsible for GTPase extraction (Hoffman et al., 2000). GDI mutants \u039451\u2013199, E158/9A and E158/9Q were halo-tagged, expressed in oocytes and their recruitment to wounds was quantified relative to WT GDI. GDI \u039451\u2013199 showed minimal recruitment to wounds, however both GDI E158/9A and E158/9Q showed a significant increase in recruitment to wounds relative to WT GDI, with GDI E158/9Q (GDI-QQ) having the greatest increase (Figure 8A,B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig8-v2.jpg)\n\n**Figure 8.:** (A) Oocytes microinjected with halo-tagged WT, \u039451\u2013199, E158/9A and E158/9Q GDI mutants. Scale bar 10 \u03bcm, time min:sec; (B) Quantification of GDI intensity at wounds (n\u00a0=\u00a07\u201313). Unpaired student\u2019s t-test, 2-tailed distribution, unequal variance statistical analysis to WT. ****p<0.0001. (C) Comparison of Koff values obtained for inactive (Cdc42:GDP, Rho:GDP) and constitutively-active (Cdc42G12V: GTP\u03b3S, RhoG14V: GTP\u03b3S) Cdc42 and Rho from wash off experiments in presence of either WT (black) or E158/9Q (QQ) (red) GDI. Extraction rates were fitted with a hyperbolic function.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A\u2013I) Oocytes microinjected with WT or mutant GDI and quantification of localization relative to WT GDI; Unpaired student\u2019s t-test, 2-tailed distribution, unequal variance statistical analysis; (J) Average Koff values obtained for inactive Rho and Cdc42 in absence (control) and presence of 5 \u03bcM of either bovine GDI WT or bovine GDI mutants.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A\u2013B) Comparison of Koff values obtained for inactive (Cdc42:GDP, Rho:GDP) and constitutively-active (Cdc42Q61L:GTP, RhoQ63L:GTP) Cdc42 and Rho from wash off experiments in presence of either WT (black) or E158/9Q (QQ) (red) GDI. Extraction rates were fitted with a hyperbolic function.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig8-figsupp3-v2.jpg)\n\n**Figure 8\u2014figure supplement 3.:** Comparison of Koff values obtained for inactive (Cdc42:GDP, Rho:GDP) and constitutively-active (Cdc42Q61L:GTP, RhoQ63L:GTP) Cdc42 and Rho from wash off experiments in presence of either WT (black) or E163/4Q (QQ) (red) bovine GDI. Extraction rates were fitted with a hyperbolic function.\n\nTo directly test whether RhoGDI E158/9Q (QQ) is deficient in extraction, its functional capabilities were tested in vitro in the SLB assay. WT GDI was able to extract both inactive (GDP-bound) Cdc42 as well as active (GTP\u03b3S-bound G12V or GTP-bound Q61L) Cdc42 from the supported lipid bilayers (Figure 7, Figure 7\u2014figure supplements 2 and 3). In contrast, GDI-QQ retained most of its ability (less than two-fold reduction) to extract inactive (GDP-bound) Cdc42 but was completely deficient in extracting active (both GTP\u03b3S-bound G12V and GTP-bound Q61L) Cdc42 (Figure 8C, Figure 8\u2014figure supplement 2, Figure 7\u2014figure supplement 3C,D). Similar observations were made for Rho, however GDI-QQ retained some ability to extract active GTP\u03b3S-bound G14V, but not GTP-bound Q63L Rho (Figure 8C, Figure 8\u2014figure supplement 2, Figure 7\u2014figure supplement 3). The corresponding mutant of bovine GDI1 (E163/4Q) shows an equivalent behavior to its Xenopus ortholog (Figure 8\u2014figure supplement 3). These results confirm that the GDI-QQ mutant is indeed extraction deficient: modestly deficient for inactive GTPases, moderately deficient for active Rho and completely deficient for active Cdc42.\n\n### RhoGDI extracts active RhoGTPase in vivo\n\nWe sought to directly test whether RhoGDI can extract active GTPases in vivo by employing GDI-QQ. First, we compared the effects of WT vs. QQ GDI overexpression on wounded oocytes expressing constitutively-active Cdc42 (G12V) (Q61L could not be used as it failed to elevate Cdc42 levels around wounds; see Figure 9\u2014figure supplement 1). While WT GDI significantly reduced the amount of Cdc42 (G12V) around wounds, GDI-QQ did not (Figure 9A,B). Second, we compared the effects of WT vs. QQ GDI overexpression on wounded oocytes microinjected with Cy3-Cdc42 bound to GTP\u0263S. WT GDI significantly reduced the amount of Cy3-Cdc42(GTP\u0263S) around wounds while GDI-QQ did not (Figure 9C,D). Collectively, these data suggest that GDI can extract active GTPase from the plasma membrane in vivo.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig9-v2.jpg)\n\n**Figure 9.:** (A) Oocytes microinjected with wGBD alone or with constitutively-active Cdc42 (CA:G12V), WT or QQ GDI; B) Quantification of total Cdc42 activity for (A), (n\u00a0=\u00a012); C) oocytes microinjected with Cy3-Cdc42 bound to GTP\u0263S alone or with WT or QQ GDI; D) Quantification of intensity for (C), (n\u00a0=\u00a018). Scale bar 10 \u03bcm, time min:sec. One-way ANOVA with Tukey post-test statistical analysis; E) Oocytes microinjected with wGBD (magenta), rGBD (green) alone or with QQ GDI; F) Quantification of total Cdc42 (magenta) and Rho (green) activity from (E) (n\u00a0=\u00a09); G) Cy3-Cdc42 or Cy3-Rho alone or with QQ GDI; H) Quantification of total recruitment of Cy3-Cdc42 (magenta) and Cy3-Rho (green) (n\u00a0=\u00a06\u201311). Scale bar 10 \u03bcm, time min:sec. Unpaired student\u2019s t-test, 2-tailed distribution, unequal variance statistical analysis. *p<0.05, **p<0.01, ***p<0.001, ***p<0.0001.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Oocytes injected with wGBD alone or with Cdc42 Q61L. Scale bar 10 \u03bcm, time min:sec.\n\nThe above results imply that the extraction of active RhoGTPase by GDI might contribute to its spatiotemporal patterning in vivo. To test this hypothesis, we expressed GDI-QQ and monitored the consequences on Rho and Cdc42 activity following wounding. Strikingly, Cdc42 activity around wounds was significantly elevated, in contrast to Rho which was unaffected (Figure 9E,F). To assess whether the increase in activity was due to an increase of total Cdc42 around wounds as opposed to competition between GDI-QQ and the Cdc42 activity probe, we repeated the experiment with Cy3-Cdc42. Similar to the results obtained with the activity reporter, expression of GDI-QQ elevated Cy3-Cdc42 levels around wounds relative to controls (Figure 9G,H). Cumulatively, these data suggest that GDI directly extracts active Cdc42 throughout the Cdc42 zone, and that extraction of active Cdc42 is necessary for its regulation around wounds.\n\n## Discussion\n\nDirect visualization of the RhoGTPases in living cells is essential for the understanding of their complex spatiotemporal dynamics. We have established two methods to fluorescently label vertebrate GTPases that localize properly: internal tagging with a fluorescent protein and sortase-mediated labeling with a fluorescent dye. This now provides us with widely applicable reagents to analyze GTPase function. These probes faithfully mimic the distribution of the endogenous GTPases based on their comparison to activity reporters in several processes: cell wound repair, cytokinesis, junctional integrity and epithelial wound repair. Further, the successful rescue of Rho function at wounds in the presence of C3 by a C3-insensitive mutant of IT-Rho indicates that these proteins are capable of replacing their endogenous counterparts. It will be important to assess the ability of IT- or Cy3-labeled GTPases to substitute for their endogenous counterparts in other cellular processes in the future via gene replacement approaches, although we note that IT-Cdc42 has been shown to be functional in fission yeast (Bendez\u00fa et al., 2015). In any case, the combination of the two labeling approaches is powerful as it permits side-by-side comparison of results obtained in vivo and in vitro, as demonstrated here.\n\nVisualization of labeled RhoGTPases in combination with activity reporters in living cells led to an unexpected observation: pools of inactive Cdc42 at the plasma membrane. To the best of our knowledge, this is the first time that inactive GTPases have been detected on membranes under conditions other than gross GTPase overexpression. Notably, the pool of inactive Cdc42 spatially coincides with a local Cdc42-GAP, Abr (Vaughan et al., 2011). This pool of inactive Cdc42 expands with overexpression of Abr, further demonstrating that locally-inactivated Cdc42 can remain associated with the plasma membrane. This finding has important mechanistic implications for the regulation of GTPase activity. Namely, it suggests that GTP hydrolysis and extraction of GTPases, while they are likely linked, are not necessarily tightly coupled. This raises the possibility that GTPases might cycle through multiple rounds of activation and inactivation by GEFs and GAPs while remaining associated with the membrane.\n\nRemarkably, in addition to the RhoGTPases themselves, GDI also localized to the plasma membrane in proximity to wounds. The localization of GDI in the same place where the GTPases are especially abundant implies that its accumulation reflects interaction with is GTPase clients. It will be important to investigate the detailed mechanism of GDI localization and the control of its turnover at sites of high GTPase activity in the future.\n\nThe most significant result of this study is that RhoGDI can extract active GTPase in vivo, particularly active Cdc42 during cell wound repair. This finding is based on two complementary lines of evidence. First, in vitro assays show that GDI directly extracts active GTPases from supported lipid bilayers. This ability is shared between GDI orthologs from distinct species and can be robustly observed for different GTPase mutants trapped in an active configuration (G12/14V and Q61/63L). Their moderate differences in extraction kinetics might nonetheless be biologically meaningful. Previous studies suggest that Q61/63L variants interact more weakly with GDI compared to their G12/14V counterparts (Hodgson et al., 2016; Michaelson et al., 2001; Pertz et al., 2006); we observe a similar trend concerning membrane extraction (Figure 7\u2014figure supplement 3).\n\nSecond, we also demonstrate extraction of active GTPase in vivo. WT, but not GDI-QQ, extracts Cdc42(G12V) and GTP\u0263S-Cdc42 from the plasma membrane. These results support previous findings that GDI binds both inactive and active GTPase with relatively high affinity in vitro (Hancock and Hall, 1993; Hart et al., 1992; Nomanbhoy and Cerione, 1996; Tnimov et al., 2012). Although we report greater extraction of inactive versus active GTPase, we demonstrate that the extraction of active GTPase is important for their spatiotemporal patterning during cell wound repair. We thus conclude that GDI has the capacity to extract active GTPases and that this ability is harnessed to limit the level of Cdc42 activity during cell wound repair.\n\nThis finding has the virtue of explaining previous results in the oocyte cell wound repair system. Based on an indirect approach involving photoactivatable Rho and Cdc42 activity reporters, it was found that Cdc42 activity is lost throughout its zone, while Rho activity is preferentially lost at the trailing edge of its zone (Burkel et al., 2012). The results presented here suggest that GDI is responsible for the removal of active Cdc42 throughout the Cdc42 zone, while Rho is inactivated by a trailing edge GAP prior to extraction (Figure 10\u2014figure supplement 1). This may also explain why a mild overexpression of GDI significantly reduced Cdc42 activity but had no effect on Rho activity: loss of active Cdc42 can be controlled at the level of GDI while Rho inactivation is controlled at the level of a GAP. However, there is an alternative explanation for why the expression of GDI-QQ causes an increase in Cdc42 activity but not Rho activity: while GDI-QQ is utterly deficient in extraction of active Cdc42, it retains a modest ability to extract active Rho (Figure 7).\n\nThe broader implications of RhoGDI\u2019s ability to extract active GTPase are two-fold. First, it suggests that a new branch should be added to the canonical GTPase cycle in which active GTPase can directly extracted from the plasma membrane by GDI (Figure 10). Further, because GDI binding strongly inhibits GTP hydrolysis and nucleotide exchange (Hart et al., 1992; Ueda et al., 2001), active GTPase may exist in its soluble form in complex with GDI. However, complementary evidence from biochemical and biological studies suggest that active GTPases are less stably bound to GDI compared to their inactive form (Hodgson et al., 2016; Slaughter et al., 2009; Tnimov et al., 2012). As such, this secondary extraction branch may actually represent a loop through which active GTPases are not only removed from cell membranes, but rapidly returned to them (Figure 10). Such a mechanism might enhance the spatial reach of GTPase activity within the plasma membrane or even mediate its spreading between different membrane compartments (Palamidessi et al., 2008).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig10-v2.jpg)\n\n**Figure 10.:** We propose that in addition to the canonical GTPase cycle, GDI can extract active GTPase from the plasma membrane. Based on evidence that GTPase:GDI binding prevents GTP hydrolysis and nucleotide exchange (Hart et al., 1992; Ueda et al., 2001), active GTPase extracted by GDI would still be active upon its release back into the plasma membrane.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50471/elife-50471-fig10-figsupp1-v2.jpg)\n\n**Figure 10\u2014figure supplement 1.:** Active Rho (green) and active Cdc42 (red) are activated in discrete, concentric zones that close inward as the wound heals. Cdc42 inactivation is variable throughout its zone, thus its zone is shaped by activation (Burkel et al., 2012). Conversely, the Rho zone is shaped by inactivation as it is subject to RhoGAPs 1/8 at the trailing edge of its zone (Davenport, 2016). Thus, we hypothesize that GDI extracts active Cdc42 throughout the Cdc42 zone and inactive Rho from the trialing edge of the Rho zone.\n\nSecond, RhoGDI\u2019s ability to extract active GTPase forces us to reassess its role in GTPase regulation in different cellular processes. While the field primarily studies local GTPase regulation at the level of GEFs and GAPs, we should reconsider GDI\u2019s role in regulation, as well as the regulation of GDI itself. Consistent with this idea, several studies have reported that the differential phosphorylation of GDI promotes global increases in the activity of Rho, Rac or Cdc42 by modulating the affinity of GDI for different GTPases (reviewed by Garcia-Mata et al., 2011). The results presented here suggest that it will be of considerable interest to assess the potential for phosphorylation and GDI-dependent regulation on a local level. Indeed, results from empirical (Vaughan et al., 2014) and modeling (Holmes et al., 2016) studies not only indicate that different isoforms of protein kinases C act at different regions around cell wounds, but also have different impacts on Rho and Cdc42 activity zones. When taken with the results of this current study, a picture emerges in which a high level of precision in GTPase patterning is achieved by a complex regulatory network comprising kinases, GEFs, GAPs, and GDI.\n\n## Materials and methods\n\n### Plasmids\n\nThe active RhoGTPase probes, mRFP-wGBD, eGFP-wGBD, eGFP-2xrGBD, BFP-2xrGBD and mRFP-2xrGBD in pCS2+ were generated as previously described (Sokac et al., 2003; Benink and Bement, 2005; Davenport et al., 2016). mCh-Rho, mCh-Rac, mCh-Cdc42 (Benink, 2005), untagged Rho, Rac, and Cdc42 (wild-type (WT) and constitutively-active (G14/2V)) in pCS2+ were made as previously described (Benink and Bement, 2005). For expression and purification from E. coli, codon-optimized Cdc42 and Rho (Eurofins Genomics Germany GmbH, Ebersberg, Deutschland) were subcloned into a pETMz2 vector via Gibson assembly cloning (Gibson et al., 2009), with primers GTPase(GeneStrand)fwd and -rev and pETfwd and -rev (all primer sequences in Supplementary file 2). A pentaglycine for sortase-mediated labeling was added onto the 5\u2019 of the GTPases. Constitutively-active Cdc42 Q61L and Rho Q63L mutants were generated by Quickchange mutagenesis with primers Cdc42(Q61L)fwd and -rev and Rho(Q63L)fwd and -rev, respectively.\n\nX. laevis IT-Cdc42 in pCS2+ was generated according to Bendez\u00fa et al. (2015): a linker -SGGSACSGPPG- was cloned into Cdc42 after Q134. The linker encodes for BamH1 and Asc1 restriction sites for digestion and insertion of GFP into the linker region. The 5\u2019 end of Cdc42 was amplified with primers Cdc42(1) and Cdc42(2); the 3\u2019 end was amplified separately with primers Cdc42(3) and Cdc42(4). The two products were joined by PCR stitching with primers Cdc42(1) and Cdc42(4). The single product was digested with EcoR1 and Xho1 and ligated into pCS2+. The resulting construct was mutated by Quickchange with primers pCS2+-Cdc42(1) and pCS2+-Cdc42(2) to remove the BamH1 restriction site upstream of the insertion in the multiple cloning site. eGFP was amplified from eGFP-wGBD with primers eGFP(1) and eGFP(2). Both the Quickchanged construct and eGFP were digested with BamH1 and Asc1, and eGFP was ligated into the linker region internal to the Cdc42 coding sequence. X. laevis Rho and Rac were similarly tagged internally after residues Q136 and L134, respectively.\n\nTo make C3-insensitive mCh-Rho and IT-Rho, constructs were Quickchanged to N41V using primers Rho(N41V)fwd and -rev (Sekine et al., 1989).\n\nX. laevis RhoGDI Clone ID:7010361 (GE-Healthcare Dharmacon, Lafayette, CO) was subcloned into pCS2+ with Cla1 and Xho1, and into N\u20193xGFP and N\u2019Halo (Promega, Madison, WI) pCS2+ with BspE1 and Xho1. A FLAG-tag was added by PCR onto the 5\u2019 of RhoGDI, and the product was subcloned into pFast-Bac1 with Cla1 and Not1. The following mutations were made by Quickchange mutagenesis to untagged and N\u20193xGFP RhoGDI in pCS2+: E158/9A, E158/9Q, D40A, D40N, D180A and D180N (Dransart et al., 2005). Mutant RhoGDI 8(A) had the first eight charged amino acids to mutated to alanine (D3/5, E11-13, E15-17A) by sequential PCR (Ueyama et al., 2013). The 3\u2019 end of RhoGDI was amplified with primers 8(A)F1 and R1. The product was amplified and added to at its 5\u2019 end with primers 8(A)F2 and R1, and for a third time with 8(A)F3 and R1. The final PCR product was subcloned into pCS2+ by Infusion PCR (Takara Bio, Kusatsu, Japan). For subcloning into N\u20193xGFP-pCS2+, the third PCR from above was repeated with 8(A)F4 and R2. Mutant RhoGDI helix replacement (HR) had alpha helix D39-Q48 replaced with a glycine linker GGGGSGGGGS. This was done by sequential PCR as described above with four rounds of PCR: HR1 and R1, HR2 and R1, HR3 and R1, then either HR4 and R1 for subcloning into pCS2+ or HR5 and R2 for subcloning into N\u20193xGFP-pCS2+. RhoGDI mutant \u039451\u2013199 was generated by adding a stop codon after L50 by Quickchange mutagenesis. To make RhoGDI \u03941\u201319, the 3\u2019 end of RhoGDI was amplified with primers (-)20 F1 and R for subcloning by infusion into pCS2+, and primers (-)20 F2 and R for N\u20193xGFP-pCS2+. Primers (\u221255) F1, F2 and R were used to generate RhoGDI \u03941\u201354 as described above (Hoffman et al., 2000; Ueyama et al., 2013). For expression and purification in E. coli, X. laevis RhoGDI WT and E158/9Q were subcloned into a pGEX-6P-2 vector via Gibson assembly cloning (Gibson et al., 2009) using XlRhoGDIfwd and -rev. A cysteine for labeling was added by PCR onto the 5\u2019 of RhoGDI. Bovine RhoGDI1 in pGEX-6P was a gift of Dr. Tomotaka Komori. E163/4Q mutation was made by Quickchange mutagenesis with the E163/4Qfwd and -rev primers. Mutant bovine RhoGDI \u03941\u201322 and \u03941\u201359 were subcloned with BamHI and NotI into a pGEX-6P-2 with \u03941-22fwd and -rev and \u03941-59fwd and -rev, respectively. Mutant bovine RhoGDI HR was generated via Gibson assembly cloning (Gibson et al., 2009), with primers HRfwd and -rev and pGEXHRfwd and -rev, for amplification of RhoGDI and the pFASTBacH10 vector, respectively. RabGGTase two beta in a pGATEV vector was kindly provided by Dr. Konstantin Gavriljuk.\n\n### Expression and purification of recombinant protein from E. coli for sortase-labeling\n\nRosetta(DE3) chemically competent E. coli cells were transformed with WT or mutant RhoGDIs, induced with 250 \u00b5M IPTG and incubated at 18\u00b0C ON. Bacteria cells were harvested, centrifuged at 4000xg for 20 min, and pellets flash frozen in liquid nitrogen and stored at \u221280\u00b0C. Frozen pellets were resuspended in a 3x volume of lysis buffer (50 mM KPi pH 8, 400 mM KCl, 1 mM EDTA, 5 mM \u03b2ME, 1 mM PMSF, 1 mM benzamidine) and lysed with a high pressure homogenizer at 4\u00b0C. Lysate was clarified by centrifugation at 100,000xg for 1 hr and applied to a glutathione sepharose four fast flow column bed (GE-Healthcare, Chicago, IL) equilibrated with wash buffer (50 mM KPi pH 8, 400 mM KCl, 1 mM EDTA, 5 mM \u03b2ME, 1 mM benzamidine). The column was washed with wash buffer, and protein was eluted with elution buffer (50 mM KPi pH 8, 400 mM KCl, 1 mM EDTA, 5 mM \u03b2ME, 1 mM benzamidine, 10 mM reduced L-glutathione). Peak fractions were pooled, protein concentration was estimated with Bradford assay (Bio-Rad Laboratories, Inc, Hercules, CA), and PreScission protease was added at 1:30. After ON incubation on ice, the sample was concentrated using 5,000 MWCO Vivaspin15R centrifugal concentrators (Sartorius AG, G\u00f6ttingen, Germany), buffer exchanged in wash buffer on a HiPrep 26/10 desalting column (GE-Healthcare) and recirculated on the same glutathione sepharose four fast flow column bed re-equilibrated in wash buffer. Flow-through was collected, concentrated, spun down and gel filtered on a HiLoad Superdex 75 pg column (GE-Healthcare) in storage buffer (20 mM HEPES pH 7.5, 150 mM KCl, 0.5 mM TCEP, 20% Glycerol). Peak fractions were pooled, concentrated, flash frozen in liquid nitrogen and stored at \u221280\u00b0C. Protein purification and purity were determined by Coomassie stain of 12% SDS-PAGE, protein concentration measuring absorbance at 280 nm. WT and mutant GTPases were expressed and purified similarly to GDIs with the following differences: (1) L21(DE3) chemically competent E. coli cells were used and proteins were expressed with 1 mM IPTG at 37\u00b0C for 4 hr; (2) the affinity step was performed on HiTrap Chelating HP columns loaded with cobalt and equilibrated in 50 mM HEPES pH 7.5, 50 mM NaCl, 5 mM MgCl2, 0.5 mM \u03b2ME, 100 \u00b5M ATP and 100 \u00b5M GDP/GTP; (3) protein were gel filtered in storage buffer (50 mM HEPES pH 7.5, 50 mM NaCl, 2 mM MgCl2, 2 mM DTT, 20% Glycerol). RabGTTase Beta was expressed and purified as described before (Gavriljuk et al., 2013). Before each membrane extraction reaction, nucleotide bound to Cdc42 G12V was exchange to GTP\u03b3S, incubating the protein with 10-fold excess EDTA and GTP\u03b3S for 30 min on ice. The new nucleotide state was stabilized by adding 20-fold excess MgCl2. Exchange of nucleotide was confirmed by reversed phase chromatography using a C18 column under isocratic conditions (50 mM potassium phosphate pH 6.6, 10 mM tetrabutylammonium bromide, 16% (v/v) ACN) as described previously (M\u00fcller et al., 2010). Nucleotide peaks were quantified spectrometrically measuring absorbance at 254 nm.\n\n### Cy3-labeling and in vitro prenylation of RhoGTPases\n\nRhoGTPases were labeled at the N-t with Cy3 using a sortase-mediated reaction and in vitro prenylated as previously described (Gavriljuk et al., 2013; Popp et al., 2007). In brief, RhoGTPases were incubated with sortase and Cy3 N-t labeled LPETGG peptide at 3:1:15 ratio in labeling buffer (Tris pH 8.0, 150 mM KCl, 6 \u00b5M CaCl2, 0.5 mM TCEP) and incubated ON at 16\u00b0C. The entire reaction was mixed with geranylgeranyltransferase type one and geranylgeranyl diphosphate at 10:1:30 ratio in prenylation buffer (50 mM HEPES pH 7.5, 50 mM NaCl, 2 mM MgCl2, 2 mM DTT, 30 \u00b5M GDP/GTP, 2% CHAPS), and incubated ON on a rotating mixer at 4\u00b0C. The sample was spun in a TLA-100 rotor (Beckman Coulter, Brea, CA) at 80,000 rpm for 30 min at 4\u00b0C and gel filtered on a HiLoad Superdex 75 pg column (GE-Healthcare) equilibrated with prenylation buffer with 0.5% CHAPS. Peak fractions were pooled, concentrated using 5,000 MWCO Vivaspin4 centrifugal concentrators (Sartorius AG) and buffer exchanged in prenylation buffer without CHAPS on a NAP-5 column (GE-Healthcare). Residual detergent was removed by Pierce Detergent Removal Spin Column (Thermo Fisher, Carlsbad, CA). After sortase-mediated labeling with Cy3, unprenylated proteins were directly spun down and gel filtered in absence of CHAPS.\n\n### Expression and purification of recombinant protein from insect cells\n\nDH10Bac-competent E. coli (Thermo Fisher) were transformed with FLAG-WT RhoGDI or E158/9Q in pFast-Bac1 and positive clones were identified by blue/white screening. Bacmid was purified and transfected into Sf9 cells using Cellfectin II reagent (Thermo Fisher). High-expressing clones were identified and baculovirus was generated for two additional passages. Sf9 cells, 22 \u00d7 106 per 15 cm plate, were infected with high-titer baculovirus and incubated 27\u00b0C for 72 hr. Sf9 cells were harvested, centrifuged at 500xg for 5 min, and pellets were stored at \u221280\u00b0C.\n\nFrozen pellets were resuspended in a 5x volume of solubilization buffer (1xPBS pH 7.5, 1% Triton X-100, 0.5 \u00b5g/mL leupeptin, 0.5 \u00b5g/mL aprotinin, 0.5 \u00b5g/mL Pepstatin A, 40 \u00b5g/mL PMSF, 100 \u00b5g/mL benzamidine, 0.5 \u00b5g/mL E64) and incubated at 4\u00b0C with end-over-mixing for 1 hr. Lysate was clarified by centrifugation at 21,000xg for 15 min and applied to an anti-FLAG M2 agarose column bed (MilliporeSigma, Burlington, MA). The column was washed 3x with wash buffer (1xPBS, 0.5 \u00b5g/mL leupeptin, 0.5 \u00b5g/mL aprotinin, 0.5 \u00b5g/mL Pepstatin A, 40 \u00b5g/mL PMSF, 100 \u00b5g/mL benzamidine, 0.5 \u00b5g/mL E64). A buffer exchange was performed with 1:1 wash buffer:HEPES (25 mM HEPES pH 7.5, 100 mM KCl), and the column washed 2x with HEPES. Protein was eluted with 1M Arginine pH 4.4 into an equal volume of collection buffer (50 mM HEPES pH 7.5, 200 mM KCl). Fractions were analyzed by coomassie stain of a 12% SDS-PAGE. Peak fractions were pooled and concentrated using a 10 MW Amicon Ultra-15 Centrifugal filter (MilliporeSigma). A buffer exchange was performed during concentrating with HEPES such that the final Arginine concentration was less than 1 mM. Protein purification and purity was determined by comparison to a BSA standard curve by Coomassie stain of a 12% SDS-PAGE.\n\n### Oocyte collection and preparation\n\nOvarian tissue was harvested from adult X. laevis via surgical procedures approved by the University of Wisconsin-Madison Institutional Animal Care and Use Committee. Oocytes were stored in 1x modified Barth\u2019s solution (88 mM NaCl, 1 mM KCl, 2.4 mM NaHCO3, 0.82 mM MgSO4, 0.33 mM NaNO3, 0.41 mM CaCl2, 10 mM HEPES, pH 7.4) with 100 \u00b5g/mL gentamicin sulfate, 6 \u00b5g/mL tetracycline and 25 \u00b5g/mL ampicillin at 16\u00b0C. Prior to manual defolliculation with forceps, oocytes were treated with 8 mg/mL type I collagenase (Life Technologies, Grand Island, NY) in 1x modified Barth\u2019s solution for 1 hr at 16\u00b0C on an orbital shaker.\n\n### mRNA preparation\n\nmRNA was generated in vitro using the mMessage mMachine SP6 transcription kit (Thermo Fisher) and purified using the RNeasy Mini Kit (Qiagen, Hilden, Germany). Transcript size was verified on a 1% agarose/formaldehyde denaturing gel relative to the Millennium Marker (Life Technologies) RNA molecular weight standard.\n\n### Oocyte microinjection\n\nOocytes were microinjected with a 40 nL injection volume using a p-100 microinjector (Harvard Apparatus, Holliston, MA). mRNA encoding probes for active Rho (2xrGBD) and active Cdc42 (wGBD) were injected at a final needle concentration of 30 \u00b5g/mL and 100 \u00b5g/mL, respectively. IT-Rho, Rac and Cdc42 were each injected at a final needle concentration of 125 \u00b5g/mL, with 63 \u00b5g/mL of WT RhoGDI to stabilize the exogenous GTPase and maintain stoichiometric ratio of GTPase:GDI (Boulter et al., 2010). mCh-Rho, Rac and Cdc42 were each injected at a final needle concentration of 125 \u00b5g/mL. mRNA encoding Abr was injected at a final needle concentration of 25\u2013500 \u00b5g/mL. 3xGFP-WT GDI and mutants at 333 \u00b5g/mL, untagged RhoGDI at 300 \u00b5g/mL, Halo-WT GDI and mutants at 200 \u00b5g/mL, Cdc42 G12V or Q61L at 28 \u00b5g/mL, and untagged GDI E158/9Q at 1.5 mg/mL. For purified protein, Cy3-Rho and Cy3-Cdc42, in vitro prenylated and complexed with RhoGDI, were injected at a final needle concentration of 4.56 \u00b5M. C3 exotransferase was injected at a final needle concentration of 1.1 \u00b5g/mL in 1 mM DTT and WT GDI at 3.5\u2013114 \u00b5M for the standard curve. For wounding experiments, all mRNA was injected 20\u201324 hr before imaging, and purified protein was injected at least 2 hr before imaging, except for C3 which was injected 30 min prior to imaging. For imaging cortical granule exocytosis, oocytes were injected 16 hr before imaging and matured ON in progesterone. Two-cell embryos were microinjected with a 5 nL injection volume at a final needle concentration of 167 \u00b5g/mL for IT-Rho and IT-Cdc42 mRNA, and 18.24 \u00b5M Cy3-Rho and Cy3-Cdc42.\n\n### Quantification of IT-Rho expression level in X. laevis oocyte\n\nWhole cell lysates (WCL) were generated from oocytes with or without IT-Rho expression. Oocytes were washed 3x with wash buffer (10 mM imidazole, 50 mM KCl, 2.5 mM MgCl2, 1 mM EGTA, 10 mM EDTA). 5 \u00b5L/oocyte of lysis buffer (wash buffer supplemented with 1 mM DTT, 0.5% TritonX-100, 50 \u00b5g/mL E64, 4 mM Peflabloc, 60 \u00b5g/mL chymostatin, 5 \u00b5g/mL leupeptin, 1 \u00b5g/mL pepstatin, 4 \u00b5g/mL aprotinin, 2 \u00b5M calpeptin, 2 \u00b5M ALLN) was added and oocytes were homogenized with a 200 \u00b5L pipet tip. Homogenates was added to a 3/16 \u00d7 25/32 Ultra-clear centrifuge tube (Beckman Coulter, Ref:344718), centrifuged at max speed for 5 min at 4\u00b0C and the cytoplasmic fractions were extracted by piercing the side of the tube with a syringe. The cytoplasmic fractions were transferred to 1.5 mL tubes, centrifuged at max speed for 5 min at 4\u00b0C, and the cytoplasmic fractions was isolated using a pipet. 6X LSB was added, samples were boiled for 10 min and separated by 12% SDS-PAGE. IT-Rho expression was determined by western blot of the equivalent of 1 or two oocyte volumes (lanes specified) alongside a standard curve of purified GFP-UtrCH 261, generously provided by Kevin Sonnemann. The blot was probed with anti-GFP (B-2) (1:1000, sc-9996, Santa Cruz, Dallas, TX) primary and goat anti-mouse IR-Dye 800CW (1:10,000, 926\u201332210, LI-COR, Lincoln, NE) secondary antibodies. Visualization was achieved with a LI-COR Odyssey Fc imaging system.\n\n### Purification of recombinant protein from E. coli for antibody purification\n\nBL21 pLysS cells (Thermo Fisher) were transformed with GST-RhoGDI in pGEX6p.1. A positive clone was used to inoculate 12 mL of lysogeny broth (LB) supplemented with 25 \u00b5g/mL ampicillin and cultured ON. The 12 mL culture was added to 1L of LB with ampicillin and shaken at 37\u00b0C until OD600\u00a0~0.6. The culture was induced by adding a final concentration of 0.1 mM IPTG and shaken at 37\u00b0C for 2 hr. BL21 pLysS cells were pelleted at 5300 rpm for 10 min at 4\u00b0C, and the pellet resuspended in Buffer A (50 mM Tris-HCL, pH 7.6; 50 mM NaCl with 1 mM DTT in PBS). Pellets were stored at \u221280\u00b0C. Pellets were thawed at room temperature to promote cell lysis. Triton X-100 was added to a final concentration of 0.6%, PMSF at 500 uM, lysoszyme at 1 mM in 10 mM Tris pH 8.0, 400 \u00b5M Peflabloc, 1 \u00b5g/mL aprotinin, 1 \u00b5g/mL leupeptin. Solubilate was incubated at RT for 30 min, DNAse1 was added to a final concentration of 10 ug/mL, incubated again for at RT for 30 min, and centrifuged at 16,000xg for 10 min at 4\u00b0C. The supernatant was collected and exposed to a column containing glutathione-sepharaose 4B (MilliporeSigma). The column was washed 5x with Buffer A and the protein eluted with 20 mM Tris, pH 8.0, 20 mM glutathione, 400 \u00b5M Peflabloc, 1.25 \u00b5g/mL aprotinin, 14.25 \u00b5g/mL leupeptin, 0.25 mM E-64, 0.5 mM PMSF. Protein concentration was determined by Coomassie stain of a 12% SDS-PAGE alongside a BSA standard curve.\n\n### Antibody generation and purification\n\nFLAG-RhoGDI purified from Sf9 cells was used as an antigen for antibody production in rabbits (Covance, Princeton, NJ). The serum was heat-inactivated at 56\u00b0C for 30 min, diluted 1:1 in 20 mM Tris, pH 7.5, and filtered through a 0.22 \u00b5m syringe. The diluted, filtered serum was loaded onto a column containing GST-GDI coupled to Affi-Gel 15, to minimize antibody cross-reactivity to the FLAG-tag on the antigen. The column was washed 20x with 20 mM Tris, pH 7.5 and 20x with 20 mM Tris, pH 7.5, 500 mM NaCl. Antibody was first eluted with 100 mM glycine, pH 2.5 into 1M Tris, pH 8.8 for neutralization. The column was washed 20x with 20 mM Tris, pH 8.8. Antibody remaining on the column was eluted with 100 mM Triethylamine, pH 11.5 into concentrated HCl and 1M Tris, pH 7.5 for neutralization. The concentration of each fraction was determined by A280. The peak antibody fractions were pooled, dialyzed against PBS (2 \u00d7 2L) ON, and concentrated using a 100 K MW Amicon Ultra-15 Centrifugal filter (MilliporeSigma). An equal volume of glycerol was added and stored at \u221220\u00b0C. Antibody specificity was determined by western blotting of purified protein, X. laevis oocyte whole cell lysate (WCL, described above), WCL of oocytes overexpressing GDI and WCL of oocytes expressing 3xGFP-GDI, separated by 12% SDS-PAGE. The blot was probed with anti-GDI (1:1000) primary and Alexa-Fluor 680 goat anti-rabbit (1:10,000, A21076, Molecular Probes, Eugene, OR) secondary antibodies. Visualization was achieved with a LI-COR Odyssey Fc imaging system.\n\n### Fixing and staining of wounded oocytes\n\nOocytes were wounded, allowed to heal for 2\u20133 min and fixed for 2 hr in 10 mM EGTA, 100 mM KCl, 3 mM MgCl2, 10 mM HEPES, 150 mM sucrose (pH 7.6), 4% PFA, 0.1% glutaraldehyde, 0.1% Triton X-100. Fixed oocytes were washed 5x in TBSN/BSA (5 mg/mL BSA in 1xTBS containing 0.1% NP-40). Oocytes were bisected and blocked in TBSN/BSA for 4 hr at 4\u00b0C. Oocytes were stained with rabbit \u03b1-RhoGDI at 1:1000 in TBSN/BSA for 12 hr, washed 5x in TBSN/BSA over 12 hr, stained with chicken \u03b1-rabbit Alexa Fluor 647 (Invitrogen, Carlesbad, CA) at 1:10,000 for 12 hr in BSN/BSA at 4\u00b0C, and washed 5x in TBSN/BSA over 12 hr.\n\n### Image acquisition, wounding and data analysis\n\nLaser scanning confocal microscopy was performed using a Nikon Eclipse Ti inverted microscope with a Prairie Point Scanner confocal system (Bruker, Middleton, WI). The microscope was fitted with a 440 nm dye laser pumped by a MicroPoint 337 nm nitrogen laser (Andor, South Windsor, CT) for wounding. Brightest-point projections, measurements of fluorescence intensities, area and distances were made in FIJI (Schindelin et al., 2012). Bio-Formats Importer and De-Flicker plugins were used. Ring intensity corrected for background was calculated by quantifying the mean intensity of the ring and subtracting the mean intensity of the background. Total activity was calculated by multiplying the mean intensity of the zone (corrected for background) by the area of the zone, normalized for wound width. GraphPad Prism was used to plot quantifications and perform statistical analyses. An unpaired student\u2019s T-test with a 2-tailed distribution and unequal variance was used to compare two conditions, one-way ANOVA with a Tukey post hoc analysis was used to analyze more than two conditions. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n### Supported lipid bilayer assay\n\nSmall unilamellar vesicles and supported lipid bilayers were prepared with 100% 1,2-dioleoyl-sn-glycero-3-phosphocholine (18:1 DOPC; Avanti Polar Lipids, Inc, Alabaster, AL) as described before (Hansen et al., 2019 ). 250\u00b5L Cy3 labeled GTPases were incubated on SLBs at 200nM final concentration until equilibrium was reached. A 0.5mm silicone tubing was attached drop-to-drop to the chamber with the equilibrated sample via a male luer connector (ibidi GmbH, Gr\u00e4felfing, Germany). After acquisition of few frames in absence of flow, the chamber was flushed at 10\u00b5L/sec with imaging buffer (20mM HEPES pH 7.0, 150mM KCl, 1.5mM MgCl2, 0.5mM EGTA, 100\u00b5M GDP/GTP) alone or in presence of a GTPase solubilizer until baseline was reached. Oxygen scavenger system (1.25mg/mL glucose oxidase, 0.2 mg/mL catalase, 400 mg/mL glucose) was added fresh to each sample and buffer before imaging. TIRF was performed on a Nikon Eclipse Ti inverted microscope with a VisiScope TIRF-FRAP Cell Explorer system (Visitron Systems GmbH, Puchheim, Germany) using a 60\u00d7 Apo TIRF oil-immersion objective (1.49 N.A.). Cy3-labeled proteins were excited with a 561-nm laser line, excitation light was passed through a ET-561nm Laser Bandpass Set (Chroma Technology Corporation, Bellows Falls, VT) before illuminating the sample. Fluorescence emission was detected on a Evolve 512 Delta EMCCD camera (Teledyne Photometrics, Tucson, AZ). Measurements of fluorescence intensities were made in FIJI (Schindelin et al., 2012). Plot Z-axis profile tool and Bio-Formats Importer plugins were used. Fluorescence intensity was corrected for background. To display multiple curves on the same graph, data from different experiments were aligned using the overshoot signal occurring after the flow was started and normalized dividing by the maximum intensity. Data from wash off experiments were fitted with a one component exponential decay function ($y=y_{0}+Ae^{-\\lambdax}$; $y_{0}$= y offset, $A$=amplitude, $\\lambda$=exponential decay constant), choosing a fitting range that did not include the initial overshoot. This was possible because a monoexponential function can be fitted to a range of the data set without affecting the $\\lambda$ value obtained. Koff titration curves were fitted with a hyperbolic function ($y=y_{0}+\\frac{\\lambda_{max}x}{K_{d}+x}$). Origin Pro (OriginLab Corporation, Northampton, MA) was used to analyze data, plot quantifications and perform statistical analyses. An unpaired student\u2019s T-test with a 2-tailed distribution and equal variance was used to compare two conditions. **p<0.01, ***p<0.001, ****p<0.0001.\n",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "13d5538b-e62c-4f56-ad71-f4cd639221c6",
+      "submission_id": "b650e359-f503-4060-931a-4811ba517218",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan Chernoff, Fox Chase Cancer Center United States\n\nReviewers:\n- Jonathan Chernoff, Fox Chase Cancer Center United States\n\n## Review text\n\nDOI: [10.7554/eLife.50471.sa1](https://doi.org/10.7554/eLife.50471.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work revisits an old but still not well understood aspect of cell biology, namely, the role of Rho-GDIs in regulating Rho GTPase signaling. GDIs are relatively understudied compared to GEFs and GAPs and this work helps us better understand how the Rho cycle is regulated in time and space. There has long been a debate about the role of Rho-GDIs in regulating Rho family GTPases. Classically, the model has been that Rho-GDIs extract inactive Rho proteins from membranes and sequester them in the cytosol. The authors here challenge that model, and present a series of straightforward experiments in Xenopus and in vitro that indicate a more complex role for these proteins. Using new tools such as internally tagged small GTPases and GDI mutants that cannot extract small GTPases, the authors find that i) inactive GTPases also reside at the plasma membrane, and not just in a soluble pool bound to Rho-GDI; ii) that GDI differentially suppress active Cdc42 versus Rho; that GDI can extract active GTPases from the membrane; and that, in extraction deficient mutants, levels of active Cdc42 are elevated in vivo, confirming a physiological role, at least in this system. As a result of these experiments, we will need to revise the standard textbook models of Rho GTPase cycling, which, in turn, will make us rethink how cells regulate shape and motility in response to external signals and to internal programs.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Extraction of active RhoGTPases by RhoGDI regulates spatiotemporal patterning of RhoGTPases\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jonathan Chernoff as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an interesting and well-done piece of work that revisits the potential role of Rho-GDIs in regulating Rho GTPase signaling. GDIs are relatively understudied compared to GEFs and GAPs and this work could help us better understand how the Rho cycle is regulated in time and space.\n\nThere has long been a debate about the role of Rho-GDIs in regulating Rho family GTPases. Classically, the model has been that Rho-GDIs extract inactive Rho proteins from membranes and sequester them in the cytosol. The authors here challenge that model, and present a series of straightforward experiments in Xenopus and in vitro that indicate a more complex role for these proteins.\n\nUsing new tools such as internally tagged small GTPases and GDI mutants that cannot extract small GTPases, the authors find that i) inactive GTPases also reside at the plasma membrane, and not just in a soluble pool bound to Rho-GDI; ii) that GDI differentially suppress active Cdc42 versus Rho; that GDI can extract active GTPases from the membrane; and that, in extraction deficient mutants, levels of active Cdc42 are elevated in vivo, confirming a physiological role, at least in this system.\n\nEssential revisions:\n\nOne general criticism of this work is that the results, though convincing, seem somewhat oversold. That is, there is already evidence that Rho-GDIs can interact with active GTPases, as shown in several works from the Cerione lab (e.g., Nomanbhoy and Cerione 1996), so one of the main claims in this manuscript ought to be toned down. That is particular so because, even in this work, the degree to which Rho-GDIs extract active GTPases is far less than that of inactive GTPases. Therefore, the overall model represents more of an important tweak than a revolution in modeling Rho cycling dynamics. However, given the importance of such dynamics to many essential cellular processes, even a key tweak is of great value to the field.\n\n1) Assuming that appropriate antibodies are available, In Figures 1 and 2, it would be useful to get a sense of relative levels of exogenous versus endogenous Rho and Cdc42, respectively. The authors mention potential issues related to overexpression and it would be good to know how much exogenous GTPase is being introduced into the oocytes.\n\n2) Given that Q61L/Q63 forms of these GTPases are unable to cleave GTP, yet still (by the author's model) can be extracted by Rho-GDI, I would like to see a simple assay showing that such complexes (e.g. Cdc42 L61:Rho-GDI) can be isolated from the cytosol by IP. If this experiment isn't technically feasible, I would accept their current evidence as sufficient.\n\n3) To establish the relative localization of Rho-GDI and the GTPases (active pools), the authors should perform line-scans on wound sites like in Figure 4 and report the distance between the peaks for a population of observed cells/wounds.\n\n4) In Figure 1\u2014figure supplement 1, the authors should discuss what they see. I see that the mCherry-Cdc42 zone is a bit larger than the active Cdc42 zone. For RhoA, I am surprised because I cannot see a clear difference by eye. The line-scan is meaningless because of the low SNR. Please discuss this point. One would need a fully orthogonal method to really decide which of the fusion protein is functional. Immunostaining would be the method of choice, but it is known that antibodies (raised to the C-term hypervariable region) are often of only low quality. I do not have a problem that IT-GTPase constructs are good markers of Rho GTPase localization.\n\n5) Figure 5C: The authors make a strong point that GDI affects Cdc42 more robustly than RhoA. To support this point, a statistical analysis will be needed.\n\n6) The authors use RhoA and Cdc42 (Q63/Q61L) mutants in their biochemical assays. They mention that G12/G14V RhoA and Cdc42 mutants work equally well. I would show that data. The work of Michaelson (Michaelson et al., 2001) clearly shows that G12/G14V Cdc42/Rho mutants retain GDI interactions in cells, whereas Q61/Q63L Cdc42/Rho mutants do not. Experiments with a RhoA biosensor shows that Q63L RhoA biosensors are inactivatable with GDI overexpression, whereas this is not the case with the Q63L mutation (Pertz et al., 2006). I would expect that the G12/G14V Cdc42/Rho mutants interact in a different fashion with GDI than their Q61/Q63L counterparts. These issues do not necessarily require new experiments, but will require adjustments to the Discussion.\n\n7) Given the provocative possibility that there might be different molecular requirement for different spatio-temporal patterns (e.g. Rho and Cdc42 zones), I would strongly suggest that the authors perform an experiment with photoactivatable biosensors to measure the directional GTPase flux in response to the GDI perturbations (overexpression of WT and mutant). This would add greatly to the paper.\n\n8) The paper would benefit from a discussion about the complexity of spatio-temporal Rho GTPase signaling, to address the following \"big picture\" points: Where is the field going? What needs to be done? I would also highlight the complexity of these signaling networks, with the requirement of the zone initiation/maintenance being different for Rho and Cdc42 (as depicted in Figure 10\u2014figure supplement 1). Further it would be good to mention that Rho GTPase -GDI interactions can be regulated by phosphorylation: both at the level of the GTPase (RhoA is phosphorylated by PKA at its C-term \u2013 this regulates GDI interaction PMID: 8599934), and at the level of GDI (by phosphorylation by PAK PMID: 15225553, or Src PMID: 16943322). These phosphorylation events might provide feedback regulation (by Rho GTPase or adhesion signaling) to spatially fine tune the system.\n",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a0e21478-5fb5-46af-a0ed-f110cce7bfa8",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C1",
+      "claim": "90\u201395% of RhoGTPases are maintained in a soluble form by RhoGDI.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 90\u201395% of RhoGTPases are maintained in a soluble form by RhoGDI, which is generally viewed as a passive shuttle for inactive RhoGTPases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact in the abstract without specific citation, suggesting it is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "f2f5703a-c7ae-4c07-a501-8aed4db99fc7",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C2",
+      "claim": "RhoGDI is generally viewed as a passive shuttle for inactive RhoGTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 90\u201395% of RhoGTPases are maintained in a soluble form by RhoGDI, which is generally viewed as a passive shuttle for inactive RhoGTPases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing view in the field as stated by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "04a9910e-4aad-44a1-8173-15ca860847f4",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C3",
+      "claim": "RhoGDI can extract both inactive and active RhoGTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these methods, we identified pools of active and inactive RhoGTPase associated with the membrane, found that RhoGDI can extract both inactive and active RhoGTPases, and found that extraction of active RhoGTPase contributes to their spatial regulation around cell wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data from both in vitro and in vivo experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "c06c7c2d-20ca-49e8-a4bd-254d0aee63fc",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C4",
+      "claim": "Extraction of active RhoGTPase by RhoGDI contributes to spatial regulation of RhoGTPases around cell wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these methods, we identified pools of active and inactive RhoGTPase associated with the membrane, found that RhoGDI can extract both inactive and active RhoGTPases, and found that extraction of active RhoGTPase contributes to their spatial regulation around cell wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data using GDI mutants and activity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "d37c7853-a9b4-451b-9960-998bf163fba8",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C5",
+      "claim": "RhoGDI directly contributes to the spatiotemporal patterning of RhoGTPases by removing active RhoGTPases from the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that RhoGDI directly contributes to the spatiotemporal patterning of RhoGTPases by removing active RhoGTPases from the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "5dc54272-9112-4034-a4f0-37a7f59c3997",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C6",
+      "claim": "Rho family GTPases are essential signaling proteins that mediate morphological changes in cells by directing local cytoskeletal rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rho family GTPases, including Rho, Rac and Cdc42, are essential signaling proteins that mediate morphological changes in cells by directing local cytoskeletal rearrangements (Bishop and Hall, 2000; Kimura et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "76ec0ebe-9355-4c2f-8bf5-aec8f2da2ff1",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C7",
+      "claim": "A narrow, concentrated zone of Rho activity directs the formation of a ring of actin filaments and myosin-2 at the equatorial cortex that drives cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a narrow, concentrated zone of Rho activity directs the formation of a ring of actin filaments and myosin-2 at the equatorial cortex that drives cytokinesis (Bement et al., 2005; Yonemura et al., 2004; Y\u00fcce et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "d253033d-ab29-42fb-95bb-5787fb5df9f7",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C8",
+      "claim": "Rho, Rac and Cdc42 are activated near the leading edge of crawling cells in patterns that correspond to local cycles of protrusion, adhesion and retraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Rho, Rac and Cdc42 are activated near the leading edge of crawling cells in patterns that correspond to local cycles of protrusion, adhesion and retraction (Machacek et al., 2009; Martin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "4d0f3894-71b2-4769-bc95-047f0b8c216d",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C9",
+      "claim": "GEFs activate GTPases by promoting exchange of GDP for GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "guanine nucleotide exchange factors (GEFs), which activate GTPases by promoting exchange of GDP for GTP (Rossman et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "a345e110-a5e5-4b81-a5c5-d0264d5362ae",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C10",
+      "claim": "GAPs inactivate GTPases by promoting GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "GTPase activating proteins (GAPs), which inactivate GTPases by promoting GTP hydrolysis (Moon and Zheng, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "f8dd473f-a83a-4bc9-85eb-da0f7f687328",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C11",
+      "claim": "GDIs solubilize GTPases to generate a large reservoir of heterodimeric GTPase:GDI complexes in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "guanine nucleotide dissociation inhibitors (GDIs), which solubilize GTPases to generate a large reservoir of heterodimeric GTPase:GDI complexes in the cytoplasm (Garcia-Mata et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "d97903e6-4797-46fc-ae56-e2151490c191",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C12",
+      "claim": "When GTPase:GDI complexes are purified from cell lysates, the great majority of GTPase within the complex is in the inactive, GDP-bound form.",
+      "claim_type": "EXPLICIT",
+      "source": "First, when GTPase:GDI complexes are purified from cell lysates, the great majority of GTPase within the complex is in the inactive, GDP-bound form (Abo et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "941d92a7-07f4-4376-89b1-44f4718476ab",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C13",
+      "claim": "Binding of GTPases by GDI strongly suppresses GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, binding of GTPases by GDI strongly suppresses GTP hydrolysis (Hart et al., 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "af504418-d5ef-4c3c-8fcc-824203b98ee1",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C14",
+      "claim": "GDIs bind both inactive and active GTPases with relatively high affinity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "However, work by several labs has shown that GDIs bind both inactive and active GTPases with relatively high affinity in vitro (Hancock and Hall, 1993; Hart et al., 1992; Nomanbhoy and Cerione, 1996; Tnimov et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "9c9c2b92-1a4b-4eb2-a0d9-27f94e585518",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C15",
+      "claim": "Fusion with fluorescent proteins at the amino terminus can impair GTPase localization.",
+      "claim_type": "EXPLICIT",
+      "source": "First, fusion with fluorescent proteins at the amino terminus can impair GTPase localization (Yonemura et al., 2004; Y\u00fcce et al., 2005) and function (Watson et al., 2014; Freisinger et al., 2013; Howell et al., 2012; Bendez\u00fa et al., 2015; Lee et al., 2015; Coll et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "9f658428-b9e6-40e1-9dc5-5b0e0ef57864",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C16",
+      "claim": "Fusion with the carboxyl-terminus prevents prenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "while fusion with the carboxyl-terminus prevents prenylation (Howell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "e9a5ee26-832e-4d82-8669-95d90dd58e04",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C17",
+      "claim": "GFP- and YFP-Rho fail to concentrate at the cell equator during cytokinesis in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "it has been demonstrated that GFP- and YFP-Rho fail to concentrate at the cell equator during cytokinesis in mammalian cells (Yonemura et al., 2004; Y\u00fcce et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "0c3b855e-e28c-4bf9-8ed1-c42ff985a076",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C18",
+      "claim": "In gene replacement studies in yeast, amino-terminally tagged Cdc42 fails to localize properly, yields temperature sensitivity and/or aberrant morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, in gene replacement studies in yeast, amino-terminally tagged Cdc42 fails to localize properly, yields temperature sensitivity and/or aberrant morphology (Bendez\u00fa et al., 2015; Coll et al., 2007; Freisinger et al., 2013; Howell et al., 2012; Lee et al., 2015; Watson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "baf9b695-da2c-4abc-b6a3-2056369cf471",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C19",
+      "claim": "mCh-Rho, Rac and Cdc42 are not properly recruited to wounds in Xenopus laevis oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also found that mCh-Rho, Rac and Cdc42 are not properly recruited to wounds in Xenopus laevis oocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the current study supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "6fb58644-2186-40b5-aa52-76593328e3de",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C20",
+      "claim": "The zones of recruitment defined by amino-terminally tagged GTPases are much less focused and much less intense than those obtained with either the activity reporters or the internally-tagged GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the zones of recruitment defined by amino-terminally tagged GTPases are much less focused and much less intense than those obtained with either the activity reporters or the internally-tagged GTPases (Figure 1\u2014figure supplement 1; see below for functional analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "a9913bff-cfe5-4305-bf61-cefa017d6bf5",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C21",
+      "claim": "IT-GTPases were co-expressed with wild-type GDI to avoid disrupting the GTPase:GDI stoichiometric ratio, thereby preventing GTPase aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that (1) IT-GTPases were co-expressed with wild-type (WT) GDI to avoid disrupting the GTPase:GDI stoichiometric ratio, thereby preventing GTPase aggregation (Boulter et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citation to previous work showing the importance of maintaining stoichiometry.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "0c984559-77a0-4ca5-bec2-530190c43707",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C22",
+      "claim": "IT-GTPases were expressed at the minimal level necessary to detect signal around the wound (36% above endogenous Rho).",
+      "claim_type": "EXPLICIT",
+      "source": "and (2) IT-GTPases were expressed at the minimal level necessary to detect signal around the wound (36% above endogenous Rho, based on proteomic data from W\u00fchr et al., 2014) to avoid potential overexpression phenotypes (see Materials and methods; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail supported by proteomic data from a cited study and Western blot data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "65890b33-cc62-49f3-a96a-32c534226090",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C23",
+      "claim": "Both IT-Rho and IT-Cdc42 were recruited to concentric rings around the wound.",
+      "claim_type": "EXPLICIT",
+      "source": "Both IT-Rho and IT-Cdc42 were recruited to concentric rings around the wound (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "fdbcf105-e8d4-435c-8d37-3f9b57e8f415",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C24",
+      "claim": "IT-Rho spatially overlapped with the Rho activity zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of IT-Rho to a Rho activity reporter (mRFP-2xrGBD; Davenport et al., 2016) revealed that IT-Rho spatially overlapped with the Rho activity zone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1B and comparison with activity reporter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "0d4c1dd4-7f24-4a40-bf8f-3e4f1bc8c52a",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C25",
+      "claim": "IT-Cdc42 localized throughout the active Cdc42 zone, as well as extended slightly beyond it towards the wound center.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of IT-Cdc42 to a Cdc42 activity reporter (mRFP-wGBD; Benink and Bement, 2005) revealed that IT-Cdc42 localized throughout the active Cdc42 zone, as well as extended slightly beyond it towards the wound center (see also below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1C and comparison with activity reporter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "d0245d32-b841-4f5d-8dea-ecc4fefc0f9c",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C26",
+      "claim": "IT-Rac concentrated around wounds in the same region as IT-Cdc42.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the behavior of IT-Rac and found that it concentrated around wounds in the same region as IT-Cdc42, as expected from previous experiments (Figure 1\u2014figure supplement 3; Abreu-Blanco et al., 2014; Benink and Bement, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1\u2014figure supplement 3 and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "ab310d0c-2e91-4f25-898e-96ce68a90009",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C27",
+      "claim": "Cy3-Rho and Cy3-Cdc42 were microinjected into oocytes 41% and 53% above endogenous levels, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Cy3-Rho and Cy3-Cdc42, bound to GDI for stabilization, were microinjected into oocytes 41% and 53% above endogenous levels, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "de1b06af-04df-41ad-b7dd-0940e5e6d99e",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C28",
+      "claim": "Both Cy3-Rho and Cy3-Cdc42 localized to wounds in a manner indistinguishable from their IT counterparts expressed in the oocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Cy3-Rho and Cy3-Cdc42 localized to wounds (Figure 1D,E), in a manner indistinguishable from their IT counterparts expressed in the oocyte (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figures 1D-G comparing Cy3-labeled and IT-tagged GTPases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "70156be2-d641-4912-a210-83e3c7a681df",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C29",
+      "claim": "Cy3-Rho completely overlapped with the zone of Rho activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed with IT-Rho and IT-Cdc42, Cy3-Rho completely overlapped with the zone of Rho activity while Cy3-Cdc42 localized throughout and slightly interior to the active Cdc42 zone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "0084bd9a-a720-46cf-ba48-9d4965edaef9",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C30",
+      "claim": "Cy3-Cdc42 localized throughout and slightly interior to the active Cdc42 zone.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed with IT-Rho and IT-Cdc42, Cy3-Rho completely overlapped with the zone of Rho activity while Cy3-Cdc42 localized throughout and slightly interior to the active Cdc42 zone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "4a4510bc-ef8d-4c09-8bfa-e80340194976",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C31",
+      "claim": "IT-Rho and Cy3-Rho localized to the cytokinetic apparatus in Xenopus embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "IT-Rho and Cy3-Rho localized to the cytokinetic apparatus and epithelial junctions in Xenopus embryos, consistent with previous results obtained with a Rho activity reporter (Figure 2A\u2013C; Bement et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2A-C and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "d4c73563-6cea-4ba3-bfaa-9808e3cdc29e",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C32",
+      "claim": "IT-Rho and Cy3-Rho localized to epithelial junctions in Xenopus embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "IT-Rho and Cy3-Rho localized to the cytokinetic apparatus and epithelial junctions in Xenopus embryos, consistent with previous results obtained with a Rho activity reporter (Figure 2A\u2013C; Bement et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2A-C and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "c3483143-8ccf-49ed-97ba-ceaf525b2386",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C33",
+      "claim": "IT-Cdc42 localized to exocytosing cortical granules.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, IT-Cdc42 localized to exocytosing cortical granules (Figure 2D), consistent with previous results obtained with a Cdc42 activity reporter (Yu and Bement, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2D and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "1416e382-79cb-456d-95e9-433c11f7eff7",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C34",
+      "claim": "IT-Cdc42 was recruited to cell-cell junctions and enriched there upon wounding.",
+      "claim_type": "EXPLICIT",
+      "source": "IT-Cdc42 was also recruited to cell-cell junctions and enriched there upon wounding (Figure 2E), a behavior previously revealed using a Cdc42 activity reporter (Clark et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2E and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "fe5bbd00-ec83-4d40-932c-471a31476fad",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C35",
+      "claim": "C3-insensitive IT-Rho-N41V rescues Rho activity in the presence of C3.",
+      "claim_type": "EXPLICIT",
+      "source": "In control oocytes expressing the probe for active Rho, Rho activity around wounds was suppressed by C3 (Figure 2F,G), while cells expressing IT-Rho-N41V generated a spatially defined zone of Rho activity around the wound that closed over similar timescales as the control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F,G demonstrating functional rescue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "fddc18db-fe50-4291-abb4-68ecc8b7f8e4",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C36",
+      "claim": "Cells expressing amino-terminally tagged Rho (mCh-Rho-N41V) failed to rescue Rho activity upon inhibition of endogenous Rho by C3.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells expressing amino-terminally tagged Rho (mCh-Rho-N41V) failed to rescue Rho activity upon inhibition of endogenous Rho by C3 (Figure 2H, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2H and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "1b26e1cf-fa93-4a15-9553-2cfea5ed39af",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C37",
+      "claim": "IT-Rho can functionally substitute for its endogenous counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that, unlike amino-terminally tagged GTPases, both IT- and Cy3-labeled GTPases are faithful reporters of the distribution of GTPases and show that IT-Rho can functionally substitute for its endogenous counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the rescue experiments and localization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "d3bc855b-1c07-4007-b96f-1e202d79708f",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C38",
+      "claim": "There is a pool of inactive, membrane-bound Cdc42 interior to the Cdc42 activity zone.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that Cdc42 extends slightly interior to its zone of activity suggests that there may be a pool of inactive, membrane-bound Cdc42 at this location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that total Cdc42 extends beyond the activity zone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "29816f5b-27e0-40c1-a4ef-b36a54752f2e",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C39",
+      "claim": "Abr, a Cdc42-GAP, localizes interior to the Cdc42 zone.",
+      "claim_type": "EXPLICIT",
+      "source": "This notion is consistent with the previous observation that Abr, a Cdc42-GAP thought to regulate Cdc42 activity at wounds, also localizes interior to the Cdc42 zone (Vaughan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "90edb482-41c3-43a4-ab5f-e7aa58afda54",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C40",
+      "claim": "Overexpression of Abr resulted in a dose-dependent loss of active Cdc42 at wounds while having far less effect on Cy3-Cdc42.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this resulted in a dose-dependent loss of active Cdc42 at wounds while having far less effect on Cy3-Cdc42 (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "9d0c76e5-8b5e-45b3-99d9-2f62e1288c0a",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C41",
+      "claim": "Substantial pools of both active and inactive GTPases can be dynamically maintained at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These results further demonstrate that the IT- and Cy3-GTPases are functional. More importantly, they demonstrate that substantial pools of both active and inactive GTPases can be dynamically maintained at the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the Abr overexpression experiments showing differential effects on total vs. active Cdc42.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "09cf7dd3-ada2-44e7-b4f5-72811e7d35c3",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C42",
+      "claim": "3xGFP-GDI is enriched at wounds and forms a broad zone that peaks between active Rho and active Cdc42.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that 3xGFP-GDI is enriched at wounds and forms a broad zone that peaks between active Rho and active Cdc42 (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "0583a418-8acc-458e-b4a2-4c8d3a2d9b17",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C43",
+      "claim": "Endogenous GDI accumulated at wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results obtained with 3XGFP-GDI, endogenous GDI accumulated at wounds (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "f93fb221-384a-4a0a-8dbc-761ff34554f5",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C44",
+      "claim": "GDI accumulation occurs at discrete regions of the plasma membrane that are enriched with its GTPase clients.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that GDI accumulation occurs at discrete regions of the plasma membrane that are enriched with its GTPase clients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observation that GDI localizes to wounds where GTPases are concentrated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "8c6e9a93-7f3d-4521-8fdc-a834189373c5",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C45",
+      "claim": "Overexpression of GDI via mRNA microinjection potently suppressed both Rho and Cdc42 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As an initial test of this possibility, we overexpressed GDI via mRNA microinjection. This manipulation potently suppressed both Rho and Cdc42 activity, as well as Cy3-Rho and Cy3-Cdc42 localization, suggesting that GDI exerts its effects via extraction of the GTPases (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "9e1d984d-9c9d-444a-90eb-0328e4045f5e",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C46",
+      "claim": "Overexpression of GDI suppressed Cy3-Rho and Cy3-Cdc42 localization.",
+      "claim_type": "EXPLICIT",
+      "source": "This manipulation potently suppressed both Rho and Cdc42 activity, as well as Cy3-Rho and Cy3-Cdc42 localization, suggesting that GDI exerts its effects via extraction of the GTPases (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "e22e88b3-7df1-4530-bacc-13c192897c6d",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C47",
+      "claim": "High concentrations of microinjected GDI suppressed both Rho and Cdc42 activity at wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "High concentrations of microinjected GDI suppressed both Rho and Cdc42 activity at wounds (Figure 5B,C), consistent with the results obtained from GDI via mRNA-mediated overexpression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "1a6c7256-54e5-4c66-8886-1a39b315e8fd",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C48",
+      "claim": "Slight increases (15.8%) in GDI levels resulted in a greater reduction of Cdc42 activity compared to Rho.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more modest increases revealed differential effects on Rho and Cdc42. Specifically, slight increases (15.8%) in GDI levels resulted in a greater reduction of Cdc42 activity compared to Rho (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "99c5e48d-bbbc-4371-9aef-6221471f94a8",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C49",
+      "claim": "GDI differentially impacts Rho and Cdc42 activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that GDI differentially impacts Rho and Cdc42 activity in vivo and that this effect does not require gross overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the dose-response experiments with GDI.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "8782cf94-5c7b-452e-b76f-c9b5812e3bf3",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C50",
+      "claim": "Spontaneous release of inactive, GDP-bound Cdc42 from the membrane has a half-life of 37.24 \u00b1 3.05 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous release of inactive, GDP-bound Cdc42 from the membrane was rather slow (t1/2 = 37.24 \u00b1 3.05 s), however the addition of excess GDI lead to a dramatic acceleration of dissociation (ca.20-fold; Figure 6C, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from the supported lipid bilayer assay shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "1b400658-df57-4c2c-8b83-08d1680b7e4b",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C51",
+      "claim": "Addition of excess GDI leads to a dramatic acceleration of Cdc42 dissociation from membranes (ca. 20-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous release of inactive, GDP-bound Cdc42 from the membrane was rather slow (t1/2 = 37.24 \u00b1 3.05 s), however the addition of excess GDI lead to a dramatic acceleration of dissociation (ca.20-fold; Figure 6C, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from the supported lipid bilayer assay shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "5287f2ea-a253-4e4b-82cb-ed0a71f706e7",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C52",
+      "claim": "GDI directly extracts GTPases from membranes rather than simply sequestering them in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether this was the result of either simple sequestration in solution or, alternatively, direct extraction of Cdc42 from membranes, we performed assays in the presence of an alternative solubilizer (RabGGTase beta) that sequesters the GTPase prenyl moiety (Figure 6C). Sequestration alone only marginally affected the rate of dissociation, demonstrating that GDI directly extracts GTPases from membranes (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing GDI to RabGGTase beta shown in Figure 6C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "7a0b0cba-82a9-4bad-80d4-ec03a4cb6b5d",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C53",
+      "claim": "RhoGDI was able to extract both inactive (GDP-bound) and active (GTP\u03b3S-bound, G12V/G14V) Cdc42 and Rho in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, RhoGDI was able to extract both inactive (GDP-bound) and active (GTP\u03b3S-bound, G12V/G14V) Cdc42 and Rho in a concentration-dependent manner (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from the supported lipid bilayer assay shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "19023571-363d-4baa-9592-5dab2e04751c",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C54",
+      "claim": "GDI extracted GDP-bound GTPase more efficiently than GTP\u03b3S-bound, G12V/G14V GTPases (1.5 fold difference).",
+      "claim_type": "EXPLICIT",
+      "source": "Although GDI extracted GDP-bound GTPase more efficiently than GTP\u03b3S-bound, G12V/G14V GTPases (1.5 fold difference), it was still able to effectively facilitate the dissociation of the latter (Figure 7C,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7C,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "d7aa1b22-4abd-4ab3-9055-fc27316499d1",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C55",
+      "claim": "GTP-bound Q61L/Q63L variants were also extracted by GDI, albeit with reduced rates compared to their G12V/G14V counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "We made qualitatively similar observations for the GTP-bound Q61L/Q63L variants, which were also extracted by GDI, albeit with reduced rates compared to their G12V/G14V counterparts (Figure 7\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "0e61095c-601a-4c9d-bb44-51f1b3058ae4",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C56",
+      "claim": "The affinities of GDI for the active and inactive GTPases on membranes were surprisingly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "The affinities of GDI for the active and inactive GTPases on membranes, determined by hyperbolic fits to the extraction rates, were surprisingly similar (Figure 7G,H, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and analysis shown in Figure 7G,H and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "39e71c8e-96a1-4d65-8f91-1c0fdeff2438",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C57",
+      "claim": "The maximal rates of extraction depend on the activity state of GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the maximal rates of extraction were not, indicating that the rate-limiting step of membrane extraction depends on the activity state of GTPases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the kinetic analysis of extraction rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "a7de36b4-3bb4-4923-8a28-6a069b809c8e",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C58",
+      "claim": "Bovine GDI1 was able to extract both GDP- as well as GTP-bound Cdc42Q61L and RhoQ63L variants.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether extraction of active and inactive GTPases is a conserved ability among GDI proteins, we also studied mammalian GDI. Similar to its Xenopus ortholog, bovine GDI1 was able to extract both GDP- as well as GTP-bound Cdc42Q61L and RhoQ63L variants (Figure 7\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "b9690e32-c37c-48cd-89ba-c85ba16399ff",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C59",
+      "claim": "GDI E158/9Q (GDI-QQ) showed a significant increase in recruitment to wounds relative to WT GDI.",
+      "claim_type": "EXPLICIT",
+      "source": "GDI mutants \u039451\u2013199, E158/9A and E158/9Q were halo-tagged, expressed in oocytes and their recruitment to wounds was quantified relative to WT GDI. GDI \u039451\u2013199 showed minimal recruitment to wounds, however both GDI E158/9A and E158/9Q showed a significant increase in recruitment to wounds relative to WT GDI, with GDI E158/9Q (GDI-QQ) having the greatest increase (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "abac5368-bd41-48a6-95e9-dbd695d3dba5",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C60",
+      "claim": "GDI-QQ retained most of its ability (less than two-fold reduction) to extract inactive (GDP-bound) Cdc42.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GDI-QQ retained most of its ability (less than two-fold reduction) to extract inactive (GDP-bound) Cdc42 but was completely deficient in extracting active (both GTP\u03b3S-bound G12V and GTP-bound Q61L) Cdc42 (Figure 8C, Figure 8\u2014figure supplement 2, Figure 7\u2014figure supplement 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "ef4f0d8b-61c5-44d6-9013-44646968d80a",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C61",
+      "claim": "GDI-QQ was completely deficient in extracting active (both GTP\u03b3S-bound G12V and GTP-bound Q61L) Cdc42.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GDI-QQ retained most of its ability (less than two-fold reduction) to extract inactive (GDP-bound) Cdc42 but was completely deficient in extracting active (both GTP\u03b3S-bound G12V and GTP-bound Q61L) Cdc42 (Figure 8C, Figure 8\u2014figure supplement 2, Figure 7\u2014figure supplement 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "8512dd5d-200e-465f-9d6e-f3a4a8909459",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C62",
+      "claim": "GDI-QQ retained some ability to extract active GTP\u03b3S-bound G14V Rho, but not GTP-bound Q63L Rho.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar observations were made for Rho, however GDI-QQ retained some ability to extract active GTP\u03b3S-bound G14V, but not GTP-bound Q63L Rho (Figure 8C, Figure 8\u2014figure supplement 2, Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "ec062c88-e668-4e8f-a4d4-ac8692f653ca",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C63",
+      "claim": "WT GDI significantly reduced the amount of Cdc42 (G12V) around wounds, while GDI-QQ did not.",
+      "claim_type": "EXPLICIT",
+      "source": "While WT GDI significantly reduced the amount of Cdc42 (G12V) around wounds, GDI-QQ did not (Figure 9A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "dbd7d254-9d55-41d0-b3c5-fa758e2fa31c",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C64",
+      "claim": "WT GDI significantly reduced the amount of Cy3-Cdc42(GTP\u0263S) around wounds while GDI-QQ did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we compared the effects of WT vs. QQ GDI overexpression on wounded oocytes microinjected with Cy3-Cdc42 bound to GTP\u0263S. WT GDI significantly reduced the amount of Cy3-Cdc42(GTP\u0263S) around wounds while GDI-QQ did not (Figure 9C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "64739b28-640d-4501-8acf-5e5aa4334af5",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C65",
+      "claim": "GDI can extract active GTPase from the plasma membrane in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that GDI can extract active GTPase from the plasma membrane in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experiments with GDI-QQ showing differential effects on active vs. inactive GTPases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "73137909-27c4-4b14-af84-3c68c3ba8d85",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C66",
+      "claim": "Expression of GDI-QQ significantly elevated Cdc42 activity around wounds, in contrast to Rho which was unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Cdc42 activity around wounds was significantly elevated, in contrast to Rho which was unaffected (Figure 9E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "e48a784e-ef95-4c9f-a1da-6bf8e864acea",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C67",
+      "claim": "Expression of GDI-QQ elevated Cy3-Cdc42 levels around wounds relative to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether the increase in activity was due to an increase of total Cdc42 around wounds as opposed to competition between GDI-QQ and the Cdc42 activity probe, we repeated the experiment with Cy3-Cdc42. Similar to the results obtained with the activity reporter, expression of GDI-QQ elevated Cy3-Cdc42 levels around wounds relative to controls (Figure 9G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "5bf073fe-52f2-42f6-9dc8-0ed3e4302470",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C68",
+      "claim": "GDI directly extracts active Cdc42 throughout the Cdc42 zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Cumulatively, these data suggest that GDI directly extracts active Cdc42 throughout the Cdc42 zone, and that extraction of active Cdc42 is necessary for its regulation around wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the GDI-QQ experiments showing increased Cdc42 activity when extraction is impaired.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "d77867f4-8438-4f3f-8976-9da0e731c949",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C69",
+      "claim": "Extraction of active Cdc42 by GDI is necessary for its regulation around wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Cumulatively, these data suggest that GDI directly extracts active Cdc42 throughout the Cdc42 zone, and that extraction of active Cdc42 is necessary for its regulation around wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the GDI-QQ experiments showing increased Cdc42 activity when extraction is impaired.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "2b3a5ae7-31a9-464e-b439-007349bb509e",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C70",
+      "claim": "Pools of inactive Cdc42 at the plasma membrane spatially coincide with a local Cdc42-GAP, Abr.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the pool of inactive Cdc42 spatially coincides with a local Cdc42-GAP, Abr (Vaughan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with previous work showing Abr localization.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "edf91767-f152-4cea-9ae0-707a2f6d6871",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C71",
+      "claim": "GTP hydrolysis and extraction of GTPases, while likely linked, are not necessarily tightly coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding has important mechanistic implications for the regulation of GTPase activity. Namely, it suggests that GTP hydrolysis and extraction of GTPases, while they are likely linked, are not necessarily tightly coupled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observation of inactive GTPases remaining at the membrane.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "0e62c675-1c93-4dbe-a8ec-b31725c4b8af",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C72",
+      "claim": "GTPases might cycle through multiple rounds of activation and inactivation by GEFs and GAPs while remaining associated with the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the possibility that GTPases might cycle through multiple rounds of activation and inactivation by GEFs and GAPs while remaining associated with the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the observation of inactive GTPases at the membrane.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "36f635e4-0f3c-4122-943b-91e4e71747ed",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C73",
+      "claim": "GDI localization in the same place where the GTPases are especially abundant implies that its accumulation reflects interaction with its GTPase clients.",
+      "claim_type": "EXPLICIT",
+      "source": "The localization of GDI in the same place where the GTPases are especially abundant implies that its accumulation reflects interaction with is GTPase clients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the co-localization of GDI with GTPases at wounds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "d1e51897-9565-420b-b79d-67d1ecbac2ce",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C74",
+      "claim": "Q61/63L variants interact more weakly with GDI compared to their G12/14V counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggest that Q61/63L variants interact more weakly with GDI compared to their G12/14V counterparts (Hodgson et al., 2016; Michaelson et al., 2001; Pertz et al., 2006); we observe a similar trend concerning membrane extraction (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous studies and experimental data from the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "905baaeb-da3d-4d37-b173-8e9ad6374e22",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C75",
+      "claim": "Cdc42 activity is lost throughout its zone during cell wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on an indirect approach involving photoactivatable Rho and Cdc42 activity reporters, it was found that Cdc42 activity is lost throughout its zone, while Rho activity is preferentially lost at the trailing edge of its zone (Burkel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "6e4a4ca9-a1b3-4df3-98f7-b7458f4ce41f",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C76",
+      "claim": "Rho activity is preferentially lost at the trailing edge of its zone during cell wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on an indirect approach involving photoactivatable Rho and Cdc42 activity reporters, it was found that Cdc42 activity is lost throughout its zone, while Rho activity is preferentially lost at the trailing edge of its zone (Burkel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "e2571f37-99c8-424c-a6bb-ef8531d4b1be",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C77",
+      "claim": "GDI is responsible for the removal of active Cdc42 throughout the Cdc42 zone.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here suggest that GDI is responsible for the removal of active Cdc42 throughout the Cdc42 zone, while Rho is inactivated by a trailing edge GAP prior to extraction (Figure 10\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the current study's findings and previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "27f4a71b-1a73-4729-9112-49de3a8cee22",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C78",
+      "claim": "Rho is inactivated by a trailing edge GAP prior to extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here suggest that GDI is responsible for the removal of active Cdc42 throughout the Cdc42 zone, while Rho is inactivated by a trailing edge GAP prior to extraction (Figure 10\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the current study's findings and previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "09128c98-ed8b-4256-bf8e-f689ca2e4090",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C79",
+      "claim": "GDI binding strongly inhibits GTP hydrolysis and nucleotide exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, because GDI binding strongly inhibits GTP hydrolysis and nucleotide exchange (Hart et al., 1992; Ueda et al., 2001), active GTPase may exist in its soluble form in complex with GDI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "2d4128f5-a3e3-414a-a59e-600bc1867ca8",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C80",
+      "claim": "Active GTPases are less stably bound to GDI compared to their inactive form.",
+      "claim_type": "EXPLICIT",
+      "source": "However, complementary evidence from biochemical and biological studies suggest that active GTPases are less stably bound to GDI compared to their inactive form (Hodgson et al., 2016; Slaughter et al., 2009; Tnimov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "1d92a4e4-496e-4196-bc85-8b7ea2ddbf94",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C81",
+      "claim": "The secondary extraction branch may represent a loop through which active GTPases are not only removed from cell membranes, but rapidly returned to them.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, this secondary extraction branch may actually represent a loop through which active GTPases are not only removed from cell membranes, but rapidly returned to them (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative conclusion based on the findings and previous work on GDI binding stability.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "3e0137dc-aead-4a0b-b387-006849defe33",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C82",
+      "claim": "The extraction-return loop mechanism might enhance the spatial reach of GTPase activity within the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mechanism might enhance the spatial reach of GTPase activity within the plasma membrane or even mediate its spreading between different membrane compartments (Palamidessi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion supported by citation to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "e63734a1-54ac-49fa-bb32-63cbc695bf57",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C83",
+      "claim": "The extraction-return loop mechanism might mediate spreading of GTPase activity between different membrane compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mechanism might enhance the spatial reach of GTPase activity within the plasma membrane or even mediate its spreading between different membrane compartments (Palamidessi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion supported by citation to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "aaf26a39-177e-48e2-b870-150c642c73dc",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C84",
+      "claim": "Differential phosphorylation of GDI promotes global increases in the activity of Rho, Rac or Cdc42 by modulating the affinity of GDI for different GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, several studies have reported that the differential phosphorylation of GDI promotes global increases in the activity of Rho, Rac or Cdc42 by modulating the affinity of GDI for different GTPases (reviewed by Garcia-Mata et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "ad1b86c6-2852-42bb-b232-51dae99b9092",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C85",
+      "claim": "Different isoforms of protein kinases C act at different regions around cell wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, results from empirical (Vaughan et al., 2014) and modeling (Holmes et al., 2016) studies not only indicate that different isoforms of protein kinases C act at different regions around cell wounds, but also have different impacts on Rho and Cdc42 activity zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "af18c1a2-6dd9-4604-adc3-3cf303ef52c1",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C86",
+      "claim": "Different isoforms of protein kinases C have different impacts on Rho and Cdc42 activity zones.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, results from empirical (Vaughan et al., 2014) and modeling (Holmes et al., 2016) studies not only indicate that different isoforms of protein kinases C act at different regions around cell wounds, but also have different impacts on Rho and Cdc42 activity zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "620a1689-9ff1-4fe1-9c23-f3818435ff59",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C87",
+      "claim": "A high level of precision in GTPase patterning is achieved by a complex regulatory network comprising kinases, GEFs, GAPs, and GDI.",
+      "claim_type": "EXPLICIT",
+      "source": "When taken with the results of this current study, a picture emerges in which a high level of precision in GTPase patterning is achieved by a complex regulatory network comprising kinases, GEFs, GAPs, and GDI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion integrating the current findings with previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "862f9f1b-d976-4ae9-a785-c1a239ba1f0d",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C88",
+      "claim": "The Q61L substitution directly and strongly impairs spontaneous nucleotide hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The Q61L substitution directly and strongly impairs spontaneous nucleotide hydrolysis, whereas the G12V mutation only moderately inhibits spontaneous GTPase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about these mutants supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "8a94d9c9-959f-4f27-8d08-2ba87cea846c",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C89",
+      "claim": "The G12V mutation only moderately inhibits spontaneous GTPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The Q61L substitution directly and strongly impairs spontaneous nucleotide hydrolysis, whereas the G12V mutation only moderately inhibits spontaneous GTPase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about these mutants supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "5cb351c2-a82f-4e3d-9edc-92c47cbd19b9",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C90",
+      "claim": "The constitutive activity of G12V variants originates from defects in GAP-induced stimulation of GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The constitutive activity of G12V variants rather originates from defects in GAP-induced stimulation of GTP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about these mutants supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "bebe1034-8962-47d3-a2b5-400370bbc5d2",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C91",
+      "claim": "Q61L GTPases were exclusively GTP-bound when purified recombinantly.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the known catalytic differences of these RhoGTPase variants (Smith et al., 2013), we found that they, when purified recombinantly, assume different nucleotide states as determined by HPLC analysis: Q61L GTPases were exclusively GTP-bound, whereas G12V mutants purified as a mix of GTP and GDP bound states (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC analysis shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "baa839e2-bb97-47b3-a342-1362756d3d59",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C92",
+      "claim": "G12V mutants purified as a mix of GTP and GDP bound states.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the known catalytic differences of these RhoGTPase variants (Smith et al., 2013), we found that they, when purified recombinantly, assume different nucleotide states as determined by HPLC analysis: Q61L GTPases were exclusively GTP-bound, whereas G12V mutants purified as a mix of GTP and GDP bound states (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC analysis shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "8f2faeda-db93-431f-84bd-11b039f56112",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C93",
+      "claim": "Binding of prenylated Cdc42 to supported lipid bilayers is dependent on its C-terminal prenyl moiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Cy3-Cdc42 was added to SLBs and binding was detected by total internal reflection microscopy (TIRF). Binding was dependent on its C-terminal prenyl moiety, as expected (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B comparing prenylated and unprenylated Cdc42.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "6c09e485-ce44-4362-a577-62996d0d5174",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "claim_id": "C94",
+      "claim": "The corresponding mutant of bovine GDI1 (E163/4Q) shows an equivalent behavior to its Xenopus ortholog.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding mutant of bovine GDI1 (E163/4Q) shows an equivalent behavior to its Xenopus ortholog (Figure 8\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6041a686-ed00-4b45-a0be-fd54cf062395",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed two methods to directly visualize vertebrate RhoGTPases: internal tagging with GFP (IT-GTPases) and sortase-mediated Cy3 labeling. Both IT-Rho/Cdc42 and Cy3-Rho/Cdc42 localized to wounds in Xenopus oocytes in patterns that overlapped with activity reporters, and IT-Rho functionally rescued Rho activity when endogenous Rho was inhibited by C3, while amino-terminally tagged Rho failed to rescue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C37 collectively demonstrate that IT- and Cy3-labeled GTPases faithfully report GTPase distribution and function. The localization data (C23-C34) show proper recruitment to wounds and other cellular structures consistent with activity reporters. The functional rescue experiment (C35-C37) provides strong evidence that IT-Rho can substitute for endogenous Rho, while amino-terminally tagged versions cannot, validating the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "bf233319-f659-4476-9ac1-f23bb6947c68",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors identified pools of inactive, membrane-bound Cdc42 interior to the Cdc42 activity zone. Overexpression of the Cdc42-GAP Abr resulted in dose-dependent loss of active Cdc42 while having less effect on total Cy3-Cdc42, demonstrating that substantial pools of both active and inactive GTPases can be dynamically maintained at the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are well-supported by the observation that total Cdc42 extends beyond the activity zone (C25, C30) and the Abr overexpression experiments (C40) showing differential effects on active versus total Cdc42. This provides direct evidence for membrane-associated inactive GTPases, a novel finding that challenges the canonical model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "1bf3c2b1-afd5-49dd-b479-68d5dedac2a5",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RhoGDI accumulates at wounds, forming a broad zone that peaks between active Rho and active Cdc42. Both 3xGFP-GDI and endogenous GDI showed this localization pattern, demonstrating that GDI accumulates at discrete regions of the plasma membrane enriched with its GTPase clients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by imaging data showing both tagged (C42) and endogenous (C43) GDI localization to wounds. The co-localization with GTPase-enriched regions provides strong evidence for GDI accumulation at sites of high GTPase activity, though the mechanism of accumulation is not fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "22d72e98-2933-42a4-89b8-f9eace36395d",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Overexpression of GDI suppressed both Rho and Cdc42 activity and localization. Modest increases in GDI levels (15.8%) resulted in greater reduction of Cdc42 activity compared to Rho, demonstrating that GDI differentially impacts Rho and Cdc42 activity in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 are supported by dose-response experiments showing differential effects of GDI on Rho versus Cdc42. The data demonstrate that even modest GDI increases affect Cdc42 more than Rho (C48), suggesting different regulatory mechanisms. However, the molecular basis for this differential effect is not fully explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "9a44ead7-05d1-4db5-b64f-fcb2db5de166",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using supported lipid bilayer assays, the authors showed that spontaneous release of inactive Cdc42 from membranes is slow (t1/2 = 37.24 \u00b1 3.05 s), but GDI dramatically accelerates dissociation (~20-fold). Comparison with RabGGTase beta demonstrated that GDI directly extracts GTPases from membranes rather than simply sequestering them in solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are well-supported by the in vitro reconstitution experiments. The comparison between GDI and RabGGTase beta (C52) provides strong evidence for direct extraction versus sequestration. The experimental design is sound and the controls are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "5ffeffc5-818f-4a12-a88f-ab4434740e31",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RhoGDI extracted both inactive (GDP-bound) and active (GTP\u03b3S-bound G12V/G14V and GTP-bound Q61L/Q63L) Cdc42 and Rho from membranes in a concentration-dependent manner. GDI extracted GDP-bound GTPases more efficiently than active forms (1.5-fold difference), but the affinities were surprisingly similar, while maximal extraction rates depended on activity state. This ability is conserved in mammalian GDI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 are strongly supported by comprehensive in vitro extraction experiments using multiple GTPase variants and both Xenopus and bovine GDI. The kinetic analysis (C56-C57) provides mechanistic insight. However, the use of constitutively active mutants rather than wild-type GTP-bound GTPases is a limitation, though the authors acknowledge and address this with multiple mutant types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "c464e118-a88a-4c49-af06-df26d917243f",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors identified a GDI mutant (E158/9Q, termed GDI-QQ) that showed increased recruitment to wounds and was selectively deficient in extracting active GTPases. GDI-QQ retained ability to extract inactive Cdc42 but was completely deficient in extracting active Cdc42 (both G12V and Q61L variants). For Rho, GDI-QQ retained some ability to extract active G14V but not Q63L.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by both in vivo localization and in vitro extraction assays. The differential effects on active versus inactive GTPases provide a valuable tool for dissecting GDI function. However, the molecular mechanism by which the E158/9Q mutation selectively impairs active GTPase extraction is not fully explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "c37a7e52-651d-440a-bd03-26cce4e379d0",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In vivo experiments showed that wild-type GDI, but not GDI-QQ, significantly reduced the amount of constitutively active Cdc42 (G12V) and GTP\u03b3S-bound Cy3-Cdc42 around wounds, suggesting that GDI can extract active GTPase from the plasma membrane in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are supported by experiments comparing WT and QQ GDI effects on active Cdc42 in vivo. The use of both constitutively active mutants and GTP\u03b3S-loaded Cdc42 strengthens the conclusion. However, the experiments rely on overexpression, which may not fully reflect endogenous GDI function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "ce13bb53-2a15-4841-b126-51cda249075a",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Expression of GDI-QQ significantly elevated Cdc42 activity and total Cy3-Cdc42 levels around wounds, while Rho was unaffected. This suggests that GDI directly extracts active Cdc42 throughout the Cdc42 zone and that this extraction is necessary for proper Cdc42 regulation around wounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 are supported by experiments showing that blocking active GTPase extraction with GDI-QQ leads to increased Cdc42 activity. The use of both activity reporters and Cy3-Cdc42 controls for potential probe competition. However, the lack of effect on Rho could be due to GDI-QQ retaining partial activity toward Rho (C62) or different regulatory mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "43cb7d2e-e5f5-4bdd-8e60-184fb18f2ae0",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that pools of inactive Cdc42 at the plasma membrane spatially coincide with the Cdc42-GAP Abr, suggesting that GTP hydrolysis and extraction are not tightly coupled and that GTPases might cycle through multiple rounds of activation and inactivation while remaining membrane-associated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C72 are largely inferential. While C70 is supported by comparison with previous work on Abr localization, C71-C72 are speculative conclusions based on the observation of membrane-associated inactive GTPases. Direct evidence for multiple rounds of activation/inactivation at the membrane is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "f81c6825-ea13-45d1-859c-ea9c1de9141e",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The co-localization of GDI with GTPases at wounds implies that GDI accumulation reflects interaction with its GTPase clients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is a reasonable inference from the co-localization data (C42-C44), though direct evidence for interaction (e.g., FRET or co-immunoprecipitation at wounds) is not provided. The inference is strengthened by the functional data showing GDI effects on GTPase localization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "22b36dbc-55fc-4004-b26e-5729914880b2",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Q61/63L variants interact more weakly with GDI compared to G12/14V counterparts, consistent with previous studies and the current membrane extraction data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is supported by citations to previous work and the current extraction data showing reduced rates for Q61/63L variants. This provides context for the choice of multiple constitutively active mutants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "8069c321-401b-451c-b82b-61488f1dcf2a",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Based on previous work using photoactivatable reporters, the authors propose that GDI is responsible for removing active Cdc42 throughout its zone, while Rho is inactivated by a trailing edge GAP prior to extraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C78 integrate current findings with previous work. While C75-C76 are supported by citations, C77-C78 are interpretations that, while consistent with the data, are not directly demonstrated. The differential effects of GDI-QQ on Cdc42 versus Rho support this model, but alternative explanations exist.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "6fe2747f-0d1c-4ae5-a223-8db698931018",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that active GTPases extracted by GDI may exist in soluble GDI complexes and be rapidly returned to membranes, forming an extraction-return loop that could enhance spatial reach or mediate spreading of GTPase activity between membrane compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C83 are largely speculative. While C79-C80 are supported by citations to previous work, C81-C83 are hypothetical mechanisms not directly tested in this study. The model is plausible but requires further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "db07bad5-2a43-4d6b-9088-8efe45905047",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose that GTPase patterning is achieved by a complex regulatory network comprising kinases, GEFs, GAPs, and GDI, with differential phosphorylation of GDI potentially modulating its affinity for different GTPases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 integrate the current findings with previous work on GDI phosphorylation and PKC isoforms. While the individual components are supported by citations, the integrated model (C87) is a synthesis rather than a directly tested hypothesis. The model is well-reasoned but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "f8a237e4-cdaa-4f92-89cf-d5f117994822",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors characterize the biochemical properties of constitutively active GTPase mutants used in the study. Q61L strongly impairs spontaneous hydrolysis and purifies as GTP-bound, while G12V moderately inhibits spontaneous activity, impairs GAP-stimulated hydrolysis, and purifies as a mix of GTP and GDP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C92 are supported by established knowledge (C88-C90) and HPLC analysis (C91-C92). This characterization is important for interpreting the extraction experiments and justifies the use of multiple mutant types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "f1e6c1a0-af94-49ce-9cdc-b3a0d2ee9a57",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Binding of Cy3-Cdc42 to supported lipid bilayers is dependent on its C-terminal prenyl moiety.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is supported by experimental data comparing prenylated and unprenylated Cdc42. This validates the in vitro system and confirms expected membrane binding properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "fa0100fe-559d-426a-8045-675c58182f9a",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The bovine GDI1 E163/4Q mutant shows equivalent behavior to the Xenopus E158/9Q ortholog.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is supported by experimental data showing that the corresponding mutation in bovine GDI has similar effects. This demonstrates conservation of the extraction mechanism across species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "69c84e22-9329-43f0-b191-0e76ee61abda",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors state that 90-95% of RhoGTPases are maintained in soluble form by RhoGDI, which is generally viewed as a passive shuttle for inactive RhoGTPases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 represent established knowledge in the field that provides context for the study. These are background claims that set up the challenge to the canonical model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "cfcad4b6-96ae-44ec-85c9-2daea8b7dcc0",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The main conclusions of the study are that RhoGDI can extract both inactive and active RhoGTPases, that extraction of active RhoGTPase contributes to spatial regulation around cell wounds, and that RhoGDI directly contributes to spatiotemporal patterning by removing active RhoGTPases from the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 represent the main conclusions of the study, which are well-supported by the collective evidence from in vitro extraction assays, GDI-QQ experiments, and in vivo functional studies. These conclusions challenge the canonical view of GDI as a passive shuttle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    },
+    {
+      "id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449",
+      "content_id": "fe650658-efe7-4f3c-a297-c79d07150ffb",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The authors provide background on RhoGTPase function, regulation by GEFs/GAPs/GDIs, and limitations of previous tagging approaches for visualizing GTPases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C18 represent background information supported by citations to previous literature. These establish the context and rationale for developing new visualization methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:58:44.251736Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "baf9b695-da2c-4abc-b6a3-2056369cf471",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "6fb58644-2186-40b5-aa52-76593328e3de",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "a9913bff-cfe5-4305-bf61-cefa017d6bf5",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "0c984559-77a0-4ca5-bec2-530190c43707",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "65890b33-cc62-49f3-a96a-32c534226090",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "fdbcf105-e8d4-435c-8d37-3f9b57e8f415",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "0d4c1dd4-7f24-4a40-bf8f-3e4f1bc8c52a",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "d0245d32-b841-4f5d-8dea-ecc4fefc0f9c",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "ab310d0c-2e91-4f25-898e-96ce68a90009",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "de1b06af-04df-41ad-b7dd-0940e5e6d99e",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "70156be2-d641-4912-a210-83e3c7a681df",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "0084bd9a-a720-46cf-ba48-9d4965edaef9",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "4a4510bc-ef8d-4c09-8bfa-e80340194976",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "d4c73563-6cea-4ba3-bfaa-9808e3cdc29e",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "c3483143-8ccf-49ed-97ba-ceaf525b2386",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "1416e382-79cb-456d-95e9-433c11f7eff7",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "fe5bbd00-ec83-4d40-932c-471a31476fad",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "fddc18db-fe50-4291-abb4-68ecc8b7f8e4",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "1b26e1cf-fa93-4a15-9553-2cfea5ed39af",
+      "result_id": "6041a686-ed00-4b45-a0be-fd54cf062395"
+    },
+    {
+      "claim_id": "d3bc855b-1c07-4007-b96f-1e202d79708f",
+      "result_id": "bf233319-f659-4476-9ac1-f23bb6947c68"
+    },
+    {
+      "claim_id": "29816f5b-27e0-40c1-a4ef-b36a54752f2e",
+      "result_id": "bf233319-f659-4476-9ac1-f23bb6947c68"
+    },
+    {
+      "claim_id": "90edb482-41c3-43a4-ab5f-e7aa58afda54",
+      "result_id": "bf233319-f659-4476-9ac1-f23bb6947c68"
+    },
+    {
+      "claim_id": "9d0c76e5-8b5e-45b3-99d9-2f62e1288c0a",
+      "result_id": "bf233319-f659-4476-9ac1-f23bb6947c68"
+    },
+    {
+      "claim_id": "09cf7dd3-ada2-44e7-b4f5-72811e7d35c3",
+      "result_id": "1bf3c2b1-afd5-49dd-b479-68d5dedac2a5"
+    },
+    {
+      "claim_id": "0583a418-8acc-458e-b4a2-4c8d3a2d9b17",
+      "result_id": "1bf3c2b1-afd5-49dd-b479-68d5dedac2a5"
+    },
+    {
+      "claim_id": "f93fb221-384a-4a0a-8dbc-761ff34554f5",
+      "result_id": "1bf3c2b1-afd5-49dd-b479-68d5dedac2a5"
+    },
+    {
+      "claim_id": "8c6e9a93-7f3d-4521-8fdc-a834189373c5",
+      "result_id": "22d72e98-2933-42a4-89b8-f9eace36395d"
+    },
+    {
+      "claim_id": "9e1d984d-9c9d-444a-90eb-0328e4045f5e",
+      "result_id": "22d72e98-2933-42a4-89b8-f9eace36395d"
+    },
+    {
+      "claim_id": "e22e88b3-7df1-4530-bacc-13c192897c6d",
+      "result_id": "22d72e98-2933-42a4-89b8-f9eace36395d"
+    },
+    {
+      "claim_id": "1a6c7256-54e5-4c66-8886-1a39b315e8fd",
+      "result_id": "22d72e98-2933-42a4-89b8-f9eace36395d"
+    },
+    {
+      "claim_id": "99c5e48d-bbbc-4371-9aef-6221471f94a8",
+      "result_id": "22d72e98-2933-42a4-89b8-f9eace36395d"
+    },
+    {
+      "claim_id": "8782cf94-5c7b-452e-b76f-c9b5812e3bf3",
+      "result_id": "9a44ead7-05d1-4db5-b64f-fcb2db5de166"
+    },
+    {
+      "claim_id": "1b400658-df57-4c2c-8b83-08d1680b7e4b",
+      "result_id": "9a44ead7-05d1-4db5-b64f-fcb2db5de166"
+    },
+    {
+      "claim_id": "5287f2ea-a253-4e4b-82cb-ed0a71f706e7",
+      "result_id": "9a44ead7-05d1-4db5-b64f-fcb2db5de166"
+    },
+    {
+      "claim_id": "7a0b0cba-82a9-4bad-80d4-ec03a4cb6b5d",
+      "result_id": "5ffeffc5-818f-4a12-a88f-ab4434740e31"
+    },
+    {
+      "claim_id": "19023571-363d-4baa-9592-5dab2e04751c",
+      "result_id": "5ffeffc5-818f-4a12-a88f-ab4434740e31"
+    },
+    {
+      "claim_id": "d7aa1b22-4abd-4ab3-9055-fc27316499d1",
+      "result_id": "5ffeffc5-818f-4a12-a88f-ab4434740e31"
+    },
+    {
+      "claim_id": "0e61095c-601a-4c9d-bb44-51f1b3058ae4",
+      "result_id": "5ffeffc5-818f-4a12-a88f-ab4434740e31"
+    },
+    {
+      "claim_id": "39e71c8e-96a1-4d65-8f91-1c0fdeff2438",
+      "result_id": "5ffeffc5-818f-4a12-a88f-ab4434740e31"
+    },
+    {
+      "claim_id": "a7de36b4-3bb4-4923-8a28-6a069b809c8e",
+      "result_id": "5ffeffc5-818f-4a12-a88f-ab4434740e31"
+    },
+    {
+      "claim_id": "b9690e32-c37c-48cd-89ba-c85ba16399ff",
+      "result_id": "c464e118-a88a-4c49-af06-df26d917243f"
+    },
+    {
+      "claim_id": "abac5368-bd41-48a6-95e9-dbd695d3dba5",
+      "result_id": "c464e118-a88a-4c49-af06-df26d917243f"
+    },
+    {
+      "claim_id": "ef4f0d8b-61c5-44d6-9013-44646968d80a",
+      "result_id": "c464e118-a88a-4c49-af06-df26d917243f"
+    },
+    {
+      "claim_id": "8512dd5d-200e-465f-9d6e-f3a4a8909459",
+      "result_id": "c464e118-a88a-4c49-af06-df26d917243f"
+    },
+    {
+      "claim_id": "ec062c88-e668-4e8f-a4d4-ac8692f653ca",
+      "result_id": "c37a7e52-651d-440a-bd03-26cce4e379d0"
+    },
+    {
+      "claim_id": "dbd7d254-9d55-41d0-b3c5-fa758e2fa31c",
+      "result_id": "c37a7e52-651d-440a-bd03-26cce4e379d0"
+    },
+    {
+      "claim_id": "64739b28-640d-4501-8acf-5e5aa4334af5",
+      "result_id": "c37a7e52-651d-440a-bd03-26cce4e379d0"
+    },
+    {
+      "claim_id": "73137909-27c4-4b14-af84-3c68c3ba8d85",
+      "result_id": "ce13bb53-2a15-4841-b126-51cda249075a"
+    },
+    {
+      "claim_id": "e48a784e-ef95-4c9f-a1da-6bf8e864acea",
+      "result_id": "ce13bb53-2a15-4841-b126-51cda249075a"
+    },
+    {
+      "claim_id": "5bf073fe-52f2-42f6-9dc8-0ed3e4302470",
+      "result_id": "ce13bb53-2a15-4841-b126-51cda249075a"
+    },
+    {
+      "claim_id": "d77867f4-8438-4f3f-8976-9da0e731c949",
+      "result_id": "ce13bb53-2a15-4841-b126-51cda249075a"
+    },
+    {
+      "claim_id": "2b3a5ae7-31a9-464e-b439-007349bb509e",
+      "result_id": "43cb7d2e-e5f5-4bdd-8e60-184fb18f2ae0"
+    },
+    {
+      "claim_id": "edf91767-f152-4cea-9ae0-707a2f6d6871",
+      "result_id": "43cb7d2e-e5f5-4bdd-8e60-184fb18f2ae0"
+    },
+    {
+      "claim_id": "0e62c675-1c93-4dbe-a8ec-b31725c4b8af",
+      "result_id": "43cb7d2e-e5f5-4bdd-8e60-184fb18f2ae0"
+    },
+    {
+      "claim_id": "36f635e4-0f3c-4122-943b-91e4e71747ed",
+      "result_id": "f81c6825-ea13-45d1-859c-ea9c1de9141e"
+    },
+    {
+      "claim_id": "d1e51897-9565-420b-b79d-67d1ecbac2ce",
+      "result_id": "22b36dbc-55fc-4004-b26e-5729914880b2"
+    },
+    {
+      "claim_id": "905baaeb-da3d-4d37-b173-8e9ad6374e22",
+      "result_id": "8069c321-401b-451c-b82b-61488f1dcf2a"
+    },
+    {
+      "claim_id": "6e4a4ca9-a1b3-4df3-98f7-b7458f4ce41f",
+      "result_id": "8069c321-401b-451c-b82b-61488f1dcf2a"
+    },
+    {
+      "claim_id": "e2571f37-99c8-424c-a6bb-ef8531d4b1be",
+      "result_id": "8069c321-401b-451c-b82b-61488f1dcf2a"
+    },
+    {
+      "claim_id": "27f4a71b-1a73-4729-9112-49de3a8cee22",
+      "result_id": "8069c321-401b-451c-b82b-61488f1dcf2a"
+    },
+    {
+      "claim_id": "09128c98-ed8b-4256-bf8e-f689ca2e4090",
+      "result_id": "6fe2747f-0d1c-4ae5-a223-8db698931018"
+    },
+    {
+      "claim_id": "2d4128f5-a3e3-414a-a59e-600bc1867ca8",
+      "result_id": "6fe2747f-0d1c-4ae5-a223-8db698931018"
+    },
+    {
+      "claim_id": "1d92a4e4-496e-4196-bc85-8b7ea2ddbf94",
+      "result_id": "6fe2747f-0d1c-4ae5-a223-8db698931018"
+    },
+    {
+      "claim_id": "3e0137dc-aead-4a0b-b387-006849defe33",
+      "result_id": "6fe2747f-0d1c-4ae5-a223-8db698931018"
+    },
+    {
+      "claim_id": "e63734a1-54ac-49fa-bb32-63cbc695bf57",
+      "result_id": "6fe2747f-0d1c-4ae5-a223-8db698931018"
+    },
+    {
+      "claim_id": "aaf26a39-177e-48e2-b870-150c642c73dc",
+      "result_id": "db07bad5-2a43-4d6b-9088-8efe45905047"
+    },
+    {
+      "claim_id": "ad1b86c6-2852-42bb-b232-51dae99b9092",
+      "result_id": "db07bad5-2a43-4d6b-9088-8efe45905047"
+    },
+    {
+      "claim_id": "af18c1a2-6dd9-4604-adc3-3cf303ef52c1",
+      "result_id": "db07bad5-2a43-4d6b-9088-8efe45905047"
+    },
+    {
+      "claim_id": "620a1689-9ff1-4fe1-9c23-f3818435ff59",
+      "result_id": "db07bad5-2a43-4d6b-9088-8efe45905047"
+    },
+    {
+      "claim_id": "862f9f1b-d976-4ae9-a785-c1a239ba1f0d",
+      "result_id": "f8a237e4-cdaa-4f92-89cf-d5f117994822"
+    },
+    {
+      "claim_id": "8a94d9c9-959f-4f27-8d08-2ba87cea846c",
+      "result_id": "f8a237e4-cdaa-4f92-89cf-d5f117994822"
+    },
+    {
+      "claim_id": "5cb351c2-a82f-4e3d-9edc-92c47cbd19b9",
+      "result_id": "f8a237e4-cdaa-4f92-89cf-d5f117994822"
+    },
+    {
+      "claim_id": "bebe1034-8962-47d3-a2b5-400370bbc5d2",
+      "result_id": "f8a237e4-cdaa-4f92-89cf-d5f117994822"
+    },
+    {
+      "claim_id": "baa839e2-bb97-47b3-a342-1362756d3d59",
+      "result_id": "f8a237e4-cdaa-4f92-89cf-d5f117994822"
+    },
+    {
+      "claim_id": "8f2faeda-db93-431f-84bd-11b039f56112",
+      "result_id": "f1e6c1a0-af94-49ce-9cdc-b3a0d2ee9a57"
+    },
+    {
+      "claim_id": "6c09e485-ce44-4362-a577-62996d0d5174",
+      "result_id": "fa0100fe-559d-426a-8045-675c58182f9a"
+    },
+    {
+      "claim_id": "a0e21478-5fb5-46af-a0ed-f110cce7bfa8",
+      "result_id": "69c84e22-9329-43f0-b191-0e76ee61abda"
+    },
+    {
+      "claim_id": "f2f5703a-c7ae-4c07-a501-8aed4db99fc7",
+      "result_id": "69c84e22-9329-43f0-b191-0e76ee61abda"
+    },
+    {
+      "claim_id": "04a9910e-4aad-44a1-8173-15ca860847f4",
+      "result_id": "cfcad4b6-96ae-44ec-85c9-2daea8b7dcc0"
+    },
+    {
+      "claim_id": "c06c7c2d-20ca-49e8-a4bd-254d0aee63fc",
+      "result_id": "cfcad4b6-96ae-44ec-85c9-2daea8b7dcc0"
+    },
+    {
+      "claim_id": "d37c7853-a9b4-451b-9960-998bf163fba8",
+      "result_id": "cfcad4b6-96ae-44ec-85c9-2daea8b7dcc0"
+    },
+    {
+      "claim_id": "5dc54272-9112-4034-a4f0-37a7f59c3997",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "76ec0ebe-9355-4c2f-8bf5-aec8f2da2ff1",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "d253033d-ab29-42fb-95bb-5787fb5df9f7",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "4d0f3894-71b2-4769-bc95-047f0b8c216d",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "a345e110-a5e5-4b81-a5c5-d0264d5362ae",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "f8dd473f-a83a-4bc9-85eb-da0f7f687328",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "d97903e6-4797-46fc-ae56-e2151490c191",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "941d92a7-07f4-4376-89b1-44f4718476ab",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "af504418-d5ef-4c3c-8fcc-824203b98ee1",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "9c9c2b92-1a4b-4eb2-a0d9-27f94e585518",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "9f658428-b9e6-40e1-9dc5-5b0e0ef57864",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "e9a5ee26-832e-4d82-8669-95d90dd58e04",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    },
+    {
+      "claim_id": "0c3b855e-e28c-4bf9-8ed1-c42ff985a076",
+      "result_id": "2184b5be-cbfc-4dbd-9e4c-b812f4aee449"
+    }
+  ],
+  "comparisons": []
+}

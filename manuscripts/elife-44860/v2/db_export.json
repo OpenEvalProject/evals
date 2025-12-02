@@ -1,0 +1,1439 @@
+{
+  "submission": {
+    "id": "ceaaed87-0d31-4384-a374-1fb96d0b15ce",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:41:16.832721Z",
+    "updated_at": "2025-12-02T10:41:16.832721Z"
+  },
+  "content": [
+    {
+      "id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "submission_id": "ceaaed87-0d31-4384-a374-1fb96d0b15ce",
+      "content_type": "manuscript",
+      "content_text": "# Liquid-crystal organization of liver tissue\n\n## Authors\n\n- Hern\u00e1n Morales-Navarrete<sup>1</sup> ([ORCID: 0000-0002-9578-2556](https://orcid.org/0000-0002-9578-2556))\n- Hidenori Nonaka<sup>1</sup>\n- Andr\u00e9 Scholich<sup>2</sup> ([ORCID: 0000-0002-9393-5459](https://orcid.org/0000-0002-9393-5459))\n- Fabi\u00e1n Segovia-Miranda<sup>1</sup> ([ORCID: 0000-0003-1546-0475](https://orcid.org/0000-0003-1546-0475))\n- Walter de Back<sup>3</sup> ([ORCID: 0000-0003-4641-8472](https://orcid.org/0000-0003-4641-8472))\n- Kirstin Meyer<sup>1</sup>\n- Roman L Bogorad<sup>5</sup>\n- Victor Koteliansky<sup>6</sup>\n- Lutz Brusch<sup>4</sup> ([ORCID: 0000-0003-0137-5106](https://orcid.org/0000-0003-0137-5106))\n- Yannis Kalaidzidis<sup>1</sup> \u2020\n- Frank J\u00fclicher<sup>2</sup> ([ORCID: 0000-0003-4731-9185](https://orcid.org/0000-0003-4731-9185)) \u2020\n- Benjamin M Friedrich<sup>8</sup> ([ORCID: 0000-0002-9742-6555](https://orcid.org/0000-0002-9742-6555)) \u2020\n- Marino Zerial<sup>1</sup> ([ORCID: 0000-0002-7490-4235](https://orcid.org/0000-0002-7490-4235)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n2. Max Planck Institute for the Physics of Complex Systems Dresden Germany\n3. Institute for Medical Informatics and Biometry, Faculty of Medicine Carl Gustav Carus Technische Universit\u00e4t Dresden Dresden Germany\n4. Centre for Information Services and High Performance Computing Technische Universit\u00e4t Dresden Dresden Germany\n5. David H. Koch Institute for Integrative Cancer Research Massachusetts Institute of Technology Cambridge United States\n6. Skolkovo Institute of Science and Technology Skolkovo Russia\n7. Department of Chemistry MV Lomonosov Moscow State University Moscow Russia\n8. Cluster of Excellence Physics of Life TU Dresden Dresden Germany\n9. Center for Advancing Electronics Dresden Technische Universit\u00e4t Dresden Dresden Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nFunctional tissue architecture originates by self-assembly of distinct cell types, following tissue-specific rules of cell-cell interactions. In the liver, a structural model of the lobule was pioneered by Elias in 1949. This model, however, is in contrast with the apparent random 3D arrangement of hepatocytes. Since then, no significant progress has been made to derive the organizing principles of liver tissue. To solve this outstanding problem, we computationally reconstructed 3D tissue geometry from microscopy images of mouse liver tissue and analyzed it applying soft-condensed-matter-physics concepts. Surprisingly, analysis of the spatial organization of cell polarity revealed that hepatocytes are not randomly oriented but follow a long-range liquid-crystal order. This does not depend exclusively on hepatocytes receiving instructive signals by endothelial cells, since silencing Integrin-\u03b21 disrupted both liquid-crystal order and organization of the sinusoidal network. Our results suggest that bi-directional communication between hepatocytes and sinusoids underlies the self-organization of liver tissue.\n\n## Introduction\n\nThe liver is the largest metabolic organ of the human body and vital for blood detoxification and metabolism. Its functions depend on a complex tissue architecture. In the lobule, the functional unit of the liver, blood flows through the hepatic sinusoids from the portal vein (PV) and hepatic artery toward the central vein (CV). The hepatocytes take up and metabolize substances transported by the blood and secrete the bile through their apical surface into the bile canaliculi (BC) network, where it flows toward the bile duct near the PV (Boyer, 2013; Meyer et al., 2017; Treyer and M\u00fcsch, 2013). Hepatocytes are polarized cells with a unique organization of apical and basal plasma membrane on their surface (M\u00fcsch, 2014; Treyer and M\u00fcsch, 2013). In contrast to simple epithelia, where the cells have a single apical surface facing the lumen of organs, hepatocytes exhibit a multipolar organization, that\u00a0is,\u00a0they have multiple apical and basal domains (Gissen and Arias, 2015; M\u00fcsch, 2014; Treyer and M\u00fcsch, 2013). Such organization allows the hepatocytes to have numerous contacts with the sinusoidal and BC networks to maximize exchange of substances.\n\nAlthough the general organization of the liver into distinct millimeter-sized lobules is quite clear, the micro-anatomy of a single lobule is much less understood. Sinusoidal endothelial cells and hepatocytes form a heterogeneous 3D packing of cells and labyrinths of sinusoids and BC without apparent order (Gissen and Arias, 2015; Treyer and M\u00fcsch, 2013). However, the function of sinusoidal and BC networks prompt precise design requirements: each hepatocyte must be in contact with both networks, yet the networks must never intersect. This defines a problem of self-organization to satisfy these competing design requirements. Hans Elias in 1949 pioneered the structural analysis of the mammalian liver tissue (Elias, 1949a; Elias, 1949b; Elias, 1949c; Elias and Bengelsdorf, 1952). He proposed a structural model whereby the sinusoids are separated from one another by walls of hepatocytes (one-cell-thick), forming a \u2018continuous system of anastomosing plates, much like the walls separating the rooms within a building\u2019 (Elias, 1949b; Elias, 1949c). In his idealized model, Elias proposed that the tissue structure is based on hepatic plates built of alternate layers of polyhedral (decahedra and dodecahedra) cells forming a network of BC and traversed by the sinusoids. The model has been a milestone in the field. However, the analysis underlying the structural model was hampered by the difficulties of reconstructing the 3D tissue structure, which at that time relied on stereological analysis of 2D images (Elias, 1949b; Elias, 1949c; Elias, 1971; Elias and Bengelsdorf, 1952). Consequently, the limitations in throughput of 3D reconstructions were a major bottleneck for inferring the rules of structure governing liver tissue. Almost 70 years later, we took advantage of developments in tissue clearing, high-performance microscopy imaging, computer-aided image analysis, and 3D tissue reconstruction to revisit the organizational principles of liver tissue.\n\n## Results\n\n### 3D segmentation and quantitative analysis of liver architecture\n\nTo understand liver architecture, from the lobule down to the sub-cellular level, we built a 3D geometrical digital representation of adult mouse liver from confocal images (Figure 1) using a multi-resolution approach (Morales-Navarrete et al., 2015). Mouse livers were fixed, sectioned into 100 \u03bcm serial slices, and immunostained for cell nuclei (DAPI), cell borders (Phalloidin), hepatocyte apical plasma membrane (CD13), and the extracellular matrix (ECM, fibronectin and laminin) to visualize the basal plasma membrane of hepatocytes facing the sinusoidal endothelial cells (Figure 1\u2014figure supplement 1). Full slices and selected regions-of-interest comprising a whole liver lobule were imaged at low resolution (Figure 1A\u2013C) to determine the position of CV and PV as landmarks, which allowed locating and re-imaging individual CV-PV-axes at high-resolution (Figure 1D, corresponding to gray box in Figure 1C). The multi-resolution imaging allowed us to analyze the distribution of apical and basal surfaces of single hepatocytes (Figure 1F), as well as sinusoidal and BC network geometry (Figure 1E) in relation to the CV-PV axis. Quantitative structural parameters are shown in Figure 1\u2014figure supplement 2 and Figure 1\u2014figure supplement 3. Analysis of thousands individual hepatocytes revealed the full complexity of distribution of the apical, lateral and basal surfaces.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig1-v2.jpg)\n\n**Figure 1.:** (A, B) Low-resolution imaging of an optically cleared liver tissue slice, stained for hepatocyte cell borders (cyan, Phalloidin) and nuclei (gray, DAPI); voxel size 1 \u03bcm x 1 \u03bcm x 1 \u03bcm. Central veins (CV, cyan) and portal veins (PV, orange) are highlighted. (C) 3D reconstruction from a stack of low-resolution images from 10 serial slices (Figure 1\u2014video 1). (D) High-resolution imaging was performed in a sub-region (indicated as gray box in panel (C) and stained with four different markers for hepatocyte cell borders (cyan, Phalloidin), nuclei (gray, DAPI), hepatocyte apical plasma membrane (green, CD13), and basal plasma membrane (magenta, fibronectin/laminin) \u2013 facing the sinusoidal endothelial cells (Figure 1\u2014figure supplement 1); voxel size 0.3 \u03bcm x 0.3 \u03bcm x 0.3 \u03bcm. (E) Reconstruction of sinusoidal (magenta) and bile canaliculi (green) networks connecting CV and PV, as well as contacting hepatocytes (Figure 1\u2014video 2). (F) 3D representation of a single hepatocyte showing apical (green), basal (magenta) and lateral (gray) plasma membrane domains (Figure 1\u2014video 3). A quantitative analysis of the structural parameters of hepatocytes and the networks (BC and sinusoids) along the CV-PV axis is shown in Figure 1\u2014figure supplement 2 and Figure 1\u2014figure supplement 3, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** High-resolution images of samples for control conditions (top, siRNA against Luciferase) and Integrin-\u03b21 knock down (bottom, siRNA against Integrin-\u03b21 receptor) are shown. Samples were stained for sinusoidal network (left, Flk-1 staining) and extracellular matrix (middle, Fibronectin+Laminin staining). The right panels show images of overlapping staining. All panels correspond to a z-plane at 15 \u00b5m depth of liver tissue.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Structural parameters of hepatocytes for wild type (black), Luciferase control (blue), Integrin-\u03b21 knockdown (red). As described in Meyer et al. (2017); Morales-Navarrete et al., 2015 the CV-PV axis was divided in 10 zones (from 0 to 10) in order to show the variability of each parameter along this axis. (A) Hepatocyte volume. (B) Cell elongation. (C) Number of neighboring hepatocytes per cell. (D) Nuclear volume per cell. (E, F, G) Percentage of apical, basal and lateral domains of the cytoplasmic membrane of individual hepatocytes, respectively. Statistics: n=3 independent samples from different animals (wild type), n=5 animals (Luciferase control), n=4 animals (Integrin-\u03b21 knock-down). Error bars show standard\u00a0error\u00a0of the mean\u00a0(s.e.m). Data available in Figure 1\u2014figure supplement 2\u2014source data 1.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Structural parameters of the sinusoidal and BC networks\u00a0for wild type (black), Luciferase control (blue), Integrin-\u03b21 knockdown (red). The CV-PV axis was divided in 10 zones (from 0 to 10), showing change along the CV-PV axis. (A, E) Estimated radius of the tubular networks. (B, F) Percentage of tissue volume occupied by the network (excluding the volume occupied by CV and PV). (C, G) Total length of the network per tissue volume unit. (D, H) Number of branching points (junctions) per unit length. A junction is defined as a node of the network that has, at least, three branches. Statistics: n=3 independent samples from different animals (wild type), n=5 animals (Luciferase control), n=4 animals (Integrin-\u03b21 knock-down). Error bars show standard\u00a0error\u00a0of the mean\u00a0(s.e.m.). Data available in Figure 1\u2014figure supplement 3\u2014source data 1.\n\n### Hepatocytes display biaxial cell polarity\n\nThe liver parenchyma appears to lack a regular structure at the mesoscopic scale (Figure 1). Yet, its functional requirements suggest the existence of hidden order. To reveal it, we examined the orientation of hepatocyte polarity in the tissue. In simple epithelia, such as in the kidney and intestine, apico-basal cell polarity can be described by a single vector pointing from the cell center to a single apical pole (Bryant and Mostov, 2008; Marcinkevicius et al., 2009; Treyer and M\u00fcsch, 2013) (see schematic in Figure 2A). However, hepatocyte polarity cannot be described by a single apico-basal polarity axis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig2-v2.jpg)\n\n**Figure 2.:** (A) Idealized representation of simple cell polarity, as found in cells of sheet-like epithelial tissue, showing schematic representation, spherical projection and Mollweide cartographic projection\u00a0(top to bottom). Simple cell polarity is characterized by a single domain of apical membrane localized at one side of the cell, thus defining a vector (magenta arrow) that points toward the patch of apical plasma membrane. (B, C) Two extreme cases of biaxial polarity. Biaxial polarity, as introduced here, associates two nematic axes to complex membrane patterns: bipolar and ring axis. We show the bipolar axis ($a_{1}$, gold) for the idealized case of two antipodal poles of apical plasma membrane (pure bipolar polarity, ring axis degenerated), and the ring axis ($a_{2}$, cyan) for the case of a perfect ring of apical plasma membrane (pure ring polarity, bipolar axis degenerated). (D) Reconstructed 3D shape of typical hepatocyte with patches of apical plasma membrane (green). The spherical projection is characterized by well-defined bipolar and ring axes. (E) Respective weights of bipolar axis ($\\sigma_{1}$) and ring axis ($\\sigma_{2}$) for n=857 reconstructed hepatocytes, defined in terms of the eigenvalues of the nematic cell polarity tensor. Extreme cases of pure bipolar or pure ring polarity as shown in B and C correspond to the golden and blue line, respectively. Inset: Spherical projections for three example hepatocytes with corresponding polarity axes (indicated by symbols in scatter plot, corresponding to panel 2A). The analogous pair of axes for the distribution of basal plasma membrane showed similar results (Figure 2\u2014figure supplement 1). (F) Cross-correlation analysis of nematic cell polarity axes for apical and basal plasma membrane patterns reveals that axes of same type are preferentially perpendicular, while axes of different type are preferentially parallel, indicating repulsion between apical and basal plasma membrane domains (n=3 animals).\u00a0Error bars\u00a0show standard deviations\u00a0(s.d.).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, C, E) Respective weights $\\sigma_{1}$ of bipolar axis ($a_{1}$) and $\\sigma_{2}$\u00a0ring axis ($a_{2}$) for reconstructed hepatocytes, defined in terms of the eigenvalues of the nematic cell polarity tensor for the apical plasma membrane distribution, for wildtype (panel A, identical to Figure 2E), Luciferase control (panel C), and Integrin-\u03b21 knock-down (panel E). (B, D, F). Analogous scatter plots displaying the weight $\\tau_{1}$ of the bipolar axis ($b_{1}$) and the weight $\\tau_{2}$ of the ring axis ($b_{2}$) of basal plasma membrane distribution for reconstructed hepatocytes, defined in terms of the eigenvalues of the nematic cell polarity tensor for the basal plasma membrane distribution, for wildtype (panel B), Luciferase control (panel D), and Integrin-\u03b21 knock-down (panel F). Data: n=3 independent samples from different animals (wild type), n=5 animals (Luciferase control), n=4 animals (Integrin-\u03b21 knock-down).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Cell shape axis were defined in terms of a second-moments tensor $M$\u00a0with components $M_{ij}$$M_{ij}=\\int_{A}^{}dAx_{i}x_{j}$, where the integral extends over the whole (non-projected) surface of each hepatocyte. The eigenvalues and principal axes of this tensor define cell shape axes\u00a0$m_{1}$, $m_{3}$, $m_{2}$\u00a0with corresponding eigenvalues\u00a0$\\mu_{1}\\geq\\mu_{3}\\geq\\mu_{2}$. Correlations between cell shape polarity axes and apical cell polarity axis, as well as with lobule-level reference field J are shown. From left to right:\u00a0$m_{1}:a_{1}$, $m_{1}:a_{2}$, $m_{2}:a_{1}$, $m_{2}:a_{2},m_{1}:J$, $m_{2}:J.$\u00a0Although we observed weak correlations between cell shape polarity axes and apical cell polarity axes, no significant alignment with the lobule-level reference system was found. Error bars denote s.d., n=3 animals (wild-type).\n\nTo describe hepatocyte polarity, we used nematic axes. A nematic axis could be informally introduced as a two-headed vector, in contrast with the one-headed vector commonly used to describe vectorial cell polarity. Nematic axes have been used to describe anisotropic structures in physics, for\u00a0example\u00a0liquid crystals (Gennes and Prost, 1995). Liquid crystals are composed of anisotropic units such as elongated molecules, which can be partially oriented along a common axis. The individual units display variations in orientation, yet on average exhibit overall order, termed nematic order. Nematic order is a state of matter intermediate between perfect crystals and amorphous liquids. The concept of nematic order was used to describe for\u00a0example liquid crystal displays (LCD) in engineering, and alignment of cell shape anisotropy in 2D epithelial tissues in biology (Saw et al., 2017). We asked whether tissue-scale nematic order could exist also in 3D tissues.\n\nTo characterize the complex 3D apico-basal polarity of hepatocytes, we introduced a new concept of biaxial cell polarity. To this end, we used not just one, but two nematic axes (see Materials\u00a0and\u00a0methods). Mathematically, these nematic axes are defined via a nematic tensor associated with each hepatocyte, which is characterized by two principal axes (a third axis can be deduced from the other two). The geometric meaning of these axes, here termed the bipolar and the ring axis, is best exemplified in two extreme cases (Figure 2B, C). In the bipolar case, a marker is concentrated on two opposite poles (Figure 2B), whereas in the ring case, the marker forms a belt around the cell (Figure 2C). In the first case, the bipolar axis passes through the two poles (orange axis,\u00a0$a_{1}$), whereas the ring axis is not uniquely defined (it is degenerate in the plane perpendicular to the bipolar axis). In the second case, the ring axis is perpendicular to the plane of the ring and well defined (cyan axis,\u00a0$a_{2}$), whereas the bipolar axis is degenerate. In the case of hepatocytes, the distribution of the apical plasma membrane is in between these two extreme cases, resulting in two well-defined perpendicular axes (Figure 2D). Each of the two cell polarity axes has an associated weight deduced from the nematic tensors (see Materials and methods), $\\sigma_{1}$\u00a0for the bipolar axis and $\\sigma_{2}$ for the ring axis (Figure 2E). The distribution of weights is skewed in favor of the belt-like apical surfaces. However, extreme cases described only by a single axis are very rare in the population of hepatocytes. We can define an analogous pair of axes for the distribution of basal plasma membrane, $b_{1\u00a0}$\u00a0and\u00a0$b_{2}$, yielding similar results (Figure 2\u2014figure supplement 1). Therefore, the polarity of hepatocytes is characterized by two nematic tensors and four axes ($a_{1},a_{2},b_{1},b_{2}$). Next, we explored the relationship between apical and basal biaxial cell polarity. We found a preferential parallel alignment for apical and basal axes of different types,\u00a0i.e., $a_{1}$\u00a0aligned with\u00a0$b_{2}$, and $a_{2}$ with $b_{1}$ (Figure 2F). In contrast, the apical and basal axes of the same type ($a_{1}$\u00a0with $b_{1}$ and $a_{2}$ with\u00a0$b_{2}$) have preferentially a perpendicular orientation. This anti-correlation corroborates the mutual repulsion between apical and basal surfaces of hepatocytes. Moreover, we only observed weak correlations between cell shape and apical cell polarity axes, implying that these cellular features are independent to a large extent (Figure 2\u2014figure supplement 2).\n\n### Spatial patterns of cell polarity reveal liquid-crystal order in the liver lobule\n\nWe next examined the orientation of apical bipolar axes for all hepatocytes within a liver lobule between CV (cyan) and PV (orange) (Figure 3A). To highlight possible patterns of orientation, we performed local averaging of the bipolar axes over a width of\u00a020\u00a0\u03bcm, corresponding to approximately one hepatocyte diameter (Figure 3B, see Materials\u00a0and\u00a0methods). This procedure revealed a spatial organization of hepatocyte polarity with a pattern of the bipolar axis oriented along lines that connect CV and PV. This pattern is reminiscent of flux lines generated by diffusive transport between CV and PV. Indeed, the stationary solution of the diffusion equation with source and sink on CV and PV, respectively, generates a pattern of flux ($J$) (Figure 3C) similar to the pattern of averaged bipolar apical axes (Figure 3B). A comparison of averaged apical bipolar axes and the flux pattern $J$\u00a0is shown in color-code in Figure 3D and quantified in Figure 3G, where red color indicates strong alignment with the reference direction and blue denotes a perpendicular orientation. Performing the same analysis for the ring-like axis yielded a preferentially perpendicular orientation with respect to the reference direction $J$\u00a0(Figure 3E, G). Consequently, belt-like apical domains are oriented to facilitate bile transport along the reference direction (see also Figure 3\u2014figure supplement 1). The simultaneous alignment of two axes, bipolar and ring axis, is indicative of biaxial nematic order\u00a0(Luckhurst, 2015). Next, we tested whether the observed order is truly biaxial. If the order were uniaxial (the null hypothesis), the correlation between the ring axis $a_{2}$ and the reference direction J (Figure 3G, second bar) could be predicted from the alignment of the bipolar axis $a_{1}$\u00a0and J (Figure 3G, first bar), using the fact that $a_{1}$ and $a_{2}$ are perpendicular (see Materials\u00a0and\u00a0methods). However, we found that the alignment of the ring axis was significantly above the prediction (Figure 3G, hatched bar; p=0.014). This suggests the presence of biaxial order, which is confirmed by a detailed mathematical characterization in terms of biaxial order parameters described in Scholich et al. (2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig3-v2.jpg)\n\n**Figure 3.:** (A) Bipolar cell polarity axes of apical plasma membrane distribution ($a_{1}$) shown as lines of constant length for individual hepatocytes at their respective position in the lobule. (B) Same as A after local averaging using a 3D Gaussian kernel at each hepatocyte cell center (standard deviation\u00a020\u00a0\u03bcm, indicated in red above the scale bar). (C) Lobule-level reference system with local reference direction ($J$) tangent to flow lines (blue), obtained by solving the diffusion equation with sources and sinks placed at the surface of PV (orange) and CV (cyan). (D) Same as B, but now axes are color-coded according to their alignment with the local reference direction ($J$\u00a0defined in panel C). Red colors indicate parallel alignment, whereas blue indicate perpendicular co-orientation. (E) Same as D, but for the ring axis of apical plasma membrane distribution ($a_{2}$). (F) Same as D, but for the preferred direction of the local sinusoidal network surrounding each hepatocyte. (G) Quantification of alignment with local reference direction for apical bipolar axis, apical ring axis, and preferred sinusoid orientation. The correlation for the apical ring axis exceeds a trivial baseline (hatched bar) that follows from the correlation of the bipolar axis (see Materials and methods for details) (error bars denote standard deviations,\u00a0n=3 animals). Analogous results for the preferred BC orientation are shown in Figure 3\u2014figure supplement 1. (H) Layered order in the liver lobule. Upper: density of sinusoids in region-of-interest (average density projection along z-axis) and reference direction (blue). Lower: cross-correlation along reference direction between projected density of hepatocytes and sinusoids (magenta) and hepatocytes and bile canaliculi (green). The oscillatory signals reveal layered order with a wavelength of approximately one hepatocyte diameter. Detailed description in Figure 3\u2014figure supplement 2. All scale bars\u00a0100\u00a0\u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Quantification of alignment with local reference direction for the preferred direction of the local BC network surrounding each hepatocyte ($c_{1}$), analogous to Figure 3G. Statistics: n=3 independent samples from different animals (wild type), n=5 animals (Luciferase control), n=4 animals (Integrin-\u03b21 knock-down). Error bars show standard deviations\u00a0(s.d.).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Region-of-interest (ROI) in the central region of a liver lobule, with CV (cyan) and PV (orange) serving as landmarks; identical to inset of Figure 3H. Inside the ROI, the density of sinusoids is shown (average density projection along z-axis), together with a reference direction for layered order (blue) and a control direction (red), perpendicular to the reference direction. (B) Two-dimensional cross-correlation between the projected density of hepatocytes and the projected density of sinusoids. (C) Analogous to panel B for the cross-correlation between hepatocytes and the BC network. (D) One-dimensional cross-correlations between the projected density of hepatocytes and sinusoids (magenta), as well as between hepatocytes and bile canaliculi (green), obtained from the two-dimensional cross-correlations by projection on the reference direction; identical to Figure 3H. (E) Same as panel D, but for projection on the control direction. The absence of oscillatory signals is consistent with layered order of liver tissue with layers approximately orthogonal to the reference direction, but parallel to the control direction. Scale bar\u00a0100\u00a0\u03bcm.\n\nConsidering that the sinusoidal network connects PV to CV to ensure blood flow, we expected this network to also exhibit patterns of orientation along the CV-PV axis. To test for this, we determined a local anisotropy axis of the sinusoidal network (see Materials\u00a0and\u00a0methods) and found significant parallel alignment between this anisotropy axis and\u00a0$J$, see Figure 3F, G. Our analysis shows that cell polarity axes of hepatocytes and the anisotropy of the sinusoidal network display biaxial nematic order in the liver lobule. In soft condensed matter physics, such organization is known to result from either weak interactions between anisotropic units, or interactions with an external field, thus creating a liquid crystal-type of organization\u00a0(Gennes and Prost, 1995). Liquid-crystal order, as found in displays of electronic devices, is characterized by orientational order of basic units, for\u00a0example approximately parallel alignment, yet lack of the translational order of crystalline packings common of solids.\n\nNext, we investigated if translational order could be found at least in one spatial direction. For this, we calculated the cross-correlation for density variations of sinusoids, hepatocytes and BC along a direction perpendicular to the CV-PV axis (see scheme in Figure 3H). The cross-correlations revealed a periodicity of structures along this direction with a characteristic length-scale of\u00a024\u00a0\u03bcm. This periodicity approximately equals the sum of the hepatocyte and sinusoid tube diameters. In contrast, we found no evidence of periodic structures in the direction of the CV-PV axis (see Figure 3\u2014figure supplement 2). Such periodicity in only one direction is a hallmark of a layered structure. Therefore, sinusoids, hepatocytes, and BC exhibit a layered organization, with most hepatocytes forming a single layer sandwiched between sinusoidal cells, supporting earlier structural models (Elias and Bengelsdorf, 1952; Elias, 1949b; Elias, 1949c).\n\n### Bidirectional communication between hepatocytes and sinusoids is necessary for the maintenance of tissue structure\n\nThe layered organization of sinusoids and hepatocytes prompts the question of how coordination between these two cell types is achieved. It has been proposed that the sinusoidal endothelial cells are the main organizers by self-ordering and enforcing the position and, hence, the polarity of hepatocytes (Hoehme et al., 2010; Sakaguchi et al., 2008). This requires the establishment of apico-basal polarity with the basal plasma membrane of hepatocytes facing the sinusoidal endothelial cells. A candidate pathway orienting the basal surface of hepatocytes is that of the transmembrane ECM receptors Integrins (Yu et al., 2005). Perturbation of this pathway should result in a flawed coordination between sinusoids and hepatocytes and, consequently, defects in the liquid-crystal order of hepatocyte polarity. Furthermore, if the communication between sinusoids and hepatocytes were unidirectional, the sinusoidal network would be predicted to remain unaltered. To test these predictions, we silenced Integrin-\u03b21 in the liver lobule in vivo. The injection of siRNAs formulated into lipid nanoparticles (LNP) provides the advantage of silencing genes with high efficacy and specificity in hepatocytes of adult mice (Bogorad et al., 2014; Zeigerer et al., 2012). Using super-resolution microscopy, we verified that Integrin-\u03b21 expression was ablated in both the lateral and basal plasma membrane of hepatocytes but not in the sinusoidal endothelial cells (Figure 4\u2014figure supplement 1). Injection of siRNAs against Integrin-\u03b21 resulted in a 90% reduction in expression in comparison with control (injected with LNP-formulated Luciferase siRNA), as previously described (Bogorad et al., 2014). Loss of Integrin-\u03b21 in liver parenchymal cells led to barely detectable alterations during the first 2\u20134 weeks. However, after 7 weeks of treatment with Integrin-\u03b21-specific but not control siRNAs, when a significant number of hepatocytes are naturally replaced (Magami et al., 2002), we detected major alterations in liver tissue organization.\n\nFirst, the BC network appeared disrupted and more branched (due to an increase of dead-end branches) (Figure 4A). Interestingly, the biaxial cell polarity of hepatocytes was not compromised. We observed almost unchanged correlation patterns between apical and basal cell polarity axes (Figure 4B) and indistinguishable distributions of their weights (Figure 2\u2014figure supplement 1). This suggests that hepatocyte polarity is maintained by a cell-autonomous mechanism. On the scale of individual hepatocytes, the only change was a significant increase in apical surface at the expense of the basal surface (Figure 1\u2014figure supplement 2). However, the long-range order of hepatocyte cell polarity was strongly perturbed (Figure 4C, D\u00a0and Figure 4\u2014figure supplement 2). Surprisingly, despite the silencing of Integrin-\u03b21 being limited to hepatocytes at the used dosage, the sinusoidal network was also severely disrupted, with loss of its long-range organization (Figure 4A, D). This suggests that also hepatocytes provide instructions to sinusoidal endothelial cells. In conclusion, Integrin-\u03b21 KD results in loss of long-range liquid-crystal order of the liver lobule and a perturbed coordination between BC and sinusoidal networks.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig4-v2.jpg)\n\n**Figure 4.:** (A) Silencing Integrin-\u03b21 in the liver results in distortion of both bile canalicular and sinusoidal networks, with reduced apparent alignment with the CV-PV axis in comparison to control conditions. Shown are representative samples for control conditions -upper\u00a0panels, siRNA against Luciferase (Luc) and Integrin-\u03b21 knock down -lower panels, siRNA against Integrin-\u03b21 receptor (KD) stained for bile canalicular network (left, CD13 staining), sinusoidal network (middle, fibronectin/laminin staining), and merge (right). All panels correspond to maximal intensity z-projection of\u00a060\u00a0\u03bcm of liver tissue. (B) Individual hepatocytes retain their biaxial cell polarity in Integrin-\u03b21 KD, as revealed by cross-correlation analysis of nematic cell polarity axes for apical and basal plasma membrane patterns (analogous to Figure 2F). (C, D) In contrast, the alignment of biaxial cell polarity axes and the local preferred direction of the sinusoidal network with $J$\u00a0are reduced in Integrin-\u03b21 KD. Panel C shows bipolar cell polarity axes of apical plasma membrane color-coded according to their alignment with the local reference direction ($J$) (analogous to Figure 3D). Panel D shows the quantification of alignment of apical bipolar axis, apical ring axis, and preferred sinusoid orientation with local reference direction (analogous to Figure 3G). A detailed graphical representation can be found in Figure 4\u2014figure supplement 1. Statistics in B, D: mean+/-s.d. for n=5 animals (Luc) and n=4 animals (KD); statistical significance: panel B:\u00a0$a_{1}\u2212b_{1}:p=0.015$, $a_{1}\u2212b_{2}:p=0.277$, $a_{2}\u2212b_{1}:p=0.118$,\u00a0$a_{2}\u2212b_{2}:p=0.410$; panel D:\u00a0$a_{1}\u2212J:p=0.007$, $a_{2}-J:p=0.002$, $sinusoid\u2212J:p<0.008$, two-sided t-test assuming unequal variances).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** A) High-resolution images of liver samples for control conditions (top, siRNA against Luciferase) and Integrin-\u03b21 knock down (bottom, siRNA against Integrin-\u03b21) showing staining for the sinusoidal endothelial cells (Flk-1 on the left), Integrin-\u03b21 (middle) and cell border and nuclei (Phalloidin and DAPI, on the right). (B) Zoomed images from the red insets in panel A. White arrows indicate the presence of Integrin-\u03b21 on the lateral surface of hepatocytes only in the control but not in the KD. Images in A and B correspond to the average image of 50 sequential time-lapse images. (C) Super-resolution localization microscopy (see Materials\u00a0and\u00a0methods) of Phalloidin (left) and Integrin-\u03b21 (right, dotted pattern) staining of the yellow insets on panel A resolved the individual membranes of neighboring hepatocytes and sinusoids (S, yellow arrows). Integrin-\u03b21 is present on the lateral and basal plasma membrane of hepatocytes as well as on the sinusoidal endothelial cell membranes in the control (upper right), but only in the sinusoids in the KD (bottom right). Scale bar: 20 \u00b5m, 10 \u00b5m and 5 \u00b5m for panels A, B and C, respectively. Control and KD images were acquired using the same microscopy settings.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Bipolar cell polarity axes of apical plasma membrane distribution ($a_{1}$) shown as lines of constant length for individual hepatocytes at their respective position in the lobule after local averaging using a 3D Gaussian kernel at each hepatocyte cell center (standard deviation\u00a020\u00a0\u03bcm, indicated in red above the scale bar) color-coded according to their alignment with the lobule-level reference field ($J$) for wildtype (left, identical to Figure 3D), Luciferase control (middle) and Integrin-\u03b21 knock-down (right, identical to Figure 4C). (B) Same as panel A, but for the ring axis of apical plasma membrane distribution ($a_{2}$), analogous to Figure 3E. (C) Same as panel A, but for the preferred direction $s_{1}$ of the local sinusoidal network surrounding each hepatocyte, analogous to Figure 3F. (D) Same as panel A, but for the preferred direction $c_{1}$ of the local bile canaliculi network surrounding each hepatocyte.\n\n## Discussion\n\nDetermining the structure of a protein, that\u00a0is the three-dimensional arrangement of amino acids, allows making predictions on its function, intra- and inter-molecular interactions, as well as mechanisms of action and mutations that could alter its activity. Similarly, elucidating the structure of a tissue allows making predictions on how cells interact with each other and self-organize to form a functional tissue, including molecular mechanisms governing these processes (Hunter and de Bono, 2014). While some progress has been made in understanding 2D tissues (Dye et al., 2017; Etournay et al., 2016; Hirst and Charras, 2017; Legoff et al., 2013; Marcinkevicius et al., 2009; Saw et al., 2017; Saw et al., 2018; Zallen, 2007) such as simple epithelia, the architecture of 3D tissues and its relation to function are poorly understood. The liver exemplifies this problem. Seventy years ago, Hans Elias pioneered an idealized structural model of liver tissue based on a crystalline order of cells (Elias, 1949b; Elias, 1949c). Although his model captured some essential features of liver architecture, it could not explain the heterogeneity of cells and the amorphous appearance of the tissue.\n\nIn this study, we discovered novel design principles of liver tissue organization. We found that hepatocytes, BC and sinusoidal networks are organized as a layered structure, with a spacing of about one hepatocyte diameter and orientation along the PV-CV axis, consistent with Elias\u2019 model of hepatic plates. However, a breakthrough from our analysis was that, by using biaxial nematic tensors to describe hepatocyte polarity, we discovered that the polarity axes of individual hepatocytes are not random but display a liquid-crystal order on the scale of the lobule.\n\nIt has been proposed that the sinusoidal network forms a scaffold structure that guides hepatocyte polarity and BC network organization (Hoehme et al., 2010; Sakaguchi et al., 2008). We propose an alternative organizational principle based on hierarchical levels of structural order (Figure 5A). At the cellular level, hepatocytes display biaxial cell polarity of apical membrane distribution, distinct from the polarity in simple epithelia. At the multi-cellular level, the apical polarity axes of hepatocytes and the preferred direction of the sinusoidal network are aligned. Hepatocytes, BC and sinusoids exhibit a layered organization, where the layers are parallel to the veins. On the lobule level, we observed liquid-crystal order of hepatocyte polarity. This represents an intermediate state of order between highly ordered crystals and disordered liquids (Figure 5B). The hierarchy of structural order could conceivably be explained by local rules of cell-cell communication in combination with global cues (e.g. morphogen gradients). Silencing Integrin-\u03b21 provides a clue into the molecular mechanism underlying the local communication between hepatocytes and sinusoids. We found that the biaxial cell polarity of individual hepatocytes was maintained. In contrast, the liquid-crystal order was perturbed, that\u00a0is tissue-scale alignment of cell polarity, and sinusoidal network anisotropy. Sinusoid-hepatocyte co-alignment could result from a self-organization mechanism, whereby sinusoids guide hepatocyte polarization, while hepatocytes provide instructive signals that guide sinusoidal network organization (Figure 5C). This bidirectional communication provides a mechanism of self-organization for tissue development and maintenance. This points at a novel role of Integrin-\u03b21 in orchestrating tissue structure by coupling the anisotropy of the sinusoidal network with the orientation of hepatocyte polarity, with boundary conditions set by the large veins.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44860/elife-44860-fig5-v2.jpg)\n\n**Figure 5.:** (A) Our work proposes a new multi-scale model of liver architecture, characterized by liquid-crystal order of hepatocytes with biaxial nematic cell polarity, co-alignment of hepatocyte polarity and preferred direction of the sinusoidal network, and layered order of alternating sinusoidal network and layers of hepatocytes with a thickness of one cell diameter. (B) Cartoon representation of isotropic liquid with lack of positional and orientational order, crystalline order, and nematic liquid-crystal with orientational order. (C) Schematic of bidirectional communication between sinusoids and hepatocytes. Long-range gradients, for\u00a0example Wnt signaling, could provide alignment cues for the orientation biaxial cell polarity of hepatocytes (top-down organization), in addition to local interactions between hepatocytes and sinusoids (bottom-up organization).\n\nIn the liver, sinusoids and BC each form a single connected network. The two networks must be spatially separated, but also contact every hepatocyte to maximize the efficiency of fluid transport in the tissue. Furthermore, the networks are not tree-like, but highly interconnected and redundant with multiple loops and multiple contacts to each hepatocyte. This architecture confers robustness against local damage and failure. Our structural model of liquid-crystal order provides an explanation of how cells self-organize through local interactions to achieve this particular architecture, which is compatible with continuous homeostatic remodeling of the tissue.\n\nOur model of liver tissue organization defines the road ahead. For example, are there intermediate (multi-cellular) units of structural organization between the cell and tissue level? Our study provides a general framework for elucidating the rules of cell-cell interactions and structural order of 3D tissues beyond the liver.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Flk-1 (goat polyclonal)</td>\n      <td>R and D system</td>\n      <td>AF644 / RRID:AB_355500</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-laminin (rabbit polyclonal)</td>\n      <td>Sigma</td>\n      <td>L9393/RRID:AB_477163</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-fibronectin (rabbit polyclonal)</td>\n      <td>Millipore</td>\n      <td>AB2033/RRID:AB_2105702</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-CD13 (rat monoclonal)</td>\n      <td>Novus</td>\n      <td>NB100\u221264843/RRID:AB_959651</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-integrin \u00df1 (rat monoclonal)</td>\n      <td>Millipore</td>\n      <td>MAB1997/RRID:AB_2128202</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-goat Alexa Fluor 647</td>\n      <td>Invitrogen</td>\n      <td>A21447/RRID:AB_2535864</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-rabbit Alexa Fluor 647</td>\n      <td>Invitrogen</td>\n      <td>A31573/RRID:AB_2536183</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-rat CF 568</td>\n      <td>Biotium</td>\n      <td>20092/RRID:AB_10559037</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Phalloidin-488</td>\n      <td>LIFE technologies</td>\n      <td>A12379/RRID:AB_2315147</td>\n      <td>(1:150)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Dapi</td>\n      <td>LIFE technologies</td>\n      <td>D1306/RRID:AB_2629482</td>\n      <td>(1 \u00b5g/ml)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LNP-formulated siRNAs against luciferase</td>\n      <td>Bogorad et al., 2014</td>\n      <td></td>\n      <td>(1 mgKg-1)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LNP-formulated siRNAs against Integrin-\u00df1</td>\n      <td>Bogorad et al., 2014</td>\n      <td></td>\n      <td>(1 mgKg-1)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M.\u00a0musculus C57BL/6JOlaHsd)</td>\n      <td>Wild type, Luciferase, Integrin-\u00df1 knock down</td>\n      <td>Charles River Laboratory</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionTracking</td>\n      <td>Morales-Navarrete et al., 2015</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MuSiCal</td>\n      <td>Agarwal and Mach\u00e1\u0148, 2016</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nTo study liver tissue organization under normal conditions, 6\u20139 weeks old C57BL/6JOlaHsd mice (two males and one female) were purchased from Charles River Laboratory. For the knocked-down experiments, eight weeks old male mice were purchased from the same company. Integrin-\u03b21 was knocked-down in mice (four males) by injecting siRNA formulated into lipidoid-based nanoparticles (LNP) that primarily target hepatocytes. An analogous treatment using siRNA against luciferase was used as control (five males). A complete description of the knock-down experiments can be found in Bogorad et al. (2014). All procedures were performed in compliance with German animal welfare legislation and in pathogen-free conditions in the animal facility of the MPI-CBG, Dresden, Germany. Protocols were approved by the Institutional Animal Welfare Officer.\n\n### Sample collection, immunostaining and optical clearing\n\nMice livers were fixed through intracardiac perfusion with 4% paraformaldehyde and post-fixed overnight at 4\u00b0C with the same solution. Eight to ten serial slices were cut in a vibratome (thickness 100 \u03bcm), corresponding to a total thickness of 800\u20131000 \u03bcm. For immunostaining, we used anti-CD13 (Novus, cat NB100-64843, rat, 1/500), anti-fibronectin (Millipore, cat AB2033, rabbit, 1/1000), anti-laminin (Sigma, cat L9393, rabbit, 1/5000), anti-Flk-1 (R and D system, cat AF644, goat, 1/200), phalloidin-488 (LIFE technologies, cat A12379, 1/150) and DAPI (LIFE technologies, cat D1306, 1 \u03bcg/ml). Liver slices were permeabilized with 0.5% Triton X-100 in PBS for 60 min at room temperature (RT). Both, primary and secondary antibodies were diluted in TxBuffer (0.2% gelatin, 300 mM NaCl, 0.3% Triton X-100 in PBS) and each antibody was incubated with the tissue for 2 days at room temperature. For optical clearing, we used a modified version of SeeDB (Ke et al., 2013). The first day the liver slices were incubated consecutively in 25% fructose for 4 hr, 50% fructose for 4 hr and 75% fructose overnight. The second day the samples were transferred to 100% fructose (100% wt/v fructose, 0.5% 1-thioglycerol, 0.1M phosphate buffer pH7.5) and the third day we left the samples in SeeDB solution (80.2% wt/wt fructose, 0.5% 1-thioglycerol, 0.1M phosphate buffer pH7.5) until the images were acquired at the microscope. Different concentrations of fructose were prepared diluting 100% fructose with water.\n\n### Imaging and image analysis\n\nLiver samples were imaged in an upright multiphoton laser-scanning microscope (Zeiss LSM 780 NLO) equipped with Gallium arsenide phosphide (GaAsp) detectors. Liver slices were imaged twice at low (25x/0.8 Zeiss objective, 1 \u00b5m voxel size) and high resolution (63x/1.3 Zeiss objective, 0.3 \u00b5m voxel size), respectively. Low-resolution images were taken for the 3D reconstruction of big veins (central and portal veins) where the high resolution images were embedded. High-resolution images were acquired between selected central to portal vein (CV-PV) axes to resolve sub-cellular structures such as apical surfaces of hepatocytes. Both high- and low-resolution images were processed and segmented with the Motion Tracking software as described in Morales-Navarrete et al. (2015)\u00a0and\u00a0Morales-Navarrete et al. (2016). The two-dimensional (2D) super-resolved images were generated by applying the Multiple Signal Classification Algorithm for super-resolution fluorescence microscopy (MuSiCal)\u00a0(Agarwal and Mach\u00e1\u0148, 2016) to a set of 50 sequential time-lapse confocal images with 0.1 \u00b5m pixel size.\n\n### Mollweide projection\n\nWe used the planar, pseudo-cylindrical Mollweide projection to visualize polarity patterns in 2D (Figure 2). The Mollweide projection preserves distances and areas at the expense of distorting shapes and is familiar from global maps of the Earth (Steinwand et al., 1995). For each cell, the apical plasma membrane domain of the cell surface was radially projected on a sphere placed at the volumetric center of the cell. To define a reference orientation for each cell, the bipolar axis of its projected basal plasma membrane ($b_{1}$) was chosen as the \u2018north pole-south pole' axis for projection while the bipolar axis of the apical plasma membrane ($a_{1}$) defined the position of the zero meridian, which is placed vertically in the center of the projection. This relates the \u2018poles' to the largest basal patches and the \u2018equator' to apical patches with the largest apical patch pointing towards the reader.\n\n### Nematic tensors of polarity marker distribution of individual hepatocytes\n\nIn our software MotionTracking, the surface of a cell is represented as a triangulated mesh. For each vertex of the mesh, it is stored if this vertex was identified to belong to membrane patches rich in the apical polarity protein marker. Triangles are considered to belong to the apical plasma membrane patch if at least two vertices of the triangle have apical identity.\n\nTo compute the nematic tensor of apical polarity, triangles were first projected on a unit sphere to avoid distortions by non-spherical cell shapes, see Figure 2D. The center of the sphere is placed at the volumetric center of the cell. This projection assumes cell shapes to be star-convex with respect to the volumetric center of the cell. As a test, the sum of projected areas yielded\u00a0$(4.035\\pm0.086)\\pi$, consistent with the surface area $4\\pi$ of a unit sphere.\n\nThe nematic tensor of apical polarity is defined as a sum of all projected triangles with apical identify, indexed by $i\\inI_{apical}$\n\n$$\nN_{\\alpha\\beta}=\\frac{3}{2}\\frac{1}{\\sumiA_{i}}\\sumi\\inI_{apical}A_{i}(\u00a0n_{\\alpha}^{(i)}n_{\\beta}^{(i)}\u2212\\frac{1}{3}\\delta_{\\alpha\\beta}).\n$$\n\nHere, $A_{i}$\u00a0denotes the projected area of the projected triangle with index $i$\u00a0and $n^{(i)}$\u00a0its surface normal vector. Einstein summation convention is assumed.\n\nThe rank-2 tensor $N_{\\alpha\\beta}$ is traceless and symmetric, and can thus be diagonalized with normalized eigenvectors\u00a0$a_{1},a_{2},a_{3},$\u00a0and respective eigenvalues\u00a0$\\sigma_{1}$,$\\sigma_{2}$,$\\sigma_{3}$. Without loss of generality, we assume\u00a0$\\sigma_{2}\\leq\\sigma_{3}\\leq\\sigma_{1}$. We refer to $a_{1}$\u00a0as the bipolar axis, and $a_{2}$ as the ring axis, and to\u00a0$\\sigma_{1}$,\u00a0$\\sigma_{2}$ as their respective weights. Note that the eigenvectors are only determined up to sign, and thus each specify an axis. The third axis can be deduced from the other two as\u00a0$a_{3}=\\pma_{1}\\timesa_{2}$, while\u00a0$\\sigma_{3}=-\\sigma_{1}-\\sigma_{2}$. We did not observe strong correlations between these weights of polarity axes and the alignment of the axes with the lobule-level reference field $J$\u00a0defined below (not shown).\n\nThe definition of the nematic tensor of basal polarity and the respective polarity axes\u00a0$b_{1}$\u00a0and\u00a0$b_{2}$\u00a0,\u00a0is analogous.\n\nSimilarly, we define a preferred axis of the local sinusoidal network. The skeleton of the network is characterized by segments with respective vectors $n^{i}$\u00a0and segment lengths\u00a0$l^{i}$, for\u00a0$i=1,\u2026,N$. We define a nematic tensor that characterizes the anisotropy of the network\n\n$$\nN_{\\alpha\\beta}=\\frac{3}{2}\\frac{1}{\\sumil_{i}}\\sumi=1Nl_{i}(\u00a0e_{\\alpha}^{(i)}e_{\\beta}^{(i)}\u2212\\frac{1}{3}\\delta_{\\alpha\\beta}).\n$$\n\nWe refer to the axis parallel to the eigenvector corresponding to the largest eigenvalues as the sinusoid preferred axis.\n\n### Local averaging of polarity axes\n\nFor Figure 3B, D, E and Figure 4\u2014figure supplement 1, local averaging of polarity axes was performed. Specifically, given unit vectors $a^{j}$\u00a0that characterize a cell polarity axis of given type for individual hepatocytes (located at estimated cell center positions $x^{j}$\u00a0labeled by an index\u00a0$j$, we computed nematic tensors\n\n$$\nN\u2212_{\\alpha\\beta}(x)=\\frac{3}{2}\\sumjw(|x^{(j)}\u2212x|)(\u00a0a_{\\alpha}^{(j)}a_{\\beta}^{(j)}\u2212\\frac{1}{3}\\delta_{\\alpha\\beta}),\n$$\n\nwhere $w(x)$\u00a0denotes a Gaussian kernel, with standard deviation chosen as 20 \u03bcm (approximately one hepatocyte diameter). In the respective plots, we displayed the principal axis with maximal eigenvalue of the weighted-mean tensors $N-_{\\alpha\\beta}(x^{i})$ evaluated at the positions\u00a0$x^{i}$.\n\n### Lobule-level reference system\u00a0(J)\n\nThe lobule-level reference system is defined by the location of the large veins within the imaging volume in\u00a0terms\u00a0of flux lines of solutions of the Poisson equation. The Poisson equation describes diffusive transport between spatially separated sources and sinks. Equivalently, the same solutions can be interpreted as an electrostatic potential, where positive and negative point charges correspond to the sources and sinks, respectively, and the electrostatic potential corresponds to a steady-state concentration field established by diffusion.\n\nBelow, we use the terminology of the electrostatic problem, which has the formal benefit that negative values of the $\u03c7$\u00a0field have a direct physical interpretation as a negative potential, whereas in the interpretation of concentration fields a homogeneous constant $\u03c7_{0}$ has to be added to the $\u03c7$\u00a0field to ensure that concentrations $c=\u03c7+\u03c7_{0}$\u00a0are non-negative.\n\nThe location of the large vessels (portal vein and central vein) are given as triangulated meshes as calculated by MotionTracking. Using the electrostatic analogy, point charges are placed at the location $r_{i}$\u00a0of the triangle centers with point charges of strength $q_{i}$\u00a0proportional to the relative area of the triangle with respect to the total area of the corresponding vessel\n\n$$\nq_{i}=\\pm\\frac{A_{i}}{\\sumjA_{j}}.\n$$\n\nHere, the sum extends over all triangles of either the PV or CV mesh representation, respectively. The sign of the point charge $q_{i}$\u00a0are opposite between the two vessel types, that\u00a0is\u00a0negative for portal vein and positive for central vein. This choice corresponds to a uniform charge surface density on the surfaces of the large vessels with total net charge equal to\u00a0\u00b11, respectively.\n\nA scalar field\u00a0$\u03c7$ is calculated by superposition of the Green\u2019s functions of all the point charges on the veins\n\n$$\n\u03c7=q_{i}\\sumi\\frac{1}{|r\u2212r_{i}|}\u00a0,\n$$\n\nwhere the sum extends over all triangles of the PV and CV mesh representation. The value of this scalar field defines a positional value indicating location between PV and CV. Negative values indicate closeness to the portal vein, whereas positive values indicate closeness to the central vein. The gradient of this scalar field $J=\\nabla\u03c7$\u00a0gives a reference direction at all locations within the lobule. This field of reference directions is used to determine alignment of the nematic axes derived by the polarity of hepatocytes and the anisotropy of the sinusoidal and BC networks.\n\n### Nematic alignment parameter\u00a0S\n\nWe consider an ensemble of axes, represented by unit vectors\u00a0$e^{i}$, together with an ensemble of reference axes with unit vectors\u00a0$g^{i}$, where\u00a0$i=1,\u2026,N$. We define the nematic alignment parameter as\n\n$$\nS=\\frac{1}{N}\\sumi=1N\\frac{3}{2}(e^{(i)}\u22c5g^{(i)})^{2}\u2212\\frac{1}{2}.\n$$\n\nWe have $S=1$\u00a0for the case that each axis $e^{i}$\u00a0is perfectly parallel to its respective reference axis\u00a0$g^{i}$, whereas $S=-\\frac{1}{2}$\u00a0for perfectly perpendicular relative alignment. For an isotropic orientation between axes and references axes,\u00a0$S=0$. We apply this general definition to cell polarity axes of hepatocytes and the preferred anisotropy axis of the local sinusoidal network for\u00a0$e^{i}$, while the curvi-linear reference field\u00a0$g^{i}=J$, evaluated at each cell position, provides local reference axes.\n\nOur definition of the nematic alignment parameter S generalizes the known nematic order parameter (Gennes and Prost, 1995; Luckhurst, 2015). Specifically, if the reference axis in our definition is chosen constant and equal to the nematic symmetry axis of the ensemble, both definitions agree.\n\n#### Trivial baseline for nematic alignment parameter S for biaxial objects\n\nWe note a special property of the nematic alignment parameter for an ensemble of biaxial objects, characterized by respective unit vectors\u00a0$e_{1}^{i}$,$e_{2}^{i}$, $e_{3}^{i}$, $i=1,\u2026,N$. Let\u00a0$S_{1}$, $S_{2}$, $S_{3}$\u00a0be the respective nematic alignment parameters for each of the three different axes. Then, the maximum-likelihood estimate for\u00a0$S_{2}$, given a known value for\u00a0$S_{1}$, reads\n\n$$\nS_{2}^{ML}=\u2212\\frac{1}{2}S_{1}.\n$$\n\nThis relationship follows from $S_{1}+S_{2}+S_{3}=0$\u00a0and\u00a0$S_{2}^{ML}=S_{3}^{ML}$. This trivial baseline is shown in Figure 3G as hatched bar for the correlation between the ring axis $a_{2}$ and\u00a0$J$.\n\n### Cross-correlation analysis\n\nTo investigate a possible layered order of liver tissue, we performed a cross-correlation analysis, see Figure 3H. We first selected a region of interest in the tissue sample, placed in the middle of the lobule. In this selected region, the field lines of the lobule-level reference field ($J$) are approximately straight and parallel, which facilitated analysis. The region is shown as a square in the inset of Figure 3H (enlarged in Figure 3\u2014figure supplement 2A). Inside the square region, the mean projected density of the sinusoidal network (projected along the z-axis) based on segmented voxelated data is shown. Next, we investigated layered order between the positions of hepatocytes and the sinusoidal and BC networks.\n\nWe calculated the cross-correlation between the mean projected density of the sinusoidal network and an analogously defined mean projected density of hepatocytes (Figure 3\u2014figure supplement 2B). Specifically, we represent the mean projected density of the segmented sinusoidal network by a 2D pixel array $Sn,m$\u00a0and the averaged projected density of hepatocytes by a pixel array\u00a0$Hn,m$, where $n$\u00a0and $m$ are the indices of the pixels in the 2D images. The normalized cross-correlation between the respective images was then calculated as\n\n$$\nC_{SH}[k,l]:=\\frac{1}{N_{S}+N_{H}}\\sumn,m\\frac{1}{\\sigma_{S}\\sigma_{H}}(S[n,\u00a0m]\u2212\\mu_{S})(H[n+k,\u00a0m+l]\u2212\\mu_{H}),\n$$\n\nwhere the sum runs over all pixels of\u00a0$S$. Here, $N_{S}$\u00a0denotes the total number of pixels of\u00a0$S$, $\\mu_{S}=\\sum_{n,m}S[n,m]/N_{f}$\u00a0is the average of\u00a0$S$, and $\\sigma_{S}$\u00a0the standard deviation, defined as\u00a0$\\sigma_{S}\u00a0=\\sqrt{\\sumn,m(S[n,m]\u2212S\u2212)^{2}}/N_{f}$. Analogous definitions apply to\u00a0$N_{H}$, $\\mu_{H}$, and\u00a0$\\sigma_{H}$. Outside its valid range, the array $Hn,m$\u00a0was zero-padded. The resultant 2D-cross correlation array $C_{SH}k,l$ thus had twice the dimensions of\u00a0$S$.\n\nWe then computed the mean projection of this cross correlation array $C_{SH}k,l$\u00a0on a line passing through\u00a0$k=0,l=0$, and parallel to the blue reference line in the region of interest shown in the inset of Figure 3H. For this projection, we used a binning of 5 pixels, corresponding to a bin size of 1.5 \u03bcm. The use of a mean projection of 2D-cross correlation employed here instead of a conventional 1D-cross correlation along a single line reduced noise in the data and accounts for the fact of random phase shifts between neighboring layers.\n\nAn analogous cross correlation can be computed between the mean projected density of segmented hepatocytes and the BC network (Figure 3\u2014figure supplement 2C). The final projected cross correlations between sinusoidal network and hepatocytes (magenta), as well as between sinusoidal network and bile canaliculi network (green) are shown in Figure 3H (reproduced in Figure 3\u2014figure supplement 2D). As a control,\u00a0Figure 3\u2014figure supplement 2E shows the analogous plot for a control direction perpendicular to the blue reference direction).\n",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "9e800723-3159-44d4-aabb-6a736d96efd8",
+      "submission_id": "ceaaed87-0d31-4384-a374-1fb96d0b15ce",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pierre Sens, Institut Curie, PSL Research University, CNRS France\n\nReviewers:\n- Benoit Ladoux, CNRS France\n\n## Review text\n\nDOI: [10.7554/eLife.44860.023](https://doi.org/10.7554/eLife.44860.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Liquid-crystal organization of liver tissue\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Arup Chakraborty as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Benoit Ladoux (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers agree that this is a very interesting paper with several important contributions. The first is the use of state-of-the-art imaging to construct a 3D picture of the liver organisation. The second is the use of tools drawn for the physics of liquid crystal to show that the organisation of polarity domains at the surface of hepatocytes displays biaxial order with an apparent repulsion between apical and basal regions, and that there exists a nematic-like long range order of cell orientation at the tissue scale. The third is the finding that the hepatocyte polarity is maintained by a cell-autonomous mechanism, while bidirectional communication between hepatocytes and sinusoids is required to obtain the proper tissue organisation.\n\nEssential revisions:\n\n1) One concern regards the way the paper is organised and the way non-trivial notions of orientational order are introduced. It would be useful to define liquid crystal order earlier in the paper. The notion of biaxial polarity at the cell scale is a bit complex and it could be useful to discuss in general terms the concept of nematic order at the tissue scale first so that the need to define an orientation axis at the cell scale becomes more natural.\n\n2) The nematic order is discussed in terms of apical-basal polarity. Does the cell shape reveal such an order as well? Could a nematic parameter be defined from the cell body elongation, and would it match the polarity axis? Is there a correlation between shape and the bipolar or ring axes?\n\n3) The reference to a biaxial nematic order at the tissue scale (subsection \u201cSpatial patterns of cell polarity reveal liquid-crystal order in the liver lobule\u201d) is also unclear. This seems to suggest that one direction perpendicular to the flux orientation J is singled out, while this does not seem to be the case here.\n\n4) Where is the evidence to show that the silencing of Integrin-\u03b21 does not affect the sinusoidal cells? This is an important point to support the claim that the large-scale tissue organisation requires two-way communication between hepatocytes and endothelial cells.\n",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6643ef14-1965-40ee-a443-f44b3fa122a2",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C1",
+      "claim": "The liver is the largest metabolic organ of the human body and vital for blood detoxification and metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The liver is the largest metabolic organ of the human body and vital for blood detoxification and metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established biological knowledge about the liver's role and size.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "840e626f-3013-488f-ae55-134af764c970",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C2",
+      "claim": "In the lobule, blood flows through the hepatic sinusoids from the portal vein (PV) and hepatic artery toward the central vein (CV).",
+      "claim_type": "EXPLICIT",
+      "source": "In the lobule, the functional unit of the liver, blood flows through the hepatic sinusoids from the portal vein (PV) and hepatic artery toward the central vein (CV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established anatomical flow pattern in liver lobules, supported by citations in the sentence.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "0548b232-6e86-45fa-9573-7c9d107caf32",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C3",
+      "claim": "Hepatocytes take up and metabolize substances transported by the blood and secrete bile through their apical surface into the bile canaliculi (BC) network.",
+      "claim_type": "EXPLICIT",
+      "source": "The hepatocytes take up and metabolize substances transported by the blood and secrete the bile through their apical surface into the bile canaliculi (BC) network, where it flows toward the bile duct near the PV (Boyer, 2013; Meyer et al., 2017; Treyer and M\u00fcsch, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "27b161da-4f2f-467a-ae6c-5e4eb87074b2",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C4",
+      "claim": "Hepatocytes are polarized cells with a unique organization of apical and basal plasma membrane on their surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Hepatocytes are polarized cells with a unique organization of apical and basal plasma membrane on their surface (M\u00fcsch, 2014; Treyer and M\u00fcsch, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "cfaa8dec-92a6-4017-8585-2c5bd0e45aed",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C5",
+      "claim": "Hepatocytes exhibit a multipolar organization with multiple apical and basal domains, in contrast to simple epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to simple epithelia, where the cells have a single apical surface facing the lumen of organs, hepatocytes exhibit a multipolar organization, that is, they have multiple apical and basal domains (Gissen and Arias, 2015; M\u00fcsch, 2014; Treyer and M\u00fcsch, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "b05f2289-6a7a-428e-a181-cdbecd7caf07",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C6",
+      "claim": "The multipolar organization of hepatocytes allows them to have numerous contacts with the sinusoidal and BC networks to maximize exchange of substances.",
+      "claim_type": "EXPLICIT",
+      "source": "Such organization allows the hepatocytes to have numerous contacts with the sinusoidal and BC networks to maximize exchange of substances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional consequence of the multipolar organization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "16c020b3-4a55-44f4-b7e7-e62eb0c06142",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C7",
+      "claim": "Sinusoidal endothelial cells and hepatocytes form a heterogeneous 3D packing of cells and labyrinths of sinusoids and BC without apparent order.",
+      "claim_type": "EXPLICIT",
+      "source": "Sinusoidal endothelial cells and hepatocytes form a heterogeneous 3D packing of cells and labyrinths of sinusoids and BC without apparent order (Gissen and Arias, 2015; Treyer and M\u00fcsch, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the apparent lack of order in liver tissue structure, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "6b0369d1-ebbd-4e35-a0ad-2d5ee7fb54a2",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C8",
+      "claim": "Each hepatocyte must be in contact with both sinusoidal and BC networks, yet the networks must never intersect.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the function of sinusoidal and BC networks prompt precise design requirements: each hepatocyte must be in contact with both networks, yet the networks must never intersect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the design requirements based on functional considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "b3ca42b0-6629-4523-9409-cf43d6f1b223",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C9",
+      "claim": "Hans Elias in 1949 pioneered the structural analysis of the mammalian liver tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Hans Elias in 1949 pioneered the structural analysis of the mammalian liver tissue (Elias, 1949a; Elias, 1949b; Elias, 1949c; Elias and Bengelsdorf, 1952).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical claim supported by citations to Elias's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "2e661db5-5de2-430a-97d4-dfec84789ded",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C10",
+      "claim": "Elias proposed that the sinusoids are separated from one another by walls of hepatocytes (one-cell-thick), forming a 'continuous system of anastomosing plates, much like the walls separating the rooms within a building'.",
+      "claim_type": "EXPLICIT",
+      "source": "He proposed a structural model whereby the sinusoids are separated from one another by walls of hepatocytes (one-cell-thick), forming a 'continuous system of anastomosing plates, much like the walls separating the rooms within a building' (Elias, 1949b; Elias, 1949c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes Elias's structural model, supported by citations to his work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "ce541e8d-fddf-423f-aea3-0fb6e91d857f",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C11",
+      "claim": "Elias's analysis was hampered by the difficulties of reconstructing the 3D tissue structure, which at that time relied on stereological analysis of 2D images.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the analysis underlying the structural model was hampered by the difficulties of reconstructing the 3D tissue structure, which at that time relied on stereological analysis of 2D images (Elias, 1949b; Elias, 1949c; Elias, 1971; Elias and Bengelsdorf, 1952).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical claim about the limitations of Elias's methods, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "a045a2fb-7aaa-4660-9246-79503a7b5839",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C12",
+      "claim": "Mouse livers were fixed, sectioned into 100 \u03bcm serial slices, and immunostained for cell nuclei (DAPI), cell borders (Phalloidin), hepatocyte apical plasma membrane (CD13), and the extracellular matrix (ECM, fibronectin and laminin).",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse livers were fixed, sectioned into 100 \u03bcm serial slices, and immunostained for cell nuclei (DAPI), cell borders (Phalloidin), hepatocyte apical plasma membrane (CD13), and the extracellular matrix (ECM, fibronectin and laminin) to visualize the basal plasma membrane of hepatocytes facing the sinusoidal endothelial cells (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "7ed2207c-e796-4721-a1b0-2def08fc27ba",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C13",
+      "claim": "Full slices and selected regions-of-interest comprising a whole liver lobule were imaged at low resolution to determine the position of CV and PV as landmarks.",
+      "claim_type": "EXPLICIT",
+      "source": "Full slices and selected regions-of-interest comprising a whole liver lobule were imaged at low resolution (Figure 1A\u2013C) to determine the position of CV and PV as landmarks, which allowed locating and re-imaging individual CV-PV-axes at high-resolution (Figure 1D, corresponding to gray box in Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the imaging strategy used, with reference to figures showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "6664defb-02ad-48ec-806e-f9ae1b9b4cc3",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C14",
+      "claim": "The multi-resolution imaging allowed analysis of the distribution of apical and basal surfaces of single hepatocytes, as well as sinusoidal and BC network geometry in relation to the CV-PV axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The multi-resolution imaging allowed us to analyze the distribution of apical and basal surfaces of single hepatocytes (Figure 1F), as well as sinusoidal and BC network geometry (Figure 1E) in relation to the CV-PV axis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the analytical capabilities enabled by the imaging approach, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "32480a88-50b3-43e5-b4d9-16237c981b8c",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C15",
+      "claim": "Analysis of thousands individual hepatocytes revealed the full complexity of distribution of the apical, lateral and basal surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of thousands individual hepatocytes revealed the full complexity of distribution of the apical, lateral and basal surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the findings from analyzing many cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "47f86b0f-61d8-4389-94a6-3e942971fae6",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C16",
+      "claim": "Hepatocyte polarity cannot be described by a single apico-basal polarity axis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hepatocyte polarity cannot be described by a single apico-basal polarity axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of hepatocyte polarity patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "87972bb6-ba18-49c2-bb05-a93bc690eefe",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C17",
+      "claim": "In simple epithelia, apico-basal cell polarity can be described by a single vector pointing from the cell center to a single apical pole.",
+      "claim_type": "EXPLICIT",
+      "source": "In simple epithelia, such as in the kidney and intestine, apico-basal cell polarity can be described by a single vector pointing from the cell center to a single apical pole (Bryant and Mostov, 2008; Marcinkevicius et al., 2009; Treyer and M\u00fcsch, 2013) (see schematic in Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the polarity of simple epithelia, supported by citations and a figure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "a464b674-a856-43e5-a1de-ca63780f1108",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C18",
+      "claim": "The distribution of apical plasma membrane in hepatocytes is characterized by two well-defined perpendicular axes (bipolar and ring axes).",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of hepatocytes, the distribution of the apical plasma membrane is in between these two extreme cases, resulting in two well-defined perpendicular axes (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the biaxial polarity of hepatocytes, with reference to a figure showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "458a8c7e-cac0-4243-a583-a1e2b04dc0b2",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C19",
+      "claim": "The distribution of weights is skewed in favor of the belt-like apical surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of weights is skewed in favor of the belt-like apical surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical distribution of polarity axis weights observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "082e38ff-7027-4f3b-b12b-9ffd01a115d5",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C20",
+      "claim": "Extreme cases described only by a single axis are very rare in the population of hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, extreme cases described only by a single axis are very rare in the population of hepatocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the analysis of hepatocyte polarity patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "7e736ad9-4f18-4e29-9466-0b4daa7275fa",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C23",
+      "claim": "The anti-correlation between apical and basal axes of the same type corroborates the mutual repulsion between apical and basal surfaces of hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This anti-correlation corroborates the mutual repulsion between apical and basal surfaces of hepatocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed correlation pattern.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "37adb617-d3e5-4ee3-a5ab-9db5943c2e3c",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C24",
+      "claim": "Only weak correlations were observed between cell shape and apical cell polarity axes, implying that these cellular features are independent to a large extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we only observed weak correlations between cell shape and apical cell polarity axes, implying that these cellular features are independent to a large extent (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a finding from correlation analysis, with reference to a supplementary figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "abf91559-3a1f-462d-9c52-9b277bdf8428",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C25",
+      "claim": "Local averaging of the bipolar axes revealed a spatial organization of hepatocyte polarity with a pattern oriented along lines that connect CV and PV.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure revealed a spatial organization of hepatocyte polarity with a pattern of the bipolar axis oriented along lines that connect CV and PV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a pattern observed after local averaging of polarity axes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "ab52daef-4ba6-4509-b2c0-80d49c6e27e5",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C29",
+      "claim": "Belt-like apical domains are oriented to facilitate bile transport along the reference direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, belt-like apical domains are oriented to facilitate bile transport along the reference direction (see also Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about the functional consequence of the observed orientation pattern.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "c23029c0-2757-4718-a1f7-19b0eaebe14b",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C30",
+      "claim": "The simultaneous alignment of two axes, bipolar and ring axis, is indicative of biaxial nematic order.",
+      "claim_type": "EXPLICIT",
+      "source": "The simultaneous alignment of two axes, bipolar and ring axis, is indicative of biaxial nematic order (Luckhurst, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interprets the observed alignment pattern in terms of liquid crystal physics, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "37c0c80e-6615-428e-b083-184b87d2a2be",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C31",
+      "claim": "The alignment of the ring axis was significantly above the prediction from uniaxial order (p=0.014), suggesting the presence of biaxial order.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that the alignment of the ring axis was significantly above the prediction (Figure 3G, hatched bar; p=0.014). This suggests the presence of biaxial order, which is confirmed by a detailed mathematical characterization in terms of biaxial order parameters described in Scholich et al. (2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the data analysis, with reference to a figure and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "a4761a68-575b-4aaf-9543-c69039180b07",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C33",
+      "claim": "Cell polarity axes of hepatocytes and the anisotropy of the sinusoidal network display biaxial nematic order in the liver lobule.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis shows that cell polarity axes of hepatocytes and the anisotropy of the sinusoidal network display biaxial nematic order in the liver lobule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the analysis of alignment patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "c9c97d81-c596-4427-8f97-1abcaf8fc40b",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C34",
+      "claim": "The cross-correlations revealed a periodicity of structures along the direction perpendicular to the CV-PV axis with a characteristic length-scale of 24 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-correlations revealed a periodicity of structures along this direction with a characteristic length-scale of 24 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a quantitative finding from cross-correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "6ec13c68-dfaa-49c4-aa79-8230e9e41ae9",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C35",
+      "claim": "The periodicity approximately equals the sum of the hepatocyte and sinusoid tube diameters.",
+      "claim_type": "EXPLICIT",
+      "source": "This periodicity approximately equals the sum of the hepatocyte and sinusoid tube diameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the measured periodicity to known cell dimensions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "608ecc87-5cbd-4628-a81f-e08587bb6544",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C36",
+      "claim": "No evidence of periodic structures was found in the direction of the CV-PV axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found no evidence of periodic structures in the direction of the CV-PV axis (see Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the absence of periodicity in one direction, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "a4391bb5-f03d-4a19-ae0c-97428dda2d38",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C37",
+      "claim": "Periodicity in only one direction is a hallmark of a layered structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Such periodicity in only one direction is a hallmark of a layered structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interprets the observed periodicity pattern in terms of structural organization.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "cbef7940-178a-439f-8f57-5768a4a70f2e",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C38",
+      "claim": "Sinusoids, hepatocytes, and BC exhibit a layered organization, with most hepatocytes forming a single layer sandwiched between sinusoidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, sinusoids, hepatocytes, and BC exhibit a layered organization, with most hepatocytes forming a single layer sandwiched between sinusoidal cells, supporting earlier structural models (Elias and Bengelsdorf, 1952; Elias, 1949b; Elias, 1949c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about tissue organization, supported by the data and citations to earlier models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "b931821e-6808-4b4e-ba60-9fb775454e2c",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C39",
+      "claim": "It has been proposed that sinusoidal endothelial cells are the main organizers by self-ordering and enforcing the position and polarity of hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that the sinusoidal endothelial cells are the main organizers by self-ordering and enforcing the position and, hence, the polarity of hepatocytes (Hoehme et al., 2010; Sakaguchi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a hypothesis from prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "b1ec784a-ddce-4ed0-86fc-b71c93358a44",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C40",
+      "claim": "A candidate pathway orienting the basal surface of hepatocytes is that of the transmembrane ECM receptors Integrins.",
+      "claim_type": "EXPLICIT",
+      "source": "A candidate pathway orienting the basal surface of hepatocytes is that of the transmembrane ECM receptors Integrins (Yu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This proposes a molecular mechanism, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "def41b0a-1e00-4dd1-9484-14fe5a6a8fbb",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C41",
+      "claim": "Injection of siRNAs formulated into lipid nanoparticles (LNP) provides high efficacy and specificity in silencing genes in hepatocytes of adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The injection of siRNAs formulated into lipid nanoparticles (LNP) provides the advantage of silencing genes with high efficacy and specificity in hepatocytes of adult mice (Bogorad et al., 2014; Zeigerer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical method, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "10ebffa3-d3c0-4787-a0f9-b472d27b31c5",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C42",
+      "claim": "Integrin-\u03b21 expression was ablated in both the lateral and basal plasma membrane of hepatocytes but not in the sinusoidal endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using super-resolution microscopy, we verified that Integrin-\u03b21 expression was ablated in both the lateral and basal plasma membrane of hepatocytes but not in the sinusoidal endothelial cells (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental verification using microscopy, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "dc3eea35-4171-469a-b1b2-a1ddc1da5872",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C43",
+      "claim": "Injection of siRNAs against Integrin-\u03b21 resulted in a 90% reduction in expression in comparison with control.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of siRNAs against Integrin-\u03b21 resulted in a 90% reduction in expression in comparison with control (injected with LNP-formulated Luciferase siRNA), as previously described (Bogorad et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the efficacy of the knockdown, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "5431d1d4-90d2-4ae8-bb80-430010d723c8",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C44",
+      "claim": "Loss of Integrin-\u03b21 in liver parenchymal cells led to barely detectable alterations during the first 2\u20134 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Integrin-\u03b21 in liver parenchymal cells led to barely detectable alterations during the first 2\u20134 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the time course of phenotypic changes after knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "bea94052-a77d-42d1-8a6c-158ec1f2f1b3",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C45",
+      "claim": "After 7 weeks of treatment with Integrin-\u03b21-specific siRNAs, major alterations in liver tissue organization were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after 7 weeks of treatment with Integrin-\u03b21-specific but not control siRNAs, when a significant number of hepatocytes are naturally replaced (Magami et al., 2002), we detected major alterations in liver tissue organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phenotype observed after extended knockdown, with a citation about hepatocyte turnover.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "92a593a9-dbec-4d35-9bbd-f85cc72463f6",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C46",
+      "claim": "The BC network appeared disrupted and more branched (due to an increase of dead-end branches) after Integrin-\u03b21 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the BC network appeared disrupted and more branched (due to an increase of dead-end branches) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a phenotypic change observed in the knockdown, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "53aa5e9a-ad57-45f8-a931-dc85254396c8",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C47",
+      "claim": "The biaxial cell polarity of hepatocytes was not compromised after Integrin-\u03b21 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the biaxial cell polarity of hepatocytes was not compromised. We observed almost unchanged correlation patterns between apical and basal cell polarity axes (Figure 4B) and indistinguishable distributions of their weights (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the preservation of biaxial polarity after knockdown, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "b452c3bd-681c-49cd-ad50-193c32fe64f8",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C48",
+      "claim": "Hepatocyte polarity is maintained by a cell-autonomous mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that hepatocyte polarity is maintained by a cell-autonomous mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that biaxial polarity is preserved after knockdown.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "dc035810-27ea-488d-90f2-1d44a40a2aac",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C49",
+      "claim": "There was a significant increase in apical surface at the expense of the basal surface after Integrin-\u03b21 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "On the scale of individual hepatocytes, the only change was a significant increase in apical surface at the expense of the basal surface (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a quantitative change in membrane distribution after knockdown, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "2da375e1-caea-447d-b72a-4613398c0002",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C50",
+      "claim": "The long-range order of hepatocyte cell polarity was strongly perturbed after Integrin-\u03b21 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the long-range order of hepatocyte cell polarity was strongly perturbed (Figure 4C, D and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the loss of long-range order after knockdown, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "cba49c88-200f-413f-8912-5652a114ab17",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C51",
+      "claim": "Despite the silencing of Integrin-\u03b21 being limited to hepatocytes, the sinusoidal network was also severely disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, despite the silencing of Integrin-\u03b21 being limited to hepatocytes at the used dosage, the sinusoidal network was also severely disrupted, with loss of its long-range organization (Figure 4A, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an unexpected finding that sinusoids are affected despite cell-specific knockdown, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "d7c50ea1-371c-4487-a903-28ced556cc07",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C52",
+      "claim": "Hepatocytes provide instructions to sinusoidal endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that also hepatocytes provide instructions to sinusoidal endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that sinusoids are disrupted despite hepatocyte-specific knockdown.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "3a1b0172-e2b0-487e-9ef0-0a2a6af79f7b",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C53",
+      "claim": "Integrin-\u03b21 knockdown results in loss of long-range liquid-crystal order of the liver lobule and a perturbed coordination between BC and sinusoidal networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, Integrin-\u03b21 KD results in loss of long-range liquid-crystal order of the liver lobule and a perturbed coordination between BC and sinusoidal networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "df704989-c642-4d81-971e-2eecb1c8850e",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C54",
+      "claim": "Elias's model captured some essential features of liver architecture but could not explain the heterogeneity of cells and the amorphous appearance of the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Although his model captured some essential features of liver architecture, it could not explain the heterogeneity of cells and the amorphous appearance of the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an evaluation of the limitations of Elias's model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "3cd9be28-b77a-47a9-8817-4d1e4502161a",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C55",
+      "claim": "Hepatocytes, BC and sinusoidal networks are organized as a layered structure, with a spacing of about one hepatocyte diameter and orientation along the PV-CV axis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that hepatocytes, BC and sinusoidal networks are organized as a layered structure, with a spacing of about one hepatocyte diameter and orientation along the PV-CV axis, consistent with Elias' model of hepatic plates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings about layered organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "82460301-b847-4991-a77e-33ce7c4f24ce",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C56",
+      "claim": "The polarity axes of individual hepatocytes are not random but display a liquid-crystal order on the scale of the lobule.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a breakthrough from our analysis was that, by using biaxial nematic tensors to describe hepatocyte polarity, we discovered that the polarity axes of individual hepatocytes are not random but display a liquid-crystal order on the scale of the lobule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study about liquid-crystal order.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "c0d89e06-1770-4cb7-8ebf-055e9bc59a2d",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C57",
+      "claim": "The hierarchy of structural order could conceivably be explained by local rules of cell-cell communication in combination with global cues (e.g. morphogen gradients).",
+      "claim_type": "EXPLICIT",
+      "source": "The hierarchy of structural order could conceivably be explained by local rules of cell-cell communication in combination with global cues (e.g. morphogen gradients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about mechanisms underlying tissue organization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "3932de31-a11a-44c3-ab9c-9d12ed21d75b",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C58",
+      "claim": "Sinusoid-hepatocyte co-alignment could result from a self-organization mechanism, whereby sinusoids guide hepatocyte polarization, while hepatocytes provide instructive signals that guide sinusoidal network organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Sinusoid-hepatocyte co-alignment could result from a self-organization mechanism, whereby sinusoids guide hepatocyte polarization, while hepatocytes provide instructive signals that guide sinusoidal network organization (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This proposes a bidirectional communication mechanism for tissue organization, with reference to a figure.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "bbab0062-8ecf-442c-895f-45ad9a9fc252",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C59",
+      "claim": "Integrin-\u03b21 plays a novel role in orchestrating tissue structure by coupling the anisotropy of the sinusoidal network with the orientation of hepatocyte polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "This points at a novel role of Integrin-\u03b21 in orchestrating tissue structure by coupling the anisotropy of the sinusoidal network with the orientation of hepatocyte polarity, with boundary conditions set by the large veins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This proposes a novel function for Integrin-\u03b21 based on the knockdown results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "e100133e-41c3-4dad-85eb-8af0c6652178",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C60",
+      "claim": "In the liver, sinusoids and BC each form a single connected network.",
+      "claim_type": "EXPLICIT",
+      "source": "In the liver, sinusoids and BC each form a single connected network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a topological property of the liver networks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "96802fdb-bd35-4cf4-8546-70bdd19a334a",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C61",
+      "claim": "The two networks (sinusoids and BC) must be spatially separated, but also contact every hepatocyte to maximize the efficiency of fluid transport in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The two networks must be spatially separated, but also contact every hepatocyte to maximize the efficiency of fluid transport in the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes functional requirements for the network architecture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "d3a501ad-94fb-44c4-813d-31c818d60eb1",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C62",
+      "claim": "The networks are not tree-like, but highly interconnected and redundant with multiple loops and multiple contacts to each hepatocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the networks are not tree-like, but highly interconnected and redundant with multiple loops and multiple contacts to each hepatocyte.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the topological structure of the networks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "574b3f95-7265-48dc-a941-94aaef95b54e",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C63",
+      "claim": "This architecture confers robustness against local damage and failure.",
+      "claim_type": "EXPLICIT",
+      "source": "This architecture confers robustness against local damage and failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional consequence of the network architecture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "c09345e5-9c43-4bc3-93c1-b050a8b8013f",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C64",
+      "claim": "The structural model of liquid-crystal order provides an explanation of how cells self-organize through local interactions to achieve the particular architecture of the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structural model of liquid-crystal order provides an explanation of how cells self-organize through local interactions to achieve this particular architecture, which is compatible with continuous homeostatic remodeling of the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the explanatory power of the liquid-crystal model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "eaeb1252-11c8-4370-8b0f-aca025fcff98",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C67",
+      "claim": "The lobule-level reference system is defined by the location of the large veins within the imaging volume in terms of flux lines of solutions of the Poisson equation.",
+      "claim_type": "EXPLICIT",
+      "source": "The lobule-level reference system is defined by the location of the large veins within the imaging volume in terms of flux lines of solutions of the Poisson equation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for defining the reference field J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "4e687627-17d0-4a57-a94f-4197d2dc7a14",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C68",
+      "claim": "The Poisson equation describes diffusive transport between spatially separated sources and sinks.",
+      "claim_type": "EXPLICIT",
+      "source": "The Poisson equation describes diffusive transport between spatially separated sources and sinks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established physics knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "cfbb99a0-b413-4455-92d5-bfebfc58569c",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C71",
+      "claim": "6\u20139 weeks old C57BL/6JOlaHsd mice (two males and one female) were used to study liver tissue organization under normal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To study liver tissue organization under normal conditions, 6\u20139 weeks old C57BL/6JOlaHsd mice (two males and one female) were purchased from Charles River Laboratory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental animals used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "f791a129-aed6-489c-bc97-ab2f129d8b32",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C72",
+      "claim": "For the knockdown experiments, eight weeks old male mice were used.",
+      "claim_type": "EXPLICIT",
+      "source": "For the knocked-down experiments, eight weeks old male mice were purchased from the same company.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental animals used for knockdown studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "c8291e5d-f36e-4a98-80f6-b2cf4bc126db",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C73",
+      "claim": "Integrin-\u03b21 was knocked down in four male mice by injecting siRNA formulated into lipidoid-based nanoparticles (LNP) that primarily target hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrin-\u03b21 was knocked-down in mice (four males) by injecting siRNA formulated into lipidoid-based nanoparticles (LNP) that primarily target hepatocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the knockdown method and sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "66c8bc6c-67ef-489c-b54a-dd1c6a14b6e6",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C74",
+      "claim": "An analogous treatment using siRNA against luciferase was used as control in five male mice.",
+      "claim_type": "EXPLICIT",
+      "source": "An analogous treatment using siRNA against luciferase was used as control (five males).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control condition and sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "1f9ec0e5-f93a-4a84-bff9-4d7007fe0edf",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C75",
+      "claim": "All procedures were performed in compliance with German animal welfare legislation and in pathogen-free conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were performed in compliance with German animal welfare legislation and in pathogen-free conditions in the animal facility of the MPI-CBG, Dresden, Germany.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical and housing conditions for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "fefacd47-ac31-44f3-913b-add52047da22",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C76",
+      "claim": "Protocols were approved by the Institutional Animal Welfare Officer.",
+      "claim_type": "EXPLICIT",
+      "source": "Protocols were approved by the Institutional Animal Welfare Officer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "5341d8d0-8bd7-422b-a7d3-8d31c8a2c071",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C77",
+      "claim": "Liver samples were imaged in an upright multiphoton laser-scanning microscope (Zeiss LSM 780 NLO) equipped with Gallium arsenide phosphide (GaAsp) detectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver samples were imaged in an upright multiphoton laser-scanning microscope (Zeiss LSM 780 NLO) equipped with Gallium arsenide phosphide (GaAsp) detectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "e8c533b8-9d1f-48b8-9a9d-7e6638362521",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C78",
+      "claim": "Low-resolution images were taken with a 25x/0.8 Zeiss objective at 1 \u00b5m voxel size.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver slices were imaged twice at low (25x/0.8 Zeiss objective, 1 \u00b5m voxel size) and high resolution (63x/1.3 Zeiss objective, 0.3 \u00b5m voxel size), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters for low-resolution imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "e8626bfe-968e-44be-8f6d-bfa14b726235",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C79",
+      "claim": "High-resolution images were taken with a 63x/1.3 Zeiss objective at 0.3 \u00b5m voxel size.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver slices were imaged twice at low (25x/0.8 Zeiss objective, 1 \u00b5m voxel size) and high resolution (63x/1.3 Zeiss objective, 0.3 \u00b5m voxel size), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters for high-resolution imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "905d7b12-7076-43fe-a4ec-e3c2437f8d16",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C80",
+      "claim": "Both high- and low-resolution images were processed and segmented with the Motion Tracking software.",
+      "claim_type": "EXPLICIT",
+      "source": "Both high- and low-resolution images were processed and segmented with the Motion Tracking software as described in Morales-Navarrete et al. (2015) and Morales-Navarrete et al. (2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image analysis software used, with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "a846ba41-e23b-4592-a0ca-684bebffa91c",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "claim_id": "C81",
+      "claim": "The two-dimensional (2D) super-resolved images were generated by applying the Multiple Signal Classification Algorithm for super-resolution fluorescence microscopy (MuSiCal).",
+      "claim_type": "EXPLICIT",
+      "source": "The two-dimensional (2D) super-resolved images were generated by applying the Multiple Signal Classification Algorithm for super-resolution fluorescence microscopy (MuSiCal) (Agarwal and Mach\u00e1\u0148, 2016) to a set of 50 sequential time-lapse confocal images with 0.1 \u00b5m pixel size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the super-resolution imaging method used, with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1017ce7f-8ce4-4772-881f-bdb26d4262cb",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes foundational knowledge about liver anatomy and hepatocyte organization, describing blood flow through sinusoids, bile secretion through bile canaliculi, and the multipolar organization of hepatocytes with multiple apical and basal domains that must contact both sinusoidal and BC networks without intersection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide well-established background knowledge about liver structure and function, supported by appropriate citations to prior literature. These claims accurately describe the anatomical organization and functional requirements of liver tissue, forming the foundation for the study's investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "0b06aef8-3d75-4c05-a343-c8138a8ca456",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews Elias's 1949 structural model of liver tissue as anastomosing hepatic plates, noting that while it captured essential features, it was limited by reliance on stereological analysis of 2D images and could not explain cellular heterogeneity and amorphous tissue appearance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 and C54 accurately describe historical work by Elias with appropriate citations, and provide fair assessment of both the contributions and limitations of this pioneering model. This contextualizes the current study's advances.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study employed multi-resolution 3D imaging of immunostained mouse liver tissue using multiphoton microscopy, with low-resolution imaging to identify CV-PV landmarks and high-resolution imaging to analyze hepatocyte polarity and network geometry, processing thousands of individual hepatocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 and C71-C81 describe comprehensive and well-documented experimental methods including sample preparation, imaging parameters, animal subjects, and image analysis software. The multi-resolution approach is appropriate for analyzing both tissue-scale and cellular-scale organization. Sample sizes are stated (n=3 wild-type, n=5 luciferase control, n=4 Integrin-\u03b21 KD).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "3ef71675-ca1e-4027-a110-4038c6d32af4",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hepatocyte polarity cannot be described by a single apico-basal axis (as in simple epithelia) but instead displays biaxial polarity characterized by two perpendicular axes (bipolar and ring axes), with weights skewed toward belt-like apical surfaces and extreme single-axis cases being rare.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 present a novel characterization of hepatocyte polarity using biaxial nematic tensors, supported by quantitative analysis of n=857 hepatocytes (C18) and appropriate comparison to simple epithelia. The mathematical framework and data visualization (Figure 2) support the conclusion that hepatocyte polarity is fundamentally biaxial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "e66ea7b7-edcd-4323-8b7c-48276c62e595",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Anti-correlation between apical and basal axes of the same type indicates mutual repulsion between apical and basal membrane domains, while cell shape and apical polarity axes show only weak correlations, suggesting these features are largely independent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 describe correlation analyses (Figure 2F, Figure 2\u2014figure supplement 2) that reveal relationships between polarity axes and between polarity and cell shape. The anti-correlation pattern is consistent with known membrane domain segregation, and the independence of polarity from cell shape is an important finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "657214ed-8881-4c82-b200-20ae23a4b09f",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Local averaging of hepatocyte polarity axes reveals spatial organization along CV-PV lines, with bipolar axes aligned parallel and ring axes perpendicular to this reference direction. Statistical testing (p=0.014) demonstrates that ring axis alignment exceeds predictions from uniaxial order, confirming biaxial nematic order at the tissue scale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C33 present the key discovery of liquid-crystal order in liver tissue. The analysis uses appropriate mathematical framework (nematic tensors, alignment parameters), includes statistical testing with significant p-value (C31), and is supported by visualization in Figure 3. The comparison to a theoretical baseline for uniaxial order strengthens the conclusion of true biaxial order.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "bd8d99f9-bfc4-4e3a-a365-8a530a149fdc",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cross-correlation analysis reveals periodicity perpendicular to the CV-PV axis with characteristic length-scale of 24 \u03bcm (approximately one hepatocyte diameter), but no periodicity along the CV-PV axis, indicating a layered structure with hepatocytes forming single-cell-thick layers between sinusoids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 describe quantitative cross-correlation analysis (Figure 3H, Figure 3\u2014figure supplement 2) that reveals one-dimensional periodicity characteristic of layered structures. The measured periodicity matches expected cell dimensions, and the absence of periodicity in the perpendicular direction supports the layered model. This validates aspects of Elias's historical model with modern quantitative methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "b84c5b36-530c-4d81-8982-b6dca4fc1d3e",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "To test mechanisms of tissue organization, Integrin-\u03b21 was silenced in hepatocytes using LNP-formulated siRNA, achieving 90% knockdown verified by super-resolution microscopy. Major alterations in tissue organization were detected after 7 weeks but not during the first 2-4 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C45 describe the rationale, methods, and timeline for Integrin-\u03b21 knockdown experiments. The approach is well-justified based on prior hypotheses (C39-C40), uses established methodology (C41, C43), includes appropriate verification (C42), and documents the time course of phenotypic changes (C44-C45). Sample sizes are stated (n=4 KD, n=5 control).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "5971c8dd-81d1-4edb-b323-90a28d414770",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Integrin-\u03b21 knockdown disrupted the BC network and increased apical surface at the expense of basal surface, but biaxial cell polarity of individual hepatocytes was maintained, suggesting cell-autonomous maintenance of polarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 describe cellular-level phenotypes after Integrin-\u03b21 knockdown, supported by quantitative analysis (Figure 4A, B, Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplement 1). The preservation of biaxial polarity despite loss of Integrin-\u03b21 is an important finding that distinguishes cell-autonomous from tissue-level organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "1b9d14fc-55aa-472b-8881-e26479e4758f",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Integrin-\u03b21 knockdown strongly perturbed long-range order of hepatocyte polarity and, surprisingly, severely disrupted the sinusoidal network despite hepatocyte-specific silencing, suggesting bidirectional communication between hepatocytes and sinusoidal endothelial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 describe the key findings from Integrin-\u03b21 knockdown: loss of tissue-level organization (Figure 4C, D, Figure 4\u2014figure supplement 2) and disruption of sinusoids despite cell-specific knockdown (Figure 4A, D). The inference of bidirectional communication (C52) is well-supported by the unexpected sinusoidal phenotype. Statistical significance is reported (Figure 4D legend: p<0.008 for sinusoid-J alignment).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "64f7e0f5-7182-459d-abd3-0c50afc02a4f",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study proposes that liver tissue exhibits hierarchical organization with layered structure at the tissue level and liquid-crystal order of hepatocyte polarity at the lobule level, potentially explained by local cell-cell communication combined with global cues, with Integrin-\u03b21 playing a novel role in coupling sinusoidal network anisotropy with hepatocyte polarity orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 synthesize the major findings into a coherent model of liver tissue organization. The layered structure (C55) and liquid-crystal order (C56) are well-supported by the data. The proposed mechanisms (C57-C59) are reasonable interpretations of the knockdown results, though C57 and C58 are appropriately presented as speculative proposals for future investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "200ff022-bb36-45f8-8b08-157db669fc1a",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The sinusoidal and BC networks form single connected, highly interconnected networks with multiple loops that contact every hepatocyte while remaining spatially separated, conferring robustness. The liquid-crystal order model explains how cells self-organize through local interactions to achieve this architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 describe network topology and functional implications. The topological properties (C60, C62) are supported by the 3D reconstructions and network analysis. The functional inferences about efficiency (C61) and robustness (C63) are reasonable based on network architecture. The explanatory power of the liquid-crystal model (C64) is a valid summary of the study's contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    },
+    {
+      "id": "84aa8c50-9d0e-4131-8663-3113411ccd08",
+      "content_id": "b4cfb3a3-b486-487a-aaa0-80b8fe92a696",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The lobule-level reference system was defined using flux lines from solutions of the Poisson equation with sources and sinks at PV and CV, representing diffusive transport between these vessels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 describe the mathematical method for defining the reference field J used for alignment analysis. The approach is well-justified physically (Poisson equation for diffusive transport) and provides an objective reference frame for quantifying tissue-scale organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:41:16.832721Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6643ef14-1965-40ee-a443-f44b3fa122a2",
+      "result_id": "1017ce7f-8ce4-4772-881f-bdb26d4262cb"
+    },
+    {
+      "claim_id": "840e626f-3013-488f-ae55-134af764c970",
+      "result_id": "1017ce7f-8ce4-4772-881f-bdb26d4262cb"
+    },
+    {
+      "claim_id": "0548b232-6e86-45fa-9573-7c9d107caf32",
+      "result_id": "1017ce7f-8ce4-4772-881f-bdb26d4262cb"
+    },
+    {
+      "claim_id": "27b161da-4f2f-467a-ae6c-5e4eb87074b2",
+      "result_id": "1017ce7f-8ce4-4772-881f-bdb26d4262cb"
+    },
+    {
+      "claim_id": "cfaa8dec-92a6-4017-8585-2c5bd0e45aed",
+      "result_id": "1017ce7f-8ce4-4772-881f-bdb26d4262cb"
+    },
+    {
+      "claim_id": "b05f2289-6a7a-428e-a181-cdbecd7caf07",
+      "result_id": "1017ce7f-8ce4-4772-881f-bdb26d4262cb"
+    },
+    {
+      "claim_id": "16c020b3-4a55-44f4-b7e7-e62eb0c06142",
+      "result_id": "1017ce7f-8ce4-4772-881f-bdb26d4262cb"
+    },
+    {
+      "claim_id": "6b0369d1-ebbd-4e35-a0ad-2d5ee7fb54a2",
+      "result_id": "1017ce7f-8ce4-4772-881f-bdb26d4262cb"
+    },
+    {
+      "claim_id": "b3ca42b0-6629-4523-9409-cf43d6f1b223",
+      "result_id": "0b06aef8-3d75-4c05-a343-c8138a8ca456"
+    },
+    {
+      "claim_id": "2e661db5-5de2-430a-97d4-dfec84789ded",
+      "result_id": "0b06aef8-3d75-4c05-a343-c8138a8ca456"
+    },
+    {
+      "claim_id": "ce541e8d-fddf-423f-aea3-0fb6e91d857f",
+      "result_id": "0b06aef8-3d75-4c05-a343-c8138a8ca456"
+    },
+    {
+      "claim_id": "df704989-c642-4d81-971e-2eecb1c8850e",
+      "result_id": "0b06aef8-3d75-4c05-a343-c8138a8ca456"
+    },
+    {
+      "claim_id": "a045a2fb-7aaa-4660-9246-79503a7b5839",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "7ed2207c-e796-4721-a1b0-2def08fc27ba",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "6664defb-02ad-48ec-806e-f9ae1b9b4cc3",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "32480a88-50b3-43e5-b4d9-16237c981b8c",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "cfbb99a0-b413-4455-92d5-bfebfc58569c",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "f791a129-aed6-489c-bc97-ab2f129d8b32",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "c8291e5d-f36e-4a98-80f6-b2cf4bc126db",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "66c8bc6c-67ef-489c-b54a-dd1c6a14b6e6",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "1f9ec0e5-f93a-4a84-bff9-4d7007fe0edf",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "fefacd47-ac31-44f3-913b-add52047da22",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "5341d8d0-8bd7-422b-a7d3-8d31c8a2c071",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "e8c533b8-9d1f-48b8-9a9d-7e6638362521",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "e8626bfe-968e-44be-8f6d-bfa14b726235",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "905d7b12-7076-43fe-a4ec-e3c2437f8d16",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "a846ba41-e23b-4592-a0ca-684bebffa91c",
+      "result_id": "8df5dd81-8bd7-43c4-a9fb-e30d2141cd2f"
+    },
+    {
+      "claim_id": "47f86b0f-61d8-4389-94a6-3e942971fae6",
+      "result_id": "3ef71675-ca1e-4027-a110-4038c6d32af4"
+    },
+    {
+      "claim_id": "87972bb6-ba18-49c2-bb05-a93bc690eefe",
+      "result_id": "3ef71675-ca1e-4027-a110-4038c6d32af4"
+    },
+    {
+      "claim_id": "a464b674-a856-43e5-a1de-ca63780f1108",
+      "result_id": "3ef71675-ca1e-4027-a110-4038c6d32af4"
+    },
+    {
+      "claim_id": "458a8c7e-cac0-4243-a583-a1e2b04dc0b2",
+      "result_id": "3ef71675-ca1e-4027-a110-4038c6d32af4"
+    },
+    {
+      "claim_id": "082e38ff-7027-4f3b-b12b-9ffd01a115d5",
+      "result_id": "3ef71675-ca1e-4027-a110-4038c6d32af4"
+    },
+    {
+      "claim_id": "7e736ad9-4f18-4e29-9466-0b4daa7275fa",
+      "result_id": "e66ea7b7-edcd-4323-8b7c-48276c62e595"
+    },
+    {
+      "claim_id": "37adb617-d3e5-4ee3-a5ab-9db5943c2e3c",
+      "result_id": "e66ea7b7-edcd-4323-8b7c-48276c62e595"
+    },
+    {
+      "claim_id": "abf91559-3a1f-462d-9c52-9b277bdf8428",
+      "result_id": "657214ed-8881-4c82-b200-20ae23a4b09f"
+    },
+    {
+      "claim_id": "ab52daef-4ba6-4509-b2c0-80d49c6e27e5",
+      "result_id": "657214ed-8881-4c82-b200-20ae23a4b09f"
+    },
+    {
+      "claim_id": "c23029c0-2757-4718-a1f7-19b0eaebe14b",
+      "result_id": "657214ed-8881-4c82-b200-20ae23a4b09f"
+    },
+    {
+      "claim_id": "37c0c80e-6615-428e-b083-184b87d2a2be",
+      "result_id": "657214ed-8881-4c82-b200-20ae23a4b09f"
+    },
+    {
+      "claim_id": "a4761a68-575b-4aaf-9543-c69039180b07",
+      "result_id": "657214ed-8881-4c82-b200-20ae23a4b09f"
+    },
+    {
+      "claim_id": "c9c97d81-c596-4427-8f97-1abcaf8fc40b",
+      "result_id": "bd8d99f9-bfc4-4e3a-a365-8a530a149fdc"
+    },
+    {
+      "claim_id": "6ec13c68-dfaa-49c4-aa79-8230e9e41ae9",
+      "result_id": "bd8d99f9-bfc4-4e3a-a365-8a530a149fdc"
+    },
+    {
+      "claim_id": "608ecc87-5cbd-4628-a81f-e08587bb6544",
+      "result_id": "bd8d99f9-bfc4-4e3a-a365-8a530a149fdc"
+    },
+    {
+      "claim_id": "a4391bb5-f03d-4a19-ae0c-97428dda2d38",
+      "result_id": "bd8d99f9-bfc4-4e3a-a365-8a530a149fdc"
+    },
+    {
+      "claim_id": "cbef7940-178a-439f-8f57-5768a4a70f2e",
+      "result_id": "bd8d99f9-bfc4-4e3a-a365-8a530a149fdc"
+    },
+    {
+      "claim_id": "b931821e-6808-4b4e-ba60-9fb775454e2c",
+      "result_id": "b84c5b36-530c-4d81-8982-b6dca4fc1d3e"
+    },
+    {
+      "claim_id": "b1ec784a-ddce-4ed0-86fc-b71c93358a44",
+      "result_id": "b84c5b36-530c-4d81-8982-b6dca4fc1d3e"
+    },
+    {
+      "claim_id": "def41b0a-1e00-4dd1-9484-14fe5a6a8fbb",
+      "result_id": "b84c5b36-530c-4d81-8982-b6dca4fc1d3e"
+    },
+    {
+      "claim_id": "10ebffa3-d3c0-4787-a0f9-b472d27b31c5",
+      "result_id": "b84c5b36-530c-4d81-8982-b6dca4fc1d3e"
+    },
+    {
+      "claim_id": "dc3eea35-4171-469a-b1b2-a1ddc1da5872",
+      "result_id": "b84c5b36-530c-4d81-8982-b6dca4fc1d3e"
+    },
+    {
+      "claim_id": "5431d1d4-90d2-4ae8-bb80-430010d723c8",
+      "result_id": "b84c5b36-530c-4d81-8982-b6dca4fc1d3e"
+    },
+    {
+      "claim_id": "bea94052-a77d-42d1-8a6c-158ec1f2f1b3",
+      "result_id": "b84c5b36-530c-4d81-8982-b6dca4fc1d3e"
+    },
+    {
+      "claim_id": "92a593a9-dbec-4d35-9bbd-f85cc72463f6",
+      "result_id": "5971c8dd-81d1-4edb-b323-90a28d414770"
+    },
+    {
+      "claim_id": "53aa5e9a-ad57-45f8-a931-dc85254396c8",
+      "result_id": "5971c8dd-81d1-4edb-b323-90a28d414770"
+    },
+    {
+      "claim_id": "b452c3bd-681c-49cd-ad50-193c32fe64f8",
+      "result_id": "5971c8dd-81d1-4edb-b323-90a28d414770"
+    },
+    {
+      "claim_id": "dc035810-27ea-488d-90f2-1d44a40a2aac",
+      "result_id": "5971c8dd-81d1-4edb-b323-90a28d414770"
+    },
+    {
+      "claim_id": "2da375e1-caea-447d-b72a-4613398c0002",
+      "result_id": "1b9d14fc-55aa-472b-8881-e26479e4758f"
+    },
+    {
+      "claim_id": "cba49c88-200f-413f-8912-5652a114ab17",
+      "result_id": "1b9d14fc-55aa-472b-8881-e26479e4758f"
+    },
+    {
+      "claim_id": "d7c50ea1-371c-4487-a903-28ced556cc07",
+      "result_id": "1b9d14fc-55aa-472b-8881-e26479e4758f"
+    },
+    {
+      "claim_id": "3a1b0172-e2b0-487e-9ef0-0a2a6af79f7b",
+      "result_id": "1b9d14fc-55aa-472b-8881-e26479e4758f"
+    },
+    {
+      "claim_id": "3cd9be28-b77a-47a9-8817-4d1e4502161a",
+      "result_id": "64f7e0f5-7182-459d-abd3-0c50afc02a4f"
+    },
+    {
+      "claim_id": "82460301-b847-4991-a77e-33ce7c4f24ce",
+      "result_id": "64f7e0f5-7182-459d-abd3-0c50afc02a4f"
+    },
+    {
+      "claim_id": "c0d89e06-1770-4cb7-8ebf-055e9bc59a2d",
+      "result_id": "64f7e0f5-7182-459d-abd3-0c50afc02a4f"
+    },
+    {
+      "claim_id": "3932de31-a11a-44c3-ab9c-9d12ed21d75b",
+      "result_id": "64f7e0f5-7182-459d-abd3-0c50afc02a4f"
+    },
+    {
+      "claim_id": "bbab0062-8ecf-442c-895f-45ad9a9fc252",
+      "result_id": "64f7e0f5-7182-459d-abd3-0c50afc02a4f"
+    },
+    {
+      "claim_id": "e100133e-41c3-4dad-85eb-8af0c6652178",
+      "result_id": "200ff022-bb36-45f8-8b08-157db669fc1a"
+    },
+    {
+      "claim_id": "96802fdb-bd35-4cf4-8546-70bdd19a334a",
+      "result_id": "200ff022-bb36-45f8-8b08-157db669fc1a"
+    },
+    {
+      "claim_id": "d3a501ad-94fb-44c4-813d-31c818d60eb1",
+      "result_id": "200ff022-bb36-45f8-8b08-157db669fc1a"
+    },
+    {
+      "claim_id": "574b3f95-7265-48dc-a941-94aaef95b54e",
+      "result_id": "200ff022-bb36-45f8-8b08-157db669fc1a"
+    },
+    {
+      "claim_id": "c09345e5-9c43-4bc3-93c1-b050a8b8013f",
+      "result_id": "200ff022-bb36-45f8-8b08-157db669fc1a"
+    },
+    {
+      "claim_id": "eaeb1252-11c8-4370-8b0f-aca025fcff98",
+      "result_id": "84aa8c50-9d0e-4131-8663-3113411ccd08"
+    },
+    {
+      "claim_id": "4e687627-17d0-4a57-a94f-4197d2dc7a14",
+      "result_id": "84aa8c50-9d0e-4131-8663-3113411ccd08"
+    }
+  ],
+  "comparisons": []
+}

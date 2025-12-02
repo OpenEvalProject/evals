@@ -1,0 +1,1988 @@
+{
+  "submission": {
+    "id": "a1fcae5d-ad89-4ee8-af6c-1cb53f263186",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:59:11.624227Z",
+    "updated_at": "2025-12-02T07:59:11.624227Z"
+  },
+  "content": [
+    {
+      "id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "submission_id": "a1fcae5d-ad89-4ee8-af6c-1cb53f263186",
+      "content_type": "manuscript",
+      "content_text": "# A \u03b2-carotene-binding protein carrying a red pigment regulates body-color transition between green and black in locusts\n\n## Authors\n\n- Meiling Yang<sup>1</sup>\n- Yanli Wang<sup>2</sup>\n- Qing Liu<sup>1</sup>\n- Zhikang Liu<sup>1</sup>\n- Feng Jiang<sup>4</sup>\n- Huimin Wang<sup>4</sup>\n- Xiaojiao Guo<sup>1</sup>\n- Jianzhen Zhang<sup>2</sup> \u2020\n- Le Kang<sup>1</sup> ([ORCID: 0000-0003-4262-2329](https://orcid.org/0000-0003-4262-2329)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Integrated Management of Pest Insects and Rodents Institute of Zoology, Chinese Academy of Sciences Beijing China\n2. Institute of Applied Biology Shanxi University Taiyuan China\n3. Sino-Danish College University of Chinese Academy of Sciences Beijing China\n4. Beijing Institutes of Life Science, Chinese Academy of Sciences Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nChanges of body color have important effects for animals in adapting to variable environments. The migratory locust exhibits body color polyphenism between solitary and gregarious individuals, with the former displaying a uniform green coloration and the latter having a prominent pattern of black dorsal and brown ventral surface. However, the molecular mechanism underlying the density-dependent body color changes of conspecific locusts remain largely unknown. Here, we found that upregulation of \u03b2-carotene-binding protein promotes the accumulation of red pigment, which added to the green color palette present in solitary locusts changes it from green to black, and that downregulation of this protein led to the reverse, changing the color of gregarious locusts from black to green. Our results provide insight that color changes of locusts are dependent on variation in the red \u03b2-carotene pigment binding to \u03b2CBP. This finding of animal coloration corresponds with trichromatic theory of color vision.\n\n## Introduction\n\nBody color change is a ubiquitous but highly diverse phenomenon of adaptive significance to animals under exposure to illnesses, environmental changes, predation, and sexual signals (Burmeister et al., 2005; Henderson et al., 2017; M\u00e4thger et al., 2003; Stuart-Fox and Moussalli, 2008; Teyssier et al., 2015). Seasonal switching between color phases in response to extrinsic environmental factors is common in arthropods (Futahashi and Fujiwara, 2008; Futahashi et al., 2012; Moran and Jarvik, 2010). However, rapid and reversible color change is a rare trait regulated by endogenous and exogenous mechanisms (Cuthill et al., 2017; Hubbard et al., 2010). This type of phenotypic plasticity has not been well investigated.\n\nRapid body color changes in arthropods such as aphids, locusts and grasshoppers, lepidopteran caterpillars, and spider mites are influenced by environmental changes, especially by changes in population density (Bryon et al., 2017; Tabadkani et al., 2013; Valverde and Schielzeth, 2015; Wang and Kang, 2014; Xiong et al., 2017). Locust body color changes are of particular interest because conspecific color change coincides with changes in population density as well as behavioral changes; specifically, dramatic individual color change from green to black occurs when locusts form agriculturally destructive swarms (Bolger et al., 2014; Wang and Kang, 2014; Wu et al., 2012). Similar to that of other animals (Cuthill et al., 2017; Duarte et al., 2017), the coloration of locusts serves as a dynamic form of population information.\n\nPhenotypic plasticity in the migratory locust Locusta migratoria underlies the transition between the gregarious and solitary phases, which are dependent on population density changes (Guo et al., 2011; Jiang et al., 2017; Kang et al., 2004; Ma et al., 2011; Wu et al., 2012; Yang et al., 2014). In addition to behavioral differences between the two phases of locusts (Kang et al., 2004; Ma et al., 2011; Yang et al., 2014), remarkable body color changes between gregarious and solitary locusts occur. Solitary locusts found at low population densities have a uniform green coloration, whereas gregarious locusts develop a striking color pattern of a black back with a contrasting brown ventral color (Pener, 1991; Wang and Kang, 2014).\n\nThe black-brown pattern of gregarious locusts is recognized as mainly being induced under high-density crowding conditions (Pener, 1991). Regarding the regulatory mechanism, juvenile hormones reportedly induce solitary green cuticular coloration in locusts (Applebaum et al., 1997; Tanaka, 1993). However, the regulatory function of these hormones in body coloration during phase change remains controversial (Wang and Kang, 2014). The neuropeptide [His7]-corazonin induces a dark coloration of the whole body in locusts but does not regulate the phase-related black\u2013brown color pattern in gregarious locusts (Tanaka, 2000; Wang and Kang, 2014). Silencing the ebony and pale genes in the dopamine pathway that leads to the synthesis of dopamine melanin can result in partial fading of the black color in gregarious locusts, but the exogenous injection of dopamine does not completely lead to the black pattern (Ma et al., 2011). Thus, the body color pattern of gregarious locusts is not the result of pure melanization.\n\nThe green color of solitary locusts is likely due to the presence of a combination of yellow and blue pigments that facilitate the camouflage of low-density locusts in the background of plants (Pener and Simpson, 2009). In the present study, we investigated whether the black coloration of gregarious locusts results from the addition of pigments to the solitary green background.\n\nWe used strand-specific high-throughput RNA sequencing to monitor genome-wide transcriptional expression profiles and verify differentially expressed genes (DEGs) correlated with color polymorphism. We found a key DEG that encodes \u03b2-carotene-binding protein (\u03b2CBP), which promotes body color change associated with phase-related coloration. The manipulation of the gene expression by RNAi and feeding of \u03b2-carotene led to the reverse of body color of the locusts. The results of our study reveal that the black\u2013brown coloration pattern in gregarious locusts is formed by the presence of the red color \u03b2-carotene pigment\u2013\u03b2CBP protein complex in the green-colored background of solitary locusts. This work provides novel insights into the molecular mechanisms of body color changes in response to population density changes in accordance with the corresponding environmental changes.\n\n## Results\n\n### Gregarious and solitary locusts have different expression levels of \u03b2CBP\n\nGregarious and solitary locusts were reared either in crowded conditions or in solitude as previously described (Ma et al., 2011). These locusts displayed phase-specific phenotypes of body coloration. The gregarious locusts exhibited intense black patterns with a ventral brown color, and the solitary locusts showed the expected uniform green coloration (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig1-v2.jpg)\n\n**Figure 1.:** (A) Body colors of typical gregarious and solitary nymphs. The tergums include pronotum, thorax tergum and abdomen tergum. (B) Logarithmic fold alterations of 68 differentially expressed genes (DEGs) associated with animal coloration between gregarious and solitary locusts are shown in the volcano plot diagram generated from genome-wide RNA-Seq. Red and blue dots indicate up- and down regulated genes, respectively, in the gregarious locusts (n\u00a0=\u00a02 samples, 10 integuments/sample). (C) The top 17 DEGs (Log FC\u00a0>2.8, FDR\u00a0<\u00a01e\u22125) among the 68 genes from the volcano plot diagram were confirmed in the gregarious and solitary integuments via qPCR (n\u00a0=\u00a06 samples; eight integuments/sample; Student\u2019s t-test; red boxes indicate significantly upregulated genes (SUG) in gregarious/solitary locusts and no significant difference between gregarious and solitary locusts; *p\u00a0<\u00a00.05; **p\u00a0<\u00a00.01; ***p\u00a0<\u00a00.001). Brown shades denote the eight genes used for transcript knockdown analysis. The red star in the histogram indicate the identified target gene that correlates with body color change in the phase transition of locusts. (D) \u03b2CBP fosters the body color change from the gregarious pattern to the solitary pattern. Effects of \u03b2CBP dsRNA treatment on the body color of gregarious locusts were studied two stadiums after injection. Each second-instar nymph was injected with 3 \u03bcg of dsRNA three times on day three for the second-instar nymphs and on days 1 and 5 for the third-instar nymphs. Control nymphs were injected with equivalent volumes of dsGFP alone.\u00a0.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Logarithmic fold alteration of DEGs in the integument transcriptomes between the gregarious and solitary locusts. (B) Numbers of unknown genes and annotated genes among DEGs, and numbers of up- and downregulated genes in the annotated genes. (C) Molecular function analysis of DEGs in the transcriptome. G, pronotum integuments of gregarious locusts; S, pronotum integuments of solitary locusts.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The mRNA expression of seven genes in the pronotum integument was quantified using qRT\u2013PCR two stadiums after they were silenced in gregarious locusts, respectively. Phh, phenylalanine hydroxylase; DNa, Dopamine N-acetyltransferase; Ad, Alcohol dehydrogenase; Cp, Cuticle protein 18.7; Ap, Apolipoprotein D; JHAM, Juvenile hormone acid methyltransferase; Ph, Phenoloxidase; qPCR data are shown as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a04). *p\u00a0<\u00a00.05; **p\u00a0<\u00a00.01; ***p\u00a0<\u00a00.001.\n\nThe body coloration of gregarious locusts is characterized as a black tergum of the thorax and abdomen, in particular, a very black pronotum. To delineate gene activity changes potentially associated with the regulation of phase-dependent body color traits, we performed transcriptome sequencing on pronotum integuments of gregarious and solitary locusts. We identified a total of 1653 DEGs between the gregarious and solitary locusts (Figure 1\u2014figure supplement 1A), and 26% (430) of these DEGs were protein-coding genes (Figure 1\u2014figure supplement 1B). Gene ontology analysis of these 430 protein-coding DEGs indicated that many of them encode cuticle metabolism-related proteins involved in chitin metabolic, melatonin metabolic, transport, and catecholamine catabolic activities (Figure 1\u2014figure supplement 1C).\n\nSixty-eight of the 430 protein-coding DEGs are involved in pathways associated with animal coloration (Figure 1B). The top 17 DEGs (Log FC\u00a0>\u00a02.8, FDR\u00a0<\u00a01e-5) of these 68 genes were used to validate the differential expression patterns between the gregarious and solitary locusts via qPCR (Figure 1C). Nine of the 17 genes showed higher transcriptional levels in the pronotum integuments of the gregarious locusts than in those of the solitary locusts, and the transcriptional levels of 6 of the 17 genes were significantly lower in the gregarious locusts than in the solitary locusts (Figure 1C). These results are consistent with the transcriptome data. Among the 17 genes, we investigated the top 8 DEGs (the difference fold of gene expression between gregarious and solitary locusts\u00a0>\u00a03), among which six had higher expression in the gregarious locusts and two had higher expression in the solitary locusts, to screen the key candidate genes involved in the color change.\n\nTo explore whether these eight genes regulate body color plasticity during locust phase transition, we carried out transcript knockdown analyses of these genes in the gregarious and solitary locusts. Out of the eight genes, only \u03b2CBP showed a significant effect on the regulation of body color transition although the other seven genes show a very significant decreased expression when they were silenced respectively (Figure 1\u2014figure supplement 2). After molting, the dark pattern in the pronotum decreased markedly in 60% of the gregarious locusts after \u03b2CBP knockdown (Figure 1D). These data imply that CBP serves as a key gene involved in body color change.\n\n### Phase-related characteristics of the \u03b2CBP gene in integument\n\nTo investigate the correlation of \u03b2CBP expression level with the degree of black body coloration of the locust integument, we performed quantitative reverse transcriptase\u2013polymerase chain reaction (qRT\u2013PCR) and found that \u03b2CBP was predominantly expressed in the locust integument tissue (Figure 2\u2014figure supplement 1). Furthermore, consistent with the deeper black color of the pronotum than of the tergum of the thorax and abdomen in gregarious locusts, we found that \u03b2CBP expression was significantly higher in the pronotum than in the tergum integuments of the thorax and abdomen in gregarious locusts, whereas little \u03b2CBP expression was observed in the terga of solitary locusts, with no variability among the tergum segments (Figure 2A). Because the black coloration of gregarious locusts gradually increases with nymph developmental stage, we also quantified the \u03b2CBP transcript levels in the pronotum of different developmental stages of the gregarious locusts. The \u03b2CBP transcript level increased with developmental stage, with the expression levels of 4th instar gregarious locusts being approximately 200 times those of the 2nd and 3rd instar gregarious locusts. By contrast, \u03b2CBP expression was invariable across the developmental stages in solitary locusts (Figure 2B). Therefore, the extent of black body coloration in locusts is positively correlated with \u03b2CBP expression level.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig2-v2.jpg)\n\n**Figure 2.:** (A) \u03b2CBP expression in the tergums of different body segments of locusts in the gregarious (G) and solitary (S) phases. Pro: Pronotum; Tho: Thorax; Abd: Abdomen; (Tukey\u2019s test, ***p\u00a0<\u00a00.001). (B) \u03b2CBP expression in the pronotums of different instars of gregarious (G) and solitary (S) nymphs. Body color phenotypes of typical gregarious and solitary nymphs in the second (2st), third (3nd), and fourth (4th) instar are shown. The scale is 2 mm for each nymph. mRNA expression of \u03b2CBP was quantified by using qRT\u2013PCR. qPCR data are shown as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a04, ***p\u00a0<\u00a00.001). (C, D) mRNA (C) and protein (D) expression levels of \u03b2CBP were determined in the integuments of fourth-instar gregarious (G) nymphs, solitary (S) nymphs, gregarious nymphs after isolation (IG), and solitary nymphs after crowding (CS) using qPCR and Western blot analyses. Western blot bands were quantified using densitometry, and the values are expressed as the mean\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03). (E) Distribution analysis of CBP was conducted to determine the localization and differences in abundance of CBP in the integuments between the gregarious (G) and solitary (S) locusts via immunohistochemistry. The red arrows indicate the areas where \u03b2CBP was localized in the locust integuments. NC, negative control. Images were visualized using an LSM 710 confocal fluorescence microscope (Zeiss) at a magnification of 40\u00d7. (F) Expression signals for \u03b2CBP were analyzed in the integuments of gregarious nymphs after isolation (IG) and solitary nymphs after crowding (CS). (G) Fluorescence intensity was quantified using ZEN 2.1 software and expressed as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03). (H) \u03b2-carotene content in the gregarious and solitary locust integuments was evaluated using HPLC (n\u00a0=\u00a06, **p\u00a0<\u00a00.01). Double comparisons were evaluated using Student\u2019s t-test and one-way ANOVA followed by Tukey\u2019s test was used for multiple comparisons. The same letter indicates that the data are not significantly different.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Data are presented as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a04); the same letter indicates that the data are not significantly different.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The expression levels of \u03b2CBP were determined by qPCR in the pronotum integuments of fourth-instar gregarious nymphs after isolation (IG) for 1, 3, and 5 days. qPCR data are shown as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a04). *p\u00a0<\u00a00.05.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The mRNA expression levels of \u03b2CBP were determined in the tergum of the thorax and abdomen of fourth-instar gregarious (G) nymphs, solitary (S) nymphs, gregarious nymphs after isolation (IG) and solitary nymphs after crowding (CS) by performing qPCR analyses. qPCR data are shown as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a04).\n\nTo explore whether \u03b2CBP is especially expressed in the black tergum integuments of gregarious locusts, we performed a comparative analysis via qRT\u2013PCR to quantify the \u03b2CBP transcript levels in the tergum integuments of solitary and gregarious locusts. The transcript level of \u03b2CBP was significantly higher in the pronotum and tergum integuments of the thorax and abdomen of gregarious individuals than the pronotum and tergum integuments of solitary individuals (Figure 2C and Figure 2\u2014figure supplement 3). Moreover, isolating the gregarious locusts (IG) significantly decreased the transcript level of \u03b2CBP (Figure 2C and Figure 2\u2014figure supplements 2 and 3). By contrast, crowding the solitary locusts (CS) significantly increased the transcript level of \u03b2CBP (Figure 2C and Figure 2\u2014figure supplement 3).\n\nBecause the expression pattern of \u03b2CBP in the pronotum was consistent with that in the tergum of the thorax and abdomen, the pronota were considered representative of all terga of the locusts in the following analyses. We also found that the level of CBP protein in the locust pronotum integuments was significantly higher in the gregarious locusts than in the solitary locusts (Figure 2D). Moreover, the protein levels of \u03b2CBP declined when the locusts were isolated and increased under the crowding conditions (Figure 2D). This expression pattern suggests a potential role of \u03b2CBP in regulating the body color characteristics of the pronotum and tergum integuments of the thorax and abdomen.\n\nTo determine whether \u03b2CBP is differentially localized in the locust pronotum integuments of gregarious and solitary locusts, we performed immunohistochemistry of \u03b2CBP. We found that large amounts of \u03b2CBP were widely detected in the intercellular space of the pronotum of gregarious locusts, whereas \u03b2CBP was distributed very sporadically in the solitary locusts (Figure 2E). The amount of \u03b2CBP protein in the pronotum of gregarious locusts was 39.5-fold higher than the corresponding amount in solitary locusts (Figure 2G). Furthermore, the amount of \u03b2CBP protein in the locust pronotum was decreased by isolation and increased by crowding (Figure 2F and G).\n\nConsidering that \u03b2CBP can bind and accumulate \u03b2-carotenes in tissues (Bhosale and Bernstein, 2007), we assessed the amount of \u03b2-carotene binding by \u03b2CBP in the pronotum integuments of gregarious and solitary locusts in vivo. The \u03b2-carotene content in the gregarious locusts was 2.8-fold higher than that in the solitary locusts (Figure 2H). These results suggest that \u03b2CBP protein level and the associated \u03b2-carotene content are directly correlated with the degree of black coloration of the locust pronotum.\n\n### \u03b2CBP mediates body color changes associated with population density\n\nBased on the high level of \u03b2CBP available to bind with \u03b2-carotenes in gregarious locusts or crowded solitary locusts, we hypothesized that the black gregarious locusts could be induced toward green body color by blocking \u03b2CBP synthesis to interfere with \u03b2-carotene deposition. To confirm the involvement of \u03b2CBP in pigmentation during the phase transition, we injected double-stranded RNAs (dsRNAs) against the \u03b2CBP gene into the abdominal hemocoel of gregarious nymphs at the second stadium, isolated the injected locusts, and assessed their body color pattern.\n\nAfter injection of ds\u03b2CBP\u2013RNA and isolation treatment, the mRNA and protein levels of \u03b2CBP in the pronotum integument decreased by 99% and 85%, respectively, relative to the levels in dsGFP\u2013RNA-injected and isolated controls (Figure 3A and C). In addition, the mRNA levels of \u03b2CBP in the tergum of the thorax and abdomen decreased by 98% relative to the levels in dsGFP\u2013RNA-injected and isolated controls (Figure 3\u2014figure supplement 1). The silencing effect of ds\u03b2CBP\u2013RNA resulted in an 80% decrease in the signal intensity of \u03b2CBP in the pronotum integuments of gregarious locusts relative to the corresponding intensity in the dsGFP\u2013RNA injected controls (Figure 3E and F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig3-v2.jpg)\n\n**Figure 3.:** (A, C) mRNA and protein expression of \u03b2CBP in the pronotum integument was quantified using qRT\u2013PCR (A) and western blot analyses (C) two stadiums after \u03b2CBP silencing and isolating in gregarious locusts. (B, D) mRNA and protein expression levels of \u03b2CBP in the pronotum integument were determined two stadiums after feeding with \u03b2-carotene and crowding in solitary locusts using qPCR (B) and western blot analyses (D). (E) Fluorescence signals of \u03b2CBP were determined in gregarious (G) locusts after \u03b2CBP silencing coupled with isolation and in solitary (S) locusts after feeding with \u03b2-carotene diet coupled with crowding. (F, G) Fluorescence signal intensity of \u03b2CBP was quantified using ZEN 2.1 software and expressed as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03). (H) \u03b2-carotene content was evaluated in gregarious locusts after \u03b2CBP silencing coupled with isolation and in solitary locusts after feeding with \u03b2-carotene diet coupled with crowding by using HPLC. qPCR and HPLC data are shown as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a06). Western blot bands were quantified using densitometry, and the values are expressed as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03). All the double comparisons were evaluated using Student\u2019s t-test, *p\u00a0<\u00a00.05; **p\u00a0<\u00a00.01; ***p\u00a0<\u00a00.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** mRNA expression of \u03b2CBP was quantified by using qRT\u2013PCR two stadiums after treatment of gregarious nymphs with 3 \u03bcg of dsRNA. qPCR data are shown as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a06). **p\u00a0<\u00a00.01.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A, B) mRNA (A) and protein (B) expression levels of \u03b2CBP were determined in solitary nymphs after feeding with \u03b2-carotene followed by crowding. Controls were fed with a regular diet without \u03b2-carotene and were crowded afterward. qPCR data are shown as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a06). Western blot bands were quantified using densitometry, and the values are expressed as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03); *p\u00a0<\u00a00.05.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** qPCR data are shown as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a06).\n\nWe then determined the effects of \u03b2CBP silencing on the \u03b2-carotene content in the pronotum integuments of the locusts. Because there are many free \u03b2-carotenes in the locusts and \u03b2-carotene only binds with the \u03b2CBP protein to participate in the formation of body color (Reszczynska et al., 2015), we measured the amount of \u03b2-carotene binding to \u03b2CBP. The administration of ds\u03b2CBP significantly reduced the \u03b2-carotene content in the pronotum integuments from 104.8 \u03bcg/g to 74.3 \u03bcg/g (*p\u00a0<\u00a00.05, Figure 3H).\n\nA body coloration assay revealed that after molting of 29 locusts, 48% of the nymphs injected with ds\u03b2CBP\u2013RNA and then isolated showed substantial lightening of the black pronotum. Moreover, 41% of the gregarious nymphs shifted to a complete green-colored body. By contrast, 73% of the dsGFP\u2013RNA-injected gregarious nymphs treated with isolation retained an intense black body pattern. Only 27% of the dsGFP-injected and isolated control locusts showed body color lightening (Figure 4A). These results support the view that \u03b2CBP regulates the body color changes of gregarious and solitary locusts between black and green coloration.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig4-v2.jpg)\n\n**Figure 4.:** (A) Effects of \u03b2CBP dsRNA treatment on the body color of gregarious locusts. Each second-instar nymph was injected with 3 \u03bcg of dsRNA thrice and exposed to isolation. Control nymphs were injected with equivalent volumes of dsGFP and then isolated. (B) Effects of \u03b2-carotene feeding on the body color of solitary locusts. Solitary nymphs were fed a synthetic diet containing \u03b2-carotene and were then subjected to crowding. Control insects were fed a regular diet without \u03b2-carotene and were then subjected to crowding. (C) A body color rescue experiment in solitary locusts was performed by injecting dsRNA against \u03b2CBP at day three in third-instar nymphs (N3D3) that had been pretreated with \u03b2-carotene feeding at day one as second-instar nymphs (N2D1). The control group was injected with dsGFP as third-instar nymphs that had been pretreated with \u03b2-carotene feeding as second-instar nymphs.\n\nTo further confirm the direct involvement of \u03b2CBP in mediating body color changes, we assessed the effect of increasing the pigment bound with \u03b2CBP on the body color change of the locusts from solitary to gregarious phase. In this experiment, solitary locusts were fed a diet containing \u03b2-carotene and treated with crowding. The mRNA and protein levels of \u03b2CBP significantly increased by 11.2- and 2.5-fold in the pronotum, respectively, and increased by 2.3- and 2.1-fold in the tergum of the thorax and abdomen, respectively, relative to the corresponding levels in the regular diet-fed and crowded controls (Figure 3B,D and Figure 3\u2014figure supplement 2). Moreover, the signal intensity of \u03b2CBP increased by 22.7-fold in the pronotum integument cells of the solitary locusts after \u03b2-carotene feeding and crowding relative to the intensity in the regular diet-fed and crowded controls (Figure 3E and G). In addition, HPLC analysis revealed that the amount of \u03b2CBP\u2013\u03b2-carotene complex in the solitary integuments increased by 3.4-fold after \u03b2-carotene feeding and crowding (Figure 3H). A total of 47% of the solitary locusts completely shifted to the typical gregarious body color, and the pronota of 33% of the feeding locusts developed extensive black areas similar to the gregarious body color after feeding with \u03b2-carotene and crowding. However, 87% of the locusts retained their green color in the regular diet and crowding treatment (control group) (Figure 4B). Thus, \u03b2CBP and \u03b2-carotene can jointly induce body color changes from green to black associated with phase transition in the locusts.\n\nTo further determine whether the \u03b2CBP upregulation induced by \u03b2-carotene is responsible for the body color change of locusts from green to black, we conducted a rescue experiment by injecting ds\u03b2CBP-RNA into solitary locusts pre-fed with \u03b2-carotene. After molting, 35.5% of the ds\u03b2CBP-injected nymphs pre-fed with \u03b2-carotene showed green body color, whereas 15.6% of the green individuals in the dsGFP-injected group pre-fed with \u03b2-carotene did so. Correspondingly, the phenotype of black tergum individuals induced by \u03b2-carotene was rescued only by injection with ds\u03b2CBP-RNA (Figure 4C). Therefore, \u03b2CBP acts with \u03b2-carotene to regulate the black body color of gregarious locusts, and \u03b2-carotene by oneself did not regulate the body color.\n\n### Body color change from green to black is mediated by the red pigment complex\n\nTo confirm the role of the \u03b2CBP\u2013pigment complex in black color pigmentation, we performed a pigment immunoprecipitation assay using an antibody against the \u03b2CBP protein in vitro and in vivo to examine the binding capacity and complex coloration of \u03b2CBP with \u03b2-carotene (Figure 5A and B). We incubated recombinant \u03b2CBP (r\u03b2CBP) with \u03b2-carotene under immunoprecipitation by using \u03b2CBP antibody conjugated with protein A-Sepharose (Figure 5A). Immunoprecipitation of \u03b2-carotene-r\u03b2CBP formed a red complex, whereas no red precipitate formed when \u03b2-carotene was added to bovine serum albumin (BSA) or when \u03b2-carotene in the absence of r\u03b2CBP was incubated in the binding buffer followed by immunoprecipitation (Figure 5A). It could be inferred that the red precipitate was specific to the r\u03b2CBP\u2013\u03b2-carotene complex because this complex failed to form in the presence of BSA and \u03b2-carotene or in the absence of r\u03b2CBP (Figure 5A). The pigment immunoprecipitation assay in vivo also showed an accumulation of red pigment in the precipitate of the integument when treated with anti-\u03b2CBP-immunoprecipitation compared with IgG-immunoprecipitation (Figure 5B). Furthermore, we confirmed that the red pigment in the \u03b2CBP precipitant result from \u03b2-carotene by HPLC analysis (Figure 5\u2014figure supplement 1). These results provide strong evidence that \u03b2CBP directly binds with \u03b2-carotene in the pronotum integument to form the red complex, which directly contributes to the black pattern of the pronotum in gregarious locusts.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig5-v2.jpg)\n\n**Figure 5.:** (A) Red \u03b2CBP\u2013pigment complex was confirmed by recombinant \u03b2CBP (r\u03b2CBP) incubation with \u03b2-carotene under immunoprecipitation using \u03b2CBP antibody conjugated to protein A-Sepharose. NC1, containing \u03b2-carotene without r\u03b2CBP; NC2, containing BSA and \u03b2-carotene; IP, containing \u03b2-carotene and r\u03b2CBP. (B) Red pigment accumulates in the precipitate of the locust pronotum when treated with anti-\u03b2CBP-immunoprecipitation compared with IgG-immunoprecipitation. NC, containing pronotums and IgG; IP, containing pronotums and \u03b2CBP antibody. (C) The subcellular distribution of \u03b2CBP was investigated in the integuments of gregarious and solitary locusts by immunoelectron microscopy. (D, E) Immunogold labeling signals of \u03b2CBP were comparatively analyzed in the integuments of gregarious locusts after injection with \u03b2CBP dsRNAs and subsequent isolation and (D) in the integuments of solitary integuments after feeding with \u03b2-carotene diet followed by crowding (E). (F, G, H) Average number of gold particles in three randomly selected pigment granules in sections from various treatments. Variation is calculated based on three biological replicates (n\u00a0=\u00a03, Student\u2019s t-test, **p\u00a0<\u00a00.01). All sections were probed with anti-\u03b2CBP, followed by protein A-gold conjugate. Images outlined with red squares are magnified at 30,000\u00a0\u00d7\u00a0using the Ruli H-750 TEM (Japan). The red arrow indicates the gold particles of \u03b2CBP located in the pigment granules.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** \u03b2-carotene content was assayed in the precipitate of gregarious pronotums after pigment immunoprecipitation in vivo by using \u03b2CBP antibody vs. IgG. HPLC data are shown as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a06). ***p\u00a0<\u00a00.001.\n\n### \u03b2CBP is localized to the pigment granules of the pronotum integument\n\nTo verify the co-location of \u03b2CBP and the pigment granules, we investigated the subcellular distribution of \u03b2CBP using immunoelectron microscopy. The pronotum integuments were fixed and embedded for thin sections. The sections were analyzed for \u03b2CBP localization by using an anti-\u03b2CBP antibody followed by a gold-conjugated antibody against rabbit IgG. The gold particles were present mainly in the pigment granules of the pronotum integuments. In addition, the average number of gold particles in the pigment granules from the pronotum integuments was 15.5-fold higher in the gregarious locusts than in the solitary locusts (Figure 5C and F). Furthermore, \u03b2CBP silencing coupled with isolation caused a severe deficiency of gold particles in the pigment granules of the gregarious locusts, indicating a substantial reduction in the \u03b2CBP protein\u2013pigment complex relative to the level in the dsGFP-injected and isolated controls (Figure 5D and G). By contrast, \u03b2-carotene intake coupled with crowding evidently increased the gold particles responsible for the \u03b2CBP production in the pigment granules of pronotum in the solitary locusts, demonstrating a significant promotion of \u03b2CBP protein\u2013pigment complex accumulation compared with accumulation in the regular diet-fed and crowded controls (Figure 5E and H). Thus, the \u03b2CBP\u2013pigment complex is a key mediator of black formation in the pronotum integuments of gregarious locusts.\n\n## Discussion\n\nOur study revealed an undescribed mechanism of body color regulation in which changes in the \u03b2CBP\u2013\u03b2-carotene complex-mediated red color balance produce a shift between black and green body color in locusts. The change of body color occurs as an adaptive response to population density change. In high density, the gregarious locusts adopt the black-brown color pattern as alarm coloration against the predation by natural enemies, because they inevitably expose themselves to the environment. The green solitary locusts can hide themselves through the color confusion with the background of plants. The black\u2013brown pattern in the gregarious locusts resulted from the superposition or balancing effect of a red pigment on the green background of solitary locusts rather than complete melanogenesis. Crowding treatment increased the \u03b2CBP levels in the integuments and caused body color change in the solitary locusts by the binding of \u03b2CBP with \u03b2-carotenes (Figure 6). This finding of animal coloration corresponds precisely with the physically trichromatic rule.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig6-v2.jpg)\n\n**Figure 6.:** Body color change is mediated by the red \u03b2CBP\u2013\u03b2-carotene complex, which has a superposition effect on the solitary green background and produces the black back pattern of gregarious locusts. Silencing \u03b2CBP in gregarious locusts reduced the red color pigment \u03b2-carotene complex, thereby leading to the green pattern (instead of black). By contrast, feeding the solitary locusts \u03b2-carotene induced \u03b2CBP expression and caused gregarious-like body coloration.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41362/elife-41362-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** qPCR data are shown as the means\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a04). Additional files.\n\nWe demonstrated that \u03b2CBP expression is not only positively correlated with the black color of the pronotum in gregarious locusts but also phase-related in response to population density changes. The \u03b2CBP expression in solitary locusts was not induced by merely feeding with \u03b2-carotene without crowding treatment (Figure 3\u2014figure supplement 3). Thus, the body color changes of solitary locusts that were induced to form gregarious-like body coloration must rely on crowding treatment and feeding the \u03b2-carotene, because only crowding treatment can promote the \u03b2CBP expression for \u03b2CBP\u2013\u03b2-carotene complex production. Thus, population density of locusts acts as necessary and sufficient condition to drive the changes of body coloration. Generally, body color changes are driven by gene changes to adapt with a broad range of environments. For instance, the melanocortin-1 receptor gene regulates melanin production associated with black hair and skin in human and mouse pigmentation responsed to ultraviolet-light (D'Orazio et al., 2006). The major honest signaling of red carotenoids in Zebrafinch (Mundy et al., 2016) is thought to be the beak, colored in orange thanks to the ketolase activity encoded by the cytochrome P450 gene which was recruited from an ancestral function in retinal oil droplets. Although several studies have investigated the role of gene-environment in animal coloration, convergent phenotypes commonly arise from a single pigment-mediated independent change. Our study reveals a different mechanism in which \u03b2CBP, as a red signaling, has an integrative and palette effect on black and green body color change depending on the population density in locusts.\n\nIn our study, single \u03b2CBP or \u03b2-carotene cannot produce pigment deposition in the black tergum integuments of the locusts. \u03b2CBP only combine \u03b2-carotene to form red pigment complex for producing the black pattern of gregarious locusts. Previous studies in other species indicated that pigment-binding protein can uptake and bind pigment to affect coloration (Sakudoh et al., 2011; Sakudoh et al., 2007; Wang et al., 2014a). In the silkworm Bombyx mori, the yellow cocoon color is determined by the carotenoid-binding protein gene, which controls the uptake of carotenoids in the silk gland (Sakudoh et al., 2007). Carotenoid-binding protein mutation produces colorless hemolymph and white cocoons, indicating that carotenoid-binding protein plays a central role in cocoon color pigmentation (Sakudoh et al., 2007; Wang et al., 2014a). Mammals often obtain carotenoids by eating plants (Avalos and Carmen Lim\u00f3n, 2015; Bryon et al., 2017; Toews et al., 2017). Once absorbed, carotenoids are transported by lipoproteins, which are homologs of CBP in insects, through the bloodstream to the target tissues. In this process, the abundance and nature of lipoproteins limit the capacity to obtain carotenoids (McGraw, 2006). Interestingly, \u03b2-carotene-binding protein, as a key mediator of body color production, controls \u03b2-carotene content and absorption to produce red color, which is superposed on the background color of gregarious locus to yield the black pattern. In our present study, transcriptome analysis did not enrich the expression differentiation of catecholamine biosynthesis genes, which are considered involvement in the phase changes of the locust (Ma et al., 2011). We speculate the discrepancy mainly due to the different tissues sampling. In fact, they sampled the heads of the locusts (Ma et al., 2011), and our samples are from the pronotum of the locusts.\n\nOur results show that the black pattern of gregarious locusts is caused by the interaction and mixture of different pigments. This pigment interaction has a colored palette effect that results in black coloration due to the accumulation of red color \u03b2-carotene pigments in the presence of blue and yellow pigments. The disappearance of the red pigment in the gregarious locusts led to the emergence of green color, which is the typical body color of solitary locusts. By elucidating the mechanism by which different types of pigments interact to create transitions among color polyphenism, this study provides new information that could be useful for analyzing color transitions in other organisms. In Heliconius erato and Agraulis vanillae, optix is required for the red color pattern and coordinates between the ommochrome (orange and red) and melanin (black and gray) pigment types (Zhang et al., 2017). Parrots acquire their colors through regulatory changes that drive the high expression of MuPKS in feather epithelia, which appear green when the blue and yellow pigments are present (Cooke et al., 2017). The green color of the integument in two species of locusts, the migratory locust and desert locust (Schistocerca gregaria) is obtained from a mixture of blue biliverdin pigment and yellow carotenoids (Goodwin, 1952; Goodwin and Srisukh, 1951). One of carotenoid binding proteins can bind with yellow pigments. For example, carotenoid binding protein plays a key role in the yellow cocoon pigmentation by binding with yellow carotenoids (Tabunoki et al., 2004). As expected, the expression levels of a biliverdin-binding protein and a carotenoid-binding protein in the pronotum integument were not significantly different between the gregarious and solitary locusts (Figure 6\u2014figure supplement 1), suggesting that the contents of blue biliverdin and yellow carotenoid are the same in gregarious and solitary locusts. Thus, our results suggest a colored palette mechanism of body color change, with the change from typical gregarious-phased coloration (black) to solitary-phased coloration (green) is dependent on the extent of red \u03b2-carotene bound to \u03b2CBP.\n\nThe color polyphenism of gregarious and solitary locusts reflects an adaptive strategy to respond to changes in population density and the natural environment (Sim\u00f5es et al., 2016), which is consistent with the strategies of other animals when encountering different selection pressures (Cuthill et al., 2017). The multi-coloured pattern of black back with a contrasting brown ventral color in gregarious locusts functioned as effective warning coloration signal (Sword et al., 2000), providing mutual recognition to conspecifics and warning signal against predators in swarms (Sword, 1999). Potential predators, such as birds or and frogs (with tetrachromatic vision or trichromatic vision) could distinguish aposematic color visual signals as indicators of unpalatability and move on without an attempted attack. This phenomenon is consistent with other studies, showing that vertebrate predators more readily learn to avoid conspicuous prey (Guilford and Cuthill, 1991). Therefore, the expression of density-dependent warning coloration can result in a substantial decrease in predation on locusts in high-density population. This destabilization of predator-prey interactions could facilitate further population growth and gregarization which can ultimately lead to outbreaks. In addition, crowding stimuli, including the stress of a high population density and emission of an aggregative pheromone, may induce group migration (Caro, 2009; Sword, 2002). By contrast, the uniform cryptic color of solitary locusts may reduce the likelihood of detection and risk of predation, similar to the role of crypsis in other organisms (Caro, 2009; Hemmi et al., 2006). Animal coloration is a prominent phenotypical feature that serves multiple important functions, including social signaling, antipredator defense, parasitic exploitation, thermoregulation, and protection from ultraviolet light, microbes, and abrasion (Bell et al., 2017; Caro et al., 2016; Cuthill et al., 2017; Duarte et al., 2017; Duarte et al., 2016). Therefore, the mechanisms of color variation are highly conserved and can offer insights into the adaptive evolution of gene regulation. Our study shows a new \u2018palette effect\u2019 mechanism by which the red \u03b2CBP\u2013\u03b2-carotene pigment complex can act as a switch to coordinate between black and green coloration. This mechanism of color pattern change may be evolutionarily conserved among multiple species, although additional functional work is needed to assess this hypothesis.\n\n## Materials and methods\n\n### Insects\n\nAll insects used in the experiments were reared in the same locust colonies at the Institute of Zoology, Chinese Academy of Sciences, Beijing, China. Gregarious nymphs were reared in large, well-ventilated cages (400 insects per case). Solitary nymphs were cultured alone in white metal boxes supplied with charcoal-filtered compressed air. Both colonies were reared under a 14:10 light: dark photo regime at 30 \u00b1 2\u00b0C (Kang et al., 2004; Yang et al., 2016). The newly hatched first instar nymphs are white but turns black in 1\u20132 hr. The head of second instar nymphs is larger and pale colour pattern is conspicuous. At the third instar nymph stage, two pairs of wing buds projects on each side of thorax. The color of fourth instar nymphs is conspicuously black.\n\n### Strand-specific RNA sequencing of the integument\n\nThe pronotum integument was dissected from gregarious or solitary fourth-instar nymphs. Total RNA of the pronotum samples with two biological replicates for each group was extracted using TRIzol (Invitrogen) and treated with DNase I following the manufacturer\u2019s instructions. RNA quality was assessed using an Agilent 2100 Bioanalyzer (Agilent) to verify RNA integrity. cDNA libraries were prepared according to Illumina\u2019s protocols. The adaptor sequences in the raw sequencing data were filtered using Trimmomatic-0.30 (Bolger et al., 2014). We performed the de novo transcriptome assembly by using Trinity software (trinityrnaseq r20140717). Clean reads were mapped to the de novo transcriptome assembly in the accompanying script in Trinity software. The number of total reads was normalized using fragments per kilobase of transcripts per million reads mapped. The significance of differences between the test and control groups was based on p values with false discovery rate correction. DEGs with significance at corrected p\u00a0<\u00a00.05 in each comparison were determined using the run_DE_analysis in the R environment. The RNA-seq data were deposited in the Sequence Read Archive Database of NCBI (accession no. PRJNA399053).\n\n### Assays of quantitative PCR for genes\n\nTotal RNA was isolated from the integument by using TRIzol (Invitrogen). The Moloney murine leukemia virus reverse transcriptase (Promega, USA) was used to prepare the oligo (dT)-primed cDNA. mRNAs were subjected to qPCR by using SYBR Green gene expression assays in accordance with the manufacturer\u2019s instructions (Tiangen). qPCR was performed on a LightCycler 480 instrument (Roche). \u03b2-actin was used as the internal control. Dissociation curves were determined for each mRNA to confirm unique amplification. The PCR efficiency of reference gene and \u03b2CBP were calculated (Bustin et al., 2009), which were within the commonly reported range of qRT-PCR. The mathematical model method was used to calculate the relative expression of genes (Pfaffl, 2001). The stability of three reference genes (18S, GAPDH, \u03b2-actin) were evaluated in different stage of gregarious and solitary locusts based on the gene-stability measure (M) values (Supplementary files 1) as calculated by geNorm algorithms (Vandesompele et al., 2002). The relative expressions were normalized using the geometric mean of two of most stable reference genes (18S and \u03b2-actin) with the low M values. The qPCR primers used are listed in Supplementary files 2. All the qRT\u2013PCR reactions were performed in six biological replicates. Four integument samples were used in each biological replicate.\n\n### \u03b2CBP immunohistochemical assay\n\n\u03b2CBP was detected in the integument via immunohistochemistry. The integument was fixed in 4% paraformaldehyde overnight. Paraffin-embedded integument tissue slides (5 \u00b5m thick) were deparaffinized in xylene and rehydrated with an ethanol gradient. The samples were blocked with 5% BSA for 30 min and then incubated with an anti-\u03b2CBP antiserum (1: 200) for 2 hr. The slides were washed and incubated for 1 hr with Alexa Fluor-488 goat anti-rabbit secondary antibody (Life Technologies). Hoechst (1: 500) was used for nuclei staining. The \u03b2CBP signals were detected using an LSM 710 confocal fluorescence microscope (Zeiss).\n\n### Transcript knockdown via RNAi\n\nTo knockdown the transcript of \u03b2CBP, dsRNA was synthesized using the T7 RiboMAXTM Express RNAi System (Promega, USA) following the manufacturer\u2019s instructions. Each insect was injected with 3 \u03bcg of dsRNA three times at day three for the second-instar nymphs and at days 1 and 5 for the third-instar nymphs. Control nymphs were injected with an equivalent amount of dsGFP\u2013RNA. Nymphs that showed body color changes were used for the extraction. Six abnormal nymphs and six control nymphs were used for CBP immunohistochemistry.\n\n### Feeding \u03b2-carotene assay\n\nSolitary nymphs of 3-day-old second instars were fed with a synthetic diet containing \u03b2-carotene and subjected to crowding for two stadiums before calculating the body color phenotype statistics. The composition of the basic synthetic diet used in the experiment is shown in Supplementary files 3. Control insects were fed a synthetic diet without \u03b2-carotene and exposed to crowding. Rearing jars were cleaned and fresh diets were provided every day. A total of 29 nymphs were fed a synthetic diet in each of the treatment and control groups.\n\n### Body color change experiment in vivo\n\nTo more quickly detect the changes of body coloration, we injected the double-strain RNA of \u03b2CBP into the locusts and isolated the locusts. At same time we conducted the isolated locusts as the control. Thus, compared to the isolated control, we can obtain the true efficiency of RNA inferences. Because each injection of RNAi in general suppress effectively the target gene for several days, the isolation treatment can prevent the recovery expression of \u03b2CBP. In parallel, we fed with \u03b2-carotene for solitary locusts and crowded them. A body color rescue experiment was performed with solitary locusts. Approximately 30 second-instar nymphs were fed a synthetic diet containing \u03b2-carotene and then subjected to crowding. One stadium later, these nymphs were injected with 3 \u03bcg ds\u03b2CBP or dsGFP control and then isolated. One stadium after the dsRNA injection, the nymphs were subjected to body color analysis.\n\n### Immunoelectron microscopy\n\nFor \u03b2CBP immunolabeling, integuments were fixed with 2.5% glutaraldehyde in 0.1 M phosphate buffer. After dehydration in a graded alcohol series, specimens were embedded in LR White resin and polymerized at 60\u00b0C. Ultrathin sections were blocked with phosphate-buffered saline (PBS) containing 1% BSA, 0.2% Tween-20, and 0.2% gelatin before labeling with the CBP polyclonal antibody (1: 1000). A gold-conjugated (10 nm) secondary rabbit antibody was used to visualize the binding sites through TEM (Ruli H-750, Japan). The \u03b2CBP signals are detected by the black gold particles. Although there are some sporadic distribution in the background, the significant more gold particles were been observed in the pigment granules of locusts. The average number of gold particles was counted from three randomly selected pigment granules in sections of three biological replicates. The background signals were be counteracted in the treatment samples when compared with the controls.\n\n### \u03b2-carotene binding assay in vitro and in vivo\n\nA \u03b2-carotene-binding experiment in vitro was conducted as previously described (Tabunoki et al., 2002). Purified r\u03b2CBP was resuspended in PBS binding buffer containing 1 mg/mL BSA. Samples containing 50 M rCBP and 100 M \u03b2-carotene were incubated in 1 mL of binding buffer for 3 hr at 25\u00b0C. The control experiments were performed using the same procedure without the use of purified r\u03b2CBP or BSA. Anti-CBP rabbit IgG\u2013protein A-Sepharose was added to the reaction mixture and incubated for 4 hr at 4\u00b0C. The protein A-Sepharose\u2013r\u03b2CBP\u2013\u03b2-carotene complex was collected by centrifugation at 13,000 g for 10 s. To remove the unbound \u03b2-carotene, the pellets were washed five times with 20 mM Tris-HCl (pH 7.6) containing 150 mM NaCl, 1% Nonidet P-40, protease inhibitor mixture, and 1 mg/mL BSA. Binding of \u03b2-carotene to r\u03b2CBP was confirmed by the presence of red-colored precipitate.\n\nFor the \u03b2-carotene binding experiment in vivo, approximately 200 pronotum integuments from gregarious individuals were collected and homogenized in ice-cold PBS buffer containing protease inhibitor. \u03b2CBP antibody or rabbit IgG, which was used as a negative control, and protein A-Sepharose was added to the homogenate and incubated at 4\u00b0C overnight. The protein A-Sepharose-\u03b2CBP\u2013\u03b2-carotene complex was collected by centrifugation at 13,000 g for 30 s. The pellets were washed five times to remove the unbound \u03b2-carotene.\n\n### \u03b2-carotene quantification of the pronotum tissue extracts\n\nThe \u03b2-carotene content of locust pronotum integument was quantified using reverse-phase HPLC and DAD. Pronotum tissues of locust nymphs were rapidly dissected and stored in liquid nitrogen. Thirty pronotums were homogenized and lysed in lysate buffer. After incubation with \u03b2CBP antibody\u2013protein A-sepharose at 4\u00b0C overnight, the specimens were placed in a 50-mL centrifuge tube containing a mixture of n-hexane, ethanol, and acetone (2: 1: 1, v: v: v). The tissue samples were sonicated at 5\u201310\u00b0C for 15 min and then centrifuged at 6,800 g for 10 min. The upper layer extract and the ether extract of the lower layer residual solution were collected in another centrifuge tube. The same sample was re-extracted twice according to the same protocol as described above. Then, 2 mL of ether and 2 mL of distilled water were added to the lower layer collection tube and sonicated at 4\u00b0C for 5 min. Following, the upper phase was collected. All of the extracts were combined and dried using a lyophilizer. The dried residue was dissolved in 2 mL of methyl tertbutyl ether (MTBE) and 2 mL of a KOH: methanol mixture (1: 9, w: v). After over 10 hr in darkness, 2 mL of MTBE and 2 mL of distilled water were added to the mixture. Then, the upper extract was collected and dried. This dried residue was dissolved in 200 \u03bcL of MTBE containing 0.1% BHT and filtered through 0.22 \u03bcm filters. The filtered samples were automatically loaded into the reverse phase HPLC system, which contained a carotene C30 column (250 mm\u00a0\u00d74.6 mm, 5 \u03bcm, YMC, Japan), at a flow rate of 1 mL/min. The gradient elution method consisted of an initial 10 min of 71.2% acetonitrile, 23.8% methanol, and 5.0% H2O, followed by a linear gradient of 19.5% acetonitrile, 6.5% methanol, and 74.0% MTBE for 31 min. Data analysis was conducted with Agilent ChemStation software. \u03b2-carotene was quantified using an external standard.\n\n### Statistical analysis\n\nSPSS 17.0 software (SPSS, Inc.) was used for statistical analysis. Differences between treatments were evaluated using either Student\u2019s t-test or one-way ANOVA followed by Tukey\u2019s test for multiple comparisons. Body color transition (%) was compared between the treatment and control using Student\u2019s t-tests. For parametric analyses, the percentage data of body color transition were arcsin (x1/2) transformed, whereas the absolute quantity data were log (x\u00a0+\u00a01) transformed to correct heterogeneity of variances (Wei et al., 2013). A p value of\u00a0<\u00a00.05 was considered statistically significant. All of the results are expressed as the means\u00a0\u00b1\u00a0SEM.\n",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "ed4689b2-d648-475b-bf2f-5c9c9659e3fe",
+      "submission_id": "a1fcae5d-ad89-4ee8-af6c-1cb53f263186",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Shannon B Olsson, National Centre for Biological Sciences, Tata Institute for Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41362.sa1](https://doi.org/10.7554/eLife.41362.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Red and black: A \u03b2-carotene-binding protein carrying a red pigment regulates body-color transition in locusts\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Shannon Olsson as the Reviewing Editor, and the evaluation has been overseen by K. VijayRaghavan as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jean-Michel Gibert (Reviewer #2); Uwe Irion (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe proximate and ultimate mechanisms of coloration in the animal kingdom are of core interest to a large number of fields, from developmental biology to animal behavior. The striking coloration change of locusts while shifting to their gregarious phase has been a key attribute to identify their associated behavioral changes. As such, identifying the genetic and biochemical source of this coloration is of great interest and relevance.\n\nSummary:\n\nHere, the authors identify a specific \u03b2-carotene binding protein that becomes elevated in certain body parts during solitary-gregarious phase change. This binding protein, when complexed to \u03b2-carotene, produces a red pigment that on the standing green cuticular background becomes dark brown/black, giving gregarious locusts their unique patterning. The authors first performed a transcriptome analysis of the two morphs and identified 68 genes involved in animal coloration whose expression was modulated between morphs. They chose the top 17 of these genes for RT-qPCR validation and focus later on one of these genes: the gene encoding \u0392-carotene binding protein. The authors show convincingly using RNAi experiments, controlled diets, crowding/isolation conditions, immuno-staining and electron microscopy, that \u03b2-carotene and \u03b2-carotene binding protein act jointly for the deposition of \u03b2-carotene in the integument of the gregarious morphs. The authors find that expression of the gene encoding \u03b2CBP is significantly up-regulated in gregarious v. solitary locusts coinciding with a colour change to black/brown from green. Furthermore, they demonstrate that the \u03b2-carotene binding protein actually binds carotene and that knock-down of the gene leads to a (partial) body colour change back to green.\n\nIn general, the experiments are well performed, discussed, and appropriate for eLife. However, the reviewers have some important considerations to improve the clarity and accuracy of the results and conclusions.\n\nEssential revisions:\n\n1) Two-part titles and/or punctuation are to be avoided:\n\nIn the interests of style and clarity, the titles of eLife research papers should not use colons, dashes, exclamation marks, or brackets (unless needed for scientific reasons). Two-part titles should also be avoided (though some exceptions can be made for Tools and Resources). Please revise your title with this advice in mind.\n\n2) RT-qPCR analyses:\n\nFirst, only one gene (\u0392-actin) is used as an internal control. Standards require several genes to be used as internal controls. Furthermore, it is not explained how the relative expression levels are quantified. Precise methods using the calculated efficiency of the primers such as the Pfaffl method should be used. Kindly refer to Bustin et al., 2009 (The MIQEGuidelines: Minimum Information for Publication of Quantitative Real-Time PCR Experiments). The authors are advised to perform additional RT-qPCR on at least one more control gene and explain how expression levels were calculated for all RT-qPCR experiments.\n\nAlso, RT-qPCR primers are given in Supplementary file 1 for \u03b2CBP, and actin but not for the other 16 genes whose expression was quantified in Figure 1C. The primers used to measure the expression of biliverdin-binding protein gene and carotenoid-binding protein in Figure 6\u2014figure supplement 1 are also missing. The sequences of missing primers should be provided.\n\n3) Source of Pigmentation:\n\nWhile the role of \u03b2-CBP is well supported, it may not be the only source of coloration. It would be good for the authors to acknowledge and clarify the role of other proteins. For example, The authors state that they carried out transcript knock-down analyses of the top 8 DEGs and found that only \u03b2CBP showed a significant effect. Please clarify what is meant by \"Top 8\", and clarify their criteria for inclusion of DEGs. The data for the knock-down efficiency should be provided for all transcripts; e.g. Phenoloxidase shows a very significant differential expression, but the knock-down has no effect on colouration. Importantly, the authors also state that they \"\u2026show that the black pattern of gregarious locusts is not caused by an increase in melanin\u2026\". If they want to uphold this statement they should determine whether melanin is present in the gregarious locusts, or if the black colour is indeed produced solely by the combination of yellow, blue and red pigments.\n\n4) Previous studies:\n\nThere seems to be a discrepancy between the data in this current manuscript and those published by Ma et al., 2011, where catecholamine biosynthesis genes were found to be up-regulated in gregarious locusts. Here, it appears that in Figure 1\u2014figure supplement 1 up-regulation of catecholamine catabolic, catechol-containing catabolic and dopamine catabolic GOs are reported.\n\n5) Statistics:\n\nPlease provide more details for the statistics, including assumptions on normality and homoscedasticity, p-values, F, SS, SSmean and degrees of freedom for all cases. Please also indicate in figures which test was used (e.g. Figure 2 column H used Tukey post hoc tests). Furthermore, no statistical tests are performed to analyze some of the experiments, while terms such as \"significant effect\" are provided in the text (e.g. Figure 1\u2014figure supplement 2; Figure 4A, B and C). Please clarify this with appropriate tests or correct wording.\n\n6) Isolation experiments:\n\nPlease clarify the coupled injection of RNAi against BetaCBP and isolation of the injected individuals in experiments corresponding to Figure 4A and 4C. As both of these treatments should separately decrease the expression of \u03b2CBP gene, it is unclear why they are coupled.\n\n7) Trichromatic Rule:\n\nThe trichromatic rule support is interesting, particularly when insects are not trichromatic. The authors should discuss this in relation to the potential role of this pigmentation to locust fitness. The authors note: \"The contrasting body coloration of gregarious locusts may allow mutual recognition and warning against predators in swarms.\". Since insects are not trichromatic, it would be good to acknowledge this and also discuss how these patterns might be seen by various animals (and why).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A \u03b2-carotene-binding protein carrying a red pigment regulates body-color transition between green and black in locusts\" for further consideration at eLife. Your revised article has been favorably evaluated by K VijayRaghavan as the Senior Editor, a Reviewing Editor. And 2 reviewers.\n\nThe manuscript has been significantly improved and all reviewers agree that it provides a significant contribution to the field. However, there remain some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) For RT-qPCR, the authors tested RP49 and GAPDH in addition to \u0392-actin for normalization. They write that \u0392-actin is the most stable gene because its M value is 0.488 and chose to use only this gene for normalization. However, the authors should report the M value all tested genes, and use the geometric mean of the expression of the two most stable control genes (or of the three control genes if these M values are not too distant from one another) as advised in Vandesompele et al., 2002. Furthermore, to calculate the relative expression it is recommended to use the Pfaffl method (Pfaffl, 2001) (cited in Bustin et al., 2009) as the method used in the manuscript (2-\u0394\u0394CT) is known not to be reliable.\n\n2) While the authors did address several of the criticisms presented in the initial review, these are clarified only in the rebuttal letter and not the text. All data and calculations should be also mentioned in the manuscript text (Results and/or Materials and methods) as well, e.g.: a) Add M values for all tested genes and calculations of expression (Rebuttal Letter Point 2).\n\nb) Add explanation of discrepancy with Ma et al., 2011 (Rebuttal Letter Point 4).\n\nc) Add explanation of coupled injection of RNAi against \u0392CBP and isolation of injected individuals (Rebuttal Letter Point 6).\n\nd) Please clarify what \"warning\" (i.e. which locust defense systems) the \"warning coloration\" provides a signal for with references (Rebuttal Letter Point 7).\n\n3) We appreciate the authors attention to English, but there remain several small typos in the text, e.g.:\n\na) \"\u2026the other seven genes show a very significant\u2026\"\n\nb) \"significantly reduced\" where is the statistical test here? Otherwise, remove the term significant.\n\nc) \u2013 \"\u2026locusts adopt the black-brown color pattern as alarm coloration against the predation by natural enemies, because they inevitably expose themselves to the environment\u2026\"\n\nd) \"third instar nymph stage\".\n",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4bf2ae73-6ff5-4492-90bd-da46f1c9b91b",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C1",
+      "claim": "Gregarious locusts exhibit intense black patterns with a ventral brown color.",
+      "claim_type": "EXPLICIT",
+      "source": "The gregarious locusts exhibited intense black patterns with a ventral brown color, and the solitary locusts showed the expected uniform green coloration (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the text and shown in Figure 1A which displays the body colors of typical gregarious and solitary nymphs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "370f9751-b462-469d-97e1-078d544af0c3",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C2",
+      "claim": "Solitary locusts show uniform green coloration.",
+      "claim_type": "EXPLICIT",
+      "source": "The gregarious locusts exhibited intense black patterns with a ventral brown color, and the solitary locusts showed the expected uniform green coloration (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the text and shown in Figure 1A which displays the body colors of typical gregarious and solitary nymphs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "f7d83d4d-1b6f-49de-8099-632fa89b5d87",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C3",
+      "claim": "A total of 1653 differentially expressed genes (DEGs) were identified between gregarious and solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a total of 1653 DEGs between the gregarious and solitary locusts (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to transcriptome sequencing data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "65c01200-2f02-4972-b1c5-f3a02909c62c",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C4",
+      "claim": "26% (430) of the 1653 DEGs were protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "26% (430) of these DEGs were protein-coding genes (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 1\u2014figure supplement 1B showing the numbers of annotated genes among DEGs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "9a87a85d-1e85-4de9-bbc1-80ab63d88d11",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C5",
+      "claim": "Sixty-eight of the 430 protein-coding DEGs are involved in pathways associated with animal coloration.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixty-eight of the 430 protein-coding DEGs are involved in pathways associated with animal coloration (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 1B showing the volcano plot of DEGs associated with animal coloration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "10d55723-70f1-4301-83ee-4a5b2d17d340",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C6",
+      "claim": "After molting, the dark pattern in the pronotum decreased markedly in 60% of the gregarious locusts after \u03b2CBP knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "After molting, the dark pattern in the pronotum decreased markedly in 60% of the gregarious locusts after \u03b2CBP knockdown (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 1D showing the effects of \u03b2CBP dsRNA treatment on body color.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "2e2ba7fd-cfc1-4fef-95da-891a24b17ccf",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C7",
+      "claim": "\u03b2CBP was predominantly expressed in the locust integument tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "we performed quantitative reverse transcriptase\u2013polymerase chain reaction (qRT\u2013PCR) and found that \u03b2CBP was predominantly expressed in the locust integument tissue (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to qRT-PCR data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "bb72af6b-cff9-467d-8f31-5c3f3aecc187",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C8",
+      "claim": "\u03b2CBP expression was significantly higher in the pronotum than in the tergum integuments of the thorax and abdomen in gregarious locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that \u03b2CBP expression was significantly higher in the pronotum than in the tergum integuments of the thorax and abdomen in gregarious locusts, whereas little \u03b2CBP expression was observed in the terga of solitary locusts, with no variability among the tergum segments (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 2A showing \u03b2CBP expression in different body segments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "d870fafb-fa20-46ab-989e-91830c779146",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C9",
+      "claim": "The \u03b2CBP transcript level increased with developmental stage in gregarious locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2CBP transcript level increased with developmental stage, with the expression levels of 4th instar gregarious locusts being approximately 200 times those of the 2nd and 3rd instar gregarious locusts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text describing qRT-PCR results across developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "4e9a3473-d684-43e2-8bb6-d1eeb3876706",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C10",
+      "claim": "\u03b2CBP expression was invariable across the developmental stages in solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, \u03b2CBP expression was invariable across the developmental stages in solitary locusts (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 2B showing \u03b2CBP expression across developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "5b8178ad-17fe-495d-98af-2ae28b9c0692",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C11",
+      "claim": "The extent of black body coloration in locusts is positively correlated with \u03b2CBP expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the extent of black body coloration in locusts is positively correlated with \u03b2CBP expression level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the qRT-PCR data showing \u03b2CBP expression patterns correlating with body color.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "a1e59f4e-2b49-4807-b189-ad31db31e3ab",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C12",
+      "claim": "The transcript level of \u03b2CBP was significantly higher in the pronotum and tergum integuments of the thorax and abdomen of gregarious individuals than the pronotum and tergum integuments of solitary individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcript level of \u03b2CBP was significantly higher in the pronotum and tergum integuments of the thorax and abdomen of gregarious individuals than the pronotum and tergum integuments of solitary individuals (Figure 2C and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to qPCR data shown in Figure 2C and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "75c4a5d2-ae34-4709-9a27-5c9bbd844257",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C13",
+      "claim": "Isolating the gregarious locusts (IG) significantly decreased the transcript level of \u03b2CBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, isolating the gregarious locusts (IG) significantly decreased the transcript level of \u03b2CBP (Figure 2C and Figure 2\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to qPCR data shown in Figure 2C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "180adb48-a81f-4276-b42c-a831d34c6b7c",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C14",
+      "claim": "Crowding the solitary locusts (CS) significantly increased the transcript level of \u03b2CBP.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, crowding the solitary locusts (CS) significantly increased the transcript level of \u03b2CBP (Figure 2C and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to qPCR data shown in Figure 2C and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "4f6e2dd3-0f6e-4661-9cfe-0b23d67743d8",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C15",
+      "claim": "The level of CBP protein in the locust pronotum integuments was significantly higher in the gregarious locusts than in the solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the level of CBP protein in the locust pronotum integuments was significantly higher in the gregarious locusts than in the solitary locusts (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Western blot data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "4ba4bd7b-5127-4218-9ed1-0764d05c2b55",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C16",
+      "claim": "The protein levels of \u03b2CBP declined when the locusts were isolated and increased under the crowding conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the protein levels of \u03b2CBP declined when the locusts were isolated and increased under the crowding conditions (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Western blot data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "411712bd-457e-48ce-afb4-c238798fbc89",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C17",
+      "claim": "Large amounts of \u03b2CBP were widely detected in the intercellular space of the pronotum of gregarious locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that large amounts of \u03b2CBP were widely detected in the intercellular space of the pronotum of gregarious locusts, whereas \u03b2CBP was distributed very sporadically in the solitary locusts (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to immunohistochemistry data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "945a3cb0-f528-4fa8-a7bf-05028ee06da2",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C18",
+      "claim": "\u03b2CBP was distributed very sporadically in the solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that large amounts of \u03b2CBP were widely detected in the intercellular space of the pronotum of gregarious locusts, whereas \u03b2CBP was distributed very sporadically in the solitary locusts (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to immunohistochemistry data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "d9bfc75f-b2d6-4bb2-8818-416e83c37deb",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C19",
+      "claim": "The amount of \u03b2CBP protein in the pronotum of gregarious locusts was 39.5-fold higher than the corresponding amount in solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of \u03b2CBP protein in the pronotum of gregarious locusts was 39.5-fold higher than the corresponding amount in solitary locusts (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to quantified fluorescence intensity data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "72a15e71-ea5c-4939-9a05-b893c3f33521",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C20",
+      "claim": "The \u03b2-carotene content in the gregarious locusts was 2.8-fold higher than that in the solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-carotene content in the gregarious locusts was 2.8-fold higher than that in the solitary locusts (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to HPLC data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "2ea221bf-fa90-4d7f-b3b9-c4507bd97619",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C21",
+      "claim": "\u03b2CBP protein level and the associated \u03b2-carotene content are directly correlated with the degree of black coloration of the locust pronotum.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that \u03b2CBP protein level and the associated \u03b2-carotene content are directly correlated with the degree of black coloration of the locust pronotum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the combined data from protein and \u03b2-carotene measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "8d288408-003e-441a-a267-48013c298841",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C22",
+      "claim": "After injection of ds\u03b2CBP\u2013RNA and isolation treatment, the mRNA and protein levels of \u03b2CBP in the pronotum integument decreased by 99% and 85%, respectively, relative to the levels in dsGFP\u2013RNA-injected and isolated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "After injection of ds\u03b2CBP\u2013RNA and isolation treatment, the mRNA and protein levels of \u03b2CBP in the pronotum integument decreased by 99% and 85%, respectively, relative to the levels in dsGFP\u2013RNA-injected and isolated controls (Figure 3A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to qPCR and Western blot data shown in Figure 3A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "3104d20d-f396-4734-8a72-5def39b90f2a",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C23",
+      "claim": "The mRNA levels of \u03b2CBP in the tergum of the thorax and abdomen decreased by 98% relative to the levels in dsGFP\u2013RNA-injected and isolated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the mRNA levels of \u03b2CBP in the tergum of the thorax and abdomen decreased by 98% relative to the levels in dsGFP\u2013RNA-injected and isolated controls (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to qPCR data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "949314cf-f961-4d7d-95ff-cce2324574ed",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C24",
+      "claim": "The silencing effect of ds\u03b2CBP\u2013RNA resulted in an 80% decrease in the signal intensity of \u03b2CBP in the pronotum integuments of gregarious locusts relative to the corresponding intensity in the dsGFP\u2013RNA injected controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The silencing effect of ds\u03b2CBP\u2013RNA resulted in an 80% decrease in the signal intensity of \u03b2CBP in the pronotum integuments of gregarious locusts relative to the corresponding intensity in the dsGFP\u2013RNA injected controls (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to immunohistochemistry data shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "1366bb0b-678d-4435-820e-a1d3b64ba60f",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C25",
+      "claim": "The administration of ds\u03b2CBP significantly reduced the \u03b2-carotene content in the pronotum integuments from 104.8 \u03bcg/g to 74.3 \u03bcg/g.",
+      "claim_type": "EXPLICIT",
+      "source": "The administration of ds\u03b2CBP significantly reduced the \u03b2-carotene content in the pronotum integuments from 104.8 \u03bcg/g to 74.3 \u03bcg/g (*p < 0.05, Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to HPLC data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "75ffbdea-459b-4224-8a33-054f6e590177",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C26",
+      "claim": "48% of the nymphs injected with ds\u03b2CBP\u2013RNA and then isolated showed substantial lightening of the black pronotum.",
+      "claim_type": "EXPLICIT",
+      "source": "A body coloration assay revealed that after molting of 29 locusts, 48% of the nymphs injected with ds\u03b2CBP\u2013RNA and then isolated showed substantial lightening of the black pronotum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text describing the results of the body coloration assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "4f7d7cd9-5ca8-4e71-8d90-8b3a54b5858e",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C27",
+      "claim": "41% of the gregarious nymphs shifted to a complete green-colored body after ds\u03b2CBP\u2013RNA injection and isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 41% of the gregarious nymphs shifted to a complete green-colored body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text describing the results of the body coloration assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "f0026aa9-98fd-469e-96a8-00bdda1849c0",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C28",
+      "claim": "73% of the dsGFP\u2013RNA-injected gregarious nymphs treated with isolation retained an intense black body pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 73% of the dsGFP\u2013RNA-injected gregarious nymphs treated with isolation retained an intense black body pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text describing the control group results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "88000412-136f-4fcc-9196-7a7b819a77ed",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C29",
+      "claim": "Only 27% of the dsGFP-injected and isolated control locusts showed body color lightening.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 27% of the dsGFP-injected and isolated control locusts showed body color lightening (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 4A showing the effects of \u03b2CBP dsRNA treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "6bf05b1a-7a9a-4178-bc3a-8921550e817d",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C30",
+      "claim": "\u03b2CBP regulates the body color changes of gregarious and solitary locusts between black and green coloration.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the view that \u03b2CBP regulates the body color changes of gregarious and solitary locusts between black and green coloration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the RNAi knockdown experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "4f0a1410-63f4-4611-a8ed-fe0c0520998d",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C31",
+      "claim": "The mRNA and protein levels of \u03b2CBP significantly increased by 11.2- and 2.5-fold in the pronotum, respectively, after \u03b2-carotene feeding and crowding.",
+      "claim_type": "EXPLICIT",
+      "source": "The mRNA and protein levels of \u03b2CBP significantly increased by 11.2- and 2.5-fold in the pronotum, respectively, and increased by 2.3- and 2.1-fold in the tergum of the thorax and abdomen, respectively, relative to the corresponding levels in the regular diet-fed and crowded controls (Figure 3B,D and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to qPCR and Western blot data shown in Figure 3B, D and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "920cea64-471f-46d9-a964-09161713f15f",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C32",
+      "claim": "The signal intensity of \u03b2CBP increased by 22.7-fold in the pronotum integument cells of the solitary locusts after \u03b2-carotene feeding and crowding.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the signal intensity of \u03b2CBP increased by 22.7-fold in the pronotum integument cells of the solitary locusts after \u03b2-carotene feeding and crowding relative to the intensity in the regular diet-fed and crowded controls (Figure 3E and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to immunohistochemistry data shown in Figure 3E and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "a65724f5-3dbb-4e7e-bbe0-bb2080426a8e",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C33",
+      "claim": "The amount of \u03b2CBP\u2013\u03b2-carotene complex in the solitary integuments increased by 3.4-fold after \u03b2-carotene feeding and crowding.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HPLC analysis revealed that the amount of \u03b2CBP\u2013\u03b2-carotene complex in the solitary integuments increased by 3.4-fold after \u03b2-carotene feeding and crowding (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to HPLC data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "ee249457-7fe1-4e65-a5e0-85215c5f0dbd",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C34",
+      "claim": "47% of the solitary locusts completely shifted to the typical gregarious body color after feeding with \u03b2-carotene and crowding.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 47% of the solitary locusts completely shifted to the typical gregarious body color, and the pronota of 33% of the feeding locusts developed extensive black areas similar to the gregarious body color after feeding with \u03b2-carotene and crowding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text describing the results of the \u03b2-carotene feeding experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "17329b4d-3037-4f6c-b455-19a762d9ac77",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C35",
+      "claim": "33% of the feeding locusts developed extensive black areas similar to the gregarious body color after feeding with \u03b2-carotene and crowding.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 47% of the solitary locusts completely shifted to the typical gregarious body color, and the pronota of 33% of the feeding locusts developed extensive black areas similar to the gregarious body color after feeding with \u03b2-carotene and crowding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text describing the results of the \u03b2-carotene feeding experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "a72bdd3c-97c8-443d-9c95-adc69153ae25",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C36",
+      "claim": "87% of the locusts retained their green color in the regular diet and crowding treatment (control group).",
+      "claim_type": "EXPLICIT",
+      "source": "However, 87% of the locusts retained their green color in the regular diet and crowding treatment (control group) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 4B showing the effects of \u03b2-carotene feeding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "730b6468-f24d-4835-bd5c-0cecffbfc6c1",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C37",
+      "claim": "\u03b2CBP and \u03b2-carotene can jointly induce body color changes from green to black associated with phase transition in the locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, \u03b2CBP and \u03b2-carotene can jointly induce body color changes from green to black associated with phase transition in the locusts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the \u03b2-carotene feeding experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "6c0f1a71-67fd-4220-9450-02405945ba54",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C38",
+      "claim": "35.5% of the ds\u03b2CBP-injected nymphs pre-fed with \u03b2-carotene showed green body color.",
+      "claim_type": "EXPLICIT",
+      "source": "After molting, 35.5% of the ds\u03b2CBP-injected nymphs pre-fed with \u03b2-carotene showed green body color, whereas 15.6% of the green individuals in the dsGFP-injected group pre-fed with \u03b2-carotene did so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text describing the results of the rescue experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "5b110e1d-640d-4f58-b668-a6a3b6ac708c",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C39",
+      "claim": "15.6% of the green individuals in the dsGFP-injected group pre-fed with \u03b2-carotene showed green body color.",
+      "claim_type": "EXPLICIT",
+      "source": "After molting, 35.5% of the ds\u03b2CBP-injected nymphs pre-fed with \u03b2-carotene showed green body color, whereas 15.6% of the green individuals in the dsGFP-injected group pre-fed with \u03b2-carotene did so.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text describing the results of the rescue experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "872df51b-29b8-4500-aab7-1859be0eb413",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C40",
+      "claim": "The phenotype of black tergum individuals induced by \u03b2-carotene was rescued only by injection with ds\u03b2CBP-RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, the phenotype of black tergum individuals induced by \u03b2-carotene was rescued only by injection with ds\u03b2CBP-RNA (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 4C showing the rescue experiment results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "f7ae2cea-2d90-445d-9fb8-f505d5e02b60",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C41",
+      "claim": "\u03b2CBP acts with \u03b2-carotene to regulate the black body color of gregarious locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, \u03b2CBP acts with \u03b2-carotene to regulate the black body color of gregarious locusts, and \u03b2-carotene by oneself did not regulate the body color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the rescue experiment results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "219c69d8-f463-44b0-b2c7-1920360affe3",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C42",
+      "claim": "\u03b2-carotene by itself did not regulate the body color.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, \u03b2CBP acts with \u03b2-carotene to regulate the black body color of gregarious locusts, and \u03b2-carotene by oneself did not regulate the body color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the rescue experiment results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "d9fb3f69-7ef6-4596-93ae-954c6510d4a1",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C43",
+      "claim": "Immunoprecipitation of \u03b2-carotene-r\u03b2CBP formed a red complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation of \u03b2-carotene-r\u03b2CBP formed a red complex, whereas no red precipitate formed when \u03b2-carotene was added to bovine serum albumin (BSA) or when \u03b2-carotene in the absence of r\u03b2CBP was incubated in the binding buffer followed by immunoprecipitation (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 5A showing the pigment immunoprecipitation assay in vitro.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "8de9b195-2fe1-4f6d-bf56-74cb88f5ee63",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C44",
+      "claim": "No red precipitate formed when \u03b2-carotene was added to bovine serum albumin (BSA).",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation of \u03b2-carotene-r\u03b2CBP formed a red complex, whereas no red precipitate formed when \u03b2-carotene was added to bovine serum albumin (BSA) or when \u03b2-carotene in the absence of r\u03b2CBP was incubated in the binding buffer followed by immunoprecipitation (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 5A showing the pigment immunoprecipitation assay in vitro.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "1abdbe5c-7116-4918-b878-08eeb6b28612",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C45",
+      "claim": "No red precipitate formed when \u03b2-carotene in the absence of r\u03b2CBP was incubated in the binding buffer followed by immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation of \u03b2-carotene-r\u03b2CBP formed a red complex, whereas no red precipitate formed when \u03b2-carotene was added to bovine serum albumin (BSA) or when \u03b2-carotene in the absence of r\u03b2CBP was incubated in the binding buffer followed by immunoprecipitation (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 5A showing the pigment immunoprecipitation assay in vitro.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "b6695f1e-0aef-46c6-a13e-6289209490d9",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C46",
+      "claim": "The pigment immunoprecipitation assay in vivo showed an accumulation of red pigment in the precipitate of the integument when treated with anti-\u03b2CBP-immunoprecipitation compared with IgG-immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pigment immunoprecipitation assay in vivo also showed an accumulation of red pigment in the precipitate of the integument when treated with anti-\u03b2CBP-immunoprecipitation compared with IgG-immunoprecipitation (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to Figure 5B showing the pigment immunoprecipitation assay in vivo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "1c0bb362-549a-4c59-9bcd-d02892235006",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C47",
+      "claim": "The red pigment in the \u03b2CBP precipitant results from \u03b2-carotene.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we confirmed that the red pigment in the \u03b2CBP precipitant result from \u03b2-carotene by HPLC analysis (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to HPLC data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "b01616e0-d8f0-4592-b03f-ba674f36f6e0",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C48",
+      "claim": "\u03b2CBP directly binds with \u03b2-carotene in the pronotum integument to form the red complex, which directly contributes to the black pattern of the pronotum in gregarious locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide strong evidence that \u03b2CBP directly binds with \u03b2-carotene in the pronotum integument to form the red complex, which directly contributes to the black pattern of the pronotum in gregarious locusts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the immunoprecipitation assays.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "f63295ee-4f03-46b1-91de-fce8919b64ed",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C49",
+      "claim": "The gold particles were present mainly in the pigment granules of the pronotum integuments.",
+      "claim_type": "EXPLICIT",
+      "source": "The gold particles were present mainly in the pigment granules of the pronotum integuments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text describing the immunoelectron microscopy results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "e86d9fef-ff39-41c1-9a81-244a736f79eb",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C50",
+      "claim": "The average number of gold particles in the pigment granules from the pronotum integuments was 15.5-fold higher in the gregarious locusts than in the solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the average number of gold particles in the pigment granules from the pronotum integuments was 15.5-fold higher in the gregarious locusts than in the solitary locusts (Figure 5C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to immunoelectron microscopy data shown in Figure 5C and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "6a8146e1-8922-49cb-84e3-b1eb51a2c612",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C51",
+      "claim": "\u03b2CBP silencing coupled with isolation caused a severe deficiency of gold particles in the pigment granules of the gregarious locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, \u03b2CBP silencing coupled with isolation caused a severe deficiency of gold particles in the pigment granules of the gregarious locusts, indicating a substantial reduction in the \u03b2CBP protein\u2013pigment complex relative to the level in the dsGFP-injected and isolated controls (Figure 5D and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to immunoelectron microscopy data shown in Figure 5D and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "06a3200a-e2e9-4b2c-95e4-f50616239789",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C52",
+      "claim": "\u03b2-carotene intake coupled with crowding evidently increased the gold particles responsible for the \u03b2CBP production in the pigment granules of pronotum in the solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, \u03b2-carotene intake coupled with crowding evidently increased the gold particles responsible for the \u03b2CBP production in the pigment granules of pronotum in the solitary locusts, demonstrating a significant promotion of \u03b2CBP protein\u2013pigment complex accumulation compared with accumulation in the regular diet-fed and crowded controls (Figure 5E and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the text with reference to immunoelectron microscopy data shown in Figure 5E and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "77a8b227-33b1-4fc0-8fa6-5c2a7e94de52",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C53",
+      "claim": "The \u03b2CBP\u2013pigment complex is a key mediator of black formation in the pronotum integuments of gregarious locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the \u03b2CBP\u2013pigment complex is a key mediator of black formation in the pronotum integuments of gregarious locusts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the immunoelectron microscopy results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "8f5e91f3-9678-47db-b90b-42447b7466d5",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C54",
+      "claim": "The black\u2013brown pattern in the gregarious locusts resulted from the superposition or balancing effect of a red pigment on the green background of solitary locusts rather than complete melanogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The black\u2013brown pattern in the gregarious locusts resulted from the superposition or balancing effect of a red pigment on the green background of solitary locusts rather than complete melanogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a conclusion based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "b7468c19-fb2c-4295-b960-8eda30d0fda2",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C55",
+      "claim": "Crowding treatment increased the \u03b2CBP levels in the integuments and caused body color change in the solitary locusts by the binding of \u03b2CBP with \u03b2-carotenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Crowding treatment increased the \u03b2CBP levels in the integuments and caused body color change in the solitary locusts by the binding of \u03b2CBP with \u03b2-carotenes (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the Discussion section with reference to Figure 6 showing the model of body color change.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "7c7412c1-2394-41be-8aa6-f501daec2170",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C56",
+      "claim": "This finding of animal coloration corresponds precisely with the physically trichromatic rule.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding of animal coloration corresponds precisely with the physically trichromatic rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "91c3a8e4-8ff7-49dd-aa8a-2fde25244615",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C57",
+      "claim": "\u03b2CBP expression is not only positively correlated with the black color of the pronotum in gregarious locusts but also phase-related in response to population density changes.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that \u03b2CBP expression is not only positively correlated with the black color of the pronotum in gregarious locusts but also phase-related in response to population density changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a summary of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "dce3fbc7-5dcc-44a2-a7ff-88ca802aab37",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C58",
+      "claim": "The \u03b2CBP expression in solitary locusts was not induced by merely feeding with \u03b2-carotene without crowding treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2CBP expression in solitary locusts was not induced by merely feeding with \u03b2-carotene without crowding treatment (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the Discussion section with reference to Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "eb48d700-fea9-4020-86e4-135f4d7880fb",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C59",
+      "claim": "Population density of locusts acts as necessary and sufficient condition to drive the changes of body coloration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, population density of locusts acts as necessary and sufficient condition to drive the changes of body coloration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a conclusion based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "952764fe-4a3b-4ce4-b312-ee44f9c4d6bd",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C60",
+      "claim": "The melanocortin-1 receptor gene regulates melanin production associated with black hair and skin in human and mouse pigmentation responsed to ultraviolet-light.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the melanocortin-1 receptor gene regulates melanin production associated with black hair and skin in human and mouse pigmentation responsed to ultraviolet-light (D'Orazio et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with a citation to D'Orazio et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "143389c2-dfee-4fda-856d-51f7764b0aee",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C61",
+      "claim": "The major honest signaling of red carotenoids in Zebrafinch is thought to be the beak, colored in orange thanks to the ketolase activity encoded by the cytochrome P450 gene which was recruited from an ancestral function in retinal oil droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "The major honest signaling of red carotenoids in Zebrafinch (Mundy et al., 2016) is thought to be the beak, colored in orange thanks to the ketolase activity encoded by the cytochrome P450 gene which was recruited from an ancestral function in retinal oil droplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with a citation to Mundy et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "c96d8434-9fda-48f3-b095-c0bf7b631a78",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C62",
+      "claim": "Single \u03b2CBP or \u03b2-carotene cannot produce pigment deposition in the black tergum integuments of the locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, single \u03b2CBP or \u03b2-carotene cannot produce pigment deposition in the black tergum integuments of the locusts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a summary of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "921b7a5b-c929-4665-bfec-f74f3f1e4f02",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C63",
+      "claim": "\u03b2CBP only combine \u03b2-carotene to form red pigment complex for producing the black pattern of gregarious locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2CBP only combine \u03b2-carotene to form red pigment complex for producing the black pattern of gregarious locusts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a summary of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "67d5779b-844f-4cb2-aabf-6721e2fdc0c3",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C64",
+      "claim": "In the silkworm Bombyx mori, the yellow cocoon color is determined by the carotenoid-binding protein gene, which controls the uptake of carotenoids in the silk gland.",
+      "claim_type": "EXPLICIT",
+      "source": "In the silkworm Bombyx mori, the yellow cocoon color is determined by the carotenoid-binding protein gene, which controls the uptake of carotenoids in the silk gland (Sakudoh et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with a citation to Sakudoh et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "e1389af3-879e-4549-8502-604895d61dcf",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C65",
+      "claim": "Carotenoid-binding protein mutation produces colorless hemolymph and white cocoons.",
+      "claim_type": "EXPLICIT",
+      "source": "Carotenoid-binding protein mutation produces colorless hemolymph and white cocoons, indicating that carotenoid-binding protein plays a central role in cocoon color pigmentation (Sakudoh et al., 2007; Wang et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with citations to Sakudoh et al., 2007 and Wang et al., 2014a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "cabfa2a6-7ecf-44fc-96d7-50bf1eb16012",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C66",
+      "claim": "Mammals often obtain carotenoids by eating plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammals often obtain carotenoids by eating plants (Avalos and Carmen Lim\u00f3n, 2015; Bryon et al., 2017; Toews et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with citations to Avalos and Carmen Lim\u00f3n, 2015; Bryon et al., 2017; Toews et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "b59adb9e-8ba3-46ab-9507-47f555d31005",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C67",
+      "claim": "Once absorbed, carotenoids are transported by lipoproteins, which are homologs of CBP in insects, through the bloodstream to the target tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Once absorbed, carotenoids are transported by lipoproteins, which are homologs of CBP in insects, through the bloodstream to the target tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as general knowledge about carotenoid transport.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "61744424-8b59-4655-b47e-4de4177c7b10",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C68",
+      "claim": "The abundance and nature of lipoproteins limit the capacity to obtain carotenoids.",
+      "claim_type": "EXPLICIT",
+      "source": "In this process, the abundance and nature of lipoproteins limit the capacity to obtain carotenoids (McGraw, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with a citation to McGraw, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "2061b31d-4ecb-493e-816a-dae4b9b753e8",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C69",
+      "claim": "\u03b2-carotene-binding protein, as a key mediator of body color production, controls \u03b2-carotene content and absorption to produce red color, which is superposed on the background color of gregarious locus to yield the black pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, \u03b2-carotene-binding protein, as a key mediator of body color production, controls \u03b2-carotene content and absorption to produce red color, which is superposed on the background color of gregarious locus to yield the black pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a summary of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "d784e970-6f58-448c-a061-ee0c8bad579a",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C70",
+      "claim": "The black pattern of gregarious locusts is caused by the interaction and mixture of different pigments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the black pattern of gregarious locusts is caused by the interaction and mixture of different pigments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a summary of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "2a860f57-82d5-4fc7-a6ed-fbc2a430c4fc",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C71",
+      "claim": "This pigment interaction has a colored palette effect that results in black coloration due to the accumulation of red color \u03b2-carotene pigments in the presence of blue and yellow pigments.",
+      "claim_type": "EXPLICIT",
+      "source": "This pigment interaction has a colored palette effect that results in black coloration due to the accumulation of red color \u03b2-carotene pigments in the presence of blue and yellow pigments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "3d4d6932-b018-4bc7-bd43-9401defca897",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C72",
+      "claim": "The disappearance of the red pigment in the gregarious locusts led to the emergence of green color, which is the typical body color of solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "The disappearance of the red pigment in the gregarious locusts led to the emergence of green color, which is the typical body color of solitary locusts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "c4961107-e7cd-4727-b725-ca09a4f98cba",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C73",
+      "claim": "In Heliconius erato and Agraulis vanillae, optix is required for the red color pattern and coordinates between the ommochrome (orange and red) and melanin (black and gray) pigment types.",
+      "claim_type": "EXPLICIT",
+      "source": "In Heliconius erato and Agraulis vanillae, optix is required for the red color pattern and coordinates between the ommochrome (orange and red) and melanin (black and gray) pigment types (Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with a citation to Zhang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "31972d84-eede-4536-8b58-872062527887",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C74",
+      "claim": "Parrots acquire their colors through regulatory changes that drive the high expression of MuPKS in feather epithelia, which appear green when the blue and yellow pigments are present.",
+      "claim_type": "EXPLICIT",
+      "source": "Parrots acquire their colors through regulatory changes that drive the high expression of MuPKS in feather epithelia, which appear green when the blue and yellow pigments are present (Cooke et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with a citation to Cooke et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "4373b5ab-d5cd-4bc0-9eff-af10660063bd",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C75",
+      "claim": "The green color of the integument in two species of locusts, the migratory locust and desert locust (Schistocerca gregaria) is obtained from a mixture of blue biliverdin pigment and yellow carotenoids.",
+      "claim_type": "EXPLICIT",
+      "source": "The green color of the integument in two species of locusts, the migratory locust and desert locust (Schistocerca gregaria) is obtained from a mixture of blue biliverdin pigment and yellow carotenoids (Goodwin, 1952; Goodwin and Srisukh, 1951).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with citations to Goodwin, 1952 and Goodwin and Srisukh, 1951.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "3ae3f828-0d08-4fef-af43-e03417fdb008",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C76",
+      "claim": "Carotenoid binding protein plays a key role in the yellow cocoon pigmentation by binding with yellow carotenoids.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, carotenoid binding protein plays a key role in the yellow cocoon pigmentation by binding with yellow carotenoids (Tabunoki et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with a citation to Tabunoki et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "7ce7455a-f26c-4f45-84dd-555c09e3f660",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C77",
+      "claim": "The expression levels of a biliverdin-binding protein and a carotenoid-binding protein in the pronotum integument were not significantly different between the gregarious and solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the expression levels of a biliverdin-binding protein and a carotenoid-binding protein in the pronotum integument were not significantly different between the gregarious and solitary locusts (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in the Discussion section with reference to Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "e0c7644c-4984-4cfd-847f-7b9a7d874870",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C78",
+      "claim": "The contents of blue biliverdin and yellow carotenoid are the same in gregarious and solitary locusts.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the expression levels of a biliverdin-binding protein and a carotenoid-binding protein in the pronotum integument were not significantly different between the gregarious and solitary locusts (Figure 6\u2014figure supplement 1), suggesting that the contents of blue biliverdin and yellow carotenoid are the same in gregarious and solitary locusts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as an inference from the expression data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "35b0983e-c40d-427f-998b-823de8fdf927",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C79",
+      "claim": "The change from typical gregarious-phased coloration (black) to solitary-phased coloration (green) is dependent on the extent of red \u03b2-carotene bound to \u03b2CBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest a colored palette mechanism of body color change, with the change from typical gregarious-phased coloration (black) to solitary-phased coloration (green) is dependent on the extent of red \u03b2-carotene bound to \u03b2CBP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a conclusion based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "269b1780-374e-4019-a021-bcba7c1b17e3",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C80",
+      "claim": "The color polyphenism of gregarious and solitary locusts reflects an adaptive strategy to respond to changes in population density and the natural environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The color polyphenism of gregarious and solitary locusts reflects an adaptive strategy to respond to changes in population density and the natural environment (Sim\u00f5es et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with a citation to Sim\u00f5es et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "e20e0108-44c2-4ab6-af8c-08aa9b22d1da",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C81",
+      "claim": "The multi-coloured pattern of black back with a contrasting brown ventral color in gregarious locusts functioned as effective warning coloration signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The multi-coloured pattern of black back with a contrasting brown ventral color in gregarious locusts functioned as effective warning coloration signal (Sword et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with a citation to Sword et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "ac154e3e-9f33-4736-bd11-61a9624aee5e",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C82",
+      "claim": "The multi-coloured pattern provides mutual recognition to conspecifics and warning signal against predators in swarms.",
+      "claim_type": "EXPLICIT",
+      "source": "The multi-coloured pattern of black back with a contrasting brown ventral color in gregarious locusts functioned as effective warning coloration signal (Sword et al., 2000), providing mutual recognition to conspecifics and warning signal against predators in swarms (Sword, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with citations to Sword et al., 2000 and Sword, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "277612a7-e1b3-4c56-ad60-a681918d6f44",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C83",
+      "claim": "Vertebrate predators more readily learn to avoid conspicuous prey.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon is consistent with other studies, showing that vertebrate predators more readily learn to avoid conspicuous prey (Guilford and Cuthill, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with a citation to Guilford and Cuthill, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "3333f99f-3a41-4474-a3b7-008d1d6883c4",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C84",
+      "claim": "The expression of density-dependent warning coloration can result in a substantial decrease in predation on locusts in high-density population.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the expression of density-dependent warning coloration can result in a substantial decrease in predation on locusts in high-density population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as an inference based on the warning coloration function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "f53ebf6f-328e-43b5-b5a2-4de10bc9d557",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C85",
+      "claim": "The uniform cryptic color of solitary locusts may reduce the likelihood of detection and risk of predation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the uniform cryptic color of solitary locusts may reduce the likelihood of detection and risk of predation, similar to the role of crypsis in other organisms (Caro, 2009; Hemmi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with citations to Caro, 2009 and Hemmi et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "3880c81c-f8a8-407a-a1d1-eb904d45e6d6",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C86",
+      "claim": "Animal coloration is a prominent phenotypical feature that serves multiple important functions, including social signaling, antipredator defense, parasitic exploitation, thermoregulation, and protection from ultraviolet light, microbes, and abrasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal coloration is a prominent phenotypical feature that serves multiple important functions, including social signaling, antipredator defense, parasitic exploitation, thermoregulation, and protection from ultraviolet light, microbes, and abrasion (Bell et al., 2017; Caro et al., 2016; Cuthill et al., 2017; Duarte et al., 2017; Duarte et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section with citations to Bell et al., 2017; Caro et al., 2016; Cuthill et al., 2017; Duarte et al., 2017; Duarte et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "b0a721ca-b3a7-480d-a41b-6e11e962a5a5",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C87",
+      "claim": "The mechanisms of color variation are highly conserved and can offer insights into the adaptive evolution of gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the mechanisms of color variation are highly conserved and can offer insights into the adaptive evolution of gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a general conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "5808077e-2208-482f-b0a5-878d6eaa9221",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C88",
+      "claim": "The red \u03b2CBP\u2013\u03b2-carotene pigment complex can act as a switch to coordinate between black and green coloration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows a new 'palette effect' mechanism by which the red \u03b2CBP\u2013\u03b2-carotene pigment complex can act as a switch to coordinate between black and green coloration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a summary of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "6a1f131e-097d-4da3-b437-af18f0d654fd",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C89",
+      "claim": "This mechanism of color pattern change may be evolutionarily conserved among multiple species.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism of color pattern change may be evolutionarily conserved among multiple species, although additional functional work is needed to assess this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Discussion section as a speculation about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "6eb8374f-ff98-434a-a682-11e3989d5fd2",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C90",
+      "claim": "Gregarious nymphs were reared in large, well-ventilated cages (400 insects per case).",
+      "claim_type": "EXPLICIT",
+      "source": "Gregarious nymphs were reared in large, well-ventilated cages (400 insects per case).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section describing the insect rearing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "79514521-b9f1-4884-8e0e-da4bb08d1b4a",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C91",
+      "claim": "Solitary nymphs were cultured alone in white metal boxes supplied with charcoal-filtered compressed air.",
+      "claim_type": "EXPLICIT",
+      "source": "Solitary nymphs were cultured alone in white metal boxes supplied with charcoal-filtered compressed air.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section describing the insect rearing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "5a9bf6ea-b2ae-430d-ae8a-aac88ebf34d7",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C92",
+      "claim": "Both colonies were reared under a 14:10 light: dark photo regime at 30 \u00b1 2\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Both colonies were reared under a 14:10 light: dark photo regime at 30 \u00b1 2\u00b0C (Kang et al., 2004; Yang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section describing the insect rearing conditions with citations to Kang et al., 2004 and Yang et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "66f86bac-a203-4283-8228-8be46bc84a82",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C93",
+      "claim": "The newly hatched first instar nymphs are white but turns black in 1\u20132 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The newly hatched first instar nymphs are white but turns black in 1\u20132 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section describing the developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "38ad6a26-d222-4ad1-8d97-650b112b1735",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C94",
+      "claim": "The head of second instar nymphs is larger and pale colour pattern is conspicuous.",
+      "claim_type": "EXPLICIT",
+      "source": "The head of second instar nymphs is larger and pale colour pattern is conspicuous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section describing the developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "ebaae974-563c-4113-bd91-e1f2a8322e88",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C95",
+      "claim": "At the third instar nymph stage, two pairs of wing buds projects on each side of thorax.",
+      "claim_type": "EXPLICIT",
+      "source": "At the third instar nymph stage, two pairs of wing buds projects on each side of thorax.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section describing the developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "6fce58ce-060e-403e-abef-3ea4f77a6478",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C96",
+      "claim": "The color of fourth instar nymphs is conspicuously black.",
+      "claim_type": "EXPLICIT",
+      "source": "The color of fourth instar nymphs is conspicuously black.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section describing the developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "6eb8c534-9a87-4aa0-9990-e2916c1d4c95",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C97",
+      "claim": "Upregulation of \u03b2-carotene-binding protein promotes the accumulation of red pigment, which added to the green color palette present in solitary locusts changes it from green to black.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that upregulation of \u03b2-carotene-binding protein promotes the accumulation of red pigment, which added to the green color palette present in solitary locusts changes it from green to black",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Abstract as a summary of the main findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "f8fe408e-d73c-449a-9d90-6e0f88339ed9",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C98",
+      "claim": "Downregulation of \u03b2-carotene-binding protein led to the reverse, changing the color of gregarious locusts from black to green.",
+      "claim_type": "EXPLICIT",
+      "source": "and that downregulation of this protein led to the reverse, changing the color of gregarious locusts from black to green.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Abstract as a summary of the main findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "d8dcc473-9b1b-4e87-8bd0-6dc3c91bbd9a",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C99",
+      "claim": "Color changes of locusts are dependent on variation in the red \u03b2-carotene pigment binding to \u03b2CBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide insight that color changes of locusts are dependent on variation in the red \u03b2-carotene pigment binding to \u03b2CBP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Abstract as a summary of the main findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "51cf5351-0d20-48f3-a939-f2bc19ba1704",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "claim_id": "C100",
+      "claim": "This finding of animal coloration corresponds with trichromatic theory of color vision.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding of animal coloration corresponds with trichromatic theory of color vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Abstract as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c5a4feb5-fa59-4a4b-95b5-783913ff664d",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Gregarious and solitary locusts display distinct body coloration phenotypes, with gregarious locusts exhibiting intense black patterns with ventral brown color and solitary locusts showing uniform green coloration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are directly supported by visual evidence in Figure 1A and explicit textual descriptions. These are well-established phenotypic observations that form the foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "98a5c44a-6d24-47b2-8bbe-a998ecb9da0f",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Transcriptome analysis identified 1653 differentially expressed genes (DEGs) between gregarious and solitary locusts, with 430 being protein-coding genes, of which 68 are involved in pathways associated with animal coloration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 are supported by RNA-seq data with appropriate figures (Figure 1\u2014figure supplement 1A-B, Figure 1B). The transcriptome approach and gene categorization appear methodologically sound with n=2 biological replicates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "687e7709-bbf8-4157-88c7-317930413588",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "\u03b2CBP was identified as a key gene regulating body color transition, with expression predominantly in integument tissue, higher in pronotum than other body segments in gregarious locusts, increasing with developmental stage in gregarious but not solitary locusts, and positively correlated with black body coloration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 are supported by multiple lines of evidence including RNAi knockdown (C6, Figure 1D showing 60% color change), tissue-specific qRT-PCR (C7-C10, Figures 2A-B), with appropriate statistical analyses. The correlation claim (C11) is a reasonable inference from the developmental and spatial expression patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "9d187ebb-d5ea-41c0-bf47-fa266128e0a6",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "\u03b2CBP expression is density-dependent, with transcript and protein levels significantly higher in gregarious than solitary locusts, decreasing upon isolation of gregarious locusts, and increasing upon crowding of solitary locusts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 are supported by qPCR and Western blot data (Figures 2C-D) showing phase-related expression changes. The experimental design appropriately tests density-dependent regulation with isolation (IG) and crowding (CS) treatments, though sample sizes and statistical details could be more explicit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "750d427f-af66-40f8-b4f8-0ef3dd12f99e",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "\u03b2CBP protein is widely distributed in the intercellular space of gregarious locust pronotum (39.5-fold higher than solitary), with \u03b2-carotene content 2.8-fold higher in gregarious locusts, suggesting direct correlation between \u03b2CBP protein level, \u03b2-carotene content, and black coloration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 are supported by immunohistochemistry (Figure 2E-G) and HPLC analysis (Figure 2H). The quantification shows substantial differences between phases. However, the correlation claim (C21) is inferential and would benefit from direct mechanistic demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "02206257-e081-466f-9d8f-a13959ffddb1",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNAi-mediated knockdown of \u03b2CBP in gregarious locusts coupled with isolation resulted in 99% mRNA and 85% protein reduction, 80% decrease in immunofluorescence signal, reduced \u03b2-carotene content, and caused 48% of nymphs to show substantial lightening and 41% to shift to complete green coloration, compared to 27% color change in controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C30 are supported by comprehensive molecular (qPCR, Western blot, immunohistochemistry, HPLC) and phenotypic data (Figures 3A,C,E,F,H and 4A). The RNAi efficiency is well-documented, and the phenotypic outcomes show clear differences from controls (73% vs 27% retention of black color). Sample size of n=29 for phenotypic assay is adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "f93118bc-db7d-459a-96a4-6bda32d538fd",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Feeding solitary locusts with \u03b2-carotene and crowding increased \u03b2CBP mRNA (11.2-fold in pronotum) and protein (2.5-fold) levels, increased immunofluorescence signal (22.7-fold), increased \u03b2CBP-\u03b2-carotene complex (3.4-fold), and caused 47% to completely shift to gregarious body color and 33% to develop extensive black areas, compared to 87% retaining green color in controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 are supported by molecular data (Figures 3B,D,E,G,H) and phenotypic outcomes (Figure 4B). The complementary gain-of-function experiment strengthens the causal link between \u03b2CBP and body color. However, the claim that both \u03b2CBP and \u03b2-carotene are required (C37) needs additional controls separating crowding from feeding effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "e6385ef8-4fe2-4a6c-abbc-1fc7f6a7c93a",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A rescue experiment showed that \u03b2CBP knockdown in \u03b2-carotene-fed solitary locusts resulted in 35.5% showing green body color versus 15.6% in controls, demonstrating that \u03b2CBP acts with \u03b2-carotene to regulate black body color and that \u03b2-carotene alone does not regulate body color.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by the rescue experiment data (Figure 4C). This experiment provides critical evidence that \u03b2CBP is necessary for \u03b2-carotene-induced color change. However, the difference between treatment (35.5%) and control (15.6%) is modest, and statistical significance is not explicitly stated. The conclusion (C42) is reasonable but could be strengthened.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "ca1e6fe8-9640-4eb9-969c-d7c827394f26",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Immunoprecipitation assays demonstrated that \u03b2CBP directly binds with \u03b2-carotene to form a red complex both in vitro and in vivo, with no red precipitate forming with BSA or in the absence of r\u03b2CBP, and HPLC confirming the red pigment is \u03b2-carotene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 are supported by in vitro and in vivo immunoprecipitation experiments (Figures 5A-B) with appropriate negative controls (BSA, no protein, IgG) and HPLC confirmation (Figure 5\u2014figure supplement 1). This provides direct biochemical evidence for \u03b2CBP-\u03b2-carotene interaction and complex formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "4fdd6983-56b6-46ef-bc95-faee266ad270",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Immunoelectron microscopy showed \u03b2CBP localized mainly in pigment granules, with 15.5-fold more gold particles in gregarious than solitary locusts, severe deficiency after \u03b2CBP silencing in gregarious locusts, and evident increase after \u03b2-carotene feeding in solitary locusts, indicating the \u03b2CBP-pigment complex is a key mediator of black formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by immunoelectron microscopy data (Figures 5C-H) with quantification from three biological replicates. The subcellular localization to pigment granules and the manipulation experiments (RNAi and feeding) provide strong evidence for the mechanistic role of the \u03b2CBP-pigment complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "bd2e38ab-5d0e-47f8-b9d4-56cbe177953f",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The black-brown pattern in gregarious locusts results from superposition of red pigment on the green background rather than complete melanogenesis, with crowding treatment increasing \u03b2CBP levels and causing body color change through \u03b2CBP-\u03b2-carotene binding, corresponding with trichromatic theory, and population density acting as necessary and sufficient condition for body coloration changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 represent the authors' mechanistic interpretation supported by the collective experimental evidence. The superposition model (C54) is consistent with all data. The density-dependence claims (C57-C59) are supported by isolation/crowding experiments and the observation that \u03b2-carotene feeding alone doesn't induce \u03b2CBP (C58, Figure 3\u2014figure supplement 3). The trichromatic correspondence (C56) is a conceptual interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors contextualize their findings within the broader literature on animal coloration mechanisms, citing examples from mammals, birds, butterflies, silkworms, and other locusts, and discussing the adaptive significance of color polyphenism in response to population density and predation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C86 are citation-based claims from the Discussion section that appropriately contextualize the findings within existing literature. These are properly attributed to cited sources and represent accurate summaries of prior work based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "26384ba2-00f7-4d50-a36f-ab1eed60f36f",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose a 'palette effect' mechanism where single \u03b2CBP or \u03b2-carotene cannot produce pigment deposition, but together they form a red pigment complex that, when added to blue and yellow pigments present in both phases, produces black coloration, with color change dependent on the extent of red \u03b2-carotene bound to \u03b2CBP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C88 represent the authors' mechanistic model supported by: (1) RNAi and feeding experiments showing both components are required, (2) immunoprecipitation showing complex formation, (3) expression data for biliverdin-binding and carotenoid-binding proteins showing no difference between phases (C77-C78), supporting that blue/yellow pigments are constant. The palette model is a reasonable synthesis of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "06023420-b6f8-44b5-b126-b303132d3756",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Expression levels of biliverdin-binding protein and carotenoid-binding protein in the pronotum integument were not significantly different between gregarious and solitary locusts, suggesting blue biliverdin and yellow carotenoid contents are the same in both phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 are supported by qPCR data (Figure 6\u2014figure supplement 1) showing no significant difference in expression of these genes between phases. This is critical evidence supporting the palette model, as it indicates the green background (blue + yellow) is constant and only the red component varies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "b16b52bd-4451-403c-a09a-7461ccc1e6e1",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors discuss the adaptive and evolutionary implications of their findings, suggesting density-dependent warning coloration decreases predation in high-density populations, cryptic coloration reduces predation risk in solitary locusts, and the mechanism may be evolutionarily conserved, though additional work is needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C89 are speculative interpretations about adaptive significance and evolutionary conservation. While C84-C85 are reasonable inferences based on cited literature about predation and coloration, they are not directly tested in this study. C89 explicitly acknowledges the need for additional work, making this appropriately cautious speculation rather than demonstrated fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "80b18fbb-6d04-41e2-80a7-90f9642480d2",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors describe their experimental methods for rearing gregarious and solitary locust colonies and characterizing developmental stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C96 are methodological descriptions from the Materials and Methods section. These are straightforward descriptions of experimental procedures with appropriate citations (C92) and are consistent with standard practices for locust phase research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    },
+    {
+      "id": "bff4d64e-a741-422c-b858-7a708bcd8035",
+      "content_id": "b6ba5567-f5e2-4c87-886d-2478ae8359c3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The abstract summarizes that upregulation of \u03b2-carotene-binding protein promotes red pigment accumulation changing color from green to black, downregulation causes the reverse, color changes depend on variation in red \u03b2-carotene pigment binding to \u03b2CBP, and this corresponds with trichromatic theory of color vision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C100 are abstract summaries of the main findings. These are supported by the collective experimental evidence presented in the paper, including RNAi knockdown (C98), \u03b2-carotene feeding (C97), and the mechanistic studies (C99). The trichromatic correspondence (C100) is a conceptual interpretation of the palette mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:59:11.624227Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4bf2ae73-6ff5-4492-90bd-da46f1c9b91b",
+      "result_id": "c5a4feb5-fa59-4a4b-95b5-783913ff664d"
+    },
+    {
+      "claim_id": "370f9751-b462-469d-97e1-078d544af0c3",
+      "result_id": "c5a4feb5-fa59-4a4b-95b5-783913ff664d"
+    },
+    {
+      "claim_id": "f7d83d4d-1b6f-49de-8099-632fa89b5d87",
+      "result_id": "98a5c44a-6d24-47b2-8bbe-a998ecb9da0f"
+    },
+    {
+      "claim_id": "65c01200-2f02-4972-b1c5-f3a02909c62c",
+      "result_id": "98a5c44a-6d24-47b2-8bbe-a998ecb9da0f"
+    },
+    {
+      "claim_id": "9a87a85d-1e85-4de9-bbc1-80ab63d88d11",
+      "result_id": "98a5c44a-6d24-47b2-8bbe-a998ecb9da0f"
+    },
+    {
+      "claim_id": "10d55723-70f1-4301-83ee-4a5b2d17d340",
+      "result_id": "687e7709-bbf8-4157-88c7-317930413588"
+    },
+    {
+      "claim_id": "2e2ba7fd-cfc1-4fef-95da-891a24b17ccf",
+      "result_id": "687e7709-bbf8-4157-88c7-317930413588"
+    },
+    {
+      "claim_id": "bb72af6b-cff9-467d-8f31-5c3f3aecc187",
+      "result_id": "687e7709-bbf8-4157-88c7-317930413588"
+    },
+    {
+      "claim_id": "d870fafb-fa20-46ab-989e-91830c779146",
+      "result_id": "687e7709-bbf8-4157-88c7-317930413588"
+    },
+    {
+      "claim_id": "4e9a3473-d684-43e2-8bb6-d1eeb3876706",
+      "result_id": "687e7709-bbf8-4157-88c7-317930413588"
+    },
+    {
+      "claim_id": "5b8178ad-17fe-495d-98af-2ae28b9c0692",
+      "result_id": "687e7709-bbf8-4157-88c7-317930413588"
+    },
+    {
+      "claim_id": "a1e59f4e-2b49-4807-b189-ad31db31e3ab",
+      "result_id": "9d187ebb-d5ea-41c0-bf47-fa266128e0a6"
+    },
+    {
+      "claim_id": "75c4a5d2-ae34-4709-9a27-5c9bbd844257",
+      "result_id": "9d187ebb-d5ea-41c0-bf47-fa266128e0a6"
+    },
+    {
+      "claim_id": "180adb48-a81f-4276-b42c-a831d34c6b7c",
+      "result_id": "9d187ebb-d5ea-41c0-bf47-fa266128e0a6"
+    },
+    {
+      "claim_id": "4f6e2dd3-0f6e-4661-9cfe-0b23d67743d8",
+      "result_id": "9d187ebb-d5ea-41c0-bf47-fa266128e0a6"
+    },
+    {
+      "claim_id": "4ba4bd7b-5127-4218-9ed1-0764d05c2b55",
+      "result_id": "9d187ebb-d5ea-41c0-bf47-fa266128e0a6"
+    },
+    {
+      "claim_id": "411712bd-457e-48ce-afb4-c238798fbc89",
+      "result_id": "750d427f-af66-40f8-b4f8-0ef3dd12f99e"
+    },
+    {
+      "claim_id": "945a3cb0-f528-4fa8-a7bf-05028ee06da2",
+      "result_id": "750d427f-af66-40f8-b4f8-0ef3dd12f99e"
+    },
+    {
+      "claim_id": "d9bfc75f-b2d6-4bb2-8818-416e83c37deb",
+      "result_id": "750d427f-af66-40f8-b4f8-0ef3dd12f99e"
+    },
+    {
+      "claim_id": "72a15e71-ea5c-4939-9a05-b893c3f33521",
+      "result_id": "750d427f-af66-40f8-b4f8-0ef3dd12f99e"
+    },
+    {
+      "claim_id": "2ea221bf-fa90-4d7f-b3b9-c4507bd97619",
+      "result_id": "750d427f-af66-40f8-b4f8-0ef3dd12f99e"
+    },
+    {
+      "claim_id": "8d288408-003e-441a-a267-48013c298841",
+      "result_id": "02206257-e081-466f-9d8f-a13959ffddb1"
+    },
+    {
+      "claim_id": "3104d20d-f396-4734-8a72-5def39b90f2a",
+      "result_id": "02206257-e081-466f-9d8f-a13959ffddb1"
+    },
+    {
+      "claim_id": "949314cf-f961-4d7d-95ff-cce2324574ed",
+      "result_id": "02206257-e081-466f-9d8f-a13959ffddb1"
+    },
+    {
+      "claim_id": "1366bb0b-678d-4435-820e-a1d3b64ba60f",
+      "result_id": "02206257-e081-466f-9d8f-a13959ffddb1"
+    },
+    {
+      "claim_id": "75ffbdea-459b-4224-8a33-054f6e590177",
+      "result_id": "02206257-e081-466f-9d8f-a13959ffddb1"
+    },
+    {
+      "claim_id": "4f7d7cd9-5ca8-4e71-8d90-8b3a54b5858e",
+      "result_id": "02206257-e081-466f-9d8f-a13959ffddb1"
+    },
+    {
+      "claim_id": "f0026aa9-98fd-469e-96a8-00bdda1849c0",
+      "result_id": "02206257-e081-466f-9d8f-a13959ffddb1"
+    },
+    {
+      "claim_id": "88000412-136f-4fcc-9196-7a7b819a77ed",
+      "result_id": "02206257-e081-466f-9d8f-a13959ffddb1"
+    },
+    {
+      "claim_id": "6bf05b1a-7a9a-4178-bc3a-8921550e817d",
+      "result_id": "02206257-e081-466f-9d8f-a13959ffddb1"
+    },
+    {
+      "claim_id": "4f0a1410-63f4-4611-a8ed-fe0c0520998d",
+      "result_id": "f93118bc-db7d-459a-96a4-6bda32d538fd"
+    },
+    {
+      "claim_id": "920cea64-471f-46d9-a964-09161713f15f",
+      "result_id": "f93118bc-db7d-459a-96a4-6bda32d538fd"
+    },
+    {
+      "claim_id": "a65724f5-3dbb-4e7e-bbe0-bb2080426a8e",
+      "result_id": "f93118bc-db7d-459a-96a4-6bda32d538fd"
+    },
+    {
+      "claim_id": "ee249457-7fe1-4e65-a5e0-85215c5f0dbd",
+      "result_id": "f93118bc-db7d-459a-96a4-6bda32d538fd"
+    },
+    {
+      "claim_id": "17329b4d-3037-4f6c-b455-19a762d9ac77",
+      "result_id": "f93118bc-db7d-459a-96a4-6bda32d538fd"
+    },
+    {
+      "claim_id": "a72bdd3c-97c8-443d-9c95-adc69153ae25",
+      "result_id": "f93118bc-db7d-459a-96a4-6bda32d538fd"
+    },
+    {
+      "claim_id": "730b6468-f24d-4835-bd5c-0cecffbfc6c1",
+      "result_id": "f93118bc-db7d-459a-96a4-6bda32d538fd"
+    },
+    {
+      "claim_id": "6c0f1a71-67fd-4220-9450-02405945ba54",
+      "result_id": "e6385ef8-4fe2-4a6c-abbc-1fc7f6a7c93a"
+    },
+    {
+      "claim_id": "5b110e1d-640d-4f58-b668-a6a3b6ac708c",
+      "result_id": "e6385ef8-4fe2-4a6c-abbc-1fc7f6a7c93a"
+    },
+    {
+      "claim_id": "872df51b-29b8-4500-aab7-1859be0eb413",
+      "result_id": "e6385ef8-4fe2-4a6c-abbc-1fc7f6a7c93a"
+    },
+    {
+      "claim_id": "f7ae2cea-2d90-445d-9fb8-f505d5e02b60",
+      "result_id": "e6385ef8-4fe2-4a6c-abbc-1fc7f6a7c93a"
+    },
+    {
+      "claim_id": "219c69d8-f463-44b0-b2c7-1920360affe3",
+      "result_id": "e6385ef8-4fe2-4a6c-abbc-1fc7f6a7c93a"
+    },
+    {
+      "claim_id": "d9fb3f69-7ef6-4596-93ae-954c6510d4a1",
+      "result_id": "ca1e6fe8-9640-4eb9-969c-d7c827394f26"
+    },
+    {
+      "claim_id": "8de9b195-2fe1-4f6d-bf56-74cb88f5ee63",
+      "result_id": "ca1e6fe8-9640-4eb9-969c-d7c827394f26"
+    },
+    {
+      "claim_id": "1abdbe5c-7116-4918-b878-08eeb6b28612",
+      "result_id": "ca1e6fe8-9640-4eb9-969c-d7c827394f26"
+    },
+    {
+      "claim_id": "b6695f1e-0aef-46c6-a13e-6289209490d9",
+      "result_id": "ca1e6fe8-9640-4eb9-969c-d7c827394f26"
+    },
+    {
+      "claim_id": "1c0bb362-549a-4c59-9bcd-d02892235006",
+      "result_id": "ca1e6fe8-9640-4eb9-969c-d7c827394f26"
+    },
+    {
+      "claim_id": "b01616e0-d8f0-4592-b03f-ba674f36f6e0",
+      "result_id": "ca1e6fe8-9640-4eb9-969c-d7c827394f26"
+    },
+    {
+      "claim_id": "f63295ee-4f03-46b1-91de-fce8919b64ed",
+      "result_id": "4fdd6983-56b6-46ef-bc95-faee266ad270"
+    },
+    {
+      "claim_id": "e86d9fef-ff39-41c1-9a81-244a736f79eb",
+      "result_id": "4fdd6983-56b6-46ef-bc95-faee266ad270"
+    },
+    {
+      "claim_id": "6a8146e1-8922-49cb-84e3-b1eb51a2c612",
+      "result_id": "4fdd6983-56b6-46ef-bc95-faee266ad270"
+    },
+    {
+      "claim_id": "06a3200a-e2e9-4b2c-95e4-f50616239789",
+      "result_id": "4fdd6983-56b6-46ef-bc95-faee266ad270"
+    },
+    {
+      "claim_id": "77a8b227-33b1-4fc0-8fa6-5c2a7e94de52",
+      "result_id": "4fdd6983-56b6-46ef-bc95-faee266ad270"
+    },
+    {
+      "claim_id": "8f5e91f3-9678-47db-b90b-42447b7466d5",
+      "result_id": "bd2e38ab-5d0e-47f8-b9d4-56cbe177953f"
+    },
+    {
+      "claim_id": "b7468c19-fb2c-4295-b960-8eda30d0fda2",
+      "result_id": "bd2e38ab-5d0e-47f8-b9d4-56cbe177953f"
+    },
+    {
+      "claim_id": "7c7412c1-2394-41be-8aa6-f501daec2170",
+      "result_id": "bd2e38ab-5d0e-47f8-b9d4-56cbe177953f"
+    },
+    {
+      "claim_id": "91c3a8e4-8ff7-49dd-aa8a-2fde25244615",
+      "result_id": "bd2e38ab-5d0e-47f8-b9d4-56cbe177953f"
+    },
+    {
+      "claim_id": "dce3fbc7-5dcc-44a2-a7ff-88ca802aab37",
+      "result_id": "bd2e38ab-5d0e-47f8-b9d4-56cbe177953f"
+    },
+    {
+      "claim_id": "eb48d700-fea9-4020-86e4-135f4d7880fb",
+      "result_id": "bd2e38ab-5d0e-47f8-b9d4-56cbe177953f"
+    },
+    {
+      "claim_id": "952764fe-4a3b-4ce4-b312-ee44f9c4d6bd",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "143389c2-dfee-4fda-856d-51f7764b0aee",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "67d5779b-844f-4cb2-aabf-6721e2fdc0c3",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "e1389af3-879e-4549-8502-604895d61dcf",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "cabfa2a6-7ecf-44fc-96d7-50bf1eb16012",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "b59adb9e-8ba3-46ab-9507-47f555d31005",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "61744424-8b59-4655-b47e-4de4177c7b10",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "c4961107-e7cd-4727-b725-ca09a4f98cba",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "31972d84-eede-4536-8b58-872062527887",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "4373b5ab-d5cd-4bc0-9eff-af10660063bd",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "3ae3f828-0d08-4fef-af43-e03417fdb008",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "269b1780-374e-4019-a021-bcba7c1b17e3",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "e20e0108-44c2-4ab6-af8c-08aa9b22d1da",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "ac154e3e-9f33-4736-bd11-61a9624aee5e",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "277612a7-e1b3-4c56-ad60-a681918d6f44",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "3880c81c-f8a8-407a-a1d1-eb904d45e6d6",
+      "result_id": "f52a3ed7-5998-406d-ab8a-4d58e24aec54"
+    },
+    {
+      "claim_id": "c96d8434-9fda-48f3-b095-c0bf7b631a78",
+      "result_id": "26384ba2-00f7-4d50-a36f-ab1eed60f36f"
+    },
+    {
+      "claim_id": "921b7a5b-c929-4665-bfec-f74f3f1e4f02",
+      "result_id": "26384ba2-00f7-4d50-a36f-ab1eed60f36f"
+    },
+    {
+      "claim_id": "2061b31d-4ecb-493e-816a-dae4b9b753e8",
+      "result_id": "26384ba2-00f7-4d50-a36f-ab1eed60f36f"
+    },
+    {
+      "claim_id": "d784e970-6f58-448c-a061-ee0c8bad579a",
+      "result_id": "26384ba2-00f7-4d50-a36f-ab1eed60f36f"
+    },
+    {
+      "claim_id": "2a860f57-82d5-4fc7-a6ed-fbc2a430c4fc",
+      "result_id": "26384ba2-00f7-4d50-a36f-ab1eed60f36f"
+    },
+    {
+      "claim_id": "3d4d6932-b018-4bc7-bd43-9401defca897",
+      "result_id": "26384ba2-00f7-4d50-a36f-ab1eed60f36f"
+    },
+    {
+      "claim_id": "35b0983e-c40d-427f-998b-823de8fdf927",
+      "result_id": "26384ba2-00f7-4d50-a36f-ab1eed60f36f"
+    },
+    {
+      "claim_id": "5808077e-2208-482f-b0a5-878d6eaa9221",
+      "result_id": "26384ba2-00f7-4d50-a36f-ab1eed60f36f"
+    },
+    {
+      "claim_id": "7ce7455a-f26c-4f45-84dd-555c09e3f660",
+      "result_id": "06023420-b6f8-44b5-b126-b303132d3756"
+    },
+    {
+      "claim_id": "e0c7644c-4984-4cfd-847f-7b9a7d874870",
+      "result_id": "06023420-b6f8-44b5-b126-b303132d3756"
+    },
+    {
+      "claim_id": "3333f99f-3a41-4474-a3b7-008d1d6883c4",
+      "result_id": "b16b52bd-4451-403c-a09a-7461ccc1e6e1"
+    },
+    {
+      "claim_id": "f53ebf6f-328e-43b5-b5a2-4de10bc9d557",
+      "result_id": "b16b52bd-4451-403c-a09a-7461ccc1e6e1"
+    },
+    {
+      "claim_id": "b0a721ca-b3a7-480d-a41b-6e11e962a5a5",
+      "result_id": "b16b52bd-4451-403c-a09a-7461ccc1e6e1"
+    },
+    {
+      "claim_id": "6a1f131e-097d-4da3-b437-af18f0d654fd",
+      "result_id": "b16b52bd-4451-403c-a09a-7461ccc1e6e1"
+    },
+    {
+      "claim_id": "6eb8374f-ff98-434a-a682-11e3989d5fd2",
+      "result_id": "80b18fbb-6d04-41e2-80a7-90f9642480d2"
+    },
+    {
+      "claim_id": "79514521-b9f1-4884-8e0e-da4bb08d1b4a",
+      "result_id": "80b18fbb-6d04-41e2-80a7-90f9642480d2"
+    },
+    {
+      "claim_id": "5a9bf6ea-b2ae-430d-ae8a-aac88ebf34d7",
+      "result_id": "80b18fbb-6d04-41e2-80a7-90f9642480d2"
+    },
+    {
+      "claim_id": "66f86bac-a203-4283-8228-8be46bc84a82",
+      "result_id": "80b18fbb-6d04-41e2-80a7-90f9642480d2"
+    },
+    {
+      "claim_id": "38ad6a26-d222-4ad1-8d97-650b112b1735",
+      "result_id": "80b18fbb-6d04-41e2-80a7-90f9642480d2"
+    },
+    {
+      "claim_id": "ebaae974-563c-4113-bd91-e1f2a8322e88",
+      "result_id": "80b18fbb-6d04-41e2-80a7-90f9642480d2"
+    },
+    {
+      "claim_id": "6fce58ce-060e-403e-abef-3ea4f77a6478",
+      "result_id": "80b18fbb-6d04-41e2-80a7-90f9642480d2"
+    },
+    {
+      "claim_id": "6eb8c534-9a87-4aa0-9990-e2916c1d4c95",
+      "result_id": "bff4d64e-a741-422c-b858-7a708bcd8035"
+    },
+    {
+      "claim_id": "f8fe408e-d73c-449a-9d90-6e0f88339ed9",
+      "result_id": "bff4d64e-a741-422c-b858-7a708bcd8035"
+    },
+    {
+      "claim_id": "d8dcc473-9b1b-4e87-8bd0-6dc3c91bbd9a",
+      "result_id": "bff4d64e-a741-422c-b858-7a708bcd8035"
+    },
+    {
+      "claim_id": "51cf5351-0d20-48f3-a939-f2bc19ba1704",
+      "result_id": "bff4d64e-a741-422c-b858-7a708bcd8035"
+    }
+  ],
+  "comparisons": []
+}

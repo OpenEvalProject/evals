@@ -1,0 +1,2076 @@
+{
+  "submission": {
+    "id": "7c747532-dcaf-48ab-97c5-e50a1e5ea204",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:12:34.336572Z",
+    "updated_at": "2025-12-02T12:12:34.336572Z"
+  },
+  "content": [
+    {
+      "id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "submission_id": "7c747532-dcaf-48ab-97c5-e50a1e5ea204",
+      "content_type": "manuscript",
+      "content_text": "# Self-assembling manifolds in single-cell RNA sequencing data\n\n## Authors\n\n- Alexander J Tarashansky<sup>1</sup>\n- Yuan Xue<sup>1</sup>\n- Pengyang Li<sup>1</sup>\n- Stephen R Quake<sup>1</sup> ([ORCID: 0000-0002-1613-0809](https://orcid.org/0000-0002-1613-0809))\n- Bo Wang<sup>1</sup> ([ORCID: 0000-0001-8880-1432](https://orcid.org/0000-0001-8880-1432)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering Stanford University Stanford United States\n2. Department of Applied Physics Stanford University Stanford United States\n3. Chan Zuckerberg Biohub San Francisco United States\n4. Department of Developmental Biology Stanford University School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSingle-cell RNA sequencing has spurred the development of computational methods that enable researchers to classify cell types, delineate developmental trajectories, and measure molecular responses to external perturbations. Many of these technologies rely on their ability to detect genes whose cell-to-cell variations arise from the biological processes of interest rather than transcriptional or technical noise. However, for datasets in which the biologically relevant differences between cells are subtle, identifying these genes is challenging. We present the self-assembling manifold (SAM) algorithm, an iterative soft feature selection strategy to quantify gene relevance and improve dimensionality reduction. We demonstrate its advantages over other state-of-the-art methods with experimental validation in identifying novel stem cell populations of Schistosoma mansoni, a prevalent parasite that infects hundreds of millions of people. Extending our analysis to a total of 56 datasets, we show that SAM is generalizable and consistently outperforms other methods in a variety of biological and quantitative benchmarks.\n\n## Introduction\n\nSingle-cell RNA sequencing (scRNAseq) datasets typically contain tens of thousands of genes, although many of them may not be informative for differentiating between cell types or states. Feature selection is thus commonly used to select a subset of genes prior to downstream analyses, such as manifold reconstruction and cell clustering (Crow et al., 2018; Satija et al., 2015; Vallejos et al., 2015). However, current approaches have two major limitations.\n\nFirst, feature selection methods filter genes based on arbitrarily or empirically chosen thresholds, small changes in which may result in different gene sets (Vallejos et al., 2017). In addition, the selection of features typically operates under the assumption that genes with highly variable expression between individual cells capture biologically meaningful variation. Because single-cell transcriptomes are inevitably contaminated by a combination of random transcriptional and technical noise (Gr\u00fcn et al., 2014), the variation in biologically relevant genes may be hard to distinguish from the background noise, especially when the differences between cell populations are subtle. Resolving these differences, or \u2018signals\u2019, is essential to study a variety of biological problems, including identifying cell subtypes (Olsson et al., 2016; Treutlein et al., 2014; L\u00f6nnberg et al., 2017; Fincher et al., 2018; Baron et al., 2016; Schwalie et al., 2018) and quantifying the effects of molecular perturbations to otherwise homogeneous populations of cells (Lane et al., 2017). In such datasets, only a small fraction of the genes, and therefore only a small fraction of the total variation, may contain the signals relevant for distinguishing cell types or cell states. Choosing these features without a priori knowledge remains an unmet computational challenge.\n\nThe second limitation is that existing methods have been almost exclusively benchmarked on well-annotated, gold standard datasets with clearly distinguishable cell types (Wang et al., 2017; Kiselev et al., 2017; Du\u00f2 et al., 2019; Bahlo et al., 2018). These datasets are not informative for distinguishing the performance between methods, because the differences between cell types are relatively straightforward to detect. However, evaluating the performance of feature selection and/or dimensionality reduction methods on datasets with more subtle signals is difficult as their ground truth labels are typically ambiguous or nonexistent.\n\nTo overcome the shortcomings of current feature selection approaches, here, we introduce the Self-Assembling Manifold (SAM) method, an unsupervised, \u2018soft feature selection\u2019 algorithm that iteratively rescales gene expressions to refine a nearest neighbor graph of cells until the graph converges to a stable solution. At each iteration, SAM assigns more weight to genes that are spatially variable across the constructed graph, and this weighted gene expression is then used to improve the next nearest neighbor assignment. SAM presents two advantages: it rescales all genes according to their weights, solving the problem of thresholding, and it prioritizes genes that are variable across the intrinsic manifold of the data rather than selecting genes that are variable across individual cells.\n\nIn order to better distinguish the performance between methods, we define a network sensitivity measure to identify datasets with subtle signals. With limited annotations in most high-sensitivity datasets, we introduce unsupervised graph-based metrics to quantify the degree of structure within the reconstructed manifolds for comparison between methods. In addition, we perform benchmarking using known ground truth labels on simulated datasets spanning a wide range of sensitivities by introducing increasing levels of noise to well-annotated datasets. These analyses reveal that SAM consistently improves feature selection and cell clustering.\n\nTo demonstrate the utility of SAM in practice, we provide an in-depth analysis of two datasets that are challenging to analyze using existing methods: stem cells in a human parasitic worm, Schistosoma, and activated macrophages (Lane et al., 2017). We show that SAM can capture novel biology undetectable by other methods and validate these results with experimental evidence.\n\n## Results\n\n### The SAM algorithm\n\nThe SAM algorithm begins with a random k-nearest neighbor (kNN) graph and averages the expression of each cell with its k nearest neighbors:\u00a0$C=\\frac{1}{k}NE$, where $N$\u00a0is the directed adjacency matrix and $E$\u00a0is the gene expression matrix (Figure 1a). For each gene i, SAM computes a spatial dispersion factor of the averaged expressions\u00a0$C_{i}$, which measures variation across neighborhoods of cells rather than individual cells (Materials and methods). These dispersions are used to calculate the gene weights, which then rescale the expression matrix:\u00a0$E^=E\\sqrt{W_{D}}$, where $W_{D}$ is a diagonal matrix with gene weights along the diagonal. Using the rescaled expressions\u00a0$E^$, we compute a pairwise cell distance matrix and update the assignment of each cell\u2019s k-nearest neighbors accordingly. This cycle continues until the gene weights converge.\n\nTo demonstrate the implementation and utility of SAM, below we analyze a challenging dataset comprised of a few hundred relatively homogeneous stem cells isolated from Schistosoma mansoni (Figure 1\u2014figure supplement 1), a widespread human pathogen (Hoffmann et al., 2014). Using a protocol we have established previously (Wang et al., 2018), these cells were collected by sorting dividing cells from juvenile parasites harvested from their mouse hosts at 2.5 weeks post infection. At this stage, the parasites use an abundant stem cell population (~15\u201320% of the total number of cells) for rapid organogenesis and growth (Wang et al., 2013; Wang et al., 2018). Testing several existing methods (Wang et al., 2017; Kiselev et al., 2017; Satija et al., 2015), we found that they were not able to identify distinct cell populations in this dataset. In contrast, SAM finds a stable solution independent of initial conditions (Figure 1b). A graph structure with clearly separated cell populations self-assembles through the iterative process (Figure 1c). In parallel, the gene weights converge onto the final weight vector. Eventually, only a small fraction of genes (~1%) are strongly weighted and useful for separating cell clusters, reflecting the inherent difficulty of analyzing this dataset.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig1-v2.jpg)\n\n**Figure 1.:** (a) SAM starts with a randomly initialized kNN adjacency matrix and iterates to refine the adjacency matrix and gene weight vector until convergence. (b) Root mean square error (RMSE) of the gene weights (top) and the fraction of different edges of the nearest-neighbor adjacency matrices (bottom) between adjacent iterations (blue) and between independent runs at the same iteration (orange) to show that SAM converges to the same solution regardless of initial conditions. The differences between the gene weights and nearest-neighbor graphs from independent runs are relatively small, indicating that SAM converges to the same solution through similar paths. (c) Graph structures and gene weights of the schistosome stem cell data converging to the final output over the course of 10 iterations (i denotes iteration number). Top: nodes are cells and edges connect neighbors. Nodes are color-coded according to the final clusters. Bottom: weights are sorted according to the final gene rankings. (d) Network properties iteratively improve for the graphs reconstructed from the original data (red) but not on the randomly shuffled data (blue). The network properties converge to the same values when initializing SAM with the Seurat-reconstructed graph instead of a random graph (yellow). Dashed lines: metrics measured from the Seurat-reconstructed graphs.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Histograms of h2a qPCR measurements in 2.5- (left) and 3.5- (right) week post infection samples. (b) Scatter plot of gene count (>2 TPM) vs. mapped read count of individual sequenced cells. Cells with low gene count or h2a expression are discarded and filtered from analysis (red) and the remaining cells are analyzed (blue). The number of final cells kept for analysis is specified on the top left corner of each plot.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** An interactive Jupyter notebook interface provided by the SAM package facilitates convenient visualization of single cell data (upper left) and changing of SAM parameters using various control panels (upper right, and bottom). This interface allows clustering, subclustering, visualizing of gene expression, and many other applications.\n\nFigure 1d shows that SAM iteratively improves a series of graph characteristics, including the network-average clustering coefficient (NACC), modularity, and Euclidean norm of the spatial dispersions (Materials\u00a0and\u00a0methods). The NACC and modularity quantify the degree of structure within the graphs \u2013 graphs with high NACC and modularity have regions of high density separated by regions of low density. The dispersion quantifies the spatial organization of gene expression \u2013 the higher the spatial dispersion the less uniformly distributed the gene expressions are along the graph. The final graph metrics are independent of initial conditions, which can start from a random graph or the output of an existing manifold reconstruction algorithm (e.g. Seurat, Satija et al., 2015). Importantly, we verified that SAM does not artificially boost these metrics in data that lack inherent structure: when applying SAM to a randomly shuffled expression matrix, none of these metrics increased from the random initial conditions.\n\n### SAM identifies novel subpopulations within schistosome stem cells\n\nVisualizing the converged graph in two dimensions using Uniform Manifold Approximation and Projection (Becht et al., 2019), we find that cells can be separated into three main populations, with Louvain clustering (Blondel et al., 2008) further splitting one of these clusters into two subpopulations (Figure 2a). In contrast, other commonly used dimensionality reduction methods, such as principal component analysis (PCA), Seurat (Satija et al., 2015), and SIMLR (Wang et al., 2017), failed to distinguish these cell populations (see Materials\u00a0and\u00a0methods for the selection of algorithms for comparison). Clustering the Seurat graph using Louvain clustering still results in a low-modularity partition and poor correspondence to the SAM cluster assignments.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig2-v2.jpg)\n\n**Figure 2.:** (a) UMAP projections of the manifolds reconstructed by SAM, PCA, and Seurat. SIMLR outputs its own 2D projection based on its constructed similarity matrix using a modified version of t-SNE. The schistosome cells are color-coded by the stem cell subpopulations \u03bc, \u03b4\u2019, \u03b5\u0251, and \u03b5\u03b2 determined by Louvain clustering. (b) UMAP projections with gene expressions of subpopulation-specific markers (eledh, nanos-2, cabp, astf, bhlh,) and a ubiquitous stem cell marker, ago2-1, overlaid. Insets: magnified views of the expressing populations. (c) FISH of cabp and EdU labeling of dividing stem cells in juvenile parasites at 2.5 weeks post-infection show that \u03bc-cells (cabp+EdU+, arrowheads) are close to the parasite surface and beneath a layer of post-mitotic cabp+ cells. Dashed outline: parasite surface. Right: magnified views of the boxed region. (d) FISH of cabp and a set of canonical muscle markers, troponin, myosin, tropomyosin, and collagen, shows colocalization in post-mitotic cabp+ cells. Images in (c\u2013d) are single confocal slices. (e) FISH of astf and bhlh shows their orthogonal expression in adjacent EdU+ cells (arrowheads). Bottom: magnified views of the boxed region. Image is a maximum intensity projection of a confocal stack with a thickness of 12 \u00b5m. (f) UMAP projection of stem cells isolated from juveniles at 2.5 and 3.5 weeks post-infection. Cell subpopulation assignments based on marker gene expressions are specified. Right: a magnified view to show the mapping of \u03b5\u0251- and \u03b5\u03b2-cells. (g) Standardized dispersions as calculated by Seurat plotted vs. the SAM gene weights. (h) SC3 AUROC scores plotted vs. the SAM gene weights. Error bars indicate the standard deviation of SC3 AUROC scores between trials using different chosen numbers of clusters. In (g) and (h), the top 20 genes specific to each subpopulation are colored according to the color scheme used in (a).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** UMAP projections with gene expressions of (a) stem cell markers and (b) \u03bc-cell-specific genes overlaid.\n\nSupplementary file 1 lists genes with high SAM weights, which includes most markers previously implicated to be enriched in subsets of schistosome stem cells (Wang et al., 2013; Wang et al., 2018). Figure 2b shows that the three populations include previously characterized \u03b4\u2032-cells, which specifically express an RNA binding protein nanos-2 (Smp_051920), and \u03b5-cells, which are marked by the expression of eledh (eled, Smp_041540) (Wang et al., 2018). More importantly, SAM reveals a novel stem cell population, \u03bc, comprising\u00a0~30% of all sequenced cells (\u03bc denotes muscle progenitors as discussed below). While \u03bc-cells express ubiquitous stem cells markers (e.g. ago2-1, Smp_179320; cyclin B, Smp_082490) and cell cycle regulators (Figure 2\u2014figure supplement 1a) (Collins et al., 2013; Wang et al., 2013; Wang et al., 2018), they are also strongly enriched for a large set of genes, with a calcium binding protein (cabp, Smp_005350), an actin protein (Smp_161920), an annexin homolog (Smp_074140), a helix-loop-helix transcription factor (dhand, Smp_062490), and a phosphatase (dusp10, Smp_034500) as the most specific markers of this population in comparison to other stem cells (Figure 2\u2014figure supplement 1b).\n\nFluorescent in-situ hybridization (FISH) in conjunction with EdU labeling of dividing cells reveals that \u03bc-cells (cabp+EdU+) are distributed near the parasite surface right beneath a layer of post-mitotic differentiated cells that also express cabp (Figure 2c). Close to the parasite surface, there are two major cell types intertwined in space: the skin-like tegumental cells and the body wall muscle cells. However, \u03bc-cells express none of the recently identified markers in tegumental progenitors (Wendt et al., 2018), suggesting that they may be associated with the muscle lineage. To test this idea, we performed double FISH experiments and observed in post-mitotic cabp+ cells the coexpression of a set of canonical muscle markers (Witchley et al., 2013), including tropomyosin (Smp_031770), myosin (Smp_045220), troponin (Smp_018250), and collagen (Smp_170340) (Figure 2d). These results suggest that cabp may mark the parasite body wall muscles and \u03bc-cells are likely muscle progenitors, although functional validation is required to support this observation. Why the juvenile parasites maintain such an active pool of muscle progenitors will be an important question for future studies.\n\nIn addition, SAM identifies two subpopulations among \u03b5-cells: \u03b5\u0251-cells that are highly enriched for an aschaete-scute transcription factor (astf, Smp_142120), and \u03b5\u03b2-cells that abundantly express another basic helix-loop-helix protein (bhlh, Smp_087310) (Figure 2b, right panels). FISH experiments confirm these cells to be in close spatial proximity but with no coexpression of astf and bhlh (Figure 2e). Moreover, we observed with FISH that there are fewer astf+ cells in larger, more matured juveniles, suggesting \u03b5\u0251-cells are a dynamic population during development. To verify this observation, we sequenced another\u00a0~370 stem cell from juveniles at a later developmental time point (3.5 weeks post infection). After correcting for batch effects in the combined 2.5- and 3.5- week datasets using the mutual nearest neighbors (MNN) algorithm (Haghverdi et al., 2018), we find that \u03b4\u2032-, \u03bc-, and \u03b5\u03b2-cells remain relatively constant throughout both time points, whereas \u03b5\u0251-cells comprise a significantly smaller fraction of the stem cells at 3.5 weeks (7%) compared to 21% at 2.5 weeks (Figure 2f). Taken together, these analyses demonstrate that SAM can identify experimentally validated stem cell populations that are previously too subtle to separate using other methods but are closely associated with the schistosome development.\n\nThe critical difference between SAM and other methods lies in how they select genes for manifold reconstruction. SAM prioritizes genes with variable expressions across neighborhoods of cells rather than individual cells as in other methods (e.g. Seurat). Figure 2g shows that genes with high standardized dispersion across individual cells often have low SAM weights, indicating that these highly variable genes (HVGs) are irrelevant to the topological relationships between cells. Other methods (e.g. SC3, Kiselev et al., 2017) identify marker genes based on differential gene expression between cell clusters, but this approach suffers when cell cluster assignment is poor, especially when discrete cell groups are difficult to separate or absent. Indeed, SC3 failed in the default mode as it incorrectly predicted there to be only one cluster in the schistosome dataset. After we manually increased the number of clusters, SC3 could recover a few of the marker genes associated with only one (\u03bc-cells, blue symbols in Figure 2h) of the populations detected by SAM. Furthermore, changing the number of clusters resulted in different solutions and large variability in SC3 scores for its top ranked genes.\n\n### SAM outperforms other state-of-the-art methods in extensive quantitative benchmarking\n\nBelow, we assess the general applicability of SAM by benchmarking its performance against state-of-the-art scRNAseq analysis methods on a large collection of datasets. We focus on three methods, that\u00a0is, Seurat, SIMLR, and SC3, as they are mostly unsupervised, have been broadly used, and were shown to outperform other methods through extensive benchmarking (Kiselev et al., 2017; Wang et al., 2017; Du\u00f2 et al., 2019; Bahlo et al., 2018; Tian et al., 2019). The criteria to\u00a0select algorithms for comparison are explained in Materials and methods. We first benchmark against nine datasets (Supplementary file 2) that have high-confidence annotations to evaluate the accuracy of SAM in assigning cell clusters. Seven of these datasets are of pancreatic islet cells, as their subpopulations have been extensively characterized with known marker genes (Baron et al., 2016). For five out of the nine datasets, SAM has the highest Adjusted Rand Index (ARI, a measure of clustering accuracy) (Hubert and Arabie, 1985) with respect to the provided annotations (Figure 3a). On the remaining four Baron datasets, SAM and Seurat perform equally well with near perfect clustering accuracy, whereas SC3 and SIMLR tend to overestimate and underestimate the number of clusters, respectively. Supplementary file 3 lists the clustering scores for each method and for each annotated cell type in the benchmarking datasets (Materials\u00a0and\u00a0methods). SC3 and SIMLR struggle to cleanly cluster cell types that constitute large fractions of the data, such as the alpha and beta cells in the pancreatic datasets. While Seurat performs well on the Baron datasets, it fails to identify alpha cells in the Wang and Muraro datasets when run with default parameters, although its performance is improved after optimizing parameters to maximize its clustering accuracy (Materials\u00a0and\u00a0methods). We note that this parameter optimization is impossible to perform on an experimental dataset with no available ground truth labels. Nevertheless, even with optimal parameters, Seurat has accuracy lower than or equal to that of SAM on all datasets.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig3-v2.jpg)\n\n**Figure 3.:** (a) Accuracy of cluster assignment quantified by adjusted rand index (ARI) on nine annotated datasets (left). Right: differences between the number of clusters found by each method (N) and the number of annotated clusters (NTRUE). Smaller differences indicate more accurate clustering. Seurat* denotes Seurat analysis using parameters that maximize ARI. (b) RMSE of gene weights output by SAM averaged across ten replicate runs with random initial conditions for 56 datasets (blue) and simulated datasets with no intrinsic structure (green, Materials\u00a0and\u00a0methods). (c) Runtime of SAM, SC3, SIMLR, and Seurat as a function of the number of cells in each dataset. SC3 and SIMLR were not run on datasets with\u00a0>3000 cells as the run time exceeds 20 min.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) RMSE of gene weights between adjacent iterations within a run, averaged across ten replicate runs for all datasets. (b\u2013c) Average ARI scores for the nine annotated benchmarking datasets when varying (b) the number of nearest neighbors, k, from 10 to 30 or (c) the choice of distance metric (Euclidean or Pearson correlation). Error bars indicate standard deviations of ARI scores across the different values of k and distance metrics. The errors for data with no error bars are too small to be seen.\n\nSAM converges to the same set of gene weights for all datasets analyzed (Figure 3b, Figure 3\u2014figure supplement 1a) and its performance is robust to the choice of parameters and random initial conditions (Figure 3\u2014figure supplement 1b\u2013c). In contrast, applying SAM to randomly generated datasets (Materials\u00a0and\u00a0methods), the resulting gene weights are highly dissimilar across random initial conditions (Figure 3b), indicating that SAM does not converge to a stable solution on datasets with no intrinsic structure. Finally, the scalability of SAM is similar to that of Seurat, capable of analyzing hundreds of thousands of cells in minutes (Figure 3c), whereas SIMLR and SC3 are orders of magnitudes slower and thus excluded from further benchmarking which requires the analysis of many more datasets.\n\nBecause the nine benchmarking datasets are all comprised of clearly distinguishable cell types, they may not represent the performance of methods on other datasets that contain cell populations that are only subtly different. To identify such datasets, we introduce a network sensitivity metric that quantifies the changes in the cell-to-cell distances when randomly selecting a subset of features from the gene expression matrices (Materials\u00a0and\u00a0methods). High network sensitivity indicates that changes to the selected features strongly alters the resulting topological network. Networks that are robust to the selected features correspond to datasets that have many redundant signals or genes corroborating the network structure. In the datasets we compiled (Supplementary file 2), all broadly used benchmarking datasets have lower sensitivities whereas the schistosome dataset, which we have shown to be challenging to analyze, has the highest sensitivity (Figure 4a). The fraction of genes with large SAM weights (>0.5) is negatively correlated with the network sensitivity, suggesting that the biologically relevant variation in datasets with high sensitivity is captured by relatively fewer genes (Figure 4b). Analyzing all 56 datasets, we found that SAM improves the clustering, modularity, and spatial organization of gene expression across the graph in comparison to Seurat as the datasets become increasingly sensitive (Figure 4c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig4-v2.jpg)\n\n**Figure 4.:** (a) Network sensitivity of all 56 datasets ranked in descending order. Blue: the nine benchmarking datasets used in Figure 3a. Sensitivity measures the robustness of a dataset to changes in which features are selected (Materials and methods). (b) The network sensitivity plotted against the fraction of genes with SAM weight greater than 0.5 (in log scale) with Spearman correlation coefficient specified in the upper-right corner. (c) Fold improvement of SAM over Seurat for NACC, modularity, and spatial dispersion with respect to sensitivity for all 56 datasets. These ratios are linearly correlated with network sensitivity with Pearson correlations (r2) specified in the upper-left corner of each plot.\n\nEvaluating the clustering accuracy for the highly sensitive datasets, however, is challenging, because many of them have incomplete or nonexistent cell type annotations. Therefore, we use the nine well-annotated benchmarking datasets to simulate data across a wide spectrum of sensitivities. For this, we corrupt the data by randomly permuting gradually increasing fractions of the gene expressions. As illustrated by the Darmanis dataset (Darmanis et al., 2015), Figure 5a shows that the sensitivity increases along with the corruption. Below\u00a0~50% corruption, SAM\u2019s ARI scores only marginally decrease as the corruption (and thereby sensitivity) increases, whereas Seurat\u2019s performance rapidly deteriorates, even when run with optimal parameters. A similar contrast was observed between SAM and Seurat\u00a0with the NACC, modularity, and spatial dispersion. Importantly, passing the genes with high SAM weights into Seurat rescued its performance across all metrics, indicating that SAM is able to consistently capture the genes relevant to the underlying structure of the data even with increasing levels of noise and illustrating the robustness of its feature selection strategy compared to the HVG filtering approach used by Seurat. These observations generalize to all nine benchmarking datasets, quantified by the area under the curves (AUC) of the metrics with respect to corruption (Figure 5b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig5-v2.jpg)\n\n**Figure 5.:** (a) Network sensitivity, ARI, NACC, modularity, and spatial dispersion with respect to corruption of the Darmanis dataset, in which we randomly permute fractions of the data ranging from 0\u00a0to\u00a0100% of the total number of elements (Materials\u00a0and\u00a0methods). Performance is compared between SAM (blue), Seurat (red), Seurat with optimal parameters (black), and Seurat rescued with the top-ranked SAM genes (indigo). Error bars indicate the standard deviations across 10 replicate runs. The errors for points with no bars are too small to be seen. (b) Comparison of the area under curve (AUC) of the metrics in (a) with respect to data corruption for all nine datasets. Error bars indicate the standard deviations across 10 replicate runs. The errors for data with no error bars are too small to be seen.\n\n### SAM clusters macrophages by their activation dynamics with proper temporal ordering\n\nWe next highlight another dataset to show that SAM can recover biologically meaningful information that other methods fail to capture. We chose this example, which contains\u00a0~600 macrophages treated with lipopolysaccharide (LPS) when individually trapped in microfluidic channels (Lane et al., 2017), because it has high network sensitivity (Figure 4a) and has accompanying single cell functional data of macrophage activation dynamics that may help to validate the results of our analysis. Applied to this dataset, SAM initially identifies two clusters (Figure 6a, top). Performing gene set enrichment analysis (GSEA,\u00a0Subramanian et al., 2005), we find that genes with high SAM weights are dominated by cell cycle-related processes, with one of the clusters heavily enriched for cell cycle genes (e.g. Top2a, Mki67, Figure 6\u2014figure supplement 1a). After removing the cell cycle effects (Materials\u00a0and\u00a0methods), SAM identifies two different clusters in which cells are properly ordered by the time since LPS induction, with the highly weighted genes being primarily involved in immune signaling (Figure 6a, bottom). These observations demonstrate that, in conjunction with GSEA, the quantitative gene weights output by SAM can be used to infer the biological pathways that drive the clustering of cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig6-v2.jpg)\n\n**Figure 6.:** (a) GSEA analysis (left) and UMAP projections (right) of the activated macrophages before (top) and after (bottom) removing cell cycle effects. Teal: significantly enriched gene sets determined by the significance threshold of 0.25 for the False Discovery Rate (FDR, dashed lines). Bottom: the two clusters are denoted as MT and M with colors representing the time since LPS induction. Arrows: evolution of time. (b) TNF\u03b1 is enriched in the MT cluster. (c) Diagram of NF-\u03baB activation in response to LPS stimulation via the Myd88 and TRIF signaling pathways. (d) Log2 fold changes of the average expressions of selected inflammatory genes in the MT cluster vs. the M cluster. All genes are significantly differentially expressed between the two clusters according to the Welch\u2019s two-sample t-test ($p<5\u22c510^{\u22123}$). (e) Representative traces for transient (left) and prolonged (right) NF-\u03baB activation (Materials\u00a0and\u00a0methods). (f) Cells with prolonged NF-\u03baB response (denoted as P) are primarily in the MT population. (g) Seurat and SIMLR projections show that they fail to order the cells by time since LPS induction and do not identify cell clusters representing the different modes of NF-\u03baB activation.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** UMAP projections with marker genes specific to the dividing cells (a) and the MT cluster (b) overlaid.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48994/elife-48994-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) UMAP projection of the macrophage cells after the removal of cell cycle effects. Cells with prolonged NF-\u03baB dynamics are highlighted in red. (b) UMAP and t-SNE projections for Seurat and SIMLR, respectively, after the removal of cell cycle effects. Cells with prolonged NF-\u03baB dynamics are highlighted in red. (c) UMAP projections for Seurat and SIMLR with three MT-specific marker gene expressions overlaid.\n\nOne of the two clusters is enriched for TNF\u03b1 expression (Figure 6b). It is known that LPS activates two independent pathways, one through the innate immune signal transduction adaptor (Myd88) and the other through the TIR-domain-containing adapter-inducing interferon-\u03b2 (TRIF) (Lee et al., 2009). While the Myd88 pathway directly activates NF-\u03baB, the TRIF pathway first induces the secretion of TNF\u03b1, which subsequently binds to its receptor, TNFR, to prolong the activation of NF-\u03baB (Figure 6c). Figure 6d and Figure 6\u2014figure supplement 1b show examples of genes that are highly enriched with TNF\u03b1, a number of which are inflammatory factors known to accumulate due to prolonged NF-\u03baB activation (Lane et al., 2017). These results suggest that SAM grouped the cells based on their activated signaling pathways: one cluster is activated through both Myd88 and TRIF pathways (MT), while the other is only activated through Myd88 (M).\n\nTo further verify that the separation between the MT and M clusters truly reflects the dichotomy in cellular response to LPS induction, we noted that this dataset combines scRNAseq with live-cell imaging of NF-\u03baB activity in single cells. This allows us to directly test if the MT and M clusters correspond to different signaling dynamics (Materials\u00a0and\u00a0methods). We found that most of the cells with prolonged NF-\u03baB response (i.e. cells showing broad peaks of NF-\u03baB activation in time) are in fact in the MT cluster (Figure 6e\u2013f, and Figure 6\u2014figure supplement 2a), consistent with the expectation that TNF\u03b1 signaling prolongs NF-\u03baB activation. Although our interpretation of the data matches that provided in the original study, we were able to analyze the dataset with almost no a\u00a0priori knowledge. In contrast, the original study required extensive manual curation, analyzed only a subset of the dataset, and could not group cells by their NF-\u03baB activation dynamics based on the gene expression data alone. Similarly, Seurat and SIMLR were unable to order the cells by the time since LPS induction or group cells based on their activation dynamics after removing the cell cycle effects (Figure 6g, and Figure 6\u2014figure supplement 2b\u2013c).\n\n## Discussion\n\nHere, we introduced a scRNAseq analysis method, SAM, which uses an unsupervised, robust, and iterative strategy for feature selection and manifold reconstruction. As demonstrated by our analysis of the schistosome stem cells and activated macrophages, SAM can capture biology that is undetectable by other methods. While SAM has consistently higher clustering accuracy than other state-of-the-art methods on datasets containing clearly distinct cell types, its advantages are especially apparent on datasets in which cell states or types are only distinguishable through subtle differences in gene expression.\n\nThe strength of SAM lies in the integration of three algorithmic components: spatial dispersion to measure feature relevance, soft feature selection, and the iterative scheme. By averaging the gene expression of a cell with that of its neighbors, the spatial dispersion quantifies the variation across neighborhoods of cells rather than individual cells. Genes with high spatial dispersion are more likely to be biologically relevant as they are capable of separating cells into distinct topological locations. Soft feature selection includes all genes and weights their contribution to the manifold reconstruction by their spatial dispersions. This mitigates the shortcoming of existing approaches in which the selection of features is a binary decision: genes are either included or not depending on arbitrarily chosen thresholds.\n\nThe conceptual challenge here is that calculating the gene weights requires the manifold, but reconstructing the manifold requires the gene weights for feature selection. SAM thus uses an iterative strategy to converge onto both the gene weights and the corresponding graph topology from a random initial graph. Each successive iteration refines the gene weights and network structure until the algorithm converges. Empirically, for all datasets analyzed we have shown that SAM converges onto a stable solution and is robust to the random initial conditions. Practically, it is possible to initialize SAM using the graph output of another method such as Seurat (Figure 1d), but using random initial conditions avoids potential biases in the analysis and enables the evaluation of the stability of SAM.\n\nTo demonstrate the strengths of SAM in practice, we analyzed the schistosome stem cells and identified novel stem cell populations that were validated by FISH experiments (Figure 2). In the analysis of activated macrophages, we showed that SAM can simultaneously order cells by the time since LPS induction and group cells according to their respective activated signaling pathways. We have validated this result using the live-cell imaging data presented in the original study (Figure 6).\n\nWe expect that the application of SAM is not limited to feature selection, cell clustering, and manifold reconstruction; it can be readily integrated with existing analytical pipelines as its gene weights and reconstructed manifolds can be used in downstream analyses. For example, we have shown how the genes ranked by their SAM weights can be used as input to GSEA to determine the biological processes enriched among the highly weighted genes (Figure 6), thus directly testing if the weights reflect the biological relevance of genes. Additionally, the manifold reconstructed by SAM can be used as input to pseudotemporal ordering algorithms (Setty et al., 2016; Trapnell et al., 2014).\n\nBeyond the two example case studies, we have rigorously evaluated SAM on a total of 56 datasets. While previous studies benchmarked on datasets with clearly defined cell populations, we defined a network sensitivity measure to rank the datasets based on the inherent difficulty of their analysis (Figure 4). Using these datasets, we showed that SAM consistently outperforms other methods in terms of both cell clustering accuracy measured by ground truth annotations, and manifold reconstruction measured by quantitative graph characteristics. These improvements can be attributed to the robust selection of features relevant for cell clustering and manifold reconstruction even in the presence of significant amounts of random noise, as shown in the corruption tests (Figure 5). Overall, the network sensitivity and quantitative benchmarking metrics should help in characterizing the performance of future scRNAseq analysis methods across a wider variety of datasets.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SsoAdvanced Universal SYBR Green Supermix</td>\n      <td>Biorad</td>\n      <td>1725270</td>\n      <td>qPCR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Quant-iT PicoGreen dsDNA Assay Kit</td>\n      <td>Thermo-Fisher</td>\n      <td>P7589</td>\n      <td>cDNA quantification</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RNase Inhibitor</td>\n      <td>Takara Bio</td>\n      <td>2313B</td>\n      <td>RT mix</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>dNTP Set 100 mM solutions</td>\n      <td>Thermo-Fisher</td>\n      <td>R0181</td>\n      <td>RT mix and cDNA pre-amplification</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagents</td>\n      <td>100 \u00b5M oligo-dT</td>\n      <td>IDT</td>\n      <td></td>\n      <td>AAGCAGTGGTATCAACGCAGAGTACT(30)VN</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagents</td>\n      <td>100 \u00b5M TSO</td>\n      <td>Exiqon</td>\n      <td></td>\n      <td>AAGCAGTGGTATCAACGCAGAGTACATrGrG+G</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ERCC RNA Spike-In Mix</td>\n      <td>Thermo-Fisher</td>\n      <td>4456740</td>\n      <td>RT mix</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>10% Triton X-100</td>\n      <td>Thermo-Fisher</td>\n      <td>28314</td>\n      <td>RT mix</td>\n    </tr>\n    <tr>\n      <td>Peptide,recombinant protein</td>\n      <td>SMARTscribe reverse transcriptase</td>\n      <td>Takara Bio</td>\n      <td>639538</td>\n      <td>RT mix</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>100 mM DTT</td>\n      <td>Promega</td>\n      <td>P1171</td>\n      <td>RT mix</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>5 M Betaine</td>\n      <td>Thermo-Fisher</td>\n      <td>B0300-1VL</td>\n      <td>RT mix</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Kapa Hotstart Ready\u00a0Mix</td>\n      <td>Roche</td>\n      <td>KK2602</td>\n      <td>cDNA pre-amplification</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagents</td>\n      <td>100 \u03bcM IS_PCR primer</td>\n      <td>IDT</td>\n      <td></td>\n      <td>AAGCAGTGGTATCAACGCAGAGT</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>lambda exonuclease</td>\n      <td>NEB</td>\n      <td>M0262S</td>\n      <td>Depletion of primer dimers</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Ampure purification beads</td>\n      <td>NEB</td>\n      <td>M0262S</td>\n      <td>DNA purification</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TG Nextera XT DNA Sample Preparation Kit</td>\n      <td>Illumina</td>\n      <td>FC-131\u20131096</td>\n      <td>Library preparation</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TG Nextera XT Index Kit v2 Set A (96 Indices, 384 Samples)</td>\n      <td>Illumina</td>\n      <td>TG-131\u20132001</td>\n      <td>Library preparation</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. mansoni)</td>\n      <td>NMRI</td>\n      <td>BEI Resources</td>\n      <td>NR-21963</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Digoxigenin-POD, Fab fragments from sheep</td>\n      <td>Roche</td>\n      <td>11207733910</td>\n      <td>(1:1,000); FISH experiments</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Fluorescein-POD, Fab fragments from sheep</td>\n      <td>Roche</td>\n      <td>11426346910</td>\n      <td>(1:1,500); FISH experiments</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant DNA reagents</td>\n      <td>Plasmid-pJC53.2</td>\n      <td>Addgene</td>\n      <td>26536</td>\n      <td>Cloning vector</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cy5-azide</td>\n      <td>Click Chemistry Tools</td>\n      <td>AZ118</td>\n      <td>EdU detection</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>5-ethynyl-2-deoxyuridine (EdU)</td>\n      <td>Invitrogen</td>\n      <td>A10044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Vybrant DyeCycle Violet (DCV)</td>\n      <td>Invitrogen</td>\n      <td>V35003</td>\n      <td>FACS</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TOTO-3</td>\n      <td>Invitrogen</td>\n      <td>T3604</td>\n      <td>FACS</td>\n    </tr>\n  </tbody>\n</table>\n\n### Code and data availability\n\nThe SAM source code and tutorials can be found at https://github.com/atarashansky/self-assembling-manifold\u00a0(Tarashansky, 2019; copy archived at https://github.com/elifesciences-publications/self-assembling-manifold).\u00a0We have included a number of tutorials describing in detail the various functions, parameters, attributes, and data structures of the SAM package, and provided the documentation (docstrings) for all functions available to users. In addition, we have developed an interactive user interface that facilitates the convenient exploration of single-cell data and SAM parameters (Figure 1\u2014figure supplement 2). A Jupyter notebook tutorial explaining how to use the interface is provided as well. The schistosome stem cell scRNAseq data generated in this study were obtained in two sequencing batches and are available through the Gene Expression Omnibus (GEO) under accession number GSE116920.\n\n### Data processing\n\nSupplementary file 2 summarizes all datasets used in this study as well as the methods used to convert raw sequence read counts to gene expression, such as TPM (transcripts per million), CPM (counts per million), RPKM (reads per kilobase per million), or FPKM (fragments per kilobase per million). Datasets with asterisks next to their accession numbers are sourced from the conquer database (Soneson and Robinson, 2018). The nine benchmarking datasets used with high-confidence annotation labels are marked by crosses. Gene expression is measured in log space with a pseudocount of 1 (e.g. log2(TPM+1)). Genes expressed (log2(TPM+1)>1) in fewer than 1% or more than 99% of cells are excluded from downstream analysis as these genes lack statistical power. To reduce the influence of technical noise near the molecular detection limit, we set gene expression to zero when log2(TPM+1)<1. We denote the resulting expression matrix as\u00a0$E$.\n\nIn the SAM algorithm (see below), we either standardize the gene expression matrix $E$\u00a0to have zero mean and unit variance per gene (which corrects for differences in distributions between genes) or normalize the expressions such that each cell has unit Euclidean (L2) norm (which prevents cells with large variances in gene expressions from dominating downstream analyses) prior to dimensionality reduction. In the below section, we denote the standardized or normalized expression matrix as\u00a0$E\u00af$. Empirically, we have found that standardization performs well with large, sparse datasets that are expected to contain many subpopulations, whereas L2-normalization is more suitable for smaller datasets with fewer subpopulations. This is likely due to the fact that standardization amplifies the relative expression of genes specific to small populations in large datasets, thereby making them easier to identify. In contrast, standardization decreases the relative expression of genes specific to populations comprising larger fractions of the data, as is typically the case in smaller datasets, thereby making distinct populations more difficult to identify. Supplementary file 2 documents the preprocessing step used for each dataset.\n\n### The SAM algorithm\n\nAfter first generating a random kNN adjacency matrix, the SAM algorithm goes through three steps that are repeated until convergence.\n\n#### Calculate the gene weights\n\nFirst, the expression of each cell is averaged with its k-nearest neighbors:\n\n$$\nC=\\frac{1}{k}NE\n$$\n\nwhere $N$\u00a0is the directed adjacency matrix for the kNN graph, and $E$\u00a0is the $n\u00a0x\u00a0m$\u00a0log-transformed gene expression matrix with rows as cells and columns as genes. Here, we do not use $E\u00af$ as it may contain negative values, for which dispersion is ill-defined. For each gene i, SAM computes the Fano factor from the averaged expressions\u00a0$C_{i}$:\n\n$$\n\\mu_{C_{i}}=\\frac{1}{n}\\sum_{j=1}^{n}C_{ji}\n$$\n\n\n\n$$\n\\sigma_{C_{i}}^{2}=\\frac{1}{n}\\sumj=1n(C_{ji}-\\mu_{C_{i}})^{2}\n$$\n\n\n\n$$\nF_{i}=\\frac{\\sigma_{C_{i}}^{2}}{\\mu_{C_{i}}}\n$$\n\nwhere $\\mu_{C_{i}}$ is the mean and $\\sigma_{C_{i}}^{2}$ is the variance. We use the Fano factor to measure the gene expression variance relative to the mean in order to account for the fact that genes with high mean expressions tend to have higher variability. Computing the Fano factors based on the kNN-averaged expressions links gene dispersion to the cellular topological structure: genes that have highly variable expressions among individual cells but are homogeneously distributed across the topological representation should have small dispersions.\u00a0$k$, set by default to 20, determines the topological length scale over which variations in gene expression are quantified. Figure 3\u2014figure supplement 1b shows that the downstream analysis is robust to the specific choice of\u00a0$k$. Additionally, the choice of $k$\u00a0does not significantly affect runtime complexity or scalability.\n\nTo compute the gene weights, we normalize the Fano factors to be between 0 and 1. First, we saturate the Fano factors to ensure that genes with large spatial dispersions do not skew the distribution of weights:\u00a0${F_{i}|F_{i}>z}=z$, where $z$\u00a0is the mean of the largest $N$\u00a0dispersions ($N=50$\u00a0by default). We then calculate the gene weights as:\n\n$$\nW_{i}=\\frac{F_{i}}{z}\n$$\n\n#### Rescale the expression matrix\n\nSAM multiplies the gene weights into the preprocessed expression matrix:\n\n$$\nE^=E\u00af\\sqrt{W_{D}}\n$$\n\nwhere $E\u00af$ is the standardized or normalized expression matrix and $W_{D}$ is a diagonal matrix with $W_{i}$ along the diagonal. This matrix multiplication linearly rescales the gene expression variances and gene-gene covariances by their respective weights, attenuating the influence of genes with low dispersions across neighborhoods.\n\n#### Updating the kNN graph\n\nTo compute pairwise cell-cell distances, we perform PCA on the rescaled expression matrix\u00a0$E^$. The variance-scaling operation in Equation 6 improves the robustness of PCA to variations in genes that are uniformly distributed along the current graph (i.e. genes with low weights). Furthermore, this weighting strategy eliminates the typical requirement of selecting a subset of HVGs to feed into PCA, which often relies on arbitrary thresholds and heuristics. To perform PCA, we first mean center $E^$ to form\u00a0$E^_{\\mu}$:\n\n$$\nE^_{\\mu}=E^\u2212\\frac{1}{n}ee^{T}E^\n$$\n\nwhere e is a column vector of ones with dimension n. We then compute the Singular Value Decomposition (SVD) of\u00a0$E^_{\\mu}$:\n\n$$\nE^_{\\mu}=USV^{T}\n$$\n\nwith the principal components defined as\n\n$$\nP=US\n$$\n\nThe eigenvalues corresponding to the eigendecomposition of the gene-gene covariance matrix are defined in terms of the singular values as\n\n$$\n\u039b=\\frac{S^{2}}{n-1}\n$$\n\nwhere S is a diagonal matrix with singular values along the diagonal. Using the PC matrix\u00a0$P$, SAM computes a pairwise cell-cell distance matrix. While typical dimension reduction approaches include a subset of the PCs, which is often subjective or requires computationally intensive maximum-likelihood approaches, we include all PCs and scale their variances by their corresponding eigenvalues:\n\n$$\nP^=P\\sqrt{\u039b}\n$$\n\nAs a result, PCs with small eigenvalues are weighted less in the calculation of the distance between cells i and j,\u00a0$D_{P^_{i}P^_{j}}$. $D_{P^_{i}P^_{j}}$\u00a0is the Pearson correlation or Euclidean distance between rows $P^_{i}$ and $P^_{j}$ in the PC matrix. Pearson correlation distance is used by default, although Figure 3\u2014figure supplement 1c shows that SAM is robust to the choice of distance metric. Using the distances to define the k-nearest neighbors for each cell, SAM updates the kNN matrix and repeats steps 1-3. The algorithm continues until convergence, defined as when the RMSE between gene weights in adjacent iterations converges:\n\n$$\n\\sqrt{\\frac{1}{m}\\sumj=1m(W_{i,j}\u2212W_{i+1,j})^{2}}<5\\times10^{\u22123}\n$$\n\nwhere $m$\u00a0is the number of genes and $W_{i,j}$ is the weight for gene $j$\u00a0at iteration\u00a0$i$.\n\n### Visualization\n\nTo visualize the topological structure identified by SAM, we feed the final weighted PCA matrix, $P^$, into UMAP (Becht et al., 2019) using Pearson correlation as the distance metric by default. To directly visualize the final kNN adjacency matrix (Figure 1c), we used the Fruchterman-Reingold force-directed layout algorithm and drawing tools implemented in the Python package graph-tool (Peixoto, 2017).\n\n### Choosing the benchmarking methods\n\nWe used three main criteria for choosing the benchmarking scRNAseq analysis methods: they should be widely used, have done extensive benchmarking against other methods, and be mostly unsupervised. We found on Web of Science that among the highest cited scRNAseq analysis tools in 2017\u20132018 are Seurat, SC3, SIMLR, Reference Component Analysis (Li et al., 2017), Monocle (Trapnell et al., 2014; Qiu et al., 2017), zero-inflated factor analysis (ZIFA,\u00a0Pierson and Yau, 2015), and Wishbone (Setty et al., 2016), of which we chose Seurat, SC3, and SIMLR.\n\nSC3 is a consensus clustering algorithm that has done rigorous benchmarking against other methods such as SINCERA (Guo et al., 2015), SNN-Cliq (Xu and Su, 2015) and pcaReduce (\u017durauskien\u0117 and Yau, 2016) on 12 datasets with ground truth annotation labels. SIMLR, a dimensionality reduction and clustering algorithm, evaluated its clustering performance on four annotated datasets against eight other dimensionality reduction methods, including PCA, Factor Analysis (FA), t-SNE, multidimensional scaling (MDS), and ZIFA. Both methods have demonstrated the highest clustering accuracy across most of the tested datasets. Additionally, as both methods have built-in functions to estimate the number of clusters present within the data, they are largely unsupervised. We also selected Seurat as one of the benchmarking methods, because it is arguably the most widely used tool for dimensionality reduction and clustering of scRNAseq data and has performed well in rigorous benchmarking studies against various methods including SC3, SIMLR, RCA, and pcaReduce (Du\u00f2 et al., 2019; Bahlo et al., 2018).\n\nWe did not select Reference Component Analysis as it is primarily designed for cases in which an atlas of bulk, cell-type specific, reference transcriptomes is present. Additionally, we did not benchmark against Monocle and Wishbone, because they are pseudotime analysis methods and are meant for datasets with continuous branching processes such as cell differentiation. However, it is important to note that SAM can be used for dimensionality reduction upstream of pseudotime algorithms for such datasets. Finally, we did not benchmark against ZIFA as it has already been shown to have lower clustering accuracy than SIMLR.\n\nIn addition to measuring clustering accuracy, we also introduce the NACC, modularity, and spatial dispersion metrics to quantify both the degree of structure and spatial organization of gene expression within a nearest-neighbor graph. These metrics can only be applied to dimensionality reduction methods that construct a graph representation of the dataset. Consequently, we cannot use these metrics to evaluate SC3.\n\nAlthough it does technically produce a graph representation of the data, SIMLR should be considered as a hybrid between a clustering and dimensionality reduction method. Because its similarity graph is assumed to have a block structure where the number of blocks is equal to the prespecified number of clusters, the resulting nearest-neighbor graph will, by construction, tend to have a higher degree of structure and therefore artificially inflated NACC and modularity.\n\nFurthermore, the poor scalability of SC3 and SIMLR makes them difficult to run for many trials across a large number of datasets. Although SIMLR, in particular, does provide an alternative algorithm that can scale to run on much larger datasets, this alternative version has not been extensively benchmarked. Even so, despite the improved speed of this large-scale implementation, estimating the number of clusters using its built-in function remains a significant computational and memory bottleneck. For example, when applied to datasets with\u00a0~10,000 cells, neither implementations of SIMLR could estimate the number of clusters within 2 hr. As a result, we cannot run SIMLR in an unsupervised manner on datasets significantly larger than\u00a0~3000 cells.\n\nAs there are few practical alternatives for manifold reconstruction that have been extensively benchmarked and widely used, we primarily compare SAM to Seurat in tests involving the unsupervised, graph-based metrics to highlight the key, advantageous characteristics of SAM as a manifold reconstruction and feature selection algorithm when applied to datasets with varying sensitivities (Figure 4a\u2013c).\n\n### Benchmarking\n\nTo generate the convergence curves in Figure 1b, we computed the root mean square error (RMSE) of the gene weights averaged across all pairwise comparisons of ten replicates starting from randomly generated initial graphs. In Figure 3b, we extend this analysis to all datasets analyzed and report the final error. We use randomly generated datasets of varying sizes (ranging from 200 to 5000 cells) as a negative control to show that SAM does not converge onto the same solution across initial conditions when the data has no intrinsic structure. These datasets were randomly generated by sampling gene expressions from a Poisson distribution with mean drawn from a gamma distribution. To generate the convergence curves in Figure 3\u2014figure supplement 1a, we computed the RMSEs, which are ensemble-averaged across ten replicate runs, between the gene weights in adjacent iterations. We compute the adjacency error between kNN adjacency matrices $N_{i}$ and $N_{j}$ (Figure 1b) as\n\n$$\nA_{i,j}=\\frac{e^{T}|N_{i}-N_{j}|e}{2e^{T}N_{i}e}\n$$\n\nwhere $e$\u00a0is a column vector of ones. This simply measures the fraction of total edges that are different between the two graphs.\n\nTo compute the standardized dispersion factors in Figure 2g, we used Seurat\u2019s methodology implemented in Scanpy (Wolf et al., 2018), which groups the genes into 20 bins based on their mean expression values and computes the z-score of each gene\u2019s Fano factor with respect to the mean and standard deviation of all Fano factors in its corresponding bin. To generate the AUROC scores in Figure 2h, which quantify the likelihood of genes being cluster-specific markers, we ran SC3 on the schistosome data with the number of clusters ranging from 2 to 12. We used the AUROC scores corresponding to four clusters for the points on the scatter plot and the standard deviations of the scores across all tested numbers of clusters for the error bars.\n\nWe evaluated each analysis method on nine gold standard datasets (Figure 3a) using ARI, which measures the accuracy between two cluster assignments $X$\u00a0and $Y$\u00a0while accounting for randomness in the clustering:\n\n$$\nARI=\\frac{\\sumn_{ij}2-\\suma_{i}2\\sumb_{j}2/n2}{\\frac{1}{2}\\suma_{i}2+\\sumb_{j}2-\\suma_{i}2\\sumb_{j}2/n2}\n$$\n\nwhere n is the number of cells, and\u00a0$n_{ij}$, $a_{i}$, and $b_{j}$ are elements from a contingency table that summarizes the overlap between the assignments $X$\u00a0and $Y$\u00a0(Hubert and Arabie, 1985). $n_{ij}$\u00a0denotes the number of cells assigned to $X_{i}$ that are also assigned to\u00a0$Y_{j}$, while $a_{i}$ and $b_{j}$ are the sums of the ith row jth column of the contingency table, respectively. To calculate the clustering accuracy for each ground truth annotation label in\u00a0Supplementary file 3, we decomposed the ARI into a vector of $j$\u00a0elements if $Y$\u00a0is the ground truth ($i$\u00a0otherwise) by not summing up the $j$\u00a0terms in the numerator, leaving it in vector form. Because the magnitudes of the cluster-specific scores depend on the number of cells in each cluster, a reference score was computed for each cluster using both $X$\u00a0and $Y$\u00a0as the true labels.\n\nSeurat was implemented using the Scanpy package in Python (Wolf et al., 2018). For Seurat, we used both default and optimized parameters. In its default implementation, we selected the top 3000 variable genes according to their standardized dispersions and chose the number of PCs (bounded between 6 and 50) which explain 30% of the variance for dimensionality reduction. From these PCs, we calculated a cell-cell correlation distance matrix. To keep the comparison between SAM and Seurat graphs consistent, this distance matrix was converted into a kNN adjacency matrix with the value of k used by SAM. We also ran a parameter sweep to optimize Seurat\u2019s performance for each benchmarking dataset separately by changing the number of highly variable genes and principal components to maximize the clustering accuracy.\n\nTo assign cluster labels for SAM and Seurat, we applied HDBSCAN (McInnes et al., 2017), an unsupervised, density-based clustering algorithm to their respective PCA outputs. As HDBSCAN does not cluster any cell it deems an outlier, we assign the remaining outlier cells to clusters using kNN classification. For each outlier cell, we identify its 20 nearest neighbors among the clustered cells. Outliers are assigned to the same cluster as that of the majority of its neighbors. This minor extension to HDBSCAN is available as the built-in function hdbknn_clustering in SAM. SC3 was run using default parameters. The SIMLR package was implemented in R and run with the normalization parameter set to \u2018True\u2019, which mean-centers gene expressions after normalizing them to be between 0 and 1. Both SC3 and SIMLR provide their own functions to estimate the number of clusters and cluster assignments.\n\nTo compare the quality of graphs generated by different methods, we use the NACC, modularity, and spatial dispersion. The NACC is the average of the local clustering coefficient for each node of a graph and quantifies the degree of structure in the graph (Watts and Strogatz, 1998). The local clustering coefficient is defined as\n\n$$\na_{i}=\\frac{L_{i}}{k_{i}k_{i}-1}\n$$\n\nwhere $L_{i}$ is the number of edges between the $k_{i}$ neighbors of node i and measures the degree of connectedness in a particular node\u2019s local neighborhood. We calculate the NACC using the implementation in graph-tool (Peixoto, 2017).\n\nThe modularity $Q$\u00a0of a graph is defined as\n\n$$\nQ=\\frac{1}{4m}\\sum_{i,j}^{c}A_{ij}-\\frac{k_{i}k_{j}}{2m}\\delta_{ij}\n$$\n\nwhere Aij is one if there is an edge from cell i to cell j, $k_{i}$\u00a0is the degree of cell i, $k_{j}$\u00a0is the degree of cell j, m is the total number of edges, and $\\delta_{ij}$ is 1 if cells i and j are in the same cluster or 0 otherwise. High modularity indicates that clusters have on average more edges within clusters than between clusters. To find the optimal modularity for a particular graph, we used Louvain clustering, which searches for a partition with maximum modularity.\n\nTo quantify the spatial organization of gene expression along the graph, we calculate the Euclidean norm of the largest 100 spatial dispersions. Spatial dispersion is defined as before in the SAM algorithm:\u00a0$F_{i}=\\frac{\\sigma_{C_{i}}^{2}}{\\mu_{C_{i}}}$, where $F_{i}$ is the Fano factor of the kNN-averaged expressions and\u00a0$C_{i}=\\frac{1}{k}NE_{i}$. $N$\u00a0is the directed adjacency matrix output by SAM or Seurat and $E_{i}$ is a column vector of expression values for gene i.\n\nTo measure the inherent sensitivity of each dataset, we randomly perturbed the gene expression matrices of each dataset by randomly sampling 2000 genes and applied PCA to the subsampled data. A correlation distance matrix was calculated from the top 15 PCs and perturbations were repeated 20 times to generate distance matrix replicates. Sensitivity is then defined as the average error across all pairwise comparisons between replicates. The error between two distance matrices j and k, $S_{jk}$, is defined as the average correlation distance between corresponding pairs of rows in the distance matrices $d_{j}$ and\u00a0$d_{k}$:\n\n$$\nS_{jk}=\\frac{1}{n}\\sum_{i=1}^{n}D{d_{j,i},d_{k,i}}\n$$\n\nwhere $D{d_{j,i},d_{k,i}}$\u00a0is the Pearson correlation distance between the distances from cell i in distance matrices j and k.\n\nWe simulated datasets with increasing sensitivity by introducing increasing degrees of corruption in each of the nine annotated datasets. To corrupt a dataset, we randomly permuted a fraction f of the elements in the expression matrix. The proportion of elements permuted corresponds to the degree of corruption, ranging from 0 to all elements. For each annotated dataset, we simulated 10 replicates per value of f. SAM and Seurat were run on each corrupted dataset, clustering was performed using the hdbknn_clustering function in SAM, and the ARI, NACC, modularity, and spatial dispersion metrics were recorded. The Area Under the Curve (AUC) was calculated for each metric with respect to f using the trapezoidal rule. Finally, to rescue the performance of Seurat, we used as input to Seurat the top 3000 genes with the highest SAM weights.\n\n### Gene set enrichment analysis (GSEA)\n\nGSEA (Subramanian et al., 2005) is typically run on a gene expression matrix with user-defined cluster assignments to quantify the differential expression for each gene. By default, differential expression is quantified using a signal-to-noise metric and the resulting scores are used to rank the genes in descending order. However, GSEA can also run in an alternative mode in which the user provides a predefined list of gene rankings. Therefore, we used the genes ranked by their SAM weights as input to GSEA to determine the biological processes enriched among the highly weighted genes. As shown in Figure 6a, we can directly test if SAM captures the relevant biological processes. GSEA provides a number of statistical measures to assess the significance of enriched gene sets, of which we use the False Discovery Rate (FDR). The FDR quantifies the likelihood that a highly enriched gene set represents a false positive. The significance threshold typically used with FDR is 25%, which implies that the results are likely to be valid 75% of the time.\n\n### Removal of cell cycle effects\n\nTo remove cell cycle effects from the macrophage dataset, we adopted a simpler version of the strategy used in ccRemover (Barron and Li, 2016), in which we subtract from the data PCs that are significantly associated with known cell cycle genes. Letting $P$\u00a0represent the PCs and $L$\u00a0be the gene loadings, we quantify the association between the set of cell cycle genes G and PC j as\n\n$$\nA_{j}=\\frac{1}{|G|}\\sumi\\inG|L_{ji}|\n$$\n\nPC j is selected if its association $A_{j}$ is at least two standard deviations above the mean of the associations for all PCs. In the particular case of the macrophage data, we identified the set of PCs $S={P_{0},P_{1},P_{8}}$\u00a0as being significantly associated with the cell cycle genes. We next reconstruct the data using these PCs, which thus captures the cell-cycle effects, and subtract the reconstructed data from the expression matrix E:\n\n$$\nE_{removed}=E\u2212\\sumj\\inSP_{j}L_{j}\\sqrt{W}\n$$\n\nWhen reconstructing the data, we scale the gene loadings by the SAM weights W so that only the highly weighted SAM genes (which are initially dominated by cell cycle genes) contribute to the cell cycle removal, as there may be other genes involved in other biological processes that could also be correlated with the PCs in S. To run SAM on the data with cell cycle effects removed, we use $E$\u00a0as opposed to $E_{removed}$ for the calculation of spatial dispersions, because the latter may contain negative values, for which dispersion is ill-defined. This method is made available as a part of the SAM package in the functions calculate_regression_PCs and regress_genes.\n\n### Clustering the NF-\u03baB activity time series\n\nThe original study combined imaging and transcriptomics to link NF-\u03baB nuclear translocation dynamics to changes in gene expression within single cells. Macrophages stimulated with LPS were individually trapped in microfluidic chambers and imaged for various lengths of time (75\u2013300 min) prior to scRNAseq library preparation. NF-\u03baB was tagged with a fluorescent protein, and its activation was measured as the nuclear-localized fluorescence intensity. Based on the imaging data, the authors identified three main classes of NF-\u03baB dynamics, the first with a transient initial response, the second with a prolonged initial response, and the third with a recurrent response. Because the recurrent response is found only in the 300 min time point (the latest time point in the study) and comprises only\u00a0~8% of these cells, we primarily focused on clustering cells based on their initial dynamics. To do this, we used the tslearn (Tavenard, 2017) python package to group cells based on their NF-\u03baB activity time series. Because these time series are quite noisy, we were conservative in labeling cells as having a prolonged initial response in an effort to avoid false positives. As a result, these cells comprise only\u00a0~30% of the dataset.\n\nFor the cells sampled at 75 and 150 min after LPS stimulation, we used the time series k-means algorithm with the softdtw distance metric to cluster them into three groups, which resulted in representative time series with transient, intermediate, and prolonged responses. Merging the cells with transient and intermediate responses into one cluster (which we simply labeled as transient response), we obtained the 75 and 150 min representative time series shown in Figure 6e. Because the cells sampled at 300 min displayed much more variability in their NF-\u03baB time series, we clustered them into six groups, labeling the cluster whose representative time series had the broadest initial peak as the prolonged response cluster (blue in Figure 6e, right). The remaining groups were labeled as the transient response cluster (blue in Figure 6e, left).\n\n### Correcting batch effects in the schistosome datasets\n\nWe used the Mutual Nearest Neighbors algorithm (Haghverdi et al., 2018) with default values to generate an expression matrix $E_{corrected}$ in which the batch effects between the 2.5-week and 3.5-week datasets were corrected for. To run SAM on the batch-corrected data, we use $E$\u00a0for the calculation of spatial dispersions as opposed to\u00a0$E_{corrected}$.\n\n### scRNAseq of schistosome stem cells\n\nSchistosome stem cells were isolated from juvenile parasites retrieved from infected mice at 2.5 and 3.5 weeks post infection. We followed the protocol as previously described (Wang et al., 2018). Briefly, we retrieved juvenile parasites from schistosome-infected mice (Swiss Webster NR-21963) by hepatic portal vein perfusion. Parasites were cultured at 37\u00b0C/5% CO2 in Basch Medium 169 supplemented with 1X Antibiotic-Antimycotic for 24\u201348 hr to allow complete digestions of host blood cell in parasite intestines. In adherence to the Animal Welfare Act and the Public Health Service Policy on Humane Care and Use of Laboratory Animals, all experiments with and care of mice were performed in accordance with protocols approved by the Institutional Animal Care and Use Committees (IACUC) of Stanford University (protocol approval number 30366).\n\nBefore dissociation, parasites were permeabilized in PBS containing 0.1% Triton X-100% and 0.1% NP-40 for 30 s and washed thoroughly to remove the surfactants. The permeabilized parasites were dissociated in 0.25% trypsin for 20 min. Cell suspensions were passed through a 100 \u03bcm nylon mesh (Falcon Cell Strainer) and centrifuged at 150 g for 5 min. Cell pellets were gently resuspended, passed through a 30 \u03bcm nylon mesh, and stained with Vybrant DyeCycle Violet (DCV; 5 \u00b5M, Invitrogen), and TOTO-3 (0.2 \u00b5M, Invitrogen) for 30\u201345 min. As the stem cells comprise the only proliferative population in schistosomes, we flow-sorted cells at G2/M phase of the cell cycle on a SONY SH800 cell sorter. Dead cells were excluded based on TOTO-3 fluorescence. Single stem cells were gated using forward scattering (FSC), side scattering (SSC), and DCV to isolate cells with doubled DNA content compared to the rest of the population (Wang et al., 2018). Cells that passed these gates were sorted into 384-well lysis plates containing Triton X-100, ERCC standards, oligo-dT, dNTP, and RNase inhibitor.\n\ncDNA was reverse transcribed and amplified on 384-well plate following the Smart-Seq2 protocol (Picelli et al., 2013). For quality control, we quantified the histone h2a (Smp_086860) levels using qPCR (the primers are listed in Supplementary file 4), as h2a is a ubiquitously expressed in all schistosomes stem cell (Collins et al., 2013; Wang et al., 2013; Wang et al., 2018). We picked wells that generated CT values within 2.5 CT around the most probable values (~45% of total wells, Figure 1\u2014figure supplement 1). cDNA was then diluted to 0.4 ng/\u00b5L for library preparation. Tagmentation and barcoding of wells were prepared using Nextera XT DNA library preparation kit. Library fragments concentration and purity were quantified by Agilent bioanalyzer and qPCR. Sequencing was performed on a NextSeq 500 using V2 150 cycles high-output kit at\u00a0~1 million reads depth per cell. Raw sequencing reads were demultiplexed and converted to fastq files using bcl2fastq. Paired-end reads were mapped to S. mansoni genome version WBPS9 (WormBase Parasite) using STAR. In 2.5 week dataset, 338 cells with more than 1700 transcripts expressed at\u00a0>2 TPM were used for downstream analysis. In the 3.5 weeks dataset, 338 cells with more than 1350 transcripts expressed at\u00a0>2 TPM were used for downstream analysis (Figure 1\u2014figure supplement 1).\n\n### In situ hybridization and EdU labeling\n\nRNA FISH experiments were performed as detailed in previous publications (Collins et al., 2013; Wang et al., 2013; Wang et al., 2018). Clones used for riboprobe synthesis were generated as described previously, with oligonucleotide primers listed in Supplementary file 4. Juvenile parasites were cultured with 10 \u00b5M EdU overnight, killed in 6 M MgCl2 for 30 s, and then fixed in 4% formaldehyde with 0.2% Triton X-100% and 1% NP-40. Fixed parasites were sequentially dehydrated in methanol, treated in 3% H2O2 for 30 min, and rehydrated. Parasites were permeabilized by 10 \u03bcg/mL proteinase K for 15 min and post fixed with 4% formaldehyde. The hybridization was performed at 52\u00b0C with riboprobes labeled with either digoxigenin-12-UTP (Roche) or fluorescein-12-UTP (Roche). For detection, samples were blocked with 5% horse serum and 0.5% of Roche Western Blocking Reagent, and then incubated with anti-digoxigenin-peroxidase (1:1000; Roche) or anti-fluorescein peroxidase (1:1500; Roche) overnight at 4\u00b0C for tyramide signal amplification (TSA). For double FISH, the first peroxidase was quenched for 30 min in 0.1% sodium azide solution before the detection of the second gene. After FISH, EdU detection was performed by click reaction with 25 \u03bcM Cy5-azide conjugates (Click Chemistry Tools). Samples were mounted in scale solution (30% glycerol, 0.1% Triton X-100, 4 M urea in PBS supplemented with 2 mg/mL sodium ascorbate) and imaged on a Zeiss LSM 800 confocal microscope.\n",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "c6c3a528-fe31-4d26-b84a-0210cbb90f1e",
+      "submission_id": "7c747532-dcaf-48ab-97c5-e50a1e5ea204",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alex K Shalek, Broad Institute of MIT and Harvard United States\n\nReviewers:\n- Itai Yanai, United States\n\n## Review text\n\nDOI: [10.7554/eLife.48994.125](https://doi.org/10.7554/eLife.48994.125)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Self-assembling manifolds in single-cell RNA sequencing data\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Alex K. Shalek as the Reviewing Editor and Naama Barkai as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Itai Yanai (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nTarashansky et al. detail a computational algorithm called SAM (Self-Assembling Manifold) that helps to identify meaningful clusters within single-cell RNA-Seq data. SAM iteratively re-weights gene expression by importance (as determined by variation across neighborhoods rather than individual cells) until convergence; the resulting nearest neighbor graph is then used for clustering, and gene weights can be used to indicate biological significance. The authors benchmark SAM using previously published data as well as a self-generated Schistosoma dataset that had proven difficult to cluster using existing methods. Overall, the manuscript is well written and the algorithm has the potential to be impactful.\n\nEssential revisions:\n\n\u2022 The authors should provide better documentation on SAM to make the scripts more understandable to a general audience and aid in its application to new datasets. Specific guidelines on the selection of variable parameters (e.g., SAM weight cutoffs; illustrated through the presented examples) are particularly important, as is examination of the extent to which SAM is confounded by integrating data across batches and methods. More example applications should be included in the documentation, as well as in-depth function descriptions.\n\n\u2022 A more comprehensive analysis of the parameter space for some of the existing methods (e.g., Seurat) should be performed to properly benchmark SAM. Utilizing data for which ground truth is known could be particularly illuminating. The authors should also discuss under what conditions SAM performs well to help guide its implementation.\n",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "257bb311-e9eb-4cb0-8c2a-7b50c56388a6",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C1",
+      "claim": "Single-cell RNA sequencing has spurred the development of computational methods that enable researchers to classify cell types, delineate developmental trajectories, and measure molecular responses to external perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNA sequencing has spurred the development of computational methods that enable researchers to classify cell types, delineate developmental trajectories, and measure molecular responses to external perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field supported by established scientific knowledge and the existence of such methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "dc6a64f9-42d1-4a33-bf8a-4cacac7a3370",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C2",
+      "claim": "Many computational methods for single-cell RNA sequencing rely on their ability to detect genes whose cell-to-cell variations arise from biological processes of interest rather than transcriptional or technical noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these technologies rely on their ability to detect genes whose cell-to-cell variations arise from the biological processes of interest rather than transcriptional or technical noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a fundamental requirement of computational methods in the field, based on established understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "efc73182-f238-48a4-a8d6-19513dcfa8b2",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C3",
+      "claim": "For datasets in which the biologically relevant differences between cells are subtle, identifying relevant genes is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for datasets in which the biologically relevant differences between cells are subtle, identifying these genes is challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the difficulty of analysis in certain datasets, supported by inference from the problem being addressed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "331c69e8-7d16-4b56-8afb-3b9d41337443",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C4",
+      "claim": "SAM is an iterative soft feature selection strategy to quantify gene relevance and improve dimensionality reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We present the self-assembling manifold (SAM) algorithm, an iterative soft feature selection strategy to quantify gene relevance and improve dimensionality reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the nature of the SAM algorithm as presented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "a65c7d3e-546a-46c8-8bdf-3634baec1efe",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C5",
+      "claim": "SAM was used to identify novel stem cell populations of Schistosoma mansoni with experimental validation.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate its advantages over other state-of-the-art methods with experimental validation in identifying novel stem cell populations of Schistosoma mansoni, a prevalent parasite that infects hundreds of millions of people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript including FISH validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "b736c260-29d7-440c-a3bb-714d9facdb30",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C6",
+      "claim": "Schistosoma mansoni is a prevalent parasite that infects hundreds of millions of people.",
+      "claim_type": "EXPLICIT",
+      "source": "Schistosoma mansoni, a prevalent parasite that infects hundreds of millions of people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the parasite cited in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e512b70c-57d7-45d6-98fd-dbb8f58a63d3",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C7",
+      "claim": "SAM was benchmarked on 56 datasets and consistently outperforms other methods in biological and quantitative benchmarks.",
+      "claim_type": "EXPLICIT",
+      "source": "Extending our analysis to a total of 56 datasets, we show that SAM is generalizable and consistently outperforms other methods in a variety of biological and quantitative benchmarks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the benchmarking data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "ac7ee82e-d48a-4df6-a859-e8b4e180ba1d",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C8",
+      "claim": "Current feature selection methods filter genes based on arbitrarily or empirically chosen thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "First, feature selection methods filter genes based on arbitrarily or empirically chosen thresholds, small changes in which may result in different gene sets (Vallejos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "048e851d-3841-4ea0-8fb2-12a77d7973d6",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C9",
+      "claim": "Small changes in feature selection thresholds may result in different gene sets.",
+      "claim_type": "EXPLICIT",
+      "source": "First, feature selection methods filter genes based on arbitrarily or empirically chosen thresholds, small changes in which may result in different gene sets (Vallejos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vallejos et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "332995d3-1920-4a12-924e-cd99086d01e1",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C10",
+      "claim": "Feature selection typically operates under the assumption that genes with highly variable expression between individual cells capture biologically meaningful variation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the selection of features typically operates under the assumption that genes with highly variable expression between individual cells capture biologically meaningful variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a common assumption in the field based on established practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "88d39bf0-3e7a-4f53-9e72-b4f35789f398",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C11",
+      "claim": "Single-cell transcriptomes are inevitably contaminated by a combination of random transcriptional and technical noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Because single-cell transcriptomes are inevitably contaminated by a combination of random transcriptional and technical noise (Gr\u00fcn et al., 2014), the variation in biologically relevant genes may be hard to distinguish from the background noise, especially when the differences between cell populations are subtle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gr\u00fcn et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "851ef9ab-9707-456a-8c48-94ae98f585ee",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C12",
+      "claim": "The variation in biologically relevant genes may be hard to distinguish from background noise when differences between cell populations are subtle.",
+      "claim_type": "EXPLICIT",
+      "source": "Because single-cell transcriptomes are inevitably contaminated by a combination of random transcriptional and technical noise (Gr\u00fcn et al., 2014), the variation in biologically relevant genes may be hard to distinguish from the background noise, especially when the differences between cell populations are subtle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the presence of noise and the nature of subtle differences.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "62ba475f-4052-4711-addd-f2c72abfbe17",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C13",
+      "claim": "Resolving subtle signals is essential to study biological problems including identifying cell subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Resolving these differences, or 'signals', is essential to study a variety of biological problems, including identifying cell subtypes (Olsson et al., 2016; Treutlein et al., 2014; L\u00f6nnberg et al., 2017; Fincher et al., 2018; Baron et al., 2016; Schwalie et al., 2018) and quantifying the effects of molecular perturbations to otherwise homogeneous populations of cells (Lane et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e868cf85-5851-4b4f-ba98-fe20626bf94e",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C14",
+      "claim": "In datasets with subtle differences, only a small fraction of genes may contain signals relevant for distinguishing cell types or states.",
+      "claim_type": "EXPLICIT",
+      "source": "In such datasets, only a small fraction of the genes, and therefore only a small fraction of the total variation, may contain the signals relevant for distinguishing cell types or cell states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the nature of datasets with subtle differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "2bf63826-dfe6-45c1-8493-70247edc5754",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C15",
+      "claim": "Choosing relevant features without a priori knowledge remains an unmet computational challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Choosing these features without a priori knowledge remains an unmet computational challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field and the problem being addressed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "dfaf711f-0d77-4746-bcf5-d080d3d09053",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C16",
+      "claim": "Existing methods have been almost exclusively benchmarked on well-annotated, gold standard datasets with clearly distinguishable cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The second limitation is that existing methods have been almost exclusively benchmarked on well-annotated, gold standard datasets with clearly distinguishable cell types (Wang et al., 2017; Kiselev et al., 2017; Du\u00f2 et al., 2019; Bahlo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior benchmarking studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "2421ce65-ef0d-4e32-a498-c76470fc7454",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C17",
+      "claim": "Well-annotated datasets with clearly distinguishable cell types are not informative for distinguishing performance between methods.",
+      "claim_type": "EXPLICIT",
+      "source": "These datasets are not informative for distinguishing the performance between methods, because the differences between cell types are relatively straightforward to detect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of current benchmarking approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e90f238e-3779-4dea-997e-2461a42e44e1",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C18",
+      "claim": "Evaluating performance on datasets with subtle signals is difficult because their ground truth labels are typically ambiguous or nonexistent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, evaluating the performance of feature selection and/or dimensionality reduction methods on datasets with more subtle signals is difficult as their ground truth labels are typically ambiguous or nonexistent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the challenges of benchmarking on certain types of datasets.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "b29fe3dc-7b88-46db-bb6d-3074691f871d",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C19",
+      "claim": "SAM is an unsupervised, soft feature selection algorithm that iteratively rescales gene expressions to refine a nearest neighbor graph of cells until convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome the shortcomings of current feature selection approaches, here, we introduce the Self-Assembling Manifold (SAM) method, an unsupervised, 'soft feature selection' algorithm that iteratively rescales gene expressions to refine a nearest neighbor graph of cells until the graph converges to a stable solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of SAM as presented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "2e4d7769-cc67-424b-9b3b-d221aaffe019",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C20",
+      "claim": "At each iteration, SAM assigns more weight to genes that are spatially variable across the constructed graph.",
+      "claim_type": "EXPLICIT",
+      "source": "At each iteration, SAM assigns more weight to genes that are spatially variable across the constructed graph, and this weighted gene expression is then used to improve the next nearest neighbor assignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the iterative process of SAM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "8390bcbd-fe59-43ee-8958-a05a0558f0f2",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C21",
+      "claim": "SAM rescales all genes according to their weights, solving the problem of thresholding.",
+      "claim_type": "EXPLICIT",
+      "source": "SAM presents two advantages: it rescales all genes according to their weights, solving the problem of thresholding, and it prioritizes genes that are variable across the intrinsic manifold of the data rather than selecting genes that are variable across individual cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of SAM over other methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "11e61c7d-f001-4948-a80c-c0806cb81776",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C22",
+      "claim": "SAM prioritizes genes that are variable across the intrinsic manifold of the data rather than genes variable across individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "SAM presents two advantages: it rescales all genes according to their weights, solving the problem of thresholding, and it prioritizes genes that are variable across the intrinsic manifold of the data rather than selecting genes that are variable across individual cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key difference between SAM and other methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "4ba7cf26-9caf-4339-9290-ae7a349c53a6",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C23",
+      "claim": "A network sensitivity measure was defined to identify datasets with subtle signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to better distinguish the performance between methods, we define a network sensitivity measure to identify datasets with subtle signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "2160499d-2385-4285-8476-9dbc489920c8",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C24",
+      "claim": "Unsupervised graph-based metrics were introduced to quantify the degree of structure within reconstructed manifolds.",
+      "claim_type": "EXPLICIT",
+      "source": "With limited annotations in most high-sensitivity datasets, we introduce unsupervised graph-based metrics to quantify the degree of structure within the reconstructed manifolds for comparison between methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological contribution for benchmarking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "eb04144c-aca5-48bc-bfb2-3e27a8f74b92",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C25",
+      "claim": "Benchmarking was performed using simulated datasets spanning a wide range of sensitivities by introducing increasing levels of noise to well-annotated datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we perform benchmarking using known ground truth labels on simulated datasets spanning a wide range of sensitivities by introducing increasing levels of noise to well-annotated datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the benchmarking methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "1d72dd8a-af3d-4eb2-9ee8-e89eeb3d030d",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C26",
+      "claim": "SAM consistently improves feature selection and cell clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses reveal that SAM consistently improves feature selection and cell clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the benchmarking results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "5014f63e-c323-40aa-a7ff-818a4fe13b3b",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C27",
+      "claim": "SAM can capture novel biology undetectable by other methods in schistosome stem cells and activated macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate the utility of SAM in practice, we provide an in-depth analysis of two datasets that are challenging to analyze using existing methods: stem cells in a human parasitic worm, Schistosoma, and activated macrophages (Lane et al., 2017). We show that SAM can capture novel biology undetectable by other methods and validate these results with experimental evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental validation and analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "bf2569db-4093-4cc6-be15-ab0233b52ae2",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C33",
+      "claim": "Schistosoma mansoni stem cells were collected by sorting dividing cells from juvenile parasites harvested from mouse hosts at 2.5 weeks post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a protocol we have established previously (Wang et al., 2018), these cells were collected by sorting dividing cells from juvenile parasites harvested from their mouse hosts at 2.5 weeks post infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used to collect cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "2cbbc677-2577-4312-85d8-a9030515494c",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C34",
+      "claim": "At 2.5 weeks post infection, schistosome parasites use an abundant stem cell population (~15\u201320% of total cells) for rapid organogenesis and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "At this stage, the parasites use an abundant stem cell population (~15\u201320% of the total number of cells) for rapid organogenesis and growth (Wang et al., 2013; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "ee805ae7-dbc3-4961-ac35-155490cb2276",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C35",
+      "claim": "Several existing methods (Wang et al., 2017; Kiselev et al., 2017; Satija et al., 2015) were not able to identify distinct cell populations in the schistosome stem cell dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing several existing methods (Wang et al., 2017; Kiselev et al., 2017; Satija et al., 2015), we found that they were not able to identify distinct cell populations in this dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparative analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "a44cc8be-6788-454d-a598-3f2f732e0c45",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C36",
+      "claim": "SAM finds a stable solution independent of initial conditions for the schistosome stem cell dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SAM finds a stable solution independent of initial conditions (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the convergence analysis shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "9eef9d16-8a52-4f7d-b2b3-2bdfab9e8fb7",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C37",
+      "claim": "A graph structure with clearly separated cell populations self-assembles through the SAM iterative process.",
+      "claim_type": "EXPLICIT",
+      "source": "A graph structure with clearly separated cell populations self-assembles through the iterative process (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1c which visualizes the iterative process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "dad51d1a-d40b-4b90-921d-0672887462dc",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C38",
+      "claim": "Only a small fraction of genes (~1%) are strongly weighted by SAM in the schistosome dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, only a small fraction of genes (~1%) are strongly weighted and useful for separating cell clusters, reflecting the inherent difficulty of analyzing this dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1c and reflects the analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "d26ca16c-064e-4062-b6c2-51d86c491676",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C39",
+      "claim": "SAM iteratively improves network-average clustering coefficient, modularity, and Euclidean norm of spatial dispersions.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1d shows that SAM iteratively improves a series of graph characteristics, including the network-average clustering coefficient (NACC), modularity, and Euclidean norm of the spatial dispersions (Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "97082846-a6b9-4516-a69d-1614ada16fb3",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C40",
+      "claim": "NACC and modularity quantify the degree of structure within graphs.",
+      "claim_type": "EXPLICIT",
+      "source": "The NACC and modularity quantify the degree of structure within the graphs \u2013 graphs with high NACC and modularity have regions of high density separated by regions of low density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of these graph metrics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "9c81e318-65e8-427a-a5b3-dd7dc331407e",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C41",
+      "claim": "Spatial dispersion quantifies the spatial organization of gene expression along the graph.",
+      "claim_type": "EXPLICIT",
+      "source": "The dispersion quantifies the spatial organization of gene expression \u2013 the higher the spatial dispersion the less uniformly distributed the gene expressions are along the graph.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the spatial dispersion metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "6629c98a-d242-4c5a-9f6e-261bf6363acb",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C42",
+      "claim": "SAM's final graph metrics are independent of initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The final graph metrics are independent of initial conditions, which can start from a random graph or the output of an existing manifold reconstruction algorithm (e.g. Seurat, Satija et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the convergence analysis in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "4b4bb322-c840-4d28-aa62-70f1f0b3c95a",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C43",
+      "claim": "SAM does not artificially boost graph metrics in data that lack inherent structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we verified that SAM does not artificially boost these metrics in data that lack inherent structure: when applying SAM to a randomly shuffled expression matrix, none of these metrics increased from the random initial conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the control experiment with shuffled data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "bc813ef0-aff9-4d74-ad04-1f724573cfe1",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C44",
+      "claim": "SAM identifies three main populations in schistosome stem cells, with one further split into two subpopulations by Louvain clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Visualizing the converged graph in two dimensions using Uniform Manifold Approximation and Projection (Becht et al., 2019), we find that cells can be separated into three main populations, with Louvain clustering (Blondel et al., 2008) further splitting one of these clusters into two subpopulations (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2a and describes the clustering results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "5af64b2b-34b0-4b95-80e7-87f1ce0f4758",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C45",
+      "claim": "PCA, Seurat, and SIMLR failed to distinguish schistosome stem cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, other commonly used dimensionality reduction methods, such as principal component analysis (PCA), Seurat (Satija et al., 2015), and SIMLR (Wang et al., 2017), failed to distinguish these cell populations (see Materials and methods for the selection of algorithms for comparison).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the comparative analysis shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "14be9486-afe0-41bf-b268-9685ac417ea0",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C46",
+      "claim": "Clustering the Seurat graph using Louvain clustering results in low-modularity partition and poor correspondence to SAM cluster assignments.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering the Seurat graph using Louvain clustering still results in a low-modularity partition and poor correspondence to the SAM cluster assignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the comparative analysis of clustering results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e1f197d5-1124-42bc-b0aa-a8c75c3a60d4",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C47",
+      "claim": "SAM-identified genes include most markers previously implicated to be enriched in subsets of schistosome stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Supplementary file 1 lists genes with high SAM weights, which includes most markers previously implicated to be enriched in subsets of schistosome stem cells (Wang et al., 2013; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "7612a29c-d82d-4d67-a538-9c058191fd50",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C48",
+      "claim": "The three schistosome stem cell populations include previously characterized \u03b4\u2032-cells expressing nanos-2 and \u03b5-cells expressing eledh.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2b shows that the three populations include previously characterized \u03b4\u2032-cells, which specifically express an RNA binding protein nanos-2 (Smp_051920), and \u03b5-cells, which are marked by the expression of eledh (eled, Smp_041540) (Wang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2b and supported by citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e6fd1313-03f1-44eb-96bb-fe9cb6914f0c",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C49",
+      "claim": "SAM reveals a novel stem cell population \u03bc comprising ~30% of all sequenced schistosome cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, SAM reveals a novel stem cell population, \u03bc, comprising ~30% of all sequenced cells (\u03bc denotes muscle progenitors as discussed below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel finding from the SAM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "5110bc67-e6b5-4320-adb2-6bd866376331",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C50",
+      "claim": "\u03bc-cells express ubiquitous stem cell markers and cell cycle regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03bc-cells express ubiquitous stem cells markers (e.g. ago2-1, Smp_179320; cyclin B, Smp_082490) and cell cycle regulators (Figure 2\u2014figure supplement 1a) (Collins et al., 2013; Wang et al., 2013; Wang et al., 2018), they are also strongly enriched for a large set of genes, with a calcium binding protein (cabp, Smp_005350), an actin protein (Smp_161920), an annexin homolog (Smp_074140), a helix-loop-helix transcription factor (dhand, Smp_062490), and a phosphatase (dusp10, Smp_034500) as the most specific markers of this population in comparison to other stem cells (Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e3ad29f2-0de7-48b8-a7c2-6c5d484458d1",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C51",
+      "claim": "FISH with EdU labeling reveals that \u03bc-cells (cabp+EdU+) are distributed near the parasite surface beneath a layer of post-mitotic cabp+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent in-situ hybridization (FISH) in conjunction with EdU labeling of dividing cells reveals that \u03bc-cells (cabp+EdU+) are distributed near the parasite surface right beneath a layer of post-mitotic differentiated cells that also express cabp (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FISH experiments shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "87c3a86f-cd1e-4d68-a95a-7dd70cb74c83",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C52",
+      "claim": "\u03bc-cells express none of the recently identified markers in tegumental progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, \u03bc-cells express none of the recently identified markers in tegumental progenitors (Wendt et al., 2018), suggesting that they may be associated with the muscle lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison to markers from prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "8d7c7c07-78ee-487e-bd2d-c20448f32834",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C53",
+      "claim": "Post-mitotic cabp+ cells coexpress canonical muscle markers including tropomyosin, myosin, troponin, and collagen.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this idea, we performed double FISH experiments and observed in post-mitotic cabp+ cells the coexpression of a set of canonical muscle markers (Witchley et al., 2013), including tropomyosin (Smp_031770), myosin (Smp_045220), troponin (Smp_018250), and collagen (Smp_170340) (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by double FISH experiments shown in Figure 2d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "f43dfc07-1bec-4ed2-a3ab-940323acef13",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C54",
+      "claim": "cabp may mark the parasite body wall muscles and \u03bc-cells are likely muscle progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that cabp may mark the parasite body wall muscles and \u03bc-cells are likely muscle progenitors, although functional validation is required to support this observation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the FISH colocalization data, with the caveat that functional validation is needed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "8c649a68-857d-4e52-8624-b2d53e47e961",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C55",
+      "claim": "SAM identifies two subpopulations among \u03b5-cells: \u03b5\u0251-cells enriched for astf and \u03b5\u03b2-cells expressing bhlh.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SAM identifies two subpopulations among \u03b5-cells: \u03b5\u0251-cells that are highly enriched for an aschaete-scute transcription factor (astf, Smp_142120), and \u03b5\u03b2-cells that abundantly express another basic helix-loop-helix protein (bhlh, Smp_087310) (Figure 2b, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "868fef50-6e18-4aba-93d6-95730afa2580",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C56",
+      "claim": "FISH experiments confirm astf+ and bhlh+ cells are in close spatial proximity but with no coexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "FISH experiments confirm these cells to be in close spatial proximity but with no coexpression of astf and bhlh (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FISH experiments shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "73ef69ab-03dd-47e3-8f1b-af3b78645cca",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C57",
+      "claim": "There are fewer astf+ cells in larger, more matured juvenile schistosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed with FISH that there are fewer astf+ cells in larger, more matured juveniles, suggesting \u03b5\u0251-cells are a dynamic population during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on FISH observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "c4917fe3-9214-4b68-86eb-f4236314841b",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C58",
+      "claim": "\u03b5\u0251-cells comprise 21% of stem cells at 2.5 weeks and 7% at 3.5 weeks post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify this observation, we sequenced another ~370 stem cell from juveniles at a later developmental time point (3.5 weeks post infection). After correcting for batch effects in the combined 2.5- and 3.5- week datasets using the mutual nearest neighbors (MNN) algorithm (Haghverdi et al., 2018), we find that \u03b4\u2032-, \u03bc-, and \u03b5\u03b2-cells remain relatively constant throughout both time points, whereas \u03b5\u0251-cells comprise a significantly smaller fraction of the stem cells at 3.5 weeks (7%) compared to 21% at 2.5 weeks (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by analysis of the combined dataset shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "550518da-3ed1-4f84-9a63-aeeae72bfbf5",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C59",
+      "claim": "\u03b4\u2032-, \u03bc-, and \u03b5\u03b2-cells remain relatively constant between 2.5 and 3.5 weeks post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "After correcting for batch effects in the combined 2.5- and 3.5- week datasets using the mutual nearest neighbors (MNN) algorithm (Haghverdi et al., 2018), we find that \u03b4\u2032-, \u03bc-, and \u03b5\u03b2-cells remain relatively constant throughout both time points, whereas \u03b5\u0251-cells comprise a significantly smaller fraction of the stem cells at 3.5 weeks (7%) compared to 21% at 2.5 weeks (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "ff8a37f0-2cc5-43eb-9d95-d9bcba45a80b",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C60",
+      "claim": "SAM prioritizes genes with variable expressions across neighborhoods of cells rather than individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical difference between SAM and other methods lies in how they select genes for manifold reconstruction. SAM prioritizes genes with variable expressions across neighborhoods of cells rather than individual cells as in other methods (e.g. Seurat).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key methodological difference between SAM and other methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "c979cf71-8704-41f7-a319-710f03b31741",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C61",
+      "claim": "Genes with high standardized dispersion across individual cells often have low SAM weights.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2g shows that genes with high standardized dispersion across individual cells often have low SAM weights, indicating that these highly variable genes (HVGs) are irrelevant to the topological relationships between cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "f0d23569-63db-49ae-a94d-9f77008b3ba5",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C62",
+      "claim": "SC3 failed in default mode as it incorrectly predicted only one cluster in the schistosome dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, SC3 failed in the default mode as it incorrectly predicted there to be only one cluster in the schistosome dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the performance of SC3 on the schistosome dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "66e43d77-2aea-47c3-ba7f-189fce283fd6",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C63",
+      "claim": "After manually increasing the number of clusters, SC3 could recover a few marker genes associated with only \u03bc-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After we manually increased the number of clusters, SC3 could recover a few of the marker genes associated with only one (\u03bc-cells, blue symbols in Figure 2h) of the populations detected by SAM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "3e49e34e-66bd-4ef0-a71f-15dabee2d15a",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C64",
+      "claim": "Changing the number of clusters in SC3 resulted in different solutions and large variability in scores for top ranked genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, changing the number of clusters resulted in different solutions and large variability in SC3 scores for its top ranked genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the instability of SC3 results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "ce534cc9-a496-4282-8043-8b488ff3f7c2",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C65",
+      "claim": "SAM has the highest Adjusted Rand Index for five out of nine annotated datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "For five out of the nine datasets, SAM has the highest Adjusted Rand Index (ARI, a measure of clustering accuracy) (Hubert and Arabie, 1985) with respect to the provided annotations (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "8dbdff9b-f105-4209-ab75-f213692d5860",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C66",
+      "claim": "On four Baron datasets, SAM and Seurat perform equally well with near perfect clustering accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "On the remaining four Baron datasets, SAM and Seurat perform equally well with near perfect clustering accuracy, whereas SC3 and SIMLR tend to overestimate and underestimate the number of clusters, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "ab2c37ee-11d5-4e69-b659-fcc07ee59466",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C67",
+      "claim": "SC3 and SIMLR struggle to cleanly cluster cell types that constitute large fractions of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "SC3 and SIMLR struggle to cleanly cluster cell types that constitute large fractions of the data, such as the alpha and beta cells in the pancreatic datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of clustering results in Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "d83a3a65-adc9-4319-a9ac-14dcb2f5e008",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C68",
+      "claim": "Seurat fails to identify alpha cells in the Wang and Muraro datasets when run with default parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "While Seurat performs well on the Baron datasets, it fails to identify alpha cells in the Wang and Muraro datasets when run with default parameters, although its performance is improved after optimizing parameters to maximize its clustering accuracy (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "72372df1-49dd-449c-a58b-779abf433e7f",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C69",
+      "claim": "Even with optimal parameters, Seurat has accuracy lower than or equal to SAM on all datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, even with optimal parameters, Seurat has accuracy lower than or equal to that of SAM on all datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "8f1e5e1a-1823-4cb5-b959-7ead369da5f7",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C70",
+      "claim": "SAM converges to the same set of gene weights for all datasets analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "SAM converges to the same set of gene weights for all datasets analyzed (Figure 3b, Figure 3\u2014figure supplement 1a) and its performance is robust to the choice of parameters and random initial conditions (Figure 3\u2014figure supplement 1b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3b and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "066d85ac-aaf2-47eb-8c57-3e4e4488bed0",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C71",
+      "claim": "SAM does not converge to a stable solution on randomly generated datasets with no intrinsic structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, applying SAM to randomly generated datasets (Materials and methods), the resulting gene weights are highly dissimilar across random initial conditions (Figure 3b), indicating that SAM does not converge to a stable solution on datasets with no intrinsic structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e84ea950-418c-4652-9683-1fc5a926aa94",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C72",
+      "claim": "SAM's scalability is similar to Seurat, capable of analyzing hundreds of thousands of cells in minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the scalability of SAM is similar to that of Seurat, capable of analyzing hundreds of thousands of cells in minutes (Figure 3c), whereas SIMLR and SC3 are orders of magnitudes slower and thus excluded from further benchmarking which requires the analysis of many more datasets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "1f7d5b84-7baa-49d1-ae19-730ebdb38cdd",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C73",
+      "claim": "SIMLR and SC3 are orders of magnitude slower than SAM and Seurat.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the scalability of SAM is similar to that of Seurat, capable of analyzing hundreds of thousands of cells in minutes (Figure 3c), whereas SIMLR and SC3 are orders of magnitudes slower and thus excluded from further benchmarking which requires the analysis of many more datasets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "d1a2af52-ca76-41b9-8539-e39948a796ad",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C74",
+      "claim": "Network sensitivity quantifies changes in cell-to-cell distances when randomly selecting a subset of features.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify such datasets, we introduce a network sensitivity metric that quantifies the changes in the cell-to-cell distances when randomly selecting a subset of features from the gene expression matrices (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the network sensitivity metric introduced in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "b3adc926-dcae-4e24-b840-60f1f29ca9de",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C75",
+      "claim": "High network sensitivity indicates that changes to selected features strongly alter the resulting topological network.",
+      "claim_type": "EXPLICIT",
+      "source": "High network sensitivity indicates that changes to the selected features strongly alters the resulting topological network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of network sensitivity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "96b240ac-f902-4f10-a7a8-c6db863b68c2",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C76",
+      "claim": "Networks robust to selected features correspond to datasets with many redundant signals or genes corroborating the network structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Networks that are robust to the selected features correspond to datasets that have many redundant signals or genes corroborating the network structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of low network sensitivity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "a0a94575-4a13-4639-8361-710c48fa514d",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C77",
+      "claim": "All broadly used benchmarking datasets have lower sensitivities whereas the schistosome dataset has the highest sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the datasets we compiled (Supplementary file 2), all broadly used benchmarking datasets have lower sensitivities whereas the schistosome dataset, which we have shown to be challenging to analyze, has the highest sensitivity (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "b3049c8d-9472-4592-84f7-319e16981660",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C78",
+      "claim": "The fraction of genes with large SAM weights is negatively correlated with network sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of genes with large SAM weights (>0.5) is negatively correlated with the network sensitivity, suggesting that the biologically relevant variation in datasets with high sensitivity is captured by relatively fewer genes (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "ce6ebba6-a0ce-4f9b-8dfc-3840c08e8eb9",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C79",
+      "claim": "SAM improves clustering, modularity, and spatial organization of gene expression compared to Seurat as datasets become increasingly sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing all 56 datasets, we found that SAM improves the clustering, modularity, and spatial organization of gene expression across the graph in comparison to Seurat as the datasets become increasingly sensitive (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e731efab-4ccb-485a-9c63-3896e4e91a55",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C80",
+      "claim": "SAM's ARI scores only marginally decrease as corruption increases below ~50%, whereas Seurat's performance rapidly deteriorates.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated by the Darmanis dataset (Darmanis et al., 2015), Figure 5a shows that the sensitivity increases along with the corruption. Below ~50% corruption, SAM's ARI scores only marginally decrease as the corruption (and thereby sensitivity) increases, whereas Seurat's performance rapidly deteriorates, even when run with optimal parameters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "9b6ce465-1a9d-407e-85a9-c3c2680e01e0",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C81",
+      "claim": "Passing genes with high SAM weights into Seurat rescued its performance across all metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, passing the genes with high SAM weights into Seurat rescued its performance across all metrics, indicating that SAM is able to consistently capture the genes relevant to the underlying structure of the data even with increasing levels of noise and illustrating the robustness of its feature selection strategy compared to the HVG filtering approach used by Seurat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "34da7247-b30c-4bd8-b7cb-f7bcd0d8bc73",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C82",
+      "claim": "SAM initially identifies two clusters in the macrophage dataset, one enriched for cell cycle genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to this dataset, SAM initially identifies two clusters (Figure 6a, top). Performing gene set enrichment analysis (GSEA, Subramanian et al., 2005), we find that genes with high SAM weights are dominated by cell cycle-related processes, with one of the clusters heavily enriched for cell cycle genes (e.g. Top2a, Mki67, Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6a and Figure 6\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "0d844aa9-2977-4de4-9834-36c3e11d5832",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C83",
+      "claim": "After removing cell cycle effects, SAM identifies two different clusters in which cells are properly ordered by time since LPS induction.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing the cell cycle effects (Materials and methods), SAM identifies two different clusters in which cells are properly ordered by the time since LPS induction, with the highly weighted genes being primarily involved in immune signaling (Figure 6a, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6a bottom.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "2cef0347-fa94-4781-aca3-8f92cfc48812",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C84",
+      "claim": "After removing cell cycle effects, highly weighted genes in the macrophage dataset are primarily involved in immune signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing the cell cycle effects (Materials and methods), SAM identifies two different clusters in which cells are properly ordered by the time since LPS induction, with the highly weighted genes being primarily involved in immune signaling (Figure 6a, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6a bottom.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "76978fe3-d071-4e1a-9d25-e1928441ea68",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C85",
+      "claim": "Quantitative gene weights output by SAM can be used with GSEA to infer biological pathways that drive cell clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations demonstrate that, in conjunction with GSEA, the quantitative gene weights output by SAM can be used to infer the biological pathways that drive the clustering of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the macrophage analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "c8e2ecc6-34d2-47f2-a6d4-eca5b2fe3d46",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C86",
+      "claim": "One of the two macrophage clusters is enriched for TNF\u03b1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the two clusters is enriched for TNF\u03b1 expression (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "03f858c8-677b-4079-a8e6-a6333b75ef2a",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C87",
+      "claim": "LPS activates two independent pathways: one through Myd88 and another through TRIF.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that LPS activates two independent pathways, one through the innate immune signal transduction adaptor (Myd88) and the other through the TIR-domain-containing adapter-inducing interferon-\u03b2 (TRIF) (Lee et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "5f1bef47-1843-44b7-a25e-fdd491050434",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C88",
+      "claim": "The Myd88 pathway directly activates NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Myd88 pathway directly activates NF-\u03baB, the TRIF pathway first induces the secretion of TNF\u03b1, which subsequently binds to its receptor, TNFR, to prolong the activation of NF-\u03baB (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge illustrated in Figure 6c.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "0668c2df-879b-4d04-9a05-bb82e0719528",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C89",
+      "claim": "The TRIF pathway induces TNF\u03b1 secretion, which binds to TNFR to prolong NF-\u03baB activation.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Myd88 pathway directly activates NF-\u03baB, the TRIF pathway first induces the secretion of TNF\u03b1, which subsequently binds to its receptor, TNFR, to prolong the activation of NF-\u03baB (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge illustrated in Figure 6c.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "296b76b6-bbd4-452f-8b0c-50da5c08f057",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C90",
+      "claim": "SAM grouped macrophage cells based on their activated signaling pathways: MT cluster activated through both Myd88 and TRIF, M cluster only through Myd88.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that SAM grouped the cells based on their activated signaling pathways: one cluster is activated through both Myd88 and TRIF pathways (MT), while the other is only activated through Myd88 (M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the gene expression patterns and known biology.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "47ea7ab7-33be-47c1-b1d6-408f3b6f5a86",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C91",
+      "claim": "Most cells with prolonged NF-\u03baB response are in the MT cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most of the cells with prolonged NF-\u03baB response (i.e. cells showing broad peaks of NF-\u03baB activation in time) are in fact in the MT cluster (Figure 6e\u2013f, and Figure 6\u2014figure supplement 2a), consistent with the expectation that TNF\u03b1 signaling prolongs NF-\u03baB activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6e-f and Figure 6\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "3f4d411a-72d4-438b-bc3b-3b80a1052463",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C92",
+      "claim": "Seurat and SIMLR were unable to order macrophage cells by time since LPS induction or group cells based on activation dynamics after removing cell cycle effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Seurat and SIMLR were unable to order the cells by the time since LPS induction or group cells based on their activation dynamics after removing the cell cycle effects (Figure 6g, and Figure 6\u2014figure supplement 2b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6g and Figure 6\u2014figure supplement 2b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "8be6aa3f-3743-4bb7-b33c-e7efb465ce90",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C93",
+      "claim": "SAM uses an unsupervised, robust, and iterative strategy for feature selection and manifold reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduced a scRNAseq analysis method, SAM, which uses an unsupervised, robust, and iterative strategy for feature selection and manifold reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the key characteristics of SAM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "efa5a878-775c-43d5-b54d-bd34ae92aafb",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C94",
+      "claim": "SAM can capture biology that is undetectable by other methods in schistosome stem cells and activated macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated by our analysis of the schistosome stem cells and activated macrophages, SAM can capture biology that is undetectable by other methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the case studies presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "271ea9c6-9f05-48de-8eb5-fe93ca8a600d",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C95",
+      "claim": "SAM has consistently higher clustering accuracy than other state-of-the-art methods on datasets containing clearly distinct cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "While SAM has consistently higher clustering accuracy than other state-of-the-art methods on datasets containing clearly distinct cell types, its advantages are especially apparent on datasets in which cell states or types are only distinguishable through subtle differences in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the benchmarking results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "51af65a8-7a6d-49da-96a1-b574e3d8a137",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C96",
+      "claim": "SAM's advantages are especially apparent on datasets where cell states or types are only distinguishable through subtle differences in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While SAM has consistently higher clustering accuracy than other state-of-the-art methods on datasets containing clearly distinct cell types, its advantages are especially apparent on datasets in which cell states or types are only distinguishable through subtle differences in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the sensitivity analysis and benchmarking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "5a3f1bd7-816d-4f1b-acb8-60af7fddeaa0",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C97",
+      "claim": "The strength of SAM lies in the integration of three algorithmic components: spatial dispersion, soft feature selection, and the iterative scheme.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of SAM lies in the integration of three algorithmic components: spatial dispersion to measure feature relevance, soft feature selection, and the iterative scheme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the key algorithmic components of SAM.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "d9a5c2be-e566-4823-a522-153f1b8a88eb",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C98",
+      "claim": "Spatial dispersion quantifies variation across neighborhoods of cells by averaging gene expression of a cell with its neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "By averaging the gene expression of a cell with that of its neighbors, the spatial dispersion quantifies the variation across neighborhoods of cells rather than individual cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how spatial dispersion works in SAM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "77d4363b-dd32-469a-bcbd-e6ced85fa011",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C99",
+      "claim": "Genes with high spatial dispersion are more likely to be biologically relevant as they separate cells into distinct topological locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with high spatial dispersion are more likely to be biologically relevant as they are capable of separating cells into distinct topological locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the biological relevance of spatially dispersed genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "45b034ac-3a82-4bae-9364-f67e1f8ae1bb",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C100",
+      "claim": "Soft feature selection includes all genes and weights their contribution to manifold reconstruction by their spatial dispersions.",
+      "claim_type": "EXPLICIT",
+      "source": "Soft feature selection includes all genes and weights their contribution to the manifold reconstruction by their spatial dispersions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the soft feature selection approach in SAM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "c7f715bf-2576-4bd9-9b3a-dbf0bfe84a75",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C101",
+      "claim": "Soft feature selection mitigates the shortcoming of binary gene selection based on arbitrary thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "This mitigates the shortcoming of existing approaches in which the selection of features is a binary decision: genes are either included or not depending on arbitrarily chosen thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantage of soft feature selection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "5f171e34-72e8-46ac-b01c-022b4f45f898",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C102",
+      "claim": "SAM uses an iterative strategy to converge onto both gene weights and graph topology from a random initial graph.",
+      "claim_type": "EXPLICIT",
+      "source": "SAM thus uses an iterative strategy to converge onto both the gene weights and the corresponding graph topology from a random initial graph.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the iterative approach of SAM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "1be5aa2b-fda2-4873-b6e8-b53a89fef923",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C103",
+      "claim": "For all datasets analyzed, SAM converges onto a stable solution and is robust to random initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirically, for all datasets analyzed we have shown that SAM converges onto a stable solution and is robust to the random initial conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the convergence analysis across datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "8dda1440-ac47-41e7-816e-8dcfdf5813b7",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C104",
+      "claim": "SAM can be initialized using the graph output of another method such as Seurat.",
+      "claim_type": "EXPLICIT",
+      "source": "Practically, it is possible to initialize SAM using the graph output of another method such as Seurat (Figure 1d), but using random initial conditions avoids potential biases in the analysis and enables the evaluation of the stability of SAM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "b00676b5-6699-4a54-ace1-b4f56f0c56c6",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C105",
+      "claim": "SAM identified novel stem cell populations in schistosomes that were validated by FISH experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate the strengths of SAM in practice, we analyzed the schistosome stem cells and identified novel stem cell populations that were validated by FISH experiments (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e4bec76b-322d-42fe-8ffc-de85ef870dd0",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C106",
+      "claim": "In the macrophage analysis, SAM can simultaneously order cells by time since LPS induction and group cells according to their activated signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In the analysis of activated macrophages, we showed that SAM can simultaneously order cells by the time since LPS induction and group cells according to their respective activated signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "66be495d-117a-4cd4-8910-29f3c6a57e95",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C107",
+      "claim": "SAM's gene weights and reconstructed manifolds can be used in downstream analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that the application of SAM is not limited to feature selection, cell clustering, and manifold reconstruction; it can be readily integrated with existing analytical pipelines as its gene weights and reconstructed manifolds can be used in downstream analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential applications of SAM.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "82086f22-51ba-4f0c-82d1-113f04e325c0",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C108",
+      "claim": "Genes ranked by SAM weights can be used as input to GSEA to determine enriched biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we have shown how the genes ranked by their SAM weights can be used as input to GSEA to determine the biological processes enriched among the highly weighted genes (Figure 6), thus directly testing if the weights reflect the biological relevance of genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "862d6d5c-46f1-4314-ada5-a7b95ead183b",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C109",
+      "claim": "The manifold reconstructed by SAM can be used as input to pseudotemporal ordering algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the manifold reconstructed by SAM can be used as input to pseudotemporal ordering algorithms (Setty et al., 2016; Trapnell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential applications supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "3fc78300-c282-4308-a949-e2f6ed0e52e4",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C110",
+      "claim": "SAM was rigorously evaluated on a total of 56 datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the two example case studies, we have rigorously evaluated SAM on a total of 56 datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of benchmarking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "95b6d05d-1a08-44ff-ba17-e35e20f02704",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "claim_id": "C111",
+      "claim": "Network sensitivity and quantitative benchmarking metrics should help characterize the performance of future scRNAseq analysis methods across a wider variety of datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the network sensitivity and quantitative benchmarking metrics should help in characterizing the performance of future scRNAseq analysis methods across a wider variety of datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the introduced metrics.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "59d6c648-030f-4236-ae04-329b626a986c",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SAM is an iterative soft feature selection algorithm that prioritizes genes variable across neighborhoods rather than individual cells, rescales all genes by spatial dispersion weights to avoid arbitrary thresholding, and converges to stable gene weights and graph topology through iteration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C19-C22, C97-C102 collectively describe SAM's algorithmic approach with clear methodological details. The iterative process, spatial dispersion calculation, soft weighting scheme, and convergence properties are well-documented in the methods and demonstrated empirically across datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "9c015780-83c0-411f-95ac-82414e9f6024",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SAM converges to stable solutions independent of initial conditions on real datasets but not on randomly shuffled data, iteratively improving graph metrics (NACC, modularity, spatial dispersion) that quantify structure and gene expression organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C43, C70-C71, C103-C104 are supported by convergence analyses shown in Figures 1b-d and 3b. The control experiment with shuffled data (C43, C71) demonstrates SAM does not artificially create structure, strengthening the validity of the convergence claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SAM identified novel and previously characterized stem cell populations in Schistosoma mansoni that other methods (PCA, Seurat, SIMLR) failed to distinguish, revealing three main populations including \u03b4\u2032-cells, \u03b5-cells, and a novel \u03bc population comprising ~30% of cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C27, C33-C49, C94, C105 are supported by comparative analysis in Figure 2a showing SAM's superior performance and by identification of known markers (C47-C48). The discovery of the novel \u03bc population (C49) represents a major finding, though full functional validation is acknowledged as needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "c346290c-0cc4-4ebd-a073-e4cf81749a74",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The novel \u03bc-cells express stem cell markers and are spatially localized near the parasite surface beneath post-mitotic cabp+ cells that coexpress muscle markers (tropomyosin, myosin, troponin, collagen), suggesting \u03bc-cells are muscle progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by FISH experiments (Figures 2c-d) showing spatial localization and marker coexpression. The inference that \u03bc-cells are muscle progenitors (C54) is reasonable based on the data, though the authors appropriately note functional validation is required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "7ed2ac33-335e-4056-b20e-0382fd2e62d6",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SAM identified two \u03b5-cell subpopulations (\u03b5\u03b1 expressing astf, \u03b5\u03b2 expressing bhlh) that are spatially proximate but do not coexpress markers, with \u03b5\u03b1-cells comprising a dynamic population that decreases from 21% at 2.5 weeks to 7% at 3.5 weeks post-infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 are supported by FISH validation (Figure 2e) and temporal analysis of combined datasets (Figure 2f). The developmental dynamics of \u03b5\u03b1-cells are demonstrated through quantitative comparison across time points with batch effect correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "d747fcc2-357f-4bd3-988a-f4745e887ddf",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SAM's gene selection differs fundamentally from other methods by prioritizing genes variable across neighborhoods rather than individual cells, with many highly variable genes (HVGs) receiving low SAM weights, while SC3 failed to identify populations and showed instability with parameter changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 are supported by comparative analysis in Figures 2g-h. The negative correlation between HVG dispersion and SAM weights (C61) demonstrates the methodological difference, and SC3's failure and instability (C62-C64) are empirically shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "b531efdd-1ea9-472c-a005-73463d3df315",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SAM was benchmarked on 56 datasets and consistently outperforms other methods, achieving highest ARI on 5/9 annotated datasets and equal performance to Seurat on 4 Baron datasets, while SC3 and SIMLR struggle with abundant cell types and Seurat requires parameter optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C26, C65-C69, C95, C110 are supported by extensive benchmarking shown in Figure 3a and Supplementary file 3. The comparative performance is quantified using ARI scores, and limitations of competing methods are documented. The scope of 56 datasets provides strong evidence for generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "d424870d-1648-4b5f-baa1-148d878e22fc",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SAM's scalability is similar to Seurat, capable of analyzing hundreds of thousands of cells in minutes, while SIMLR and SC3 are orders of magnitude slower.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 are supported by runtime analysis in Figure 3c showing computational performance across varying dataset sizes. The scalability comparison is quantitative and demonstrates SAM's practical applicability to large datasets.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "7ebff546-107a-4a7e-809b-5933585d12ec",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A network sensitivity metric was introduced to identify datasets with subtle signals by quantifying changes in cell-cell distances with feature perturbation, revealing that standard benchmarking datasets have low sensitivity while the schistosome dataset has highest sensitivity, and that high sensitivity correlates with fewer highly weighted genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24, C74-C78 describe a novel methodological contribution supported by Figure 4a-b. The metric is clearly defined, applied systematically, and reveals meaningful patterns. The negative correlation between sensitivity and fraction of highly weighted genes (C78) provides biological insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "757467c6-7964-4577-b12b-618c64329b23",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SAM's advantages over Seurat in improving clustering, modularity, and spatial organization increase with dataset sensitivity, with benefits especially apparent on datasets where cell types are distinguishable only through subtle expression differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79 and C96 are supported by analysis across all 56 datasets shown in Figure 4c, demonstrating linear correlations (r\u00b2=0.71-0.84) between sensitivity and SAM's performance improvement. This establishes SAM's particular utility for challenging datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "177dbd8f-882b-4a9c-909a-3e8a25050183",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In simulated datasets with increasing corruption/noise, SAM's performance (ARI, NACC, modularity, dispersion) degrades only marginally below ~50% corruption while Seurat rapidly deteriorates, and passing SAM-selected genes to Seurat rescues its performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C80-C81 are supported by corruption analysis in Figure 5a-b across 9 datasets. The rescue experiment (C81) provides strong evidence that SAM's feature selection is robust and superior to Seurat's HVG approach. The AUC analysis quantifies performance across corruption levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "70f76061-724c-457a-95e7-967734e76cc5",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In macrophage analysis, SAM initially identified cell cycle-dominated clustering, then after cell cycle removal revealed two clusters properly ordered by time since LPS induction with immune signaling genes highly weighted, demonstrating that SAM weights can be used with GSEA to infer biological pathways driving clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85, C108 are supported by GSEA analysis and visualization in Figure 6a. The sequential analysis (before/after cell cycle removal) demonstrates SAM's ability to identify dominant biological processes, and integration with GSEA provides biological interpretation of gene weights.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "e48880ca-8c8b-4ae5-92c3-eb356adc0a17",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SAM grouped macrophages by activated signaling pathways (MT cluster via both Myd88 and TRIF, M cluster via Myd88 only), with the TNF\u03b1-enriched MT cluster containing most cells with prolonged NF-\u03baB response, consistent with known biology that TNF\u03b1 signaling prolongs NF-\u03baB activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91, C106 are supported by gene expression analysis (Figure 6b, d) and validation with live-cell imaging data (Figure 6e-f). The biological interpretation (C90) is an inference but is well-supported by known pathway biology (C87-C89) and empirical validation showing MT cluster enrichment for prolonged NF-\u03baB response (C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "dafb049c-8c66-4089-b32c-a4239a621d4f",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Seurat and SIMLR failed to order macrophage cells by time since LPS induction or group cells by activation dynamics after cell cycle removal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is supported by comparative visualizations in Figure 6g and supplementary figures showing lack of temporal ordering and pathway-based clustering in Seurat and SIMLR outputs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "c76d99db-63d4-42a6-92c3-8fbec333f446",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Current scRNA-seq analysis faces challenges including arbitrary feature selection thresholds, difficulty distinguishing biological variation from noise in datasets with subtle differences, and benchmarking primarily on easily-analyzed datasets with clearly distinguishable cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C6, C8-C18 establish the scientific context and motivation. These are supported by citations to prior work (C8-C9, C11, C13, C16) and represent established understanding in the field. The problem statement is well-grounded in literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    },
+    {
+      "id": "bc43de09-ec71-4793-8a1e-3d23bc9c0270",
+      "content_id": "414ecde6-f835-40e9-8e1a-2e788662b832",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "SAM's outputs (gene weights and manifolds) can be integrated with downstream analyses including GSEA and pseudotemporal ordering algorithms, and the network sensitivity metric should help characterize future method performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93, C107, C109, C111 are largely speculative about future applications (C107, C109, C111) or summary statements (C93). While C108 demonstrates GSEA integration, broader claims about downstream utility and future impact are not fully validated in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:34.336572Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "331c69e8-7d16-4b56-8afb-3b9d41337443",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "b29fe3dc-7b88-46db-bb6d-3074691f871d",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "2e4d7769-cc67-424b-9b3b-d221aaffe019",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "8390bcbd-fe59-43ee-8958-a05a0558f0f2",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "11e61c7d-f001-4948-a80c-c0806cb81776",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "5a3f1bd7-816d-4f1b-acb8-60af7fddeaa0",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "d9a5c2be-e566-4823-a522-153f1b8a88eb",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "77d4363b-dd32-469a-bcbd-e6ced85fa011",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "45b034ac-3a82-4bae-9364-f67e1f8ae1bb",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "c7f715bf-2576-4bd9-9b3a-dbf0bfe84a75",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "5f171e34-72e8-46ac-b01c-022b4f45f898",
+      "result_id": "59d6c648-030f-4236-ae04-329b626a986c"
+    },
+    {
+      "claim_id": "a44cc8be-6788-454d-a598-3f2f732e0c45",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "9eef9d16-8a52-4f7d-b2b3-2bdfab9e8fb7",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "dad51d1a-d40b-4b90-921d-0672887462dc",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "d26ca16c-064e-4062-b6c2-51d86c491676",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "97082846-a6b9-4516-a69d-1614ada16fb3",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "9c81e318-65e8-427a-a5b3-dd7dc331407e",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "6629c98a-d242-4c5a-9f6e-261bf6363acb",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "4b4bb322-c840-4d28-aa62-70f1f0b3c95a",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "8f1e5e1a-1823-4cb5-b959-7ead369da5f7",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "066d85ac-aaf2-47eb-8c57-3e4e4488bed0",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "1be5aa2b-fda2-4873-b6e8-b53a89fef923",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "8dda1440-ac47-41e7-816e-8dcfdf5813b7",
+      "result_id": "9c015780-83c0-411f-95ac-82414e9f6024"
+    },
+    {
+      "claim_id": "a65c7d3e-546a-46c8-8bdf-3634baec1efe",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "5014f63e-c323-40aa-a7ff-818a4fe13b3b",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "bf2569db-4093-4cc6-be15-ab0233b52ae2",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "2cbbc677-2577-4312-85d8-a9030515494c",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "ee805ae7-dbc3-4961-ac35-155490cb2276",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "bc813ef0-aff9-4d74-ad04-1f724573cfe1",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "5af64b2b-34b0-4b95-80e7-87f1ce0f4758",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "14be9486-afe0-41bf-b268-9685ac417ea0",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "e1f197d5-1124-42bc-b0aa-a8c75c3a60d4",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "7612a29c-d82d-4d67-a538-9c058191fd50",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "e6fd1313-03f1-44eb-96bb-fe9cb6914f0c",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "efa5a878-775c-43d5-b54d-bd34ae92aafb",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "b00676b5-6699-4a54-ace1-b4f56f0c56c6",
+      "result_id": "e6f79b82-41e4-4b62-a29c-41e4c5e70d6e"
+    },
+    {
+      "claim_id": "5110bc67-e6b5-4320-adb2-6bd866376331",
+      "result_id": "c346290c-0cc4-4ebd-a073-e4cf81749a74"
+    },
+    {
+      "claim_id": "e3ad29f2-0de7-48b8-a7c2-6c5d484458d1",
+      "result_id": "c346290c-0cc4-4ebd-a073-e4cf81749a74"
+    },
+    {
+      "claim_id": "87c3a86f-cd1e-4d68-a95a-7dd70cb74c83",
+      "result_id": "c346290c-0cc4-4ebd-a073-e4cf81749a74"
+    },
+    {
+      "claim_id": "8d7c7c07-78ee-487e-bd2d-c20448f32834",
+      "result_id": "c346290c-0cc4-4ebd-a073-e4cf81749a74"
+    },
+    {
+      "claim_id": "f43dfc07-1bec-4ed2-a3ab-940323acef13",
+      "result_id": "c346290c-0cc4-4ebd-a073-e4cf81749a74"
+    },
+    {
+      "claim_id": "8c649a68-857d-4e52-8624-b2d53e47e961",
+      "result_id": "7ed2ac33-335e-4056-b20e-0382fd2e62d6"
+    },
+    {
+      "claim_id": "868fef50-6e18-4aba-93d6-95730afa2580",
+      "result_id": "7ed2ac33-335e-4056-b20e-0382fd2e62d6"
+    },
+    {
+      "claim_id": "73ef69ab-03dd-47e3-8f1b-af3b78645cca",
+      "result_id": "7ed2ac33-335e-4056-b20e-0382fd2e62d6"
+    },
+    {
+      "claim_id": "c4917fe3-9214-4b68-86eb-f4236314841b",
+      "result_id": "7ed2ac33-335e-4056-b20e-0382fd2e62d6"
+    },
+    {
+      "claim_id": "550518da-3ed1-4f84-9a63-aeeae72bfbf5",
+      "result_id": "7ed2ac33-335e-4056-b20e-0382fd2e62d6"
+    },
+    {
+      "claim_id": "ff8a37f0-2cc5-43eb-9d95-d9bcba45a80b",
+      "result_id": "d747fcc2-357f-4bd3-988a-f4745e887ddf"
+    },
+    {
+      "claim_id": "c979cf71-8704-41f7-a319-710f03b31741",
+      "result_id": "d747fcc2-357f-4bd3-988a-f4745e887ddf"
+    },
+    {
+      "claim_id": "f0d23569-63db-49ae-a94d-9f77008b3ba5",
+      "result_id": "d747fcc2-357f-4bd3-988a-f4745e887ddf"
+    },
+    {
+      "claim_id": "66e43d77-2aea-47c3-ba7f-189fce283fd6",
+      "result_id": "d747fcc2-357f-4bd3-988a-f4745e887ddf"
+    },
+    {
+      "claim_id": "3e49e34e-66bd-4ef0-a71f-15dabee2d15a",
+      "result_id": "d747fcc2-357f-4bd3-988a-f4745e887ddf"
+    },
+    {
+      "claim_id": "e512b70c-57d7-45d6-98fd-dbb8f58a63d3",
+      "result_id": "b531efdd-1ea9-472c-a005-73463d3df315"
+    },
+    {
+      "claim_id": "1d72dd8a-af3d-4eb2-9ee8-e89eeb3d030d",
+      "result_id": "b531efdd-1ea9-472c-a005-73463d3df315"
+    },
+    {
+      "claim_id": "ce534cc9-a496-4282-8043-8b488ff3f7c2",
+      "result_id": "b531efdd-1ea9-472c-a005-73463d3df315"
+    },
+    {
+      "claim_id": "8dbdff9b-f105-4209-ab75-f213692d5860",
+      "result_id": "b531efdd-1ea9-472c-a005-73463d3df315"
+    },
+    {
+      "claim_id": "ab2c37ee-11d5-4e69-b659-fcc07ee59466",
+      "result_id": "b531efdd-1ea9-472c-a005-73463d3df315"
+    },
+    {
+      "claim_id": "d83a3a65-adc9-4319-a9ac-14dcb2f5e008",
+      "result_id": "b531efdd-1ea9-472c-a005-73463d3df315"
+    },
+    {
+      "claim_id": "72372df1-49dd-449c-a58b-779abf433e7f",
+      "result_id": "b531efdd-1ea9-472c-a005-73463d3df315"
+    },
+    {
+      "claim_id": "271ea9c6-9f05-48de-8eb5-fe93ca8a600d",
+      "result_id": "b531efdd-1ea9-472c-a005-73463d3df315"
+    },
+    {
+      "claim_id": "3fc78300-c282-4308-a949-e2f6ed0e52e4",
+      "result_id": "b531efdd-1ea9-472c-a005-73463d3df315"
+    },
+    {
+      "claim_id": "e84ea950-418c-4652-9683-1fc5a926aa94",
+      "result_id": "d424870d-1648-4b5f-baa1-148d878e22fc"
+    },
+    {
+      "claim_id": "1f7d5b84-7baa-49d1-ae19-730ebdb38cdd",
+      "result_id": "d424870d-1648-4b5f-baa1-148d878e22fc"
+    },
+    {
+      "claim_id": "4ba7cf26-9caf-4339-9290-ae7a349c53a6",
+      "result_id": "7ebff546-107a-4a7e-809b-5933585d12ec"
+    },
+    {
+      "claim_id": "2160499d-2385-4285-8476-9dbc489920c8",
+      "result_id": "7ebff546-107a-4a7e-809b-5933585d12ec"
+    },
+    {
+      "claim_id": "d1a2af52-ca76-41b9-8539-e39948a796ad",
+      "result_id": "7ebff546-107a-4a7e-809b-5933585d12ec"
+    },
+    {
+      "claim_id": "b3adc926-dcae-4e24-b840-60f1f29ca9de",
+      "result_id": "7ebff546-107a-4a7e-809b-5933585d12ec"
+    },
+    {
+      "claim_id": "96b240ac-f902-4f10-a7a8-c6db863b68c2",
+      "result_id": "7ebff546-107a-4a7e-809b-5933585d12ec"
+    },
+    {
+      "claim_id": "a0a94575-4a13-4639-8361-710c48fa514d",
+      "result_id": "7ebff546-107a-4a7e-809b-5933585d12ec"
+    },
+    {
+      "claim_id": "b3049c8d-9472-4592-84f7-319e16981660",
+      "result_id": "7ebff546-107a-4a7e-809b-5933585d12ec"
+    },
+    {
+      "claim_id": "ce6ebba6-a0ce-4f9b-8dfc-3840c08e8eb9",
+      "result_id": "757467c6-7964-4577-b12b-618c64329b23"
+    },
+    {
+      "claim_id": "51af65a8-7a6d-49da-96a1-b574e3d8a137",
+      "result_id": "757467c6-7964-4577-b12b-618c64329b23"
+    },
+    {
+      "claim_id": "eb04144c-aca5-48bc-bfb2-3e27a8f74b92",
+      "result_id": "177dbd8f-882b-4a9c-909a-3e8a25050183"
+    },
+    {
+      "claim_id": "e731efab-4ccb-485a-9c63-3896e4e91a55",
+      "result_id": "177dbd8f-882b-4a9c-909a-3e8a25050183"
+    },
+    {
+      "claim_id": "9b6ce465-1a9d-407e-85a9-c3c2680e01e0",
+      "result_id": "177dbd8f-882b-4a9c-909a-3e8a25050183"
+    },
+    {
+      "claim_id": "34da7247-b30c-4bd8-b7cb-f7bcd0d8bc73",
+      "result_id": "70f76061-724c-457a-95e7-967734e76cc5"
+    },
+    {
+      "claim_id": "0d844aa9-2977-4de4-9834-36c3e11d5832",
+      "result_id": "70f76061-724c-457a-95e7-967734e76cc5"
+    },
+    {
+      "claim_id": "2cef0347-fa94-4781-aca3-8f92cfc48812",
+      "result_id": "70f76061-724c-457a-95e7-967734e76cc5"
+    },
+    {
+      "claim_id": "76978fe3-d071-4e1a-9d25-e1928441ea68",
+      "result_id": "70f76061-724c-457a-95e7-967734e76cc5"
+    },
+    {
+      "claim_id": "82086f22-51ba-4f0c-82d1-113f04e325c0",
+      "result_id": "70f76061-724c-457a-95e7-967734e76cc5"
+    },
+    {
+      "claim_id": "c8e2ecc6-34d2-47f2-a6d4-eca5b2fe3d46",
+      "result_id": "e48880ca-8c8b-4ae5-92c3-eb356adc0a17"
+    },
+    {
+      "claim_id": "03f858c8-677b-4079-a8e6-a6333b75ef2a",
+      "result_id": "e48880ca-8c8b-4ae5-92c3-eb356adc0a17"
+    },
+    {
+      "claim_id": "5f1bef47-1843-44b7-a25e-fdd491050434",
+      "result_id": "e48880ca-8c8b-4ae5-92c3-eb356adc0a17"
+    },
+    {
+      "claim_id": "0668c2df-879b-4d04-9a05-bb82e0719528",
+      "result_id": "e48880ca-8c8b-4ae5-92c3-eb356adc0a17"
+    },
+    {
+      "claim_id": "296b76b6-bbd4-452f-8b0c-50da5c08f057",
+      "result_id": "e48880ca-8c8b-4ae5-92c3-eb356adc0a17"
+    },
+    {
+      "claim_id": "47ea7ab7-33be-47c1-b1d6-408f3b6f5a86",
+      "result_id": "e48880ca-8c8b-4ae5-92c3-eb356adc0a17"
+    },
+    {
+      "claim_id": "e4bec76b-322d-42fe-8ffc-de85ef870dd0",
+      "result_id": "e48880ca-8c8b-4ae5-92c3-eb356adc0a17"
+    },
+    {
+      "claim_id": "3f4d411a-72d4-438b-bc3b-3b80a1052463",
+      "result_id": "dafb049c-8c66-4089-b32c-a4239a621d4f"
+    },
+    {
+      "claim_id": "257bb311-e9eb-4cb0-8c2a-7b50c56388a6",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "dc6a64f9-42d1-4a33-bf8a-4cacac7a3370",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "efc73182-f238-48a4-a8d6-19513dcfa8b2",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "b736c260-29d7-440c-a3bb-714d9facdb30",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "ac7ee82e-d48a-4df6-a859-e8b4e180ba1d",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "048e851d-3841-4ea0-8fb2-12a77d7973d6",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "332995d3-1920-4a12-924e-cd99086d01e1",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "88d39bf0-3e7a-4f53-9e72-b4f35789f398",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "851ef9ab-9707-456a-8c48-94ae98f585ee",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "62ba475f-4052-4711-addd-f2c72abfbe17",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "e868cf85-5851-4b4f-ba98-fe20626bf94e",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "2bf63826-dfe6-45c1-8493-70247edc5754",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "dfaf711f-0d77-4746-bcf5-d080d3d09053",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "2421ce65-ef0d-4e32-a498-c76470fc7454",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "e90f238e-3779-4dea-997e-2461a42e44e1",
+      "result_id": "c76d99db-63d4-42a6-92c3-8fbec333f446"
+    },
+    {
+      "claim_id": "8be6aa3f-3743-4bb7-b33c-e7efb465ce90",
+      "result_id": "bc43de09-ec71-4793-8a1e-3d23bc9c0270"
+    },
+    {
+      "claim_id": "66be495d-117a-4cd4-8910-29f3c6a57e95",
+      "result_id": "bc43de09-ec71-4793-8a1e-3d23bc9c0270"
+    },
+    {
+      "claim_id": "862d6d5c-46f1-4314-ada5-a7b95ead183b",
+      "result_id": "bc43de09-ec71-4793-8a1e-3d23bc9c0270"
+    },
+    {
+      "claim_id": "95b6d05d-1a08-44ff-ba17-e35e20f02704",
+      "result_id": "bc43de09-ec71-4793-8a1e-3d23bc9c0270"
+    }
+  ],
+  "comparisons": []
+}

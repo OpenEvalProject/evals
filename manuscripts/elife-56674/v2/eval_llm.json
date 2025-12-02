@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C39",
+      "C47",
+      "C51",
+      "C54",
+      "C56",
+      "C57",
+      "C72",
+      "C73",
+      "C87",
+      "C92",
+      "C101"
+    ],
+    "result": "RNA produced in trans does not induce recombinogenic DNA:RNA hybrids or increase recombination. Multiple recombination assays (GL-LacZ, GL-LacZi, TL-LacZ, chromosomal GL-LacZ) in wild-type, tho mutants (hpr1\u0394, mft1\u0394), and RNase H-deficient (rnh1\u0394 rnh201\u0394) cells consistently showed no significant increase in recombination when RNA was produced from an ectopic locus, even under conditions that favor DNA:RNA hybrid accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C101 collectively demonstrate through multiple independent experimental systems that trans RNA does not induce recombination. The consistency across different genetic backgrounds (WT, tho mutants, RNase H mutants), different recombination systems (plasmid and chromosomal), and different promoters (GAL1, tet) provides strong converging evidence. The negative results are particularly compelling because they were obtained even in mutants where DNA:RNA hybrids readily accumulate (C52), ruling out technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C50",
+      "C55",
+      "C74"
+    ],
+    "result": "Transcription in cis dramatically increases recombination in DNA:RNA hybrid-accumulating mutants. In hpr1\u0394 and mft1\u0394 (tho mutants) and rnh1\u0394 rnh201\u0394 (RNase H mutants), activating transcription of the recombination construct in cis caused recombination frequencies to increase by 30-70 fold compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C50, C55, and C74 are well-supported by quantitative recombination data shown in Figures 2, 5, and 6. The magnitude of the effect (30-70 fold increases) and consistency across multiple mutant backgrounds and experimental systems provides strong evidence. This result serves as a positive control demonstrating that the assay can detect recombinogenic DNA:RNA hybrids when they form in cis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C82",
+      "C86"
+    ],
+    "result": "DNA:RNA hybrid-mediated recombination in the SSA assay is Rad51-independent. RAD51 deletion had no significant effect on recombination frequencies in wild-type or hpr1\u0394 cells, whether transcription was induced in cis or in trans. The hyper-recombination phenotype of hpr1\u0394 was maintained in hpr1\u0394 rad51\u0394 double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C86 are supported by recombination data in Figure 6 showing that rad51\u0394 does not alter recombination frequencies in the SSA assay. This is consistent with the known mechanism of SSA (C32, C58, C71) which requires only Rad52-mediated annealing, not Rad51-dependent strand invasion. The result directly addresses whether Rad51 is required for DNA:RNA hybrid formation or recombinogenicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "Rad51 is not required for DNA:RNA hybrid formation in THO mutants. Rad52-YFP foci in hpr1\u0394 cells were enhanced by AID overexpression and suppressed by RNase H overexpression, indicating R-loop-dependent DNA damage. However, rad51\u0394 cells showed Rad52 foci accumulation that was insensitive to AID or RNase H, suggesting these foci reflect unrepaired recombination intermediates rather than R-loops. The hpr1\u0394 rad51\u0394 double mutant behaved like rad51\u0394 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are supported by Rad52-YFP foci data in Figure 7A. The differential response to AID and RNase H overexpression between hpr1\u0394 and rad51\u0394 cells provides strong evidence that Rad51 is not involved in R-loop formation or R-loop-mediated damage. The interpretation that rad51\u0394 foci represent unrepaired intermediates (C67) is reasonable and supported by prior literature (Alvaro et al., 2007).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C89"
+    ],
+    "result": "S9.6 immunofluorescence signal on metaphase spreads was similar in hpr1\u0394 and hpr1\u0394 rad51\u0394 cells, indicating that Rad51 is not required for DNA:RNA hybrid accumulation in THO mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C89 are supported by S9.6 IF data in Figure 7B showing comparable signal in hpr1\u0394 and hpr1\u0394 rad51\u0394 cells. This complements the Rad52 foci data and provides direct evidence that Rad51 is not required for DNA:RNA hybrid formation. However, the authors acknowledge technical limitations of S9.6 IF (C90, C91), including potential dsRNA cross-reactivity and preferential visualization of rDNA regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "DNA:RNA hybrids accumulate in hpr1\u0394 and rnh1\u0394 rnh201\u0394 mutants at GL-LacZ, tet:LacZ, and GL-LacZi sequences as measured by DRIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by DRIP data in Figure 3 showing increased S9.6 signal in mutants that is sensitive to RNase H treatment. This confirms that DNA:RNA hybrids form at the LacZ sequences in the experimental systems, validating the premise of the study. The authors note technical difficulty detecting hybrids in plasmids due to plasmid loss, but the data still show clear accumulation in mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C42",
+      "C43",
+      "C46",
+      "C75",
+      "C76"
+    ],
+    "result": "RNA produced in trans can suppress hyper-recombination in tho mutants under specific conditions. In the GL-LacZ system with simultaneous cis and trans transcription, trans RNA partially suppressed hyper-recombination in hpr1\u0394 and mft1\u0394 cells. This suppression was stronger in the GL-LacZi system (inverted LacZ) and was not observed with the shorter LacZ400 construct or in chromosomal systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C76 are supported by recombination data in Figures 2A-C and Figure 5. The suppression effect is context-dependent and the authors provide a reasonable mechanistic interpretation (C44, C75): free RNA interferes with transcription at the homologous locus, possibly through RNA-RNA hybridization in the GL-LacZi system. The absence of suppression with stable shorter transcripts (C46) and in chromosomal systems (C76) supports this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The authors provide an alternative interpretation of prior work (Wahba et al., 2013) suggesting that the Rad51-dependent genetic instability observed could result from DNA:RNA hybrids forming in cis and inducing DSBs, followed by Rad51-dependent invasion into ectopic sequences, rather than Rad51-mediated RNA invasion in trans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 present a logical reinterpretation of prior work based on the current findings. The alternative model (illustrated in Figure 8) is consistent with known mechanisms of homologous recombination and explains why the prior assay showed Rad51-dependence without requiring Rad51-mediated RNA-DNA hybrid formation. This is a reasonable critique supported by the authors' data showing Rad51-independent DNA:RNA hybrid formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C36",
+      "C41",
+      "C45",
+      "C48",
+      "C49",
+      "C58",
+      "C71",
+      "C77",
+      "C78",
+      "C79",
+      "C90",
+      "C93",
+      "C94",
+      "C104"
+    ],
+    "result": "Background knowledge and literature review establishing the context for DNA:RNA hybrids, R-loops, their detection methods, biological consequences, and prior work suggesting trans hybrid formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C104 represent established knowledge and prior literature that is appropriately cited. These claims provide necessary context for the study but do not constitute new findings. The citations appear appropriate and the characterization of prior work is generally accurate, though the authors do critically evaluate some prior interpretations (e.g., C28, C29).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C102",
+      "C103"
+    ],
+    "result": "Description of the GL-LacZ recombination system and SSA mechanism used in the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C103 accurately describe the experimental system. The GL-LacZ construct is a leu2 direct-repeat system where SSA events delete the LacZ sequence and one repeat, producing Leu+ recombinants in a Rad51-independent manner. The caveat (C103) that nicks or ssDNA gaps rather than DSBs could initiate SSA is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C5"
+    ],
+    "result": "The study tests the hypothesis that recombinogenic DNA:RNA hybrids could form in trans via Rad51-mediated reactions and finds no evidence supporting this hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C5 frame the central hypothesis being tested. C3 describes the prior suggestion from literature, and C5 states the negative finding. This is well-supported by the comprehensive experimental data showing no trans-induced recombination across multiple systems and genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "The main conclusion that unscheduled recombinogenic DNA:RNA hybrids triggering SSA are formed in cis during transcription in a Rad51-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 represents the primary conclusion of the study, which is strongly supported by the convergence of multiple lines of evidence: (1) cis transcription dramatically increases recombination in hybrid-accumulating mutants, (2) trans transcription does not increase recombination, (3) the effect is Rad51-independent, and (4) DNA:RNA hybrids are detected by DRIP in the relevant sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C91",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Speculative discussion of alternative mechanisms, technical limitations, and biological significance of the findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C100 represent speculations and caveats about mechanisms (template switching, nicks vs. DSBs), technical limitations (S9.6 specificity, rDNA visualization), and biological implications (regulated trans hybridization in specific contexts). These are appropriately presented as speculative or uncertain, and while reasonable, they are not directly tested in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "mft1\u0394 and hpr1\u0394 mutants show slightly elevated recombination when transcription in cis is switched off, likely due to leaky transcription from the GAL1 promoter in glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by recombination data in Figure 2A and transcription data in Figure 1\u2014figure supplement 1 showing detectable LacZ transcription in glucose. The interpretation of leaky transcription is reasonable and consistent with known properties of the GAL1 promoter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "In wild-type cells, stimulation of transcription in cis elevated recombination frequency threefold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by quantitative data in Figure 2A. This modest increase in wild-type cells contrasts with the dramatic increases in mutants (C38, C50, C55), demonstrating that the assay can detect transcription-associated recombination even in cells with normal DNA:RNA hybrid metabolism.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The sagd1 mutation causes specific deficits in anterior SAG neurons and hair cells in the zebrafish otic vesicle. The mutation results in ~60% reduction in anterior SAG neurons at 24-30 hpf, with gradual recovery by 30 hpf for neuroblasts inside the otic vesicle, but persistent deficits in delaminated neuroblasts and transit-amplifying cells. Hair cell production is reduced by ~25% at 36-48 hpf. The deficits are not due to increased apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C38 provide comprehensive quantitative data from multiple time points and markers (isl2b:Gfp, ngn1, neurod, atoh1a) showing consistent developmental deficits. The temporal progression is well-documented with appropriate controls and statistical analysis. TUNEL assays (C29) rule out apoptosis as the mechanism. The phenotypic characterization is thorough and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Fgf signaling is impaired in sagd1-/- mutants despite normal expression of Fgf ligands. Expression of downstream Fgf targets (etv5b, pax5, sprouty4) is severely deficient at 18 hpf but partially recovers by 21-24 hpf. Markers of axial identity remain largely unaffected, indicating specific disruption of Fgf signaling rather than general patterning defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 demonstrate a specific temporal defect in Fgf signaling with normal ligand expression but impaired downstream responses. The recovery pattern is consistent with the neuroblast phenotype. Regional marker analysis (C42) appropriately controls for general patterning defects. The data support a signaling-specific rather than developmental patterning defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The zebrafish pgk1 locus produces two distinct transcripts: pgk1-FL encoding full-length Pgk1 (~90% identical to human), and pgk1-alt, a zebrafish-specific transcript from an independent start site in intron 1. The sagd1 mutation contains two SNPs in pgk1-alt that disrupt the splice acceptor site and translation start codon in exon 1b, resulting in strongly reduced pgk1-alt transcript abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are supported by genomic sequence analysis, RT-PCR validation, and sequence conservation data. The molecular characterization is thorough with appropriate controls. However, the claim that pgk1-alt is unique to zebrafish (C47) would benefit from more comprehensive comparative genomic analysis across teleosts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Morpholino knockdown experiments targeting pgk1-alt demonstrate that blocking the splice acceptor site reduces SAG neurons by ~40%, while translation blockers reduce neurons by 20-30%. Translation blockers also impair pgk1-alt transcript accumulation, suggesting Pgk1-alt protein is required for normal transcript stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 provide morpholino validation with appropriate quantification. The observation that translation blockers affect transcript levels (C54-C55) is interesting but the mechanistic interpretation requires caution as morpholinos can have off-target effects. The conclusion about protein-dependent transcript stability (C55) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "pgk1-FL is maternally deposited and shows tissue-specific upregulation in somites (14 hpf) and nervous system (18-20 hpf). This upregulation is severely attenuated in sagd1-/- mutants. Heat shock-induced pgk1-alt expression leads to elevated pgk1-FL accumulation even after pgk1-alt transcript decays, suggesting Pgk1-alt protein is sufficient to upregulate pgk1-FL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 demonstrate the regulatory relationship between pgk1-alt and pgk1-FL through expression analysis and heat shock experiments. The temporal dynamics of transcript vs. protein effects (C60-C62) provide evidence for post-transcriptional regulation. The inference about protein perdurance (C62) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The pgk1x55 CRISPR mutant, predicted to eliminate all but the first 19 amino acids of Pgk1, shows a phenotype nearly identical to sagd1-/- with impaired Fgf signaling and deficits in SAG neurons (31% anterior, 18% posterior at 5 dpf) and hair cells (20-25% reduction). Unlike sagd1, pgk1-/- affects both anterior and posterior neurons. Multiple Fgf-dependent neural tissues are affected including cranial ganglia, reticulospinal neurons, and olfactory epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 establish pgk1 as the causative gene through independent CRISPR mutagenesis. The phenotypic characterization is comprehensive across multiple tissues and time points. The difference between sagd1 and pgk1-/- phenotypes (C66) is important and suggests pgk1-FL has additional functions beyond those requiring pgk1-alt upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Genetic complementation and rescue experiments demonstrate that pgk1-alt and pgk1-FL encode distinct complementary functions. pgk1+/- x sagd1+/- intercrosses produce normal embryos, confirming complementation. Heat shock-induced pgk1-FL rescues sagd1-/- mutants, while pgk1-alt rescues morphants but not pgk1-/- mutants. This establishes that pgk1-alt is required upstream to upregulate pgk1-FL, which is necessary for proper Fgf signaling and sensory-neural development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 provide strong genetic evidence for the regulatory hierarchy through complementation analysis and isoform-specific rescue experiments. The logic is sound: pgk1-alt cannot rescue pgk1-/- (C74) because it requires pgk1-FL function, while pgk1-FL can rescue sagd1-/- (C73) by bypassing the need for pgk1-alt-mediated upregulation. This establishes the epistatic relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Sites of pgk1 upregulation correlate with Fgf ligand expression domains, but pgk1 and fgf genes do not require each other for expression. Treatment with Fgf pathway inhibitor SU5402 does not affect pgk1 upregulation, suggesting pgk1 and fgf may share a common upstream regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 establish spatial correlation without regulatory dependence through expression analysis and pharmacological inhibition. The conclusion about potential shared regulation (C80) is appropriately cautious. This sets up the non-autonomous mechanism explored in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cell transplantation experiments demonstrate that Pgk1 acts non-autonomously. Wild-type cells transplanted into pgk1-/- hosts fail to express the Fgf target etv5b despite proximity to Fgf sources, while wild-type cells in wild-type hosts show normal etv5b expression. This indicates Pgk1 is required non-autonomously to promote Fgf signaling at a distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 provide compelling evidence for non-autonomous function through mosaic analysis. The experimental design appropriately controls for cell-autonomous effects. Quantification shows 82% of wild-type donor cells express etv5b in wild-type hosts vs. 40% in pgk1-/- hosts (C81-C82), demonstrating the host genotype determines signaling competence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The non-autonomous effects of Pgk1 do not depend on plasminogen/plasmin. Morpholino knockdown of plasminogen (both translation-blocker and splice-blocker) fails to rescue pgk1-/- or sagd1-/- mutants, ruling out the secreted Pgk1-plasmin mechanism known from tumor metastasis studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 appropriately test and rule out a known mechanism of secreted Pgk1 function. Both translation-blocking and splice-blocking morpholinos were tested with validation of knockdown efficiency (C87), providing strong negative evidence. This narrows the mechanistic possibilities and motivates investigation of alternative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Pharmacological inhibition of glycolysis (2DG, 3PO), lactate synthesis (DCA, Galloflavin), or lactate transport (CHC, UK5099) mimics the pgk1-/- phenotype, reducing SAG neurons and hair cells to levels comparable to mutants. Exogenous lactate treatment fully rescues pgk1-/- mutants, elevates SAG neuron numbers above normal in wild-type embryos, and reverses the effects of glycolytic inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 provide comprehensive pharmacological evidence that lactate is the critical metabolite. Multiple independent inhibitors targeting different steps in the pathway produce consistent phenotypes. The rescue by exogenous lactate (C94-C95) is particularly compelling. The experiments appropriately control for drug effects and include dose-response data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Lactate specifically affects Fgf signaling and SAG specification independently of ATP. Pharmacological inhibition of lactate synthesis/transport reduces etv5b and ngn1 expression, which is reversed by exogenous lactate. Exogenous ATP does not rescue pgk1-/- mutants or affect gene expression in wild-type embryos. Blocking mitochondrial respiration with sodium azide does not impair ngn1 expression. This demonstrates that lactate, not ATP or mitochondrial function, is critical for early Fgf signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 systematically distinguish between metabolic (ATP) and signaling (lactate) functions through pharmacological manipulation and rescue experiments. The ATP control experiments (C101-C102) are critical for ruling out energy deficiency as the mechanism. The sodium azide experiment (C103) further supports this by showing mitochondrial respiration is not required. The logic is sound and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "Fgf effects on otic development are mediated primarily through MAPK/Erk rather than PI3K. The MEK inhibitor U0126 reduces ngn1+ cells and SAG neurons to levels similar to or greater than pgk1-/- mutants, while the PI3K inhibitor LY294002 has negligible effects. The stimulatory effects of lactate on SAG neuron production are completely blocked by U0126.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109, C111 establish MAPK/Erk as the primary pathway through selective pharmacological inhibition. The differential effects of U0126 vs. LY294002 (C107-C108) clearly distinguish pathway contributions. The complete blockade of lactate effects by U0126 (C111) demonstrates lactate acts through MAPK/Erk, consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Lactate can partially activate Fgf target gene expression independently of Fgf signaling, but cannot fully rescue development. Dominant-negative Fgf receptor (hs:dnfgfr1) fully suppresses etv5b expression and reduces SAG neurons by 25%. Exogenous lactate partially restores etv5b expression when Fgf signaling is blocked, but does not restore SAG neuron development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 demonstrate partial independence of lactate and Fgf signaling at the level of immediate target gene expression (etv5b), but interdependence for developmental outcomes (SAG neurons). This supports the model that lactate primes the pathway but cannot fully substitute for Fgf. The experimental design using dominant-negative receptor is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Elevating Fgf or lactate alone can partially compensate for loss of the other, but full activation requires both. Heat shock-induced fgf8 increases pax5 expression in wild-type embryos and partially rescues pgk1-/- mutants, but not to wild-type levels. This demonstrates that Fgf and lactate act in parallel to fully activate the MAPK/Erk pathway and early otic gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 establish the cooperative relationship between Fgf and lactate through gain-of-function experiments. The partial rescue of pgk1-/- by elevated Fgf (C116) mirrors the partial rescue of Fgf blockade by lactate (C113), demonstrating mutual but incomplete compensation. This supports the convergent signaling model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C25",
+      "C110",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Lactate primes cells for Fgf signaling by independently activating MAPK/Erk and elevating Etv5b expression. Lactate binds and stabilizes Ndrg3, which activates Raf, converging with Fgf signaling on MAPK/Erk. This pathway activates transcription and phosphorylation of Etv4/5 proteins, creating a feedback amplification loop. Initial MAPK/Erk activation by lactate expands the Etv4/5 pool, priming cells to respond more quickly to dynamic Fgf changes. Without pgk1, the initial Fgf response is sluggish, causing lasting deficits that gradually improve as Fgf-mediated feedback amplification continues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C25, C110, C119-C125 synthesize the mechanistic model based on the experimental data and cited literature (Lee et al., 2015 for lactate-Ndrg3-Raf mechanism). The model is consistent with all experimental observations: lactate acts through MAPK (C111), can partially bypass Fgf (C113), and shows temporal recovery (C124). The priming mechanism (C122) elegantly explains why both signals are needed and why deficits are most severe early. The model is well-supported but relies partly on mechanisms established in other systems (C119).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Upregulation of pgk1 in the otic vesicle is limited to sensory epithelia and mature SAG neurons, suggesting that Fgf and lactate must be co-secreted from signaling sources to support full signaling potential. Other otic cells may be unable to generate sufficient lactate to augment Fgf signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 integrate the expression pattern data with the mosaic analysis results to propose a co-secretion model. The spatial restriction of pgk1 expression (C126, supported by Figure 3) combined with the non-autonomous requirement (C83) logically supports this model. However, C127 is appropriately stated as a possibility rather than a proven mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The sagd1 mutation disrupts pgk1-alt, a novel transcript arising from a transposon insertion in the pgk1 locus. Pgk1-alt production is necessary and sufficient for pgk1-FL upregulation, possibly through transcript stabilization. Exon 6 of Pgk1-alt corresponds to the stabilizing element (STE) of yeast Pgk1, and Pgk1 is known to function as an mRNA-binding protein. The STE of Pgk1-alt may have been coopted from a moonlighting function of Pgk1 to locally upregulate pgk1-FL and facilitate the switch to Warburg metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C137 propose a mechanism for how pgk1-alt regulates pgk1-FL based on sequence homology to yeast STE (C131) and known RNA-binding functions of Pgk1 (C135-C136). While the genetic evidence for the regulatory relationship is strong (C130), the molecular mechanism remains speculative (C137). The model is reasonable and well-informed by literature, but lacks direct experimental validation of the proposed stabilization mechanism or RNA-binding activity in this context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "pgk1-alt is not required in mesodermal tissues despite their use of aerobic glycolysis. Somite expression of pgk1 is normal in sagd1-/- mutants. Establishment of Warburg-like metabolism does not necessarily require elevated pgk1, and elevated pgk1 does not necessarily indicate a Warburg-like state. In somites, pgk1 upregulation likely provides pyruvate for mitochondrial ATP synthesis rather than lactate production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 appropriately note tissue-specific differences in pgk1 function and metabolic strategy. The observation that somites show normal pgk1 expression in sagd1 mutants (C139) is well-documented. The interpretations about metabolic differences (C141-C143) are reasonable and supported by cited literature (Ozbudak et al., 2010), though direct metabolic measurements would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The sagd1 allele likely represents a preexisting polymorphism that became homozygous during familial breeding rather than a de novo ENU-induced mutation. The SNPs were previously reported in genome databases and have been detected in the wild-type stock. The pgk1-alt sequence was initially annotated in the zebrafish genome but later removed, presumably deemed an artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 provide important context about the origin of the sagd1 allele and annotation issues. The detection of these SNPs in databases (C144) and wild-type stocks (C146) supports the preexisting allele interpretation (C145). The note about genome annotation (C147) is a valuable cautionary tale about relying solely on computational annotation. These observations are well-documented but do not affect the validity of the biological findings.",
+    "result_type": "MINOR"
+  }
+]

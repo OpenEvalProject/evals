@@ -1,0 +1,190 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "MicrobeFDT is a computational resource that organizes ~10,000 food, drug, and endogenous compounds by structural similarity using PubChem fingerprints and Tanimoto scores, linking them to microbial enzymes, toxicities, and drug indications in a Neo4j graph database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C19, and C76-C78 collectively describe the construction and composition of the MicrobeFDT database. The network structure, node composition, relationship types, and technical implementation are clearly documented in the methods section and supported by Figure 1, providing comprehensive evidence for this resource development result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C24"
+    ],
+    "result": "Structural similarity moderately predicts toxicity similarity for therapeutic drug pairs in the network (r = 0.03116, p<2.2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C24 provides statistical evidence of a significant correlation, the effect size (r = 0.03116) is extremely small, indicating minimal predictive power. The claim in C2 that structural similarity 'can serve as a proxy for toxicity' is overstated given this weak correlation. The statistical significance may be driven by large sample size rather than meaningful biological relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Structural similarity predicts enzyme sharing between compounds, with probability of shared enzyme metabolism increasing with substructure overlap score, validated using the Cgr2 enzyme where compounds with >0.8 similarity scores are substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 provide converging evidence through machine learning prediction (C21, Figure 2), experimental validation with Cgr2 substrates (C22), and demonstration that substructure clustering distinguishes substrates from non-substrates (C23, Figure 3). The hypothesis (C20) is well-supported by both computational and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26"
+    ],
+    "result": "Substructure-based compound clustering significantly recapitulates ClassyFire chemical taxonomy, with compound pairs at higher structural similarity sharing Superclass membership more frequently than randomized pairs (p<8.06\u00d710\u207b\u00b9\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 provide statistical validation through comparison with randomized networks and demonstrate that the MicrobeFDT similarity metric captures established chemical classifications. The highly significant p-value and visual evidence in Figure 5 support this validation of the clustering approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Food-derived compounds contribute significantly greater molecular structure diversity and higher self-similarity than therapeutic drugs (K-S test 0.49, p=4.7395e-06), with drug structural diversity embedded within food-derived chemical diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by statistical analysis (K-S test) and visual evidence in Figure 6 and Figure 6\u2014figure supplement 1. The network visualization clearly shows therapeutic drugs embedded within food compound clusters, and the statistical test confirms significant differences in diversity metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C35"
+    ],
+    "result": "The ECsD score quantifies taxonomic distribution of enzymatic functions across gut microbes, validated by agreement with known distributions of vitamin B12 synthesis (low ECsD: 0.305502), riboflavin synthesis (high ECsD: 0.691618), and sphingolipid biosynthesis (low ECsD: 0.007353).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C35 demonstrate that the ECsD metric successfully captures known biological patterns. The validation against published literature (C31-C32) and known limited distribution of sphingolipid synthesis (C35) provides strong support. Figure 7 illustrates the metric's ability to distinguish broadly vs. narrowly distributed functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C79"
+    ],
+    "result": "The gut microbiome actively demethylates the ovarian cancer drug altretamine to pentamethylmelamine, as demonstrated by LC-MS analysis showing significantly increased metabolite formation in active vs. killed fecal microcosms over 48 hours (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C47 and C79 provide a complete experimental validation: network prediction based on structural/toxicity similarity to melamine (C36-C42), LC-MS detection of demethylated metabolite (C43), time-course data distinguishing biotic from abiotic demethylation (C44-C47), and statistical significance (C79). The experimental design with killed controls appropriately addresses spontaneous demethylation. Figure 9 provides clear visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "MicrobeFDT identifies bile acid-like therapeutic drugs and food compounds (including finasteride, dexamethasone, cortisone, steviol, lanosterol, and tomatidine) that may have unrecognized antimicrobial effects on the gut microbiome based on structural similarity to taurochenodeoxycholic acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C48-C67 cite published evidence for antimicrobial properties of some identified compounds (C57-C65), the core hypothesis that structural similarity to TCDCA predicts antimicrobial activity (C59, C66, C67) remains speculative. The network identifies candidates but provides no experimental validation of antimicrobial effects for most compounds. Claims C59, C66, and C67 are explicitly hypotheses requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "MicrobeFDT identifies food-derived flavonoids (baicalin and scutellarin) structurally similar to SN-38G that may competitively inhibit microbial \u03b2-glucuronidase-mediated reactivation of irinotecan, potentially reducing drug toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C72 establish the biological context of irinotecan toxicity through \u03b2-glucuronidase activity (supported by citations). Claims C73-C74 show that MicrobeFDT identifies structurally similar food compounds. However, C75 is explicitly a hypothesis ('we propose') with no experimental validation of competitive inhibition or reduced toxicity. This remains a prediction requiring experimental follow-up.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C33",
+      "C34"
+    ],
+    "result": "The gut microbiome influences human nutrition, drug responses, and disease susceptibility through various metabolic activities including drug metabolism, tryptophan conversion to immunomodulatory indoles, SCFA production, and sphingolipid biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C16 and C33-C34 establish the biological context and prior knowledge supporting the rationale for MicrobeFDT. All claims are supported by appropriate citations to published literature. These provide essential background but represent prior work rather than novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

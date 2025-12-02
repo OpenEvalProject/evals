@@ -1,0 +1,576 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors developed SR4VH, a novel genetically encoded effector caspase reporter consisting of membrane-bound RFP and nuclear-localized Venus separated by four DEVD repeats. Upon caspase cleavage, Venus translocates to the nucleus while RFP remains membrane-bound. The reporter was validated by comparing its expression pattern to Dronc mutant clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe the design, mechanism, and validation of the SR4VH reporter. The construct design is clearly documented (C57), the functional mechanism is demonstrated in Figure 2B (C58), and validation is shown through comparison with Dronc mutant clones in Figure 2 and supplementary figures (C59). The evidence is direct and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C60",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Using the SR4VH reporter, the authors demonstrate that programmed cell death occurs continuously throughout the 3.5 days of postembryonic neurogenesis in Drosophila, is hemilineage-specific, and eliminates postembryonic neurons in the VNC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C60, C118-C120 are well-supported by SR4VH reporter data showing dying cells at multiple developmental stages (Figure 2C-F) and in specific hemilineages (Figure 2J,K). The temporal continuity and hemilineage specificity are directly demonstrated. Sample sizes are adequate (n=5-18 VNCs across experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C62",
+      "C64",
+      "C65",
+      "C67",
+      "C71"
+    ],
+    "result": "Cell death occurs early after neurons are born, within 0-5.5 hours, often before neurites extend. Sequential stages of death are observed dependent on distance from the neuroblast, with dying cells located close to NBs and more advanced death stages further away.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C62, C64-C65, C67, C71 are supported by SR4VH spatial-temporal data (Figure 2G,H) showing sequential death stages and fluorescence intensity profiles. The 0-5.5 hour calculation is based on documented cell cycle timing and cell counts. However, the calculation involves assumptions about cell cycle uniformity that could introduce uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C126"
+    ],
+    "result": "The early death observed is unlike vertebrate trophic PCD, where neurons extend processes and interact with targets before dying in the absence of survival signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C126 make a comparative inference supported by the observation that cells die before extending neurites (Figure 2). The distinction from vertebrate neurotrophic death is reasonable given the timing and morphological evidence, though this is an interpretive claim rather than direct experimental demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In the MNB lineage, immature postembryonic neurons expressing Vestigial (Vg-positive, Engrailed-negative B cells) undergo early apoptosis soon after birth, as shown by their proximity to the MNB and SR4VH labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by molecular marker data (Figure 2J,K) showing mutually exclusive Vg and En expression, with only En-negative cells undergoing apoptosis. The inference that these are immature octopaminergic neurons is reasonable based on established lineage knowledge and spatial proximity to the MNB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C46",
+      "C47",
+      "C74",
+      "C75"
+    ],
+    "result": "Blocking PCD in the MNB lineage using H99/XR38 mutants results in 'undead' neurons that survive into adulthood, express octopaminergic markers (TDC2) and VGlut, and elaborate complex arborisations. This represents a 4-9 fold increase in octopaminergic neuron numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C46-C47, C74-C75 are well-supported by quantitative data (Figure 3A-D) with significant p-values (p<0.001) and adequate sample sizes (n=11 each). Molecular marker expression is demonstrated by immunostaining and GAL4 drivers (Figure 3E,F). Complex arborizations are shown by MARCM clones (Figure 3J).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Undead neurons share some features with wild-type octopaminergic neurons (ventral midline cell bodies, projection to tectulum, joining thoracic nerves) but differ in key aspects: they fail to bifurcate, branch in both dorsal and ventral neuropil, and send projections to neighboring segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by detailed anatomical analysis using MARCM clones and H99/XR38 imaging (Figure 3H-J, supplementary figures). The morphological differences are clearly documented, though the functional significance of these differences is not fully explored. The comparison to wild-type is appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Undead neurons are functional and can induce walking behavior when thermogenetically activated with TrpA1 in decapitated flies. Activation caused walking in 9/17 undead neuron samples compared to 13/18 positive controls and 1/19 negative controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48, C84-C87 are supported by thermogenetic activation experiments (Figure 4, Video 1) with appropriate controls. Statistical analysis using chi-squared tests with Bonferroni correction shows significant differences (p<0.05). The experimental design appropriately excludes flies with bifurcating neurons to ensure only undead neurons are tested. Sample sizes are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Calcium imaging during naturalistic walking behavior shows that undead neurons are active and integrate into motor networks. Both undead and wild-type neurons show increased GCaMP6s fluorescence during walking in H99/XR38 flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by two-photon calcium imaging data (Figure 5, Videos 2-4). The inference that both cell types are active is reasonable given the 6.5:1 ratio of undead to wild-type neurons and activity across the entire bundle. However, the inability to distinguish individual cell contributions is a limitation acknowledged by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C49",
+      "C95",
+      "C96",
+      "C97",
+      "C146",
+      "C149"
+    ],
+    "result": "In the flightless swift lousefly Crataerina pallida, segment-specific differences in octopaminergic neuron numbers are lost compared to flying dipterans, with a significantly lower T2/T1 ratio. This reduction is likely caused by increased PCD during development, as evidenced by dying cells near the MNB throughout pupal neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C49, C95-C97, C146, C149 are supported by quantitative data showing loss of segment-specific variation (p=0.012, Figure 7D) and presence of dying cells throughout development (Figure 7I,J). The sample size for swift lousefly is small (n=3) compared to fruit fly (n=7), which limits confidence. The causal link to PCD is inferential but reasonable given the developmental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C111",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "In the flightless bee lousefly Braula coeca, flight-related hemilineages (3B, 7B, 11B, 12A, 6A, 19B, 5B) are reduced compared to fruit flies. The 3A/3B ratio is significantly higher in bee louseflies, indicating severe reduction of flight-controlling hemilineage 3B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C111, C115-C117 are supported by Neuroglian staining comparisons (Figure 9) with significant statistical differences (p<0.0001 for T1, p=0.0001 for T2, p=0.0044 for T3). Sample sizes are adequate (n=7-8). However, the authors acknowledge they cannot make precise cell number inferences due to differences in fiber tract compactness. The link to PCD is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C103",
+      "C101",
+      "C102"
+    ],
+    "result": "Early PCD is found in distantly related insects including primitively wingless firebrats (TUNEL labeling) and hippoboscid louseflies (active Dcp-1 labeling), with dying cells located close to neuroblasts throughout neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C101-C103 are supported by TUNEL labeling in firebrats (Figure 8) and Dcp-1 staining in swift louseflies (Figure 7H-J). The spatial proximity to neuroblasts is consistent with early PCD. However, sample sizes are limited (n=1 for some swift lousefly stages), and the methods differ between species, making direct comparisons challenging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C104",
+      "C144"
+    ],
+    "result": "Early PCD is deployed widely across insects and may be a universal and ancestral feature that sculpts the nervous system, based on evidence from firebrats, Drosophila, and louseflies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54, C104, C144 make broad evolutionary inferences based on data from three insect groups. While the presence of early PCD in distantly related species is suggestive, the limited taxonomic sampling and small sample sizes (especially for non-Drosophila species) make the claim of universality premature. More species and developmental stages would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C42",
+      "C56",
+      "C139",
+      "C154"
+    ],
+    "result": "The evolutionary modulation of death-based patterning could generate novel network configurations, with changes in neural circuits resulting from heritable alterations in the extent and pattern of PCD in hemilineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C33, C42, C56, C139, C154 are speculative hypotheses based on the presented data. While the functional undead neurons and comparative data from flightless species are consistent with this hypothesis, direct evidence of evolutionary changes in PCD regulation is lacking. The claims are reasonable interpretations but require additional evolutionary and genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "PCD affects approximately 40% of VNC hemilineages in postembryonic neurons, with a stereotypical pattern targeting the same hemilineages across individuals, pointing toward a heritable genetic basis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by previous work (Truman et al., 2010) and illustrated in Figure 1D,E. The stereotypy is demonstrated by consistent patterns across individuals. The inference of a genetic basis is reasonable given the stereotypy, though the specific genetic mechanisms are not identified in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Within doomed lineages, 1-8 dying cells are observed (average 1.3\u00b11.5), with most lineages containing 1-2 dying cells from 10-20 total cells. PCD is initiated within 0-5.5 hours after neurons are born.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by quantitative SR4VH data (n=444 doomed lineages from 5 VNCs). The timing calculation is based on established cell cycle parameters and cell counts. The large standard deviation (1.5) relative to the mean (1.3) indicates high variability, which is appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "A few wild-type octopaminergic neurons are produced in all thoracic segments during postembryonic neurogenesis in lineage 0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by developmental timeline data (Figure 3\u2014figure supplement 1) showing TDC2-GAL4 expression. This finding is important for interpreting MARCM experiments and understanding the complete developmental program of the MNB lineage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The walking behavior induced by undead neuron activation is consistent with previous observations that octopamine application causes walking in decapitated flies, suggesting undead neurons can release neurotransmitters in the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 make reasonable inferences based on comparison to published work (Yellman et al., 1997) and the current thermogenetic activation results. The inference that undead neurons release neurotransmitters is logical but indirect, as neurotransmitter release was not directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Early PCD removes almost half of all postembryonic neurons in the fly, making up a much larger fraction of neuronal deaths than the previously emphasized hormonally regulated PCD at metamorphosis and eclosion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 are supported by citation to Truman et al., 2010 and the extensive SR4VH data showing continuous early PCD. The comparison to hormonally regulated PCD is appropriate and highlights the underappreciated importance of early PCD. The inference about relative proportions is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Early PCD likely involves a combination of intrinsic patterning (involving genes like Ubx and Unc-4) and cell-cell interactions between sibling neurons, ultimately deploying proapoptotic genes. The molecular mechanisms remain to be fully elucidated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C134 discuss potential mechanisms based on literature (citations provided) and propose hypotheses. While the cited work supports roles for specific transcription factors and cell interactions in other contexts, direct evidence for their involvement in the early PCD described here is lacking. These are reasonable hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Doomed neurons possess cryptic cellular phenotypes that emerge when death is blocked. Changes in neuron number and/or undead neuron structure could affect adult behavior and be adaptive, as suggested by correlations between hemilineage structure and flight initiation timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 combine observations from the current study (undead neuron phenotypes) with cited work (Mellert et al., 2016; Dudley, 2002). The concept of cryptic phenotypes is well-supported by the undead neuron data. The adaptive potential is speculative but reasonable given the functional integration demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Similar to findings in peripheral olfactory sensory neurons (Prieto-Godino et al., 2020), both central and peripheral nervous systems may use similar modes of early PCD to sculpt circuits during dipteran evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 draw parallels between the current work and published findings on peripheral neurons. The comparison is appropriate and supported by citations. The inference that similar mechanisms operate in both systems is reasonable but remains speculative without direct comparative experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background context: Changes in neural network structure underlie behavioral evolution, with PCD playing a key role. While proliferation has been emphasized, the role of PCD in modifying central circuits remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 provide literature context with appropriate citations. These establish the motivation for the study and accurately represent the state of the field. The citations are appropriate and the knowledge claims are standard in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on insect neurogenesis: Neuroblast organization is conserved across insects, with the MNB being a distinctive unpaired neuroblast. In Drosophila, postembryonic neurogenesis produces most adult CNS neurons, with each neuroblast generating two hemilineages (A and B) that act as functional units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C28 provide essential background on insect neurogenesis with extensive citations. This established knowledge is accurately presented and appropriately referenced. The descriptions are consistent with the field's understanding and necessary for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background on MNB lineage: The MNB is identifiable across insects and produces GABAergic and octopaminergic neurons. Cell numbers vary between segments and species, correlating with function. Despite equal production during development, final numbers differ due to PCD targeting octopaminergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 provide background on the MNB lineage with extensive citations spanning over a century of research. The comparative data across species is well-documented in the literature. The relationship between cell number and function is supported by multiple studies. This background is essential for the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Background on octopamine function: Octopamine release induces and maintains rhythmic behaviors including stepping, flight muscle contractions, and walking in insects. Tyramine, the octopamine precursor, also induces fictive walking and flight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide functional context for octopaminergic neurons with appropriate citations (Sombati and Hoyle, 1984; Yellman et al., 1997; Rillich et al., 2013). This background is essential for interpreting the behavioral experiments and is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Background on MNB development: During postembryonic neurogenesis, MNB hemilineage A survives and differentiates into GABAergic interneurons, while hemilineage B produces octopaminergic neurons embryonically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 provide essential background on MNB lineage development with appropriate citations to previous work. This information is necessary for understanding the experimental design and interpreting the undead neuron results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Wild-type octopaminergic neurons express VGlut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by citation to Greer et al., 2005. This provides important context for interpreting the VGlut expression in undead neurons (C75) and establishes that this is a normal feature of these neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Background on swift lousefly biology: Swift louseflies are viviparous with delayed neurodevelopment compared to typical dipterans, with larvae developing inside the uterus and the nervous system acquiring larval-like features days after pupariation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 provide biological context for the swift lousefly with appropriate citations and data (Figure 7A,H). This background is essential for interpreting the developmental timing and PCD observations in this species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Background on bee lousefly: Braula coeca is a close relative of drosophilids that is wingless, lacks halteres, has a reduced thorax, and lives as a kleptoparasite on honeybees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 provide biological context for the bee lousefly with appropriate citations (Imms, 1942; McAlister, 2018) and images (Figure 9A). This background is essential for interpreting the comparative neuroanatomical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113"
+    ],
+    "result": "Background on hemilineage function: Specific hemilineages in Drosophila have known functions in flight and leg control, with some hemilineages innervating wing neuropil, leg neuropil, or both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110, C112-C113 provide functional context for specific hemilineages with appropriate citations (Harris et al., 2015; Shepherd et al., 2019). This background is essential for selecting which hemilineages to examine in flightless species and interpreting the comparative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Hypothesis: A difference in axon bundle diameter between sister hemilineages could indicate a difference in cell number, possibly established by PCD during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 proposes a hypothesis linking bundle diameter to cell number. While this is a reasonable assumption, the authors acknowledge in C117 that they cannot make precise cell number inferences due to differences in fiber tract compactness. This limitation should be considered when interpreting the 3A/3B ratio data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C145",
+      "C147",
+      "C148"
+    ],
+    "result": "Interpretation: PCD has been co-opted in the MNB lineage during the evolution of flightlessness in the swift louse, given that octopaminergic neurons are involved in flight-related behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145, C147-C148 propose an evolutionary interpretation. While the correlation between reduced octopaminergic neurons and flightlessness is suggestive, and the functional role of these neurons in flight is established (citations provided), direct evidence of evolutionary changes in PCD regulation is lacking. This remains a plausible hypothesis requiring additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Summary: Midline neurons in the insect VNC are homologous across species but show diversity in cell numbers correlated with body form and function. The hemilineage emerges as a discrete developmental unit with common features of gene expression and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 summarize key concepts with appropriate citations. This synthesis is well-supported by the literature and the current study's findings. The hemilineage concept is central to the paper's framework and is appropriately established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C155"
+    ],
+    "result": "Conclusion: Viewing the evolution of insect nervous systems through the lens of the 'hemilineage' will be critical for understanding how development brings about adaptive changes in neural network motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C155 presents the main conceptual conclusion of the paper. This perspective is well-supported by the extensive data on hemilineage-specific PCD, functional undead neurons, and comparative anatomy across species. While speculative regarding future research directions, it is a reasonable synthesis of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Postembryonic neurogenesis lasts for 3.5 days, from mid-2nd instar to 12 hr after pupariation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 states established knowledge about Drosophila development timing. This is standard information in the field and provides necessary context for interpreting the temporal extent of PCD observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Context: While PCD has been reported in embryonic lineages, the impact of early hemilineage-specific PCD on adult network construction has not been fully appreciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 provide context with appropriate citations (Karcavich and Doe, 2005; Rogulja-Ortmann et al., 2007) and accurately characterize the state of knowledge. This establishes the novelty and significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "Future direction: Understanding the molecular control of hemilineage-based death is the key question going forward and is likely to provide insight into how networks evolve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 proposes a future research direction based on the current findings. This is a reasonable conclusion given the demonstrated importance of early hemilineage-specific PCD and the lack of mechanistic understanding. The proposal is well-motivated by the results.",
+    "result_type": "MINOR"
+  }
+]

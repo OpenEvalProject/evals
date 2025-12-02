@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The fire ant social supergene system consists of two variants (SB and Sb) controlling colony queen number, with suppressed recombination due to inversions. The system is young (~175,000 generations), and Sb shows signs of degeneration while maintaining high gene content similarity to SB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 establish the biological context through direct citations to prior work (Wang et al. 2013, Gotzek and Ross 2007, Stolle et al. 2019, Pracana et al. 2017a). These are well-established facts in the field that provide necessary background. The characterization is consistent with published literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Genomic analysis identified 2,877 fixed SNPs between SB and Sb affecting 352 genes, with 47.7% of coding SNPs being non-synonymous. Population-specific analyses revealed 252 additional SNPs in South America and 23,022 in North America, with 122 genes having sufficient expression for allelic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C58-C62 present genomic data with clear methodology (408-fold coverage, 20 SB and 20 Sb males). The 4-fold excess of North American SNPs is appropriately attributed to bottleneck effects (C60-C61). The high proportion of non-synonymous mutations (C11) supports degeneration. Sample sizes and filtering criteria are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Seven genes showed consistent allelic expression differences across all populations, with no tissue-specific effects. Allelic bias correlated more strongly with population ancestry (r\u00b2=0.67 between invasive populations) than with geographic proximity (r\u00b2=0.18-0.21 between native and invasive populations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 are supported by appropriate statistical tests (linear mixed-effects models, BH-adjusted p<0.05) and Figure 1. The lack of tissue-specificity (C15) was tested using DESeq2's Logarithmic Ratio Test. The ancestry correlation analysis (C16-C17) uses proper controls and the F-statistics (F=3.42, p<10\u207b\u00b9\u2075) strongly support the conclusion. The positive control using genome-wide SNPs validates the analytical approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C65",
+      "C66"
+    ],
+    "result": "The supergene region is enriched for socially biased genes (33/474 vs. 12 expected, \u03c7\u00b2=29.7, p<10\u207b\u2077), with 94% showing higher expression in multiple-queen colonies. However, this directional bias is genome-wide, not supergene-specific (\u03c7\u00b2=1.04, p=0.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 present clear statistical evidence for enrichment (C18) with appropriate chi-square tests. The finding that directional bias is genome-wide (C20) is crucial for interpretation and properly tested. The data from 293 socially biased genes (C65) provides adequate power. The conclusion that this pattern cannot be explained by Sb degeneration alone (C66) is logically sound given the genome-wide distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "A model incorporating gene-specific dosage compensation fits expression data significantly better than a null model (ANOVA p<10\u207b\u2075). For most genes without social bias, SB and Sb expression is balanced, but allelic bias increases at distribution extremes. Most genes (87%) show no significant allelic or social bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C67-C72 present model comparison with appropriate statistics. The dosage compensation model (red line in Figure 3) is mathematically derived and significantly better than the null (purple line). The finding that 87% of genes show no bias (C70) is important context. The interpretation of dosage compensation (C71-C72) is well-supported by both overall trends and gene-specific patterns. However, the model assumes specific relationships that could be tested more rigorously with additional functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C73",
+      "C75",
+      "C106"
+    ],
+    "result": "Fifteen genes showed SB-biased allelic expression without social form differences, with 12/15 favoring SB (binomial p=0.03). SB alleles were expressed 5.9-fold higher than Sb alleles (Wilcoxon p=0.0008). Allelic bias toward SB increases with non-synonymous mutations in Sb (coefficient=0.052, p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25, C73, C75, and C106 provide strong evidence for dosage compensation linked to sequence degeneration. The statistical tests are appropriate (binomial, Wilcoxon, linear regression). The correlation between non-synonymous mutations and SB bias (C25, Figure 4-supplement 2) is particularly compelling. However, the causal interpretation (C73) acknowledges alternative explanations appropriately. The sample size of 15 genes is modest but the effect sizes are substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C74",
+      "C76",
+      "C77",
+      "C91"
+    ],
+    "result": "Eight genes showed both allelic and social bias, with 5/8 Sb-biased genes more highly expressed in multiple-queen colonies (vs. 1/15 for SB-biased genes, \u03c7\u00b2=5.8, p=0.02). This enrichment is unlikely to be neutral and suggests antagonistic selection shaped expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C74-C77 present evidence for antagonistic selection. The statistical comparison (\u03c7\u00b2=5.8, p=0.02) is appropriate though the sample size is small (8 genes). The argument that this pattern is unlikely neutral (C76) is strengthened by the correlation with non-synonymous mutations (C75) and genome-wide social bias patterns (C20). However, the inference of antagonistic selection (C77, C91) relies on ruling out alternatives, which is done reasonably but not definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Three candidate genes for social polymorphism were identified: Gp-9 (Sb-biased, 5 fixed differences), ejaculatory bulb-specific protein 3 (SB-biased), and retinol-binding protein (Sb-biased). All three have putative functions in environmental perception, consistent with social phenotype requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28 and C79-C86 identify candidate genes based on consistent allelic bias across populations and differential expression between social forms. The functional annotations (C83, C85) are supported by citations. However, the interpretation that these genes contribute to social polymorphism (C79) is speculative. The historical context for Gp-9 (C125-C126) is appropriate. The functional connection to environmental perception (C86) is reasonable but requires experimental validation. This represents hypothesis generation rather than demonstrated causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "The lack of tissue-specific allelic bias and strong ancestry effects indicate that most allelic biases result from neutral or deleterious mutations rather than adaptive changes. Suppressed recombination effects on genomic architecture explain most allelic biases in the supergene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C98-C103 synthesize multiple lines of evidence: lack of tissue-specificity (C15), ancestry correlations (C16-C17), and mutation accumulation (C25). The logic is sound\u2014adaptive changes would require tissue-specific fine-tuning (C98, C100-C101). However, the interpretation acknowledges that some genes may be partially adaptive but lack fine-tuning due to low selection efficacy (C100), which is appropriately cautious. The conclusion about genomic architecture (C64, C103) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Genes with SB-biased expression either lack social form differences or show lower expression in multiple-queen colonies, consistent with Sb degeneration. Allelic expression bias is relatively balanced across the supergene, but far more genes show multiple-queen bias than single-queen bias, with SB bias leading to no social form differences due to dosage compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 and C109-C113 integrate findings about expression patterns. The balanced allelic bias (C109) contrasts with directional social bias (C110), supporting dosage compensation (C112). The interpretation that SB bias compensates for Sb degeneration (C88-C89) is consistent with model fitting (C21) and mutation data (C25). The acknowledgment that some compensation may be automatic rather than selected (C113) shows appropriate caution. The evidence converges well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C95",
+      "C96",
+      "C97",
+      "C104",
+      "C105",
+      "C107"
+    ],
+    "result": "Most supergene genes show no strong allelic bias or supergene-wide directional bias. Genes with biased expression show patterns consistent with degeneration (lower Sb expression with more non-synonymous mutations), and more genes are SB-biased than expected, consistent with partial dosage compensation. These degeneration patterns persist despite antagonistic selection and lack of evolutionary strata.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 and C95-C97 summarize major findings with appropriate citations to prior work on Sb degeneration (C96). The observation that ~half of coding SNPs are non-synonymous (C11, C97) supports degeneration. The correlation with expression (C53, C55) is statistically demonstrated (C25). The comparison to other systems (C104-C105) provides context. The acknowledgment that degeneration occurs despite factors that should dampen it (C107) strengthens the conclusion. This is a well-supported synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Gene-by-gene dosage compensation can emerge over timescales as short as ~175,000 generations (1 million years), similar to patterns in other young supergenes and sex chromosomes. This supports the idea that sex chromosome patterns are representative of supergenes generally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 place findings in broader evolutionary context with appropriate citations (Sun et al. 2018, Muyle et al. 2012, Alekseyenko et al. 2013, Nozawa et al. 2018). The comparison to other systems (C117, C119) is valid. The timescale estimate (C116) depends on prior dating (Wang et al. 2013, Pracana et al. 2017a). The generalization to supergenes (C118) is reasonable given multiple examples. This represents appropriate contextualization of findings within the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Most Sb-biased genes are more highly expressed in multiple-queen colonies, supporting antagonistic allele presence. Expression patterns don't follow expectations if social form differences were due solely to allelic expression, and patterns are similar within and outside the supergene, suggesting factors unrelated to supergene architecture drive social form differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 synthesize evidence for antagonistic selection while acknowledging complexity. The finding that social bias patterns are similar genome-wide (C122) is crucial for interpretation and properly demonstrated (C20). The argument against allelic expression alone explaining social differences (C121) is supported by model fitting (C21). However, the inference about factors unrelated to supergene architecture (C123) is somewhat speculative\u2014it could also reflect trans-acting regulation or developmental effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C127"
+    ],
+    "result": "Multiple complex evolutionary forces (degeneration, dosage compensation, antagonistic selection) simultaneously act on the young supergene. Allele-specific expression patterns alone are insufficient for inferring adaptive, deleterious, or neutral status; broader context is needed. This approach highlights genes with roles in environmental perception relevant to social behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 and C127 present the main conceptual conclusions. The demonstration of multiple forces (C92) is well-supported by the data. The caution about interpreting expression patterns (C93-C94) is an important methodological point validated by the study's findings. The emphasis on context (C94) is exemplified by the analysis. This represents a mature synthesis that appropriately acknowledges complexity and limitations while advancing understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The fire ant social supergene is positioned as an excellent model for studying early supergene evolution, offering insights into how evolutionary antagonism and suppressed recombination shape evolution. This contrasts with sex chromosome studies suggesting recombination effects may dominate over antagonistic selection in young systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 establish theoretical framework and study rationale with appropriate citations. The characterization of the fire ant system as an excellent model (C34-C35) is justified by its young age and tractability. The contrast with sex chromosome evolution (C33) is supported by multiple citations. This provides solid conceptual grounding, though the claim that it's 'excellent' (C34) is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The study develops hypotheses about expected expression patterns under different evolutionary scenarios: degeneration should cause consistent cross-tissue allelic bias and Sb downregulation, potentially with SB upregulation for dosage compensation; antagonistic selection should cause tissue-specific bias and enrichment of socially-biased genes in the supergene, with Sb-biased genes showing multiple-queen colony bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C50 lay out clear, testable hypotheses with appropriate citations to support theoretical expectations. The predictions about tissue-specificity (C37-C38), dosage compensation (C41-C45), and antagonistic selection (C46-C50) are logically derived. The comparison to Drosophila dosage compensation (C42-C43) provides useful context. These hypotheses effectively structure the analysis and are well-grounded in evolutionary theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C108",
+      "C114",
+      "C115"
+    ],
+    "result": "Invasive populations have lower genetic diversity overall and in the supergene. Reduced Sb expression could cause detrimental fitness effects if genes are dosage-sensitive. Dosage compensation mechanisms may include automatic transcriptional machinery effects or co-evolution of regulatory elements outside the supergene region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102 and C108 are supported by citations, but C114-C115 are explicitly speculative. The speculation about automatic compensation (C114) and trans-acting regulation (C115) is reasonable but lacks direct evidence. These represent plausible mechanisms that warrant future investigation but are not demonstrated by the current data. The fitness effects claim (C108) is also speculative, though reasonable given patterns in sex chromosomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The analytical approach cannot detect allelic differences in genes absent from the reference genome, such as OBP-Z5, a putative odorant binding protein exclusive to Sb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 appropriately acknowledges a significant limitation of the reference-based approach. The example of OBP-Z5 (Pracana et al. 2017b) is relevant. This is an important caveat that affects interpretation of results, particularly regarding candidate genes for social polymorphism. The limitation is clearly stated and appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

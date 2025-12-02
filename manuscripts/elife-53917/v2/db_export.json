@@ -1,0 +1,1663 @@
+{
+  "submission": {
+    "id": "7e84c1af-7fef-4734-9937-2582b0ab039f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:38:50.058669Z",
+    "updated_at": "2025-12-02T15:38:50.058669Z"
+  },
+  "content": [
+    {
+      "id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "submission_id": "7e84c1af-7fef-4734-9937-2582b0ab039f",
+      "content_type": "manuscript",
+      "content_text": "# A highly responsive pyruvate sensor reveals pathway-regulatory role of the mitochondrial pyruvate carrier MPC\n\n## Authors\n\n- Robinson Arce-Molina<sup>1</sup>\n- Francisca Cort\u00e9s-Molina<sup>1</sup>\n- Pamela Y Sandoval<sup>1</sup>\n- Alex Galaz<sup>1</sup>\n- Karin Alegr\u00eda<sup>1</sup>\n- Stefanie Schirmeier<sup>3</sup>\n- L Felipe Barros<sup>1</sup> ([ORCID: 0000-0002-6623-4833](https://orcid.org/0000-0002-6623-4833)) \u2020\n- Alejandro San Mart\u00edn<sup>1</sup> ([ORCID: 0000-0002-5608-5117](https://orcid.org/0000-0002-5608-5117)) \u2020\n\n### Affiliations\n\n1. Centro de Estudios Cient\u00edficos-CECs Valdivia Chile\n2. Universidad Austral de Chile Valdivia Chile\n3. Institut f\u00fcr Neuro- und Verhaltensbiologie, University of M\u00fcnster M\u00fcnster Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nMitochondria generate ATP and building blocks for cell growth and regeneration, using pyruvate as the main substrate. Here we introduce PyronicSF, a user-friendly GFP-based sensor of improved dynamic range that enables real-time subcellular quantitation of mitochondrial pyruvate transport, concentration and flux. We report that cultured mouse astrocytes maintain mitochondrial pyruvate in the low micromolar range, below cytosolic pyruvate, which means that the mitochondrial pyruvate carrier MPC is poised to exert ultrasensitive control on the balance between respiration and anaplerosis/gluconeogenesis. The functionality of the sensor in living tissue is demonstrated in the brain of Drosophila melanogaster larvae. Mitochondrial subpopulations are known to coexist within a given cell, which differ in their morphology, mobility, membrane potential, and vicinity to other organelles. The present tool can be used to investigate how mitochondrial diversity relates to metabolism, to study the role of MPC in disease, and to screen for small-molecule MPC modulators.\n\n## Introduction\n\nMitochondria are the chief energy generators of animal cells, accounting for over 90% of ATP production, and they also generate building blocks for the synthesis of sugars, amino acids, nucleic acids and prosthetic groups, essential elements for tissue growth, plasticity and regeneration. In addition to their metabolic functions, mitochondria are involved in diverse physiological and pathophysiological processes, including Ca2+ signaling, the production of reactive oxygen species, aging and degeneration, cell death and oncogenesis. Some open issues in mitochondrial physiology are the regulation of intermediate metabolism, the coordination between cytosolic and mitochondrial pathways, the decision between catabolism and anabolism, and the crosstalk between mitochondria and other organelles like plasma membrane and endoplasmic reticulum. Are mitochondria within a given cell metabolically diverse? A major mitochondrial substrate for mammalian cells is pyruvate, a 3-carbon organic acid produced from glucose, lactate and amino acids. Extracellular pyruvate may also reach the cytosol via monocarboxylate transporters (MCTs) (Halestrap and Price, 1999). Pyruvate enters mitochondria through the mitochondrial pyruvate carrier (MPC) (Halestrap and Denton, 1975; Herzig et al., 2012; Bricker et al., 2012). Once in the matrix, the flux of pyruvate is split. Carbon is either shed to generate ATP via oxidative phosphorylation or alternatively, carbon is accrued to generate oxaloacetate, a process termed anaplerosis, which provides building blocks for biosynthesis and constitutes the first step of gluconeogenesis.\n\nPyronic, the first genetically-encoded sensor for pyruvate (San Mart\u00edn et al., 2014a), has permitted the measurement of cytosolic pyruvate in several organisms with high temporal resolution, see for example (M\u00e4chler et al., 2016; Compan et al., 2015; Pla\u00e7ais et al., 2017; Delgado et al., 2018; Baeza-Lehnert et al., 2019; Hasel et al., 2017; Rusu et al., 2017). This article introduces a new version of Pyronic that improves on the original sensor in terms of dynamic range and facility of use, as it is imaged with the 488 nm Argon laser of standard confocal microscopes. To demonstrate the usefulness of the probe, we measured cytosolic, nuclear and mitochondrial pyruvate concentration, MPC-mediated permeability and determined the metabolic flux of small groups of mitochondria. The main finding of this study is that in cultured astrocytes mitochondrial pyruvate lies in the low micromolar range, endowing the MPC with the potential capability of ultrasensitive modulation of anaplerosis. Experiments were also carried out in fruit fly larvae to demonstrate pyruvate dynamics in living tissue.\n\n## Results\n\n### A highly responsive pyruvate sensor\n\nFigure 1A illustrates PyronicSF (Single Fluorophore), in which the complete sequence of the bacterial transcription factor PdhR (Quail and Guest, 1995) has been linked to a circularly-permuted version of GFP (cpGFP) (Nagai et al., 2001) (DNA sequence in Figure 1\u2014figure supplement 1). Exposure of the sensor to pyruvate in vitro caused a strong increase in fluorescence when excited by blue light (Figure 1B). Excited at 488 nm, the increase in fluorescence emission was \u2248 250%, with a KD of 480 \u03bcM (Figure 1C). As expected from the behavior of PdhR (San Mart\u00edn et al., 2014a) in the FRET sensor Pyronic, PyronicSF was insensitive to lactate, to other structurally related organic acids, and to NAD+ and NADH (Figure 1D). While the sensing of pyruvate by PyronicSF was not affected by pH, there was a pH-dependent shift of the dose-response curve (Figure 1\u2014figure supplement 2). Because the fluorescence ratio of the sensor Pyronic is insensitive to pH in the physiological range (San Mart\u00edn et al., 2014a), we attribute the effect of pH on PyronicSF to the pH-sensitivity typical of cpGFPs (Marvin et al., 2013; Cambronne et al., 2016). When required, the signal can be corrected by taking advantage of the pH-sensitivity of PyronicSF excited at its isosbestic point (435 nm; Figure 1B), as detailed in Figure 1\u2014figure supplement 2, or by parallel measurements with a pH probe. Alternatively, experiments may be controlled with Dead-PyronicSF, a mutated version of the sensor almost devoid of pyruvate sensitivity in the physiological range, but as sensitive to pH as PyronicSF (Figure 1\u2014figure supplement 2). Excited with violet light, pyruvate caused a decrease in fluorescence emission (Figure 1B), which may be exploited to obtain ratiometric measurements using, for example, the 405 nm laser line available in some confocal microscopes. Expressed in the cytosol of HEK293 cells, PyronicSF showed a homogeneous distribution and responded to a saturating pyruvate load with a change in fluorescence similar to that of the purified protein (Figure 1E). The amplitude of the response of PyronicSF was\u00a0>6 times that of Pyronic (Figure 1E; San Mart\u00edn et al., 2014a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig1-v2.jpg)\n\n**Figure 1.:** (A) PyronicSF. cpGFP flanked by linkers was inserted between amino acid residues 188 and 189 of PdhR. DNA sequence in Figure 1\u2014figure supplement 1). (B) Excitation spectra of PyronicSF in the absence and presence of 10 mM pyruvate. Data are mean\u00a0\u00b1\u00a0s.e.m. from 3 protein extracts. (C) PyronicSF emission (488 nm excitation) as a function of pyruvate concentration. Data are mean\u00a0\u00b1\u00a0s.e.m. from 3 protein extracts. The best fit of a rectangular hyperbola to the data is shown, KD\u00a0=\u00a0480\u00a0\u00b1\u00a065 \u03bcM, maximum fluorescence change was 247%. The in vitro saturation curve of the FRET sensor Pyronic is plotted in gray (San Mart\u00edn et al., 2014a). (D) PyronicSF emission in the presence of metabolites and transport inhibitors. Data are mean\u00a0\u00b1\u00a0s.e.m. from 3 protein extracts. (E) Pyruvate dynamics in mammalian cells. HEK293 cells expressing PyronicSF were exposed to 10 mM pyruvate. Images show cells before and during exposure to pyruvate. Bar represents 20 \u03bcm. Bar graphs summarize data (mean\u00a0\u00b1\u00a0s.e.m.) from 54 cells in four experiments (PyronicSF), and 59 cells in five experiments (Pyronic).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig1-figsupp2-v2.jpg)\n\n### Estimation of MPC activity\n\nPyronicSF was targeted to the mitochondrial matrix using the destination sequence of cytochrome oxidase. The targeting was successful in various cell types, as evidenced by the labeling of elongated cytoplasmic structures that are of shape and size characteristic of mitochondria (Figure 2\u2014figure supplement 1). To test the functionality of the sensor we chose astrocytes, cells that combine oxidative phosphorylation with anaplerosis, and that in culture are very thin, ideal to resolve mitochondria (Figure 2A). Confirmation of correct targeting was provided by colocalization with the voltage-sensitive dye TMRM (Figure 2\u2014figure supplement 2). Mito-PyronicSF also colocalized with the red fluorescent protein mCherry targeted to mitochondria (Figure 2A and Figure 2\u2014figure supplement 1). Exposure of astrocytes co-expressing mito-PyronicSF and mito-mCherry to pyruvate resulted in a reversible increase in fluorescence ratio, evidencing mitochondrial uptake (Figure 2B). The rise in mitochondria was much slower than its accumulation in the cytosol, monitored indirectly with PyronicSF targeted to the nucleus (Figure 2\u2014figure supplement 3). In cells in which mito-PyronicSF was expressed by lipid transfection (as opposed to adenoviral transduction), there was sometimes a diffuse staining explained by inefficient mitochondrial targeting/retention. In such \u2018leaky\u2019 cells, the increase in signal elicited by a pyruvate load was biphasic, with a rapid phase attributable to the cytosolic sensor, followed by a slow mitochondrial phase (Figure 2\u2014figure supplement 3). Absence of a rapid phase in the increase of PyronicSF signal in\u00a0response to extracellular pyruvate suggests correct localization of\u00a0the sensor in the mitochondrial matrix, as opposed to the intermembrane\u00a0space. The permeability of the outer mitochondrial membrane, mediated by\u00a0VDAC, is much higher than that of the inner mitochondrial membrane,\u00a0mediated by the MPC. Thus, PyronicSF mistargeted to the intermembrane space would have been expected to respond with a faster fluorescence increase, that is,\u00a0similar to\u00a0what was observed for the cytosolic sensor.\u00a0The FRET sensor Pyronic could also be targeted to mitochondria in functional form (Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1), but four copies of the destination sequence were needed, probably because of its larger size relative to PyronicSF.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig2-v2.jpg)\n\n**Figure 2.:** (A) Astrocytes co-expressing mito-PyronicSF (green) and mito-mCherry (magenta). Bars represent 10 \u03bcm. (B) Cultures were exposed to 3 mM pyruvate. Data correspond to mean\u00a0\u00b1\u00a0s.e.m. (4 cells in a representative experiment). (C) Cultures were exposed to 3 mM pyruvate in the absence (black symbols) and presence of 10 \u03bcM UK-5099 (white symbols). Data are mean\u00a0\u00b1\u00a0s.e.m. of 31 cells from eight experiments. Initial rates (%/min), estimated by fitting a single exponential function to the data (continuous lines), were 32\u00a0\u00b1\u00a04 (control) and 10\u00a0\u00b1\u00a05 (UK-5099). (D) Cultures were exposed to 3 mM pyruvate in the absence (black symbols) and presence of 30 \u03bcM rosiglitazone (white symbols). Data are mean\u00a0\u00b1\u00a0s.e.m. of 51 cells from nine experiments. Initial rates (%/min), estimated by fitting a single exponential function to the data (continuous lines), were 78\u00a0\u00b1\u00a06 (control) and 26\u00a0\u00b1\u00a03 (rosiglitazone).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig2-figsupp3-v2.jpg)\n\nThe uptake of pyruvate by mitochondria was sensitive to the specific MPC1 blocker UK-5099 (Halestrap and Denton, 1975; Herzig et al., 2012; Bricker et al., 2012; Nagampalli et al., 2018;\u00a0Figure 2C). The average degree of uptake inhibition was 69% (Figure 2C). Possible explanations for the incomplete inhibition may be variations in the subunit composition of the MPC (Nagampalli et al., 2018) and/or the presence of alternative routes. This type of uptake protocol seems amenable to the identification and characterization of pharmacological inhibitors of the MPC, a transporter that has been singled out as a target of clinical interest (Compan et al., 2015; Divakaruni et al., 2013; Schell et al., 2014; Vacanti et al., 2014; Gray et al., 2015; Olson et al., 2016; Divakaruni et al., 2017; Li et al., 2017). To illustrate the potential of mito-PyronicSF for drug discovery, we show here that the insulin sensitizer rosiglitazone inhibited the uptake of pyruvate by astrocytic mitochondria by 67% (Figure 2D), providing confirmation that MPC is a target of thiazolidinediones (Divakaruni et al., 2013).\n\n### Quantification of mitochondrial pyruvate concentration\n\nThe concentration of pyruvate in the mitochondrial matrix of intact cells is unknown. Given the 1:1 stoichiometry between proton and pyruvate transport by the MPC, and the respective pH gradient between cytosol and mitochondria (7.2 and 7.8 [Azarias et al., 2011], equivalent to a 4-fold proton gradient), mitochondrial pyruvate may reside anywhere between a few micromolar and four times the cytosolic concentration of pyruvate, a quantity that is neither known with precision. At extracellular levels of glucose, lactate and pyruvate found in brain tissue, steady-state mitochondrial pyruvate was found to lie at the low end of the detection range of PyronicSF (Figure 3A and C), which is in agreement with parallel measurements using the FRET sensor (Figure 3B and C). A one-point calibration of both sensors was accomplished by forcing a nominal zero cytosolic pyruvate by MCT-accelerated exchange with lactate (Halestrap and Price, 1999; San Mart\u00edn et al., 2014a), followed by interpolation in the dose-response curve obtained in vitro (Figure 1C). Using this protocol, median mitochondrial pyruvate measured with PyronicSF was 21 \u03bcM. Experiments with the sensor targeted to the cytosol showed that the median steady-state concentration of pyruvate in this compartment was 33 \u03bcM. The concentration of pyruvate in both compartments varied between cells, explained by differences between experiments (i.e. culture conditions), and also by heterogeneity within a given microscopic field (Figure 3\u2014figure supplement 2). We do not know what causes such variability, analogous to that reported in cultured astrocytes for glucose and lactate concentrations, glucose transport, glycolytic rate, and NADH/NAD+\u00a0(San Mart\u00edn et al., 2013; Loaiza et al., 2003; Bittner et al., 2010; K\u00f6hler et al., 2018). Factors to be explored, ideally with multiple sensors co-expressed, include cell cycle and contact inhibition. There was no apparent correlation between sensor expression level and mitochondrial pyruvate concentration (Figure 3\u2014figure supplement 3). To gauge the performance of PyronicSF in the low micromolar range, purified PyronicSF was exposed to low pyruvate concentrations. The experiment was done in vitro to prevent metabolic regulation. Figure 3\u2014figure supplement 4 shows that the sensor is capable of detecting a difference of 10 \u03bcM in the low micromolar range, provided that sufficient replicates are available. This may be a limitation for fast time courses. Estimated with the FRET sensor, whose KD is five times lower, median pyruvate concentrations were 25 \u03bcM in mitochondria and 40 \u03bcM in cytosol, a difference of 15 \u03bcM. Thus, both sensors converged in showing that mitochondrial pyruvate is in the low micromolar range, and that is lower than cytosolic pyruvate.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig3-v2.jpg)\n\n**Figure 3.:** Astrocytes expressing PyronicSF or Pyronic in mitochondria or cytosol were first incubated in a buffer containing physiological concentrations of glucose (2 mM), lactate (2 mM) and pyruvate (0.2 mM), followed by removal of pyruvate by accelerated-exchange with 10 mM lactate and exposure to 10 mM pyruvate. (A) Representative trace from a single astrocyte expressing mito-PyronicSF. Data are shown as percentage of the maximum change (left) and pyruvate concentration (right), with reference to the response of the sensor obtained in vitro (Figure 1C). (B) Representative trace from a single astrocyte expressing mito-Pyronic. Data are shown as percentage of the maximum change (left) and pyruvate concentration (right), with reference to the response of the sensor obtained in vitro (San Mart\u00edn et al., 2014a). (C) Steady-state mitochondrial and cytosolic pyruvate concentrations measured with PyronicSF or Pyronic at physiological concentrations of glucose, lactate and pyruvate, as illustrated in panels A and B. Data are from 131 cells in ten experiments (mito-PyronicSF), 59 cells in four experiments (cytosolic PyronicSF), 20 cells in seven experiments (mito-Pyronic), and 50 cells in five experiments (cytosolic Pyronic). (D) Mitochondrial pyruvate dynamics. Pyruvate enters mitochondria (blue compartment) and is metabolized by PDH and the tricarboxylic acid cycle (TCA), or is carboxylated by PC. (E) Simulation of pyruvate dynamics in response to PDH and MPC modulation. The effects of activating PDH and MPC by 100% on mitochondrial pyruvate concentration (top panel) and on the fluxes of PDH and PC (bottom panel) are shown. Steady-state cytosolic and mitochondrial pyruvate were 33 \u03bcM and 21 \u03bcM. Cytosolic and mitochondrial pH were 7.2 and 7.8. Steady-state PDH and PC fluxes were 0.91 and 0.29 \u03bcM/s. (F) Ultrasensitive modulation of PC flux by the MPC. The curves show the degree of flux increase at PC and PDH relative to the degree of MPC activation. The shaded area under the PC curve indicates the range of pyruvate concentrations at which PC flux increases more than 1% when MPC is activated by 1%. MPC dosage was normalized at 3.24 \u03bcM. (G) Synergic effect of cytosolic pyruvate and MPC activity on PC flux. The effects of increasing cytosolic pyruvate and MPC activity by 100% on mitochondrial pyruvate concentration (top panel) and on the fluxes of PDH and PC (bottom panel) are shown. The sums of the independent effects are indicated by interrupted lines.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig3-figsupp3-v2.jpg)\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig3-figsupp4-v2.jpg)\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig3-figsupp5-v2.jpg)\n\n### Astrocytic mitochondrial pyruvate is at optimal level for MPC modulation of anaplerosis\n\nWith knowledge of pyruvate levels inside and outside mitochondria, a mathematical model could be built to appraise the role of the MPC on catabolism and anabolism. The two main mitochondrial pyruvate sinks are pyruvate dehydrogenase (PDH; EC 1.2.4.1), which is in charge of pyruvate catabolism towards energy production, and pyruvate carboxylase (PC; EC 6.4.1.1), which catalyzes pyruvate anabolism towards anaplerosis and synthesis (Figure 3D). Their combined flux was set at 1.2 \u03bcM/s (Fern\u00e1ndez-Moncada and Barros, 2014), with PDH and PC respectively accounting for 76% and 24% (Oz et al., 2004). Next, the dosage of MPC was tuned so that at a cytosolic pyruvate of 33 \u03bcM and the pH gradient estimated previously in these cells (Azarias et al., 2011), mitochondrial pyruvate stabilized at 21 \u03bcM, as determined above. With the system configured in this way a number of observations could be made. Firstly, activation of the MPC is necessary for efficient stimulation of oxidative metabolism. For example, PDH activation does not translate into a sustained flux increase because mitochondrial pyruvate becomes depleted, leading to partial PDH desaturation (Figure 3E). More dramatically, the fall of pyruvate leads to a strong decrease of flux through PC, a \u2018steal\u2019 flux phenomenon. However, if the activation of PDH is accompanied by activation of the MPC, the flux through PDH can be sustained, with minimal disturbance of PC flux. Figure 3E also shows that MPC modulation is sufficient to efficiently modulate the flux through PC. Actually, Figure 3F shows that if the steady-state concentration of mitochondrial pyruvate is below 30 \u03bcM, a given change in MPC activity will be amplified in terms of PC flux, a phenomenon that has been termed ultrasensitivity (Ferrell and Ha, 2014). For example, at 21 \u03bcM mitochondrial pyruvate, a 1% MPC increase causes a 1.2% increase in PC flux. In contrast, PDH flux increases by only 0.4% (Figure 3F). A similar analysis showed that PC flux is also highly responsive to cytosolic pyruvate. For example a rise in cytosolic pyruvate, as may result from glycolytic activation, is faithfully followed by an increase in PC flux and a minor increase in PDH flux (Figure 3G). Remarkably, the MPC and cytosolic pyruvate interact synergistically with respect to PC flux but antagonistically with respect to PDH flux. A coincidental rise of MPC activity and cytosolic pyruvate will cause an increase in PC flux larger than the sum of the two independent effects, but for PDH the effects are not even additive (Figure 3G). The exquisite sensitivity of PC flux to MPC activity (and to cytosolic pyruvate) is not observed at high mitochondrial pyruvate levels (Figure 3F). Together, these results indicate that the MPC is poised for sensitive modulation of anaplerosis. This conclusion stems from the current finding of low relative intramitochondrial pyruvate and the assumption that in astrocytes PC has significantly lower affinity for pyruvate than PDH, as observed in liver and cell lines (BRENDA database). Of note, the behavior of the system is essentially insensitive to the specific kinetic parameters of the MPC (data not shown), as expected for a transporter working far from thermodynamic equilibrium.\n\n### Quantification of mitochondrial pyruvate flux\n\nA protocol to approach flux was devised based on the idea that acute inhibition of mitochondrial pyruvate entry at the MPC should cause a progressive fall in mitochondrial pyruvate as it is consumed by PDH and PC. Analogous methods have been applied successfully to the measurement of whole cell glucose, lactate and pyruvate consumptions in various cell types (Baeza-Lehnert et al., 2019; San Mart\u00edn et al., 2014b; Barros, 2018). As shown in Figure 4A, MPC stoppage with UK-5099 caused immediate depletion of mitochondrial pyruvate. Consistent with the partial UK-5099 inhibition of the pyruvate transport described above, the depletion was not complete. We do not think that the partial effect is explained by insufficient UK-5099, because similar steady-states were reached at 0.5 \u03bcM and 10 \u03bcM UK-5099 (53 \u00b1 12% versus 47 \u00b1 6%; 12 cells in three paired experiments, p>0.05, data not shown) and the half-inhibition constant for MPC inhibition by UK-5099 is only 50 nM (Halestrap, 1975). Thus, the present protocol underestimates the\u00a0actual rate of mitochondrial pyruvate consumption by an approximate factor of 2. Reportedly, long term exposure to UK-5099 causes irreversible inhibition of the MPC (Divakaruni et al., 2013; Hildyard et al., 2005) but this was not observed at the low concentrations and short exposure times used here (Figure 4B). This reversibility opens the possibility of before-and-after experiments. Using such a protocol, uncoupling of oxidative phosphorylation (OXPHOS) strongly stimulated mitochondrial pyruvate consumption (Figure 4C) whereas conversely, inhibition of OXPHOS with the cytochrome oxidase inhibitor azide resulted in a lower rate (Figure 4D). A representative example of the estimation of mitochondrial pyruvate consumption expressed in absolute terms is shown in Figure 4E. There was substantial variability between cells, which ranged from 0.29 to 3.1 \u03bcM/s, with a median value of 1.1 \u03bcM/s (Figure 4E). There was no apparent correlation between sensor expression level and the rate of mitochondrial pyruvate consumption (Figure 3\u2014figure supplement 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig4-v2.jpg)\n\n**Figure 4.:** (A) Time course of mitochondrial pyruvate level after an astrocyte was exposed 5 mM pyruvate and then to 10 \u03bcM UK-5099. The new steady-state is represented on the right, as percentage of the level before addition of UK-5099. Median\u00a0=\u00a062%. Data are from 29 cells in ten experiments. (B) An astrocyte incubated in 5 mM pyruvate was exposed three times for 30 s to 0.5 \u03bcM UK-5099. Rates of pyruvate depletion are shown in red. The result of three similar experiments (9 cells) is shown below. (C) The rate of mitochondrial pyruvate depletion induced with 10 \u03bcM UK-5099 was monitored before and after exposure to the proton ionophore FCCP (1 \u03bcM). Data are mean\u00a0\u00b1\u00a0s.e.m (29 cells in three experiments). (D) The rate of mitochondrial pyruvate depletion induced with 10 \u03bcM UK-5099 was monitored before, during and after exposure to the cytochrome oxidase inhibitor azide (5 mM; 16 cells in three experiments). (E) An astrocyte superfused with 3 mM pyruvate was exposed to 10 \u03bcM UK-5099, resulting in a rate of depletion of 1.2 \u03bcM/s. The right panel represents the summary of sixteen experiments (44 cells).\n\nTo exemplify how mito-PyronicSF might serve to study subcellular metabolism, pyruvate concentration and consumption were determined in mitochondria located in different regions of a cell. Steady-state pyruvate in a small group of peripheral mitochondria was found to be higher than in mitochondria lying close to the nucleus. Application of the transporter-block protocol showed that pyruvate consumption may also differ within a cell (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig5-v2.jpg)\n\n**Figure 5.:** Mito-PyronicSF (gray) in an astrocyte expressing mito-PyronicSF and mito-mCherry (left). Bar represents 10 \u03bcm. The righthand image shows three regions of interest colored according to the look-up table in the inset (0 to 250 \u03bcM pyruvate, calibrated as described for Figure 3). The three graphs show pyruvate consumption rates in the regions of interest, determined with 10 \u03bcM UK-5099 in cells incubated with 3 mM pyruvate.\n\n### Mitochondrial pyruvate dynamics in brain tissue\n\nThe ability of mito-PyronicSF to monitor pyruvate in living tissue was investigated in Drosophila melanogaster larvae. For facility of access, we studied perineurial glial cells, which form a monolayer separating the brain from the surrounding hemolymph. PyronicSF expressed very well in cytosol and mitochondria of these cells (Figure 6A\u2013B). Superfusion of acutely isolated brains with pyruvate resulted in a quick increase in cytosolic pyruvate, revealing the presence of abundant surface pyruvate transporters in these cells (Figure 6C\u2013E). The response of mitochondria was slower and plateaued at lower pyruvate levels, consistent with mitochondria being a site of pyruvate consumption downstream of the cytosol (Figure 6D\u2013E). In the presence of a buffer containing glucose, lactate and pyruvate, the steady-state level of pyruvate was much higher in the cytosol than in mitochondria (Figure 6C\u2013D). Experiments are planned to measure transmitochondrial pyruvate and pH gradients in the presence of normal hemolymph substrates. Nevertheless, the steep transmitochondrial pyruvate gradient measured here suggests that the MPC is also a key regulator of the balance between catabolism and anabolism in perineurial glial cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53917/elife-53917-fig6-v2.jpg)\n\n**Figure 6.:** Brains were acutely dissected from Drosophila melanogaster larvae expressing PyronicSF in the cytosol or mitochondria of perineurial glial cells. (A) PyronicSF in the cytosol of perineurial cells. Bar represents 100 \u03bcm. (B) Mito-PyronicSF in perineurial cells. Bar represents 10 \u03bcm. An area containing clearly identifiable mitochondria is shown under higher magnification on the right. Bar represents 5 \u03bcm. (C) A brain expressing cytosolic PyronicSF in perineurial cells was superfused with HL3 buffer containing 5 mM glucose, 1 mM lactate and 0.5 mM pyruvate. After removal of the substrates, the tissue was sequentially exposed to 0.1, 1 and 10 mM pyruvate. Data are mean\u00a0\u00b1\u00a0s.e.m. (20 cells). (D) A brain expressing mito-PyronicSF in perineurial cells was superfused with HL3 buffer containing 5 mM glucose, 1 mM lactate and 0.5 mM pyruvate. After removal of the substrates, the tissue was sequentially exposed to 1 and 10 mM pyruvate. Data are mean\u00a0\u00b1\u00a0s.e.m. (20 cells). (E) Rates of PyronicSF fluorescence increase in response to 10 mM pyruvate. Data are mean\u00a0\u00b1\u00a0s.e.m. (60 cells from three experiments similar to those shown in C-D).\n\n## Discussion\n\nThe present article introduces PyronicSF, a new tool for the study of metabolism. PyronicSF is genetically-encoded and compatible with standard fluorescence microscopes. In combination with ad-hoc protocols, this sensor permits the measurement of transport, concentration and flux of pyruvate in intact mitochondria. In combination with suitable experimental models, PyronicSF may be adapted to the analysis of intact organs, cell populations, single cells or even individual mitochondria. Demonstrating its potential, we showed that in mouse astrocytes and probably in perineurial cells from Drosophila melanogaster, mitochondrial pyruvate lies in the low micromolar range, a finding that informs about the regulatory role of the MPC.\n\n### A new approach to mitochondrial function\n\nMitochondria are the chief ATP producers of eukaryotic cells and also a principal site for the generation of building blocks for macromolecular synthesis. The speeds of these catabolic and anabolic pathways are assessed by diverse techniques of complementary strengths and weaknesses (Barros, 2018). For catabolism, respirometry is the standard technique since the days of Otto Warburg. The rate of oxygen consumption, which is tightly linked to the production of ATP, is specific and quantitative but requires cell populations, typically more than 10,000 cells in modern devices. Isotopic techniques were introduced later on to map specific metabolic pathways, although with low temporal resolution. They also require many cells. These direct measures of metabolic flux have been complemented by fluorescent indicators of pH, membrane potential, free radicals and calcium. Thanks to the spatiotemporal resolution of fluorescence microscopy they afford measurements in the range of seconds and the ability to resolve up to single organelles, but are not informative about the speed of metabolism (Brand and Nicholls, 2011). A few years ago, our group introduced the FRET sensor Pyronic (San Mart\u00edn et al., 2014a) that has permitted high resolution measurement of pyruvate in multiple contexts from cultured cells to living animals (M\u00e4chler et al., 2016; Compan et al., 2015; Pla\u00e7ais et al., 2017; Delgado et al., 2018; Baeza-Lehnert et al., 2019; Hasel et al., 2017; Rusu et al., 2017). The present sensor PyronicSF improves on the original sensor on several grounds: i. It has a higher dynamic range. ii. It does not require FRET detection technology, so it can be used in standard wide-field and confocal microscopes. iii. It is smaller and therefore more easily targetable to subcellular domains. iv. Because of its lower affinity for pyruvate, when expressed in mitochondria it provides an extended window for rate monitoring. v. It can estimate mitochondrial pyruvate consumption under physiological conditions (i.e. in the presence of glucose). vi. It permits monitoring pyruvate concentration, permeability and flux in individual mitochondria, thus offering a practical tool for the functional study of mitochondrial heterogeneity. Figure 3\u2014figure supplement 5 shows that PyronicSF is more sensitive than Pyronic at all pyruvate concentrations. One limitation of PyronicSF is its pH sensitivity, which can be corrected as explained in the Results Section. In principle, buffering by a sensor may interfere with fast ligand dynamics, as happens with Ca2+ sensing (Grienberger and Konnerth, 2012), but this problem is not anticipated for pyruvate because its levels are higher (\u03bcM instead of nM) and metabolic transients are slow (seconds instead of ms). Possible interference of surface permeability in the study of MPC transport activity may be circumvented using permeabilized cells. Assays based on mito-PyronicSF may be combined with the study of the MPC using luminescence (Compan et al., 2015).\n\n### Ultrasensitive regulation of anaplerosis/gluconeogenesis by the MPC\n\nWhy is the mitochondrial concentration of pyruvate important? After it became established that pyruvate enters mitochondria through a transporter and not via simple diffusion (Papa et al., 1971; Halestrap and Denton, 1974), issue was raised as to the role of the transporter on pyruvate utilization (Shearman and Halestrap, 1984; Schell and Rutter, 2013). This is not a trivial question, as some transporters play important roles in flux control, for example glutamate transporters in the brain, and others do not, such as monocarboxylate carriers in most tissues (Barros and Deitmer, 2010). Key to this role is the thermodynamic gradient driving the transporter. For the MPC, the relevant parameters are pH and pyruvate. It is well established that there is steep transmitochondrial proton gradient, which ranges between 0.6 and 1 pH units (Azarias et al., 2011; Nicholls and Ferguson, 2013), but for pyruvate, the numbers have not been available. Pyruvate in samples of brain tissue obtained by quick-freezing was measured at 99 \u03bcM (Hawkins et al., 1973), although fast glycogen degradation during the procedure may have affected the result (Swanson et al., 1992; Oe et al., 2016). The concentrations found here in cultured astrocytes together with the different pyruvate affinity of PC and PDH indicates that the MPC is poised to modulate metabolic decisions. A caveat however is that our mathematical simulation assumed astrocyte values from enzyme saturation parameters obtained in other mammalian cells (BRENDA database). Enzyme determinations in astrocytes are needed to confirm this assumption. Would that be the case in other cell types? Gluconeogenesis from lactate and amino acids in liver feeds the brain with glucose during fasting and exercise, but becomes excessive in diabetes, leading to hyperglycemia and chronic illness. Gluconeogenesis starts with the carboxylation of pyruvate by pyruvate carboxylase (PC) and this step may have a more important role in rate modulation than anticipated (Gray et al., 2015; Burgess et al., 2007). The MPC has also been pinpointed as a target in neurodegenerative diseases, because its inhibition mobilizes glutamate towards oxidation therefore ameliorating excitotoxicity (Divakaruni et al., 2017). In contrast, in cancer cells, MPC acts as a protective factor by inhibiting the Warburg effect (Schell et al., 2014) and MPC inhibition enhanced tumor aggression and resistance to chemo- and radiotherapy (Schell et al., 2014; Li et al., 2017). Growth under MPC-inhibition is sustained by reprogramming of mitochondrial metabolism including enhanced glutaminolysis and lipid catabolism (Vacanti et al., 2014). Knowledge of mitochondrial pyruvate concentration, permeability and flux at cellular and subcellular levels may contribute to the understanding of these complex diseases, as well as in the identification and characterization of drugs that target the MPC, such as thiazoledinediones (Divakaruni et al., 2013).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>strain, strain background (Mus musculus)</td>\n      <td>C57BL/6J x CBA/J</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX: 100011 RRID:IMSR_JAX:100011</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Bloomington 45781</td>\n      <td>BloomingtonDrosophila\u00a0Stock Center</td>\n      <td>apt-Gal4 (P[GMR49G07-GAL4]attP2) RRID:BDSC_45781</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cell line (Homo sapiens)</td>\n      <td>HEK293</td>\n      <td>ATCC</td>\n      <td>CRL-1573 RRID:CVCL_0045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cell line (Homo sapiens)</td>\n      <td>HeLa</td>\n      <td>ATCC</td>\n      <td>CRM-CCL-2 RRID:CVCL_0030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cell line (Homo sapiens)</td>\n      <td>MDA-MB-231</td>\n      <td>ATCC</td>\n      <td>CRM-HTB-26 RRID:CVCL_0062</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cell line (Cercopithecus aethiops)</td>\n      <td>COS7</td>\n      <td>ATCC</td>\n      <td>CRL-1651 RRID:CVCL_0224</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>Plasmid: Mito-PyronicSF/pCMV-myc-mito</td>\n      <td>Arce-Molina et al., 2019</td>\n      <td>RRID:Addgene_124813</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>Plasmid: NLS-PyronicSF/pCMV-myc-nuc</td>\n      <td>Arce-Molina et al., 2019</td>\n      <td>RRID:Addgene_124814</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>Plasmid: PyronicSF-mRuby2/pBI-CMV1</td>\n      <td>Arce-Molina et al., 2019</td>\n      <td>RRID:Addgene_124830</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>Adenoviral\u00a0particles: Ad\u00a0mito-PyronicSF-T2A-mito-mCherry</td>\n      <td>Vector\u00a0Biolabs</td>\n      <td>Custom\u00a0made</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA\u00a0reagent</td>\n      <td>Adenoviral\u00a0particles: Ad\u00a0Pyronic</td>\n      <td>Vector\u00a0Biolabs</td>\n      <td>Custom\u00a0made</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>recombinant DNA reagent</td>\n      <td>Plasmid: Pyronic</td>\n      <td>San Mart\u00edn et al., 2014a</td>\n      <td>RRID:Addgene_51308</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>Lipofectamine 3000 Transfection Reagent</td>\n      <td>Invitrogen</td>\n      <td>Cat. #L3000015</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>UK-5099</td>\n      <td>TOCRIS</td>\n      <td>CAS: 56396-35-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>AR-C155858</td>\n      <td>Haoyuan Chemexpress</td>\n      <td>CAS: 496791-37-8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Berkeley Madonna 8.3.23.0</td>\n      <td>University of California at Berkeley</td>\n      <td>http://www.berkeleymadonna.com</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>Fluoview FV10-ASW 3.0</td>\n      <td>Olympus</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>software, algorithm</td>\n      <td>ImageJ 1.49 m</td>\n      <td>NIH</td>\n      <td>http://imagej.net</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nStandard reagents were acquired from Sigma and Merck.\n\n### Generation and in vitro characterization of PyronicSF\n\nSingle fluorophore pyruvate sensors were built fusing PdhR (Quail and Guest, 1995) and the circularly-permutted GFP (cpGFP Nagai et al., 2001). PdhR is a transcriptional regulator from Escherichia coli that controls the expression of PDH (Quail and Guest, 1995) and was previously used as a specific pyruvate-binding domain in the FRET sensor Pyronic (San Mart\u00edn et al., 2014a). The fluorophore cpGFP is a variant of GFP in which the two ends of the protein are linked with the hexapeptide GGTGGS, while new ends were generated by cleaving the protein between amino acid residues N144 and Y145 and replacing the latter by a methionine to serve as new N terminus (Baird et al., 1999). Using a 3D model structure of PdhR obtained with the M4T server 3.0 from Fiser Laboratory, three sensor variants were designed by inserting cpGFP after amino acid residues 94, 122 and 189 of PdhR, that is, within loops of the ligand binding domain with free access to solvent and far from the hydrophobic core of the protein. To obtain purified protein, the DNA-coding sequences were cloned into pGST-Paralell1 (Sheffield et al., 1999) and used to transform competent\u00a0E. coli\u00a0BL21 (DE3). Single colonies were grown in LB medium with 100 mg/ml ampicillin and expression was induced with 400 \u03bcM IPTG. Cells were collected by centrifugation at 5000 rpm (4\u00b0C) for 10 min and disrupted by sonication (Hielscher Ultrasound Technology) in 5 mL of Tris-HCl buffer pH 8.0. Cell-free extracts were obtained by centrifugation at 10,000 rpm (4\u00b0C) for 1 hr. Proteins were purified using a glutathione resin as recommended by the manufacturer (GST Buffer and Resin Kit, General Electric Healthcare Life Sciences). After cleavage of GST with protease TEV (AustralProteins), eluted proteins were incubated overnight at 4\u00b0C and measured with a microplate reader analyzer (EnVision, PerkinElmer). Excitation spectra were obtained collecting emission at 515\u00a0\u00b1\u00a015 nm. The variant with cpGFP inserted after the amino acid residue 189 of PdhR showed the largest change in fluorescence intensity upon binding pyruvate and was christened PyronicSF (PYRuvate Optical Nano-Indicator from CECs Single Fluorophore; DNA sequence is available in Figure 1\u2014figure supplement 1). The sequence was cloned into pcDNA3.1(-) for expression in eukaryotic cells. A version of the sensor with greatly reduced sensitivity to pyruvate and conserved sensitivity to pH (Dead-PyronicSF; Figure 1\u2014figure supplement 2) was obtained by mutating the first linker CTCGAA (red in Figure 1\u2014figure supplement 1, coding for Leu-Glu) to ACCATG (coding for Tre-Met). PyronicSF was targeted to mitochondria or nucleus using pSHOOTER plasmids (ThermoFisher). PyronicSF plasmids are available from Addgene.\n\n### Animals and cultures (mice and flies)\n\nThe reports of the procedures comply with the ARRIVE guidelines. Mixed F1 mice\u00a0(C57BL/6J x CBA/J) were kept in an animal room under Specific Pathogen Free (SPF) conditions at a room temperature of 20 \u00b1 2\u00b0C, in a 12/12 hr light/dark cycle with free access to food and water. Procedures were approved by the Centro de Estudios Cient\u00edficos Animal Care and Use Committee, project 1160317. Mixed cortical cultures (2\u20133 day-old neonates) were prepared as detailed previously Bittner et al. (2010). Astrocytes in cortical cultures were used at days 8\u201310. Cell lines were acquired from the American Type Culture Collection (ATCC) and tested free of mycoplasma. Cells were cultured at 37\u00b0C in 95% air/5% CO2 in DMEM/F12 (HEK293; CRL-1573), EMEM (HeLa; CRM-CCL-2), DMEM high glucose (COS7; CRL-1651), supplemented with 10% fetal bovine serum. MDA-MB-231 (CRM-HTB-26) were cultured in Leibovitz's L-15 Medium supplemented with 10% fetal bovine serum at 37\u00b0C in a free gas exchange incubator (no CO2 injection). Cells were transfected at 60% confluence using Lipofectamine 3000 (Invitrogen) or alternatively, exposed to 5 \u00d7 106 PFU of Ad Pyronic (serotype 5, custom made by Vector Biolabs), and studied after 16\u201324 hr. Flies were kept at 25\u00b0C on a standard diet. The fly stock used in this study was apt-Gal4 (P[GMR49G07-GAL4]attP2, Bloomington 45781). The pyruvate sensor expressing fly stocks UAS-PyronicSF and UAS-Mito-Pyronic were generated using the following strategy. The coding sequence of the sensors was amplified by PCR and cloned into a pENTR-vector using pENTR/D-TOPO Cloning (ThermoFisher). Then, the sensor coding sequences were cloned via gateway cloning (Gateway LR, Invitrogen) into the vector pUASTattBrfa (Bischof et al., 2013), which allows \u03a6integrase-mediated integration into the fly genome. The resulting vectors have been integrated into the fly genome at landing site attP40.\n\n### Imaging\n\nCultured cells were imaged at room temperature (22\u201325\u00b0C) in KRH buffer of the following composition (in mM): 136 NaCl, 3 KCl, 1.25 CaCl2, 1.25 MgSO4, 1\u20132 glucose, 10 HEPES pH 7.4, using an upright Olympus FV1000 confocal microscope equipped with 440, 488 nm and 543 nm laser lines and a 20X water immersion objective (NA 1.0). Pyronic was imaged at 440 nm excitation/480\u00a0\u00b1\u00a015 nm (mTFP) and 550\u00a0\u00b1\u00a015 (Venus) emissions. mCherry and TMRM were imaged at 543 nm excitation/610\u00a0\u00b1\u00a050 emission. Third instar larval Drosophila brains were dissected in HL3 buffer (70 mM NaCl, 5 mM KCl, 20 mM MgCl2, 10 mM NaHCO3, 115 mM sucrose, 5 mM trehalose, 5 mM HEPES; pH 7.1) and placed into a flow-through imaging chamber (Warner Instruments, Hamden, USA). The chamber was fixed onto the stage of a Leica SP8 microscope (Leica Microsystems, Wetzlar, Germany) and brains were superfused with HL3 buffer. Images were acquired using a 40X oil immersion objective (NA 1.4). PyronicSF was imaged at 488 nm excitation/525\u00a0\u00b1\u00a025 emission. Eight-bit images of PyronicSF (GFP and mCherry channels) and Pyronic (mTFP and Venus channels) were processed using ImageJ (Rasband, W.S., ImageJ, U. S. National Institutes of Health, Bethesda, Maryland, USA). The lowest pixel intensity value of each stack was subtracted from every frame, and a binary mask was generated using the sum of both stacks (Process/Image Calculator/Add). Mask edges were defined with the \u2018mixture modelling\u2019 plugin as the intercept between Gaussian distributions representing mitochondrial signal and background. Regions of interest (ROIs) were selected on the masked stacks.\n\n### Mathematical modeling\n\nMitochondrial pyruvate dynamics were simulated using Berkeley Madonna software and the following set of ordinary differential equations:\n\n$$\ndMPC_{o}/dt=K_{off}H^{\u2217}MPC_{o}H+f_{1}^{\u2217}MPC_{i}\u2212K_{on}^{\u2217}MPC_{o}^{\u2217}H_{o}\u2212f_{1}^{\u2217}MPC_{o}\n$$\n\n\n\n$$\ndMPC_{i}/dt=K_{off}H^{\u2217}MPC_{i}H+f_{1}^{\u2217}MPC_{o}\u2212K_{on}^{\u2217}MPC_{i}^{\u2217}H_{i}\u2212f_{1}^{\u2217}MPC_{i}\n$$\n\n\n\n$$\ndMPC_{o}H/dt=K_{on}^{\u2217}MPC_{o}^{\u2217}H_{o}+K_{off}P^{\u2217}MPC_{o}HP\u2212K_{off}H^{\u2217}MPC_{o}H\u2212K_{on}^{\u2217}MPC_{o}H^{\u2217}P_{o}\n$$\n\n\n\n$$\ndMPC_{i}H/dt=K_{on}^{\u2217}MPC_{i}^{\u2217}H_{i}+K_{off}P^{\u2217}MPC_{i}HP\u2212K_{off}H^{\u2217}MPC_{i}H\u2212K_{on}^{\u2217}MPC_{i}H^{\u2217}P_{i}\n$$\n\n\n\n$$\ndMPC_{o}HP/dt=K_{on}^{\u2217}MPC_{o}H^{\u2217}P_{o}+f_{2}^{\u2217}MPC_{i}HP\u2212K_{off}P^{\u2217}MPC_{o}HP\u2212f_{2}^{\u2217}MPC_{o}HP\n$$\n\n\n\n$$\ndMPC_{i}HP/dt=K_{on}^{\u2217}MPC_{i}H^{\u2217}P_{i}+f_{2}^{\u2217}MPC_{o}HP\u2212K_{off}P^{\u2217}MPC_{i}HP\u2212f_{2}^{\u2217}MPC_{i}HP\n$$\n\n\n\n$$\ndP_{i}/dt=K_{off}P^{\u2217}MPC_{i}HP\u2212K_{on}^{\u2217}MPC_{i}H^{\u2217}P_{i}\u2212PDH\u2212PC\n$$\n\nEquations 1 to 6 represent the six conformations of the MPC carrier: outward- and inward-facing, either empty (MPCo and MPCi), loaded with a proton (MPCoH and MPCiH) or loaded with both proton and pyruvate (MPCoHP and MPCiHP). Equation 7 describes intramitochondrial pyruvate. MPC was set at 3.24 \u03bcM; the association constant Kon for protons and pyruvate was set at 108 M\u22121*s\u22121; the dissociation constants KoffH and KoffP were 20 s\u22121 and 2.12*106 s\u22121; carrier translocation rates f1 (empty) and f2 (loaded) were set at 200 s\u22121 and 3000 s\u22121. Pyruvate dehydrogenase (PDH) was modeled as a saturable reaction with Vmax of 1.34 \u03bcM* s\u22121 and Km of 10 \u03bcM (BRENDA Enzyme Database). Pyruvate carboxylase (PC) was modeled as a saturable reaction with Vmax of 3.3 \u03bcM* s\u22121 and Km of 220 \u03bcM (BRENDA Enzyme Database). With these parameters and cytosolic and mitochondrial pH values of 7.2 (63 nM) and 7.8 (16 nM Azarias et al., 2011), the simulated carrier displayed accelerated exchange and an apparent zero-trans Km (Kzt) of 150 \u03bcM (Halestrap, 1975). Mitochondrial pyruvate (Pi) stabilized at 21 \u03bcM when cytosolic pyruvate (Po) was 33 \u03bcM and mitochondrial pyruvate consumption was 1.2 \u03bcM* s-1 30, with PDH and PC respectively accounting for 76% and 24% of the flux (Oz et al., 2004).\n\n### Statistical analysis\n\nStatistical analyses were carried out with SigmaPlot software (Jandel). For normally distributed variables, differences were assessed with the Student\u00b4s t-test (pairs) and with ANOVA followed by the Tukey-Kramer ad hoc test (groups). For variables that failed the normality test, differences were assessed with the Mann-Whitney Rank Sum Test (pairs) or the Kruskal-Wallis one way ANOVA on ranks (groups). *, p<0.05; ns (non-significant), p>0.05. The number of experiments and cells is detailed in each figure.\n",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "da82cfa3-eed3-4273-b9fb-ab2885ff965a",
+      "submission_id": "7e84c1af-7fef-4734-9937-2582b0ab039f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David E James, The University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53917.sa1](https://doi.org/10.7554/eLife.53917.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYou have done an excellent job of addressing the reviewer's comments and it was agreed that your manuscript is much improved. We believe that your sensor will provide a valuable tool for others in studying cellular metabolism and that this manuscript is a major step forward.\n\nDecision letter after peer review:\n\nThank you for resubmitting your work entitled \"A highly responsive pyruvate sensor reveals pathway-regulatory role of the mitochondrial pyruvate carrier MPC\" for further consideration by eLife. Your revised article has been evaluated by Kenton Swartz as the Senior Editor and three peer reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nYour manuscript has been examined by three reviewers who have various degrees of expertise relevant to your study. As you will note from the detailed reviews below, the reviewers were highly enthusiastic about your new sensor and they feel that this manuscript would be a good fit for eLife.\n\nHowever, they raise several points that need to be addressed in detail prior to any formal decision. First, reviewers 1 and 2 were surprised at the lack of technical detail in the manuscript concerning the development of the new sensor. Second, it was generally felt that the model was somewhat preliminary and certainly does not justify some of the conclusions concerning relevance to the fate of pyruvate in cells. While we will leave it up to you to decide how to approach this point, you may decide to leave the model out or as a minimum to minimize the interpretation of the modeling data. Third, was the issue of variability in your measures of pyruvate, particularly in mitochondria. Based on this variability one wonders what the level of accuracy is in the rate measures. This exposed a major point raised by all reviewers concerning the advantages the new probe has over its previous iteration. The authors should really take major strides to elaborate upon this issue in their revision.\n\nReviewer #1:\n\nThis methodological study presents a new fluorescent protein-based reporter for intracellular pyruvate. While this group has previously reported a FRET-based pyruvate sensor, this design based on a circularly permuted FP has a greatly improved dynamic range and smaller size that enables it to be used for new applications. Most importantly, it can be targeted to the mitochondrial matrix enabling comparative measurements of pyruvate concentration with the cytoplasm. The authors show that this reporter can be used for several applications, including: quantifying inhibitors of pyruvate transporters, modeling pyruvate flux in the mitochondrial compartment, detecting heterogeneity between mitochondria within an individual cell, and performing ex vivo tissue measurements. Overall I think this an exciting development, and the study makes clear that the reporter has very significant potential in these areas. My largest criticism of the study is that it is somewhat light on detail, particularly in the Materials and methods.\n\n1) The reporter is presented with essentially no description of its design and engineering process. Typically, cpGFP-based reporters require substantial iteration or selection to arrive at a functional There should be at least some summary description of how this was achieved, as this can add to understanding how it functions.\n\n2) I think the modeling approach in Figure 3 is quite interesting, but the model would need substantially more validation to make the claim that \"The main finding of this study is that mitochondrial pyruvate lies in the low \u03bcM range, endowing the MPC with ultrasensitive control over anaplerosis\". At a minimum, the PDH and PC rate parameters would need to be confirmed for this particular system.\n\n3) UK5099 has substantial fluorescence in the GFP range at concentrations used. It is surprising to see that this did not cause a problem for the MPC inhibition experiments. Was the fluorescence corrected for? Other details of the computational image processing should also be included in the Materials and methods.\n\nReviewer #2:\n\nArce-Molina et al. present a manuscript in which they develop an improved pyruvate biosensor, which they subsequently use to characterize pyruvate transport and metabolism in the cytosol and mitochondria of mammalian cells.\n\nPyruvate is an important metabolite as end product of glycolysis, which can either be metabolized in the cytosol, or enter mitochondria via the mitochondrial pyruvate carrier, where it is used for example for oxidative phosphorylation.\n\nThe authors state that the main finding is ' that mitochondrial pyruvate lies in the low \u03bcM range, endowing the MPC with ultrasensitive control over anaplerotic processes.\n\nAs a first step, they found a suitable position for inserting cpGFP into an environmentally sensitive position of an allosterically regulated bacterial transcription factor. The sensor was characterized in vitro and in cell lines. Suitable control sensor variants and the less pH sensitive original Pyronic serve as suitable controls. A cytosolic version of the new sensor allows monitoring of pyruvate uptake into mammalian cells. Then the new Pyronic was targeted to the mitochondrial matrix and used to monitor uptake into mitochondria. Accumulation rates were slower compared to cytosolic uptake. Uptake was sensitive to inhibitors of MPC. Cytosolic levels were estimated to the low \u03bcM range in astrocytes. Using the data for parametrization of a mathematical model, regulatory aspects of MPC activity were predicted. It is noteworthy that the model applies to cell cultures grown under artificial conditions, and that while the calibration was elegant, a little more caution with the interpretation would be valuable. The authors then used an elegant approach, originally developed by them for estimating metabolic rates for glucose to estimate metabolism of pyruvate. Furthermore, first attempts were made to evaluate differences activities in individual mitochondria. As a next step, pyruvate was monitored in perineurial glia of Drosophila larvae.\n\nOverall, this is an elegant study, in which the authors develop a new high sensitivity biosensors for pyruvate. It was not only used to measure uptake of pyruvate into mammalian cells, as well as Drosophila glia. Furthermore, the authors establish the sensors for monitoring MPC and metabolic activity. The sensors have tremendous potential for research and many medical applications.\n\n- The authors found a suitable position in the allosterically regulated bacterial transcription factor, and provide the sequence in the supplement. It is however an achievement to find a suitable position for insertion of the cpGFP that ultimately provides a substrate-dependent change in fluorescence intensity. Thus the authors should provide more details on how they were able to develop such a sensor, which positions they tried, and how they arrived with the final version. Interesting is also to describe whether Pyronic still contains a DNA binding domain.\n\nReviewer #3:\n\nIn this study the authors have engineered a new pyruvate sensor and they conduct a series of experiments to validate the sensor and to demonstrate its utility for metabolic studies. The study is very thorough, and this sensor clearly improves on previous sensors.\n\n1) There appears to be a much greater variance in cytosolic than mitochondrial pyruvate. Why do you think this might be? How does this level of variance compare with that of other metabolites? Do you have any way of proving that this biological rather than technical?\n\n2) How confident are you that the probe is only found in the matrix. The pH of the matrix is higher than the cytosol. In view of the pH sensitivity of the probe how confident are you that the pH correction is accurate?\n\n3) As the authors note the physiological concentration of pyruvate inside mitochondria is at the low end of the sensitivity curve for the sensor and one wonders if this is going to limit its utility for looking at things like physiological changes or mitochondrial variance. In Figure 3\u2014figure supplement 4 it is noted that the top end of the concentration curve was truncated and a max was not reached which obscures the true sensitivity of the probe. Also how linear is the probe over what could be considered a physiological pyruvate concentration? It doesn't look that linear.\n",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aef11ce5-13de-49e5-91cc-4f5b8febe222",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C1",
+      "claim": "PyronicSF is a GFP-based sensor with improved dynamic range for pyruvate detection",
+      "claim_type": "EXPLICIT",
+      "source": "Here we introduce PyronicSF, a user-friendly GFP-based sensor of improved dynamic range that enables real-time subcellular quantitation of mitochondrial pyruvate transport, concentration and flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the development and characteristics of PyronicSF",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "7b770fdd-aa20-4abc-a886-f6cd0d888dd5",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C2",
+      "claim": "Cultured mouse astrocytes maintain mitochondrial pyruvate in the low micromolar range",
+      "claim_type": "EXPLICIT",
+      "source": "We report that cultured mouse astrocytes maintain mitochondrial pyruvate in the low micromolar range, below cytosolic pyruvate, which means that the mitochondrial pyruvate carrier MPC is poised to exert ultrasensitive control on the balance between respiration and anaplerosis/gluconeogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement using PyronicSF sensor in cultured astrocytes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "2817dbb1-3cfe-4a16-827e-0cf3ad9be973",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C3",
+      "claim": "Mitochondrial pyruvate is below cytosolic pyruvate in cultured mouse astrocytes",
+      "claim_type": "EXPLICIT",
+      "source": "We report that cultured mouse astrocytes maintain mitochondrial pyruvate in the low micromolar range, below cytosolic pyruvate, which means that the mitochondrial pyruvate carrier MPC is poised to exert ultrasensitive control on the balance between respiration and anaplerosis/gluconeogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative measurements of pyruvate in different cellular compartments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "ef4401a7-70d8-4a74-83cd-510cbef823b4",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C4",
+      "claim": "The MPC is poised to exert ultrasensitive control on the balance between respiration and anaplerosis/gluconeogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "We report that cultured mouse astrocytes maintain mitochondrial pyruvate in the low micromolar range, below cytosolic pyruvate, which means that the mitochondrial pyruvate carrier MPC is poised to exert ultrasensitive control on the balance between respiration and anaplerosis/gluconeogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on measured pyruvate concentrations and mathematical modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "ad311a6f-0c7a-4491-875b-ab32a9280d26",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C5",
+      "claim": "PyronicSF is functional in living tissue of Drosophila melanogaster larvae brain",
+      "claim_type": "EXPLICIT",
+      "source": "The functionality of the sensor in living tissue is demonstrated in the brain of Drosophila melanogaster larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental demonstration in fly larvae brain tissue",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "58ec43ea-7016-46b8-b1ea-9068bc1cae36",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C6",
+      "claim": "Mitochondria account for over 90% of ATP production in animal cells",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria are the chief energy generators of animal cells, accounting for over 90% of ATP production, and they also generate building blocks for the synthesis of sugars, amino acids, nucleic acids and prosthetic groups, essential elements for tissue growth, plasticity and regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "1c1a4be1-269d-4171-9ab0-afc5eb9f9a48",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C7",
+      "claim": "Mitochondria generate building blocks for the synthesis of sugars, amino acids, nucleic acids and prosthetic groups",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria are the chief energy generators of animal cells, accounting for over 90% of ATP production, and they also generate building blocks for the synthesis of sugars, amino acids, nucleic acids and prosthetic groups, essential elements for tissue growth, plasticity and regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "9adf262b-1cd6-4ac5-8bf4-63e00fa50d34",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C8",
+      "claim": "Pyruvate is a major mitochondrial substrate for mammalian cells",
+      "claim_type": "EXPLICIT",
+      "source": "A major mitochondrial substrate for mammalian cells is pyruvate, a 3-carbon organic acid produced from glucose, lactate and amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "661bc96a-53ec-4cb9-9c86-6923ebec3f21",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C9",
+      "claim": "Pyruvate is a 3-carbon organic acid produced from glucose, lactate and amino acids",
+      "claim_type": "EXPLICIT",
+      "source": "A major mitochondrial substrate for mammalian cells is pyruvate, a 3-carbon organic acid produced from glucose, lactate and amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "37e97bf0-0f7a-422f-b59a-c8ea2e7e70c0",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C10",
+      "claim": "Extracellular pyruvate may reach the cytosol via monocarboxylate transporters (MCTs)",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular pyruvate may also reach the cytosol via monocarboxylate transporters (MCTs) (Halestrap and Price, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "98a7d1d3-5462-49a0-a817-ebe26cb484de",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C11",
+      "claim": "Pyruvate enters mitochondria through the mitochondrial pyruvate carrier (MPC)",
+      "claim_type": "EXPLICIT",
+      "source": "Pyruvate enters mitochondria through the mitochondrial pyruvate carrier (MPC) (Halestrap and Denton, 1975; Herzig et al., 2012; Bricker et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "aaccfa5d-8c65-49c8-94e6-5d317d1f92dd",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C12",
+      "claim": "PyronicSF shows a strong increase in fluorescence when exposed to pyruvate in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure of the sensor to pyruvate in vitro caused a strong increase in fluorescence when excited by blue light (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct experimental observation with purified protein",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "62b7b4e8-bd07-4e79-86b3-4a6619fbcda4",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C13",
+      "claim": "PyronicSF excited at 488 nm shows approximately 250% increase in fluorescence emission with a KD of 480 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "Excited at 488 nm, the increase in fluorescence emission was \u2248 250%, with a KD of 480 \u03bcM (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurement from dose-response curve",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "e7832188-ff2d-4e37-a35a-2b2b35f693b5",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C14",
+      "claim": "PyronicSF is insensitive to lactate and other structurally related organic acids",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from the behavior of PdhR (San Mart\u00edn et al., 2014a) in the FRET sensor Pyronic, PyronicSF was insensitive to lactate, to other structurally related organic acids, and to NAD+ and NADH (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental testing with various metabolites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "347a6266-ddaa-4fb4-984b-db2d58c17559",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C15",
+      "claim": "PyronicSF is insensitive to NAD+ and NADH",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from the behavior of PdhR (San Mart\u00edn et al., 2014a) in the FRET sensor Pyronic, PyronicSF was insensitive to lactate, to other structurally related organic acids, and to NAD+ and NADH (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental testing with various metabolites",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "36ceccb5-cdc4-4cf2-a7d7-0903c898af31",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C16",
+      "claim": "The sensing of pyruvate by PyronicSF is not affected by pH, but there is a pH-dependent shift of the dose-response curve",
+      "claim_type": "EXPLICIT",
+      "source": "While the sensing of pyruvate by PyronicSF was not affected by pH, there was a pH-dependent shift of the dose-response curve (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental characterization at different pH values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "53f28e5b-64b0-4d0c-ab79-bb005c999519",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C17",
+      "claim": "The fluorescence ratio of the sensor Pyronic is insensitive to pH in the physiological range",
+      "claim_type": "EXPLICIT",
+      "source": "Because the fluorescence ratio of the sensor Pyronic is insensitive to pH in the physiological range (San Mart\u00edn et al., 2014a), we attribute the effect of pH on PyronicSF to the pH-sensitivity typical of cpGFPs (Marvin et al., 2013; Cambronne et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "0ecc1b6b-4b92-4cff-8b17-47dbab97c527",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C18",
+      "claim": "The pH effect on PyronicSF is attributed to the pH-sensitivity typical of cpGFPs",
+      "claim_type": "EXPLICIT",
+      "source": "Because the fluorescence ratio of the sensor Pyronic is insensitive to pH in the physiological range (San Mart\u00edn et al., 2014a), we attribute the effect of pH on PyronicSF to the pH-sensitivity typical of cpGFPs (Marvin et al., 2013; Cambronne et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on known properties of cpGFPs cited from literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "f1c7e479-4ed8-4409-a384-ba2e985d7402",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C19",
+      "claim": "The amplitude of the response of PyronicSF was >6 times that of Pyronic in HEK293 cells",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of the response of PyronicSF was >6 times that of Pyronic (Figure 1E; San Mart\u00edn et al., 2014a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative experimental measurements in cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "64c797e5-04dd-467f-b254-16fefed0099f",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C20",
+      "claim": "PyronicSF was successfully targeted to the mitochondrial matrix using the destination sequence of cytochrome oxidase",
+      "claim_type": "EXPLICIT",
+      "source": "PyronicSF was targeted to the mitochondrial matrix using the destination sequence of cytochrome oxidase. The targeting was successful in various cell types, as evidenced by the labeling of elongated cytoplasmic structures that are of shape and size characteristic of mitochondria (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Microscopy imaging showing mitochondrial localization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "6224d3a8-6ffa-401c-979e-848d297541b7",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C21",
+      "claim": "Mito-PyronicSF colocalized with the voltage-sensitive dye TMRM",
+      "claim_type": "EXPLICIT",
+      "source": "Confirmation of correct targeting was provided by colocalization with the voltage-sensitive dye TMRM (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Colocalization imaging experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "5d42a572-c4c1-479c-a3cb-b1681a69c9d5",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C22",
+      "claim": "Mito-PyronicSF colocalized with mCherry targeted to mitochondria",
+      "claim_type": "EXPLICIT",
+      "source": "Mito-PyronicSF also colocalized with the red fluorescent protein mCherry targeted to mitochondria (Figure 2A and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Colocalization imaging experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "16cdb804-1880-4e0b-9a49-66905cb7ca96",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C23",
+      "claim": "Exposure of astrocytes expressing mito-PyronicSF to pyruvate resulted in a reversible increase in fluorescence ratio",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure of astrocytes co-expressing mito-PyronicSF and mito-mCherry to pyruvate resulted in a reversible increase in fluorescence ratio, evidencing mitochondrial uptake (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-course imaging experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "042c9bf3-b874-4849-ba9d-20ed6ab5e2b7",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C24",
+      "claim": "The rise of pyruvate in mitochondria was much slower than its accumulation in the cytosol",
+      "claim_type": "EXPLICIT",
+      "source": "The rise in mitochondria was much slower than its accumulation in the cytosol, monitored indirectly with PyronicSF targeted to the nucleus (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative kinetic measurements in different compartments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "715a0b61-1761-456b-a37c-84be58efdaa3",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C25",
+      "claim": "The uptake of pyruvate by mitochondria was sensitive to the specific MPC1 blocker UK-5099",
+      "claim_type": "EXPLICIT",
+      "source": "The uptake of pyruvate by mitochondria was sensitive to the specific MPC1 blocker UK-5099 (Halestrap and Denton, 1975; Herzig et al., 2012; Bricker et al., 2012; Nagampalli et al., 2018; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Pharmacological inhibition experiment",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "bf15b7d8-c917-4417-9406-7b74ad919d4f",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C26",
+      "claim": "The average degree of pyruvate uptake inhibition by UK-5099 was 69%",
+      "claim_type": "EXPLICIT",
+      "source": "The average degree of uptake inhibition was 69% (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative analysis of inhibition experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "9041e93b-7a4e-4599-85f3-29fbfe1272f1",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C27",
+      "claim": "The insulin sensitizer rosiglitazone inhibited the uptake of pyruvate by astrocytic mitochondria by 67%",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate the potential of mito-PyronicSF for drug discovery, we show here that the insulin sensitizer rosiglitazone inhibited the uptake of pyruvate by astrocytic mitochondria by 67% (Figure 2D), providing confirmation that MPC is a target of thiazolidinediones (Divakaruni et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Pharmacological experiment with rosiglitazone",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "9e42cf63-b57f-4a25-bbe8-2fe34ad9172d",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C28",
+      "claim": "MPC is a target of thiazolidinediones",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate the potential of mito-PyronicSF for drug discovery, we show here that the insulin sensitizer rosiglitazone inhibited the uptake of pyruvate by astrocytic mitochondria by 67% (Figure 2D), providing confirmation that MPC is a target of thiazolidinediones (Divakaruni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental confirmation of previously reported finding",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "8a112326-5d41-40e0-97f8-9e5bbf4c3c77",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C29",
+      "claim": "There is a 1:1 stoichiometry between proton and pyruvate transport by the MPC",
+      "claim_type": "EXPLICIT",
+      "source": "Given the 1:1 stoichiometry between proton and pyruvate transport by the MPC, and the respective pH gradient between cytosol and mitochondria (7.2 and 7.8 [Azarias et al., 2011], equivalent to a 4-fold proton gradient), mitochondrial pyruvate may reside anywhere between a few micromolar and four times the cytosolic concentration of pyruvate, a quantity that is neither known with precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature and theoretical consideration",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "241246c2-58c9-4755-8d06-e27b946638c5",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C30",
+      "claim": "The pH gradient between cytosol and mitochondria is 7.2 and 7.8, equivalent to a 4-fold proton gradient",
+      "claim_type": "EXPLICIT",
+      "source": "Given the 1:1 stoichiometry between proton and pyruvate transport by the MPC, and the respective pH gradient between cytosol and mitochondria (7.2 and 7.8 [Azarias et al., 2011], equivalent to a 4-fold proton gradient), mitochondrial pyruvate may reside anywhere between a few micromolar and four times the cytosolic concentration of pyruvate, a quantity that is neither known with precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "a04ed4ed-ba5e-44ac-baa8-f7301ecdfdb3",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C31",
+      "claim": "Steady-state mitochondrial pyruvate lies at the low end of the detection range of PyronicSF at extracellular levels of glucose, lactate and pyruvate found in brain tissue",
+      "claim_type": "EXPLICIT",
+      "source": "At extracellular levels of glucose, lactate and pyruvate found in brain tissue, steady-state mitochondrial pyruvate was found to lie at the low end of the detection range of PyronicSF (Figure 3A and C), which is in agreement with parallel measurements using the FRET sensor (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental measurements with both sensors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "fdee9c8c-5463-4c0d-9b06-49a6bd2c5c9b",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C32",
+      "claim": "Median mitochondrial pyruvate measured with PyronicSF was 21 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "Using this protocol, median mitochondrial pyruvate measured with PyronicSF was 21 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement using calibration protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "f1e0ed06-5696-4503-b73b-a64e0b94b26e",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C33",
+      "claim": "Median steady-state concentration of pyruvate in the cytosol was 33 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments with the sensor targeted to the cytosol showed that the median steady-state concentration of pyruvate in this compartment was 33 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement using calibration protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "49f9d46d-3ae0-4c10-841b-574fcb5e072b",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C34",
+      "claim": "Estimated with the FRET sensor, median pyruvate concentrations were 25 \u03bcM in mitochondria and 40 \u03bcM in cytosol",
+      "claim_type": "EXPLICIT",
+      "source": "Estimated with the FRET sensor, whose KD is five times lower, median pyruvate concentrations were 25 \u03bcM in mitochondria and 40 \u03bcM in cytosol, a difference of 15 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative measurement using FRET sensor",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "e19422a7-8557-4cc8-9edc-d797c412c306",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C35",
+      "claim": "Both PyronicSF and Pyronic sensors converged in showing that mitochondrial pyruvate is in the low micromolar range and lower than cytosolic pyruvate",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both sensors converged in showing that mitochondrial pyruvate is in the low micromolar range, and that is lower than cytosolic pyruvate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Convergent results from two different sensors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "0e828be5-5539-473f-98eb-c95c459da769",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C36",
+      "claim": "Activation of PDH does not translate into a sustained flux increase because mitochondrial pyruvate becomes depleted",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, activation of the MPC is necessary for efficient stimulation of oxidative metabolism. For example, PDH activation does not translate into a sustained flux increase because mitochondrial pyruvate becomes depleted, leading to partial PDH desaturation (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mathematical modeling simulation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "9dc437fe-d2d0-4bcd-8e2d-065cf929686b",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C37",
+      "claim": "The fall of mitochondrial pyruvate leads to a strong decrease of flux through PC",
+      "claim_type": "EXPLICIT",
+      "source": "More dramatically, the fall of pyruvate leads to a strong decrease of flux through PC, a 'steal' flux phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical modeling simulation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "9ca131f9-9e39-4b56-a2b1-3cdcdbb89f4a",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C38",
+      "claim": "If steady-state concentration of mitochondrial pyruvate is below 30 \u03bcM, a given change in MPC activity will be amplified in terms of PC flux",
+      "claim_type": "EXPLICIT",
+      "source": "Actually, Figure 3F shows that if the steady-state concentration of mitochondrial pyruvate is below 30 \u03bcM, a given change in MPC activity will be amplified in terms of PC flux, a phenomenon that has been termed ultrasensitivity (Ferrell and Ha, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mathematical modeling analysis with citation to ultrasensitivity concept",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "a75ee957-1e42-4c9a-992c-074e26045a13",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C39",
+      "claim": "At 21 \u03bcM mitochondrial pyruvate, a 1% MPC increase causes a 1.2% increase in PC flux",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at 21 \u03bcM mitochondrial pyruvate, a 1% MPC increase causes a 1.2% increase in PC flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical modeling calculation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "d4bfd569-0fa3-4f60-a23b-2a1d0c117f71",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C40",
+      "claim": "At 21 \u03bcM mitochondrial pyruvate, a 1% MPC increase causes only a 0.4% increase in PDH flux",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PDH flux increases by only 0.4% (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mathematical modeling calculation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "2bbc7f94-875a-4997-8fcd-17daa8164260",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C41",
+      "claim": "The MPC and cytosolic pyruvate interact synergistically with respect to PC flux but antagonistically with respect to PDH flux",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the MPC and cytosolic pyruvate interact synergistically with respect to PC flux but antagonistically with respect to PDH flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical modeling analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "0c5f8d0b-d89f-4205-b2f2-cfb206cafa39",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C42",
+      "claim": "A coincidental rise of MPC activity and cytosolic pyruvate will cause an increase in PC flux larger than the sum of the two independent effects",
+      "claim_type": "EXPLICIT",
+      "source": "A coincidental rise of MPC activity and cytosolic pyruvate will cause an increase in PC flux larger than the sum of the two independent effects, but for PDH the effects are not even additive (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Mathematical modeling analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "bded6005-98b9-4550-a262-d14f4200a003",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C43",
+      "claim": "The MPC is poised for sensitive modulation of anaplerosis",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that the MPC is poised for sensitive modulation of anaplerosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from modeling results and experimental measurements",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "11f71afe-6a5f-48ca-adb4-4ef9e0d0bbbc",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C44",
+      "claim": "MPC stoppage with UK-5099 caused immediate depletion of mitochondrial pyruvate",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4A, MPC stoppage with UK-5099 caused immediate depletion of mitochondrial pyruvate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with pharmacological inhibitor",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "9d9710b3-1543-4e1b-859b-7e553c9c36e6",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C45",
+      "claim": "Long term exposure to UK-5099 causes irreversible inhibition of the MPC",
+      "claim_type": "EXPLICIT",
+      "source": "Reportedly, long term exposure to UK-5099 causes irreversible inhibition of the MPC (Divakaruni et al., 2013; Hildyard et al., 2005) but this was not observed at the low concentrations and short exposure times used here (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cited from literature but contradicted by current experimental observations",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "4ca59933-de5d-4ee9-b348-08165c8c0382",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C46",
+      "claim": "UK-5099 inhibition was reversible at the low concentrations and short exposure times used in this study",
+      "claim_type": "EXPLICIT",
+      "source": "Reportedly, long term exposure to UK-5099 causes irreversible inhibition of the MPC (Divakaruni et al., 2013; Hildyard et al., 2005) but this was not observed at the low concentrations and short exposure times used here (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation showing reversibility",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "c972b744-fce4-4a0c-9e6a-bf0111259141",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C47",
+      "claim": "Uncoupling of oxidative phosphorylation strongly stimulated mitochondrial pyruvate consumption",
+      "claim_type": "EXPLICIT",
+      "source": "Using such a protocol, uncoupling of oxidative phosphorylation (OXPHOS) strongly stimulated mitochondrial pyruvate consumption (Figure 4C) whereas conversely, inhibition of OXPHOS with the cytochrome oxidase inhibitor azide resulted in a lower rate (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental manipulation with FCCP uncoupler",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "9a5e6d82-207a-49a2-a4fb-f609216c2b98",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C48",
+      "claim": "Inhibition of OXPHOS with the cytochrome oxidase inhibitor azide resulted in a lower rate of mitochondrial pyruvate consumption",
+      "claim_type": "EXPLICIT",
+      "source": "Using such a protocol, uncoupling of oxidative phosphorylation (OXPHOS) strongly stimulated mitochondrial pyruvate consumption (Figure 4C) whereas conversely, inhibition of OXPHOS with the cytochrome oxidase inhibitor azide resulted in a lower rate (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental manipulation with azide inhibitor",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "c208da53-4824-4940-9250-3aa3a7a508df",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C49",
+      "claim": "Mitochondrial pyruvate consumption rates ranged from 0.29 to 3.1 \u03bcM/s, with a median value of 1.1 \u03bcM/s",
+      "claim_type": "EXPLICIT",
+      "source": "There was substantial variability between cells, which ranged from 0.29 to 3.1 \u03bcM/s, with a median value of 1.1 \u03bcM/s (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurements across multiple cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "f74a5347-6d8f-460c-8192-5aa64ffe065e",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C50",
+      "claim": "Steady-state pyruvate in peripheral mitochondria was higher than in mitochondria lying close to the nucleus",
+      "claim_type": "EXPLICIT",
+      "source": "Steady-state pyruvate in a small group of peripheral mitochondria was found to be higher than in mitochondria lying close to the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Subcellular spatial measurements within single cells",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "4d25297e-78fd-4948-9713-87b5957c4d57",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C51",
+      "claim": "Pyruvate consumption may differ within a cell between different mitochondrial populations",
+      "claim_type": "EXPLICIT",
+      "source": "Application of the transporter-block protocol showed that pyruvate consumption may also differ within a cell (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Subcellular measurements of consumption rates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "f5994c6e-c6dd-4853-a09e-e024b045ef0e",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C52",
+      "claim": "PyronicSF expressed very well in cytosol and mitochondria of perineurial glial cells in Drosophila melanogaster larvae",
+      "claim_type": "EXPLICIT",
+      "source": "PyronicSF expressed very well in cytosol and mitochondria of these cells (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Imaging of sensor expression in fly tissue",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "b5f47c05-9fba-4b58-9b36-7faa6ac17143",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C53",
+      "claim": "Superfusion of acutely isolated Drosophila brains with pyruvate resulted in a quick increase in cytosolic pyruvate",
+      "claim_type": "EXPLICIT",
+      "source": "Superfusion of acutely isolated brains with pyruvate resulted in a quick increase in cytosolic pyruvate, revealing the presence of abundant surface pyruvate transporters in these cells (Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-course measurements in fly brain tissue",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "d619542f-d59e-47e1-83d3-8cffb9f93bf1",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C54",
+      "claim": "The response of mitochondria to pyruvate in Drosophila perineurial cells was slower and plateaued at lower pyruvate levels than cytosol",
+      "claim_type": "EXPLICIT",
+      "source": "The response of mitochondria was slower and plateaued at lower pyruvate levels, consistent with mitochondria being a site of pyruvate consumption downstream of the cytosol (Figure 6D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative kinetic measurements in fly tissue",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "a4baa448-7128-4ff9-88fe-595bc9bd112d",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C55",
+      "claim": "In Drosophila perineurial glial cells, the steady-state level of pyruvate was much higher in the cytosol than in mitochondria",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of a buffer containing glucose, lactate and pyruvate, the steady-state level of pyruvate was much higher in the cytosol than in mitochondria (Figure 6C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative measurements in different compartments in fly tissue",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "a5c679e6-f559-43b9-954b-28f89a4990ab",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C56",
+      "claim": "The steep transmitochondrial pyruvate gradient in Drosophila perineurial cells suggests that the MPC is a key regulator of the balance between catabolism and anabolism",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the steep transmitochondrial pyruvate gradient measured here suggests that the MPC is also a key regulator of the balance between catabolism and anabolism in perineurial glial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from measured pyruvate gradients",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "e2a25608-2eea-4bf4-810c-4f6a9722ed0c",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C57",
+      "claim": "PyronicSF has a higher dynamic range than the original Pyronic sensor",
+      "claim_type": "EXPLICIT",
+      "source": "The present sensor PyronicSF improves on the original sensor on several grounds: i. It has a higher dynamic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative characterization of the two sensors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "91cd0dcf-d57b-44fe-abdf-bfbd9ce5e17f",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C58",
+      "claim": "PyronicSF does not require FRET detection technology",
+      "claim_type": "EXPLICIT",
+      "source": "ii. It does not require FRET detection technology, so it can be used in standard wide-field and confocal microscopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Technical description of sensor properties",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "c237fa2f-1e32-457c-a270-56fa8bd13ac4",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C59",
+      "claim": "PyronicSF is smaller than Pyronic and therefore more easily targetable to subcellular domains",
+      "claim_type": "EXPLICIT",
+      "source": "iii. It is smaller and therefore more easily targetable to subcellular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Structural comparison and targeting experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "95e83601-ca57-41b7-8547-2cc94cd535a6",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C60",
+      "claim": "PyronicSF has lower affinity for pyruvate than Pyronic, providing an extended window for rate monitoring when expressed in mitochondria",
+      "claim_type": "EXPLICIT",
+      "source": "iv. Because of its lower affinity for pyruvate, when expressed in mitochondria it provides an extended window for rate monitoring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of sensor affinities and their implications",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "99bc4320-41c3-4018-9300-26a766403065",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C61",
+      "claim": "PyronicSF permits monitoring pyruvate concentration, permeability and flux in individual mitochondria",
+      "claim_type": "EXPLICIT",
+      "source": "vi. It permits monitoring pyruvate concentration, permeability and flux in individual mitochondria, thus offering a practical tool for the functional study of mitochondrial heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated capabilities from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "09ab262f-ccb8-4dbe-bed4-f17628541f7d",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C62",
+      "claim": "PyronicSF is more sensitive than Pyronic at all pyruvate concentrations",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3\u2014figure supplement 5 shows that PyronicSF is more sensitive than Pyronic at all pyruvate concentrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "f953e06d-0eeb-4b3e-8eb2-cec5c34bbd10",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C63",
+      "claim": "One limitation of PyronicSF is its pH sensitivity",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation of PyronicSF is its pH sensitivity, which can be corrected as explained in the Results Section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledged limitation with proposed correction method",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "7164d74c-ba6c-4da9-9164-0149d775fe9a",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C64",
+      "claim": "Pyruvate in samples of brain tissue obtained by quick-freezing was measured at 99 \u03bcM",
+      "claim_type": "EXPLICIT",
+      "source": "Pyruvate in samples of brain tissue obtained by quick-freezing was measured at 99 \u03bcM (Hawkins et al., 1973), although fast glycogen degradation during the procedure may have affected the result (Swanson et al., 1992; Oe et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature with caveat about methodology",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "9a6248e1-d4ec-408c-b52e-efdf549cda07",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C66",
+      "claim": "MPC inhibition mobilizes glutamate towards oxidation therefore ameliorating excitotoxicity in neurodegenerative diseases",
+      "claim_type": "EXPLICIT",
+      "source": "The MPC has also been pinpointed as a target in neurodegenerative diseases, because its inhibition mobilizes glutamate towards oxidation therefore ameliorating excitotoxicity (Divakaruni et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "a154fb93-ca59-4f16-8bb5-c3dfa77de7e3",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C67",
+      "claim": "In cancer cells, MPC acts as a protective factor by inhibiting the Warburg effect",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in cancer cells, MPC acts as a protective factor by inhibiting the Warburg effect (Schell et al., 2014) and MPC inhibition enhanced tumor aggression and resistance to chemo- and radiotherapy (Schell et al., 2014; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "ecf11726-9a5b-47ed-a53d-0f4110941bb4",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C68",
+      "claim": "MPC inhibition enhanced tumor aggression and resistance to chemo- and radiotherapy",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in cancer cells, MPC acts as a protective factor by inhibiting the Warburg effect (Schell et al., 2014) and MPC inhibition enhanced tumor aggression and resistance to chemo- and radiotherapy (Schell et al., 2014; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "9cf34275-c2fc-486d-9952-74532de4961f",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C69",
+      "claim": "Growth under MPC-inhibition is sustained by reprogramming of mitochondrial metabolism including enhanced glutaminolysis and lipid catabolism",
+      "claim_type": "EXPLICIT",
+      "source": "Growth under MPC-inhibition is sustained by reprogramming of mitochondrial metabolism including enhanced glutaminolysis and lipid catabolism (Vacanti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "56442c4f-6957-4654-97da-498feb9e5eec",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C70",
+      "claim": "PyronicSF consists of the complete sequence of the bacterial transcription factor PdhR linked to a circularly-permuted version of GFP (cpGFP)",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1A illustrates PyronicSF (Single Fluorophore), in which the complete sequence of the bacterial transcription factor PdhR (Quail and Guest, 1995) has been linked to a circularly-permuted version of GFP (cpGFP) (Nagai et al., 2001) (DNA sequence in Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of sensor construction with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "7fcc2b7a-2001-40bf-abdf-3f40e0fcca93",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C71",
+      "claim": "PdhR is a transcriptional regulator from Escherichia coli that controls the expression of PDH",
+      "claim_type": "EXPLICIT",
+      "source": "PdhR is a transcriptional regulator from Escherichia coli that controls the expression of PDH (Quail and Guest, 1995) and was previously used as a specific pyruvate-binding domain in the FRET sensor Pyronic (San Mart\u00edn et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "33316c28-316e-4dd9-b9eb-ec381d15246c",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C72",
+      "claim": "cpGFP is a variant of GFP in which the two ends of the protein are linked with the hexapeptide GGTGGS",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorophore cpGFP is a variant of GFP in which the two ends of the protein are linked with the hexapeptide GGTGGS, while new ends were generated by cleaving the protein between amino acid residues N144 and Y145 and replacing the latter by a methionine to serve as new N terminus (Baird et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited description of cpGFP structure",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "e0d051df-5aa2-4bb3-8a81-d1262b9a6b33",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C73",
+      "claim": "Three sensor variants were designed by inserting cpGFP after amino acid residues 94, 122 and 189 of PdhR",
+      "claim_type": "EXPLICIT",
+      "source": "Using a 3D model structure of PdhR obtained with the M4T server 3.0 from Fiser Laboratory, three sensor variants were designed by inserting cpGFP after amino acid residues 94, 122 and 189 of PdhR, that is, within loops of the ligand binding domain with free access to solvent and far from the hydrophobic core of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of sensor design process",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "118d1e07-1e25-46af-b4ca-a2d1210c515f",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C74",
+      "claim": "The variant with cpGFP inserted after amino acid residue 189 of PdhR showed the largest change in fluorescence intensity upon binding pyruvate",
+      "claim_type": "EXPLICIT",
+      "source": "The variant with cpGFP inserted after the amino acid residue 189 of PdhR showed the largest change in fluorescence intensity upon binding pyruvate and was christened PyronicSF (PYRuvate Optical Nano-Indicator from CECs Single Fluorophore; DNA sequence is available in Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative testing of sensor variants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "c3bc150c-e565-4d43-a031-978a4d5bbcf6",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C75",
+      "claim": "Dead-PyronicSF is a version of the sensor with greatly reduced sensitivity to pyruvate and conserved sensitivity to pH",
+      "claim_type": "EXPLICIT",
+      "source": "A version of the sensor with greatly reduced sensitivity to pyruvate and conserved sensitivity to pH (Dead-PyronicSF; Figure 1\u2014figure supplement 2) was obtained by mutating the first linker CTCGAA (red in Figure 1\u2014figure supplement 1, coding for Leu-Glu) to ACCATG (coding for Tre-Met).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of mutant sensor construction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "00b0d472-69c3-4250-bad2-138992e0ca2d",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C76",
+      "claim": "Four copies of the destination sequence were needed to target the FRET sensor Pyronic to mitochondria",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET sensor Pyronic could also be targeted to mitochondria in functional form (Figure 2\u2014figure supplement 1 and Figure 3\u2014figure supplement 1), but four copies of the destination sequence were needed, probably because of its larger size relative to PyronicSF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with inference about mechanism",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "44a40c58-0238-4701-8507-9fe2325cd9ba",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C77",
+      "claim": "The concentration of pyruvate in both mitochondria and cytosol varied between cells",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration of pyruvate in both compartments varied between cells, explained by differences between experiments (i.e. culture conditions), and also by heterogeneity within a given microscopic field (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation of variability in measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "70bf137a-ed9b-4214-8620-8f052148eed5",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C78",
+      "claim": "There was no apparent correlation between sensor expression level and mitochondrial pyruvate concentration",
+      "claim_type": "EXPLICIT",
+      "source": "There was no apparent correlation between sensor expression level and mitochondrial pyruvate concentration (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of correlation between variables",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "fa94a3ab-092a-4b33-aa09-08288b827869",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C79",
+      "claim": "PyronicSF is capable of detecting a difference of 10 \u03bcM in the low micromolar range, provided that sufficient replicates are available",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3\u2014figure supplement 4 shows that the sensor is capable of detecting a difference of 10 \u03bcM in the low micromolar range, provided that sufficient replicates are available.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "In vitro characterization of sensor sensitivity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "c753d38e-d644-4aec-b2db-4a4523b21412",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C80",
+      "claim": "The combined flux of PDH and PC was set at 1.2 \u03bcM/s in the mathematical model",
+      "claim_type": "EXPLICIT",
+      "source": "Their combined flux was set at 1.2 \u03bcM/s (Fern\u00e1ndez-Moncada and Barros, 2014), with PDH and PC respectively accounting for 76% and 24% (Oz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model parameters based on cited literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "d490814b-2d18-402a-a94f-ab4f0c08144b",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C81",
+      "claim": "PDH and PC respectively account for 76% and 24% of mitochondrial pyruvate flux",
+      "claim_type": "EXPLICIT",
+      "source": "Their combined flux was set at 1.2 \u03bcM/s (Fern\u00e1ndez-Moncada and Barros, 2014), with PDH and PC respectively accounting for 76% and 24% (Oz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model parameters based on cited literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "2e47bd14-e2aa-4415-9a68-ce537ac30918",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C82",
+      "claim": "The behavior of the system is essentially insensitive to the specific kinetic parameters of the MPC",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the behavior of the system is essentially insensitive to the specific kinetic parameters of the MPC (data not shown), as expected for a transporter working far from thermodynamic equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Modeling analysis with theoretical explanation",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "47485ecc-8bb9-43eb-8e92-eaeb30dd79aa",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C83",
+      "claim": "There was no apparent correlation between sensor expression level and the rate of mitochondrial pyruvate consumption",
+      "claim_type": "EXPLICIT",
+      "source": "There was no apparent correlation between sensor expression level and the rate of mitochondrial pyruvate consumption (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of correlation between variables",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "6bf72f12-3dcb-4c5c-aa8e-72561ce4707d",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C84",
+      "claim": "Similar steady-states of pyruvate depletion were reached at 0.5 \u03bcM and 10 \u03bcM UK-5099",
+      "claim_type": "EXPLICIT",
+      "source": "We do not think that the partial effect is explained by insufficient UK-5099, because similar steady-states were reached at 0.5 \u03bcM and 10 \u03bcM UK-5099 (53 \u00b1 12% versus 47 \u00b1 6%; 12 cells in three paired experiments, p>0.05, data not shown) and the half-inhibition constant for MPC inhibition by UK-5099 is only 50 nM (Halestrap, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Dose-response experiment with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "825442ea-8a27-4a4c-9043-32ae8171dc17",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C85",
+      "claim": "The half-inhibition constant for MPC inhibition by UK-5099 is only 50 nM",
+      "claim_type": "EXPLICIT",
+      "source": "We do not think that the partial effect is explained by insufficient UK-5099, because similar steady-states were reached at 0.5 \u03bcM and 10 \u03bcM UK-5099 (53 \u00b1 12% versus 47 \u00b1 6%; 12 cells in three paired experiments, p>0.05, data not shown) and the half-inhibition constant for MPC inhibition by UK-5099 is only 50 nM (Halestrap, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "3a84f8bd-651d-456c-bc7d-142dfa6753d7",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "claim_id": "C86",
+      "claim": "Pyronic has permitted high resolution measurement of pyruvate in multiple contexts from cultured cells to living animals",
+      "claim_type": "EXPLICIT",
+      "source": "A few years ago, our group introduced the FRET sensor Pyronic (San Mart\u00edn et al., 2014a) that has permitted high resolution measurement of pyruvate in multiple contexts from cultured cells to living animals (M\u00e4chler et al., 2016; Compan et al., 2015; Pla\u00e7ais et al., 2017; Delgado et al., 2018; Baeza-Lehnert et al., 2019; Hasel et al., 2017; Rusu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited applications from multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PyronicSF is a novel GFP-based pyruvate sensor with improved characteristics compared to the original FRET-based Pyronic sensor. The sensor consists of PdhR linked to cpGFP, shows ~250% fluorescence increase with KD of 480 \u03bcM, is specific for pyruvate, has >6-fold higher dynamic range than Pyronic, and does not require FRET detection technology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C19, C57-C60, C62, and C70-C75 provide comprehensive characterization of PyronicSF including in vitro dose-response curves (C13), specificity testing (C14-C15), comparative performance with Pyronic (C19, C57, C62), and structural details (C70-C74). The data demonstrate clear improvements in dynamic range and ease of use, supported by quantitative measurements and direct comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "43e2c3de-39f5-44ce-9a21-ec78718f5c31",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PyronicSF was successfully targeted to mitochondria using the cytochrome oxidase destination sequence, as confirmed by colocalization with mitochondrial markers TMRM and mito-mCherry. PyronicSF required fewer targeting sequences than the larger Pyronic sensor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 and C76 demonstrate successful mitochondrial targeting through multiple independent validation methods (morphology, TMRM colocalization, mCherry colocalization). The comparison with Pyronic (C76) provides additional evidence that the smaller size of PyronicSF facilitates targeting, though this is presented as inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "788f19b6-c9a9-4998-9849-946cf1e1d176",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mitochondrial pyruvate uptake in astrocytes is mediated by the MPC and can be pharmacologically inhibited. UK-5099 inhibited pyruvate uptake by 69%, and rosiglitazone inhibited uptake by 67%, confirming MPC as a target of thiazolidinediones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 provide functional validation of mito-PyronicSF through pharmacological experiments. The reversible fluorescence changes (C23), differential kinetics between compartments (C24), and dose-dependent inhibition by specific MPC blockers (C25-C27) with quantified effects provide strong evidence. The rosiglitazone result (C27-C28) confirms prior literature findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "673edb9b-fdfc-4041-8c54-dd869700ae52",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In cultured mouse astrocytes under physiological conditions, mitochondrial pyruvate concentration is in the low micromolar range (21-25 \u03bcM) and is lower than cytosolic pyruvate (33-40 \u03bcM), as measured by both PyronicSF and Pyronic sensors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C31-C35 present convergent measurements from two independent sensors (PyronicSF: 21 \u03bcM mitochondrial, 33 \u03bcM cytosolic; Pyronic: 25 \u03bcM mitochondrial, 40 \u03bcM cytosolic). The calibration protocol using MCT-accelerated exchange is described, and the agreement between sensors strengthens the conclusion. However, the calibration relies on a single-point method and assumptions about zero cytosolic pyruvate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mathematical modeling based on measured pyruvate concentrations demonstrates that the MPC is poised to exert ultrasensitive control over anaplerosis. At 21 \u03bcM mitochondrial pyruvate, a 1% MPC increase causes 1.2% increase in PC flux but only 0.4% increase in PDH flux, and MPC and cytosolic pyruvate interact synergistically for PC flux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4 and C36-C43 present modeling predictions that depend critically on enzyme kinetic parameters (C80-C81) taken from other cell types and species (BRENDA database). While the modeling is internally consistent (C82) and the ultrasensitivity concept is well-established (C38), the authors acknowledge (in Discussion) that enzyme parameters in astrocytes need experimental validation. The conclusion about ultrasensitive control is therefore uncertain until astrocyte-specific enzyme kinetics are confirmed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "bea94a3b-409e-4ccd-83d0-fa70ca31b00d",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A transporter-block protocol using UK-5099 enables measurement of mitochondrial pyruvate consumption rates. Rates ranged from 0.29 to 3.1 \u03bcM/s (median 1.1 \u03bcM/s) and were modulated by OXPHOS activity. UK-5099 inhibition was reversible at low concentrations and short exposure times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 and C84-C85 describe a novel flux measurement protocol with appropriate controls. The reversibility of UK-5099 (C46) contradicts prior literature (C45) but is experimentally demonstrated. The modulation by FCCP and azide (C47-C48) validates the metabolic basis of the measurements. The dose-response data (C84) and known IC50 (C85) support the interpretation, though incomplete inhibition suggests alternative pathways or MPC heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "822a1915-3455-42da-9318-5f637cbca6bf",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mitochondrial pyruvate concentration and consumption rates vary spatially within individual astrocytes, with peripheral mitochondria showing higher steady-state pyruvate than perinuclear mitochondria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 demonstrate subcellular heterogeneity in mitochondrial pyruvate metabolism using spatial measurements within single cells. The data are supported by Figure 5 showing differential pyruvate levels and consumption rates in different mitochondrial populations. This represents a novel capability of the sensor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "438a6bf7-e781-4fed-a670-0cfdbfeda400",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PyronicSF functions in living Drosophila melanogaster larval brain tissue, revealing that perineurial glial cells maintain a steep transmitochondrial pyruvate gradient with higher cytosolic than mitochondrial pyruvate, suggesting MPC plays a regulatory role in these cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C52-C56 demonstrate sensor functionality in intact tissue with appropriate controls. The differential kinetics between cytosol and mitochondria (C53-C54) and the observed gradient (C55) are consistent with the astrocyte findings. However, the regulatory interpretation (C56) is presented as a suggestion based on the gradient, and the authors note that experiments with normal hemolymph substrates are planned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "733e4d46-2975-4108-b39a-2f3494e64e46",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PyronicSF has pH sensitivity as a limitation, but can detect 10 \u03bcM differences in the low micromolar range with sufficient replicates. pH correction methods are available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63 and C79 acknowledge a key limitation (pH sensitivity) while demonstrating adequate sensitivity for the intended application. The in vitro characterization (C79) provides quantitative assessment of detection limits. Correction methods are described in the manuscript (C16, C18, C75).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "abb70082-170c-454b-bd8d-df8a5e1ab957",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Pyruvate concentrations and consumption rates show substantial cell-to-cell variability that is not correlated with sensor expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 and C83 document biological variability and rule out sensor expression as a confounding factor. This is important for interpreting the data, though the causes of variability remain unexplored. The lack of correlation with expression level (C78, C83) suggests the measurements reflect genuine biological heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "7ae7c382-e7bc-4362-a625-e9f3d6f03a6d",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PyronicSF enables monitoring of pyruvate concentration, permeability, and flux in individual mitochondria, providing a tool for studying mitochondrial heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by the demonstrated capabilities in C50-C51 showing subcellular measurements of both concentration and flux in different mitochondrial populations within single cells. This represents a unique capability of the sensor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    },
+    {
+      "id": "d79c6a96-a04c-46dc-b167-65e267eb1c80",
+      "content_id": "7a766d73-a6cc-47ee-ae02-3377b0d31b62",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge claims about mitochondrial function, pyruvate metabolism, MPC properties, and prior sensor applications are cited from literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11, C17, C29-C30, C64, C66-C69, C71, and C86 represent established knowledge or prior work appropriately cited from literature. These provide context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:50.058669Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aef11ce5-13de-49e5-91cc-4f5b8febe222",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "aaccfa5d-8c65-49c8-94e6-5d317d1f92dd",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "62b7b4e8-bd07-4e79-86b3-4a6619fbcda4",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "e7832188-ff2d-4e37-a35a-2b2b35f693b5",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "347a6266-ddaa-4fb4-984b-db2d58c17559",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "36ceccb5-cdc4-4cf2-a7d7-0903c898af31",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "0ecc1b6b-4b92-4cff-8b17-47dbab97c527",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "f1c7e479-4ed8-4409-a384-ba2e985d7402",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "e2a25608-2eea-4bf4-810c-4f6a9722ed0c",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "91cd0dcf-d57b-44fe-abdf-bfbd9ce5e17f",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "c237fa2f-1e32-457c-a270-56fa8bd13ac4",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "95e83601-ca57-41b7-8547-2cc94cd535a6",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "09ab262f-ccb8-4dbe-bed4-f17628541f7d",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "56442c4f-6957-4654-97da-498feb9e5eec",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "33316c28-316e-4dd9-b9eb-ec381d15246c",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "e0d051df-5aa2-4bb3-8a81-d1262b9a6b33",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "118d1e07-1e25-46af-b4ca-a2d1210c515f",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "c3bc150c-e565-4d43-a031-978a4d5bbcf6",
+      "result_id": "ba6f1eee-4cfd-4243-b93d-6d1459f91432"
+    },
+    {
+      "claim_id": "64c797e5-04dd-467f-b254-16fefed0099f",
+      "result_id": "43e2c3de-39f5-44ce-9a21-ec78718f5c31"
+    },
+    {
+      "claim_id": "6224d3a8-6ffa-401c-979e-848d297541b7",
+      "result_id": "43e2c3de-39f5-44ce-9a21-ec78718f5c31"
+    },
+    {
+      "claim_id": "5d42a572-c4c1-479c-a3cb-b1681a69c9d5",
+      "result_id": "43e2c3de-39f5-44ce-9a21-ec78718f5c31"
+    },
+    {
+      "claim_id": "00b0d472-69c3-4250-bad2-138992e0ca2d",
+      "result_id": "43e2c3de-39f5-44ce-9a21-ec78718f5c31"
+    },
+    {
+      "claim_id": "16cdb804-1880-4e0b-9a49-66905cb7ca96",
+      "result_id": "788f19b6-c9a9-4998-9849-946cf1e1d176"
+    },
+    {
+      "claim_id": "042c9bf3-b874-4849-ba9d-20ed6ab5e2b7",
+      "result_id": "788f19b6-c9a9-4998-9849-946cf1e1d176"
+    },
+    {
+      "claim_id": "715a0b61-1761-456b-a37c-84be58efdaa3",
+      "result_id": "788f19b6-c9a9-4998-9849-946cf1e1d176"
+    },
+    {
+      "claim_id": "bf15b7d8-c917-4417-9406-7b74ad919d4f",
+      "result_id": "788f19b6-c9a9-4998-9849-946cf1e1d176"
+    },
+    {
+      "claim_id": "9041e93b-7a4e-4599-85f3-29fbfe1272f1",
+      "result_id": "788f19b6-c9a9-4998-9849-946cf1e1d176"
+    },
+    {
+      "claim_id": "9e42cf63-b57f-4a25-bbe8-2fe34ad9172d",
+      "result_id": "788f19b6-c9a9-4998-9849-946cf1e1d176"
+    },
+    {
+      "claim_id": "7b770fdd-aa20-4abc-a886-f6cd0d888dd5",
+      "result_id": "673edb9b-fdfc-4041-8c54-dd869700ae52"
+    },
+    {
+      "claim_id": "2817dbb1-3cfe-4a16-827e-0cf3ad9be973",
+      "result_id": "673edb9b-fdfc-4041-8c54-dd869700ae52"
+    },
+    {
+      "claim_id": "a04ed4ed-ba5e-44ac-baa8-f7301ecdfdb3",
+      "result_id": "673edb9b-fdfc-4041-8c54-dd869700ae52"
+    },
+    {
+      "claim_id": "fdee9c8c-5463-4c0d-9b06-49a6bd2c5c9b",
+      "result_id": "673edb9b-fdfc-4041-8c54-dd869700ae52"
+    },
+    {
+      "claim_id": "f1e0ed06-5696-4503-b73b-a64e0b94b26e",
+      "result_id": "673edb9b-fdfc-4041-8c54-dd869700ae52"
+    },
+    {
+      "claim_id": "49f9d46d-3ae0-4c10-841b-574fcb5e072b",
+      "result_id": "673edb9b-fdfc-4041-8c54-dd869700ae52"
+    },
+    {
+      "claim_id": "e19422a7-8557-4cc8-9edc-d797c412c306",
+      "result_id": "673edb9b-fdfc-4041-8c54-dd869700ae52"
+    },
+    {
+      "claim_id": "ef4401a7-70d8-4a74-83cd-510cbef823b4",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "0e828be5-5539-473f-98eb-c95c459da769",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "9dc437fe-d2d0-4bcd-8e2d-065cf929686b",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "9ca131f9-9e39-4b56-a2b1-3cdcdbb89f4a",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "a75ee957-1e42-4c9a-992c-074e26045a13",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "d4bfd569-0fa3-4f60-a23b-2a1d0c117f71",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "2bbc7f94-875a-4997-8fcd-17daa8164260",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "0c5f8d0b-d89f-4205-b2f2-cfb206cafa39",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "bded6005-98b9-4550-a262-d14f4200a003",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "c753d38e-d644-4aec-b2db-4a4523b21412",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "d490814b-2d18-402a-a94f-ab4f0c08144b",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "2e47bd14-e2aa-4415-9a68-ce537ac30918",
+      "result_id": "6b5fea82-6386-4e59-8779-4b6f4eb0b68c"
+    },
+    {
+      "claim_id": "11f71afe-6a5f-48ca-adb4-4ef9e0d0bbbc",
+      "result_id": "bea94a3b-409e-4ccd-83d0-fa70ca31b00d"
+    },
+    {
+      "claim_id": "9d9710b3-1543-4e1b-859b-7e553c9c36e6",
+      "result_id": "bea94a3b-409e-4ccd-83d0-fa70ca31b00d"
+    },
+    {
+      "claim_id": "4ca59933-de5d-4ee9-b348-08165c8c0382",
+      "result_id": "bea94a3b-409e-4ccd-83d0-fa70ca31b00d"
+    },
+    {
+      "claim_id": "c972b744-fce4-4a0c-9e6a-bf0111259141",
+      "result_id": "bea94a3b-409e-4ccd-83d0-fa70ca31b00d"
+    },
+    {
+      "claim_id": "9a5e6d82-207a-49a2-a4fb-f609216c2b98",
+      "result_id": "bea94a3b-409e-4ccd-83d0-fa70ca31b00d"
+    },
+    {
+      "claim_id": "c208da53-4824-4940-9250-3aa3a7a508df",
+      "result_id": "bea94a3b-409e-4ccd-83d0-fa70ca31b00d"
+    },
+    {
+      "claim_id": "6bf72f12-3dcb-4c5c-aa8e-72561ce4707d",
+      "result_id": "bea94a3b-409e-4ccd-83d0-fa70ca31b00d"
+    },
+    {
+      "claim_id": "825442ea-8a27-4a4c-9043-32ae8171dc17",
+      "result_id": "bea94a3b-409e-4ccd-83d0-fa70ca31b00d"
+    },
+    {
+      "claim_id": "f74a5347-6d8f-460c-8192-5aa64ffe065e",
+      "result_id": "822a1915-3455-42da-9318-5f637cbca6bf"
+    },
+    {
+      "claim_id": "4d25297e-78fd-4948-9713-87b5957c4d57",
+      "result_id": "822a1915-3455-42da-9318-5f637cbca6bf"
+    },
+    {
+      "claim_id": "ad311a6f-0c7a-4491-875b-ab32a9280d26",
+      "result_id": "438a6bf7-e781-4fed-a670-0cfdbfeda400"
+    },
+    {
+      "claim_id": "f5994c6e-c6dd-4853-a09e-e024b045ef0e",
+      "result_id": "438a6bf7-e781-4fed-a670-0cfdbfeda400"
+    },
+    {
+      "claim_id": "b5f47c05-9fba-4b58-9b36-7faa6ac17143",
+      "result_id": "438a6bf7-e781-4fed-a670-0cfdbfeda400"
+    },
+    {
+      "claim_id": "d619542f-d59e-47e1-83d3-8cffb9f93bf1",
+      "result_id": "438a6bf7-e781-4fed-a670-0cfdbfeda400"
+    },
+    {
+      "claim_id": "a4baa448-7128-4ff9-88fe-595bc9bd112d",
+      "result_id": "438a6bf7-e781-4fed-a670-0cfdbfeda400"
+    },
+    {
+      "claim_id": "a5c679e6-f559-43b9-954b-28f89a4990ab",
+      "result_id": "438a6bf7-e781-4fed-a670-0cfdbfeda400"
+    },
+    {
+      "claim_id": "f953e06d-0eeb-4b3e-8eb2-cec5c34bbd10",
+      "result_id": "733e4d46-2975-4108-b39a-2f3494e64e46"
+    },
+    {
+      "claim_id": "fa94a3ab-092a-4b33-aa09-08288b827869",
+      "result_id": "733e4d46-2975-4108-b39a-2f3494e64e46"
+    },
+    {
+      "claim_id": "44a40c58-0238-4701-8507-9fe2325cd9ba",
+      "result_id": "abb70082-170c-454b-bd8d-df8a5e1ab957"
+    },
+    {
+      "claim_id": "70bf137a-ed9b-4214-8620-8f052148eed5",
+      "result_id": "abb70082-170c-454b-bd8d-df8a5e1ab957"
+    },
+    {
+      "claim_id": "47485ecc-8bb9-43eb-8e92-eaeb30dd79aa",
+      "result_id": "abb70082-170c-454b-bd8d-df8a5e1ab957"
+    },
+    {
+      "claim_id": "99bc4320-41c3-4018-9300-26a766403065",
+      "result_id": "7ae7c382-e7bc-4362-a625-e9f3d6f03a6d"
+    },
+    {
+      "claim_id": "58ec43ea-7016-46b8-b1ea-9068bc1cae36",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "1c1a4be1-269d-4171-9ab0-afc5eb9f9a48",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "9adf262b-1cd6-4ac5-8bf4-63e00fa50d34",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "661bc96a-53ec-4cb9-9c86-6923ebec3f21",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "37e97bf0-0f7a-422f-b59a-c8ea2e7e70c0",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "98a7d1d3-5462-49a0-a817-ebe26cb484de",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "53f28e5b-64b0-4d0c-ab79-bb005c999519",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "8a112326-5d41-40e0-97f8-9e5bbf4c3c77",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "241246c2-58c9-4755-8d06-e27b946638c5",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "7164d74c-ba6c-4da9-9164-0149d775fe9a",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "9a6248e1-d4ec-408c-b52e-efdf549cda07",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "a154fb93-ca59-4f16-8bb5-c3dfa77de7e3",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "ecf11726-9a5b-47ed-a53d-0f4110941bb4",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "9cf34275-c2fc-486d-9952-74532de4961f",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "7fcc2b7a-2001-40bf-abdf-3f40e0fcca93",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    },
+    {
+      "claim_id": "3a84f8bd-651d-456c-bc7d-142dfa6753d7",
+      "result_id": "d79c6a96-a04c-46dc-b167-65e267eb1c80"
+    }
+  ],
+  "comparisons": []
+}

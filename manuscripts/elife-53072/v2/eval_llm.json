@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Single-cell RNA sequencing of CD31+/CD45- cells from adult mouse lung identified seven distinct clusters, including macrovascular endothelium (maEC), microvascular endothelium (miECs), and a novel Car4-high EC population characterized by high expression of Car4, Ednrb, Kdr, and Cd34.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scRNA-seq methodology is clearly described (C32), with consistent identification of seven clusters across three biological replicates (C33, C34). Gene expression patterns defining each cluster are supported by multiple data types including scRNA-seq (C36-C38), qRT-PCR validation (C39), and spatial localization by IHC (C47-C51). The identification of Car4-high ECs as a distinct population is well-supported by transcriptomic and validation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Car4-high ECs express a unique gene signature with high levels of Car4, Cd34, Ednrb, and Kdr, while maintaining comparable expression of general EC markers, and show little similarity to other EC clusters in Gene Ontology analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The unique gene signature is supported by scRNA-seq data (Tables 1 and 3, Figure 1D) and validated by qRT-PCR at the population level (C39, Figure 1\u2014figure supplement 3). The claim that Car4-high ECs maintain comparable expression of general EC markers (C40) is also validated by qRT-PCR. GO analysis demonstrates distinctness from other clusters (C41, Figure 2A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C51",
+      "C60",
+      "C61"
+    ],
+    "result": "Car4-high ECs are distributed throughout the lung periphery at homeostasis, with Car4+/Pecam1+ double-positive cells localizing throughout the alveolar space, though not all Pecam1+ cells express Car4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Spatial localization is demonstrated by multiple complementary techniques: IHC for CD34 and Car4 (C51, Figure 2E) and RNAscope for Car4 and Pecam1 (C60, C61, Figure 3\u2014figure supplement 2A). The observation that not all Pecam1+ cells are Car4+ (C61) is consistent with Car4-high ECs being a subpopulation of microvascular endothelium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C56",
+      "C59",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "After acute lung injury (influenza or bleomycin), Car4-high ECs are enriched in regenerating zones surrounding damaged regions, with increased CD34+ and Car4+/Pecam1+ cells in zones of mild to severe injury but not in regions of total alveolar destruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization of Car4-high ECs to regenerating regions is supported by IHC showing increased CD34 protein in zones adjacent to diffuse alveolar damage after influenza (C56, Figure 3D,E) and bleomycin injury (C58, Figure 3\u2014figure supplement 1). RNAscope quantification demonstrates statistically significant increases in Car4+/Pecam1+ cells in zones 1/2 and zone 3 but not zone 4 (C62-C64, Figure 3\u2014figure supplement 2D), supporting the interpretation that these cells localize to regenerating rather than destroyed regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C5",
+      "C110",
+      "C111",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Car4-high ECs are primed to respond to Vegfa signaling based on high expression of Vegf receptors (Kdr, Flt1) and Nrp1, and ligand-receptor analysis predicts strong signaling interactions between AT1 epithelial cells and Car4-high ECs involving multiple pathways including Vegfa-Vegfr, semaphorin-Nrp1, Bmp4-Bmpr2, and Fgf1-Fgfr3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While gene expression data clearly show high expression of Vegf receptors in Car4-high ECs (C27, Tables 1 and 3), the functional claim that these cells are \"primed to respond\" is based solely on computational ligand-receptor analysis (C5, C110, Figure 7, Table 4) without experimental validation. The predicted interactions (C114-C120) are computational predictions that require functional validation through perturbation experiments or direct measurement of signaling pathway activation. The inference is reasonable but remains speculative without experimental confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Influenza infection reveals the emergence of a population of highly proliferative ECs that express high levels of proliferation markers (Mki67, Ccnb2, Cdk1, Cdc20) as well as general EC markers (Cd31, Gpihbp1, Plvap, Cd34).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The emergence of proliferating ECs is clearly demonstrated by scRNA-seq showing a distinct cluster at 14 dpi that is absent at homeostasis (C77, Figure 4D,F). Gene expression analysis confirms high expression of proliferation markers (C78, Table 2) and EC markers (C79, Figure 4\u2014figure supplement 4). This is further validated by EdU incorporation studies (C91, Figure 5) and RNAscope for proliferation markers (C98, C99, Figure 5\u2014figure supplement 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C30",
+      "C74",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Highly proliferative ECs are closely related to Car4-low miECs in gene expression and pseudotime analysis suggests they likely arise from multiple miEC populations, with two lineage trajectories connecting Car4-high ECs, miECs, and proliferating ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Pseudotime analysis using Slingshot demonstrates close association between miECs and proliferating ECs (C105, Figure 6A,B) and identifies two trajectories (C106, Figure 6C-D). Gene expression along these trajectories is characterized (C107, C108). However, pseudotime analysis is inherently inferential and does not establish actual lineage relationships. The claim that proliferating ECs \"arise from multiple miEC populations\" (C8) is based on computational trajectory inference rather than lineage tracing experiments. While the analysis is rigorous, definitive conclusions about cell origins require experimental validation through lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C31",
+      "C96",
+      "C100"
+    ],
+    "result": "Highly proliferative ECs contribute to alveolar revascularization after injury by replacing lost endothelium, with both Car4-high and other ECs participating in the proliferative response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While EdU incorporation demonstrates that both CD34-high and CD34-low ECs proliferate after injury (C91-C94, Figure 5), and proliferating ECs are localized to injured regions (C98, C99), the functional claim that they \"contribute to alveolar revascularization by replacing lost endothelium\" (C9, C31) is inferential. The presence of proliferating ECs in regenerating zones is consistent with this interpretation, but direct evidence of vascular regeneration (e.g., vessel density measurements, functional perfusion studies, or fate mapping) is not provided. The inference is reasonable but requires additional experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "EdU incorporation studies demonstrate that EC proliferation increases significantly over the course of injury response (days 0-7, 7-14, 14-21), with both CD34-high and CD34-low EC populations showing increased proliferation, and a significant increase in the proportion of CD34-high ECs during regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EdU incorporation is measured by flow cytometry across three time windows (Figure 5A), showing statistically significant increases in proliferation over time (C93, Figure 5J). Both CD34-high and CD34-low populations show increased EdU incorporation (C92, C94, Figure 5F,G,L,M). The proportion of CD34-high ECs increases significantly during regeneration (C95, Figure 5K). The experimental design is appropriate with proper controls (Figure 5\u2014figure supplement 2), and the conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C104"
+    ],
+    "result": "Proliferating ECs do not express high levels of Car4-high EC markers (Kdr, Ednrb) or maEC markers (Vcam1, Vwf), and combined transcriptomic and functional data indicate that no individual EC cluster possesses preferential proliferative potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Gene expression analysis clearly shows that proliferating ECs lack high expression of Car4-high EC and maEC markers (C80, C81, Figure 4\u2014figure supplement 4). The claim that no individual cluster has preferential proliferative potential (C104) is supported by EdU incorporation showing proliferation in both CD34-high and CD34-low populations (C92, C94) and cell cycle scoring showing similar profiles across EC types except for the proliferating cluster (C102, Figure 5\u2014figure supplement 6E,F). This is a well-supported conclusion integrating multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Gene Ontology analysis reveals functional specialization among EC clusters, with cluster 1 enriched in interferon-beta response genes, cluster 3 in translation regulation, cluster 4 in cell adhesion, clusters 0 and 2 sharing angiogenesis and blood vessel development genes, and cluster 2 uniquely enriched in vasculogenesis genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "GO analysis is clearly presented (Figure 2B) and the functional enrichments for each cluster are directly supported by the data. The claim about cluster 2 (Car4-high ECs) being uniquely enriched in vasculogenesis genes (C46) is particularly relevant to the functional interpretation of this population. The analysis is appropriate and the conclusions are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Immunohistochemistry demonstrates that Vwf and Vcam1 localize to large vessel endothelium (with Vcam1 also in surrounding mesenchyme), while Gpihbp1 and Plvap are enriched in alveolar capillary plexus endothelium (with Plvap also present in large vessels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "IHC localization is clearly shown in Figure 2C,D and is consistent with previous reports (C47 cites Piali et al., 1995; Yamamoto et al., 1998). The spatial distribution of these markers validates the scRNA-seq cluster assignments and provides important context for understanding EC heterogeneity. The data are clear and well-presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "RNAscope analysis demonstrates that Gpihbp1+ miECs localize throughout the alveolar space but not in large vessels, arterial maECs (Cxcl12+) and venous maECs (Vegfc+) localize to large vessels, and Gpihbp1+/Plvap+/Pecam1+ triple-positive miECs show increased density in injured tissue regions at 14 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNAscope provides spatial validation of scRNA-seq findings with clear localization patterns (Figure 3\u2014figure supplement 4). The observation of increased density of triple-positive miECs in injured regions (C69) complements the findings for Car4-high ECs and supports the broader conclusion that multiple EC populations respond to injury. The data are well-presented and conclusions are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Car4-high ECs show modest transcriptional changes after H1N1 injury, with small but statistically significant decreases in signaling proteins (Acvrl1, Adgre5, Thbd), hypoxia-inducible factor Epas1, and Emp2, and increases in cytoskeleton/ECM regulators (Sept4, Sparc) and transcription factor Hes1. Global EC response to influenza includes increased expression of genes related to translation, survival/proliferation signaling, stress response, and cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Differential gene expression analysis between control and H1N1 datasets is presented (Figure 4\u2014figure supplement 6A) with statistical significance noted. The modest changes in Car4-high ECs (C82-C87) suggest these cells maintain their identity during injury while making specific functional adjustments. GO analysis of global EC responses (C88, Figure 4\u2014figure supplement 6B) provides important context for understanding the injury response. The analysis is appropriate and conclusions are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "H1N1 injury results in a dramatic increase in immune cells at all time points (7, 14, and 21 dpi), while the total number of CD31+ ECs does not significantly differ between control and flu cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data clearly show increased CD45+ immune cells (C89, Figure 5B,H) and no significant difference in total CD31+ ECs (C90, Figure 5C,I). The authors appropriately note that EC depletion may occur earlier than 7 dpi. This provides important context for interpreting the proliferation data and suggests that EC proliferation may be compensating for earlier losses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "RNAscope analysis shows that Pecam1+ ECs coexpressing proliferation genes Top2a and Prc1 are extremely rare in control lung but significantly increased in regions of mild to moderate injury (zones 1/2) and severe injury (zone 3) at 14 days post-H1N1 injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNAscope provides spatial validation of the scRNA-seq finding of proliferating ECs, with clear quantification showing statistically significant increases in zones 1/2 and zone 3 (Figure 5\u2014figure supplement 5D). This complements the EdU incorporation data and provides spatial context for where EC proliferation is occurring during regeneration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Cell cycle scoring based on gene expression predicts that at 14 dpi, a larger percentage of ECs are in G2/M and S phases compared to other cell types, with similar cell cycle profiles among miECs, maECs, and Car4-high ECs, but an extremely high number of cells in G2/M phase in the proliferating EC cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell cycle scoring analysis is clearly presented (Figure 5\u2014figure supplement 6) and provides computational support for the identification of proliferating ECs. The authors appropriately note this is predictive analysis based on gene expression rather than direct measurement of cell cycle phase. The analysis complements the EdU incorporation data and helps characterize the proliferating EC population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Ligand-receptor analysis predicts that the emergent proliferating EC population participates in signaling interactions with AT1 cells, miECs, and Car4-high ECs after H1N1 infection, suggesting that endothelial-epithelial interactions are a general property of capillary endothelium during injury response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The ligand-receptor predictions (C112, Figure 7D) are based on computational analysis of gene expression without experimental validation. While the analysis is appropriate and the inference reasonable, the claim that these interactions actually occur (C113) requires experimental validation through co-culture studies, perturbation experiments, or direct measurement of signaling pathway activation. The computational predictions provide hypotheses for future testing but do not constitute definitive evidence of functional interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Both Car4-high ECs and Gpihbp1+ miECs may play a role in response to alveolar injury based on changes to their localization or density during the regenerative period following H1N1 influenza infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriately cautious inference based on the spatial localization data from IHC and RNAscope (Figures 3 and Figure 3\u2014figure supplements 2 and 4). The authors use \"may play a role\" language that appropriately reflects the observational nature of the data. The changes in localization and density are well-documented and support the hypothesis that these cells contribute to regeneration, though functional validation would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "Whole-lung scRNA-seq at homeostasis and 14 dpi identified endothelial, epithelial, and mesenchymal cell clusters, with EC populations including Car4-high ECs, two miEC populations (Gpihbp1-high and Ifi47-high), separate arterial and venous maECs, and lymphatic ECs in both control and H1N1 datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The whole-lung scRNA-seq analysis is clearly described with appropriate methodology (Figure 4A-F). The identification of additional EC populations compared to CD31+ sorted cells (C74) is appropriately attributed to less biased isolation and greater transcriptional variance. The data are well-presented and the cluster assignments are supported by marker gene expression (Figure 4E,F).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background and motivation: Pulmonary endothelial cells are essential for gas exchange in the alveolus, which is disrupted by acute lung injury. Despite recent progress in understanding alveolar cellular complexity, EC heterogeneity and the contribution of EC subpopulations to in vivo tissue homeostasis and injury response remain incompletely understood. Previous work suggests certain EC populations may be primed for proliferation in vitro, but their in vivo relevance is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and rationale for the study. They are supported by appropriate citations to previous literature (C14, C15, C17, C19, C20, C21) and accurately describe established knowledge (C1, C10, C11, C12, C13, C18) and gaps in understanding (C2, C22). The motivation for the study (C16) is clearly stated. This provides appropriate context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Single cell RNA sequencing (scRNA-seq) analysis was utilized to define pulmonary EC heterogeneity at homeostasis and during regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This describes the core methodology of the study, which is clearly implemented throughout the manuscript with appropriate technical details provided in the methods section. The approach is well-suited to address the stated research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "H1N1 influenza virus injury causes heterogeneous injury similar to human influenza, with control mice maintaining normal alveolar structure while influenza-infected mice at 14 dpi show regions of mild injury (zones 1/2), diffuse alveolar damage (zone 3), and total alveolar destruction (zone 4). Bleomycin injury results in extensive alveolar damage and inflammatory infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The injury models are well-characterized with clear histological documentation (Figure 3A,B and Figure 3\u2014figure supplement 1). The heterogeneous nature of influenza injury is clearly demonstrated and the zoning system (C54, citing Zacharias et al., 2018) provides a useful framework for analyzing spatial patterns of EC responses. The bleomycin model provides complementary evidence that EC responses are not specific to influenza injury.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "In control lungs, CD34+ cells were found distributed throughout the alveolar space, in a similar distribution to CD31+/CD34-low miECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This baseline observation (Figure 3C) is important for interpreting the changes observed after injury. The similar distribution to other miECs supports the classification of Car4-high ECs as a microvascular population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Many of the predicted signaling pathways between AT1 cells and Car4-high ECs have been identified as essential for vascular development and angiogenesis, and some are misregulated in pulmonary disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This contextualizes the ligand-receptor predictions within the broader literature on vascular biology and pulmonary disease. The claims are supported by appropriate citations and help interpret the potential functional significance of the predicted interactions.",
+    "result_type": "MINOR"
+  }
+]

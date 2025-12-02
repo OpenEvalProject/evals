@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Trc depletion increases microtubule sliding in S2 cells and cultured neurons, leading to increased neurite outgrowth. This effect is specific to Trc depletion (demonstrated by rescue experiments) and represents a cell-autonomous mechanism for regulating neurite development independent of cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C28-C35 provide converging evidence from multiple experimental systems (S2 cells and primary neurons) using complementary approaches (RNAi, rescue experiments, photoconversion assays). The rescue experiments (C28-C29) demonstrate specificity, and the consistency across cell types (C41) strengthens the conclusions. Statistical significance is reported (p=0.03-0.04) with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The kinase activity of Trc is required for regulating microtubule sliding. This is demonstrated through experiments with kinase-dead mutants that cannot rescue sliding defects, and through depletion of Fry (a Trc activator) which phenocopies Trc depletion in both S2 cells and neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 and C99-C101 provide strong evidence through multiple complementary approaches: kinase-dead mutants fail to rescue (C36, C99), while wild-type and constitutively active forms succeed; Fry depletion (which reduces Trc activity without affecting protein levels) increases sliding in both S2 cells (C38) and neurons (C39, C100). The consistency across experimental systems strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Pavarotti is required for Trc to inhibit microtubule sliding. Trc overexpression decreases sliding only when Pavarotti is present, and double knockdown of Trc and Pavarotti has non-additive effects, indicating they function in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C96-C98 demonstrate epistasis through loss-of-function and gain-of-function experiments. The key observation that Trc overexpression cannot decrease sliding when Pavarotti is depleted (C43) establishes Pavarotti as downstream of Trc. The non-additive effects of double knockdown (C98) in neurons further support a linear pathway. Statistical significance is reported (p=0.003-0.04).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C84",
+      "C103"
+    ],
+    "result": "Trc phosphorylates Pavarotti at serine 745 in cells and in neurons in vivo. Constitutively active Trc increases S745 phosphorylation approximately 2-fold, while Trc depletion reduces phospho-Pavarotti by approximately 35% in brain tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 and C84, C103 provide direct biochemical evidence using phospho-specific antibodies. The experiments include appropriate controls (S745A mutation eliminates signal, confirming antibody specificity), gain-of-function (Trc CA increases phosphorylation ~2-fold), and loss-of-function (Trc RNAi reduces phosphorylation ~35%) in both cell culture and brain tissue. Quantification is provided for the in vivo experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C102"
+    ],
+    "result": "Phosphorylation of Pavarotti at S745 is necessary for its ability to inhibit microtubule sliding. The phospho-null mutant S745A fails to rescue the increased sliding phenotype caused by Pavarotti depletion, while wild-type Pavarotti successfully rescues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C102 demonstrate the functional requirement for S745 phosphorylation through rescue experiments. Wild-type Pavarotti rescues the sliding phenotype (C50), but the S745A mutant does not (C51), providing strong evidence that phosphorylation at this site is necessary for function. Statistical significance is reported (p values in Figure 3D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Phosphorylation of Pavarotti at S745 promotes its association with microtubules. Trc depletion and the S745A mutation both reduce Pavarotti-microtubule association by approximately 50%, and this correlates with increased microtubule sliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 and C111-C114 provide evidence through extraction experiments that preserve microtubules while removing soluble proteins. Both Trc depletion (C53) and S745A mutation (C54) show similar ~50% reductions in microtubule-associated Pavarotti, supporting the model that phosphorylation regulates localization. The correlation with sliding data (C114) is consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C119"
+    ],
+    "result": "Trc-mediated phosphorylation of Pavarotti at S745 promotes interaction with 14-3-3 proteins. The S745A mutation abolishes 14-3-3 binding, while Trc co-expression increases the interaction by approximately 60%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C119 demonstrate the phosphorylation-dependent interaction through co-immunoprecipitation experiments. The S745A mutation eliminates binding (C60), establishing the requirement for this site, while Trc overexpression enhances binding by ~60% (C61). These data are consistent with the known function of 14-3-3 proteins as phospho-serine/threonine binding proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "14-3-3 proteins are required for Pavarotti to inhibit microtubule sliding and associate with microtubules. Pavarotti overexpression decreases sliding only when 14-3-3 is present, and 14-3-3 depletion reduces Pavarotti-microtubule association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 establish the requirement for 14-3-3 through loss-of-function experiments. Pavarotti overexpression cannot decrease sliding when 14-3-3 is depleted (C64), and 14-3-3 depletion reduces Pavarotti-microtubule association (C66). These data support a model where the Trc-phosphorylated Pavarotti-14-3-3 complex is the functional unit that inhibits sliding. Statistical significance is reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C73",
+      "C74",
+      "C83"
+    ],
+    "result": "Pavarotti and Trc regulate microtubule sliding in neurons through the same pathway. Depletion of either protein increases sliding approximately 2-fold, and double depletion has no additive effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C73-C74, and C83 demonstrate genetic epistasis in neurons through non-additive effects of double knockdown. Both single knockdowns increase sliding ~2-fold (C69), and the double knockdown shows similar effects (C73), indicating they function in a linear pathway rather than parallel pathways. This is consistent with all the biochemical data showing Trc phosphorylates Pavarotti.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C106"
+    ],
+    "result": "Trc and Pavarotti regulate dendrite outgrowth in vivo through a common pathway. Depletion of either protein increases dendrite length by approximately 40% in class IV DA neurons, with no additive effect when both are depleted simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 and C106 demonstrate that the Trc-Pavarotti pathway regulates dendrite development in vivo. Both single knockdowns increase dendrite length ~40% (C75), and double knockdown shows equivalent effects (C76), indicating a common pathway. This extends the in vitro findings to physiologically relevant neuronal development. Statistical significance is reported (p<0.0001-0.0006).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Trc regulates dendrite branching independently of Pavarotti. Trc depletion increases branch points by approximately 30%, but Pavarotti depletion has no effect on branching, and double depletion mimics Trc depletion alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 demonstrate a Pavarotti-independent function of Trc in regulating dendrite branching. The key observation is that Pavarotti depletion does not affect branching (C80), while Trc depletion does (C79), and the double depletion phenocopies Trc alone (C81). This indicates Trc has at least two separable functions in dendrite development. Statistical analysis is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C21",
+      "C22",
+      "C24",
+      "C85",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors establish a phosphorylation-dependent regulatory pathway where Trc phosphorylates Pavarotti at S745, promoting 14-3-3 binding and microtubule association, which inhibits microtubule sliding and controls neurite outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result integrates the major findings (C3-C6, C21-C22, C24, C85, C127-C128) into a coherent mechanistic model. The pathway is supported by multiple lines of evidence: biochemical (phosphorylation, protein-protein interactions), cell biological (localization, sliding assays), and in vivo (dendrite measurements). Each step is experimentally validated through loss-of-function, gain-of-function, and rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "This is the first report of Pavarotti regulating dendrite development in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 states this is a novel finding. The in vivo dendrite measurements (Figure 5C-D) provide clear evidence that Pavarotti regulates dendrite length. Previous work cited (C71-C72) showed roles in axons and mammalian systems, but this appears to be the first demonstration in Drosophila dendrites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The Trc-Pavarotti S745 phosphorylation pathway is conserved between humans and Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by the demonstration that Drosophila Pavarotti is phosphorylated at S745 (equivalent to human MKLP1 S710), extending previous in vitro work (C18) to show this occurs in vivo in neurons. The conservation of the phosphorylation site and the kinase-substrate relationship across species is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C57",
+      "C58",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The mechanism of Pavarotti regulation via phosphorylation-dependent 14-3-3 interaction is conserved from mitosis to interphase neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C57-C58, and C116-C118 establish that the 14-3-3-mediated regulation of Pavarotti/centralspindlin is conserved from mitosis (where it was previously described) to post-mitotic neurons. The citations to previous work (Douglas et al., 2010; Fesquet et al., 2015) support the mitotic mechanism, and the current data extend this to neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The role of 14-3-3 in promoting Pavarotti-microtubule association in S2 cells differs from previous in vitro data suggesting 14-3-3 prevents microtubule binding, potentially reflecting differential regulation between mitosis and interphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C125 acknowledge a discrepancy between the current findings (14-3-3 promotes Pavarotti-microtubule association) and previous in vitro data. The authors speculate (C123, C125) about differential regulation in mitosis versus interphase, but this remains unresolved. The speculation is reasonable but requires additional experiments to test directly. The observation itself (C124) is supported by the data, but the mechanistic explanation is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C27",
+      "C87"
+    ],
+    "result": "Background claims establishing that microtubule sliding drives neurite outgrowth in young neurons, is inhibited by Pavarotti, and decreases as neurons mature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C13, C27, and C87 represent established knowledge from previous work, primarily from the authors' own group. These are appropriately cited and provide the foundation for the current study. These are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C139",
+      "C140",
+      "C143",
+      "C144",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Background claims about centralspindlin complex function, Trc/NDR kinase roles, microtubule polarity, and regeneration, drawn from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C14-C19, C88-C95, C130-C137, C139-C140, C143-C144, C147-C149) represent established knowledge from the literature, appropriately cited. They provide context for interpreting the current findings but are not novel results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C115",
+      "C126",
+      "C129",
+      "C138",
+      "C141",
+      "C145",
+      "C146",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Speculative claims about advantages of phosphorylation-based regulation, potential roles in axon specification and regeneration, and future research directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C110, C115, C126, C129, C138, C141, C145-C146, and C150-C153 are explicitly speculative, representing hypotheses and future directions rather than tested conclusions. These are appropriately presented as speculation in the Discussion section. They are reasonable extrapolations from the data but require experimental validation.",
+    "result_type": "MINOR"
+  }
+]

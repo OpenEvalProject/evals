@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C65"
+    ],
+    "result": "Old GRU102 animals exhibit selective alterations in amino acid and TCA cycle metabolism, with reduced levels of acetylcarnitine (C2) and amino acid-derived acylcarnitines (C3), while fatty acid-derived acylcarnitines remain unchanged. Total amino acid levels are reduced, with a specific increase in the percentage of glucogenic amino acids forming alpha-ketoglutarate (aKG), and significant reductions in TCA cycle intermediates fumarate and malate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 and C65 are supported by metabolomics data shown in Figures 1A-E. The data demonstrate consistent patterns across multiple metabolite classes with appropriate statistical testing (Two-way ANOVA with multiple comparisons). The findings are replicated in independent trials (Figure 1\u2014figure supplement 1), strengthening the conclusions about selective metabolic alterations in GRU102.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Computational metabolic flux balance analysis (FBA) predicts altered alpha-ketoglutarate (aKG) metabolism in young GRU102, including a ~3-fold reduction in cytosolic aKG production from glutamate, a ~10-fold increase in cytosolic aKG production from 3-phosphohydroxypyruvate, and a reversal in the direction of flux in the alanine-pyruvate cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C37 are based on computational modeling (FBA) that integrates transcriptomic and metabolic data. While the modeling approach is described in detail, the predictions are computational inferences that require experimental validation. The manuscript does not provide direct experimental measurements of these specific flux changes, making the results uncertain despite the sophisticated modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C66",
+      "C67"
+    ],
+    "result": "Alpha-ketoglutarate dehydrogenase (aKGDH), a rate-limiting TCA cycle enzyme, shows significantly reduced activity in old but not young GRU102 compared to age-matched controls, providing a plausible explanation for reduced TCA cycle flux, ATP production, and maximum respiratory capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38, C66, and C67 are supported by enzymatic activity assay data (Figure 3B) showing significant reduction in aKGDH activity in old GRU102 (n=4-8 repeats). The claim that aKGDH is rate-limiting is supported by citation (C66). The inference that reduced aKGDH activity explains metabolic defects (C67) is reasonable given the enzyme's known role, though causality is not definitively established by these data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C68"
+    ],
+    "result": "RNAi knockdown of aKGDH in adult GRU101 controls recapitulates the metabolic defects observed in GRU102, including reduced basal and maximal respiration, delayed response to chemical uncoupler, and high correlation (r=0.98, p<0.001) in oxygen consumption rate profiles. Further aKGDH knockdown in GRU102 worsens metabolic flux without affecting lifespan, demonstrating that reduced aKGDH activity is detrimental to metabolic capacity in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 and C68 are well-supported by Seahorse metabolic flux data (Figure 3C-E) and lifespan data (Figure 3\u2014figure supplement 2). The experiments include appropriate controls (empty vector), sufficient replicates (n=6), and statistical analyses. The correlation analysis (C43) provides strong quantitative support. The conclusion that aKGDH reduction is detrimental (C68) is supported by the observation that knockdown worsens rather than improves metabolic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C70",
+      "C72"
+    ],
+    "result": "Young GRU102 animals show elevated mitochondrial protein carbonyls (mtPCC) but unchanged total protein carbonyl content (PCC), suggesting mitochondrial-specific reactive oxygen species (ROS) as a potential early cause of mitochondrial dysfunction. Site-specific oxidative modification to mitochondrial proteins is proposed as a possible mechanism for reduced aKGDH activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by protein carbonyl assay data (Figure 4A-B) showing significant elevation in mtPCC but not total PCC in young GRU102 (n=3-7 repeats). The inference that mitochondrial-specific ROS is an early cause (C70) is reasonable given the temporal data. However, C72 is explicitly stated as a hypothesis/speculation, and the manuscript acknowledges that direct evidence for site-specific oxidative modification of aKGDH is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C25",
+      "C61",
+      "C62",
+      "C74",
+      "C75",
+      "C89"
+    ],
+    "result": "Metabolic failure and mitochondrial dysfunction occur early in GRU102 (day 4), preceding the appearance of A\u03b2 aggregates and general protein aggregation (day 12). Young GRU102 show no difference in insoluble protein levels compared to controls, while aged GRU102 display significantly higher levels, suggesting that impairment of proteostasis is a late or secondary event to metabolic dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C24-C25, C61-C62, C74-C75, and C89 are supported by temporal analysis of multiple assays. The sequence of events is documented: early metabolic defects and mtPCC elevation (day 4, Figures 3B, 4B) precede protein aggregation (day 12, Figure 6C). The protein aggregation data are normalized to soluble protein to control for loading variability. The conclusion that metabolic failure is an early and central event (C89) is well-supported by the temporal data, though causality is inferred rather than definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C49",
+      "C50",
+      "C81",
+      "C82"
+    ],
+    "result": "Metformin treatment (50 mM) rescues the lifespan deficit of GRU102, normalizing median lifespan to that of untreated controls and even extending it beyond control levels. Metformin also strengthens stress defense, reducing mortality following Paraquat challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C8, C49-C50, C81-C82 are supported by lifespan assay data (Figure 5A, Supplementary file 3) and Paraquat stress resistance data (Figure 5B). The lifespan results are replicated in multiple independent trials (n=70-100 animals per condition) with appropriate statistical testing (log-rank test). The Paraquat challenge data show significant differences with Two-way ANOVA (n=4 repeats, 10-20 animals per repeat).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C83"
+    ],
+    "result": "Metformin treatment significantly increases maximal respiratory capacity of GRU102 (though still below untreated controls), increases abundance of multiple amino acids (particularly Alanine, Glycine, Proline, and Serine), reduces fat-derived C18:1-carnitine, decreases lactate levels, and increases pyruvate, fumarate, and malate levels, with malate reaching levels significantly higher than controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 and C83 are supported by Seahorse metabolic flux data (Figure 5C) and metabolomics data (Figures 5D-F). The experiments include appropriate replicates (n=6 for Seahorse, n=3 for metabolomics) and statistical testing. The results are confirmed in independent trials (Figure 5\u2014figure supplement 1). The data demonstrate that Metformin restores respiratory capacity and improves metabolite availability, though the manuscript acknowledges that respiratory capacity does not fully reach control levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C63"
+    ],
+    "result": "Metformin treatment appears to reduce protein aggregation in GRU102, with aggregate levels in Metformin-treated GRU102 appearing similar to controls and no longer statistically significantly different from GRU101 (One-way ANOVA, p=ns).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7 and C63 regarding Metformin's effect on protein aggregation are uncertain. While the manuscript shows a trend toward lower insoluble protein levels in Metformin-treated GRU102 (Figure 6C), the authors explicitly acknowledge that the reduction did not reach statistical significance, possibly due to variability in the gel-based method. The claim that the difference between GRU101 and Metformin-treated GRU102 is not significant (C63) is stated but does not constitute positive evidence of rescue. The authors appropriately note they could not conclusively show that Metformin reduces protein aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Sulfomethoxazole (SMX), which blocks folate synthesis, did not rescue the metabolic flux impairment or lifespan detriment of GRU102, suggesting that the beneficial effects of Metformin are unlikely to be mediated predominantly by inhibition of microbiome folate production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by experimental data shown in Figure 5\u2014figure supplement 4, which demonstrates that SMX treatment at multiple concentrations failed to rescue either metabolic flux or lifespan in GRU102. This negative control experiment strengthens the interpretation that Metformin's beneficial effects operate through mechanisms other than folate inhibition, addressing an alternative hypothesis from the literature (C58, C108).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Metformin treatment reverts the levels of Pyruvate, Histidine, Alanine, and Glutamine in old GRU102 back to levels observed in young GRU102, suggesting that Metformin reverses aging-related metabolic decline of these cluster 1 metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by metabolomics data analysis shown in Figure 5\u2014figure supplement 2C. The heatmap and PCA analysis identify a cluster of metabolites that show age-dependent decline and are rescued by Metformin treatment. The data include appropriate replicates (n=3, ~3000 animals per repeat) and statistical testing. This finding provides insight into the specific metabolic pathways affected by Metformin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "GRU102 is a transgenic C. elegans strain expressing human A\u03b21-42 under the pan-neuronal unc-119 promoter, while GRU101 is a transgenic control lacking the A\u03b2 transgene. GRU102 displays mild phenotypes including chemotaxis failure and age-dependent neuromuscular and behavioral defects. Young animals are defined as day 4 post-bleaching and old animals as day 12 post-bleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C91-C94 describe the experimental model and are supported by the methods section and previous publication (Fong et al., 2016). The strain descriptions are clear and the age definitions are explicitly stated. The phenotypic characterization of GRU102 (C23) is consistent with previous reports of similar C. elegans AD models cited in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The dose of Metformin used in this study (50 mM, equivalent to 8.25 g/L) is approximately five times higher than therapeutic concentrations in humans (up to 1.8 g/L), likely due to the low permeability of C. elegans cuticle to exogenous compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by comparison of experimental dose with reported human therapeutic concentrations (cited in C87) and citation to previous research on C. elegans drug delivery (C88). The authors appropriately acknowledge this limitation and provide a reasonable explanation based on known properties of the C. elegans cuticle. This is important context for translating findings to mammalian systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C45",
+      "C46",
+      "C56",
+      "C58",
+      "C64",
+      "C71",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C84",
+      "C85",
+      "C86",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The manuscript provides extensive background on Alzheimer's disease, mitochondrial dysfunction, oxidative stress, C. elegans as a model organism, and previous findings on metabolic interventions including Metformin and antioxidants. These claims establish the scientific context and rationale for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C22, C26-C27, C45-C46, C56, C58, C64, C71, C73, C76-C80, C84-C86, C95-C111 are background claims supported by appropriate citations to established literature. These claims provide context for the study but do not represent new findings. The citations appear appropriate and the characterizations of prior work are consistent with the cited sources. Claim C64 references the authors' own previous work, which is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C69",
+      "C75",
+      "C90"
+    ],
+    "result": "The manuscript concludes that metabolic dysfunction is an early and causative event in A\u03b2-induced pathology, that inactivation of specific TCA cycle enzymes may be a key mechanism of A\u03b2 toxicity, that proteostasis impairment is secondary to metabolic dysfunction, and that metabolic interventions may be beneficial for preventing or reducing AD pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C69, C75, and C90 represent the main conclusions of the study. These are supported by the temporal sequence of events documented in the manuscript (early metabolic defects preceding protein aggregation), the aKGDH knockdown experiments demonstrating sufficiency to recapitulate metabolic defects, and the beneficial effects of Metformin. However, the causative relationship (C9) and the therapeutic potential (C90) are inferences from the data rather than definitively proven. The authors appropriately acknowledge limitations and the need for additional work to confirm causal relationships (C84).",
+    "result_type": "MAJOR"
+  }
+]

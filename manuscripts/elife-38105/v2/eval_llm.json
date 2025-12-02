@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C113"
+    ],
+    "result": "The study uses the VGG-16 deep convolutional neural network as a model of the visual system. Early layers of VGG-16 best predict V1 activity, while late layers best predict activity in the lateral occipital area (LO). The network achieved 92.7% top-5 accuracy on ImageNet classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C113 establish the model architecture and its biological correspondence. The VGG-16 network is well-documented (C1), its layer-to-brain-area correspondence is supported by prior work (C2, C3), and its performance is reported (C113). These are foundational methodological claims that are appropriately cited and documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Tuning curves show higher correlation with gradient values than chance across all layers, but this correlation is relatively low (0.2 to 0.5) and increases with layer depth. Strong tuning values can be associated with weak or even negative gradient values, indicating that feature maps strongly preferring a category may not be involved in its classification or may even be inversely related to it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 describe the relationship between tuning and gradient values, supported by data in Figure 2. The correlation analysis includes appropriate shuffled controls (C4), quantitative values are provided (C5), and the interpretation that tuning doesn't predict classification impact is consistent with cited work (C10). The logical inference from negative gradients (C7-C9) is sound given the mathematical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Binary classifiers were trained for object detection tasks using merged and array images. Without attention, performance was 64.4% on merged images and 55.6% on array images (chance = 50%). Feature-based attention was implemented by multiplicatively and bi-directionally modulating feature map activity according to tuning values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 describe the experimental setup and attention implementation. Performance metrics are clearly stated and shown in Figure 1D (C11-C13). The attention implementation is mathematically defined (C14-C17) and described in the methods. The approach is internally consistent and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Attention enhances performance on both merged and array image tasks, with performance enhancement increasing as attention is applied at later layers. Attention at the final convolutional layer produces the largest improvements (18.8% for merged, 22.8% for array images). Attention applied at all layers simultaneously does not outperform attention at individual layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 present the main performance results, supported by data in Figure 3B and Figure 3\u2014figure supplement 1A. The layer-wise trend is clear and quantified (C19-C21). The finding that simultaneous multi-layer attention doesn't improve performance (C23) is important and well-documented. Statistical comparisons are provided for gradient vs. tuning performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Multiplicative and bidirectional effects work best for attention implementation compared to additive or positive-only variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by systematic comparison in Figure 3\u2014figure supplement 2, which tests four implementation variants. The comparison is methodologically sound and the conclusion is clearly supported by the data showing multiplicative bidirectional attention performs best.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Attention applied using gradient values shows the same layer-wise trend as tuning values and reaches the same performance peak at final layers. However, gradient-based attention outperforms tuning-based attention when applied at middle layers of the network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 compare gradient-based and tuning-based attention, supported by Figure 3B. The layer-wise trends are clearly shown, and statistical significance is reported for middle layers where gradients outperform tuning. This is a key finding that challenges the pure FSGM model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Attention at lower layers is less effective and produces somewhat random changes in true/false positive space. At later layers with moderate strength, true positives increase substantially with modest false positive increases. As attention strength continues to increase, false positives increase substantially, eventually decreasing overall performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe the strength-dependent effects of attention shown in Figure 4A. The trade-off between true and false positives is clearly demonstrated across layers and attention strengths. The interpretation is consistent with the data and provides mechanistic insight into attention's effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The model's performance changes with attention are broadly consistent with experimental observations in magnitude and pattern. Experimental neural modulations of ~7% in MT and ~3.6% in V4 correspond to model predictions, though some discrepancies suggest additional factors (correlations, other brain areas) may contribute to behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44 compare model predictions to experimental data from multiple studies (Figure 4B). The comparison is appropriately qualified (C41, C42, C44), acknowledging both consistencies and discrepancies. The quantitative alignment between neural modulation magnitudes and performance changes (C39-C40) is reasonable, though the authors appropriately note limitations. The comparison to threshold adjustment (C43) provides useful context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In the orientation detection task, binary classifiers performed above chance without attention (average 60.25% for most orientations, 92% for vertical). Applying attention at later layers leads to larger performance increases (14.4% at layer 10), despite orientation tuning quality peaking in middle layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 describe the orientation detection task results (Figure 5). The exclusion of vertical orientation (C46) is justified with a reasonable explanation (C48). The key finding that performance improvement doesn't track tuning quality (C49-C51) is well-supported and important for the paper's argument about gradient-based vs. tuning-based attention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the orientation detection task, the correlation between gradient and tuning values increases with layer. Gradient-based attention creates similar trends as tuning-based attention but performs significantly better in middle layers (p=1.9e-2 at layer 7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 extend the gradient vs. tuning comparison to the orientation task (Figure 5C-D). Statistical significance is properly reported (C54), and the pattern is consistent with the object detection results. This cross-task validation strengthens the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Both spatial and feature-based attention influence sensitivity and criteria. Feature-based attention decreases criteria more than spatial attention, while spatial attention increases sensitivity more, indicating it amplifies differences in feature representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 present signal detection theory analysis (Figure 5E). The differential effects on criteria vs. sensitivity are clearly shown and the interpretation (C58) is reasonable. This provides mechanistic insight into how different attention types affect performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The model's predictions about spatial and feature-based attention effects on sensitivity and criteria are consistent with experimental findings from multiple studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 compare model predictions to experimental literature. Multiple citations support the consistency between model and experimental findings. This validation strengthens the biological relevance of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Experimental observations show V4 neural activity differences for sensitivity but not criteria manipulations, indicating areas outside the ventral stream can impact criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 cite experimental findings (Luo and Maunsell, 2015) and draw appropriate inferences about the neural basis of criteria changes. This contextualizes the model's limitations and suggests areas for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "FSGM effects wear off as activity changes propagate through the network, indicating that activating units tuned for a stimulus at one layer doesn't necessarily activate similarly-tuned cells at the next layer. This misalignment explains why simultaneous multi-layer attention isn't more effective and can even be counterproductive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe propagation of attention effects (Figure 6C, Figure 6\u2014figure supplement 1). The observation that FSGM effects don't propagate well is well-documented and provides important mechanistic insight. The connection to multi-layer attention performance (C69) is logical and supported by earlier results (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "When attention is applied according to gradient values, effects at the application layer don't look like FSGM, but FSGM properties evolve as changes propagate, producing FSGM-like effects at the final layer. This suggests FSGM-like neural data could result from either FSGM effects at that area or non-FSGM effects at earlier areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe an important finding about gradient-based attention (Figure 6C). The observation that non-FSGM modulation can produce FSGM-like downstream effects is novel and well-supported. The inference about interpreting experimental data (C73) is appropriately cautious and insightful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Feature maps show feature matching behavior as early as one layer post-attention. FSGM effects can transform into feature matching effects during propagation, potentially explaining conflicting experimental findings. This mechanism could explain why feature matching is observed more in FEF than V4 and why match information is more easily read from perirhinal cortex than IT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 describe the emergence of feature matching behavior (Figure 6D). The data clearly shows this transition (C74), and the speculation about experimental conflicts (C75) is reasonable and appropriately qualified. The connection to specific experimental findings (C76-C77) is supported by citations and provides testable predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "A new vector-angle measure of activity changes inspired by gradient values correlates better with performance changes than the FSGM measure, particularly at earlier layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by Figure 6\u2014figure supplement 2, which includes bootstrap analysis showing significant differences. This provides an alternative, potentially more experimentally-feasible measure for assessing attention effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "A proposed experiment recording from the same neurons during both orientation-based color classification and orientation detection tasks could distinguish between tuning-based and gradient-based attention, as gradient-based attention predicts different modulations for the two tasks while FSGM predicts identical modulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 propose a specific experimental test (Figure 7C). The logic is sound: the two tasks have the same attentional cue but different objectives, so gradient-based attention should produce different modulations while tuning-based should not. This is a valuable, testable prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Neural modulations of the kind and magnitude observed experimentally lead to performance changes of the kind and magnitude observed experimentally. At earlier layers, tuning-based attention doesn't successfully propagate and has weaker impact than gradient-based attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are summary claims supported by the cumulative evidence from multiple experiments throughout the paper (Figures 3B, 4B, 6C). These represent the main conclusions and are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The findings raise the question of whether biological attention might be applied at least in part to optimize function rather than strictly according to tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is appropriately framed as a question raised by the findings rather than a definitive conclusion. Given the consistent finding that gradient-based attention outperforms tuning-based attention at earlier layers, this is a reasonable speculation that motivates future research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The manuscript establishes the biological and computational context for the study, including CNN capabilities and limitations, the feature similarity gain model, properties of feature-based attention, and the correspondence between CNN layers and visual areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C99 provide background knowledge and context, all appropriately cited. These establish the foundation for the study and are well-supported by the literature. The acknowledgment of CNN limitations (C99) is important for contextualizing the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Attention is most effective at later layers (9-13) corresponding to V4 and LO, areas known for reliable attentional effects. Category-specific preparatory activity in object-selective cortex correlates with performance while V1 activity is anti-correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 connect model findings to biological observations. The correspondence between effective attention layers and known attention-responsive brain areas (C100-C101) is well-cited. The experimental findings about preparatory activity (C102-C103) provide additional biological validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Experimental evidence suggests factors beyond tuning influence attentional modulation, including a correlation between tuning and modulation of only 0.52 in V4 and a correlation between normalization and attentional modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 cite experimental findings that support the paper's argument that tuning alone doesn't determine attentional effects. These provide important biological context for the model's findings about gradient-based attention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors speculate that the visual system could plausibly learn connections for gradient-based attention through mechanisms like anti-Hebbian spike-timing-dependent plasticity, and that this may be more plausible than learning connections for pure tuning-based attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C108 are explicitly speculative about biological implementation mechanisms. While the speculation is reasonable and grounded in known plasticity mechanisms (C107), there is no direct evidence provided. The comparison of plausibility (C108) is subjective. These are appropriately framed as speculation rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "CNNs lack many biological details (recurrent connections, dynamics, cell types, noisy responses), but preliminary work shows these elements can be incorporated and attention can enhance performance in more biologically-realistic architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 acknowledge model limitations (C109) and cite preliminary work addressing them (C110). This appropriately contextualizes the current work's scope and limitations while pointing to future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Experimental evidence on the relationship between tuning and causal impact on perception is mixed, with coarse stimulation showing relationships but choice probability studies suggesting tuning doesn't always indicate causal role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 cite experimental literature showing mixed evidence about tuning-function relationships. This provides important context for the model's findings and is appropriately nuanced in acknowledging conflicting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Test images were created by merging two images transparently or arranging four images in a 2\u00d72 grid. Test sets were balanced with 50% containing the target category and 150 total images per category.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 describe the experimental stimuli and are clearly documented in the methods and Figure 1C. The balanced design is appropriate for the binary classification task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Feature-based attention intuitively shifts representations toward the attended category, lowering detection threshold. During change detection, feature-based attention is deployed to pre-change features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 provides intuitive explanation consistent with the model's mechanism. Claim C118 cites experimental findings that inform the interpretation of the macaque change detection comparison. Both are appropriately supported.",
+    "result_type": "MINOR"
+  }
+]

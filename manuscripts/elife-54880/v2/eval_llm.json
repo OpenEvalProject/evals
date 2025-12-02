@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript reviews the established model of heat shock response regulation in eukaryotes, where Hsf1 is repressed by Hsp70 under normal conditions and activated by misfolded newly synthesized polypeptides during heat stress, with ongoing translation previously deemed necessary for Hsf1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 accurately summarize well-established prior knowledge in the field, supported by appropriate citations. These claims provide the necessary background context for understanding the novelty of the current work. The authors correctly note the absence of specific endogenous proteins demonstrated to misfold during sublethal heat shock (C13), which motivates their investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C73",
+      "C107"
+    ],
+    "result": "The authors discover that Hsf1 can be robustly activated when protein synthesis is inhibited, provided cells undergo cytosolic acidification. When translation is blocked (by glucose withdrawal or cycloheximide) and acidification is prevented, the heat shock response is almost completely suppressed, but when acidification is allowed, cells respond robustly regardless of translation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C30-C36 are well-supported by multiple experimental approaches shown in Figures 2D, 2E, and related data. The authors use both glucose withdrawal (physiological) and cycloheximide (pharmacological) to inhibit translation, and manipulate pH through media buffering. The convergent results from multiple methods strengthen the conclusion. Controls for translation inhibition (Figure 2B) and nutrient effects (maltose experiments, Figure 2\u2014figure supplement 1) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Heat shock causes transient intracellular acidification in yeast, with cells rapidly acidifying from pH ~7.5 to pH 6.8-7.0 during 42\u00b0C stress in acidic media, then restoring resting pH within approximately 10 minutes after return to 30\u00b0C. This acidification is conserved across eukaryotes and results from increased membrane permeability to extracellular protons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17-C18, C24-C28 are supported by direct measurements using pHluorin (Figure 1B, Figure 1\u2014figure supplement 1C) and extensive citations to prior work. The calibration of pHluorin is described (Figure 1\u2014figure supplement 1A-B) with appropriate controls. The claim about membrane permeability (C26) is supported by citations but not directly tested in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45"
+    ],
+    "result": "RNA-seq analysis reveals that when translation is inhibited during heat shock, the Hsf1 regulon shows remarkable pH sensitivity, with reduced induction when acidification is blocked. In contrast, the Msn2/4 regulon induces robustly independent of pH and translation status, demonstrating specificity of the pH effect to Hsf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42, C45 are supported by comprehensive RNA-seq data (Figure 3A-E). The authors appropriately use biological replicates (Figure 3\u2014figure supplement 1A shows correlation), include mock-treated controls, and analyze multiple translation inhibition methods (cycloheximide and glucose withdrawal). The specificity to Hsf1 is demonstrated by comparing multiple transcription factor regulons (Figure 3D-E). Statistical analysis appears appropriate for RNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The Ifh1 regulon shows pH-sensitive repression only when cells are translationally active, contrasting with Hsf1's pH sensitivity during translational inhibition. This pH sensitivity depends on ribosomal protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by RNA-seq data (Figure 3E) and a citation to prior work on Ifh1 regulation. This finding demonstrates that pH effects on transcription are not universal but factor-specific, strengthening the specificity of the Hsf1 result. The mechanistic claim about ribosomal protein synthesis (C44) relies on a citation rather than direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C82"
+    ],
+    "result": "Using the ionophore nigericin, the authors can accurately manipulate intracellular pH independent of temperature without long-term fitness consequences. Acidification alone (without heat shock) at physiological pH levels is insufficient to activate Hsf1, ruling out direct pH sensing by Hsf1 or Hsp70.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C51, C82 are supported by appropriate controls and validation experiments. Figure 4B demonstrates accurate pH manipulation at different temperatures. Figure 4\u2014figure supplement 1C shows minimal fitness effects of ionophore treatment alone. Figure 4\u2014figure supplement 1D demonstrates that acidification without heat shock does not induce the response at physiological pH levels. These controls are essential for interpreting subsequent pH manipulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Cells heat shocked without acidification can still induce Ssa4 if allowed to recover in acidic media, though with a substantial pH-dependent delay. This suggests acidification can occur after heat shock and still enable the response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by data in Figures 4C-E. The experiments are well-controlled, comparing recovery in acidic versus buffered media. The observation of delayed but eventual induction is important for understanding the temporal requirements of acidification. However, the mechanism underlying this delayed response could benefit from further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C80"
+    ],
+    "result": "Single-cell analysis reveals that cells must restore resting pH before producing high levels of molecular chaperones. Cells stressed at pH values above 7.0 take longer to restore resting pH and show delayed/reduced Ssa4 induction. Within bimodal populations, low-expressing cells have distinctly acid-shifted pH compared to high-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60, C80 are supported by extensive single-cell flow cytometry data (Figure 5). The correlation between pH restoration and chaperone production is demonstrated at both population and single-cell levels. The bimodal distribution analysis (Figure 5F-G) using mixture modeling is appropriate and provides strong evidence for the pH-chaperone relationship. The large sample sizes (>5000 cells per condition) provide statistical power. This is a surprising and important mechanistic detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Population fitness during recovery, measured by competitive growth assays, depends strongly on intracellular pH during heat shock. Maximum fitness is achieved at pH ~6.8 (physiological stress-induced levels), with largest fitness defects at pH ~7.5 (pre-stress levels). Ionophore treatment alone has minimal pH-independent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by competitive growth assay data (Figure 6B). The experimental design is appropriate, using wild-type competitors and including proper controls for ionophore effects and strain differences (Figure 6\u2014figure supplement 1). Multiple biological replicates are shown. The conclusion that physiological acidification is adaptive (C66) is well-supported by the fitness data showing optimal growth at pH ~6.8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Single-cell analysis of cell cycle progression shows that budded cells (indicating cell cycle reentry) almost exclusively show high chaperone expression, while unbudded cells with low chaperone expression show reduced pH. Cells experiencing non-physiological pH during heat shock show delayed budding peaks. Fitness correlates with both chaperone production and pH restoration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by flow cytometry analysis of cell morphology (Figure 6C-F) with appropriate validation by microscopy and DNA content analysis (Figure 6\u2014figure supplement 1A-C). The correlation between budding, chaperone expression, and pH is demonstrated at the single-cell level. The classification method using forward scatter pulse width is validated. This provides strong evidence linking pH, chaperone production, and fitness through cell cycle progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C83",
+      "C99",
+      "C106",
+      "C122"
+    ],
+    "result": "The authors conclude that the canonical Hsf1-mediated transcriptional stress response depends on cellular acidification, with acidification promoting induction even in translationally active cells and becoming required when translation is suppressed. Transient acidification is an adaptive component of the heat shock response, with restoration of resting pH and chaperone expression increasing fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C74-C76, C83, C99, C106, C122 represent the main conclusions of the study, which are well-supported by the convergent evidence from multiple experimental approaches: pH manipulation, translation inhibition, RNA-seq, single-cell analysis, and fitness measurements. The conclusion that acidification is adaptive (C76, C122) is supported by the fitness data. The claim that temperature alone is insufficient (C99, C106) is supported by the ionophore experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors conclude that extracellular protons entering the cell are the dominant cause of acidification during heat shock, as buffering extracellular pH to resting levels prevents acidification and suppresses the response in translationally inactive cells. Membrane proton permeability increases with temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by experiments showing that buffering extracellular pH prevents intracellular acidification and response (Figure 2A, 2D). The logic is sound: if intracellular stores were the source, buffering external pH should not prevent acidification. Claim C79 is supported by citations to prior work rather than direct measurement in this study. The conclusion is reasonable but could be strengthened by additional experiments (e.g., measuring proton flux).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors hypothesize that pH- and temperature-dependent condensing proteins (such as Pab1, Pub1, Ded1) are the cause of Hsf1 pH-dependence when translation is silenced. They predict these proteins activate Hsf1 by recruiting Hsp70 in the condensed state, and that many such proteins exist. This is based on prior observations that ~200 proteins form reversible condensates during heat shock and that specific proteins show pH-dependent phase separation in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C96, C102-C104 represent hypotheses and predictions for future work rather than tested results. While the hypothesis is well-motivated by prior literature (citations to Wallace et al., 2015; Riback et al., 2017; Kroschwald et al., 2018; Iserman et al., 2020), it is not directly tested in this manuscript. The authors appropriately frame these as hypotheses to be tested. The logic connecting pH-dependent condensation to Hsf1 activation is plausible but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C105"
+    ],
+    "result": "The manuscript reviews prior work on stress-induced acidification, showing it is cytoprotective and affects protein condensation, and discusses previous studies on Hsf1 activation mechanisms, temperature sensing, and the role of phase transitions in cellular responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23, C81, C84-C86, C97-C98, C100-C101, C105 accurately summarize prior work with appropriate citations. These claims provide important context for interpreting the current results. The authors correctly note limitations in prior work (e.g., C98: Hsf1 thermosensing not demonstrated in vivo) and gaps in knowledge (e.g., C13, C85: no specific endogenous proteins shown to misfold).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors propose that ingestion and dispersal by birds represents an ecologically relevant heat shock condition for S. cerevisiae, based on evidence that yeast are found in bird digestive tracts, survive passage, and that bird body temperatures (41-44\u00b0C) match the upper bound of nonlethal temperatures for yeast. Yeast ecological niches (fruit surfaces) overlap with bird feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C118 are supported by appropriate citations to ecological and physiological studies. The argument is logical and well-constructed, connecting multiple lines of evidence (yeast ecology, bird physiology, dispersal mechanisms). However, this remains a hypothesis about the evolutionary context rather than a directly tested result. The proposal is plausible and provides interesting context for why the heat shock response might be tuned to specific pH conditions, but does not affect the validity of the molecular findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors note that in humans, fever triggers the Hsf1-mediated heat shock response, and that human neutrophil responses to fever temperatures are pH-dependent, with acidification promoting survival and neutrophil activation during inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by citations to prior work. These claims provide context for the potential broader relevance of the findings beyond yeast. The authors appropriately use these examples to suggest that pH-dependent regulation of stress responses may be conserved, though this is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Ssa4 is identified as a strongly temperature-responsive Hsp70 chaperone and specific Hsf1 target, used as a reporter for heat shock response activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by citations to prior work characterizing Ssa4. The choice of Ssa4 as a reporter is well-justified and validated by the RNA-seq data showing it is among the most highly induced genes. The use of both mCherry fusion protein and mRNA measurements provides complementary readouts.",
+    "result_type": "MINOR"
+  }
+]

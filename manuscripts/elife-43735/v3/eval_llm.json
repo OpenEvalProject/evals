@@ -1,0 +1,405 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C128"
+    ],
+    "result": "Calcium signals in ORN axon terminals, measured using both cytosolic (GCaMP3) and presynaptically-targeted (Syp-GCaMP3) calcium sensors, are sustained over 2 minutes of odor stimulation and do not show the same adaptive properties as firing rates measured at the antenna.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C22-C24, and C128 are supported by direct experimental comparisons shown in Figures 1-3. The data demonstrate that cytosolic and synaptic calcium sensors report similar sustained dynamics in ORN terminals, which differ from both PN calcium signals and previously reported ORN firing rate adaptation. The use of two different calcium sensors (C22) strengthens the conclusion that this represents genuine calcium dynamics rather than sensor artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C58",
+      "C59",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PN calcium responses adapt on slow timescales (3-40 seconds) with exponential decay to approximately 50% of initial response, while ORN responses remain sustained with near-zero adaptation across multiple glomeruli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C55, C58-C59, C63-C66 are well-supported by systematic measurements across 10 glomeruli shown in Figure 4. The exponential fitting approach is appropriate, sample sizes are adequate (n=5-11), and the contrast between ORN and PN adaptation is statistically significant (p<0.001). The timescale measurements are glomerulus-dependent but consistently show PN adaptation versus ORN sustained responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ORN firing rates adapt to odor backgrounds following Weber-Fechner law, but presynaptic calcium responses remain constant or slightly increase, except when test pulses are lower than background concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 are supported by direct paired comparisons of electrophysiology and calcium imaging in Figure 3 (n=6-13). The dissociation between firing rate and calcium is demonstrated across multiple concentrations with appropriate statistical tests (paired t-tests, p<0.001-0.05). The asymmetry for increases versus decreases in concentration (C50) is clearly shown. However, the mechanistic explanation for this dissociation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Slow PN adaptation is mediated by slow presynaptic depression of vesicle release, as demonstrated by Syp-pHTomato measurements showing biphasic filters with slow negative components (~10s timescale) that correlate with PN calcium decay timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C85-C91 are supported by Syp-pHTomato measurements in Figure 6 showing biphasic linear filters with slow negative components. The correlation between Syp-pHTomato slow timescales and PN calcium decay timescales (C90, Figure 6H, R=0.55, p=0.03) provides key evidence. Model selection using BIC appropriately identifies double exponential fits. However, the sample size for Syp-pHTomato is limited to 5 glomeruli due to weaker baseline fluorescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C117",
+      "C127",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Slow presynaptic depression enables PN populations to adjust to stimulus mean and variance through multiplicative rescaling that preserves odor identity while adjusting response gain over a larger concentration range than ORNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C117, C127, C172-C174 are supported by PCA analysis in Figures 8-9 showing that PN adaptation results in linear scaling of population activity that preserves stimulus identity. The coefficient of variation analysis (C126-C127, Figure 9D) demonstrates that PNs maintain constant CV across concentrations while ORNs show declining CV. The functional interpretation is well-supported by the data, though it remains an inference about computational benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36"
+    ],
+    "result": "ORN calcium responses can be modeled by monophasic linear filters with timescales of 300ms-1s (GCaMP3) or ~100ms (GCaMP6f), while PN responses show biphasic filters indicating adaptation. Deconvolution reveals faster dynamics but preserves sustained long-timescale responses in ORNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33, C35-C36 are supported by linear-nonlinear modeling in Figure 2. The comparison of GCaMP3 and GCaMP6f (C30) appropriately addresses sensor kinetics limitations. Deconvolution analysis (C32-C33) is methodologically sound and shows that fast transients are sensor-limited while slow sustained responses are genuine. The inference that real calcium dynamics are faster than sensor kinetics (C31) is reasonable but remains an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ORN calcium responses show decreased gain at higher concentrations due to front-end receptor non-linearity rather than adaptation. When accounting for this non-linearity using an NLN model, response gain shows minimal dependence on stimulus mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C40-C43 are supported by systematic modeling across 6 concentrations in Figure 2. The NLN model incorporating Hill function front-end non-linearity (C40, Figure 2H,J) successfully accounts for concentration-dependent gain changes. The conclusion that little stimulus-driven adaptation occurs when accounting for receptor non-linearity (C43) is well-supported, though it represents a model-dependent inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C81"
+    ],
+    "result": "GABA-A and GABA-B receptor-mediated lateral inhibition affects initial response amplitudes but does not significantly contribute to the slow adaptation timescales observed in PNs, as demonstrated by pharmacological manipulations and RNAi experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70, C72-C75, C81 are supported by systematic pharmacological experiments in Figure 5. PTX application (C67-C70) and GABA-B receptor manipulations (C72-C75) show effects on response amplitude but not on adaptation degree or timescale. Sample sizes are adequate (n=5-10) with appropriate statistical tests. The conclusion that lateral inhibition is not the main mechanism (C81) is well-supported, though the complex effects of tonic GABA-B activation (C77-C80) suggest more nuanced roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "ORN calcium responses across glomeruli are sustained and can be fitted by monophasic filters with timescales of 300ms-1s that are glomerulus-specific and concentration-independent, with differences preserved after sensor deconvolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 are supported by systematic analysis across 10 glomeruli at 4 concentrations in Figure 7. Two-way ANOVA (C99, p<10^-6) appropriately demonstrates glomerulus-dependence over concentration-dependence. Sample sizes are adequate (n=4-11 per glomerulus). The robustness to deconvolution (C94) validates that differences reflect genuine biological variation. The caveat that timescales are upper bounds due to sensor kinetics (C100) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C111"
+    ],
+    "result": "PN calcium responses can be modeled by LN models with concentration-dependent filter shapes that shift from biphasic at intermediate concentrations to monophasic at low and high concentrations, indicating complex concentration-dependent dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103, C105-C107, C111 are supported by systematic modeling in Figure 7. The concentration-dependence of filter shape is demonstrated across multiple glomeruli and validated after sensor deconvolution (C106). Statistical analysis (C107, Kruskal-Wallis test, p<0.02) appropriately identifies amplitude-dependence of filter shape. The interpretation involves some speculation about underlying mechanisms (C108-C110), but the descriptive findings are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Combinatorial ORN responses are stationary over 2 minutes while PN responses change over time through proportional scaling that results in multiplicative rescaling of the ORN-to-PN transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 are supported by PCA analysis in Figure 8 showing stable ORN population responses versus time-varying PN responses. The linear scaling relationship (C116, Figure 8C) is clearly demonstrated for both methyl acetate and benzaldehyde. The analysis appropriately uses population-level measurements and the interpretation of multiplicative rescaling is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C126"
+    ],
+    "result": "As odor concentration increases, ORN responses saturate and dynamic range shifts along a single dimension, while PN responses maintain wider dynamic range that stretches with concentration. ORN coefficient of variation drops from 0.45 to 0.15 while PN CV remains constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123, C126 are supported by systematic analysis across concentrations in Figure 9. The PCA analysis clearly shows different scaling properties for ORNs versus PNs (C122-C123). The CV analysis (C126) provides quantitative support for maintained variance encoding in PNs. The expected CV calculation (C125) based on integration time provides appropriate theoretical context. Results are replicated with two odorants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C132",
+      "C133"
+    ],
+    "result": "Slow PN adaptation occurs even at low concentrations activating single glomeruli and is not altered by GABA receptor blockade, suggesting the mechanism is intrinsic to individual glomeruli rather than requiring cross-glomerular computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C132-C133 are supported by experiments in Figures 4-5 showing adaptation at low concentrations and persistence after GABA blockade. The inference that the mechanism is intrinsic to single glomeruli (C83) is reasonable given the data, though it remains an inference. Alternative explanations involving local circuit mechanisms within single glomeruli are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C100"
+    ],
+    "result": "Deconvolution of calcium sensor kinetics preserves cell-specific and stimulus-specific differences, though measured timescales should be considered upper bounds of real calcium dynamics due to sensor limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C100 represent methodological considerations appropriately acknowledged by the authors. The assumption of similar sensor kinetics across cell types (C34) is reasonable and validated by the preservation of differences after deconvolution (Figure 7B). The caveat about timescales being upper bounds (C100) is an appropriate limitation. These are important methodological points but represent caveats rather than primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Tonic GABA-B receptor activation with SKF97541 decreases ORN responses to isolated pulses but causes complex effects during fluctuating stimuli, with ORN responses increasing over time while PN responses decrease, suggesting activity-dependent tuning of lateral inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by experiments in Figure 5H,J showing differential effects of GABA-B agonist on isolated versus fluctuating stimuli. The complex dynamics (C78-C79) are clearly demonstrated. The interpretation of activity-dependent network tuning (C80) is reasonable and supported by citation to Nagel et al. 2015. However, the mechanistic understanding remains incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Postsynaptic calcium in PNs measured with dHomer-GCaMP shows dynamics similar to cytosolic calcium reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by direct comparison in Figure 6A. This validates that cytosolic calcium measurements in PNs reflect postsynaptic activity. This is a methodological validation rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "On short timescales (~100ms), calcium dynamics are affected by sensor kinetics, but direct comparison of firing rate and calcium responses to isolated pulses shows striking correspondence suggesting similar sensor working range in different cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 are supported by deconvolution analysis (Figure 2) and direct firing rate-calcium comparisons (Figure 3H). The correspondence between firing rate and calcium dose-response curves (C130) validates the use of calcium imaging for relative comparisons. This is an important methodological validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "PN activity recovers from slow adaptation within one minute, indicating this is a different phenomenon from previously described long-lasting habituation in locusts and flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by recovery experiments in Figure 4\u2014figure supplement 1 showing no difference in response to pulses before versus after 2-minute stimulation. The distinction from previously described habituation is appropriately made based on recovery timescale. Sample size is adequate (n=6).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C25",
+      "C38",
+      "C39",
+      "C44",
+      "C45",
+      "C56",
+      "C57",
+      "C71",
+      "C101",
+      "C131",
+      "C135",
+      "C136",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C166",
+      "C168",
+      "C175"
+    ],
+    "result": "Background knowledge claims about olfactory system organization, adaptation mechanisms in various systems, and established properties of Drosophila olfactory circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6-C21, C25, C38-C39, C44-C45, C56-C57, C71, C101, C131, C135-C136, C140-C144, C149-C155, C159-C162, C166, C168, C175) represent established knowledge appropriately cited from the literature. They provide necessary context but are not novel findings of this study. The citations appear appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C134",
+      "C145",
+      "C147",
+      "C148",
+      "C158",
+      "C163",
+      "C164",
+      "C165",
+      "C167",
+      "C169",
+      "C170",
+      "C171",
+      "C176"
+    ],
+    "result": "Speculative interpretations and acknowledged uncertainties about mechanisms underlying observed phenomena, including possible roles of voltage-gated calcium channels, postsynaptic mechanisms, and functional implications for behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C108-C110, C134, C145, C147-C148, C158, C163-C165, C167, C169-C171, C176) represent speculative interpretations or acknowledged uncertainties. While some are reasonable inferences from the data (e.g., C164-C165 about complementary mechanisms), others are explicitly speculative (e.g., C134 about calcium channel regulation, C148 about postsynaptic contributions). The authors appropriately acknowledge these as uncertain or requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C156",
+      "C157"
+    ],
+    "result": "Summary claims that slow and fast synaptic dynamics at ORN-PN synapses enable PNs to maintain neural representation of stimulus identity and statistics, with both fast and slow adaptation attributable to presynaptic depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139, C156-C157 represent high-level summaries of the main findings. They are well-supported by the collective evidence from Figures 2-9, particularly the vesicle release measurements (Figure 6) and population coding analysis (Figures 8-9). These integrate multiple lines of evidence into coherent conclusions about synaptic mechanisms and their functional consequences.",
+    "result_type": "MAJOR"
+  }
+]

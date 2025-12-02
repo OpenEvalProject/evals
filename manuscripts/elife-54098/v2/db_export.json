@@ -1,0 +1,1925 @@
+{
+  "submission": {
+    "id": "c53011d8-07c1-4e4f-9d4c-be22f71eb767",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:28:33.781672Z",
+    "updated_at": "2025-12-02T15:28:33.781672Z"
+  },
+  "content": [
+    {
+      "id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "submission_id": "c53011d8-07c1-4e4f-9d4c-be22f71eb767",
+      "content_type": "manuscript",
+      "content_text": "# Human RPA activates BLM\u2019s bidirectional DNA unwinding from a nick\n\n## Authors\n\n- Zhenheng Qin<sup>1</sup>\n- Lulu Bi<sup>1</sup>\n- Xi-Miao Hou<sup>4</sup>\n- Siqi Zhang<sup>1</sup>\n- Xia Zhang<sup>1</sup>\n- Ying Lu<sup>5</sup>\n- Ming Li<sup>3</sup>\n- Mauro Modesti<sup>6</sup> ([ORCID: 0000-0002-4964-331X](https://orcid.org/0000-0002-4964-331X))\n- Xu-Guang Xi<sup>7</sup> \u2020\n- Bo Sun<sup>1</sup> ([ORCID: 0000-0002-4590-7795](https://orcid.org/0000-0002-4590-7795)) \u2020\n\n### Affiliations\n\n1. School of Life Science and Technology, ShanghaiTech University Shanghai China\n2. Shanghai Institute of Biochemistry and Cell Biology, Chinese Academy of Sciences Shanghai China\n3. University of Chinese Academy of Sciences Beijing China\n4. College of Life Sciences, Northwest A&F University Yangling China\n5. Institute of Physics, Chinese Academy of Sciences Beijing China\n6. Cancer Research Center of Marseille, CNRS UMR7258, Inserm U1068, Institut Paoli-Calmettes, Aix-Marseille Universit\u00e9 Marseille France\n7. The LBPA, Ecole Normale Sup\u00e9rieure Paris-Saclay, CNRS, Universit\u00e9 Paris Saclay Gif-sur-Yvette France\n\n\u2020 Corresponding author\n\n## Abstract\n\nBLM is a multifunctional helicase that plays critical roles in maintaining genome stability. It processes distinct DNA substrates, but not nicked DNA, during many steps in DNA replication and repair. However, how BLM prepares itself for diverse functions remains elusive. Here, using a combined single-molecule approach, we find that a high abundance of BLMs can indeed unidirectionally unwind dsDNA from a nick when an external destabilizing force is applied. Strikingly, human replication protein A (hRPA) not only ensures that limited quantities of BLMs processively unwind nicked dsDNA under a reduced force but also permits the translocation of BLMs on both intact and nicked ssDNAs, resulting in a bidirectional unwinding mode. This activation necessitates BLM targeting on the nick and the presence of free hRPAs in solution whereas direct interactions between them are dispensable. Our findings present novel DNA unwinding activities of BLM that potentially facilitate its function switching in DNA repair.\n\n## Introduction\n\nDNA helicases are ubiquitous motor proteins that couple the hydrolysis of nucleoside triphosphates (NTPs) to the unwinding of double-stranded DNA (dsDNA), providing the single-stranded DNA (ssDNA) required for many biological processes, including DNA replication, repair and recombination (Singleton et al., 2007). Among these DNA helicases, the RecQ family helicases have been highly conserved during evolution from prokaryotes to humans and play critical roles in genome maintenance and stability (Bernstein et al., 2010; Croteau et al., 2014). Defects in three of the five human RecQ members (BLM, WRN and RECQ4) give rise to distinct heritable human disease syndromes (Bloom\u2019s, Werner\u2019s and Rothmund-Thomson syndromes, respectively), characterized by genomic instability and an increased incidence of cancers (Ellis et al., 1995; Kitao et al., 1999; Yu et al., 1996). These genetic linkages underscore the importance of the RecQ family helicases in cellular homeostasis. Thus, an in-depth understanding of their unwinding mechanisms at the molecular level may inform potential therapeutic strategies.\n\nBloom syndrome protein (BLM) is one of the five RecQ family helicases that unwind DNA in a 3\u2019\u22125\u2019 direction (Croteau et al., 2014; Karow et al., 1997). It is involved in many aspects of genome maintenance, including DNA end resection (Kowalczykowski, 2015), displacement-loop (D-loop) processing (Bugreev et al., 2007), rescuing stalled or collapsed replication forks (Davies et al., 2007), and resolution of Holliday junction (Bizard and Hickson, 2014). BLM\u2019s diverse functions are realized by its remarkable unwinding capabilities of many unique DNA structures, such as G-quadruplex (Chatterjee et al., 2014). In particular, BLM has been verified to participate in many steps in repairing DNA double-strand breaks (DSBs) via homologous recombination (HR) (Nimonkar et al., 2011; Nimonkar et al., 2008; Sturzenegger et al., 2014; Woglar and Villeneuve, 2018). It has been demonstrated to be recruited to the DSB ends and facilitate resection of the 5\u2019 termini to generate 3\u2019 end protruding ssDNAs in the first step of HR (Gravel et al., 2008). BLM either unwinds dsDNA to provide ssDNA for exonuclease resection by EXO1 or DNA2 or directly stimulates their nucleolytic activities (Nimonkar et al., 2008; Sturzenegger et al., 2014). Paradoxically, even though BLM is distinctive in preferentially unwinding unique substrates (Mohaghegh et al., 2001), an in vitro ensemble study has demonstrated that this helicase alone is unable to initiate dsDNA unwinding from a nick which is a prevalent and essential DNA intermediate during HR (Maizels and Davis, 2018; Mohaghegh et al., 2001). These contradictory findings may be reconciled by BLM\u2019s varying unwinding activities, which are often regulated by other in vivo factors (Croteau et al., 2014).\n\nIt has been widely appreciated that the BLM helicase interacts and collaborates with many protein partners to aid in cellular responses to replication stress and DNA damage in vivo (Croteau et al., 2014). These interactions and collaborations dictate BLM\u2019s specialized functions in genome maintenance. A key partner of BLM is the single-stranded DNA-binding (SSB) protein, replication protein A (RPA), a heterotrimeric protein complex consisting of the RPA70, RPA32 and RPA14 subunits, which is also essential in DNA repair and recombination (Fanning et al., 2006; Wold, 1997). A recent in vivo study directly demonstrated that RPA co-localizes with BLM at the foci of DNA damage, suggesting that these two proteins coordinate and function together in DNA repair (Woglar and Villeneuve, 2018). In addition, biochemical, structural and single-molecule studies have revealed that RPA not only physically interacts with BLM but also stimulates its unwinding activity by increasing its processivity or improving its unwinding initiation (Brosh et al., 2000; Doherty et al., 2005; Soniat et al., 2019). The poor ability of a heterologous SSB protein to stimulate BLM\u2019s unwinding further suggests that this stimulation is specific (Brosh et al., 2000). These findings, coupled with the inability of BLM alone to unwind a nicked DNA in vitro, suggest that RPA might also promote BLM in unwinding nicked dsDNA to facilitate efficient end resection in HR. A thorough understanding of how BLM-mediated DNA unwinding is regulated by RPA would advance our knowledge in its diverse roles and functions in genome maintenance.\n\nIn this study, by combining optical tweezers with confocal fluorescence microscopy, we examined BLM unwinding activities under various conditions at the single-molecule level. We found that, in the absence of hRPA, BLM at high concentrations can unwind dsDNA from a nick unidirectionally with a requirement of an external destabilizing force on the DNA template. Surprisingly, the presence of hRPA permits BLM\u2019s unwinding in two opposite directions from a nick at low and zero forces. This stimulation demands free hRPAs in solution, suggesting that the coating of hRPA on the newly generated ssDNA is essential for enhancing BLM unwinding activity. These findings reveal a distinct SSB-enabled helicase unwinding mode that might facilitate the generation of the 3\u2019 ssDNA tail in HR. Additionally, this study demonstrates various DNA unwinding activities by BLM that are regulated by tension on DNA, the concentration of BLM, and the presence of RPA, which provide a molecular insight into how BLM realizes its diverse biological functions.\n\n## Results\n\n### Force assists BLM\u2019s unidirectional unwinding from a nick\n\nWe combined dual-optical traps with confocal microscopy to monitor unwinding of a single DNA molecule by wild type (WT) Gallus gallus BLM (gBLM). gBLM (hereafter referred to as BLM) has two similar RPA binding domains to the human BLM (hBLM) and the sequence of its helicase-core domain (core-gBLM) has an 80% identity with the one from hBLM. Figure 1A shows a schematic of our experimental configuration in which a \u03bb phage DNA molecule is suspended between one fixed trap and one steered trap via two streptavidin-coated microspheres, while a confocal laser repeatedly scanned along the plane of the DNA template (Figure 1A). A high-frequency feedback system on the steered trap was employed to ensure the force on the DNA template remained constant, while BLM unwound the DNA template. The difference in extension between ssDNA and dsDNA under tension would result in a change in DNA length once the BLM helicase started unwinding (Bustamante et al., 2003), thus allowing for monitoring of its unwinding activity. In addition, the fluorescent binding agent Sytox was used as a dsDNA probe, and its immediate dissociation led by converting dsDNA to ssDNA by BLM served as an additional signal for dsDNA unwinding. This combined single-molecule technique allowed us not only to record the change of DNA length induced by BLM-catalyzed dsDNA unwinding but also to directly visualize individual unwinding events and DNA intermediates along the DNA template.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig1-v2.jpg)\n\n**Figure 1.:** (A) A Schematic of the experimental configuration. Biotinylated \u03bb phage DNA was suspended by two streptavidin coated beads manipulated by two optical traps. Meanwhile, confocal lasers repeatedly scanned along the DNA template. DNA length was expected to increase under a constant force when dsDNA was converted to ssDNA by BLM. (B, C) A representative kymograph of a tethered \u03bb DNA as well as its corresponding force and DNA length as a function of time in the presence of 20 nM (B) or 200 nM (C) BLM. (D) Kymograph of an individual unwinding event showing the unidirectional DNA unwinding. The arrow indicates the direction of the unwinding fork movement. (E) Distributions of the dsDNA unwinding rates in the presence of 200 nM BLM under 30 pN.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) Representative traces of BLM unwinding \u03bb DNA in the presence of 200 nM BLM. Three individual unwinding events were detected once the force was increased to 30 pN in A, and two were monitored under 20 pN in B. (C) The forces required to monitor DNA unwinding by BLM range from 10 pN to 40 pN. (D) Number of unwinding events on a single \u03bb DNA with or without RPA.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) To confirm that the observed unwinding was a result of BLM\u2019s helicase activity, we conducted the unwinding experiment in the absence of ATP. In the presence of 200 nM BLM, we started the experiment at 10 pN force for\u00a0~1 min and increased it by 10 pN each time. There was no change of either fluorescent or DNA length signal under 10\u201340 pN (n\u00a0=\u00a013), indicating that the unwinding signals we observed were indeed due to BLM\u2019s helicase activity. (B) BLM-mediated DNA length increases were comparable in the presence and absence of Sytox, indicating that the fluorescence dye does not affect BLM\u2019s unwinding activity.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Elasticity parameters of ssDNA were necessary for data conversion. They were obtained from the DNA force-extension measurements. Force-extension curve of this ssDNA (8358 nt) in reaction buffer containing 50 nM Sytox was shown in black. The force-extension relation of ssDNA was described as extensible freely jointed-chain (FJC) model. The fitting result was shown in red. The contour length was 4.07\u00a0\u00b1\u00a00.12 nm and stretch module was 297.6\u00a0\u00b1\u00a011.8 pN (n\u00a0=\u00a06). (B) Kymographs were used to calculate DNA unwinding rate by BLM from a nick. It was obtained from fitting to the linear region of the increase of the unwinding fork versus time. The velocity in nm/s was further converted to bp/s based on the elasticity parameters.\n\nWe started the unwinding experiment at a force of 10 pN for\u00a0~1 min and increased it by 10 pN each time until dsDNA unwinding was detected. In the presence of 20 nM BLM, apparent dsDNA unwinding was not observed over a broad force range from 10 pN to 40 pN (Figure 1B). In contrast, at a high BLM concentration of 200 nM, one or few unwinding events on a single DNA molecule were recorded once the force was increased to a range of 10\u201340 pN in all examined traces (n\u00a0=\u00a030) (Figure 1\u2014figure supplement 1). Figure 1C shows a kymograph of a DNA molecule and the force and DNA length as a function of time in the presence of 200 nM BLM: DNA length and fluorescence signals did not change under 10 or 20 pN; however, the DNA length displayed a continuous increase while a dark region in the middle of the fluorescent dsDNA appeared and subsequently expanded just after the force was increased to 30 pN. Omitting ATP did not result in changes in either fluorescence or DNA length signal in this experimental condition, confirming that our observations were a result of BLM-catalyzed dsDNA unwinding (Figure 1\u2014figure supplement 2A). Control experiments without Sytox exhibited similar DNA length increases in the presence of BLM, suggesting that the fluorescent dye does not affect BLM\u2019s unwinding activities (Figure 1\u2014figure supplement 2B).\n\nAs nicks can be accidently generated along the long \u03bb phage DNA template used in these assays, the observed dsDNA unwinding by BLM could be initiated either from a nick or from an intact duplex region melted internally, leading to distinct DNA intermediates during unwinding (Rad et al., 2015). To differentiate between these two possibilities, we analyzed the fluorescence signal of each individual unwinding event. In all 49 examined events from 33 traces, the unwinding progressed in one direction only, as reflected by the progression of the dark region of the fluorescence signal as well as the biased disappearance of its adjacent dsDNA (Figure 1D). This finding is not consistent with the possibility that the observed dsDNA unwinding was initiated by melting dsDNA internally where bidirectional progression of the unwinding fork movement was expected. Thus, we attributed these events to dsDNA unwinding initiated from a nick and the appearance and subsequent growth of the dark regions along the DNA track represented ssDNA. The rate of each unwinding fork movement was determined from the increase in ssDNA length revealed by the fluorescence signal and was converted to unwound base pair per second based on the elasticity of ssDNA (Figure 1\u2014figure supplement 3). This yielded an unwinding rate of 60\u00a0\u00b1\u00a09 bp/s (mean\u00a0\u00b1\u00a0SD) under 30 pN (Figure 1E and Figure 1\u2014source data 1).\n\nIn conclusion, the BLM helicase at a high concentration is indeed able to perform unidirectional unwinding from a nick, but this requires exerting an external destabilizing force (tens of pN) on the DNA template.\n\n### BLM translocates on intact ssDNA during unidirectional unwinding\n\nOur data suggest that the BLM helicase unwinds dsDNA unidirectionally from a nick. This generates one intact strand under tension and one relaxed coiled strand in our experimental configuration. Since BLM unwinds by translocating on ssDNA in a 3\u2019 to 5\u2019 manner, we next sought to determine on which strand BLM prefers to translocate when initiating unwinding from a nick. This strand preference directly determines BLM\u2019s unwinding polarity from a single nick (Figure 2A). Thus, we designed a 6.4 kbp dsDNA harboring a single nick at 2.2 kbp and 4.2 kbp away from the 5\u2019 and the 3\u2019 ends, respectively (Figure 2B and Figure 2\u2014figure supplement 1). BLM unwinds a 4.2 kbp dsDNA region if it translocates on the tensioned strand during unwinding or a 2.2 kbp dsDNA region if it translocates on the relaxed strand. To ensure the occurrence of DNA unwinding, we conducted the unwinding assay with this nicked DNA template under 30 pN. We found that 25 traces out of 29 examined DNA molecules showed continuous DNA unwinding from the nick. The 4.2 kbp dsDNA segments in these 25 traces were always unwound while the 2.2 kbp dsDNA segments remained intact, independent of the orientation of the suspended nicked DNA (Figure 2B). These findings suggest that BLM exclusively employed the intact ssDNA under tension as the track strand to unwind dsDNA. In addition, the inability of BLM to unwind the 2.2 kbp dsDNA segment reinforced our conclusion that BLM alone unwinds unidirectionally from a nick.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig2-v2.jpg)\n\n**Figure 2.:** (A) Two models of BLM unwinding dsDNA from a nick. BLM initiates unidirectional dsDNA unwinding from a nick by translocating either on the tensioned ssDNA or on the relaxed ssDNA. The unwinding polarities are opposite in these two scenarios. (B) The 6.4 kbp dsDNA template unwinding in the presence of 200 nM BLM. The 6.4 kbp dsDNA contains a nick located at 2.2 kbp and 4.2 kbp from the 5\u2019 and 3\u2019 termini, respectively. Representative kymographs and DNA length signals showed the 4.2 kbp dsDNA segments were always unwound under 30 pN. The arrows indicate the directions of the unwinding fork movement.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The 6.4 kbp nicked DNA template containing a single nick consists of two DNA segments (2.2 kpb and 4.2 kbp) connected by an adaptor. The two DNA segments were PCR amplified from the plasmid pBR322 using a biotin-labeled primer. The resulting DNA fragments were digested with BstXI to create an overhang. The adaptor was a product by annealing three oligonucleotides where a nick was automatically generated due to the missing of the 5\u2019 phosphate of one oligonucleotide. The final product was produced by ligating the two DNA segments with the adaptor at 1:1:1 ratio using T4 ligase.\n\n### RPA stimulates DNA unwinding by limited BLMs at low forces\n\nSince RPA is a major protein partner that physically and functionally interacts with BLM, we next aimed to address how the human RPA (hRPA, hereafter referred to as RPA) regulates dsDNA unwinding by BLM. We first examined whether the presence of RPA could enhance BLM unwinding activity by reducing the required destabilizing force on the DNA template. To do so, we monitored helicase unwinding on the \u03bb phage DNA in the presence of BLM and RPA while discretely increasing the external force (5, 10, 20 and 30 pN) until DNA unwinding was detected. Control experiments confirmed that RPA alone was incapable of unwinding dsDNA under these external forces (Figure 3\u2014figure supplement 1). In the presence of 200 nM BLM and RPA at various concentrations, DNA unwinding events initiated from the middle of the DNA template and the blunt-ended termini were observed\u00a0(Figure 3A; Figure 3B). With the increase of RPA concentration, the required force to monitor DNA unwinding indeed significantly reduced (Figure 3A and Figure 3\u2014source data 1). Moreover, we demonstrated that BLM/RPA-mediated DNA unwinding can even take place in the absence of any externally applied force (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig3-v2.jpg)\n\n**Figure 3.:** (A, C) Distributions of the required forces to monitor DNA unwinding in the presence of 200 nM (A) or 20 nM (C) BLM and RPA with indicated concentrations. N.U. represents no unwinding. (B, D) Kymographs of tethered \u03bb phage DNA showing DNA unwinding in the presence of 50 nM RPA and 200 nM BLM (B) or 200 nM RPA and 20 nM (D) BLM under 5 pN.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** To confirm that the observed unwinding in the presence of BLM and RPA was a result of BLM\u2019s helicase activity, we conducted the unwinding experiment in the absence of ATP. In the presence of 200 nM BLM and 200 nM RPA, we started the experiment at 10 pN force for\u00a0~1 min and increased to 10/20/30 pN orderly. There was no change of either fluorescent or DNA length signal (n\u00a0=\u00a010), indicating that the unwinding signals we observed were indeed due to BLM\u2019s helicase activity.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** To determine whether BLM and RPA can unwind nicked DNA in the absence of force, we designed a new DNA unwinding assay. We first incubated a relaxed \u03bb DNA tether (under zero force) in a channel containing 200 nM WT BLM and 400 nM eGFP-RPA for\u00a0~10 s. The relaxed DNA tether was then transported to a buffer channel wherein DNA unwinding could not occur due to the absence of BLM, RPA and ATP. In this channel, we stretched the DNA tether to 10 pN and examined the fluorescence signal along the DNA template before RPA dissociates. As shown above, the bidirectional unwinding DNA intermediates were detected (n\u00a0=\u00a010), indicating RPA and BLM can indeed unwind nicked DNA in the first channel in which no external force exists.\n\nNext, we asked whether a high abundance of BLMs are necessary for dsDNA unwinding when RPA is present. We assayed DNA unwinding of BLM at a concentration of 20 nM with various concentrations of RPA. In contrast to the observations with 20 nM BLM alone where no DNA unwinding was monitored from 10 to 40 pN at all (Figures 1B and 3C), the presence of RPA can indeed stimulate BLM-mediated DNA unwinding in these conditions and the required force was consistently decreased with the increase of RPA concentration (Figure 3C and Figure 3\u2014source data 1). It is noteworthy that with the presence of 200 nM RPA and 20 nM BLM, half of examined traces exhibited continuous DNA unwinding at a low force of 5 pN (Figure 3C and D).\n\nCollectively, we conclude that RPA stimulates DNA unwinding of limited BLMs by lowering the required force on the DNA template.\n\n### RPA activates BLM\u2019s bidirectional unwinding from a nick\n\nWe next sought to examine individual unwinding events in the presence of 50 nM RPA and 200 nM BLM and compare to those with 200 nM BLM alone. On average, there were 3.4 independent unwinding events monitored on a single DNA molecule, slightly higher than that without RPA (Figure 1\u2014figure supplement 1D). Strikingly, careful analyses of fluorescence images on the \u03bb phage DNA under a force of 30 pN revealed that, in addition to the expected unidirectional unwinding events, 53% of them (n\u00a0=\u00a040) showed bidirectional progression of dsDNA unwinding (Figure 4A). In line with these observations, 26 out of 27 traces from the experiments with the 6.4 kbp nicked DNA showed DNA unwinding in the presence of BLM and RPA and 35% of them also exhibited BLM\u2019s bidirectional unwinding initiated from the single nick on the template (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig4-v2.jpg)\n\n**Figure 4.:** (A) Kymographs of individual unwinding events of a tethered \u03bb phage DNA in the presence of 200 nM BLM and 50 nM RPA under 30 pN showing unidirectional and bidirectional DNA unwinding. The arrows indicate unwinding directions. (B) Representative kymographs of unidirectional (up) and bidirectional (down) DNA unwinding in the presence of 200 nM WT BLM and 50 nM eGFP-RPA. To illustrate the coiled ssDNAs, confocal laser scanned a rectangle area instead of only the DNA template track. The arrows indicate the directions of the unwinding fork movement. (C) Distributions of the uni- and bi- directional dsDNA unwinding rates in the presence of 200 nM BLM and 50 nM RPA under 30 pN. p-value<0.01 calculated by Student\u2019s t test. These rate distributions were compared with that in the presence of 200 nM BLM alone (black).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** A kymograph of an individual unwinding event on the 6.4 kbp nicked DNA template shows bidirectional DNA unwinding (50 nM RPA and 200 nM WT BLM). The red arrows indicate the directions of the unwinding fork movement.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Under 5 pN, bidirectional unwinding events were also observable when RPA and BLM were present. We showed representative kymographs of bidirectional DNA unwinding events at 5 pN under different conditions. The red arrows indicate the directions of the unwinding fork movement.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Kymographs of individual unwinding events showing the unidirectional unwinding (left) and bidirectional unwinding (right) in the presence of 200 nM hBLM and 100 nM hRPA under 30 pN. The arrow indicates the direction of the unwinding fork movement. In this experimental condition, 18 out of 48 unwinding events showed bidirectional DNA unwinding and the rest showed unidirectional DNA unwinding. (B) Kymograph of an individual unwinding event showing the unidirectional unwinding in the presence of 200 nM hBLM alone under 30 pN. Only unidirectional DNA unwinding was detected with hBLM alone (n\u00a0=\u00a015). (C) Kymograph of bidirectional DNA unwinding in the presence of 200 nM hBLM and 100 nM eGFP-hRPA. To illustrate the coiled ssDNAs, confocal laser scanned a rectangle area instead of only the DNA template track. The arrows indicate the directions of the unwinding fork movement. (D) Distributions of the uni- and bi- directional dsDNA unwinding rates in the presence of of 200 nM hBLM and 100 nM hRPA under 30 pN. p-value<0.01 calculated from Student\u2019s t test.\n\nThis RPA-activated bidirectional unwinding by BLM could be initiated from either internally melted dsDNA or a nick. To determine that, we labeled the RPA with enhanced green fluorescent protein (eGFP) and repeated the unwinding experiments. This eGFP-RPA allowed for the direct visualization of the unwinding intermediates of ssDNA instead of dsDNA (King et al., 2013). If dsDNA unwinding is initiated from melted regions of dsDNA, two continuous ssDNA strands under tension would be expected, and no frayed relaxed ssDNA exists. However, in most examined unwinding events (90%, n\u00a0=\u00a095), we observed at least one bright spot locating at the end of the newly generated tensioned ssDNA under 30 pN (Figure 4B). These spots increased in intensity as the unwinding fork progressed, and are thus attributed to unwound coiled ssDNA coated by RPA. These observations support the interpretation that the RPA-stimulated DNA unwinding by BLM is initiated from a nick instead of internally melted dsDNA regions. Moreover, 23 unwinding events were marked with two spots on both ends of an ssDNA, progressing in opposite directions (Figure 4B). These observations can be interpreted as BLM helicases unwind two opposite DNA forks by translocating on tensioned ssDNA in one direction and on relaxed ssDNA in the other, further strengthening our conclusion that that RPA activates BLM\u2019s bidirectional unwinding. Intriguingly, both Sytox and eGFP signals indicated that the bidirectional unwinding only initiates from a nick instead of starting an opposite unwinding direction in the middle of an ongoing unidirectional unwinding. The average bidirectional unwinding rate (117\u00a0\u00b1\u00a025 bp/s, mean\u00a0\u00b1\u00a0SD) was 1.6-fold higher than that of the unidirectional unwinding (72\u00a0\u00b1\u00a024 bp/s, mean\u00a0\u00b1\u00a0SD) which is slightly faster than that with BLM alone (60\u00a0\u00b1\u00a09 bp/s, mean\u00a0\u00b1\u00a0SD) (Figure 4C and Figure 4\u2014source data 1). These findings indicate that the unwinding rates for both directions might be a little different. As the opposite DNA unwinding forks differ in that BLMs translocate on relaxed and tensioned ssDNAs, we reasoned that the tension on the ssDNA might modulate BLM unwinding activity a bit. Notably, bidirectional DNA unwinding events were also observable under low and zero external forces (Figure 3\u2014figure supplement 2 and Figure 4\u2014figure supplement 2).\n\nTo rule out that the observed bidirectional DNA unwinding was due to the heterologous combination of gBLM and hRPA, we also conducted the DNA unwinding experiments by using hBLM. When testing the homologous pair of hBLM and hRPA, results similar to the heterologous combination were obtained: hBLM alone initiates unidirectional unwinding from a nick and hRPA activates its bidirectional unwinding (Figure 4\u2014figure supplement 3).\n\n### RPA can also activate core-BLM\u2019s bidirectional unwinding\n\nTo examine whether BLM\u2019s RPA-activated bidirectional unwinding is due to the interactions between them, we utilized a core fragment of Gallus gallus BLM that lacks major interaction domains with RPA (hereafter referred to as core-BLM) (Figure 5A;\u00a0Doherty et al., 2005; Kang et al., 2018). The WT BLM helicase was replaced with core-BLM mutant in the helicase unwinding assay with the \u03bb DNA. Control experiments verified that core-BLM alone also unidirectionally unwinds dsDNA from a nick with a relatively slower rate compared with WT BLM (Figure 5\u2014figure supplement 1A\u2013C). When RPA was present, both the unidirectional (58%) and bidirectional (42%) unwinding events (n\u00a0=\u00a045) by this mutant were recorded (Figure 5B). These observations were further substantiated by experiments using eGFP-RPA (Figure 5C) and the 6.4 kbp DNA template (32%, n\u00a0=\u00a037) (Figure 5\u2014figure supplement 1D). The rate of the bidirectional unwinding is 1.7-fold higher than that of the unidirectional unwinding, in agreement with the results with WT BLM (Figures 4C and 5D and Figure 5\u2014source data 1). These findings resemble the observations with WT BLM, reflecting that BLM\u2019s RPA-activated bidirectional unwinding possibly does not rely on the interactions between them.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic representations of WT BLM and core-BLM. Helicase, RQC and HRDC domains are shown in different colors. (B) Kymograph of an individual unwinding event in the presence of 20 nM core-BLM and 50 nM RPA under 35 pN showing unidirectional (up) and bidirectional (down) DNA unwinding. The arrows indicate the directions of the unwinding fork movement. (C) A representative kymograph of a single DNA tether unwound in the presence of 20 nM core-BLM and 50 nM eGFP-RPA. To demonstrate the coiled ssDNAs, confocal laser scanned a rectangle area instead of the DNA template track only. (D) Distributions of the uni- and bi- directional dsDNA unwinding rates in the presence of 20 nM BLM and 50 nM RPA under 35 pN. p-value<0.01 calculated by Student\u2019s t test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Kymograph of an individual unwinding event showing the unidirectional unwinding in the presence of 200 nM core-BLM under 30 pN. The arrow indicates the direction of the unwinding fork movement. In all examined unwinding events (n\u00a0=\u00a048), DNA unwinding occurred unidirectionally. (B) Distribution of the dsDNA unwinding rates in the presence of 200 nM core-BLM under 30 pN. (C) The 6.4 kbp dsDNA template unwinding in the presence of 200 nM core-BLM. A representative kymograph and DNA length signal showed the 4.2 kbp dsDNA segment was unwound under 35 pN. In all examined traces (n\u00a0=\u00a027), only the 4.2 kbp dsDNA segment was unwound, indicating that core-BLM unwinds unidirectionally by translocating on the tensioned ssDNA. (D) A kymograph of an individual unwinding event in the presence of 50 nM RPA and 200 nM core-BLM showing bidirectional unwinding. The arrows indicate the directions of the unwinding fork movement.\n\n### Free RPAs in solution permits BLM\u2019s continuous unwinding\n\nHaving demonstrated that RPA activates BLM\u2019s bidirectional unwinding, we next aimed to gain mechanistic insights into this activation. A few potential mechanisms have been proposed to explain how RPA stimulates helicase unwinding of long duplex dsDNA Awate and Brosh (2017). RPA may enhance BLM-catalyzed DNA unwinding by coating the unwound ssDNAs and relieving the pressure from their reannealing to prolong BLM tethering at the ssDNA/dsDNA junction during unwinding of relatively long duplexes. Alternatively, RPA coated onto ssDNA at the fork junction may help recruit additional BLM helicases from solution to aid in duplex unwinding. To examine these possibilities, we conducted a BLM unwinding experiment in a microfluidic system which allows for the rapid switching of experimental conditions (Figure 6\u2014figure supplement 1). In one channel, we first started the dsDNA unwinding by using 20 nM BLM and 50 nM RPA at 30 pN to ensure the initiation of dsDNA unwinding from a nick. Following that, we depleted the free proteins in solution by rapidly transporting the DNA tether to an ATP-containing reaction buffer channel. We found that, in the buffer channel, the DNA length slowly decreased and the dark region along the DNA template gradually disappeared, indicating the reannealing of the unwound ssDNA (n\u00a0=\u00a030, Figure 6A). This transition from DNA unwinding to rewinding is a result of the dissociation of ssDNA coated RPA and is possibly due to BLM strand switching and/or dissociation. This observation suggests that either free RPAs or BLMs are indispensable for the processive unwinding. To further determine that, we transported BLM/RPA-initiated DNA unwinding template to a channel containing either BLM or RPA. In these experiments, we observed that up to 75% of traces (n\u00a0=\u00a053) in the following RPA channel continued DNA unwinding, and yet only 16% of traces showed continuous unwinding in the BLM channel (n\u00a0=\u00a038) (Figure 6B and C). We thus conclude that free RPAs in solution are indispensable for promoting continuous dsDNA unwinding by BLM.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013C) Kymographs and DNA length vs. time traces of DNA tethers showing dsDNA unwinding initiating in a channel containing 20 nM BLM and 50 nM RPA under 30 pN, followed by quickly transporting to a channel containing ATP reaction buffer (A), 20 nM BLM (B) or 50 nM RPA (C) only. Red arrows indicate bidirectional DNA unwinding. (D) Kymograph and DNA length vs. time of a DNA tether showing the DNA template incubated in a channel containing 20 nM BLM under 30 pN, followed by transporting to a channel containing 50 nM RPA. Red arrows indicate bidirectional DNA unwinding.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Schematic of the 4-channel micro-flow cell. Two beads were optically trapped in channel 1. A single DNA molecule was caught between the two beads and a DNA tether was formed in channel 2. The DNA molecule was incubated with the studied proteins in channels 3 and 4 and the unwinding activity was monitored. The buffer conditions as well as proteins in channels 3 and 4 were specified in the main text for each experiment. (B) Kymograph and DNA length vs. time trace of DNA tether showing dsDNA unwinding initiating in a channel containing 20 nM BLM and 50 nM RPA under 35 pN, followed by transporting to a channel containing 50 nM RPA and 0 mM ATP. In the following RPA channel, DNA unwinding was immediately terminated for all examined traces (n\u00a0=\u00a08).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54098/elife-54098-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** To examine whether RPA can recruit WT BLM to the unwinding fork, we conducted the experiments by first placing the tether in the channel containing 50 nM RPA without ATP under 50 pN where RPA spontaneously bound to and denatured dsDNA as indicated by both DNA length and fluorescence signals. After that, we moved the tethered DNA to a channel containing 20 nM BLM and 50 nM RPA and reduced the force to 35 pN. In this channel, up to 83% of the unwinding events showed no DNA unwinding (n\u00a0=\u00a033).\n\nFinding that only free RPA is necessary for BLM-mediated dsDNA unwinding once initiated raises a possibility that BLM might be needed to recognize a nick and bind to it. To test this hypothesis, we started the experiment by first placing the dsDNA tether in a buffer containing 20 nM BLM only where no dsDNA unwinding occurred (Figure 6D). Sequentially, the DNA tether was rapidly switched to a channel containing 50 nM RPA. In this channel, we immediately observed continued unwinding from both DNA length and fluorescence signals in 21 out of 32 traces, resembling the unwinding traces observed when both proteins were present at the same time (Figure 6D). Depleting ATP in the RPA channel abolished the unwinding, confirming that these observations relied on BLM unwinding activity (Figure 6\u2014figure supplement 1B). In addition, 17% of the unwinding events (n\u00a0=\u00a012) were also observed to progress bidirectionally in this experiment, further supporting that this observed unwinding was due to the presence of both BLM and RPA. Since the BLM helicase has poor binding ability to intact dsDNA (Shi et al., 2017b), the immediate unwinding observed in the RPA channel suggest that limited BLMs recognize and bind to nicks along the DNA template in the BLM channel, and they are stimulated by RPA to unwind a substantial distance without dissociation. To further examine whether DNA-bound RPA could recruit BLM to the DNA template, we transported RPA-coated DNA template to the BLM and RPA channel. Only 17% of unwinding events (n\u00a0=\u00a033) showed continued unwinding in this channel (Figure 6\u2014figure supplement 2), in disagreement with the recruitment model.\n\nIn summary, we conclude that once BLM recognizes a nick and initiates unwinding with RPA, only free RPAs are indispensable for its processive unwinding. These findings favor the model that ssDNA generated by BLM was immediately coated by free RPA, preventing the separated ssDNAs from reannealing.\n\n## Discussion\n\nThere are several lines of evidence supporting that unwinding activities of the RecQ family helicases can be regulated by the presence of SSB proteins (Awate and Brosh, 2017; Bagchi et al., 2018; Cui et al., 2004; Mills et al., 2017; Shen et al., 1998; Xue et al., 2019a). Herein, our experimental approach combining optical tweezers with fluorescence microscopy has shed new light on the effect of RPA on BLM\u2019s ability to catalyze dsDNA unwinding. This combined technique allows for the direct monitoring of individual unwinding events by BLM along tensioned dsDNA in real time, leading to the discovery of a distinct unwinding mode. In this mode, RPA activates BLM\u2019s bidirectional unwinding from a nick where BLMs can translocate on both relaxed and tensioned ssDNAs during unwinding. This is the first observation, to our knowledge, of helicase bidirectional unwinding from a nick. Previous studies of replicative and DNA repair helicases have reported bidirectional unwinding attributable to helicase melting dsDNA internally, which differs from our observed results (Rad et al., 2015; Yardimci et al., 2012).\n\nIn the absence of RPA, BLM alone can only initiate unidirectional dsDNA unwinding from a nick where it translocates on the ssDNA with the assistance of an external destabilizing force on DNA (Figure 1D, Figure 4\u2014figure supplement 3, and Figure 5\u2014figure supplement 1). Since the physical barriers presented by dsDNA on both directions from a nick are similar, the inability of BLM to unwind in the opposite direction is mostly likely due to the lack of tension on the relaxed ssDNA which might possibly promote the unwinding activity of BLM. This unidirectional unwinding on nicked dsDNA by BLM alone occurred with the high protein concentrations. The core-BLM lacking the oligomerization domain also exhibited unidirectional unwinding from a nick in the absence of RPA (Figure 5\u2014figure supplement 1;\u00a0Karow et al., 1999; Shi et al., 2017a), leading us to exclude the possibility that processive unwinding could depend on oligomerization of the protein. Instead, proteins at high concentrations might ensure sufficient binding of the enzyme to the ssDNA generated during an unwinding event, allowing for successive rounds of unwinding and preventing the unwound strands against reannealing.\n\nA distinct feature of the bidirectional dsDNA unwinding by BLM and RPA is that the unwinding directionality is determined initially at a nick (Figure 4). The sequential protein incubation assays demonstrated that, once preloaded with BLM, only free RPAs are indispensable for activating the bidirectional dsDNA unwinding, suggesting that only limited BLMs are required to first recognize and load on the nicked dsDNA (Figure 6C and D). Thus, we reasoned that the bidirectional unwinding necessitates the preloading of more than one helicase at the nick and subsequent binding of RPA on the newly generated ssDNA prolongs the binding and unwinding of BLM at the fork. The unidirectional unwinding probably results from only one BLM helicase preloading at the nick and the inability of BLM to associate with RPA-coated ssDNA (Xue et al., 2019a). This speculation could also explain a recent single-molecule observation that only unidirectional DNA unwinding by BLM and RPA was detected wherein low concentrations of BLM were used (Xue et al., 2019a).\n\nOur study also provided insights into the mechanisms by which BLM and RPA cooperate to facilitate end resection in HR. Recent studies support a model that the long-range end resection in HR initiates from a nick generated by the MRN/X complex once the DSB ends are coated by DNA adducts (Cannavo and Cejka, 2014). This demands that the helicase and the nuclease unwind and resect bidirectionally from a nick. It is highly likely that the abilities of BLM to recognize and preload on the nick would help identify the locations of DSB and possibly play a role in recruiting other required proteins for the resection. Although it needs to be further validated, the inherent ability of BLM and RPA to unwind bidirectionally from a nick would facilitate the resection by DNA adduct coated DSB ends which provides ssDNA for the DNA2/EXO1 nucleases to degrade from 5\u2019 to 3\u2019 and the MRN complex to degrade from 3\u2019 to 5\u2019 (Symington, 2016). Interestingly, inhibition of MRN exonuclease activity only confers a relatively lower resection defect compared with the inhibition of its endonuclease activity, suggesting that other proteins might also participate in the initial short ssDNA generation (Shibata et al., 2014). In support of this notion, the complete unwinding of the short dsDNA between the nick and the DSB end may serve as an additional pathway in generating the short stretches of ssDNA.\n\nThe finding that the SSB proteins promote helicase-catalyzed dsDNA unwinding from a nick might be conserved among the RecQ-like helicases. For example, the RecQ helicase from E. coli is also able to promote dsDNA unwinding in both directions in the presence of E. coli SSB (Rad et al., 2015). However, its bidirectional unwinding was initiated by melting dsDNA internally instead of a nick, which resembles replicative helicases in DNA replication initiation (Mott and Berger, 2007). In fact, the unwinding by RecQ progresses unidirectionally if initiated from a nick. In addition, the Sgs1 helicase, the Saccharomyces cerevisiae homologue of BLM, was also found to unwind dsDNA from blunt-ended termini or a nick with RPA (Wang et al., 2018; Xue et al., 2019b), but its unwinding directionality when initiated from a nick has not been determined. A previous single-molecule FRET study revealed that BLM could not unwind more than 34 bp even in the presence of RPA (Yodh et al., 2009). This difference may be due to the fact that the action of applied force on the DNA template can lower the energy required to melt the DNA and prevent reannealing of the separated strands, thus stimulating BLM\u2019s unwinding activity. Given the fact that hRPA can activate hBLM's, gBLM's and core-gBLM's bidirectional unwinding form a nick (Figures 4 and 5 and Figure 4\u2014figure supplement 3), this activation might be a conserved feature for the SSB proteins and the RecQ helicases and does not require a homologous system or physical interactions between them.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Gallus gallus)</td>\n      <td>gBLM</td>\n      <td>NCBI</td>\n      <td>RRID:SCR:006472</td>\n      <td>NP_001007088.2</td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>hBLM</td>\n      <td>NCBI</td>\n      <td>RRID:SCR:006472</td>\n      <td>NP_000048.1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>2566</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Competent cell</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3)</td>\n      <td>This Paper</td>\n      <td></td>\n      <td>Competent cell</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lambda DNA</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>SD0021</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBR322 (plasmid)</td>\n      <td>Takara</td>\n      <td>RRID: Addgene_10877</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pTWIN1 (plasmid)</td>\n      <td>New England BioLabs</td>\n      <td>N6951S</td>\n      <td>Expression of core BLM in E. coli</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET21a-sumo (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Expression of BLM in E. coli</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p11d-tRPA (plasmid)</td>\n      <td>Vector Builder</td>\n      <td>Addgene:102613</td>\n      <td>Expression of human RPA in E. coli</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>T4 DNA ligase</td>\n      <td>New England BioLabs</td>\n      <td>M0202L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Klenow Fragment, exo-</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>EP0421</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Nde I</td>\n      <td>New England BioLabs</td>\n      <td>R0111S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Sal I</td>\n      <td>New England BioLabs</td>\n      <td>R3138S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>BstX I</td>\n      <td>New England BioLabs</td>\n      <td>R0113L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biotin-dATP</td>\n      <td>Invitrogen</td>\n      <td>Invitrogen: 19524016</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biotin-dCTP</td>\n      <td>Invitrogen</td>\n      <td>Invitrogen: 19518018</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IPTG</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>15529019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Streptavidin Coated Polystyrene Particles (1.76 \u00b5m)</td>\n      <td>Spherotech</td>\n      <td>AG02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Streptavidin Coated Polystyrene Particles (4.42 \u00b5m)</td>\n      <td>Spherotech</td>\n      <td>AL01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>DNA Purification</td>\n      <td>Sangon Biotech</td>\n      <td>B518141</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>SP Sepharose Fast Flow</td>\n      <td>GE Healthcare</td>\n      <td>17072904</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Q Sepharose Fast Flow</td>\n      <td>GE Healthcare</td>\n      <td>17051004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Sytox orange Nucleic Acid Stain</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>S11368</td>\n      <td>5 mM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB, Data analysis</td>\n      <td>MathWorks</td>\n      <td>RRID: SCR:001622</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Preparation of DNA templates\n\nThe \u03bb phage DNA template was constructed as described elsewhere (Gross et al., 2010). Briefly, biotinylated \u03bb phage DNA was made through 3'-end labeling by fill-in of 5'-overhangs with an exo- Klenow Fragment. The reaction was conducted by incubating 330 nM \u03bb phage DNA, 600 \u03bcM dGTP/dATP/dTTP, 400 \u03bcM biotin-14-dCTP, and 5U Klenow in 1X Klenow reaction buffer at 37\u00b0C for 1 hr. The mixture was purified by Column DNA Purification Kit.\n\nThe 6.4 kbp DNA template containing a single nick consisted of two DNA segments connected by an adaptor (Figure 2\u2014figure supplement 1). The two 2.2 kbp and 4.2 kbp DNA segments were PCR amplified from the plasmid pBR322 using a biotin-labeled primer. The resulting DNA fragments were digested with BstXI to create an overhang. The adaptor was produced by annealing three oligonucleotides where a nick was automatically generated because the 5\u2019 phosphate of one oligonucleotide was absent (Figure 2\u2014figure supplement 1). The final product was produced by ligating the two DNA segments with the adaptor at 1:1:1 ratio using T4 ligase.\n\n### Protein purification\n\n#### BLM\n\nThe wild type Gallus gallus bloom syndrome protein (gBLM, referred to as WT BLM) and its helicase core mutant (BLM610-1258, referred to as core-BLM) were used in our experiments. Both WT BLM and core-BLM were expressed and purified as previously described (Shi et al., 2017a). In brief, the BLM gene was amplified and constructed into the pET21a-sumo vector. The N-terminal-domain-truncated core-BLM was constructed into pTWIN1 by using Nde I and Sal I restriction sites, and transformed into BL21 (DE3). Expression was induced in the T7 expressing\u00a0E. coli\u00a0strain 2566 by 0.3 mM isopropyl 1-thio-D-galactopyranoside at 18\u00b0C for 16 hr. Protein was homogenously purified sequentially by affinity chromatography with a complete His tag purification resin column and ion exchange chromatography on SP Sepharose Fast Flow and Q-Sepharose Fast Flow respectively. hBLM was purified as described previously (Karow et al., 1997).\n\n#### hRPA\n\nThe human RPA plasmid was a gift from Dr. Marc Wold. The\u00a0E. coli\u00a0strain BL21 (DE3) was transformed with the plasmid p11d-tRPA, permitting the co-expression of RPA70, RPA32, and RPA14. RPA was then purified over Affi-Gel Blue, Hydroxyapatite (Biorad), and Q-Sepharose chromatography columns as described previously (Henricksen et al., 1994). The purified protein was eluted in phosphate buffer containing 300 mM KCl (pH 7.5). To obtain fluorescent human RPA, a DNA fragment encoding a variant of the enhanced GFP (eGFP) with a polyhistidine tag was inserted in frame at the 3\u2032 end of the cDNA encoding the large subunit of RPA in the expression plasmid p11d-tRNA. eGFP-RPA purification was performed as previously described (van Mameren et al., 2009).\n\n### Single-molecule experiments\n\nSingle-molecule experiments were performed at 25\u00b0C on an instrument combining three-color confocal fluorescence microscopy with dual optical traps (LUMICKS, C-trap). In brief, a 1,064 nm fiber laser and a water-immersion objective were used to create two orthogonally polarized optical traps. The trap separation was controlled using a piezo mirror for beam-steering one trap. Force measurements were performed by back-focal plane interferometry of the condenser top lens using a position-sensitive detector. A computer-controlled stage enabled rapid movement of the optical traps within a multiple-channel flow cell (Figure 6\u2014figure supplement 1). This flow cell allowed for the rapid in situ construction and characterization of dumbbell constructs, and facilitated the swift and complete transfer of the tethered DNA between different flow channels.\n\nAs described previously (Gross et al., 2010), DNA molecules were captured between two streptavidin-coated polystyrene beads (1.76 \u03bcm for 6.4 kbp DNA and 4.5 \u03bcm for \u03bb phage DNA) using the multichannel laminar flow cell and tensioned by increasing the distance between the optical traps (Figure 6\u2014figure supplement 1). A single DNA was verified by its inherent mechanical force-extension curve. The trap was then moved to protein channels as described for each assay. Unless stated otherwise, all experiments were carried out in a reaction buffer containing 25 mM Tris-HCl pH 7.5, 100 mM NaCl, 1 mM MgCl2, 0.1 mg/ml BSA, 2 mM ATP, 3 mM DTT and 50 nM Sytox Orange.\n\nFluorescence microscopy was achieved by imaging the stained DNA on an EMCCD camera. Here, a 488 nm excitation laser and a 532 nm excitation laser were used for imaging eGFP-hRPA and Sytox Orange respectively. Kymographs were generated via a confocal line scan through the center of the two beads.\n\n### Data acquisition and analysis\n\nSingle-molecule force and fluorescence data were analyzed using custom software provided by LUMICKS (available at http://www.nat.vu.nl/~iheller/download.html). Force and DNA extension data were taken at 50 kHz and filtered to 30 Hz. The kymograph was used to track the edge of the unwinding forks. The edges were marked manually by examining each pixel image and comparing to a set threshold value. Elasticity parameters of ssDNA were obtained from the DNA force-extension measurements for data conversion. The force-extension relation of ssDNA in our experimental condition was described as an extensible freely jointed-chain model (Figure 1\u2014figure supplement 3A;\u00a0Smith et al., 1996). The unwinding rate was obtained from fitting to the linear region of the increase of the unwinding fork versus time (Figure 1\u2014figure supplement 3B). The unwinding rates were reported as the mean\u00a0\u00b1\u00a0S.D. from the indicated number of events.\n",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "a70957f3-794d-4319-a5ad-3c64f23c5ca1",
+      "submission_id": "c53011d8-07c1-4e4f-9d4c-be22f71eb767",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maria Spies, University of Iowa United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54098.sa1](https://doi.org/10.7554/eLife.54098.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe cooperation between RecQ family helicases and ssDNA binding proteins, such as RPA, are important for many aspects of DNA repair. By combining force-extension and fluorescence measurements, the authors have built a compelling case that in the presence of RPA BLM helicase can perform a \"bidirectional\" unwinding from a nick in the dsDNA unwinding the duplex upstream and downstream of the nick. This observation illustrates the activity of the BLM helicase in long-range dsDNA end resection during initiation of homologous recombination.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"RPA Activates BLM's Bidirectional DNA Unwinding from a Nick\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Kuriyan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Mih\u00e1ly Kov\u00e1cs (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study the authors performed optical tweezers-based single-molecule experiments combined with fluorescence microscopy to demonstrate that Bloom's syndrome (BLM) helicase, in conjunction with Replication Protein A (RPA), is able to perform bidirectional DNA unwinding starting from a nick located on one of the DNA strands.\n\nEssential revisions:\n\nThe three reviewers and the reviewing editor came to an agreement that you have built a compelling case that in the presence of RPA BLM helicase can perform a \"bidirectional\" unwinding from a nick in the dsDNA, i.e. it can move on both, the relaxed strand and on the strand under tension. Combination of the force-extension and fluorescence measurements allowed you to quantify the rate, the frequency and directionality of the unwinding events. An impressive set of experimental conditions has been sampled to identify the circumstances under which the gBLM activity can be observed on the nicked DNA.\n\nThe reviewers, however identified a number of issues with the paper that questions its suitability, at least in its current state.\n\nMajor issues that require new experiments:\n\n1) The first significant problem lays in the use of heterologous BLM (from bird) and RPA (human). The observations are compared to what is known from the human system, but the gBLM itself does not seem to have a characteristic unwinding behavior of the human enzyme or other RecQ helicases, which is typically very dynamic with repetitive events and backtracking. Furthermore, the likely absence of the gBLM-hRPA interaction reduces the physiological significance of the authors' observations. While specific interactions between the two proteins may not be necessary for the observed reactions, the presence of such an interaction may alter the BLM behavior. The authors need to make a better case for the physiological relevance of their observations or to add an analysis of the cognate protein pair for at least the key experiments. The necessity of the experiments with human BLM is a major experiment that needs to be added to strengthen the conclusions of the manuscript. It has been requested by all three reviewers and the reviewing editor.\n\n2) A complementary biochemical in vitro experiment is necessary to establish that the bidirectional unwinding can indeed take place in the absence of force. Extrapolation of the rate of initiation dependence on force to zero force may be another way to address this question.\n\nOther important issues to address:\n\n3) It is unclear how many nicks are present on each \u03bb DNA molecule, which complicates the analysis of the initiation rate.\n\n4) The authors should support their statements with statistical analyses (p values, errors, etc), especially considering a relatively small number of events in each class.\n",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f03eb704-a0cc-4161-a1d7-96c217c89ce2",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C1",
+      "claim": "BLM is a multifunctional helicase that plays critical roles in maintaining genome stability.",
+      "claim_type": "EXPLICIT",
+      "source": "BLM is a multifunctional helicase that plays critical roles in maintaining genome stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about BLM's role, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "43c1d1a4-6a41-4a73-be14-18fa49dc8454",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C2",
+      "claim": "BLM processes distinct DNA substrates, but not nicked DNA, during many steps in DNA replication and repair.",
+      "claim_type": "EXPLICIT",
+      "source": "It processes distinct DNA substrates, but not nicked DNA, during many steps in DNA replication and repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge about BLM's substrate specificity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "a4ec860a-d9d1-4160-a6cc-a97c945a1e0a",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C3",
+      "claim": "A high abundance of BLMs can unidirectionally unwind dsDNA from a nick when an external destabilizing force is applied.",
+      "claim_type": "EXPLICIT",
+      "source": "using a combined single-molecule approach, we find that a high abundance of BLMs can indeed unidirectionally unwind dsDNA from a nick when an external destabilizing force is applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from single-molecule experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "0016cba0-49d0-4bfd-9c99-c68e7e87c318",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C4",
+      "claim": "Human replication protein A (hRPA) ensures that limited quantities of BLMs processively unwind nicked dsDNA under a reduced force.",
+      "claim_type": "EXPLICIT",
+      "source": "human replication protein A (hRPA) not only ensures that limited quantities of BLMs processively unwind nicked dsDNA under a reduced force",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "9eaed278-2777-4a3c-a8f7-c6c3fa72636b",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C5",
+      "claim": "hRPA permits the translocation of BLMs on both intact and nicked ssDNAs, resulting in a bidirectional unwinding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "but also permits the translocation of BLMs on both intact and nicked ssDNAs, resulting in a bidirectional unwinding mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing bidirectional unwinding in the presence of RPA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "5a3ffd22-1ee9-44c0-b3fa-b040f67ffd3d",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C6",
+      "claim": "BLM activation by RPA necessitates BLM targeting on the nick.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation necessitates BLM targeting on the nick and the presence of free hRPAs in solution whereas direct interactions between them are dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from sequential protein incubation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "4ff62471-85e6-412c-a479-a40f28df5c8e",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C7",
+      "claim": "BLM activation by RPA requires the presence of free hRPAs in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation necessitates BLM targeting on the nick and the presence of free hRPAs in solution whereas direct interactions between them are dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from channel-switching experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "9073fc7d-a9fa-4569-a0fb-431a4f291c44",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C8",
+      "claim": "Direct interactions between BLM and RPA are dispensable for BLM activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation necessitates BLM targeting on the nick and the presence of free hRPAs in solution whereas direct interactions between them are dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experiments with core-BLM lacking RPA-binding domains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "5220bb6a-8d96-4d0f-bdda-8d5336578ff5",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C9",
+      "claim": "RecQ family helicases have been highly conserved during evolution from prokaryotes to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these DNA helicases, the RecQ family helicases have been highly conserved during evolution from prokaryotes to humans and play critical roles in genome maintenance and stability (Bernstein et al., 2010; Croteau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "8ba7dc34-66ea-406a-a9f9-d5653a9d304e",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C10",
+      "claim": "RecQ family helicases play critical roles in genome maintenance and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these DNA helicases, the RecQ family helicases have been highly conserved during evolution from prokaryotes to humans and play critical roles in genome maintenance and stability (Bernstein et al., 2010; Croteau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "7be586a0-4fe9-4806-9568-06141ada9403",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C11",
+      "claim": "Defects in BLM, WRN and RECQ4 give rise to distinct heritable human disease syndromes.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in three of the five human RecQ members (BLM, WRN and RECQ4) give rise to distinct heritable human disease syndromes (Bloom's, Werner's and Rothmund-Thomson syndromes, respectively), characterized by genomic instability and an increased incidence of cancers (Ellis et al., 1995; Kitao et al., 1999; Yu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "bb79592b-ff67-47f0-b5ff-4a134f73435f",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C12",
+      "claim": "Bloom's, Werner's and Rothmund-Thomson syndromes are characterized by genomic instability and an increased incidence of cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in three of the five human RecQ members (BLM, WRN and RECQ4) give rise to distinct heritable human disease syndromes (Bloom's, Werner's and Rothmund-Thomson syndromes, respectively), characterized by genomic instability and an increased incidence of cancers (Ellis et al., 1995; Kitao et al., 1999; Yu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "cc6102bf-b4ee-44b6-b0e9-3b5103f7338e",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C13",
+      "claim": "BLM unwinds DNA in a 3'\u22125' direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Bloom syndrome protein (BLM) is one of the five RecQ family helicases that unwind DNA in a 3'\u22125' direction (Croteau et al., 2014; Karow et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "1f6d41a4-f0b5-4839-8f08-59946ea20b36",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C14",
+      "claim": "BLM is involved in DNA end resection.",
+      "claim_type": "EXPLICIT",
+      "source": "It is involved in many aspects of genome maintenance, including DNA end resection (Kowalczykowski, 2015), displacement-loop (D-loop) processing (Bugreev et al., 2007), rescuing stalled or collapsed replication forks (Davies et al., 2007), and resolution of Holliday junction (Bizard and Hickson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "e388c5c2-464a-4579-8d86-c672bd72ee44",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C15",
+      "claim": "BLM is involved in displacement-loop (D-loop) processing.",
+      "claim_type": "EXPLICIT",
+      "source": "It is involved in many aspects of genome maintenance, including DNA end resection (Kowalczykowski, 2015), displacement-loop (D-loop) processing (Bugreev et al., 2007), rescuing stalled or collapsed replication forks (Davies et al., 2007), and resolution of Holliday junction (Bizard and Hickson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "60655aa8-7501-4ec1-a7b7-2ca590322865",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C16",
+      "claim": "BLM is involved in rescuing stalled or collapsed replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "It is involved in many aspects of genome maintenance, including DNA end resection (Kowalczykowski, 2015), displacement-loop (D-loop) processing (Bugreev et al., 2007), rescuing stalled or collapsed replication forks (Davies et al., 2007), and resolution of Holliday junction (Bizard and Hickson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "1e659201-3863-44ee-ac9d-6ad0ce399bd7",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C17",
+      "claim": "BLM is involved in resolution of Holliday junction.",
+      "claim_type": "EXPLICIT",
+      "source": "It is involved in many aspects of genome maintenance, including DNA end resection (Kowalczykowski, 2015), displacement-loop (D-loop) processing (Bugreev et al., 2007), rescuing stalled or collapsed replication forks (Davies et al., 2007), and resolution of Holliday junction (Bizard and Hickson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "627b46dc-4a34-4e8b-9dd6-24351604eb86",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C18",
+      "claim": "BLM can unwind G-quadruplex structures.",
+      "claim_type": "EXPLICIT",
+      "source": "BLM's diverse functions are realized by its remarkable unwinding capabilities of many unique DNA structures, such as G-quadruplex (Chatterjee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "30892fc1-9f58-412a-b086-e5e1699ba6e3",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C19",
+      "claim": "BLM participates in many steps in repairing DNA double-strand breaks (DSBs) via homologous recombination (HR).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, BLM has been verified to participate in many steps in repairing DNA double-strand breaks (DSBs) via homologous recombination (HR) (Nimonkar et al., 2011; Nimonkar et al., 2008; Sturzenegger et al., 2014; Woglar and Villeneuve, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "af4e1bad-535a-4b1b-9b12-0fee0544a1fb",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C20",
+      "claim": "BLM is recruited to DSB ends and facilitates resection of the 5' termini to generate 3' end protruding ssDNAs in the first step of HR.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated to be recruited to the DSB ends and facilitate resection of the 5' termini to generate 3' end protruding ssDNAs in the first step of HR (Gravel et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "5b348d2b-3a71-4096-98cc-a043cbacbc58",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C21",
+      "claim": "BLM unwinds dsDNA to provide ssDNA for exonuclease resection by EXO1 or DNA2.",
+      "claim_type": "EXPLICIT",
+      "source": "BLM either unwinds dsDNA to provide ssDNA for exonuclease resection by EXO1 or DNA2 or directly stimulates their nucleolytic activities (Nimonkar et al., 2008; Sturzenegger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "4d4464ad-d93c-4603-8246-908740fe9556",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C22",
+      "claim": "BLM directly stimulates the nucleolytic activities of EXO1 or DNA2.",
+      "claim_type": "EXPLICIT",
+      "source": "BLM either unwinds dsDNA to provide ssDNA for exonuclease resection by EXO1 or DNA2 or directly stimulates their nucleolytic activities (Nimonkar et al., 2008; Sturzenegger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "ed9aacb3-6032-4c42-89a8-5fd991e1f023",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C23",
+      "claim": "BLM alone is unable to initiate dsDNA unwinding from a nick in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, even though BLM is distinctive in preferentially unwinding unique substrates (Mohaghegh et al., 2001), an in vitro ensemble study has demonstrated that this helicase alone is unable to initiate dsDNA unwinding from a nick which is a prevalent and essential DNA intermediate during HR (Maizels and Davis, 2018; Mohaghegh et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "57073875-a395-4e0f-b5fd-840bab629a98",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C24",
+      "claim": "A nick is a prevalent and essential DNA intermediate during HR.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, even though BLM is distinctive in preferentially unwinding unique substrates (Mohaghegh et al., 2001), an in vitro ensemble study has demonstrated that this helicase alone is unable to initiate dsDNA unwinding from a nick which is a prevalent and essential DNA intermediate during HR (Maizels and Davis, 2018; Mohaghegh et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "d538859e-04df-4a0d-9ea0-bf346218fbb7",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C25",
+      "claim": "BLM's varying unwinding activities are often regulated by other in vivo factors.",
+      "claim_type": "EXPLICIT",
+      "source": "These contradictory findings may be reconciled by BLM's varying unwinding activities, which are often regulated by other in vivo factors (Croteau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "edfe5ad8-b7ce-4402-9d82-9be231f30aeb",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C26",
+      "claim": "BLM helicase interacts and collaborates with many protein partners to aid in cellular responses to replication stress and DNA damage in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been widely appreciated that the BLM helicase interacts and collaborates with many protein partners to aid in cellular responses to replication stress and DNA damage in vivo (Croteau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "e7df983a-346a-4128-88fa-054ebd6d0478",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C27",
+      "claim": "Interactions and collaborations between BLM and protein partners dictate BLM's specialized functions in genome maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions and collaborations dictate BLM's specialized functions in genome maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the established knowledge about protein-protein interactions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "c06eddfe-130e-4f24-bc92-e8c46ddd61e5",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C28",
+      "claim": "RPA is a heterotrimeric protein complex consisting of the RPA70, RPA32 and RPA14 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "A key partner of BLM is the single-stranded DNA-binding (SSB) protein, replication protein A (RPA), a heterotrimeric protein complex consisting of the RPA70, RPA32 and RPA14 subunits, which is also essential in DNA repair and recombination (Fanning et al., 2006; Wold, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "38401c0c-7f11-4a7a-8aca-34a3f800ad2a",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C29",
+      "claim": "RPA is essential in DNA repair and recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "A key partner of BLM is the single-stranded DNA-binding (SSB) protein, replication protein A (RPA), a heterotrimeric protein complex consisting of the RPA70, RPA32 and RPA14 subunits, which is also essential in DNA repair and recombination (Fanning et al., 2006; Wold, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "16f1810f-1a19-4caf-b568-d431dd010469",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C30",
+      "claim": "RPA co-localizes with BLM at the foci of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent in vivo study directly demonstrated that RPA co-localizes with BLM at the foci of DNA damage, suggesting that these two proteins coordinate and function together in DNA repair (Woglar and Villeneuve, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "b61dbbe5-d217-4b3b-88f2-8f27fcd509a8",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C31",
+      "claim": "RPA physically interacts with BLM.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, biochemical, structural and single-molecule studies have revealed that RPA not only physically interacts with BLM but also stimulates its unwinding activity by increasing its processivity or improving its unwinding initiation (Brosh et al., 2000; Doherty et al., 2005; Soniat et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "2b1be5cd-4b3d-456a-b7cd-00dfad1ee0d5",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C32",
+      "claim": "RPA stimulates BLM's unwinding activity by increasing its processivity or improving its unwinding initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, biochemical, structural and single-molecule studies have revealed that RPA not only physically interacts with BLM but also stimulates its unwinding activity by increasing its processivity or improving its unwinding initiation (Brosh et al., 2000; Doherty et al., 2005; Soniat et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "7bc7d7c3-67eb-43d4-94e4-1a95c0ba6a96",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C33",
+      "claim": "The poor ability of a heterologous SSB protein to stimulate BLM's unwinding suggests that this stimulation is specific.",
+      "claim_type": "EXPLICIT",
+      "source": "The poor ability of a heterologous SSB protein to stimulate BLM's unwinding further suggests that this stimulation is specific (Brosh et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "94b74043-1b8d-4b61-b137-927adb91adb4",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C34",
+      "claim": "In the presence of 20 nM BLM, apparent dsDNA unwinding was not observed over a broad force range from 10 pN to 40 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 20 nM BLM, apparent dsDNA unwinding was not observed over a broad force range from 10 pN to 40 pN (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "39c2dfe6-b7ec-42c9-b1e4-119e456e12b9",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C35",
+      "claim": "At a high BLM concentration of 200 nM, one or few unwinding events on a single DNA molecule were recorded once the force was increased to a range of 10\u201340 pN in all examined traces (n = 30).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at a high BLM concentration of 200 nM, one or few unwinding events on a single DNA molecule were recorded once the force was increased to a range of 10\u201340 pN in all examined traces (n = 30) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data with sample size n=30.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "91d97232-a22a-4f60-8cac-84fce389f78b",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C36",
+      "claim": "Omitting ATP did not result in changes in either fluorescence or DNA length signal, confirming that observations were a result of BLM-catalyzed dsDNA unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "Omitting ATP did not result in changes in either fluorescence or DNA length signal in this experimental condition, confirming that our observations were a result of BLM-catalyzed dsDNA unwinding (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment confirming ATP-dependence of the observed activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "cb5483ed-cd73-4eaa-b216-c95c34db8eb5",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C37",
+      "claim": "Control experiments without Sytox exhibited similar DNA length increases in the presence of BLM, suggesting that the fluorescent dye does not affect BLM's unwinding activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments without Sytox exhibited similar DNA length increases in the presence of BLM, suggesting that the fluorescent dye does not affect BLM's unwinding activities (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment showing that Sytox does not interfere with BLM activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "8e972619-ed14-4bb6-bfcb-c93ff96c9ab4",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C38",
+      "claim": "In all 49 examined events from 33 traces, the unwinding progressed in one direction only.",
+      "claim_type": "EXPLICIT",
+      "source": "In all 49 examined events from 33 traces, the unwinding progressed in one direction only, as reflected by the progression of the dark region of the fluorescence signal as well as the biased disappearance of its adjacent dsDNA (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 49 events across 33 traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "9e2f1447-c20d-4b9a-9e9c-9770e45fb612",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C39",
+      "claim": "The observed dsDNA unwinding was initiated from a nick rather than by melting dsDNA internally.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is not consistent with the possibility that the observed dsDNA unwinding was initiated by melting dsDNA internally where bidirectional progression of the unwinding fork movement was expected. Thus, we attributed these events to dsDNA unwinding initiated from a nick and the appearance and subsequent growth of the dark regions along the DNA track represented ssDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the unidirectional nature of unwinding observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "0a3620ab-b76c-4256-83a4-46197ee791fc",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C40",
+      "claim": "The unwinding rate of BLM from a nick is 60 \u00b1 9 bp/s (mean \u00b1 SD) under 30 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "This yielded an unwinding rate of 60 \u00b1 9 bp/s (mean \u00b1 SD) under 30 pN (Figure 1E and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "3cb0e5c1-c1fa-418f-8be5-664d97def9f0",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C41",
+      "claim": "BLM exclusively employed the intact ssDNA under tension as the track strand to unwind dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The 4.2 kbp dsDNA segments in these 25 traces were always unwound while the 2.2 kbp dsDNA segments remained intact, independent of the orientation of the suspended nicked DNA (Figure 2B). These findings suggest that BLM exclusively employed the intact ssDNA under tension as the track strand to unwind dsDNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 25 out of 29 examined DNA molecules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "0dc9001a-b19d-44b8-a294-4f0e486768db",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C42",
+      "claim": "The inability of BLM to unwind the 2.2 kbp dsDNA segment reinforced the conclusion that BLM alone unwinds unidirectionally from a nick.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the inability of BLM to unwind the 2.2 kbp dsDNA segment reinforced our conclusion that BLM alone unwinds unidirectionally from a nick.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observation that only one segment was unwound.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "fdf0b476-bc3a-438b-956a-c3e180debaf2",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C43",
+      "claim": "RPA alone was incapable of unwinding dsDNA under external forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments confirmed that RPA alone was incapable of unwinding dsDNA under these external forces (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment confirming that RPA alone does not unwind DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "bdab0cf8-ff3e-4964-b4c8-fcd04ba368a1",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C44",
+      "claim": "In the presence of 200 nM BLM and RPA at various concentrations, DNA unwinding events initiated from the middle of the DNA template and the blunt-ended termini were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 200 nM BLM and RPA at various concentrations, DNA unwinding events initiated from the middle of the DNA template and the blunt-ended termini were observed (Figure 3A; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "26cd0a0d-4d8c-408e-9fca-560613084e53",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C45",
+      "claim": "With the increase of RPA concentration, the required force to monitor DNA unwinding significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "With the increase of RPA concentration, the required force to monitor DNA unwinding indeed significantly reduced (Figure 3A and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing force reduction with increasing RPA concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "f3324096-b494-4b14-b8bc-9cb716c112fe",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C46",
+      "claim": "BLM/RPA-mediated DNA unwinding can take place in the absence of any externally applied force.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we demonstrated that BLM/RPA-mediated DNA unwinding can even take place in the absence of any externally applied force (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "3cfa8557-a370-412e-a268-5f82857175df",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C47",
+      "claim": "In the presence of 200 nM RPA and 20 nM BLM, half of examined traces exhibited continuous DNA unwinding at a low force of 5 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that with the presence of 200 nM RPA and 20 nM BLM, half of examined traces exhibited continuous DNA unwinding at a low force of 5 pN (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "b7f99854-b19e-465b-a026-73e5043b9d4e",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C48",
+      "claim": "On average, there were 3.4 independent unwinding events monitored on a single DNA molecule in the presence of 50 nM RPA and 200 nM BLM.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, there were 3.4 independent unwinding events monitored on a single DNA molecule, slightly higher than that without RPA (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "44b86288-3165-4ad9-a8d7-946df99fb168",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C49",
+      "claim": "53% of unwinding events (n = 40) showed bidirectional progression of dsDNA unwinding in the presence of 50 nM RPA and 200 nM BLM under 30 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, careful analyses of fluorescence images on the \u03bb phage DNA under a force of 30 pN revealed that, in addition to the expected unidirectional unwinding events, 53% of them (n = 40) showed bidirectional progression of dsDNA unwinding (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 40 events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "17bb168f-5e1d-409f-90d9-1543d549be61",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C50",
+      "claim": "26 out of 27 traces from experiments with the 6.4 kbp nicked DNA showed DNA unwinding in the presence of BLM and RPA.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these observations, 26 out of 27 traces from the experiments with the 6.4 kbp nicked DNA showed DNA unwinding in the presence of BLM and RPA and 35% of them also exhibited BLM's bidirectional unwinding initiated from the single nick on the template (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 27 traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "c8aafe51-0ce1-47c5-91b3-bdc8fc9dd703",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C51",
+      "claim": "35% of unwinding events on the 6.4 kbp nicked DNA exhibited BLM's bidirectional unwinding initiated from the single nick.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these observations, 26 out of 27 traces from the experiments with the 6.4 kbp nicked DNA showed DNA unwinding in the presence of BLM and RPA and 35% of them also exhibited BLM's bidirectional unwinding initiated from the single nick on the template (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "e049f329-408d-4697-bc93-56acd50f2864",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C52",
+      "claim": "In most examined unwinding events (90%, n = 95), at least one bright spot locating at the end of the newly generated tensioned ssDNA was observed under 30 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in most examined unwinding events (90%, n = 95), we observed at least one bright spot locating at the end of the newly generated tensioned ssDNA under 30 pN (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 95 events using eGFP-RPA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "5bc91b3b-c033-41de-a357-08c190b0ab2f",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C53",
+      "claim": "The bright spots observed with eGFP-RPA are attributed to unwound coiled ssDNA coated by RPA.",
+      "claim_type": "EXPLICIT",
+      "source": "These spots increased in intensity as the unwinding fork progressed, and are thus attributed to unwound coiled ssDNA coated by RPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that spots increase in intensity as unwinding progresses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "3d7580ad-5708-4908-ba5b-ac6824b2c524",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C54",
+      "claim": "23 unwinding events were marked with two spots on both ends of an ssDNA, progressing in opposite directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 23 unwinding events were marked with two spots on both ends of an ssDNA, progressing in opposite directions (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 23 events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "4bc30e05-874c-41c5-97db-dcefd15a59a9",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C55",
+      "claim": "The bidirectional unwinding only initiates from a nick instead of starting an opposite unwinding direction in the middle of an ongoing unidirectional unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, both Sytox and eGFP signals indicated that the bidirectional unwinding only initiates from a nick instead of starting an opposite unwinding direction in the middle of an ongoing unidirectional unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on fluorescence observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "792227f5-229a-4b74-bd99-44af67f0fc35",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C56",
+      "claim": "The average bidirectional unwinding rate (117 \u00b1 25 bp/s, mean \u00b1 SD) was 1.6-fold higher than that of the unidirectional unwinding (72 \u00b1 24 bp/s, mean \u00b1 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "The average bidirectional unwinding rate (117 \u00b1 25 bp/s, mean \u00b1 SD) was 1.6-fold higher than that of the unidirectional unwinding (72 \u00b1 24 bp/s, mean \u00b1 SD) which is slightly faster than that with BLM alone (60 \u00b1 9 bp/s, mean \u00b1 SD) (Figure 4C and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "d2aca819-7c13-46d6-a20d-a3321e872f1e",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C57",
+      "claim": "The unidirectional unwinding rate with RPA (72 \u00b1 24 bp/s) is slightly faster than that with BLM alone (60 \u00b1 9 bp/s).",
+      "claim_type": "EXPLICIT",
+      "source": "The average bidirectional unwinding rate (117 \u00b1 25 bp/s, mean \u00b1 SD) was 1.6-fold higher than that of the unidirectional unwinding (72 \u00b1 24 bp/s, mean \u00b1 SD) which is slightly faster than that with BLM alone (60 \u00b1 9 bp/s, mean \u00b1 SD) (Figure 4C and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "074fc3cb-9bdc-4cc4-8abf-be53036c3ec2",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C58",
+      "claim": "Bidirectional DNA unwinding events were observable under low and zero external forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, bidirectional DNA unwinding events were also observable under low and zero external forces (Figure 3\u2014figure supplement 2 and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "1db935f4-bc47-4e89-9869-ecd1953b3545",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C59",
+      "claim": "hBLM alone initiates unidirectional unwinding from a nick.",
+      "claim_type": "EXPLICIT",
+      "source": "When testing the homologous pair of hBLM and hRPA, results similar to the heterologous combination were obtained: hBLM alone initiates unidirectional unwinding from a nick and hRPA activates its bidirectional unwinding (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data with human BLM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "d45192aa-4e46-47f2-9f12-3988974a560a",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C60",
+      "claim": "hRPA activates hBLM's bidirectional unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "When testing the homologous pair of hBLM and hRPA, results similar to the heterologous combination were obtained: hBLM alone initiates unidirectional unwinding from a nick and hRPA activates its bidirectional unwinding (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data with human BLM and RPA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "b59d33d9-db70-4b08-b5a4-4bba260c21a4",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C61",
+      "claim": "Core-BLM alone unidirectionally unwinds dsDNA from a nick with a relatively slower rate compared with WT BLM.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments verified that core-BLM alone also unidirectionally unwinds dsDNA from a nick with a relatively slower rate compared with WT BLM (Figure 5\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing core-BLM to WT BLM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "5e60c238-e89f-470e-9d24-93ec40a42a97",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C62",
+      "claim": "When RPA was present, both unidirectional (58%) and bidirectional (42%) unwinding events (n = 45) by core-BLM were recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "When RPA was present, both the unidirectional (58%) and bidirectional (42%) unwinding events (n = 45) by this mutant were recorded (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 45 events with core-BLM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "3ded5a19-13db-4048-90a5-d598f9ed8a3d",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C63",
+      "claim": "The rate of bidirectional unwinding by core-BLM is 1.7-fold higher than that of unidirectional unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of the bidirectional unwinding is 1.7-fold higher than that of the unidirectional unwinding, in agreement with the results with WT BLM (Figures 4C and 5D and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "3de4c5c7-b44c-4b7e-8ea8-bc0cd4013d04",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C64",
+      "claim": "BLM's RPA-activated bidirectional unwinding possibly does not rely on the interactions between them.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings resemble the observations with WT BLM, reflecting that BLM's RPA-activated bidirectional unwinding possibly does not rely on the interactions between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that core-BLM lacking RPA-binding domains still shows bidirectional unwinding with RPA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "0c4daeff-2c20-4815-bb40-c27512a9ea4d",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C65",
+      "claim": "In the buffer channel without BLM and RPA, the DNA length slowly decreased and the dark region along the DNA template gradually disappeared, indicating the reannealing of the unwound ssDNA (n = 30).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, in the buffer channel, the DNA length slowly decreased and the dark region along the DNA template gradually disappeared, indicating the reannealing of the unwound ssDNA (n = 30, Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 30 traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "4622a0ac-fc38-4dd7-9ed2-bdee80d243fa",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C66",
+      "claim": "Up to 75% of traces (n = 53) in the RPA-only channel continued DNA unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, we observed that up to 75% of traces (n = 53) in the following RPA channel continued DNA unwinding, and yet only 16% of traces showed continuous unwinding in the BLM channel (n = 38) (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 53 traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "5cca6be1-bbe3-4241-a6a5-b7464b040c99",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C67",
+      "claim": "Only 16% of traces showed continuous unwinding in the BLM-only channel (n = 38).",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, we observed that up to 75% of traces (n = 53) in the following RPA channel continued DNA unwinding, and yet only 16% of traces showed continuous unwinding in the BLM channel (n = 38) (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 38 traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "bc697890-19ba-468a-bdf5-9f8164c8d0e8",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C68",
+      "claim": "Free RPAs in solution are indispensable for promoting continuous dsDNA unwinding by BLM.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that free RPAs in solution are indispensable for promoting continuous dsDNA unwinding by BLM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the channel-switching experiments showing that RPA is necessary for continued unwinding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "859d4813-e4bd-4682-b57f-74981cca5ec2",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C69",
+      "claim": "Limited BLMs recognize and bind to nicks along the DNA template in the BLM channel, and they are stimulated by RPA to unwind a substantial distance without dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the BLM helicase has poor binding ability to intact dsDNA (Shi et al., 2017b), the immediate unwinding observed in the RPA channel suggest that limited BLMs recognize and bind to nicks along the DNA template in the BLM channel, and they are stimulated by RPA to unwind a substantial distance without dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that unwinding continues immediately after switching to RPA channel.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "43fb2435-5cf0-4959-8043-729456131f23",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C70",
+      "claim": "Only 17% of unwinding events (n = 33) showed continued unwinding when RPA-coated DNA template was transported to the BLM and RPA channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 17% of unwinding events (n = 33) showed continued unwinding in this channel (Figure 6\u2014figure supplement 2), in disagreement with the recruitment model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from 33 events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "7a3e6892-e97f-489a-a0e6-d3a6c53b96a6",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C71",
+      "claim": "Once BLM recognizes a nick and initiates unwinding with RPA, only free RPAs are indispensable for its processive unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we conclude that once BLM recognizes a nick and initiates unwinding with RPA, only free RPAs are indispensable for its processive unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the channel-switching experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "20a4d7da-a97a-44ff-85ee-a9a62369f507",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C72",
+      "claim": "ssDNA generated by BLM was immediately coated by free RPA, preventing the separated ssDNAs from reannealing.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings favor the model that ssDNA generated by BLM was immediately coated by free RPA, preventing the separated ssDNAs from reannealing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model inferred from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "4448a81e-b728-4bec-8358-994a4543e908",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C73",
+      "claim": "This is the first observation of helicase bidirectional unwinding from a nick.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first observation, to our knowledge, of helicase bidirectional unwinding from a nick.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "42262e66-35b0-4395-875e-0bdd938a9895",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C74",
+      "claim": "Previous studies of replicative and DNA repair helicases have reported bidirectional unwinding attributable to helicase melting dsDNA internally, which differs from the observed results.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies of replicative and DNA repair helicases have reported bidirectional unwinding attributable to helicase melting dsDNA internally, which differs from our observed results (Rad et al., 2015; Yardimci et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature and contrasts with the current findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "5c88056d-5d27-4992-a2f6-7d6c1c06d944",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C75",
+      "claim": "The inability of BLM to unwind in the opposite direction is mostly likely due to the lack of tension on the relaxed ssDNA which might possibly promote the unwinding activity of BLM.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the physical barriers presented by dsDNA on both directions from a nick are similar, the inability of BLM to unwind in the opposite direction is mostly likely due to the lack of tension on the relaxed ssDNA which might possibly promote the unwinding activity of BLM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed unidirectional unwinding.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "f3ec636f-ee5e-4db8-9bbf-a6b2d73bdda9",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C76",
+      "claim": "The core-BLM lacking the oligomerization domain exhibited unidirectional unwinding from a nick in the absence of RPA, leading to exclusion of the possibility that processive unwinding could depend on oligomerization of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The core-BLM lacking the oligomerization domain also exhibited unidirectional unwinding from a nick in the absence of RPA (Figure 5\u2014figure supplement 1; Karow et al., 1999; Shi et al., 2017a), leading us to exclude the possibility that processive unwinding could depend on oligomerization of the protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on experimental data with core-BLM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "823164b6-5a68-488c-bfdf-83bda008b7b3",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C77",
+      "claim": "Proteins at high concentrations might ensure sufficient binding of the enzyme to the ssDNA generated during an unwinding event, allowing for successive rounds of unwinding and preventing the unwound strands against reannealing.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, proteins at high concentrations might ensure sufficient binding of the enzyme to the ssDNA generated during an unwinding event, allowing for successive rounds of unwinding and preventing the unwound strands against reannealing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for why high protein concentrations are needed.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "559412dd-916f-402d-9be1-842d032dffd9",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C78",
+      "claim": "The bidirectional unwinding necessitates the preloading of more than one helicase at the nick and subsequent binding of RPA on the newly generated ssDNA prolongs the binding and unwinding of BLM at the fork.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we reasoned that the bidirectional unwinding necessitates the preloading of more than one helicase at the nick and subsequent binding of RPA on the newly generated ssDNA prolongs the binding and unwinding of BLM at the fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model inferred from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "42f97a30-87de-48a4-8185-1744b152d85c",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C79",
+      "claim": "The unidirectional unwinding probably results from only one BLM helicase preloading at the nick and the inability of BLM to associate with RPA-coated ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The unidirectional unwinding probably results from only one BLM helicase preloading at the nick and the inability of BLM to associate with RPA-coated ssDNA (Xue et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for unidirectional unwinding, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "5fe413bf-cb0b-417c-933c-50517028e4ff",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C80",
+      "claim": "The long-range end resection in HR initiates from a nick generated by the MRN/X complex once the DSB ends are coated by DNA adducts.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies support a model that the long-range end resection in HR initiates from a nick generated by the MRN/X complex once the DSB ends are coated by DNA adducts (Cannavo and Cejka, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "d58d697d-e8ca-42d4-8019-3c9fd50e4926",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C81",
+      "claim": "The abilities of BLM to recognize and preload on the nick would help identify the locations of DSB and possibly play a role in recruiting other required proteins for the resection.",
+      "claim_type": "EXPLICIT",
+      "source": "It is highly likely that the abilities of BLM to recognize and preload on the nick would help identify the locations of DSB and possibly play a role in recruiting other required proteins for the resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the biological implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "a77c5cbc-fbdd-49be-93b4-5c42c400b52f",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C82",
+      "claim": "The inherent ability of BLM and RPA to unwind bidirectionally from a nick would facilitate the resection by DNA adduct coated DSB ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it needs to be further validated, the inherent ability of BLM and RPA to unwind bidirectionally from a nick would facilitate the resection by DNA adduct coated DSB ends which provides ssDNA for the DNA2/EXO1 nucleases to degrade from 5' to 3' and the MRN complex to degrade from 3' to 5' (Symington, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the biological implications, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "0ebcd663-eb7f-4393-abf5-3431b10af719",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C83",
+      "claim": "Inhibition of MRN exonuclease activity only confers a relatively lower resection defect compared with the inhibition of its endonuclease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, inhibition of MRN exonuclease activity only confers a relatively lower resection defect compared with the inhibition of its endonuclease activity, suggesting that other proteins might also participate in the initial short ssDNA generation (Shibata et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "252c8a3f-4990-4c62-9b9e-768a5772f723",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C84",
+      "claim": "The complete unwinding of the short dsDNA between the nick and the DSB end may serve as an additional pathway in generating the short stretches of ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this notion, the complete unwinding of the short dsDNA between the nick and the DSB end may serve as an additional pathway in generating the short stretches of ssDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about an alternative pathway.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "4549924f-726c-478f-b9af-9e74b4952fdc",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C85",
+      "claim": "The finding that SSB proteins promote helicase-catalyzed dsDNA unwinding from a nick might be conserved among the RecQ-like helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that the SSB proteins promote helicase-catalyzed dsDNA unwinding from a nick might be conserved among the RecQ-like helicases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about conservation across RecQ helicases.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "84d324c9-32bb-4a47-b50a-0fa1f85df192",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C86",
+      "claim": "The RecQ helicase from E. coli is able to promote dsDNA unwinding in both directions in the presence of E. coli SSB.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the RecQ helicase from E. coli is also able to promote dsDNA unwinding in both directions in the presence of E. coli SSB (Rad et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "3a0d1286-c15e-4242-a372-087cc2fcb18c",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C87",
+      "claim": "E. coli RecQ's bidirectional unwinding was initiated by melting dsDNA internally instead of a nick.",
+      "claim_type": "EXPLICIT",
+      "source": "However, its bidirectional unwinding was initiated by melting dsDNA internally instead of a nick, which resembles replicative helicases in DNA replication initiation (Mott and Berger, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "de243cec-6f4e-4ef3-9f96-be55acf51ac1",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C88",
+      "claim": "The unwinding by E. coli RecQ progresses unidirectionally if initiated from a nick.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the unwinding by RecQ progresses unidirectionally if initiated from a nick.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about E. coli RecQ behavior, contrasting with BLM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "034f0a7a-769e-45c9-88a4-4150617b34e7",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C89",
+      "claim": "The Sgs1 helicase was found to unwind dsDNA from blunt-ended termini or a nick with RPA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Sgs1 helicase, the Saccharomyces cerevisiae homologue of BLM, was also found to unwind dsDNA from blunt-ended termini or a nick with RPA (Wang et al., 2018; Xue et al., 2019b), but its unwinding directionality when initiated from a nick has not been determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "12f70721-c134-414f-b8ec-fd76da6d749f",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C90",
+      "claim": "A previous single-molecule FRET study revealed that BLM could not unwind more than 34 bp even in the presence of RPA.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous single-molecule FRET study revealed that BLM could not unwind more than 34 bp even in the presence of RPA (Yodh et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "2ceb535c-0f74-4e74-b88f-94379343719a",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C91",
+      "claim": "The action of applied force on the DNA template can lower the energy required to melt the DNA and prevent reannealing of the separated strands, thus stimulating BLM's unwinding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference may be due to the fact that the action of applied force on the DNA template can lower the energy required to melt the DNA and prevent reannealing of the separated strands, thus stimulating BLM's unwinding activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the difference between the current study and previous FRET study.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "de69748c-4008-4a36-9f0d-da46ba3dc559",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C92",
+      "claim": "hRPA activation of bidirectional unwinding for hBLM, gBLM, and core-gBLM from a nick suggests this activation might be a conserved feature for SSB proteins and RecQ helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the fact that hRPA can activate hBLM's, gBLM's and core-gBLM's bidirectional unwinding form a nick (Figures 4 and 5 and Figure 4\u2014figure supplement 3), this activation might be a conserved feature for the SSB proteins and the RecQ helicases and does not require a homologous system or physical interactions between them.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on experimental data with multiple BLM variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "89f2c770-e075-41cf-9094-cf7740fb3c9b",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C93",
+      "claim": "The activation of bidirectional unwinding does not require a homologous system or physical interactions between SSB proteins and RecQ helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the fact that hRPA can activate hBLM's, gBLM's and core-gBLM's bidirectional unwinding form a nick (Figures 4 and 5 and Figure 4\u2014figure supplement 3), this activation might be a conserved feature for the SSB proteins and the RecQ helicases and does not require a homologous system or physical interactions between them.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on experimental data showing that core-BLM lacking RPA-binding domains still shows activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "8ef1d54b-bf06-4444-816e-7d1d3bb23f29",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C94",
+      "claim": "gBLM has two similar RPA binding domains to the human BLM.",
+      "claim_type": "EXPLICIT",
+      "source": "gBLM (hereafter referred to as BLM) has two similar RPA binding domains to the human BLM (hBLM) and the sequence of its helicase-core domain (core-gBLM) has an 80% identity with the one from hBLM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the structural similarity between gBLM and hBLM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "ad015ab0-7670-41c3-8ee2-c2ee9a13b63e",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C95",
+      "claim": "The sequence of gBLM's helicase-core domain has an 80% identity with the one from hBLM.",
+      "claim_type": "EXPLICIT",
+      "source": "gBLM (hereafter referred to as BLM) has two similar RPA binding domains to the human BLM (hBLM) and the sequence of its helicase-core domain (core-gBLM) has an 80% identity with the one from hBLM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about sequence identity between gBLM and hBLM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "35c46041-74be-4209-83dc-4c7618983de2",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C96",
+      "claim": "The difference in extension between ssDNA and dsDNA under tension results in a change in DNA length once the BLM helicase starts unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in extension between ssDNA and dsDNA under tension would result in a change in DNA length once the BLM helicase started unwinding (Bustamante et al., 2003), thus allowing for monitoring of its unwinding activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and describes the physical principle underlying the measurement.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "c930ff11-9466-4087-a56f-c664312c3cc9",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C97",
+      "claim": "Sytox's immediate dissociation led by converting dsDNA to ssDNA by BLM served as an additional signal for dsDNA unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the fluorescent binding agent Sytox was used as a dsDNA probe, and its immediate dissociation led by converting dsDNA to ssDNA by BLM served as an additional signal for dsDNA unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the use of Sytox as a fluorescent probe in the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "65e4aaf5-d176-4142-b517-ba1b56a24cd2",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C98",
+      "claim": "17% of the unwinding events (n = 12) were observed to progress bidirectionally when DNA tether was switched from BLM channel to RPA channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 17% of the unwinding events (n = 12) were also observed to progress bidirectionally in this experiment, further supporting that this observed unwinding was due to the presence of both BLM and RPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from 12 events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "58ac432e-610a-41d9-8edf-56edc3ab5093",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "claim_id": "C99",
+      "claim": "The BLM helicase has poor binding ability to intact dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the BLM helicase has poor binding ability to intact dsDNA (Shi et al., 2017b), the immediate unwinding observed in the RPA channel suggest that limited BLMs recognize and bind to nicks along the DNA template in the BLM channel, and they are stimulated by RPA to unwind a substantial distance without dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "17bbae25-f858-437e-917f-a1925b5a403d",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "High concentrations of BLM (200 nM) can unidirectionally unwind dsDNA from a nick when external destabilizing forces (10-40 pN) are applied, with an unwinding rate of 60 \u00b1 9 bp/s at 30 pN. Low concentrations of BLM (20 nM) show no unwinding activity under these conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C34-C40 provide converging experimental evidence with appropriate controls (ATP-dependence, Sytox controls) and adequate sample sizes (n=30-49 events). The unidirectional nature is supported by fluorescence imaging showing progression in one direction only, and quantitative rate measurements are provided with standard deviations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "f84d2b17-284c-4755-bca2-6ffce5b83cca",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "BLM exclusively translocates on the intact, tensioned ssDNA strand during unwinding from a nick, as demonstrated using a 6.4 kbp DNA template with a single nick positioned asymmetrically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by experiments using a specifically designed nicked DNA substrate (25/29 molecules showed selective unwinding of the 4.2 kbp segment). The experimental design directly tests strand preference and provides clear evidence for the translocation mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "a8e30f23-c3a1-4923-93e3-ad29398ce136",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RPA stimulates BLM-mediated DNA unwinding by significantly reducing the required destabilizing force. With increasing RPA concentration, unwinding can occur at progressively lower forces, including zero force. Limited quantities of BLM (20 nM) can processively unwind DNA in the presence of RPA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C43-C47 demonstrate RPA's stimulatory effect through systematic force-dependence experiments with appropriate controls (RPA alone cannot unwind DNA). The dose-response relationship between RPA concentration and required force is clearly established, and unwinding at zero force is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "ded8a383-c524-49ee-96e8-23f31b82cb0d",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RPA activates BLM's bidirectional unwinding from a nick, with 53% of unwinding events (n=40) showing bidirectional progression at 30 pN. The bidirectional unwinding rate (117 \u00b1 25 bp/s) is 1.6-fold higher than unidirectional unwinding (72 \u00b1 24 bp/s). This bidirectional mode is observable under low and zero external forces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C49-C58 provide strong evidence for bidirectional unwinding using both Sytox and eGFP-RPA fluorescence imaging (n=40-95 events). The observation of RPA-coated ssDNA spots at both ends of unwinding forks supports the bidirectional mechanism. Quantitative rate measurements with statistical comparisons strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "0286f047-60a3-4558-9a7d-d171ba164f77",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Human BLM (hBLM) exhibits the same unwinding behavior as gallus BLM: hBLM alone initiates unidirectional unwinding from a nick, and hRPA activates its bidirectional unwinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 demonstrate that the observed phenomena are not specific to the heterologous gBLM/hRPA system. The homologous hBLM/hRPA pair shows similar behavior, supporting the generalizability of the findings across species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "86539067-c0f1-4d15-b36a-01e923f9e972",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Core-BLM lacking RPA-binding domains still exhibits RPA-activated bidirectional unwinding (42% of events, n=45), with a 1.7-fold rate increase for bidirectional versus unidirectional unwinding. This indicates that direct BLM-RPA interactions are dispensable for activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C61-C64, C93 provide critical mechanistic insight using a deletion mutant. The observation that core-BLM lacking RPA-binding domains still shows bidirectional unwinding with RPA (n=45 events) strongly supports the conclusion that direct protein-protein interactions are not required for activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "BLM activation by RPA requires BLM targeting on the nick and the presence of free RPA in solution. Channel-switching experiments show that 75% of traces (n=53) continue unwinding when free RPA is present, but only 16% (n=38) continue with BLM alone, indicating free RPA is indispensable for processive unwinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C65-C72 are supported by well-designed channel-switching experiments with adequate sample sizes. The sequential protein incubation assays clearly demonstrate that free RPA in solution is necessary for continued unwinding, while RPA-coated DNA cannot recruit BLM efficiently (17%, n=33). The mechanistic model of RPA coating nascent ssDNA is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "cf521a94-8599-4767-9802-1524dfe68555",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "This is the first observation of helicase bidirectional unwinding from a nick, distinct from previous reports of bidirectional unwinding initiated by internal melting of dsDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 establish the novelty of the finding. The distinction from previous work is clearly articulated with appropriate citations, and the experimental evidence (fluorescence imaging showing initiation from nicks rather than internal melting) supports this claim of novelty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "0cab5947-4634-49f5-a61e-00b686c5e0ce",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The unidirectional unwinding by BLM alone is likely due to lack of tension on relaxed ssDNA and does not depend on protein oligomerization. High protein concentrations may ensure sufficient binding to prevent reannealing. Bidirectional unwinding likely requires preloading of multiple BLM helicases at the nick.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C79 are largely speculative mechanistic explanations. While C76 has experimental support from core-BLM data, the other claims (C75, C77-C79) are presented as inferences without direct experimental validation. These represent reasonable hypotheses but require additional experiments for confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "4799b6d4-1ea4-4dc7-b45a-225643e457d8",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The bidirectional unwinding ability of BLM and RPA from a nick may facilitate DNA end resection in homologous recombination, particularly at DSB ends coated by DNA adducts where resection initiates from a nick generated by the MRN/X complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C84 discuss biological implications and potential in vivo relevance. While C80 and C83 cite prior literature, C81-C82 and C84 are speculative about how the observed in vitro activities might function in vivo. The authors acknowledge this needs further validation (C82), making these claims uncertain without additional cellular or in vivo experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "5ebda1d3-8172-4179-93d3-9d3e55bb0532",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SSB protein activation of helicase unwinding from a nick might be conserved among RecQ-like helicases and does not require a homologous system. E. coli RecQ shows bidirectional unwinding with SSB but from internal melting, while Sgs1 can unwind from nicks with RPA but directionality is undetermined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C89, C92 discuss conservation across RecQ family members. While C86-C87 cite prior work on E. coli RecQ, the speculation about conservation (C85, C92) is based on limited data. The distinction between BLM's nick-initiated bidirectional unwinding and E. coli RecQ's internal melting mechanism is noted, but broader conservation claims require more extensive comparative studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "da075ade-4e62-4d05-86e8-d7c281cf65d3",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The current study's observation of extensive unwinding differs from a previous FRET study showing BLM could not unwind more than 34 bp with RPA. This difference may be due to applied force lowering the energy required to melt DNA and preventing reannealing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 appropriately acknowledge and explain discrepancies with prior work. The explanation that applied force in the current study facilitates unwinding is reasonable and consistent with biophysical principles, though C91 is somewhat speculative about the exact mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "9c388ec4-b543-412b-8425-5c44cb697871",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological importance of BLM and RPA, their known functions in genome maintenance, and the paradox that BLM alone cannot unwind from a nick in vitro despite its involvement in DNA repair processes requiring nick unwinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C33 provide essential background context supported by appropriate citations to prior literature. These establish the biological significance of the study and the knowledge gap being addressed. The paradox between BLM's inability to unwind from nicks in vitro (C23) and its biological functions is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    },
+    {
+      "id": "a52d7de8-46c9-416d-b9a7-042fcc7e6e15",
+      "content_id": "4e4efd87-3336-4ada-b544-8f1291d1fa71",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological details: gBLM has 80% sequence identity with hBLM in the helicase-core domain and similar RPA-binding domains. The experimental approach uses differences in ssDNA/dsDNA extension under tension and Sytox fluorescence to monitor unwinding. BLM has poor binding to intact dsDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C99 describe methodological details and protein characteristics that are well-established or directly measured. These provide important context for interpreting the experimental results and justify the use of gBLM as a model system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:33.781672Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a4ec860a-d9d1-4160-a6cc-a97c945a1e0a",
+      "result_id": "17bbae25-f858-437e-917f-a1925b5a403d"
+    },
+    {
+      "claim_id": "94b74043-1b8d-4b61-b137-927adb91adb4",
+      "result_id": "17bbae25-f858-437e-917f-a1925b5a403d"
+    },
+    {
+      "claim_id": "39c2dfe6-b7ec-42c9-b1e4-119e456e12b9",
+      "result_id": "17bbae25-f858-437e-917f-a1925b5a403d"
+    },
+    {
+      "claim_id": "91d97232-a22a-4f60-8cac-84fce389f78b",
+      "result_id": "17bbae25-f858-437e-917f-a1925b5a403d"
+    },
+    {
+      "claim_id": "cb5483ed-cd73-4eaa-b216-c95c34db8eb5",
+      "result_id": "17bbae25-f858-437e-917f-a1925b5a403d"
+    },
+    {
+      "claim_id": "8e972619-ed14-4bb6-bfcb-c93ff96c9ab4",
+      "result_id": "17bbae25-f858-437e-917f-a1925b5a403d"
+    },
+    {
+      "claim_id": "9e2f1447-c20d-4b9a-9e9c-9770e45fb612",
+      "result_id": "17bbae25-f858-437e-917f-a1925b5a403d"
+    },
+    {
+      "claim_id": "0a3620ab-b76c-4256-83a4-46197ee791fc",
+      "result_id": "17bbae25-f858-437e-917f-a1925b5a403d"
+    },
+    {
+      "claim_id": "3cb0e5c1-c1fa-418f-8be5-664d97def9f0",
+      "result_id": "f84d2b17-284c-4755-bca2-6ffce5b83cca"
+    },
+    {
+      "claim_id": "0dc9001a-b19d-44b8-a294-4f0e486768db",
+      "result_id": "f84d2b17-284c-4755-bca2-6ffce5b83cca"
+    },
+    {
+      "claim_id": "0016cba0-49d0-4bfd-9c99-c68e7e87c318",
+      "result_id": "a8e30f23-c3a1-4923-93e3-ad29398ce136"
+    },
+    {
+      "claim_id": "fdf0b476-bc3a-438b-956a-c3e180debaf2",
+      "result_id": "a8e30f23-c3a1-4923-93e3-ad29398ce136"
+    },
+    {
+      "claim_id": "bdab0cf8-ff3e-4964-b4c8-fcd04ba368a1",
+      "result_id": "a8e30f23-c3a1-4923-93e3-ad29398ce136"
+    },
+    {
+      "claim_id": "26cd0a0d-4d8c-408e-9fca-560613084e53",
+      "result_id": "a8e30f23-c3a1-4923-93e3-ad29398ce136"
+    },
+    {
+      "claim_id": "f3324096-b494-4b14-b8bc-9cb716c112fe",
+      "result_id": "a8e30f23-c3a1-4923-93e3-ad29398ce136"
+    },
+    {
+      "claim_id": "3cfa8557-a370-412e-a268-5f82857175df",
+      "result_id": "a8e30f23-c3a1-4923-93e3-ad29398ce136"
+    },
+    {
+      "claim_id": "9eaed278-2777-4a3c-a8f7-c6c3fa72636b",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "44b86288-3165-4ad9-a8d7-946df99fb168",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "17bb168f-5e1d-409f-90d9-1543d549be61",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "c8aafe51-0ce1-47c5-91b3-bdc8fc9dd703",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "e049f329-408d-4697-bc93-56acd50f2864",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "5bc91b3b-c033-41de-a357-08c190b0ab2f",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "3d7580ad-5708-4908-ba5b-ac6824b2c524",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "4bc30e05-874c-41c5-97db-dcefd15a59a9",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "792227f5-229a-4b74-bd99-44af67f0fc35",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "d2aca819-7c13-46d6-a20d-a3321e872f1e",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "074fc3cb-9bdc-4cc4-8abf-be53036c3ec2",
+      "result_id": "ded8a383-c524-49ee-96e8-23f31b82cb0d"
+    },
+    {
+      "claim_id": "1db935f4-bc47-4e89-9869-ecd1953b3545",
+      "result_id": "0286f047-60a3-4558-9a7d-d171ba164f77"
+    },
+    {
+      "claim_id": "d45192aa-4e46-47f2-9f12-3988974a560a",
+      "result_id": "0286f047-60a3-4558-9a7d-d171ba164f77"
+    },
+    {
+      "claim_id": "9073fc7d-a9fa-4569-a0fb-431a4f291c44",
+      "result_id": "86539067-c0f1-4d15-b36a-01e923f9e972"
+    },
+    {
+      "claim_id": "b59d33d9-db70-4b08-b5a4-4bba260c21a4",
+      "result_id": "86539067-c0f1-4d15-b36a-01e923f9e972"
+    },
+    {
+      "claim_id": "5e60c238-e89f-470e-9d24-93ec40a42a97",
+      "result_id": "86539067-c0f1-4d15-b36a-01e923f9e972"
+    },
+    {
+      "claim_id": "3ded5a19-13db-4048-90a5-d598f9ed8a3d",
+      "result_id": "86539067-c0f1-4d15-b36a-01e923f9e972"
+    },
+    {
+      "claim_id": "3de4c5c7-b44c-4b7e-8ea8-bc0cd4013d04",
+      "result_id": "86539067-c0f1-4d15-b36a-01e923f9e972"
+    },
+    {
+      "claim_id": "89f2c770-e075-41cf-9094-cf7740fb3c9b",
+      "result_id": "86539067-c0f1-4d15-b36a-01e923f9e972"
+    },
+    {
+      "claim_id": "5a3ffd22-1ee9-44c0-b3fa-b040f67ffd3d",
+      "result_id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e"
+    },
+    {
+      "claim_id": "4ff62471-85e6-412c-a479-a40f28df5c8e",
+      "result_id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e"
+    },
+    {
+      "claim_id": "0c4daeff-2c20-4815-bb40-c27512a9ea4d",
+      "result_id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e"
+    },
+    {
+      "claim_id": "4622a0ac-fc38-4dd7-9ed2-bdee80d243fa",
+      "result_id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e"
+    },
+    {
+      "claim_id": "5cca6be1-bbe3-4241-a6a5-b7464b040c99",
+      "result_id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e"
+    },
+    {
+      "claim_id": "bc697890-19ba-468a-bdf5-9f8164c8d0e8",
+      "result_id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e"
+    },
+    {
+      "claim_id": "859d4813-e4bd-4682-b57f-74981cca5ec2",
+      "result_id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e"
+    },
+    {
+      "claim_id": "43fb2435-5cf0-4959-8043-729456131f23",
+      "result_id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e"
+    },
+    {
+      "claim_id": "7a3e6892-e97f-489a-a0e6-d3a6c53b96a6",
+      "result_id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e"
+    },
+    {
+      "claim_id": "20a4d7da-a97a-44ff-85ee-a9a62369f507",
+      "result_id": "6ba1892f-1815-4ea0-b7a6-fadcefff572e"
+    },
+    {
+      "claim_id": "4448a81e-b728-4bec-8358-994a4543e908",
+      "result_id": "cf521a94-8599-4767-9802-1524dfe68555"
+    },
+    {
+      "claim_id": "42262e66-35b0-4395-875e-0bdd938a9895",
+      "result_id": "cf521a94-8599-4767-9802-1524dfe68555"
+    },
+    {
+      "claim_id": "5c88056d-5d27-4992-a2f6-7d6c1c06d944",
+      "result_id": "0cab5947-4634-49f5-a61e-00b686c5e0ce"
+    },
+    {
+      "claim_id": "f3ec636f-ee5e-4db8-9bbf-a6b2d73bdda9",
+      "result_id": "0cab5947-4634-49f5-a61e-00b686c5e0ce"
+    },
+    {
+      "claim_id": "823164b6-5a68-488c-bfdf-83bda008b7b3",
+      "result_id": "0cab5947-4634-49f5-a61e-00b686c5e0ce"
+    },
+    {
+      "claim_id": "559412dd-916f-402d-9be1-842d032dffd9",
+      "result_id": "0cab5947-4634-49f5-a61e-00b686c5e0ce"
+    },
+    {
+      "claim_id": "42f97a30-87de-48a4-8185-1744b152d85c",
+      "result_id": "0cab5947-4634-49f5-a61e-00b686c5e0ce"
+    },
+    {
+      "claim_id": "5fe413bf-cb0b-417c-933c-50517028e4ff",
+      "result_id": "4799b6d4-1ea4-4dc7-b45a-225643e457d8"
+    },
+    {
+      "claim_id": "d58d697d-e8ca-42d4-8019-3c9fd50e4926",
+      "result_id": "4799b6d4-1ea4-4dc7-b45a-225643e457d8"
+    },
+    {
+      "claim_id": "a77c5cbc-fbdd-49be-93b4-5c42c400b52f",
+      "result_id": "4799b6d4-1ea4-4dc7-b45a-225643e457d8"
+    },
+    {
+      "claim_id": "0ebcd663-eb7f-4393-abf5-3431b10af719",
+      "result_id": "4799b6d4-1ea4-4dc7-b45a-225643e457d8"
+    },
+    {
+      "claim_id": "252c8a3f-4990-4c62-9b9e-768a5772f723",
+      "result_id": "4799b6d4-1ea4-4dc7-b45a-225643e457d8"
+    },
+    {
+      "claim_id": "4549924f-726c-478f-b9af-9e74b4952fdc",
+      "result_id": "5ebda1d3-8172-4179-93d3-9d3e55bb0532"
+    },
+    {
+      "claim_id": "84d324c9-32bb-4a47-b50a-0fa1f85df192",
+      "result_id": "5ebda1d3-8172-4179-93d3-9d3e55bb0532"
+    },
+    {
+      "claim_id": "3a0d1286-c15e-4242-a372-087cc2fcb18c",
+      "result_id": "5ebda1d3-8172-4179-93d3-9d3e55bb0532"
+    },
+    {
+      "claim_id": "de243cec-6f4e-4ef3-9f96-be55acf51ac1",
+      "result_id": "5ebda1d3-8172-4179-93d3-9d3e55bb0532"
+    },
+    {
+      "claim_id": "034f0a7a-769e-45c9-88a4-4150617b34e7",
+      "result_id": "5ebda1d3-8172-4179-93d3-9d3e55bb0532"
+    },
+    {
+      "claim_id": "de69748c-4008-4a36-9f0d-da46ba3dc559",
+      "result_id": "5ebda1d3-8172-4179-93d3-9d3e55bb0532"
+    },
+    {
+      "claim_id": "12f70721-c134-414f-b8ec-fd76da6d749f",
+      "result_id": "da075ade-4e62-4d05-86e8-d7c281cf65d3"
+    },
+    {
+      "claim_id": "2ceb535c-0f74-4e74-b88f-94379343719a",
+      "result_id": "da075ade-4e62-4d05-86e8-d7c281cf65d3"
+    },
+    {
+      "claim_id": "f03eb704-a0cc-4161-a1d7-96c217c89ce2",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "43c1d1a4-6a41-4a73-be14-18fa49dc8454",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "5220bb6a-8d96-4d0f-bdda-8d5336578ff5",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "8ba7dc34-66ea-406a-a9f9-d5653a9d304e",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "7be586a0-4fe9-4806-9568-06141ada9403",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "bb79592b-ff67-47f0-b5ff-4a134f73435f",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "cc6102bf-b4ee-44b6-b0e9-3b5103f7338e",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "1f6d41a4-f0b5-4839-8f08-59946ea20b36",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "e388c5c2-464a-4579-8d86-c672bd72ee44",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "60655aa8-7501-4ec1-a7b7-2ca590322865",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "1e659201-3863-44ee-ac9d-6ad0ce399bd7",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "627b46dc-4a34-4e8b-9dd6-24351604eb86",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "30892fc1-9f58-412a-b086-e5e1699ba6e3",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "af4e1bad-535a-4b1b-9b12-0fee0544a1fb",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "5b348d2b-3a71-4096-98cc-a043cbacbc58",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "4d4464ad-d93c-4603-8246-908740fe9556",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "ed9aacb3-6032-4c42-89a8-5fd991e1f023",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "57073875-a395-4e0f-b5fd-840bab629a98",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "d538859e-04df-4a0d-9ea0-bf346218fbb7",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "edfe5ad8-b7ce-4402-9d82-9be231f30aeb",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "e7df983a-346a-4128-88fa-054ebd6d0478",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "c06eddfe-130e-4f24-bc92-e8c46ddd61e5",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "38401c0c-7f11-4a7a-8aca-34a3f800ad2a",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "16f1810f-1a19-4caf-b568-d431dd010469",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "b61dbbe5-d217-4b3b-88f2-8f27fcd509a8",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "2b1be5cd-4b3d-456a-b7cd-00dfad1ee0d5",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "7bc7d7c3-67eb-43d4-94e4-1a95c0ba6a96",
+      "result_id": "9c388ec4-b543-412b-8425-5c44cb697871"
+    },
+    {
+      "claim_id": "8ef1d54b-bf06-4444-816e-7d1d3bb23f29",
+      "result_id": "a52d7de8-46c9-416d-b9a7-042fcc7e6e15"
+    },
+    {
+      "claim_id": "ad015ab0-7670-41c3-8ee2-c2ee9a13b63e",
+      "result_id": "a52d7de8-46c9-416d-b9a7-042fcc7e6e15"
+    },
+    {
+      "claim_id": "35c46041-74be-4209-83dc-4c7618983de2",
+      "result_id": "a52d7de8-46c9-416d-b9a7-042fcc7e6e15"
+    },
+    {
+      "claim_id": "c930ff11-9466-4087-a56f-c664312c3cc9",
+      "result_id": "a52d7de8-46c9-416d-b9a7-042fcc7e6e15"
+    },
+    {
+      "claim_id": "65e4aaf5-d176-4142-b517-ba1b56a24cd2",
+      "result_id": "a52d7de8-46c9-416d-b9a7-042fcc7e6e15"
+    },
+    {
+      "claim_id": "58ac432e-610a-41d9-8edf-56edc3ab5093",
+      "result_id": "a52d7de8-46c9-416d-b9a7-042fcc7e6e15"
+    }
+  ],
+  "comparisons": []
+}

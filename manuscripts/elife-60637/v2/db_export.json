@@ -1,0 +1,1750 @@
+{
+  "submission": {
+    "id": "fa6061ec-74b2-4112-b73b-c9d2408e0147",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:29:49.731757Z",
+    "updated_at": "2025-12-02T19:29:49.731757Z"
+  },
+  "content": [
+    {
+      "id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "submission_id": "fa6061ec-74b2-4112-b73b-c9d2408e0147",
+      "content_type": "manuscript",
+      "content_text": "# PARP1 inhibitors trigger innate immunity via PARP1 trapping-induced DNA damage response\n\n## Authors\n\n- Chiho Kim<sup>1</sup> ([ORCID: 0000-0001-6846-5515](https://orcid.org/0000-0001-6846-5515))\n- Xu-Dong Wang<sup>1</sup> ([ORCID: 0000-0002-8265-1485](https://orcid.org/0000-0002-8265-1485))\n- Yonghao Yu<sup>1</sup> ([ORCID: 0000-0001-8414-4666](https://orcid.org/0000-0001-8414-4666)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, University of Texas Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt is being increasingly appreciated that the immunomodulatory functions of PARP1 inhibitors (PARPi) underlie their clinical activities in various BRCA-mutated tumors. PARPi possess both PARP1 inhibition and PARP1 trapping activities. The relative contribution of these two mechanisms toward PARPi-induced innate immune signaling, however, is poorly understood. We find that the presence of the PARP1 protein with uncompromised DNA-binding activities is required for PARPi-induced innate immune response. The activation of cGAS-STING signaling induced by various PARPi closely depends on their PARP1 trapping activities. Finally, we show that a small molecule PARP1 degrader blocks the enzymatic activity of PARP1 without eliciting PARP1 trapping or cGAS-STING activation. Our findings thus identify PARP1 trapping as a major contributor of the immunomodulatory functions of PARPi. Although PARPi-induced innate immunity is highly desirable in human malignancies, the ability of \u2018non-trapping\u2019 PARP1 degraders to avoid the activation of innate immune response could be useful in non-oncological diseases.\n\n## Introduction\n\nPoly-ADP-ribose polymerase 1 (hereafter referred to as PARP1) is an enzyme that is critically involved in mediating DNA damage response (DDR). Upon sensing the genotoxic stress, PARP1 is recruited to DNA stand breaks and is activated to synthesize negatively charged Poly-ADP-ribose (PAR) polymers. One of the functions of these PAR chains is to serve as a platform to recruit the DDR machinery to repair and resolve these DNA breaks (Ray Chaudhuri and Nussenzweig, 2017; Gibson and Kraus, 2012). Therapeutics that target PARP1 have been proposed as an attractive strategy to treat human malignancies. Indeed, cancers with BRCA1/2 mutations rely on PARP1 for genome integrity, and they are selectively killed by PARP1 inhibitors (PARPi) via the \u2018synthetic lethality\u2019 mechanism (Lord et al., 2015; Lord and Ashworth, 2017; Farmer et al., 2005). Four PARPi (Olaparib, Rucaparib, Niraparib, and Talazoparib) have been approved by the FDA to treat BRCA1/2-deficient breast and/or ovarian cancers (Faraoni and Graziani, 2018). In addition, PARPi are being extensively evaluated in the clinic, either as single agents or in combination with chemo- and radiation-therapy approaches, for the treatment of many other solid tumors (Rouleau et al., 2010; Lord and Ashworth, 2017).\n\nAll FDA-approved PARPi are NAD+-competitive, and it was initially thought that these agents kill tumors simply by inhibiting the catalytic activity of PARP1. However, recent studies suggest that the cytotoxicity of PARPi is ascribed, at least in part, to the ability of these compounds to induce PARP1 trapping (Hopkins et al., 2019; Murai et al., 2012). During DDR, PARP1 is activated to catalyze the Poly-ADP-ribosylation (PARylation) of many proteins, including PARP1 itself. PARylation triggers the release of PARP1 from the DNA lesions, owing to the charge repulsion and steric hinderance introduced by the PAR polymers. PARPi block the synthesis of PAR chains, which causes PARP1 to be trapped on the chromatin. The trapped PARP1 triggers further DNA damage, cell cycle arrest, and eventually, cancer cell death (Lord and Ashworth, 2017; Slade, 2020). Besides the PARylation-dependent mechanism, several recent studies also suggest that although the various clinically relevant PARPi all bind to PARP1, they induce different degrees of PARP1 conformational changes, and in doing so, PARP1 trapping (Lord and Ashworth, 2017; Hopkins et al., 2019; Murai et al., 2014; Shen et al., 2013; Murai et al., 2012).\n\nMany recent studies have provided compelling evidence for a functional link between tumor DNA damage and the immune system, during the treatment of cancers. During chemo- and radiation-therapy, self-DNA is released, and is detected by the cytosolic DNA sensor, cyclic GMP-AMP (cGAMP) synthetase (cGAS). cGAS subsequently produces the second messenger cGAMP. cGAMP binds to Stimulator of Interferon Genes (STING), leading to the recruitment and activation of Tank-binding kinase I (TBK1). TBK1 phosphorylates a transcription factor called interferon regulatory factor 3 (IRF3), resulting in its nuclear translocation, and the IRF3-dependent activation of type I interferon (IFN) signaling (Chen et al., 2016; Ishikawa and Barber, 2008; Li and Chen, 2018; Barber, 2015). Thus, the cGAS-STING pathway plays a vital role not only in protecting the cells against a variety of pathogens, but also in the antitumor immune response. Because PARPi treatment is known to produce cytosolic dsDNA (double-stranded DNA), it has been proposed that the activation of innate immune signaling could be a critical molecular mechanism underlying the therapeutic effect of PARPi (Ding et al., 2018; Shen et al., 2019; Pantelidou et al., 2019; Sen et al., 2019). However, the relative contribution of the two independent, yet interconnected mechanisms (i.e., PARP1 inhibition and PARP1 trapping) in mediating the antitumor immunity of PARPi is not well understood.\n\nIn this study, we show that PARPi treatment induces the antitumor immune response via the cGAS-STING pathway. However, PARPi treatment generates cytosolic dsDNA, only in the presence of the PARP1 protein. PARPi-induced dsDNA is subsequently recognized by cGAS, which leads to the activation of innate immune signaling. We subsequently employed a series of clinically relevant PARPi with different PARP1 trapping activities, as well as a \u2018non-trapping\u2019 PARP1 degrader. We showed that the activation of innate immune signaling is critically dependent on the PARP1 trapping activity of these compounds. These results provide evidence that PARPi-mediated PARP1 trapping, but not the catalytic inhibition of PARP1, is a key determinant for the activation of the innate immune response.\n\n## Results\n\n### PARPi activates innate immune signaling via the cGAS-STING pathway\n\nIt is being increasingly appreciated that chemo- and radiation-therapy cause the formation of cytosolic dsDNA and micronuclei, which, in turn, lead to the activation of the cGAS-STING signaling pathway and inflammatory responses in tumors (Vanpouille-Box et al., 2018; Liang and Peng, 2016; Harding et al., 2017; Mackenzie et al., 2017; Dou et al., 2017; Gl\u00fcck et al., 2017; Vanpouille-Box et al., 2017; Yum et al., 2019). We explored the immunomodulatory functions of PARPi using Talazoparib, which is an FDA-approved PARP1 inhibitor that is known to potently inhibit and trap PARP1 (Figure 1A). We found that Talazoparib treatment was able to induce the formation of cytosolic dsDNA (Figure 1B) as well as \u03b3H2AX (a marker for DNA double strand breaks) (Figure 1C). To evaluate the innate immune response, we examined the phosphorylation of TBK1 (pS172 TBK1) and IRF3 (pS396 IRF3), two critical components in the cGAS-STING pathway (Motwani et al., 2019; Kato et al., 2017). Indeed, Talazoparib treatment dramatically increased both phosphorylation events (Figure 1D and E). Talazoparib treatment also remarkably induced the nuclear translocation of phospho-IRF3 (Figure 1E, right), which is a critical step for IRF3-mediated gene transcription (Kato et al., 2017; Motwani et al., 2019). We then examined the mRNA expression level of a number of known downstream target genes of the cGAS-STING pathway. Consistent with the previous studies (Sun et al., 2013; Parkes et al., 2017; Fu et al., 2020), Talazoparib treatment greatly upregulated the expression of type I interferons (IFN; Inf-\u03b1 and Inf-\u03b2), pro-inflammatory cytokines (Ccl5 and Cxcl10), and interferon-stimulated genes (ISGs; Isg15, Mx1, Mx2, and Ifit3) (Figure 1F, Figure 1\u2014figure supplement 1A). To examine whether the cGAS-STING pathway is necessary for the PARPi-induced innate immune signaling, we depleted cGAS using two independent short hairpin RNAs (shRNAs) (Figure 1G). Knock-down (KD) of cGAS did not interfere with PARP1 trapping (Figure 1\u2014figure supplement 1B) or the subsequent DDR (Figure 1\u2014figure supplement 1C). However, the activation of the innate immune response, as assessed by the level of pS172 TBK1 and the cGAS-STING target genes, was dramatically reduced in cGAS-depleted cells (Figure 1H and I, Figure 1\u2014figure supplement 1D). Taken together, these results demonstrate that PARPi treatment induces the innate immune response via the cGAS-STING pathway.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig1-v2.jpg)\n\n**Figure 1.:** (A) The level of trapped PARP1 in HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the level of PARP1 trapping. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with unpaired Student\u2019s t-test. ***p < 0.001. (B) Staining of cytosolic dsDNA in HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr). Left, representative image of PicoGreen (green) staining. DAPI (blue) was used to visualize the nucleus. Scale bars represent 10 \u03bcm. Right, the graph shows the quantification of the number of cells with cytosolic dsDNA. Values were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates (n\u00a0=\u00a03 fields,\u2265100 cells counted per condition). Significance was determined with unpaired Student\u2019s t-test. ****p < 0.0001. (C) The extent of DNA damage in HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of \u03b3H2AX levels. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with unpaired Student\u2019s t-test. **p < 0.01. (D) The level of pS172 TBK1 in HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of pS172 TBK1 levels. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with unpaired Student\u2019s t-test. **p < 0.01. (E) The level of pS396 IRF3 in HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr). Left, representative image of pS396 IRF3 levels (green). DAPI (blue) was used to visualize the nucleus. Scale bars represent 20 \u03bcm. Right, the graph shows the quantification of the number of cells stained positive for pS396 IRF3 in nucleus. Values were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates (n\u00a0=\u00a03 fields,\u2265100 cells counted per condition). Significance was determined with unpaired Student\u2019s t-test. ***p < 0.001. (F) RT-qPCR of type I interferons levels in HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr). Values of Inf-\u03b1 and Inf-\u03b2 were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with unpaired Student\u2019s t-test. *p < 0.05, **p < 0.01. (G) Knock-down of cGAS. HeLa cells expressing the control shRNA (shScramble) or shcGAS (shcGAS #1 or #2) were probed using the indicated antibodies. Right, the graph shows the ratio of cGAS depletion. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001. (H) Depletion of cGAS abolishes PARPi-induced activation of innate immune signaling. HeLa cells expressing shRNA against control (shScramble) or cGAS (shcGAS #1 or #2) were treated with or without Talazoparib (10 \u00b5M for 72 hr). The cells were lysed and were immunoblotted using the indicated antibodies. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with two-way ANOVA. ****p < 0.0001, n.s., not significant. (I) RT-qPCR analyses of type I interferons. HeLa cells expressing shRNA against control (shScramble) or cGAS (shcGAS #1 or #2) were treated with or without Talazoparib (10 \u00b5M for 72 hr). Values of Inf-\u03b1 and Inf-\u03b2 mRNA levels were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with unpaired Student\u2019s t-test. ****p < 0.0001, n.s., not significant.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) RT-qPCR analyses of cGAS-STING target gene expression in HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr).\u00a0Values of cytokines and ISGs mRNA levels were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with unpaired Student\u2019s t-test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (B) The levels of trapped PARP1 in HeLa cells expressing shRNA against control (shScramble) or cGAS (shcGAS #1 or #2) that were treated with or without Talazoparib (10 \u00b5M for 72 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the levels of PARP1 trapping. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with two-way ANOVA. ***p < 0.001, n.s., not significant. (C) The extent of DNA damage in HeLa cells expressing shRNA against control (shScramble) or cGAS (shcGAS #1 or #2) that were treated with or without Talazoparib (10 \u00b5M for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of \u03b3H2AX levels. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with two-way ANOVA. ***p < 0.001, n.s., not significant. (D) RT-qPCR analyses of cGAS-STING target gene expression in HeLa cells expressing shRNA against control (shScramble) or cGAS (shcGAS #1 or #2) that were treated with or without Talazoparib (10 \u00b5M for 72 hr). Values of cytokines and ISGs mRNA levels were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with two-way ANOVA. ***p < 0.001, ****p < 0.0001, n.s., not significant.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (E) The levels of trapped PARP1 in MHH-ES-1 cells treated with or without Talazoparib (1\u00a0\u00b5M\u00a0for\u00a024\u00a0hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the level of PARP1 trapping. Values were presented as means \u00b1 SD from three biological replicates. Significance was determined with unpaired Student\u2019s t-test.\u00a0**p < 0.01. (F) The extent of DNA damage in MHH-ES-1 cells treated with or without Talazoparib (1\u00a0\u00b5M\u00a0for\u00a024\u00a0hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of \u03b3H2AX levels. Values were presented as means \u00b1 SD from three biological replicates. Significance was determined with unpaired Student\u2019s t-test.\u00a0**p < 0.01. (G) The level of pS172 TBK1 in MHH-ES-1 cells treated with or without Talazoparib (1\u00a0\u00b5M\u00a0for\u00a024\u00a0hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of pS172 TBK1 levels. Values were presented as means \u00b1 SD from three biological replicates. Significance was determined with unpaired Student\u2019s t-test.\u00a0**p < 0.01. (H) Reproducibility of the TMT experiments. The signal-to-noise (SN) values of the corresponding TMT channels for each protein was extracted from the two biological replicate experiments. (I) Quantification of protein expression in MHH-ES-1 cells treated with Talazoparib 1 \u00b5M for 24 hr (Supplementary file 1). Top, the graph shows the log2\u00a0value of total protein expression in Talazoparib-treated vs. DMSO control. Bottom, the heatmap shows quantification reproducibility of the up- and down-regulated protein. Red: up-regulated proteins; Green: down-regulated proteins. (J) GO analysis of the up-regulated proteins as shown in (I).\u00a0The list shows the top 10 enriched biological processes of the up-regulated proteins. (K) RT-qPCR analyses of the cGAS-STING target gene expression in MHH-ES-1 cells treated with or without Talazoparib (1\u00a0\u00b5M\u00a0for\u00a024\u00a0hr). Values of type I interferons, cytokines, and ISGs mRNA levels were presented as means \u00b1 SEM from three biological replicates. Significance was determined with unpaired Student\u2019s t-test.\u00a0*p < 0.05,\u00a0**p < 0.01,\u00a0***p < 0.001,\u00a0****p < 0.0001.\n\nTo examine the immunomodulatory effects of PARPi in an unbiased manner, we performed isobaric labeling-based, global protein expression analysis in Talazoparib-treated MHH-ES-1 cells (an Ewing\u2019s sarcoma cell line that is highly sensitive to PARPi) (Gill et al., 2015). Talazoparib treatment was able to induce potent PARP1 trapping, \u03b3H2AX formation and TBK1 phosphorylation in this cell line (Figure 1\u2014figure supplement 2E\u2013G). Cells treated with DMSO or Talazoparib were lysed, and the proteins were digested with the resulting peptides labeled with the corresponding tandem mass tag (TMT) reagents. From this dataset, we were able to identify and quantify a total of 9545 proteins (protein false-discovery rate (FDR)\u00a0<\u00a01%) (Supplementary file 1). Correlation analysis revealed an excellent reproducibility between the biological replicate samples (Figure 1\u2014figure supplement 2H). Compared to control, a total of 270 and 395 proteins were up- and down-regulated by at least two-fold, respectively, in Talazoparib-treated cells (Figure 1\u2014figure supplement 2I). Intriguingly, gene ontology (GO) analyses of the up-regulated proteins showed that these proteins were highly enriched with biological processes connected to innate immune signaling (e.g., type I interferon signaling pathway, p=2.79\u00a0\u00d7\u00a010\u22125 and immune response p=8.04\u00a0\u00d7\u00a010\u22125), which we validated using independent RT-qPCR assays (Figure 1\u2014figure supplement 2J and K, Supplementary file 2). For example, we identified Interleukin 1\u03b1 (IL1A) as one of the Talazoparib-induced, up-regulated cytokines in our quantitative proteomic dataset. Furthermore, Talazoparib treatment also induced the coordinated upregulation of several immune signaling proteins, including ISG15, IFIT3, MX1 and MX2 (Supplementary file 1).\n\n### PARP1 trapping is required for the PARPi-induced innate immune signaling\n\nBecause all FDA-approved PARPi possess both PARP1 trapping and PARP inhibition activities, we used a genetic method to assess their relative contribution to PARPi-induced activation of the cGAS-STING pathway. Specifically, we generated PARP1 knock-out (KO) HeLa cells (Figure 2\u2014figure supplement 1A) and found that Talazoparib treatment only induced PARP1 trapping in the wild-type (WT) cells, but not in PARP1 KO cells (Figure 2A). Accordingly, DDR, as detected by \u03b3H2AX, was also only elevated in the PARP1 WT cells (Figure 2B). Next, we evaluated whether the deletion of the PARP1 protein affects the PARPi-induced activation of the cGAS-STING pathway. As we expected, Talazoparib treatment led to a dramatic increase of pS172 TBK1 only in the PARP1 WT cells, but not PARP1 KO cells (Figure 2C). Talazoparib-induced IRF3 phosphorylation and its nuclear translocation were also blocked by PARP1 deletion (Figure 2D). Finally, PARP1 deletion also greatly diminished Talazoparib-induced expression of cGAS-STING target genes (Figure 2E, Figure 2\u2014figure supplement 1B). These data indicate that the PARP1 protein is required for the PARPi-mediated activation of innate immune signaling.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig2-v2.jpg)\n\n**Figure 2.:** (A) PARPi-induced PARP1 trapping in wild-type (WT) and PARP1 knockout (KO) HeLa cells. Cell were also treated with or without Talazoparib (10 \u00b5M for 72 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the level of PARP1 trapping. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with two-way ANOVA. ****p < 0.001, n.s., not significant. (B) DDR in WT and PARP1 KO HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of \u03b3H2AX levels. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with two-way ANOVA. ***p < 0.001, n.s., not significant. (C) The level of pS172 TBK1 in WT and PARP1 KO HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of pS172 TBK1 levels. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with two-way ANOVA. ****p < 0.0001, n.s., not significant. (D) Staining of pS396 IRF3 levels in WT and PARP1 KO HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr). Left, a representative image of pS396 IRF3 levels (green). DAPI (blue) was used to visualize the nucleus. Right, the graph shows the quantification of the number of cells stained positive for pS396 IRF3 in the nucleus. Values were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with two-way ANOVA. ****p < 0.0001, n.s., not significant. (E) RT-qPCR analyses of type I interferons in WT and PARP1 KO HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr). Values of Inf-\u03b1 and Inf-\u03b2 mRNA levels were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with two-way ANOVA. *p < 0.05, **p < 0.01, n.s., not significant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The level of PARP1 in WT and PARP1 KO HeLa cells. Whole cell lysates were probed using the indicated antibodies. GAPDH used as the loading control.\u00a0(B) RT-qPCR analyses of cGAS-STING target gene expression in WT and PARP1 KO HeLa cells that were treated with or without Talazoparib (10 \u00b5M for 72 hr). Values of cytokines and ISGs mRNA levels were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with two-way ANOVA. **p < 0.01, ***p < 0.001, ****p < 0.001, n.s., not significant.\n\nWe surveyed a series of clinically relevant PARPi, including Talazoparib, Niraparib, Rucaparib, Olaparib, and Veliparib. Consistent with previous studies, these compounds all potently blocked the enzymatic activity of PARP1 (Figure 3\u2014figure supplement 1A). However, these compounds were able to induce different levels of PARP1 trapping (PARP1 trapping levels: Talazoparib > Niraparib > Rucaparib \u2248 Olaparib\u00a0>\u00a0Veliparib) (Figure 3A). Interestingly, DDR as measured by \u03b3H2AX was correlative with respect to the level of PARP1 trapping elicited by these PARPi (DNA damage levels: Talazoparib > Niraparib > Rucaparib \u2248 Olaparib\u00a0>\u00a0Veliparib) (Figure 3B). Accordingly, the cytotoxicity of these compounds also positively correlated with their PARP1 trapping activities (Figure 3\u2014figure supplement 1D). Finally, the activation of the cGAS-STING pathway, as measured by the pS172 TBK level, also correlated with PARP1 trapping (Figure 3C). As an example, compared to Rucaparib, Talazoparib was able to induce a much stronger activation of the cGAS-STING pathway (Figure 3\u2014figure supplement 1B). Taken together, these results showed that the level of PARP1 trapping, DNA damage, cytotoxicity and cGAS-STING activation was all positively correlated for the various PARPi (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig3-v2.jpg)\n\n**Figure 3.:** (A) The level of trapped PARP1 in HeLa cells treated with or without the indicated PARPi (10 \u00b5M for 72 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the level of PARP1 trapping. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with one-way ANOVA. *p < 0.05, ***p < 0.001. (B) The extent of DNA damage in HeLa cells treated with or without the indicated PARPi (10 \u00b5M for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of \u03b3H2AX levels. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with one-way ANOVA. **p < 0.01, ***p < 0.001. (C) The level of pS172 TBK1 in HeLa cells treated with or without the indicated PARPi (10 \u00b5M for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of pS172 TBK1 levels. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with one-way ANOVA. *p < 0.05, ***p < 0.001. (D) Heatmap of PARP1 trapping, DNA damage, and pS172 TBK1 levels for each PARPi. The normalized levels of PARP1 trapping (A), \u03b3H2AX (B), and pS172 TBK1 (C) are shown. (E) PARPi does not induce the trapping of a PARP1 mutant with defective DNA binding. Top, HeLa PARP1 KO cells expressing WT PARP1 or R138C mutant PARP1 (R138C) were treated with or without Talazoparib (10 \u00b5M for 72 hr). Chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the levels of PARP1 trapping. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with two-way ANOVA. **p < 0.01, ***p < 0.001. (F) The extent of DNA damage in HeLa PARP1 KO cells expressing WT PARP1 or R138C PARP1 that were treated with or without Talazoparib (10 \u00b5M for 72 hr). Left, whole cell lysates were probed using the indicated antibodies. Right, the graph shows the quantification of \u03b3H2AX and pS172 TBK1 levels. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with two-way ANOVA. **p < 0.01, ***p < 0.001. (G) RT-qPCR analyses of type I interferons in HeLa PARP1 KO cells expressing WT or R138C PARP1 that were treated with or without Talazoparib (10 \u00b5M for 72 hr). Values of Inf-\u03b1 and Inf-\u03b2 mRNA levels were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with two-way ANOVA. **p < 0.01, ***p < 0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The levels of PAR signals in HeLa cells treated with the indicated PARPi (10 \u00b5M for 72 hr).\u00a0Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of PAR levels. GAPDH was used as the loading control. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001. (B) RT-qPCR analyses of cGAS-STING target gene expression in HeLa cells treated with Talazoparib or Rucaparib (10 \u00b5M for 72 hr). Values of type I interferons, cytokines, and ISGs mRNA levels were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with one-way ANOVA. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (C) RT-qPCR analyses of cGAS-STING target gene expression in HeLa PARP1 KO cells expressing PARP1 WT or R138C that were treated with or without Talazoparib (10 \u00b5M for 72 hr). Values of cytokines and ISGs mRNA levels were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with one-way ANOVA. **p < 0.01, ***p < 0.001. (D) Cell death analyses. MHH-ES-1 cells were treated with the PARP inhibitors as indicated (1 \u00b5M for 24 hr). Cell viability was measured by CellTiter-Glo assays. Cell survival is presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001, ****p < 0.0001.\n\nTo further explore the role of PARP1 trapping in mediating the innate immune response of the PARPi, we employed a PARP1 mutant (R138C) that was identified from a chemical-induced mutagenesis screen performed in mouse embryonic stem cells (mESCs) (Herzog et al., 2018). This PARP1 mutant bears a significantly reduced DNA binding capability, and as a result, it cannot be trapped on the chromatin upon the treatment of PARPi. We generated PARP1 KO cells, and reconstituted these cells using either WT PARP1 or the PARP1 R138C mutant. Talazoparib treatment dramatically elevated the levels of PARP1 trapping in WT PARP1-reconsistuted cells, but not in cells reconstituted with the PARP1 R138C mutant (Figure 3E). Cells expressing the PARP1 R138C mutant also had greatly reduced DDR, upon Talazoparib treatment (Figure 3F). Finally, the expression of the PARP1 R138C mutant also prevented Talazoparib-induced activation of the cGAS-STING pathway (Figure 3F and G, Figure 3\u2014figure supplement 1C). These results strongly supported the notion that PARP1 trapping is a prerequisite for the PARPi-induced activation of innate immune signaling.\n\n### PARP1 degraders block PARP1 without eliciting PARP1 trapping or the subsequent innate immune signaling\n\nUsing the Proteolysis Targeting Chimera (PROTAC) strategy, we recently developed a series of small molecule compounds that selectively degrade PARP1 (Wang et al., 2019). These compounds were derived by linking a PARPi (e.g., Rucaparib) and an E3 binder (e.g., pomalidomide) by a covalent chemical linker. Unlike regular PARPi, these compounds block both the enzymatic and scaffolding effects of PARP1, and thereby could dissect PARP1 inhibition vs. PARP1 trapping. Consistent with the notion that PARP1 trapping is a major contributor of the PARPi-induced cytotoxicity (Wang et al., 2019), the treatment of HeLa cells using one such compound (iRucaparib-AP6) led to robust downregulation of PARP1 in HeLa cells. In contrast, the parent compound (Rucaparib) only induced the cleavage, but not the degradation of PARP1, presumably because of its toxicity in these cells (Figure 4A). Using a different cell line system (i.e., MHH-ES-1), we also showed that Rucaparib, but not iRucaparib-AP6, strongly promoted cell death (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig4-v2.jpg)\n\n**Figure 4.:** (A) The level of PARP1 in HeLa cells treated with either Rucaparib or iRucaparib-AP6 (10 \u00b5M for 72 hr). Whole cell lysates were probed using the indicated antibodies. GAPDH was used as the loading control. (B) The level of trapped PARP1 in HeLa cells treated with either Rucaparib or iRucaparib-AP6 (10 \u00b5M for 72 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the level of PARP1 trapping. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001. (C) The extent of DNA damage in HeLa cells treated with either Rucaparib or iRucaparib-AP6 (10 \u00b5M for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of \u03b3H2AX levels. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001. (D) The level of pS172 TBK1 in HeLa cells treated with either Rucaparib or iRucaparib-AP6 (10 \u00b5M for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of pS172 TBK1 levels. Values were presented as means\u00a0\u00b1\u00a0SD from three biological replicates. Significance was determined with one-way ANOVA. **p < 0.01. (E) RT-qPCR analyses of the cGAS-STING target gene expression in HeLa cells treated with either Rucaparib or iRucaparib-AP6 (10 \u00b5M for 72 hr). Values of type I interferons, cytokines, and ISGs mRNA levels were presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with one-way ANOVA. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (F) The model of the activation of innate immune response via PARPi-induced PARP1 trapping.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Cell death analyses.\u00a0MHH-ES-1 cells were treated with Rucaparib or iRucaparib-AP6 as indicated (1 \u00b5M for 24 hr). Cell viability was measured by CellTiter-Glo assays. Cell survival is presented as means\u00a0\u00b1\u00a0SEM from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001, ****p < 0.0001.\n\nConsistent with the diminished pool of total PARP1, iRucaparib-AP6 treatment resulted in minimal PARP1 trapping and \u03b3H2AX formation (Figure 4B and C). Accordingly, the level of pS172 TBK1 were dramatically increased in Rucaparib-treated, but not in iRucaparib-AP6-treated cells (Figure 4D). We examined the expression of cGAS-STING target genes in these cells, and found that Rucaparib, but not iRucaparib-AP6, treatment significantly elevated the mRNA levels of type I IFNs, pro-inflammatory cytokines and ISGs (Figure 4E).\n\n## Discussion\n\nSince Rudolf Virchow observed the possible link between the immune system and tumors using lymphoid cells in a tumor in 1863, to use the immune system promoting antitumor response has been confirmed as one of the major breakthroughs in oncology, yielding the possibility of long-term clinical benefit and prolonged survival (Zitvogel et al., 2008; Swann and Smyth, 2007). The innate immune system as one of antitumor immune responses is composed of molecules and cells that respond to external and internal danger signals such as pathogen-associated molecular patterns (PAMPs) and damage-associated molecular patterns (DAMPs). PAMPs and DAMPs bind to their respective pattern recognition receptors (PRRs) to initiate immune responses. Thus, cytosolic PRRs including nucleotide-binding oligomerization domain\u2013like receptors, retinoic acid\u2013inducible gene I\u2013like receptors (RLRs), and cGAS detect intracellular pathogens (Wu and Chen, 2014). Upon ligand binding, PRRs activate downstream signaling cascades to induce inflammatory responses such as the innate immune response, providing early protection against pathogen invasion or cellular damage.\n\nUnlike normal cells, cancer cells are often replete with cytosolic dsDNA that originates from genomic, mitochondrial, and exogenous sources (Vanpouille-Box et al., 2018). Accumulating data have been reported that acute genomic stressors, including radiation, cisplatin, and intrinsic DNA damage generate cytosolic dsDNA and micronuclei to activate cGAS\u2013STING in cancer cells (Ahn et al., 2014; Harding et al., 2017; Mackenzie et al., 2017; Dou et al., 2017). The role of PARPi as an inducer of DNA damage response has been well established to explain the cytotoxic effects of these compounds. However, accumulating evidence have pointed out that coordinated activation of both local and systemic antitumor immune responses could also underlie the antitumor effects of PARPi (Pantelidou et al., 2019; Ding et al., 2018; Chabanon et al., 2019).\n\nConsistent with these previous studies, our date showed that PARPi treatment results in the robust production of cytosolic dsDNA, which leads to the subsequent activation of cGAS-STING signaling and the downstream innate immune pathway. The current PARPi are known to kill tumors via two distinct, but interconnected, mechanisms (i.e., PARP1 inhibition vs. PARP1 trapping) (Zhen and Yu, 2018; Zhang et al., 2013; Wang et al., 2019). The relative contribution of these two mechanisms in PARPi-mediated innate immune signaling, however, is poorly understood. Here, we sought to address this important question by using several independent systems. First, we found that the PARP1 protein is required for the PARPi-induced activation of cGAS-STING signaling. Indeed, Talazoparib was unable to cause PARP1 trapping, DDR and TBK1 activation in PARP1 KO cells. It is also important to note that the deletion of PARP1 alone does not lead to TBK1 activation and the expression of inflammatory genes, suggesting that the blockage of PARP1 catalytic activity is not sufficient to drive the activation of cGAS-STING signaling. Second, we found that the DNA-binding activity of PARP1 is required for the PARPi-induced activation of cGAS-STING signaling. Specifically, we employed a recently described PARP1 mutant (R138C) that was identified from an EMS-induced random mutagenesis screen for resistance to a PARPi (i.e., Olaparib) (Herzog et al., 2018). This mutant is defective for DNA binding and PARP1 trapping, and mouse embryonic stem cells (mESCs) that bear this mutation are resistant to Olaparib. We generated PARP1-deleted cells and reconstituted them with either WT PARP1 or the PARP1 R138C mutant. We found that Talazoparib was able to induce DDR and cGAS-STING signaling only in cells expressing WT PARP1, but not the PARP1 R138C mutant. Third, we utilized a panel of 5 clinically relevant PARPi (i.e., Talazoaprib, Niraparib, Rucaparib, Olaparib, and Veliparib) (Lord and Ashworth, 2017). While these compounds all potently blocked the formation of PAR, they displayed a dramatically different capability in inducing PARP1 trapping. Indeed, a recent study showed that the different structural elements within these PARPi drive, in an allosteric manner, the release or retention of these compounds at a DNA break (Zandarashvili et al., 2020). Intriguingly, these compounds then induce DDR and activation of cGAS-STING signaling that is closely correlated with the degree of PARP1 trapping (Figure 3A\u2013D, Figure 3\u2014figure supplement 1A and D). Fourth, we utilized that a recently developed, \u2018non-trapping\u2019 PARP1 degrader (iRucaparib-AP6) (Wang et al., 2019). This compound is cell-membrane permeable and is able to block the enzymatic activity of PARP1. However, unlike regular PARPi, iRucaparib-AP6 degrades PARP1, which prevents PARP1 trapping, DDR, cytotoxicity, and finally, the activation of cGAS-STING signaling (Figure 4, Figure 4\u2014figure supplement 1). Finally, recent studies have pointed to cytosolic dsDNA as a source of stimulus for the activation of cGAS-STING pathway (Sun et al., 2013; Wu et al., 2014; Civril et al., 2013). In the context of PAPRi, cytosolic dsDNA could result from PARPi-induced PARP1 trapping, and subsequently, stalled or collapsed replication forks. The detailed molecular underpinnings of this critical pathway need to be addressed in future studies.\n\nIn conclusion, we have identified a direct mechanism of the antitumor immune response of PARPi (Figure 4F). We demonstrated that the ability to induce PARP1 trapping is the primary driver for the PARPi-mediated cytotoxicity and activation of innate immune signaling in cancer cells. In the presence of PARP1, PARPi-induced PARP1 trapping generates cytosolic dsDNA, which activates cGAS, and the downstream innate immune response. Although the immunomodulatory roles of PARPi are highly desirable in human malignancies, the ability for PARP1 degraders to prevent PARP1 trapping, and hence the activation of innate immune response could be useful in other contexts (e.g., ischemia-reperfusion injury and neurodegenerative diseases). The full therapeutic potential of this class of compounds warrants further studies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PAR (Mouse monoclonal)</td>\n      <td>Trevigen</td>\n      <td>Cat# 4335-MC-100, RRID:AB_2572318</td>\n      <td>IB (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PARP1 (Rabbit polyclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 9542, RRID:AB_2160739</td>\n      <td>IB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b3H2AX (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 9718, RRID:AB_2118009</td>\n      <td>IB (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Histone H3 (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 4499, RRID:AB_10544537</td>\n      <td>IB (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GAPDH (Mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-32233, RRID:AB_627679</td>\n      <td>IB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Phospho-TBK1/NAK (pS172 TBK1) (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 5483, RRID:AB_10693472</td>\n      <td>IB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TBK1/NAK (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 3504, RRID:AB_2255663</td>\n      <td>IB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Flag (Rabbit polyclonal)</td>\n      <td>MilliporeSigma</td>\n      <td>Cat# F7425, RRID:AB_439687</td>\n      <td>IB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-cGAS (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 15102, RRID:AB_2732795</td>\n      <td>IB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Phospho-IRF-3 (pS396 IRF3) (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 4947, RRID:AB_823547</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488-conjugated goat anti-rabbit IgG (Goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A32731, RRID:AB_2633280</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat Anti-Mouse IgG Antibody, HRP conjugate, Species Adsorbed (Goat polyclonal)</td>\n      <td>MilliporeSigma</td>\n      <td>Cat# AP181P, RRID:AB_11214094</td>\n      <td>IB (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ECL Rabbit IgG, HRP-linked fragment (Donkey polyclonal)</td>\n      <td>GE Healthcare life sciences</td>\n      <td>Cat# NA9340, RRID:AB_772191</td>\n      <td>IB (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Talazoparib</td>\n      <td>Selleck</td>\n      <td>Cat# S7048</td>\n      <td>PARP1 inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Niraparib</td>\n      <td>Selleck</td>\n      <td>Cat# S2741</td>\n      <td>PARP1 inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rucaparib</td>\n      <td>Selleck</td>\n      <td>Cat# S1098</td>\n      <td>PARP1 inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Olaparib</td>\n      <td>Selleck</td>\n      <td>Cat# S1060</td>\n      <td>PARP1 inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Veliparib</td>\n      <td>Selleck</td>\n      <td>Cat# S1004</td>\n      <td>PARP1 inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>iRucaparib-AP6</td>\n      <td>Our laboratory</td>\n      <td>N/A</td>\n      <td>PARP1 degrader</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polybrene (Hexadimethrine bromide)</td>\n      <td>MilliporeSigma</td>\n      <td>Cat# H9268; CAS 28728-55-4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Puromycin</td>\n      <td>MilliporeSigma</td>\n      <td>Cat# P7255; CAS 58-58-2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HeLa</td>\n      <td>ATCC</td>\n      <td>Cat# CCL-2, RRID:CVCL_0030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HeLa PARP1 KO</td>\n      <td>In this study</td>\n      <td>N/A</td>\n      <td>PARP1 deficient HeLa</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>MHH-ES-1</td>\n      <td>DSMZ</td>\n      <td>Cat# ACC 167, RRID:CVCL_1411</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HeLa</td>\n      <td>ATCC</td>\n      <td>Cat# CCL-2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV-hPARP1-3xFlag-WT</td>\n      <td>Addgene</td>\n      <td>Cat# 11157</td>\n      <td>In pCMV; tagged with 3XFlag on its N-terminus</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV-hPARP1-3xFlag-R138C</td>\n      <td>In this study</td>\n      <td>Modified by R138C mutation</td>\n      <td>In pCMV; tagged with 3XFlag on its N-terminus</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH5alpha</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 18258012</td>\n      <td>Competent cells</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Stbl3 Competent E.\u00a0coli</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# C737303</td>\n      <td>Competent cells</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Quant-iT PicoGreen dsDNA Reagent</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# P7581</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Subcellular Protein Fractionation Kit for Cultured Cells</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 78840</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNeasy Mini Kit</td>\n      <td>QIAGEN</td>\n      <td>Cat# 74104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>QIAprep Spin Miniprep Kit</td>\n      <td>QIAGEN</td>\n      <td>Cat# 27106</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>e-Myco PLUS Mycoplasma PCR Detection Kit</td>\n      <td>BOCA SCIENTIFIC</td>\n      <td>Cat# 25237</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TMT6plex Mass Tag Labeling Kits</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 90110</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CellTiter-Glo Luminescent Cell Viability Assay</td>\n      <td>Promega</td>\n      <td>Cat# G7571</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ 1.49 v</td>\n      <td>NIH</td>\n      <td>https://imagej.net/ImageJ2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DAVID Bioinformatics Resources v6.8</td>\n      <td>DAVID</td>\n      <td>https://david.ncifcrf.gov/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PRISM v8.2.0</td>\n      <td>GraphPad</td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>human protein sequences (Uniprot)</td>\n      <td>UniProt</td>\n      <td>https://www.uniprot.org/UniProt database (2019_07,560,537 sequences;taxonomy, Homo sapiens, 20,431 )</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>human IPI protein database v3.60</td>\n      <td>EMBL-EBI</td>\n      <td>ftp://ftp.ebi.ac.uk/pub/databases/IPI</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>The Sequest algorithm v28</td>\n      <td>Cell. 2010 Dec 3;143(7):1174\u201389</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>DAPI</td>\n      <td>MilliporeSigma</td>\n      <td>Cat# D9542</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>Dimethyl sulfoxide (DMSO)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# BP231-1; CAS 67-68-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>Lipofectamine 2000</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 11668500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>Dulbecco\u2019s Modified Eagle\u2019s Medium (DMEM)</td>\n      <td>MilliporeSigma</td>\n      <td>Cat# D5796</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>RPMI1640</td>\n      <td>MilliporeSigma</td>\n      <td>Cat# R8758</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>Fetal Bovine Serum (FBS)</td>\n      <td>MilliporeSigma</td>\n      <td>Cat# 12303C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>Lysyl Endopeptidase (Lys-C)</td>\n      <td>Wako</td>\n      <td>Cat# 129\u201302541; CAS 123175-82-6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>Gen5</td>\n      <td>BioTek</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>BCA reagents</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 23224/23228</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>0.45 \u03bcm filter</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 05-713-387</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>Synergy HT Multi-Detection Microplate Reader.</td>\n      <td>BioTek</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>SuperScript III Reverse Transcriptase</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 18080044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>CFX384 Touch Real-Time PCR Detection System</td>\n      <td>Bio-Rad</td>\n      <td>Cat# 1855484</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>Applied Biosystems Power SYBR Green PCR Master Mix</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 43-676-59</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>Oasis HLB solid-phase extraction (SPE) cartridges</td>\n      <td>Waters</td>\n      <td>Cat# 186000383</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>3M Empore C18 Extraction Disk</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 14-386-2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>ZORBAX 300Extend-C18 HPLC column</td>\n      <td>Agilent</td>\n      <td>Cat# 761775\u2013902</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>Q Exactive Hybrid Quadrupole-Orbitrap Mass Spectrometer</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# IQLAAEGAAPFALGMAZR</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Others</td>\n      <td>PicoFrit nanospray columns</td>\n      <td>New Objective</td>\n      <td>PF360-75-15-N-5</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines and culture procedures\n\nHuman cervical carcinoma cells (HeLa, from ATCC) were maintained in high glucose Dulbecco\u2019s Modified Eagle\u2019s Medium (DMEM) (MilliporeSigma), supplemented with 10% Fetal bovine serum (FBS) (MilliporeSigma) at 37\u00b0C in 5% CO2. Human Ewing's Sarcoma cells (MHH-ES-1, from DSMZ) were maintained in RPMI1640 (MilliporeSigma), supplemented with 10% Fetal bovine serum (FBS) (MilliporeSigma) at 37\u00b0C in 5% CO2. All cell lines have been DNA fingerprinted using the PowerPlex 1.2 kit (Promega) and are found to be mycoplasma free using the e-Myco kit (Boca Scientific). The concentrations and times of each chemical treatment are indicated in the figure legends.\n\n### Antibodies and reagents\n\nAntibodies against the following proteins were used. Cell Signaling Technology: PARP1 (#9542), \u03b3H2AX (#9718), Histone H3 (#4499), Phospho-TBK1/NAK (pS172 TBK1; #5483), TBK1/NAK (#3504), cGAS (#15102), STING (#13647), Phospho-IRF-3 (pS396 IRF3; #4947); Santa Cruz Biotechnology: GAPDH (#sc-32233); Trevigen: PAR (#4335-MC-100); MilliporeSigma: Flag (#F7425). Thermo Fisher: Alexa Fluor 488-conjugated goat anti-rabbit IgG (Cat# A32731). The following reagents were used: Talazoparib, Niraparib, Rucaparib, Olaparib, and Veliparib were all purchased from Selleck; iRucaparib-AP6 was synthesized in previous our report (Wang et al., 2019). Dimethyl sulfoxide (DMSO), and Lipofectamine 2000 were all purchased from Thermo Fisher Scientific; Polybrene (Hexadimethrine bromide) and Puromycin were purchased from MilliporeSigma.\n\n### Immunoblot analysis\n\nCellular lysates were prepared using a 1% SDS lysis buffer containing 10 mM HEPES, pH 7.0, 2 mM MgCl2, 20 U/mL universal nuclease. Cellular lysates were clarified by centrifugation at 14,000\u00a0\u00d7\u00a0g at 4\u00b0C for 15 min. Protein concentrations were determined with the BCA assay (Thermo Fisher Scientific). The resulting supernatants were subjected to immunoblot analysis with the corresponding antibodies. Enhanced chemiluminescence was used to detect specific bands using standard methods as previously described (Kim et al., 2016). The relative band intensity was measured using the Image J imaging software.\n\n### Immunofluorescence\n\nFor immunofluorescence localization of the target molecules, HeLa PARP1 WT and KO cells were cultured on the cover glasses. Cells were fixed with 4% paraformaldehyde (Electron Microscopy Sciences, Hatfield, PA, USA) and blocked for 1 hr at RT in PBS (Lonza, Basel, Switzerland) containing 5% FBS and 0.2% Triton X-100. Cells were then incubated with a Rabbit monoclonal anti-pS396 IRF3 antibody overnight at 4\u00b0C, followed by incubation with an Alexa Fluor 488-conjugated goat anti-rabbit IgG (Thermo Fisher). For PicoGreen staining, cells were incubated with the Quant-iT PicoGreen dsDNA reagent (Thermo Fisher) overnight at 4\u00b0C. Fluorescence images were observed under an LSM 510 META confocal laser scanning microscope equipped with epifluorescence and an LSM digital image analyzer (Carl Zeiss, Zana, Germany). DAPI (Molecular Probes, Eugene, OR, USA) was used as a counter staining probe to mark the nuclei.\n\n### Cellular fractionation\n\nCells were biochemically fractionated using a subcellular protein fractionation kit (Thermo Fisher Scientific, USA) according to the manufacturer\u2019s instructions. Briefly, cells were harvested with trypsin-EDTA, centrifuged at 500\u00a0\u00d7\u00a0g for 5 min and washed with ice-cold PBS. After adding the CEB buffer to the cell pellet, the tube was incubated at 4\u00b0C for 10 min with gentle mixing. Following centrifugation at 500\u00a0\u00d7\u00a0g for 5 min, the supernatant (the cytoplasmic extract) was transferred to a clean pre-chilled tube on ice. Next, the MEB buffer was added to the pellet. The tube was briefly vortexed and was incubated at 4\u00b0C for 10 min with gentle mixing. The tube was then centrifuged at 3000\u00a0\u00d7\u00a0g for 5 min and the supernatant (the membrane extract) was transferred to a clean pre-chilled tube on ice. An ice-cold NEB buffer was added to the pellet, and the tube was vortexed using the highest setting for 15 s. Following incubation at 4\u00b0C for 30 min with gentle mixing, the tube was centrifuged at 5000\u00a0\u00d7\u00a0g for 5 min and the supernatant (the soluble nuclear extract) was transferred to a clean pre-chilled tube on ice. Lastly, the room temperature NEB buffer containing Micrococcal Nuclease and CaCl2 was added to the pellet. The tube was vortexed for 15 s and incubated at room temperature for 15 min. After incubation, the tube was centrifuged at 16,000\u00a0\u00d7\u00a0g for 5 min and the supernatant (the chromatin-bound nuclear extract) was transferred to a clean pre-chilled tube on ice.\n\n### Plasmids and mutagenesis\n\nFlag-tagged PAPR1 WT (PARP1-Flag; #111575) was purchased from Addgene. The Flag-tagged PARP1 R138C mutant was generated by the site-directed mutagenesis Kit (Agilent, La Jolla, CA, USA) according to the manufacturer\u2019s instructions. The plasmids were subjected to DNA sequencing for verification.\n\n### CRISPR/Cas9-mediated PARP1 knockout (KO)\n\nIn order to knock out PARP1 via the CRISPR/Cas9 system, sgRNAs of PARP1 were designed using the CRISPR design website (http://crispr.mit.edu/) and were incorporated into the lentiCRISPR_v2 plasmid. Cells were then plated in 6-well plates and were transfected with these plasmids. After 24 hr of culture and puromycin selection (1 \u03bcg/ml), single cells were sorted into 96-well plates. After a 2 week culture period, protein lysates were extracted and PARP1 KO was confirmed by immunoblot analysis. The sgRNAs were listed (See also Supplementary file 3).\n\n### Cell viability measurement\n\nMHH-ES-1 cells were plated into 96-well plates at densities of 1000 cells/well. One day later, cells were treated with various PARP inhibitors and iRucaparib-AP6 as indicated. Cell viability was measured using the CellTiter-Glo assay (Promega) according to the manufacturer\u2019s instructions. Briefly, after incubation, room temperature CellTiter-Glo reagent was added 1:1 to each well and the plates were incubated at room temperature for 2 min. Luminescence was measured with the Synergy HT Multi-Detection Microplate Reader and was normalized against control cells treated with DMSO.\n\n### RNA interference and transfection\n\nTo produce the lentiviruses, shRNA plasmids were co-transfected into HEK293TD cells along with packaging (\u03948.9) and envelope (VSVG) expression plasmids using the Lipofectamine 2000 reagent (Invitrogen) according to the manufacturer\u2019s instructions. The next day, the media was refreshed. After two days, viral supernatants were collected and filtered using a 0.45 \u03bcm filter. Recipient cells were infected in the presence of a serum-containing medium supplemented with 8 \u03bcg/ml Polybrene. Two days after infection, cells were used for the indicated experiments. Lipofectamine 2000 reagents were also used to transiently knock-down or over-express the target genes, according to the manufacturer\u2019s instructions. Two days after infection or transfection, the cells were used for the indicated experiments. The knock-down or over-expression of target genes was validated by immunoblot assays. The following shRNA constructs and over-expression plasmids were used (See also Supplementary file 3). The cGAS knockdown for RNA interference was achieved using Mission shRNA-encoding lentivirus directed to human cGAS mRNA (Sigma; GenBank/EMBL/DDBJ accession no. NM_138441) as recommended by the manufacturer\u2019s protocols. Briefly, lentiviral vectors (in pLKO.1) containing cGAS shRNA sequences (shcGAS #1, TRCN0000428336; shcGAS #2, TRCN0000149811) and non-target shRNA control vector (shScramble, SHC016) were purchased from Sigma.\n\n### Real-time quantitative polymerase chain reaction (RT-qPCR)\n\nThe mRNA extraction was performed using the RNeasy Mini Kit (QIAGEN) according to the manufacturer\u2019s instructions. Subsequently, total RNAs were converted into cDNA using the SuperScript III Reverse Transcriptase (Thermo Fisher Scientific) following the manual for first-strand cDNA synthesis. qPCR reactions were performed on a CFX384 Touch Real-Time PCR Detection System using 2X Power SYBR Green PCR Master Mix (Thermo Fisher Scientific). For each condition, technical triplicates were prepared and the quantitation cycle (Cq) was calculated. For normalization, GAPDH levels were used as an internal reference and the relative expression levels were presented. The primers used in qPCR were listed (See also Supplementary file 3).\n\n### Sample preparation for mass spectrometry\n\nMHH-ES-1 cells were treated with or without Talazoparib (0.1 or 1 \u00b5M) for 24 hr. Cells were lysed with 1% SDS lysis buffer containing 10 mM HEPES, pH 7.0, 2 mM MgCl2, 20 U/mL universal nuclease. Protein concentrations were determined with the BCA assay (Thermo Fisher Scientific). Samples from two biological replicates were reduced with 3 mM dithiothreitol (DTT) for 20 min and were alkylated with 25 mM iodoacetamide (IDA) for 30 min at room temperature (RT) in dark. The detergents were removed by methanol/chloroform precipitation. The proteins were re-solubilized in 8 M urea and digested by Lys-C at a 1:100 (w/w) enzyme/protein ratio for 2 hr, followed by trypsin digestion at a 1:100 (w/w) enzyme/protein ratio overnight at RT in 2 M urea. The peptides were desalted using Oasis HLB solid-phase extraction (SPE) cartridges (Waters) (Erickson et al., 2015) and approximately 100 \u03bcg of peptides from each sample were re-suspended in 200 mM HEPES, pH 8.5. The peptides were then labeled with the amine-based TMT 6-plex reagents (Thermo Fisher) for 1 hr at RT. Hydroxylamine solution was added to quench the reaction and the labeled peptide samples were combined. The TMT samples were lyophilized and reconstituted in buffer A (10 mM Ammonium formate, pH 10.0). Samples were centrifuged at 10,000\u00a0\u00d7\u00a0g for 3 min using spin-X centrifuge tube filters (Thermo Fisher Scientific) prior to loading onto a ZORBAX 300Extend-C18 HPLC column (Agilent, Narrow Bore RR 2.1 mm x 100 mm, 3.5 \u03bcm particle size, 300 \u00c5 pore size). Peptides were fractionated by bRPLC (basic pH reversed phase HPLC) at a 0.2 mL/min flow rate using a gradient from 0% to 70% buffer B (1% Ammonium formate, pH 10.0% and 90% Acetonitrile). A total of seventeen fractions were collected, which were lyophilized, desalted, and analyzed by LC-MS/MS experiments.\n\n### Quantitative proteomic analysis by LC-MS/MS\n\nThe TMT samples were analyzed on a Q-Exactive HF Mass Spectrometer (Thermo Fisher Scientific). MS/MS spectra were searched against a composite database of human protein sequences (Uniprot) and their reversed complement using the Sequest algorithm (Ver28) embedded in an in-house-developed software suite (Huttlin et al., 2010). MS1 and MS2 mass tolerances were set to be 50 ppm and 0.05 Da, respectively. Search parameters allowed for full tryptic peptides (two missed cleavage sites) with a static modification of 57.02146 Da on cystine (Carbamidomethyl), a variable modi\ufb01cation of 15.994915 Da on methionine (oxidation), and a static modification of TMT labels (229.16293 Da) on peptide N-terminus and lysine. Search results were filtered to include\u00a0<1% matches (both peptide and protein level filtering) to the reverse database by the linear discriminator function using parameters including Xcorr, dCN, missed cleavage, charge state (exclude 1+ peptides), mass accuracy, peptide length, and fraction of ions matched to MS/MS spectra. Peptide quantification was performed by using the CoreQuant algorithm implemented in an in-house-developed software suite (Erickson et al., 2017). The labeling scheme for the TMT experiments is: 126: DMSO; 127: Talazoparib (0.1 \u00b5M); 128: Talazoparib (1 \u00b5M), 129: Talazoparib (1 \u00b5M); 130: Talazoparib (0.1 \u00b5M); 131: DMSO. For TMT quantification, a 0.03 Th window was scanned around the theoretical m/z of each reporter ion (126: 126.127726; 127: 127.124761; 128: 128.134436; 129: 129.131471; 130: 130.141145; 131: 131.138180) to detect the presence of these ions. The maximum intensity of each ion was extracted, and the signal-to-noise (SN) value of each protein is calculated by summing the reporter ion counts across all identified peptides. Because the same amount of peptides was used for each TMT channel, the total reporter ion intensity of each channel was summed across all quantified proteins, and was then normalized and reported. Data were exported to Excel for further analysis.\n\n### Statistics\n\nAll statistical analyses including unpaired Student\u2019s t-tests, one- and two-way ANOVA tests were performed using the GraphPad Prism software (v8.2.0). The type of statistical analyses, parameters, and number of replicates are indicated for each experiment in the figure legends. Data were calculated as mean\u00a0\u00b1\u00a0SEM or SD. The following indications of significance were used throughout the manuscript: *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, n.s, not significant.\n",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "60f0de4f-5d7e-4109-81aa-9c4b2d7b6d09",
+      "submission_id": "fa6061ec-74b2-4112-b73b-c9d2408e0147",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hening Lin, Cornell University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60637.sa1](https://doi.org/10.7554/eLife.60637.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe believe your study provides an important understanding to the mechanism of action of PARP1 inhibitors. Such understandings may in turn trigger the develop of new PARP1 inhibitors for therapeutic purposes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"PARP1 inhibitors trigger innate immunity via PARP1 trapping-induced DNA damage response\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Philip Cole as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThe manuscript provides compelling evidence to show that trapping PARP1 on chromatin by PARP inhibitors is important for inducing cGAS_STING. This includes the use of PARP1 knockout cells, a PARP1 mutant with an altered trapping ability, and PARP1 inhibitors with different trapping activity. The paper is well written and was enjoyable to read. The results will be important for the field and thus should be published after minor revisions as described below.\n\nRevisions for this paper:\n\n1) The authors should test the different PARP1 inhibitors, including the PROTAC version, in relevant cancer cell lines to find out whether the trapping ability is important for the anticancer activity of PARP1 inhibitors.\n\n2) Please provide proper loading controls to the blots where these are not shown.\n\n3) Please check the existing proteomic data for the cytokines that have been examined at mRNA levels and provide this information in the revised manuscript.\n\n4) Please add to the Discussion possible mechanisms by which PARP1 trapping increases cytosolic DNA and cite and briefly connect their results to the following paper: Zandarashvili et al., 2020.\n\nRevisions expected in follow-up work:\n\nTesting inhibitors of different trapping ability in mouse models of cancer would be interesting to follow up in future studies.\n",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b3a7363f-42e8-4bd6-978c-c7a684e65717",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C1",
+      "claim": "PARP1 inhibitors possess both PARP1 inhibition and PARP1 trapping activities.",
+      "claim_type": "EXPLICIT",
+      "source": "PARPi possess both PARP1 inhibition and PARP1 trapping activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as established knowledge about PARPi mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "9c436c8d-ab7a-4634-a3a5-b1be5733b1a9",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C2",
+      "claim": "The presence of the PARP1 protein with uncompromised DNA-binding activities is required for PARPi-induced innate immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the presence of the PARP1 protein with uncompromised DNA-binding activities is required for PARPi-induced innate immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "0c06725c-a4c1-420c-930b-dde9bb821723",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C3",
+      "claim": "The activation of cGAS-STING signaling induced by various PARPi closely depends on their PARP1 trapping activities.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of cGAS-STING signaling induced by various PARPi closely depends on their PARP1 trapping activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "bff74204-9ee5-4740-97ba-1d569299cae1",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C4",
+      "claim": "A small molecule PARP1 degrader blocks the enzymatic activity of PARP1 without eliciting PARP1 trapping or cGAS-STING activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that a small molecule PARP1 degrader blocks the enzymatic activity of PARP1 without eliciting PARP1 trapping or cGAS-STING activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "1f6abb52-71b2-46c4-9280-c057e4249697",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C5",
+      "claim": "PARP1 trapping is a major contributor of the immunomodulatory functions of PARPi.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings thus identify PARP1 trapping as a major contributor of the immunomodulatory functions of PARPi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract, based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "05143a32-796f-4da4-b834-fe40c0ec420d",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C6",
+      "claim": "PARP1 is an enzyme that is critically involved in mediating DNA damage response.",
+      "claim_type": "EXPLICIT",
+      "source": "Poly-ADP-ribose polymerase 1 (hereafter referred to as PARP1) is an enzyme that is critically involved in mediating DNA damage response (DDR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited in the introduction with references (Ray Chaudhuri and Nussenzweig, 2017; Gibson and Kraus, 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "4a627ea2-c276-44fb-8fff-76a241de5a26",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C7",
+      "claim": "Upon sensing genotoxic stress, PARP1 is recruited to DNA strand breaks and is activated to synthesize negatively charged Poly-ADP-ribose (PAR) polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon sensing the genotoxic stress, PARP1 is recruited to DNA stand breaks and is activated to synthesize negatively charged Poly-ADP-ribose (PAR) polymers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PARP1 function cited in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "ecb4a17b-3032-49cf-b411-0db38a00244a",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C8",
+      "claim": "PAR chains serve as a platform to recruit the DDR machinery to repair and resolve DNA breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the functions of these PAR chains is to serve as a platform to recruit the DDR machinery to repair and resolve these DNA breaks (Ray Chaudhuri and Nussenzweig, 2017; Gibson and Kraus, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "ef24e0a2-ffa5-473e-8d7a-a2dc83337527",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C9",
+      "claim": "Cancers with BRCA1/2 mutations rely on PARP1 for genome integrity and are selectively killed by PARP1 inhibitors via the 'synthetic lethality' mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cancers with BRCA1/2 mutations rely on PARP1 for genome integrity, and they are selectively killed by PARP1 inhibitors (PARPi) via the 'synthetic lethality' mechanism (Lord et al., 2015; Lord and Ashworth, 2017; Farmer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "93168519-e003-400f-8bdb-5b15cbfa8471",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C10",
+      "claim": "Four PARPi (Olaparib, Rucaparib, Niraparib, and Talazoparib) have been approved by the FDA to treat BRCA1/2-deficient breast and/or ovarian cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Four PARPi (Olaparib, Rucaparib, Niraparib, and Talazoparib) have been approved by the FDA to treat BRCA1/2-deficient breast and/or ovarian cancers (Faraoni and Graziani, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about FDA approvals cited with a reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "85de0828-fa35-4bcf-8942-f0fc7e602469",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C11",
+      "claim": "All FDA-approved PARPi are NAD+-competitive.",
+      "claim_type": "EXPLICIT",
+      "source": "All FDA-approved PARPi are NAD+-competitive, and it was initially thought that these agents kill tumors simply by inhibiting the catalytic activity of PARP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of FDA-approved PARPi.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "90bde330-a5af-4ecc-9956-af737455d151",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C12",
+      "claim": "The cytotoxicity of PARPi is ascribed, at least in part, to the ability of these compounds to induce PARP1 trapping.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies suggest that the cytotoxicity of PARPi is ascribed, at least in part, to the ability of these compounds to induce PARP1 trapping (Hopkins et al., 2019; Murai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "57d137de-7ebf-4b9e-a813-1b3f76ac374b",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C13",
+      "claim": "PARylation triggers the release of PARP1 from DNA lesions, owing to charge repulsion and steric hindrance introduced by PAR polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "PARylation triggers the release of PARP1 from the DNA lesions, owing to the charge repulsion and steric hinderance introduced by the PAR polymers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of PARP1 release.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "da710bc9-e8e5-4db7-b268-cac559bafd38",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C14",
+      "claim": "PARPi block the synthesis of PAR chains, which causes PARP1 to be trapped on the chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "PARPi block the synthesis of PAR chains, which causes PARP1 to be trapped on the chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PARPi mechanism cited with references (Lord and Ashworth, 2017; Slade, 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "c1929b85-82e8-49cc-bb27-4dac939f43fa",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C15",
+      "claim": "Trapped PARP1 triggers further DNA damage, cell cycle arrest, and eventually, cancer cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "The trapped PARP1 triggers further DNA damage, cell cycle arrest, and eventually, cancer cell death (Lord and Ashworth, 2017; Slade, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "9352f59d-935e-4aad-ac4c-0bfaacb05c12",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C16",
+      "claim": "Various clinically relevant PARPi induce different degrees of PARP1 conformational changes and PARP1 trapping.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the PARylation-dependent mechanism, several recent studies also suggest that although the various clinically relevant PARPi all bind to PARP1, they induce different degrees of PARP1 conformational changes, and in doing so, PARP1 trapping (Lord and Ashworth, 2017; Hopkins et al., 2019; Murai et al., 2014; Shen et al., 2013; Murai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with multiple references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "f040bf09-d557-4d48-986a-9a5239933a33",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C17",
+      "claim": "During chemo- and radiation-therapy, self-DNA is released and detected by the cytosolic DNA sensor cGAS.",
+      "claim_type": "EXPLICIT",
+      "source": "During chemo- and radiation-therapy, self-DNA is released, and is detected by the cytosolic DNA sensor, cyclic GMP-AMP (cGAMP) synthetase (cGAS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DNA damage and immune response.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "af03fd61-69b5-4515-a315-a41cdd99e721",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C18",
+      "claim": "cGAS produces the second messenger cGAMP, which binds to STING, leading to recruitment and activation of TBK1.",
+      "claim_type": "EXPLICIT",
+      "source": "cGAS subsequently produces the second messenger cGAMP. cGAMP binds to Stimulator of Interferon Genes (STING), leading to the recruitment and activation of Tank-binding kinase I (TBK1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the cGAS-STING pathway cited with references (Chen et al., 2016; Ishikawa and Barber, 2008; Li and Chen, 2018; Barber, 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "ea6e5368-8b53-41d2-9e6f-fff0f152c1d1",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C19",
+      "claim": "TBK1 phosphorylates IRF3, resulting in its nuclear translocation and IRF3-dependent activation of type I interferon signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "TBK1 phosphorylates a transcription factor called interferon regulatory factor 3 (IRF3), resulting in its nuclear translocation, and the IRF3-dependent activation of type I interferon (IFN) signaling (Chen et al., 2016; Ishikawa and Barber, 2008; Li and Chen, 2018; Barber, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the cGAS-STING pathway cited with references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "524eddef-ff7f-46de-8129-23303ac551ef",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C20",
+      "claim": "The cGAS-STING pathway plays a vital role in protecting cells against pathogens and in the antitumor immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the cGAS-STING pathway plays a vital role not only in protecting the cells against a variety of pathogens, but also in the antitumor immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the cGAS-STING pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "fcce7b4b-5bfb-4020-9ad6-e1e72178eed1",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C21",
+      "claim": "PARPi treatment produces cytosolic dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Because PARPi treatment is known to produce cytosolic dsDNA (double-stranded DNA), it has been proposed that the activation of innate immune signaling could be a critical molecular mechanism underlying the therapeutic effect of PARPi (Ding et al., 2018; Shen et al., 2019; Pantelidou et al., 2019; Sen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "06761b1f-ada5-424b-8ad6-0fb5405f1a9d",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C22",
+      "claim": "Talazoparib treatment induces the formation of cytosolic dsDNA in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Talazoparib treatment was able to induce the formation of cytosolic dsDNA (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B with PicoGreen staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "0263436a-f85d-4f1f-9649-2a3b06da7724",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C23",
+      "claim": "Talazoparib treatment induces \u03b3H2AX formation in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Talazoparib treatment was able to induce the formation of cytosolic dsDNA (Figure 1B) as well as \u03b3H2AX (a marker for DNA double strand breaks) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C with immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "6ba90f63-11c0-49db-8258-1c91e12a9d65",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C24",
+      "claim": "Talazoparib treatment dramatically increases phosphorylation of TBK1 (pS172 TBK1) in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Talazoparib treatment dramatically increased both phosphorylation events (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D with immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "a71c6fc3-16db-4a81-b84f-28ba2ec393f8",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C25",
+      "claim": "Talazoparib treatment dramatically increases phosphorylation of IRF3 (pS396 IRF3) in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Talazoparib treatment dramatically increased both phosphorylation events (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E with immunofluorescence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "9fba14df-b815-4153-86cb-5350c6537e4a",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C26",
+      "claim": "Talazoparib treatment induces nuclear translocation of phospho-IRF3 in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Talazoparib treatment also remarkably induced the nuclear translocation of phospho-IRF3 (Figure 1E, right), which is a critical step for IRF3-mediated gene transcription (Kato et al., 2017; Motwani et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E with immunofluorescence imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "77eddcd0-2508-4e5b-8918-0926523d01f1",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C27",
+      "claim": "Talazoparib treatment greatly upregulates the expression of type I interferons (Inf-\u03b1 and Inf-\u03b2) in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous studies (Sun et al., 2013; Parkes et al., 2017; Fu et al., 2020), Talazoparib treatment greatly upregulated the expression of type I interferons (IFN; Inf-\u03b1 and Inf-\u03b2), pro-inflammatory cytokines (Ccl5 and Cxcl10), and interferon-stimulated genes (ISGs; Isg15, Mx1, Mx2, and Ifit3) (Figure 1F, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1F and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "55c503f9-02e7-455f-930e-27f1ac44d29d",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C28",
+      "claim": "Talazoparib treatment greatly upregulates the expression of pro-inflammatory cytokines (Ccl5 and Cxcl10) in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous studies (Sun et al., 2013; Parkes et al., 2017; Fu et al., 2020), Talazoparib treatment greatly upregulated the expression of type I interferons (IFN; Inf-\u03b1 and Inf-\u03b2), pro-inflammatory cytokines (Ccl5 and Cxcl10), and interferon-stimulated genes (ISGs; Isg15, Mx1, Mx2, and Ifit3) (Figure 1F, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1F and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "490d171f-61ad-456f-ad47-54546e644017",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C29",
+      "claim": "Talazoparib treatment greatly upregulates the expression of interferon-stimulated genes (Isg15, Mx1, Mx2, and Ifit3) in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous studies (Sun et al., 2013; Parkes et al., 2017; Fu et al., 2020), Talazoparib treatment greatly upregulated the expression of type I interferons (IFN; Inf-\u03b1 and Inf-\u03b2), pro-inflammatory cytokines (Ccl5 and Cxcl10), and interferon-stimulated genes (ISGs; Isg15, Mx1, Mx2, and Ifit3) (Figure 1F, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1F and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "7d7acd87-16a2-4661-a884-1633ec3f44ca",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C30",
+      "claim": "Knock-down of cGAS dramatically reduces the activation of innate immune response induced by Talazoparib.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the activation of the innate immune response, as assessed by the level of pS172 TBK1 and the cGAS-STING target genes, was dramatically reduced in cGAS-depleted cells (Figure 1H and I, Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1H and I with immunoblot and RT-qPCR analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "f698aa5b-2cfc-43fd-8901-79817b8dd104",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C31",
+      "claim": "Knock-down of cGAS does not interfere with PARP1 trapping induced by Talazoparib.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-down (KD) of cGAS did not interfere with PARP1 trapping (Figure 1\u2014figure supplement 1B) or the subsequent DDR (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "697c66fa-4fc7-42ea-b275-c454b4ad6d7c",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C32",
+      "claim": "Knock-down of cGAS does not interfere with DNA damage response induced by Talazoparib.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-down (KD) of cGAS did not interfere with PARP1 trapping (Figure 1\u2014figure supplement 1B) or the subsequent DDR (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "81ecf1bf-65da-46f3-a7cf-a7c9c21897c2",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C33",
+      "claim": "PARPi treatment induces innate immune response via the cGAS-STING pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results demonstrate that PARPi treatment induces the innate immune response via the cGAS-STING pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "960049e0-e300-4932-9bce-a603ec730048",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C34",
+      "claim": "Talazoparib treatment induces potent PARP1 trapping in MHH-ES-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Talazoparib treatment was able to induce potent PARP1 trapping, \u03b3H2AX formation and TBK1 phosphorylation in this cell line (Figure 1\u2014figure supplement 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "d5361daf-59e1-4d7f-b58a-e1fa02166ed7",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C35",
+      "claim": "Talazoparib treatment induces \u03b3H2AX formation in MHH-ES-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Talazoparib treatment was able to induce potent PARP1 trapping, \u03b3H2AX formation and TBK1 phosphorylation in this cell line (Figure 1\u2014figure supplement 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "ef6c98d4-8308-49d9-b40b-0cea2b4aaf06",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C36",
+      "claim": "Talazoparib treatment induces TBK1 phosphorylation in MHH-ES-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Talazoparib treatment was able to induce potent PARP1 trapping, \u03b3H2AX formation and TBK1 phosphorylation in this cell line (Figure 1\u2014figure supplement 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "01b497cb-df9b-4eed-b136-0e739a7f4cf9",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C37",
+      "claim": "A total of 9545 proteins were identified and quantified in the TMT proteomic analysis of Talazoparib-treated MHH-ES-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "From this dataset, we were able to identify and quantify a total of 9545 proteins (protein false-discovery rate (FDR) < 1%) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the quantitative proteomic experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "a231458f-d2cd-4527-aa4e-7a2906d95616",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C38",
+      "claim": "270 proteins were up-regulated by at least two-fold in Talazoparib-treated MHH-ES-1 cells compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control, a total of 270 and 395 proteins were up- and down-regulated by at least two-fold, respectively, in Talazoparib-treated cells (Figure 1\u2014figure supplement 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the quantitative proteomic experiment shown in Figure 1\u2014figure supplement 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "5dfd5b20-6dbf-4217-befb-441f2cf0dafb",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C39",
+      "claim": "395 proteins were down-regulated by at least two-fold in Talazoparib-treated MHH-ES-1 cells compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control, a total of 270 and 395 proteins were up- and down-regulated by at least two-fold, respectively, in Talazoparib-treated cells (Figure 1\u2014figure supplement 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the quantitative proteomic experiment shown in Figure 1\u2014figure supplement 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "0acc37b5-f289-4750-8a60-1efb4fff3128",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C40",
+      "claim": "Up-regulated proteins in Talazoparib-treated cells are highly enriched with biological processes connected to innate immune signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, gene ontology (GO) analyses of the up-regulated proteins showed that these proteins were highly enriched with biological processes connected to innate immune signaling (e.g., type I interferon signaling pathway, p=2.79 \u00d7 10\u22125 and immune response p=8.04 \u00d7 10\u22125), which we validated using independent RT-qPCR assays (Figure 1\u2014figure supplement 2J and K, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from GO analysis shown in Figure 1\u2014figure supplement 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "c15e2c25-dab6-453b-b796-0b172417cdf1",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C41",
+      "claim": "Talazoparib treatment induces upregulation of IL1A in MHH-ES-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we identified Interleukin 1\u03b1 (IL1A) as one of the Talazoparib-induced, up-regulated cytokines in our quantitative proteomic dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the quantitative proteomic experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "640d0e55-1f32-4fc0-a820-8bda2bdabf02",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C42",
+      "claim": "Talazoparib treatment induces coordinated upregulation of ISG15, IFIT3, MX1 and MX2 in MHH-ES-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Talazoparib treatment also induced the coordinated upregulation of several immune signaling proteins, including ISG15, IFIT3, MX1 and MX2 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the quantitative proteomic experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "a9f372d8-a7c2-4433-a74c-9bfa3ed31713",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C43",
+      "claim": "Talazoparib treatment only induces PARP1 trapping in wild-type PARP1 cells, but not in PARP1 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we generated PARP1 knock-out (KO) HeLa cells (Figure 2\u2014figure supplement 1A) and found that Talazoparib treatment only induced PARP1 trapping in the wild-type (WT) cells, but not in PARP1 KO cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "5af83e64-a447-49c6-914e-8cf83bf77474",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C44",
+      "claim": "DNA damage response (\u03b3H2AX) is only elevated in PARP1 WT cells upon Talazoparib treatment, but not in PARP1 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, DDR, as detected by \u03b3H2AX, was also only elevated in the PARP1 WT cells (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "cd1cb6a3-9407-4fd3-8a95-ebe3f8c46429",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C45",
+      "claim": "Talazoparib treatment leads to a dramatic increase of pS172 TBK1 only in PARP1 WT cells, but not in PARP1 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As we expected, Talazoparib treatment led to a dramatic increase of pS172 TBK1 only in the PARP1 WT cells, but not PARP1 KO cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "40bb1428-f07b-420a-86c9-5a6ba35f2036",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C46",
+      "claim": "Talazoparib-induced IRF3 phosphorylation and nuclear translocation are blocked by PARP1 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Talazoparib-induced IRF3 phosphorylation and its nuclear translocation were also blocked by PARP1 deletion (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "c388404d-ebd3-42f1-b66a-4363fd51f436",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C47",
+      "claim": "PARP1 deletion greatly diminishes Talazoparib-induced expression of cGAS-STING target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, PARP1 deletion also greatly diminished Talazoparib-induced expression of cGAS-STING target genes (Figure 2E, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 2E and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "ed4232a3-f144-45a8-8a3e-c9365fdeb3b4",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C48",
+      "claim": "The PARP1 protein is required for PARPi-mediated activation of innate immune signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the PARP1 protein is required for the PARPi-mediated activation of innate immune signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "2162938e-2221-4359-9e44-73ec4f43c00f",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C49",
+      "claim": "Clinically relevant PARPi (Talazoparib, Niraparib, Rucaparib, Olaparib, and Veliparib) all potently block the enzymatic activity of PARP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, these compounds all potently blocked the enzymatic activity of PARP1 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "306588ad-afe4-4280-93eb-6ae99b1becf9",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C50",
+      "claim": "Different PARPi induce different levels of PARP1 trapping (Talazoparib > Niraparib > Rucaparib \u2248 Olaparib > Veliparib).",
+      "claim_type": "EXPLICIT",
+      "source": "However, these compounds were able to induce different levels of PARP1 trapping (PARP1 trapping levels: Talazoparib > Niraparib > Rucaparib \u2248 Olaparib > Veliparib) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "9a3940a7-d939-4938-9c0d-86dfeaf06dcf",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C51",
+      "claim": "DNA damage levels induced by different PARPi correlate with their PARP1 trapping activities (Talazoparib > Niraparib > Rucaparib \u2248 Olaparib > Veliparib).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, DDR as measured by \u03b3H2AX was correlative with respect to the level of PARP1 trapping elicited by these PARPi (DNA damage levels: Talazoparib > Niraparib > Rucaparib \u2248 Olaparib > Veliparib) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "1b4ca718-8dff-41c8-b1f5-f973e6106ff1",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C52",
+      "claim": "The cytotoxicity of different PARPi positively correlates with their PARP1 trapping activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the cytotoxicity of these compounds also positively correlated with their PARP1 trapping activities (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "3abbe122-32a1-4e56-896c-cfb4dd9e6f17",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C53",
+      "claim": "The activation of the cGAS-STING pathway by different PARPi correlates with their PARP1 trapping activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the activation of the cGAS-STING pathway, as measured by the pS172 TBK level, also correlated with PARP1 trapping (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "b0c5346a-2ed2-48da-9156-d30e9977a9d0",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C54",
+      "claim": "Talazoparib induces a much stronger activation of the cGAS-STING pathway compared to Rucaparib.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, compared to Rucaparib, Talazoparib was able to induce a much stronger activation of the cGAS-STING pathway (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "97e8f3a1-332c-4294-b89b-b8b1db65670a",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C55",
+      "claim": "The level of PARP1 trapping, DNA damage, cytotoxicity and cGAS-STING activation are all positively correlated for various PARPi.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results showed that the level of PARP1 trapping, DNA damage, cytotoxicity and cGAS-STING activation was all positively correlated for the various PARPi (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "cf8452b9-2a62-4e33-9ca5-75687c9e2e54",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C56",
+      "claim": "The PARP1 R138C mutant has significantly reduced DNA binding capability.",
+      "claim_type": "EXPLICIT",
+      "source": "This PARP1 mutant bears a significantly reduced DNA binding capability, and as a result, it cannot be trapped on the chromatin upon the treatment of PARPi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the R138C mutant cited with a reference (Herzog et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "e29ab235-a0a0-47b3-98ad-06a5877a98b0",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C57",
+      "claim": "The PARP1 R138C mutant cannot be trapped on chromatin upon PARPi treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This PARP1 mutant bears a significantly reduced DNA binding capability, and as a result, it cannot be trapped on the chromatin upon the treatment of PARPi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the R138C mutant cited with a reference (Herzog et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "91c8e659-a700-4235-9232-47410bf5b66a",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C58",
+      "claim": "Talazoparib treatment dramatically elevates PARP1 trapping in WT PARP1-reconstituted cells, but not in cells reconstituted with the PARP1 R138C mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Talazoparib treatment dramatically elevated the levels of PARP1 trapping in WT PARP1-reconsistuted cells, but not in cells reconstituted with the PARP1 R138C mutant (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "f5a3102d-4449-449d-96da-c449370d1e26",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C59",
+      "claim": "Cells expressing the PARP1 R138C mutant have greatly reduced DNA damage response upon Talazoparib treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing the PARP1 R138C mutant also had greatly reduced DDR, upon Talazoparib treatment (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "f8793838-dcc4-4fc9-9148-d9d4fb6ffee3",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C60",
+      "claim": "Expression of the PARP1 R138C mutant prevents Talazoparib-induced activation of the cGAS-STING pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the expression of the PARP1 R138C mutant also prevented Talazoparib-induced activation of the cGAS-STING pathway (Figure 3F and G, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F, 3G, and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "6ef01cbd-a19e-435a-9dfa-4d9d1d68cb6b",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C61",
+      "claim": "PARP1 trapping is a prerequisite for PARPi-induced activation of innate immune signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly supported the notion that PARP1 trapping is a prerequisite for the PARPi-induced activation of innate immune signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data with the R138C mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "e4ebb0bb-6b0b-4b42-8c66-1277c711651d",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C62",
+      "claim": "PARP1 degraders (PROTACs) block both the enzymatic and scaffolding effects of PARP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike regular PARPi, these compounds block both the enzymatic and scaffolding effects of PARP1, and thereby could dissect PARP1 inhibition vs. PARP1 trapping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mechanism of PARP1 degraders cited with a reference (Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "6371fa58-90bc-4853-a1bd-fcc4b5e8585a",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C63",
+      "claim": "PARP1 trapping is a major contributor of PARPi-induced cytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the notion that PARP1 trapping is a major contributor of the PARPi-induced cytotoxicity (Wang et al., 2019), the treatment of HeLa cells using one such compound (iRucaparib-AP6) led to robust downregulation of PARP1 in HeLa cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with a reference (Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "e2a5fdde-01f6-45d6-83ef-8114deef25c8",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C64",
+      "claim": "iRucaparib-AP6 treatment leads to robust downregulation of PARP1 in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the notion that PARP1 trapping is a major contributor of the PARPi-induced cytotoxicity (Wang et al., 2019), the treatment of HeLa cells using one such compound (iRucaparib-AP6) led to robust downregulation of PARP1 in HeLa cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "bf06d957-fbf2-455c-8067-dbbcece355c6",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C65",
+      "claim": "Rucaparib induces cleavage, but not degradation of PARP1 in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the parent compound (Rucaparib) only induced the cleavage, but not the degradation of PARP1, presumably because of its toxicity in these cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "78d2a27c-fd1a-479e-922e-4eca4c02d64d",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C66",
+      "claim": "Rucaparib, but not iRucaparib-AP6, strongly promotes cell death in MHH-ES-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a different cell line system (i.e., MHH-ES-1), we also showed that Rucaparib, but not iRucaparib-AP6, strongly promoted cell death (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "65d0a78f-f945-4299-992e-8e7b717bdeca",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C67",
+      "claim": "iRucaparib-AP6 treatment results in minimal PARP1 trapping in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the diminished pool of total PARP1, iRucaparib-AP6 treatment resulted in minimal PARP1 trapping and \u03b3H2AX formation (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "b37abd3d-b5e8-42c7-8a4a-9916b5b2739c",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C68",
+      "claim": "iRucaparib-AP6 treatment results in minimal \u03b3H2AX formation in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the diminished pool of total PARP1, iRucaparib-AP6 treatment resulted in minimal PARP1 trapping and \u03b3H2AX formation (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "2f0524f9-730c-4166-8b2d-cfb2ced09e58",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C69",
+      "claim": "The level of pS172 TBK1 is dramatically increased in Rucaparib-treated cells, but not in iRucaparib-AP6-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the level of pS172 TBK1 were dramatically increased in Rucaparib-treated, but not in iRucaparib-AP6-treated cells (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "547271e6-c9d1-45bc-a49c-956e7f01c845",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C70",
+      "claim": "Rucaparib, but not iRucaparib-AP6, treatment significantly elevates the mRNA levels of type I IFNs, pro-inflammatory cytokines and ISGs.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the expression of cGAS-STING target genes in these cells, and found that Rucaparib, but not iRucaparib-AP6, treatment significantly elevated the mRNA levels of type I IFNs, pro-inflammatory cytokines and ISGs (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "ebbee1de-a021-4699-ac65-3b6ae3bc1eb5",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C71",
+      "claim": "The innate immune system is composed of molecules and cells that respond to PAMPs and DAMPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The innate immune system as one of antitumor immune responses is composed of molecules and cells that respond to external and internal danger signals such as pathogen-associated molecular patterns (PAMPs) and damage-associated molecular patterns (DAMPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the innate immune system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "21e280bf-f356-4914-a095-74cee978f2a0",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C72",
+      "claim": "PAMPs and DAMPs bind to pattern recognition receptors (PRRs) to initiate immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "PAMPs and DAMPs bind to their respective pattern recognition receptors (PRRs) to initiate immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about immune response mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "43b80d59-8de9-463e-b654-f9761f12b853",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C73",
+      "claim": "Cytosolic PRRs including NOD-like receptors, RIG-I-like receptors, and cGAS detect intracellular pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cytosolic PRRs including nucleotide-binding oligomerization domain\u2013like receptors, retinoic acid\u2013inducible gene I\u2013like receptors (RLRs), and cGAS detect intracellular pathogens (Wu and Chen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with a reference (Wu and Chen, 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "779dcbe9-cf67-4753-aa3b-6915d40ba2c8",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C74",
+      "claim": "Cancer cells are often replete with cytosolic dsDNA that originates from genomic, mitochondrial, and exogenous sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike normal cells, cancer cells are often replete with cytosolic dsDNA that originates from genomic, mitochondrial, and exogenous sources (Vanpouille-Box et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with a reference (Vanpouille-Box et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "d069cc98-464c-4393-90a5-4957aafef6b2",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C75",
+      "claim": "Acute genomic stressors including radiation, cisplatin, and intrinsic DNA damage generate cytosolic dsDNA and micronuclei to activate cGAS-STING in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulating data have been reported that acute genomic stressors, including radiation, cisplatin, and intrinsic DNA damage generate cytosolic dsDNA and micronuclei to activate cGAS\u2013STING in cancer cells (Ahn et al., 2014; Harding et al., 2017; Mackenzie et al., 2017; Dou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "7e312668-7e0c-4201-9e50-eccf1cd57c73",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C76",
+      "claim": "Coordinated activation of both local and systemic antitumor immune responses could underlie the antitumor effects of PARPi.",
+      "claim_type": "EXPLICIT",
+      "source": "However, accumulating evidence have pointed out that coordinated activation of both local and systemic antitumor immune responses could also underlie the antitumor effects of PARPi (Pantelidou et al., 2019; Ding et al., 2018; Chabanon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "c7ebd84a-b73c-40c4-9602-46a7c317731c",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C77",
+      "claim": "PARPi treatment results in the robust production of cytosolic dsDNA, which leads to activation of cGAS-STING signaling and downstream innate immune pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these previous studies, our date showed that PARPi treatment results in the robust production of cytosolic dsDNA, which leads to the subsequent activation of cGAS-STING signaling and the downstream innate immune pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "4e9b43a3-1f14-4f6e-8425-a80ba26de861",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C78",
+      "claim": "The deletion of PARP1 alone does not lead to TBK1 activation and expression of inflammatory genes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that the deletion of PARP1 alone does not lead to TBK1 activation and the expression of inflammatory genes, suggesting that the blockage of PARP1 catalytic activity is not sufficient to drive the activation of cGAS-STING signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "3d6016c4-59f2-4e2d-802c-7b8f6d26fc57",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C79",
+      "claim": "The blockage of PARP1 catalytic activity is not sufficient to drive the activation of cGAS-STING signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that the deletion of PARP1 alone does not lead to TBK1 activation and the expression of inflammatory genes, suggesting that the blockage of PARP1 catalytic activity is not sufficient to drive the activation of cGAS-STING signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "8f00e687-b6c0-41cb-bf67-0d97e03e5aac",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C80",
+      "claim": "The DNA-binding activity of PARP1 is required for PARPi-induced activation of cGAS-STING signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we found that the DNA-binding activity of PARP1 is required for the PARPi-induced activation of cGAS-STING signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data with the R138C mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "f853991a-9f43-49bb-9fa1-7283d348d049",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C83",
+      "claim": "Talazoparib induces DDR and cGAS-STING signaling only in cells expressing WT PARP1, but not the PARP1 R138C mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Talazoparib was able to induce DDR and cGAS-STING signaling only in cells expressing WT PARP1, but not the PARP1 R138C mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "b083470b-5080-4476-b78e-d275c1a9c299",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C84",
+      "claim": "Different structural elements within PARPi drive, in an allosteric manner, the release or retention of these compounds at a DNA break.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent study showed that the different structural elements within these PARPi drive, in an allosteric manner, the release or retention of these compounds at a DNA break (Zandarashvili et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with a reference (Zandarashvili et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "6df92ddf-3005-4f0f-9ecb-181f876b6752",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C85",
+      "claim": "iRucaparib-AP6 is cell-membrane permeable and able to block the enzymatic activity of PARP1.",
+      "claim_type": "EXPLICIT",
+      "source": "This compound is cell-membrane permeable and is able to block the enzymatic activity of PARP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of iRucaparib-AP6 cited with a reference (Wang et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "19703659-c2db-4e8d-8826-13ee7ec43414",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C86",
+      "claim": "iRucaparib-AP6 degrades PARP1, which prevents PARP1 trapping, DDR, cytotoxicity, and activation of cGAS-STING signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike regular PARPi, iRucaparib-AP6 degrades PARP1, which prevents PARP1 trapping, DDR, cytotoxicity, and finally, the activation of cGAS-STING signaling (Figure 4, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "bd12221b-0629-41ca-b0ad-54c981155ecf",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C87",
+      "claim": "Cytosolic dsDNA could result from PARPi-induced PARP1 trapping and subsequently stalled or collapsed replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, recent studies have pointed to cytosolic dsDNA as a source of stimulus for the activation of cGAS-STING pathway (Sun et al., 2013; Wu et al., 2014; Civril et al., 2013). In the context of PAPRi, cytosolic dsDNA could result from PARPi-induced PARP1 trapping, and subsequently, stalled or collapsed replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic inference based on cited studies and the experimental findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "b81caf96-ec90-4d60-b931-8793e3d92ff7",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C88",
+      "claim": "The ability to induce PARP1 trapping is the primary driver for PARPi-mediated cytotoxicity and activation of innate immune signaling in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that the ability to induce PARP1 trapping is the primary driver for the PARPi-mediated cytotoxicity and activation of innate immune signaling in cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "6b3ce8ef-db4a-460b-add1-6acf56e1d7f5",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C89",
+      "claim": "In the presence of PARP1, PARPi-induced PARP1 trapping generates cytosolic dsDNA, which activates cGAS and the downstream innate immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of PARP1, PARPi-induced PARP1 trapping generates cytosolic dsDNA, which activates cGAS, and the downstream innate immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the mechanistic conclusion of the study based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "522f57df-c3b1-426b-b0af-7c962164c619",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C90",
+      "claim": "The ability for PARP1 degraders to prevent PARP1 trapping and activation of innate immune response could be useful in non-oncological contexts such as ischemia-reperfusion injury and neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the immunomodulatory roles of PARPi are highly desirable in human malignancies, the ability for PARP1 degraders to prevent PARP1 trapping, and hence the activation of innate immune response could be useful in other contexts (e.g., ischemia-reperfusion injury and neurodegenerative diseases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "04d61263-a7c3-444e-a674-262047ca1c00",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C91",
+      "claim": "Talazoparib is an FDA-approved PARP1 inhibitor that potently inhibits and traps PARP1.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored the immunomodulatory functions of PARPi using Talazoparib, which is an FDA-approved PARP1 inhibitor that is known to potently inhibit and trap PARP1 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about Talazoparib, supported by data in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "e95b2343-79e0-4a2d-b630-ac481674504a",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C92",
+      "claim": "Talazoparib treatment induces PARP1 trapping in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of trapped PARP1 in HeLa cells treated with or without Talazoparib (10 \u00b5M for 72 hr).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A with chromatin-bound fraction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "3aec8cbf-5f19-4e08-94d1-312ba337530a",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C93",
+      "claim": "Nuclear translocation of phospho-IRF3 is a critical step for IRF3-mediated gene transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Talazoparib treatment also remarkably induced the nuclear translocation of phospho-IRF3 (Figure 1E, right), which is a critical step for IRF3-mediated gene transcription (Kato et al., 2017; Motwani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with references (Kato et al., 2017; Motwani et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "61493ab5-bd93-41d5-ba08-27f91a4962e3",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "claim_id": "C94",
+      "claim": "MHH-ES-1 is an Ewing's sarcoma cell line that is highly sensitive to PARPi.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the immunomodulatory effects of PARPi in an unbiased manner, we performed isobaric labeling-based, global protein expression analysis in Talazoparib-treated MHH-ES-1 cells (an Ewing's sarcoma cell line that is highly sensitive to PARPi) (Gill et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited with a reference (Gill et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Talazoparib treatment induces cytosolic dsDNA, DNA damage (\u03b3H2AX), phosphorylation of TBK1 and IRF3, nuclear translocation of phospho-IRF3, and upregulation of type I interferons, pro-inflammatory cytokines, and interferon-stimulated genes in HeLa cells via the cGAS-STING pathway. Knockdown of cGAS abolishes these immune responses without affecting PARP1 trapping or DNA damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C33 provide comprehensive experimental evidence from multiple complementary assays (PicoGreen staining, immunoblots, immunofluorescence, RT-qPCR) demonstrating that Talazoparib activates the cGAS-STING pathway. The cGAS knockdown experiments (C30-C32) provide strong genetic evidence that cGAS is required for the immune response but not for PARP1 trapping or DDR, establishing pathway specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "c8e66c10-a248-4c8d-8467-61eab7048237",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Unbiased quantitative proteomic analysis of Talazoparib-treated MHH-ES-1 cells identified 9545 proteins, with 270 upregulated and 395 downregulated proteins. Gene ontology analysis revealed significant enrichment of innate immune signaling pathways among upregulated proteins, including type I interferon signaling and immune response genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 present comprehensive proteomic data with appropriate statistical thresholds (FDR < 1%, 2-fold change cutoff) and validation by RT-qPCR. The GO enrichment analysis shows statistically significant p-values (p=2.79\u00d710\u207b\u2075 for type I interferon signaling), and the identification of specific immune proteins (IL1A, ISG15, IFIT3, MX1, MX2) provides molecular detail supporting the immune activation phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "4bc601e2-31e8-44d3-b6d4-3bb4e265b9ac",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PARP1 protein is required for PARPi-induced innate immune signaling. In PARP1 knockout cells, Talazoparib fails to induce PARP1 trapping, DNA damage, TBK1 phosphorylation, IRF3 phosphorylation/translocation, or expression of cGAS-STING target genes. Importantly, PARP1 deletion alone does not activate innate immunity, indicating that catalytic inhibition is insufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 and C78-C79 provide strong genetic evidence using PARP1 KO cells that PARP1 protein is essential for PARPi-induced immune activation. The observation that PARP1 deletion alone does not activate immunity (C78-C79) is critical, as it demonstrates that loss of PARP1 catalytic activity is not sufficient and that PARP1 trapping is required. Multiple readouts (trapping, DDR, TBK1/IRF3 phosphorylation, gene expression) all show consistent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "376f7b9a-7d7a-4e6a-aa3b-e458c3839291",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Five clinically relevant PARPi (Talazoparib, Niraparib, Rucaparib, Olaparib, Veliparib) all inhibit PARP1 enzymatic activity but induce different levels of PARP1 trapping. The degree of PARP1 trapping correlates positively with DNA damage, cytotoxicity, and cGAS-STING pathway activation across these compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 demonstrate a clear dose-response relationship between PARP1 trapping activity and multiple downstream effects across five FDA-approved PARPi. The correlation is supported by multiple independent measurements (chromatin fractionation, \u03b3H2AX, pS172 TBK1, RT-qPCR, cell viability) and is internally consistent. The ranking (Talazoparib > Niraparib > Rucaparib \u2248 Olaparib > Veliparib) is consistent across all readouts, providing strong evidence for the mechanistic link.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "dc849d3e-d176-4d5e-98bd-85d38f0e0fa7",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The DNA-binding activity of PARP1 is required for PARPi-induced innate immune signaling. The PARP1 R138C mutant, which has defective DNA binding and cannot be trapped on chromatin, fails to support Talazoparib-induced PARP1 trapping, DNA damage, or cGAS-STING activation when expressed in PARP1 KO cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 and C80, C83 provide strong structure-function evidence using a well-characterized PARP1 mutant (R138C) with defective DNA binding. The reconstitution experiments in PARP1 KO cells show that WT PARP1 restores all PARPi responses while R138C does not, despite both being expressed. This genetic complementation approach provides compelling evidence that DNA binding and trapping are essential for immune activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The PARP1 degrader iRucaparib-AP6 blocks PARP1 enzymatic activity by degrading PARP1 protein but does not induce PARP1 trapping, DNA damage, cytotoxicity, or cGAS-STING activation, unlike the parent compound Rucaparib. This demonstrates that PARP1 trapping, not just catalytic inhibition, is required for immune activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 and C85-C86 provide a critical pharmacological dissection of PARP1 inhibition versus trapping using a PROTAC degrader. The comparison between Rucaparib (which traps PARP1) and iRucaparib-AP6 (which degrades PARP1) is well-controlled and shows consistent results across multiple cell lines (HeLa, MHH-ES-1) and multiple readouts (PARP1 levels, trapping, DDR, TBK1 phosphorylation, gene expression, cell viability). This provides strong evidence that PARP1 trapping is the key mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "58c0af5c-2dbe-4881-aa12-adeb3982ec6c",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PARP1 trapping is the primary driver of PARPi-mediated cytotoxicity and innate immune signaling in cancer cells. In the presence of PARP1 with intact DNA-binding activity, PARPi-induced PARP1 trapping generates cytosolic dsDNA, which activates cGAS and downstream innate immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C5, C88, and C89 represent the main conclusions of the study, which are well-supported by the comprehensive experimental evidence from genetic (PARP1 KO, R138C mutant), pharmacological (multiple PARPi with different trapping activities, PROTAC degrader), and molecular (cGAS knockdown) approaches. The mechanistic model linking PARP1 trapping to cytosolic dsDNA to cGAS-STING activation is supported by multiple lines of converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "f6839097-568b-4dfe-93cc-63099874771f",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background knowledge claims about PARP1 function, PARPi mechanisms, FDA approvals, cGAS-STING pathway, innate immunity, and cancer biology that provide context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C21, C71-C76, C84, C93-C94 are established knowledge claims properly cited with appropriate references. These provide necessary background context and are not novel findings of this study. The citations appear appropriate and the claims are consistent with the current understanding of PARP1 biology and innate immunity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "70fa26c6-f3ee-414f-854e-3d06a3df0a18",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PARPi treatment produces cytosolic dsDNA that activates cGAS-STING signaling. The cytosolic dsDNA likely results from PARPi-induced PARP1 trapping and subsequent stalled or collapsed replication forks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77 and C87 summarize the mechanistic link between PARPi treatment and immune activation. C77 is directly supported by the experimental data showing cytosolic dsDNA formation (C22) and cGAS-STING activation. C87 is a reasonable mechanistic inference based on cited literature and the experimental findings, though the precise mechanism of cytosolic dsDNA generation from PARP1 trapping is not directly tested in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    },
+    {
+      "id": "6e2f959b-de3e-4184-97b2-72e11c623e59",
+      "content_id": "1b21125a-f0a1-4b9a-9a23-825998341784",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PARP1 degraders that prevent PARP1 trapping and innate immune activation could be useful in non-oncological contexts such as ischemia-reperfusion injury and neurodegenerative diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 is a speculative statement about potential therapeutic applications of PARP1 degraders in non-cancer contexts. While the observation that PARP1 degraders avoid immune activation is supported by the data, the utility in ischemia-reperfusion injury and neurodegenerative diseases is not tested and remains hypothetical. This represents a reasonable extrapolation but requires future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:49.731757Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "06761b1f-ada5-424b-8ad6-0fb5405f1a9d",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "0263436a-f85d-4f1f-9649-2a3b06da7724",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "6ba90f63-11c0-49db-8258-1c91e12a9d65",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "a71c6fc3-16db-4a81-b84f-28ba2ec393f8",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "9fba14df-b815-4153-86cb-5350c6537e4a",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "77eddcd0-2508-4e5b-8918-0926523d01f1",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "55c503f9-02e7-455f-930e-27f1ac44d29d",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "490d171f-61ad-456f-ad47-54546e644017",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "7d7acd87-16a2-4661-a884-1633ec3f44ca",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "f698aa5b-2cfc-43fd-8901-79817b8dd104",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "697c66fa-4fc7-42ea-b275-c454b4ad6d7c",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "81ecf1bf-65da-46f3-a7cf-a7c9c21897c2",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "04d61263-a7c3-444e-a674-262047ca1c00",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "e95b2343-79e0-4a2d-b630-ac481674504a",
+      "result_id": "15e4d4ab-591c-4960-a2bd-7d3906dc3573"
+    },
+    {
+      "claim_id": "960049e0-e300-4932-9bce-a603ec730048",
+      "result_id": "c8e66c10-a248-4c8d-8467-61eab7048237"
+    },
+    {
+      "claim_id": "d5361daf-59e1-4d7f-b58a-e1fa02166ed7",
+      "result_id": "c8e66c10-a248-4c8d-8467-61eab7048237"
+    },
+    {
+      "claim_id": "ef6c98d4-8308-49d9-b40b-0cea2b4aaf06",
+      "result_id": "c8e66c10-a248-4c8d-8467-61eab7048237"
+    },
+    {
+      "claim_id": "01b497cb-df9b-4eed-b136-0e739a7f4cf9",
+      "result_id": "c8e66c10-a248-4c8d-8467-61eab7048237"
+    },
+    {
+      "claim_id": "a231458f-d2cd-4527-aa4e-7a2906d95616",
+      "result_id": "c8e66c10-a248-4c8d-8467-61eab7048237"
+    },
+    {
+      "claim_id": "5dfd5b20-6dbf-4217-befb-441f2cf0dafb",
+      "result_id": "c8e66c10-a248-4c8d-8467-61eab7048237"
+    },
+    {
+      "claim_id": "0acc37b5-f289-4750-8a60-1efb4fff3128",
+      "result_id": "c8e66c10-a248-4c8d-8467-61eab7048237"
+    },
+    {
+      "claim_id": "c15e2c25-dab6-453b-b796-0b172417cdf1",
+      "result_id": "c8e66c10-a248-4c8d-8467-61eab7048237"
+    },
+    {
+      "claim_id": "640d0e55-1f32-4fc0-a820-8bda2bdabf02",
+      "result_id": "c8e66c10-a248-4c8d-8467-61eab7048237"
+    },
+    {
+      "claim_id": "a9f372d8-a7c2-4433-a74c-9bfa3ed31713",
+      "result_id": "4bc601e2-31e8-44d3-b6d4-3bb4e265b9ac"
+    },
+    {
+      "claim_id": "5af83e64-a447-49c6-914e-8cf83bf77474",
+      "result_id": "4bc601e2-31e8-44d3-b6d4-3bb4e265b9ac"
+    },
+    {
+      "claim_id": "cd1cb6a3-9407-4fd3-8a95-ebe3f8c46429",
+      "result_id": "4bc601e2-31e8-44d3-b6d4-3bb4e265b9ac"
+    },
+    {
+      "claim_id": "40bb1428-f07b-420a-86c9-5a6ba35f2036",
+      "result_id": "4bc601e2-31e8-44d3-b6d4-3bb4e265b9ac"
+    },
+    {
+      "claim_id": "c388404d-ebd3-42f1-b66a-4363fd51f436",
+      "result_id": "4bc601e2-31e8-44d3-b6d4-3bb4e265b9ac"
+    },
+    {
+      "claim_id": "ed4232a3-f144-45a8-8a3e-c9365fdeb3b4",
+      "result_id": "4bc601e2-31e8-44d3-b6d4-3bb4e265b9ac"
+    },
+    {
+      "claim_id": "4e9b43a3-1f14-4f6e-8425-a80ba26de861",
+      "result_id": "4bc601e2-31e8-44d3-b6d4-3bb4e265b9ac"
+    },
+    {
+      "claim_id": "3d6016c4-59f2-4e2d-802c-7b8f6d26fc57",
+      "result_id": "4bc601e2-31e8-44d3-b6d4-3bb4e265b9ac"
+    },
+    {
+      "claim_id": "2162938e-2221-4359-9e44-73ec4f43c00f",
+      "result_id": "376f7b9a-7d7a-4e6a-aa3b-e458c3839291"
+    },
+    {
+      "claim_id": "306588ad-afe4-4280-93eb-6ae99b1becf9",
+      "result_id": "376f7b9a-7d7a-4e6a-aa3b-e458c3839291"
+    },
+    {
+      "claim_id": "9a3940a7-d939-4938-9c0d-86dfeaf06dcf",
+      "result_id": "376f7b9a-7d7a-4e6a-aa3b-e458c3839291"
+    },
+    {
+      "claim_id": "1b4ca718-8dff-41c8-b1f5-f973e6106ff1",
+      "result_id": "376f7b9a-7d7a-4e6a-aa3b-e458c3839291"
+    },
+    {
+      "claim_id": "3abbe122-32a1-4e56-896c-cfb4dd9e6f17",
+      "result_id": "376f7b9a-7d7a-4e6a-aa3b-e458c3839291"
+    },
+    {
+      "claim_id": "b0c5346a-2ed2-48da-9156-d30e9977a9d0",
+      "result_id": "376f7b9a-7d7a-4e6a-aa3b-e458c3839291"
+    },
+    {
+      "claim_id": "97e8f3a1-332c-4294-b89b-b8b1db65670a",
+      "result_id": "376f7b9a-7d7a-4e6a-aa3b-e458c3839291"
+    },
+    {
+      "claim_id": "cf8452b9-2a62-4e33-9ca5-75687c9e2e54",
+      "result_id": "dc849d3e-d176-4d5e-98bd-85d38f0e0fa7"
+    },
+    {
+      "claim_id": "e29ab235-a0a0-47b3-98ad-06a5877a98b0",
+      "result_id": "dc849d3e-d176-4d5e-98bd-85d38f0e0fa7"
+    },
+    {
+      "claim_id": "91c8e659-a700-4235-9232-47410bf5b66a",
+      "result_id": "dc849d3e-d176-4d5e-98bd-85d38f0e0fa7"
+    },
+    {
+      "claim_id": "f5a3102d-4449-449d-96da-c449370d1e26",
+      "result_id": "dc849d3e-d176-4d5e-98bd-85d38f0e0fa7"
+    },
+    {
+      "claim_id": "f8793838-dcc4-4fc9-9148-d9d4fb6ffee3",
+      "result_id": "dc849d3e-d176-4d5e-98bd-85d38f0e0fa7"
+    },
+    {
+      "claim_id": "6ef01cbd-a19e-435a-9dfa-4d9d1d68cb6b",
+      "result_id": "dc849d3e-d176-4d5e-98bd-85d38f0e0fa7"
+    },
+    {
+      "claim_id": "8f00e687-b6c0-41cb-bf67-0d97e03e5aac",
+      "result_id": "dc849d3e-d176-4d5e-98bd-85d38f0e0fa7"
+    },
+    {
+      "claim_id": "f853991a-9f43-49bb-9fa1-7283d348d049",
+      "result_id": "dc849d3e-d176-4d5e-98bd-85d38f0e0fa7"
+    },
+    {
+      "claim_id": "e4ebb0bb-6b0b-4b42-8c66-1277c711651d",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "6371fa58-90bc-4853-a1bd-fcc4b5e8585a",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "e2a5fdde-01f6-45d6-83ef-8114deef25c8",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "bf06d957-fbf2-455c-8067-dbbcece355c6",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "78d2a27c-fd1a-479e-922e-4eca4c02d64d",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "65d0a78f-f945-4299-992e-8e7b717bdeca",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "b37abd3d-b5e8-42c7-8a4a-9916b5b2739c",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "2f0524f9-730c-4166-8b2d-cfb2ced09e58",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "547271e6-c9d1-45bc-a49c-956e7f01c845",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "6df92ddf-3005-4f0f-9ecb-181f876b6752",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "19703659-c2db-4e8d-8826-13ee7ec43414",
+      "result_id": "b957e802-85ac-4a8d-afa6-1753dcdf3ee0"
+    },
+    {
+      "claim_id": "9c436c8d-ab7a-4634-a3a5-b1be5733b1a9",
+      "result_id": "58c0af5c-2dbe-4881-aa12-adeb3982ec6c"
+    },
+    {
+      "claim_id": "0c06725c-a4c1-420c-930b-dde9bb821723",
+      "result_id": "58c0af5c-2dbe-4881-aa12-adeb3982ec6c"
+    },
+    {
+      "claim_id": "1f6abb52-71b2-46c4-9280-c057e4249697",
+      "result_id": "58c0af5c-2dbe-4881-aa12-adeb3982ec6c"
+    },
+    {
+      "claim_id": "b81caf96-ec90-4d60-b931-8793e3d92ff7",
+      "result_id": "58c0af5c-2dbe-4881-aa12-adeb3982ec6c"
+    },
+    {
+      "claim_id": "6b3ce8ef-db4a-460b-add1-6acf56e1d7f5",
+      "result_id": "58c0af5c-2dbe-4881-aa12-adeb3982ec6c"
+    },
+    {
+      "claim_id": "b3a7363f-42e8-4bd6-978c-c7a684e65717",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "05143a32-796f-4da4-b834-fe40c0ec420d",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "4a627ea2-c276-44fb-8fff-76a241de5a26",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "ecb4a17b-3032-49cf-b411-0db38a00244a",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "ef24e0a2-ffa5-473e-8d7a-a2dc83337527",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "93168519-e003-400f-8bdb-5b15cbfa8471",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "85de0828-fa35-4bcf-8942-f0fc7e602469",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "90bde330-a5af-4ecc-9956-af737455d151",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "57d137de-7ebf-4b9e-a813-1b3f76ac374b",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "da710bc9-e8e5-4db7-b268-cac559bafd38",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "c1929b85-82e8-49cc-bb27-4dac939f43fa",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "9352f59d-935e-4aad-ac4c-0bfaacb05c12",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "f040bf09-d557-4d48-986a-9a5239933a33",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "af03fd61-69b5-4515-a315-a41cdd99e721",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "ea6e5368-8b53-41d2-9e6f-fff0f152c1d1",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "524eddef-ff7f-46de-8129-23303ac551ef",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "fcce7b4b-5bfb-4020-9ad6-e1e72178eed1",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "ebbee1de-a021-4699-ac65-3b6ae3bc1eb5",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "21e280bf-f356-4914-a095-74cee978f2a0",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "43b80d59-8de9-463e-b654-f9761f12b853",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "779dcbe9-cf67-4753-aa3b-6915d40ba2c8",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "d069cc98-464c-4393-90a5-4957aafef6b2",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "7e312668-7e0c-4201-9e50-eccf1cd57c73",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "b083470b-5080-4476-b78e-d275c1a9c299",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "3aec8cbf-5f19-4e08-94d1-312ba337530a",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "61493ab5-bd93-41d5-ba08-27f91a4962e3",
+      "result_id": "f6839097-568b-4dfe-93cc-63099874771f"
+    },
+    {
+      "claim_id": "c7ebd84a-b73c-40c4-9602-46a7c317731c",
+      "result_id": "70fa26c6-f3ee-414f-854e-3d06a3df0a18"
+    },
+    {
+      "claim_id": "bd12221b-0629-41ca-b0ad-54c981155ecf",
+      "result_id": "70fa26c6-f3ee-414f-854e-3d06a3df0a18"
+    },
+    {
+      "claim_id": "522f57df-c3b1-426b-b0af-7c962164c619",
+      "result_id": "6e2f959b-de3e-4184-97b2-72e11c623e59"
+    }
+  ],
+  "comparisons": []
+}

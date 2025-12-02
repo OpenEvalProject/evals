@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C22",
+      "C23"
+    ],
+    "result": "HemK NTD is a 72 amino acid domain consisting of five \u03b1-helices that folds independently in solution at a rate of 5 ms\u207b\u00b9, while translation occurs at 3.6 amino acids s\u207b\u00b9. The folding on the ribosome differs dramatically from the two-state concerted folding observed in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C22-C23 are well-supported by citations to prior work (Yang et al., 2004; Holtkamp et al., 2015; Mercier and Rodnina, 2018; Kemp et al., 2019) and provide the structural and kinetic foundation for the study. These are established characteristics of the model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "High-resolution FPA reveals sequential force-generating folding events starting inside the ribosomal exit tunnel at nascent-chain lengths as short as 22-24 aa (region I), continuing through regions II (33-39 aa) and III (42-52 aa), with the earliest intermediate involving a single helix (H1). Proline substitutions that disrupt helix formation reduce tension, supporting that these high-tension regions reflect genuine folding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C42, C81-C83 are supported by experimental FPA data (Figure 1c,d) and proline mutagenesis controls (Figure 1\u2014figure supplement 1g). The proline substitution experiments provide critical validation that the observed tension reflects folding rather than non-specific interactions. The structural comparison with ADR1 (C36-C38) provides plausible support for accommodation of intermediates in the tunnel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C91",
+      "C116",
+      "C129",
+      "C130"
+    ],
+    "result": "The 4xA variant (with four Leu\u2192Ala mutations in the hydrophobic core) shows identical force profiles to wild-type inside the exit tunnel (regions I-III) but deviates as the peptide emerges at the vestibule. The 4xA variant generates consistently higher tension in regions VI and VIII, and destabilizing mutations have little effect on folding within the exit tunnel but abolish domain stabilization after separation from the ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49, C91, C116, C129-C130 are supported by comparative FPA data between wt and 4xA variants (Figure 1c, Figure 1\u2014figure supplement 1a,e). The observation that mutations affect folding differently inside versus outside the tunnel is internally consistent and provides insight into the role of the ribosome in early folding events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C113"
+    ],
+    "result": "In solution, isolated HemK NTD (both wt and 4xA variants) shows no PET dynamics, with identical autocorrelation functions for W6 and W6F constructs, indicating no dynamic fluctuations at the N-terminus. Control experiments with a 14 aa peptide in glycerol show PET dynamics with ~5\u00d710\u207b\u2077 s relaxation time, confirming the method can detect dynamics when present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56, C113 are supported by FCS measurements (Figure 2a-c, Supplementary file 1 - table 1). The W6F control is appropriate for distinguishing PET signal from other fluorescence changes. The 14 aa peptide control in glycerol validates that the experimental system can detect PET dynamics, strengthening the conclusion that the folded NTD lacks such dynamics in solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PET-FCS experiments with ribosome-nascent chain complexes yield multiphasic autocorrelation functions spanning ms to ns timescales. Initial fitting reveals at least three fast dynamic components in the \u03bcs range, with one component likely reflecting triplet state relaxation (~40 \u03bcs) and two relaxation times (\u03c41 and \u03c42) that differ between W6 and W6F constructs and are affected by loop mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 are supported by experimental ACF data (Figure 3b-d, Figure 3\u2014figure supplement 1, Supplementary file 1 - table 2). The W6F controls appropriately distinguish intra-chain PET from ribosome-dye interactions. The loop mutation experiments (C66) provide additional validation that the observed dynamics reflect nascent chain conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The minimal kinetic model that can fit the ACF dataset requires five equilibria (models 5e-H and 5e-O), with simpler models being insufficient. Global fitting of Trp titration data yields an ATTO655-Trp dequenching rate of about 2 \u03bcs\u207b\u00b9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by systematic model comparison (Figure 4\u2014figure supplement 1) and Trp titration experiments (Figure 4\u2014figure supplement 3, Supplementary file 1 - tables 3 and 4). The approach of testing increasingly complex models and using Trp titration to constrain parameters is methodologically sound. However, the complexity of the model and the number of fitted parameters raise questions about uniqueness of the solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Two structural states of nascent chains (C and D) are identified with dramatically different dynamics. State C (compact) shows 20-50-fold slower ribosome quenching and 80-200-fold slower Trp6 quenching compared to state D (dynamic). For a given state, interaction rates with Trp or ribosome are relatively insensitive to chain length or position. The compact state resembles native folded protein, while the dynamic state shows quenching rates (3-8 \u03bcs\u207b\u00b9) similar to reported protein dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74, C101-C106 are supported by kinetic modeling results (Figure 4, Supplementary file 1 - table 5). The identification of two distinct conformational states with different quenching kinetics is internally consistent. The comparison to literature values for protein dynamics (C104) provides external validation. However, the structural interpretation of states C and D remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The compact state C is favored in all complexes, but C\u2194D transition rates decrease dramatically with increasing protein length and emergence from the ribosome. The 4xA mutations do not alter C/D equilibrium for HemK70 and HemK112 but cause orders of magnitude increase in transition rates for emerged HemK112. Loop extensions dramatically increase transition rates in both HemK102 and HemK112 without altering interactions with Trp or ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by kinetic modeling of different constructs (Figure 4, Supplementary file 1 - table 5). The systematic effects of chain length, mutations, and loop insertions on transition rates are internally consistent and provide mechanistic insight. The observation that loop extensions affect dynamics as predicted (C80, citing Dagan et al., 2013) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C115"
+    ],
+    "result": "Nascent peptides undergo conformational rearrangements on the \u03bcs timescale. On the ribosome, fluctuation rates between compact and dynamic states decrease as the nascent chain moves through the exit tunnel and emerges, with transition-state free energy increasing from 38 kJ mol\u207b\u00b9 (HemK70) to 40 kJ mol\u207b\u00b9 (HemK102) to 46 kJ mol\u207b\u00b9 (HemK112). This demonstrates how ribosome proximity alters nascent protein dynamics and supports the notion that protein stability increases with distance from the ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C107-C112, C115 are supported by PET-FCS data and kinetic modeling (Figure 5a,b, Supplementary file 1 - table 8). The trend of increasing \u0394G\u2021 with chain length is clear and consistent. The interpretation that ATTO655-ribosome dequenching reflects guanine interactions (C107) is stated as 'most probably' and is reasonable but not definitively proven. The comparison to solution folding (C109, citing Nettels et al., 2007; Waldauer et al., 2010) provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C123"
+    ],
+    "result": "For HemK70, wt and 4xA variants have identical transition-state barriers (\u0394G\u2021=37.5 kJ mol\u207b\u00b9) and both intermediates are highly dynamic. Outside the tunnel, hydrophobic core mutations or loop extensions increase dynamic fluctuations. For stably folded HemK112, 4xA mutations decrease \u0394G\u2021 by ~10 kJ mol\u207b\u00b9, which is sufficient to slow nascent-chain fluctuations by at least two orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120, C123 are supported by comparative analysis of wt and mutant constructs (Figure 5c,d, Supplementary file 1 - table 8, Figure 4e,f). The observation that mutations have minimal effect inside the tunnel but large effects outside is consistent with the FPA results and provides mechanistic insight into the role of the ribosome in early folding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "The results are consistent with prior work showing that \u03b1-helices and tertiary interactions can form within the exit tunnel, that HemK NTD folding is sequential with multiple intermediates on the ribosome, and that this differs from concerted two-state folding in solution. Sequential amino acid addition during translation affects folding both inside the tunnel and at the ribosome surface, resulting in a complex pathway with multiple intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 integrate the current findings with prior literature. The consistency with previous FRET, PET, and FPA studies (C84-C86, C89) is well-documented through citations. The contrast between ribosomal and solution folding (C92-C93) is supported by both current data and prior work (Holtkamp et al., 2015). These claims appropriately contextualize the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The results are interpreted in the context of the foldon model, where foldons (1-2 secondary structure elements) form rapidly and guide subsequent folding. The vectorial emergence of nascent peptide in the constrained exit tunnel may allow nucleation of folding units and restrict conformational space, explaining sequential ribosomal folding versus concerted solution folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C99 present a mechanistic interpretation based on the foldon model (citing Hu et al., 2013; Englander and Mayne, 2014). While this interpretation is plausible and consistent with the data, it remains speculative (note 'may allow' in C97). The current study does not directly test the foldon model or provide evidence for specific foldon units in HemK NTD. This is a reasonable discussion point but not a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Protein folding energy landscapes in solution are generally shallow, with differences between barriers and energy minima in the tens rather than hundreds of kJ mol\u207b\u00b9. For example, differences between partially unfolded high-energy states and native states are 17-54 kJ mol\u207b\u00b9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 cite established knowledge from the literature (Gruebele et al., 2016; Englander and Mayne, 2014) to provide context for interpreting the measured \u0394G\u2021 values. These are appropriately cited background claims that support the significance of the observed ~10 kJ mol\u207b\u00b9 changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C131"
+    ],
+    "result": "The study demonstrates that a small \u03b1-helical protein domain starts folding as soon as the first helical elements pass the exit tunnel constriction, with emerging helical segments docking sequentially. The folding pathway involves numerous intermediates that continue rearranging even after emerging from the ribosome. Inside the tunnel or near the ribosome, nascent peptides are highly dynamic with \u03bcs timescale fluctuations that slow as the domain moves away from the ribosome. The results demonstrate the power of FPA and PET-FCS for characterizing cotranslational folding trajectories and intermediate dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128, C131 summarize the main findings of the study. These conclusions are well-supported by the combined FPA and PET-FCS data presented throughout the manuscript. The integration of force measurements with dynamics measurements provides complementary information about the folding process. C131 appropriately highlights the methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The ribosomal exit tunnel is ~100 \u00c5 long and ~20 \u00c5 wide at the vestibule, with a constriction site ~30 \u00c5 from the PTC that is ~10 \u00c5 wide. While tunnel dimensions generally prevent complex tertiary interactions, some secondary and tertiary structures can form in specific folding zones, with the upper part accommodating \u03b1-helices and the lower part allowing hairpin structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11 present established structural knowledge about the ribosomal exit tunnel, appropriately cited to prior work (Nissen et al., 2000 and multiple FRET/cryo-EM studies). This background information is accurate and provides necessary context for interpreting the folding results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The ribosome can alter protein folding pathways from concerted to sequential, induce helical and random-coil behavior, and affect folding rates. Nascent chains can form near-native compact structures while ribosome-bound, but the ribosome can destabilize folded proteins in its vicinity, with stability restored by extending the linker to move the protein away from the ribosome surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 summarize established effects of the ribosome on protein folding from prior literature (multiple citations to Kaiser et al., 2011; Liu et al., 2017; Alexander et al., 2019; Cabrita et al., 2016; Samelson et al., 2016; and others). This background appropriately contextualizes the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The SecM arrest peptide (17 aa) stalls translation in the absence of additional force, but high-tension mechanical force (7-16 pN) from nascent protein folding can alleviate stalling. FPA using this principle can identify folding events at single-codon resolution and yields trajectories consistent with FRET, PET, NMR, and cryo-EM analyses. PET requires short-range interactions (<1 nm) allowing monitoring of local structural fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe the methodological basis for FPA and PET-FCS, appropriately cited to prior work (Ito and Chiba, 2013; Goldman et al., 2015; Kemp et al., 2020; Nilsson et al., 2015; and others). These establish the validity and resolution of the methods used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior FRET and PET studies suggest HemK NTD folds cotranslationally through several compact intermediates, with folding dynamics rapid compared to translation pace. Stalled RNCs at different translation stages faithfully reflect dynamics during synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 cite prior work (Holtkamp et al., 2015; Mercier and Rodnina, 2018) establishing that the experimental approach of using stalled RNCs is valid for studying cotranslational folding dynamics. This justifies the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The isolated HemK NTD can unfold in solution at a rate of 1 s\u207b\u00b9 at 37\u00b0C, but this dynamics is too slow for FCS detection and the unfolded state is too rare to detect due to rapid refolding (2000 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 cites prior work (Holtkamp et al., 2015) to explain why PET dynamics are not observed for isolated NTD. This is a reasonable explanation consistent with the known folding kinetics of the protein.",
+    "result_type": "MINOR"
+  }
+]

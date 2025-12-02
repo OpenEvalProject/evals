@@ -1,0 +1,2120 @@
+{
+  "submission": {
+    "id": "57d9dfc9-072c-4df1-b1cd-2e7baebf6e12",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:13:02.798642Z",
+    "updated_at": "2025-12-02T12:13:02.798642Z"
+  },
+  "content": [
+    {
+      "id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "submission_id": "57d9dfc9-072c-4df1-b1cd-2e7baebf6e12",
+      "content_type": "manuscript",
+      "content_text": "# Multivariable two-sample Mendelian randomization estimates of the effects of intelligence and education on health\n\n## Authors\n\n- Neil Martin Davies<sup>1</sup> ([ORCID: 0000-0002-2460-0508](https://orcid.org/0000-0002-2460-0508)) \u2020\n- W David Hill<sup>3</sup>\n- Emma L Anderson<sup>1</sup>\n- Eleanor Sanderson<sup>1</sup>\n- Ian J Deary<sup>3</sup>\n- George Davey Smith<sup>1</sup> ([ORCID: 0000-0002-1407-8314](https://orcid.org/0000-0002-1407-8314))\n\n### Affiliations\n\n1. Medical Research Council Integrative Epidemiology Unit University of Bristol Bristol United Kingdom\n2. Bristol Medical School University of Bristol Bristol United Kingdom\n3. Centre for Cognitive Ageing and Cognitive Epidemiology University of Edinburgh Edinburgh United Kingdom\n4. Department of Psychology University of Edinburgh Edinburgh United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nIntelligence and education are predictive of better physical and mental health, socioeconomic position (SEP), and longevity. However, these associations are insufficient to prove that intelligence and/or education cause these outcomes. Intelligence and education are phenotypically and genetically correlated, which makes it difficult to elucidate causal relationships. We used univariate and multivariable Mendelian randomization to estimate the total and direct effects of intelligence and educational attainment on mental and physical health, measures of socioeconomic position, and longevity. Both intelligence and education had beneficial total effects. Higher intelligence had positive direct effects on income and alcohol consumption, and negative direct effects on moderate and vigorous physical activity. Higher educational attainment had positive direct effects on income, alcohol consumption, and vigorous physical activity, and negative direct effects on smoking, BMI and sedentary behaviour. If the Mendelian randomization assumptions hold, these findings suggest that both intelligence and education affect health.\n\n## Introduction\n\nIntelligence and educational attainment are associated with many socioeconomic and health outcomes (Cutler and Lleras-Muney, 2006; Clark and Royer, 2013; Deary and Johnson, 2010; Deary, 2012; Hill et al., 2016a). However, the causal relationships between intelligence, education, and health outcomes are unclear, in part, because intelligence and education are strongly correlated. On average, children who score more highly in intelligence tests tend to remain in school for longer, (Deary et al., 2007) and people who remained in school for longer tend to have higher intelligence later in life (Ritchie and Tucker-Drob, 2018). Intelligence and educational attainment are partially heritable, and strongly genetically correlated (rg=0.70) (Lee et al., 2018; Hill et al., 2019; Hill et al., 2016b; Hill et al., 2018). A review of the effects of educational attainment on socio-economic and health outcomes in later life found some evidence that increases in education led to lower mortality, especially for older cohorts (Galama et al., 2018). However, there was little consistent evidence of effects on other outcomes such as obesity (Galama et al., 2018). A systematic review of 28 studies provided evidence using quasi-experiential designs that each year of education causes measured IQ to increase by on average 1 to 5 points (Ritchie and Tucker-Drob, 2018). Large prospective studies have found that intelligence test scores taken at age 11 strongly associate with educational attainment later in life, a link that is, in part, explained by shared genetic effects (Deary et al., 2007; Calvin et al., 2012). However, there are no quasi-experimental studies of the effects of intelligence on education because intelligence is less subject to perturbation by natural experiments such as policy reforms. In order to design successful interventions aimed at the amelioration of health conditions, it is necessary to determine the extent to which intelligence, education, or both, are causal factors for health outcomes. If the health differences are mainly due to differences in intelligence that are independent from education, then changes to the length of schooling are unlikely to affect population health. If, however, educational attainment has a causal effect on health and socioeconomic outcomes later in life, and these effects are independent of intelligence, the health of the population may be able to be raised by implementing a policy change aimed at increasing the duration of education (Deary and Johnson, 2010).\n\nMendelian randomization is an approach that can provide evidence about the relative causal effects of intelligence and education on social and health outcomes under specific assumptions (Davey Smith and Ebrahim, 2003; Davies et al., 2018a). Mendelian randomization generally uses single nucleotide polymorphisms (SNPs) that associate with traits of interest, in this case intelligence and educational attainment, as proxy variables for a trait. At each SNP, offspring inherit at random one of their mother\u2019s two possible alleles and one of their father\u2019s two possible alleles. With the exception of somatic mutation, SNPs are invariant post-conception, so it is not possible for the environment or developing disease to affect inherited DNA. Thus, SNPs are not affected by reverse causation, which can distort causal interpretations of observational epidemiological associations. Segregation of alleles at germ cell formation (Mendel\u2019s first law) and the independent assortment of alleles with respect to the rest of the genome excepting proximal DNA segments (Mendel\u2019s second law), and the lack of environmentally influenced effects on survival from conception through to live birth and study entry, leads to genetic variants being largely unrelated to factors that would confound conventional observational studies (Davey Smith, 2011).\n\nInstrumental variable interpretations of Mendelian randomization analysis depend on three assumptions, (1) the genetic variants associate with the risk factors of interest, (2) the genetic variants-outcome associations are not confounded by potentially unmeasured factors, and (3) the genetic variants only affect the outcomes via their effect on the exposures of interest (in this case intelligence or education) (Davies et al., 2018a). One approach would be to estimate the effects of intelligence and education separately using SNPs identified in GWAS for intelligence or education (Hill et al., 2019; Okbay et al., 2016). However, this could be misleading, as SNPs that affect intelligence are likely to also affect education and vice versa. Thus, the SNPs associated with intelligence and education are pleiotropic \u2013 and most affect both traits. However, it is unclear whether any effects of the SNPs on the health and socioeconomic outcomes later in life via education and intelligence are vertically or horizontally pleiotropic (Davey Smith and Hemani, 2014).\n\nConsider a Mendelian randomization study with one exposure - education. Vertically pleiotropic effects would occur if the SNPs being used as proxies for education affect the outcomes first via their effects on intelligence, which then has a downstream effect on educational attainment (Figure 1a). Horizontally pleiotropic effects could occur if a SNP being used as a proxy for education directly affected an outcome via intelligence without being mediated via education (Figure 1b). In a Mendelian randomization analysis using education as a single exposure, this horizontal pleiotropy would violate the third Mendelian randomization assumption. Alternatively, the SNPs being used as proxies for education could affect intelligence, and consequently educational attainment, but all of the effects of the SNPs on the outcome could be mediated via intelligence (Figure 1c). Pleiotropy would have similar consequences for a Mendelian randomization study with intelligence as a single exposure. One method which can provide evidence about which of these scenarios is most likely is multivariable Mendelian randomization (Sanderson et al., 2018; Burgess et al., 2015). This approach simultaneously estimates the effects of two or more risk factors using a potentially overlapping set of SNPs. Multivariable Mendelian randomization estimates the direct effect of each risk factor \u2013 i.e. the direct effect of intelligence on outcomes that is not mediated via the effect of intelligence on education, and the direct effect of education that is not mediated via the effect of education on intelligence (Figure 2). It is important to note that multivariable Mendelian randomization does not overcome bias due to horizontally pleiotropic effects via other mechanisms, for example, effects via character or personality.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43990/elife-43990-fig1-v2.jpg)\n\n**Figure 1.:** (A) Vertical pleiotropy: SNPs associated with intelligence and educational attainment could be vertically pleiotropic.\u00a0This could occur if all of the effect of the SNPs on the outcomes is mediated via their effects on intelligence, the effect of intelligence on educational attainment, and the effect of educational attainment on the outcome. Confounders omitted from this figure for clarity. (B)\u00a0Horizontal pleiotropy: The SNPs could be associated with the outcome via intelligence and educational attainment because of horizontal pleiotropy. This would occur if the SNPs had effects on the outcome via intelligence or education that were not mediated via the other trait. (C)\u00a0Confounding pleiotropy: The SNPs could be associated with the outcomes, intelligence and educational attainment because of the effect of the SNPs on intelligence, and hence education, but that education had no direct effect on the outcome (i.e. the effects of the SNPs were entirely mediated via intelligence. This would occur if the SNPs had effects on the outcome via intelligence or education that were not mediated via the other trait (or vice versa). Multivariable Mendelian randomization does not overcome bias due to other pleiotropic effects by pathways other than intelligence or education.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43990/elife-43990-fig2-v2.jpg)\n\n**Figure 2.:** The direct effect (red arrow) excludes any effect of either intelligence (or education) that is mediated via education (intelligence) on the outcome. It requires genetic variation that explains a sufficient proportion of the variation in intelligence and education conditional on the other trait\u00a0(Davey Smith and Hemani, 2014). It uses a set of SNPs that associate with intelligence and/or education at p<5\u00d710\u221208.\n\nHere, we used a large sample from the UK Biobank and SNPs associated with intelligence and education to estimate the direct effects of intelligence and education on a range of health and socioeconomic outcomes. Our primary analysis uses two-sample multivariable Mendelian randomization of the effects of intelligence and education on a range of socioeconomic and health outcomes. This approach makes most efficient use of available data. We present single sample Mendelian randomization analysis using polygenic risk scores in the UK Biobank as sensitivity analyses.\n\n## Results\n\nThe characteristics of 138,670 participants of UK Biobank who met our quality control and inclusion criteria for our primary two-sample multivariable analysis are described in Table 1. We take estimates of the SNP-intelligence and SNP-education associations from published GWAS of intelligence and education (Hill et al. and Okbay et al.) and estimates of the SNP- outcome associations using participants of the UK Biobank who were not included in either GWAS. The intelligence and education GWAS used overlapping samples, but do not overlap with the sample used to estimate the SNP-outcome associations. See Supplementary file 1\u00a0-\u00a0Figure\u00a01 for a flow chart of participants\u2019 inclusion and exclusion into the analytic samples. The sample was 45.5% male and on average were 57.3 years old when they visited the assessment centre. The prevalence of the clinical outcomes in this sample ranged from 1.5% for stroke to 34.6% for a broad measure of depression. Of the participants in this sample, 2.0% died by the end of linked data follow-up. A total of 45.2% of the sample had ever smoked, and 9.2% were current smokers.\n\n**Table 1.**\n Characteristics of 138,670 participants of the UK Biobank used to estimate the association of the SNPs and the outcomes.The sample is more educated and healthier than the UK population. The sample was restricted to participants included in the two-sample analysis used for our primary results.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Covariates</th>\n      <th></th>\n      <th>Mean/percent</th>\n      <th>Standard deviation/ count</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Male</td>\n      <td>138,670</td>\n      <td>45.5%</td>\n      <td>63,111</td>\n    </tr>\n    <tr>\n      <td>Year of birth</td>\n      <td>138,670</td>\n      <td>1951</td>\n      <td>8.08</td>\n    </tr>\n    <tr>\n      <td>Age at assessment centre visit</td>\n      <td>138,670</td>\n      <td>57.3</td>\n      <td>8.08</td>\n    </tr>\n    <tr>\n      <td>Exposures</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Intelligence*</td>\n      <td>137,396</td>\n      <td>6.20</td>\n      <td>2.10</td>\n    </tr>\n    <tr>\n      <td>Educational attainment</td>\n      <td>137,354</td>\n      <td>14.55</td>\n      <td>5.16</td>\n    </tr>\n    <tr>\n      <td>Outcomes</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hypertension</td>\n      <td>134,751</td>\n      <td>24.9%</td>\n      <td>33,494</td>\n    </tr>\n    <tr>\n      <td>Diabetes</td>\n      <td>137,883</td>\n      <td>4.3%</td>\n      <td>5988</td>\n    </tr>\n    <tr>\n      <td>Stroke</td>\n      <td>138,417</td>\n      <td>1.5%</td>\n      <td>2090</td>\n    </tr>\n    <tr>\n      <td>Heart attack</td>\n      <td>138,417</td>\n      <td>2.4%</td>\n      <td>3260</td>\n    </tr>\n    <tr>\n      <td>Depression</td>\n      <td>137,733</td>\n      <td>34.6%</td>\n      <td>47,624</td>\n    </tr>\n    <tr>\n      <td>Cancer</td>\n      <td>138,078</td>\n      <td>13.4%</td>\n      <td>18,482</td>\n    </tr>\n    <tr>\n      <td>Mortality</td>\n      <td>138,670</td>\n      <td>2.0%</td>\n      <td>2783</td>\n    </tr>\n    <tr>\n      <td>Ever smoker</td>\n      <td>138,044</td>\n      <td>45.2%</td>\n      <td>62,365</td>\n    </tr>\n    <tr>\n      <td>Smoker</td>\n      <td>138,044</td>\n      <td>9.3%</td>\n      <td>12,831</td>\n    </tr>\n    <tr>\n      <td>Income over \u00a318 k</td>\n      <td>117,750</td>\n      <td>76.9%</td>\n      <td>90,537</td>\n    </tr>\n    <tr>\n      <td>Income over \u00a331 k</td>\n      <td>117,750</td>\n      <td>51.0%</td>\n      <td>60,077</td>\n    </tr>\n    <tr>\n      <td>Income over \u00a352 k</td>\n      <td>117,750</td>\n      <td>24.9%</td>\n      <td>29,358</td>\n    </tr>\n    <tr>\n      <td>Income over \u00a3100 k</td>\n      <td>117,750</td>\n      <td>5.0%</td>\n      <td>5871</td>\n    </tr>\n    <tr>\n      <td>Grip strength (kg)*</td>\n      <td>138,432</td>\n      <td>7.8%</td>\n      <td>11.04</td>\n    </tr>\n    <tr>\n      <td>Height (cm)*</td>\n      <td>138,374</td>\n      <td>168.74</td>\n      <td>9.27</td>\n    </tr>\n    <tr>\n      <td>BMI (kg/m2)*</td>\n      <td>138,241</td>\n      <td>27.36</td>\n      <td>4.72</td>\n    </tr>\n    <tr>\n      <td>Diastolic blood pressure (mmHg)*</td>\n      <td>132,955</td>\n      <td>82.31</td>\n      <td>10.16</td>\n    </tr>\n    <tr>\n      <td>Systolic blood pressure (mmHg)*</td>\n      <td>132,954</td>\n      <td>138.24</td>\n      <td>18.64</td>\n    </tr>\n    <tr>\n      <td>Alcohol consumption (one low, five high)*</td>\n      <td>138,550</td>\n      <td>3.15</td>\n      <td>1.48</td>\n    </tr>\n    <tr>\n      <td>Hours of television viewing per day*</td>\n      <td>133,714</td>\n      <td>2.88</td>\n      <td>1.62</td>\n    </tr>\n    <tr>\n      <td>Vigorous physical activity (days/week)*</td>\n      <td>131,529</td>\n      <td>1.82</td>\n      <td>1.95</td>\n    </tr>\n    <tr>\n      <td>Moderate physical activity (days/week)*</td>\n      <td>131,561</td>\n      <td>3.60</td>\n      <td>2.33</td>\n    </tr>\n  </tbody>\n</table>\n\n_Notes: * Intelligence used in the single sample analysis reported in Supplementary Table 4. Both intelligence and educational attainment were normalised mean zero, standard deviation one for these analyses._\n\n### Bidirectional Mendelian randomization of intelligence and education\n\nWe investigated the direction of causation between intelligence and education using bidirectional two-sample Mendelian randomization. We restricted analysis to SNPs that were available in the Hill et al. (2019) intelligence genome-wide association study (GWAS), the discovery sample of Okbay et al. (2016) educational attainment GWAS, and the UK Biobank Haplotype Reference Consortium panel (HRC). We selected all SNPs that were associated with intelligence at p<5\u00a0\u00d7\u00a010\u221208. Of these SNPs, we then selected the lead SNPs within each 10,000 kb genomic region by selecting the SNP with the lowest p-value. We then repeated this process to select all SNPs that associated with education at p<5\u00a0\u00d7\u00a010\u221208, and selected lead SNPs within each region. This resulted in 270 SNPs that were associated with either intelligence or education, or both. Some of these SNPs represented the same signal, so we clumped a combined list of SNPs by selecting the SNP with the lowest p-value for education. This resulted in 219 SNPs, of which 144 were associated with intelligence, but not education at p<5\u00a0\u00d7\u00a010\u221208, 38 were associated with education, but not intelligence at p<5\u00a0\u00d7\u00a010\u221208, and 37 were associated with both intelligence and education at p<5\u00a0\u00d7\u00a010\u221208. All 219 SNPs associated with either trait were included in the multivariable Mendelian randomization analysis for both intelligence and education (for a flow chart of selection of SNPs see Supplementary file 1\u00a0-\u00a0Figure\u00a02).\n\nWe estimated the effects of intelligence on education and vice versa using non-overlapping data from the UK Biobank. We used two-sample summary data Mendelian randomization methods including the inverse variance weighted (IVW), MR-Egger, weighted median and modal estimators, see methods for details (Bowden et al., 2016a; Bowden et al., 2016a; Hartwig et al., 2017). The inverse variance weighted (IVW) estimates implied that a one standard deviation (SD) increase in intelligence increased years of education by 0.52 SD (95% CI: 0.48 to 0.56, p-value=2.2\u00a0\u00d7\u00a010\u2212145). The IVW estimates imply that a one SD increase in education increased intelligence by 0.77 SD (95% CI: 0.68 to 0.86, p-value=3.0\u00a0\u00d7\u00a010\u221262). There was more evidence of heterogeneity in the estimated effects of education across the SNPs (I2\u00a0=\u00a00.60, 95% CI: 0.48 to 0.69) than in the estimated effects of intelligence (I2\u00a0=\u00a00.48, 95% CI: 0.38 to 0.56). The heterogeneity statistic indicates the variability of the estimated effects between SNPs; a value of zero indicates no heterogeneity and one indicates high heterogeneity. One explanation for this heterogeneity across SNPs is if the SNPs have horizontally pleiotropic effects. The effects of each of the SNPs on intelligence and education, along with the IVW, MR-Egger, weighted median and weighted mode estimates are presented in Figure 3 and Supplementary file 1\u00a0- Table 1 and 2. The estimated effect of intelligence was consistent and robust across four different estimators (IVW, MR-Egger, weighted median and weighted mode). The estimated effect of education was robust across IVW, weighted median and weighted mode, but the MR-Egger estimate was attenuated by over half, one explanation for this is if the education SNPs have unbalanced horizontally pleiotropic effects on intelligence or the INSiDE assumption is violated. There was little statistical\u00a0evidence that the estimated effects of intelligence on education were biased by horizontal pleiotropy (MR-Egger intercept\u00a0=\u00a00.001, 95% CI: \u22120.005 to 0.003, p-value=0.68). However, these tests for pleiotropy are likely to have low power. There was modest evidence that the estimated effects of education on intelligence were affected by horizontal pleiotropy (MR-Egger intercept\u00a0=\u00a00.009, 95% CI: 0.001 to 0.016, p-value=0.03).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43990/elife-43990-fig3-v2.jpg)\n\n**Figure 3.:** The error bars indicate 95% confidence intervals around the estimated phenotype-SNP associations. Two sample multivariable Mendelian randomization using results from Hill et al. (2019), Okbay et al. (2016) and UK Biobank data. These results suggest that intelligence increases length of schooling and that higher education leads to higher intelligence. Pleiotropy robust methods, such as MR-Egger suggested little bias in the IVW estimates of the effect of intelligence on education, but that the IVW results may substantially overestimate the effect of education on intelligence. Estimates adjusted for month of birth, year of birth, sex, interaction of sex and year of birth and the first 40 principal components. For panel A, Q-stat\u00a0=\u00a0368.7 (p<0.0001), I2gx=34.7%. For panel B, Q\u00a0=\u00a0183.3 (p<0.0001), I2gx=12.5%.\n\n### Univariable Mendelian randomization\n\nWe estimated the total effect of intelligence and education on each of the social and health outcomes using two-sample summary data Mendelian randomization (Supplementary file 1\u00a0-\u00a0Figure\u00a03). This approach estimates the total effect of a one SD change in intelligence or education including any effects mediated through the other (or any other, for example character) trait. The estimates of the total effects for each outcome for intelligence and education were generally in a consistent direction. The inverse-variance weighted estimates imply that a one standard deviation increase in intelligence reduced risk of: high blood pressure by 4.0 percentage point (pp) (95% CI: 0.02 to 0.06, p-value=1.2\u00d710\u221205); diabetes by 0.8pp (95% CI: 0.1 to 1.6, p-value=0.04); having had a heart attack by 1.2pp (95% CI: 0.7 to 1.7, p-value=5.5\u00a0\u00d7\u00a010\u221207); of reporting having seen a GP for nerves, anxiety, tension or depression by 0.5pp (95% CI: 0.3 to 0.5, p-value=8.1\u00d710\u221208). The results suggested that a one standard deviation increase in intelligence was unlikely to have a large effect on risk of mortality or cancer (risk difference\u00a0=\u00a0\u22120.001, 95% CI: \u22120.006 to 0.003, p-value=0.57, and\u00a0=\u00a0\u22120.01, 95% CI: \u22120.02 to 0.003, p-value=0.12). A one standard deviation reduced risk of being an ever or current smoker by 4.9pp (95% CI: 2.8 to 6.9, p-value=4.5\u00a0\u00d7\u00a010\u221206) and 3.5pp (95% CI: 2.4 to 4.7, p-value=1.2\u00d710\u221209). Intelligence also had substantial total effects on household income, increasing the probability of reporting a household income higher than \u00a318,000, \u00a331,000, \u00a352,000 and \u00a3100,000 by 11.4pp (95% CI: 9.8 to 12.9, p-value<1.4\u00d710\u221245), 13.4pp (95% CI: 11.5 to 15.3, p-value=2.1\u00d710\u221244), 11.9pp (95% CI: 10.3 to 13.6, p-value=3.4\u00d710\u221247), and 4.1pp (95% CI: 3.3 to 4.9, p-value=7.7\u00d710\u221224) respectively. Higher intelligence generally had beneficial total effects on all of the continuous outcomes. A one standard deviation increase in intelligence was estimated to increase: grip strength by 0.32 kg (95% CI: 0.03 to 0.67, p-value=0.07); height by 1.44 cm (95% CI: 0.95 to 1.94, p-value=1.4\u00d710\u221208); alcohol consumption by 0.29 (95%CI: 0.23 to 0.35); days of vigorous physical activity per week by 0.17 (95%CI: 0.10 to 0.24, p-value=6.7\u00d710\u221206); and moderate physical activity by 0.32 (95%CI: 0.23 to 0.40, p-value=1.1\u00d710\u221213) and reduce: BMI by 0.91 kg/m2 (95% CI: 0.65 to 1.18, p-value=7.7\u00d710\u221212); and systolic and diastolic blood pressure by 1.09 (95%CI: 0.65 to 1.54, p-value=1.5\u00a0\u00d7\u00a010\u221206) and 1.86 (95%CI: 1.12 to 2.61, p-value=9.1\u00d710\u221207) mmHg respectively; and hours watching television per day by 0.49 (95%CI: 0.42 to 0.57, p-value=4.3\u00d710\u221220).\n\nThe effects of a one SD increase in education were very similar in direction and magnitude to those of intelligence. An exception was that there was little evidence that education affected frequency of vigorous physical activity (mean difference\u00a0=\u00a00.00 95% CI: \u22120.15 to 0.15, p-value=0.997).\n\n### Multivariable Mendelian randomization\n\nNext, we estimated the direct effect of each exposure using multivariable Mendelian randomization (Sanderson et al., 2018). The direct effect of intelligence (or, mutatis mutandis, education) is the effect of intelligence that is not mediated via education (or intelligence). Multivariable Mendelian randomization estimates the effects of two exposures using the two sets of (overlapping) SNPs as instruments. We restricted the analysis to SNPs in linkage equilibrium which were identified in the intelligence and/or education GWAS at p<5\u00a0\u00d7\u00a010\u221208 clumped on r2\u00a0=\u00a00.01 within 10,000 kb using the 1000 genomes reference panel (Hemani et al., 2018). Some SNPs that were selected from the intelligence and education GWAS were closely positioned in the genome and were correlated. For these pairs of SNPs, we selected the SNP that most strongly associated with education in the GWAS. Sensitivity analysis which clumped SNPs using their association in the intelligence GWAS is presented in the supplementary materials; however, the results were virtually identical. The instruments strongly predicted both education and intelligence in the single sample analysis (the minimum Sanderson-Windmeijer multivariable F-statistic was 21.6) (Sanderson et al., 2018; Sanderson and Windmeijer, 2015). Sanderson-Windmeijer F-statistics tests the strength of the SNP-exposure conditional on the other exposure (intelligence or education). Because the effects of the SNPs on intelligence and education are similar (but not identical), the Sanderson-Windmeijer multivariable F-statistics are smaller than standard univariable F-statistics. The estimates of the direct effects presented in Figure 4 are less precise than the estimates of the total effects. It is not possible to test the strength of the instruments to jointly predict both of the exposures for the two-sample analysis. However, the Sanderson-Windmeijer tests of the strength of the instruments in the single sample analysis is likely to provide a lower bound of their strength.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43990/elife-43990-fig4-v2.jpg)\n\n**Figure 4.:** The error bars indicate 95% confidence intervals around the estimated effects. Estimated using two sample multivariable Mendelian randomization. Higher intelligence had direct effects on higher household income and alcohol consumption and less moderate and vigorous physical activity. Higher education had direct effects on decreased smoking, BMI, and sedentary behaviour and increased household income and rates of vigorous physical activity. These are estimates of the direct effects of intelligence (education) that are not mediated via education (intelligence).\n\n### The direct effects of intelligence\n\nIn the two-sample analysis the estimates of the direct effects of intelligence were attenuated compared to the total effects. As seen (Figure 4 and Supplementary file 1\u00a0-\u00a0Figure\u00a03), a one SD increase in intelligence score increased the probability of a household income above \u00a318,000 and \u00a352,000 by 5.2pp (95% CI: 1.5 to 8.9, p-value=0.007) and 4.7pp (95% CI: 0.8 to 8.6, p-value=0.02) respectively. A SD increase in intelligence score increased alcohol consumption by 0.19 (95%CI: 0.06 to 0.32, p-value=0.005 on a five-unit Likert scale). A SD increase in intelligence score decreased rates of vigorous and moderate physical activity by 0.34 (95%CI: 19.6 to 49.1, p-value=8.2\u00a0\u00d7\u00a010\u221206) and 0.31 (95%CI: 0.12 to 0.50, p-value=1.9\u00a0\u00d7\u00a010\u221203) days per week.\n\n### The direct effects of education\n\nThe direct effects of education that were attenuated compared to the total effects. A one SD increase in education increased the probability of having higher income across the entire income distribution. The direct effects of education on household income on the risk difference scale were between 2.0 and 6.6 times as large as the direct effects of intelligence. A SD increase in education resulted in a 1.00 kg/m2 (95% CI: 0.06 to 1.93, p-value=0.04) decrease in BMI, which was larger than the direct effects of intelligence. The direct effects of education on alcohol consumption were similar to intelligence: an increase of 0.21 (95%CI: 0.01 to 0.41, p-value=0.04). Each SD increase in education reduced television consumption by 46.7 min per day (95% CI: 33.6 to 59.8, p-value=1.8\u00a0\u00d7\u00a010\u221211) and increased vigorous physical activity by 0.31 days per week (95% CI: 0.09 to 0.54, p-value=0.007).\n\n### Sensitivity analysis\n\n#### Individual-level allele score approach\n\nWe conducted a sensitivity analysis using individual-level data from the UK Biobank in the sample of 93,135 participants who took the verbal-numeric reasoning test who were not in the interim release. We identified 16 independent SNPs that were associated with intelligence in the Sniekers et al. (2017)\u00a0GWAS, which used only the interim release of the UK Biobank. We selected SNPs associated with education using the discovery sample of Okbay et al. (2016), which did not use UK Biobank. This approach ensured that we had no sample overlap. We used fewer SNPs for intelligence, and the effects of these SNPs were less precisely estimated; therefore, the SNPs explained less of the variance in intelligence and education than in the primary two-sample analysis (Supplementary file 1\u00a0-\u00a0Table\u00a04). As a result, the standard errors for the effects of intelligence and education were between 1.87 and 5.09 times as large as for the two-sample analysis. The effects were similar in magnitude to the two-sample analysis. There was little evidence of substantial direct effects of intelligence on any outcome except negative effects on moderate and vigorous physical activity. In addition to the effects detected in the two-sample analysis, we found evidence of direct effects of education on risk of stroke, ever and current smoking, height and moderate physical activity. Hausman-Durbin-Wu tests suggested substantial evidence of heterogeneity between the instrumental variable and the ordinary least squares estimates (Hausman, 1978).\n\nWe repeated the individual level analysis with 486 independent SNPs associated with educational attainment by Lee et al. and the Sniekers et al. intelligence score. Sniekers et al. used 55,000 samples from the UK Biobank. Therefore, these samples overlap, so may be affected by weak instrument bias. We constructed unweighted scores which will reduce the risk of weak instrument bias which can potentially affect weighted allele score analyses with overlapping samples (Burgess et al., 2016). The results are in Supplementary file 1\u00a0-\u00a0Table\u00a05. The results were between 50.0% and 70.9% more precise than the single sample results using the Sniekers et al. score. They had larger values of the Sanderson-Windmeijer F-statistics. Overall, these results were consistent in direction with the primary analysis.\n\nWe investigated whether the genetic variants associate with age at baseline. Without adjustment a one standard deviation increases in the Sniekers et al. and Okbay et al. scores were associated with 0.05 (95%CI: 0.0012 to 0.098, p-value=0.044) and 0.058 (95%CI: 0.020 to 0.096 p-value=0.003) increases in age in years at baseline. After adjustment for sex and the principal components these differences fell to 0.041 (95%CI: \u22120.007 to 0.089, p-value=0.095) and. 0580 (95%CI: \u22120.0195 to 0.096 p-value=0.003) respectively. We found little evidence that the results were affected by including a broader set of covariates (Supplementary file 1\u00a0-\u00a0Figure\u00a05). Finally, we used bias component plots to investigate the relative bias in the multivariable adjusted and instrumental variable analysis (Davies et al., 2017). This approach compares the omitted variable bias that occurs if a specific measured covariate is omitted from the multivariable adjusted and instrumental variable regression. We found some evidence that the scores, particularly the education score, associated with longitude and latitude of place of birth and distance from London (Supplementary file 1 - Figure 6 and 7). We investigated whether the single sample results were due to dynastic effects or assortative mating using a sample of siblings and including a family fixed effect. There was little evidence that these results differed from the bivariate two-sample Mendelian randomization (Supplementary file 1 - Table 7). However, the sample of siblings was relatively small, and these results may be due to lack of power. Overall this suggests that while the there is some evidence that the scores associate with covariates, there is little evidence from these sensitivity analyses that these violations of the Mendelian randomization assumptions affects our results.\n\n## Discussion\n\nEducation and intelligence are strongly phenotypically and genetically correlated and are associated with many outcomes across the life course. However, the direction of causation underlying these relationships is not clear, and nor is the direction of association between intelligence and education. In this study, we used univariate and multivariable Mendelian randomization to estimate the total and direct effects of both years of education and intelligence on health and social outcomes. We used SNPs associated with intelligence or education, or both, at p<5\u00a0\u00d7\u00a010\u221208 to estimate the total and direct effects on a range of outcomes. The estimated total effects of intelligence indicate the overall effects including effects of intelligence mediated via education. The estimated total effects of education indicate the overall effects of education including the effects mediated via intelligence. Whereas the direct effects of intelligence are those that are not mediated via education, and the direct effects of education are those that are not mediated via intelligence. Multivariable Mendelian randomization does not overcome bias due to other pleiotropic effects by pathways other than intelligence or education. Both intelligence and educational attainment had beneficial total effects on most outcomes (the exception being alcohol consumption). Intelligence had positive direct effects on income and alcohol consumption, and negative direct effects on moderate and vigorous physical activity. Education had positive direct effects on household income, BMI, alcohol consumption, and rates of vigorous physical activity, and negative direct effects on sedentary behaviour. These estimates suggest that both intelligence and education affect a range of socioeconomic and health-related outcomes. Many of the direct effects for both traits were substantially attenuated compared to the total effects. For example, the direct effects of intelligence on income were 54% to 89% smaller than the total effect. The direct effects of education were 27% to 38% smaller than the total effects.\n\nPrevious studies have demonstrated that both intelligence and education positively associate with health and longevity (Hill et al., 2019; Batty et al., 2007; Gottfredson and Deary, 2004; Plomin and Deary, 2015;\u00a0Davey Smith et al., 1998). A systematic review of cohort studies found people who had a one standard deviation higher childhood intelligence had 24% (95%CI: 23% to 25%) lower mortality across between 17 and 69 years of follow-up (Calvin et al., 2011). In contrast, using molecular genetic data we found little evidence of a large effect of intelligence on mortality. This inconsistency may be because this sample of the UK Biobank was only followed-up for an average of\u00a07.8 years, limiting our power to detect an effect on a relatively rare outcome (<2%), or because of selection bias. A large literature has investigated the associations of education and mortality and morbidity. For example, Galama et al., 2018 reviewed studies which had used RCTs and natural experiments to estimate the effect of education on mortality, obesity and smoking (Galama et al., 2018). They found that estimates of the effect of educational attainment were heterogenous. Our results suggest that education has a larger direct effect on ever or current smoking. We found some evidence of a direct effect of education, but not intelligence, on BMI. The difference between our study and the studies reviewed in Galama et al. may be that we used a continuous rather than binary measure of adiposity. However, we still found evidence that education affected rates of overweight (67% prevalence) and obesity (24% prevalence) using the individual participant data analysis reported in Supplementary file 1\u00a0-\u00a0Figure\u00a04. Gathmann et al. (2015) reviewed the effect of 18 school reforms across Europe on mortality (Gathmann et al., 2015). They estimated that an additional year of schooling reduced male mortality over 20 and 30 years by 1.7% (95%CI: 0.2% to 3.2%) and 3.9% (95%CI: 1.8% to 6.0%). They report weak evidence that the effects on female mortality were smaller (0.9%, 95% CI: \u22121.2 to 2.9% and 1.8%, 95% CI: \u22120.1 to 3.6% reductions at 20 and 30 years respectively, p-value for difference by gender\u00a0=\u00a00.27 and 0.07). Hamad et al. (2018) systematically reviewed the literature using quasi-experimental methods to estimate the effects of education. They included 89 studies, and found that education had small beneficial effects on mortality, smoking and obesity (Hamad et al., 2018). Our results using genetic data for mortality were imprecise as the number of deaths to date has been relatively low. Over time as the number of deaths increase there will be more precision to investigate this hypothesis in the UK Biobank.\n\nResearchers using univariable Mendelian randomization have found that education generally reduces risk of a range of outcomes (Tillmann et al., 2017). Larson et al. used two-sample Mendelian randomization and found that higher educational attainment reduced the risk of Alzheimer\u2019s disease. (Larsson et al., 2017) Potential explanations for these apparent protective effects of education on later health outcomes are: that they were due to (1) vertically pleiotropic effects of SNPs via intelligence and subsequently education (Figure 1a), (2) horizontally pleiotropic effects of the SNPs via intelligence (Figure 1b), and (3) confounding pleiotropic effects of the SNPs where the SNPs affect intelligence and education, but only intelligence affects the outcomes (Figure 1c). The total effects of intelligence and education on income had a similar direction. There was evidence of a total effect of education, but little evidence of a total effect of intelligence on many measures of morbidity and mortality and BMI (Supplementary file 1\u00a0-\u00a0Table\u00a03). The direct effects of education and intelligence, estimated by multivariable Mendelian randomization, were smaller than the total effects. The direct effects of intelligence were generally smaller than the direct effects of education (Figure 4). One explanation for this is that the SNPs have vertically pleiotropic effects via intelligence and education on the outcomes. The non-zero direct effects of education suggest that the effects of education estimated by univariable Mendelian randomization are unlikely to entirely be due to horizontally pleiotropic (direct) effects on the outcomes via intelligence. In another study, we used multivariable Mendelian randomization to estimate the direct effects of intelligence and educational attainment on Alzheimer\u2019s disease. The relationships between intelligence and education and Alzheimer\u2019s disease was largely due to an effect of intelligence (Anderson et al., 2018).\n\nAs with all analytic methods, inferences using multivariable Mendelian randomization depend on assumptions. Specifically: (1) the SNPs associate with intelligence even after conditioning on education and vice versa, (2) there are no confounders of the SNP-outcome associations, and (3) intelligence and/or education mediate all of the effects of the SNPs on the outcome (i.e. no horizontal pleiotropy mediated via factors other than intelligence or education). The first assumption is stronger than required for univariable Mendelian randomization (Sanderson et al., 2018). In the single sample setting, this can be tested using the Sanderson-Windmeijer test (Sanderson and Windmeijer, 2015). The SNPs exceed the critical values for this test for each exposure (Supplementary file 1\u00a0-\u00a0Table\u00a04) and the results are unlikely to suffer from weak instrument bias. It is not possible to prove the second assumption (independence) holds, because some confounders may be unmeasured or remain unknown.\n\nThis study investigated one of the most likely horizontally pleiotropic mechanisms in a univariable Mendelian randomization analysis of the effect of education on outcomes later in life: intelligence. SNPs which associate with intelligence in GWAS also strongly associate with education (Okbay et al., 2016). Indeed it would be surprising if there were SNPs that associated with intelligence that did not influence education. However, are these associations due to horizontal or vertical pleiotropy? Vertical pleiotropy would imply that the SNPs\u2019 effects on the outcomes are via an effect on intelligence and subsequently education. Horizontal pleiotropy would mean that the SNPs have direct effects on the outcomes via intelligence which are not mediated via an effect on education (Figure 2). Multivariable Mendelian randomization estimates of the direct effects of intelligence and education on the outcomes. Thus, they allow for any horizontal or vertical pleiotropic effects via intelligence or education. The estimated direct effects of intelligence on smoking, household income, BMI, alcohol consumption and sedentary behaviour were substantially attenuated compared to the total effects (Supplementary file 1\u00a0-\u00a0Figure\u00a03). This attenuation suggests that a substantial fraction of the total effects of intelligence on the outcomes were mediated via education.\n\nWhat are the policy implications of these results? Economists and policymakers have been interested in the consequences of education for outcomes later in life. The length of education has increased in many countries around the world. If education affects later health and social outcomes, then this may result in improvements in public health. Our results suggest that education is likely to affect health, although these effects are smaller than indicated by a na\u00efve Mendelian randomization analysis that assumes the SNPs have no horizontally pleiotropic effects via intelligence. Each additional year of education (0.19 SD in UK Biobank) would result in a 2.0pp, 3.1pp, 2.4pp, 1.0pp increase in probability of having household income above \u00a318 k, \u00a331 k, \u00a352 k and \u00a3100 k respectively, a 0.04 units increase in alcohol consumption (on a 1 to 5 Likert scale), 8.87 fewer minutes of sedentary behaviour per day, and 0.06 more days vigorous activity per week.\n\n### Limitations\n\nA potential source of bias in Mendelian randomization studies is sample overlap. If the same sample is used to detect the SNPs used as instruments as is used in Mendelian randomization the results can be biased towards the observed exposure-outcome association (Burgess et al., 2016). We minimised the possibility of this bias by restricting our main results to two entirely non-overlapping samples (see methods and supplementary materials). We used a restricted set of SNPs for intelligence detected without using UK Biobank data as a sensitivity analysis using individual-level data. The results from both approaches were consistent. Pleiotropy could explain our results if the SNPs we used as instruments directly affect the outcome through mechanisms other than intelligence and education, e.g. personality. However,\u00a0a systematic review of studies investigating the effects of non-cognitive skills on academic and health outcomes later in childhood found evidence of modest effects on academic outcomes, and very few estimates of their associations with health outcomes later in life (Smithers et al., 2018). Furthermore, the published estimates were consistent with substantial small study and publication bias.\n\nThe measure of intelligence in UK Biobank is relatively crude: a 13 item verbal-numeric reasoning test. In a multivariable\u00a0adjusted\u00a0phenotypic analysis, this would cause measurement error on the exposure and attenuation of the coefficient on intelligence. However, Mendelian randomization is implemented here as a form of instrumental variable analysis, and therefore is less likely to be affected by measurement error on the exposures than conventional analyses (Sargan, 1958). Both intelligence and educational attainment had\u00a0similar values of the Sanderson-Windmeijer F-statistic.\n\nThe intelligence GWAS we used to identify SNPs associated with intelligence was conducted in older adults. Intelligence is relatively stable across the life-course. For example, Deary et al. (2004) found that scores on the Moray House Test (a mental ability test) taken at age 11 and around age 77 were correlated (r\u00a0=\u00a00.66) (Deary et al., 2004). On average, SNPs associated with intelligence in adults had similar effects on intelligence in children (rg\u00a0=\u00a00.71) (Hill et al., 2016b). As a result our estimates of the effects of intelligence will partially reflect the effects of adult intelligence on the outcomes. Non-genetic quasi-experimental evidence suggests that length of schooling affects adult intelligence (Ritchie and Tucker-Drob, 2018). If adult intelligence affects the outcomes, then the estimated direct effect of education would be attenuated by any direct effects of education on the outcomes mediated via adult intelligence. Thus, our estimates of the direct effects of intelligence may be overestimates because they also include effects of adult intelligence. The effects of childhood intelligence could be estimated using SNPs identified in a GWAS of intelligence in children. However, currently available GWAS of childhood intelligence are considerably smaller than those available for adult intelligence.\n\nMendelian randomization studies using samples of unrelated individuals can be biased by bias due to population stratification and difference in ancestry across variants and selection and participation bias (Haworth et al., 2019; Taylor et al., 2018). We investigated this by adjusting for additional covariates, and bias component plots (Davies et al., 2017). These analyses suggested that while the genetic scores for intelligence and education associate with some measures of early life experience and place of birth, the bias induced in our estimates may be limited.\n\nAnother potential explanation for these results is dynastic effects which occur if parents\u2019 intelligence or education directly affects their offspring\u2019s outcomes. SNPs associated with education in GWAS also associate with parental education. Non-inherited parental alleles at these loci also associate with offspring\u2019s outcomes via their expression in parental phenotypes (Kong et al., 2018). Furthermore, substantial fractions of the GREML-SNP estimates of the heritability of education may be due to indirect effects of parents (Young et al., 2018). Thus, our estimates of the effect of intelligence and education are likely to attribute these parental effects to the offspring\u2019s characteristics. Similarly, parents do not mate randomly and assort on educational attainment. The associations of non-inherited alleles of SNPs known to associate with education provide evidence about the size of these effects. The association of offspring outcomes and the non-transmitted polygenic score for education was 31% and 29% of the size of the association of the transmitted scores from fathers and mothers respectively. Similarly, the size of the association of the non-transmitted education polygenic score with a broad measure of health outcomes was 37% and 42% of the transmitted score for fathers and mothers respectively. These results suggest that some of the effects we report could be due to assortative mating, dynastic (genetic nurture) effects, which can cause bias in Mendelian randomization studies (Hartwig et al., 2018). We investigated this using the siblings in UK Biobank, but our results were underpowered. Future studies should investigate this further using within-family studies with larger samples (Lawlor et al., 2017; DiPrete et al., 2018; Warrington et al., 2018; Brumpton et al., 2019).\n\nThe effects we report may be specific to the time-period that the UK Biobank participants have lived through. For example, we find evidence of effects on smoking rates, particularly in single sample analysis. However, smoking rates have declined since the 1960s, 1970s, and 1980s, when the UK Biobank participants left school. Changes to education policies today, such as recent changes in the United Kingdom to mandate education, or part-time training and apprenticeships up to the age of 18, may not have the same impact as we report (UK Government, 2018). The UK Biobank is more educated than the general population, which could cause selection bias. However, we have previously shown that reweighting the sample to account for the under sampling of less educated people did little to affect the Mendelian randomization results (Davies et al., 2018b).\n\nWe have only investigated the effect of intelligence and education on a limited number of outcomes reported in UK Biobank. There are differences in morbidity and mortality by intelligence and education for a wide range of disease outcomes, and the conclusions we report here, that the direct effects of education are bigger than intelligence may not hold for other outcomes. Future studies should apply multivariable Mendelian randomization to summary data on outcomes to investigate this hypothesis as efficiently as possible (Inoue and Solon, 2010; Angrist and Krueger, 1995; Pierce and Burgess, 2013). Multivariable Mendelian randomization is a flexible approach for estimating and evaluating possible pleiotropic pathways. Future studies could exploit these methods to elucidate the mechanisms that mediate the effects of intelligence and education on outcomes later in life.\n\nIn summary, we found evidence from genetic association studies that both intelligence and education might affect health and social outcomes later in life. The direct effects for education are larger than for intelligence, suggesting that much of the effect of intelligence on outcomes later in life may be mediated via the effect of intelligence on education.\n\n## Materials and methods\n\n### Sample selection and sample overlap\n\nThe UK Biobank is a cohort study that recruited 503,317 people aged between 38 and 73 years old between 2006 and 2010 in 21 study centres across the UK. See Supplementary file 1\u00a0-\u00a0Figure\u00a01\u00a0for an illustration of the inclusions and exclusion of samples into the study. UK Biobank received ethical approval from the Research Ethics Committee (REC reference for UK Biobank is 11/NW/0382).\n\nMendelian randomization estimates can be affected by weak instrument bias if overlapping samples are used to select SNPs associated with the exposures (intelligence and education) and the outcomes (Burgess et al., 2016). To minimise risk of this bias we estimated the SNP-outcome associations using a sample that excluded any participants who were included in the GWAS used to select the SNPs. The bivariate analysis estimated the SNP-outcome associations using participants that were not included in the intelligence GWAS reported by Hill et al. (2019) or the education GWAS reported by Okbay et al. (2016). This excludes participants who took the verbal-numeric reasoning test or were in the UK Biobank interim release. Therefore, we used the remaining 124,661 participants to estimate the association between the SNPs and the outcomes of interest in the two-sample analysis.\n\nFor the single sample analysis (more details below), we constructed weighted allele scores for intelligence and education using the Sniekers GWAS which only included the UK Biobank interim release and the Okbay discovery sample (Sniekers et al., 2017). These GWAS are smaller than Hill GWAS, so detected fewer SNPs associated with intelligence at p-value<5\u00a0\u00d7\u00a010\u221208. This fact means that the analyses using these SNPs are less precise than the two-sample analysis used in the primary analysis. We used 77,882 participants who took the verbal-numeric reasoning test but were not included in the interim release. However, because the single sample analysis was restricted to individuals with the verbal-numeric reasoning scores, we can test whether the intelligence and education genetic scores sufficiently associate with intelligence and education. We used the Sanderson-Windmeijer F-test to test whether the polygenic scores explained sufficient variation in intelligence (education) conditional on education (intelligence).\n\n#### UK biobank sample selection\n\nOver 9.2 million people were invited to take part. Of these, just over half a million people attended a study clinic and consented to take part in the study. These individuals provided blood samples and were genotyped. Full details of the genotyping are provided elsewhere (Fry et al., 2017). Of these, we excluded individuals who were related or were not white British ethnicity as indicated by genetic ancestry. This definition is relatively conservative, but it helps minimise the risk of bias due to population stratification. We further restricted the sample to individuals born in England to ensure that they experienced a similar education system. The two-sample analysis estimates the associations of the outcomes and the SNPs identified in Hill et al. and Okbay et al. using participants who did not take the verbal-numeric reasoning test. The single sample analysis estimates the effects of intelligence and education using allele scores defined using by the Okbay et al. and Sniekers et al. SNPs using participants who took the verbal-numeric reasoning test but were not in the UK Biobank interim release. Therefore, there is no overlap between the samples used to estimate the SNP-exposure associations and SNP-outcome associations.\n\n### Phenotype definition\n\nWe used a broad measure of depression that the participant had seen a GP for nerves, anxiety, tension, or depression (ID:2090) at either the initial assessment centre visit or any repeat assessment centre visit, or a HES record indicating depression as a primary or secondary reason for admission (ID: 41202, 41204 and ICD-10\u00a0=\u00a0F32, F33, F34, F38, F39) (Howard et al., 2018). The only participants who had measures of arterial stiffness were those who took the verbal-numeric reasoning test, therefore we excluded this outcome. More details of the phenotype definitions are provided elsewhere (Davies et al., 2018c).\n\nWe defined educational attainment using the same algorithm as the educational attainment GWAS (Okbay et al., 2016). Educational attainment was coded using the answer to touch-screen questions about qualifications. We assigned participants to their highest level of education reported at either assessment centre visit. Those with degrees were assigned to 20 years of education; NVQs, HND or HNC qualification were assigned to 19 years of education; other professional qualifications were assigned to 15 years; A-levels or AS levels were assigned to 13 years; GSCEs, O-levels or CSEs were assigned 10 years of education; and none of the above were assigned to 7 years. Previous studies have found that using self-reported age had little impact on estimates of the effect of education (Sanderson et al., 2019). We dropped individuals who stated prefer not to say or did not have a value for this question from the analysis. This measure of educational attainment was standardised to mean zero and variance one.\n\nWe defined intelligence using the \u2018verbal-numeric reasoning\u2019 score from the test taken at the baseline assessment centre visits. We replaced missing values of this test for the initial assessment centre visit with values taken at first repeat assessment visit (N\u00a0=\u00a015,404). The participants answered 13 logic questions within two minutes. We standardised this variable to mean zero and variance one.\n\n### Covariates\n\nAll analyses included 40 principal components of genetic variation, sex, age, year and month of birth, and an interaction of month and year of birth and sex.\n\n### Genotype quality control and selection\n\nFull details of our genotype quality control pipeline are described elsewhere (Mitchell et al., 2017). In brief, we excluded participants who had mismatching sex, those with non XX or XY sex chromosomes, extreme heterozygosity or missingness. We limited the analysis to 11,554,957 SNPs on the HRC panel, of which we further limited to the 7,303,122 SNPs which were available in both the Hill and Okbay GWAS. We selected independent SNPs (r2\u00a0<0.01 within 10,000 kb) that were associated with either intelligence or education at p<5\u00a0\u00d7\u00a010\u221208. Where there was more than one SNP in a region that associated with the trait at p<5\u00a0\u00d7\u00a010\u221208 we selected the SNP with the lowest p-value. We then took the combined list of SNPs associated with either intelligence or education and repeated this process of clumping and selecting the SNP with the lowest p-value in the Okbay GWAS to create a list of SNPs for both traits that were in linkage equilibrium. See Supplementary file 1\u00a0-\u00a0Figure\u00a02 for flowchart.\n\n### Bidirectional effects of intelligence and education\n\nWe used bi-directional Mendelian randomization to investigate the direction of causation between intelligence and education. We estimated the effect of intelligence on education using the 181 lead SNPs from Hill et al. and data on educational attainment from participants of the UK Biobank who did not take the verbal-numeric reasoning test and were not in the interim release (Hill et al., 2019). These individuals were not included in the Hill et al. GWAS. We estimated the effects of education on intelligence using the 75 SNPs reported in the Okbay et al. (2016) discovery sample and samples with intelligence measures from UK Biobank. These samples do not overlap. We estimated the effects using two-sample summary data Mendelian randomization. The primary analysis used inverse variance weighted estimators. As sensitivity analyses, we used MR-Egger, weighted median, and weighted mode estimators to investigate whether pleiotropy biased the IVW estimates (Bowden et al., 2016a; Hartwig et al., 2017; Bowden et al., 2016b). We adjusted all the summary estimates for month and year of birth, sex, interactions of month and year of birth and sex and 40 principal components of genetic variation. We report estimates of the instrument strength and heterogeneity of the instrument-exposure association and the estimated effect of each of the exposures on the social and health outcomes across different SNPs.\n\n### Univariable analysis\n\nWe estimated the total effect of intelligence and education on each of the health and social outcomes using univariable Mendelian randomization. We used 181 SNPs from Hill et al. (2018) and 75 SNPs from the discovery sample of Okbay et al. (2016) as instruments for intelligence and education respectively. Our primary analysis used IVW estimators which assume no directional pleiotropy. These estimates ignore possible pleiotropic or mediated effects via the other exposure: education and intelligence. We estimated the effect of each of the phenotypes using methods that were robust to other forms of pleiotropy using MR-Egger, weighted median and weighted mode estimators (Bowden et al., 2016a; Hartwig et al., 2017; Bowden et al., 2016b). These can obtain consistent estimates of the causal effect if the pleiotropic effects are independent of the effects on the exposure, or if the majority or most frequent variants are not pleiotropic.\n\n### Multivariable Mendelian randomization analysis\n\nWe used multivariable Mendelian randomization to estimate the direct effects of intelligence and education on each of the health and social outcomes. This method has been described in detail elsewhere (Sanderson et al., 2018). In brief, this method is based on standard instrumental variable methods which allow for multiple exposures. Each exposure must be sufficiently explained by the set of instruments have an instrument that explains a sufficient proportion of the variation in the exposure, conditional on the other exposure. In the single sample, the SNPs can be correlated with each other (i.e. in linkage disequilibrium) and in the single or two sample case can also correlate with more than one exposure. The strength of association of the proposed instruments and the exposure can be tested using Sanderson-Windmeijer tests (Sanderson and Windmeijer, 2015). As described elsewhere it is possible to use these methods with summary data from two separate samples to estimate the SNP-exposure and SNP-outcome associations. The two-sample approach allows us to efficiently combine information from multiple studies, not all of which have measured intelligence, education and the outcomes (Pierce and Burgess, 2013). Hence\u00a0we can integrate more data and have more precise estimates. We estimated the multivariable effects of intelligence and education using linear regression weighted for by one over the standard error of the SNP-outcome association.\n\n### Sensitivity analyses\n\nWe conducted a series of sensitivity analyses to investigate how sensitive our results were to the methods we used.\n\n#### Individual level allele score approach\n\nWe investigated the sensitivity of our results by applying an individual allele score approach using individual participant data in the UK Biobank. We constructed two allele scores for intelligence using 16 SNPs from Sniekers et al. (that only used UK Biobank interim release data), and 75 SNPs from Okbay et al. (that did not use UK Biobank) and estimated the effect of intelligence and education using the Stata command ivreg2. The standard errors allow for clustering by month of birth. This method estimates the association of the allele scores and education in UK Biobank. Therefore, this method does not assume that the SNPs have the same effects on intelligence and education in different samples.\n\n#### Alternative clumping methods\n\nIn the primary analysis, we clumped the data by selecting and clumping SNPs using the lowest p-value reported in Okbay et al. This may mean that the instruments for education are stronger than the instruments for intelligence. We investigated this by selecting and clumping using the p-values from Hill et al.\n\n#### Larger education GWAS containing UKBB\n\nLee et al. (2018) published a large GWAS of educational attainment using data from up to 1.1 million individuals. In principle, this could provide more power and precision for our analysis. However, this GWAS used the entire sample from the UK Biobank, and so largely overlaps with the sample we used to estimate the SNP-outcome association. As a result, estimates using the Lee et al. GWAS are likely to suffer from weak instrument bias. We used 181 SNPs from Hill et al. and 486 SNPs from Lee et al. to estimate the multivariable Mendelian randomization using the summary methods described above. As expected, the results using the Lee et al. SNPs were more precise and attenuated towards the observational estimates.\n\n#### Investigating bias\n\nWe used covariate balance plots to investigate whether the bias from excluding a limited set of covariates would result in more bias in the multivariable adjusted or instrumental variable analysis (Davies et al., 2017). These tests compare the size of the associations of the exposure and the instrument with the covariates. We cannot directly compare the exposure-covariate to instrument-covariate association because a given size of association will result in a much larger bias in the instrumental variable estimator. Therefore, covariate balance tests account for the strength of the instrument in effect by estimating the ratio of the instrument-covariate and instrument-exposure associations (e.g. via a Wald estimator). This analysis results in two estimates called bias terms, an estimate of the bias if the covariate was excluded from a linear regression analysis and the equivalent bias term for if the covariate was omitted from the instrumental variable analysis. We calculate confidence intervals around both bias terms to indicate uncertainty. We plot the two associations on a forest plot allowing easy comparison of the bias terms. We assessed bias across a limited set of covariates that indicate early life environment, including measures of geography, birth weight, having been breast fed, had a mother who smoked in pregnancy, comparative body size and height age 10, whether parents where alive, and number of siblings. We investigated whether including these additional variables as covariates in the individual level single sample analysis affected the results. Finally, we investigated whether the results were due to the family environment by including a family fixed effect in the sample of siblings from the UK Biobank.\n\n### Data and code availability\n\nThe cleaned analysis dataset will be uploaded to the UK Biobank archive. Please contact access@ukbiobank.ac.uk for further information. The analytic scripts used to clean the data and produce the results are available on GitHub (Davies, 2019; copy archived at https://github.com/elifesciences-publications/ukbiobank-intell-vs-ea).\n",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "6551b4c2-24eb-44a2-b10d-455f3c97fff0",
+      "submission_id": "57d9dfc9-072c-4df1-b1cd-2e7baebf6e12",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- M Dawn Teare, Newcastle University United Kingdom\n\nReviewers:\n- Stephen Burgess, University of Cambridge United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.43990.013](https://doi.org/10.7554/eLife.43990.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The effects of intelligence and education on health, a bidirectional two-sample Mendelian randomization analysis\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eduardo Franco as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Stephen Burgess (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper consists of a series of Mendelian Randomization (MR) studies related to intelligence, education, and later-life outcomes attempting to disentangle the complicated relationship between them. The analyses included in this study appear to be comprehensive, using many of the latest tools that have been developed. The choice of methods is generally appropriate, and the presentation of results is clear and measured. This work is interesting, and a great example of the potential of the multivariable MR approach to disentangle the effects of related risk factors. However, we have major concerns regarding the extensive use of causal language as there is some evidence that the key assumptions of MR may not hold in this application.\n\nEssential revisions:\n\n1) It is appreciated that the authors include the assumptions required for univariate and multivariate MR and the discussion of the limitations. However, the discussion of these assumptions and limitations need to be more complete and more central in the paper. MR analyses live or die to the degree that they satisfy the assumptions of the method. When this entire discussion is added to a section at the very end of the paper, it makes it very difficult as a reader to assess the credibility of the evidence being presented. Some further formal evaluation of whether assumptions hold could be presented. If the genetic risk score is as associated with confounders (notably socio-economic) as education itself, then the benefit of MR is less clear. (Note some association with confounders is expected, as education itself will influence socio-economic variables somewhat.) Perhaps a comparison with parental socio-economics would be helpful here \u2013 genetic variants should be less associated with parental socio-economics (if the MR assumptions are satisfied).\n\n2) Related to the above point, the causal language throughout the paper is too strong. For example, in the limitations section, the authors acknowledge that dynastic effects and assortative mating could be driving \"some of the effects [they] report.\" Indeed, the data is consistent with a model where the nurturing environment affects health but where education and intelligence have no effect at all. Despite this, there is unqualified causal language in the title, Abstract and throughout the manuscript. This should all be greatly softened.\n\n3) Intelligence and education are difficult to define and measure \u2013 particularly intelligence. This is an intrinsic concern of any research involving intelligence, but it is particularly relevant for research that makes causal inferences and public policy recommendations (as per the final line of the Abstract). What would it look like to increase intelligence? What aspect of intelligence would we increase? There is also a methodological concern here \u2013 while the multivariable Mendelian randomization analyses are important for understanding questions of aetiology, the univariable Mendelian randomization analyses are more important for understanding the impact of public health interventions. As most interventions to increase intelligence would do so via education. Hence the total effects of intervention on intelligence and education should be as important as the direct effects. We would therefore encourage a co-equal presentation of these results.\n\n4) The reviewers raised concerns about the use of multivariable Mendelian randomization for two variables that are so highly correlated. This is alleviated by the reasonably healthy Sanderson-Windmeijer F statistics, but particularly when the direct effects are in opposite directions (as for several examples in Figure 4 in Supplementary file 1), we worry slightly that this is just an artifact of including two highly correlated predictors in a regression model \u2013 due to chance variation, one will end up with a positive estimate and the other with a negative estimate. Having said that, it is reassuring that this pattern doesn't hold for all the outcomes. What is the correlation between genetic associations with education and genetic associations with intelligence?\n\n5) Measurement error \u2013 while you are correct that standard univariable Mendelian randomization is not particularly influenced by measurement error, the same is not necessarily true for multivariable Mendelian randomization. As this is based on multivariable regression, it is possible for measurement error in genetic association estimates to lead to bias in any direction. It may be the case that the expected bias is low, but we are not aware of any theoretical or simulation work on this topic.\n\n6) While we understand removing participants in the interim release for the analysis of genetic associations with intelligence/education, these participants could be included in analyses for other outcomes. We understand if you prefer to keep a consistent sample definition for comparability, but you may get improvement in power by using a wider sample for the gene-outcome associations. As a side point, in Figure 1 in Supplementary file 1, could you make clear where the two samples come from in the two-sample analyses? Currently there is only one box, but logically we'd expect there should be two.\n\n7) It was difficult to identify the exact procedures followed in the paper at times. This was especially the case when they describe what data are used and which summary statistics are used. For example, the authors state, \"The characteristics of 124,661 participants of UK Biobank who met our quality control and inclusion criteria for our primary analysis are described in Table 1.\" What is considered the \"primary analysis\" of this paper? The bidirectional EA vs. intelligence analysis, the univariate analysis, or the bivariate analyses? Or perhaps all three of them? Given that the authors also describe using published GWAS results, it is not clear how these UK Biobank participants are used. Just for the outcome phenotypes? Additionally, the descriptions of the Sanderson-Windmeijer test and the clumping procedure is ambiguous and hard to follow.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Intelligence, education and health, evidence from bidirectional two-sample Mendelian randomization\" for further consideration at eLife. Your revised article has been favorably evaluated by Eduardo Franco as the Senior Editor, M Dawn Teare as the Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed in a new revision round before acceptance, as outlined below:\n\nThe evidence that the IV assumptions may have been violated is rather underplayed and this needs to be more firmly acknowledged and stated within this manuscript either in the Discussion or in the limitations. One reviewer also highlights that measurement error can have an impact on Multivariable MR.\n\nReviewer #1:\n\nI'm happy with how the authors have edited the paper. While the paper relies on assumptions, these are clearly laid out and considerable effort has been made to assess the assumptions.\n\nReviewer #2:\n\nI appreciate the authors' substantial revisions in response to comments of the reviewers. The specific steps that were taken by the researchers is much more clear. I also appreciate the new analyses to test the assumptions of the method. I still have two substantive concerns, however.\n\n1) While the authors describe the limitations of the methods they employ, they give a much more rosy interpretation of their sensitivity results than I think is merited. The two well-powered pieces of evidence the authors present related to the validity of the MR assumptions are the published studies on indirect effects of parents and the evidence that the polygenic scores are strongly associated with covariates related to childhood environment. Despite this, the authors make conclusions like \"the impact of these associations on the final results may be small\" and that \"Assumption 2 [no confounders] is plausible because of the random inheritance of alleles at conception\". My conclusion upon reading the analyses is that the assumptions of MR probably don't hold in this case and that the bias is potentially substantial. Do the authors disagree? If so, the authors should provide evidence for why they think this is the case or what evidence they have that the bias induced by violations of this assumptions is negligible. Otherwise, the authors should use more conservative language throughout about their sensitivity analyses and should minimally include a line in the Abstract about how they find evidence that the MR assumptions may not hold in this case.\n\n2) I was not able to follow what was being done exactly based on the description of the bias component plots in the last paragraph of the subsection \u201cSensitivity analysis\u201d, subsection \u201cInvestigating bias\u201d of the Materials and methods, and the figure legends for Figures 6 and 7 in Supplementary file 1. A description of the procedure for producing this plot should be clarified.\n",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "668f30f2-0628-4d93-b5d0-43cc4f873c49",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C1",
+      "claim": "Intelligence and education are predictive of better physical and mental health, socioeconomic position (SEP), and longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intelligence and education are predictive of better physical and mental health, socioeconomic position (SEP), and longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by citations in the introduction section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "c8ca860c-4388-4500-8564-017ae04c3856",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C2",
+      "claim": "Intelligence and education are phenotypically and genetically correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "Intelligence and education are phenotypically and genetically correlated, which makes it difficult to elucidate causal relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published research in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "61284f9f-6d4e-4173-9a7e-c282b818ddb7",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C3",
+      "claim": "Higher intelligence had positive direct effects on income and alcohol consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher intelligence had positive direct effects on income and alcohol consumption, and negative direct effects on moderate and vigorous physical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "23241eb9-6764-45cd-beea-e3f78c86fa92",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C4",
+      "claim": "Higher intelligence had negative direct effects on moderate and vigorous physical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher intelligence had positive direct effects on income and alcohol consumption, and negative direct effects on moderate and vigorous physical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "f19086c3-5685-4b87-a8d5-09825a6650a9",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C5",
+      "claim": "Higher educational attainment had positive direct effects on income, alcohol consumption, and vigorous physical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher educational attainment had positive direct effects on income, alcohol consumption, and vigorous physical activity, and negative direct effects on smoking, BMI and sedentary behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "5dbe60e5-7a70-4f0f-b9e0-033f596dbcd6",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C6",
+      "claim": "Higher educational attainment had negative direct effects on smoking, BMI and sedentary behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher educational attainment had positive direct effects on income, alcohol consumption, and vigorous physical activity, and negative direct effects on smoking, BMI and sedentary behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "8d82087c-a36d-4b21-a6a0-d43856686fb2",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C7",
+      "claim": "Children who score more highly in intelligence tests tend to remain in school for longer.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, children who score more highly in intelligence tests tend to remain in school for longer, (Deary et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Deary et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "38f276d9-df3b-46ed-ba24-985c8bad6c08",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C8",
+      "claim": "People who remained in school for longer tend to have higher intelligence later in life.",
+      "claim_type": "EXPLICIT",
+      "source": "people who remained in school for longer tend to have higher intelligence later in life (Ritchie and Tucker-Drob, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ritchie and Tucker-Drob, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "0ee257ec-8f71-42e3-91db-5b13b32171f3",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C9",
+      "claim": "Intelligence and educational attainment are partially heritable.",
+      "claim_type": "EXPLICIT",
+      "source": "Intelligence and educational attainment are partially heritable, and strongly genetically correlated (rg=0.70) (Lee et al., 2018; Hill et al., 2019; Hill et al., 2016b; Hill et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to published GWAS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "20d41190-e9d3-41c3-977f-1567d825868d",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C10",
+      "claim": "Intelligence and educational attainment are strongly genetically correlated (rg=0.70).",
+      "claim_type": "EXPLICIT",
+      "source": "Intelligence and educational attainment are partially heritable, and strongly genetically correlated (rg=0.70) (Lee et al., 2018; Hill et al., 2019; Hill et al., 2016b; Hill et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement provides a specific genetic correlation estimate supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "196fcef3-01f8-41f0-9b15-061336da1b11",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C11",
+      "claim": "A review found some evidence that increases in education led to lower mortality, especially for older cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "A review of the effects of educational attainment on socio-economic and health outcomes in later life found some evidence that increases in education led to lower mortality, especially for older cohorts (Galama et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Galama et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "63619665-1e08-4a3d-8bf8-85b496225371",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C12",
+      "claim": "There was little consistent evidence of effects of education on obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was little consistent evidence of effects on other outcomes such as obesity (Galama et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Galama et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "49e89457-dd98-4d7e-89d3-a5c9dd9698c7",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C13",
+      "claim": "Each year of education causes measured IQ to increase by on average 1 to 5 points.",
+      "claim_type": "EXPLICIT",
+      "source": "A systematic review of 28 studies provided evidence using quasi-experiential designs that each year of education causes measured IQ to increase by on average 1 to 5 points (Ritchie and Tucker-Drob, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a systematic review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "9d01d2a0-8dbe-4b45-8e22-39039ca1622c",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C14",
+      "claim": "Intelligence test scores taken at age 11 strongly associate with educational attainment later in life.",
+      "claim_type": "EXPLICIT",
+      "source": "Large prospective studies have found that intelligence test scores taken at age 11 strongly associate with educational attainment later in life, a link that is, in part, explained by shared genetic effects (Deary et al., 2007; Calvin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prospective studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "a09a9bf4-11b6-42da-bbf4-492fc95e2030",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C15",
+      "claim": "The link between intelligence at age 11 and educational attainment is, in part, explained by shared genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Large prospective studies have found that intelligence test scores taken at age 11 strongly associate with educational attainment later in life, a link that is, in part, explained by shared genetic effects (Deary et al., 2007; Calvin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prospective studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "0dd2c44e-d1da-42ef-bf14-08e182a2b7c3",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C16",
+      "claim": "There are no quasi-experimental studies of the effects of intelligence on education.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are no quasi-experimental studies of the effects of intelligence on education because intelligence is less subject to perturbation by natural experiments such as policy reforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of a type of study, with reasoning provided.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "df64b57b-e4b1-46f4-950d-9166dcac001a",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C17",
+      "claim": "Intelligence is less subject to perturbation by natural experiments such as policy reforms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are no quasi-experimental studies of the effects of intelligence on education because intelligence is less subject to perturbation by natural experiments such as policy reforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reasoning statement explaining why certain studies don't exist.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "d0850198-a2c8-4003-85f6-751e36363726",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C18",
+      "claim": "At each SNP, offspring inherit at random one of their mother's two possible alleles and one of their father's two possible alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "At each SNP, offspring inherit at random one of their mother's two possible alleles and one of their father's two possible alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about Mendelian inheritance, which is established genetic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "65c48c05-8778-43ac-82fe-847481554680",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C19",
+      "claim": "With the exception of somatic mutation, SNPs are invariant post-conception.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of somatic mutation, SNPs are invariant post-conception, so it is not possible for the environment or developing disease to affect inherited DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of SNPs, which is established genetic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "977a93a4-384c-4eac-89dd-ae8fc1fef5aa",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C20",
+      "claim": "It is not possible for the environment or developing disease to affect inherited DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of somatic mutation, SNPs are invariant post-conception, so it is not possible for the environment or developing disease to affect inherited DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of inherited DNA, which is established genetic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "c964eefe-a6e3-4a95-a0c3-9ca77963a00c",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C21",
+      "claim": "SNPs are not affected by reverse causation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SNPs are not affected by reverse causation, which can distort causal interpretations of observational epidemiological associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of Mendelian randomization based on genetic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "85e9e045-121d-4045-a6e3-9c4eb727d2c4",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C22",
+      "claim": "Genetic variants are largely unrelated to factors that would confound conventional observational studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Segregation of alleles at germ cell formation (Mendel's first law) and the independent assortment of alleles with respect to the rest of the genome excepting proximal DNA segments (Mendel's second law), and the lack of environmentally influenced effects on survival from conception through to live birth and study entry, leads to genetic variants being largely unrelated to factors that would confound conventional observational studies (Davey Smith, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and is based on Mendelian principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "5fa55917-5a7c-479e-9714-cef30fb3646f",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C23",
+      "claim": "SNPs that affect intelligence are likely to also affect education and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this could be misleading, as SNPs that affect intelligence are likely to also affect education and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known correlation between intelligence and education.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "d9743af8-09b8-4f64-9bac-66d174e155df",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C24",
+      "claim": "The SNPs associated with intelligence and education are pleiotropic \u2013 and most affect both traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the SNPs associated with intelligence and education are pleiotropic \u2013 and most affect both traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genetic correlation between intelligence and education.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "819caed2-245f-47bc-8295-a879f6b9912e",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C25",
+      "claim": "The UK Biobank sample was 45.5% male.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample was 45.5% male and on average were 57.3 years old when they visited the assessment centre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study sample presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "8dc06dda-28d9-422e-8738-3a6fa106c153",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C26",
+      "claim": "The UK Biobank sample was on average 57.3 years old when they visited the assessment centre.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample was 45.5% male and on average were 57.3 years old when they visited the assessment centre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study sample presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "35223254-7f0b-431b-8840-45d26fa9cd1d",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C27",
+      "claim": "The prevalence of stroke in the UK Biobank sample was 1.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of the clinical outcomes in this sample ranged from 1.5% for stroke to 34.6% for a broad measure of depression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study sample presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "4d8b6645-70d8-4724-8502-b6ce205ce225",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C28",
+      "claim": "The prevalence of depression in the UK Biobank sample was 34.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of the clinical outcomes in this sample ranged from 1.5% for stroke to 34.6% for a broad measure of depression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study sample presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "63e20aa7-a218-4326-a3b1-83317fd96f3a",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C29",
+      "claim": "2.0% of the UK Biobank sample died by the end of linked data follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the participants in this sample, 2.0% died by the end of linked data follow-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study sample presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "980512fa-91ce-433b-bc7a-9ec367f3ab5a",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C30",
+      "claim": "45.2% of the UK Biobank sample had ever smoked.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 45.2% of the sample had ever smoked, and 9.2% were current smokers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study sample presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "5a1b1cfe-300f-4f6e-943b-c9c187b8e356",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C31",
+      "claim": "9.2% of the UK Biobank sample were current smokers.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 45.2% of the sample had ever smoked, and 9.2% were current smokers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study sample presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "6f13b0e2-866c-41ef-9345-40544a51edcd",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C32",
+      "claim": "A one standard deviation increase in intelligence increased years of education by 0.52 SD (95% CI: 0.48 to 0.56, p-value=2.2 \u00d7 10\u2212145).",
+      "claim_type": "EXPLICIT",
+      "source": "The inverse variance weighted (IVW) estimates implied that a one standard deviation (SD) increase in intelligence increased years of education by 0.52 SD (95% CI: 0.48 to 0.56, p-value=2.2 \u00d7 10\u2212145).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the bidirectional Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "eb6efe16-5626-4c86-95a5-9b62e2d0449a",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C33",
+      "claim": "A one SD increase in education increased intelligence by 0.77 SD (95% CI: 0.68 to 0.86, p-value=3.0 \u00d7 10\u221262).",
+      "claim_type": "EXPLICIT",
+      "source": "The IVW estimates imply that a one SD increase in education increased intelligence by 0.77 SD (95% CI: 0.68 to 0.86, p-value=3.0 \u00d7 10\u221262).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the bidirectional Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "a8d7f68b-7b40-4262-ba1e-2b75ed497b45",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C34",
+      "claim": "There was more evidence of heterogeneity in the estimated effects of education across the SNPs (I2 = 0.60, 95% CI: 0.48 to 0.69) than in the estimated effects of intelligence (I2 = 0.48, 95% CI: 0.38 to 0.56).",
+      "claim_type": "EXPLICIT",
+      "source": "There was more evidence of heterogeneity in the estimated effects of education across the SNPs (I2 = 0.60, 95% CI: 0.48 to 0.69) than in the estimated effects of intelligence (I2 = 0.48, 95% CI: 0.38 to 0.56).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the bidirectional Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "98854f4a-7194-4ad9-a07c-c3a749b37235",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C35",
+      "claim": "A one standard deviation increase in intelligence reduced risk of high blood pressure by 4.0 percentage point (95% CI: 0.02 to 0.06, p-value=1.2\u00d710\u221205).",
+      "claim_type": "EXPLICIT",
+      "source": "The inverse-variance weighted estimates imply that a one standard deviation increase in intelligence reduced risk of: high blood pressure by 4.0 percentage point (pp) (95% CI: 0.02 to 0.06, p-value=1.2\u00d710\u221205)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "ced8fee9-eb5d-4a7c-bbe2-f52f52df0159",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C36",
+      "claim": "A one standard deviation increase in intelligence reduced risk of diabetes by 0.8pp (95% CI: 0.1 to 1.6, p-value=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "diabetes by 0.8pp (95% CI: 0.1 to 1.6, p-value=0.04)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "058bf8ee-82e9-40a4-a5b1-c6e765fc1f58",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C37",
+      "claim": "A one standard deviation increase in intelligence reduced risk of having had a heart attack by 1.2pp (95% CI: 0.7 to 1.7, p-value=5.5 \u00d7 10\u221207).",
+      "claim_type": "EXPLICIT",
+      "source": "having had a heart attack by 1.2pp (95% CI: 0.7 to 1.7, p-value=5.5 \u00d7 10\u221207)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "7865619e-f2d8-4dfd-9dd4-56e68cb5957d",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C38",
+      "claim": "A one standard deviation increase in intelligence reduced risk of reporting having seen a GP for nerves, anxiety, tension or depression by 0.5pp (95% CI: 0.3 to 0.5, p-value=8.1\u00d710\u221208).",
+      "claim_type": "EXPLICIT",
+      "source": "of reporting having seen a GP for nerves, anxiety, tension or depression by 0.5pp (95% CI: 0.3 to 0.5, p-value=8.1\u00d710\u221208).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "90d99cc8-e103-4a23-8d7b-c13ab4458b40",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C39",
+      "claim": "A one standard deviation increase in intelligence is unlikely to have a large effect on risk of mortality (risk difference = \u22120.001, 95% CI: \u22120.006 to 0.003, p-value=0.57).",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggested that a one standard deviation increase in intelligence was unlikely to have a large effect on risk of mortality or cancer (risk difference = \u22120.001, 95% CI: \u22120.006 to 0.003, p-value=0.57, and = \u22120.01, 95% CI: \u22120.02 to 0.003, p-value=0.12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "379ca5cf-57c2-434f-92e1-63e0476373d9",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C40",
+      "claim": "A one standard deviation increase in intelligence is unlikely to have a large effect on risk of cancer (risk difference = \u22120.01, 95% CI: \u22120.02 to 0.003, p-value=0.12).",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggested that a one standard deviation increase in intelligence was unlikely to have a large effect on risk of mortality or cancer (risk difference = \u22120.001, 95% CI: \u22120.006 to 0.003, p-value=0.57, and = \u22120.01, 95% CI: \u22120.02 to 0.003, p-value=0.12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "5bffe559-0182-4b32-8d4f-92a2c14e73f0",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C41",
+      "claim": "A one standard deviation increase in intelligence reduced risk of being an ever smoker by 4.9pp (95% CI: 2.8 to 6.9, p-value=4.5 \u00d7 10\u221206).",
+      "claim_type": "EXPLICIT",
+      "source": "A one standard deviation reduced risk of being an ever or current smoker by 4.9pp (95% CI: 2.8 to 6.9, p-value=4.5 \u00d7 10\u221206) and 3.5pp (95% CI: 2.4 to 4.7, p-value=1.2\u00d710\u221209).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "d9297c93-8d15-4244-8912-15d1d0ffac4a",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C42",
+      "claim": "A one standard deviation increase in intelligence reduced risk of being a current smoker by 3.5pp (95% CI: 2.4 to 4.7, p-value=1.2\u00d710\u221209).",
+      "claim_type": "EXPLICIT",
+      "source": "A one standard deviation reduced risk of being an ever or current smoker by 4.9pp (95% CI: 2.8 to 6.9, p-value=4.5 \u00d7 10\u221206) and 3.5pp (95% CI: 2.4 to 4.7, p-value=1.2\u00d710\u221209).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "c9031e5f-798d-4d96-b3bd-bee0251c80ce",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C43",
+      "claim": "Intelligence increased the probability of reporting a household income higher than \u00a318,000 by 11.4pp (95% CI: 9.8 to 12.9, p-value<1.4\u00d710\u221245).",
+      "claim_type": "EXPLICIT",
+      "source": "Intelligence also had substantial total effects on household income, increasing the probability of reporting a household income higher than \u00a318,000, \u00a331,000, \u00a352,000 and \u00a3100,000 by 11.4pp (95% CI: 9.8 to 12.9, p-value<1.4\u00d710\u221245), 13.4pp (95% CI: 11.5 to 15.3, p-value=2.1\u00d710\u221244), 11.9pp (95% CI: 10.3 to 13.6, p-value=3.4\u00d710\u221247), and 4.1pp (95% CI: 3.3 to 4.9, p-value=7.7\u00d710\u221224) respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "4de53b43-8294-4486-8ee4-8e9f27d756e7",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C44",
+      "claim": "Intelligence increased the probability of reporting a household income higher than \u00a331,000 by 13.4pp (95% CI: 11.5 to 15.3, p-value=2.1\u00d710\u221244).",
+      "claim_type": "EXPLICIT",
+      "source": "Intelligence also had substantial total effects on household income, increasing the probability of reporting a household income higher than \u00a318,000, \u00a331,000, \u00a352,000 and \u00a3100,000 by 11.4pp (95% CI: 9.8 to 12.9, p-value<1.4\u00d710\u221245), 13.4pp (95% CI: 11.5 to 15.3, p-value=2.1\u00d710\u221244), 11.9pp (95% CI: 10.3 to 13.6, p-value=3.4\u00d710\u221247), and 4.1pp (95% CI: 3.3 to 4.9, p-value=7.7\u00d710\u221224) respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "b9148be3-c0da-4b17-b3e2-faf7cb663882",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C45",
+      "claim": "Intelligence increased the probability of reporting a household income higher than \u00a352,000 by 11.9pp (95% CI: 10.3 to 13.6, p-value=3.4\u00d710\u221247).",
+      "claim_type": "EXPLICIT",
+      "source": "Intelligence also had substantial total effects on household income, increasing the probability of reporting a household income higher than \u00a318,000, \u00a331,000, \u00a352,000 and \u00a3100,000 by 11.4pp (95% CI: 9.8 to 12.9, p-value<1.4\u00d710\u221245), 13.4pp (95% CI: 11.5 to 15.3, p-value=2.1\u00d710\u221244), 11.9pp (95% CI: 10.3 to 13.6, p-value=3.4\u00d710\u221247), and 4.1pp (95% CI: 3.3 to 4.9, p-value=7.7\u00d710\u221224) respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "eb192aaf-80f5-4d6e-a108-42a44999e4d8",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C46",
+      "claim": "Intelligence increased the probability of reporting a household income higher than \u00a3100,000 by 4.1pp (95% CI: 3.3 to 4.9, p-value=7.7\u00d710\u221224).",
+      "claim_type": "EXPLICIT",
+      "source": "Intelligence also had substantial total effects on household income, increasing the probability of reporting a household income higher than \u00a318,000, \u00a331,000, \u00a352,000 and \u00a3100,000 by 11.4pp (95% CI: 9.8 to 12.9, p-value<1.4\u00d710\u221245), 13.4pp (95% CI: 11.5 to 15.3, p-value=2.1\u00d710\u221244), 11.9pp (95% CI: 10.3 to 13.6, p-value=3.4\u00d710\u221247), and 4.1pp (95% CI: 3.3 to 4.9, p-value=7.7\u00d710\u221224) respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "920ca32b-d0c6-42b9-b292-60394db1b0d4",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C47",
+      "claim": "A one standard deviation increase in intelligence increased grip strength by 0.32 kg (95% CI: 0.03 to 0.67, p-value=0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "A one standard deviation increase in intelligence was estimated to increase: grip strength by 0.32 kg (95% CI: 0.03 to 0.67, p-value=0.07)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "b8b7a079-8712-4d47-be9e-66778df35eba",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C48",
+      "claim": "A one standard deviation increase in intelligence increased height by 1.44 cm (95% CI: 0.95 to 1.94, p-value=1.4\u00d710\u221208).",
+      "claim_type": "EXPLICIT",
+      "source": "height by 1.44 cm (95% CI: 0.95 to 1.94, p-value=1.4\u00d710\u221208)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "d2b365db-f4a3-4b6b-9b95-8a70f03be999",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C49",
+      "claim": "A one standard deviation increase in intelligence increased alcohol consumption by 0.29 (95%CI: 0.23 to 0.35).",
+      "claim_type": "EXPLICIT",
+      "source": "alcohol consumption by 0.29 (95%CI: 0.23 to 0.35)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "4b2ab6d6-406b-404a-83f3-ea10a9e5cbd1",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C50",
+      "claim": "A one standard deviation increase in intelligence increased days of vigorous physical activity per week by 0.17 (95%CI: 0.10 to 0.24, p-value=6.7\u00d710\u221206).",
+      "claim_type": "EXPLICIT",
+      "source": "days of vigorous physical activity per week by 0.17 (95%CI: 0.10 to 0.24, p-value=6.7\u00d710\u221206)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "3fff7309-eb91-40bf-b9d1-265189a6b070",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C51",
+      "claim": "A one standard deviation increase in intelligence increased moderate physical activity by 0.32 (95%CI: 0.23 to 0.40, p-value=1.1\u00d710\u221213).",
+      "claim_type": "EXPLICIT",
+      "source": "and moderate physical activity by 0.32 (95%CI: 0.23 to 0.40, p-value=1.1\u00d710\u221213)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "aa59af11-494d-4ca1-a766-0ef41d6fa142",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C52",
+      "claim": "A one standard deviation increase in intelligence reduced BMI by 0.91 kg/m2 (95% CI: 0.65 to 1.18, p-value=7.7\u00d710\u221212).",
+      "claim_type": "EXPLICIT",
+      "source": "and reduce: BMI by 0.91 kg/m2 (95% CI: 0.65 to 1.18, p-value=7.7\u00d710\u221212)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "6824efb1-de31-4a24-9b4d-d3d78cd9bfc7",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C53",
+      "claim": "A one standard deviation increase in intelligence reduced systolic blood pressure by 1.09 (95%CI: 0.65 to 1.54, p-value=1.5 \u00d7 10\u221206) mmHg.",
+      "claim_type": "EXPLICIT",
+      "source": "and systolic and diastolic blood pressure by 1.09 (95%CI: 0.65 to 1.54, p-value=1.5 \u00d7 10\u221206) and 1.86 (95%CI: 1.12 to 2.61, p-value=9.1\u00d710\u221207) mmHg respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "2657196c-38ea-4269-a835-092aa0000512",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C54",
+      "claim": "A one standard deviation increase in intelligence reduced diastolic blood pressure by 1.86 (95%CI: 1.12 to 2.61, p-value=9.1\u00d710\u221207) mmHg.",
+      "claim_type": "EXPLICIT",
+      "source": "and systolic and diastolic blood pressure by 1.09 (95%CI: 0.65 to 1.54, p-value=1.5 \u00d7 10\u221206) and 1.86 (95%CI: 1.12 to 2.61, p-value=9.1\u00d710\u221207) mmHg respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "40d0dbf5-9698-48ee-bc72-5fa94a9ddd91",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C55",
+      "claim": "A one standard deviation increase in intelligence reduced hours watching television per day by 0.49 (95%CI: 0.42 to 0.57, p-value=4.3\u00d710\u221220).",
+      "claim_type": "EXPLICIT",
+      "source": "and hours watching television per day by 0.49 (95%CI: 0.42 to 0.57, p-value=4.3\u00d710\u221220).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "dcf98483-5058-4b22-a823-1737cef90e9d",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C56",
+      "claim": "There was little evidence that education affected frequency of vigorous physical activity (mean difference = 0.00 95% CI: \u22120.15 to 0.15, p-value=0.997).",
+      "claim_type": "EXPLICIT",
+      "source": "An exception was that there was little evidence that education affected frequency of vigorous physical activity (mean difference = 0.00 95% CI: \u22120.15 to 0.15, p-value=0.997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "76c991a3-7683-4aa7-9279-281b769acdd5",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C57",
+      "claim": "The instruments strongly predicted both education and intelligence in the single sample analysis (the minimum Sanderson-Windmeijer multivariable F-statistic was 21.6).",
+      "claim_type": "EXPLICIT",
+      "source": "The instruments strongly predicted both education and intelligence in the single sample analysis (the minimum Sanderson-Windmeijer multivariable F-statistic was 21.6) (Sanderson et al., 2018; Sanderson and Windmeijer, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "147aef4f-952b-468b-aff9-5728ba418bff",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C58",
+      "claim": "A one SD increase in intelligence score increased the probability of a household income above \u00a318,000 by 5.2pp (95% CI: 1.5 to 8.9, p-value=0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "a one SD increase in intelligence score increased the probability of a household income above \u00a318,000 and \u00a352,000 by 5.2pp (95% CI: 1.5 to 8.9, p-value=0.007) and 4.7pp (95% CI: 0.8 to 8.6, p-value=0.02) respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "788aaca3-f698-445e-98a5-2dbd2b00bddb",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C59",
+      "claim": "A one SD increase in intelligence score increased the probability of a household income above \u00a352,000 by 4.7pp (95% CI: 0.8 to 8.6, p-value=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "a one SD increase in intelligence score increased the probability of a household income above \u00a318,000 and \u00a352,000 by 5.2pp (95% CI: 1.5 to 8.9, p-value=0.007) and 4.7pp (95% CI: 0.8 to 8.6, p-value=0.02) respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "8f39f1b4-cdc4-40ae-adde-eedd70f930d8",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C60",
+      "claim": "A SD increase in intelligence score increased alcohol consumption by 0.19 (95%CI: 0.06 to 0.32, p-value=0.005 on a five-unit Likert scale).",
+      "claim_type": "EXPLICIT",
+      "source": "A SD increase in intelligence score increased alcohol consumption by 0.19 (95%CI: 0.06 to 0.32, p-value=0.005 on a five-unit Likert scale).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "8d73cb3f-eaee-4a24-bf61-1f77e1f56884",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C61",
+      "claim": "A SD increase in intelligence score decreased rates of vigorous physical activity by 0.34 (95%CI: 19.6 to 49.1, p-value=8.2 \u00d7 10\u221206) days per week.",
+      "claim_type": "EXPLICIT",
+      "source": "A SD increase in intelligence score decreased rates of vigorous and moderate physical activity by 0.34 (95%CI: 19.6 to 49.1, p-value=8.2 \u00d7 10\u221206) and 0.31 (95%CI: 0.12 to 0.50, p-value=1.9 \u00d7 10\u221203) days per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "d06dbe91-2aee-486b-8c52-cd3569fcf9de",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C62",
+      "claim": "A SD increase in intelligence score decreased rates of moderate physical activity by 0.31 (95%CI: 0.12 to 0.50, p-value=1.9 \u00d7 10\u221203) days per week.",
+      "claim_type": "EXPLICIT",
+      "source": "A SD increase in intelligence score decreased rates of vigorous and moderate physical activity by 0.34 (95%CI: 19.6 to 49.1, p-value=8.2 \u00d7 10\u221206) and 0.31 (95%CI: 0.12 to 0.50, p-value=1.9 \u00d7 10\u221203) days per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "2724909c-b53d-4df6-9e26-78fc642ddfe3",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C63",
+      "claim": "A SD increase in education resulted in a 1.00 kg/m2 (95% CI: 0.06 to 1.93, p-value=0.04) decrease in BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "A SD increase in education resulted in a 1.00 kg/m2 (95% CI: 0.06 to 1.93, p-value=0.04) decrease in BMI, which was larger than the direct effects of intelligence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "eed6f161-0c1c-4c18-bdc2-fa44219b649a",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C64",
+      "claim": "The direct effect of education on BMI was larger than the direct effects of intelligence.",
+      "claim_type": "EXPLICIT",
+      "source": "A SD increase in education resulted in a 1.00 kg/m2 (95% CI: 0.06 to 1.93, p-value=0.04) decrease in BMI, which was larger than the direct effects of intelligence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of findings from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "9a450478-5397-4008-9998-fa33d701dfbc",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C65",
+      "claim": "Each SD increase in education increased alcohol consumption by 0.21 (95%CI: 0.01 to 0.41, p-value=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "The direct effects of education on alcohol consumption were similar to intelligence: an increase of 0.21 (95%CI: 0.01 to 0.41, p-value=0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "102ad4e5-b144-4ccd-b2d1-1d758671256c",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C66",
+      "claim": "Each SD increase in education reduced television consumption by 46.7 min per day (95% CI: 33.6 to 59.8, p-value=1.8 \u00d7 10\u221211).",
+      "claim_type": "EXPLICIT",
+      "source": "Each SD increase in education reduced television consumption by 46.7 min per day (95% CI: 33.6 to 59.8, p-value=1.8 \u00d7 10\u221211) and increased vigorous physical activity by 0.31 days per week (95% CI: 0.09 to 0.54, p-value=0.007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "3295d173-e58b-44de-8a9d-d999fb07f4fd",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C67",
+      "claim": "Each SD increase in education increased vigorous physical activity by 0.31 days per week (95% CI: 0.09 to 0.54, p-value=0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "Each SD increase in education reduced television consumption by 46.7 min per day (95% CI: 33.6 to 59.8, p-value=1.8 \u00d7 10\u221211) and increased vigorous physical activity by 0.31 days per week (95% CI: 0.09 to 0.54, p-value=0.007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "a7dbd4ed-b3d1-4b09-bfa3-94ae48c20d45",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C68",
+      "claim": "The UK Biobank is a cohort study that recruited 503,317 people aged between 38 and 73 years old between 2006 and 2010 in 21 study centres across the UK.",
+      "claim_type": "EXPLICIT",
+      "source": "The UK Biobank is a cohort study that recruited 503,317 people aged between 38 and 73 years old between 2006 and 2010 in 21 study centres across the UK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "846fa67e-87d9-4933-8af9-5f7bc306a125",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C69",
+      "claim": "UK Biobank received ethical approval from the Research Ethics Committee (REC reference for UK Biobank is 11/NW/0382).",
+      "claim_type": "EXPLICIT",
+      "source": "UK Biobank received ethical approval from the Research Ethics Committee (REC reference for UK Biobank is 11/NW/0382).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "102e249e-2d6a-49b0-8e57-035ae53e04f1",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C70",
+      "claim": "Mendelian randomization estimates can be affected by weak instrument bias if overlapping samples are used to select SNPs associated with the exposures and the outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mendelian randomization estimates can be affected by weak instrument bias if overlapping samples are used to select SNPs associated with the exposures (intelligence and education) and the outcomes (Burgess et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "8f67946c-9264-4160-a18f-f21473c440bf",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C71",
+      "claim": "Intelligence is relatively stable across the life-course.",
+      "claim_type": "EXPLICIT",
+      "source": "Intelligence is relatively stable across the life-course.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of intelligence, supported by subsequent citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "c4f2b75b-c649-4368-9020-97fb16a16f38",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C72",
+      "claim": "Scores on the Moray House Test taken at age 11 and around age 77 were correlated (r = 0.66).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Deary et al. (2004) found that scores on the Moray House Test (a mental ability test) taken at age 11 and around age 77 were correlated (r = 0.66) (Deary et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "8908a4a9-7972-4b77-b5a7-af68bfea8e1b",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C73",
+      "claim": "On average, SNPs associated with intelligence in adults had similar effects on intelligence in children (rg = 0.71).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, SNPs associated with intelligence in adults had similar effects on intelligence in children (rg = 0.71) (Hill et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "f030bd6c-247b-42cc-869b-2ca8b2940732",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C74",
+      "claim": "Non-genetic quasi-experimental evidence suggests that length of schooling affects adult intelligence.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-genetic quasi-experimental evidence suggests that length of schooling affects adult intelligence (Ritchie and Tucker-Drob, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "d8cfe847-0e81-42cb-be2f-fa9fee6c6fdf",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C75",
+      "claim": "The UK Biobank sample is more educated and healthier than the UK population.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample is more educated and healthier than the UK population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the characteristics of the study sample.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "7c24e514-4c1c-4abe-8d82-797db82df923",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C76",
+      "claim": "The direct effects of intelligence on income were 54% to 89% smaller than the total effect.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the direct effects of intelligence on income were 54% to 89% smaller than the total effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of findings from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "851075cf-cccb-4dde-b1a0-3e6bea554f1b",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C77",
+      "claim": "The direct effects of education on household income were 27% to 38% smaller than the total effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct effects of education were 27% to 38% smaller than the total effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of findings from the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "54a599de-ea3b-40cb-aed6-998fc978917f",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C78",
+      "claim": "A systematic review of cohort studies found people who had a one standard deviation higher childhood intelligence had 24% (95%CI: 23% to 25%) lower mortality across between 17 and 69 years of follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "A systematic review of cohort studies found people who had a one standard deviation higher childhood intelligence had 24% (95%CI: 23% to 25%) lower mortality across between 17 and 69 years of follow-up (Calvin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited systematic review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "5bcbb3b1-a0ba-41d9-bcd4-27b5aa217e4c",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C79",
+      "claim": "The direct effects of education on household income on the risk difference scale were between 2.0 and 6.6 times as large as the direct effects of intelligence.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct effects of education on household income on the risk difference scale were between 2.0 and 6.6 times as large as the direct effects of intelligence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of findings from the multivariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "aa546922-d806-4c1a-9da1-6796ebdcbe7a",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C80",
+      "claim": "Each additional year of education (0.19 SD in UK Biobank) would result in a 2.0pp increase in probability of having household income above \u00a318k.",
+      "claim_type": "EXPLICIT",
+      "source": "Each additional year of education (0.19 SD in UK Biobank) would result in a 2.0pp, 3.1pp, 2.4pp, 1.0pp increase in probability of having household income above \u00a318 k, \u00a331 k, \u00a352 k and \u00a3100 k respectively, a 0.04 units increase in alcohol consumption (on a 1 to 5 Likert scale), 8.87 fewer minutes of sedentary behaviour per day, and 0.06 more days vigorous activity per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a translation of the study findings into policy-relevant units.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "117b8d65-d327-4761-b9ce-a20d158df428",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C81",
+      "claim": "Each additional year of education (0.19 SD in UK Biobank) would result in a 3.1pp increase in probability of having household income above \u00a331k.",
+      "claim_type": "EXPLICIT",
+      "source": "Each additional year of education (0.19 SD in UK Biobank) would result in a 2.0pp, 3.1pp, 2.4pp, 1.0pp increase in probability of having household income above \u00a318 k, \u00a331 k, \u00a352 k and \u00a3100 k respectively, a 0.04 units increase in alcohol consumption (on a 1 to 5 Likert scale), 8.87 fewer minutes of sedentary behaviour per day, and 0.06 more days vigorous activity per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a translation of the study findings into policy-relevant units.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "c0f8d62c-017c-4bed-8068-3c1a62d1d25a",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C82",
+      "claim": "Each additional year of education (0.19 SD in UK Biobank) would result in a 2.4pp increase in probability of having household income above \u00a352k.",
+      "claim_type": "EXPLICIT",
+      "source": "Each additional year of education (0.19 SD in UK Biobank) would result in a 2.0pp, 3.1pp, 2.4pp, 1.0pp increase in probability of having household income above \u00a318 k, \u00a331 k, \u00a352 k and \u00a3100 k respectively, a 0.04 units increase in alcohol consumption (on a 1 to 5 Likert scale), 8.87 fewer minutes of sedentary behaviour per day, and 0.06 more days vigorous activity per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a translation of the study findings into policy-relevant units.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "09e93c1e-4b26-44f9-a844-8000b9188ff1",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C83",
+      "claim": "Each additional year of education (0.19 SD in UK Biobank) would result in a 1.0pp increase in probability of having household income above \u00a3100k.",
+      "claim_type": "EXPLICIT",
+      "source": "Each additional year of education (0.19 SD in UK Biobank) would result in a 2.0pp, 3.1pp, 2.4pp, 1.0pp increase in probability of having household income above \u00a318 k, \u00a331 k, \u00a352 k and \u00a3100 k respectively, a 0.04 units increase in alcohol consumption (on a 1 to 5 Likert scale), 8.87 fewer minutes of sedentary behaviour per day, and 0.06 more days vigorous activity per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a translation of the study findings into policy-relevant units.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "9ada1eda-fcef-4661-9dbc-3af8e6ae5358",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C84",
+      "claim": "Each additional year of education (0.19 SD in UK Biobank) would result in a 0.04 units increase in alcohol consumption (on a 1 to 5 Likert scale).",
+      "claim_type": "EXPLICIT",
+      "source": "Each additional year of education (0.19 SD in UK Biobank) would result in a 2.0pp, 3.1pp, 2.4pp, 1.0pp increase in probability of having household income above \u00a318 k, \u00a331 k, \u00a352 k and \u00a3100 k respectively, a 0.04 units increase in alcohol consumption (on a 1 to 5 Likert scale), 8.87 fewer minutes of sedentary behaviour per day, and 0.06 more days vigorous activity per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a translation of the study findings into policy-relevant units.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "850bbd28-4a86-4996-b844-64b3ae41c826",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C85",
+      "claim": "Each additional year of education (0.19 SD in UK Biobank) would result in 8.87 fewer minutes of sedentary behaviour per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Each additional year of education (0.19 SD in UK Biobank) would result in a 2.0pp, 3.1pp, 2.4pp, 1.0pp increase in probability of having household income above \u00a318 k, \u00a331 k, \u00a352 k and \u00a3100 k respectively, a 0.04 units increase in alcohol consumption (on a 1 to 5 Likert scale), 8.87 fewer minutes of sedentary behaviour per day, and 0.06 more days vigorous activity per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a translation of the study findings into policy-relevant units.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "c33a6bb3-ffec-451a-94ec-8740d29f4c91",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C86",
+      "claim": "Each additional year of education (0.19 SD in UK Biobank) would result in 0.06 more days vigorous activity per week.",
+      "claim_type": "EXPLICIT",
+      "source": "Each additional year of education (0.19 SD in UK Biobank) would result in a 2.0pp, 3.1pp, 2.4pp, 1.0pp increase in probability of having household income above \u00a318 k, \u00a331 k, \u00a352 k and \u00a3100 k respectively, a 0.04 units increase in alcohol consumption (on a 1 to 5 Likert scale), 8.87 fewer minutes of sedentary behaviour per day, and 0.06 more days vigorous activity per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a translation of the study findings into policy-relevant units.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "dd3eed07-4233-4278-82da-3b9673ded36d",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C87",
+      "claim": "The measure of intelligence in UK Biobank is a 13 item verbal-numeric reasoning test.",
+      "claim_type": "EXPLICIT",
+      "source": "The measure of intelligence in UK Biobank is relatively crude: a 13 item verbal-numeric reasoning test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the measurement used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "64021ea6-1d9d-48e4-a0d8-1c393e7f8a91",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C88",
+      "claim": "Mendelian randomization is less likely to be affected by measurement error on the exposures than conventional analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Mendelian randomization is implemented here as a form of instrumental variable analysis, and therefore is less likely to be affected by measurement error on the exposures than conventional analyses (Sargan, 1958).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "c8e1f35b-1df3-4c24-a96a-6e4d36eeb7c2",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C89",
+      "claim": "The intelligence GWAS used in this study was conducted in older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "The intelligence GWAS we used to identify SNPs associated with intelligence was conducted in older adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the GWAS used in the study.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "dfd443fc-00d3-44e9-a016-2496f8291a0d",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C90",
+      "claim": "SNPs associated with education in GWAS also associate with parental education.",
+      "claim_type": "EXPLICIT",
+      "source": "SNPs associated with education in GWAS also associate with parental education.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about genetic associations, likely based on published research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "6f9376b8-b7b4-427b-93df-3b28c7f9c6a3",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C91",
+      "claim": "Non-inherited parental alleles at education-associated loci also associate with offspring's outcomes via their expression in parental phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-inherited parental alleles at these loci also associate with offspring's outcomes via their expression in parental phenotypes (Kong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "f28cab57-0bc9-4383-85ca-8bc545449d26",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C92",
+      "claim": "Substantial fractions of the GREML-SNP estimates of the heritability of education may be due to indirect effects of parents.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, substantial fractions of the GREML-SNP estimates of the heritability of education may be due to indirect effects of parents (Young et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "f0f5b712-313a-47a0-b83e-6488166fae58",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C93",
+      "claim": "The association of offspring outcomes and the non-transmitted polygenic score for education was 31% of the size of the association of the transmitted scores from fathers.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of offspring outcomes and the non-transmitted polygenic score for education was 31% and 29% of the size of the association of the transmitted scores from fathers and mothers respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of genetic data, likely from a cited study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "3d9064f6-b578-4b8e-aba8-5ee31f404267",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C94",
+      "claim": "The association of offspring outcomes and the non-transmitted polygenic score for education was 29% of the size of the association of the transmitted scores from mothers.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of offspring outcomes and the non-transmitted polygenic score for education was 31% and 29% of the size of the association of the transmitted scores from fathers and mothers respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of genetic data, likely from a cited study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "3f8d6cdd-7814-4034-8d76-8a4c22bd5ac6",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C95",
+      "claim": "The size of the association of the non-transmitted education polygenic score with a broad measure of health outcomes was 37% of the transmitted score for fathers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the size of the association of the non-transmitted education polygenic score with a broad measure of health outcomes was 37% and 42% of the transmitted score for fathers and mothers respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of genetic data, likely from a cited study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "79a5f9ae-13b2-4fc3-b432-fdeea91f92f8",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C96",
+      "claim": "The size of the association of the non-transmitted education polygenic score with a broad measure of health outcomes was 42% of the transmitted score for mothers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the size of the association of the non-transmitted education polygenic score with a broad measure of health outcomes was 37% and 42% of the transmitted score for fathers and mothers respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of genetic data, likely from a cited study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "c6b1e8be-b736-403d-a3d8-b8e9b2b9e586",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C97",
+      "claim": "Smoking rates have declined since the 1960s, 1970s, and 1980s, when the UK Biobank participants left school.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we find evidence of effects on smoking rates, particularly in single sample analysis. However, smoking rates have declined since the 1960s, 1970s, and 1980s, when the UK Biobank participants left school.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about historical trends in smoking rates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "16084f92-49da-4209-95cd-568f8c4ca7b0",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C98",
+      "claim": "Over 9.2 million people were invited to take part in UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 9.2 million people were invited to take part.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the UK Biobank recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "acdd3fea-7b52-44a8-8c6b-271791389960",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C99",
+      "claim": "Just over half a million people attended a study clinic and consented to take part in UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, just over half a million people attended a study clinic and consented to take part in the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the UK Biobank recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "04ff3c95-2d6a-4e44-a422-5dadf9cc2574",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C100",
+      "claim": "219 SNPs were associated with either intelligence or education at p<5\u00d710\u221208 and were in linkage equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in 219 SNPs, of which 144 were associated with intelligence, but not education at p<5 \u00d7 10\u221208, 38 were associated with education, but not intelligence at p<5 \u00d7 10\u221208, and 37 were associated with both intelligence and education at p<5 \u00d7 10\u221208.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the SNP selection process for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "2162663d-a0be-4096-b707-c81303c670e2",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C101",
+      "claim": "144 SNPs were associated with intelligence, but not education at p<5 \u00d7 10\u221208.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in 219 SNPs, of which 144 were associated with intelligence, but not education at p<5 \u00d7 10\u221208, 38 were associated with education, but not intelligence at p<5 \u00d7 10\u221208, and 37 were associated with both intelligence and education at p<5 \u00d7 10\u221208.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the SNP selection process for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "469771e4-d824-492b-9e58-ca20c67a7c8c",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C102",
+      "claim": "38 SNPs were associated with education, but not intelligence at p<5 \u00d7 10\u221208.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in 219 SNPs, of which 144 were associated with intelligence, but not education at p<5 \u00d7 10\u221208, 38 were associated with education, but not intelligence at p<5 \u00d7 10\u221208, and 37 were associated with both intelligence and education at p<5 \u00d7 10\u221208.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the SNP selection process for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "7928228c-96e6-4f4a-90b6-5ca57e2f9422",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C103",
+      "claim": "37 SNPs were associated with both intelligence and education at p<5 \u00d7 10\u221208.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in 219 SNPs, of which 144 were associated with intelligence, but not education at p<5 \u00d7 10\u221208, 38 were associated with education, but not intelligence at p<5 \u00d7 10\u221208, and 37 were associated with both intelligence and education at p<5 \u00d7 10\u221208.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the SNP selection process for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "b1e6d668-f110-40c2-b703-d2b072359a77",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C104",
+      "claim": "Both intelligence and educational attainment had beneficial total effects on most outcomes (the exception being alcohol consumption).",
+      "claim_type": "EXPLICIT",
+      "source": "Both intelligence and educational attainment had beneficial total effects on most outcomes (the exception being alcohol consumption).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings from the univariable Mendelian randomization analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "a17fbac0-03c1-4966-825d-63432f0354ac",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C105",
+      "claim": "Many of the direct effects for both intelligence and education were substantially attenuated compared to the total effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the direct effects for both traits were substantially attenuated compared to the total effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement comparing findings from univariable and multivariable Mendelian randomization analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "cd3604bf-db0f-42cb-afb3-42fc08234f39",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C106",
+      "claim": "The direct effects of intelligence and education were smaller than the total effects.",
+      "claim_type": "IMPLICIT",
+      "source": "The estimated total effects of intelligence indicate the overall effects including effects of intelligence mediated via education. The estimated total effects of education indicate the overall effects of education including the effects mediated via intelligence. Whereas the direct effects of intelligence are those that are not mediated via education, and the direct effects of education are those that are not mediated via intelligence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the definitions of total and direct effects and the results showing attenuation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "6dbee412-5803-4c34-9bdb-bf735e3c8f36",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C107",
+      "claim": "Multivariable Mendelian randomization does not overcome bias due to other pleiotropic effects by pathways other than intelligence or education.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariable Mendelian randomization does not overcome bias due to other pleiotropic effects by pathways other than intelligence or education.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the multivariable Mendelian randomization method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "9cf583f2-3518-40cc-9683-bfd17c3b6a7f",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C108",
+      "claim": "If the Mendelian randomization assumptions hold, the findings suggest that both intelligence and education affect health.",
+      "claim_type": "EXPLICIT",
+      "source": "If the Mendelian randomization assumptions hold, these findings suggest that both intelligence and education affect health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conditional conclusion based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "cc1780e1-d227-482a-9eb5-7e3ede41852e",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C109",
+      "claim": "The estimated direct effects of intelligence on smoking, household income, BMI, alcohol consumption and sedentary behaviour were substantially attenuated compared to the total effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated direct effects of intelligence on smoking, household income, BMI, alcohol consumption and sedentary behaviour were substantially attenuated compared to the total effects (Supplementary file 1 - Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of findings comparing univariable and multivariable Mendelian randomization results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "fcdb7980-0ac6-42d5-a8c2-f9ccf236d339",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "claim_id": "C110",
+      "claim": "A substantial fraction of the total effects of intelligence on the outcomes were mediated via education.",
+      "claim_type": "EXPLICIT",
+      "source": "This attenuation suggests that a substantial fraction of the total effects of intelligence on the outcomes were mediated via education.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the attenuation of direct effects compared to total effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The UK Biobank cohort recruited 503,317 participants aged 38-73 between 2006-2010, with the analytical sample being 45.5% male, average age 57.3 years, and more educated/healthier than the general UK population. The sample had varying prevalence of health outcomes (1.5% stroke to 34.6% depression) and 2.0% mortality during follow-up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31, C68-C69, C75, C98-C99 provide consistent descriptive statistics about the UK Biobank sample characteristics. These are straightforward data descriptions from the study cohort with no analytical complexity, and the claims are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Intelligence and education are phenotypically and genetically correlated (rg=0.70), both are heritable, and are associated with health and socioeconomic outcomes. Intelligence is relatively stable across the lifespan (r=0.66 from age 11 to 77), and education causally increases IQ by 1-5 points per year. However, quasi-experimental studies of intelligence effects on education are lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C17, C71-C74, C78 summarize established prior knowledge supported by multiple citations. These background claims are well-documented in the literature and provide context for the study. The authors appropriately cite relevant prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "1577e8e7-cc29-4129-a3c3-e2049c79b5b7",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mendelian randomization relies on genetic variants that are randomly inherited, invariant post-conception, unaffected by reverse causation, and largely unconfounded. However, weak instrument bias can occur with sample overlap, and multivariable MR does not overcome bias from pleiotropic pathways other than the exposures of interest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22, C70, C88, C107 describe fundamental principles and limitations of Mendelian randomization methodology. These are well-established methodological facts supported by appropriate citations and represent accurate descriptions of the method's assumptions and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "b3c33c33-fed5-4a08-9d00-b17fc7c9826a",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SNPs associated with intelligence are likely to also affect education and vice versa, making most SNPs pleiotropic for both traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 are reasonable inferences given the strong genetic correlation (rg=0.70) between intelligence and education reported in C10. This pleiotropy is the central motivation for using multivariable Mendelian randomization in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "ccf8f1a5-b4ea-4f4b-87c4-a0d62efad406",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "219 independent SNPs were identified at p<5\u00d710\u207b\u2078: 144 associated with intelligence only, 38 with education only, and 37 with both traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C103 describe the SNP selection process with specific numbers that are internally consistent (144+38+37=219). The methodology for SNP selection (clumping, p-value thresholds) is standard for Mendelian randomization studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "6268c2cc-ebb0-4d93-93e0-976c0324620b",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Bidirectional Mendelian randomization showed that one SD increase in intelligence increased education by 0.52 SD (p=2.2\u00d710\u207b\u00b9\u2074\u2075), while one SD increase in education increased intelligence by 0.77 SD (p=3.0\u00d710\u207b\u2076\u00b2). Greater heterogeneity was observed for education effects (I\u00b2=0.60) than intelligence effects (I\u00b2=0.48).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 report primary bidirectional MR findings with strong statistical significance and appropriate heterogeneity statistics. The results are supported by Figure 3 and demonstrate bidirectional causal relationships. The heterogeneity statistics suggest potential pleiotropy, which is acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "7e35b80b-8600-4c92-bdf2-e82db0398b75",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Univariable Mendelian randomization showed that higher intelligence had beneficial total effects on most health outcomes (reducing hypertension, diabetes, heart attack, depression, smoking, BMI, blood pressure, sedentary behavior) and increased income across all thresholds, height, grip strength, physical activity, and alcohol consumption. Education showed similar patterns except no effect on vigorous physical activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C56, C104 report univariable MR results with appropriate effect sizes, confidence intervals, and p-values. The findings show consistent beneficial effects for both exposures across multiple outcomes. The exception for alcohol consumption is noted. Statistical significance is properly reported with very small p-values for most associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "082ecf33-9065-40ff-9bf3-88fc62116b3a",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multivariable Mendelian randomization with strong instruments (F-statistic=21.6) showed that intelligence had positive direct effects on income and alcohol consumption, and negative direct effects on moderate and vigorous physical activity. Education had positive direct effects on income, alcohol consumption, and vigorous physical activity, and negative direct effects on smoking, BMI, and sedentary behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6, C57-C67 report multivariable MR results that appropriately account for pleiotropy between intelligence and education. The Sanderson-Windmeijer F-statistic (21.6) indicates adequate instrument strength. The direct effects are generally attenuated compared to total effects, which is expected and supports the hypothesis of mediation between traits. Results are visualized in Figure 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "dba71ffd-5f06-4c89-a0c9-cecd948a934c",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Direct effects of both intelligence and education were substantially attenuated compared to total effects. For intelligence, direct effects on income were 54-89% smaller than total effects. For education, direct effects were 27-38% smaller than total effects. This attenuation suggests substantial mediation of intelligence effects through education.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77, C79, C105-C106, C109-C110 compare univariable and multivariable MR results to quantify mediation. The attenuation of direct effects compared to total effects is the key finding supporting the hypothesis that intelligence and education mediate each other's effects. The quantification of attenuation percentages is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "7ee54be3-e02f-435d-af07-5e6b7a4630c7",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Each additional year of education (0.19 SD) would result in 2.0-3.1pp increases in probability of higher income thresholds, 0.04 units increase in alcohol consumption, 8.87 fewer minutes of sedentary behavior per day, and 0.06 more days of vigorous activity per week.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 translate the standardized effect estimates into policy-relevant units (per year of education). The conversion from SD to years (0.19 SD = 1 year) is stated and the calculations appear consistent with the multivariable MR results. This provides practical interpretation of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "33422a29-c469-4ff2-a581-2d65fca63b3b",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Intelligence was measured using a 13-item verbal-numeric reasoning test in UK Biobank, which is relatively crude. However, Mendelian randomization is less affected by measurement error than conventional analyses. The intelligence GWAS used older adults.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 acknowledge limitations in intelligence measurement but correctly note that instrumental variable methods (MR) are robust to measurement error in the exposure. The use of adult intelligence GWAS is noted as a limitation that may affect interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "0efdaf5d-499d-4392-9c49-4606b78653f7",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SNPs associated with education also associate with parental education, and non-inherited parental alleles associate with offspring outcomes (31% and 29% of transmitted effect size for fathers and mothers respectively). Substantial fractions of education heritability estimates may be due to indirect parental effects (dynastic effects).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C96 discuss potential confounding from dynastic effects and assortative mating, citing appropriate studies (Kong et al., 2018; Young et al., 2018). The quantification of non-transmitted allele effects (31% and 29%) provides evidence for the magnitude of this bias. This is an important limitation acknowledged by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "19f95ba9-60ca-477e-8f76-f83f5d05fb9e",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Smoking rates have declined since the 1960s-1980s when UK Biobank participants left school, which may limit generalizability of findings on smoking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 appropriately notes a limitation regarding temporal generalizability of the smoking results. This is a reasonable concern given the cohort's age and historical changes in smoking prevalence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    },
+    {
+      "id": "45f59a9b-cccd-413f-b2ea-8e1fedd7e067",
+      "content_id": "c24fae5d-32c1-4a9c-b757-d03abd5892de",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "If the Mendelian randomization assumptions hold, the findings suggest that both intelligence and education affect health.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C108 provides an appropriately conditional conclusion that depends on MR assumptions holding. This is the main conclusion of the paper and is supported by the multivariable MR results showing independent direct effects of both intelligence and education on multiple outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:13:02.798642Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "819caed2-245f-47bc-8295-a879f6b9912e",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "8dc06dda-28d9-422e-8738-3a6fa106c153",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "35223254-7f0b-431b-8840-45d26fa9cd1d",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "4d8b6645-70d8-4724-8502-b6ce205ce225",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "63e20aa7-a218-4326-a3b1-83317fd96f3a",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "980512fa-91ce-433b-bc7a-9ec367f3ab5a",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "5a1b1cfe-300f-4f6e-943b-c9c187b8e356",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "a7dbd4ed-b3d1-4b09-bfa3-94ae48c20d45",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "846fa67e-87d9-4933-8af9-5f7bc306a125",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "d8cfe847-0e81-42cb-be2f-fa9fee6c6fdf",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "16084f92-49da-4209-95cd-568f8c4ca7b0",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "acdd3fea-7b52-44a8-8c6b-271791389960",
+      "result_id": "9989f075-1e13-40cc-82f3-9da06e6c7fd2"
+    },
+    {
+      "claim_id": "668f30f2-0628-4d93-b5d0-43cc4f873c49",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "c8ca860c-4388-4500-8564-017ae04c3856",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "8d82087c-a36d-4b21-a6a0-d43856686fb2",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "38f276d9-df3b-46ed-ba24-985c8bad6c08",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "0ee257ec-8f71-42e3-91db-5b13b32171f3",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "20d41190-e9d3-41c3-977f-1567d825868d",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "196fcef3-01f8-41f0-9b15-061336da1b11",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "63619665-1e08-4a3d-8bf8-85b496225371",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "49e89457-dd98-4d7e-89d3-a5c9dd9698c7",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "9d01d2a0-8dbe-4b45-8e22-39039ca1622c",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "a09a9bf4-11b6-42da-bbf4-492fc95e2030",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "0dd2c44e-d1da-42ef-bf14-08e182a2b7c3",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "df64b57b-e4b1-46f4-950d-9166dcac001a",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "8f67946c-9264-4160-a18f-f21473c440bf",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "c4f2b75b-c649-4368-9020-97fb16a16f38",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "8908a4a9-7972-4b77-b5a7-af68bfea8e1b",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "f030bd6c-247b-42cc-869b-2ca8b2940732",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "54a599de-ea3b-40cb-aed6-998fc978917f",
+      "result_id": "c3a145e6-45d5-4a51-9c5f-e21c038fad70"
+    },
+    {
+      "claim_id": "d0850198-a2c8-4003-85f6-751e36363726",
+      "result_id": "1577e8e7-cc29-4129-a3c3-e2049c79b5b7"
+    },
+    {
+      "claim_id": "65c48c05-8778-43ac-82fe-847481554680",
+      "result_id": "1577e8e7-cc29-4129-a3c3-e2049c79b5b7"
+    },
+    {
+      "claim_id": "977a93a4-384c-4eac-89dd-ae8fc1fef5aa",
+      "result_id": "1577e8e7-cc29-4129-a3c3-e2049c79b5b7"
+    },
+    {
+      "claim_id": "c964eefe-a6e3-4a95-a0c3-9ca77963a00c",
+      "result_id": "1577e8e7-cc29-4129-a3c3-e2049c79b5b7"
+    },
+    {
+      "claim_id": "85e9e045-121d-4045-a6e3-9c4eb727d2c4",
+      "result_id": "1577e8e7-cc29-4129-a3c3-e2049c79b5b7"
+    },
+    {
+      "claim_id": "102e249e-2d6a-49b0-8e57-035ae53e04f1",
+      "result_id": "1577e8e7-cc29-4129-a3c3-e2049c79b5b7"
+    },
+    {
+      "claim_id": "64021ea6-1d9d-48e4-a0d8-1c393e7f8a91",
+      "result_id": "1577e8e7-cc29-4129-a3c3-e2049c79b5b7"
+    },
+    {
+      "claim_id": "6dbee412-5803-4c34-9bdb-bf735e3c8f36",
+      "result_id": "1577e8e7-cc29-4129-a3c3-e2049c79b5b7"
+    },
+    {
+      "claim_id": "5fa55917-5a7c-479e-9714-cef30fb3646f",
+      "result_id": "b3c33c33-fed5-4a08-9d00-b17fc7c9826a"
+    },
+    {
+      "claim_id": "d9743af8-09b8-4f64-9bac-66d174e155df",
+      "result_id": "b3c33c33-fed5-4a08-9d00-b17fc7c9826a"
+    },
+    {
+      "claim_id": "04ff3c95-2d6a-4e44-a422-5dadf9cc2574",
+      "result_id": "ccf8f1a5-b4ea-4f4b-87c4-a0d62efad406"
+    },
+    {
+      "claim_id": "2162663d-a0be-4096-b707-c81303c670e2",
+      "result_id": "ccf8f1a5-b4ea-4f4b-87c4-a0d62efad406"
+    },
+    {
+      "claim_id": "469771e4-d824-492b-9e58-ca20c67a7c8c",
+      "result_id": "ccf8f1a5-b4ea-4f4b-87c4-a0d62efad406"
+    },
+    {
+      "claim_id": "7928228c-96e6-4f4a-90b6-5ca57e2f9422",
+      "result_id": "ccf8f1a5-b4ea-4f4b-87c4-a0d62efad406"
+    },
+    {
+      "claim_id": "6f13b0e2-866c-41ef-9345-40544a51edcd",
+      "result_id": "6268c2cc-ebb0-4d93-93e0-976c0324620b"
+    },
+    {
+      "claim_id": "eb6efe16-5626-4c86-95a5-9b62e2d0449a",
+      "result_id": "6268c2cc-ebb0-4d93-93e0-976c0324620b"
+    },
+    {
+      "claim_id": "a8d7f68b-7b40-4262-ba1e-2b75ed497b45",
+      "result_id": "6268c2cc-ebb0-4d93-93e0-976c0324620b"
+    },
+    {
+      "claim_id": "98854f4a-7194-4ad9-a07c-c3a749b37235",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "ced8fee9-eb5d-4a7c-bbe2-f52f52df0159",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "058bf8ee-82e9-40a4-a5b1-c6e765fc1f58",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "7865619e-f2d8-4dfd-9dd4-56e68cb5957d",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "90d99cc8-e103-4a23-8d7b-c13ab4458b40",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "379ca5cf-57c2-434f-92e1-63e0476373d9",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "5bffe559-0182-4b32-8d4f-92a2c14e73f0",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "d9297c93-8d15-4244-8912-15d1d0ffac4a",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "c9031e5f-798d-4d96-b3bd-bee0251c80ce",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "4de53b43-8294-4486-8ee4-8e9f27d756e7",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "b9148be3-c0da-4b17-b3e2-faf7cb663882",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "eb192aaf-80f5-4d6e-a108-42a44999e4d8",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "920ca32b-d0c6-42b9-b292-60394db1b0d4",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "b8b7a079-8712-4d47-be9e-66778df35eba",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "d2b365db-f4a3-4b6b-9b95-8a70f03be999",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "4b2ab6d6-406b-404a-83f3-ea10a9e5cbd1",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "3fff7309-eb91-40bf-b9d1-265189a6b070",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "aa59af11-494d-4ca1-a766-0ef41d6fa142",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "6824efb1-de31-4a24-9b4d-d3d78cd9bfc7",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "2657196c-38ea-4269-a835-092aa0000512",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "40d0dbf5-9698-48ee-bc72-5fa94a9ddd91",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "dcf98483-5058-4b22-a823-1737cef90e9d",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "b1e6d668-f110-40c2-b703-d2b072359a77",
+      "result_id": "7e35b80b-8600-4c92-bdf2-e82db0398b75"
+    },
+    {
+      "claim_id": "76c991a3-7683-4aa7-9279-281b769acdd5",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "147aef4f-952b-468b-aff9-5728ba418bff",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "788aaca3-f698-445e-98a5-2dbd2b00bddb",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "8f39f1b4-cdc4-40ae-adde-eedd70f930d8",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "8d73cb3f-eaee-4a24-bf61-1f77e1f56884",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "d06dbe91-2aee-486b-8c52-cd3569fcf9de",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "2724909c-b53d-4df6-9e26-78fc642ddfe3",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "eed6f161-0c1c-4c18-bdc2-fa44219b649a",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "9a450478-5397-4008-9998-fa33d701dfbc",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "102ad4e5-b144-4ccd-b2d1-1d758671256c",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "3295d173-e58b-44de-8a9d-d999fb07f4fd",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "61284f9f-6d4e-4173-9a7e-c282b818ddb7",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "23241eb9-6764-45cd-beea-e3f78c86fa92",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "f19086c3-5685-4b87-a8d5-09825a6650a9",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "5dbe60e5-7a70-4f0f-b9e0-033f596dbcd6",
+      "result_id": "082ecf33-9065-40ff-9bf3-88fc62116b3a"
+    },
+    {
+      "claim_id": "7c24e514-4c1c-4abe-8d82-797db82df923",
+      "result_id": "dba71ffd-5f06-4c89-a0c9-cecd948a934c"
+    },
+    {
+      "claim_id": "851075cf-cccb-4dde-b1a0-3e6bea554f1b",
+      "result_id": "dba71ffd-5f06-4c89-a0c9-cecd948a934c"
+    },
+    {
+      "claim_id": "5bcbb3b1-a0ba-41d9-bcd4-27b5aa217e4c",
+      "result_id": "dba71ffd-5f06-4c89-a0c9-cecd948a934c"
+    },
+    {
+      "claim_id": "a17fbac0-03c1-4966-825d-63432f0354ac",
+      "result_id": "dba71ffd-5f06-4c89-a0c9-cecd948a934c"
+    },
+    {
+      "claim_id": "cd3604bf-db0f-42cb-afb3-42fc08234f39",
+      "result_id": "dba71ffd-5f06-4c89-a0c9-cecd948a934c"
+    },
+    {
+      "claim_id": "cc1780e1-d227-482a-9eb5-7e3ede41852e",
+      "result_id": "dba71ffd-5f06-4c89-a0c9-cecd948a934c"
+    },
+    {
+      "claim_id": "fcdb7980-0ac6-42d5-a8c2-f9ccf236d339",
+      "result_id": "dba71ffd-5f06-4c89-a0c9-cecd948a934c"
+    },
+    {
+      "claim_id": "aa546922-d806-4c1a-9da1-6796ebdcbe7a",
+      "result_id": "7ee54be3-e02f-435d-af07-5e6b7a4630c7"
+    },
+    {
+      "claim_id": "117b8d65-d327-4761-b9ce-a20d158df428",
+      "result_id": "7ee54be3-e02f-435d-af07-5e6b7a4630c7"
+    },
+    {
+      "claim_id": "c0f8d62c-017c-4bed-8068-3c1a62d1d25a",
+      "result_id": "7ee54be3-e02f-435d-af07-5e6b7a4630c7"
+    },
+    {
+      "claim_id": "09e93c1e-4b26-44f9-a844-8000b9188ff1",
+      "result_id": "7ee54be3-e02f-435d-af07-5e6b7a4630c7"
+    },
+    {
+      "claim_id": "9ada1eda-fcef-4661-9dbc-3af8e6ae5358",
+      "result_id": "7ee54be3-e02f-435d-af07-5e6b7a4630c7"
+    },
+    {
+      "claim_id": "850bbd28-4a86-4996-b844-64b3ae41c826",
+      "result_id": "7ee54be3-e02f-435d-af07-5e6b7a4630c7"
+    },
+    {
+      "claim_id": "c33a6bb3-ffec-451a-94ec-8740d29f4c91",
+      "result_id": "7ee54be3-e02f-435d-af07-5e6b7a4630c7"
+    },
+    {
+      "claim_id": "dd3eed07-4233-4278-82da-3b9673ded36d",
+      "result_id": "33422a29-c469-4ff2-a581-2d65fca63b3b"
+    },
+    {
+      "claim_id": "64021ea6-1d9d-48e4-a0d8-1c393e7f8a91",
+      "result_id": "33422a29-c469-4ff2-a581-2d65fca63b3b"
+    },
+    {
+      "claim_id": "c8e1f35b-1df3-4c24-a96a-6e4d36eeb7c2",
+      "result_id": "33422a29-c469-4ff2-a581-2d65fca63b3b"
+    },
+    {
+      "claim_id": "dfd443fc-00d3-44e9-a016-2496f8291a0d",
+      "result_id": "0efdaf5d-499d-4392-9c49-4606b78653f7"
+    },
+    {
+      "claim_id": "6f9376b8-b7b4-427b-93df-3b28c7f9c6a3",
+      "result_id": "0efdaf5d-499d-4392-9c49-4606b78653f7"
+    },
+    {
+      "claim_id": "f28cab57-0bc9-4383-85ca-8bc545449d26",
+      "result_id": "0efdaf5d-499d-4392-9c49-4606b78653f7"
+    },
+    {
+      "claim_id": "f0f5b712-313a-47a0-b83e-6488166fae58",
+      "result_id": "0efdaf5d-499d-4392-9c49-4606b78653f7"
+    },
+    {
+      "claim_id": "3d9064f6-b578-4b8e-aba8-5ee31f404267",
+      "result_id": "0efdaf5d-499d-4392-9c49-4606b78653f7"
+    },
+    {
+      "claim_id": "3f8d6cdd-7814-4034-8d76-8a4c22bd5ac6",
+      "result_id": "0efdaf5d-499d-4392-9c49-4606b78653f7"
+    },
+    {
+      "claim_id": "79a5f9ae-13b2-4fc3-b432-fdeea91f92f8",
+      "result_id": "0efdaf5d-499d-4392-9c49-4606b78653f7"
+    },
+    {
+      "claim_id": "c6b1e8be-b736-403d-a3d8-b8e9b2b9e586",
+      "result_id": "19f95ba9-60ca-477e-8f76-f83f5d05fb9e"
+    },
+    {
+      "claim_id": "9cf583f2-3518-40cc-9683-bfd17c3b6a7f",
+      "result_id": "45f59a9b-cccd-413f-b2ea-8e1fedd7e067"
+    }
+  ],
+  "comparisons": []
+}

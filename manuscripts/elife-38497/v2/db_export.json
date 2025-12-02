@@ -1,0 +1,1923 @@
+{
+  "submission": {
+    "id": "6a2d0e45-9b79-458e-b8b9-3b2f5ebe0f2b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:42:22.213174Z",
+    "updated_at": "2025-12-02T07:42:22.213174Z"
+  },
+  "content": [
+    {
+      "id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "submission_id": "6a2d0e45-9b79-458e-b8b9-3b2f5ebe0f2b",
+      "content_type": "manuscript",
+      "content_text": "# A liquid-like organelle at the root of motile ciliopathy\n\n## Authors\n\n- Ryan L Huizar<sup>1</sup> ([ORCID: 0000-0003-4695-9674](https://orcid.org/0000-0003-4695-9674))\n- Chanjae Lee<sup>1</sup>\n- Alexander A Boulgakov<sup>1</sup> ([ORCID: 0000-0002-7446-1120](https://orcid.org/0000-0002-7446-1120))\n- Amjad Horani<sup>2</sup> ([ORCID: 0000-0002-5352-1948](https://orcid.org/0000-0002-5352-1948))\n- Fan Tu<sup>1</sup>\n- Edward M Marcotte<sup>1</sup> ([ORCID: 0000-0001-8808-180X](https://orcid.org/0000-0001-8808-180X))\n- Steven L Brody<sup>3</sup>\n- John B Wallingford<sup>1</sup> ([ORCID: 0000-0002-6280-8625](https://orcid.org/0000-0002-6280-8625)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biosciences University of Texas Austin United States\n2. Department of Pediatrics Washington University School of Medicine St Louis United States\n3. Department of Medicine Washington University School of Medicine St Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMotile ciliopathies are characterized by specific defects in cilia beating that result in chronic airway disease, subfertility, ectopic pregnancy, and hydrocephalus. While many patients harbor mutations in the dynein motors that drive cilia beating, the disease also results from mutations in so-called dynein axonemal assembly factors (DNAAFs) that act in the cytoplasm. The mechanisms of DNAAF action remain poorly defined. Here, we show that DNAAFs concentrate together with axonemal dyneins and chaperones into organelles that form specifically in multiciliated cells, which we term DynAPs, for dynein axonemal particles. These organelles display hallmarks of biomolecular condensates, and remarkably, DynAPs are enriched for the stress granule protein G3bp1, but not for other stress granule proteins or P-body proteins. Finally, we show that both the formation and the liquid-like behaviors of DynAPs are disrupted in a model of motile ciliopathy. These findings provide a unifying cell biological framework for a poorly understood class of human disease genes and add motile ciliopathy to the growing roster of human diseases associated with disrupted biological phase separation.\n\n## Introduction\n\nMotile cilia are microtubule-based cellular projections that beat in an oriented manner to generate fluid flows that are critical for development and homeostasis (Figure 1A). Accordingly, genetic defects that disrupt motile cilia function are associated with the motile ciliopathy syndrome known as primary ciliary dyskinesia (PCD; MIM 244400)\u00a0(Horani et al., 2016; Mitchison and Valente, 2017). PCD is a rare inherited disease that results in repeated sinopulmonary disease, bronchiectasis, cardiac defects such as heterotaxy, situs anomalies, and infertility. Lung disease is the predominant feature of this syndrome, with significant morbidity, and can result in end-stage lung disease requiring lung transplantation (Horani et al., 2016). PCD is caused by mutations in at least 40 different genes, and the function of many remains unclear. There is no cure for PCD, so understanding the genetic control of motile cilia assembly and function is an important challenge.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic showing a multiciliated cell (MCC)\u00a0indicating the site of function for proteins linked to motile ciliopathy.\u00a0Proteins and events in the cytoplasm are indicated in blue; those in the axonemes are indicated in magenta (B) Cross-sectional projection of mucociliary epithelium; GFP-Heatr2 is localized in MCCs to cytoplasmic foci (b\u2019), whereas mCherry-Dnai2 localizes to both axonemes and cytoplasmic foci (b\u2019\u2019). (C) En face projection showing mCherry-Dnai2 localization in motile axonemes and cytoplasmic foci (magenta), with GFP-Heatr2 showing restricted localization to cytoplasmic foci. (D\u2013G) En face optical sections showing co-localization of fluorescent\u00a0protein\u00a0(FP) fusions to the indicated proteins. (H) Graph displaying Pearson Correlation Coefficients for colocalization of GFP fusion proteins with mCherry-Ktu at DynAPs. Scale bars 10 \u00b5m. p\u00a0<\u00a00.0001 by one-way ANOVA and post-hoc Tukey-Kramer HSD test. n-values for each FRAP experiment can be found in Table 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Immunostaining of primary human MCC reveals endogenous LRRC6 (red) in cytoplasmic foci, cilia are marked by acetylated tubulin (green). (B) LRRC6 labeled foci (red) are enriched in Dnai1 (green in b\u2019) in human MCCs.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u00a0Graph displaying Costes P-values for colocalization of GFP fusion proteins with mCherry-Ktu. (B) Table containing mean and median for both Pearson and Costes analyses of colocalziation as well as n-values for each of the proteins tested.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Left panel shows focus detection in the current slice (red circle) and in the adjacent slice (orange circle) of a confocal stack. Right panel shows voxel intensity of the identified foci after watershedding. (B) Plot of the co-localization index (see Materials\u00a0and\u00a0methods) of FP fusions to indicated proteins relative to GFP-Ktu after automated identification of foci. (C) Plot of co-localization index for the same data after computational randomization of foci position. Reduction in co-localization of all tested proteins after randomization was extremely significant (p<2.2\u00d710\u221216), suggesting that the colocaliztion patterns in B did not occur by chance.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A)\u00a0GFP-Ktu labeled DynAPs (green) do not overlap with Dcp1a-labeled P bodies (red). In addition, while Dcp1a forms foci both in the MCC (dashed circle) and in the neighboring cells. (B, C) Ktu-FP-labeled DynAPs (green in B, and red in C) do not co-localize with the trans-Golgi labeled by GalT (red) or with endosome labeled with Eea1 (green). (D) Membrane labeling at the apical surface reveals MCCs surrounded by non-ciliated goblet cells. Panels to the right show en face projections through the cytoplasm of the same cells. GFP-Ktu forms foci only in MCCs (dashed circles, compare with apical surface image. Dcp1a-RFP (blue) forms foci in all cells. Cellular membrane is labeled as red. (E) Projection through the cytoplasm reveals GFP-Tia1 foci (green) in a single MCC. Higher magnification views of the boxed area in B showing GFP-Tia1 (green) localizes strongly to small foci (boxes) but only weakly to the larger DynAPs (ovals) labeled by mCherry-Ktu (red).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Upper Panel: DynAPs are labeled by immunostaining for endogenous Ruvbl2 (yellow) and present specifically in MCCs (upper panel, magenta indicates acetylated tubulin immunostaining to label cilia. Lower panel: A cross-sectional projection shows endogenous Ruvbl2 in DynAPs (yellow) and cilia (acetylated tubulin, magenta).\n\nPCD can arise from mutation of any one of the genes encoding subunits of the multi-protein dynein motors that drive ciliary beating (Figure 1A, pink)\u00a0(Horani et al., 2016; Mitchison and Valente, 2017). These so-called axonemal dyneins are similar in structure and function to cytoplasmic dyneins but are encoded by distinct genes. Interestingly, axonemal dynein motors are pre-assembled in the cytoplasm before deployment to cilia (Fowkes and Mitchell, 1998), and it is now clear that PCD also arises from mutations in genes encoding any of an array of cytoplasmic proteins collectively known as dynein axonemal assembly factors (DNAAFs)\u00a0(Figure 1A, blue)\u00a0(Desai et al., 2018).\n\nThe initial description of DNAAFs came with the identification of KTU (aka DNAAF2), which encodes a novel protein present in the cytoplasm yet causes motile ciliopathy when mutated (Omran et al., 2008). As in human patients, mutation of ktu in fish and the green algae Chlamydomonas also elicits defects specifically in cilia beating (Omran et al., 2008). Subsequent studies of motile ciliopathy patients defined several additional cytoplasmic DNAAFs, and in all cases, these genes encode cytoplasmic proteins but their mutation results in loss of dyneins specifically from the axonemes, and as a result, defects in cilia beating (Diggle et al., 2014; Horani et al., 2012; Horani et al., 2013; Kott et al., 2012; Mitchison et al., 2012; Moore et al., 2013; Olcese et al., 2017; Paff et al., 2017; UK10K et al., 2013; Zariwala et al., 2013). Despite their well-known role in human disease, the molecular mechanisms of DNAAF action are only now emerging.\n\nProteomic experiments initially indicated a link between DNAAFs and heat shock family chaperones (Omran et al., 2008) and many of the DNAAFs contain PIH, TAH1, or CS domains that are common in heat shock co-chaperones (Olcese et al., 2017; Omran et al., 2008; Paff et al., 2017; UK10K et al., 2013; Yamamoto et al., 2010). Moreover, genetic ablation of the Hsp90 co-chaperone Ruvbl1/2 results in defective dynein arm assembly in zebrafish and mice (Li et al., 2017; Zhao et al., 2013). More recently, work in diverse model animals has led to a model in which DNAAFs function as part of a \u2018chaperone relay,\u2019 with distinct DNAAFs mediating specific steps in the dynein assembly process (Cho et al., 2018; Mali et al., 2018; Olcese et al., 2017; Yamaguchi et al., 2018; Zur Lage et al., 2018). Several of these studies suggest that the DNAAFs and chaperones act together in cytosolic \u2018foci\u2019 (e.g. Diggle et al., 2014; Horani et al., 2012; Li et al., 2017), and it has been suggested that different steps in the chaperone relay are somehow compartmentalized (Mali et al., 2018), but the nature and mechanisms remain to be defined.\n\nHere, we use live imaging to show that DNAAFs, dynein subunits and chaperones all co-localize to discrete, multiciliated\u00a0cell\u00a0(MCC)-specific organelles that display hallmarks of biological phase separation. Remarkably, while DNAAFs and chaperones flux through rapidly, dynein subunits are very stably retained in these organelles, suggesting that these\u00a0organelles may serve as a specialized compartment for the proposed dynein/chaperone relay system. Finally, in an animal model of motile ciliopathy, altered liquid-like behavior was associated with disrupted assembly and a failure of ciliary beating. Thus, our data identify a novel cell type-specific, liquid-like organelle, provide a cell biological mechanism unifying an emerging class of disease proteins, and suggest a key role for biological phase separation in the etiology of motile ciliopathies.\n\n## Results\n\n### DNAAFs and dynein subunits concentrate in cytosolic foci in multiciliated cells\n\nWe found that the DNAAF Heatr2 is present in cytosolic foci in human airway multiciliated cells (MCCs)\u00a0(Horani et al., 2012), and we recently showed that these foci also contain dynein subunits (Horani et al., 2018). We have found that another DNAAF, LRRC6 (Horani et al., 2013; Kott et al., 2012; Serluca et al., 2009) is likewise present in dynein-containing cytosolic foci (Figure 1\u2014figure supplement 1), but imaging of these structures in human MCCs has proven challenging. We therefore turned to the MCCs of Xenopus embryos, which are highly amenable to live imaging, are molecularly tractable, and reliably model the biology of mammalian MCCs (Walentek and Quigley, 2017). In Xenopus MCCs, GFP-Heatr2 was easily detectable in cytosolic foci in both transverse and en face projections of 3D confocal image stacks (Figure 1B,b\u2019; C; Video 1). These foci were also labeled by mCherry-Dnai2, an outer arm dynein that also strongly labeled axonemes (Figure 1B,b\u2019\u2019; C). To ask if such foci are a general feature of DNAAFs, we examined the canonical DNAAF Ktu, and found that it too co-localized with Dnai2 in cytosolic foci (Figure 1D,d\u2019). As in human MCCs, Lrrc6 displayed a punctate pattern in Xenopus MCCs (Figure 1E).\n\n![Video 1.](https://cdn.elifesciences.org/articles/38497/elife-38497-video1.mp4.jpg)\n\n**Video 1.:** This annotated movie shows a rotating nearest-point projection of a 3D confocal stack of a section of mucociliary epithelium labeled by expression of membrane-RFP (red) and GFP-Ktu (green).\n\nTo ask if these different proteins were present in a common compartment, we calculated Pearson Correlations for co-localization (Dunn et al., 2011), finding strong co-localization in en face projections through the MCC cytoplasm for Heatr2, Lrrc6, and Dnai2 as compared to Ktu (Figure 1H); the Costes algorithm (Costes et al., 2004) demonstrated that these co-localizations were statistically significant (Figure 1\u2014figure supplement 2). Because measures of co-localization can be biased by manual selection of regions of interest in the data, we also developed custom software for automated, object-based detection of cytosolic foci and quantification of co-localization in three dimensions (Figure 1\u2014figure supplement 3A; see Materials\u00a0and\u00a0methods). Using this method, we again observed strong co-localization between the DNAAFs and Dyneins (Figure 1\u2014figure supplement 3B). As a negative control for this approach, we computationally randomized the position of foci within these cells, generating ten independent randomized replicates per cell; we found essentially no co-localization after randomization (Figure 1\u2014figure supplement 3C).\n\nWe next performed a series of control experiments to ask if the cytosolic foci we observed were specific structures, because fluorescent protein (FP) fusions have been found to aggregate non-specifically in some cases (e.g. Landgraf et al., 2012). First, we found that DNAAFs did not co-localize with FP-fusions to several known foci-forming proteins, including the P-body marker Dcp1a or the amyloid forming protein Fus (Kedersha et al., 2005; Patel et al., 2015) (Figure 1\u2014figure supplement 4A,B,D). These proteins displayed significantly lower Pearson correlation with Ktu, as compared to DNAAFs or dyneins (Figure 1H) and also displayed non-significant Costes values for co-localization with Ktu (Figure 1\u2014figure supplement 2A). Second, other components of motile axonemes also require cytoplasmic assembly factors (Desai et al., 2018), but FP-fusions to several radial spoke and docking complex-related proteins did not localize in cytosolic foci (Figure 2A,B). Finally, a recent screen examining the localization of roughly 200 FP-fusions in Xenopus MCCs suggests non-specific aggregation of FPs is rare in these cells\u00a0(Tu et al., 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig2-v2.jpg)\n\n**Figure 2.:** All left panels show GFP fusions (cyan) to indicated proteins, note all co-localize in DynAPs with the mCherry-Ktu (magenta) shown in middle panels. All right panels are merged views. The docking complex protein Ttc25 (panel A) and the radial spoke protein Rsph1 (panel B) serve as negative controls and do not localize in DynAPs. All other do co-localize; see quantifications in Figure 1H and Figure 1\u2014figure supplements 2 and 3. Scale bars\u00a0=\u00a010 um.\n\nOur data therefore suggest that the DNAAF- and dynein-containing foci represent novel and specific structures, so we examined FP fusions to seven additional DNAAFs. Consistent with genetic studies demonstrating that all DNAAFs share a common function, we found that all tested DNAAFs co-localized significantly in cytosolic foci (Figure 2C\u2013F; Figure 1H). In all cases, these foci were irregularly shaped, measured roughly 1\u20133 microns across, were typically present in the middle third of the apicobasal axis of MCCs, and in en face optical sections tended to reside near the cell periphery (Figure 1B\u2013G, Figure 2C\u2013F). Additional subunits of both inner and outer arm dyneins were also present in these foci (Figure 2G,H; Figure 1H). Together, these data demonstrate that nine distinct DNAAFs co-localize with axonemal dynein subunits in a common compartment in the MCC cytoplasm (Table 1). Based on the nomenclature for the genes encoding both the dyneins and their assembly factors, we propose the term DynAP, for Dynein Axonemal Particles.\n\n**Table 1.**\n List of proteins investigated in this study, their functions, and their localization.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Protein</th>\n      <th>Localization</th>\n      <th>Function</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"9\">Ciliopathy Associated DNAAFs</td>\n      <td>Ktu (Dnaaf2)</td>\n      <td>DynAPs</td>\n      <td>DNAAF</td>\n    </tr>\n    <tr>\n      <td>Dnaaf3</td>\n      <td>DynAPs</td>\n      <td>DNAAF</td>\n    </tr>\n    <tr>\n      <td>Dyx1C1(Dnnaf4)</td>\n      <td>DynAPs</td>\n      <td>DNAAF</td>\n    </tr>\n    <tr>\n      <td>Heatr2 (Dnaaf5)</td>\n      <td>DynAPs</td>\n      <td>DNAAF</td>\n    </tr>\n    <tr>\n      <td>Lrrc6</td>\n      <td>DynAPs</td>\n      <td>DNAAF</td>\n    </tr>\n    <tr>\n      <td>Zmynd10</td>\n      <td>DynAPs</td>\n      <td>DNAAF</td>\n    </tr>\n    <tr>\n      <td>Spag1</td>\n      <td>DynAPs</td>\n      <td>DNAAF</td>\n    </tr>\n    <tr>\n      <td>Pih1d3</td>\n      <td>DynAPs</td>\n      <td>DNAAF</td>\n    </tr>\n    <tr>\n      <td>C21orf59</td>\n      <td>DynAPs</td>\n      <td>DNAAF</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Dynein Arm Subunits</td>\n      <td>Dnai1</td>\n      <td>DynAPs</td>\n      <td>Outer Dynein Arm</td>\n    </tr>\n    <tr>\n      <td>Dnai2</td>\n      <td>DynAPs</td>\n      <td>Outer Dynein Arm</td>\n    </tr>\n    <tr>\n      <td>DnaL1</td>\n      <td>DynAPs</td>\n      <td>Outer Dynein Arm</td>\n    </tr>\n    <tr>\n      <td>Dnal4</td>\n      <td>DynAPs</td>\n      <td>Outer Dynein Arm</td>\n    </tr>\n    <tr>\n      <td>Dnali1</td>\n      <td>DynAPs</td>\n      <td>Inner Dynein Arm</td>\n    </tr>\n    <tr>\n      <td>Wdr78</td>\n      <td>DynAPs</td>\n      <td>Inner Dynein Arm</td>\n    </tr>\n    <tr>\n      <td rowspan=\"7\">Hsp Family Chaperone-Related</td>\n      <td>Hsp90ab1</td>\n      <td>DynAPs</td>\n      <td>Hsp90 Chaperone</td>\n    </tr>\n    <tr>\n      <td>Hspa8</td>\n      <td>DynAPs</td>\n      <td>Hsp70 Chaperone</td>\n    </tr>\n    <tr>\n      <td>Ruvbl1 (Pontin)</td>\n      <td>DynAPs</td>\n      <td>Hsp90 Co-chaperone (R2TP)</td>\n    </tr>\n    <tr>\n      <td>Ruvbl2 (Reptin)</td>\n      <td>DynAPs</td>\n      <td>Hsp90 Co-chaperone (R2TP)</td>\n    </tr>\n    <tr>\n      <td>DnajC7 (Ttc2)</td>\n      <td>DynAPs</td>\n      <td>Hsp70 Co-chaperone</td>\n    </tr>\n    <tr>\n      <td>Stip1 (Hop)</td>\n      <td>DynAPs</td>\n      <td>Hsp70 Co-chaperone</td>\n    </tr>\n    <tr>\n      <td>Ttc9c</td>\n      <td>DynAPs</td>\n      <td>Hsp Co-chaperone</td>\n    </tr>\n    <tr>\n      <td rowspan=\"7\">Other MCC-Related</td>\n      <td>Centrin4</td>\n      <td>Baseal Bodies</td>\n      <td>Basal Bodies</td>\n    </tr>\n    <tr>\n      <td>Ccdc63</td>\n      <td>Other foci</td>\n      <td>Deuterosome marker</td>\n    </tr>\n    <tr>\n      <td>Mns1</td>\n      <td>Baseal Bodies</td>\n      <td>Docking complex-related</td>\n    </tr>\n    <tr>\n      <td>Armc4</td>\n      <td>Axeoneme</td>\n      <td>Docking complex-related</td>\n    </tr>\n    <tr>\n      <td>Ttc25</td>\n      <td>Cytosol</td>\n      <td>Docking complex-related</td>\n    </tr>\n    <tr>\n      <td>Rsph1</td>\n      <td>Cytosol</td>\n      <td>Radial Spoke</td>\n    </tr>\n    <tr>\n      <td>Nme5</td>\n      <td>Cytosol</td>\n      <td>Radial Spoke</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Known Foci-Forming</td>\n      <td>Dcp1a</td>\n      <td>Other foci</td>\n      <td>P-body marker</td>\n    </tr>\n    <tr>\n      <td>Lsm4</td>\n      <td>Other foci</td>\n      <td>P-body marker</td>\n    </tr>\n    <tr>\n      <td>Fus</td>\n      <td>Nuclear foci</td>\n      <td>Known foci forming</td>\n    </tr>\n    <tr>\n      <td>Tia1(Tiar)</td>\n      <td>Other foci</td>\n      <td>Stress granule marker</td>\n    </tr>\n    <tr>\n      <td>G3bp1</td>\n      <td>DynAPs (+other foci)</td>\n      <td>Stress granule marker</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Other Organelles</td>\n      <td>GalT</td>\n      <td>Golgi</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>EEA1</td>\n      <td>Other foci</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### DynAPs concentrate core Hsp70/90 chaperones and specific co-chaperones\n\nAs discussed above, DNAAFs act in concert with heat shock chaperones, and genetic mutants in the co-chaperones Ruvbl1 and Ruvbl2 result in defective dynein assembly and cilia beating. We were satisfied therefore to find that immunostaining for endogenous Ruvbl2 also strongly labeled DynAPs in Xenopus MCCs (Figure 1\u2014figure supplement 5; Video 2), consistent with results from zebrafish and mice (Li et al., 2017). This result also further demonstrates that these structures are not artifacts of FP fusions. We note that Ruvbl2 immunostaining also reported much smaller foci that were present in both MCCs and neighboring cells (Figure 1\u2014figure supplement 5), consistent with previous reports that this broadly acting co-chaperone can form cellular foci (Rizzolo et al., 2017). However, these much smaller foci were readily distinguishable from DynAPs by their size.\n\n![Video 2.](https://cdn.elifesciences.org/articles/38497/elife-38497-video2.mp4.jpg)\n\n**Video 2.:** This annotated movie shows a rotating maximum intensity projection of a 3D confocal stack of a section of mucociliary epithelium labeled by immunostaining for acetylated tubulin to label cilia (red) and Ruvbl2 (green). Note that the contrast levels in this projection obscure the smaller Ruvbl2 foci present in both MCCs and gobelt cells (see Figure 1\u2014figure supplement 5).\n\nIn addition, we also observed that DynAPs were strongly labeled by FP fusions to other known Hsp co-chaperones, including Stip1 and Dnajc7 (e.g. (Moffatt et al., 2008; Odunuga et al., 2004)). Finally, we also identified Ttc9c as a DynAP component, which is of interest because the function of this protein is essentially unknown, but it binds Hsp90 and is implicated in cilia beating (Gano and Simon, 2010; Xu et al., 2015). These data provide a cell biological context for understanding the interplay of axonemal dyneins, ciliopathy-associated DNAAFs, and the ubiquitous machinery of protein folding and homeostasis.\n\n### DynAPs are MCC-specific organelles that assemble under the control of the motile ciliogenic transcriptional circuitry\n\nWe next sought to understand the developmental biology of DynAP formation. Xenopus MCCs develop and function in concert with other cell types that lack motile cilia, including mucus-secreting goblet cells, ion pumping cells, and seratonin secreting cells (Walentek and Quigley, 2017). We reasoned that if DynAPs were dedicated organelles related to axonemal dyneins, they should be cell type specific. To test this idea directly, we ectopically expressed FP-fusions to DNAAFs throughout the mucociliary epithelium (i.e. in MCC as well as other cell types). Strikingly, FP fusions to DNAAFs reported foci only in MCCs and not in adjacent cells lacking motile cilia (Figure 3A,C,E; Figure 1\u2014figure supplement 4D). This MCC-specificity was not a general property of FP fusions, as the P-body marker Dcp1a assembled into foci in both MCCs and goblet cells (Figure 1\u2014figure supplement 4D). Thus, both immunostaining for Ruvbl2 (above) and expression of FP fusions to DNAAFs demonstrate that DynAPs assemble specifically in MCCs and not in neighboring non-ciliated cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Membrane labeling with CAAX-RFP at the apical surface reveals a single MCC (cilia, dashed circle) surrounded by non-ciliated goblet cells. (a\u2019) Projection of the cytoplasm of the same cells in A. GFP-Ktu is expressed throughout, but forms foci only in the MCC. (B) Membrane labeling at the apical surface reveals that expression of Mcidas converts all cells to MCCs. (b\u2019) Projection of the cytoplasm of the same cells in B; GFP-Ktu forms foci in all cells upon expression of Mcidas.( C\u2013D) Apical surface views of a control mucociliary epithelium (C) and one ectopic expressing Foxj1 (D). (c\u2019\u2013d\u2019) Projection of the cytoplasm of the same cells in C and D. GFP-Dnai1 labels both of axonemes at the surface in C, D and DynaAPs in cytoplasm in c\u2019d\u2019. CAAX-BFP labels membranes; Dashed lines mark MCCs. Expression of Foxj1 induces solitary ectopic motile cilia (D) and ectopic DynAPs (d\u2019).(E) Graph displaying number of cytoplasmic GFP-Ktu foci in wild-type MCCs and goblet cells as well as ciliogenesis-induced goblet cells. p\u00a0<\u00a02.2\u00d710\u221216 for Foxj1 and p\u00a0=\u00a01.68\u00d710\u22127 for Mcidas experiments by two-sample t-test. n\u00a0=\u00a029 (wild-type MCC), n\u00a0=\u00a0130 (wild-type goblet cell), n\u00a0=\u00a0122 (Foxj1-OE goblet cells), and n\u00a0=\u00a024 (Mcidas-HGR Goblet cells) across three embryos. Scale bars 10 \u00b5m.\n\nFor a direct test of the cell type-specificity of DynAPs, we turned our attention to the evolutionarily conserved transcriptional circuitry that directs MCC differentiation in vertebrates ranging from Xenopus and zebrafish to mice and humans (Brody et al., 2000; Stubbs et al., 2008; Stubbs et al., 2012). At the top of this hierarchy is the master regulator Mcidas, which is necessary and sufficient for the specification of MCCs (Stubbs et al., 2012). As previously reported, ectopic expression of Mcidas significantly increased the percentage of MCCs in the mucociliary epithelium, and importantly, all of these MCCs contained obvious DynAPs (Figure 3B,b\u2019, E). We then tested the Foxj1 transcription factor, which is essential for motile ciliogenesis and acts downstream of Mcidas (Brody et al., 2000; Stubbs et al., 2008). Expression of Foxj1 can induce the formation of solitary motile cilia (Stubbs et al., 2008), and we found that these ectopic motile cilia were associated with assembly of ectopic DynAPs (Figure 3C\u2013E). Thus, DynAPs are specific features of MCCs and their assembly is controlled by the evolutionarily conserved motile ciliogenic transcriptional program.\n\n### DynAPs display hallmarks of biological phase separation\n\nWe next explored the cell biological basis of DynAP assembly. DynAPs were not labeled by a general membrane marker (CAAX-RFP)\u00a0(Video 1) or by markers of known membrane-bound organelles such as Golgi or endosomes (Figure 1\u2014figure supplement 4B,C). We hypothesized, then, that DynAPs may represent biomolecular condensates formed by liquid-liquid phase separation (Banani et al., 2017; Shin and Brangwynne, 2017). This possibility was exciting, because while phase separation has emerged as a widespread mechanism for compartmentalizing ubiquitous cellular processes, such as RNA processing and stress responses (Banani et al., 2017; Shin and Brangwynne, 2017), examples of cytoplasmic phase separated organelles with cell-type specific functions in differentiated somatic cells remain comparatively rare.\n\nOne hallmark of phase separated organelles is rapid fission and fusion, such as that observed in C. elegans p-granules and mammalian stress granules (Brangwynne et al., 2009; Li et al., 2012). Time-lapse imaging of DynAPs revealed similar behaviors. DynAPs underwent fission and coalescence on the order of only a few minutes (Figure 4A; Video 3). A second hallmark of biological phase separation is rapid exchange of material both within organelles and between the organelle and the cytoplasm (Brangwynne et al., 2009; Li et al., 2012). Using \u2018half-bleach\u2019 FRAP experiments, in which only a portion of the organelle is bleached (Brangwynne et al., 2009; Patel et al., 2015; Schmidt and Rohatgi, 2016; Woodruff et al., 2017), we observed rapid intra-DynAP exchange of Ktu (Figure 4B,C). GFP-Ktu displayed similarly rapid FRAP kinetics after bleaching of entire DynAPs, suggesting rapid exchange of Ktu between DynAPs and the cytoplasm (Figure 4B,D). As a negative control we performed FRAP on the Golgi resident protein GalT, and it displayed no recovery over similar time frames (Figure 4E). Thus, both the fission/coalescence behaviors and FRAP kinetics of DynAPs are similar to those observed in organelles known to form via biological phase separation (Brangwynne et al., 2009; Li et al., 2012; Patel et al., 2015; Schmidt and Rohatgi, 2016; Woodruff et al., 2017).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Stills from time-lapse imaging of an individual DynAP labeled with GFP-Ktu undergoing fission (upper) and later coalescence (lower) (time in seconds). (B) Time-lapse images of GFP-Ktu recovery after photobleaching of partial (upper) or entire DynAPs (lower). Images are color-coded to highlight changes in pixel intensity (blue\u00a0=\u00a0low; red\u00a0=\u00a0high; green\u00a0=\u00a0intermediate. Dashed line marks the photobleaching area. (C) Kymograph of GFP-Ktu recovery after partial bleach, showing that recovery of the bleached area occurs from within the DynAP, rather than from the cytoplasm. Note, however, that FRAP of whole DynAPs indicates that rapid exchange also occurs between DynAPs and the cytoplasm (Panel B, lower; and see Table 2). (D) FRAP kinetics of GFP-Ktu after bleaching entire DynAPs. (E) FRAP kinetics of the trans-golgi protein GalT-GFP after bleaching golgi-derived vesicles.\n\n![Video 3.](https://cdn.elifesciences.org/articles/38497/elife-38497-video3.mp4.jpg)\n\n**Video 3.:** This non-annotated movie shows smoothened data from a time-lapse movie of a single Heatr2-labeled DynAP. Stills from this movie are presented in Figure 4A.\n\n### DynAPs stably concentrate dynein subunits, while allowing DNAAFs and chaperones to flux through rapidly\n\nSince dyneins are the clients for DNAAFs, we next examined dynein kinetics within DynAPs using FRAP. In stark contrast to Ktu, dynein subunits were stably retained inside DynAPs. We observed very limited mobility within DynAPs in \u2018half-bleach\u2019 FRAP experiments and between DynAPs and the cytoplasm when entire organelles were bleached (Figure 5A,B,b\u2019). Similar results were obtained with both inner and outer arm dynein subunits (Figure 5D). These results prompted us to test other DynAP-localized proteins, and we found that all tested DNAAFs and chaperones displayed significantly higher mobile fractions when compared to all dynein subunits (Figure 5C,D; Table 2). Thus, DynAPs stably concentrate dynein subunits, while assembly factors and chaperones rapidly flux through.\n\n**Table 2.**\n FRAP data for all tested proteins.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Protein</th>\n      <th>Mobile fraction (%)</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total Bleach</td>\n      <td>Ktu</td>\n      <td>77.38\u00a0\u00b1\u00a06.63</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Dnaaf3</td>\n      <td>77.57\u00a0\u00b1\u00a06.64</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Dnaaf4</td>\n      <td>61.64\u00a0\u00b1\u00a010.01</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>heatr2</td>\n      <td>60.71\u00a0\u00b1\u00a06.02</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Lrrc6</td>\n      <td>58.53\u00a0\u00b1\u00a010.75</td>\n      <td>32</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Pih1d3</td>\n      <td>61.66\u00a0\u00b1\u00a07.14</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Ruvbl2</td>\n      <td>61.82\u00a0\u00b1\u00a07.14</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Hsp90ab1</td>\n      <td>54.60\u00a0\u00b1\u00a02.89</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Hspa8</td>\n      <td>74.00\u00a0\u00b1\u00a09.67</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Dnai1</td>\n      <td>25.15\u00a0\u00b1\u00a05.76</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Dnai2</td>\n      <td>16.88\u00a0\u00b1\u00a05.75</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Dnali1</td>\n      <td>22.02\u00a0\u00b1\u00a05.71</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>G3bp1 (DynAP)</td>\n      <td>84.11\u00a0\u00b1\u00a06.43</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>G3bp1(SG)</td>\n      <td>83.93\u00a0\u00b1\u00a011.08</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Partial Bleach</td>\n      <td>Ktu</td>\n      <td>66.66\u00a0\u00b1\u00a08.43</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Ruvbl2</td>\n      <td>55.20\u00a0\u00b1\u00a09.59</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Dnai2</td>\n      <td>20.10\u00a0\u00b1\u00a09.77</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>G3bp1 (DynAP)</td>\n      <td>74.83\u00a0\u00b1\u00a012.26</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>G3bp1(SG)</td>\n      <td>88.95\u00a0\u00b1\u00a010.06</td>\n      <td>6</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0Time-lapse images of GFP-Dnai2 recovery after partial photobleaching of a DynAP reveals little recovery after 30 s. Dashed line marks the photobleaching area. (B) Kymograph of the first 10 s following photobleaching displays little recovery of GFP-Dnai2. This is reflected by the FRAP kinetics of Dnai2 after complete bleaching of DynAPs (b\u2019). (C) In stark contrast, the kymograph of the first 10 s following partial photobleaching of the DNAAF GFP-Ruvbl2 displays rapid recovery at DynAPs. This is reflected by the FRAP kinetics of GFP-Ruvbl2 after complete bleaching of DynAPs (c\u2019). (D) Boxplots of the mobile fractions of various resident proteins at DynAPs. Ciliopathy-related DNAAFs (blue) and canonical chaperones (orange) display greater fluorescence recovery than dynein arm components (purple). p<0.0001 by one-way ANOVA and post-hoc Tukey-Kramer HSD test. n-values for each FRAP experiment can be found in Table 2.\n\n### DynAPs are distinct from stress granules but share a subset of molecular machinery\n\nThe mixture of more-fluid and more-stable components we observed in DynAPs is consistent with data from other phase-separated organelles, and recent studies suggest that these organelles frequently share protein machinery (Aizer et al., 2008; Feric et al., 2016; Jain et al., 2016; Kedersha et al., 2005). Because stress granules also contain Ruvbl2 and the Hsp70/90 chaperones (Jain et al., 2016), we next probed the relationship between DynAPs and stress granules. We found that the canonical stress granule marker G3bp1 (Kedersha et al., 2005; Wheeler et al., 2016) was strongly enriched in DynAPs, where it co-localized significantly with Ktu (ovals in Figure 6A,a2; Figure 6B). Curiously, however, G3bp1-FP also consistently labeled a second population of smaller foci in MCCs that did not contain DNAAFs (boxes in Figure 6A,a2). FRAP experiments revealed turnover kinetics in both populations of foci that were similar to those reported for G3bp1 in stress granules (Figure 6C) (Kedersha et al., 2005). Thus, G3bp1 is a component of at least two populations of cytoplasmic foci in MCCs, including DynAPs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0GFP-G3bp1 strongly co-localizes with DNAAFs in DynAPs (ovals), but also labels smaller foci that do not contain DNAAFs (boxes). (a1\u2013a3) Higher magnification views of the bottom left corner of the MCC shown in panel A. (B) Quantification of co-localization relative to mCherry-Ktu (Dnaaf4 and Fus data from Figure 1 are recapitulated here for comparison). (C) FRAP kinetics of GFP-G3bp1 in Ktu-positive DynAPs (black) in MCCs and in Ktu-negative foci in neighboring goblet cells (pink). p\u00a0<\u00a00.0001 by one-way ANOVA and post-hoc Tukey-Kramer HSD test. n-values for each FRAP experiment can be found in Table 2.\n\nTo ask if DynAP localization was a common feature of stress granule proteins, we examined Tia1, which also functions in stress granules (Kedersha et al., 1999). Tia1-FP localized to small foci in MCCs similar to the DNAAF-negative foci labeled by G3bp1 (Figure 1\u2014figure supplement 4E). However, unlike G3bp1, Tia1-FP was typically not present in DynAPs, though in some cases partial co-localization between Tia1 and DNAAFs was observed (e.g. Figure 1\u2014figure supplement 4E, arrow). However, the Pearson correlation between Tia1 and Ktu was significantly lower than that observed for G3bp1 or for other DynAP proteins (Figure 6B). Thus, despite sharing a similar semi-liquid-like behavior, DynAPs share only a subset of molecular components with stress granules, including G3bp1, Ruvbl1/2, and the Hsp70/90 chaperones (Jain et al., 2016).\n\n### Loss of the DNAAF Heatr2 disrupts assembly of DynAPs and alters their liquid-like behavior\n\nOur data suggest that DynAPs share properties with stress granules, but even in those well-studied organelles, it remains unclear just how their liquid like properties impact organelle function. We considered two models for DynAP function. First, given that genetic disruption of either DNAAFs or DynAP-localized chaperones results in specific failure of axonemal dynein assembly, we considered that the kinetics observed in DynAPs could reflect a modified \u2018reaction crucible\u2019 function (Shin and Brangwynne, 2017), whereby dynein clients are stably retained as they are acted upon by a procession of assembly factors fluxing through. Consistent with this idea, we found that DynAPs were present not only in mature MCCs but also in nascent MCCs undergoing ciliogenesis (Figure 7). On the other hand, the continued presence of DynAPs in mature MCCs may instead indicate a sequestration function, for example preventing deployment of mis-assembled dynein arms to axonemes during homeostasis.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig7-v2.jpg)\n\n**Figure 7.:** (A)\u00a0GFP-Dnai1 labels the short, still-growing axonemes during MCC ciliogenesis at stage 21. (B) GFP-Dnai1 also labels the longer, mature axonemes at stage 25. (a', b') GFP-Dnai1 labeled DynAPs are present in the cytoplasm at both stages. Scale bars\u00a0=\u00a010 um.\n\nWe reasoned that modeling motile ciliopathy might shed light on DynAP function: If DynAPs are sequestering organelles for mis-assembled dyneins, we expect their numbers to increase if DNAAF function is disrupted; if they are assembly organelles, we expect the converse. To test this idea, we focused on Heatr2, which acts early in the assembly process (Horani et al., 2018). Nonsense mutations in HEATR2 that lead to protein loss cause disease\u00a0(Diggle et al., 2014; Horani et al., 2012), and thus can be modeled simply by knockdown in Xenopus. To this end, we performed knockdown using morpholino antisense oligonucleotides (MOs). Like all knockdown reagents, MOs have their caveats, so it is important that the MO experiments described below meet the current standards for use (Blum et al., 2015; Eisen and Smith, 2008; Stainier et al., 2017), as MOs targeting two distinct regions of heatr2 eliminated the mRNA for the targeted gene and the two elicited identical phenotypes that closely recapitulate those observed in humans and flies with genetic mutations.\n\nWe designed separate MOs to disrupt splicing of the L and S alloalleles of heatr2 in the allotetraploid genome of X. laevis (Session et al., 2016)\u00a0(see Materials\u00a0and\u00a0methods), and RT-PCR demonstrated that co-injection of the two MOs was effective. Not only was splicing severely disrupted, but the overall level of heatr2 mRNA was also severely reduced, a common effect of nonsense mediated decay when splicing is disrupted by MOs (Figure 8\u2014figure supplement 1A). Time-lapse imaging of cilia beating revealed that the loss of heatr2 mRNA was accompanied by a severe defect in cilia beating (Figure 8A,B). Moreover, confocal imaging of the apical surface of MCCs revealed that while cilia length was not disrupted, Heatr2 knockdown eliminated the axonemal localization of the outer arm dynein Dnai2, (Figure 8C,D). A second MO targeting a different splice site in heatr2 elicited the same phenotypes in Xenopus, indicating that this phenotype was not the result of off-target effects (Figure 8\u2014figure supplement 1). Thus, MO knockdown targeting either of two distinct sites closely recapitulated the phenotype observed after loss of Heatr2 by genetic mutation in both human PCD patients and in Drosophila (Diggle et al., 2014; Horani et al., 2012).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig8-v2.jpg)\n\n**Figure 8.:** (A)\u00a0Color-based time coding of a high-speed time-lapse movie of an MCC; Successive frames of the movie are color coded as indicated in the time key and overlaid; distinct colors in the overlay reveals ciliary movement.\u00a0(B) Similar time-coding of an MCC after Heatr2-KD; the lack of color reflects the absence of ciliary movement between frames in the movie. (C) Membrane labeling with CAAX-RFP (pink) reveals normal cilia morphology in control MCCs (an projection of the confocal optical slices specifically through the apical surface is shown with; dashed lines indicate MCCs. (c\u2019) Labelling with GFP-Dnai2 reveals normal localization to the motile axonemes shown in panel C. (D) Membrane labeling reveals normal morphology of motile cilia in MCCs after Heatr2 KD. (d\u2019) GFP-Dnai2 is lost from the motile cilia shown in panel D. (E) Dnai2 is present in DynAPs visible in an en face projection through the cytoplasm of control MCCs (indicated by dashed lines). (F) Despite loss from motile axonemes, Dnai2 remains localized to DynAps in the cytoplasm of MCCs after Heatr2 knockdown. (G) Despite the presence of DynAPs in Heatr2-KD MCCs, the number of foci in these cells is significantly reduced relative to wild-type MCCs. p\u00a0=\u00a01.27\u00a0\u00d7\u00a010 \u221210 by two-sample t-test (n\u00a0=\u00a025 wild-type cells, 26 Heatr2-KD cells across two experiments, three embryos each). (H, h\u2019) FRAP reveals that Heatr2 knockdown significantly impairs the mobility of GFP-Ktu in DynAPs. Control vs. Heatr2-KD GFP-Ktu mobile fraction, p < 2.2 \u00d7 10 \u221216 by two-sample t-test (n\u00a0=\u00a025 vs. 31 observations, each in independent cells across three experiments, three embryos each). Scale bars 10 \u00b5m.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38497/elife-38497-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A-B) RT-PCR shows effective disruption of splicing by injection of a combination of Heatr2-MO targeting the long and short (L and S) alloalleles of Heatr2 in the allotetraploid genome of Xenopus laevis. MO set #1 (A), MO set #2 (B).\u00a0(C\u2013D) Apical surface views of MCCs labeled with CAAX-RFP. GFP-Dnai2 reveals normal localization to the motile axonemes in control (C), while GFP-Dnai2 is lost from the motile cilia after Heatr2 KD by MO set #2 (D). (E\u2013F) DynAPs labeled with GFP-Dnai2 are visible in an en face projection through the cytoplasm of control MCCs(E) and Heatr2-KD MCC(F). Scale bar\u00a0=\u00a010 \u00b5m. (G) The number of foci in Heatr2-KD MCC by MO set #2 is significantly reduced relative to wild-type MCCs. (p\u00a0<\u00a00.0001, n\u00a0=\u00a032 for each across two experiments, three embryos each).\n\nStrikingly, knockdown with either of the MO sets also elicited a significant reduction in the number of DynAPs (Figure 8E\u2013G; Figure 8\u2014figure supplement 1E\u2013G). This result suggested a role for Heatr2 in DynAP assembly, which was intriguing because Heatr2 is not implicated in chaperone function, but does act early in the dynein assembly process in human MCCs (Horani et al., 2018). Interestingly, changes in protein FRAP mobility accompany pathological alterations of phase separated organelles in neurodegenerative diseases (Patel et al., 2015; Schmidt and Rohatgi, 2016), so we used FRAP to ask if Heatr2 loss may impact the liquid-like behavior of DynAPs. Indeed, loss of Heatr2 significantly decreased the FRAP mobile fraction of Ktu in DynAPs (Figure 8H,h\u2019), suggesting that an alteration in liquid like behavior is linked to defects in DynAP assembly that in turn associate with defects in cilia beating in an animal model of motile ciliopathy.\n\n## Discussion\n\nHere, we have shown that an entire class of motile ciliopathy genes (the DNAAFs) encode proteins that co-localize together with axonemal dynein subunits and chaperones in discrete organelles we term DynAPs (Table 1). DynAPs are MCC-specific, form under the control of the conserved genetic circuitry that governs motile ciliogenesis, and display hallmarks of biological phase separation. Moreover, loss of dynein arms from axonemes after disruption of DNAAF function was associated with defective DynAP assembly and altered liquid like character in these organelles. These findings provide a unifying cell biological framework for a poorly understood class of human disease genes and add motile ciliopathy to the growing roster of human diseases associated with disrupted biological phase separation.\n\nAs is the case for most phase separated organelles, the significance of concentrating DNAAFs and dyneins into organelles remains a key unanswered question. Nonetheless, our data suggest a model in which client dyneins are concentrated into DynAPs so they can be acted upon by chaperones and co-chaperones that rapidly flux through. This model is parsimonious for integrating three essential functions required for dyneins assembly: First, dyneins are particularly large multi-protein complexes; their assembly takes time and requires multiple assembly factors. Sequestering the client in one compartment would allow the many requisite assembly factors to work together efficiently. Second, large protein complexes require strict quality control, and concentration in DynAPs provides an efficient means to couple assembly and quality control. Third, assembled dyneins might then be stored in DynAPs until they are needed for rapid deployment, which is important because motile cilia are known to very rapidly regenerate.\n\nFinally, our description of DynAPs suggests an attractive hypothesis regarding compartmentalization of the myriad biochemical processes that arise as cell types proliferate in developing embryos. Despite the emergence of phase separation as a mechanism for compartmentalizing cellular functions, cell type-specific, phase separated organelles remain relatively rare, for example Cajal bodies control genome organization in the nuclei of some cell types and the Balbiani body facilitates oocytes\u2019 long-term dormancy (Banani et al., 2017; Shin and Brangwynne, 2017). Our description of DynAP formation specifically in MCCs predicts that a wide range of cell-type specific-liquid like organelles may await discovery. Moreover, our data suggest a model whereby the molecular framework of known ubiquitous liquid-like organelles such as stress granules (e.g. G3bp1) is differentially modified by cell type-specific transcriptional circuits in order to assemble novel organelles to achieve specific functions.\n\n## Materials and methods\n\n### Xenopus embryo manipulations\n\nFemale adult Xenopus were induced to ovulate by injection of hCG (human chorionic gonadotropin). In vitro fertilization was carried out by homogenizing a small fraction of a testis in 1X Marc\u2019s Modified Ringer\u2019s (MMR). Embryos were dejellied in 1/3x MMR with 2.5%(w/v) cysteine at pH7.8, microinjected with mRNA or morpholinos (MOs) in 2% ficoll (w/v) in 1/3x MMR. Injected embryos were washed with 1/3x MMR after 2 hr and were reared in 1/3x MMR until the appropriate stages.\n\n### Plasmids, MOs and microinjections\n\nXenopus gene sequences were provided from Xenbase (www.xenbase.org) (James-Zorn et al., 2018; Karimi et al., 2018) and open reading frames (ORF) of genes were amplified from the Xenopus cDNA library by polymerase chain reaction (PCR). The PCR products were inserted into a pCS vector containing a fluorescence tag. The cloned genes are as follows: KTU, Heatr2, DNAI2, DNALI1, ZMYND10, LRRC6, PHI1D1, PHI1D3, Hsp90ab1, TTC9C, STIP1, DnajC7, G3BP1, Fus, and Tia1 into pCS10R-N-term GFP; DNAAF4 and Ruvbl2 into pCS10R-C-term GFP; Ruvbl2, KTU, Heatr2, DNAI2 into pCS10R-N-term mCherry; DCP1a into pCS-dest-mCherry. Ccdc39 and Lsm4 were obtained from the Human ORFeome and DNAAF3, Dyx1c1, and EEA1 were amplified from the Xenopus cDNA library were cloned into pCS2\u00a0+Gateway destination vectors containing an alpha tubulin promoter and an RFP tag or a GFP tag respectively, via the Gateway LR Clonase II Enzyme. Human GalT-GFP or RFP was derived from GalT-CFP (Nichols et al., 2001) by exchange of CFP. Capped mRNAs were synthesized using mMESSAGE mMACHINE SP6 transcription kit (ThermoFisher Scientific, AM1340). Morpholino antisense oligonucleotides (MOs) against Heatr2 were designed to block splicing of mRNAs transcribed from both L and S alloalleles (Gene Tools). Heatr2 MO sequences and injected doses are as follow:\n\nHeatr2 MO set #1: Heatr2.L (30 ng): 5\u2019-ACATTATCAATCACAACCTGGTATA-3\u2019\n\nHeatr2.S (30 ng): 5\u2019-CATTGAATTCCTCACCTGATTTCAG-3\u2019\n\nHeatr2 MO set #2: Heatr2.L (5 ng): 5\u2019- GGATCATGTAAGACACCTACCTGCA-3\u2019\n\nHeatr2.S (5 ng): 5\u2019-GGTAAAAAACACCTACCTGAACTGA-3\u2019\n\nFor imaging, mRNAs and DNAs for fluorescence proteins were injected into two ventral blastomeres of 4 cell stage embryos with 100 pg/injection and 40 pg/injection, respectively. mRNA of FoxJ1 (Pohl and Kn\u00f6chel, 2004) was injected with 200 pg/injection into two ventral blastomeres. mRNA of MCIDAS(Stubbs et al., 2012)-hGR from CS10R-MCIDAS-hGR (100 pg/injection) was injected into all four blastomeres at the 4 cell stage and animal cap explants were dissected at stage 8, treated with 10\u22127 M dexamethasone at stage 11, cultured until stage 26 and then imaged. For all experiments, embryos were selected at random from multiple clutches, and cells were selected randomly from individual embryos for imaging. No blinding to treatment was employed. Unless otherwise noted, all experiments were performed for at least three replicates, each consisting of a minimum three embryos per condition.\n\n### Imaging, FRAP and image analysis\n\nEmbryos expressing fluorescent proteins were fixed at stage 26 with 1x MEMFA (0.1 M MOPS, 2 mM EGTA, 1 mM MgSO4, 3.7% formaldehyde, pH7.4) for 40 min at stage 26, washed with PBS and then imaged. For live images, Xenopus embryos were mounted between cover glass and submerged in 1/3x MMR at stage 25\u201328. Imaging was performed on a Zeiss LSM700 laser scanning confocal microscope using a plan-apochromat 63 \u00d7 1.4 NA oil objective lens (Zeiss) or Nikon eclipse Ti confocal microscope with a 63\u00a0\u00d7\u00a01.4 oil immersion objective. For FRAP experiments, a region of interest (ROI) was defined for full bleach experiments as a 1.75 \u00b5m\u00d7\u00a01.75 \u00b5m box and for half-bleach experiments as a 0.8 \u00b5m\u00d7\u00a00.4 \u00b5m box. ROIs were bleached using 50% laser power of a 488 nm laser and a 0.64 \u00b5s pixel dwell time. Fluorescence recovery was recorded at\u00a0~0.20 s intervals for up to 300 frames. Bleach correction and normalization was carried out using a custom python script (modified from http://imagej.net/Analyze_FRAP_movies_with_a_Jython_script). Plots were generated using the ggplot2 package in R. 3D projections were generated in Fiji or IMARIS.\n\n### 3D\u00a0object-based co-localization algorithm\n\nThis algorithm and the steps within were primarily implemented using scikit-image (van der Walt et al., 2014). First, we segment the cell across all z-stack layers. An\u00a0Otsu\u00a0threshold (Otsu, 1979) is applied to each layer in the GFP channel. All pixels above threshold in each image are assigned a value of 1, and all background pixels are assigned a value of 0. These thresholded layers are then summed (projected) into a single image. Each disjoint island of positive pixel values represents a projected 3D object, and the sum of pixel values in each island is a proxy of its volume. We identify the object with the largest pixel sum (volume) as the cell, and hence select the thresholded areas in each z layer as being part of the cell if they projected to this largest object. After thus identifying the cell\u2019s cross-section in each layer, we apply morphological closing and opening to each image to remove small features caused by noise. We then apply a second round of Otsu thresholding within each thresholded area to identify intracellular vacuoles and organelles that have a significantly lower concentration of GFP. This final segment mask obtained from the GFP channel is used to identify the cell in both channels; areas outside of this mask in either channel are no longer relevant to downstream processing. Second, we isolate cellular areas with a significantly higher than average fluorescence by subtracting the fluorescent background present across the cell. This is performed for both channels separately. We apply a median filter to the cell, effectively subtracting the background fluorescence, and then apply morphological opening and closing to remove noise. One of the resulting areas frequently over-represented using this approach as an area of enriched fluorescence is the cell boundary: quite often, the cell\u2019s edges are significantly more fluorescent than the rest of the cell. We attenuate this effect by multiplying areas near the edge by a factor linearly interpolated between 0 and 1 with increasing distance from the edge: that\u00a0is at the edge values are multiplied by 0, at a distance of 20 pixels from the edge values are multiplied by 0.5, and at a distance of 40 pixels from the edge values are multiplied by 1. Below, we will call the resulting image the fluorescent foreground. Third, the Laplacian of Gaussian (LoG) is applied to the fluorescent foreground to identify puncta in both GFP and RFP channels. Fourth, we segment each punctum\u2019s body to accurately capture its intensity. LoG identifies the puncta, but it does not accurately capture their size or intensity; we need to identify which pixels are contiguous to each punctum and thus are a part of it. To do this, we apply the watershed algorithm to the fluorescent foreground, with each LoG identified punctum acting as a watershed marker. Fifth, we measure the intensity of each punctum by summing the fluorescent foreground pixels in each watershed basin. Sixth, we collate these 2D puncta from each z-layer into 3D puncta. We do this by simply querying whether puncta watersheds obtained in step four overlap in adjacent z-layers. Seventh, we measure the overlap between 3D puncta in RFP and GFP channels. For a punctum in the RFP channel, the overlap metric is its area overlapping any GFP punctum divided by its total area. Both overlapped and total areas are summed for each punctum across all z-layers in which it is present, thus acting as a volume-based overlap metric. For GFP channel puncta, this is computed analogously. Finally, we create a background overlap rate by randomly shuffling puncta positions in each cell and computing their overlaps using the same metric. Puncta in each channel are randomized independently. Randomization is performed for each punctum one at a time. For each punctum, a random set of coordinates is chosen in 3D space. Coordinates in the image plane are pixel coordinates; z-stack coordinates are the discrete layers. Once a random triplet of coordinates is chosen, the entire 3D punctum is placed at the new position by simply shifting all of its components in each layer by the same amount in the 2D planes, and then shifted a discrete number of layers up or down in the z direction as appropriate. We check whether any part of the punctum lies outside of the cell segmentation found above and whether it overlaps any previously placed punctum. If either is true, we generate new random coordinates again. We continue until all puncta have been placed or a computational limit is reached (in practice, all puncta were placed successfully). For each cell, we generated ten such synthetic replicates to obtain background overlap rates for each cell.\u00a0Code for this algorithm has been deposited in GitHub\u00a0(Boulgakov, 2018).\n\n### Immunostaining\n\nXenopus embryos were fixed at stage 25 by cold Dent\u2019s fixative (80% methanol\u00a0+20% DMSO) overnight and then were transferred in 100% methanol. Embryos were rehydrated consecutively with TBS (155 mM NaCl, 10 mM Tris-Cl, pH7.4) and then were blocked in 10% FBS, 5% DMSO in TBS. Monoclonal anti-acetylated alpha-tubulin antibody (Sigma-Aldrich, T6793, RRID:AB_477585, 1:500 dilution) and rabbit polyclonal anti-Ruvbl2 (Abcam, ab91462, RRID:AB_2050278, 1:1000 dilution) antibody were used as primary antibodies. Primary antibodies were detected by FITC-goat anti-rabbit antibody (Sigma-Aldrich, F9887, RRID:AB_259816, 1:400 dilution) and AlexaFluor 555-anti-mouse IgG antibody (Invitrogen, A21422, AB_141822, 1:400 dilution).\n\nHuman airway cells were fixed and immunostained as previously described using primary and secondary antibodies.(Pan et al., 2007; You et al., 2002) Primary antibodies and dilution used included rabbit monoclonal LRRC6 (Sigma-Aldrich, HPA028058, RRID:AB_1853337, 1:100 dilution), mouse monoclonal DNAI1(Neuromatb, cat# 73\u2013372, RRID:AB_2315828, 1:2000 dilution) and mouse mono clonal acetylated \u03b1\u2212tubulin (Sigma-Aldrich, RRID: T7451, clone 6\u201311-B1, RRID:AB_609894, 1:5000). Primary antibodies were detected using fluorescently labeled, species-specific donkey antibodies (Alexa Fluor, Life Technologies, Grand Island, NY, USA). Nuclei were stained using 4\u2019, 6-diamidino-2-phenylindole (Sigma-Aldich).\n\n### Airway epithelial cell culture\n\nHuman airway epithelial cells were isolated from de-identified surgical excess of trachea and bronchi removed from lungs donated for transplantation. The use of these cells was exempt from human studies by the Institutional Review Board at Washington University School of Medicine. Tracheobronchial epithelial cells were expanded in culture, seeded on supported membranes (Transwell, Corning Inc., Corning, NY), and differentiated using air-liquid interface conditions as previously described and maintained in culture for up to 10 weeks.\n\n### RT-PCR\n\nTo verify the efficiency of HEATR2 MOs, both L and S MOs were injected into all cells at the 4 cell stage and total RNA was isolated using the TRIZOL reagent (Invitrogen Cat#15596026) at stage 25. cDNA was synthesized using M-MLV Reverse Transcriptase (Invitrogen, Cat# 28025013) and random hexamers. Heatr2 cDNAs were amplified by Taq polymerase (NEB, M0273S) with these primers:\n\nHeatr2.L 25F GCGACTTCCGATGTGACTAA\n\nHeatr2.L 661R CTTCCCACTGCTGTACTGTATAA\n\nHeatr2.S 649F GGCAATGGAAAGTCCGTAGAT\n\nHeatr2.S 1058F CAACAACCCAGTCCGTTACA\n\nHeatr2.L 471F CTTCCCAGAGGTGAAGAAAGAG\n\nHeatr2.L 944R GAAGGACATGGAGCACTGAA\n",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "b0aaa24e-8e86-46fe-8e1f-38f0171b2d65",
+      "submission_id": "6a2d0e45-9b79-458e-b8b9-3b2f5ebe0f2b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anthony A Hyman, Max Planck Institute of Molecular Cell Biology and Genetics Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38497.033](https://doi.org/10.7554/eLife.38497.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A liquid-like organelle at the root of motile ciliopathy\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Mary E Porter (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe study by Huizar et al. is an elegant demonstration that many of the so-called dynein axonemal assembly factors (DNAAFs) co-localize with axonemal dynein subunits in cytoplasmic foci in multiciliated cells (MCCs) of the human airway (Figure 1\u2014figure supplement 1) and Xenopus embryos (Figure 1). This manuscript focuses in particular on studying this phenomenon in the Xenopus embryo, which is more experimentally tractable than human airway cells. Using robust statistical measurements for co-localization, they demonstrate that the DNAAFs co-localize with axonemal dynein subunits, whereas other cytoplasmic fusion proteins do not (Figure 1\u2014figure supplements 2, 3, 4). They name these cytoplasmic foci DynAPs or dynein axonemal particles. These authors have described the behavior of the DynAPs as liquid-like phase separated organelles. What controls the formation and dynamics of these organelles is still unknown, and their exact function, beyond concentrating cytoplasmic proteins in a discrete location, is also unknown. However, the demonstration that these foci exist is exciting and opens the door for future study of their formation, behavior, function, and regulation.\n\nWhile all the reviewers appreciated the technical quality of the paper, and the rigorous statistical analysis, they had some concerns. However, I feel confident that you can answer these concerns and look forward to seeing a revised manuscript.\n\nIn particular, please pay attention to point 9 below, concerning the off target effects of morpholinos, which are well documented as a problem that requires extensive controls. There is no western blot or immunostaining shown for HEATR2 in the MO-treated cells, this control needs to be included.\n\n1) Membrane-RFP stains the axonemal and plasma membrane in Xenopus ciliated cells. What are the red foci that are highlighted by the membrane-RFP staining in Video 1? What is membrane-RFP and why should it light up equivalently sized, presumably membrane bound, structures alongside the fluid phase organelles \u2013 what do these contain and look like for their content?\n\n2) Tia1 results seem a bit confusing though explained at some length, because we are told it is typically not present in DynAPs but we can see it present in them, in Figure 1\u2014figure supplement 4E, whilst Figure 1\u2014figure supplement 4E versus Figure 1H graph do not seem to correlate together. The immunofluorescence suggests some level of co-localization but we are not clear how much \u2013 it could be helpful to draw a line of cut off in Figure 1H, showing where this decision is made regards to whether a protein is considered to co localize or not with the KTU. What about subcellular fractionation or coIP data, to look in more quantified way at these other liquid phase compartment markers?\n\n3) The Results state '200 FP-fusions that report specific localization patterns in Xenopus MCCs but do not co-localize with DNAAFs'. This hasn't been done using a co-localization scheme on this scale in Tu et al. (2017), so this should be edited to make clearer this is based upon not having a foci-type localization pattern only, not on co-localization with DNAAF data, if that is the case.\n\nRelated to this: \"Consistent with this idea, we found that DynAPs were present not only in mature MCCs but also in nascent MCCs undergoing ciliogenesis (Figure 7), and we also observed DynAP in immature human airway MCCs prior to ciliogenesis (Figure 1\u2014figure supplement 1).\" It seems that the number of DynAPs in the mature MCC is reduced. Authors should provide quantification of the number DynAP in nascent and mature MCCs to show if there is a difference in numbers of DynAP between cells undergoing ciliogenesis and mature MCCs.\n\n4) Video 2 illustrates a distinct localization for endogenous Ruvbl2 and the tubulin-axonemes, but Ruvbl2 is a multifunctional co-chaperone complex protein presumably working on recruiting HSPs to multiple other events than cilia assembly. As the text mentions later, Ruvbl2 is a component of stress granules for example. How can we account for this very specific staining of the protein and not a more widespread localisation \u2013 does this differ according to ciliation status and different cell types?\n\n5) In Figure 3A, what is the 'membrane' label marker exactly? As no other cell lineage-specific markers are shown how do we know the other cells are all goblet cells \u2013 does the Xenopus epithelium contain only two cell types the MCC and goblet cells?\n\n6) Figure 3C shows the ectopic DynAPs quite well in panel c' but in panel C it is not very clear that motile cilia have been labelled here \u2013 please show in higher mag or else add in a specific tubulin staining or similar axonemal marker to make this clear the overlap between cilium and DynAP.\n\n7) Figure 3D is useful on the relationship between cilia versus DynAP number. Can an additional quantification be graphed, to show cilia versus DynAP number in each of these 3 cell types, WT and Mcidas/Foxj1 treated? Mcidas overexpression does not seem to correlate with significantly increased DynAP number, unlike the clearly increased cilia numbers, does it mean there is an upper threshold of some kind limiting their numbers.\n\n8) Figure 7 \u2013 an important question needs to be better measured in this superior model system, over 100 cells or similar \u2013 to quantify more precisely the number of DynAP vs. cilia length/number.\n\n9) Off target effects for morpholinos are well documented as a problem that requires extensive controls. There is no western blot or immunostaining shown for HEATR2 in the MO-treated cells, this control needs to be included.\n\n10) Figure 8A needs the accompanying video supplied. Figure 8G \u2013 how were DynAPs quantified in this experiment, how were they visualised? It is hard to reconcile how DNAI2 is clearly reduced in the immunofluorescence images of the HEATR2 KD cells, but the western blot does not show reduced levels of protein. How is this explained? Is it to be believed that the levels of DNAI2 in Figure 8d' are the same as those in Figure 8c'?\n\n11) What exactly is reduced mobility of KTU testing, in Figure 8H \u2013 how was this tested, what is the experiment? Just make it clearer here.\n\n12) Subsection \u201cDynAPs are distinct from stress granules but share a subset of molecular machinery\u201d, first paragraph: The authors show that G3bp1 co-localizes with Ktu. Did the authors also observe co-localization of G3bp1 with dynein arm components?\n",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "10c4ea6c-44c0-4b69-adfd-f7660c9a7632",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C1",
+      "claim": "Motile ciliopathies are characterized by specific defects in cilia beating that result in chronic airway disease, subfertility, ectopic pregnancy, and hydrocephalus.",
+      "claim_type": "EXPLICIT",
+      "source": "Motile ciliopathies are characterized by specific defects in cilia beating that result in chronic airway disease, subfertility, ectopic pregnancy, and hydrocephalus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the clinical manifestations of motile ciliopathies, drawing from established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "9e104086-b5ce-461b-becb-2817e3a0c05b",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C2",
+      "claim": "Many motile ciliopathy patients harbor mutations in the dynein motors that drive cilia beating.",
+      "claim_type": "EXPLICIT",
+      "source": "While many patients harbor mutations in the dynein motors that drive cilia beating, the disease also results from mutations in so-called dynein axonemal assembly factors (DNAAFs) that act in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge about the genetic basis of motile ciliopathies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "b3af1f74-f84a-4c3b-9232-40de574be294",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C3",
+      "claim": "Motile ciliopathy results from mutations in dynein axonemal assembly factors (DNAAFs) that act in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "While many patients harbor mutations in the dynein motors that drive cilia beating, the disease also results from mutations in so-called dynein axonemal assembly factors (DNAAFs) that act in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established knowledge about the genetic basis of motile ciliopathies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "035e83b5-ec6e-4a69-a137-b4029ccea766",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C4",
+      "claim": "DNAAFs concentrate together with axonemal dyneins and chaperones into organelles that form specifically in multiciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that DNAAFs concentrate together with axonemal dyneins and chaperones into organelles that form specifically in multiciliated cells, which we term DynAPs, for dynein axonemal particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "adbc5c83-9b1e-4bf8-9431-5ef50b54fb90",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C5",
+      "claim": "DynAPs display hallmarks of biomolecular condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "These organelles display hallmarks of biomolecular condensates, and remarkably, DynAPs are enriched for the stress granule protein G3bp1, but not for other stress granule proteins or P-body proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FRAP experiments and time-lapse imaging shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "1352dce0-1d47-45dc-abd7-ee83f8443691",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C6",
+      "claim": "DynAPs are enriched for the stress granule protein G3bp1.",
+      "claim_type": "EXPLICIT",
+      "source": "These organelles display hallmarks of biomolecular condensates, and remarkably, DynAPs are enriched for the stress granule protein G3bp1, but not for other stress granule proteins or P-body proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by colocalization data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "5428e673-abb7-4122-97bf-f49a37b9f4f3",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C7",
+      "claim": "DynAPs are not enriched for other stress granule proteins or P-body proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These organelles display hallmarks of biomolecular condensates, and remarkably, DynAPs are enriched for the stress granule protein G3bp1, but not for other stress granule proteins or P-body proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by colocalization data shown in Figures 1 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "aa3135ad-e4fb-478d-96f0-c48ea3d2d195",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C8",
+      "claim": "Both the formation and the liquid-like behaviors of DynAPs are disrupted in a model of motile ciliopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that both the formation and the liquid-like behaviors of DynAPs are disrupted in a model of motile ciliopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Heatr2 knockdown experiments shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "c30f53cf-ed6a-448d-8f3c-748984195fec",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C9",
+      "claim": "Motile cilia are microtubule-based cellular projections that beat in an oriented manner to generate fluid flows that are critical for development and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Motile cilia are microtubule-based cellular projections that beat in an oriented manner to generate fluid flows that are critical for development and homeostasis (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about motile cilia structure and function, referenced with a citation (Horani et al., 2016; Mitchison and Valente, 2017).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "40bc44ad-f080-4c94-b03d-2d71aea18b3b",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C10",
+      "claim": "Genetic defects that disrupt motile cilia function are associated with primary ciliary dyskinesia (PCD; MIM 244400).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, genetic defects that disrupt motile cilia function are associated with the motile ciliopathy syndrome known as primary ciliary dyskinesia (PCD; MIM 244400) (Horani et al., 2016; Mitchison and Valente, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "ba21f357-1763-4716-ae8f-1e382f14c2e6",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C11",
+      "claim": "PCD results in repeated sinopulmonary disease, bronchiectasis, cardiac defects such as heterotaxy, situs anomalies, and infertility.",
+      "claim_type": "EXPLICIT",
+      "source": "PCD is a rare inherited disease that results in repeated sinopulmonary disease, bronchiectasis, cardiac defects such as heterotaxy, situs anomalies, and infertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical manifestations of PCD based on established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "089d342a-3579-4c31-bbef-fab8573dac1c",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C12",
+      "claim": "Lung disease is the predominant feature of PCD with significant morbidity and can result in end-stage lung disease requiring lung transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lung disease is the predominant feature of this syndrome, with significant morbidity, and can result in end-stage lung disease requiring lung transplantation (Horani et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "2c60a5ab-2b17-41e5-8436-8c1d0b02e9c2",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C13",
+      "claim": "PCD is caused by mutations in at least 40 different genes.",
+      "claim_type": "EXPLICIT",
+      "source": "PCD is caused by mutations in at least 40 different genes, and the function of many remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the genetic heterogeneity of PCD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "b7d53691-e497-436a-99a1-9f98ad0df4aa",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C14",
+      "claim": "There is no cure for PCD.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no cure for PCD, so understanding the genetic control of motile cilia assembly and function is an important challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge about the current state of PCD treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "c83d6e95-70ed-4d3a-b1cd-c26639aeb560",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C15",
+      "claim": "GFP-Heatr2 is localized in MCCs to cytoplasmic foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-sectional projection of mucociliary epithelium; GFP-Heatr2 is localized in MCCs to cytoplasmic foci (b'), whereas mCherry-Dnai2 localizes to both axonemes and cytoplasmic foci (b'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "6f64c692-47af-4f01-b3d4-b5a063f4892c",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C16",
+      "claim": "mCherry-Dnai2 localizes to both axonemes and cytoplasmic foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-sectional projection of mucociliary epithelium; GFP-Heatr2 is localized in MCCs to cytoplasmic foci (b'), whereas mCherry-Dnai2 localizes to both axonemes and cytoplasmic foci (b'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "ec4ded96-6b81-4f18-a661-23ddd1285e7b",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C17",
+      "claim": "Endogenous LRRC6 is present in cytoplasmic foci in human MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining of primary human MCC reveals endogenous LRRC6 (red) in cytoplasmic foci, cilia are marked by acetylated tubulin (green).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunostaining data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "bf5944d8-5bf3-4ac9-96da-b211cbac37a2",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C18",
+      "claim": "LRRC6 labeled foci are enriched in Dnai1 in human MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRC6 labeled foci (red) are enriched in Dnai1 (green in b') in human MCCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunostaining data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "e47f5f32-fe89-4c6d-a544-d3569ede7dbd",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C19",
+      "claim": "PCD can arise from mutation of any one of the genes encoding subunits of the multi-protein dynein motors that drive ciliary beating.",
+      "claim_type": "EXPLICIT",
+      "source": "PCD can arise from mutation of any one of the genes encoding subunits of the multi-protein dynein motors that drive ciliary beating (Figure 1A, pink) (Horani et al., 2016; Mitchison and Valente, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "c6efaeb7-4623-4852-a80c-292c276a7408",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C20",
+      "claim": "Axonemal dynein motors are pre-assembled in the cytoplasm before deployment to cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, axonemal dynein motors are pre-assembled in the cytoplasm before deployment to cilia (Fowkes and Mitchell, 1998), and it is now clear that PCD also arises from mutations in genes encoding any of an array of cytoplasmic proteins collectively known as dynein axonemal assembly factors (DNAAFs) (Figure 1A, blue) (Desai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "63c04ade-373d-4e74-a793-4cfd03e69f0a",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C21",
+      "claim": "PCD arises from mutations in genes encoding dynein axonemal assembly factors (DNAAFs).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, axonemal dynein motors are pre-assembled in the cytoplasm before deployment to cilia (Fowkes and Mitchell, 1998), and it is now clear that PCD also arises from mutations in genes encoding any of an array of cytoplasmic proteins collectively known as dynein axonemal assembly factors (DNAAFs) (Figure 1A, blue) (Desai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "30045498-e48f-4ffd-ad23-ee7d7a53120c",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C22",
+      "claim": "KTU (aka DNAAF2) encodes a novel protein present in the cytoplasm yet causes motile ciliopathy when mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial description of DNAAFs came with the identification of KTU (aka DNAAF2), which encodes a novel protein present in the cytoplasm yet causes motile ciliopathy when mutated (Omran et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "017dd408-dd94-4c02-98c0-dfd0b2af502e",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C23",
+      "claim": "Mutation of ktu in fish and the green algae Chlamydomonas elicits defects specifically in cilia beating.",
+      "claim_type": "EXPLICIT",
+      "source": "As in human patients, mutation of ktu in fish and the green algae Chlamydomonas also elicits defects specifically in cilia beating (Omran et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "723ecb14-74b8-4436-89ca-32bd95e39a41",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C24",
+      "claim": "Mutation of DNAAF genes results in loss of dyneins specifically from the axonemes and defects in cilia beating.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies of motile ciliopathy patients defined several additional cytoplasmic DNAAFs, and in all cases, these genes encode cytoplasmic proteins but their mutation results in loss of dyneins specifically from the axonemes, and as a result, defects in cilia beating (Diggle et al., 2014; Horani et al., 2012; Horani et al., 2013; Kott et al., 2012; Mitchison et al., 2012; Moore et al., 2013; Olcese et al., 2017; Paff et al., 2017; UK10K et al., 2013; Zariwala et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "b0234275-0f64-4bad-8d1e-93255d5babed",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C25",
+      "claim": "Proteomic experiments indicated a link between DNAAFs and heat shock family chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomic experiments initially indicated a link between DNAAFs and heat shock family chaperones (Omran et al., 2008) and many of the DNAAFs contain PIH, TAH1, or CS domains that are common in heat shock co-chaperones (Olcese et al., 2017; Omran et al., 2008; Paff et al., 2017; UK10K et al., 2013; Yamamoto et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "0191d48d-20e4-4ff7-9cd8-27dd1a523d6b",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C26",
+      "claim": "Many DNAAFs contain PIH, TAH1, or CS domains that are common in heat shock co-chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomic experiments initially indicated a link between DNAAFs and heat shock family chaperones (Omran et al., 2008) and many of the DNAAFs contain PIH, TAH1, or CS domains that are common in heat shock co-chaperones (Olcese et al., 2017; Omran et al., 2008; Paff et al., 2017; UK10K et al., 2013; Yamamoto et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "e2850545-de16-4b53-8457-ea76191fc391",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C27",
+      "claim": "Genetic ablation of the Hsp90 co-chaperone Ruvbl1/2 results in defective dynein arm assembly in zebrafish and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, genetic ablation of the Hsp90 co-chaperone Ruvbl1/2 results in defective dynein arm assembly in zebrafish and mice (Li et al., 2017; Zhao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "edc98b46-13cd-4959-9e7d-268ba66b609d",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C28",
+      "claim": "DNAAFs function as part of a 'chaperone relay,' with distinct DNAAFs mediating specific steps in the dynein assembly process.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, work in diverse model animals has led to a model in which DNAAFs function as part of a 'chaperone relay,' with distinct DNAAFs mediating specific steps in the dynein assembly process (Cho et al., 2018; Mali et al., 2018; Olcese et al., 2017; Yamaguchi et al., 2018; Zur Lage et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "df5f13d9-ce6b-4b96-ab4d-8ef6536ef070",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C29",
+      "claim": "DNAAFs and chaperones act together in cytosolic 'foci'.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these studies suggest that the DNAAFs and chaperones act together in cytosolic 'foci' (e.g. Diggle et al., 2014; Horani et al., 2012; Li et al., 2017), and it has been suggested that different steps in the chaperone relay are somehow compartmentalized (Mali et al., 2018), but the nature and mechanisms remain to be defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "9cf406cb-00da-4d35-b9a2-cf26d6154735",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C30",
+      "claim": "Different steps in the chaperone relay are compartmentalized.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these studies suggest that the DNAAFs and chaperones act together in cytosolic 'foci' (e.g. Diggle et al., 2014; Horani et al., 2012; Li et al., 2017), and it has been suggested that different steps in the chaperone relay are somehow compartmentalized (Mali et al., 2018), but the nature and mechanisms remain to be defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "db20d41f-fefd-4f46-aa43-82ff6641d50d",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C31",
+      "claim": "Heatr2 is present in cytosolic foci in human airway multiciliated cells (MCCs).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the DNAAF Heatr2 is present in cytosolic foci in human airway multiciliated cells (MCCs) (Horani et al., 2012), and we recently showed that these foci also contain dynein subunits (Horani et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "5d8d4bd1-3cdb-49a9-b40d-e835fb7d0d76",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C32",
+      "claim": "Heatr2-containing foci also contain dynein subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the DNAAF Heatr2 is present in cytosolic foci in human airway multiciliated cells (MCCs) (Horani et al., 2012), and we recently showed that these foci also contain dynein subunits (Horani et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "78d27332-1c44-4eda-908f-3bdb4816f75c",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C33",
+      "claim": "LRRC6 is present in dynein-containing cytosolic foci.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that another DNAAF, LRRC6 (Horani et al., 2013; Kott et al., 2012; Serluca et al., 2009) is likewise present in dynein-containing cytosolic foci (Figure 1\u2014figure supplement 1), but imaging of these structures in human MCCs has proven challenging.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "f2d754af-2d74-46f5-ae97-c011f7fd6f67",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C34",
+      "claim": "Xenopus MCCs are highly amenable to live imaging, are molecularly tractable, and reliably model the biology of mammalian MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore turned to the MCCs of Xenopus embryos, which are highly amenable to live imaging, are molecularly tractable, and reliably model the biology of mammalian MCCs (Walentek and Quigley, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "b3caf2b0-9984-43f5-9e54-65d2acd078f0",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C35",
+      "claim": "In Xenopus MCCs, GFP-Heatr2 was easily detectable in cytosolic foci in both transverse and en face projections of 3D confocal image stacks.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus MCCs, GFP-Heatr2 was easily detectable in cytosolic foci in both transverse and en face projections of 3D confocal image stacks (Figure 1B,b'; C; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1B, C and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "d0538c43-d706-49d0-91d9-0394f4a7a363",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C36",
+      "claim": "Ktu co-localized with Dnai2 in cytosolic foci.",
+      "claim_type": "EXPLICIT",
+      "source": "To ask if such foci are a general feature of DNAAFs, we examined the canonical DNAAF Ktu, and found that it too co-localized with Dnai2 in cytosolic foci (Figure 1D,d').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "e85e435d-c5e7-45df-a4ee-084988108f12",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C37",
+      "claim": "Lrrc6 displayed a punctate pattern in Xenopus MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As in human MCCs, Lrrc6 displayed a punctate pattern in Xenopus MCCs (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "5a454491-e58e-44d6-b3a7-46bcb5660a9c",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C38",
+      "claim": "Heatr2, Lrrc6, and Dnai2 show strong co-localization with Ktu in en face projections through the MCC cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "To ask if these different proteins were present in a common compartment, we calculated Pearson Correlations for co-localization (Dunn et al., 2011), finding strong co-localization in en face projections through the MCC cytoplasm for Heatr2, Lrrc6, and Dnai2 as compared to Ktu (Figure 1H); the Costes algorithm (Costes et al., 2004) demonstrated that these co-localizations were statistically significant (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative colocalization analysis shown in Figure 1H and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "c3778e15-cae2-4d7c-bfd7-5677bedc394e",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C39",
+      "claim": "The co-localizations between DNAAFs and dyneins were statistically significant by the Costes algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "To ask if these different proteins were present in a common compartment, we calculated Pearson Correlations for co-localization (Dunn et al., 2011), finding strong co-localization in en face projections through the MCC cytoplasm for Heatr2, Lrrc6, and Dnai2 as compared to Ktu (Figure 1H); the Costes algorithm (Costes et al., 2004) demonstrated that these co-localizations were statistically significant (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative colocalization analysis shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "56a71edf-a8ab-42e9-8716-2dc1b35a0eb9",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C40",
+      "claim": "Strong co-localization was observed between the DNAAFs and Dyneins using automated, object-based detection of cytosolic foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Because measures of co-localization can be biased by manual selection of regions of interest in the data, we also developed custom software for automated, object-based detection of cytosolic foci and quantification of co-localization in three dimensions (Figure 1\u2014figure supplement 3A; see Materials and methods). Using this method, we again observed strong co-localization between the DNAAFs and Dyneins (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by automated colocalization analysis shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "703ef37f-80ab-4523-a591-46d9e68da207",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C41",
+      "claim": "Essentially no co-localization was found after computational randomization of foci positions.",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control for this approach, we computationally randomized the position of foci within these cells, generating ten independent randomized replicates per cell; we found essentially no co-localization after randomization (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by randomization control analysis shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "63ca748f-8000-48bc-9ea6-105867f23734",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C42",
+      "claim": "DNAAFs did not co-localize with FP-fusions to the P-body marker Dcp1a or the amyloid forming protein Fus.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that DNAAFs did not co-localize with FP-fusions to several known foci-forming proteins, including the P-body marker Dcp1a or the amyloid forming protein Fus (Kedersha et al., 2005; Patel et al., 2015) (Figure 1\u2014figure supplement 4A,B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by colocalization data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "37ce3823-138a-4ada-920a-5b23b39b54be",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C43",
+      "claim": "Dcp1a and Fus displayed significantly lower Pearson correlation with Ktu compared to DNAAFs or dyneins.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins displayed significantly lower Pearson correlation with Ktu, as compared to DNAAFs or dyneins (Figure 1H) and also displayed non-significant Costes values for co-localization with Ktu (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative colocalization analysis shown in Figure 1H and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "dcd1e37d-7969-4b65-86df-305b6f692e1d",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C44",
+      "claim": "FP-fusions to several radial spoke and docking complex-related proteins did not localize in cytosolic foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, other components of motile axonemes also require cytoplasmic assembly factors (Desai et al., 2018), but FP-fusions to several radial spoke and docking complex-related proteins did not localize in cytosolic foci (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "602d8ce8-85cf-4c5c-95b7-23f4be65b356",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C45",
+      "claim": "A recent screen examining the localization of roughly 200 FP-fusions in Xenopus MCCs suggests non-specific aggregation of FPs is rare in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a recent screen examining the localization of roughly 200 FP-fusions in Xenopus MCCs suggests non-specific aggregation of FPs is rare in these cells (Tu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "172c567f-fd99-44dc-b6ef-fa6625e672c8",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C46",
+      "claim": "All tested DNAAFs co-localized significantly in cytosolic foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data therefore suggest that the DNAAF- and dynein-containing foci represent novel and specific structures, so we examined FP fusions to seven additional DNAAFs. Consistent with genetic studies demonstrating that all DNAAFs share a common function, we found that all tested DNAAFs co-localized significantly in cytosolic foci (Figure 2C\u2013F; Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by colocalization data shown in Figure 2C-F and Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "8d4412bb-4ede-4f41-a7b8-30d09a63af3b",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C47",
+      "claim": "DynAP foci were irregularly shaped, measured roughly 1\u20133 microns across, were typically present in the middle third of the apicobasal axis of MCCs, and in en face optical sections tended to reside near the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, these foci were irregularly shaped, measured roughly 1\u20133 microns across, were typically present in the middle third of the apicobasal axis of MCCs, and in en face optical sections tended to reside near the cell periphery (Figure 1B\u2013G, Figure 2C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "c4b5607f-1a1b-4796-9afb-c7a3abbfa672",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C48",
+      "claim": "Additional subunits of both inner and outer arm dyneins were present in DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional subunits of both inner and outer arm dyneins were also present in these foci (Figure 2G,H; Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 2G,H and Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "74d4fb2a-0673-410b-9fae-eff6ad80f35e",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C49",
+      "claim": "Nine distinct DNAAFs co-localize with axonemal dynein subunits in a common compartment in the MCC cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data demonstrate that nine distinct DNAAFs co-localize with axonemal dynein subunits in a common compartment in the MCC cytoplasm (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comprehensive colocalization data presented in Figures 1 and 2 and summarized in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "6d43e340-ad13-46a9-bacc-285114d49ea6",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C50",
+      "claim": "Immunostaining for endogenous Ruvbl2 strongly labeled DynAPs in Xenopus MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As discussed above, DNAAFs act in concert with heat shock chaperones, and genetic mutants in the co-chaperones Ruvbl1 and Ruvbl2 result in defective dynein assembly and cilia beating. We were satisfied therefore to find that immunostaining for endogenous Ruvbl2 also strongly labeled DynAPs in Xenopus MCCs (Figure 1\u2014figure supplement 5; Video 2), consistent with results from zebrafish and mice (Li et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 1\u2014figure supplement 5 and Video 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "8220b3f8-1105-43e1-bcd2-e12c3c5f6005",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C51",
+      "claim": "Ruvbl2 immunostaining also reported much smaller foci that were present in both MCCs and neighboring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This result also further demonstrates that these structures are not artifacts of FP fusions. We note that Ruvbl2 immunostaining also reported much smaller foci that were present in both MCCs and neighboring cells (Figure 1\u2014figure supplement 5), consistent with previous reports that this broadly acting co-chaperone can form cellular foci (Rizzolo et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "27c4572c-c04b-4025-8383-cacca4ec0744",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C52",
+      "claim": "DynAPs were strongly labeled by FP fusions to Hsp co-chaperones Stip1 and Dnajc7.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also observed that DynAPs were strongly labeled by FP fusions to other known Hsp co-chaperones, including Stip1 and Dnajc7 (e.g. (Moffatt et al., 2008; Odunuga et al., 2004)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "2ca4d029-0aa2-41f4-b86f-d2e35e6c0434",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C53",
+      "claim": "Ttc9c is a DynAP component.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also identified Ttc9c as a DynAP component, which is of interest because the function of this protein is essentially unknown, but it binds Hsp90 and is implicated in cilia beating (Gano and Simon, 2010; Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "cf280e6f-7a15-4a74-905c-b513f7fe5c26",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C54",
+      "claim": "FP fusions to DNAAFs reported foci only in MCCs and not in adjacent cells lacking motile cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this idea directly, we ectopically expressed FP-fusions to DNAAFs throughout the mucociliary epithelium (i.e. in MCC as well as other cell types). Strikingly, FP fusions to DNAAFs reported foci only in MCCs and not in adjacent cells lacking motile cilia (Figure 3A,C,E; Figure 1\u2014figure supplement 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 3A,C,E and Figure 1\u2014figure supplement 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "743c9a7e-884d-45e7-aa87-d7ace9fd61a0",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C55",
+      "claim": "The P-body marker Dcp1a assembled into foci in both MCCs and goblet cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This MCC-specificity was not a general property of FP fusions, as the P-body marker Dcp1a assembled into foci in both MCCs and goblet cells (Figure 1\u2014figure supplement 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1\u2014figure supplement 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "4a9c2ac5-1f50-4822-a274-733c97f5729b",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C56",
+      "claim": "Both immunostaining for Ruvbl2 and expression of FP fusions to DNAAFs demonstrate that DynAPs assemble specifically in MCCs and not in neighboring non-ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both immunostaining for Ruvbl2 (above) and expression of FP fusions to DNAAFs demonstrate that DynAPs assemble specifically in MCCs and not in neighboring non-ciliated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the imaging data presented in Figures 1 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "0ce469cc-e8fa-4ac8-a9c7-ae02c1c9d4a1",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C57",
+      "claim": "Mcidas is necessary and sufficient for the specification of MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "For a direct test of the cell type-specificity of DynAPs, we turned our attention to the evolutionarily conserved transcriptional circuitry that directs MCC differentiation in vertebrates ranging from Xenopus and zebrafish to mice and humans (Brody et al., 2000; Stubbs et al., 2008; Stubbs et al., 2012). At the top of this hierarchy is the master regulator Mcidas, which is necessary and sufficient for the specification of MCCs (Stubbs et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "a9828fc1-9f95-40df-a805-830547fdba7e",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C58",
+      "claim": "Ectopic expression of Mcidas significantly increased the percentage of MCCs in the mucociliary epithelium, and all of these MCCs contained obvious DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, ectopic expression of Mcidas significantly increased the percentage of MCCs in the mucociliary epithelium, and importantly, all of these MCCs contained obvious DynAPs (Figure 3B,b', E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 3B,b',E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "e85106ee-313a-420b-89d2-453d79b3ca2a",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C59",
+      "claim": "Foxj1 is essential for motile ciliogenesis and acts downstream of Mcidas.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested the Foxj1 transcription factor, which is essential for motile ciliogenesis and acts downstream of Mcidas (Brody et al., 2000; Stubbs et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "6dfd45d1-f7a5-4196-9c66-63690c84da4f",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C60",
+      "claim": "Expression of Foxj1 can induce the formation of solitary motile cilia, and these ectopic motile cilia were associated with assembly of ectopic DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Foxj1 can induce the formation of solitary motile cilia (Stubbs et al., 2008), and we found that these ectopic motile cilia were associated with assembly of ectopic DynAPs (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 3C-E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "e659718e-9b35-4965-82d9-d89395f491cc",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C61",
+      "claim": "DynAPs are specific features of MCCs and their assembly is controlled by the evolutionarily conserved motile ciliogenic transcriptional program.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DynAPs are specific features of MCCs and their assembly is controlled by the evolutionarily conserved motile ciliogenic transcriptional program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Mcidas and Foxj1 experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "4b061e08-ad83-42fb-947c-9c9ba4918272",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C62",
+      "claim": "DynAPs were not labeled by a general membrane marker (CAAX-RFP) or by markers of known membrane-bound organelles such as Golgi or endosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We next explored the cell biological basis of DynAP assembly. DynAPs were not labeled by a general membrane marker (CAAX-RFP) (Video 1) or by markers of known membrane-bound organelles such as Golgi or endosomes (Figure 1\u2014figure supplement 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Video 1 and Figure 1\u2014figure supplement 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "acb66ba9-9199-4a34-b928-6d2dd9c0499d",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C63",
+      "claim": "DynAPs underwent fission and coalescence on the order of only a few minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "One hallmark of phase separated organelles is rapid fission and fusion, such as that observed in C. elegans p-granules and mammalian stress granules (Brangwynne et al., 2009; Li et al., 2012). Time-lapse imaging of DynAPs revealed similar behaviors. DynAPs underwent fission and coalescence on the order of only a few minutes (Figure 4A; Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse imaging data shown in Figure 4A and Video 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "2a510247-b471-45b3-8a94-6bd243a9b968",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C64",
+      "claim": "Rapid intra-DynAP exchange of Ktu was observed using 'half-bleach' FRAP experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "A second hallmark of biological phase separation is rapid exchange of material both within organelles and between the organelle and the cytoplasm (Brangwynne et al., 2009; Li et al., 2012). Using 'half-bleach' FRAP experiments, in which only a portion of the organelle is bleached (Brangwynne et al., 2009; Patel et al., 2015; Schmidt and Rohatgi, 2016; Woodruff et al., 2017), we observed rapid intra-DynAP exchange of Ktu (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "58c44ad6-4a5e-4995-84ab-2156456a5345",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C65",
+      "claim": "GFP-Ktu displayed rapid FRAP kinetics after bleaching of entire DynAPs, suggesting rapid exchange of Ktu between DynAPs and the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-Ktu displayed similarly rapid FRAP kinetics after bleaching of entire DynAPs, suggesting rapid exchange of Ktu between DynAPs and the cytoplasm (Figure 4B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 4B,D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "1eafd0dd-6d86-4156-a5fb-e6426f24f75b",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C66",
+      "claim": "GalT displayed no recovery over similar time frames in FRAP experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control we performed FRAP on the Golgi resident protein GalT, and it displayed no recovery over similar time frames (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "f044632d-47dc-4607-b033-b555f870940b",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C67",
+      "claim": "Both the fission/coalescence behaviors and FRAP kinetics of DynAPs are similar to those observed in organelles known to form via biological phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both the fission/coalescence behaviors and FRAP kinetics of DynAPs are similar to those observed in organelles known to form via biological phase separation (Brangwynne et al., 2009; Li et al., 2012; Patel et al., 2015; Schmidt and Rohatgi, 2016; Woodruff et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the FRAP and time-lapse data shown in Figure 4, compared to cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "6f48ccf0-9058-4935-9c41-1ebd1fba2b36",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C68",
+      "claim": "Dynein subunits were stably retained inside DynAPs with very limited mobility within DynAPs in 'half-bleach' FRAP experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Since dyneins are the clients for DNAAFs, we next examined dynein kinetics within DynAPs using FRAP. In stark contrast to Ktu, dynein subunits were stably retained inside DynAPs. We observed very limited mobility within DynAPs in 'half-bleach' FRAP experiments and between DynAPs and the cytoplasm when entire organelles were bleached (Figure 5A,B,b').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 5A,B,b'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "12bd7aac-7c9d-488a-acf2-02d10d100911",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C69",
+      "claim": "Similar stable retention results were obtained with both inner and outer arm dynein subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained with both inner and outer arm dynein subunits (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "418c2ab1-a31e-4b7f-a438-3390472924ad",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C70",
+      "claim": "All tested DNAAFs and chaperones displayed significantly higher mobile fractions when compared to all dynein subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "These results prompted us to test other DynAP-localized proteins, and we found that all tested DNAAFs and chaperones displayed significantly higher mobile fractions when compared to all dynein subunits (Figure 5C,D; Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 5C,D and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "c722fd16-b4d4-432a-89ef-b403a6e6fc82",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C71",
+      "claim": "DynAPs stably concentrate dynein subunits, while assembly factors and chaperones rapidly flux through.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DynAPs stably concentrate dynein subunits, while assembly factors and chaperones rapidly flux through.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the FRAP data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "edced004-ff7c-4ffc-be43-bc036dc4b1a6",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C72",
+      "claim": "The canonical stress granule marker G3bp1 was strongly enriched in DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Because stress granules also contain Ruvbl2 and the Hsp70/90 chaperones (Jain et al., 2016), we next probed the relationship between DynAPs and stress granules. We found that the canonical stress granule marker G3bp1 (Kedersha et al., 2005; Wheeler et al., 2016) was strongly enriched in DynAPs, where it co-localized significantly with Ktu (ovals in Figure 6A,a2; Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by colocalization data shown in Figure 6A,a2 and Figure 6B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "94a9cf19-b306-4752-a321-51d521cbdf22",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C73",
+      "claim": "G3bp1-FP also consistently labeled a second population of smaller foci in MCCs that did not contain DNAAFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, however, G3bp1-FP also consistently labeled a second population of smaller foci in MCCs that did not contain DNAAFs (boxes in Figure 6A,a2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 6A,a2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "5cdb8032-a9e4-49be-806e-b0e08e8d5a52",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C74",
+      "claim": "FRAP experiments revealed turnover kinetics in both populations of G3bp1 foci that were similar to those reported for G3bp1 in stress granules.",
+      "claim_type": "EXPLICIT",
+      "source": "FRAP experiments revealed turnover kinetics in both populations of foci that were similar to those reported for G3bp1 in stress granules (Figure 6C) (Kedersha et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "9f659e31-a85c-4ddc-9082-a71bc74a7ef8",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C75",
+      "claim": "G3bp1 is a component of at least two populations of cytoplasmic foci in MCCs, including DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, G3bp1 is a component of at least two populations of cytoplasmic foci in MCCs, including DynAPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the imaging and FRAP data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "ecfd65aa-955b-4772-8f2f-a42ab9e56284",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C76",
+      "claim": "Tia1-FP localized to small foci in MCCs similar to the DNAAF-negative foci labeled by G3bp1.",
+      "claim_type": "EXPLICIT",
+      "source": "To ask if DynAP localization was a common feature of stress granule proteins, we examined Tia1, which also functions in stress granules (Kedersha et al., 1999). Tia1-FP localized to small foci in MCCs similar to the DNAAF-negative foci labeled by G3bp1 (Figure 1\u2014figure supplement 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1\u2014figure supplement 4E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "b58b6b7c-b159-4569-b11d-dd442de52c19",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C77",
+      "claim": "Tia1-FP was typically not present in DynAPs, though in some cases partial co-localization between Tia1 and DNAAFs was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike G3bp1, Tia1-FP was typically not present in DynAPs, though in some cases partial co-localization between Tia1 and DNAAFs was observed (e.g. Figure 1\u2014figure supplement 4E, arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1\u2014figure supplement 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "fe644475-4bdd-4ccb-8402-673a6d7f061c",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C78",
+      "claim": "The Pearson correlation between Tia1 and Ktu was significantly lower than that observed for G3bp1 or for other DynAP proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Pearson correlation between Tia1 and Ktu was significantly lower than that observed for G3bp1 or for other DynAP proteins (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative colocalization data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "2b208bda-952e-4252-bd53-b403e507deb3",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C79",
+      "claim": "DynAPs share only a subset of molecular components with stress granules, including G3bp1, Ruvbl1/2, and the Hsp70/90 chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite sharing a similar semi-liquid-like behavior, DynAPs share only a subset of molecular components with stress granules, including G3bp1, Ruvbl1/2, and the Hsp70/90 chaperones (Jain et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the colocalization data shown in Figures 1 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "bf18c918-2080-4862-90e7-77998da683f6",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C80",
+      "claim": "DynAPs were present not only in mature MCCs but also in nascent MCCs undergoing ciliogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we found that DynAPs were present not only in mature MCCs but also in nascent MCCs undergoing ciliogenesis (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "1bf8d8d2-d53f-4bed-b4ea-7cb1dffa4065",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C81",
+      "claim": "Nonsense mutations in HEATR2 that lead to protein loss cause disease.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that modeling motile ciliopathy might shed light on DynAP function: If DynAPs are sequestering organelles for mis-assembled dyneins, we expect their numbers to increase if DNAAF function is disrupted; if they are assembly organelles, we expect the converse. To test this idea, we focused on Heatr2, which acts early in the assembly process (Horani et al., 2018). Nonsense mutations in HEATR2 that lead to protein loss cause disease (Diggle et al., 2014; Horani et al., 2012), and thus can be modeled simply by knockdown in Xenopus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "d26c2bcb-14d8-4a73-9f58-f31fbd695303",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C82",
+      "claim": "Co-injection of two MOs targeting heatr2 was effective in disrupting splicing and reducing overall heatr2 mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed separate MOs to disrupt splicing of the L and S alloalleles of heatr2 in the allotetraploid genome of X. laevis (Session et al., 2016) (see Materials and methods), and RT-PCR demonstrated that co-injection of the two MOs was effective. Not only was splicing severely disrupted, but the overall level of heatr2 mRNA was also severely reduced, a common effect of nonsense mediated decay when splicing is disrupted by MOs (Figure 8\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 8\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "3661f39e-f36c-4d00-ade0-127ba2968604",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C83",
+      "claim": "Loss of heatr2 mRNA was accompanied by a severe defect in cilia beating.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse imaging of cilia beating revealed that the loss of heatr2 mRNA was accompanied by a severe defect in cilia beating (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-lapse imaging data shown in Figure 8A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "a8d7923e-1559-48c6-a8e2-b1f42a2a53b9",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C84",
+      "claim": "Heatr2 knockdown eliminated the axonemal localization of the outer arm dynein Dnai2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, confocal imaging of the apical surface of MCCs revealed that while cilia length was not disrupted, Heatr2 knockdown eliminated the axonemal localization of the outer arm dynein Dnai2, (Figure 8C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal imaging data shown in Figure 8C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "c6f011e2-23f1-47fc-b3c0-a961f9947b65",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C85",
+      "claim": "A second MO targeting a different splice site in heatr2 elicited the same phenotypes in Xenopus.",
+      "claim_type": "EXPLICIT",
+      "source": "A second MO targeting a different splice site in heatr2 elicited the same phenotypes in Xenopus, indicating that this phenotype was not the result of off-target effects (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "65352d99-a27d-4b69-95e5-9d488c2414f2",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C86",
+      "claim": "MO knockdown targeting either of two distinct sites closely recapitulated the phenotype observed after loss of Heatr2 by genetic mutation in both human PCD patients and in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MO knockdown targeting either of two distinct sites closely recapitulated the phenotype observed after loss of Heatr2 by genetic mutation in both human PCD patients and in Drosophila (Diggle et al., 2014; Horani et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the MO knockdown data shown in Figure 8 and Figure 8\u2014figure supplement 1, compared to cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "8100d498-396d-4417-9514-517cb7103b1d",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C87",
+      "claim": "Knockdown with either of the MO sets elicited a significant reduction in the number of DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, knockdown with either of the MO sets also elicited a significant reduction in the number of DynAPs (Figure 8E\u2013G; Figure 8\u2014figure supplement 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative data shown in Figure 8E-G and Figure 8\u2014figure supplement 1E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "2a6dccab-473e-4ec7-9f82-d3140724cc9a",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C88",
+      "claim": "Loss of Heatr2 significantly decreased the FRAP mobile fraction of Ktu in DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, changes in protein FRAP mobility accompany pathological alterations of phase separated organelles in neurodegenerative diseases (Patel et al., 2015; Schmidt and Rohatgi, 2016), so we used FRAP to ask if Heatr2 loss may impact the liquid-like behavior of DynAPs. Indeed, loss of Heatr2 significantly decreased the FRAP mobile fraction of Ktu in DynAPs (Figure 8H,h'), suggesting that an alteration in liquid like behavior is linked to defects in DynAP assembly that in turn associate with defects in cilia beating in an animal model of motile ciliopathy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRAP data shown in Figure 8H,h'.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "9fb754fc-cb6b-4f25-a811-30b206712481",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C89",
+      "claim": "An alteration in liquid like behavior is linked to defects in DynAP assembly that in turn associate with defects in cilia beating in an animal model of motile ciliopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, loss of Heatr2 significantly decreased the FRAP mobile fraction of Ktu in DynAPs (Figure 8H,h'), suggesting that an alteration in liquid like behavior is linked to defects in DynAP assembly that in turn associate with defects in cilia beating in an animal model of motile ciliopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data on DynAP number, FRAP kinetics, and cilia beating defects shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "7ac79eb9-ce8d-4796-bac8-06e35a695b19",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C90",
+      "claim": "An entire class of motile ciliopathy genes (the DNAAFs) encode proteins that co-localize together with axonemal dynein subunits and chaperones in discrete organelles termed DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that an entire class of motile ciliopathy genes (the DNAAFs) encode proteins that co-localize together with axonemal dynein subunits and chaperones in discrete organelles we term DynAPs (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by comprehensive colocalization data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "92a6228a-12a6-49f1-8688-37495f9136d7",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C91",
+      "claim": "DynAPs are MCC-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "DynAPs are MCC-specific, form under the control of the conserved genetic circuitry that governs motile ciliogenesis, and display hallmarks of biological phase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "e18f585d-c0b6-4490-8bb8-1d4566f1f046",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C92",
+      "claim": "DynAPs form under the control of the conserved genetic circuitry that governs motile ciliogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "DynAPs are MCC-specific, form under the control of the conserved genetic circuitry that governs motile ciliogenesis, and display hallmarks of biological phase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "51259814-d621-47b7-a3c6-1a873890e05b",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C93",
+      "claim": "Loss of dynein arms from axonemes after disruption of DNAAF function was associated with defective DynAP assembly and altered liquid like character in these organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, loss of dynein arms from axonemes after disruption of DNAAF function was associated with defective DynAP assembly and altered liquid like character in these organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "0803b475-0488-4073-84ab-a55ef893549d",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C94",
+      "claim": "These findings provide a unifying cell biological framework for a poorly understood class of human disease genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings provide a unifying cell biological framework for a poorly understood class of human disease genes and add motile ciliopathy to the growing roster of human diseases associated with disrupted biological phase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "99c2adae-d69d-4320-9402-30428aa58054",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C95",
+      "claim": "These findings add motile ciliopathy to the growing roster of human diseases associated with disrupted biological phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings provide a unifying cell biological framework for a poorly understood class of human disease genes and add motile ciliopathy to the growing roster of human diseases associated with disrupted biological phase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "bba44efd-f7cd-414a-a15f-e75ad22b5964",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C96",
+      "claim": "Client dyneins are concentrated into DynAPs so they can be acted upon by chaperones and co-chaperones that rapidly flux through.",
+      "claim_type": "EXPLICIT",
+      "source": "As is the case for most phase separated organelles, the significance of concentrating DNAAFs and dyneins into organelles remains a key unanswered question. Nonetheless, our data suggest a model in which client dyneins are concentrated into DynAPs so they can be acted upon by chaperones and co-chaperones that rapidly flux through.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the FRAP data showing differential kinetics of dyneins versus DNAAFs/chaperones.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "578dfc38-d6f1-44ac-aa74-7211833dd58d",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C97",
+      "claim": "Sequestering the client in one compartment would allow the many requisite assembly factors to work together efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is parsimonious for integrating three essential functions required for dyneins assembly: First, dyneins are particularly large multi-protein complexes; their assembly takes time and requires multiple assembly factors. Sequestering the client in one compartment would allow the many requisite assembly factors to work together efficiently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the potential function of DynAPs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "f3124fa0-819f-475b-82ae-05ef69fa73b6",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C98",
+      "claim": "Concentration in DynAPs provides an efficient means to couple assembly and quality control.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, large protein complexes require strict quality control, and concentration in DynAPs provides an efficient means to couple assembly and quality control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the potential function of DynAPs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "a32de1f2-aaf2-4e0c-a9fa-fec62c11a4ab",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C99",
+      "claim": "Assembled dyneins might be stored in DynAPs until they are needed for rapid deployment.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, assembled dyneins might then be stored in DynAPs until they are needed for rapid deployment, which is important because motile cilia are known to very rapidly regenerate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the potential function of DynAPs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "cf95de81-3059-466b-982e-40ebb63a1eee",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C100",
+      "claim": "A wide range of cell-type specific-liquid like organelles may await discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our description of DynAPs suggests an attractive hypothesis regarding compartmentalization of the myriad biochemical processes that arise as cell types proliferate in developing embryos. Despite the emergence of phase separation as a mechanism for compartmentalizing cellular functions, cell type-specific, phase separated organelles remain relatively rare, for example Cajal bodies control genome organization in the nuclei of some cell types and the Balbiani body facilitates oocytes' long-term dormancy (Banani et al., 2017; Shin and Brangwynne, 2017). Our description of DynAP formation specifically in MCCs predicts that a wide range of cell-type specific-liquid like organelles may await discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the discovery of DynAPs.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "c063b6b3-d9d7-4555-8288-de644b133db3",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "claim_id": "C101",
+      "claim": "The molecular framework of known ubiquitous liquid-like organelles such as stress granules is differentially modified by cell type-specific transcriptional circuits in order to assemble novel organelles to achieve specific functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our data suggest a model whereby the molecular framework of known ubiquitous liquid-like organelles such as stress granules (e.g. G3bp1) is differentially modified by cell type-specific transcriptional circuits in order to assemble novel organelles to achieve specific functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the finding that DynAPs share some components with stress granules but are MCC-specific.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bb2a1e66-07d9-4326-aee0-c9d4de172182",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DNAAFs, axonemal dynein subunits, and chaperones co-localize in discrete cytoplasmic organelles termed DynAPs in multiciliated cells. Nine distinct DNAAFs and multiple dynein subunits were shown to co-localize significantly in irregularly shaped foci measuring 1-3 microns across, present in the middle third of the apicobasal axis of MCCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C15-C18, C33, C35-C41, C46-C49, and C90 collectively demonstrate robust colocalization of DNAAFs and dyneins through multiple complementary approaches: direct imaging (Figures 1-2), quantitative Pearson correlation analysis, Costes algorithm validation, automated 3D object-based detection, and randomization controls. The convergence of manual and automated methods, along with appropriate negative controls, provides strong evidence for this novel organelle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "00470938-f995-453e-99d1-3da88d9fc2b4",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DynAPs contain heat shock chaperones and co-chaperones including endogenous Ruvbl2, Stip1, Dnajc7, and Ttc9c. Immunostaining for endogenous Ruvbl2 strongly labeled DynAPs in Xenopus MCCs, and FP fusions to other Hsp co-chaperones also localized to DynAPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by immunostaining data (Figure 1\u2014figure supplement 5, Video 2) and imaging of FP fusions. The use of endogenous protein detection via immunostaining (C50) is particularly strong evidence that DynAPs are not artifacts of FP overexpression. The identification of multiple chaperone components is consistent with the proposed assembly function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "44c64ded-809d-4e4c-b8fa-82f07168ca28",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DynAPs are MCC-specific organelles whose assembly is controlled by the evolutionarily conserved motile ciliogenic transcriptional program. Ectopic expression of the master regulator Mcidas or the downstream factor Foxj1 induced formation of DynAPs specifically in cells with motile cilia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56, C58, C60-C61, C91-C92 are well-supported by the transcription factor manipulation experiments shown in Figure 3. The specificity of DynAP formation to MCCs (C54-C56) and the induction of DynAPs by both Mcidas (C58) and Foxj1 (C60) provide strong evidence for transcriptional control. The use of appropriate controls (Dcp1a forming foci in multiple cell types, C55) strengthens the conclusion of MCC-specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "fa81c21b-3e4d-49ad-a573-a169bd10f3e9",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DynAPs display hallmarks of biomolecular condensates including lack of membrane boundaries, rapid fission/coalescence, and rapid exchange of DNAAFs within and between DynAPs and cytoplasm. Time-lapse imaging showed DynAPs undergo fission and coalescence on the order of minutes, and FRAP experiments revealed rapid recovery kinetics for Ktu.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 and C5 are supported by multiple lines of evidence: exclusion of membrane markers (Video 1, Figure 1\u2014figure supplement 4B,C), time-lapse imaging showing fission/coalescence (Figure 4A, Video 3), and FRAP experiments demonstrating rapid exchange (Figure 4B-D). The inclusion of appropriate negative controls (GalT showing no recovery, C66) and comparison to established phase-separated organelles strengthens the conclusion. The convergence of multiple independent assays provides robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "cfbb6e66-b762-427f-b74c-cbdd316d0404",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dynein subunits are stably retained in DynAPs with limited mobility, while DNAAFs and chaperones display significantly higher mobile fractions. FRAP experiments showed that both inner and outer arm dynein subunits had very limited recovery compared to all tested DNAAFs and chaperones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are strongly supported by comprehensive FRAP data (Figure 5, Table 2) comparing multiple dynein subunits to multiple DNAAFs and chaperones. The statistical significance of the differences (Figure 5D) and the consistency across multiple proteins of each class provide robust evidence. This differential behavior is a key finding that distinguishes DynAPs from simple aggregates and suggests a functional compartmentalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "ea88235a-3931-42d5-9feb-e3a4035d46fe",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DynAPs share only a subset of molecular components with stress granules. The stress granule marker G3bp1 was strongly enriched in DynAPs and also labeled a second population of smaller foci, while Tia1 showed significantly lower colocalization with DynAPs. DynAPs are not enriched for other stress granule proteins or P-body proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C79, C6-C7 are supported by colocalization data (Figure 6, Figure 1\u2014figure supplement 4) and FRAP experiments. The selective enrichment of G3bp1 but not Tia1 (C72, C76-C78), along with the exclusion of P-body markers (C7, C42-C43), demonstrates that DynAPs are distinct from canonical stress granules while sharing some molecular machinery. The quantitative analysis (Pearson correlation, Figure 6B) provides statistical rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "340618fc-82e4-4c44-b629-2270b4ab28a7",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DynAPs are present in both nascent MCCs undergoing ciliogenesis and mature MCCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is supported by imaging data at different developmental stages (Figure 7). This temporal analysis provides insight into DynAP function, though the interpretation of whether DynAPs serve assembly versus sequestration functions remains uncertain (as acknowledged by the authors).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "dc2058fd-0476-4f5f-96a2-14d12934df47",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Loss of Heatr2 disrupts both DynAP formation and liquid-like behavior in a model of motile ciliopathy. Morpholino knockdown of Heatr2 using two independent MO sets caused severe defects in cilia beating, loss of dynein from axonemes, significant reduction in DynAP number, and decreased FRAP mobile fraction of Ktu in remaining DynAPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C89, C8, C93 are well-supported by comprehensive knockdown experiments using two independent MO sets (Figure 8, Figure 8\u2014figure supplement 1). The validation includes RT-PCR confirmation of knockdown (C82), phenotypic analysis of cilia beating (C83) and dynein localization (C84), quantification of DynAP numbers (C87), and FRAP analysis (C88). The use of two independent MO sets targeting different sites (C85) addresses concerns about off-target effects. The phenotypic similarity to human and Drosophila mutations (C86) validates the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "001ab515-37b6-4548-9a1c-da0b307f5c9e",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DynAPs are specific structures distinct from P-bodies, amyloid aggregates, and other axonemal assembly compartments. DNAAFs did not colocalize with P-body markers (Dcp1a), amyloid-forming proteins (Fus), or radial spoke/docking complex proteins, and showed significantly lower Pearson correlation with these proteins compared to other DynAP components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 provide important negative controls demonstrating the specificity of DynAPs. The lack of colocalization with known foci-forming proteins (Figure 1\u2014figure supplement 4) and the quantitative analysis (Figure 1H, Figure 1\u2014figure supplement 2) support the conclusion that DynAPs are not simply non-specific aggregates. The citation to a prior screen (C45) further supports that FP aggregation is rare in this system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "b0cbb634-f8ce-4231-a271-5784c7052efe",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on motile ciliopathies, primary ciliary dyskinesia (PCD), and the role of DNAAFs. This includes clinical manifestations, genetic basis, and prior work establishing that DNAAFs and chaperones act in cytosolic foci as part of a chaperone relay for dynein assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C14, C19-C32, C34 represent established knowledge and prior work, supported by appropriate citations. These claims provide essential context for the current study but are not novel findings. The authors accurately represent prior literature on PCD, DNAAFs, and the chaperone relay model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "6ad22bdd-1bb6-4c4d-a51c-c632ea4f7200",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings provide a unifying cell biological framework for DNAAFs and add motile ciliopathy to diseases associated with disrupted biological phase separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C95 represent reasonable conclusions drawn from the comprehensive data presented. The identification of DynAPs as phase-separated organelles containing all tested DNAAFs (C90) and the demonstration of disrupted DynAP properties in a disease model (C8, C93) support these broader conclusions. However, these are interpretive claims rather than direct experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    },
+    {
+      "id": "3aeb28a3-408f-412f-a8d7-c87d06accf17",
+      "content_id": "5b74d07b-c81c-43ec-b1fb-945bb1150b78",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Proposed models for DynAP function and broader implications. The authors suggest that dyneins are concentrated in DynAPs to be acted upon by fluxing chaperones, enabling efficient assembly, quality control, and storage. They propose that cell-type-specific phase-separated organelles may be widespread and that ubiquitous organelle frameworks may be modified by cell-specific transcriptional programs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C101 are explicitly speculative (marked as SPECULATION in evidence_type). While these models are reasonable interpretations of the data, they represent hypotheses rather than demonstrated findings. The presence of DynAPs in both nascent and mature MCCs (C80) leaves open questions about assembly versus storage functions. These speculative claims are appropriately presented as discussion points rather than conclusions, but they lack direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:22.213174Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "035e83b5-ec6e-4a69-a137-b4029ccea766",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "c83d6e95-70ed-4d3a-b1cd-c26639aeb560",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "6f64c692-47af-4f01-b3d4-b5a063f4892c",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "ec4ded96-6b81-4f18-a661-23ddd1285e7b",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "bf5944d8-5bf3-4ac9-96da-b211cbac37a2",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "78d27332-1c44-4eda-908f-3bdb4816f75c",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "b3caf2b0-9984-43f5-9e54-65d2acd078f0",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "d0538c43-d706-49d0-91d9-0394f4a7a363",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "e85e435d-c5e7-45df-a4ee-084988108f12",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "5a454491-e58e-44d6-b3a7-46bcb5660a9c",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "c3778e15-cae2-4d7c-bfd7-5677bedc394e",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "56a71edf-a8ab-42e9-8716-2dc1b35a0eb9",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "703ef37f-80ab-4523-a591-46d9e68da207",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "172c567f-fd99-44dc-b6ef-fa6625e672c8",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "8d4412bb-4ede-4f41-a7b8-30d09a63af3b",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "c4b5607f-1a1b-4796-9afb-c7a3abbfa672",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "74d4fb2a-0673-410b-9fae-eff6ad80f35e",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "7ac79eb9-ce8d-4796-bac8-06e35a695b19",
+      "result_id": "bb2a1e66-07d9-4326-aee0-c9d4de172182"
+    },
+    {
+      "claim_id": "6d43e340-ad13-46a9-bacc-285114d49ea6",
+      "result_id": "00470938-f995-453e-99d1-3da88d9fc2b4"
+    },
+    {
+      "claim_id": "8220b3f8-1105-43e1-bcd2-e12c3c5f6005",
+      "result_id": "00470938-f995-453e-99d1-3da88d9fc2b4"
+    },
+    {
+      "claim_id": "27c4572c-c04b-4025-8383-cacca4ec0744",
+      "result_id": "00470938-f995-453e-99d1-3da88d9fc2b4"
+    },
+    {
+      "claim_id": "2ca4d029-0aa2-41f4-b86f-d2e35e6c0434",
+      "result_id": "00470938-f995-453e-99d1-3da88d9fc2b4"
+    },
+    {
+      "claim_id": "cf280e6f-7a15-4a74-905c-b513f7fe5c26",
+      "result_id": "44c64ded-809d-4e4c-b8fa-82f07168ca28"
+    },
+    {
+      "claim_id": "743c9a7e-884d-45e7-aa87-d7ace9fd61a0",
+      "result_id": "44c64ded-809d-4e4c-b8fa-82f07168ca28"
+    },
+    {
+      "claim_id": "4a9c2ac5-1f50-4822-a274-733c97f5729b",
+      "result_id": "44c64ded-809d-4e4c-b8fa-82f07168ca28"
+    },
+    {
+      "claim_id": "a9828fc1-9f95-40df-a805-830547fdba7e",
+      "result_id": "44c64ded-809d-4e4c-b8fa-82f07168ca28"
+    },
+    {
+      "claim_id": "6dfd45d1-f7a5-4196-9c66-63690c84da4f",
+      "result_id": "44c64ded-809d-4e4c-b8fa-82f07168ca28"
+    },
+    {
+      "claim_id": "e659718e-9b35-4965-82d9-d89395f491cc",
+      "result_id": "44c64ded-809d-4e4c-b8fa-82f07168ca28"
+    },
+    {
+      "claim_id": "92a6228a-12a6-49f1-8688-37495f9136d7",
+      "result_id": "44c64ded-809d-4e4c-b8fa-82f07168ca28"
+    },
+    {
+      "claim_id": "e18f585d-c0b6-4490-8bb8-1d4566f1f046",
+      "result_id": "44c64ded-809d-4e4c-b8fa-82f07168ca28"
+    },
+    {
+      "claim_id": "4b061e08-ad83-42fb-947c-9c9ba4918272",
+      "result_id": "fa81c21b-3e4d-49ad-a573-a169bd10f3e9"
+    },
+    {
+      "claim_id": "acb66ba9-9199-4a34-b928-6d2dd9c0499d",
+      "result_id": "fa81c21b-3e4d-49ad-a573-a169bd10f3e9"
+    },
+    {
+      "claim_id": "2a510247-b471-45b3-8a94-6bd243a9b968",
+      "result_id": "fa81c21b-3e4d-49ad-a573-a169bd10f3e9"
+    },
+    {
+      "claim_id": "58c44ad6-4a5e-4995-84ab-2156456a5345",
+      "result_id": "fa81c21b-3e4d-49ad-a573-a169bd10f3e9"
+    },
+    {
+      "claim_id": "1eafd0dd-6d86-4156-a5fb-e6426f24f75b",
+      "result_id": "fa81c21b-3e4d-49ad-a573-a169bd10f3e9"
+    },
+    {
+      "claim_id": "f044632d-47dc-4607-b033-b555f870940b",
+      "result_id": "fa81c21b-3e4d-49ad-a573-a169bd10f3e9"
+    },
+    {
+      "claim_id": "adbc5c83-9b1e-4bf8-9431-5ef50b54fb90",
+      "result_id": "fa81c21b-3e4d-49ad-a573-a169bd10f3e9"
+    },
+    {
+      "claim_id": "6f48ccf0-9058-4935-9c41-1ebd1fba2b36",
+      "result_id": "cfbb6e66-b762-427f-b74c-cbdd316d0404"
+    },
+    {
+      "claim_id": "12bd7aac-7c9d-488a-acf2-02d10d100911",
+      "result_id": "cfbb6e66-b762-427f-b74c-cbdd316d0404"
+    },
+    {
+      "claim_id": "418c2ab1-a31e-4b7f-a438-3390472924ad",
+      "result_id": "cfbb6e66-b762-427f-b74c-cbdd316d0404"
+    },
+    {
+      "claim_id": "c722fd16-b4d4-432a-89ef-b403a6e6fc82",
+      "result_id": "cfbb6e66-b762-427f-b74c-cbdd316d0404"
+    },
+    {
+      "claim_id": "edced004-ff7c-4ffc-be43-bc036dc4b1a6",
+      "result_id": "ea88235a-3931-42d5-9feb-e3a4035d46fe"
+    },
+    {
+      "claim_id": "94a9cf19-b306-4752-a321-51d521cbdf22",
+      "result_id": "ea88235a-3931-42d5-9feb-e3a4035d46fe"
+    },
+    {
+      "claim_id": "5cdb8032-a9e4-49be-806e-b0e08e8d5a52",
+      "result_id": "ea88235a-3931-42d5-9feb-e3a4035d46fe"
+    },
+    {
+      "claim_id": "9f659e31-a85c-4ddc-9082-a71bc74a7ef8",
+      "result_id": "ea88235a-3931-42d5-9feb-e3a4035d46fe"
+    },
+    {
+      "claim_id": "ecfd65aa-955b-4772-8f2f-a42ab9e56284",
+      "result_id": "ea88235a-3931-42d5-9feb-e3a4035d46fe"
+    },
+    {
+      "claim_id": "b58b6b7c-b159-4569-b11d-dd442de52c19",
+      "result_id": "ea88235a-3931-42d5-9feb-e3a4035d46fe"
+    },
+    {
+      "claim_id": "fe644475-4bdd-4ccb-8402-673a6d7f061c",
+      "result_id": "ea88235a-3931-42d5-9feb-e3a4035d46fe"
+    },
+    {
+      "claim_id": "2b208bda-952e-4252-bd53-b403e507deb3",
+      "result_id": "ea88235a-3931-42d5-9feb-e3a4035d46fe"
+    },
+    {
+      "claim_id": "1352dce0-1d47-45dc-abd7-ee83f8443691",
+      "result_id": "ea88235a-3931-42d5-9feb-e3a4035d46fe"
+    },
+    {
+      "claim_id": "5428e673-abb7-4122-97bf-f49a37b9f4f3",
+      "result_id": "ea88235a-3931-42d5-9feb-e3a4035d46fe"
+    },
+    {
+      "claim_id": "bf18c918-2080-4862-90e7-77998da683f6",
+      "result_id": "340618fc-82e4-4c44-b629-2270b4ab28a7"
+    },
+    {
+      "claim_id": "d26c2bcb-14d8-4a73-9f58-f31fbd695303",
+      "result_id": "dc2058fd-0476-4f5f-96a2-14d12934df47"
+    },
+    {
+      "claim_id": "3661f39e-f36c-4d00-ade0-127ba2968604",
+      "result_id": "dc2058fd-0476-4f5f-96a2-14d12934df47"
+    },
+    {
+      "claim_id": "a8d7923e-1559-48c6-a8e2-b1f42a2a53b9",
+      "result_id": "dc2058fd-0476-4f5f-96a2-14d12934df47"
+    },
+    {
+      "claim_id": "c6f011e2-23f1-47fc-b3c0-a961f9947b65",
+      "result_id": "dc2058fd-0476-4f5f-96a2-14d12934df47"
+    },
+    {
+      "claim_id": "65352d99-a27d-4b69-95e5-9d488c2414f2",
+      "result_id": "dc2058fd-0476-4f5f-96a2-14d12934df47"
+    },
+    {
+      "claim_id": "8100d498-396d-4417-9514-517cb7103b1d",
+      "result_id": "dc2058fd-0476-4f5f-96a2-14d12934df47"
+    },
+    {
+      "claim_id": "2a6dccab-473e-4ec7-9f82-d3140724cc9a",
+      "result_id": "dc2058fd-0476-4f5f-96a2-14d12934df47"
+    },
+    {
+      "claim_id": "9fb754fc-cb6b-4f25-a811-30b206712481",
+      "result_id": "dc2058fd-0476-4f5f-96a2-14d12934df47"
+    },
+    {
+      "claim_id": "aa3135ad-e4fb-478d-96f0-c48ea3d2d195",
+      "result_id": "dc2058fd-0476-4f5f-96a2-14d12934df47"
+    },
+    {
+      "claim_id": "51259814-d621-47b7-a3c6-1a873890e05b",
+      "result_id": "dc2058fd-0476-4f5f-96a2-14d12934df47"
+    },
+    {
+      "claim_id": "63ca748f-8000-48bc-9ea6-105867f23734",
+      "result_id": "001ab515-37b6-4548-9a1c-da0b307f5c9e"
+    },
+    {
+      "claim_id": "37ce3823-138a-4ada-920a-5b23b39b54be",
+      "result_id": "001ab515-37b6-4548-9a1c-da0b307f5c9e"
+    },
+    {
+      "claim_id": "dcd1e37d-7969-4b65-86df-305b6f692e1d",
+      "result_id": "001ab515-37b6-4548-9a1c-da0b307f5c9e"
+    },
+    {
+      "claim_id": "602d8ce8-85cf-4c5c-95b7-23f4be65b356",
+      "result_id": "001ab515-37b6-4548-9a1c-da0b307f5c9e"
+    },
+    {
+      "claim_id": "10c4ea6c-44c0-4b69-adfd-f7660c9a7632",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "9e104086-b5ce-461b-becb-2817e3a0c05b",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "b3af1f74-f84a-4c3b-9232-40de574be294",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "c30f53cf-ed6a-448d-8f3c-748984195fec",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "40bc44ad-f080-4c94-b03d-2d71aea18b3b",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "ba21f357-1763-4716-ae8f-1e382f14c2e6",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "089d342a-3579-4c31-bbef-fab8573dac1c",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "2c60a5ab-2b17-41e5-8436-8c1d0b02e9c2",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "b7d53691-e497-436a-99a1-9f98ad0df4aa",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "e47f5f32-fe89-4c6d-a544-d3569ede7dbd",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "c6efaeb7-4623-4852-a80c-292c276a7408",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "63c04ade-373d-4e74-a793-4cfd03e69f0a",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "30045498-e48f-4ffd-ad23-ee7d7a53120c",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "017dd408-dd94-4c02-98c0-dfd0b2af502e",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "723ecb14-74b8-4436-89ca-32bd95e39a41",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "b0234275-0f64-4bad-8d1e-93255d5babed",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "0191d48d-20e4-4ff7-9cd8-27dd1a523d6b",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "e2850545-de16-4b53-8457-ea76191fc391",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "edc98b46-13cd-4959-9e7d-268ba66b609d",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "df5f13d9-ce6b-4b96-ab4d-8ef6536ef070",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "9cf406cb-00da-4d35-b9a2-cf26d6154735",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "db20d41f-fefd-4f46-aa43-82ff6641d50d",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "5d8d4bd1-3cdb-49a9-b40d-e835fb7d0d76",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "f2d754af-2d74-46f5-ae97-c011f7fd6f67",
+      "result_id": "b0cbb634-f8ce-4231-a271-5784c7052efe"
+    },
+    {
+      "claim_id": "0803b475-0488-4073-84ab-a55ef893549d",
+      "result_id": "6ad22bdd-1bb6-4c4d-a51c-c632ea4f7200"
+    },
+    {
+      "claim_id": "99c2adae-d69d-4320-9402-30428aa58054",
+      "result_id": "6ad22bdd-1bb6-4c4d-a51c-c632ea4f7200"
+    },
+    {
+      "claim_id": "bba44efd-f7cd-414a-a15f-e75ad22b5964",
+      "result_id": "3aeb28a3-408f-412f-a8d7-c87d06accf17"
+    },
+    {
+      "claim_id": "578dfc38-d6f1-44ac-aa74-7211833dd58d",
+      "result_id": "3aeb28a3-408f-412f-a8d7-c87d06accf17"
+    },
+    {
+      "claim_id": "f3124fa0-819f-475b-82ae-05ef69fa73b6",
+      "result_id": "3aeb28a3-408f-412f-a8d7-c87d06accf17"
+    },
+    {
+      "claim_id": "a32de1f2-aaf2-4e0c-a9fa-fec62c11a4ab",
+      "result_id": "3aeb28a3-408f-412f-a8d7-c87d06accf17"
+    },
+    {
+      "claim_id": "cf95de81-3059-466b-982e-40ebb63a1eee",
+      "result_id": "3aeb28a3-408f-412f-a8d7-c87d06accf17"
+    },
+    {
+      "claim_id": "c063b6b3-d9d7-4555-8288-de644b133db3",
+      "result_id": "3aeb28a3-408f-412f-a8d7-c87d06accf17"
+    }
+  ],
+  "comparisons": []
+}

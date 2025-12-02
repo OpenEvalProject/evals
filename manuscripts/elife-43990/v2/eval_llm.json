@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C68",
+      "C69",
+      "C75",
+      "C98",
+      "C99"
+    ],
+    "result": "The UK Biobank cohort recruited 503,317 participants aged 38-73 between 2006-2010, with the analytical sample being 45.5% male, average age 57.3 years, and more educated/healthier than the general UK population. The sample had varying prevalence of health outcomes (1.5% stroke to 34.6% depression) and 2.0% mortality during follow-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31, C68-C69, C75, C98-C99 provide consistent descriptive statistics about the UK Biobank sample characteristics. These are straightforward data descriptions from the study cohort with no analytical complexity, and the claims are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C78"
+    ],
+    "result": "Intelligence and education are phenotypically and genetically correlated (rg=0.70), both are heritable, and are associated with health and socioeconomic outcomes. Intelligence is relatively stable across the lifespan (r=0.66 from age 11 to 77), and education causally increases IQ by 1-5 points per year. However, quasi-experimental studies of intelligence effects on education are lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C17, C71-C74, C78 summarize established prior knowledge supported by multiple citations. These background claims are well-documented in the literature and provide context for the study. The authors appropriately cite relevant prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C70",
+      "C88",
+      "C107"
+    ],
+    "result": "Mendelian randomization relies on genetic variants that are randomly inherited, invariant post-conception, unaffected by reverse causation, and largely unconfounded. However, weak instrument bias can occur with sample overlap, and multivariable MR does not overcome bias from pleiotropic pathways other than the exposures of interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22, C70, C88, C107 describe fundamental principles and limitations of Mendelian randomization methodology. These are well-established methodological facts supported by appropriate citations and represent accurate descriptions of the method's assumptions and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "SNPs associated with intelligence are likely to also affect education and vice versa, making most SNPs pleiotropic for both traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are reasonable inferences given the strong genetic correlation (rg=0.70) between intelligence and education reported in C10. This pleiotropy is the central motivation for using multivariable Mendelian randomization in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "219 independent SNPs were identified at p<5\u00d710\u207b\u2078: 144 associated with intelligence only, 38 with education only, and 37 with both traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 describe the SNP selection process with specific numbers that are internally consistent (144+38+37=219). The methodology for SNP selection (clumping, p-value thresholds) is standard for Mendelian randomization studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Bidirectional Mendelian randomization showed that one SD increase in intelligence increased education by 0.52 SD (p=2.2\u00d710\u207b\u00b9\u2074\u2075), while one SD increase in education increased intelligence by 0.77 SD (p=3.0\u00d710\u207b\u2076\u00b2). Greater heterogeneity was observed for education effects (I\u00b2=0.60) than intelligence effects (I\u00b2=0.48).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 report primary bidirectional MR findings with strong statistical significance and appropriate heterogeneity statistics. The results are supported by Figure 3 and demonstrate bidirectional causal relationships. The heterogeneity statistics suggest potential pleiotropy, which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C104"
+    ],
+    "result": "Univariable Mendelian randomization showed that higher intelligence had beneficial total effects on most health outcomes (reducing hypertension, diabetes, heart attack, depression, smoking, BMI, blood pressure, sedentary behavior) and increased income across all thresholds, height, grip strength, physical activity, and alcohol consumption. Education showed similar patterns except no effect on vigorous physical activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C56, C104 report univariable MR results with appropriate effect sizes, confidence intervals, and p-values. The findings show consistent beneficial effects for both exposures across multiple outcomes. The exception for alcohol consumption is noted. Statistical significance is properly reported with very small p-values for most associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Multivariable Mendelian randomization with strong instruments (F-statistic=21.6) showed that intelligence had positive direct effects on income and alcohol consumption, and negative direct effects on moderate and vigorous physical activity. Education had positive direct effects on income, alcohol consumption, and vigorous physical activity, and negative direct effects on smoking, BMI, and sedentary behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C57-C67 report multivariable MR results that appropriately account for pleiotropy between intelligence and education. The Sanderson-Windmeijer F-statistic (21.6) indicates adequate instrument strength. The direct effects are generally attenuated compared to total effects, which is expected and supports the hypothesis of mediation between traits. Results are visualized in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C79",
+      "C105",
+      "C106",
+      "C109",
+      "C110"
+    ],
+    "result": "Direct effects of both intelligence and education were substantially attenuated compared to total effects. For intelligence, direct effects on income were 54-89% smaller than total effects. For education, direct effects were 27-38% smaller than total effects. This attenuation suggests substantial mediation of intelligence effects through education.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C79, C105-C106, C109-C110 compare univariable and multivariable MR results to quantify mediation. The attenuation of direct effects compared to total effects is the key finding supporting the hypothesis that intelligence and education mediate each other's effects. The quantification of attenuation percentages is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Each additional year of education (0.19 SD) would result in 2.0-3.1pp increases in probability of higher income thresholds, 0.04 units increase in alcohol consumption, 8.87 fewer minutes of sedentary behavior per day, and 0.06 more days of vigorous activity per week.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 translate the standardized effect estimates into policy-relevant units (per year of education). The conversion from SD to years (0.19 SD = 1 year) is stated and the calculations appear consistent with the multivariable MR results. This provides practical interpretation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Intelligence was measured using a 13-item verbal-numeric reasoning test in UK Biobank, which is relatively crude. However, Mendelian randomization is less affected by measurement error than conventional analyses. The intelligence GWAS used older adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 acknowledge limitations in intelligence measurement but correctly note that instrumental variable methods (MR) are robust to measurement error in the exposure. The use of adult intelligence GWAS is noted as a limitation that may affect interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "SNPs associated with education also associate with parental education, and non-inherited parental alleles associate with offspring outcomes (31% and 29% of transmitted effect size for fathers and mothers respectively). Substantial fractions of education heritability estimates may be due to indirect parental effects (dynastic effects).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 discuss potential confounding from dynastic effects and assortative mating, citing appropriate studies (Kong et al., 2018; Young et al., 2018). The quantification of non-transmitted allele effects (31% and 29%) provides evidence for the magnitude of this bias. This is an important limitation acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Smoking rates have declined since the 1960s-1980s when UK Biobank participants left school, which may limit generalizability of findings on smoking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 appropriately notes a limitation regarding temporal generalizability of the smoking results. This is a reasonable concern given the cohort's age and historical changes in smoking prevalence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "If the Mendelian randomization assumptions hold, the findings suggest that both intelligence and education affect health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 provides an appropriately conditional conclusion that depends on MR assumptions holding. This is the main conclusion of the paper and is supported by the multivariable MR results showing independent direct effects of both intelligence and education on multiple outcomes.",
+    "result_type": "MAJOR"
+  }
+]

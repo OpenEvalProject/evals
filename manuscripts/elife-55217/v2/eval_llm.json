@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The cerebellar circuit for pursuit eye movements involves mossy fibers relaying signals to granule cells, which connect via parallel fibers to Purkinje cells. Purkinje cells inhibit floccular target neurons (FTNs) in the vestibular nucleus, which are one synapse from motoneurons. Short-term learning occurs at or upstream of Purkinje cells and is linked to climbing fiber inputs causing long-term depression at parallel fiber-Purkinje cell synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C12-C16 collectively describe the anatomical and functional organization of the cerebellar pursuit circuit based on established neuroanatomy and prior neurophysiological studies. The claims are well-supported by multiple citations to prior research and represent accepted knowledge about cerebellar structure and function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Single-trial learning in pursuit eye movements shows a saturating (sigmoidal) relationship with error magnitude, with a retention constant of approximately 0.85, meaning about 15% of the learned response is forgotten per trial in the absence of error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by experimental data from both monkeys showing sigmoidal fits superior to linear models (AIC comparison), exponential decay during error-clamp trials, and consistent retention constants across subjects. The measurements are quantitative with confidence intervals provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The expression of single-trial learning scales linearly with pursuit speed in the probe trial, but pursuit speed during the learning trial does not affect learning expression. This demonstrates distinct effects of pursuit speed on memory acquisition versus expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are supported by experimental data with appropriate statistical tests (RM-ANOVA showing significant effects for probe speed but not learning speed, high R\u00b2 values for linear fits). The contrasting results between the two experimental conditions provide strong evidence for the dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "A single-learning-process computational model with parallel fiber inputs linearly related to pursuit speed successfully predicts both the saturating relationship between error and single-trial learning and the linear generalization across probe pursuit speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 demonstrate that the model reproduces key behavioral observations. The model was constrained by empirical data (retention constant ~0.85, saturating learning function) and successfully predicts generalization as an emergent property, providing computational support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "After 100 consecutive learning trials, learned responses never fully compensate for the imposed instruction and show a linear (not saturating) relationship with instruction magnitude, contrasting with single-trial learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by experimental data from both monkeys showing incomplete compensation, high R\u00b2 values for linear fits, and AIC model comparison favoring linear over sigmoidal models after 100 trials. This represents a key qualitative difference from single-trial learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The single-learning-process model fails to predict the trial-course of learning over 100 trials, learning too quickly and systematically misestimating asymptotic learning levels. This demonstrates that pursuit learning cannot be explained solely by accumulation of single-trial learning with forgetting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 show clear discrepancies between model predictions and data. The model reaches asymptote too quickly and predicts a saturating (not linear) relationship between instruction and asymptotic learning. This falsification of the single-process model is well-demonstrated and leads to the key conclusion that multiple processes are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Retention after 1000 learning trials (retention constant ~0.95) is significantly better than after 20 trials (retention constant ~0.85), suggesting gradual transition from a labile, low-retention process to a high-retention process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by experimental data with confidence intervals showing non-overlapping retention constants at different timescales. The interpretation of a transition between learning processes is reasonable given the data, though the mechanism remains to be directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "A cerebellar circuit model with two plasticity sites (fast learning at parallel fiber-Purkinje cell synapses with poor retention, slow learning at FTN inputs with excellent retention guided by Purkinje cell responses) plus recurrent inhibition from FTNs to inferior olive successfully explains learning across multiple timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11, C38-C39 describe the four main principles and show the model fits data well (R\u00b2 = 0.99 for RE, 0.97 for YO) with consistent parameters across monkeys. The model successfully predicts trial-courses, asymptotic learning, and retention data. However, the model represents one possible implementation and alternative architectures might also work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The generalization of learning to pursuit speed changes qualitatively across extended learning: early learning shows linear generalization across all probe speeds, while after 1000+ trials, learning generalizes linearly only for probe speeds slower than the learning speed. This suggests either changing properties at a single learning site or transfer between sites with different functional properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C50 are supported by extensive experimental data showing the time-course of generalization changes, with appropriate statistical tests (two-way ANOVA showing significant interaction effects). The pattern is consistent across monkeys and multiple experimental conditions. The interpretation that this reflects different sites/mechanisms is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The complete circuit model with speed-tuned inputs to FTNs reproduces both trial-courses of learning and changes in generalization across timescales. The model predicts that Purkinje cell adaptive responses should diminish over thousands of trials as learning transfers to FTN inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 shows the model successfully reproduces complex behavioral data across multiple experiments. Claim C52 represents a testable prediction from the model. The model provides a coherent framework linking circuit architecture to behavior, though the specific assumption of Gaussian-tuned FTN inputs is one of several possible implementations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Theoretical analysis shows that any single-learning-process model with static error-learning relationship and saturating single-trial learning cannot predict linear asymptotic learning after 100 trials. Similarly, a two-independent-process model fails to predict the observed linear relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide mathematical arguments based on the model equations showing why these alternative architectures fail. The logic is sound given the constraints (retention values, small learning rate for slow process), though the analysis assumes specific model forms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Multiple lines of evidence support the hypothesis that fast learning occurs in cerebellar cortex (likely at parallel fiber-Purkinje cell synapses) while slow learning with long-term storage occurs in deep cerebellar nuclei (likely FTNs). This includes neurophysiological data, lesion studies, and computational modeling, though the exact sites remain to be definitively proven.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C55-C64 synthesize evidence from the current study and extensive prior literature. The convergent evidence from multiple paradigms and approaches is compelling, though the authors appropriately note that the tight link between complex spikes and learning doesn't definitively prove the parallel fiber-Purkinje cell synapse is the plasticity site (C56), and alternative mechanisms remain possible (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Memory transfer between sites for early acquisition and long-term storage is a general principle observed across multiple memory systems including fear memory, birdsong learning, and human declarative memory, providing broader context for the cerebellar findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by citations to prior research in other memory systems. These claims provide important context showing that the principle of memory transfer is not unique to cerebellar learning, strengthening the plausibility of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The floccular complex shows anatomical specialization: unlike the general cerebellar rule, Purkinje cells and FTNs do not receive identical mossy fiber inputs. Limited recordings suggest FTNs may have diverse velocity-dependent responses, potentially consistent with a distribution of preferred speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C71 are supported by anatomical studies, but C72 is based on limited recordings from a single prior study. The interpretation that FTN diversity reflects speed tuning is speculative. More extensive neurophysiological characterization of FTN responses would be needed to definitively support the model's assumption of Gaussian speed tuning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Incomplete adaptation (residual errors >50% even after 1000+ trials) is explained by active recurrent inhibition from the cerebellum to the inferior olive rather than by forgetting, as evidenced by near-perfect retention (constant ~1.0) after extended learning. This inhibition may promote conservative learning that doesn't respond hastily to noisy inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 are supported by experimental data (incomplete adaptation, high retention after 1000 trials) and prior neurophysiological observations of reduced complex spike probability. The recurrent inhibition mechanism successfully explains the data and is consistent with known anatomy. However, C75, C76, and C80 represent mechanistic speculation that, while plausible, requires direct neurophysiological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The study used two adult male macaca mulatta monkeys (12-16 kg) as subjects, with all procedures approved by Duke University IACUC and conducted according to the Guide for the Care and Use of Laboratory Animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 provide standard methodological information about subjects and ethical compliance. These are straightforward factual statements appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

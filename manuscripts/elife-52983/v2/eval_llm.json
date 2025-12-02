@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors determined the cryo-EM structure of the endogenous ESX-3 secretion system from M. smegmatis by chromosomally tagging EccE3 with EGFP and purifying the complex from a \u0394ideR strain. The structure reveals a dimeric assembly with each protomer containing one copy each of EccB3, EccC3, and EccE3, and two conformationally distinct copies of EccD3 (EccD3-bent and EccD3-extended). Different regions were resolved at varying resolutions: 3.7 \u00c5 for transmembrane and upper cytoplasmic regions, 5.8 \u00c5 for the periplasmic region, and ~7 \u00c5 for the lower cytoplasmic region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural determination is well-supported by detailed cryo-EM data processing (C37-C40), biochemical purification (C33-C35), and model building (C45). The stoichiometry and architecture are directly observed in the electron density maps with appropriate resolution for the conclusions drawn. The use of endogenous expression via chromosomal tagging (C33-C34) represents a methodological strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The ESX-3 structure reveals a stacked architecture extending above and below the inner membrane, with protomers forming a stable dimer that is consistent with assembly into larger oligomers. Each protomer contains one copy of EccB3, EccC3, and EccE3 and two copies of EccD3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overall architecture and stoichiometry are directly supported by the cryo-EM structure (C5-C7). The inference about larger oligomer assembly (C8) is reasonable based on structural features and prior literature on ESX systems, though the structure itself shows a dimer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "EccD3 forms a homodimer creating a large transmembrane cavity (~20\u00d730 \u00c5) with distinct properties: the periplasmic half is hydrophobic with ordered lipid/detergent densities, while the cytoplasmic half contains polar residues. The two EccD3 copies adopt conformationally distinct states (bent and extended) due to flexibility in a conserved linker region (residues 100-127) that can adopt different secondary structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations of the EccD3 cavity and conformational states are well-supported by the 3.7 \u00c5 resolution data (C46-C56). The sequence conservation analysis (C57) and structural flexibility interpretation (C58-C61) are appropriately supported. The inference about conformational interconversion (C61) is reasonable based on the observed structural plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "EccE3 is positioned at the front of the ESX-3 dimer and forms extensive stabilizing interactions with both EccD3 subunits through conserved helices (amino acids 133-163). These interactions hold EccD3-extended in its extended conformation and prevent it from adopting the bent conformation. EccE3 has weak structural homology to glycosyl transferases but lacks the nucleotide binding pocket and has no obvious catalytic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations about EccE3 positioning and interactions are well-supported by the high-resolution data (C62-C63, C67). The structural homology analysis and functional inference (C64-C66) are appropriately cautious. The mechanistic interpretation about conformational stabilization (C68) is a reasonable inference from the structural data. The stability inference from the purification strategy (C70) is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The EccC3 domain of unknown function (DUF) was built de novo and reveals a Rossmann fold typical of nucleotide hydrolysis domains, with closest homology to the ATPase 1 domain of T. curvata EccC. The DUF makes extensive stabilizing contacts with EccD3-bent and EccD3-extended. The two protomers are nearly identical in the transmembrane and upper cytoplasmic regions except for the EccC3 transmembrane helices and EccB3 N-terminal tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The de novo model building of the DUF domain (C71) and its structural characterization (C72-C73) are supported by the 3.7 \u00c5 resolution data. The structural homology search provides appropriate context. The interaction observations (C74-C75) and protomer comparison (C76-C77) are direct structural observations that are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The EccC3 motor domains (ATPase 1, 2, and 3) are flexible and asymmetric between protomers. The transmembrane helices were modeled at 6 \u00c5 resolution using homology modeling and molecular dynamics. While ATPase 1 domains are similarly positioned in both protomers, ATPase 2 and 3 domains show significant asymmetry, with protomer ii showing a broken interface between ATPase 1 and 2 relative to crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observations about motor domain flexibility and asymmetry (C82-C85, C87) are supported by the lower resolution (~7 \u00c5) focused refinement data. The modeling approach for transmembrane helices (C78) is appropriate given the resolution limitations. The asymmetry between protomers (C83-C85) is clearly observed even at lower resolution, supporting the conclusions about conformational heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "EccB3 stabilizes the ESX-3 dimer through extensive cross-protomer interactions. It contains a flexible N-terminal tail, linker helix, single-pass transmembrane helix, and extended periplasmic domain. The N-terminal tail forms extensive cross-protomer contacts with multiple components, and the periplasmic domains share a large interaction interface, suggesting the periplasmic domain is essential for oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations about EccB3 architecture (C89) and cross-protomer interactions (C90-C94) are well-supported by the structural data. The inference about the importance of the periplasmic domain for oligomerization (C95) is reasonable based on the extensive interaction interface observed, though direct functional validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "A hexameric model of ESX-3 was constructed by modeling the complex as a trimer of dimers based on the low-resolution ESX-5 negative stain structure. The model shows alternating angles between protomers (72\u00b0 and 48\u00b0) and contains both observed EccC3 conformations. However, accommodation of a hexameric complex would require extensive rearrangement of EccC3 and EccB3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The modeling approach (C97-C100) is reasonable for generating hypotheses about higher-order assembly, but the model is based on a low-resolution structure of a different ESX system (ESX-5) with imposed C6 symmetry. The observation of clashes requiring extensive rearrangement (C101) suggests the static hexamer model may not represent the native state. The authors appropriately present this as a model rather than a definitive structure, but the uncertainty about the physiological oligomeric state limits the strength of these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The ESX-3 structure represents a post-translocation state awaiting substrate or nucleotide binding. The large distance (~65 \u00c5) between ATPase 1 domains would require extensive rearrangement for R-finger-mediated catalysis. The authors propose that movements in the flexible EccD3 linker could release EccE3 and EccC3, allowing ATPase domain rearrangement into an active conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The interpretation of the functional state (C103) is reasonable given the purification conditions (C102), but remains speculative. The observation about the distance between ATPase 1 domains (C105) is supported by the structure, and the requirement for rearrangement (C104-C105) is logical. However, the proposed mechanism (C106) is explicitly speculative and lacks direct experimental support. This represents a reasonable hypothesis for future testing rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The EccD3 cavity is structurally unique among membrane proteins and appears capped by lipids on the periplasmic side. While large enough to transit a folded EsxG/H dimer, the strong hydrophobicity suggests a novel, non-water-mediated secretion mechanism. Alternatively, the cavity might transport non-protein substrates such as mycobacterial lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural uniqueness of the cavity (C110) and lipid capping observation (C111) are supported by the data. The size calculation (C112) is straightforward. However, the mechanistic interpretations (C113) and alternative hypotheses (C114-C115) are explicitly speculative. These represent interesting hypotheses that require experimental validation through functional studies, substrate identification, or structures with bound cargo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The ESX-3 operon shows 67% sequence identity between M. smegmatis and M. tuberculosis over 4354 amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward sequence comparison analysis (C30) that can be independently verified and is appropriately quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The ESX-3 structure agrees with concurrent work by Famelis et al. and, given high sequence conservation among ESX systems, provides a framework for modeling other ESX systems and for structure-based drug design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The agreement with concurrent work (C107) provides independent validation. The inference about applicability to other ESX systems (C108) is reasonable given documented sequence conservation. The statement about utility for drug design and hypothesis generation (C109) is appropriately modest about future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C96",
+      "C116",
+      "C117"
+    ],
+    "result": "Background information on ESX/Type VII secretion systems, including their distribution, functions, substrate properties, regulation, and biological importance, particularly for ESX-3's role in iron acquisition, cell survival, and virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout. They provide necessary context but are not novel findings from this study. The speculative hypothesis about EccB3 anchoring (C117) is appropriately presented as such.",
+    "result_type": "MINOR"
+  }
+]

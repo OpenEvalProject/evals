@@ -1,0 +1,1778 @@
+{
+  "submission": {
+    "id": "c151dc96-d882-4051-8fc3-4262013e1424",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:27:42.088775Z",
+    "updated_at": "2025-12-02T06:27:42.088775Z"
+  },
+  "content": [
+    {
+      "id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "submission_id": "c151dc96-d882-4051-8fc3-4262013e1424",
+      "content_type": "manuscript",
+      "content_text": "# Redox-dependent rearrangements of the NiFeS cluster of carbon monoxide dehydrogenase\n\n## Authors\n\n- Elizabeth C Wittenborn<sup>1</sup> ([ORCID: 0000-0002-8473-0814](https://orcid.org/0000-0002-8473-0814))\n- M\u00e9riem Merrouch<sup>2</sup>\n- Chie Ueda<sup>3</sup>\n- Laura Fradale<sup>2</sup>\n- Christophe L\u00e9ger<sup>2</sup> ([ORCID: 0000-0002-8871-6059](https://orcid.org/0000-0002-8871-6059))\n- Vincent Fourmond<sup>2</sup> ([ORCID: 0000-0001-9837-6214](https://orcid.org/0000-0001-9837-6214))\n- Maria-Eirini Pandelia<sup>3</sup> ([ORCID: 0000-0002-6750-1948](https://orcid.org/0000-0002-6750-1948))\n- S\u00e9bastien Dementin<sup>2</sup> \u2020\n- Catherine L Drennan<sup>1</sup> ([ORCID: 0000-0001-5486-2755](https://orcid.org/0000-0001-5486-2755)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry Massachusetts Institute of Technology Cambridge United States\n2. Aix Marseille Univ, CNRS Laboratoire de Bio\u00e9nerg\u00e9tique et Ing\u00e9nierie des Prot\u00e9ines Marseille France\n3. Department of Biochemistry Brandeis University Waltham United States\n4. Department of Biology Massachusetts Institute of Technology Cambridge United States\n5. Howard Hughes Medical Institute, Massachusetts Institute of Technology Cambridge United States\n6. Bio-inspired Solar Energy Program Canadian Institute for Advanced Research Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe C-cluster of the enzyme carbon monoxide dehydrogenase (CODH) is a structurally distinctive Ni-Fe-S cluster employed to catalyze the reduction of CO2 to CO as part of the Wood-Ljungdahl carbon fixation pathway. Using X-ray crystallography, we have observed unprecedented conformational dynamics in the C-cluster of the CODH from Desulfovibrio vulgaris, providing the first view of an oxidized state of the cluster. Combined with supporting spectroscopic data, our structures reveal that this novel, oxidized cluster arrangement plays a role in avoiding irreversible oxidative degradation at the C-cluster. Furthermore, mutagenesis of a conserved cysteine residue that binds the C-cluster in the oxidized state but not in the reduced state suggests that the oxidized conformation could be important for proper cluster assembly, in particular Ni incorporation. Together, these results lay a foundation for future investigations of C-cluster activation and assembly, and contribute to an emerging paradigm of metallocluster plasticity.\n\n## Introduction\n\nRoughly half of all enzymes make use of metal centers to expand their chemical repertoire (Waldron et al., 2009). Among the most fascinating of the metallocofactors used for such purposes are Fe-S clusters, which are thought to be the most ancient biological cofactors and which enable chemical transformations ranging from simple electron transfer events to the formation and cleavage of carbon-carbon bonds (Rees and Howard, 2003; Beinert et al., 1997). Complex Fe-S clusters, containing alternative metal ions and/or expanded metal frameworks, such as the FeMo-cofactor of nitrogenase, the H-cluster of Fe-Fe hydrogenase, and the C-cluster of Ni-dependent carbon monoxide dehydrogenase (CODH), catalyze fundamental redox conversions that are thought to have enabled early life on Earth (Rees and Howard, 2003; Rees, 2002). Given their structural complexity and the essential nature of the reactions they catalyze, these clusters have collectively been termed the \u2018great clusters\u2019 of biology (Rees, 2002).\n\nThe great clusters, and the proteins that house them, have become the focus of extensive mechanistic and structural investigation in the hopes of yielding new applications in clean energy production and bioremediation. In particular, CODH catalyzes the interconversion of the gaseous pollutant CO and the greenhouse gas CO2, leading to the removal of an estimated 108 tons of CO from the lower atmosphere each year and making it an attractive remediation tool (Bartholomew and Alexander, 1979). The anaerobic,\u00a0Ni-dependent CODH has a homodimeric structure containing a total of five metalloclusters, called the B-, C-, and D-clusters. The C-cluster is the site of CO/CO2 interconversion and is composed of a [Ni-3Fe-4S] cubane connected through a linking sulfide (SL) to a unique iron site (Feu) (Figure 1) (Drennan et al., 2001; Dobbek et al., 2001). Comprehensive spectroscopic analyses have revealed the basic redox states and kinetic properties of this complex metallocluster, and crystal structures with substrates and inhibitors bound have provided snapshots along the reaction pathway (Figure 2) (Jeoung and Dobbek, 2007; Gong et al., 2008; Kung et al., 2009; Jeoung and Dobbek, 2009; Fesseler et al., 2015; Lindahl et al., 1990; Kumar et al., 1993; Anderson and Lindahl, 1994; Anderson and Lindahl, 1996; Seravalli et al., 1997; Fraser and Lindahl, 1999; Chen et al., 2003; Seravalli and Ragsdale, 2008; Drennan and Peters, 2003). These studies have revealed the C-cluster to take on four discrete redox states termed Cox, Cred1, Cint, and Cred2 (Lindahl et al., 1990; Kumar et al., 1993; Anderson and Lindahl, 1994; Anderson and Lindahl, 1996; Seravalli et al., 1997; Fraser and Lindahl, 1999). The most widely accepted mechanism of CO oxidation involves a one-electron reductive activation of the inactive Cox state to Cred1 followed by a catalytic cycle involving conversion between Cred1 and Cred2 (Figure 2) (Lindahl et al., 1990; Kim et al., 2004; Lindahl, 2008). Despite this relatively unified understanding of CO oxidation activity, there are still many gaps in our understanding of this complicated enzyme that are limiting with regard to both our understanding of CODH biochemistry and potential applications of CODH in industrial settings. In particular, there has been a push to characterize enigmatic redox states and also to probe the effects of molecular oxygen on enzyme activity (Merrouch et al., 2015; Wang et al., 2015; Domnik et al., 2017). Here, we report the crystal structure of the CODH from Desulfovibrio vulgaris (DvCODH) (Hadj-Sa\u00efd et al., 2015), which reveals a surprising and unprecedented conformational rearrangement of metal ions in the C-cluster and provides the first visualization of the cluster in an oxidized state. Through combined structural and spectroscopic data, we show that conversion between the oxidized and reduced states of the cluster is reversible, consistent with previous electrochemical investigations (Merrouch et al., 2015). We further consider the implications of these findings in terms of oxygen\u00a0sensitivity and cluster assembly and with respect to the other great clusters in biology.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig1-v1.jpg)\n\n**Figure 1.:** Protein structure shown in ribbon representation in blue with metalloclusters labeled and shown as spheres; Ni in green, Fe in orange, S in yellow. Reaction catalyzed by CODH is shown below.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Structure of DvCODH in ribbon representation with metalloclusters shown as spheres; Ni in green, Fe in orange, S in yellow. (b) Overlay of the C\u03b1 traces of DvCODH (blue), Rhodospirillum rubrum CODH (red; PDB ID: 1JQK), Carboxydothermus hydrogenoformans CODH (green; PDB ID: 1SU8), and Moorella thermoacetica CODH (purple; PDB ID: 1MJG).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Electron density (2FO\u2212FC, contoured to 1\u03c3) for the [2Fe-2S] cluster of DvCODH. Protein is shown in ribbon representation with ligating amino acid residues as sticks and [2Fe-2S] cluster as spheres and sticks; Fe in orange, S in yellow. (b) Fe anomalous difference map (contoured to 8\u03c3) at the D-cluster supports the assignment of a [2Fe-2S] cluster in this position. (c) Alignment of CODH sequences. The C-X2-C D-cluster binding motif observed in the DvCODH sequence is also present in the sequences of other, uncharacterized CODHs. Sequences of structurally and biochemically characterized CODHs are in bold.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig2-v1.jpg)\n\n**Figure 2.:** The catalytic cycle begins with the C-cluster in the Cred1 redox state (a one-electron reduced state of the C-cluster) with H2O bound to Feu (Jeoung and Dobbek, 2007; Kung et al., 2009). CO binds to the cluster in a bent binding mode (Gong et al., 2008; Kung et al., 2009) and then undergoes a \u2018carbon shift,\u2019 positioning the carbonyl carbon atom for nucleophilic attack by a Feu-bound hydroxide, formed by loss of a proton from Feu-bound H2O to a catalytic base, which is proposed to be a conserved lysine residue (Drennan et al., 2001; Dobbek et al., 2001; Kim et al., 2004). The resulting COOH-type species is deprotonated by a second catalytic base, proposed to be an active site histidine residue, to form a metallocarboxylate species (Drennan et al., 2001; Dobbek et al., 2001; Jeoung and Dobbek, 2009; Fesseler et al., 2015; Chen et al., 2003; Kim et al., 2004). CO oxidation reduces the C-cluster by two electrons forming the Cred2 state (a species that is two-electrons more reduced than Cred1) and CO2 is released (Jeoung and Dobbek, 2007; Kumar et al., 1993; Anderson and Lindahl, 1996). We note that, although Cred2 formation and CO2 release have been drawn concomitantly, the rate of CO2 release has been shown to be slower than the rate of cluster reduction (Seravalli and Ragsdale, 2008). For the next round of turnover, the cluster undergoes a two-electron oxidation, reforming the Cred1 state. Cluster oxidation is thought to proceed through two single-electron transfer events via an intermediate Cint redox state as electrons flow through the B- and D-clusters to an external redox partner, such as ferredoxin. The Cox redox state is one electron more oxidized than Cred1. States of the C-cluster that have been visualized crystallographically are indicated with a red asterisk.\n\n## Results and discussion\n\nThe overall fold and cluster placement of DvCODH is highly similar to other structurally characterized CODHs (Figure 1\u2014figure supplement 1) (Drennan et al., 2001; Dobbek et al., 2001; Domnik et al., 2017; Doukov et al., 2002; Darnault et al., 2003). One noteworthy difference with respect to other CODHs is the identity of the D-cluster, a solvent-exposed Fe-S cluster at the dimer interface that serves as an electron conduit to the surface of the protein. Instead of the expected [4Fe-4S] cluster, (Drennan et al., 2001; Dobbek et al., 2001; Domnik et al., 2017; Doukov et al., 2002; Darnault et al., 2003) the electron density is consistent with a [2Fe-2S] cluster (Figure 1\u2014figure supplement 2) as is the placement of cysteine residues in the primary structure. CODH sequence alignments reveal that instead of a C-X7-C D-cluster binding motif, DvCODH, as well as several uncharacterized CODHs, have a C-X2-C motif (Figure 1\u2014figure supplement 2). This shortened C-X2-C motif appears to constrain the geometry of the ligating cysteine residues such that coordination to a [4Fe-4S] cluster is not possible. Instead, the cysteine positions are ideally suited for coordination of a [2Fe-2S] cluster.\n\nIn the present work, we determined two structures of as-isolated DvCODH using two independent protein batches and much to our surprise, we observe different conformations of the C-cluster in each structure. A 2.50 \u00c5 resolution structure of as-isolated DvCODH (determined using protein batch 1) displays the canonical [Ni-3Fe-4S]-Feu C-cluster (Figure 3a; Figure 3\u2014figure supplement 1a; Supplementary file 1) (Drennan et al., 2001; Gong et al., 2008; Doukov et al., 2002; Darnault et al., 2003); the [Ni-3Fe-5S]-Feu state that was observed in structures of Carboxydothermus hydrogenoformans CODH-II (Dobbek et al., 2001; Dobbek et al., 2004) is no longer thought to be catalytically relevant (Jeoung and Dobbek, 2007; Kung et al., 2009; Drennan and Peters, 2003; Feng and Lindahl, 2004). The ligation of the C-cluster is conserved in DvCODH (Drennan et al., 2001; Dobbek et al., 2001; Gong et al., 2008; Domnik et al., 2017; Doukov et al., 2002; Darnault et al., 2003) with four cysteines ligating the cubane portion of the cluster (Cys519 is the Ni ligand); one histidine (His266) and one cysteine (Cys302) ligate Feu (Figure 3a; Figure 3\u2014figure supplement 1a).\n\nThe second, higher-resolution (1.72 \u00c5) structure of as-isolated DvCODH (determined using protein batch 2) reveals a novel arrangement of ions within the C-cluster that was confirmed using anomalous diffraction data (Figure 3b; Supplementary file 1). In this structure, Ni, Feu, and SL are shifted, accompanied by conformational changes of several amino acid side chains, while the positions of the remaining three Fe and three S ions are unchanged. The Ni ion is bound in the site formerly occupied by Feu, coordinated by His266 and Cys302 (Figure 3b; Figure 3\u2014figure supplement 1b). The Ni is additionally ligated by Cys519 and Lys556 (Figure 3b; Figure 3\u2014figure supplement 1b). As mentioned above, Cys519 serves as a ligand to Ni in the canonical C-cluster and here adopts an alternative rotamer conformation such that coordination to Ni is maintained (Figure 3b; Figure 3\u2014figure supplement 1b). The occupancy of the alternative Cys519 conformation correlates with the occupancy of Ni, and both have been refined at an atomic occupancy of 70%, in general agreement with the metal analysis result of 0.5 Ni per monomer for the sample that was crystallized (Supplementary file 2). Lys556 is highly conserved and does not normally coordinate to the C-cluster, but is instead the proposed general base catalyst for deprotonation of water during CO oxidation (Figure 2) (Drennan et al., 2001; Dobbek et al., 2001; Kim et al., 2004). Here, the lysine amine group comes within 2.5 \u00c5 of Ni. Together, His266, Cys302, Cys519, and Lys556 ligate the Ni in this altered cluster in a highly distorted tetrahedral coordination geometry that is reminiscent of the geometry of the Ni site in Ni-Fe hydrogenases (Volbeda et al., 1995).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig3-v1.jpg)\n\n**Figure 3.:** (a) C-cluster with simulated annealing composite omit electron density map (contoured to 1\u03c3) as observed in the 2.50 \u00c5 resolution structure of as-isolated DvCODH (batch 1). The cluster adopts the canonical conformation, ligated by the indicated amino acid residues. Lys556 does not ligate to the cluster in this conformation and has been omitted here for clarity. The positioning of Lys556 is shown in Figure 3\u2014figure supplement 1a. (b) C-cluster as observed in the 1.72 \u00c5 resolution structure of as-isolated DvCODH (batch 2). Ni, Feu, and SL have shifted relative to the canonical cluster and Cys301 and Lys556 form new interactions to the cluster. Fe and Ni anomalous difference maps, calculated from data collected at Fe and Ni peak wavelengths (7130 and 8360 eV, respectively), are shown as green and orange mesh contoured to 6\u03c3 and 5\u03c3, respectively. Protein is shown in ribbon representation with ligating amino acid residues as sticks and C-cluster as spheres and sticks; Ni in green, Fe in orange, S in yellow, N in blue.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) The canonical\u00a0C-cluster as observed in protein batch 1. Lys556 has been shown for comparison with its position in the non-canonical cluster. (b) The C-cluster as observed in protein batch 2. Clusters are depicted as shown in Figure 3 with simulated annealing composite omit electron density maps contoured to 1\u03c3.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) View of the cluster prior to modeling and refinement of a ligand into the residual electron density. The peak of positive difference electron density (green mesh) indicates the presence of a ligand at a site bridging Feu and Fe1. (b) View of the cluster following refinement of an unknown ligand (grey sphere) into the electron density. The unknown ligand is within 2.4 \u00c5 of both Feu and Fe1. Protein is shown as in Figure 3. The lysine residue has been omitted from the left hand panels for simplicity. 2FO\u2212FC electron density (blue mesh) contoured to 1\u03c3; FO\u2212FC electron density (green and red mesh) contoured to\u00a0\u00b13\u03c3.\n\nConcomitant with the shift of the Ni ion, Feu and SL also undergo changes in their coordination environments while remaining associated with the [3Fe-3S] partial cubane (Figure 3b; Figure 3\u2014figure supplement 1b). In addition to interaction with SL, Feu is coordinated by Cys302, which forms a bridging interaction with Ni, and by a conserved cysteine residue (Cys301) that does not normally serve as a ligand to the C-cluster, resulting in an apparent three-coordinate geometry around Feu (Figure 3b;\u00a0Figure 3\u2014figure supplement 1b). The shift in the positions of Feu and SL results in the loss of an interaction between SL and a second Fe ion of the cubane (Fe1), leaving Fe1 with three coordinating ligands, Cys340 and two cubane sulfides. A small peak of residual electron density at a site bridging Feu and Fe1 is present in one of the protein chains in the asymmetric unit (Figure 3\u2014figure supplement 2). The occupancy of this site is low (<30%) precluding identification of the atom/ion. However, if fully occupied, the atom/ion would complete the tetrahedral geometry around these Fe atoms. In addition to changes in Fe coordination, the altered conformation of the C-cluster also involves changes in sulfide coordination state. In particular, the two cubane S ions that coordinate Ni in the canonical cluster are left in a possibly unstable state in which they could be susceptible to protonation or loss as free sulfide ions (Crack et al., 2006). In our structure, however, we see no evidence of degradation at these sites, likely due to inaccessibility to solvent or other protective features of the protein environment, in analogy to the case of stable [3Fe-4S] clusters.\n\nWe next investigated whether this altered C-cluster state is redox dependent. Pre-formed crystals of as-isolated DvCODH (batch 2, containing the altered cluster) were incubated with the reductant sodium dithionite. Strikingly, the resulting crystal structure displays the canonical C-cluster with Ni, Feu, and SL rearranged into their catalytically-relevant positions (Figure 4a,b; Supplementary file 1). To examine whether this metal rearrangement is reversible upon oxidation, crystals of reduced DvCODH were taken from the anaerobic chamber and incubated under ambient atmospheric conditions. Remarkably, oxidation of the reduced C-cluster by exposure to O2 results in reformation of the unusual cluster architecture (Figure 4c; Supplementary file 1), whereas both the D- and B-clusters remain intact (Figure 4\u2014figure supplement 1). Together, these results suggest that this altered cluster is an oxidized form of the C-cluster and that this multi-metal ion rearrangement is reversible (Figure 4d, Figure 4\u2014video 1). Most likely, a fortuitous oxidation event, affecting DvCODH batch 2, initially allowed us to obtain the first visualization of an oxidized state of the C-cluster.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig4-v1.jpg)\n\n**Figure 4.:** (a) C-cluster of dithionite-soaked DvCODH crystal (batch 2). Ni and Fe anomalous difference maps are shown as green and orange mesh, respectively, and contoured to 5\u03c3. (b) C-cluster of dithionite-soaked DvCODH crystal (batch 2) with simulated annealing composite omit electron density map contoured to 1\u03c3. A water molecule (red sphere) is observed bound to Feu. (c) C-cluster of reduced and then air-exposed DvCODH crystal (batch 2) with simulated annealing composite omit electron density map contoured to 1\u03c3. Lys556 has not been shown for simplicity. (d) Illustration of the conversion between the oxidized and reduced states of the C-cluster. Arrow and numbers indicate the assumed direction of metal ion movement from the oxidized state to the reduced state. (e) Continuous-wave X-Band EPR spectra of dithionite reduced DvCODH before (black trace) and after (red trace) exposure to air. Experimental conditions: mw power\u00a0=\u00a00.2 mW, mw frequency\u00a0=\u00a09.34 GHz, modulation amplitude 1 mT, temperature\u00a0=\u00a010 K. For panels a-d, protein is shown in ribbon representation with ligating amino acid residues as sticks and C-cluster as spheres and sticks; Ni in green, Fe in orange, S in yellow, N in blue, O in red.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Electron density at the D-cluster following 2 d at ambient atmospheric conditions. (b) Electron density at the B-cluster following 2 d at ambient atmospheric conditions. Protein is shown in ribbon representation with ligating amino acid residues as sticks and Fe-S clusters as spheres and sticks; Fe in orange, S in yellow. Simulated annealing composite omit electron density maps contoured to 1\u03c3.\n\nGiven the apparent ability of DvCODH to undergo fully reversible oxidation/reduction events in crystallo, we used electron paramagnetic resonance (EPR) spectroscopy to determine the effect of oxidation on the enzyme in solution. First, an EPR spectrum was recorded on a sample of dithionite-reduced DvCODH. This spectrum exhibits resonances characteristic of the one-electron reduced B- and D-clusters (centered around g\u00a0~\u00a02) and of the Cred1 and Cred2 forms of the C-cluster (gav\u00a0~\u00a01.83 and 1.87, respectively; see Figure 2), as has been previously observed for DvCODH (Hadj-Sa\u00efd et al., 2015) (Figure 4e, black trace). A parallel dithionite-reduced sample was incubated under ambient atmospheric conditions to mimic treatment of the DvCODH crystals (EPR-silent, data not shown). The oxygen-exposed sample was then re-reduced with dithionite and the EPR spectrum was recorded, revealing full recovery of the previously observed signals (Figure 4e, red trace). Combined, our crystal structures and EPR data reveal that the metalloclusters of DvCODH are not degraded upon oxidation and that the C-cluster avoids degradation by adopting an alternative, stable, oxidized conformation. Consistent with these results, DvCODH was recently shown to regain activity upon chemical or electrochemical reduction following exposure to molecular oxygen (Merrouch et al., 2015). In this respect, the rearranged C-cluster scaffold can be thought of as a \u2018safety net\u2019 for retaining cluster ions upon oxygen exposure, and may explain, at least in part, the ability of certain CODHs to recover activity following oxidation in air (Merrouch et al., 2015; Wang et al., 2015; Domnik et al., 2017). This kind of safety net could improve the ability of an organism to rapidly recover CODH activity after transient exposure to oxic conditions.\n\nOne of the more noteworthy aspects of the oxidized C-cluster is that cluster ligation involves one residue (Cys301) that is strictly conserved in CODHs but is not a ligand to the canonical C-cluster. Interestingly, previous work on the heterotetrameric CODH/acetyl-CoA synthase from Moorella thermoacetica (MtCODH/ACS) showed that mutation of the equivalent cysteine residue (Cys316) to serine resulted in an inactive CODH that appeared to lack an intact C-cluster (Kim et al., 2004).\n\nTo probe the effect of Cys301 in DvCODH, a DvCODH(C301S) variant was produced and characterized. Similar to what was observed with MtCODH/ACS (Kim et al., 2004), DvCODH(C301S) is inactive and does not contain Ni, as assessed by CO oxidation activity assays and inductively coupled plasma optical emission spectroscopy (ICP-OES), respectively (Supplementary file 2). Unlike wild-type DvCODH, DvCODH(C301S) cannot be activated by Ni under reducing conditions, analogous to what has been observed previously for DvCODH samples grown in the absence of the C-cluster maturation factor CooC (Hadj-Sa\u00efd et al., 2015; Merrouch et al., 2018).\n\nTo investigate the architecture of a non-activatable C-cluster, we determined the crystal structure of DvCODH(C301S) to 2.0 \u00c5 resolution (Supplementary file 1) and discovered an intact [3Fe-4S] C-cluster core with an Feu ion that adopts alternative conformations (Figure 5). Approximately 70% of Feu is in its canonical position coordinated by His266\u00a0and\u00a0Cys302, whereas approximately 30% is in the Ni-cubane site (see Methods; Figure 5\u2014figure supplement 1). Thus, in the absence of the non-canonical Feu-ligand Cys301, the cluster cannot be activated by Ni and Feu appears to be free to occupy multiple sites. Taken together, these data suggest that the novel structure of the C-cluster that we observe here, with Feu coordinated by Cys301, is relevant to processes beyond oxidation, specifically Ni incorporation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig5-v1.jpg)\n\n**Figure 5.:** The C-cluster has been refined with an alternative conformation of Feu. At 70% occupancy, Feu is ligated by His266 and Cys302 in its canonical binding site. At 30% occupancy, Feu is incorporated into the Fe-S cubane portion of the cluster. 2FO\u2212FC electron density contoured to 1\u03c3. Protein is shown in ribbon representation with ligating amino acid residues as sticks and C-cluster as spheres and sticks; Fe in orange, S in yellow, N in blue, O in red.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Refinement of a [3Fe-4S]-Feu C-cluster results in positive FO\u2212FC electron density (green mesh, contoured to\u00a0+3\u03c3) at the Ni binding site. 2FO\u2212FC electron density (blue mesh) contoured to 1\u03c3. (b) Fe anomalous difference map (orange mesh, contoured to 4.5\u03c3) indicates the presence of Fe at partial occupancy in the canonical Ni binding site. Protein is shown as in Figure 5.\n\nRegardless of its role(s), the dramatic rearrangement observed for the C-cluster adds to a growing appreciation that the ions of great clusters are in fact mobile. The oxidized P-cluster of nitrogenase adopts an open conformation relative to its reduced form through the outward movement of two Fe ions by 1.4 and 0.9 \u00c5 with accompanying loss of S coordination in a rearrangement that is proposed to couple proton transfer to electron transfer (Figure 6a) (Peters et al., 1997). More recently, Rees and coworkers demonstrated that both the inhibitor CO and an artificially-incorporated Se atom are able to displace a S atom of the cluster and furthermore that, under turnover conditions, the Se atom migrates around the cluster, sampling S positions (Figure 6b) (Spatzal et al., 2014; Spatzal et al., 2015). Very recently, it was also revealed that the same S atom of the VFe-cofactor (containing V in place of Mo) is displaced by a NH ligand, suggesting that cluster dynamics are likely key in catalysis (Sippel et al., 2018). Additionally, an O2-tolerant membrane-bound hydrogenase was shown to have a novel [4Fe-3S] cluster that undergoes redox-dependent structural changes as part of an O2-tolerance mechanism (Fritsch et al., 2011; Shomura et al., 2011); one Fe ion moves\u00a0~1.6 \u00c5 upon cluster oxidation and becomes coordinated by a protein backbone amide group (Figure 6c) (Shomura et al., 2011). In the present work, the metal migration of C-cluster atoms is more dramatic than in these other examples, with Ni moving\u00a0~3 \u00c5 and adopting an entirely new coordination environment, and Feu and SL moving\u00a0~1.9 and 2.6 \u00c5, respectively, with Feu also taking on a new coordination environment. This C-cluster rearrangement from oxidized to reduced appears to involve what amounts to a \u2018molecular cartwheel\u2019 with Ni, Feu, and SL following the same trajectory to end up in their canonical positions (Figure 4d, Figure 4\u2014video 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/39451/elife-39451-fig6-v1.jpg)\n\n**Figure 6.:** (a) The reduced and oxidized P-cluster of nitrogenase. Upon oxidation, Fe5 and Fe6 lose coordination to the central S1 ion, moving distances of 1.4 and 0.9 \u00c5, respectively. Arrows in the left hand panel show the direction of Fe ion movement. Protein is shown as sticks with P-cluster as spheres and sticks; Fe in orange, S in yellow, C in green, N in blue, O in red. PDB IDs: 3MIN (reduced) and 2MIN (oxidized). (b) The FeMo-cofactor of nitrogenase undergoes turnover-dependent rearrangements, observed as the movement of an artificially-incorporated Se atom. Under turnover conditions, Se migrates through the cluster from position S2B to S5A to S3A. FeMo-cofactor is shown as spheres and sticks; Fe in orange, S in yellow, Se in pink, Mo in teal, C in grey, O in red. PDB ID: 5BVG. (c) A unique [4Fe-3S] cluster is present in the O2-tolerant membrane-bound hydrogenase. Upon oxidation, Fe2 loses coordination to S3 and becomes coordinated by a backbone amide group of the protein. Arrow in the left hand panel shows the direction of Fe ion movement. Protein is shown as sticks with [4Fe-3S] cluster as spheres and sticks; Fe in orange, S in yellow, C in purple, N in blue, O in red. PDB IDs: 3AYX (reduced), 2AYY (oxidized).\n\nIn summary, X-ray crystallography has provided views of the \u2018great clusters\u2019 of biology, allowing us to marvel at these incredible metallic frameworks that capture and make use of CO, H2, and N2 gases. We are increasingly finding that these frameworks should not be thought of as rigid scaffolds, but rather as labile assemblies of metal with sulfide. The full nature and significance of this metallocluster lability is just now beginning to emerge and the roles appear to be diverse, including catalysis, electron transfer, protection from oxygen damage, and possibly cluster assembly. The one consistency is that these great clusters continue to surprise us.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Desulfovibrio  vulgaris str. Hildenborough)</td>\n      <td>cooS</td>\n      <td>NA</td>\n      <td>NCBI:2795474</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Desulfovibrio vulgaris str. Hildenborough)</td>\n      <td>cooC</td>\n      <td>NA</td>\n      <td>NCBI:2795475</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Desulfovibrio fructosovorans str. MR400)</td>\n      <td>Desulfovibrio fructosovorans str. MR400</td>\n      <td>PMID:1943706</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>modified pBGF4 shuttle vector</td>\n      <td>PMID:26255854</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>C301S forward primer</td>\n      <td>Eurogentec</td>\n      <td></td>\n      <td>ACATCAACGTGGCGGGG CTATCCTGCACGGGTA ACGAACTGCTC</td>\n    </tr>\n    <tr>\n      <td>Sequence- based reagent</td>\n      <td>C301S reverse primer</td>\n      <td>Eurogentec</td>\n      <td></td>\n      <td>GAGCAGTTCGTTACCCG TGCAGGATAGCCCCGCC ACGTTGATGT</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>DvCODH</td>\n      <td>PMID:26255854</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>DvCODH(C301S)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>DvCODH variant produced in the lab of Dr. C. L\u00e9ger as described in Methods</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>XDS/XSCALE</td>\n      <td>PMID:20124692</td>\n      <td>RRID:SCR_015652</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phaser</td>\n      <td>PMID:19461840</td>\n      <td>RRID:SCR_014219</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Scupltor</td>\n      <td>PMID:21460448</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Schwarzenbacher algorithm</td>\n      <td>PMID:15213384</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>PMID:20383002</td>\n      <td>RRID:SCR_014222</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>PMID:20124702</td>\n      <td>RRID:SCR_014224</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TLS parameterization</td>\n      <td>PMID:16552146</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MolProbity</td>\n      <td>PMID:20057044</td>\n      <td>RRID:SCR_014226</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>www.pymol.org/</td>\n      <td>RRID:SCR_000305</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, \u00a0algorithm</td>\n      <td>EasySpin</td>\n      <td>PMID:16188474</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein preparation, metal analysis, and activity assays of DvCODH and DvCODH(C301S)\n\nDvCODH was expressed in the presence of the C-cluster maturation factor CooC, as described previously (Hadj-Sa\u00efd et al., 2015). Briefly, the D. vulgaris genes encoding CODH (cooS) and the CooC maturase (cooC) were cloned into modified pBGF4 shuttle vectors under the control of the promoter of the Desulfovibrio fructosovorans Ni-Fe hydrogenase operon. The CODH construct was N-terminally strep-tagged. A construct encoding DvCODH(C301S) was generated from the wild-type sequence by site-directed mutagenesis (forward primer ACATCAACGTGGCGGGGCTATCCTGCACGGGTAACGAACTGCTC, reverse primer GAGCAGTTCGTTACCCGTGCAGGATAGCCCCGCCACGTTGATGT; mutation underlined). Protein was expressed in D. fructosovorans str. MR400 (Rousset et al., 1991) and purified under anaerobic conditions in a Jacomex anaerobic chamber (100% N2 atmosphere) by affinity chromatography on Strep-Tactin Superflow resin, as described previously (Hadj-Sa\u00efd et al., 2015). Protein concentrations were determined by amino acid analysis at the Centre for Integrated Structural Biology (Grenoble, France). Metal content (Supplementary file 2) was analyzed by inductively coupled plasma optical emission spectroscopy (ICP-OES). CO oxidation activity was assayed at 37\u00a0\u00b0C by monitoring the reduction of methyl viologen at 604 nm (\u03b5\u00a0=\u00a013.6 mM\u22121\u00b7cm\u22121), as described previously (Hadj-Sa\u00efd et al., 2015) (Supplementary file 2).\n\n### Crystallization of DvCODH and DvCODH(C301S)\n\nAll crystals were grown using as-isolated protein samples (i.e., samples were not activated with NiCl2 and sodium dithionite prior to crystallization). Crystals were grown anaerobically in an N2 atmosphere at 21\u00a0\u00b0C by hanging drop vapor diffusion in an MBraun anaerobic chamber. Crystals belonging to space group P212121 were obtained as follows: A 1 \u00b5L aliquot of as-isolated protein (10 mg/mL in 100 mM Tris-HCl pH 8) was combined with 1 \u00b5L of precipitant solution (1.0\u20131.1 M ammonium tartrate dibasic pH 7, 6\u20139% (v/v) glycerol) on a glass cover slide and sealed over a reservoir containing 500 \u00b5L of precipitant solution. Diffraction quality crystals grew in 2\u201310 d. Crystals were soaked in a cryo-protectant solution containing 1.0\u20131.2 M ammonium tartrate dibasic pH 7, 25% (v/v) glycerol and cryo-cooled in liquid nitrogen.\n\nCrystals belonging to either space group P21 or P1 were obtained as follows: A 1 \u00b5L aliquot of as-isolated protein (10 mg/mL in 100 mM Tris-HCl pH 8) was combined with 1 \u00b5L of precipitant solution (150\u2013250 mM MgCl2, 16\u201320% (w/v) PEG 3350) on a glass cover slide and sealed over a reservoir containing 500 \u00b5L of precipitant solution. Diffraction quality crystals grew in 1\u20136 d. Crystals were soaked in a cryo-protectant solution containing 250 mM MgCl2, 18\u201320% (w/v) PEG 3350, 9% (v/v) glycerol and cryo-cooled in liquid nitrogen.\n\nTo reduce crystals of as-isolated DvCODH, crystals were transferred into a soaking solution containing 250 mM MgCl2, 18% (w/v) PEG 3350, 5 mM sodium dithionite and incubated for 30 min. For structures of reduced DvCODH, crystals were transferred to a cryo-protectant solution containing 250 mM MgCl2, 18% (w/v) PEG 3350, 9% (v/v) glycerol and cryo-cooled in liquid nitrogen. For structures of reduced and then oxygen-exposed DvCODH, crystals were transferred into a dithionite-free drop containing 250 mM MgCl2, 18% (w/v) PEG 3350 prior to removal from the anaerobic chamber to avoid reaction of excess dithionite with molecular oxygen. Following removal from the chamber, 0.5 \u00b5L of aerobically-prepared precipitant solution was added to the drop to initiate equilibration with ambient atmospheric conditions. Crystals were harvested after 2 d as described above.\n\n### Data collection, model building, and refinement\n\nAll data were collected at the Advanced Photon Source (Argonne, IL) at beamline 24-ID-C at a temperature of 100 K using a Pilatus 6M pixel detector. Where applicable, native, Fe peak, and Ni peak data were collected on the same crystal for a particular sample. Native data were collected at an energy of 12662 eV (0.9792 \u00c5); Fe peak data at 7130 eV (1.7389 \u00c5); and Ni peak data at 8360 eV (1.4831 \u00c5). All data were integrated in XDS and scaled in XSCALE (Kabsch, 2010). Data collection statistics are summarized in Supplementary file 1.\n\nThe initial structure of DvCODH was determined to 2.50 \u00c5 resolution by molecular replacement (MR) in the program Phaser (McCoy et al., 2007) using data from crystals belonging to space group P212121. The search model for MR was generated from the structure of the CODH from Rhodospirillum rubrum (47% sequence identity; PDB ID: 1JQK) by modification in Sculptor (Bunk\u00f3czi and Read, 2011) using the Schwarzenbacher algorithm (Schwarzenbacher et al., 2004) with a pruning level of 2 to truncate non-identical residues at the C\u03b2 position. Metalloclusters were not included in the search model. A single MR solution was found with an LLG of 311, TFZ of 21.3, and R-value of 57.9. The model was completed through iterative rounds of model building in Coot (Emsley et al., 2010) and refinement in Phenix (Adams et al., 2010) (see below). Subsequent structures were determined by MR in Phaser using the initial DvCODH structure as a search model. Following MR, 10 cycles of simulated annealing refinement were performed in Phenix to eliminate existing model bias.\n\nFor all structures, refinement of atomic coordinates and atomic displacement parameters (B-factors) was carried out in Phenix using noncrystallographic symmetry (NCS) restraints. Models were completed by iterative rounds of model building in Coot and refinement in Phenix. In advanced stages of refinement, water molecules were added automatically in Phenix and modified in Coot with placement of additional water molecules until their number was stable. Final stages of refinement included translation, libration, screw (TLS) parameterization with one TLS group per monomer (Painter and Merritt, 2006). For structures determined to less than or equal to 2 \u00c5 resolution, NCS restraints were removed in final refinement cycles.\n\nIn advanced stages of structural refinement of the 1.72 \u00c5 as-isolated DvCODH structure, it became clear that two conformations of the C-cluster were present. Based on the electron density, the Fe-S scaffold of the oxidized form of the cluster was modeled at an occupancy of 80%, with the Ni ion at 70%. The canonical, reduced form of the cluster without Ni was modeled with an atomic occupancy of 20%. A peak of residual electron density at a position bridging Feu and Fe1 of the oxidized cluster appeared in late stages of refinement. Modeling of a water molecule at this position resulted in a refined occupancy of\u00a0~30%. The geometry of this site, however, is not consistent with coordination of H2O/OH\u2212, and given the long Fe-ligand bond distances (2.4 \u00c5), the site is likely occupied by a heavier atom, for example Cl\u2212 from the protein buffer. Due to the low occupancy (<30%) of an atom heavier than water at this site and the inability to resolve the identity of this ligand crystallographically, this site was left unmodeled in the final structure.\n\nThe structure of DvCODH(C301S) also contained an apparent mixture of cluster types at the C-cluster site. Here, the [3Fe-4S] partial cubane portion of the canonical C-cluster is intact and present at full occupancy (Figure 5\u2014figure supplement 1); however, modeling of Feu proved complicated. When modeled and refined as a [3Fe-4S]-Feu cluster at full occupancy, the atomic displacement parameter (B-factor) of Feu was higher (38.7 \u00c52) than the average for the ligating atoms of His266 (N\u03b5) and Cys302 (S\u03b3) (22.9 \u00c52) as well as for the remainder of the cluster (24.0 \u00c52), suggesting that Feu may be present at reduced occupancy. Additionally, positive difference electron density (Fo\u2212Fc) near the Ni-binding site of the C-cluster was observed, indicating the presence of an atom in this site (Figure 5\u2014figure supplement 1a). Based on the ICP-OES results, DvCODH(C301S) does not contain Ni, suggesting that an atom other than Ni occupies this site in the structure. Anomalous difference maps calculated from diffraction data collected at the iron peak wavelength (7130 eV) revealed a shoulder extending from Feu into this site, indicative of the presence of Fe at partial occupancy within the cubane (Figure 5\u2014figure supplement 1b). Together, the native diffraction data, anomalous difference data, and B-factor analysis suggested that there are two different states of the C-cluster in the sample: one with the canonical [3Fe-4S]-Feu scaffold and one in the form of a distorted [4Fe-4S] cubane. Indeed, when Feu is modeled with a split conformation such that at 70% occupancy it is present in its unique binding site and at 30% occupancy it is incorporated into the cubane, the cluster refines well into the electron density and the B-factors of Feu are better matched with those of the surrounding atoms (Figure 5).\n\nFinal refinement of each structure yielded models with low free R-factors, excellent stereochemistry, and small root mean square deviations from ideal values for bond lengths and angles. All refinement statistics are summarized in Supplementary file 1. Side chains without visible electron density were truncated to the last atom with electron density and amino acids without visible electron density were not included in the models. Final models contain the following residues (of 629 total): as-isolated (batch 1): 4\u2013628 (chains A and B); as-isolated (batch 2): 4\u2013629 (chain A), 2\u2013629 (chain B); reduced (batch 2): 4\u2013627 (chain A), 4\u2013628 (chain B); reduced/O2-exposed (batch 2): 8\u201363, 68\u2013286, 289\u2013629 (chain A), 6\u201363, 67\u2013287, 291\u2013628 (chain B); DvCODH(C301S): 4\u2013628 (chain A), 4\u2013628 (chain B), 5\u2013627 (chain C), 3\u2013628 (chain D). Models were validated using simulated annealing composite omit maps calculated in Phenix. Model geometry was analyzed using MolProbity (Chen et al., 2010). Analysis of Ramachandran statistics indicated that each structure contained the following percentages of residues in the favored, allowed, and disallowed regions, respectively: as-isolated (batch 1): 96.3%, 3.4%, 0.3%; as-isolated (batch 2): 96.8%, 2.9%, 0.3%; reduced (batch 2): 96.6%, 3.1%, 0.3%; reduced/O2-exposed (batch 2): 96.5%, 3.2%, 0.3%; DvCODH(C301S): 97.0%, 2.7%, 0.3%. Figures were generated in PyMOL (Schrodinger, 2015). Crystallography packages were compiled by SBGrid (Morin et al., 2013).\n\n### EPR spectroscopy sample preparation and data collection\n\nEPR samples were prepared using 57Fe-enriched DvCODH containing 13.3 57Fe/monomer and 0.5 Ni/monomer, as quantified by ICP-OES. All samples were prepared under oxygen-free conditions in a Coy anaerobic chamber. Samples were incubated with an excess of sodium dithionite (30\u201340 equivalents) for 20\u201330 min at 22\u00a0\u00b0C prior to freezing in liquid N2 under oxygen-free conditions. For the sample of air-exposed and re-reduced DvCODH, an aliquot was removed from the anaerobic chamber and incubated on ice under ambient atmospheric conditions for 50 min to afford full oxidation of the clusters. The sample was then returned to the anaerobic chamber and incubated with 30\u201340 equivalents of sodium dithionite for 20\u201330 min. Samples (250 \u00b5L) were loaded in Quartz EPR tubes (QSI Inc, Fairport Harbor, OH) and frozen in liquid N2 under oxygen-free conditions. EPR spectra were acquired at the Department of Chemistry Instrumentation Facility at MIT on a Bruker EMX Plus continuous wave (CW) X-Band spectrometer (operating at\u00a0~9.34 GHz) equipped with a rectangular resonator (TE101) and a cryogen-free system consisting of a Sumitomo RDK-408D2 cold head equipped with a ColdEdge Technologies waveguide cryostat. Spectra were acquired using Bruker Xenon software and were recorded at 10 K at a microwave power of 0.2 mW, using a modulation amplitude of 1 mT, a microwave frequency of 9.34 GHz, a conversion time of 82.07 ms, and a time constant of 81.92 ms. Spin quantification was carried out against a Cu2+-EDTA standard containing 200 \u00b5M CuSO4 in 10 mM EDTA, under non-saturating conditions. Quantitation of the S\u00a0=\u00a01/2 [Fe-S] centers amounted to 3.2 spins/dimer, similar to our previous report on DvCODH (Hadj-Sa\u00efd et al., 2015). Quantification of the Cred1 and Cred2 states was carried out on the basis of numerical double-integration of the simulated spectra using the MATLAB-based EasySpin software (Stoll and Schweiger, 2006); Cred1 was 0.43 spins/dimer and Cred2 was 0.35 spins/dimer.\n",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "591c8bd4-90d5-4305-a0a0-89d7c7bf91ad",
+      "submission_id": "c151dc96-d882-4051-8fc3-4262013e1424",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon Clardy, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39451.030](https://doi.org/10.7554/eLife.39451.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Redox-dependent metal migration in the Ni-Fe-S cluster of carbon monoxide dehydrogenase\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jon Clardy as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Philip Cole as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Douglas C Rees (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll of the reviewers were strongly in favor of publication. They were uniformly impressed with the importance of the findings and the technical rigor with which the studies were performed. The major issues that they felt needed to be addressed were with the presentation, which was more suitable for a specialized audience rather than the general readership that eLife seeks to attract. The specific issues were:\n\n1) Most readers are highly unlikely to be familiar with any previous work on carbon monoxide dehydrogenase, Fe-S enzymes, Ni-Fe-S-enzymes, bioenergy, or 'great clusters'. The manuscript as currently written dives right in, and it would be highly desirable to begin a bit further back. They suggested beginning with a discussion of Fe-S enzymes and electron transfer in the Introduction \u2013 something to take a reader who knows the rudiments of enzymology into the exciting world of electron transfer reactions. We would also suggest changing the title to \"Redox-dependent rearrangements of the NIFeS cluster in CO dehydrogenase\" or something similar.\n\n2) In line with the previous suggestion all reviewers felt that the Figure 1 supplement should be moved into the article proper. It summarizes the findings of the paper in terms that are likely to be more familiar to the general reader. Also it would be helpful to have a more explicit depiction of the redox states of Cox and Cred in the figure and text.\n",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ebf6aee7-729e-479f-9c86-88bbd9c38868",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C1",
+      "claim": "Roughly half of all enzymes make use of metal centers to expand their chemical repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "Roughly half of all enzymes make use of metal centers to expand their chemical repertoire (Waldron et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Waldron et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "6c21d3ee-b559-49dd-8033-15a7f5f3dae6",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C2",
+      "claim": "Fe-S clusters are thought to be the most ancient biological cofactors.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the most fascinating of the metallocofactors used for such purposes are Fe-S clusters, which are thought to be the most ancient biological cofactors and which enable chemical transformations ranging from simple electron transfer events to the formation and cleavage of carbon-carbon bonds (Rees and Howard, 2003; Beinert et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rees and Howard, 2003 and Beinert et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "5a2fc4bd-4ce1-47f8-9056-3aa3539dff93",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C3",
+      "claim": "Fe-S clusters enable chemical transformations ranging from simple electron transfer events to the formation and cleavage of carbon-carbon bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the most fascinating of the metallocofactors used for such purposes are Fe-S clusters, which are thought to be the most ancient biological cofactors and which enable chemical transformations ranging from simple electron transfer events to the formation and cleavage of carbon-carbon bonds (Rees and Howard, 2003; Beinert et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rees and Howard, 2003 and Beinert et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "2e1b4a63-0e81-40b9-9a02-ab3b57bb8bf4",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C4",
+      "claim": "Complex Fe-S clusters catalyze fundamental redox conversions that are thought to have enabled early life on Earth.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex Fe-S clusters, containing alternative metal ions and/or expanded metal frameworks, such as the FeMo-cofactor of nitrogenase, the H-cluster of Fe-Fe hydrogenase, and the C-cluster of Ni-dependent carbon monoxide dehydrogenase (CODH), catalyze fundamental redox conversions that are thought to have enabled early life on Earth (Rees and Howard, 2003; Rees, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rees and Howard, 2003 and Rees, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "66a3deb0-69f0-4c7e-864e-116818f324b5",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C5",
+      "claim": "Complex Fe-S clusters have been termed the 'great clusters' of biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Given their structural complexity and the essential nature of the reactions they catalyze, these clusters have collectively been termed the 'great clusters' of biology (Rees, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rees, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "f002ce93-0a26-4ead-be14-73d5732029ca",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C6",
+      "claim": "CODH catalyzes the interconversion of the gaseous pollutant CO and the greenhouse gas CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, CODH catalyzes the interconversion of the gaseous pollutant CO and the greenhouse gas CO2, leading to the removal of an estimated 108 tons of CO from the lower atmosphere each year and making it an attractive remediation tool (Bartholomew and Alexander, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bartholomew and Alexander, 1979",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "67b408cf-e165-4f80-8a30-77ecb10be367",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C7",
+      "claim": "CODH leads to the removal of an estimated 108 tons of CO from the lower atmosphere each year.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, CODH catalyzes the interconversion of the gaseous pollutant CO and the greenhouse gas CO2, leading to the removal of an estimated 108 tons of CO from the lower atmosphere each year and making it an attractive remediation tool (Bartholomew and Alexander, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bartholomew and Alexander, 1979",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "877b11ed-7357-4be2-9313-7404a853ece1",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C8",
+      "claim": "The anaerobic, Ni-dependent CODH has a homodimeric structure containing a total of five metalloclusters, called the B-, C-, and D-clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The anaerobic, Ni-dependent CODH has a homodimeric structure containing a total of five metalloclusters, called the B-, C-, and D-clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the manuscript text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "fda836b9-c9fd-4fc7-af77-05e8e102125a",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C9",
+      "claim": "The C-cluster is the site of CO/CO2 interconversion.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-cluster is the site of CO/CO2 interconversion and is composed of a [Ni-3Fe-4S] cubane connected through a linking sulfide (SL) to a unique iron site (Feu) (Figure 1) (Drennan et al., 2001; Dobbek et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Drennan et al., 2001 and Dobbek et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "ed2cfe9b-67c7-4e4a-a842-7b0f36a02074",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C10",
+      "claim": "The C-cluster is composed of a [Ni-3Fe-4S] cubane connected through a linking sulfide (SL) to a unique iron site (Feu).",
+      "claim_type": "EXPLICIT",
+      "source": "The C-cluster is the site of CO/CO2 interconversion and is composed of a [Ni-3Fe-4S] cubane connected through a linking sulfide (SL) to a unique iron site (Feu) (Figure 1) (Drennan et al., 2001; Dobbek et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Drennan et al., 2001 and Dobbek et al., 2001, and shown in Figure 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "a9b4471e-3e3e-4014-89ed-0139a9e6ba5c",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C11",
+      "claim": "The C-cluster takes on four discrete redox states termed Cox, Cred1, Cint, and Cred2.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have revealed the C-cluster to take on four discrete redox states termed Cox, Cred1, Cint, and Cred2 (Lindahl et al., 1990; Kumar et al., 1993; Anderson and Lindahl, 1994; Anderson and Lindahl, 1996; Seravalli et al., 1997; Fraser and Lindahl, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "2ef17abf-b7c8-4dc8-a80a-8479a013096b",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C12",
+      "claim": "The most widely accepted mechanism of CO oxidation involves a one-electron reductive activation of the inactive Cox state to Cred1 followed by a catalytic cycle involving conversion between Cred1 and Cred2.",
+      "claim_type": "EXPLICIT",
+      "source": "The most widely accepted mechanism of CO oxidation involves a one-electron reductive activation of the inactive Cox state to Cred1 followed by a catalytic cycle involving conversion between Cred1 and Cred2 (Figure 2) (Lindahl et al., 1990; Kim et al., 2004; Lindahl, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and illustrated in Figure 2",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "21794c97-5730-438c-9b1c-a190c778df5c",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C13",
+      "claim": "The overall fold and cluster placement of DvCODH is highly similar to other structurally characterized CODHs.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall fold and cluster placement of DvCODH is highly similar to other structurally characterized CODHs (Figure 1\u2014figure supplement 1) (Drennan et al., 2001; Dobbek et al., 2001; Domnik et al., 2017; Doukov et al., 2002; Darnault et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "40ed7d77-1438-487c-96f6-bab5aec27fc0",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C14",
+      "claim": "DvCODH has a [2Fe-2S] cluster at the D-cluster position instead of the expected [4Fe-4S] cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "One noteworthy difference with respect to other CODHs is the identity of the D-cluster, a solvent-exposed Fe-S cluster at the dimer interface that serves as an electron conduit to the surface of the protein. Instead of the expected [4Fe-4S] cluster, (Drennan et al., 2001; Dobbek et al., 2001; Domnik et al., 2017; Doukov et al., 2002; Darnault et al., 2003) the electron density is consistent with a [2Fe-2S] cluster (Figure 1\u2014figure supplement 2) as is the placement of cysteine residues in the primary structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electron density data shown in Figure 1\u2014figure supplement 2 and sequence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "7627a570-480f-457e-a537-fe49e73c0499",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C15",
+      "claim": "DvCODH has a C-X2-C D-cluster binding motif instead of a C-X7-C motif.",
+      "claim_type": "EXPLICIT",
+      "source": "CODH sequence alignments reveal that instead of a C-X7-C D-cluster binding motif, DvCODH, as well as several uncharacterized CODHs, have a C-X2-C motif (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "30e31d67-725a-45c7-8725-06e8f0eb4860",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C16",
+      "claim": "The shortened C-X2-C motif constrains the geometry of the ligating cysteine residues such that coordination to a [4Fe-4S] cluster is not possible.",
+      "claim_type": "EXPLICIT",
+      "source": "This shortened C-X2-C motif appears to constrain the geometry of the ligating cysteine residues such that coordination to a [4Fe-4S] cluster is not possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "ac625ece-ca93-4329-b8b0-e22f220be804",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C17",
+      "claim": "The cysteine positions in DvCODH are ideally suited for coordination of a [2Fe-2S] cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the cysteine positions are ideally suited for coordination of a [2Fe-2S] cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "b4b7d26b-bfb7-40e9-97c1-90c9537bfff2",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C18",
+      "claim": "Two structures of as-isolated DvCODH using two independent protein batches display different conformations of the C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present work, we determined two structures of as-isolated DvCODH using two independent protein batches and much to our surprise, we observe different conformations of the C-cluster in each structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "eda4fcbc-2ec2-43b0-a2f5-7688a730cfb4",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C19",
+      "claim": "A 2.50 \u00c5 resolution structure of as-isolated DvCODH (protein batch 1) displays the canonical [Ni-3Fe-4S]-Feu C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "A 2.50 \u00c5 resolution structure of as-isolated DvCODH (determined using protein batch 1) displays the canonical [Ni-3Fe-4S]-Feu C-cluster (Figure 3a; Figure 3\u2014figure supplement 1a; Supplementary file 1) (Drennan et al., 2001; Gong et al., 2008; Doukov et al., 2002; Darnault et al., 2003)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 3a and Figure 3\u2014figure supplement 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "53b5782d-02d8-49b4-bfd9-6be5297083ca",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C20",
+      "claim": "The ligation of the C-cluster is conserved in DvCODH with four cysteines ligating the cubane portion of the cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligation of the C-cluster is conserved in DvCODH (Drennan et al., 2001; Dobbek et al., 2001; Gong et al., 2008; Domnik et al., 2017; Doukov et al., 2002; Darnault et al., 2003) with four cysteines ligating the cubane portion of the cluster (Cys519 is the Ni ligand); one histidine (His266) and one cysteine (Cys302) ligate Feu (Figure 3a; Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and crystallographic data shown in Figure 3a",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "4ace2b43-ffe4-4131-84d0-bb3f424d280d",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C21",
+      "claim": "Cys519 is the Ni ligand in the canonical C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligation of the C-cluster is conserved in DvCODH (Drennan et al., 2001; Dobbek et al., 2001; Gong et al., 2008; Domnik et al., 2017; Doukov et al., 2002; Darnault et al., 2003) with four cysteines ligating the cubane portion of the cluster (Cys519 is the Ni ligand); one histidine (His266) and one cysteine (Cys302) ligate Feu (Figure 3a; Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "90c72bb3-647d-4d9e-b73f-3584ef9dba8f",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C22",
+      "claim": "His266 and Cys302 ligate Feu in the canonical C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligation of the C-cluster is conserved in DvCODH (Drennan et al., 2001; Dobbek et al., 2001; Gong et al., 2008; Domnik et al., 2017; Doukov et al., 2002; Darnault et al., 2003) with four cysteines ligating the cubane portion of the cluster (Cys519 is the Ni ligand); one histidine (His266) and one cysteine (Cys302) ligate Feu (Figure 3a; Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "824898c5-f3aa-4503-afbb-a724b76dbd5e",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C23",
+      "claim": "The 1.72 \u00c5 structure of as-isolated DvCODH (protein batch 2) reveals a novel arrangement of ions within the C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The second, higher-resolution (1.72 \u00c5) structure of as-isolated DvCODH (determined using protein batch 2) reveals a novel arrangement of ions within the C-cluster that was confirmed using anomalous diffraction data (Figure 3b; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "af115656-0114-4828-a005-e1af1f1a9266",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C24",
+      "claim": "In the novel C-cluster arrangement, Ni, Feu, and SL are shifted, accompanied by conformational changes of several amino acid side chains, while the positions of the remaining three Fe and three S ions are unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "In this structure, Ni, Feu, and SL are shifted, accompanied by conformational changes of several amino acid side chains, while the positions of the remaining three Fe and three S ions are unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "21280836-4e4e-4aed-aacf-0ba4c779813c",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C25",
+      "claim": "In the novel C-cluster arrangement, the Ni ion is bound in the site formerly occupied by Feu, coordinated by His266 and Cys302.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ni ion is bound in the site formerly occupied by Feu, coordinated by His266 and Cys302 (Figure 3b; Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "bbb5d806-43b0-483b-8211-46429ed2073b",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C26",
+      "claim": "In the novel C-cluster arrangement, the Ni is additionally ligated by Cys519 and Lys556.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ni is additionally ligated by Cys519 and Lys556 (Figure 3b; Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "ed01067c-a14e-49f9-9969-b24d90b5bdf7",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C27",
+      "claim": "Cys519 adopts an alternative rotamer conformation in the novel C-cluster arrangement such that coordination to Ni is maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, Cys519 serves as a ligand to Ni in the canonical C-cluster and here adopts an alternative rotamer conformation such that coordination to Ni is maintained (Figure 3b; Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "814f7389-ce45-4e06-bf9d-0a15c75a6fac",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C28",
+      "claim": "The occupancy of the alternative Cys519 conformation correlates with the occupancy of Ni, and both have been refined at an atomic occupancy of 70%.",
+      "claim_type": "EXPLICIT",
+      "source": "The occupancy of the alternative Cys519 conformation correlates with the occupancy of Ni, and both have been refined at an atomic occupancy of 70%, in general agreement with the metal analysis result of 0.5 Ni per monomer for the sample that was crystallized (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystallographic refinement and metal analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "67425d10-b4b2-4494-af93-592f37749c69",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C29",
+      "claim": "Metal analysis shows 0.5 Ni per monomer for the sample that was crystallized (protein batch 2).",
+      "claim_type": "EXPLICIT",
+      "source": "The occupancy of the alternative Cys519 conformation correlates with the occupancy of Ni, and both have been refined at an atomic occupancy of 70%, in general agreement with the metal analysis result of 0.5 Ni per monomer for the sample that was crystallized (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ICP-OES metal analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "951bef65-56c9-4d31-ae5a-c99fd365fa0b",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C30",
+      "claim": "Lys556 is highly conserved and is the proposed general base catalyst for deprotonation of water during CO oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys556 is highly conserved and does not normally coordinate to the C-cluster, but is instead the proposed general base catalyst for deprotonation of water during CO oxidation (Figure 2) (Drennan et al., 2001; Dobbek et al., 2001; Kim et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Drennan et al., 2001, Dobbek et al., 2001, and Kim et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "0f37a80d-f59e-47cc-93a3-8b1c6e662d19",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C31",
+      "claim": "In the novel C-cluster arrangement, the lysine amine group comes within 2.5 \u00c5 of Ni.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the lysine amine group comes within 2.5 \u00c5 of Ni.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "6184a665-57f5-4186-8bad-06279a4994dc",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C32",
+      "claim": "His266, Cys302, Cys519, and Lys556 ligate the Ni in the altered cluster in a highly distorted tetrahedral coordination geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, His266, Cys302, Cys519, and Lys556 ligate the Ni in this altered cluster in a highly distorted tetrahedral coordination geometry that is reminiscent of the geometry of the Ni site in Ni-Fe hydrogenases (Volbeda et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystallographic data and comparison to Ni-Fe hydrogenases",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "1b4f93fb-6965-469d-9087-79bdd839c7b8",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C33",
+      "claim": "The Ni coordination geometry in the altered C-cluster is reminiscent of the geometry of the Ni site in Ni-Fe hydrogenases.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, His266, Cys302, Cys519, and Lys556 ligate the Ni in this altered cluster in a highly distorted tetrahedral coordination geometry that is reminiscent of the geometry of the Ni site in Ni-Fe hydrogenases (Volbeda et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Volbeda et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "7fa89f69-7393-49ab-8bf0-f570b3f6148c",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C34",
+      "claim": "In the novel C-cluster arrangement, Feu is coordinated by Cys302, which forms a bridging interaction with Ni, and by Cys301.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to interaction with SL, Feu is coordinated by Cys302, which forms a bridging interaction with Ni, and by a conserved cysteine residue (Cys301) that does not normally serve as a ligand to the C-cluster, resulting in an apparent three-coordinate geometry around Feu (Figure 3b; Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "cb698a4c-25ce-4668-8bd2-a86993b6fcbf",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C35",
+      "claim": "Cys301 is a conserved cysteine residue that does not normally serve as a ligand to the C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to interaction with SL, Feu is coordinated by Cys302, which forms a bridging interaction with Ni, and by a conserved cysteine residue (Cys301) that does not normally serve as a ligand to the C-cluster, resulting in an apparent three-coordinate geometry around Feu (Figure 3b; Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement based on structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "af612e04-ddc0-4455-af70-fea437946727",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C36",
+      "claim": "The shift in the positions of Feu and SL results in the loss of an interaction between SL and Fe1.",
+      "claim_type": "EXPLICIT",
+      "source": "The shift in the positions of Feu and SL results in the loss of an interaction between SL and a second Fe ion of the cubane (Fe1), leaving Fe1 with three coordinating ligands, Cys340 and two cubane sulfides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "ee8a9455-47f3-4e55-a74b-b0e3b9bcdb8f",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C37",
+      "claim": "Fe1 has three coordinating ligands in the novel C-cluster arrangement: Cys340 and two cubane sulfides.",
+      "claim_type": "EXPLICIT",
+      "source": "The shift in the positions of Feu and SL results in the loss of an interaction between SL and a second Fe ion of the cubane (Fe1), leaving Fe1 with three coordinating ligands, Cys340 and two cubane sulfides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "91c03d80-4bda-48ea-bb43-5fce7072b600",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C38",
+      "claim": "A small peak of residual electron density at a site bridging Feu and Fe1 is present in one of the protein chains in the asymmetric unit.",
+      "claim_type": "EXPLICIT",
+      "source": "A small peak of residual electron density at a site bridging Feu and Fe1 is present in one of the protein chains in the asymmetric unit (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electron density data shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "fc350e4e-9580-4625-a427-fae298fcf67b",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C39",
+      "claim": "The occupancy of the residual electron density site bridging Feu and Fe1 is low (<30%), precluding identification of the atom/ion.",
+      "claim_type": "EXPLICIT",
+      "source": "The occupancy of this site is low (<30%) precluding identification of the atom/ion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement based on crystallographic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "6ab8c523-a89c-4036-9f82-96659d2436b9",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C40",
+      "claim": "If fully occupied, the atom/ion at the residual density site would complete the tetrahedral geometry around Feu and Fe1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if fully occupied, the atom/ion would complete the tetrahedral geometry around these Fe atoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "1080b723-430b-493b-87d2-36e047693756",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C41",
+      "claim": "The two cubane S ions that coordinate Ni in the canonical cluster are left in a possibly unstable state in the altered conformation in which they could be susceptible to protonation or loss as free sulfide ions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to changes in Fe coordination, the altered conformation of the C-cluster also involves changes in sulfide coordination state. In particular, the two cubane S ions that coordinate Ni in the canonical cluster are left in a possibly unstable state in which they could be susceptible to protonation or loss as free sulfide ions (Crack et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural analysis and citation to Crack et al., 2006",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "a407026a-2200-4643-b816-c7f73d3dd88a",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C42",
+      "claim": "There is no evidence of degradation at the cubane sulfide sites in the altered C-cluster structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structure, however, we see no evidence of degradation at these sites, likely due to inaccessibility to solvent or other protective features of the protein environment, in analogy to the case of stable [3Fe-4S] clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "d66e9fb4-05bd-4cbb-8a56-bf4bc1d4a7a6",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C43",
+      "claim": "The lack of degradation at the cubane sulfide sites is likely due to inaccessibility to solvent or other protective features of the protein environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structure, however, we see no evidence of degradation at these sites, likely due to inaccessibility to solvent or other protective features of the protein environment, in analogy to the case of stable [3Fe-4S] clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural analysis and comparison to stable [3Fe-4S] clusters",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "6ddc2397-518a-4839-b85a-dfb90bf95c64",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C44",
+      "claim": "Pre-formed crystals of as-isolated DvCODH (batch 2) incubated with sodium dithionite display the canonical C-cluster with Ni, Feu, and SL rearranged into their catalytically-relevant positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-formed crystals of as-isolated DvCODH (batch 2, containing the altered cluster) were incubated with the reductant sodium dithionite. Strikingly, the resulting crystal structure displays the canonical C-cluster with Ni, Feu, and SL rearranged into their catalytically-relevant positions (Figure 4a,b; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 4a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "0d048d5a-8e3b-4307-a8bf-faba1f87b82b",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C45",
+      "claim": "Oxidation of the reduced C-cluster by exposure to O2 results in reformation of the unusual cluster architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine whether this metal rearrangement is reversible upon oxidation, crystals of reduced DvCODH were taken from the anaerobic chamber and incubated under ambient atmospheric conditions. Remarkably, oxidation of the reduced C-cluster by exposure to O2 results in reformation of the unusual cluster architecture (Figure 4c; Supplementary file 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "a624b87d-c449-463e-a4d5-127b5a835fd9",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C46",
+      "claim": "Both the D- and B-clusters remain intact upon oxidation of the C-cluster by exposure to O2.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, oxidation of the reduced C-cluster by exposure to O2 results in reformation of the unusual cluster architecture (Figure 4c; Supplementary file 1), whereas both the D- and B-clusters remain intact (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "cda2fe47-a899-4074-b8fe-d8886e945bd2",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C47",
+      "claim": "The altered cluster is an oxidized form of the C-cluster and the multi-metal ion rearrangement is reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that this altered cluster is an oxidized form of the C-cluster and that this multi-metal ion rearrangement is reversible (Figure 4d, Figure 4\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on crystallographic data showing reversible structural changes upon reduction and oxidation",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "8237ea8f-5a40-42dc-b0e2-2e2c8555548e",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C48",
+      "claim": "An EPR spectrum of dithionite-reduced DvCODH exhibits resonances characteristic of the one-electron reduced B- and D-clusters and of the Cred1 and Cred2 forms of the C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "First, an EPR spectrum was recorded on a sample of dithionite-reduced DvCODH. This spectrum exhibits resonances characteristic of the one-electron reduced B- and D-clusters (centered around g ~ 2) and of the Cred1 and Cred2 forms of the C-cluster (gav ~ 1.83 and 1.87, respectively; see Figure 2), as has been previously observed for DvCODH (Hadj-Sa\u00efd et al., 2015) (Figure 4e, black trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EPR spectroscopy data shown in Figure 4e and citation to Hadj-Sa\u00efd et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "3042b62e-afff-4364-95e3-df4d4cb86522",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C49",
+      "claim": "A dithionite-reduced DvCODH sample incubated under ambient atmospheric conditions and then re-reduced with dithionite shows full recovery of the previously observed EPR signals.",
+      "claim_type": "EXPLICIT",
+      "source": "A parallel dithionite-reduced sample was incubated under ambient atmospheric conditions to mimic treatment of the DvCODH crystals (EPR-silent, data not shown). The oxygen-exposed sample was then re-reduced with dithionite and the EPR spectrum was recorded, revealing full recovery of the previously observed signals (Figure 4e, red trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EPR spectroscopy data shown in Figure 4e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "c138e63c-bbf9-411e-87e5-9d10a8dddb42",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C50",
+      "claim": "The metalloclusters of DvCODH are not degraded upon oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, our crystal structures and EPR data reveal that the metalloclusters of DvCODH are not degraded upon oxidation and that the C-cluster avoids degradation by adopting an alternative, stable, oxidized conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on combined crystallographic and EPR data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "af8cbe33-ac7a-47e0-9d71-ee22d6fd2ef0",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C51",
+      "claim": "The C-cluster avoids degradation by adopting an alternative, stable, oxidized conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, our crystal structures and EPR data reveal that the metalloclusters of DvCODH are not degraded upon oxidation and that the C-cluster avoids degradation by adopting an alternative, stable, oxidized conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on combined crystallographic and EPR data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "585b2964-cb97-4ba0-8091-01866f9141be",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C52",
+      "claim": "DvCODH regains activity upon chemical or electrochemical reduction following exposure to molecular oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, DvCODH was recently shown to regain activity upon chemical or electrochemical reduction following exposure to molecular oxygen (Merrouch et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Merrouch et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "cb1e791f-443b-4d98-ba96-f01ddea26751",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C53",
+      "claim": "The rearranged C-cluster scaffold can be thought of as a 'safety net' for retaining cluster ions upon oxygen exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, the rearranged C-cluster scaffold can be thought of as a 'safety net' for retaining cluster ions upon oxygen exposure, and may explain, at least in part, the ability of certain CODHs to recover activity following oxidation in air (Merrouch et al., 2015; Wang et al., 2015; Domnik et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural data and citations to Merrouch et al., 2015, Wang et al., 2015, and Domnik et al., 2017",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "e83f1856-3a82-49f6-8999-eca169b1dd3f",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C54",
+      "claim": "The rearranged C-cluster may explain the ability of certain CODHs to recover activity following oxidation in air.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, the rearranged C-cluster scaffold can be thought of as a 'safety net' for retaining cluster ions upon oxygen exposure, and may explain, at least in part, the ability of certain CODHs to recover activity following oxidation in air (Merrouch et al., 2015; Wang et al., 2015; Domnik et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural data and citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "0370dbff-3afa-46bf-97a5-1dd398ebba5c",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C55",
+      "claim": "The rearranged C-cluster could improve the ability of an organism to rapidly recover CODH activity after transient exposure to oxic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This kind of safety net could improve the ability of an organism to rapidly recover CODH activity after transient exposure to oxic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on structural findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "2a68970c-36c6-446f-bf3c-8d236f044441",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C56",
+      "claim": "Cys301 is strictly conserved in CODHs but is not a ligand to the canonical C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the more noteworthy aspects of the oxidized C-cluster is that cluster ligation involves one residue (Cys301) that is strictly conserved in CODHs but is not a ligand to the canonical C-cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement based on structural analysis and sequence conservation",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "7b6856d4-1c4d-4932-9793-9fcf24b1332d",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C57",
+      "claim": "Mutation of Cys316 (equivalent to Cys301 in DvCODH) to serine in MtCODH/ACS resulted in an inactive CODH that appeared to lack an intact C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, previous work on the heterotetrameric CODH/acetyl-CoA synthase from Moorella thermoacetica (MtCODH/ACS) showed that mutation of the equivalent cysteine residue (Cys316) to serine resulted in an inactive CODH that appeared to lack an intact C-cluster (Kim et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "4c087cc3-55fe-447c-996f-86e846301782",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C58",
+      "claim": "DvCODH(C301S) is inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what was observed with MtCODH/ACS (Kim et al., 2004), DvCODH(C301S) is inactive and does not contain Ni, as assessed by CO oxidation activity assays and inductively coupled plasma optical emission spectroscopy (ICP-OES), respectively (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CO oxidation activity assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "9aacb3ac-527e-493a-b3e7-3cc46d29d6a8",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C59",
+      "claim": "DvCODH(C301S) does not contain Ni.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what was observed with MtCODH/ACS (Kim et al., 2004), DvCODH(C301S) is inactive and does not contain Ni, as assessed by CO oxidation activity assays and inductively coupled plasma optical emission spectroscopy (ICP-OES), respectively (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ICP-OES metal analysis data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "ad9c6f05-33dd-414a-9a67-4232ad1893fb",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C60",
+      "claim": "DvCODH(C301S) cannot be activated by Ni under reducing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike wild-type DvCODH, DvCODH(C301S) cannot be activated by Ni under reducing conditions, analogous to what has been observed previously for DvCODH samples grown in the absence of the C-cluster maturation factor CooC (Hadj-Sa\u00efd et al., 2015; Merrouch et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by activity assay data and citations to Hadj-Sa\u00efd et al., 2015 and Merrouch et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "da6a3b06-a249-4877-a064-010113876c19",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C61",
+      "claim": "The crystal structure of DvCODH(C301S) was determined to 2.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the architecture of a non-activatable C-cluster, we determined the crystal structure of DvCODH(C301S) to 2.0 \u00c5 resolution (Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "0562daa9-c7fa-4913-aa14-b774d06f73bc",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C62",
+      "claim": "DvCODH(C301S) has an intact [3Fe-4S] C-cluster core with an Feu ion that adopts alternative conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the architecture of a non-activatable C-cluster, we determined the crystal structure of DvCODH(C301S) to 2.0 \u00c5 resolution (Supplementary file 1) and discovered an intact [3Fe-4S] C-cluster core with an Feu ion that adopts alternative conformations (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "28067658-bc0c-4047-b637-2184e2042a72",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C63",
+      "claim": "In DvCODH(C301S), approximately 70% of Feu is in its canonical position coordinated by His266 and Cys302, whereas approximately 30% is in the Ni-cubane site.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 70% of Feu is in its canonical position coordinated by His266 and Cys302, whereas approximately 30% is in the Ni-cubane site (see Methods; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 5 and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "9da174e5-3ae3-4f1e-8e7a-6812131df470",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C64",
+      "claim": "In the absence of the non-canonical Feu-ligand Cys301, the C-cluster cannot be activated by Ni and Feu appears to be free to occupy multiple sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the absence of the non-canonical Feu-ligand Cys301, the cluster cannot be activated by Ni and Feu appears to be free to occupy multiple sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on crystallographic data of DvCODH(C301S)",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "ca18ccd7-05f1-461f-b1c7-0aa719970ff6",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C65",
+      "claim": "The novel structure of the C-cluster with Feu coordinated by Cys301 is relevant to processes beyond oxidation, specifically Ni incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that the novel structure of the C-cluster that we observe here, with Feu coordinated by Cys301, is relevant to processes beyond oxidation, specifically Ni incorporation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on mutagenesis and structural data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "daa90238-9f83-4323-87fd-7098fe68607d",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C66",
+      "claim": "The dramatic rearrangement observed for the C-cluster adds to a growing appreciation that the ions of great clusters are in fact mobile.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of its role(s), the dramatic rearrangement observed for the C-cluster adds to a growing appreciation that the ions of great clusters are in fact mobile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural data and comparison to other metalloclusters",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "c6e8b35e-f9e5-48e8-a7fb-5d8df583a5ff",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C67",
+      "claim": "The oxidized P-cluster of nitrogenase adopts an open conformation relative to its reduced form through the outward movement of two Fe ions by 1.4 and 0.9 \u00c5 with accompanying loss of S coordination.",
+      "claim_type": "EXPLICIT",
+      "source": "The oxidized P-cluster of nitrogenase adopts an open conformation relative to its reduced form through the outward movement of two Fe ions by 1.4 and 0.9 \u00c5 with accompanying loss of S coordination in a rearrangement that is proposed to couple proton transfer to electron transfer (Figure 6a) (Peters et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Peters et al., 1997 and shown in Figure 6a",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "9a6f512a-42a0-4641-b3e5-fbbee26069a3",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C68",
+      "claim": "The P-cluster rearrangement is proposed to couple proton transfer to electron transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "The oxidized P-cluster of nitrogenase adopts an open conformation relative to its reduced form through the outward movement of two Fe ions by 1.4 and 0.9 \u00c5 with accompanying loss of S coordination in a rearrangement that is proposed to couple proton transfer to electron transfer (Figure 6a) (Peters et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peters et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "03414104-3d7c-49c9-9fd2-4b2b99b0a9fc",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C69",
+      "claim": "Both the inhibitor CO and an artificially-incorporated Se atom are able to displace a S atom of the FeMo-cofactor.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Rees and coworkers demonstrated that both the inhibitor CO and an artificially-incorporated Se atom are able to displace a S atom of the cluster and furthermore that, under turnover conditions, the Se atom migrates around the cluster, sampling S positions (Figure 6b) (Spatzal et al., 2014; Spatzal et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Spatzal et al., 2014 and Spatzal et al., 2015, and shown in Figure 6b",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "1703bc27-4425-42c3-a2e3-5c56cb7496b4",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C70",
+      "claim": "Under turnover conditions, the Se atom migrates around the FeMo-cofactor, sampling S positions.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Rees and coworkers demonstrated that both the inhibitor CO and an artificially-incorporated Se atom are able to displace a S atom of the cluster and furthermore that, under turnover conditions, the Se atom migrates around the cluster, sampling S positions (Figure 6b) (Spatzal et al., 2014; Spatzal et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Spatzal et al., 2014 and Spatzal et al., 2015, and shown in Figure 6b",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "d9e1c91b-a88e-46cb-bd9b-77add1886552",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C71",
+      "claim": "A S atom of the VFe-cofactor is displaced by a NH ligand, suggesting that cluster dynamics are likely key in catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Very recently, it was also revealed that the same S atom of the VFe-cofactor (containing V in place of Mo) is displaced by a NH ligand, suggesting that cluster dynamics are likely key in catalysis (Sippel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sippel et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "39396142-f32c-4e70-8b87-c112222b37d3",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C72",
+      "claim": "An O2-tolerant membrane-bound hydrogenase has a novel [4Fe-3S] cluster that undergoes redox-dependent structural changes as part of an O2-tolerance mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, an O2-tolerant membrane-bound hydrogenase was shown to have a novel [4Fe-3S] cluster that undergoes redox-dependent structural changes as part of an O2-tolerance mechanism (Fritsch et al., 2011; Shomura et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fritsch et al., 2011 and Shomura et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "89a4f165-af69-4024-8137-716284472825",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C73",
+      "claim": "In the [4Fe-3S] cluster of O2-tolerant membrane-bound hydrogenase, one Fe ion moves ~1.6 \u00c5 upon cluster oxidation and becomes coordinated by a protein backbone amide group.",
+      "claim_type": "EXPLICIT",
+      "source": "one Fe ion moves ~1.6 \u00c5 upon cluster oxidation and becomes coordinated by a protein backbone amide group (Figure 6c) (Shomura et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Shomura et al., 2011 and shown in Figure 6c",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "bdd107d0-8a45-4297-b8f2-1747f43fc2bf",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C74",
+      "claim": "In the C-cluster, Ni moves ~3 \u00c5 and adopts an entirely new coordination environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present work, the metal migration of C-cluster atoms is more dramatic than in these other examples, with Ni moving ~3 \u00c5 and adopting an entirely new coordination environment, and Feu and SL moving ~1.9 and 2.6 \u00c5, respectively, with Feu also taking on a new coordination environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "1fc1ab94-0dd5-48c4-a821-6b457a64a0d3",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C75",
+      "claim": "In the C-cluster, Feu and SL move ~1.9 and 2.6 \u00c5, respectively, with Feu also taking on a new coordination environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present work, the metal migration of C-cluster atoms is more dramatic than in these other examples, with Ni moving ~3 \u00c5 and adopting an entirely new coordination environment, and Feu and SL moving ~1.9 and 2.6 \u00c5, respectively, with Feu also taking on a new coordination environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct measurement from crystallographic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "9cffb6ac-57fa-43e3-86d1-e4b6d832da6e",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C76",
+      "claim": "The C-cluster rearrangement from oxidized to reduced appears to involve a 'molecular cartwheel' with Ni, Feu, and SL following the same trajectory to end up in their canonical positions.",
+      "claim_type": "EXPLICIT",
+      "source": "This C-cluster rearrangement from oxidized to reduced appears to involve what amounts to a 'molecular cartwheel' with Ni, Feu, and SL following the same trajectory to end up in their canonical positions (Figure 4d, Figure 4\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on crystallographic data shown in Figure 4d and Figure 4\u2014video 1",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "81b4025e-cea3-4d98-934d-d52ab6eeb1f9",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C77",
+      "claim": "Great clusters should not be thought of as rigid scaffolds, but rather as labile assemblies of metal with sulfide.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, X-ray crystallography has provided views of the 'great clusters' of biology, allowing us to marvel at these incredible metallic frameworks that capture and make use of CO, H2, and N2 gases. We are increasingly finding that these frameworks should not be thought of as rigid scaffolds, but rather as labile assemblies of metal with sulfide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural data from multiple metalloclusters",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "3d7065ef-e568-410d-924c-a3bb6aecf150",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C78",
+      "claim": "The roles of metallocluster lability appear to be diverse, including catalysis, electron transfer, protection from oxygen damage, and possibly cluster assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The full nature and significance of this metallocluster lability is just now beginning to emerge and the roles appear to be diverse, including catalysis, electron transfer, protection from oxygen damage, and possibly cluster assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural and functional data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "1c10b939-b1ae-43f3-a416-cd55f5ae73ec",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C79",
+      "claim": "DvCODH was expressed in the presence of the C-cluster maturation factor CooC.",
+      "claim_type": "EXPLICIT",
+      "source": "DvCODH was expressed in the presence of the C-cluster maturation factor CooC, as described previously (Hadj-Sa\u00efd et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "34ae3afa-8d6d-4e94-a5c7-2a182b353624",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C80",
+      "claim": "The D. vulgaris genes encoding CODH (cooS) and the CooC maturase (cooC) were cloned into modified pBGF4 shuttle vectors under the control of the promoter of the Desulfovibrio fructosovorans Ni-Fe hydrogenase operon.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the D. vulgaris genes encoding CODH (cooS) and the CooC maturase (cooC) were cloned into modified pBGF4 shuttle vectors under the control of the promoter of the Desulfovibrio fructosovorans Ni-Fe hydrogenase operon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "f5cba800-4e61-4e8d-b34c-f4b57b84b8c8",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C81",
+      "claim": "The CODH construct was N-terminally strep-tagged.",
+      "claim_type": "EXPLICIT",
+      "source": "The CODH construct was N-terminally strep-tagged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "03a6c6ce-95c2-42b7-a709-915f90e88303",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C82",
+      "claim": "Protein was expressed in D. fructosovorans str. MR400.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein was expressed in D. fructosovorans str. MR400 (Rousset et al., 1991) and purified under anaerobic conditions in a Jacomex anaerobic chamber (100% N2 atmosphere) by affinity chromatography on Strep-Tactin Superflow resin, as described previously (Hadj-Sa\u00efd et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "f6b839f6-88c0-4602-a332-4b853b8aadb0",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C83",
+      "claim": "Protein was purified under anaerobic conditions by affinity chromatography on Strep-Tactin Superflow resin.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein was expressed in D. fructosovorans str. MR400 (Rousset et al., 1991) and purified under anaerobic conditions in a Jacomex anaerobic chamber (100% N2 atmosphere) by affinity chromatography on Strep-Tactin Superflow resin, as described previously (Hadj-Sa\u00efd et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "245e9132-f63f-4cf2-a24d-0680c0704949",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C84",
+      "claim": "All crystals were grown using as-isolated protein samples that were not activated with NiCl2 and sodium dithionite prior to crystallization.",
+      "claim_type": "EXPLICIT",
+      "source": "All crystals were grown using as-isolated protein samples (i.e., samples were not activated with NiCl2 and sodium dithionite prior to crystallization).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "aeb1b0ce-863b-41f3-be02-588a896835a1",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C85",
+      "claim": "Crystals were grown anaerobically in an N2 atmosphere at 21 \u00b0C by hanging drop vapor diffusion in an MBraun anaerobic chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals were grown anaerobically in an N2 atmosphere at 21 \u00b0C by hanging drop vapor diffusion in an MBraun anaerobic chamber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "47a8973e-8cd8-4d80-80d1-aa242e441abc",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C86",
+      "claim": "All data were collected at the Advanced Photon Source (Argonne, IL) at beamline 24-ID-C at a temperature of 100 K using a Pilatus 6M pixel detector.",
+      "claim_type": "EXPLICIT",
+      "source": "All data were collected at the Advanced Photon Source (Argonne, IL) at beamline 24-ID-C at a temperature of 100 K using a Pilatus 6M pixel detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "d18ed764-9f52-4f90-ac66-c7477cfe095f",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C87",
+      "claim": "The initial structure of DvCODH was determined to 2.50 \u00c5 resolution by molecular replacement using data from crystals belonging to space group P212121.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial structure of DvCODH was determined to 2.50 \u00c5 resolution by molecular replacement (MR) in the program Phaser (McCoy et al., 2007) using data from crystals belonging to space group P212121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "79470d1b-81ec-4790-9c94-18da1f34a75b",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C88",
+      "claim": "The search model for molecular replacement was generated from the structure of the CODH from Rhodospirillum rubrum (47% sequence identity; PDB ID: 1JQK).",
+      "claim_type": "EXPLICIT",
+      "source": "The search model for MR was generated from the structure of the CODH from Rhodospirillum rubrum (47% sequence identity; PDB ID: 1JQK) by modification in Sculptor (Bunk\u00f3czi and Read, 2011) using the Schwarzenbacher algorithm (Schwarzenbacher et al., 2004) with a pruning level of 2 to truncate non-identical residues at the C\u03b2 position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "f4a474bb-eed8-448b-8b01-191ba7bbbf94",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C89",
+      "claim": "EPR samples were prepared using 57Fe-enriched DvCODH containing 13.3 57Fe/monomer and 0.5 Ni/monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "EPR samples were prepared using 57Fe-enriched DvCODH containing 13.3 57Fe/monomer and 0.5 Ni/monomer, as quantified by ICP-OES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about experimental methods and ICP-OES data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "0244ea34-fbd9-42a9-99e5-1bfb990fed3c",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C90",
+      "claim": "Quantitation of the S = 1/2 [Fe-S] centers amounted to 3.2 spins/dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation of the S = 1/2 [Fe-S] centers amounted to 3.2 spins/dimer, similar to our previous report on DvCODH (Hadj-Sa\u00efd et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EPR spin quantification data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "6eb9efb8-81d9-4455-a9d0-08690b3df383",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C91",
+      "claim": "Cred1 was 0.43 spins/dimer and Cred2 was 0.35 spins/dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the Cred1 and Cred2 states was carried out on the basis of numerical double-integration of the simulated spectra using the MATLAB-based EasySpin software (Stoll and Schweiger, 2006); Cred1 was 0.43 spins/dimer and Cred2 was 0.35 spins/dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EPR spin quantification data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "328eb431-b7f8-4e21-8b04-be841066fb39",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C92",
+      "claim": "This work provides the first view of an oxidized state of the C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Using X-ray crystallography, we have observed unprecedented conformational dynamics in the C-cluster of the CODH from Desulfovibrio vulgaris, providing the first view of an oxidized state of the cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "7485ac1f-92dc-4762-a9e8-cac3940f7b59",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C93",
+      "claim": "The novel, oxidized cluster arrangement plays a role in avoiding irreversible oxidative degradation at the C-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with supporting spectroscopic data, our structures reveal that this novel, oxidized cluster arrangement plays a role in avoiding irreversible oxidative degradation at the C-cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on combined crystallographic and spectroscopic data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "898d830a-def1-47e3-82f4-a80b550c6132",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "claim_id": "C94",
+      "claim": "The oxidized conformation could be important for proper cluster assembly, in particular Ni incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mutagenesis of a conserved cysteine residue that binds the C-cluster in the oxidized state but not in the reduced state suggests that the oxidized conformation could be important for proper cluster assembly, in particular Ni incorporation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on mutagenesis data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d95cca89-a56c-4e16-9cea-d58cb4411662",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DvCODH has a [2Fe-2S] D-cluster instead of the typical [4Fe-4S] cluster found in other CODHs, due to a shortened C-X2-C binding motif that constrains cysteine geometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 are well-supported by crystallographic data (electron density and anomalous diffraction), sequence alignments, and structural analysis. The electron density clearly shows a [2Fe-2S] cluster, and the sequence motif difference provides a mechanistic explanation for this structural variation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "02a2961c-eb33-4bd4-9136-19a888d418f9",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two independent protein batches of as-isolated DvCODH yielded structures with different C-cluster conformations: batch 1 showed the canonical [Ni-3Fe-4S]-Feu cluster, while batch 2 revealed a novel oxidized arrangement where Ni, Feu, and SL are repositioned with altered coordination environments, representing the first crystallographic view of an oxidized C-cluster state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C43 and C92 are strongly supported by high-resolution crystallographic data (1.72 \u00c5 and 2.50 \u00c5), anomalous diffraction confirming metal positions, metal analysis by ICP-OES (0.5 Ni/monomer), and refined occupancies (70% for Ni and alternative Cys519). The structural details are internally consistent and well-documented with electron density maps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "b8ea71d8-93c9-41a1-8fb0-b65ba313c1c8",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The C-cluster rearrangement is reversible: reduction with dithionite converts the oxidized cluster to the canonical form, while subsequent O2 exposure reforms the oxidized architecture. This involves dramatic metal movements (Ni ~3 \u00c5, Feu ~1.9 \u00c5, SL ~2.6 \u00c5) in a 'molecular cartwheel' trajectory, while B- and D-clusters remain intact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 and C74-C76 are well-supported by crystallographic data from soaking experiments showing reversible structural changes. The measurements of metal ion movements are direct observations from the structures. The preservation of B- and D-clusters during oxidation is confirmed by electron density maps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "b97b9532-335b-4459-9d2b-9286649b0585",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EPR spectroscopy confirms that DvCODH metalloclusters are not degraded upon O2 exposure and can be fully recovered upon re-reduction, demonstrating that the oxidized C-cluster conformation serves as a protective mechanism against irreversible oxidative degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 and C93 are supported by EPR data showing characteristic signals for reduced clusters (Cred1, Cred2, B- and D-clusters) that are fully recovered after O2 exposure and re-reduction. The EPR results are consistent with the crystallographic observations and support the protective role interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "c34fe77f-20e4-4e48-8e59-d56a8ce1d605",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The rearranged C-cluster acts as a 'safety net' for retaining cluster ions during oxygen exposure, potentially explaining the ability of certain CODHs to recover activity after air oxidation and enabling organisms to rapidly recover CODH activity after transient oxic exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C54 are partially supported by citation to prior work showing activity recovery, and the structural data provides a plausible mechanism. However, C55 is speculative about organismal benefits. The mechanistic link between the observed structure and activity recovery requires additional functional validation beyond the cited work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "23dacea0-1c50-433f-a2f5-d73bf28c825b",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cys301, a strictly conserved residue that ligates Feu in the oxidized cluster but not in the canonical cluster, is essential for C-cluster activation and Ni incorporation. The C301S variant is inactive, lacks Ni, cannot be activated by Ni, and shows Feu occupying alternative positions (70% canonical, 30% in Ni-cubane site).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C65 and C94 are well-supported by mutagenesis data (activity assays, ICP-OES metal analysis), crystallographic structure of the C301S variant (2.0 \u00c5 resolution), and comparison to prior work on MtCODH/ACS. The structural and functional data converge to support the role of Cys301 in Ni incorporation, though the exact mechanism remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The dramatic C-cluster rearrangement contributes to an emerging paradigm that 'great clusters' are not rigid scaffolds but labile metal-sulfide assemblies, with diverse functional roles including catalysis, electron transfer, oxygen protection, and possibly cluster assembly, as exemplified by similar dynamics in nitrogenase P-cluster, FeMo-cofactor, VFe-cofactor, and O2-tolerant hydrogenase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 and C77-C78 are supported by the current structural data on the C-cluster combined with well-documented examples from the literature (cited work on nitrogenase and hydrogenase). The comparison is valid and the synthesis of these observations into a broader paradigm of metallocluster lability is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "eaa45703-5c35-4da5-be01-ebf79c8464dc",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DvCODH was expressed with the CooC maturation factor in D. fructosovorans, purified anaerobically, crystallized without prior activation, and characterized by X-ray crystallography (multiple structures at 1.72-2.50 \u00c5 resolution) and EPR spectroscopy (showing 3.2 spins/dimer for [Fe-S] centers, 0.43 spins/dimer for Cred1, and 0.35 spins/dimer for Cred2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C91 describe methodological details that are clearly documented and internally consistent. The crystallographic statistics, EPR quantification, and experimental procedures are standard and appropriately reported. These methods support the structural and spectroscopic results presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    },
+    {
+      "id": "864d8380-1f6a-458e-aaee-e25489639d66",
+      "content_id": "79fe2f9b-cdea-47aa-8a74-011bf1ddd6a4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background context on metalloenzymes, Fe-S clusters, CODH function and mechanism, including that CODH catalyzes CO/CO2 interconversion removing ~10^8 tons CO/year, contains B-, C-, and D-clusters, with the C-cluster ([Ni-3Fe-4S]-Feu) as the catalytic site cycling through Cox, Cred1, Cint, and Cred2 states, and Lys556 serving as the proposed catalytic base.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 and C30 provide established background information supported by appropriate citations to the literature. These are well-accepted facts in the field and provide necessary context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:42.088775Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "21794c97-5730-438c-9b1c-a190c778df5c",
+      "result_id": "d95cca89-a56c-4e16-9cea-d58cb4411662"
+    },
+    {
+      "claim_id": "40ed7d77-1438-487c-96f6-bab5aec27fc0",
+      "result_id": "d95cca89-a56c-4e16-9cea-d58cb4411662"
+    },
+    {
+      "claim_id": "7627a570-480f-457e-a537-fe49e73c0499",
+      "result_id": "d95cca89-a56c-4e16-9cea-d58cb4411662"
+    },
+    {
+      "claim_id": "30e31d67-725a-45c7-8725-06e8f0eb4860",
+      "result_id": "d95cca89-a56c-4e16-9cea-d58cb4411662"
+    },
+    {
+      "claim_id": "ac625ece-ca93-4329-b8b0-e22f220be804",
+      "result_id": "d95cca89-a56c-4e16-9cea-d58cb4411662"
+    },
+    {
+      "claim_id": "b4b7d26b-bfb7-40e9-97c1-90c9537bfff2",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "eda4fcbc-2ec2-43b0-a2f5-7688a730cfb4",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "53b5782d-02d8-49b4-bfd9-6be5297083ca",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "4ace2b43-ffe4-4131-84d0-bb3f424d280d",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "90c72bb3-647d-4d9e-b73f-3584ef9dba8f",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "824898c5-f3aa-4503-afbb-a724b76dbd5e",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "af115656-0114-4828-a005-e1af1f1a9266",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "21280836-4e4e-4aed-aacf-0ba4c779813c",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "bbb5d806-43b0-483b-8211-46429ed2073b",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "ed01067c-a14e-49f9-9969-b24d90b5bdf7",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "814f7389-ce45-4e06-bf9d-0a15c75a6fac",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "67425d10-b4b2-4494-af93-592f37749c69",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "951bef65-56c9-4d31-ae5a-c99fd365fa0b",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "0f37a80d-f59e-47cc-93a3-8b1c6e662d19",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "6184a665-57f5-4186-8bad-06279a4994dc",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "1b4f93fb-6965-469d-9087-79bdd839c7b8",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "7fa89f69-7393-49ab-8bf0-f570b3f6148c",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "cb698a4c-25ce-4668-8bd2-a86993b6fcbf",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "af612e04-ddc0-4455-af70-fea437946727",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "ee8a9455-47f3-4e55-a74b-b0e3b9bcdb8f",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "91c03d80-4bda-48ea-bb43-5fce7072b600",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "fc350e4e-9580-4625-a427-fae298fcf67b",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "6ab8c523-a89c-4036-9f82-96659d2436b9",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "1080b723-430b-493b-87d2-36e047693756",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "a407026a-2200-4643-b816-c7f73d3dd88a",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "d66e9fb4-05bd-4cbb-8a56-bf4bc1d4a7a6",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "328eb431-b7f8-4e21-8b04-be841066fb39",
+      "result_id": "02a2961c-eb33-4bd4-9136-19a888d418f9"
+    },
+    {
+      "claim_id": "6ddc2397-518a-4839-b85a-dfb90bf95c64",
+      "result_id": "b8ea71d8-93c9-41a1-8fb0-b65ba313c1c8"
+    },
+    {
+      "claim_id": "0d048d5a-8e3b-4307-a8bf-faba1f87b82b",
+      "result_id": "b8ea71d8-93c9-41a1-8fb0-b65ba313c1c8"
+    },
+    {
+      "claim_id": "a624b87d-c449-463e-a4d5-127b5a835fd9",
+      "result_id": "b8ea71d8-93c9-41a1-8fb0-b65ba313c1c8"
+    },
+    {
+      "claim_id": "cda2fe47-a899-4074-b8fe-d8886e945bd2",
+      "result_id": "b8ea71d8-93c9-41a1-8fb0-b65ba313c1c8"
+    },
+    {
+      "claim_id": "bdd107d0-8a45-4297-b8f2-1747f43fc2bf",
+      "result_id": "b8ea71d8-93c9-41a1-8fb0-b65ba313c1c8"
+    },
+    {
+      "claim_id": "1fc1ab94-0dd5-48c4-a821-6b457a64a0d3",
+      "result_id": "b8ea71d8-93c9-41a1-8fb0-b65ba313c1c8"
+    },
+    {
+      "claim_id": "9cffb6ac-57fa-43e3-86d1-e4b6d832da6e",
+      "result_id": "b8ea71d8-93c9-41a1-8fb0-b65ba313c1c8"
+    },
+    {
+      "claim_id": "8237ea8f-5a40-42dc-b0e2-2e2c8555548e",
+      "result_id": "b97b9532-335b-4459-9d2b-9286649b0585"
+    },
+    {
+      "claim_id": "3042b62e-afff-4364-95e3-df4d4cb86522",
+      "result_id": "b97b9532-335b-4459-9d2b-9286649b0585"
+    },
+    {
+      "claim_id": "c138e63c-bbf9-411e-87e5-9d10a8dddb42",
+      "result_id": "b97b9532-335b-4459-9d2b-9286649b0585"
+    },
+    {
+      "claim_id": "af8cbe33-ac7a-47e0-9d71-ee22d6fd2ef0",
+      "result_id": "b97b9532-335b-4459-9d2b-9286649b0585"
+    },
+    {
+      "claim_id": "7485ac1f-92dc-4762-a9e8-cac3940f7b59",
+      "result_id": "b97b9532-335b-4459-9d2b-9286649b0585"
+    },
+    {
+      "claim_id": "585b2964-cb97-4ba0-8091-01866f9141be",
+      "result_id": "c34fe77f-20e4-4e48-8e59-d56a8ce1d605"
+    },
+    {
+      "claim_id": "cb1e791f-443b-4d98-ba96-f01ddea26751",
+      "result_id": "c34fe77f-20e4-4e48-8e59-d56a8ce1d605"
+    },
+    {
+      "claim_id": "e83f1856-3a82-49f6-8999-eca169b1dd3f",
+      "result_id": "c34fe77f-20e4-4e48-8e59-d56a8ce1d605"
+    },
+    {
+      "claim_id": "0370dbff-3afa-46bf-97a5-1dd398ebba5c",
+      "result_id": "c34fe77f-20e4-4e48-8e59-d56a8ce1d605"
+    },
+    {
+      "claim_id": "2a68970c-36c6-446f-bf3c-8d236f044441",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "7b6856d4-1c4d-4932-9793-9fcf24b1332d",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "4c087cc3-55fe-447c-996f-86e846301782",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "9aacb3ac-527e-493a-b3e7-3cc46d29d6a8",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "ad9c6f05-33dd-414a-9a67-4232ad1893fb",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "da6a3b06-a249-4877-a064-010113876c19",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "0562daa9-c7fa-4913-aa14-b774d06f73bc",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "28067658-bc0c-4047-b637-2184e2042a72",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "9da174e5-3ae3-4f1e-8e7a-6812131df470",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "ca18ccd7-05f1-461f-b1c7-0aa719970ff6",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "898d830a-def1-47e3-82f4-a80b550c6132",
+      "result_id": "23dacea0-1c50-433f-a2f5-d73bf28c825b"
+    },
+    {
+      "claim_id": "daa90238-9f83-4323-87fd-7098fe68607d",
+      "result_id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2"
+    },
+    {
+      "claim_id": "c6e8b35e-f9e5-48e8-a7fb-5d8df583a5ff",
+      "result_id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2"
+    },
+    {
+      "claim_id": "9a6f512a-42a0-4641-b3e5-fbbee26069a3",
+      "result_id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2"
+    },
+    {
+      "claim_id": "03414104-3d7c-49c9-9fd2-4b2b99b0a9fc",
+      "result_id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2"
+    },
+    {
+      "claim_id": "1703bc27-4425-42c3-a2e3-5c56cb7496b4",
+      "result_id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2"
+    },
+    {
+      "claim_id": "d9e1c91b-a88e-46cb-bd9b-77add1886552",
+      "result_id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2"
+    },
+    {
+      "claim_id": "39396142-f32c-4e70-8b87-c112222b37d3",
+      "result_id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2"
+    },
+    {
+      "claim_id": "89a4f165-af69-4024-8137-716284472825",
+      "result_id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2"
+    },
+    {
+      "claim_id": "81b4025e-cea3-4d98-934d-d52ab6eeb1f9",
+      "result_id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2"
+    },
+    {
+      "claim_id": "3d7065ef-e568-410d-924c-a3bb6aecf150",
+      "result_id": "946ad841-1c99-456d-bd41-bdfbdf0dfab2"
+    },
+    {
+      "claim_id": "1c10b939-b1ae-43f3-a416-cd55f5ae73ec",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "34ae3afa-8d6d-4e94-a5c7-2a182b353624",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "f5cba800-4e61-4e8d-b34c-f4b57b84b8c8",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "03a6c6ce-95c2-42b7-a709-915f90e88303",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "f6b839f6-88c0-4602-a332-4b853b8aadb0",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "245e9132-f63f-4cf2-a24d-0680c0704949",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "aeb1b0ce-863b-41f3-be02-588a896835a1",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "47a8973e-8cd8-4d80-80d1-aa242e441abc",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "d18ed764-9f52-4f90-ac66-c7477cfe095f",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "79470d1b-81ec-4790-9c94-18da1f34a75b",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "f4a474bb-eed8-448b-8b01-191ba7bbbf94",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "0244ea34-fbd9-42a9-99e5-1bfb990fed3c",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "6eb9efb8-81d9-4455-a9d0-08690b3df383",
+      "result_id": "eaa45703-5c35-4da5-be01-ebf79c8464dc"
+    },
+    {
+      "claim_id": "ebf6aee7-729e-479f-9c86-88bbd9c38868",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "6c21d3ee-b559-49dd-8033-15a7f5f3dae6",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "5a2fc4bd-4ce1-47f8-9056-3aa3539dff93",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "2e1b4a63-0e81-40b9-9a02-ab3b57bb8bf4",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "66a3deb0-69f0-4c7e-864e-116818f324b5",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "f002ce93-0a26-4ead-be14-73d5732029ca",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "67b408cf-e165-4f80-8a30-77ecb10be367",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "877b11ed-7357-4be2-9313-7404a853ece1",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "fda836b9-c9fd-4fc7-af77-05e8e102125a",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "ed2cfe9b-67c7-4e4a-a842-7b0f36a02074",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "a9b4471e-3e3e-4014-89ed-0139a9e6ba5c",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "2ef17abf-b7c8-4dc8-a80a-8479a013096b",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    },
+    {
+      "claim_id": "951bef65-56c9-4d31-ae5a-c99fd365fa0b",
+      "result_id": "864d8380-1f6a-458e-aaee-e25489639d66"
+    }
+  ],
+  "comparisons": []
+}

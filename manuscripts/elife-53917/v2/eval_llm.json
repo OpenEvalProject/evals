@@ -1,0 +1,219 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PyronicSF is a novel GFP-based pyruvate sensor with improved characteristics compared to the original FRET-based Pyronic sensor. The sensor consists of PdhR linked to cpGFP, shows ~250% fluorescence increase with KD of 480 \u03bcM, is specific for pyruvate, has >6-fold higher dynamic range than Pyronic, and does not require FRET detection technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C19, C57-C60, C62, and C70-C75 provide comprehensive characterization of PyronicSF including in vitro dose-response curves (C13), specificity testing (C14-C15), comparative performance with Pyronic (C19, C57, C62), and structural details (C70-C74). The data demonstrate clear improvements in dynamic range and ease of use, supported by quantitative measurements and direct comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C76"
+    ],
+    "result": "PyronicSF was successfully targeted to mitochondria using the cytochrome oxidase destination sequence, as confirmed by colocalization with mitochondrial markers TMRM and mito-mCherry. PyronicSF required fewer targeting sequences than the larger Pyronic sensor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C76 demonstrate successful mitochondrial targeting through multiple independent validation methods (morphology, TMRM colocalization, mCherry colocalization). The comparison with Pyronic (C76) provides additional evidence that the smaller size of PyronicSF facilitates targeting, though this is presented as inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Mitochondrial pyruvate uptake in astrocytes is mediated by the MPC and can be pharmacologically inhibited. UK-5099 inhibited pyruvate uptake by 69%, and rosiglitazone inhibited uptake by 67%, confirming MPC as a target of thiazolidinediones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 provide functional validation of mito-PyronicSF through pharmacological experiments. The reversible fluorescence changes (C23), differential kinetics between compartments (C24), and dose-dependent inhibition by specific MPC blockers (C25-C27) with quantified effects provide strong evidence. The rosiglitazone result (C27-C28) confirms prior literature findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In cultured mouse astrocytes under physiological conditions, mitochondrial pyruvate concentration is in the low micromolar range (21-25 \u03bcM) and is lower than cytosolic pyruvate (33-40 \u03bcM), as measured by both PyronicSF and Pyronic sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C31-C35 present convergent measurements from two independent sensors (PyronicSF: 21 \u03bcM mitochondrial, 33 \u03bcM cytosolic; Pyronic: 25 \u03bcM mitochondrial, 40 \u03bcM cytosolic). The calibration protocol using MCT-accelerated exchange is described, and the agreement between sensors strengthens the conclusion. However, the calibration relies on a single-point method and assumptions about zero cytosolic pyruvate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Mathematical modeling based on measured pyruvate concentrations demonstrates that the MPC is poised to exert ultrasensitive control over anaplerosis. At 21 \u03bcM mitochondrial pyruvate, a 1% MPC increase causes 1.2% increase in PC flux but only 0.4% increase in PDH flux, and MPC and cytosolic pyruvate interact synergistically for PC flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4 and C36-C43 present modeling predictions that depend critically on enzyme kinetic parameters (C80-C81) taken from other cell types and species (BRENDA database). While the modeling is internally consistent (C82) and the ultrasensitivity concept is well-established (C38), the authors acknowledge (in Discussion) that enzyme parameters in astrocytes need experimental validation. The conclusion about ultrasensitive control is therefore uncertain until astrocyte-specific enzyme kinetics are confirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C84",
+      "C85"
+    ],
+    "result": "A transporter-block protocol using UK-5099 enables measurement of mitochondrial pyruvate consumption rates. Rates ranged from 0.29 to 3.1 \u03bcM/s (median 1.1 \u03bcM/s) and were modulated by OXPHOS activity. UK-5099 inhibition was reversible at low concentrations and short exposure times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 and C84-C85 describe a novel flux measurement protocol with appropriate controls. The reversibility of UK-5099 (C46) contradicts prior literature (C45) but is experimentally demonstrated. The modulation by FCCP and azide (C47-C48) validates the metabolic basis of the measurements. The dose-response data (C84) and known IC50 (C85) support the interpretation, though incomplete inhibition suggests alternative pathways or MPC heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Mitochondrial pyruvate concentration and consumption rates vary spatially within individual astrocytes, with peripheral mitochondria showing higher steady-state pyruvate than perinuclear mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 demonstrate subcellular heterogeneity in mitochondrial pyruvate metabolism using spatial measurements within single cells. The data are supported by Figure 5 showing differential pyruvate levels and consumption rates in different mitochondrial populations. This represents a novel capability of the sensor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PyronicSF functions in living Drosophila melanogaster larval brain tissue, revealing that perineurial glial cells maintain a steep transmitochondrial pyruvate gradient with higher cytosolic than mitochondrial pyruvate, suggesting MPC plays a regulatory role in these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C52-C56 demonstrate sensor functionality in intact tissue with appropriate controls. The differential kinetics between cytosol and mitochondria (C53-C54) and the observed gradient (C55) are consistent with the astrocyte findings. However, the regulatory interpretation (C56) is presented as a suggestion based on the gradient, and the authors note that experiments with normal hemolymph substrates are planned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C79"
+    ],
+    "result": "PyronicSF has pH sensitivity as a limitation, but can detect 10 \u03bcM differences in the low micromolar range with sufficient replicates. pH correction methods are available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C79 acknowledge a key limitation (pH sensitivity) while demonstrating adequate sensitivity for the intended application. The in vitro characterization (C79) provides quantitative assessment of detection limits. Correction methods are described in the manuscript (C16, C18, C75).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C83"
+    ],
+    "result": "Pyruvate concentrations and consumption rates show substantial cell-to-cell variability that is not correlated with sensor expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 and C83 document biological variability and rule out sensor expression as a confounding factor. This is important for interpreting the data, though the causes of variability remain unexplored. The lack of correlation with expression level (C78, C83) suggests the measurements reflect genuine biological heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "PyronicSF enables monitoring of pyruvate concentration, permeability, and flux in individual mitochondria, providing a tool for studying mitochondrial heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by the demonstrated capabilities in C50-C51 showing subcellular measurements of both concentration and flux in different mitochondrial populations within single cells. This represents a unique capability of the sensor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C17",
+      "C29",
+      "C30",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C86"
+    ],
+    "result": "Background knowledge claims about mitochondrial function, pyruvate metabolism, MPC properties, and prior sensor applications are cited from literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11, C17, C29-C30, C64, C66-C69, C71, and C86 represent established knowledge or prior work appropriately cited from literature. These provide context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

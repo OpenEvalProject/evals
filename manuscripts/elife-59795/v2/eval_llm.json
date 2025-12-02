@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The C. chilonis genome was sequenced and assembled to high quality, yielding 189 Mb with scaffold N50 of 2.2 Mb, 14,142 protein-coding genes, and high completeness scores (95.6% CEGMA, 96.6% BUSCO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 provide comprehensive sequencing, assembly, and annotation statistics with appropriate quality metrics (CEGMA and BUSCO). The high coverage (~380X), use of complementary sequencing technologies (Illumina and PacBio), and quality assessment scores support the claim of a high-quality genome assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Phylogenetic analysis places C. chilonis within Braconidae (Ichneumonoidea), showing 75% amino acid identity with M. demolitor and divergence ~61 million years ago, with frequent chromosomal rearrangements after divergence from M. cingulum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C28-C32 are supported by phylogenetic analysis using 2291 single-copy genes, synteny analysis, and divergence time estimation with MCMCtree. The phylogenetic placement is consistent with established taxonomy (C29-C31 cite previous work), and the synteny analysis provides evidence for chromosomal rearrangement (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C48",
+      "C103"
+    ],
+    "result": "Four amino acids (histidine, tryptophan, tyrosine, phenylalanine) lost synthesis capability early in holometabolous insects prior to hymenopteran divergence, with 16 pathway disruptions in the common ancestor of Holometabola.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43, C48, C103 are supported by comparative genomic analysis across 38 hymenopteran and 13 outgroup species. The analysis used established pathway databases (KEGG) and phylogenetic inference to reconstruct ancestral states. The consistency across multiple claims and supporting figures (Figure 2, Figure 3) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C44",
+      "C49",
+      "C50",
+      "C104"
+    ],
+    "result": "Three amino acids (valine, leucine, isoleucine) lost synthesis capability in the common ancestor of Hymenoptera due to loss of two key genes (ilvC and ilvH), with seven pathway disruptions and 16 gene losses after divergence from other holometabolous insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33, C34, C44, C49, C50, C104 are supported by comparative pathway analysis identifying specific gene losses (ilvC, ilvH) responsible for pathway disruption. The phylogenetic placement of these losses at the base of Hymenoptera is consistent across multiple lines of evidence (Figures 2B, 2C, 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C51",
+      "C52",
+      "C94",
+      "C105"
+    ],
+    "result": "Lysine synthesis capability was lost independently nine times in Hymenoptera (five in Ichneumonoid/Chalcidoid, four in Aculeata), all due to loss of the same gene ARO8 (K00838), with 25 species affected including loss in the common ancestor of Cotesia, Microplitis and Macrocentrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35-C42, C51-C52, C94, C105 document independent lysine synthesis losses with detailed phylogenetic mapping. The identification of the same gene (ARO8) lost independently multiple times is well-supported by comparative genomic analysis. Statistical testing (C36: p=0.695, Fisher's exact test) shows no significant enrichment in parasitoids versus aculeates, supporting the claim of independent losses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Gene losses in Hymenoptera are significantly more likely to occur in pathways already disrupted in the common ancestor of Holometabola (76% observed vs 52% expected, p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by statistical analysis (Chi-square test, p<0.01) comparing observed versus expected gene loss patterns. The analysis appropriately accounts for pathway gene numbers in ancestral states. This pattern is biologically plausible as selection pressure would be reduced on genes in already-disrupted pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "C. chilonis has 24 pathway disruptions affecting eight amino acids (lysine, tryptophan, phenylalanine, tyrosine, isoleucine, leucine, valine, histidine) but retains capability to synthesize arginine, threonine, and methionine (though methionine only at later larval and adult stages based on metH expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 integrate genomic pathway analysis with RNA-seq expression data. The pathway analysis is thorough (46 missing genes identified), and the expression data for retained pathways (C62-C64) provides additional support. The stage-specific expression of metH (C63) is an important caveat appropriately noted. Figure 4A and supplementary figures support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C66",
+      "C67"
+    ],
+    "result": "In vitro feeding assays confirm C. chilonis larvae cannot survive without any of eight amino acids (lysine, tryptophan, phenylalanine, tyrosine, leucine, isoleucine, valine, histidine) but can survive without glycine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C66, C67 are supported by experimental feeding assays using chemically defined media with single amino acid deletions. The experimental design is appropriate (positive control with all amino acids, negative control without eight amino acids, individual deletions). The glycine control (C67) validates that larvae can synthesize amino acids predicted by pathway analysis. Statistical analysis (Gehan-Breslow-Wilcoxon test with Benjamini-Hochberg correction) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C106"
+    ],
+    "result": "Metabolomic analysis shows all eight amino acids C. chilonis cannot synthesize are present in host hemolymph, with parasitism significantly altering amino acid levels: lysine decreased, tyrosine increased, and six others unchanged in the first 3 days post-parasitism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74, C106 are supported by UPLC-MS/MS metabolomic analysis with appropriate statistical testing (Student's t-test, p<0.05). The finding that lysine decreases (C72) is consistent with parasitoid absorption, while tyrosine increases (C73) suggests host manipulation. Sample size (n=10 replicates) appears adequate. The 3-day timepoint is appropriate for early larval stage analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Parasitism significantly upregulates 16 protease genes (4-59-fold) in host fat body and hemolymph, mostly serine proteases, trypsins and carboxypeptidases, while having minimal effect on host amino acid biosynthetic pathway genes (82% unchanged), with five upregulated genes also belonging to glycolysis and citrate cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by transcriptome analysis with appropriate differential expression criteria (fold change \u22652, p-adjusted <0.05). The upregulation of proteases (C75-C76) is consistent with protein hydrolysis to release amino acids. The minimal effect on host biosynthetic pathways (C77) and upregulation of glycolysis/citrate cycle genes (C79) suggest metabolic reprogramming rather than increased amino acid synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "C. chilonis shows expansion of ABC transporters (103 genes vs 51 in M. demolitor) occurring after divergence, with 36 highly expressed in larvae; APC family shows high larval/pupal expression (7 genes) but no expansion; some host amino acid transporters are upregulated after parasitism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C91 are supported by phylogenetic analysis and expression data. The ABC transporter expansion (C81-C83) is well-documented with appropriate comparisons to close relatives. Expression patterns (C84, C86-C88) support functional relevance during larval feeding. The finding that expansion is independent (C89-C90) is supported by broader phylogenetic sampling. Host transporter upregulation (C91) suggests coordinated host-parasitoid response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The majority of amino acid synthesis losses occurred basally in holometabolous insects and early in hymenopteran evolution, with all hymenopterans lacking capability to synthesize seven amino acids (four lost in Holometabola, three in common ancestor of Hymenoptera).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 summarize the major evolutionary pattern from the comparative genomic analysis. These are well-supported by the detailed phylogenetic and pathway analyses in claims C3-C4, C33-C50, and are consistent with the data presented in Figures 2 and 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C100",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors speculate that lysine synthesis loss in parasitoids may relate to amino-acid-rich diet and host manipulation capability, while loss in aculeates may reflect specialized diets; they also speculate about mechanisms of amino acid level changes in parasitized hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C96, C100, C107-C109 are explicitly speculative interpretations. While plausible and consistent with the data, they lack direct experimental validation. The authors appropriately use cautious language ('may implicate', 'may reflect', 'suggests'). These hypotheses would require additional experiments to test causality, such as manipulating diet composition or separating effects of venom from larval feeding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C97",
+      "C98",
+      "C101",
+      "C102"
+    ],
+    "result": "Background claims about parasitoid biology, diversity, host manipulation, and gene losses in other insects are supported by citations to previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20, C97-C98, C101-C102 provide background context supported by appropriate citations. These establish the biological and evolutionary framework for the study. While the authors rely on prior work, the citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C99"
+    ],
+    "result": "Synthesis loss was not found in Orussus or sawflies; cysteine pathway disruptions do not affect synthesis capability due to alternative pathways; hymenopteran species show 23-26 pathway disruptions and 7-8 amino acid synthesis losses depending on lineage-specific losses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C99 provide important details about pathway analysis results. The retention of synthesis capability in basal hymenopterans (C53) supports the phylogenetic inference of losses in derived lineages. The cysteine pathway analysis (C54) correctly distinguishes pathway disruption from synthesis capability loss. The summary statistics (C55-C56) are consistent with the detailed analyses.",
+    "result_type": "MINOR"
+  }
+]

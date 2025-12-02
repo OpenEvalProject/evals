@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C90",
+      "C91"
+    ],
+    "result": "Single-cell RNA sequencing of CD11b+ cells from control, PLX-treated (D0), and early repopulation (D2) mouse brains yielded 28,649 high-quality cells across 13 mice, with 5 microglial clusters identified after removing contaminating non-microglial cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 and C90-C91 describe the scRNA-seq experimental workflow, quality control, and initial clustering results. The data are well-documented with appropriate quality metrics (sequencing depth, UMI counts, mitochondrial content) shown in supplementary figures. The identification and removal of contaminating cell clusters (neutrophils, lymphoid, endothelial, astroglial) based on marker gene expression is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C102",
+      "C105"
+    ],
+    "result": "Five distinct microglial clusters were identified with characteristic gene expression profiles: Cluster-1 (chemokine-enriched with NF-\u03baB targets), Cluster-2 (homeostatic microglia), Cluster-3 (translation/cytoskeleton-enriched), Cluster-4 (MHC gene-expressing), and Cluster-5 (proliferative). Cells from D0 and D2 conditions were enriched in Clusters 1 and 5, while control cells were enriched in Cluster-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44, C102, and C105 collectively describe the cluster characterization with supporting gene expression data shown in Figures 1-2. The differential distribution of cells across conditions is quantified and statistically tested. Immunofluorescence validation of CD74 expression (C44) provides orthogonal confirmation of the transcriptomic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C106"
+    ],
+    "result": "Microglial homeostatic genes (Tmem119, P2ry12, P2ry13, Selplg, Cx3cr1, Csf1r) were significantly downregulated in D0 and D2 samples compared to controls, with this downregulation observed across all clusters and validated by immunofluorescence quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C106 describe the downregulation of homeostatic markers with both transcriptomic (violin plots in Figure 3a-f) and protein-level validation (immunofluorescence quantification in Figure 3h-i). The consistency between RNA and protein measurements strengthens the conclusion. Statistical significance is demonstrated with appropriate tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C107",
+      "C108",
+      "C126"
+    ],
+    "result": "MAC2/Lgals3 was identified as highly upregulated in D0 vs. control conditions, with MAC2+ microglia representing 0.68% of total microglia at baseline but 15.46% of remaining microglia after CSF1R inhibition, indicating relative resistance to depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47, C49-C53, C107-C108, and C126 describe the identification and quantification of MAC2+ microglia. The differential expression analysis (Figure 4a), spatial distribution (Figure 4b), and immunofluorescence quantification (Figure 4d-g) provide converging evidence. The dramatic enrichment from 0.68% to 15.46% is well-documented and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C54",
+      "C55",
+      "C110",
+      "C111"
+    ],
+    "result": "Lineage tracing using CX3CR1-CreERT2/Rosa26-stop-DsRed mice demonstrated that MAC2+ cells are of microglial origin and not derived from circulating monocytes, as RFP labeling efficiency in MAC2+ cells did not differ between single and tandem PLX treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C54-C55, C110-C111 describe the lineage tracing experiment with appropriate controls. The experimental design leverages the differential turnover rates of microglia vs. monocytes (98% monocyte replacement in one month vs. stable microglial labeling). The lack of difference in RFP labeling between PLX1X and PLX2X conditions (Figure 5b-d) supports the conclusion that MAC2+ cells are resident microglia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C84",
+      "C85",
+      "C112",
+      "C113"
+    ],
+    "result": "During early repopulation (D4), MAC2+ microglia increased to ~5% of total microglia with ~50% EdU incorporation, indicating high proliferative activity. However, MAC2+ cell numbers returned to baseline by D14, and many proliferating microglia did not express MAC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C84-C85, C112-C113 describe the proliferation dynamics during repopulation with EdU pulse-chase labeling and KI67 staining. The quantification shows clear temporal dynamics (Figure 5h-k). The observation that many proliferating cells lack MAC2 expression (C84) and that MAC2+ numbers normalize by D14 (C58, C85) suggests MAC2 expression is transient, which is appropriately acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C128",
+      "C129"
+    ],
+    "result": "MAC2+ microglia exhibited immature transcriptomic signatures with significant overlap with yolk sac progenitors (21.91% of upregulated genes) and early embryonic microglia (44.72% overlap with E1), while showing downregulation of mature microglial markers including Mafb, Tmem119, Cx3cr1, and Csf1r.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C59-C64, C114-C117, C128-C129 describe the developmental signature analysis comparing MAC2+ cells to published developmental datasets. The comparative analysis is methodologically sound with clear quantification of gene overlap (Figure 6d-e). The upregulation of early developmental genes (Lyz2) and downregulation of mature markers (Mafb, Tmem119) is well-documented. The consistency with an independent dataset (Hammond et al., 2019, C117) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C86",
+      "C87",
+      "C120",
+      "C121"
+    ],
+    "result": "Pathway analysis of MAC2+ microglia revealed predicted activation of TNF signaling via NF-\u03baB and interferon signaling, while TREM2 signaling was predicted to be inhibited, potentially explaining resistance to CSF1R inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66, C86-C87, C120-C121 describe pathway predictions from GSEA and IPA analyses. While the enrichment analysis is appropriate (Figure 6h-i), these are computational predictions rather than experimental validations. The mechanistic link between TREM2 inhibition and CSF1R resistance (C87) is speculative. The connection through TYROBP (C86) is cited but the causal relationship to CSF1R independence requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C100",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "MAC2+ microglia were present in untreated adult mouse brains (3.0% of total microglia) and exhibited immature transcriptomic signatures indistinguishable from MAC2+ cells that survived CSF1R inhibition, confirming the presence of progenitor-like microglia under homeostatic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C67-C72, C100, C122-C124 describe the identification and characterization of MAC2+ cells in control conditions. The Venn diagram analysis (Figure 7c-d) shows extensive overlap in DEGs between control and treated MAC2+ cells (1026/1177 upregulated genes, 1643/1664 downregulated genes overlap). The transcriptomic similarity (C72) is well-supported by the comparative analysis showing similar developmental signatures (Figure 7e-f).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C88",
+      "C89",
+      "C98",
+      "C99",
+      "C101",
+      "C109",
+      "C125",
+      "C130"
+    ],
+    "result": "A small subset of microglia can survive without CSF1R signaling and reestablish the microglial population after CSF1R signaling returns. These CSF1R-resistant microglia include a MAC2+ progenitor-like subpopulation that exhibits immature gene signatures and contributes to microglial homeostasis in adult brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, C88-C89, C98-C99, C101, C109, C125, C130 represent the main conclusions of the study. These are well-supported by the collective evidence: (1) incomplete depletion with PLX treatment, (2) identification of MAC2+ cells with developmental signatures, (3) lineage tracing showing microglial origin, (4) presence in homeostatic conditions, and (5) proliferative capacity during repopulation. The characterization of heterogeneous microglial populations (C88) is supported by the cluster analysis. The notion of progenitor-like features (C89, C98, C101) is supported by the developmental gene signatures, though the functional role in homeostasis remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "As a control analysis, MAC2- cells showed transcriptomic signatures opposite to MAC2+ cells, with upregulated genes overlapping with adult microglia (26.26% and 25.10% with A1 and A2) and downregulated genes overlapping with early embryonic and yolk sac progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 describe the control analysis comparing MAC2- cells to developmental datasets. This serves as an important negative control showing that the developmental signatures are specific to MAC2+ cells. The analysis is methodologically sound and strengthens the specificity of the MAC2+ developmental signature findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The overall contribution of MAC2+ microglia to repopulation is difficult to determine because MAC2 expression may be transient and rapidly turned off after cell cycle completion, requiring future lineage tracing studies of MAC2+ descendants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 acknowledge important limitations of the study. The transient nature of MAC2 expression (C132) is a reasonable inference from the observation that MAC2+ numbers return to baseline by D14 (C58, C85) and that many proliferating cells lack MAC2 (C84). The call for future lineage tracing (C133) is appropriate given this limitation. This represents good scientific practice in acknowledging the boundaries of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C103",
+      "C104",
+      "C110",
+      "C111",
+      "C127"
+    ],
+    "result": "Background knowledge claims about microglia biology, development, CSF1R signaling, MAC2 function, and prior depletion studies establish the scientific context for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C29, C73-C83, C92-C97, C103-C104, C110-C111, C127 represent background knowledge supported by appropriate citations to the literature. These establish the scientific foundation for the study including: microglial identity and function (C1, C9-C12), developmental origins (C13-C18), self-renewal capacity (C20-C22), CSF1R dependence (C23-C29), incomplete depletion with PLX (C26, C73-C74), developmental CSF1R expression patterns (C75-C76), MAC2 biology (C77-C81), and prior repopulation studies (C82-C83, C97). The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  }
+]

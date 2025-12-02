@@ -1,0 +1,163 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C33",
+      "C40"
+    ],
+    "result": "In response to Dammann et al.'s concern about potential bias from missing death records before 2008, the authors applied left-censorship at January 1, 2008, using the Kaplan-Meier technique. This methodological approach is justified by the original Kaplan-Meier paper and addresses the criticism by excluding potentially confounded historical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18, C40 establish the criticism; C5, C19, C20, C21, C33 describe the methodological response. The left-censorship technique is appropriately cited to Kaplan and Meier (1958) with correct interpretation of its assumptions (C20, C21). The approach directly addresses the stated concern and is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C6"
+    ],
+    "result": "The left-censored survival analysis produced results nearly identical to the original analysis, with final survival of 51.9% versus 61.6%, and continued to match the expected trajectory for constant mortality hazard of 8\u00d710\u207b\u2075 per day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide specific quantitative comparisons between analyses, supported by Figure 1A. The minimal difference in survival (9.7 percentage points) and continued match to the constant hazard model provide strong evidence that the left-censorship did not substantially alter conclusions. C6 appropriately summarizes this robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Age-specific mortality hazard calculated from the left-censored data across nine age bins showed no increase with age and was statistically indistinguishable from the original analysis, supporting the conclusion that naked mole-rat mortality hazard remains constant up to 18 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe hazard analysis results shown in Figure 1B. The lack of age-dependent increase in hazard and statistical similarity between analyses provide converging evidence. However, the manuscript lacks explicit statistical test results (p-values, confidence interval overlaps) to fully support 'statistically indistinct' (C27), though Figure 1B shows overlapping confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C1",
+      "C2"
+    ],
+    "result": "Naked mole-rats defy Gompertzian mortality laws by maintaining constant mortality hazard with age, unlike most adult mammals whose death risk increases exponentially with age as originally described by Gompertz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 establish the general Gompertzian pattern in mammals; C3 and C29 state the main finding. This is supported by the survival and hazard analyses (C22-C28) showing constant rather than increasing hazard. The conclusion is appropriately contextualized against established mammalian aging patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C13",
+      "C35",
+      "C10",
+      "C12",
+      "C14",
+      "C30",
+      "C34"
+    ],
+    "result": "Naked mole-rats show exceptional longevity, displaying no demographic aging many dozens-fold beyond reproductive maturity (Tsex = 183 days), at twice their allometrically-expected 6-year lifespan, and far beyond their 2-3 year wild lifespan, with only a minority of the population having expired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14, C30, C34-C35 provide multiple comparative contexts (reproductive maturity, allometric expectations, wild lifespan) all supported by appropriate citations. The 12-year observation period represents ~24-fold Tsex, 2-fold allometric expectation, and 4-6-fold wild lifespan. These comparisons effectively contextualize the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C31"
+    ],
+    "result": "Naked mole-rats exhibit extremely low baseline mortality hazard rates of 1/10,000 per day for non-breeders and approximately 1/100,000 per day for breeders, with an overall constant hazard of 8\u00d710\u207b\u2075 per day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 provide caste-specific hazard rates while C31 gives the overall constant hazard parameter. These quantitative measurements are derived from the survival analysis and are internally consistent (8\u00d710\u207b\u2075 = 1/12,500, intermediate between the two caste-specific rates). The values are presented with appropriate precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The median lifespan for Tsex-surviving naked mole-rats is approximately 6900 days (19 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 provides a specific median lifespan estimate. This is consistent with the survival curves in Figure 1A, where both the original and left-censored analyses show survival above 50% at the end of observation. However, the manuscript does not show the curves reaching 50% survival, suggesting this is an extrapolation from the constant hazard model rather than directly observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C36",
+      "C39"
+    ],
+    "result": "While an as-yet-undetectable Gompertzian component to naked mole-rat mortality cannot be rejected (and such a delayed-aging model is not formally falsifiable), the extremely low baseline hazard rates make it unlikely that Gompertzian hazard is being overwhelmed, and naked mole-rats remain exceptional even under this alternative interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 acknowledge important limitations and alternative interpretations. C37-C38 correctly note the unfalsifiability of delayed Gompertzian aging. C36 provides a reasonable inference based on the low hazard rates. C39 appropriately notes that even the alternative interpretation supports exceptionality. This represents intellectually honest scientific reasoning about the limits of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "For non-aging species with constant mortality hazard, the concept of maximal lifespan cannot be meaningfully defined because mortality hazard never becomes an insurmountable obstacle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 present a logical argument about the implications of constant versus exponentially increasing hazard. Under exponential decay (constant hazard), there is no age at which death becomes inevitable due to aging, unlike Gompertzian mortality where hazard eventually dominates. This is a valid conceptual distinction, though it represents theoretical reasoning rather than empirical finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C15"
+    ],
+    "result": "The analysis is based on observations within the first 12 years (4400 days) of naked mole-rat life, which Dammann et al. considered a concern as only a small fraction of potential lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C15 accurately describe the temporal scope of the data and the criticism. This is a factual statement about the study design and the nature of the criticism, appropriately cited to Dammann et al. (2019). The authors address this concern through multiple comparative contexts (C11-C14).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The analysis used Kaplan-Meier survival analysis on data filtered to include only animals with day-resolution birth and death/censorship data from the original Ruby et al. (2018) dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 describes the data filtering and analytical approach. This is a straightforward methodological description that references the original dataset and filtering criteria. The approach is standard for survival analysis and appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

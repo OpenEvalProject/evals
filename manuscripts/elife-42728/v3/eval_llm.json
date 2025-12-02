@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C60",
+      "C89",
+      "C90"
+    ],
+    "result": "Tactile stimulation via whisker deflection enhances auditory-induced defensive flight behavior in head-fixed mice, as measured by increased peak speed and total travel distance, without affecting baseline locomotion or temporal response profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 provide direct experimental evidence from Figure 1 showing significant increases in peak speed and travel distance with whisker stimulation during noise-induced flight. Control experiments (C89) confirm whisker deflection alone does not induce locomotion, and C23 shows temporal profiles are unaffected. The behavioral paradigm is well-controlled and the statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C2",
+      "C62"
+    ],
+    "result": "The primary somatosensory cortex (SSp) is necessary for tactile enhancement of auditory-induced flight, as demonstrated by muscimol silencing experiments that abolish the enhancement effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is directly supported by experimental data (Figure 1D-F) showing that muscimol infusion into SSp eliminates the difference between conditions with and without whisker stimulation. The inference in C25 that SSp mediates the tactile enhancement is well-justified by this necessity experiment. However, the claim of sufficiency would require additional gain-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C61"
+    ],
+    "result": "In freely moving mice, whisker trimming significantly reduces escape speed through a narrow channel during noise-induced flight, supporting the ecological relevance of tactile enhancement in a more naturalistic setting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is directly supported by data in Figure 1\u2014figure supplement 2B showing decreased flight speed after whisker trimming. This provides important validation that the head-fixed findings generalize to freely moving behavior. However, the experiment lacks some controls (e.g., sham trimming, multiple trials per condition) and the sample size is modest (n=7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C66"
+    ],
+    "result": "SSp projects predominantly to the ventral sector of zona incerta (ZIv), with profuse axonal labeling observed in ZIv but minimal labeling in other ZI sectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C30 are supported by anatomical tracing data (Figure 2A-B) showing selective SSp axon terminals in ZIv. This confirms prior literature citations and provides direct evidence for the anatomical substrate of the SSp-ZIv pathway. The tracing methodology appears standard and the imaging is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C34",
+      "C70"
+    ],
+    "result": "Optogenetic activation of SSp axon terminals in ZIv is sufficient to enhance noise-induced flight without affecting baseline locomotion, demonstrating sufficiency of the SSp-ZIv projection for tactile enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are directly supported by optogenetic data (Figure 2C-E and supplements) showing enhanced flight with ChR2 activation and no effect on baseline locomotion. Combined with the necessity data from muscimol experiments, C34's conclusion of sufficiency and necessity is well-supported. The control experiments are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Bilateral muscimol silencing of ZIv abolishes the tactile enhancement of flight response, demonstrating necessity of ZIv for the cross-modal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is directly supported by experimental data (Figure 2F-H) showing that ZIv inactivation eliminates the whisker-induced enhancement. This provides strong evidence for ZIv's necessity in the pathway. The bilateral manipulation is appropriate given the bilateral whisker stimulation used in some experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C68"
+    ],
+    "result": "ZIv PV+ neurons receive direct monosynaptic excitatory input from SSp, as demonstrated by optogenetically-evoked EPSCs that are blocked by CNQX and recorded in the presence of TTX and 4-AP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by slice recording data (Figure 2I-K) showing monosynaptic EPSCs with appropriate pharmacological controls. The use of TTX and 4-AP to isolate monosynaptic connections is standard methodology. The CNQX blockade confirms glutamatergic transmission. This provides strong evidence for direct SSp\u2192ZIv PV+ connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C46",
+      "C70",
+      "C71"
+    ],
+    "result": "ZIv PV+ neurons are both sufficient (optogenetic activation enhances flight) and necessary (optogenetic/chemogenetic inhibition reduces flight or blocks tactile enhancement) for modulating auditory-induced defensive flight behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by comprehensive optogenetic (ChR2, ArchT) and chemogenetic (DREADDi) experiments (Figures 3A-I) with appropriate controls (C40, C91-C94). The bidirectional manipulations provide strong evidence for causal involvement. The conclusion in C46 that PV+ neurons mediate tactile enhancement is well-justified by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C69"
+    ],
+    "result": "ZIv PV+ neurons integrate tactile and auditory inputs, with concurrent whisker deflections significantly increasing neuronal responses to noise compared to noise alone, indicating a facilitatory role of tactile input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are directly supported by optrode recording data (Figure 3K-L) showing responses to both modalities and enhanced responses with combined stimulation. The statistical analysis (one-way ANOVA, p<0.0001) is appropriate. This provides cellular-level evidence for multisensory integration consistent with the behavioral findings. However, the mechanism of integration (convergent inputs vs. modulation) is not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C4"
+    ],
+    "result": "The ZIv PV+ neuron projection to POm (but not SC) mediates the tactile enhancement of flight, as demonstrated by projection-specific optogenetic activation and chemogenetic silencing experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by projection-specific manipulation data (Figure 4C-K) showing that ZIv-POm activation enhances flight while ZIv-SC activation does not, and that silencing ZIv-POm blocks tactile enhancement. The anatomical tracing (C47) confirms these are major projection targets. The conclusion in C52 is well-supported by the combined gain- and loss-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C72",
+      "C86"
+    ],
+    "result": "The SSp-ZIv-POm pathway mediates tactile modulation of defensive flight behavior, integrating somatosensory information to enhance auditory-induced escape responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion (C53, C72) is well-supported by the combined anatomical, electrophysiological, and behavioral data from all prior results. Each link in the pathway has been demonstrated with appropriate necessity and sufficiency experiments. However, C86 about how this pathway connects to the AC-ICx-PAG auditory pathway remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors propose that the observed tactile-auditory integration has adaptive value for prey animals, potentially indicating predator proximity and facilitating escape route selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C59 are speculative interpretations about ecological significance and adaptive value. While plausible and supported by general citations, these claims are not directly tested in the study. The experiments demonstrate the phenomenon and circuit mechanism but do not provide evidence for the proposed ecological functions or survival advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Tactile stimulation does not significantly affect the temporal profile (onset latency, time to peak) of the noise-induced flight response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by data in Supplementary file 1 showing no significant changes in temporal parameters across multiple experimental conditions. This is an important control showing that the enhancement is in magnitude rather than timing, though the supplementary data are not shown in the main figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The optogenetic and chemogenetic tools (ChR2, ArchT, hM4Di) show appropriate efficacy and specificity in slice recordings, validating their use for behavioral manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by validation experiments in supplementary figures showing proper colocalization, light-evoked responses, and CNO effects. These are essential methodological controls that strengthen confidence in the behavioral manipulation experiments. The validation is thorough and follows standard practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The authors provide background context on defensive behaviors, sensory modalities, and the vibrissal system, establishing the rationale for investigating cross-modal interactions in defensive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 are general statements supported by appropriate literature citations. These provide necessary context and justify the study's focus on tactile-auditory interactions in defensive behavior. The assessment that cross-modality circuit mechanisms are largely unknown (C9) appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors provide anatomical and functional background on zona incerta (ZI), including its subdivisions, cell types, connectivity, and prior functional roles, establishing ZI as a candidate region for tactile-auditory integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 are supported by appropriate literature citations describing ZI anatomy, subdivisions, PV+ neuron distribution, and connectivity with SSp and trigeminal nucleus. This background effectively motivates the focus on ZIv PV+ neurons as potential mediators of tactile modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Different ZI sectors and cell types have distinct connectivity patterns and functional roles, with ZIv PV+ neurons playing roles in both innate and learned defensive behaviors, contrasting with ZIr neurons that reduce defensive responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 are supported by appropriate citations to prior literature and the authors' own work. The anatomical data (C79) showing few ZIv PV+ projections to PAG is directly supported by Figure 4\u2014figure supplement 1. The discussion appropriately contextualizes the current findings within the broader literature on ZI functional heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose potential downstream mechanisms involving POm-striatal circuits and connections to the AC-ICx-PAG auditory pathway, suggesting how the ZIv-POm pathway might modulate auditory-induced behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C88 are largely speculative, supported by citations to prior work but not directly tested in the current study. While the proposed mechanisms are plausible and well-reasoned, they remain hypothetical. Claims C85-C86 about connections between ZIv-POm and AC-ICx-PAG pathways are particularly speculative and would require additional anatomical and functional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors note that ZI PV+ neurons are GABAergic and propose that disinhibitory circuits may be involved in achieving behavioral enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by appropriate citation. Claim C96 is a logical inference from the GABAergic nature of PV+ neurons. Claim C97 is speculative but reasonable given that inhibitory neurons would need to act through disinhibition to enhance behavioral output. However, the specific circuit mechanisms remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The authors provide additional context on the importance of whiskers for rodent navigation, exploration, and environmental information gathering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are general statements supported by appropriate literature citations. These provide relevant context for understanding the ecological significance of whisker-mediated tactile input in defensive behavior.",
+    "result_type": "MINOR"
+  }
+]

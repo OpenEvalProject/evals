@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C41",
+      "C42"
+    ],
+    "result": "AIIs in the mouse retina exhibit a TTX-sensitive, GABAergic receptive field surround that is mediated by direct inhibitory synapses and propagates to ganglion cells. The surround is characterized by excitatory currents that extend beyond the AII dendritic field due to electrical coupling, and inhibitory currents that are blocked by TTX, suggesting involvement of spiking interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C25-C28, C41-C42 are well-supported by experimental data in Figure 2. The voltage-clamp recordings at different holding potentials clearly demonstrate TTX-sensitive inhibitory currents in AIIs, and the spatial extent of responses is consistent with electrical coupling. The propagation to GCs is demonstrated in subsequent experiments (C36-C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C39",
+      "C40"
+    ],
+    "result": "Surround suppression in ON \u03b1, OFF \u03b1, and OFF \u03b4 ganglion cells is mediated by TTX-sensitive inhibition of the AII. As spot diameter increases, EPSCs in ON \u03b1 GCs and IPSCs in OFF \u03b1 and \u03b4 GCs first increase then decrease, and this surround suppression is blocked by TTX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C39-C40 are supported by data in Figure 2D-F showing center-surround organization in GC responses and TTX sensitivity. The inference that this is mediated by AII inhibition (C40) is reasonable given the known connectivity, though it remains an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SBEM analysis reveals that AIIs receive ~25% of their inhibitory input from a population of ~61 axons that synapse almost exclusively with AIIs. Each AII receives ~2 inputs from each presynaptic AC, with these inputs occurring mostly (~80%) within 4 \u03bcm of RB\u2192AII synapses (median distance 2.3 \u03bcm), positioning them well for shunting local excitatory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54 are well-supported by the SBEM anatomical data presented in Figure 3 and Table 1. The quantification of synaptic inputs, their spatial distribution, and the calculation of inputs per cell are based on direct anatomical observations. The inference about shunting (C54) is reasonable given the proximity of inhibitory and excitatory inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Two completely reconstructed ACs from the SBEM volume are displaced, multi-stratified cells with somas in the GCL and processes in both ON and OFF IPL strata. Both cells exhibit very similar connectivity patterns, with the vast majority of output to AIIs and no synapses to other ACs or GCs, suggesting they represent a single cell type that preferentially contacts neurons in the RB pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by anatomical data in Figure 4A-B and Table 2. The morphological similarity and connectivity patterns are well-documented. The inference that they represent a single cell type (C57, C63) is reasonable given the stereotyped connectivity, though the sample size is small (n=2 complete cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The two completely reconstructed ACs receive inputs from both conventional synapses (presumed to be from inhibitory ACs) and ribbon synapses exclusively from ON bipolar cells (RBs and ON CBs), despite being multi-stratified with processes in both ON and OFF IPL sublaminae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by anatomical data in Table 2 and Figure 4. The identification of presynaptic partners is based on morphological criteria. The presumption that conventional synapses are inhibitory (C66) is reasonable but not definitively proven. The conclusion about exclusive ON bipolar input (C68-C69) is well-supported by the anatomical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The reconstructed ACs receive input from multiple ON CB types, predominantly type 6 CBs, including 15 en passant axonal synapses. Type 6 CB en passant synapses have a distinct appearance with ribbons occurring in clusters of at least three, and these synapses show high target specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 are supported by anatomical data in Figure 4C-D. The identification of CB types is based on established morphological criteria. The observation of en passant synapses and their distinct appearance in type 6 cells is well-documented. The inference about target specificity (C77) is supported by the observation that only type 6 en passant synapses contact the reconstructed ACs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "All RB\u2192AC synapses are dyads, with 75% having the AC replace the A17 as one postsynaptic partner (the other being an AII), 18% with the AC replacing the AII, and 7% with unconfirmed second postsynaptic cell identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by anatomical data in Figure 4E and quantified in the text. The identification of postsynaptic partners at dyads is based on morphological criteria established in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The AC identified by SBEM analysis morphologically matches the genetically identified NOS-1 AC from the nNOS-CreER mouse line. NOS-1 cells are bistratified with dendrites and long axons in the ON sublaminae, and all spiking cells that were imaged shared similar morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by morphological comparison and data in Figure 5A. The match between SBEM-identified cells and NOS-1 cells is based on morphological similarity. The consistency of morphology across recorded cells (C84) supports the conclusion that they represent a single type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "NOS-1 cells fire spikes in response to positive contrast that can be completely suppressed by negative contrast, with responses increasing in magnitude with spot diameter up to at least ~500 \u03bcm, suggesting a large integration area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by current-clamp recordings in Figure 5B-C. The spiking responses and their modulation by contrast are clearly demonstrated. The spatial integration properties are well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "NOS-2 cells are non-spiking ON-OFF cells with graded, depolarizing responses to both positive and negative contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by recordings in Figure 5D-E and citation to previous work. The physiological characterization clearly distinguishes NOS-2 from NOS-1 cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "NOS-1 cells receive tonic glutamatergic input from ON bipolar cells that is completely blocked by L-AP4, indicating exclusive ON pathway excitation. They also receive inhibitory inputs from ACs in both ON and OFF pathways, with OFF inhibition increasing in the presence of L-AP4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by voltage-clamp recordings in Figure 5G-I. The pharmacological dissection with L-AP4 clearly demonstrates ON pathway excitation. The increase in OFF inhibition with L-AP4 (C93) is statistically significant (p<0.005). The conclusions about synaptic inputs are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Most displaced ACs in nNOS-CreER retinas (22/26 cells) are spiking NOS-1 cells with sustained ON responses. The density of ~2-3 NOS-1 cells within ~54,500 \u03bcm\u00b2 is consistent with finding two putative NOS-1 cells in the SBEM dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by loose patch recordings in Figure 6A and cell density calculations. The consistency between physiological and anatomical data strengthens the identification of the SBEM-reconstructed cells as NOS-1 ACs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Lhx9 expression distinguishes presumptive NOS-1 from NOS-2 cells in the GCL at P12. NOS-2 cells are rarely found in the GCL (3.3% of NOS+ cells), while NOS-1 cells constitute a large majority (96.7% of NOS+ cells in the GCL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by immunohistochemistry data in Figure 6B-E. The quantification is based on substantial cell counts (n=569 total NOS+ cells). This provides important validation that most displaced NOS+ cells in the GCL are NOS-1 cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "NOS-1 ACs do not co-express CRH, and Cre expression in NOS-1 ACs of the CRH-ires-Cre line is rare and unsystematic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by immunohistochemistry in Figure 6F-G showing no overlap between CRH and NOS labeling (n=66 CRH+ cells, n=85 NOS+ cells). This clarifies the relationship between different genetic driver lines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Following ablation of NOS+ ACs using DTA, excitatory currents in AIIs are smaller and unaffected by TTX, and there is a lack of inhibitory TTX-sensitive surround in AII responses. This provides evidence that a NOS+ cell, most likely the NOS-1 AC, is necessary for generating the AII inhibitory surround.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by DTA ablation experiments in Figure 7. The loss of TTX-sensitive surround following NOS+ AC ablation (C106) is statistically significant for large spots (p<0.01). The conclusion that NOS-1 AC is necessary (C107) is well-supported, though the ablation also removes NOS-2 cells. The specificity is supported by the fact that NOS-2 cells are rare in the GCL and have different physiological properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Optogenetic stimulation of NOS-1 cells evokes IPSCs in AIIs with short latency consistent with monosynaptic connections. These IPSCs are blocked by SR95531 (indicating GABAA receptor mediation) and by TTX (indicating they arise from spiking presynaptic ACs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 are supported by optogenetic experiments in Figure 8A-E. The short latency (few ms) supports monosynaptic connectivity. The pharmacological characterization is rigorous with significant blockade by both SR95531 (108\u00b14%, p<0.001) and TTX (105\u00b14%, p<0.001). This provides strong functional evidence for direct GABAergic synapses from NOS-1 cells to AIIs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Dopaminergic ACs in the nNOS-CreER retina do not express ChR2/eYFP, as demonstrated by lack of overlap between TH+ and eYFP+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is supported by immunohistochemistry in Figure 8F-G showing no overlap between TH and eYFP labeling (n=90 TH+ cells, n=198 eYFP+ cells across 5 retinas). This is important for ruling out dopaminergic ACs as the source of optogenetically-evoked IPSCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C114",
+      "C115"
+    ],
+    "result": "The NOS-1 AC is the major inhibitory input to the AII and is responsible for generating the TTX-sensitive, GABAergic surround that modulates AII network function. The NOS-1 AC is a multistratified, axon-bearing GABAergic cell with dendrites in both ON and OFF layers but a pure ON response to light, and it mediates long-range inhibition during night vision as a major element of the RB pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10, C114-C115 represent the main conclusions of the study and are supported by the convergence of anatomical (SBEM showing ~90% of inhibitory input from this cell type), genetic (identification as NOS-1 AC), physiological (ON spiking responses, GABAergic), ablation (loss of surround with NOS+ AC removal), and optogenetic (direct functional connectivity) evidence. The multi-modal approach provides strong support for these major conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The anatomical analysis explained the ON response of a multi-stratified AC with neurites and excitatory synaptic inputs in both the ON and OFF strata of the IPL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by the combination of anatomical data (Figure 4 showing inputs from ON bipolar cells to both ON and OFF layer dendrites) and physiological data (Figure 5 showing pure ON responses). This resolves the apparent paradox of a bistratified cell with pure ON responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C117"
+    ],
+    "result": "The study demonstrates that novel neural circuits can be identified from targeted connectomic analyses coupled with neurophysiological investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C117 are methodological conclusions supported by the successful identification of the NOS-1 AC circuit through the integrated approach. The study provides a proof-of-principle for this methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C125",
+      "C126"
+    ],
+    "result": "The hyperpolarization of the AII in background light likely depends on direct synaptic inhibition from the NOS-1 AC in addition to synaptic depression at the RB\u2192AII synapse. Inhibitory input from the NOS-1 AC might represent a significant modulatory mechanism within the RB pathway, and a type 6 CB\u2192NOS-1 AC\u2192AII AC\u2192type 6 CB feedback circuit could maintain rectifying transmission at type 6 CB synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123, C125, C126 are speculative hypotheses proposed in the Discussion. While they are reasonable based on the circuit connectivity demonstrated in the study, they are not directly tested. C123 is explicitly stated as 'likely' and C125-C126 use conditional language ('might', 'could'). These would require additional experiments to validate, such as measuring AII responses at different background luminance levels with and without NOS-1 AC activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124"
+    ],
+    "result": "Background knowledge about the rod bipolar pathway, AII amacrine cells, and their role in night vision, including established properties of the circuit and prior findings from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C12-C20, C22-C24, C30-C35, C118-C122, C124 are statements of established knowledge supported by citations to previous work. These provide the scientific context for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C29",
+      "C38"
+    ],
+    "result": "The surround suppression of AIIs is expected to propagate to GCs, and IPSCs in OFF \u03b1 and \u03b4 GCs are similar but not identical, likely reflecting shared AII inputs combined with cell type-specific inhibitory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C38 are logical inferences based on known circuit connectivity and observed data. C29 is a reasonable prediction that is subsequently validated by the GC recordings. C38 is a reasonable interpretation of the observed similarity but not identity of responses in different GC types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Inputs to the AII somas and proximal dendrites are presumed to arise from dopaminergic ACs based on previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is an inference based on citations to previous work showing dopaminergic AC inputs to AII somas. This is a reasonable presumption given the anatomical location and prior literature, though not directly confirmed in this study.",
+    "result_type": "MINOR"
+  }
+]

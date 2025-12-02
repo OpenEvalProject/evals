@@ -1,0 +1,1653 @@
+{
+  "submission": {
+    "id": "85f84fd0-79b7-4370-990e-31da64800da2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:03:37.084258Z",
+    "updated_at": "2025-12-02T11:03:37.084258Z"
+  },
+  "content": [
+    {
+      "id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "submission_id": "85f84fd0-79b7-4370-990e-31da64800da2",
+      "content_type": "manuscript",
+      "content_text": "# Vasoactive intestinal peptide-expressing interneurons are impaired in a mouse model of Dravet syndrome\n\n## Authors\n\n- Kevin M Goff<sup>1</sup> ([ORCID: 0000-0001-5862-0219](https://orcid.org/0000-0001-5862-0219))\n- Ethan M Goldberg<sup>1</sup> ([ORCID: 0000-0002-7404-735X](https://orcid.org/0000-0002-7404-735X)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience The University of Pennsylvania Perelman School of Medicine Philadelphia United States\n2. The Medical Scientist Training Program The University of Pennsylvania Perelman School of Medicine Philadelphia United States\n3. Division of Neurology, Department of Pediatrics The Children's Hospital of Philadelphia Philadelphia United States\n4. Department of Neurology The University of Pennsylvania Perelman School of Medicine Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDravet Syndrome (DS) is a severe neurodevelopmental disorder caused by pathogenic loss of function variants in the gene SCN1A which encodes the voltage gated sodium (Na+) channel subunit Nav1.1. GABAergic interneurons expressing parvalbumin (PV-INs) and somatostatin (SST-INs) exhibit impaired excitability in DS (Scn1a+/-) mice. However, the function of a third major class of interneurons in DS \u2013 those expressing vasoactive intestinal peptide (VIP-IN) \u2013is unknown. We recorded VIP-INs in brain slices from Scn1a+/-mice and wild-type littermate controls and found prominent impairment of irregular spiking (IS), but not continuous adapting (CA) VIP-INs, in Scn1a+/- mice. Application of the Nav1.1-specific toxin Hm1a rescued the observed deficits. The IS vs. CA firing pattern is determined by expression of KCNQ channels; IS VIP-INs switched to tonic firing with both pharmacologic blockade of M-current and muscarinic acetylcholine receptor activation. These results show that VIP-INs express Nav1.1 and are dysfunctional in DS, which may contribute to DS pathogenesis.\n\n## Introduction\n\nDravet syndrome (DS) is a severe neurodevelopmental disorder characterized by temperature-sensitive and spontaneous seizures in the first year of life followed by progression to intractable epilepsy, intellectual disability with autistic features, and a markedly increased rate of sudden unexpected death (SUDEP) (Genton et al., 2011; Kalume et al., 2013; Oakley et al., 2009; Scheffer, 2012). DS is caused by pathogenic loss of function variants in the gene SCN1A, resulting in haploinsufficiency of the voltage gated sodium (Na+) channel \u03b1 subunit Nav1.1 (Claes et al., 2001). Experimental models of DS, including mice lacking a functional copy of Nav1.1 (Scn1a+/-\u00a0mice) (Mistry et al., 2014; Ogiwara et al., 2007; Yu et al., 2006) and neurons generated from induced pluripotent stem (iPS) cells derived from DS patients (Liu et al., 2013; Sun et al., 2016), have provided important insights into the cellular and circuit basis of this disorder. Parvalbumin-immunopositive fast-spiking GABAergic interneurons (PV-INs) and somatostatin (SST)-expressing dendrite-targeting INs (SST-INs) exhibit impaired excitability in Scn1a+/-\u00a0mice (Favero et al., 2018; Ogiwara et al., 2007; De Stasi et al., 2016; Tai et al., 2014; Yu et al., 2006). Despite advances in the understanding of underlying disease pathogenesis, DS remains incurable with a poor prognosis. How loss of Nav1.1 leads to the features that define this clinical syndrome is incompletely understood, and identifying new, targetable loci of dysfunction is critically important to developing new treatments.\n\nNav1.1 is expressed at the axon initial segment (AIS) of PV-INs and, to a lesser extent, SST-INs, and is a major determinant of action potential (AP) generation in these cells (Li et al., 2014; Ogiwara et al., 2007; De Stasi et al., 2016; Tai et al., 2014). Such data have led to the \u2018interneuron hypothesis\u2019 of DS, which posits that PV and SST-IN dysfunction is the predominant driver of both epilepsy and autism (Catterall, 2018; Catterall et al., 2010; Han et al., 2012; Ogiwara et al., 2007; Rubinstein et al., 2015; Yu et al., 2006). However, we recently showed that PV-IN hypoexcitability in Scn1a+/-\u00a0mice is restricted to an early and transient developmental window (P11-21), with subsequent normalization of high-frequency action potential discharge by P35 (Favero et al., 2018). This finding encourages a reconsideration of the cellular basis of circuit pathology that underlies chronic epilepsy and epilepsy-associated cognitive abnormalities in DS. The functional status of the rich diversity of interneurons in the cerebral cortex (DeFelipe et al., 2013; Tremblay et al., 2016) has not been fully explored in models of DS. It could be the case that other interneuron classes are also affected and exhibit chronic dysfunction. The impact of constitutive loss of Nav1.1 on the third major class of cortical INs \u2013 those expressing vasoactive intestinal peptide (VIP-INs) \u2013 remains unknown.\n\nVIP-INs are functionally distinct from SST and PV-INs as they preferentially target other interneurons (particularly SST-INs) rather than pyramidal cells, and thus are considered to exert a disinhibitory influence on cerebral cortical circuits (Acs\u00e1dy et al., 1998; Fu et al., 2014; Krabbe et al., 2018; Lee et al., 2013; Mu\u00f1oz et al., 2017; Pi et al., 2013; Turi et al., 2019; Zhang et al., 2014). VIP-INs also have a role in regulating the response of the cerebral cortex to ascending cholinergic neuromodulatory input from the basal forebrain (Alitto and Dan, 2012; Fu et al., 2015; Kawaguchi, 1997; Porter et al., 1999), and hence are involved in higher-order functions such as attention, memory, and cognitive processing, all of which are impaired in DS (Dravet and Oguni, 2013). Prior work has suggested that VIP-INs do not express Nav1.1 (Yamagata et al., 2017), while recent single cell RNA sequencing studies do suggest expression of Nav1.1 in VIP-INs (Paul et al., 2017; Tasic et al., 2016). Here, we assessed the functional status of VIP-INs in Scn1a+/-\u00a0mice and directly investigated whether VIP-INs express Nav1.1.\n\nTo address this question, we performed targeted whole cell recordings from layer 2/3 VIP-INs in acute brain slices of primary somatosensory and visual cortex in male and female Scn1a+/-\u00a0mice and age-matched wild-type (WT) littermate controls at two different developmental time points. We found that VIP-INs exhibit impairment of AP generation and repetitive firing and confirmed the presence of Nav1.1 on putative VIP-IN axons using immunohistochemistry and confocal microscopy. However, unlike the transient abnormalities seen in PV-INs (Favero et al., 2018), this VIP-IN deficit persisted at later developmental time points. We further found that VIP-IN dysfunction in Scn1a+/-\u00a0mice was restricted to a subset of irregular spiking (IS) VIP-INs, while continuous adapting (CA) VIP-INs were essentially normal. Deficits seen in IS VIP-INs could be reversed by application of the peptide toxin Hm1a, a recently-identified Nav1.1-specific modulator (Osteen et al., 2016). The basis of the IS firing pattern involved M-current mediated by KCNQ channels likely containing Kcnq5. Blockade of M-current with the KCNQ channel inhibitor linopirdine converted IS VIP-INs to a tonic firing mode but had no effect on CA VIP-INs. Also, muscarinic, but not nicotinic cholinergic receptor activation reversibly converted IS VIP-INs to a continuous firing mode. Overall, these results identify a novel cellular locus of dysfunction in DS that may relate to the profound and durable cognitive impairments observed in human patients (Genton et al., 2011; Scheffer, 2012; Villas et al., 2017) and additionally refines our understanding of the diversity of VIP-INs and the molecular determinants of VIP-IN function.\n\n## Results\n\n### Neocortical vasoactive intestinal peptide expressing interneurons exhibit impaired excitability in Scn1a+/-\u00a0mice\n\nTo assess the function of neocortical VIP-INs in Scn1a+/-\u00a0mice, we performed targeted whole cell patch clamp recordings from fluorescently labeled neurons in layer 2/3 of primary somatosensory (\u2018barrel\u2019) cortex in acute brain slices prepared from juvenile and young adult triple transgenic Scn1a.VIP-Cre.tdTomato (tdT) mice and age-matched WT.VIP-Cre.tdT littermate controls (see Materials and methods). VIP-INs from Scn1a+/-\u00a0mice demonstrated multiple abnormalities that were consistent with loss of Na+\u00a0current (Figure 1), including a reduced maximal steady-state firing frequency (67\u00a0\u00b1\u00a02 vs. 48\u00a0\u00b1\u00a03 Hz; p=3 X E-6; n\u00a0=\u00a0150/123 WT/Scn1a+/-), as well as a marked shift in the current/frequency (I/f; input-output) curve. There was notable spike height accommodation (rundown) during repetitive action potential discharge with a progressive depolarization of AP threshold and a decrease in AP peak value during suprathreshold current injections, suggesting enhanced accumulation of Na+\u00a0channel inactivation in VIP-INs from Scn1a+/-\u00a0mice. These data support the conclusion that neocortical VIP-INs are hypoexcitable in Scn1a+/-\u00a0mice relative to age-matched WT littermate controls, likely due to absence of one copy of Scn1a and a resulting decrease in Na+\u00a0current.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Representative traces of layer 2/3 VIP-INs from a Scn1a+/-\u00a0mouse and age matched WT littermate.\u00a0Location of scale bar indicates \u221270 mV. Black indicates rheobase current injection, while gray indicates response to a \u221250 pA hyperpolarizing and a 2X rheobase suprathreshold current injection. (B)\u00a0Current/frequency (I-f) output curve of n\u00a0=\u00a0123 VIP-INs from 24 Scn1a+/-\u00a0mice and n\u00a0=\u00a0150 VIP-INs from 38 age matched WT littermates (See Figure 3\u2014figure supplement 1 for age specific data). Line and shaded area represent mean\u00a0\u00b1\u00a0SEM, and the black bar indicates significance at p<0.01 by a multivariate ANOVA and post-hoc Bonferroni correction. (C)\u00a0Population average of spike amplitude (AP peak \u2013 AP threshold) of repeated action potentials measured at 3X rheobase for each cell. Line and shaded area represent mean\u00a0\u00b1\u00a0SEM. The black bar indicates significance at p<0.01 by a multivariate ANOVA and post-hoc Bonferroni correction. (D)\u00a0Bar graphs showing individual cell values (dots) and the population mean\u00a0\u00b1\u00a0SEM for the maximal steady-state firing frequency of each cell (see Materials\u00a0and\u00a0methods). p values determined by Mann\u2013Whitney U test. (E)\u00a0Bar graphs showing individual cell values (dots) and the population mean\u00a0\u00b1\u00a0SEM for the reduction in spike amplitude of the tenth AP measured in B normalized to the first AP. p values determined by Mann\u2013Whitney U test. All comparisons consider each cell as n\u00a0=\u00a01 (see Table 1 for per-animal comparisons). (F)\u00a0Example images of WT VIP-INs showing immunohistochemical labeling of Nav1.1 on putative axons originating either from the soma (i, inset iii) or a proximal dendrite (ii, inset iv). Asterisks indicate regions of colocalization between Nav1.1 and tdT expression in VIP-INs. Scale is 5 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Data from the Allen cell types database, celltypes.brain-map.org/rnaseq which includes 14,249 cells from the primary visual cortex and 9,573 cells from the anterior lateral motor cortex (see Materials\u00a0and\u00a0methods).\u00a0Heat map indicating ScnXa RNA transcript levels in counts per million (CPM) for all GABAergic neurons and excitatory pyramidal cells in layer 2/3. Each vertical bar represents a single cell. Data was sorted based on expression of Vip, Sst, and Pvalb (PV). Scn1a is expressed in all GABAergic INs, including VIP-INs, with highest expression in PV-INs. PV-INs also express Scn8a at higher levels than Scn2a, while other INs preferentially express Scn2a in addition to Scn1a. Pyramidal neurons show highest expression of Scn2a and Scn8a, with relatively limited expression of Scn1a and Scn3a.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u00a0tdT and Nav1.1 signals were measured through a cross sectional line-scan of 30 VIP-IN axons from n\u00a0=\u00a03 adult WT.VIP-Cre.tdT mice, and divided into positive and negative axons based on a cutoff of the mean\u00a0+\u00a02 SD of the Nav1.1 signal level. Each signal is normalized individually to the max fluorescent intensity within each line scan. Axons were determined by morphological criteria, having a thin (0.5 \u03bcM) profile and large branching angles. (B)\u00a0Proportions of VIP-INs that had positive (23/30; 77%) and negative (7/30; 23%) Nav1.1 expression on an identifiable axon. All \u2018negative\u2019 VIP-INs are from the same field of view as at least one \u2018positive\u2019 VIP-IN.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A)\u00a0Epifluorescence photomicrographs depicting Nav1.1 immunohistochemistry in a representative adult WT and P13 Scn1a-/- mouse. Nav1.1 signal is most intense in layer 4 of the barrel cortex. There is no detectable signal in Scn1a mice using identical conditions. Note the apparent difference in Dapi staining is due to the age difference between WT and Scn1a+/-\u00a0samples. Scale bar\u00a0=\u00a0100 \u00b5M.\u00a0(B)\u00a0Confocal microscopy of the same experiment as in A. Nav1.1 signal in layer 2/3 is more sparse than in layer 4, but many individual processes can be resolved. Essentially no signal is present in the Scn1a-/- sample. Scale\u00a0=\u00a050 \u00b5M. For A and B, images are representative of n\u00a0=\u00a03 mice for each group with at least two technical replicates for each animal. (C)\u00a0Nav1.1 immunohistochemistry in a WT.PV-Cre.tdT mouse showing co-labeling of Nav1.1 on a layer 4 PV-IN axon initial segment, as well as at a distal (presumptively nodal) portion of a PV-IN axon. Scale\u00a0=\u00a010 \u00b5M.\n\n### VIP interneurons express Nav1.1\n\nNav1.1 is known to be expressed in PV-INs and SST-INs, while a recent study suggested that VIP-INs express Nav1.2 at higher levels (Yamagata et al., 2017). However, several recent large-scale transcriptomics datasets suggest that Scn1a mRNA is in fact expressed in VIP-INs, and at levels similar to that seen in SST-INs (Figure 1\u2014figure supplement 1) (Paul et al., 2017; Tasic et al., 2016). We performed immunohistochemical analysis to confirm the presence of Nav1.1 protein in VIP-INs. We identified fine (0.5 \u00b5m) tdT positive, Nav1.1-immunoreactive processes emanating from the soma (Figure 1Ei\u2013ii) or proximal dendrite (Figure 1Eiii-iv) of labeled neurons in WT.VIP-Cre.tdT mice; these were considered to correspond to the VIP-IN axon based on small caliber and larger branching angle (Pr\u00f6nneke et al., 2015). We identified the axon in 30 VIP-INs and found that 23 of 30 (77%) identified axons expressed Nav1.1 (Figure 1\u2014figure supplement 2). In order to validate the specificity of this staining, we performed Nav1.1 immunohistochemistry of tissue from Scn1a-/- null mice and found no immunoreactivity (Figure 1\u2014figure supplement 3A\u2013B). As a positive control, we found high expression of Nav1.1 on PV-IN axons (Figure 1\u2014figure supplement 3C). These data confirm that Nav1.1 protein is present on the axon of many VIP-INs.\n\n### Two electrophysiological subgroups of VIP-INs in neocortical layer 2/3\n\nResults presented thus far indicate that VIP-INs express Nav1.1 and exhibit impaired excitability in Scn1a+/-\u00a0mice. In the course of these initial experiments, we observed a subset (~50%) of VIP-INs in Scn1a+/-\u00a0mice that only fired a brief train of APs before complete cessation of firing (Figure 1A), which was atypical for VIP-INs from WT mice. This prompted us to explore how our data from Scn1a+/-\u00a0mice mapped onto previously described VIP-IN firing patterns. VIP-INs in superficial layers of mouse and rat barrel cortex exhibit spike frequency adaptation with or without irregular spiking and/or initial bursting (variably referred to in the literature as continuous adapting, irregular spiking, bursting, or fast adapting) (He et al., 2016; Pr\u00f6nneke et al., 2015). However, there is no existing standardized or widely agreed upon nomenclature to describe VIP-IN firing patterns.\n\nWe identified a diversity of VIP-IN firing patterns in response to step depolarizations consistent with previously described continuous adapting (CA), irregular spiking (IS), and bursting cells (von Engelhardt et al., 2007; He et al., 2016; Lee et al., 2010; Porter et al., 1998; Porter et al., 1999; Pr\u00f6nneke et al., 2015). However, when we delivered longer (8\u201310 s) suprathreshold depolarizing pulses, we found that all cells could be separated into two clear groups (Figure 2). Approximately half of all VIP-INs fired continuously, albeit with spike frequency adaptation (here referred to as CA VIP-INs), while the other half instead fired a burst of action potentials prior to switching to an irregular spiking pattern (IS VIP-INs), often with a variable silent period in between the two phases (Figure 2A). We could reliably identify these two groups using k-means clustering of the length of the initial burst of action potentials and the coefficient of variation of the inter-spike interval (ISI CoV), but these groups were not distinguishable when using 600 ms pulses alone (Figure 2C,D). Many cells that fired continuously during 600 ms sweeps were in fact clearly IS based on response to these longer depolarizations; likewise, cells that might be classified as bursting and which appear to cease firing during 600 ms sweeps eventually switch to an IS mode with longer depolarizations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Four representative cells displaying the range of VIP-IN firing patterns.\u00a0On the left are APs elicited with a standard (600 ms) current injection. On the right are firing patterns recorded with 8 s long depolarizations using the same current amplitude as on the left (2X rheobase for each cell). CA and IS firing patterns are easily separated with 8 s depolarization, but not distinguishable using only the first 600 ms. These firing patterns were consistent even when we stimulated with higher current injections (see Figure 3Aii\u2013iii). (B)\u00a0Similar CA and IS patterns were observed in VIP-INs from Scn1a+/-\u00a0mice, with a deficit in IS VIP-IN firing. (C)\u00a0Characterization of VIP-IN firing patterns using two key measures: the length of the initial burst of action potentials, and the coefficient of variation of the inter-spike interval (ISI CoV). These parameters were measured using either 600 ms or 8 s long rectangular depolarization in cells from both WT and Scn1a+/-\u00a0mice; then, k-means clustering of the 8 s data was performed (light/dark colors indicating the results of clustering into two groups). Note the clear separation between the two groups in the 8 s data, but large overlap when looking only at data generated from 600 ms current injections. (D)\u00a0The same data as in C, but highlighting the dependence of the measured ISI CoV on the length of the depolarization. With 600 ms sweeps, there is considerable overlap between CA and IS cells in both genotypes; however, with 8 s depolarizations, the two groups separate with minimal overlap. (E)\u00a0Similar proportions of CA and IS cells in WT and Scn1a+/-\u00a0mice. For C-E, n\u00a0=\u00a051 IS and 63 CA from 24 WT mice, and n\u00a0=\u00a041 IS and 31 CA from 17 Scn1a+/-\u00a0mice; p=0.10 via chi-square test; chi-square statistic\u00a0=\u00a02.63.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Shown is the firing pattern elicited in response to an 8 s square depolarization from an IS VIP-IN.\u00a0When the resting membrane potential is depolarized with a DC offset (to \u221255 mV), IS VIP-INs show nearly identical firing patterns to that seen in response to suprathreshold stimulation from rest. (B)\u00a0Quantification of firing patterns of n\u00a0=\u00a016 WT IS VIP-INs from eight mice shows no change in either the initial burst length or the ISI CoV in response to prepulse depolarization. (C)\u00a0Example traces from a CA VIP-IN and IS VIP-IN in response to either a square 8 s current injection or a slow ramp injection with max amplitude of 200 pA. IS VIP-INs were equally distinguishable using ramp current injections. (D)\u00a0Quantification of the measured ISI CoV using either a square or ramp current injection. CA VIP-INs had a smaller ISI CoV (more regular) with ramp currents, while IS VIP-INs fired with an even more irregular pattern; p-values determined by paired student\u2019s t-test. n\u00a0=\u00a033 IS VIP-INs from 13 mice and n\u00a0=\u00a032 CA VIP-INs from 11 mice. (E)\u00a0Quantification of the instantaneous firing frequency during ramp current injections to 200 pA calculated with a 20 ms sliding average and aligned to the onset of firing for each cell (dashed line in C and E). CA VIP-INs show a typical saturating input/output relationship, while IS VIP-INs show highly non-linear responses, often with initial bursting. Line and shaded area represent mean\u00a0\u00b1\u00a0SEM, and bar indicates significance at p<0.001 by a multivariate ANOVA and post hoc Bonferroni test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A)\u00a0Examples of CA and IS VIP-INs with and without bursting at rheobase with an intra-burst frequency\u00a0>\u00a0100 Hz.\u00a0Black trace indicates response to a rheobase current injection, and gray to a 3X rheobase suprathreshold current injection. B)Relative proportions of CA (18/71) and IS (42/78) VIP-INs in WT.VIP-Cre.tdT mice that are bursting at rheobase (yellow\u00a0=\u00a0bursting, p<0.001 via chi-square test).\n\nA recent study implicated T-type calcium channels as the mechanism of bursting at rheobase observed in a small subset (~20%) of VIP-INs (Pr\u00f6nneke et al., 2018). We considered whether this group corresponded to the IS VIP-INs described here. A prepulse step depolarization to \u221255 mV to inactivate T-type channels had no effect on the suprathreshold response of IS-VIPs here (Figure 2\u2014figure supplement 1A\u2013B). We were able to clearly identify CA and IS VIP-INs using a slow 8 s ramp current injection to induce inactivation of T-type calcium channels (Figure 2\u2014figure supplement 1C\u2013E). Finally, we found that a subset of both CA and IS VIP-INs burst at rheobase, indicating that our IS VIP-IN category does not correspond directly to these previously described bursting VIP-INs (Figure 2\u2014figure supplement 2). Hence, we concluded that irregular spiking vs. bursting at rheobase are mechanistically distinct features of in VIP-INs.\n\n### IS VIP-INs are specifically impaired in Scn1a+/-\u00a0mice\n\nWhile VIP-INs exhibit decreased excitability in Scn1a+/-\u00a0mice, dividing the dataset into CA and IS VIP-INs revealed that IS VIP-INs are particularly impaired while CA VIP-INs are relatively spared. We determined that CA and IS VIP-INs are present in Scn1a+/-\u00a0and WT mice in similar proportions as determined by our unbiased classification (Figure 2B,E). IS VIP-INs displayed more severe deficits compared to the pooled dataset (Figure 1), with a depolarized AP threshold (WT vs. Scn1a+/-\u00a0mice: \u221241.3\u00a0\u00b1\u00a00.5 vs. \u221239.3\u00a0\u00b1\u00a00.4; p=0.01), decreased AP amplitude (79\u00a0\u00b1\u00a01.0 vs. 72\u00a0\u00b1\u00a01.3 mV; p=0.003) and steady-state firing (59\u00a0\u00b1\u00a04 vs. 25\u00a0\u00b1\u00a03 Hz; p=8 X E-9), a clear difference in the I-f curve, and notable spike rundown with repetitive discharge (Figure 3). These differences remained significant when we treated each animal (rather than a cell) as an n (Table 1). CA VIP-INs from Scn1a+/-\u00a0mice showed no statistical differences compared to CA VIP-INs from age-matched WT littermate controls across a range of additional measures of intrinsic excitability, properties of individual action potentials, and features of repetitive firing (Table 1). Additionally, subtype differences between CA and IS VIP-INs were consistent between WT and Scn1a+/-\u00a0mice, including presence of increased voltage sag in response to hyperpolarizing current injection and shorter (faster) AP half-width and rise-time, with IS VIP-INs more likely to burst at rheobase (Figure 2\u2014figure supplement 2, Table 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0(i)\u00a0Example traces of CA and IS VIP-INs from WT and Scn1a+/-\u00a0mice, showing responses at \u221250 pA hyperpolarizing (gray), rheobase (black), and 2X rheobase current injections (gray; typically\u00a0~\u00a0100\u2013140 pA). (ii) Raster plots of all APs elicited with standard 600 ms current steps in 10 pA increments for the cells in i. (iii) Population averages of the raster plots in ii, represented as heat maps where the color corresponds to the instantaneous firing rate for each give current step using a 20 ms sliding average. (B)\u00a0Current/frequency (IF) plots for groups shown in A. Line and shaded area represent mean\u00a0\u00b1\u00a0SEM. Bar indicates significance at p<0.001 by a multivariate ANOVA and post-hoc Bonferroni correction. (C)\u00a0Population average of AP amplitude for repeated action potentials elicited at 3X rheobase for each cell. Line and shaded area represent mean\u00a0\u00b1\u00a0SEM. Bar indicates significance at p<0.001 by a multivariate ANOVA and post-hoc Bonferroni correction. (D)\u00a0Bar graphs showing individual cell values (dots) and the population mean\u00a0\u00b1\u00a0SEM for several markers of VIP-IN excitability. p values determined by Kruskal-Wallis with post-hoc Dunn\u2019s test. For simplicity, differences between CA an IS cells are not shown (see Table 1). For B-D, n\u00a0=\u00a071 IS and 78 CA cells from 32 WT mice, and n\u00a0=\u00a066 IS and 43 CA cells from 22 Scn1a+/-\u00a0mice were included. All groups were determined using 8 s square (Figure 2) or ramp depolarizations (Figure 2\u2014figure supplement 1) or, for a subset of IS VIP-INs for which we did not record 8 s depolarizations, if their definitive firing pattern was clear with a 600 ms depolarization (as in Ai). Data for each cell are available in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0IF curves of CA and IS VIP-INs in the two indicated age ranges. Line and area represent mean\u00a0\u00b1\u00a0SEM, and bar indicates significance at p<0.01 by a multivariate ANOVA and post hoc Bonferroni test. (B)\u00a0Spike amplitude rundown of the same groups in A. Amplitude of repeated action potentials was measured at 3X rheobase for each cell. Line and area represent mean\u00a0\u00b1\u00a0SEM, and bar indicates significance at p<0.01 by a multivariate ANOVA and post hoc Bonferroni test. (C)\u00a0Individual cells (dots) and population mean\u00a0\u00b1\u00a0SEM (error bar); p values determined by a Kruskal-Wallis with post hoc Dunn\u2019s test; ***, p<0.001. For A-C, n\u00a0=\u00a023|42 (P18|P30) CA and 34|44 (P18|P30) IS cells from 32 WT mice, and n\u00a0=\u00a017|27 (P18|P30) CA and n\u00a0=\u00a024|50 (P18|P30) IS cells from 23 Scn1a+/-\u00a0mice, were included.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A)\u00a0Heat maps of VIP-IN from primary visual cortex (V1) firing in response to 600 ms test pulses at 10 pA increments (compare to Figure 3Aiii).\u00a0(B)\u00a0IF curves of CA and IS VIP-INs from V1 showing near identical results to barrel cortex. Line and area represent mean\u00a0\u00b1\u00a0SEM, and bar indicates significance at p<0.05 by a multivariate ANOVA and post hoc Bonferroni test. (C)\u00a0Individual cells (dots) and population mean\u00a0\u00b1\u00a0SEM (error bar); p values determined by a Kruskal-Wallis with post hoc Dunn\u2019s test. (D)\u00a0Relative proportions of CA and IS cells in V1 (compare to Figure 2E). A total of n\u00a0=\u00a013 CA and 15 IS VIP-INs from 4 WT.VIP-Cre.tdT mice and n\u00a0=\u00a015 CA and 13 IS VIP-INs from 6 Scn1a.VIP-Cre.tdT mice were included.\n\n**Table 1.**\n Properties of VIP-INs from Scn1a+/-\u00a0and WT littermates Listed p-values indicate the result of a Kruskal Wallis test for an effect by group.Pairwise comparisons are with Dunn's test. All comparisons are made considering the average of each mouse as n\u00a0=\u00a01.* p<0.05 vs. age and subtype matched wild-type; **p<0.01; ***p<0.001. \u2020 p<0.05 between CA and IS subtypes (consistent between WT and Scn1a+/-). Data for each cell are reported in Figure 3\u2014source data 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Subtype</th>\n      <th colspan=\"2\">CA</th>\n      <th></th>\n      <th colspan=\"3\">IS</th>\n      <th>p-value</th>\n    </tr>\n    <tr>\n      <th>Genotype</th>\n      <th>WT</th>\n      <th>Scn1a+/-</th>\n      <th></th>\n      <th>WT</th>\n      <th></th>\n      <th>Scn1a+/-</th>\n      <th>(group)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>n mice (cells)</td>\n      <td>30(71)</td>\n      <td>20(43)</td>\n      <td></td>\n      <td>32(78)</td>\n      <td></td>\n      <td>22(66)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Age (days)</td>\n      <td>33.7\u00a0\u00b1\u00a01.9</td>\n      <td>33.5\u00a0\u00b1\u00a02.6</td>\n      <td></td>\n      <td>33.4\u00a0\u00b1\u00a02.0</td>\n      <td></td>\n      <td>34.0\u00a0\u00b1\u00a02.4</td>\n      <td>0.8</td>\n    </tr>\n    <tr>\n      <td>Vm (mV)</td>\n      <td>\u221266.3\u00a0\u00b1\u00a01.0</td>\n      <td>\u221265.2\u00a0\u00b1\u00a01.0</td>\n      <td></td>\n      <td>\u221265.6\u00a0\u00b1\u00a00.8</td>\n      <td></td>\n      <td>\u221264.0\u00a0\u00b1\u00a00.6</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>Rm (M\u03a9)</td>\n      <td>355\u00a0\u00b1\u00a016</td>\n      <td>391\u00a0\u00b1\u00a021</td>\n      <td></td>\n      <td>344\u00a0\u00b1\u00a017</td>\n      <td></td>\n      <td>314\u00a0\u00b1\u00a011</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>Time Constant</td>\n      <td>9.17\u00a0\u00b1\u00a00.9</td>\n      <td>9.98\u00a0\u00b1\u00a01.0</td>\n      <td></td>\n      <td>10.7\u00a0\u00b1\u00a01.5</td>\n      <td></td>\n      <td>10.1\u00a0\u00b1\u00a00.9</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>Rheobase (pA)</td>\n      <td>48.3\u00a0\u00b1\u00a03.2</td>\n      <td>45.4\u00a0\u00b1\u00a04.1</td>\n      <td></td>\n      <td>53.5\u00a0\u00b1\u00a03.6</td>\n      <td></td>\n      <td>57.7\u00a0\u00b1\u00a04.2</td>\n      <td>0.2</td>\n    </tr>\n    <tr>\n      <td>AP Threshold (mV)</td>\n      <td>\u221241.8\u00a0\u00b1\u00a00.5</td>\n      <td>\u221241.5\u00a0\u00b1\u00a00.5</td>\n      <td></td>\n      <td>\u221241.2\u00a0\u00b1\u00a00.5</td>\n      <td>*</td>\n      <td>\u221239.1\u00a0\u00b1\u00a00.4</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>AP Rise Time (ms)</td>\n      <td>0.45\u00a0\u00b1\u00a00.01</td>\n      <td>0.46\u00a0\u00b1\u00a00.01</td>\n      <td></td>\n      <td>0.44\u00a0\u00b1\u00a00.01</td>\n      <td></td>\n      <td>0.44\u00a0\u00b1\u00a00.01</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>Max Rise Slope (mV/ms)</td>\n      <td>418\u00a0\u00b1\u00a014</td>\n      <td>417\u00a0\u00b1\u00a013</td>\n      <td></td>\n      <td>427\u00a0\u00b1\u00a017</td>\n      <td></td>\n      <td>371\u00a0\u00b1\u00a015</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>AP Halfwidth (ms)</td>\n      <td>0.55\u00a0\u00b1\u00a00.02</td>\n      <td>0.54\u00a0\u00b1\u00a00.02</td>\n      <td>\u2020</td>\n      <td>0.50\u00a0\u00b1\u00a00.02</td>\n      <td></td>\n      <td>0.49\u00a0\u00b1\u00a00.02</td>\n      <td>0.04</td>\n    </tr>\n    <tr>\n      <td>AP Amplitude (mV)</td>\n      <td>79\u00a0\u00b1\u00a01.3</td>\n      <td>80\u00a0\u00b1\u00a01.2</td>\n      <td></td>\n      <td>78\u00a0\u00b1\u00a01.6</td>\n      <td>*</td>\n      <td>71\u00a0\u00b1\u00a01.8</td>\n      <td>0.004</td>\n    </tr>\n    <tr>\n      <td>AHP Amplitude (mV)</td>\n      <td>10.0\u00a0\u00b1\u00a00.63</td>\n      <td>10.9\u00a0\u00b1\u00a00.55</td>\n      <td></td>\n      <td>10.6\u00a0\u00b1\u00a00.55</td>\n      <td></td>\n      <td>11.0\u00a0\u00b1\u00a00.43</td>\n      <td>0.6</td>\n    </tr>\n    <tr>\n      <td>AHP time (ms)</td>\n      <td>1.75\u00a0\u00b1\u00a00.16</td>\n      <td>1.76\u00a0\u00b1\u00a00.21</td>\n      <td></td>\n      <td>1.51\u00a0\u00b1\u00a00.14</td>\n      <td></td>\n      <td>1.41\u00a0\u00b1\u00a00.11</td>\n      <td>0.09</td>\n    </tr>\n    <tr>\n      <td>Sag (percent)</td>\n      <td>14.4\u00a0\u00b1\u00a01.3</td>\n      <td>16.3\u00a0\u00b1\u00a01.5</td>\n      <td>\u2020</td>\n      <td>23.5\u00a0\u00b1\u00a02.6</td>\n      <td></td>\n      <td>28.0\u00a0\u00b1\u00a02.0</td>\n      <td>8 E \u22125</td>\n    </tr>\n    <tr>\n      <td>APs at Rheobase</td>\n      <td>1.38\u00a0\u00b1\u00a00.1</td>\n      <td>1.32\u00a0\u00b1\u00a00.1</td>\n      <td>\u2020</td>\n      <td>2.41\u00a0\u00b1\u00a00.3</td>\n      <td></td>\n      <td>2.01\u00a0\u00b1\u00a00.2</td>\n      <td>7 E \u22125</td>\n    </tr>\n    <tr>\n      <td>Instantaneous (Hz)</td>\n      <td>237\u00a0\u00b1\u00a011</td>\n      <td>235\u00a0\u00b1\u00a013</td>\n      <td></td>\n      <td>245\u00a0\u00b1\u00a010</td>\n      <td></td>\n      <td>209\u00a0\u00b1\u00a011</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>Steady-State (Hz)</td>\n      <td>81\u00a0\u00b1\u00a04</td>\n      <td>81\u00a0\u00b1\u00a04</td>\n      <td>\u2020</td>\n      <td>55\u00a0\u00b1\u00a04</td>\n      <td>**</td>\n      <td>25\u00a0\u00b1\u00a03</td>\n      <td>2 E \u221212</td>\n    </tr>\n    <tr>\n      <td>ISI CoV</td>\n      <td>0.30\u00a0\u00b1\u00a00.02</td>\n      <td>0.31\u00a0\u00b1\u00a00.02</td>\n      <td>\u2020</td>\n      <td>0.61\u00a0\u00b1\u00a00.03</td>\n      <td></td>\n      <td>0.69\u00a0\u00b1\u00a00.04</td>\n      <td>4 E \u221213</td>\n    </tr>\n  </tbody>\n</table>\n\nAs prior work showed that the electrophysiological abnormalities identified in PV-INs in Scn1a+/-\u00a0mice are limited to a narrow developmental window between P11-21 (Favero et al., 2018), we subdivided our analysis based on age and found nearly identical results at P18-21 and P30-55 for both IS and CA VIP-INs (Figure 3\u2014figure supplement 1). To assess whether impairment of IS VIP-INs was a general phenomenon or restricted to primary somatosensory neocortex, we additionally performed a set of recordings in layer 2/3 primary visual cortex, again finding a similar proportion of IS vs. CA VIP-INs and replicating our central finding that IS VIP-INs were selectively hypoexcitable in Scn1a+/-\u00a0mice (Figure 3\u2014figure supplement 2).\n\n### Modulation of Nav1.1 rescues IS VIP-IN function in Scn1a+/-\u00a0mice\n\nTo further support our hypothesis that VIP-INs are impaired in Scn1a+/-\u00a0mice due to decreased expression of Nav1.1, we attempted to rescue VIP-IN function by directly targeting Nav1.1 pharmacologically. Hm1a is a recently described spider toxin that enhances Nav1.1 current via inhibiting fast and slow inactivation (Osteen et al., 2016; Osteen et al., 2017). In acute brain slices prepared from Scn1a+/-\u00a0mice, bath application of 1 \u00b5M Hm1a led to markedly increased steady-state firing in IS VIP-INs (control, 33\u00a0\u00b1\u00a02 Hz; Hm1a, 97\u00a0\u00b1\u00a05 Hz; p=0.001) and attenuation of spike rundown (Figure 4A\u2013C). We did observe an effect in CA VIP-INs at this concentration, with a small increase in steady-state firing frequency (control, 58\u00a0\u00b1\u00a04 Hz; Hm1a, 68\u00a0\u00b1\u00a05 Hz; p=0.05) and attenuated spike height accommodation. As a positive control, Hm1a increased the maximum steady-state firing rate of PV-INs in Scn1a+/-\u00a0mice at P18-21 (control, 229\u00a0\u00b1\u00a02 Hz; Hm1a, 292\u00a0\u00b1\u00a06 Hz; p=0.004), although this effect was proportionally smaller than what we observed in IS VIP INs (mean difference of 295% in IS VIP-INs compared to 28% in PV-INs). In contrast, Hm1a had no measurable effect on the firing of layer 2/3 neocortical pyramidal neurons in WT mice, supporting the specificity of this toxin to Nav1.1 and the smaller role of Nav1.1 in the regulation of pyramidal cell excitability relative to interneurons. We repeated this rescue experiment of IS VIP-IN excitability using 50 nM Hm1a, which is highly selective for Nav1.1 over other non-Nav1.1 Nav1.X subunits (Osteen et al., 2016;\u00a0Richards et al., 2018), and obtained identical results (Figure 4\u2014figure supplement 1). Importantly, although Hm1a causes a dramatic increase in steady-state firing of IS VIP-INs, these cells still retain a distinct irregular firing pattern in the presence of Hm1a in response to longer depolarizations (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Example traces from recordings of representative CA and IS VIP-INs from Scn1a.\u00a0VIP-Cre.tdT mice, as well as a PV-IN and pyramidal neuron from a Scn1a.PV-Cre.tdT mouse, before and after bath application of 1 \u03bcM Hm1a at a 3X rheobase (near maximal) current injection for each cell. Note that the horizontal scale for the PV-IN is 100 ms instead of 200 ms, to facilitate visualization of individual APs. (B)\u00a0Change in the max steady state firing frequency of n\u00a0=\u00a09 CA VIP-INs, 7 IS VIP-INs, 6 PV-INs, and three pyramidal neurons from a total of 5 Scn1a.VIP-Cre.tdT and 2 Scn1a.PV-Cre.tdT P18-21 mice, with p values and significance determined using a paired students\u2019 t-test. (C)\u00a0Spike amplitude of successive APs elicited at 3X rheobase for each cell. Line and shaded area represent mean\u00a0\u00b1\u00a0SEM, and bar indicates significance at p<0.01 via a multivariate ANOVA and post-hoc Bonferroni correction. (D)\u00a0Example traces from voltage clamp recordings of VIP-INs from acutely dissociated cortex of P18 WT.VIP-Cre.tdT mice. Light gray shows the initial transient sodium current recorded with a single voltage command step from \u221280 mV to 0 mV. Black shows the response following bath application of 500 nM Hm1a. The dashed line indicates the inset (shown on the right). There is no change in the peak amplitude, but clear slowing of inactivation. (E)\u00a0Example differential interference contrast image of a dissociated VIP-IN, as well as the tdT signal imaged with epifluorescence. VIP-INs had small bipolar or rounded shapes. Scale\u00a0=\u00a05 \u03bcM. (F)\u00a0Quantification of the effects of Hm1a on n\u00a0=\u00a03 VIP-INs from 2 P18 WT.VIP-Cre.tdT mice. Purple lines represent the change of each individual cell, with p values determined by a paired students\u2019 t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Example traces from recordings of a representative IS VIP-IN from an Scn1a.\u00a0VIP-Cre.tdT mouse before and after bath application of 50 nM Hm1a at a 3X rheobase current injection.\u00a0(B) Summary data showing an increase in maximal steady-state firing frequency with application of 50 nM Hm1a. n\u00a0=\u00a05 VIP-INs from three Scn1a.VIP-Cre.tdT mice; p values determined by a paired student\u2019s t-test. C)8 s ramp depolarization with an amplitude of 200 pA of the IS VIP-IN from panel A. While Hm1a greatly increases firing frequency, IS VIP-INs retain a distinct irregular spiking firing pattern.\n\n### Hm1a modulates Na+\u00a0current inactivation in VIP-INs\n\nThe mechanism of action of Hm1a involves destabilizing the inactive state of Nav1.1, which increases the availability of Nav1.1 channels at depolarized potentials by shifting more channels to the closed vs. inactive state. If VIP-INs indeed express Nav.1, then Hm1a could lead to a rescue of IS VIP-IN function by preventing an accumulation of Na+\u00a0channel inactivation during repetitive firing. To test this possibility, we directly measured the effect of Hm1a on Na+\u00a0current in VIP-INs using whole cell voltage clamp recordings of genetically labeled VIP-INs isolated from acutely dissociated cortex of P18 WT.VIP-Cre.tdT mice (Figure 4D\u2013F). Hm1a slowed the time constant of inactivation and increased slowly-inactivating/persistent current in VIP-INs, with no effect on the peak current density. This further supports the presence of Nav1.1 in VIP-INs and indicates that Hm1a has a similar effect on inactivation of endogenous Na+\u00a0current in VIP-INs as compared to previously published data on Nav1.1 expressed in heterologous systems.\n\n### Irregular spiking is not correlated with VIP-IN molecular markers\n\nThe rescue of IS VIP-IN excitability with Hm1a supports our conclusion that IS VIP-INs are particularly impaired in Scn1a+/-\u00a0mice. To attempt to understand how the specific dysfunction of IS VIP-INs is involved in DS pathogenesis, we investigated whether the IS and CA firing patterns identified here map onto previously described morphological and molecularly defined VIP-IN subgroups. Intersectional Cre/Flp labeling of VIP/cholecystokinin (VIP/CCK) or VIP/calretinin (VIP/CR) double positive INs defines two minimally-overlapping subsets of VIP-INs (He et al., 2016; Porter et al., 1998). In these mice, VIP/CR-INs have a bipolar morphology, while VIP/CCK INs tend to be multipolar. We used whole cell recording with morphological analysis to compare our electrophysiological classification scheme with the subtypes labeled via this intersectional strategy (Figure 5). We filled cells with Alexa-488 during whole-cell recording, generated 2P image stacks, and quantified the dendritic arborization pattern of each cell. VIP/CR-INs were more often bipolar, or \u2018vertically biased,\u2019 compared to VIP/CCK-INs (Figure 5A), as shown previously (He et al., 2016), but CR and CCK did not reliably define electrophysiological subtypes of VIP-INs (Figure 5A\u2013B), nor were there any differences in morphology between the CA and IS VIP-INs within a given genotype (Figure 5C). These data argue that IS and CA firing patterns do not coincide with previously described VIP-IN subgroups.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0Example traces from layer 2/3 VIP-INs in barrel cortex of adult CR-Cre/VIP-Flp and CCK-Cre/VIP-Flp mice. Both CA and IS firing patterns were observed in each intersectional population of VIP-INs. Insets on the left show the first 600 ms of each 8 s depolarization. (B)\u00a0Morphological reconstruction of the proximal dendrites of the cells in A to illustrate dendritic orientation. Scale is 100 \u03bcm. The adjoining histogram quantifies the proportion of total dendrite that lies within or outside of 30\u00b0 from vertical (perpendicular to the pial surface). Black axes indicate the length of histogram corresponding to 100%. (C)\u00a0Proportion of CR and CCK VIP-INs that are CA vs. IS (n\u00a0=\u00a017 total VIP-INs from 3 CR-Cre/VIP-Flp mice and n\u00a0=\u00a019 VIP-INs from CCK-Cre/VIP-Flp mice); p>0.1 by Chi-square test. (D)\u00a0Individual cells (dots) and population mean\u00a0\u00b1\u00a0SEM for the vertical bias of each cell calculated from the morphological reconstructions in B. Vertical bias is the percent of dendrite within 30\u00b0 of the line perpendicular to the pial surface, with a value of 1 corresponding to a perfectly bipolar shape. CA and IS VIP-INs in CR-Cre/VIP-Flp mice are mostly bipolar, with high vertical bias; CA and IS VIP-INs from CCK-Cre/VIP-Flp mice are multipolar, with vertical bias of\u00a0~\u00a00.5. Traditional Scholl analysis did not clearly illustrate this key difference between VIP-INs.\n\n### Irregular spiking of VIP-INs is determined by M-current\n\nDespite the negative finding above, we were interested in the molecular determinants of the IS discharge pattern to better understand why IS VIP-INs are selectively impaired in Scn1a+/-\u00a0mice. The firing pattern of IS VIP-INs could suggest the presence of a slowly activating potassium conductance in these cells. M-current, mediated by KCNQ channels, is known to possess such properties and has been hypothesized to regulate mode switching between tonic and bursting/irregular firing (Drion et al., 2010; Stiefel et al., 2013). Single-cell transcriptomics data suggest relatively high expression of the KCNQ subunit Kcnq5 in a subset of VIP-INs, including approximately half of all VIP/CR and VIP/CCK-INs, with minimal expression in either PV or SST-INs. KCNQ subfamily member Kcnq2 is more broadly expressed across all INs, while Kcnq1/3/4 show very limited cortical expression (Figure 6\u2014figure supplement 1;\u00a0Paul et al., 2017; Tasic et al., 2016). We confirmed these data using immunohistochemistry for Kcnq5 and Kcnq3. Kcnq5 was expressed in\u00a0~\u00a040% of layer 2/3 VIP-INs and essentially no SST-INs (but was expressed in many presumptive pyramidal cells), while Kcnq3 showed very limited immunoreactivity in the superficial cortex overall and was not found on VIP-INs (Figure 6\u2014figure supplement 2).\n\nBased on these data, we hypothesized that M-current mediated by Kcnq5-containing KCNQ channels underlies irregular spiking in IS VIP-INs, while CA VIP-INs do not rely on M-current for their firing properties. Using KCNQ channel-specific pharmacology, we were able to bidirectionally modulate the firing patterns of IS and CA VIP-INs, interconverting firing patterns by either blocking or activating M-current with the KCNQ channel inhibitor linopirdine or the KCNQ channel activator retigabine, respectively (Figure 6). IS VIP-INs showed a marked increase in sustained firing with the addition of linopirdine and resembled CA VIP-INs in terms of burst length and ISI CoV. Conversely, some CA VIP-INs became \u2018IS-like\u2019 upon application of retigabine. However, linopirdine had essentially no effect on CA VIP-IN excitability or intrinsic properties (Figure 6\u2014figure supplement 3) indicating that whatever M-current is present in these cells is not a major regulator of cellular excitability. Such data indicate that M-current expression is a critical but selective determinant of the electrical excitability of IS VIP-INs. However, M-current does not seem to correlate with expression of VIP-IN markers such as CR and CCK, or with VIP-IN morphology.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0Example traces from representative CA and IS VIP-INs in response to 8 s depolarization at 2X rheobase before and after bath application of either the KCNQ activator retigabine (left) or inhibitor linopirdine (right), respectively.\u00a0(B)\u00a0The response of n\u00a0=\u00a07 CA and n\u00a0=\u00a08 IS cells from 4 WT.VIP-Cre.tdT mice to the above drug application. Arrows indicate the direction of change in ISI CoV value and burst length (as in Figure 2C) after drug appliction, with the base of the arrow corresponding to the initial measurment, and the arrowhead corresponding to the values measured after drug application. (C) Mean \u00b1 SEM of each value in B before and after drug application, with p-values and significance determined by a paired students t-test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A)\u00a0Data from the Allen Cell Types Database, celltypes.brain-map.org/rnaseq (as in Figure 1\u2014figure supplement 1).\u00a0Each bar represents RNA-Seq reads in counts per million (CPM) from a single cell. Kcnq2 is broadly expressed in most GABAergic INs, while Kcnq5 is generally restricted to VIP-INs, as well as other non-PV/SST INs and layer 2/3 pyramidal cells. There is very limited expression of Kcnq1,3, and four in any of these populations. (B)\u00a0As in A, focusing on expression in VIP-INs in layer 2/3 grouped based on expression of Cck and Calb2 (aka CR). Scn1a is expressed in most VIP-INs with no preference for Cck or Calb2 expressing VIP-INs. Kcnq5 is also expressed equally in both Cck and Calb2 containing VIP-INs, although only approximately 50% of both populations express significant levels of Kcnq5. Cells were sorted by Kcnq5 expression to clearly show the relatively equal proportions of Kcnq5 expression in both Cck and Calb2 populations.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A)\u00a0Confocal micrographs of Kcnq5 staining in layer 2/3 of an adult WT.VIP-Cre.tdT mouse. Kcnq5 localizes to the soma of many pyramidal neurons as well as a population (Ci and Cii) of VIP-INs. (B)\u00a0Same as in A, but in layer 5 of an adult WT.SST-Cre.tdT mouse. Layer five pyramidal neurons, but not SST-INs, stain positive for Kcnq5. Scale\u00a0=\u00a050 \u00b5M for A and B. (C)\u00a0Enlarged VIP-INs (yellow boxes) from A. (D)\u00a0Enlarged SST-INs (yellow boxes) from B. (E)\u00a0Quantification of Kcnq5 staining in VIP and SST-INs. The mean fluorescence of the Kcnq5 signal in each cell is normalized to the background fluorescence of neuropil. VIP-INs show a non-normal distribution (p=1 E \u2212112, one sample KS test) and have a significantly different distribution than SST-INs (p value indicated, two sample KS test). n\u00a0=\u00a0293 VIP-INs from 3 WT.VIP-Cre.tdT mice, and n\u00a0=\u00a0117 SST-INs from one WT.SST-Cre.tdT mouse. (F)\u00a0Histogram of the distribution of VIP-IN Kcnq5 labeling. The probability density of the data was fit with a mixture of two normal distributions using maximum likelihood estimation yielding a mixing parameter of 0.605 with mean and standard deviations of 1.2\u00a0\u00b1\u00a00.2 and 2.3\u00a0\u00b1\u00a00.6 (corresponding to 60.5% \u2018negative\u2019 and 39.5% \u2018positive\u2019 VIP-INs). (G)\u00a0Confocal micrographs of Kcnq3 staining in layer 2/3 of an adult WT.VIP-Cre.tdT mouse. Kcnq3 shows very sparse labeling in cortex, mostly limited to presumptive ascending apical dendrites, and is not found on VIP-INs. Scale\u00a0=\u00a050 \u00b5M. Images are representative of n\u00a0=\u00a03 mice with two technical replicates each.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A)\u00a0Representative 8 s square depolarization at 2X rheobase of a WT CA VIP-IN showing no change in firing pattern.\u00a0(B)\u00a0Individual I-f curves for n\u00a0=\u00a04 cells from 2 WT.VIP-Cre.tdT mice before (gray) and after (purple) addition of linopirdine. (C)\u00a0Summary of intrinsic and excitability parameters from the cells in B showing no change with the addition on linopirdine.\n\n### Cholinergic switching from irregular to continuous firing in VIP-INs\n\nVIP-INs are strongly recruited by ascending cholinergic modulation in vivo (Fu et al., 2014), and M-current is characteristically inhibited by muscarinic receptor activation (Brown and Passmore, 2009). Therefore, we hypothesized that acetylcholine would activate IS VIP-INs and induce switching to a continuous firing mode. Bath application of the cholinomimetic carbachol (5 \u03bcM) produced a 10\u201315 mV depolarization in both CA and IS VIP-INs (Figure 7A). However, the suprathreshold firing properties of IS VIP-INs again converted to a \u2018CA-like\u2019 pattern, firing for a full 8 s depolarizing pulse with decreased irregularity. There was essentially no effect on the firing pattern of CA VIP-INs, nor was there any effect on the initial bursting characteristics of either IS or CA VIP-INs (Figure 7B,C). The effect of carbachol closely resembled the effect of linopirdine on IS VIP-INs. Similarly, we found that muscarinic, but not nicotinic stimulation, induced tonic firing in IS VIP-INs, while both types of cholinergic stimulation independently produced membrane potential depolarization of similar magnitude (4.24\u00a0\u00b1\u00a00.7 mV for muscarinic vs. 5.48\u00a0\u00b1\u00a01.4 mV for nicotinic; p>0.05; Figure 7\u2014figure supplement 1). Hence, M-current inhibition via activation of muscarinic acetylcholine receptors represents a novel mechanism of neuromodulation in VIP-INs that is separate from the recently described tonic depolarization caused by nicotinic acetycholine receptor activation (Askew et al., 2019).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig7-v2.jpg)\n\n**Figure 7.:** (A)\u00a0Depolarization in resting membrane potential of IS and CA VIP-INs with bath application of 5 \u03bcM Carbachol.\u00a0Horizontal scale bar, 1 min. In addition to membrane depolarization, there was a notable increase in synaptic activity, and in some cases spontaneous firing. Population mean\u00a0\u00b1\u00a0SEM of the change in membrane potential was 13\u00a0\u00b1\u00a05 and 10\u00a0\u00b1\u00a05 mV for IS and CA VIP-INs respectively (p>0.05). B)Action potential trains elicited with 8 s long square depolarizations at 2X rheobase current injections before, during, and after washout of 5 \u03bcM carbachol. In each case, the membrane potential was offset to \u221270 mV by direct current injection. Scale bars, 40 mV and 1 s. Insets showing no change in the initial bursting characteristics at suprathreshold current injections with the application of carbachol. Scale bars, 40 mV and 50 ms. C)Quantification of changes in firing patters of n\u00a0=\u00a07 IS and n\u00a0=\u00a08 CA VIP-INs from 3 WT.VIP-Cre.tdT mice in response to carbachol. All IS cells showed a qualitative switch to a continuous firing mode represented by increased burst length and decreased ISI CoV (indicated by arrowheads as in Figure 6); p-values determined by paired students\u2019 t-test. There were no apparent changes in CA VIP-IN firing patterns with carbachol application (arrowheads omitted for clarity).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A)\u00a0Example of the response to an 8 s square depolarization of two IS VIP-INs from adult WT.\u00a0VIP-Cre.tdT mice before (top) and after (bottom) application of either 5 \u00b5M muscarine or 1 \u00b5M of the nicotinic agonist (NIC) 4-Acetyl-1,1-dimethylpiperazinium iodide. Scale is 40 mV and 1 s. (B)\u00a0Quantification of changes in firing patters of IS VIP-INs in response to muscarine (n\u00a0=\u00a06 cells; three mice) or NIC (n\u00a0=\u00a05 cells; two mice). Muscarine caused a switch to a continuous firing mode represented by increased burst length and decreased ISI CoV (indicated by arrowheads as in Figure 6); p-values determined by paired students\u2019 t-test. There were no apparent changes in IS VIP-IN firing patterns with NIC application.\n\n### A single compartment model recapitulates the interaction between M-current and Na+\u00a0current density in the determination of VIP-IN discharge pattern\n\nTaken together, evidence for a broad distribution of Scn1a across INs from RNA sequencing data, our own immunohistochemistry showing Nav1.1 protein on the axon of most VIP-INs, as well as the response of both IS and CA VIP-INs to Hm1a, suggests that Nav1.1 is likely present in both IS and CA VIP-INs, but that action potential generation in IS VIP-INs is more affected by heterozygous loss of Nav1.1. This could be due to a combination of lower non-Nav1.1-mediated Na+\u00a0current in IS VIP-INs (such that these cells are more reliant on Nav1.1 for spike generation and repetitive firing), combined with relatively higher expression of M-current mediated by Kcnq5-containing KCNQ channels. To further explore this question, we constructed a classic Hodgkin-Huxley (H-H) single compartment model, adding a slowly activating potassium current (gKS) to simulate the influence of M-like current (Stiefel et al., 2013) in VIP-INs (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/46846/elife-46846-fig8-v2.jpg)\n\n**Figure 8.:** A single compartment Hodgkin-Huxley style conductance-based model using standard differential equations.\u00a0Heat map indicates firing frequencies elicited with a 600 ms X 100 pA test pulse on a linear scale. The model was initially modified to approximate the intrinsic properties and firing rate of a typical WT CA VIP-IN observed experimentally. A slowly activating K+\u00a0current with a fixed time constant (gKS) was then added to approximate the presence of M-current; in the presence of Gaussian distributed noise, this induced irregular spiking similar to that seen in IS VIP-INs (top right). Then, the amount of total Na+\u00a0current density (gNa) in the model was varied. Models with low gNa and little or no gKS showed minimal impairment with a\u00a0~\u00a010\u201320% decrease in spike height and firing frequency. Models with low gNa and medium to high levels of gKS showed much more profound impairment, with complete collapse of repetitive action potential generation. The Matlab code used to generate this model is available in Figure 8\u2014source code 1 (model) and Figure 8\u2014source code 2 (figure generation).\n\nAfter setting the standard H-H parameters to approximate the firing pattern of a typical WT CA VIP-IN (see Materials and methods), we increased M-current density to produce a response qualitatively similar to WT IS VIP-INs. Then, we performed a parameter sweep, varying both the M-current and Na+\u00a0current density to simulate the effect of loss of one copy of Scn1a in the presence or absence of M-current. Reducing Na+\u00a0current by up to 50% in models with little or no M-current had only minor effects on excitability (Figure 8), similar to our recordings from CA VIP-INs in Scn1a+/-\u00a0mice. However, in models with increasing amounts of M-current, reducing Na+\u00a0current density had a progressively more dramatic effect, leading to action potential failure after only a few action potentials (Figure 8), similar to what we observed experimentally in Scn1a+/-\u00a0IS VIP-INs. Therefore, both the CA and IS-VIP firing patterns that characterize VIP-IN diversity, as well as the effect of loss of one copy of Scn1a, are captured in a simple model with continuous distributions of both Na+\u00a0and M-current. This supports our conclusion that most or all VIP-INs express Nav1.1, and that IS VIP-INs \u2013 which have a prominent M-current mediated by Kcnq5-containing KCNQ channels \u2013 are selectively dysfunctional in Scn1a+/-\u00a0mice.\n\n## Discussion\n\n### VIP-INs express Nav1.1 and are hypoexcitable in Scn1a+/-\u00a0mice\n\nVIP-INs exhibited impaired action potential generation in Scn1a+/-\u00a0mice consistent with decreased Na+\u00a0channel expression, and this deficit could be rescued with the Nav1.1-specific modulator Hm1a, supporting the presence of Nav1.1 subunit-containing Na+\u00a0channels in VIP-INs. We found that these deficits were localized to a large subset of VIP-INs that exhibited irregular spiking (IS). This basic finding was consistent across cortical areas, and, importantly, was seen at early developmental time points (P18-21) as well as in juvenile/young adult mice (P30-55). Interestingly, Hm1a had a larger effect on IS VIP-INs than on PV-INs, consistent with the observation that IS VIP-INs may be more profoundly impaired than PV-INs in Scn1a+/-\u00a0mice. This persistent VIP-IN dysfunction in Scn1a+/-\u00a0mice is distinct from the time course of PV-IN dysfunction, which we previously found is transient and delimited to an early developmental period when assessed via the same approach (Favero et al., 2018). Such a time course is consistent with the known natural history of Dravet syndrome in human patients: it is well established that seizure frequency typically decreases during early childhood, while cognitive deficits remain, with moderate to severe intellectual disability and features, or a formal diagnosis of, autism spectrum disorder (Berkvens et al., 2015; Genton et al., 2011; Han et al., 2012; Li et al., 2011). As VIP-INs are considered to have a role as disinhibitory elements in cortical circuits, it might seem counterintuitive that such cells might be dysfunctional in an epilepsy syndrome; however, it may be the case that early epilepsy in driven by transient PV-IN abnormalities while cognitive impairment persists in part due to ongoing VIP-IN hypofunction.\n\n### Two distinct firing patterns of VIP-INs revealed by response to long depolarization\n\nPrevious studies have demonstrated a diversity of VIP-IN electrophysiological properties that do not clearly correlate with other molecular and anatomical markers of VIP-INs (von Engelhardt et al., 2007; He et al., 2016; Kawaguchi and Kubota, 1997; Porter et al., 1998; Pr\u00f6nneke et al., 2015). We also observed a seemingly diverse range of firing patterns in VIP-INs that did not clearly correlate with anatomy or proposed VIP-IN molecular markers CR and CCK (Figure 5). Using the response to longer (8\u201310 s) depolarizations, k-means clustering facilitated clear division into two electrophysiological groups, which we refer to as IS and CA VIP-INs (Figure 2; Porter et al., 1999), each of which comprise approximately 50% of VIP-INs in layer 2/3 in both barrel cortex and V1 at both P18-21 and P0-55. IS and CA firing patterns were robust to a variety of stimulation protocols, including a slow ramp current injection and prepulse step depolarization to inactivate T-type calcium currents that underlie burst firing in a subset of VIP-INs (Pr\u00f6nneke et al., 2018) (Figure 2\u2014figure supplement 1). Therefore, irregular spiking is distinct from, yet partially overlaps with, bursting. However, our data clearly indicated that brief current pulses on the order of hundreds of milliseconds (such as are standard in slice physiology experiments) cannot establish whether a VIP-IN is IS or CA, as many IS VIP-INs fire continuously for 600 ms or more prior to transition to an IS pattern. This distinction may be relevant for ongoing efforts to create a comprehensive classification of VIP-INs (Gouwens et al., 2019; He et al., 2016; Pr\u00f6nneke et al., 2015; Pr\u00f6nneke et al., 2018). It will be important to investigate the physiological relevance of differences in firing patterns identified in acute brain slice experiments and how this relates to the in vivo activity of VIP-INs. While the stimuli used here are very different than naturalistic stimuli in the intact organism, such experiments reveal details related to the complement of ion channels expressed by VIP-INs as well as modulation by neurotransmitters that may be highly relevant in vivo.\n\n### M-current mediated by Kcnq5-containing K+\u00a0channels regulates VIP-IN excitability and mediates response to cholinergic neuromodulation\n\nWe divided VIP-INs into IS and CA cells based on the presence of an initial period of regular firing followed by a suppression of firing and subsequent irregular spiking (as define by a high ISI coefficient of variation). This pattern suggested the expression of a slowly-activating potassium current such as M-current (Brown and Passmore, 2009). Transcriptomics data support our finding that most VIP-INs express Nav1.1 and suggests that a subset of VIP-INs express the KCNQ channel subunit Kcnq5 (Paul et al., 2017; Tasic et al., 2016), which we confirmed with immunohistochemistry (Figure 6\u2014figure supplement 2). We hypothesized that M-current in IS VIP-INs drives this distinctive firing pattern, with CA VIP-INs express low levels of M-current that is insufficient to induce irregular firing. We were able to bidirectionally modulate VIP-IN firing patterns by pharmacologically blocking or enhancing M-current in IS and CA VIP-INs respectively, supporting this hypothesis. However, the level of M-current in CA VIP-INs appears to be small enough such that blocking M-current in these cells has no effect on their firing properties (Figure 6\u2014figure supplement 3). Even though our classification highlighted prominent differences in excitability, most or all VIP-INs do appear to express some level of both Nav1.1 and Kcnq2/5. It is possible that the electrophysiological properties of VIP-INs defined here do not constitute clearly delimited \u2018subtypes\u2019 per se, but rather exist along a continuum of active properties which only partially overlap with molecular markers (such as CR and CCK) and morphology. Nevertheless, an irregular firing pattern that can be modulated by cholinergic suppression of M-current appears to be a durable feature of\u00a0~\u00a050% of VIP-INs.\n\nIf Kcnq5 and Nav1.1 in VIP-INs have overlapping distributions of expression, how does Scn1a haploinsufficiency lead to selective dysfunction of IS VIP-INs? To address this, we constructed a single compartment model with a voltage-gated Na+\u00a0conductance and M-type K+\u00a0conductance to simulate the influence of superimposed M-current on neuronal excitability in the context of varied Na+\u00a0current density. This modeling recapitulated several important characteristics of our data, including the diversity of VIP-IN firing patterns, the role of M-current in this diversity, and the interaction between Na+\u00a0current and M-current. The model illustrates how loss of Nav1.1 could have drastically different effects in IS vs. CA VIP-INs based on electrophysiological context, such as the overall level of M-current and the degree of reliance on Nav1.1.\n\nVIP-INs are recruited during shifts in attentional state, and their activity is important for the cortical state transition that occurs in response to cholinergic neuromodulation (Batista-Brito et al., 2017; Fu et al., 2014; Reimer et al., 2014; Walker et al., 2016). Our data suggest that cholinergic input may enhance VIP-IN excitability during cortical state transitions by inhibiting M-current. We found that, while application of carbachol depolarized both IS and CA VIP-INs, this manipulation selectively modulates IS VIP-IN excitability by inducing a switch from IS to tonic firing mode through muscarinic acetylcholine receptor activation. This effect may be important during shifts in attentional state, which are known to recruit VIP-IN activity. Our data also implies that IS VIP-IN dysfunction in Scn1a+/-\u00a0mice may play a particularly important role in the activity of IS VIP-INs during such state changes. Overall, our findings identify a novel cellular locus of dysfunction in Dravet Syndrome which may be relevant to both the epilepsy and the severe cognitive impairments characteristic of this disease.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>129S-Scn1atm1Kea/Mmjax</td>\n      <td>Jax</td>\n      <td>RRID:MMRRC_037107-JAX</td>\n      <td>Dr. Jennifer A. Kearney, Northwestern University</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>Viptm1(cre)Zjh/J</td>\n      <td>Jax</td>\n      <td>RRID:IMSR_JAX:010908</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>B6;129P2-Pvalbtm1(cre)Arbr/J</td>\n      <td>Jax</td>\n      <td>RRID:IMSR_JAX:008069</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>B6J.Cg-Ssttm2.1(cre)Zjh/MwarJ</td>\n      <td>Jax</td>\n      <td>RRID:IMSR_JAX:028864</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>Rosa- CAG-LSL-tdTomato</td>\n      <td>Jax</td>\n      <td>RRID:IMSR_JAX:007914</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>129S6.SvEvTac</td>\n      <td>Taconic Biosciences</td>\n      <td>RRID:IMSR_TAC:129sve</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>C57BL/6J</td>\n      <td>Jax</td>\n      <td>RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>Ccktm1.1(cre)Zjh/J</td>\n      <td>Jax</td>\n      <td>RRID:IMSR_JAX:012706</td>\n      <td>Drs. Bernardo Rudy and Robert Machold, NYU</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>B6(Cg)-Calb2tm1(cre)Zjh/J</td>\n      <td>Jax</td>\n      <td>RRID:IMSR_JAX:010774</td>\n      <td>Drs. Bernardo Rudy and Robert Machold, NYU</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>Viptm2.1(flpo)Zjh/J</td>\n      <td>Jax</td>\n      <td>RRID:IMSR_JAX:028578</td>\n      <td>Drs. Bernardo Rudy and Robert Machold, NYU</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculis)</td>\n      <td>B6.Cg-Gt(ROSA)26Sortm80.1(CAGCOP4*L132C/EYFP)Hze/J</td>\n      <td>Jax</td>\n      <td>RRID:IMSR_JAX:025109</td>\n      <td>Drs. Bernardo Rudy and Robert Machold, NYU</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV.CAG.Flex.tdTomato</td>\n      <td>Penn Vector Core</td>\n      <td>AV-9-ALL864</td>\n      <td>2XE\u00a0+\u00a013 GC/mL</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Hm1a</td>\n      <td>Alomone</td>\n      <td>STH-601</td>\n      <td>1 \u00b5M / 50 nM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biocytin conjugated to Alexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>A12924</td>\n      <td>0.5%</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Linopirdine</td>\n      <td>Sigma</td>\n      <td>L134</td>\n      <td>50 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Retigabine</td>\n      <td>Alomone</td>\n      <td>D-23129</td>\n      <td>50 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Carbamoylcholine chloride</td>\n      <td>Sigma</td>\n      <td>C4382</td>\n      <td>5 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Muscarine</td>\n      <td>Sigma</td>\n      <td>M6532</td>\n      <td>5 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4-Acetyl-1,1-dimethylpiperazinium iodide</td>\n      <td>Tocris</td>\n      <td>0352</td>\n      <td>1 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pclamp 10</td>\n      <td>Clampfit</td>\n      <td>RRID:SCR_011323</td>\n      <td>V10.0</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>Mathworks</td>\n      <td>RRID:SCR_001622</td>\n      <td>2019a</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gramm</td>\n      <td>Morel, 2018</td>\n      <td></td>\n      <td>Data visualization for Matlab</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Nav1.1 sodium channel, clone K74/71</td>\n      <td>NeuroMab</td>\n      <td>RRID:AB_10671830</td>\n      <td>1:500, IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>KCNQ5 Polyclonal Antibody</td>\n      <td>Invitrogen</td>\n      <td>RRID:AB_2736022</td>\n      <td>1:500, IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-KCNQ3 Antibody</td>\n      <td>Alomone labs</td>\n      <td>RRID:AB_2040103</td>\n      <td>1:200, IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-Mouse IgG1 Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>RRID:AB_2535764</td>\n      <td>1:1000, IF</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-Rabbit IgG (H\u00a0+\u00a0L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>RRID:AB_143165</td>\n      <td>1:1000, IF</td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental animals\n\nAll procedures and experiments were approved by the Institutional Animal Care and Use Committee at the Children\u2019s Hospital of Philadelphia and were conducted in accordance with the ethical guidelines of the National Institutes of Health. Both male and female mice were used in equal proportions. After weaning at P21, mice were group-housed with up to five mice per cage and maintained on a 12 hr light/dark cycle with ad libitum access to food and water.\n\nMouse strains used in this study included: Scn1a+/-\u00a0mice on a 129S6.SvEvTac background (RRID:MMRRC_037107-JAX) generated by a targeted deletion of exon 1 of the Scn1a gene, VIP-Cre mice (Viptm1(cre)Zjh/J; RRID:IMSR_JAX:010908 on a mixed C57BL/6;129S4 background), PV-Cre mice (B6;129P2-Pvalbtm1(cre)Arbr/J; RRID:IMSR_JAX:008069), SST-Cre mice (B6J.Cg-Ssttm2.1(cre)Zjh/MwarJ; RRID:IMSR_JAX: 028864), tdTomato reporter/Ai14 mice (Rosa- CAG-LSL-tdTomato; RRID:IMSR_JAX:007914; on a C57BL/6J background), wild-type 129S6.SvEvTac (Taconic Biosciences model #129SVE; RRID:IMSR_TAC: 129sve), and wild-type C57BL/6J (RRID:IMSR_JAX:000664).\n\nHomozygous VIP-Cre mice were crossed to homozygous Ai14 mice to generate VIP-Cre.tdT double heterozygotes on a predominantly C57BL/6J background. Female VIP-Cre.tdT double heterozygotes were then crossed to male 129S6.Scn1a+/-\u00a0mice to generate Scn1a.VIP-Cre.tdT mice and WT.VIP-Cre.tdT littermate controls. The genotype of all mice was determined via PCR of tail snips obtained at P7 and was re-confirmed for each mouse after they were sacrificed for slice preparation. The same breeding scheme was used to generate Scn1a.PV-Cre.tdT (as in Favero et al., 2018). All mice used for experiments were on a near 50:50 129S6:B6J background, and Scn1a+/-\u00a0mice on this background have been shown to replicate the core phenotype of Dravet Syndrome (Miller et al., 2014; Mistry et al., 2014). We observed similar rates of spontaneous death (17/52, or 32%, of Scn1a.VIP-Cre.tdT mice not used for experiments by P55; Favero et al., 2018) and were able to thermally induce seizures in 100% (9/9) of P21-50 Scn1a.VIP-Cre.tdT mice at or below 42\u00b0C core body temperature, supporting the validity of using these mice as a tool to study VIP-IN function in Dravet Syndrome.\n\nWe used an intersectional genetic approach (He et al., 2016; Taniguchi et al., 2011) to target CCK and CR expressing VIP-INs. These mice were a cross between either CCK-Cre (Ccktm1.1(cre)Zjh/J; RRID: IMSR_JAX:012706) or CR-Cre (B6(Cg)-Calb2tm1(cre)Zjh/J; RRID: IMSR_JAX:010774) crossed to a VIP-Flp (Viptm2.1(flpo)Zjh/J; RRID: IMSR_JAX:028578) and fluorescent reporter Ai80 (B6.Cg-Gt(ROSA)26Sortm80.1(CAG-COP4*L132C/EYFP)Hze/J; RRID: IMSR_JAX:025109).\n\n### Stereotaxic injections\n\nIn a subset of experiments at the P30-50 age, VIP-INs from double transgenic Scn1a.VIP-Cre and WT.VIP-Cre littermates from the cross described above were labeled via stereotaxic injection of AAV.CAG.Flex.tdTomato (Penn Vector Core, AV-9-ALL864) at approximately P25. Briefly, P25 mice were anesthetized with isoflurane (induction, 3\u20134%; maintenance, 1\u20131.5%) and body temperature and breathing were continuously monitored. A small craniotomy approximately 1 mm posterior and 3 mm lateral to bregma was made to allow insertion of a 50\u201375 \u03bcm tip diameter glass pipette driven by a Nanoject III (Drummond Scientific). 100 nL of 2XE\u00a0+\u00a013 GC/mL of AAV9 diluted in sterile PBS was injected at 20 nL/min. The pipette was held in place for 10 min to allow the virus to spread, and was then slowly removed; the scalp was sutured closed, and the mouse allowed to recover.\n\n### Acute slice preparation\n\nMice were anesthetized with isoflurane and transcardially perfused with ice cold artificial cerebral spinal fluid (ACSF) containing (in mM): NaCl, 87; sucrose, 75; KCl, 2.5; CaCl2, 1.0; MgSO4, 6.0; NaHCO3, 26; NaH2PO4, 1.25; glucose, 10, and equilibrated with 95% O2 and 5% CO2. The brain was removed to cold ACSF, then mounted on a holder of the Leica VT-1200S vibratome and sliced at 300\u2013350 \u03bcm thickness. Slices were allowed to recover for 30 min in ACSF warmed to 30\u00b0C, then maintained at room temperature for up to 6 hr before recording. Slices were transferred to a recording chamber on the stage of a BX-61 upright microscope and continuously perfused with recording solution at 30\u201332\u00b0 C and 3 mL/min that contained, in mM: NaCl, 125; KCl, 2.5; CaCl2, 2.0; MgSO4, 1.0; NaHCO3, 26; NaH2PO4, 1.25; glucose, 10.\n\n### Slice recordings\n\nVIP-INs and PV-INs were identified by tdT expression visualized with epifluorescence. Pyramidal cells were identified by morphology under infrared differential interference contrast (IR-DIC) and the presence of a regular-spiking firing pattern. Whole-cell recordings were obtained from superficial (layer 2/3) primary somatosensory cortex (S1; \u2018barrel\u2019) and visual cortex (V1) with between 1\u20134 (usually 1 or 2) cells recorded from each slice in either single or paired configuration. Patch pipettes were pulled from borosilicate glass using a P-97 puller (Sutter Instruments) and filled with intracellular solution containing (in mM): K-gluconate, 130; KCl, 6.3; EGTA, 0.5; MgCl2, 1.0; HEPES, 10; Mg-ATP, 4.0; Na-GTP, 0.3; pH was adjusted to 7.30 with KOH, and osmolarity adjusted to 285 mOsm with 30% sucrose. Where indicated, intracellular solution also contained 0.5% biocytin conjugated to Alexa Fluor 488 (Invitrogen) for 2P imaging. Pipettes had a resistance of 4\u20136 M\u03a9 when filled and placed in recording solution.\n\nVoltage was sampled at 50 kHz with a MultiClamp 700B amplifier (Molecular Devices), filtered at 10 kHz, digitized using a DigiData 1550A, and acquired using pClamp10 software. Recordings were discarded if the cell had an unstable resting membrane potential and/or a membrane potential greater than \u221250 mV, or if access resistance increased by\u00a0>\u00a020% during the recording. We did not correct for liquid junction potential.\n\n### Electrophysiology data analysis\n\nAll analysis was performed blind to genotype using Matlab (Mathworks) with quality control using manual confirmation in Clampfit (pCLAMP). Resting membrane potential (Vm) was calculated using the average value of a 1 s sweep with no direct current injection. Input resistance (Rm) was calculated using the average response to small hyperpolarizing current injections near rest using Rm = \u0394V/I for each sweep. AP threshold was calculated as the value at which the derivative of the voltage (dV/dt) first reached 10 mV/ms. Spike height refers to the absolute maximum voltage value of an individual AP, while spike amplitude was calculated as the difference between spike height and AP threshold for a given AP. AP rise time is the time from AP threshold to the peak of the AP. AP half-width (AP 1\u20442-width) is defined as the width of the AP (in ms) at half-maximal amplitude (half the voltage difference between the AP threshold and peak). AP afterhyperpolarization (AHP) amplitude is calculated as the depth of the afterhyperpolarization (in mV) relative to AP threshold. Unless indicated, all quantification of single spike properties was done using the first AP elicited at rheobase (below).\n\nRheobase was determined as the minimum current injection that elicited APs using a 600 ms sweep at 10 pA intervals. Maximal instantaneous firing was calculated using the smallest interspike interval (ISI) elicited at near-maximal current injection. Maximal steady-state firing was defined as the maximal mean firing frequency during the last 300 ms of a suprathreshold 600 ms current injection, with a minimum requirement for a spike being an amplitude of 40 mV with a clear AP threshold (above) and height overshooting at least \u221210 mV. We found the combination of these two measures to best describe VIP-IN firing rates, as some cells fired a very brief burst of APs at high frequency, while others fired continuously with little or no initial bursting. All I-f plots were created using the steady-state firing calculated for each current step, counting failures as 0 for subsequent current steps. Population raster plots were constructed by taking a 20 ms sliding average of the instantaneous firing rate for each current step and averaged over each group of cells.\n\n### Firing pattern classification\n\nWe used a longer depolarizing current injection (generally, 8\u201310 s) which was found to highlight features of VIP-IN firing that were not apparent with briefer, 600 ms current injections. The coefficient of variation of the ISI (ISI CoV) was used to quantify irregularity of repetitive AP discharge, and was defined as the standard deviation divided by the mean of all ISI\u2019s from a single 8 s or 600 ms sweep at 2-times rheobase current injection. The burst length of a cell was defined by taking the time of the last spike occurs prior to an abrupt cessation of firing lasting\u00a0>\u00a0150 ms. This value was determined in an unbiased way by taking the mean\u00a0+\u00a02 times standard deviation of all ISI values from our dataset. We used the same cutoff to calculate an \u2018apparent\u2019 burst length when using data from 600 ms sweeps. We used k-means clustering with n\u00a0=\u00a02 groups to cluster VIP-INs from both WT and Scn1a+/-\u00a0mice using the variables of ISI CoV and burst length from 8 s current injections at 2-times rheobase. Clustering was validated with\u00a0>\u00a095% agreement with blind manual classification when dividing cells based on the provided description of continuous firing with spike frequency adaptation (\u2018CA\u2019) versus initial burst followed by irregular spiking (\u2018IS\u2019). It was not possible to use 600 ms sweeps alone to replicate these two groups, either with k-means clustering of electrophysiological properties or manual classification.\n\n### Voltage clamp recordings of acutely dissociated cells\n\nWe performed voltage clamp recordings from acutely dissociated cells prepared from neocortex of P18 WT.VIP-Cre.tdT mice. Briefly, the mouse brain was extracted into ice cold ACSF as described above. Then, 400 \u03bcm slices were cut on a vibratome, and the neocortex was manually separated from the underlying white matter using a scalpel. All neocortical sections were simultaneously place in dissociation media (Earl\u2019s balanced salt solution (EBSS)) with (in mM): NaCl, 117; KCl, 5.0; NaHCO3, 26; NaH2PO4, 1.0; CaCl2, 1.0; MgSO4, 4.0; HEPES, 20; glucose, 10, equilibrated with 95% O2:5% CO2, and pH adjusted to 7.4 with NaOH. This was supplemented with 0.1% trypsin (Sigma), 1 mg/mL collagenase (Sigma), 100 U/mL DNAse1 (Sigma), and incubated for 10 min at 35\u00b0 C. Dissociation was quenched by pouring the contents into a large volume of room temperature ACSF, and the neocortical sections were maintained for up to 4 hr. Prior to recording, individual sections were manually dissociated by triturating with a series of fire-polished glass pipettes decreasing in size, then immediately plated on a glass coverslip coated in poly-D lysine (Sigma). Cells were allowed to settle and adhere for 10 min, then the ACSF was exchanged for recording solution containing (in mM): NaCl, 135; KCl, 4; CaCl2, 2; MgCl2, 2; HEPES, 10; Glucose, 10; TEA-Cl, 10; CdCl2, 0.1; with pH adjusted to 7.4 with NaOH. VIP-INs were identified with epifluorescence. Cells were recorded at room temperature (21\u201324\u00b0 C) with patch pipettes with a resistance measured at 2.5\u20133.0 M\u03a9 containing (in mM): NaF, 10 CsF, 110; CsCl, 20; EGTA, 2; HEPES, 10; with pH adjusted to 7.4 with KOH. Na+\u00a0currents were recorded in cells that were stable and had an access resistance\u00a0<\u00a010 M\u03a9 for 5 min after break in using a series of 100 ms voltage steps from \u221280 to 50 mV. Peak current was calculated as the max absolute value of the current response. Persistent current was calculated as a percentage of transient current using the mean current during the period between 80 and 100 ms after the initial voltage step. The time constant of inactivation (tau) was calculated by fitting a double exponential to the decay of the Na+\u00a0current, reporting the value for the dominant term. All values in Figure 4 were calculated using the current elicited at 0 mV.\n\n### Immunohistochemistry\n\nTo facilitate staining of Nav1.1 at the AES, we used very mild fixation (1% paraformaldehyde with 0.5% MeOH in PBS) described previously (Alshammari et al., 2016). Briefly, isoflurane-anesthetized mice were transcardially perfused; brains were removed and post-fixed in perfusate at RT for 1 hr. We then immediately cut 50 \u00b5m sections on a Leica VT-1200S vibratome, and then blocked and permeabilized the slices with 0.5% Triton X-100 (Sigma) and 10% normal goat serum in PBS for one hour at RT. We stained overnight at 4\u00b0 C with a primary antibody directed against Nav1.1 (NeuroMab K74/71) in PBS with 3% bovine serum albumin (BSA, Sigma) and 0.5% Triton X-100. The following day, the slices were washed with PBS and stained with a secondary antibody, Alexa Fluor 488-conjugated goat anti-mouse IgG1 (Molecular Probes), in PBS, with 3% BSA and 0.5% Triton X-100. After washing, slides were cover-slipped and sealed before imaging on a Leica TCS SP8 confocal microscope. We examined VIP-INs under 80X magnification and detected Nav1.1 signal on very fine (0.5 \u03bcm) processes emanating from either the cell body or proximal dendrite. We used a cutoff of mean\u00a0+\u00a02 times the standard deviation of the Nav1.1 signal measured using repeated line scans on at least 5 \u03bcm (consecutive) of tdT-positive VIP-IN processes to define a \u2018positive\u2019 VIP-IN axon. For verification of Nav1.1 antibody specificity, we generated several Scn1a-/- mice by breeding two Scn1a+/-\u00a0mice. For Kcnq3/5 staining, we used standard 4% paraformaldehyde, then performed staining as described above.\n\n### Allen brain data access\n\nData were accessed directly from: 2015 Allen Institute for Brain Science. Allen Cell Types Database. Available from: celltypes.brain-map.org/rnaseq. This dataset represents over 20,000 cells pooled from primary mouse visual cortex (V1) and anterior lateral motor cortex (ALM). The provided RNA-Seq Data Navigator was used to restrict data selection to pyramidal cells and VIP-INs from layer 2/3 to match our experimental data. SST and PV-INs from all layers were also included as a reference. ScnXa, KcnqX, Cck, and Calb2 expression levels were downloaded in February 2019 from the indicated cell types for offline analysis and plotting using Matlab.\n\n### Slice pharmacology\n\nWe used several pharmacological agents including Hm1a (Alomone Labs STH-601), linopirdine (Sigma L134), retigabine (Alomone D-23129), the cholinomimetic carbamoylcholine chloride (carbachol; Sigma C4382), muscarine (Sigma M6532), and the nicotinic agonist 4-Acetyl-1,1-dimethylpiperazinium iodide (Tocris 0352). Hm1a, muscarine, and 4-Acetyl-1,1-dimethylpiperazinium iodide were dissolved in deionized water, aliquoted, and frozen at \u221220\u00b0 C. Carbachol was stored as a powder at RT, and both linopirdine and Retigabine were stored as 100 mM stock solutions in DMSO (Sigma) aliquoted in \u221220\u00b0C. For pharmacological experiments in which drug was dissolved in DMSO, the same concentration of DMSO was present in control external solution. After a baseline recording, drugs were perfused in at 3 mL/min while continuously recording membrane potential; repeat measurements were performed 10 min after wash-in. A subset of cells were recorded for up to 1 hr following washout of each drug, as needed in some cases to observe complete or near-complete washout. For experiments using carbachol, repeat measurements were made 5 min after wash-in.\n\n### 2 P imaging and morphological reconstruction\n\nWhere indicated, internal solution contained 0.5% biocytin conjugated to Alexa Fluor 488, or, in some cases, 50 mM Alexa Fluor alone. After obtaining the whole cell configuration, the cell was dialyzed for at least 20 min; then, the pipette was slowly removed to allow for the cell to reseal. Two-photon (2P) imaging was performed using a customized Bruker 2P microscope system with a MaiTai DeepSee Ti:Sapphire pulsed infrared laser (SpectraPhysics) directed through a modified Olympus BX-61 base equipped with a GaAsP photodetector (Hamamatsu). 3D image stacks were reconstructed using the built in ImageJ plugin Simple Neurite Tracer and compressed to a 2D trace which was analyzed using Matlab. We used \u2018vertical bias\u2019 as a summary statistic to capture the difference between bipolar and multipolar morphologies. We quantified the total length of dendrite that fell within 30\u00b0 of vertical (i.e., a line perpendicular to the pial surface), and then normalized to the total length of dendrite. Using this method, bipolar cells had a vertical bias close to 1, while multipolar cells with processes extending in all directions had vertical bias ranging from near-zero to close to 0.5.\n\n### Hodgkin-Huxley VIP-IN model\n\nAll simulations were done using custom Matlab code available in Figure 8\u2014source code 1. We used classic Hodgkin-Huxley equations with the single addition of a slow K+ conductance, gKS, as in Stiefel et al. (2013). Here, we are using the additional slowly activating $g_{KS}$ to model in a generic fashion the effects of M-current mediated irregular spiking in VIP-INs. The equations for our model are\n\n$$\n\\frac{c_{m}dV}{dt}=g_{leak}E_{l}-V+m^{3}hg_{Na}E_{Na}-V+n^{3}g_{KDR}E_{K}-V+sg_{KS}E_{K}-V+I_{inj}+I_{noise}\n$$\n\nwhere V is the membrane voltage, m and h are the activation and inactivation states of the voltage gated Na+\u00a0conductance, n is the activation variable of the delayed-rectifier K+\u00a0conductance, and s is the activation variable of the slow K+\u00a0conductance. These variables are determined by the set of differential equations:\n\n$$\n\\frac{dm}{dt}=(m_{inf}-m)/\\tau_{m}\n$$\n\n\n\n$$\n\\tau_{m}=1/(\\alpha+\\beta)\n$$\n\n\n\n$$\nm_{inf}=\\alpha/(\\alpha+\\beta)\n$$\n\nThe equations for h, n, and s all have the same form. For m, the expressions for \u03b1 and \u03b2 are given by\n\n$$\n\\alpha=0.1(V+38)/(1-exp\u2061(-(V+38)/10)\n$$\n\n\n\n$$\n\\beta=4exp(-(V+65)/17)\n$$\n\nFor h, the expressions for \u03b1 and \u03b2 are given by\n\n$$\n\\alpha=0.05exp\u2061(-(V+55)/20)\n$$\n\n\n\n$$\n\\beta=1/((exp(-(V+35)/10))+1)\n$$\n\nFor n, the expressions for \u03b1 and \u03b2 are given by\n\n$$\n\\alpha=0.01(V+55)/(1-exp\u2061(-(V+55)/10)\n$$\n\n\n\n$$\n\\beta=0.125exp(-(V+65)/80)\n$$\n\nThe expressions for s have a fixed $\\tau_{s}$ = 300 ms and\n\n$$\ns_{inf}=1/(1+exp(\u2212(V+35)/5))\n$$\n\nWe manually fit the parameters of this model to resemble some of the key characteristics of VIP-INs, including a high input resistance (small\u00a0$g_{leak}$) and small size (small\u00a0$c_{m}$), as well as the approximate I-f curves generated by simulated current injections ($I_{inj}$). The conductances used were\u00a0$g_{leak}=0.03mS\u2219cm^{-2}$, $g_{KDR}=5mS\u2219cm^{-2}$, $g_{Na}=65mS\u2219cm^{-2}$, $g_{KS}=2mS\u2219cm^{-2}$\u00a0where we varied $g_{Na}$ and $g_{KS}$ as described in Figure 8. The reversal potentials were $E_{Cl}$ = -70, $E_{K}$= -70, and $E_{Na}$ = 50. Numerical integration was performed using the forward Euler method. We injected $I_{noise}$ throughout the simulation as a Gaussian white distribution with a max amplitude of 10 pA.\n\n### Statistics and experimental design\n\nData from 62 total mice were used in this study for comparing intrinsic properties between WT and Scn1a+/-\u00a0mice. A total of n\u00a0=\u00a057 VIP-INs from P18-21 and n\u00a0=\u00a086 VIP-INs from P30-55 WT mice, and n\u00a0=\u00a041 VIP-INs from P18-21 and n\u00a0=\u00a061 VIP-INs from P30-55 Scn1a+/-\u00a0mice were included. We validated our core findings in a subset of experiments in primary visual cortex, with a total of n\u00a0=\u00a028 VIP-INs from 4 WT.VIP-Cre.tdT mice and n\u00a0=\u00a028 VIP-INs from 6 Scn1a.VIP-Cre.tdT mice age P18-21. All data were tested for normal distribution by performing a Shapiro-Wilk test and variances were estimated using Levene\u2019s test. Generally, intrinsic properties from WT and Scn1a VIP-INs had equal variances but occasional non-normal distributions. Thus, electrophysiological data were compared with Mann-Whitney U test for comparisons between two groups and Kruskal-Wallis test with a post hoc Dunn\u2019s test when comparing more than two groups. We observed no statistical difference between intrinsic properties of P18-21 and P30-55 WT VIP-INs and thus did not incorporate a model to account for changes in development (as in Favero et al., 2018). Therefore, we combined ages for most of our analysis. Between 3\u201310 cells were recorded per mouse. For most comparisons, each cell as treated as an n, but we confirmed all main findings via reanalysis with each animal as an n (Figure 3\u2014figure supplement 1). For active properties that involved repeated measures, such as current/frequency plots and spike rundown with repeated APs, we used a multivariate ANOVA to compare between two groups, with post hoc Bonferroni correction to estimate p values for each measurement. For pharmacology experiments, a paired student\u2019s t-test was used to test for the effect of a drug within a single group. All statistical analysis was performed using built in Matlab functions. Data were visualized using built in Matlab functions, or using the gramm suite (Morel, 2018).\n",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "6845f4f3-1bd5-4e10-91d5-498633cf4514",
+      "submission_id": "85f84fd0-79b7-4370-990e-31da64800da2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Huguenard, Stanford University School of Medicine United States\n\nReviewers:\n- Bernardo Rudy, NYU Langone United States\n- Bruce P Bean, Harvard Medical School United States\n\n## Review text\n\nDOI: [10.7554/eLife.46846.030](https://doi.org/10.7554/eLife.46846.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Vasoactive intestinal peptide-expressing interneurons are impaired in a mouse model of Dravet Syndrome\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bernardo Rudy (Reviewer #1) and Bruce P Bean (Reviewer #3). The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study provides high quality data supporting new ideas regarding the pathogenesis of Dravet Syndrome (DS), a severe neurodevelopmental disorder caused by loss of function in the gene (SCN1A) encoding the Nav1.1 Na+ channel. The study provides strong functional evidence that, contrary to the prevalent assumption that only PV and SST GABAergic interneurons express Nav1.1, another interneuron class, VIP-expressing INs, also express this channel in their axons such that VIP IN firing is impaired. Although the effects of the reduction in Nav1.1 channels on the excitability of PV INs were transient, the hypoexcitability of VIP INs is maintained into adulthood. The authors suggest the intriguing hypothesis that the transient malfunction of PV neurons may contribute to the transient epileptic phenotype of Dravet syndrome, whereas the effect on VIP neurons may underlie the longer lasting cognitive impairment. Interesting new data are also provided on heterogeneity of VIP INs.\n\nEssential revisions:\n\n1) The data showing expression of Scn1a by VIP-INs are quite weak. This is important, as the authors note previous work citing limited expression of Nav1.1 in VIP-INs, and the conclusions largely rest on the idea that altered cell physiology is due to cell-autonomous loss of sodium channels in VIP-INs. The immunostaining has no negative control (is labeling lost/reduced in knockout mice?). Moreover, the labeling in Figure 1 looks completely non-specific. Accordingly, either the reagents should be validated, for example by examining staining in knockout mice, or the immunohistochemical results should be dropped from the study.\n\n2) The authors present experiments showing that the peptide toxin Hm1a, which destabilizes inactivation of Nav1.1 channels, enhances firing of IS-type VIP neurons while having less dramatic effects on firing of CA type VIP neurons and on PV cells, and with no effect on firing of pyramidal neurons. These experiments are very nice. However, it was very strange that the authors make no mention of the paper by Richards et al. (PNAS 2018,115(34):E8077-E8085) with very similar experiments with Hm1a on a different mouse model of Dravet syndrome, showing enhancement of firing of hippocampal GABAergic neurons but no effect on firing of hippocampal pyramidal neurons, and also in vivo experiments showing efficacy of the toxin to reduce seizures and mortality. The Richards paper also presents a more detailed analysis of the effects of Hm1a on the gating of Nav1.1 channels than in the Osteen papers, as well as more comprehensive data on selectivity for Nav1.1 over other Na channels and K channels. The original Osteen et al. characterization of Hm1a toxin shows some effect on Nav1.2 as well, leaving the conclusion of Nav1.1 expression less clear. In addition, the dosing used in this study appears to be much too high. In the Richards paper they showed that Nav1.1 is sensitive to 1 nM toxin, and they used 5 nM in their slice experiments. Here, Goff and Goldberg used 1 \u03bcM, which may well not be specific. Since this experiments is important for demonstrating that the Na current in VIP neurons is actually from Nav1.1, I then this result should be supported with an Hm1a concentration of ~5 nM.\n\n3) While the recordings are of good quality and many of the basic findings are reasonably well-supported, the overall presentation is confusing as to study goals. Is the focus about different classes of VIP-INs or about dysfunction in Dravet syndrome? This duality ultimately weakens the strength of conclusions in either case. The authors should address this issue in their revision.\n",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d6c26674-150e-40b9-b8f9-e253b6a6a5eb",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C1",
+      "claim": "Dravet Syndrome is a severe neurodevelopmental disorder caused by pathogenic loss of function variants in the gene SCN1A which encodes the voltage gated sodium (Na+) channel subunit Nav1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Dravet Syndrome (DS) is a severe neurodevelopmental disorder caused by pathogenic loss of function variants in the gene SCN1A which encodes the voltage gated sodium (Na+) channel subunit Nav1.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Dravet Syndrome cited in the abstract and introduction with references to prior literature (Claes et al., 2001).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "b6822b2d-f654-4369-9307-5511a0d660f7",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C2",
+      "claim": "GABAergic interneurons expressing parvalbumin (PV-INs) and somatostatin (SST-INs) exhibit impaired excitability in DS (Scn1a+/-) mice.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAergic interneurons expressing parvalbumin (PV-INs) and somatostatin (SST-INs) exhibit impaired excitability in DS (Scn1a+/-) mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Favero et al., 2018; Ogiwara et al., 2007; De Stasi et al., 2016; Tai et al., 2014; Yu et al., 2006) mentioned in the abstract and introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "1c40f5ec-5a1b-4109-8359-6602b7867eec",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C3",
+      "claim": "Irregular spiking (IS) VIP-INs, but not continuous adapting (CA) VIP-INs, are impaired in Scn1a+/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded VIP-INs in brain slices from Scn1a+/-mice and wild-type littermate controls and found prominent impairment of irregular spiking (IS), but not continuous adapting (CA) VIP-INs, in Scn1a+/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "85292def-b768-4cce-9a20-a417607078fc",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C4",
+      "claim": "Application of the Nav1.1-specific toxin Hm1a rescued the observed deficits in VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of the Nav1.1-specific toxin Hm1a rescued the observed deficits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4 demonstrating rescue of VIP-IN function with Hm1a application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "dc5309e9-1647-4fe2-8b44-ffcbaa832764",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C5",
+      "claim": "The IS vs. CA firing pattern is determined by expression of KCNQ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The IS vs. CA firing pattern is determined by expression of KCNQ channels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pharmacological experiments with KCNQ channel modulators shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "a03fc8d3-fd1c-40d0-b70b-0e5d2a984393",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C6",
+      "claim": "IS VIP-INs switched to tonic firing with pharmacologic blockade of M-current.",
+      "claim_type": "EXPLICIT",
+      "source": "IS VIP-INs switched to tonic firing with both pharmacologic blockade of M-current and muscarinic acetylcholine receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally with linopirdine application shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "b84cb36b-2f57-405c-9ba1-5b3fbb6a981f",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C7",
+      "claim": "IS VIP-INs switched to tonic firing with muscarinic acetylcholine receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "IS VIP-INs switched to tonic firing with both pharmacologic blockade of M-current and muscarinic acetylcholine receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally with carbachol and muscarine application shown in Figures 7 and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "3c230d1e-2fca-4e2c-9569-fcdd74633f92",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C8",
+      "claim": "VIP-INs express Nav1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that VIP-INs express Nav1.1 and are dysfunctional in DS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemistry data in Figure 1F and Figure 1\u2014figure supplements 2-3, as well as transcriptomics data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "13727d7f-ea21-45f7-9da4-930dc7b02cbb",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C9",
+      "claim": "VIP-INs from Scn1a+/- mice demonstrated a reduced maximal steady-state firing frequency (67 \u00b1 2 vs. 48 \u00b1 3 Hz; p=3 X E-6).",
+      "claim_type": "EXPLICIT",
+      "source": "VIP-INs from Scn1a+/- mice demonstrated multiple abnormalities that were consistent with loss of Na+ current (Figure 1), including a reduced maximal steady-state firing frequency (67 \u00b1 2 vs. 48 \u00b1 3 Hz; p=3 X E-6; n = 150/123 WT/Scn1a+/-)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from electrophysiology experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "0c03388a-d3df-4957-aaaf-a5b532a954e2",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C10",
+      "claim": "VIP-INs from Scn1a+/- mice showed a marked shift in the current/frequency (I/f; input-output) curve.",
+      "claim_type": "EXPLICIT",
+      "source": "VIP-INs from Scn1a+/- mice demonstrated multiple abnormalities that were consistent with loss of Na+ current (Figure 1), including a reduced maximal steady-state firing frequency (67 \u00b1 2 vs. 48 \u00b1 3 Hz; p=3 X E-6; n = 150/123 WT/Scn1a+/-), as well as a marked shift in the current/frequency (I/f; input-output) curve.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the I-f curves shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "25a2e678-03e4-4e23-8ead-431437c489c8",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C11",
+      "claim": "VIP-INs from Scn1a+/- mice showed spike height accommodation (rundown) during repetitive action potential discharge.",
+      "claim_type": "EXPLICIT",
+      "source": "There was notable spike height accommodation (rundown) during repetitive action potential discharge with a progressive depolarization of AP threshold and a decrease in AP peak value during suprathreshold current injections, suggesting enhanced accumulation of Na+ channel inactivation in VIP-INs from Scn1a+/- mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and E demonstrating spike amplitude rundown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "18472889-6bc3-4c8c-a423-ba66a01779ba",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C12",
+      "claim": "77% of identified VIP-IN axons expressed Nav1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the axon in 30 VIP-INs and found that 23 of 30 (77%) identified axons expressed Nav1.1 (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from immunohistochemistry experiments shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "36e574a4-fc1f-4eb9-b786-b2fa1508afe8",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C13",
+      "claim": "Approximately half of all VIP-INs fired continuously with spike frequency adaptation (CA VIP-INs), while the other half fired a burst of action potentials prior to switching to an irregular spiking pattern (IS VIP-INs).",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately half of all VIP-INs fired continuously, albeit with spike frequency adaptation (here referred to as CA VIP-INs), while the other half instead fired a burst of action potentials prior to switching to an irregular spiking pattern (IS VIP-INs), often with a variable silent period in between the two phases (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This classification is demonstrated in Figure 2 using k-means clustering and long depolarizations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "0ff27204-657b-4fad-ad8c-f1871e0c18e5",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C14",
+      "claim": "CA and IS VIP-INs are present in Scn1a+/- and WT mice in similar proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that CA and IS VIP-INs are present in Scn1a+/- and WT mice in similar proportions as determined by our unbiased classification (Figure 2B,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown quantitatively in Figure 2E with chi-square test p=0.10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "38fcf841-1210-4257-b632-9d44a1dd2d8b",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C15",
+      "claim": "IS VIP-INs displayed a depolarized AP threshold in Scn1a+/- mice compared to WT (\u221241.3 \u00b1 0.5 vs. \u221239.3 \u00b1 0.4; p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "IS VIP-INs displayed more severe deficits compared to the pooled dataset (Figure 1), with a depolarized AP threshold (WT vs. Scn1a+/- mice: \u221241.3 \u00b1 0.5 vs. \u221239.3 \u00b1 0.4; p=0.01)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from electrophysiology data shown in Figure 3 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "1ea85967-f6b7-4548-9c64-a3d45527219e",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C16",
+      "claim": "IS VIP-INs displayed decreased AP amplitude in Scn1a+/- mice compared to WT (79 \u00b1 1.0 vs. 72 \u00b1 1.3 mV; p=0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "IS VIP-INs displayed more severe deficits compared to the pooled dataset (Figure 1), with a depolarized AP threshold (WT vs. Scn1a+/- mice: \u221241.3 \u00b1 0.5 vs. \u221239.3 \u00b1 0.4; p=0.01), decreased AP amplitude (79 \u00b1 1.0 vs. 72 \u00b1 1.3 mV; p=0.003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from electrophysiology data shown in Figure 3 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "a1a350a9-fa17-4ba6-b5cb-315e1c4f9a94",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C17",
+      "claim": "IS VIP-INs displayed decreased steady-state firing in Scn1a+/- mice compared to WT (59 \u00b1 4 vs. 25 \u00b1 3 Hz; p=8 X E-9).",
+      "claim_type": "EXPLICIT",
+      "source": "IS VIP-INs displayed more severe deficits compared to the pooled dataset (Figure 1), with a depolarized AP threshold (WT vs. Scn1a+/- mice: \u221241.3 \u00b1 0.5 vs. \u221239.3 \u00b1 0.4; p=0.01), decreased AP amplitude (79 \u00b1 1.0 vs. 72 \u00b1 1.3 mV; p=0.003) and steady-state firing (59 \u00b1 4 vs. 25 \u00b1 3 Hz; p=8 X E-9)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from electrophysiology data shown in Figure 3 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "8af4dc90-2929-440e-9b6a-e72148bc0a8b",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C18",
+      "claim": "CA VIP-INs from Scn1a+/- mice showed no statistical differences compared to CA VIP-INs from age-matched WT littermate controls across a range of measures of intrinsic excitability, properties of individual action potentials, and features of repetitive firing.",
+      "claim_type": "EXPLICIT",
+      "source": "CA VIP-INs from Scn1a+/- mice showed no statistical differences compared to CA VIP-INs from age-matched WT littermate controls across a range of additional measures of intrinsic excitability, properties of individual action potentials, and features of repetitive firing (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3 and quantified in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "e2f3aec1-d66e-4354-a9bc-dbd5d2b70eb0",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C19",
+      "claim": "IS VIP-IN dysfunction in Scn1a+/- mice persisted at later developmental time points (P30-55).",
+      "claim_type": "EXPLICIT",
+      "source": "We subdivided our analysis based on age and found nearly identical results at P18-21 and P30-55 for both IS and CA VIP-INs (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1 comparing two age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "43838aa2-cf14-4a2c-84f3-b1ff99fa45da",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C20",
+      "claim": "Impairment of IS VIP-INs was observed in both primary somatosensory neocortex and primary visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether impairment of IS VIP-INs was a general phenomenon or restricted to primary somatosensory neocortex, we additionally performed a set of recordings in layer 2/3 primary visual cortex, again finding a similar proportion of IS vs. CA VIP-INs and replicating our central finding that IS VIP-INs were selectively hypoexcitable in Scn1a+/- mice (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3\u2014figure supplement 2 showing similar results in visual cortex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "e7c80d00-e0ad-4535-a2b3-bcb22284d0b7",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C21",
+      "claim": "Bath application of 1 \u00b5M Hm1a led to markedly increased steady-state firing in IS VIP-INs from Scn1a+/- mice (control, 33 \u00b1 2 Hz; Hm1a, 97 \u00b1 5 Hz; p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In acute brain slices prepared from Scn1a+/- mice, bath application of 1 \u00b5M Hm1a led to markedly increased steady-state firing in IS VIP-INs (control, 33 \u00b1 2 Hz; Hm1a, 97 \u00b1 5 Hz; p=0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from pharmacology experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "1ce5e40c-5177-45ab-9a70-961fcd704213",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C22",
+      "claim": "Bath application of 1 \u00b5M Hm1a led to attenuation of spike rundown in IS VIP-INs from Scn1a+/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In acute brain slices prepared from Scn1a+/- mice, bath application of 1 \u00b5M Hm1a led to markedly increased steady-state firing in IS VIP-INs (control, 33 \u00b1 2 Hz; Hm1a, 97 \u00b1 5 Hz; p=0.001) and attenuation of spike rundown (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C demonstrating reduced spike amplitude rundown with Hm1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "93cf0c97-37f1-4347-92ba-e301b9ee95b7",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C23",
+      "claim": "Hm1a increased the maximum steady-state firing rate of PV-INs in Scn1a+/- mice at P18-21 (control, 229 \u00b1 2 Hz; Hm1a, 292 \u00b1 6 Hz; p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, Hm1a increased the maximum steady-state firing rate of PV-INs in Scn1a+/- mice at P18-21 (control, 229 \u00b1 2 Hz; Hm1a, 292 \u00b1 6 Hz; p=0.004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from pharmacology experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "18d25bd5-ca2c-4b44-a525-1fb9a66838a2",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C24",
+      "claim": "Hm1a had no measurable effect on the firing of layer 2/3 neocortical pyramidal neurons in WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Hm1a had no measurable effect on the firing of layer 2/3 neocortical pyramidal neurons in WT mice, supporting the specificity of this toxin to Nav1.1 and the smaller role of Nav1.1 in the regulation of pyramidal cell excitability relative to interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4 demonstrating no effect of Hm1a on pyramidal neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "6dcc856f-b44e-4944-8b00-36e3fa3265ce",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C25",
+      "claim": "Hm1a slowed the time constant of inactivation and increased slowly-inactivating/persistent current in VIP-INs, with no effect on the peak current density.",
+      "claim_type": "EXPLICIT",
+      "source": "Hm1a slowed the time constant of inactivation and increased slowly-inactivating/persistent current in VIP-INs, with no effect on the peak current density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in voltage clamp recordings from dissociated VIP-INs shown in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "6a1f5db7-f71c-4913-81ea-8bbc1e09a769",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C26",
+      "claim": "CR and CCK did not reliably define electrophysiological subtypes of VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "VIP/CR-INs were more often bipolar, or 'vertically biased,' compared to VIP/CCK-INs (Figure 5A), as shown previously (He et al., 2016), but CR and CCK did not reliably define electrophysiological subtypes of VIP-INs (Figure 5A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5 showing both CA and IS firing patterns in CR and CCK populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "c1e612af-ddd3-4e7b-872a-cdba904a9cf3",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C27",
+      "claim": "There were no differences in morphology between CA and IS VIP-INs within a given genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "VIP/CR-INs were more often bipolar, or 'vertically biased,' compared to VIP/CCK-INs (Figure 5A), as shown previously (He et al., 2016), but CR and CCK did not reliably define electrophysiological subtypes of VIP-INs (Figure 5A\u2013B), nor were there any differences in morphology between the CA and IS VIP-INs within a given genotype (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D demonstrating similar vertical bias for CA and IS cells within CR and CCK populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "ed750262-6109-48a2-aefd-12b4ed270ea5",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C28",
+      "claim": "Kcnq5 was expressed in approximately 40% of layer 2/3 VIP-INs and essentially no SST-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Kcnq5 was expressed in ~ 40% of layer 2/3 VIP-INs and essentially no SST-INs (but was expressed in many presumptive pyramidal cells)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by immunohistochemistry in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "563b3bf2-61d4-4815-b565-0700d37615f5",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C29",
+      "claim": "Kcnq3 showed very limited immunoreactivity in the superficial cortex overall and was not found on VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "while Kcnq3 showed very limited immunoreactivity in the superficial cortex overall and was not found on VIP-INs (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunohistochemistry in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "6b9fc842-e1e0-4894-8a52-df2a539780f1",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C30",
+      "claim": "IS VIP-INs showed a marked increase in sustained firing with the addition of linopirdine and resembled CA VIP-INs in terms of burst length and ISI CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "IS VIP-INs showed a marked increase in sustained firing with the addition of linopirdine and resembled CA VIP-INs in terms of burst length and ISI CoV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 6 showing conversion of IS to CA-like firing with linopirdine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "6619a8ae-c36d-4ef2-9e26-8ce67801b439",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C31",
+      "claim": "Some CA VIP-INs became 'IS-like' upon application of retigabine.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, some CA VIP-INs became 'IS-like' upon application of retigabine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 6 showing conversion of CA to IS-like firing with retigabine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "73e310e9-eff4-46cb-a00f-01fb2bae9121",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C32",
+      "claim": "Linopirdine had essentially no effect on CA VIP-IN excitability or intrinsic properties.",
+      "claim_type": "EXPLICIT",
+      "source": "However, linopirdine had essentially no effect on CA VIP-IN excitability or intrinsic properties (Figure 6\u2014figure supplement 3) indicating that whatever M-current is present in these cells is not a major regulator of cellular excitability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6\u2014figure supplement 3 showing no change in CA VIP-IN properties with linopirdine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "7a3bfe69-c4f5-4f4f-b263-c88a6f018caa",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C33",
+      "claim": "Bath application of carbachol (5 \u03bcM) produced a 10\u201315 mV depolarization in both CA and IS VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Bath application of the cholinomimetic carbachol (5 \u03bcM) produced a 10\u201315 mV depolarization in both CA and IS VIP-INs (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from pharmacology experiments shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "212f3565-aae9-4e6b-9645-71142f7fca2e",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C34",
+      "claim": "The suprathreshold firing properties of IS VIP-INs converted to a 'CA-like' pattern with carbachol application, firing for a full 8 s depolarizing pulse with decreased irregularity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the suprathreshold firing properties of IS VIP-INs again converted to a 'CA-like' pattern, firing for a full 8 s depolarizing pulse with decreased irregularity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 7B-C showing conversion of IS to continuous firing with carbachol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "dcd89196-e999-405a-ab2c-93b2dbbaa0c4",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C35",
+      "claim": "There was essentially no effect of carbachol on the firing pattern of CA VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "There was essentially no effect on the firing pattern of CA VIP-INs, nor was there any effect on the initial bursting characteristics of either IS or CA VIP-INs (Figure 7B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7C demonstrating no change in CA VIP-IN firing patterns with carbachol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "b30ca315-cfe4-4d97-bf4a-e20d229ed329",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C36",
+      "claim": "Muscarinic, but not nicotinic stimulation, induced tonic firing in IS VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that muscarinic, but not nicotinic stimulation, induced tonic firing in IS VIP-INs, while both types of cholinergic stimulation independently produced membrane potential depolarization of similar magnitude (4.24 \u00b1 0.7 mV for muscarinic vs. 5.48 \u00b1 1.4 mV for nicotinic; p>0.05; Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7\u2014figure supplement 1 comparing muscarinic and nicotinic agonist effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "dd1def6c-80b9-4b57-ba70-00a56012c683",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C37",
+      "claim": "PV-IN hypoexcitability in Scn1a+/- mice is restricted to an early and transient developmental window (P11-21), with subsequent normalization of high-frequency action potential discharge by P35.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we recently showed that PV-IN hypoexcitability in Scn1a+/- mice is restricted to an early and transient developmental window (P11-21), with subsequent normalization of high-frequency action potential discharge by P35 (Favero et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work by the authors (Favero et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "02f8637b-cb41-4310-8ab3-e076b22099c3",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C38",
+      "claim": "VIP-INs are functionally distinct from SST and PV-INs as they preferentially target other interneurons (particularly SST-INs) rather than pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "VIP-INs are functionally distinct from SST and PV-INs as they preferentially target other interneurons (particularly SST-INs) rather than pyramidal cells, and thus are considered to exert a disinhibitory influence on cerebral cortical circuits (Acs\u00e1dy et al., 1998; Fu et al., 2014; Krabbe et al., 2018; Lee et al., 2013; Mu\u00f1oz et al., 2017; Pi et al., 2013; Turi et al., 2019; Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about VIP-IN function supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "108bffdc-8c51-462c-b7b9-627118567d91",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C39",
+      "claim": "VIP-INs have a role in regulating the response of the cerebral cortex to ascending cholinergic neuromodulatory input from the basal forebrain.",
+      "claim_type": "EXPLICIT",
+      "source": "VIP-INs also have a role in regulating the response of the cerebral cortex to ascending cholinergic neuromodulatory input from the basal forebrain (Alitto and Dan, 2012; Fu et al., 2015; Kawaguchi, 1997; Porter et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about VIP-IN function supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "00724de8-8d3c-4bd4-bae7-4a4c7c8aa92c",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C40",
+      "claim": "VIP-INs are involved in higher-order functions such as attention, memory, and cognitive processing, all of which are impaired in DS.",
+      "claim_type": "EXPLICIT",
+      "source": "VIP-INs also have a role in regulating the response of the cerebral cortex to ascending cholinergic neuromodulatory input from the basal forebrain (Alitto and Dan, 2012; Fu et al., 2015; Kawaguchi, 1997; Porter et al., 1999), and hence are involved in higher-order functions such as attention, memory, and cognitive processing, all of which are impaired in DS (Dravet and Oguni, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on VIP-IN function and DS symptoms, supported by citation (Dravet and Oguni, 2013).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "ef74a243-44f6-46fc-b102-ddfffc9ad2f5",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C41",
+      "claim": "Prior work has suggested that VIP-INs do not express Nav1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has suggested that VIP-INs do not express Nav1.1 (Yamagata et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior work that the current study contradicts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "e4dc9317-56bc-4ef2-b381-8a184e5d486e",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C42",
+      "claim": "Recent single cell RNA sequencing studies suggest expression of Nav1.1 in VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "while recent single cell RNA sequencing studies do suggest expression of Nav1.1 in VIP-INs (Paul et al., 2017; Tasic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to transcriptomics studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "b929df06-a6e2-47ac-9ba2-548129b9922c",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C43",
+      "claim": "Nav1.1 is expressed at the axon initial segment (AIS) of PV-INs and, to a lesser extent, SST-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nav1.1 is expressed at the axon initial segment (AIS) of PV-INs and, to a lesser extent, SST-INs, and is a major determinant of action potential (AP) generation in these cells (Li et al., 2014; Ogiwara et al., 2007; De Stasi et al., 2016; Tai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "55840159-5016-41f7-ae7f-f1a5a70081d9",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C44",
+      "claim": "The 'interneuron hypothesis' of DS posits that PV and SST-IN dysfunction is the predominant driver of both epilepsy and autism.",
+      "claim_type": "EXPLICIT",
+      "source": "Such data have led to the 'interneuron hypothesis' of DS, which posits that PV and SST-IN dysfunction is the predominant driver of both epilepsy and autism (Catterall, 2018; Catterall et al., 2010; Han et al., 2012; Ogiwara et al., 2007; Rubinstein et al., 2015; Yu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an existing hypothesis supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "eacb9ce8-5fc5-4a40-991d-76e17b15d066",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C45",
+      "claim": "Scn1a mRNA is expressed in VIP-INs at levels similar to that seen in SST-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several recent large-scale transcriptomics datasets suggest that Scn1a mRNA is in fact expressed in VIP-INs, and at levels similar to that seen in SST-INs (Figure 1\u2014figure supplement 1) (Paul et al., 2017; Tasic et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transcriptomics data shown in Figure 1\u2014figure supplement 1 and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "c21a9557-fb22-4589-ab6a-d233e4f77d38",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C46",
+      "claim": "Hm1a is a spider toxin that enhances Nav1.1 current via inhibiting fast and slow inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hm1a is a recently described spider toxin that enhances Nav1.1 current via inhibiting fast and slow inactivation (Osteen et al., 2016; Osteen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Hm1a supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "918a9e9d-a094-4e07-bead-3098aed33fdf",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C47",
+      "claim": "The effect of Hm1a in IS VIP-INs was proportionally larger than in PV-INs (mean difference of 295% in IS VIP-INs compared to 28% in PV-INs).",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, Hm1a increased the maximum steady-state firing rate of PV-INs in Scn1a+/- mice at P18-21 (control, 229 \u00b1 2 Hz; Hm1a, 292 \u00b1 6 Hz; p=0.004), although this effect was proportionally smaller than what we observed in IS VIP INs (mean difference of 295% in IS VIP-INs compared to 28% in PV-INs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of Hm1a effects between cell types based on data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "e09a9e2a-177b-442d-b2a4-8538dd456344",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C48",
+      "claim": "IS VIP-INs retain a distinct irregular firing pattern in the presence of Hm1a in response to longer depolarizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, although Hm1a causes a dramatic increase in steady-state firing of IS VIP-INs, these cells still retain a distinct irregular firing pattern in the presence of Hm1a in response to longer depolarizations (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4\u2014figure supplement 1C showing irregular firing persists with Hm1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "b4c7a3a3-24c5-47b5-a2ac-9300c26c900d",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C49",
+      "claim": "M-current is mediated by KCNQ channels and has been hypothesized to regulate mode switching between tonic and bursting/irregular firing.",
+      "claim_type": "EXPLICIT",
+      "source": "M-current, mediated by KCNQ channels, is known to possess such properties and has been hypothesized to regulate mode switching between tonic and bursting/irregular firing (Drion et al., 2010; Stiefel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about M-current supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "691a04be-b4de-4b77-89a7-e44f083708c4",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C50",
+      "claim": "Single-cell transcriptomics data suggest relatively high expression of Kcnq5 in a subset of VIP-INs, including approximately half of all VIP/CR and VIP/CCK-INs, with minimal expression in either PV or SST-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell transcriptomics data suggest relatively high expression of the KCNQ subunit Kcnq5 in a subset of VIP-INs, including approximately half of all VIP/CR and VIP/CCK-INs, with minimal expression in either PV or SST-INs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transcriptomics data shown in Figure 6\u2014figure supplement 1 and citations (Paul et al., 2017; Tasic et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "fbd083f9-fd3a-4672-a6bd-7480aec3e41f",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C51",
+      "claim": "KCNQ subfamily member Kcnq2 is more broadly expressed across all INs.",
+      "claim_type": "EXPLICIT",
+      "source": "KCNQ subfamily member Kcnq2 is more broadly expressed across all INs, while Kcnq1/3/4 show very limited cortical expression (Figure 6\u2014figure supplement 1; Paul et al., 2017; Tasic et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transcriptomics data shown in Figure 6\u2014figure supplement 1 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "4ba909b5-9f6f-4b0a-9b6e-36a7ed1af22b",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C52",
+      "claim": "M-current expression is a critical but selective determinant of the electrical excitability of IS VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such data indicate that M-current expression is a critical but selective determinant of the electrical excitability of IS VIP-INs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the pharmacology experiments with linopirdine and retigabine shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "89e1de80-2488-46e7-8e54-2e86b2538953",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C53",
+      "claim": "M-current does not seem to correlate with expression of VIP-IN markers such as CR and CCK, or with VIP-IN morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "However, M-current does not seem to correlate with expression of VIP-IN markers such as CR and CCK, or with VIP-IN morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data in Figure 5 showing no correlation between firing patterns and CR/CCK expression or morphology.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "5ab9427d-2ed4-487d-ba4f-2d7f3a3f6fc1",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C54",
+      "claim": "VIP-INs are strongly recruited by ascending cholinergic modulation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "VIP-INs are strongly recruited by ascending cholinergic modulation in vivo (Fu et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "3193bc08-5627-4e0b-ae26-bb135115743d",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C55",
+      "claim": "M-current is characteristically inhibited by muscarinic receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "and M-current is characteristically inhibited by muscarinic receptor activation (Brown and Passmore, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about M-current supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "12bd1c43-1560-4ef4-8bb9-a2926abf428e",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C56",
+      "claim": "M-current inhibition via activation of muscarinic acetylcholine receptors represents a novel mechanism of neuromodulation in VIP-INs that is separate from the recently described tonic depolarization caused by nicotinic acetycholine receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, M-current inhibition via activation of muscarinic acetylcholine receptors represents a novel mechanism of neuromodulation in VIP-INs that is separate from the recently described tonic depolarization caused by nicotinic acetycholine receptor activation (Askew et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the carbachol and muscarine experiments in Figure 7 and Figure 7\u2014figure supplement 1, with citation to prior work on nicotinic effects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "0c403564-7c3c-41ed-b3b5-8b2a8b017060",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C57",
+      "claim": "A single compartment Hodgkin-Huxley model with M-current recapitulates the CA and IS-VIP firing patterns and the effect of loss of one copy of Scn1a.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, both the CA and IS-VIP firing patterns that characterize VIP-IN diversity, as well as the effect of loss of one copy of Scn1a, are captured in a simple model with continuous distributions of both Na+ and M-current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the computational model shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "dd0122aa-c6be-4966-be66-a75d0d42e0f2",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C58",
+      "claim": "Most or all VIP-INs express Nav1.1, and IS VIP-INs are selectively dysfunctional in Scn1a+/- mice due to prominent M-current mediated by Kcnq5-containing KCNQ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports our conclusion that most or all VIP-INs express Nav1.1, and that IS VIP-INs \u2013 which have a prominent M-current mediated by Kcnq5-containing KCNQ channels \u2013 are selectively dysfunctional in Scn1a+/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis conclusion based on multiple lines of evidence including immunohistochemistry, transcriptomics, pharmacology, and modeling.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "c8ae66d0-1e20-4eab-bd3a-c8a70403deb6",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C59",
+      "claim": "VIP-IN dysfunction in Scn1a+/- mice is distinct from the time course of PV-IN dysfunction, which is transient and delimited to an early developmental period.",
+      "claim_type": "EXPLICIT",
+      "source": "This persistent VIP-IN dysfunction in Scn1a+/- mice is distinct from the time course of PV-IN dysfunction, which we previously found is transient and delimited to an early developmental period when assessed via the same approach (Favero et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work by the authors (Favero et al., 2018) based on the age-dependent data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "8c369489-c19c-413c-bcf2-f1feac057cae",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C60",
+      "claim": "Seizure frequency typically decreases during early childhood in Dravet syndrome, while cognitive deficits remain, with moderate to severe intellectual disability and features of autism spectrum disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a time course is consistent with the known natural history of Dravet syndrome in human patients: it is well established that seizure frequency typically decreases during early childhood, while cognitive deficits remain, with moderate to severe intellectual disability and features, or a formal diagnosis of, autism spectrum disorder (Berkvens et al., 2015; Genton et al., 2011; Han et al., 2012; Li et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about Dravet syndrome supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "b7f3b1a5-776d-4ba8-af75-668526447532",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C61",
+      "claim": "Early epilepsy in Dravet syndrome may be driven by transient PV-IN abnormalities while cognitive impairment persists in part due to ongoing VIP-IN hypofunction.",
+      "claim_type": "EXPLICIT",
+      "source": "it may be the case that early epilepsy in driven by transient PV-IN abnormalities while cognitive impairment persists in part due to ongoing VIP-IN hypofunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the temporal patterns of PV-IN and VIP-IN dysfunction observed in the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "b6daf472-823b-4fb1-8698-1c190c04ad7e",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C62",
+      "claim": "VIP-INs are considered to have a role as disinhibitory elements in cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "As VIP-INs are considered to have a role as disinhibitory elements in cortical circuits",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about VIP-IN function mentioned earlier with citations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "eecdc09e-5256-4663-9340-bf49d55f7286",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C63",
+      "claim": "Brief current pulses on the order of hundreds of milliseconds cannot establish whether a VIP-IN is IS or CA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data clearly indicated that brief current pulses on the order of hundreds of milliseconds (such as are standard in slice physiology experiments) cannot establish whether a VIP-IN is IS or CA, as many IS VIP-INs fire continuously for 600 ms or more prior to transition to an IS pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data in Figure 2 comparing 600 ms and 8 s depolarizations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "c4ba92b8-b5e5-49ce-9c17-b56f3e1d068b",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C64",
+      "claim": "Irregular spiking is distinct from, yet partially overlaps with, bursting in VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, irregular spiking is distinct from, yet partially overlaps with, bursting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data in Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "84d78e7a-e4e1-46d2-b287-fed1a78053ca",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C65",
+      "claim": "T-type calcium channels underlie burst firing in a subset of VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study implicated T-type calcium channels as the mechanism of bursting at rheobase observed in a small subset (~20%) of VIP-INs (Pr\u00f6nneke et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work (Pr\u00f6nneke et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "b0f06e68-e2eb-4b9f-b350-4269013a5a51",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C66",
+      "claim": "A prepulse step depolarization to \u221255 mV to inactivate T-type channels had no effect on the suprathreshold response of IS-VIPs.",
+      "claim_type": "EXPLICIT",
+      "source": "A prepulse step depolarization to \u221255 mV to inactivate T-type channels had no effect on the suprathreshold response of IS-VIPs here (Figure 2\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "f091df60-545b-4909-b97b-a05c0e09edba",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C67",
+      "claim": "CA and IS VIP-INs can be clearly identified using a slow 8 s ramp current injection to induce inactivation of T-type calcium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to clearly identify CA and IS VIP-INs using a slow 8 s ramp current injection to induce inactivation of T-type calcium channels (Figure 2\u2014figure supplement 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2\u2014figure supplement 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "244a4c35-4ce3-4ec2-ad13-22c8768cafec",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C68",
+      "claim": "A subset of both CA and IS VIP-INs burst at rheobase.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that a subset of both CA and IS VIP-INs burst at rheobase, indicating that our IS VIP-IN category does not correspond directly to these previously described bursting VIP-INs (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "4affb8be-77f9-4bc7-8a53-7bbe5d1118e4",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C69",
+      "claim": "The electrophysiological properties of VIP-INs may exist along a continuum of active properties which only partially overlap with molecular markers and morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the electrophysiological properties of VIP-INs defined here do not constitute clearly delimited 'subtypes' per se, but rather exist along a continuum of active properties which only partially overlap with molecular markers (such as CR and CCK) and morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data in Figure 5 and Figure 6.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "9e0ac8ec-3582-4bfe-b5a6-73dc07fe2e20",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C70",
+      "claim": "An irregular firing pattern that can be modulated by cholinergic suppression of M-current appears to be a durable feature of approximately 50% of VIP-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, an irregular firing pattern that can be modulated by cholinergic suppression of M-current appears to be a durable feature of ~ 50% of VIP-INs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis conclusion based on the classification data in Figure 2 and cholinergic modulation data in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "8f3cd2d9-ebe2-414c-8ce2-a053c0b267cd",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C71",
+      "claim": "Loss of Nav1.1 could have drastically different effects in IS vs. CA VIP-INs based on electrophysiological context, such as the overall level of M-current and the degree of reliance on Nav1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "The model illustrates how loss of Nav1.1 could have drastically different effects in IS vs. CA VIP-INs based on electrophysiological context, such as the overall level of M-current and the degree of reliance on Nav1.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the computational modeling shown in Figure 8.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "e3a92fbf-0d0b-4f21-8f53-b9ffac440f08",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C72",
+      "claim": "VIP-IN activity is important for the cortical state transition that occurs in response to cholinergic neuromodulation.",
+      "claim_type": "EXPLICIT",
+      "source": "VIP-INs are recruited during shifts in attentional state, and their activity is important for the cortical state transition that occurs in response to cholinergic neuromodulation (Batista-Brito et al., 2017; Fu et al., 2014; Reimer et al., 2014; Walker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "5632dd93-f135-44be-b4a2-59307431e696",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C73",
+      "claim": "Cholinergic input may enhance VIP-IN excitability during cortical state transitions by inhibiting M-current.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that cholinergic input may enhance VIP-IN excitability during cortical state transitions by inhibiting M-current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the carbachol and muscarine experiments in Figure 7 and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "808fd5a9-1eed-46f8-b608-192b0fab0c44",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C74",
+      "claim": "IS VIP-IN dysfunction in Scn1a+/- mice may play a particularly important role in the activity of IS VIP-INs during shifts in attentional state.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect may be important during shifts in attentional state, which are known to recruit VIP-IN activity. Our data also implies that IS VIP-IN dysfunction in Scn1a+/- mice may play a particularly important role in the activity of IS VIP-INs during such state changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the combination of cholinergic modulation data and IS VIP-IN dysfunction in Scn1a+/- mice.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "79cab92e-1505-44aa-abf4-d9c112e85b80",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C75",
+      "claim": "VIP-IN dysfunction may contribute to both the epilepsy and the severe cognitive impairments characteristic of Dravet syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings identify a novel cellular locus of dysfunction in Dravet Syndrome which may be relevant to both the epilepsy and the severe cognitive impairments characteristic of this disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the overall findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "cc128df0-8a02-4626-b833-8b829b48437e",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C76",
+      "claim": "Scn1a+/- mice on a 50:50 129S6:B6J background replicate the core phenotype of Dravet Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "All mice used for experiments were on a near 50:50 129S6:B6J background, and Scn1a+/- mice on this background have been shown to replicate the core phenotype of Dravet Syndrome (Miller et al., 2014; Mistry et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work validating the mouse model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "a6921a12-7c15-4150-9a0b-d8334ba246c4",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C77",
+      "claim": "32% of Scn1a.VIP-Cre.tdT mice died spontaneously by P55.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar rates of spontaneous death (17/52, or 32%, of Scn1a.VIP-Cre.tdT mice not used for experiments by P55; Favero et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the breeding colony.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "71f985cd-6ebf-49db-9191-6c5bf59b2325",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C78",
+      "claim": "100% of P21-50 Scn1a.VIP-Cre.tdT mice could be thermally induced to have seizures at or below 42\u00b0C core body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "and were able to thermally induce seizures in 100% (9/9) of P21-50 Scn1a.VIP-Cre.tdT mice at or below 42\u00b0C core body temperature, supporting the validity of using these mice as a tool to study VIP-IN function in Dravet Syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from thermal seizure induction experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "29b31843-f928-4e67-ac3b-02e5689e5a4c",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C79",
+      "claim": "Dravet syndrome is characterized by temperature-sensitive and spontaneous seizures in the first year of life followed by progression to intractable epilepsy, intellectual disability with autistic features, and a markedly increased rate of sudden unexpected death (SUDEP).",
+      "claim_type": "EXPLICIT",
+      "source": "Dravet syndrome (DS) is a severe neurodevelopmental disorder characterized by temperature-sensitive and spontaneous seizures in the first year of life followed by progression to intractable epilepsy, intellectual disability with autistic features, and a markedly increased rate of sudden unexpected death (SUDEP) (Genton et al., 2011; Kalume et al., 2013; Oakley et al., 2009; Scheffer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about Dravet syndrome supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "fe411b7c-383f-402e-b835-adffba556d33",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C80",
+      "claim": "DS is caused by pathogenic loss of function variants in the gene SCN1A, resulting in haploinsufficiency of the voltage gated sodium (Na+) channel \u03b1 subunit Nav1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "DS is caused by pathogenic loss of function variants in the gene SCN1A, resulting in haploinsufficiency of the voltage gated sodium (Na+) channel \u03b1 subunit Nav1.1 (Claes et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the genetic cause of DS supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "9f2f9a22-676d-4579-b886-6b9d2e35efab",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C81",
+      "claim": "Experimental models of DS include mice lacking a functional copy of Nav1.1 (Scn1a+/- mice) and neurons generated from induced pluripotent stem (iPS) cells derived from DS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental models of DS, including mice lacking a functional copy of Nav1.1 (Scn1a+/- mice) (Mistry et al., 2014; Ogiwara et al., 2007; Yu et al., 2006) and neurons generated from induced pluripotent stem (iPS) cells derived from DS patients (Liu et al., 2013; Sun et al., 2016), have provided important insights into the cellular and circuit basis of this disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DS models supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "cb71fc96-e334-4f89-8951-f8bac6a59f91",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C82",
+      "claim": "DS remains incurable with a poor prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite advances in the understanding of underlying disease pathogenesis, DS remains incurable with a poor prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about DS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "3747eeb4-2624-42c0-8587-0b0aea180e19",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "claim_id": "C83",
+      "claim": "How loss of Nav1.1 leads to the features that define Dravet syndrome is incompletely understood.",
+      "claim_type": "EXPLICIT",
+      "source": "How loss of Nav1.1 leads to the features that define this clinical syndrome is incompletely understood, and identifying new, targetable loci of dysfunction is critically important to developing new treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "321345bf-85a3-45db-aea3-f81dae556ef5",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Dravet Syndrome is a severe neurodevelopmental disorder caused by loss-of-function variants in SCN1A encoding Nav1.1, characterized by temperature-sensitive seizures, intractable epilepsy, intellectual disability, and increased SUDEP risk. Despite advances in understanding disease pathogenesis using mouse models and patient-derived neurons, DS remains incurable with poor prognosis and incompletely understood mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C79-C83 establish the clinical and genetic background of Dravet Syndrome through well-established knowledge supported by multiple citations. These foundational claims are consistently reported in the literature and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "bdf37228-9c8d-4b2a-a39b-f1aae110bdc4",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work established that PV-INs and SST-INs exhibit impaired excitability in Scn1a+/- mice, with Nav1.1 expressed at the axon initial segment of these cells. The 'interneuron hypothesis' posits that PV and SST-IN dysfunction drives both epilepsy and autism in DS, though PV-IN hypoexcitability is transient (P11-21) with normalization by P35.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C37, C43-C44 accurately summarize prior work on interneuron dysfunction in DS models, supported by appropriate citations including the authors' own prior work (Favero et al., 2018). This provides essential context for investigating VIP-INs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "eabc2b47-383a-41ab-802f-db7fe27c51c1",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "VIP-INs express Nav1.1, with 77% of identified VIP-IN axons showing Nav1.1 immunoreactivity and transcriptomics data indicating Scn1a mRNA expression at levels similar to SST-INs. This contradicts prior work suggesting VIP-INs do not express Nav1.1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C12, C41-C42, C45 are supported by converging evidence from immunohistochemistry (Figure 1F, supplements 2-3), transcriptomics (Figure 1\u2014supplement 1), and citations to recent single-cell RNA-seq studies. The quantitative immunohistochemistry data (77% positive, n=30 axons) provides direct protein-level evidence, though the sample size is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "25eb312e-116b-4662-aa4d-d5515d7dafe5",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "VIP-INs from Scn1a+/- mice demonstrated reduced maximal steady-state firing frequency (67\u00b12 vs 48\u00b13 Hz; p=3\u00d710\u207b\u2076), a marked shift in the I/f curve, and spike height accommodation during repetitive discharge, consistent with loss of Na+ current.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 present quantitative electrophysiology data with appropriate statistical analysis (n=150/123 WT/Scn1a+/-) shown in Figure 1. The p-value is highly significant and the phenotype is consistent with reduced sodium channel function. Sample sizes are adequate for the observed effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "9d98e4ce-5c61-4e2b-ae19-961b6161fb27",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "VIP-INs can be classified into two electrophysiological subtypes using 8-second depolarizations: continuous adapting (CA) and irregular spiking (IS), present in similar proportions in WT and Scn1a+/- mice. Brief (600 ms) current pulses cannot reliably distinguish these subtypes. IS firing is distinct from but partially overlaps with T-type calcium channel-mediated bursting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14, C63-C68 describe a methodological advance in VIP-IN classification supported by k-means clustering analysis and experimental validation (Figure 2, supplements). The distinction between IS and CA patterns is reproducible across stimulation protocols (square, ramp, prepulse). The chi-square test (p=0.10) appropriately shows no genotype effect on subtype proportions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "6bb3b304-cc7a-4a8d-9c55-9f4d20b1c062",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "IS VIP-INs, but not CA VIP-INs, are specifically impaired in Scn1a+/- mice, showing depolarized AP threshold (p=0.01), decreased AP amplitude (p=0.003), and reduced steady-state firing (59\u00b14 vs 25\u00b13 Hz; p=8\u00d710\u207b\u2079). This dysfunction persists at later developmental time points (P30-55) and is observed in both somatosensory and visual cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C15-C20 present the central finding with robust statistical support across multiple parameters (Figure 3, Table 1, supplements). The selective impairment of IS but not CA VIP-INs is well-documented with appropriate controls. Age-dependent analysis (Figure 3\u2014supplement 1) and cross-cortical validation (Figure 3\u2014supplement 2) strengthen the conclusions. Per-animal analysis in Table 1 confirms findings are not driven by pseudoreplication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "e07a5031-1bfa-4a0c-8b66-6e2876ed6492",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Application of the Nav1.1-specific toxin Hm1a rescued IS VIP-IN dysfunction in Scn1a+/- mice, markedly increasing steady-state firing (33\u00b12 to 97\u00b15 Hz; p=0.001) and attenuating spike rundown. Hm1a also increased PV-IN firing and had no effect on pyramidal neurons. Voltage clamp recordings showed Hm1a slowed inactivation and increased persistent current without affecting peak current density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C21-C25, C46-C48 provide pharmacological rescue evidence supporting Nav1.1 involvement (Figure 4). The specificity is demonstrated by differential effects across cell types and by voltage clamp data from dissociated VIP-INs. The proportionally larger effect in IS VIP-INs (295%) vs PV-INs (28%) is consistent with the selective vulnerability hypothesis. Both 1 \u00b5M and 50 nM Hm1a produced similar effects, supporting specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "389e6bc0-1b83-4d3d-84b2-03c6c39bbe71",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CR and CCK molecular markers did not reliably define electrophysiological subtypes of VIP-INs, nor were there morphological differences between CA and IS VIP-INs within a genotype. M-current expression does not correlate with these markers or morphology, suggesting VIP-IN properties may exist along a continuum rather than as discrete subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27, C53, C69 are supported by intersectional genetic labeling experiments (Figure 5) showing both CA and IS patterns in CR and CCK populations. The morphological analysis using vertical bias quantification found no differences between CA and IS cells within marker populations. The interpretation of a continuum is appropriately cautious given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The IS vs CA firing pattern is determined by M-current mediated by KCNQ channels, likely containing Kcnq5. Pharmacological blockade of M-current with linopirdine converted IS to CA-like firing, while KCNQ activation with retigabine converted some CA to IS-like firing. Linopirdine had no effect on CA VIP-INs. Immunohistochemistry confirmed Kcnq5 expression in ~40% of VIP-INs but not SST-INs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C28-C32, C49-C52 are supported by bidirectional pharmacological manipulation (Figure 6), transcriptomics data (Figure 6\u2014supplement 1), and immunohistochemistry (Figure 6\u2014supplement 2). The bidirectional effects of linopirdine and retigabine provide strong mechanistic evidence. The lack of linopirdine effect on CA VIP-INs (Figure 6\u2014supplement 3) supports the hypothesis that M-current is selectively important in IS cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "69f39187-ce71-4784-87ac-e98fa7661d73",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IS VIP-INs switched to tonic firing with both pharmacologic M-current blockade and muscarinic (but not nicotinic) acetylcholine receptor activation. Carbachol produced 10-15 mV depolarization in both CA and IS VIP-INs but selectively converted IS firing patterns. This represents a novel mechanism of neuromodulation separate from nicotinic depolarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C33-C36, C54-C56 are supported by cholinergic pharmacology experiments (Figure 7, supplement 1). The selective effect of muscarinic vs nicotinic stimulation on firing pattern (despite similar depolarization magnitude) provides mechanistic insight. The conclusion of a novel neuromodulatory mechanism is appropriately supported by the data and prior literature on M-current regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "c21d6d10-3fc5-4dd6-a288-e2783075d087",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A single compartment Hodgkin-Huxley model with M-current recapitulates CA and IS firing patterns and the selective effect of Scn1a haploinsufficiency on IS VIP-INs. The model demonstrates how loss of Nav1.1 has drastically different effects based on M-current levels and reliance on Nav1.1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58, C71 are supported by computational modeling (Figure 8) showing that varying Na+ and M-current densities reproduces the experimental observations. The model provides a mechanistic framework for understanding selective IS VIP-IN vulnerability. However, the model is relatively simple and makes assumptions about channel distributions that are not directly validated experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "e35a1895-4219-4851-98bb-5e6ac706dad0",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "VIP-INs are functionally distinct from PV and SST-INs, preferentially targeting other interneurons (particularly SST-INs) to exert disinhibitory influence. They regulate cortical responses to cholinergic input from the basal forebrain and are involved in attention, memory, and cognitive processing\u2014functions impaired in DS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40, C62, C72 accurately summarize established knowledge about VIP-IN function supported by appropriate citations. These claims provide important context for interpreting the significance of VIP-IN dysfunction in DS, though they represent prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "44b4badb-14f9-49c5-bc27-c4b7ce9c3bb1",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "VIP-IN dysfunction in Scn1a+/- mice is persistent, distinct from transient PV-IN dysfunction. This temporal pattern parallels the clinical course of DS where seizures decrease but cognitive deficits persist. The authors speculate that early epilepsy may be driven by transient PV-IN abnormalities while cognitive impairment persists due to ongoing VIP-IN hypofunction, with particular relevance during attentional state changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C61, C73-C75 make important connections between cellular findings and clinical phenotypes, but these are largely speculative (C61, C74-C75 explicitly marked as speculation/inference). While the temporal correlation is intriguing and the hypothesis is reasonable, direct evidence linking VIP-IN dysfunction to specific DS symptoms is lacking. The claims appropriately acknowledge this uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    },
+    {
+      "id": "76256fc4-80a1-4935-a18a-03103ce70adf",
+      "content_id": "a2796aa0-207b-4a5e-9212-06640942f832",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Scn1a+/- mouse model on a 50:50 129S6:B6J background replicates core DS phenotypes, with 32% spontaneous death by P55 and 100% thermal seizure induction at \u226442\u00b0C in P21-50 mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 validate the mouse model used in the study through citations to prior work and quantitative phenotyping data. The spontaneous death rate (17/52 mice) and thermal seizure susceptibility (9/9 mice) confirm the model recapitulates key DS features, supporting its validity for studying disease mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:37.084258Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d6c26674-150e-40b9-b8f9-e253b6a6a5eb",
+      "result_id": "321345bf-85a3-45db-aea3-f81dae556ef5"
+    },
+    {
+      "claim_id": "29b31843-f928-4e67-ac3b-02e5689e5a4c",
+      "result_id": "321345bf-85a3-45db-aea3-f81dae556ef5"
+    },
+    {
+      "claim_id": "fe411b7c-383f-402e-b835-adffba556d33",
+      "result_id": "321345bf-85a3-45db-aea3-f81dae556ef5"
+    },
+    {
+      "claim_id": "9f2f9a22-676d-4579-b886-6b9d2e35efab",
+      "result_id": "321345bf-85a3-45db-aea3-f81dae556ef5"
+    },
+    {
+      "claim_id": "cb71fc96-e334-4f89-8951-f8bac6a59f91",
+      "result_id": "321345bf-85a3-45db-aea3-f81dae556ef5"
+    },
+    {
+      "claim_id": "3747eeb4-2624-42c0-8587-0b0aea180e19",
+      "result_id": "321345bf-85a3-45db-aea3-f81dae556ef5"
+    },
+    {
+      "claim_id": "b6822b2d-f654-4369-9307-5511a0d660f7",
+      "result_id": "bdf37228-9c8d-4b2a-a39b-f1aae110bdc4"
+    },
+    {
+      "claim_id": "dd1def6c-80b9-4b57-ba70-00a56012c683",
+      "result_id": "bdf37228-9c8d-4b2a-a39b-f1aae110bdc4"
+    },
+    {
+      "claim_id": "b929df06-a6e2-47ac-9ba2-548129b9922c",
+      "result_id": "bdf37228-9c8d-4b2a-a39b-f1aae110bdc4"
+    },
+    {
+      "claim_id": "55840159-5016-41f7-ae7f-f1a5a70081d9",
+      "result_id": "bdf37228-9c8d-4b2a-a39b-f1aae110bdc4"
+    },
+    {
+      "claim_id": "3c230d1e-2fca-4e2c-9569-fcdd74633f92",
+      "result_id": "eabc2b47-383a-41ab-802f-db7fe27c51c1"
+    },
+    {
+      "claim_id": "18472889-6bc3-4c8c-a423-ba66a01779ba",
+      "result_id": "eabc2b47-383a-41ab-802f-db7fe27c51c1"
+    },
+    {
+      "claim_id": "ef74a243-44f6-46fc-b102-ddfffc9ad2f5",
+      "result_id": "eabc2b47-383a-41ab-802f-db7fe27c51c1"
+    },
+    {
+      "claim_id": "e4dc9317-56bc-4ef2-b381-8a184e5d486e",
+      "result_id": "eabc2b47-383a-41ab-802f-db7fe27c51c1"
+    },
+    {
+      "claim_id": "eacb9ce8-5fc5-4a40-991d-76e17b15d066",
+      "result_id": "eabc2b47-383a-41ab-802f-db7fe27c51c1"
+    },
+    {
+      "claim_id": "13727d7f-ea21-45f7-9da4-930dc7b02cbb",
+      "result_id": "25eb312e-116b-4662-aa4d-d5515d7dafe5"
+    },
+    {
+      "claim_id": "0c03388a-d3df-4957-aaaf-a5b532a954e2",
+      "result_id": "25eb312e-116b-4662-aa4d-d5515d7dafe5"
+    },
+    {
+      "claim_id": "25a2e678-03e4-4e23-8ead-431437c489c8",
+      "result_id": "25eb312e-116b-4662-aa4d-d5515d7dafe5"
+    },
+    {
+      "claim_id": "36e574a4-fc1f-4eb9-b786-b2fa1508afe8",
+      "result_id": "9d98e4ce-5c61-4e2b-ae19-961b6161fb27"
+    },
+    {
+      "claim_id": "0ff27204-657b-4fad-ad8c-f1871e0c18e5",
+      "result_id": "9d98e4ce-5c61-4e2b-ae19-961b6161fb27"
+    },
+    {
+      "claim_id": "eecdc09e-5256-4663-9340-bf49d55f7286",
+      "result_id": "9d98e4ce-5c61-4e2b-ae19-961b6161fb27"
+    },
+    {
+      "claim_id": "c4ba92b8-b5e5-49ce-9c17-b56f3e1d068b",
+      "result_id": "9d98e4ce-5c61-4e2b-ae19-961b6161fb27"
+    },
+    {
+      "claim_id": "84d78e7a-e4e1-46d2-b287-fed1a78053ca",
+      "result_id": "9d98e4ce-5c61-4e2b-ae19-961b6161fb27"
+    },
+    {
+      "claim_id": "b0f06e68-e2eb-4b9f-b350-4269013a5a51",
+      "result_id": "9d98e4ce-5c61-4e2b-ae19-961b6161fb27"
+    },
+    {
+      "claim_id": "f091df60-545b-4909-b97b-a05c0e09edba",
+      "result_id": "9d98e4ce-5c61-4e2b-ae19-961b6161fb27"
+    },
+    {
+      "claim_id": "244a4c35-4ce3-4ec2-ad13-22c8768cafec",
+      "result_id": "9d98e4ce-5c61-4e2b-ae19-961b6161fb27"
+    },
+    {
+      "claim_id": "1c40f5ec-5a1b-4109-8359-6602b7867eec",
+      "result_id": "6bb3b304-cc7a-4a8d-9c55-9f4d20b1c062"
+    },
+    {
+      "claim_id": "38fcf841-1210-4257-b632-9d44a1dd2d8b",
+      "result_id": "6bb3b304-cc7a-4a8d-9c55-9f4d20b1c062"
+    },
+    {
+      "claim_id": "1ea85967-f6b7-4548-9c64-a3d45527219e",
+      "result_id": "6bb3b304-cc7a-4a8d-9c55-9f4d20b1c062"
+    },
+    {
+      "claim_id": "a1a350a9-fa17-4ba6-b5cb-315e1c4f9a94",
+      "result_id": "6bb3b304-cc7a-4a8d-9c55-9f4d20b1c062"
+    },
+    {
+      "claim_id": "8af4dc90-2929-440e-9b6a-e72148bc0a8b",
+      "result_id": "6bb3b304-cc7a-4a8d-9c55-9f4d20b1c062"
+    },
+    {
+      "claim_id": "e2f3aec1-d66e-4354-a9bc-dbd5d2b70eb0",
+      "result_id": "6bb3b304-cc7a-4a8d-9c55-9f4d20b1c062"
+    },
+    {
+      "claim_id": "43838aa2-cf14-4a2c-84f3-b1ff99fa45da",
+      "result_id": "6bb3b304-cc7a-4a8d-9c55-9f4d20b1c062"
+    },
+    {
+      "claim_id": "85292def-b768-4cce-9a20-a417607078fc",
+      "result_id": "e07a5031-1bfa-4a0c-8b66-6e2876ed6492"
+    },
+    {
+      "claim_id": "e7c80d00-e0ad-4535-a2b3-bcb22284d0b7",
+      "result_id": "e07a5031-1bfa-4a0c-8b66-6e2876ed6492"
+    },
+    {
+      "claim_id": "1ce5e40c-5177-45ab-9a70-961fcd704213",
+      "result_id": "e07a5031-1bfa-4a0c-8b66-6e2876ed6492"
+    },
+    {
+      "claim_id": "93cf0c97-37f1-4347-92ba-e301b9ee95b7",
+      "result_id": "e07a5031-1bfa-4a0c-8b66-6e2876ed6492"
+    },
+    {
+      "claim_id": "18d25bd5-ca2c-4b44-a525-1fb9a66838a2",
+      "result_id": "e07a5031-1bfa-4a0c-8b66-6e2876ed6492"
+    },
+    {
+      "claim_id": "6dcc856f-b44e-4944-8b00-36e3fa3265ce",
+      "result_id": "e07a5031-1bfa-4a0c-8b66-6e2876ed6492"
+    },
+    {
+      "claim_id": "c21a9557-fb22-4589-ab6a-d233e4f77d38",
+      "result_id": "e07a5031-1bfa-4a0c-8b66-6e2876ed6492"
+    },
+    {
+      "claim_id": "918a9e9d-a094-4e07-bead-3098aed33fdf",
+      "result_id": "e07a5031-1bfa-4a0c-8b66-6e2876ed6492"
+    },
+    {
+      "claim_id": "e09a9e2a-177b-442d-b2a4-8538dd456344",
+      "result_id": "e07a5031-1bfa-4a0c-8b66-6e2876ed6492"
+    },
+    {
+      "claim_id": "6a1f5db7-f71c-4913-81ea-8bbc1e09a769",
+      "result_id": "389e6bc0-1b83-4d3d-84b2-03c6c39bbe71"
+    },
+    {
+      "claim_id": "c1e612af-ddd3-4e7b-872a-cdba904a9cf3",
+      "result_id": "389e6bc0-1b83-4d3d-84b2-03c6c39bbe71"
+    },
+    {
+      "claim_id": "89e1de80-2488-46e7-8e54-2e86b2538953",
+      "result_id": "389e6bc0-1b83-4d3d-84b2-03c6c39bbe71"
+    },
+    {
+      "claim_id": "4affb8be-77f9-4bc7-8a53-7bbe5d1118e4",
+      "result_id": "389e6bc0-1b83-4d3d-84b2-03c6c39bbe71"
+    },
+    {
+      "claim_id": "dc5309e9-1647-4fe2-8b44-ffcbaa832764",
+      "result_id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2"
+    },
+    {
+      "claim_id": "ed750262-6109-48a2-aefd-12b4ed270ea5",
+      "result_id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2"
+    },
+    {
+      "claim_id": "563b3bf2-61d4-4815-b565-0700d37615f5",
+      "result_id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2"
+    },
+    {
+      "claim_id": "6b9fc842-e1e0-4894-8a52-df2a539780f1",
+      "result_id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2"
+    },
+    {
+      "claim_id": "6619a8ae-c36d-4ef2-9e26-8ce67801b439",
+      "result_id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2"
+    },
+    {
+      "claim_id": "73e310e9-eff4-46cb-a00f-01fb2bae9121",
+      "result_id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2"
+    },
+    {
+      "claim_id": "b4c7a3a3-24c5-47b5-a2ac-9300c26c900d",
+      "result_id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2"
+    },
+    {
+      "claim_id": "691a04be-b4de-4b77-89a7-e44f083708c4",
+      "result_id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2"
+    },
+    {
+      "claim_id": "fbd083f9-fd3a-4672-a6bd-7480aec3e41f",
+      "result_id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2"
+    },
+    {
+      "claim_id": "4ba909b5-9f6f-4b0a-9b6e-36a7ed1af22b",
+      "result_id": "dec4b7a0-3683-44ab-ba76-5f7133b5ceb2"
+    },
+    {
+      "claim_id": "a03fc8d3-fd1c-40d0-b70b-0e5d2a984393",
+      "result_id": "69f39187-ce71-4784-87ac-e98fa7661d73"
+    },
+    {
+      "claim_id": "b84cb36b-2f57-405c-9ba1-5b3fbb6a981f",
+      "result_id": "69f39187-ce71-4784-87ac-e98fa7661d73"
+    },
+    {
+      "claim_id": "7a3bfe69-c4f5-4f4f-b263-c88a6f018caa",
+      "result_id": "69f39187-ce71-4784-87ac-e98fa7661d73"
+    },
+    {
+      "claim_id": "212f3565-aae9-4e6b-9645-71142f7fca2e",
+      "result_id": "69f39187-ce71-4784-87ac-e98fa7661d73"
+    },
+    {
+      "claim_id": "dcd89196-e999-405a-ab2c-93b2dbbaa0c4",
+      "result_id": "69f39187-ce71-4784-87ac-e98fa7661d73"
+    },
+    {
+      "claim_id": "b30ca315-cfe4-4d97-bf4a-e20d229ed329",
+      "result_id": "69f39187-ce71-4784-87ac-e98fa7661d73"
+    },
+    {
+      "claim_id": "5ab9427d-2ed4-487d-ba4f-2d7f3a3f6fc1",
+      "result_id": "69f39187-ce71-4784-87ac-e98fa7661d73"
+    },
+    {
+      "claim_id": "3193bc08-5627-4e0b-ae26-bb135115743d",
+      "result_id": "69f39187-ce71-4784-87ac-e98fa7661d73"
+    },
+    {
+      "claim_id": "12bd1c43-1560-4ef4-8bb9-a2926abf428e",
+      "result_id": "69f39187-ce71-4784-87ac-e98fa7661d73"
+    },
+    {
+      "claim_id": "0c403564-7c3c-41ed-b3b5-8b2a8b017060",
+      "result_id": "c21d6d10-3fc5-4dd6-a288-e2783075d087"
+    },
+    {
+      "claim_id": "dd0122aa-c6be-4966-be66-a75d0d42e0f2",
+      "result_id": "c21d6d10-3fc5-4dd6-a288-e2783075d087"
+    },
+    {
+      "claim_id": "8f3cd2d9-ebe2-414c-8ce2-a053c0b267cd",
+      "result_id": "c21d6d10-3fc5-4dd6-a288-e2783075d087"
+    },
+    {
+      "claim_id": "02f8637b-cb41-4310-8ab3-e076b22099c3",
+      "result_id": "e35a1895-4219-4851-98bb-5e6ac706dad0"
+    },
+    {
+      "claim_id": "108bffdc-8c51-462c-b7b9-627118567d91",
+      "result_id": "e35a1895-4219-4851-98bb-5e6ac706dad0"
+    },
+    {
+      "claim_id": "00724de8-8d3c-4bd4-bae7-4a4c7c8aa92c",
+      "result_id": "e35a1895-4219-4851-98bb-5e6ac706dad0"
+    },
+    {
+      "claim_id": "b6daf472-823b-4fb1-8698-1c190c04ad7e",
+      "result_id": "e35a1895-4219-4851-98bb-5e6ac706dad0"
+    },
+    {
+      "claim_id": "e3a92fbf-0d0b-4f21-8f53-b9ffac440f08",
+      "result_id": "e35a1895-4219-4851-98bb-5e6ac706dad0"
+    },
+    {
+      "claim_id": "c8ae66d0-1e20-4eab-bd3a-c8a70403deb6",
+      "result_id": "44b4badb-14f9-49c5-bc27-c4b7ce9c3bb1"
+    },
+    {
+      "claim_id": "8c369489-c19c-413c-bcf2-f1feac057cae",
+      "result_id": "44b4badb-14f9-49c5-bc27-c4b7ce9c3bb1"
+    },
+    {
+      "claim_id": "b7f3b1a5-776d-4ba8-af75-668526447532",
+      "result_id": "44b4badb-14f9-49c5-bc27-c4b7ce9c3bb1"
+    },
+    {
+      "claim_id": "5632dd93-f135-44be-b4a2-59307431e696",
+      "result_id": "44b4badb-14f9-49c5-bc27-c4b7ce9c3bb1"
+    },
+    {
+      "claim_id": "808fd5a9-1eed-46f8-b608-192b0fab0c44",
+      "result_id": "44b4badb-14f9-49c5-bc27-c4b7ce9c3bb1"
+    },
+    {
+      "claim_id": "79cab92e-1505-44aa-abf4-d9c112e85b80",
+      "result_id": "44b4badb-14f9-49c5-bc27-c4b7ce9c3bb1"
+    },
+    {
+      "claim_id": "cc128df0-8a02-4626-b833-8b829b48437e",
+      "result_id": "76256fc4-80a1-4935-a18a-03103ce70adf"
+    },
+    {
+      "claim_id": "a6921a12-7c15-4150-9a0b-d8334ba246c4",
+      "result_id": "76256fc4-80a1-4935-a18a-03103ce70adf"
+    },
+    {
+      "claim_id": "71f985cd-6ebf-49db-9191-6c5bf59b2325",
+      "result_id": "76256fc4-80a1-4935-a18a-03103ce70adf"
+    }
+  ],
+  "comparisons": []
+}

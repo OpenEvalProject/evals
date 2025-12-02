@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "CB-derived ILC1-like cells, CD56bright NK cells, and CD56dim NK cells can be clearly separated from each other based on their transcriptional patterns using heatmap and principal component analysis, with PC1 accounting for 56% variance and PC2 accounting for 16% variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are supported by RNA sequencing data and PCA visualization shown in Figure 1a,b. The statistical analysis demonstrates clear separation of the three cell types with well-defined variance contributions from the principal components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "ILC1-like cells lack expression of typical NK cell markers (CD56, NKp46, NKp80, NKG2A, CD94), have low expression of innate cytokine receptors (IL-2, IL-12, IL-18), and lack cytotoxic effector molecules (perforin, granulysin, granzymes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are well-supported by RNA sequencing and flow cytometry data showing differential gene expression between ILC1-like cells and NK cells. The data consistently demonstrate the absence or low expression of these NK cell-associated molecules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "ILC1-like cells express T cell lineage-associated molecules including CD5, CD6, CD28, TCR components (TRBC1, CD3\u03b4), CD4 or CD8, and have a polyclonal TCR repertoire, but lack surface expression of CD3 and TCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 are supported by RNA sequencing, flow cytometry, and ATAC sequencing data. The expression of T cell markers is confirmed at both transcriptional and protein levels, while the absence of surface TCR/CD3 is demonstrated by flow cytometry. The polyclonal TCR repertoire is shown by RNA-seq analysis of TRAV and TRBV genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "ILC1-like cells show distinct transcription factor expression patterns: high ID3 (T cell-associated), moderate Eomes, and almost absent TBET, contrasting with NK cells that show high Eomes and TBET expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by RNA sequencing and intranuclear flow cytometry data shown in Figure 1 and supplementary figures. The differential expression of these key transcription factors distinguishes ILC1-like cells from NK cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "ILC1-like cells prominently express chemokine receptors CCR7, CCR4, and CCR9 (involved in migration to lymphoid organs, skin, and intestine), while NK cells express S1PR5 (tissue residency regulator). CCR expression is restricted to CD5+ ILC1-like subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 are supported by RNA sequencing, flow cytometry, and t-SNE analysis shown in Figure 2. The differential chemokine receptor expression patterns are confirmed at both transcriptional and protein levels, with clear subset-specific distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "ILC1-like cells show minimal IFN\u03b3 production (mean: 1.25%) compared to CD56bright NK cells (mean: 80.3%) under various stimulation conditions, with only the CD161+ subset showing modest IFN\u03b3 production (mean: 8.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by intracellular cytokine staining and cytokine secretion assays shown in Figure 2e-h. The data consistently demonstrate functional immaturity of ILC1-like cells regarding IFN\u03b3 production across multiple experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "ILC1-like cell frequency significantly decreases with gestational age in cord blood (r=0.9286, p=0.0067), while NK cell frequencies remain stable. This decline is specific to ILC1-like cells and not observed for ILC2/ILC3. No further decline occurs in adult life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by correlation analysis across gestational ages and age group comparisons shown in Figure 3. The statistical significance is properly reported with correlation coefficients and p-values. The specificity of the decline to ILC1-like cells is demonstrated by comparison with other ILC subsets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ILC1-like cells do not efficiently differentiate into T cells under T cell conditions but readily differentiate into NK cells under NK cell conditions, upregulating CD94 and NKG2A de novo and generating KIR+ NK cells more efficiently than CD56bright NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by in vitro differentiation experiments shown in Figure 4. The lack of T cell differentiation and efficient NK cell differentiation are demonstrated with appropriate controls (ILC2 as negative control, CD56bright NK cells as comparison).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ATAC sequencing reveals that NK cell receptor genes (CD94, NKG2A, KIR2DL3) have open chromatin in NK cells but closed chromatin in ILC1-like cells, while T cell markers (CD5) show the opposite pattern, indicating lack of epigenetic priming for NK receptor expression in ILC1-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by ATAC sequencing data shown in Figure 4c and supplementary figures. The chromatin accessibility patterns correlate with gene expression patterns and support the conclusion that ILC1-like cells are not epigenetically primed for NK receptor expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "NK cells derived from ILC1-like cells are functionally mature, showing comparable CD107a degranulation (mean: 61.1%), direct cytotoxicity, CD16 upregulation, and ADCC function (mean: 6.7%) to CD56bright-derived NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by functional assays including CD107a mobilization, cytotoxicity assays, and ADCC assays shown in Figure 5. The data demonstrate that ILC1-like-derived NK cells acquire full functional competence comparable to CD56bright-derived NK cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Stroma cells promote NK cell differentiation of ILC1-like cells, with CD94+NKG2A+ generation highest on OP9 (without DLL1). NOTCH signaling (via DLL1) has no promoting effect on CD94+NKG2A+ generation but significantly influences KIR expression, with OP9-DL1 efficiently supporting KIR+ NK cell generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by comparison of differentiation conditions (OP9, OP9-DL1, stroma-free) shown in Figure 6a-b. The data clearly demonstrate differential effects of stroma and NOTCH signaling on NK cell receptor expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ILC1-like cells generate a more diversified NK cell repertoire than CD56bright NK cells, with higher frequencies of NKG2A-KIR+ cells (19.8% vs 1.6%, p=0.002) and total KIR+ cells (42.9% vs 12.7%, p=0.004), producing all possible receptor combinations with advanced maturation stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by flow cytometry analysis and combinatorial receptor expression analysis shown in Figure 6c-e. The statistical significance is properly reported and the diversity of receptor combinations is comprehensively documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "ILC1-like cells from peripheral blood, like cord blood counterparts, support development of mature NK cells with significantly higher KIR2DL2/2DL3 expression (49.9% vs 13.5%) and NKG2A-KIR+ cells (14.7% vs 3.6%) compared to CD56bright-derived NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by in vitro differentiation experiments with PB cells shown in Figure 6\u2014figure supplement 2. The data demonstrate that the NK progenitor potential is maintained in adult peripheral blood ILC1-like cells, though potentially at lower efficiency than CB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Single-cell cloning experiments reveal differential cloning efficiency (CD56bright: 50%, CD161+CD5+: 35.2%, CD161+CD5-: 22.6%, CD161-CD5+: 15.9%) and demonstrate that CD161-CD5+ ILC1-like cells predominantly generate NKG2A-KIR+ NK cells (92.3%), representing advanced differentiation stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by single-cell cloning experiments shown in Figure 7a-b. The data demonstrate clonal NK cell differentiation potential with subset-specific differentiation outcomes, confirming the progenitor nature of ILC1-like cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "NK cell clones derived from ILC1-like cells show functional cytotoxicity with CD107a mobilization upon K562 stimulation, with CD161+CD5+ cells showing highest CD107a expression (49.2%). Elevated baseline CD107a in ILC1-like-derived clones may be due to pre-activation by OP9-DL1 feeder cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by CD107a degranulation assays on clonal NK cells shown in Figure 7c-d. The functional data confirm cytotoxic potential, though the interpretation of elevated baseline CD107a (C64) is speculative and appropriately presented as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ILC1-like NKPs have a lin-CD127+CD117-CRTH2- phenotype matching ILC1 but lack TBET expression. Both ILC1-like subsets possess NK progenitor potential with high clonogenic frequency and preferentially generate advanced NKG2A-KIR+ NK cells, distinct from established CD34+/CD117+ NKPs. Multiple lines of evidence suggest a true progenitor relationship to NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 synthesize multiple experimental findings including phenotypic characterization, differentiation assays, and single-cell cloning. The conclusion of a progenitor relationship (C70) is an inference but is well-supported by converging evidence from transcriptomic, epigenetic, functional, and differentiation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The absence of CD117 on ILC1-like NKPs represents an unusual feature for NK progenitors, distinguishing them from previously described CD117+ NKPs and multipotent ILCp, and suggesting they are at a more advanced developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by phenotypic characterization and comparison with literature. Claim C73 is a hypothesis but is reasonably based on phenotypic and functional characteristics. The lack of CD117 is clearly demonstrated and the comparison with other progenitor types is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The upstream progenitor of ILC1-like NK cells is currently unknown. A linear developmental relationship between CD117+ NKPs and ILC1-like NKPs appears unlikely based on differential capacity to generate NKG2A-KIR+ NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 acknowledges a knowledge gap. Claim C75 is an inference based on comparison of differentiation outcomes from different progenitor types. The reasoning is sound though the conclusion is tentative and appropriately presented as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The T cell signature in ILC1-like cells is consistent with previous reports and could indicate thymic origin. Previous work proposed that NKPs develop from progenitors with failed T-cell programs, and it is speculated that T-cell failure might lead to release of CD5+ ILC1-like NKPs from thymus. Similar cells have been previously found in thymus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76, C78, C80-C81 cite previous literature appropriately. Claims C77 and C79 are speculations about thymic origin based on T cell marker expression. While the speculation is reasonable given the T cell signature, direct evidence of thymic origin is lacking. The claims appropriately distinguish between established findings and speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The data support a non-linear 'branched' model of NK cell development where CD56bright NK cells preferentially generate NKG2A+CD56dim NK cells while ILC1-like cells preferentially generate NKG2A-KIR+ NK cells, challenging the prevailing linear developmental model. This is supported by differential differentiation outcomes and shared T cell markers between ILC1-like cells and CD56dim NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C84-C85 cite established models. Claims C83, C86-C88 are supported by differentiation experiments. Claims C89-C90 present an inference of a branched model based on the experimental data. While the branched model is an interpretation, it is well-supported by the differential differentiation outcomes and marker expression patterns. The conclusion appropriately challenges existing models with new data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Speculation on developmental trajectories suggests CD5+CD161- cells are the most immature subset (with T cell markers and chemokine receptors), CD5-CD161+ are more differentiated (lacking T cell markers but with effector function), and CD5+CD161+ are intermediate (with both T cell markers and IFN\u03b3 function).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 are explicitly presented as speculation based on phenotypic and functional characteristics. While the proposed developmental trajectory is logical and consistent with the data, it lacks direct lineage tracing or temporal evidence. The speculation is reasonable but requires validation through additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The decline of ILC1-like cells with gestational age is hypothesized to result from migration to secondary lymph nodes for NK cell maturation, supported by CCR7 expression and NOTCH dependence. SLN provides necessary signals (NOTCH ligands, IL-15) for maturation including KIR expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 are speculations based on observed decline and chemokine receptor expression. Claim C98 cites established knowledge. Claim C99 is an inference connecting experimental observations with known biology. While the model is logical and consistent with the data, direct evidence of migration to SLN and subsequent maturation is lacking. The hypothesis requires validation through tracking studies or analysis of SLN-resident cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Summary: ILC1-like cells are distinct from NK cells on multiple levels but constitute potent NK progenitors distinguished by CD117 absence and T cell marker presence. They generate diversified KIR+ NK cell repertoires and are found in both CB and PB. The study suggests high spatiotemporal dynamics during perinatal development driven by migratory properties, with ILC1-like NKPs traveling to SLN for maturation before returning to circulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are summary statements supported by the comprehensive experimental data. Claim C104 is an inference based on gestational age analysis and chemokine receptor patterns. Claims C105-C106 are speculations about the developmental model. While the overall model contains speculative elements, the core findings about ILC1-like cells as NK progenitors are well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  }
+]

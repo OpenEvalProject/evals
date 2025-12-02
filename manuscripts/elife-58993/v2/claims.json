@@ -1,0 +1,847 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Almost three-quarters of the expressed genes in Brassica rapa exhibited circadian rhythmicity.",
+    "claim_type": "EXPLICIT",
+    "source": "Strikingly, almost three-quarters of the expressed genes exhibited circadian rhythmicity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated in the abstract and supported by experimental data from RNA-seq experiments showing 74% of expressed genes cycling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Using a Benjamini-Hochberg corrected p-value of 0.01, 16,447 high confidence circadian regulated genes were identified from the two datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a Benjamini-Hochberg corrected p-value of 0.01, we identified 16,447 high confidence circadian regulated genes from the two datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct result from the RAIN analysis of the RNA-seq data with specific statistical cutoffs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "74% of the 22,204 genes that were expressed in the RNA-seq datasets passed the cutoff for cycling in one or both conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the 22,204 genes that were expressed in the RNA-seq datasets, 74% of them passed our cutoff for cycling in one or both conditions, indicating retention of circadian regulation of the transcriptome following WGD in B. rapa.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is calculated from the experimental data showing the proportion of expressed genes that exhibit circadian cycling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The weighted gene correlation network analysis (WGCNA) resulted in 14 modules in the LD dataset and 10 modules in the HC dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "This resulted in 14 modules in the LD dataset and 10 modules in the HC dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct result from applying WGCNA to the expression data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "13,850 genes (~84%) have a phase difference of less than or equal to 4 hr between LD and HC entrainment.",
+    "claim_type": "EXPLICIT",
+    "source": "13,850 genes (~84%) have a phase difference of less than or equal to 4 hr.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is calculated from the phase difference distribution shown in Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Genes in LD_03 and HC_02 were both significantly enriched (FDR adjusted p-value<0.01) for photosynthetic processes and response to abiotic stress.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, genes in LD_03 and HC_02 were both significantly enriched (FDR adjusted p-value<0.01) for photosynthetic processes and response to abiotic stress, consistent with their morning phased expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on GO ontology enrichment analysis of the module genes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Genes in LD_07 and HC_07 were significantly enriched for protein phosphorylation.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, genes in LD_07 and HC_07 were significantly enriched for protein phosphorylation suggesting a time-of-day regulation of this process, as in Arabidopsis (e.g. Choudhary et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on GO ontology enrichment analysis and compared to known patterns in Arabidopsis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Using a p-value cutoff of 0.01, 1713 genes (11% of all cycling genes) were identified as having altered patterns following LD versus HC entrainment.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a p-value cutoff of 0.01, we identified just 1713 genes, or 11% of all cycling genes, that have altered patterns following LD versus HC entrainment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the DiPALM differential pattern analysis comparing LD and HC datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The mean expression level for the set of retained multi-copy paralogs was significantly higher (p-value=0.0 based on one-way ANOVA with Tukey's test) than for genes retained in a single copy.",
+    "claim_type": "EXPLICIT",
+    "source": "The mean expression level for the set of retained multi-copy paralogs was significantly higher (p-value=0.0 based on one-way ANOVA with Tukey's test) than for genes retained in a single copy (Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on statistical analysis of expression levels shown in Figure 2A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The low expressed paralog has significantly higher (p-value=0.0 based on one-way ANOVA with Tukey's test) average expression levels compared to genes retained in a single copy.",
+    "claim_type": "EXPLICIT",
+    "source": "Surprisingly, the difference is observed in the low expressed paralog where these duplicated genes have significantly higher (p-value=0.0 based on one-way ANOVA with Tukey's test) average expression levels compared to the genes retained in a single copy, suggesting that although the duplicate paralogs do appear to exhibit gene dosage, their overall expression is retained at a higher level than the expression of single-copy genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on statistical comparison of expression levels between low-expressed paralogs and single-copy genes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Modules with phasing from morning to midday tend to be enriched for multi-copy genes, while evening and night phased modules were depleted for multi-copy genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Surprisingly, we found that modules with phasing from morning to midday tend to be enriched for multi-copy genes. By contrast, evening and night phased modules were depleted for multi-copy genes (Figure 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on hypergeometric test results shown in Figure 2D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Morning-phase copied genes are significantly enriched (FDR adjusted p-value<0.01) for photosynthesis, translation, and response to abiotic stimulus genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Both of these sets appear to be representative of the whole modules from which they came with the morning-phase copied genes being significantly enriched (FDR adjusted p-value<0.01) for photosynthesis, translation, and response to abiotic stimulus genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on GO enrichment analysis of morning-phased multi-copy genes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Evening-phase multi-copy genes were significantly enriched for protein phosphorylation and glycosinolate biosynthesis genes.",
+    "claim_type": "EXPLICIT",
+    "source": "The evening-phase multi-copy genes were significantly enriched for protein phosphorylation and glycosinolate biosynthesis genes (Figure 2D, Supplementary file 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on GO enrichment analysis of evening-phased multi-copy genes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "3743 (84%) paralogous pairs showed differential median expression and 1883 (42%) pairs exhibited differential expression patterns (p-value<0.01).",
+    "claim_type": "EXPLICIT",
+    "source": "We found 3743 (84%) pairs with differential median expression and 1883 (42%) pairs exhibiting differential expression patterns (p-value<0.01), the vast majority (1607/1883; 85%) of which showed both differential median expression and pattern (Supplementary file 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on DiPALM analysis of 4433 paralogous pairs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The majority of the pattern change among paralogous pairs is the result of an altered phase of peak expression.",
+    "claim_type": "EXPLICIT",
+    "source": "From the heatmap visualization, it is clear that the majority of the pattern change among paralogous pairs is the result of an altered phase of peak expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from visual inspection of the heatmap in Figure 3A showing phase differences.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "49 TF pairs exhibited significant enrichment (p-value<0.05) for one B. rapa TF (assigned Br1) being more similar to Arabidopsis than its paralog.",
+    "claim_type": "EXPLICIT",
+    "source": "49 TF pairs exhibited significant enrichment (p-value<0.05) for one B. rapa TF (assigned Br1) being more similar to Arabidopsis than its paralog (Supplementary file 5), suggesting possible divergence in function between these TFs (Figure 4C and D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on permutation-based testing of target gene overlap between B. rapa and Arabidopsis GRNs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Among the list of 49 TFs, six are part of the core circadian clock (ELF3, ELF4, PRR9, PRR7, PRR5, and TOC1), and a seventh, RVE1, integrates the circadian clock and auxin pathways.",
+    "claim_type": "EXPLICIT",
+    "source": "Among the list of 49 TFs, six are part of the core circadian clock (ELF3, ELF4, PRR9, PRR7, PRR5, and TOC1), and a seventh, RVE1, integrates the circadian clock and auxin pathways (Rawat et al., 2009; McClung, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This identifies specific TFs from the analysis and cites their known functions.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Based on the predicted targets of these TFs in the GENIE3 model, there are 11,559 B. rapa and 3387 Arabidopsis genes regulated by these 49 TFs.",
+    "claim_type": "EXPLICIT",
+    "source": "Based on the predicted targets of these TFs in the GENIE3 model, there are 11,559 B. rapa and 3387 Arabidopsis genes regulated by these 49 TFs, providing further support for an expansion of the circadian network in B. rapa.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is calculated from the GENIE3 network analysis results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "68 significant TFs (p-value<0.05) were identified in the CNS network, 35 of which overlapped with the 49 TFs identified based on target gene overlap.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 68 significant TFs (p-value<0.05) in the CNS network (Figure 4E and F, Supplementary file 5), 35 of which overlapped with the 49 TFs identified based on target gene overlap (Figure 4G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on the CNS-based GRN analysis and comparison with gene-based GRN results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Results from the BLAST suggest very little association between amino acid sequence and TF divergence.",
+    "claim_type": "EXPLICIT",
+    "source": "Results from the BLAST suggest very little association between amino acid sequence and TF divergence (Figure 4I) suggesting that changes to regulatory regions associated with target genes are likely to be a major driver of TF divergence.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on protein BLAST score comparison between Br1 and Br2 TFs against Arabidopsis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "For all 12 TFs tested, there was three- to fivefold greater enrichment for motifs in the CNS elements compared to the full length and 2 kb promoter background sets.",
+    "claim_type": "EXPLICIT",
+    "source": "For all 12 TFs tested, we found three\u2013 to fivefold greater enrichment for motifs in the CNS elements compared to the full length and 2 kb promoter background sets (Figure 4\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on HOMER motif analysis comparing CNS regions to other genomic regions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Out of 4664 total paralogous pairs where two copies show detectable expression levels, 3259 pairs had significantly different patterns under control conditions (p-value<0.01).",
+    "claim_type": "EXPLICIT",
+    "source": "Out of 4664 total pairs where two copies show detectable expression levels, 3259 pairs had significantly different patterns under control conditions (p-value<0.01).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on DiPALM analysis of the drought time-course dataset under well-watered conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "77% of paralogous pairs (3602) had significantly different median expression levels in the drought dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, 77% of pairs (3602) had significantly different median expression levels (Supplementary file 6).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on DiPALM analysis of median expression in the drought dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Of the total paralogous pairs, 50% had both genes identified as circadian-regulated and an additional 35% had one circadian-regulated gene.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the total pairs, 50% had both genes identified as circadian-regulated and an additional 35% had one circadian-regulated gene, emphasizing the importance of the circadian clock in diel conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is calculated from comparing circadian and diel datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "3891 genes showed a significant pattern change and only 327 showed median expression changes (p-value<0.01) in response to drought.",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 3891 with a significant pattern change and only 327 with median expression changes (p-value<0.01; Supplementary file 7).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on DiPALM analysis of all expressed genes in the drought dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The differentially patterned paralogous copies were enriched for genes with drought responsive patterns (p-value 0.0005).",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, the differentially patterned copies were enriched for genes with drought responsive patterns (p-value 0.0005; Figure 5A), whereas copies with differential median expression level were not (p-value 0.6457; Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on permutation testing of drought-responsive gene enrichment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Results from the permutations indicated significant enrichment for pairs in which one member is drought responsive (p-value<0.0001) and no enrichment for both copies being drought responsive (p-value 0.1852).",
+    "claim_type": "EXPLICIT",
+    "source": "Results from the permutations indicated significant enrichment for pairs in which one member is drought responsive (p-value<0.0001) and no enrichment for both copies being drought responsive (p-value 0.1852; Figure 5B and C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on permutation testing of drought response patterns among paralogous pairs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Of the 764 pairs with a drought-responsive paralog, the drought responsive gene was the lower expressing member in 420 pairs and the higher expressing member in 344 pairs in the control conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the 764 pairs with a drought-responsive paralog, the drought responsive gene was the lower expressing member in 420 pairs and the higher expressing member in 344 pairs in the control conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is calculated from the drought response analysis comparing expression levels.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Transcript abundance, whether at a single time point or combined across a time series, is not a reliable predictor of a gene's functional importance.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, we conclude that transcript abundance, whether at a single time point or combined across a time series, is not a reliable predictor of a gene's functional importance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the observation that drought-responsive genes are not consistently the higher-expressed paralogs.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "A standard linear model test at each time point comparing well-watered and drought treatments did not detect significant transcript abundance differences for any genes.",
+    "claim_type": "EXPLICIT",
+    "source": "As validation of this, we ran a standard linear model test at each time point comparing well-watered and drought treatments and did not detect significant transcript abundance differences for any genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on traditional differential expression analysis at individual time points.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Brassica rapa underwent whole-genome triplication since diverging from its common ancestor with Arabidopsis.",
+    "claim_type": "EXPLICIT",
+    "source": "B. rapa, a morphologically diverse crop, has undergone whole-genome triplication since diverging from its common ancestor with Arabidopsis resulting in an expansion of gene copy number.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about B. rapa genome evolution.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The divergence of Brassica and Arabidopsis from their common ancestor occurred around 24 million years ago.",
+    "claim_type": "EXPLICIT",
+    "source": "Examination of the orthologs of known circadian clock genes in Arabidopsis revealed preferential retention of these genes in B. rapa following the triplication and extensive fractionation of the genome after the divergence of Brassica and Arabidopsis from their common ancestor around 24 million years ago (MYA; Lou et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Lou et al., 2012.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Circadian clock genes were preferentially retained in B. rapa following genome triplication.",
+    "claim_type": "EXPLICIT",
+    "source": "Examination of the orthologs of known circadian clock genes in Arabidopsis revealed preferential retention of these genes in B. rapa following the triplication and extensive fractionation of the genome after the divergence of Brassica and Arabidopsis from their common ancestor around 24 million years ago (MYA; Lou et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Lou et al., 2012.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The preferential retention of clock genes is consistent with their involvement in protein complexes and regulation of critical pathways making them sensitive to dosage effects.",
+    "claim_type": "EXPLICIT",
+    "source": "The preferential retention of clock genes is consistent with their involvement in protein complexes and regulation of critical pathways making them sensitive to dosage effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the gene dosage balance hypothesis.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The gene dosage balance hypothesis proposes that duplication of the entire genome is favored over single or chromosome level duplications because it maintains the appropriate concentration of gene products.",
+    "claim_type": "EXPLICIT",
+    "source": "The gene dosage balance hypothesis proposes that duplication of the entire genome is favored over single or chromosome level duplications because it maintains the appropriate concentration of gene products (Conant et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Conant et al., 2014.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "In yeast, genes of protein complexes tend to be lost simultaneously with their interacting proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "This is supported by studies in yeast where genes of protein complexes tend to be lost simultaneously with their interacting proteins (Pires and Conant, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Pires and Conant, 2016.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Different B. rapa morphotypes exhibit differential circadian clock parameters, as assessed by leaf movement analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Different B. rapa morphotypes (e.g. leafy vegetable, turnip, and oilseed) exhibit differential circadian clock parameters, as assessed by leaf movement analysis (Yarkhunova et al., 2016), strongly supporting additional within-species variation in the transcriptomic network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Yarkhunova et al., 2016.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Circadian clock variation has contributed to B. rapa diversification.",
+    "claim_type": "EXPLICIT",
+    "source": "Preliminary studies have shown diversity in circadian clock parameters among morphotypes that correlate with various physiology measures suggesting that circadian clock variation has contributed to B. rapa diversification (Yarkhunova et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Yarkhunova et al., 2016 and involves inference about the role of clock variation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Many domestication traits that facilitated the geographic expansion of crops are due to alterations in circadian clock genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Examples of natural variation in plant circadian function are accumulating, as is evidence that many domestication traits that facilitated the geographic expansion of crops are due to alterations in circadian clock genes (Nakamichi, 2015; M\u00fcller et al., 2016; M\u00fcller et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from multiple sources (Nakamichi, 2015; M\u00fcller et al., 2016; M\u00fcller et al., 2018).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The circadian clock responds to environmental conditions to set circadian rhythms to local time.",
+    "claim_type": "EXPLICIT",
+    "source": "The circadian clock responds to environmental conditions to set these circadian rhythms to local time (Greenham and McClung, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Greenham and McClung, 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Circadian rhythms are important for photosynthesis, starch metabolism, biomass accumulation, and reproduction.",
+    "claim_type": "EXPLICIT",
+    "source": "Many lines of evidence support the importance of circadian rhythms to plant biology, including photosynthesis, starch metabolism, biomass accumulation, and reproduction (Greenham and McClung, 2015; Millar, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Greenham and McClung, 2015 and Millar, 2016.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "DiPALM performed on par with the top three methods evaluated by Spies et al. in benchmark testing.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this, DiPALM performed on par with the top three methods evaluated by Spies et al. (Supplementary file 8) and DiPALM remains the only method to use a linear model-based framework that allows for complex contrasts between any number of different treatments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on benchmarking analysis using simulated datasets from Spies et al., 2019.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "When a pairwise approach is applied to the drought dataset, it yields no significantly differentially expressed genes, whereas DiPALM detects 3891 genes with differential patterning.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we show that when this 'pairwise' approach is applied to a real dataset involving mild drought response, it yields no significantly differentially expressed genes, whereas DiPALM detects 3891 genes with differential patterning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct comparison of methods applied to the same dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The 2 hr sampling regimen provided the resolution to capture more cycling genes than possible with typical 4 hr sampling.",
+    "claim_type": "EXPLICIT",
+    "source": "The 2 hr sampling regimen provided the resolution to capture more cycling genes than possible with typical 4 hr sampling (Hughes et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Hughes et al., 2017 and relates to experimental design.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The B. rapa R500 clock has a slightly shorter period than Arabidopsis Col-0.",
+    "claim_type": "EXPLICIT",
+    "source": "The B. rapa R500 clock has a slightly shorter period than Arabidopsis Col-0 that results in altered phasing among genes that is not indicative of divergence in function but arises merely from the different paces of the Arabidopsis and B. rapa oscillators.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the phase differences observed in Figure 4\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "CNSs are as predictive as expression dynamics for identifying Arabidopsis-like B. rapa TFs.",
+    "claim_type": "EXPLICIT",
+    "source": "This is consistent with the results from the GRN analysis showing that CNSs are as predictive as expression dynamics and contain important regulatory elements.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the overlap between gene-based and CNS-based GRN analyses.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Changes to regulatory regions associated with target genes are likely to be a major driver of TF divergence.",
+    "claim_type": "EXPLICIT",
+    "source": "Results from the BLAST suggest very little association between amino acid sequence and TF divergence (Figure 4I) suggesting that changes to regulatory regions associated with target genes are likely to be a major driver of TF divergence.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is inferred from the lack of correlation between protein sequence similarity and functional divergence.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The expansion of gene content through whole genome duplication, tandem duplication, or transposed duplicates has been predicted to account for the evolution of morphological complexity.",
+    "claim_type": "EXPLICIT",
+    "source": "The expansion of gene content through whole genome duplication (WGD), tandem duplication, or transposed duplicates has been predicted to account for the evolution of morphological complexity (Freeling and Thomas, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Freeling and Thomas, 2006.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The conservation of circadian oscillators across the animal and plant lineages supports a role for these rhythms in maintaining fitness and evolving new regulatory pathways.",
+    "claim_type": "EXPLICIT",
+    "source": "The conservation of circadian oscillators across the animal and plant lineages supports a role for these rhythms in maintaining fitness and evolving new regulatory pathways to fulfill that role (Bell-Pedersen et al., 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Bell-Pedersen et al., 2005.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "In Arabidopsis, the majority of duplicated genes show divergent expression.",
+    "claim_type": "EXPLICIT",
+    "source": "In Arabidopsis, the majority of duplicated genes show divergent expression (Blanc and Wolfe, 2004; Haberer et al., 2004), and this is particularly evident among abiotic and biotic stress-responsive genes (Casneuf et al., 2006; Ha et al., 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from multiple sources (Blanc and Wolfe, 2004; Haberer et al., 2004; Casneuf et al., 2006; Ha et al., 2007).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Homeologous genes undergo expression partitioning among tissues in Arabidopsis, rice, and poplar.",
+    "claim_type": "EXPLICIT",
+    "source": "This is consistent with observations in Arabidopsis, rice, and poplar, that homeologous genes undergo expression partitioning among tissues (De Smet and Van de Peer, 2012; Langfelder and Horvath, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from De Smet and Van de Peer, 2012 and Langfelder and Horvath, 2012.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Expression partitioning is also seen in the polyploids Gossypium hirsitum and Tragopogon mirus.",
+    "claim_type": "EXPLICIT",
+    "source": "This is also seen in the polyploids, Gossypium hirsitum and Tragopogon mirus (Adams et al., 2003; Buggs et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Adams et al., 2003 and Buggs et al., 2010.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Gated stress response has been characterized in several plant species including Arabidopsis, poplar, rice, and B. rapa.",
+    "claim_type": "EXPLICIT",
+    "source": "Gated stress response has been characterized in several plant species including Arabidopsis, poplar, rice, and B. rapa (Fowler et al., 2005; Wilkins et al., 2009; Wilkins et al., 2010; Greenham et al., 2017; Grinevich et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from multiple sources (Fowler et al., 2005; Wilkins et al., 2009; Wilkins et al., 2010; Greenham et al., 2017; Grinevich et al., 2019).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The PRR genes in Arabidopsis have a temporally sequential expression pattern with PRR9 expressed just after dawn followed by PRR7, PRR5, PRR3, and finally PRR1/TOC1 in the evening.",
+    "claim_type": "EXPLICIT",
+    "source": "The PRR genes in Arabidopsis have a temporally sequential expression pattern with PRR9 expressed just after dawn followed by PRR7, PRR5, PRR3, and finally PRR1/TOC1 in the evening (Matsushika et al., 2000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Matsushika et al., 2000.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The PRR proteins appear to retain some common functions (e.g. repression of expression of CCA1, LHY, and TOC1) but their diverged expression patterns also allow differential contributions to the circadian network.",
+    "claim_type": "EXPLICIT",
+    "source": "The PRR proteins appear to retain some common functions (e.g. repression of expression of CCA1, LHY, and TOC1) but their diverged expression patterns also allow differential contributions to the circadian network (Nakamichi, 2011; Nakamichi et al., 2012; Liu et al., 2013; Liu et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from multiple sources (Nakamichi, 2011; Nakamichi et al., 2012; Liu et al., 2013; Liu et al., 2016).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Evening phased genes are likely to be greatly understudied because most experiments are performed during the day.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it should be noted that in general, evening phased genes are likely to be greatly understudied because most experiments are performed during the day (Grinevich et al., 2019), which could artifactually reduce the identification of abiotic stress (and other) genes in our evening modules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Grinevich et al., 2019 and involves speculation about experimental bias.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The genome-wide expansion of expression domains among retained paralogs is biologically meaningful for drought stress response.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, we observed enrichment for only one but not both paralogs responding to drought stress in B. rapa. This suggests that the genome-wide expansion of expression domains among paralogs is biologically meaningful, in this case for drought stress response.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the enrichment analysis of drought-responsive paralogs.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Temporal, spatial, and conditional regulation can reveal new expression dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "More broadly, these results have important implications for how we capture and characterize transcriptomic responses or 'states' when making predictions about paralog function. Temporal, spatial, and conditional regulation can reveal new expression dynamics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general conclusion drawn from the study's findings.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The 2017 Nobel prize in physiology or medicine was awarded to Jeffrey Hall, Michael Rosbash, and Mike Young for their discoveries of the molecular mechanisms generating circadian rhythms in Drosophila.",
+    "claim_type": "EXPLICIT",
+    "source": "The importance of daily rhythms was recognized with the 2017 Nobel prize in physiology or medicine to Jeffrey Hall, Michael Rosbash, and Mike Young for their discoveries of the molecular mechanisms generating circadian rhythms in Drosophila (Rosbash, 2017; Young, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from Rosbash, 2017 and Young, 2018.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Brassica rapa offers an excellent model system for studies in crops because it is a member of the Brassicaceae and a close relative of Arabidopsis.",
+    "claim_type": "EXPLICIT",
+    "source": "The crop plant Brassica rapa offers an excellent model system for studies in crops. It is a member of the Brassicaceae and a close relative of Arabidopsis making comparative studies feasible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the phylogenetic relationship.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The morphological diversity in B. rapa with turnip, Chinese cabbage, pak choi, leafy and oil-type varieties provides a wealth of phenotypic traits to study in one species.",
+    "claim_type": "EXPLICIT",
+    "source": "The morphological diversity in B. rapa with turnip, Chinese cabbage, pak choi, leafy and oil-type varieties provides a wealth of phenotypic traits to study in one species allowing for broad applicability to other crops.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about B. rapa diversity.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Transcriptome studies have revealed extensive circadian control of transcript abundance resulting in time of day changes in expression.",
+    "claim_type": "EXPLICIT",
+    "source": "Transcriptome studies have revealed extensive circadian control of transcript abundance resulting in time of day changes in expression (Covington and Harmer, 2007; Mockler et al., 2007; Michael et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is cited from multiple sources (Covington and Harmer, 2007; Mockler et al., 2007; Michael et al., 2008).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Dynamic changes in metabolism and physiology must be driven by dynamic changes in gene expression and ultimately protein regulation and activity.",
+    "claim_type": "EXPLICIT",
+    "source": "Dynamic changes in metabolism and physiology must be driven by dynamic changes in gene expression and ultimately protein regulation and activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general principle of molecular biology.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  }
+]

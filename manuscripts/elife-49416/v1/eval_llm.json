@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "CPT treatment of wild-type cDC2s reprograms them from a Th2-inducing to a Th17-inducing phenotype, decreasing IL-4 and increasing IL-17A production in co-cultured OT-II T cells. This is accompanied by decreased Gata3 and increased Nr1f3 expression in T cells, and decreased Irf4 and Klf4 expression in cDC2s, while Irf8 remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support this result: cytokine measurements (C8-C10), T cell lineage marker changes (C11-C12), IL-17 reporter assays (C13), and time-course qPCR of transcription factors (C14-C16). The data are internally consistent and use appropriate controls. Statistical significance is reported with multiple replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "CPT treatment specifically affects cDC2s but not cDC1s. While cDC1s show Crem induction confirming cAMP pathway activation, they do not exhibit changes in Irf4/Klf4 expression or altered T cell differentiation. cDC2s have higher baseline IRF4 and IRF5 but lower IRF8 compared to cDC1s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-type specificity is well-demonstrated through parallel experiments with cDC1s and cDC2s (C17-C18). Baseline transcription factor differences between DC subsets are documented by flow cytometry (C19-C22), providing mechanistic context for differential responses. This strengthens the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Memory Th2 cells (Th2EM) can be reprogrammed to express Th17 characteristics when co-cultured with CPT-treated cDC2s, showing decreased IL-4, increased IL-17A, decreased Gata3, and increased Nr1f3/Nr1f1 expression, suggesting DC-mediated T cell plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fate-mapping experiment (C23-C27) demonstrates T cell plasticity induced by DC reprogramming. The use of sorted T1/ST2+ cells and IL-17GFP reporters provides strong evidence. However, the manuscript notes these may be Th2-Th17 hybrid cells rather than complete reprogramming, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Genetic deletion of Gnas in CD11c+ cells (Gnas\u0394CD11c mice) results in elevated basal Irf4 and Klf4 levels in cDC2s and enhanced Th2 responses (9.7-fold increase in IL-4). CPT treatment suppresses this phenotype and restores Th17-inducing capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic model provides strong validation of the cAMP pathway's role (C28-C33). The ability of CPT to override the genetic deficiency demonstrates that elevated cAMP can compensate for reduced G\u03b1s signaling. Co-housing controls address potential microbiome confounding. This is compelling genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The cAMP-mediated repression of Irf4 requires PKA and CREB but not EPAC, as demonstrated by pharmacological inhibitor studies showing that Rp-cAMP (PKA inhibitor) and 666-15 (CREB inhibitor) but not CE3F4 (EPAC inhibitor) block PGE2-induced Irf4 suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological dissection (C34-C36) clearly delineates the signaling pathway. Multiple cAMP agonists produce similar effects (Figure 1-supplement 4), and specific inhibitors demonstrate PKA/CREB dependence. This is standard and well-executed mechanistic work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Human DC-like cells derived from MUTZ-3, THP-1, and HL-60 cell lines respond to CPT with decreased Irf4 and Klf4 expression, suggesting conservation of this pathway in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C37 shows the effect in human cell lines, these are transformed leukemia-derived lines that may not fully represent primary human DCs. The manuscript lacks validation in primary human DCs or clinical samples. The conservation is suggestive but requires validation in physiologically relevant human cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Curdlan, a PRR ligand for Dectin-1, induces a pro-Th17 phenotype in cDC2s by repressing Irf4 and Klf4 and inducing Il23a. This effect is CREB-dependent but PKA-independent, demonstrating convergence of PRR-dependent and cAMP-independent pathways on CREB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The curdlan experiments (C38-C44) demonstrate an alternative pathway to the same endpoint. Dectin-1 expression is confirmed (C38), functional effects documented (C39-C42), and mechanistic dissection shows CREB but not PKA dependence (C43-C44). This elegantly demonstrates pathway convergence and is a key conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "cDC1s do not express or express very low levels of Dectin-1 and do not respond to curdlan treatment with changes in T cell cytokine production or Irf4/Il23a expression, demonstrating cell-type specificity of the PRR-dependent pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative control with cDC1s (C45-C47) strengthens the specificity argument for both the PRR pathway and the cDC2-specific response. This is important for establishing that the effects are not general DC responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "IRF4-deficient cDC2s (Irf4i and IRF4\u0394CD11c) spontaneously induce Th17 differentiation without additional stimulation. Doxycycline-induced restoration of IRF4 in Irf4i cells reverses this phenotype, inhibiting IL-17A and promoting IL-5 production with corresponding changes in T cell lineage factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic gain- and loss-of-function experiments (C48-C56) provide strong causal evidence for IRF4's role. The inducible system allows temporal control, and the phenotypic reversal upon IRF4 restoration is compelling. Two independent genetic models (Irf4i and IRF4\u0394CD11c) show consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "IRF4-deficient cDC2s induce Th17 differentiation with minimal increases in IL-1\u03b2 or IL-6, suggesting an IL-1\u03b2/IL-6-independent mechanism of Th17 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C57 shows minimal IL-1\u03b2/IL-6 induction, the manuscript does not definitively establish the mechanism of Th17 induction in the absence of these canonical cytokines. The identification of secreted proteins (Lcn2, Lrg1, etc.) in the transcriptomic analysis is suggestive but requires functional validation. This is an interesting observation requiring follow-up.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "CPT treatment of cDC2s from Irf5-/- mice does not induce Th17 responses, demonstrating that IRF5 is required for the cAMP-mediated pro-Th17 phenotype despite Irf4 and Klf4 being repressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C58 demonstrates that IRF4 repression alone is insufficient for Th17 induction, requiring IRF5 expression. This is a critical mechanistic insight showing that both loss of IRF4 and presence of IRF5 are necessary. The experiment is straightforward and the conclusion clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "RNAseq analysis reveals that CPT treatment alters 2991 genes in cDC2s, with significant overlap (745 genes) with genes altered by IRF4 loss. CREB1 is identified as the predominant transcription factor driver in all three conditions (CPT, Irf4-/-, and Dox-treated Irf4i cells), implicating CREB1 as a cofactor for IRF4-regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcriptomic analysis (C59-C67) is comprehensive and uses appropriate statistical methods (FDR < 0.05). The overlap analysis and transcriptional network analysis are well-executed. The finding that only 24% of Irf4-/- genes are restored by IRF4 re-expression (C62) is surprising and appropriately noted, suggesting complex dose-dependent or context-dependent IRF4 functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C105"
+    ],
+    "result": "ATACseq analysis shows minimal changes in chromatin accessibility with CPT treatment or IRF4 manipulation (only 1 significant peak in Irf4-/- cells, 9 changes with IRF4 restoration), suggesting that cDC2 plasticity occurs without major chromatin remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ATACseq data (C68-C70) are clearly presented with appropriate statistical correction. The conclusion (C105) that plasticity occurs without gross chromatin changes is well-supported. This suggests the mechanism involves transcription factor redistribution rather than chromatin remodeling, which is mechanistically informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ChIPseq analysis reveals that only 7% of CPT-regulated genes contain CREB binding sites, while 65% have IRF4 sites and 74% have KLF4 sites. The presence of IRF4 binding sites predicts both up- and down-regulation by CPT (p<10-5), suggesting cAMP regulation is mediated through IRF4 rather than direct CREB binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIPseq integration with RNAseq (C71-C75) is sophisticated and uses appropriate statistical methods (BETA analysis). The finding that CREB binding is not predictive while IRF4 binding is highly predictive (C75) strongly supports the indirect mechanism through IRF4 repression. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "IRF4 binding sites fall into three categories: 50% ETS:IRF motifs (EICEs), 24% duplicated IRF motifs (ISREs), and 23% bZIP motifs (AICEs). 106 super enhancers with multiple IRF4 binding sites were identified, including one at the Il6 locus with IRF4, BATF, and PU.1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The motif analysis (C76-C78) and super enhancer identification (C79-C80) are thorough and use established methods. The Il6 super enhancer example provides a concrete illustration. This characterization of IRF4 binding modes is valuable for understanding its regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Adoptive transfer of HDM-pulsed, CPT- or curdlan-treated cDC2s into recipient mice increases IL-17A production in lungs and airways, increases neutrophil infiltration with elevated Cxcl2/Cxcl3 expression, decreases eosinophil-related gene expression (Cd24a/Dpp4), and increases airway resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo experiments (C81-C86) demonstrate physiological relevance of the in vitro findings. Multiple readouts (cytokines, cellular infiltration, gene expression, airway function) are consistent with a Th17-driven inflammatory response. The experimental design with appropriate controls and multiple challenge antigens (HDM and OVA) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Integration of genomic data leads to the conclusion that cAMP regulation of genes in cDC2s is mediated by alterations in IRF4 expression rather than direct CREB action. IRF4 functions as a major repressor of cAMP-stimulated gene expression, with CREB1 acting as a cofactor for IRF4-regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims (C106-C111) are well-supported by the integrated genomic analyses. The logic is sound: (1) IRF4 loss causes gene upregulation, (2) IRF4 binding predicts cAMP regulation, (3) IRF4 binding predicts gene increases in Irf4-/- cells. The conclusion of indirect regulation via IRF4 repression is parsimonious and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose a model where cDC2 cells include two subpopulations: cDC17 (CD11c+, CD11b+, IRF4-/low, IRF5+) and cDC2 (CD11c+, CD11b+, IRF4+, KLF4+). Both PRR-mediated and cAMP-mediated pathways converge on CREB to provide DC plasticity. IRF4 reduction is necessary but not sufficient for Th17 induction, which also requires IRF5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proposed model (C112-C116) integrates all major findings into a coherent framework. The convergence on CREB (C113) is well-demonstrated by the curdlan experiments. The necessity of both IRF4 loss and IRF5 presence (C115-C116) is supported by genetic experiments. The cDC2/cDC17 classification (C112) is a reasonable interpretation though requires validation by additional markers and functional criteria.",
+    "result_type": "MAJOR"
+  }
+]

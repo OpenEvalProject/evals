@@ -1,0 +1,2300 @@
+{
+  "submission": {
+    "id": "5e5d7827-77bd-49bc-9bdc-2587f0638238",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:47:53.346824Z",
+    "updated_at": "2025-12-02T21:47:53.346824Z"
+  },
+  "content": [
+    {
+      "id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "submission_id": "5e5d7827-77bd-49bc-9bdc-2587f0638238",
+      "content_type": "manuscript",
+      "content_text": "# EHMT2 epigenetically suppresses Wnt signaling and is a potential target in embryonal rhabdomyosarcoma\n\n## Authors\n\n- Ananya Pal<sup>1</sup>\n- Jia Yu Leung<sup>1</sup> ([ORCID: 0000-0003-1317-8396](https://orcid.org/0000-0003-1317-8396))\n- Gareth Chin Khye Ang<sup>1</sup>\n- Vinay Kumar Rao<sup>1</sup>\n- Luca Pignata<sup>2</sup>\n- Huey Jin Lim<sup>4</sup>\n- Maxime Hebrard<sup>2</sup>\n- Kenneth TE Chang<sup>5</sup> ([ORCID: 0000-0001-5244-4285](https://orcid.org/0000-0001-5244-4285))\n- Victor KM Lee<sup>4</sup>\n- Ernesto Guccione<sup>2</sup>\n- Reshma Taneja<sup>1</sup> ([ORCID: 0000-0001-6214-6177](https://orcid.org/0000-0001-6214-6177)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore\n2. Institute of Molecular and Cell Biology (IMCB), Agency for Science, Technology and Research (A*STAR) Singapore Singapore\n3. Department of Biochemistry, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore\n4. Department of Pathology, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore\n5. Department of Pathology, KK Women and Children\u2019s Hospital Singapore Singapore\n\n\u2020 Corresponding author\n\n## Abstract\n\nWnt signaling is downregulated in embryonal rhabdomyosarcoma (ERMS) and contributes to the block of differentiation. Epigenetic mechanisms leading to its suppression are unknown and could pave the way toward novel therapeutic modalities. We demonstrate that EHMT2 suppresses canonical Wnt signaling by activating expression of the Wnt antagonist DKK1. Inhibition of EHMT2 expression or activity in human ERMS cell lines reduced DKK1 expression and elevated canonical Wnt signaling resulting in myogenic differentiation in vitro and in mouse xenograft models in vivo. Mechanistically, EHMT2 impacted Sp1 and p300 enrichment at the DKK1 promoter. The reduced tumor growth upon EHMT2 deficiency was reversed by recombinant DKK1 or LGK974, which also inhibits Wnt signaling. Consistently, among 13 drugs targeting chromatin modifiers, EHMT2 inhibitors were highly effective in reducing ERMS cell viability. Our study demonstrates that ERMS cells are vulnerable to EHMT2 inhibitors and suggest that targeting the EHMT2-DKK1-\u03b2-catenin node holds promise for differentiation therapy.\n\n## Introduction\n\nRhabdomyosarcoma (RMS) is the most common malignant soft tissue sarcoma (Hawkins et al., 2013; Keller and Guttridge, 2013; Hettmer et al., 2014) that arises due to a block in myogenic differentiation. Children with high risk disease have poor prognosis with only 30% showing 5-year event-free survival. Embryonal rhabdomyosarcoma (ERMS) accounts for the majority (~60%) of all RMS cases. No single genetic lesion is linked to ERMS but chromosome gains (chr 2,\u00a08, 12, and 13) and loss of heterozygosity at 11p15.5 are characteristically seen (Shern et al., 2014). A few recurrent mutations occur in ERMS that include mutations in p53 (TP53), amplification of CDK4, upregulation of MYCN, and point mutations in RAS leading to its activation (Hawkins et al., 2013; Shern et al., 2014; Zhu and Davie, 2015; Skapek et al., 2019). Recent studies have investigated whether improper epigenetic imprinting underlies the myogenic differentiation defect in RMS (Cie\u015bla et al., 2014). This includes altered expression of histone deacetylases, methyltransferases as well as lncRNAs and microRNAs that inhibit differentiation. Among these, EZH2 that\u00a0mediates repressive histone H3 lysine 27 trimethylation (H3K27me3) is upregulated and binds to muscle specific genes in ERMS. Its silencing increases both MyoD binding and transcription of target genes (Ciarapica et al., 2014). Similarly, HDAC inhibitors have been found to induce differentiation and reduce self-renewal and migratory capacity of ERMS by regulating Notch-1 and EphrinB1-mediated pathways (Vleeshouwer-Neumann et al., 2015). Interestingly, overexpression of the lysine methyltransferase SUV39H1 suppresses tumor formation in KRASG12D-driven zebrafish model of ERMS (Albacker et al., 2013).\n\nGenetic mouse models that develop ERMS-like tumors due to deregulation of key signaling pathways such as Hedgehog, Wnt, Notch, and Yap signaling have been described (Pal et al., 2019). Double mutants lacking p53 and c-fos (Trp53-/-/Fos-/-) develop ERMS. Elevated expression of Wnt antagonists dickkopf-related protein 1 (DKK1) and secreted frizzled-related proteins (sFRPs), as well as downregulation of Wnt agonists such as Wnt ligands Wnt 7b, Wnt 5a, Wnt four, and Wnt 11 were reported in these tumors (Singh et al., 2010). Mice expressing activated smoothened under the Fabp4 promoter leading to activation of Hedgehog signaling also develop ERMS. The tumors also show upregulation of Dkk3 which, similar to Dkk1, inhibits canonical Wnt signaling (Hatley et al., 2012). Consistent with these findings, GSK3\u03b2 inhibitors that activate Wnt signaling were most effective inducers of differentiation in a zebrafish model of ERMS (Chen et al., 2014). Importantly downregulation of Wnt signaling was found to be relevant only in ERMS.\n\nThere are 19 Wnt ligands, which function either through the canonical or non-canonical pathways in a highly context-dependent manner (Masuda and Ishitani, 2017). Canonical signaling is activated when Wnt ligands bind to a receptor from the Frizzled (Fzd) family. The co-receptors LRP5/6 facilitate Wnt signaling. Activation of Wnt signaling leads to disruption of the destruction complex (APC, Axin, GSK3\u03b2, and CK1\u03b1) which phosphorylates and degrades \u03b2-catenin. Induction of Wnt signaling results in accumulation of non-phosphorylated \u03b2-catenin (active \u03b2-catenin). \u03b2-catenin then translocates to the nucleus where it activates genes in cooperation with TCF/LEF1, but also other transcription factors (Masuda and Ishitani, 2017). Neither of the two non-canonical pathways (Planar Cell Polarity pathway [PCP] and the Wnt/calcium signaling pathway) involve \u03b2-catenin. Dkk1, a secreted protein, interacts with Lrp5/6 and antagonizes Wnt signaling by preventing Lrp5/6 association with Wnt/Fzd complex (Niehrs, 2006). Despite the relevance of Wnt signaling in ERMS, epigenetic mechanisms leading to its suppression have not been described and could pave the way to development of targeted therapies.\n\nEHMT2, a lysine methyltransferase that is encoded by the EHTM2 gene, mediates mono and di-methylation of H3K9 (H3K9me1/2), which is primarily involved in transcriptional repression (Shinkai and Tachibana, 2011). Recent studies however have shown that EHMT2 can also function as an activator in methylation-independent and -dependent ways (Shankar et al., 2013; Casciello et al., 2015). EHMT2 has been proposed to have oncogenic functions and its overexpression in leukemia, gastric, lung, prostate cancer, and alveolar RMS\u00a0causes silencing of tumor suppressor genes through its H3K9me2 activity (Shankar et al., 2013; Casciello et al., 2015; Bhat et al., 2019). In this study, we found that canonical Wnt/\u03b2-catenin signaling is epigenetically suppressed in ERMS. EHMT2 activates expression of DKK1 in a methylation-dependent manner through an impact on Sp1 and p300 recruitment. Our data indicate the potential of targeting the EHMT2-DKK1 axis to activate Wnt signaling for the development of novel ERMS therapeutics.\n\n## Results\n\n### EHMT2 inhibitors reduce ERMS cell viability\n\nWe recently reported that EHMT2 is overexpressed in ARMS (Bhat et al., 2019). To examine whether EHMT2 expression is de-regulated in ERMS, and if it is functionally relevant in these tumor subtype, we first examined its expression in 16 ERMS patient tumor sections. High nuclear expression relative to normal muscle was apparent (Figure 1A). In addition, compared to primary human skeletal muscle myoblasts (HSMMs), EHMT2 overexpression at both mRNA and protein levels was apparent in three ERMS patient-derived cell lines RD18, JR1, and RD (Figure 1B and C). To examine if the EHMT2 pathway is functionally relevant, we treated JR1 and RD cell lines with 13 methyltransferase inhibitors at three different concentrations. Viability was measured 8 days later using MTS assay. Drugs targeting BRD4, PRMT5, and EHMT2 showed a strong effect on viability of both cell lines (Figure 1D and E). Strikingly, UNC0642 showed significantly higher efficacy against RD cells when compared to HSMM in cell viability assays (Figure 1F). Consistent with our drug screening assay, treatment of both JR1 and RD cells with UNC0642, a small molecule inhibitor of EHMT2 led to a striking reduction in colony formation (Figure 1G). Together, these results indicate that EHMT2 is overexpressed and functionally relevant in ERMS.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig1-v3.jpg)\n\n**Figure 1.:** (A) 16 archival ERMS patient tumor specimens and four normal muscle samples were analyzed by immunohistochemistry using anti-EHMT2 antibody. Negative control indicates staining using secondary antibody alone. Inset shows zoomed in image of nuclear EHMT2 staining. Scale bar: 100 \u03bcm. (B) EHMT2 mRNA (n\u00a0=\u00a03) were examined in three patient-derived cell lines (RD, RD18, and JR1) in comparison to primary human skeletal muscle myoblasts (HSMMs) by qPCR. Values correspond to the average\u00a0\u00b1\u00a0SEM. All three ERMS cell lines examined showed an increased EHMT2 mRNA expression compared to HSMM. (C) EHMT2 protein levels were examined by western blotting in HSMM, RD18, JR1, and RD cells. A representative image of three different experiments is shown. All three ERMS cell lines examined showed an increased EHMT2 protein expression compared to HSMM. (D) ERMS cell lines JR1 and RD were treated with the indicated methyltransferase inhibitors (3, 1, and 0.3 \u00b5M). Viability on\u00a0day 8\u00a0was scored by MTS assay and measured as the ratio over control cells treated with an equivalent dilution of DMSO. RED indicates viability\u00a0>control; WHITE is equal to control, and BLUE is less than control. The experiment was conducted in triplicates and (+)-JQ1 was used as a positive control. GSK591, UNC0642, and\u00a0UNC638 had a strong effect on viability. (E) The IC50 of EHMT2 inhibitors in JR1, RD, and HSMM is shown. (F) HSMM and RD cells were treated with DMSO or UNC0642 for 6 days. Cell viability was assessed by trypan blue staining. (G) JR1 and RD cells were treated with DMSO or UNC0642 for 9 days. Colony formation was assessed by staining with crystal violet. A representative image of three different experiments is shown. In (B) data from three independent biological replicates each with three technical replicates were plotted. Statistical significance was calculated by unpaired two-tailed t-test. **p\u22640.01, ***p\u22640.001. N.D.\u00a0=\u00a0not determined.\n\n### EHMT2 inhibition promotes myogenic differentiation and inhibits proliferation in ERMS cell lines\n\nTo examine the role of EHMT2 in ERMS, we depleted its endogenous expression in RD18, JR1, and RD cells using small interfering RNA (Figure 2A, Figure 2\u2014figure supplement 1A, and Figure 2\u2014figure supplement 2A),\u00a0or blocked its methyltransferase activity using UNC0642 that resulted in reduced H3K9me2 (Figure 2B, Figure 2\u2014figure supplement 1B, and Figure 2\u2014figure supplement 2B). We then examined the impact on differentiation and proliferation of tumor cells. EHMT2 knockdown (siEHMT2 cells) as well as UNC0642 treatment resulted in increased myogenic differentiation relative to their respective controls as evidenced from the increased MHC expression, a terminal differentiation marker, as well as MYOG, an early differentiation marker (Figure 2C, Figure 2\u2014figure supplement 1C, and Figure 2\u2014figure supplement 2C). To differentiate, myoblasts irreversibly exit the cell cycle (Kitzmann and Fernandez, 2001). Given the enhanced myogenic differentiation upon EHMT2 depletion, we investigated the impact of EHMT2 loss on proliferation by labeling S-phase cells with BrdU. Both siEHMT2 cells and UNC0642 treatment resulted in a significant decrease in BrdU+ cells compared to their respective control in RD18 cells (Figure 2D, Figure 2\u2014figure supplement 1D, and Figure 2\u2014figure supplement 2D). Further, stable EHMT2 knockdown in RD cells also resulted in increased MHC levels and decreased BrdU+ cells (Figure 2\u2014figure supplement 2E\u2013G). A striking reduction in colony formation was also seen in shEHMT2 RD cells compared to controls (Figure 2\u2014figure supplement 2H). Together, these results indicate that EHMT2 inhibition permits cells to exit the cell cycle and undergo myogenic differentiation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig2-v3.jpg)\n\n**Figure 2.:** (A) EHMT2 was depleted in RD18 cells using siRNA. Control and siEHMT2 cells were analyzed for knockdown efficiency by western blot. \u03b2-actin was used as an internal loading control. (B) H3K9me2 levels were analyzed 48 hr after 2.5 \u03bcM of UNC0642 treatment in RD18 cells. Histone H3 was used as a loading control. (C) Differentiation was analyzed in control and siEHMT2 RD18 cells (upper panels) or DMSO and 2.5 \u03bcM of UNC0642 RD18-treated cells (lower panels) after culture for 5\u00a0days in differentiation medium (DM). Cells were analyzed by immunofluorescence and western blot using anti-MHC antibody as indicated. Nuclei were stained with DAPI. Representative images of three different experiments are shown. Expression of MYOG was analyzed by qPCR at day 2 of differentiation (n\u00a0=\u00a03). Values correspond to the average\u00a0\u00b1\u00a0SEM. (D) Proliferation was analyzed in control and siEHMT2 RD18 cells (upper panels); or DMSO and 2.5 \u03bcM of UNC0642-treated RD18 cells (lower panels) by immunostaining with anti-BrdU antibody. Cells were analyzed by immunofluorescence (n\u00a0=\u00a03). The dot plots show the percentage of BrdU+ in siEHMT2 and UNC0642-treated cells relative to their respective controls. Values correspond to the average\u00a0\u00b1\u00a0SEM. In (C) data from three independent biological replicates each with three technical replicates were plotted. In (D) data from three independent biological replicates each with four technical replicates were plotted. Statistical significance was calculated by unpaired two-tailed t-test. ****p\u22640.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Western blot showing EHMT2 knockdown efficiency in siEHMT2 cells. (B) Inhibition of EHMT2 activity by UNC0642 decreased H3K9me2 protein level after 48 hr of treatment as shown by western blot. (C) EHMT2 knockdown and UNC0642 treatment resulted in increased MHC+ cells as seen by immunofluorescence assay and western blot after 5\u00a0days in DM in JR1 cells. Data is representative of three independent experiments. EHMT2 knockdown and treatment with UNC0642 also increased MYOG expression as seen by qPCR analysis (n\u00a0=\u00a03). Values correspond to the average\u00a0\u00b1\u00a0SEM. (D) EHMT2 knockdown and UNC0642 treatment reduced BrdU+ cells as seen by immunofluorescence assays. Data is representative of three independent experiments. The dot plots show the percentage of BrdU+ cells in siEHMT2 cells and UNC0642-treated cells relative to controls. Values correspond to the average\u00a0\u00b1\u00a0SEM. In (C) data from three independent biological replicates each with three technical replicates were plotted. In\u00a0(D) data from three independent biological replicates each with four technical replicates were plotted. Statistical significance in (C and D) was calculated by unpaired two-tailed t-test. ****p\u22640.0001.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Western blot showing EHMT2 knockdown efficiency. (B) Inhibition of EHMT2 activity by UNC0642 decreased H3K9me2 protein level after 48 hr of treatment as shown by western blot. (C) EHMT2 knockdown and treatment with UNC0642 increased MHC+ cells as seen by immunofluorescence assay and western blot after 5 days in DM. The image is representative of two independent experiments. EHMT2 knockdown and treatment with UNC0642 also increased MYOG expression as seen by qPCR analysis (n\u00a0=\u00a03). Values correspond to the average\u00a0\u00b1\u00a0SEM. (D) EHMT2 knockdown and UNC0642 treatment reduced BrdU+ cells 48 hr in growth media as seen by immunofluorescence assays. The dot plots show the percentage of BrdU+ cells relative to controls (n\u00a0=\u00a03). Values correspond to the average\u00a0\u00b1\u00a0SEM. (E) Lentiviral-mediated stable EHMT2 knockdown (shEHMT2) efficiency in RD cells is shown by western blot. (F) shEHMT2 cells showed increased MHC levels after 5 days in DM by western blot. Data is representative of two independent experiments. (G) shEHMT2 cells showed reduced BrdU+ cells compared to control. Data is representative of three independent experiments. The percentage of BrdU+ cells is shown. Values correspond to the average\u00a0\u00b1\u00a0SEM. (H) Colony formation was analyzed in control and shEHMT2 cells. The number of colonies was quantified which showed reduced numbers in shEHMT2 cells. (n\u00a0=\u00a03). Values correspond to the average\u00a0\u00b1\u00a0SEM. In (C and H) data from three independent biological replicates each with three technical replicates were plotted. In (D and G) data from three independent biological replicates each with four technical replicates were plotted. Statistical significance in (C, D, G, and H) was calculated by unpaired two-tailed t-test. ***p\u22640.001 and ****p\u22640.0001.\n\n### EHMT2 regulates DKK1 and canonical Wnt signaling\n\nIn order to identify mechanisms underlying EHMT2 function, we performed RNA-Sequencing (RNA-Seq). Cluster analysis of differentially expressed genes from control RD and EHMT2 knockdown RD cells was done in triplicates (Figure 3A). Volcano plot of differentially expressed genes (Figure 3B) revealed that 872 genes were significantly upregulated in siEHMT2 cells compared to the control, of which 494 genes had a fold change\u00a0>1.2. Among the 1098 genes that were significantly downregulated in siEHMT2 cells, 695 genes had a fold change\u00a0>1.2. Gene ontology (GO) analysis showed that among the top 20 unique biological processes associated with differentially expressed genes in siEHMT2 cells were cell cycle progression and Wnt signaling (Figure 3C). Given its relevance in ERMS, we focused on the Wnt pathway. Interestingly, negative regulators of the Wnt pathway such as DKK1, DKK3, and ITGA3 (Shukrun et al., 2014; Kato et al., 2011) were downregulated in siEHMT2 cells, whereas positive regulators such as WNT3 and FRAT2 were upregulated (Figure 3\u2014figure supplement 1A\u00a0and\u00a0B). We validated genes in the Wnt pathway (Figure 3D and Figure 3\u2014figure supplement 1C\u2013F) as well as those involved in skeletal muscle differentiation such as MYOD1, MYOSTATIN, MYL, and MYOZENIN by qPCR in RD18 cells (Figure 3\u2014figure supplement 1G\u2013J).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig3-v3.jpg)\n\n**Figure 3.:** (A) RNA-seq heatmap showing hierarchical clustering of differentially expressed genes. RNA-Seq was performed with control and siEHMT2 RD cells (n\u00a0=\u00a03). Red represents high expression and blue represents low expression. (B) Volcano plot showing distribution of differentially expressed genes upon EHMT2 knockdown in RD cells. (C) GO enrichment histogram displaying top 20 unique significantly enriched biological processes upon EHMT2 knockdown in RD cells based on p-adjusted value where n signifies the number of differentially expressed genes concerning the GO term. (D\u00a0and\u00a0E) qPCR analysis for DKK1 mRNA in RD18 control and siEHMT2 cells and upon 2.5 \u03bcM of UNC0642 treatment (n\u00a0=\u00a03). Values correspond to the average\u00a0\u00b1\u00a0SEM. (F\u00a0and\u00a0G) DKK1 protein was analyzed in control and siEHMT2 RD18 cells and in DMSO and 2.5 \u03bcM of UNC0642-treated RD18 cells. Representative images of three different experiments are shown. (H\u2013J) Western blot analysis showed increased active-\u03b2-catenin in siEHMT2 RD18 cells relative to controls, in stable RD shEHMT2 cells, and upon UNC0642 treatment in RD18 cells as indicated. Representative images from three different experiments are shown. In (D and E) data from three independent biological replicates each with three technical replicates were plotted. Statistical significance was calculated by unpaired two-tailed t-test. *p\u22640.05, ***p\u22640.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u00a0and\u00a0B) List of top significantly altered Wnt pathway genes identified in RNA sequencing analysis that are downregulated, or upregulated, upon EHMT2 knockdown. (C\u2013F) qPCR validation of two downregulated genes ITGA3 and DKK3 and two upregulated genes FRAT2 and WNT3 in RD cells. Data shown is representative of two independent experiments. Error bars indicate the mean\u00a0\u00b1\u00a0SD. (G\u2013J) qPCR validation of four myogenic differentiation genes MYOD1, MYOSTATIN, MYL, and\u00a0MYOZENIN that show upregulation upon EHMT2 knockdown in RNA-Seq analysis. Data shown is representative of two independent experiments. Error bars indicate the mean\u00a0\u00b1\u00a0SD. In (C\u2013J) the bar graphs are plotted for one biological representative each with three technical replicates of two biological experiments. Statistical significance in (C\u2013J) was calculated as unpaired two-tailed t-test. **p\u22640.001, ***p\u22640.001 and ****p\u22640.0001.\n\nDKK1 is a member of the Dickkopf family that inhibits canonical Wnt/\u00df-catenin signaling by binding to and inhibiting the Wnt co-receptor LRP5/6 (16). Consistent with the transcriptomic data, downregulation of DKK1 mRNA was apparent in RD18 siEHMT2 cells compared to control cells by qPCR (Figure 3D). Interestingly UNC0642 treatment also resulted in a decrease in DKK1 mRNA expression in RD18 cells (Figure 3E). DKK1 protein levels also decreased in both siEHMT2 and UNC0642 RD18-treated cells (Figure 3F and G). Moreover, the reduction in DKK1 levels correlated with increased active-\u00df-catenin in siEHMT2 cells (Figure 3H) in RD18, RD shEHMT2 cells (Figure 3I) and upon UNC0642 treatment in RD18 (Figure 3J) when compared to their respective controls. These results indicate that loss of EHMT2 leads to downregulation\u00a0of DKK1 with concomitant activation of canonical Wnt signaling and myogenic differentiation.\n\n### EHMT2 regulates DKK1 through Sp1/p300 occupancy\n\nTo investigate mechanisms by which EHMT2 activates DKK1, we first carried out ChIP-seq analysis of EHMT2 occupancy in RD18 cells. EHMT2 enrichment was found mostly at gene promoters (Figure 4A) and its occupancy was apparent at the DKK1 promoter (Figure 4B). To validate these results, ChIP-PCR was done in RD18 cells. A significant enrichment was seen indicating that EHMT2 directly binds to the DKK1 promoter (Figure 4C). To further ascertain the specificity of EHMT2 occupancy at the DKK1 promoter, we performed ChIP-PCR at chromatin regions before and after the EHMT2 peak at the promoter. Neither region showed significant EHMT2 enrichment (Figure 4D and E). Homer analysis of the ChIP-seq data for DNA motif enrichment at predicted EHMT2 binding sites revealed KLF7 as one of the top DNA motifs associated with EHMT2-predicted binding sites (Figure 4\u2014figure supplement 1A). Sp1 is a member of the Kr\u00fcppel-like factors (KLFs) all of which share a highly conserved DNA binding domain with high sequence similarity. The transcription factor Sp1 and the co-activator p300 have previously been shown to regulate DKK1 expression (Peng et al., 2017; Polakowski et al., 2010). Consistent with these studies, Sp1 occupancy was detected at the DKK1 promoter (Figure 4F) in RD18 cells. Intriguingly, both Sp1 and p300 enrichment were decreased upon treatment with UNC0642 compared to control RD18 cells. Correspondingly, a reduction in H3K9ac, a mark of transcriptional activation, was apparent in RD18 cells (Figure 4G\u2013I). A decrease in p300 and H3K9ac occupancy was also observed in shEHMT2 RD cells (Figure 4\u2014figure supplement 1B\u00a0and\u00a0C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig4-v3.jpg)\n\n**Figure 4.:** (A) ChIP-seq analysis in RD18 cells showed EHMT2 occupancy at different regions of the chromatin. (B) Snapshot of EHMT2 binding peak at the DKK1 promoter from the UCSC genome browser. (C) EHMT2 occupancy at the DKK1 promoter was validated by ChIP-PCR (n\u00a0=\u00a03) in RD18 cells. (D\u00a0and\u00a0E) The specificity of the EHMT2 occupancy was validated by ChIP-PCR using primers spanning the chromatin region of enrichment, before (preDKK1) and after (postDKK1) the EHMT2 peak at the DKK1 promoter (n\u00a0=\u00a03) in RD18 cells. The dot plot shows EHMT2 enrichment compared to IgG which was used as a control. Values correspond to the average\u00a0\u00b1\u00a0SEM.\u00a0(F) Sp1 occupancy was analyzed by ChIP-PCR at the DKK1 promoter in RD18 cells. IgG was used as a control (n\u00a0=\u00a02). Bar graph for one representative biological experiment with three technical replicates is shown. Values correspond to the average\u00a0\u00b1\u00a0SD. (G\u2013I) Sp1, p300, and H3K9ac enrichment at the DKK1 promoter was analyzed in 2.5 \u03bcM of UNC0642-treated RD18 cells compared to DMSO controls. The dot plots show reduced enrichment in UNC0642-treated cells (n\u00a0=\u00a03). Values correspond to the average\u00a0\u00b1\u00a0SEM. (J) Proximity ligation assay was done to examine Sp1 and p300 teraction in control and 2.5 \u03bcM of UNC0642-treated RD18 cells. Images were captured using confocal microscopy. The dot plot shows the number of dots per nuclei in UNC0642-treated cells compared to control cells (n\u00a0=\u00a03). Each dot represents an interaction. Values correspond to the average\u00a0\u00b1\u00a0SEM. (K) Immunoprecipitation with anti-Sp1 antibody was done to examine interaction with p300 in control and 2.5 \u03bcM of UNC0642-treated RD cells. 10% lysate was run as input and immunoblotted for Sp1, p300, and EHMT2 by western blotting. The numbers indicate molecular weight of proteins. In (C\u2013E)\u00a0and (G\u2013J) data from three independent biological replicates each with three technical replicates were plotted. Statistical significance was calculated by unpaired two-tailed t-test. *p\u22640.05, **p\u22640.01, ***p\u22640.001, ****p\u22640.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Top DNA motifs at EHMT2-predicted binding sites by HOMER analysis. (B\u00a0and\u00a0C) ChIP-PCR analysis showed decrease in p300 occupancy and H3K9ac enrichment at the DKK1 promoter in shEHMT2 RD cells as compared to control (n\u00a0=\u00a02). Error bars indicate the mean\u00a0\u00b1\u00a0SD. (D) Proximity ligation assay\u00a0(PLA) was done to examine Sp1 and p300 interaction in control and 2.5 \u03bcM of UNC0642-treated RD cells. Sp1\u2013p300 interaction showed a significant decrease upon UNC0642 treatment. Images were captured using confocal microscopy. Data shown is representative of two independent experiments. Error bars indicate the mean\u00a0\u00b1\u00a0SD. (E) PLA was done to examine Sp1 and p300 interaction in control and 2.5 \u03bcM of UNC0642-treated human skeletal muscle myoblast cells. Sp1-p300 interaction showed a significant decrease upon UNC0642 treatment. Images were captured using confocal microscopy. Data shown is representative of two independent experiments. Error bars indicate the mean\u00a0\u00b1\u00a0SD. (F) PLA was used to determine EHMT2-Sp1 interaction which did not change upon UNC0642 treatment. Data shown is representative of two independent experiments. Error bars indicate the mean\u00a0\u00b1\u00a0SD. (G) EHMT2-p300 interaction was not significantly altered by UNC0642 treatment. Data shown is representative of two independent experiments. Error bars indicate the mean\u00a0\u00b1\u00a0SD. (H) Single antibody controls for p300, EHMT2, and Sp1 were done for PLA in RD18 cells. In (B\u2013G) the bar graphs are plotted for one biological representative each with three technical replicates of two biological experiments. Statistical significance in (B\u2013G) was calculated as unpaired two-tailed t-test. **p\u22640.001, ns\u00a0=\u00a0not significant.\n\nSp1 interacts with p300 through its DNA binding domain (Suzuki et al., 2000). We therefore examined if Sp1 and p300 interaction was altered by UNC0642 by proximity ligation assay (PLA). The interaction between Sp1 and p300 decreased upon UNC0642 treatment in both RD18 and RD cell lines, as well as in HSMM (Figure 4J\u00a0and Figure 4\u2014figure supplement 1D\u00a0and\u00a0E). However, EHMT2-Sp1 and EHMT2-p300 interaction remained unchanged (Figure 4\u2014figure supplement 1F\u00a0and\u00a0G). PLA for single antibody controls with p300, EHMT2, and Sp1 antibodies in RD 18 cells showed minimal background signals (Figure 4\u2014figure supplement 1H). To validate the PLA data, we examined Sp1\u2013p300 interaction under UNC0642 treatment in RD cells by immunoprecipitation assays. Immunoprecipitation with anti-Sp1 antibody confirmed a decrease in p300 association upon UNC0642 treatment (Figure 4K). Thus, our results indicate that EHMT2 binding at the promoter results in increased Sp1 and p300 occupancy and active transcription of DKK1.\n\n### EHMT2 inhibits differentiation and promotes proliferation through DKK1-mediated antagonism of Wnt signaling\n\nCanonical Wnt signaling induces myogenic differentiation and decreases proliferation (Suzuki et al., 2015; Brack et al., 2008). As DKK1 is a well-characterized inhibitor of canonical Wnt signaling, we examined if the effect of EHMT2 is mediated by DKK1. Correlating with high endogenous EHMT2 expression, DKK1 was also overexpressed in all three lines compared to HSMM at both mRNA and protein levels (Figure 5A and B). Similar to EHMT2 knockdown, DKK1 knockdown in RD18 cells resulted in an increase in active-\u00df-catenin levels indicating an upregulation of canonical Wnt signaling (Figure 5C). Moreover, analogous to EHMT2 knockdown, DKK1 knockdown in RD18 cells resulted in a significant decrease in BrdU+ cells compared to control cells (Figure 5D). A corresponding increase in differentiation was also apparent by elevated MHC levels and MYOG expression in RD18 cells (Figure 5E). A similar decrease in BrdU+ cells and increase in MHC levels upon DKK1 knockdown were observed in RD cells (Figure 5\u2014figure supplement 1A\u00a0and\u00a0B). To determine whether DKK1 mediates the effects of EHMT2, we performed rescue experiments in RD18 cell line. Recombinant DKK1 (rDKK1) was added to siEHMT2 cells for 24 hr that resulted in the reduction of active \u03b2-catenin seen in siEHMT2 cells. Interestingly, in the\u00a0presence of rDKK1, the increase in MHC+ cells and MYOG expression in siEHMT2 cells was reversed to control levels. Similarly, the decrease in BrdU+ cells upon EHMT2 knockdown were restored to levels comparable to control (Figure 5F). To further validate that EHMT2 mediates its effects on canonical Wnt signaling, we used another Wnt antagonist, a porcupine inhibitor, LGK974. Similar to rDKK1, LGK974 reversed the effects of EHMT2 knockdown on proliferation, differentiation, and active \u03b2-catenin levels (Figure 5G) indicating that EHMT2 mediates the differentiation block by activating DKK1 expression that in turn suppresses canonical Wnt signaling.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig5-v3.jpg)\n\n**Figure 5.:** (A) DKK1 mRNA was examined by qPCR (n\u00a0=\u00a03) in human skeletal muscle myoblast\u00a0(HSMM), RD, RD18, and JR1 cells. Values correspond to the average\u00a0\u00b1\u00a0SEM. (B) DKK1 protein levels were analyzed by western blotting in HSMM, RD, RD18, and JR1. A representative image from three different experiments is shown. (C) Effect on canonical Wnt signaling upon knockdown of DKK1 was examined by analyzing active-\u03b2-catenin protein levels in control and siDKK1 RD18 cells. (D) DKK1 knockdown was analyzed in control and siDKK1 RD18 cells by western blot. Proliferation was analyzed in RD18 control and siDKK1 cells (n\u00a0=\u00a03) with anti-BrdU antibody. The dot plot shows the percentage of BrdU+ cells. Values correspond to the average\u00a0\u00b1\u00a0SEM. (E) Differentiation was analyzed in control and siDKK1 RD18 cells that were cultured for 5 days in DM. Cells were analyzed by western blot and immunofluorescence and using anti-MHC antibody as indicated. A representative image of three different experiments is shown. MYOG expression was analyzed by qPCR (n\u00a0=\u00a03) at day 2 of differentiation. Values correspond to the average\u00a0\u00b1\u00a0SEM. (F) Control, siEHMT2 cells, and siEHMT2 RD18 cells treated with rDKK1 for 24 hr and tested for active-\u03b2-catenin levels. Differentiation and proliferation were analyzed (lower panels) by MHC+ cells and BrdU+ cells as indicated. Representative images of three different experiments are shown. MYOG expression was analyzed by qPCR (n\u00a0=\u00a03) and the percentage of BrdU+ cells is shown in the dot plots. Values correspond to the average\u00a0\u00b1\u00a0SEM. (G) Western blot showing active-\u03b2-catenin levels in control, siEHMT2 cells, and siEHMT2 RD18 cells treated with LGK974 for 24 hr. A representative image of three different experiments is\u00a0shown. MHC+ and BrdU+ cells were analyzed. A representative image of three different experiments is shown. MYOG expression in control, siEHMT2, and siEHMT2 RD18 cells treated with LGK974 was analyzed by qPCR (n\u00a0=\u00a03). Values correspond to the average\u00a0\u00b1\u00a0SEM. Statistical significance in (A)\u00a0and (D\u2013G) was calculated by unpaired two-tailed t-test. **p\u22640.01, ***p\u22640.001, ****p\u22640.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) DKK1 knockdown was analyzed in control and siDKK1 cells by western blot. Proliferation was analyzed in control and siDKK1 cells (n\u00a0=\u00a03) with anti-BrdU antibody. The dot plot shows the percentage of BrdU+ cells. Values correspond to the average\u00a0\u00b1\u00a0SEM. (B) Differentiation was analyzed in control and siDKK1 cells that were cultured for 5 days in DM. Cells were analyzed by western blot using anti-MHC antibody as indicated. (C) Venn\u00a0diagram showing an overlap between number of genes that\u00a0are significantly upregulated or significantly downregulated in RNA-seq analysis upon EHMT2 knockdown with a fold-change\u00a0\u2265 1.2 and number of genes with significant EHMT2 occupancy on its promoter region (\u00b13000 bp from TSS) in ChIP-seq analysis. (D\u2013F) Lists of skeletal muscle differentiation genes (D), cell cycle genes (E), and metabolic genes (F) that were significantly altered upon EHMT2 knockdown with or without significant EHMT2 enrichment at the promoter. In (A) data from three independent biological replicates each with four technical replicates were plotted. Statistical significance in (A) was calculated by unpaired two-tailed t-test. ****p\u22640.0001.\n\nIn order to examine the effect of EHMT2 in regulating DKK1 and Wnt signaling in vivo, we injected RD cells in BALB/c nude mice. Once the tumors were palpable, mice were injected intraperitoneally every 2 days with UNC0642 or with control vehicle. Treatment with UNC0642 resulted in reduced tumor growth compared to the control group without any significant changes in body weight (Figure 6A). By immunohistochemical analysis (Figure 6B) we confirmed a decrease in H3K9me2 in tumors from mice treated with UNC0642 indicating efficacy of the drug in vivo. The proliferation marker Ki67 was decreased, whereas MHC+ cells were increased in tumors from mice treated with UNC0642. Moreover, DKK1 was decreased upon UNC0642 treatment, and correspondingly active-\u00df-catenin levels were elevated (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57683/elife-57683-fig6-v3.jpg)\n\n**Figure 6.:** (A) Nude mice were injected with RD cells. Once tumors were palpable, mice were treated with DMSO (n\u00a0=\u00a010) or UNC0642 (n\u00a0=\u00a010). Representative images of three mice in each group (left panel) and resected tumors (right panel) are shown. The relative tumor volume in UNC0642-treated group showed a significant decrease compared to controls although the body weight of mice did not show any significant change. Statistical significance was calculated using repeated-measure two-way ANOVA where ***p\u22640.001. Values correspond to the average\u00a0\u00b1\u00a0SEM. (B) Tumors from two control and two UNC0642-treated mice were analyzed by immunohistochemistry\u00a0(IHC) using anti-Ki67, anti-H3K9me2, anti-active-\u00df-catenin, anti-MHC, and anti-DKK1 antibodies. Scale bar: 50 \u03bcm. Inset shows zoomed in images. (C\u00a0and\u00a0D) Mice were injected with shRNA RD cells (shscm) (n\u00a0=\u00a010) or shEHMT2 RD cells (n\u00a0=\u00a020). Once tumors were palpable, half of shEHMT2 injected mice were treated with vehicle and the rest with LGK974. (C) Representative images of mice (left panel) injected with shscm control cells, shEHMT2 cells, and shEHMT2 cells + LGK974 are shown. Representative images of the tumors (right panel) isolated from the three cohorts are shown. The relative tumor volume and the body weight of mice in each group were determined. Statistical significance was calculated using repeated-measure two-way ANOVA where ****p\u22640.0001. Values correspond to the average\u00a0\u00b1\u00a0SEM. (D) Tumors from two different mice in each group were analyzed by IHC for Ki67, H3K9me2, DKK1, MHC, and active-\u00df-catenin staining as described above. Scale bar: 50 \u03bcm. Inset shows zoomed in images.\n\nTo verify that the effects of EHMT2 are mediated via an impact on Wnt signaling in vivo, we next injected control shRNA and shEHMT2 cells. Once the tumors were palpable, mice injected with shEHMT2 cells were treated with LGK974 or treated with vehicle alone every alternate day. The shRNA control group was also injected with the vehicle (Figure 6C). Tumor volume in mice injected with shEHMT2 cells was reduced compared to the control group. However, mice injected with shEHMT2 cells and treated with LGK974 showed tumor volumes comparable to the control group. Body weight of mice did not show any significant changes over the course of this treatment. We analyzed two tumors from each cohort by immunohistochemistry\u00a0(IHC). As expected, EHMT2 expression was decreased in mice injected with shEHMT2 cells that correlated with decrease in Ki67+ cells and increase in MHC+ cells compared to tumors of the control group. This alteration was however not seen in the tumors from mice injected with shEHMT2 cells that underwent LGK974 treatment. Consistently, the reduction in DKK1 and increase in active-\u00df-catenin in tumors from shEHMT2 injected mice were reversed in upon LGK974 treatment (Figure 6D).\n\nTaken together, our studies demonstrate that inhibition of EHMT2 expression or activity promotes differentiation and reduces tumor progression by regulating Wnt signaling. Integration of RNA-Seq and ChIP-Seq data (Figure 5\u2014figure supplement 1C) showed many genes involved in myogenic differentiation, cell cycle progression, and metabolic pathways (Figure 5\u2014figure supplement 1D\u2013F) to be directly or indirectly regulated by EHMT2. These genes, independent of Wnt signaling, may contribute to oncogenic effects of EHMT2 in ERMS cells.\n\n## Discussion\n\nIn this study, we uncovered an EHMT2-dependent epigenetic node that results in repression of Wnt signaling in ERMS. We propose that by activating DKK1 expression, EHMT2 maintains Wnt signaling in a repressed state, and thus prevents the transition of myoblasts to a differentiated state. These findings underscore specific epigenetic mechanisms to reactivate Wnt signaling and induce differentiation in ERMS.\n\nThere has been a resurgence of interest in differentiation therapy as a viable treatment option for solid tumors (Cruz and Matushansky, 2012). The Wnt, Notch, and Hedgehog pathways play a pivotal role in balancing proliferation, self-renewal, and differentiation during embryonic myogenesis. Not surprisingly, deregulation of these developmental pathways has been reported in ERMS (Hatley et al., 2012; Chen et al., 2014; Satheesha et al., 2016; Ignatius et al., 2017) and consequently, drugs targeting each of these pathways are being tested. However, current inhibitors do not selectively target specific pathways and have either unacceptable toxicity, or do not show marked clinical improvement. Several studies have demonstrated suppression of Wnt signaling in RMS cells, which mostly do not stain positively for nuclear \u03b2-catenin. Also, no mutations in the \u03b2 catenin gene have been reported (Bouron-Dal Soglio et al., 2009; Annavarapu et al., 2013). The suppression of Wnt signaling is a critical contributor to the differentiation block in ERMS, and induction of the pathway leads to cell cycle exit and differentiation (Singh et al., 2010; Chen et al., 2014). GSK3\u00df inhibitors are the most prominent Wnt signaling activators and showed promising effects in inducing differentiation in a zebrafish model of ERMS (Chen et al., 2014). GSK3\u00df is a constitutive serine/threonine protein kinase that inhibits canonical Wnt signaling by phosphorylating \u00df-catenin and triggering its degradation in the cytoplasm (Wu and Pan, 2010). However, GSK3\u00df is involved in many pathways with more predicted substrates than any known kinase. Thus, its inhibition is not a specific strategy to induce Wnt signaling. This is also emphasized by slow progress of existing GSK3\u00df inhibitors toward clinical translation (Pandey and DeGrado, 2016). Tideglusib, an irreversible GSK3\u00df inhibitor, was recently tested against RMS PDX models, where the highest safe dosage failed to both induce myogenic differentiation and\u00a0affect cancer progression in PDX models (Bharathy et al., 2017). Consequently, development of alternative molecularly targeted therapies that induce Wnt signaling is a\u00a0critical goal in this disease.\n\nOur data demonstrates an epigenetic mechanism to activate Wnt signaling and overcome the differentiation block in ERMS. Interestingly EHMT2 activates DKK1 in a methylation-dependent manner resulting in the suppression of Wnt signaling in ERMS. While methylation-dependent silencing or repression by EHMT2 has been described, only a few studies have demonstrated methylation-dependent activation of gene expression. EHMT2 occupancy at its promoter demonstrates that it directly regulates DKK1 expression. Consistent with previous studies, we found Sp1 binding at the DKK1 promoter and inhibition of EHMT2 led to its decreased occupancy along with the coactivator p300. The hypothesis that G9a activation of DKK1 is mediated by H3K9me2 loss needs to be tested further and the mechanisms by which G9a activity regulates Sp1\u2013p300 occupancy at the promoter need further investigation. Interestingly, RNA-seq analysis revealed de-regulation of several Sp1 target genes such as IGBP2, IGBP3, HB-EGF, FGFR1, CCND1, VEGFA, and VEGFC suggesting that the effect of EHMT2 inhibition on Sp1 transcriptional activity might not be limited to DKK1.\n\nPan-HDAC and pan-DNMT inhibitors have been explored in ERMS (Vleeshouwer-Neumann et al., 2015; Gnyszka et al., 2013). HDAC inhibitors often exert effects independent of their epigenetic roles (Vleeshouwer-Neumann et al., 2015) and application of DNMT inhibitors (Gnyszka et al., 2013) is\u00a0restricted due to their toxicity in healthy cells. EZH2 inhibitors are the only other specific epigenetic inhibitors that demonstrate a strong phenotype in ERMS (Ciarapica et al., 2014). In this study, a drug screen of 15 methyltransferase inhibitors in two different ERMS cell lines showed that small molecule inhibitors targeting EHMT2 activity are very effective. Thus, our data support targeting EHMT2 as a therapeutic approach in ERMS, particularly since its deletion does not impact development of muscle (Zhang et al., 2016). We have recently shown that EHMT2 is deregulated in ARMS as well (Bhat et al., 2019). Together with the herein described role of EHMT2 in ERMS, these observations clearly suggest the importance of differentiation in these therapies and imply common features between these two subtypes of RMS.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus female)</td>\n      <td>Nude mice</td>\n      <td>In Vivos</td>\n      <td>C.Cg/AnNTac-Foxn1nuNE9 BALB/c RRID:IMSR_TAC:balbnu</td>\n      <td>BALB/c inbred model</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HSMM</td>\n      <td>Lonza Inc</td>\n      <td>#: CC-2580</td>\n      <td>Isolated from upper arm or leg muscle tissue of normal donors and sold at second passage</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>RD18</td>\n      <td>Peter Houghton and Rosella Rota</td>\n      <td>RRID:CVCL_IU87</td>\n      <td>Clone cells derived from RD cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>RD</td>\n      <td>Peter Houghton and Rosella Rota</td>\n      <td>RRID:CVCL_1649</td>\n      <td>Patient-derived cell line from pelvic mass of 7-year-old female</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>JR1</td>\n      <td>Peter Houghton and Rosella Rota</td>\n      <td>RRID:CVCL_J063</td>\n      <td>Patient-derived cell line from lung metastasis of 7-year-old female</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>RD shscm</td>\n      <td>This study</td>\n      <td></td>\n      <td>Transfected with shRNA control lentivirus particles</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>RD shEHMT2</td>\n      <td>This study</td>\n      <td></td>\n      <td>Transfected with shEHMT2 lentivirus particles</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (H. sapiens)</td>\n      <td>SmartPool non-targeting siRNA</td>\n      <td>Dharmacon</td>\n      <td>D-001810-10-20</td>\n      <td>Negative control of four siRNAs designed for minimal targeting</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (H. sapiens)</td>\n      <td>SmartPool siRNA against EHMT2</td>\n      <td>Dharmacon</td>\n      <td>L-006937-00-0010</td>\n      <td>A mixture of four siRNA provided as a single reagent</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (H. sapiens)</td>\n      <td>SmartPool siRNA against DKK1</td>\n      <td>Dharmacon</td>\n      <td>L-003843-01-0010</td>\n      <td>A mixture of four siRNA provided as a single reagent</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (H. sapiens)</td>\n      <td>shRNA control lentivirus particles</td>\n      <td>Santa Cruz Biotechnology Inc</td>\n      <td>sc-108080</td>\n      <td>Negative control. 200 \u03bcl viral stock containing 1 \u00d7 106IFU. Encodes nonspecific scrambled shRNA</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (H. sapiens)</td>\n      <td>shEHMT2 control lentivirus particles</td>\n      <td>Santa Cruz Biotechnology Inc</td>\n      <td>sc-43\u2013777V</td>\n      <td>200 \u03bcl of viral stock containing 1 \u00d7 106\u00a0IFU. Pools of three\u00a0to\u00a0five target-specific sequences</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal EHMT2</td>\n      <td>Cell Signalling</td>\n      <td>#3306S</td>\n      <td>1:300, western blot</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal MHC</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Sc-32732</td>\n      <td>1:300, western blot</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal Myogenin</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Sc-12732</td>\n      <td>1:250, western blot</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal Dkk1</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Sc-374574</td>\n      <td>1:300, western blot, 1:200 for IHC</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal active-\u00df-catenin</td>\n      <td>Merk Millipore</td>\n      <td>05\u2013665</td>\n      <td>1:500, western blot, 1:300 for IHC</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal H3K9me2</td>\n      <td>Cell Signaling</td>\n      <td>9753S</td>\n      <td>1:1000, western blot, 1:200 for IHC</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal \u00df-actin</td>\n      <td>Sigma-Aldrich</td>\n      <td>A2228</td>\n      <td>1:10,000, western blot</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal H3</td>\n      <td>Abcam</td>\n      <td>Ab-1791</td>\n      <td>1:10,000, western blot</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal Sp1</td>\n      <td>Santa Cruz</td>\n      <td>Sc-17824</td>\n      <td>1:50 for PLA</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit Polyclonal Sp1 Rabbit</td>\n      <td>Merck Millipore</td>\n      <td>07\u2013645</td>\n      <td>1:100 for PLA, 3 \u03bcg was used for ChIP. 2 \u03bcg was used for IP pull down.\u00a01:500 dilution for immunoblotting</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal p300</td>\n      <td>Abcam</td>\n      <td>Ab14984</td>\n      <td>1:1000 for PLA, 2 \u03bcg was used for ChIP. 1:500 dilution for immunoblotting</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal H3K9ac</td>\n      <td>Abcam</td>\n      <td>Ab4441</td>\n      <td>2 \u03bcg was used for ChIP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal EHMT2</td>\n      <td>Abcam</td>\n      <td>Ab40542</td>\n      <td>2 \u03bcg was used for ChIP, 1:200 for IHC</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal Ki67</td>\n      <td>Leica Biosystems</td>\n      <td>PA0118</td>\n      <td>1:100 for IHC</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal MHC</td>\n      <td>Sigma Aldrich</td>\n      <td>M4276</td>\n      <td>1:200 for IHC and IF</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Primers</td>\n      <td>This study</td>\n      <td></td>\n      <td>As mentioned in Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Human DKK1</td>\n      <td>R and D Systems</td>\n      <td>5439-dk-010</td>\n      <td>100 ng/ml, Sf21(baculovirus)-derived human DKK1 protein</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PLA kit (Duolink in situ- fluorescence)</td>\n      <td>Sigma</td>\n      <td>DUO92101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Lipofectamine RNAiMax</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>13778150</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>LGK974</td>\n      <td>Selleck Chemicals</td>\n      <td>S7143</td>\n      <td>200 nM, porcupine inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Polybrene</td>\n      <td>Sigma Aldrich</td>\n      <td>TR-1003</td>\n      <td>2 Ul of 8 mg/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Puromycin dihydrochloride</td>\n      <td>Sigma Aldrich</td>\n      <td>P8833</td>\n      <td>1 \u00b5g/ml</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad prism</td>\n      <td></td>\n      <td>V9.0</td>\n      <td>https://www.graphpad.com/</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and drug sensitivity assays\n\nRD, RD18, and JR1 ERMS cell lines were a kind gift from Peter Houghton (Nationwide Children\u2019s Hospital, Ohio, USA) and Rosella Rota (Bambino Gesu Children\u2019s Hospital, Rome, Italy). All cell lines were routinely tested and were negative for mycoplasma. RD18 and JR1 were cultured in RPMI 1640 with L-Glutamine (Thermo Fisher Scientific, Waltham, MA, USA) and 10% FBS (Hyclone, Logan UT, USA), whereas RD cells were cultured in Dulbecco's Modified Eagle Medium (DMEM) (Sigma, St Louis, MO, USA) with 10% FBS (Hyclone, Logan UT, USA). Primary HSMMs were purchased from Lonza Inc (Basel, Switzerland) and cultured in growth medium (SkGM-2 BulletKit). For transient knockdown, cells were transfected with 50 nM of human EHMT2-specific siRNA or human DKK1-specific siRNA (ON-TARGETplus siRNA SMARTpool, Dharmacon, Lafayette, CO, USA) containing a pool of three to five 19\u201325 nucleotide siRNAs. Control cells were transfected with 50 nM scrambled siRNA (ON-TARGETplus, non-targeting pool, Dharmacon) using Lipofectamine RNAiMax (Thermo Fisher scientific). Cells were analyzed 48 hr post-transfection for all assays. Knockdown efficiency was monitored by western blot. For generating stable knockdown cell lines, RD cells at 40\u201350% confluency were transduced with shRNA control lentivirus particles (Santa Cruz Biotechnology Inc), or shEHMT2 lentivirus particles (Santa Cruz Biotechnology Inc) and 2 \u00b5l polybrene (8 mg/ml) (Sigma-Aldrich) in DMEM basal medium. Six\u00a0hours post-transduction, cell supernatants were replaced with DMEM medium (10% FBS) for 24 hr. Transduced cells were selected with 1 \u00b5g/ml puromycin (Sigma-Aldrich) for 4 days. For rescue experiments, siEHMT2 cells were treated with 100 ng/ml of rDKK1 (R and D Systems) or 200 nM of porcupine inhibitor LGK974 (Selleck Chemicals, Houston, USA). Both rDKK1 and LGK974 were added to the media 24 hr after transfection. For drug screening, RD and JR1 cells were seeded in 384 well plates at 200 cells\u00a0per well together with methyltransferase inhibitors at 3, 1, and 0.3 \u00b5M. During the treatment, the media and the drugs were not replaced. The viability read-out was obtained at day 8 by MTS assay (as per manufacturer\u2019s instructions), and calculated as the ratio over control cells treated with an equivalent dilution of DMSO. The data are presented as a heatmap where red indicates viability ratio\u00a0>control; white\u00a0=\u00a0control; and blue is less than control. The experiment was conducted in triplicate and (+)-JQ1 was used as a positive control. To determine the effect of UNC0642, HSMM and RD cells were treated with DMSO or UNC0642 for 6 days and counted with trypan blue. Media and drugs were replenished every 2 days. The experiments were conducted in technical duplicates in two independent biological replicates. IC50 was determined by culturing cells with 5000 nM, 3000 nM, 1000 nM, 500 nM, 250 nM, and 0 nM EHMT2 inhibitors for 6 days. The concentration of drug that affects 50% viability of the cells was determined using the CompuSyn software.\n\n### Colony formation assay\n\n2000 cells were seeded per well in a six-well plate. Cells were treated with 2.5 \u03bcM UNC0642 or equal volumes of DMSO. The treatment was carried for 9 days at the end of which cells were stained with crystal violet to visualize the colonies formed.\n\n### Proliferation and differentiation assays\n\nProliferative capacity of cells was analyzed using 5-bromo-2\u2019-deoxy-uridine (BrdU) labeling (Roche, Basel, Switzerland). Cells seeded on coverslips were pulsed with 10 \u03bcM BrdU for 60 min at 37\u00b0C. Cells were fixed with 70% ethanol at \u221220\u00b0C for 20 min and incubated with anti-BrdU antibody (1:100) for 60 min followed by anti-mouse Ig-fluorescein antibody (1:200) for 60 min. After mounting onto slides with DAPI (Vectashield, Vector Laboratories, CA, USA), images were captured using fluorescence microscope BX53 (Olympus Corporation, Shinjuku, Tokyo, Japan). For differentiation assays, RD, RD18, and JR1 cells were cultured for 2\u20135 days in DMEM supplemented with 2% horse serum (Gibco, Carlsbad, CA, USA) at 90\u201395% confluency. Differentiation was assessed by MHC staining. Cells were fixed with 4% paraformaldehyde for 20 min at room temperature (RT). Cells were blocked and permeabilized using 10% horse serum and 0.1% Triton X containing PBS. Cells were then incubated with anti-Myosin Heavy Chain (MHC) primary antibody (R and D Systems, Minneapolis, MN, USA) (1:400, 1 hr at RT) followed by 1 hr of 1:250 secondary goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 568 (Thermo Fisher scientific). Coverslips were mounted with DAPI (Vectashield, Vector Laboratories, CA, USA) and imaged using upright fluorescence microscope BX53 (Olympus Corporation).\n\n### Western blot analysis\n\nCells were lysed using RIPA or SDS lysis buffer supplemented with protease inhibitors (Complete Mini, Sigma-Aldrich). The following primary antibodies were used: anti-EHMT2 (#3306S, 1:300, Cell Signaling), anti-MHC (#sc-32732, 1:300, Santa Cruz Biotechnology), anti-Myogenin (#sc-12732, 1:250, Santa Cruz Biotechnology), anti-DKK1\u00a0(#sc374574, 1:300, Santa Cruz Biotechnology), anti-active-\u00df-catenin (#05\u2013665, 1:500, Merck Millipore), anti-H3K9me2 (#9753S, 1:1000, Cell Signaling), anti-\u00df-actin (#A2228, 1:10,000; Sigma-Aldrich), and\u00a0anti-H3 (#ab1791, 1:10,000; Abcam). Appropriate secondary antibodies (IgG-Fc Specific-Peroxidase) of mouse or rabbit origin (Sigma Aldrich) were used.\n\n### Proximity Ligation Assay\n\nPLA was performed using the Duolink in situ-fluorescence (Sigma DUO92101). For EHMT2 and Sp1 interaction, anti-EHMT2 (Cell Signaling, 1:50) and anti-Sp1(1:50 Santa Cruz) antibodies were used. For Sp1 and p300 interaction studies, Sp1 (Millipore, 1:100) and p300 (Abcam, 1:1000) antibodies were used. Images were captured under FluoView FV1000 confocal fluorescence microscope (Olympus) at 60\u00d7 (oil). For quantifying PLA signals, particle analysis was performed using Fiji/ImageJ software, and pixel area size of 2\u201350 was assigned for calculating the total number of PLA signals per field. PLA signals as dots per nuclei were calculated for at least three microscopic fields.\n\n### Transcriptome analysis and quantitative real-time polymerase chain reaction (qPCR)\n\nFor RNA sequencing analysis, RNA was isolated from control and siEHMT2 cells in triplicate using Trizol. RNA was sequenced using Illumina high-throughput sequencing platform. CASAVA base recognition was used to convert raw data file to Sequence Reads and stored in FASTQ(fq) format. Raw reads were then further filtered in order to achieve clean reads using the following filtering conditions: reads without adaptors, reads containing number of base that cannot be determined below 10%, and at least 50% bases of the reads having Qscore denoting Quality value\u00a0\u2264 5. For mapping of the reads STAR software was used to align the reads against hg19 Homo sapiens reference genome. 1M base was used as the sliding window for distribution of the mapped reads. For differential expression gene (DEG) analysis Readcount obtained from gene expression analysis was used. Differential expression significance analysis of two experimental groups was done by Novogene using the DESeq2 R package and an adjusted p-value of 0.05 was applied (padj\u00a0<0.05). For analysis of the differentially expressed genes, Gene Ontology analysis was done using cluster Profiler (Yu et al., 2012) software for GO terms with corrected p-value less than 0.05.\n\nFor qPCR analysis, total RNA was extracted using Trizol (Thermo Fisher Scientific) and quantified using Nanodrop. Messenger RNA (mRNA) was converted to a single-stranded complementary DNA (cDNA) using iScript cDNA Synthesis Kit (Bio-Rad). qPCR was performed using Lightcycler 480 SYBR Green 1 Master Kit (Roche). PCR amplification was performed as follows: 95\u00b0C for\u00a05 min, followed by 95\u00b0C for 10 s, annealing at 60\u00b0C for 10 s, followed by 45 cycles at 72\u00b0C for 10 s. Light Cycler 480 software (version 1.3.0.0705) was used for analysis. CT values of samples were normalized to internal control GAPDH to obtain delta CT (\u0394CT). Relative expression was calculated by 2\u2212\u0394CT equation. qPCR was done using reaction triplicate and at least two independent biological replicates were done for each analysis. Primer sequences for EHMT2 are 5'-TGGGCCATGCCACAAAGTC-3' and 5'-CAGATGGAGGTGATTTTCCCG-3'; for MYOG are 5'-GCCTCCTGCAGTCCAGAGT-3' and 5'-AGTGCAGGTTGTGGGCATCT-3',\u00a0and for DKK1 are 5'-CGGGAATTACTGCAAAAATGGA-3' and 5'-GCACAGTCTGATGACCGGAGA-3'.\n\n### Chromatin immunoprecipitation (ChIP)\n\nChromatin immunoprecipitation-sequencing (ChIP-Seq) was done using 20 million RD18 cells and anti-EHMT2 antibody (Abcam, Cambridge, MA, USA) as described (Bhat et al., 2019). Sequencing reads were mapped against human reference genome hg19. High quality mapped reads (MAPQ\u00a0\u2265 10) were retained and potential duplicates were removed using SAMtools. EHMT2 binding sites were predicted from the libraries using MACS2. Read density was computed in the format of bigwig using MEDIPS with 50 bp window width. The prediction revealed 48,999 binding sites overlapping with promoters, gene body, and intergenic regions. We used GENCODE v19 to define promoters (\u00b12.5 kb from TSS) and gene body. Mid-point predicted binding sites were used in this analysis. Of the 48,999 binding sites 49% (n\u00a0=\u00a024,176) localized at promoters, 29% (n\u00a0=\u00a014,252) at gene bodies, and 21% (n\u00a0=\u00a010,571) at inter-genic regions. To demonstrate the read density around annotated TSS, we identified the promoters of the TSS overlapping with predicted EHMT2 binding sites. The TSS were then extended \u00b120 kb and the binding signal was computed in each window of size 100 bp. Average read density for each window was computed using bigWigAverageOverBed. GENECODEv19 was used to classify promoter-bound EHMT2 binding. Peaks were annotated using ChIPseeker (Yu et al., 2015) and ChIPpeakAnno (Zhu et al., 2010) against genes model of UCSC, hg19, knownGene (TxDb.Hsapiens.UCSC.hg19.knownGene). Differential expression count matrix was analyzed using R. Genes with an adjusted p-value less than 0.05 were labeled as significantly differentially expressed. From that list, genes with an absolute fold change\u00a0\u2265 1.2 were selected for further analysis. GO analysis of gene subsets was performed using Metascape (Zhou et al., 2019). The ChIP-Seq data are compliant with MIAME guidelines and have been deposited in the NCBI GEO database.\n\nChIP-PCR was done as previously described (Bhat et al., 2019). Relative enrichment was calculated using 2\u2212\u0394CT equation. The following antibodies were used for ChIP assays: ChIP-grade anti-EHMT2 (Abcam), anti-H3K9ac (Abcam), Sp1 (Rabbit Millipore), and p300 (Abcam). Primers used for ChIP at the DKK1 promoter were:\u00a0Forward: 5'-CCGGATAATTCAACCCTTACTGCC-3' and Reverse: 5'-GGAGCATTCCGGCCCCTTGGGAG-3'; for chromosome region before EHMT2 occupancy at DKK1 promoter region were Forward: 5\u2019-ACCTCAAAGCCGGGGATCTA-3\u2019 and Reverse: 5\u2019-CTCTAGCAAGACGCCTCTGA-3\u2019; and for the region after the EHMT2 occupancy at the DKK1 promoter were\u00a0Forward: 5\u2019-AACCCTTCCCACAGCCGTA-3\u2019 and Reverse: 5\u2019-CGAGACAGATTTGCACGCC-3\u2019.\n\n### Immunoprecipitation (IP)\n\nFor immunoprecipitation, cells were lysed using NP40 buffer. 1 mg cell lysate was precleared and 2 \u00b5g of Sp1 antibody (rabbit, Millipore) was added for immunoprecipitation. Samples were loaded and run in SDS PAGE followed by immunoblotting with p300 antibody (Abcam). Ten\u00a0percent lysate was run as input and immunoblotted with anti-Sp1, anti-p300, and anti-EHMT2 antibodies.\n\n### Mouse xenograft experiments\n\nSix-week-old C.Cg/AnNTac-Foxn1nuNE9 female BALB/c nude mice (InVivos, Singapore) were injected subcutaneously in the right flank with control RD cells (10 \u00d7 106). Once tumors were palpable, one group (n\u00a0=\u00a010/group) was injected intraperitoneally with vehicle (5% DMSO in PBS), and the other with UNC0642 (5 mg/kg body weight in 5% DMSO) every alternate day. Tumor diameter and volume were calculated as described (Bhat et al., 2019). Resected tumors were fixed and paraffin sections were immunostained with various antibodies. To determine the role of Wnt signaling, one group of mice were injected with RD shcontrol cells (n\u00a0=\u00a010/group) and two groups with RD shEHMT2 cells. Once tumors were palpable, the control group and one shEHMT2 group were injected intraperitoneally with control vehicle (2% DMSO in corn oil), and one group of shEHMT2 mice was injected with LGK974 (5 mg/kg body weight in 2% DMSO). Tumor growth and body weight were recorded as described (Bhat et al., 2019). All animal procedures were approved by the Institutional Animal Care and Use Committee.\n\n### Immunohistochemistry\n\nParaffin sections from 16 primary ERMS archival tumor specimens and three normal muscles from National University Hospital (NUH) and KK Women\u2019s and Children Hospital in Singapore were analyzed by IHC using anti-EHMT2 antibody (1:50 dilution, Cell Signaling) as described (Bhat et al., 2019). Negative controls were performed using secondary antibody only. Images were captured with Olympus BX43 microscope (Ina-shi, Nagano, Japan). Approval was obtained from the ethics committee (IRB) at NUS. For IHC on mouse xenografts, sections were incubated with anti-EHMT2 (1:200, Abcam), anti-H3K9me2 (Abcam), anti-Ki67 (Leica Biosystems), anti-active-\u00df-catenin (1:300; Merck Millipore), anti-MHC (#M4276 1:200 Sigma-Aldrich), and\u00a0anti-DKK1 (#ab61034 Abcam) antibodies followed by biotinylated goat anti-rabbit/anti-mouse IgG (H+L) secondary antibody (Vector Laboratories). Sections were washed and incubated with Vectastain Avidin\u2013Biotin Complex (Vector Laboratories) for 20 min at 37\u00b0C.\n\n### Statistical analysis\n\nFor statistical analysis, two-tailed non-parametric unpaired t-test was used to evaluate significance with the use of GraphPad prism 9.0 software. Each experiment had three biological replicates. Standard error of mean (SEM) was calculated for all data sets and a p-value less than 0.05 was considered statistically significant. *p\u22640.05, **p\u22640.01, ***p\u22640.001, ****p\u22640.0001. For in vivo experiments repeat-measure two-way ANOVA was used to calculate the statistical significance between different groups.\n",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "3aedba40-f051-431a-a604-f444bed574e2",
+      "submission_id": "5e5d7827-77bd-49bc-9bdc-2587f0638238",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maureen E Murphy, The Wistar Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57683.sa1](https://doi.org/10.7554/eLife.57683.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for sending your article entitled \"Deregulation of the histone H3K9 dimethylation landscape suppresses Wnt signaling in embryonal rhabdomyosarcoma\" for peer review at eLife. Your article has been evaluated by three peer reviewers, and the evaluation was overseen by Maureen Murphy as the Senior and Reviewing Editor.\n\nSummary:\n\nPal et al. report on G9a inhibition as a potential therapeutic vulnerability in embryonal rhabdomyosarcoma through an indirect suppression of DKK1 via CDK1 mediated phosphorylation of SP1, releasing canonical Wnt signaling and myogenic differentiation. In patient derived cell lines and mouse xenografts, knock down of G9a, through chemical inhibition or siRNA, reduces tumor cell viability. Molecular studies confirm an association of SP1 and P300 on the DKK1(a Wnt signaling antagonist) promoter, and suggest that G9a inhibition is associated with CDK1 activation and phosphorylation of SP1. Phospho-SP1 demonstrates reduced DNA binding affinity and thus the authors suggest that this drives transcriptional down-regulation of DKK1.\n\nThe manuscript describes a comprehensive analysis, presented in step-wise and logical fashion. However the main conclusions presented are not as well supported as they could be, and in some instances the results are difficult to follow. Of critical concern is the authors repeated mention, including in the title, that the methyltransferase activity of G9a is directly implicated in the down-regulation of CDK1 \u2013 however data in support of this claim are not provided (e.g. H3K9me2 occupancy at CDK1). Additional details are needed to replicate the methods and the experiments appear to be inconsistently performed among the cell lines studied, further weakening the conclusions presented.\n\nMajor concerns:\n\n1) Experiments are applied inconsistently among the 3 ERMS cell lines studied across different stages of the analysis. For example, the initial drug screen, where G9a is identified as a target, is performed in JR1 and RD. Colony formation is done in JR1, only whereas shG9a experiments are performed in RD. Finally, DKK1 knockdown and G9a ChIP-seq is performed in RD18. This, in combination with sparse information in parts of the methods, hinders the ability to evaluate findings and thus conclusions drawn.\n\n2) The major finding that G9a inhibition could be an effective treatment option for ERMS, needs to be strengthened. In the drug screen control cell lines are not used, whereas they are used in other aspects of study, for example the HSMM cell is used as normal comparator in the qPCR experiments. Control lines are required to demonstrate specificity of G9a inhibition at concentrations used. This is essential to conclude that G9a activation is of particular relevance to ERMS.\n\n3) Can the authors address: Is loss of Dkk1 expression a direct effect of loss of G9a function at its promoter? Does G9a directly occupy the Dkk1 promoter?\n\n4) The mechanism for the effect of G9a silencing/inhibition with regard to Sp1 binding to p300 is the weakest part of the manuscript. It appears to be shown in one cell line, using one technique (PLA), for one gene (DKK1). As this is the truly important piece of data (particularly given the extremely modest effect of G9a inhibitors on ERMS xenografts), this mechanistic aspect would need to be significantly improved in a revised version. Specifically: can the authors show this effect by IP-western, with data that include steady state levels of Sp1 and p300? Can they address: does this impact on other Sp1-regulated genes? (If so, why didn't Sp1 come out in the Go analysis of the RNA Seq data?). Also this needs to be repeated in another ERMS cell line. With regard to their PLA data, the authors need the required controls for their PLA, such as the use of only one antibody. Finally, the authors should perform PLA on their \u201cnormal control\u201d cells used in Figure 1, to indicate whether this effect is tumor cell specific or not.\n",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a21474c8-daba-452f-bc0d-6e4292fc99c0",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C1",
+      "claim": "Rhabdomyosarcoma (RMS) is the most common malignant soft tissue sarcoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhabdomyosarcoma (RMS) is the most common malignant soft tissue sarcoma (Hawkins et al., 2013; Keller and Guttridge, 2013; Hettmer et al., 2014) that arises due to a block in myogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "e7380f0a-3f10-4f87-ad69-d69187f2c958",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C2",
+      "claim": "RMS arises due to a block in myogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhabdomyosarcoma (RMS) is the most common malignant soft tissue sarcoma (Hawkins et al., 2013; Keller and Guttridge, 2013; Hettmer et al., 2014) that arises due to a block in myogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "d3552231-09eb-4cd8-b109-b466c6182ccb",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C3",
+      "claim": "Children with high risk RMS disease have poor prognosis with only 30% showing 5-year event-free survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Children with high risk disease have poor prognosis with only 30% showing 5-year event-free survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of clinical outcome data from established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "d68a4e75-3bc1-463b-a980-02ae19c92de6",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C4",
+      "claim": "Embryonal rhabdomyosarcoma (ERMS) accounts for the majority (~60%) of all RMS cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryonal rhabdomyosarcoma (ERMS) accounts for the majority (~60%) of all RMS cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of epidemiological data from established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "60c44ef9-9457-4d67-84d2-778a29b27587",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C5",
+      "claim": "No single genetic lesion is linked to ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "No single genetic lesion is linked to ERMS but chromosome gains (chr 2, 8, 12, and 13) and loss of heterozygosity at 11p15.5 are characteristically seen (Shern et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "e3d8f398-9862-47fb-b8e6-73d55b586abe",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C6",
+      "claim": "Chromosome gains (chr 2, 8, 12, and 13) and loss of heterozygosity at 11p15.5 are characteristically seen in ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "No single genetic lesion is linked to ERMS but chromosome gains (chr 2, 8, 12, and 13) and loss of heterozygosity at 11p15.5 are characteristically seen (Shern et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "13951d52-d1c9-4bc7-8768-5be01eb8a8aa",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C7",
+      "claim": "Recurrent mutations in ERMS include mutations in p53 (TP53), amplification of CDK4, upregulation of MYCN, and point mutations in RAS leading to its activation.",
+      "claim_type": "EXPLICIT",
+      "source": "A few recurrent mutations occur in ERMS that include mutations in p53 (TP53), amplification of CDK4, upregulation of MYCN, and point mutations in RAS leading to its activation (Hawkins et al., 2013; Shern et al., 2014; Zhu and Davie, 2015; Skapek et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "dff8b873-197c-47c6-b457-7d694ff31bce",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C8",
+      "claim": "EZH2 that mediates repressive histone H3 lysine 27 trimethylation (H3K27me3) is upregulated and binds to muscle specific genes in ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, EZH2 that mediates repressive histone H3 lysine 27 trimethylation (H3K27me3) is upregulated and binds to muscle specific genes in ERMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about EZH2 function in ERMS",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "c76fc7b6-cc4c-4241-b551-06a2217e72e3",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C9",
+      "claim": "Silencing of EZH2 increases both MyoD binding and transcription of target genes in ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Its silencing increases both MyoD binding and transcription of target genes (Ciarapica et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "331bf22b-fd72-4dcf-ad5a-017a97768fff",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C10",
+      "claim": "HDAC inhibitors induce differentiation and reduce self-renewal and migratory capacity of ERMS by regulating Notch-1 and EphrinB1-mediated pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, HDAC inhibitors have been found to induce differentiation and reduce self-renewal and migratory capacity of ERMS by regulating Notch-1 and EphrinB1-mediated pathways (Vleeshouwer-Neumann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "d7d8d636-3cb6-4757-9086-89f85ca0eb6f",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C11",
+      "claim": "Overexpression of the lysine methyltransferase SUV39H1 suppresses tumor formation in KRASG12D-driven zebrafish model of ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, overexpression of the lysine methyltransferase SUV39H1 suppresses tumor formation in KRASG12D-driven zebrafish model of ERMS (Albacker et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "3ec297e9-0c56-4dec-8cec-9ad7f7f1adfb",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C12",
+      "claim": "Double mutants lacking p53 and c-fos (Trp53-/-/Fos-/-) develop ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Double mutants lacking p53 and c-fos (Trp53-/-/Fos-/-) develop ERMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of genetic model data from established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "f83ac584-6fc1-4bfd-a611-45fa6e246c3e",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C13",
+      "claim": "Elevated expression of Wnt antagonists dickkopf-related protein 1 (DKK1) and secreted frizzled-related proteins (sFRPs), as well as downregulation of Wnt agonists such as Wnt ligands Wnt 7b, Wnt 5a, Wnt four, and Wnt 11 were reported in Trp53-/-/Fos-/- tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated expression of Wnt antagonists dickkopf-related protein 1 (DKK1) and secreted frizzled-related proteins (sFRPs), as well as downregulation of Wnt agonists such as Wnt ligands Wnt 7b, Wnt 5a, Wnt four, and Wnt 11 were reported in these tumors (Singh et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "44a97550-1f58-497c-847b-f27a6c185d4b",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C14",
+      "claim": "Mice expressing activated smoothened under the Fabp4 promoter leading to activation of Hedgehog signaling develop ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice expressing activated smoothened under the Fabp4 promoter leading to activation of Hedgehog signaling also develop ERMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of genetic model data from established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "1d5b5ac7-4258-448d-8727-7bce6a76299c",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C15",
+      "claim": "ERMS tumors from mice expressing activated smoothened show upregulation of Dkk3 which inhibits canonical Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumors also show upregulation of Dkk3 which, similar to Dkk1, inhibits canonical Wnt signaling (Hatley et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "7ae406a0-ed6b-4bda-bb07-50533eafc823",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C16",
+      "claim": "GSK3\u03b2 inhibitors that activate Wnt signaling were most effective inducers of differentiation in a zebrafish model of ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, GSK3\u03b2 inhibitors that activate Wnt signaling were most effective inducers of differentiation in a zebrafish model of ERMS (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "707e2a5a-a635-4c19-879e-815b289d6d30",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C17",
+      "claim": "Downregulation of Wnt signaling was found to be relevant only in ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly downregulation of Wnt signaling was found to be relevant only in ERMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about Wnt signaling in RMS subtypes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "9f239185-5e64-4962-84d8-2ba3d11ffdb0",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C18",
+      "claim": "There are 19 Wnt ligands, which function either through the canonical or non-canonical pathways in a highly context-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "There are 19 Wnt ligands, which function either through the canonical or non-canonical pathways in a highly context-dependent manner (Masuda and Ishitani, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "a900c116-51ab-41f1-a439-57f24c7070e4",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C19",
+      "claim": "Canonical Wnt signaling is activated when Wnt ligands bind to a receptor from the Frizzled (Fzd) family.",
+      "claim_type": "EXPLICIT",
+      "source": "Canonical signaling is activated when Wnt ligands bind to a receptor from the Frizzled (Fzd) family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established molecular mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "8810b64a-ae99-435c-bb79-23ee0652ac00",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C20",
+      "claim": "The co-receptors LRP5/6 facilitate Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-receptors LRP5/6 facilitate Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established molecular mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "fd11aebf-bb27-47f8-8d93-14f66b9a2f76",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C21",
+      "claim": "Activation of Wnt signaling leads to disruption of the destruction complex (APC, Axin, GSK3\u03b2, and CK1\u03b1) which phosphorylates and degrades \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Wnt signaling leads to disruption of the destruction complex (APC, Axin, GSK3\u03b2, and CK1\u03b1) which phosphorylates and degrades \u03b2-catenin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established molecular mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "c5363221-3f25-4469-a4b0-47f6442fb294",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C22",
+      "claim": "Induction of Wnt signaling results in accumulation of non-phosphorylated \u03b2-catenin (active \u03b2-catenin).",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of Wnt signaling results in accumulation of non-phosphorylated \u03b2-catenin (active \u03b2-catenin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established molecular mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "3459d612-882c-43a3-8ca1-3e2e10c12b81",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C23",
+      "claim": "\u03b2-catenin translocates to the nucleus where it activates genes in cooperation with TCF/LEF1, but also other transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-catenin then translocates to the nucleus where it activates genes in cooperation with TCF/LEF1, but also other transcription factors (Masuda and Ishitani, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "f9a64812-5ebb-4f71-86a5-23d4dd298134",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C24",
+      "claim": "Neither of the two non-canonical Wnt pathways (Planar Cell Polarity pathway [PCP] and the Wnt/calcium signaling pathway) involve \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither of the two non-canonical pathways (Planar Cell Polarity pathway [PCP] and the Wnt/calcium signaling pathway) involve \u03b2-catenin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established molecular mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "3614d3e0-aef8-4cef-8ac6-93d5061d6575",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C25",
+      "claim": "Dkk1, a secreted protein, interacts with Lrp5/6 and antagonizes Wnt signaling by preventing Lrp5/6 association with Wnt/Fzd complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Dkk1, a secreted protein, interacts with Lrp5/6 and antagonizes Wnt signaling by preventing Lrp5/6 association with Wnt/Fzd complex (Niehrs, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "9ad3eae4-4c48-4620-8381-dc430e13cce3",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C26",
+      "claim": "EHMT2, a lysine methyltransferase that is encoded by the EHTM2 gene, mediates mono and di-methylation of H3K9 (H3K9me1/2), which is primarily involved in transcriptional repression.",
+      "claim_type": "EXPLICIT",
+      "source": "EHMT2, a lysine methyltransferase that is encoded by the EHTM2 gene, mediates mono and di-methylation of H3K9 (H3K9me1/2), which is primarily involved in transcriptional repression (Shinkai and Tachibana, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "c4951ba2-5763-4a46-96cb-978306c81a6a",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C27",
+      "claim": "EHMT2 can also function as an activator in methylation-independent and -dependent ways.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies however have shown that EHMT2 can also function as an activator in methylation-independent and -dependent ways (Shankar et al., 2013; Casciello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "9b37b823-27c0-4029-8ad2-37bc0972b955",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C28",
+      "claim": "EHMT2 has been proposed to have oncogenic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "EHMT2 has been proposed to have oncogenic functions and its overexpression in leukemia, gastric, lung, prostate cancer, and alveolar RMS causes silencing of tumor suppressor genes through its H3K9me2 activity (Shankar et al., 2013; Casciello et al., 2015; Bhat et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "c2eccba2-1185-4d68-9d1b-45c120e0d3fe",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C29",
+      "claim": "Overexpression of EHMT2 in leukemia, gastric, lung, prostate cancer, and alveolar RMS causes silencing of tumor suppressor genes through its H3K9me2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "EHMT2 has been proposed to have oncogenic functions and its overexpression in leukemia, gastric, lung, prostate cancer, and alveolar RMS causes silencing of tumor suppressor genes through its H3K9me2 activity (Shankar et al., 2013; Casciello et al., 2015; Bhat et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "80300249-c4c8-4a63-857d-898cf91789c8",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C30",
+      "claim": "EHMT2 is overexpressed in ARMS.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported that EHMT2 is overexpressed in ARMS (Bhat et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature from the authors' previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "15f220cd-01d9-47bf-94cb-c89e053e23ba",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C31",
+      "claim": "EHMT2 shows high nuclear expression in 16 ERMS patient tumor sections relative to normal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "High nuclear expression relative to normal muscle was apparent (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "35396460-ca8f-4acd-a59c-e9e82537fceb",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C32",
+      "claim": "EHMT2 is overexpressed at both mRNA and protein levels in three ERMS patient-derived cell lines RD18, JR1, and RD compared to primary human skeletal muscle myoblasts (HSMMs).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, compared to primary human skeletal muscle myoblasts (HSMMs), EHMT2 overexpression at both mRNA and protein levels was apparent in three ERMS patient-derived cell lines RD18, JR1, and RD (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR and western blot data shown in Figure 1B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "07925d31-81e1-4170-a035-c36b6901f404",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C33",
+      "claim": "Drugs targeting BRD4, PRMT5, and EHMT2 showed a strong effect on viability of JR1 and RD cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Drugs targeting BRD4, PRMT5, and EHMT2 showed a strong effect on viability of both cell lines (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by drug screening data shown in Figure 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "166abbd3-23ef-44a9-9dde-44afae164ded",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C34",
+      "claim": "UNC0642 showed significantly higher efficacy against RD cells when compared to HSMM in cell viability assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, UNC0642 showed significantly higher efficacy against RD cells when compared to HSMM in cell viability assays (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell viability assay data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "df7f0cdc-aa3f-40f9-87af-a9384eb335bc",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C35",
+      "claim": "Treatment of both JR1 and RD cells with UNC0642 led to a striking reduction in colony formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our drug screening assay, treatment of both JR1 and RD cells with UNC0642, a small molecule inhibitor of EHMT2 led to a striking reduction in colony formation (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "76e5a5f6-4069-4887-8acf-18a93af8367e",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C36",
+      "claim": "EHMT2 is overexpressed and functionally relevant in ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that EHMT2 is overexpressed and functionally relevant in ERMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental results including IHC, qPCR, western blot, and drug screening data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "7cb73f02-e4a8-4b45-94aa-76d5470d50c3",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C37",
+      "claim": "EHMT2 knockdown in RD18, JR1, and RD cells resulted in increased myogenic differentiation as evidenced from increased MHC expression and MYOG expression.",
+      "claim_type": "EXPLICIT",
+      "source": "EHMT2 knockdown (siEHMT2 cells) as well as UNC0642 treatment resulted in increased myogenic differentiation relative to their respective controls as evidenced from the increased MHC expression, a terminal differentiation marker, as well as MYOG, an early differentiation marker (Figure 2C, Figure 2\u2014figure supplement 1C, and Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence, western blot, and qPCR data shown in Figure 2C and supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "35caa606-cc53-4014-b425-a3baa9ebde50",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C38",
+      "claim": "UNC0642 treatment resulted in increased myogenic differentiation as evidenced from increased MHC expression and MYOG expression.",
+      "claim_type": "EXPLICIT",
+      "source": "EHMT2 knockdown (siEHMT2 cells) as well as UNC0642 treatment resulted in increased myogenic differentiation relative to their respective controls as evidenced from the increased MHC expression, a terminal differentiation marker, as well as MYOG, an early differentiation marker (Figure 2C, Figure 2\u2014figure supplement 1C, and Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence, western blot, and qPCR data shown in Figure 2C and supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "54346f8a-874b-4867-8050-5b4138d065a9",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C39",
+      "claim": "Both siEHMT2 cells and UNC0642 treatment resulted in a significant decrease in BrdU+ cells compared to their respective control in RD18 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both siEHMT2 cells and UNC0642 treatment resulted in a significant decrease in BrdU+ cells compared to their respective control in RD18 cells (Figure 2D, Figure 2\u2014figure supplement 1D, and Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU incorporation assay data shown in Figure 2D and supplements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "f0845060-06cf-494d-840b-1f940602ab5e",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C40",
+      "claim": "Stable EHMT2 knockdown in RD cells resulted in increased MHC levels and decreased BrdU+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, stable EHMT2 knockdown in RD cells also resulted in increased MHC levels and decreased BrdU+ cells (Figure 2\u2014figure supplement 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot and BrdU incorporation assay data shown in Figure 2 supplement 2E-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "1a0d5875-331b-469c-ac8f-d607934df675",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C41",
+      "claim": "A striking reduction in colony formation was seen in shEHMT2 RD cells compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking reduction in colony formation was also seen in shEHMT2 RD cells compared to controls (Figure 2\u2014figure supplement 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assay data shown in Figure 2 supplement 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "08a5b6ba-158e-4c83-b98c-3c2200b19916",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C42",
+      "claim": "EHMT2 inhibition permits cells to exit the cell cycle and undergo myogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that EHMT2 inhibition permits cells to exit the cell cycle and undergo myogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental results showing increased differentiation and decreased proliferation upon EHMT2 inhibition",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "b3653623-ca2d-4c0c-9a42-387f9aa4ce82",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C43",
+      "claim": "872 genes were significantly upregulated in siEHMT2 cells compared to the control, of which 494 genes had a fold change >1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Volcano plot of differentially expressed genes (Figure 3B) revealed that 872 genes were significantly upregulated in siEHMT2 cells compared to the control, of which 494 genes had a fold change >1.2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-Seq data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "1895eaf4-e739-462d-867d-dc70cd9b4b7a",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C44",
+      "claim": "Among the 1098 genes that were significantly downregulated in siEHMT2 cells, 695 genes had a fold change >1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 1098 genes that were significantly downregulated in siEHMT2 cells, 695 genes had a fold change >1.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "d1c38185-3913-4e91-98e6-7dc860f077e6",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C45",
+      "claim": "Among the top 20 unique biological processes associated with differentially expressed genes in siEHMT2 cells were cell cycle progression and Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology (GO) analysis showed that among the top 20 unique biological processes associated with differentially expressed genes in siEHMT2 cells were cell cycle progression and Wnt signaling (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO analysis of RNA-Seq data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "926cfa74-7974-4789-9423-f125bdd6cdad",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C46",
+      "claim": "Negative regulators of the Wnt pathway such as DKK1, DKK3, and ITGA3 were downregulated in siEHMT2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, negative regulators of the Wnt pathway such as DKK1, DKK3, and ITGA3 (Shukrun et al., 2014; Kato et al., 2011) were downregulated in siEHMT2 cells, whereas positive regulators such as WNT3 and FRAT2 were upregulated (Figure 3\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-Seq data shown in Figure 3 supplement 1A and B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "388a17b7-5537-4acf-be71-6837e891f8fd",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C47",
+      "claim": "Positive regulators of the Wnt pathway such as WNT3 and FRAT2 were upregulated in siEHMT2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, negative regulators of the Wnt pathway such as DKK1, DKK3, and ITGA3 (Shukrun et al., 2014; Kato et al., 2011) were downregulated in siEHMT2 cells, whereas positive regulators such as WNT3 and FRAT2 were upregulated (Figure 3\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-Seq data shown in Figure 3 supplement 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "5791fde3-6932-40c8-91e7-22d4791d4fe2",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C48",
+      "claim": "Downregulation of DKK1 mRNA was apparent in RD18 siEHMT2 cells compared to control cells by qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the transcriptomic data, downregulation of DKK1 mRNA was apparent in RD18 siEHMT2 cells compared to control cells by qPCR (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "443bc2f5-57b7-47c2-a566-93a9223cc5c6",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C49",
+      "claim": "UNC0642 treatment resulted in a decrease in DKK1 mRNA expression in RD18 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly UNC0642 treatment also resulted in a decrease in DKK1 mRNA expression in RD18 cells (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "6bc7d0f1-9342-4e40-a4ae-94aaaa88b11a",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C50",
+      "claim": "DKK1 protein levels decreased in both siEHMT2 and UNC0642 RD18-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DKK1 protein levels also decreased in both siEHMT2 and UNC0642 RD18-treated cells (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 3F and G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "888d6e28-82ec-4727-91ff-08d35749e139",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C51",
+      "claim": "The reduction in DKK1 levels correlated with increased active-\u00df-catenin in siEHMT2 cells in RD18, RD shEHMT2 cells and upon UNC0642 treatment in RD18.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the reduction in DKK1 levels correlated with increased active-\u00df-catenin in siEHMT2 cells (Figure 3H) in RD18, RD shEHMT2 cells (Figure 3I) and upon UNC0642 treatment in RD18 (Figure 3J) when compared to their respective controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 3H, I, and J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "d94e76c0-3187-4bb2-8bfd-f0ffd7e9be3e",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C52",
+      "claim": "Loss of EHMT2 leads to downregulation of DKK1 with concomitant activation of canonical Wnt signaling and myogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that loss of EHMT2 leads to downregulation of DKK1 with concomitant activation of canonical Wnt signaling and myogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental results showing DKK1 downregulation, active \u03b2-catenin increase, and differentiation upon EHMT2 loss",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "23c8468c-a459-4444-a2a4-afad75dc3a72",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C53",
+      "claim": "EHMT2 enrichment was found mostly at gene promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "EHMT2 enrichment was found mostly at gene promoters (Figure 4A) and its occupancy was apparent at the DKK1 promoter (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "0eb7e0b8-f0be-4d5d-a497-f8a110d24b1d",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C54",
+      "claim": "EHMT2 occupancy was apparent at the DKK1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "EHMT2 enrichment was found mostly at gene promoters (Figure 4A) and its occupancy was apparent at the DKK1 promoter (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "f2b7a754-332d-47c2-bd9b-504eaa47040c",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C55",
+      "claim": "A significant enrichment of EHMT2 was seen at the DKK1 promoter by ChIP-PCR in RD18 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate these results, ChIP-PCR was done in RD18 cells. A significant enrichment was seen indicating that EHMT2 directly binds to the DKK1 promoter (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-PCR data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "aaceeb6e-abde-48f4-9bd1-e7f373717f3b",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C56",
+      "claim": "EHMT2 directly binds to the DKK1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate these results, ChIP-PCR was done in RD18 cells. A significant enrichment was seen indicating that EHMT2 directly binds to the DKK1 promoter (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-PCR data shown in Figure 4C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "36790bf9-6c3e-4b33-9877-b05fedcdaf81",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C57",
+      "claim": "Chromatin regions before and after the EHMT2 peak at the DKK1 promoter showed no significant EHMT2 enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "To further ascertain the specificity of EHMT2 occupancy at the DKK1 promoter, we performed ChIP-PCR at chromatin regions before and after the EHMT2 peak at the promoter. Neither region showed significant EHMT2 enrichment (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-PCR data shown in Figure 4D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "2817ece6-3ef5-43cc-8f09-40bb178227ca",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C58",
+      "claim": "KLF7 was one of the top DNA motifs associated with EHMT2-predicted binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Homer analysis of the ChIP-seq data for DNA motif enrichment at predicted EHMT2 binding sites revealed KLF7 as one of the top DNA motifs associated with EHMT2-predicted binding sites (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Homer analysis of ChIP-seq data shown in Figure 4 supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "b847f309-cb37-4bb5-b97a-195355d7a855",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C59",
+      "claim": "Sp1 occupancy was detected at the DKK1 promoter in RD18 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these studies, Sp1 occupancy was detected at the DKK1 promoter (Figure 4F) in RD18 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-PCR data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "a5df2819-85ad-4b60-952c-2fcd4a05ec88",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C60",
+      "claim": "Both Sp1 and p300 enrichment were decreased upon treatment with UNC0642 compared to control RD18 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, both Sp1 and p300 enrichment were decreased upon treatment with UNC0642 compared to control RD18 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-PCR data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "b2c74098-3a52-418e-85b1-ad181cfabc43",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C61",
+      "claim": "A reduction in H3K9ac, a mark of transcriptional activation, was apparent in RD18 cells upon UNC0642 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, a reduction in H3K9ac, a mark of transcriptional activation, was apparent in RD18 cells (Figure 4G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-PCR data shown in Figure 4G-I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "0d800657-8d5a-4025-be30-95d91774c184",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C62",
+      "claim": "A decrease in p300 and H3K9ac occupancy was observed in shEHMT2 RD cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A decrease in p300 and H3K9ac occupancy was also observed in shEHMT2 RD cells (Figure 4\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-PCR data shown in Figure 4 supplement 1B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "f6448f0e-e75c-400d-8d49-45dc2ce0ce26",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C63",
+      "claim": "The interaction between Sp1 and p300 decreased upon UNC0642 treatment in both RD18 and RD cell lines, as well as in HSMM.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between Sp1 and p300 decreased upon UNC0642 treatment in both RD18 and RD cell lines, as well as in HSMM (Figure 4J and Figure 4\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proximity ligation assay data shown in Figure 4J and Figure 4 supplement 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "11210d6a-7479-4c0d-b26a-c3a8a0b16504",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C64",
+      "claim": "EHMT2-Sp1 and EHMT2-p300 interaction remained unchanged upon UNC0642 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, EHMT2-Sp1 and EHMT2-p300 interaction remained unchanged (Figure 4\u2014figure supplement 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proximity ligation assay data shown in Figure 4 supplement 1F and G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "c7b53911-7118-4612-98ad-6814563c6441",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C65",
+      "claim": "Immunoprecipitation with anti-Sp1 antibody confirmed a decrease in p300 association upon UNC0642 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate the PLA data, we examined Sp1\u2013p300 interaction under UNC0642 treatment in RD cells by immunoprecipitation assays. Immunoprecipitation with anti-Sp1 antibody confirmed a decrease in p300 association upon UNC0642 treatment (Figure 4K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoprecipitation data shown in Figure 4K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "8d518ede-c7f3-4922-9a0c-7d48b88a1157",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C66",
+      "claim": "EHMT2 binding at the promoter results in increased Sp1 and p300 occupancy and active transcription of DKK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results indicate that EHMT2 binding at the promoter results in increased Sp1 and p300 occupancy and active transcription of DKK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from ChIP-PCR, PLA, and IP data showing EHMT2 occupancy at DKK1 promoter and its impact on Sp1/p300 recruitment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "c537d741-586e-4c76-b47b-e6c930b4b510",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C67",
+      "claim": "DKK1 was overexpressed in all three ERMS cell lines compared to HSMM at both mRNA and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlating with high endogenous EHMT2 expression, DKK1 was also overexpressed in all three lines compared to HSMM at both mRNA and protein levels (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR and western blot data shown in Figure 5A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "8ffe1bf4-448c-4d50-9feb-eb483325f1f7",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C68",
+      "claim": "DKK1 knockdown in RD18 cells resulted in an increase in active-\u00df-catenin levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to EHMT2 knockdown, DKK1 knockdown in RD18 cells resulted in an increase in active-\u00df-catenin levels indicating an upregulation of canonical Wnt signaling (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "8d835d3e-0d9d-4bba-994c-dc48c308a66c",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C69",
+      "claim": "DKK1 knockdown in RD18 cells resulted in a significant decrease in BrdU+ cells compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, analogous to EHMT2 knockdown, DKK1 knockdown in RD18 cells resulted in a significant decrease in BrdU+ cells compared to control cells (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU incorporation assay data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "aac9f233-8db4-40e0-810d-ec45523c3cfc",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C70",
+      "claim": "DKK1 knockdown resulted in increased differentiation as evidenced by elevated MHC levels and MYOG expression in RD18 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A corresponding increase in differentiation was also apparent by elevated MHC levels and MYOG expression in RD18 cells (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot, immunofluorescence, and qPCR data shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "b7da0073-df3a-47a1-8a67-78fa45bb8a1e",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C71",
+      "claim": "A similar decrease in BrdU+ cells and increase in MHC levels upon DKK1 knockdown were observed in RD cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar decrease in BrdU+ cells and increase in MHC levels upon DKK1 knockdown were observed in RD cells (Figure 5\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU incorporation assay and western blot data shown in Figure 5 supplement 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "cb8cc57b-9268-485b-b56e-037850fb6f25",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C72",
+      "claim": "Recombinant DKK1 (rDKK1) added to siEHMT2 cells resulted in the reduction of active \u03b2-catenin seen in siEHMT2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant DKK1 (rDKK1) was added to siEHMT2 cells for 24 hr that resulted in the reduction of active \u03b2-catenin seen in siEHMT2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by western blot data from rescue experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "80e9746e-06af-47eb-9259-7d5a33e28858",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C73",
+      "claim": "In the presence of rDKK1, the increase in MHC+ cells and MYOG expression in siEHMT2 cells was reversed to control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the presence of rDKK1, the increase in MHC+ cells and MYOG expression in siEHMT2 cells was reversed to control levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence and qPCR data from rescue experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "ac5b4c4c-bfe6-42a3-bab9-883295e86393",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C74",
+      "claim": "The decrease in BrdU+ cells upon EHMT2 knockdown were restored to levels comparable to control in the presence of rDKK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the decrease in BrdU+ cells upon EHMT2 knockdown were restored to levels comparable to control (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BrdU incorporation assay data shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "bbe52f00-154f-4ffd-88b0-c5e5d3f7d9e8",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C75",
+      "claim": "LGK974 reversed the effects of EHMT2 knockdown on proliferation, differentiation, and active \u03b2-catenin levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to rDKK1, LGK974 reversed the effects of EHMT2 knockdown on proliferation, differentiation, and active \u03b2-catenin levels (Figure 5G) indicating that EHMT2 mediates the differentiation block by activating DKK1 expression that in turn suppresses canonical Wnt signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot, immunofluorescence, qPCR, and BrdU incorporation assay data shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "be7ced24-a9f6-432f-94ed-47fa3da00117",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C76",
+      "claim": "EHMT2 mediates the differentiation block by activating DKK1 expression that in turn suppresses canonical Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to rDKK1, LGK974 reversed the effects of EHMT2 knockdown on proliferation, differentiation, and active \u03b2-catenin levels (Figure 5G) indicating that EHMT2 mediates the differentiation block by activating DKK1 expression that in turn suppresses canonical Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from rescue experiments with rDKK1 and LGK974",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "afd38edd-2139-48e7-8cd8-993c651332d0",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C77",
+      "claim": "Treatment with UNC0642 resulted in reduced tumor growth compared to the control group in RD cell xenografts without any significant changes in body weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with UNC0642 resulted in reduced tumor growth compared to the control group without any significant changes in body weight (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo xenograft data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "deab573b-1be6-4cb4-8d8e-46dfd1937b24",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C78",
+      "claim": "H3K9me2 decreased in tumors from mice treated with UNC0642.",
+      "claim_type": "EXPLICIT",
+      "source": "By immunohistochemical analysis (Figure 6B) we confirmed a decrease in H3K9me2 in tumors from mice treated with UNC0642 indicating efficacy of the drug in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "16727d37-1324-48f3-9845-eb093b2c69ba",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C79",
+      "claim": "The proliferation marker Ki67 was decreased in tumors from mice treated with UNC0642.",
+      "claim_type": "EXPLICIT",
+      "source": "The proliferation marker Ki67 was decreased, whereas MHC+ cells were increased in tumors from mice treated with UNC0642.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IHC data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "9f621dc7-fb94-42a7-b173-23249e2b8cb8",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C80",
+      "claim": "MHC+ cells were increased in tumors from mice treated with UNC0642.",
+      "claim_type": "EXPLICIT",
+      "source": "The proliferation marker Ki67 was decreased, whereas MHC+ cells were increased in tumors from mice treated with UNC0642.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IHC data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "ccd052ae-4803-40b8-8d33-9ba5fb10e9b3",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C81",
+      "claim": "DKK1 was decreased upon UNC0642 treatment in tumors, and correspondingly active-\u00df-catenin levels were elevated.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, DKK1 was decreased upon UNC0642 treatment, and correspondingly active-\u00df-catenin levels were elevated (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "611e65db-5f0e-4685-9e49-db0fbd312b0c",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C82",
+      "claim": "Tumor volume in mice injected with shEHMT2 cells was reduced compared to the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor volume in mice injected with shEHMT2 cells was reduced compared to the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo xenograft data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "4d18022b-c400-4cec-889a-eb21b84b48e6",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C83",
+      "claim": "Mice injected with shEHMT2 cells and treated with LGK974 showed tumor volumes comparable to the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mice injected with shEHMT2 cells and treated with LGK974 showed tumor volumes comparable to the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo xenograft data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "ba973186-328b-4f5a-9b56-0b6d5ff49b82",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C84",
+      "claim": "Body weight of mice did not show any significant changes over the course of treatment with LGK974.",
+      "claim_type": "EXPLICIT",
+      "source": "Body weight of mice did not show any significant changes over the course of this treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo xenograft data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "3feced9f-d981-425b-9182-a59f2e7417ff",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C85",
+      "claim": "EHMT2 expression was decreased in mice injected with shEHMT2 cells that correlated with decrease in Ki67+ cells and increase in MHC+ cells compared to tumors of the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, EHMT2 expression was decreased in mice injected with shEHMT2 cells that correlated with decrease in Ki67+ cells and increase in MHC+ cells compared to tumors of the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IHC data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "7bcd567e-bc7e-4c7b-9096-c7d3ed9cbc69",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C86",
+      "claim": "The alteration in Ki67 and MHC upon EHMT2 knockdown was not seen in the tumors from mice injected with shEHMT2 cells that underwent LGK974 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This alteration was however not seen in the tumors from mice injected with shEHMT2 cells that underwent LGK974 treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IHC data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "1f6838e2-a31d-4271-b421-c80a98bee5b9",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C87",
+      "claim": "The reduction in DKK1 and increase in active-\u00df-catenin in tumors from shEHMT2 injected mice were reversed upon LGK974 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the reduction in DKK1 and increase in active-\u00df-catenin in tumors from shEHMT2 injected mice were reversed in upon LGK974 treatment (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "4f1e8327-e415-4a3f-b9f1-6dcf9ea95bde",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C88",
+      "claim": "Inhibition of EHMT2 expression or activity promotes differentiation and reduces tumor progression by regulating Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our studies demonstrate that inhibition of EHMT2 expression or activity promotes differentiation and reduces tumor progression by regulating Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple in vitro and in vivo experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "e60db70e-7619-4ce5-80f4-4c2cbad4df4f",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C89",
+      "claim": "Integration of RNA-Seq and ChIP-Seq data showed many genes involved in myogenic differentiation, cell cycle progression, and metabolic pathways to be directly or indirectly regulated by EHMT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Integration of RNA-Seq and ChIP-Seq data (Figure 5\u2014figure supplement 1C) showed many genes involved in myogenic differentiation, cell cycle progression, and metabolic pathways (Figure 5\u2014figure supplement 1D\u2013F) to be directly or indirectly regulated by EHMT2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by integrated analysis of RNA-Seq and ChIP-Seq data shown in Figure 5 supplement 1C-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "1f2472eb-66d6-42c5-9efe-41f39d813da2",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C90",
+      "claim": "Genes involved in myogenic differentiation, cell cycle progression, and metabolic pathways, independent of Wnt signaling, may contribute to oncogenic effects of EHMT2 in ERMS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes, independent of Wnt signaling, may contribute to oncogenic effects of EHMT2 in ERMS cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on RNA-Seq and ChIP-Seq data analysis",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "1521955e-a537-4810-9b7a-fe71c5a0a99c",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C91",
+      "claim": "EHMT2 suppresses canonical Wnt signaling by activating expression of the Wnt antagonist DKK1.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that EHMT2 suppresses canonical Wnt signaling by activating expression of the Wnt antagonist DKK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental results showing EHMT2 regulation of DKK1 and Wnt signaling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "56c299c4-ec3d-43de-8cc1-6108df26fd33",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C92",
+      "claim": "Inhibition of EHMT2 expression or activity in human ERMS cell lines reduced DKK1 expression and elevated canonical Wnt signaling resulting in myogenic differentiation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of EHMT2 expression or activity in human ERMS cell lines reduced DKK1 expression and elevated canonical Wnt signaling resulting in myogenic differentiation in vitro and in mouse xenograft models in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple in vitro experimental results including knockdown, inhibitor treatment, and differentiation assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "1149dee1-56f3-4a31-a185-2c194a749c2e",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C93",
+      "claim": "Inhibition of EHMT2 expression or activity in human ERMS cell lines reduced DKK1 expression and elevated canonical Wnt signaling resulting in myogenic differentiation in mouse xenograft models in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of EHMT2 expression or activity in human ERMS cell lines reduced DKK1 expression and elevated canonical Wnt signaling resulting in myogenic differentiation in vitro and in mouse xenograft models in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo xenograft experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "061cbbdd-8a2e-446b-8793-9c2d41e7f6e3",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C94",
+      "claim": "EHMT2 impacted Sp1 and p300 enrichment at the DKK1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, EHMT2 impacted Sp1 and p300 enrichment at the DKK1 promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-PCR, PLA, and IP data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "1a838342-3cdc-4c70-9552-b018d5340502",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C95",
+      "claim": "The reduced tumor growth upon EHMT2 deficiency was reversed by recombinant DKK1.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced tumor growth upon EHMT2 deficiency was reversed by recombinant DKK1 or LGK974, which also inhibits Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo rescue experiment data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "57f35a93-5f55-4868-aaec-debbfc4773db",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C96",
+      "claim": "The reduced tumor growth upon EHMT2 deficiency was reversed by LGK974, which also inhibits Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced tumor growth upon EHMT2 deficiency was reversed by recombinant DKK1 or LGK974, which also inhibits Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo rescue experiment data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "21d223a7-2cf1-4523-8a68-8174eb09c564",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C97",
+      "claim": "Among 13 drugs targeting chromatin modifiers, EHMT2 inhibitors were highly effective in reducing ERMS cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, among 13 drugs targeting chromatin modifiers, EHMT2 inhibitors were highly effective in reducing ERMS cell viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by drug screening data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "f7ea7865-7068-4107-a885-10ebf5415bab",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C98",
+      "claim": "ERMS cells are vulnerable to EHMT2 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study demonstrates that ERMS cells are vulnerable to EHMT2 inhibitors and suggest that targeting the EHMT2-DKK1-\u03b2-catenin node holds promise for differentiation therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental results showing efficacy of EHMT2 inhibitors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "8d384734-2487-4fd3-95fd-b2a98dd84235",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C99",
+      "claim": "Targeting the EHMT2-DKK1-\u03b2-catenin node holds promise for differentiation therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study demonstrates that ERMS cells are vulnerable to EHMT2 inhibitors and suggest that targeting the EHMT2-DKK1-\u03b2-catenin node holds promise for differentiation therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion and speculation based on all experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "7859e368-b471-45fb-be09-3cbf333f9b9f",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C100",
+      "claim": "By activating DKK1 expression, EHMT2 maintains Wnt signaling in a repressed state, and thus prevents the transition of myoblasts to a differentiated state.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that by activating DKK1 expression, EHMT2 maintains Wnt signaling in a repressed state, and thus prevents the transition of myoblasts to a differentiated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "e35a32a3-ff5b-47b0-9c60-3047d41f4496",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C101",
+      "claim": "The suppression of Wnt signaling is a critical contributor to the differentiation block in ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression of Wnt signaling is a critical contributor to the differentiation block in ERMS, and induction of the pathway leads to cell cycle exit and differentiation (Singh et al., 2010; Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "38ce50cf-513f-414d-b070-a6565db7d8d4",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C102",
+      "claim": "Induction of the Wnt pathway leads to cell cycle exit and differentiation in ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression of Wnt signaling is a critical contributor to the differentiation block in ERMS, and induction of the pathway leads to cell cycle exit and differentiation (Singh et al., 2010; Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "ac5c76fb-6272-43d8-b2b7-25cf5ae51c51",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C103",
+      "claim": "RMS cells mostly do not stain positively for nuclear \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have demonstrated suppression of Wnt signaling in RMS cells, which mostly do not stain positively for nuclear \u03b2-catenin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge from multiple studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "d3def2de-e547-406f-b890-f819d49331ff",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C104",
+      "claim": "No mutations in the \u03b2 catenin gene have been reported in RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, no mutations in the \u03b2 catenin gene have been reported (Bouron-Dal Soglio et al., 2009; Annavarapu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "40afca57-bd4d-4da6-8b92-da74634f016b",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C105",
+      "claim": "GSK3\u00df is a constitutive serine/threonine protein kinase that inhibits canonical Wnt signaling by phosphorylating \u00df-catenin and triggering its degradation in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "GSK3\u00df is a constitutive serine/threonine protein kinase that inhibits canonical Wnt signaling by phosphorylating \u00df-catenin and triggering its degradation in the cytoplasm (Wu and Pan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "319aaee1-858f-4f8a-912a-7f35b0dac7a8",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C106",
+      "claim": "GSK3\u00df is involved in many pathways with more predicted substrates than any known kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, GSK3\u00df is involved in many pathways with more predicted substrates than any known kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about GSK3\u03b2",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "829577c0-6163-4d6c-87ad-d021a672c637",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C107",
+      "claim": "Inhibition of GSK3\u03b2 is not a specific strategy to induce Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, its inhibition is not a specific strategy to induce Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the broad substrate specificity of GSK3\u03b2",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "e111cf85-63ce-45eb-bc3c-ce6d66b3e627",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C108",
+      "claim": "Tideglusib, an irreversible GSK3\u00df inhibitor, was recently tested against RMS PDX models, where the highest safe dosage failed to both induce myogenic differentiation and affect cancer progression in PDX models.",
+      "claim_type": "EXPLICIT",
+      "source": "Tideglusib, an irreversible GSK3\u00df inhibitor, was recently tested against RMS PDX models, where the highest safe dosage failed to both induce myogenic differentiation and affect cancer progression in PDX models (Bharathy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "c8f12e72-7a0b-4f2c-ab30-0ff4864c40fc",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C109",
+      "claim": "EHMT2 activates DKK1 in a methylation-dependent manner resulting in the suppression of Wnt signaling in ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly EHMT2 activates DKK1 in a methylation-dependent manner resulting in the suppression of Wnt signaling in ERMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental results showing UNC0642 effects on DKK1 and Wnt signaling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "68f86f36-bc33-4db9-be81-7b3eece6e685",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C110",
+      "claim": "EHMT2 occupancy at the DKK1 promoter demonstrates that it directly regulates DKK1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "EHMT2 occupancy at its promoter demonstrates that it directly regulates DKK1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq and ChIP-PCR data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "5e552627-5e75-4c81-9f5b-01ebbbbc4768",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C111",
+      "claim": "Sp1 binds at the DKK1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, we found Sp1 binding at the DKK1 promoter and inhibition of EHMT2 led to its decreased occupancy along with the coactivator p300.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-PCR data and consistent with previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "05d5299b-bd2e-4fba-9c4e-82800f6405e5",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C112",
+      "claim": "Inhibition of EHMT2 led to decreased Sp1 occupancy at the DKK1 promoter along with the coactivator p300.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, we found Sp1 binding at the DKK1 promoter and inhibition of EHMT2 led to its decreased occupancy along with the coactivator p300.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-PCR data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "ab2177e2-db6d-456d-888a-e00acea778e6",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C113",
+      "claim": "RNA-seq analysis revealed de-regulation of several Sp1 target genes such as IGBP2, IGBP3, HB-EGF, FGFR1, CCND1, VEGFA, and VEGFC upon EHMT2 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RNA-seq analysis revealed de-regulation of several Sp1 target genes such as IGBP2, IGBP3, HB-EGF, FGFR1, CCND1, VEGFA, and VEGFC suggesting that the effect of EHMT2 inhibition on Sp1 transcriptional activity might not be limited to DKK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "973afd24-6be8-428f-907d-24a53a5eed65",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C114",
+      "claim": "The effect of EHMT2 inhibition on Sp1 transcriptional activity might not be limited to DKK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RNA-seq analysis revealed de-regulation of several Sp1 target genes such as IGBP2, IGBP3, HB-EGF, FGFR1, CCND1, VEGFA, and VEGFC suggesting that the effect of EHMT2 inhibition on Sp1 transcriptional activity might not be limited to DKK1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on RNA-seq data showing multiple Sp1 target genes affected",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "09dfc1ab-75cc-4bc4-a091-07c687e44a69",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C115",
+      "claim": "Application of DNMT inhibitors is restricted due to their toxicity in healthy cells.",
+      "claim_type": "EXPLICIT",
+      "source": "HDAC inhibitors often exert effects independent of their epigenetic roles (Vleeshouwer-Neumann et al., 2015) and application of DNMT inhibitors (Gnyszka et al., 2013) is restricted due to their toxicity in healthy cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "7f9564eb-c8b2-405b-ace6-9503563ee767",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C116",
+      "claim": "EZH2 inhibitors are the only other specific epigenetic inhibitors that demonstrate a strong phenotype in ERMS.",
+      "claim_type": "EXPLICIT",
+      "source": "EZH2 inhibitors are the only other specific epigenetic inhibitors that demonstrate a strong phenotype in ERMS (Ciarapica et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "91c30073-8ede-46e4-900d-2ce159bdff3e",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C117",
+      "claim": "A drug screen of 15 methyltransferase inhibitors in two different ERMS cell lines showed that small molecule inhibitors targeting EHMT2 activity are very effective.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, a drug screen of 15 methyltransferase inhibitors in two different ERMS cell lines showed that small molecule inhibitors targeting EHMT2 activity are very effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by drug screening data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "3bf36efb-c73c-4ddc-ba36-07902ea9f687",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C118",
+      "claim": "Deletion of EHMT2 does not impact development of muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data support targeting EHMT2 as a therapeutic approach in ERMS, particularly since its deletion does not impact development of muscle (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "50bb9744-5553-449c-8c3f-3d9fde32d5e8",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C119",
+      "claim": "EHMT2 is deregulated in ARMS.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently shown that EHMT2 is deregulated in ARMS as well (Bhat et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature from the authors' previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "2940e091-0ff6-4bef-8572-8e30849a2111",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "claim_id": "C120",
+      "claim": "The role of EHMT2 in ERMS and ARMS implies common features between these two subtypes of RMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the herein described role of EHMT2 in ERMS, these observations clearly suggest the importance of differentiation in these therapies and imply common features between these two subtypes of RMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on EHMT2 deregulation in both ERMS and ARMS",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cdb3d5cb-9c81-49ee-981a-cb156ce55e52",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Background claims establish that ERMS is the most common RMS subtype (~60% of cases), arises from blocked myogenic differentiation, has poor prognosis (30% 5-year survival for high-risk), and is characterized by specific chromosomal alterations and recurrent mutations rather than a single genetic lesion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established background claims supported by multiple literature citations (C1-C7). They provide appropriate context but represent prior knowledge rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work demonstrates that epigenetic mechanisms (EZH2, HDAC, SUV39H1) and Wnt signaling suppression are relevant in ERMS pathogenesis, with Wnt downregulation being ERMS-specific and GSK3\u03b2 inhibitors inducing differentiation in zebrafish models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C8-C17) are appropriately cited from published literature and establish the rationale for investigating epigenetic regulation of Wnt signaling in ERMS. They represent prior knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "f9ed1535-8af7-4f73-93b8-c83ec5e21660",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Canonical Wnt signaling operates through Wnt ligand binding to Frizzled receptors and LRP5/6 co-receptors, leading to disruption of the \u03b2-catenin destruction complex, accumulation of active \u03b2-catenin, and nuclear translocation for gene activation with TCF/LEF1. DKK1 antagonizes this pathway by preventing LRP5/6 association with Wnt/Fzd complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established mechanistic descriptions of Wnt signaling (C18-C25) supported by appropriate citations. They provide necessary background but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "95050ce9-0f8a-4724-af9c-12c8bc3ad38c",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EHMT2 is a lysine methyltransferase mediating H3K9me1/2 primarily for transcriptional repression, but can also function as an activator. It has oncogenic functions in multiple cancers including ARMS, where it causes tumor suppressor gene silencing through H3K9me2 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C26-C30) are well-supported by citations including the authors' prior work on ARMS. They establish the rationale for investigating EHMT2 in ERMS but represent prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "adb87007-a851-43f8-af5e-7c53deeed7ed",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EHMT2 is overexpressed in ERMS patient tumors and cell lines (RD18, JR1, RD) compared to normal muscle at both mRNA and protein levels. Drug screening of 13 methyltransferase inhibitors identified EHMT2 inhibitors (particularly UNC0642) as highly effective in reducing ERMS cell viability and colony formation with selectivity over normal muscle cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 are well-supported by IHC data from 16 patient samples, qPCR, western blots, drug screening assays, and colony formation assays (Figures 1A-G). The data consistently demonstrate EHMT2 overexpression and functional relevance. Statistical significance is shown (p\u22640.01-0.0001). This establishes EHMT2 as a relevant therapeutic target in ERMS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "a4b11d3b-d3e2-4989-8129-5c6ff938b82b",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "EHMT2 inhibition (by siRNA knockdown or UNC0642 treatment) promotes myogenic differentiation (increased MHC and MYOG expression) and reduces proliferation (decreased BrdU+ cells and colony formation) in multiple ERMS cell lines (RD18, JR1, RD), indicating that EHMT2 maintains the differentiation block.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 are strongly supported by consistent data across multiple cell lines using both genetic (siRNA, shRNA) and pharmacological (UNC0642) approaches. Multiple differentiation markers (MHC, MYOG) and proliferation assays (BrdU incorporation, colony formation) show concordant results with high statistical significance (p\u22640.0001) (Figures 2, supplements). The convergence of evidence from different experimental approaches strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNA-Seq analysis of EHMT2 knockdown cells revealed differential expression of 1970 genes (872 up, 1098 down), with GO analysis identifying Wnt signaling and cell cycle progression among top biological processes. EHMT2 loss specifically downregulates Wnt antagonists (DKK1, DKK3, ITGA3) and upregulates Wnt agonists (WNT3, FRAT2), leading to reduced DKK1 expression at mRNA and protein levels and increased active \u03b2-catenin, indicating activation of canonical Wnt signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C52 are well-supported by RNA-Seq data (n=3 biological replicates), qPCR validation, and western blots showing consistent changes in DKK1 and active \u03b2-catenin across multiple cell lines and experimental conditions (siRNA, shRNA, UNC0642) (Figure 3). The transcriptomic approach provides unbiased identification of pathways, and validation by orthogonal methods strengthens the findings. Statistical significance is demonstrated (p\u22640.05-0.001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ChIP-Seq and ChIP-PCR demonstrate that EHMT2 directly binds to the DKK1 promoter with high specificity. EHMT2 occupancy correlates with Sp1 and p300 enrichment at the DKK1 promoter, and EHMT2 inhibition reduces Sp1, p300, and H3K9ac occupancy as well as Sp1-p300 interaction (by PLA and IP), while EHMT2-Sp1 and EHMT2-p300 interactions remain unchanged. This indicates EHMT2 activates DKK1 transcription through modulation of Sp1/p300 recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C66 are supported by multiple complementary techniques: ChIP-Seq identifying genome-wide EHMT2 binding, ChIP-PCR validating specific DKK1 promoter occupancy with appropriate specificity controls (C57), motif analysis identifying KLF7/Sp1 sites, and PLA/IP demonstrating protein-protein interactions (Figures 4A-K). The mechanistic model is well-supported, though the precise mechanism by which EHMT2 methyltransferase activity affects Sp1-p300 interaction requires further investigation. The data are internally consistent across multiple cell lines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DKK1 is overexpressed in ERMS cell lines, and DKK1 knockdown phenocopies EHMT2 knockdown (increased active \u03b2-catenin, reduced proliferation, increased differentiation). Rescue experiments with recombinant DKK1 or the Wnt inhibitor LGK974 reverse the effects of EHMT2 knockdown on active \u03b2-catenin, differentiation (MHC, MYOG), and proliferation (BrdU), demonstrating that EHMT2 mediates the differentiation block through DKK1-dependent suppression of Wnt signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C76 provide critical epistasis experiments demonstrating that DKK1 functions downstream of EHMT2. The rescue experiments with both rDKK1 and LGK974 (an independent Wnt inhibitor) provide strong evidence for the proposed pathway (Figure 5). The consistency of rescue across multiple phenotypes (proliferation, differentiation, \u03b2-catenin levels) strengthens the mechanistic model. Statistical significance is demonstrated (p\u22640.01-0.0001). This is a key result establishing causality in the EHMT2\u2192DKK1\u2192Wnt axis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "957fcfc4-0977-451c-be62-68544f71a5cb",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In vivo xenograft experiments demonstrate that UNC0642 treatment reduces tumor growth without affecting body weight, with decreased H3K9me2, Ki67, and DKK1, and increased MHC and active \u03b2-catenin in tumors. Genetic EHMT2 knockdown (shRNA) also reduces tumor growth, but this effect is reversed by LGK974 treatment, confirming that EHMT2 inhibition promotes differentiation and reduces tumor progression through Wnt signaling activation in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C88 provide critical in vivo validation of the in vitro findings using both pharmacological (UNC0642) and genetic (shRNA) approaches with appropriate rescue experiments (LGK974) (Figure 6). The xenograft data show consistent effects on tumor growth, proliferation (Ki67), differentiation (MHC), and the DKK1/\u03b2-catenin axis. Sample sizes are adequate (n=10/group), and statistical analysis uses appropriate repeated-measures two-way ANOVA. The rescue experiment with LGK974 in vivo provides strong evidence for the proposed mechanism. However, only IHC data from 2 tumors per group are shown for molecular markers, which is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "59b91e0a-0864-4a23-9b29-47752382eb15",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Integration of RNA-Seq and ChIP-Seq data reveals that EHMT2 directly or indirectly regulates genes involved in myogenic differentiation, cell cycle progression, and metabolic pathways beyond Wnt signaling, suggesting additional mechanisms may contribute to EHMT2's oncogenic effects in ERMS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C90 are based on integrated genomic data (Figure 5 supplement 1C-F), but C90 is explicitly speculative ('may contribute'). While the data show EHMT2 regulates multiple pathways, the functional significance of non-Wnt targets is not experimentally validated. The rescue experiments demonstrate Wnt signaling is necessary for EHMT2's effects on differentiation and proliferation, but whether other pathways contribute independently remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "812edb9c-ceea-459e-aa45-c294cc2b52be",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study demonstrates that EHMT2 suppresses canonical Wnt signaling by activating DKK1 expression through Sp1/p300 recruitment, and that inhibiting EHMT2 (genetically or pharmacologically) reduces DKK1, elevates Wnt signaling, and promotes myogenic differentiation in vitro and in vivo. ERMS cells are vulnerable to EHMT2 inhibitors, and targeting the EHMT2-DKK1-\u03b2-catenin axis holds promise for differentiation therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C100 represent the main conclusions synthesizing all experimental results. The core mechanistic findings (C91-C96) are well-supported by the comprehensive data. C97-C98 are supported by the drug screening and functional assays. C99 is partially speculative ('holds promise') but is a reasonable conclusion based on the data. C100 represents the proposed model, which is well-supported by the experimental evidence. The convergence of genetic, pharmacological, in vitro, and in vivo data provides strong support for the overall conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "82d7599c-1720-4f61-b1b2-137511894d04",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Discussion claims establish that Wnt signaling suppression is critical for the ERMS differentiation block, RMS cells lack nuclear \u03b2-catenin and \u03b2-catenin mutations, GSK3\u03b2 has broad substrate specificity making it non-specific for Wnt activation, and GSK3\u03b2 inhibitor tideglusib failed in RMS PDX models, highlighting the need for alternative approaches to activate Wnt signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C108 are discussion points supported by appropriate citations to prior literature. They provide important context for why targeting EHMT2 is advantageous over GSK3\u03b2 inhibition, but represent prior knowledge rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "f22f472a-f31a-483c-9d77-b06d21b210c8",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion claims propose that EHMT2 activates DKK1 in a methylation-dependent manner (based on UNC0642 effects), directly regulates DKK1 through promoter occupancy, and affects Sp1 occupancy and p300 recruitment. RNA-seq reveals deregulation of multiple Sp1 target genes, suggesting EHMT2's effect on Sp1 transcriptional activity may extend beyond DKK1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C112 are supported by the experimental data, though the precise mechanism of methylation-dependent activation requires further investigation (the authors acknowledge this gap). C113 is supported by RNA-seq data. C114 is speculative ('might not be limited') but reasonable based on the data showing multiple Sp1 target genes affected. These represent appropriate interpretation and discussion of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    },
+    {
+      "id": "72077e02-0f0e-44db-962e-99a6ef3c81e8",
+      "content_id": "be7846f1-c488-4b23-8a90-b2c1b615652c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Discussion claims establish that DNMT inhibitors have toxicity limitations, EZH2 inhibitors are the only other specific epigenetic inhibitors effective in ERMS, the drug screen identified EHMT2 inhibitors as very effective, EHMT2 deletion doesn't impact muscle development, EHMT2 is also deregulated in ARMS, and the role of EHMT2 in both ERMS and ARMS implies common features between RMS subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C120 are discussion points supported by appropriate citations and the study's drug screening data (C117). They provide context for the therapeutic potential of EHMT2 inhibition and connect to the authors' prior work on ARMS. C120 is an inference that is reasonable but not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:53.346824Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a21474c8-daba-452f-bc0d-6e4292fc99c0",
+      "result_id": "cdb3d5cb-9c81-49ee-981a-cb156ce55e52"
+    },
+    {
+      "claim_id": "e7380f0a-3f10-4f87-ad69-d69187f2c958",
+      "result_id": "cdb3d5cb-9c81-49ee-981a-cb156ce55e52"
+    },
+    {
+      "claim_id": "d3552231-09eb-4cd8-b109-b466c6182ccb",
+      "result_id": "cdb3d5cb-9c81-49ee-981a-cb156ce55e52"
+    },
+    {
+      "claim_id": "d68a4e75-3bc1-463b-a980-02ae19c92de6",
+      "result_id": "cdb3d5cb-9c81-49ee-981a-cb156ce55e52"
+    },
+    {
+      "claim_id": "60c44ef9-9457-4d67-84d2-778a29b27587",
+      "result_id": "cdb3d5cb-9c81-49ee-981a-cb156ce55e52"
+    },
+    {
+      "claim_id": "e3d8f398-9862-47fb-b8e6-73d55b586abe",
+      "result_id": "cdb3d5cb-9c81-49ee-981a-cb156ce55e52"
+    },
+    {
+      "claim_id": "13951d52-d1c9-4bc7-8768-5be01eb8a8aa",
+      "result_id": "cdb3d5cb-9c81-49ee-981a-cb156ce55e52"
+    },
+    {
+      "claim_id": "dff8b873-197c-47c6-b457-7d694ff31bce",
+      "result_id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693"
+    },
+    {
+      "claim_id": "c76fc7b6-cc4c-4241-b551-06a2217e72e3",
+      "result_id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693"
+    },
+    {
+      "claim_id": "331bf22b-fd72-4dcf-ad5a-017a97768fff",
+      "result_id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693"
+    },
+    {
+      "claim_id": "d7d8d636-3cb6-4757-9086-89f85ca0eb6f",
+      "result_id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693"
+    },
+    {
+      "claim_id": "3ec297e9-0c56-4dec-8cec-9ad7f7f1adfb",
+      "result_id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693"
+    },
+    {
+      "claim_id": "f83ac584-6fc1-4bfd-a611-45fa6e246c3e",
+      "result_id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693"
+    },
+    {
+      "claim_id": "44a97550-1f58-497c-847b-f27a6c185d4b",
+      "result_id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693"
+    },
+    {
+      "claim_id": "1d5b5ac7-4258-448d-8727-7bce6a76299c",
+      "result_id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693"
+    },
+    {
+      "claim_id": "7ae406a0-ed6b-4bda-bb07-50533eafc823",
+      "result_id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693"
+    },
+    {
+      "claim_id": "707e2a5a-a635-4c19-879e-815b289d6d30",
+      "result_id": "6bcd4fa7-8429-43e3-bcc2-30c7fba15693"
+    },
+    {
+      "claim_id": "9f239185-5e64-4962-84d8-2ba3d11ffdb0",
+      "result_id": "f9ed1535-8af7-4f73-93b8-c83ec5e21660"
+    },
+    {
+      "claim_id": "a900c116-51ab-41f1-a439-57f24c7070e4",
+      "result_id": "f9ed1535-8af7-4f73-93b8-c83ec5e21660"
+    },
+    {
+      "claim_id": "8810b64a-ae99-435c-bb79-23ee0652ac00",
+      "result_id": "f9ed1535-8af7-4f73-93b8-c83ec5e21660"
+    },
+    {
+      "claim_id": "fd11aebf-bb27-47f8-8d93-14f66b9a2f76",
+      "result_id": "f9ed1535-8af7-4f73-93b8-c83ec5e21660"
+    },
+    {
+      "claim_id": "c5363221-3f25-4469-a4b0-47f6442fb294",
+      "result_id": "f9ed1535-8af7-4f73-93b8-c83ec5e21660"
+    },
+    {
+      "claim_id": "3459d612-882c-43a3-8ca1-3e2e10c12b81",
+      "result_id": "f9ed1535-8af7-4f73-93b8-c83ec5e21660"
+    },
+    {
+      "claim_id": "f9a64812-5ebb-4f71-86a5-23d4dd298134",
+      "result_id": "f9ed1535-8af7-4f73-93b8-c83ec5e21660"
+    },
+    {
+      "claim_id": "3614d3e0-aef8-4cef-8ac6-93d5061d6575",
+      "result_id": "f9ed1535-8af7-4f73-93b8-c83ec5e21660"
+    },
+    {
+      "claim_id": "9ad3eae4-4c48-4620-8381-dc430e13cce3",
+      "result_id": "95050ce9-0f8a-4724-af9c-12c8bc3ad38c"
+    },
+    {
+      "claim_id": "c4951ba2-5763-4a46-96cb-978306c81a6a",
+      "result_id": "95050ce9-0f8a-4724-af9c-12c8bc3ad38c"
+    },
+    {
+      "claim_id": "9b37b823-27c0-4029-8ad2-37bc0972b955",
+      "result_id": "95050ce9-0f8a-4724-af9c-12c8bc3ad38c"
+    },
+    {
+      "claim_id": "c2eccba2-1185-4d68-9d1b-45c120e0d3fe",
+      "result_id": "95050ce9-0f8a-4724-af9c-12c8bc3ad38c"
+    },
+    {
+      "claim_id": "80300249-c4c8-4a63-857d-898cf91789c8",
+      "result_id": "95050ce9-0f8a-4724-af9c-12c8bc3ad38c"
+    },
+    {
+      "claim_id": "15f220cd-01d9-47bf-94cb-c89e053e23ba",
+      "result_id": "adb87007-a851-43f8-af5e-7c53deeed7ed"
+    },
+    {
+      "claim_id": "35396460-ca8f-4acd-a59c-e9e82537fceb",
+      "result_id": "adb87007-a851-43f8-af5e-7c53deeed7ed"
+    },
+    {
+      "claim_id": "07925d31-81e1-4170-a035-c36b6901f404",
+      "result_id": "adb87007-a851-43f8-af5e-7c53deeed7ed"
+    },
+    {
+      "claim_id": "166abbd3-23ef-44a9-9dde-44afae164ded",
+      "result_id": "adb87007-a851-43f8-af5e-7c53deeed7ed"
+    },
+    {
+      "claim_id": "df7f0cdc-aa3f-40f9-87af-a9384eb335bc",
+      "result_id": "adb87007-a851-43f8-af5e-7c53deeed7ed"
+    },
+    {
+      "claim_id": "76e5a5f6-4069-4887-8acf-18a93af8367e",
+      "result_id": "adb87007-a851-43f8-af5e-7c53deeed7ed"
+    },
+    {
+      "claim_id": "7cb73f02-e4a8-4b45-94aa-76d5470d50c3",
+      "result_id": "a4b11d3b-d3e2-4989-8129-5c6ff938b82b"
+    },
+    {
+      "claim_id": "35caa606-cc53-4014-b425-a3baa9ebde50",
+      "result_id": "a4b11d3b-d3e2-4989-8129-5c6ff938b82b"
+    },
+    {
+      "claim_id": "54346f8a-874b-4867-8050-5b4138d065a9",
+      "result_id": "a4b11d3b-d3e2-4989-8129-5c6ff938b82b"
+    },
+    {
+      "claim_id": "f0845060-06cf-494d-840b-1f940602ab5e",
+      "result_id": "a4b11d3b-d3e2-4989-8129-5c6ff938b82b"
+    },
+    {
+      "claim_id": "1a0d5875-331b-469c-ac8f-d607934df675",
+      "result_id": "a4b11d3b-d3e2-4989-8129-5c6ff938b82b"
+    },
+    {
+      "claim_id": "08a5b6ba-158e-4c83-b98c-3c2200b19916",
+      "result_id": "a4b11d3b-d3e2-4989-8129-5c6ff938b82b"
+    },
+    {
+      "claim_id": "b3653623-ca2d-4c0c-9a42-387f9aa4ce82",
+      "result_id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab"
+    },
+    {
+      "claim_id": "1895eaf4-e739-462d-867d-dc70cd9b4b7a",
+      "result_id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab"
+    },
+    {
+      "claim_id": "d1c38185-3913-4e91-98e6-7dc860f077e6",
+      "result_id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab"
+    },
+    {
+      "claim_id": "926cfa74-7974-4789-9423-f125bdd6cdad",
+      "result_id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab"
+    },
+    {
+      "claim_id": "388a17b7-5537-4acf-be71-6837e891f8fd",
+      "result_id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab"
+    },
+    {
+      "claim_id": "5791fde3-6932-40c8-91e7-22d4791d4fe2",
+      "result_id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab"
+    },
+    {
+      "claim_id": "443bc2f5-57b7-47c2-a566-93a9223cc5c6",
+      "result_id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab"
+    },
+    {
+      "claim_id": "6bc7d0f1-9342-4e40-a4ae-94aaaa88b11a",
+      "result_id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab"
+    },
+    {
+      "claim_id": "888d6e28-82ec-4727-91ff-08d35749e139",
+      "result_id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab"
+    },
+    {
+      "claim_id": "d94e76c0-3187-4bb2-8bfd-f0ffd7e9be3e",
+      "result_id": "5c6d5e3b-2712-442d-a6ea-edd6464659ab"
+    },
+    {
+      "claim_id": "23c8468c-a459-4444-a2a4-afad75dc3a72",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "0eb7e0b8-f0be-4d5d-a497-f8a110d24b1d",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "f2b7a754-332d-47c2-bd9b-504eaa47040c",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "aaceeb6e-abde-48f4-9bd1-e7f373717f3b",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "36790bf9-6c3e-4b33-9877-b05fedcdaf81",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "2817ece6-3ef5-43cc-8f09-40bb178227ca",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "b847f309-cb37-4bb5-b97a-195355d7a855",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "a5df2819-85ad-4b60-952c-2fcd4a05ec88",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "b2c74098-3a52-418e-85b1-ad181cfabc43",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "0d800657-8d5a-4025-be30-95d91774c184",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "f6448f0e-e75c-400d-8d49-45dc2ce0ce26",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "11210d6a-7479-4c0d-b26a-c3a8a0b16504",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "c7b53911-7118-4612-98ad-6814563c6441",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "8d518ede-c7f3-4922-9a0c-7d48b88a1157",
+      "result_id": "57ac9a33-c476-4d7c-b83f-7b0ed8214d16"
+    },
+    {
+      "claim_id": "c537d741-586e-4c76-b47b-e6c930b4b510",
+      "result_id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc"
+    },
+    {
+      "claim_id": "8ffe1bf4-448c-4d50-9feb-eb483325f1f7",
+      "result_id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc"
+    },
+    {
+      "claim_id": "8d835d3e-0d9d-4bba-994c-dc48c308a66c",
+      "result_id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc"
+    },
+    {
+      "claim_id": "aac9f233-8db4-40e0-810d-ec45523c3cfc",
+      "result_id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc"
+    },
+    {
+      "claim_id": "b7da0073-df3a-47a1-8a67-78fa45bb8a1e",
+      "result_id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc"
+    },
+    {
+      "claim_id": "cb8cc57b-9268-485b-b56e-037850fb6f25",
+      "result_id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc"
+    },
+    {
+      "claim_id": "80e9746e-06af-47eb-9259-7d5a33e28858",
+      "result_id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc"
+    },
+    {
+      "claim_id": "ac5b4c4c-bfe6-42a3-bab9-883295e86393",
+      "result_id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc"
+    },
+    {
+      "claim_id": "bbe52f00-154f-4ffd-88b0-c5e5d3f7d9e8",
+      "result_id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc"
+    },
+    {
+      "claim_id": "be7ced24-a9f6-432f-94ed-47fa3da00117",
+      "result_id": "150eeeee-d2b0-4ba5-9c9c-fa6e6619d2dc"
+    },
+    {
+      "claim_id": "afd38edd-2139-48e7-8cd8-993c651332d0",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "deab573b-1be6-4cb4-8d8e-46dfd1937b24",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "16727d37-1324-48f3-9845-eb093b2c69ba",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "9f621dc7-fb94-42a7-b173-23249e2b8cb8",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "ccd052ae-4803-40b8-8d33-9ba5fb10e9b3",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "611e65db-5f0e-4685-9e49-db0fbd312b0c",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "4d18022b-c400-4cec-889a-eb21b84b48e6",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "ba973186-328b-4f5a-9b56-0b6d5ff49b82",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "3feced9f-d981-425b-9182-a59f2e7417ff",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "7bcd567e-bc7e-4c7b-9096-c7d3ed9cbc69",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "1f6838e2-a31d-4271-b421-c80a98bee5b9",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "4f1e8327-e415-4a3f-b9f1-6dcf9ea95bde",
+      "result_id": "957fcfc4-0977-451c-be62-68544f71a5cb"
+    },
+    {
+      "claim_id": "e60db70e-7619-4ce5-80f4-4c2cbad4df4f",
+      "result_id": "59b91e0a-0864-4a23-9b29-47752382eb15"
+    },
+    {
+      "claim_id": "1f2472eb-66d6-42c5-9efe-41f39d813da2",
+      "result_id": "59b91e0a-0864-4a23-9b29-47752382eb15"
+    },
+    {
+      "claim_id": "1521955e-a537-4810-9b7a-fe71c5a0a99c",
+      "result_id": "812edb9c-ceea-459e-aa45-c294cc2b52be"
+    },
+    {
+      "claim_id": "56c299c4-ec3d-43de-8cc1-6108df26fd33",
+      "result_id": "812edb9c-ceea-459e-aa45-c294cc2b52be"
+    },
+    {
+      "claim_id": "1149dee1-56f3-4a31-a185-2c194a749c2e",
+      "result_id": "812edb9c-ceea-459e-aa45-c294cc2b52be"
+    },
+    {
+      "claim_id": "061cbbdd-8a2e-446b-8793-9c2d41e7f6e3",
+      "result_id": "812edb9c-ceea-459e-aa45-c294cc2b52be"
+    },
+    {
+      "claim_id": "1a838342-3cdc-4c70-9552-b018d5340502",
+      "result_id": "812edb9c-ceea-459e-aa45-c294cc2b52be"
+    },
+    {
+      "claim_id": "57f35a93-5f55-4868-aaec-debbfc4773db",
+      "result_id": "812edb9c-ceea-459e-aa45-c294cc2b52be"
+    },
+    {
+      "claim_id": "21d223a7-2cf1-4523-8a68-8174eb09c564",
+      "result_id": "812edb9c-ceea-459e-aa45-c294cc2b52be"
+    },
+    {
+      "claim_id": "f7ea7865-7068-4107-a885-10ebf5415bab",
+      "result_id": "812edb9c-ceea-459e-aa45-c294cc2b52be"
+    },
+    {
+      "claim_id": "8d384734-2487-4fd3-95fd-b2a98dd84235",
+      "result_id": "812edb9c-ceea-459e-aa45-c294cc2b52be"
+    },
+    {
+      "claim_id": "7859e368-b471-45fb-be09-3cbf333f9b9f",
+      "result_id": "812edb9c-ceea-459e-aa45-c294cc2b52be"
+    },
+    {
+      "claim_id": "e35a32a3-ff5b-47b0-9c60-3047d41f4496",
+      "result_id": "82d7599c-1720-4f61-b1b2-137511894d04"
+    },
+    {
+      "claim_id": "38ce50cf-513f-414d-b070-a6565db7d8d4",
+      "result_id": "82d7599c-1720-4f61-b1b2-137511894d04"
+    },
+    {
+      "claim_id": "ac5c76fb-6272-43d8-b2b7-25cf5ae51c51",
+      "result_id": "82d7599c-1720-4f61-b1b2-137511894d04"
+    },
+    {
+      "claim_id": "d3def2de-e547-406f-b890-f819d49331ff",
+      "result_id": "82d7599c-1720-4f61-b1b2-137511894d04"
+    },
+    {
+      "claim_id": "40afca57-bd4d-4da6-8b92-da74634f016b",
+      "result_id": "82d7599c-1720-4f61-b1b2-137511894d04"
+    },
+    {
+      "claim_id": "319aaee1-858f-4f8a-912a-7f35b0dac7a8",
+      "result_id": "82d7599c-1720-4f61-b1b2-137511894d04"
+    },
+    {
+      "claim_id": "829577c0-6163-4d6c-87ad-d021a672c637",
+      "result_id": "82d7599c-1720-4f61-b1b2-137511894d04"
+    },
+    {
+      "claim_id": "e111cf85-63ce-45eb-bc3c-ce6d66b3e627",
+      "result_id": "82d7599c-1720-4f61-b1b2-137511894d04"
+    },
+    {
+      "claim_id": "c8f12e72-7a0b-4f2c-ab30-0ff4864c40fc",
+      "result_id": "f22f472a-f31a-483c-9d77-b06d21b210c8"
+    },
+    {
+      "claim_id": "68f86f36-bc33-4db9-be81-7b3eece6e685",
+      "result_id": "f22f472a-f31a-483c-9d77-b06d21b210c8"
+    },
+    {
+      "claim_id": "5e552627-5e75-4c81-9f5b-01ebbbbc4768",
+      "result_id": "f22f472a-f31a-483c-9d77-b06d21b210c8"
+    },
+    {
+      "claim_id": "05d5299b-bd2e-4fba-9c4e-82800f6405e5",
+      "result_id": "f22f472a-f31a-483c-9d77-b06d21b210c8"
+    },
+    {
+      "claim_id": "ab2177e2-db6d-456d-888a-e00acea778e6",
+      "result_id": "f22f472a-f31a-483c-9d77-b06d21b210c8"
+    },
+    {
+      "claim_id": "973afd24-6be8-428f-907d-24a53a5eed65",
+      "result_id": "f22f472a-f31a-483c-9d77-b06d21b210c8"
+    },
+    {
+      "claim_id": "09dfc1ab-75cc-4bc4-a091-07c687e44a69",
+      "result_id": "72077e02-0f0e-44db-962e-99a6ef3c81e8"
+    },
+    {
+      "claim_id": "7f9564eb-c8b2-405b-ace6-9503563ee767",
+      "result_id": "72077e02-0f0e-44db-962e-99a6ef3c81e8"
+    },
+    {
+      "claim_id": "91c30073-8ede-46e4-900d-2ce159bdff3e",
+      "result_id": "72077e02-0f0e-44db-962e-99a6ef3c81e8"
+    },
+    {
+      "claim_id": "3bf36efb-c73c-4ddc-ba36-07902ea9f687",
+      "result_id": "72077e02-0f0e-44db-962e-99a6ef3c81e8"
+    },
+    {
+      "claim_id": "50bb9744-5553-449c-8c3f-3d9fde32d5e8",
+      "result_id": "72077e02-0f0e-44db-962e-99a6ef3c81e8"
+    },
+    {
+      "claim_id": "2940e091-0ff6-4bef-8572-8e30849a2111",
+      "result_id": "72077e02-0f0e-44db-962e-99a6ef3c81e8"
+    }
+  ],
+  "comparisons": []
+}

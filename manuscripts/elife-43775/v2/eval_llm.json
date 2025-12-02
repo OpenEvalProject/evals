@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Food deprivation for 2 hours robustly enhances subsequent food intake and hunting behavior in larval zebrafish, with elevated consumption and hunting lasting approximately 15 minutes before declining to baseline levels as fish return to satiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by quantitative behavioral data showing increased gut fluorescence and hunting bout probability in food-deprived versus fed fish (Figure 1a). The temporal dynamics are clearly documented with appropriate statistical comparisons and sample sizes (n=73-85 fish per group). This establishes the behavioral foundation for subsequent mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C9"
+    ],
+    "result": "Whole-brain activity mapping reveals that the lateral hypothalamus (LH) shows enhanced activity during voracious feeding following food deprivation, while the caudal hypothalamus (cH) shows reduced activity. The zebrafish LH contains glutamatergic and GABAergic neurons but lacks MCH and orexin peptides found in mammalian LH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are supported by MAP-mapping data across nine independent experiments showing consistent opposing activity patterns (p=0.0019 for both regions). Claims C8-C9 regarding cellular composition are supported by immunostaining and transgenic labeling. The anatomical characterization provides important context for interpreting functional results, though the absence of MCH/orexin limits direct mammalian comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "High-resolution cellular analysis reveals that cH activity (primarily serotonergic neurons) increases during food deprivation and dramatically decreases during voracious feeding, while LH neuronal activity shows the opposite pattern. Both regions return to baseline after 30 minutes of feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by quantitative anti-pERK fluorescence measurements in isolated brains with appropriate statistical tests and multiple metrics (mean fluorescence and active cell counts). The temporal dynamics align with behavioral observations (C14). Cell-type identification via co-staining (C11) strengthens the conclusion that serotonergic neurons are the primary active population in cH during deprivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The magnitude of hypothalamic activity changes correlates with food deprivation duration. Longer deprivation (2-4 hr vs 30 min) produces greater cH activation during fasting and stronger opposing responses in both cH and LH upon food presentation, with LH activity correlating with food consumption levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are supported by systematic time-course experiments comparing 30 min, 2 hr, and 4 hr deprivation periods with appropriate statistical comparisons (Figure 2, Figure 2\u2014supplement 1). The correlation between deprivation duration and response magnitude (C17-C18) and between LH activity and food intake (C19) suggests these regions encode hunger state intensity. Sample sizes are adequate (n=5-7 per condition for main dataset).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Live calcium imaging reveals that cH and LH neurons display anti-correlated activity on rapid timescales (seconds). Paramecia presentation increases LH activity and reduces cH activity within seconds, with water flow alone producing smaller but significant effects. Cross-correlation analysis confirms strong anti-correlation between cH and lLH voxels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 are supported by calcium imaging data from 14 fish using dual transgenic labeling (Tg(116A:Gal4;76A:Gal4;UAS:GCaMP6s)). The rapid timescale of opposing responses (C22-C23) and spike-triggered averaging (C24) provide strong evidence for functional antagonism. Statistical comparisons between water and paramecia conditions (C25-C28) appropriately control for flow artifacts. Cross-correlation analysis (C29-C30) provides quantitative support for network-level anti-correlation, though the four-fold enrichment claim (C30) could benefit from more detailed statistical modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Artemia (visual prey cues without consumption) versus paramecia (consumable prey) experiments reveal differential sensitivity of hypothalamic regions to sensory versus consummatory food cues. The mLH shows the strongest response to sensory cues alone, while all three regions (cH, mLH, lLH) respond more strongly to prey ingestion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by pERK-based activity mapping comparing artemia and paramecia exposure (Figure 4). The experimental design cleverly dissociates sensory from consummatory inputs using prey of different sizes. Quantitative comparison of response ratios (\u03b8A/\u03b8P) between regions supports the conclusion that mLH is most tuned to sensory detection (C33-C34). However, the inference that mLH is \"most highly tuned\" (C34) relies on relative comparisons and could be strengthened with additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Optogenetic activation of cH neurons (primarily serotonergic, 57.4% overlap) is sufficient to inhibit lLH neural activity within 90 seconds, while mLH activity is unaffected. Control region stimulation does not affect lLH, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are supported by optogenetic experiments using Tg(y333:Gal4;UAS:ReaChR-RFP) with calcium imaging readout (Figure 5). The demonstration that cH activation reduces lLH activity (C38, p<0.001 for multiple metrics) while sparing mLH (C38) and that control region stimulation has no effect on lLH (C39) provides strong evidence for specific functional connectivity. However, the mechanism (direct vs. indirect inhibition) remains unclear, and the transgenic line labels only 57% of serotonergic neurons plus 24% of dopaminergic neurons (C36), limiting cell-type specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C78"
+    ],
+    "result": "Optogenetic cH activation before feeding increases subsequent food intake in 30-min food-deprived fish but not in 2-hr food-deprived fish, suggesting cH activity during deprivation primes voracious feeding responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by behavioral experiments showing that cH stimulation during short (30 min) but not long (2 hr) deprivation increases subsequent food intake (p=0.005 for 30 min condition, Figure 6a). The lack of effect after 2 hr deprivation (C42) is interpreted as a ceiling effect, which is reasonable given that endogenous cH activity is already maximal. Sample sizes are adequate (n=25-29 per group). This result supports the model that cH activity encodes hunger state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C79"
+    ],
+    "result": "Optogenetic cH activation during feeding reduces food intake in 2-hr food-deprived fish, demonstrating that acute cH activity suppresses consumption behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C79 are supported by experiments showing that cH stimulation during feeding reduces gut fluorescence (p=0.042, n=44-53 fish, Figure 6b). This result appears paradoxical given that cH is active during hunger (C10, C15), but the authors provide a reasonable interpretation: cH activity in the presence of food elevates the threshold for consumption. The effect size appears modest, and the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Nitroreductase-mediated ablation of cH serotonergic neurons significantly enhances food intake in both fed and food-deprived fish, confirming that cH neurons tonically inhibit feeding behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by ablation experiments using Tg(116A:Gal4;UAS:nfsb-mCherry) with MTZ treatment (Figure 6c). The enhancement of food intake in both fed (p=0.0042) and food-deprived (p=0.041) conditions supports a general inhibitory role for cH in feeding. However, ablation efficiency is only ~80% (Figure 6\u2014supplement 2b), and the transgenic line may not label all functionally relevant cH neurons. The use of sibling controls lacking transgene expression is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C77",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose that cH and LH form mutually antagonistic functional units that dominate different phases of hunger and drive appropriate behavioral responses. The activation state of cH is a crucial regulator of satiation state-dependent food intake, with the medial-lateral logic of hypothalamic function conserved from mammals to zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C77, and C81 represent the central integrative conclusions of the manuscript, supported by the collective evidence from activity mapping (C4-C6), temporal dynamics (C10-C14), calcium imaging (C22-C30), optogenetics (C37-C43), and ablation (C44-C45). The model that cH and LH form antagonistic units is well-supported. However, C80 (the proposed mechanism for paradoxical cH roles) is more speculative and requires additional experimental validation. The claim of evolutionary conservation (C81) is reasonable but limited by the absence of MCH/orexin in zebrafish LH.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C82"
+    ],
+    "result": "The manuscript contextualizes findings within historical and contemporary literature on hypothalamic appetite control, comparing zebrafish results to mammalian studies and proposing that large-scale network analysis reveals principles that might be missed by studying isolated subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C82 represent literature contextualization and discussion points. The citations to historical lesion/stimulation studies (C46-C49, C54) and recent mammalian work (C50, C67-C68, C72) are appropriate and accurately represented. The comparison to mammalian raphe nucleus (C63) and discussion of serotonin's dual roles (C64) provide useful evolutionary context. The proposal that network-level analysis reveals additional insights (C82) is reasonable but somewhat generic. Claims about consummatory cue timing (C74-C75) rely on citations to other work and represent reasonable inferences.",
+    "result_type": "MINOR"
+  }
+]

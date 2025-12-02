@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C95",
+      "C96",
+      "C97",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "A dual fluorescent reporter system was developed to simultaneously monitor CDK4/6 and CDK2 activities in single cells. The CDK4/6 reporter uses a cyclin D-CDK4/6-specific docking site from Rb (aa 886-928) and shows selectivity for CDK4/6 over CDK2/1 in G1 phase, though approximately 35% of the signal in S/G2 phase comes from CDK2 activity. A correction method was developed to subtract this CDK2 contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C53, C95-C97, C123-C126 collectively describe the design, validation, and characterization of the CDK4/6 reporter system. The reporter shows appropriate selectivity based on inhibitor experiments (C37, C42, C43), functions independently of cyclin E/A (C48-C51), and the correction method for CDK2 contribution is empirically derived (C45, C52, C53). The design rationale is well-supported by prior literature (C35, C95, C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C103"
+    ],
+    "result": "In cells exiting quiescence after mitogen stimulation, CDK4/6 activity increases rapidly but only after a 5-13 hour delay, with 54% of cells showing persistent CDK4/6 activation. This rapid activation after a long delay supports an ultrasensitive activation mechanism for CDK4/6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54-C56, C103 describe the kinetics of CDK4/6 activation in quiescent cells. The observations are directly measured using the validated reporter system (C54, C55) and are consistent with an ultrasensitive mechanism (C56, C103). The quantitative data (54% activation, 5-13 hr delay) is explicitly stated and supported by Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C54",
+      "C55",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "CDK4/6 activation precedes CDK2 activation and APC/CCdh1 inactivation during cell cycle entry. CDK4/6 reaches maximum activity 2 hours after mitosis and stays elevated through S and G2 phases, while CDK2 activity gradually increases throughout G1, S, and G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C54, C55, C66-C68 establish the temporal ordering of cell cycle events. The sequential activation is demonstrated through simultaneous measurement of all three reporters in the same cells (C36, C66, C67). The distinct kinetics (rapid CDK4/6 vs gradual CDK2) are clearly shown in the data (C67, C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C69",
+      "C77",
+      "C78",
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "Cells exiting mitosis follow three distinct paths: (1) CDK4/6 remains active leading to immediate CDK2 activation and short G1, (2) CDK4/6 stays inactive leading to quiescence, or (3) CDK4/6 is initially inactive but reactivates after a variable delay, generating variable G1 length. This temporary inactivation of CDK4/6 after mitosis regulates G1 length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7, C63-C65, C69, C77-C78, C107-C109, C111 describe three cell fate paths after mitosis. The classification is based on direct measurements of CDK4/6 activity at mitotic exit (C63-C65) and correlation with CDK2 and Rb phosphorylation (C77-C78). The bimodal distribution of CDK4/6 activity is clearly demonstrated (C69), and the variable delay mechanism for G1 length control is well-supported (C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C106"
+    ],
+    "result": "CDK4/6 activity is closely correlated with Rb hyperphosphorylation. The fraction of cells with active CDK4/6 and increasing CDK2 activity matches the fraction with phosphorylated Rb, and this correlation persists for 12 hours after mitosis. The bimodal hyperphosphorylation of Rb can be explained by underlying bimodality in CDK4/6 activity at mitotic exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C106 establish the relationship between CDK4/6 activity and Rb phosphorylation. The correlation is demonstrated through live-cell imaging followed by immunostaining (C72-C73), showing that CDK4/6 activity state predicts Rb phosphorylation status. This provides a mechanistic explanation for previously observed bimodal Rb phosphorylation (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C112",
+      "C115",
+      "C117"
+    ],
+    "result": "Stress signals can rapidly inactivate CDK4/6 in G1 phase, typically before CDK2 inactivation, to reverse cell cycle entry. However, the probability of stress-induced CDK4/6 inactivation and cell cycle exit progressively decreases as cells approach S phase, demonstrating increasing persistence in CDK4/6 activity. This progressive resistance correlates with CDK2 activity level rather than CDK4/6 activity level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C8, C80-C82, C85-C94, C112, C115, C117 describe stress-mediated regulation of CDK4/6. Multiple stress types were tested (H2O2, tunicamycin, NCS, NaCl, oligomycin/antimycin, TGF-\u03b21) showing consistent patterns (C80, C88-C90). The temporal ordering (CDK4/6 before CDK2 inactivation) is demonstrated (C86-C87, C90), and the progressive resistance is quantitatively shown to correlate with CDK2 levels (C81-C82, C85). The data support the conclusion that CDK4/6 is a primary target of stress signaling (C92-C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "CDK4/6 activity stays persistently elevated throughout S and G2 phases after initial activation in G1, and can be inhibited by CDK4/6-selective inhibitors during these phases. This persistent activity may be maintained at lower cyclin D levels due to p21 degradation in S phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C60, C98-C100 describe persistent CDK4/6 activity through S/G2. While the observation of persistent activity is supported by reporter measurements (C57, C98) and inhibitor sensitivity (C99), the mechanistic explanation involving p21 degradation (C58-C60) is speculative and presented as a 'potential explanation' without direct experimental validation. The corrected CDK4/6 signal remaining elevated is supported (C98-C99), but the molecular mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "RPE1 cells show similar bimodal CDK4/6 and CDK2 activity patterns after mitosis as MCF10A cells, and palbociclib treatment abolishes both CDK4/6 and CDK2 reporter signals after mitosis in RPE1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 demonstrate that the observed CDK4/6 regulation is not unique to MCF10A cells. The bimodal behavior is replicated in RPE1 cells (C75), and the CDK4/6 dependence of CDK2 activation is confirmed by palbociclib treatment (C76). This supports the generalizability of the findings, though the authors acknowledge that further studies in different cell types are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C91",
+      "C116"
+    ],
+    "result": "CDK4/6 activity is required to sustain CDK2 activity increase throughout G1 phase until Rb hyperphosphorylation becomes independent of CDK4/6 at S phase onset. Subsets of G1 cells reverse CDK2 activity following CDK4/6 inhibition, and CDK2 activity remains sensitive to palbociclib until the end of G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C91, C116 describe the functional relationship between CDK4/6 and CDK2 in G1. The observation that CDK4/6 inhibition can reverse CDK2 activity in G1 cells (C44) supports the interpretation that CDK4/6 is required for sustained CDK2 activation (C91). The sensitivity to palbociclib throughout G1 (C116, citing prior work) is consistent with this model. The mechanistic explanation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C47"
+    ],
+    "result": "Previous work from the authors' group showed that CDK4/6 can hyperphosphorylate Rb in MEFs lacking all cyclin E and A genes, demonstrating CDK4/6 activity alone is sufficient for Rb hyperphosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C47 reference prior published work (Chung et al., 2019) demonstrating CDK4/6 sufficiency for Rb hyperphosphorylation. This is cited work rather than new data from the current study, but it provides important context for interpreting the current findings. The claim is well-supported by the cited reference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "A previous study showed that cells with excess cyclin D1 over p21 have hyperphosphorylated Rb, suggesting competition between cyclin D1 and p21 enables ultrasensitive CDK4/6 activation when cyclin D1 exceeds p21 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 reference prior work (Yang et al., 2017) and present an interpretation/hypothesis. While C101 describes published observations, C102 is explicitly presented as 'one interpretation' and is speculative. The current study provides support for ultrasensitive activation (C56, C103) but does not directly test the cyclin D1/p21 competition mechanism. This remains a plausible but unproven hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C40",
+      "C41",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C70",
+      "C71",
+      "C74",
+      "C79",
+      "C101",
+      "C104",
+      "C105",
+      "C110",
+      "C113",
+      "C114"
+    ],
+    "result": "The manuscript provides extensive background on CDK4/6 and CDK2 regulation, cell cycle control, and prior findings from the literature regarding Rb phosphorylation, E2F regulation, and stress-mediated cell cycle exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C32, C40-C41, C58-C59, C61-C62, C70-C71, C74, C79, C101, C104-C105, C110, C113-C114 are background claims citing prior literature. These are appropriately referenced and provide context for the current study. While not new findings, they are accurately represented based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The study used MCF10A and RPE1 cells cultured under specified conditions, with mycoplasma testing, specific fixation protocols, and imaging parameters. A correction factor of 0.35 was empirically determined to subtract CDK2 contribution from the CDK4/6 reporter signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122, C127-C131 describe methodological details. These are standard practices and the correction factor (C128-C129) is empirically derived from the data. The methods are adequately described for reproducibility, though some details about image analysis are referenced to prior publications.",
+    "result_type": "MINOR"
+  }
+]

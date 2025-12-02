@@ -1,0 +1,2184 @@
+{
+  "submission": {
+    "id": "9170a484-16b3-4218-b0ef-63899e7d2a37",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:53:21.071260Z",
+    "updated_at": "2025-12-02T21:53:21.071260Z"
+  },
+  "content": [
+    {
+      "id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "submission_id": "9170a484-16b3-4218-b0ef-63899e7d2a37",
+      "content_type": "manuscript",
+      "content_text": "# Functional partitioning of a liquid-like organelle during assembly of axonemal dyneins\n\n## Authors\n\n- Chanjae Lee<sup>1</sup>\n- Rachael M Cox<sup>1</sup>\n- Ophelia Papoulas<sup>1</sup>\n- Amjad Horani<sup>2</sup> ([ORCID: 0000-0002-5352-1948](https://orcid.org/0000-0002-5352-1948))\n- Kevin Drew<sup>1</sup>\n- Caitlin C Devitt<sup>1</sup>\n- Steven L Brody<sup>3</sup>\n- Edward M Marcotte<sup>1</sup> ([ORCID: 0000-0001-8808-180X](https://orcid.org/0000-0001-8808-180X)) \u2020\n- John B Wallingford<sup>1</sup> ([ORCID: 0000-0002-6280-8625](https://orcid.org/0000-0002-6280-8625)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biosciences, University of Texas Austin United States\n2. Department of Pediatrics, Washington University School of Medicine St. Louis United States\n3. Department of Medicine, Washington University School of Medicine St. Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCiliary motility is driven by axonemal dyneins that are assembled in the cytoplasm before deployment to cilia. Motile ciliopathy can result from defects in the dyneins themselves or from defects in factors required for their cytoplasmic pre-assembly. Recent work demonstrates that axonemal dyneins, their specific assembly factors, and broadly-acting chaperones are concentrated in liquid-like organelles in the cytoplasm called DynAPs (Dynein Axonemal Particles). Here, we use in vivo imaging in Xenopus to show that inner dynein arm (IDA) and outer dynein arm (ODA) subunits are partitioned into non-overlapping sub-regions within DynAPs. Using affinity- purification mass-spectrometry of in vivo interaction partners, we also identify novel partners for inner and outer dynein arms. Among these, we identify C16orf71/Daap1 as a novel axonemal dynein regulator. Daap1 interacts with ODA subunits, localizes specifically to the cytoplasm, is enriched in DynAPs, and is required for the deployment of ODAs to axonemes. Our work reveals a new complexity in the structure and function of a cell-type specific liquid-like organelle that is directly relevant to human genetic disease.\n\n## Introduction\n\nMotile cilia are microtubule-based cellular projections and their oriented beating generates fluid flows that are critical for development and homeostasis. Ciliary beating is driven by a complex set of axoneme-specific dynein motors that drive sliding of the axonemal microtubule doublets. Based on their relative positions within the axoneme, these motors are classified as either outer dynein arms (ODAs) or inner dynein arms (IDAs)(Figure 1A, upper inset), the former driving ciliary beating generally, and the latter tuning the waveform (Kamiya and Yagi, 2014; King, 2018). Mutations in genes encoding ODA or IDA subunits are the major cause of the motile ciliopathy syndrome known as primary ciliary dyskinesia (PCD; MIM 244400). This genetic disease results in repeated sinopulmonary disease, bronchiectasis, cardiac defects, situs anomalies, and infertility (Horani et al., 2016; Mitchison and Valente, 2017; Wallmeier et al., 2020). Interestingly, PCD can also result from mutations in genes encoding any of several cytoplasmic proteins collectively known as Dynein Axonemal Assembly Factors (DNAAFs)(Desai et al., 2018; Fabczak and Osinka, 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic showing an MCC. The upper inset shows a schematic cross section through an axoneme indicating the relative positions of ODAs and IDAs; the lower inset shows a representative en face optical section through the MCC cytoplasm with dynAPs indicated DynAPs. (B) En face optical section through the cytoplasm of a Xenopus MCC expressing GFP-Stip1 (a chaperone, green) and mCherry-Dnaaf5 (a DNAAF, magenta). Note near-perfect co-localization. Dashed box indicates region shown in high magnification, split-channel views at right. Scale bars\u00a0=\u00a010 \u00b5m. (C) GFP-Dnai2 (a dynein subunit, green) co-localizes only partially with mCherry-Dnaaf5. (D, E) Images showing enlarged views of individual DynAPs after pairwise labeling with the indicated tagged DNAAFs or chaperones. Smaller panels show split channels, larger images show the merged channels. Note high degree of co-localization. (F) Similar pair-wise labeling with dynein subunits reveals only partial co-localization. Scale bar\u00a0=\u00a01 \u00b5m for panels D-F. (G) Heatmap showing Pearson correlation for colocalization of GFP fusion proteins with mCherry fusion proteins. Yellow indicates high value (Pearson\u2019s R value\u00a0=\u00a00.85), while blue indicates low value (Pearson\u2019s R value\u00a0=\u00a00.45). Exact Pearson\u2019s R values for each protein combination can be found in Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Graph displaying Pearson correlation for colocalizations between DNAAF, chaperone or dynein subunits. Dnaaf5, Zmynd10 and Ruvbl2 were tagged with mCherry. GFP fusion proteins are Dnaaf2, Lrrc6, Spag1, Hsp90ab1, Stip1, Dnai2, Wdr78 and Dnali1. p-value<0.0000001 by one-way ANOVA and post-hoc Tukey-Kramer HSD test. (B) Table showing Pearson\u2019s R values (Average\u00a0\u00b1\u00a0STDEV) and n-value for each colocalization analysis (at least 15 cells from five embryos for each analysis).\n\nAxonemal dynein motors were known to be pre-assembled in the cytoplasm before deployment to cilia (Fowkes and Mitchell, 1998), but the first description of DNAAFs came later, with the identification of KTU (aka DNAAF2)(Omran et al., 2008). Studies of motile ciliopathy patients have now defined an array of cytoplasmic DNAAFs that are never part of the axoneme, yet when mutated result in loss of axonemal dyneins, and in turn, defective cilia beating (Diggle et al., 2014; Horani et al., 2012; Horani et al., 2013; Kott et al., 2012; Mitchison et al., 2012; Moore et al., 2013; UK10K Rare Group et al., 2017; Paff et al., 2017; UK10K et al., 2013; Zariwala et al., 2013). These specialized DNAAFs are now known to act in concert with ubiquitous, broadly-acting chaperones of the Heat Shock Protein (Hsp) Family (Cho et al., 2018; Li et al., 2017; Mali et al., 2018; UK10K Rare Group et al., 2017; Omran et al., 2008; Paff et al., 2017; UK10K et al., 2013; Yamaguchi et al., 2018; Yamamoto et al., 2010; Zhao et al., 2013; Zur Lage et al., 2018).\n\nHow DNAAFs organize the assembly of axonemal dyneins is a complex question, as each axoneme contains an series of closely related multiprotein complexes (King, 2018). For example, ODAs and IDAs incorporate diverse heavy, intermediate, and light chains encoded by distinct genes; few subunits are shared. Moreover, at least eight distinct IDA sub-types and two ODA sub-types have been described (Dougherty et al., 2016; Fliegauf et al., 2005; King, 2018). Generally, disruption of any single DNAAF has been found to impact both ODAs and IDAs (Fabczak and Osinka, 2019), but a recent study suggests that distinct DNAAFs may be dedicated for the assembly of specific subsets of dyneins (Yamaguchi et al., 2018). Another recent study has suggested that distinct DNAAFs may catalyze specific stages of the dynein assembly process (Mali et al., 2018). This complexity motivates another key question, this one regarding the spatial organization of axonemal dynein assembly.\n\nSeveral studies indicated that the DNAAFs and chaperones act together in cytosolic foci (Diggle et al., 2014; Horani et al., 2012; Li et al., 2017; Mali et al., 2018), and we recently demonstrated that DNAAFs, chaperones, and axonemal dynein subunits are sequestered in specialized membrane-less organelles that we termed DynAPs (Huizar et al., 2018). DynAPs are multiciliated cell\u00a0(MCC)-specific organelles that display hallmarks of biological phase separation, with DNAAFs and chaperones fluxing through rapidly while dynein subunits are stably retained (Huizar et al., 2018). Though DynAPs display properties similar to many ubiquitous liquid-like organelles (Banani et al., 2017; Shin and Brangwynne, 2017), little else is known of the cell biology underlying DynAP assembly or function.\n\nWe show here that DynAPs contain functionally distinct sub-compartments. Confocal imaging revealed that the organelles defined by enrichment of DNAAFs and/or chaperones are sub-divided into sub-compartments specifically enriched for ODA or IDA subunits. Affinity-purification and mass-spectrometry of IDA and ODA subunits from MCCs identified several novel interactors, including the uncharacterized protein Daap1/C16orf71. We show that Daap1 is a cytoplasmic protein that is enriched in DynAPs in both human and Xenopus MCCs. Moreover, Daap1 localization is restricted to the ODA sub-region of DynAPs, where assays of fluorescence recovery after photobleaching (FRAP) show it is stably retained. Finally, disruption of Daap1 elicits a severe loss of ODAs from motile cilia. These data provide new insights into the structure and function of a still poorly defined, cell-type specific, disease-associated organelle.\n\n## Results\n\n### Outer and inner arm dynein subunits occupy sub-regions within DynAPs\n\nThe Xenopus embryo epidermis is a mucociliary epithelium that serves as a highly tractable model for understanding motile cilia (Hayes et al., 2007; Walentek and Quigley, 2017; Werner and Mitchell, 2012). Using this system, we previously showed that while DNAAFs, chaperones, and dyneins all co-localize in DynAPs with the canonical DNAAF, Ktu/Dnaaf2, dynein subunits displayed relatively more variable co-localization (Huizar et al., 2018). Here, we explored these localization patterns in more detail by pairwise co-expression of several fluorescently tagged DNAAFs, Hsp chaperones, and axonemal dynein subunits. We examined their localization in en face optical sections through the cytoplasm of Xenopus MCCs in vivo using confocal microscopy (Figure 1A, lower inset).\n\nWe found, for example, that the Hsp co-chaperone Stip1/Hop displayed essentially total co-localization with the assembly factor Dnaaf5/Heatr2 (Figure 1B), while by contrast, the outer dynein arm subunit Dnai2 clearly displayed only partial overlap with Dnaaf5 (Figure 1C). In fact, pairwise tests of five distinct DNAAFs and three chaperones revealed consistent, strong co-localization in all combinations (Figure 1D,E,G). Conversely, pairwise tests with three different axonemal dynein subunits consistently revealed only partial co-localization (Figure 1F,G). In all cases, IDA or ODA subunits occupied distinct, well-demarcated sub-regions within DNAAF- or chaperone-labeled DynAPs (Figure 1F). Pearson correlations revealed that these differences were statistically significant (Figure 1\u2014figure supplement 1).\n\nWe then performed pairwise tests of co-localization of several axonemal dynein subunits. Strikingly, we found that IDAs and ODAs were partitioned into mutually exclusive sub-regions. For example, the ODA subunit Dnai2 displayed near-perfect co-localization with two additional ODA sub-units, Dnai1 and Dnal4 (Figure 2A,B). By contrast, Dnai2 displayed very little colocalization with IDA-f subunit Wdr78 or the IDA-a, c, d subunit Dnali1 (Figure 2C,D; Figure 2\u2014figure supplement 1A,B). Again, Pearson correlations revealed these differences to be highly significant (Figure 2\u2014figure supplement 1C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig2-v2.jpg)\n\n**Figure 2.:** (A) En face optical section of a Xenopus MCC expressing ODA subunits GFP-Dnai1 and mCherry-Dnai2 (as per lower inset in Figure 1A). The dashed box indicates the area shown at higher magnification in the panels to the right. Note near complete co-localization. (B) mCherry-Dnai2 also displays near-total co-localization with another ODA subunit, Dnal4. (C, D) mCherry-Dnai2 shows very little co-localization with the IDA subunit GFP-Wdr78 or GFP-Dnali1. (E) IDA-f subunit mCherry-Wdr78 displays little co-localization with IDA-a, c, d subunit GFP-Dnali1. (F) IDA-f subunits, mCherry-Wdr78 and GFP-Tctex1d2, show complete co-localization. Scale bar\u00a0=\u00a010 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) En face optical Z-sections through DynAPs possessing GFP-Dnali1 and mCherry-Dnai2. (B) En face optical Z-sections through DynAPs possessing GFP-Wdr78 and mCherry-Dnai2. (C) Graph displaying Pearson correlation for colocalizations of GFP fusion dynein subunits, Dnai1 (n\u00a0=\u00a082), Dnal4 (n\u00a0=\u00a083), Wdr78 (n\u00a0=\u00a073) and Dnali1 (n\u00a0=\u00a083), with mCherry-Dnai2 at DynAPs. p-value (***)<0.0000001 by one-way ANOVA and post-hoc Tukey-Kramer HSD test. (D) Graph displaying Pearson correlation for colocalization of two different IDA subunits, GFP-Dnali1 (n\u00a0=\u00a065) and GFP-Tctex1d2 (n\u00a0=\u00a067) with mCherry-Wdr78 at DynAPs. p-value (***)<2.2e-16 by Welch Two Sample t-test.\n\n### Specific sub-classes of inner dynein arms are partitioned to distinct sub-compartments within DynAPs\n\nWe further observed that the different sub-classes of IDAs were also restricted to discrete sub-regions within DynAPs. For example, the IDA-a, c, d subunit Dnali1 and the IDA-f subunit Wdr78 displayed only very little co-localization (Figure 2E; Figure 2\u2014figure supplement 1D). By contrast, Wdr78 displayed significantly stronger co-localized with another IDA-f subunit, Tctex1d2 (Figure 2F; Figure 2\u2014figure supplement 1D).\n\nTogether, these data suggest that axonemal dynein subunits are partitioned into functionally distinct sub-regions; based upon their contents, with ODAs, and at least two sub-classes of IDAs occupying functionally-related restricted spaces within DynAPs. We will refer to these here as \u2018ODA sub-DynAPs\u2019 and \u2018IDA-f sub-DynAPs,\u2019 etc.\n\n### Affinity-purification and mass-spectrometry identifies specific in vivo interactors for vertebrate inner and outer dynein arm subunits in Xenopus MCCs\n\nGiven the essential role of cytoplasmic DNAAFs and chaperones in assembly of axonemal dyneins (Desai et al., 2018; Fabczak and Osinka, 2019), we reasoned that sub-DynAPs may also contain regulatory factors with specific roles in the assembly or deployment of either IDAs or ODAs. To test this idea, we sought to determine the interactomes of IDAs and ODAs directly in MCCs. We therefore developed a method to perform affinity-purification and mass-spectrometry (APMS) of in vivo interaction partners using Xenopus mucociliary epithelium and then examined the localization of interaction partners using in vivo imaging.\n\nFor this experiment, we took advantage of organotypically cultured explants of pluripotent ectoderm from early Xenopus embryos (so-called \u2018animal caps\u2019), which can be differentiated into a wide array of organs and tissues, including mucociliary epithelium (Ariizumi et al., 2009; Walentek and Quigley, 2017; Werner and Mitchell, 2012). We and others have used such explants previously for large-scale genomic studies of ciliogenesis and cilia function (Chung et al., 2014; Kim et al., 2018; Ma et al., 2014; Quigley and Kintner, 2017; Walentek et al., 2016).\n\nAs baits for APMS, we used GFP-fusions to either IDA or ODA subunits, expressing them specifically in MCCs using a well-defined MCC-specific \u03b1-tubulin promoter (Deblandre et al., 1999; Tu et al., 2018). For each experiment, we excised\u00a0~550 animal caps and cultured them until MCCs developed beating cilia (NF stage 23)(Figure 3A, green, blue arrows). Protein was isolated from these tissue explants and APMS was performed using an anti-GFP antibody (Figure 3A). To control for non-specific interactions, each APMS experiment was accompanied by a parallel APMS experiment (i.e. from explants cut from the same clutch of embryos) using un-fused GFP (Figure 3A, gray). The results of the latter experiment were then used to subtract background (Figure 3A, right; see Materials\u00a0and\u00a0methods), and we calculated a Z-test, fold-change, and a false discovery rate for differential enrichment of identified proteins (see Materials\u00a0and\u00a0methods).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of APMS workflow for identifying in vivo ODA and IDA interactors. GFP-tagged ODA or IDA driven by MCC-specific alpha-tubulin promoter by plasmid injection into Xenopus embryos and animal caps were isolated at stage 8. The cultured explants were collected at early ciliogenesis stage (stage 23) and subjected to APMS. Unfused GFP was assessed simultaneously and the data subtracted to control for non-specific interactions. (B) Spoke diagram displaying Dnai2 (ODA) interactors, line weight of spokes indicates Log2 fold-change of PSMs. b\u2019. Schematic of outer dynein arm indicating identified Dnai2 preys. (C) Spoke diagram displaying Wdr78 (IDA) interactors. c\u2019. Schematic of inner dynein arm (f type) indicating identified Wdr78 preys.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Interaction partners of (A-C) Dnai2, (D-F) Wdr78, and (G-I) C16orf71 were identified based on their enrichment in APMS of the GFP-tagged bait proteins (vertical axes, panels A-B, D-E, G-H) relative to APMS of the untagged GFP controls (horizontal axes, panels A-B, D-E, G-H). A pseudocount of 1 PSM was added to each protein for visualization on a log-log plot (panels A-B, D-E, G-H). For visualization purposes, each protein was colored according to a 95% confidence threshold using a one-sided Z-test (see Materials\u00a0and\u00a0methods). We observed reasonable concordance between technical replicates, evident in comparisons of the measured Z-scores for proteins co-precipitating with (C) Dnai2, (F) Wdr78, and (I) C16orf71. Baits are circled in C, F, I. A joint Z-score was calculated for each protein observed across a pair of technical replicates by summing the Z-score for each protein in each replicate and dividing by the square root of N replicates (N\u00a0=\u00a02). Multiple-hypothesis corrected p-values derived from these joint Z-scores are provided in the corresponding Suppl. Tables.\n\nTo identify ODA interactors, we used GFP-Dnai2; for IDAs we used GFP-Wdr78 (King, 2018).\n\nFor both proteins, we found that the bait itself was the most strongly enriched hit in the APMS, providing an important positive control (Circled in Figure 3\u2014figure supplement 1C, E; see Supplementary files 1, 2). Dnai2 pulldown strongly enriched for known ODA-specific sub-units, including the intermediate chain Dnai1, the heavy chains Dnah9/11, and the light chain Tctex1d1, among others (Figure 3B; Figure 3\u2014figure supplement 1A\u2013C; Supplementary file 1). Conversely, our Wdr78 sample was enriched for IDA components, specifically the IDA-f subtype, as expected (Figure 3C); these included the axonemal dynein heavy chains Dnah2 and Dnah10, as well as several light and intermediate chains (Figure 3C; Figure 3\u2014figure supplement 1D\u2013F; Supplementary file 2).\n\nFinally, we identified weaker but significant interaction of Dnai2 and Wdr78 with a variety of known chaperones and assembly factors, including Ruvbl1/2, Spag1, and Dnaaf1 (Supplementary files 1, 2), consistent with findings that these proteins are enriched in DynAPs and are essential for axonemal dynein assembly (Fabczak and Osinka, 2019; Huizar et al., 2018). Our data provide new insights into the compositions of ODAs and f-type IDAs in Xenopus MCCs and also serve as positive controls for the specificity of our APMS approach in MCCs.\n\n### Identification and localization of novel IDA and ODA interactors\n\nImportantly, our APMS identified not only known interactors, but also several novel interaction partners. For example, we observed interaction between Dnai2 and Nme9 (Figure 3B). Nme9 is highly similar to the Chlamydomonas ODA light chain LC3 and is present in the axonemes of airway cilia and sperm flagella in mice (Sadek et al., 2003). As in mice, Xenopus GFP-Nme9 localized to MCC axonemes (Figure 4A). More importantly, however, we also observed GFP-Nme9 in the cytoplasm, where it colocalized with Dnai2 specifically in ODA sub-DynAPs (Figure 4B,C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig4-v2.jpg)\n\n**Figure 4.:** (A) En face optical section just above the apical surface of a Xenopus MCC showing axonemal localization of GFP-Nme9.\u00a0(B) A similar optical section through the MCC cytoplasm shows near-perfect colocalization of GFP-Nme9 with the ODA subunit mCherry-Dnai2 in DynAPs. Dashed box indicates area shown at higher magnification in the inset. (C) GFP-Nme9 only partially co-localizes with mCherry-Dnaaf2. (D) En face optical section through the cytoplasm shows colocalization of GFP-Wdr18 with mCherry-Dnaaf2 in DynAPs. (E) A similar section just below the MCC apical surface reveals GFP-Wdr18 localization near basal bodies labeled with RFP-Centrin4 (F) GFP-Sf3a3 co-localizes with mCherry-Dnaaf2. Scale bars\u00a0=\u00a010 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig4-figsupp1-v2.jpg)\n\nAnother notable interaction was that between Wdr78 and Wdr18 (Figure 3C). This result is significant because Wdr18 has been implicated in the control of ciliary beating, but its mechanism of action is entirely unknown (Gao et al., 2011; Silversides et al., 2012). Interestingly, GFP-Wdr18 was not present in the axonemes of motile cilia (not shown) but did localize to DynAPs (Figure 4D). Interestingly, GFP-Wdr18 was also strongly enriched in the apical cytoplasm of MCCs, near the basal bodies (Figure 4E). Similarly, another IDA interactor, Sf3a3 (Figure 3C), was also absent from axonemes (not shown), but did localize in DynAPs (Figure 4F). This protein was previously implicated in splicing (Kr\u00e4mer et al., 2005), so as expected, we also observed GFP-Sf3a3 in nuclear foci in Xenopus MCCs (Figure 4\u2014figure supplement 1). Together, these data demonstrate that our APMS approach in Xenopus effectively identified novel, biologically plausible IDA and ODA-interacting proteins in vivo.\n\n### C16orf71/Daap1 is a novel ODA-interacting protein with an interesting evolutionary trajectory\n\nThe most interesting interaction we identified in this study was that between Dnai2 and C16orf71 (Figure 3B). Though highly conserved among vertebrates, this protein has yet to be the subject of even a single published study. We first sought to confirm that C16orf71 is a bona fide ODA interactor using a reciprocal APMS experiment, with GFP-tagged Xenopus C16orf71 as the bait. This analysis revealed interaction of C16orf71 not only with Dnai2, but also other ODA subunits such as Dnai1, Dnah9 and Nme9, as well as Ruvbl1 (Figure 5A; Figure 3\u2014figure supplement 1G\u2013I, Supp. File 3). Based on these findings and data described below, we propose to rename this protein Daap1, for Dynein Axonemal-Associated Protein 1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig5-v2.jpg)\n\n**Figure 5.:** (A) Spoke diagram displaying C16orf71/Daap1 interactors; line weight indicates Log2 fold- change of PSMs. (B) In situ hybridization of Daap1 in Xenopus reveals expression in epidermal MCCs (left) and MCCs in the nephrostomes (right). (C) Graph showing C16orf71 protein expression levels in human tissues from the Human Protein Atlas (Uhl\u00e9n et al., 2015). (D) Domain organization of C16orf71/Daap1 orthologs across vertebrates from NCBI Orthologs. (E) Domain prediction with human C16orf71/DAAP1 sequence from the PSIPRED Protein Analysis Workbench for disorder and secondary structure prediction.\n\nIn situ hybridization revealed that Xenopus Daap1 expression was enriched in MCCs in the epidermis and the nephrostomes of the pronephros (Figure 5B). Likewise, examination of data from the Human Protein Atlas (Uhl\u00e9n et al., 2015) revealed that human DAAP1 protein is present exclusively in tissues with motile cilia (Figure 5C). Interestingly, while Daap1 is conserved among vertebrates, it appears to have followed an interesting evolutionary trajectory. In mammals, including humans, orthologs of Daap1 are composed entirely of a domain of unknown function (DUF4701), which phylogenetic analysis suggests is vertebrate-specific (Figure 5D). Our analysis of this sequence suggests it is intrinsically disordered (Figure 5E), a feature commonly associated with liquid-like organelles. By contrast, all non-mammalian vertebrate Daap1 orthologs contain not only the DUF4701 domain, but also a long C-terminal extension harboring, remarkably, an NDK domain similar to those in Nme8 and Nme9 (Figure 5D). We therefore chose this novel ODA interactor for more in-depth study.\n\n### Daap1 is a DynAP-specific protein in Xenopus and human MCCs\n\nWe next examined the localization of the Daap1 protein in Xenopus MCCs. Intriguingly, no signal was detectable in MCC axonemes as marked by Dnai2, and instead, GFP-Daap1 was localized exclusively to foci in the cytoplasm of MCCs (Figure 6A,B). GFP-Daap1 strongly co-localized with Dnai2 (Figure 6B), suggesting that the interaction we identified by APMS occurs in DynAPs. Indeed, Daap1 displayed a partial co-localization with Dnaaf2 similar to that observed in the cytoplasm for other ODA subunits (Figure 6C). Finally, Daap1 displayed little or no overlap with GFP-Wdr78 (Figure 6D), suggesting that it localized specifically in ODA sub-DynAPs (Figure 6D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig6-v2.jpg)\n\n**Figure 6.:** (A) En face optical section above the apical surface of a Xenopus MCC reveals absence of GFP-Daap1 in axonemes. (B) A similar optical section through the MCC cytoplasm shows near-perfect colocalization of GFP-Daap1 with the ODA subunit mCherry-Dnai2 in DynAPs. Inset shows higher magnification view of dashed box for each panel. (C) GFP-Daap1 only partially co-localizes with mCherry-Dnaaf2.\u00a0(D) GFP-Daap1 co-localizes only very weakly with the IDA subunit mCherry-Wdr78. Scale bars\u00a0=\u00a010 \u00b5m.\n\nBecause human DAAP1 lacks the C-terminal NDK domain present in the Xenopus ortholog (Figure 5D), we were curious to know if the human ortholog also localizes to DynAPs. We therefore performed immunostaining for DAAP1 on sections of human lung. As observed in Xenopus, DAAP1 was not detectable in the axonemes of human MCCs (Figure 7A, brackets), and cytoplasmic staining for DAAP1 was strongly enriched in DynAPs, as indicated by co-labeling for the ODA subunit DNAI1 (Figure 7A, arrowheads).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig7-v2.jpg)\n\n**Figure 7.:** (A) A primary human lung section immunostained for human DAAP1 (green) and the ODA subunit DNAI1 (magenta). Boxed area indicates magnified region shown at right. DNAI1 strongly labels MCC axonemes (bracket) and also DynAPs in the cytoplasm (arrowheads). As in Xenopus, human DAAP1 is not present in axonemes but is strongly enriched in DynAPs. (DAPI (blue) marks nuclei; scale bar\u00a0=\u00a010 \u00b5m) (B) Schematic of C16orf71 constructs: Xenopus Daap1-Nterm is truncated, containing only the DUF4701 domain, similar to human DAAP1. (C) En face optical section above the apical surface of a Xenopus MCC reveals absence of Daap1-Nterm-GFP in axonemes. (D, E) Similar optical sections through the cytoplasm shows near-perfect colocalization of GFP-Daap1-Nterm with the ODA subunit mCherry-Dnai2 and only partial co-localization with Dnaaf2/Ktu. In all cases, inset shows higher magnification view of dashed box for accompanying panels. Scale bars\u00a0=\u00a010 \u00b5m.\n\nThis result then prompted us to examine the localization of a deletion construct comprising the isolated N-terminal DUF4701 domain of Xenopus Daap1 (i.e. a Xenopus equivalent of human DAAP1)(Figure 7B). We found that GFP-Daap1-Nterm also localized to ODA sub-DynAPs in Xenopus MCCs (Figure 7C\u2013E). Thus, despite their divergent evolutionary trajectories, both Xenopus and human DAAP1 are DynAP-specific cytoplasmic proteins, and the N-terminal DUF4701 domain is sufficient to direct localization to ODA sub-DynAPs.\n\n### Daap1 is stably retained in ODA sub-DynAPs\n\nDynAPs are liquid-like organelles, and we previously found using FRAP that both the DNAAFs and broadly-acting chaperones flux rapidly through these organelles, while both ODA and IDA subunits are stably retained (Huizar et al., 2018). Because Daap1 does not localize to axonemes in either humans or Xenopus, its localization to DynAPs suggests a role in ODA processing or assembly, rather than a direct function in ciliary beating. We therefore expected Daap1 to flux rapidly through DynAPs, similar to other cytoplasmic assembly factors. To our surprise, however, FRAP revealed instead that Xenopus Daap1 was retained in DynAPs in a manner that was similar, but not identical, to dynein subunit Dnai2 (Figure 8). Specifically, Daap1 displayed a somewhat slower initial recovery, but rather than plateauing at around 20 s, the signal continued to slowly recover for at least 60 s (Figure 8B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig8-v2.jpg)\n\n**Figure 8.:** (A) Stills from time-lapse imaging of FRAP for the assembly factor GFP-Dnaaf2, the ODA subunit GFP-Dnai2, GFP-Daap1 and GFP-Daap1-Nterm. Images are color-coded to highlight changes in pixel intensity (see key below images). Scale bar\u00a0=\u00a01 \u00b5m (B) Graphs displaying FRAP curves for GFP-Dnaaf2 (n\u00a0=\u00a014), GFP-Dnai2 (n\u00a0=\u00a012) GFP-Daap1 (n\u00a0=\u00a026), and GFP-Daap1-Nterm (n\u00a0=\u00a022).\n\nWe were also interested to know if human Daap1 displays similar dynamics, but FRAP assays in human MCCs are very challenging. We therefore examined the FRAP kinetics of Xenopus Daap1-Nterm as a proxy of the human protein for use in Xenopus MCCs. In FRAP assays, Daap1-Nterm displayed essentially identical kinetics to full-length Daap1 (Figure 8B). This result is consistent with the localization data above and strongly suggests that the DUF4701 domain is sufficient to drive the retention of Daap1 in ODA sub-DynAPs.\n\n### Daap1 is required for deployment of ODAs to the axoneme\n\nWe tested this idea using morpholino (MO)-mediated knockdown (KD) to disrupt splicing of the Daap1 transcript in Xenopus (Figure 9\u2014figure supplement 1A). Consistent with its interaction specifically with ciliary beating machinery, Daap1-KD had no impact on ciliogenesis itself, and well-defined ciliary tufts were observed in all morphants. However, Daap1-KD elicited severe loss of ODAs from MCC axonemes (Figure 9A,B,\u00a0D,\u00a0E). Both the intermediate chain Dnai2, as well as the light chain Dnal1 were severely reduced, with only small domains of the proximal axoneme labeled by either marker following knockdown (Figure 9A,B). We quantified this phenotype by examining intensity plots for Dnai2 and Dnai1 along the length of motile axonemes and normalizing this against co-expressed membrane-RFP (Figure 9C,F). Importantly, this phenotype was also observed using a second MO targeting a distinct splice site, suggesting that this phenotype is a specific effect of Daap1 depletion. (Figure 9\u2014figure supplement 1B,C).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig9-v2.jpg)\n\n**Figure 9.:** (A\u2013B) Xenopus MCC axonemes labeled by membrane-RFP (magenta) together with the GFP-Dnai2, an ODA intermediated chain in control embryo (A) and in C16orf71/Daap1 morphant (B). (C) Graph showing intensity of GFP-Dnai2 along the normalized axoneme length (n\u00a0=\u00a029 for control, 51 for morphant). (D\u2013E) MCCs labeled by membrane-RFP (magenta) together with the GFP-Dnal1, an ODA light chain in control embryo (D) and in C16orf71/Daap1 morphant (E). (F) Graph showing intensity of GFP-Dnal1 along the normalized axoneme length (n\u00a0=\u00a027 for control, 26 for morphant). (G\u2013H) MCCs labeled by membrane RFP (magenta) together with the GFP-Dnali1, an IDA a, c, d interacting protein in control embryo (G) and in C16orf71/Daap1 morphant (H). (I) Graph showing intensity of GFP-Dnali1 along the normalized axoneme length (n\u00a0=\u00a030 for control, 33 for morphant). (J\u2013K) MCCs labeled by membrane-RFP (magenta) together with the GFP-Wdr78, an IDA l1/f intermediated chain in control embryo (J) and in C16orf71/Daap1 morphant (K). (L) Graph showing intensity of GFP-Dnal1 along the normalized axoneme length (n\u00a0=\u00a032 for control, 43 for morphant). Both Dnai2, an ODA Intermediated chain and Dnal1, an ODA light chain are severely reduced in the axoneme in C16orf71 morphants, while IDA subunits display only mild loss from the distal most axoneme (inset). Yellow boxes indicate regions shown in accompanying insets for each panel. (M\u2013N) MCCs co-expressing a marker for both ODAs (Dnai2, green) and IDAs (Wdr78, magenta). Loss of C16orf71 results in specific loss of ODAs in the axoneme (N), while both ODA and IDA properly localize in the axoneme in control (M). (O\u2013P) Graphs showing intensities of GFP-Dnai2 and mCherry-Wdr78 along the normalized axoneme length in controls (O) and morphants (P). Scale bars\u00a0=\u00a010 \u00b5m.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58662/elife-58662-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** (A\u2013B) RT-PCR shows effective disruption of splicing by injection of C16orf71 MO #1 (A) and #2 (B). Ornithine decarboxylase (ODC) was used as a loading control for the RT-PCR. (C) Apical surface views labeled by membrane-RFP (magenta) and GFP-Dnai2 (green). Loss of C16orf71 by MO #2 results in reduction of Dnai2 in the axoneme, while GFP-Dnai2 reveals normal localization in control. Scale bar\u00a0=\u00a010 \u00b5m.\n\nGiven the specific localization of Daap1 to ODA sub-DynAPs, we expected that Daap1 loss should specifically impact axonemal deployment of ODAs, and for the most part, this was the case. While both ODA proteins were depleted along the entire length of the axoneme, the IDA-a, c, d protein Dnali1 and the IDA-f protein Wdr78 displayed more subtle defects (Figure 9G,H,J,K). Dnali1 displayed a mild reduction along the entire axoneme (Figure 9I), while Wdr78 displayed an even mild disruption that was largely restricted to the distal axoneme (Figure 9L). Interestingly, this result may relate to the partial co-localization of Dnali1 with Dnai2 (Figure 2\u2014figure supplement 1C) and reflects the known intimate link between assembly of ODAs and IDA-c (e.g.\u00a0Yamaguchi et al., 2018; Yamamoto et al., 2020).\n\nOverall, comparisons of subunit intensities demonstrated that loss of Daap1 had a significantly greater impact on ODA compared to IDAs. Because the effect on IDA-f was quite subtle (Figure 9L), we also made a more direct comparison by generating intensity plots to directly compare Wdr78 and Dnai1 co-expressed in the same axonemes (Figure 9M\u2013P). This analysis clearly demonstrated a profoundly more substantial loss of ODAs than IDAs after Daap1 depletion.\n\nThus, Daap1 is a DynAP-specific protein that interacts with ODA subunits and is essential for the deployment of ODAs to axonemes and further suggests a complex interplay of ODAs and IDAs is required to establish the final patterning of motors that drive ciliary beating.\n\n## Discussion\n\nHere, we have used live imaging to demonstrate that DynAPs contain sub-compartments that specifically partition inner and outer dynein arm subunits (Figures 1 and 2). Using in vivo proteomics, we identify several novel axonemal dynein interactors, including C16orf71/Daap1 (Figures 3 and 5). In both Xenopus and humans, Daap1 is present exclusively in the cytoplasm and not in ciliary axonemes. Moreover, the protein is highly enriched in DynAPs, where it is restricted to the ODA sub-DynAP (Figures 6\u20138). Remarkably, loss-of-function experiments revealed a requirement for Daap1 predominantly in the deployment of ODAs throughout the length of MCC cilia, while the impact on IDAs was only very mild, and restricted largely to the distal axoneme (Figure 9). Together, these data are significant for (1) adding weight to the argument that DynAPs serve a specific function in the assembly of axonemal dyneins, (2) demonstrating that sub-DynAPs represent molecularly and functionally distinct spaces within DynAPs, and (3) suggesting that additional DynAP-specific regulatory factors remain to be discovered.\n\n### Novel axonemal dynein interactors\n\nIn addition to the mechanistic insights provided by this study (discussed in detail below), our method for APMS and the datasets of in vivo IDA and ODA interactors provided here will be a useful resource for future studies. For example, wdr18 knockdown results in left/right asymmetry defects in zebrafish and mutations in human WDR18 are associated with congenital heart defects (Gao et al., 2011; Silversides et al., 2012); both phenotypes are indicative of ciliary beating defects, but the mechanism of Wdr18 action is entirely unknown. The data here are significant, then, for connecting Wdr18 to IDAs (Figure 3C) and for reporting the localization of Wdr18 in motile ciliated cells for the first time. Because we found that Wdr18 was not present in the axonemes of motile cilia but was present in DynAPs and near basal bodies (Figure 4D,E), our data suggest that Wdr18 function may not relate directly to IDA function, but rather to the assembly or transport of IDAs.\n\nThe more curious result here is the interaction of Wdr78 with Sf3a3 (Figure 3C), a well-defined component of the RNA splicing machinery (Kr\u00e4mer et al., 2005). Though unexpected, this result, and our finding that Sf3a3 is enriched in DynAPs (Figure 4F) is consistent with our recent report that DynAPs contain both RNA and RNA-associated proteins (Drew et al., 2020), similar to other liquid-like organelles such as stress granules and P bodies (Banani et al., 2017; Lin et al., 2015; Mittag and Parker, 2018). Indeed, we found that Cfap43 and Cfap44, which tether IDA-f to microtubules (Fu et al., 2018; Kubo et al., 2018), are both RNA-associated and localized to sub-DynAPs in Xenopus MCCs (Drew et al., 2020).\n\nThese findings are especially interesting in light of two additional recent papers. First, a recent paper reports that splicing factor Srsf1 plays a splicing-independent role in ciliary beating, likely via control of translation of protein essential for ciliary beating (Haward et al., 2020). A second recent paper reports the presence of \u2018KL granules\u2019 in Drosophila sperm that -like DynAPs- contain the Dynein assembly chaperones Ruvbl1/2, and these granules are also highly enriched in the mRNAs encoding axonemal dyneins (Fingerhut and Yamashita, 2020). Taken together, these findings suggest that the role of RNA-associated proteins in DynAP assembly or function should be a rich area for future investigation.\n\n### Daap1 and the Nme family of proteins and ciliary beating\n\nOur data here also shed light on the evolution of motile cilia function and regulation in vertebrates, particularly with respect to Daap1 and the Nme family of NDK proteins (Desvignes et al., 2009). Three Nme proteins have been implicated in motile cilia function, including Nme8, which is orthologous to the LC3 ODA subunit in Chlamydomonas and has been implicated in human motile ciliopathy (Duriez et al., 2007; Pazour et al., 2006). Nme5 is also required for ciliary beating in Xenopus and mammals, though its mechanism of action remains unknown (Anderegg et al., 2019; Chung et al., 2014; Vogel et al., 2012). Nme9 (aka Txndc6 or Txl-2) is localized to motile cilia in the mouse (Sadek et al., 2003), but its function is also unknown. It is significant, then, that we found Nme9 to be localized to Xenopus MCC cilia (Figure 4A\u2013C). The observed interactions with Dnai2 and Daap1 (Figure 3C, Figure 5A) suggest that it too may be an ODA subunit.\n\nCuriously, examination of genome data using Xenbase (Karimi et al., 2018; Session et al., 2016) suggests that Xenopus lacks the Nme8 gene, and further exploration in NCBI revealed that many vertebrate genomes contain only Nme8 or Nme9, but not both (not shown). The linkage of an NDK domain to the DUF4701 domain in non-mammalian Daap1 orthologs suggest the possibility that these two protein domains may act in concert, and it is tempting to speculate that the NDK domain of Daap1 in non-mammalian vertebrates may explain the absence of either Nme8 or Nme9 in those genomes. Interestingly, a very recent report describes the discovery of novel NDK domain protein in Tetrahymena with a specific role in stabilizing ODA dyneins in an inactive conformation for targeting to axonemes (Mali et al., 2020). It is possible then that Daap1 plays a similar role in Xenopus. Continued studies in diverse organisms will thus be of great interest.\n\n### The composition and function of DynAPs\n\nDynAPs have now been observed in human, mouse, Xenopus and zebrafish, so it is clear that these organelles represent a conserved element of MCCs (Diggle et al., 2014; Horani et al., 2018; Huizar et al., 2018; Li et al., 2017; Mali et al., 2018). However, the precise function of DynAPs remains unknown, a situation shared with many liquid-like organelles. Genetic evidence suggests that DynAPs are factories for axonemal dynein assembly, as genetic loss of DynAP-localized DNAAFs consistently results in a failure of dynein arm assembly, failure of dynein deployment to axonemes, and defective ciliary beating (Fabczak and Osinka, 2019). Our identification of Daap1 as yet another protein that is enriched in DynAPs and is specifically required for deployment of axonemal dyneins to cilia adds weight to the argument that DynAPs perform a critical assembly or deployment function.\n\nStrictly speaking, however, all DNAAF proteins and chaperones yet studied are present throughout the cytoplasm and enriched in DynAPs, so we cannot rule out the possibility that dyneins are normally assembled in the cytoplasm, while DynAPs serve some other function. For example, DynAPs may act in storage or assembly of dyneins for rapid deployment to cilia (e.g. for ciliary regeneration) or for quality control and/or degradation of mis-folded dyneins. Answering such questions is a key challenge, and is one faced generally for liquid-like organelles.\n\nRegardless, our data clearly demonstrate that DynAPs are structurally partitioned, as are many other liquid-like organelles (e.g. Feric et al., 2016; Jain et al., 2016; Schmidt and Rohatgi, 2016). Moreover, our observation that Daap1 is restricted to ODA sub-DynAPs (Figures 6 and 7) and that its loss results predominantly in ODA defects (Figure 9) argues that sub-DynAPs reflect a functional sub-compartmentalization. Conversely, though it has been suggested that DNAAFs and chaperones act in a relay system to catalyze iterative steps of ODA and IDA assembly (Mali et al., 2018), we found no evidence of physical compartmentalization of any of the tested DNAAFs and chaperones (Figure 1), suggesting that partitioned localization of those factors is not strictly required. Consistent with this idea, though Ktu has been shown to specifically impact assembly of ODAs and IDA-c (Yamaguchi et al., 2018), we found no restriction of Ktu localization within DynAPs (Figure 1 and see Huizar et al., 2018). Together, our findings here provide a deeper cell biological framework in which to understand the complex genetics of dynein assembly in motile ciliated cells.\n\n## Materials and methods\n\n### Xenopus embryo manipulations\n\nXenopus embryo manipulations were carried out using standard protocols. Briefly, female adult Xenopus were induced to ovulate by injection of hCG (human chorionic gonadotropin). In vitro fertilization was carried out by homogenizing a small fraction of a testis in 1X Marc\u2019s Modified Ringer\u2019s (MMR). Embryos were dejellied in 1/3x MMR with 2.5%(w/v) cysteine (pH7.8). Embryos were microinjected with mRNA, circular DNA or morpholinos in 2% Ficoll (w/v) in 1/3x MMR and injected embryos were washed with 1/3x MMR after 2 hr.\n\n### Plasmids and MOs for microinjections\n\nXenopus gene sequences were obtained from Xenbase (http://www.xenbase.org) and open reading frames (ORF) of genes were amplified from the Xenopus cDNA library by polymerase chain reaction (PCR), and then are inserted into a pCS10R vector containing a fluorescence tag. In addition to the vectors described previously (Huizar et al., 2018), the following constructs were cloned into pCS vector: ruvbl2-mCherry, mCherry-zmynd10, GFP-wdr78, GFP-dnai1, GFP-dnal4, GFP-dnal1, GFP-nme9, GFP-wdr18, GFP-sf3a3, GFP-c16orf71, GFP-c16orf71 N-term (1-527aa), GPF-tctex1d2 and mCherry-wdr78. These constructs were linearized and the capped mRNAs were synthesized using mMESSAGE mMACHINE SP6 transcription kit (ThermoFisher Scientific). Each 80 pg of each mRNA was injected into two ventral blastomeres. For APMS, GFP-dnai2, GFP-wdr78 and GFP-c16orf71 N-term were inserted into pCS2 vectors under multiciliated-cell-specific alpha-tubulin promoter and each 40 pg of each DNA was injected into blastomeres. C16orf71/Daap1 morpholinos were designed to target 1st or 3rd exon-intron splicing junction, The MO sequences and the working concentrations include:\n\n### Immunoprecipitation of Xenopus animal caps for mass-spectrometry\n\nTo identify Dnai2 or Wdr78 interactors, circular plasmids of GFP only, GFP-dnai2 and GFP-wdr78 driven by MCC-specific \u03b1-tubulin promoter were injected into 4-blastomeres of 4 cell stage Xenopus embryos. Approximately 550 animal caps per sample were isolated at stage eight using forceps and were cultured in 1X Steinberg\u2019s solution (0.58 mM NaCl, 0.64 mM KCl, 0.33 mM Ca(NO2)2, 0.8 mM MgSO4, 5 mM Tris, 50 \u00b5g/ml gentamicin, pH 7.4\u20137.6) until sibling embryos reached stage 23. The cultured explants were collected and immunoprecipitation (IP) was performed using GFP-Trap Agarose Kit (ChromoTek, cat# gtak-20). Immunoprecipitated proteins were eluted in 2X sample buffer. For MS of C16orf71, GFP only and GFP-c16orf71 plasmid driven by alpha-tubulin promoter were injected into Xenopus embryos and\u00a0~500 animal caps were collected from each sample. The following steps were performed with the same procedures as described for Dnai2 and Wdr78 AP. For statistical tests of enrichment, GFP-wdr78 and GFP-dnai2 share a GFP- only control (GFP_1a_08292018, GFP_1b_08292018) and GFP-c16orf71 uses a separate GFP-only control (GFP_1a_04252019, GFP_1b_ 04252019).\n\n### Affinity-purification-mass-spectrometry\n\nImmunoprecipitated proteins were resuspended in SDS-PAGE sample buffer and heated 5 min at 95\u00b0C before loading onto a 7.5% acrylamide mini-Protean TGX gel (BioRad). After 7 min of electrophoresis at 100 V the gel was stained with Imperial Protein stain (Thermo) according to manufacturer\u2019s instructions. The protein band was excised, diced to 1 mm cubes and processed by standard trypsin in-gel digest methods for mass-spectrometry (for experiments with baits Dnai2 and Wdr78) or by the more rapid method of Goodman et al., 2018 for C16orf71. Digested peptides were desalted with HyperSep Spin Tip C-18 columns (Thermo Scientific), dried, and resuspended in 30\u201360 \u00b5l of 5% acetonitrile, 0.1% acetic acid for mass-spectrometry.\n\nSamples from experiments with baits Dnai2 and Wdr78 were analyzed on a Thermo Orbitrap Fusion mass spectrometer and those with bait C16orf71 were analyzed using a Thermo Orbitrap Fusion Lumos Tribrid mass spectrometer. In all cases peptides were separated using reverse phase chromatography on a Dionex Ultimate 3000 RSLCnano UHPLC system (Thermo Scientific) with a C18 trap to Acclaim C18 PepMap RSLC column (Dionex; Thermo Scientific) configuration and eluted using a 3% to 45% gradient over 60 min. with direct injection into the mass spectrometer using nano-electrospray. Data were collected using a data-dependent top speed HCD acquisition method with full precursor ion scans (MS1) collected at 120,000 m/z resolution. Monoisotopic precursor selection and charge-state screening were enabled using Advanced Peak Determination (APD), with ions of charge \u2265 + two selected for high energy-induced dissociation (HCD) with stepped collision energy of 30% +/-\u00a03% (Lumos) or 31% +/-\u00a04% (Orbitrap Fusion). Dynamic exclusion was active for ions selected once with an exclusion period of 20 s (Lumos) or 30 s (Orbitrap Fusion). All MS2 scans were centroid and collected in rapid mode.\n\nRaw MS/MS spectra were processed using Proteome Discoverer (v2.3). We used the Percolator node in Proteome Discoverer to assign unique peptide spectral matches (PSMs) at FDR\u00a0<\u00a05% to the composite form of the X. laevis reference proteome described in\u00a0Drew et al., 2020, which comprises both genome-derived Xenbase JGI v9.1 + GenBank X. laevis protein sets, but with homeologs and highly related entries combined into EggNOG vertebrate-level orthology groups (Huerta-Cepas et al., 2016), based on the method developed in McWhite et al., 2020. In order to identify proteins statistically significantly associated with each bait, we calculated both a log2 fold-change and a Z-score for each protein based on the observed PSMs in the bait (\u2018expt\u2019) versus control (\u2018ctrl\u2019) pulldown. The fold-change was computed for each protein as:\n\n$$\nFC_{proteini}=log_{2}(\\frac{(PSM_{i,expt+1})/\\sumj=1n(PSM_{j,expt+1})}{(PSM_{i,ctrl+1})/\\sumk=1n(PSM_{k,ctrl+1})}),\n$$\n\nwhere n is the total number of proteins considered in the experiment.\n\nFor visualization purposes and initial rankings, we calculated significance for protein enrichment in the experiment relative to control using a one-sided Z-test as in Lu et al., 2007 with a 95% confidence threshold (z\u00a0\u2265\u00a01.645), as:\n\n$$\nZ_{proteini}=\\frac{f_{i,expt}\u2212f_{i,ctrl}}{\\sqrt[]{\\frac{f_{i,comb}(1\u2212f_{i,comb})}{\\sumj=1nPSM_{j,expt}}+\\frac{f_{i,comb}(1\u2212f_{i,comb})}{\\sumj=1nPSM_{j,ctrl}}}},\n$$\n\ne for each protein based on the\u00a0where $f_{i}=PSM_{i}/\\sumj=1nPSM_{j}$ and $f_{i,comb}=(PSM_{i,expt}+PSM_{i,ctrl})/\\sumj=1n(PSM_{j,expt}+PSM_{j,ctrl})$.\n\nWe determined significance by calculating p-values for each Z-score using the pnorm distribution function available in the R Stats Package (v3.6.1). We corrected for multiple comparisons by computing the Benjamini-Hochberg false discovery rate using the p.adjust function, also from the R Stats Package (v3.6.1). Probability values and false discovery rates are provided in Supplementary files 1\u20133.\n\n### Imaging, FRAP and image analysis\n\nXenopus embryos were mounted between cover glass and submerged in 1/3x MMR at stage 22 or 23, and then were imaged immediately. Live images were captured with a Zeiss LSM700 laser scanning confocal microscope using a plan-apochromat 63 \u00d7 1.4 NA oil objective lens (Zeiss) or with Nikon eclipse Ti confocal microscope with a 63\u00d7/1.4 oil immersion objective. For FRAP experiments, a region of interest (ROI) was defined as a 1.75 \u00b5m X 1.75 \u00b5m box. ROIs were bleached using 50% laser power of a 488 nm laser and a 0.64 \u00b5sec pixel dwell time. Fluorescence recovery was recorded at\u00a0~\u00a00.20 s intervals for up to 300 frames. Bleach correction and FRAP curve-fitting was carried out using a custom python script (modified from http://imagej.net/Analyze_FRAP_movies_with_a_Jython_script). For colocalization analysis, z- stack images were captured from at least 15 cells from at least five different embryos. Z stacks were split to single sections and ROI for DynAPs was defined in red channel (mCherry) of each section using ImageJ selection tool. The analysis was carried out using Fiji coloc2 plugin.\n\nIntensity of dynein subunits and length of axonemes were measured using Fiji. Plots were generated using PRISM eight and the ggplot2 package in R. One-way ANOVA and Tukey\u2019s Honest Significant Difference (HSD) test and Welch Two Sample t-test were performed in R.\n\n### Protein domain prediction\n\nThe human DAAP1 sequence was analyzed using the PSIPRED Protein Analysis Workbench for disorder and secondary structure prediction (Buchan and Jones, 2019).\n\n### Airway epithelial cell culture and immunostaining\n\nHuman trachea were isolated from surgical excess of tracheobronchial segments of lungs donated for transplantation. These unidentified tissues are exempt from regulation by HHS regulation 45 CFR Part 46. Paraffin embedded tracheal sections were fixed and immunostained as previously described (Pan et al., 2007; You et al., 2002). Nuclei were stained using 4\u2019, 6-diamidino-2-phenylindole (DAPI, Vector Laboratories, Burlingame, CA, USA). The ODA protein, DNAI1, was detected using primary antibodies obtained from NeuroMab (UC Davis, Ca, clone UNC 65.56.18.11). Antibodies to DAAP1 (C16orf71) were obtained from Sigma-Millipore (St. Louis, MO, HPA049468). Images were acquired using a Zeiss LSM700 laser scanning confocal microscope.\n\n### In situ hybridization\n\nIn situ hybridization was performed as described previously (Sive et al., 2000) using DIG-labeled single-stranded RNA probes against a partial sequence (1\u20131572) of Xenopus c16orf71 ORF. Bright field images were captured with a Zeiss Axio Zoom. V16 stereo microscope with Carl Zeiss Axiocam HRc color microscope camera.\n\n### Rt-pcr\n\nTo verify the efficiency of C16orf71 MOs, MOs were injected into all cells at the 4 cell stage and total RNA was isolated using the TRIZOL reagent (Invitrogen) at stage 23. cDNA was synthesized using M-MLV Reverse Transcriptase (Invitrogen) and random hexamers. C16orf71 cDNAs were amplified by Taq polymerase (NEB) with these primers: c16orf71 5F 5\u2019-cttcagagcaggacggattt-3\u2019, c16orf71 582R 5\u2019-ggcagaggtgcttagatgtt-3\u2019, c16orf71 600F 5\u2019- gggcttgtcattgcagtttc-3\u2019, c16orf71 1254R 5\u2019-tctctaccgtccttctcttctc-3\u2019. odc1 primers were odc1 426F 5\u2019-ggcaaggaatcacccgaatg-3\u2019 and odc1 843R 5\u2019-ggcaacatagtatctcccaggctc-3\u2019.\n\n### Data deposition\n\nProteomics data has been deposited into Massive which in turn was passed to ProteomeXchange.\n\nThe Massive accession # is: MSV000085075 The direct link is https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=f6a5e10c6e114b36b8c895664860db7e.\n\nThe ProteomeXchange # is PXD017980 as noted in the paper. The direct link is http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD017980.\n\nThe direct link to the data ftp site is ftp://massive.ucsd.edu/MSV000085075/.\n",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "5189e852-8042-4a43-9b94-0d4ff19d41e7",
+      "submission_id": "9170a484-16b3-4218-b0ef-63899e7d2a37",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew P Carter, MRC Laboratory of Molecular Biology United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58662.sa1](https://doi.org/10.7554/eLife.58662.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour study elegantly shows that the assembly of outer arm dyneins (ODAs) and inner arm dyneins (IDAs) is spatially separated in distinct cytoplasmic foci. The other important finding in this work is the identification of novel interactors of ODA and IDA subunits within these foci. In particular you identify and characterize Daap1, which is rich in intrinsically disordered regions, and show that its absence results in loss of ODAs from cilia.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Functional partitioning of a liquid-like organelle during assembly of axonemal dyneins\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Tim Stearns (Reviewer #1); Masahide Kikkawa (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nLee et al. examine liquid-like organelle \"DynAPs\" (axonemal dynein particles) that are important for assembly of axonemal dyneins in the cytoplasm using live-imaging and in vivo proteomics. They find DynAPs for outer arm dyneins (ODAs) and those for inner arm dyneins (IDAs) are spatially separated. The authors focused on five axonemal dynein assembly factors, three chaperones, and three dynein subunits and analyzed the co-localization of these factors in Xenopus MCCs (multi-ciliated cells). Detailed confocal imaging demonstrates that DynAPs are structurally partitioned for ODA and IDA subunits, which reveals discrete processing of ODA and IDA in the cytoplasm.\n\nThe other major finding in this work is the identification of novel interactors of ODA and IDA subunits in DynAPs. The authors performed affinity-purification and mass-spectrometry of Dnai2 (ODA subunit) and Wdr78 (IDA-f subunit) using Xenopus MCCs, and generated the sets of axonemal dynein interaction partners. Among them, Nme9, Wdr18, and Sf3a3 are analyzed and their enrichment in DynAPs are revealed. The function of an uncharacterized protein, Daap1, is analyzed and it is shown to be a novel cytoplasmic ODA regulator; Daap1 was enriched only in the ODA sub-region of DynAPs and knockdown of Daap1 caused a severe loss of ODAs from motile cilia.\n\nEssential revisions:\n\nAll reviewers were strongly supportive of this manuscript. They agreed that it needs some extra and careful quantification, an expansion of methods and some textual edits. The key modification they suggest is quantification of data showing the subcompartmentalization of the DynAPs (Essential Revision 1). There are some suggestions below that may require new-experimental data. While these would strengthen the manuscript the reviewers would be happy to see those at a later date as a Research Advance. Their priority for now was quantification of the datasets that already exist, together with textual clarifications.\n\n1) In Figure 2C, ODA subunit (Dnai2)-positive signals are not overlapping with IDA subunit signal (Wdr78), suggesting that DynAPs for ODA and DynAPs for IDA are mutually exclusive. Since this observation is one of the major findings in this paper, it should be shown with statistical data, not just by a few examples.\n\n1a) Currently, only en face optical section is shown, but how do 3D stack images look like? Did the authors observe DynAP for ODA and DynAP for IDA aligned along z-direction?\n\n1b) Statistical analyses of independent cells and DynAPs are required. Although Pearson's correlations are shown in Figure 1 and Figure 1\u2014figure supplement 1, no similar analysis Figure 2 is shown. Without statistical analyses, one can argue that the images shown in Figure 2 can be just a few biased examples.\n\n1c) One reviewer suggested quantification of the DynAP subcompartmentalization could be achieved by measuring the correlation of signals and suggested the following review on this topic: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3074624/.\n\nAlso: https://jcs.biologists.org/content/joces/131/3/jcs211847.full.pdf\n\n2) Heterogeneity between DynAPs: In their previous paper, knockdown of one DNAAF (Heatr2) only reduced incidence of DynAPs to ~25% suggesting heterogeneity of DynAps could exist. If each cell has ~20 DynAPs, how many are ODA+IDA+DNAAF+ (albeit in separate subdomains), versus just DNAAF+? Just IDA+DNAAF+ versus just ODA+DNAAF+? Does this vary within the cell (a range of DynAP makeups) versus between cells (all DynAPs the same), does this change with developmental time? At the moment, it is not clear how the analysis for DynAPs was done- how each object was selected, what means were used to overcome bias. More details necessary and data could be presented as supergraphs (quantification from each cell analysed color coded) and legends (how many DynAPs analysed, from how any cells/organisms). Also revised analysis should be highly detailed in how it was performed- i.e. all DNAAF+ foci above X units in thresholding were marked in the cell and subjected to X script for correlation in FiJi in all three channels. Then vice versa with the dynein subunits. Moreover without HCs for dyneins, they can't look at heterogeneity of ODAs, but they can do different IDAs- WDR78 and DNALI1- do they colocalize in foci? This is very important to tell us whether there are there subdomains for different types of IDAs?\n\n3) Statistics and proteomics- specificity, robustness and noise. The IP traps appear to have been run as a single run which precludes the use of t-test between replicates. Even limiting amounts of input could have been split in three for technical replicates. Although only looking at three bait-prey IP sets (not a massive dataset), instead Z-scores are chosen- where there are no replicates. There is no false discovery rate correction. More so 'hits' seem to be less specific than what is permitted by their cut-offs for significant in terms of Z-score (one-sided Z test), sometimes with only a few peptides as level. The way the data is presented is misleading for example, DNAI2 in WDR78 IP was 0.78 Z- score so not enriched significantly\u2026. although WDR78 present in DNAI2 IP.\n\n4) Characterization of daap1 depletion: All of interaction studies above pull out novel Daap1 which they go onto define as an ODA sub-DynAP localised protein required specifically for the correct assembly of ODA (Figure 9). The authors demonstrate this using imaging of fluorescent proteins fused to Dnai2 or Wdr78 in the axoneme only. This needs to be quantified- intensity plots against length of axoneme, next to the panels they have.\n\n5) Control for morpholino and rescue: The authors acknowledge two separate morpholinos were used to knockdown daap1 and show depletion by RT-PCR to demonstrate effectiveness and specificity Figure 9\u2014figure supplement 1. The norm is still to use a rescue RNA for these experiments not only to show specificity but importantly by using either the full length versus just the N-terminal DUF4701 domain of Xenopus Daap1 N terminal domain, you can show that the human protein is likely to have a similar effect in DynAP assembly. Or whether it's the NDK domain that is important for the function of Daap1 rather than the domain found in mammalian cells. It would strengthen analysis in Figures 7 and 8 in terms of narrative. Another alternative would be to use he more elegant experiment would have been to over-express the human variant in the Xenopus morphant- can it rescue the phenotype.\n",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "382dd022-d689-4440-8ca5-041e1f82b8c7",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C1",
+      "claim": "Ciliary motility is driven by axonemal dyneins that are assembled in the cytoplasm before deployment to cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Ciliary motility is driven by axonemal dyneins that are assembled in the cytoplasm before deployment to cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about ciliary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "79d6d829-cbb6-4ddd-8c35-f57bb60bfab9",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C2",
+      "claim": "Motile ciliopathy can result from defects in the dyneins themselves or from defects in factors required for their cytoplasmic pre-assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Motile ciliopathy can result from defects in the dyneins themselves or from defects in factors required for their cytoplasmic pre-assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about motile ciliopathy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "c8e8bcb6-0edc-41ad-bb24-aa26026a8365",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C3",
+      "claim": "Axonemal dyneins, their specific assembly factors, and broadly-acting chaperones are concentrated in liquid-like organelles in the cytoplasm called DynAPs (Dynein Axonemal Particles).",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work demonstrates that axonemal dyneins, their specific assembly factors, and broadly-acting chaperones are concentrated in liquid-like organelles in the cytoplasm called DynAPs (Dynein Axonemal Particles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as recent work, referencing prior findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "f98a06c3-804e-46d0-90bc-66db9295010d",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C4",
+      "claim": "Inner dynein arm (IDA) and outer dynein arm (ODA) subunits are partitioned into non-overlapping sub-regions within DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use in vivo imaging in Xenopus to show that inner dynein arm (IDA) and outer dynein arm (ODA) subunits are partitioned into non-overlapping sub-regions within DynAPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract and supported by imaging data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "d000aac0-e082-4699-9515-91a9045ee6a1",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C5",
+      "claim": "C16orf71/Daap1 is a novel axonemal dynein regulator.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, we identify C16orf71/Daap1 as a novel axonemal dynein regulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by APMS data and functional experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "38425e46-a123-4090-95bc-827777e47bf6",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C6",
+      "claim": "Daap1 interacts with ODA subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Daap1 interacts with ODA subunits, localizes specifically to the cytoplasm, is enriched in DynAPs, and is required for the deployment of ODAs to axonemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by APMS data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "3274f498-dd43-4e24-96aa-1847c3d93c59",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C7",
+      "claim": "Daap1 localizes specifically to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Daap1 interacts with ODA subunits, localizes specifically to the cytoplasm, is enriched in DynAPs, and is required for the deployment of ODAs to axonemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by imaging data in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "227df034-7545-49cc-b464-8dab38cd406e",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C8",
+      "claim": "Daap1 is enriched in DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Daap1 interacts with ODA subunits, localizes specifically to the cytoplasm, is enriched in DynAPs, and is required for the deployment of ODAs to axonemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by imaging data in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "90b73082-4bd1-4417-b659-59c080b75ade",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C9",
+      "claim": "Daap1 is required for the deployment of ODAs to axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Daap1 interacts with ODA subunits, localizes specifically to the cytoplasm, is enriched in DynAPs, and is required for the deployment of ODAs to axonemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by knockdown experiments in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "907a1e60-c245-4e0a-81f8-4d8c8b8d82fe",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C10",
+      "claim": "Motile cilia are microtubule-based cellular projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Motile cilia are microtubule-based cellular projections and their oriented beating generates fluid flows that are critical for development and homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about motile cilia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "3cb5cf56-f43b-4923-81ba-19d36cd86d3a",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C11",
+      "claim": "Oriented beating of motile cilia generates fluid flows that are critical for development and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Motile cilia are microtubule-based cellular projections and their oriented beating generates fluid flows that are critical for development and homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about motile cilia function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "9daa618c-93e2-4f57-8afc-a8385f836142",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C12",
+      "claim": "Ciliary beating is driven by a complex set of axoneme-specific dynein motors that drive sliding of the axonemal microtubule doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "Ciliary beating is driven by a complex set of axoneme-specific dynein motors that drive sliding of the axonemal microtubule doublets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about ciliary beating mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "85c3f9ce-229f-4628-8d87-804cde319260",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C13",
+      "claim": "Axonemal dynein motors are classified as either outer dynein arms (ODAs) or inner dynein arms (IDAs) based on their relative positions within the axoneme.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their relative positions within the axoneme, these motors are classified as either outer dynein arms (ODAs) or inner dynein arms (IDAs)(Figure 1A, upper inset), the former driving ciliary beating generally, and the latter tuning the waveform (Kamiya and Yagi, 2014; King, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "7d29c9ba-b87e-414a-a9ce-a0cd42e4a5cb",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C14",
+      "claim": "ODAs drive ciliary beating generally.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their relative positions within the axoneme, these motors are classified as either outer dynein arms (ODAs) or inner dynein arms (IDAs)(Figure 1A, upper inset), the former driving ciliary beating generally, and the latter tuning the waveform (Kamiya and Yagi, 2014; King, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Kamiya and Yagi, 2014; King, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "3b47b990-5db6-44d1-89c3-58fb0ff4b57c",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C15",
+      "claim": "IDAs tune the ciliary beating waveform.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their relative positions within the axoneme, these motors are classified as either outer dynein arms (ODAs) or inner dynein arms (IDAs)(Figure 1A, upper inset), the former driving ciliary beating generally, and the latter tuning the waveform (Kamiya and Yagi, 2014; King, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Kamiya and Yagi, 2014; King, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "598d2062-2468-4301-b77d-315b4108b97b",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C16",
+      "claim": "Mutations in genes encoding ODA or IDA subunits are the major cause of primary ciliary dyskinesia (PCD).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in genes encoding ODA or IDA subunits are the major cause of the motile ciliopathy syndrome known as primary ciliary dyskinesia (PCD; MIM 244400).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about PCD genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "d00d4e9b-bc2c-499b-b075-1336791cfc1b",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C17",
+      "claim": "PCD results in repeated sinopulmonary disease, bronchiectasis, cardiac defects, situs anomalies, and infertility.",
+      "claim_type": "EXPLICIT",
+      "source": "This genetic disease results in repeated sinopulmonary disease, bronchiectasis, cardiac defects, situs anomalies, and infertility (Horani et al., 2016; Mitchison and Valente, 2017; Wallmeier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Horani et al., 2016; Mitchison and Valente, 2017; Wallmeier et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "3377a9fd-d468-49fe-a384-50af5a70dd3e",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C18",
+      "claim": "PCD can result from mutations in genes encoding cytoplasmic proteins known as Dynein Axonemal Assembly Factors (DNAAFs).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PCD can also result from mutations in genes encoding any of several cytoplasmic proteins collectively known as Dynein Axonemal Assembly Factors (DNAAFs)(Desai et al., 2018; Fabczak and Osinka, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Desai et al., 2018; Fabczak and Osinka, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "9a821c71-082c-4933-9841-07e91bbd1f14",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C19",
+      "claim": "Axonemal dynein motors were known to be pre-assembled in the cytoplasm before deployment to cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonemal dynein motors were known to be pre-assembled in the cytoplasm before deployment to cilia (Fowkes and Mitchell, 1998), but the first description of DNAAFs came later, with the identification of KTU (aka DNAAF2)(Omran et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Fowkes and Mitchell, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "efd7b2b7-7c43-4f22-8403-8eec076c6aa0",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C20",
+      "claim": "KTU (aka DNAAF2) was the first described DNAAF.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonemal dynein motors were known to be pre-assembled in the cytoplasm before deployment to cilia (Fowkes and Mitchell, 1998), but the first description of DNAAFs came later, with the identification of KTU (aka DNAAF2)(Omran et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Omran et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "3ec012c5-abaf-4a15-b2f9-dfb541a22c2e",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C21",
+      "claim": "DNAAFs are never part of the axoneme.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of motile ciliopathy patients have now defined an array of cytoplasmic DNAAFs that are never part of the axoneme, yet when mutated result in loss of axonemal dyneins, and in turn, defective cilia beating (Diggle et al., 2014; Horani et al., 2012; Horani et al., 2013; Kott et al., 2012; Mitchison et al., 2012; Moore et al., 2013; UK10K Rare Group et al., 2017; Paff et al., 2017; UK10K et al., 2013; Zariwala et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "70c96c30-51cd-4950-9d26-a62e7ca50a5f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C22",
+      "claim": "When DNAAFs are mutated, they result in loss of axonemal dyneins and defective cilia beating.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of motile ciliopathy patients have now defined an array of cytoplasmic DNAAFs that are never part of the axoneme, yet when mutated result in loss of axonemal dyneins, and in turn, defective cilia beating (Diggle et al., 2014; Horani et al., 2012; Horani et al., 2013; Kott et al., 2012; Mitchison et al., 2012; Moore et al., 2013; UK10K Rare Group et al., 2017; Paff et al., 2017; UK10K et al., 2013; Zariwala et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "062a3a41-d187-496a-b0dc-c5076ad4177a",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C23",
+      "claim": "DNAAFs act in concert with ubiquitous, broadly-acting chaperones of the Heat Shock Protein (Hsp) Family.",
+      "claim_type": "EXPLICIT",
+      "source": "These specialized DNAAFs are now known to act in concert with ubiquitous, broadly-acting chaperones of the Heat Shock Protein (Hsp) Family (Cho et al., 2018; Li et al., 2017; Mali et al., 2018; UK10K Rare Group et al., 2017; Omran et al., 2008; Paff et al., 2017; UK10K et al., 2013; Yamaguchi et al., 2018; Yamamoto et al., 2010; Zhao et al., 2013; Zur Lage et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "04574962-5a41-4ad9-9038-e9915ee6d76d",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C24",
+      "claim": "Each axoneme contains a series of closely related multiprotein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "How DNAAFs organize the assembly of axonemal dyneins is a complex question, as each axoneme contains an series of closely related multiprotein complexes (King, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to King, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "a17f212b-612e-47af-bde0-b2cd14dbcf7f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C25",
+      "claim": "ODAs and IDAs incorporate diverse heavy, intermediate, and light chains encoded by distinct genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ODAs and IDAs incorporate diverse heavy, intermediate, and light chains encoded by distinct genes; few subunits are shared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about dynein arm composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "7b54d23f-2153-4379-ac71-cf51255124ae",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C26",
+      "claim": "Few subunits are shared between ODAs and IDAs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ODAs and IDAs incorporate diverse heavy, intermediate, and light chains encoded by distinct genes; few subunits are shared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about dynein arm composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "6a1eab93-a0e6-4952-a651-25f9fcd244ec",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C27",
+      "claim": "At least eight distinct IDA sub-types and two ODA sub-types have been described.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, at least eight distinct IDA sub-types and two ODA sub-types have been described (Dougherty et al., 2016; Fliegauf et al., 2005; King, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Dougherty et al., 2016; Fliegauf et al., 2005; King, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "54efbd67-4119-4a85-9973-69acb42ccaad",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C28",
+      "claim": "Disruption of any single DNAAF has generally been found to impact both ODAs and IDAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, disruption of any single DNAAF has been found to impact both ODAs and IDAs (Fabczak and Osinka, 2019), but a recent study suggests that distinct DNAAFs may be dedicated for the assembly of specific subsets of dyneins (Yamaguchi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Fabczak and Osinka, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "f5dd36b6-13a9-445d-ae7f-5c0a4083e9ab",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C29",
+      "claim": "Distinct DNAAFs may be dedicated for the assembly of specific subsets of dyneins.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, disruption of any single DNAAF has been found to impact both ODAs and IDAs (Fabczak and Osinka, 2019), but a recent study suggests that distinct DNAAFs may be dedicated for the assembly of specific subsets of dyneins (Yamaguchi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Yamaguchi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "86e68ab1-a49f-498b-8766-f778e3a18c78",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C30",
+      "claim": "Distinct DNAAFs may catalyze specific stages of the dynein assembly process.",
+      "claim_type": "EXPLICIT",
+      "source": "Another recent study has suggested that distinct DNAAFs may catalyze specific stages of the dynein assembly process (Mali et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Mali et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "32a2818c-d98a-4ee9-8ae2-01d7751dddea",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C31",
+      "claim": "DNAAFs and chaperones act together in cytosolic foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies indicated that the DNAAFs and chaperones act together in cytosolic foci (Diggle et al., 2014; Horani et al., 2012; Li et al., 2017; Mali et al., 2018), and we recently demonstrated that DNAAFs, chaperones, and axonemal dynein subunits are sequestered in specialized membrane-less organelles that we termed DynAPs (Huizar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to Diggle et al., 2014; Horani et al., 2012; Li et al., 2017; Mali et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "78b34b69-1562-4f29-9eae-51a430461ca9",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C32",
+      "claim": "DynAPs are multiciliated cell (MCC)-specific organelles that display hallmarks of biological phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "DynAPs are multiciliated cell (MCC)-specific organelles that display hallmarks of biological phase separation, with DNAAFs and chaperones fluxing through rapidly while dynein subunits are stably retained (Huizar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Huizar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "da8fa115-2a32-42e6-9fa5-202b19868687",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C33",
+      "claim": "DNAAFs and chaperones flux rapidly through DynAPs while dynein subunits are stably retained.",
+      "claim_type": "EXPLICIT",
+      "source": "DynAPs are multiciliated cell (MCC)-specific organelles that display hallmarks of biological phase separation, with DNAAFs and chaperones fluxing through rapidly while dynein subunits are stably retained (Huizar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Huizar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "188403b1-d05e-4ce6-858b-880ed2d16496",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C34",
+      "claim": "The Hsp co-chaperone Stip1/Hop displays essentially total co-localization with the assembly factor Dnaaf5/Heatr2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found, for example, that the Hsp co-chaperone Stip1/Hop displayed essentially total co-localization with the assembly factor Dnaaf5/Heatr2 (Figure 1B), while by contrast, the outer dynein arm subunit Dnai2 clearly displayed only partial overlap with Dnaaf5 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "c3da5414-f349-47f1-8733-fdb14241f20f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C35",
+      "claim": "The outer dynein arm subunit Dnai2 displays only partial overlap with Dnaaf5.",
+      "claim_type": "EXPLICIT",
+      "source": "We found, for example, that the Hsp co-chaperone Stip1/Hop displayed essentially total co-localization with the assembly factor Dnaaf5/Heatr2 (Figure 1B), while by contrast, the outer dynein arm subunit Dnai2 clearly displayed only partial overlap with Dnaaf5 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "46676eb8-72c2-4c9a-931b-d3a4bfeda2b0",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C36",
+      "claim": "Pairwise tests of five distinct DNAAFs and three chaperones revealed consistent, strong co-localization in all combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, pairwise tests of five distinct DNAAFs and three chaperones revealed consistent, strong co-localization in all combinations (Figure 1D,E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 1D, E, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "7d515195-3f4f-4292-98fe-6b13aa5e4965",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C37",
+      "claim": "Pairwise tests with three different axonemal dynein subunits consistently revealed only partial co-localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, pairwise tests with three different axonemal dynein subunits consistently revealed only partial co-localization (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 1F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "723b2d2d-2961-4d83-9324-5a03fc01a8b1",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C38",
+      "claim": "IDA or ODA subunits occupied distinct, well-demarcated sub-regions within DNAAF- or chaperone-labeled DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, IDA or ODA subunits occupied distinct, well-demarcated sub-regions within DNAAF- or chaperone-labeled DynAPs (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "45789118-de89-4daa-9aad-6c6f2026322d",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C39",
+      "claim": "Pearson correlations revealed that differences in co-localization between DNAAFs/chaperones and dynein subunits were statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson correlations revealed that these differences were statistically significant (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by statistical analysis in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "49e5d87b-e51d-4c8a-81cf-a74909b05494",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C40",
+      "claim": "The ODA subunit Dnai2 displayed near-perfect co-localization with two additional ODA sub-units, Dnai1 and Dnal4.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the ODA subunit Dnai2 displayed near-perfect co-localization with two additional ODA sub-units, Dnai1 and Dnal4 (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 2A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "188347e0-8cf3-4f2d-a951-762fee8cb47f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C41",
+      "claim": "Dnai2 displayed very little colocalization with IDA-f subunit Wdr78 or the IDA-a, c, d subunit Dnali1.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Dnai2 displayed very little colocalization with IDA-f subunit Wdr78 or the IDA-a, c, d subunit Dnali1 (Figure 2C,D; Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 2C, D and Figure 2\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "9865c3c8-5017-4b02-918b-ec334c79812e",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C42",
+      "claim": "Pearson correlations revealed differences in co-localization between ODA and IDA subunits to be highly significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, Pearson correlations revealed these differences to be highly significant (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by statistical analysis in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "fb20f51c-9869-47d3-9ef4-cf522aa56f2f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C43",
+      "claim": "IDAs and ODAs are partitioned into mutually exclusive sub-regions within DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that IDAs and ODAs were partitioned into mutually exclusive sub-regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "a16fb42d-e624-43e2-80a1-ea7e4ada116e",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C44",
+      "claim": "The IDA-a, c, d subunit Dnali1 and the IDA-f subunit Wdr78 displayed only very little co-localization.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the IDA-a, c, d subunit Dnali1 and the IDA-f subunit Wdr78 displayed only very little co-localization (Figure 2E; Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 2E and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "51ae687f-ff25-43ec-bca4-1307c7852a23",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C45",
+      "claim": "Wdr78 displayed significantly stronger co-localization with another IDA-f subunit, Tctex1d2.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Wdr78 displayed significantly stronger co-localized with another IDA-f subunit, Tctex1d2 (Figure 2F; Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 2F and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "ae4b65b1-f244-4922-b7d3-563a5c009ec7",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C46",
+      "claim": "Axonemal dynein subunits are partitioned into functionally distinct sub-regions within DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that axonemal dynein subunits are partitioned into functionally distinct sub-regions; based upon their contents, with ODAs, and at least two sub-classes of IDAs occupying functionally-related restricted spaces within DynAPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the imaging data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "dd98f00f-55b2-43d5-84ee-6cd1cda25a00",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C47",
+      "claim": "Dnai2 pulldown strongly enriched for known ODA-specific sub-units, including the intermediate chain Dnai1, the heavy chains Dnah9/11, and the light chain Tctex1d1.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnai2 pulldown strongly enriched for known ODA-specific sub-units, including the intermediate chain Dnai1, the heavy chains Dnah9/11, and the light chain Tctex1d1, among others (Figure 3B; Figure 3\u2014figure supplement 1A\u2013C; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by APMS data in Figure 3B and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "e2feba33-b9cf-4038-a2a9-fe1077331e07",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C48",
+      "claim": "Wdr78 sample was enriched for IDA components, specifically the IDA-f subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, our Wdr78 sample was enriched for IDA components, specifically the IDA-f subtype, as expected (Figure 3C); these included the axonemal dynein heavy chains Dnah2 and Dnah10, as well as several light and intermediate chains (Figure 3C; Figure 3\u2014figure supplement 1D\u2013F; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by APMS data in Figure 3C and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "2489ed37-ae5b-4faf-83bd-e4a4bea9f402",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C49",
+      "claim": "Dnai2 and Wdr78 showed weaker but significant interaction with a variety of known chaperones and assembly factors, including Ruvbl1/2, Spag1, and Dnaaf1.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we identified weaker but significant interaction of Dnai2 and Wdr78 with a variety of known chaperones and assembly factors, including Ruvbl1/2, Spag1, and Dnaaf1 (Supplementary files 1, 2), consistent with findings that these proteins are enriched in DynAPs and are essential for axonemal dynein assembly (Fabczak and Osinka, 2019; Huizar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by APMS data in Supplementary files 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "a2c18ef7-a3f8-4f50-9baf-7f3a7d669d00",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C50",
+      "claim": "Interaction was observed between Dnai2 and Nme9.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we observed interaction between Dnai2 and Nme9 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by APMS data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "ccb827b8-5b1c-4bda-abbd-b0690da61f26",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C51",
+      "claim": "Nme9 is highly similar to the Chlamydomonas ODA light chain LC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Nme9 is highly similar to the Chlamydomonas ODA light chain LC3 and is present in the axonemes of airway cilia and sperm flagella in mice (Sadek et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to Sadek et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "94e4d4f5-53da-4d6b-b15a-57b9fe64ca95",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C52",
+      "claim": "Nme9 is present in the axonemes of airway cilia and sperm flagella in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Nme9 is highly similar to the Chlamydomonas ODA light chain LC3 and is present in the axonemes of airway cilia and sperm flagella in mice (Sadek et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to Sadek et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "8902c73b-f315-4427-9860-fe9948d278dc",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C53",
+      "claim": "Xenopus GFP-Nme9 localized to MCC axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "As in mice, Xenopus GFP-Nme9 localized to MCC axonemes (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "a62d4661-a642-42b3-a2af-88193e55c7d9",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C54",
+      "claim": "GFP-Nme9 was observed in the cytoplasm, where it colocalized with Dnai2 specifically in ODA sub-DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, however, we also observed GFP-Nme9 in the cytoplasm, where it colocalized with Dnai2 specifically in ODA sub-DynAPs (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 4B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "ae505052-dada-4571-8f76-59f39fc7be9f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C55",
+      "claim": "Interaction was observed between Wdr78 and Wdr18.",
+      "claim_type": "EXPLICIT",
+      "source": "Another notable interaction was that between Wdr78 and Wdr18 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by APMS data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "7d09f6e3-31e7-4386-836d-ac27823eb2d6",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C56",
+      "claim": "Wdr18 has been implicated in the control of ciliary beating, but its mechanism of action is entirely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is significant because Wdr18 has been implicated in the control of ciliary beating, but its mechanism of action is entirely unknown (Gao et al., 2011; Silversides et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations to Gao et al., 2011; Silversides et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "a684f658-b4c6-401f-921b-ea0c378f858e",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C57",
+      "claim": "GFP-Wdr18 was not present in the axonemes of motile cilia but did localize to DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GFP-Wdr18 was not present in the axonemes of motile cilia (not shown) but did localize to DynAPs (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "c047edc3-a357-449d-ad1f-d9b128dfa0d7",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C58",
+      "claim": "GFP-Wdr18 was strongly enriched in the apical cytoplasm of MCCs, near the basal bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GFP-Wdr18 was also strongly enriched in the apical cytoplasm of MCCs, near the basal bodies (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "c5ac2a9d-0194-49fe-bc10-a0e9231a0791",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C59",
+      "claim": "Sf3a3 was absent from axonemes but did localize in DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, another IDA interactor, Sf3a3 (Figure 3C), was also absent from axonemes (not shown), but did localize in DynAPs (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "1d447cc1-1fd6-494c-b265-602d5df38463",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C60",
+      "claim": "Sf3a3 was previously implicated in splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "This protein was previously implicated in splicing (Kr\u00e4mer et al., 2005), so as expected, we also observed GFP-Sf3a3 in nuclear foci in Xenopus MCCs (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to Kr\u00e4mer et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "b8146813-77c8-4f09-bd0b-427fda7fa57a",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C61",
+      "claim": "GFP-Sf3a3 was observed in nuclear foci in Xenopus MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This protein was previously implicated in splicing (Kr\u00e4mer et al., 2005), so as expected, we also observed GFP-Sf3a3 in nuclear foci in Xenopus MCCs (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "bdfc5383-59b2-455e-afb6-9af6ab6a89b2",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C62",
+      "claim": "The most interesting interaction identified was that between Dnai2 and C16orf71.",
+      "claim_type": "EXPLICIT",
+      "source": "The most interesting interaction we identified in this study was that between Dnai2 and C16orf71 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by APMS data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "5396a670-4e74-4060-9825-a7597447b3b3",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C63",
+      "claim": "C16orf71 is highly conserved among vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Though highly conserved among vertebrates, this protein has yet to be the subject of even a single published study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an observation about C16orf71.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "0040f061-8f15-4c24-add3-09cf6f3291c0",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C64",
+      "claim": "C16orf71 has yet to be the subject of even a single published study.",
+      "claim_type": "EXPLICIT",
+      "source": "Though highly conserved among vertebrates, this protein has yet to be the subject of even a single published study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an observation about C16orf71.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "54730b49-7892-4abc-b296-f56d140a7760",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C65",
+      "claim": "Reciprocal APMS with GFP-tagged Xenopus C16orf71 revealed interaction with Dnai2, Dnai1, Dnah9, Nme9, and Ruvbl1.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed interaction of C16orf71 not only with Dnai2, but also other ODA subunits such as Dnai1, Dnah9 and Nme9, as well as Ruvbl1 (Figure 5A; Figure 3\u2014figure supplement 1G\u2013I, Supp. File 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by APMS data in Figure 5A and Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "8c642b63-eceb-4b01-b9e6-69a9f17f9494",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C66",
+      "claim": "Xenopus Daap1 expression was enriched in MCCs in the epidermis and the nephrostomes of the pronephros.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization revealed that Xenopus Daap1 expression was enriched in MCCs in the epidermis and the nephrostomes of the pronephros (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by in situ hybridization data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "6d38de73-e604-4e14-9e1c-a4797f70bf32",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C67",
+      "claim": "Human DAAP1 protein is present exclusively in tissues with motile cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, examination of data from the Human Protein Atlas (Uhl\u00e9n et al., 2015) revealed that human DAAP1 protein is present exclusively in tissues with motile cilia (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data from the Human Protein Atlas shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "93104558-ba80-4cca-a8ab-79383dca8089",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C68",
+      "claim": "Daap1 is conserved among vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while Daap1 is conserved among vertebrates, it appears to have followed an interesting evolutionary trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an observation about Daap1 evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "12de4dca-7f96-4fb1-9dd3-540b0b3e969d",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C69",
+      "claim": "In mammals, including humans, orthologs of Daap1 are composed entirely of a domain of unknown function (DUF4701).",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, including humans, orthologs of Daap1 are composed entirely of a domain of unknown function (DUF4701), which phylogenetic analysis suggests is vertebrate-specific (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by domain analysis in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "b3e13fb2-08e9-46bd-9c74-22522b2e1d15",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C70",
+      "claim": "The DUF4701 domain is vertebrate-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, including humans, orthologs of Daap1 are composed entirely of a domain of unknown function (DUF4701), which phylogenetic analysis suggests is vertebrate-specific (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by phylogenetic analysis in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "2729f092-45c6-4418-8796-89176ebf5412",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C71",
+      "claim": "The DUF4701 domain sequence is intrinsically disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of this sequence suggests it is intrinsically disordered (Figure 5E), a feature commonly associated with liquid-like organelles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by disorder prediction analysis in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "dbd5290a-6596-44cb-9911-7239c380076a",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C72",
+      "claim": "Intrinsic disorder is a feature commonly associated with liquid-like organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of this sequence suggests it is intrinsically disordered (Figure 5E), a feature commonly associated with liquid-like organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as established knowledge about liquid-like organelles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "e73b4d21-27d0-4e7a-ac1e-931197b76ee8",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C73",
+      "claim": "All non-mammalian vertebrate Daap1 orthologs contain not only the DUF4701 domain, but also a long C-terminal extension harboring an NDK domain similar to those in Nme8 and Nme9.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, all non-mammalian vertebrate Daap1 orthologs contain not only the DUF4701 domain, but also a long C-terminal extension harboring, remarkably, an NDK domain similar to those in Nme8 and Nme9 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by domain analysis in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "dd5ba463-c5af-4c90-8400-37be75d2becf",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C74",
+      "claim": "No GFP-Daap1 signal was detectable in MCC axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, no signal was detectable in MCC axonemes as marked by Dnai2, and instead, GFP-Daap1 was localized exclusively to foci in the cytoplasm of MCCs (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 6A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "4cfdb42f-8f0c-4a47-8248-c34c68726e86",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C75",
+      "claim": "GFP-Daap1 was localized exclusively to foci in the cytoplasm of MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, no signal was detectable in MCC axonemes as marked by Dnai2, and instead, GFP-Daap1 was localized exclusively to foci in the cytoplasm of MCCs (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 6A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "99f8f797-81f9-416f-a361-af8043317124",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C76",
+      "claim": "GFP-Daap1 strongly co-localized with Dnai2.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-Daap1 strongly co-localized with Dnai2 (Figure 6B), suggesting that the interaction we identified by APMS occurs in DynAPs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "d401b972-ade9-4ab5-a7d5-0c01c33a758d",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C77",
+      "claim": "The interaction between Daap1 and Dnai2 identified by APMS occurs in DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-Daap1 strongly co-localized with Dnai2 (Figure 6B), suggesting that the interaction we identified by APMS occurs in DynAPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference from the co-localization data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "f05803b9-f308-4120-8ae4-00c32b624fcd",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C78",
+      "claim": "Daap1 displayed a partial co-localization with Dnaaf2 similar to that observed in the cytoplasm for other ODA subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Daap1 displayed a partial co-localization with Dnaaf2 similar to that observed in the cytoplasm for other ODA subunits (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "6b7ded2b-a953-43ac-ac04-084db75de463",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C79",
+      "claim": "Daap1 displayed little or no overlap with GFP-Wdr78.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Daap1 displayed little or no overlap with GFP-Wdr78 (Figure 6D), suggesting that it localized specifically in ODA sub-DynAPs (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "097a0d54-740f-4608-97e5-061b4b969ca0",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C80",
+      "claim": "Daap1 localized specifically in ODA sub-DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Daap1 displayed little or no overlap with GFP-Wdr78 (Figure 6D), suggesting that it localized specifically in ODA sub-DynAPs (Figure 6D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference from the co-localization data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "76ee46eb-48d4-4c51-9622-0ecdc562f786",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C81",
+      "claim": "Human DAAP1 lacks the C-terminal NDK domain present in the Xenopus ortholog.",
+      "claim_type": "EXPLICIT",
+      "source": "Because human DAAP1 lacks the C-terminal NDK domain present in the Xenopus ortholog (Figure 5D), we were curious to know if the human ortholog also localizes to DynAPs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by domain analysis in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "24676030-2221-41a4-8b06-ac8dbec13d37",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C82",
+      "claim": "Human DAAP1 was not detectable in the axonemes of human MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in Xenopus, DAAP1 was not detectable in the axonemes of human MCCs (Figure 7A, brackets), and cytoplasmic staining for DAAP1 was strongly enriched in DynAPs, as indicated by co-labeling for the ODA subunit DNAI1 (Figure 7A, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by immunostaining data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "484e65d4-76f8-46a4-b6d0-c151068dba96",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C83",
+      "claim": "Cytoplasmic staining for human DAAP1 was strongly enriched in DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in Xenopus, DAAP1 was not detectable in the axonemes of human MCCs (Figure 7A, brackets), and cytoplasmic staining for DAAP1 was strongly enriched in DynAPs, as indicated by co-labeling for the ODA subunit DNAI1 (Figure 7A, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by immunostaining data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "396917bb-84f9-4d33-9d0b-41ffc17534f5",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C84",
+      "claim": "GFP-Daap1-Nterm also localized to ODA sub-DynAPs in Xenopus MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that GFP-Daap1-Nterm also localized to ODA sub-DynAPs in Xenopus MCCs (Figure 7C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 7C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "3dae4005-5b66-43e6-98a0-6ecf577b0ee5",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C85",
+      "claim": "Both Xenopus and human DAAP1 are DynAP-specific cytoplasmic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite their divergent evolutionary trajectories, both Xenopus and human DAAP1 are DynAP-specific cytoplasmic proteins, and the N-terminal DUF4701 domain is sufficient to direct localization to ODA sub-DynAPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the localization data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "8c3c2b6f-adfd-4ef1-8768-c4480dca2584",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C86",
+      "claim": "The N-terminal DUF4701 domain is sufficient to direct localization to ODA sub-DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite their divergent evolutionary trajectories, both Xenopus and human DAAP1 are DynAP-specific cytoplasmic proteins, and the N-terminal DUF4701 domain is sufficient to direct localization to ODA sub-DynAPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the localization data of the N-terminal construct.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "9b3342b0-c406-4a62-ab1b-83d646bf3323",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C87",
+      "claim": "DNAAFs and broadly-acting chaperones flux rapidly through DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "DynAPs are liquid-like organelles, and we previously found using FRAP that both the DNAAFs and broadly-acting chaperones flux rapidly through these organelles, while both ODA and IDA subunits are stably retained (Huizar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to Huizar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "e509c7a4-6d92-499e-a267-e8f4e5eb055f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C88",
+      "claim": "Both ODA and IDA subunits are stably retained in DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "DynAPs are liquid-like organelles, and we previously found using FRAP that both the DNAAFs and broadly-acting chaperones flux rapidly through these organelles, while both ODA and IDA subunits are stably retained (Huizar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to Huizar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "5d33cb88-4d46-4524-85cb-fd4359b3363d",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C89",
+      "claim": "FRAP revealed that Xenopus Daap1 was retained in DynAPs in a manner that was similar, but not identical, to dynein subunit Dnai2.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, however, FRAP revealed instead that Xenopus Daap1 was retained in DynAPs in a manner that was similar, but not identical, to dynein subunit Dnai2 (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by FRAP data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "7261dfdf-9840-4c7a-90c8-4378dd110a7c",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C90",
+      "claim": "Daap1 displayed a somewhat slower initial recovery than Dnai2, but the signal continued to slowly recover for at least 60 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Daap1 displayed a somewhat slower initial recovery, but rather than plateauing at around 20 s, the signal continued to slowly recover for at least 60 s (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by FRAP data in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "ae1eb1fd-ba15-4271-87c2-1ef6498a71dc",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C91",
+      "claim": "Daap1-Nterm displayed essentially identical FRAP kinetics to full-length Daap1.",
+      "claim_type": "EXPLICIT",
+      "source": "In FRAP assays, Daap1-Nterm displayed essentially identical kinetics to full-length Daap1 (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by FRAP data in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "99d82743-dab4-4cd4-9fb2-4c7164c335a0",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C92",
+      "claim": "The DUF4701 domain is sufficient to drive the retention of Daap1 in ODA sub-DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the localization data above and strongly suggests that the DUF4701 domain is sufficient to drive the retention of Daap1 in ODA sub-DynAPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference from the FRAP data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "ad10b4a5-98e2-4c75-9403-ad56c6d2f532",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C93",
+      "claim": "Daap1-KD had no impact on ciliogenesis itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with its interaction specifically with ciliary beating machinery, Daap1-KD had no impact on ciliogenesis itself, and well-defined ciliary tufts were observed in all morphants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an observation from knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "0c29e712-c06b-4174-85e4-aea13a17091f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C94",
+      "claim": "Daap1-KD elicited severe loss of ODAs from MCC axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Daap1-KD elicited severe loss of ODAs from MCC axonemes (Figure 9A,B, D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 9A, B, D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "4f1a7e88-38c0-40e0-b252-604540111888",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C95",
+      "claim": "Both the intermediate chain Dnai2 and the light chain Dnal1 were severely reduced after Daap1-KD, with only small domains of the proximal axoneme labeled by either marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the intermediate chain Dnai2, as well as the light chain Dnal1 were severely reduced, with only small domains of the proximal axoneme labeled by either marker following knockdown (Figure 9A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 9A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "2f1fd4e7-8d08-46c3-bdc4-93acb9037cfe",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C96",
+      "claim": "The ODA depletion phenotype was also observed using a second MO targeting a distinct splice site.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this phenotype was also observed using a second MO targeting a distinct splice site, suggesting that this phenotype is a specific effect of Daap1 depletion. (Figure 9\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 9\u2014figure supplement 1B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "c2fe9362-001f-4530-810c-3de823265232",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C97",
+      "claim": "While both ODA proteins were depleted along the entire length of the axoneme after Daap1 loss, the IDA-a, c, d protein Dnali1 and the IDA-f protein Wdr78 displayed more subtle defects.",
+      "claim_type": "EXPLICIT",
+      "source": "While both ODA proteins were depleted along the entire length of the axoneme, the IDA-a, c, d protein Dnali1 and the IDA-f protein Wdr78 displayed more subtle defects (Figure 9G,H,J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 9G, H, J, K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "f5c9e19e-942f-428a-9768-fada676d978f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C98",
+      "claim": "Dnali1 displayed a mild reduction along the entire axoneme after Daap1 loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnali1 displayed a mild reduction along the entire axoneme (Figure 9I), while Wdr78 displayed an even mild disruption that was largely restricted to the distal axoneme (Figure 9L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 9I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "d6685706-f014-46a2-9a45-703274bf2410",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C99",
+      "claim": "Wdr78 displayed a mild disruption that was largely restricted to the distal axoneme after Daap1 loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Dnali1 displayed a mild reduction along the entire axoneme (Figure 9I), while Wdr78 displayed an even mild disruption that was largely restricted to the distal axoneme (Figure 9L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 9L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "1df1700b-4f0f-432f-a07b-c615f62ec648",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C100",
+      "claim": "Loss of Daap1 had a significantly greater impact on ODA compared to IDAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, comparisons of subunit intensities demonstrated that loss of Daap1 had a significantly greater impact on ODA compared to IDAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the intensity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "6c599cf0-b052-4aef-a076-18bdb861fa54",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C101",
+      "claim": "Direct comparison of Wdr78 and Dnai1 co-expressed in the same axonemes demonstrated a profoundly more substantial loss of ODAs than IDAs after Daap1 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis clearly demonstrated a profoundly more substantial loss of ODAs than IDAs after Daap1 depletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by imaging data in Figure 9M\u2013P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "21d3bd45-7b12-4698-93fd-ef0a48a7b55a",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C102",
+      "claim": "Daap1 is a DynAP-specific protein that interacts with ODA subunits and is essential for the deployment of ODAs to axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Daap1 is a DynAP-specific protein that interacts with ODA subunits and is essential for the deployment of ODAs to axonemes and further suggests a complex interplay of ODAs and IDAs is required to establish the final patterning of motors that drive ciliary beating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the localization and functional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "3a41b612-fa66-4269-81ad-4d8660fcc038",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C103",
+      "claim": "A complex interplay of ODAs and IDAs is required to establish the final patterning of motors that drive ciliary beating.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Daap1 is a DynAP-specific protein that interacts with ODA subunits and is essential for the deployment of ODAs to axonemes and further suggests a complex interplay of ODAs and IDAs is required to establish the final patterning of motors that drive ciliary beating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an inference from the functional data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "29ff4802-9b9d-4e9b-93b4-b387232c9c42",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C104",
+      "claim": "DynAPs have been observed in human, mouse, Xenopus and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "DynAPs have now been observed in human, mouse, Xenopus and zebrafish, so it is clear that these organelles represent a conserved element of MCCs (Diggle et al., 2014; Horani et al., 2018; Huizar et al., 2018; Li et al., 2017; Mali et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "b7ebd526-edea-4ace-9b89-86c7e46dd03b",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C105",
+      "claim": "DynAPs represent a conserved element of MCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "DynAPs have now been observed in human, mouse, Xenopus and zebrafish, so it is clear that these organelles represent a conserved element of MCCs (Diggle et al., 2014; Horani et al., 2018; Huizar et al., 2018; Li et al., 2017; Mali et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from observations across species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "1c93b150-ba8f-4078-a681-57ded76e92e5",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C106",
+      "claim": "Genetic loss of DynAP-localized DNAAFs consistently results in a failure of dynein arm assembly, failure of dynein deployment to axonemes, and defective ciliary beating.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic evidence suggests that DynAPs are factories for axonemal dynein assembly, as genetic loss of DynAP-localized DNAAFs consistently results in a failure of dynein arm assembly, failure of dynein deployment to axonemes, and defective ciliary beating (Fabczak and Osinka, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation to Fabczak and Osinka, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "61c8d91c-1849-4382-8390-0cf9bbae834a",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C107",
+      "claim": "Identification of Daap1 as a protein enriched in DynAPs and specifically required for deployment of axonemal dyneins to cilia adds weight to the argument that DynAPs perform a critical assembly or deployment function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identification of Daap1 as yet another protein that is enriched in DynAPs and is specifically required for deployment of axonemal dyneins to cilia adds weight to the argument that DynAPs perform a critical assembly or deployment function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "e511d4ce-e727-4634-8fb2-f4826f16ed55",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C108",
+      "claim": "DynAPs are structurally partitioned.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, our data clearly demonstrate that DynAPs are structurally partitioned, as are many other liquid-like organelles (e.g. Feric et al., 2016; Jain et al., 2016; Schmidt and Rohatgi, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the imaging data, with citations to other liquid-like organelles.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "34a9719a-7b91-4ba1-b227-98900a2fe639",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C109",
+      "claim": "Many other liquid-like organelles are structurally partitioned.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, our data clearly demonstrate that DynAPs are structurally partitioned, as are many other liquid-like organelles (e.g. Feric et al., 2016; Jain et al., 2016; Schmidt and Rohatgi, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations to Feric et al., 2016; Jain et al., 2016; Schmidt and Rohatgi, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "a4bf9e76-f686-424a-88ba-70ee59b2c7d3",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C110",
+      "claim": "The observation that Daap1 is restricted to ODA sub-DynAPs and that its loss results predominantly in ODA defects argues that sub-DynAPs reflect a functional sub-compartmentalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our observation that Daap1 is restricted to ODA sub-DynAPs (Figures 6 and 7) and that its loss results predominantly in ODA defects (Figure 9) argues that sub-DynAPs reflect a functional sub-compartmentalization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the localization and functional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "711c65bd-9d64-4b22-8b49-3d7837d4bca7",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C111",
+      "claim": "There is no evidence of physical compartmentalization of any of the tested DNAAFs and chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, though it has been suggested that DNAAFs and chaperones act in a relay system to catalyze iterative steps of ODA and IDA assembly (Mali et al., 2018), we found no evidence of physical compartmentalization of any of the tested DNAAFs and chaperones (Figure 1), suggesting that partitioned localization of those factors is not strictly required.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and supported by imaging data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "4a248f3c-2a09-4ebd-8875-3cb139a76d93",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C112",
+      "claim": "Partitioned localization of DNAAFs and chaperones is not strictly required for their function.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, though it has been suggested that DNAAFs and chaperones act in a relay system to catalyze iterative steps of ODA and IDA assembly (Mali et al., 2018), we found no evidence of physical compartmentalization of any of the tested DNAAFs and chaperones (Figure 1), suggesting that partitioned localization of those factors is not strictly required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from the lack of compartmentalization observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "3afcfdbb-aa77-40b1-9406-8b0eb473e94f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C113",
+      "claim": "Ktu has been shown to specifically impact assembly of ODAs and IDA-c.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, though Ktu has been shown to specifically impact assembly of ODAs and IDA-c (Yamaguchi et al., 2018), we found no restriction of Ktu localization within DynAPs (Figure 1 and see Huizar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation to Yamaguchi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "470bfc72-ded7-4da8-8304-39438f9f1346",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "claim_id": "C114",
+      "claim": "There is no restriction of Ktu localization within DynAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, though Ktu has been shown to specifically impact assembly of ODAs and IDA-c (Yamaguchi et al., 2018), we found no restriction of Ktu localization within DynAPs (Figure 1 and see Huizar et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and supported by imaging data in Figure 1 and citation to Huizar et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0b370850-9252-4805-9948-e5c82ae53a1f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DNAAFs and chaperones show strong co-localization throughout DynAPs, while dynein subunits (ODAs and IDAs) occupy distinct, well-demarcated sub-regions within DynAPs. Pairwise imaging tests of five DNAAFs and three chaperones revealed consistent strong co-localization, whereas dynein subunits displayed only partial co-localization with DNAAFs/chaperones, with statistically significant differences confirmed by Pearson correlation analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are well-supported by imaging data in Figures 1B-G and statistical analysis in Figure 1\u2014figure supplement 1. The imaging clearly shows differential localization patterns, and Pearson correlation analysis provides quantitative statistical support (p<0.0000001) for the observed differences between DNAAF/chaperone co-localization versus dynein subunit co-localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "b80f1240-190a-45a5-ba7f-7c21e11ff197",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ODA and IDA subunits are partitioned into mutually exclusive sub-regions within DynAPs. ODA subunits (Dnai2, Dnai1, Dnal4) show near-perfect co-localization with each other but minimal overlap with IDA subunits (Wdr78, Dnali1). Furthermore, different IDA subtypes (IDA-a,c,d vs IDA-f) also occupy distinct sub-compartments, suggesting functional sub-compartmentalization within DynAPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 are strongly supported by imaging data in Figure 2A-F and statistical analysis in Figure 2\u2014figure supplement 1. The imaging demonstrates clear spatial segregation of ODA and IDA subunits, and Pearson correlation analysis confirms highly significant differences (p<0.0000001 and p<2.2e-16). The inference of functional sub-compartmentalization (C46) is reasonable given the consistent spatial partitioning observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "e37bd47b-c7cc-4f27-89d0-020152d2c90e",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "APMS experiments successfully identified known ODA and IDA interactors, validating the approach. Dnai2 pulldown enriched for known ODA subunits (Dnai1, Dnah9/11, Tctex1d1), while Wdr78 pulldown enriched for IDA-f components (Dnah2, Dnah10). Both baits also showed weaker but significant interactions with known chaperones and assembly factors (Ruvbl1/2, Spag1, Dnaaf1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are well-supported by APMS data in Figure 3B-C, Figure 3\u2014figure supplement 1, and Supplementary files 1-2. The enrichment of known ODA and IDA subunits in their respective pulldowns provides strong positive controls. The statistical analysis (Z-test, fold-change, FDR) and the observation that baits were the most enriched hits further validate the specificity of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "2d9b178c-00b5-49b8-882d-e607193c067a",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Nme9, a novel ODA interactor identified by APMS, localizes to both MCC axonemes and cytoplasmic ODA sub-DynAPs in Xenopus. Nme9 is highly similar to the Chlamydomonas ODA light chain LC3 and is present in mouse airway cilia and sperm flagella axonemes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by APMS data (Figure 3B) showing Dnai2-Nme9 interaction and imaging data (Figure 4A-C) showing Nme9 localization to both axonemes and ODA sub-DynAPs. The citation to Sadek et al., 2003 (C51-C52) provides appropriate context for the evolutionary conservation and prior localization data in mice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "21d66ec4-0120-4536-a500-537d05d6379d",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Wdr18, a novel IDA interactor identified by APMS, localizes to DynAPs and the apical cytoplasm near basal bodies but is absent from axonemes. Wdr18 has been implicated in ciliary beating control, but its mechanism of action was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 are supported by APMS data (Figure 3C) and imaging data (Figure 4D-E). The localization pattern suggests a role in IDA assembly or transport rather than direct ciliary function. The citations to Gao et al., 2011 and Silversides et al., 2012 (C56) appropriately contextualize the prior functional implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "85adf51b-f278-4183-8e56-006dddba82bd",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sf3a3, another novel IDA interactor, localizes to DynAPs but is absent from axonemes. Sf3a3 was previously implicated in splicing and is also observed in nuclear foci in Xenopus MCCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by APMS data (Figure 3C) and imaging data (Figure 4F and Figure 4\u2014figure supplement 1). The dual localization to DynAPs and nuclear foci is consistent with Sf3a3's known role in splicing (Kr\u00e4mer et al., 2005) and suggests a potential link between RNA processing and dynein assembly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "5d37e5fb-ac6b-4a16-9654-4b2e5722d43b",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "C16orf71/Daap1, a highly conserved but previously unstudied vertebrate protein, was identified as a novel ODA interactor. Reciprocal APMS confirmed interactions with multiple ODA subunits (Dnai2, Dnai1, Dnah9, Nme9) and the chaperone Ruvbl1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are well-supported by APMS data in Figure 3B and reciprocal APMS in Figure 5A, Figure 3\u2014figure supplement 1G-I, and Supplementary file 3. The identification of C16orf71 as a novel interactor is significant given its conservation and lack of prior characterization. The reciprocal APMS provides strong validation of the interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "b6f74745-5acd-4e01-b7ce-22b38e76b470",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Daap1 expression is enriched in ciliated tissues in both Xenopus (MCCs in epidermis and nephrostomes) and humans (testis, nasopharynx, bronchus, oviduct). Daap1 is conserved among vertebrates but shows an interesting evolutionary trajectory: mammalian orthologs contain only the vertebrate-specific, intrinsically disordered DUF4701 domain, while non-mammalian vertebrate orthologs also contain a C-terminal NDK domain similar to Nme8 and Nme9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 are supported by in situ hybridization data (Figure 5B), Human Protein Atlas data (Figure 5C), domain analysis (Figure 5D), and disorder prediction (Figure 5E). The evolutionary analysis is well-documented and the intrinsic disorder prediction is appropriate for characterizing the DUF4701 domain. The tissue-specific expression pattern is consistent with a role in motile cilia function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "c5d793d3-67cd-4ab4-8cc8-c58a2f5554f2",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Xenopus Daap1 localizes exclusively to cytoplasmic foci (DynAPs) and is absent from axonemes. Within DynAPs, Daap1 shows strong co-localization with the ODA subunit Dnai2, partial co-localization with the DNAAF Dnaaf2 (similar to other ODA subunits), and minimal overlap with the IDA subunit Wdr78, indicating specific localization to ODA sub-DynAPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C80 are well-supported by imaging data in Figure 6A-D. The localization pattern is consistent with a cytoplasmic role in ODA assembly or deployment. The inference that Daap1 localizes specifically to ODA sub-DynAPs (C80) is reasonable given the strong co-localization with Dnai2 and minimal overlap with Wdr78.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "075db6b2-9c1f-447a-bdd6-5d74528fdd8a",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Human DAAP1, which lacks the C-terminal NDK domain present in Xenopus, also localizes to DynAPs and is absent from axonemes. The N-terminal DUF4701 domain alone (Daap1-Nterm) is sufficient to direct localization to ODA sub-DynAPs in Xenopus MCCs, demonstrating that both human and Xenopus DAAP1 are DynAP-specific cytoplasmic proteins despite their divergent evolutionary trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C86 are supported by immunostaining data in human lung sections (Figure 7A) and imaging of Daap1-Nterm in Xenopus (Figure 7C-E). The demonstration that the N-terminal domain is sufficient for ODA sub-DynAP localization is important for understanding the functional domains of Daap1. The conclusion that both orthologs are DynAP-specific (C85) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "374dac6f-ee06-40da-bcf8-f00b20b6dbc4",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "FRAP analysis revealed that Xenopus Daap1 is retained in DynAPs in a manner similar to, but not identical to, the dynein subunit Dnai2. Daap1 shows slower initial recovery than Dnai2 but continues to recover slowly for at least 60 seconds. The N-terminal DUF4701 domain (Daap1-Nterm) displays essentially identical FRAP kinetics to full-length Daap1, suggesting this domain is sufficient to drive retention in ODA sub-DynAPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C92 are supported by FRAP data in Figure 8. The comparison to prior FRAP data (Huizar et al., 2018) for DNAAFs/chaperones and dynein subunits provides important context. The observation that Daap1-Nterm shows similar kinetics to full-length Daap1 (C91) supports the inference that the DUF4701 domain drives retention (C92). However, the functional significance of the intermediate retention kinetics remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Morpholino-mediated knockdown of Daap1 in Xenopus causes severe loss of ODAs from MCC axonemes (both intermediate chain Dnai2 and light chain Dnal1) while having minimal impact on ciliogenesis itself. IDA subunits (Dnali1 and Wdr78) show more subtle defects, with Dnali1 displaying mild reduction along the entire axoneme and Wdr78 showing mild disruption restricted to the distal axoneme. Direct comparison of co-expressed Wdr78 and Dnai1 demonstrates a significantly greater impact on ODAs than IDAs. These results establish Daap1 as a DynAP-specific protein essential for ODA deployment to axonemes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C102 are well-supported by knockdown experiments shown in Figure 9A-P and Figure 9\u2014figure supplement 1. The use of two independent morpholinos (C96) provides important validation of specificity. The quantitative intensity analysis along axoneme length provides rigorous support for the differential effects on ODAs versus IDAs. The conclusion that Daap1 is essential for ODA deployment (C102) is strongly supported by the functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "3ca57cf9-0b25-441c-9586-f393a008095b",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A complex interplay of ODAs and IDAs is required to establish the final patterning of motors that drive ciliary beating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 is speculative and not directly tested in this study. While the observation that Daap1 loss affects both ODAs and IDAs (with differential severity) suggests some interdependence, the manuscript does not provide direct evidence for a 'complex interplay' in establishing motor patterning. This claim requires additional experiments to test mechanisms of ODA-IDA coordination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "c9e22c77-3aa3-4768-a75a-2b48193eca10",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "DynAPs are conserved across vertebrates (human, mouse, Xenopus, zebrafish) and represent a conserved element of MCCs. Genetic loss of DynAP-localized DNAAFs results in failure of dynein assembly and deployment, suggesting DynAPs function as factories for axonemal dynein assembly. The identification of Daap1 as another DynAP-enriched protein required for dynein deployment adds weight to this argument. DynAPs are structurally partitioned, and the restriction of Daap1 to ODA sub-DynAPs with predominantly ODA-specific functional effects argues that sub-DynAPs reflect functional sub-compartmentalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C108 and C110 are supported by the current data combined with appropriate citations to prior work. The conservation of DynAPs across species (C104-C105) is well-documented in the cited literature. The functional evidence from Daap1 knockdown (Figure 9) combined with its specific localization to ODA sub-DynAPs (Figures 6-7) provides strong support for functional sub-compartmentalization (C110). The inference that DynAPs function in dynein assembly (C106-C107) is reasonable but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "162a3df2-46d2-49da-8922-a1d23f882b57",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Despite suggestions that DNAAFs and chaperones act in a relay system for iterative dynein assembly steps, there is no evidence of physical compartmentalization of DNAAFs and chaperones within DynAPs. Ktu, which specifically impacts assembly of ODAs and IDA-c, shows no restriction in localization within DynAPs, suggesting that partitioned localization of assembly factors is not strictly required for their specific functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C114 are supported by imaging data in Figure 1 showing uniform co-localization of DNAAFs and chaperones throughout DynAPs. The observation about Ktu (C113-C114) is supported by citation to Yamaguchi et al., 2018 and imaging data. This negative result is important for understanding DynAP organization and suggests that functional specificity of DNAAFs may not require spatial segregation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    },
+    {
+      "id": "75e61e2d-05b4-4c99-ac35-76864b31a72f",
+      "content_id": "f1b99ce1-0a6f-4b64-beb7-fd197086f2db",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background knowledge claims about ciliary biology, axonemal dyneins, DNAAFs, and DynAPs establish the context for the study. These include: motile cilia structure and function, ODA/IDA classification and roles, PCD genetics, DNAAF function, dynein pre-assembly, and DynAP properties as liquid-like organelles with phase separation characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C33 are appropriately cited background knowledge claims that establish context for the study. These are supported by extensive citations to prior literature and represent established knowledge in the field. The claims about DynAPs (C31-C33) cite the authors' own prior work (Huizar et al., 2018) which is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:21.071260Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "188403b1-d05e-4ce6-858b-880ed2d16496",
+      "result_id": "0b370850-9252-4805-9948-e5c82ae53a1f"
+    },
+    {
+      "claim_id": "c3da5414-f349-47f1-8733-fdb14241f20f",
+      "result_id": "0b370850-9252-4805-9948-e5c82ae53a1f"
+    },
+    {
+      "claim_id": "46676eb8-72c2-4c9a-931b-d3a4bfeda2b0",
+      "result_id": "0b370850-9252-4805-9948-e5c82ae53a1f"
+    },
+    {
+      "claim_id": "7d515195-3f4f-4292-98fe-6b13aa5e4965",
+      "result_id": "0b370850-9252-4805-9948-e5c82ae53a1f"
+    },
+    {
+      "claim_id": "723b2d2d-2961-4d83-9324-5a03fc01a8b1",
+      "result_id": "0b370850-9252-4805-9948-e5c82ae53a1f"
+    },
+    {
+      "claim_id": "45789118-de89-4daa-9aad-6c6f2026322d",
+      "result_id": "0b370850-9252-4805-9948-e5c82ae53a1f"
+    },
+    {
+      "claim_id": "49e5d87b-e51d-4c8a-81cf-a74909b05494",
+      "result_id": "b80f1240-190a-45a5-ba7f-7c21e11ff197"
+    },
+    {
+      "claim_id": "188347e0-8cf3-4f2d-a951-762fee8cb47f",
+      "result_id": "b80f1240-190a-45a5-ba7f-7c21e11ff197"
+    },
+    {
+      "claim_id": "9865c3c8-5017-4b02-918b-ec334c79812e",
+      "result_id": "b80f1240-190a-45a5-ba7f-7c21e11ff197"
+    },
+    {
+      "claim_id": "fb20f51c-9869-47d3-9ef4-cf522aa56f2f",
+      "result_id": "b80f1240-190a-45a5-ba7f-7c21e11ff197"
+    },
+    {
+      "claim_id": "a16fb42d-e624-43e2-80a1-ea7e4ada116e",
+      "result_id": "b80f1240-190a-45a5-ba7f-7c21e11ff197"
+    },
+    {
+      "claim_id": "51ae687f-ff25-43ec-bca4-1307c7852a23",
+      "result_id": "b80f1240-190a-45a5-ba7f-7c21e11ff197"
+    },
+    {
+      "claim_id": "ae4b65b1-f244-4922-b7d3-563a5c009ec7",
+      "result_id": "b80f1240-190a-45a5-ba7f-7c21e11ff197"
+    },
+    {
+      "claim_id": "dd98f00f-55b2-43d5-84ee-6cd1cda25a00",
+      "result_id": "e37bd47b-c7cc-4f27-89d0-020152d2c90e"
+    },
+    {
+      "claim_id": "e2feba33-b9cf-4038-a2a9-fe1077331e07",
+      "result_id": "e37bd47b-c7cc-4f27-89d0-020152d2c90e"
+    },
+    {
+      "claim_id": "2489ed37-ae5b-4faf-83bd-e4a4bea9f402",
+      "result_id": "e37bd47b-c7cc-4f27-89d0-020152d2c90e"
+    },
+    {
+      "claim_id": "a2c18ef7-a3f8-4f50-9baf-7f3a7d669d00",
+      "result_id": "2d9b178c-00b5-49b8-882d-e607193c067a"
+    },
+    {
+      "claim_id": "ccb827b8-5b1c-4bda-abbd-b0690da61f26",
+      "result_id": "2d9b178c-00b5-49b8-882d-e607193c067a"
+    },
+    {
+      "claim_id": "94e4d4f5-53da-4d6b-b15a-57b9fe64ca95",
+      "result_id": "2d9b178c-00b5-49b8-882d-e607193c067a"
+    },
+    {
+      "claim_id": "8902c73b-f315-4427-9860-fe9948d278dc",
+      "result_id": "2d9b178c-00b5-49b8-882d-e607193c067a"
+    },
+    {
+      "claim_id": "a62d4661-a642-42b3-a2af-88193e55c7d9",
+      "result_id": "2d9b178c-00b5-49b8-882d-e607193c067a"
+    },
+    {
+      "claim_id": "ae505052-dada-4571-8f76-59f39fc7be9f",
+      "result_id": "21d66ec4-0120-4536-a500-537d05d6379d"
+    },
+    {
+      "claim_id": "7d09f6e3-31e7-4386-836d-ac27823eb2d6",
+      "result_id": "21d66ec4-0120-4536-a500-537d05d6379d"
+    },
+    {
+      "claim_id": "a684f658-b4c6-401f-921b-ea0c378f858e",
+      "result_id": "21d66ec4-0120-4536-a500-537d05d6379d"
+    },
+    {
+      "claim_id": "c047edc3-a357-449d-ad1f-d9b128dfa0d7",
+      "result_id": "21d66ec4-0120-4536-a500-537d05d6379d"
+    },
+    {
+      "claim_id": "c5ac2a9d-0194-49fe-bc10-a0e9231a0791",
+      "result_id": "85adf51b-f278-4183-8e56-006dddba82bd"
+    },
+    {
+      "claim_id": "1d447cc1-1fd6-494c-b265-602d5df38463",
+      "result_id": "85adf51b-f278-4183-8e56-006dddba82bd"
+    },
+    {
+      "claim_id": "b8146813-77c8-4f09-bd0b-427fda7fa57a",
+      "result_id": "85adf51b-f278-4183-8e56-006dddba82bd"
+    },
+    {
+      "claim_id": "bdfc5383-59b2-455e-afb6-9af6ab6a89b2",
+      "result_id": "5d37e5fb-ac6b-4a16-9654-4b2e5722d43b"
+    },
+    {
+      "claim_id": "5396a670-4e74-4060-9825-a7597447b3b3",
+      "result_id": "5d37e5fb-ac6b-4a16-9654-4b2e5722d43b"
+    },
+    {
+      "claim_id": "0040f061-8f15-4c24-add3-09cf6f3291c0",
+      "result_id": "5d37e5fb-ac6b-4a16-9654-4b2e5722d43b"
+    },
+    {
+      "claim_id": "54730b49-7892-4abc-b296-f56d140a7760",
+      "result_id": "5d37e5fb-ac6b-4a16-9654-4b2e5722d43b"
+    },
+    {
+      "claim_id": "8c642b63-eceb-4b01-b9e6-69a9f17f9494",
+      "result_id": "b6f74745-5acd-4e01-b7ce-22b38e76b470"
+    },
+    {
+      "claim_id": "6d38de73-e604-4e14-9e1c-a4797f70bf32",
+      "result_id": "b6f74745-5acd-4e01-b7ce-22b38e76b470"
+    },
+    {
+      "claim_id": "93104558-ba80-4cca-a8ab-79383dca8089",
+      "result_id": "b6f74745-5acd-4e01-b7ce-22b38e76b470"
+    },
+    {
+      "claim_id": "12de4dca-7f96-4fb1-9dd3-540b0b3e969d",
+      "result_id": "b6f74745-5acd-4e01-b7ce-22b38e76b470"
+    },
+    {
+      "claim_id": "b3e13fb2-08e9-46bd-9c74-22522b2e1d15",
+      "result_id": "b6f74745-5acd-4e01-b7ce-22b38e76b470"
+    },
+    {
+      "claim_id": "2729f092-45c6-4418-8796-89176ebf5412",
+      "result_id": "b6f74745-5acd-4e01-b7ce-22b38e76b470"
+    },
+    {
+      "claim_id": "dbd5290a-6596-44cb-9911-7239c380076a",
+      "result_id": "b6f74745-5acd-4e01-b7ce-22b38e76b470"
+    },
+    {
+      "claim_id": "e73b4d21-27d0-4e7a-ac1e-931197b76ee8",
+      "result_id": "b6f74745-5acd-4e01-b7ce-22b38e76b470"
+    },
+    {
+      "claim_id": "dd5ba463-c5af-4c90-8400-37be75d2becf",
+      "result_id": "c5d793d3-67cd-4ab4-8cc8-c58a2f5554f2"
+    },
+    {
+      "claim_id": "4cfdb42f-8f0c-4a47-8248-c34c68726e86",
+      "result_id": "c5d793d3-67cd-4ab4-8cc8-c58a2f5554f2"
+    },
+    {
+      "claim_id": "99f8f797-81f9-416f-a361-af8043317124",
+      "result_id": "c5d793d3-67cd-4ab4-8cc8-c58a2f5554f2"
+    },
+    {
+      "claim_id": "d401b972-ade9-4ab5-a7d5-0c01c33a758d",
+      "result_id": "c5d793d3-67cd-4ab4-8cc8-c58a2f5554f2"
+    },
+    {
+      "claim_id": "f05803b9-f308-4120-8ae4-00c32b624fcd",
+      "result_id": "c5d793d3-67cd-4ab4-8cc8-c58a2f5554f2"
+    },
+    {
+      "claim_id": "6b7ded2b-a953-43ac-ac04-084db75de463",
+      "result_id": "c5d793d3-67cd-4ab4-8cc8-c58a2f5554f2"
+    },
+    {
+      "claim_id": "097a0d54-740f-4608-97e5-061b4b969ca0",
+      "result_id": "c5d793d3-67cd-4ab4-8cc8-c58a2f5554f2"
+    },
+    {
+      "claim_id": "76ee46eb-48d4-4c51-9622-0ecdc562f786",
+      "result_id": "075db6b2-9c1f-447a-bdd6-5d74528fdd8a"
+    },
+    {
+      "claim_id": "24676030-2221-41a4-8b06-ac8dbec13d37",
+      "result_id": "075db6b2-9c1f-447a-bdd6-5d74528fdd8a"
+    },
+    {
+      "claim_id": "484e65d4-76f8-46a4-b6d0-c151068dba96",
+      "result_id": "075db6b2-9c1f-447a-bdd6-5d74528fdd8a"
+    },
+    {
+      "claim_id": "396917bb-84f9-4d33-9d0b-41ffc17534f5",
+      "result_id": "075db6b2-9c1f-447a-bdd6-5d74528fdd8a"
+    },
+    {
+      "claim_id": "3dae4005-5b66-43e6-98a0-6ecf577b0ee5",
+      "result_id": "075db6b2-9c1f-447a-bdd6-5d74528fdd8a"
+    },
+    {
+      "claim_id": "8c3c2b6f-adfd-4ef1-8768-c4480dca2584",
+      "result_id": "075db6b2-9c1f-447a-bdd6-5d74528fdd8a"
+    },
+    {
+      "claim_id": "9b3342b0-c406-4a62-ab1b-83d646bf3323",
+      "result_id": "374dac6f-ee06-40da-bcf8-f00b20b6dbc4"
+    },
+    {
+      "claim_id": "e509c7a4-6d92-499e-a267-e8f4e5eb055f",
+      "result_id": "374dac6f-ee06-40da-bcf8-f00b20b6dbc4"
+    },
+    {
+      "claim_id": "5d33cb88-4d46-4524-85cb-fd4359b3363d",
+      "result_id": "374dac6f-ee06-40da-bcf8-f00b20b6dbc4"
+    },
+    {
+      "claim_id": "7261dfdf-9840-4c7a-90c8-4378dd110a7c",
+      "result_id": "374dac6f-ee06-40da-bcf8-f00b20b6dbc4"
+    },
+    {
+      "claim_id": "ae1eb1fd-ba15-4271-87c2-1ef6498a71dc",
+      "result_id": "374dac6f-ee06-40da-bcf8-f00b20b6dbc4"
+    },
+    {
+      "claim_id": "99d82743-dab4-4cd4-9fb2-4c7164c335a0",
+      "result_id": "374dac6f-ee06-40da-bcf8-f00b20b6dbc4"
+    },
+    {
+      "claim_id": "ad10b4a5-98e2-4c75-9403-ad56c6d2f532",
+      "result_id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937"
+    },
+    {
+      "claim_id": "0c29e712-c06b-4174-85e4-aea13a17091f",
+      "result_id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937"
+    },
+    {
+      "claim_id": "4f1a7e88-38c0-40e0-b252-604540111888",
+      "result_id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937"
+    },
+    {
+      "claim_id": "2f1fd4e7-8d08-46c3-bdc4-93acb9037cfe",
+      "result_id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937"
+    },
+    {
+      "claim_id": "c2fe9362-001f-4530-810c-3de823265232",
+      "result_id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937"
+    },
+    {
+      "claim_id": "f5c9e19e-942f-428a-9768-fada676d978f",
+      "result_id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937"
+    },
+    {
+      "claim_id": "d6685706-f014-46a2-9a45-703274bf2410",
+      "result_id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937"
+    },
+    {
+      "claim_id": "1df1700b-4f0f-432f-a07b-c615f62ec648",
+      "result_id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937"
+    },
+    {
+      "claim_id": "6c599cf0-b052-4aef-a076-18bdb861fa54",
+      "result_id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937"
+    },
+    {
+      "claim_id": "21d3bd45-7b12-4698-93fd-ef0a48a7b55a",
+      "result_id": "7c391eb9-f0a1-41ba-9178-b9a3e2415937"
+    },
+    {
+      "claim_id": "3a41b612-fa66-4269-81ad-4d8660fcc038",
+      "result_id": "3ca57cf9-0b25-441c-9586-f393a008095b"
+    },
+    {
+      "claim_id": "29ff4802-9b9d-4e9b-93b4-b387232c9c42",
+      "result_id": "c9e22c77-3aa3-4768-a75a-2b48193eca10"
+    },
+    {
+      "claim_id": "b7ebd526-edea-4ace-9b89-86c7e46dd03b",
+      "result_id": "c9e22c77-3aa3-4768-a75a-2b48193eca10"
+    },
+    {
+      "claim_id": "1c93b150-ba8f-4078-a681-57ded76e92e5",
+      "result_id": "c9e22c77-3aa3-4768-a75a-2b48193eca10"
+    },
+    {
+      "claim_id": "61c8d91c-1849-4382-8390-0cf9bbae834a",
+      "result_id": "c9e22c77-3aa3-4768-a75a-2b48193eca10"
+    },
+    {
+      "claim_id": "e511d4ce-e727-4634-8fb2-f4826f16ed55",
+      "result_id": "c9e22c77-3aa3-4768-a75a-2b48193eca10"
+    },
+    {
+      "claim_id": "a4bf9e76-f686-424a-88ba-70ee59b2c7d3",
+      "result_id": "c9e22c77-3aa3-4768-a75a-2b48193eca10"
+    },
+    {
+      "claim_id": "711c65bd-9d64-4b22-8b49-3d7837d4bca7",
+      "result_id": "162a3df2-46d2-49da-8922-a1d23f882b57"
+    },
+    {
+      "claim_id": "4a248f3c-2a09-4ebd-8875-3cb139a76d93",
+      "result_id": "162a3df2-46d2-49da-8922-a1d23f882b57"
+    },
+    {
+      "claim_id": "3afcfdbb-aa77-40b1-9406-8b0eb473e94f",
+      "result_id": "162a3df2-46d2-49da-8922-a1d23f882b57"
+    },
+    {
+      "claim_id": "470bfc72-ded7-4da8-8304-39438f9f1346",
+      "result_id": "162a3df2-46d2-49da-8922-a1d23f882b57"
+    },
+    {
+      "claim_id": "382dd022-d689-4440-8ca5-041e1f82b8c7",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "79d6d829-cbb6-4ddd-8c35-f57bb60bfab9",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "c8e8bcb6-0edc-41ad-bb24-aa26026a8365",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "907a1e60-c245-4e0a-81f8-4d8c8b8d82fe",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "3cb5cf56-f43b-4923-81ba-19d36cd86d3a",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "9daa618c-93e2-4f57-8afc-a8385f836142",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "85c3f9ce-229f-4628-8d87-804cde319260",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "7d29c9ba-b87e-414a-a9ce-a0cd42e4a5cb",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "3b47b990-5db6-44d1-89c3-58fb0ff4b57c",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "598d2062-2468-4301-b77d-315b4108b97b",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "d00d4e9b-bc2c-499b-b075-1336791cfc1b",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "3377a9fd-d468-49fe-a384-50af5a70dd3e",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "9a821c71-082c-4933-9841-07e91bbd1f14",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "efd7b2b7-7c43-4f22-8403-8eec076c6aa0",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "3ec012c5-abaf-4a15-b2f9-dfb541a22c2e",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "70c96c30-51cd-4950-9d26-a62e7ca50a5f",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "062a3a41-d187-496a-b0dc-c5076ad4177a",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "04574962-5a41-4ad9-9038-e9915ee6d76d",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "a17f212b-612e-47af-bde0-b2cd14dbcf7f",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "7b54d23f-2153-4379-ac71-cf51255124ae",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "6a1eab93-a0e6-4952-a651-25f9fcd244ec",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "54efbd67-4119-4a85-9973-69acb42ccaad",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "f5dd36b6-13a9-445d-ae7f-5c0a4083e9ab",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "86e68ab1-a49f-498b-8766-f778e3a18c78",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "32a2818c-d98a-4ee9-8ae2-01d7751dddea",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "78b34b69-1562-4f29-9eae-51a430461ca9",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    },
+    {
+      "claim_id": "da8fa115-2a32-42e6-9fa5-202b19868687",
+      "result_id": "75e61e2d-05b4-4c99-ac35-76864b31a72f"
+    }
+  ],
+  "comparisons": []
+}

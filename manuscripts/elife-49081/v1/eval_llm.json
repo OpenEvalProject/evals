@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15"
+    ],
+    "result": "HK022 prophage integrates between torS and torT genes, physically separating the torS coding sequence from its IscR regulatory binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C15 are well-supported by cited prior work (Yagil et al., 1989) and Figure 1A clearly illustrates the genomic arrangement. The integration site location and its consequence for regulatory architecture are established facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C21",
+      "C22"
+    ],
+    "result": "HK022 prophage eliminates aerobic torCAD expression while preserving anaerobic expression, thereby disabling the bet-hedging strategy that allows non-lysogen cells to grow after rapid oxygen depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are directly supported by fluorescence microscopy data in Figure 1B showing differential expression patterns. Claims C21-C22 are supported by time-lapse microscopy data in Figures 1C-D demonstrating growth differences after oxygen depletion. The experimental design includes appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The HK022 prophage increases torS transcription substantially while leaving torT transcription unchanged, explaining the shutdown of aerobic torCAD expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by \u03b2-galactosidase assays shown in Figures 2A-B with appropriate replication. Claim C25 logically follows from the data and established knowledge about TorS/TorT stoichiometry (C26-C27). The interpretation is consistent with the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Overexpression of torT restores aerobic torCAD expression in HK022 lysogen, confirming that the imbalance in TorS/TorT ratio is responsible for the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by fluorescence microscopy data in Figure 2C showing rescue of aerobic torCAD expression upon torT overexpression. This genetic complementation experiment provides strong support for the proposed mechanism involving TorS/TorT stoichiometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C57"
+    ],
+    "result": "Insertion of a transcriptional terminator at the prophage-chromosome junction abolishes torS expression, demonstrating that torS transcripts originate from within the prophage and are driven by a phage-encoded promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by \u03b2-galactosidase data in Figure 3B showing very low torS expression with terminator insertion. Claims C34 and C57 are well-supported conclusions from this critical experiment that directly tests the proposed mechanism. The terminator insertion provides strong evidence for read-through transcription from the prophage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In vitro transcription and primer extension mapping reveal that the lysogen produces a single torS transcript from a prophage-encoded promoter (TSSHK022), while non-lysogens produce two transcripts from distinct promoters (TSS1 and TSS2), with TSS2 matching a computationally predicted site and TSS1 being novel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are supported by in vitro transcription data (Figure 3C) and primer extension assays (Figures 3D-F). The experimental approach is appropriate for mapping transcription start sites. The identification of TSS2 is validated by computational prediction, while TSS1 represents a novel finding. The data quality appears sufficient for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The native torS promoters (TSS1 and TSS2) are functionally disrupted by prophage integration due to their positions relative to the integration site, with TSS2's promoter ablated and TSS1 separated from torS by the entire prophage genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are logical inferences well-supported by the transcription start site mapping data and genomic arrangement shown in Figures 3A and 3F. The spatial relationships between integration site and promoters provide a clear mechanistic explanation for why native promoters are non-functional in the lysogen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The downstream ATG codon, not the upstream GTG codon, serves as the primary translation start site for torS, as demonstrated by translational lacZ fusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by \u03b2-galactosidase assays from translational fusions shown in Figure 3\u2014figure supplement 1. The experimental design directly tests which start codon is functional. This finding clarifies the torS translation initiation site and is important for understanding the regulatory architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Bioinformatic analysis reveals that approximately 5% of sequenced E. coli genomes contain prophages at the HK022 integration site, distributed across diverse phylogenetic groups, with conserved integrase sequences, attL site positions, and promoter regions upstream of TSSHK022.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by systematic bioinformatic analysis using BLAST, PHASTER, and sequence alignment tools. The methodology is appropriate for genome-scale analysis. The findings demonstrate that prophage integration at this site is widespread and evolutionarily conserved, though the 5% frequency should be interpreted cautiously as it depends on the genome database composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C73"
+    ],
+    "result": "The wild E. coli strain NRG 857C, which naturally carries a prophage at the HK022 integration site, exhibits torCAD expression patterns similar to HK022-infected MG1655, suggesting the mechanism is not unique to laboratory strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by fluorescence microscopy data in Figure 4 showing similar expression patterns between NRG 857C and HK022-infected MG1655. The strain construction is well-documented with appropriate genetic controls to ensure the tor and isc loci were not replaced during reporter integration. This extends the findings beyond laboratory conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C71",
+      "C72"
+    ],
+    "result": "HK022 prophage reconfigures torCAD regulation by replacing native torS promoters with a phage-encoded promoter, converting oxygen-dependent regulation of expression variance into oxygen-dependent regulation of mean expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 and C71-C72 represent the main conclusions synthesizing multiple experimental results. These are well-supported by the collective evidence from expression studies (Figures 1-2), transcription start site mapping (Figure 3), and terminator insertion experiments. The mechanistic model is internally consistent and explains all major observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Unbound TorS dephosphorylates TorR, and excess TorS over TorT prevents torCAD expression; however, anaerobic TorT levels are sufficiently high that additional TorS does not prevent torCAD expression under anaerobic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by cited prior work establishing TorS/TorT stoichiometry effects. Claims C28-C29 are logical inferences explaining why the lysogen maintains anaerobic torCAD expression despite elevated torS. The interpretation is consistent with the data and mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "All identified prophages at the HK022 integration site share conserved features including outward-reading integrase genes and lambda supercluster genomic architecture, suggesting a general capability to alter torCAD regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by sequence analysis data. Claim C66 is a reasonable inference based on the NRG 857C data and bioinformatic analysis, though the authors appropriately note that variation in prophage sequences and host genomes may affect this generalization. The conclusion is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The mechanism whereby a prophage rewires metabolic pathway regulation by modulating signaling gene expression represents a novel phenomenon that may exemplify a general class of phage-host control mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 asserts novelty based on the authors' knowledge, but comprehensive literature searches are difficult to verify. Claim C68 is speculative about broader implications. While the specific mechanism described is well-characterized, the claims about novelty and generalizability require more extensive comparative analysis across phage-host systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C18",
+      "C19"
+    ],
+    "result": "The TMAO respiration pathway in E. coli involves TorS/TorT detection of TMAO, TorR phosphorylation, and torCAD operon activation; aerobic expression is highly variable due to IscR repression and serves as a bet-hedging strategy for rapid oxygen depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C18 describe established knowledge about the TMAO pathway supported by appropriate citations. Claims C10-C14 and C19 cite the authors' prior work establishing the bet-hedging mechanism. These provide essential background context and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The fitness cost of torCAD expression may explain why HK022 prevents aerobic expression, potentially benefiting phage replication in environments where TMAO is present but rapid oxygen depletion is unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 cites prior work arguing for fitness costs. Claims C59-C60 are explicitly speculative explanations for the adaptive significance of the prophage's effect. While plausible, these hypotheses lack direct experimental support and would require fitness measurements and ecological studies to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C84",
+      "C85"
+    ],
+    "result": "TMAO is environmentally widespread, particularly in marine organisms, can be ingested from diet or synthesized from gut microbiota-derived TMA, and is excreted in urine; aerobic TMAO respiration occurs despite poor energy yield compared to aerobic respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 are supported by multiple appropriate citations documenting TMAO distribution and metabolism. Claims C84-C85 cite prior work and state general knowledge about respiratory energetics. These provide important biological context for understanding the significance of torCAD regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Temperate phages can alter host phenotypes through lysogenic conversion via phage-encoded factors (often in morons), disruption of host genes, or position-dependent integration effects; examples include toxin production, antibiotic resistance, metabolic changes, and active lysogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C83 provide comprehensive background on lysogenic conversion supported by extensive appropriate citations. These establish the broader context of phage-host interactions and demonstrate that the authors' work fits within an established field while potentially representing a novel mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C65",
+      "C87",
+      "C88"
+    ],
+    "result": "Prophages occupy the HK022 integration site in ~5% of E. coli strains across diverse phylogenetic groups; strains without prophages (Nissle 1917, HS) show expression patterns like wild-type MG1655; NRG 857C is phylogenetically distant from MG1655 but has identical torCAD promoter sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by bioinformatic analysis. Claim C65 appropriately cites prior work. Claims C87-C88 are supported by phylogenetic analysis and sequence comparison. These findings establish the distribution and conservation of relevant genetic elements across E. coli diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The authors hypothesized that HK022 encodes cis-acting elements near attP that affect torS transcription, potentially through an outward-reading promoter producing transcripts that read through torS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 represent hypotheses that were subsequently tested and confirmed by the terminator insertion and transcription mapping experiments. These hypotheses were reasonable based on the initial observations and led to productive experimental designs.",
+    "result_type": "MINOR"
+  }
+]

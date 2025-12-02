@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Photoreceptor degeneration is a major cause of blindness with limited treatment options. The authors establish the clinical context by noting that photoreceptor loss is common to multiple retinal degenerative diseases (cone dystrophy, RP, AMD), that RP involves mutations in ~80 genes with various inheritance patterns, and that despite recent gene therapy approval for RPE65 mutations, broadly applicable treatments remain unavailable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C2, C16-C22) provide well-established background knowledge supported by appropriate citations to prior literature. They accurately describe the clinical significance of photoreceptor degeneration, the genetic complexity of RP, and the current limitations in treatment options. This contextual information is standard in the field and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Several neuroprotective factors (CNTF, GDNF, PEDF, RdCVF) have been identified but face clinical limitations. The authors note that while limited light stress activates protective pathways like FGF2/gp130, and prolonged light exposure upregulates CNTF and FGF2, these factors have short half-lives, systemic side effects, and reduced efficacy, with none commercially available for clinical use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 accurately summarize prior work on neuroprotective factors and their limitations, all supported by appropriate citations. This establishes the rationale for seeking novel protective factors and validates the use of light damage as a discovery strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "KIT/KITL signaling is an important pathway in multiple cell types but its role in adult retina was unknown. The authors establish that KITL interacts with KIT receptor to promote cell survival, migration, and proliferation through MAPK, PI3K, JAK/STAT, and SRC pathways. While KIT is expressed in retinal progenitor cells, its functional role in adult retina had not been characterized prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 provide well-documented background on KIT/KITL signaling from prior literature (C30-C36) and accurately identify the knowledge gap (C37-C38) that motivates the current study. All statements are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Light damage induces molecular changes in the retina including upregulation of KITL. RNA-seq analysis after 1 day of light exposure (15,000 Lux) showed significant gene expression changes including known light-inducible genes (Gfap, Edn2, Fgf2, Ccl3, Ccl12) and identified the MAPK pathway among top altered pathways, with increased expression of Kitl, Lif, and Ngf confirmed by RT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are well-supported by RNA-seq data (Figure 1A-D), RT-PCR validation (Figure 1\u2014figure supplement 1D), and appropriate statistical thresholds (p<0.01, fold change >2). The identification of known light-inducible genes validates the approach, and the discovery of Kitl upregulation is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Photoreceptor cells are the major source of KITL upregulation following light stress. Western blots showed increased transmembrane (2.4\u00b10.9 fold) and soluble (4.5\u00b11.6 fold) KITL forms, and increased phosphorylated KIT (3.14\u00b10.94 fold) after light damage. Multiple approaches (Q-PCR, western blot, in situ hybridization, immunostaining) demonstrated that Kitl expression is higher in neural retina compared to RPE under normal conditions and is upregulated in photoreceptors but not RPE after light damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C57 are strongly supported by converging evidence from multiple complementary techniques (RNA-seq, RT-PCR, western blot, immunostaining, in situ hybridization) shown in Figure 1 and supplements. The quantitative data include appropriate replicates (n=3-5) and the cell-type specificity is well-documented through tissue separation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "KitWps/Wps mice show normal retinal structure and function under baseline conditions. The KitWps mutation (D60N in extracellular domain) produces viable but white and infertile mice. Under normal conditions, these mice show no detectable changes in fundus appearance, ERG responses (scotopic or photopic), retinal histology, cell layer thickness, or expression of retinal cell markers (OTX2, PKC\u03b1, Rhodopsin, Opsin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are well-supported by comprehensive baseline characterization in Figure 2A-G, including fundus imaging, ERG measurements, histology, and immunostaining with appropriate quantification. The data establish that the KitWps mutation does not cause developmental or baseline functional defects in the retina, which is critical for interpreting subsequent light damage experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The KitWps mutation substantially reduces KIT activation in the retina. While the AB5506 antibody (recognizing intracellular domain) showed similar KIT expression between genotypes, the ACK45 antibody (recognizing extracellular domain) showed significantly decreased immunoreactivity in KitWps/Wps retinas. Intravitreal KITL injection induced phosphorylation of KIT, ERK, and AKT in Kit+/+ but not KitWps/Wps retinas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by western blot and immunostaining data in Figure 2\u2014figure supplement 1 and Figure 2H-J. The use of two different antibodies recognizing different epitopes provides strong evidence that the mutation affects ligand binding and receptor activation rather than expression levels. The functional validation through downstream signaling (ERK, AKT phosphorylation) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "KitWps/Wps mice show exacerbated photoreceptor degeneration after light damage. Following 8 days of light exposure (15,000 lux), KitWps/Wps mice showed greater decline in ERG responses (both scotopic and photopic), more severe ONL thinning, increased reactive gliosis (GFAP), abnormal rhodopsin translocation, and higher photoreceptor cell death (44\u00b19 vs 22\u00b17 TUNEL+ cells per section) compared to Kit+/+ mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C82 are strongly supported by comprehensive functional and structural analyses in Figure 3, including ERG measurements (n=8 per group), histological quantification, immunostaining for multiple markers, and TUNEL assays (n=10 per group). The convergent evidence from multiple independent measures (function, structure, cell death) provides robust support for the conclusion that KIT signaling protects against light-induced degeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "AAV8-mediated KITL overexpression prevents light-induced photoreceptor degeneration in wild-type mice. AAV8-KITL infection achieved widespread retinal transduction with photoreceptor-specific expression (3.3\u00b10.46 fold increase). Without light damage, AAV8-KITL caused no morphological changes. After 3 days of light damage, AAV8-KITL-infected retinas showed preserved thickness and dramatically reduced photoreceptor cell death (9\u00b11.6% vs 40.8\u00b14.5% with control AAV8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C91 are well-supported by data in Figure 4 and Figure 4\u2014figure supplements 1-2, including validation of AAV8 transduction efficiency, western blot confirmation of KITL overexpression, histological analysis, and TUNEL assays with appropriate sample sizes (n=6 per group). The protective effect is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "KITL protection against light damage requires functional KIT receptor. In albino mice after light damage, AAV8-KITL prevented retinal thinning and reduced photoreceptor cell death in Kit+/+ mice (from 40.6\u00b18.2% to 8.9\u00b12.1%) but not in KitWps/Wps mice (remained at 75.9\u00b18.2%), demonstrating that KITL acts through KIT receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 provide critical genetic evidence for mechanism in Figure 4H-J. The use of albino mice on both genetic backgrounds controls for the RPE65 variant, and the differential response to AAV8-KITL between genotypes (n=4 per group) strongly supports that protection requires functional KIT signaling. This is a well-designed experiment that rules out off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "KITL protection is cell-autonomous in photoreceptors. RPE-specific KITL expression (AAV8-RPE65-KITL, 12.1\u00b12.4 fold increase) provided minimal protection (cell death 26.6\u00b15% to 21.7\u00b12.8%), while photoreceptor-specific expression (AAV8-RHO-KITL, 4.23\u00b10.68 fold increase) significantly reduced ONL thinning and cell death (from 25.9\u00b14.7% to 11.5\u00b12.5%), demonstrating that photoreceptor-expressed KITL is more protective than RPE-expressed KITL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 are supported by cell-type-specific AAV experiments in Figure 5, using validated promoters (RPE65 for RPE, RHO for photoreceptors) with western blot and immunostaining confirmation of expression patterns. The differential protective effects (n=8 per group) provide strong evidence for cell-autonomous action. This is an important mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "KIT signaling regulates HMOX1 expression in photoreceptors. RNA-seq identified 17 antioxidant/wound healing genes altered by light damage, including Hmox1. Under normal conditions, HMOX1 levels were similar between genotypes, but after light damage, HMOX1 was significantly upregulated in Kit+/+ retinas (3.6\u00b10.6 fold) but only slightly in KitWps/Wps retinas (1.4\u00b10.5 fold), indicating KIT-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 are supported by RNA-seq analysis (Figure 6A-B), western blots, and immunostaining (Figure 6C-D) with appropriate replicates (n=3). The differential HMOX1 induction between genotypes provides strong evidence for KIT-dependent regulation. The background on HMOX1 function (C106-C108) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "KIT activation induces HMOX1 expression independent of light damage. In vitro, KIT-WT transfection increased HMOX1 more than KIT-Wps (6.2\u00b10.86 vs 3\u00b10.6 fold). In vivo, AAV8-KITL injection in Kit+/+ mice under normal light conditions increased both KITL (4.6\u00b10.9 fold) and HMOX1 (2.9\u00b10.5 fold), with colocalization in photoreceptors, demonstrating that KIT activation alone is sufficient to induce HMOX1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are supported by both in vitro (661W cells, Figure 6\u2014figure supplement 1B) and in vivo (AAV8-KITL injection, Figure 6E-F) experiments with appropriate controls and replicates (n=4). The convergent evidence from two experimental systems strengthens the conclusion that KIT directly regulates HMOX1 expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "KIT signaling regulates nuclear translocation of NRF2. While total NRF2 levels were unchanged after light treatment, immunostaining showed dramatic increase in nuclear NRF2 in Kit+/+ photoreceptors (28\u00b19 per section) but much less in KitWps/Wps (14\u00b15 per section). In vitro, Kitl knockdown increased cytosolic NRF2 (from 4.74\u00b12.27% to 30-37% of cells) and decreased nuclear NRF2 (0.59\u00b10.09 fold), demonstrating KIT-dependent regulation of NRF2 localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C116-C122 are well-supported by immunostaining (Figure 7A-F) and western blot analysis of subcellular fractions (Figure 7G-H) with appropriate quantification and replicates (n=3-6). The use of both in vivo (genetic mutant) and in vitro (siRNA knockdown) approaches provides strong converging evidence for KIT regulation of NRF2 nuclear translocation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C41",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "KIT signaling stimulates Hmox1 expression through NRF2. In 661W cells, KIT overexpression upregulated Hmox1 (2.35\u00b11 fold) without changing Nfe2l2 expression (1.1\u00b10.2 fold), and this upregulation was blocked by Nfe2l2 knockdown, demonstrating that KIT activates NRF2 to regulate Hmox1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C41, C123-C125 are supported by RT-PCR and qPCR data in Figure 7I-J showing that Nfe2l2 knockdown blocks KIT-induced Hmox1 upregulation (n=3). This establishes the epistatic relationship between KIT, NRF2, and HMOX1, completing the mechanistic pathway. The experimental design appropriately tests the requirement for NRF2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C42",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "HMOX1 overexpression rescues light-induced photoreceptor degeneration in KitWps/Wps mice. AAV8-HMOX1 achieved photoreceptor-specific expression at levels similar to light-damaged Kit+/+ retinas. In KitWps/Wps albino mice, AAV8-HMOX1 partially rescued ERG function after light damage (b-wave: 381\u00b140\u03bcV vs 152\u00b133\u03bcV with control) and preserved retinal thickness, demonstrating that HMOX1 acts downstream of KIT to protect photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C42, C126-C132 are supported by AAV8-HMOX1 rescue experiments in Figure 8A-F with appropriate controls, ERG measurements (n=5), and histological analysis (n=6). The partial rescue in KitWps/Wps mice by HMOX1 overexpression provides strong genetic evidence that HMOX1 is a key downstream effector of KIT signaling. This is a critical experiment establishing the mechanistic pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "KITL protection against light damage depends on HMOX1. In 661W cells, exogenous KITL (5.6 nM) prevented light-induced cell loss (from 409\u00b144 to 278\u00b128 cells vs 147\u00b115 in control) and reduced cell death (from 83\u00b14.6% to 40\u00b15.3%), but this protection was completely blocked by Hmox1 knockdown, demonstrating that HMOX1 is required for KITL-mediated protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 are supported by in vitro experiments in Figure 8\u2014figure supplement 1C-E using cell counting and PI staining (n=3). The complete loss of KITL protection upon Hmox1 knockdown provides strong evidence for the requirement of HMOX1. This complements the in vivo rescue experiments and establishes HMOX1 as a necessary downstream mediator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C13",
+      "C14",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "KITL overexpression protects against inherited retinal degeneration in rd10 and rd1 mouse models. In rd10/rd10 mice (Pde6b mutation), subretinal AAV8-KITL injection at P3 achieved photoreceptor-specific KITL expression, significantly increased ONL thickness, partially rescued rhodopsin localization, reduced photoreceptor cell death (from 16.2\u00b12% to 8.9\u00b11.6%), and improved ERG responses (b-wave: 304\u00b130\u03bcV vs 142.2\u00b143.6\u03bcV), with similar results in rd1/rd1 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C13, C14, C137-C144 are supported by comprehensive analysis in Figure 9 and Figure 9\u2014figure supplement 1, including immunostaining, histology, TUNEL assays (n=5), and ERG measurements (n=5) in two independent genetic models of RP. The demonstration of protection in genetic models distinct from light damage provides strong evidence for broad therapeutic potential. This is a major translational finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C145",
+      "C146",
+      "C147",
+      "C169"
+    ],
+    "result": "KIT signaling protects photoreceptor cells against light-induced retinal degeneration through the NRF2-HMOX1 pathway. Multiple lines of evidence support that KIT is expressed in photoreceptor cells, its activation stimulates MAPK and PI3K/AKT pathways, KIT signaling activates NRF2 leading to HMOX1 expression, and this pathway protects against light-induced degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C145-C147, C169 represent the integrated conclusion supported by the entire body of experimental evidence including: (1) KIT expression and activation in photoreceptors, (2) exacerbated degeneration in KitWps/Wps mice, (3) protection by KITL overexpression, (4) KIT-dependent NRF2 nuclear translocation, (5) NRF2-dependent HMOX1 expression, and (6) HMOX1-dependent protection. The mechanistic pathway is well-established through genetic, pharmacological, and molecular approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C15",
+      "C148",
+      "C149",
+      "C150",
+      "C170",
+      "C171"
+    ],
+    "result": "KITL may provide a novel therapeutic avenue for retinal degenerative diseases. The authors conclude that given the protective effects in both light damage and genetic models, KITL/KIT signaling activation may be considered clinically for photoreceptor protection, potentially offering advantages over other strategies and working regardless of specific pathogenetic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C12, C15, C148-C150, C170-C171 represent speculative therapeutic conclusions. While the mouse data are compelling, claim C12 (partial restoration of retinal function after light damage) lacks direct ERG evidence in the light damage + AAV8-KITL condition. The therapeutic potential claims (C15, C148, C170-C171) are reasonable extrapolations but remain speculative without human data or additional safety/efficacy studies. The comparison to other therapies (C149) and broad applicability claims require further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "KIT signaling activation should be used with caution due to potential tumorigenic effects, though local AAV-mediated expression may mitigate risks. The authors note that while KIT is needed for cell survival, excessive KIT signaling can lead to tumors (gastrointestinal stromal tumors, leukemia, melanoma), but suggest that local AAV-mediated expression with blood-retinal barrier protection may reduce deleterious effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 appropriately acknowledge known risks of KIT activation (C151-C153, supported by citation) and provide reasonable speculation about risk mitigation through local delivery (C154-C155). The cautionary note (C154) is appropriate given the known oncogenic potential, and the proposed mitigation strategy (C155) is plausible though speculative. This represents responsible discussion of translational considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "KITL acts cell-autonomously in photoreceptors through NRF2-mediated pathway. The authors establish that photoreceptor-specific KITL expression is more protective than RPE expression, that the pathway involves cytoplasm-to-nuclear shift of NRF2 likely mediated by AKT activation, and acknowledge potential indirect contributions from other cell types like M\u00fcller glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159 are supported by the cell-type-specific AAV experiments (Figure 5) and mechanistic studies (Figure 7). The cell-autonomous conclusion (C156-C157) is well-supported by differential effects of RPE vs photoreceptor-specific expression. The mechanistic insight about AKT-mediated NRF2 translocation (C159) is supported by data and appropriate citation. The acknowledgment of potential indirect effects (C158) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "HMOX1 provides antioxidant protection in photoreceptors, and the KITL-KIT-NRF2-HMOX1 axis is one of multiple protective pathways. The authors note that HMOX1 reduces oxidative stress, that photoreceptors are particularly sensitive to oxidative damage, that oxidative stress is linked to AMD and other degenerations, and that KITL/HMOX1 overexpression provides only partial protection, suggesting multiple pathways are involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C168 appropriately contextualize the findings within oxidative stress biology (C160-C166, all well-cited) and acknowledge limitations (C167-C168). The observation that protection is partial rather than complete (C167, supported by data) leads to the reasonable conclusion that multiple pathways contribute to photoreceptor protection (C168). This represents appropriate scientific interpretation.",
+    "result_type": "MINOR"
+  }
+]

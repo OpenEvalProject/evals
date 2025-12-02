@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C54",
+      "C55"
+    ],
+    "result": "scRNA-seq successfully profiled 19,458 hemocytes across inflammatory conditions, integrated using Harmony, and identified 17 clusters representing major hemocyte types including plasmatocytes (PM1-12), crystal cells (CC1-2), and lamellocytes (LM1-2), with strong correlation to published bulk RNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25-C30 describe the experimental design, data generation, and computational integration. The Harmony integration successfully resolved batch effects (C26-C27), identified 17 clusters (C27), and assigned them to known cell types using established markers (C28). The strong Spearman correlation (~0.79) with published bulk RNA-seq validates data quality (C55). The methodology is well-documented with appropriate sample sizes and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Plasmatocytes were resolved into 12 distinct clusters (PM1-12) representing different functional states including cell cycle (PM2), immune-activated states expressing antimicrobial peptides (PM3-7), and minor subpopulations with distinct gene signatures (PM8-12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C43 provide comprehensive characterization of plasmatocyte diversity based on differential gene expression patterns. PM2 is identified by cell cycle markers (C33), PM3-7 by immune-induced genes and AMPs (C34-C38), and PM8-12 by specialized markers (C39-C42). The classification is supported by marker gene expression data shown in figures and is consistent with known biology (citations provided for cell cycle genes, AMPs, etc.).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Two crystal cell clusters (CC1 and CC2) were identified, with CC1 representing an intermediate state expressing low PPO1 but high Notch/peb/E(spl)m3-HLH, and CC2 representing mature crystal cells with high PPO1/PPO2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 describe crystal cell heterogeneity based on differential expression of PPO1/PPO2 and developmental markers. The assignment of CC1 as intermediate and CC2 as mature is supported by marker expression patterns (C45, C47) and is consistent with known crystal cell biology (C46 cites prior work on Notch/peb). The inference about maturation states (C48) is reasonable given the expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Two lamellocyte clusters (LM1 and LM2) were identified, with LM1 representing an intermediate state with lower atilla expression and LM2 representing mature lamellocytes with higher atilla and tubulin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 characterize lamellocyte heterogeneity based on differential atilla expression and cytoskeletal gene enrichment. The assignment of LM1 as intermediate and LM2 as mature is supported by atilla expression levels (C52) and is consistent with the role of tubulins in lamellocyte structure (C53, supported by citation). The data directly supports these classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Cell fraction analysis revealed condition-specific changes: PMAMP (PM6-7) and LM2 emerged mainly upon wounding or wasp infestation, while crystal cells decreased in wasp-infested larvae, consistent with known immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 describe cell fraction changes across conditions. The emergence of PMAMP and LM2 upon immune challenge (C57, C60-C61) is consistent with their immune-activated nature. The decrease in crystal cells upon wasp infestation (C59) is supported by prior literature (citation to Kacsoh and Schlenke, 2012). The proportion of cecropin-expressing cells (~5.5%) matches prior observations (C58). The data support these condition-specific responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Differential gene expression analysis revealed condition-specific immune gene signatures, with distinct AMP expression patterns in wounded versus wasp-infested conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe condition-specific gene expression changes in immune-activated clusters. The data show increased expression of immune genes (Mmp1, GstE6, CecA2, AMPs) upon wounding or wasp infestation (C62-C65), with unique AMP signatures per condition (C66). These findings are supported by heatmaps and DEG analysis shown in figures. The condition-specific responses are biologically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "A novel antimicrobial peptide-like gene, CG43236/Mtkl, was identified in PM7, sharing sequence similarity with Mtk including an Antimicrobial10 domain, and validated by qRT-PCR to be induced upon wounding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 describe the identification and characterization of Mtkl. The gene was identified in scRNA-seq data (C67), shares sequence similarity with Mtk including the Antimicrobial10 domain (C68), and was validated by qRT-PCR (C70). The modest induction compared to other AMPs (C71) and expression in other tissues (C72) are documented. Prior work supports its classification as a putative AMP (C73-C74). The evidence supports this discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Pseudotemporal analysis using Monocle3 with PM2 as the starting point revealed three major lineages: Lineage1 terminating in crystal cells (CC1\u2192CC2), Lineage2 in plasmatocytes (PM1, PM8-12), and Lineage3 in lamellocytes (LM1\u2192LM2) and immune-activated states (PM5, PM7), with cell cycle gene expression decreasing along differentiation trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C95 describe pseudotemporal ordering results. The assignment of PM2 as the starting point is justified by cell cycle gene expression (C79, C90). The three lineages are clearly defined (C80-C88) with intermediate states preceding mature cell types (C82, C86). The decrease in cell cycle genes along differentiation (C91) is consistent with known biology (citations provided). The polo knockdown experiment (C92) supports the role of cell cycle arrest in differentiation (C93). The inference that PM2 is oligopotent (C95) is reasonable given the trajectory data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Crystal cell sub-clustering revealed PPO1low and PPO1high populations, with in vivo imaging showing a continuum of Lz and PPO1 expression rather than discrete populations, supporting that PPO1low represents an intermediate state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C99-C102 describe crystal cell heterogeneity at higher resolution. The sub-clustering identified two populations based on PPO1 expression (C96). In vivo imaging validated differential GFP (Lz) and mCherry (PPO1) intensities (C99) with significant positive correlation (C100), consistent with known regulation (citation provided). The correlation plot showing a continuum rather than discrete populations (C101) supports the interpretation that PPO1low is an intermediate state (C102). The imaging data validate the scRNA-seq findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PPO1high crystal cells express uncharacterized genes CG10602 and CG10467, with CG10602 being orthologous to human LTA4H, suggesting a potential role in combating bacterial infections beyond melanization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C107 identify novel genes in mature crystal cells. CG10602 and CG10467 are identified by scRNA-seq (C104), and CG10602 is orthologous to LTA4H (C105), which is involved in inflammatory responses and immunity in other species (C105-C106). However, the inference that CG10602 plays a role in combating bacterial infections in Drosophila (C107) is speculative without functional validation. The sequence homology is suggestive but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Crystal cell sub-clustering identified condition-specific gene expression changes, with PPO1low enriched in immune genes (spz, Df31, HmgD) upon wasp infestation, and confirmed expression of E(spl)m3-HLH in ~13% of crystal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 describe condition-specific changes in crystal cell sub-clusters. PPO1low shows enrichment of immune genes upon wasp infestation (C111), while PPO1high does not show notable changes. The expression of E(spl)m3-HLH in ~13% of crystal cells (C112) is validated by in vivo imaging. The summary (C113) accurately reflects the findings that crystal cells exist in a continuum along maturation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Lamellocyte sub-clustering revealed 5 clusters including LM1 (intermediate state with low atilla and plasmatocyte markers) and LM2-4 (mature subtypes), with LM2 highly expressing sugar transporters (CG4607, CG1208) orthologous to human GLUT6/GLUT8, suggesting specialized metabolic requirements for immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C127 describe lamellocyte heterogeneity at higher resolution. The sub-clustering identified 5 clusters (C114-C116), with LM1 as intermediate based on low atilla and plasmatocyte marker expression (C118-C119). LM2-4 are mature subtypes based on high atilla (C120). LM2 expresses sugar transporters (C121-C123) orthologous to GLUT6/GLUT8 (C124), which are regulated by inflammation in mammals (C125). The inference that lamellocytes require specialized transporters for immune responses (C127) is reasonable given the expression data and known energy demands of immunity (C126).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Lamellocytes express the water transporter Drip (AQP4 ortholog), which was validated in vivo to be absent in unwounded larvae but expressed in ~90% of lamellocytes upon wounding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 describe Drip expression in lamellocytes. The scRNA-seq data show enrichment in lamellocyte sub-clusters (C128), and in vivo validation confirms absence in unwounded larvae (C129) and expression in ~90% of lamellocytes upon wounding (C130). The data are consistent and the in vivo validation supports the scRNA-seq findings. The citation to Nicosia et al. (2019) provides context for Drip's role in immune cell function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "LM3 and LM4 represent additional mature lamellocyte subtypes with distinct gene signatures, including GstD3 in LM4 suggesting involvement in xenobiotic detoxification, with transcriptional differences between conditions likely reflecting different cellular origins (circulating vs. lymph gland-derived).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 describe additional lamellocyte subtypes. LM3-4 are classified as mature based on atilla expression (C131), with LM4 expressing GstD3 (C132). The DEG analysis shows distinct transcriptional changes in wasp inf. 48 hr (C133), which is attributed to different cellular origins based on lymph gland rupture at this timepoint (C134, supported by imaging and citation). The summary (C135) accurately reflects the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Pathway enrichment analysis identified FGF signaling as highly enriched in lamellocytes, with btl (FGFR) expressed in LM2 and bnl (FGF ligand) expressed in a small subpopulation of crystal cells, representing a novel finding for circulating hemocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C142 describe pathway enrichment findings. Known pathways (Imd, Toll, Notch) are enriched in expected clusters (C136-C138), validating the analysis. FGF signaling is identified as enriched in lamellocytes (C139), which is novel for circulating hemocytes (C140). The scRNA-seq data show btl in LM2 (C141) and bnl in crystal cells (C142). The data support this discovery, though functional validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C145",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "In vivo validation confirmed bnl expression in crystal cells and plasmatocytes (but not lamellocytes) and btl expression in ~35% of lamellocytes near melanized wasp eggs, with both genes also expressed in lymph gland scRNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143, C145, C147-C151 describe in vivo validation of bnl and btl expression. Imaging confirms bnl in crystal cells/plasmatocytes but not lamellocytes (C143, C145) and btl in ~35% of lamellocytes near wasp eggs (C147-C148). The summary (C149) is accurate. Expression in lymph gland scRNA-seq data (C150-C151) provides additional support. The in vivo validation strengthens the scRNA-seq findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "RNAi-mediated knockdown of bnl in hemocytes (Hml-GAL4) or crystal cells (lz-GAL4) dramatically reduced melanization frequency of wasp eggs (~90% to <10-20%), with decreased lamellocyte numbers in infested larvae, suggesting Bnl plays a key role in blood cell differentiation and recruitment for effective melanization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C163 describe functional validation of bnl. Control larvae show ~90% melanization (C152), which drops to <10% with Hml-GAL4>bnlRNAi (C153) and ~20% with lz-GAL4>bnlRNAi (C156). Cell counts show decreased lamellocytes in infested bnlRNAi larvae (C154, C156) but normal numbers in uninfested larvae (C155, C157-C159). Imaging shows reduced melanotic mass size and Hml+ cell recruitment (C160-C162). The inference that Bnl is important for differentiation/recruitment (C163) is supported by the data. The experiments include appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "RNAi-mediated knockdown of btl using srp-GAL4 reduced melanization frequency to 20-37% (from >85% in controls) with significantly decreased lamellocyte numbers, suggesting Btl is critical for lamellocyte differentiation and recruitment during immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C169 describe functional validation of btl. HLT-GAL4>btlRNAi shows modest reduction in melanization (C164), which is attributed to incomplete targeting (C165). srp-GAL4>btlRNAi shows stronger reduction to 20-37% (C166) with decreased lamellocytes (C167) but unchanged crystal cells (C168). The inference that Btl is critical for lamellocyte differentiation/recruitment (C169) is supported by the data. The use of two independent RNAi lines strengthens the findings. The experiments include appropriate controls.",
+    "result_type": "MAJOR"
+  }
+]

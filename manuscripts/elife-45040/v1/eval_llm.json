@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Fyn exhibits heterogeneous spatial distribution and forms nanodomains of ~168 nm diameter in dendrites. sptPALM imaging revealed that while low-resolution epifluorescence suggested uniform Fyn distribution, high-resolution localization density maps showed very heterogeneous spatial distribution with Fyn-enriched nanodomains. Fyn mobility varied more than 100-fold within individual neurons and spines, and nanodomain size was comparable to PSD-95 nanodomains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are well-supported by sptPALM imaging data in Figure 1. The heterogeneous distribution, nanodomain identification using Vorono\u00ef tessellation, and size measurements (~168.3 \u00b1 4.2 nm) are directly demonstrated. The comparison to PSD-95 nanodomains is appropriately cited. The methodology is sound and the conclusions are directly supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C5",
+      "C50"
+    ],
+    "result": "Fyn mobility decreases during neuronal maturation from DIV11-15 to DIV19-20. The average MSD and AUC decreased, immobile fraction increased, and the distribution of diffusion coefficients shifted left with maturation, suggesting increased lateral trapping of Fyn during spine maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by quantitative data in Figure 1k-n comparing DIV11-15 and DIV19-20 neurons. Multiple mobility metrics (MSD, AUC, diffusion coefficient distribution, immobile fraction) consistently show decreased mobility with maturation. Statistical significance is demonstrated (p=0.0014 for AUC, p=0.0295 for immobile fraction). The interpretation regarding lateral trapping is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Fyn mobility is significantly lower in dendritic spines compared to dendritic shafts. This difference was assessed by multiple metrics including MSD, AUC, diffusion coefficient distribution, and immobile fraction, suggesting higher abundance of Fyn binding partners in spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are well-supported by Figure 2 data comparing spine and shaft compartments. The 3D reconstruction methodology (Figure 2a-c) properly identifies compartments, and multiple mobility metrics consistently show lower mobility in spines (p<0.0001 for AUC, p=0.003 for immobile fraction). The interpretation regarding binding partner abundance is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C3",
+      "C4"
+    ],
+    "result": "Fyn exhibits at least three distinct motion states (immobile, confined, and free diffusive) in both spines and shafts, with two states associated with nanodomains. The apparent diffusion coefficients were similar between compartments, but state occupancies differed significantly, with higher immobile and confined state occupancies in spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by MSS analysis and three-state modeling in Figure 3. The identification of three motion states is based on appropriate analytical methods (MSS analysis, cumulative distribution fitting). The finding that diffusion coefficients are similar but occupancies differ between spines and shafts is statistically significant (p=0.0412 for S1, p=0.0157 for S2, p=0.0029 for S3) and provides mechanistic insight into compartment-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C25"
+    ],
+    "result": "Dendritic targeting of Fyn is significantly reduced in Tau knockout neurons compared to wildtype, confirmed by confocal microscopy showing decreased Fyn localization intensity in dendrites. However, Fyn localization was still observed in both dendritic shafts and spines of Tau KO neurons at lower levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by immunocytochemistry data in Figure 4 showing significantly decreased Fyn intensity in Tau KO dendrites (p<0.0001). This confirms prior biochemical findings (C25, citing Ittner et al., 2010). The observation that some Fyn remains in Tau KO neurons is important for subsequent experiments examining Fyn organization in the absence of Tau.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The absence of Tau did not affect the nanoscale organization of Fyn in dendritic spines. sptPALM analysis showed that MSD, diffusion coefficient distribution, AUC, and immobile fraction were not significantly different between WT and Tau KO neurons in spines, and effective diffusion coefficients for individual spines were similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by Figure 5i-l,n showing no significant differences in spine Fyn mobility between WT and Tau KO (p=0.7389 for AUC, p=0.7721 for immobile fraction, p=0.5584 for Deff). This is a key negative result demonstrating that while Tau affects dendritic targeting, it does not regulate Fyn organization within spines under physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C6",
+      "C7",
+      "C92"
+    ],
+    "result": "Tau regulates Fyn mobility specifically in dendritic shafts but not in spines under physiological conditions. Effective diffusion coefficients were significantly higher in shaft segments of Tau KO neurons compared to WT, and this effect was rescued by re-expressing wildtype Tau.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are well-supported by Figure 5o showing significantly higher Deff in Tau KO shafts (p=0.0169) and rescue by TauWT expression. The compartment-specific effect (shafts but not spines) is a novel finding. The rescue experiment (C67, C7) provides strong evidence for specificity. This demonstrates that Tau's role in Fyn organization is compartment-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C8"
+    ],
+    "result": "P301L mutant Tau dramatically decreases Fyn mobility in dendrites and significantly decreases mobility in spines. Multiple mobility metrics (MSD, AUC, diffusion coefficient distribution, immobile fraction) showed significant decreases in both compartments when comparing TauP301L to TauWT expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are strongly supported by Figure 6 data showing significant decreases in Fyn mobility with P301L expression in both dendrites (p=0.0014 for AUC, p=0.0014 for immobile fraction) and spines (p=0.0245 for AUC, p=0.0373 for immobile fraction). This is a major pathological finding distinguishing mutant from wildtype Tau effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C9"
+    ],
+    "result": "P301L mutant Tau increases confinement of Fyn in individual spines. Analysis showed lower MSD and Deff values, lower SMSS indicating more confined motion, unchanged immobile state occupancy, increased confined state occupancy, and decreased free state occupancy compared to wildtype Tau.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are supported by detailed spine-level analysis in Figure 7a-e. The MSS analysis (p<0.0001) and state occupancy changes (p=0.0049 for S2, p=0.0079 for S3) provide mechanistic insight into how P301L affects Fyn organization. The finding that diffusion coefficients remain similar while occupancies change suggests altered exchange dynamics rather than fundamentally different binding interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C10"
+    ],
+    "result": "P301L mutant Tau increases the number of Fyn nanodomains per spine without changing nanodomain size. While diameter and area were not significantly different, the number of nanodomains per spine increased significantly in TauP301L-expressing neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by Vorono\u00ef tessellation analysis in Figure 7f-h showing no change in nanodomain diameter (p=0.054) or area (p=0.062) but significant increase in number per spine (p=0.0047). This suggests P301L promotes formation of additional nanodomains rather than enlarging existing ones, providing insight into the mechanism of aberrant nanoclustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C93"
+    ],
+    "result": "\u0394Tau (lacking microtubule-binding domains) mislocalized to dendritic spines but did not alter Fyn mobility in either dendrites or spines. This contrasts with P301L mutant Tau effects, demonstrating that spine mislocalization alone is insufficient to alter Fyn organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by Figure 8 showing \u0394Tau spine localization but no significant changes in Fyn mobility metrics in dendrites (p=0.9768 for AUC) or spines (p=0.9747 for AUC). This is a critical control demonstrating that the P301L effect requires more than just Tau presence in spines, likely involving the specific properties of the P301L mutation such as increased Fyn binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C74",
+      "C11"
+    ],
+    "result": "P301L mutant Tau confines Fyn and alters its nanoscale organization within individual spines, demonstrating that Tau acts as a key regulator of Fyn in both physiological and pathological situations. The complex interaction dynamics between Tau and Fyn underpin Fyn's nanoscale organization in dendritic shafts under physiological conditions and in spines under pathological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 represent the main conclusions supported by the collective experimental data (Figures 5-8). The evidence shows compartment-specific regulation by wildtype Tau (shafts) and pathological effects of P301L (spines). The \u0394Tau control strengthens the conclusion that specific Tau-Fyn interactions, not just localization, are critical. This is a well-supported integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C98",
+      "C109",
+      "C112",
+      "C143"
+    ],
+    "result": "The pathological Tau P301L mutation potentially contributes to synaptic dysfunction by promoting aberrant Fyn nanoclustering in spines, which could lead to overactivation of postsynaptic Fyn signaling and neurotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12, C98, C109, C112, and C143 are speculative interpretations of the data. While the study demonstrates that P301L increases Fyn trapping and nanoclustering in spines, the connection to synaptic dysfunction, overactivation of signaling, and neurotoxicity is not directly tested. These are reasonable hypotheses based on the findings and prior literature, but require additional functional experiments to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C113",
+      "C114"
+    ],
+    "result": "The increased trapping of Fyn in dendritic shafts by Tau may contribute to Tau-mediated dendritic targeting of Fyn and may limit Fyn access to spines, potentially fine-tuning Fyn clustering and signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69, C113, and C114 are speculative mechanistic interpretations. While the data show that Tau increases Fyn trapping in shafts (Figure 5o), the proposed mechanisms for how this contributes to dendritic targeting or regulates spine access are not directly tested. These are plausible hypotheses that would require additional experiments such as flux measurements or perturbation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C121"
+    ],
+    "result": "The organization of Fyn into nanodomains may allow this kinase to orchestrate multiple signaling pathways by providing a scaffold for diverse signaling components. Trapping Fyn in nanodomains limits its diffusion, restricting signaling to individual spines. Mobility patterns of signaling molecules like Fyn could represent the activational state of the underlying signaling network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106, C108, and C121 are speculative interpretations about the functional significance of Fyn nanoclustering. While the nanodomain organization is well-demonstrated, the proposed roles in orchestrating signaling pathways, restricting spatial spread, and representing activation states are inferred from the mobility data and literature but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background claims establishing the known roles of Fyn in memory formation, Alzheimer's disease, synaptic plasticity, and its interactions with Tau, PSD-95, and NMDARs. These include Fyn's post-translational modifications, localization, binding partners, and phenotypes in knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 are background knowledge claims from the introduction, all supported by appropriate citations to prior literature. These establish the context for the current study and are not novel findings. The citations appear appropriate and the claims accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C38",
+      "C70",
+      "C71",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C110",
+      "C111",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Discussion claims citing prior literature on related topics including CD36 receptor clustering, P301L Tau properties, Fyn's role in A\u03b2 toxicity, other kinases' nanoclustering, PSD-95 organization, effects of netrin-1 and Semaphorin3A, maturation of other postsynaptic proteins, and Tau's microtubule binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C70-C141 are discussion points supported by citations to prior literature. These contextualize the current findings within the broader field and propose connections to related phenomena. The citations appear appropriate and the claims accurately represent the cited work. These are not novel findings but important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C142",
+      "C144"
+    ],
+    "result": "Summary conclusions stating that Fyn is organized in nanodomains, its organization changes with maturation, it is more immobile in spines than shafts, Tau mutations induce aberrant Fyn trapping in spines, and Fyn is a putative target for pathological effects of Tau FTD mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91, C142, and C144 are summary conclusions in the discussion that accurately reflect the major findings demonstrated in the results section. These are well-supported by the collective experimental evidence presented in Figures 1-8. The conclusions appropriately distinguish between demonstrated findings and speculative implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Factors such as P301L Tau's translocation to spines, increased Fyn binding affinity, and promotion of actin polymerization could potentially contribute to increased Fyn trapping in nanodomains in dendritic spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C118 is a speculative integration of prior findings (C116, C117, C71) with the current results. While the individual properties of P301L are established by citations, their specific contribution to the observed nanoclustering phenotype is not directly tested. This represents a reasonable hypothesis for future investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2036 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Brian 2 allows scientists to simply and efficiently simulate spiking neural network models.",
+    "claim_type": "EXPLICIT",
+    "source": "Brian 2 allows scientists to simply and efficiently simulate spiking neural network models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary assertion about Brian 2's capabilities stated in the abstract.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Most simulators offer two options for preserving high performance when defining new models: low-level programming or description languages.",
+    "claim_type": "EXPLICIT",
+    "source": "To preserve high performance when defining new models, most simulators offer two options: low-level programming or description languages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about simulator design approaches, based on knowledge of the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Low-level programming requires expertise, is prone to errors, and is problematic for reproducibility.",
+    "claim_type": "EXPLICIT",
+    "source": "The first option requires expertise, is prone to errors, and is problematic for reproducibility.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about the limitations of low-level programming approaches.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Description languages cannot describe all aspects of a computational experiment, such as the potentially complex logic of a stimulation protocol.",
+    "claim_type": "EXPLICIT",
+    "source": "The second option cannot describe all aspects of a computational experiment, such as the potentially complex logic of a stimulation protocol.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about the limitations of description languages.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Brian addresses the issues of low-level programming and description languages using runtime code generation.",
+    "claim_type": "EXPLICIT",
+    "source": "Brian addresses these issues using runtime code generation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary claim about Brian's approach to solving the flexibility-performance trade-off.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Scientists write code with simple and concise high-level descriptions in Brian, and Brian transforms them into efficient low-level code that can run interleaved with their code.",
+    "claim_type": "EXPLICIT",
+    "source": "Scientists write code with simple and concise high-level descriptions, and Brian transforms them into efficient low-level code that can run interleaved with their code.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Brian's operational mechanism.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Neural simulators are increasingly used to develop models of the nervous system at different scales and in a variety of contexts.",
+    "claim_type": "EXPLICIT",
+    "source": "Neural simulators are increasingly used to develop models of the nervous system, at different scales and in a variety of contexts (Brette et al., 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Brette et al., 2007.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Simulators generally have to find a trade-off between performance and the flexibility to easily define new models and computational experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "These simulators generally have to find a trade-off between performance and the flexibility to easily define new models and computational experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about simulator design based on knowledge of the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Brian 2 is a complete rewrite of the Brian simulator designed to solve the dichotomy between performance and flexibility using the technique of code generation.",
+    "claim_type": "EXPLICIT",
+    "source": "Brian 2 is a complete rewrite of the Brian simulator designed to solve this apparent dichotomy using the technique of code generation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a primary claim about Brian 2's design goals.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Brian's design is based around two fundamental ideas: it is equation based, and the computational experiment is fundamental.",
+    "claim_type": "EXPLICIT",
+    "source": "The design is based around two fundamental ideas. Firstly, it is equation based: defining new neural models should be no more difficult than writing down their equations. Secondly, the computational experiment is fundamental: the interactions between neurons, environment and experimental protocols are as important as the neural model itself.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the core design principles of Brian.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Popular tools for simulating spiking neurons include NEURON, GENESIS, NEST, and Brian.",
+    "claim_type": "EXPLICIT",
+    "source": "Popular tools for simulating spiking neurons and networks of such neurons are NEURON (Carnevale and Hines, 2006), GENESIS (Bower and Beeman, 1998), NEST (Gewaltig and Diesmann, 2007), and Brian (Goodman and Brette, 2008; Goodman and Brette, 2009; Goodman and Brette, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to the respective simulator publications.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Most neural simulators come with a library of standard models that the user can choose from.",
+    "claim_type": "EXPLICIT",
+    "source": "Most of these simulators come with a library of standard models that the user can choose from.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about simulator design based on knowledge of the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "To be maximally useful for research, a simulator should be designed to facilitate work that goes beyond what is known at the time that the tool is created.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we argue that to be maximally useful for research, a simulator should also be designed to facilitate work that goes beyond what is known at the time that the tool is created, and therefore enable the user to investigate new mechanisms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about simulator design philosophy.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "For some simulators like NEST, adding new mechanisms requires specifying them in a low-level programming language such as C++ and integrating them with the simulator code.",
+    "claim_type": "EXPLICIT",
+    "source": "For some simulators, adding new mechanisms requires specifying them in a low-level programming language such as C++, and integrating them with the simulator code (e.g. NEST).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach taken by NEST for adding new mechanisms.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Some simulators provide domain-specific languages, for example NMODL for NEURON or NESTML for NEST.",
+    "claim_type": "EXPLICIT",
+    "source": "Amongst these, some provide domain-specific languages, for example NMODL (Hines and Carnevale, 2000, for NEURON) or NESTML (Plotnikov et al., 2016, for NEST), and tools to transform these descriptions into compiled modules that can then be used in simulation scripts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to NMODL and NESTML publications.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The Brian simulator has been built around mathematical model descriptions that are part of the simulation script itself.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, the Brian simulator has been built around mathematical model descriptions that are part of the simulation script itself.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Brian's approach to model specification.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Simulator-independent markup languages have been developed, including NeuroML/LEMS and NineML.",
+    "claim_type": "EXPLICIT",
+    "source": "Another approach to model definitions has been established by the development of simulator-independent markup languages, for example NeuroML/LEMS (Gleeson et al., 2010; Cannon et al., 2014) and NineML (Raikov et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to NeuroML/LEMS and NineML publications.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Markup languages address only part of the problem because a computational experiment is not fully specified by a neural model.",
+    "claim_type": "EXPLICIT",
+    "source": "However, markup languages address only part of the problem. A computational experiment is not fully specified by a neural model: it also includes a particular experimental protocol (set of rules defining the experiment), for example a sequence of visual stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about the limitations of markup languages.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Capturing the full range of potential protocols cannot be done with a purely declarative markup language, but is straightforward in a general purpose programming language.",
+    "claim_type": "EXPLICIT",
+    "source": "Capturing the full range of potential protocols cannot be done with a purely declarative markup language, but is straightforward in a general purpose programming language.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about the limitations of declarative languages versus general-purpose languages.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The Brian simulator combines model descriptions with a procedural, computational experiment approach where a simulation is a user script written in Python.",
+    "claim_type": "EXPLICIT",
+    "source": "For this reason, the Brian simulator combines the model descriptions with a procedural, computational experiment approach: a simulation is a user script written in Python, with models described in their mathematical form, without any reference to predefined models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Brian's approach to combining model descriptions with experimental protocols.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Python's expressiveness allows for arbitrary protocols by loading data, defining models, running simulations and analysing results.",
+    "claim_type": "EXPLICIT",
+    "source": "Due to Python's expressiveness, there is no limit on the structure of the computational experiment: stimuli can be changed in a loop, or presented conditionally based on the results of the simulation, etc.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about Python's capabilities for expressing computational experiments.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The procedural, equation-oriented approach addresses the issue of flexibility for both the modelling and the computational experiment, but comes at the cost of reduced performance.",
+    "claim_type": "EXPLICIT",
+    "source": "While the procedural, equation-oriented approach addresses the issue of flexibility for both the modelling and the computational experiment, it comes at the cost of reduced performance, especially for small-scale models that do not benefit much from vectorisation techniques (Brette and Goodman, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Brette and Goodman, 2011.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The reduced performance of the procedural approach results from the use of an interpreted language to implement arbitrary models, instead of the use of pre-compiled code for a set of previously defined models.",
+    "claim_type": "EXPLICIT",
+    "source": "The reduced performance results from the use of an interpreted language to implement arbitrary models, instead of the use of pre-compiled code for a set of previously defined models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the reason for reduced performance in the procedural approach.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The pyloric network model is adapted and simplified from earlier studies by Golowasch et al., 1999; Prinz et al., 2004; Prinz, 2006; O'Leary et al., 2014.",
+    "claim_type": "EXPLICIT",
+    "source": "We start with a case study of a model of the pyloric network of the crustacean stomatogastric ganglion (Figure 1a), adapted and simplified from earlier studies (Golowasch et al., 1999; Prinz et al., 2004; Prinz, 2006; O'Leary et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to earlier studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The pyloric network has a small number of well-characterised neuron types: anterior burster (AB), pyloric dilator (PD), lateral pyloric (LP), and pyloric (PY) neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "This network has a small number of well-characterised neuron types \u2013 anterior burster (AB), pyloric dilator (PD), lateral pyloric (LP), and pyloric (PY) neurons \u2013 and is known to generate a stereotypical triphasic motor pattern (Figure 1b\u2013c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the pyloric network structure, supported by Figure 1.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The pyloric network is known to generate a stereotypical triphasic motor pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "This network has a small number of well-characterised neuron types \u2013 anterior burster (AB), pyloric dilator (PD), lateral pyloric (LP), and pyloric (PY) neurons \u2013 and is known to generate a stereotypical triphasic motor pattern (Figure 1b\u2013c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by reference to Figure 1b-c showing the motor pattern.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "AB and PD neurons are lumped into a single neuron type (AB/PD) in the model.",
+    "claim_type": "EXPLICIT",
+    "source": "Following previous studies, we lump AB and PD neurons into a single neuron type (AB/PD) and consider a circuit with one neuron of each type.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a simplification made in the model.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The neurons in the pyloric circuit have rebound and bursting properties.",
+    "claim_type": "EXPLICIT",
+    "source": "The neurons in this circuit have rebound and bursting properties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the neuronal properties in the model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The pyloric network model uses a variant of the model proposed by Hindmarsh and Rose (1984).",
+    "claim_type": "EXPLICIT",
+    "source": "We model this using a variant of the model proposed by Hindmarsh and Rose (1984), a three-variable model exhibiting such properties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Hindmarsh and Rose, 1984.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The Hindmarsh and Rose model is a three-variable model exhibiting rebound and bursting properties.",
+    "claim_type": "EXPLICIT",
+    "source": "We model this using a variant of the model proposed by Hindmarsh and Rose (1984), a three-variable model exhibiting such properties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the properties of the Hindmarsh and Rose model.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The biophysical equations originally used in Golowasch et al. (1999) can be used instead of the Hindmarsh-Rose model.",
+    "claim_type": "EXPLICIT",
+    "source": "We make this choice only for simplicity: the biophysical equations originally used in Golowasch et al. (1999) can be used instead (see Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by reference to Figure 2\u2014figure supplement 1.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The pyloric network model has the unusual feature that some of the conductances are regulated by activity as monitored by a calcium trace.",
+    "claim_type": "EXPLICIT",
+    "source": "Although this model is based on widely used neuron models, it has the unusual feature that some of the conductances are regulated by activity as monitored by a calcium trace.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a non-standard feature of the model.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "In the pyloric network model, the calcium trace increases at each spike and then decays.",
+    "claim_type": "EXPLICIT",
+    "source": "The calcium trace increases at each spike (l. 21; defined by a discrete event triggered after a spike, reset='Ca + = 0.1') and then decays (l. 13; again defined by a differential equation).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the dynamics of the calcium trace, with reference to specific lines in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Neurons in the pyloric network are connected together by nonlinear graded synapses of two different types, slow and fast.",
+    "claim_type": "EXPLICIT",
+    "source": "Neurons are connected together by nonlinear graded synapses of two different types, slow and fast (l. 29\u201354).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the synaptic connections in the model, with reference to specific lines in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The graded synapses in the pyloric network model are unconventional in that the synaptic current has a graded dependence on the pre-synaptic action potential and a continuous effect rather than only being triggered by pre-synaptic action potentials.",
+    "claim_type": "EXPLICIT",
+    "source": "These are unconventional synapses in that the synaptic current has a graded dependence on the pre-synaptic action potential and a continuous effect rather than only being triggered by pre-synaptic action potentials (Abbott and Marder, 1998).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Abbott and Marder, 1998.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Brian allows synapses to have dynamics defined by differential equations in the same way as neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Firstly, we allow synapses to have dynamics defined by differential equations in precisely the same way as neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of Brian's synapse model.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "In Brian, synapses can directly and continuously modify neuronal variables allowing for a very wide range of synapse types.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to the usual role of triggering instantaneous changes in response to discrete neuronal events such as spikes, synapses can directly and continuously modify neuronal variables allowing for a very wide range of synapse types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of Brian's synapse model.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The ocular model is a closed-loop sensorimotor model where the eye tracks an object.",
+    "claim_type": "EXPLICIT",
+    "source": "The second example is a closed-loop sensorimotor model of ocular movements (used for illustration and not intended to be a realistic description of the system), where the eye tracks an object (Figure 3a,b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the ocular model, with reference to Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "In the ocular model, each of the two antagonistic muscles is modelled mechanically as an elastic spring with some friction.",
+    "claim_type": "EXPLICIT",
+    "source": "Each of the two antagonistic muscles is modelled mechanically as an elastic spring with some friction, which moves the eye laterally.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mechanical model of the muscles.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "In the ocular model, the stimulus is an object that moves in front of the eye according to a stochastic process.",
+    "claim_type": "EXPLICIT",
+    "source": "The stimulus is an object that moves in front of the eye according to a stochastic process (l. 7\u20138).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the stimulus in the model, with reference to specific lines in Figure 3c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "In the ocular model, muscles are controlled by two motoneurons, for which each spike triggers a muscular 'twitch'.",
+    "claim_type": "EXPLICIT",
+    "source": "Muscles are controlled by two motoneurons (l. 11\u201313), for which each spike triggers a muscular 'twitch'.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the motor control mechanism, with reference to specific lines in Figure 3c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "In the ocular model, retinal neurons receive a visual input modelled as a Gaussian function of the difference between the neuron's preferred position and the actual position of the object, measured in retinal coordinates.",
+    "claim_type": "EXPLICIT",
+    "source": "Retinal neurons receive a visual input, modelled as a Gaussian function of the difference between the neuron's preferred position and the actual position of the object, measured in retinal coordinates (l. 21).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the visual input to retinal neurons, with reference to specific lines in Figure 3c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "In the ocular model, retinal neurons project onto the motoneuron controlling the contralateral muscle with a strength proportional to their eccentricity.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we implement a simple feedback mechanism by having retinal neurons project onto the motoneuron controlling the contralateral muscle (l. 33), with a strength proportional to their eccentricity (l. 36): thus, if the object appears on the edge of the retina, the eye is strongly pulled towards the object; if the object appears in the centre, muscles are not activated.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the feedback mechanism, with reference to specific lines in Figure 3c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The simple feedback mechanism in the ocular model allows the eye to follow the object.",
+    "claim_type": "EXPLICIT",
+    "source": "This simple mechanism allows the eye to follow the object (Figure 3b), and the code illustrates the previous design requirement that the code should reflect the mathematical description of the model.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by reference to Figure 3b showing the eye tracking the object.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The threshold finding case study uses a bisection algorithm to determine the voltage firing threshold of a neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "In this case study, we want to determine the voltage firing threshold of a neuron (Figure 4), modelled with three conductances, a passive leak conductance and voltage-dependent sodium and potassium conductances (Figure 5, l. 4\u201324).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the threshold finding case study, with reference to Figures 4 and 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The neuron in the threshold finding case study is modelled with three conductances: a passive leak conductance and voltage-dependent sodium and potassium conductances.",
+    "claim_type": "EXPLICIT",
+    "source": "In this case study, we want to determine the voltage firing threshold of a neuron (Figure 4), modelled with three conductances, a passive leak conductance and voltage-dependent sodium and potassium conductances (Figure 5, l. 4\u201324).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the neuron model, with reference to specific lines in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The bisection algorithm starts from an initial estimate and with an initial step width, sets the neuron's membrane potential to the estimate, and simulates its dynamics for 20 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "To get an accurate estimate of the threshold, we use a bisection algorithm (Figure 4a): starting from an initial estimate and with an initial step width (Figure 5, l. 30\u201331), we set the neuron's membrane potential to the estimate (l. 35) and simulate its dynamics for 20 ms (l. 36).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the bisection algorithm, with reference to Figure 4a and specific lines in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "In the bisection algorithm, if the neuron spikes, the estimate is decreased; if the neuron does not spike, the estimate is increased.",
+    "claim_type": "EXPLICIT",
+    "source": "If the neuron spikes, that is if the estimate was above the neuron's threshold, we decrease our estimate (l. 38); if the neuron does not spike, we increase it (l. 37).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the bisection algorithm logic, with reference to specific lines in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "In the bisection algorithm, the step width is halved after each iteration.",
+    "claim_type": "EXPLICIT",
+    "source": "We then halve the step width (l. 39) and perform the same process again until we have performed a certain number of iterations (l. 33) and converged to a precise estimate (Figure 4b top).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the bisection algorithm, with reference to specific lines in Figure 5 and Figure 4b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Brian's store()/restore() mechanism gives a very effective way of representing common computational experimental protocols.",
+    "claim_type": "EXPLICIT",
+    "source": "This store()/restore() mechanism is a key part of Brian's design for allowing computational experiments to be easily and flexibly expressed in Python, as it gives a very effective way of representing common computational experimental protocols.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about the utility of Brian's store/restore mechanism.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The threshold finding case study performs the estimation loop in parallel for many neurons, each having a different maximal sodium conductance, to arrive at an estimate of the dependence of the voltage threshold on the sodium conductance.",
+    "claim_type": "EXPLICIT",
+    "source": "At the end of the script, by performing this estimation loop in parallel for many neurons, each having a different maximal sodium conductance, we arrive at an estimate of the dependence of the voltage threshold on the sodium conductance (Figure 4b bottom).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the parallel execution of the threshold finding algorithm, with reference to Figure 4b bottom.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The real-time audio case study records an audio signal with a microphone and feeds this signal in real-time into a neural network performing pitch detection based on the autocorrelation of the signal.",
+    "claim_type": "EXPLICIT",
+    "source": "To demonstrate this, we will consider the example presented in Figure 6. We want to record an audio signal with a microphone and feed this signal\u2014in real-time\u2014into a neural network performing a crude 'pitch detection' based on the autocorrelation of the signal (Licklider, 1962).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the real-time audio case study, with reference to Figure 6 and a citation to Licklider, 1962.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The pitch detection model transforms the continuous stimulus into a sequence of spikes by feeding the stimulus into an integrate-and-fire model with an adaptive threshold.",
+    "claim_type": "EXPLICIT",
+    "source": "This model first transforms the continuous stimulus into a sequence of spikes by feeding the stimulus into an integrate-and-fire model with an adaptive threshold (Figure 7, l. 36\u201341).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the spike generation mechanism, with reference to specific lines in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The pitch detection model detects periodicity in the spike train by feeding it into an array of coincidence detector neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "It then detects periodicity in this spike train by feeding it into an array of coincidence detector neurons (Figure 6a; Figure 7, l. 44\u201347).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the periodicity detection mechanism, with reference to Figure 6a and specific lines in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Each coincidence detector neuron receives the input spike train via two pathways with different delays.",
+    "claim_type": "EXPLICIT",
+    "source": "Each of these neurons receives the input spike train via two pathways with different delays (l. 49\u201351).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the input pathways to coincidence detector neurons, with reference to specific lines in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The arrangement of two pathways with different delays allows the network to detect periodicity in the input stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "This arrangement allows the network to detect periodicity in the input stimulus; a periodic stimulus will most strongly excite the neuron where the difference in delays matches the stimulus' period.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains how the network detects periodicity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "A periodic stimulus will most strongly excite the neuron where the difference in delays matches the stimulus' period.",
+    "claim_type": "EXPLICIT",
+    "source": "This arrangement allows the network to detect periodicity in the input stimulus; a periodic stimulus will most strongly excite the neuron where the difference in delays matches the stimulus' period.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mechanism of periodicity detection.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Depending on the periodicity present in the stimulus, different sub-populations of neurons respond.",
+    "claim_type": "EXPLICIT",
+    "source": "Depending on the periodicity present in the stimulus, for example for tones of different pitch (Figure 6b middle), different sub-populations of neurons respond (Figure 6b bottom).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by reference to Figure 6b showing different neuronal responses to different pitches.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "With version 1 of Brian, the choice was made to sacrifice computational efficiency because considerably more time was spent developing the model and writing the code than was spent on running it.",
+    "claim_type": "EXPLICIT",
+    "source": "With version 1 of Brian, we made the choice to sacrifice computational efficiency, because we reasoned that frequently in computational modelling, considerably more time was spent developing the model and writing the code than was spent on running it (often weeks versus minutes or hours; cf. De Schutter, 1992).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design decision for Brian 1, with a citation to De Schutter, 1992.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Code generation was used previously in Brian 1, but only in parts of the simulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Code generation was used previously in Brian 1 (Goodman, 2010), but only in parts of the simulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Goodman, 2010.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Code generation is now being increasingly widely used in other simulators.",
+    "claim_type": "EXPLICIT",
+    "source": "This technique is now being increasingly widely used in other simulators, see Blundell et al. (2018) for a review.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Blundell et al., 2018.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Brian generates independent blocks of code from the high level abstract description of the model and runs these blocks in sequence to carry out the simulation.",
+    "claim_type": "EXPLICIT",
+    "source": "In brief, from the high level abstract description of the model, we generate independent blocks of code (in C++ or other languages). We run these blocks in sequence to carry out the simulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Brian's code generation process.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Brian typically carries out numerical integration in one code block, checks for threshold crossings in a second block, propagates synaptic activity in a third block, and runs post-spike reset code in a fourth block.",
+    "claim_type": "EXPLICIT",
+    "source": "Typically, we first carry out numerical integration in one code block, check for threshold crossings in a second block, propagate synaptic activity in a third block, and finally run post-spike reset code in a fourth block.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the typical sequence of operations in Brian's code generation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Brian makes use of a combination of various techniques from symbolic mathematics and compilers that are available in third party Python libraries, as well as some domain-specific optimisations to further improve performance.",
+    "claim_type": "EXPLICIT",
+    "source": "To generate this code, we make use of a combination of various techniques from symbolic mathematics and compilers that are available in third party Python libraries, as well as some domain-specific optimisations to further improve performance (see Appendix 1 for more details, or Stimberg et al., 2014; Blundell et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the techniques used in Brian's code generation, with citations to Stimberg et al., 2014 and Blundell et al., 2018.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Brian can run the complete simulation in two modes: runtime mode and standalone mode.",
+    "claim_type": "EXPLICIT",
+    "source": "We can then run the complete simulation in one of two modes, as follows.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This introduces the two modes of running Brian simulations.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "In runtime mode, the overall simulation is controlled by Python code, which calls out to the compiled code objects to do the heavy lifting.",
+    "claim_type": "EXPLICIT",
+    "source": "In runtime mode, the overall simulation is controlled by Python code, which calls out to the compiled code objects to do the heavy lifting.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the runtime mode of Brian.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Runtime mode is the default in Brian because it allows for a great deal of flexibility in how the simulation is run.",
+    "claim_type": "EXPLICIT",
+    "source": "This method of running the simulation is the default, because despite some computational overhead associated with repeatedly switching from Python to another language, it allows for a great deal of flexibility in how the simulation is run: whenever Brian's model description formalism is not expressive enough for a task at hand, the researcher can interleave the execution of generated code with a hand-written function that can potentially access and modify any aspect of the model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why runtime mode is the default in Brian.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "In standalone mode, additional low-level code is generated that controls the overall simulation, meaning that during the main run of the simulation it is not necessary to switch back to Python.",
+    "claim_type": "EXPLICIT",
+    "source": "In standalone mode, additional low-level code is generated that controls the overall simulation, meaning that during the main run of the simulation it is not necessary to switch back to Python.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the standalone mode of Brian.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Standalone mode gives an improvement to performance, but at the cost of reduced flexibility since arbitrary Python code cannot be translated into low level code.",
+    "claim_type": "EXPLICIT",
+    "source": "This gives an improvement to performance, but at the cost of reduced flexibility since we cannot translate arbitrary Python code into low level code.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the trade-off between performance and flexibility in standalone mode.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The standalone mode can be used to generate code to run on a platform where Python is not available or not practical, such as a GPU.",
+    "claim_type": "EXPLICIT",
+    "source": "The standalone mode can also be used to generate code to run on a platform where Python is not available or not practical (such as a GPU; Stimberg et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Stimberg et al., 2018.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The performance that can be gained from using the standalone mode depends strongly on the details of the model.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance that can be gained from using the standalone mode also depends strongly on the details of the model; we will come back to this point in the discussion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about the performance characteristics of standalone mode.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Brian has been built with extensibility in mind.",
+    "claim_type": "EXPLICIT",
+    "source": "Taking this into account, Brian has been built with extensibility in mind.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design principle of Brian.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "It should be possible to extend Brian's functionality and still include the full description of the model in the main Python script, without requiring the user to edit the source code of the simulator itself or to add and compile separate modules.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, it should be possible to extend Brian's functionality and still include the full description of the model in the main Python script, that is without requiring the user to edit the source code of the simulator itself or to add and compile separate modules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design goal for Brian's extensibility.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The runtime mode offers researchers the possibility to combine their simulation code with arbitrary Python code.",
+    "claim_type": "EXPLICIT",
+    "source": "As discussed previously, the runtime mode offers researchers the possibility to combine their simulation code with arbitrary Python code.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of Brian's runtime mode.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Simulations in Brian can use a general extension mechanism where model code can refer to functions defined in the target language by the user.",
+    "claim_type": "EXPLICIT",
+    "source": "To this end, simulations can use a general extension mechanism: model code can refer not only to predefined mathematical functions, but also to functions defined in the target language by the user (Figure 7, l. 9\u201334).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes Brian's extension mechanism, with reference to specific lines in Figure 7.",
+    "evidence_type": [
+      "SPECULATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Brian allows the user to specify additional libraries, header files or macro definitions that will be taken into account during the compilation of the code.",
+    "claim_type": "EXPLICIT",
+    "source": "In order to establish the link, Brian allows the user to specify additional libraries, header files or macro definitions (l. 29\u201331) that will be taken into account during the compilation of the code.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes Brian's mechanism for linking to external code, with reference to specific lines in Figure 7.",
+    "evidence_type": [
+      "SPECULATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Brian 2 improves on Brian 1 both in terms of flexibility and performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Brian 2 improves on Brian 1 both in terms of flexibility (particularly the new, very general synapse model; for more details see Appendix 5) and performance, where it performs similarly to simulators written in low-level languages which do not have the same flexibility (Tikidji-Hamburyan et al., 2017; also see section Performance below).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Tikidji-Hamburyan et al., 2017.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Brian 2 performs similarly to simulators written in low-level languages which do not have the same flexibility.",
+    "claim_type": "EXPLICIT",
+    "source": "Brian 2 improves on Brian 1 both in terms of flexibility (particularly the new, very general synapse model; for more details see Appendix 5) and performance, where it performs similarly to simulators written in low-level languages which do not have the same flexibility (Tikidji-Hamburyan et al., 2017; also see section Performance below).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Tikidji-Hamburyan et al., 2017.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Flexibility is essential to be useful for fundamental research in neuroscience, where basic concepts and models are still being actively investigated and have not settled to the point where they can be standardised.",
+    "claim_type": "EXPLICIT",
+    "source": "Flexibility is essential to be useful for fundamental research in neuroscience, where basic concepts and models are still being actively investigated and have not settled to the point where they can be standardised.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about the importance of flexibility in neuroscience simulators.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Performance is increasingly important as researchers begin to model larger scale experimental data such as that provided by the Neuropixels probe.",
+    "claim_type": "EXPLICIT",
+    "source": "Performance is increasingly important, for example as researchers begin to model larger scale experimental data such as that provided by the Neuropixels probe (Jun et al., 2017), or when doing comprehensive parameter sweeps to establish robustness of models (O'Leary et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Jun et al., 2017 and O'Leary et al., 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "It is possible to write plugins for Brian to generate code for other platforms without modifying the core code.",
+    "claim_type": "EXPLICIT",
+    "source": "It is possible to write plugins for Brian to generate code for other platforms without modifying the core code, and there are several ongoing projects to do so.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Brian's extensibility for code generation targets.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Brian2GeNN uses the GPU-enhanced Neural Network simulator (GeNN) to accelerate simulations in some cases by tens to hundreds of times.",
+    "claim_type": "EXPLICIT",
+    "source": "These include Brian2GeNN (Stimberg et al., 2018) which uses the GPU-enhanced Neural Network simulator (GeNN; Yavuz et al., 2016) to accelerate simulations in some cases by tens to hundreds of times, and Brian2CUDA (https://github.com/brian-team/brian2cuda).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Stimberg et al., 2018 and Yavuz et al., 2016.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The modular structure of the code generation framework was designed to be ready for future trends in both high-performance computing and computational neuroscience research.",
+    "claim_type": "EXPLICIT",
+    "source": "The modular structure of the code generation framework was designed for this in order to be ready for future trends in both high-performance computing and computational neuroscience research.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design goal for Brian's code generation framework.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "High-performance scientific computing increasingly relies on the use of heterogeneous computing architectures such as GPUs, FPGAs, and even more specialised hardware.",
+    "claim_type": "EXPLICIT",
+    "source": "Increasingly, high-performance scientific computing relies on the use of heterogeneous computing architectures such as GPUs, FPGAs, and even more specialised hardware (Fidjeland et al., 2009; Richert et al., 2011; Brette and Goodman, 2012; Moore et al., 2012; Furber et al., 2014; Cheung et al., 2015), as well as techniques such as approximate computing (Mittal, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Spiking neural networks may increasingly be used in applications thanks to their low power consumption.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to basic research, spiking neural networks may increasingly be used in applications thanks to their low power consumption (Merolla et al., 2014), and the standalone mode of Brian is designed to facilitate the process of converting research code into production code.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Merolla et al., 2014.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The standalone mode of Brian is designed to facilitate the process of converting research code into production code.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to basic research, spiking neural networks may increasingly be used in applications thanks to their low power consumption (Merolla et al., 2014), and the standalone mode of Brian is designed to facilitate the process of converting research code into production code.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design goal for Brian's standalone mode.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "In designing Brian, a strong emphasis was put on the complete computational experiment, including specification of the stimulus, interaction with non-neuronal components, etc.",
+    "claim_type": "EXPLICIT",
+    "source": "A neural computational model is more than just its components (neurons, synapses, etc.) and network structure. In designing Brian, we put a strong emphasis on the complete computational experiment, including specification of the stimulus, interaction with non-neuronal components, etc.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design principle of Brian.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Features in Brian are as general and flexible as possible.",
+    "claim_type": "EXPLICIT",
+    "source": "Part of our approach here was to ensure that features in Brian are as general and flexible as possible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design principle of Brian.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Any way of specifying all elements of a computational experiment would be at least as complex as a fully featured programming language.",
+    "claim_type": "EXPLICIT",
+    "source": "However, ultimately we recognise that any way of specifying all elements of a computational experiment would be at least as complex as a fully featured programming language.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about the complexity of specifying computational experiments.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Brian allows users to define computational experiment aspects in Python, the same language used for defining the neural components.",
+    "claim_type": "EXPLICIT",
+    "source": "We therefore simply allow users to define these aspects in Python, the same language used for defining the neural components, as this is already highly capable and readable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Brian's approach to specifying computational experiments.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The user script in Brian should be a readable description of the complete computational experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "We made great efforts to ensure that the detailed work in designing and implementing new features should not interfere with the goal that the user script should be a readable description of the complete computational experiment, as we consider this to be an essential element of what makes a computational model valuable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design goal for Brian.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Brian's approach to defining models leads to particularly concise code.",
+    "claim_type": "EXPLICIT",
+    "source": "Brian's approach to defining models leads to particularly concise code (Tikidji-Hamburyan et al., 2017), as well as code whose syntax matches closely descriptions of models in papers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Tikidji-Hamburyan et al., 2017.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Brian's code syntax matches closely descriptions of models in papers.",
+    "claim_type": "EXPLICIT",
+    "source": "Brian's approach to defining models leads to particularly concise code (Tikidji-Hamburyan et al., 2017), as well as code whose syntax matches closely descriptions of models in papers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about Brian's code readability.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Concise code is important because it saves scientists time and is easier to verify and reproduce.",
+    "claim_type": "EXPLICIT",
+    "source": "This is important not only because it saves scientists time if they have to write less code, but also because such code is easier to verify and reproduce.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about the benefits of concise code.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "It is difficult for anyone to verify that thousands of lines of model simulation code match the description they have given of it.",
+    "claim_type": "EXPLICIT",
+    "source": "It is difficult for anyone, the authors of a model included, to verify that thousands of lines of model simulation code match the description they have given of it.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about the difficulty of verifying complex code.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Brian is an excellent tool for teaching, for example in the computational neuroscience textbook of Gerstner et al. (2013).",
+    "claim_type": "EXPLICIT",
+    "source": "An additional advantage of the clean syntax is that Brian is an excellent tool for teaching, for example in the computational neuroscience textbook of Gerstner et al. (2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Gerstner et al., 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "A major issue in computational science generally, and computational neuroscience in particular, is the reproducibility of computational models.",
+    "claim_type": "EXPLICIT",
+    "source": "Expanding on this point, a major issue in computational science generally, and computational neuroscience in particular, is the reproducibility of computational models (LeVeque et al., 2012; Eglen et al., 2017; Podlaski et al., 2017; Manninen et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "A frequent complaint of students and researchers is that when they try to implement published models using their own code, they get different results.",
+    "claim_type": "EXPLICIT",
+    "source": "A frequent complaint of students and researchers at all levels, is that when they try to implement published models using their own code, they get different results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about reproducibility problems in computational neuroscience.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "A detailed description of an attempt to replicate a published model is given in Pauli et al. (2018).",
+    "claim_type": "EXPLICIT",
+    "source": "A fascinating and detailed description of one such attempt is given in Pauli et al. (2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Pauli et al., 2018.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Reproducibility problems led to the creation of the ReScience journal, dedicated to publishing replications of previous models or describing when those replication attempts failed.",
+    "claim_type": "EXPLICIT",
+    "source": "These sorts of problems led to the creation of the ReScience journal, dedicated to publishing replications of previous models or describing when those replication attempts failed (Rougier et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Rougier et al., 2017.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Brian was designed with reproducibility issues in mind.",
+    "claim_type": "EXPLICIT",
+    "source": "A number of issues contribute to this problem, and we designed Brian with these in mind.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design consideration for Brian.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Users are required to write equations in Brian that are dimensionally consistent.",
+    "claim_type": "EXPLICIT",
+    "source": "So, for example, users are required to write equations that are dimensionally consistent, a common source of problems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of Brian designed to prevent errors.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "By requiring users to write equations explicitly rather than using pre-defined neuron types, Brian reduces the chance that the implementation expected by the user is different to the one provided by the simulator.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, by requiring users to write equations explicitly rather than using pre-defined neuron types such as 'integrate-and-fire' and 'Hodgkin-Huxley', as in other simulators, we reduce the chance that the implementation expected by the user is different to the one provided by the simulator.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about how Brian's design reduces implementation errors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "By making user-written code simpler and more readable, Brian increases the chance that the implementation faithfully represents the description of a model.",
+    "claim_type": "EXPLICIT",
+    "source": "Perhaps more importantly, by making user-written code simpler and more readable, we increase the chance that the implementation faithfully represents the description of a model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about how Brian's design improves model fidelity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Allowing for more flexibility and targeting the complete computational experiment increases the chances that the entire simulation script can be compactly represented in a single file or programming language.",
+    "claim_type": "EXPLICIT",
+    "source": "Allowing for more flexibility and targeting the complete computational experiment increases the chances that the entire simulation script can be compactly represented in a single file or programming language, further reducing the chances of such errors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about how Brian's design reduces errors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "There are two main differences of approach between Brian and other simulators: Brian requires model definitions to be explicit, and Brian considers the complete computational experiment to be fundamental.",
+    "claim_type": "EXPLICIT",
+    "source": "There are two main differences of approach between Brian and other simulators. Firstly, we require model definitions to be explicit. Users are required to give the full set of equations and parameters that define the model, rather than using 'standard' model names and default parameters (cf. Brette, 2012). This approach requires a slightly higher initial investment of effort from the user, but ensures that users know precisely what their model is doing and reduces the risk of a difference between the implementation of the model and the description of it in a paper (see discussion above). One limitation of this approach is that it makes it more difficult to design tools to programmatically inspect a model, for example to identify and shut down all inhibitory currents (although note that this issue remains for languages such as NeuroML and NineML that are primarily based on standard models as they include the ability to define arbitrary equations). The second main difference is that we consider the complete computational experiment to be fundamental, and so everything is tightly integrated to the extent that an entire model can be specified in a single, readable file, including equations, protocols, data analysis, etc.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the main differences between Brian and other simulators, with a citation to Brette, 2012.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "In Neuron and NEST, model definitions are separate from the computational experiment script, and written in an entirely different language.",
+    "claim_type": "EXPLICIT",
+    "source": "In Neuron and NEST, model definitions are separate from the computational experiment script, and indeed written in an entirely different language (see below).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a difference between Brian and other simulators.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "In NeuroML and NineML, there is no way of specifying arbitrary computational experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "In NeuroML and NineML, there is no way of specifying arbitrary computational experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of NeuroML and NineML.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Clearly separating model definitions may reduce the effort in re-using models or programmatically comparing them.",
+    "claim_type": "EXPLICIT",
+    "source": "One counter-argument to this approach is that clearly separating model definitions may reduce the effort in re-using models or programmatically comparing them (as in Podlaski et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This presents a counter-argument to Brian's approach, with a citation to Podlaski et al., 2017.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "The simulator must support arbitrary user-specified equations to make model definitions explicit.",
+    "claim_type": "EXPLICIT",
+    "source": "A consequence of the requirement to make model definitions explicit, and an important feature for doing novel research, is that the simulator must support arbitrary user-specified equations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the requirements for explicit model definitions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Arbitrary user-specified equations are available in Neuron via the NMODL description format.",
+    "claim_type": "EXPLICIT",
+    "source": "This is available in Neuron via the NMODL description format (Hines and Carnevale, 2000), and in a limited form in NEST using NESTML (Plotnikov et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Hines and Carnevale, 2000 and Plotnikov et al., 2016.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "NeuroML and NineML now both include the option for specifying arbitrary equations.",
+    "claim_type": "EXPLICIT",
+    "source": "NeuroML and NineML now both include the option for specifying arbitrary equations, although the level of simulator support for these aspects of the standards is unclear.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the capabilities of NeuroML and NineML.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "Brian was the first simulator to make arbitrary model equations a fundamental, core concept that is applied universally.",
+    "claim_type": "EXPLICIT",
+    "source": "While some level of support for arbitrary model equations is now fairly widespread in simulators, Brian was the first to make this a fundamental, core concept that is applied universally.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about Brian's historical priority in supporting arbitrary equations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Some simulators that have followed Brian's approach include DynaSim and ANNarchy.",
+    "claim_type": "EXPLICIT",
+    "source": "Some simulators that have since followed this approach include DynaSim (Sherfey et al., 2018), which is based on MATLAB, and ANNarchy (Vitay et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Sherfey et al., 2018 and Vitay et al., 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Other new simulators have taken an alternative approach, such as Xolotl which is based on building hierarchical representations of neurons from a library of basic components.",
+    "claim_type": "EXPLICIT",
+    "source": "Other new simulators have taken an alternative approach, such as Xolotl (Gorur-Shandilya et al., 2018) which is based on building hierarchical representations of neurons from a library of basic components.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Gorur-Shandilya et al., 2018.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "The specification of additional defining network features, such as synaptic connectivity patterns, in an equation-oriented way is missing from other simulators.",
+    "claim_type": "EXPLICIT",
+    "source": "One aspect of the equation-based approach that is missing from other simulators is the specification of additional defining network features, such as synaptic connectivity patterns, in an equally flexible, equation-oriented way.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about a unique feature of Brian.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "Neuron is focused on single neuron modelling rather than networks, and only supports directly setting the connectivity synapse-by-synapse.",
+    "claim_type": "EXPLICIT",
+    "source": "Neuron is focused on single neuron modelling rather than networks, and only supports directly setting the connectivity synapse-by-synapse.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of NEURON.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "NEST, PyNN, NeuroML, and NineML support directly setting connectivity synapse-by-synapse, and also include some predefined general connectivity patterns such as one-to-one and all-to-all.",
+    "claim_type": "EXPLICIT",
+    "source": "NEST, PyNN (Davison et al., 2008), NeuroML, and NineML support this too, and also include some predefined general connectivity patterns such as one-to-one and all-to-all.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Davison et al., 2008.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "NEST includes a system for specifying connectivity via a 'connection set algebra' allowing for combinations of a few core types of connectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "NEST further includes a system for specifying connectivity via a 'connection set algebra' (Djurfeldt, 2012) allowing for combinations of a few core types of connectivity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Djurfeldt, 2012.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "No other simulator has yet followed Brian in allowing the user to specify connectivity patterns via equations.",
+    "claim_type": "EXPLICIT",
+    "source": "However, none have yet followed Brian in allowing the user to specify connectivity patterns via equations, as is commonly done in research papers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about a unique feature of Brian.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "A simulator that makes use of a fixed set of models can provide hand-optimised implementations of them, whereas a fully flexible simulator must rely on automated techniques.",
+    "claim_type": "EXPLICIT",
+    "source": "Running compiled code for arbitrary equations means that code generation must be used. This requirement leads to a problem: a simulator that makes use of a fixed set of models can provide hand-optimised implementations of them, whereas a fully flexible simulator must rely on automated techniques.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about the trade-off between flexibility and optimization.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "An advantage of automated techniques is that they can generate optimisations for specialisations of models.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, an advantage of automated techniques is that they can generate optimisations for specialisations of models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an argument about the benefits of automated code generation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "Using the CUBA benchmark in which all neurons have identical time constants, Brian 2 is dramatically faster than Brian 1, NEURON and NEST.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, using the CUBA benchmark (Vogels and Abbott, 2005; Brette et al., 2007) in which all neurons have identical time constants, Brian 2 is dramatically faster than Brian 1, NEURON and NEST (Figure 8, left).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by citations to Vogels and Abbott, 2005 and Brette et al., 2007, and by data shown in Figure 8.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "Brian 2 is dramatically faster on the CUBA benchmark because it can generate a specialised optimisation of the code since the model definition states that time constants are the same.",
+    "claim_type": "EXPLICIT",
+    "source": "This happens because Brian 2 can generate a specialised optimisation of the code since the model definition states that time constants are the same.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why Brian 2 is faster on the homogeneous CUBA benchmark.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "If the CUBA benchmark is modified to feature heterogeneous time constants, then Brian 2 has to do much more work since it can no longer use optimisations, while the run times for NEST and NEURON do not change.",
+    "claim_type": "EXPLICIT",
+    "source": "If instead we modify the benchmark to feature heterogeneous time constants (Figure 8, right), then Brian 2 has to do much more work since it can no longer use these optimisations, while the run times for NEST and NEURON do not change.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 8.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "The benefits of parallelisation via multi-threading depend heavily on the model being simulated.",
+    "claim_type": "EXPLICIT",
+    "source": "We can make two additional observations based on this benchmark. Firstly, the benefits of parallelisation via multi-threading depend heavily on the model being simulated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation based on the benchmark results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "For a large homogeneous population, the single threaded and multi-threaded standalone runs of Brian 2 take approximately the same time, and the single threaded run is actually faster at smaller network sizes.",
+    "claim_type": "EXPLICIT",
+    "source": "For a large homogeneous population, the single threaded and multi-threaded standalone runs of Brian 2 take approximately the same time, and the single threaded run is actually faster at smaller network sizes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation based on the benchmark results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "For the heterogeneous population, multi-threaded Brian 2 is always faster at all network sizes.",
+    "claim_type": "EXPLICIT",
+    "source": "For the heterogeneous population, the opposite result holds: multi-threaded is always faster at all network sizes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation based on the benchmark results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "The advantage of running a Brian 2 simulation in standalone mode is most significant for smaller networks, at least for the single threaded case.",
+    "claim_type": "EXPLICIT",
+    "source": "The second observation is that the advantage of running a Brian 2 simulation in standalone mode is most significant for smaller networks, at least for the single threaded case (for the moment, multi-threaded code is only available for standalone mode).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation based on the benchmark results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "Despite the fact that Brian 2 is the fastest simulator at large network sizes for the CUBA benchmark, this does not mean that Brian 2 is faster than other simulators such as NEURON or NEST in general.",
+    "claim_type": "EXPLICIT",
+    "source": "It should be noted, however, that despite the fact that Brian 2 is the fastest simulator at large network sizes for this benchmark, this does not mean that Brian 2 is faster than other simulators such as NEURON or NEST in general.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a caveat about the generalizability of the benchmark results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "The NEURON simulator can be used to simulate point neuron models, but with its strong focus on the simulation of biologically detailed, multi-compartment neuron models, it is not well adapted to this task.",
+    "claim_type": "EXPLICIT",
+    "source": "The NEURON simulator can be used to simulate the point neuron models used in this benchmark, but with its strong focus on the simulation of biologically detailed, multi-compartment neuron models, it is not well adapted to this task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explanation for NEURON's performance on the benchmark.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "NEST has been optimised to simulate very large networks, with many synapses impinging on each neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "NEST, on the other hand, has been optimised to simulate very large networks, with many synapses impinging on each neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes NEST's optimization focus.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Brian's performance on the CUBA benchmark strongly benefits from its focus on running simulations on individual machines where all simulation elements are kept in a single, shared memory space.",
+    "claim_type": "EXPLICIT",
+    "source": "Most importantly, Brian's performance here strongly benefits from its focus on running simulations on individual machines where all simulation elements are kept in a single, shared memory space.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains Brian's performance advantage on the benchmark.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "NEST and NEURON use more sophisticated communication between model elements which may cost performance in benchmarks like the CUBA benchmark, but can scale up to bigger simulations spread out over multiple machines.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, NEST and NEURON use more sophisticated communication between model elements which may cost performance in benchmarks like the one shown here, but can scale up to bigger simulations spread out over multiple machines.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the performance trade-offs for NEST and NEURON.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "A fairly recent and more detailed comparison of simulators is provided in Tikidji-Hamburyan et al. (2017), although they did not test the standalone mode of Brian 2.",
+    "claim_type": "EXPLICIT",
+    "source": "For a fairly recent and more detailed comparison of simulators, see Tikidji-Hamburyan et al. (2017), although note that they did not test the standalone mode of Brian 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Tikidji-Hamburyan et al., 2017.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The main limitation of Brian compared to other simulators is the lack of support for running large networks over multiple machines, and scaling up to specialised, high-performance clusters as well as supercomputers.",
+    "claim_type": "EXPLICIT",
+    "source": "The main limitation of Brian compared to other simulators is the lack of support for running large networks over multiple machines, and scaling up to specialised, high-performance clusters as well as supercomputers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of Brian.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "The majority of neuroscientists do not have direct access to high-performance clusters or supercomputers.",
+    "claim_type": "EXPLICIT",
+    "source": "While this puts a limit on the maximum feasible size of simulations, the majority of neuroscientists do not have direct access to such equipment, and few computational neuroscience studies require such large scale simulations (tens of millions of neurons).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about the typical resources available to neuroscientists.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "Few computational neuroscience studies require large scale simulations of tens of millions of neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "While this puts a limit on the maximum feasible size of simulations, the majority of neuroscientists do not have direct access to such equipment, and few computational neuroscience studies require such large scale simulations (tens of millions of neurons).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about the typical scale of computational neuroscience studies.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "More common than large-scale simulations is to run smaller networks but multiple times over a large range of different parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "More common is to run smaller networks but multiple times over a large range of different parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about common computational neuroscience practices.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "Running smaller networks multiple times over a large range of parameters can be easily and straightforwardly carried out with Brian at any scale, from individual machines to cloud computing platforms or non-specialised clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "This 'embarrassingly parallel' case can be easily and straightforwardly carried out with Brian at any scale, from individual machines to cloud computing platforms or the non-specialised clusters routinely available as part of university computing services.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Brian's capabilities for parameter exploration.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The manuscript has focused exclusively on single-compartment point neuron models.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, let us note that this manuscript has focused exclusively on single-compartment point neuron models, where an entire neuron is represented without any spatial properties or compartmentalisation into dendrites, soma, and axon.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the scope of the manuscript.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "Single-compartment point neuron models have been extensively used for the study of network properties, but are not sufficiently detailed for studying questions such as dendritic integration.",
+    "claim_type": "EXPLICIT",
+    "source": "Such models have been extensively used for the study of network properties, but are not sufficiently detailed for studying other questions, for example dendritic integration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assertion about the limitations of point neuron models.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "Multi-compartment models are the primary focus of simulators such as NEURON and GENESIS, but only have very limited support in simulators such as NEST.",
+    "claim_type": "EXPLICIT",
+    "source": "For such studies, researchers typically investigate multi-compartment models, that is neurons modelled as a set of interconnected compartments. Currents across the membrane in each compartment are modelled in the same way as for point neurons, but there are additional axial currents with neighbouring compartments. Such models are the primary focus of simulators such as NEURON and GENESIS, but only have very limited support in simulators such as NEST.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the focus of different simulators on multi-compartment models.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "Brian is used mostly for point neurons, but does offer support for multi-compartmental models, using the same equation-based approach.",
+    "claim_type": "EXPLICIT",
+    "source": "While Brian is used mostly for point neurons, it does offer support for multi-compartmental models, using the same equation-based approach (see Appendix 4\u2014figure 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes Brian's support for multi-compartmental models.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "Brian's support for multi-compartmental models is not yet as mature as those of specialised simulators such as NEURON and GENESIS.",
+    "claim_type": "EXPLICIT",
+    "source": "This feature is not yet as mature as those of specialised simulators such as NEURON and GENESIS, and is an important area for future development in Brian.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of Brian's multi-compartmental model support.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "Brian is released under the free and open CeCILL 2 license.",
+    "claim_type": "EXPLICIT",
+    "source": "Brian is released under the free and open CeCILL 2 license.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about Brian's licensing.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "Development of Brian takes place in a public code repository at https://github.com/brian-team/brian2.",
+    "claim_type": "EXPLICIT",
+    "source": "Development takes place in a public code repository at https://github.com/brian-team/brian2 (Brian contributors, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about Brian's development, with a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "All examples in this article have been simulated with Brian 2 version 2.2.2.1.",
+    "claim_type": "EXPLICIT",
+    "source": "All examples in this article have been simulated with Brian 2 version 2.2.2.1 (Stimberg et al., 2019b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the version used, with a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "Brian has a permanent core team of three developers (the authors of this paper), and regularly receives substantial contributions from a number of students, postdocs and users.",
+    "claim_type": "EXPLICIT",
+    "source": "Brian has a permanent core team of three developers (the authors of this paper), and regularly receives substantial contributions from a number of students, postdocs and users (see Acknowledgements).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about Brian's development team.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "Brian's code is continuously and automatically checked against a comprehensive test suite run on all platforms, with almost complete coverage.",
+    "claim_type": "EXPLICIT",
+    "source": "Code is continuously and automatically checked against a comprehensive test suite run on all platforms, with almost complete coverage.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about Brian's testing practices.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "Extensive documentation for Brian, including installation instructions, is hosted at http://brian2.readthedocs.org.",
+    "claim_type": "EXPLICIT",
+    "source": "Extensive documentation, including installation instructions, is hosted at http://brian2.readthedocs.org.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about Brian's documentation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "Brian is available for Python 2 and 3, and for the operating systems Windows, OS X and Linux.",
+    "claim_type": "EXPLICIT",
+    "source": "Brian is available for Python 2 and 3, and for the operating systems Windows, OS X and Linux; our download statistics show that all these versions are in active use.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about Brian's availability.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  }
+]

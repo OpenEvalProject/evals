@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C22",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C43"
+    ],
+    "result": "Drosophila rectal papillae undergo developmentally programmed cytoplasm sharing without membrane breaching. During a 6-hour window (68-74 HPPF), 100 individual papillar cells assemble into a multinucleate cytoplasm that allows passage of proteins up to at least 62 kDa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The timing of sharing onset is well-documented by quantitative dBrainbow measurements (C37, Figure 1G). Protein movement is demonstrated by photoactivation experiments with both GFPPA and Gapdh2-GFPPA (C6, C40, C41). The absence of membrane breaches is supported by extensive electron microscopy (C4, C25, C88). These converging lines of evidence strongly support this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C23",
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "Papillar cytoplasm sharing does not employ canonical mechanisms such as incomplete cytokinesis, myoblast fusion regulators, or actin-based membrane breach regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal separation from mitoses (C46, Figure 1E), lack of requirement for Notch signaling (C51), negative results from myoblast fusion RNAi screens (C53, Figure 2A), and lack of effect from dominant-negative Rho GTPases (C54) collectively provide strong evidence against canonical fusion mechanisms. This is a key negative result that distinguishes this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C27",
+      "C28",
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C106"
+    ],
+    "result": "Gap junction proteins, particularly innexins (ogre, Inx2, Inx3), are required for papillar cytoplasm sharing. Gap junctions form at the apical membrane coincident with sharing onset, and their formation requires Dynamin/Shibire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this: shi mutants lack gap junctions (C90, Figure 3N-P), Inx3 localizes apically only after sharing (C95), innexin knockdowns disrupt sharing (C97, C98, C99, Figure 4F), and RNA-seq identifies the relevant innexins (C92). The temporal correlation and genetic requirements are well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C26",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C72",
+      "C74",
+      "C125",
+      "C127"
+    ],
+    "result": "Membrane remodeling GTPases, specifically Dynamin/Shibire, Rab5, and Rab11, are required for cytoplasm sharing and position gap junction proteins. These factors act during developmental membrane remodeling rather than as ongoing transport mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNAi screens identify shi, Rab5, and Rab11 as required (C63-C66, Figure 2), with multiple independent RNAi lines showing consistent defects (C67, C68). Shi is required for gap junction formation (C125, Figure 3N-P) and basal endosome repositioning (C74). The developmental timing is supported by the observation that late knockdown doesn't block sharing (C71, C127).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C108"
+    ],
+    "result": "Cytoplasm sharing involves extensive apical and intracellular membrane remodeling, including formation of microvilli-like structures, compression of apical junctions, and pan-cellular endomembrane stacks, but no clearly identifiable plasma membrane breaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Extensive electron microscopy documents dramatic membrane changes during sharing onset (C78-C80, Figure 3F-G''). The requirement for membrane remodeling factors is shown by altered membrane architecture in shi and Rab5 RNAi (C83-C85, Figure 3H-M). The absence of clear membrane breaches despite extensive ultrastructural analysis (C88) is a critical observation that distinguishes this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C135",
+      "C141"
+    ],
+    "result": "Cytoplasm sharing is physiologically important for papillar function. Animals defective in sharing (shiDN and ogreDN) are extremely sensitive to high-salt diet challenge, dying within 1 day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The high-salt diet assay provides functional evidence (C105, Figure 4H). The use of a papillae-specific driver (60H12-Gal4) that doesn't cause lethality on control diet (C104) strengthens the interpretation that the salt sensitivity is specifically due to loss of papillar sharing function. This demonstrates physiological relevance of the sharing mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C115",
+      "C116",
+      "C119",
+      "C134"
+    ],
+    "result": "Apical membrane remodeling converts a multicellular epithelium into a giant multinucleate cytoplasm while maintaining cell-cell junctions and epithelial polarity. This represents a distinctive mechanism of cytoplasm sharing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The retention of septate junctions (C94, C116) and polarized epithelial structure (C115) while achieving cytoplasm sharing distinguishes this from other known mechanisms. The extensive membrane remodeling data (C11, C24) and absence of membrane breaches (C25, C88) support this as a novel mechanism. This is the central conceptual advance of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "Endocycles are required for cytoplasm sharing, as fzr knockdown significantly disrupts sharing. This is hypothesized to be due to a requirement for endocycle-dependent differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While fzr knockdown clearly disrupts sharing (C49, Figure 1\u2014figure supplement 1), the interpretation that this is due to a differentiation requirement (C50) is speculative. The temporal separation between endocycles and sharing onset (C46) suggests an indirect effect, but the mechanism linking endocycles to sharing competence is not established. Additional experiments would be needed to test the differentiation hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Multiple membrane trafficking components are required for sharing, including vacuolar H+ ATPase subunits, ESCRT-III complex, exocyst components, and singles bar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNAi screens identify these components as required (C55-C62, Figure 2A-B, Tables 1-2). However, the specific roles of these factors in the sharing mechanism are not elucidated. These are supporting findings that identify additional regulators but don't provide mechanistic insight comparable to the shi/Rab/innexin results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Membrane trafficking factors undergo dynamic relocalization during sharing onset. Endosomes become basally polarized (requiring Shi), and Shi changes from apical to uniform distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Live imaging and immunofluorescence document these localization changes (C73, C76, Figure 3A-E). The Rab5-positive identity of relocalized endosomes is shown (C75). These observations support the dynamic nature of membrane remodeling during sharing, though the functional significance of these specific relocalization events is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C71"
+    ],
+    "result": "shi, Rab5, and Rab11 RNAi papillae appear morphologically normal with only minor cell number decreases, and late knockdown after sharing onset does not block sharing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell counts show minimal effects (C69, Figure 2\u2014figure supplement 1C), and late temperature shifts don't prevent sharing (C71, Figure 2\u2014figure supplement 1D-F). These controls demonstrate that the sharing defects are specific and not due to general developmental disruption, supporting the interpretation that these factors act specifically during sharing establishment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "shi RNAi animals exhibit numerous trapped vesicles, consistent with Dynamin's known role in membrane vesicle severing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Electron microscopy shows trapped vesicles in shi RNAi (C86, Figure 3L inset), consistent with established Dynamin function. This provides mechanistic insight into how shi knockdown disrupts membrane remodeling, though it's a supporting observation rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The combination of innexins expressed in papillae (ogre, Inx2, Inx3) is not unique to rectal papillae, as non-sharing brain and optic lobe also express high levels of all three.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data from multiple tissues support this (C93, Figure 4\u2014figure supplement 1A). This observation suggests that innexin expression alone is insufficient for sharing and that additional factors (likely the membrane remodeling machinery) are required. This is an important control that strengthens the mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The 60H12-Gal4 driver provides rectum-specific expression during pupation and adulthood, and 60H12-Gal4 > shiDN animals display similar sharing defects as byn-Gal4 > shiDN animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Expression pattern is documented (C102, Figure 4\u2014figure supplement 1D-D'), and sharing defects are comparable (C103, Figure 4\u2014figure supplement 1E-E''). This is a methodological advance that enables the physiological experiments, demonstrating tissue-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "While gap junctions typically transfer molecules <1 kDa, some vertebrate gap junctions can pass proteins up to 18 kDa. Gap junctions have been implicated in other fusion contexts, and Rab11/Dynamin have roles in gap junction trafficking, but not previously in establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are accurate citations to prior literature (C120-C124) that provide context for the findings. The novelty statement (C124) is appropriate. This contextualizes the gap junction findings but doesn't constitute a result from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The same membrane remodeling factors that regulate cytoplasm sharing are required for formation of basolateral membrane stacks. This is the first study to reveal factors involved in basolateral membrane infolding biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Electron microscopy shows membrane stacks form during sharing (C80) and are reduced in shi/Rab5 RNAi (C85, Figure 3K-M). The inference that the same factors regulate both processes (C131) is reasonable given the coincident timing and shared genetic requirements. The novelty claim (C132) appears justified, though this is a secondary observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Adult Drosophila contain four papillae, each with 100 nuclei of 8-16C ploidy, organized as polarized epithelial cones that function in reabsorption from gut lumen to hemolymph.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts about papillar anatomy and function, supported by prior literature (C32, C34) and schematics (C33, Figure 1C-D). This is background information rather than a new result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Secondary cells at the papillar base do not share protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Photoactivation experiments show protein movement in principal but not secondary cells (C39, Figure 1I). This defines the spatial extent of sharing and is a useful characterization, though not a major mechanistic finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Papillar cells likely share endogenously expressed proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a reasonable inference from the Gapdh2-GFPPA movement (C42), as Gapdh2 is an endogenous protein. However, direct demonstration of endogenous protein sharing would require additional experiments. The inference is well-supported but remains indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Adult papillae exhibit large extracellular spaces between nuclei that eliminate the possibility of cytoplasm sharing throughout much of the lateral membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Electron microscopy and prior literature support this (C89, Figure 3\u2014figure supplement 2A). This anatomical observation constrains where sharing can occur and supports the focus on apical junctions, but is a descriptive finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "NeurexinIV (septate junction marker) localizes similarly pre and post-sharing onset, indicating persistent septate junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence shows consistent NrxIV localization (C94, Figure 4D-D'). This is an important control demonstrating that junctions are maintained during sharing, supporting the model of sharing within an intact epithelium.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "A specialized function of gap junction proteins facilitates cytoplasm sharing between neighboring cells in an otherwise intact epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the proposed model (C119, Figure 4I) based on the data, but the mechanism remains speculative. The data show gap junctions are required and form at the right time/place, but don't directly demonstrate that proteins pass through gap junctions. Alternative mechanisms (e.g., gap junctions signaling to recruit a fusogen) aren't ruled out. The model is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Papillar cytoplasm sharing is developmentally regulated over a 6-hour window and is triggered by permanent structural rearrangement rather than active transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tight temporal window is well-documented (C126, Figure 1G). The inference about permanent vs. active mechanism (C127) is supported by the late-shift experiments (C71). This characterizes the nature of the sharing mechanism and distinguishes it from active transport processes.",
+    "result_type": "MINOR"
+  }
+]

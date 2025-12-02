@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C25",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Four distinct crystal structures of SETD8 were solved using covalent inhibitors (Inh1 and Inh2) and native ligand depletion (BC-SAM and APO), revealing conformational plasticity in the SET-I and post-SET motifs. These structures can be classified into three distinct SET-I configurations (I1-3) and four distinct post-SET configurations (P1-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C45 provide comprehensive crystallographic evidence with detailed structural comparisons, quantitative measurements (e.g., 140\u00b0 and 60\u00b0 rotations), and multiple supporting figures. The data quality is documented in Table 1 with appropriate statistics. The structural classifications are well-supported by the crystallographic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Structural chimeras were constructed and used with crystallographic structures to seed 5 milliseconds of MD simulations for apo-SETD8. Machine learning-based MSM analysis identified 24 kinetically metastable macrostates from 100 microstates, spanning up to 10.5 \u00c5 C\u03b1 RMSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 describe a rigorous computational workflow with extensive cross-validation and hyperparameter optimization. The simulation scale (5 ms aggregate time, 10 million snapshots) is well-documented, and the machine learning approach for MSM construction is appropriately referenced and detailed in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "MD simulations of SAM-bound SETD8 (1 ms aggregate data) revealed 10 kinetically metastable macrostates from 67 microstates. SAM binding restricts conformational accessibility, with a large decrease in slow processes compared to apo-SETD8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 provide quantitative evidence for SAM-induced conformational restriction (14 vs 4 slow processes). The use of consistent degrees of freedom for direct comparison between apo and SAM-bound states is methodologically sound. The interpretation is supported by prior structural knowledge (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Stopped-flow kinetics experiments revealed biphasic SAM binding kinetics with >80% change in the fast phase. The k-1/k1 ratio of 309\u00b16 \u00b5M corresponds to Kd1, consistent with ITC measurements (251\u00b116 \u00b5M). The fluorescence changes reflect Trp390 environmental changes predicted by MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 demonstrate strong integration of computational predictions with experimental validation. The stopped-flow data are analyzed with multiple approaches (global fitting and conventional double exponential), and key parameters are independently validated by ITC and dilution experiments. The agreement between methods strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Rationally designed SETD8 variants (K382P, I293G, E292G) based on conformational landscape analysis showed two-fold decreased Kd,SAM, primarily through increased k1 rates, validating computational predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 demonstrate successful structure-based design validated by experimental data. The mutations were rationally designed based on structural analysis (C70-C71), and the experimental results (C72-C73) confirm the predictions. The mechanistic insight (increased k1 with unchanged k-1) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Systematic analysis revealed that simulations from single crystal structures provide only 28-61% microstate coverage. At least two structures (BC-SAM with BC-Inh1 or BC-Inh2) are required for >90% coverage. The conformational landscape can be revealed with two seed structures or 10% of the current simulation time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 provide comprehensive analysis of sampling efficiency with quantitative metrics. The systematic evaluation of different seed structure combinations and simulation times is well-documented in supplementary materials. The finding that structural chimeras are redundant (C81) demonstrates thorough validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The apo-SETD8 conformational landscape has a dumbbell-like topology with two lobes connected by hub-like macrostate A11. SAM-bound SETD8 shows similar topology but significantly reduced complexity (10 vs 24 macrostates).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 describe the network topology with detailed structural and kinetic characterization. The hub-like nature of A11 is supported by its composition of two structurally distinct microstates (C83-C84) and its role in connecting the two lobes (C85). The comparison with SAM-bound landscape is quantitatively supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Analysis of 20 cancer-associated SETD8 mutations revealed that 8 display neo-conformations not observed in wild-type simulations, all showing SET-I motif reorganization. Mutations A296T and H340D showed loss of methyltransferase activity. The conformational landscape approach predicted activity with 70% accuracy (14/20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C99 provide interesting insights into mutation effects, but the simulation time for mutants (40\u00d71 \u00b5s each) is modest compared to wild-type (5 ms). The 70% prediction accuracy (C98) is moderate, and the authors acknowledge that some mutants (R333L, L334P) require more extensive sampling. The mechanistic interpretation (C97) is reasonable but would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Integration of X-ray structures with 6 milliseconds of MD simulations and machine learning-based MSM construction reveals how slow conformational motions and states are relevant to SETD8 catalysis, providing molecular insight into enzymatic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C26-C28 summarize the overall approach and findings. The integration of multiple techniques is well-executed, and the experimental validation (stopped-flow, ITC, mutant characterization) corroborates the computational models. The claim about relevance to catalysis is supported by the functional characterization of designed variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Conformational landscape models were experimentally explored using stopped-flow kinetics and ITC, characterizing rationally-designed variants with increased catalytic efficiency and resolving multiple timescales of conformational transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by the detailed experimental data in C60-C73. The integration of multiple experimental techniques (stopped-flow, ITC, activity assays) provides comprehensive validation of the computational models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Cancer-associated SETD8 mutants alter catalysis allosterically through reshaping the conformational landscape rather than directly affecting the catalytic site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 presents an important mechanistic insight, but the evidence is primarily based on modest simulation time for mutants and moderate prediction accuracy. While the allosteric mechanism is plausible and supported by the observation that mutations are remote from active sites, more extensive sampling and additional experimental validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "This work represents the first definitive characterization of protein methyltransferase conformational dynamics with atomic detail. SETD8 adopts 24 and 10 metastable macrostates in apo and SAM-bound states, respectively. The SET-I motif dynamics are functionally essential for SAM binding and catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 summarize key findings and their significance. The novelty claim (C100) appears reasonable given the comprehensive nature of the study. The functional importance of SET-I dynamics (C106) is supported by the designed variants and comparison with other PKMTs (C107-C109).",
+    "result_type": "MAJOR"
+  }
+]

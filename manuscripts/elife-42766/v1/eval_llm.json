@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "HCN channels bidirectionally control action potential conduction velocity in both myelinated and unmyelinated central axons. ZD7288 (30 \u00b5M) decreased conduction velocity by 4-9% in mossy fibers, parallel fibers, and optic nerves, while 8-Br-cAMP (500 \u00b5M) increased velocity by 4-6% in the same fiber types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C5-C7 provide consistent experimental evidence across three different axon types showing bidirectional modulation of conduction velocity by HCN channel blocker and cAMP analog. The data include appropriate sample sizes (n=4-17), statistical testing (referenced in Figure 1), and control for potential off-target effects of ZD7288 on Na+ channels (C4). The conclusion (C8) is well-supported by converging evidence from multiple preparations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "ZD7288 at 30 \u00b5M does not affect voltage-dependent Na+ currents in cerebellar mossy fiber boutons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by direct recordings from 53 cMFBs showing no change in Na+ current amplitude or kinetics after ZD7288 application (Figure 1\u2014figure supplement 1). This control experiment is critical for ruling out off-target effects that could confound interpretation of conduction velocity changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Physiological neuromodulators bidirectionally modulate conduction velocity in cerebellar parallel fibers. Norepinephrine (200 \u00b5M) increased velocity by 1.9\u00b10.8%, while serotonin, dopamine, and adenosine (all 200 \u00b5M) decreased velocity by 3.5-7.2%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C12 provide experimental data on neuromodulator effects with appropriate sample sizes (n=5-13). However, the authors acknowledge that high concentrations were used and off-target effects cannot be excluded (C104). The mechanistic link to cAMP-HCN pathway is inferred from receptor pharmacology rather than directly demonstrated. Statistical significance is referenced but specific p-values are not provided in the text for all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "The effects of cAMP and neuromodulators on conduction velocity are mainly mediated by HCN channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by experiments (Figure 2F-G) showing that when HCN channels are blocked with ZD7288, neuromodulators no longer affect conduction velocity. The control experiment with ZD7288 alone shows similar decreases to those with ZD7288 plus neuromodulators, indicating HCN channels are the primary mediator. However, the authors appropriately acknowledge that other mechanisms could contribute (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Cerebellar mossy fiber boutons exhibit a substantial voltage sag (sag ratio 0.497\u00b10.030 at ~-150 mV, n=12) in response to hyperpolarizing current injections, indicating presence of Ih.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by current-clamp recordings from cMFBs (Figure 3B-C). The voltage sag is a well-established hallmark of HCN channel activity, and the quantification provides appropriate sample size and measurement precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "HCN channels do not profoundly alter active membrane properties of cerebellar mossy fiber boutons at low firing frequencies (1 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by measurements showing no significant effect of ZD7288 on action potential amplitude and half-duration at 1 Hz (Figure 4B-C). This establishes that HCN channels primarily affect passive rather than active properties at low frequencies, setting up the contrast with high-frequency effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "HCN channels ensure reliable high-frequency firing in cerebellar mossy fibers. Blocking HCN channels reduced the average failure-free frequency from 854\u00b160 Hz to 426\u00b163 Hz (n=20 and 10, p=0.0002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are strongly supported by experimental data (Figure 4D-E) showing significant reduction in maximal failure-free firing frequency with ZD7288. The effect is statistically significant with appropriate sample sizes. Additional data on action potential broadening and amplitude reduction during trains provide mechanistic insight. This is a key functional consequence of HCN channel activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "HCN channels determine passive membrane properties of cerebellar mossy fiber boutons in a cAMP-dependent manner. ZD7288 hyperpolarized resting potential by 5.4 mV and doubled input resistance and membrane time constant. Adding cAMP produced opposite, concentration-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are well-supported by systematic measurements (Figure 5) with large sample sizes (n=35-94 for ZD7288 groups, varying n for cAMP concentrations). The bidirectional effects of HCN blockade versus cAMP application provide strong evidence for cAMP-dependent modulation. Statistical testing is referenced (PANOVA and PKruskal-Wallis <10^-10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "HCN2 is the dominant subunit in cerebellar mossy fibers, uniformly distributed along the plasma membrane at a density of 22.7\u00b12.4 particles/\u00b5m\u00b2 (n=6 cMFBs). HCN1 showed only background immunoreactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 are supported by immunogold electron microscopy (Figure 6) with quantitative analysis. The identification of HCN2 as the dominant subunit is consistent with the observed strong cAMP-dependence. The uniform distribution without spatial clustering near synapses is clearly documented. Sample size (n=6 cMFBs from 2 mice) is modest but appropriate for EM studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Ih in cerebellar mossy fiber boutons has a V\u00bd of -103.3\u00b10.8 mV (n=36), with approximately 7% of HCN2-mediated current active at rest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by voltage-clamp recordings (Figure 7A-B) with large sample size (n=36 independent cMFBs). The calculation that ~7% of current is active at rest (C37) is a straightforward inference from the V\u00bd and average resting potential. This provides important quantitative characterization of HCN channel function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Intracellular cAMP shifts Ih activation with an EC50 of 40.4 \u00b5M. With 1 mM cAMP, V\u00bd shifted by 17 mV to -86.6\u00b11.2 mV (n=16, p<10^-10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by systematic voltage-clamp recordings with varying cAMP concentrations (Figure 7B, D). The EC50 determination is based on multiple concentrations with appropriate sample sizes. The large voltage shift with 1 mM cAMP is highly significant statistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The endogenous cAMP concentration in cerebellar mossy fiber boutons is 12.6 \u00b5M (68% confidence interval: 1.8-60.7 \u00b5M), estimated from perforated patch recordings showing V\u00bd of -96.4\u00b11.2 mV versus -101.3\u00b11.0 mV after patch rupture (n=10, p=0.0076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by technically challenging perforated patch recordings (Figure 7C-D). The approach is sound: comparing V\u00bd under perforated patch (preserving endogenous cAMP) versus whole-cell conditions. The 4.9 mV shift is statistically significant. The wide confidence interval (1.8-60.7 \u00b5M) reflects uncertainty in the estimation but the central estimate of 12.6 \u00b5M is reasonable. The authors appropriately note this may be an underestimate due to higher access resistance in perforated patch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The reversal potential of Ih in cerebellar mossy fiber boutons is -23.4\u00b11.4 mV (n=7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by voltage ramp measurements (Figure 8C) and is consistent with previous estimates from other preparations. This parameter is essential for computational modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C84",
+      "C85"
+    ],
+    "result": "HCN2 channels control conduction velocity primarily through membrane depolarization rather than changes in membrane conductance. Computational modeling shows that only the Vm-model (simulating depolarization) but not the Rm-model (simulating conductance changes) reproduces experimental effects on conduction velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C84-C85 are supported by systematic computational modeling (Figure 9E). The dissection of depolarization versus conductance effects through separate models is elegant and provides clear mechanistic insight. The finding that depolarization increases velocity despite decreasing Na+ channel availability (C44, Figure 9\u2014figure supplement 1) is counterintuitive but well-explained by cable theory. The modeling approach is appropriate and conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C92"
+    ],
+    "result": "HCN channels incur significant metabolic costs. Maintaining resting potential with Ih is ~100% more expensive than without Ih, ~3-fold more expensive than generating one action potential, and increases total energy requirements by ~30% at physiological firing rates (4 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 and C92 are supported by computational modeling of ATP consumption (Figure 9F). The calculations are based on established methods for estimating metabolic costs from ion fluxes. The assumption of 4 Hz average firing rate in vivo (C49) is supported by citations. The conclusion that HCN channels are metabolically expensive is well-justified, though the exact values depend on model parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "HCN channels increase action potential velocity and fidelity in central axons, control velocity primarily by altering resting membrane potential, and are associated with significant metabolic costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 represent the main conclusions of the paper, integrating experimental and computational findings. These are well-supported by the collective evidence from conduction velocity measurements (C1-C8), high-frequency firing experiments (C19-C21), and computational modeling (C43-C50). The conclusions are appropriately qualified and acknowledge limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The cAMP-HCN pathway provides neuromodulators with an opportunity to finely tune energy consumption and temporal delays across axons in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is a speculative conclusion that extends beyond the direct experimental evidence. While supported by the demonstrated effects of neuromodulators on conduction velocity (C9-C14) and the metabolic cost calculations (C47-C50), the broader implications for brain function are inferred rather than demonstrated. The claim is reasonable but would require additional in vivo evidence to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Although HCN-mediated changes in conduction velocity are relatively small (~5%), they can produce significant temporal delays (e.g., 0.5 ms in 3 mm parallel fibers) that may influence spike-timing dependent processes in the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by experimental data (C74) and reasonable extrapolations based on axon length and velocity from literature (C75). The functional significance (C76) is inferred from citations to literature on spike-timing dependent plasticity and coincidence detection. The reasoning is sound though the in vivo relevance remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The modeling results showing increased conduction velocity with depolarization are consistent with previous observations in motoneurons and with nonlinear cable theory predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 appropriately contextualize the modeling results within prior literature. The consistency with cable theory (Jack et al. 1983) and previous experimental observations (Carp et al. 2003) strengthens confidence in the modeling conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "HCN channels ensure reliable high-frequency firing by counteracting hyperpolarization during high-frequency trains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 integrate experimental findings (C19-C21) with mechanistic interpretation supported by literature (Waxman et al. 1995). The explanation is consistent with the observed effects on firing frequency and action potential properties during trains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "A metabolically cheaper way to depolarize the membrane would be expression of fewer Na+-K+-ATPases, resulting in a depolarized K+ reversal potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is speculative and based on theoretical considerations from the Vm-model. While logically sound, the authors acknowledge this alternative design might complicate high-frequency firing. This represents a thoughtful discussion point rather than a tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The estimated endogenous cAMP concentration (12.6 \u00b5M) is higher than previous estimates in other systems, though high concentrations may be limited to spatially restricted domains. This high concentration and HCN2 expression facilitate bidirectional neuromodulator control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 appropriately contextualize the cAMP concentration estimate (C41) within prior literature. The comparison to other systems (C94) is factual. The acknowledgment of possible spatial compartmentalization (C96-C97) is appropriately cautious. The functional interpretation (C98) is a reasonable inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Changes in action potential conduction velocity in mossy and parallel fibers may play an important role in cerebellar computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is speculative, extending experimental findings to functional significance in cerebellar circuits. While the reasoning is supported by citations to literature on cerebellar timing precision (C77-C79), direct evidence for the role of HCN-mediated velocity changes in cerebellar computation is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The cAMP-HCN pathway in axons could contribute to reduced energy consumption of the brain during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is highly speculative, connecting the metabolic cost findings (C47-C50) and neuromodulator effects (C100-C101) to sleep physiology. While the hypothesis is interesting and supported by citations, it lacks direct experimental evidence and represents a suggestion for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Other mechanisms beyond HCN channels could contribute to neuromodulation of conduction velocity, and off-target interactions cannot be excluded with the concentrations of neuromodulators used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 represent appropriate acknowledgment of limitations. The authors correctly note that while HCN channels are the main mediator (C14), other voltage-gated channels could contribute, and the high neuromodulator concentrations used may have off-target effects. This demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "HCN channels could play a compensatory role in restoring conduction velocity in some diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 is speculative, suggesting a potential clinical relevance based on the experimental findings. While the hypothesis is reasonable given the documented role of HCN channels in various pathologies (C106), direct evidence for compensatory function is lacking.",
+    "result_type": "MINOR"
+  }
+]

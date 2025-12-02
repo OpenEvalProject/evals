@@ -1,0 +1,2062 @@
+{
+  "submission": {
+    "id": "4fe5557f-658b-4b1e-96c0-d3c5748a2602",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:20:31.254664Z",
+    "updated_at": "2025-12-02T08:20:31.254664Z"
+  },
+  "content": [
+    {
+      "id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "submission_id": "4fe5557f-658b-4b1e-96c0-d3c5748a2602",
+      "content_type": "manuscript",
+      "content_text": "# Hexameric helicase G40P unwinds DNA in single base pair steps\n\n## Authors\n\n- Michael Schlierf<sup>1</sup> ([ORCID: 0000-0002-6209-2364](https://orcid.org/0000-0002-6209-2364)) \u2020\n- Ganggang Wang<sup>3</sup>\n- Xiaojiang S Chen<sup>3</sup> ([ORCID: 0000-0001-9574-0551](https://orcid.org/0000-0001-9574-0551))\n- Taekjip Ha<sup>1</sup> ([ORCID: 0000-0003-2195-6258](https://orcid.org/0000-0003-2195-6258)) \u2020\n\n### Affiliations\n\n1. Physics Department and Center for the Physics of Living Cells University of Illinois at Urbana-Champaign Illinois United States\n2. B CUBE \u2013 Center for Molecular Bioengineering Technische Universit\u00e4t Dresden Dresden Germany\n3. Molecular and Computational Biology, Department of Biological Sciences University of Southern California Los Angeles United States\n4. Howard Hughes Medical Institute Baltimore United States\n5. Department of Biophysics and Biophysical Chemistry Johns Hopkins University Baltimore United States\n6. Department of Biomedical Engineering Johns Hopkins University Baltimore United States\n7. Department of Biophysics Johns Hopkins University Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMost replicative helicases are hexameric, ring-shaped motor proteins that translocate on and unwind DNA. Despite extensive biochemical and structural investigations, how their translocation activity is utilized chemo-mechanically in DNA unwinding is poorly understood. We examined DNA unwinding by G40P, a DnaB-family helicase, using a single-molecule fluorescence assay with a single base pair resolution. The high-resolution assay revealed that G40P by itself is a very weak helicase that stalls at barriers as small as a single GC base pair and unwinds DNA with the step size of a single base pair. Binding of a single ATP\u03b3S could stall unwinding, demonstrating highly coordinated ATP hydrolysis between six identical subunits. We observed frequent slippage of the helicase, which is fully suppressed by the primase DnaG. We anticipate that these findings allow a better understanding on the fine balance of thermal fluctuation activation and energy derived from hydrolysis.\n\n## Introduction\n\nHelicases are essential enzymes for all life forms and catalyze the separation of double-stranded nucleic acids (dsNA) into single-stranded nucleic acids (ssNA), and many of these enzymes involved in DNA repair, DNA recombination and transcription termination are linked to human diseases (Crampton et al., 2006; Enemark and Joshua-Tor, 2008; Enemark and Joshua-Tor, 2006; Gai et al., 2004; Johnson et al., 2007; Lionnet et al., 2007; Lohman et al., 2008; Manosas et al., 2009; Pandey et al., 2009; Patel and Picha, 2000; Rasnik et al., 2006b; Ribeck et al., 2010; Rothenberg et al., 2007; Singleton et al., 2000; Thomsen and Berger, 2009; Wang et al., 2008; Yodh et al., 2010). Helicases are categorized into different superfamilies (SF) by protein sequence motifs, polarity of translocation and function among other criteria (Berger, 2008). Non-hexameric helicases with a pair of RecA-like domains are members of SF I and SF II, and are involved in DNA maintenance including repair, Holliday junction migration, chromatin remodeling, RNA melting and RNA-binding protein displacement. Hexameric or dodecameric helicases are classified into SF III-VI and are key players in DNA replication and transcription termination. SF III and SF VI helicases share a common fold called the AAA+\u00a0fold and members of the SF IV and V share the RecA-like fold. Both folds are structurally members of the ASCE (additional strand conserved E) superfamily of enzymes that consists of various multimeric enzymes with extremely diverse function (Erzberger and Berger, 2006).\n\nForward translocation of ring-shaped helicases on nucleic acids lattice is promoted by ATP hydrolysis. Based on crystal structures, two distinct models have been proposed concerning how the hydrolysis of ATP molecules in a multi-subunit enzyme is coordinated between the subunits: a sequential, \u2018staircase-like\u2019 model for ATP hydrolysis and a concerted ATP hydrolysis model. The staircase model based on the structures of BPV E1 helicase bound to ssDNA and E. coli Rho helicase bound to ssRNA (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009) entails sequential hydrolysis of ATP around the hexameric ring, and one nt translocation for every ATP hydrolyzed. By extension, the unwinding step size has been proposed to be one base pair (bp) but this has not been experimentally tested. The concerted hydrolysis model based on the all-or-nothing nucleotide occupancy of SV40 Large T antigen structures (Gai et al., 2004) posits that the six ATP binding sites fire simultaneously, moving on the DNA by an increment determined by the stroke size of the DNA binding motif, which can be larger than 1 nt or 1 bp.\n\nFor T7 gp4 helicase-primase, structural and ensemble kinetic data (Crampton et al., 2006; Liao et al., 2005; Singleton et al., 2000) suggested a sequential hydrolysis mechanism during DNA translocation, and with the one-to-one coupling between nucleotide unwinding and base pair unwinding (Pandey and Patel, 2014), but the estimated unwinding step size is either larger than 1 bp (Johnson et al., 2007) or is variable depending on the GC content of the duplex DNA (Donmez and Patel, 2008; Syed et al., 2014). For the Rho helicase proposed to move in one nt steps (Thomsen and Berger, 2009), chemical interference data suggest that Rho needs to reset itself after it unwinds about\u00a0~7 bp (Schwartz et al., 2009). For DnaB, ensemble kinetic studies supported a sequential ATP hydrolysis mechanism (Roychowdhury et al., 2009) with an unwinding step size of 1 bp (Galletto et al., 2004), but DnaB structure bound to ssDNA showed that one subunit of DnaB hexamer binds two nucleotides, leading to the proposal that DnaB unwinds DNA in two base pair steps (Itsathitphaisarn et al., 2012). Conflicting data and models call for experiments with sufficient spatio-temporal resolution to detect the elementary steps of unwinding. In the most comprehensive analysis of stepping by a ring-shaped motor on DNA, the DNA packaging motor from \u03d529 was shown to package dsDNA in a hierarchy of non-integer, 2.5 bp steps, pausing after packaging 10 bp (Moffitt et al., 2009).\n\n## Results and discussion\n\n### G40P unwinds dsDNA in single base pair steps\n\nWe probed the helicase activity of the phage SPP1 G40P, a DnaB type hexameric helicase (Berger, 2008; Pedr\u00e9 et al., 1994; Wang et al., 2008) required for phage replication in its bacterial host, using an unwinding assay (Ha et al., 2002; Myong et al., 2007; Pandey et al., 2009; Syed et al., 2014; Yodh et al., 2009) based on single-molecule FRET (Ha et al., 1996). The substrate is a 40 bp duplex DNA with 3\u2019 and 5\u2019 single stranded poly-dT tails, both 31 nt long, to mimic a replication fork, and is immobilized to a polymer-passivated surface via a biotin-neutravidin linker (Figure 1a). FRET between the donor (Cy3) and the acceptor (Cy5) fluorophores conjugated to the fork was used to follow individual DNA unwinding in real time (Figure 1\u2014figure supplement 1). Duplex unwinding increases the time-averaged distance between the fluorophores therefore causing a reduction in FRET, and unwinding completion results in the release of the donor-labeled strand from the surface and an abrupt disappearance of total fluorescence (Figure 1b and Figure 1\u2014figure supplement 1). Initial experiments were carried out using a DNA substrate with all AT base pairs (40 bp) and typical unwinding trajectories displayed a smooth and rapid FRET decrease at 1 mM ATP (Figure 1c). Fitting the unwinding time histogram with a Gamma distribution allowed us to estimate a kinetic step size of\u00a0~4 bp, obtained by dividing the number of bp unwound by the number of identical rate-limiting steps required for full unwinding (Park et al., 2010) (Figure 1\u2014figure supplement 1). The kinetic step size of 4 bp here should be considered an upper limit because these unwinding time distributions can be broadened due to molecular heterogeneities, likely leading to an overestimation of the kinetic step size (Park et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic illustration of the smFRET unwinding assay. After loading to the substrate G40P unwinds the dsDNA (containing between 0 and 3 consecutive GC base pairs after 10 AT base pairs) and thereby gradually separates the donor fluorophore from the acceptor fluorophore. Complete unwinding results in donor strand leaving from the surface. (b) Typical unwinding trace of G40P. At tinject the protein solution containing Mg.ATP is injected. The unwinding initiation time tinit depends on the protein concentration and is measured from the moment of protein solution injection until unwinding starts. The unwinding time tunw is determined from the moment of FRET efficiency decrease until donor strand leaving. (c) Typical FRET efficiency unwinding traces of G40P on an all AT substrate base pair. The scale bar indicates 1 s. (d) Typical FRET efficiency unwinding traces of G40P with one GC base pair. The helicase briefly stalls at a characteristic FRET efficiency or slips after stalling and unwinds in a second attempt. (e) Typical FRET efficiency unwinding traces of G40P on the substrate with two consecutive GC base pairs. The helicase stalls eventually at two distinct FRET efficiencies (see arrows). (f) Typical FRET efficiency unwinding traces of G40P on the substrate with three consecutive GC base pairs. The helicase rarely unwinds three consecutive GC base pairs completely (top trace). Most traces show unwinding attempts and stalls at distinct FRET efficiency levels (bottom trace). (g-i) FRET efficiency distribution of stall levels of the one GC (blue), two GC (black) and three GC base pair (red) substrate. A (multipeak) fit with Gaussians revealed one peak at EFRET\u00a0=\u00a00.52\u00a0\u00b1\u00a00.04 for 1GC, two peaks at EFRET\u00a0=\u00a00.53\u00a0\u00b1\u00a00.04 and at EFRET\u00a0=\u00a00.39\u00a0\u00b1\u00a00.04 (two dashed lines) for 2GC and three peaks at EFRET\u00a0=\u00a00.52\u00a0\u00b1\u00a00.04, EFRET\u00a0=\u00a00.38\u00a0\u00b1\u00a00.04 and at EFRET\u00a0=\u00a00.27\u00a0\u00b1\u00a00.04 (three dashed lines) for 3GC. (j) Average FRET efficiencies with stalls after 4AT, 7AT, 10AT and 13AT base pairs (black symbols) in comparison with peak positions of stalls induced by 1GC, 2GC and 3GC base pairs (blue symbols).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0Opposite fluorophore attachment to the forked dsDNA substrate yield a wide FRET change range during unwinding.\u00a0A typical trace is shown on the right-hand side. (b) Labeling the non-tracking strand with the donor and acceptor fluorophores relies for the FRET efficiency change on the shorter persistence length of ssDNA compared to dsDNA. Both fluorophores do not have to pass through the central pore of the helicase and yield identical average unwinding times. However, the FRET efficiency change signal is much less clear (right). (c) Selection criteria for traces to be included in the analysis. Typical unwinding trace of G40P. At tinject the protein solution together with Mg.ATP is injected. The unwinding initiation time tinit depends on the protein concentration and is measured from the moment of protein solution injection until unwinding starts. smFRET traces were tested for acceptor survival by means of direct excitation with a 633 nm laser to exclude acceptor bleaching events from analysis. During the unwinding assay, only donor molecules were excited with a 532 nm laser. In the illustrated trace, unwinding was observed at t \u2248 22 s, the acceptor test was performed at t \u2248 96\u201397.5 s. (d) The unwinding initiation rate (1/tinit) is shown as a function of G40P hexamer concentration and can be fitted linearly (errors are standard deviation). Inset: The unwinding time is independent of the protein concentration within error. (e) Percentage of initial high FRET traces with successful unwinding events without anti-digoxigenin and with anti-digoxigenin at the 5\u2019 tail of the forked duplex (*** denotes p<0.001). Inset: Schematic illustration of the digoxigenin-modified substrate (square at the 5\u2019 tail) blocked by anti-digoxigenin (yellow). (f) Typical FRET efficiency unwinding traces at [ATP]=3 mM, 1 mM, 250 \u00b5M, 150 \u00b5M, 100 \u00b5M and 75 \u00b5M. The unwinding appears smooth and the unwinding time increased with decreasing ATP concentration. (g) Typical FRET efficiency traces at [ATP]=250 \u00b5M and with increasing [ADP]=0 mM, 0.5 mM and 1 mM. The effect of ADP as competitive inhibitor can be directly observed with increasing unwinding times. (h) Semi-logarithmic plot of the average unwinding rate (1/tunw) as a function of ATP concentration (errors are standard deviation). The average unwinding rate at different ATP concentrations was determined without ADP (red squares), with 0.5 mM ADP (green circles), with 1 mM ADP (blue triangles) and 5 mM Pi (black rhomboids). The solid lines are fits to the data using Michaelis-Menten equation. The red dashed is a fit to the 0 mM ADP data with the Hill-equation. (i) Unwinding time distribution of the AT substrate by (G40P)6 at 1 mM ATP. Fit is a Gamma distribution with a stepping rate k\u00a0=\u00a021.9 s\u22121 and a number of steps n\u00a0=\u00a010.1. (j) Unwinding time distribution of the AT substrate by (G40P)6 at 250 \u00b5M ATP. The fit is a Gamma distribution with a stepping rate k\u00a0=\u00a016.4 s\u22121 and a number of steps n\u00a0=\u00a010.1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a)\u00a0Stall lifetime distribution of G40P stalls on the 1GC substrate.\u00a0A single exponential fit yields a characteristic lifetime of 79\u00a0\u00b1\u00a05 ms. (b) Fraction of all traces with protein activity with complete unwinding on different substrates (AT, 1GC, 2GC, 3GC) and at 21\u00b0C and 33\u00b0C, respectively (n.s. denotes not significant, *p<0.05, ***p<0.001). (c) Sketch of the intrinsic calibration constructs with x AT base pairs followed by 40-x GC base pairs. Due to its exquisite sequence sensitivity G40P stalls at the GC base pairs. (d) Stall FRET level histograms for four different substrates: 4AT, 7AT, 10AT and 13AT. The Histograms were evaluated with Gaussian fits. The leakage of donor fluorescence to the acceptor channel was determined to give an apparent EFRET\u00a0=\u00a00.11\u00a0\u00b1\u00a00.02. (e) through (h) Sample traces of calibration substrates 4AT, 7AT, 10AT and 13AT, respectively, with the analyzed stall level indicated by arrows.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Traces are offset for clarity. Black lines and grey shade represent the stall FRET efficiency levels of the consecutive GC base pairs at position 11, 12 and 13 for reference of consecutive FRET levels.\n\nInterestingly, when we repeated the experiment with a single GC bp inserted in the 11th position in otherwise all AT sequences (Figure 1a), a large fraction (65%) of unwinding trajectories showed a stall before full unwinding, with a characteristic stall lifetime of 79\u00a0\u00b1\u00a05 ms (Figure 1d and Figure 1\u2014figure supplement 2a). FRET efficiencies of the stalled state were sharply distributed around EFRET\u00a0=\u00a00.52\u00a0\u00b1\u00a00.04 (blue lines in Figure 1g), indicating that the stall occurs after a well-defined number of base pairs, presumably ten, have been unwound and is caused by a single GC base pair.\n\nIndividual traces revealed helicase slippage events, where partial unwinding is reverted before another unwinding attempt is made (Figure 1d, lower panel). The lag time between successive unwinding attempts is less than 1 s on average, which is about 20-fold shorter than the de novo unwinding initiation time (see Materials\u00a0and\u00a0methods and Figure 1\u2014figure supplement 1d), implying that the same enzyme is responsible for multiple partial unwinding and slippage events (Ha et al., 2002; Sun et al., 2011). In most slippage events followed by another unwinding attempt, the FRET efficiency returned to its original high value of DNA itself, indicating that the helicase slips backwards at least 10 base pairs. Interestingly, T7gp4 helicase was observed to slip backwards hundreds of base pairs in unfavorable nucleotide conditions (Sun et al., 2011).\n\nDNA with 2 GC bp (11th and 12th bp) showed stalls at two distinct FRET levels (EFRET\u00a0=\u00a00.53\u00a0\u00b1\u00a00.04 and EFRET\u00a0=\u00a00.39\u00a0\u00b1\u00a00.04) determined from Gaussian fitting of EFRET distribution of stalled states (Figure 1h). Because the first stall occurred at the same FRET level as observed with 1 GC bp, we attribute the second stall to the second GC bp. Two GC bp reduced full unwinding events to 57% of the traces.\n\nComplete unwinding trajectories were even rarer (12%) for the DNA with 3 GC bp (11th, 12th and 13th bp). Stalls were identified from all traces, predominantly from unsuccessful unwinding attempts and are distributed in three distinct FRET levels with two main peaks centered at EFRET\u00a0=\u00a00.52\u00a0\u00b1\u00a00.04 and EFRET\u00a0=\u00a00.38\u00a0\u00b1\u00a00.04 and a small peak at EFRET\u00a0=\u00a00.27\u00a0\u00b1\u00a00.04 (Figure 1i). The aforementioned crystallographic structures on ring-shaped helicases suggest step sizes between one and six nucleotides, resulting from a staircase like or spring-loaded or concerted ATP hydrolysis model (Enemark and Joshua-Tor, 2006; Gai et al., 2004; Itsathitphaisarn et al., 2012). Recent experimental studies have reported for hexameric helicases step sizes from one to three nucleotides depending on the GC content of the template (Syed et al., 2014). For our experimental design, we introduced GC barriers at the positions 11, 12 and 13. For a single GC barrier and a ring-shaped helicase with a step size of one nucleotide, we would expect the barrier-induced stalling at a single FRET level, corresponding to a helicase at position \u22121 relative to the GC base pair. If the helicase would unwind dsDNA with a step size of two nucleotides, and an unknown starting position on the DNA grid, we would expect to observe 50% of the helicases to stall at position \u22122% and 50% at position \u22121. In this case, we would observe two different FRET levels for a single GC base pair (Figure 2a). Introducing a second GC base pair would lead in the case of a helicase with one nucleotide step size to two possible stalling events, one at position \u22121 and one at position 1 (Figure 2b). Again, for a helicase with a step size of two nucleotides, we would expect two GC base pairs induce stalls at positions \u22122,\u20131 and 1 (Figure 2b). Similarly, we could expect for three consecutive GC base pairs breaks at three positions for a step size of a single nucleotide and breaks at four positions for a step size of two nucleotides (Figure 2c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig2-v2.jpg)\n\n**Figure 2.:** Stalling sites for 1GC (a), 2GC (b) or 3GC (c) substrate. (left) Assuming a one nt step size of G40P, the FRET efficiency distribution of GC induced breaks would show 1, 2 or 3 peaks for 1, 2 or three consecutive GC base pairs. (right) Assuming a two nt step size of G40P, the FRET efficiency distribution of GC induced breaks would show 2, 3 or 4 peaks for 1, 2 or three consecutive GC base pairs, due to the phase of the first stepping event. GC base pairs in bold lines, helicase as blue ring structure. Number below the DNA substrates indicate the breaking position of the helicase relative to the first GC base pair.\n\nOne, two or three discrete FRET values of stalled states in our data induced by one, two or three GC base pairs suggest that unwinding occurs in single base pair steps. As a further test, we obtained a calibration curve between the number of base pairs unwound and the FRET efficiency by performing the reaction using four different DNA constructs that have m AT base pairs followed by (40 m) GC base pairs (m\u00a0=\u00a04, 7, 10 and 13), which stalls the unwinding reaction presumably at the boundary between AT and GC base pairs (Figure 1j). The stall FRET levels from the one, two and three consecutive GC base pairs fall within error in single base pair steps on our calibration curve (see Materials\u00a0and\u00a0methods and Figure 1\u2014figure supplement 2). Therefore, we conclude that G40P unwinds DNA in the presence of GC base pairs with a single base pair step size. Recent optical trap studies of the nonhexameric helicase HCV NS3 and XPD observed the long anticipated single base pair steps during unwinding (Cheng et al., 2011; Qi et al., 2013). Here, we extend direct observation of single base pair steps during DNA unwinding to the hexameric helicases.\n\nIn the absence of GC base pairs, our limited time resolution prevented direct observation of individual steps. However, changing the solution condition from 10 mM MgCl2 to 10 mM CaCl2, slowed down unwinding significantly and allowed in the all AT substrate direct observation of individual steps, which occurred at similar FRET values to those observed for the GC bp induced pauses (Figure 1\u2014figure supplement 3), consistent with single bp unwinding of AT base pairs.\n\nThe GC base pair induced pauses of the helicase imply that unwinding depends at least partially on the thermal fraying of the base pairs due to the higher thermodynamic stability of GC vs AT base pairs. Raising the experiment temperature increased the percentage of full unwinding events for the three GC bp construct, that\u00a0is\u00a062% vs. 12% at 33\u00b0C vs. 21\u00b0C, respectively (Supplementary file 1 - Table S2 and Figure 1\u2014figure supplement 2b).\n\nSingle base pair steps were observed in the presence of GC base pairs or solution conditions which slow down unwinding. Interestingly, structural studies of DnaB showed each DNA binding loop contacting two nucleotides (Itsathitphaisarn et al., 2012), leading to the step size of 2 bp. Single-molecule studies of T7gp4 observed 2\u20133 bp apparent step sizes but with the step likely requiring 2\u20133 nucleotides hydrolyzed (Syed et al., 2014). Therefore, we could also imagine that G40P possesses variable step size, depending on the load, and under our experimental conditions that slow down translocation, G40P may switch to a 1 bp step size. Gear switching was also proposed for other ring-like ATPases, for\u00a0example the AAA+\u00a0protease ClpXP (Sen et al., 2013) and dynein (Mallik et al., 2004).\n\n### Host primase DnaG prevents slippage events\n\nA replicative helicase that cannot easily overcome GC base pairs would be ineffective. Because DnaG, the host primase, stimulates ATPase and unwinding activities of DnaB and G40P (Bird et al., 2000; Wang et al., 2008), we tested the effect of DnaG by forming a complex of G40P with the Bacillus subtilis primase DnaG in a ratio of 1:3 (Wang et al., 2008) before adding the complex to the immobilized DNA to initiate unwinding. Figure 3a shows typical unwinding traces of the substrate with 3 GC bp in presence of the primase DnaG. Strikingly, the yield of complete unwinding increased from 12% without DnaG to 58% with DnaG (Figure 3b and Supplementary file 1 - Table S1). DNA molecules showing full unwinding did not show any slippage events, suggesting a novel function of DnaG that stimulates unwinding by preventing slippage. Stalling events were still observed in the presence of DnaG, but were less pronounced (Figure 3\u2014figure supplement 1). Presence of other replication proteins may further assist the helicase unwinding activity (Stano et al., 2005).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig3-v2.jpg)\n\n**Figure 3.:** (a) FRET efficiency traces of the G40P-DnaG complex on the 3GC substrate. Traces with successful unwinding showed no slippage events. (b) Fraction of all traces with protein activity with complete unwinding on different substrates (AT, 1GC, 2GC, 3GC) and at different enzyme conditions (G40P, G40p+DnaG) (n.s. denotes not significant, *p<0.05, ***p<0.001). (c) FRET efficiency traces of G40P unwinding the AT substrate with slippage events marked by stars before the actual unwinding events marked by the arrow at [ATP]=250 \u00b5M, 150 \u00b5M and 100 \u00b5M. (d) Semi-logarithmic plot of the average number of slippage events per total number of unwinding traces at different ATP concentrations. Addition of DnaG reduces the average number of slippage events before successful unwinding by a factor \u2248 2.5. Errors were estimated by bootstrapping analysis.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Top panels: Donor (green) and acceptor (red) time traces. Bottom panels: FRET efficiency time traces.\n\nSlippage was also observed using the 40 AT DNA but less frequently (Figure 3b). Because T7 gp4, E1 and Rho helicase have higher affinities to ssNA in the nucleotide-bound state (Adelman et al., 2006; Enemark and Joshua-Tor, 2006; Hingorani and Patel, 1993; Thomsen and Berger, 2009) we hypothesized that slippage would occur more frequently at lower ATP concentrations. Indeed, at sub-saturating ATP concentrations we observed a significant increase of slippage events (Figure 3c) and the number of slippage events before complete unwinding increased for decreasing ATP concentrations (Figure 3d). Inclusion of ADP in the reaction did not reduce or increase the slippage events significantly, indicating that the enzyme binds tightly to the DNA in both ATP and ADP bound states. However, the presence of DnaG significantly reduced the average number of slippage events per full unwinding (\u22482.5 fold) compared to G40P alone at all tested ATP concentrations (Figure 3d, black triangles and Supplementary file 1 - Table S3). Interestingly, the average unwinding time of the AT substrate with or without DnaG at saturating ATP conditions did not change.\n\n### ATP hydrolysis between the subunits of G40P is highly coordinated\n\nG40P slippage can thus be reduced by keeping some nucleotides bound during each translocation step. To elucidate the ATP hydrolysis coordination between subunits, we included ATP\u03b3S in the reaction while keeping constant the combined concentration of ATP and ATP\u03b3S at 1 mM. ATP\u03b3S is a slowly hydrolysable analogue of ATP, and both nucleotides have nearly identical dissociation constants for G40P binding as tested using Mant-ADP (see Materials\u00a0and\u00a0methods and Figure 3\u2014figure supplement 1). As expected, the unwinding rate of 40 bp, kunw, decreased as the ATP\u03b3S concentration increased (Figure 3\u2014figure supplement 1). Close examination of the unwinding traces with 2.5% ATP\u03b3S showed a pronounced stalling event that was rarely detected without ATP\u03b3S (Figure 4a). The stall during unwinding was observed at broadly distributed FRET levels (Figure 4e), suggesting the stall occurs stochastically, not at a particular location on DNA. At elevated ATP\u03b3S (\u226520% ATP\u03b3S) no unwinding reaction was observed. The lifetime of the first stall during unwinding was 0.44 s\u00a0\u00b1\u00a00.01 s, independent of ATP\u03b3S percentage (Figure 4c), suggesting that the stall occurs when the enzyme is bound by a well-defined number of ATP\u03b3S. If a single ATP\u03b3S molecule is responsible for the hexamer stalling, the fraction of unwinding traces showing a stall event should depend linearly on the ATP\u03b3S concentration whereas a quadratic dependence is expected if two ATP\u03b3S molecules are necessary to stall the enzyme and so on. The stalled fraction increased linearly between 0.125% and 1% ATP\u03b3S (Figure 4d, Figure 3\u2014figure supplement 1 and Materials\u00a0and\u00a0methods), indicating that the stall is caused by a single ATP\u03b3S. A random ATP hydrolysis mechanism as observed for ClpX, a AAA+\u00a0protein unfolding machine (Martin et al., 2005), can thus be excluded for G40P. The model of a concerted ATP hydrolysis is very unlikely to apply to G40P considering the following results of our experiments: (i) The unwinding rate kunw versus ATP relation followed the Michaelis-Menten relation with a Hill coefficient close to 1, indicating that per enzymatic cycle only one ATP has to bind the enzyme (see Materials\u00a0and\u00a0methods). (ii) Our slippage data indicate that an ATP or ADP free helicase loses grip to the tracking strand and slips backward. A concerted ATP hydrolysis leads to an ATP/ADP free helicase and an elevated probability to slip backwards at every unwound bp, which would be highly inefficient. Sequential nucleotide hydrolysis during ssNA translocation by hexameric helicases is also well supported by structural analysis (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009) and was also observed in ssDNA translocation by T7gp4 (Crampton et al., 2006; Liao et al., 2005; Pandey and Patel, 2014). An optical tweezers study on T7gp4 proposed a sequential nucleotide hydrolysis after analyzing the slippage probability at various nucleotide conditions (Sun et al., 2011). Here we show the first direct evidence for sequential hydrolysis during DNA unwinding.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig4-v2.jpg)\n\n**Figure 4.:** (a) Typical FRET efficiency traces at [ATP]=1 mM in the left panel and [ATP]+[ATP\u03b3S]=0.975 mM+0.025 mM in the right panel. The unwinding traces with 2.5% ATP\u03b3S show a clear stalling event (highlighted in green) that is absent at 0% ATP\u03b3S. (b) Lifetime distribution of the first stall during unwinding at several ATP\u03b3S percentages. A single exponential fit is used to evaluate the characteristic lifetime. (c) The stall lifetime evaluated from single exponential fits as a function of ATP\u03b3S poisoning percentage. Within error the characteristic lifetime is independent of ATP\u03b3S concentration. The linear fit is to guide the eye. (d) Fraction of unwinding traces with a stall event during FRET decrease between 0% and 1% ATP\u03b3S. A linear increase is expected if a single ATP\u03b3S binding event stalls the helicase. (e) Stall FRET efficiency distribution of ATP\u03b3S induced stalls.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a)\u00a0ATPase activity of G40P tested with EnzChek Phosphate detection kit (Invitrogen).\u00a0After addition of ATP and depletion of free phosphates, G40P was added to the solution (20 mM Tris-HCl, 50 mM NaCl, 10 mM MgCl2). We observed without any ssDNA present in solution a significant ATPase activity. Addition of ssDNA to the solution increased the ATPase activity of G40P by a factor of two. (b) The ATPase activity of G40P without ssDNA was successfully suppressed by exchanging MgCl2 to MnCl2. After addition of ssDNA, G40P showed approximately 50% of the ATPase activity as in case (a). (c) Normalized fluorescence as function of the competitor. Preformed mant-ADP G40P complexes were titrated with ATP (green circles) and ATP\u03b3S (red circles). In both cases the fluorescence signal decreased rapidly. The data was evaluated using eq 1. (d) Stall lifetime of non-ATP\u03b3S induced stalling events at saturating ATP conditions. The typical lifetime was determined to be t0\u00a0=\u00a00.05\u00a0\u00b1\u00a00.01 s, significantly shorter than ATP\u03b3S induced stalls with t \u2248 0.44 s. (e) Fraction of unwinding traces with a stall event during FRET decrease between 0% and 10% ATP\u03b3S. A linear increase is expected if a single ATP\u03b3S binding event stalls the helicase. At higher ATP\u03b3S concentrations the fraction of traces with a stalling event saturate. Inset: Fitted Michaelis-Menten model assuming ATP\u03b3S as an inhibitor (dashed line). (f) Average unwinding rate of G40P of the AT substrate as a function of ATP\u03b3S fraction (total nucleotide concentration was 1 mM, ATP\u03b3S concentration was increased from 0 to 100 \u00b5M).\n\n### How translocation leads to unwinding\n\nCombining our data with the strand exclusion model of unwinding (Ahnert and Patel, 1997) and the staircase model of ssDNA translocation (Enemark and Joshua-Tor, 2006), we previously proposed that for T7 gp4, with the unwinding step size of 2\u20133 bp, a spring-loaded mechanism where the presence of GC base pairs hinder DNA unwinding for each step of helicase movement on the DNA until the accumulated strain is released in a burst of simultaneous unwinding of 2\u20133 bp (Syed et al., 2014), which is reminiscent of spring-loaded mechanisms of DNA unwinding by HCV NS3 helicase (Myong et al., 2007) and RNA unwinding by yeast Rrp44 (Lee et al., 2012).\n\nIn the case of G40P, the current data showing 1 bp steps do not provide evidence for a spring-loaded mechanism. We therefore propose the following extension of our previous model on how hexameric helicases may unwind DNA (Syed et al., 2014). In the ATP and ADP bound state, G40P has a high affinity to the tracking strand. After ADP is released from one subunit the affinity of a central DNA-binding loop to the DNA backbone is reduced (Figure 5a) (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009). This loop then moves and contacts the backbone phosphate of the next base pair to be unwound when an ATP binds to the subunit. If the next base pair is an AT base pair, it melts rapidly and the relief of the structural distortion within the enzyme catapults the protein forward by one base pair. Subsequent ATP hydrolysis and ADP release repeats this scenario and the helicase steps in 1 bp/nt increments forward. However, in the case of a GC base pair, the melting step may be significantly slower, preventing a second DNA-binding loop from contacting the next base pair to be unwound because of steric constraints within the narrow central channel (Figure 5b). Here, two alternative outcomes may be possible: (i) the helicase can move forward after slow melting of the GC base pair (step three top) or (ii) the other subunits of the helicase undergo ATP hydrolysis and product release, thereby losing contact with the tracking strand such that the helicase slips backwards and the DNA rezips until a new set of contacts is established to the tracking strand (step three bottom). A structural study of SV40 LTag helicase suggested that unwinding does not occur by strand exclusion and the duplex DNA squeezes through the central pore (Li et al., 2003). In this case, the helicase may continue to step forward on the tracking strand without having to wait for duplex melting and may lead to unwinding of multiple base pairs in a burst after several nt translocation as has been proposed for a non-hexameric helicase (Myong et al., 2007).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/42001/elife-42001-fig5-v2.jpg)\n\n**Figure 5.:** Schematic illustrations of dsDNA unwinding by G40P of AT base pairs (a), at a GC base pair induced break (b), at sub-saturating ATP concentrations (c), in complex with the primase DnaG (d), and in case of ATP\u03b3S induced breaks (e). For detailed description see text.\n\nAt low ATP concentrations, the unbound DNA-binding loop moves forward to the next binding site. However, due to reduced ATP occupancy for this subunit, the loop would have difficulty in binding the next backbone position (Figure 5c). Further ATP hydrolysis in the remaining subunits may lead to a situation of all DNA-binding loops being detached from the tracking strand. In this case, the helicase slips backwards and the DNA rezips again to its original conformation. DnaG has to interact tightly with single-stranded DNA in order to synthesize primers for the lagging strand. Such interactions would hinder slippage of G40P, promoting unwinding activity (Figure 5d), maybe even by an induced conformational change in the helicase. In the case of ATP\u03b3S poisoning, G40P showed long stalling events. In such a case, a DNA-binding loop of the subunit bound by ATP\u03b3S cannot detach from the tracking strand due to the high affinity induced by the bound ATP\u03b3S (Figure 5e). Thus, the helicase remains at the same position until ATP\u03b3S is released from the subunit. We anticipate that this model is likely to apply to other hexameric helicases.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (SPP1)</td>\n      <td>G40P</td>\n      <td>DOI: 10.1038/nsmb1356</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (B.subtilis)</td>\n      <td>DnaG</td>\n      <td>DOI: 10.1038/nsmb1356</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks Matlab Version R2009, R2010, R2018</td>\n      <td></td>\n      <td>home written scripts for data analysis. Available in Supplementary file 2.</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>EnzChek Phosphate Assay Kit (Invitrogen)</td>\n      <td>EnzChek Phosphate Assay Kit (Invitrogen; now from ThermoFisher)</td>\n      <td>Cat #. E6646</td>\n      <td>ATPase activity Kit</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DNA Oligos (Supplementary file 1 - Table S5)</td>\n      <td>DNA Oligos were ordered from IDT</td>\n      <td></td>\n      <td>DNA oligos</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>mant-ADP</td>\n      <td>mant-ADP (Invitrogen; now ThermoFisher)</td>\n      <td>Cat #. M12416</td>\n      <td>fluorescent nucleotide</td>\n    </tr>\n  </tbody>\n</table>\n\n### Single-molecule FRET experiments and data analysis\n\nSingle-molecule FRET experiments were performed on a custom-built fluorescence microscopy setup and recorded with an EMCCD camera (Andor) with a time resolution of 30\u2013100 ms using custom C++\u00a0software\u00a0(https://cplc.illinois.edu/software/). Single-molecule fluorescence traces were extracted by means of a custom IDL software.\n\nBiotin was attached at the 5\u2019 end of the DNA strand during DNA synthesis (Integrated DNA technologies). Cy3 N-hydroxysuccinimido (NHS) ester and Cy5 NHS ester (GE Healthcare) were internally labeled to the dT of single-stranded DNA strands by means of a C6 amino linker (modified by Integrated DNA Technologies, Inc.). A detailed list of all DNA strands used can be found in Supplementary file 1 - Table S5. A quartz microscope slide (Finkenbeiner) and coverslip were coated with polyethylene glycol (m-PEG-5000; Laysan Bio Inc.) and biotinylated PEG (biotin-PEG-5000; Laysan Bio Inc.) (Ha, 2001). Measurements were performed in a flow chamber that was assembled as follows. After the assembly of the coverslip and quartz slide, a syringe was attached to an outlet hole on the quartz slide through tubing. All the solution exchanges were performed by putting the solutions (l00\u00b5L) in a pipette tip and affixing it in the inlet hole, followed by pulling the syringe. The solutions were added in the following order. Neutravidin (0.2 mg mL\u22121; Pierce) was applied to the surface and washed away with T50 buffer (10 mM Tris-HCl, pH 8, 50 mM NaCl). Biotinylated DNA (about 50\u2013100 pM) in T50 buffer was added and washed away with imaging buffer (20 mM Tris-HCl, pH 8, 50 mM NaCl, 0.1 mg mL\u22121 glucose oxidase, 0.02 mg mL\u22121 catalase, 0.8% dextrose, in a saturated (~3 mM) Trolox solution) (Rasnik et al., 2006a). For most experiments [ATP]=1 mM (except for the ATP titration experiments), G40P [hexamer]=60 nM in imaging buffer was injected to the flow chamber with 10 mM MgCl2 while recording a fluorescence movie. We performed G40P/DnaG experiments by incubating G40P hexamers together with DnaG in a molar ratio 1:3, respectively. This mixture was then injected to the flow chamber in imaging buffer containing 60nM G40P hexamer concentration, 180 nM DnaG monomer concentration, [ATP]=1 mM and 10 mM MgCl2. All experiments were performed at room temperature T\u00a0=\u00a0296 K.\n\nFRET efficiency values (EFRET) were calculated as the ratio between the acceptor intensity and the total (acceptor plus donor) intensity after subtracting the background. Unwinding initiation times, unwinding times and stall lifetimes were scored by visual inspection of donor and acceptor intensities (Pandey et al., 2009). The stall FRET levels were averaged after visual scoring the stall lifetime of at least five data points. The number of slippage events before successful unwinding was measured by counting the number of crossings of a threshold EFRET\u00a0=\u00a00.7\u20130.8 after box averaging the traces with a time resolution t\u00a0=\u00a0150 ms. All data were analyzed and plotted with scripts written in MATLAB (Mathworks) and in Igor Pro (Wavemetrics). Statistical analysis was based on Fisher\u2019s exact test or bootstrapping and performed in Igor Pro (Wavemetrics, Portland).\n\n### DNA substrates\n\nAll DNA oligos were purchased from Integrated DNA Technologies (Coralville, IA) and site-specifically labeled with NHS-Cy3 or NHS-Cy5 obtained from GE Healthcare (PA13101 and PA15101, respectively; Pittsburg, PA). Supplementary file 1 - Table S5 lists all sequences. \\iAmMC6T\\ denotes the amine-modified thymine with a C6 spacer used for site-specific labeling. \\5BiosG\\ denotes the 5\u2019 modification with biotin, \\3Bio\\ denotes the 3\u2019 modification with biotin and \\iCy5\\ denotes the internal modification with Cy5 fluorophore.\n\n### Design of the unwinding substrate\n\nThe exclusion model of unwinding for hexameric helicases suggests that the tracking strand passes through the central pore of the hexameric protein and the non-tracking will be excluded. Thus, a labeling of the tracking strand might affect the unwinding reaction since the fluorophore would have to pass through the central channel. We tested this possibility by comparing average unwinding times of a substrate with labels at the tracking and non-tracking strand (Figure 1\u2014figure supplement 1a) as well as with labels just at the non-tracking strand (Figure 1\u2014figure supplement 1b). The average unwinding time of both substrates at [ATP]=1 mM agreed very well within error (tavg(tracking\u00a0+non tracking)\u00a0=\u00a00.57\u00a0\u00b1\u00a00.22 s and tavg(double-labeled non-tracking)=0.59\u00a0\u00b1\u00a00.21 s). However, the accessible FRET range in the case of the double-labeled non-tracking strand was significantly smaller (FRET efficiencies between 0.3 and 0.7, Figure 1\u2014figure supplement 1b) in contrast to the labeling at both DNA strands (FRET efficiencies between 0.95 and 0.11, Figure 1\u2014figure supplement 1a). A larger FRET efficiency range allows a higher resolution. Taking the higher resolution into account and the non-detectable difference in unwinding time between both substrates, further experiments were conducted with substrate where both DNA strands were labeled (Figure 1\u2014figure supplement 1a).\n\n### Unwinding initiation time depends linearly on the protein concentration\n\nFigure 1b and Figure 1\u2014figure supplement 1c show typical unwinding traces after adding a solution containing G40P and 1 mM ATP at time tinject to the imaging chamber with immobilized DNA molecules. Unwinding begins after a delay (FRET starts to decrease as indicated by a decrease in donor signal and a concomitant increase in acceptor signal), which we call the unwinding initiation time, tinit. Unwinding itself takes a finite amount of time, tunw, during which FRET decreases to the lowest level and the total fluorescence signal disappears. The average tinit ranged from 6.6 s to 88 s as the protein concentration (in hexamer) is varied and is much longer than the average tunw \u2248 0.55 s at saturating [ATP]=3 mM. Therefore, unwinding events can be attributed to the action of a single functional unit of the helicase, which we presume to be a hexamer. The unwinding initiation rate, defined as the inverse of average tinit, increased linearly with protein concentration (Figure 1\u2014figure supplement 1d). In contrast, the average tunw did not show a significant dependence on protein concentration (inset Figure 1\u2014figure supplement 1d). The linear relation between the protein concentration and the initiation rate indicates that G40P is loaded as a preassembled hexamer instead of being assembled on the DNA in situ. Further support for the hexamer loading is provided by additional experiments blocking the free ssDNA end of the forked DNA with anti-digoxigenin (sketch in Figure 1\u2014figure supplement 1e). At [ATP]=1 mM and [G40P6]=60 nM, the percentage of single-molecule FRET traces that show unwinding events was reduced from 42% to 4.7% after incubation of the digoxigenin modified DNA construct with [anti-digoxigenin]=0.1 mg/mL followed by washing out of unbound anti-digoxigenin (Figure 1\u2014figure supplement 1e).\n\n### ATP titration with ADP as competitive inhibitor\n\nAs expected, lowering the ATP concentration, from 3 mM to 75 \u00b5M, significantly increased tunw (Figure 1\u2014figure supplement 1f, [hexamer]=60 nM). The unwinding rate kunw, defined as the inverse of average tunw, vs. ATP concentration (red squares Figure 1\u2014figure supplement 1h) curve could be well-fitted using the Michaelis-Menten equation, yielding an apparent Michaelis-Menten constant Km\u00a0=\u00a087\u00a0\u00b1\u00a09 \u00b5M and a maximum unwinding rate kunw\u00a0=\u00a01.91\u00a0\u00b1\u00a00.05 s\u22121. Including ADP in the reaction increased the apparent Km to 191\u00a0\u00b1\u00a014 \u00b5M and 272\u00a0\u00b1\u00a036 \u00b5M at 0.5 mM and 1 mM ADP, respectively (Figure 1\u2014figure supplement 1g and h) with little change in the maximum unwinding rate kunw([ADP]=0.5 mM)=2.01\u00a0\u00b1\u00a00.04 s\u22121 and kunw([ADP]=1 mM)=1.91\u00a0\u00b1\u00a00.07 s\u22121. A fit to the more general Hill-equation to the ATP titration results in a Hill coefficient n\u00a0=\u00a01.2\u00a0\u00b1\u00a00.2 (dashed line in Figure 1\u2014figure supplement 1h). A Hill coefficient of 1 implies that either each identical subunit can bind ATP and hydrolyze completely independent of each other (no binding cooperativity between the subunits) or that for every step one or more subunits can bind ATP successively and in coordination but not cooperatively (Schnitzer and Block, 1997). It is important to note that a Hill coefficient of 1 does not imply that only one ATP is bound per enzymatic cycle, but that binding of one ATP neither facilitates nor hinders binding of more ATP (Moffitt et al., 2009).\n\n### FRET calibration\n\nFRET vs number of unwound base pairs was calibrated with the substrates 4AT4GC, 7AT33GC, 10AT30GC and 13AT27GC (Figure 1\u2014figure supplement 2c). All substrates allowed G40P only partial unwinding, for\u00a0example the AT base pairs were unwound, followed by a stall at the GC base pairs. The stalling FRET level was determined through averaging over at least five data points at stalling events during an unwinding attempt (Figure 1\u2014figure supplement 2e through h). The FRET level distributions (Figure 1\u2014figure supplement 2d) were fitted with Gaussian distributions, yielding a FRET level of EFRET(4AT)\u00a0=\u00a00.73\u00a0\u00b1\u00a00.05 (\u00b1 \u03c3), EFRET(7AT)=0.61\u00a0\u00b1\u00a00.05, EFRET(10AT)\u00a0=\u00a00.48\u00a0\u00b1\u00a00.04, EFRET(13AT)\u00a0=\u00a00.24\u00a0\u00b1\u00a00.04 and a donor leakage of EFRET(leakage)=0.11\u00a0\u00b1\u00a00.02. The GC base pair induced peaks fall within error on our intrinsic calibration (Figure 1\u2014figure supplement 2e) leading to the conclusion that G40P unwinds dsDNA in one base pair step size. Figure 1\u2014figure supplement 2e through h show example traces with 4AT, 7AT, 10AT and 13AT bp, respectively, followed by a GC bp stretch.\n\n### G40P ATPase activity and ATP and ATP\u03b3S affinity\n\nATPase activity of G40P was tested using EnzChek Phosphate Assay Kit (Invitrogen). The solution conditions were 20 mM Tris-HCl, 50 mM NaCl and either 10 mM MgCl2 or 10 mM MnCl2 and 1 mM ATP. G40P showed without ssDNA a significant ATPase activity that could be increased after addition of ssDNA (Figure 4\u2014figure supplement 1a). This ATPase activity without ssDNA was suppressed with MnCl2 (Figure 4\u2014figure supplement 1b).\n\nATP and ATP\u03b3S affinity was determined using competitive titration as previously described by Aregger and Klostermeier (2009). We preformed complexes of G40P and Mant-ADP (Invitrogen) in 1:1 molar ratio (1 \u00b5M G40P hexamer, 1 \u00b5M mant-ADP). The final buffer conditions for the competitive titration was: 20 mM Tris-HCl pH 8, 50 mM NaCl, 10 mM MnCl2. Mant-ADP was excited at 360\u00a0\u00b1\u00a05 nm, Mant emission was observed at 440\u00a0\u00b1\u00a05 nm using Varian Cary Eclipse Fluorescence Spectrophotometer. The data was averaged over 5 s and five data points were taken and averaged. Addition of both, ATP or ATP\u03b3S, decreased the emission intensity indicating a competitive displacement of the prebound mant-ADP from G40P. The data was evaluated using a solution for a quadratic equation describing complex formation (Karow et al., 2007; Thrall et al., 1996) (Figure 4\u2014figure supplement 1c):\n\n$$\nF=F_{0}+\\frac{\u0394F_{max}}{[L_{tot}]}\u22c5(\\frac{[E_{tot}]+[L_{tot}]+K_{D}}{2}\u2212\\sqrt{(\\frac{[E_{tot}]+[L_{tot}]+K_{D}}{2})^{2}\u2212[E_{tot}][L_{tot}]}),\n$$\n\nwhere F0 denotes the unbound mant fluorescence, \u0394Fmax is the fluorescence amplitude, [Etot] the total enzyme concentration and [Ltot] the total ligand concentration and KD the apparent dissociation constant. Both ligands showed similar affinity (ATP\u03b3S KD\u00a0=\u00a01.4\u00a0\u00b1\u00a00.9 \u00b5M, ATP KD\u00a0=\u00a03.5\u00a0\u00b1\u00a00.8 \u00b5M). Assuming that ATP\u03b3S is a non-hydrolysable inhibitor, an extended Michaelis-Menten scheme with the enzyme either partitioning into the ATP-bound state and unwinding, or into the inhibitory ATP\u03b3S-bound state can be used to describe ATP\u03b3S competition. The apparent KM,app = \u03b1 * KM, with a\u00a0=\u00a01\u00a0+\u00a0[ATP\u03b3S]/KD(ATP\u03b3S) and the binding probability for ATP fbound = [ATP]/ (KM,app +[ATP]) can be calculated. The probability p(at least 1 ATP\u03b3S)=1 p(only ATP)=1 - fbound6 is then readily calculated. Due to ATP\u03b3S independent stalls this probability was offset by a fitted variable and then describes in good agreement our observed ATP\u03b3S -induced stalls (Figure 4\u2014figure supplement 1e inset).\n\n### Protein preparation\n\nG40P and DnaG were expressed and purified as described previously (Wang et al., 2008).\n",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "3fe23e50-1cb5-467b-81fe-d155f422e1ab",
+      "submission_id": "4fe5557f-658b-4b1e-96c0-d3c5748a2602",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sebastian Deindl, Uppsala University Sweden\n\nReviewers:\n- Maria Spies, University of Iowa United States\n\n## Review text\n\nDOI: [10.7554/eLife.42001.016](https://doi.org/10.7554/eLife.42001.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Hexameric helicase G40P unwinds DNA in single base pair steps\" for consideration by eLife. Your article has been favorably reviewed by four peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by John Kuriyan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Maria Spies (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Ha and colleagues examine the unwinding mechanism of G40P, a DnaB-family hexameric helicase from the phage SPP1. This helicase is weak in the sense that it readily unwinds AT base pairs but stalls at GC base pairs. The authors have creatively utilized this pausing signature in single-molecule FRET experiments to obtain evidence of DNA unwinding by this hexameric helicase in single-bp elementary steps. By spiking in ATP\u03b3S at varying stoichiometric ratios with respect to ATP, Schlierf et al. probe the inter-subunit coordination within the hexamer. Their results indicate that a single ATP\u03b3S is sufficient to stall unwinding, lending strong support for a sequential and highly coordinated model. Remarkably, this weak helicase is observed by the authors to unwind substantially more efficiently in the presence of the host primase DnaG. More importantly, this study reveals that underlying this is the ability of DnaG to suppress helicase slippage at GC base pairs. The authors provide a comprehensive model for coordinated unwinding and occasional slippage by integrating information from their single-molecule measurements with previous structural and biochemical work.\n\nThis manuscript is well presented, highly interesting, technically of high quality, and reports exciting new and timely data that fill important gaps in our understanding of the dynamics, coordination, and function of hexameric helicases. The approach to calibrating the single-molecule FRET assay is novel and creative.\n\nWe have the following suggestions to improve the manuscript:\n\nEssential revisions:\n\n1) The distributions of stalling FRET values together with the calibration in Figure 1H provide an elegant means for inferring step size. That said, the observation of consecutive pauses would provide additional support for these conclusions. It is not clear whether such consecutive pauses (separated by 1 bp) were observed (e.g., in the traces shown in Figure 1F). The authors should comment on whether (and how frequently) they observed consecutive pauses for the 2/3 GC substrates. Did the authors test other conditions favoring such observations (e.g. low [ATP], temperature etc.)?\n\n2) The most parsimonious explanation for the data presented in this manuscript is indeed that DNA unwinding by G40P proceeds homogenously in single-bp elementary steps. However, less likely models/mechanisms with variable step sizes could potentially explain the data as well. For example, a mechanism is conceivable where a GC pair might act as a barrier that could \"synchronize\" helicases that otherwise would have a larger step size. Though such models seem less likely, the authors should comment on this.\n\n3) The authors should consider analyzing the unwinding time distributions as a function of the unwound duplex length (preferably at different [ATP]) using the calibration constructs, to obtain more information on the kinetic step sizes of unwinding.\n",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c8c83b64-a7bf-4e05-8ee1-d4339fab4ebd",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C1",
+      "claim": "Most replicative helicases are hexameric, ring-shaped motor proteins that translocate on and unwind DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Most replicative helicases are hexameric, ring-shaped motor proteins that translocate on and unwind DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about replicative helicases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "d5f77163-02a2-4ad0-a2e1-84d3780aa365",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C2",
+      "claim": "G40P by itself is a very weak helicase that stalls at barriers as small as a single GC base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-resolution assay revealed that G40P by itself is a very weak helicase that stalls at barriers as small as a single GC base pair and unwinds DNA with the step size of a single base pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the single-molecule fluorescence assay showing stalling at GC base pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "6e9de553-0520-453a-93e3-7b2368b1edcf",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C3",
+      "claim": "G40P unwinds DNA with the step size of a single base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-resolution assay revealed that G40P by itself is a very weak helicase that stalls at barriers as small as a single GC base pair and unwinds DNA with the step size of a single base pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from FRET measurements showing discrete stall levels corresponding to single base pair steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "1c3a9563-c38e-4752-ad85-678b6ce9fd14",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C4",
+      "claim": "Binding of a single ATP\u03b3S could stall unwinding, demonstrating highly coordinated ATP hydrolysis between six identical subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of a single ATP\u03b3S could stall unwinding, demonstrating highly coordinated ATP hydrolysis between six identical subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing linear dependence of stalling on ATP\u03b3S concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "57275dbe-121a-4a3c-9600-bbafe2b5dc61",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C5",
+      "claim": "Frequent slippage of the helicase is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed frequent slippage of the helicase, which is fully suppressed by the primase DnaG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations in single-molecule traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "0cb65c0e-ffab-490a-b53a-bd8f3600dfa9",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C6",
+      "claim": "Slippage of G40P is fully suppressed by the primase DnaG.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed frequent slippage of the helicase, which is fully suppressed by the primase DnaG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing slippage events with and without DnaG.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "80c23406-da00-4648-a721-c65b18618d65",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C7",
+      "claim": "Helicases are essential enzymes for all life forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Helicases are essential enzymes for all life forms and catalyze the separation of double-stranded nucleic acids (dsNA) into single-stranded nucleic acids (ssNA), and many of these enzymes involved in DNA repair, DNA recombination and transcription termination are linked to human diseases (Crampton et al., 2006; Enemark and Joshua-Tor, 2008; Enemark and Joshua-Tor, 2006; Gai et al., 2004; Johnson et al., 2007; Lionnet et al., 2007; Lohman et al., 2008; Manosas et al., 2009; Pandey et al., 2009; Patel and Picha, 2000; Rasnik et al., 2006b; Ribeck et al., 2010; Rothenberg et al., 2007; Singleton et al., 2000; Thomsen and Berger, 2009; Wang et al., 2008; Yodh et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies and represents established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "0b86876a-47e9-451f-91c2-f8a49866a53d",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C8",
+      "claim": "Helicases catalyze the separation of double-stranded nucleic acids (dsNA) into single-stranded nucleic acids (ssNA).",
+      "claim_type": "EXPLICIT",
+      "source": "Helicases are essential enzymes for all life forms and catalyze the separation of double-stranded nucleic acids (dsNA) into single-stranded nucleic acids (ssNA), and many of these enzymes involved in DNA repair, DNA recombination and transcription termination are linked to human diseases (Crampton et al., 2006; Enemark and Joshua-Tor, 2008; Enemark and Joshua-Tor, 2006; Gai et al., 2004; Johnson et al., 2007; Lionnet et al., 2007; Lohman et al., 2008; Manosas et al., 2009; Pandey et al., 2009; Patel and Picha, 2000; Rasnik et al., 2006b; Ribeck et al., 2010; Rothenberg et al., 2007; Singleton et al., 2000; Thomsen and Berger, 2009; Wang et al., 2008; Yodh et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents established knowledge about helicase function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "2ebbc46c-320f-44d8-9b4a-c597258a2a13",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C9",
+      "claim": "Many helicases involved in DNA repair, DNA recombination and transcription termination are linked to human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Helicases are essential enzymes for all life forms and catalyze the separation of double-stranded nucleic acids (dsNA) into single-stranded nucleic acids (ssNA), and many of these enzymes involved in DNA repair, DNA recombination and transcription termination are linked to human diseases (Crampton et al., 2006; Enemark and Joshua-Tor, 2008; Enemark and Joshua-Tor, 2006; Gai et al., 2004; Johnson et al., 2007; Lionnet et al., 2007; Lohman et al., 2008; Manosas et al., 2009; Pandey et al., 2009; Patel and Picha, 2000; Rasnik et al., 2006b; Ribeck et al., 2010; Rothenberg et al., 2007; Singleton et al., 2000; Thomsen and Berger, 2009; Wang et al., 2008; Yodh et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "0fdea866-1da6-449a-926d-bee0d2d8eceb",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C10",
+      "claim": "Non-hexameric helicases with a pair of RecA-like domains are members of SF I and SF II.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-hexameric helicases with a pair of RecA-like domains are members of SF I and SF II, and are involved in DNA maintenance including repair, Holliday junction migration, chromatin remodeling, RNA melting and RNA-binding protein displacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established classification of helicases, supported by citation to Berger, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "3db8746a-07bb-46b1-a825-c31a6cd72253",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C11",
+      "claim": "SF I and SF II helicases are involved in DNA maintenance including repair, Holliday junction migration, chromatin remodeling, RNA melting and RNA-binding protein displacement.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-hexameric helicases with a pair of RecA-like domains are members of SF I and SF II, and are involved in DNA maintenance including repair, Holliday junction migration, chromatin remodeling, RNA melting and RNA-binding protein displacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge about helicase functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "397f12cf-3bc4-40c7-b1a4-c76b0ffd5765",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C12",
+      "claim": "Hexameric or dodecameric helicases are classified into SF III-VI.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexameric or dodecameric helicases are classified into SF III-VI and are key players in DNA replication and transcription termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established helicase classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "0b0681ab-54cb-49c1-af2f-9c6364cdc0d9",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C13",
+      "claim": "Hexameric or dodecameric helicases are key players in DNA replication and transcription termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexameric or dodecameric helicases are classified into SF III-VI and are key players in DNA replication and transcription termination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge about helicase functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "ebc2f170-b93e-49c9-88bf-8079e64c136e",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C14",
+      "claim": "SF III and SF VI helicases share a common fold called the AAA+ fold.",
+      "claim_type": "EXPLICIT",
+      "source": "SF III and SF VI helicases share a common fold called the AAA+ fold and members of the SF IV and V share the RecA-like fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural knowledge of helicases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "de6c08f6-139c-4fe3-80a6-abe7f495f616",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C15",
+      "claim": "Members of the SF IV and V share the RecA-like fold.",
+      "claim_type": "EXPLICIT",
+      "source": "SF III and SF VI helicases share a common fold called the AAA+ fold and members of the SF IV and V share the RecA-like fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural knowledge of helicases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "27829e25-55aa-4e93-96f5-685395d1f952",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C16",
+      "claim": "Both AAA+ fold and RecA-like fold are structurally members of the ASCE (additional strand conserved E) superfamily of enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both folds are structurally members of the ASCE (additional strand conserved E) superfamily of enzymes that consists of various multimeric enzymes with extremely diverse function (Erzberger and Berger, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Erzberger and Berger, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "01d99523-2c36-45a2-bcd2-d5fb16eb8f32",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C17",
+      "claim": "The ASCE superfamily consists of various multimeric enzymes with extremely diverse function.",
+      "claim_type": "EXPLICIT",
+      "source": "Both folds are structurally members of the ASCE (additional strand conserved E) superfamily of enzymes that consists of various multimeric enzymes with extremely diverse function (Erzberger and Berger, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Erzberger and Berger, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "bf937dc8-70ac-471a-9fbc-8e0d35df840d",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C18",
+      "claim": "Forward translocation of ring-shaped helicases on nucleic acids lattice is promoted by ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Forward translocation of ring-shaped helicases on nucleic acids lattice is promoted by ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about helicase mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "5db8c05a-4d05-4e09-803a-a716d58fcbd0",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C19",
+      "claim": "Two distinct models have been proposed concerning how the hydrolysis of ATP molecules in a multi-subunit enzyme is coordinated between the subunits: a sequential, 'staircase-like' model for ATP hydrolysis and a concerted ATP hydrolysis model.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on crystal structures, two distinct models have been proposed concerning how the hydrolysis of ATP molecules in a multi-subunit enzyme is coordinated between the subunits: a sequential, 'staircase-like' model for ATP hydrolysis and a concerted ATP hydrolysis model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by inference from crystal structures mentioned in the text.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "0dfc6ce9-1104-45cf-8cbf-b2282698fd92",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C20",
+      "claim": "The staircase model is based on the structures of BPV E1 helicase bound to ssDNA and E. coli Rho helicase bound to ssRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The staircase model based on the structures of BPV E1 helicase bound to ssDNA and E. coli Rho helicase bound to ssRNA (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009) entails sequential hydrolysis of ATP around the hexameric ring, and one nt translocation for every ATP hydrolyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "77a1a8d6-426b-4e10-bafa-8a37c253b255",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C21",
+      "claim": "The staircase model entails sequential hydrolysis of ATP around the hexameric ring, and one nt translocation for every ATP hydrolyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "The staircase model based on the structures of BPV E1 helicase bound to ssDNA and E. coli Rho helicase bound to ssRNA (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009) entails sequential hydrolysis of ATP around the hexameric ring, and one nt translocation for every ATP hydrolyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from structural data cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "6808f45b-3a1f-44d8-b3dd-3eee435f9fd5",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C22",
+      "claim": "The unwinding step size has been proposed to be one base pair by extension of the staircase model, but this has not been experimentally tested.",
+      "claim_type": "EXPLICIT",
+      "source": "By extension, the unwinding step size has been proposed to be one base pair (bp) but this has not been experimentally tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the lack of experimental evidence for a proposed model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "0f191b5d-c906-45e1-b13c-f7b7859ed203",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C23",
+      "claim": "The concerted hydrolysis model is based on the all-or-nothing nucleotide occupancy of SV40 Large T antigen structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The concerted hydrolysis model based on the all-or-nothing nucleotide occupancy of SV40 Large T antigen structures (Gai et al., 2004) posits that the six ATP binding sites fire simultaneously, moving on the DNA by an increment determined by the stroke size of the DNA binding motif, which can be larger than 1 nt or 1 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "cb485b17-111a-4075-b7ee-660d56aff7ed",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C24",
+      "claim": "The concerted hydrolysis model posits that the six ATP binding sites fire simultaneously, moving on the DNA by an increment determined by the stroke size of the DNA binding motif, which can be larger than 1 nt or 1 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "The concerted hydrolysis model based on the all-or-nothing nucleotide occupancy of SV40 Large T antigen structures (Gai et al., 2004) posits that the six ATP binding sites fire simultaneously, moving on the DNA by an increment determined by the stroke size of the DNA binding motif, which can be larger than 1 nt or 1 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from structural data cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "cc52aaa8-ccd9-45dc-a5fc-25676c1d2c8e",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C25",
+      "claim": "For T7 gp4 helicase-primase, structural and ensemble kinetic data suggested a sequential hydrolysis mechanism during DNA translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "For T7 gp4 helicase-primase, structural and ensemble kinetic data (Crampton et al., 2006; Liao et al., 2005; Singleton et al., 2000) suggested a sequential hydrolysis mechanism during DNA translocation, and with the one-to-one coupling between nucleotide unwinding and base pair unwinding (Pandey and Patel, 2014), but the estimated unwinding step size is either larger than 1 bp (Johnson et al., 2007) or is variable depending on the GC content of the duplex DNA (Donmez and Patel, 2008; Syed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural and kinetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "09049185-77a6-4108-9d8d-6d415f1c8ea7",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C26",
+      "claim": "For T7 gp4, there is one-to-one coupling between nucleotide unwinding and base pair unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "For T7 gp4 helicase-primase, structural and ensemble kinetic data (Crampton et al., 2006; Liao et al., 2005; Singleton et al., 2000) suggested a sequential hydrolysis mechanism during DNA translocation, and with the one-to-one coupling between nucleotide unwinding and base pair unwinding (Pandey and Patel, 2014), but the estimated unwinding step size is either larger than 1 bp (Johnson et al., 2007) or is variable depending on the GC content of the duplex DNA (Donmez and Patel, 2008; Syed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pandey and Patel, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "e3957c34-af70-4b15-a5a6-aea982457a75",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C27",
+      "claim": "The estimated unwinding step size for T7 gp4 is either larger than 1 bp or is variable depending on the GC content of the duplex DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For T7 gp4 helicase-primase, structural and ensemble kinetic data (Crampton et al., 2006; Liao et al., 2005; Singleton et al., 2000) suggested a sequential hydrolysis mechanism during DNA translocation, and with the one-to-one coupling between nucleotide unwinding and base pair unwinding (Pandey and Patel, 2014), but the estimated unwinding step size is either larger than 1 bp (Johnson et al., 2007) or is variable depending on the GC content of the duplex DNA (Donmez and Patel, 2008; Syed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies showing conflicting results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "0e0c14c4-2046-4362-ac45-bc78211fbcc0",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C28",
+      "claim": "Rho helicase is proposed to move in one nt steps.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Rho helicase proposed to move in one nt steps (Thomsen and Berger, 2009), chemical interference data suggest that Rho needs to reset itself after it unwinds about ~7 bp (Schwartz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Thomsen and Berger, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "3b07b2c2-1f76-4c6c-a3e0-7e75fec88976",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C29",
+      "claim": "Chemical interference data suggest that Rho needs to reset itself after it unwinds about ~7 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Rho helicase proposed to move in one nt steps (Thomsen and Berger, 2009), chemical interference data suggest that Rho needs to reset itself after it unwinds about ~7 bp (Schwartz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schwartz et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "3e0a18c7-7561-4f0c-9fd4-62335811228b",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C30",
+      "claim": "For DnaB, ensemble kinetic studies supported a sequential ATP hydrolysis mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "For DnaB, ensemble kinetic studies supported a sequential ATP hydrolysis mechanism (Roychowdhury et al., 2009) with an unwinding step size of 1 bp (Galletto et al., 2004), but DnaB structure bound to ssDNA showed that one subunit of DnaB hexamer binds two nucleotides, leading to the proposal that DnaB unwinds DNA in two base pair steps (Itsathitphaisarn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roychowdhury et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "2a144fc8-3461-4838-bc9f-ff91d9c8ad38",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C31",
+      "claim": "For DnaB, the unwinding step size was determined to be 1 bp by ensemble kinetic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "For DnaB, ensemble kinetic studies supported a sequential ATP hydrolysis mechanism (Roychowdhury et al., 2009) with an unwinding step size of 1 bp (Galletto et al., 2004), but DnaB structure bound to ssDNA showed that one subunit of DnaB hexamer binds two nucleotides, leading to the proposal that DnaB unwinds DNA in two base pair steps (Itsathitphaisarn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Galletto et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "9e749ee0-56ac-4f35-b3cf-05ea93e1cc00",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C32",
+      "claim": "DnaB structure bound to ssDNA showed that one subunit of DnaB hexamer binds two nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "For DnaB, ensemble kinetic studies supported a sequential ATP hydrolysis mechanism (Roychowdhury et al., 2009) with an unwinding step size of 1 bp (Galletto et al., 2004), but DnaB structure bound to ssDNA showed that one subunit of DnaB hexamer binds two nucleotides, leading to the proposal that DnaB unwinds DNA in two base pair steps (Itsathitphaisarn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to structural study Itsathitphaisarn et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "61871efe-62c6-41a6-9931-9ff7cc4bbc33",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C33",
+      "claim": "Based on DnaB structure, it has been proposed that DnaB unwinds DNA in two base pair steps.",
+      "claim_type": "EXPLICIT",
+      "source": "For DnaB, ensemble kinetic studies supported a sequential ATP hydrolysis mechanism (Roychowdhury et al., 2009) with an unwinding step size of 1 bp (Galletto et al., 2004), but DnaB structure bound to ssDNA showed that one subunit of DnaB hexamer binds two nucleotides, leading to the proposal that DnaB unwinds DNA in two base pair steps (Itsathitphaisarn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from structural data cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "c7791031-8fb7-4fc2-a4c5-9aba19d927a7",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C34",
+      "claim": "The DNA packaging motor from \u03d529 was shown to package dsDNA in a hierarchy of non-integer, 2.5 bp steps, pausing after packaging 10 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "In the most comprehensive analysis of stepping by a ring-shaped motor on DNA, the DNA packaging motor from \u03d529 was shown to package dsDNA in a hierarchy of non-integer, 2.5 bp steps, pausing after packaging 10 bp (Moffitt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Moffitt et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "9f176c78-8338-4138-a6eb-02f12d32f201",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C35",
+      "claim": "G40P is a DnaB type hexameric helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "We probed the helicase activity of the phage SPP1 G40P, a DnaB type hexameric helicase (Berger, 2008; Pedr\u00e9 et al., 1994; Wang et al., 2008) required for phage replication in its bacterial host, using an unwinding assay (Ha et al., 2002; Myong et al., 2007; Pandey et al., 2009; Syed et al., 2014; Yodh et al., 2009) based on single-molecule FRET (Ha et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "634a210f-5147-4f36-a967-6b10bbc14470",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C36",
+      "claim": "G40P is required for phage replication in its bacterial host.",
+      "claim_type": "EXPLICIT",
+      "source": "We probed the helicase activity of the phage SPP1 G40P, a DnaB type hexameric helicase (Berger, 2008; Pedr\u00e9 et al., 1994; Wang et al., 2008) required for phage replication in its bacterial host, using an unwinding assay (Ha et al., 2002; Myong et al., 2007; Pandey et al., 2009; Syed et al., 2014; Yodh et al., 2009) based on single-molecule FRET (Ha et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "c51fed82-9ec4-444e-841d-df02756a55d3",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C37",
+      "claim": "The substrate is a 40 bp duplex DNA with 3' and 5' single stranded poly-dT tails, both 31 nt long, to mimic a replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "The substrate is a 40 bp duplex DNA with 3' and 5' single stranded poly-dT tails, both 31 nt long, to mimic a replication fork, and is immobilized to a polymer-passivated surface via a biotin-neutravidin linker (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design and is shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "a9ba90f2-742a-407d-ab3d-bc705fe0a7a9",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C38",
+      "claim": "FRET between the donor (Cy3) and the acceptor (Cy5) fluorophores conjugated to the fork was used to follow individual DNA unwinding in real time.",
+      "claim_type": "EXPLICIT",
+      "source": "FRET between the donor (Cy3) and the acceptor (Cy5) fluorophores conjugated to the fork was used to follow individual DNA unwinding in real time (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "2aa24a22-3d99-4cf8-aeed-44f65d14e18e",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C39",
+      "claim": "Duplex unwinding increases the time-averaged distance between the fluorophores therefore causing a reduction in FRET.",
+      "claim_type": "EXPLICIT",
+      "source": "Duplex unwinding increases the time-averaged distance between the fluorophores therefore causing a reduction in FRET, and unwinding completion results in the release of the donor-labeled strand from the surface and an abrupt disappearance of total fluorescence (Figure 1b and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the FRET mechanism and is supported by data shown in figures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "5d45221e-4853-41f7-aaba-0a70e2786211",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C40",
+      "claim": "Unwinding completion results in the release of the donor-labeled strand from the surface and an abrupt disappearance of total fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Duplex unwinding increases the time-averaged distance between the fluorophores therefore causing a reduction in FRET, and unwinding completion results in the release of the donor-labeled strand from the surface and an abrupt disappearance of total fluorescence (Figure 1b and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "1e0d1989-4c3a-4826-a441-bb612618ce35",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C41",
+      "claim": "Typical unwinding trajectories of all AT base pairs displayed a smooth and rapid FRET decrease at 1 mM ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial experiments were carried out using a DNA substrate with all AT base pairs (40 bp) and typical unwinding trajectories displayed a smooth and rapid FRET decrease at 1 mM ATP (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "f9232e99-da49-463b-9171-475c6b7e6d4c",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C42",
+      "claim": "The kinetic step size of G40P on all AT substrate is ~4 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the unwinding time histogram with a Gamma distribution allowed us to estimate a kinetic step size of ~4 bp, obtained by dividing the number of bp unwound by the number of identical rate-limiting steps required for full unwinding (Park et al., 2010) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from data analysis using Gamma distribution fitting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "b0f57892-748c-49fa-86ef-a74e65d54519",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C43",
+      "claim": "The kinetic step size of 4 bp should be considered an upper limit because unwinding time distributions can be broadened due to molecular heterogeneities.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinetic step size of 4 bp here should be considered an upper limit because these unwinding time distributions can be broadened due to molecular heterogeneities, likely leading to an overestimation of the kinetic step size (Park et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known limitations of the analysis method, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "c612a449-b577-4ce3-acaa-23ab91fb1492",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C44",
+      "claim": "When a single GC bp was inserted in the 11th position, a large fraction (65%) of unwinding trajectories showed a stall before full unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when we repeated the experiment with a single GC bp inserted in the 11th position in otherwise all AT sequences (Figure 1a), a large fraction (65%) of unwinding trajectories showed a stall before full unwinding, with a characteristic stall lifetime of 79 \u00b1 5 ms (Figure 1d and Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "06f488c0-2678-4178-bafd-dae31725b88c",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C45",
+      "claim": "The characteristic stall lifetime at a single GC base pair is 79 \u00b1 5 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when we repeated the experiment with a single GC bp inserted in the 11th position in otherwise all AT sequences (Figure 1a), a large fraction (65%) of unwinding trajectories showed a stall before full unwinding, with a characteristic stall lifetime of 79 \u00b1 5 ms (Figure 1d and Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "74d413d4-e856-442c-87cd-116eeeca9ec9",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C46",
+      "claim": "FRET efficiencies of the stalled state at a single GC bp were sharply distributed around EFRET = 0.52 \u00b1 0.04.",
+      "claim_type": "EXPLICIT",
+      "source": "FRET efficiencies of the stalled state were sharply distributed around EFRET = 0.52 \u00b1 0.04 (blue lines in Figure 1g), indicating that the stall occurs after a well-defined number of base pairs, presumably ten, have been unwound and is caused by a single GC base pair.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "bdfea9ca-88d9-40cf-8953-3b0f2a559c7e",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C47",
+      "claim": "The stall at a single GC bp occurs after a well-defined number of base pairs, presumably ten, have been unwound.",
+      "claim_type": "EXPLICIT",
+      "source": "FRET efficiencies of the stalled state were sharply distributed around EFRET = 0.52 \u00b1 0.04 (blue lines in Figure 1g), indicating that the stall occurs after a well-defined number of base pairs, presumably ten, have been unwound and is caused by a single GC base pair.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the sharp distribution of FRET values and the position of the GC bp.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "5ec123f4-a722-48b2-8347-60df7ba2f8f6",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C48",
+      "claim": "Individual traces revealed helicase slippage events, where partial unwinding is reverted before another unwinding attempt is made.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual traces revealed helicase slippage events, where partial unwinding is reverted before another unwinding attempt is made (Figure 1d, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "749faf3e-10b9-4693-b0d8-8dcce363ac4d",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C49",
+      "claim": "The lag time between successive unwinding attempts is less than 1 s on average, which is about 20-fold shorter than the de novo unwinding initiation time.",
+      "claim_type": "EXPLICIT",
+      "source": "The lag time between successive unwinding attempts is less than 1 s on average, which is about 20-fold shorter than the de novo unwinding initiation time (see Materials and methods and Figure 1\u2014figure supplement 1d), implying that the same enzyme is responsible for multiple partial unwinding and slippage events (Ha et al., 2002; Sun et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and comparison with initiation time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "01509a38-256f-41c0-9df1-f3edf0f4bbbf",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C50",
+      "claim": "The same enzyme is responsible for multiple partial unwinding and slippage events.",
+      "claim_type": "EXPLICIT",
+      "source": "The lag time between successive unwinding attempts is less than 1 s on average, which is about 20-fold shorter than the de novo unwinding initiation time (see Materials and methods and Figure 1\u2014figure supplement 1d), implying that the same enzyme is responsible for multiple partial unwinding and slippage events (Ha et al., 2002; Sun et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the short lag time between attempts, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "7f9b27a3-aa61-47f6-8d49-7f3189c66a58",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C51",
+      "claim": "In most slippage events followed by another unwinding attempt, the FRET efficiency returned to its original high value of DNA itself, indicating that the helicase slips backwards at least 10 base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "In most slippage events followed by another unwinding attempt, the FRET efficiency returned to its original high value of DNA itself, indicating that the helicase slips backwards at least 10 base pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the FRET efficiency returning to the original value.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "95893851-1422-4a0c-a5eb-ab0518fe2d25",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C52",
+      "claim": "T7gp4 helicase was observed to slip backwards hundreds of base pairs in unfavorable nucleotide conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, T7gp4 helicase was observed to slip backwards hundreds of base pairs in unfavorable nucleotide conditions (Sun et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sun et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "ddfd4faa-a702-493f-9055-d7e91008f626",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C53",
+      "claim": "DNA with 2 GC bp (11th and 12th bp) showed stalls at two distinct FRET levels (EFRET = 0.53 \u00b1 0.04 and EFRET = 0.39 \u00b1 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "DNA with 2 GC bp (11th and 12th bp) showed stalls at two distinct FRET levels (EFRET = 0.53 \u00b1 0.04 and EFRET = 0.39 \u00b1 0.04) determined from Gaussian fitting of EFRET distribution of stalled states (Figure 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "05951258-3495-4291-9e67-864d71544352",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C54",
+      "claim": "The first stall with 2 GC bp occurred at the same FRET level as observed with 1 GC bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the first stall occurred at the same FRET level as observed with 1 GC bp, we attribute the second stall to the second GC bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing FRET levels between different substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "849eb5c1-16e0-4bb2-8f58-0ecadff51117",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C55",
+      "claim": "Two GC bp reduced full unwinding events to 57% of the traces.",
+      "claim_type": "EXPLICIT",
+      "source": "Two GC bp reduced full unwinding events to 57% of the traces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "5634d041-df1a-4fe1-b287-6940eb390973",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C56",
+      "claim": "Complete unwinding trajectories were 12% for the DNA with 3 GC bp (11th, 12th and 13th bp).",
+      "claim_type": "EXPLICIT",
+      "source": "Complete unwinding trajectories were even rarer (12%) for the DNA with 3 GC bp (11th, 12th and 13th bp).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "f295cd34-38dd-4f5c-affc-0cea9e69f2c3",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C57",
+      "claim": "Stalls with 3 GC bp are distributed in three distinct FRET levels with two main peaks centered at EFRET = 0.52 \u00b1 0.04 and EFRET = 0.38 \u00b1 0.04 and a small peak at EFRET = 0.27 \u00b1 0.04.",
+      "claim_type": "EXPLICIT",
+      "source": "Stalls were identified from all traces, predominantly from unsuccessful unwinding attempts and are distributed in three distinct FRET levels with two main peaks centered at EFRET = 0.52 \u00b1 0.04 and EFRET = 0.38 \u00b1 0.04 and a small peak at EFRET = 0.27 \u00b1 0.04 (Figure 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "1c882493-8d2d-46de-adbb-59ec682ab371",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C58",
+      "claim": "Crystallographic structures on ring-shaped helicases suggest step sizes between one and six nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "The aforementioned crystallographic structures on ring-shaped helicases suggest step sizes between one and six nucleotides, resulting from a staircase like or spring-loaded or concerted ATP hydrolysis model (Enemark and Joshua-Tor, 2006; Gai et al., 2004; Itsathitphaisarn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "b50bbbb0-e427-4439-b307-b5a59618c5d9",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C59",
+      "claim": "Recent experimental studies have reported for hexameric helicases step sizes from one to three nucleotides depending on the GC content of the template.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experimental studies have reported for hexameric helicases step sizes from one to three nucleotides depending on the GC content of the template (Syed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Syed et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "fa524f59-e518-4a32-b015-26d22056b7ac",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C60",
+      "claim": "One, two or three discrete FRET values of stalled states induced by one, two or three GC base pairs suggest that unwinding occurs in single base pair steps.",
+      "claim_type": "EXPLICIT",
+      "source": "One, two or three discrete FRET values of stalled states in our data induced by one, two or three GC base pairs suggest that unwinding occurs in single base pair steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pattern of discrete FRET values observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "0f2a6464-ee88-4c68-92f2-b603d70f0e72",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C61",
+      "claim": "A calibration curve was obtained between the number of base pairs unwound and the FRET efficiency using four different DNA constructs that have m AT base pairs followed by (40-m) GC base pairs (m = 4, 7, 10 and 13).",
+      "claim_type": "EXPLICIT",
+      "source": "As a further test, we obtained a calibration curve between the number of base pairs unwound and the FRET efficiency by performing the reaction using four different DNA constructs that have m AT base pairs followed by (40 m) GC base pairs (m = 4, 7, 10 and 13), which stalls the unwinding reaction presumably at the boundary between AT and GC base pairs (Figure 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental approach for calibration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "d10e5400-fcb9-471d-bd39-d524cfd4ee42",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C62",
+      "claim": "The stall FRET levels from the one, two and three consecutive GC base pairs fall within error in single base pair steps on the calibration curve.",
+      "claim_type": "EXPLICIT",
+      "source": "The stall FRET levels from the one, two and three consecutive GC base pairs fall within error in single base pair steps on our calibration curve (see Materials and methods and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of experimental data with the calibration curve.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "84e25fe0-3006-446c-9796-0ae3d6364056",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C63",
+      "claim": "Recent optical trap studies of the nonhexameric helicase HCV NS3 and XPD observed single base pair steps during unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent optical trap studies of the nonhexameric helicase HCV NS3 and XPD observed the long anticipated single base pair steps during unwinding (Cheng et al., 2011; Qi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to optical trap studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "4218843d-daa6-48be-9762-8d3d386554ef",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C64",
+      "claim": "Changing the solution condition from 10 mM MgCl2 to 10 mM CaCl2 slowed down unwinding significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, changing the solution condition from 10 mM MgCl2 to 10 mM CaCl2, slowed down unwinding significantly and allowed in the all AT substrate direct observation of individual steps, which occurred at similar FRET values to those observed for the GC bp induced pauses (Figure 1\u2014figure supplement 3), consistent with single bp unwinding of AT base pairs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "b50b7c04-5f37-483a-a8ff-b8bd49238aed",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C65",
+      "claim": "In CaCl2 conditions, individual steps in the all AT substrate occurred at similar FRET values to those observed for the GC bp induced pauses, consistent with single bp unwinding of AT base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, changing the solution condition from 10 mM MgCl2 to 10 mM CaCl2, slowed down unwinding significantly and allowed in the all AT substrate direct observation of individual steps, which occurred at similar FRET values to those observed for the GC bp induced pauses (Figure 1\u2014figure supplement 3), consistent with single bp unwinding of AT base pairs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from comparing FRET values under different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "611a6bfa-deff-4a5d-9ab9-ef7ad8fa144d",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C66",
+      "claim": "The GC base pair induced pauses of the helicase imply that unwinding depends at least partially on the thermal fraying of the base pairs due to the higher thermodynamic stability of GC vs AT base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The GC base pair induced pauses of the helicase imply that unwinding depends at least partially on the thermal fraying of the base pairs due to the higher thermodynamic stability of GC vs AT base pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that GC base pairs cause stalling.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "fccee732-c926-4c66-8d63-c459c179dba7",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C67",
+      "claim": "Raising the experiment temperature increased the percentage of full unwinding events for the three GC bp construct from 12% at 21\u00b0C to 62% at 33\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Raising the experiment temperature increased the percentage of full unwinding events for the three GC bp construct, that is 62% vs. 12% at 33\u00b0C vs. 21\u00b0C, respectively (Supplementary file 1 - Table S2 and Figure 1\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Supplementary file 1 - Table S2 and Figure 1\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "c2ce7b4d-1e71-4456-91e7-8464d4945ed8",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C68",
+      "claim": "Structural studies of DnaB showed each DNA binding loop contacting two nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, structural studies of DnaB showed each DNA binding loop contacting two nucleotides (Itsathitphaisarn et al., 2012), leading to the step size of 2 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "9fc79f62-0803-469e-a1c4-c8b837cc3b4f",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C69",
+      "claim": "Single-molecule studies of T7gp4 observed 2\u20133 bp apparent step sizes but with the step likely requiring 2\u20133 nucleotides hydrolyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule studies of T7gp4 observed 2\u20133 bp apparent step sizes but with the step likely requiring 2\u20133 nucleotides hydrolyzed (Syed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Syed et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "ac00b87d-4189-4746-a859-28e6b9125595",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C70",
+      "claim": "G40P may possess variable step size, depending on the load, and under experimental conditions that slow down translocation, G40P may switch to a 1 bp step size.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we could also imagine that G40P possesses variable step size, depending on the load, and under our experimental conditions that slow down translocation, G40P may switch to a 1 bp step size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "6572c694-fcfb-4f91-ac6c-c3ef09ab5e9c",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C71",
+      "claim": "Gear switching was proposed for other ring-like ATPases, for example the AAA+ protease ClpXP and dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "Gear switching was also proposed for other ring-like ATPases, for example the AAA+ protease ClpXP (Sen et al., 2013) and dynein (Mallik et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on other ATPases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "38b36e0c-a055-44d3-81ab-96454fa11a9c",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C72",
+      "claim": "DnaG, the host primase, stimulates ATPase and unwinding activities of DnaB and G40P.",
+      "claim_type": "EXPLICIT",
+      "source": "Because DnaG, the host primase, stimulates ATPase and unwinding activities of DnaB and G40P (Bird et al., 2000; Wang et al., 2008), we tested the effect of DnaG by forming a complex of G40P with the Bacillus subtilis primase DnaG in a ratio of 1:3 (Wang et al., 2008) before adding the complex to the immobilized DNA to initiate unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "c35da7c4-88d3-492e-bf1b-a0317ec4daef",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C73",
+      "claim": "The yield of complete unwinding increased from 12% without DnaG to 58% with DnaG for the substrate with 3 GC bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the yield of complete unwinding increased from 12% without DnaG to 58% with DnaG (Figure 3b and Supplementary file 1 - Table S1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3b and Supplementary file 1 - Table S1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "a01f3b66-4437-45a5-b703-2a3a9d62ef2c",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C74",
+      "claim": "DNA molecules showing full unwinding with DnaG did not show any slippage events.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA molecules showing full unwinding did not show any slippage events, suggesting a novel function of DnaG that stimulates unwinding by preventing slippage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "90aaba5d-ed3a-43a3-af73-145ff84d7bb6",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C75",
+      "claim": "DnaG stimulates unwinding by preventing slippage.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA molecules showing full unwinding did not show any slippage events, suggesting a novel function of DnaG that stimulates unwinding by preventing slippage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that slippage is absent with DnaG.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "4066e6ee-0103-4067-8f22-47c3c960359a",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C76",
+      "claim": "Stalling events were still observed in the presence of DnaG, but were less pronounced.",
+      "claim_type": "EXPLICIT",
+      "source": "Stalling events were still observed in the presence of DnaG, but were less pronounced (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "d91e7db2-6c0f-4560-87b8-7fb41630e5ec",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C77",
+      "claim": "Presence of other replication proteins may further assist the helicase unwinding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Presence of other replication proteins may further assist the helicase unwinding activity (Stano et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "e820aed9-145d-421c-8c24-600273c5ee5f",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C78",
+      "claim": "Slippage was observed using the 40 AT DNA but less frequently than with GC base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Slippage was also observed using the 40 AT DNA but less frequently (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "fdae0891-059c-490f-bb45-2419003fc494",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C79",
+      "claim": "T7 gp4, E1 and Rho helicase have higher affinities to ssNA in the nucleotide-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "Because T7 gp4, E1 and Rho helicase have higher affinities to ssNA in the nucleotide-bound state (Adelman et al., 2006; Enemark and Joshua-Tor, 2006; Hingorani and Patel, 1993; Thomsen and Berger, 2009) we hypothesized that slippage would occur more frequently at lower ATP concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "e1d6cd5d-2dc0-43f6-97a5-4c66a83a6611",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C80",
+      "claim": "At sub-saturating ATP concentrations, a significant increase of slippage events was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, at sub-saturating ATP concentrations we observed a significant increase of slippage events (Figure 3c) and the number of slippage events before complete unwinding increased for decreasing ATP concentrations (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3c and 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "d6108171-1329-45bd-b08b-a1131ebe63b0",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C81",
+      "claim": "The number of slippage events before complete unwinding increased for decreasing ATP concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, at sub-saturating ATP concentrations we observed a significant increase of slippage events (Figure 3c) and the number of slippage events before complete unwinding increased for decreasing ATP concentrations (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "cacdb93f-dd72-4c69-8582-dfb9955bafba",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C82",
+      "claim": "Inclusion of ADP in the reaction did not reduce or increase the slippage events significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of ADP in the reaction did not reduce or increase the slippage events significantly, indicating that the enzyme binds tightly to the DNA in both ATP and ADP bound states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "35f789a1-6d25-4b71-996d-6034e278d217",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C83",
+      "claim": "The enzyme binds tightly to the DNA in both ATP and ADP bound states.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of ADP in the reaction did not reduce or increase the slippage events significantly, indicating that the enzyme binds tightly to the DNA in both ATP and ADP bound states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that ADP does not affect slippage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "d1deb471-2347-4a99-b830-d551d5ddf7aa",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C84",
+      "claim": "The presence of DnaG significantly reduced the average number of slippage events per full unwinding (\u22482.5 fold) compared to G40P alone at all tested ATP concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of DnaG significantly reduced the average number of slippage events per full unwinding (\u22482.5 fold) compared to G40P alone at all tested ATP concentrations (Figure 3d, black triangles and Supplementary file 1 - Table S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3d and Supplementary file 1 - Table S3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "2fe7ba83-01d9-44d4-b346-2e97bfd9cf5c",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C85",
+      "claim": "The average unwinding time of the AT substrate with or without DnaG at saturating ATP conditions did not change.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the average unwinding time of the AT substrate with or without DnaG at saturating ATP conditions did not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "425b3bb6-ab8f-46ae-a257-cd3f0b804d10",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C86",
+      "claim": "ATP\u03b3S is a slowly hydrolysable analogue of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP\u03b3S is a slowly hydrolysable analogue of ATP, and both nucleotides have nearly identical dissociation constants for G40P binding as tested using Mant-ADP (see Materials and methods and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about ATP\u03b3S.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "9adac883-4909-4dd1-9723-51c38ab83c01",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C87",
+      "claim": "ATP and ATP\u03b3S have nearly identical dissociation constants for G40P binding.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP\u03b3S is a slowly hydrolysable analogue of ATP, and both nucleotides have nearly identical dissociation constants for G40P binding as tested using Mant-ADP (see Materials and methods and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "ade8d8af-bd4f-4b68-b111-4773546922c0",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C88",
+      "claim": "The unwinding rate of 40 bp decreased as the ATP\u03b3S concentration increased.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the unwinding rate of 40 bp, kunw, decreased as the ATP\u03b3S concentration increased (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "44add57d-7bed-4aee-abf5-ab93e4a21f6d",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C89",
+      "claim": "Unwinding traces with 2.5% ATP\u03b3S showed a pronounced stalling event that was rarely detected without ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "Close examination of the unwinding traces with 2.5% ATP\u03b3S showed a pronounced stalling event that was rarely detected without ATP\u03b3S (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "7b505054-f011-44f2-92a6-82e9edcff189",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C90",
+      "claim": "The stall during unwinding with ATP\u03b3S was observed at broadly distributed FRET levels, suggesting the stall occurs stochastically, not at a particular location on DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The stall during unwinding was observed at broadly distributed FRET levels (Figure 4e), suggesting the stall occurs stochastically, not at a particular location on DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the broad distribution of FRET levels shown in Figure 4e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "942ff18e-f52a-4974-a4ee-a432f71ef995",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C91",
+      "claim": "At elevated ATP\u03b3S (\u226520% ATP\u03b3S) no unwinding reaction was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At elevated ATP\u03b3S (\u226520% ATP\u03b3S) no unwinding reaction was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "943948d3-6ba9-4aa3-89a4-cfa10455e76a",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C92",
+      "claim": "The lifetime of the first stall during unwinding with ATP\u03b3S was 0.44 s \u00b1 0.01 s, independent of ATP\u03b3S percentage.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifetime of the first stall during unwinding was 0.44 s \u00b1 0.01 s, independent of ATP\u03b3S percentage (Figure 4c), suggesting that the stall occurs when the enzyme is bound by a well-defined number of ATP\u03b3S.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "0c328718-fb8c-40b6-b000-17381a9dc3be",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C93",
+      "claim": "The stall occurs when the enzyme is bound by a well-defined number of ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifetime of the first stall during unwinding was 0.44 s \u00b1 0.01 s, independent of ATP\u03b3S percentage (Figure 4c), suggesting that the stall occurs when the enzyme is bound by a well-defined number of ATP\u03b3S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the independence of stall lifetime on ATP\u03b3S concentration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "a947ea45-5910-4b07-970d-56f46f174fe0",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C94",
+      "claim": "The stalled fraction increased linearly between 0.125% and 1% ATP\u03b3S, indicating that the stall is caused by a single ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "The stalled fraction increased linearly between 0.125% and 1% ATP\u03b3S (Figure 4d, Figure 3\u2014figure supplement 1 and Materials and methods), indicating that the stall is caused by a single ATP\u03b3S.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the linear dependence of stalling on ATP\u03b3S concentration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "ec3dbdd3-be74-4682-bdd8-b4cda71502b9",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C95",
+      "claim": "A random ATP hydrolysis mechanism as observed for ClpX can be excluded for G40P.",
+      "claim_type": "EXPLICIT",
+      "source": "A random ATP hydrolysis mechanism as observed for ClpX, a AAA+ protein unfolding machine (Martin et al., 2005), can thus be excluded for G40P.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the single ATP\u03b3S stalling result, with citation for comparison.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "a94c25b1-9197-4788-8310-06bb573e7100",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C96",
+      "claim": "The model of a concerted ATP hydrolysis is very unlikely to apply to G40P.",
+      "claim_type": "EXPLICIT",
+      "source": "The model of a concerted ATP hydrolysis is very unlikely to apply to G40P considering the following results of our experiments: (i) The unwinding rate kunw versus ATP relation followed the Michaelis-Menten relation with a Hill coefficient close to 1, indicating that per enzymatic cycle only one ATP has to bind the enzyme (see Materials and methods). (ii) Our slippage data indicate that an ATP or ADP free helicase loses grip to the tracking strand and slips backward. A concerted ATP hydrolysis leads to an ATP/ADP free helicase and an elevated probability to slip backwards at every unwound bp, which would be highly inefficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from multiple experimental observations including Hill coefficient and slippage data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "2d729b22-1d60-4c55-a354-f69f1d58209c",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C97",
+      "claim": "The unwinding rate kunw versus ATP relation followed the Michaelis-Menten relation with a Hill coefficient close to 1, indicating that per enzymatic cycle only one ATP has to bind the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The model of a concerted ATP hydrolysis is very unlikely to apply to G40P considering the following results of our experiments: (i) The unwinding rate kunw versus ATP relation followed the Michaelis-Menten relation with a Hill coefficient close to 1, indicating that per enzymatic cycle only one ATP has to bind the enzyme (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the Hill coefficient analysis of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "103bc9d2-0795-4811-a81c-d6bc0ca694b6",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C98",
+      "claim": "Slippage data indicate that an ATP or ADP free helicase loses grip to the tracking strand and slips backward.",
+      "claim_type": "EXPLICIT",
+      "source": "Our slippage data indicate that an ATP or ADP free helicase loses grip to the tracking strand and slips backward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the slippage observations at low ATP concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "ba8a7e65-cf6b-4979-bcc3-532b136e1db4",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C99",
+      "claim": "A concerted ATP hydrolysis leads to an ATP/ADP free helicase and an elevated probability to slip backwards at every unwound bp, which would be highly inefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "A concerted ATP hydrolysis leads to an ATP/ADP free helicase and an elevated probability to slip backwards at every unwound bp, which would be highly inefficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanism of concerted hydrolysis and observed slippage behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "b0f51c39-8994-4eee-a2d8-279842792f14",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C100",
+      "claim": "Sequential nucleotide hydrolysis during ssNA translocation by hexameric helicases is well supported by structural analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential nucleotide hydrolysis during ssNA translocation by hexameric helicases is also well supported by structural analysis (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009) and was also observed in ssDNA translocation by T7gp4 (Crampton et al., 2006; Liao et al., 2005; Pandey and Patel, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural and experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "674982dc-0a21-43fd-89fb-16e5233631fa",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C101",
+      "claim": "Sequential nucleotide hydrolysis was observed in ssDNA translocation by T7gp4.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential nucleotide hydrolysis during ssNA translocation by hexameric helicases is also well supported by structural analysis (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009) and was also observed in ssDNA translocation by T7gp4 (Crampton et al., 2006; Liao et al., 2005; Pandey and Patel, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "b213db0f-768e-4c99-b0e7-040de5a8cf77",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C102",
+      "claim": "An optical tweezers study on T7gp4 proposed a sequential nucleotide hydrolysis after analyzing the slippage probability at various nucleotide conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "An optical tweezers study on T7gp4 proposed a sequential nucleotide hydrolysis after analyzing the slippage probability at various nucleotide conditions (Sun et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sun et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "3cb25be8-e617-475b-be06-18152e7e67a3",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C103",
+      "claim": "This study shows the first direct evidence for sequential hydrolysis during DNA unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show the first direct evidence for sequential hydrolysis during DNA unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the current study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "d34d5745-a646-4e75-80a8-bfd69ca7b4df",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C104",
+      "claim": "In the ATP and ADP bound state, G40P has a high affinity to the tracking strand.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ATP and ADP bound state, G40P has a high affinity to the tracking strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the slippage data and nucleotide binding experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "9dcf07f6-66bd-4e04-8753-1beefa0869b7",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C105",
+      "claim": "After ADP is released from one subunit the affinity of a central DNA-binding loop to the DNA backbone is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "After ADP is released from one subunit the affinity of a central DNA-binding loop to the DNA backbone is reduced (Figure 5a) (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from structural studies cited and illustrated in Figure 5a.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "ed6edd0f-a3bb-4b7e-b72c-fd1ac7591a0a",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C106",
+      "claim": "The DNA-binding loop moves and contacts the backbone phosphate of the next base pair to be unwound when an ATP binds to the subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "This loop then moves and contacts the backbone phosphate of the next base pair to be unwound when an ATP binds to the subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed mechanistic model based on structural and experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "145d6b65-fef6-45a9-aa41-3bc0fec81a89",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C107",
+      "claim": "If the next base pair is an AT base pair, it melts rapidly and the relief of the structural distortion within the enzyme catapults the protein forward by one base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "If the next base pair is an AT base pair, it melts rapidly and the relief of the structural distortion within the enzyme catapults the protein forward by one base pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed mechanistic model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "53916e58-8d22-487c-87b6-8502d071752d",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C108",
+      "claim": "In the case of a GC base pair, the melting step may be significantly slower, preventing a second DNA-binding loop from contacting the next base pair to be unwound because of steric constraints within the narrow central channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the case of a GC base pair, the melting step may be significantly slower, preventing a second DNA-binding loop from contacting the next base pair to be unwound because of steric constraints within the narrow central channel (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the proposed mechanistic model to explain GC-induced stalling.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "47321ed9-c51c-4fe2-8096-809a4e48628b",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C109",
+      "claim": "A structural study of SV40 LTag helicase suggested that unwinding does not occur by strand exclusion and the duplex DNA squeezes through the central pore.",
+      "claim_type": "EXPLICIT",
+      "source": "A structural study of SV40 LTag helicase suggested that unwinding does not occur by strand exclusion and the duplex DNA squeezes through the central pore (Li et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Li et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "a974ba21-f0fc-4f78-936e-9dc09061f7ae",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C110",
+      "claim": "If duplex DNA squeezes through the central pore, the helicase may continue to step forward on the tracking strand without having to wait for duplex melting and may lead to unwinding of multiple base pairs in a burst after several nt translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the helicase may continue to step forward on the tracking strand without having to wait for duplex melting and may lead to unwinding of multiple base pairs in a burst after several nt translocation as has been proposed for a non-hexameric helicase (Myong et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about an alternative mechanism, with citation for comparison.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "024b3593-7ef5-4771-ace7-141bf972f79c",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C111",
+      "claim": "The unwinding initiation rate increased linearly with protein concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The unwinding initiation rate, defined as the inverse of average tinit, increased linearly with protein concentration (Figure 1\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "dbdd32b1-6dac-4ad7-9c7f-9e1aec80605b",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C112",
+      "claim": "The average unwinding time did not show a significant dependence on protein concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the average tunw did not show a significant dependence on protein concentration (inset Figure 1\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1d inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "77016d35-e3cd-490a-8f72-3e0a02ad947e",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C113",
+      "claim": "The linear relation between the protein concentration and the initiation rate indicates that G40P is loaded as a preassembled hexamer instead of being assembled on the DNA in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear relation between the protein concentration and the initiation rate indicates that G40P is loaded as a preassembled hexamer instead of being assembled on the DNA in situ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the linear concentration dependence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "a048162e-9866-4f1e-8d5d-a831153696cf",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C114",
+      "claim": "Blocking the free ssDNA end of the forked DNA with anti-digoxigenin reduced the percentage of single-molecule FRET traces that show unwinding events from 42% to 4.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "At [ATP]=1 mM and [G40P6]=60 nM, the percentage of single-molecule FRET traces that show unwinding events was reduced from 42% to 4.7% after incubation of the digoxigenin modified DNA construct with [anti-digoxigenin]=0.1 mg/mL followed by washing out of unbound anti-digoxigenin (Figure 1\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "72f3b56b-4125-4e7f-9827-c31fdd097706",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C115",
+      "claim": "The unwinding rate kunw vs. ATP concentration curve could be well-fitted using the Michaelis-Menten equation, yielding an apparent Michaelis-Menten constant Km = 87 \u00b1 9 \u00b5M and a maximum unwinding rate kunw = 1.91 \u00b1 0.05 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The unwinding rate kunw, defined as the inverse of average tunw, vs. ATP concentration (red squares Figure 1\u2014figure supplement 1h) curve could be well-fitted using the Michaelis-Menten equation, yielding an apparent Michaelis-Menten constant Km = 87 \u00b1 9 \u00b5M and a maximum unwinding rate kunw = 1.91 \u00b1 0.05 s\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from fitting experimental data shown in Figure 1\u2014figure supplement 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "0be342c0-138e-48a3-96f0-75824a7d230e",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C116",
+      "claim": "Including ADP in the reaction increased the apparent Km to 191 \u00b1 14 \u00b5M and 272 \u00b1 36 \u00b5M at 0.5 mM and 1 mM ADP, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Including ADP in the reaction increased the apparent Km to 191 \u00b1 14 \u00b5M and 272 \u00b1 36 \u00b5M at 0.5 mM and 1 mM ADP, respectively (Figure 1\u2014figure supplement 1g and h) with little change in the maximum unwinding rate kunw([ADP]=0.5 mM)=2.01 \u00b1 0.04 s\u22121 and kunw([ADP]=1 mM)=1.91 \u00b1 0.07 s\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from fitting experimental data with ADP present.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "e79491f8-8bef-4692-a54d-c4b24c420e87",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C117",
+      "claim": "A fit to the Hill-equation to the ATP titration results in a Hill coefficient n = 1.2 \u00b1 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "A fit to the more general Hill-equation to the ATP titration results in a Hill coefficient n = 1.2 \u00b1 0.2 (dashed line in Figure 1\u2014figure supplement 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from fitting experimental data shown in Figure 1\u2014figure supplement 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "21d192db-13b1-40a6-a489-2b9a17468833",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C118",
+      "claim": "A Hill coefficient of 1 implies that either each identical subunit can bind ATP and hydrolyze completely independent of each other or that for every step one or more subunits can bind ATP successively and in coordination but not cooperatively.",
+      "claim_type": "EXPLICIT",
+      "source": "A Hill coefficient of 1 implies that either each identical subunit can bind ATP and hydrolyze completely independent of each other (no binding cooperativity between the subunits) or that for every step one or more subunits can bind ATP successively and in coordination but not cooperatively (Schnitzer and Block, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Hill coefficient with citation for support.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "bde0dfa2-ec56-4ece-a3b0-b5657d2dcdca",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C119",
+      "claim": "A Hill coefficient of 1 does not imply that only one ATP is bound per enzymatic cycle, but that binding of one ATP neither facilitates nor hinders binding of more ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that a Hill coefficient of 1 does not imply that only one ATP is bound per enzymatic cycle, but that binding of one ATP neither facilitates nor hinders binding of more ATP (Moffitt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Hill coefficient with citation for support.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "a55da49f-eac1-4008-9588-35a3aab964cd",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C120",
+      "claim": "G40P showed without ssDNA a significant ATPase activity that could be increased after addition of ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed without any ssDNA present in solution a significant ATPase activity. Addition of ssDNA to the solution increased the ATPase activity of G40P by a factor of two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the ATPase assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "a80cfedb-ca84-4ad1-b30e-b9c1b4fab92e",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C121",
+      "claim": "The ATPase activity of G40P without ssDNA was successfully suppressed by exchanging MgCl2 to MnCl2.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATPase activity of G40P without ssDNA was successfully suppressed by exchanging MgCl2 to MnCl2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the ATPase assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "371dcb7c-698c-4767-9e1b-b9bd1263c199",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "claim_id": "C122",
+      "claim": "ATP and ATP\u03b3S showed similar affinity for G40P (ATP\u03b3S KD = 1.4 \u00b1 0.9 \u00b5M, ATP KD = 3.5 \u00b1 0.8 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "Both ligands showed similar affinity (ATP\u03b3S KD = 1.4 \u00b1 0.9 \u00b5M, ATP KD = 3.5 \u00b1 0.8 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from competitive titration experiments with mant-ADP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "73979b87-da73-45ee-bf5d-04b8e1273f11",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "G40P helicase unwinds DNA in single base pair steps, as demonstrated by discrete FRET stall levels at 1, 2, and 3 consecutive GC base pairs that match a calibration curve. Under slowed conditions (CaCl2), individual steps at similar FRET values confirm single bp unwinding of AT base pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental evidence strongly supports single bp stepping through multiple converging lines of evidence: (1) discrete FRET levels corresponding to 1, 2, or 3 GC barriers (C44-47, C53-57), (2) calibration with defined AT/GC boundaries showing single bp resolution (C61-62), and (3) direct observation of steps under slowed conditions (C64-65). The pattern of discrete FRET values is inconsistent with 2 bp steps and matches the predicted pattern for 1 bp steps (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "G40P exhibits highly coordinated sequential ATP hydrolysis between subunits, as demonstrated by single ATP\u03b3S molecules causing stalling with concentration-independent lifetime (0.44 s) and linear dependence of stall fraction on ATP\u03b3S concentration. Hill coefficient of ~1 and slippage data exclude concerted hydrolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ATP\u03b3S poisoning experiments provide direct evidence for sequential hydrolysis: linear dependence of stalling on ATP\u03b3S concentration indicates single molecule stalling (C94), constant stall lifetime independent of concentration suggests well-defined stoichiometry (C92-93), and Hill coefficient ~1 indicates non-cooperative ATP binding (C97, C117). The slippage behavior at low ATP (C98-99) further supports that concerted hydrolysis would be inefficient. This represents the first direct evidence for sequential hydrolysis during DNA unwinding (C103).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "5efe3722-5b86-4aa4-af14-7971b8e0931f",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The primase DnaG suppresses helicase slippage, increasing complete unwinding from 12% to 58% for 3 GC substrate, with no slippage events observed in successful unwinding traces. DnaG reduces average slippage events ~2.5-fold across all ATP concentrations tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental data clearly demonstrate DnaG's anti-slippage function: dramatic increase in unwinding completion (C73), complete absence of slippage in successful traces (C74), and consistent ~2.5-fold reduction in slippage across ATP concentrations (C84). The effect is statistically significant and reproducible. However, the molecular mechanism remains speculative, and stalling is still observed with DnaG (C76), indicating incomplete rescue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "ca11916a-d64f-45e1-9844-97d69fc062d5",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "G40P exhibits frequent backward slippage during unwinding, with slippage increasing at sub-saturating ATP concentrations. The short lag time (<1 s) between attempts indicates the same enzyme is responsible for multiple slippage events, with the helicase slipping backwards at least 10 base pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Slippage is well-documented through direct observation (C48), timing analysis (C49-50), FRET return to original values (C51), and ATP concentration dependence (C80-81). The inference that the same enzyme is responsible is supported by the 20-fold shorter lag time compared to de novo initiation (C49). The ATP concentration dependence is consistent with the hypothesis that nucleotide-free states promote slippage (C79-81).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "2bb95621-7956-4ee6-b0b1-4637d78c7891",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The single-molecule FRET assay with forked DNA substrate enables real-time monitoring of G40P unwinding. Linear protein concentration dependence of initiation rate and blocking experiments indicate G40P loads as a preassembled hexamer. Kinetic step size analysis yields ~4 bp as an upper limit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental design is well-validated: FRET reports on unwinding (C37-41), linear concentration dependence indicates hexamer loading (C111-113), and blocking experiments confirm loading mechanism (C114). The kinetic step size of ~4 bp (C42) is appropriately qualified as an upper limit due to potential broadening from heterogeneity (C43). These methodological results provide the foundation for the mechanistic findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "299a942a-de48-4840-82e4-9537f8dea70f",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ATP binding and kinetics analysis reveals Km = 87 \u00b1 9 \u00b5M, Hill coefficient n = 1.2 \u00b1 0.2, and similar affinities for ATP (KD = 3.5 \u00b1 0.8 \u00b5M) and ATP\u03b3S (KD = 1.4 \u00b1 0.9 \u00b5M). ADP acts as competitive inhibitor without affecting slippage, indicating tight DNA binding in both ATP and ADP states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The kinetic parameters are well-determined through standard Michaelis-Menten and Hill analysis (C115-117), competitive inhibition by ADP is demonstrated (C116), and nucleotide affinities are measured by competitive titration (C122). The Hill coefficient interpretation (C118-119) is appropriately nuanced. The inference that G40P binds tightly in both ATP and ADP states (C83) is supported by the lack of ADP effect on slippage (C82).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "54a1461c-8908-4272-aaee-e4f98999f900",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Temperature increase from 21\u00b0C to 33\u00b0C raises complete unwinding of 3 GC substrate from 12% to 62%, supporting that unwinding depends partially on thermal fraying of base pairs due to higher thermodynamic stability of GC versus AT base pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The temperature dependence data (C67) directly supports the inference about thermal fraying (C66). The 5-fold increase in unwinding efficiency with modest temperature increase is consistent with GC base pairs requiring thermal fluctuations for melting. This result supports the proposed mechanism but is a supporting observation rather than a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "6f216c82-2223-4804-a07c-9649287cdbed",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A mechanistic model is proposed where ADP release reduces DNA-binding loop affinity, ATP binding repositions the loop to the next base pair, rapid AT melting allows forward movement, while slow GC melting causes stalling. The model integrates structural insights with experimental observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The mechanistic model (C104-108) is largely speculative and based on inference from structural studies and the experimental data. While the model is consistent with observations (GC stalling, ATP/ADP binding effects, sequential hydrolysis), it lacks direct structural or mutational validation. The proposed conformational changes and timing of events are not directly observed. This represents a reasonable working hypothesis requiring further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    },
+    {
+      "id": "d5f4e773-8ded-4a11-839a-1eee2844438c",
+      "content_id": "892199d1-884d-42f7-a96d-b46c1ea27fc9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "G40P exhibits significant ATPase activity without ssDNA that increases 2-fold upon ssDNA addition. The ssDNA-independent activity can be suppressed by exchanging MgCl2 for MnCl2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ATPase activity measurements (C120-121) are straightforward biochemical observations using standard assays. The ssDNA-independent activity and its suppression by MnCl2 are clearly demonstrated. This is a methodological observation relevant for understanding G40P biochemistry but not central to the main mechanistic findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:20:31.254664Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d5f77163-02a2-4ad0-a2e1-84d3780aa365",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "6e9de553-0520-453a-93e3-7b2368b1edcf",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "c612a449-b577-4ce3-acaa-23ab91fb1492",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "06f488c0-2678-4178-bafd-dae31725b88c",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "74d413d4-e856-442c-87cd-116eeeca9ec9",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "bdfea9ca-88d9-40cf-8953-3b0f2a559c7e",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "ddfd4faa-a702-493f-9055-d7e91008f626",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "05951258-3495-4291-9e67-864d71544352",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "849eb5c1-16e0-4bb2-8f58-0ecadff51117",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "5634d041-df1a-4fe1-b287-6940eb390973",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "f295cd34-38dd-4f5c-affc-0cea9e69f2c3",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "fa524f59-e518-4a32-b015-26d22056b7ac",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "0f2a6464-ee88-4c68-92f2-b603d70f0e72",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "d10e5400-fcb9-471d-bd39-d524cfd4ee42",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "4218843d-daa6-48be-9762-8d3d386554ef",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "b50b7c04-5f37-483a-a8ff-b8bd49238aed",
+      "result_id": "73979b87-da73-45ee-bf5d-04b8e1273f11"
+    },
+    {
+      "claim_id": "1c3a9563-c38e-4752-ad85-678b6ce9fd14",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "44add57d-7bed-4aee-abf5-ab93e4a21f6d",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "7b505054-f011-44f2-92a6-82e9edcff189",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "942ff18e-f52a-4974-a4ee-a432f71ef995",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "943948d3-6ba9-4aa3-89a4-cfa10455e76a",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "0c328718-fb8c-40b6-b000-17381a9dc3be",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "a947ea45-5910-4b07-970d-56f46f174fe0",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "ec3dbdd3-be74-4682-bdd8-b4cda71502b9",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "a94c25b1-9197-4788-8310-06bb573e7100",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "2d729b22-1d60-4c55-a354-f69f1d58209c",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "103bc9d2-0795-4811-a81c-d6bc0ca694b6",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "ba8a7e65-cf6b-4979-bcc3-532b136e1db4",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "3cb25be8-e617-475b-be06-18152e7e67a3",
+      "result_id": "34cbbd3a-0cd3-48af-a894-97cf04a2af78"
+    },
+    {
+      "claim_id": "57275dbe-121a-4a3c-9600-bbafe2b5dc61",
+      "result_id": "5efe3722-5b86-4aa4-af14-7971b8e0931f"
+    },
+    {
+      "claim_id": "0cb65c0e-ffab-490a-b53a-bd8f3600dfa9",
+      "result_id": "5efe3722-5b86-4aa4-af14-7971b8e0931f"
+    },
+    {
+      "claim_id": "c35da7c4-88d3-492e-bf1b-a0317ec4daef",
+      "result_id": "5efe3722-5b86-4aa4-af14-7971b8e0931f"
+    },
+    {
+      "claim_id": "a01f3b66-4437-45a5-b703-2a3a9d62ef2c",
+      "result_id": "5efe3722-5b86-4aa4-af14-7971b8e0931f"
+    },
+    {
+      "claim_id": "90aaba5d-ed3a-43a3-af73-145ff84d7bb6",
+      "result_id": "5efe3722-5b86-4aa4-af14-7971b8e0931f"
+    },
+    {
+      "claim_id": "4066e6ee-0103-4067-8f22-47c3c960359a",
+      "result_id": "5efe3722-5b86-4aa4-af14-7971b8e0931f"
+    },
+    {
+      "claim_id": "d1deb471-2347-4a99-b830-d551d5ddf7aa",
+      "result_id": "5efe3722-5b86-4aa4-af14-7971b8e0931f"
+    },
+    {
+      "claim_id": "5ec123f4-a722-48b2-8347-60df7ba2f8f6",
+      "result_id": "ca11916a-d64f-45e1-9844-97d69fc062d5"
+    },
+    {
+      "claim_id": "749faf3e-10b9-4693-b0d8-8dcce363ac4d",
+      "result_id": "ca11916a-d64f-45e1-9844-97d69fc062d5"
+    },
+    {
+      "claim_id": "01509a38-256f-41c0-9df1-f3edf0f4bbbf",
+      "result_id": "ca11916a-d64f-45e1-9844-97d69fc062d5"
+    },
+    {
+      "claim_id": "7f9b27a3-aa61-47f6-8d49-7f3189c66a58",
+      "result_id": "ca11916a-d64f-45e1-9844-97d69fc062d5"
+    },
+    {
+      "claim_id": "e820aed9-145d-421c-8c24-600273c5ee5f",
+      "result_id": "ca11916a-d64f-45e1-9844-97d69fc062d5"
+    },
+    {
+      "claim_id": "fdae0891-059c-490f-bb45-2419003fc494",
+      "result_id": "ca11916a-d64f-45e1-9844-97d69fc062d5"
+    },
+    {
+      "claim_id": "e1d6cd5d-2dc0-43f6-97a5-4c66a83a6611",
+      "result_id": "ca11916a-d64f-45e1-9844-97d69fc062d5"
+    },
+    {
+      "claim_id": "d6108171-1329-45bd-b08b-a1131ebe63b0",
+      "result_id": "ca11916a-d64f-45e1-9844-97d69fc062d5"
+    },
+    {
+      "claim_id": "c51fed82-9ec4-444e-841d-df02756a55d3",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "a9ba90f2-742a-407d-ab3d-bc705fe0a7a9",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "2aa24a22-3d99-4cf8-aeed-44f65d14e18e",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "5d45221e-4853-41f7-aaba-0a70e2786211",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "1e0d1989-4c3a-4826-a441-bb612618ce35",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "f9232e99-da49-463b-9171-475c6b7e6d4c",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "b0f57892-748c-49fa-86ef-a74e65d54519",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "024b3593-7ef5-4771-ace7-141bf972f79c",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "dbdd32b1-6dac-4ad7-9c7f-9e1aec80605b",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "77016d35-e3cd-490a-8f72-3e0a02ad947e",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "a048162e-9866-4f1e-8d5d-a831153696cf",
+      "result_id": "2bb95621-7956-4ee6-b0b1-4637d78c7891"
+    },
+    {
+      "claim_id": "cacdb93f-dd72-4c69-8582-dfb9955bafba",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "35f789a1-6d25-4b71-996d-6034e278d217",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "425b3bb6-ab8f-46ae-a257-cd3f0b804d10",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "9adac883-4909-4dd1-9723-51c38ab83c01",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "ade8d8af-bd4f-4b68-b111-4773546922c0",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "72f3b56b-4125-4e7f-9827-c31fdd097706",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "0be342c0-138e-48a3-96f0-75824a7d230e",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "e79491f8-8bef-4692-a54d-c4b24c420e87",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "21d192db-13b1-40a6-a489-2b9a17468833",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "bde0dfa2-ec56-4ece-a3b0-b5657d2dcdca",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "371dcb7c-698c-4767-9e1b-b9bd1263c199",
+      "result_id": "299a942a-de48-4840-82e4-9537f8dea70f"
+    },
+    {
+      "claim_id": "611a6bfa-deff-4a5d-9ab9-ef7ad8fa144d",
+      "result_id": "54a1461c-8908-4272-aaee-e4f98999f900"
+    },
+    {
+      "claim_id": "fccee732-c926-4c66-8d63-c459c179dba7",
+      "result_id": "54a1461c-8908-4272-aaee-e4f98999f900"
+    },
+    {
+      "claim_id": "d34d5745-a646-4e75-80a8-bfd69ca7b4df",
+      "result_id": "6f216c82-2223-4804-a07c-9649287cdbed"
+    },
+    {
+      "claim_id": "9dcf07f6-66bd-4e04-8753-1beefa0869b7",
+      "result_id": "6f216c82-2223-4804-a07c-9649287cdbed"
+    },
+    {
+      "claim_id": "ed6edd0f-a3bb-4b7e-b72c-fd1ac7591a0a",
+      "result_id": "6f216c82-2223-4804-a07c-9649287cdbed"
+    },
+    {
+      "claim_id": "145d6b65-fef6-45a9-aa41-3bc0fec81a89",
+      "result_id": "6f216c82-2223-4804-a07c-9649287cdbed"
+    },
+    {
+      "claim_id": "53916e58-8d22-487c-87b6-8502d071752d",
+      "result_id": "6f216c82-2223-4804-a07c-9649287cdbed"
+    },
+    {
+      "claim_id": "a55da49f-eac1-4008-9588-35a3aab964cd",
+      "result_id": "d5f4e773-8ded-4a11-839a-1eee2844438c"
+    },
+    {
+      "claim_id": "a80cfedb-ca84-4ad1-b30e-b9c1b4fab92e",
+      "result_id": "d5f4e773-8ded-4a11-839a-1eee2844438c"
+    }
+  ],
+  "comparisons": []
+}

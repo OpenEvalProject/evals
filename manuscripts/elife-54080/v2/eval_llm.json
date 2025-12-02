@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "GFP overproduction from the pTOW40836-TDH3pro-GFP plasmid causes growth defects that are more severe under \u2013Leu/Ura conditions (30 copies/cell) than under \u2013Ura conditions (10 copies/cell).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, and C11 collectively demonstrate that increased plasmid copy number correlates with increased GFP production and more severe growth defects. The data in Figures 1C and 1D support this dose-dependent relationship, and the copy numbers are validated by citation to prior work (Eguchi et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Experimental reproducibility of genetic interaction scores is higher under conditions causing severe growth defects (\u2013Leu/Ura) and in temperature-sensitive mutant arrays compared to deletion mutant arrays under mild conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, and C14 present correlation coefficients showing that TSA experiments and \u2013Leu/Ura conditions yield higher reproducibility (r = 0.36\u20130.53) than DMA under \u2013Ura conditions (r = 0.17). The inference that severe growth defects improve reproducibility is logically supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "This study's genetic interaction scores do not correlate with those from Farkas et al. (2018), likely due to differences in experimental conditions, promoter strength, and fluorescent protein properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C56, C57 demonstrate lack of correlation (r = \u20130.01 to \u20130.07) and differential validation rates between studies. Claims C58 and C59 provide mechanistic context for the discrepancy. The independent validation experiments (Figure 2\u2014figure supplement 4) strengthen the conclusion that methodological differences explain the lack of correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C55"
+    ],
+    "result": "Temperature-sensitive mutants in DNA replication preinitiation complex genes show growth defects under high plasmid copy conditions (\u2013Leu/Ura) in vector control experiments, likely due to sequestration of replication factors by plasmid origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 identify the phenomenon and provide statistical support (p=1.47E-05 for GO enrichment). Claim C55 offers a mechanistic explanation supported by known plasmid copy numbers and replication biology. The observation is well-documented in Figure 2\u2014figure supplement 5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C22",
+      "C23"
+    ],
+    "result": "GFP-op_negative mutants are enriched in genes related to cytoskeletal organization and cellular bud, and these mutants show reduced GFP expression levels, indicating sensitivity to protein burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C22, and C23 demonstrate GO enrichment in actin-related processes, statistical association with low GFP expression (p=4.7E-11), and specific examples (11/13 cellular bud mutants are GFP_L). The convergence of genetic interaction data, expression analysis, and GO enrichment provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C24"
+    ],
+    "result": "GFP-op_positive mutants are enriched in genes involved in RNA 3\u2032-end processing (TRAMP complex, nuclear exosome) and transcription factor complexes (mediator-RNA polymerase II), with many showing reduced GFP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19\u2013C21 provide GO enrichment data and quantify the proportion of mutants with strong positive GIs (7/13 and 20/38). Claim C24 adds that GFP_L mutants in this category are enriched in transcription factors, suggesting reduced GFP production rather than resistance. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C49"
+    ],
+    "result": "Mutants showing growth advantage enhanced by GFP overproduction are enriched in DASH complex genes, which are involved in chromosome distribution via microtubule binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 identifies significant enrichment of DASH complex genes among 14 mutants with enhanced growth advantage. Claim C49 provides biological context from literature. The data in Figure 4\u2014figure supplement 3 support the identification, though the mechanism remains unclear as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "Only 12% of mutants show shared genetic interactions between GFP and tGFP overproduction, with tGFP-op (and NES-tGFP-op) specifically interacting with proteasome mutants but not GFP-op.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 quantifies the low overlap (81/688 mutants). Claims C27, C28, and C30 demonstrate specific enrichment of proteasome complex genes in tGFP-op interactions with statistical support (Figure 5\u2014figure supplement 1B). This suggests fundamentally different cellular responses to GFP vs. tGFP overproduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "NES-tGFP overproduction shows strong negative genetic interactions with nuclear export factors (Crm1, Gsp1, Rna1, Yrb1), and mutants with low NES-tGFP expression are enriched for nuclear transport genes, validating the approach as proof of concept.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C61, and C62 demonstrate specific genetic interactions with nuclear export machinery and GO enrichment in nuclear transport. Claim C63 correctly interprets this as validation that the method can identify process-specific overload. The convergence of GI data and expression analysis provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "tGFP and NES-tGFP form intracellular aggregates and are expressed at only ~4% of GFP levels, with 14% of tGFP found in insoluble precipitates compared to 1% of GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31\u2013C34 present converging evidence from microscopy (Figure 6C), Western blotting (Figure 6B), and cell fractionation (Figure 6D). The quantitative measurements are internally consistent and support the conclusion that tGFP has fundamentally different biophysical properties than GFP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C54"
+    ],
+    "result": "tGFP precipitates contain ubiquitinated proteins, are enriched in Hsp70 (Ssa1/Ssa2) and glycolytic enzymes (Fba1, Eno2), and contain trace amounts of proteasome components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35\u2013C37 and C54 present complementary data from Western blotting (Figure 6\u2014figure supplement 1C) and LC-MS/MS proteomics (Figure 6E). The detection of ubiquitinated proteins, chaperones, and proteasome components in aggregates is consistent with the hypothesis that tGFP overproduction causes proteostasis stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Morphological analysis reveals that GFP overproduction significantly affects only four parameters out of 501, with three being actin-related, indicating increased actin patch regions in GFP-overexpressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 present high-dimensional morphological data analyzed with CalMorph. The specificity of the effect (4/501 parameters, 3 actin-related) and statistical significance (FDR = 0.01) support the conclusion that protein burden specifically perturbs actin function. This complements the genetic interaction data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C44",
+      "C45"
+    ],
+    "result": "Only harmless proteins like GFP can be produced at levels (~15% of total protein) sufficient to cause protein burden, while proteins requiring additional processing (tGFP, NES-tGFP) cause growth defects at much lower levels (~0.6% of total protein).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, C44, and C45 synthesize the experimental findings into a coherent model. The quantitative estimates are based on Western blot data (C32, C60) and logical calculations. The model is well-supported by the differential expression limits and distinct genetic interaction profiles observed for GFP vs. modified GFPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "While protein burden is thought to result from perturbations to protein synthesis, genetic interaction analysis did not provide clear links to synthetic processes but instead suggests unexpected perturbation of actin function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 acknowledge a discrepancy between expectation and observation. The lack of enrichment in protein synthesis genes among GFP-op_negative mutants (C18) and the strong enrichment in actin-related processes (C18, C38, C39) support this conclusion. This represents an important unexpected finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "tGFP is actively degraded by the proteasome in wild-type cells, and proteasome mutations lead to either overaccumulation of undegraded tGFP or cytotoxicity from undegraded tGFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64\u2013C66 present alternative interpretations of the observation that proteasome mutants show negative GIs with tGFP-op. While the genetic interaction data (C27, C28) and biochemical evidence (C35\u2013C37) support proteasome involvement, the claims acknowledge uncertainty about the precise mechanism. Additional experiments would be needed to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The connection between protein burden and actin cytoskeleton perturbation might be explained by known interactions between actin and translational machinery, potentially involving factors like eEF1A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 proposes a speculative mechanism based on literature (Kim and Coulombe, 2010; Munshi et al., 2001) to explain the unexpected actin phenotypes. While the speculation is reasonable and grounded in prior knowledge, it remains untested in this study. The claim appropriately acknowledges its speculative nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "tGFP may have high probability of misfolding during translation due to its larger molecular weight or repeating structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 offers speculation about why tGFP forms aggregates while GFP does not. While the speculation is reasonable given the structural differences, no direct evidence for co-translational misfolding is provided. The claim is appropriately marked as speculation and serves as a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  }
+]

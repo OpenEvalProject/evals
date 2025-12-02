@@ -1,0 +1,151 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10"
+    ],
+    "result": "Two monkeys successfully performed a challenging evidence accumulation task across 29,726 trials with high accuracy. Subjects integrated all eight stimuli to inform decisions and demonstrated a primacy bias where early stimuli received stronger temporal weights than later stimuli, consistent with bounded evidence integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C10 provide converging evidence from trial counts (C1), psychometric functions (C2), logistic regression of temporal weights (C3), and cross-validation analysis (C10). The primacy bias is statistically demonstrated and contextualized with prior literature (C4). The cross-validation confirms evidence accumulation strategy rather than alternative heuristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C12"
+    ],
+    "result": "Monkeys exhibited a pro-variance bias (PVB), preferring options with greater evidence variability across samples. This was demonstrated through higher accuracy on 'Broad Correct' trials (C5), preference for broad options in ambiguous trials (C6), and significant regression coefficients for evidence standard deviation (C8). The PVB index was 0.173 across both monkeys (C9), similar to human behavior (C7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary analyses support the pro-variance bias: chi-squared tests (C5: p<1\u00d710\u207b\u00b9\u2070), binomial tests (C6: p<1\u00d710\u207b\u00b9\u2070), and regression analysis (C8: t=19.65, p<10\u207b\u00b9\u2070). Cross-validation (C11) confirms evidence variability better explains choices than extreme sample values. The absence of frequent winner bias (C12) helps isolate the PVB effect. However, only 2 subjects limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "A biophysically-based spiking circuit model reproduced both the evidence accumulation task performance and the pro-variance bias observed in monkeys. The model demonstrated comparable PVB (C13), primacy bias in temporal weighting (C14), and the mechanistic basis for PVB arising from expansive non-linearities in firing rate profiles (C16-C17), where strong stimuli asymmetrically influence decisions more than weak stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The circuit model qualitatively reproduces key behavioral phenomena (C13-C14) and the mean-field reduction (C15) enables mechanistic analysis. The proposed mechanism via expansive non-linearities (C16-C17) is demonstrated through phase-plane analysis and supported by the prediction that PVB decreases with higher total evidence (C18). However, the model was not quantitatively fit to data, and alternative mechanisms (e.g., selective integration) are not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Circuit model perturbations made dissociable predictions for the effects of NMDA-R hypofunction on PVB index. Lowered excitation/inhibition (E/I) ratio increased PVB index (p=6\u00d710\u207b\u2075), elevated E/I decreased PVB index (p<10\u207b\u2075), while sensory deficit maintained PVB index (p=0.6933).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 present statistically significant and dissociable predictions from three perturbation types. The permutation tests provide appropriate statistical support. These predictions are crucial for interpreting subsequent pharmacological experiments. The robustness across parameter ranges (mentioned in text) strengthens confidence, though only specific perturbation strengths are formally tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Ketamine (0.5 mg/kg) administration decreased choice accuracy (C22-C23) and increased PVB index (C25: p=8\u00d710\u207b\u2076), consistent with lowered cortical E/I balance from NMDA-R hypofunction predominantly on excitatory neurons (C21). The PVB effect persisted after controlling for increased lapse rate (C26-C28), indicating the effect was not due to random responding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ketamine effects are well-documented with appropriate statistics (C23: p<1\u00d710\u207b\u2076; C25: p=8\u00d710\u207b\u2076; C26: p<0.0001 and p=0.019). Critically, the PVB increase remains significant when controlling for lapse rate (C27-C28), ruling out a trivial explanation. The interpretation as lowered E/I (C21) is supported by matching model predictions (C19), though alternative mechanisms cannot be definitively excluded with only pharmacological manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Quantitative model comparison using cosine similarity, Euclidean distance, and Kullback-Leibler divergence revealed ketamine effects on monkey behavior were better explained by lowered E/I perturbations than by sensory deficit or elevated E/I perturbations (C29). Temporal weight analysis showed general downward shift without strong relative changes (C30), collectively supporting lowered E/I balance and weakened recurrent connections (C31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple quantitative measures (C29) converge on lowered E/I as the best explanation among tested alternatives. The temporal weight pattern (C30) provides additional constraint. However, the conclusion (C31) represents an inference integrating multiple analyses rather than direct demonstration. The model comparison is limited to three specific perturbation types, and other mechanisms were not systematically explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study builds on established knowledge that NMDA-R hypofunction is implicated in schizophrenia pathophysiology (C32-C33), NMDA-Rs play central roles in working memory (C34-C36), humans exhibit pro-variance bias (C37-C38), and biophysically-grounded circuit models successfully bridge synaptic and behavioral levels for evidence accumulation (C39-C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C32-C41) establish the scientific context through appropriate citations of prior work. They are background knowledge claims rather than novel findings. The citations appear appropriate and the characterizations of prior work are consistent with the cited literature. These provide essential context for interpreting the current study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The pharmacological experiments used ketamine at 0.5 mg/kg intramuscular injection (C42). Monkey A completed 41 standard and 28 pharmacological sessions (C48), Monkey H completed 68 standard and 35 pharmacological sessions (C49), yielding 8,521 trials during the ketamine effect period (C50). Subjects were 12-13.3 kg, ~6 years old (C51), and all procedures were ethically approved (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C48-C52 report methodological details that are explicitly stated in the manuscript. These are factual descriptions of experimental parameters, subject characteristics, and ethical compliance. They are appropriately documented but represent methodological details rather than scientific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The computational models completed extensive simulations: the control circuit model completed 94,000 'Regular' trials (C45) and 47,000 Narrow-Broad trials (C46), while the mean-field model completed 94,000 'Regular' trials (C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 report the number of simulated trials in computational models, which are explicitly stated in the manuscript. These are methodological details documenting the computational work performed. The large trial counts provide adequate statistical power for model analyses.",
+    "result_type": "MINOR"
+  }
+]

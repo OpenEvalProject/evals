@@ -1,0 +1,549 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors developed a functional inducible TLC1-MS2 tagging system using recombination-induced tag exchange. Upon \u03b2-estradiol addition, recombination at the TLC1 locus occurs rapidly (50% at 30 min, ~90% at 4 hr), resulting in gradual appearance of tagged TLC1-MS2 RNA molecules that can be distinguished from untagged TLC1 by MS2-specific probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C77 are well-supported by Southern blot (C73-C74), northern blot (C75-C76), and RT-ddPCR data (Figure 1). The recombination kinetics and RNA tagging dynamics are quantified with appropriate controls, demonstrating the system is functional and allows controlled TLC1-MS2 tagging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The inducible tagging system successfully tracks TLC1 RNA dynamics by smFISH. At steady state (0 hr), only untagged TLC1 is present (~10 molecules/cell). After recombination induction, MS2-tagged foci appear as early as 30 min and constitute >80% of total TLC1 by 16 hr. The tagged TLC1-MS2 maintains functional telomeres and normal nucleo-cytoplasmic distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C88 are supported by two-color smFISH data (Figure 2A-C) and telomere length analysis (Figure 2\u2014figure supplement 1D). The system successfully distinguishes new from old TLC1 molecules and validates that tagging does not disrupt telomerase function or localization, confirming the utility of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Old untagged TLC1 molecules gradually accumulate in the cytoplasm over time. At steady state, 60-70% of TLC1 is nuclear and 30-40% cytoplasmic. After 16 hr of recombination, the majority of old TLC1 molecules reside in the cytoplasm, suggesting cytoplasmic accumulation at the end of the RNA life cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by smFISH data tracking old (untagged) TLC1 localization (Figure 2D). The quantification shows a clear shift from predominantly nuclear to predominantly cytoplasmic localization for old molecules, though a significant nuclear fraction remains, consistent with the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Newly synthesized TLC1-MS2 molecules localize predominantly in the cytoplasm immediately after transcription. This cytoplasmic localization persists for approximately 2 hr, followed by gradual return to the nucleus and re-establishment of steady state distribution by the end of the time course.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by smFISH data tracking new (MS2-tagged) TLC1 localization (Figure 2E). The temporal dynamics show clear early cytoplasmic enrichment followed by nuclear re-import, providing direct evidence for nucleo-cytoplasmic shuttling of newly synthesized telomerase RNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Export of newly synthesized TLC1 molecules to the cytoplasm depends entirely on Xpo1. In xpo1-1 mutants at restrictive temperature, new TLC1 molecules accumulate exclusively in the nucleus and reach higher levels than in wild type cells. This effect is specific to Xpo1 inactivation, not temperature elevation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 are supported by smFISH (Figure 3A,B) and northern blot data (Figure 3D,E) in xpo1-1 mutants. Temperature controls (Figure 3\u2014figure supplement 1D,G) confirm the effect is due to Xpo1 inactivation. The complete nuclear retention demonstrates Xpo1 is the sole export mechanism for new TLC1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Kap122 supports rapid re-import of new TLC1 molecules to the nucleus after cytoplasmic export. In kap122\u0394 mutants, nuclear re-import is delayed (beginning only at 3 hr) and never reaches wild type levels. New TLC1 levels are ~2-fold lower in kap122\u0394 cells, suggesting degradation of cytoplasmic TLC1 that cannot be rapidly re-imported. A secondary, less efficient import pathway exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C116 are supported by smFISH (Figure 3C) and northern blot data (Figure 3D,E) in kap122\u0394 mutants. The delayed but eventual nuclear re-import, reduced TLC1 levels, and only slightly shorter telomeres (Figure 2\u2014figure supplement 1D) collectively support the existence of Kap122-dependent primary and redundant secondary import pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Mex67 is essential for stabilization of newly transcribed TLC1 RNA before export. At restrictive temperature, new TLC1 RNA is almost undetectable in mex67-5 cells despite normal recombination kinetics and ongoing transcription (confirmed by thiolutin experiments and RNA Pol II ChIP). Deletion of RRP6 completely suppresses the mex67-5 phenotype, demonstrating that new TLC1 undergoes rapid nuclear exosome degradation without Mex67. Old TLC1 molecules remain stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C129 are strongly supported by northern blot (Figure 4A,B), smFISH (Figure 4C,D), thiolutin experiments (Figure 4F), RNA Pol II ChIP (Figure 4\u2014figure supplement 1E), and rrp6\u0394 rescue data (Figure 4C,E). The combination of transcription confirmation and rrp6\u0394 suppression provides compelling evidence for Mex67's novel stabilization function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Mex67 functions upstream of Xpo1 in TLC1 biogenesis. In mex67-5 xpo1-1 double mutants at restrictive temperature, new TLC1 RNA is almost undetectable, recapitulating the mex67-5 phenotype. The few remaining TLC1 molecules in mex67-5 cells accumulate at the nuclear periphery, suggesting Mex67 is also a prerequisite for Xpo1-mediated export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 are supported by smFISH and northern blot data in mex67-5 xpo1-1 double mutants (Figure 4\u2014figure supplement 2A-C) and nuclear periphery localization in mex67-5 cells (Figure 4C). The epistasis analysis and localization data demonstrate Mex67 acts upstream of Xpo1, representing a novel function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The Sm7 complex is required for re-import of new TLC1 transcripts to the nucleus. tlc1-Sm2T-MS2 molecules (deficient in Sm7 binding) shuttle to the cytoplasm but never return to the nucleus. These molecules are unstable, with low levels detected by northern blot and smFISH. Cells eventually undergo senescence and switch to recombination-dependent telomere maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 are supported by smFISH (Figure 5A,B), northern blot (Figure 5C,D), and telomere length analysis (Figure 5\u2014figure supplement 1D) in tlc1-Sm2T mutants. The cytoplasmic retention, instability, and senescence phenotype demonstrate the Sm7 complex is essential for nuclear re-import and stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The Sm7 complex binds new TLC1 RNA only after cytoplasmic export. In tlc1-Sm2T xpo1-1 cells at restrictive temperature (blocking export), new tlc1-Sm2T RNA accumulates in the nucleus and is more abundant than at permissive conditions. This demonstrates newly synthesized telomerase RNA is stable in the nucleoplasm without Sm7, and that cytoplasmic Sm7 association is essential for TLC1 stability and nuclear re-import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C151 are supported by smFISH and northern blot data in tlc1-Sm2T xpo1-1 double mutants (Figure 5A,E-G). The stabilization of tlc1-Sm2T RNA when export is blocked provides strong evidence that Sm7 binding occurs in the cytoplasm, challenging the current model of telomerase biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The inducible tagging system allows selective identification and analysis of newly synthesized telomerase RNA transcripts within a heterogeneous TLC1 population. The results provide direct evidence for the nucleo-cytoplasmic TLC1 shuttling model and narrow down this process to an early post-transcriptional event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C158 are supported by the comprehensive smFISH data (Figure 2) demonstrating the utility of the system to distinguish new from old TLC1 molecules and track their dynamics. The early cytoplasmic localization of new molecules followed by nuclear re-import provides direct evidence for shuttling as an early post-transcriptional event.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "A cooperation of several importins, including Kap122, facilitates quick and efficient return of new TLC1 transcripts to the nucleus. Failure or delay in TLC1 re-import may lead to loss of telomerase RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 are supported by the kap122\u0394 data showing delayed re-import and reduced TLC1 levels (Figure 3C-E). The existence of redundant import pathways and the consequence of delayed import (degradation) are well-documented in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C164",
+      "C165"
+    ],
+    "result": "For telomerase RNA, an export block per se does not lead to nuclear RNA decay. Mex67 acts upstream of Xpo1 and plays an unexpected role in stabilization of newly transcribed TLC1 molecules before their cytoplasmic export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165 are supported by comparing xpo1-1 (where TLC1 accumulates and is stable) with mex67-5 (where TLC1 is degraded) phenotypes (Figures 3 and 4). This demonstrates export block alone doesn't cause decay, and Mex67 has a distinct stabilization function upstream of export.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C168"
+    ],
+    "result": "Mex67 protects the 3'-end of TLC1 from nuclear degradation by Rrp6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C168 is supported by the rrp6\u0394 suppression of the mex67-5 phenotype (Figure 4C,E, Figure 4\u2014figure supplement 1F-H). The complete rescue of TLC1 levels when the nuclear exosome is inactivated demonstrates Mex67 protects TLC1 from Rrp6-mediated degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C185"
+    ],
+    "result": "The authors propose a revised model of telomerase RNA biogenesis: newly synthesized poly-A- TLC1 requires Mex67 stabilization in the nucleus (failure leads to exosome degradation); Mex67 may act as an adaptor for Xpo1-mediated export; in the cytoplasm, Sm7 binding is required for stability; Kap122 and redundant pathways mediate re-import; final 5'-TMG capping and 3'-end processing occur in the nucleus after re-import, rendering TLC1 insensitive to Mex67 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C185 represent the integrated model based on the experimental findings. The model is well-supported by the data showing: Mex67-dependent nuclear stability (Figure 4), Xpo1-dependent export (Figure 3), cytoplasmic Sm7 binding (Figure 5), Kap122-mediated re-import (Figure 3), and Mex67-independence of old TLC1 (Figure 4C). The model is illustrated in Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background claims about telomerase structure, function, and localization in yeast. These include established knowledge about telomere protection, telomerase composition, TLC1 structure, Sm7 complex function, TLC1 abundance, and the unclear reason for cytoplasmic TLC1 localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C34 represent established scientific knowledge supported by appropriate citations. These provide the necessary background context for the study and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Background on existing models and hypotheses about TLC1 shuttling and Sm7 binding. The shuttling model suggests TLC1 exports to the cytoplasm for protein assembly, but which subunits bind in the cytoplasm is unclear. The current view suggests Sm7 binds before export, but snRNAs export to bind Sm7 in the cytoplasm, creating a contradiction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C46 accurately represent the state of knowledge and contradictions in the field prior to this study, supported by appropriate citations. These establish the rationale for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background on nuclear transport machinery. Xpo1/Crm1 mediates export of snRNAs, rRNAs, and tRNAs using a RanGTP gradient. Mex67 exports mRNA independently of RanGTP. Mex67 inactivation causes mRNA nuclear accumulation and instability. Mex67 is also implicated in export of Xpo1 cargoes, but its precise function is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 represent established knowledge about nuclear transport machinery supported by appropriate citations. These provide essential background for understanding the experimental findings about TLC1 transport.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Background on RNA imaging methods. Fluorescent imaging of TLC1 with MS2 tags has been used previously, but constitutive tagging captures steady state distribution and cannot reveal dynamics of specific RNA subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 accurately describe the limitations of existing methods and establish the need for the inducible tagging approach developed in this study. This is supported by citations and logical reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Summary claims about the main findings: newly produced telomerase RNA molecules are temporarily exported to the cytoplasm; old TLC1 transcripts accumulate in the cytoplasm for degradation; the cytoplasmic TLC1 RNA is a heterogeneous population of both new and old transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are high-level summaries of the experimental findings supported by the detailed data in Figures 2-5. These represent accurate conclusions from the inducible tagging experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Summary claims about transport mechanisms: cytoplasmic export of TLC1 is entirely dependent on Xpo1; telomerase RNA re-import involves Kap122 and other less efficient import mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are high-level summaries of the transport findings supported by the detailed data in Figure 3. These accurately represent the conclusions about export and import mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Summary claims about Mex67 function: when Mex67 is dysfunctional, TLC1 is transcribed but extremely unstable, leading to rapid nuclear degradation; this function may be required for other RNA species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is a summary of the Mex67 findings supported by Figure 4 data. Claim C68 is speculative but reasonable given Mex67's involvement with multiple RNA classes. The core finding (C67) is well-supported; the speculation (C68) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Summary claims about Sm7 function: telomerase RNA assembles with Sm7 in the cytoplasm; this association is essential for TLC1 stability and nuclear re-import; downstream Sm7-dependent events (5'- and 3'-end processing) occur after nuclear return.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are summaries of the Sm7 findings supported by Figure 5 data. The cytoplasmic Sm7 binding and its consequences for stability and re-import are well-documented. Claim C72 is an inference but logically follows from cytoplasmic Sm7 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "General statements about RNA populations and imaging limitations: the cellular RNA pool encompasses molecules at different biogenesis stages; conventional imaging visualizes total RNA at steady state; diverse characteristics of RNA sub-populations remain hidden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 are general statements about RNA biology and imaging methods that are well-established. These provide context for the methodological innovation of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C159"
+    ],
+    "result": "Telomerase RNA has a very long half-life, exceeding one full cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C159 is established knowledge supported by citations. This provides important context for interpreting the dynamics of old TLC1 molecules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C162",
+      "C163"
+    ],
+    "result": "Background on Mex67 and RNA degradation: depletion of Mex67 causes rapid nuclear degradation of newly transcribed poly-A+ mRNAs; the vast majority of TLC1 (95%) is generated via the Nrd1/Nab3 non-coding RNA termination pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C163 are established knowledge supported by citations. These provide important context for discussing the Mex67 findings and distinguishing TLC1 from poly-A+ mRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "Background on Mex67 function: Mex67 binds some cargoes co-transcriptionally; early association may assist in 3'-end RNA maturation and protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 are established knowledge and hypotheses from the literature supported by citations. These provide context for interpreting Mex67's role in TLC1 stabilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C176",
+      "C177",
+      "C183",
+      "C185"
+    ],
+    "result": "Speculative claims about Mex67 function and telomerase maturation: Mex67 may deliver transcripts to nuclear pores; Mex67 may perform stabilization for poly-A+ RNAs; Mex67 may act as an adaptor for Xpo1; final maturation may occur on a mature RNP; maturation may render TLC1 insensitive to Mex67 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C169-C170, C176-C177, C183, C185 are speculative inferences based on the findings. While reasonable and appropriately qualified as speculation, they lack direct experimental support. These represent hypotheses for future investigation rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C171",
+      "C172"
+    ],
+    "result": "Background on snRNA biogenesis: cytoplasmic Sm7 association has been suggested for yeast snRNAs; nuclear export and cytoplasmic Sm7 binding is characteristic of mammalian snRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C172 are established knowledge supported by citations. These provide important context for the finding that TLC1 follows a similar path to snRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Discussion of human telomerase biogenesis: generation and stabilization of human telomerase RNA relies on dyskerin, NHP2, NOP10, and PARN; mutations cause severe genetic disorders; PARN mutations are amenable to small molecule reversion; inducible RNA tagging tools may provide missing links in human telomerase biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C188 are established knowledge supported by citations. Claim C189 is speculative but reasonable given the utility of the method demonstrated in yeast. This provides broader context for the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "After cytoplasmic export, new TLC1 RNA acquires features that render it stable without Mex67. A mutated tlc1-Sm2T allele disrupts Sm7 binding and renders TLC1 unstable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 is an inference based on the observation that old TLC1 is stable in mex67-5 mutants (C129). Claim C138 is established knowledge from the literature. Together these provide the rationale for using the tlc1-Sm2T mutant to test the Sm7 hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C178"
+    ],
+    "result": "Once in the cytoplasm, TLC1 RNA must rapidly associate with the Sm7 complex, as Mex67 likely disembarks at the nuclear pore exit and gets recycled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C178 is an inference based on the experimental findings and established knowledge about Mex67 recycling (supported by citation). While not directly tested, it is a reasonable inference from the data showing cytoplasmic Sm7 binding is required for stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C184"
+    ],
+    "result": "Active telomerase RNPs only contain 5'-TMG capped telomerase RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C184 is established knowledge supported by a citation. This provides support for the model that TMG capping occurs after nuclear re-import.",
+    "result_type": "MINOR"
+  }
+]

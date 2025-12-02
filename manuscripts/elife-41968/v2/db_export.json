@@ -1,0 +1,1792 @@
+{
+  "submission": {
+    "id": "0f89965e-de9b-4694-95eb-be813b6a94ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:18:38.967973Z",
+    "updated_at": "2025-12-02T07:18:38.967973Z"
+  },
+  "content": [
+    {
+      "id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "submission_id": "0f89965e-de9b-4694-95eb-be813b6a94ff",
+      "content_type": "manuscript",
+      "content_text": "# Piezo\u2019s membrane footprint and its contribution to mechanosensitivity\n\n## Authors\n\n- Christoph A Haselwandter<sup>1</sup> ([ORCID: 0000-0002-5012-5640](https://orcid.org/0000-0002-5012-5640)) \u2020\n- Roderick MacKinnon<sup>3</sup> ([ORCID: 0000-0001-7605-4679](https://orcid.org/0000-0001-7605-4679)) \u2020\n\n### Affiliations\n\n1. Department of Physics & Astronomy University of Southern California Los Angeles United States\n2. Department of Biological Sciences University of Southern California Los Angeles United States\n3. Laboratory of Molecular Neurobiology and Biophysics Howard Hughes Medical Institute, The Rockefeller University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPiezo1 is an ion channel that gates open when mechanical force is applied to a cell membrane, thus allowing cells to detect and respond to mechanical stimulation. Molecular structures of Piezo1 reveal a large ion channel with an unusually curved shape. This study analyzes how such a curved ion channel interacts energetically with the cell membrane. Through membrane mechanical calculations, we show that Piezo1 deforms the membrane shape outside the perimeter of the channel into a curved \u2018membrane footprint\u2019. This membrane footprint amplifies the sensitivity of Piezo1 to changes in membrane tension, rendering it exquisitely responsive. We assert that the shape of the Piezo channel is an elegant example of molecular form evolved to optimize a specific function, in this case tension sensitivity. Furthermore, the predicted influence of the membrane footprint on Piezo gating is consistent with the demonstrated importance of membrane-cytoskeletal attachments to Piezo gating.\n\n## Introduction\n\nPiezo ion channels transduce mechanical stimuli into electrical activity (Coste et al., 2010). These channels \u2013 Piezo1 and Piezo2 in mammals \u2013 underlie many important processes in biology, including cell volume regulation in erythrocytes, cardiovascular system development, and touch sensation (Maksimovic et al., 2014;\u00a0Ranade et al., 2014a; Ranade et al., 2014b;\u00a0Cahalan et al., 2015). In electrophysiological experiments Piezo channels seem to be exquisitely sensitive to applied mechanical force: when the membrane of a cell is poked gently with a probe, or when pressure is applied to stretch a small patch of cell membrane on a gigaseal pipette, Piezo channels open (Coste et al., 2010; Lewis and Grandl, 2015).\n\nStudies have addressed how Piezo channels \u2018sense\u2019 and open in response to mechanical force. In one approach Piezo channels, purified and reconstituted into droplet bilayers, opened when force was applied by swelling a droplet (Syeda et al., 2016). This observation implies that Piezo needs only the cell membrane to couple mechanical forces to pore opening. In another approach, Piezo channels in patches excised from cell membrane blebs (Cox et al., 2016), or in cell excised patches with applied positive or negative pressure (Lewis and Grandl, 2015), open in response to pressure application. These observations also support the notion that Piezo only needs an intact lipid membrane to transduce force into pore opening.\n\nThe reconstitution (Syeda et al., 2016) and excised patch (Lewis and Grandl, 2015; Cox et al., 2016) experiments suggest the \u2018force-from-membrane\u2019 hypothesis for mechanosensitive gating, which, in its simplest form, invokes lateral membrane tension as the origin of the \u2018opening force\u2019 (Sukharev et al., 1999;\u00a0Perozo et al., 2002;\u00a0Chiang et al., 2004;\u00a0Teng et al., 2015).\u00a0But other experiments suggest additional possibilities for force exertion. When blebs are formed on the surface of a cell by removing local cytoskeletal attachments, certain properties of Piezo mechanosensitive gating change (Cox et al., 2016). And more directly, Piezo gating\u00a0is\u00a0altered by applying force to a tether artificially attached to the channel (Wu et al., 2016). Therefore, while membrane-mediated forces alone appear to be sufficient to open Piezo, tethers attached to the membrane or to the channel itself also seem to play a role in Piezo gating.\n\nA partial molecular structure of a Piezo channel has been determined (Guo and MacKinnon, 2017; Saotome et al., 2018; Zhao et al., 2018). Piezo is a trimer of 3 identical subunits that form one central pore and three long arms that extend away from the center. A peculiar aspect of the structure is that the extended arms, which are made of transmembrane helices, do not lie in a plane as would be expected if Piezo normally resides in a planar membrane like most other ion channels. This property of the structure implied that Piezo likely curves the cell membrane locally into a spherical dome (projecting into the cell), which was confirmed by electron micrographs of small unilamellar lipid vesicles (Guo and MacKinnon, 2017).\n\nOn the basis of Piezo\u2019s demonstrated ability to curve lipid membranes locally into a dome, a mechanism for membrane tension sensitivity \u2013 called the membrane dome mechanism \u2013 was proposed (Guo and MacKinnon, 2017). Simply stated, the dome shape provides a source of potential energy for gating \u2013 in the form of excess membrane area 'stored' by curving the membrane \u2013 when the membrane comes under tension. If the Piezo dome becomes flatter when Piezo opens, then the projected (in-plane) area of the dome will expand, that\u00a0is, the available in-plane area of the membrane-Piezo system will increase. Under tension\u00a0$\\gamma$, the flatter shape will be favored by energy\u00a0$\\gamma\u00a0\u0394A$, where $\u0394A$\u00a0is\u00a0here the change in the projected area of the Piezo dome. Therefore, this model rationalized Piezo\u2019s peculiar shape as a means to utilize, for gating purposes, the energy stored in a curved membrane under tension.\n\nHowever, the membrane dome model of Piezo gating only considered the shape of the membrane within Piezo\u2019s perimeter and not the shape of the surrounding membrane, which is necessarily coupled to the curvature of the Piezo dome. In the present analysis we study the energetic contribution to Piezo gating provided by the shape of the surrounding membrane. Through membrane mechanical calculations, we show that the Piezo dome can strongly curve the surrounding membrane. We find that the energetic coupling between the shape of the Piezo dome and the surrounding membrane amplifies Piezo\u2019s tension sensitivity, and may explain the experimentally observed regulation of Piezo gating by membrane-cytoskeletal attachments.\n\n## Results\n\n### System of Piezo plus membrane\n\nFigure 1A and B show two orientations of the molecular model of Piezo1 in yellow, which from here on we refer to as Piezo. Shown in grey, a spherical cap is placed such that it intersects the protein near the middle of the transmembrane helices. This grey surface therefore corresponds to the mid-bilayer surface of the membrane. We call the grey spherical cap, with its embedded Piezo channel, a mid-bilayer representation of the Piezo dome. This dome shape, produced by curved Piezo channels embedded in lipid bilayer membranes, has been confirmed experimentally (Guo and MacKinnon, 2017). The intersection of the grey surface and the Piezo channel, shown in cyan, informs that the dome surface area is covered by approximately 20% protein and 80% lipid membrane.\u00a0Note\u00a0that,\u00a0if the unperturbed configuration of the lipid membrane is planar, the Piezo protein must apply, through its curved structure, a distorting force on the membrane to locally bend the membrane into a dome shape. And, of course, the membrane applies an opposing force on the protein. The result is a stable, non-planar equilibrium configuration of the membrane-Piezo system with zero net force, in which the sum energy of the channel and the membrane is minimized. In the present analysis we do not consider the flexing of Piezo. Instead, we focus on the membrane shape associated with a particular (e.g., closed) Piezo configuration (Figure 1A and B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41968/elife-41968-fig1-v2.jpg)\n\n**Figure 1.:** (A) Side and (B) top-down (projecting into the cell) views of the Piezo dome. The approximate position of the curved mid-bilayer surface of the Piezo dome is indicated in grey, with the cyan regions corresponding to the intersection of the mid-bilayer surface and the Piezo protein. (C) The curved shape of the mid-bilayer surface of the Piezo dome (indicated in grey) deforms the mid-bilayer surface of the surrounding lipid membrane (indicated in blue) and results in a membrane footprint of Piezo that extends beyond the size of the dome (see Figure 2A for further details). [The atomic structure of the Piezo protein in (A) and (B) corresponds to mPiezo1 with Protein Data Bank (http://www.rcsb.org) ID 6B3R.].\n\nSince the surrounding lipid membrane connects smoothly to the Piezo dome, the curved shape of Piezo is expected to induce membrane curvature beyond the perimeter of the Piezo dome. The fundamental reason for this is, the energetic cost to curve a membrane contains a term proportional to the membrane\u2019s mean curvature squared. As a result, a sharp transition from the curved dome shape to a planar membrane is associated with a higher energy than a gradual transition. This effect is shown in Figure 1C: the grey surface corresponds to the mid-bilayer surface of the dome in Figure 1A and B and the blue surface to the mid-bilayer surface of the surrounding membrane. We refer to the region of deformed lipid membrane outside the perimeter of the Piezo dome as Piezo\u2019s membrane footprint (Phillips et al., 2009). The total energy of the membrane-Piezo system therefore has to include Piezo\u2019s membrane footprint in addition to the Piezo dome. As we will show, Piezo\u2019s membrane footprint not only influences the total energy of the membrane-Piezo system, but it also has a very large influence on Piezo\u2019s ability to sense changes in membrane tension.\n\n### Shape and energy of the membrane footprint\n\nOf all the possible shapes Piezo\u2019s membrane footprint may adopt, we assume that the dominant shape corresponds to that associated with the lowest energy. To calculate this lowest energy membrane footprint, we begin with a well-known expression for the lipid membrane deformation energy (Helfrich, 1973)\n\n$$\nG_{M}=\\frac{1}{2}\u00a0K_{b}\\int(c_{1}+c_{2})^{2}dA+\\gamma\u00a0\u0394A\u00a0,\n$$\n\nwhere $K_{b}$ is the membrane bending modulus (membrane bending stiffness), $\\gamma$\u00a0is the membrane tension, $c_{1}$\u00a0and $c_{2}$ are the principal curvatures of the mid-bilayer surface (which are functions of position on the membrane), and $\u0394A$ is the decrease in in-plane area associated with deforming the membrane out of its unperturbed (planar) configuration. The integration is carried out over the surface of the membrane footprint (see Appendix\u00a01). In the integrand of the membrane bending energy in Equation 1 we did not include a contribution $\u221dc_{1}c_{2}$\u00a0due to the Gaussian curvature of the membrane, which is independent of the shape of the membrane footprint, and a contribution due to the membrane spontaneous curvature (Helfrich, 1973). The latter contribution to the membrane bending energy may need to be considered if the bilayer contains lipids that induce intrinsic curvature.\n\nNext, we minimize $G_{M}$ by solving a differential equation corresponding to the first variation of Equation 1 set equal to zero \u2013 the Euler-Lagrange equation \u2013 subject to specific boundary conditions (Fox, 1987). This solution yields the shape of the lipid membrane when its energy is minimal. Using this shape, we calculate $G_{M}$ by evaluating Equation 1. We used two separate, previously developed methods \u2013 one analytical (Weikl et al., 1998; Turner and Sens, 2004; Wiggins and Phillips, 2005; Li et al., 2017) and one numerical (Peterson, 1985; Seifert et al., 1991; Deserno, 2004; Bahrami et al., 2016) \u2013 to carry out these calculations. The analytical solutions involve a 'small gradient' approximation of Equation 1 and are therefore only accurate for cases in which the membrane curvature is small. Nevertheless, the analytical solutions provide an important check (see Materials\u00a0and\u00a0methods) on the numerical solutions, which are not limited to membranes with small curvatures. Because Piezo can be highly curved, the solutions shown in the main text figures were calculated numerically.\n\nThe shape of Piezo\u2019s membrane footprint \u2013 and therefore its associated energy \u2013 depends on three key physical properties of the membrane-Piezo system: the basic shape of the Piezo dome, the membrane bending modulus\u00a0$K_{b}$, and the membrane tension\u00a0$\\gamma$. The general shape of Piezo in a closed conformation is well defined and approximated here as a dome, or spherical cap, of\u00a0area $390nm^{2}$ and radius of curvature $R=R_{c}$\u00a0with $R_{c}=10.2nm$\u00a0(Guo and MacKinnon, 2017). We assume that the area of the Piezo dome stays approximately constant independent of the conformational state of Piezo. The value of $K_{b}$ for membranes with lipid compositions common to cell membranes is well documented, around $20k_{B}T$ (Rawicz et al., 2000), and values of $\\gamma$ relevant to living cells and required to activate Piezo have been described (Lewis and Grandl, 2015; Cox et al., 2016). Therefore, calculation of Piezo\u2019s membrane footprint and its associated energy is a well-defined mechanics problem involving no free parameters.\n\nThe left panel of Figure 2A shows a cross section through the surface displayed in Figure 1C, calculated as described above, corresponding to $R=10.2nm$, $K_{b}=20k_{B}T$, and $\\gamma=0.1k_{B}T/nm^{2}$ ($1k_{B}T/nm^{2}=4.114mN/m$ at $T=298K$). For context on this value of the membrane\u00a0tension, commonly studied membranes undergo lysis at around $3.5k_{B}T/nm^{2}$ (Rawicz et al., 2000). Thus, $0.1k_{B}T/nm^{2}$ is a modest value of the membrane tension, likely experienced by cell membranes under non-pathological stress. The left panel of Figure 2A illustrates that, if one includes the membrane footprint, then Piezo has an extensive reach and, as we will show, this reach has significant functional consequences. But first we inspect how the three physical properties $R$, $K_{b}$, and $\\gamma$ of the membrane-Piezo system affect the size and shape of Piezo\u2019s membrane footprint. If $R$\u00a0were to be increased (i.e., if Piezo were to become flatter) then the deformation footprint would become less pronounced and smaller in height (right panel of Figure 2A). The magnitudes of $K_{b}$ and $\\gamma$ change the reach of the membrane footprint: larger $K_{b}$ and smaller $\\gamma$ values produce a more gradual approach to the plane of the membrane (Figure 2B and C). This relationship is expressed by the characteristic decay length of membrane shape deformations,\n\n$$\n\\lambda=\\sqrt{K_{b}/\\gamma},\n$$\n\nwhich appears in the analytical solution to the Euler-Lagrange equation associated with Equation 1 (Appendix\u00a01, Equations A6 and A7). Substituting $K_{b}=20k_{B}T$ and $\\gamma=0.1k_{B}T/nm^{2}$ yields $\\lambda=14$\u00a0$nm$, which means that under these conditions Piezo\u2019s membrane footprint is much larger than the Piezo protein itself.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41968/elife-41968-fig2-v2.jpg)\n\n**Figure 2.:** The shape of the Piezo membrane footprint depends on (A) the radius of curvature of the Piezo dome $R$, (B) the membrane bending modulus (membrane bending stiffness) $K_{b}$, and (C) the membrane tension $\\gamma$. All curves show the cross section of the mid-bilayer surface and its intersection with the Piezo protein. Unless indicated otherwise, we calculated the Piezo membrane footprint using the value $R=10.2nm$ observed for Piezo in a closed conformation (Guo and MacKinnon, 2017) with $K_{b}=20k_{B}T$ and $\\gamma=0.1k_{B}T/nm^{2}$. For Figure 1C we used the same parameter values as in the left panel of Figure 2A. The range of $K_{b}$ considered in (B) corresponds to the approximate range of $K_{b}$ measured for phosphatidylcholine bilayers with different acyl-chain lengths and degrees of unsaturation (Rawicz et al., 2000). Scale bars, 4 $nm$.\n\nThe membrane footprint energy, $G_{M}$, is graphed in Figure 3 as a function of Piezo\u2019s radius of curvature. $G_{M}$\u00a0is greater than or equal to zero because this energy represents the work required to deform the membrane from a plane into the shape of Piezo\u2019s membrane footprint. Figure 3A shows the energetic consequence if Piezo could undergo a conformational transition that changes its radius of curvature: a highly curved Piezo (small\u00a0$R$) is associated with a large\u00a0$G_{M}$. We also see that $G_{M}$ is a sensitive function of membrane tension. If Piezo becomes flatter when it opens, as was proposed in the membrane dome mechanism (Guo and MacKinnon, 2017), then the deformation footprint will contribute to the energetics of gating, as shown (Figure 3B). We denote here the radii of curvature of the Piezo dome in the closed and open conformational states of Piezo by $R_{c}$ and\u00a0$R_{o}$, with\u00a0$R_{c}<R_{o}$. Under finite membrane tension ($\\gamma>0$) Piezo flattening (i.e., a transition from $R=R_{c}$ to\u00a0$R=R_{o}$) will reduce $G_{M}$ and thus stabilize the flatter, open conformation relative to the closed conformation. In the absence of membrane tension ($\\gamma=0$) the membrane footprint is of no energetic consequence. Thus, Piezo\u2019s membrane footprint would impose a tension-dependent bias, favoring the open conformation of Piezo only when tension is applied, and more so when tension is greater.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41968/elife-41968-fig3-v2.jpg)\n\n**Figure 3.:** (A) Energy cost of the Piezo membrane footprint $G_{M}$ as a function of the radius of curvature of the Piezo dome\u00a0$R$. We calculated $G_{M}$ by minimizing Equation 1 with the membrane bending rigidity $K_{b}=20\u00a0k_{B}T$\u00a0and the indicated values of the membrane tension\u00a0$\\gamma$. (B) Schematic of the proposed mechanism for the mechanical activation of Piezo through membrane tension, for which we assume that the radius of curvature of the Piezo dome in the closed conformational state, $R_{c}$, takes a smaller value than in the open conformational state,\u00a0$R_{o}$.\n\nPiezo\u2019s membrane footprint in the absence of applied tension, which is associated with\u00a0$G_{M}=0$, deserves a comment because the membrane is still highly curved here (see Figure 2C as $\\gamma$\u00a0becomes smaller). If $G_{M}$ represents the work required to deform the membrane from a plane into the shape of Piezo\u2019s membrane footprint, and Piezo\u2019s membrane footprint is curved, how can $G_{M}$ be zero? The explanation is that, in the limit\u00a0$\\gamma\u21920$, the membrane curves in a special way around the Piezo dome such that the principal curvatures $c_{1}$ and $c_{2}$ in Equation 1 sum to zero. This special surface, called a catenoid, would never truly be achieved in this physical system because thermal fluctuations will not permit zero tension and, potentially, because of deviations of the Piezo dome from a perfect spherical cap. Nevertheless, in the absence of applied tension the deformation footprint should approach the approximate shape of a catenoid. As we demonstrate below, this behavior yields fascinating consequences for Piezo\u2019s mechanosensitivity.\n\n### Influence of the membrane footprint on gating\n\nThe above analysis suggests that\u00a0$G_{M}$, the energy required to form Piezo\u2019s membrane footprint, should influence the gating properties of Piezo. To investigate the nature of this influence, we add to the Piezo dome energy the energetic contribution due to Piezo\u2019s membrane footprint. The dome energy, $G_{D}$, has three additive contributions (Guo and MacKinnon, 2017): the protein energy\u00a0$G_{D}^{P}$, in which we include all contributions to the energy of the membrane-Piezo system that do not depend on the membrane tension or the membrane shape, the energy required to bend the membrane in between Piezo\u2019s arms (still part of the dome) against membrane bending stiffness, $G_{D}^{b}$, and the work required to form the dome against membrane tension,\u00a0$G_{D}^{\\gamma}$. The total energy of the membrane-Piezo system is therefore given by\n\n$$\nG=G_{D}^{P}+G_{D}^{b}+G_{D}^{\\gamma}+G_{M}.\n$$\n\n$G$\u00a0is the work required to form both the Piezo dome (i.e., the curved Piezo protein and the curved membrane between the arms) and Piezo\u2019s membrane footprint, starting from a hypothetically planar standard state. The value of $G_{D}^{P}$ is unknown, $G_{D}^{b}$\u00a0was estimated previously to be $2.4\\piK_{b}$ (approximating all of the dome area to be occupied by lipids), and $G_{D}^{\\gamma}=\\gamma\u0394A$\u00a0with, similarly\u00a0as above, $\u0394A$\u00a0being the decrease in the in-plane area of the Piezo dome compared to the planar state (Guo and MacKinnon, 2017). In addition to internal protein interactions, $G_{D}^{P}$\u00a0may include a contribution to the membrane bending energy due to the Gaussian curvature of the membrane (Helfrich, 1973). The Gauss-Bonnet theorem mandates that, for a fixed membrane topology, this contribution to $G_{D}^{P}$ only depends on the boundaries of the membrane, and hence takes a constant value for a given Piezo conformational state and membrane composition (Weikl et al., 1998; Wiggins and Phillips, 2005).\n\nNow, if the dome increases its radius of curvature when Piezo opens, then the total energy difference between the open and closed conformations, $\u0394G$, is obtained by applying Equation 3 to each conformation and taking the difference. The upper panel of Figure 4A shows this difference for the tension-dependent components of $\u0394G$, $\u0394G_{D}^{\\gamma}$ and $\u0394G_{M}$, for a closed to open transition if $R_{c}=10.2nm$ and $R_{o}\u2192\u221e$ (i.e., Piezo being flat in the open conformation), as a function of $\\gamma$. $\u0394G_{D}^{\\gamma}$ and $\u0394G_{M}$ are plotted separately for comparison. It is immediately clear that $\u0394G_{M}$\u00a0is expected to contribute substantially to Piezo\u2019s tension-dependent gating. Two other possible geometries, corresponding to a smaller degree of flattening (Figure 4B), or to flattening from a less curved closed state (Figure 4C), are also shown. We consider the former geometry to explore the decrease in Piezo curvature required for mechanosensitivity, and the latter geometry because the curvature of the Piezo dome may be reduced in cellular membrane environments. In all three cases, for tension values likely relevant to Piezo gating, the contribution to the Piezo gating energy due to Piezo\u2019s membrane footprint is approximately\u00a0equal to or greater than the tension-dependent contribution due to the Piezo dome itself.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41968/elife-41968-fig4-v2.jpg)\n\n**Figure 4.:** Tension-dependent contributions to the Piezo gating energy (upper panels) and associated tension sensitivity (lower panels) due to the Piezo dome, $\u0394G_{D}^{\\gamma}$, and the Piezo membrane footprint, $\u0394G_{M}$, as a function of membrane tension for the Piezo dome radii of curvature (A) $R_{c}=10.2nm$\u00a0and\u00a0$R_{o}\u2192\u221e$, (B) $R_{c}=10.2\u00a0nm$\u00a0and\u00a0$R_{o}=11.2\u00a0nm$, and (C) $R_{c}=20\u00a0nm$\u00a0and $R_{o}\u2192\u221e$ in the closed and open conformational states of Piezo, respectively. For all calculations, we set the membrane bending rigidity\u00a0$K_{b}=20k_{B}T$.\n\nThe tension sensitivity of Piezo gating depends on how steeply $\u0394G$\u00a0changes with respect to a change in\u00a0$\\gamma$,\u00a0$d\u0394G/d\\gamma$. We graph the predicted tension sensitivity of Piezo gating in the lower panels of Figure 4A\u2013C, again with the contributions due to the Piezo dome and Piezo\u2019s membrane footprint separated for comparison. The negative sign indicates that increasing $\\gamma$\u00a0favors the open conformation. For the dome, sensitivity is constant, equal to a constant change in\u00a0$\u0394A$. For the membrane footprint, the magnitude of the sensitivity is not constant and very large for small\u00a0$\\gamma$. In fact, using the analytical approach for calculating Piezo\u2019s membrane footprint it can be shown that the tension sensitivity grows without bound as the membrane tension approaches zero. This remarkable result means that Piezo\u2019s membrane footprint renders Piezo exquisitely sensitive in the low-tension regime; most sensitive to the smallest perturbations around zero tension. The diverging tension sensitivity as $\\gamma\u21920$\u00a0is a consequence of the idealized catenoidal membrane footprint that is formed at zero tension. The membrane footprint is large and curved, but in a special manner. Once an incrementally small value of membrane tension is applied, this large, previously energy-free, membrane footprint is available to release in-plane area and to unbend, reducing the free energy of the expanded (open) conformation relative to the closed conformation.\n\nFigure 5\u00a0presents open probability ($P_{o}$) and gating sensitivity ($dP_{o}/d\\gamma$) curves for the energy values in Figure 4, applied to a 2-state gating model, for which\n\n$$\n\\frac{P_{o}}{1\u2212P_{o}}=e^{\u2212\u0394G/k_{B}T}.\n$$\n\nThe unknown values of $G_{D}^{P}$ were chosen so that opening occurs within the tension range shown. Since $G_{D}^{P}$ is unknown, the Piezo gating tension is not a model prediction. The solid and dashed curves correspond to the gating response with and without inclusion of Piezo\u2019s membrane footprint energy. The membrane footprint energy shifts the $P_{o}$ curve in the direction of smaller tension values and steepens it (i.e., increases its sensitivity). The particular gating curves shown here depend on a specific, simple gating equilibrium scheme and an unknown value of\u00a0$\u0394G_{D}^{P}$. Because the contribution of Piezo\u2019s membrane footprint to the Piezo gating energy is so large, however, the conclusion that the position and steepness of the $P_{o}$ curve should exhibit a strong dependence on Piezo\u2019s membrane footprint will apply to a wide range of possible gating schemes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41968/elife-41968-fig5-v2.jpg)\n\n**Figure 5.:** Piezo activation curves $P_{o}$ (upper panels) and associated tension sensitivity (lower panels) resulting solely from the gating energy due to the Piezo dome, $\u0394G=\u0394G_{D}$, and from the gating energy due to the Piezo dome together with the Piezo membrane footprint, $\u0394G=\u0394G_{D}+\u0394G_{M}$, as a function of membrane tension for the Piezo dome radii of curvature (A) $R_{c}=10.2nm$\u00a0and\u00a0$R_{o}\u2192\u221e$, (B) $R_{c}=10.2nm$\u00a0and\u00a0$R_{o}=11.2nm$, and (C) $R_{c}=20nm$\u00a0and $R_{o}\u2192\u221e$ in the closed and open conformational states of Piezo, respectively. For all calculations, we set the membrane bending rigidity\u00a0$K_{b}=20k_{B}T$. We used the values (A)\u00a0$\u0394G_{D}^{P}\u2248180k_{B}T$, (B)\u00a0$\u0394G_{D}^{P}\u224831k_{B}T$, and (C) $\u0394G_{D}^{P}\u224847\u00a0k_{B}T$\u00a0for the (unknown) contribution of the protein energy to the Piezo gating energy such that gating occurs within the indicated tension range.\n\n### Modulation of gating through the membrane\n\nNext, we consider the influence of membrane bending stiffness on Piezo gating. We quantify the magnitude of the membrane bending stiffness by the membrane bending modulus\u00a0$K_{b}$. We are interested in this dependence because membrane bending stiffness is a function of lipid composition, which could vary among different cell types and possibly even between different regions within the same cell. To what extent might membrane bending\u00a0stiffness influence Piezo\u2019s response to membrane tension? Membrane bending\u00a0stiffness enters the Piezo gating energy through the dome contribution $\u0394G_{D}^{b}$ and the footprint contribution\u00a0$\u0394G_{M}$. Figure 6A shows the sum of these two membrane\u00a0bending stiffness-dependent contributions to the Piezo gating energy and associated $P_{o}$ and sensitivity curves for three different values of\u00a0$K_{b}$. Note that $\u0394G_{D}^{b}$ contributes as a\u00a0tension-independent constant, whereas the contribution $\u0394G_{M}$ depends on membrane tension. Together, $\u0394G_{D}^{b}$\u00a0and $\u0394G_{M}$ contribute significantly to $\u0394G$\u00a0and thus to gating. This implies that Piezo channels in different cell types and possibly different locations within a cell will exhibit different gating characteristics.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/41968/elife-41968-fig6-v2.jpg)\n\n**Figure 6.:** (A) Membrane bending stiffness-dependent contribution to the Piezo gating energy $\u0394G_{D}^{b}+\u0394G_{M}$ (left panel) and associated Piezo activation and tension sensitivity curves (middle and right panels) as a function of membrane tension for the indicated values of the membrane bending stiffness\u00a0$K_{b}$. (B) Membrane tension-dependent contribution to the Piezo gating energy $\u0394G_{D}^{\\gamma}+\u0394G_{M}$ (left panel) and associated Piezo activation and tension sensitivity curves (middle and right panels) as a function of membrane tension for infinite and finite membrane compartments. For both (A) and (B) we employed the Piezo dome radii of curvature $R_{c}=10.2nm$\u00a0and $R_{o}\u2192\u221e$ in the closed and open conformational states of Piezo, respectively. For (B) we used the unconstrained membrane arc lengths $5nm$\u00a0and $10nm$\u00a0separating the border of the Piezo dome and the border of the membrane compartment along the membrane in the radial direction, which correspond to the membrane compartment diameters $S\u224830nm$\u00a0and\u00a0$S\u00a0\u224840\u00a0nm$, respectively, and set\u00a0$K_{b}=20k_{B}T$. We calculated the curves in the middle and right panels of (A) and (B) from the total energy of the membrane-Piezo system in Equation 3, with the values (A) $\u0394G_{D}^{P}\u2248270\u00a0k_{B}T$\u00a0and (B) $\u0394G_{D}^{P}\u2248280k_{B}T$\u00a0for the (unknown) contribution of the protein energy to the Piezo gating energy such that gating occurs within the indicated tension ranges.\n\nThe membrane footprint induced by Piezo is expected to influence the distribution of molecules \u2013 both lipids and proteins \u2013 in the surrounding membrane. Piezo\u2019s membrane footprint should attract lipids and proteins that exhibit an energetic preference for the curved shape of the membrane footprint, and repel molecules that \u2018prefer\u2019 other membrane shapes. Conversely, our model of Piezo\u2019s membrane footprint implies that the composition of the surrounding membrane should influence the energetics of Piezo gating. This model prediction raises interesting possibilities for the regulation of Piezo gating in different membrane environments. The membrane footprint induced by Piezo also implies that Piezo channels should interact with each other through the membrane, and hence influence each other\u2019s local distribution in the membrane and gating properties.\n\nFinally, we consider the effect of membrane compartment size on Piezo gating. In the calculations presented so far Piezo was assumed to reside in an infinite membrane that approaches a planar configuration far from the channel. But real cell membranes are compartmentalized. For example, cytoskeletal attachments, which occur at spatial frequencies of up to tens of nanometers, can restrict the shapes a membrane can take (Kusumi et al., 2014). Figure 6B shows the sum of the tension-dependent contributions to the Piezo gating energy, $\u0394G_{D}^{\\gamma}$ and $\u0394G_{M}$, and associated $P_{o}$ and sensitivity curves, for different compartmental restrictions. Membrane compartments with diameters $S$ approximately equal to $30nm$ and $40nm$ are compared to an infinite membrane. These compartments restrict the distance between Piezo\u2019s outer perimeter and the edge of the membrane compartment to distances of $5nm$ and $10nm$\u00a0along the membrane in the radial direction, respectively. In general, the effects of membrane compartmentalization are greater in the low-tension regime. This result can be understood in terms of the characteristic decay length of membrane shape deformations in Equation 2: larger values of $\\gamma$ reduce the size of Piezo\u2019s membrane footprint so that it fits better into the membrane compartment.\n\nWe also note that the smaller the membrane compartment, the greater influence it has on Piezo gating. This is because in these particular calculations the membrane is constrained to planarity at the edge of the membrane compartment, but the effect will in general also depend on the membrane slope constraint at the edge of the membrane compartment. The important point is that membrane compartmentalization can have a large effect on Piezo gating because membrane compartments can alter the shape and therefore the energy of Piezo\u2019s membrane footprint. Experimentally observed effects of cytoskeletal removal on some properties of Piezo gating could reflect the importance of Piezo\u2019s membrane footprint for Piezo gating (Cox et al., 2016).\n\nIn Figure 6 we neglected the contribution to the membrane bending energy due to the Gaussian curvature of the membrane (Helfrich, 1973). While being independent of the shape of the membrane footprint, the Gaussian contribution to the membrane bending energy depends on the membrane composition and on how the membrane is constrained at the Piezo and membrane compartment boundaries (Weikl et al., 1998; Wiggins and Phillips, 2005). Contributions to the membrane bending energy due to the Gaussian membrane curvature may therefore further modulate Piezo gating in compartmentalized membranes with heterogeneous lipid compositions.\n\n## Discussion\n\nWhile Piezo channels can exhibit complex gating properties, including inactivation and voltage dependence, their dominant functional characteristic is that they open in response to mechanical force (Coste et al., 2010; Lewis and Grandl, 2015). This paper analyzes the influence of Piezo\u2019s unusual dome shape on the lipid bilayer membrane that surrounds the channel. The results depend on three key properties of the membrane-Piezo system and they are known: Piezo\u2019s shape, the lipid bilayer bending modulus, and the levels of tension that can be applied to a lipid membrane. Finding the shape of the lipid membrane surrounding Piezo, and its associated energy, amounts to solving a simple mechanics problem. And the inescapable conclusion is that Piezo, owing to its unusual shape, imposes a large structural perturbation \u2013 a deformation called a membrane footprint \u2013 on its surrounding membrane.\n\nDepending on the applied membrane tension, Piezo\u2019s membrane footprint can come with a large energetic cost. Consequently, if Piezo changes its shape, for example if it becomes flatter upon opening, then the surrounding membrane will weigh in prominently in an energetic sense to Piezo\u2019s tension sensitivity. Moreover, Piezo\u2019s membrane footprint weighs in in such a way that the tension sensitivity of Piezo gating is greatest in the low-tension regime. This property would seem to render Piezo poised to respond to the slightest changes in cell membrane tension.\n\nIn our analysis of Piezo\u2019s membrane footprint we used a spherical dome shape to approximate a more complex underlying geometry of Piezo. Deviations from a spherical dome\u00a0shape will alter the shape and energetics of the membrane footprint. But the basic idea that Piezo\u2019s curved shape will create an energetically important membrane footprint will still apply.\n\nPiezo\u2019s large membrane footprint rationalizes what at first seemed to be a contradiction in the experimental literature. Certain data show the clear importance of the membrane in mediating Piezo\u2019s mechanosensitivity (Lewis and Grandl, 2015; Syeda et al., 2016; Cox et al., 2016), while other data show the importance of tether attachments (e.g., the cytoskeleton) to the channel or the membrane (Cox et al., 2016; Wu et al., 2016). A large membrane footprint essentially demands that both contributions be energetically important.\n\nPiezo is a very uniquely shaped membrane protein. We think that this shape evolved specifically to exploit the physical properties of the lipid membrane to create a large membrane footprint, enabling exquisite tension sensitivity.\n\n## Materials and methods\n\nWe used Equation 1 to analytically and numerically calculate Piezo\u2019s membrane footprint, and its associated energy,\u00a0through the Monge (Weikl et al., 1998; Turner and Sens, 2004; Wiggins and Phillips, 2005; Li et al., 2017) and arclength (Peterson, 1985; Seifert et al., 1991; Deserno, 2004; Bahrami et al., 2016) parametrizations of surfaces, respectively. Appendix\u00a01-sections 1 and 2 provide a detailed discussion of these Monge and arclength solutions. All of the results shown in the main text figures were calculated numerically using the arclength parametrization of surfaces, which allows for large membrane curvatures. In Appendix\u00a01-section 3 we compare the analytical and numerical solutions obtained using the Monge and arclength parametrizations of surfaces. We find that the Monge parametrization of surfaces tends to overestimate the magnitudes of Piezo\u2019s membrane footprint and its associated membrane deformation energy but yields, for the scenarios considered in the main text figures, qualitatively similar predictions as the arclength parameterization of surfaces.\n",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "afe0470f-7415-4082-b438-bac63416647a",
+      "submission_id": "0f89965e-de9b-4694-95eb-be813b6a94ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Baron Chanda, University of Wisconsin-Madison United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41968.018](https://doi.org/10.7554/eLife.41968.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Piezo's membrane footprint and its contribution to mechanosensitivity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Ardem Patapoutian (Reviewer #1); Olaf S Andersen (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study explores the physical basis of mechanosensitivity of Piezo1 ion channels. Structural studies have shown that Piezo1 channels have a unique curved shape in detergent micelles. This curved architecture is largely retained in liposomes/lipid membranes such that the lipid membranes are significantly deformed upon incorporation of Piezo1 channels. This paper examines the importance of this membrane deformation on the overall gating and mechanosensitivity of the Piezo1 channels from an analytical standpoint. The overall conclusion is that Piezo, owing to its unusual shape, imposes a large structural perturbation (which the authors refer to as membrane footprint) on its surrounding membrane. This membrane footprint weighs such that the tension sensitivity of Piezo gating is greatest in the low-tension regime rendering Piezo poised to respond to the slightest changes in cell membrane tension. The authors' treatment of mechanosensitivity is elegant \u2013 it eschews details such as \"structural domains\" and \"conformational changes\" and yet is able to incorporate structural information to offer mechanistic insight into how Piezo channels work.\n\nEssential revisions:\n\n1) As the authors note, only partial molecular structures of Piezo have been determined. 12 predicted TM helices per promoter are conspicuously absent, which could contribute significantly to the shape of Piezo. Do the authors think the additional TMs extend the Piezo \"dome\" or are they part of the membrane footprint? How might the additional TMs affect the parameters in the mechanical calculations?\n\n2) The authors only consider a single aspect observed in the Piezo structure \u2013 its unique curvature \u2013 in constructing and describing the model of mechanosensitivity. In the context of the dome/membrane footprint gating models, what other aspects of the structure could be important? For example, as seen in Figure 1B, the \"arms\" of Piezo are \"tucked\" inward, creating a relatively compact triskelion. Might the three armed architecture afford the ability of Piezo to \"curl\" outward in an expanded/open state?\n\n3) What would be the curvature of Piezo1, in the open state, which would enable it to be sensitive to mechanical stimuli? This might allow one to rationalize the pretty large (~47kT) energy difference between open and closed states (used for many of the simulations) presented.\n\n4) Would the authors predict that Piezo1 is osmosensitive as well? Change in osmotic pressure would change the intrinsic curvature of the membrane and thus the membrane deformation energy which according to the authors' model would affect gating and mechanosensitivity of the channel. To the best of my knowledge, Piezo1 channels show very little osmosensitivity. It might serve the paper if the authors briefly discuss the different modes of mechanosensitivity (osmosensitive, shear-sensitive, mechano- or stretch sensitive, etc.) and how their model relates to Piezo1's unique mode of mechanical response.\n\n5) Two related points raised by the reviewers:\n\nThroughout the paper the authors consider the Piezo-membrane system as consisting of a single Piezo trimer and its surrounding membrane, and that the \"membrane footprint\" of Piezo can extend tens of nanometers beyond the actual surface area occupied by the protein. But cellular membranes are highly heterogenous and is occupied by many membrane proteins, some of which may interact with Piezo and modulate function. It seems that the deformed membrane surrounding Piezo would be energetically unfavorable to be occupied by other membrane proteins, at least those that prefer planar membranes. A further consequence of the membrane footprint model is that two neighboring Piezo molecules would repel each other to prevent overlap of deformation footprints (Philips, Ursell et al., Nature 2009). Can the authors discuss how the membrane footprint might effect interaction of Piezos with other membrane proteins, and whether their model precludes the formation of Piezo clustering (a behavior seen in various other ion channel families)?\n\nThe final question which I have is whether the authors think that if their proposed mechanism is 'correct' and the membrane deformation energy is a crucial component of gating energetics, would there be interchannel cooperativity \u2013 i.e. cooperativity between (two or more) neighboring channels? The authors describe the membrane footprint of a single channel and how it relates to its gating. However, if there are two or more channels in the vicinity, then the overall membrane footprint of the multiple channels might (and in all likelihood will) be different from the sum of individual channels and therefore the energetics and mechanosensitivity would also be different. Furthermore, the nature of the membrane (intrinsic curvature and composition) would also in likelihood affect such cooperativity. I would think that this is an important point and wonder what the authors think about it. It might be worthwhile to discuss this aspect, even if briefly.\n",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8fb020dc-5bde-4e6c-8af2-5110a2010c8f",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C1",
+      "claim": "Piezo1 is an ion channel that gates open when mechanical force is applied to a cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 is an ion channel that gates open when mechanical force is applied to a cell membrane, thus allowing cells to detect and respond to mechanical stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characterization of Piezo1 function, drawing from established scientific knowledge about this ion channel.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "6d6dc3f6-1901-4e81-9974-3606d232b0a7",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C2",
+      "claim": "Piezo1 allows cells to detect and respond to mechanical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo1 is an ion channel that gates open when mechanical force is applied to a cell membrane, thus allowing cells to detect and respond to mechanical stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional consequence of Piezo1's mechanosensitive gating, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "9432ca54-752c-4941-a2f5-1af5b656d25a",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C3",
+      "claim": "Molecular structures of Piezo1 reveal a large ion channel with an unusually curved shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular structures of Piezo1 reveal a large ion channel with an unusually curved shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to structural data from prior studies, supported by citations in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "c05d5011-e8b7-4c5c-8a8f-80a90a239d1a",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C4",
+      "claim": "Piezo1 deforms the membrane shape outside the perimeter of the channel into a curved 'membrane footprint'.",
+      "claim_type": "EXPLICIT",
+      "source": "Through membrane mechanical calculations, we show that Piezo1 deforms the membrane shape outside the perimeter of the channel into a curved 'membrane footprint'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on membrane mechanical calculations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "4b4d0e2f-5c52-4f50-974f-66109d138a6f",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C5",
+      "claim": "The membrane footprint amplifies the sensitivity of Piezo1 to changes in membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "This membrane footprint amplifies the sensitivity of Piezo1 to changes in membrane tension, rendering it exquisitely responsive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion derived from the calculations and analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "6b68f513-9056-4c7f-8925-b46fdd70e4ca",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C6",
+      "claim": "The shape of the Piezo channel is an example of molecular form evolved to optimize tension sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We assert that the shape of the Piezo channel is an elegant example of molecular form evolved to optimize a specific function, in this case tension sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the functional analysis presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "1fa6a48a-7902-458f-92e9-9c8b1a39a635",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C7",
+      "claim": "The predicted influence of the membrane footprint on Piezo gating is consistent with the demonstrated importance of membrane-cytoskeletal attachments to Piezo gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the predicted influence of the membrane footprint on Piezo gating is consistent with the demonstrated importance of membrane-cytoskeletal attachments to Piezo gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the theoretical predictions to experimental observations from cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "f64cd6de-36a8-4692-bd3e-d5dd2b2f563c",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C8",
+      "claim": "Piezo ion channels transduce mechanical stimuli into electrical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo ion channels transduce mechanical stimuli into electrical activity (Coste et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Coste et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "6923b193-6ce2-4e6d-bef2-be57c7738c94",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C9",
+      "claim": "Piezo1 and Piezo2 are the Piezo channels in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "These channels \u2013 Piezo1 and Piezo2 in mammals \u2013 underlie many important processes in biology, including cell volume regulation in erythrocytes, cardiovascular system development, and touch sensation (Maksimovic et al., 2014; Ranade et al., 2014a; Ranade et al., 2014b; Cahalan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mammalian Piezo channels, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "ba7e3af8-92b8-4303-86e7-6d5b77a614ed",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C10",
+      "claim": "Piezo channels underlie cell volume regulation in erythrocytes, cardiovascular system development, and touch sensation.",
+      "claim_type": "EXPLICIT",
+      "source": "These channels \u2013 Piezo1 and Piezo2 in mammals \u2013 underlie many important processes in biology, including cell volume regulation in erythrocytes, cardiovascular system development, and touch sensation (Maksimovic et al., 2014; Ranade et al., 2014a; Ranade et al., 2014b; Cahalan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "5f05fc8f-c4e0-42fe-8fa3-7a9d5240a67d",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C11",
+      "claim": "Piezo channels are exquisitely sensitive to applied mechanical force in electrophysiological experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In electrophysiological experiments Piezo channels seem to be exquisitely sensitive to applied mechanical force: when the membrane of a cell is poked gently with a probe, or when pressure is applied to stretch a small patch of cell membrane on a gigaseal pipette, Piezo channels open (Coste et al., 2010; Lewis and Grandl, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "0ac3b875-11f9-4606-be53-361f1799eba0",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C12",
+      "claim": "Piezo channels open when the membrane of a cell is poked gently with a probe.",
+      "claim_type": "EXPLICIT",
+      "source": "In electrophysiological experiments Piezo channels seem to be exquisitely sensitive to applied mechanical force: when the membrane of a cell is poked gently with a probe, or when pressure is applied to stretch a small patch of cell membrane on a gigaseal pipette, Piezo channels open (Coste et al., 2010; Lewis and Grandl, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "a6d3385d-1e56-4fa7-9998-986afc4bca1c",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C13",
+      "claim": "Piezo channels open when pressure is applied to stretch a small patch of cell membrane on a gigaseal pipette.",
+      "claim_type": "EXPLICIT",
+      "source": "In electrophysiological experiments Piezo channels seem to be exquisitely sensitive to applied mechanical force: when the membrane of a cell is poked gently with a probe, or when pressure is applied to stretch a small patch of cell membrane on a gigaseal pipette, Piezo channels open (Coste et al., 2010; Lewis and Grandl, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "1dd9d90f-4212-43fc-8d42-51882685a065",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C14",
+      "claim": "Purified Piezo channels reconstituted into droplet bilayers opened when force was applied by swelling a droplet.",
+      "claim_type": "EXPLICIT",
+      "source": "In one approach Piezo channels, purified and reconstituted into droplet bilayers, opened when force was applied by swelling a droplet (Syeda et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "dceac060-adea-4c4e-b62c-db6eb399ec29",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C15",
+      "claim": "Piezo needs only the cell membrane to couple mechanical forces to pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation implies that Piezo needs only the cell membrane to couple mechanical forces to pore opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the reconstitution experiment cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "0e56dc0d-ef51-4066-8659-e5250c1d96cf",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C16",
+      "claim": "Piezo channels in patches excised from cell membrane blebs open in response to pressure application.",
+      "claim_type": "EXPLICIT",
+      "source": "In another approach, Piezo channels in patches excised from cell membrane blebs (Cox et al., 2016), or in cell excised patches with applied positive or negative pressure (Lewis and Grandl, 2015), open in response to pressure application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "64b94e51-bb1a-47e6-97c3-54ecbc73931c",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C17",
+      "claim": "Piezo channels in cell excised patches with applied positive or negative pressure open in response to pressure application.",
+      "claim_type": "EXPLICIT",
+      "source": "In another approach, Piezo channels in patches excised from cell membrane blebs (Cox et al., 2016), or in cell excised patches with applied positive or negative pressure (Lewis and Grandl, 2015), open in response to pressure application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "1f474b87-0f39-4f0b-a24e-eaf291c34930",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C18",
+      "claim": "Piezo only needs an intact lipid membrane to transduce force into pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations also support the notion that Piezo only needs an intact lipid membrane to transduce force into pore opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "c3587f64-a6e6-47e5-83a0-684fd99fe699",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C19",
+      "claim": "The reconstitution and excised patch experiments suggest the 'force-from-membrane' hypothesis for mechanosensitive gating.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstitution (Syeda et al., 2016) and excised patch (Lewis and Grandl, 2015; Cox et al., 2016) experiments suggest the 'force-from-membrane' hypothesis for mechanosensitive gating, which, in its simplest form, invokes lateral membrane tension as the origin of the 'opening force' (Sukharev et al., 1999; Perozo et al., 2002; Chiang et al., 2004; Teng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental and theoretical studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "46fb1544-761f-44c6-ab2e-af0ec6cfdd3d",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C20",
+      "claim": "The 'force-from-membrane' hypothesis invokes lateral membrane tension as the origin of the 'opening force'.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstitution (Syeda et al., 2016) and excised patch (Lewis and Grandl, 2015; Cox et al., 2016) experiments suggest the 'force-from-membrane' hypothesis for mechanosensitive gating, which, in its simplest form, invokes lateral membrane tension as the origin of the 'opening force' (Sukharev et al., 1999; Perozo et al., 2002; Chiang et al., 2004; Teng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical and experimental studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "92878785-0b94-4c01-bd3a-66523df8173e",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C21",
+      "claim": "Certain properties of Piezo mechanosensitive gating change when blebs are formed on the surface of a cell by removing local cytoskeletal attachments.",
+      "claim_type": "EXPLICIT",
+      "source": "When blebs are formed on the surface of a cell by removing local cytoskeletal attachments, certain properties of Piezo mechanosensitive gating change (Cox et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "ffc020f8-cdd7-4e40-b9bb-1437f68108e1",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C22",
+      "claim": "Piezo gating is altered by applying force to a tether artificially attached to the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "And more directly, Piezo gating is altered by applying force to a tether artificially attached to the channel (Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "9465c22b-7533-461d-8aab-b4729702e7af",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C23",
+      "claim": "Membrane-mediated forces alone appear to be sufficient to open Piezo.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while membrane-mediated forces alone appear to be sufficient to open Piezo, tethers attached to the membrane or to the channel itself also seem to play a role in Piezo gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "b3d9cd83-78a7-479b-ac4c-0393e22a130a",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C24",
+      "claim": "Tethers attached to the membrane or to the channel itself also seem to play a role in Piezo gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while membrane-mediated forces alone appear to be sufficient to open Piezo, tethers attached to the membrane or to the channel itself also seem to play a role in Piezo gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "ca48b5f3-b972-4307-b6ca-bdd7583635a0",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C25",
+      "claim": "A partial molecular structure of a Piezo channel has been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "A partial molecular structure of a Piezo channel has been determined (Guo and MacKinnon, 2017; Saotome et al., 2018; Zhao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "416d447f-2244-4054-8fa3-0c408b8a3b35",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C26",
+      "claim": "Piezo is a trimer of 3 identical subunits that form one central pore and three long arms that extend away from the center.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo is a trimer of 3 identical subunits that form one central pore and three long arms that extend away from the center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural data from cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "13ce49b4-2236-452c-b1bc-7c5988b6d789",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C27",
+      "claim": "The extended arms of Piezo, which are made of transmembrane helices, do not lie in a plane.",
+      "claim_type": "EXPLICIT",
+      "source": "A peculiar aspect of the structure is that the extended arms, which are made of transmembrane helices, do not lie in a plane as would be expected if Piezo normally resides in a planar membrane like most other ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural data from cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "8fbe86c3-9e58-4b00-aaa7-47da7ee436c7",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C28",
+      "claim": "Piezo likely curves the cell membrane locally into a spherical dome projecting into the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This property of the structure implied that Piezo likely curves the cell membrane locally into a spherical dome (projecting into the cell), which was confirmed by electron micrographs of small unilamellar lipid vesicles (Guo and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a structural study with electron micrographs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "d395ab4b-bc7b-49bc-81b7-6949f5e9859e",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C29",
+      "claim": "Electron micrographs of small unilamellar lipid vesicles confirmed that Piezo curves the cell membrane locally into a spherical dome.",
+      "claim_type": "EXPLICIT",
+      "source": "This property of the structure implied that Piezo likely curves the cell membrane locally into a spherical dome (projecting into the cell), which was confirmed by electron micrographs of small unilamellar lipid vesicles (Guo and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "06eb4790-12d6-4d8d-92e1-2dc12b87f611",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C30",
+      "claim": "A mechanism for membrane tension sensitivity called the membrane dome mechanism was proposed based on Piezo's demonstrated ability to curve lipid membranes locally into a dome.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of Piezo's demonstrated ability to curve lipid membranes locally into a dome, a mechanism for membrane tension sensitivity \u2013 called the membrane dome mechanism \u2013 was proposed (Guo and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "faefadfe-850c-4f71-9ade-e9f5b4042c68",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C31",
+      "claim": "The dome shape provides a source of potential energy for gating in the form of excess membrane area 'stored' by curving the membrane when the membrane comes under tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Simply stated, the dome shape provides a source of potential energy for gating \u2013 in the form of excess membrane area 'stored' by curving the membrane \u2013 when the membrane comes under tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the membrane dome mechanism based on physical principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "ca961110-5526-4b85-a92f-c367f88fa0ae",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C32",
+      "claim": "If the Piezo dome becomes flatter when Piezo opens, then the projected (in-plane) area of the dome will expand.",
+      "claim_type": "EXPLICIT",
+      "source": "If the Piezo dome becomes flatter when Piezo opens, then the projected (in-plane) area of the dome will expand, that is, the available in-plane area of the membrane-Piezo system will increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on geometric principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "2048a53a-d813-4ca1-9dcc-b38a420c96df",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C34",
+      "claim": "The membrane dome model only considered the shape of the membrane within Piezo's perimeter and not the shape of the surrounding membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the membrane dome model of Piezo gating only considered the shape of the membrane within Piezo's perimeter and not the shape of the surrounding membrane, which is necessarily coupled to the curvature of the Piezo dome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of the prior model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "2e9bedea-b251-4cff-82c0-ba104f360d0c",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C35",
+      "claim": "The Piezo dome can strongly curve the surrounding membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Through membrane mechanical calculations, we show that the Piezo dome can strongly curve the surrounding membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on calculations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "77738985-25f9-4f90-9d47-5211855e1c34",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C36",
+      "claim": "The energetic coupling between the shape of the Piezo dome and the surrounding membrane amplifies Piezo's tension sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the energetic coupling between the shape of the Piezo dome and the surrounding membrane amplifies Piezo's tension sensitivity, and may explain the experimentally observed regulation of Piezo gating by membrane-cytoskeletal attachments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion based on calculations and analysis in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "c165f4bc-6fb3-48eb-842e-ce8c6a28b1ac",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C37",
+      "claim": "The energetic coupling between the shape of the Piezo dome and the surrounding membrane may explain the experimentally observed regulation of Piezo gating by membrane-cytoskeletal attachments.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the energetic coupling between the shape of the Piezo dome and the surrounding membrane amplifies Piezo's tension sensitivity, and may explain the experimentally observed regulation of Piezo gating by membrane-cytoskeletal attachments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation connecting the theoretical findings to experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "58b4abcc-b3c3-4a59-8977-c4a77584b226",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C38",
+      "claim": "The dome surface area is covered by approximately 20% protein and 80% lipid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The intersection of the grey surface and the Piezo channel, shown in cyan, informs that the dome surface area is covered by approximately 20% protein and 80% lipid membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the structural model shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "f7be138a-51f3-48e1-9019-c789dbadbcff",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C39",
+      "claim": "If the unperturbed configuration of the lipid membrane is planar, the Piezo protein must apply a distorting force on the membrane to locally bend the membrane into a dome shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that, if the unperturbed configuration of the lipid membrane is planar, the Piezo protein must apply, through its curved structure, a distorting force on the membrane to locally bend the membrane into a dome shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on membrane mechanics principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "5c4ab473-7bd5-4dcd-96fd-a8b59a4e7be4",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C40",
+      "claim": "The membrane applies an opposing force on the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "And, of course, the membrane applies an opposing force on the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Newton's third law and membrane mechanics principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "424b4afb-f68e-4b19-aae4-65d187731060",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C41",
+      "claim": "The result is a stable, non-planar equilibrium configuration of the membrane-Piezo system with zero net force, in which the sum energy of the channel and the membrane is minimized.",
+      "claim_type": "EXPLICIT",
+      "source": "The result is a stable, non-planar equilibrium configuration of the membrane-Piezo system with zero net force, in which the sum energy of the channel and the membrane is minimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on equilibrium thermodynamics principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "bf17a319-bcd5-4d0e-bbeb-8a88079b0da8",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C42",
+      "claim": "The curved shape of the mid-bilayer surface of the Piezo dome deforms the mid-bilayer surface of the surrounding lipid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The curved shape of the mid-bilayer surface of the Piezo dome (indicated in grey) deforms the mid-bilayer surface of the surrounding lipid membrane (indicated in blue) and results in a membrane footprint of Piezo that extends beyond the size of the dome (see Figure 2A for further details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and explained in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "18a470bf-feca-44f4-ac30-b94c07a64314",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C43",
+      "claim": "The energetic cost to curve a membrane contains a term proportional to the membrane's mean curvature squared.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental reason for this is, the energetic cost to curve a membrane contains a term proportional to the membrane's mean curvature squared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the Helfrich membrane bending energy model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "dcd6a13c-35e1-472d-aa76-0ecdb1998921",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C44",
+      "claim": "A sharp transition from the curved dome shape to a planar membrane is associated with a higher energy than a gradual transition.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, a sharp transition from the curved dome shape to a planar membrane is associated with a higher energy than a gradual transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on membrane mechanics principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "6b9a19db-69a9-4831-abee-b47ec6a92d3f",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C45",
+      "claim": "The total energy of the membrane-Piezo system has to include Piezo's membrane footprint in addition to the Piezo dome.",
+      "claim_type": "EXPLICIT",
+      "source": "The total energy of the membrane-Piezo system therefore has to include Piezo's membrane footprint in addition to the Piezo dome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical conclusion from the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "cab69678-8653-4425-9911-941489f2598f",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C46",
+      "claim": "Piezo's membrane footprint influences the total energy of the membrane-Piezo system.",
+      "claim_type": "EXPLICIT",
+      "source": "As we will show, Piezo's membrane footprint not only influences the total energy of the membrane-Piezo system, but it also has a very large influence on Piezo's ability to sense changes in membrane tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "0c5d157f-162e-430c-b141-93ef991fa760",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C47",
+      "claim": "Piezo's membrane footprint has a very large influence on Piezo's ability to sense changes in membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "As we will show, Piezo's membrane footprint not only influences the total energy of the membrane-Piezo system, but it also has a very large influence on Piezo's ability to sense changes in membrane tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "99f3606f-55a7-4a2a-b167-181f0fc02e43",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C48",
+      "claim": "The dominant shape of Piezo's membrane footprint corresponds to that associated with the lowest energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all the possible shapes Piezo's membrane footprint may adopt, we assume that the dominant shape corresponds to that associated with the lowest energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard assumption in equilibrium thermodynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "646ee0e7-dbf0-48c3-92c4-60b11cc83c2b",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C51",
+      "claim": "Calculation of Piezo's membrane footprint and its associated energy is a well-defined mechanics problem involving no free parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, calculation of Piezo's membrane footprint and its associated energy is a well-defined mechanics problem involving no free parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the nature of the theoretical approach used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "62835c7f-f6bc-41dd-b527-97b078d95376",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C62",
+      "claim": "If Piezo becomes flatter when it opens, then the deformation footprint will contribute to the energetics of gating.",
+      "claim_type": "EXPLICIT",
+      "source": "If Piezo becomes flatter when it opens, as was proposed in the membrane dome mechanism (Guo and MacKinnon, 2017), then the deformation footprint will contribute to the energetics of gating, as shown (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B and explained in the text, with reference to a prior hypothesis.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "bc212401-e4d4-492b-93f7-2e137f35dabb",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C65",
+      "claim": "Piezo's membrane footprint would impose a tension-dependent bias, favoring the open conformation of Piezo only when tension is applied, and more so when tension is greater.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Piezo's membrane footprint would impose a tension-dependent bias, favoring the open conformation of Piezo only when tension is applied, and more so when tension is greater.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the energy calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "855794ad-02db-4305-ace4-1142d56d3b5e",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C67",
+      "claim": "The special surface where principal curvatures sum to zero is called a catenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "This special surface, called a catenoid, would never truly be achieved in this physical system because thermal fluctuations will not permit zero tension and, potentially, because of deviations of the Piezo dome from a perfect spherical cap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of minimal surfaces in differential geometry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "e6bf6d9e-72fc-4df8-a695-e8efe50c2f1a",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C68",
+      "claim": "A catenoid would never truly be achieved in this physical system because thermal fluctuations will not permit zero tension.",
+      "claim_type": "EXPLICIT",
+      "source": "This special surface, called a catenoid, would never truly be achieved in this physical system because thermal fluctuations will not permit zero tension and, potentially, because of deviations of the Piezo dome from a perfect spherical cap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on physical considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "c0951fc3-3db5-48f2-bb3b-3543b0a9d0bb",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C69",
+      "claim": "In the absence of applied tension the deformation footprint should approach the approximate shape of a catenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, in the absence of applied tension the deformation footprint should approach the approximate shape of a catenoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mathematical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "1f0276a8-d89c-479c-9d7e-1d992bac1a2f",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C74",
+      "claim": "For tension values likely relevant to Piezo gating, the contribution to the Piezo gating energy due to Piezo's membrane footprint is approximately equal to or greater than the tension-dependent contribution due to the Piezo dome itself.",
+      "claim_type": "EXPLICIT",
+      "source": "In all three cases, for tension values likely relevant to Piezo gating, the contribution to the Piezo gating energy due to Piezo's membrane footprint is approximately equal to or greater than the tension-dependent contribution due to the Piezo dome itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figures 4A-C and explained in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "fbc844a8-9c67-4a32-b35a-959250bdf437",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C77",
+      "claim": "Using the analytical approach for calculating Piezo's membrane footprint, the tension sensitivity grows without bound as the membrane tension approaches zero.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, using the analytical approach for calculating Piezo's membrane footprint it can be shown that the tension sensitivity grows without bound as the membrane tension approaches zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analytical solution presented in the appendix.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "ce78332a-b72a-4748-8c76-06687f1cca0a",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C78",
+      "claim": "Piezo's membrane footprint renders Piezo exquisitely sensitive in the low-tension regime; most sensitive to the smallest perturbations around zero tension.",
+      "claim_type": "EXPLICIT",
+      "source": "This remarkable result means that Piezo's membrane footprint renders Piezo exquisitely sensitive in the low-tension regime; most sensitive to the smallest perturbations around zero tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the analytical result.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "40a773f3-bdd4-441e-ab9f-dfd790525e1f",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C82",
+      "claim": "Membrane bending stiffness is a function of lipid composition.",
+      "claim_type": "EXPLICIT",
+      "source": "We are interested in this dependence because membrane bending stiffness is a function of lipid composition, which could vary among different cell types and possibly even between different regions within the same cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of membrane biophysics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "24712c64-2fe7-462b-bd6e-b5f45160b833",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C83",
+      "claim": "Membrane bending stiffness could vary among different cell types and possibly even between different regions within the same cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We are interested in this dependence because membrane bending stiffness is a function of lipid composition, which could vary among different cell types and possibly even between different regions within the same cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of membrane biophysics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "a33fa3dd-9086-4a2d-b3e9-21f2496e377f",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C85",
+      "claim": "Piezo channels in different cell types and possibly different locations within a cell will exhibit different gating characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that Piezo channels in different cell types and possibly different locations within a cell will exhibit different gating characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the dependence of gating on membrane bending stiffness.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "43113e96-62e8-41ba-9518-3c4ae8ca121a",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C86",
+      "claim": "The membrane footprint induced by Piezo is expected to influence the distribution of molecules \u2013 both lipids and proteins \u2013 in the surrounding membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane footprint induced by Piezo is expected to influence the distribution of molecules \u2013 both lipids and proteins \u2013 in the surrounding membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on membrane-mediated interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "8b30ab70-27e2-413f-aeaa-609d1f5fdca2",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C87",
+      "claim": "Piezo's membrane footprint should attract lipids and proteins that exhibit an energetic preference for the curved shape of the membrane footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo's membrane footprint should attract lipids and proteins that exhibit an energetic preference for the curved shape of the membrane footprint, and repel molecules that 'prefer' other membrane shapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on membrane-mediated interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "e4e193a0-4d37-46e2-85b8-8968125256f3",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C88",
+      "claim": "Piezo's membrane footprint should repel molecules that 'prefer' other membrane shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo's membrane footprint should attract lipids and proteins that exhibit an energetic preference for the curved shape of the membrane footprint, and repel molecules that 'prefer' other membrane shapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on membrane-mediated interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "149f996e-c859-45c1-9817-3d34970c6e56",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C89",
+      "claim": "The composition of the surrounding membrane should influence the energetics of Piezo gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, our model of Piezo's membrane footprint implies that the composition of the surrounding membrane should influence the energetics of Piezo gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "dbd37463-d292-45dc-a75d-0f72b5d42d68",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C90",
+      "claim": "Piezo channels should interact with each other through the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane footprint induced by Piezo also implies that Piezo channels should interact with each other through the membrane, and hence influence each other's local distribution in the membrane and gating properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on membrane-mediated interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "787d75e7-4f80-4fc4-a053-2fc682b98182",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C91",
+      "claim": "Piezo channels should influence each other's local distribution in the membrane and gating properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane footprint induced by Piezo also implies that Piezo channels should interact with each other through the membrane, and hence influence each other's local distribution in the membrane and gating properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on membrane-mediated interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "0432ed21-9bcd-4dd8-9f89-466058a04f51",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C92",
+      "claim": "Cytoskeletal attachments occur at spatial frequencies of up to tens of nanometers.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cytoskeletal attachments, which occur at spatial frequencies of up to tens of nanometers, can restrict the shapes a membrane can take (Kusumi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "104b1cba-d724-4d9d-8a2e-7fbfe623b776",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C93",
+      "claim": "Cytoskeletal attachments can restrict the shapes a membrane can take.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cytoskeletal attachments, which occur at spatial frequencies of up to tens of nanometers, can restrict the shapes a membrane can take (Kusumi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "c578309b-f53e-4a56-8d92-e83d8948de00",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C94",
+      "claim": "The effects of membrane compartmentalization are greater in the low-tension regime.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the effects of membrane compartmentalization are greater in the low-tension regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6B and explained in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "a88b2da3-0db8-4ec8-917b-26fd9504d3e6",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C96",
+      "claim": "The smaller the membrane compartment, the greater influence it has on Piezo gating.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the smaller the membrane compartment, the greater influence it has on Piezo gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6B and explained in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "3e413e73-8347-430f-bced-623225f198ee",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C97",
+      "claim": "Membrane compartmentalization can have a large effect on Piezo gating because membrane compartments can alter the shape and therefore the energy of Piezo's membrane footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "The important point is that membrane compartmentalization can have a large effect on Piezo gating because membrane compartments can alter the shape and therefore the energy of Piezo's membrane footprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the calculations shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "52532993-9bf4-4cb5-ab85-2c99ee4adff7",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C98",
+      "claim": "Experimentally observed effects of cytoskeletal removal on some properties of Piezo gating could reflect the importance of Piezo's membrane footprint for Piezo gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentally observed effects of cytoskeletal removal on some properties of Piezo gating could reflect the importance of Piezo's membrane footprint for Piezo gating (Cox et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the theoretical predictions to experimental observations with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "5fb53208-cb42-49e6-9f28-1cd3831cff42",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C99",
+      "claim": "Contributions to the membrane bending energy due to the Gaussian membrane curvature may further modulate Piezo gating in compartmentalized membranes with heterogeneous lipid compositions.",
+      "claim_type": "EXPLICIT",
+      "source": "Contributions to the membrane bending energy due to the Gaussian membrane curvature may therefore further modulate Piezo gating in compartmentalized membranes with heterogeneous lipid compositions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about additional effects not included in the main analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "7f3239a5-5980-4692-a1d1-6da17f00d28e",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C100",
+      "claim": "Piezo channels can exhibit complex gating properties, including inactivation and voltage dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "While Piezo channels can exhibit complex gating properties, including inactivation and voltage dependence, their dominant functional characteristic is that they open in response to mechanical force (Coste et al., 2010; Lewis and Grandl, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "87742a25-50fd-46a7-89c1-88028bf8675b",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C101",
+      "claim": "The dominant functional characteristic of Piezo channels is that they open in response to mechanical force.",
+      "claim_type": "EXPLICIT",
+      "source": "While Piezo channels can exhibit complex gating properties, including inactivation and voltage dependence, their dominant functional characteristic is that they open in response to mechanical force (Coste et al., 2010; Lewis and Grandl, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "77558924-09d3-40fe-a98a-8337547d89bf",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C102",
+      "claim": "Piezo, owing to its unusual shape, imposes a large structural perturbation \u2013 a deformation called a membrane footprint \u2013 on its surrounding membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "And the inescapable conclusion is that Piezo, owing to its unusual shape, imposes a large structural perturbation \u2013 a deformation called a membrane footprint \u2013 on its surrounding membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "6b4d437c-d927-48bf-9089-81ff8b9e8941",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C103",
+      "claim": "Piezo's membrane footprint can come with a large energetic cost depending on the applied membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the applied membrane tension, Piezo's membrane footprint can come with a large energetic cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "1437127e-ac7e-4abb-9eed-39b7eda96fd2",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C104",
+      "claim": "If Piezo changes its shape, for example if it becomes flatter upon opening, then the surrounding membrane will weigh in prominently in an energetic sense to Piezo's tension sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, if Piezo changes its shape, for example if it becomes flatter upon opening, then the surrounding membrane will weigh in prominently in an energetic sense to Piezo's tension sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the energy calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "4085d52c-ca3b-47f9-9259-39847a5dfc9e",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C105",
+      "claim": "Piezo's membrane footprint weighs in in such a way that the tension sensitivity of Piezo gating is greatest in the low-tension regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Piezo's membrane footprint weighs in in such a way that the tension sensitivity of Piezo gating is greatest in the low-tension regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "93b4e43f-10d3-40dd-9cbf-bd3f18bae4b5",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C106",
+      "claim": "This property would seem to render Piezo poised to respond to the slightest changes in cell membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "This property would seem to render Piezo poised to respond to the slightest changes in cell membrane tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the high sensitivity at low tension.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "f0798c41-5a20-479a-9afb-74225a1e6f98",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C107",
+      "claim": "Deviations from a spherical dome shape will alter the shape and energetics of the membrane footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis of Piezo's membrane footprint we used a spherical dome shape to approximate a more complex underlying geometry of Piezo. Deviations from a spherical dome shape will alter the shape and energetics of the membrane footprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "a599d5c1-a98d-4788-bb33-65c08acb503b",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C108",
+      "claim": "The basic idea that Piezo's curved shape will create an energetically important membrane footprint will still apply despite deviations from a spherical dome shape.",
+      "claim_type": "EXPLICIT",
+      "source": "But the basic idea that Piezo's curved shape will create an energetically important membrane footprint will still apply.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the robustness of the main conclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "aebab603-1d5d-40e4-80e7-d64db3c1b504",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C109",
+      "claim": "Piezo's large membrane footprint rationalizes what at first seemed to be a contradiction in the experimental literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Piezo's large membrane footprint rationalizes what at first seemed to be a contradiction in the experimental literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the theoretical findings to experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "f0179113-b9d5-42ed-8a3f-b773218378f5",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C110",
+      "claim": "A large membrane footprint essentially demands that both membrane-mediated forces and tether attachments be energetically important.",
+      "claim_type": "EXPLICIT",
+      "source": "A large membrane footprint essentially demands that both contributions be energetically important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the size of the membrane footprint.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "4adcdd2e-167f-43db-9508-60025265c483",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C111",
+      "claim": "Piezo's shape evolved specifically to exploit the physical properties of the lipid membrane to create a large membrane footprint, enabling exquisite tension sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We think that this shape evolved specifically to exploit the physical properties of the lipid membrane to create a large membrane footprint, enabling exquisite tension sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative evolutionary interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "caf17928-22e6-4695-835e-a0a3d77e68f3",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C112",
+      "claim": "The Monge parametrization of surfaces tends to overestimate the magnitudes of Piezo's membrane footprint and its associated membrane deformation energy.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the Monge parametrization of surfaces tends to overestimate the magnitudes of Piezo's membrane footprint and its associated membrane deformation energy but yields, for the scenarios considered in the main text figures, qualitatively similar predictions as the arclength parameterization of surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the two methods in Appendix 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "d8c3f567-a0c1-46b7-b25b-b9dd6ba82379",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "claim_id": "C113",
+      "claim": "The Monge parametrization yields qualitatively similar predictions as the arclength parameterization of surfaces for the scenarios considered in the main text figures.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the Monge parametrization of surfaces tends to overestimate the magnitudes of Piezo's membrane footprint and its associated membrane deformation energy but yields, for the scenarios considered in the main text figures, qualitatively similar predictions as the arclength parameterization of surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the two methods in Appendix 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "092e6934-4dbc-4ee8-991f-397abea23370",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Piezo1 and Piezo2 are mechanosensitive ion channels in mammals that transduce mechanical stimuli into electrical activity and underlie important biological processes including cell volume regulation, cardiovascular development, and touch sensation. These channels are exquisitely sensitive to applied mechanical force in electrophysiological experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C13, C100-C101 collectively establish well-documented background knowledge about Piezo channels, supported by multiple citations to experimental studies (Coste et al., 2010; Lewis and Grandl, 2015; Maksimovic et al., 2014; Ranade et al., 2014a,b; Cahalan et al., 2015). This represents established prior work rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "e78abe7d-90cb-4073-a2a7-bbdfd44f6cd3",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Reconstitution and excised patch experiments demonstrate that Piezo channels can open in response to mechanical force with only an intact lipid membrane present, supporting the 'force-from-membrane' hypothesis that invokes lateral membrane tension as the origin of the opening force.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C20, C23 summarize well-established experimental findings from prior studies (Syeda et al., 2016; Lewis and Grandl, 2015; Cox et al., 2016) showing that membrane-mediated forces alone are sufficient to open Piezo. These are appropriately cited background results that motivate the current theoretical work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "fa4e4b72-36d8-4caf-8888-a9bc2847437f",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Experimental evidence shows that cytoskeletal attachments and tethers also play a role in Piezo gating, as demonstrated by changes in gating properties when blebs are formed by removing cytoskeletal attachments and by direct force application to artificially attached tethers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22, C24 accurately summarize experimental findings from Cox et al., 2016 and Wu et al., 2016 showing that both membrane-mediated forces and tethers contribute to Piezo gating. These prior experimental observations establish the biological context that the theoretical model aims to explain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "ce13e987-472f-4bab-982d-8d04c98b3c0f",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Structural studies reveal that Piezo is a trimeric channel with an unusually curved shape, with extended arms that do not lie in a plane, and this curved structure causes the channel to locally curve the cell membrane into a spherical dome projecting into the cell, as confirmed by electron micrographs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25-C29 accurately describe structural findings from prior studies (Guo and MacKinnon, 2017; Saotome et al., 2018; Zhao et al., 2018) that are well-supported by citations and provide the structural foundation for the theoretical analysis in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "2062f421-a7d5-4c34-9e36-6aba017d2c39",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The membrane dome mechanism was previously proposed to explain Piezo's tension sensitivity based on excess membrane area stored by curving the membrane, but this prior model only considered the membrane shape within Piezo's perimeter and not the surrounding membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C34 accurately describe the prior membrane dome mechanism (Guo and MacKinnon, 2017) and identify its limitation\u2014not considering the surrounding membrane\u2014which motivates the current study. This represents appropriate critical assessment of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "9716e632-87cf-44ae-b88c-6951f17a4bcc",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Through membrane mechanical calculations, the authors demonstrate that Piezo's curved dome shape deforms the surrounding lipid membrane beyond the channel's perimeter, creating a curved 'membrane footprint' that extends significantly beyond the size of the dome itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C35, C42, C102 describe the primary computational finding that is well-supported by the calculations shown in Figures 1-2. The membrane footprint is calculated using established membrane mechanics theory (Helfrich energy model) with no free parameters, and both analytical and numerical methods yield consistent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "034b762e-b888-4ad9-bd56-672def2f80f0",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Piezo dome consists of approximately 20% protein and 80% lipid membrane, and the curved protein structure must apply a distorting force to bend the membrane into a dome shape. The membrane applies an opposing force, resulting in a stable equilibrium configuration. The energetic cost to curve a membrane is proportional to mean curvature squared, making a gradual transition energetically favorable over a sharp transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41, C43-C45, C48 describe fundamental membrane mechanics principles and structural analysis that are well-established (Helfrich theory) and appropriately applied. The 20%/80% protein/lipid composition is derived from structural analysis (Figure 1), and the equilibrium thermodynamics reasoning is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "a2b7c3ba-5b78-4dde-8604-dbd2540274f7",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Piezo's membrane footprint influences the total energy of the membrane-Piezo system and has a very large influence on Piezo's ability to sense changes in membrane tension. The energetic cost of the membrane footprint depends on applied membrane tension, and if Piezo changes shape upon opening, the surrounding membrane contributes prominently to tension sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47, C103-C104 represent key findings supported by calculations in Figures 3-4 showing that the membrane footprint energy (G_M) is comparable to or exceeds the dome energy contribution. The calculations are based on well-defined membrane mechanics with no free parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "4d587311-c31f-45e2-ab4d-0195a6d8634c",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The membrane footprint amplifies Piezo's sensitivity to changes in membrane tension, imposing a tension-dependent bias that favors the open conformation only when tension is applied. For physiologically relevant tension values, the membrane footprint contribution to gating energy is approximately equal to or greater than the contribution from the Piezo dome itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C36, C62, C65, C74 describe the main functional consequence of the membrane footprint, well-supported by calculations in Figures 3-4. The comparison between dome and footprint contributions is quantitatively demonstrated for multiple geometric scenarios, showing the footprint's dominant role in tension sensing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "46439233-b377-4168-aa13-8ae489fe8dcc",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The tension sensitivity of Piezo gating grows without bound as membrane tension approaches zero, rendering Piezo exquisitely sensitive in the low-tension regime and most sensitive to the smallest perturbations around zero tension. This property renders Piezo poised to respond to the slightest changes in cell membrane tension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78, C105-C106 describe a remarkable prediction from the analytical solution showing diverging sensitivity as tension approaches zero. This is demonstrated in Figures 4-5 and explained by the catenoidal membrane footprint at zero tension. The mathematical derivation is sound, though the biological relevance of the zero-tension limit may be questioned due to thermal fluctuations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "8bdfeeb2-8029-47cc-bd5a-5c32c1de962a",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "At zero tension, the membrane footprint approaches the shape of a catenoid (a minimal surface where principal curvatures sum to zero), though this would never truly be achieved in the physical system due to thermal fluctuations and potential deviations of the Piezo dome from a perfect spherical cap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 correctly describe the mathematical limit of the membrane footprint shape at zero tension based on differential geometry. The acknowledgment of physical limitations (thermal fluctuations) is appropriate and demonstrates awareness of the model's idealized assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "ed3adee1-96b9-4e23-a581-b2bd0deecacf",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Calculation of Piezo's membrane footprint and its associated energy is a well-defined mechanics problem involving no free parameters, as the dome shape, membrane bending modulus, and relevant tension values are all known from prior experimental work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 accurately characterizes the theoretical approach. The dome geometry is from structural studies (R=10.2 nm), membrane bending modulus values (~20 k_BT) are well-established from literature (Rawicz et al., 2000), and relevant tension ranges are documented. This represents a strength of the modeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "1a5bfeb8-6a7d-434c-a320-780ee33bfe2b",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Membrane bending stiffness is a function of lipid composition and could vary among different cell types and regions within cells, implying that Piezo channels in different cellular contexts will exhibit different gating characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83, C85 are supported by established membrane biophysics knowledge and the calculations in Figure 6A showing how different K_b values affect gating. The inference that Piezo gating will vary with membrane composition is a logical consequence of the model, though experimental validation would strengthen this prediction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "1ccc8f24-4632-4f31-9be1-4ec4b92ba686",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The membrane footprint is expected to influence the distribution of lipids and proteins in the surrounding membrane, attracting molecules that prefer curved shapes and repelling others. Conversely, membrane composition should influence Piezo gating energetics, and Piezo channels should interact with each other through membrane-mediated interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C91 represent reasonable predictions based on membrane-mediated interaction theory, but these are speculative inferences not directly tested in this study. While the logic is sound, experimental validation would be needed to confirm these predictions about lipid/protein sorting and channel-channel interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "6c50c5d0-4e88-46c8-8e53-7cfa0a17d80b",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cytoskeletal attachments that occur at spatial frequencies of tens of nanometers can restrict membrane shapes and compartmentalize the membrane. Membrane compartmentalization has greater effects in the low-tension regime, with smaller compartments having greater influence on Piezo gating by altering the shape and energy of the membrane footprint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C97 are supported by calculations in Figure 6B showing quantitative effects of membrane compartment size on gating. The spatial frequency of cytoskeletal attachments is appropriately cited (Kusumi et al., 2014), and the model predictions about compartment size effects are well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "e8252045-319d-4a03-8a29-8d656c354aea",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The predicted influence of the membrane footprint on Piezo gating is consistent with experimental observations of cytoskeletal effects on gating, and the large membrane footprint rationalizes the apparent contradiction in the literature between membrane-mediated forces and tether attachments both being important for gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C37, C98, C109-C110 connect the theoretical predictions to prior experimental observations (Cox et al., 2016; Wu et al., 2016). The model provides a unifying explanation for seemingly contradictory experimental findings, though this remains a theoretical interpretation rather than direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "9f6c765e-156f-4a9a-8867-544e55695736",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Contributions to membrane bending energy due to Gaussian membrane curvature may further modulate Piezo gating in compartmentalized membranes with heterogeneous lipid compositions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C99 acknowledges a potential additional effect not included in the main analysis. This is appropriately presented as speculative, but the magnitude and importance of this effect remain unclear without further analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "0b83a45d-083a-48f2-bd87-c6e90db15c0e",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors assert that Piezo's shape evolved specifically to exploit the physical properties of the lipid membrane to create a large membrane footprint, enabling exquisite tension sensitivity, representing an elegant example of molecular form evolved to optimize function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C111 present an evolutionary interpretation of the findings. While the functional advantage of the curved shape for tension sensing is well-demonstrated, the evolutionary claim is speculative and cannot be directly tested. The interpretation is reasonable but goes beyond what the data can definitively support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "08c49d48-7a37-45ba-a765-fa0d010b6870",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "While the analysis used a spherical dome approximation, deviations from this shape will alter the membrane footprint's shape and energetics, but the basic principle that Piezo's curved shape creates an energetically important membrane footprint will still apply.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C108 appropriately acknowledge model limitations while asserting the robustness of the main conclusion. This is a reasonable assessment, though quantitative analysis of how much deviation from spherical geometry affects the results would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    },
+    {
+      "id": "87628fdc-a9c8-4237-9d42-1b9cc962dc46",
+      "content_id": "0d924f91-6993-4bf8-8821-60d68123f90e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The Monge parametrization of surfaces tends to overestimate the magnitudes of Piezo's membrane footprint and associated energy compared to the arclength parametrization, but yields qualitatively similar predictions for the scenarios considered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C113 describe methodological validation comparing two computational approaches (detailed in Appendix 1). The comparison strengthens confidence in the results by showing that different methods yield consistent qualitative predictions, with the more accurate arclength method used for main figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:18:38.967973Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8fb020dc-5bde-4e6c-8af2-5110a2010c8f",
+      "result_id": "092e6934-4dbc-4ee8-991f-397abea23370"
+    },
+    {
+      "claim_id": "6d6dc3f6-1901-4e81-9974-3606d232b0a7",
+      "result_id": "092e6934-4dbc-4ee8-991f-397abea23370"
+    },
+    {
+      "claim_id": "f64cd6de-36a8-4692-bd3e-d5dd2b2f563c",
+      "result_id": "092e6934-4dbc-4ee8-991f-397abea23370"
+    },
+    {
+      "claim_id": "6923b193-6ce2-4e6d-bef2-be57c7738c94",
+      "result_id": "092e6934-4dbc-4ee8-991f-397abea23370"
+    },
+    {
+      "claim_id": "ba7e3af8-92b8-4303-86e7-6d5b77a614ed",
+      "result_id": "092e6934-4dbc-4ee8-991f-397abea23370"
+    },
+    {
+      "claim_id": "5f05fc8f-c4e0-42fe-8fa3-7a9d5240a67d",
+      "result_id": "092e6934-4dbc-4ee8-991f-397abea23370"
+    },
+    {
+      "claim_id": "0ac3b875-11f9-4606-be53-361f1799eba0",
+      "result_id": "092e6934-4dbc-4ee8-991f-397abea23370"
+    },
+    {
+      "claim_id": "a6d3385d-1e56-4fa7-9998-986afc4bca1c",
+      "result_id": "092e6934-4dbc-4ee8-991f-397abea23370"
+    },
+    {
+      "claim_id": "7f3239a5-5980-4692-a1d1-6da17f00d28e",
+      "result_id": "092e6934-4dbc-4ee8-991f-397abea23370"
+    },
+    {
+      "claim_id": "87742a25-50fd-46a7-89c1-88028bf8675b",
+      "result_id": "092e6934-4dbc-4ee8-991f-397abea23370"
+    },
+    {
+      "claim_id": "1dd9d90f-4212-43fc-8d42-51882685a065",
+      "result_id": "e78abe7d-90cb-4073-a2a7-bbdfd44f6cd3"
+    },
+    {
+      "claim_id": "dceac060-adea-4c4e-b62c-db6eb399ec29",
+      "result_id": "e78abe7d-90cb-4073-a2a7-bbdfd44f6cd3"
+    },
+    {
+      "claim_id": "0e56dc0d-ef51-4066-8659-e5250c1d96cf",
+      "result_id": "e78abe7d-90cb-4073-a2a7-bbdfd44f6cd3"
+    },
+    {
+      "claim_id": "64b94e51-bb1a-47e6-97c3-54ecbc73931c",
+      "result_id": "e78abe7d-90cb-4073-a2a7-bbdfd44f6cd3"
+    },
+    {
+      "claim_id": "1f474b87-0f39-4f0b-a24e-eaf291c34930",
+      "result_id": "e78abe7d-90cb-4073-a2a7-bbdfd44f6cd3"
+    },
+    {
+      "claim_id": "c3587f64-a6e6-47e5-83a0-684fd99fe699",
+      "result_id": "e78abe7d-90cb-4073-a2a7-bbdfd44f6cd3"
+    },
+    {
+      "claim_id": "46fb1544-761f-44c6-ab2e-af0ec6cfdd3d",
+      "result_id": "e78abe7d-90cb-4073-a2a7-bbdfd44f6cd3"
+    },
+    {
+      "claim_id": "9465c22b-7533-461d-8aab-b4729702e7af",
+      "result_id": "e78abe7d-90cb-4073-a2a7-bbdfd44f6cd3"
+    },
+    {
+      "claim_id": "92878785-0b94-4c01-bd3a-66523df8173e",
+      "result_id": "fa4e4b72-36d8-4caf-8888-a9bc2847437f"
+    },
+    {
+      "claim_id": "ffc020f8-cdd7-4e40-b9bb-1437f68108e1",
+      "result_id": "fa4e4b72-36d8-4caf-8888-a9bc2847437f"
+    },
+    {
+      "claim_id": "b3d9cd83-78a7-479b-ac4c-0393e22a130a",
+      "result_id": "fa4e4b72-36d8-4caf-8888-a9bc2847437f"
+    },
+    {
+      "claim_id": "9432ca54-752c-4941-a2f5-1af5b656d25a",
+      "result_id": "ce13e987-472f-4bab-982d-8d04c98b3c0f"
+    },
+    {
+      "claim_id": "ca48b5f3-b972-4307-b6ca-bdd7583635a0",
+      "result_id": "ce13e987-472f-4bab-982d-8d04c98b3c0f"
+    },
+    {
+      "claim_id": "416d447f-2244-4054-8fa3-0c408b8a3b35",
+      "result_id": "ce13e987-472f-4bab-982d-8d04c98b3c0f"
+    },
+    {
+      "claim_id": "13ce49b4-2236-452c-b1bc-7c5988b6d789",
+      "result_id": "ce13e987-472f-4bab-982d-8d04c98b3c0f"
+    },
+    {
+      "claim_id": "8fbe86c3-9e58-4b00-aaa7-47da7ee436c7",
+      "result_id": "ce13e987-472f-4bab-982d-8d04c98b3c0f"
+    },
+    {
+      "claim_id": "d395ab4b-bc7b-49bc-81b7-6949f5e9859e",
+      "result_id": "ce13e987-472f-4bab-982d-8d04c98b3c0f"
+    },
+    {
+      "claim_id": "06eb4790-12d6-4d8d-92e1-2dc12b87f611",
+      "result_id": "2062f421-a7d5-4c34-9e36-6aba017d2c39"
+    },
+    {
+      "claim_id": "faefadfe-850c-4f71-9ade-e9f5b4042c68",
+      "result_id": "2062f421-a7d5-4c34-9e36-6aba017d2c39"
+    },
+    {
+      "claim_id": "ca961110-5526-4b85-a92f-c367f88fa0ae",
+      "result_id": "2062f421-a7d5-4c34-9e36-6aba017d2c39"
+    },
+    {
+      "claim_id": "2048a53a-d813-4ca1-9dcc-b38a420c96df",
+      "result_id": "2062f421-a7d5-4c34-9e36-6aba017d2c39"
+    },
+    {
+      "claim_id": "c05d5011-e8b7-4c5c-8a8f-80a90a239d1a",
+      "result_id": "9716e632-87cf-44ae-b88c-6951f17a4bcc"
+    },
+    {
+      "claim_id": "2e9bedea-b251-4cff-82c0-ba104f360d0c",
+      "result_id": "9716e632-87cf-44ae-b88c-6951f17a4bcc"
+    },
+    {
+      "claim_id": "bf17a319-bcd5-4d0e-bbeb-8a88079b0da8",
+      "result_id": "9716e632-87cf-44ae-b88c-6951f17a4bcc"
+    },
+    {
+      "claim_id": "77558924-09d3-40fe-a98a-8337547d89bf",
+      "result_id": "9716e632-87cf-44ae-b88c-6951f17a4bcc"
+    },
+    {
+      "claim_id": "58b4abcc-b3c3-4a59-8977-c4a77584b226",
+      "result_id": "034b762e-b888-4ad9-bd56-672def2f80f0"
+    },
+    {
+      "claim_id": "f7be138a-51f3-48e1-9019-c789dbadbcff",
+      "result_id": "034b762e-b888-4ad9-bd56-672def2f80f0"
+    },
+    {
+      "claim_id": "5c4ab473-7bd5-4dcd-96fd-a8b59a4e7be4",
+      "result_id": "034b762e-b888-4ad9-bd56-672def2f80f0"
+    },
+    {
+      "claim_id": "424b4afb-f68e-4b19-aae4-65d187731060",
+      "result_id": "034b762e-b888-4ad9-bd56-672def2f80f0"
+    },
+    {
+      "claim_id": "18a470bf-feca-44f4-ac30-b94c07a64314",
+      "result_id": "034b762e-b888-4ad9-bd56-672def2f80f0"
+    },
+    {
+      "claim_id": "dcd6a13c-35e1-472d-aa76-0ecdb1998921",
+      "result_id": "034b762e-b888-4ad9-bd56-672def2f80f0"
+    },
+    {
+      "claim_id": "6b9a19db-69a9-4831-abee-b47ec6a92d3f",
+      "result_id": "034b762e-b888-4ad9-bd56-672def2f80f0"
+    },
+    {
+      "claim_id": "99f3606f-55a7-4a2a-b167-181f0fc02e43",
+      "result_id": "034b762e-b888-4ad9-bd56-672def2f80f0"
+    },
+    {
+      "claim_id": "cab69678-8653-4425-9911-941489f2598f",
+      "result_id": "a2b7c3ba-5b78-4dde-8604-dbd2540274f7"
+    },
+    {
+      "claim_id": "0c5d157f-162e-430c-b141-93ef991fa760",
+      "result_id": "a2b7c3ba-5b78-4dde-8604-dbd2540274f7"
+    },
+    {
+      "claim_id": "6b4d437c-d927-48bf-9089-81ff8b9e8941",
+      "result_id": "a2b7c3ba-5b78-4dde-8604-dbd2540274f7"
+    },
+    {
+      "claim_id": "1437127e-ac7e-4abb-9eed-39b7eda96fd2",
+      "result_id": "a2b7c3ba-5b78-4dde-8604-dbd2540274f7"
+    },
+    {
+      "claim_id": "4b4d0e2f-5c52-4f50-974f-66109d138a6f",
+      "result_id": "4d587311-c31f-45e2-ab4d-0195a6d8634c"
+    },
+    {
+      "claim_id": "77738985-25f9-4f90-9d47-5211855e1c34",
+      "result_id": "4d587311-c31f-45e2-ab4d-0195a6d8634c"
+    },
+    {
+      "claim_id": "62835c7f-f6bc-41dd-b527-97b078d95376",
+      "result_id": "4d587311-c31f-45e2-ab4d-0195a6d8634c"
+    },
+    {
+      "claim_id": "bc212401-e4d4-492b-93f7-2e137f35dabb",
+      "result_id": "4d587311-c31f-45e2-ab4d-0195a6d8634c"
+    },
+    {
+      "claim_id": "1f0276a8-d89c-479c-9d7e-1d992bac1a2f",
+      "result_id": "4d587311-c31f-45e2-ab4d-0195a6d8634c"
+    },
+    {
+      "claim_id": "fbc844a8-9c67-4a32-b35a-959250bdf437",
+      "result_id": "46439233-b377-4168-aa13-8ae489fe8dcc"
+    },
+    {
+      "claim_id": "ce78332a-b72a-4748-8c76-06687f1cca0a",
+      "result_id": "46439233-b377-4168-aa13-8ae489fe8dcc"
+    },
+    {
+      "claim_id": "4085d52c-ca3b-47f9-9259-39847a5dfc9e",
+      "result_id": "46439233-b377-4168-aa13-8ae489fe8dcc"
+    },
+    {
+      "claim_id": "93b4e43f-10d3-40dd-9cbf-bd3f18bae4b5",
+      "result_id": "46439233-b377-4168-aa13-8ae489fe8dcc"
+    },
+    {
+      "claim_id": "855794ad-02db-4305-ace4-1142d56d3b5e",
+      "result_id": "8bdfeeb2-8029-47cc-bd5a-5c32c1de962a"
+    },
+    {
+      "claim_id": "e6bf6d9e-72fc-4df8-a695-e8efe50c2f1a",
+      "result_id": "8bdfeeb2-8029-47cc-bd5a-5c32c1de962a"
+    },
+    {
+      "claim_id": "c0951fc3-3db5-48f2-bb3b-3543b0a9d0bb",
+      "result_id": "8bdfeeb2-8029-47cc-bd5a-5c32c1de962a"
+    },
+    {
+      "claim_id": "646ee0e7-dbf0-48c3-92c4-60b11cc83c2b",
+      "result_id": "ed3adee1-96b9-4e23-a581-b2bd0deecacf"
+    },
+    {
+      "claim_id": "40a773f3-bdd4-441e-ab9f-dfd790525e1f",
+      "result_id": "1a5bfeb8-6a7d-434c-a320-780ee33bfe2b"
+    },
+    {
+      "claim_id": "24712c64-2fe7-462b-bd6e-b5f45160b833",
+      "result_id": "1a5bfeb8-6a7d-434c-a320-780ee33bfe2b"
+    },
+    {
+      "claim_id": "a33fa3dd-9086-4a2d-b3e9-21f2496e377f",
+      "result_id": "1a5bfeb8-6a7d-434c-a320-780ee33bfe2b"
+    },
+    {
+      "claim_id": "43113e96-62e8-41ba-9518-3c4ae8ca121a",
+      "result_id": "1ccc8f24-4632-4f31-9be1-4ec4b92ba686"
+    },
+    {
+      "claim_id": "8b30ab70-27e2-413f-aeaa-609d1f5fdca2",
+      "result_id": "1ccc8f24-4632-4f31-9be1-4ec4b92ba686"
+    },
+    {
+      "claim_id": "e4e193a0-4d37-46e2-85b8-8968125256f3",
+      "result_id": "1ccc8f24-4632-4f31-9be1-4ec4b92ba686"
+    },
+    {
+      "claim_id": "149f996e-c859-45c1-9817-3d34970c6e56",
+      "result_id": "1ccc8f24-4632-4f31-9be1-4ec4b92ba686"
+    },
+    {
+      "claim_id": "dbd37463-d292-45dc-a75d-0f72b5d42d68",
+      "result_id": "1ccc8f24-4632-4f31-9be1-4ec4b92ba686"
+    },
+    {
+      "claim_id": "787d75e7-4f80-4fc4-a053-2fc682b98182",
+      "result_id": "1ccc8f24-4632-4f31-9be1-4ec4b92ba686"
+    },
+    {
+      "claim_id": "0432ed21-9bcd-4dd8-9f89-466058a04f51",
+      "result_id": "6c50c5d0-4e88-46c8-8e53-7cfa0a17d80b"
+    },
+    {
+      "claim_id": "104b1cba-d724-4d9d-8a2e-7fbfe623b776",
+      "result_id": "6c50c5d0-4e88-46c8-8e53-7cfa0a17d80b"
+    },
+    {
+      "claim_id": "c578309b-f53e-4a56-8d92-e83d8948de00",
+      "result_id": "6c50c5d0-4e88-46c8-8e53-7cfa0a17d80b"
+    },
+    {
+      "claim_id": "a88b2da3-0db8-4ec8-917b-26fd9504d3e6",
+      "result_id": "6c50c5d0-4e88-46c8-8e53-7cfa0a17d80b"
+    },
+    {
+      "claim_id": "3e413e73-8347-430f-bced-623225f198ee",
+      "result_id": "6c50c5d0-4e88-46c8-8e53-7cfa0a17d80b"
+    },
+    {
+      "claim_id": "1fa6a48a-7902-458f-92e9-9c8b1a39a635",
+      "result_id": "e8252045-319d-4a03-8a29-8d656c354aea"
+    },
+    {
+      "claim_id": "c165f4bc-6fb3-48eb-842e-ce8c6a28b1ac",
+      "result_id": "e8252045-319d-4a03-8a29-8d656c354aea"
+    },
+    {
+      "claim_id": "52532993-9bf4-4cb5-ab85-2c99ee4adff7",
+      "result_id": "e8252045-319d-4a03-8a29-8d656c354aea"
+    },
+    {
+      "claim_id": "aebab603-1d5d-40e4-80e7-d64db3c1b504",
+      "result_id": "e8252045-319d-4a03-8a29-8d656c354aea"
+    },
+    {
+      "claim_id": "f0179113-b9d5-42ed-8a3f-b773218378f5",
+      "result_id": "e8252045-319d-4a03-8a29-8d656c354aea"
+    },
+    {
+      "claim_id": "5fb53208-cb42-49e6-9f28-1cd3831cff42",
+      "result_id": "9f6c765e-156f-4a9a-8867-544e55695736"
+    },
+    {
+      "claim_id": "6b68f513-9056-4c7f-8925-b46fdd70e4ca",
+      "result_id": "0b83a45d-083a-48f2-bd87-c6e90db15c0e"
+    },
+    {
+      "claim_id": "4adcdd2e-167f-43db-9508-60025265c483",
+      "result_id": "0b83a45d-083a-48f2-bd87-c6e90db15c0e"
+    },
+    {
+      "claim_id": "f0798c41-5a20-479a-9afb-74225a1e6f98",
+      "result_id": "08c49d48-7a37-45ba-a765-fa0d010b6870"
+    },
+    {
+      "claim_id": "a599d5c1-a98d-4788-bb33-65c08acb503b",
+      "result_id": "08c49d48-7a37-45ba-a765-fa0d010b6870"
+    },
+    {
+      "claim_id": "caf17928-22e6-4695-835e-a0a3d77e68f3",
+      "result_id": "87628fdc-a9c8-4237-9d42-1b9cc962dc46"
+    },
+    {
+      "claim_id": "d8c3f567-a0c1-46b7-b25b-b9dd6ba82379",
+      "result_id": "87628fdc-a9c8-4237-9d42-1b9cc962dc46"
+    }
+  ],
+  "comparisons": []
+}

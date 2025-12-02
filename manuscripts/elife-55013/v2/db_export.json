@@ -1,0 +1,1291 @@
+{
+  "submission": {
+    "id": "0d91679f-0f9c-4243-a0f5-28df08e83b17",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:27:42.822473Z",
+    "updated_at": "2025-12-02T21:27:42.822473Z"
+  },
+  "content": [
+    {
+      "id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "submission_id": "0d91679f-0f9c-4243-a0f5-28df08e83b17",
+      "content_type": "manuscript",
+      "content_text": "# Spatially compartmentalized phase regulation of a Ca2+-cAMP-PKA oscillatory circuit\n\n## Authors\n\n- Brian Tenner<sup>1</sup>\n- Michael Getz<sup>3</sup> ([ORCID: 0000-0001-9886-8454](https://orcid.org/0000-0001-9886-8454))\n- Brian Ross<sup>2</sup> ([ORCID: 0000-0001-9020-627X](https://orcid.org/0000-0001-9020-627X))\n- Donya Ohadi<sup>4</sup>\n- Christopher H Bohrer<sup>1</sup>\n- Eric Greenwald<sup>2</sup>\n- Sohum Mehta<sup>2</sup> ([ORCID: 0000-0003-4764-8579](https://orcid.org/0000-0003-4764-8579))\n- Jie Xiao<sup>1</sup> ([ORCID: 0000-0003-1433-5437](https://orcid.org/0000-0003-1433-5437))\n- Padmini Rangamani<sup>3</sup> ([ORCID: 0000-0001-5953-4347](https://orcid.org/0000-0001-5953-4347)) \u2020\n- Jin Zhang<sup>2</sup> ([ORCID: 0000-0001-7145-7823](https://orcid.org/0000-0001-7145-7823)) \u2020\n\n### Affiliations\n\n1. Department of Biophysics and Biophysical Chemistry, The Johns Hopkins University School of Medicine Baltimore United States\n2. Department of Pharmacology, University of California, San Diego La Jolla United States\n3. Chemical Engineering Graduate Program, University of California, San Diego La Jolla United States\n4. Department of Mechanical and Aerospace Engineering, University of California, San Diego La Jolla United States\n5. Department of Chemistry and Biochemistry, University of California, San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSignaling networks are spatiotemporally organized to sense diverse inputs, process information, and carry out specific cellular tasks. In \u03b2 cells, Ca2+, cyclic adenosine monophosphate (cAMP), and Protein Kinase A (PKA) exist in an oscillatory circuit characterized by a high degree of feedback. Here, we describe a mode of regulation within this circuit involving a spatial dependence of the relative phase between cAMP, PKA, and Ca2+. We show that in mouse MIN6 \u03b2 cells, nanodomain clustering of Ca2+-sensitive adenylyl cyclases (ACs) drives oscillations of local cAMP levels to be precisely in-phase with Ca2+ oscillations, whereas Ca2+-sensitive phosphodiesterases maintain out-of-phase oscillations outside of the nanodomain. Disruption of this precise phase relationship perturbs Ca2+ oscillations, suggesting the relative phase within an oscillatory circuit can encode specific functional information. This work unveils a novel mechanism of cAMP compartmentation utilized for localized tuning of an oscillatory circuit and has broad implications for the spatiotemporal regulation of signaling networks.\n\n## Introduction\n\nCyclic adenosine monophosphate (cAMP) and Ca2+ act as essential second messengers in almost every cell type and regulate many functional pathways within a cell, such as hormonal signal transduction, metabolism, and secretion (Clapham, 2007; Sassone-Corsi, 2012). In some cell types, including neurons, cardiomyocytes, and pancreatic \u03b2 cells, these messengers\u2019 concentrations oscillate intracellularly (Dupont et al., 2011; Dyachok et al., 2006), and the oscillations encode critical signaling information (e.g. signal strength, duration, and target diversity) into parameters such as frequency and amplitude (Berridge et al., 1998; De Pitt\u00e0 et al., 2008; Parekh, 2011). This phenomenon is perhaps best exemplified in \u03b2 cells, where oscillations of Ca2+ drive pulsatile insulin secretion (Rorsman and Ashcroft, 2018) and oscillating cAMP levels (Nesher et al., 2002; Tengholm, 2012). Furthermore, Ca2+, cAMP, and the downstream cAMP-dependent kinase protein kinase (PKA) constitute a highly coordinated oscillatory circuit responsible for integrating metabolic and signaling information (Ni et al., 2011). In addition to temporal control, biochemical pathways are also spatially organized within the cell (Smith and Scott, 2002; White and Anderson, 2005). Both Ca2+ and cAMP are highly spatially compartmentalized and form signaling microdomains or nanodomains (Calebiro and Maiellaro, 2014; Petersen, 2002). While Ca2+ levels are locally controlled by channels, pumps, and intracellular buffering systems (Clapham, 2007; Stern, 1992), cAMP is thought to be regulated via controlled synthesis by adenylyl cyclases (ACs) and degradation by phosphodiesterases (PDEs) (Bender and Beavo, 2006; Defer et al., 2000). Despite extensive studies on cAMP compartmentation, the mechanisms that spatially constrain this mobile second messenger await to be fully elucidated (Saucerman et al., 2014; Lohse et al., 2017; Musheshe et al., 2018; Bock et al., 2020; Zhang et al., 2020). Furthermore, it is not clear how the spatial regulation of a second messenger influences its dynamic behaviors in the context of coordinated oscillations.\n\nIn this study, we investigated the spatiotemporal organization of the Ca2+-cAMP-PKA oscillatory circuit in MIN6 \u03b2 cells and discovered that the relative oscillatory phase between cAMP/PKA and Ca2+ is spatially regulated within signaling nanodomains. By combining dynamic live-cell imaging, super-resolution microscopy, and computational modeling, we further found that fine-scale, compartment-specific perturbations of this precise phase regulation impact Ca2+ oscillations in \u03b2 cells. These findings suggest that the relative phase in oscillatory signaling circuits, like the amplitude and frequency, represents yet another mode of informational encoding and processing, which is subjected to spatiotemporal regulation within the cell.\n\n## Results\n\n### The relative phase of \u03b2 cell cAMP and Ca2+ oscillations is compartmentalized\n\nIn order to study the spatiotemporal relationship between key players of the Ca2+-cAMP-PKA circuit, we chose to focus our attention on an important class of molecular scaffolds, A-kinase anchoring proteins (AKAPs), which are responsible for recruiting PKA to specific substrates at distinct subcellular locations. In several excitable cell types, the plasma membrane (PM)-localized scaffold protein AKAP79 (rodent ortholog AKAP150) has been shown to organize a macromolecular complex with binding partners that include PKA, the voltage-gated Ca2+ channel CaV1.2, Protein Kinase C (PKC), the Ca2+/calmodulin-dependent protein phosphatase calcineurin, Ca2+-sensitive ACs, AMPA receptors, and many others (Gold et al., 2011). Due to the extensive and multivalent nature of AKAP79/150 (as the scaffold is commonly referred) and a report describing the functional impairment of glucose-stimulated insulin secretion (GSIS) in pancreatic \u03b2 cells upon its knock-out (Hinke et al., 2012), we hypothesized that the AKAP79/150 scaffold might play an important role in the spatiotemporal regulation of the Ca2+-cAMP-PKA oscillatory circuit. Specifically, we were interested in testing if AKAP79/150 is able to create a spatially-distinct compartment in which recruitment of signaling effectors can locally fine-tune and reshape signaling dynamics within the circuit (Beene and Scott, 2007; Greenwald and Saucerman, 2011).\n\nTo test this hypothesis, we monitored intracellular cAMP and Ca2+ using the FRET-based cAMP biosensor (Ci/Ce)Epac2-camps (Everett and Cooper, 2013) and the red Ca2+ indicator RCaMP (Akerboom et al., 2013). We measured cAMP concentration changes in the immediate vicinity of AKAP150 in mouse MIN6 \u03b2 cells by using (Ci/Ce)Epac2-camps fused to the full-length AKAP79 scaffold (gene AKAP5) (Figure 1a). Although human AKAP79 and the rodent AKAP150 share only 53% sequence identity overall, the interaction motifs and association between the AKAP scaffold and other key signaling players such as PKA, the voltage-gated calcium channel, adenylyl cyclases, and calcineurin are highly conserved (Willoughby et al., 2010; Zhang et al., 2016). The primary difference between these two closely related scaffolds is the presence of an internal repetitive amino acid sequence of unknown function in AKAP150 (Robertson et al., 2009). The functional equivalence of AKAP79 and AKAP150 has been demonstrated in several reciprocal knock-out and recovery experiments in which AKAP79 or AKAP150 was knocked out and expression of the other was shown to rescue a measured phenotype (Hoshi et al., 2005; Zhang et al., 2011). As a control, we also targeted the cAMP probe to the general plasma membrane by adding a lipid modification domain (Wachten et al., 2010). These targeted biosensors allowed us to compare the dynamics within the AKAP79/150-specific compartment versus the general plasma membrane compartment (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig1-v2.jpg)\n\n**Figure 1.:** (a) Depiction of the AKAP79/150 and plasma membrane compartments, including the targeted cAMP biosensor (Ci/Ce)Epac2-camps to measure the compartment-specific cAMP signaling. Schematics of the lyn-(Ci/Ce)Epac2-camps and AKAP79-(Ci/Ce)Epac2-camps sensors are shown above. (b) Network diagram describing the key players in the \u03b2 cell Ca2+-cAMP-PKA oscillatory circuit. (c) Representative single-cell trace of in-phase oscillating responses\u00a0of AKAP79-(Ci/Ce)Epac2-camps and RCaMP, whole-cell fluorescence measured. Red trace is cAMP (cyan direct channel divided by CY-FRET channel) and black trace is Ca2+ (RFP). (d) Representative single-cell trace of out-of-phase oscillating responses\u00a0of lyn-(Ci/Ce)Epac2-camps and RCaMP, whole-cell fluorescence measured. Blue trace is cAMP (cyan direct channel divided by CY-FRET channel) and black trace is Ca2+ (RFP). (e) Cross-correlation between the oscillatory Ca2+ and cAMP signals from the representative in-phase AKAP79 (red) and out-of-phase plasma membrane (PM, blue) responses from c, d. Time lag (sec) between the cAMP and Ca2+ signals for the two compartments (AKAP79/150, red, is 13\u00a0\u00b1\u00a03 sec n=60 and PM, blue, is 47\u00a0\u00b1\u00a04 s n=24). ****p<0.0001; unpaired two-tailed Student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Confocal image of lyn(Ci/Ce)Epac2camps showing efficient localization of the probe at the PM in MIN6 cells (YFP channel, scale 5 \u03bcm). (b) Confocal image of AKAP79-(Ci/Ce)Epac2camps also depicting localization of the scaffold-fused biosensor at the PM in MIN6 cells (YFP channel, scale 5 \u03bcm).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Representative single-cell traces showing that cytosolic cAMP (red, measured with R-FlincA sensor) oscillations are anti-correlated with cAMP oscillations at AKAP79 (blue, measured with AKAP79-(Ci/Ce)Epac2-camps) within individual MIN6 \u03b2 cells ( n = 25 cells total). (b) Violin plot summarizing the time lag (sec) between the cytosolic and AKAP79-localized cAMP oscillations within all of the cells analyzed (n = 25).\n\nAlthough both targeted sensors were trafficked to and distributed along the plasma membrane (Figure 1\u2014figure supplement 1a,b), we observed notable differences in their respective cAMP signals relative to Ca2+ oscillations after triggering the circuit (Figure 1b) with tetraethylammonium chloride (TEA, 20 mM), a potent K+ channel blocker. cAMP oscillations measured within the AKAP79/150 compartment were in-phase with oscillating Ca2+, such that each transient spike in intracellular Ca2+ was closely associated with a transient increase in cAMP (Figure 1c) (n\u00a0=\u00a060 cells). This was in sharp contrast to cAMP oscillations measured within the general plasma membrane compartment, where each local Ca2+ peak corresponded to a local trough in cAMP (n\u00a0=\u00a024), followed by a slow reversal of both signals to a pre-stimulated baseline (Figure 1d). While these out-of-phase cAMP-Ca2+ oscillations were consistent with those observed in the cytoplasm of \u03b2 cells (Landa et al., 2005; Ni et al., 2011), in-phase cAMP-Ca2+ oscillations had not previously been observed under these conditions. To quantify the cAMP-Ca2+ phase relationship, we measured the lag time by calculating the cross-correlation between the two normalized, oscillatory signals and finding the shortest delay yielding the maximum correlation (see Appendix 1 for details) (Figure 1e). In-phase cAMP oscillations corresponded to short lag times (typically\u00a0<20 s), while out-of-phase oscillations mostly possessed longer lag times. Within the AKAP79/150 compartment, cAMP lagged behind Ca2+ by an average of only 13\u00a0\u00b1\u00a03 s (mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a060); however, cAMP within the general plasma membrane compartment oscillated with a lag time of 47\u00a0\u00b1\u00a04 s (n\u00a0=\u00a024) behind Ca2+ (Figure 1e). In order to measure these different cAMP dynamics within the same cells, we transfected MIN6 cells with two cAMP sensors of different targeting sequences and colors, AKAP79-(Ci/Ce)Epac2-camps and the red cytosolic cAMP sensor R-FlincA (Ohta et al., 2018). After stimulating the signaling circuit, we observed anti-correlated cAMP oscillations, indicating that cAMP oscillates with different phases between the cytosol/plasma membrane and the immediate vicinity of AKAP79/150 within the same cell (n\u00a0=\u00a025) (Figure 1\u2014figure supplement 2). This stark difference in the cAMP-Ca2+ phase relationship suggests that the relative phase of this oscillatory circuit is compartmentalized and hints at differential regulation of the circuit between the AKAP79/150 compartment and the general plasma membrane compartment.\n\n### Oscillatory phase is regulated by balanced activities of Ca2+-sensitive ACs and PDEs\n\nGiven that in-phase cAMP oscillations were only observed within the AKAP79/150 compartment (Figure 1c) and that out-of-phase cAMP oscillations were observed in the general plasma membrane compartment (Figure 1d) and the\u00a0cytoplasm (Ni et al., 2011), we hypothesized that Ca2+ oscillations are coupled to cAMP oscillations by a ubiquitous mechanism throughout the cell, while additional mechanisms specifically regulate the phase relationship within the AKAP79/150 compartment. We first sought to identify the component that is responsible for coupling cAMP dynamics to Ca2+ dynamics globally. Since TEA induces continuous Ca2+ oscillations, we determined the temporal relationship between Ca2+ and cAMP at the general plasma membrane more precisely by measuring the impulse response of the circuit following a transient membrane depolarization. After the addition of KCl (15 mM) followed by a subsequent washout to elicit a transient influx of Ca2+ (Dou et al., 2015), we observed a synchronous cAMP decrease (n\u00a0=\u00a020) followed by a return to baseline (Figure 2a). These data suggest that increasing cytosolic Ca2+ was coupled to a decrease in cAMP at the plasma membrane\u00a0through Ca2+-sensitive AC or PDE activities. Given that Ca2+-inhibited ACs (AC5, AC6) have low specific activity in both the presence and absence of physiological Ca2+, as well as relatively low expression in the pancreas (Defer et al., 2000), we instead focused on probing the role of PDEs. The Ca2+-dependent PDE1 family in \u03b2 cells, specifically PDE1C, has been implicated in modulating GSIS (Han et al., 1999). Indeed, acute addition of 8MM-IBMX (100 \u03bcM), a relatively selective PDE1 inhibitor, effectively uncoupled cAMP dynamics from Ca2+ oscillations (Figure 2b, Figure 2\u2014figure supplement 1a) (n\u00a0=\u00a018), indicating that Ca2+-triggered activation of PDE1 mediates the transient cAMP decreases. We also observed that the overall increase in cAMP led to an increase in the Ca2+ oscillation frequency, consistent with the previously identified role of cAMP/PKA in regulating the Ca2+ oscillations (Ni et al., 2011). We tested the roles of two additional families of abundant PDEs in pancreatic \u03b2 cells, PDE3 and PDE4, by acute pharmacologic inhibition. While treating cells with either milrinone (PDE3 inhibitor, 10 \u03bcM, n\u00a0=\u00a012) or rolipram (PDE4 inhibitor, 1 \u03bcM, n\u00a0=\u00a015) slightly increased cAMP levels, neither inhibitor had an effect on cAMP-Ca2+ coupling or relative phase (Figure 2\u2014figure supplement 1b,c). These data suggest that PDE1 is the key component that couples Ca2+ and cAMP oscillations within this signaling circuit.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig2-v2.jpg)\n\n**Figure 2.:** (a) Impulse response of plasma membrane cAMP (blue) to a spike in Ca2+ entry (black), triggered by KCl-mediated membrane depolarization (wash in/out). The transient decrease in PM-cAMP is coupled to the transient increase in intracellular Ca2+. (b) Acute inhibition of Ca2+-sensitive PDE1 decouples the out-of-phase PM-cAMP oscillations from Ca2+ oscillations, as observed in this representative cell trace (Ca2+ \u2013 black, PM-cAMP \u2013 blue). (c) The oscillatory phase of cAMP can be manipulated by tuning the relative activity of Ca2+-sensitive PDE and AC, as demonstrated by a simplified mathematical model. The schematic shows the network architecture. The relative activities of AC and PDE, denoted as v(AC) and v(PDE), control the delay between Ca2+ and cAMP. Point (i), with high AC activity and low PDE, shows in phase oscillations of Ca2+ and cAMP, whereas point (ii), with high PDE and low AC activity shows out of phase oscillations. These dynamics are shown in the line graphs. (d) Knocking down AC8 is correlated with an increase in the time lag for oscillatory cAMP at the AKAP79/150 microdomain (37 \u00b1 9 s, n = 11), indicating more cells exhibiting out-of-phase cAMP oscillations (representative cell trace, Ca2+ \u2013 black, AKAP79/150-cAMP \u2013 red). (e) Over-expressing AC8 is sufficient to reverse the phase at the PM to in-phase (23 \u00b1 2 s, n = 56) (representative cell trace, Ca2+ \u2013 black, PM cAMP \u2013 blue). **p=0.0014, ****p<0.0001; unpaired two-tailed Student\u2019s t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Representative single cell traces depicting the decoupling of oscillating cAMP at the PM (measured by lyn-(Ci/Ce)Epac2-camps, blue trace) from oscillating Ca2+ (black trace) upon inhibition of PDE1 with 8MM-IBMX. Representative single cell traces showing cAMP still oscillates at the PM (blue trace) together with Ca2+ (black trace) upon inhibition of PDE3 (milrinone) (b) and PDE4 (rolipram) (c), respectively.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Plot depicting a dose-dependence between the time lag of cAMP at the PM and the amount of plasmid-encoded AC8 co-transfected (n = 56). (b) Violin plots depicting the relationship between estimated cellular AC8 expression levels and the amount of GFP-AC8 plasmid transfected into cells (50 ng: n = 68 cells, 250 ng: n = 116 cells, 1000 ng: n = 91 cells). p=0.00001, 50 ng vs 1000 ng; Kruskal-Wallis test followed by Dunn's multiple comparisons test. (c) Representative single cell trace of an oscillating \u03b2 cell control with no AC8 co-expression, illustrating an out-of-phase cAMP-Ca2+ phase relationship. Blue trace is cAMP at PM and black trace is Ca2+. (d) Representative single cell trace of an oscillating \u03b2 cell with 1 \u03bcg of an AC8 expression vector co-transfected, illustrating an in-phase cAMP-Ca2+ phase relationship. Blue trace is cAMP at PM and black trace is Ca2+.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Average intensity per AC8-stained MIN6 cell, expressing AKAP79-(Ci/Ce)Epac2-camps (AKAP79), lyn-(Ci/Ce)Epac2-camps (Lyn), or no sensor (control). AC8 intensity does not significantly differ between the three populations. ns, p=0.2525; ordinary one-way ANOVA. (b) Representative Western blot quantifying endogenous expression of AC8 and expression of transfected biosensor (AKAP79-(Ci/Ce)Epac2-camps (AKAP79), Lyn-(Ci/Ce)Epac2-camps (Lyn), or Cerulean (Cer) only) in MIN6 cells. A small increase in AC8 expression was observed between sensor-expressing populations compared to Cerulean alone (AKAP79 vs. Cer, *p=0.0134; Lyn vs. Cer, p=0.0979; ordinary one-way ANOVA followed by Tukey\u2019s multiple comparisons test). However, no significant difference in AC8 expression was measured between the AKAP79- and Lyn-tagged sensor-expressing populations (AC8 band intensity normalized to \u03b2 tubulin, n\u00a0=\u00a04 replicates, p=0.4373).\n\nHow is the phase relationship between Ca2+- and cAMP-regulated within distinct signaling compartments? In order to gain a more quantitative understanding of the regulation of the cAMP-Ca2+ phase relationship, we created a simplified well-mixed mathematical model involving Ca2+, cAMP, and Ca2+-driven PDE and AC activity components (Cooper et al., 1995; Figure 2c, see Appendix 1 for details). This simple circuit represents the key aspects of the oscillatory cAMP-Ca2+ circuit and is applicable to different signaling compartments. Opposite to the Ca2+-stimulated PDE1 (Ang and Antoni, 2002) is the Ca2+-stimulated AC8 (gene Adcy8) (Masada et al., 2009; Masada et al., 2012), an abundant Ca2+-sensitive transmembrane AC isoform in \u03b2 cells that has been shown to mediate sustained insulin secretion and associate with the AKAP79/150 scaffold (Dou et al., 2015; Willoughby and Cooper, 2006; Willoughby et al., 2010). By computationally manipulating the activity of each arm, we found that cAMP can oscillate either out-of-phase or in-phase when a Ca2+ pulse train is used as an input (Figure 2c). In particular, when the relative activity of PDE1 is greater than the activity of AC8, Ca2+-driven cAMP degradation dominates, resulting in an out-of-phase cAMP-Ca2+ relationship. On the other hand, if the relative activity of AC8 is greater than that of PDE1, Ca2+-stimulated cAMP production is favored, and an in-phase relationship is observed, consistent with previous modeling studies (Fridlyand et al., 2007; Peercy et al., 2015).\n\nThus, our simplified model indicates that the phase relationship can be tuned by altering the relative strength between Ca2+-sensitive ACs and PDEs (Figure 2c). This model provided a blueprint for understanding the interplay between the Ca2+-stimulated AC/PDE balance and the cAMP-Ca2+ phase relationship within the AKAP79/150 compartment. Based on the findings from our model, we predicted that decreasing the relative contribution of AC8 will shift the cAMP-Ca2+ phase relationship from in-phase to out-of-phase. To test this prediction, we knocked down endogenous AC8 in MIN6 cells as previously done (Raoux et al., 2015) and observed that most cells exhibited out-of-phase cAMP oscillations within the AKAP79/150 compartment (average lag time 37\u00a0\u00b1\u00a09 s, n\u00a0=\u00a011) (Figure 2d), indicating an AC8-specific role in mediating the cAMP-Ca2+ phase signature.\n\nConversely, increasing the relative contribution of AC8, for example, by increasing the concentration of AC8 throughout the PM, should shift the cAMP-Ca2+ phase relationship from out-of-phase to in-phase. To test this prediction, we overexpressed full-length AC8 and examined the effect in the general plasma membrane compartment. Interestingly, we found that AC8 overexpression reversed the out-of-phase cAMP-Ca2+ phase relationship in a titratable manner, where the percentage of in-phase oscillating cells correlated with increasing amounts of co-transfected AC8 (average lag time 23\u00a0\u00b1\u00a02 s, n\u00a0=\u00a056) (Figure 2e, Figure 2\u2014figure supplement 2a\u2013d). In order to examine the effects of the targeted cAMP biosensors on AC8 expression, we also measured endogenous AC8 levels in cells transfected with either lyn-(Ci/Ce)Epac2-camps or AKAP79-(Ci/Ce)Epac2-camps and observed no significant difference (Figure 2\u2014figure supplement 3a,b). These data demonstrate that higher levels of AC8 are sufficient to reverse the cAMP phase at the plasma membrane. In summary, these phase-manipulation experiments suggest that the cAMP-Ca2+ phase relationship is representative of a sensitive, compartmentalized balance between the Ca2+-stimulated activities of PDE1 and AC8.\n\n### Membrane-localized AKAP150:AC8 nanoclusters regulate cAMP-Ca2+ oscillatory phase\n\nThe close spatial juxtaposition between the AKAP79/150 and general plasma membrane compartments presents a significant challenge for cAMP compartmentation, in that cAMP oscillations must be distinctly regulated within these adjacent signaling domains. Indeed, how cAMP, a rapidly diffusing small molecule, is spatially compartmentalized in cells is not yet completely understood, especially given the relatively low catalytic efficiency of a single cAMP-producing AC and degrading PDE (Conti et al., 2014; Lohse et al., 2017; Bock et al., 2020; Zhang et al., 2020). Given that AKAP79/150 exists in nanoclusters at the plasma membrane in multiple cell types (Mo et al., 2017; Zhang et al., 2016) and associates with AC8 in \u03b2 cells (Willoughby et al., 2010), we hypothesized that AC8 could form nanoclusters on the plasma membrane of MIN6 cells and compartmentalize cAMP dynamics. To test this hypothesis, we examined the spatial organization of AC8 and AKAP150 at the membrane using Stochastic Optical Reconstruction Microscopy (STORM). We found that AKAP150 molecules were organized in clusters with a mean radius of 127\u00a0\u00b1\u00a09 nm and an average nearest-neighbor spacing of 313\u00a0\u00b1\u00a020 nm between cluster centers (n\u00a0=\u00a020) (Figure 3a and Figure 3\u2014figure supplement 1), consistent with several recent reports demonstrating AKAP79/150\u2019s tendency to form nanoclusters in other cell types (Mo et al., 2017; Purkey et al., 2018; Tajada et al., 2017; Zhang et al., 2016). Thus, the AKAP79/150 compartment-specific cAMP phase is likely representative of the balanced cAMP generation and degradation within these AKAP clusters.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig3-v2.jpg)\n\n**Figure 3.:** (a) Representative super-resolution STORM image of the AKAP150 scaffold (scale 5 \u03bcm, inset 500 nm). Ripley-K analysis measures the average radii of the nanoclusters and indicates that AKAP150 forms clusters of 127\u00a0\u00b1\u00a09 nm, n\u00a0=\u00a020 (uniform random distribution control in inset). The nearest-neighbor distance distribution describes the distance between nanoclusters (average distance for AKAP150 is 313\u00a0\u00b1\u00a020 nm). (b) Representative super-resolution STORM image of Ca2+-sensitive AC8 (scale 5 \u03bcm, inset 500 nm) depicts AC8 nanoclusters of average radius 88\u00a0\u00b1\u00a08 nm and average nearest-neighbor distance 292\u00a0\u00b1\u00a016 nm, n\u00a0=\u00a016.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Histogram showing the size distribution (area, nm2) for AKAP150 (green) and AC8 (magenta) clusters derived from STORM imaging.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) A representative two-color STORM image of AKAP150 (green) and AC8 (magenta) in a MIN6 cell with specific examples of AKAP150/AC8 co-clusters to the right (scale 1 \u03bcm, inset 200 nm). Representative 1 x 1 \u03bcm scatter plot showing molecular localizations for AKAP150, color-coded with the values of L(200) (b) or Lcross(200) (c), which reflect the number of localizations of its own species or of the AC8 species, respectively, within a 200 nm radius of each AKAP150 localization. (d) Scatter plot of Lcross(200) and L(200) is shown for the representative ROI. AKAP150 localizations with a Lcross(200) score above 150 were considered co-clustered with AC8. (e) Summary of Getis-Franklin co-clustering analyses of the two-color STORM images identifying populations with different AKAP150/AC8 cluster relationships. A majority of AKAP150 localizations (72%) are co-clustered with AC8 localizations (n\u00a0=\u00a05 cells).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** FRAP curve for EGFP-tagged AC8 in MIN6 cells. AC8 diffuses slowly with an apparent diffusivity of 0.019\u00a0\u00b1\u00a00.002 \u03bcm2/s and an average immobile fraction of approx. 42.3% (n\u00a0=\u00a016, extrapolated).\n\nDue to the known interaction between AKAP79/150 and AC8 (Willoughby et al., 2010) and diffusion of membrane-localized signaling complexes, we next probed the spatial organization and mobility of AC8. We found AC8 also distributes non-uniformly at the plasma membrane and forms clusters with a mean radius of 88\u00a0\u00b1\u00a08 nm and an average nearest-neighbor spacing of 292\u00a0\u00b1\u00a016 nm between cluster centers (n\u00a0=\u00a016) (Figure 3b; Figure 3\u2014figure supplement 1). In order to measure the degree of colocalization between AKAP150 and AC8 nanoclusters, we also performed 2-color STORM and observed 72% of AKAP150 localizations were co-clustered with AC8 localizations, suggesting the presence of AKAP150:AC8 co-clustered nanodomains (Figure 3\u2014figure supplement 2a\u2013e). Next, to determine the mobility of AC8 molecules within the timescale of the oscillatory circuit\u2019s period, we performed Fluorescence Recovery After Photobleaching (FRAP) with EGFP-tagged AC8 and found AC8 diffuses slowly at the membrane, and that there exists a significant immobile fraction (DAC8\u00a0=\u00a00.019\u00a0\u00b1\u00a00.002 \u03bcm2/s, avg. % immobile\u00a0=\u00a042.3%, n\u00a0=\u00a016) (Figure 3\u2014figure supplement 3).\n\nWith the evidence of the nanoscale organization of AKAP150 and AC8 on the plasma membrane, we further hypothesized that the increased spatial density of Ca2+-driven cAMP sources within the AKAP150 clusters, in conjunction with dispersed PDE1 in the cytosol (Bender and Beavo, 2006; Goraya et al., 2008), is important in compartmentalizing cAMP production and mediating the in-phase cAMP signal. To test this idea, we sought to build a mathematical framework to describe the spatial compartmentalization of the in- and out-of-phase cAMP-Ca2+ oscillations. Briefly, we expanded our network motif model (Figure 2c) by including a 3D spatial component with cAMP diffusion (DcAMP\u00a0=\u00a060 \u03bcm2/s; Agarwal et al., 2016) and incorporating our previously published well-mixed \u03b2 cell model (Ni et al., 2011). We used the AKAP79/150:AC8 cluster pattern measurements from the STORM imaging to set model parameters in a hexagonal prism domain (200 nm edge, 600 nm depth), with one immobile AKAP79/150:AC8 cluster centered in the domain for simulation (Figure 4a, see Appendix 1 for model development details). By localizing AC8 within the AKAP79/150:AC8 cluster on the plasma membrane face and leaving PDE1 well-mixed throughout the volume, we could simulate Ca2+-driven cAMP oscillations that were in-phase within the immediate vicinity of a cluster, but sharply transitioned out-of-phase outside the cluster. Specifically, during a Ca2+ influx event, Ca2+-triggered cAMP production dominated at the center of the AKAP79/150 cluster while Ca2+-triggered cAMP degradation was favored outside the cluster at the PM and in the center of the unit volume (Figure 4a). Not surprisingly, the regime that recapitulates this phase relationship is sensitive to the spatially-restricted AC8/PDE1 balance and the diffusivity of cAMP. For example, by increasing the AC8 concentration within the cluster, the Ca2+-driven cAMP generative flux could exceed the rate of cAMP degradation by PDE1 and thus cAMP and Ca2+ oscillations could exist in-phase within both compartments (Figure 4\u2014figure supplement 1). Alternatively, assuming that AC8 clustering is driven by AKAP150:AC8 interactions, weakening this interaction would then reduce the AC8 cluster stabilization and lead to a redistribution of AC8 away from the nanoclusters and a decrease in the local concentration of AC8 within the clusters (Figure 4b). Without the high local concentration of AC8 driving a net positive cAMP production within an AKAP79/150 cluster, the spatial domain where cAMP oscillates in-phase with Ca2+ is predicted to shrink while the out-of-phase regime expands and can reverse the phase at the cluster center (Figure 4c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig4-v2.jpg)\n\n**Figure 4.:** (a) 3D reaction-diffusion model with a single AKAP79/150:AC8 co-cluster positioned at the PM in the \u03b2 cell in a hexagonal prism volume. cAMP oscillates in-phase immediately within the AKAP79/150:AC8 nanocluster due to the high effective concentration of AC8, but out-of-phase at the PM or cytosol due to the presence of PDE1 (cAMP \u2013 red, Ca2+\u2013 blue). (b) Disruption of the AKAP79/150:AC8 interaction can redistribute AC8 from within the cluster to the PM, shown by the half-Gaussian cross-sections and representative AC8 concentration heatmaps at the PM. (c) Heatmap depicting the time lag (s) for AC8 distribution (% Gaussian) and spatial distance (nm) from cluster center along PM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Spatial simulations of cAMP (red) and calcium (black) when AC8 concentration is increased within the nanocluster. Entrainment of cAMP and calcium oscillations (in-phase) occurs globally at the plasma membrane (edge - top right, cluster center - bottom right).\n\nTo test this prediction, we overexpressed the amino terminus of AC8 (AC81-106) required for interaction with AKAP79/150 (Willoughby et al., 2010) to compete with the binding of endogenous AC8 to the endogenous AKAP150 scaffold. The disruption of the AKAP150:AC8 interaction was validated using a proximity ligation assay (PLA) to visualize the AKAP150:AC8 interaction in situ. Compared to non-transfected cells, cells expressing the AC81-106 peptide had a 39 \u00b1 4% reduction in the PLA signals, indicating a decrease in the AKAP150:AC8 interaction (Figure 5\u2014figure supplement 1a,b). Furthermore, STORM imaging showed that overexpression of the AC81-106 peptide led to a decrease in the percentage of AC8 single-molecule localizations within AC8 nanoclusters (n\u00a0=\u00a09) (Figure 5a), consistent with the predicted redistribution of AC8 molecules (Figure 4b). To test the impact of loss of AC8 molecules from the nanoclusters on the oscillation phase, we measured AKAP79/150-localized cAMP in the presence of AC81-106 and observed a significant increase in the average lag time (43\u00a0\u00b1\u00a06 s, n\u00a0=\u00a033) (Figure 5b). This is due to a higher proportion of cells exhibiting out-of-phase cAMP oscillations, indicating that the AKAP79/150:AC8 competitor peptide was sufficient in reversing the phase relationship in the AKAP79/150 compartment. Interestingly, we also observed many cells displaying irregular Ca2+ oscillations, as indicated by a disruption in the periodic timing of individual cells\u2019 Ca2+ peaks (Figure 5b, left). This nanoscale perturbation establishes the regulatory role of the AKAP79/150:AC8 interaction in mediating the compartmentalized cAMP-Ca2+ phase relationship.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig5-v2.jpg)\n\n**Figure 5.:** (a) Over-expression of the N-terminus of AC8, which is necessary and sufficient for mediating the AKAP79/150:AC8 interaction, redistributes AC8 from within nanoclusters to the general PM, as seen in the STORM image (scale 5 \u03bcm, inset 500 nm) and measured by the percent of localizations that fall into nanoclusters. (b) Disruption of the AKAP79/150:AC8 interaction lengthens the time lag between the cAMP (red) and Ca2+ (black) signals at the AKAP79/150 compartment (avg. time lag in absence of disruptor is 13\u00a0\u00b1\u00a03 s, n\u00a0=\u00a060, and in presence of disruptor 43\u00a0\u00b1\u00a06 s, n\u00a0=\u00a033) due to more cells displaying out-of-phase cAMP oscillations. *p=0.0341, ****p<0.0001; unpaired two-tailed Students t-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Widefield maximum intensity projections of a proximity ligation assay to depict the extent of interactions between AC8 and AKAP150 in MIN6 \u03b2 cells (scale 10 \u03bcm). Expression of EGFP-tagged AC81-106 results in less PLA puncta per cell. (b) Number of PLA puncta per AC81-106-expressing cell is significantly decreased compared to non-transfected control (n\u00a0=\u00a0142 and 57 cells, respectively) (****p<0.0001; unpaired two-tailed Student\u2019s t-test).\n\n### AKAP79/150-mediated phase relationship is critical for regulating oscillatory Ca2+\n\nNext we systematically examined the impact of perturbing the precisely regulated phase relationship within the AKPA79/150 compartment. Due to the modulatory role of PKA in the Ca2+-cAMP-PKA oscillatory circuit and the interaction between PKA and AKAP79/150, we wondered how the in-phase cAMP oscillations with respect to Ca2+ are translated into PKA activities and if spatial compartmentalization of the phase relationship is also maintained at the PKA activity level. Therefore, we extended our 3D model to include AKAP79/150-associated PKA (see Appendix 1 for model details). In\u00a0this extended model, PKA activity oscillations exhibit distinct phase relationships with respect to Ca2+ within and outside of the AKAP79/150 compartment (Figure 6\u2014figure supplement 1a). To test this prediction, we fused our FRET-based biosensor for PKA activity (AKAR4) (Depry et al., 2011) to either full-length AKAP79 or the PM-targeting motif and expressed the sensors in MIN6 cells. Upon TEA stimulation, PKA activity was observed to oscillate with a lag time of 25\u00a0\u00b1\u00a06 s (n\u00a0=\u00a015) within the AKAP79/150 compartment but with a lag time of 55\u00a0\u00b1\u00a08 s (n\u00a0=\u00a012) (Figure 6\u2014figure supplement 1b\u2013e) at the general plasma membrane, indicating that the compartmentalized phase relationship is preserved from cAMP to PKA.\n\nSpatiotemporal organization of PKA signaling and its phosphorylation targets via AKAPs have been implicated in regulating several important pathways. For example, PKA has been shown to phosphorylate CaV1.2 in an AKAP79/150-dependent manner, and this modification can influence the open probability of the channel (Murphy et al., 2014), suggesting a mechanistic link between local cAMP/PKA activity and global oscillatory Ca2+. Thus, we sought to study the functional role of the spatially\u00a0compartmentalized cAMP-Ca2+ phase relationship in regulating intracellular Ca2+ dynamics. We measured Ca2+ oscillations by RCaMP in the presence of either the EGFP-tagged AKAP79/150:AC8 disruptor peptide, AC81-106, or EGFP alone as a control. Population-wide differences in Ca2+ dynamics, such as strength and timing, were observed in AC81-106-transfected cells and visualized in heat maps depicting the normalized Ca2+ signal per cell versus time (Figure 6a). Interestingly, we found that the expression of the disruptor peptide was correlated with a significant decrease in the peak ratio between the second Ca2+ peak and the first Ca2+ peak (control average \u22121.6%, n\u00a0=\u00a0270; AC81-108 average \u221210.8%, n\u00a0=\u00a0562) post TEA addition, indicative of less sustained oscillations (Figure 6b,c). In addition to intracellular Ca2+ concentration, the precise timing of internal oscillatory events is critical for modulating \u03b2 cell functions such as glucose homeostasis and pulsatile insulin secretion (Fridlyand et al., 2010). In the presence of the disruptor peptide, cells also exhibited a longer elapsed time between oscillatory Ca2+ peaks (control average 3.9\u00a0\u00b1\u00a00.1 min, n\u00a0=\u00a0270; AC81-108 average 4.6\u00a0\u00b1\u00a00.1 min, n\u00a0=\u00a0562), suggesting that the timing of the signaling circuit was disturbed (Figure 6b,c). It is well established that besides the precise timing, the regularity of cytoplasmic Ca2+ in \u03b2 cells is crucial in mediating pulsatile insulin secretion from the pancreas (Gilon et al., 2002; Schmitz et al., 2002). By stratifying the disruptor peptide-expressing cell population into \u2018low, \u2018medium,\u2019 and \u2018high\u2019 expressers and performing a blinded classification of responding cells based on the regularity of the Ca2+ oscillation (see Appendix 1 for details), we found a positive correlation between the percentage of cells exhibiting irregular oscillations and the expression level of the disruptor peptide (42% for low-expressing vs. 68% for high-expressing AC81-106 disruptor) (Figure 6d). Taken together, these data signify that the compartmentalized cAMP-Ca2+ phase relationship regulates the oscillatory Ca2+ signal and plays an important role in determining the pace, regularity, and sustainability of the Ca2+ oscillations.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig6-v2.jpg)\n\n**Figure 6.:** (a) Heatmaps depicting Ca2+ oscillations for 220 randomly selected cells co-expressing EGFP alone (control, left) or EGFP-tagged AC81-106 (AKAP79/150:AC8 disruptor, right), ordered by a mixed parameter describing the time lag between the first two Ca2+ peaks and the avg. timelag between all Ca2+ peaks. (b) Schematic describing two Ca2+ oscillatory parameters: the ratio between the first two Ca2+ peaks (R = P2 / P1) and the interpeak timing (t). (c) The peak ratio R\u00a0is decreased in the presence of the AKAP79/150:AC8 disruptor\u00a0(left), indicating less of a sustained Ca2+ oscillatory response. Over-expression of the disruptor also lengthens the timing between peaks\u00a0(right). (d) The level of disruptor peptide\u00a0expression\u00a0is correlated with an increase in the percentage of cells exhibiting irregular oscillations (total n\u00a0=\u00a0562). p=0.0054, ordinary one-way ANOVA.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) PKA activity is predicted to oscillate near the center of the AKAP79/150:AC8 cluster with a short time delay and a longer delay outside of the cluster, relative to Ca2+. (b) Experimentally-measured time lag between PKA activity oscillations and Ca2+ for AKAP79 (orange) and the general PM (teal) compartments (n\u00a0=\u00a015 and 12, respectively). **p=0.0063, unpaired two-tailed Student\u2019s t-test. (c) Representative single cell trace showing in-phase PKA activity within the AKAP79 compartment. Orange trace is PKA activity at AKAP79 (CY-FRET channel divided by cyan donor channel) and black trace is Ca2+ (RFP). (d) Representative single cell trace showing out-of-phase PKA activity within the general PM compartment. Teal trace is PKA activity at PM (CY-FRET channel divided by cyan donor channel) and black trace is Ca2+ (RFP).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55013/elife-55013-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Stochastic simulations were performed for high and low AC8 counts of 200 (a) and 10 (b). (c) Reducing the AC8 count shifts the solution from in-phase to out-of-phase with respect to Ca2+, as predicted in the previous four component model. (d) Increasing the AC8 count suppresses cAMP noise within the system, relative to the mean.\n\n## Discussion\n\nBiological oscillations represent a rich way of encoding information using the amplitude and frequency. Here, we show the phase in an oscillatory signaling circuit represents a novel mode of informational encoding for which the phase itself can be spatiotemporally regulated. In the case of the Ca2+-cAMP-PKA circuit, the oscillatory cAMP/PKA phase relative to a widespread Ca2+ signal is distinctly regulated within two adjacent membrane compartments through intracellular organization of scaffolds and signaling effectors. Localized perturbation of this spatial phase signature disrupts global Ca2+ oscillations and thus has far-reaching consequences on the functional landscape of the \u03b2 cell.\n\nCompartmentalization of cAMP/PKA signaling is instrumental in processing a diverse set of inputs and mediating specific cellular functions; however, the mechanistic details of compartmentalization await to be fully elucidated (Musheshe et al., 2018). Given the measured kinetic rates of most ACs and PDEs, the generation of local cAMP gradients around single enzymes appears unfeasible (Conti et al., 2014). Context-dependent discrepancies in some of the kinetics (i.e. differences between in vitro and in vivo measurements) and slower cAMP diffusion due to buffering have been shown to be important for cAMP compartmentalization (Bock et al., 2020; Zhang et al., 2020). Here, we propose the nanoscale organization of key cAMP effectors and regulators as a novel mechanism for cAMP compartmentation. Despite the slow rates measured for individual ACs, we computationally and experimentally describe conditions in which the generation of compartmentalized cAMP can emerge from the clustering of many relatively immobile AC8 enzymes at the membrane and bulk distribution of PDE1 in the cytoplasm. Alterations to this nanoscale organization lead to dysregulated Ca2+ oscillations, demonstrating the functional importance of maintaining this organization. This system also serves as a nanoscale demonstration of how a cell can translate a global signal (Ca2+) into a compartmentalized signal (cAMP/PKA activity) by local activation and global inhibition, a strategy that is likely utilized in many other cellular contexts (Levchenko et al., 2000; Purvis and Lahav, 2013).\n\nIn order to understand the functional impact of the nanoscale architecture, it is important to also consider the discrete scale of such signaling organization. According to our rough estimates, approximately 15\u2013150 individual AC8 molecules comprise AKAP150:AC8 nanoclusters (see Materials and methods for STORM-based estimation). To investigate the role of small molecule numbers, we recast our previous network motif model as a stochastic system and simulated the impact of changing initial conditions of PDE1 and AC8. We found that even in these discrete simulations, the previously noted phase relationships are preserved. As the balance between PDE and AC is perturbed, the system moves from an in-phase to an out-of-phase cAMP response with respect to Ca2+. Interestingly, we also noted that increasing the number of AC8 molecules leads to a reduction of the noise in the cAMP response. Thus, we predict that tuning AC8 cluster size might be a biological design strategy of nanoclusters to maintain accurate responses to perturbations (Figure 6\u2014figure supplement 2a\u2013d).\n\nThe interplay between Ca2+ and cAMP is very intricate, and multiple mechanisms could contribute to the observed dysregulated signaling effects upon perturbation of the AKAP79/150-compartmentalized cAMP-Ca2+ phase (Figure 6a\u2013d). AKAPs can recruit PKA to regulate channel activities (Dell'Acqua et al., 2006; Mo et al., 2017; Torres-Quesada et al., 2017), such as in the regulation of voltage-mediated Ca2+ entry via PKA-dependent phosphorylation of CaV1.2 (Murphy et al., 2014) or the modulation of store-operated Ca2+ entry by both PKA-dependent STIM1 and Orai1 phosphorylation (Thompson and Shuttleworth, 2015; Zhang et al., 2019). Additional levels of regulatory feedback within the Ca2+-cAMP-PKA oscillatory circuit have also been identified, such as a negative feedback loop involving PKA phosphorylation of AC8, thereby fine-tuning the circuit dynamics (Willoughby et al., 2012).\n\nThe precisely regulated Ca2+ and cAMP oscillations are likely functionally important as insulin secretion requires coordination between Ca2+, cAMP, and PKA. Localized cAMP/PKA signaling at the AKAP79/150 scaffold and the in-phase oscillations of cAMP and Ca2+ within this compartment might play a critical role in regulating insulin secretion due to close interactions between AKAP79/150 and insulin secretory granules via CaV1.2 (Barg et al., 2001). Several important processes and components of the secretory machinery have been identified as targets of PKA signaling here, such as PKA-dependent mobilization of granules (Renstr\u00f6m et al., 1997) and modulation of the synaptosomal protein SNAP25 (Gao et al., 2016). These PKA phosphorylation events may be highly coordinated with oscillations of Ca2+, which drive the exocytosis process for pulsatile insulin secretion. In addition to PKA-dependent secretory control, cAMP has recently been implicated to play a direct role in fusion pore formation via the cAMP-regulated guanine exchange factor Epac (Gu\u010dek et al., 2019). Compartmentalized phase regulation of the Ca2+-cAMP-PKA oscillatory circuit at the AKAP79/150 macromolecular complex is likely involved in the regulation of many \u03b2 cell processes, in addition to insulin secretion, and more work will be needed to further establish the mechanisms involved in decoding the information embedded in the local phase relationship.\n\nThe Ca2+-cAMP-PKA oscillatory circuit in pancreatic \u03b2 cells integrates many important regulators of cellular function, and the precise coordination of each is required for proper signaling control. Here, we have uncovered a spatiotemporal organization of the circuit where the oscillatory phase between cAMP/PKA and Ca2+ depends on the spatial proximity of the AKAP79/150 scaffold protein and AC8. The construction principles of this signaling nanodomain, including the spatial distributions of sinks and sources, likely represent a generalized strategy for the generation of other compartmentalized signals and provide a unique modality in which cells embed, process, and produce signaling information.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>MIN6</td>\n      <td>Dr. Jun-Ichi Miyazaki, Osaka University</td>\n      <td>RRID:CVCL_0431</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tetraethylammonium chloride (TEA)</td>\n      <td>Sigma</td>\n      <td>T2265</td>\n      <td>20 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>8-Methoxymethyl-3-isobutyl- 1-methylzanthine (8MM-IBMX)</td>\n      <td>Sigma-Aldrich</td>\n      <td>M2547</td>\n      <td>100 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Milrinone</td>\n      <td>Alexis</td>\n      <td>Cat# ALX-270\u2013083 M005</td>\n      <td>10 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rolipram</td>\n      <td>Alexis</td>\n      <td>Cat# ALX-270\u2013119</td>\n      <td>1 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, Drug</td>\n      <td>KCl</td>\n      <td>Sigma-Aldrich</td>\n      <td>P9541</td>\n      <td>15 mM</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Lipofectamine-2000</td>\n      <td>Invitrogen</td>\n      <td>11668019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCDNA3 AKAR4</td>\n      <td>PMID:20838685</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>(Ci/Ce)Epac2-camps</td>\n      <td>Dr. Dermot Cooper, University of Cambridge</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AKAP79 (AKAP5, Homo sapiens)</td>\n      <td>Dr. John D. Scott, University of Washington</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AC8 (Adcy8, Rattus norvegicus)</td>\n      <td>Dr. Dermot Cooper, University of Cambridge</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ShAdcy8 Plasmid</td>\n      <td>Dr. Jochen Lang, University of Bordeaux</td>\n      <td>ShAdcy8 #2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>RCaMP</td>\n      <td>Dr. Loren Looger, Janelia Farms</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>R-FlincA</td>\n      <td>Dr. Kazuki Horikawa, Tokushima University Graduate School</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Duolink in situ red starter kit</td>\n      <td>Sigma</td>\n      <td>DUO92101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Duolink in situ Probemaker MINUS</td>\n      <td>Sigma</td>\n      <td>DUO92010</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Duolink in situ Probemaker PLUS</td>\n      <td>Sigma</td>\n      <td>DUO92009</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-AC8, rat polyclonal</td>\n      <td>Abcam</td>\n      <td>ab196686</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-AKAP150, rat polyclonal</td>\n      <td>Millipore Sigma</td>\n      <td>07\u2013210</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-AKAP79, mouse monoclonal</td>\n      <td>BD</td>\n      <td>610314</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit AlexaFluor647</td>\n      <td>ThermoFisher Scientific</td>\n      <td>A21245</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse AlexaFluor568</td>\n      <td>ThermoFisher Scientific</td>\n      <td>A11031</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI</td>\n      <td>https://imagej.net/Fiji</td>\n      <td>RRID:SCR_014294</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MetaFluor</td>\n      <td>https://www.moleculardevices.com/</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>https://www.mathworks.com/</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>https://www.graphpad.com/ scientific-software/prism/</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COPASI</td>\n      <td>http://copasi.org/ Hoops et al., 2006</td>\n      <td>RRID:SCR_014260</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Virtual Cell</td>\n      <td>https://vcell.org/ Cowan et al., 2012</td>\n      <td>RRID:SCR_007421</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Gene construction\n\nFor AKAP79-(Ci/Ce)Epac2-camps, AKAP79 (gene AKAP5, from Dr. John D. Scott) was PCR amplified to have HindIII/BamHI digestion sites, and (Ci/Ce)Epac2-camps (from Dr. Dermot Cooper) was PCR amplified to have BamHI/EcoRI digestions sites. Both fragments were inserted into a pcDNA3 (Invitrogen) backbone for mammalian expression (cAMP sensor is C-terminal to AKAP79). For AKAP79-AKAR4, a similar approach was taken where AKAR4 was dropped between BamHI/EcoRI. For AC8 (gene Adcy8, from Dr. D. Cooper), AC81-108, Gibson Assembly was used to insert the genes into the pcDNA3 mammalian expression vector. The ShAdcy8 construct for Adcy8 knockdown was previously verified and a gift from Dr. Jochen Lang. RCaMP was a gift from Dr. Loren Looger.\n\n### Cell culture\n\nMIN6 cells (a mouse insulinoma \u03b2 cell line, gift from Dr. Jun-Ichi Miyazaki) were plated onto sterilized glass coverslips in 35 mm dishes and grown to 50\u201390% confluency in DMEM (10% FBS, 4.5 g/L glucose) at 37\u00b0C with 5% CO2. Identity was verified by phenotype (Ca2+ oscillations, morphology, and insulin secretion). Recurrent mycoplasma testing was performed and results were negative. Cells were transfected using Lipofectamine 2000 (Invitrogen) for 20\u201348 hr before imaging.\n\n### Imaging\n\nCells were washed twice with Hank\u2019s balanced salt solution buffer and maintained in the dark at room temperature. Cells were imaged on a Zeiss Axiovert 200M microscope with a cooled charge-coupled device camera (MicroMAX BFT512, Roper Scientific, Trenton, NJ) controlled by METAFLUOR 6.2 software (Universal Imaging, Downingtown, PA). Dual cyan/yellow emission from FRET used a 420DF20 excitation filter, a 450DRLP dichroic mirror, and two emission filters [475DF40 for CFP and 535DF25 for YFP]. RFP fluorescence was imaged using a 568D55 excitation filter, a 600DRLP dichroic mirror, and a 653DF95 emission filter. GFP fluorescence was imaged using a 480DF30 excitation filter, a 505DRLP dichroic mirror, and a 535DF45 emission filter. YFP fluorescence was imaged using a 495DF40 excitation filter, a 515DRLP dichroic mirror, and a 535DF25 emission filter. These filters were alternated by a filter-changer Lambda 10\u20132 (Sutter Instruments, Novato, CA). Exposure time was 50\u2013500 ms, and images were taken every 10\u201330 s.\n\nFor confocal imaging, images were collected with a C2 plus on a Nikon Ti2 inverted microscope equipped with a Plan Apo lambda 60x oil immersion objective NA 1.4. YFP fluorescence was excited with the 488 nm line from a LU-N4 laser. Images were acquired with a DUVB detector collecting emission from 495 nm to 600 nm with a virtual spectral GaAsP detector controlled by NIS Elements software. The pinhole was set at 30 \u03bcm. Frame size was 1024 \u00d7 1024 pix.\n\nFor FRAP acquisition, cells were imaged using a C2 plus mounted on a Nikon Ti2 with a 488 nm laser (LU-N4 laser engine, Nikon Instruments) and sensitivity PMT detector (C2-DU3, Nikon) with 525/50 nm bandpass filter. The excitation light is reflected by a dichroic mirror 405/488/561/640 and focused through an Apo 100 \u00d7 1.49 NA objective. Image stacks were acquired in Galvano mode with unidirectional scanning with a 488 nm laser at 1.5% laser power with frame size 512 \u00d7 512 at scan zoom 2, one frame per second and 97.1 \u00b5m pinhole size. Small stimulation ROIs were drawn at the plasma membrane. The total FRAP series contained three images before bleaching (obtained with 2 s intervals), two cycles of ROI bleaching with the 488 nm laser at 100% laser power (5 frames at one frame per second), and two minutes of continuous acquisition to monitor fluorescence recovery.\n\n### Image analysis\n\nFluorescence images were background-corrected by subtracting the fluorescence intensity of background with no cells from the emission intensities of cells expressing fluorescent reporters. Cells for experiments using the targeted biosensors were manually segmented from microscopy images based on emission intensity (YFP) and RCaMP (RFP) using custom-written Java and MATLAB scripts and whole-cell fluorescence emission was measured. The ratio of yellow/cyan emission (AKAR4) or cyan/yellow emission (Epac2-camps) and RFP intensity were then calculated at different time points using MATLAB scripts. The values of all-time courses were normalized by dividing each by the average basal value before drug addition. FRAP measurements were background-subtracted, bleach-corrected, and normalized, and fit to a previously described diffusion-dominant model (Ellenberg et al., 1997; Phair et al., 2004). For the AKAP150:AC8 disruption experiments, cells were segmented with custom CellProfiler (Broad Institute) pipelines based on RCaMP (RFP) fluorescence emission, and both RFP and GFP fluorescence intensities (EGFP-AC81-106) per cell were measured every 30 s. Graphpad Prism eight was used for visualization and statistical analysis. Custom-written MATLAB scripts were used for correlation analysis and regularity classification.\n\n### Super-resolution imaging (STORM)\n\nFor fixed-cell stochastic optical reconstruction microscopy (STORM) imaging, cells were fixed with 4% paraformaldehyde (PFA) and 0.2% glutaraldehyde (GA) for 20 min and then washed with 100 mM glycine in HBSS to quench the free PFA. Cells were permeabilized and blocked in a permeabilization solution with 0.1% Triton X-100, 0.2% bovine serum albumin, 5% goat serum, and 0.01% sodium azide in HBSS. The cells were then incubated overnight at 4\u00b0C with an anti-AC8 antibody (Abcam, ab196686) at a 1:2000 dilution or an anti-AKAP150 (Millipore Sigma, 07\u2013210) antibody at a 1:500 dilution, followed by 1 to 2 hr with goat anti-rabbit Alexa 647\u2013conjugated antibody (ThermoFisher Scientific, A21245) at 1:1000 dilution. For the 2-color STORM experiments, cells were incubated with both the anti-AC8 antibody (1:2000 dilution) and an anti-AKAP79 antibody that recognizes a conserved epitope in AKAP150 (BD, 610314; raised against the C-terminal 248 residues of AKAP79 which shares 70% similarity with a region in AKAP150; 1:500 dilution), followed by a 2 hr incubation with a goat anti-rabbit Alexa 647-conjugated antibody (1:1000 dilution) and a goat anti-mouse Alexa 568-conjugated antibody (ThermoFisher Scientific, A11031; 1:1000 dilution). The cells were then post-fixed again in 4% PFA and 0.2% GA, quenched with 100 mM glycine in HBSS, and washed with HBSS to prepare for imaging. Immediately before imaging, the medium was changed to STORM-compatible buffer (50 mM Tris-HCl, pH 8.0, 10 mM NaCl, and 10% glucose) with glucose oxidase (560 \u03bcg/ml), catalase (170 \u03bcg/ml), and mercapto-ethylamide (7.7 mg/ml). STORM images were obtained using a Nikon Ti total internal reflection fluorescence (TIRF) microscope with N-STORM, an Andor IXON3 Ultra DU897 EMCCD, and a 100\u00a0\u00d7\u00a0oil immersion TIRF objective. Photoactivation was driven by a Coherent 405 nm laser, while excitation was driven with a Coherent 647 nm laser or Coherent 561 nm laser.\n\nAll image analysis and image reconstruction were performed using both Nikon Elements analysis software and custom-written MATLAB scripts. Blinking correction was performed by implementing the pairwise Distance Distribution Correction (DDC) algorithm (Bohrer et al., 2019). Cluster property measurements were performed using Ripley-K analysis and custom mean-shift MATLAB code for segmentation, as described before (Mo et al., 2017). Co-clustering measurements were made using custom MATLAB scripts implementing Getis-Franklin pattern analysis, as described previously (Getis and Franklin, 1987; Mo et al., 2017). Briefly, we first calculated the degree of local clustering of AKAP150 molecules using the L(r) spatial statistic at r\u00a0=\u00a0200 nm which counts the number of AKAP150 localizations within 200 nm (length scale of nanoclusters) of each AKAP150 localization, normalized appropriately. We then calculated Lcross(r) at r\u00a0=\u00a0200 nm which counts the number of AC8 localizations within 200 nm of each AKAP150 localization, normalized appropriately. Plots of Lcross(200) vs. L(200) were generated and an L threshold of 150 was chosen based on the proportion of localizations found within clusters from the mean-shift segmentation analysis, and used to divide the plot into quadrants to calculate the proportion of AKAP150 localizations co-clustered with AC8 as previously described (Mo et al., 2017).\n\nWe obtained a very rough estimate of AC8 molecules within nanoclusters from our blink-corrected STORM datasets by assuming background localizations outside the cell are due to single secondary antibodies with conjugated dyes. We measured an average of 2 localizations per secondary antibody outside the cell and approximately 50 localizations per AC8 nanocluster within the cell. Estimating a labeling stoichiometry of 0.4\u20131.5 secondary antibodies per primary antibody and 0.4\u20131.5 primary antibodies per AC8 molecule (Zanacchi et al., 2017; Nieuwenhuizen et al., 2015), we can roughly approximate the number of AC8 molecules per nanocluster to be between 15 and 150 molecules/cluster (N\u00a0=\u00a03 cells).\n\n### Proximity ligation assay\n\nAntibodies for AC8 and AKAP150, mentioned in STORM section, were buffer exchanged into DPBS and conjugated with MINUS or PLUS oligos, following the Sigma DuoLink in situ Probemaker kits. PLA experiments were performed using the Duolink in situ red kit for PLAs according to the provided protocol. The only protocol modification was to extend the amplification time by 50 min. Briefly, cells were fixed and permeabilized as in the STORM experiments before incubation with PLUS and MINUS oligo-conjugated primary antibodies for 30 min at 37\u00b0C each, with washes after each step. Ligation of the nucleotides and amplification of the strand occurred sequentially by incubating cells with first ligase then polymerase and detection solution. PLA experiments with AKAP95 antibodies from different species were used as positive controls in HEK293T cells, and experiments with just one oligo-labeled primary antibody or the other were our negative control. Images were acquired on a Nikon Ti Eclipse epifluorescence scope with z-control and maximum intensity projections were created. A cross section of the DAPI-stained nucleus (3.6\u20135 \u03bcm) was also acquired and the number of dots per cell was counted using the nucleus as reference.\n\n### Statistical analysis\n\nStatistics, such as means, SEMs, and comparisons were calculated using Graphpad Prism 8 software. Experiments comparing multiple conditions were analyzed using one-way ANOVA or unpaired t-tests. Statistical significance was assessed using p<0.05 as a cutoff. Experiments were repeated\u00a0>3 times. Individual cells with high expression of the AKAP79/150-fused biosensors were removed from analysis (see Appendix 1 for details).\n",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "2328b229-f63c-4d60-bae7-6600862cfa56",
+      "submission_id": "0d91679f-0f9c-4243-a0f5-28df08e83b17",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Satyajit Mayor, Marine Biological Laboratory United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55013.sa1](https://doi.org/10.7554/eLife.55013.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nSecond messengers, typically small molecules such as cAMP and ions such as Ca2+, regulate a variety of intracellular processes. Understanding their spatial and temporal distributions as well as their dynamics is important to appreciate the spatial biochemistry controlled by these agents. In their manuscript the authors have been able to map exactly this for the oscillations of cAMP and Ca2+. Their analysis reports that the local oscillations of cAMP occur out-of-phase with respect to the oscillations of Ca2+, but in-phase in the rest of the cell. This has implications for the spatial and temporal control of the biochemistry regulated by this second messenger.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Spatially compartmentalized phase regulation of a Ca2+-cAMP-PKA oscillatory circuit\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jonathan Cooper as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Andr\u00e9 Nadler (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript by Tenner et al. describes how spatial confinement of AMP cyclases can entrain the temporal concentration profile of its product cAMP to an oscillating calcium concentration profile. They address an extremely interesting topic that is currently receiving well-deserved attention: The notion that cells encode information not only through on/off switches in the respective signaling circuits but also in the dynamic profiles of the signaling responses. They provide compelling evidence for a two-state system featuring either in-phase or out-of-phase cAMP/calcium oscillations. They use FRET sensors targeted either to a specific (signaling) nano-compartment (AKAP79/150) at the plasma membrane or to the general plasma membrane to demonstrate that these states are due to distinct signaling dynamics on the nanoscale, a conclusion that is further underlined by simulations from a kinetic model describing this behavior.\n\nThey propose that a cluster of multiple calcium-sensitive ACs in the membrane shift the balance for the calcium-sensitive cAMP pool to become in-phase with the calcium signal itself, at increased calcium levels. In contrast, in regions away from the clusters, calcium-sensitive cAMP degradation by PDEs during periods of increased calcium drives the cAMP levels to become out-of-phase. In fact, the study goes full circle in illustrating how the spatially induced driving of a phase shift (calcium -> cAMP) could be related to the maintenance of the calcium oscillatory signal itself (via PKA). In general, the authors provide a well written narrative that includes microscopy of protein organisation at the nanometer scale, local and dynamic measurements of activity, and a modelling frame to interpret the data. Overall, this is a very interesting manuscript which would be of considerable general interest (and suitable for eLife) after a number of revisions to strengthen the experimental support for its core hypothesis.\n\nEssential revisions:\n\nA) AC8 nanoclustering and measurement of localized cAMP:\n\n1) Although the STORM images of AKAP79 and AC8 make a plausible case that they are colocalized in nanoclusters a more convincing case would be made if the authors had carried out 2-color STORM.\n\nThe authors suggest that a cluster needs to contain 'many' AC8 proteins. Please provide a number: The authors have STORM data as well as simulations. For the reaction diffusion model the authors need to assume that the membrane patterns (AKAP79/150 \u2013 AC8 clusters) are immobile. If the domain should be immobile not with respect to a calcium-cAMP oscillation (on the order of 10s of seconds) it would be important to provide data to support this (FRAP, SPT or sequential imaging). How does a cluster of a few molecules of AC8, along with its scaffolding protein remain immobile in the fluid membrane? Is it known what generates and holds the AKAP79/150 compartment in place?\n\n2) How critical is AC8 nanoclustering? Clearly under endogenous expression levels a displacement from the AKAP79/150 compartment disrupts the regularity of the calcium oscillations. But that is under the condition of the PDE activity that is present everywhere in the cytosol. What if the requirement is a calcium-dependent increase of cAMP production above the baseline? Then simple over expression of AC8 should be enough to entrain the calcium oscillations properly. Indeed, Figure 2E seems to suggest that to be a possibility. How critical is nanoclustering of AC8 in such a scenario of overexpression?\n\nB) Sensor design\n\nWhile the utilized sensor design based on the human protein may be of broader general interest, here a human protein (AKAP79) is used for targeting to a signaling nanodomain in a mouse cell line. The human and the mouse proteins are only 53% identical, thus it is not clear if they can in fact functionally substitute for each other, ensuring that the sensor indeed localized to the AKAP150/79 compartment.\n\nThis could for instance be confirmed using the already utilized AKAP150 antibody and an anti-FP antibody in a STORM (or other super-resolution) colocalization experiment. It would be better to generate a construct using the mouse protein and show in representative datasets that the observed phase-shift of cAMP oscillations is still observed. It is also not clear how the presence of a second protein pool (with likely different affinities for interacting proteins), in addition to the endogenous AKAP150 pool, would affect the outcome of the modelling. Possible complications may be discussed.\n\nC) Perturbation of protein concentrations\n\nThe authors use overexpression of proteins as perturbations (e.g. for AC8). They do not, however, provide data on the actual changes of protein levels \u2013 only the amount of plasmid used for transfection is reported in Figure 2\u2014figure supplement 2. The authors should quantify the changes of AC8 expression on the protein level, ideally in absolute numbers, however, if this is not possible, a combination of immunofluorescence data (to give the reader an estimate of the cell-to-cell variability) and western blot data would be sufficient here.\n\nDoes AKAP79 overexpression have an effect on endogenous AC8 expression levels?\n\nGiven that AKAP150 and AC8 physically interact, it is possible that their expression levels are co-regulated. Thus, it is at least conceivable that AK79 overexpression (through the FRET construct) could change AC8 expression levels. Given that AC8 concentration is a key factor in determining the phase offset of calcium/cAMP oscillations, this should be tested by quantifying AC8 on the protein level for overexpression of both the Lyn- and the AKAP79 based FRET constructs.\n\nThis could be done by western blot or MS to get an idea on the effect on the cell population level, but also by immunofluorescence imaging data on the single cell level (colocalization experiments using both anti-FP and anti-AC8 antibodies to estimate the effects of cell-to-cell variability).\n\nD) Modelling Issues:\n\nThe modelling is competently done with well-established software in the field. The authors have made a couple of design decisions that should be probed: (1) the use of Michaelis-Menten enzyme kinetics, rather than multi-step mass-action (2) Not using stochastic calculations. The stochastic analysis would have yielded some estimates of noise in the system that might be interesting. While the mapping between model and experiment seems reasonable, an estimate of noise in the system due to the low numbers of the molecules involved would be worth exploring.\n\nThe authors also present two models which both explain the experimental data: (a, in Figure 2) A simpler one, where the concentration of AC8 serves as a (global) switch between out-of-phase and in-phase calcium and cAMP oscillations and (b, in Figure 4) a more complex one that predicts localized cAMP oscillations in the specific AKAP79/150 clusters which are out-of-phase with the (global) cAMP oscillations in the cytosol. All modelling is restricted to simulations, if the statement made in the supplementary information (subsection \u201cModel development\u201d) is to be interpreted correctly. This is a significant limitation for the entire manuscript, as all conclusions are (at least partially) based on choices for parameters that the authors made instead of parameters values that were derived from fitting the model to experimental data which would be much more stringent.\n\nIdeally, the authors should fit their two models to a large, representative dataset and use Akaike's information criterion to decide which one is the more suited one. I understand that this will likely not be possible due to the high number of free parameters \u2013 it is unlikely that a fitting algorithm would find a true global minimum, as the available data probably are not sufficient constrains. However, this in turn means that deciding which model is to be preferred has to be done by testing predictions where the two models differ significantly.\n\nThe following two predictions where both models would yield diametrically opposing outcomes:\n\ni) The 3D reaction diffusion model predicts that cAMP oscillations in the AKAP79/150 compartments and cAMP oscillations in the bulk cytosol are out of phase in the same cell (see Figure 4). This can be tested by combining the AKAP79-based FRET sensor with a cytosolic, intensiometric, RFP-based cAMP sensor such as R-FlincA (Ohta et al., 2018). If the authors observe a clear phase shift between these two reporters, it would constitute very strong evidence in support of the 3D reaction-diffusion model. The current datasets only report one type of compartment per cell, yet the striking difference between compartments in the same cell is where the model predictions differ most dramatically.\n\nii) Localized oscillations depend on the assumption that AC diffusion is (close to) zero. Thus, the authors should measure AC diffusion at the plasma membrane. A key assumption of their model is that at least a fraction of the total protein pool should be completely immobile. Furthermore, this fraction should increase in an AKAP150 overexpression background.\n\nE) Final punchline that these elegant biophysical findings are important for some aspect of physiology is not very compelling. The authors should come with a more surgically-dissected physiological parameter that depends on the phase relationship between Ca and CaM, and at least provide this in their Discussion section.\n",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ee1e052c-b46c-48ff-adeb-e2a9eac2f2e6",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C1",
+      "claim": "Ca2+, cyclic adenosine monophosphate (cAMP), and Protein Kinase A (PKA) exist in an oscillatory circuit in \u03b2 cells characterized by a high degree of feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u03b2 cells, Ca2+, cyclic adenosine monophosphate (cAMP), and Protein Kinase A (PKA) exist in an oscillatory circuit characterized by a high degree of feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known characteristic of \u03b2 cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "58c553ee-3012-46ca-91c6-04107b894369",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C2",
+      "claim": "Nanodomain clustering of Ca2+-sensitive adenylyl cyclases (ACs) drives oscillations of local cAMP levels to be precisely in-phase with Ca2+ oscillations in mouse MIN6 \u03b2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in mouse MIN6 \u03b2 cells, nanodomain clustering of Ca2+-sensitive adenylyl cyclases (ACs) drives oscillations of local cAMP levels to be precisely in-phase with Ca2+ oscillations, whereas Ca2+-sensitive phosphodiesterases maintain out-of-phase oscillations outside of the nanodomain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "ca35a172-68b9-4a21-abdc-be36e2c07fab",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C3",
+      "claim": "Ca2+-sensitive phosphodiesterases maintain out-of-phase oscillations outside of the nanodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in mouse MIN6 \u03b2 cells, nanodomain clustering of Ca2+-sensitive adenylyl cyclases (ACs) drives oscillations of local cAMP levels to be precisely in-phase with Ca2+ oscillations, whereas Ca2+-sensitive phosphodiesterases maintain out-of-phase oscillations outside of the nanodomain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "c0865a90-ad87-40ac-b907-b43e295f7073",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C4",
+      "claim": "Disruption of the precise phase relationship between cAMP and Ca2+ perturbs Ca2+ oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of this precise phase relationship perturbs Ca2+ oscillations, suggesting the relative phase within an oscillatory circuit can encode specific functional information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data showing effects of phase disruption on Ca2+ oscillations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "9389257c-7c73-46de-bfe8-d196f5bb3c13",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C5",
+      "claim": "The relative phase within an oscillatory circuit can encode specific functional information.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of this precise phase relationship perturbs Ca2+ oscillations, suggesting the relative phase within an oscillatory circuit can encode specific functional information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that disrupting phase relationships affects Ca2+ oscillations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "0ed03d4d-25b2-4dbc-9f7e-f2f97dc5c4f1",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C6",
+      "claim": "cAMP and Ca2+ act as essential second messengers in almost every cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic adenosine monophosphate (cAMP) and Ca2+ act as essential second messengers in almost every cell type and regulate many functional pathways within a cell, such as hormonal signal transduction, metabolism, and secretion (Clapham, 2007; Sassone-Corsi, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "bfe0fa2d-2fba-4864-a5c4-7964decb3852",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C7",
+      "claim": "cAMP and Ca2+ regulate many functional pathways within a cell, such as hormonal signal transduction, metabolism, and secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic adenosine monophosphate (cAMP) and Ca2+ act as essential second messengers in almost every cell type and regulate many functional pathways within a cell, such as hormonal signal transduction, metabolism, and secretion (Clapham, 2007; Sassone-Corsi, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "a14dc6c9-4120-4d0e-8ed4-d54c47bed530",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C8",
+      "claim": "In neurons, cardiomyocytes, and pancreatic \u03b2 cells, cAMP and Ca2+ concentrations oscillate intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cell types, including neurons, cardiomyocytes, and pancreatic \u03b2 cells, these messengers' concentrations oscillate intracellularly (Dupont et al., 2011; Dyachok et al., 2006), and the oscillations encode critical signaling information (e.g. signal strength, duration, and target diversity) into parameters such as frequency and amplitude (Berridge et al., 1998; De Pitt\u00e0 et al., 2008; Parekh, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "a15e44b4-276c-438f-b5f6-b1a17553350b",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C9",
+      "claim": "Oscillations of cAMP and Ca2+ encode critical signaling information into parameters such as frequency and amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cell types, including neurons, cardiomyocytes, and pancreatic \u03b2 cells, these messengers' concentrations oscillate intracellularly (Dupont et al., 2011; Dyachok et al., 2006), and the oscillations encode critical signaling information (e.g. signal strength, duration, and target diversity) into parameters such as frequency and amplitude (Berridge et al., 1998; De Pitt\u00e0 et al., 2008; Parekh, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "54b4dcfa-1e21-49dd-b2ac-747bc7a82e75",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C10",
+      "claim": "Oscillations of Ca2+ drive pulsatile insulin secretion in \u03b2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon is perhaps best exemplified in \u03b2 cells, where oscillations of Ca2+ drive pulsatile insulin secretion (Rorsman and Ashcroft, 2018) and oscillating cAMP levels (Nesher et al., 2002; Tengholm, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "0645b8be-f831-4f3d-ba63-d08456b07bab",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C11",
+      "claim": "Ca2+, cAMP, and PKA constitute a highly coordinated oscillatory circuit responsible for integrating metabolic and signaling information.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Ca2+, cAMP, and the downstream cAMP-dependent kinase protein kinase (PKA) constitute a highly coordinated oscillatory circuit responsible for integrating metabolic and signaling information (Ni et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "ac8f0c46-981c-4665-923c-c4f5bf58cab2",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C12",
+      "claim": "Both Ca2+ and cAMP are highly spatially compartmentalized and form signaling microdomains or nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Ca2+ and cAMP are highly spatially compartmentalized and form signaling microdomains or nanodomains (Calebiro and Maiellaro, 2014; Petersen, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "a45b6716-f8bf-43d8-a67b-184f363aa73c",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C13",
+      "claim": "Ca2+ levels are locally controlled by channels, pumps, and intracellular buffering systems.",
+      "claim_type": "EXPLICIT",
+      "source": "While Ca2+ levels are locally controlled by channels, pumps, and intracellular buffering systems (Clapham, 2007; Stern, 1992), cAMP is thought to be regulated via controlled synthesis by adenylyl cyclases (ACs) and degradation by phosphodiesterases (PDEs) (Bender and Beavo, 2006; Defer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "249bcba9-f850-4b51-8b41-f7e831840e7f",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C14",
+      "claim": "cAMP is regulated via controlled synthesis by adenylyl cyclases (ACs) and degradation by phosphodiesterases (PDEs).",
+      "claim_type": "EXPLICIT",
+      "source": "While Ca2+ levels are locally controlled by channels, pumps, and intracellular buffering systems (Clapham, 2007; Stern, 1992), cAMP is thought to be regulated via controlled synthesis by adenylyl cyclases (ACs) and degradation by phosphodiesterases (PDEs) (Bender and Beavo, 2006; Defer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "1b86b3f7-5ada-451c-b008-b9e5cb42eb5c",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C15",
+      "claim": "The mechanisms that spatially constrain cAMP await to be fully elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite extensive studies on cAMP compartmentation, the mechanisms that spatially constrain this mobile second messenger await to be fully elucidated (Saucerman et al., 2014; Lohse et al., 2017; Musheshe et al., 2018; Bock et al., 2020; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "71f81411-51cc-4c80-aa38-a4cf2486df03",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C16",
+      "claim": "AKAP79/150 organizes a macromolecular complex with binding partners including PKA, CaV1.2, PKC, calcineurin, Ca2+-sensitive ACs, AMPA receptors, and others.",
+      "claim_type": "EXPLICIT",
+      "source": "In several excitable cell types, the plasma membrane (PM)-localized scaffold protein AKAP79 (rodent ortholog AKAP150) has been shown to organize a macromolecular complex with binding partners that include PKA, the voltage-gated Ca2+ channel CaV1.2, Protein Kinase C (PKC), the Ca2+/calmodulin-dependent protein phosphatase calcineurin, Ca2+-sensitive ACs, AMPA receptors, and many others (Gold et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "79421d9e-211c-41ef-a880-e1fc5db488e8",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C17",
+      "claim": "Knock-out of AKAP79/150 results in functional impairment of glucose-stimulated insulin secretion (GSIS) in pancreatic \u03b2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the extensive and multivalent nature of AKAP79/150 (as the scaffold is commonly referred) and a report describing the functional impairment of glucose-stimulated insulin secretion (GSIS) in pancreatic \u03b2 cells upon its knock-out (Hinke et al., 2012), we hypothesized that the AKAP79/150 scaffold might play an important role in the spatiotemporal regulation of the Ca2+-cAMP-PKA oscillatory circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "acdcb723-fbfc-4ca3-9ac3-b607074b8afe",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C18",
+      "claim": "cAMP oscillations measured within the AKAP79/150 compartment were in-phase with oscillating Ca2+ in MIN6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "cAMP oscillations measured within the AKAP79/150 compartment were in-phase with oscillating Ca2+, such that each transient spike in intracellular Ca2+ was closely associated with a transient increase in cAMP (Figure 1c) (n = 60 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "2cef0af6-264e-452e-aa06-020f50f7da3b",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C19",
+      "claim": "cAMP oscillations measured within the general plasma membrane compartment were out-of-phase with Ca2+ oscillations in MIN6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This was in sharp contrast to cAMP oscillations measured within the general plasma membrane compartment, where each local Ca2+ peak corresponded to a local trough in cAMP (n = 24), followed by a slow reversal of both signals to a pre-stimulated baseline (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "cbdb6e87-ee4d-4472-9107-573c056b1516",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C20",
+      "claim": "Within the AKAP79/150 compartment, cAMP lagged behind Ca2+ by an average of 13 \u00b1 3 s (n = 60).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the AKAP79/150 compartment, cAMP lagged behind Ca2+ by an average of only 13 \u00b1 3 s (mean \u00b1 SEM, n = 60); however, cAMP within the general plasma membrane compartment oscillated with a lag time of 47 \u00b1 4 s (n = 24) behind Ca2+ (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "e572f4dd-324f-4e74-b549-981d3d2d9332",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C21",
+      "claim": "cAMP within the general plasma membrane compartment oscillated with a lag time of 47 \u00b1 4 s (n = 24) behind Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the AKAP79/150 compartment, cAMP lagged behind Ca2+ by an average of only 13 \u00b1 3 s (mean \u00b1 SEM, n = 60); however, cAMP within the general plasma membrane compartment oscillated with a lag time of 47 \u00b1 4 s (n = 24) behind Ca2+ (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "b262f0ba-8291-4cf6-97c3-ff7f248bc503",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C22",
+      "claim": "cAMP oscillates with different phases between the cytosol/plasma membrane and the immediate vicinity of AKAP79/150 within the same cell.",
+      "claim_type": "EXPLICIT",
+      "source": "After stimulating the signaling circuit, we observed anti-correlated cAMP oscillations, indicating that cAMP oscillates with different phases between the cytosol/plasma membrane and the immediate vicinity of AKAP79/150 within the same cell (n = 25) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "704e2dec-f2e9-4079-9eec-5489a93f4072",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C23",
+      "claim": "Acute addition of 8MM-IBMX (100 \u03bcM), a relatively selective PDE1 inhibitor, effectively uncoupled cAMP dynamics from Ca2+ oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, acute addition of 8MM-IBMX (100 \u03bcM), a relatively selective PDE1 inhibitor, effectively uncoupled cAMP dynamics from Ca2+ oscillations (Figure 2b, Figure 2\u2014figure supplement 1a) (n = 18), indicating that Ca2+-triggered activation of PDE1 mediates the transient cAMP decreases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 2b and Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "919fb539-3e05-41fc-8266-cd6005a1cac8",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C24",
+      "claim": "Ca2+-triggered activation of PDE1 mediates the transient cAMP decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, acute addition of 8MM-IBMX (100 \u03bcM), a relatively selective PDE1 inhibitor, effectively uncoupled cAMP dynamics from Ca2+ oscillations (Figure 2b, Figure 2\u2014figure supplement 1a) (n = 18), indicating that Ca2+-triggered activation of PDE1 mediates the transient cAMP decreases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the effect of PDE1 inhibition on cAMP-Ca2+ coupling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "8db7d8e1-6736-43ba-87a5-63b914a2e427",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C25",
+      "claim": "Treating cells with milrinone (PDE3 inhibitor, 10 \u03bcM) or rolipram (PDE4 inhibitor, 1 \u03bcM) had no effect on cAMP-Ca2+ coupling or relative phase.",
+      "claim_type": "EXPLICIT",
+      "source": "While treating cells with either milrinone (PDE3 inhibitor, 10 \u03bcM, n = 12) or rolipram (PDE4 inhibitor, 1 \u03bcM, n = 15) slightly increased cAMP levels, neither inhibitor had an effect on cAMP-Ca2+ coupling or relative phase (Figure 2\u2014figure supplement 1b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 2\u2014figure supplement 1b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "e1b4800b-b506-4a23-8365-28a7b60fa660",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C26",
+      "claim": "PDE1 is the key component that couples Ca2+ and cAMP oscillations within this signaling circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that PDE1 is the key component that couples Ca2+ and cAMP oscillations within this signaling circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing PDE1 inhibition uncouples cAMP from Ca2+.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "c5f83834-28f3-420a-82a4-1b8770c0afb1",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C27",
+      "claim": "The phase relationship between cAMP and Ca2+ can be tuned by altering the relative strength between Ca2+-sensitive ACs and PDEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our simplified model indicates that the phase relationship can be tuned by altering the relative strength between Ca2+-sensitive ACs and PDEs (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from computational modeling shown in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "9dcfd5a5-6a06-48ff-b8b0-75e1f4ecd38f",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C28",
+      "claim": "Knocking down AC8 in MIN6 cells results in most cells exhibiting out-of-phase cAMP oscillations within the AKAP79/150 compartment (average lag time 37 \u00b1 9 s, n = 11).",
+      "claim_type": "EXPLICIT",
+      "source": "To test this prediction, we knocked down endogenous AC8 in MIN6 cells as previously done (Raoux et al., 2015) and observed that most cells exhibited out-of-phase cAMP oscillations within the AKAP79/150 compartment (average lag time 37 \u00b1 9 s, n = 11) (Figure 2d), indicating an AC8-specific role in mediating the cAMP-Ca2+ phase signature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "37b1dcdd-6a42-4568-bca0-d56502726f86",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C29",
+      "claim": "AC8 overexpression reversed the out-of-phase cAMP-Ca2+ phase relationship in the general plasma membrane compartment in a titratable manner (average lag time 23 \u00b1 2 s, n = 56).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that AC8 overexpression reversed the out-of-phase cAMP-Ca2+ phase relationship in a titratable manner, where the percentage of in-phase oscillating cells correlated with increasing amounts of co-transfected AC8 (average lag time 23 \u00b1 2 s, n = 56) (Figure 2e, Figure 2\u2014figure supplement 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 2e and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "64e8a521-7f3f-4adb-860d-36c9eaf23f9c",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C30",
+      "claim": "AKAP150 molecules are organized in clusters with a mean radius of 127 \u00b1 9 nm and an average nearest-neighbor spacing of 313 \u00b1 20 nm between cluster centers (n = 20).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AKAP150 molecules were organized in clusters with a mean radius of 127 \u00b1 9 nm and an average nearest-neighbor spacing of 313 \u00b1 20 nm between cluster centers (n = 20) (Figure 3a and Figure 3\u2014figure supplement 1), consistent with several recent reports demonstrating AKAP79/150's tendency to form nanoclusters in other cell types (Mo et al., 2017; Purkey et al., 2018; Tajada et al., 2017; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from STORM imaging shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "b246b78b-5ea6-4f89-80f6-92aa3130fa31",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C31",
+      "claim": "AC8 distributes non-uniformly at the plasma membrane and forms clusters with a mean radius of 88 \u00b1 8 nm and an average nearest-neighbor spacing of 292 \u00b1 16 nm between cluster centers (n = 16).",
+      "claim_type": "EXPLICIT",
+      "source": "We found AC8 also distributes non-uniformly at the plasma membrane and forms clusters with a mean radius of 88 \u00b1 8 nm and an average nearest-neighbor spacing of 292 \u00b1 16 nm between cluster centers (n = 16) (Figure 3b; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from STORM imaging shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "d0f5cd67-833d-4525-b947-d0f1902e943c",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C32",
+      "claim": "72% of AKAP150 localizations were co-clustered with AC8 localizations.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to measure the degree of colocalization between AKAP150 and AC8 nanoclusters, we also performed 2-color STORM and observed 72% of AKAP150 localizations were co-clustered with AC8 localizations, suggesting the presence of AKAP150:AC8 co-clustered nanodomains (Figure 3\u2014figure supplement 2a\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from 2-color STORM imaging shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "fbc0127c-7797-4637-8ea2-8fd087b95ea7",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C33",
+      "claim": "AC8 diffuses slowly at the membrane with an apparent diffusivity of 0.019 \u00b1 0.002 \u03bcm2/s and an average immobile fraction of approximately 42.3% (n = 16).",
+      "claim_type": "EXPLICIT",
+      "source": "Next, to determine the mobility of AC8 molecules within the timescale of the oscillatory circuit's period, we performed Fluorescence Recovery After Photobleaching (FRAP) with EGFP-tagged AC8 and found AC8 diffuses slowly at the membrane, and that there exists a significant immobile fraction (DAC8 = 0.019 \u00b1 0.002 \u03bcm2/s, avg. % immobile = 42.3%, n = 16) (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from FRAP experiments shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "65385dee-856d-4c99-8b1d-417be70e060c",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C34",
+      "claim": "Overexpression of the AC81-106 peptide led to a decrease in the percentage of AC8 single-molecule localizations within AC8 nanoclusters (n = 9).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, STORM imaging showed that overexpression of the AC81-106 peptide led to a decrease in the percentage of AC8 single-molecule localizations within AC8 nanoclusters (n = 9) (Figure 5a), consistent with the predicted redistribution of AC8 molecules (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by STORM imaging data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "21f44b41-942b-442e-a464-75332653d0d8",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C35",
+      "claim": "Overexpression of AC81-106 resulted in a significant increase in the average lag time between cAMP and Ca2+ at the AKAP79/150 compartment (43 \u00b1 6 s, n = 33).",
+      "claim_type": "EXPLICIT",
+      "source": "To test the impact of loss of AC8 molecules from the nanoclusters on the oscillation phase, we measured AKAP79/150-localized cAMP in the presence of AC81-106 and observed a significant increase in the average lag time (43 \u00b1 6 s, n = 33) (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "041ac7d3-aa2a-43a5-95c0-92b6bc0bc6b5",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C36",
+      "claim": "Cells expressing the AC81-106 peptide had a 39 \u00b1 4% reduction in PLA signals compared to non-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The disruption of the AKAP150:AC8 interaction was validated using a proximity ligation assay (PLA) to visualize the AKAP150:AC8 interaction in situ. Compared to non-transfected cells, cells expressing the AC81-106 peptide had a 39 \u00b1 4% reduction in the PLA signals, indicating a decrease in the AKAP150:AC8 interaction (Figure 5\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from PLA experiments shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "8dca570d-c4a0-43aa-b5b3-383250481347",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C37",
+      "claim": "PKA activity oscillates with a lag time of 25 \u00b1 6 s (n = 15) within the AKAP79/150 compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon TEA stimulation, PKA activity was observed to oscillate with a lag time of 25 \u00b1 6 s (n = 15) within the AKAP79/150 compartment but with a lag time of 55 \u00b1 8 s (n = 12) (Figure 6\u2014figure supplement 1b\u2013e) at the general plasma membrane, indicating that the compartmentalized phase relationship is preserved from cAMP to PKA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "a9cc3df9-b496-407f-80a8-5edfed5fcb5e",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C38",
+      "claim": "PKA activity oscillates with a lag time of 55 \u00b1 8 s (n = 12) at the general plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon TEA stimulation, PKA activity was observed to oscillate with a lag time of 25 \u00b1 6 s (n = 15) within the AKAP79/150 compartment but with a lag time of 55 \u00b1 8 s (n = 12) (Figure 6\u2014figure supplement 1b\u2013e) at the general plasma membrane, indicating that the compartmentalized phase relationship is preserved from cAMP to PKA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "ef1a3790-0876-4d1a-8a18-93a29806e5d5",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C39",
+      "claim": "Expression of the AC81-106 disruptor peptide was correlated with a significant decrease in the peak ratio between the second Ca2+ peak and the first Ca2+ peak (control average \u22121.6%, n = 270; AC81-108 average \u221210.8%, n = 562).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that the expression of the disruptor peptide was correlated with a significant decrease in the peak ratio between the second Ca2+ peak and the first Ca2+ peak (control average \u22121.6%, n = 270; AC81-108 average \u221210.8%, n = 562) post TEA addition, indicative of less sustained oscillations (Figure 6b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 6b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "557f8a84-df5c-4a18-97bb-43c61f012026",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C40",
+      "claim": "In the presence of the AC81-106 disruptor peptide, cells exhibited a longer elapsed time between oscillatory Ca2+ peaks (control average 3.9 \u00b1 0.1 min, n = 270; AC81-108 average 4.6 \u00b1 0.1 min, n = 562).",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of the disruptor peptide, cells also exhibited a longer elapsed time between oscillatory Ca2+ peaks (control average 3.9 \u00b1 0.1 min, n = 270; AC81-108 average 4.6 \u00b1 0.1 min, n = 562), suggesting that the timing of the signaling circuit was disturbed (Figure 6b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 6b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "2cde9c38-5a7e-43e1-99d8-af73933cfc95",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C41",
+      "claim": "There is a positive correlation between the percentage of cells exhibiting irregular oscillations and the expression level of the AC81-106 disruptor peptide (42% for low-expressing vs. 68% for high-expressing AC81-106 disruptor).",
+      "claim_type": "EXPLICIT",
+      "source": "By stratifying the disruptor peptide-expressing cell population into 'low, 'medium,' and 'high' expressers and performing a blinded classification of responding cells based on the regularity of the Ca2+ oscillation (see Appendix 1 for details), we found a positive correlation between the percentage of cells exhibiting irregular oscillations and the expression level of the disruptor peptide (42% for low-expressing vs. 68% for high-expressing AC81-106 disruptor) (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding supported by data shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "b1b4f234-e895-4e72-bad5-924c3b189845",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C42",
+      "claim": "The compartmentalized cAMP-Ca2+ phase relationship regulates the oscillatory Ca2+ signal and plays an important role in determining the pace, regularity, and sustainability of the Ca2+ oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data signify that the compartmentalized cAMP-Ca2+ phase relationship regulates the oscillatory Ca2+ signal and plays an important role in determining the pace, regularity, and sustainability of the Ca2+ oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results showing effects of phase disruption on Ca2+ oscillation properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "a2b91990-3dc4-4f48-a838-ef583cde3687",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C43",
+      "claim": "Human AKAP79 and rodent AKAP150 share only 53% sequence identity overall.",
+      "claim_type": "EXPLICIT",
+      "source": "Although human AKAP79 and the rodent AKAP150 share only 53% sequence identity overall, the interaction motifs and association between the AKAP scaffold and other key signaling players such as PKA, the voltage-gated calcium channel, adenylyl cyclases, and calcineurin are highly conserved (Willoughby et al., 2010; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about the sequence similarity between AKAP79 and AKAP150.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "ef9587e6-843a-4903-83af-baba2dc16a2c",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C44",
+      "claim": "The interaction motifs and association between the AKAP scaffold and other key signaling players such as PKA, the voltage-gated calcium channel, adenylyl cyclases, and calcineurin are highly conserved between AKAP79 and AKAP150.",
+      "claim_type": "EXPLICIT",
+      "source": "Although human AKAP79 and the rodent AKAP150 share only 53% sequence identity overall, the interaction motifs and association between the AKAP scaffold and other key signaling players such as PKA, the voltage-gated calcium channel, adenylyl cyclases, and calcineurin are highly conserved (Willoughby et al., 2010; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "e29f2d01-192c-46b4-b617-dfb12cf1e1c1",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C45",
+      "claim": "The functional equivalence of AKAP79 and AKAP150 has been demonstrated in several reciprocal knock-out and recovery experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional equivalence of AKAP79 and AKAP150 has been demonstrated in several reciprocal knock-out and recovery experiments in which AKAP79 or AKAP150 was knocked out and expression of the other was shown to rescue a measured phenotype (Hoshi et al., 2005; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "35f36287-d8e6-4c9e-828e-4716858efeea",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C46",
+      "claim": "The phase in an oscillatory signaling circuit represents a novel mode of informational encoding for which the phase itself can be spatiotemporally regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological oscillations represent a rich way of encoding information using the amplitude and frequency. Here, we show the phase in an oscillatory signaling circuit represents a novel mode of informational encoding for which the phase itself can be spatiotemporally regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "289f2829-08c4-4b33-ba94-8ff3b97cd936",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C47",
+      "claim": "Localized perturbation of the spatial phase signature disrupts global Ca2+ oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Localized perturbation of this spatial phase signature disrupts global Ca2+ oscillations and thus has far-reaching consequences on the functional landscape of the \u03b2 cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data showing effects of phase perturbation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "9e76b7e6-89fb-4a11-a890-05208e53b629",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C48",
+      "claim": "The generation of local cAMP gradients around single enzymes appears unfeasible given the measured kinetic rates of most ACs and PDEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the measured kinetic rates of most ACs and PDEs, the generation of local cAMP gradients around single enzymes appears unfeasible (Conti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "5dbe80b5-fdb9-4f56-a123-c32d31a8bbd1",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C49",
+      "claim": "Context-dependent discrepancies in kinetics and slower cAMP diffusion due to buffering have been shown to be important for cAMP compartmentalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Context-dependent discrepancies in some of the kinetics (i.e. differences between in vitro and in vivo measurements) and slower cAMP diffusion due to buffering have been shown to be important for cAMP compartmentalization (Bock et al., 2020; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "dd2a2ad6-c1e3-4fc4-bb58-15c3ba2d5972",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C50",
+      "claim": "Approximately 15\u2013150 individual AC8 molecules comprise AKAP150:AC8 nanoclusters.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our rough estimates, approximately 15\u2013150 individual AC8 molecules comprise AKAP150:AC8 nanoclusters (see Materials and methods for STORM-based estimation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on STORM imaging analysis described in the Materials and methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "607b645c-4bcc-401e-a0ab-fe0d2ccd37de",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C51",
+      "claim": "Increasing the number of AC8 molecules leads to a reduction of the noise in the cAMP response.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also noted that increasing the number of AC8 molecules leads to a reduction of the noise in the cAMP response. Thus, we predict that tuning AC8 cluster size might be a biological design strategy of nanoclusters to maintain accurate responses to perturbations (Figure 6\u2014figure supplement 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from stochastic simulations shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "74e866c6-3e72-43ec-b486-5e300c0cc018",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C52",
+      "claim": "PKA has been shown to phosphorylate CaV1.2 in an AKAP79/150-dependent manner, and this modification can influence the open probability of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, PKA has been shown to phosphorylate CaV1.2 in an AKAP79/150-dependent manner, and this modification can influence the open probability of the channel (Murphy et al., 2014), suggesting a mechanistic link between local cAMP/PKA activity and global oscillatory Ca2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "5ec81899-9324-477e-b3ce-190f18b228ee",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C53",
+      "claim": "Localized cAMP/PKA signaling at the AKAP79/150 scaffold might play a critical role in regulating insulin secretion due to close interactions between AKAP79/150 and insulin secretory granules via CaV1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Localized cAMP/PKA signaling at the AKAP79/150 scaffold and the in-phase oscillations of cAMP and Ca2+ within this compartment might play a critical role in regulating insulin secretion due to close interactions between AKAP79/150 and insulin secretory granules via CaV1.2 (Barg et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on known interactions, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "f88d56d8-6c26-4c41-9939-c65f7cea6471",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C54",
+      "claim": "PKA-dependent mobilization of granules is an important process in insulin secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Several important processes and components of the secretory machinery have been identified as targets of PKA signaling here, such as PKA-dependent mobilization of granules (Renstr\u00f6m et al., 1997) and modulation of the synaptosomal protein SNAP25 (Gao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "de23e287-4c2f-4fc1-98ef-997a9b12f2dc",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C55",
+      "claim": "cAMP has been implicated to play a direct role in fusion pore formation via the cAMP-regulated guanine exchange factor Epac.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to PKA-dependent secretory control, cAMP has recently been implicated to play a direct role in fusion pore formation via the cAMP-regulated guanine exchange factor Epac (Gu\u010dek et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "808d0137-753a-4bc6-b273-5e2099780e74",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C56",
+      "claim": "The nanoscale organization of key cAMP effectors and regulators is a novel mechanism for cAMP compartmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose the nanoscale organization of key cAMP effectors and regulators as a novel mechanism for cAMP compartmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on experimental and computational findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "2d3ad4d3-37c2-47ad-925e-1d66ed3d6752",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C57",
+      "claim": "Compartmentalized cAMP can emerge from the clustering of many relatively immobile AC8 enzymes at the membrane and bulk distribution of PDE1 in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the slow rates measured for individual ACs, we computationally and experimentally describe conditions in which the generation of compartmentalized cAMP can emerge from the clustering of many relatively immobile AC8 enzymes at the membrane and bulk distribution of PDE1 in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by both computational modeling and experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "df83927d-6048-4fff-ab80-f59e0852888e",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C58",
+      "claim": "Alterations to the nanoscale organization of AC8 and PDE1 lead to dysregulated Ca2+ oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations to this nanoscale organization lead to dysregulated Ca2+ oscillations, demonstrating the functional importance of maintaining this organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data showing effects of disrupting nanoscale organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "1eb81946-d13a-427d-84f1-116f56e92ee4",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "claim_id": "C59",
+      "claim": "A cell can translate a global signal (Ca2+) into a compartmentalized signal (cAMP/PKA activity) by local activation and global inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This system also serves as a nanoscale demonstration of how a cell can translate a global signal (Ca2+) into a compartmentalized signal (cAMP/PKA activity) by local activation and global inhibition, a strategy that is likely utilized in many other cellular contexts (Levchenko et al., 2000; Purvis and Lahav, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle inferred from the study's findings, supported by citations to related work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2cf1cf20-185b-462e-93d4-690e96a4d069",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "cAMP oscillations exhibit distinct phase relationships with Ca2+ oscillations in different subcellular compartments. Within the AKAP79/150 compartment, cAMP oscillates in-phase with Ca2+ (lag time 13\u00b13 s, n=60), whereas in the general plasma membrane compartment, cAMP oscillates out-of-phase with Ca2+ (lag time 47\u00b14 s, n=24). This spatial compartmentalization of phase relationships was confirmed within single cells using dual-color sensors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 provide converging experimental evidence from targeted biosensors showing spatially distinct phase relationships between cAMP and Ca2+ oscillations. The quantitative measurements are supported by appropriate sample sizes (n=60, n=24, n=25) and visual data in Figures 1c-e and Figure 1\u2014figure supplement 2. The use of both compartment-specific and dual-sensor approaches strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "f4072886-2ced-4f5c-a860-8dbb209d1d38",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PDE1 is the key phosphodiesterase that couples Ca2+ and cAMP oscillations in the \u03b2 cell signaling circuit. Acute inhibition of PDE1 with 8MM-IBMX (100 \u03bcM) uncoupled cAMP dynamics from Ca2+ oscillations (n=18), while inhibition of PDE3 or PDE4 had no effect on cAMP-Ca2+ coupling or phase relationship.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 demonstrate through pharmacological inhibition experiments that PDE1 specifically mediates cAMP-Ca2+ coupling. The selectivity is established by showing that PDE3 and PDE4 inhibitors do not affect the phase relationship (C25), while PDE1 inhibition disrupts it (C23). Sample sizes are adequate (n=18, n=12, n=15) and supported by Figure 2b and Figure 2\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "d2471c08-3dfb-4022-aedd-648f0dccae39",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The cAMP-Ca2+ phase relationship can be tuned by altering the relative balance between Ca2+-sensitive AC8 and PDE activities. Computational modeling predicted this tunability, which was experimentally validated: AC8 knockdown shifted the AKAP79/150 compartment to out-of-phase oscillations (lag time 37\u00b19 s, n=11), while AC8 overexpression reversed the plasma membrane compartment to in-phase oscillations in a dose-dependent manner (lag time 23\u00b12 s, n=56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 demonstrate strong agreement between computational predictions and experimental validation. The bidirectional manipulation (knockdown and overexpression) provides robust evidence for AC8's role in phase regulation. The dose-dependent effect of AC8 overexpression (Figure 2\u2014figure supplement 2) further supports the tunability claim. Sample sizes are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "bcfab6be-821b-4f06-ad4c-c847c15edd0a",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AKAP150 and AC8 form nanoclusters at the plasma membrane with specific spatial organization. AKAP150 clusters have a mean radius of 127\u00b19 nm with 313\u00b120 nm spacing (n=20), while AC8 clusters have a mean radius of 88\u00b18 nm with 292\u00b116 nm spacing (n=16). Two-color STORM revealed 72% of AKAP150 localizations co-cluster with AC8. AC8 exhibits slow diffusion (0.019\u00b10.002 \u03bcm\u00b2/s) with ~42% immobile fraction (n=16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 provide quantitative super-resolution imaging data characterizing the nanoscale organization of AKAP150 and AC8. The measurements are supported by appropriate STORM imaging analysis (Figures 3a-b, supplements) and FRAP experiments. The co-clustering analysis using Getis-Franklin statistics provides rigorous spatial correlation data. Sample sizes are adequate for super-resolution studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "e507a218-866e-4d4d-9d71-cc8fd8d445e8",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Disruption of the AKAP150:AC8 interaction by overexpressing the AC8\u00b9\u207b\u00b9\u2070\u2076 peptide redistributes AC8 from nanoclusters and reverses the phase relationship at the AKAP79/150 compartment. STORM imaging showed decreased AC8 clustering (n=9), PLA assays confirmed 39\u00b14% reduction in AKAP150:AC8 interaction, and functional measurements revealed increased lag time to 43\u00b16 s (n=33), indicating a shift to out-of-phase oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 provide multi-modal validation of the disruption strategy: structural (STORM), biochemical (PLA), and functional (phase measurements). The convergence of these independent approaches strongly supports the conclusion that AKAP150:AC8 interaction is necessary for maintaining the in-phase relationship. Sample sizes are adequate and data are shown in Figure 5 and supplements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "99e30943-063b-4a0e-b28c-cc6bad6ccaa9",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PKA activity oscillations preserve the compartmentalized phase relationship observed for cAMP. Within the AKAP79/150 compartment, PKA activity lags Ca2+ by 25\u00b16 s (n=15), while at the general plasma membrane, PKA activity lags Ca2+ by 55\u00b18 s (n=12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 demonstrate that the spatial phase compartmentalization extends from cAMP to its downstream effector PKA. The measurements using AKAR4 biosensors targeted to different compartments show consistent phase differences. Sample sizes are adequate and data are supported by Figure 6\u2014figure supplement 1. This extends the mechanistic understanding of the signaling circuit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "fe295de4-c1e2-4dfe-956b-d6268c118676",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Disruption of the AKAP150:AC8 interaction and the associated phase relationship impairs Ca2+ oscillation properties. Expression of the AC8\u00b9\u207b\u00b9\u2070\u2076 disruptor peptide decreased the second-to-first Ca2+ peak ratio (control -1.6% vs. disruptor -10.8%, n=270 vs. 562), increased interpeak timing (control 3.9\u00b10.1 min vs. disruptor 4.6\u00b10.1 min), and increased irregular oscillations in a dose-dependent manner (42% low vs. 68% high expression). These data indicate the compartmentalized phase relationship regulates Ca2+ oscillation pace, regularity, and sustainability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 demonstrate functional consequences of phase disruption on Ca2+ dynamics. The large sample sizes (n=270 control, n=562 disruptor) provide statistical power. The dose-dependent effect on oscillation regularity (C41) strengthens the causal link. Multiple Ca2+ parameters (amplitude, timing, regularity) are affected, supporting the broad regulatory role claimed in C42. Data are shown in Figure 6b-d.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "7db6f55d-5d96-44ae-ad2c-ad563e035660",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Nanodomain clustering of AC8 enzymes at the membrane, combined with bulk distribution of PDE1 in the cytoplasm, generates compartmentalized cAMP with distinct phase relationships. This nanoscale organization represents a novel mechanism for cAMP compartmentation that overcomes the slow catalytic rates of individual enzymes. Alterations to this organization lead to dysregulated Ca2+ oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C56-C58 synthesize the major mechanistic finding of the study. The conclusion is supported by convergent evidence from super-resolution imaging (C30-C33), computational modeling (Figure 4), and functional perturbation experiments (C34-C42). The mechanism explains how slow individual enzyme kinetics can generate compartmentalized signals through spatial organization, addressing a key question in the field (C48-C49).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "d5012d5a-adc9-4d91-9095-8019d0d784ad",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The relative phase within the Ca2+-cAMP-PKA oscillatory circuit represents a novel mode of informational encoding that is spatiotemporally regulated. Disruption of the precise phase relationship perturbs Ca2+ oscillations, suggesting phase encodes specific functional information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C46-C47 present the conceptual advance of the study. The conclusion that phase represents a regulatory parameter is supported by: (1) demonstration of spatial phase compartmentalization (C18-C22), (2) identification of molecular mechanisms controlling phase (C27-C36), and (3) functional consequences of phase disruption (C39-C42). The inference that phase encodes information is reasonable given the functional effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "33d396ed-ae1d-49e3-9cb3-292d5b3f5447",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "AKAP150:AC8 nanoclusters contain approximately 15-150 AC8 molecules. Stochastic simulations predict that increasing AC8 molecule number reduces noise in the cAMP response, suggesting cluster size tuning may be a biological strategy for maintaining accurate signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C50 provides a rough estimate with wide range (15-150 molecules) based on STORM imaging assumptions about labeling stoichiometry, introducing significant uncertainty. Claim C51 is explicitly labeled as a prediction from stochastic simulations (Figure 6\u2014figure supplement 2) without experimental validation. While the modeling is reasonable, the lack of experimental verification of the noise-reduction hypothesis and the uncertainty in molecule counts limit confidence in this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "09d8a5a2-ce13-42f1-b5d7-85385a2f8aff",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AKAP79/150 organizes a macromolecular complex including PKA, CaV1.2, PKC, calcineurin, Ca2+-sensitive ACs, and other signaling proteins. Knockout of AKAP79/150 impairs glucose-stimulated insulin secretion in pancreatic \u03b2 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 describe established prior knowledge supported by appropriate citations (Gold et al., 2011; Hinke et al., 2012). These claims provide important context for the study's hypothesis but represent background information rather than new findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "64bfa802-422e-4c1b-95a7-43fa05e5bc9b",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Human AKAP79 and rodent AKAP150 share 53% overall sequence identity, but interaction motifs with key signaling proteins (PKA, CaV1.2, ACs, calcineurin) are highly conserved. Functional equivalence has been demonstrated in reciprocal knockout-rescue experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 describe established knowledge about AKAP79/150 orthologs, supported by appropriate citations. This information justifies the use of human AKAP79 constructs in mouse MIN6 cells but represents background rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "d86cf824-9c58-414e-911e-48c7bf2a3669",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PKA phosphorylates CaV1.2 in an AKAP79/150-dependent manner, influencing channel open probability. Localized cAMP/PKA signaling at AKAP79/150 may regulate insulin secretion through interactions with secretory granules. PKA-dependent processes in secretion include granule mobilization and SNAP25 modulation, while cAMP also acts via Epac in fusion pore formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 is supported by citation (Murphy et al., 2014). However, C53 is explicitly speculative ('might play a critical role'), and C54-C55 describe prior work from other studies. While these claims provide plausible mechanistic context for the functional importance of the phase relationship, they do not represent direct findings from this study and lack experimental validation in this system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "699ba730-100d-4f57-a095-2e643ad1170a",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The \u03b2 cell Ca2+-cAMP-PKA system demonstrates how cells can translate a global signal (Ca2+) into a compartmentalized signal (cAMP/PKA activity) through local activation and global inhibition, a strategy likely utilized in other cellular contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 presents a general principle inferred from the study's findings, supported by citations to related work (Levchenko et al., 2000; Purvis and Lahav, 2013). The local activation (AC8 in clusters) and global inhibition (PDE1 throughout cytoplasm) mechanism is well-demonstrated by the experimental data. The extrapolation to other systems is reasonable but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "ba30e35e-327b-4b12-bab6-760079a1aa3e",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "cAMP and Ca2+ are essential second messengers that regulate multiple cellular pathways and oscillate in certain cell types including \u03b2 cells, where Ca2+ oscillations drive pulsatile insulin secretion. Both messengers are spatially compartmentalized, with Ca2+ controlled by channels/pumps/buffers and cAMP regulated by ACs and PDEs, though mechanisms of cAMP spatial constraint remain incompletely understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C15 provide established background knowledge supported by appropriate citations. These claims accurately describe the current understanding of Ca2+ and cAMP signaling and identify the knowledge gap (C15) that motivates the study. This represents context rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "f505e024-5cd9-40f8-ac30-9c7261fc29b9",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "In \u03b2 cells, Ca2+, cAMP, and PKA exist in an oscillatory circuit characterized by a high degree of feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 describes established knowledge about the \u03b2 cell signaling circuit, providing context for the study. This is background information rather than a new finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    },
+    {
+      "id": "6d31f9a1-2f7f-45b5-8604-d9601f8d80d2",
+      "content_id": "00eca52b-c569-46da-9ddf-206c31656b64",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Generation of local cAMP gradients around single enzymes appears unfeasible given measured kinetic rates of ACs and PDEs. However, context-dependent kinetic discrepancies and slower cAMP diffusion due to buffering have been shown important for cAMP compartmentalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 describe prior knowledge from the literature (supported by citations to Conti et al., 2014; Bock et al., 2020; Zhang et al., 2020) that provides important context for why the nanocluster mechanism is significant. This represents background rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:42.822473Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "acdcb723-fbfc-4ca3-9ac3-b607074b8afe",
+      "result_id": "2cf1cf20-185b-462e-93d4-690e96a4d069"
+    },
+    {
+      "claim_id": "2cef0af6-264e-452e-aa06-020f50f7da3b",
+      "result_id": "2cf1cf20-185b-462e-93d4-690e96a4d069"
+    },
+    {
+      "claim_id": "cbdb6e87-ee4d-4472-9107-573c056b1516",
+      "result_id": "2cf1cf20-185b-462e-93d4-690e96a4d069"
+    },
+    {
+      "claim_id": "e572f4dd-324f-4e74-b549-981d3d2d9332",
+      "result_id": "2cf1cf20-185b-462e-93d4-690e96a4d069"
+    },
+    {
+      "claim_id": "b262f0ba-8291-4cf6-97c3-ff7f248bc503",
+      "result_id": "2cf1cf20-185b-462e-93d4-690e96a4d069"
+    },
+    {
+      "claim_id": "704e2dec-f2e9-4079-9eec-5489a93f4072",
+      "result_id": "f4072886-2ced-4f5c-a860-8dbb209d1d38"
+    },
+    {
+      "claim_id": "919fb539-3e05-41fc-8266-cd6005a1cac8",
+      "result_id": "f4072886-2ced-4f5c-a860-8dbb209d1d38"
+    },
+    {
+      "claim_id": "8db7d8e1-6736-43ba-87a5-63b914a2e427",
+      "result_id": "f4072886-2ced-4f5c-a860-8dbb209d1d38"
+    },
+    {
+      "claim_id": "e1b4800b-b506-4a23-8365-28a7b60fa660",
+      "result_id": "f4072886-2ced-4f5c-a860-8dbb209d1d38"
+    },
+    {
+      "claim_id": "c5f83834-28f3-420a-82a4-1b8770c0afb1",
+      "result_id": "d2471c08-3dfb-4022-aedd-648f0dccae39"
+    },
+    {
+      "claim_id": "9dcfd5a5-6a06-48ff-b8b0-75e1f4ecd38f",
+      "result_id": "d2471c08-3dfb-4022-aedd-648f0dccae39"
+    },
+    {
+      "claim_id": "37b1dcdd-6a42-4568-bca0-d56502726f86",
+      "result_id": "d2471c08-3dfb-4022-aedd-648f0dccae39"
+    },
+    {
+      "claim_id": "64e8a521-7f3f-4adb-860d-36c9eaf23f9c",
+      "result_id": "bcfab6be-821b-4f06-ad4c-c847c15edd0a"
+    },
+    {
+      "claim_id": "b246b78b-5ea6-4f89-80f6-92aa3130fa31",
+      "result_id": "bcfab6be-821b-4f06-ad4c-c847c15edd0a"
+    },
+    {
+      "claim_id": "d0f5cd67-833d-4525-b947-d0f1902e943c",
+      "result_id": "bcfab6be-821b-4f06-ad4c-c847c15edd0a"
+    },
+    {
+      "claim_id": "fbc0127c-7797-4637-8ea2-8fd087b95ea7",
+      "result_id": "bcfab6be-821b-4f06-ad4c-c847c15edd0a"
+    },
+    {
+      "claim_id": "65385dee-856d-4c99-8b1d-417be70e060c",
+      "result_id": "e507a218-866e-4d4d-9d71-cc8fd8d445e8"
+    },
+    {
+      "claim_id": "21f44b41-942b-442e-a464-75332653d0d8",
+      "result_id": "e507a218-866e-4d4d-9d71-cc8fd8d445e8"
+    },
+    {
+      "claim_id": "041ac7d3-aa2a-43a5-95c0-92b6bc0bc6b5",
+      "result_id": "e507a218-866e-4d4d-9d71-cc8fd8d445e8"
+    },
+    {
+      "claim_id": "8dca570d-c4a0-43aa-b5b3-383250481347",
+      "result_id": "99e30943-063b-4a0e-b28c-cc6bad6ccaa9"
+    },
+    {
+      "claim_id": "a9cc3df9-b496-407f-80a8-5edfed5fcb5e",
+      "result_id": "99e30943-063b-4a0e-b28c-cc6bad6ccaa9"
+    },
+    {
+      "claim_id": "ef1a3790-0876-4d1a-8a18-93a29806e5d5",
+      "result_id": "fe295de4-c1e2-4dfe-956b-d6268c118676"
+    },
+    {
+      "claim_id": "557f8a84-df5c-4a18-97bb-43c61f012026",
+      "result_id": "fe295de4-c1e2-4dfe-956b-d6268c118676"
+    },
+    {
+      "claim_id": "2cde9c38-5a7e-43e1-99d8-af73933cfc95",
+      "result_id": "fe295de4-c1e2-4dfe-956b-d6268c118676"
+    },
+    {
+      "claim_id": "b1b4f234-e895-4e72-bad5-924c3b189845",
+      "result_id": "fe295de4-c1e2-4dfe-956b-d6268c118676"
+    },
+    {
+      "claim_id": "58c553ee-3012-46ca-91c6-04107b894369",
+      "result_id": "7db6f55d-5d96-44ae-ad2c-ad563e035660"
+    },
+    {
+      "claim_id": "ca35a172-68b9-4a21-abdc-be36e2c07fab",
+      "result_id": "7db6f55d-5d96-44ae-ad2c-ad563e035660"
+    },
+    {
+      "claim_id": "808d0137-753a-4bc6-b273-5e2099780e74",
+      "result_id": "7db6f55d-5d96-44ae-ad2c-ad563e035660"
+    },
+    {
+      "claim_id": "2d3ad4d3-37c2-47ad-925e-1d66ed3d6752",
+      "result_id": "7db6f55d-5d96-44ae-ad2c-ad563e035660"
+    },
+    {
+      "claim_id": "df83927d-6048-4fff-ab80-f59e0852888e",
+      "result_id": "7db6f55d-5d96-44ae-ad2c-ad563e035660"
+    },
+    {
+      "claim_id": "c0865a90-ad87-40ac-b907-b43e295f7073",
+      "result_id": "d5012d5a-adc9-4d91-9095-8019d0d784ad"
+    },
+    {
+      "claim_id": "9389257c-7c73-46de-bfe8-d196f5bb3c13",
+      "result_id": "d5012d5a-adc9-4d91-9095-8019d0d784ad"
+    },
+    {
+      "claim_id": "35f36287-d8e6-4c9e-828e-4716858efeea",
+      "result_id": "d5012d5a-adc9-4d91-9095-8019d0d784ad"
+    },
+    {
+      "claim_id": "289f2829-08c4-4b33-ba94-8ff3b97cd936",
+      "result_id": "d5012d5a-adc9-4d91-9095-8019d0d784ad"
+    },
+    {
+      "claim_id": "dd2a2ad6-c1e3-4fc4-bb58-15c3ba2d5972",
+      "result_id": "33d396ed-ae1d-49e3-9cb3-292d5b3f5447"
+    },
+    {
+      "claim_id": "607b645c-4bcc-401e-a0ab-fe0d2ccd37de",
+      "result_id": "33d396ed-ae1d-49e3-9cb3-292d5b3f5447"
+    },
+    {
+      "claim_id": "71f81411-51cc-4c80-aa38-a4cf2486df03",
+      "result_id": "09d8a5a2-ce13-42f1-b5d7-85385a2f8aff"
+    },
+    {
+      "claim_id": "79421d9e-211c-41ef-a880-e1fc5db488e8",
+      "result_id": "09d8a5a2-ce13-42f1-b5d7-85385a2f8aff"
+    },
+    {
+      "claim_id": "a2b91990-3dc4-4f48-a838-ef583cde3687",
+      "result_id": "64bfa802-422e-4c1b-95a7-43fa05e5bc9b"
+    },
+    {
+      "claim_id": "ef9587e6-843a-4903-83af-baba2dc16a2c",
+      "result_id": "64bfa802-422e-4c1b-95a7-43fa05e5bc9b"
+    },
+    {
+      "claim_id": "e29f2d01-192c-46b4-b617-dfb12cf1e1c1",
+      "result_id": "64bfa802-422e-4c1b-95a7-43fa05e5bc9b"
+    },
+    {
+      "claim_id": "74e866c6-3e72-43ec-b486-5e300c0cc018",
+      "result_id": "d86cf824-9c58-414e-911e-48c7bf2a3669"
+    },
+    {
+      "claim_id": "5ec81899-9324-477e-b3ce-190f18b228ee",
+      "result_id": "d86cf824-9c58-414e-911e-48c7bf2a3669"
+    },
+    {
+      "claim_id": "f88d56d8-6c26-4c41-9939-c65f7cea6471",
+      "result_id": "d86cf824-9c58-414e-911e-48c7bf2a3669"
+    },
+    {
+      "claim_id": "de23e287-4c2f-4fc1-98ef-997a9b12f2dc",
+      "result_id": "d86cf824-9c58-414e-911e-48c7bf2a3669"
+    },
+    {
+      "claim_id": "1eb81946-d13a-427d-84f1-116f56e92ee4",
+      "result_id": "699ba730-100d-4f57-a095-2e643ad1170a"
+    },
+    {
+      "claim_id": "0ed03d4d-25b2-4dbc-9f7e-f2f97dc5c4f1",
+      "result_id": "ba30e35e-327b-4b12-bab6-760079a1aa3e"
+    },
+    {
+      "claim_id": "bfe0fa2d-2fba-4864-a5c4-7964decb3852",
+      "result_id": "ba30e35e-327b-4b12-bab6-760079a1aa3e"
+    },
+    {
+      "claim_id": "a14dc6c9-4120-4d0e-8ed4-d54c47bed530",
+      "result_id": "ba30e35e-327b-4b12-bab6-760079a1aa3e"
+    },
+    {
+      "claim_id": "a15e44b4-276c-438f-b5f6-b1a17553350b",
+      "result_id": "ba30e35e-327b-4b12-bab6-760079a1aa3e"
+    },
+    {
+      "claim_id": "54b4dcfa-1e21-49dd-b2ac-747bc7a82e75",
+      "result_id": "ba30e35e-327b-4b12-bab6-760079a1aa3e"
+    },
+    {
+      "claim_id": "0645b8be-f831-4f3d-ba63-d08456b07bab",
+      "result_id": "ba30e35e-327b-4b12-bab6-760079a1aa3e"
+    },
+    {
+      "claim_id": "ac8f0c46-981c-4665-923c-c4f5bf58cab2",
+      "result_id": "ba30e35e-327b-4b12-bab6-760079a1aa3e"
+    },
+    {
+      "claim_id": "a45b6716-f8bf-43d8-a67b-184f363aa73c",
+      "result_id": "ba30e35e-327b-4b12-bab6-760079a1aa3e"
+    },
+    {
+      "claim_id": "249bcba9-f850-4b51-8b41-f7e831840e7f",
+      "result_id": "ba30e35e-327b-4b12-bab6-760079a1aa3e"
+    },
+    {
+      "claim_id": "1b86b3f7-5ada-451c-b008-b9e5cb42eb5c",
+      "result_id": "ba30e35e-327b-4b12-bab6-760079a1aa3e"
+    },
+    {
+      "claim_id": "ee1e052c-b46c-48ff-adeb-e2a9eac2f2e6",
+      "result_id": "f505e024-5cd9-40f8-ac30-9c7261fc29b9"
+    },
+    {
+      "claim_id": "9e76b7e6-89fb-4a11-a890-05208e53b629",
+      "result_id": "6d31f9a1-2f7f-45b5-8604-d9601f8d80d2"
+    },
+    {
+      "claim_id": "5dbe80b5-fdb9-4f56-a123-c32d31a8bbd1",
+      "result_id": "6d31f9a1-2f7f-45b5-8604-d9601f8d80d2"
+    }
+  ],
+  "comparisons": []
+}

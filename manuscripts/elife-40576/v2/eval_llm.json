@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C66",
+      "C67",
+      "C80",
+      "C81"
+    ],
+    "result": "GreB binds both core and \u03c370RNAP with KD = 10 \u00b1 1 nM, approximately 10-fold tighter than previously estimated and 10-fold tighter than its binding to elongation complexes (ECs). This tight binding was measured using three independent approaches: FCS, single-molecule kinetics, and fraction arriving/departing with DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33, C66-C67, and C80-C81 collectively demonstrate tight GreB binding through multiple independent experimental methods (FCS, CoSMoS kinetics, and DNA binding/departure analysis). The measurements are internally consistent across methods (Table 1), include appropriate controls (C33, C91, C92), and demonstrate that labeling does not affect binding affinity. The comparison to prior literature and to EC binding is well-supported by citations and data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C82",
+      "C83"
+    ],
+    "result": "GreB and DksA inhibit rrnB P1 transcription initiation with identical effects when measured at equivalent fractional RNAP occupancy. At 10 nM GreB (KD concentration), initiation rate was reduced ~4-fold. The ~10-fold difference in potency on a concentration basis is fully explained by the difference in binding affinities (GreB KD ~10 nM vs DksA KD ~100 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C82-C83 demonstrate equivalent inhibitory effects of GreB and DksA when normalized for RNAP occupancy, supported by direct measurements in Figure 2 and Table 2. The mechanistic interpretation (C37) that the potency difference is due solely to binding affinity differences is well-supported by the quantitative agreement between predicted and observed effects. Controls demonstrate NTP and RNAP dependence (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "GreB arrives at and departs from the rrnB P1 promoter only in complex with \u03c370RNAP. At 10 nM GreB, only 3.5 \u00b1 0.9% of RNAP\u2022DNA complexes recruited GreB after RNAP binding to DNA. More than 90% of RNAP\u2022GreB\u2022DNA complexes ended with simultaneous departure of both proteins. The extent of GreB inhibition is quantitatively determined by GreB occupancy of free holoenzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C44, and C58-C60 are strongly supported by direct single-molecule observations in three-color CoSMoS experiments (Figure 3). The fraction of RNAP arriving with GreB matches predictions based on equilibrium binding (C39, Figure 3C). The low rate of GreB recruitment to promoter complexes (C40) and high rate of simultaneous departure (C42, Figure 3D) are quantitatively measured with appropriate randomized controls. Photobleaching controls validate the measurements (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C52"
+    ],
+    "result": "GreB does not alter initial RNAP-promoter binding (ka) or closed complex stability/dissociation rates, but instead blocks a step after conformational rearrangement of the initial RNAP-promoter complex, such as isomerization to open complex or subsequent nucleotide addition reactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C45-C47, C51-C52 are supported by direct measurements showing no significant change in ka (Figure 3E, Table 3) or dwell times (Figure 3F, Table 3) in the presence of GreB or DksA. The conclusion that SCFs act at a later step is a logical inference from the observation that inhibition occurs without affecting these early steps. The interpretation is consistent with prior proposals about DksA mechanism (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54"
+    ],
+    "result": "GreB-RNAP complexes never initiated transcription at the rrnB P1 promoter. In four-color CoSMoS experiments with NTPs present, zero of 39 productive initiation events involved RNAP that arrived with GreB bound, while ~50% of non-productive RNAP binding events involved GreB-bound RNAP. This indicates that GreB presence introduces an effectively insurmountable barrier to initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48-C50, C53-C54 are strongly supported by direct observations in four-color CoSMoS experiments (Figure 4). The striking observation that 0/39 productive events involved GreB-bound RNAP while hundreds of non-productive events did (C48-C49) provides compelling evidence for the mechanism. The conclusion that the barrier is insurmountable on the timescale of rrnB P1 complex lifetimes (C54) is a reasonable inference from these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C78",
+      "C79"
+    ],
+    "result": "GreB and DksA function by a 'delayed inhibition' mechanism in which SCF binding to free RNAP prevents initiation at later steps. rRNA promoters are selectively inhibited because their short-lived RNAP complexes do not allow sufficient time for SCF dissociation. On promoters with longer-lived complexes, SCF dissociation would prevent inhibition and allow stimulatory effects to dominate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C55-C57, C61-C64, C78-C79 present a mechanistic model well-supported by the experimental observations. The 'delayed inhibition' mechanism (C78-C79) is directly supported by the data showing GreB arrives with RNAP and blocks later steps. The explanation for promoter selectivity based on complex lifetime (C6, C63) is a logical inference from the observations, supported by citation to prior work showing rRNA promoters are short-lived (C61). The speculation about long-lived promoters (C62, C64) is appropriately qualified and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C77"
+    ],
+    "result": "Competition between SCFs for binding to free \u03c370RNAP in solution determines which SCFs are most important for rRNA transcription regulation. The tight binding of GreB to holoenzyme allows it to compete with elongation complexes for GreB binding, and transcription factor binding to free \u03c370RNAP is the critical factor determining SCF importance in inhibiting rRNA initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C68-C70, C77 present mechanistic interpretations well-supported by the experimental data. The conclusion that competition for free RNAP determines SCF importance (C65, C70, C77) follows logically from the observations that GreB arrives only with RNAP and that occupancy determines inhibition. The inference that holoenzyme can compete with ECs for GreB (C69) is supported by the measured binding affinities. Claim C70 appropriately cites prior work proposing this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The relative importance of GreB and DksA in growth-rate dependent regulation is uncertain. Equilibrium occupancy depends on unbound SCF concentrations, which are unknown. The two proteins may have redundant functions, but millimolar ppGpp during stringent response may selectively promote DksA binding, making DksA the dominant regulator during amino acid starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C74 acknowledge important uncertainties and limitations. C71 correctly identifies that unbound SCF concentrations are unknown, limiting conclusions about in vivo competition. C72 appropriately qualifies the speculation about redundancy and notes difficulties in interpreting genetic data. C73-C74 are speculations based on prior work but lack direct experimental support in this study. These claims appropriately identify areas requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Single-molecule kinetic measurements reveal biexponential dwell time distributions for GreB on RNAP, indicating distinct short- and long-lived binding classes. Only 11% of GreB interactions achieve the long-lived state, but the cause of this heterogeneity is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by direct observations in Figure 1\u2014figure supplement 2D,F and quantitative analysis in Table 1. The biexponential distribution is clearly evident in the data, and the calculation of the 11% fraction (C76) is explicitly described. The acknowledgment that the cause is 'obscure' appropriately identifies a limitation in understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The experimental system uses surface-tethered rrnB P1 DNA templates, fluorescently labeled RNAP and GreB, and oligonucleotide probes to detect transcription initiation. Multiple controls validate that labeling does not affect function, photobleaching is negligible, and probe binding is specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C98 describe the experimental design and validation controls. The methods are clearly described with appropriate detail (C84-C87, C93-C97). Multiple controls validate the approach: probe binding requires NTPs and RNAP (C88), photobleaching is negligible (C91), labeled proteins function like unlabeled proteins (C92, C98), and labeling efficiencies are quantified (C95-C97). These methodological claims are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on RNAP structure, SCF families, GreB and DksA functions, stringent response, and growth rate-dependent control. The mechanism for growth rate-dependent control by SCFs and the point in the transcription cycle at which SCFs load onto RNAP were previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C26 provide established background knowledge supported by appropriate citations. Claims C27-C28 correctly identify gaps in prior knowledge that the study addresses. These background claims appropriately contextualize the work and are well-supported by the literature.",
+    "result_type": "MINOR"
+  }
+]

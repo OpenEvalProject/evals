@@ -1,0 +1,1854 @@
+{
+  "submission": {
+    "id": "310b77fb-741b-4d25-8b35-c608af515d1f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:51:50.381266Z",
+    "updated_at": "2025-12-02T10:51:50.381266Z"
+  },
+  "content": [
+    {
+      "id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "submission_id": "310b77fb-741b-4d25-8b35-c608af515d1f",
+      "content_type": "manuscript",
+      "content_text": "# Elastic instability during branchial ectoderm development causes folding of the Chlamydosaurus erectile frill\n\n## Authors\n\n- Sophie A Montandon<sup>1</sup>\n- Anamarija Fofonjka<sup>1</sup>\n- Michel C Milinkovitch<sup>1</sup> ([ORCID: 0000-0002-2553-0724](https://orcid.org/0000-0002-2553-0724)) \u2020\n\n### Affiliations\n\n1. Laboratory of Artificial & Natural Evolution (LANE), Department of Genetics & Evolution University of Geneva Geneva Switzerland\n2. SIB Swiss Institute of Bioinformatics Geneva Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe study the morphogenesis and evolutionary origin of the spectacular erectile ruff of the frilled dragon (Chlamydosaurus kingii). Our comparative developmental analyses of multiple species suggest that the ancestor of Episquamata reptiles developed a neck fold from the hyoid branchial arch by preventing it to fully fuse with posterior arches. We also show that the Chlamydosaurus embryonic neck fold dramatically enlarges and its anterior surface wrinkles, establishing three convex ridges on each lobe of the frill. We suggest that this robust folding pattern is not due to localised increased growth at the positions of the ridges, but emerges from an elastic instability during homogeneous growth of the frill skin frustrated by its attachment to adjacent tissues. Our physical analog experiments and 3D computational simulations, using realistic embryonic tissue growth, thickness and stiffness values, recapitulate the transition from two to three ridges observed during embryonic development of the dragon\u2019s frill.\n\n## Introduction\n\nLizards can exhibit moveable skin folds at various locations of their body, such as the wings of the flying dragon (Draco volans), the oral display frill of the \u2018secret toadhead agama\u2019 (Phrynocephalus mystaceus), and the dewlap of many anole lizard species (Anolis spp.). Here, we investigate the evolutionary developmental origin of the distinctive large erectile ruff (Figure 1A,B) of the emblematic Australian/New-Guinean frilled dragon (Chlamydosaurus kingii). This animal spreads its spectacular neck frill for predator deterrence, territorial display and courtship (Shine, 1990). Figure 1C illustrates that the ventral sides of the ruff are supported by the two ceratobranchial I bones (CBI) of the hyoid apparatus (Beddard, 1905) and the dorsal sides are held by the so-called \u2018Grey\u2019s cartilages\u2019 (De Vis, 1883). Erection of the frill is caused by the coordinated movements of the CBI bones and Grey\u2019s cartilages and requires the opening of the mouth.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig1-v1.jpg)\n\n**Figure 1.:** (A) Erected and (B) folded frill of a juvenile (11 months old) frilled dragon. The left and right lobes of the frill each presents 3 pairs of convex ridges (cyan lines), two pairs of valley folds (green lines); the two lobes are joined at a central crease (white line). (C) The CBI\u00a0+\u00a0EB and \u2018Grey\u2019s cartilage\u2019 (yellow line in A) are embedded in the third convex ridge (cyan star in A) and the dorsal side of the frill, respectively. (D) Adult hyoid apparatus treated with alcian blue (staining cartilage) and alizarin red (staining bone). \u2018EP\u2019: entoglossal process, \u2018HH\u2019: hypohyal, \u2018CH\u2019: ceratohyal, \u2018EH\u2019: epihyal, \u2018CBI\u2019: ceratobranchial I, \u2018EB\u2019: epibranchial, \u2018CBII\u2019: ceratobranchial II. The central and anterior parts of the hyoid apparatus and first pair of horns (HH\u00a0+CH\u00a0+ EH) originate from the second branchial arch (BA2), whereas the second (CBI\u00a0+\u00a0EB) and third (CBII) horns originate from the BA3 and BA4, respectively. (E) CT scan of an adult female (yellow, hyoid apparatus; red, skull and vertebrae); dashed lines indicate the approximate position of histological sections in Figure 2.\n\nAlthough their primary function in tetrapods is associated with deglutition, the bones of the hyoid apparatus are also involved in a variety of specialised morphologies and functions such as improved lung ventilation through gular pumping in monitor lizards (Bels et al., 1995; Owerkowicz et al., 1999), extension of the throat in bearded dragons (Throckmorton et al., 1985) and of the dewlap in Anolis lizards (Bels, 1990; Font and Rome, 1990), tongue projection in chameleons (Herrel et al., 2001), as well as tongue extension and shock absorption in woodpeckers (Yoon and Park, 2011). In reptiles, the central part of the hyoid apparatus, anteriorly prolonged by an entoglossal process (EP; Figure 1C\u2013D), is associated to three pairs of horns (Bellairs and Kamal, 1981). The first pair is composed of the hypohyal (HH), ceratohyal (CH) and epihyal (EH). The second pair is made of the CBI and epibranchial (EB), while the third pair of horns consists of the ceratobranchial II (CBII). During embryogenesis, the hyoid apparatus develops from the pre-cartilage (mesenchyme condensation of neural crest origin) of three branchial arches (BA): the hyoid arch (i.e., the second BA\u00a0=\u00a0BA2) contributes to the development of the central and anterior parts of the hyoid body as well as the first pair of horns, whereas the third and fourth BAs (BA3 and BA4) generate the second and third pairs of horns, respectively (Bellairs and Kamal, 1981; Creuzet et al., 2005; Kaufman and Bard, 1999; K\u00f6ntges and Lumsden, 1996).\n\nContrary to that of the hyoid skeletal elements, the morphogenesis of the frill soft tissues and of the \u2018Grey\u2019s cartilage\u2019 are unknown. Here, using computed-tomography and histology approaches, we first show that the highly-developed CBI bones of the frilled dragon are localised into the third (most dorsal) skin ridge of the frill and that the \u2018Grey\u2019s cartilage\u2019 is not made of cartilage per se, but is a dense connective tissue mainly composed of collagen fibres. Second, our comparative developmental analyses indicate that the existence of a spectacular frill in Chlamydosaurus was made possible by the incomplete fusion of the BA2 with the cardiac eminence and posterior BAs, an evolutionary event that probably occurred at the origin of Episquamata reptiles. This event allowed most members of that lineage to exhibit a conspicuous neck fold (although it was lost in chameleons, snakes and legless lizards) that develops from the hyoid BA (BA2). Hence, the Chlamydosaurus frill is a dramatic outgrowth of the hyoid arch ectoderm.\n\nFinally, using 3D reconstruction, analyses of proliferation and computational simulations, we show that the very robust folding pattern of the Chlamydosaurus frill (all individuals develop three ridges on each of the two lobes of the frill) is not due to localised increased growth at the position of the ridges, but likely emerges from an elastic instability during the homogeneous growth of the anterior sheet frustrated by the underlying tissues and by its attachment to the neck. This physical (mechanical) process also explains the transition from two to three ridges observed during embryonic development of the dragon frill.\n\n## Results\n\n### The morphology of the frill\n\nThe frill of Chamydosaurus is a large and sagitally-symmetric piece of skin attached to the neck and head. The left and right lobes of the frill are connected ventrally by a central crease (white line if Figure 1A). When erected, following the movements of the mandible, hyoid bones and Grey\u2019s cartilages, the frill forms a flat disc positioned in a transversal plane (Figure 1A). At rest, each lobe of the frill always pleats into three convex ridges and two concave folds, in addition to the central concave crease (Figure 1B). We confirmed by computed-tomography (CT) that the lower part of the frill is supported by hypertrophied CBI bones (Beddard, 1905). Unlike in other agamid lizards, such as Pogona spp (Throckmorton et al., 1985), where the CBIs are fully enclosed in the throat and do not extend further than the end of the lower jaw, the frilled dragon\u2019s straight and much elongated CBIs have most of their length positioned into the frill (Figure 1C). Skeleton staining and paraffin sections indicate that the frilled dragon CBI bones are ossified whereas other parts of the hyoid apparatus remain cartilageneous (Figures 1D and 2A\u2013F). Anteriorly, the CBIs are attached to the posterior part of the hyoid body within the throat (Figure 2A) and are surrounded by muscles. More distally, the CBIs separate from the throat to become incorporated into the third ridge of each lobe of the frill (Figure 2E\u2013F). In its free part, the frill consists of two sheets of skin linked by loose connective tissue (Figure 2G,H), with the anterior sheet being longer than the posterior sheet at the positions of the convex ridges (Figure 2F,H).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig2-v1.jpg)\n\n**Figure 2.:** Approximate positions of the transverse sections are indicated in Figure 1E. (A) The ceratobranchials I (CBI) are attached to the cartilaginous hyoid body (Hb) and (B) become ossified when they detached from the hyoid body, while the CBII remain cartilaginous. (C,D) The \u2018Grey\u2019s cartilage\u2019 (black arrowheads) is situated close to the tympanic membrane and its proximal end is attached to muscles (white arrowhead in D). (E) The CBI incorporates within the 3rd ridge. (F) The frill detaches from the throat and forms three convex ridges (arrowheads) and two concave folds (arrows). (G,H) Close-ups of anterior (as) and posterior (ps) skin sheets of panel F: as and ps have similar lengths in the two concave folds (G) whereas as is longer than ps in the three convex ridges (H). (I,J) Root of the Grey\u2019s cartilage (close-up of D): stained deep blue by alcian blue, hematoxylin and eosin (I), but dull-blue by alcian blue and MgCl2 (J), which indicates the presence of weakly-sulphated GAGs. (K,L) The Grey's cartilage does not contain elastic fibres (otherwise it would be stained blue-black in K by the \u2018elastic stain kit\u2019), but is rich in collagen fibres that are stained red by the \u2018elastic stain kit\u2019 (K) and by Sirius Red (L). Lower panels in I-L show cell-resolution closeups of intervertebral fibrocartilage. (M) Under polarised light, Sirius Red staining reveals a majority of thick fibres at the vicinity of the epidermis (left panel) and a mix of thin and thick fibres deeper in the tissue (right panel). Scale bars\u00a0=\u00a02 mm.\n\nThe Grey\u2019s cartilages (black arrowhead in Figure 2C\u2013E) connect the dorsal part of the frill to each side of the head at the vicinity of the tympanic membrane. The proximal end of the Grey\u2019s cartilage is strongly attached to muscles (Figure 2D), the digastric, the attolens chlamydis and the adductor chlamydis, that allow for the movement of the upper part of the frill (De Vis, 1883). We used staining techniques to investigate further the nature of the Grey\u2019s cartilage, described previously as \u2018fibro-cartilagenous' (De Vis, 1883). As Alcian blue strongly stains the structure in the absence (Figure 2C\u2013E,I), but not in the presence (Figure 2J), of MgCl2, it is likely to contain weakly-sulphated glycosaminoglycans (GAGs) rather than keratan sulphates (Bancroft, 2002; Scott and Dorling, 1965); the latter are characteristic components of true cartilage. Elastic staining does not reveal elastic fibres (Figure 2K), while \u2018Sirius Red\u2019 staining indicates the presence of collagen fibres (Figure 2L). As, under polarised light, thick and thin collagen fibres appear orange-red and green-yellow, respectively (Rich and Whittaker, 2005), we could infer that fibres are thick at the surface of the \u2018cartilage\u2019 (near the epidermis, Figure 2M, left panel) whereas they are heterogeneous in size deeper in the structure (Figure 2M, right panel).\n\n### Morphogenesis of the Chlamydosaurus neck frill\n\nWe investigated the dragon's frill morphogenesis across pre-hatching development. Around embryonic day 23 (E23\u00a0=\u00a023 days post-oviposition), the early frill is visible as a swollen skin outgrowth in the ventral portion of the neck above the heart cavity and shoulders (Figure 3A). Between E24 and E30, the frill splits into right and left lobes, the central ventral crease becomes visible, and the latero-dorsal side of the outgrowth reaches the tympanic membrane (Figure 3B). At the end of that period (Figure 3C), two ridges become clearly visible on the anterior surface of each lobe while the latero-dorsal part grows towards the back of the head, beyond the tympanic membrane. Between E30 and E40, a third ridge forms (Figure 3D). At E45, the basic morphology of the frill is established: the anterior side of each lobe has grown substantially and exhibits three expanded anterior ridges while the lateral side of the frill now extends well beyond the tympanic membrane (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig3-v1.jpg)\n\n**Figure 3.:** Left and right columns are frontal and lateral views of the same embryo; E\u00a0=\u00a0days post-oviposition; grey dotted lines: frill outline and convex ridges. (A) At about E23, the developing frill is visible as a smooth skin outgrowth. (B) At E28, the central crease (inset) is clearly visible and the dorsal side of the frill extends to the tympanic membrane (asterisks in all right panels). (C) At E30, two convex pleats are visible on each lobe of the frill and the dorsal side extends beyond the tympanic membrane. (D) At E40, three pleats are visible. (E) At E45 the morphogenesis of the frill is mostly achieved. Although no pleat is visible in simple bright field microscopy at E28, episcopic microscopy indicates that low amplitude folding has already started at that stage. The insets in C, D, and E show the folding of the anterior surface of the frill at the position of the corresponding red line. Scale bars: 2 mm.\n\nOur dissections of embryos at earlier stages indicate that the skin outgrowth generating the early development of the frill in Chlamydosaurus is present at E15 but is hidden behind the heart cavity. We investigate below this early outgrowth in the context of the branchial arches (BA) development.\n\n### Incomplete fusion of BA2 allows the development of a neck skin fold in Episquamata and of the frill in Chlamydosaurus\n\nAround E6-E7, the four first BAs (BA1 to BA4) are visible (Figure 4A) on Chlamydosaurus embryos while the BA6 is hidden behind the developing heart and is only discernible on parasagittal sections (Figure 4B). In amniotes, the posterior part of the BA2 (hyoid arch) has been called an \u2018embryonic opercular flap\u2019 because it grows, expands caudally and covers the posterior BAs. Eventually, the BA2 fuses to the cardiac eminence, causing the internalisation of the BAs 3 to 6 (Richardson et al., 2012). In the frilled dragon, the posterior BAs internalise around E11 (Figure 4C,D) and are not discernible anymore at E15-E16 (Figure 4E,F). However, here we observe that part of the frilled dragon's BA2 (arrowhead in Figure 4F and G) does not fuse to the cardiac eminence, forming the early frill behind the heart (Figure 4G) before intensively growing (Figure 4H,I). Hence, we show here that, in Chlamydosaurus, the frill originates from the outgrowth of the BA2 that failed to completely fuse with posterior BAs and the neck.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig4-v1.jpg)\n\n**Figure 4.:** (A) At developmental stage 30 (based on Wise et al., 2009, that\u00a0is E6-7 in Chlamydosaurus) the BA2, BA3, and BA4 are situated behind the hearth cavity and (B) the BA6 is only visible on parasagittal sections. Inset of B: schematic diagram of branchial arches organisation in land vertebrate embryos. (C,D) At stages 30\u201331 (about E11), the BA2 is still externally visible while the more posterior branchial arches are internalised. (E,F) At stage 32, (i.e., about E15-16), a portion of BA2 (arrowhead) does not fuse with the cardiac eminence. (G,H,I) At later developmental stages (stages 32\u201333, 34, and 36, that\u00a0is about E18, E24, and E29, respectively), the unfused portion of BA2 (arrowheads) intensively grows and generates the frill. \u2018BA1\u2019 to \u2018BA6'=branchial arches 1 to 6; \u2018heart\u2019=heart cavity; 'max'=maxillary process; \u2018ov\u2019=otic vesicle. Note that the first branchial arch (BA1) generates the mandibular process (\u2018mand\u2019). Scale bars\u00a0=\u00a0500 \u03bcm.\n\nWe then studied the internalisation of BAs in other species of squamates. We identify the presence of an incompletely fused BA2 for an extended period of embryonic development in all species investigated (Figure 5): the leopard gecko (Eublepharis macularius), the ocellated lizard (Timon lepidus), the veiled chameleon (Chamaeleo calyptratus), and the bearded dragon (Pogona vitticeps). The maintenance of the BA2 eminence throughout pre- and post-hatching development in the ocellated lizard and bearded dragon is responsible for the formation of a clearly visible neck fold (Figure 5F,H and Figure 5\u2014figure supplement 1A\u2013F). In the leopard gecko and veiled chameleon, the incompletely fused BA2 will remain visible up to at least developmental stages 34 (following developmental staging system of Wise et al., 2009) but will eventually fuse with the neck at later stages (Figure 5\u2014figure supplement 1G\u2013L), explaining that these species do not exhibit a conspicuous neck fold (Figure 5E,G).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig5-v1.jpg)\n\n**Figure 5.:** Phylogenetic tree (based on Zheng and Wiens, 2016) of Sauropsida and sagittal sections revealing the presence of an embryonic opercular flap (arrowheads) in (A) Eublepharis macularius, leopard gecko (stage 32), (B) Timon lepidus, ocellated lizard (stage 33), (C) Chamaeleo calyptratus, veiled chameleon (stage 32), and (D) Pogona vitticeps, bearded dragon (E10). In adults, a neck skin fold is (E) absent in the leopard gecko, (F) present in the ocellated lizard, (G) absent in the veiled chameleon, and (H) present in the bearded dragon. As, to our knowledge, no species of Gekkota and Scinciformata exhibit a neck fold, the most parsimonious phylogenetic mapping is that the neck fold evolved in the ancestor of Episquamata (thick green branch) and was subsequently lost (red branches) in the morphologically highly-derived snakes (Serpentes), Chameleonidae, and various legless lizards. The green check marks indicate presence of a character confirmed by our direct observations, whereas grey marks indicate expectation on the basis of the parsimony argument. Red crosses indicate the absence of a character. 'Mand\u2019=mandibular arch, \u2018heart\u2019=heart cavity.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Lateral views (left panels) and sagittal sections (right panels) of (A\u2013C) Ocellated lizard (Timon lepidus), (D\u2013F) Bearded dragon (Pogona vitticeps), (G\u2013I) Leopard gecko (Eublepharis macularius), and (J\u2013L) Veiled chameleon (Chamaeleo calyptratus). Scale bars\u00a0=\u00a0500 \u00b5m, \u2018mand'=mandibular arch, \u2018BA2\u2019=hyoid arch, \u2018BA3\u2019 to \u2018BA6\u2019=third to sixth branchial arches, arrowhead\u00a0=\u00a0embryonic opercular flap.\n\nGiven that (i) the opercular flap (BA2) fuses with the cardiac eminence in non-squamate amniotes such as birds and mammals (at stages E6 and E10 for the chicken and the mouse, respectively), (ii) all Squamata lineages we investigated exhibit an unfused opercular flap for some period of their development, and (iii) many species of Episquamata exhibit a neck skin fold (cf. green lineages in Figure 5), the most parsimonious evolutionary scenario (Figure 5) is that the opercular flap forms in all amniotes but it\u2019s complete fusion was abolished at the origin of the Episquamata clade, that\u00a0is after the divergence of the more ancestral lineages of Gekkota and Scinciformata. This event allowed the development of a neck skin fold in the ancestor of Episquamata, a morphological feature that was secondary lost (cf. red lineages in Figure 5) in chameleons, snakes and various legless lizards. The neck fold was then developed and modified into a spectacular erectile neck ruff during the evolution of the frilled dragon.\n\n### The Chlamydosaurus frill ridges are generated by an elastic instability\n\nThe folding pattern of the dragon's frill is robust: the left and right lobes of the frill each pleats into three convex ridges and two concave folds (Figure 1A,B). In the two concave folds, the anterior and posterior skin sheets have similar lengths (Figure 2F,G) whereas the anterior skin sheet is substantially longer than the posterior skin sheet in the three convex ridges (Figure 2F,H). This morphology indicates that the convex ridges impose the frill to pleat at these positions, inevitably causing the concave folds to also occur.\n\nTo investigate the origin of the pre-folded pattern, we first tested whether they are generated by local increased proliferation. Indeed, if the anterior surface of the developing frill exhibited six lines of increased growth (three on the left lobe and three on the right lobe) superposed to the future location of the ridges, it would explain that the frill folds exactly there because the anterior skin sheet would become locally larger than the posterior skin sheet (Figure 2F,H). Such a pattern of localised growth could be controlled by a corresponding pattern of morphogen gradients generated by a Turing-like (reaction-diffusion) mechanism or by unknown positional information. Hence, we used the mitotic marker phospho-Histone H3 (pH3) to quantify proliferation across the frill while and after ridges are formed. Our analyses indicated (i) similar cell densities (of about 0.02 cell per \u03bcm2) and proliferation during and after ridges formation, and (ii) no notable difference in proliferation at the location versus in between ridges (Figure 6). Although these proliferation analyses are limited by the low number of embryos at our disposal, the data generated does not hint at any obvious proliferation spatial patterning.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig6-v1.jpg)\n\n**Figure 6.:** Quantification of nuclei and of pH3-labelled cells (phospho-histone H3, a mitotic marker) (A) before and (B,C) during the formation of ridges on the Chalmydosaurus embryonic frill. White squares: positions of the surface of tissue investigated by confocal microscopy; z-stacks were generated and the number of nuclei and of pH3-labelled nuclei were counted (values are indicated in the tables on the right; numbers in red and blue are highest and lowest values, respectively).\n\nThis leaves us with the possibility that the ridges of the dragon's frill are generated mechanically by frustrated homogeneous growth. Indeed, recent analyses have demonstrated the importance of mechanical instabilities in morphogenesis (Nelson, 2016). For example, uniform growth of the gut at a rate larger than that of the anchoring dorsal mesenteric sheet is sufficient to quantitatively explain the gut looping morphogenesis into the body cavity of vertebrates (Savin et al., 2011). Similarly, it has been suggested that the folding of the developing cerebral cortex in mammals is caused by expansion of the grey matter constrained by the more-slowly developing white matter (Karzbrun et al., 2018; Richman et al., 1975; Tallinen et al., 2016).\n\nUsing 3D measurements on frilled dragon embryos at various developmental stages, we observe that the linear dimension of the frill surface (square root of the area) increases approximately 1.3 fold relative to the length of the frill boundary attached to the neck (Figure 7). This observation is compatible with a physical (mechanical) morphogenesis process where homogeneous growth of the frill\u2019s anterior skin sheet, frustrated by a boundary condition (its attachment to the neck), generates an elastic instability that resolves into the formation of three anterior convex ridges on each lobe of the dragon's frill. In other words, contrary to the folding of the brain, which is geometrically constrained all over its surface, the frill might be folding during development because of a \u2018curtain-instability process\u2019, similar to the wrinkling of gravity-induced draping (Cerda et al., 2004; Vandeparre et al., 2011) where self-similar wrinkled patterns are generated under boundary confinement.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig7-v1.jpg)\n\n**Figure 7.:** (A) Eosin staining of an HREM slice at E36 shows the sharp difference in contrast between the frill's skin (red double arrow in inset) and the underlying loose connective tissue. (B) 3D reconstruction of the frill obtained by stacking HREM slices. The central crease is marked in green, the outer boundary in blue, the inner boundary (attached to the neck) in black, and the area of the frill in light orange. The approximate position of the slice in panel A is indicated by the red plane. (C) Average skin thickness measured at different developmental stages (horizontal axis: E\u00a0=\u00a0days post-oviposition); error bars represent one standard deviation intervals (skin thickness varies at different places of the frill) for the embryo at the corresponding stage. The thickness value used in our simulations is represented by the average (dashed line) among the seven measurements. (D) Three-dimensional measurements among different parts of the frill between E22 and E36 (one embryo per stage) indicate a linear surface growth g(s)\u22481.3, a central crease growth g(c)\u22482.2, and an outer free edge growth g(o)\u22481.0 during the developmental period when the ridges form (E23-32). Note that the growth values used at different developmental stages during our quasi-static simulations (Figure 10C) are derived from the linear fit to the linear surface data and the quadratic fit to the central crease data shown here.\n\nWe then construct a more complex model to assess if the folding pattern is additionally influenced by the attachment of the frill\u2019s anterior skin sheet to the underlying loose connective tissue. Below, we measure and implement realistic tissue physical parameters and growth rates into numerical simulations and physical analog experiments to test whether such models can quantitatively predict the robust folding pattern of the Chlamydosaurus dragon's frill.\n\n### Numerical simulations\n\nOur 3D numerical growth model, based on a custom finite element method (see Supplementary Methods), assumes that the two lobes of the frill grow independently and are symmetrical with respect to the central crease. We first use a thin semi-cylindrical geometry of thickness T and diameter L (Figure 8A) as a simplified model of the embryonic frill anterior surface. We model the frustrated growth of the sheet (i.e., the smaller growth rate of the edge attached to the neck relative to the growth rate of the frill) as follows: the length L of the sheet\u2019s straight edge is maintained constant while tangentially growing the rest of the structure. This simple model indicates that the number of ridges increases with the amount of expansion g (Figure 8B and Figure 8\u2014figure supplement 1), while it decreases with increasing relative thickness (T/L) of the sheet (Figure 8C and Figure 8\u2014figure supplement 1). To generate a more realistic geometry of the anterior surface of the frill, we apply a curved neck boundary and the presence of a central crease (Figure 8D). Using this geometrical configuration and a quasi-static approach, our simulations recapitulate the transition from two to three ridges observed during embryonic development: for T/L\u00a0=\u00a00.014 (i.e., the ratio between the average values of skin thickness and the neck boundary length measured on real embryos; Figure 7), each lobe of the frill exhibits two ridges when g reaches about 1.07 and three ridges when it exceeds 1.15 (Figure 8E and Video 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig8-v1.jpg)\n\n**Figure 8.:** (A) Semi-cylindrical model of diameter L and thickness T with fixed inner boundary and free outer boundary. (B) For a constant ratio T/L (=0.02), the number of ridges generated by uniform growth (g) increases with increasing value of g; (C) For a constant amount of growth (here, g\u00a0=\u00a01.2), the number of ridges is negatively correlated with the ratio T/L. (D) A more realistic geometry of the frill with a fixed circular inner boundary (representing the attachment to the neck) and a central crease. (E) Assuming that the central crease and the linear surface grow at the same rate, a quasi-static approach to homogeneous growth of the model shown in D generates two then three ridges; T/L\u00a0=\u00a00.014 and Poisson's ratio \u03bd\u00a0=\u00a00.45.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Geometry of the frill model before (red lines) and after (coloured model) growth. (B) Height distribution of the frill along a virtual circular slice (at the position of the free boundary in the initial configuration, that\u00a0is the dashed semi-circle in panel A projected in 2D as a function of \u03c6. The number of ridges (here, 2.5) is computed by averaging the number of local maxima (here, 3) and local minima (here, 2), whose distance to the centre of the frill (dashed yellow line) exceeds 75% of the frill thickness T. (C) For different values of uniform linear surface growth g, the number of ridges decreases linearly with an increasing sheet thickness (T). L\u00a0=\u00a0fixed boundary.\n\n![Video 1.](https://cdn.elifesciences.org/articles/44455/elife-44455-video1.mp4.jpg)\n\n**Video 1.:** Here we assume that the growth (g\u00a0=\u00a01.28 at the end of the simulation) experienced by the central crease and the surface are identical. Other model parameters are: T/L\u00a0=\u00a00.014 and Poisson's ratio \u03bd\u00a0=\u00a00.45.\n\nTo further test the single sheet model, we performed a physical analog experiment using a thin semi-cylindrical sheet of polydimethylsiloxane (PDMS) gel with a T/L value of 0.01 (Figure 9A) and constructed an equivalent computer model (Figure 9B). We fixed the PDMS sheet at its straight edge and used hexane to make it swell by about 30%. The resulting geometry (Figure 9C) is very similar to that obtained with our numerical simulations (Figure 9D): the swollen PDMS sheet exhibits three wrinkles with a wavelength that increases towards the free edge.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig9-v1.jpg)\n\n**Figure 9.:** (A) A PDMS sheet of thickness T\u00a0=\u00a00.94 mm (measured at 10 positions, standard deviation\u00a0=\u00a00.05 mm) and inner boundary length L\u00a0=\u00a084.62 mm is fixed between two pieces of wood to mimic the neck boundary of the frill. (B) Tetrahedral mesh model with a T/L ratio (0.01) and a Poisson's ratio (\u03bd\u00a0=\u00a00.45) similar to those of the PDMS analog shown in A. (C) After immersion in hexane (causing the swelling of the gel by a factor of 30%), the PDMS sheet forms three pleats as in (D) where the simulation mesh is grown a similar amount (g\u00a0=\u00a01.3) in all directions.\n\nNext, to investigate the influence of the substrate (loose connective tissue) on the resulting morphology, we generated a more complex model (Figure 10A) derived from the actual frill geometry obtained from a high-resolution episcopic microscopy (HREM) 3D reconstruction at E23, that\u00a0is a stage where the frill appears as a swollen skin outgrowth with no ridge (Figure 3A). As the thickness of the anterior skin sheet exhibits nearly constant values during the period of ridges formation (Figure 7C), we used its average value of 47 \u00b5m. By measuring 3D morphological features of the dragon\u2019s frill between E23 (i.e., when the anterior skin is smooth) and E32 (i.e., when the third ridge is clearly formed), we estimate: (i) the linear surface growth, that\u00a0is the expansion perpendicular to the surface normal of the frill to be g(s)\u22481.3; (ii) the central crease growth (in the direction C in Figure 10A) to be g(c)\u22482.2, and (iii) the outer free edge growth of the frill to be g(o)\u22481.0. All these values are relative to the length of the neck boundary (Figure 7D) and are used to grow our numerical model (Figure 10). Note that we assume the simulated materials to be nearly incompressible (Poisson\u2019s ratio v\u00a0=\u00a00.45), as suggested for biological soft tissues such as skin (Choi and Zheng, 2005; Hendriks et al., 2003; Khatyr et al., 2004). Our simulations show that the frill's surface indeed wrinkles and that the number of convex ridges decreases with the skin-to-substrate stiffness ratio (Figure 10B), as expected from the formula $\\lambda=2\\piT(\\mu_{K}/3\\mu_{s})^{1/3}$\u00a0(Kim et al., 2011; Wang et al., 2016) where \u03bb is the wrinkling wavelength of a compressed stiff film (here, the skin of thickness T and shear modulus \u00b5k) on a flat soft substrate (here, the loose connective tissue of shear modulus \u00b5s). As our simulations are performed on a curved geometry with fixed inner edge (attachment to the neck), they generate wrinkles that are less regular than those of flat film-substrate systems described by the above equation. For \u00b5k/\u00b5svalues\u00a0\u2264\u00a050, the wavelength predicted by the equation is larger but similar (within two standard deviations) to the mean wavelength generated in the corresponding simulations. The discrepancy increases substantially for larger \u00b5k/\u00b5s because the fixed inner edge in the simulated model increasingly prevents the wrinkles to \u2018repel\u2019 each others.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig10-v1.jpg)\n\n**Figure 10.:** (A) Computational model of the embryonic frill derived from measurements on a HREM 3D reconstruction of a E23 embryo's frill. The left, central and right panels show the model in dorsal, lateral and section views, respectively. The fixed inner boundary (attachment to the neck), central crease, and underlying loose connective tissue are indicated in black, purple, and green, respectively. Tangential growth is applied on the surface of the frill (anterior layer of skin indicated in pink and of thickness T\u00a0=\u00a047 \u00b5m) whereas the central crease is constrained to a plane and grows in the direction C. (B). Using this geometry and fixed relative growth (linear surface outer sheet growth g(s)=1.3 and central crease growth g(c)=2.2, both relative to the length of the neck boundary), we show that the number of ridges is inversely correlated with the skin-to-substrate stiffness ratio. Other simulation parameters are \u03bdskin = \u03bdsubstrate = 0.45. (C) Using a stiffness ratio Eskin/Esubstrate=100, with dynamics of frill surface growth (g(s), red curve) and of central crease growth (g(c), blue curve) derived from the actual morphogenesis of the frill in Chlamydosaurus embryos (Figure 7D), simulations recapitulate the transition from two to three ridges observed in real embryos. Because of their low amplitude, the two ridges present in embryos at stages E24-E28 are difficult to identify in bright field microscopy (Figure 3) but are easily detected by episcopic microscopy.\n\nNote also that actual growth and elastic deformations are superposed in our measurements on embryos. The elastic contribution is small: at steady state, we measure a linear surface relative growth of 1.27 for an actual growth of 1.3 (using a stiffness ratio of 100).\n\nCrucially, as our model generates three ridges for skin-to-substrate stiffness ratios in the range 65\u20131000 for g(s)=1.3, we need to evaluate if the actual value for the developing frill (i.e., the ratio between the stiffnesses of the frill's surface skin sheet and of the underlying loose connective tissue) is within that range. Elastic moduli reported throughout the literature indicate several orders of magnitude variation in stiffness among human tissues (Cox and Erler, 2011). Hence, we performed depth-dependent nanoindentation measurements (Figure 11 and Supplementary Methods) on fresh unfixed Chlamydosaurus embryos and inferred that the frill skin elastic modulus increases from 11\u2019440\u00a0\u00b1\u00a0200 Pa at E26 to 36\u2019880\u00a0\u00b1\u00a020 Pa at E45 (i.e., well in the 8\u2013540 kPa range reported for human skin [Iivarinen et al., 2014]), whereas the loose connective tissue modulus remains constant: 220\u00a0\u00b1\u00a07 Pa at E26 and 228\u00a0\u00b1\u00a014 Pa at E45. These numbers yield an increase of skin-to-substrate stiffness ratio from 52 to 162 during the development of the ridges. Note that a stiffness ratio of 52 at E26, that\u00a0is\u00a0smaller than the lower bound of the range 65\u20131000 required to generate three ridges, is not problematic because, at that stage, the frill grew only by g(s)=1.1 instead of g(s)=1.3. Implementing this smaller growth value (and a corresponding observed g(c)=1.5; Figure 10C) in our simulation model generates two ridges, as observed in real embryos. Finally, instead of applying the whole growth at once during numerical simulations, and checking the steady-state result, we also performed a quasi-static approach to progressively grow the HREM-derived realistic 3D model of the frill; skin-to-substrate stiffness ratio was set to 100 for convenience. These new simulations recapitulate the transition from two to three ridges observed during actual frill morphogenesis (Figure 10C, Video 2).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/44455/elife-44455-fig11-v1.jpg)\n\n**Figure 11.:** (A) Schematic representation of the hemisphere of influence of the micro-indenter. (B) Estimated Young\u2019s modulus E for skin thickness T\u00a0=\u00a047 \u03bcm, at two developmental stages E26 and E45 (one embryo each), as a function of indentation depth d. The values of Eskin and Esubstrate were estimated using an approach described in the Material and methods.\n\n![Video 2.](https://cdn.elifesciences.org/articles/44455/elife-44455-video2.mp4.jpg)\n\n**Video 2.:** Growth values g(s) and g(c) (indicated in the movie) are derived from the linear fit to the surface data and the quadratic fit to the central crease data, respectively (Figure 7D).\n\nIn principle, these semi-quantitative validations of our model could be reinforced by the comparisons of the amplitudes of the folds produced by the model with those observed on the developing embryos. The amplitudes of the middle ridge on the HREM reconstructions (104 \u03bcm at the end of the second ridge formation and 198 \u03bcm when the third ridge is formed) is larger than the corresponding amplitudes obtained with the numerical model (46 \u03bcm and 97 \u03bcm, respectively). This discrepancy remains even after normalisation: the corresponding relative amplitudes are 3.3% and 5.4% of the inner boundary (i.e., the attachment to the neck) in the HREM reconstructions versus 1.7% and 3.6% in the simulations. The significance of these differences is difficult to evaluate because the simulations are performed using elasticity parameters evaluated on fresh tissues, whereas 3D measurements were done on HREM reconstructions after fixation and dehydration of the samples. As tissue shrinkage due to dehydration can dissimilarly affect different tissues, the relative amplitudes measured on the fixed samples might not accurately reflect their real values. In addition, we use a strictly elastic model whereas the actual embryonic tissues might experience flow. A full quantitative analysis of folding in the frilled lizard would require live-imaging (e.g., with light-sheet microscopy), hence, the development of two techniques currently not available in reptiles: ex-ovo incubation (for imaging) and transgenesis (for fluorescent labelling of living tissues). Similarly, a better access and availability of Chlamydosaurus embryos would allow to perform controlled local tissue cutting experiments on multiple locations of the frill to measure the distribution of stress prior and during the development of the folds.\n\n## Discussion\n\nThe emblematic erectile ruff of the frilled dragon is a large and sagitally-symmetric piece of skin attached to the neck and the head. At rest, the frill pleats into three convex ridges and two concave folds while the animal can spread this structure by the coordinated movements of hyoid-derived hypertrophied CBI bone (incorporated in the most dorsal ridge) and the so-called \u2018Grey\u2019s cartilage\u2019 that we identify not to be bona fide cartilage.\n\nHere, we identify an ancient evolutionary developmental event that paved the way to the much more recent evolution of the spectacular Chlamydosaurus frill. Indeed, by comparing the embryonic development of representatives of the Squamata lineage, we suggest that the ancestor of Episquamata (Figure 5) lost the ability to completely fuse the hyoid branchial arch (BA2) with the cardiac eminence and posterior BAs, allowing for the transformation of this 'embryonic opercular flap' into a conspicuous neck fold. The latter was subsequently lost in chameleons, snakes as well as various legless lizards, while it hypertrophied in Chlamydosaurus.\n\nSecond, by producing and analysing embryonic series of frill dragons, we show that wrinkles form in the developing frill\u2019s anterior skin, establishing a pattern of three convex ridges that, later in development, allow the structure to robustly fold when rested along the animal's neck. Third, using histological data, analysis of proliferation, physical analogs and computational models, we suggest that the convex ridges are generated by an elastic instability rather than by local increased proliferation patterned by signalling morphogen gradients or positional information. Indeed, we show that homogeneous growth of the embryonic frill's anterior surface is sufficient to robustly produce on each lobe of the frill, first two then three convex ridges when the frill's growth is frustrated by its attachment to the neck. Finally, numerical simulations, implementing (i) a more realistic morphology (inferred from HREM 3D reconstructions) of the embryonic frill, incorporating the shape of it's skin and connective tissue substrate, (ii) measured mechanical parameters of Chlamydosaurus embryonic tissues, and (iii) a realistic growth model derived from embryonic series, indicate that the development of two ridges, and the later transition to three ridges, can be explained by a mechanical process that does not require any pre-patterning.\n\n## Materials and methods\n\n### Animals\n\nFrilled dragons breed in the wild during the wet season from November to December (Harlow and Shine, 1999; Shine and Lambeck, 1989). In captivity, we obtained a mean number of 12.8 eggs per year per female. The incubation of frilled dragon\u2019s eggs is about 90 days at 29.5\u00b0C, that\u00a0is substantially longer than in its close relative bearded dragon (Pogona vitticeps, 60 days). Maintenance of, and experiments on animals were approved by the Geneva Canton ethical regulation authority (authorisations GE/82/14, GE/73/16, and GE/27/19) and performed according to Swiss law. These guidelines meet international standards.\n\n### Computed-tomography of skeletal elements\n\nComputed-tomography scans were performed with a Skyscan-1076 microCT at a resolution of 35 \u03bcm (source: 55 kV, 179 \u03bcA). Three-dimensional iso-surfaces were created using the Imaris software (Bitplane, Zurich, Switzerland).\n\n### Skeleton staining\n\nSkinned heads were dehydrated and stained in 0.03% alcian blue in 80% EtOH and 20% acetic acid. The samples were rehydrated and stained in 0.01% alizarin red in 1% KOH. The hyoid apparatus was dissected and pictures taken with a Nikon D700 camera.\n\n### Histology\n\nTissue samples were fixed overnight in 4% PFA, rinsed in 1x phosphate-buffered saline (PBS). Post-embryonic samples were decalcified in Osteosoft (Merck, 1017281000). Samples were dehydrated before paraffin embedding and sectioned at 7 \u03bcm. For hematoxylin/eosin/alcian blue staining, sections were initially treated in a solution of 1% Alcian blue in 3% acetic acid before classical hematoxylin/eosin staining. For \u2018critical electrolyte concentration\u2019 applications (Scott and Dorling, 1965), the initial treatment was replaced by 0.05% alcian blue and 0.6M MgCl2 in 0.2M acetate buffer. Sirius Red staining were performed in 0.1% Direct Red 80 (Sigma, 365548) in 1.2% picric acid and rinsed in 0.5% acetic acid. Elastic staining was performed following the manufacturer\u2019s instructions (elastic stain kit, Sigma HT25A-1KT). Images were acquired with a Pannoramic MIDI Slide scanner (3D HISTECH, Budapest, Hungary). Polarised images were taken with a Leica DM5500 microscope.\n\n### Whole-mount immunostaining\n\nEmbryos were fixed overnight in 4% PFA, washed in 1x PBS followed by dissection of the head. Tissues were permeabilised in 1x PBS, 0.2% Triton X-100 and incubated in proteinase K (5 \u03bcg/ml). The heads were then rinsed in glycine and blocked in a solution containing 0.5% goat serum, 0.2% BSA, and 0.2% Triton X-100. Anti-Histone H3 (phospho S10, ab14955) antibodies were diluted by a factor 1500 in blocking solution and samples were incubated overnight at room temperature. Incubation with secondary antibodies (anti-MS-Alexa Fluor 555; 1/500 dilution) was performed during 3 hr at room temperature. Finally, nuclei were stained during 1 hr using Nuclear Green (ab138905) at dilution 1/1500. Z-stacks were acquired using a LSM700 confocal microscope. Nuclei and pH3+ cells were segmented using the Imaris \u2018spot\u2019 tool. Areas containing cells were measured using ImageJ (Schindelin et al., 2012) and cell densities were computed. Cell division rates were calculated as the ratio of pH3+ cells over the total number of nuclei.\n\n### 3d reconstructions of embryos\n\nEmbryos were fixed in 4% PFA at\u00a0+4\u00b0C overnight, washed in 1X PBS, dehydrated through a methanol series (30%, 50%, 70%, 100%; methanol diluted with 1X PBS) and stored at \u221220\u00b0C. High-resolution episcopic microscopy (HREM; Indigo Scientific, Herts, UK) was performed using the JB4/dye embedding mix (including eosinB and acridine orange) following the manufacturer protocol. Embryos were placed in the mix for overnight polymerisation at room temperature followed by baking for 24 hr at 95\u00b0C and sectioning at 3.5 \u03bcm. The pixels defining the skin versus the underlying connective tissue were separated on HREM 2D images by applying the 2-means clustering algorithm in Python and aligned using the Amira software (ThermoFisher Scientific, Oregon, USA). Then, 3D measurements were performed using Meshlab (Vcli-, 2011) and a C\u00a0++\u00a0based semi-automatic tool (Milinkovitch et al., 2013).\n\n### Young\u2019s modulus estimation\n\nFresh embryos were dissected in 1x PBS and fixed and submerged on a home-made support. Nanoindentations were performed using a pre-calibrated FemtoTools FT-S100 Microforce Sensing Probe. Depth-dependant Young\u2019s moduli were calculated using unloading curves (Oliver and Pharr, 2004) and assuming that the surface of the frill consists of a sheet of skin adherent to the underlying loose connective tissue. Multiple models have been suggested for proper extraction of intrinsic material properties of two layers systems (Men\u010d\u00edk et al., 1997).\n\nWe use a simple closed-form equation (Jung et al., 2004) for predicting the elastic moduli of the skin (Eskin) and of the substrate (Esubstrate) based on the relation between the penetration depth d and the estimated Young\u2019s modulus E. The basic assumption of this approach is that the elastic and plastic responses of the system change progressively from skin-dominated to substrate-dominated as the values of d increases (Figure 11A). More explicitly, we assume that the Young\u2019s modulus E can be written as a simple power law function of the following form:\n\n$$\nE=E_{substrate}(E_{skin}/E_{substrate})^{L}\n$$\n\nwhere\n\n$$\nL=1/(1+A(d/T)^{B})\n$$\n\nand positive coefficients A and B are calculated using a nonlinear curve-fitting procedure in MATLAB for a range of skin thickness T\u00a0=\u00a027\u201372 \u00b5m (Figure 7C). Given that E\u2192Eskin when d/T\u21920 and E\u2192Esubstrate when d/T\u2192\u221e, we estimate Eskin\u00a0=\u00a011'440\u00a0\u00b1\u00a0200 Pa and Esubstrate\u00a0=\u00a0220\u00a0\u00b1\u00a07 Pa at E26 while Eskin\u00a0=\u00a036'880\u00a0\u00b1\u00a020 Pa and Esubstrate\u00a0=\u00a0228\u00a0\u00b1\u00a014 Pa at E45 (Figure 11B). This result indicates that the skin modulus is increasing by a factor\u00a0>3 between E26 and E45 while the substrate\u2019s stiffness remains approximately constant.\n\nTo test these results, we fix the substrate Young\u2019s modulus to the values estimated above with the empirical model of Jung et al. (2004), and use the analytical solution derived by Gao et al. (1992) to find the best fit (in terms of mean squared error) of both the skin thickness and skin Young\u2019s modulus. These analyses yield values of T\u00a0=\u00a050 \u00b5m and Eskin\u00a0=\u00a017\u2019800 Pa at E26, and of T\u00a0=\u00a045 \u00b5m and Eskin\u00a0=\u00a038\u2019550 Pa at E45. Hence, the analytical model confirms that the skin thickness remains approximately constant, and that the skin modulus increases substantially (by a factor of about 2.2), between E26 and E45. The somewhat different values of skin stiffness at E26 between empirical and analytical estimates might be due to the low number of data points at small indentation depths.\n\nNote also that there is no consensus in the literature on the best approach for estimating the Young\u2019s modulus of biological soft tissues. Indeed, parameters, such as the presence of adhesion forces between the nano-indentation probe and the biological tissue (Kontomaris, 2018), but also capillary forces at the air-water interface when measuring submerged samples (Boots et al., 2019), can bias the experimental estimates. More fundamentally, the potential anisotropy of biological tissues in terms of their viscoelastic and plastic properties can differentially affect specific methods, for\u00a0example tensile measurements in multiple kinds of soft biological tissues consistently yield larger Young\u2019s modulus estimates than those estimated with indentation methods (McKee et al., 2011). Given that all our measurements were performed with the same method in the same conditions, we think that our estimates of the skin-to-substrate stiffness ratio (i.e., the most important parameter for our simulations) are valid.\n\n### Physical analogs\n\nThe PDMS elastomer and curing agent (Sylgard 184 Silicone Elastomer Kit) were mixed at a 10:1 vol ratio with the addition of a small amount of green paint (0.03 ml per 100 ml of PDMS). The mixture was placed under vacuum (to avoid bubbles) in a Petri dish for about 30 min before being cured at 50\u00b0C overnight. After cooling, the PDMS sheet was removed from the Petri dish and placed between two wooden planks that were then tightly screwed to each other. The PDMS was swelled by placing the whole system into 98.5% Hexane (Sigma-Aldrich) for 15 min at room temperature.\n\n### Numerical model and computational methods\n\nTo study ridges formation under homogeneous growth of the frill constrained at the neck-frill boundary, we constructed a tetrahedral GPU-based numerical model in three dimensions. We assume that the two frill lobes (attached by the central crease) grow independently of one another and that the tissue material is neo-Hookean with volumetric strain energy density\n\n$$\nW=\u00a0\\frac{\\mu}{2}\u00a0[Tr(FF^{T})J^{\u22122/3}\u22123]+\u00a0\\frac{K}{2}(J\u22121)^{2}\n$$\n\nwhere \u03bc and $K=\\alpha.\\mu$\u00a0are the shear and bulk moduli, respectively, F is the deformation gradient, J = det(F), and \u03b1 can be defined, using the Poisson\u2019s ratio v, by\u00a0$\\alpha=(2+2\u03bd)/(3\u22126\u03bd)$.\n\nWe use a custom finite element method, similar to the one described by Tallinen et al. (2016) to minimise the elastic energy of the system. Every tetrahedron is defined by a matrix\u00a0$A=[x_{1}x_{2}x_{3}]$, where\u00a0$x_{1}$, $x_{2}$, and $x_{3}$\u00a0are vectors with the origin in the same vertex of the tetrahedron. Following Jin (2014)\u00a0and Rodriguez et al. (1994), we define a growth tensor G of a tetrahedron as G(\u00c2), where \u00c2 describes the tetrahedron in a stress-free initial configuration. The growth tensor is defined by\u00a0$G=G_{s}G_{c}$, where the tensor $G_{s}=g_{s}I+(1\u2212g_{s})NN^{T}$ represents the expansion g(s) perpendicular to the surface normal N in the initial configuration, and the tensor $G_{c}=I+(g_{c}\u22121)CC^{T}$ defines the growth of the central crease g(c) in the direction C (Figure 6D and Figure 8A). Values gs and gc are calculated using the generalised logistic function\n\n$$\ng_{i}=1+\u00a0\\frac{g(i)\u22121\u00a0}{1+0.25e^{\u2212100(T\u2212x_{i})}}\n$$\n\nwhere T is the thickness of the anterior skin sheet of the frill, and xi is the distance to the surface of the frill for xs (pink in Figure 8B) or to the central crease for xc (purple in Figure 8B). This implies that growth can vary from one element to another which might result in configurations that are not physically attainable (when neighbouring elements do not fit together after growth). To make the volume elements compatible, we introduce the elastic deformation tensor F(\u00c2) that defines how the elements change their shapes to insure continuity inside the tissue. The product of the growth and deformation tensors results in the deformation gradient tensor A\u00a0=\u00a0FG that maps the stress-free state \u00c2 before the growth to the stressed state A\u00a0=\u00a0FG\u00c2 after growth.\n\nTo minimise the elastic energy of the system, at each time step, we obtain the Cauchy stress tensor\n\n$$\n\\sigma=\\frac{1}{J}\\frac{\u2202W}{\u2202F}F^{T}\n$$\n\nand the surface traction of each deformed face $s_{i}=\u2212\\sigman_{i}$ (i = 1,2,3,4), where ni are normals with lengths proportional to the areas of the deformed faces. Nodal forces are obtained by distributing the traction of each face equally to its three vertices. Finally, the energy of the system is minimised by using damped second-order dynamics\n\n$$\n\u03bd\u00a0(t+\u0394t)=\u00a0\u03bd(t)+\u00a0\\frac{f(t)\u2212\u00a0\\gamma\u03bd(t)}{m}\u0394t\n$$\n\n\n\n$$\nx\u00a0(t+\u00a0\u0394t)=x(t)+\u00a0\u03bd(t+\u0394t)\u0394t\n$$\n\nwhere the time step\u00a0$\u0394t=0.01a/\\sqrt{K}$, and $m=a^{3}$\u00a0represents a node mass, where a is the average distance between neighbouring nodes in the initial configuration. The parameter \u03b3 is the viscous damping factor set to 10m in the beginning of the simulation and reduced progressively to speed up convergence. The vectors f, v and x are the force, velocity and position of the node, respectively. The simulations are assumed to be at steady state when the elastic energy of the system stabilises (i.e., its value doesn\u2019t change by >0.1% during 105 iterations) and the maximum node displacement is <10\u22126.\n\nWe also implemented a quasi-static approach using a discrete-time formulation. More explicitly, the elastic energy of the system is minimised at each time step\u00a0$t_{i}\\in{1,\u00a02,\u00a0\u2026,\u00a0T_{max}}$, that\u00a0is for successive values of growth g(ti) corresponding to the measured growth values between time steps ti-1 and ti. This procedure is performed simultaneously for the surface and the central crease.\n\nTo ensure that the frill is a symmetrical structure, the nodes of the central crease can move only along the vector C in one-layer simulations (Figure 8D), while they are imposed a zero-displacement boundary condition in the normal direction on the central-crease plane in multi-layer simulations (Figure 10A, central panel).\n",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "e7230515-d990-4416-9515-cd43853e3e25",
+      "submission_id": "310b77fb-741b-4d25-8b35-c608af515d1f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- David Hu, Georgia Tech\n- Pierre Haas, University of Cambridge United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.44455.020](https://doi.org/10.7554/eLife.44455.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Elastic instability during growth of the hyoid branchial ectoderm causes folding of the frilled dragon erectile ruff\" for consideration by eLife. Your article has been reviewed by David Hu (Reviewer #2) and Pierre Haas (Reviewer #3), and the evaluation has been overseen by a Reviewing Editor and Diethard Tautz as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nMontandon, Fofonjka, and Milinkovitch present a detailed study of the formation of the ruff of the frilled dragon, combining experiment, physical analog experiments, and simulations of an elastic model. This is a beautiful study that carefully explores several layers of progressively more complex models of the ruff to suggest that the appearance of folds in the ruff is caused by an elastic instability.\n\nThe reviewers found the manuscript to be generally well written, although they occasionally found the descriptions slightly confusing: for example, the manuscript sometimes refers to the whole ruff as the \"frill\", sometimes to each lobe as the \"frill\", as in the first paragraph of the subsection \u201cThe morphology of the frill\u201d, where the frill is said to pleat into three (rather than six) convex ridges. Perhaps using \"lobe\" more often could clarify these issues.\n\nEssential revisions:\n\nWe do think that the title needs to be toned down (to bring the strength of the conclusion more in line with the Discussion), especially given that very recent work has shown that the differential-growth mechanism, although producing brain-like folds, is inconsistent with the folding of the cerebellum (Engstrom et al., Phys Rev. X 8, 041053, 2018). The title is also quite a mouthful, involving many unfamiliar terms in conjunction (e.g. \"frilled dragon erectile ruff\"). Some simplification would be in order.\n\nThe reviewers found the paper at times to be difficult to read. The biological sections could have more terms defined and pointed out in the diagrams. The numerical sections also do not clearly state some of the variables. It would also be helpful if the authors line-numbered this paper for the reviewers. Here isa list of specific issues:\n\n1) Referencing previous work: The authors only cite two references (Savin et al., 2011; Tallinen et al., 2016) on differential growth in morphogenesis. Especially for the brain, folding by differential growth has a long history going back at least 40 years, so previous work should be more carefully referenced. Similarly, in the description of the model, the multiplicative decomposition of the deformation gradient could be put into a clearer context by adding some references (also notice that F is the elastic deformation gradient only, not the full deformation gradient as stated in the text). On a related point, the biophysical significance of their work could be emphasised further if the authors stated more clearly that this curtain instability (geometrically constrained at the boundary) is different from folding of the brain or the gut (geometrically constrained all over the surface).\n\n2) Measurement of elastic moduli: We are not convinced by the measurements of the elastic moduli in Figure 11: (a) the reported values are extrapolations in a range for which there are no measurements; (b) most measurements were taken at an indentation depth for which the moduli have essentially become constant, while no measurements were taken at indentation depths smaller than that corresponding to the inflection point of the curve; (c) the functional form from Jung et al., 2011, used to fit the data is empirical. We think that the authors should state these limitations clearly in the main text, and tone down the strength of their inference that the experimental stiffness ratio is consistent with the theoretical range.\n\n3) Is it possible to make the qualitative comparison of experiment and theory (based on the number of folds that form) more quantitative? For example, do the amplitudes of the folds produced by the model agree with experimental amplitudes? This might help to further constrain the experimental parameters. Using the model in this way to access information not directly accessible by experiments would considerably strengthen the biophysical impact of the analysis. On a related point, the authors estimate growths g(s), g(c), g(o) from geometrical measurements. These observations are however the superposition of actual growth and elastic deformations. It may be worth checking how large the elastic contributions are (by computing the linear surface growth resulting in the model from these imposed growths). Similarly, is there any indication of pre-stressing in the material? While we suppose this could be checked by cutting experiments, we are not asking for these experiments to be carried out, but think it might be worth to point out this possibility.\n\n4) Introduction, second paragraph, the CBI bones, the grey's cartilages, the hyoid apparatus, the hyoid arch, entoglossal process \u2013 these should be clearly labelled in a schematic diagram. The dorsal, ventral and lateral views of the embryo are slightly helpful, but a full sketch of the frill and labelling of all its parts would be even better. We struggled with the biology sections, and so will most readers. A diagram would help bridge the physics and biology worlds that necessarily meet in this paper.\n\n5) Subsection \u201cMorphogenesis of the Chlamydosaurus neck frill\u201d: E23 = 23 days post-oviposition. This was a useful definition of terms, and it would be great to have more of that throughout the paper.\n\n6) Subsection \u201cIncomplete fusion of BA2 allows the development of a neck skin fold in Episquamata and of the frill in Chlamydosaurus\u201d. \u2018Bronchial arch\u2019 needs to be defined in a figure, including the four BAs.\n\n7) Subsection \u201cIncomplete fusion of BA2 allows the development of a neck skin fold in Episquamata and of the frill in Chlamydosaurus\u201d discusses why other reptile species do not develop frills. However, it was hard to read for non-biologists. Figures or other definitions would be useful here.\n\n8) The authors should avoid using the word integrate, because it is too similar to the math integration.\n\n9) Subsection \u201cNumerical simulations\u201d, last paragraph: the g(s) terminology is confusing. It may have been defined somewhere but it is not easy to find. It should be clearly defined and its use in the aforementioned paragraph should avoid the use of this terminology or re-define it again.\n\n10) Subsection \u201cNumerical simulations\u201d, last paragraph. It is nice that the authors can use the equation of the wrinkle wavelength. A schematic labelling \u03bcs\n\nand \u03bck would be useful for readers who haven't seen this equation before.\n\n11) Subsection \u201cNumerical simulations\u201d, last paragraph. The authors give skin elastic modulus and loose connective tissue modulus. Do these refer to \u03bcs and \u03bck? The authors should say so explicitly. They should also state if the equation they provide indeed gives the correct wrinkle wavelength.\n\n12) Figure 1. Is the yellow hyoid apparatus part of the frill? it would be nice to more clearly relate Figures 1A and 1C.\n\n13) Figure 2 is hard to interpret for non-biologists. What cross section is shown here? It would be good to show a schematic labelling what is cut. This goes for all figures A-M.\n\n14) Figure 3. The dorsal view is not that useful. Are the images from the same embryo?\n\n15) Figure 8 Again g(s) and g(c) is used here but is not labelled in the figure and not easy to understand. Figure 8B does not have a vertical axis.\n\n16) It would be nice to know how the simple wavelength equation varies from numerical results.\n\n17) Figure 8C legend needs to clearly define blue and red lines as well as the units of relative growth.\n",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ffead0a9-13a4-4c59-ae20-1c416940cc59",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C1",
+      "claim": "The frilled dragon (Chlamydosaurus kingii) spreads its spectacular neck frill for predator deterrence, territorial display and courtship.",
+      "claim_type": "EXPLICIT",
+      "source": "This animal spreads its spectacular neck frill for predator deterrence, territorial display and courtship (Shine, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Shine, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "525ddb7e-70ac-46d9-9ddd-453e6d07aad9",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C2",
+      "claim": "The ventral sides of the frill are supported by the two ceratobranchial I bones (CBI) of the hyoid apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1C illustrates that the ventral sides of the ruff are supported by the two ceratobranchial I bones (CBI) of the hyoid apparatus (Beddard, 1905)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1C and a citation to Beddard, 1905.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "c7e5105c-3b40-4e08-92d3-21cac83ff66e",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C3",
+      "claim": "The dorsal sides of the frill are held by the so-called 'Grey's cartilages'.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1C illustrates that the ventral sides of the ruff are supported by the two ceratobranchial I bones (CBI) of the hyoid apparatus (Beddard, 1905) and the dorsal sides are held by the so-called 'Grey's cartilages' (De Vis, 1883).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1C and a citation to De Vis, 1883.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "235b5b92-38d5-4577-96e0-654da6e9676f",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C4",
+      "claim": "Erection of the frill is caused by the coordinated movements of the CBI bones and Grey's cartilages and requires the opening of the mouth.",
+      "claim_type": "EXPLICIT",
+      "source": "Erection of the frill is caused by the coordinated movements of the CBI bones and Grey's cartilages and requires the opening of the mouth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text without specific experimental data or citation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "d23a9b56-234e-4f4b-9b35-5909781f0371",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C5",
+      "claim": "The hyoid apparatus bones are involved in improved lung ventilation through gular pumping in monitor lizards.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their primary function in tetrapods is associated with deglutition, the bones of the hyoid apparatus are also involved in a variety of specialised morphologies and functions such as improved lung ventilation through gular pumping in monitor lizards (Bels et al., 1995; Owerkowicz et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bels et al., 1995 and Owerkowicz et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "b3386e3b-8f35-4be1-a5ab-4149fc004613",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C6",
+      "claim": "The hyoid apparatus bones are involved in extension of the throat in bearded dragons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their primary function in tetrapods is associated with deglutition, the bones of the hyoid apparatus are also involved in a variety of specialised morphologies and functions such as improved lung ventilation through gular pumping in monitor lizards (Bels et al., 1995; Owerkowicz et al., 1999), extension of the throat in bearded dragons (Throckmorton et al., 1985)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Throckmorton et al., 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "d83d7c83-b4f3-4127-bf40-e362194ecb50",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C7",
+      "claim": "The hyoid apparatus bones are involved in extension of the dewlap in Anolis lizards.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their primary function in tetrapods is associated with deglutition, the bones of the hyoid apparatus are also involved in a variety of specialised morphologies and functions such as improved lung ventilation through gular pumping in monitor lizards (Bels et al., 1995; Owerkowicz et al., 1999), extension of the throat in bearded dragons (Throckmorton et al., 1985) and of the dewlap in Anolis lizards (Bels, 1990; Font and Rome, 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bels, 1990 and Font and Rome, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "924bf4a0-151e-43dd-b4f9-1c2b858906f8",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C8",
+      "claim": "The hyoid apparatus bones are involved in tongue projection in chameleons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their primary function in tetrapods is associated with deglutition, the bones of the hyoid apparatus are also involved in a variety of specialised morphologies and functions such as improved lung ventilation through gular pumping in monitor lizards (Bels et al., 1995; Owerkowicz et al., 1999), extension of the throat in bearded dragons (Throckmorton et al., 1985) and of the dewlap in Anolis lizards (Bels, 1990; Font and Rome, 1990), tongue projection in chameleons (Herrel et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Herrel et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "1662a776-025b-47e6-b4ea-98165c8c79ee",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C9",
+      "claim": "The hyoid apparatus bones are involved in tongue extension and shock absorption in woodpeckers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their primary function in tetrapods is associated with deglutition, the bones of the hyoid apparatus are also involved in a variety of specialised morphologies and functions such as improved lung ventilation through gular pumping in monitor lizards (Bels et al., 1995; Owerkowicz et al., 1999), extension of the throat in bearded dragons (Throckmorton et al., 1985) and of the dewlap in Anolis lizards (Bels, 1990; Font and Rome, 1990), tongue projection in chameleons (Herrel et al., 2001), as well as tongue extension and shock absorption in woodpeckers (Yoon and Park, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yoon and Park, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "e635849c-249c-4f19-ad0a-0554a6765e41",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C10",
+      "claim": "In reptiles, the central part of the hyoid apparatus is anteriorly prolonged by an entoglossal process and is associated to three pairs of horns.",
+      "claim_type": "EXPLICIT",
+      "source": "In reptiles, the central part of the hyoid apparatus, anteriorly prolonged by an entoglossal process (EP; Figure 1C\u2013D), is associated to three pairs of horns (Bellairs and Kamal, 1981).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1C-D and a citation to Bellairs and Kamal, 1981.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "44705317-25aa-439c-bb31-33faa13bb320",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C11",
+      "claim": "The first pair of horns of the hyoid apparatus is composed of the hypohyal, ceratohyal and epihyal.",
+      "claim_type": "EXPLICIT",
+      "source": "The first pair is composed of the hypohyal (HH), ceratohyal (CH) and epihyal (EH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text describing anatomical structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "89f59cad-da9e-46a1-92e9-42e60147c79a",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C12",
+      "claim": "The second pair of horns of the hyoid apparatus is made of the CBI and epibranchial.",
+      "claim_type": "EXPLICIT",
+      "source": "The second pair is made of the CBI and epibranchial (EB)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text describing anatomical structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "d6de8edb-d87e-44f2-a797-0e6fac1b9e87",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C13",
+      "claim": "The third pair of horns of the hyoid apparatus consists of the ceratobranchial II.",
+      "claim_type": "EXPLICIT",
+      "source": "while the third pair of horns consists of the ceratobranchial II (CBII).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the text describing anatomical structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "80b1c31a-a555-40fe-a715-7a4ea12c466a",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C14",
+      "claim": "During embryogenesis, the hyoid arch (BA2) contributes to the development of the central and anterior parts of the hyoid body as well as the first pair of horns.",
+      "claim_type": "EXPLICIT",
+      "source": "During embryogenesis, the hyoid apparatus develops from the pre-cartilage (mesenchyme condensation of neural crest origin) of three branchial arches (BA): the hyoid arch (i.e., the second BA = BA2) contributes to the development of the central and anterior parts of the hyoid body as well as the first pair of horns, whereas the third and fourth BAs (BA3 and BA4) generate the second and third pairs of horns, respectively (Bellairs and Kamal, 1981; Creuzet et al., 2005; Kaufman and Bard, 1999; K\u00f6ntges and Lumsden, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bellairs and Kamal, 1981; Creuzet et al., 2005; Kaufman and Bard, 1999; K\u00f6ntges and Lumsden, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "95804040-5220-4526-8558-057444102677",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C15",
+      "claim": "The third and fourth branchial arches (BA3 and BA4) generate the second and third pairs of horns of the hyoid apparatus, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "During embryogenesis, the hyoid apparatus develops from the pre-cartilage (mesenchyme condensation of neural crest origin) of three branchial arches (BA): the hyoid arch (i.e., the second BA = BA2) contributes to the development of the central and anterior parts of the hyoid body as well as the first pair of horns, whereas the third and fourth BAs (BA3 and BA4) generate the second and third pairs of horns, respectively (Bellairs and Kamal, 1981; Creuzet et al., 2005; Kaufman and Bard, 1999; K\u00f6ntges and Lumsden, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bellairs and Kamal, 1981; Creuzet et al., 2005; Kaufman and Bard, 1999; K\u00f6ntges and Lumsden, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "65e7f992-66bc-4246-8506-24c3d10a9490",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C16",
+      "claim": "The highly-developed CBI bones of the frilled dragon are localised into the third (most dorsal) skin ridge of the frill.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using computed-tomography and histology approaches, we first show that the highly-developed CBI bones of the frilled dragon are localised into the third (most dorsal) skin ridge of the frill",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computed-tomography and histology data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "212efacf-c8fc-4b09-9934-46998b8d678b",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C17",
+      "claim": "The 'Grey's cartilage' is not made of cartilage per se, but is a dense connective tissue mainly composed of collagen fibres.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using computed-tomography and histology approaches, we first show that the highly-developed CBI bones of the frilled dragon are localised into the third (most dorsal) skin ridge of the frill and that the 'Grey's cartilage' is not made of cartilage per se, but is a dense connective tissue mainly composed of collagen fibres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computed-tomography and histology data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "ad8c681c-49c3-4755-8741-23621cf7b0fb",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C18",
+      "claim": "The existence of a spectacular frill in Chlamydosaurus was made possible by the incomplete fusion of the BA2 with the cardiac eminence and posterior BAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our comparative developmental analyses indicate that the existence of a spectacular frill in Chlamydosaurus was made possible by the incomplete fusion of the BA2 with the cardiac eminence and posterior BAs, an evolutionary event that probably occurred at the origin of Episquamata reptiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative developmental analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "ae64363a-258a-4a6f-822f-186eea6f35ba",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C19",
+      "claim": "The incomplete fusion of BA2 with the cardiac eminence and posterior BAs probably occurred at the origin of Episquamata reptiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our comparative developmental analyses indicate that the existence of a spectacular frill in Chlamydosaurus was made possible by the incomplete fusion of the BA2 with the cardiac eminence and posterior BAs, an evolutionary event that probably occurred at the origin of Episquamata reptiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparative developmental analyses and phylogenetic inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "b407a1ed-4a46-43a9-9286-189fc7fba34b",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C20",
+      "claim": "The incomplete fusion of BA2 allowed most members of the Episquamata lineage to exhibit a conspicuous neck fold.",
+      "claim_type": "EXPLICIT",
+      "source": "This event allowed most members of that lineage to exhibit a conspicuous neck fold (although it was lost in chameleons, snakes and legless lizards) that develops from the hyoid BA (BA2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparative developmental analyses and phylogenetic inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "8a1e720d-1968-47a1-a793-b439c65848a3",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C21",
+      "claim": "The neck fold was lost in chameleons, snakes and legless lizards.",
+      "claim_type": "EXPLICIT",
+      "source": "This event allowed most members of that lineage to exhibit a conspicuous neck fold (although it was lost in chameleons, snakes and legless lizards) that develops from the hyoid BA (BA2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparative developmental analyses and phylogenetic inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "c3158d15-c652-4925-8b4d-e77c0947f853",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C22",
+      "claim": "The Chlamydosaurus frill is a dramatic outgrowth of the hyoid arch ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the Chlamydosaurus frill is a dramatic outgrowth of the hyoid arch ectoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on developmental analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "cf312ec3-0ea0-4400-be24-a1d4268c7291",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C23",
+      "claim": "The robust folding pattern of the Chlamydosaurus frill (all individuals develop three ridges on each of the two lobes of the frill) is not due to localised increased growth at the position of the ridges.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, using 3D reconstruction, analyses of proliferation and computational simulations, we show that the very robust folding pattern of the Chlamydosaurus frill (all individuals develop three ridges on each of the two lobes of the frill) is not due to localised increased growth at the position of the ridges, but likely emerges from an elastic instability during the homogeneous growth of the anterior sheet frustrated by the underlying tissues and by its attachment to the neck.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by 3D reconstruction, proliferation analyses, and computational simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "31ebe0ed-17e2-4066-8acf-365cd3d0bf95",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C24",
+      "claim": "The robust folding pattern of the Chlamydosaurus frill likely emerges from an elastic instability during the homogeneous growth of the anterior sheet frustrated by the underlying tissues and by its attachment to the neck.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, using 3D reconstruction, analyses of proliferation and computational simulations, we show that the very robust folding pattern of the Chlamydosaurus frill (all individuals develop three ridges on each of the two lobes of the frill) is not due to localised increased growth at the position of the ridges, but likely emerges from an elastic instability during the homogeneous growth of the anterior sheet frustrated by the underlying tissues and by its attachment to the neck.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by 3D reconstruction, proliferation analyses, and computational simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "fd477835-0e5a-4292-870b-452714171853",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C26",
+      "claim": "The left and right lobes of the frill are connected ventrally by a central crease.",
+      "claim_type": "EXPLICIT",
+      "source": "The left and right lobes of the frill are connected ventrally by a central crease (white line if Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "576bc504-241a-498f-8346-99b0c8d71fa7",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C27",
+      "claim": "When erected, the frill forms a flat disc positioned in a transversal plane.",
+      "claim_type": "EXPLICIT",
+      "source": "When erected, following the movements of the mandible, hyoid bones and Grey's cartilages, the frill forms a flat disc positioned in a transversal plane (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "e3fba158-2d9c-4f6a-ae56-8c12d51d2d50",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C28",
+      "claim": "At rest, each lobe of the frill always pleats into three convex ridges and two concave folds, in addition to the central concave crease.",
+      "claim_type": "EXPLICIT",
+      "source": "At rest, each lobe of the frill always pleats into three convex ridges and two concave folds, in addition to the central concave crease (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "838decd0-e37b-4ad0-a4b2-7a3928803202",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C29",
+      "claim": "The lower part of the frill is supported by hypertrophied CBI bones.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed by computed-tomography (CT) that the lower part of the frill is supported by hypertrophied CBI bones (Beddard, 1905).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by CT data and a citation to Beddard, 1905.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "8586383b-b665-4c55-91a4-6f1532a8485f",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C30",
+      "claim": "In bearded dragons (Pogona spp), the CBIs are fully enclosed in the throat and do not extend further than the end of the lower jaw.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike in other agamid lizards, such as Pogona spp (Throckmorton et al., 1985), where the CBIs are fully enclosed in the throat and do not extend further than the end of the lower jaw",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Throckmorton et al., 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "1e8aa453-ccaa-4044-b47a-3999ed2dfc36",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C31",
+      "claim": "The frilled dragon's straight and much elongated CBIs have most of their length positioned into the frill.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike in other agamid lizards, such as Pogona spp (Throckmorton et al., 1985), where the CBIs are fully enclosed in the throat and do not extend further than the end of the lower jaw, the frilled dragon's straight and much elongated CBIs have most of their length positioned into the frill (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1C and comparison with other species.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "82198ccb-41e0-4b57-bd17-1f40daf85584",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C32",
+      "claim": "The frilled dragon CBI bones are ossified whereas other parts of the hyoid apparatus remain cartilageneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeleton staining and paraffin sections indicate that the frilled dragon CBI bones are ossified whereas other parts of the hyoid apparatus remain cartilageneous (Figures 1D and 2A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by skeleton staining and paraffin sections shown in Figures 1D and 2A-F.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "60afa2e4-1f5f-49f1-a0cb-01d561dac410",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C33",
+      "claim": "The CBIs are attached to the posterior part of the hyoid body within the throat anteriorly and are surrounded by muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Anteriorly, the CBIs are attached to the posterior part of the hyoid body within the throat (Figure 2A) and are surrounded by muscles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 2A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "87439532-c68b-44c9-8817-937ae78e39e5",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C34",
+      "claim": "More distally, the CBIs separate from the throat to become incorporated into the third ridge of each lobe of the frill.",
+      "claim_type": "EXPLICIT",
+      "source": "More distally, the CBIs separate from the throat to become incorporated into the third ridge of each lobe of the frill (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 2E-F.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "234ccf5e-25a9-450c-a408-dd3881b262e2",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C35",
+      "claim": "In its free part, the frill consists of two sheets of skin linked by loose connective tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In its free part, the frill consists of two sheets of skin linked by loose connective tissue (Figure 2G,H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 2G,H.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "f1aac7e4-5fec-4152-88d4-eff361a69437",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C36",
+      "claim": "The anterior sheet of the frill is longer than the posterior sheet at the positions of the convex ridges.",
+      "claim_type": "EXPLICIT",
+      "source": "In its free part, the frill consists of two sheets of skin linked by loose connective tissue (Figure 2G,H), with the anterior sheet being longer than the posterior sheet at the positions of the convex ridges (Figure 2F,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 2F,H.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "4b2e53ec-24ac-4f15-8cb9-73e0a894eabb",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C37",
+      "claim": "The Grey's cartilages connect the dorsal part of the frill to each side of the head at the vicinity of the tympanic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The Grey's cartilages (black arrowhead in Figure 2C\u2013E) connect the dorsal part of the frill to each side of the head at the vicinity of the tympanic membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 2C-E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "7537c529-28b4-4e56-b838-73bc47de1519",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C38",
+      "claim": "The proximal end of the Grey's cartilage is strongly attached to muscles (the digastric, the attolens chlamydis and the adductor chlamydis) that allow for the movement of the upper part of the frill.",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal end of the Grey's cartilage is strongly attached to muscles (Figure 2D), the digastric, the attolens chlamydis and the adductor chlamydis, that allow for the movement of the upper part of the frill (De Vis, 1883).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 2D and a citation to De Vis, 1883.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "9549b2ea-93bc-410f-9c0d-d08af373ef0b",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C39",
+      "claim": "The Grey's cartilage is likely to contain weakly-sulphated glycosaminoglycans (GAGs) rather than keratan sulphates.",
+      "claim_type": "EXPLICIT",
+      "source": "As Alcian blue strongly stains the structure in the absence (Figure 2C\u2013E,I), but not in the presence (Figure 2J), of MgCl2, it is likely to contain weakly-sulphated glycosaminoglycans (GAGs) rather than keratan sulphates (Bancroft, 2002; Scott and Dorling, 1965); the latter are characteristic components of true cartilage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by staining data shown in Figures 2C-E,I,J and citations to Bancroft, 2002 and Scott and Dorling, 1965.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "d4562641-85ff-46a3-a971-a99754396a5a",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C40",
+      "claim": "Keratan sulphates are characteristic components of true cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "As Alcian blue strongly stains the structure in the absence (Figure 2C\u2013E,I), but not in the presence (Figure 2J), of MgCl2, it is likely to contain weakly-sulphated glycosaminoglycans (GAGs) rather than keratan sulphates (Bancroft, 2002; Scott and Dorling, 1965); the latter are characteristic components of true cartilage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bancroft, 2002 and Scott and Dorling, 1965.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "8a3fe12b-a78f-4ceb-bffc-58e987315ea5",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C41",
+      "claim": "Elastic staining does not reveal elastic fibres in the Grey's cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "Elastic staining does not reveal elastic fibres (Figure 2K)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by staining data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "6c9a9452-b229-4b78-b3f8-c6a1e9e920f2",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C42",
+      "claim": "'Sirius Red' staining indicates the presence of collagen fibres in the Grey's cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "while 'Sirius Red' staining indicates the presence of collagen fibres (Figure 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by staining data shown in Figure 2L.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "7fdb75eb-c20e-468b-8414-0653163ada64",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C43",
+      "claim": "Under polarised light, thick and thin collagen fibres appear orange-red and green-yellow, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "As, under polarised light, thick and thin collagen fibres appear orange-red and green-yellow, respectively (Rich and Whittaker, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Rich and Whittaker, 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "67a24c7a-1bf2-458a-9a78-ff4b1bd2f3da",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C44",
+      "claim": "Collagen fibres are thick at the surface of the Grey's cartilage (near the epidermis).",
+      "claim_type": "EXPLICIT",
+      "source": "As, under polarised light, thick and thin collagen fibres appear orange-red and green-yellow, respectively (Rich and Whittaker, 2005), we could infer that fibres are thick at the surface of the 'cartilage' (near the epidermis, Figure 2M, left panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from polarised light microscopy data shown in Figure 2M and citation to Rich and Whittaker, 2005.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "901e42a9-7bec-441c-aa9c-69ee900ae193",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C45",
+      "claim": "Collagen fibres are heterogeneous in size deeper in the Grey's cartilage structure.",
+      "claim_type": "EXPLICIT",
+      "source": "As, under polarised light, thick and thin collagen fibres appear orange-red and green-yellow, respectively (Rich and Whittaker, 2005), we could infer that fibres are thick at the surface of the 'cartilage' (near the epidermis, Figure 2M, left panel) whereas they are heterogeneous in size deeper in the structure (Figure 2M, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from polarised light microscopy data shown in Figure 2M and citation to Rich and Whittaker, 2005.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "7d5c2f70-9c0e-4fb3-9c8a-2d3f3a6697c5",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C46",
+      "claim": "Around embryonic day 23 (E23), the early frill is visible as a swollen skin outgrowth in the ventral portion of the neck above the heart cavity and shoulders.",
+      "claim_type": "EXPLICIT",
+      "source": "Around embryonic day 23 (E23 = 23 days post-oviposition), the early frill is visible as a swollen skin outgrowth in the ventral portion of the neck above the heart cavity and shoulders (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 3A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "86801bdd-fbe3-4732-86e4-9e79806dd683",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C47",
+      "claim": "Between E24 and E30, the frill splits into right and left lobes, the central ventral crease becomes visible, and the latero-dorsal side of the outgrowth reaches the tympanic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Between E24 and E30, the frill splits into right and left lobes, the central ventral crease becomes visible, and the latero-dorsal side of the outgrowth reaches the tympanic membrane (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 3B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "430b2208-59e4-40c9-a6eb-04cbf342e31a",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C48",
+      "claim": "At the end of the E24-E30 period, two ridges become clearly visible on the anterior surface of each lobe while the latero-dorsal part grows towards the back of the head, beyond the tympanic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of that period (Figure 3C), two ridges become clearly visible on the anterior surface of each lobe while the latero-dorsal part grows towards the back of the head, beyond the tympanic membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 3C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "708ece8a-a7f5-4c83-a40f-a0e1e2a0976e",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C49",
+      "claim": "Between E30 and E40, a third ridge forms on the frill.",
+      "claim_type": "EXPLICIT",
+      "source": "Between E30 and E40, a third ridge forms (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 3D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "8e81c3e3-0df8-4659-8016-52e8bb7b2567",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C50",
+      "claim": "At E45, the basic morphology of the frill is established: the anterior side of each lobe has grown substantially and exhibits three expanded anterior ridges while the lateral side of the frill now extends well beyond the tympanic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "At E45, the basic morphology of the frill is established: the anterior side of each lobe has grown substantially and exhibits three expanded anterior ridges while the lateral side of the frill now extends well beyond the tympanic membrane (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 3E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "e5fb6923-0d55-4198-99b5-be952618f749",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C51",
+      "claim": "The skin outgrowth generating the early development of the frill in Chlamydosaurus is present at E15 but is hidden behind the heart cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dissections of embryos at earlier stages indicate that the skin outgrowth generating the early development of the frill in Chlamydosaurus is present at E15 but is hidden behind the heart cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by dissection data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "29fad150-9f57-4dbf-b9b4-dc62e4a9728c",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C52",
+      "claim": "Around E6-E7, the four first BAs (BA1 to BA4) are visible on Chlamydosaurus embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Around E6-E7, the four first BAs (BA1 to BA4) are visible (Figure 4A) on Chlamydosaurus embryos",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 4A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "894d41e0-5835-42c8-83a9-3217a98aed88",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C53",
+      "claim": "The BA6 is hidden behind the developing heart and is only discernible on parasagittal sections around E6-E7.",
+      "claim_type": "EXPLICIT",
+      "source": "Around E6-E7, the four first BAs (BA1 to BA4) are visible (Figure 4A) on Chlamydosaurus embryos while the BA6 is hidden behind the developing heart and is only discernible on parasagittal sections (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 4B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "571a1334-e336-4857-b5d1-26572996a721",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C54",
+      "claim": "In amniotes, the posterior part of the BA2 (hyoid arch) has been called an 'embryonic opercular flap' because it grows, expands caudally and covers the posterior BAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In amniotes, the posterior part of the BA2 (hyoid arch) has been called an 'embryonic opercular flap' because it grows, expands caudally and covers the posterior BAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about amniote development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "ac1ff1a4-d147-4c81-8d6e-51f15285d4ab",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C55",
+      "claim": "Eventually, the BA2 fuses to the cardiac eminence, causing the internalisation of the BAs 3 to 6 in amniotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, the BA2 fuses to the cardiac eminence, causing the internalisation of the BAs 3 to 6 (Richardson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Richardson et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "34ebd7a7-a4e8-4996-99b2-93bb37997982",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C56",
+      "claim": "In the frilled dragon, the posterior BAs internalise around E11.",
+      "claim_type": "EXPLICIT",
+      "source": "In the frilled dragon, the posterior BAs internalise around E11 (Figure 4C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 4C,D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "d9736750-ae55-46fa-8b76-11ce3b34b0bc",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C57",
+      "claim": "In the frilled dragon, the posterior BAs are not discernible anymore at E15-E16.",
+      "claim_type": "EXPLICIT",
+      "source": "In the frilled dragon, the posterior BAs internalise around E11 (Figure 4C,D) and are not discernible anymore at E15-E16 (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 4E,F.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "719682c5-d3e1-468d-8b98-1d4eed65eb6c",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C58",
+      "claim": "Part of the frilled dragon's BA2 does not fuse to the cardiac eminence, forming the early frill behind the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "However, here we observe that part of the frilled dragon's BA2 (arrowhead in Figure 4F and G) does not fuse to the cardiac eminence, forming the early frill behind the heart (Figure 4G) before intensively growing (Figure 4H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figures 4F, G, H, I.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "10fbb9fd-05e3-4abb-b741-6a48bf6bbd68",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C59",
+      "claim": "In Chlamydosaurus, the frill originates from the outgrowth of the BA2 that failed to completely fuse with posterior BAs and the neck.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we show here that, in Chlamydosaurus, the frill originates from the outgrowth of the BA2 that failed to completely fuse with posterior BAs and the neck.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on developmental observations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "6c55bba2-963f-4d4b-88ab-f7e1a04f96c4",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C60",
+      "claim": "An incompletely fused BA2 is present for an extended period of embryonic development in the leopard gecko (Eublepharis macularius).",
+      "claim_type": "EXPLICIT",
+      "source": "We identify the presence of an incompletely fused BA2 for an extended period of embryonic development in all species investigated (Figure 5): the leopard gecko (Eublepharis macularius), the ocellated lizard (Timon lepidus), the veiled chameleon (Chamaeleo calyptratus), and the bearded dragon (Pogona vitticeps).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "07e9aa6a-300e-42fb-829f-ac585395b275",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C61",
+      "claim": "An incompletely fused BA2 is present for an extended period of embryonic development in the ocellated lizard (Timon lepidus).",
+      "claim_type": "EXPLICIT",
+      "source": "We identify the presence of an incompletely fused BA2 for an extended period of embryonic development in all species investigated (Figure 5): the leopard gecko (Eublepharis macularius), the ocellated lizard (Timon lepidus), the veiled chameleon (Chamaeleo calyptratus), and the bearded dragon (Pogona vitticeps).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "cfac3a4e-859c-45de-b2a3-e7de4010c43a",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C62",
+      "claim": "An incompletely fused BA2 is present for an extended period of embryonic development in the veiled chameleon (Chamaeleo calyptratus).",
+      "claim_type": "EXPLICIT",
+      "source": "We identify the presence of an incompletely fused BA2 for an extended period of embryonic development in all species investigated (Figure 5): the leopard gecko (Eublepharis macularius), the ocellated lizard (Timon lepidus), the veiled chameleon (Chamaeleo calyptratus), and the bearded dragon (Pogona vitticeps).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "df252112-4292-4eaa-9d54-f5b66a31c6d9",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C63",
+      "claim": "An incompletely fused BA2 is present for an extended period of embryonic development in the bearded dragon (Pogona vitticeps).",
+      "claim_type": "EXPLICIT",
+      "source": "We identify the presence of an incompletely fused BA2 for an extended period of embryonic development in all species investigated (Figure 5): the leopard gecko (Eublepharis macularius), the ocellated lizard (Timon lepidus), the veiled chameleon (Chamaeleo calyptratus), and the bearded dragon (Pogona vitticeps).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "9fdd418e-e701-4814-89f4-3d42d14ec382",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C64",
+      "claim": "The maintenance of the BA2 eminence throughout pre- and post-hatching development in the ocellated lizard and bearded dragon is responsible for the formation of a clearly visible neck fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The maintenance of the BA2 eminence throughout pre- and post-hatching development in the ocellated lizard and bearded dragon is responsible for the formation of a clearly visible neck fold (Figure 5F,H and Figure 5\u2014figure supplement 1A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 5F,H and Figure 5\u2014figure supplement 1A\u2013F.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "7a6fa7b3-1f6f-4634-89f7-794de26be3ef",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C65",
+      "claim": "In the leopard gecko and veiled chameleon, the incompletely fused BA2 will remain visible up to at least developmental stages 34 but will eventually fuse with the neck at later stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In the leopard gecko and veiled chameleon, the incompletely fused BA2 will remain visible up to at least developmental stages 34 (following developmental staging system of Wise et al., 2009) but will eventually fuse with the neck at later stages (Figure 5\u2014figure supplement 1G\u2013L)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 5\u2014figure supplement 1G\u2013L and reference to Wise et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "940bba3d-6ec9-4946-b545-aeb056f45182",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C66",
+      "claim": "The leopard gecko and veiled chameleon do not exhibit a conspicuous neck fold.",
+      "claim_type": "EXPLICIT",
+      "source": "In the leopard gecko and veiled chameleon, the incompletely fused BA2 will remain visible up to at least developmental stages 34 (following developmental staging system of Wise et al., 2009) but will eventually fuse with the neck at later stages (Figure 5\u2014figure supplement 1G\u2013L), explaining that these species do not exhibit a conspicuous neck fold (Figure 5E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 5E,G.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "22682020-1f4c-4ddf-b05b-0aae3c41d123",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C67",
+      "claim": "The opercular flap (BA2) fuses with the cardiac eminence in non-squamate amniotes such as birds and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that (i) the opercular flap (BA2) fuses with the cardiac eminence in non-squamate amniotes such as birds and mammals (at stages E6 and E10 for the chicken and the mouse, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about amniote development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "a4035dfe-685e-4945-8c1e-0ab71a31952d",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C68",
+      "claim": "All Squamata lineages investigated exhibit an unfused opercular flap for some period of their development.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that (i) the opercular flap (BA2) fuses with the cardiac eminence in non-squamate amniotes such as birds and mammals (at stages E6 and E10 for the chicken and the mouse, respectively), (ii) all Squamata lineages we investigated exhibit an unfused opercular flap for some period of their development",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparative developmental observations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "3f2f3d27-c500-4831-81b9-8a0cffb9acd0",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C69",
+      "claim": "Many species of Episquamata exhibit a neck skin fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that (i) the opercular flap (BA2) fuses with the cardiac eminence in non-squamate amniotes such as birds and mammals (at stages E6 and E10 for the chicken and the mouse, respectively), (ii) all Squamata lineages we investigated exhibit an unfused opercular flap for some period of their development, and (iii) many species of Episquamata exhibit a neck skin fold (cf. green lineages in Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations and reference to Figure 5.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "272bb60b-a34a-4b25-9ecb-b0ed4f8333e2",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C70",
+      "claim": "The most parsimonious evolutionary scenario is that the opercular flap forms in all amniotes but its complete fusion was abolished at the origin of the Episquamata clade.",
+      "claim_type": "EXPLICIT",
+      "source": "the most parsimonious evolutionary scenario (Figure 5) is that the opercular flap forms in all amniotes but it's complete fusion was abolished at the origin of the Episquamata clade, that is after the divergence of the more ancestral lineages of Gekkota and Scinciformata.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on phylogenetic inference and parsimony analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "ed85b3ac-01e4-4b30-b1a0-2e44de604c6c",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C71",
+      "claim": "The abolishment of complete fusion of the opercular flap occurred after the divergence of the more ancestral lineages of Gekkota and Scinciformata.",
+      "claim_type": "EXPLICIT",
+      "source": "the most parsimonious evolutionary scenario (Figure 5) is that the opercular flap forms in all amniotes but it's complete fusion was abolished at the origin of the Episquamata clade, that is after the divergence of the more ancestral lineages of Gekkota and Scinciformata.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on phylogenetic inference and parsimony analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "14c4fd7c-7de4-4308-83dc-9a5421debaa0",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C72",
+      "claim": "The abolishment of complete fusion of the opercular flap allowed the development of a neck skin fold in the ancestor of Episquamata.",
+      "claim_type": "EXPLICIT",
+      "source": "This event allowed the development of a neck skin fold in the ancestor of Episquamata, a morphological feature that was secondary lost (cf. red lineages in Figure 5) in chameleons, snakes and various legless lizards.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on phylogenetic inference and parsimony analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "8dd9efb4-eb06-43ed-bb91-179d370b15d6",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C73",
+      "claim": "The neck skin fold was secondarily lost in chameleons, snakes and various legless lizards.",
+      "claim_type": "EXPLICIT",
+      "source": "This event allowed the development of a neck skin fold in the ancestor of Episquamata, a morphological feature that was secondary lost (cf. red lineages in Figure 5) in chameleons, snakes and various legless lizards.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on phylogenetic inference and parsimony analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "eb6951e3-3da5-4875-87bc-4cf35a0ac746",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C74",
+      "claim": "The neck fold was then developed and modified into a spectacular erectile neck ruff during the evolution of the frilled dragon.",
+      "claim_type": "EXPLICIT",
+      "source": "The neck fold was then developed and modified into a spectacular erectile neck ruff during the evolution of the frilled dragon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on phylogenetic and developmental inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "1eaf815f-bd86-427f-82b5-250e130b5a82",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C75",
+      "claim": "The folding pattern of the dragon's frill is robust: the left and right lobes of the frill each pleats into three convex ridges and two concave folds.",
+      "claim_type": "EXPLICIT",
+      "source": "The folding pattern of the dragon's frill is robust: the left and right lobes of the frill each pleats into three convex ridges and two concave folds (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "c7c38238-81e2-4a83-9227-7948d260c4e6",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C76",
+      "claim": "In the two concave folds, the anterior and posterior skin sheets have similar lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "In the two concave folds, the anterior and posterior skin sheets have similar lengths (Figure 2F,G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 2F,G.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "23a8b119-05fd-42ad-8db8-f951ee803d9a",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C77",
+      "claim": "The anterior skin sheet is substantially longer than the posterior skin sheet in the three convex ridges.",
+      "claim_type": "EXPLICIT",
+      "source": "In the two concave folds, the anterior and posterior skin sheets have similar lengths (Figure 2F,G) whereas the anterior skin sheet is substantially longer than the posterior skin sheet in the three convex ridges (Figure 2F,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 2F,H.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "409492c4-76db-4d36-a0dd-da8b60dbcda0",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C78",
+      "claim": "The convex ridges impose the frill to pleat at these positions, inevitably causing the concave folds to also occur.",
+      "claim_type": "EXPLICIT",
+      "source": "This morphology indicates that the convex ridges impose the frill to pleat at these positions, inevitably causing the concave folds to also occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from morphological observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "99177d97-0679-4252-91a9-2ff992ca4d89",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C79",
+      "claim": "Proliferation analyses indicated similar cell densities (of about 0.02 cell per \u03bcm2) and proliferation during and after ridges formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses indicated (i) similar cell densities (of about 0.02 cell per \u03bcm2) and proliferation during and after ridges formation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by proliferation analyses using pH3 marker.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "e17a4062-cacc-4b84-bfad-83ea55fdc394",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C80",
+      "claim": "Proliferation analyses indicated no notable difference in proliferation at the location versus in between ridges.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses indicated (i) similar cell densities (of about 0.02 cell per \u03bcm2) and proliferation during and after ridges formation, and (ii) no notable difference in proliferation at the location versus in between ridges (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by proliferation analyses shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "4e690638-93fe-4410-b819-17cc33dc79cf",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C81",
+      "claim": "Uniform growth of the gut at a rate larger than that of the anchoring dorsal mesenteric sheet is sufficient to quantitatively explain the gut looping morphogenesis into the body cavity of vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, uniform growth of the gut at a rate larger than that of the anchoring dorsal mesenteric sheet is sufficient to quantitatively explain the gut looping morphogenesis into the body cavity of vertebrates (Savin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Savin et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "631730f9-60f9-41fb-b0d6-fdc7c301a1d8",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C82",
+      "claim": "It has been suggested that the folding of the developing cerebral cortex in mammals is caused by expansion of the grey matter constrained by the more-slowly developing white matter.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, it has been suggested that the folding of the developing cerebral cortex in mammals is caused by expansion of the grey matter constrained by the more-slowly developing white matter (Karzbrun et al., 2018; Richman et al., 1975; Tallinen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Karzbrun et al., 2018; Richman et al., 1975; Tallinen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "7ba43466-49c7-473d-bf02-808377359f1c",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C83",
+      "claim": "The linear dimension of the frill surface (square root of the area) increases approximately 1.3 fold relative to the length of the frill boundary attached to the neck.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 3D measurements on frilled dragon embryos at various developmental stages, we observe that the linear dimension of the frill surface (square root of the area) increases approximately 1.3 fold relative to the length of the frill boundary attached to the neck (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 3D measurements shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "19179558-e8dd-4277-bb62-905576a517ce",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C84",
+      "claim": "Homogeneous growth of the frill's anterior skin sheet, frustrated by a boundary condition (its attachment to the neck), generates an elastic instability that resolves into the formation of three anterior convex ridges on each lobe of the dragon's frill.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is compatible with a physical (mechanical) morphogenesis process where homogeneous growth of the frill's anterior skin sheet, frustrated by a boundary condition (its attachment to the neck), generates an elastic instability that resolves into the formation of three anterior convex ridges on each lobe of the dragon's frill.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from 3D measurements and physical principles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "956d7bbf-c41e-4ab7-8172-a30b0c6cd240",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C85",
+      "claim": "For T/L = 0.014, each lobe of the frill exhibits two ridges when g reaches about 1.07 and three ridges when it exceeds 1.15 in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this geometrical configuration and a quasi-static approach, our simulations recapitulate the transition from two to three ridges observed during embryonic development: for T/L = 0.014 (i.e., the ratio between the average values of skin thickness and the neck boundary length measured on real embryos; Figure 7), each lobe of the frill exhibits two ridges when g reaches about 1.07 and three ridges when it exceeds 1.15 (Figure 8E and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational simulations shown in Figure 8E and Video 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "71bf03d5-e8d0-494d-8e90-7f48bd946199",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C86",
+      "claim": "The number of ridges increases with the amount of expansion g in the semi-cylindrical model.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple model indicates that the number of ridges increases with the amount of expansion g (Figure 8B and Figure 8\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational simulations shown in Figure 8B and Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "d04f83e4-db2e-4397-8e4a-6d9c1871848a",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C87",
+      "claim": "The number of ridges decreases with increasing relative thickness (T/L) of the sheet in the semi-cylindrical model.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple model indicates that the number of ridges increases with the amount of expansion g (Figure 8B and Figure 8\u2014figure supplement 1), while it decreases with increasing relative thickness (T/L) of the sheet (Figure 8C and Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational simulations shown in Figure 8C and Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "ab12c9d8-cbbe-4b32-97ab-6ac06bdd26ff",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C88",
+      "claim": "The swollen PDMS sheet exhibits three wrinkles with a wavelength that increases towards the free edge after swelling by about 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "We fixed the PDMS sheet at its straight edge and used hexane to make it swell by about 30%. The resulting geometry (Figure 9C) is very similar to that obtained with our numerical simulations (Figure 9D): the swollen PDMS sheet exhibits three wrinkles with a wavelength that increases towards the free edge.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by physical analog experiment shown in Figure 9C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "4c849e50-ea28-40d6-82a4-82185b54df69",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C89",
+      "claim": "The number of convex ridges decreases with the skin-to-substrate stiffness ratio in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations show that the frill's surface indeed wrinkles and that the number of convex ridges decreases with the skin-to-substrate stiffness ratio (Figure 10B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational simulations shown in Figure 10B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "e2036c56-c89c-4555-86b4-6e9736c8faeb",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C90",
+      "claim": "The frill skin elastic modulus increases from 11'440 \u00b1 200 Pa at E26 to 36'880 \u00b1 20 Pa at E45.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we performed depth-dependent nanoindentation measurements (Figure 11 and Supplementary Methods) on fresh unfixed Chlamydosaurus embryos and inferred that the frill skin elastic modulus increases from 11'440 \u00b1 200 Pa at E26 to 36'880 \u00b1 20 Pa at E45 (i.e., well in the 8\u2013540 kPa range reported for human skin [Iivarinen et al., 2014])",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by nanoindentation measurements shown in Figure 11 and citation to Iivarinen et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "daa8c6b0-e7e7-4ae1-b2a1-8c9ebd5df52f",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C91",
+      "claim": "The loose connective tissue modulus remains constant: 220 \u00b1 7 Pa at E26 and 228 \u00b1 14 Pa at E45.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we performed depth-dependent nanoindentation measurements (Figure 11 and Supplementary Methods) on fresh unfixed Chlamydosaurus embryos and inferred that the frill skin elastic modulus increases from 11'440 \u00b1 200 Pa at E26 to 36'880 \u00b1 20 Pa at E45 (i.e., well in the 8\u2013540 kPa range reported for human skin [Iivarinen et al., 2014]), whereas the loose connective tissue modulus remains constant: 220 \u00b1 7 Pa at E26 and 228 \u00b1 14 Pa at E45.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by nanoindentation measurements shown in Figure 11.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "67eddb33-6387-4b63-a0ed-66fc355a7be1",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C92",
+      "claim": "The skin-to-substrate stiffness ratio increases from 52 to 162 during the development of the ridges.",
+      "claim_type": "EXPLICIT",
+      "source": "These numbers yield an increase of skin-to-substrate stiffness ratio from 52 to 162 during the development of the ridges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculations from nanoindentation measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "810de2b6-b5ad-40c8-8383-8b258dd90cfa",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C93",
+      "claim": "Quasi-static simulations recapitulate the transition from two to three ridges observed during actual frill morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, instead of applying the whole growth at once during numerical simulations, and checking the steady-state result, we also performed a quasi-static approach to progressively grow the HREM-derived realistic 3D model of the frill; skin-to-substrate stiffness ratio was set to 100 for convenience. These new simulations recapitulate the transition from two to three ridges observed during actual frill morphogenesis (Figure 10C, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quasi-static computational simulations shown in Figure 10C and Video 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "3086f751-c0bc-4350-9d0e-89506c800a0c",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C94",
+      "claim": "Frilled dragons breed in the wild during the wet season from November to December.",
+      "claim_type": "EXPLICIT",
+      "source": "Frilled dragons breed in the wild during the wet season from November to December (Harlow and Shine, 1999; Shine and Lambeck, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Harlow and Shine, 1999 and Shine and Lambeck, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "f30134f3-ad8c-49d9-a957-5aa9d9323c2b",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C95",
+      "claim": "In captivity, frilled dragons produce a mean number of 12.8 eggs per year per female.",
+      "claim_type": "EXPLICIT",
+      "source": "In captivity, we obtained a mean number of 12.8 eggs per year per female.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on breeding data from captive animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "ac0c04db-3e9e-4b9a-99de-a31e4b761e1a",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C96",
+      "claim": "The incubation of frilled dragon's eggs is about 90 days at 29.5\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The incubation of frilled dragon's eggs is about 90 days at 29.5\u00b0C, that is substantially longer than in its close relative bearded dragon (Pogona vitticeps, 60 days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on incubation data from captive breeding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "621b1ed9-8bc1-443c-b4fc-5dd42ec9de27",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "claim_id": "C97",
+      "claim": "The incubation period of frilled dragon eggs is substantially longer than in its close relative bearded dragon (Pogona vitticeps, 60 days).",
+      "claim_type": "EXPLICIT",
+      "source": "The incubation of frilled dragon's eggs is about 90 days at 29.5\u00b0C, that is substantially longer than in its close relative bearded dragon (Pogona vitticeps, 60 days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of incubation data between species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e9fba1e1-dcc7-42f9-83e0-a6fe4a305120",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The frilled dragon's frill is structurally supported by hypertrophied, ossified ceratobranchial I (CBI) bones that extend into the third ridge of the frill, unlike in related species where CBIs remain within the throat. CT and histological analyses confirm the CBI bones are ossified while other hyoid elements remain cartilaginous.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C16, C29, C31-C34 collectively provide strong anatomical evidence from CT scans, histology, and comparative anatomy (Figures 1C, 2A-F) demonstrating the unique positioning and ossification of CBI bones in the frill. The comparison with bearded dragons (C30-C31) strengthens the finding by showing this is a derived feature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The 'Grey's cartilage' is not true cartilage but rather a dense connective tissue composed primarily of collagen fibers with weakly-sulphated GAGs, lacking keratan sulphates and elastic fibers characteristic of true cartilage. This structure connects the dorsal frill to the head near the tympanic membrane and is attached to muscles enabling frill movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C37-C45 provide comprehensive histochemical evidence (Alcian blue staining with/without MgCl2, Sirius Red, elastic staining, polarized light microscopy shown in Figure 2C-M) that definitively characterize the Grey's cartilage composition. The multiple staining approaches converge on a consistent conclusion about tissue composition, correcting historical misidentification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "6a266e4e-286c-4fa3-8445-312ef766518c",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The frill develops from a swollen skin outgrowth visible at E23, which progressively forms ridges: two ridges appear by E30, a third ridge forms between E30-E40, and the basic morphology is established by E45. The early outgrowth is present at E15 but hidden behind the heart cavity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 describe a detailed developmental timeline supported by embryonic series observations and imaging (Figure 3A-E). The sequential appearance of ridges is well-documented with specific staging, providing a clear morphogenetic trajectory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "78c92b06-ec04-407e-964f-d24d819f8d5c",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In Chlamydosaurus, the frill originates from incomplete fusion of the second branchial arch (BA2) with the cardiac eminence and posterior branchial arches. While posterior BAs internalize by E11 and are not discernible by E15-E16, part of BA2 fails to fuse and instead forms the early frill behind the heart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 provide detailed developmental observations (Figure 4A-I) documenting BA development and the critical deviation from typical amniote development where BA2 normally fuses completely. The histological sections clearly show the unfused BA2 portion that becomes the frill primordium.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "7b175b26-becb-470f-bc47-47876d0e9d41",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Comparative developmental analysis across squamate species reveals that incomplete BA2 fusion is present in all investigated Squamata lineages for some developmental period. The most parsimonious evolutionary scenario suggests that abolishment of complete BA2 fusion occurred at the origin of Episquamata (after divergence of Gekkota and Scinciformata), enabling neck fold development in this clade. This neck fold was secondarily lost in chameleons, snakes, and legless lizards, but was elaborated into the spectacular frill in Chlamydosaurus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C74 present a comprehensive phylogenetic comparative analysis (Figure 5, Figure 5\u2014figure supplement 1) examining BA2 development across multiple species. The parsimony analysis is well-supported by observations in leopard gecko, ocellated lizard, veiled chameleon, and bearded dragon, combined with knowledge of BA2 fusion in non-squamate amniotes (C67). The evolutionary inference follows logically from the comparative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "9be668ff-c798-4d9c-b06f-86ddba30f51a",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The robust three-ridge folding pattern of the frill is not caused by localized increased growth at ridge positions, but likely emerges from elastic instability during homogeneous growth. Proliferation analyses show similar cell densities and no notable differences in proliferation between ridge and inter-ridge regions. The differential length of anterior versus posterior skin sheets at ridges (but not folds) indicates mechanical constraint drives folding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24, C75-C80 combine morphological observations (Figure 2F-H) with proliferation data (Figure 6) to rule out localized growth patterning. The pH3 proliferation marker analysis across multiple embryonic stages shows uniform proliferation (C79-C80), while morphological measurements demonstrate differential sheet lengths only at ridges (C76-C77), supporting a mechanical rather than patterned growth mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "cdeb5a70-9f85-49dc-8cfe-3c5b69f2c366",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "3D measurements show the frill surface grows approximately 1.3-fold relative to its neck boundary attachment. Computational simulations using a semi-cylindrical model demonstrate that homogeneous growth frustrated by boundary constraints generates elastic instability producing ridges. For realistic parameters (T/L = 0.014), simulations recapitulate the developmental transition from two ridges (g \u2248 1.07) to three ridges (g > 1.15), with ridge number increasing with growth and decreasing with relative thickness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 present quantitative 3D morphometric data (Figure 7) and computational modeling results (Figure 8) that successfully predict ridge formation through mechanical principles. The simulations use measured parameters and reproduce the observed developmental transition, providing strong support for the elastic instability hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "87b93422-4e1f-4ce2-ac66-9203276aeca2",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Physical analog experiments using PDMS sheets swollen by ~30% in hexane produce three wrinkles with wavelength increasing toward the free edge, matching computational simulation predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 describes physical validation experiments (Figure 9C-D) that independently confirm the computational model predictions. The PDMS analog successfully recapitulates key features of the simulated folding pattern, providing experimental support for the elastic instability mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "d2c87b48-ae65-4333-af1a-1550c8a2569a",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Simulations using realistic frill geometry show ridge number decreases with skin-to-substrate stiffness ratio. Nanoindentation measurements reveal frill skin elastic modulus increases from 11,440\u00b1200 Pa (E26) to 36,880\u00b120 Pa (E45), while connective tissue modulus remains constant (~220-228 Pa), yielding a stiffness ratio increase from 52 to 162. Quasi-static simulations with these parameters and measured growth dynamics recapitulate the two-to-three ridge transition observed in embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C93 integrate computational modeling (Figure 10) with direct mechanical measurements (Figure 11) to provide quantitative validation. The nanoindentation data provides realistic tissue parameters, and the quasi-static simulations using these values successfully reproduce the developmental transition (Video 2), strongly supporting the mechanical model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "7400acd8-666e-4003-8cda-e78f3fe28e31",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The frilled dragon uses its erectile neck frill for predator deterrence, territorial display, and courtship. When erected through coordinated movements of CBI bones and Grey's cartilages (requiring mouth opening), the frill forms a flat disc in a transversal plane. At rest, each lobe consistently pleats into three convex ridges and two concave folds plus a central crease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4, C26-C28 describe the functional morphology and behavioral context of the frill, supported by citations (C1: Shine, 1990) and direct observations (Figure 1A-B). The consistent folding pattern across individuals (C28) is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The hyoid apparatus serves diverse specialized functions across tetrapods beyond deglutition, including gular pumping in monitor lizards, throat/dewlap extension in agamids and anoles, tongue projection in chameleons, and tongue extension/shock absorption in woodpeckers. In reptiles, the hyoid apparatus consists of a central body with entoglossal process and three pairs of horns derived from branchial arches BA2, BA3, and BA4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C15 provide well-cited background on hyoid apparatus diversity and anatomy (multiple citations including Bels et al., 1995; Throckmorton et al., 1985; Herrel et al., 2001; Bellairs and Kamal, 1981). This establishes the comparative context for understanding the frilled dragon's specialized hyoid-derived structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "ed174ed2-6606-4b3d-86bc-620563497ae1",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The free part of the frill consists of two skin sheets (anterior and posterior) linked by loose connective tissue, with the anterior sheet being longer than the posterior sheet at convex ridge positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 describe the basic tissue architecture of the frill supported by histological observations (Figure 2G-H). This structural asymmetry is key to understanding the mechanical folding pattern.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "a0c1ba9f-0c6b-4e3f-a057-6f803dab3b97",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mechanical instabilities from frustrated growth are important in morphogenesis, as demonstrated by gut looping (uniform gut growth constrained by mesenteric sheet) and cerebral cortex folding (grey matter expansion constrained by white matter).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 cite established examples (Savin et al., 2011; Karzbrun et al., 2018; Richman et al., 1975; Tallinen et al., 2016) of mechanical morphogenesis that provide conceptual precedent for the frill folding mechanism. These are well-established findings in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    },
+    {
+      "id": "c1ce5dfe-5363-4931-a609-adc88e43bd12",
+      "content_id": "5970d5db-0358-4d9b-bfd9-7cbd7919b854",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Frilled dragons breed during the wet season (November-December) in the wild. In captivity, females produce a mean of 12.8 eggs per year with incubation lasting ~90 days at 29.5\u00b0C, substantially longer than the closely related bearded dragon (60 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C97 provide breeding biology data from wild populations (C94: Harlow and Shine, 1999; Shine and Lambeck, 1989) and captive observations (C95-C97). These are straightforward descriptive data relevant to the study's methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:50.381266Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "525ddb7e-70ac-46d9-9ddd-453e6d07aad9",
+      "result_id": "e9fba1e1-dcc7-42f9-83e0-a6fe4a305120"
+    },
+    {
+      "claim_id": "c7e5105c-3b40-4e08-92d3-21cac83ff66e",
+      "result_id": "e9fba1e1-dcc7-42f9-83e0-a6fe4a305120"
+    },
+    {
+      "claim_id": "65e7f992-66bc-4246-8506-24c3d10a9490",
+      "result_id": "e9fba1e1-dcc7-42f9-83e0-a6fe4a305120"
+    },
+    {
+      "claim_id": "838decd0-e37b-4ad0-a4b2-7a3928803202",
+      "result_id": "e9fba1e1-dcc7-42f9-83e0-a6fe4a305120"
+    },
+    {
+      "claim_id": "1e8aa453-ccaa-4044-b47a-3999ed2dfc36",
+      "result_id": "e9fba1e1-dcc7-42f9-83e0-a6fe4a305120"
+    },
+    {
+      "claim_id": "82198ccb-41e0-4b57-bd17-1f40daf85584",
+      "result_id": "e9fba1e1-dcc7-42f9-83e0-a6fe4a305120"
+    },
+    {
+      "claim_id": "60afa2e4-1f5f-49f1-a0cb-01d561dac410",
+      "result_id": "e9fba1e1-dcc7-42f9-83e0-a6fe4a305120"
+    },
+    {
+      "claim_id": "87439532-c68b-44c9-8817-937ae78e39e5",
+      "result_id": "e9fba1e1-dcc7-42f9-83e0-a6fe4a305120"
+    },
+    {
+      "claim_id": "212efacf-c8fc-4b09-9934-46998b8d678b",
+      "result_id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3"
+    },
+    {
+      "claim_id": "4b2e53ec-24ac-4f15-8cb9-73e0a894eabb",
+      "result_id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3"
+    },
+    {
+      "claim_id": "7537c529-28b4-4e56-b838-73bc47de1519",
+      "result_id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3"
+    },
+    {
+      "claim_id": "9549b2ea-93bc-410f-9c0d-d08af373ef0b",
+      "result_id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3"
+    },
+    {
+      "claim_id": "d4562641-85ff-46a3-a971-a99754396a5a",
+      "result_id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3"
+    },
+    {
+      "claim_id": "8a3fe12b-a78f-4ceb-bffc-58e987315ea5",
+      "result_id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3"
+    },
+    {
+      "claim_id": "6c9a9452-b229-4b78-b3f8-c6a1e9e920f2",
+      "result_id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3"
+    },
+    {
+      "claim_id": "7fdb75eb-c20e-468b-8414-0653163ada64",
+      "result_id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3"
+    },
+    {
+      "claim_id": "67a24c7a-1bf2-458a-9a78-ff4b1bd2f3da",
+      "result_id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3"
+    },
+    {
+      "claim_id": "901e42a9-7bec-441c-aa9c-69ee900ae193",
+      "result_id": "5ed9747c-daf2-44e6-94ce-3a03d4a089a3"
+    },
+    {
+      "claim_id": "7d5c2f70-9c0e-4fb3-9c8a-2d3f3a6697c5",
+      "result_id": "6a266e4e-286c-4fa3-8445-312ef766518c"
+    },
+    {
+      "claim_id": "86801bdd-fbe3-4732-86e4-9e79806dd683",
+      "result_id": "6a266e4e-286c-4fa3-8445-312ef766518c"
+    },
+    {
+      "claim_id": "430b2208-59e4-40c9-a6eb-04cbf342e31a",
+      "result_id": "6a266e4e-286c-4fa3-8445-312ef766518c"
+    },
+    {
+      "claim_id": "708ece8a-a7f5-4c83-a40f-a0e1e2a0976e",
+      "result_id": "6a266e4e-286c-4fa3-8445-312ef766518c"
+    },
+    {
+      "claim_id": "8e81c3e3-0df8-4659-8016-52e8bb7b2567",
+      "result_id": "6a266e4e-286c-4fa3-8445-312ef766518c"
+    },
+    {
+      "claim_id": "e5fb6923-0d55-4198-99b5-be952618f749",
+      "result_id": "6a266e4e-286c-4fa3-8445-312ef766518c"
+    },
+    {
+      "claim_id": "29fad150-9f57-4dbf-b9b4-dc62e4a9728c",
+      "result_id": "78c92b06-ec04-407e-964f-d24d819f8d5c"
+    },
+    {
+      "claim_id": "894d41e0-5835-42c8-83a9-3217a98aed88",
+      "result_id": "78c92b06-ec04-407e-964f-d24d819f8d5c"
+    },
+    {
+      "claim_id": "571a1334-e336-4857-b5d1-26572996a721",
+      "result_id": "78c92b06-ec04-407e-964f-d24d819f8d5c"
+    },
+    {
+      "claim_id": "ac1ff1a4-d147-4c81-8d6e-51f15285d4ab",
+      "result_id": "78c92b06-ec04-407e-964f-d24d819f8d5c"
+    },
+    {
+      "claim_id": "34ebd7a7-a4e8-4996-99b2-93bb37997982",
+      "result_id": "78c92b06-ec04-407e-964f-d24d819f8d5c"
+    },
+    {
+      "claim_id": "d9736750-ae55-46fa-8b76-11ce3b34b0bc",
+      "result_id": "78c92b06-ec04-407e-964f-d24d819f8d5c"
+    },
+    {
+      "claim_id": "719682c5-d3e1-468d-8b98-1d4eed65eb6c",
+      "result_id": "78c92b06-ec04-407e-964f-d24d819f8d5c"
+    },
+    {
+      "claim_id": "10fbb9fd-05e3-4abb-b741-6a48bf6bbd68",
+      "result_id": "78c92b06-ec04-407e-964f-d24d819f8d5c"
+    },
+    {
+      "claim_id": "6c55bba2-963f-4d4b-88ab-f7e1a04f96c4",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "07e9aa6a-300e-42fb-829f-ac585395b275",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "cfac3a4e-859c-45de-b2a3-e7de4010c43a",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "df252112-4292-4eaa-9d54-f5b66a31c6d9",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "9fdd418e-e701-4814-89f4-3d42d14ec382",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "7a6fa7b3-1f6f-4634-89f7-794de26be3ef",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "940bba3d-6ec9-4946-b545-aeb056f45182",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "22682020-1f4c-4ddf-b05b-0aae3c41d123",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "a4035dfe-685e-4945-8c1e-0ab71a31952d",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "3f2f3d27-c500-4831-81b9-8a0cffb9acd0",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "272bb60b-a34a-4b25-9ecb-b0ed4f8333e2",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "ed85b3ac-01e4-4b30-b1a0-2e44de604c6c",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "14c4fd7c-7de4-4308-83dc-9a5421debaa0",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "8dd9efb4-eb06-43ed-bb91-179d370b15d6",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "eb6951e3-3da5-4875-87bc-4cf35a0ac746",
+      "result_id": "7b175b26-becb-470f-bc47-47876d0e9d41"
+    },
+    {
+      "claim_id": "cf312ec3-0ea0-4400-be24-a1d4268c7291",
+      "result_id": "9be668ff-c798-4d9c-b06f-86ddba30f51a"
+    },
+    {
+      "claim_id": "31ebe0ed-17e2-4066-8acf-365cd3d0bf95",
+      "result_id": "9be668ff-c798-4d9c-b06f-86ddba30f51a"
+    },
+    {
+      "claim_id": "1eaf815f-bd86-427f-82b5-250e130b5a82",
+      "result_id": "9be668ff-c798-4d9c-b06f-86ddba30f51a"
+    },
+    {
+      "claim_id": "c7c38238-81e2-4a83-9227-7948d260c4e6",
+      "result_id": "9be668ff-c798-4d9c-b06f-86ddba30f51a"
+    },
+    {
+      "claim_id": "23a8b119-05fd-42ad-8db8-f951ee803d9a",
+      "result_id": "9be668ff-c798-4d9c-b06f-86ddba30f51a"
+    },
+    {
+      "claim_id": "409492c4-76db-4d36-a0dd-da8b60dbcda0",
+      "result_id": "9be668ff-c798-4d9c-b06f-86ddba30f51a"
+    },
+    {
+      "claim_id": "99177d97-0679-4252-91a9-2ff992ca4d89",
+      "result_id": "9be668ff-c798-4d9c-b06f-86ddba30f51a"
+    },
+    {
+      "claim_id": "e17a4062-cacc-4b84-bfad-83ea55fdc394",
+      "result_id": "9be668ff-c798-4d9c-b06f-86ddba30f51a"
+    },
+    {
+      "claim_id": "7ba43466-49c7-473d-bf02-808377359f1c",
+      "result_id": "cdeb5a70-9f85-49dc-8cfe-3c5b69f2c366"
+    },
+    {
+      "claim_id": "19179558-e8dd-4277-bb62-905576a517ce",
+      "result_id": "cdeb5a70-9f85-49dc-8cfe-3c5b69f2c366"
+    },
+    {
+      "claim_id": "956d7bbf-c41e-4ab7-8172-a30b0c6cd240",
+      "result_id": "cdeb5a70-9f85-49dc-8cfe-3c5b69f2c366"
+    },
+    {
+      "claim_id": "71bf03d5-e8d0-494d-8e90-7f48bd946199",
+      "result_id": "cdeb5a70-9f85-49dc-8cfe-3c5b69f2c366"
+    },
+    {
+      "claim_id": "d04f83e4-db2e-4397-8e4a-6d9c1871848a",
+      "result_id": "cdeb5a70-9f85-49dc-8cfe-3c5b69f2c366"
+    },
+    {
+      "claim_id": "ab12c9d8-cbbe-4b32-97ab-6ac06bdd26ff",
+      "result_id": "87b93422-4e1f-4ce2-ac66-9203276aeca2"
+    },
+    {
+      "claim_id": "4c849e50-ea28-40d6-82a4-82185b54df69",
+      "result_id": "d2c87b48-ae65-4333-af1a-1550c8a2569a"
+    },
+    {
+      "claim_id": "e2036c56-c89c-4555-86b4-6e9736c8faeb",
+      "result_id": "d2c87b48-ae65-4333-af1a-1550c8a2569a"
+    },
+    {
+      "claim_id": "daa8c6b0-e7e7-4ae1-b2a1-8c9ebd5df52f",
+      "result_id": "d2c87b48-ae65-4333-af1a-1550c8a2569a"
+    },
+    {
+      "claim_id": "67eddb33-6387-4b63-a0ed-66fc355a7be1",
+      "result_id": "d2c87b48-ae65-4333-af1a-1550c8a2569a"
+    },
+    {
+      "claim_id": "810de2b6-b5ad-40c8-8383-8b258dd90cfa",
+      "result_id": "d2c87b48-ae65-4333-af1a-1550c8a2569a"
+    },
+    {
+      "claim_id": "ffead0a9-13a4-4c59-ae20-1c416940cc59",
+      "result_id": "7400acd8-666e-4003-8cda-e78f3fe28e31"
+    },
+    {
+      "claim_id": "235b5b92-38d5-4577-96e0-654da6e9676f",
+      "result_id": "7400acd8-666e-4003-8cda-e78f3fe28e31"
+    },
+    {
+      "claim_id": "fd477835-0e5a-4292-870b-452714171853",
+      "result_id": "7400acd8-666e-4003-8cda-e78f3fe28e31"
+    },
+    {
+      "claim_id": "576bc504-241a-498f-8346-99b0c8d71fa7",
+      "result_id": "7400acd8-666e-4003-8cda-e78f3fe28e31"
+    },
+    {
+      "claim_id": "e3fba158-2d9c-4f6a-ae56-8c12d51d2d50",
+      "result_id": "7400acd8-666e-4003-8cda-e78f3fe28e31"
+    },
+    {
+      "claim_id": "d23a9b56-234e-4f4b-9b35-5909781f0371",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "b3386e3b-8f35-4be1-a5ab-4149fc004613",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "d83d7c83-b4f3-4127-bf40-e362194ecb50",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "924bf4a0-151e-43dd-b4f9-1c2b858906f8",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "1662a776-025b-47e6-b4ea-98165c8c79ee",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "e635849c-249c-4f19-ad0a-0554a6765e41",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "44705317-25aa-439c-bb31-33faa13bb320",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "89f59cad-da9e-46a1-92e9-42e60147c79a",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "d6de8edb-d87e-44f2-a797-0e6fac1b9e87",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "80b1c31a-a555-40fe-a715-7a4ea12c466a",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "95804040-5220-4526-8558-057444102677",
+      "result_id": "2346f4a3-acdf-40a2-a35c-6d195c36d7bf"
+    },
+    {
+      "claim_id": "234ccf5e-25a9-450c-a408-dd3881b262e2",
+      "result_id": "ed174ed2-6606-4b3d-86bc-620563497ae1"
+    },
+    {
+      "claim_id": "f1aac7e4-5fec-4152-88d4-eff361a69437",
+      "result_id": "ed174ed2-6606-4b3d-86bc-620563497ae1"
+    },
+    {
+      "claim_id": "4e690638-93fe-4410-b819-17cc33dc79cf",
+      "result_id": "a0c1ba9f-0c6b-4e3f-a057-6f803dab3b97"
+    },
+    {
+      "claim_id": "631730f9-60f9-41fb-b0d6-fdc7c301a1d8",
+      "result_id": "a0c1ba9f-0c6b-4e3f-a057-6f803dab3b97"
+    },
+    {
+      "claim_id": "3086f751-c0bc-4350-9d0e-89506c800a0c",
+      "result_id": "c1ce5dfe-5363-4931-a609-adc88e43bd12"
+    },
+    {
+      "claim_id": "f30134f3-ad8c-49d9-a957-5aa9d9323c2b",
+      "result_id": "c1ce5dfe-5363-4931-a609-adc88e43bd12"
+    },
+    {
+      "claim_id": "ac0c04db-3e9e-4b9a-99de-a31e4b761e1a",
+      "result_id": "c1ce5dfe-5363-4931-a609-adc88e43bd12"
+    },
+    {
+      "claim_id": "621b1ed9-8bc1-443c-b4fc-5dd42ec9de27",
+      "result_id": "c1ce5dfe-5363-4931-a609-adc88e43bd12"
+    }
+  ],
+  "comparisons": []
+}

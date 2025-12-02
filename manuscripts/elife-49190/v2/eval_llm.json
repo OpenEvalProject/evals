@@ -1,0 +1,555 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The CRCre;Ai32 mouse line shows high fidelity expression of ChR2-YFP in calretinin-expressing neurons in the spinal dorsal horn, with 78.3\u00b14% of CR-IR neurons expressing YFP and 71.5\u00b12% of YFP-IR neurons expressing CR. YFP expression forms a plexus concentrated in lamina II that mirrors CR distribution, and also captures a smaller population of cells that transiently express CR during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are well-supported by quantitative immunolabeling data from multiple animals (n=3) with clear cell counts provided. The anatomical distribution is documented with imaging (Figure 1A), and the inference about transient CR expression (C29) is reasonable given the incomplete overlap and is supported by prior literature citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Excitatory CR-ChR2 neurons exhibit characteristic electrophysiological properties including the voltage-gated potassium current Ia, high frequency spontaneous excitatory drive, and delayed firing discharge patterns. Photostimulation evokes robust inward photocurrents that increase with light intensity (0.01-16 mW) and can reliably drive action potential discharge at frequencies up to 10 Hz with a recruitment latency of 3.29\u00b10.21 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 are supported by patch-clamp electrophysiology data (n=29 cells from 16 animals) with appropriate sample sizes. The characterization includes both voltage-clamp and current-clamp recordings with quantitative measurements of photocurrent amplitudes, frequency-following capabilities, and recruitment latencies. Data are presented in Figure 1B-D with clear statistical reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A subset of inhibitory CR neurons also express ChR2-YFP in the CRCre;Ai32 line. These inhibitory neurons exhibit larger photocurrents (459.72\u00b134.85 pA vs 233.66\u00b156.16 pA) and shorter recruitment times (2.39\u00b10.21 ms vs 3.29\u00b10.38 ms) compared to excitatory CR neurons, providing optogenetic control of both excitatory and inhibitory CR lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by electrophysiological recordings from 13 inhibitory CR neurons from 9 animals, with morphological and functional characterization distinguishing them from excitatory neurons. Statistical comparisons between excitatory and inhibitory populations are provided. The conclusion (C41) appropriately summarizes the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ChR2 expression in primary afferent terminals in laminae I-III is minimal. In CRCre;Ai32 mice, only 11 of 815 afferent terminals expressed YFP, and analysis in Advillin-eGFP mice showed virtually no co-expression of CR in primary afferent terminals (1/397 YFP boutons, 2/215 CR-IR terminals). This confirms that spinal photostimulation selectively recruits central CR neurons rather than primary afferents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are well-supported by comprehensive neuroanatomical analysis using multiple markers (VGLUT1, substance P, CGRP, Pap, VGLUT3) in CRCre;Ai32 mice and cross-validation with Advillin-eGFP mice (n=2 animals each). The quantitative data showing minimal overlap (<2%) between CR/YFP and primary afferent markers strongly supports the conclusion that photostimulation targets central neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CR-ChR2 neurons form a highly interconnected network, with 96.5% (28/29) of CR-ChR2 neurons receiving optically-evoked EPSCs following photostimulation. The distribution of response latencies indicates both direct (35%) and delayed (65%) inputs. Neurons within the YFP plexus receive predominantly direct input (75%) with significantly shorter onset latencies (4.75\u00b10.59 ms) compared to CR-ChR2 neurons (8.61\u00b11.23 ms, p=0.012) and dorsal neurons (7.34\u00b11.06 ms, p=0.047).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are supported by CRACM recordings from 73 cells across 27 animals with appropriate statistical analysis. The high incidence of interconnectivity (96.5%) is well-documented, and the latency analysis using defined windows for direct vs delayed responses is methodologically sound. Statistical comparisons between populations are provided with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "CR-ChR2 photostimulation produces diverse postsynaptic responses including excitatory (subthreshold and suprathreshold) and inhibitory responses across dorsal horn populations. Optically-evoked IPSCs were observed in all neuron populations (CR-ChR2 10/11, plexus 16/19, dorsal 4/7) with similar latencies. GABA-dominant inhibition was most common (65-72%), with both direct and delayed inhibitory components observed, likely arising from direct activation of inhibitory CR-ChR2 neurons and polysynaptic recruitment of other inhibitory populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 are supported by current-clamp recordings (n=22 cells from 12 animals) and voltage-clamp recordings of IPSCs (n=29 cells from 13 animals). The pharmacological dissection using CNQX, bicuculline, and strychnine appropriately identifies GABAergic vs glycinergic components. The inferences about direct vs polysynaptic inhibition (C68-C69) are reasonable given the latency distributions and known circuit architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Extended photostimulation (10s at 10Hz) of CR-ChR2 neurons produces sustained increases in spontaneous EPSC frequency in one-third of excitatory CR-ChR2 neurons (4/12) but not in unidentified dorsal horn neurons (0/9) or inhibitory CR-ChR2 neurons (0/5). This potentiation is not correlated with photocurrent amplitude (r\u00b2=0.00002) or oEPSC amplitude (r\u00b2=0.056) and persists for ~20s after stimulation, consistent with feedback excitation within the interconnected CR-ChR2 network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by recordings from 26 neurons across 4 animals with appropriate statistical thresholds (4 SD above baseline). The lack of correlation with photocurrent or oEPSC amplitude (C73-C74) is properly quantified with r\u00b2 values. The time course analysis (C75) is documented in Figure 3D. The inference about feedback excitation (C76) is reasonable given the network interconnectivity demonstrated earlier.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In vivo spinal photostimulation in anesthetized CRCre;Ai32 mice produces robust cFos expression restricted to the ipsilateral dorsal horn, with no expression in CReGFP controls. Approximately 28.7% of cFos-IR cells expressed YFP (direct activation), while the remaining cells represent postsynaptic targets including NK1R+ projection neurons (12.9%), SOM+ neurons (13.7%), and Pax2+ inhibitory interneurons (21.3%). No cFos expression was observed in PKC\u03b3+ neurons (0/477), indicating selective recruitment of diverse excitatory and inhibitory populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C97 are supported by comprehensive immunohistochemical analysis in 12 CRCre;Ai32 animals with appropriate controls (n=3 CReGFP). Quantitative cell counts are provided for each neurochemical population with clear percentages and cell numbers. The absence of NK1R internalization (C81) appropriately indicates glutamatergic rather than substance P-mediated activation. The relative recruitment percentages (C92-C96) provide important context for circuit engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "CR interneurons provide substantial monosynaptic excitatory input to lamina I NK1R+ projection neurons, with approximately 30% (31.5%\u00b13.5) of all Homer puncta on NK1R dendrites derived from CR terminals. Most of these CR terminals also express SOM (86.5%\u00b13.17), and 68.9%\u00b16.6 of Homer puncta associate with VGLUT2 terminals, most of which co-express SOM (78.9%\u00b16.28). Analysis in Advillin-eGFP mice confirms these are not primary afferent terminals (only 2/167 and 4/304 co-expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C111 are supported by detailed neuroanatomical analysis using CRCre;Ai34 mice (n=3) with quantitative assessment of synaptic contacts. The use of Homer1 to identify excitatory synapses is appropriate, and the cross-validation with VGLUT2 and analysis in Advillin-eGFP mice (n=2) strengthens the conclusions. The percentages are reported with standard deviations indicating multiple measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "CR-ChR2 neurons provide functionally relevant monosynaptic connections to lamina I projection neurons, with oEPSCs observed in 65% of recordings (13/20). Responses include single (8/13) and multiple (5/13) oEPSC events, with multiple responses showing slower kinetics (rise time 9.66\u00b12.95 vs 2.97\u00b10.45 ms, p=0.015). Photostimulation-evoked oEPSPs can trigger action potentials in ~70% of projection neurons (5/7) with 67.5% reliability, and anatomical evidence shows YFP puncta apposed to Neurobiotin-labeled projection neuron dendrites (3/5 recovered cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 are supported by targeted recordings from retrogradely-labeled projection neurons (n=20 cells from 2 animals) with appropriate pharmacological controls (CNQX). The kinetic analysis (C114) includes statistical comparisons. The functional relevance is demonstrated by both voltage-clamp and current-clamp recordings, and anatomical confirmation (C117) provides convergent evidence. Sample sizes are modest but appropriate for technically challenging experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Extended CR-ChR2 photostimulation (10s at 10Hz) produces significant and sustained responses in approximately 60% of projection neurons (5/8), defined as increases exceeding 4 SD above baseline sEPSC frequency. The increase reflects the stimulation frequency (~10 Hz) and takes ~20s to return to baseline, confirming that strong signaling from the CR-ChR2 network reaches projection neurons and drives substantial output to higher brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by recordings from 8 projection neurons with clear statistical criteria for defining significant responses. The time course analysis (C120) is documented in Figure 5D. The conclusion (C121) appropriately integrates these findings with earlier results showing CR-PN connectivity. Sample size is modest (n=8) but sufficient given the clear response patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "In vivo spinal photostimulation in awake CRCre;Ai32 mice (n=25) produces clear nocifensive behaviors (paw lifting, licking/biting) initiated at photostimulation onset and outlasting the stimulation period, while CReGFP controls (n=9) show no time-locked behaviors. Response intensity and duration increase with photostimulation intensity up to 10 mW. Surprisingly, local hindpaw anesthesia (2% lidocaine) increases response duration (54\u00b113s vs 34\u00b14s, p=0.05) compared to vehicle (35\u00b110s vs 34\u00b14s, p=0.86), consistent with removal of inhibitory gating by innocuous tactile input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 are supported by behavioral experiments with appropriate sample sizes (n=25 CRCre;Ai32, n=9 CReGFP controls) and statistical analysis. The dose-response relationship (C125) is documented in Figure 6-supplement 1. The lidocaine experiment (C126-C128) provides important mechanistic insight, though the interpretation (C128) is inferential. The p-value for lidocaine effect (p=0.05) is at the threshold of significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Repeated photostimulation produces enhanced responses, with the second stimulation significantly longer than the first (66.16\u00b19.95s vs 56.26\u00b110.09s, p=0.005, n=9). Trains of subthreshold photostimuli reliably evoke behavioral responses at both 0.1 and 0.5 Hz frequencies despite single stimuli being ineffective, with response latency significantly shorter at higher frequency (2.00\u00b10.82s vs 11.83\u00b12.41s, p=0.012). This demonstrates that CR-ChR2 networks can retain and integrate subthreshold excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 are supported by behavioral experiments with appropriate statistical analysis (n=9 for repeated stimulation, n=6 for subthreshold summation). The paired comparison for repeated stimulation (C129) is properly analyzed. The subthreshold summation experiments (C130-C131) provide strong evidence for temporal integration, though the lack of difference in total response duration between frequencies suggests complexity in the integration window.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Nocifensive responses show stereotyped progression across dermatomes, with significantly different latencies for responses directed to right paw (1.25\u00b10.22s), right hind limb (26.42\u00b19.11s), back (40.83\u00b110.78s), and tail (59.29\u00b118.32s) (p=0.003, n=18). This indicates that optogenetic activation of the CR-ChR2 network produces sensory signaling that spreads to adjacent dermatomes before subsiding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by detailed behavioral analysis in 18 animals with clear statistical significance (p=0.003). The stereotyped progression is well-documented in Figure 6D. The inference about spreading excitation (C134) is reasonable given the anatomical distribution of cFos expression shown earlier and the temporal progression of responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Spinal photostimulation in CRCre;Ai32 mice produces robust cFos expression in pain-related brain regions including somatosensory cortex (S1), cingulate cortex, insular cortex, and parabrachial nucleus (PBN), all significantly elevated above CReGFP controls (S1 p=0.043, cingulate p=0.016, insula p=0.035, PBN p=0.023, n=5 per group). This pattern is consistent with nociceptive signaling being relayed along the neuroaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by brain cFos mapping in 5 CRCre;Ai32 and 5 CReGFP control animals with appropriate statistical comparisons. The brain regions showing activation are well-established components of pain processing pathways. All p-values are <0.05, though some are close to threshold. The inference (C137) is reasonable given the known roles of these regions in nociception.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "Photostimulation-induced nocifensive behavior shows dose-dependent sensitivity to morphine analgesia (3, 10, 30 mg/kg s.c.), with complete abolition at the highest dose (30 mg/kg), confirming the nociceptive nature of the evoked responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C138 is supported by behavioral experiments in 5 animals with randomized morphine dosing. The dose-dependent reduction and complete abolition at 30 mg/kg provides strong evidence for the nociceptive quality of the responses. Morphine is a well-validated analgesic, making this an appropriate positive control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Halorhodopsin-mediated photoinhibition of CR+ neurons selectively increases mechanical withdrawal thresholds on the ipsilateral hindpaw (0.19\u00b10.02g to 0.29\u00b10.04g, p=0.017) but not the contralateral side (0.18\u00b10.02g to 0.19\u00b10.03g, p=0.721, n=8), supporting a role for the CR+ network in processing noxious tactile sensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 are supported by photoinhibition experiments in 8 CRCre;Ai39 mice with appropriate within-animal controls (contralateral side). The selective ipsilateral effect with statistical significance (p=0.017) and lack of contralateral effect (p=0.721) provides strong evidence for necessity of CR neurons in mechanical nociception. The inference (C140) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Spinal photostimulation produces conditioned place aversion in CRCre;Ai32 mice, with significant aversion to the photostimulation arena in both short-term (1hr post-training: 72\u00b125s vs 363\u00b115s baseline, p=0.0001) and long-term (24hr post-training: 89\u00b131s vs 363\u00b115s baseline, p=0.0001) testing (n=9/13 animals showing strong real-time place aversion). This indicates the photostimulation produces a potent sensory experience with strong and lasting negative valence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 are supported by conditioned place aversion testing in 13 animals with 9 showing criterion-level responses. The statistical significance is strong (p=0.0001) for both short- and long-term memory. The experimental design appropriately tests both real-time aversion and memory consolidation. The inference about negative valence (C143) is well-supported by the CPA paradigm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Following spared nerve injury (SNI), photostimulation response duration is significantly elevated at days 5 and 12 post-surgery (97.06\u00b120.40s and 72.43\u00b17.08s vs 50.55\u00b110.91s baseline, p=0.018, n=4) while remaining stable in sham-operated controls (n=2). This implicates the CR network in enhanced dorsal horn excitability under neuropathic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C147 are supported by behavioral data showing SNI-induced mechanical allodynia and enhanced photostimulation responses. However, the sample size is very small (n=4 SNI, n=2 sham), which limits statistical power and generalizability. The p-value (p=0.018) suggests significance, but with only 4 animals, this should be interpreted cautiously. The sham control data (n=2) is insufficient for robust comparison. Additional animals would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "CR neurons form a highly interconnected excitatory network capable of driving excitation in multiple postsynaptic populations including projection neurons via direct synaptic input. Excitation outlasts initial CR-ChR2 activation, indicating capacity to sustain synaptic activity within reciprocal excitatory connections. In vivo optogenetic activation causes profound multifaceted nocifensive responses, demonstrating that this network can prolong, spread, and amplify spinal nociceptive signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 represent summary conclusions that integrate findings from multiple experimental approaches (electrophysiology, anatomy, behavior). These are well-supported by the convergent evidence from in vitro CRACM showing interconnectivity (96.5%), sustained sEPSC increases (~20s), direct PN connections (65%), and in vivo behaviors showing prolonged responses, dermatome spread, and enhanced responses after SNI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Dorsal horn circuits involving excitatory CR neurons are important for pain generation and amplification, and these interneurons represent a future analgesic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is an inference well-supported by the comprehensive experimental evidence showing CR network function in pain processing. Claim C7 is speculative about future therapeutic applications but is reasonable given the demonstrated role in pain and the morphine sensitivity of responses. However, no actual therapeutic targeting experiments were performed, so this remains a hypothesis for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript provides extensive background on dorsal horn sensory processing, the role of inhibitory vs excitatory interneurons, and prior work on CR neurons, establishing the context and rationale for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 represent background information and literature review that appropriately contextualizes the study. These claims are supported by citations to established literature and general neuroscience knowledge. The characterization of the field's understanding (e.g., C10, C14) and prior findings on CR neurons (C19-C24) provides appropriate justification for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C156",
+      "C157"
+    ],
+    "result": "The high interconnectivity between CR-ChR2 cells establishes an excitatory network that could substantially enhance dorsal horn excitation. This is consistent with prior DREADD studies showing that CNO activation of CR neurons recruits both DREADD-positive (30%) and DREADD-negative (45%) CR neurons. Lamina I projection neurons receive convergent multicomponent inputs and reliably discharge action potentials in response to CR-ChR2 input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 integrate current findings with prior literature (Peirs et al., 2015) to support the interpretation of CR network function. The comparison with DREADD studies (C154) appropriately contextualizes the interconnectivity findings. The characterization of projection neuron responses (C157) is supported by the CRACM data presented earlier.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The findings are consistent with prior models proposing excitatory relays for allodynia and feed-forward circuits for nociceptive processing. Under pathological conditions, CR neurons receive low-threshold input via VGLUT3+ lamina III neurons. The current study confirms ~30% of excitatory input to projection neurons derives from CR interneurons (86.5% also expressing SOM), supporting prior proposals of CR\u2192SOM\u2192PN circuits while also demonstrating direct CR\u2192PN connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C166 appropriately integrate current findings with prior literature to refine circuit models. The neuroanatomical data (C162) provides quantitative support for the proposed circuits. The comparison with prior methodologies (C165) acknowledges potential differences while noting similar fidelity of expression. The inference about central vs peripheral activation (C166) is well-supported by the primary afferent analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "The interconnectivity of CR neurons combined with the identified postsynaptic circuitry provides mechanisms for both allodynia (relaying low-threshold input into nociceptive circuits) and hyperalgesia (providing additional excitation through reverberating patterns of excitation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 represent mechanistic interpretations that integrate the anatomical and functional findings. These are reasonable inferences given the demonstrated interconnectivity, the connections to projection neurons, and the sustained activity patterns. However, these specific mechanisms (allodynia vs hyperalgesia) were not directly tested with appropriate sensory stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Inhibitory signaling has been central to spinal sensory processing models, and contemporary work has identified several critical inhibitory populations. The current study shows CR network activation engages inhibitory interneurons, which may be important for modality coding and tuning sensory thresholds. The CR microcircuits appear to have an in-built inhibitory mechanism to limit their activity under control conditions, and reduction of this inhibition could unmask excitation relevant to pathological pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C176 appropriately discuss the role of inhibition in the CR network. The cFos data showing recruitment of Pax2+ neurons (C171) supports engagement of inhibitory circuits. The inferences about modality coding (C172) and threshold tuning (C173) are reasonable but somewhat speculative. The distinction that inhibition is driven by CR interneurons rather than primary afferents (C174) is an important mechanistic point. The speculation about reduced inhibition unmasking excitation (C176) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "CR network-evoked inhibition is widespread with both direct and indirect components. Direct inhibition comes from inhibitory CR neurons activated by photostimulation, while polysynaptic inhibition involves secondary recruitment of other inhibitory populations, potentially including dynorphin-expressing neurons (which gate somatostatin neurons) and GABAergic enkephalin neurons (which gate mechanical pain).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C179 are supported by the oIPSC latency analysis showing both direct and delayed components. The identification of candidate inhibitory populations (C180-C181) is appropriately speculative, citing relevant literature but acknowledging these are hypotheses requiring future testing. The mechanistic interpretation is reasonable given the circuit architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "The behavioral consequences of CR circuit activation are striking and resemble prior reports of somatostatin neuron photostimulation. The morphine sensitivity confirms nociceptive quality, as morphine is analgesic but not antipruritic. Prior optogenetic and chemogenetic studies of inhibitory populations showed predictable effects on sensory thresholds, suggesting minimal impact of the small inhibitory CR population recruited in these experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C190 appropriately contextualize the behavioral findings with prior literature. The comparison with somatostatin photostimulation (C183-C185) is reasonable given the overlap in populations. The discussion of morphine's selectivity (C186-C187) appropriately addresses the pain vs itch distinction. The inference about minimal impact of inhibitory CR neurons (C190) is reasonable given their small proportion and prior literature on inhibitory neuron function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Prior work focused on plasticity between primary afferents and dorsal horn neurons, whereas the current findings extend understanding to show plasticity within intrinsic dorsal horn circuits. The excitatory CR network provides a pathway to spread excitation across dermatome boundaries, and may also facilitate rostrocaudal spread of activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C192 appropriately distinguish the current findings from prior work on afferent-to-dorsal horn plasticity. The inference about dermatome spread (C193) is well-supported by the behavioral data showing stereotyped progression and the mediolateral cFos distribution. The speculation about rostrocaudal spread (C194) is reasonable but was not directly examined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C195",
+      "C196"
+    ],
+    "result": "The current view of excitatory interneurons ascribes a limited role of linking innocuous tactile input to nociceptive circuitry. The current findings suggest CR neurons also provide a polysynaptic network to enhance/amplify local excitation, prime the region for subsequent responses, and spread excitatory signaling across modality borders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C196 appropriately position the current findings as extending beyond prior models. The characterization of the current view (C195) is supported by citations. The proposed expanded role (C196) is well-supported by the experimental evidence showing interconnectivity, sustained responses, temporal summation, and dermatome spread.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "Strong CR network activation likely establishes reverberatory activity among interconnected excitatory circuits and potentially induces short-term plasticity at these synapses. In vitro recordings of enhanced synaptic signaling in CR neurons and projection neurons following photostimulation support this explanation, though future work is needed to assess the relative importance to behavioral responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197-C199 propose mechanistic explanations for the sustained activity patterns. The inference about reverberatory activity (C197) is reasonable given the interconnectivity and is supported by citation to similar proposals. The speculation about short-term plasticity (C198) is plausible but not directly tested. The acknowledgment that future work is needed (C199) appropriately recognizes the limitations of the current evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "The results confirm CR neurons form an excitatory network contributing to spinal pain signaling that can amplify pain signals without peripheral input. Their strong interconnectivity positions them to alter sensory information before relay to higher centers. Future work must determine how these circuits respond during peripherally-evoked sensory processing and how pathology alters CR circuits to contribute to pathological pain symptoms and inform therapeutic targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C202 represent appropriate summary conclusions well-supported by the experimental evidence. The acknowledgment of study limitations (C203) and identification of future research directions (C204-C206) are appropriate. The statement about CR networks becoming more excitable under neuropathic conditions (C204) is supported by the SNI data, though with limited sample size.",
+    "result_type": "MAJOR"
+  }
+]

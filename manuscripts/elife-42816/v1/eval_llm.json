@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study employed a within-subjects design where 46 participants completed both a numerical decision task (judging average of colored digits 1-6) and a probabilistic reward-guided learning task (learning reward probabilities of six novel images) during EEG recording. The tasks were explicitly designed to have no association between numbers and bandits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe the experimental design clearly and are directly supported by the Methods section. The sample size (n=46), task descriptions, and explicit statement that bandits were never associated with numbers are all well-documented. This provides the foundation for testing the main hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "RSA revealed that neural patterns for both numbers and bandits showed distance effects from ~100 ms post-stimulus, with patterns becoming increasingly dissimilar for stimuli with more divergent magnitude. This effect was independent of task framing and color category, suggesting abstract magnitude representation rather than decision-related signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are well-supported by the RSA analyses shown in Figure 1B and supplementary figures. The statistical significance (Pcluster <0.005), replication across task framings (Figure 1\u2014figure supplement 2), and control for decision variables strengthen these findings. The claim that this represents abstract magnitude (C25) is a reasonable inference given the task-framing independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Cross-validation RSA demonstrated that neural patterns for numbers and bandits aligned along a shared magnitude representation, with digit 6 most similar to the highest-value bandit and digit 1 most similar to the lowest-value bandit. This effect was stable from 300-650 ms and robust to removal of any single number/bandit pair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C27-C30 represent the core finding and are strongly supported by Figures 2A-C. The cross-temporal RSA (Figure 2B), leave-one-out analysis (Figure 2C), and statistical significance (Pcluster <0.005) provide converging evidence. The claim is further strengthened by control analyses showing the effect persists when excluding the most extreme pair (Figure 2\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Both on-diagonal (each number most similar to its corresponding bandit) and off-diagonal (gradual dissimilarity patterns) effects were independently reliable, indicating that numbers and bandits share not just one-to-one mappings but transitive relational structure in neural representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by the EDI analysis (Figure 3A) and off-diagonal analysis (Figure 3B). The statistical reliability of both effects strengthens the interpretation that the shared representation preserves ordinal structure, not just categorical mappings. This is a key finding distinguishing this from simple associative learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Behavioral choice patterns from the numerical task explained variance in neural patterns for both numbers and bandits, but bandit choice patterns only explained variance in bandit neural patterns. This asymmetry suggests humans used their intrinsic sense of magnitude when forming neural representations of bandits, but not vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by the multiple regression analyses (Figure 4C-D, Pcluster <0.005). The asymmetric relationship is a key finding supporting the scaffolding hypothesis. However, C35 notes the lack of correlation in residual choice matrices, which somewhat limits the behavioral evidence. The interpretation in C38 is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Participants showed non-linear weighting of numbers in the numerical task, giving disproportionate weight to larger magnitudes (numbers 5-6), replicating prior findings. This was captured by a power-law model with k>1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is well-supported by Figure 4E-F and explicitly replicates prior work (Spitzer et al., 2017). The power-law model fits (k=2.04\u00b11.11, t(45)=12.47, p<0.001) provide quantitative support. This establishes a behavioral signature that can be compared to neural patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A centro-parietal positivity (CPP) varied with magnitude of both numbers and reward probabilities, following an ascending pattern regardless of task framing. This signal may represent magnitude rather than certainty alone, and is not the sole driver of the multivariate cross-validation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by Figure 5A-B and supplementary analyses. The CPP's independence from task framing (Figure 5\u2014figure supplement 1) and the persistence of multivariate effects after CPP regression (Figure 5\u2014figure supplement 2) support the interpretation that the effect is not purely univariate. However, the interpretation that CPP represents magnitude rather than certainty (C48) remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SVD dimensionality reduction revealed that the shared magnitude code is low-dimensional, with reliable cross-validation persisting when all but 2-3 eigenvectors were removed, but significantly attenuated with only 1 dimension. This indicates the representation is not purely univariate but exists in a low-dimensional subspace.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by the SVD analysis (Figure 5C) and control analysis (Figure 5\u2014figure supplement 3). The statistical comparisons between different dimensionalities provide clear evidence for the low-dimensional nature of the code. This addresses an important question about the complexity of the shared representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "MDS visualization revealed that numbers and bandits align principally along a single magnitude axis, with an additional second dimension potentially encoding choice certainty, along which extreme values (1, 6, worst/best bandits) diverge from intermediate values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by Figure 5D and Video 1. The MDS provides an intuitive visualization consistent with the SVD results. However, the interpretation of the second dimension as certainty (C55) is somewhat speculative and would benefit from more direct validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C64"
+    ],
+    "result": "Neural network simulations demonstrated that shared relational structure between two stimulus sets promotes faster retraining on the second set, even when stimuli have different physical features. This provides a mechanistic account of how structural alignment facilitates transfer learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C56, C64 are supported by the neural network simulations (Figure 6). The comparison between structured and shuffled control conditions, and the effect of shuffling hidden-to-output weights, provide clear evidence for the benefit of shared structure. However, this is a computational demonstration rather than direct evidence from the human data, limiting its strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study concludes that learning about reward probability is accompanied by structural alignment of value representations with neural codes for magnitude. Rather than using an unstructured lookup table, humans project stimuli onto a low-dimensional 'bad-to-good' axis aligned with the mental number line, suggesting recycling of abstract magnitude concepts for encoding reward probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C59-C62 represent the main theoretical conclusions. These are well-supported by the convergence of multiple analyses (cross-validation RSA, behavioral-neural correlations, dimensionality reduction). However, these remain interpretations of the data rather than direct demonstrations. The causal claim that magnitude representations serve as a 'scaffold' (C60) is inferential and would require additional experimental manipulation to fully establish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A link was found between transitive neural codes and behavior: choice patterns in the two tasks were positively correlated, and how participants treated numbers in the numerical task was reflected in neural patterns of both tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by the behavioral analyses (Figure 4). However, the strength of this link is somewhat limited by the lack of correlation in residual choice matrices (C35), suggesting the behavioral evidence is weaker than the neural evidence for shared structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors acknowledge that EEG's limited spatial resolution leaves open questions about the true dimensionality of the shared code, though analyses indicate it is low-dimensional but not univariate. The findings are consistent with theories proposing that parietal magnitude representations bridge different metrics (space, time, number) and with prior work on univariate EEG signals, while suggesting more complex multivariate patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 represent appropriate acknowledgment of limitations and contextualization within prior literature. The limitation regarding spatial resolution (C69) is valid and important. The claims about consistency with prior work (C71, C73) are appropriately supported by citations, though the interpretation of 'more complex patterns' (C72) could benefit from more specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction establishes theoretical context by contrasting reinforcement learning models (which learn gradually with limited generalization) with cognitive science approaches emphasizing abstract concepts and relational structure. It notes that neural patterns for numbers respect their cardinality, and that number is a symbolic system expressing magnitude abstractly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C17 accurately represent prior work and theoretical frameworks, supported by appropriate citations. These provide essential context for the study's motivation and hypotheses. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Humans can learn abstract concepts describing invariances over relational patterns, and magnitude allows compact representation on a single dimension (mental line).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent established knowledge in cognitive science and provide the conceptual foundation for the study. These are appropriately characterized as general principles rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Learning structured value representations enables new inductive inferences (e.g., transitive preferences without exhaustive comparison) and may facilitate downstream processing related to a 'common currency' for reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is speculative about potential benefits of structured representations. While theoretically plausible and supported by citations, this is not directly tested in the current study. The claim represents a reasonable hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

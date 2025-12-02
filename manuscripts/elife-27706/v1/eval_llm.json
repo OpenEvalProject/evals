@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C99",
+      "C100"
+    ],
+    "result": "SOX4 acts as an epigenome-guided transcriptional activator that preferentially binds to regions of active/open chromatin marked by H3K4me3 and H3K27ac, and upon binding, further enhances the active chromatin state by increasing POL2 and H3K27ac occupancy. This binding pattern is context-dependent and varies across different breast cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C35 provide comprehensive ChIP-seq evidence showing SOX4 binding enrichment at TSS-proximal sites with active chromatin marks (C25, C28-C30), central enrichment of SOX4 consensus motifs (C26-C27), and increased POL2/H3K27ac upon SOX4 induction (C32). The context-dependency is demonstrated by limited overlap between cell lines (C34). The mechanistic interpretation (C31, C33, C35, C99, C100) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "SOX4 functions predominantly as a transcriptional activator, with 650 core target genes identified through integration of ChIP-seq and RNA-seq data. Of these, 63% are upregulated and only 37% are downregulated, with evidence suggesting that gene repression occurs through indirect secondary mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 provide convergent evidence from RNA-seq (C36, C38), ChIP-seq overlap analysis (C37), qRT-PCR validation (C39), GSEA (C40), hypergeometric testing (C41), and quantitative ChIP-seq analysis (C42) all consistently showing SOX4 primarily activates gene expression. The inference about indirect repression (C43) is reasonable given the lack of SOX4 binding enrichment at repressed genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C101"
+    ],
+    "result": "The SOX4 transcriptional network shows breast cancer subtype specificity, with the core SOX4 gene signature strongly predicting poor survival specifically in Claudinlow breast cancers but showing only moderate or no correlation in other subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 and C101 are supported by survival analysis in the METABRIC cohort showing strong correlation with decreased survival in Claudinlow tumors (C44, C101) but weaker correlations in other subtypes (C45). This provides evidence for context-dependent SOX4 function (C46), consistent with the epigenome-guided mechanism established in the first result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C4"
+    ],
+    "result": "The SOX4 transcriptional network is enriched for pro-angiogenic processes, particularly blood vessel morphogenesis, with this association restricted to positively regulated genes including secreted factors involved in angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by GO-term analysis showing significant enrichment for blood vessel morphogenesis (C47) and secreted angiogenic factors (C48), with this enrichment specific to upregulated genes (C49). This directly supports the abstract claim C4 about pro-angiogenic enrichment and establishes the biological context for the subsequent mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SOX4 directly regulates EDN1 expression by binding to a conserved site at -350 bp from the TSS, resulting in increased ET-1 secretion. This regulation is observed across multiple breast cancer cell lines (HMLE, MDA-MB-231, HCC1954).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 provide comprehensive evidence for direct SOX4-EDN1 regulation through multiple complementary approaches: ChIP-seq showing SOX4 binding and increased active marks at the EDN1 locus (C54), RNA-seq and qRT-PCR showing increased EDN1 expression (C54-C55), conservation analysis identifying binding sites (C58), luciferase assays demonstrating the -350 bp site is functional (C59-C60), pull-down assays confirming direct binding (C61), and ELISA showing increased ET-1 secretion (C62). The regulation is validated across multiple cell lines (C56-C57). This strongly supports the abstract claim C5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "SOX4-induced ET-1 secretion promotes endothelial cell migration, network formation, and sprouting in vitro. These pro-angiogenic effects are mediated through endothelin receptor activation and can be blocked by the receptor antagonist Bosentan or by EDN1 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C76 provide extensive functional validation across three complementary in vitro assays (wound healing, network formation, sprouting). The effects are consistently observed with conditioned media from SOX4-activated cells (C63, C69, C71-C72), can be phenocopied by synthetic ET-1 peptide (C66, C70, C73), are blocked by Bosentan (C64, C72-C73), require EDN1 (C67, C74), and are reversed by SOX4 knockdown (C76). The proliferation control (C65) strengthens the migration interpretation. This comprehensively supports the in vitro component of abstract claim C6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SOX4 promotes tumor-induced angiogenesis in vivo in a zebrafish xenograft model in an ET-1-dependent manner, as demonstrated by increased ectopic sprouting from the subintestinal vein upon SOX4 activation and decreased sprouting upon SOX4 or EDN1 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide in vivo validation using zebrafish xenografts showing increased sprouting with SOX4 activation (C77), decreased sprouting with SOX4 knockdown (C78), and rescue by EDN1 depletion (C79). The ET-1 dependence (C80) is well-supported by the EDN1 knockdown experiment. This provides the first in vivo evidence supporting abstract claim C6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In an orthotopic mouse xenograft model, SOX4 depletion in MDA-MB-231 cells does not affect primary tumor growth but significantly reduces ET-1 expression, tumor vascularization (blood vessel area, count, and size), and lung metastases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 provide comprehensive in vivo validation in a clinically relevant mouse model. The lack of effect on primary tumor growth (C81) is clearly stated and documented. The maintained knockdown (C82), reduced ET-1 (C83), decreased vascularization (C84), and reduced metastases (C87) are all well-documented with quantitative IHC analysis. The interpretation (C85-C86, C88) is appropriately cautious about correlation vs. causation. This strongly supports abstract claim C6 for in vivo angiogenesis and extends findings to metastasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C8"
+    ],
+    "result": "In a cohort of 452 breast cancer patients, high nuclear SOX4 expression correlates with poor prognostic parameters (tumor size, histological grade, mitotic index), decreased overall survival across multiple subtypes, increased metastasis, and maintained expression from primary tumor to metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 provide comprehensive clinical validation through IHC analysis of a large patient cohort (452 patients) with appropriate statistical analyses. The correlations with poor prognostic parameters (C89), decreased survival (C90-C91), metastasis (C92), and matched primary-metastasis samples (C93) are all statistically significant. The interpretation (C94) and abstract claim (C8) are well-supported by this clinical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "SOX4-high tumors show no significant survival benefit from adjuvant radio- or chemotherapy compared to untreated tumors, while SOX4-low tumors show significant treatment response, suggesting SOX4 may contribute to therapy resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by survival analysis stratified by treatment status in the patient cohort. The lack of treatment benefit in SOX4-high tumors versus significant benefit in SOX4-low tumors (C95) provides evidence for the therapy resistance hypothesis (C96). However, this is observational data and the inference about causation is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C7"
+    ],
+    "result": "In human breast tumors, SOX4 expression correlates with increased blood vessel area and size as measured by CD34 staining, suggesting SOX4 influences tumor-induced angiogenesis in human breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by quantitative CD34 IHC analysis in matched SOX4-high and SOX4-low patient tumors (17 each). The significant increase in vessel area and size (C97) supports the inference about SOX4's role in human tumor angiogenesis (C98) and validates abstract claim C7. The non-significant increase in vessel count is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The SOX4 target gene dataset shows enrichment for EMT and TGF-\u03b2 associated genes, though major EMT transcription factors (SNAI1, SNAI2, TWIST1) are not regulated and EZH2 is not significantly induced, suggesting SOX4 contributes to EMT and TGF-\u03b2 responses through multiple mechanisms independent of EZH2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by GSEA analysis showing enrichment for EMT/TGF-\u03b2 genes (C103) and the observation that EZH2 is not regulated (C104). The interpretation (C105) appropriately reconciles these findings with prior literature (C102) and suggests multiple mechanisms. This provides important mechanistic context for understanding SOX4 function in Claudinlow tumors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "SOX4-induced tumor angiogenesis may contribute to metastatic dissemination, as SOX4 depletion reduces lung metastases in xenografts and SOX4-regulated genes show enrichment for vascular signatures previously associated with metastasis in Claudinlow tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 provide evidence linking angiogenesis to metastasis through the xenograft data (C107), prior literature on vascular signatures (C108), and GSEA showing enrichment for these signatures in SOX4 targets (C109). However, the speculation about causation (C106) is appropriately cautious as the data cannot definitively separate angiogenesis effects from other SOX4 functions like EMT.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establishing SOX4's role in cancer: SOX4 expression is increased in many cancers with context-dependent pro-oncogenic effects, plays roles in development and stem cell populations, correlates with tumor progression and metastasis, promotes EMT and invasion, and shows context-dependent transcriptional networks influenced by cooperating factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 are all supported by citations to prior literature (evidence_type: CITATION or KNOWLEDGE). These establish the scientific context and rationale for the current study. While these are not novel findings from this manuscript, they are accurately represented and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Discussion claims about therapeutic implications: ET-1 correlates with tumor progression in breast cancer, SOX4 represents an interesting therapeutic target for simultaneously inhibiting EMT and angiogenesis, and ET-1 receptor antagonists like Bosentan could potentially be repurposed for SOX4-high tumors based on prior success in ovarian cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110, C112, C115 are supported by citations to prior work. However, claims C111, C113, C114, C116 are speculative (evidence_type: SPECULATION) about therapeutic applications. While these speculations are reasonable based on the presented data, they represent hypotheses for future testing rather than demonstrated results. The therapeutic potential would require clinical validation.",
+    "result_type": "MINOR"
+  }
+]

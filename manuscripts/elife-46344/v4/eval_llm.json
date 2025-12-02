@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "KF116 exhibits striking selectivity for IN tetramers, inducing higher-order multimerization of tetramers within 1 minute but showing no activity against dimers or monomers even after 60 minutes. In contrast, BI224436 shows broader specificity, targeting both tetramers (within 1 min) and dimers (requiring at least 30 min), but not monomers. The stoichiometry differs: KF116:IN is 2:4 (two KF116 molecules bridge two tetramers), while BI224436:IN is 2:2 or 4:4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C36 are strongly supported by DLS kinetic data (Figure 1C, Figure 1\u2014figure supplement 1) and quantitative aggregation assays (Figure 2, Figure 2\u2014figure supplement 1). The differential oligomer specificity is consistently demonstrated across multiple independent experiments with appropriate controls (DMSO). The stoichiometry determinations use piecewise linear regression analysis of dose-response data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The NTD and \u03b1-helical CCD-CTD linker (residues 200-222) are critically important for ALLINI-induced higher-order IN multimerization. Full-length IN is susceptible to both KF116 and BI224436, while truncated constructs lacking either the CTD (NTD-CCD, CCD) or the NTD (CCD-CTD) exhibit marked resistance. The CCD-CTD construct shows only residual aggregation at high inhibitor concentrations (>10 \u00b5M), whereas full-length IN is fully precipitated at these concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C44 are well-supported by DLS experiments (Figure 3A-B) and dose-dependent aggregation assays (Figure 3C-D, Figure 3\u2014figure supplement 1). The data consistently show that all three domains (NTD, CCD, CTD) are required for efficient ALLINI-induced multimerization. The interpretation that the NTD stabilizes tetramer formation is supported by structural knowledge (citations to Hare et al., 2009) and is consistent with the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mutations in the NTD (H12A, K14A, Y15A, Y15A/F185H) and CCD-CTD linker (T210+Pro, \u0394A205) that disrupt IN tetramerization also impair KF116-induced multimerization, viral infectivity, IN catalytic activity, and LEDGF/p75 binding. KF116 shows complete resistance to mutations that yield dimers or monomers (K14A, Y15A, Y15A/F185H, T210+Pro, \u0394A205), while BI224436 retains activity against some dimeric forms (K14A, Y15A/F185H). The control mutation N222K, which maintains tetramers and WT-level functions, remains fully susceptible to both inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 are supported by comprehensive mutagenesis data including SEC analysis (Figure 4\u2014figure supplement 1), DLS experiments (Figure 4\u2014figure supplement 2), catalytic activity assays (Figure 4\u2014figure supplement 3), LEDGF/p75 binding assays (Figure 4\u2014figure supplement 3), and viral infectivity assays (Figure 4\u2014figure supplement 4). The consistent correlation between tetramer formation and KF116 susceptibility across multiple mutants provides strong evidence. The N222K control validates the specificity of the effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Trans-complementation experiments using E11K and K186E mutations that disrupt the E11-K186 ionic bond critical for tetramerization demonstrate that KF116 requires IN tetramers for activity. Individual E11K or K186E dimers are resistant to KF116, but mixing the two mutants to reconstitute tetramers restores KF116-induced multimerization. BI224436 shows activity against K186E dimers and reconstituted E11K+K186E tetramers, but not E11K dimers, consistent with its broader oligomer specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 are supported by DLS data (Figure 5B-C), catalytic activity assays, and LEDGF/p75 binding assays (Figure 5\u2014figure supplement 1). The trans-complementation approach provides elegant functional evidence for KF116's tetramer selectivity. The restoration of IN function and KF116 susceptibility upon mixing E11K and K186E mutants is compelling. The differential behavior of BI224436 further validates the distinct oligomer specificities of the two compounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Molecular modeling using HADDOCK generates symmetric tetramer-KF116-tetramer assemblies with two CCD-KF116-CTD interfaces and buried surface area of ~2000-3200 \u00c5\u00b2, consistent with the experimental 2:4 stoichiometry. Critically, HADDOCK fails to generate symmetric dimer:KF116:dimer assemblies. Crystal structure comparison reveals that KF116's benzimidazole group projects outside the v-shaped pocket, potentially forcing a CTD orientation that favors tetramer-tetramer interactions, while BI224436's bulkier tricyclic ring fills the pocket more deeply, allowing symmetric assemblies with both tetramers and dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C74, C87-C89 are supported by computational docking simulations (Figure 6A-B, Figure 6\u2014figure supplement 1) and crystal structure analysis (Figure 6C). The modeling results are consistent with experimental stoichiometry (C35-C36) and oligomer specificity data (C2, C28-C34). The structural explanation for differential oligomer specificity is plausible and well-reasoned, though some aspects (C88-C89) are speculative interpretations. The failure to generate symmetric dimer:KF116:dimer assemblies computationally corroborates the experimental observation of KF116's tetramer selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C75",
+      "C76"
+    ],
+    "result": "The (-)-KF116 enantiomer exhibits EC50 of ~7 nM against wild-type HIV-1, approximately 30-fold more potent than the (+) enantiomer (~204 nM). (-)-KF116 displays excellent metabolic stability in rat and human liver microsomes with superior properties compared to racemic KF116 and BI224436, showing in vitro half-lives of 320.4 min (rat) and 557.6 min (human) and classification as 'Stable'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C75, C76 are directly supported by antiviral activity data (Figure 7A, Figure 7\u2014figure supplement 1A) and metabolic stability assays (Figure 7\u2014figure supplement 1B). The enantiomer separation and characterization are well-documented. The metabolic stability data include appropriate controls (Verapamil, Domperidone, Chlorpromazine) and are conducted in both rat and human microsomes, providing robust pharmacological characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "(-)-KF116 displays sub-nM activity (EC50 ~0.70 nM) against the clinically relevant DTG-resistant virus containing IN N155H/K156N/K211R/E212T substitutions, representing ~10-fold enhanced potency compared to wild-type virus (~6.73 nM). This enhanced activity correlates with the observation that recombinant IN(N155H/K156N/K211R/E212T) forms almost exclusively tetramers, while IN(N155H/K156N) and WT IN form mixtures of tetramers, dimers, and monomers. KF116 shows similar activity against WT and IN(N155H/K156N) viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C77-C80 are supported by antiviral activity data (Figure 7B) and SEC analysis (Figure 7C). The correlation between enhanced tetramer formation in the quadruple mutant and increased KF116 potency provides strong mechanistic support for KF116's tetramer selectivity. The clinical relevance is established by citation to Malet et al., 2018. The control comparison with the double mutant (N155H/K156N) strengthens the interpretation that the K211R/E212T substitutions in the \u03b1-helical linker drive tetramer stabilization and enhanced KF116 activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C94",
+      "C95"
+    ],
+    "result": "Live-cell imaging of INmNG/CypA-DsRed co-labeled viruses reveals that ALLINI treatment during virion production compromises IN association with capsid cores during subsequent infection. At 90 min post-infection, ALLINI-treated viruses show marked loss of INmNG signal from CypA-DsRed-labeled cores, while control viruses maintain colocalization. Single-particle tracking shows that ALLINI-treated virions lose INmNG signal prior to loss of CypA-DsRed/CA, opposite to the pattern in control viruses where CA uncoating precedes gradual IN degradation. This suggests ALLINI-induced IN aggregates are mislocalized outside protective CA cores and are readily accessible to proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C81-C86, C94-C95 are supported by live-cell imaging data (Figure 8A-D, Figure 8\u2014figure supplement 1-2) using validated dual-labeling methodology. The quantitative colocalization analysis and single-particle tracking provide robust evidence for altered IN-capsid association. The interpretation that mislocalized IN is degraded is supported by previous studies (Francis et al., 2016; Francis and Melikyan, 2018) and is consistent with the observed kinetics. The mechanistic model (C94-C95) represents reasonable inference from the data, though some aspects are speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The NTD stabilizes the conformation of the CCD-CTD \u03b1-helical linker and the entire tetramer through dual interactions with the linker and the CCD of another dimer, potentially facilitating symmetric tetramer-ALLINI-tetramer assemblies. Since both KF116 and BI224436 are highly potent during virion maturation and both target tetramers, the authors hypothesize that IN predominantly exists as tetramers in virions. IN tetramers bind viral RNA and are essential building blocks for lentiviral intasomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C92 represent inferences and hypotheses rather than direct experimental observations. While C90 is a reasonable structural interpretation supported by mutagenesis data (Figure 4), C91-C92 are speculative. The hypothesis that IN predominantly exists as tetramers in virions (C92) is plausible given that both compounds target tetramers and are potent during maturation, but this is not directly demonstrated. C93 is established knowledge supported by citations. The reasoning is logical but would benefit from direct experimental validation of IN oligomeric state in virions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C96"
+    ],
+    "result": "Background and context claims establishing the mechanism of ALLINIs, INSTI resistance patterns, ALLINI pharmacophore requirements, IN domain structure, ALLINI binding sites, and prior structural/computational studies. These claims provide the scientific foundation and rationale for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C27, C96 are primarily supported by citations to published literature and represent established knowledge in the field. These background claims are appropriately referenced and provide necessary context for interpreting the novel findings. The claims about prior ALLINI mechanisms (C1, C9-C11), INSTI resistance (C7-C8), ALLINI structure-activity relationships (C12-C19), IN structure (C20), and prior structural studies (C21-C27) are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The observation that (-)-KF116 exhibits substantially enhanced sub-nM activity against DTG-resistant HIV-1 containing IN N155H/K156N/K211R/E212T substitutions provides support for potential clinical benefits of combining (-)-KF116 and DTG to treat HIV-1 infected patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is a speculative extrapolation from in vitro data to potential clinical applications. While the enhanced activity of (-)-KF116 against DTG-resistant virus (C6, C78) is well-supported experimentally, and prior studies show additive/synergistic effects of ALLINI+INSTI combinations in cell culture (C96), the claim of 'potential clinical benefits' requires clinical validation. The reasoning is sound and the data are suggestive, but clinical efficacy, safety, pharmacokinetics, and drug-drug interactions in patients remain to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C32",
+      "C48",
+      "C53",
+      "C67"
+    ],
+    "result": "TE loads decrease in asexual yeast populations over 1000 generations while remaining constant in sexual populations. Total TE load decreased by 23.5% in asexual strains, and full-length TE copies decreased from approximately 50 to 41. Sexual strains maintained constant TE loads despite rare mating events (10 out of 990 reproduction events).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C28, C32, C48, C53, and C67 provide converging evidence from multiple analytical approaches (total TE load quantification and full-length TE detection) with appropriate statistical tests showing significant generation \u00d7 reproductive mode interactions (p<0.001). The findings are consistent across different measurement methods and account for sequencing coverage differences (C61-C64), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C45"
+    ],
+    "result": "Ancestral TE insertions are lost at higher rates in asexual than sexual strains, while transposition rates remain similar between reproductive modes. Novel TE insertions showed no significant differences between sexual and asexual strains (p=0.338 for generation effect, p=0.271 for reproductive mode effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C45 are supported by statistical analyses showing significant differences in TE loss rates (p<0.001 for interaction) but not in transposition rates (non-significant p-values). This mechanistic insight distinguishes between excision and transposition as drivers of TE load differences, though the detection method may have limitations in identifying all novel insertions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C43",
+      "C47",
+      "C49"
+    ],
+    "result": "The reduction in TE loads under asexual reproduction occurs via evolution of TE activity, most likely through increased excision rates rather than reduced transposition. This mechanism is inferred from parallel reduction across independent asexual strains and supported by simulation modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33, C43, C47, and C49 are supported by the combination of empirical observations (parallel reduction in independent replicates, similar transposition rates) and simulation results showing that only models incorporating evolved TE activity can reproduce the empirical pattern. However, the exact molecular mechanism cannot be directly assessed from the sequencing data, making this an inference rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C46",
+      "C65",
+      "C66"
+    ],
+    "result": "Simulations without modifier alleles show that sexual reproduction enhances purifying selection against TEs, causing faster TE loss in sexual than asexual populations\u2014opposite to empirical observations. Sexual events generate fitness variation that facilitates selection, and increased meiotic TE activity only transiently increases TE loads before purifying selection removes them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C46, C65-C66 describe simulation results that are internally consistent and demonstrate that standard population genetic models without evolved TE activity cannot explain the empirical observations. The simulations appropriately model selection, recombination, and TE dynamics, though parameter choices and model assumptions should be carefully evaluated. The discrepancy between these simulations and empirical data motivates the modifier allele hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C52"
+    ],
+    "result": "Simulations incorporating a modifier allele that increases excision rates can reproduce the empirical pattern. The modifier spreads to fixation in asexual strains via genetic hitchhiking with low-TE genomes but cannot spread in sexual strains due to recombination breaking the association. This suggests a TE defense mechanism either segregated in the ancestral strain or arose de novo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C42 and C52 show that simulations with a modifier allele can fit the data (C42), but this is a modeling result that demonstrates plausibility rather than proof. The modifier is a hypothetical construct, and C52 explicitly acknowledges the mechanism cannot be assessed in the empirical data. Alternative explanations (e.g., changes in host genome affecting TE activity, epigenetic modifications) are not thoroughly explored. The model fit is encouraging but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C48",
+      "C54",
+      "C55"
+    ],
+    "result": "Sex is a major driver of genomic TE loads and at the root of TE evolutionary success. Even rare sexual events (10 out of 990 reproduction events) maintain TE loads, contrasting with the hypothesis that asexual species accumulate TEs and are driven to extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31, C48, C54, and C55 represent the main conclusions synthesized from the empirical and simulation results. The evidence from TE maintenance in sexual strains and reduction in asexual strains supports this interpretation. However, the generalizability beyond S. cerevisiae and the specific experimental conditions (rare sex every 90 generations) requires caution. The contrast with extinction hypotheses (C54) is valid but limited to the 1000-generation timeframe studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Theoretical predictions indicate sexual reproduction has dual effects on TE accumulation: facilitating TE spread to new genomes while also enhancing purifying selection and host defenses. In asexuality, reduced purifying selection may cause TE accumulation unless excision rates are sufficiently high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12 accurately represent established theoretical predictions from cited literature. These provide the conceptual framework for the study and are well-supported by prior work. The claims appropriately acknowledge the complexity and competing effects of sexual reproduction on TE dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Natural populations of asexual and sexual organisms show no consistent difference in TE loads, likely due to confounding factors such as hybridization and polyploidization that mask the effect of reproductive mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 accurately summarize findings from multiple cited empirical studies and provide important context for why experimental evolution approaches are needed. The explanation for inconsistent patterns (confounding factors) is reasonable and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The experimental design involved 12 yeast strains (4 sexual, 4 asexual) derived from a common ancestor (W303), grown for 990 generations with sexual strains undergoing mating every 90 generations. Paired-end Illumina sequencing was performed every 90 generations with coverage averaging ~2.96 million reads per sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C56-C60 describe the experimental design and sequencing methodology from McDonald et al. (2016). These are factual descriptions of the experimental setup that are verifiable from the cited source and the current study's methods. The design is appropriate for testing the effects of reproductive mode on TE dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "S. cerevisiae TEs are well-characterized, consisting solely of LTR retrotransposons (Ty1-Ty5 families). The W303 genome contains approximately 50 full-length active copies and 430 inactive copies (truncated elements and solo-LTRs). Excisions occur via intra-chromosomal recombination between flanking LTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 accurately describe established knowledge about S. cerevisiae TEs from cited literature. This background information is well-supported and provides essential context for interpreting the experimental results. The characterization of the study organism's TE complement is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The McClintock pipeline detected 24 of 50 full-length TEs from the reference genome. Sequencing coverage influences TE detection ability (p<0.001), with asexual strains having lower coverage than sexual strains (p=0.002), though coverage did not differ through time (p=0.588). Subsampling to equalize coverage yields similar findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C61-C64 address important methodological considerations regarding detection bias. The authors appropriately acknowledge the limitation of detecting only 24/50 TEs and account for coverage differences through statistical modeling and subsampling analyses. The robustness checks (C64) strengthen confidence that coverage differences do not explain the main findings, though the incomplete detection remains a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "TEs are widespread genomic parasites that proliferate independently of the host cell cycle via cut-and-paste or copy-and-paste mechanisms. Despite generally providing no advantage to hosts, TEs can invade genomes and cause deleterious effects through ectopic recombination and gene disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 represent well-established background knowledge about TE biology, appropriately cited to foundational literature. These claims provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "A modifier acting on transposition rates rather than excision rates would produce similar effects, since net TE activity depends on the relative rates of transposition versus excision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is a valid theoretical point about the equivalence of reducing transposition versus increasing excision for net TE activity. This is logically sound and helps interpret the simulation results, though it remains a theoretical consideration rather than an empirically tested claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The findings are consistent with low TE activity in old asexual lineages and the theoretical prediction that TEs should evolve to be benign in asexual species due to aligned evolutionary interests between TEs and host genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 appropriately connect the current findings to prior empirical observations and theoretical predictions from cited literature. The consistency with other studies strengthens the interpretation, though the generality of this pattern requires further investigation across diverse asexual lineages.",
+    "result_type": "MINOR"
+  }
+]

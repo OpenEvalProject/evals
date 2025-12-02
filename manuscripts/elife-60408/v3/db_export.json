@@ -1,0 +1,1776 @@
+{
+  "submission": {
+    "id": "4f0cc8de-a297-468b-8f5c-b9aee196f1bc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:23:06.735085Z",
+    "updated_at": "2025-12-02T19:23:06.735085Z"
+  },
+  "content": [
+    {
+      "id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "submission_id": "4f0cc8de-a297-468b-8f5c-b9aee196f1bc",
+      "content_type": "manuscript",
+      "content_text": "# 3D virtual pathohistology of lung tissue from Covid-19 patients based on phase contrast X-ray tomography\n\n## Authors\n\n- Marina Eckermann<sup>1</sup>\n- Jasper Frohn<sup>1</sup>\n- Marius Reichardt<sup>1</sup>\n- Markus Osterhoff<sup>1</sup>\n- Michael Sprung<sup>3</sup>\n- Fabian Westermeier<sup>3</sup>\n- Alexandar Tzankov<sup>4</sup>\n- Christopher Werlein<sup>5</sup>\n- Mark K\u00fchnel<sup>5</sup>\n- Danny Jonigk<sup>5</sup> \u2020\n- Tim Salditt<sup>1</sup> ([ORCID: 0000-0003-4636-0813](https://orcid.org/0000-0003-4636-0813)) \u2020\n\n### Affiliations\n\n1. Institut f\u00fcr R\u00f6ntgenphysik, Georg-August-Universit\u00e4t G\u00f6ttingen Germany\n2. Cluster of Excellence 'Multiscale Bioimaging: from Molecular Machines to Networks of Excitable Cells' (MBExC), University of G\u00f6ttingen G\u00f6ttingen Germany\n3. Deutsches Elektronen-Synchrotron (DESY) Hamburg Germany\n4. Institut f\u00fcr Medizinische Genetik und Pathologie, Universit\u00e4tsspital Basel Basel Switzerland\n5. Medizinische Hochschule Hannover (MHH) Hannover Germany\n6. Deutsches Zentrum f\u00fcr Lungenforschung (DZL) Hannover (BREATH) Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe present a three-dimensional (3D) approach for virtual histology and histopathology based on multi-scale phase contrast x-ray tomography, and use this to investigate the parenchymal architecture of unstained lung tissue from patients who succumbed to Covid-19. Based on this first proof-of-concept study, we propose multi-scale phase contrast x-ray tomography as a tool to unravel the pathophysiology of Covid-19, extending conventional histology by a third dimension and allowing for full quantification of tissue remodeling. By combining parallel and cone beam geometry, autopsy samples with a maximum cross section of 8 mm are scanned and reconstructed at a resolution and image quality, which allows for the segmentation of individual cells. Using the zoom capability of the cone beam geometry, regions-of-interest are reconstructed with a minimum voxel size of 167 nm. We exemplify the capability of this approach by 3D visualization of diffuse alveolar damage (DAD) with its prominent hyaline membrane formation, by mapping the 3D distribution and density of lymphocytes infiltrating the tissue, and by providing histograms of characteristic distances from tissue interior to the closest air compartment.\n\n## Introduction\n\nSevere progression of the 2019 coronavirus disease (Covid-19) is frequently accompanied by the clinical acute respiratory distress syndrome (ARDS) and respiratory failure, an organ manifestation responsible for the majority of Covid-19 fatalities. Lung injury associated with ARDS can be readily detected by radiographic chest imaging and clinical computed tomography (CT), which have assisted the diagnosis and management of Covid-19 patients (Lee et al., 2020; Shi et al., 2020; Chung et al., 2020). Here, so-called peripheral lung ground-glass opacities are the main radiological hallmark of ARDS, and can be linked to the histological observation of diffuse alveolar damage (DAD) with edema, hemorrhage, and intraalveolar fibrin deposition (Ackermann et al., 2020). These findings have also been reported for infections by Middle East respiratory syndrome coronavirus (MERS-CoV), SARS-CoV, and influenza viruses. Distinctive features of pulmonary involvement of Covid-19 include severe endothelial injury associated with the presence of intracellular virions and inflammation, disrupted cellular membranes, as well as widespread thrombosis with microangiopathy. As reported in Ackermann et al., 2020, alveolar capillary microthrombi were found to be nine times as prevalent in patients with Covid-19 as in patients with the also very aggressive H1N1 influenza A virus, also referred to as swine flu. Importantly, in Covid-19 lungs, a specific variant of new vessel growth - intussusceptive angiogenesis - was significantly more prevalent, that\u00a0is, 2.7 times as high as in lungs of patients with H1N1 influenza A.\n\nHistomorphological assessment of formalin-fixed, paraffin-embedded (FFPE) tissue stained with haematoxylin and eosin still represents the gold standard in histological diagnostics of non-neoplastic lung diseases, including DAD and virus induced pneumonia. In order to unravel the corresponding pathophysiology of the lungs, digitalization, visualization and quantification of the morphological changes associated with Covid-19 represent a key challenge, and require both high resolution and the capability to screen larger volumes. For this reason, imaging the intricate three-dimensional (3D) tissue architecture of the lung and its pathological alterations on multiple length scales calls for 3D extensions of well-established histology techniques.\n\nIn this work, we want to demonstrate the potential of propagation-based phase contrast x-ray tomography as a tool for virtual 3D histology in general, and in particular for the histopathology of Covid-19. Our work is based on the assertion that integration of 3D morphological information with well-established histology techniques can provide a substantial asset for unraveling the pathophysiology of SARS-Cov-2 infections. To this end, we have collected x-ray tomography data from the same autopsies, which were previously studied by immunohistochemical analysis and measurements of gene expression (Ackermann et al., 2020). We ask in particular, whether DAD and the morphology of blood vessels can be visualized and quantified in 3D. This is a timely scientific question in Covid-19 research, especially in view of increased intussusceptive angiogenesis reported in Ackermann et al., 2020. Here we present first results obtained from the postmortem lung samples of six patients who succumbed from Covid-19. We exemplify the capability of this approach by 3D visualization of the DAD with hyaline membrane formation, by mapping the 3D distribution and density of angiocentric inflammation (perivascular T-cell infiltration), and by providing histograms of characteristic distances from the tissue interior to the closest air compartment.\n\nIn contrast to conventional histology based on thin sections, propagation-based x-ray phase-contrast tomography (PC-CT) offers a full 3D visualization with isotropic resolution and without destructive slicing of the specimen (Ding et al., 2019; Dejea et al., 2019; Saccomano et al., 2018; T\u00f6pperwien et al., 2018; Khimchenko et al., 2016). The interaction of x-rays with the object is described by the continuous complex-valued index of refraction $n\u2062(\ud835\udc2b)=1-\\delta\u2062(\ud835\udc2b)+i\u2062\\beta\u2062(\ud835\udc2b)$. Phase contrast capitalizes on the fact that for hard x-rays, the real-valued decrement \u03b4 is several orders of magnitude higher in soft biological tissues than \u03b2, which accounts for absorption (Nugent, 2010) and that small contrast levels can be reconstructed by propagation imaging even at low fluence (Jahn et al., 2017). Contrast is formed by transformation of the phase shifts into measurable intensity variations by self-interference of the exit wave during free-space propagation between sample and detector (Paganin and Nugent, 1998; Cloetens et al., 1999). However, problems with phase retrieval, phase wrapping, insufficient coherence, or on the contrary strong phase gradients can render its application challenging. For lung imaging it has already been demonstrated as an advantageous imaging technique up to macroscopic scales (Parsons et al., 2008; Stahr et al., 2016; Morgan et al., 2020), including live animal models of respiratory diseases. But in contrast to other full-field phase contrast techniques, e.g. based on grating interferometry or analyzer crystals, it can also reach a resolution below optical microscopy (Khimchenko et al., 2018). In this work we exploit both the high resolution capability of PC-CT and the fact that its phase sensitivity is high enough to probe the small electron density variations of unstained tissue, embedded in paraffin, ethanol, or even aqueous buffer (T\u00f6pperwien et al., 2019). However, this requires careful optimization of photon energy, illumination function, and phase retrieval algorithms, as detailed further below.\n\nThe 3D virtual pathohistology approach for Covid-19 presented here was realized by implementing a novel multi-scale phase contrast x-ray tomography concept, with dedicated x-ray optics and instrumentation. Overview and regions-of-interest (ROI) scans were recorded on the same paraffin-embedded sample, covering a maximum tissue cross section of 8 mm by stitching different tomograms, and with a minimum voxel size of 167\u00a0nm in certain ROIs. Scale-bridging and dynamic ROI selection in close spatial and temporal proximity was implemented with dedicated instrumentation the GINIX endstation of the beamline P10/PETRA III (DESY, Hamburg) (Salditt et al., 2015). Specifically, we combined two optical geometries, which has only been realized at different synchrotron beamlines before: (i) Parallel beam tomography, covering a large field of view (FOV), with a pixel size of 650\u00a0nm. In this setting, a volumetric throughput on the order of $10^{7}\\mum/3s$ was achieved, while maintaining the ability to segment isolated cells in unstained tissue. (ii) Cone beam geometry for recording of highly magnified holograms, based on advanced x-ray waveguide optics, providing mode filtering, that\u00a0is, enhanced spatial coherence and smooth wavefronts. Based on the geometrical magnification, the effective pixel size can be adjusted in the range 10\u00a0nm\u2013300\u00a0nm. The two imaging schemes are shown schematically in Figure 1c and d, respectively. Further, using this particular optics, together with appropriate choices of photon energy and geometric parameters, we can reach extremely small Fresnel numbers F of the deeply holographic regime, well below the typical range exploited at other nano-tomography instruments. This offers the advantage of highest phase sensitivity sufficient to even probe the small electron density variations of unstained tissue, at relatively low dose (Hagemann and Salditt, 2018). To exploit this sensitivity, we use advanced phase retrieval methods including non-linear generalizations of the CTF-method (Cloetens et al., 1999) based on Tikhonov regularization (Lohse et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60408/elife-60408-fig1-v3.jpg)\n\n**Figure 1.:** (a) HE stain of a tissue micro-array paraffin block with samples of all six patients who succumbed to Covid-19. (b) Schematic representation of the sample preparation and mounting. In a first step biopsy punches containing the entire individual lung tissues are transferred onto a holder for the parallel-beam local tomography acquisition, followed by a further reduction in size to a 1\u00a0mm biopsy punch, for cone-beam tomographic recordings. (c) Configuration for parallel-beam tomography. (d) Configuration for cone-beam holo-tomography.\n\n## Results\n\nIn total, we investigated six postmortem lung samples from Covid-19 patients (Menter et al., 2020). A tissue micro-array paraffin block with samples of all six patients and the corresponding HE stain is shown in Figure 1a. Information about age, gender, hospitalization, clinical, radiological and histological characteristics of all patients are shown in Table 2. Before presenting the results for the six Covid-19 patients for each of the imaging levels (scales), we give an overview on the typical datasets for one exemplary sample (I), see Figure 2. The typical FOVs, image quality, and appearance of the lung structure as well as the amount of data can be inferred, and inspected in the reconstructions provided online (https://doi.org/10.5281/zenodo.3892637). The datasets are denoted by patient I-VI, respectively. Gray values of the tomographic reconstruction represent phase shift per voxel with edge length $v\u2062x$, the local electron density difference to the average paraffin can be computed by\n\n$$\n\u0394\u03c1_{e}(r)=\\frac{\\phi_{vx}(r)}{vx\u22c5\\lambda\u22c5r_{0}},\n$$\n\nwith wavelength \u03bb and $r_{0}$ classical electron radius.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60408/elife-60408-fig2-v3.jpg)\n\n**Figure 2.:** (a) Virtual section through the stitched reconstruction volume with indicated position for the 1\u00a0mm biopsy punch. (b) Virtual section through the reconstruction of the 1\u00a0mm biopsy punch volume with indicated position for the cone-beam dataset. (c) Virtual section through the cone beam dataset. (d) Image of an HE-stained histological section, which is in close proximity to the virtual slice in (a). (e) 3D views of the biopsy punch. (f) 3D views of the cone-beam datasets. Scale bars: (a) $500\u2062\\mu\u2062m$ and (b,c) $100\u2062\\mu\u2062m$.\u00a0The entire reconstruction volume is visualized in Video 1.\n\n![Video 1.](https://cdn.elifesciences.org/articles/60408/elife-60408-video1.mp4.jpg)\n\n**Video 1.:** First the parallel beam data set is shown, followed by the cone beam zoom reconstruction.\n\n### Reconstructed electron density\n\nNext, we present representative slices through the reconstruction volumes of all samples for all acquisition scales. Figure 3 presents the stitched reconstruction volumes, recorded under conditions of local tomography, see Table 3. Conventional HE-stained histology images of all samples are shown in Appendix 1\u2014figure 1.\u00a0Since these volumes are computed from stitching up to 20 individual tomograms, the question arises to which extend the image quality is limited by potential artifacts of local tomography, that\u00a0is, errors due to the fact that part of the sample is outside the reconstruction volume. For this reason, 1\u00a0mm punches were taken after the stitched overview and rescanned in the parallel beam configuration, without local tomography conditions, since they fitted within the FOV. The results are presented in Figure 4, and validate the previous stitching results. The 1\u00a0mm punches then also provided an appropriate size for the cone-beam recordings, which are shown in Figure 5. Importantly, in each scan the previous level guided the choice for the next FOV and informed about the larger environment. In the following, we briefly discuss the samples one-by-one, with regard to all acquisition scales. A comparison of morphological features between conventional and virtual histology is shown in the Appendix 1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60408/elife-60408-fig3-v3.jpg)\n\n**Figure 3.:** Representative virtual sections through the reconstruction volumes of full biopsies (I\u2013VI), respectively. Scale bars: $500\u2062\\mu\u2062m$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60408/elife-60408-fig4-v3.jpg)\n\n**Figure 4.:** Representative virtual sections through the reconstruction volumes of the 1 mm punches into the volumes of the full biopsies (I\u2013VI), respectively. The fact that the punches are isolated results in higher image quality, since the errors associated with local tomography are avoided. Scale bars: $100\u2062\\mu\u2062m$.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60408/elife-60408-fig5-v3.jpg)\n\n**Figure 5.:** Virtual sections through the reconstruction volumes of the cone-beam recordings corresponding to sections in Figure 4, obtained by the parallel beam configuration, for biopsies (I\u2013VI) , respectively. Scale bars: $100\u2062\\mu\u2062m$.\n\n#### Sample I\n\nBy conventional histopathological assessment, the peribronchial alveolar parenchyma of sample I showed DAD with focal formation of hyaline membranes adjacent to the epithelial lining, moderate lymphocytic interstitial pneumonia and singular thrombi in small pulmonary veins. There is a moderate hypertrophy of the muscular media in smaller pre- and post-capillary blood vessels with desquamation of the endothelial cell layer as well as mild centrilobular emphysema (original magnification 100\u00d7). In PC-CT, enlarged alveolar septa with pronounced lymphocytic inflammation are displayed. The reconstruction volume contains a large artery filled with erythrocytes (Figure 3-I, lower left), which bifurcates into two vessels. This area was then selected for the 1\u00a0mm biopsy punch extraction. The cone-beam zoom tomogram was then centered around the perimeter of the blood vessel. This volume is particularly well suited to investigate the connective tissue including elastic fibers and collagen, as well as smooth muscle.\n\n#### Sample II\n\nHistomorphological analysis shows peribronchial alveolar parenchyma with hyperemia of capillary and post-capillary blood vessels, as well as a moderate centrilobular emphysema (original magnification 100\u00d7). On the level of blood vessels, both blood-filled and empty vessels are discernible. It should be noted that septa with signs of parallel capillaries are visible. In the reconstruction volume of the zoom tomogram, a single vessel can be easily tracked over large distances.\n\n#### Sample III\n\nThe sample consists of peribronchial alveolar parenchyma showing prominent multifocal neutrophilic capillaritis as well as a moderate centrilobular emphysema (original magnification 100\u00d7). In PC-CT, septa with again similar physiological size and distribution emerge, with moderate emphysema. The bottom part of the sample contains a fibrous area near a larger blood vessel. The zoom tomogram shows a single septum, a blood vessel and a fibrous region.\n\n#### Sample IV\n\nHistomorphological analysis shows peribronchial alveolar parenchyma with marked lymphocytic interstitial pneumonia, multifocal venous thrombi and focal intraalveolar fibrin deposition in terms of DAD. Furthermore, there is a mild centrilobular emphysema (original magnification 100\u00d7). In PC-CT, a network of thin septa, thrombi and emphysema, as well as a large empty blood vessel appears. Electron-rich diffuse black granules are also visible. The biopsy punch was selected to contain the empty blood vessel, some small thrombi. It also includes thin septa and tissue embedded dirt-particles. The zoom tomogram covered tissue with black granules as well as a band of inflammatory cells next to a septum wall.\n\n#### Sample V\n\nBy conventional histological assessment, Sample V consists of peribronchial alveolar parenchyma showing massive lymphocytic interstitial pneumonia with ubiquitous hyaline membranes superimposed on the alveolar walls, neutrophilic capillaritis and multifocal post-capillary thrombi in terms of severe DAD. Furthermore, bronchialized alveolar epithelial cells show cytopathic changes and multifocal desquamation, as does alveolar macrophages. Focally, accumulation of intraalveolar neutrophilic granulocytes in the sense of a florid bronchopneumonia can be observed (original magnification 100\u00d7). PC-CT data give rise to alterations of the overall morphology due to Covid-19, including substantial inflammation, pronounced hyaline membranes, and high load of lymphocytes. The biopsy punch was chosen to include areas with increased presence of\u00a0hyaline membrane and lymphocytes. A blood vessel splitting into several smaller blood vessels is easily recognized when browsing through the reconstructed volume. Noteworthy, different cell types as macrophages, T-cells or erythrocytes can be distinguished in the zoom tomogram.\n\n#### Sample VI\n\nHistomorphological analysis shows peribronchial alveolar parenchyma with lymphocytic interstitial pneumonitis and a singular thrombus in a small vein. The interstitium of the alveolar septae is widened by myogenic metaplasia. Adjacent, centrilobular emphysema and anthracosis are observed. The bronchial mucosa shows varying degrees of lymphocytic inflammation in the sense of chronic bronchitis/bronchiolitis (original magnification 100\u00d7). From PC-CT reconstructions, the sample consists of thin alveoli (Figure 3VI, upper left) evolving into compact, fibrotic tissue (Figure 3VI, lower right). The amount of lymphocytes is rather low in this sample. Black granules and some thrombi are embedded within the bulky tissue parts. The biopsy punch covers the region of transition from alveoli to fibrotic tissue, containing also a thrombus and capillaries as identified from the zoom tomogram.\n\n### Visualization of pathologies, segmentation, and quantification\n\nThe overview scans of all paraffin embedded Covid-19 positive samples and one biopsy of a hydrated control lung were analyzed in terms of structural characteristics. The top row of Figure 6 shows the workflow of the analysis on the example of the 3D reconstruction of sample V. Based on the tissue mask the distances for each tissue voxel to the next voxel containing oxygen were determined. For the analysis of the tissue it is mandatory to consider the three-dimensionality of the samples, similar to the analysis of porous structures (M\u00fcller et al., 2002). More generally, we claim that 3D histology analysis based on x-ray tomography and light sheet microscopy (Power and Huisken, 2017) is required to quantitatively understand functional tissue properties based on its 3D architecture. Here, this can also be seen in Figure 6d, which shows a zoom of the distance analysis around a small blood vessel which is marked with a yellow box. While the wall thickness appears quite homogeneous in the 2d slice, the distance analysis reveals that the vessel is thicker on the top right.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/60408/elife-60408-fig6-v3.jpg)\n\n**Figure 6.:** The workflow is sketched for sample V in the top part (a\u2013g). In a first step, the tissue was segmented using Ilastik. A slice of the reconstructed electron density is shown in (a). Based on the segmentation, the areas of air which are directly connected and potentially filled with oxygen (or blood) are masked out (b). (c) For each of the remaining tissue voxels the shortest possible distance to air was calculated. Especially around vessels and larger alveoli, the distances are larger. (d) Zoom into an area around a vessel. Further analysis is based on the distance distribution shown in (e). (f) Volume rendering of the reconstructed electron density, with (g) showing the corresponding 3D distance map. (h) Based on the tissue segmentation of all samples, the distance from the tissue interior to the closest air compartment was calculated. In order to compare all samples, the count of voxels was normalized by the total volume of the respective sample. The specific surface area SV (represented by the first value of each curve), the characteristic length Lc and the mean distance $d_{O_{2}}\u00af$ for each sample was calculated based on this data. Double logarithmic scale, bin width of the distribution of distances: 1 $v\u2062x$. Scale bars: (a\u2013c) $100\u2062\\mu\u2062m$.\n\nThe distribution of the distances obtained for a given slice is shown in Figure 6e. The swelling of the alveolar walls as well as the inflamed blood vessels can be identified by comparing the reconstructed electron density and the 3D-distance map (see Figure 6f and g). Figure 6h shows the distribution of the tissue-air distances (histogram) for all samples, following the workflow illustrated in Figure 6e. The binning of distances was set to one voxel length. The figure underlines the high diversity of the tissue structure which could already be seen in the 3D histology. Further, it directly informs about the specific surface SV, which is given by the first point of the graph. The corresponding parameters and metrics are tabulated in Table 1 for all samples. Additionally, the mean concentration of lymphocytes cl within the lung tissue is listed for all samples. The values quantify the general structure of the tissue which is qualitatively discernible by eye. Samples with a high amount of swollen, inflamed blood vessels and thick hyaline membranes exhibit a larger characteristic length. Note, that the control lung was prepared in a hydrated environment and shrinking due to further preparation of the sample does not occur. Hence, the results cannot be directly compared to the paraffin embedded samples. Further, the analysis of the lymphocyte concentration was performed since no lymphocytes were found in the reconstructed volume. The low values of Lc and $d_{O_{2}}\u00af$ for sample II correlate with the lack of ground-glass opacification in clinical CT. Based on the extracted structural parameters, the degree of inflammation and swelling of lung tissue can be evaluated. E.g. patient II has the highest surface area volume-ratios while sample I and VI have a relatively low specific surface. Larger characteristic lengths may also be indicative of inflammation and the formation of hyaline membranes, which will be evaluated in the following based on ROI and high-resolution reconstructions.\n\n**Table 1.**\n Results of the analysis of tissue characteristics: specific surface area SV, characteristic length Lc and mean distance $d_{O_{2}}\u00af$ and standard deviation from all tissue voxels to air as well as the mean concentration of lymphocytes cl for all six Covid-19 positive samples as well as for one control sample.\u00a0Colors match the distance graphs in Figure 6.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Patient no.</th>\n      <th>SV (%)</th>\n      <th>Lc (\u03bcm)</th>\n      <th>dO2\u00af (\u03bcm)</th>\n      <th>cl\u00a0(105/mm3)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>I</td>\n      <td>13.87</td>\n      <td>9.4</td>\n      <td>5.9\u00b15.3</td>\n      <td>16.0</td>\n    </tr>\n    <tr>\n      <td>II</td>\n      <td>46.56</td>\n      <td>2.8</td>\n      <td>2.1\u00b11.0</td>\n      <td>14.1</td>\n    </tr>\n    <tr>\n      <td>III</td>\n      <td>33.75</td>\n      <td>3.9</td>\n      <td>2.5\u00b11.5</td>\n      <td>4.4</td>\n    </tr>\n    <tr>\n      <td>IV</td>\n      <td>25.90</td>\n      <td>5.0</td>\n      <td>3.2\u00b12.3</td>\n      <td>7.1</td>\n    </tr>\n    <tr>\n      <td>V</td>\n      <td>19.28</td>\n      <td>6.7</td>\n      <td>3.6\u00b12.1</td>\n      <td>4.8</td>\n    </tr>\n    <tr>\n      <td>VI</td>\n      <td>11.87</td>\n      <td>11.0</td>\n      <td>9.1\u00b110</td>\n      <td>6.1</td>\n    </tr>\n    <tr>\n      <td>CTRL (hyd.)</td>\n      <td>20.04</td>\n      <td>6.5</td>\n      <td>5.0\u00b15.1</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\nFigure 7 illustrates the aggregation of hyaline membrane in the vicinity of a single alveole. Volumetric renderings in Figure 7a and b demonstrate particular attachment of fibrin to the alveolar walls. In cases of severe hyaline membrane formation as for this patient, this pathological alteration can be tracked throughout the volume Figure 7c\u2013e. In Figure 7f, hyaline membranes of neighboring alveoles are indicated. In the 3D-context, their locations with respect to blood vessels can be inspected, see Figure 7g, which exemplifies a direct connection of hyaline membranes to the vasculature.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/60408/elife-60408-fig7-v3.jpg)\n\n**Figure 7.:** The rendered subvolume was restricted to $1.15\\times1.10\\times0.56\u00a0mm^{3}$, to contain a single alveole foremost. (a) Volume rendering of the segmented hyaline membrane in same spatial orientation as (c)-(e), which show virtual slices through the (c) top, (d) center and (e) bottom of the alveole. For a better spatial classification, (b) gives a combination of the volume in (a) and the slice in (d). (f) Volume rendering of the entire subvolume including neighboring alveolae. (g) Zoom-in onto a major blood vessel (red) which is directly connected with the hyaline membrane. Scale bars: (c\u2013e) $300\u2062\\mu\u2062m$.\n\nThe severeness of hyaline membrane formation is case-specific, as the yellow rendering in Figure 8a,b,d demonstrates reduced amounts of deposits for patient I in a subvolume of parallel-beam reconstructions. Further, lymphocytes (red) were identified based on the automated cell segmentation (see Materials\u00a0and\u00a0methods). For clearer visualization, each cell is rendered as a sphere with a size corresponding to the mean cell volume in Figure 8a,b,d. Based on convolution of the cell positions with a sphere of $100\u2062\\mu\u2062m$ in radius, the local cell density was calculated (T\u00f6pperwien et al., 2018) and presented as 3D-maps of cells/mm3 in Figure 8c,e. This concept was then translated to a 3D-stitched volume of an entire tissue block as shown in Figure 8f,g.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/60408/elife-60408-fig8-v3.jpg)\n\n**Figure 8.:** The illustrations in (a\u2013e) show a subvolume of $0.60\\times0.48\\times0.26$ mm3, (f and g) this concept applied to the full tissue block of $2.57\\times2.99\\times0.98$ mm3. (a) Yellow contours mark the locations of hyaline membrane in an exemplary slice. In same spatial orientation, (b, d and f) volume rendering of soft tissue (light pink), infiltrated by hyaline membrane (yellow) and lymphocytes (red) and (c, e and g) their local cell density among the lung tissue, including air compartments.\n\nNext, the segmentation of blood vessels is demonstrated for the example of a splitting blood vessel in the zoom tomogram of sample V. The segmentation was performed manually. To give an impression of the separation of a single capillary, a series of virtual slices in the xy-plane (magnified views) is shown in Figure 9a. The separation starts with the creation of a branch from the blood vessel (arrow in slice 336). In slice 326, $1.7\u2062\\mu\u2062m$ above slice 336, this branch evolves into an empty and separated capillary. Another $2\u2062\\mu\u2062m$ above, the capillary is entirely filled with cells. Further $2.3\u2062\\mu\u2062m$, the capillary is empty again and has a diameter of about $2.8\u2062\\mu\u2062m$. The segmentation of the blood vessel with all its separated branches is indicated for slice 336 in Figure 9b by the red lines. In this slice, three capillaries have already separated from the main vessel, while the fourth starts to emerge, indicated by the red arrow. The 3D shape of the blood vessel is illustrated by the 3D rendering of the segmentation, shown in Figure 9c. This segmentation of the blood vessel shows the potential of the datasets, which may be fully exploited in future with more advanced segmentations.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/60408/elife-60408-fig9-v3.jpg)\n\n**Figure 9.:** (a) Series of slices in z-direction illustrate the separation of a capillary ($\u22485\\mum$ diameter) from a blood vessel. Red arrow marks the separating capillary. In slice 314, the capillary is entirely filled with erythrocytes. (b) Red lines in the entire virtual slice (336) represent the contours of a manual segmentation of the blood vessel network. Three capillaries already separated from the main vessel, while the fourth starts to emerge, indicated by the red arrow. (c) Segmentation illustrating the 3D structure of the blood vessel network. Scale bars: $50\u2062\\mu\u2062m$.\n\n## Discussion\n\nIn summary, we have demonstrated that multi-scale x-ray phase contrast tomography can firstly augment pathohistology of the lung to full three dimensions, and secondly provide a link between microscopic and macroscopic scales. For the first time, characteristic morphological changes associated with DAD such as hyaline membranes and pronounced inflammation have been imaged in three dimensions, in particular in Covid-19, the most severe pandemic which mankind has faced for decades. Moreover, we conducted our study in FFPE material, a fixation method established for well over a century and ubiquitously available.\n\nThe advantage of 3D histology compared to conventional histology relates to the simple fact that features can be visualized and investigated in their full native dimensionality. This enables the accurate determination of cell densities, the quantification of morphological parameters such as the distance metrics shown in Figure 6, and tracing of blood vessels. Standard histology and in particular immunohistochemical staining, on the other hand, can inform us more precisely on the biomolecular origin of the structure, while immunostaining coupled with x-ray contrast agents is not yet within reach. Importantly, since PC-CT is nondestructive, histology can be performed on well-chosen sections after the scan, see Appendix 1.\n\nOn the side of imaging technology and exploitation, there is still ample room for improvement: higher resolution could be achieved by further geometric zooms, waveguide optics with higher numerical aperture, in combination with pixel detector technology, and further improvements in holographic reconstruction. Equally important to extend the length scales covered to small scales is the further upscaling of the FOV based on stitching different sub-tomograms. At the same time the scales should be extended by including more than two zoom levels, based on different detector and illumination settings. In this way, one could bridge scales to cover the entire lobe of a lung. To this end, optimized recording and data flow is a larger bottleneck than photons and optics, in particular since 4th generation synchrotron radiation sources are about to deliver unprecedented brilliance. Finally, in view of exploitation and information gain, specific labels for different cell types and 3D immunostaining coupled to radiocontrast agents should be developed. Here, lung offers an advantage over other tissue in view of volume accessibility and label diffusivity.\n\nMost importantly, efforts have to be directed to exploit the full information contained in the reconstruction volumes based on advanced segmentation. Tracing of capillaries is an obvious important next step, in view of unraveling the role of intussusceptive angiogenesis in Covid-19 (Ackermann et al., 2020). The current data, which are made fully available at https://doi.org/10.5281/zenodo.3892637, are likely to already provide such clues once that more advanced segmentation approaches based on machine learning are applied. More generally, it may advance our understanding of DAD in the particular case of Covid-19, as an intrinsically volumetric phenomenon. Beyond the current data, further studies could shed further light on the differences between moderate and severe progression. Possibly, phase contrast tomography of lung biopsies could in future also help diagnosis and treatment.\n\n## Materials and methods\n\n### Autopsy, clinical background and tissue preparation\n\nIn total we investigated six postmortem lung samples from Covid-19 patients (Menter et al., 2020). A tissue micro-array paraffin block with samples of all six patients and the corresponding HE stain is shown in Figure 1a. Information about age, gender, hospitalization, clinical, radiological and histological characteristics of all patients are shown in Table 2. All patients suffered from hypertension and were treated with RAAS (renin-angiotensin-aldosterone-system) interacting drugs. Heterogeneous ground glass and consolidation were observed in all patients clinical CT scans and the cause of death was also related to respiratory failure in each patient (patient IV cardio-respiratory failure). Additionally, tumor-free lung samples from partial resections of pulmonary carcinomas were analyzed as a reference.\n\n**Table 2.**\n Sample and medical information.Age and gender, clinical presentation with hospitalization and treatment; NIV: non-invasive ventilation, I: immunosuppression, S: smoker,\u00a0GGO: ground-glass opacification, C: consolidation, DAD: diffuse alveolar damage.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample no.</th>\n      <th>Age group, gender</th>\n      <th>Hospitalization, clinical, radiological, and histological characteristics</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>I</td>\n      <td>60\u201370, F</td>\n      <td>5-10d, GGO, DAD</td>\n    </tr>\n    <tr>\n      <td>II</td>\n      <td>80\u201390, M</td>\n      <td>5-10d, C, I, DAD</td>\n    </tr>\n    <tr>\n      <td>III</td>\n      <td>90\u2013100, M</td>\n      <td>1-4d, GGO, C, DAD</td>\n    </tr>\n    <tr>\n      <td>IV</td>\n      <td>70\u201380, M</td>\n      <td>1-4d, NIV, S, GGO, C, DAD</td>\n    </tr>\n    <tr>\n      <td>V</td>\n      <td>60\u201370, M</td>\n      <td>5-10d, NIV, S, GGO, C, DAD</td>\n    </tr>\n    <tr>\n      <td>VI</td>\n      <td>70\u201380, M</td>\n      <td>1-4d, S, GGO, C, DAD</td>\n    </tr>\n    <tr>\n      <td>CTRL</td>\n      <td>20\u201330, M</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\nFrom each of the six Covid-19 patients, two tissue samples with edge lengths of about 4\u00a0mm each were analyzed. To one sample of each patient, a metal containing stain (uranium acetate, UA) was applied, the other samples remained unstained. Separated for their stain, six tissue samples were dehydrated and embedded in the same multi-sample paraffin block. The size of the postmortem tissue samples made available for the study varied between the different patients (I-VI), with maximum cross-section of about 4\u00a0mm after dehydration. From all six samples, biopsy punches were taken by either a 8\u00a0mm or a 3.5\u00a0mm punch, depending on the individual size. The punches were then transferred onto a holder for the parallel-beam local tomography acquisition, followed by a further reduction in size (after measurement of the entire sample) to a 1\u00a0mm biopsy punch, for further tomographic recordings. A sketch of the sample preparation is shown in Figure 1b. The control lung sample was first mounted in an Eppendorf tube for parallel beam acquisitions, and a 1\u00a0mm biopsy punch was then transferred into a polyimide tube similar to the paraffin-embedded ones, but scanned in fixative buffer solution.\n\n### Phase contrast tomography\n\nFor Covid-19 lung tissue, the scans were recorded at the GINIX endstation of the PETRA III storage ring (DESY,\u00a0Hamburg). The projections were acquired at two different photon energies $E_{ph}$, $8\u2062keV$ and $13.8\u2062keV$, using the first and third harmonic of the 5\u00a0m P10 undulator and a Si(111) channel-cut monochromator, respectively. Data are shown here only for $8\u2062keV$, which gave highest contrast for the unstained lung tissue. Two tomography configurations were combined to cover a larger range of length scales:\n\n#### (1\u2013parallel beam)\n\nRecordings with the unfocused quasi-parallel beam illumination and a high resolution microscope detection system, resulting in in a FOV of 1.6\u00a0mm sampled at a pixel size of 650\u00a0nm.\n\n#### (2\u2013cone beam)\n\nHolographic recordings with the divergent and coherence filtered beam emanating from a compound focusing system composed of a Kirkpatrick-Baez (KB) mirrors system and an x-ray waveguide, resulting in a FOV of 0.4\u00a0mm sampled at a pixel size of about 167\u00a0nm (depending on exact geometry).\n\nBoth configurations were implemented side-by-side, using the same fully-motorized tomography stage and mounting, as detailed in Frohn et al., 2020. A sketch of both configurations is shown in Figure 1 . First, parallel-beam overview scans were acquired of the entire tissue volume embedded in paraffin. To this end a 3.5\u00a0mm biopsy punch was taken from the multi-sample tissue block, and then scanned in a stitching-mode yielding a large overview reconstruction, composed of up to 20 individual tomograms (depending on tissue size). To increase image quality and avoid artifacts related to region-of-interest (ROI) or local tomography, a selected 1\u00a0mm punch was then taken from the already scanned larger tissue cylinder, and re-scanned, first in the parallel- and then the cone-beam geometry. Experimental and acquisition parameters used for the data shown are listed in Table 3.\n\n**Table 3.**\n Data acquisition parameters for x-ray phase-contrast tomography measurements.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Cone geometry</th>\n      <th>Parallel geometry</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>FOV</td>\n      <td>0.4 mm \u00d7 0.35 mm</td>\n      <td>1.6 mm \u00d7 1.4 mm</td>\n    </tr>\n    <tr>\n      <td>Pixel size</td>\n      <td>167 nm</td>\n      <td>650 nm</td>\n    </tr>\n    <tr>\n      <td>z01</td>\n      <td>125 mm</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>z12</td>\n      <td>4975 mm</td>\n      <td>10 mm \u2212 100 mm</td>\n    </tr>\n    <tr>\n      <td>Regime</td>\n      <td>holographic</td>\n      <td>direct contrast</td>\n    </tr>\n    <tr>\n      <td>Rotation</td>\n      <td>start-stop</td>\n      <td>continuous</td>\n    </tr>\n    <tr>\n      <td>Exposure</td>\n      <td>2 s</td>\n      <td>0.035\u2062s</td>\n    </tr>\n    <tr>\n      <td>Total exposure</td>\n      <td>\u224363min</td>\n      <td>\u224375s</td>\n    </tr>\n    <tr>\n      <td>Volumetric flowrate</td>\n      <td>1.16\u00d7104\u03bcm/3s</td>\n      <td>3.75\u00d7107\u03bcm/3s</td>\n    </tr>\n  </tbody>\n</table>\n\nThe configuration for (1\u2013parallel beam) is depicted in Figure 1c. The high-resolution microscope detection system (Optique Peter, France) was based on a $50\u2062\\mu\u2062m$ thick LuAG:Ce scintillator imaged with a 10\u00d7 magnifying microscope objective onto a sCMOS sensor (pco.edge 5.5, PCO, Germany), resulting in an effective pixel size of $0.65\u2062\\mu\u2062m$. The high photon flux density allowed for image acquisition with continuous motor movement, short acquisition time of 35\u00a0ms per frame, and a framerate of 20\u00a0fps. Single-distance tomogram recordings with about 1500 projections, and flat images before and after the scan, took less than 2\u00a0min. For these scans, the focusing optics (KB-mirrors and waveguide) as well as the fastshutter (Cedrat technologies) were moved out of the beam, and beam size was adjusted by the upstream slit systems. To avoid detector saturation, the beam was attenuated by 4\u00d7 single crystal silicon wafers.\n\nThe configuration for (2\u2013cone beam) is depicted in Figure 1d: The beam was focused by the KB-mirrors to about 300\u00a0nm. To further reduce the secondary source size, to increase coherence, and to achieve a smooth wavefront for holographic illumination, an x-ray waveguide formed by 1\u00a0mm long lithographic channels in silicon with a cross-section of about 100\u00a0nm was positioned in the focal plane of the KB-mirrors, resulting in an exit flux of 1\u2013$4\u22c510^{9}\u00a0photon/s$ (depending on alignment and storage ring), as measured with the single photon counting detector (Pilatus, Dectris). The sample was positioned at variable (defocus) distances behind the focus (waveguide exit), typically $z_{01}=125mm$ for the first distance. The geometrically magnified holograms were recorded by a fibre-coupled sCMOS sensor (Zyla HF 5.5 detector, Andor Technologies) with a customized $15\u2062\\mu\u2062m$ thick Gadox scintillator, and $6.5\u2062\\mu\u2062m$ pixel size. The detector position at about $z_{02}=5100mm$ behind the focus resulted in a magnification of about $M=41$ (for the first defocus distance), and hence an effective pixel size of 167\u00a0nm. 1442 projections were recorded, with a typical exposure time of 2\u00a0s per projection.\n\n### Phase retrieval, image reconstruction, and segmentation\n\n#### Phase retrieval and reconstruction\n\nPhase retrieval was performed from dark and empty beam corrected holograms, using both linearised single step CTF-approach (Cloetens et al., 1999; Turner et al., 2004), and non-linear generalizations of the CTF-method based on Tikhonov regularization (NL-CTF), using our code package HoloTomoToolbox as described and deposited (Lohse et al., 2020). Importantly, both CTF and NL-CTF implementations can be augmented by imposing support and range constraints, when needed. When available, projections recorded at several defocus distances were first aligned with sub-pixel accuracy and then used for multi-distance phase retrieval. For these purposes, the HoloTomoToolbox provides auxiliary functions, which also help to refine the Fresnel number or to correct for drift in the illumination function. After phase reconstruction of all projections, the tomographic reconstruction was carried out with the MATLAB implemented iradon-function (Ram-Lak filter) for the parallel geometry and with the FDK-function of the ASTRA toolbox (van Aarle et al., 2015; van Aarle et al., 2016) for the cone beam geometry. Hot pixel and detector sensitivity variations as well as strong phase features in the parallel beam illumination resulting from upstream window materials, which persist after empty beam correction, can all result in ring artifacts in the tomographic reconstruction, in particular as these flaws can increase by phase retrieval. To correct for this, the extra information provided by 360\u00b0 scans was used to mask out the corresponding pixels and replace them with values of the opposing projection. Stitching of reconstructions from different tomographic scans was performed using (Miettinen et al., 2019). Resolution estimates were obtained by FSC analysis, see Appendix 2.\n\n#### Image segmentation and quantification\n\nFor each patient the stitched overview scans were analyzed with regard to structural characteristics. The 3D-reconstructions were first binned (2\u00a0\u00d7\u00a02\u00a0\u00d7\u00a02), and the tissue was then segmented from the surrounding paraffin using the segmentation software Ilastik (Berg et al., 2019), which was then further refined with MATLAB. In order to exclude single macrophages or detached tissue, only voxels connected to the tissue block were considered for the distance map. Further, the areas of the paraffin which represent air compartments were linked to the outside of the tissue block. Individual self-contained areas of paraffin (not connected to air) were excluded from the mask. Based on this segmentation, the distance to the nearest voxel containing oxygen was calculated for each tissue voxel. The tissue volume V is given by the sum of all voxels containing tissue. The surface area SA is defined by all tissue voxels with a distance of 1 pixel to the air. From this information we calculated the specific surface\n\n$$\nS_{V}=SA/V\n$$\n\nwith $S\u2062A/V$ surface area volume -ratio. Further a characteristic length\n\n$$\nL_{c}=V/SA\u22c5vx\n$$\n\nwith $v\u2062x$ edge length of a voxel was determined for each sample. Additionally, the mean distance ($d_{O_{2}}\u00af$) from all tissue voxels to the closest air compartment and its standard deviation was calculated.\n\nHyaline membranes and capillary networks were extracted using semi-manual segmentation functions in Avizo (Thermo Fisher Scientific, USA). Beside hyaline membranes and the capillary network, different cell types can be readily identified based on the 3D reconstructions of the electron density. In particular, inflammatory cell subpopulations - that\u00a0is, macrophages and lymphocytes - can be distinguished. To this end, an automatic and parameter-controlled algorithm denoted as BlobFinder was used (arivis AG, Germany). Based on its segmentation output, the amount and position of the lymphocytes in the 3D-reconstructions from parallel beam scans was calculated. The algorithm is able to identify roundish structures with a given size. For the segmentation of the lymphocytes, we chose a characteristic size of $6.5\u2062\\mu\u2062m$. The structures identified in this step also include macrophages and parts of the capillary system. For the unbinned datasets, a distinction between lymphocytes and the nuclei of the macrophages was made based on the difference in electron density. In the tomographic reconstructions, the lymphocytes appear denser compared to the nuclei of the macrophages. Further, nuclei from endothelial cells and parts of the capillaries filled with blood residues were excluded based on their elongated shape. Only structures with a sphericity higher than 0.55 were included. Based on the segmentation of lymphocytes, the total number of lymphocytes Nl was obtained and the mean concentration of lymphocytes within the lung tissue $c_{l}=N_{l}/V$ was estimated.\n",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "f3ec0ab9-c35b-4bd6-871a-6c2c18670372",
+      "submission_id": "4f0cc8de-a297-468b-8f5c-b9aee196f1bc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mone Zaidi, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60408.sa1](https://doi.org/10.7554/eLife.60408.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"3d Virtual Pathohistology of Lung Tissue from Covid-19 Patients based on Phase Contrast X-ray Tomography\" for consideration by eLife. Your article has been reviewed by a Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Ashraf Khan (Reviewer #1); Kohkan Shamsi (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nSummary:\n\nThis is novel technology where the authors describe the tomographic imaging of lung biopsies from six Covid-19 patients. For this purpose, hard X-ray phase-contrast imaging at P10 beamline together with X-ray optics has been utilized, with the local tomography data reconstructed and analyzed using state-of-the-art algorithms and tools.\n\nEssential revisions:\n\n1) The authors are encouraged to comment on the resolution of images that is not ideal (most likely they are autopsy samples). For example, in Figure 2 in Appendix 1\u2014figure 2, area marking vascular thrombus is not unequivocally diagnostic of a thrombus at the submitted magnification and fibrin cannot be definitively recognized within the vascular lumen. If possible, the authors should reproduce findings in a limited way on surgically resected samples, which will likely yield better histological resolution for comparative analysis.\n\n2) The paper would benefit from a direct comparison of hard X-ray phase tomography and histology. Because tomography is essentially non-destructive, the authors could prepare the related histological slides. The basis for this could be Appendix 1\u2014figure 2. The authors should identify which information could be extracted only from one technique to better demonstrate the complementarity of the two techniques.\n\n3) The Introduction, noted as a patchwork, requires considerable improvement. It does not contain a clear hypothesis nor a scientific question. It is difficult to understand the true focus of the work.\n",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "01ec422b-58eb-4427-a3a7-4f056bcfcac3",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C1",
+      "claim": "Multi-scale phase contrast x-ray tomography can be used for virtual histology and histopathology of unstained lung tissue from Covid-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We present a three-dimensional (3D) approach for virtual histology and histopathology based on multi-scale phase contrast x-ray tomography, and use this to investigate the parenchymal architecture of unstained lung tissue from patients who succumbed to Covid-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the approach and its application to Covid-19 lung tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "01ffa5f2-c856-474e-a742-01c71d09a10a",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C2",
+      "claim": "The multi-scale phase contrast x-ray tomography approach allows for segmentation of individual cells in autopsy samples with a maximum cross section of 8 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining parallel and cone beam geometry, autopsy samples with a maximum cross section of 8 mm are scanned and reconstructed at a resolution and image quality, which allows for the segmentation of individual cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the technical capability achieved in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "4fc930fd-627e-4479-a14c-5bc74dacd82e",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C3",
+      "claim": "The cone beam geometry achieves a minimum voxel size of 167 nm in regions-of-interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the zoom capability of the cone beam geometry, regions-of-interest are reconstructed with a minimum voxel size of 167 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract specifies the resolution achieved with the cone beam geometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "070a5f64-9821-4189-938c-ab06817555a9",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C4",
+      "claim": "The approach enables 3D visualization of diffuse alveolar damage (DAD) with hyaline membrane formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We exemplify the capability of this approach by 3D visualization of diffuse alveolar damage (DAD) with its prominent hyaline membrane formation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a demonstrated capability of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "2c246577-2f99-4563-a450-86f578894d92",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C5",
+      "claim": "The approach allows mapping of the 3D distribution and density of lymphocytes infiltrating the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "by mapping the 3D distribution and density of lymphocytes infiltrating the tissue",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes this as an exemplified capability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "f70573f2-aaeb-452f-8bc8-0180f574b133",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C6",
+      "claim": "The approach provides histograms of characteristic distances from tissue interior to the closest air compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "and by providing histograms of characteristic distances from tissue interior to the closest air compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract lists this as a quantitative output of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "93514548-1134-4e94-812e-87bcb9937a15",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C7",
+      "claim": "Severe progression of Covid-19 is frequently accompanied by clinical acute respiratory distress syndrome (ARDS) and respiratory failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe progression of the 2019 coronavirus disease (Covid-19) is frequently accompanied by the clinical acute respiratory distress syndrome (ARDS) and respiratory failure, an organ manifestation responsible for the majority of Covid-19 fatalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established clinical knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "c0045450-de53-47d9-bdfa-9d67e78fe40a",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C8",
+      "claim": "Lung injury associated with ARDS can be detected by radiographic chest imaging and clinical computed tomography (CT).",
+      "claim_type": "EXPLICIT",
+      "source": "Lung injury associated with ARDS can be readily detected by radiographic chest imaging and clinical computed tomography (CT), which have assisted the diagnosis and management of Covid-19 patients (Lee et al., 2020; Shi et al., 2020; Chung et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "cbc1b16f-c6ac-4162-a925-7a988470c70c",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C9",
+      "claim": "Peripheral lung ground-glass opacities are the main radiological hallmark of ARDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, so-called peripheral lung ground-glass opacities are the main radiological hallmark of ARDS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established radiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "6b0553ba-c8ea-4a90-b243-34ef696c8a7b",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C10",
+      "claim": "Ground-glass opacities can be linked to the histological observation of diffuse alveolar damage (DAD) with edema, hemorrhage, and intraalveolar fibrin deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "and can be linked to the histological observation of diffuse alveolar damage (DAD) with edema, hemorrhage, and intraalveolar fibrin deposition (Ackermann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ackermann et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "37a1b4a1-4922-47af-8355-19f199cad013",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C11",
+      "claim": "DAD findings have been reported for infections by MERS-CoV, SARS-CoV, and influenza viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings have also been reported for infections by Middle East respiratory syndrome coronavirus (MERS-CoV), SARS-CoV, and influenza viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about respiratory viral infections.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "cb3c9cdb-d42f-414e-8ad9-2c161a1bc9a2",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C12",
+      "claim": "Distinctive features of pulmonary involvement of Covid-19 include severe endothelial injury associated with the presence of intracellular virions and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinctive features of pulmonary involvement of Covid-19 include severe endothelial injury associated with the presence of intracellular virions and inflammation, disrupted cellular membranes, as well as widespread thrombosis with microangiopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a distinctive feature of Covid-19 based on prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "3239ca8c-5504-4a73-94fb-0a375b21cb35",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C13",
+      "claim": "Alveolar capillary microthrombi were found to be nine times as prevalent in patients with Covid-19 as in patients with H1N1 influenza A virus.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in Ackermann et al., 2020, alveolar capillary microthrombi were found to be nine times as prevalent in patients with Covid-19 as in patients with the also very aggressive H1N1 influenza A virus, also referred to as swine flu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is explicitly attributed to Ackermann et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "67e0e976-38cf-4a97-a4ac-0adefe4c3dda",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C14",
+      "claim": "In Covid-19 lungs, intussusceptive angiogenesis was 2.7 times as high as in lungs of patients with H1N1 influenza A.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in Covid-19 lungs, a specific variant of new vessel growth - intussusceptive angiogenesis - was significantly more prevalent, that is, 2.7 times as high as in lungs of patients with H1N1 influenza A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from prior research (implied from Ackermann et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "de2178d6-f498-4e57-9f0d-2999f7051419",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C15",
+      "claim": "Histomorphological assessment of formalin-fixed, paraffin-embedded (FFPE) tissue stained with haematoxylin and eosin represents the gold standard in histological diagnostics of non-neoplastic lung diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Histomorphological assessment of formalin-fixed, paraffin-embedded (FFPE) tissue stained with haematoxylin and eosin still represents the gold standard in histological diagnostics of non-neoplastic lung diseases, including DAD and virus induced pneumonia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established practice in histopathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "ec8ea71c-43f0-4caf-aa3c-4c8cca6351fd",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C16",
+      "claim": "Digitalization, visualization and quantification of morphological changes associated with Covid-19 require both high resolution and the capability to screen larger volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to unravel the corresponding pathophysiology of the lungs, digitalization, visualization and quantification of the morphological changes associated with Covid-19 represent a key challenge, and require both high resolution and the capability to screen larger volumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical requirement based on the nature of the problem.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "0c779dd3-4b60-47c0-80f6-0b978de2bd86",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C17",
+      "claim": "Imaging the intricate three-dimensional tissue architecture of the lung and its pathological alterations on multiple length scales calls for 3D extensions of well-established histology techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, imaging the intricate three-dimensional (3D) tissue architecture of the lung and its pathological alterations on multiple length scales calls for 3D extensions of well-established histology techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical conclusion from the previous statement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "60105d0c-9ec5-4b84-bd36-2072588aa8b4",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C18",
+      "claim": "Integration of 3D morphological information with well-established histology techniques can provide a substantial asset for unraveling the pathophysiology of SARS-Cov-2 infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work is based on the assertion that integration of 3D morphological information with well-established histology techniques can provide a substantial asset for unraveling the pathophysiology of SARS-Cov-2 infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the underlying hypothesis of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "d20ddfd0-6279-440a-ab81-81fe652228ee",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C19",
+      "claim": "X-ray tomography data were collected from the same autopsies that were previously studied by immunohistochemical analysis and measurements of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we have collected x-ray tomography data from the same autopsies, which were previously studied by immunohistochemical analysis and measurements of gene expression (Ackermann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample source and its relationship to prior studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "de4d1e24-0e9d-44b2-8346-8d3346535ea3",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C20",
+      "claim": "The study investigated postmortem lung samples from six patients who succumbed from Covid-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present first results obtained from the postmortem lung samples of six patients who succumbed from Covid-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample set used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "1d4010b7-ed8f-42c1-bed4-14f2c5f7d79a",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C21",
+      "claim": "Propagation-based x-ray phase-contrast tomography (PC-CT) offers full 3D visualization with isotropic resolution without destructive slicing of the specimen.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to conventional histology based on thin sections, propagation-based x-ray phase-contrast tomography (PC-CT) offers a full 3D visualization with isotropic resolution and without destructive slicing of the specimen (Ding et al., 2019; Dejea et al., 2019; Saccomano et al., 2018; T\u00f6pperwien et al., 2018; Khimchenko et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "ea5a76d8-7120-415f-965f-1afe5fa5155f",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C22",
+      "claim": "For hard x-rays, the real-valued decrement \u03b4 is several orders of magnitude higher in soft biological tissues than \u03b2, which accounts for absorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase contrast capitalizes on the fact that for hard x-rays, the real-valued decrement \u03b4 is several orders of magnitude higher in soft biological tissues than \u03b2, which accounts for absorption (Nugent, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established physics knowledge with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "c162c36b-78c2-4400-8702-d9ee701962c5",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C23",
+      "claim": "Small contrast levels can be reconstructed by propagation imaging even at low fluence.",
+      "claim_type": "EXPLICIT",
+      "source": "and that small contrast levels can be reconstructed by propagation imaging even at low fluence (Jahn et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jahn et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "dfd64e23-aa41-4dfa-af1a-11e32d91cd22",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C24",
+      "claim": "Contrast is formed by transformation of the phase shifts into measurable intensity variations by self-interference of the exit wave during free-space propagation between sample and detector.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrast is formed by transformation of the phase shifts into measurable intensity variations by self-interference of the exit wave during free-space propagation between sample and detector (Paganin and Nugent, 1998; Cloetens et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the physical mechanism with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "1b833e83-0e5e-48df-bc47-bd0ac5fd0cde",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C25",
+      "claim": "Phase contrast tomography has been demonstrated as an advantageous imaging technique for lung imaging up to macroscopic scales.",
+      "claim_type": "EXPLICIT",
+      "source": "For lung imaging it has already been demonstrated as an advantageous imaging technique up to macroscopic scales (Parsons et al., 2008; Stahr et al., 2016; Morgan et al., 2020), including live animal models of respiratory diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "315a2082-3785-46b8-8dcd-d9890691fa6c",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C26",
+      "claim": "Propagation-based phase contrast can reach a resolution below optical microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "But in contrast to other full-field phase contrast techniques, e.g. based on grating interferometry or analyzer crystals, it can also reach a resolution below optical microscopy (Khimchenko et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Khimchenko et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "326901e1-2ce4-4e68-86ed-367c5dc7e051",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C27",
+      "claim": "Phase contrast x-ray tomography can probe small electron density variations of unstained tissue embedded in paraffin, ethanol, or aqueous buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work we exploit both the high resolution capability of PC-CT and the fact that its phase sensitivity is high enough to probe the small electron density variations of unstained tissue, embedded in paraffin, ethanol, or even aqueous buffer (T\u00f6pperwien et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to T\u00f6pperwien et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "20e79bff-16a3-403e-a6db-655ff83157ba",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C28",
+      "claim": "The multi-scale phase contrast x-ray tomography was implemented at the GINIX endstation of the beamline P10/PETRA III (DESY, Hamburg).",
+      "claim_type": "EXPLICIT",
+      "source": "Scale-bridging and dynamic ROI selection in close spatial and temporal proximity was implemented with dedicated instrumentation the GINIX endstation of the beamline P10/PETRA III (DESY, Hamburg) (Salditt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental facility used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "1320106d-5850-4e27-b973-5014eee4856b",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C29",
+      "claim": "Parallel beam tomography covers a large field of view with a pixel size of 650 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "(i) Parallel beam tomography, covering a large field of view (FOV), with a pixel size of 650 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of one imaging mode.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "a4fa9d33-320d-490c-a435-659bf237e39a",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C31",
+      "claim": "Cone beam geometry provides mode filtering, enhanced spatial coherence and smooth wavefronts based on advanced x-ray waveguide optics.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) Cone beam geometry for recording of highly magnified holograms, based on advanced x-ray waveguide optics, providing mode filtering, that is, enhanced spatial coherence and smooth wavefronts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical features of the cone beam geometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "85a9d842-34a3-4e36-a12d-6434a6c450c1",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C32",
+      "claim": "The effective pixel size in cone beam geometry can be adjusted in the range 10 nm\u2013300 nm based on geometrical magnification.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the geometrical magnification, the effective pixel size can be adjusted in the range 10 nm\u2013300 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical capability of the cone beam setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "8512cd21-cc7b-4542-9c8e-f4fb93e32e9c",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C33",
+      "claim": "The x-ray optics and geometric parameters allow reaching extremely small Fresnel numbers F in the deeply holographic regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, using this particular optics, together with appropriate choices of photon energy and geometric parameters, we can reach extremely small Fresnel numbers F of the deeply holographic regime, well below the typical range exploited at other nano-tomography instruments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical advantage of the setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "1ca7fdad-37db-4bd7-b78e-8c9ef5058114",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C34",
+      "claim": "The deeply holographic regime offers the advantage of highest phase sensitivity sufficient to probe small electron density variations of unstained tissue at relatively low dose.",
+      "claim_type": "EXPLICIT",
+      "source": "This offers the advantage of highest phase sensitivity sufficient to even probe the small electron density variations of unstained tissue, at relatively low dose (Hagemann and Salditt, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hagemann and Salditt, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "34fa0a3b-e5f1-4443-a3df-2983ad5a5538",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C35",
+      "claim": "Advanced phase retrieval methods including non-linear generalizations of the CTF-method based on Tikhonov regularization were used.",
+      "claim_type": "EXPLICIT",
+      "source": "To exploit this sensitivity, we use advanced phase retrieval methods including non-linear generalizations of the CTF-method (Cloetens et al., 1999) based on Tikhonov regularization (Lohse et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "bcc71458-0e51-4f76-bbc4-879eb8fb1842",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C36",
+      "claim": "Sample I showed DAD with focal formation of hyaline membranes adjacent to the epithelial lining by conventional histopathological assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "By conventional histopathological assessment, the peribronchial alveolar parenchyma of sample I showed DAD with focal formation of hyaline membranes adjacent to the epithelial lining, moderate lymphocytic interstitial pneumonia and singular thrombi in small pulmonary veins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "2a41af77-4250-47d8-9229-387d5bf2cc48",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C37",
+      "claim": "Sample I showed moderate lymphocytic interstitial pneumonia and singular thrombi in small pulmonary veins.",
+      "claim_type": "EXPLICIT",
+      "source": "By conventional histopathological assessment, the peribronchial alveolar parenchyma of sample I showed DAD with focal formation of hyaline membranes adjacent to the epithelial lining, moderate lymphocytic interstitial pneumonia and singular thrombi in small pulmonary veins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "4b2c7a58-a5d5-4268-9e0e-7657d779d2c3",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C38",
+      "claim": "Sample I showed moderate hypertrophy of the muscular media in smaller pre- and post-capillary blood vessels with desquamation of the endothelial cell layer.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a moderate hypertrophy of the muscular media in smaller pre- and post-capillary blood vessels with desquamation of the endothelial cell layer as well as mild centrilobular emphysema (original magnification 100\u00d7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "85d5d9f5-4e7a-49f3-86d8-63ae154ed884",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C39",
+      "claim": "Sample II showed peribronchial alveolar parenchyma with hyperemia of capillary and post-capillary blood vessels by histomorphological analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Histomorphological analysis shows peribronchial alveolar parenchyma with hyperemia of capillary and post-capillary blood vessels, as well as a moderate centrilobular emphysema (original magnification 100\u00d7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample II.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "c8fc45f4-d1bd-4f6e-9612-8624c5f900f1",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C40",
+      "claim": "Sample III consists of peribronchial alveolar parenchyma showing prominent multifocal neutrophilic capillaritis.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample consists of peribronchial alveolar parenchyma showing prominent multifocal neutrophilic capillaritis as well as a moderate centrilobular emphysema (original magnification 100\u00d7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample III.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "b0fd322b-ad64-4d2f-ab68-b0cee9cc9353",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C41",
+      "claim": "Sample IV showed peribronchial alveolar parenchyma with marked lymphocytic interstitial pneumonia, multifocal venous thrombi and focal intraalveolar fibrin deposition in terms of DAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Histomorphological analysis shows peribronchial alveolar parenchyma with marked lymphocytic interstitial pneumonia, multifocal venous thrombi and focal intraalveolar fibrin deposition in terms of DAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample IV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "f66d554a-e887-4757-9915-19f6dc4751da",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C42",
+      "claim": "Sample V consists of peribronchial alveolar parenchyma showing massive lymphocytic interstitial pneumonia with ubiquitous hyaline membranes superimposed on the alveolar walls.",
+      "claim_type": "EXPLICIT",
+      "source": "By conventional histological assessment, Sample V consists of peribronchial alveolar parenchyma showing massive lymphocytic interstitial pneumonia with ubiquitous hyaline membranes superimposed on the alveolar walls, neutrophilic capillaritis and multifocal post-capillary thrombi in terms of severe DAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample V.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "4715c276-59d7-4a57-a8e2-ef570567e8b9",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C43",
+      "claim": "Sample V showed bronchialized alveolar epithelial cells with cytopathic changes and multifocal desquamation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bronchialized alveolar epithelial cells show cytopathic changes and multifocal desquamation, as does alveolar macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample V.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "45cca273-258a-4c2b-9cf3-c5bbef100547",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C44",
+      "claim": "Sample V showed focal accumulation of intraalveolar neutrophilic granulocytes in the sense of a florid bronchopneumonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Focally, accumulation of intraalveolar neutrophilic granulocytes in the sense of a florid bronchopneumonia can be observed (original magnification 100\u00d7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample V.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "61b072ff-6efc-4100-b46e-6d5b864f8687",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C45",
+      "claim": "Different cell types as macrophages, T-cells or erythrocytes can be distinguished in the zoom tomogram of sample V.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, different cell types as macrophages, T-cells or erythrocytes can be distinguished in the zoom tomogram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capability demonstrated in the high-resolution data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "cd6308ad-2b34-4db6-bdc4-86bbc88144f6",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C46",
+      "claim": "Sample VI showed peribronchial alveolar parenchyma with lymphocytic interstitial pneumonitis and a singular thrombus in a small vein.",
+      "claim_type": "EXPLICIT",
+      "source": "Histomorphological analysis shows peribronchial alveolar parenchyma with lymphocytic interstitial pneumonitis and a singular thrombus in a small vein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample VI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "14faeb32-a793-4843-8cd8-67ade1bd555f",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C47",
+      "claim": "Sample VI showed widened interstitium of the alveolar septae by myogenic metaplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "The interstitium of the alveolar septae is widened by myogenic metaplasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample VI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "a0554a92-1946-439d-8223-ef3550cca84a",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C48",
+      "claim": "Sample VI showed centrilobular emphysema and anthracosis adjacent to the affected areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Adjacent, centrilobular emphysema and anthracosis are observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample VI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "41576075-8a7e-4d71-9f69-0c87c6c5410c",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C49",
+      "claim": "The bronchial mucosa in sample VI shows varying degrees of lymphocytic inflammation in the sense of chronic bronchitis/bronchiolitis.",
+      "claim_type": "EXPLICIT",
+      "source": "The bronchial mucosa shows varying degrees of lymphocytic inflammation in the sense of chronic bronchitis/bronchiolitis (original magnification 100\u00d7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the histopathological findings for sample VI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "9abcf997-5a1b-477a-a194-a2e67bb8956b",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C50",
+      "claim": "3D histology analysis based on x-ray tomography and light sheet microscopy is required to quantitatively understand functional tissue properties based on its 3D architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, we claim that 3D histology analysis based on x-ray tomography and light sheet microscopy (Power and Huisken, 2017) is required to quantitatively understand functional tissue properties based on its 3D architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general claim with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "34bbc533-4140-473f-aa79-f9039448a481",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C51",
+      "claim": "Patient II has the highest surface area volume-ratios among the six samples.",
+      "claim_type": "EXPLICIT",
+      "source": "E.g. patient II has the highest surface area volume-ratios while sample I and VI have a relatively low specific surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the quantitative analysis presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "d65c5ec6-2a1f-47a8-88c1-061c085b32ac",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C52",
+      "claim": "Samples I and VI have relatively low specific surface compared to other samples.",
+      "claim_type": "EXPLICIT",
+      "source": "E.g. patient II has the highest surface area volume-ratios while sample I and VI have a relatively low specific surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the quantitative analysis presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "8e3c1395-efd6-4776-9abf-3791536edb86",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C53",
+      "claim": "Larger characteristic lengths may be indicative of inflammation and the formation of hyaline membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger characteristic lengths may also be indicative of inflammation and the formation of hyaline membranes, which will be evaluated in the following based on ROI and high-resolution reconstructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the quantitative metrics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "a23e31fc-d6ec-466b-98d6-fe12711fddf9",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C55",
+      "claim": "Multi-scale x-ray phase contrast tomography can augment pathohistology of the lung to full three dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have demonstrated that multi-scale x-ray phase contrast tomography can firstly augment pathohistology of the lung to full three dimensions, and secondly provide a link between microscopic and macroscopic scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary conclusion of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "e232acce-dec4-4872-81b1-e56971ba8fa1",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C56",
+      "claim": "Multi-scale x-ray phase contrast tomography provides a link between microscopic and macroscopic scales.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have demonstrated that multi-scale x-ray phase contrast tomography can firstly augment pathohistology of the lung to full three dimensions, and secondly provide a link between microscopic and macroscopic scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary conclusion of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "67dad405-dbad-4f28-b4f8-a6cc62bef17f",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C57",
+      "claim": "Characteristic morphological changes associated with DAD such as hyaline membranes and pronounced inflammation have been imaged in three dimensions for the first time in Covid-19.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first time, characteristic morphological changes associated with DAD such as hyaline membranes and pronounced inflammation have been imaged in three dimensions, in particular in Covid-19, the most severe pandemic which mankind has faced for decades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel achievement of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "49d0cf6d-6693-4010-afb2-521d5f2b4c72",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C58",
+      "claim": "The study was conducted in FFPE material, a fixation method established for well over a century and ubiquitously available.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we conducted our study in FFPE material, a fixation method established for well over a century and ubiquitously available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample preparation method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "dddd7841-f693-4981-88cd-09bd47a5bf4f",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C59",
+      "claim": "3D histology enables the accurate determination of cell densities.",
+      "claim_type": "EXPLICIT",
+      "source": "This enables the accurate determination of cell densities, the quantification of morphological parameters such as the distance metrics shown in Figure 6, and tracing of blood vessels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of 3D histology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "36a1ad04-0b3f-41f5-9e9e-b58ee39805ef",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C60",
+      "claim": "3D histology enables the quantification of morphological parameters such as distance metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "This enables the accurate determination of cell densities, the quantification of morphological parameters such as the distance metrics shown in Figure 6, and tracing of blood vessels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of 3D histology with reference to Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "8662f387-1aa8-4464-be30-dd908eb0f50a",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C61",
+      "claim": "3D histology enables tracing of blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "This enables the accurate determination of cell densities, the quantification of morphological parameters such as the distance metrics shown in Figure 6, and tracing of blood vessels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of 3D histology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "6541cb19-5acd-4532-93bf-e1d87a6781a3",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C62",
+      "claim": "Standard histology and immunohistochemical staining can inform more precisely on the biomolecular origin of the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard histology and in particular immunohistochemical staining, on the other hand, can inform us more precisely on the biomolecular origin of the structure, while immunostaining coupled with x-ray contrast agents is not yet within reach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a complementary advantage of conventional histology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "503839c6-bac3-4307-8c64-73e16af41f2b",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C63",
+      "claim": "Immunostaining coupled with x-ray contrast agents is not yet within reach.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard histology and in particular immunohistochemical staining, on the other hand, can inform us more precisely on the biomolecular origin of the structure, while immunostaining coupled with x-ray contrast agents is not yet within reach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "3d3a4f0c-b2f3-4afa-a3fb-14e2f25fb301",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C64",
+      "claim": "PC-CT is nondestructive, allowing histology to be performed on well-chosen sections after the scan.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, since PC-CT is nondestructive, histology can be performed on well-chosen sections after the scan, see Appendix 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "a7641d47-6480-4480-969b-fcc153cfbd51",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C65",
+      "claim": "Higher resolution could be achieved by further geometric zooms, waveguide optics with higher numerical aperture, in combination with pixel detector technology.",
+      "claim_type": "EXPLICIT",
+      "source": "On the side of imaging technology and exploitation, there is still ample room for improvement: higher resolution could be achieved by further geometric zooms, waveguide optics with higher numerical aperture, in combination with pixel detector technology, and further improvements in holographic reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential future improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "f39e7621-9252-423e-9062-c54ab9a3d9e9",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C66",
+      "claim": "Optimized recording and data flow is a larger bottleneck than photons and optics for extending the field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, optimized recording and data flow is a larger bottleneck than photons and optics, in particular since 4th generation synchrotron radiation sources are about to deliver unprecedented brilliance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assessment of current limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "31995670-0b47-4e6d-b5f8-618b1e4e43ff",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C67",
+      "claim": "Specific labels for different cell types and 3D immunostaining coupled to radiocontrast agents should be developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in view of exploitation and information gain, specific labels for different cell types and 3D immunostaining coupled to radiocontrast agents should be developed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future development goal.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "91e67b33-41ac-477a-9482-89d277358f02",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C68",
+      "claim": "Lung offers an advantage over other tissue in view of volume accessibility and label diffusivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, lung offers an advantage over other tissue in view of volume accessibility and label diffusivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of lung tissue relevant for future development.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "9f6c7616-d162-4377-bb98-d3d85cc89ed1",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C69",
+      "claim": "Tracing of capillaries is an important next step in view of unraveling the role of intussusceptive angiogenesis in Covid-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracing of capillaries is an obvious important next step, in view of unraveling the role of intussusceptive angiogenesis in Covid-19 (Ackermann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future research direction with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "ef4e668b-28a2-454a-9bca-669bc0b68db5",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C70",
+      "claim": "The current data are likely to already provide clues about intussusceptive angiogenesis once more advanced segmentation approaches based on machine learning are applied.",
+      "claim_type": "EXPLICIT",
+      "source": "The current data, which are made fully available at https://doi.org/10.5281/zenodo.3892637, are likely to already provide such clues once that more advanced segmentation approaches based on machine learning are applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about the potential of the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "98568124-e8de-4ed5-bfd1-60c22984f905",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C71",
+      "claim": "Phase contrast tomography of lung biopsies could in future help diagnosis and treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Possibly, phase contrast tomography of lung biopsies could in future also help diagnosis and treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential future application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "a26760fc-eeae-4cad-b86e-0bfd15a9b800",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C72",
+      "claim": "All patients suffered from hypertension and were treated with RAAS interacting drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "All patients suffered from hypertension and were treated with RAAS (renin-angiotensin-aldosterone-system) interacting drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a common clinical characteristic of all patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "73ecd0c0-c282-46e9-8f64-acbf6fc45fe4",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C73",
+      "claim": "Heterogeneous ground glass and consolidation were observed in all patients' clinical CT scans.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterogeneous ground glass and consolidation were observed in all patients clinical CT scans and the cause of death was also related to respiratory failure in each patient (patient IV cardio-respiratory failure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a common radiological finding in all patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "7b5cf621-4c96-499b-9a10-6944616d0d66",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C74",
+      "claim": "The cause of death was related to respiratory failure in each patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterogeneous ground glass and consolidation were observed in all patients clinical CT scans and the cause of death was also related to respiratory failure in each patient (patient IV cardio-respiratory failure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cause of death for all patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "132499a1-f407-4ffc-ba9f-b6deb564e73d",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C77",
+      "claim": "Parallel beam configuration results in a FOV of 1.6 mm sampled at a pixel size of 650 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings with the unfocused quasi-parallel beam illumination and a high resolution microscope detection system, resulting in in a FOV of 1.6 mm sampled at a pixel size of 650 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the parallel beam configuration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "aa7f80b2-b00e-4f31-988e-6dc17c39efe0",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C78",
+      "claim": "Cone beam configuration results in a FOV of 0.4 mm sampled at a pixel size of about 167 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Holographic recordings with the divergent and coherence filtered beam emanating from a compound focusing system composed of a Kirkpatrick-Baez (KB) mirrors system and an x-ray waveguide, resulting in a FOV of 0.4 mm sampled at a pixel size of about 167 nm (depending on exact geometry).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the cone beam configuration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "e717fc1b-193a-4759-8644-130e9cdc6d15",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C79",
+      "claim": "Overview scans were composed of up to 20 individual tomograms depending on tissue size.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end a 3.5 mm biopsy punch was taken from the multi-sample tissue block, and then scanned in a stitching-mode yielding a large overview reconstruction, composed of up to 20 individual tomograms (depending on tissue size).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stitching approach used for overview scans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "1e00a6b7-0d8f-48d2-9de4-91899f1eda6d",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C80",
+      "claim": "Phase retrieval was performed using both linearised single step CTF-approach and non-linear generalizations of the CTF-method based on Tikhonov regularization (NL-CTF).",
+      "claim_type": "EXPLICIT",
+      "source": "Phase retrieval was performed from dark and empty beam corrected holograms, using both linearised single step CTF-approach (Cloetens et al., 1999; Turner et al., 2004), and non-linear generalizations of the CTF-method based on Tikhonov regularization (NL-CTF), using our code package HoloTomoToolbox as described and deposited (Lohse et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phase retrieval methods used with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "64e6cde9-06eb-4deb-9ff0-2d15d28093d0",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C81",
+      "claim": "Both CTF and NL-CTF implementations can be augmented by imposing support and range constraints when needed.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both CTF and NL-CTF implementations can be augmented by imposing support and range constraints, when needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes additional capabilities of the phase retrieval methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "cb548664-b36b-49e0-ba94-bb09af2aabed",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C82",
+      "claim": "Tomographic reconstruction was carried out with the MATLAB implemented iradon-function for the parallel geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "After phase reconstruction of all projections, the tomographic reconstruction was carried out with the MATLAB implemented iradon-function (Ram-Lak filter) for the parallel geometry",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reconstruction method used for parallel beam data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "4f0a1eb3-9318-45db-a4d6-09af3e83f490",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C83",
+      "claim": "Tomographic reconstruction was carried out with the FDK-function of the ASTRA toolbox for the cone beam geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "and with the FDK-function of the ASTRA toolbox (van Aarle et al., 2015; van Aarle et al., 2016) for the cone beam geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reconstruction method used for cone beam data with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "9f7b3f08-0a3c-44b5-8962-a1885ccedf8c",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C84",
+      "claim": "The extra information provided by 360\u00b0 scans was used to mask out pixels with artifacts and replace them with values of the opposing projection.",
+      "claim_type": "EXPLICIT",
+      "source": "To correct for this, the extra information provided by 360\u00b0 scans was used to mask out the corresponding pixels and replace them with values of the opposing projection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a correction method for ring artifacts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "883b7aee-3fd5-4c4f-ae4a-b2ff1fd4c77f",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C85",
+      "claim": "Stitching of reconstructions from different tomographic scans was performed using Miettinen et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Stitching of reconstructions from different tomographic scans was performed using (Miettinen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the stitching method with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "2dfab94c-a19b-4688-81f4-81d82c74a397",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C86",
+      "claim": "The tissue was segmented from the surrounding paraffin using the segmentation software Ilastik.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D-reconstructions were first binned (2 \u00d7 2 \u00d7 2), and the tissue was then segmented from the surrounding paraffin using the segmentation software Ilastik (Berg et al., 2019), which was then further refined with MATLAB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the segmentation method with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "992cfbfc-7130-4b4e-85e9-0fc6f53182bf",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C87",
+      "claim": "An automatic and parameter-controlled algorithm denoted as BlobFinder was used to identify lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, an automatic and parameter-controlled algorithm denoted as BlobFinder was used (arivis AG, Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the algorithm used for lymphocyte segmentation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "c49af2c0-4efd-4715-a2cf-790fe889a8ed",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C89",
+      "claim": "Lymphocytes appear denser compared to the nuclei of macrophages in the tomographic reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "For the unbinned datasets, a distinction between lymphocytes and the nuclei of the macrophages was made based on the difference in electron density. In the tomographic reconstructions, the lymphocytes appear denser compared to the nuclei of the macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observation used for cell type discrimination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "66e86c7f-02be-4b15-b0c6-d2db2537bb85",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C90",
+      "claim": "Only structures with a sphericity higher than 0.55 were included in the lymphocyte segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, nuclei from endothelial cells and parts of the capillaries filled with blood residues were excluded based on their elongated shape. Only structures with a sphericity higher than 0.55 were included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a criterion used in the segmentation algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "97cac657-c0f0-400b-ba31-43d07c2b77f4",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C93",
+      "claim": "The reconstruction volumes are visualized in Video 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire reconstruction volume is visualized in Video 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a video showing the reconstruction data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "9fb473a5-4d55-42fc-9bf3-f29ab635627a",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C94",
+      "claim": "Figure 7 illustrates the aggregation of hyaline membrane in the vicinity of a single alveole.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 7 illustrates the aggregation of hyaline membrane in the vicinity of a single alveole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes what Figure 7 shows.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "78a570a6-9173-42ec-a9ad-1661f1adb4d7",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C95",
+      "claim": "Volumetric renderings demonstrate particular attachment of fibrin to the alveolar walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Volumetric renderings in Figure 7a and b demonstrate particular attachment of fibrin to the alveolar walls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observation from the volumetric renderings in Figure 7.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "47a057e5-8293-4381-8dd8-8b480987a4f2",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C96",
+      "claim": "In cases of severe hyaline membrane formation, this pathological alteration can be tracked throughout the volume.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases of severe hyaline membrane formation as for this patient, this pathological alteration can be tracked throughout the volume Figure 7c\u2013e.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability demonstrated in Figure 7.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "aa924fcd-ab68-4798-824d-54ae95181052",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "claim_id": "C97",
+      "claim": "Figure 7g exemplifies a direct connection of hyaline membranes to the vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 3D-context, their locations with respect to blood vessels can be inspected, see Figure 7g, which exemplifies a direct connection of hyaline membranes to the vasculature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes what Figure 7g shows.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3201dae9-207b-4dd5-afea-af2f802215b8",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a multi-scale phase contrast x-ray tomography approach combining parallel beam (650 nm pixel size, 1.6 mm FOV) and cone beam (167 nm pixel size, 0.4 mm FOV) geometries at the GINIX endstation, enabling cellular-resolution 3D imaging of unstained lung tissue samples up to 8 mm cross-section through stitching of up to 20 tomograms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C28-C35, C77-C79 collectively describe a well-documented technical implementation with specific parameters (pixel sizes, FOV, facility location). The technical specifications are internally consistent and supported by the provided figures and tables. The claim of cellular resolution is validated by the demonstrated ability to segment individual cells (C2, C45, C89).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "3180d571-1616-4564-9aeb-74a32e870c91",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The approach enabled 3D visualization of diffuse alveolar damage (DAD) with hyaline membrane formation in COVID-19 lung tissue, demonstrating attachment of fibrin to alveolar walls, tracking of pathological alterations throughout volumes, and direct connections between hyaline membranes and vasculature across all six patient samples with varying severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C36-C49, C94-C97 are supported by multiple lines of evidence including volumetric renderings (Figure 7), virtual sections (Figures 3-5), and comparison with conventional histopathology. The 3D visualization capability is demonstrated across samples with different pathological presentations, and the findings are consistent with conventional histology assessments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "9bc25b2d-304c-4564-a42f-ed238ccd203b",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The method allows mapping of 3D distribution and density of lymphocytes infiltrating tissue using automated segmentation (BlobFinder algorithm) with discrimination based on electron density differences and sphericity criteria (>0.55), enabling quantification of lymphocyte concentrations ranging from 4.4-16.0 \u00d7 10\u2075/mm\u00b3 across the six samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C87, C89-C90 describe a systematic approach to lymphocyte segmentation with specific algorithmic criteria. The quantitative results are presented in Table 1 and visualized in Figure 8. However, the validation of cell type discrimination based solely on electron density and sphericity is limited\u2014no independent validation (e.g., immunohistochemistry correlation) is provided to confirm segmentation accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "cf2283fa-92e0-4b01-ac0f-78fa0b0a16f6",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The approach provides quantitative morphological analysis including histograms of characteristic distances from tissue interior to air compartments, specific surface area (SV), characteristic length (Lc), and mean oxygen diffusion distance, revealing patient II had highest surface area (46.56%) while samples I and VI had lowest, with larger characteristic lengths potentially indicating inflammation and hyaline membrane formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C51-C53, C59-C60 are supported by systematic quantitative analysis presented in Figure 6 and Table 1. The distance metrics and morphological parameters are well-defined mathematically and computed from segmented 3D volumes. The interpretation linking larger characteristic lengths to inflammation (C53) is appropriately qualified as tentative and requiring further validation with ROI analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "3e307ca0-c37c-473c-8276-eef3a32a4e49",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The method enables tracing of blood vessels in 3D, demonstrated by manual segmentation of a splitting blood vessel showing capillary separation with diameters ~2.8 \u03bcm, though the authors acknowledge this as an important next step requiring more advanced machine learning-based segmentation to fully exploit the data for understanding intussusceptive angiogenesis in COVID-19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61 and C69 describe blood vessel tracing capability demonstrated in Figure 9 through manual segmentation of one example. While the proof-of-concept is shown, the authors explicitly state this requires future work with advanced segmentation (C70). The result demonstrates potential but does not provide systematic quantitative analysis of vasculature across samples, limiting conclusions about intussusceptive angiogenesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "39ddc806-467b-4537-8134-2ea966eb7378",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multi-scale x-ray phase contrast tomography augments lung pathohistology to full three dimensions and bridges microscopic to macroscopic scales, achieving first-time 3D imaging of DAD-associated morphological changes (hyaline membranes, inflammation) in COVID-19 using standard FFPE material.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 represent the main conclusions supported by the collective technical achievements (C1-C3), visualization results (C4-C5), and quantitative analysis (C6). The use of FFPE material (C58) is significant for clinical translation. The claim of 'first-time' 3D imaging of these features in COVID-19 (C57) appears justified based on the literature context provided, though comprehensive literature review is beyond this evaluation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "95343d7f-5d15-49da-ade0-38bb19c753ea",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study analyzed six postmortem lung samples from COVID-19 patients who all suffered from hypertension, were treated with RAAS-interacting drugs, showed heterogeneous ground-glass opacities and consolidation on clinical CT, and died from respiratory failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C72-C74 describe the patient cohort with clinical characteristics detailed in Table 2. The sample size (n=6) is small and all patients share common characteristics (hypertension, RAAS treatment), which limits generalizability but is appropriate for a proof-of-concept methodological study. The homogeneity of clinical presentation may introduce selection bias for understanding COVID-19 pathology diversity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "453cbde0-e190-4260-a60c-1060f5e5cbed",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Phase retrieval was performed using both linearized CTF and non-linear CTF methods with Tikhonov regularization (NL-CTF), with tomographic reconstruction using MATLAB iradon for parallel geometry and ASTRA FDK for cone beam geometry, followed by artifact correction using 360\u00b0 scan information and stitching using established methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 describe the computational pipeline with appropriate citations to established methods. The use of multiple phase retrieval approaches (CTF and NL-CTF) and artifact correction strategies is methodologically sound. However, critical details are missing: no quantitative comparison of CTF vs NL-CTF performance is provided, regularization parameters are not specified, and the impact of local tomography artifacts on quantitative metrics is not fully assessed despite acknowledgment in the text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "d9cf416c-92c0-4791-82e3-aa0740b61e81",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Propagation-based phase contrast x-ray tomography offers advantages over conventional histology including full 3D visualization without destructive slicing, high phase sensitivity to probe unstained tissue in paraffin, and resolution below optical microscopy, building on established applications in lung imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 describe the physical principles and prior applications of PC-CT, all supported by appropriate citations to established literature. These claims provide necessary background context and are consistent with known physics of x-ray phase contrast. The advantages over conventional histology are demonstrated in the current work through the 3D visualizations and quantitative analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "f8d78f5f-2b5c-4a39-8f26-069cdb6c4bca",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors establish clinical and pathological context: severe COVID-19 is accompanied by ARDS with ground-glass opacities linked to DAD, with distinctive features including endothelial injury, thrombosis, and increased intussusceptive angiogenesis (2.7\u00d7 vs H1N1) and microthrombi (9\u00d7 vs H1N1), while conventional FFPE histology remains the gold standard.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C15 provide background knowledge supported by appropriate citations, particularly to Ackermann et al. 2020 for COVID-19-specific findings. These claims establish the scientific rationale for the study. The quantitative comparisons to H1N1 (C13-C14) are properly attributed to prior work, though the current study does not independently validate these findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "925264b2-4b08-440a-9d8b-bac5bdd8fcc9",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors assert that digitalization, visualization, and quantification of COVID-19 morphological changes require both high resolution and large volume capability, necessitating 3D extensions of histology techniques, and that integration of 3D morphological information can substantially aid understanding of SARS-CoV-2 pathophysiology, using samples from autopsies previously studied by immunohistochemistry and gene expression analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 establish the study rationale and design. The logical argument for multi-scale 3D imaging (C16-C17) is sound and validated by the results. The connection to prior immunohistochemical studies (C19, citing Ackermann et al. 2020) strengthens the work by enabling cross-modal comparison, though the manuscript would benefit from more explicit integration of findings across modalities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "cf2b168a-bd90-43cd-aa7d-47dd37cc106f",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors claim 3D histology analysis is required to quantitatively understand functional tissue properties, acknowledge that conventional immunohistochemical staining provides superior biomolecular information while x-ray immunostaining is not yet feasible, but note PC-CT is nondestructive allowing subsequent conventional histology on selected sections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C62-C64 provide balanced assessment of the method's advantages and limitations. The claim that 3D analysis is 'required' (C50) is somewhat strong but supported by the demonstrated advantages in quantification (Figure 6) and vessel tracing (Figure 9). The acknowledgment of complementary strengths of conventional histology (C62) and the nondestructive nature (C64, demonstrated in Appendix 1) are important for contextualizing the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "030402e0-71a3-4ddb-88e6-fb544c57aac2",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors identify future improvements including higher resolution through advanced optics and detectors, optimized data flow as the primary bottleneck for FOV extension, development of 3D immunostaining with radiocontrast agents, advanced machine learning segmentation to exploit current data for angiogenesis analysis, and potential clinical application to lung biopsies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68, C70-C71 appropriately identify technical limitations and future directions. The assessment that data flow is a larger bottleneck than photon flux (C66) is reasonable given 4th generation synchrotron capabilities. The speculation about clinical applications (C71) is appropriately qualified as tentative. These forward-looking claims are realistic and grounded in demonstrated proof-of-concept results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    },
+    {
+      "id": "0358c8fe-8c06-44c2-a052-ca97188e9586",
+      "content_id": "d8786b7b-3784-420e-aca3-236d428d7555",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The reconstruction volumes are visualized in Video 1, showing first the parallel beam dataset followed by the cone beam zoom reconstruction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is a straightforward reference to supplementary video material that provides additional visualization of the 3D data. This supports the main findings by enabling readers to inspect the volumetric data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:23:06.735085Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "01ec422b-58eb-4427-a3a7-4f056bcfcac3",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "01ffa5f2-c856-474e-a742-01c71d09a10a",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "4fc930fd-627e-4479-a14c-5bc74dacd82e",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "20e79bff-16a3-403e-a6db-655ff83157ba",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "1320106d-5850-4e27-b973-5014eee4856b",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "a4fa9d33-320d-490c-a435-659bf237e39a",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "85a9d842-34a3-4e36-a12d-6434a6c450c1",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "8512cd21-cc7b-4542-9c8e-f4fb93e32e9c",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "1ca7fdad-37db-4bd7-b78e-8c9ef5058114",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "34fa0a3b-e5f1-4443-a3df-2983ad5a5538",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "132499a1-f407-4ffc-ba9f-b6deb564e73d",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "aa7f80b2-b00e-4f31-988e-6dc17c39efe0",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "e717fc1b-193a-4759-8644-130e9cdc6d15",
+      "result_id": "3201dae9-207b-4dd5-afea-af2f802215b8"
+    },
+    {
+      "claim_id": "070a5f64-9821-4189-938c-ab06817555a9",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "bcc71458-0e51-4f76-bbc4-879eb8fb1842",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "2a41af77-4250-47d8-9229-387d5bf2cc48",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "4b2c7a58-a5d5-4268-9e0e-7657d779d2c3",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "85d5d9f5-4e7a-49f3-86d8-63ae154ed884",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "c8fc45f4-d1bd-4f6e-9612-8624c5f900f1",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "b0fd322b-ad64-4d2f-ab68-b0cee9cc9353",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "f66d554a-e887-4757-9915-19f6dc4751da",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "4715c276-59d7-4a57-a8e2-ef570567e8b9",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "45cca273-258a-4c2b-9cf3-c5bbef100547",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "61b072ff-6efc-4100-b46e-6d5b864f8687",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "cd6308ad-2b34-4db6-bdc4-86bbc88144f6",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "14faeb32-a793-4843-8cd8-67ade1bd555f",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "a0554a92-1946-439d-8223-ef3550cca84a",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "41576075-8a7e-4d71-9f69-0c87c6c5410c",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "9fb473a5-4d55-42fc-9bf3-f29ab635627a",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "78a570a6-9173-42ec-a9ad-1661f1adb4d7",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "47a057e5-8293-4381-8dd8-8b480987a4f2",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "aa924fcd-ab68-4798-824d-54ae95181052",
+      "result_id": "3180d571-1616-4564-9aeb-74a32e870c91"
+    },
+    {
+      "claim_id": "2c246577-2f99-4563-a450-86f578894d92",
+      "result_id": "9bc25b2d-304c-4564-a42f-ed238ccd203b"
+    },
+    {
+      "claim_id": "992cfbfc-7130-4b4e-85e9-0fc6f53182bf",
+      "result_id": "9bc25b2d-304c-4564-a42f-ed238ccd203b"
+    },
+    {
+      "claim_id": "c49af2c0-4efd-4715-a2cf-790fe889a8ed",
+      "result_id": "9bc25b2d-304c-4564-a42f-ed238ccd203b"
+    },
+    {
+      "claim_id": "66e86c7f-02be-4b15-b0c6-d2db2537bb85",
+      "result_id": "9bc25b2d-304c-4564-a42f-ed238ccd203b"
+    },
+    {
+      "claim_id": "f70573f2-aaeb-452f-8bc8-0180f574b133",
+      "result_id": "cf2283fa-92e0-4b01-ac0f-78fa0b0a16f6"
+    },
+    {
+      "claim_id": "34bbc533-4140-473f-aa79-f9039448a481",
+      "result_id": "cf2283fa-92e0-4b01-ac0f-78fa0b0a16f6"
+    },
+    {
+      "claim_id": "d65c5ec6-2a1f-47a8-88c1-061c085b32ac",
+      "result_id": "cf2283fa-92e0-4b01-ac0f-78fa0b0a16f6"
+    },
+    {
+      "claim_id": "8e3c1395-efd6-4776-9abf-3791536edb86",
+      "result_id": "cf2283fa-92e0-4b01-ac0f-78fa0b0a16f6"
+    },
+    {
+      "claim_id": "dddd7841-f693-4981-88cd-09bd47a5bf4f",
+      "result_id": "cf2283fa-92e0-4b01-ac0f-78fa0b0a16f6"
+    },
+    {
+      "claim_id": "36a1ad04-0b3f-41f5-9e9e-b58ee39805ef",
+      "result_id": "cf2283fa-92e0-4b01-ac0f-78fa0b0a16f6"
+    },
+    {
+      "claim_id": "8662f387-1aa8-4464-be30-dd908eb0f50a",
+      "result_id": "3e307ca0-c37c-473c-8276-eef3a32a4e49"
+    },
+    {
+      "claim_id": "9f6c7616-d162-4377-bb98-d3d85cc89ed1",
+      "result_id": "3e307ca0-c37c-473c-8276-eef3a32a4e49"
+    },
+    {
+      "claim_id": "a23e31fc-d6ec-466b-98d6-fe12711fddf9",
+      "result_id": "39ddc806-467b-4537-8134-2ea966eb7378"
+    },
+    {
+      "claim_id": "e232acce-dec4-4872-81b1-e56971ba8fa1",
+      "result_id": "39ddc806-467b-4537-8134-2ea966eb7378"
+    },
+    {
+      "claim_id": "67dad405-dbad-4f28-b4f8-a6cc62bef17f",
+      "result_id": "39ddc806-467b-4537-8134-2ea966eb7378"
+    },
+    {
+      "claim_id": "49d0cf6d-6693-4010-afb2-521d5f2b4c72",
+      "result_id": "39ddc806-467b-4537-8134-2ea966eb7378"
+    },
+    {
+      "claim_id": "de4d1e24-0e9d-44b2-8346-8d3346535ea3",
+      "result_id": "95343d7f-5d15-49da-ade0-38bb19c753ea"
+    },
+    {
+      "claim_id": "a26760fc-eeae-4cad-b86e-0bfd15a9b800",
+      "result_id": "95343d7f-5d15-49da-ade0-38bb19c753ea"
+    },
+    {
+      "claim_id": "73ecd0c0-c282-46e9-8f64-acbf6fc45fe4",
+      "result_id": "95343d7f-5d15-49da-ade0-38bb19c753ea"
+    },
+    {
+      "claim_id": "7b5cf621-4c96-499b-9a10-6944616d0d66",
+      "result_id": "95343d7f-5d15-49da-ade0-38bb19c753ea"
+    },
+    {
+      "claim_id": "1e00a6b7-0d8f-48d2-9de4-91899f1eda6d",
+      "result_id": "453cbde0-e190-4260-a60c-1060f5e5cbed"
+    },
+    {
+      "claim_id": "64e6cde9-06eb-4deb-9ff0-2d15d28093d0",
+      "result_id": "453cbde0-e190-4260-a60c-1060f5e5cbed"
+    },
+    {
+      "claim_id": "cb548664-b36b-49e0-ba94-bb09af2aabed",
+      "result_id": "453cbde0-e190-4260-a60c-1060f5e5cbed"
+    },
+    {
+      "claim_id": "4f0a1eb3-9318-45db-a4d6-09af3e83f490",
+      "result_id": "453cbde0-e190-4260-a60c-1060f5e5cbed"
+    },
+    {
+      "claim_id": "9f7b3f08-0a3c-44b5-8962-a1885ccedf8c",
+      "result_id": "453cbde0-e190-4260-a60c-1060f5e5cbed"
+    },
+    {
+      "claim_id": "883b7aee-3fd5-4c4f-ae4a-b2ff1fd4c77f",
+      "result_id": "453cbde0-e190-4260-a60c-1060f5e5cbed"
+    },
+    {
+      "claim_id": "2dfab94c-a19b-4688-81f4-81d82c74a397",
+      "result_id": "453cbde0-e190-4260-a60c-1060f5e5cbed"
+    },
+    {
+      "claim_id": "1d4010b7-ed8f-42c1-bed4-14f2c5f7d79a",
+      "result_id": "d9cf416c-92c0-4791-82e3-aa0740b61e81"
+    },
+    {
+      "claim_id": "ea5a76d8-7120-415f-965f-1afe5fa5155f",
+      "result_id": "d9cf416c-92c0-4791-82e3-aa0740b61e81"
+    },
+    {
+      "claim_id": "c162c36b-78c2-4400-8702-d9ee701962c5",
+      "result_id": "d9cf416c-92c0-4791-82e3-aa0740b61e81"
+    },
+    {
+      "claim_id": "dfd64e23-aa41-4dfa-af1a-11e32d91cd22",
+      "result_id": "d9cf416c-92c0-4791-82e3-aa0740b61e81"
+    },
+    {
+      "claim_id": "1b833e83-0e5e-48df-bc47-bd0ac5fd0cde",
+      "result_id": "d9cf416c-92c0-4791-82e3-aa0740b61e81"
+    },
+    {
+      "claim_id": "315a2082-3785-46b8-8dcd-d9890691fa6c",
+      "result_id": "d9cf416c-92c0-4791-82e3-aa0740b61e81"
+    },
+    {
+      "claim_id": "326901e1-2ce4-4e68-86ed-367c5dc7e051",
+      "result_id": "d9cf416c-92c0-4791-82e3-aa0740b61e81"
+    },
+    {
+      "claim_id": "93514548-1134-4e94-812e-87bcb9937a15",
+      "result_id": "f8d78f5f-2b5c-4a39-8f26-069cdb6c4bca"
+    },
+    {
+      "claim_id": "c0045450-de53-47d9-bdfa-9d67e78fe40a",
+      "result_id": "f8d78f5f-2b5c-4a39-8f26-069cdb6c4bca"
+    },
+    {
+      "claim_id": "cbc1b16f-c6ac-4162-a925-7a988470c70c",
+      "result_id": "f8d78f5f-2b5c-4a39-8f26-069cdb6c4bca"
+    },
+    {
+      "claim_id": "6b0553ba-c8ea-4a90-b243-34ef696c8a7b",
+      "result_id": "f8d78f5f-2b5c-4a39-8f26-069cdb6c4bca"
+    },
+    {
+      "claim_id": "37a1b4a1-4922-47af-8355-19f199cad013",
+      "result_id": "f8d78f5f-2b5c-4a39-8f26-069cdb6c4bca"
+    },
+    {
+      "claim_id": "cb3c9cdb-d42f-414e-8ad9-2c161a1bc9a2",
+      "result_id": "f8d78f5f-2b5c-4a39-8f26-069cdb6c4bca"
+    },
+    {
+      "claim_id": "3239ca8c-5504-4a73-94fb-0a375b21cb35",
+      "result_id": "f8d78f5f-2b5c-4a39-8f26-069cdb6c4bca"
+    },
+    {
+      "claim_id": "67e0e976-38cf-4a97-a4ac-0adefe4c3dda",
+      "result_id": "f8d78f5f-2b5c-4a39-8f26-069cdb6c4bca"
+    },
+    {
+      "claim_id": "de2178d6-f498-4e57-9f0d-2999f7051419",
+      "result_id": "f8d78f5f-2b5c-4a39-8f26-069cdb6c4bca"
+    },
+    {
+      "claim_id": "ec8ea71c-43f0-4caf-aa3c-4c8cca6351fd",
+      "result_id": "925264b2-4b08-440a-9d8b-bac5bdd8fcc9"
+    },
+    {
+      "claim_id": "0c779dd3-4b60-47c0-80f6-0b978de2bd86",
+      "result_id": "925264b2-4b08-440a-9d8b-bac5bdd8fcc9"
+    },
+    {
+      "claim_id": "60105d0c-9ec5-4b84-bd36-2072588aa8b4",
+      "result_id": "925264b2-4b08-440a-9d8b-bac5bdd8fcc9"
+    },
+    {
+      "claim_id": "d20ddfd0-6279-440a-ab81-81fe652228ee",
+      "result_id": "925264b2-4b08-440a-9d8b-bac5bdd8fcc9"
+    },
+    {
+      "claim_id": "9abcf997-5a1b-477a-a194-a2e67bb8956b",
+      "result_id": "cf2b168a-bd90-43cd-aa7d-47dd37cc106f"
+    },
+    {
+      "claim_id": "6541cb19-5acd-4532-93bf-e1d87a6781a3",
+      "result_id": "cf2b168a-bd90-43cd-aa7d-47dd37cc106f"
+    },
+    {
+      "claim_id": "503839c6-bac3-4307-8c64-73e16af41f2b",
+      "result_id": "cf2b168a-bd90-43cd-aa7d-47dd37cc106f"
+    },
+    {
+      "claim_id": "3d3a4f0c-b2f3-4afa-a3fb-14e2f25fb301",
+      "result_id": "cf2b168a-bd90-43cd-aa7d-47dd37cc106f"
+    },
+    {
+      "claim_id": "a7641d47-6480-4480-969b-fcc153cfbd51",
+      "result_id": "030402e0-71a3-4ddb-88e6-fb544c57aac2"
+    },
+    {
+      "claim_id": "f39e7621-9252-423e-9062-c54ab9a3d9e9",
+      "result_id": "030402e0-71a3-4ddb-88e6-fb544c57aac2"
+    },
+    {
+      "claim_id": "31995670-0b47-4e6d-b5f8-618b1e4e43ff",
+      "result_id": "030402e0-71a3-4ddb-88e6-fb544c57aac2"
+    },
+    {
+      "claim_id": "91e67b33-41ac-477a-9482-89d277358f02",
+      "result_id": "030402e0-71a3-4ddb-88e6-fb544c57aac2"
+    },
+    {
+      "claim_id": "ef4e668b-28a2-454a-9bca-669bc0b68db5",
+      "result_id": "030402e0-71a3-4ddb-88e6-fb544c57aac2"
+    },
+    {
+      "claim_id": "98568124-e8de-4ed5-bfd1-60c22984f905",
+      "result_id": "030402e0-71a3-4ddb-88e6-fb544c57aac2"
+    },
+    {
+      "claim_id": "97cac657-c0f0-400b-ba31-43d07c2b77f4",
+      "result_id": "0358c8fe-8c06-44c2-a052-ca97188e9586"
+    }
+  ],
+  "comparisons": []
+}

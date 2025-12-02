@@ -1,0 +1,1578 @@
+{
+  "submission": {
+    "id": "8ccdf8a4-3f5f-4c08-a0dd-d3a231a46912",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:07:58.715895Z",
+    "updated_at": "2025-12-02T14:07:58.715895Z"
+  },
+  "content": [
+    {
+      "id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "submission_id": "8ccdf8a4-3f5f-4c08-a0dd-d3a231a46912",
+      "content_type": "manuscript",
+      "content_text": "# C-mannosylation supports folding and enhances stability of thrombospondin repeats\n\n## Authors\n\n- Aleksandra Shcherbakova<sup>1</sup> ([ORCID: 0000-0003-4175-547X](https://orcid.org/0000-0003-4175-547X))\n- Matthias Preller<sup>2</sup> ([ORCID: 0000-0002-7784-4012](https://orcid.org/0000-0002-7784-4012))\n- Manuel H Taft<sup>2</sup> ([ORCID: 0000-0001-5853-8629](https://orcid.org/0000-0001-5853-8629))\n- Jordi Pujols<sup>3</sup>\n- Salvador Ventura<sup>3</sup> ([ORCID: 0000-0002-9652-6351](https://orcid.org/0000-0002-9652-6351))\n- Birgit Tiemann<sup>1</sup>\n- Falk FR Buettner<sup>1</sup> ([ORCID: 0000-0002-8468-1223](https://orcid.org/0000-0002-8468-1223))\n- Hans Bakker<sup>1</sup> ([ORCID: 0000-0002-1364-9154](https://orcid.org/0000-0002-1364-9154)) \u2020\n\n### Affiliations\n\n1. Institute of Clinical Biochemistry Hannover Medical School Hannover Germany\n2. Institute for Biophysical Chemistry Hannover Medical School Hannover Germany\n3. Institut de Biotecnologia i Biomedicina Universitat Aut\u00f2noma de Barcelona Bellaterra Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrevious studies demonstrated importance of C-mannosylation for efficient protein secretion. To study its impact on protein folding and stability, we analyzed both C-mannosylated and non-C-mannosylated thrombospondin type 1 repeats (TSRs) of netrin receptor UNC-5. In absence of C-mannosylation, UNC-5 TSRs could only be obtained at low temperature and a significant proportion displayed incorrect intermolecular disulfide bridging, which was hardly observed when C-mannosylated. Glycosylated TSRs exhibited higher resistance to thermal and reductive denaturation processes, and the presence of C-mannoses promoted the oxidative folding of a reduced and denatured TSR in vitro. Molecular dynamics simulations supported the experimental studies and showed that C-mannoses can be involved in intramolecular hydrogen bonding and limit the flexibility of the TSR tryptophan-arginine ladder. We propose that in the endoplasmic reticulum folding process, C-mannoses orient the underlying tryptophan residues and facilitate the formation of the tryptophan-arginine ladder, thereby influencing the positioning of cysteines and disulfide bridging.\n\n## Introduction\n\nProtein glycosylation is a major form of co- and post-translational modification, affecting the majority of secreted and cell-surface proteins. It can influence the folding of a protein as well as its physical properties, activity and ability to interact with other macromolecules, thus playing an important role in a great variety of cellular processes (Varki, 2017). C-mannosylation is presently one of the less well characterized glycosylation types. It takes place in the endoplasmic reticulum (ER), presumably co-translationally (Doucey et al., 1998; Krieg et al., 1998), and is performed by C-mannosyltransferase enzymes of the DPY(dumpy)-19 family (Buettner et al., 2013; Niwa et al., 2016; Shcherbakova et al., 2017). C-mannosylation has been found on tryptophans of WXXW/C motifs and involves a carbon-carbon linkage between the sugar and the protein: the C1 atom of the \u03b1-mannose is thereby attached to the indole C2 atom of the tryptophan (Figure 1A) (de Beer et al., 1995; Hofsteenge et al., 1994). However, the function of C-mannosylation remains elusive.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig1-v2.jpg)\n\n**Figure 1.:** (A) C-mannose (green) linked to the indole C2 atom of a tryptophan (light-blue) by a C-C bond. (B) Modeled structure of C. elegans UNC-5 TSR2 with tryptophans (blue) and arginines (red) arranged in a Trp-Arg ladder. C-mannoses (green) are displayed on the first two tryptophans of the WXXWXXW motif, according to previous findings (Buettner et al., 2013), (Figure 3\u2014figure supplement 1). Oxygen atoms are indicated in red, nitrogen atoms in dark-blue and disulfide bonds in yellow. (C)\u00a0Natural C. elegans UNC-5 and soluble TSR constructs applied in this study. Ig: immunoglobulin-like domain; TSR:\u00a0thrombospondin type\u00a01 repeat; TM:\u00a0transmembrane domain; signal:\u00a0cleavable secretion signal; V5 and His6:\u00a0tags for detection and purification.\n\nC-mannosylation has been predicted on 18% of human secreted and transmembrane proteins (Julenius, 2007). There are two main protein groups bearing conserved C-mannosylation sites \u2013 proteins with thrombospondin type\u00a01 repeats (TSRs) and type I cytokine receptors. TSRs are small protein domains consisting of around 60 amino acids. They possess a conserved structure of three antiparallel strands typically linked by three disulfide bridges (Figure 1B) (Tan et al., 2002). The first strand contains the C-mannosylation motif with up to three tryptophan residues (WXXWXXWXXC), which all can be C-mannosylated (Hofsteenge et al., 1999). The tryptophans intercalate with conserved arginine residues from the second strand building a so-called tryptophan-arginine (Trp-Arg) ladder that forms the core of the TSR fold (Figure 1B) (Tan et al., 2002; Tossavainen et al., 2006). Due to stabilizing cation-\u03c0 interactions between the arginine and tryptophan side chains (Gallivan and Dougherty, 1999), the Trp-Arg ladder is deduced to have an important structural function in the TSRs.\n\nSeveral studies have shown that C-mannosylation is important for proper secretion of TSR-containing and other proteins. Mutagenesis of the C-mannosylation sites usually resulted in reduced secretion or cell-surface expression of the proteins and their retention in the ER (Fujiwara et al., 2016; Gouyer et al., 2018; Hilton et al., 1996; Niwa et al., 2016; Okamoto et al., 2017; Sasazawa et al., 2015; Taylor et al., 1997). The same effects were observed in cells with reduced availability of the donor substrate dolichol-P-mannose (Perez-Vilar et al., 2004; Wang et al., 2009), suggesting a direct influence of C-mannose on secretion efficiency; however, other glycosylation processes were affected in these cells as well. With the discovery of the enzyme catalyzing C-mannosylation \u2013 the C-mannosyltransferase (Buettner et al., 2013) \u2013 specific genetic intervention affecting C-mannosylation became possible, enabling to study the effects of C-mannosylation without affecting the target protein sequence or other cellular pathways. This indeed allowed to demonstrate that lack of C-mannosylation alone was responsible for reduced secretion of TSR-containing proteins (Buettner et al., 2013; Niwa et al., 2016; Shcherbakova et al., 2017). In this study, we utilized the possibility to produce a single TSR with and without C-mannoses in the same expression system to directly evaluate the effects of C-mannosylation beyond secretion.\n\n## Results\n\n### C-mannosylation becomes critical for secretion of UNC-5 TSRs with increasing temperature\n\nSecretion of TSRs from C. elegans netrin receptor UNC-5 (Figure 1C) was analyzed at 20, 24\u00b0C and 28\u00b0C in naturally C-mannose-negative Drosophila S2 cells (Hofsteenge et al., 2001; Krieg et al., 1997). C-mannosylation of the TSRs was obtained by co-expression of the C. elegans DPY-19 C-mannosyltransferase. A C-mannosylation-independent Notch EGF16\u201320 fragment was used as transfection and secretion control.\n\nAt 20\u00b0C, secretion of UNC-5 TSRs was higher from cells co-expressing DPY-19 than from C-mannosylation-negative cells (Figure 2). At increasing temperatures, secretion of C-mannosylated TSRs was not affected, whereas secretion of non-mannosylated TSRs further declined gradually. Intracellular UNC-5 TSR levels were comparable at all conditions confirming that the cells were able to produce C- and non-mannosylated TSRs per se (Figure 2). Thus, impaired temperature-dependent secretion of non-mannosylated TSRs implied a role of C-mannoses in protein stability and/or protein folding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig2-v2.jpg)\n\n**Figure 2.:** Western blot analysis of secreted (upper panel) and intracellular (lower panel) UNC-5 TSRs 1+2 expressed in Drosophila S2 cells, co-transfected with C. elegans DPY-19 (+) or an empty vector (-) and incubated at 20, 24\u00b0C and 28\u00b0C as indicated. V5-tagged EGF repeats 16\u201320 from Drosophila Notch were used as transfection and secretion control. Both proteins were detected by anti-V5 antibody. An analog temperature-sensitivity can be observed in C. elegans dpy-19 mutants (Figure 2\u2014figure supplement 1).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** C. elegans dpy-19(e1259)III worms (strain CB1259 from the Caenorhabditis Genetics Center) were grown on E. coli OP50 cells as described in WormBook (www.wormbook.org) at 18, 20, 22 and 24\u00b0C.\n\n### C-mannosylation increases resistance of UNC-5 TSR2 to thermal denaturation\n\nTo explore the impact of C-mannosylation on TSR stability, the second TSR (TSR2) of UNC-5 (Figure 1B,C) was produced with and without C-mannoses in Drosophila S2 cells. Presence of C-mannoses was verified by mass spectrometry, showing that the major fraction of the protein was modified on the first two tryptophans of the WXXWXXW motif (Figure 3\u2014figure supplement 1). The correct folding of both TSR forms was confirmed by circular dichroism (CD) spectroscopy showing TSR-typical spectra with characteristic maxima near 230 and 212 nm and a minimum in the 195\u2013200 nm region (Figure 3A) (Huwiler et al., 2002; Roszmusz et al., 2002; Smith et al., 1984). Disappearance of the 230 nm maximum was used to monitor thermal unfolding of mannosylated and non-mannosylated TSRs (Figure 3B). The C-mannosylated TSR revealed a significantly higher melting temperature (Tm\u00a0=\u00a059.5\u00b0C) compared to the non-mannosylated form (Tm\u00a0=\u00a050.4\u00b0C) showing that C-mannosylation on W1 and W2 of the WXXWXXW motif strongly increases the resistance of the TSR to thermal denaturation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig3-v2.jpg)\n\n**Figure 3.:** (A) Native CD spectra of non-mannosylated (blue) and C-mannosylated (green) UNC-5 TSR2 at 24\u00b0C. Average spectra of three measurements are displayed for each TSR form (Figure 3\u2014source data 1). (B)\u00a0Thermal denaturation of non- and C-mannosylated UNC-5 TSR2 monitored by CD spectroscopy at a wavelength of 229 and 228 nm, respectively. Measurements of three non-mannosylated (gray-shaded squares) and C-mannosylated (gray-shaded circles) UNC-5 TSR2 samples were averaged and fitted (blue and green, respectively) (Figure 3\u2014source data 2). Average Tm values are depicted in the right plot (error bars show standard deviation). Thermal denaturation of both, non- and C-mannosylated TSRs, was reversible to a high extent (Figure 3\u2014figure supplement 2).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Extracted ion chromatograms of (M + 2H)2+ ions of the UNC-5 TSR2 tryptic peptide containing the WXXWXXW motif with no, one, two and three hexoses are displayed revealing that the di-mannosylated form is most abundant. (B) MSMS spectrum of the di-mannosylated UNC-5 TSR2 (m/z\u00a0=\u00a01326.51) showing that the two C-mannoses are located on the first two tryptophans of the WXXWXXW motif. b- and y- series ions with additional hexose masses are marked either by a green circle displaying a full mannose or by a broken circle displaying a cross-ring cleaved C-mannose (loss of 120 Da).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Thermal denaturation and recovery upon temperature decrease of C-mannosylated (green) and non-mannosylated (blue) UNC-5 TSR2 were monitored by CD spectroscopy at a wavelength of 228 and 229 nm, respectively. Collected data points were fitted by Boltzmann function (OriginLab). 260\u2013190 nm spectra of native and recovered TSRs display refolding of the proteins to a high extent.\n\n### Molecular dynamics simulation of the thermal denaturation\n\nTo understand the structural dynamics behind the increased resistance of the C-mannosylated TSR during thermal denaturation, we performed molecular dynamics simulations of a modeled UNC-5 TSR2 structure with and without C-mannosylation at elevated temperature of 75\u00b0C for 200 ns. Each simulation was repeated three times.\n\nIn both TSR forms, the Trp-Arg ladder scaffold was mostly maintained during the simulation, presumably because of restricted dynamics due to the three disulfide bridges. However, positions of arginines and tryptophans in the C-mannosylated TSR remained more constrained in all three simulation replicates (Figure 4A) indicating that the Trp-Arg ladder structure in the C-mannosylated TSR is more rigid compared to the non-modified TSR. Particularly Trp5 \u2013 the first tryptophan of the WXXWXXW motif \u2013 appeared highly flexible and diverged from the residual Trp-Arg ladder organization in the non-mannosylated form (Figure 4\u2014videos 1 and 2). This was confirmed by calculated root-mean-square fluctuations (RMSF) of single residues as depicted by the blue-white-red color gradient of the representative TSR structures from each simulation replicate (Figure 4B, Figure 4\u2014figure supplement 1). Correspondingly, calculated cation-\u03c0 interactions between Trp5 and Arg24 were found to be maintained in the C-mannosylated TSR but not in the non-modified TSR (Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig4-v2.jpg)\n\n**Figure 4.:** (A) Modeled structures of UNC-5 TSR2 without C-mannosylation (top) and with two C-mannoses on Trp5 and Trp8 (bottom) at the starting point of each simulation followed by aligned Trp-Arg ladder structures from three simulation replicates after 100 and 200 ns simulation time. Tryptophans are depicted in light-blue, mannoses in green and arginines in salmon. (B) Representative most-abundant structures of non- and C-mannosylated UNC-5 TSR2 from each simulation, colored using a blue-white-red gradient according to the calculated root-mean-square fluctuation (RMSF) values (blue\u00a0\u22641 \u00c5; red\u00a0\u22658 \u00c5) (Figure 4\u2014figure supplement 1, Figure 4\u2014source data 1). (C)\u00a0Hydrogen bonds (cyan) formed by C-mannosylated Trp5 and Trp8 with adjacent residues, calculated using the VMD Hydrogen Bonds plugin. Oxygen atoms are depicted in red and nitrogen atoms in dark-blue. (D) Most abundant hydrogen bonds formed during each simulation either by C-mannoses together with corresponding tryptophan residues or by non-mannosylated tryptophans alone are displayed as occupancies (%). A more detailed representation is depicted in Figure 4\u2014figure supplement 4.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Mean RMSF values from simulation triplicates are shown in black for the C-mannosylated and in gray for the non-mannosylated TSR. Error bars depict calculated standard error. The three TSR beta-strands are displayed as gray boxes above the protein sequence. Tryptophan and arginine residues forming the Trp-Arg ladder are highlighted in red.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) The energies were calculated using the CaPTURE program (Gallivan and Dougherty, 1999) and are displayed for each interacting Trp and Arg residue pair in each simulation triplicate. (B) Representation of the energy values as mean values for each residue pair with corresponding interquartile (boxes) and 5th/95th percentile (whiskers) ranges.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Trp-Arg ladder after 100 and 200 ns simulation time is displayed aligned with corresponding Trp-Arg ladder structures from UNC-5 TSR2 with 4C1 C-mannoses (transparent). Tryptophans are depicted in light-blue, C-mannoses in green, arginines in salmon, oxygen atoms in red and nitrogen atoms in blue.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Gray bars display hydrogen bonds from three independent simulations formed either by tryptophans with 4C1-C-mannoses or by non-mannosylated tryptophans. Blue bars correspond to C-mannoses in 1C4 conformation. In case of C-mannosylated tryptophans, both tryptophan and mannose residues were included into calculations.\n\nFurthermore, we found hydrogen bond interactions between C-mannoses and the neighboring side chains as well as the backbone of the corresponding tryptophan residues throughout the simulations (Figure 4C,D and Figure 4\u2014figure supplement 4). Thus, C-mannoses appeared to keep the tryptophans in specific orientations not only by affecting their conformational space but also by forming polar interactions with surrounding residues.\n\nWe performed the simulations with mannoses in a 4C1-chair conformation according to previously published crystal structures of C-mannosylated TSRs (Aleshin et al., 2012; Hamming et al., 2012). However, because NMR studies (de Beer et al., 1995; Nishikawa et al., 2005) and recently resolved TSR crystal structures (Pedersen et al., 2019; Pronker et al., 2016; van den Bos et al., 2019) suggest that C-mannoses can occur in 4C1 and 1C4 forms, we also performed a simulation with C-mannoses in 1C4-chair arrangement (Figure 4\u2014video 3). For both conformations, we observed similar maintenance of the Trp-Arg ladder and ability to form hydrogen bonds (Figure 4\u2014figure supplements 3 and 4).\n\n### C-mannosylation decreases the unfolding rate of UNC-5 TSR2 under reducing conditions\n\nTo evaluate the effects of C-mannosylation on the structure of a TSR aside from the impact exerted by the disulfide bonds, we analyzed non- and C-mannosylated UNC-5 TSR2 under reducing conditions by CD\u00a0spectroscopy. Upon addition of 2 mM DTT, both proteins started to unfold immediately, showing that the disulfides are essential for the TSR structure. Denaturation of the C-mannosylated TSR, however, occurred approximately 1.8 times slower than that of the non-mannosylated repeat (Figure 5A). C-mannosylation might decrease the accessibility of the disulfide bridges by DTT, but could also protect the Trp-Arg ladder organization of the TSR.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig5-v2.jpg)\n\n**Figure 5.:** (A) Reductive denaturation of non-mannosylated (blue) and C-mannosylated (green) UNC-5 TSR2 monitored using CD spectroscopy at a wavelength of 229 and 228 nm, respectively. Measurements of three non-mannosylated (gray-shaded squares) and C-mannosylated (gray-shaded circles) UNC-5 TSR2 samples were averaged and fitted (Figure 5\u2014source data 1). Average half-life values are depicted in the right plot (error bars show standard deviation). (B) Modeled structures of UNC-5 TSR2 lacking disulfide bridges without C-mannosylation (top) and with two C-mannoses on Trp5 and Trp8 (bottom) at the starting point of each simulation followed by aligned Trp-Arg ladder structures from three simulation replicates after 100 and 200 ns simulation time. Tryptophans are depicted in light-blue, mannoses in green and arginines in salmon. (C) Final structures of non- and C-mannosylated UNC-5 TSR2 after each 200 ns simulation, colored using a blue-white-red gradient according to the calculated root-mean-square fluctuation (RMSF) values (blue\u00a0\u22641 \u00c5; red\u00a0\u22655 \u00c5) (Figure 5\u2014figure supplement 1, Figure 5\u2014source data 2). Cys26 and Cys38 residues, that are involved in the upper disulfide bridge of the TSR, are labeled with one or two asterisks, respectively.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Mean RMSF values from simulation triplicates are shown in black for the C-mannosylated and in gray for the non-mannosylated TSR. Error bars depict calculated standard error. The three TSR beta-strands are displayed as gray boxes above the protein sequence. Tryptophan and arginine residues forming the Trp-Arg ladder, as well as Cys26 and Cys38, are highlighted in red.\n\nTo visualize putative structural effects of C-mannosylation, we performed molecular dynamics simulation studies of non- and C-mannosylated UNC-5 TSR2 lacking disulfide bonds at 24\u00b0C. As in the thermal denaturation simulation, non-mannosylated TSR revealed an increased flexibility of Trp5 in the Trp-Arg ladder organization in comparison to the C-mannosylated TSR (Figure 5B,C and Figure 5\u2014figure supplement 1). Additionally, Cys26 (marked by *) involved in the upper disulfide bridge showed lower fluctuation values and thus decreased flexibility in the C-mannosylated TSR (Figure 5C, Figure 5\u2014figure supplement 1) which might be relevant for the disulfide bond formation during protein folding.\n\n### C-mannosylation supports folding of UNC-5 TSR2\n\nTo further investigate the role of C-mannoses in TSR folding, oxidative folding experiments were performed with non- and di-mannosylated UNC-5 TSR2. After reduction and unfolding of the TSRs with DTT and guanidine hydrochloride, the refolding of the proteins was monitored by CD spectroscopy in the presence of 1 mM reduced and 0.5 mM oxidized glutathione (GSH and GSSG) for three hours. Both TSRs were able to form native-like conformations as demonstrated by the appearance of the characteristic TSR peak in CD spectra (Figure 6A). Still, folding initiation of the C-mannosylated TSR occured significantly faster compared to the non-modified protein (Figure 6A, Figure 6\u2014figure supplement 1), confirming that C-mannosylation plays a role in the folding of UNC-5 TSR2.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig6-v2.jpg)\n\n**Figure 6.:** (A) Oxidative refolding of previously reduced and unfolded non- and di-mannosylated UNC-5 TSR2 monitored by CD spectroscopy in presence of 0.5 mM GSSG and 1 mM GSH at 24\u00b0C. The first spectrum was recorded 9 min after removal of denaturating agents and addition of GSSG/GSH. Subsequent spectra were recorded every 10 min. (B) Nickel affinity purification chromatograms of secreted non- and C-mannosylated His-tagged TSR2 from Drosophila S2 cells. Whereas C-mannosylated TSR2 appeared primary as monomer (a), non-mannosylated TSR revealed a high amount of dimeric structures (b), which bound stronger to the nickel affinity column and were confirmed by gel filtration chromatography and non-reducing SDS-PAGE. Highly increased formation of dimers was consistently observed in over ten independent purifications.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Four independent folding reactions of proteins with and without C-mannose were followed at a wavelength of 229 and 228 nm, respectively, at 24 or 32\u00b0C.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Secreted non- and C-mannosylated TSR2 from Drosophila S2 cells were purified by nickel affinity (Figure 6B) and gel filtration and analyzed by MALDI-TOF MS with 5 mg/ml \u03b1-cyano-4-hydroxycinnamic acid as matrix, using a 5800 MALDI TOF/TOF (ABSciex). (A) The nickel affinity chromatography fraction b (Figure 6B, left panel) was detected at two m/z values. One peak corresponds to the expected mass of a singly charged dimer of TSR2 (monoisotopic m/z: 14284.88). A second peak likely represents the doubly charged dimer of TSR2 (calculated m/z: 7142.94). (B) The nickel affinity chromatography fraction a (Figure 6B, left panel) was mainly detected at a size corresponding to the calculated monomer (m/z: 7142.94). (C) The nickel affinity chromatography fraction a (Figure 6B, right panel) likely represents the expected singly charged monomer with two mannoses attached (calculated m/z: 7467.04).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** UNC-5 TSR2 from stably transfected S2 cells + DPY-19 after purification by nickel affinity chromatography was applied to the Xbridge Prep C185 \u00b5m, 10 \u00d7 50 mm column (Waters), equilibrated in 10% acetonitrile, 0.05% trifluoroacetic acid at 1 ml/min. Di-, mono- and non-mannosylated TSR2 were eluted with a linear gradient of 10\u201340% acetonitrile over 30 ml and detected at 280 nm.\n\nIndeed, purification of non- and C-mannosylated TSRs from Drosophila S2 cells showed that the folding of non-mannosylated TSRs was affected. Next to monomeric TSRs, a fraction with higher nickel affinity was secreted (Figure 6B). This fraction was interpreted as a covalently linked dimer since it showed a higher mobility in gel filtration (Figure 6B) and the double mass of the monomer in the MALDI-TOF spectrum (Figure 6\u2014figure supplement 2). On SDS-PAGE, the mobility became identical to the monomer upon reduction by DTT (Figure 6B) indicating connection by aberrant disulfides. In cells co-expressing DPY-19 C-mannosyltransferase, dimeric TSR formation was significantly reduced. These results argue for an accelerated folding initiation of the C-mannosylated TSR in the ER and a critical role of C-mannosylated tryptophans for the native disulfide connections.\n\n## Discussion\n\nC-mannosylation is a unique protein glycosylation type with a still unclear function. In the present study, we compared non- and C-mannosylated UNC-5 TSRs and were able to show that C-mannoses added on the first two tryptophans of the WXXWXXW motif affect the dynamics of a TSR and play an important role in its folding, stability and secretion.\n\nAssuming that C-mannosylation is co-translational (Krieg et al., 1998) implies that it precedes and thereby assists correct Cys pairing to form the native disulfide bridges. Indeed, we observed increased formation of covalent dimers (Figure 6B) for TSR2 of C. elegans UNC-5 in the absence of C-mannosylation, which were caused by incorrect disulfide bond connections. Our molecular dynamics simulations of UNC-5 TSR2 lacking disulfide bridges showed that the Trp-Arg ladder was maintained when C-mannosylation was present (Figure 5B). Accordingly, we observed slower unfolding of the C-mannosylated TSR during protein denaturation under reductive conditions (Figure 5A). The simulation also showed that Cys26 fluctuated less if the tryptophans were C-mannosylated. In the process of protein folding, cysteines have to come in close vicinity to form bridges. The Trp-Arg ladder most likely plays an essential role in the correct positioning of cysteines. It is conceivable that the mannoses assist in the formation of the ladder and stabilize it before disulfide bridges are made. Our oxidative folding experiments indeed showed that the refolding initiation (appearance of the Trp-Arg ladder) was accelerated by the presence of C-mannoses (Figure 6A). This is also consistent with the view that protein domain folding precedes disulfide bridge formation (Robinson et al., 2017).\n\nOnce the TSR is folded, it is further stabilized by the three disulfide bridges, and although the shift of the maximum in the CD spectrum suggests that the tryptophan and arginine residues are in slightly different environments, the overall CD profiles are comparable in both TSR forms (Figure 3A). Nevertheless, C-mannosylated TSR was more resistant to thermal denaturation than non-mannosylated TSR (Figure 3B) revealing the importance of C-mannosylation also after folding of the TSR. Molecular dynamics simulations at elevated temperature showed that C-mannoses were able to built hydrogen bonds to the surrounding residues (Figure 4C,D) and kept especially the tryptophan closest to the N-terminus in place. Without C-mannose, this tryptophan was consistently losing its proper orientation in the ladder in repeated simulations, resulting in higher flexibility of the upper TSR region (Figure 4A,B). Existence of hydrogen bonds between C-mannoses and surrounding amino acids was also suggested in recent structural studies on properdin (Pedersen et al., 2019; Pronker et al., 2016; van den Bos et al., 2019).\n\nThe area around the third tryptophan was less affected. Since the C. elegans C-mannosyltransferase DPY-19 is not targeting this tryptophan, it remains unmodified in C. elegans UNC-5. In mammals, the third tryptophan of the WXXWXXWXXC sequence can be mannosylated by the DPY19L3 homolog (Hofsteenge et al., 1999; Shcherbakova et al., 2017). The requirement for C-mannosylation at this position, as well as on the first two tryptophans, might thus vary in different organisms and different proteins. Secretion of human R-spondin1 was highly reduced in DPY19L3-restricted cells (Niwa et al., 2016), whereas mouse UNC5A was not affected (Shcherbakova et al., 2017). Moreover, many TSRs have less than three tryptophans, and some might not be C-mannosylated at all (Verbij et al., 2016). In C. elegans MIG-21, the first TSR lacks two of the six cysteines and might, therefore, require C-mannosylation since it cannot be secreted without C-mannoses even at low temperatures (Buettner et al., 2013). On the other hand, multiple TSRs have been produced in native conformations in bacteria or insect cells without glycosylation (Klenotic et al., 2011; Tan et al., 2002; Tossavainen et al., 2006), showing that C-mannosylation is probably not an absolute requirement for some TSRs, but a critical factor for others.\n\nC. elegans dpy-19 mutants deficient in C-mannosylation develop a temperature-sensitive dumpy phenotype (Honigberg and Kenyon, 2000) that we could reproduce (Figure 2\u2014figure supplement 1). We assume that in these mutants, secretion and stability of various TSR-containing and possibly other proteins are affected. Since impairment of UNC-5 alone is not sufficient for the development of the dumpy phenotype (Hedgecock et al., 1990), further C-mannosylation-dependent proteins must be involved.\n\nIn conclusion, our experiments support a model in which C-mannosylation of tryptophans in the Trp-Arg ladder of TSRs can provide assistance in the folding process, but also greatly enhance the stability of the folded protein.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (D. melanogaster)</td>\n      <td>S2</td>\n      <td>Thermo Fisher</td>\n      <td>S2 (Schneider 2), R69007</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>C. elegans dpy-19 mutants</td>\n      <td>Caenorhabditis Genetics Center</td>\n      <td>dpy-19 (e1259) III, strain CB1259</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIB-DPY-19</td>\n      <td>(Buettner et al., 2013)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMT- UNC-5-TSR1+2</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMT- UNC-5-TSR2</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMT- Notch-EGF16\u201320</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-V5 (mouse monoclonal)</td>\n      <td>Acris</td>\n      <td>SM1691</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MODELLER</td>\n      <td>(Sali and Blundell, 1993)</td>\n      <td>RRID:SCR_008395</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Schr\u00f6dinger MacroModel</td>\n      <td>Schrodinger Suite, available online (Watts et al., 2014)</td>\n      <td>RRID:SCR_016747</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NAMD 2.11</td>\n      <td>(Phillips et al., 2005)</td>\n      <td>RRID:SCR_014894</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CHARMM27 force field</td>\n      <td>(MacKerell et al., 1998)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Particle mesh Ewald method</td>\n      <td>(Darden et al., 1993)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>data2bfactor, color_b scripts</td>\n      <td>The PyMOL Molecular Graphics System, Version 1.2r3pre, Schr\u00f6dinger, LLC</td>\n      <td>RRID:SCR_000305</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>hierarchical clustering</td>\n      <td>(Kelley et al., 1996)</td>\n      <td>RRID:SCR_004097</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CaPTURE</td>\n      <td>(Gallivan and Dougherty, 1999)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>PiStar-180</td>\n      <td>Applied Photophysics</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmids and protein constructs\n\nThe pIB vector (Invitrogen) was used for constitutive expression of the C. elegans DPY-19 protein (pIB-DPY-19) (Buettner et al., 2013). The pMT/BiP/V5-His A vector (Invitrogen) was used for expression of V5- and His-tagged C. elegans UNC-5 TSRs 1+2 and Drosophila Notch EGF repeats as well as His-tagged C. elegans UNC-5 TSR2 (corresponding protein sequences are depicted in Supplementary file 1).\n\n### Protein expression in S2 cells for western blot analysis\n\nTransfection of Drosophila S2 cells in Insect-XPRESS Protein-free Medium (Lonza) was performed using FuGENE HD (Promega) and Opti-MEM (Invitrogen) \u2013 2 ml cells were transfected using 2 \u00b5g pMT-UNC-5-TSR1+2 plasmid and 1 \u00b5g pMT-Notch-EGF16\u201320. After 6 hr at 24\u00b0C, pMT-vector expression was induced with 0.2 mM CuSO4. Induced cells were sub-divided and incubated at 20, 24\u00b0C and 28\u00b0C for 3 days. 1/10th of the cell media was mixed with 5\u00a0\u00d7\u00a0Laemmli (300 mM Tris-HCl [pH 6.8], 10% SDS, 50% glycerol, 25% \u03b2-mercaptoethanol, 0.05% bromophenol blue). 1/10th of cells was resuspended in 20 \u00b5l 1\u00a0\u00d7\u00a0Laemmli. All samples were heated for 10 min at 95\u00b0C and separated by SDS-PAGE (5%/15%). Proteins were detected on a nitrocellulose membrane with mouse anti-V5 antibody (1:5000; Acris) and IRDye 800 conjugated goat anti-mouse secondary antibody (1:20000; LI-COR). Blots were scanned on a LI-COR Odyssey Infrared Scanner. Prestained marker bands (Page-Ruler, Fermentas) were detected at 700 nm. The experiment was repeated five times with independently transfected cells.\n\n### Protein expression in S2 cells for CD spectroscopy\n\n20 ml S2 cells were transfected either with 20 \u00b5g pMT-UNC-5-TSR2 plasmid or with 10 \u00b5g pMT-UNC-5-TSR2 and 10 \u00b5g pIB-DPY-19 as described above. Upon induction, cells expressing UNC-5 TSR2 were incubated at 24\u00b0C, and cells expressing UNC-5 TSR2 and DPY-19 at 28\u00b0C (to avoid secretion of non-mannosylated UNC-5 TSR2). After 4 days of incubation, cell media were centrifuged for 3 min at 300\u00a0\u00d7\u00a0g and 4.500\u00a0\u00d7\u00a0g, filtered through 0.2 \u00b5m cellulose acetate membrane (Waters) and dialyzed against 500 ml 20 mM Tris-HCl pH 8, 500 mM NaCl using 2000 MWCO dialysis tubes (Carl Roth). For nickel affinity chromatography, samples were mixed with 20 mM imidazole and loaded on 1 ml HisTrap HP columns (GE Healthcare). Proteins were eluted with a linear gradient of 20\u2013350 mM imidazole over 7 ml and detected at 280 nm. Fractions containing monomeric UNC-5 TSR2 were applied to a 30 ml gel filtration column (Bio-Gel P-10 fine, Bio-Rad) in 10 mM KPi pH 7.6, 5 mM NaCl. Protein-containing fractions were concentrated using Vivaspin 6 MWCO 3000 (GE Healthcare).\n\n### Protein expression in S2 cells for oxidative folding\n\n200 ml of stably transfected S2 cells expressing either pMT-UNC-5-TSR2 alone or in combination with pIB-DPY-19 at a density of 3\u00a0\u00d7\u00a0106 cells/ml were induced using 4 \u00b5M CdCl2 and incubated for 4\u00a0days at 24 or 28\u00b0C, respectively. The cell media were centrifuged, filtered, dialyzed and purified by nickel affinity chromatography as described above. The monomeric proteins were additionally purified by C18 chromatography (Xbridge TM Prep C18 5 \u00b5m, 10 \u00d7 50 mm column, Waters) to separate di-, mono- and non-mannosylated TSR2 forms (Figure 6\u2014figure supplement 3) prior to gel filtration in 100 mM Tris pH 8 and concentration.\n\n### CD spectroscopy, thermal and reductive denaturation\n\nMeasurements were performed with a 3 mm high precision quartz cuvette (Hellma Analytics) using protein solutions of 0.1 mg/ml (in 10 mM KPi pH 7.6, 5 mM NaCl) in a PiStar-180 (Applied Photophysics) system with the Equilibrium Sampling Handling Unit (ESHU). To obtain native CD spectra, scans with 5 nm bandwidth of 260\u2013178 nm with 1 nm steps and 16 s/step sampling time were performed at 24\u00b0C. Three spectra were averaged and smoothed using the Savitsky-Golay algorithm (3-point smooth). For thermal denaturation, 24\u201395\u00b0C temperature ramping with 1\u00b0C steps and 1.5 \u00b0C/min ramping rate was used. For reductive denaturation, 2 mM DTT was added to the samples, and after 2 min mixing time, the kinetics were detected with 16 s/step sampling time for 3600 s at 24\u00b0C. In both denaturation experiments, the ellipticity changes were monitored at 228 nm for the C-mannosylated and at 229 nm for non-mannosylated TSR. To determine the melting temperatures, the average values from measurements of three protein samples, independently produced by transient transfection of S2 cells, were calculated and fitted by a Boltzmann function (OriginLab). For calculations of the half-time values, a first-order exponential decay function was used for the fitting (ExpDec1, OriginLab).\n\n### Molecular dynamics simulations\n\nA structural model of UNC-5 TSR2 was based on the available crystal structure of the human UNC5A TSR (PDB 4V2A, 62% amino acid positives and no gaps) using MODELLER (Sali and Blundell, 1993). Positions of C-mannoses on Trp5 and Trp8 were derived from the positions of C-mannoses in complement component C6 (3T5O), IL-21 receptor (3TGX) and ADAMTS13 (3VN4). Force field parameters for C-mannoses were created manually. Prior to MD simulations, the structural models were energy minimized using Schr\u00f6dinger MacroModel and the OPLS3 force field (Schrodinger Suite, available online; Watts et al., 2014), and fully solvated with the TIP3P water model (Jorgensen et al., 1983). The net charge of the systems was neutralized by adding counter ions. All simulations were performed using NAMD 2.11 (Phillips et al., 2005) and the CHARMM27 force field (MacKerell et al., 1998). A time-step of 1 fs was used. Long-range electrostatics were treated with the particle mesh Ewald method (Darden et al., 1993) and a 12 \u00c5 cutoff was used for nonbonded short-range interactions. First, an additional energy minimization and a 5 ns equilibration were performed at a constant temperature of 310 K and pressure (1 atm), followed by 200 ns MD simulations. For the simulation at elevated temperature, mimicking thermal denaturation conditions, MD simulations were carried out at constant temperatures of 348 K for 200 ns. For the simulation of the reductive denaturation, all disulfide bonds between cysteine residues were removed. The simulations were performed for 200 ns at 297 K. For both conditions, three independent simulations were performed and compared.\n\nHydrogen bonds between tryptophan residues and the protein were determined at distances below 3.5 \u00c5 and the angle cutoff of 30\u00b0. RMSF values of side chain atoms were calculated using an RMSF script, averaged for each residue and used in PyMOL for the coloring of the protein structures (data2bfactor script, color_b script, The PyMOL Molecular Graphics System, Version 1.2r3pre, Schr\u00f6dinger, LLC). Clusters of most frequent conformations of the Trp-Arg ladder were determined by hierarchical clustering (Kelley et al., 1996) of the simulation trajectories at elevated temperatures. The calculated representative structures from the largest cluster of each simulation were used for RMSF-coloring. For the simulation of reducing conditions, the last structure of each simulation (after 200 ns) was used to demonstrate the extent of denaturation in non- and C-mannosylated TSRs.\n\nFor the calculation of putative cation-\u03c0 interactions in the protein structures, PDB files of single frames from the MD trajectories were analyzed with the CaPTURE program (Gallivan and Dougherty, 1999).\n\n### Oxidative folding\n\nNon- and C-mannosylated UNC-5 TSR2 (0.14 mg/ml) were denatured in 200 mM DTT and 6 M guanidine hydrochloride overnight at 24\u00b0C. The samples were desalted at 32\u00b0C using a 5 ml HiTrap desalting column (GE Healthcare) and the folding buffer (50 mM Tris HCl pH 8.4, 100 mM NaCl). The refolding reaction was performed in the presence of 0.5 mM GSSG and 1 mM GSH (Sigma) at 24\u00b0C and was monitored for 3 hr by CD spectroscopy. Scans of 260\u2013190 nm were performed with 1\u00a0nm steps and 8 s/step sampling time, whereby 10 min per scan were required. The experiment was performed four times in total, at two temperatures (24\u00b0C and 32\u00b0C), whereby the same effect was observed.\n",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "db2e699a-73a3-4c6e-bdcb-b685e5b18264",
+      "submission_id": "8ccdf8a4-3f5f-4c08-a0dd-d3a231a46912",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Deborah Fass, Weizmann Institute of Science Israel\n\nReviewers:\n- Deborah Fass, Weizmann Institute of Science Israel\n- Tadashi Suzuki, RIKEN Global Research Cluster Japan\n\n## Review text\n\nDOI: [10.7554/eLife.52978.sa1](https://doi.org/10.7554/eLife.52978.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nC-mannosylation of tryptophan is a relatively newly discovered and still understudied post-translational modification. Using a well-controlled system and side-by-side comparison of glycosylated vs. non-glycosylated thrombospondin type I repeats of netrin receptor UNC-5, this study provides a comprehensive assessment of the effects of C-mannosylation on protein folding and on the ability of the protein to withstand thermal and reductive denaturation. Despite the inherent strength of cation-\u03c0 interactions, it appears that C-mannosylation of tryptophans in a tryptophan-arginine ladder provides further stabilization of this motif, and thereby of the domain.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"C-Mannosylation supports folding and enhances stability of thrombospondin repeats\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Deborah Fass as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by David Ron as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Tadashi Suzuki (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nC-mannosylation is an unusual form of glycosylation observed on tryptophans in certain WXXW motifs such as those found in thrombospondin type 1 repeats. This manuscript describes a biochemical and in silico comparison of two versions of a TSR-containing protein, one with and one without C-mannose modifications. The authors show that C-mannosylation affects thermal denaturation, denaturation induced by reductant, and the rate of oxidative folding. It was previously shown that C-mannosylation can affect expression levels of proteins, but a direct comparison of purified proteins in vitro is novel.\n\nSummary:\n\nThis study convincingly demonstrates that C-mannosylation can affect thermal and denaturant resistance of proteins, and that it can alter the efficiency of oxidative protein folding.\n\nEssential revisions:\n\nThe authors use the term \"stability\" in a non-rigorous manner. Stability of proteins refers to the difference in free energy between the folded and unfolded states and thus relates to thermodynamics. In the current manuscript, the experiments monitor the resistance to thermal denaturation and the kinetics of unfolding upon reduction, neither of which provides data on thermodynamic parameters.\n\nIs the thermal denaturation reversible?\n\nIn Figure 3, if \"three independent samples\" refers to technical replicates, this should be stated. Also, a standard deviation seems more appropriate than a standard error here.\n\nFigure 4D was not mentioned in the text.\n\nRegarding Figure 5A, the glycan may simply be hindering the accessibility of the added reductant to the disulfide bonds. The authors should also keep in mind that their experiment does not distinguish between the rate of reduction and the rate of denaturation upon reduction.\n\nThe data in Figure 6A should be plotted also as the 228/229 nm peak height as a function of time after initiating folding, and it should be made clear if the total recovery of folded protein is the same for both versions.\n\nWhat are the shoulders in the 1 mannose and 2 mannoses peaks in Figure 6\u2014figure supplement 3?\n",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e3d8e2c5-8b8b-4396-b96a-04519a0f59ac",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C1",
+      "claim": "C-mannosylation takes place in the endoplasmic reticulum (ER), presumably co-translationally.",
+      "claim_type": "EXPLICIT",
+      "source": "It takes place in the endoplasmic reticulum (ER), presumably co-translationally (Doucey et al., 1998; Krieg et al., 1998), and is performed by C-mannosyltransferase enzymes of the DPY(dumpy)-19 family (Buettner et al., 2013; Niwa et al., 2016; Shcherbakova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Doucey et al., 1998; Krieg et al., 1998)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "5141cf06-c3df-4bd4-b35c-3371b72c11f4",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C2",
+      "claim": "C-mannosylation is performed by C-mannosyltransferase enzymes of the DPY(dumpy)-19 family.",
+      "claim_type": "EXPLICIT",
+      "source": "It takes place in the endoplasmic reticulum (ER), presumably co-translationally (Doucey et al., 1998; Krieg et al., 1998), and is performed by C-mannosyltransferase enzymes of the DPY(dumpy)-19 family (Buettner et al., 2013; Niwa et al., 2016; Shcherbakova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Buettner et al., 2013; Niwa et al., 2016; Shcherbakova et al., 2017)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "6c1fd354-e1b1-4bcb-abf1-3ce50a94c229",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C3",
+      "claim": "C-mannosylation has been found on tryptophans of WXXW/C motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "C-mannosylation has been found on tryptophans of WXXW/C motifs and involves a carbon-carbon linkage between the sugar and the protein: the C1 atom of the \u03b1-mannose is thereby attached to the indole C2 atom of the tryptophan (Figure 1A) (de Beer et al., 1995; Hofsteenge et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (de Beer et al., 1995; Hofsteenge et al., 1994)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "85e9b653-287c-4009-99bc-310ad8e103b1",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C4",
+      "claim": "C-mannosylation involves a carbon-carbon linkage between the C1 atom of the \u03b1-mannose and the indole C2 atom of the tryptophan.",
+      "claim_type": "EXPLICIT",
+      "source": "C-mannosylation has been found on tryptophans of WXXW/C motifs and involves a carbon-carbon linkage between the sugar and the protein: the C1 atom of the \u03b1-mannose is thereby attached to the indole C2 atom of the tryptophan (Figure 1A) (de Beer et al., 1995; Hofsteenge et al., 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and Figure 1A showing the C-C bond structure",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "58d0adbe-3065-44e2-8873-b0f4fa13248d",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C5",
+      "claim": "C-mannosylation has been predicted on 18% of human secreted and transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "C-mannosylation has been predicted on 18% of human secreted and transmembrane proteins (Julenius, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Julenius, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "d77db23f-923c-4f7d-8157-60deceedd0ec",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C6",
+      "claim": "TSRs are small protein domains consisting of around 60 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "TSRs are small protein domains consisting of around 60 amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tan et al., 2002",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "3c2ec396-6e46-40a5-873f-04e277dec47a",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C7",
+      "claim": "TSRs possess a conserved structure of three antiparallel strands typically linked by three disulfide bridges.",
+      "claim_type": "EXPLICIT",
+      "source": "They possess a conserved structure of three antiparallel strands typically linked by three disulfide bridges (Figure 1B) (Tan et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Tan et al., 2002 and Figure 1B showing the structure",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "afd153ad-8a26-4f44-85da-883b7cf9f4dd",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C8",
+      "claim": "The first strand of TSRs contains the C-mannosylation motif with up to three tryptophan residues (WXXWXXWXXC), which all can be C-mannosylated.",
+      "claim_type": "EXPLICIT",
+      "source": "The first strand contains the C-mannosylation motif with up to three tryptophan residues (WXXWXXWXXC), which all can be C-mannosylated (Hofsteenge et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hofsteenge et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "e12f580e-031c-497b-bdb7-9fd96820fde5",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C9",
+      "claim": "The tryptophans in TSRs intercalate with conserved arginine residues from the second strand building a tryptophan-arginine (Trp-Arg) ladder that forms the core of the TSR fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The tryptophans intercalate with conserved arginine residues from the second strand building a so-called tryptophan-arginine (Trp-Arg) ladder that forms the core of the TSR fold (Figure 1B) (Tan et al., 2002; Tossavainen et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Tan et al., 2002; Tossavainen et al., 2006 and Figure 1B",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "e3cf89d8-d99c-4f85-99f2-a6438fd6fc07",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C10",
+      "claim": "The Trp-Arg ladder is deduced to have an important structural function in the TSRs due to stabilizing cation-\u03c0 interactions between the arginine and tryptophan side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to stabilizing cation-\u03c0 interactions between the arginine and tryptophan side chains (Gallivan and Dougherty, 1999), the Trp-Arg ladder is deduced to have an important structural function in the TSRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gallivan and Dougherty, 1999 and inference about structural function",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "29f155ac-038c-4f3a-b26d-1b4178a765e0",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C11",
+      "claim": "Mutagenesis of the C-mannosylation sites usually resulted in reduced secretion or cell-surface expression of the proteins and their retention in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutagenesis of the C-mannosylation sites usually resulted in reduced secretion or cell-surface expression of the proteins and their retention in the ER (Fujiwara et al., 2016; Gouyer et al., 2018; Hilton et al., 1996; Niwa et al., 2016; Okamoto et al., 2017; Sasazawa et al., 2015; Taylor et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "04f8c515-2dab-4897-9733-27f5e3c3366c",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C12",
+      "claim": "Lack of C-mannosylation alone was responsible for reduced secretion of TSR-containing proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This indeed allowed to demonstrate that lack of C-mannosylation alone was responsible for reduced secretion of TSR-containing proteins (Buettner et al., 2013; Niwa et al., 2016; Shcherbakova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Buettner et al., 2013; Niwa et al., 2016; Shcherbakova et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "b35458ee-62e7-4673-b6cd-a41bcda877a5",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C13",
+      "claim": "At 20\u00b0C, secretion of UNC-5 TSRs was higher from cells co-expressing DPY-19 than from C-mannosylation-negative cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At 20\u00b0C, secretion of UNC-5 TSRs was higher from cells co-expressing DPY-19 than from C-mannosylation-negative cells (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "a39d59a4-32b4-4eef-b64f-87d2d16a5b79",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C14",
+      "claim": "At increasing temperatures, secretion of C-mannosylated TSRs was not affected, whereas secretion of non-mannosylated TSRs further declined gradually.",
+      "claim_type": "EXPLICIT",
+      "source": "At increasing temperatures, secretion of C-mannosylated TSRs was not affected, whereas secretion of non-mannosylated TSRs further declined gradually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "8f0fbd29-09b3-47ee-a257-423c0f2a5936",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C15",
+      "claim": "Intracellular UNC-5 TSR levels were comparable at all conditions confirming that the cells were able to produce C- and non-mannosylated TSRs per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular UNC-5 TSR levels were comparable at all conditions confirming that the cells were able to produce C- and non-mannosylated TSRs per se (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "a171431b-8529-418a-94b6-47c7835b8678",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C16",
+      "claim": "Impaired temperature-dependent secretion of non-mannosylated TSRs implied a role of C-mannoses in protein stability and/or protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, impaired temperature-dependent secretion of non-mannosylated TSRs implied a role of C-mannoses in protein stability and/or protein folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental observations of temperature-dependent secretion",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "4640da6f-60d9-47e0-8ef7-efd62e5ba798",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C17",
+      "claim": "The major fraction of UNC-5 TSR2 was modified on the first two tryptophans of the WXXWXXW motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Presence of C-mannoses was verified by mass spectrometry, showing that the major fraction of the protein was modified on the first two tryptophans of the WXXWXXW motif (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "a1a56844-df76-480b-9809-58b3d96d66a3",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C18",
+      "claim": "Both C-mannosylated and non-mannosylated UNC-5 TSR2 display TSR-typical CD spectra with characteristic maxima near 230 and 212 nm and a minimum in the 195\u2013200 nm region.",
+      "claim_type": "EXPLICIT",
+      "source": "The correct folding of both TSR forms was confirmed by circular dichroism (CD) spectroscopy showing TSR-typical spectra with characteristic maxima near 230 and 212 nm and a minimum in the 195\u2013200 nm region (Figure 3A) (Huwiler et al., 2002; Roszmusz et al., 2002; Smith et al., 1984).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CD spectroscopy data in Figure 3A and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "cca6c1d6-4985-42af-9a10-af133a21b224",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C19",
+      "claim": "The C-mannosylated TSR revealed a significantly higher melting temperature (Tm = 59.5\u00b0C) compared to the non-mannosylated form (Tm = 50.4\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "The C-mannosylated TSR revealed a significantly higher melting temperature (Tm = 59.5\u00b0C) compared to the non-mannosylated form (Tm = 50.4\u00b0C) showing that C-mannosylation on W1 and W2 of the WXXWXXW motif strongly increases the resistance of the TSR to thermal denaturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by thermal denaturation data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "25080f5f-ce00-4734-a7aa-bf1cde4e9fba",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C20",
+      "claim": "C-mannosylation on W1 and W2 of the WXXWXXW motif strongly increases the resistance of the TSR to thermal denaturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-mannosylated TSR revealed a significantly higher melting temperature (Tm = 59.5\u00b0C) compared to the non-mannosylated form (Tm = 50.4\u00b0C) showing that C-mannosylation on W1 and W2 of the WXXWXXW motif strongly increases the resistance of the TSR to thermal denaturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on melting temperature data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "0aa889b4-bb34-4731-adb3-50527daedcda",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C21",
+      "claim": "Positions of arginines and tryptophans in the C-mannosylated TSR remained more constrained in all three simulation replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, positions of arginines and tryptophans in the C-mannosylated TSR remained more constrained in all three simulation replicates (Figure 4A) indicating that the Trp-Arg ladder structure in the C-mannosylated TSR is more rigid compared to the non-modified TSR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by molecular dynamics simulation data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "39361b85-9490-4e39-8502-fe726abadbfb",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C22",
+      "claim": "The Trp-Arg ladder structure in the C-mannosylated TSR is more rigid compared to the non-modified TSR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, positions of arginines and tryptophans in the C-mannosylated TSR remained more constrained in all three simulation replicates (Figure 4A) indicating that the Trp-Arg ladder structure in the C-mannosylated TSR is more rigid compared to the non-modified TSR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on molecular dynamics simulation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "dc2b2310-4352-45ff-8a5d-260814f657a9",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C23",
+      "claim": "Trp5 appeared highly flexible and diverged from the residual Trp-Arg ladder organization in the non-mannosylated form.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly Trp5 \u2013 the first tryptophan of the WXXWXXW motif \u2013 appeared highly flexible and diverged from the residual Trp-Arg ladder organization in the non-mannosylated form (Figure 4\u2014videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by molecular dynamics simulation data shown in Figure 4 and videos",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "c295918c-61a5-45e6-a6ad-cb742a82e01a",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C24",
+      "claim": "Calculated cation-\u03c0 interactions between Trp5 and Arg24 were found to be maintained in the C-mannosylated TSR but not in the non-modified TSR.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, calculated cation-\u03c0 interactions between Trp5 and Arg24 were found to be maintained in the C-mannosylated TSR but not in the non-modified TSR (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "cdcefd03-c8b0-4a37-af76-7928f7428872",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C25",
+      "claim": "Hydrogen bond interactions between C-mannoses and the neighboring side chains as well as the backbone of the corresponding tryptophan residues were found throughout the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found hydrogen bond interactions between C-mannoses and the neighboring side chains as well as the backbone of the corresponding tryptophan residues throughout the simulations (Figure 4C,D and Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by molecular dynamics simulation data shown in Figure 4C,D and Figure 4\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "3a0b8aae-7cbb-4ee4-806c-e07b71589978",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C26",
+      "claim": "C-mannoses appeared to keep the tryptophans in specific orientations not only by affecting their conformational space but also by forming polar interactions with surrounding residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, C-mannoses appeared to keep the tryptophans in specific orientations not only by affecting their conformational space but also by forming polar interactions with surrounding residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on hydrogen bond analysis from simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "3921b139-d5d0-4d81-a452-fea46b293a50",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C27",
+      "claim": "Denaturation of the C-mannosylated TSR occurred approximately 1.8 times slower than that of the non-mannosylated repeat under reducing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Denaturation of the C-mannosylated TSR, however, occurred approximately 1.8 times slower than that of the non-mannosylated repeat (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reductive denaturation data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "c8f5bfb9-6641-4471-ae56-f00ff114a9fd",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C28",
+      "claim": "Non-mannosylated TSR revealed an increased flexibility of Trp5 in the Trp-Arg ladder organization in comparison to the C-mannosylated TSR in simulations lacking disulfide bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the thermal denaturation simulation, non-mannosylated TSR revealed an increased flexibility of Trp5 in the Trp-Arg ladder organization in comparison to the C-mannosylated TSR (Figure 5B,C and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by molecular dynamics simulation data shown in Figure 5B,C and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "6096d8db-f307-4e39-8095-8b348bbba4e0",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C29",
+      "claim": "Cys26 involved in the upper disulfide bridge showed lower fluctuation values and thus decreased flexibility in the C-mannosylated TSR.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Cys26 (marked by *) involved in the upper disulfide bridge showed lower fluctuation values and thus decreased flexibility in the C-mannosylated TSR (Figure 5C, Figure 5\u2014figure supplement 1) which might be relevant for the disulfide bond formation during protein folding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RMSF data shown in Figure 5C and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "f3352f9a-8e09-4fc9-a916-8130b54b13f5",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C30",
+      "claim": "Both C-mannosylated and non-mannosylated TSRs were able to form native-like conformations during oxidative folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Both TSRs were able to form native-like conformations as demonstrated by the appearance of the characteristic TSR peak in CD spectra (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CD spectroscopy data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "a3c06920-19c8-4b8a-87ba-ad5d3d45aa00",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C31",
+      "claim": "Folding initiation of the C-mannosylated TSR occurred significantly faster compared to the non-modified protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, folding initiation of the C-mannosylated TSR occured significantly faster compared to the non-modified protein (Figure 6A, Figure 6\u2014figure supplement 1), confirming that C-mannosylation plays a role in the folding of UNC-5 TSR2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by oxidative folding data shown in Figure 6A and Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "53257fde-8f71-4dcf-a7af-28811be20778",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C32",
+      "claim": "C-mannosylation plays a role in the folding of UNC-5 TSR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, folding initiation of the C-mannosylated TSR occured significantly faster compared to the non-modified protein (Figure 6A, Figure 6\u2014figure supplement 1), confirming that C-mannosylation plays a role in the folding of UNC-5 TSR2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on oxidative folding data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "3e41ac0d-e7de-434f-8baa-5a98ac5c48ef",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C33",
+      "claim": "Non-mannosylated TSR revealed a high amount of dimeric structures connected by aberrant disulfides.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas C-mannosylated TSR2 appeared primary as monomer (a), non-mannosylated TSR revealed a high amount of dimeric structures (b), which bound stronger to the nickel affinity column and were confirmed by gel filtration chromatography and non-reducing SDS-PAGE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by purification data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "03dfe65a-2fd2-4cda-aede-597f953ff0ba",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C34",
+      "claim": "In cells co-expressing DPY-19 C-mannosyltransferase, dimeric TSR formation was significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells co-expressing DPY-19 C-mannosyltransferase, dimeric TSR formation was significantly reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by purification data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "53141e75-2bf9-440a-a3ba-d6954601d697",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C35",
+      "claim": "C-mannoses added on the first two tryptophans of the WXXWXXW motif affect the dynamics of a TSR and play an important role in its folding, stability and secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we compared non- and C-mannosylated UNC-5 TSRs and were able to show that C-mannoses added on the first two tryptophans of the WXXWXXW motif affect the dynamics of a TSR and play an important role in its folding, stability and secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on multiple experimental results presented in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "7aded5a7-83ed-459d-afe5-315dfa794e4c",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C36",
+      "claim": "C-mannosylation is co-translational.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that C-mannosylation is co-translational (Krieg et al., 1998) implies that it precedes and thereby assists correct Cys pairing to form the native disulfide bridges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Krieg et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "2963fc3c-cfbd-45cc-8d60-f104d5fec691",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C37",
+      "claim": "C-mannosylation precedes and thereby assists correct Cys pairing to form the native disulfide bridges.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that C-mannosylation is co-translational (Krieg et al., 1998) implies that it precedes and thereby assists correct Cys pairing to form the native disulfide bridges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on co-translational nature of C-mannosylation and experimental observations",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "08ee0d38-ea15-46a9-bfaa-4e3ef4b62a1c",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C38",
+      "claim": "Increased formation of covalent dimers was observed for TSR2 of C. elegans UNC-5 in the absence of C-mannosylation, which were caused by incorrect disulfide bond connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed increased formation of covalent dimers (Figure 6B) for TSR2 of C. elegans UNC-5 in the absence of C-mannosylation, which were caused by incorrect disulfide bond connections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "a76ace2f-1cf4-4941-9c7e-7f522cca6ed3",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C39",
+      "claim": "The Trp-Arg ladder most likely plays an essential role in the correct positioning of cysteines.",
+      "claim_type": "EXPLICIT",
+      "source": "The Trp-Arg ladder most likely plays an essential role in the correct positioning of cysteines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on simulation and experimental data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "9b7e50be-6f69-4d44-a05d-82d1833179ca",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C40",
+      "claim": "The mannoses assist in the formation of the ladder and stabilize it before disulfide bridges are made.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that the mannoses assist in the formation of the ladder and stabilize it before disulfide bridges are made.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on simulation and experimental data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "3afeb5b6-1d66-4878-bdb9-383a79716b44",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C41",
+      "claim": "Oxidative folding experiments showed that the refolding initiation (appearance of the Trp-Arg ladder) was accelerated by the presence of C-mannoses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our oxidative folding experiments indeed showed that the refolding initiation (appearance of the Trp-Arg ladder) was accelerated by the presence of C-mannoses (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by oxidative folding data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "ea7d952f-ba3e-4c24-bb3d-d2cad2c92591",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C42",
+      "claim": "Protein domain folding precedes disulfide bridge formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also consistent with the view that protein domain folding precedes disulfide bridge formation (Robinson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Robinson et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "7bc8460e-66de-40b2-8e2b-e76336293dce",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C43",
+      "claim": "C-mannosylated TSR was more resistant to thermal denaturation than non-mannosylated TSR.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, C-mannosylated TSR was more resistant to thermal denaturation than non-mannosylated TSR (Figure 3B) revealing the importance of C-mannosylation also after folding of the TSR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by thermal denaturation data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "84827ced-5549-4560-aeb1-2702b3cfc70a",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C44",
+      "claim": "C-mannoses were able to build hydrogen bonds to the surrounding residues and kept especially the tryptophan closest to the N-terminus in place.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations at elevated temperature showed that C-mannoses were able to built hydrogen bonds to the surrounding residues (Figure 4C,D) and kept especially the tryptophan closest to the N-terminus in place.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by molecular dynamics simulation data shown in Figure 4C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "78ef9445-b4da-45c4-8298-f8e7476a915f",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C45",
+      "claim": "Without C-mannose, the first tryptophan was consistently losing its proper orientation in the ladder in repeated simulations, resulting in higher flexibility of the upper TSR region.",
+      "claim_type": "EXPLICIT",
+      "source": "Without C-mannose, this tryptophan was consistently losing its proper orientation in the ladder in repeated simulations, resulting in higher flexibility of the upper TSR region (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by molecular dynamics simulation data shown in Figure 4A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "5b274fe1-a99e-461d-a244-19fc482b7bc1",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C46",
+      "claim": "Existence of hydrogen bonds between C-mannoses and surrounding amino acids was suggested in recent structural studies on properdin.",
+      "claim_type": "EXPLICIT",
+      "source": "Existence of hydrogen bonds between C-mannoses and surrounding amino acids was also suggested in recent structural studies on properdin (Pedersen et al., 2019; Pronker et al., 2016; van den Bos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent structural studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "e8f0fab2-6e57-4397-8797-93357c71a079",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C47",
+      "claim": "The C. elegans C-mannosyltransferase DPY-19 is not targeting the third tryptophan in UNC-5.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the C. elegans C-mannosyltransferase DPY-19 is not targeting this tryptophan, it remains unmodified in C. elegans UNC-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "844ab508-41e4-47aa-a9d3-961a8dd8c939",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C48",
+      "claim": "In mammals, the third tryptophan of the WXXWXXWXXC sequence can be mannosylated by the DPY19L3 homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, the third tryptophan of the WXXWXXWXXC sequence can be mannosylated by the DPY19L3 homolog (Hofsteenge et al., 1999; Shcherbakova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hofsteenge et al., 1999; Shcherbakova et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "38402e9e-c781-45de-a383-08e3ef0f602d",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C49",
+      "claim": "Secretion of human R-spondin1 was highly reduced in DPY19L3-restricted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretion of human R-spondin1 was highly reduced in DPY19L3-restricted cells (Niwa et al., 2016), whereas mouse UNC5A was not affected (Shcherbakova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Niwa et al., 2016 and Shcherbakova et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "a30f11a0-44cf-49c5-b9db-0ff65326c540",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C50",
+      "claim": "Mouse UNC5A was not affected by DPY19L3 restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretion of human R-spondin1 was highly reduced in DPY19L3-restricted cells (Niwa et al., 2016), whereas mouse UNC5A was not affected (Shcherbakova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shcherbakova et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "4da6742f-0278-4f5a-8376-c83c3a901712",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C51",
+      "claim": "Multiple TSRs have been produced in native conformations in bacteria or insect cells without glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, multiple TSRs have been produced in native conformations in bacteria or insect cells without glycosylation (Klenotic et al., 2011; Tan et al., 2002; Tossavainen et al., 2006), showing that C-mannosylation is probably not an absolute requirement for some TSRs, but a critical factor for others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Klenotic et al., 2011; Tan et al., 2002; Tossavainen et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "54b316bc-7137-4d78-9b5c-79349b830724",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C52",
+      "claim": "C-mannosylation is probably not an absolute requirement for some TSRs, but a critical factor for others.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, multiple TSRs have been produced in native conformations in bacteria or insect cells without glycosylation (Klenotic et al., 2011; Tan et al., 2002; Tossavainen et al., 2006), showing that C-mannosylation is probably not an absolute requirement for some TSRs, but a critical factor for others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on cited studies and experimental observations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "b6c8d07f-4793-4093-bb50-c5643dc42ee6",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C53",
+      "claim": "C. elegans dpy-19 mutants deficient in C-mannosylation develop a temperature-sensitive dumpy phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans dpy-19 mutants deficient in C-mannosylation develop a temperature-sensitive dumpy phenotype (Honigberg and Kenyon, 2000) that we could reproduce (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Honigberg and Kenyon, 2000 and experimental data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "ac5ff860-f3df-4740-954f-ce3d6c40e0d2",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C54",
+      "claim": "In C. elegans dpy-19 mutants, secretion and stability of various TSR-containing and possibly other proteins are affected.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that in these mutants, secretion and stability of various TSR-containing and possibly other proteins are affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental observations and phenotype",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "12123be2-1b62-410b-a569-55995d9843b6",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C55",
+      "claim": "Impairment of UNC-5 alone is not sufficient for the development of the dumpy phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Since impairment of UNC-5 alone is not sufficient for the development of the dumpy phenotype (Hedgecock et al., 1990), further C-mannosylation-dependent proteins must be involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hedgecock et al., 1990",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "c6cf3d57-aca4-45b0-a031-c656b842ac47",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C56",
+      "claim": "C-mannosylation of tryptophans in the Trp-Arg ladder of TSRs can provide assistance in the folding process and greatly enhance the stability of the folded protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our experiments support a model in which C-mannosylation of tryptophans in the Trp-Arg ladder of TSRs can provide assistance in the folding process, but also greatly enhance the stability of the folded protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on all experimental and simulation data presented in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "7ae18c9f-2f0e-4bea-adb6-2445154af817",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C57",
+      "claim": "Drosophila S2 cells are naturally C-mannose-negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Secretion of TSRs from C. elegans netrin receptor UNC-5 (Figure 1C) was analyzed at 20, 24\u00b0C and 28\u00b0C in naturally C-mannose-negative Drosophila S2 cells (Hofsteenge et al., 2001; Krieg et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hofsteenge et al., 2001; Krieg et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "f5222247-cce4-42f5-bc98-7234de0c4669",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C58",
+      "claim": "C-mannosylation of the TSRs was obtained by co-expression of the C. elegans DPY-19 C-mannosyltransferase.",
+      "claim_type": "EXPLICIT",
+      "source": "C-mannosylation of the TSRs was obtained by co-expression of the C. elegans DPY-19 C-mannosyltransferase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "bda10f9a-2e34-4025-93d3-f2e60debecba",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C59",
+      "claim": "Thermal denaturation of both non- and C-mannosylated TSRs was reversible to a high extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermal denaturation of both, non- and C-mannosylated TSRs, was reversible to a high extent (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "d31d0e14-16b7-4f7a-aa3e-9a362d3ab07c",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C60",
+      "claim": "C-mannoses can occur in 4C1 and 1C4 forms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because NMR studies (de Beer et al., 1995; Nishikawa et al., 2005) and recently resolved TSR crystal structures (Pedersen et al., 2019; Pronker et al., 2016; van den Bos et al., 2019) suggest that C-mannoses can occur in 4C1 and 1C4 forms, we also performed a simulation with C-mannoses in 1C4-chair arrangement (Figure 4\u2014video 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to NMR studies and crystal structures",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "507b85cb-b2d4-48a4-ae7a-d62769901adc",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C61",
+      "claim": "For both 4C1 and 1C4 conformations, similar maintenance of the Trp-Arg ladder and ability to form hydrogen bonds was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "For both conformations, we observed similar maintenance of the Trp-Arg ladder and ability to form hydrogen bonds (Figure 4\u2014figure supplements 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by molecular dynamics simulation data shown in Figure 4\u2014figure supplements 3 and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "b492a44c-195e-46d2-a73a-3312636baf10",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C62",
+      "claim": "Upon addition of 2 mM DTT, both C-mannosylated and non-mannosylated proteins started to unfold immediately, showing that the disulfides are essential for the TSR structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon addition of 2 mM DTT, both proteins started to unfold immediately, showing that the disulfides are essential for the TSR structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reductive denaturation data shown in Figure 5A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "270885e8-f376-4514-8059-02d7f1ef7fac",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C63",
+      "claim": "C-mannosylation might decrease the accessibility of the disulfide bridges by DTT, but could also protect the Trp-Arg ladder organization of the TSR.",
+      "claim_type": "EXPLICIT",
+      "source": "C-mannosylation might decrease the accessibility of the disulfide bridges by DTT, but could also protect the Trp-Arg ladder organization of the TSR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental observations",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "dcf03439-fb61-44c0-a15a-20dc9bf3bc3f",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C64",
+      "claim": "The disulfide bridges are essential for the TSR structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon addition of 2 mM DTT, both proteins started to unfold immediately, showing that the disulfides are essential for the TSR structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on reductive denaturation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "5e6a6a2b-a3d5-4a9c-a855-c095e7c7a24a",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C65",
+      "claim": "Highly increased formation of dimers was consistently observed in over ten independent purifications of non-mannosylated TSR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Highly increased formation of dimers was consistently observed in over ten independent purifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from multiple purifications",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "a9523a05-e7e9-4aaa-838d-3175161047d7",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C66",
+      "claim": "The first TSR of C. elegans MIG-21 lacks two of the six cysteines and might require C-mannosylation since it cannot be secreted without C-mannoses even at low temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans MIG-21, the first TSR lacks two of the six cysteines and might, therefore, require C-mannosylation since it cannot be secreted without C-mannoses even at low temperatures (Buettner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buettner et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "dabeeb8b-8485-46f3-9a31-d9cd954c2555",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C67",
+      "claim": "The requirement for C-mannosylation at the third tryptophan position, as well as on the first two tryptophans, might vary in different organisms and different proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The requirement for C-mannosylation at this position, as well as on the first two tryptophans, might thus vary in different organisms and different proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental observations and cited studies",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "493b2450-7934-4918-bd7c-e6a996f12aa4",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C68",
+      "claim": "C-mannoses orient the underlying tryptophan residues and facilitate the formation of the tryptophan-arginine ladder in the endoplasmic reticulum folding process.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that in the endoplasmic reticulum folding process, C-mannoses orient the underlying tryptophan residues and facilitate the formation of the tryptophan-arginine ladder, thereby influencing the positioning of cysteines and disulfide bridging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental and simulation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "60a7ddd7-acd3-4150-8323-7b2eac8adfb4",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C69",
+      "claim": "C-mannoses influence the positioning of cysteines and disulfide bridging.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that in the endoplasmic reticulum folding process, C-mannoses orient the underlying tryptophan residues and facilitate the formation of the tryptophan-arginine ladder, thereby influencing the positioning of cysteines and disulfide bridging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental and simulation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "0224fae9-95eb-47e2-ab5c-710e644383b5",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C70",
+      "claim": "C-mannoses can be involved in intramolecular hydrogen bonding and limit the flexibility of the TSR tryptophan-arginine ladder.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations supported the experimental studies and showed that C-mannoses can be involved in intramolecular hydrogen bonding and limit the flexibility of the TSR tryptophan-arginine ladder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by molecular dynamics simulation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "08677749-0090-4b55-8699-86b937387135",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C71",
+      "claim": "In absence of C-mannosylation, UNC-5 TSRs could only be obtained at low temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "In absence of C-mannosylation, UNC-5 TSRs could only be obtained at low temperature and a significant proportion displayed incorrect intermolecular disulfide bridging, which was hardly observed when C-mannosylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "58f5baa7-99bf-4187-9291-4c0a444fa76b",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C72",
+      "claim": "A significant proportion of non-C-mannosylated UNC-5 TSRs displayed incorrect intermolecular disulfide bridging, which was hardly observed when C-mannosylated.",
+      "claim_type": "EXPLICIT",
+      "source": "In absence of C-mannosylation, UNC-5 TSRs could only be obtained at low temperature and a significant proportion displayed incorrect intermolecular disulfide bridging, which was hardly observed when C-mannosylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "cb83945d-10af-489a-9ef1-159ac18553aa",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C73",
+      "claim": "Glycosylated TSRs exhibited higher resistance to thermal and reductive denaturation processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycosylated TSRs exhibited higher resistance to thermal and reductive denaturation processes, and the presence of C-mannoses promoted the oxidative folding of a reduced and denatured TSR in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "837961bd-bb8a-43e6-9cc4-184ed65ab72a",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C74",
+      "claim": "The presence of C-mannoses promoted the oxidative folding of a reduced and denatured TSR in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycosylated TSRs exhibited higher resistance to thermal and reductive denaturation processes, and the presence of C-mannoses promoted the oxidative folding of a reduced and denatured TSR in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "4f7c2bf3-6cb8-488a-9a13-b5071f7dfa54",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C75",
+      "claim": "Protein glycosylation affects the majority of secreted and cell-surface proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein glycosylation is a major form of co- and post-translational modification, affecting the majority of secreted and cell-surface proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "f9b83961-2fb2-4689-8e07-f4c866161335",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C76",
+      "claim": "Protein glycosylation can influence the folding of a protein as well as its physical properties, activity and ability to interact with other macromolecules.",
+      "claim_type": "EXPLICIT",
+      "source": "It can influence the folding of a protein as well as its physical properties, activity and ability to interact with other macromolecules, thus playing an important role in a great variety of cellular processes (Varki, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Varki, 2017",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "83a37e8a-8303-4d69-8ca1-76e9ebbc9b66",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C77",
+      "claim": "C-mannosylation is presently one of the less well characterized glycosylation types.",
+      "claim_type": "EXPLICIT",
+      "source": "C-mannosylation is presently one of the less well characterized glycosylation types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "3b6e8aa1-a5be-41ca-a437-d285ba91202b",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "claim_id": "C78",
+      "claim": "There are two main protein groups bearing conserved C-mannosylation sites \u2013 proteins with thrombospondin type 1 repeats (TSRs) and type I cytokine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two main protein groups bearing conserved C-mannosylation sites \u2013 proteins with thrombospondin type 1 repeats (TSRs) and type I cytokine receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about protein groups with C-mannosylation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "980935ee-eeb0-4617-bd37-7c6dc66bde16",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C-mannosylation enhances temperature-dependent secretion of UNC-5 TSRs. At 20\u00b0C, secretion was higher from cells co-expressing DPY-19 than from C-mannosylation-negative cells. At increasing temperatures, secretion of C-mannosylated TSRs was maintained, whereas secretion of non-mannosylated TSRs declined gradually. Intracellular TSR levels were comparable across conditions, implying a role for C-mannoses in protein stability and/or folding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 are supported by experimental data shown in Figure 2, with appropriate controls (intracellular levels, transfection control). The temperature-dependent secretion phenotype is reproducible and consistent with the C. elegans dpy-19 mutant phenotype (C53). The inference about stability/folding (C16) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "422ce0ff-ebdc-441f-b265-4e621889d897",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "C-mannosylation on the first two tryptophans of the WXXWXXW motif increases thermal stability of UNC-5 TSR2. Mass spectrometry confirmed di-mannosylation on W1 and W2. Both C-mannosylated and non-mannosylated TSR2 displayed TSR-typical CD spectra, but the C-mannosylated form showed a significantly higher melting temperature (59.5\u00b0C vs 50.4\u00b0C). Thermal denaturation was reversible to a high extent for both forms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20, C43, and C59 are well-supported by mass spectrometry (Figure 3\u2014figure supplement 1) and CD spectroscopy data (Figure 3A,B and Figure 3\u2014figure supplement 2). The ~9\u00b0C difference in Tm is substantial and statistically significant. The reversibility data (C59) strengthens the interpretation that C-mannosylation affects thermodynamic stability rather than just aggregation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "dd619054-322d-47fa-be7e-120dcf12f82f",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations at elevated temperature reveal that C-mannosylation restricts flexibility of the Trp-Arg ladder, particularly Trp5. C-mannoses form hydrogen bonds with surrounding residues and maintain cation-\u03c0 interactions between Trp5 and Arg24. Without C-mannosylation, Trp5 consistently loses proper orientation in the ladder, resulting in higher flexibility of the upper TSR region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26, C44-C45, and C70 are supported by molecular dynamics simulation data (Figure 4A-D, supplementary figures, and videos). Three independent simulation replicates show consistent results. The hydrogen bond analysis and cation-\u03c0 interaction calculations provide mechanistic insight. However, simulations are computational predictions that would benefit from experimental validation (e.g., NMR or mutagenesis studies).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "c448d605-7a17-488c-a9a8-cf3b1aff8564",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "C-mannoses can occur in both 4C1 and 1C4 chair conformations, and both conformations show similar maintenance of the Trp-Arg ladder and ability to form hydrogen bonds in molecular dynamics simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 are supported by citations to NMR studies and crystal structures, and by simulation data (Figure 4\u2014figure supplements 3 and 4). The authors appropriately tested both conformations given the structural literature, and the similar results strengthen the conclusions about C-mannose function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "e8317d0f-cbf7-4ae1-aee5-fb0c893060a6",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Under reducing conditions, C-mannosylated TSR2 unfolds approximately 1.8 times slower than non-mannosylated TSR2. Both proteins unfold immediately upon DTT addition, demonstrating that disulfide bridges are essential for TSR structure. C-mannosylation might decrease accessibility of disulfide bridges or protect the Trp-Arg ladder organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C62, and C64 are supported by reductive denaturation data (Figure 5A). The 1.8-fold difference in unfolding rate is quantified and statistically significant. Claim C63 is appropriately presented as speculation. The experiment effectively separates the contribution of C-mannosylation from disulfide bonds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "9dca46df-fbd7-43f6-abe3-2c3ad4fea72e",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations of TSR2 lacking disulfide bonds show that non-mannosylated TSR has increased flexibility of Trp5 compared to C-mannosylated TSR. Additionally, Cys26 (involved in the upper disulfide bridge) shows decreased flexibility in the C-mannosylated TSR, which might be relevant for disulfide bond formation during protein folding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by simulation data (Figure 5B,C and Figure 5\u2014figure supplement 1). The RMSF analysis quantifies the flexibility differences. The connection to disulfide bond formation (C29) is a reasonable inference that is later supported by experimental data on aberrant dimer formation (C33-C34).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "1bc7cbe7-5c53-4f97-922f-940dc6e34e4a",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Both C-mannosylated and non-mannosylated TSR2 can form native-like conformations during oxidative folding, but folding initiation occurs significantly faster for the C-mannosylated form. This confirms that C-mannosylation plays a role in the folding of UNC-5 TSR2, with C-mannoses accelerating the appearance of the Trp-Arg ladder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C41, and C74 are supported by oxidative folding experiments monitored by CD spectroscopy (Figure 6A and Figure 6\u2014figure supplement 1). The experiment was performed four times at two temperatures, showing reproducibility. The faster folding initiation is clearly visible in the data and supports the proposed role of C-mannosylation in folding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "9752e406-a7a3-4059-b3dd-e4cccf6624d2",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Non-mannosylated TSR2 shows highly increased formation of covalent dimers connected by aberrant disulfide bonds. This was consistently observed in over ten independent purifications. In cells co-expressing DPY-19 C-mannosyltransferase, dimeric TSR formation was significantly reduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34, C38, C65, and C72 are supported by purification data (Figure 6B), gel filtration, SDS-PAGE, and MALDI-TOF MS (Figure 6\u2014figure supplement 2). The high reproducibility (>10 independent purifications) and multiple orthogonal methods strengthen the conclusion. This provides direct evidence that C-mannosylation prevents misfolding and aberrant disulfide bond formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "84cae5a1-2345-4330-bf38-7a5955313cfb",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "C-mannoses added on the first two tryptophans of the WXXWXXW motif affect TSR dynamics and play an important role in folding, stability, and secretion. The authors propose that C-mannoses orient tryptophan residues, facilitate Trp-Arg ladder formation, and thereby influence cysteine positioning and disulfide bridging in the ER folding process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C56, C68, and C69 represent the main conclusions of the study, integrating multiple lines of evidence from secretion assays, thermal/reductive denaturation, MD simulations, oxidative folding, and dimer formation experiments. The proposed model is well-supported by the data, though some aspects (particularly the mechanistic details of how C-mannoses influence cysteine positioning) remain somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "cff04098-85b1-405b-be87-925056bcbe4a",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that C-mannosylation is co-translational and therefore precedes disulfide bridge formation, assisting correct cysteine pairing. The Trp-Arg ladder plays an essential role in correct cysteine positioning, and mannoses assist in ladder formation and stabilization before disulfide bridges are made. This is consistent with the view that protein domain folding precedes disulfide bridge formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C39-C40, and C42 combine cited prior work (C36, C42) with inferences from the current study's data. The co-translational nature of C-mannosylation (C36) is supported by citation. The proposed mechanism (C37, C39-C40) is a reasonable inference from the simulation and experimental data, particularly the dimer formation and Cys26 flexibility results. Claim C40 is appropriately presented as speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "ffe6a745-a9a9-4bd9-b2d5-44dbc09b6b58",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The requirement for C-mannosylation varies across organisms and proteins. The C. elegans DPY-19 does not target the third tryptophan in UNC-5, while mammalian DPY19L3 can mannosylate this position. Some TSRs have been produced in native conformations without glycosylation, while others (like MIG-21 TSR1) require C-mannosylation even at low temperatures. This suggests C-mannosylation is not an absolute requirement for all TSRs but is critical for some.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52, C66-C67 are supported by multiple citations to prior work and are consistent with the current study's findings. The variability in C-mannosylation requirements across proteins and organisms is well-documented in the cited literature. The inference (C52, C67) that C-mannosylation requirements vary is reasonable and appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "7cbf9b8a-73bf-40e7-bfdb-3c67111293dc",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "C. elegans dpy-19 mutants deficient in C-mannosylation develop a temperature-sensitive dumpy phenotype, which the authors reproduced. They propose that secretion and stability of various TSR-containing and possibly other proteins are affected in these mutants. Since impairment of UNC-5 alone is not sufficient for the dumpy phenotype, further C-mannosylation-dependent proteins must be involved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by citation and experimental reproduction (Figure 2\u2014figure supplement 1). Claims C54-C55 are reasonable inferences based on the phenotype and cited prior work. The connection between the molecular findings and the organismal phenotype strengthens the biological relevance of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "652ccd20-678d-4004-be5a-ea567be2c428",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about C-mannosylation and TSR structure. C-mannosylation occurs in the ER, presumably co-translationally, and is performed by DPY-19 family enzymes. It involves a C-C linkage between \u03b1-mannose C1 and tryptophan indole C2 on WXXW/C motifs. TSRs are ~60 amino acid domains with three antiparallel strands linked by three disulfide bridges, containing a WXXWXXWXXC motif where tryptophans intercalate with arginines to form a Trp-Arg ladder. Previous studies showed that mutagenesis of C-mannosylation sites or lack of C-mannosylation alone reduces secretion of TSR-containing proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 are background information supported by appropriate citations to prior work. These establish the context for the current study and are generally accepted in the field. The claims are accurately attributed to the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "f8d5d4ac-cd6e-445c-8fac-301940f87cef",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological claims: Drosophila S2 cells are naturally C-mannose-negative, and C-mannosylation of TSRs was obtained by co-expression of C. elegans DPY-19 C-mannosyltransferase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 describe the experimental system. C57 is supported by citations, and C58 is the method used throughout the study. This system is appropriate for comparing C-mannosylated and non-mannosylated proteins in the same cellular context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    },
+    {
+      "id": "17b7bc8a-5e97-447e-96f7-4dec808dc908",
+      "content_id": "679c6200-9c6b-4d8a-b3ee-f143628f8c7f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "General background on protein glycosylation: it affects the majority of secreted and cell-surface proteins and can influence folding, physical properties, activity, and interactions. C-mannosylation is one of the less well characterized glycosylation types. Two main protein groups bear conserved C-mannosylation sites: TSR-containing proteins and type I cytokine receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 provide general background supported by citation (C76) and established knowledge in the field. These claims accurately represent the current state of knowledge about protein glycosylation and C-mannosylation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:58.715895Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b35458ee-62e7-4673-b6cd-a41bcda877a5",
+      "result_id": "980935ee-eeb0-4617-bd37-7c6dc66bde16"
+    },
+    {
+      "claim_id": "a39d59a4-32b4-4eef-b64f-87d2d16a5b79",
+      "result_id": "980935ee-eeb0-4617-bd37-7c6dc66bde16"
+    },
+    {
+      "claim_id": "8f0fbd29-09b3-47ee-a257-423c0f2a5936",
+      "result_id": "980935ee-eeb0-4617-bd37-7c6dc66bde16"
+    },
+    {
+      "claim_id": "a171431b-8529-418a-94b6-47c7835b8678",
+      "result_id": "980935ee-eeb0-4617-bd37-7c6dc66bde16"
+    },
+    {
+      "claim_id": "4640da6f-60d9-47e0-8ef7-efd62e5ba798",
+      "result_id": "422ce0ff-ebdc-441f-b265-4e621889d897"
+    },
+    {
+      "claim_id": "a1a56844-df76-480b-9809-58b3d96d66a3",
+      "result_id": "422ce0ff-ebdc-441f-b265-4e621889d897"
+    },
+    {
+      "claim_id": "cca6c1d6-4985-42af-9a10-af133a21b224",
+      "result_id": "422ce0ff-ebdc-441f-b265-4e621889d897"
+    },
+    {
+      "claim_id": "25080f5f-ce00-4734-a7aa-bf1cde4e9fba",
+      "result_id": "422ce0ff-ebdc-441f-b265-4e621889d897"
+    },
+    {
+      "claim_id": "7bc8460e-66de-40b2-8e2b-e76336293dce",
+      "result_id": "422ce0ff-ebdc-441f-b265-4e621889d897"
+    },
+    {
+      "claim_id": "bda10f9a-2e34-4025-93d3-f2e60debecba",
+      "result_id": "422ce0ff-ebdc-441f-b265-4e621889d897"
+    },
+    {
+      "claim_id": "0aa889b4-bb34-4731-adb3-50527daedcda",
+      "result_id": "dd619054-322d-47fa-be7e-120dcf12f82f"
+    },
+    {
+      "claim_id": "39361b85-9490-4e39-8502-fe726abadbfb",
+      "result_id": "dd619054-322d-47fa-be7e-120dcf12f82f"
+    },
+    {
+      "claim_id": "dc2b2310-4352-45ff-8a5d-260814f657a9",
+      "result_id": "dd619054-322d-47fa-be7e-120dcf12f82f"
+    },
+    {
+      "claim_id": "c295918c-61a5-45e6-a6ad-cb742a82e01a",
+      "result_id": "dd619054-322d-47fa-be7e-120dcf12f82f"
+    },
+    {
+      "claim_id": "cdcefd03-c8b0-4a37-af76-7928f7428872",
+      "result_id": "dd619054-322d-47fa-be7e-120dcf12f82f"
+    },
+    {
+      "claim_id": "3a0b8aae-7cbb-4ee4-806c-e07b71589978",
+      "result_id": "dd619054-322d-47fa-be7e-120dcf12f82f"
+    },
+    {
+      "claim_id": "84827ced-5549-4560-aeb1-2702b3cfc70a",
+      "result_id": "dd619054-322d-47fa-be7e-120dcf12f82f"
+    },
+    {
+      "claim_id": "78ef9445-b4da-45c4-8298-f8e7476a915f",
+      "result_id": "dd619054-322d-47fa-be7e-120dcf12f82f"
+    },
+    {
+      "claim_id": "0224fae9-95eb-47e2-ab5c-710e644383b5",
+      "result_id": "dd619054-322d-47fa-be7e-120dcf12f82f"
+    },
+    {
+      "claim_id": "d31d0e14-16b7-4f7a-aa3e-9a362d3ab07c",
+      "result_id": "c448d605-7a17-488c-a9a8-cf3b1aff8564"
+    },
+    {
+      "claim_id": "507b85cb-b2d4-48a4-ae7a-d62769901adc",
+      "result_id": "c448d605-7a17-488c-a9a8-cf3b1aff8564"
+    },
+    {
+      "claim_id": "3921b139-d5d0-4d81-a452-fea46b293a50",
+      "result_id": "e8317d0f-cbf7-4ae1-aee5-fb0c893060a6"
+    },
+    {
+      "claim_id": "b492a44c-195e-46d2-a73a-3312636baf10",
+      "result_id": "e8317d0f-cbf7-4ae1-aee5-fb0c893060a6"
+    },
+    {
+      "claim_id": "270885e8-f376-4514-8059-02d7f1ef7fac",
+      "result_id": "e8317d0f-cbf7-4ae1-aee5-fb0c893060a6"
+    },
+    {
+      "claim_id": "dcf03439-fb61-44c0-a15a-20dc9bf3bc3f",
+      "result_id": "e8317d0f-cbf7-4ae1-aee5-fb0c893060a6"
+    },
+    {
+      "claim_id": "c8f5bfb9-6641-4471-ae56-f00ff114a9fd",
+      "result_id": "9dca46df-fbd7-43f6-abe3-2c3ad4fea72e"
+    },
+    {
+      "claim_id": "6096d8db-f307-4e39-8095-8b348bbba4e0",
+      "result_id": "9dca46df-fbd7-43f6-abe3-2c3ad4fea72e"
+    },
+    {
+      "claim_id": "f3352f9a-8e09-4fc9-a916-8130b54b13f5",
+      "result_id": "1bc7cbe7-5c53-4f97-922f-940dc6e34e4a"
+    },
+    {
+      "claim_id": "a3c06920-19c8-4b8a-87ba-ad5d3d45aa00",
+      "result_id": "1bc7cbe7-5c53-4f97-922f-940dc6e34e4a"
+    },
+    {
+      "claim_id": "53257fde-8f71-4dcf-a7af-28811be20778",
+      "result_id": "1bc7cbe7-5c53-4f97-922f-940dc6e34e4a"
+    },
+    {
+      "claim_id": "3afeb5b6-1d66-4878-bdb9-383a79716b44",
+      "result_id": "1bc7cbe7-5c53-4f97-922f-940dc6e34e4a"
+    },
+    {
+      "claim_id": "837961bd-bb8a-43e6-9cc4-184ed65ab72a",
+      "result_id": "1bc7cbe7-5c53-4f97-922f-940dc6e34e4a"
+    },
+    {
+      "claim_id": "3e41ac0d-e7de-434f-8baa-5a98ac5c48ef",
+      "result_id": "9752e406-a7a3-4059-b3dd-e4cccf6624d2"
+    },
+    {
+      "claim_id": "03dfe65a-2fd2-4cda-aede-597f953ff0ba",
+      "result_id": "9752e406-a7a3-4059-b3dd-e4cccf6624d2"
+    },
+    {
+      "claim_id": "08ee0d38-ea15-46a9-bfaa-4e3ef4b62a1c",
+      "result_id": "9752e406-a7a3-4059-b3dd-e4cccf6624d2"
+    },
+    {
+      "claim_id": "5e6a6a2b-a3d5-4a9c-a855-c095e7c7a24a",
+      "result_id": "9752e406-a7a3-4059-b3dd-e4cccf6624d2"
+    },
+    {
+      "claim_id": "58f5baa7-99bf-4187-9291-4c0a444fa76b",
+      "result_id": "9752e406-a7a3-4059-b3dd-e4cccf6624d2"
+    },
+    {
+      "claim_id": "53141e75-2bf9-440a-a3ba-d6954601d697",
+      "result_id": "84cae5a1-2345-4330-bf38-7a5955313cfb"
+    },
+    {
+      "claim_id": "c6cf3d57-aca4-45b0-a031-c656b842ac47",
+      "result_id": "84cae5a1-2345-4330-bf38-7a5955313cfb"
+    },
+    {
+      "claim_id": "493b2450-7934-4918-bd7c-e6a996f12aa4",
+      "result_id": "84cae5a1-2345-4330-bf38-7a5955313cfb"
+    },
+    {
+      "claim_id": "60a7ddd7-acd3-4150-8323-7b2eac8adfb4",
+      "result_id": "84cae5a1-2345-4330-bf38-7a5955313cfb"
+    },
+    {
+      "claim_id": "7aded5a7-83ed-459d-afe5-315dfa794e4c",
+      "result_id": "cff04098-85b1-405b-be87-925056bcbe4a"
+    },
+    {
+      "claim_id": "2963fc3c-cfbd-45cc-8d60-f104d5fec691",
+      "result_id": "cff04098-85b1-405b-be87-925056bcbe4a"
+    },
+    {
+      "claim_id": "a76ace2f-1cf4-4941-9c7e-7f522cca6ed3",
+      "result_id": "cff04098-85b1-405b-be87-925056bcbe4a"
+    },
+    {
+      "claim_id": "9b7e50be-6f69-4d44-a05d-82d1833179ca",
+      "result_id": "cff04098-85b1-405b-be87-925056bcbe4a"
+    },
+    {
+      "claim_id": "ea7d952f-ba3e-4c24-bb3d-d2cad2c92591",
+      "result_id": "cff04098-85b1-405b-be87-925056bcbe4a"
+    },
+    {
+      "claim_id": "5b274fe1-a99e-461d-a244-19fc482b7bc1",
+      "result_id": "ffe6a745-a9a9-4bd9-b2d5-44dbc09b6b58"
+    },
+    {
+      "claim_id": "e8f0fab2-6e57-4397-8797-93357c71a079",
+      "result_id": "ffe6a745-a9a9-4bd9-b2d5-44dbc09b6b58"
+    },
+    {
+      "claim_id": "844ab508-41e4-47aa-a9d3-961a8dd8c939",
+      "result_id": "ffe6a745-a9a9-4bd9-b2d5-44dbc09b6b58"
+    },
+    {
+      "claim_id": "38402e9e-c781-45de-a383-08e3ef0f602d",
+      "result_id": "ffe6a745-a9a9-4bd9-b2d5-44dbc09b6b58"
+    },
+    {
+      "claim_id": "a30f11a0-44cf-49c5-b9db-0ff65326c540",
+      "result_id": "ffe6a745-a9a9-4bd9-b2d5-44dbc09b6b58"
+    },
+    {
+      "claim_id": "4da6742f-0278-4f5a-8376-c83c3a901712",
+      "result_id": "ffe6a745-a9a9-4bd9-b2d5-44dbc09b6b58"
+    },
+    {
+      "claim_id": "54b316bc-7137-4d78-9b5c-79349b830724",
+      "result_id": "ffe6a745-a9a9-4bd9-b2d5-44dbc09b6b58"
+    },
+    {
+      "claim_id": "a9523a05-e7e9-4aaa-838d-3175161047d7",
+      "result_id": "ffe6a745-a9a9-4bd9-b2d5-44dbc09b6b58"
+    },
+    {
+      "claim_id": "dabeeb8b-8485-46f3-9a31-d9cd954c2555",
+      "result_id": "ffe6a745-a9a9-4bd9-b2d5-44dbc09b6b58"
+    },
+    {
+      "claim_id": "b6c8d07f-4793-4093-bb50-c5643dc42ee6",
+      "result_id": "7cbf9b8a-73bf-40e7-bfdb-3c67111293dc"
+    },
+    {
+      "claim_id": "ac5ff860-f3df-4740-954f-ce3d6c40e0d2",
+      "result_id": "7cbf9b8a-73bf-40e7-bfdb-3c67111293dc"
+    },
+    {
+      "claim_id": "12123be2-1b62-410b-a569-55995d9843b6",
+      "result_id": "7cbf9b8a-73bf-40e7-bfdb-3c67111293dc"
+    },
+    {
+      "claim_id": "e3d8e2c5-8b8b-4396-b96a-04519a0f59ac",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "5141cf06-c3df-4bd4-b35c-3371b72c11f4",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "6c1fd354-e1b1-4bcb-abf1-3ce50a94c229",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "85e9b653-287c-4009-99bc-310ad8e103b1",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "58d0adbe-3065-44e2-8873-b0f4fa13248d",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "d77db23f-923c-4f7d-8157-60deceedd0ec",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "3c2ec396-6e46-40a5-873f-04e277dec47a",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "afd153ad-8a26-4f44-85da-883b7cf9f4dd",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "e12f580e-031c-497b-bdb7-9fd96820fde5",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "e3cf89d8-d99c-4f85-99f2-a6438fd6fc07",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "29f155ac-038c-4f3a-b26d-1b4178a765e0",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "04f8c515-2dab-4897-9733-27f5e3c3366c",
+      "result_id": "652ccd20-678d-4004-be5a-ea567be2c428"
+    },
+    {
+      "claim_id": "7ae18c9f-2f0e-4bea-adb6-2445154af817",
+      "result_id": "f8d5d4ac-cd6e-445c-8fac-301940f87cef"
+    },
+    {
+      "claim_id": "f5222247-cce4-42f5-bc98-7234de0c4669",
+      "result_id": "f8d5d4ac-cd6e-445c-8fac-301940f87cef"
+    },
+    {
+      "claim_id": "4f7c2bf3-6cb8-488a-9a13-b5071f7dfa54",
+      "result_id": "17b7bc8a-5e97-447e-96f7-4dec808dc908"
+    },
+    {
+      "claim_id": "f9b83961-2fb2-4689-8e07-f4c866161335",
+      "result_id": "17b7bc8a-5e97-447e-96f7-4dec808dc908"
+    },
+    {
+      "claim_id": "83a37e8a-8303-4d69-8ca1-76e9ebbc9b66",
+      "result_id": "17b7bc8a-5e97-447e-96f7-4dec808dc908"
+    },
+    {
+      "claim_id": "3b6e8aa1-a5be-41ca-a437-d285ba91202b",
+      "result_id": "17b7bc8a-5e97-447e-96f7-4dec808dc908"
+    }
+  ],
+  "comparisons": []
+}

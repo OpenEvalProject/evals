@@ -1,0 +1,1469 @@
+{
+  "submission": {
+    "id": "ea30bfe0-8027-4576-9dde-edaeaa32bf77",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:57:39.077904Z",
+    "updated_at": "2025-12-02T06:57:39.077904Z"
+  },
+  "content": [
+    {
+      "id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "submission_id": "ea30bfe0-8027-4576-9dde-edaeaa32bf77",
+      "content_type": "manuscript",
+      "content_text": "# Support for a clade of Placozoa and Cnidaria in genes with minimal compositional bias\n\n## Authors\n\n- Christopher E Laumer<sup>1</sup> ([ORCID: 0000-0001-8097-8516](https://orcid.org/0000-0001-8097-8516)) \u2020\n- Harald Gruber-Vodicka<sup>3</sup>\n- Michael G Hadfield<sup>4</sup>\n- Vicki B Pearse<sup>5</sup>\n- Ana Riesgo<sup>6</sup>\n- John C Marioni<sup>1</sup> ([ORCID: 0000-0001-9092-0852](https://orcid.org/0000-0001-9092-0852))\n- Gonzalo Giribet<sup>8</sup>\n\n### Affiliations\n\n1. Wellcome Trust Sanger Institute Hinxton United Kingdom\n2. European Molecular Biology Laboratories-European Bioinformatics Institute Hinxton United Kingdom\n3. Max Planck Institute for Marine Microbiology Bremen Germany\n4. Kewalo Marine Laboratory Pacific Biosciences Research Center and the University of Hawaii-Manoa Honolulu United States\n5. Institute of Marine Sciences University of California Santa Cruz United States\n6. Invertebrate Division, Life Sciences Department The Natural History Museum London United Kingdom\n7. Cancer Research UK Cambridge Institute University of Cambridge Cambridge United Kingdom\n8. Museum of Comparative Zoology, Department of Organismic and Evolutionary Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe phylogenetic placement of the morphologically simple placozoans is crucial to understanding the evolution of complex animal traits. Here, we examine the influence of adding new genomes from placozoans to a large dataset designed to study the deepest splits in the animal phylogeny. Using site-heterogeneous substitution models, we show that it is possible to obtain strong support, in both amino acid and reduced-alphabet matrices, for either a sister-group relationship between Cnidaria and Placozoa, or for Cnidaria and Bilateria as seen in most published work to date, depending on the orthologues selected to construct the matrix. We demonstrate that a majority of genes show evidence of compositional heterogeneity, and that support for the Cnidaria + Bilateria clade can be assigned to this source of systematic error. In interpreting these results, we caution against a peremptory reading of placozoans as secondarily reduced forms of little relevance to broader discussions of early animal evolution.\n\n## Introduction\n\nThe discovery (Schulze, 1883) and mid-20th century rediscovery (Grell and Benwitz, 1971) of the enigmatic, amoeba-like placozoan Trichoplax adhaerens did much to ignite the imagination of zoologists interested in early animal evolution (B\u00fctschli, 1884). As microscopic animals adapted to extracellular grazing on the biofilms over which they creep (Wenderoth, 1986), placozoans have a simple anatomy suited to exploit passive diffusion for many physiological needs, with only six morphological cell types discernible even to intensive microscopical scrutiny (Grell and Ruthmann, 1991; Smith et al., 2014), albeit a greater diversity of cell types is apparent through single-cell RNA-seq (Seb\u00e9-Pedr\u00f3s, 2018a). They have no conventional muscular, digestive, or nervous systems, yet show tightly-coordinated behaviour regulated by peptidergic signaling (Smith et al., 2015; Senatore et al., 2017; Varoqueaux, 2018; Armon et al., 2018). In laboratory conditions, they proliferate through fission and somatic growth. Evidence for sexual reproduction remains elusive, despite genetic evidence of recombination (Srivastava et al., 2008) and descriptions of early abortive embryogenesis (Eitel et al., 2011; Grell, 1972), with the possibility that sexual phases of the life cycle may occur only under poorly understood field conditions (Pearse and Voigt, 2007; McFall-Ngai et al., 2013)\n\nGiven their simple, puzzling morphology and dearth of embryological clues, molecular data are crucial in placing placozoans phylogenetically. The position of Placozoa in the animal tree proved recalcitrant to early standard-marker analyses (Kim et al., 1999; Silva et al., 2007; Wallberg et al., 2004), although this paradigm did reveal a large degree of molecular diversity in placozoan isolates from around the globe, clearly indicating the existence of many cryptic species (Pearse and Voigt, 2007; Eitel et al., 2013; Signorovitch et al., 2007) with up to 27% genetic distance in 16S rRNA alignments (Eitel and Schierwater, 2010). An apparent answer to the question of placozoan affinities was provided by analysis of a nuclear genome assembly (Srivastava et al., 2008), which strongly supported a position as the sister group of a clade of Cnidaria\u00a0+\u00a0Bilateria (sometimes called Planulozoa). However, this effort also revealed a surprisingly bilaterian-like (Dunn et al., 2015) developmental gene toolkit in placozoans, a paradox for such a simple animal.\n\nAs metazoan phylogenetics has pressed onward into the genomic era, perhaps the largest controversy has been the debate over the identity of the sister group to the remaining metazoans, traditionally thought to be Porifera, but considered to be Ctenophora by Dunn et al (Dunn et al., 2008). and subsequently by additional studies (Hejnol et al., 2009; Moroz et al., 2014; NISC Comparative Sequencing Program et al., 2013; Whelan et al., 2015; Whelan et al., 2017). Others have suggested that this result arises from artifacts with potentially additive effects, such as inadequate taxon sampling, flawed matrix husbandry (undetected paralogy or contamination), and use of poorly fitting substitution models (Philippe et al., 2009; Pick et al., 2010; Pisani et al., 2015; Simion et al., 2017; Feuda et al., 2017). A third view has emphasized that using different sets of genes can lead to different conclusions, with only a small number sometimes sufficient to drive one result or another (Nosenko et al., 2013; Shen et al., 2017). This controversy, regardless of its eventual resolution, has spurred serious contemplation of possibly independent origins of several hallmark traits such as striated muscles, digestive systems, and nervous systems (Moroz et al., 2014; Dayraud et al., 2012; Hejnol and Mart\u00edn-Dur\u00e1n, 2015; Liebeskind et al., 2017; Moroz and Kohn, 2016; Presnell et al., 2016; Steinmetz et al., 2012).\n\nDriven by this controversy, new genomic and transcriptomic data from sponges, ctenophores, and metazoan outgroups have accrued, while new sequences and analyses focusing on the position of Placozoa have been slow to emerge. Here, we provide a novel test of the phylogenetic position of placozoans, adding draft genomes from three putative species that span the root of this clade\u2019s known diversity (Eitel et al., 2013) (Table 1), and critically assessing the role of systematic error in placing of these enigmatic organisms (Laumer, 2018).\n\n**Table 1.**\n Summary statistics describing the contiguity and completeness of the draft host metagenome bins from the three clade A placozoan isolates utilized in this paper, presented in comparison to the reference H1 strain.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>H11</th>\n      <th>H4</th>\n      <th>H6</th>\n      <th>H1</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>assembly span (Mbp)</td>\n      <td>56.63</td>\n      <td>83.39</td>\n      <td>76.7</td>\n      <td>98.06</td>\n    </tr>\n    <tr>\n      <td>scaffold number</td>\n      <td>5813</td>\n      <td>5337</td>\n      <td>8310</td>\n      <td>1415</td>\n    </tr>\n    <tr>\n      <td>scaffold N50 (kbp)</td>\n      <td>12.738</td>\n      <td>25.97</td>\n      <td>12.84</td>\n      <td>5790</td>\n    </tr>\n    <tr>\n      <td>GC%</td>\n      <td>30.76</td>\n      <td>30.84</td>\n      <td>29.9</td>\n      <td>29.37</td>\n    </tr>\n    <tr>\n      <td>BUSCO2 Eukaryota complete (of 303)</td>\n      <td>220</td>\n      <td>276</td>\n      <td>239</td>\n      <td>294</td>\n    </tr>\n    <tr>\n      <td>BUSCO2 Eukaryota complete\u00a0+\u00a0partial (of 303)</td>\n      <td>246</td>\n      <td>282</td>\n      <td>265</td>\n      <td>298</td>\n    </tr>\n    <tr>\n      <td>Average # of hits per BUSCO</td>\n      <td>1.00</td>\n      <td>1.04</td>\n      <td>1.00</td>\n      <td>1.00</td>\n    </tr>\n    <tr>\n      <td>% of BUSCOs with more than one match</td>\n      <td>0.45</td>\n      <td>3.99</td>\n      <td>0.42</td>\n      <td>0.34</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results and discussion\n\nOrthology assignment on sets of predicted proteomes derived from 59 genome and transcriptome assemblies yielded 4294 gene trees with at least 20 sequences each, sampling all five major metazoan clades and outgroups, from which we obtained 1388 well-aligned orthologues. Within this set, individual maximum-likelihood (ML) gene trees were constructed, and a set of 430 most-informative orthologues were selected on the basis of tree-likeness scores (Misof et al., 2013). This yielded an amino-acid matrix of 73,547 residues with 37.55% gaps or missing data, with an average of 371.92 and 332.75 orthologues represented for Cnidaria and Placozoa, respectively (with a maximum of 383 orthologues present for the newly sequenced placozoan H4 clade representative; Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig1-v2.jpg)\n\n**Figure 1.:** All nodes received full posterior probability. Numerical annotations of given nodes represent Extended Quadripartition Internode Certainty (EQP-IC) scores, describing among-gene-tree agreement for both the monophyly of the five major metazoan clades and the given relationships between them in this reference tree. A bar chart on the right depicts the proportion of the total orthologue set each terminal taxon is represented by in the concatenated matrix. \u2018Placozoa H1\u2019 in this and all other figures refers to the GRELL isolate sequenced in Srivastava et al., 2008, which has there and elsewhere been referred to as Trichoplax adhaerens, despite the absence of type material linking this name to any modern isolate. Line drawings of clade representatives are taken from the BIODIDAC database (http://biodidac.bio.uottawa.ca/).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Nodes annotated with ultrafast bootstrap supports with NNI correction; unannotated nodes received full support.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Nodes annotated with ultrafast bootstrap supports with NNI correction; unannotated nodes received full support.\n\nOur Bayesian analyses of this matrix place Cnidaria and Placozoa as sister groups with full posterior probability under the general site-heterogeneous CAT\u00a0+\u00a0GTR\u00a0+\u00a0\u04134 model (Figure 1). Under ML inference with the C60\u00a0+LG\u00a0+\u00a0FO\u00a0+\u00a0R4 profile mixture model (Wang et al., 2018) (Figure 1\u2014figure supplement 1), we again recover Cnidaria\u00a0+\u00a0Placozoa, albeit with more marginal resampling support. Both Bayesian and ML analyses show little internal branch diversity within Placozoa. Accordingly, deleting all newly-added placozoan genomes from our analysis has no effect on topology and only a marginal effect on support in ML analysis (Figure 1\u2014figure supplement 2). Quartet-based concordance analyses (Zhou, 2017) show no evidence of strong phylogenetic conflicts among ML gene trees in this 430-gene set (Figure 1), although internode certainty metrics are close to 0 for many key clades including Cnidaria\u00a0+\u00a0Placozoa, indicating that support for some ancient relationships may be masked by gene-tree estimation errors, emerging only in combined analysis (Gatesy and Baker, 2005).\n\nCompositional heterogeneity of amino-acid frequencies along the tree is a source of phylogenetic error not modelled by even complex site-heterogeneous substitution models such as CAT+GTR (Blanquart and Lartillot, 2008; Foster, 2004; Lartillot and Philippe, 2004; Lartillot et al., 2013). Furthermore, previous analyses (Nosenko et al., 2013) have shown that placozoans and choanoflagellates in particular, both of which taxa our matrix samples intensively, deviate strongly from the mean amino-acid composition of Metazoa, perhaps as a result of genomic GC content discrepancies. As a measure to at least partially ameliorate such nonstationary substitution, we recoded the amino-acid matrix into the 6 \u2018Dayhoff\u2019 categories, a common strategy previously shown to reduce the effect of compositional variation among taxa, albeit the Dayhoff-6 groups represent only one of many plausible recoding strategies, all of which sacrifice information (Feuda et al., 2017; Nesnidal et al., 2010; Rota-Stabelli et al., 2013; Susko and Roger, 2007). Analysis of this recoded matrix under the CAT\u00a0+\u00a0GTR model again recovered full support (pp\u00a0=\u00a01) for Cnidaria\u00a0+\u00a0Placozoa (Figure 2). Indeed, under Dayhoff-6 recoding, the only major change is in the relative positions of Ctenophora and Porifera, with the latter here constituting the sister group to all other animals with full support. Similar recoding-driven effects on relative positions of Porifera and Ctenophora have also been seen in other recent work (Feuda et al., 2017), and have been interpreted to indicate a role for compositional bias in misplacing Ctenophora as sister group to all other animals\n\n![Figure 2.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig2-v2.jpg)\n\n**Figure 2.:** Nodes annotated with posterior probability; unannotated nodes received full support.\n\nMany research groups, using good taxon sampling and genome-scale datasets, and even recently including data from a new divergent placozoan species (Whelan et al., 2017; Feuda et al., 2017; Eitel, 2017), have consistently reported strong support for Planulozoa under the CAT\u00a0+\u00a0GTR model. Indeed, when we construct a supermatrix from our predicted peptide catalogues using a different strategy, relying on complete sequences of 303 pan-eukaryote \u2018Benchmarking Universal Single-Copy Orthologs\u2019 (BUSCOs) (Sim\u00e3o et al., 2015), we also see full support in a CAT\u00a0+\u00a0GTR\u00a0+\u00a0\u0413 analysis for Planulozoa, in both amino-acid (Figure 3a) and Dayhoff-6 recoded alphabets (Figure 3b). Which phylogeny is correct, and what process drives support for the incorrect topology? Posterior predictive tests, which compare the observed among-taxon usage of amino-acid frequencies to expected distributions simulated using the sampled posterior distribution and a single composition vector, may provide insight (Feuda et al., 2017; Lartillot and Philippe, 2004). Both the initial 430-gene matrix and the 303-gene BUSCO matrix fail these tests, but the BUSCO matrix fails it more profoundly, with z-scores (measuring mean-squared across-taxon heterogeneity) scoring in the range of 330\u2013340, in contrast to the range of 176\u2013187 seen in the 430-gene matrix (Table 2). Furthermore, inspecting z-scores for individual taxa in representative chains from both matrices shows that a large amount of this global difference in z-scores can be attributed to placozoans, with additional contributions from choanoflagellates and select isolated representatives of other clades (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig3-v2.jpg)\n\n**Figure 3.:** amino acid space or (B) the Dayhoff-6 reduced alphabet space. Nodal support values comprise posterior probabilities; nodes with full support not annotated. Taxon colourings as in previous Figures. (C) Plot of z-scores (summed absolute distance between taxon-specific and global empirical frequencies) from representative posterior predictive tests of amino acid compositional bias, from both the BUSCO 303-orthologue matrix (red) and the initial 430-orthologue matrix (blue). Placozoan taxon abbreviations are shown in blue font.\n\n**Table 2.**\n Mean (and standard deviation of) z-scores from posterior predictive tests of per-site amino acid diversity and among-lineage compositional homogeneity, called for amino-acid alignments using the PhyloBayes-MPI v1.8 readpb_mpi \u2013div and \u2013comp options, respectively, with burn-ins selected as per the posterior consensus summaries shown elsewhere.Except for the diversity statistic in the test-passing matrix, all tests reject (at p=0.05) the adequacy of the inferred CAT\u00a0+\u00a0GTR\u00a0+\u00a0\u04134 model to describe the data.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Diversity</th>\n      <th>Composition (mean)</th>\n      <th>Composition (maximum)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>430 matrix</td>\n      <td>1.94 (0.09)</td>\n      <td>181.35 (7.50)</td>\n      <td>105.04 (3.13)</td>\n    </tr>\n    <tr>\n      <td>BUSCO 303-gene matrix</td>\n      <td>11.27 (0.73)</td>\n      <td>334.98 (4.56)</td>\n      <td>107.56 (6.17)</td>\n    </tr>\n    <tr>\n      <td>comp-failed matrix</td>\n      <td>2.51 (0.19)</td>\n      <td>270.16 (12.03)</td>\n      <td>173.87 (9.15)</td>\n    </tr>\n    <tr>\n      <td>comp-passed matrix</td>\n      <td>0.81 (0.18)</td>\n      <td>107.67 (10.10)</td>\n      <td>63.19 (6.95)</td>\n    </tr>\n  </tbody>\n</table>\n\nAs a final measure to describe the influence of compositional heterogeneity in this dataset, we applied a null-simulation test for compositional bias to each alignment in our set of 1388\u00a0orthologues. This test, which compares the real data to a null distribution of amino-acid frequencies simulated along assumed gene trees with a substitution model using a single composition vector, is less prone to Type II errors than the more conventional X (Grell and Benwitz, 1971) test (Foster, 2004). Remarkably, at a conservative significance threshold of \u03b1\u00a0=\u00a00.10, the majority (764 genes or\u00a0~55%) of this gene set is identified as compositionally biased by this test, highlighting the importance of using appropriate statistical tests to control this source of systematic error, rather than applying arbitrary heuristic cutoffs\u00a0(K\u00fcck and Struck, 2014). Building informative matrices from gene sets on either side of this significance threshold, and again applying both CAT\u00a0+\u00a0GTR mixture models and ML profile mixtures, we see strong support for Cnidaria\u00a0+\u00a0Placozoa in the test-passing supermatrix, and conversely, strong support for Cnidaria\u00a0+\u00a0Bilateria in the test-failing supermatrix (Figure 4, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2). Interestingly, in trees built through CAT\u00a0+\u00a0GTR\u00a0+\u00a0\u04134 analysis of the test-failing supermatrix (Figure 4A,C), in both amino-acid and Dayhoff-6 alphabets, we also observe full support for Porifera as sister to all other animals. In contrast, analysis of this amino acid matrix under a profile mixture model recovers support for Ctenophora in this position (Figure 4\u2014figure supplement 1), indicating that, at least for this alignment, compositional heterogeneity need not be invoked to explain why outcomes differ among analyses, as some have argued (Feuda et al., 2017): both CAT\u00a0+\u00a0GTR and the C60\u00a0+LG\u00a0+\u00a0FO\u00a0+\u00a0R4 profile mixture model assume a single composition vector over time, but the CAT\u00a0+\u00a0GTR model is better able to accommodate site-heterogeneous substitution patterns (Lartillot et al., 2013; Quang et al., 2008). In the context of this experiment, Dayhoff-6 recoding appears impactful only for the test-passing supermatrix (Figure 4B,D), where it obviates support for Ctenophora-sister (Figure 4B, Figure 4\u2014figure supplement 2) in favour of (albeit, with marginal support) Porifera-sister (Figure 4D), and also diminishes support for Placozoa\u00a0+\u00a0Cnidaria (in contrast to the 430-gene matrix; Figure 2), perhaps reflecting the inherent information loss of using a reduced amino-acid alphabet for this relatively shorter matrix.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig4-v2.jpg)\n\n**Figure 4.:** Panels correspond to (A) the amino acid matrix made within the failing set; (B) the amino acid matrix derived from the passing set; (C) the Dayhoff-6 recoded matrix from the failing set; (D) the Dayhoff-6 recoded matrix from the passing set. Only nodes with posterior probability less than 1.00 are annotated numerically.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Nodes annotated with ultrafast bootstrap supports with NNI correction; unannotated nodes received full support.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/36278/elife-36278-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Nodes annotated with ultrafast bootstrap supports with NNI correction; unannotated nodes received full support.\n\nA possible hidden variable related to the phylogenetic discordance we describe, the precise significance of which remains unclear, is mean trimmed alignment length: both the test-passing and the original 430-gene matrix are composed of considerably shorter alignments than the test-failing and the 303-gene BUSCO matrix (see Materials and methods). Indeed, alignment length has been previously shown to be predictive of a number of other metrics of phylogenetic relevance (Shen et al., 2016); the generality and directionality of such relationships in empirical datasets at varying scales of divergence is clearly worthy of further investigation.\n\nThe previously cryptic phylogenetic link between cnidarians and placozoans seen in gene sets less influenced by compositional bias will require further testing with other analyses and data modalities, such as rare genomic changes, which should be ever more visible as highly contiguous assemblies continue to be reported from non-bilaterian animals (Eitel et al., 2018; Kamm et al., 2018; Jiang, 2018; Lecl\u00e8re, 2018). However,\u00a0if validated, this relationship must continue to raise questions on the homology of certain traits across non-bilaterians. Many workers, citing the incompletely known development (Eitel et al., 2011; Pearse and Voigt, 2007) and relatively bilaterian-like gene content of placozoans (Srivastava et al., 2008; Eitel, 2017), presume that these organisms must have a still-unobserved, more typical development and life cycle (DuBuc et al., 2018), or else are merely oddities that have experienced wholesale secondary simplification, having scant significance to any evolutionary path outside their own. Indeed, it is tempting to interpret this new phylogenetic position as further bolstering such hypotheses, as much work on cnidarian models in the evo-devo paradigm is predicated on the notion that cnidarians and bilaterians share, more or less, many homologous morphological features, viz. axial organization (Genikhovich and Technau, 2017;\u00a0DuBuc et al., 2018), nervous systems (Liebeskind et al., 2017; Moroz and Kohn, 2016; Kelava et al., 2015; Kristan, 2016; Arendt et al., 2016), basement-membrane lined epithelia (Fidler et al., 2017; Leys and Riesgo, 2012), musculature (Steinmetz et al., 2012), embryonic germ-layer organisation (Steinmetz et al., 2017), and internal digestion (Presnell et al., 2016; Putnam et al., 2007; Hejnol and Martindale, 2008; Martindale and Hejnol, 2009). While we do not argue, as some have done (Schierwater, 2005; Syed and Schierwater, 2002), that placozoans resemble hypothetical metazoan ancestors, we hesitate to dismiss them a priori as irrelevant to understanding early bilaterian evolution in particular: although apparently simpler and less diverse, placozoans nonetheless have equal status to cnidarians as an immediate extant outgroup. Rather, we see value in testing assumed hypotheses of homology, character by character, by extending pairwise comparisons between bilaterians and cnidarians to include placozoans, an agenda which demands reducing the large disparity in embryological, physiological, and molecular genetic knowledge between these taxa, towards which recent progress has been made using both established methods such as in situ hybridization (DuBuc et al., 2018) and image analysis (Varoqueaux, 2018), as well as new technologies such as single-cell RNA-seq (Seb\u00e9-Pedr\u00f3s, 2018a; Seb\u00e9-Pedr\u00f3s et al., 2018b). Conversely, we emphasize another implication of this phylogeny: characters that can be validated as homologous at any level between Bilateria and Cnidaria must have originated earlier in animal evolution than previously appreciated, and should either cryptically occur in modern placozoans or else have been lost at some point in their ancestry. In this light, paleobiological scenarios of early animal evolution founded on inherently phylogenetically-informed interpretations of Ediacaran fossil forms (Cavalier-Smith, 2018; Cavalier-Smith, 2017; Dufour and McIlroy, 2018; Sperling and Vinther, 2010; Evans et al., 2017) and molecular clock estimates (Cunningham et al., 2017; dos Reis et al., 2015; Dohrmann and W\u00f6rheide, 2017; Erwin et al., 2011) may require re-examination.\n\n## Materials and methods\n\n### Sampling, sequencing, and assembling reference genomes from previously unsampled placozoans\n\nHaplotype H4 and H6 placozoans were collected from water tables at the Kewalo Marine Laboratory, University of Hawaii-Manoa, Honolulu, Hawaii in October 2016. Haplotype H11 placozoans were collected from the Mediterranean \u2018Anthias\u2019 show tank in the Palma de Mallorca Aquarium, Mallorca, Spain in June 2016. All placozoans were sampled by placing glass slides suspended freely or mounted in cut-open plastic slide holders into the tanks for 10 days (Pearse and Voigt, 2007). Placozoans were identified under a dissection microscope and single individuals were transferred to 500 \u00b5l of RNAlater, stored as per manufacturer\u2019s recommendations.\n\nDNA was extracted from 3 individuals of haplotype H11 and 5 individuals of haplotype H6 using the DNeasy Blood and Tissue Kit (Qiagen, Hilden, Germany). DNA and RNA from three haplotype H4 individuals were extracted using the AllPrep DNA/RNA Micro Kit (Qiagen), with both kits used according to manufacturer\u2019s protocols.\n\nIllumina library preparation and sequencing was performed by the Max Planck Genome Centre, Cologne, Germany, as part of an ongoing metagenomics project in marine symbiosis. In brief, DNA/RNA quality was assessed with the Agilent 2100 Bioanalyzer (Agilent, Santa Clara, USA) and the genomic DNA was fragmented to an average fragment size of 500 bp. For the DNA samples, the concentration was increased (MinElute PCR purification kit; Qiagen, Hilden, Germany) and an Illumina-compatible library was prepared using the Ovation Ultralow Library Systems kit (NuGEN, Leek, The Netherlands) according the manufacturer\u2019s protocol. For the haplotype H4 RNA samples, the Ovation RNA-seq System V2 (NuGen, 376 San Carlos, CA, USA) was used to synthesize cDNA and sequencing libraries were then generated with the DNA library prep kit for Illumina (BioLABS, Frankfurt am Main, Germany). All libraries were size selected by agarose gel electrophoresis, and the recovered fragments quality assessed and quantified by fluorometry. For each DNA library 14\u00a0\u2013\u00a075 million 100 bp or 150 bp paired-end reads were sequenced on Illumina HiSeq 2500 or 4000 machines (Illumina, San Diego, U.S.A); for the haplotype H4 RNA libraries 32\u00a0\u2013\u00a037 million single 150 bp reads were obtained.\n\nFor assembly, adapters and low-quality reads were removed with bbduk (https://sourceforge.net/projects/bbmap/) with a minimum quality value of two and a minimum length of 36 and single reads were excluded from the analysis. Each library was error corrected using BayesHammer (Nikolenko et al., 2013). A combined assembly of all libraries for each haplotype was performed using SPAdes 3.62 (Bankevich et al., 2012). Haplotype four and H11 data were assembled from the full read set with standard parameters and kmers 21, 33, 55, 77, 99. The Haplotype H6 data was preprocessed to remove all reads with an average kmer coverage\u00a0<5 using bbnorm and then assembled with kmers 21, 33, 55 and 77.\n\nReads from each library were mapped back to the assembled scaffolds using bbmap (https://sourceforge.net/projects/bbmap/) with the option fast\u00a0=\u00a0t. Scaffolds were binned based on the mapped read data using MetaBAT (Kang et al., 2015) with default settings and the ensemble binning option activated (switch \u2013B 20). The Trichoplax host bins were evaluated using metawatt (Strous et al., 2012) based on coding density and sequence similarity to the Trichoplax H1 reference assembly (NZ_ABGP00000000.1). The bin quality metrics were computed with BUSCO2 (Sim\u00e3o et al., 2015) (Table 1) and QUAST (Gurevich et al., 2013). Both the stringent metagenomics binning procedure (a procedure also expedient in other holobiont organisms (Celis et al., 2018)) and the very low proportion of multiple orthologue hits in the BUSCO2 assessment (Table 1) attest to the lack of evidence for residual non-placozoan contamination within the scaffolds used for gene prediction.\n\n### Predicting proteomes from transcriptome and genome assemblies\n\nPredicted proteomes from species with published draft genome assemblies were downloaded from the NCBI Genome portal or Ensembl Metazoa in June 2017. For Clade A placozoans, host metagenomic bins were used directly for gene annotation. For the H6 and H11 representatives, annotation was entirely ab initio, performed with GeneMark-ES (Ter-Hovhannisyan et al., 2008); for the H4 representative, total RNA-seq libraries obtained from three separate isolates (BioProject\u00a0PRJNA505163) were mapped to genomic contigs with STAR v2.5.3a (Dobin et al., 2013) under default settings; merged bam files were then used to annotate genomic contigs and derive predicted peptides with BRAKER v1.9 (Hoff et al., 2016) under default settings. Choanoflagellate proteome predictions (Simion et al., 2017) were provided as unpublished data from Dan Richter. Peptides from a Calvadosia (previously Leucosolenia) complicata transcriptome assembly were downloaded from compagen.org. Peptide predictions from Nemertoderma westbladi and Xenoturbella bocki as used in Cannon et al 2016 (Cannon et al., 2016) were provided directly by the authors. The transcriptome assembly (raw reads unpublished) from Euplectella aspergillum was provided by the Satoh group, downloaded from (http://marinegenomics.oist.jp/kairou/viewer/info?project_id=62). Predicted peptides were derived from Trinity RNA-seq assemblies (multiple versions released 2012\u20132016) as described by Laumer et al (Laumer et al., 2015). for the following sources/SRA accessions:: Porifera: Petrosia ficiformis: SRR504688, Cliona varians: SRR1391011, Crella elegans: SRR648558, Corticium candelabrum: SRR504694-SRR499820-SRR499817, Spongilla lacustris: SRR1168575, Clathrina coriacea: SRR3417192, Sycon coactum: SRR504689-SRR504690, Sycon ciliatum: ERR466762, Ircinia fasciculata, Chondrilla caribensis (originally misidentified as Chondrilla nucula) and Pseudospongosorites suberitoides from (https://dataverse.harvard.edu/dataverse/spotranscriptomes); Cnidaria: Abylopsis tetragona: SRR871525, Stomolophus meleagris: SRR1168418, Craspedacusta sowerbyi: SRR923472, Gorgonia ventalina: SRR935083; Ctenophora: Vallicula multiformis: SRR786489, Pleurobrachia bachei: SRR777663, Beroe abyssicola: SRR777787; Bilateria: Limnognathia maerski: SRR2131287. All other peptide predictions were derived through transcriptome assembly as paired-end, unstranded libraries with Trinity v2.4.0 (Haas et al., 2013), running with the \u2013trimmomatic flag enabled (and all other parameters as default), with peptide extraction from assembled transcripts using TransDecoder v4.0.1 with default settings. For these species, no ad hoc isoform selection was performed: any redundant isoforms were removed during tree pruning in the orthologue determination pipeline (see below).\n\n### Orthologue identification and alignment\n\nPredicted proteomes were grouped into top-level orthogroups with OrthoFinder v1.0.6 (Emms and Kelly, 2015), run as a 200-threaded job, directed to stop after orthogroup assignment, and print grouped, unaligned sequences as FASTA files with the \u2018-os\u2019 flag. A custom python script (\u2018renamer.py\u2019) was used to rename all headers in each orthogroup FASTA file in the convention [taxon abbreviation] + \u2018@\u2019 + [sequence number as assigned by OrthoFinder SequenceIDs.txt file], and to select only those orthogroups with membership comprising at least one of all five major metazoan clades plus outgroups, of which exactly 4300 of an initial 46,895 were retained. Scripts in the Phylogenomic Dataset Construction pipeline (Yang and Smith, 2014) were used for successive data grooming stages as follows: Gene trees for top-level orthogroups were derived by calling the fasta_to_tree.py script as a job array, without bootstrap replicates; six very large orthogroups did not finish this process. In the same directory, the trim_tips.py, mask_tips_by_taxonID_transcripts.py, and cut_long_internal_branches.py scripts were called in succession, with \u2018./. tre 10 10\u2019, \u2018././y\u2019, and \u2018./. mm 1 20. /\u2019 passed as arguments, respectively. The 4267 subtrees generated through this process were concatenated into a single Newick file and 1419 orthologues were extracted with UPhO (Ballesteros and Hormiga, 2016). Orthologue alignment was performed using the MAFFT v7.271 \u2018E-INS-i\u2019 algorithm, and probabilistic masking scores were assigned with ZORRO (Wu et al., 2012), removing all sites in each alignment with scores below five as described previously (Laumer et al., 2015). 31 orthologues with retained lengths less than 50 amino acids were discarded, leaving 1388 well-aligned orthologues.\n\n### Matrix assembly\n\nA full concatenation of all retained 1388 orthogroups was performed with the \u2018geneStitcher.py\u2019 script distributed with UPhO available at https://github.com/ballesterus/PhyloUtensils. However, such a matrix would be too large for tractably inferring a phylogeny under well-fitting mixture models such as CAT\u00a0+\u00a0GTR; therefore we used MARE v0.1.2 (Misof et al., 2013) to extract an informative subset of genes using tree-likeness scores, running with \u2018-t 100\u2019 to retain all taxa and using \u2018-d 1\u2019 as a tuning parameter on alignment length. This yielded our 430-orthologue, 73,547 site matrix, with a mean partition length of 202.24 (s.d. 116.96) residues.\n\nAs a check on the above procedure, which is agnostic to the identity of the genes assigned into orthologue groups, we also sought to construct a matrix using complete, single-copy sequences identified by the BUSCO v3.0.1 algorithm (Sim\u00e3o et al., 2015), using the 303-gene eukaryote_odb9 orthologue set. BUSCO was run independently on each peptide FASTA file used as input to OrthoFinder, and a custom python script (\u2018extract.py\u2019) was used to parse the full output table from each species, selecting only those entries identified as complete-length, single-copy representatives of each BUSCO orthologue, and grouping these into unix directories, facilitating downstream alignment, probabilistic masking, and concatenation, as described for the OrthoFinder matrix. This 303-gene BUSCO matrix had a total length of 94,444 amino acids, with 39.6% of sites representing gaps or missing data, with mean partition length 311.70 (standard deviation 202.78).\n\nWithin the gene bins nominated by the test of compositional heterogeneity (see below), matrices were constructed again by concatenating and reducing matrices with MARE, using \u2018-t 100\u2019 to retain all taxa and setting \u2018-d 0.5\u2019 to yield a matrix of an optimal size for inferring a phylogeny under the CAT\u00a0+\u00a0GTR model. This procedure gave a 349-gene matrix of 80,153 amino acids (mean partition lengths 228.67\u00a0\u00b1\u00a0s.d. 136.19, 41.64% gaps) within the test-failing gene set, and a 348-gene matrix of 55,426 amino acids (mean partition lengths 158.27\u00a0\u00b1\u00a0s.d. 79.06, 38.92% gaps), within the test-passing set (Figure 4).\n\n### Phylogenetic inference\n\nIndividual ML gene trees were constructed on all 1388 orthologues in IQ-tree v1.6beta, with \u2018-m MFP -b 100\u2019 passed as parameters to perform automatic model selection and 100 standard nonparametric bootstraps on each gene tree.\n\nFor inference on the initial 430-gene matrix, we proceeded as follows: ML inference on the concatenated matrix (Figure 1\u2014figure supplement 1) was performed with IQ-tree v1.6beta, passing \u2018-m C60\u00a0+LG\u00a0+\u00a0FO\u00a0+\u00a0R4 bb 1000\u2019 as parameters to specify a profile mixture model and retain 1000 trees for ultrafast bootstrapping; the \u2018-bnni\u2019 flag was used to incorporate NNI correction during UF bootstrapping, an approach shown to control misleading inflated support arising from model misspecification (Hoang et al., 2018). ML inference using only the H1 haplotype as a representative of Placozoa (Figure 1\u2014figure supplement 2) was undertaken similarly, albeit using a marginally less complex profile mixture model (C20\u00a0+LG\u00a0+\u00a0FO\u00a0+\u00a0R4). Bayesian inference under the CAT\u00a0+\u00a0GTR\u00a0+\u00a0\u04134 model was performed in PhyloBayes MPI v1.6j (Lartillot et al., 2013) with 20 cores each dedicated to four separate chains, run for 2885\u20133222 generations with the \u2018-dc\u2019 flag applied to remove constant sites from the analysis, and using a starting tree derived from the FastTree2 program (Price et al., 2010). The two chains used to generate the posterior consensus tree summarized in Figure 1 converged on exactly the same tree in all MCMC samples after removing the first 2000 generations as burn-in. Analysis of Dayhoff-6-state recoded matrices in CAT\u00a0+\u00a0GTR\u00a0+\u00a0\u04134 was performed with the serial PhyloBayes program v4.1c, with \u2018-dc -recode dayhoff6\u2019 passed as flags. Six chains on the 430- gene matrix were run from 1441 to 1995 generations; two chains showed a maximum bipartition discrepancy (maxdiff) of 0.042 after removing the first 1000 generations as burn-in (Figure 2). QuartetScores (Zhou, 2017) was used to measure internode certainty metrics including the reported EQP-IC, using the 430 gene trees from those orthologues used to derive the matrix as evaluation trees, and using the amino-acid CAT\u00a0+\u00a0GTR\u00a0+\u00a0\u04134 tree as the reference to be annotated (Figure 1).\n\nFor inference on the BUSCO 303 gene set, we ran 4 chains of the CAT\u00a0+\u00a0GTR\u00a0+\u00a0\u04134 mixture model with PhyloBayes MPI v1.7a, applying the -dc flag again to remove constant sites, but here not specifying a starting tree; chains were run from 1873 to 2361 generations. Unfortunately, no pair of chains reached strict convergence on the amino-acid version of this matrix (with all pairs showing a maxdiff\u00a0=\u00a01 at every burn-in proportion examined), perhaps indicating problems mixing among the four chains we ran. However, all chains showed full posterior support for identical relationships among the five major animal groups, with differences among chains assignable to minor differences in the internal relationships within Choanoflagellata and Bilateria. Accordingly, the posterior consensus tree in Figure 3A is summarized from all four chains, with a burn-in of 1000 generations, sampling every 10 generations. For the Dayhoff-recoded version of this matrix, we ran six separate chains again with CAT\u00a0+\u00a0GTR\u00a0+\u00a0\u04134 with the -dc flag, for 5433\u00a0\u2013\u00a06010 generations; two chains were judged to have converged, giving a maxdiff of 0.141157 during posterior consensus summary with a burn-in of 2500, sampling every 10 generations (Figure 3B).\n\nFor inference on the 348 and 349 gene matrices produced within gene bins defined by the null-simulation test of compositional bias (see below), we ran six chains each for the amino acid and recoded versions of each matrix, under CAT\u00a0+\u00a0GTR\u00a0+\u00a0\u04134 with constant sites removed. In the amino-acid matrix, chains ran from 2709 to 3457 and 1423\u00a0\u2013\u00a01475 generations for the test-failing and test-passing matrices, respectively. In the recoded matrix, chains ran from 3893 to 4480 and 4350\u00a0\u2013\u00a04812 generations for the test-failing and test-passing matrices, respectively. In selecting chains to input for posterior consensus summary tree presentation (Figure 4A\u2013D), we chose pairs of chains and burn-ins that yielded the lowest possible maxdiff values (all\u00a0<0.1 with the first 500 generations discarded as burn-in, except for the amino-acid coded test-failing matrix, whose most similar pair of chains gave a maxdiff of 0.202 with 1000 generations discarded as burn-in). We emphasize that the topologies and supports displayed in Figure 4A\u2013D are similar when all chains (and conservative burn-in values) are used to generate consensus trees. For ML trees using profile mixture models for the test-failing (Figure 4\u2014figure supplement 1) and test-passing (Figure 4\u2014figure supplement 2) gene matrices, we used IQ-tree 1.6rc, calling in the same manner (with C60\u00a0+LG\u00a0+\u00a0FO\u00a0+\u00a0R4) as used on our 430-gene matrix (see above).\n\n### Tests of compositional heterogeneity\n\nFor posterior predictive tests of compositional heterogeneity and residue diversity using MCMC samples under CAT\u00a0+\u00a0GTR (Table 2), we used PhyloBayes MPI v1.8 to test two chains from the initial 430-gene matrix, three chains from the 303-gene BUSCO matrix, and six chains each from the 348 (test-failing) and 349 (test-passing) gene matrices, removing 2000 generations from the first matrix and 1000 from the others as burn-in. Results from tests on representative chains were selected for plotting in Figure 3C and summary in Table 2; however, results from all chains tested are deposited in the Data Dryad accession.\n\nFor the per-gene null simulation tests of compositional bias (Foster, 2004), we used the p4 package (https://github.com/pgfoster/p4-phylogenetics), inputting the ML trees inferred by IQ-tree for each of the 1388 alignments, and assuming an LG+\u03934 substitution model with a single empirical frequency vector for each gene; this test was implemented with a simple wrapper script (\u2018p4_compo_test_multiproc.py\u2019) leveraging the python multiprocessing module. We opted not to model-test each gene individually in p4, both because the range of models implemented in p4 are more limited than those tested for in IQ-tree, and because, as a practical matter, LG (usually with variant of the FreeRates model of rate heterogeneity) was chosen as the best-fitting model in the IQ-tree model tests for a large majority of genes, suggesting that LG+\u03934 would be a reasonable approximation for the purposes of this test. We selected an \u03b1-threshold of 0.10 for dividing genes into test-passing and -failing bins as a conservative measure; however, we emphasize that even at a less conservative \u03b1\u00a0=\u00a00.05, 47% of genes would still be detected as falling outside the null expectation.\n\n### Source data availability\n\nSRA accession codes, where used, and all alternative sources for sequence data (e.g. individually hosted websites, personal communications), are listed above in the Materials and methods section. A DataDryad accession is available at https://doi.org/10.5061/dryad.6cm1166, which makes available all helper scripts, orthogroups, multiple sequence alignments, phylogenetic program output, and raw host proteomes inputted to OrthoFinder. Metagenomic bins containing placozoan host contigs and gene annotations from H4, H6 and H11 isolates are also provided in this accession. PhyloBayes. chain files, due to their large size, are separately accessioned at in Zenodo at https://doi.org/10.5281/zenodo.1197272.\n",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "7ef1c7cd-1739-4087-ac21-76d01950d81d",
+      "submission_id": "ea30bfe0-8027-4576-9dde-edaeaa32bf77",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antonis Rokas, Vanderbilt University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.36278.021](https://doi.org/10.7554/eLife.36278.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Placozoa and Cnidaria are sister taxa\" for consideration by eLife. Your article has been reviewed by Diethard Tautz as the Senior Editor, a Reviewing Editor and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Davide Pisani (Reviewer #2); David C Plachetzki (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nSummary:\n\nThe manuscript by Laumer and colleagues is the latest chapter in the quest to understand (and question) relationships at the base of the animal tree. For quite some time, the controversy has focused on whether poriferans or ctenophores are the sister lineage to the rest of the metazoan phyla, whereas the rest of the relationships appear to have been somewhat stable toward a grouping of bilaterians + cnidarians, with placozoans as the sister to that lineage. This study questions the validity of this later set of accepted relationships as well as sheds additional light on the controversy about sponges-sister vs. ctenophores-sister. The central claim made by Laumer et al., is that among lineage compositional heterogeneity has plagued most previous analyses of similar phylogenetic depth and that the finding of bilateria + cnidaria to the exclusion of placozoa is the result of such error. Such a conclusion would force a reevaluation of the significance of placozoans in our understanding of early metazoan evolution and would additionally place our understanding of placozoan biology in a new context.\n\nEssential revisions:\n\n1) New placozoan genomes were sequenced and assembled in this paper, but there is very little description of the properties of these new assemblies. Several questions related to the contiguity of the assemblies produced, how the new assemblies compare with the existing assembly and gene models for Trichoplax adhaerens, the degree of overlap among the new genome assemblies reported here, BUSCO scores, etc., of the protein models produced from these analyses, are not addressed. Similarly, the phylogenomic data matrix lacks descriptions of key attributes such as global taxon occupancy and a distribution of partition lengths. Finally, one challenge when sequencing and assembling genomes and, to a lesser extent transcriptomes, from marine meiofauna is contamination. It was not clear how contamination was dealt with in the preparation of genome assemblies, or in the phylogenomic dataset construction procedure. The central claim of the paper is that compositional heterogeneity drives a certain analytical outcome in this and in previous analyses, but given the limited description of the data that underlie this result, one could imagine other artifacts, unrelated to compositional heterogeneity, that could also be at play.\n\n2) The paper leverages new genome scale datasets for placozoa, but it is not clear how the existing genome for Trichoplax adhaerens was utilized. Our reading is that a sample of Haplotype H1, the same haplotype that has been previously sequenced, was assembled here and data from this new H1 assembly was utilized, together with separate assemblies of the other haplotypes. If this is correct, it is not clear why the existing high-quality protein models for Trichoplax were not utilized in the production of the phylogentic matrix. This simple inclusion could help allay concerns over the nature of the new data.\n\n3) Laumer et al., propose that the findings of the majority of previous analyses were influenced by compositional heterogeneity, as uncovered in their analyses. We note that the effects of compositional heterogeneity in the context of deep metazoan phylogenomics were explored previously at least once previously (in Borowiec et al., 2015) using dahoff 6 recoding; however, the Borowiec et al., study did not find the result reported here using the existing Trichoplax data. Moreover, the effect of compositional heterogeneity in previous studies were not directly tested by Laumer et al. Taxon sampling and extensive differences in the datasets utilized used in previous analyses are additional variables that need to be accounted for. At least a subset of previously published phylogenomic datasets that bear on the position of placozoa should be reanalyzed under the procedure used here, and cases where this has already been done should be addressed.\n\n4) Results and Discussion section. The reported PPA scores are very bad, indicating that both datasets are extremely heterogeneous and that at the AA level both datasets are unreliable. The PPA do suggest BUSCO is worst, but that does not make your new AA dataset more reliable as Z-scores greater than one hundred indicate an utter failure of the model to describe the data (see Feuda et al., 2017 for a discussion of interpretation of Z-scores). This should be pointed out in your discussion. Note however, that the fact that a dataset is highly heterogeneous does not mean that the tree it supports is incorrect; that depends on the specific of the dataset (taxon specific distribution of heterogeneity, presence of other forms of noise etc.). High heterogeneity means that we should be cautious when interpreting the results as the tree might include tree-reconstruction artefacts. So, our reading of these two analyses is that both datasets are heterogeneous and that tests (like analyses under Dayhoff-6) need to be carried out to validate the clades in these trees. You did these tests and they clearly indicate that Placo-Cni and Pori-sister are unlikely to be compositional artefact while Cneto-sister is likely a compositional artefact.\n\n5) Results and Discussion section: You need to provide more information about heterogeneity. Are you talking of site or lineage specific heterogeneity? These are two different components of a dataset\u2019s heterogeneity that are differently modeled and both need to be considered. Site-specific heterogeneity is generally modelled relatively efficiently using CAT-GTR while lineage specific heterogeneity cannot be modeled using the standard models you used in this paper, as you would need BreakpointCAT, NDCH or similar to model it. D6 Recoding reduces both forms of heterogeneity and, in combination with CAT-GTR generally, allows for an adequate modeling of site-specific heterogeneity and an improvement in the modeling of lineage specific heterogeneity (the latter not necessarily reaching adequacy \u2013 see Feuda et al., 2017). Hence it is key that you report statistics for all your datasets (Z-scores for both site and lineage-specific heterogeneity for all you're a and Dayhoff datasets). A table with the Diversity and Comp PPA (these can be derived using Phylobayes) will do and should be easily done as you should already have all the chains (as you already run other PPA). A table presenting all z cores for all your dataset would be key to interpret your results (Figure 1 to Figure 4D included) and decide which tree is less likely to be incorrect/more likely to be accurate.\n\n6) Results and Discussion section: This section reads like an ad hoc attempt to justify Ctenophora-sister, a result that is tangential to your paper (which is about Placozoa) and that is not supported by your analyses. Specifically:\n\n6A) Figure 3 presents the BUSCO trees under CAT-GTR+G (3A) is AA and (3B) is Dayhoff. Figure 3A (your worst overall dataset in terms of heterogeneity) clearly supports Ctenophora-Sister, while Figure 3B shows an unorthodox PORIFERA+CTENOPHORA (but with relatively low support ~ 75%). Neither of these two figures supports Porifera-sister. According to your arguments BUSCO is the worst dataset. When considered as an AA alignment, the BUSCO dataset maximizes its compositional heterogeneity and supports Cteno-sister. In the text you state that Figure 4A (the dataset of the heterogeneous genes in your dataset \u2013 that we will discuss further below) provides evidence that Pori-sister might be linked to heterogeneity. However, even if that was actually the case, then Figure 3A must be evidence that Cteno-sister is a compositional artefact (equally linked to heterogeneity). Yet this important fact is not even mentioned in the text. This is surprising and unfair given that you use the heterogeneity of the dataset used to derive Figure 4A to make an argument against Porifera-sister, the heterogeneity of Figure 3A to suggest Placozoa + Bilateria is likely to be an artefact, but you do not discuss the fact that also Cteno-sister emerges from the \"bad\" BUSCO dataset and should thus be considered to be dubious. The text needs to be modified to reflect this.\n\n6B) The experiment in Figure 4 is nicely designed, but some aspects of its implementation and the interpretation of its results are problematic. Specifically, we think that the analyses reported in Figure 4A and 4C are misleading for two reasons. First, the data matrix cannot be proved to be composed only by heterogeneous genes. This is because 111 of the 764 genes in the dataset used to derive this figure (~ 14% of the superalignment) are composed of genes that are not, strictly speaking (i.e., at the 0.05 cutoff level), heterogeneous. Second, even if this dataset was composed purely of heterogeneous genes it could not be used to claim, for example, that Porifera-sister is linked to heterogeneity. This is because on this dataset Dayhoff recoding did not change the position of the sponges. This indicates that the signal for this node in this dataset (irrespective of its heterogeneity) is not driven by the within-D6classes changes that are known to be associated with compositional heterogeneity. Irrespective of the heterogeneity of the dataset, the fact that Porifera sister is unchanged and does not loose support upon recoding indicates that it is supported by between D6-classes changes, which are not silenced by recoding, and are more likely to be associated phylogenetic signal. To conclude, you do not have evidence in Figure 4A and 4C to claim that the assertion of Feuda (that Cteno-sister is likely to be associated with compositional heterogeneity while Porifera-sister is not likely to be a compositional artifact) might be incorrect. The Dayhoff test rejects your conclusion. So, what to do with the analysis of Figure 4A and 4C? Our thought is that this dataset is confusing your experiments because it is composed of a mixture of more and less heterogeneous genes and it is best excluded. We suggest that you just report the results in Figure 4B and 4D which are actually very clear and say all that there is to say on Placo-Cni and Pori-sister vs. Cteno-sister.\n\n6C) The fact that the genes in your \"homogeneous dataset\" are individually homogeneous does not mean that your homogenous superalignment is in itself homogeneous. This needs to be tested (using PPA under CAT-GTR for both Dayhoff-6 and AA datasets). This is because heterogeneity in a multigene dataset adds up and it is customary that superalignments composed of individually homogeneous genes fail heterogeneity tests. My expectation is that the dataset in Figure 4B will be shown to be still heterogeneous and that of Figure 4D will be shown to be much more homogeneous (as it is always the case with D6-recoded datasets). Accordingly, the analyses of Figure 4BD indicate that there is evidence for Cteno-sister to be a compositional artefact (driven by within D6-classes changes only present in Figure 4B) while there is no evidence for Cnidaria+Placoza and Pori-sister to be compositional artifacts (as they are both present in Figure 4D where only between classes changes are evident). In addition, this analysis confirms the existence of two signals in the data with reference to Ctenophores (one linked to unreliable within D6 classes changes) and one linked to the more reliable between classes changes, while Placo-Cnidaria seem to be the only signal in the dataset and it is more strongly represented in more reliable between-classes changes.\n\n7) Results and Discussion section: Here you seem to assume that Dayhoff recoding always have to change the topology and that if the topology does not change the recoding, in some way, it failed. The application of D6 was \"not significant\" (in your words) for the dataset of Figure 4AC. The problem with your statement is that a tree does not need to be incorrect simply because the data are heterogeneous, hence D6 does not need to invariably cause topological changes. So, its application was not \"not significant\", but it did not drive to a topological change. As said above as well, D6 reduces the influence of compositional heterogeneity by silencing within category changes. The analysis in Figure 4AC indicates that Porifera-sister is driven by more reliable among category changes which are generally not compositionally driven. Otherwise it would have disappeared in the Dayhoff analysis. Note that we are not saying that Pori-sister is correct; rather, we are saying that Figure 4A C does not provide evidence that this clade is compositionally driven, hence you cannot conclude that Porifera-sister might be associated with compositional attractions. Note that, with reference to the Ctenophora debate, the application of recodings has invariably produced strongly directional changes Ctenophora->Porifera. This is a highly non-random directional change and at this time there is no known Dataset that while supporting Porifera-sister at the AA level (under CAT-GTR) was found to support Cteno-sister after recoding. This is true of all the datasets of Whelan when Choanoflagellata are the only outgroups used (pori-sister as AA and as Dayhoff), and for your dataset in Figure 4AC \u2013 for example. This can only be interpreted as suggesting that in all available datasets Porifera-sister is never driven by within category changes, accordingly, when it emerges at the root, is cannot be because of a compositional attraction \u2013 irrespective of the heterogeneity of the dataset itself. Differently, D6 experiments invariably indicate that when ctenophores emerges at the base, compositional heterogeneity can never (all datasets tested to date behave exactly in this same way -including yours) be ruled out \u2013 strongly suggesting Cteno-sister to be a compositional artifact.\n\n8) Title: Given how controversial the relationships at the base of the animal tree have been, perhaps a more moderate title would be more fitting (e.g., Phylogenomic support for a sister relationship of Placozoa and Cnidaria).\n\n9) The scripts used for data processing in genome assembly, phylogenomics matrix construction and analysis are not linked in the paper. Sharing these scripts on a publicly available repository like Github would enhance the reproducibility of the present study.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Support for a clade of Placozoa and Cnidaria in genes with minimal compositional bias\" for consideration by eLife and for your patience during the second round of reviewers. Your article has been re-reviewed and the evaluation has been overseen by a Reviewing Editor and Diethard Tautz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: David C Plachetzki (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript was markedly improved and the authors' efforts are greatly appreciated. However, the concern remains that something more than compositional bias lies behind Cnidaria+Placozoa and that this finding is unstable at best. Three critical pieces of information emerge from the revision and the authors\u2019 response: (1) Compositionally unbiased partitions that support Cnidaria+Placozoa are systematically shorter than partitions that do not support this clade. (2) A reanalysis of the Simeon et al., dataset, which is much larger, did not support Cnidaria+Placozoa following a similar phylogenetic approach used by Laumer et al. (3) In unpublished data, Cnidaria+Placozoa is only recovered in analyses that lack specific outgroups. Together, these findings suggest that something other than the removal of compositional bias, particular to the Laumer et al., dataset, is driving Cnidaria+Placozoa.\n\nEssential revisions:\n\n1) The authors allay some concerns over the description of the genome data and the point that the new genome assemblies produce BUSCO orthologue occupancies that are similar to other transcriptome assemblies is appreciated. One does wonder why short read genome assemblies, which produced highly fragmented assemblies, were utilized in the first place, instead of transcriptomes. If the purpose of doing so was to enhance placozoan genome resources, these resources are not described here in any detail because they are too fragmented. \"we opted not [sic] to omit a detailed characterisation of these genomes, partially out of spatial constraints (this article was submitted as a Short Report format), and partially since the genomes themselves are Illumina short-insert-only assemblies and therefore relatively fragmented\". Please provide this information.\n\n2) The manuscript now includes information of the percentage, means and standard deviations for partition lengths. This information is important for evaluating the possible causes of the phylogenetic discrepancies (e.g. Cnidaria+Placozoa vs. Cnidaria+Bilateria) observed in different datasets. We now see that dataset that supports Cnidaria+Placozoa are systematically composed of shorter partitions. Thus, compositional bias is not the only difference between the two datasets. No further explanation is given. Please report these data and explicitly discuss the finding that ompositional bias is not the only difference between the two datasets.\n\n3) The paragraph describing metaBAT and metawatt does not explicitly mention contamination, which would help the reader interpret the purpose of these steps. Please rectify this.\n\n4) We agree that Dayhoff-6 recoding is not a silver bullet for compositional bias and that previous analyses that have not filtered data for compositionally unbiased partitions are not direct comparisons. However, the re-analysis of the Simeon dataset that the authors conducted, where unbiased partitions were selected and analyzed in both amino acid and Dayhoff-6 recoded space, does represent a more or less direct comparison and these results strongly contradict the topology favored by Laumer et al. While there are expectedly differences in taxon sampling and data handling between the Simeon re-analysis and that presented by Laumer et al., but this is true of the vast majority of previous phylogenomic analyses at this scale which confidently resolve other nodes in the animal tree of life. The explanation for this in the author's response, \"this published dataset does not contain any signal for a Cnidaria-Placozoa relationship\" seems quite correct indeed, but phylogenomic datasets as large as Simeon (which is much larger than that presented by Laumer et al.) should possess such phylogenetic signal if it were robust. Therefore, this re-analysis of the Simeon dataset, which is not included in the revision, draws the central phylogenetic finding of Laumer et al., into question and strongly suggests that some other feature of the Laumer et al., dataset is contributing to Cnidaria+Placozoa. As stated above, the unbiased partitions are significantly shorter than the biased partitions. It is possible that this finding is somehow, perhaps indirectly, related to the central finding?\n\n5) Again, while Ctenophora-vs.-Porifera is tangential to the central claims of the paper, I did find it relevant that in the authors\u2019 response (unpublished data), Cnidaria+Placozoa was recovered in \"one\" analysis, but only when certain outgroups were removed, and the data were D6 recoded. This finding, like the Simeon reanalysis, speaks strongly to the lability of Cnidaria+Placozoa. Please comment on this issue.\n",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "02825268-75a5-4f2b-acfc-062709281aa1",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C1",
+      "claim": "Placozoans are microscopic animals adapted to extracellular grazing on biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "As microscopic animals adapted to extracellular grazing on the biofilms over which they creep (Wenderoth, 1986), placozoans have a simple anatomy suited to exploit passive diffusion for many physiological needs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wenderoth, 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "727ac151-3a9d-435c-bd1f-13beba30408e",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C2",
+      "claim": "Placozoans have only six morphological cell types discernible through intensive microscopical scrutiny.",
+      "claim_type": "EXPLICIT",
+      "source": "with only six morphological cell types discernible even to intensive microscopical scrutiny (Grell and Ruthmann, 1991; Smith et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Grell and Ruthmann, 1991 and Smith et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "f14759e1-f17b-44f9-aab4-c855be2f85a9",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C3",
+      "claim": "A greater diversity of cell types in placozoans is apparent through single-cell RNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "albeit a greater diversity of cell types is apparent through single-cell RNA-seq (Seb\u00e9-Pedr\u00f3s, 2018a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Seb\u00e9-Pedr\u00f3s, 2018a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "5c773f97-48de-4b8a-a05b-0c7ae4061d6a",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C4",
+      "claim": "Placozoans have no conventional muscular, digestive, or nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "They have no conventional muscular, digestive, or nervous systems",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about placozoan anatomy based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "e10a04b6-d54f-45e3-8069-76f905f03910",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C5",
+      "claim": "Placozoans show tightly-coordinated behaviour regulated by peptidergic signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "yet show tightly-coordinated behaviour regulated by peptidergic signaling (Smith et al., 2015; Senatore et al., 2017; Varoqueaux, 2018; Armon et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to Smith et al., 2015; Senatore et al., 2017; Varoqueaux, 2018; Armon et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "403d0b36-7c15-4086-8d08-1ebe00987f3f",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C6",
+      "claim": "In laboratory conditions, placozoans proliferate through fission and somatic growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In laboratory conditions, they proliferate through fission and somatic growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge of placozoan biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "272ea22c-a966-46d6-b30a-16cedccf5b27",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C7",
+      "claim": "Evidence for sexual reproduction in placozoans remains elusive despite genetic evidence of recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for sexual reproduction remains elusive, despite genetic evidence of recombination (Srivastava et al., 2008) and descriptions of early abortive embryogenesis (Eitel et al., 2011; Grell, 1972)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Srivastava et al., 2008; Eitel et al., 2011; Grell, 1972.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "0425b5e7-e2de-4c83-a2b0-8aa58a9b8bc5",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C8",
+      "claim": "Sexual phases of the placozoan life cycle may occur only under poorly understood field conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "with the possibility that sexual phases of the life cycle may occur only under poorly understood field conditions (Pearse and Voigt, 2007; McFall-Ngai et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pearse and Voigt, 2007; McFall-Ngai et al., 2013 and involves speculation about life cycle conditions.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "bb3cef47-efd9-4c83-b48f-f646f03cd147",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C9",
+      "claim": "The position of Placozoa in the animal tree proved recalcitrant to early standard-marker analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of Placozoa in the animal tree proved recalcitrant to early standard-marker analyses (Kim et al., 1999; Silva et al., 2007; Wallberg et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kim et al., 1999; Silva et al., 2007; Wallberg et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "112ddd7f-f43c-4c40-a63b-fd51c7360efa",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C10",
+      "claim": "Standard-marker analyses revealed a large degree of molecular diversity in placozoan isolates from around the globe, indicating the existence of many cryptic species.",
+      "claim_type": "EXPLICIT",
+      "source": "although this paradigm did reveal a large degree of molecular diversity in placozoan isolates from around the globe, clearly indicating the existence of many cryptic species (Pearse and Voigt, 2007; Eitel et al., 2013; Signorovitch et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Pearse and Voigt, 2007; Eitel et al., 2013; Signorovitch et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "c1efe677-36cf-4d40-9a89-773c8f76199c",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C11",
+      "claim": "Placozoan isolates show up to 27% genetic distance in 16S rRNA alignments.",
+      "claim_type": "EXPLICIT",
+      "source": "with up to 27% genetic distance in 16S rRNA alignments (Eitel and Schierwater, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Eitel and Schierwater, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "36ba1195-5c9e-45d3-9c42-bf4120ab353c",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C12",
+      "claim": "Analysis of a nuclear genome assembly strongly supported a position of Placozoa as the sister group of a clade of Cnidaria + Bilateria.",
+      "claim_type": "EXPLICIT",
+      "source": "An apparent answer to the question of placozoan affinities was provided by analysis of a nuclear genome assembly (Srivastava et al., 2008), which strongly supported a position as the sister group of a clade of Cnidaria + Bilateria (sometimes called Planulozoa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Srivastava et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "254b56ad-a71c-4fcb-a188-1c89fef41512",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C13",
+      "claim": "Placozoans have a surprisingly bilaterian-like developmental gene toolkit.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this effort also revealed a surprisingly bilaterian-like (Dunn et al., 2015) developmental gene toolkit in placozoans, a paradox for such a simple animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dunn et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "81bc4bdc-4a32-4901-af8f-2c381bb019dd",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C14",
+      "claim": "The largest controversy in metazoan phylogenetics has been the debate over the identity of the sister group to the remaining metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "As metazoan phylogenetics has pressed onward into the genomic era, perhaps the largest controversy has been the debate over the identity of the sister group to the remaining metazoans, traditionally thought to be Porifera, but considered to be Ctenophora by Dunn et al (Dunn et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dunn et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "b50b0d10-7c98-4b33-ab1c-1371e85867f6",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C15",
+      "claim": "Additional studies have supported Ctenophora as the sister group to remaining metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "and subsequently by additional studies (Hejnol et al., 2009; Moroz et al., 2014; NISC Comparative Sequencing Program et al., 2013; Whelan et al., 2015; Whelan et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "fad3079e-383d-444e-b653-ccc6506e757b",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C16",
+      "claim": "Some researchers have suggested that the Ctenophora-sister result arises from artifacts such as inadequate taxon sampling, flawed matrix husbandry, and use of poorly fitting substitution models.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have suggested that this result arises from artifacts with potentially additive effects, such as inadequate taxon sampling, flawed matrix husbandry (undetected paralogy or contamination), and use of poorly fitting substitution models (Philippe et al., 2009; Pick et al., 2010; Pisani et al., 2015; Simion et al., 2017; Feuda et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Philippe et al., 2009; Pick et al., 2010; Pisani et al., 2015; Simion et al., 2017; Feuda et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "c2afb770-4cbe-4912-b4d7-7d4330f1433b",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C17",
+      "claim": "Using different sets of genes can lead to different phylogenetic conclusions, with only a small number sometimes sufficient to drive one result or another.",
+      "claim_type": "EXPLICIT",
+      "source": "A third view has emphasized that using different sets of genes can lead to different conclusions, with only a small number sometimes sufficient to drive one result or another (Nosenko et al., 2013; Shen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Nosenko et al., 2013; Shen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "5dfb3d93-8a61-4f25-9c74-c9010cde228c",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C18",
+      "claim": "The phylogenetic controversy has spurred contemplation of possibly independent origins of several hallmark traits such as striated muscles, digestive systems, and nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This controversy, regardless of its eventual resolution, has spurred serious contemplation of possibly independent origins of several hallmark traits such as striated muscles, digestive systems, and nervous systems (Moroz et al., 2014; Dayraud et al., 2012; Hejnol and Mart\u00edn-Dur\u00e1n, 2015; Liebeskind et al., 2017; Moroz and Kohn, 2016; Presnell et al., 2016; Steinmetz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "0349df74-231a-4040-a2a3-dc746b3f93c9",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C19",
+      "claim": "New sequences and analyses focusing on the position of Placozoa have been slow to emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "Driven by this controversy, new genomic and transcriptomic data from sponges, ctenophores, and metazoan outgroups have accrued, while new sequences and analyses focusing on the position of Placozoa have been slow to emerge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field based on the authors' assessment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "94e53ed0-485c-449c-a3d0-db51643f7236",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C20",
+      "claim": "The study provides draft genomes from three putative placozoan species that span the root of this clade's known diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide a novel test of the phylogenetic position of placozoans, adding draft genomes from three putative species that span the root of this clade's known diversity (Eitel et al., 2013) (Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Table 1 and a citation to Eitel et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "106a95d2-cb4d-49af-b67e-decd5881ef5e",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C21",
+      "claim": "Orthology assignment yielded 4294 gene trees with at least 20 sequences each, sampling all five major metazoan clades and outgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "Orthology assignment on sets of predicted proteomes derived from 59 genome and transcriptome assemblies yielded 4294 gene trees with at least 20 sequences each, sampling all five major metazoan clades and outgroups",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results from the orthology assignment procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "c5ea0d31-11d0-4b05-a42a-e84fe5352ed2",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C22",
+      "claim": "From the 4294 gene trees, 1388 well-aligned orthologues were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "from which we obtained 1388 well-aligned orthologues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results from the alignment procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "f1dce099-f5fb-467d-979d-b878e823f84b",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C23",
+      "claim": "A set of 430 most-informative orthologues were selected on the basis of tree-likeness scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this set, individual maximum-likelihood (ML) gene trees were constructed, and a set of 430 most-informative orthologues were selected on the basis of tree-likeness scores (Misof et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the selection procedure with a citation to Misof et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "fcb649a5-6250-47a8-bb1c-b41e43a5d11e",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C24",
+      "claim": "The 430-gene matrix yielded an amino-acid matrix of 73,547 residues with 37.55% gaps or missing data.",
+      "claim_type": "EXPLICIT",
+      "source": "This yielded an amino-acid matrix of 73,547 residues with 37.55% gaps or missing data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the matrix characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "96aef80b-da2b-4827-a100-8f3eb40e7ff2",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C25",
+      "claim": "Bayesian analyses of the 430-gene matrix place Cnidaria and Placozoa as sister groups with full posterior probability under the CAT + GTR + \u04134 model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our Bayesian analyses of this matrix place Cnidaria and Placozoa as sister groups with full posterior probability under the general site-heterogeneous CAT + GTR + \u04134 model (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1 and describes the results of Bayesian analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "8e790a89-bfc3-4183-a4d6-27ec4fe81313",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C26",
+      "claim": "Under ML inference with the C60 +LG + FO + R4 profile mixture model, Cnidaria + Placozoa is recovered, albeit with more marginal resampling support.",
+      "claim_type": "EXPLICIT",
+      "source": "Under ML inference with the C60 +LG + FO + R4 profile mixture model (Wang et al., 2018) (Figure 1\u2014figure supplement 1), we again recover Cnidaria + Placozoa, albeit with more marginal resampling support.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1\u2014figure supplement 1 and a citation to Wang et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "91c7c418-e0ef-445c-a7cf-a545bdc37a8a",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C27",
+      "claim": "Both Bayesian and ML analyses show little internal branch diversity within Placozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Bayesian and ML analyses show little internal branch diversity within Placozoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results from both types of analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "2e6e79b9-ff64-4519-8591-caf0769484b1",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C28",
+      "claim": "Deleting all newly-added placozoan genomes from the analysis has no effect on topology and only a marginal effect on support in ML analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, deleting all newly-added placozoan genomes from our analysis has no effect on topology and only a marginal effect on support in ML analysis (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1\u2014figure supplement 2 and describes the results of a sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "c1d5a718-047f-4d2c-a77b-a556778806dd",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C29",
+      "claim": "Quartet-based concordance analyses show no evidence of strong phylogenetic conflicts among ML gene trees in the 430-gene set.",
+      "claim_type": "EXPLICIT",
+      "source": "Quartet-based concordance analyses (Zhou, 2017) show no evidence of strong phylogenetic conflicts among ML gene trees in this 430-gene set (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1 and a citation to Zhou, 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "9790a7a1-45d7-48ce-805e-93656b6d453a",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C30",
+      "claim": "Internode certainty metrics are close to 0 for many key clades including Cnidaria + Placozoa, indicating that support for some ancient relationships may be masked by gene-tree estimation errors.",
+      "claim_type": "EXPLICIT",
+      "source": "although internode certainty metrics are close to 0 for many key clades including Cnidaria + Placozoa, indicating that support for some ancient relationships may be masked by gene-tree estimation errors, emerging only in combined analysis (Gatesy and Baker, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gatesy and Baker, 2005 and describes the interpretation of internode certainty metrics.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "ad1b2a70-8683-48a8-8bd8-91f5dfa8cd6f",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C31",
+      "claim": "Compositional heterogeneity of amino-acid frequencies along the tree is a source of phylogenetic error not modelled by even complex site-heterogeneous substitution models such as CAT+GTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Compositional heterogeneity of amino-acid frequencies along the tree is a source of phylogenetic error not modelled by even complex site-heterogeneous substitution models such as CAT+GTR (Blanquart and Lartillot, 2008; Foster, 2004; Lartillot and Philippe, 2004; Lartillot et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "fb891d75-3cf4-431c-b673-075bcbc56e7d",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C32",
+      "claim": "Previous analyses have shown that placozoans and choanoflagellates deviate strongly from the mean amino-acid composition of Metazoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, previous analyses (Nosenko et al., 2013) have shown that placozoans and choanoflagellates in particular, both of which taxa our matrix samples intensively, deviate strongly from the mean amino-acid composition of Metazoa",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nosenko et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "41b23c1d-959a-4bae-b25f-6731acd04ace",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C33",
+      "claim": "Deviation from mean amino-acid composition may be a result of genomic GC content discrepancies.",
+      "claim_type": "EXPLICIT",
+      "source": "perhaps as a result of genomic GC content discrepancies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the cause of compositional deviation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "8c94e8d4-b23a-48e4-9db2-7e476f34bb18",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C34",
+      "claim": "Analysis of the Dayhoff-6 recoded matrix under the CAT + GTR model recovered full support for Cnidaria + Placozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of this recoded matrix under the CAT + GTR model again recovered full support (pp = 1) for Cnidaria + Placozoa (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 2 and describes the results of analysis on the recoded matrix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "f5a2c8ed-859f-4473-91aa-ce0c021d039e",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C35",
+      "claim": "Under Dayhoff-6 recoding, the only major change is in the relative positions of Ctenophora and Porifera, with Porifera constituting the sister group to all other animals with full support.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, under Dayhoff-6 recoding, the only major change is in the relative positions of Ctenophora and Porifera, with the latter here constituting the sister group to all other animals with full support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results from the Dayhoff-6 recoded analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "44dc83d5-b84a-4aca-afd3-2b45a0c982fe",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C36",
+      "claim": "Similar recoding-driven effects on relative positions of Porifera and Ctenophora have been seen in other recent work.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar recoding-driven effects on relative positions of Porifera and Ctenophora have also been seen in other recent work (Feuda et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Feuda et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "8d3bd2e8-c3fd-4485-9db1-59830a0236c8",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C37",
+      "claim": "Recoding-driven effects have been interpreted to indicate a role for compositional bias in misplacing Ctenophora as sister group to all other animals.",
+      "claim_type": "EXPLICIT",
+      "source": "and have been interpreted to indicate a role for compositional bias in misplacing Ctenophora as sister group to all other animals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the interpretation of recoding effects in the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "7bb83471-3dfd-446f-af40-9ef392cb756c",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C38",
+      "claim": "Many research groups have consistently reported strong support for Planulozoa under the CAT + GTR model using good taxon sampling and genome-scale datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Many research groups, using good taxon sampling and genome-scale datasets, and even recently including data from a new divergent placozoan species (Whelan et al., 2017; Feuda et al., 2017; Eitel, 2017), have consistently reported strong support for Planulozoa under the CAT + GTR model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Whelan et al., 2017; Feuda et al., 2017; Eitel, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "79ad9127-db29-4622-bc19-fb65edbfcd4d",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C39",
+      "claim": "A supermatrix constructed using complete sequences of 303 pan-eukaryote BUSCOs shows full support for Planulozoa in both amino-acid and Dayhoff-6 recoded alphabets.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we construct a supermatrix from our predicted peptide catalogues using a different strategy, relying on complete sequences of 303 pan-eukaryote 'Benchmarking Universal Single-Copy Orthologs' (BUSCOs) (Sim\u00e3o et al., 2015), we also see full support in a CAT + GTR + \u0413 analysis for Planulozoa, in both amino-acid (Figure 3a) and Dayhoff-6 recoded alphabets (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by references to Figure 3a and 3b and a citation to Sim\u00e3o et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "95003449-e56c-436c-a8bc-29c7698ecd32",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C40",
+      "claim": "Both the initial 430-gene matrix and the 303-gene BUSCO matrix fail posterior predictive tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the initial 430-gene matrix and the 303-gene BUSCO matrix fail these tests",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results from posterior predictive tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "d54e3be9-895b-4a83-b831-a29018583aa6",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C41",
+      "claim": "The BUSCO matrix fails posterior predictive tests more profoundly than the 430-gene matrix, with z-scores in the range of 330\u2013340 versus 176\u2013187.",
+      "claim_type": "EXPLICIT",
+      "source": "but the BUSCO matrix fails it more profoundly, with z-scores (measuring mean-squared across-taxon heterogeneity) scoring in the range of 330\u2013340, in contrast to the range of 176\u2013187 seen in the 430-gene matrix (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Table 2 and describes the results of posterior predictive tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "232652bc-1af3-4e23-9179-999397a914ae",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C42",
+      "claim": "A large amount of the global difference in z-scores between matrices can be attributed to placozoans, with additional contributions from choanoflagellates and select isolated representatives of other clades.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inspecting z-scores for individual taxa in representative chains from both matrices shows that a large amount of this global difference in z-scores can be attributed to placozoans, with additional contributions from choanoflagellates and select isolated representatives of other clades (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 3C and describes the results of inspecting individual taxon z-scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "6c21e682-0e8b-4452-8b9c-21bdf9937ae4",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C43",
+      "claim": "At a conservative significance threshold of \u03b1 = 0.10, the majority (764 genes or ~55%) of the 1388 gene set is identified as compositionally biased by a null-simulation test.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, at a conservative significance threshold of \u03b1 = 0.10, the majority (764 genes or ~55%) of this gene set is identified as compositionally biased by this test",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results from the null-simulation test for compositional bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "ae822e79-2dbe-4b94-840f-8121664961e9",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C44",
+      "claim": "The null-simulation test for compositional bias is less prone to Type II errors than the more conventional X test.",
+      "claim_type": "EXPLICIT",
+      "source": "This test, which compares the real data to a null distribution of amino-acid frequencies simulated along assumed gene trees with a substitution model using a single composition vector, is less prone to Type II errors than the more conventional X (Grell and Benwitz, 1971) test (Foster, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Foster, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "cd1ee588-ee02-4b12-8bd4-a08eb3915ab1",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C45",
+      "claim": "Analysis of the test-passing supermatrix shows strong support for Cnidaria + Placozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Building informative matrices from gene sets on either side of this significance threshold, and again applying both CAT + GTR mixture models and ML profile mixtures, we see strong support for Cnidaria + Placozoa in the test-passing supermatrix",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results from analysis of the test-passing supermatrix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "06d18e89-d644-4c69-8db7-bd58be18ea9b",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C46",
+      "claim": "Analysis of the test-failing supermatrix shows strong support for Cnidaria + Bilateria.",
+      "claim_type": "EXPLICIT",
+      "source": "and conversely, strong support for Cnidaria + Bilateria in the test-failing supermatrix (Figure 4, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by references to Figure 4 and its supplements and describes the results from analysis of the test-failing supermatrix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "01ac0e0b-a5f0-4865-8239-e628efb1024e",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C47",
+      "claim": "In trees built through CAT + GTR + \u04134 analysis of the test-failing supermatrix, full support is observed for Porifera as sister to all other animals in both amino-acid and Dayhoff-6 alphabets.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in trees built through CAT + GTR + \u04134 analysis of the test-failing supermatrix (Figure 4A,C), in both amino-acid and Dayhoff-6 alphabets, we also observe full support for Porifera as sister to all other animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by references to Figure 4A and 4C and describes the results from CAT + GTR + \u04134 analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "3c6c164f-d758-40e9-9304-5c1728a27442",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C48",
+      "claim": "Analysis of the test-failing amino acid matrix under a profile mixture model recovers support for Ctenophora as sister to all other animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, analysis of this amino acid matrix under a profile mixture model recovers support for Ctenophora in this position (Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 4\u2014figure supplement 1 and describes the results from profile mixture model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "69c804d0-2911-4a3c-85a8-a241c2a094e6",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C49",
+      "claim": "For the test-failing alignment, compositional heterogeneity need not be invoked to explain why outcomes differ among analyses, as both CAT + GTR and the C60 +LG + FO + R4 profile mixture model assume a single composition vector over time.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that, at least for this alignment, compositional heterogeneity need not be invoked to explain why outcomes differ among analyses, as some have argued (Feuda et al., 2017): both CAT + GTR and the C60 +LG + FO + R4 profile mixture model assume a single composition vector over time, but the CAT + GTR model is better able to accommodate site-heterogeneous substitution patterns (Lartillot et al., 2013; Quang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Feuda et al., 2017; Lartillot et al., 2013; Quang et al., 2008 and involves inference about model assumptions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "79c4f969-2389-40dc-bab0-00c791e6f7cf",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C50",
+      "claim": "Dayhoff-6 recoding appears impactful only for the test-passing supermatrix, where it obviates support for Ctenophora-sister in favour of Porifera-sister.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of this experiment, Dayhoff-6 recoding appears impactful only for the test-passing supermatrix (Figure 4B,D), where it obviates support for Ctenophora-sister (Figure 4B, Figure 4\u2014figure supplement 2) in favour of (albeit, with marginal support) Porifera-sister (Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by references to Figure 4B, 4D, and Figure 4\u2014figure supplement 2 and describes the results from Dayhoff-6 recoding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "13964fe5-ea48-45b3-b672-dca8cca7ee3c",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C51",
+      "claim": "Dayhoff-6 recoding diminishes support for Placozoa + Cnidaria in the test-passing supermatrix, perhaps reflecting the inherent information loss of using a reduced amino-acid alphabet.",
+      "claim_type": "EXPLICIT",
+      "source": "and also diminishes support for Placozoa + Cnidaria (in contrast to the 430-gene matrix; Figure 2), perhaps reflecting the inherent information loss of using a reduced amino-acid alphabet for this relatively shorter matrix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 2 and involves speculation about the cause of diminished support.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "095aadbc-2985-4407-a82e-1e7b9719436a",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C52",
+      "claim": "A possible hidden variable related to phylogenetic discordance is mean trimmed alignment length, with both the test-passing and the original 430-gene matrix composed of considerably shorter alignments than the test-failing and the 303-gene BUSCO matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible hidden variable related to the phylogenetic discordance we describe, the precise significance of which remains unclear, is mean trimmed alignment length: both the test-passing and the original 430-gene matrix are composed of considerably shorter alignments than the test-failing and the 303-gene BUSCO matrix (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a potential confounding variable based on the authors' observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "47bde821-2e2c-4ee7-8526-090ee0c35099",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C53",
+      "claim": "Alignment length has been previously shown to be predictive of a number of other metrics of phylogenetic relevance.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, alignment length has been previously shown to be predictive of a number of other metrics of phylogenetic relevance (Shen et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Shen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "b4eb8cbb-0c64-4b49-9c0c-e5a0a60ff59c",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C54",
+      "claim": "The phylogenetic link between cnidarians and placozoans seen in gene sets less influenced by compositional bias will require further testing with other analyses and data modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "The previously cryptic phylogenetic link between cnidarians and placozoans seen in gene sets less influenced by compositional bias will require further testing with other analyses and data modalities, such as rare genomic changes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for further validation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "e8eae5da-549d-43ec-938c-d56ab2ba8720",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C55",
+      "claim": "Many workers presume that placozoans must have a still-unobserved, more typical development and life cycle, or else are merely oddities that have experienced wholesale secondary simplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Many workers, citing the incompletely known development (Eitel et al., 2011; Pearse and Voigt, 2007) and relatively bilaterian-like gene content of placozoans (Srivastava et al., 2008; Eitel, 2017), presume that these organisms must have a still-unobserved, more typical development and life cycle (DuBuc et al., 2018), or else are merely oddities that have experienced wholesale secondary simplification, having scant significance to any evolutionary path outside their own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies and describes a common view in the field.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "04dca24a-7653-460c-8f46-9dccc33bcaa9",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C56",
+      "claim": "Much work on cnidarian models in the evo-devo paradigm is predicated on the notion that cnidarians and bilaterians share many homologous morphological features.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is tempting to interpret this new phylogenetic position as further bolstering such hypotheses, as much work on cnidarian models in the evo-devo paradigm is predicated on the notion that cnidarians and bilaterians share, more or less, many homologous morphological features, viz. axial organization (Genikhovich and Technau, 2017; DuBuc et al., 2018), nervous systems (Liebeskind et al., 2017; Moroz and Kohn, 2016; Kelava et al., 2015; Kristan, 2016; Arendt et al., 2016), basement-membrane lined epithelia (Fidler et al., 2017; Leys and Riesgo, 2012), musculature (Steinmetz et al., 2012), embryonic germ-layer organisation (Steinmetz et al., 2017), and internal digestion (Presnell et al., 2016; Putnam et al., 2007; Hejnol and Martindale, 2008; Martindale and Hejnol, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "0b022908-3071-4ac8-ba2f-a43745a44cad",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C57",
+      "claim": "The authors hesitate to dismiss placozoans a priori as irrelevant to understanding early bilaterian evolution, as they have equal status to cnidarians as an immediate extant outgroup.",
+      "claim_type": "EXPLICIT",
+      "source": "While we do not argue, as some have done (Schierwater, 2005; Syed and Schierwater, 2002), that placozoans resemble hypothetical metazoan ancestors, we hesitate to dismiss them a priori as irrelevant to understanding early bilaterian evolution in particular: although apparently simpler and less diverse, placozoans nonetheless have equal status to cnidarians as an immediate extant outgroup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the authors' perspective on the significance of placozoans, with citations to Schierwater, 2005; Syed and Schierwater, 2002.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "655dc832-f8ec-4cda-b164-f0b65a4d526d",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C58",
+      "claim": "The authors see value in testing assumed hypotheses of homology by extending pairwise comparisons between bilaterians and cnidarians to include placozoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, we see value in testing assumed hypotheses of homology, character by character, by extending pairwise comparisons between bilaterians and cnidarians to include placozoans",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the authors' perspective on future research directions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "083676cf-48da-4391-b358-4644f0ac4941",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C59",
+      "claim": "Recent progress has been made in reducing the disparity in knowledge between placozoans and other taxa using methods such as in situ hybridization, image analysis, and single-cell RNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "an agenda which demands reducing the large disparity in embryological, physiological, and molecular genetic knowledge between these taxa, towards which recent progress has been made using both established methods such as in situ hybridization (DuBuc et al., 2018) and image analysis (Varoqueaux, 2018), as well as new technologies such as single-cell RNA-seq (Seb\u00e9-Pedr\u00f3s, 2018a; Seb\u00e9-Pedr\u00f3s et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to DuBuc et al., 2018; Varoqueaux, 2018; Seb\u00e9-Pedr\u00f3s, 2018a; Seb\u00e9-Pedr\u00f3s et al., 2018b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "e57b6883-5edf-49f7-8d73-e6a05fee4fe7",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C60",
+      "claim": "Characters that can be validated as homologous between Bilateria and Cnidaria must have originated earlier in animal evolution than previously appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we emphasize another implication of this phylogeny: characters that can be validated as homologous at any level between Bilateria and Cnidaria must have originated earlier in animal evolution than previously appreciated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phylogenetic position of placozoans.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "11a7e991-8997-4580-915b-8c6158735478",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C61",
+      "claim": "Homologous characters between Bilateria and Cnidaria should either cryptically occur in modern placozoans or else have been lost at some point in their ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "and should either cryptically occur in modern placozoans or else have been lost at some point in their ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the phylogenetic position of placozoans.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "58b38acd-bed7-4898-90fb-695787144ca2",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C62",
+      "claim": "Paleobiological scenarios of early animal evolution founded on phylogenetically-informed interpretations of Ediacaran fossil forms and molecular clock estimates may require re-examination.",
+      "claim_type": "EXPLICIT",
+      "source": "In this light, paleobiological scenarios of early animal evolution founded on inherently phylogenetically-informed interpretations of Ediacaran fossil forms (Cavalier-Smith, 2018; Cavalier-Smith, 2017; Dufour and McIlroy, 2018; Sperling and Vinther, 2010; Evans et al., 2017) and molecular clock estimates (Cunningham et al., 2017; dos Reis et al., 2015; Dohrmann and W\u00f6rheide, 2017; Erwin et al., 2011) may require re-examination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies and involves inference about the implications of the phylogenetic findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "32777c4d-f362-44ef-9db3-271b42a1772a",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C63",
+      "claim": "Haplotype H4 and H6 placozoans were collected from water tables at the Kewalo Marine Laboratory, University of Hawaii-Manoa, Honolulu, Hawaii in October 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "Haplotype H4 and H6 placozoans were collected from water tables at the Kewalo Marine Laboratory, University of Hawaii-Manoa, Honolulu, Hawaii in October 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sampling location and date.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "35c83234-eec6-438a-828b-b0641b9c1f30",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C64",
+      "claim": "Haplotype H11 placozoans were collected from the Mediterranean 'Anthias' show tank in the Palma de Mallorca Aquarium, Mallorca, Spain in June 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "Haplotype H11 placozoans were collected from the Mediterranean 'Anthias' show tank in the Palma de Mallorca Aquarium, Mallorca, Spain in June 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the sampling location and date.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "1dddea43-8510-47e2-9ab6-0683870d1dd7",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C65",
+      "claim": "The stringent metagenomics binning procedure and the very low proportion of multiple orthologue hits in the BUSCO2 assessment attest to the lack of evidence for residual non-placozoan contamination within the scaffolds used for gene prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the stringent metagenomics binning procedure (a procedure also expedient in other holobiont organisms (Celis et al., 2018)) and the very low proportion of multiple orthologue hits in the BUSCO2 assessment (Table 1) attest to the lack of evidence for residual non-placozoan contamination within the scaffolds used for gene prediction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Table 1 and a citation to Celis et al., 2018, and describes quality control measures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "a4662d4a-43d5-41dc-a259-213214c75e78",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C70",
+      "claim": "Support for the Cnidaria + Bilateria clade can be assigned to compositional heterogeneity as a source of systematic error.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that a majority of genes show evidence of compositional heterogeneity, and that support for the Cnidaria + Bilateria clade can be assigned to this source of systematic error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the study's findings regarding systematic error.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "d2158478-f3ae-4d7e-8072-89cb6c711ae5",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "claim_id": "C71",
+      "claim": "It is possible to obtain strong support for either a sister-group relationship between Cnidaria and Placozoa, or for Cnidaria and Bilateria, depending on the orthologues selected to construct the matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Using site-heterogeneous substitution models, we show that it is possible to obtain strong support, in both amino acid and reduced-alphabet matrices, for either a sister-group relationship between Cnidaria and Placozoa, or for Cnidaria and Bilateria as seen in most published work to date, depending on the orthologues selected to construct the matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the study's main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e6502da6-b060-466e-b91b-5d763bcdc0ac",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study generated draft genomes from three placozoan haplotypes (H4, H6, H11) collected from Hawaii and Spain. Quality control measures including metagenomics binning and BUSCO assessment indicate minimal contamination in the assembled scaffolds used for gene prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C63-C65 describe the sampling, assembly, and quality control of new placozoan genomes. The methods are clearly documented with specific locations and dates (C63-C64), and quality metrics in Table 1 support the lack of contamination (C65). These are standard genomic methods appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "041b144e-fc82-4fbb-be0b-f4eb677c6caa",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Orthology assignment from 59 proteomes yielded 4294 gene trees, from which 1388 well-aligned orthologues were obtained. A subset of 430 most-informative orthologues was selected based on tree-likeness scores, yielding a 73,547 amino acid matrix with 37.55% gaps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 describe the computational pipeline for orthologue identification and matrix construction. The methods are standard in phylogenomics, with appropriate filtering steps and clear reporting of matrix characteristics. The tree-likeness scoring approach (C23) is properly cited to Misof et al., 2013.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "e2e7d02e-7eeb-4ab3-96ce-c3f793585c59",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis of the 430-gene matrix places Cnidaria and Placozoa as sister groups with full posterior probability under CAT+GTR+\u03934 (Bayesian) and with marginal support under C60+LG+FO+R4 (ML). This topology is robust to removal of newly-added placozoan genomes and shows little internal branch diversity within Placozoa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 present the primary phylogenetic result with appropriate statistical support values and sensitivity analyses. The use of site-heterogeneous models (CAT+GTR) is appropriate for deep phylogenetic questions. The robustness test (C28) strengthens confidence that the result is not driven solely by the new data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "c644a02e-c67b-4321-bf4b-b44ff6e86b42",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Quartet-based concordance analyses show no strong phylogenetic conflicts among gene trees, but internode certainty metrics near 0 for key clades including Cnidaria+Placozoa suggest that support for ancient relationships may be masked by gene-tree estimation errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 appropriately apply concordance metrics to assess gene tree conflict. The low internode certainty values (C30) indicate genuine uncertainty in the phylogenetic signal, which the authors correctly interpret as potentially reflecting gene-tree estimation error rather than true biological conflict. This nuanced interpretation is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "b9f6ee14-0775-4329-8f1d-b5bf717e00db",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Compositional heterogeneity of amino-acid frequencies is a known source of phylogenetic error not modeled by CAT+GTR. Previous work shows placozoans and choanoflagellates deviate strongly from mean metazoan amino-acid composition, possibly due to GC content differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 correctly cite established knowledge about compositional bias as a systematic error source. The citations to multiple studies (C31) support this general principle, and the specific observation about placozoans/choanoflagellates (C32) is properly attributed to Nosenko et al., 2013. The speculation about GC content (C33) is appropriately tentative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "a085a182-4c33-48ff-8174-c0150ba3a630",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dayhoff-6 recoding of the 430-gene matrix recovers full support for Cnidaria+Placozoa under CAT+GTR, with the only major topological change being Porifera (rather than Ctenophora) as sister to all other animals. Similar recoding effects have been observed in other studies and interpreted as evidence for compositional bias affecting Ctenophora placement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 describe the effect of alphabet recoding on phylogenetic inference. The Dayhoff-6 recoding is a standard approach to mitigate compositional bias. The consistency with other studies (C36-C37) provides external validation. However, the interpretation that recoding necessarily corrects bias (rather than introducing different biases) remains debated in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "439cfa78-fc33-437c-b52a-cd26ea27e25f",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multiple research groups have consistently reported strong support for Planulozoa (Cnidaria+Bilateria) under CAT+GTR. A 303-gene BUSCO matrix constructed in this study also shows full support for Planulozoa in both amino-acid and Dayhoff-6 recoded analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 accurately summarize prior literature and present new analyses that replicate the Planulozoa result. The BUSCO-based matrix (C39) provides an independent test using a different gene selection strategy, and the consistency with published work (C38) is well-documented with appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "365e9b25-f11f-41db-9377-d2cf5e438b3c",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both the 430-gene and 303-gene BUSCO matrices fail posterior predictive tests for compositional homogeneity, with the BUSCO matrix failing more severely (z-scores 330-340 vs 176-187). The difference in z-scores is largely attributable to placozoans, with additional contributions from choanoflagellates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 present posterior predictive test results with specific quantitative values from Table 2 and Figure 3C. The tests appropriately assess model adequacy, and the identification of specific taxa driving compositional heterogeneity (C42) provides mechanistic insight. The more severe failure of the BUSCO matrix is notable and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "3fde0a7a-b3cc-481b-97d8-324b37711973",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A null-simulation test identifies 55% (764/1388) of genes as compositionally biased at \u03b1=0.10. This test is less prone to Type II errors than the conventional \u03c7\u00b2 test.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 describe a rigorous test for compositional bias applied to individual genes. The high proportion of biased genes (55%) is striking and well-quantified. The citation to Foster, 2004 (C44) appropriately supports the methodological choice. The conservative \u03b1 threshold strengthens confidence in the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "066fa117-9632-4ffb-b2c5-65cc848e8fc0",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Genes passing the compositional bias test show strong support for Cnidaria+Placozoa, while genes failing the test show strong support for Cnidaria+Bilateria (Planulozoa).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 present the key experimental result demonstrating that phylogenetic signal depends on compositional bias. This is a direct test of the hypothesis that compositional heterogeneity drives support for Planulozoa. The opposing results from test-passing vs test-failing genes provide compelling evidence for systematic error. Figure 4 supports these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "66e4a3f7-997e-4d69-9338-2d878b57eec1",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In the test-failing matrix, CAT+GTR analysis supports Porifera-sister in both amino-acid and Dayhoff-6 alphabets, while profile mixture models support Ctenophora-sister. The difference between models need not reflect compositional heterogeneity, as both assume a single composition vector, but CAT+GTR better accommodates site-heterogeneous substitution patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 provide important insight into model differences. The observation that CAT+GTR and profile mixture models give different results even when both assume compositional homogeneity (C49) is well-reasoned and properly cited. This distinguishes compositional bias from other forms of model inadequacy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "fabe6e1f-0c52-459b-9875-bafbcc3924ab",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Dayhoff-6 recoding impacts only the test-passing matrix, where it shifts support from Ctenophora-sister to Porifera-sister and diminishes support for Placozoa+Cnidaria, possibly reflecting information loss from alphabet reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 describe differential effects of recoding on the two gene sets. The observation that recoding affects test-passing but not test-failing genes is interesting and well-documented in Figure 4. The speculation about information loss (C51) is appropriately tentative and acknowledges the shorter matrix length as a potential confounding factor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "9acd5aa2-973f-4394-b779-ec2a0c5fa625",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mean trimmed alignment length may be a hidden variable related to phylogenetic discordance, with test-passing and 430-gene matrices having shorter alignments than test-failing and BUSCO matrices. Alignment length has been shown to predict other phylogenetically relevant metrics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C53 identify a potential confounding variable but acknowledge uncertainty about its significance. While the correlation between alignment length and compositional bias test results is noted, no analysis is presented to determine whether length independently affects phylogenetic inference or is merely correlated with compositional properties. This requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "915d1164-d374-4d37-b9f8-2db36e9192e4",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The phylogenetic link between cnidarians and placozoans seen in compositionally unbiased gene sets requires further testing with other analyses and data modalities such as rare genomic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 appropriately acknowledges that the Cnidaria+Placozoa result, while supported by the compositionally unbiased gene set, requires independent validation. This is a reasonable and scientifically conservative statement. The suggestion of rare genomic changes as an alternative data type is appropriate for testing deep phylogenetic relationships.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "950c1f39-3956-4499-813d-9c6f4e20f374",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Support for Cnidaria+Bilateria can be assigned to compositional heterogeneity as a systematic error source. Depending on orthologue selection, strong support can be obtained for either Cnidaria+Placozoa or Cnidaria+Bilateria using site-heterogeneous models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 summarize the main findings of the study. The demonstration that gene selection based on compositional bias testing yields opposing phylogenetic results (C71) provides strong evidence that compositional heterogeneity is a systematic error source (C70). This is the central contribution of the paper and is well-supported by the analyses in C43-C46.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "39d075b0-1d32-484b-8b02-b285ca6653bb",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors argue that placozoans should not be dismissed as irrelevant to understanding early bilaterian evolution despite their simplicity. They advocate for testing homology hypotheses by including placozoans in comparisons with cnidarians and bilaterians, noting recent methodological progress in placozoan research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 present the authors' perspective on the evolutionary significance of placozoans. This is appropriately framed as interpretation rather than established fact. The citations to recent methodological advances (C59) support the feasibility of the proposed research agenda. The argument for equal consideration of placozoans as an outgroup (C57) is logically sound given the phylogenetic results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "3ac88938-7242-43ce-8570-69247b55880a",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "If Cnidaria+Placozoa is correct, homologous characters between Bilateria and Cnidaria must have originated earlier in animal evolution and should either occur cryptically in placozoans or have been lost. This has implications for paleobiological scenarios and molecular clock estimates of early animal evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 present logical inferences from the phylogenetic hypothesis. The reasoning is sound: if placozoans are sister to Cnidaria+Bilateria, then shared cnidarian-bilaterian characters must predate the placozoan divergence (C60-C61). The implications for paleobiology (C62) are appropriately cited and represent reasonable consequences of the phylogenetic revision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "e883a549-9403-4402-93b3-f64305ec852b",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Placozoans are simple microscopic animals with six morphological cell types (though more are apparent via single-cell RNA-seq), lacking conventional organ systems but showing coordinated behavior. They reproduce asexually in lab conditions, with sexual reproduction remaining elusive despite genetic evidence of recombination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide background on placozoan biology, all properly cited to primary literature. These are established facts about placozoan anatomy, physiology, and reproduction that contextualize the phylogenetic study. The citations are appropriate and the claims accurately represent current knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "2d488279-ae24-4ad1-91b0-73231fbf7812",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Early molecular analyses struggled to place Placozoa phylogenetically but revealed high cryptic diversity (up to 27% 16S rRNA divergence). A 2008 genome analysis supported Placozoa as sister to Cnidaria+Bilateria (Planulozoa) and revealed a surprisingly bilaterian-like developmental gene toolkit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 accurately summarize prior work on placozoan phylogenetics and genomics, with appropriate citations. The paradox of simple morphology with complex gene content (C13) is well-established in the literature and properly attributed to Dunn et al., 2015. This provides essential context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    },
+    {
+      "id": "5ce0f1a9-d28b-4b08-840c-6726b09cba8d",
+      "content_id": "6577eb09-a8d3-48e3-b133-cadba258bbc0",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The major controversy in metazoan phylogenetics concerns whether Porifera or Ctenophora is sister to other animals. Different studies support different positions, with debates over artifacts, gene selection effects, and implications for trait evolution. New placozoan data have been slow to emerge during this controversy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 provide comprehensive background on the Porifera vs Ctenophora debate with extensive appropriate citations. This contextualizes why resolving placozoan position matters and why compositional bias is a concern. The observation that placozoan data have lagged (C19) motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:57:39.077904Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "94e53ed0-485c-449c-a3d0-db51643f7236",
+      "result_id": "e6502da6-b060-466e-b91b-5d763bcdc0ac"
+    },
+    {
+      "claim_id": "32777c4d-f362-44ef-9db3-271b42a1772a",
+      "result_id": "e6502da6-b060-466e-b91b-5d763bcdc0ac"
+    },
+    {
+      "claim_id": "35c83234-eec6-438a-828b-b0641b9c1f30",
+      "result_id": "e6502da6-b060-466e-b91b-5d763bcdc0ac"
+    },
+    {
+      "claim_id": "1dddea43-8510-47e2-9ab6-0683870d1dd7",
+      "result_id": "e6502da6-b060-466e-b91b-5d763bcdc0ac"
+    },
+    {
+      "claim_id": "106a95d2-cb4d-49af-b67e-decd5881ef5e",
+      "result_id": "041b144e-fc82-4fbb-be0b-f4eb677c6caa"
+    },
+    {
+      "claim_id": "c5ea0d31-11d0-4b05-a42a-e84fe5352ed2",
+      "result_id": "041b144e-fc82-4fbb-be0b-f4eb677c6caa"
+    },
+    {
+      "claim_id": "f1dce099-f5fb-467d-979d-b878e823f84b",
+      "result_id": "041b144e-fc82-4fbb-be0b-f4eb677c6caa"
+    },
+    {
+      "claim_id": "fcb649a5-6250-47a8-bb1c-b41e43a5d11e",
+      "result_id": "041b144e-fc82-4fbb-be0b-f4eb677c6caa"
+    },
+    {
+      "claim_id": "96aef80b-da2b-4827-a100-8f3eb40e7ff2",
+      "result_id": "e2e7d02e-7eeb-4ab3-96ce-c3f793585c59"
+    },
+    {
+      "claim_id": "8e790a89-bfc3-4183-a4d6-27ec4fe81313",
+      "result_id": "e2e7d02e-7eeb-4ab3-96ce-c3f793585c59"
+    },
+    {
+      "claim_id": "91c7c418-e0ef-445c-a7cf-a545bdc37a8a",
+      "result_id": "e2e7d02e-7eeb-4ab3-96ce-c3f793585c59"
+    },
+    {
+      "claim_id": "2e6e79b9-ff64-4519-8591-caf0769484b1",
+      "result_id": "e2e7d02e-7eeb-4ab3-96ce-c3f793585c59"
+    },
+    {
+      "claim_id": "c1d5a718-047f-4d2c-a77b-a556778806dd",
+      "result_id": "c644a02e-c67b-4321-bf4b-b44ff6e86b42"
+    },
+    {
+      "claim_id": "9790a7a1-45d7-48ce-805e-93656b6d453a",
+      "result_id": "c644a02e-c67b-4321-bf4b-b44ff6e86b42"
+    },
+    {
+      "claim_id": "ad1b2a70-8683-48a8-8bd8-91f5dfa8cd6f",
+      "result_id": "b9f6ee14-0775-4329-8f1d-b5bf717e00db"
+    },
+    {
+      "claim_id": "fb891d75-3cf4-431c-b673-075bcbc56e7d",
+      "result_id": "b9f6ee14-0775-4329-8f1d-b5bf717e00db"
+    },
+    {
+      "claim_id": "41b23c1d-959a-4bae-b25f-6731acd04ace",
+      "result_id": "b9f6ee14-0775-4329-8f1d-b5bf717e00db"
+    },
+    {
+      "claim_id": "8c94e8d4-b23a-48e4-9db2-7e476f34bb18",
+      "result_id": "a085a182-4c33-48ff-8174-c0150ba3a630"
+    },
+    {
+      "claim_id": "f5a2c8ed-859f-4473-91aa-ce0c021d039e",
+      "result_id": "a085a182-4c33-48ff-8174-c0150ba3a630"
+    },
+    {
+      "claim_id": "44dc83d5-b84a-4aca-afd3-2b45a0c982fe",
+      "result_id": "a085a182-4c33-48ff-8174-c0150ba3a630"
+    },
+    {
+      "claim_id": "8d3bd2e8-c3fd-4485-9db1-59830a0236c8",
+      "result_id": "a085a182-4c33-48ff-8174-c0150ba3a630"
+    },
+    {
+      "claim_id": "7bb83471-3dfd-446f-af40-9ef392cb756c",
+      "result_id": "439cfa78-fc33-437c-b52a-cd26ea27e25f"
+    },
+    {
+      "claim_id": "79ad9127-db29-4622-bc19-fb65edbfcd4d",
+      "result_id": "439cfa78-fc33-437c-b52a-cd26ea27e25f"
+    },
+    {
+      "claim_id": "95003449-e56c-436c-a8bc-29c7698ecd32",
+      "result_id": "365e9b25-f11f-41db-9377-d2cf5e438b3c"
+    },
+    {
+      "claim_id": "d54e3be9-895b-4a83-b831-a29018583aa6",
+      "result_id": "365e9b25-f11f-41db-9377-d2cf5e438b3c"
+    },
+    {
+      "claim_id": "232652bc-1af3-4e23-9179-999397a914ae",
+      "result_id": "365e9b25-f11f-41db-9377-d2cf5e438b3c"
+    },
+    {
+      "claim_id": "6c21e682-0e8b-4452-8b9c-21bdf9937ae4",
+      "result_id": "3fde0a7a-b3cc-481b-97d8-324b37711973"
+    },
+    {
+      "claim_id": "ae822e79-2dbe-4b94-840f-8121664961e9",
+      "result_id": "3fde0a7a-b3cc-481b-97d8-324b37711973"
+    },
+    {
+      "claim_id": "cd1ee588-ee02-4b12-8bd4-a08eb3915ab1",
+      "result_id": "066fa117-9632-4ffb-b2c5-65cc848e8fc0"
+    },
+    {
+      "claim_id": "06d18e89-d644-4c69-8db7-bd58be18ea9b",
+      "result_id": "066fa117-9632-4ffb-b2c5-65cc848e8fc0"
+    },
+    {
+      "claim_id": "01ac0e0b-a5f0-4865-8239-e628efb1024e",
+      "result_id": "66e4a3f7-997e-4d69-9338-2d878b57eec1"
+    },
+    {
+      "claim_id": "3c6c164f-d758-40e9-9304-5c1728a27442",
+      "result_id": "66e4a3f7-997e-4d69-9338-2d878b57eec1"
+    },
+    {
+      "claim_id": "69c804d0-2911-4a3c-85a8-a241c2a094e6",
+      "result_id": "66e4a3f7-997e-4d69-9338-2d878b57eec1"
+    },
+    {
+      "claim_id": "79c4f969-2389-40dc-bab0-00c791e6f7cf",
+      "result_id": "fabe6e1f-0c52-459b-9875-bafbcc3924ab"
+    },
+    {
+      "claim_id": "13964fe5-ea48-45b3-b672-dca8cca7ee3c",
+      "result_id": "fabe6e1f-0c52-459b-9875-bafbcc3924ab"
+    },
+    {
+      "claim_id": "095aadbc-2985-4407-a82e-1e7b9719436a",
+      "result_id": "9acd5aa2-973f-4394-b779-ec2a0c5fa625"
+    },
+    {
+      "claim_id": "47bde821-2e2c-4ee7-8526-090ee0c35099",
+      "result_id": "9acd5aa2-973f-4394-b779-ec2a0c5fa625"
+    },
+    {
+      "claim_id": "b4eb8cbb-0c64-4b49-9c0c-e5a0a60ff59c",
+      "result_id": "915d1164-d374-4d37-b9f8-2db36e9192e4"
+    },
+    {
+      "claim_id": "a4662d4a-43d5-41dc-a259-213214c75e78",
+      "result_id": "950c1f39-3956-4499-813d-9c6f4e20f374"
+    },
+    {
+      "claim_id": "d2158478-f3ae-4d7e-8072-89cb6c711ae5",
+      "result_id": "950c1f39-3956-4499-813d-9c6f4e20f374"
+    },
+    {
+      "claim_id": "e8eae5da-549d-43ec-938c-d56ab2ba8720",
+      "result_id": "39d075b0-1d32-484b-8b02-b285ca6653bb"
+    },
+    {
+      "claim_id": "04dca24a-7653-460c-8f46-9dccc33bcaa9",
+      "result_id": "39d075b0-1d32-484b-8b02-b285ca6653bb"
+    },
+    {
+      "claim_id": "0b022908-3071-4ac8-ba2f-a43745a44cad",
+      "result_id": "39d075b0-1d32-484b-8b02-b285ca6653bb"
+    },
+    {
+      "claim_id": "655dc832-f8ec-4cda-b164-f0b65a4d526d",
+      "result_id": "39d075b0-1d32-484b-8b02-b285ca6653bb"
+    },
+    {
+      "claim_id": "083676cf-48da-4391-b358-4644f0ac4941",
+      "result_id": "39d075b0-1d32-484b-8b02-b285ca6653bb"
+    },
+    {
+      "claim_id": "e57b6883-5edf-49f7-8d73-e6a05fee4fe7",
+      "result_id": "3ac88938-7242-43ce-8570-69247b55880a"
+    },
+    {
+      "claim_id": "11a7e991-8997-4580-915b-8c6158735478",
+      "result_id": "3ac88938-7242-43ce-8570-69247b55880a"
+    },
+    {
+      "claim_id": "58b38acd-bed7-4898-90fb-695787144ca2",
+      "result_id": "3ac88938-7242-43ce-8570-69247b55880a"
+    },
+    {
+      "claim_id": "02825268-75a5-4f2b-acfc-062709281aa1",
+      "result_id": "e883a549-9403-4402-93b3-f64305ec852b"
+    },
+    {
+      "claim_id": "727ac151-3a9d-435c-bd1f-13beba30408e",
+      "result_id": "e883a549-9403-4402-93b3-f64305ec852b"
+    },
+    {
+      "claim_id": "f14759e1-f17b-44f9-aab4-c855be2f85a9",
+      "result_id": "e883a549-9403-4402-93b3-f64305ec852b"
+    },
+    {
+      "claim_id": "5c773f97-48de-4b8a-a05b-0c7ae4061d6a",
+      "result_id": "e883a549-9403-4402-93b3-f64305ec852b"
+    },
+    {
+      "claim_id": "e10a04b6-d54f-45e3-8069-76f905f03910",
+      "result_id": "e883a549-9403-4402-93b3-f64305ec852b"
+    },
+    {
+      "claim_id": "403d0b36-7c15-4086-8d08-1ebe00987f3f",
+      "result_id": "e883a549-9403-4402-93b3-f64305ec852b"
+    },
+    {
+      "claim_id": "272ea22c-a966-46d6-b30a-16cedccf5b27",
+      "result_id": "e883a549-9403-4402-93b3-f64305ec852b"
+    },
+    {
+      "claim_id": "0425b5e7-e2de-4c83-a2b0-8aa58a9b8bc5",
+      "result_id": "e883a549-9403-4402-93b3-f64305ec852b"
+    },
+    {
+      "claim_id": "bb3cef47-efd9-4c83-b48f-f646f03cd147",
+      "result_id": "2d488279-ae24-4ad1-91b0-73231fbf7812"
+    },
+    {
+      "claim_id": "112ddd7f-f43c-4c40-a63b-fd51c7360efa",
+      "result_id": "2d488279-ae24-4ad1-91b0-73231fbf7812"
+    },
+    {
+      "claim_id": "c1efe677-36cf-4d40-9a89-773c8f76199c",
+      "result_id": "2d488279-ae24-4ad1-91b0-73231fbf7812"
+    },
+    {
+      "claim_id": "36ba1195-5c9e-45d3-9c42-bf4120ab353c",
+      "result_id": "2d488279-ae24-4ad1-91b0-73231fbf7812"
+    },
+    {
+      "claim_id": "254b56ad-a71c-4fcb-a188-1c89fef41512",
+      "result_id": "2d488279-ae24-4ad1-91b0-73231fbf7812"
+    },
+    {
+      "claim_id": "81bc4bdc-4a32-4901-af8f-2c381bb019dd",
+      "result_id": "5ce0f1a9-d28b-4b08-840c-6726b09cba8d"
+    },
+    {
+      "claim_id": "b50b0d10-7c98-4b33-ab1c-1371e85867f6",
+      "result_id": "5ce0f1a9-d28b-4b08-840c-6726b09cba8d"
+    },
+    {
+      "claim_id": "fad3079e-383d-444e-b653-ccc6506e757b",
+      "result_id": "5ce0f1a9-d28b-4b08-840c-6726b09cba8d"
+    },
+    {
+      "claim_id": "c2afb770-4cbe-4912-b4d7-7d4330f1433b",
+      "result_id": "5ce0f1a9-d28b-4b08-840c-6726b09cba8d"
+    },
+    {
+      "claim_id": "5dfb3d93-8a61-4f25-9c74-c9010cde228c",
+      "result_id": "5ce0f1a9-d28b-4b08-840c-6726b09cba8d"
+    },
+    {
+      "claim_id": "0349df74-231a-4040-a2a3-dc746b3f93c9",
+      "result_id": "5ce0f1a9-d28b-4b08-840c-6726b09cba8d"
+    }
+  ],
+  "comparisons": []
+}

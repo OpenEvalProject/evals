@@ -1,0 +1,1736 @@
+{
+  "submission": {
+    "id": "848dd40d-0eee-42e5-bc1e-68e60b71dbdd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:18:12.231580Z",
+    "updated_at": "2025-12-02T11:18:12.231580Z"
+  },
+  "content": [
+    {
+      "id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "submission_id": "848dd40d-0eee-42e5-bc1e-68e60b71dbdd",
+      "content_type": "manuscript",
+      "content_text": "# Fc\u03b3RIIB-I232T polymorphic change allosterically suppresses ligand binding\n\n## Authors\n\n- Wei Hu<sup>1</sup>\n- Yong Zhang<sup>2</sup> ([ORCID: 0000-0001-6664-435X](https://orcid.org/0000-0001-6664-435X))\n- Xiaolin Sun<sup>3</sup>\n- Tongtong Zhang<sup>1</sup>\n- Liling Xu<sup>4</sup>\n- Hengyi Xie<sup>4</sup>\n- Zhanguo Li<sup>3</sup>\n- Wanli Liu<sup>4</sup> ([ORCID: 0000-0003-0395-2800](https://orcid.org/0000-0003-0395-2800)) \u2020\n- Jizhong Lou<sup>2</sup> ([ORCID: 0000-0003-4031-6125](https://orcid.org/0000-0003-4031-6125)) \u2020\n- Wei Chen<sup>1</sup> ([ORCID: 0000-0001-5366-7253](https://orcid.org/0000-0001-5366-7253)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology and Department of Cardiology of the Second Affiliated Hospital Zhejiang University School of Medicine Hangzhou China\n2. Key Laboratory of RNA Biology, CAS Center for Excellence in Biomacromolecules, Institute of Biophysics Chinese Academy of Sciences Beijing China\n3. Beijing Key Laboratory for Rheumatism and Immune Diagnosis (BZ0135), Department of Rheumatology and Immunology, Peking-Tsinghua Center for Life Sciences Peking University People's Hospital Beijing China\n4. MOE Key Laboratory of Protein Sciences, Center for Life Sciences, Collaborative Innovation Center for Diagnosis and Treatment of Infectious Diseases, School of Life Sciences, Beijing Key Lab for Immunological Research on Chronic Diseases, Institute for Immunology Tsinghua University Beijing China\n5. University of Chinese Academy of Sciences Beijing China\n6. Key Laboratory for Biomedical Engineering of Ministry of Education, State Key Laboratory for Modern Optical Instrumentation, College of Biomedical Engineering and Instrument Science, Collaborative Innovation Center for Diagnosis and Treatment of Infectious Diseases Zhejiang University Hangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nFc\u03b3RIIB binding to its ligand suppresses immune cell activation. A single-nucleotide polymorphic (SNP) change, I232T, in the transmembrane (TM) domain of Fc\u03b3RIIB loses its suppressive function, which is clinically associated with systemic lupus erythematosus (SLE). Previously, we reported that I232T tilts Fc\u03b3RIIB\u2019s TM domain. In this study, combining with molecular dynamics simulations and single-cell FRET assay, we further reveal that such tilting by I232T unexpectedly bends the Fc\u03b3RIIB\u2019s ectodomain toward plasma membrane to allosterically impede Fc\u03b3RIIB\u2019s ligand association. I232T substitution reduces in situ two-dimensional binding affinities and association rates of Fc\u03b3RIIB to interact with its ligands, IgG1, IgG2 and IgG3 by three to four folds. This allosteric regulation by an SNP provides an intrinsic molecular mechanism for the functional loss of Fc\u03b3RIIB-I232T in SLE patients.\n\n## Introduction\n\nDisorders of immune components could lead to autoimmune diseases. Malfunction of an immune receptor, Fc\u03b3RIIB, is generally destructive for immune system (Niederer et al., 2010; Pincetic et al., 2014; Smith and Clatworthy, 2010). Fc\u03b3RIIB is widely expressed on most types of immune cells including B cells, plasma cells, monocytes, dendritic cells, macrophages, neutrophils, basophils, mast cells and even memory CD8+ T cells (Starbeck-Miller et al., 2014). Among all the immune-receptors for Fc portion of IgG molecules (Fc\u03b3Rs), Fc\u03b3RIIB is unique due to its suppressive function against immune cell activation. It has been shown that single-nucleotide polymorphisms (SNPs) of the human Fc\u03b3RIIB gene extensively influence the susceptibility toward autoimmune disorders (Kyogoku et al., 2002; Niederer et al., 2010; Smith and Clatworthy, 2010). A T-to-C variant in exon 5 (rs1050501) of Fc\u03b3RIIB causes the I232T substitution (Fc\u03b3RIIB-I232T) within the transmembrane (TM) domain and is positively associated with systemic lupus erythematosus (SLE) in the homozygous Fc\u03b3RIIB-I232T populations as reported in epidemiological studies (Chu et al., 2004; Clatworthy et al., 2007; Kyogoku et al., 2002; Niederer et al., 2010; Siriboonrit et al., 2003; Willcocks et al., 2010). Although a statistical linkage of the homozygous Fc\u03b3RIIB-I232T polymorphism with SLE is established, comprehensive assessments and mechanistic investigations towards the inter-linkage of Fc\u03b3RIIB-I232T regarding to the age of syndrome onset, progress, and clinical manifestation of SLE are still lacking. We first address this question in this report.\n\nPrevious biochemical studies revealed that monocytes harboring Fc\u03b3RIIB-232T (232T) are hyper-activated with augmented Fc\u03b3RI-triggered phospholipase D activation and calcium signaling (Floto et al., 2005). B lymphocytes expressing 232T are of hyperactivity with abnormal elevation of PLC\u03b32 activation, proliferation and calcium mobilization (Kono et al., 2005). 232T-expressing B cells lose the ability to inhibit the oligomerization of B cell receptors (BCRs) upon co-ligation between BCR and Fc\u03b3RIIB (Liu et al., 2010). Recent live-cell imaging studies showed that B cells expressing 232T fail to inhibit the spatial-temporal co-localization of BCR and CD19 within the B cell immunological synapses (Xu et al., 2014). Human primary B cells from SLE patients with homozygous Fc\u03b3RIIB-I232T reveal hyper-activation of PI3K (Xu et al., 2014). Thus, it is very likely that Fc\u03b3RIIB-I232T is the first example that a naturally occurring diseases-associated SNP within the TM domain of a single-pass transmembrane receptor can allosterically suppress the receptor\u2019s ligand recognition and signaling functions. Fc\u03b3RIIB\u2019s suppressive function is triggered by its ligand engagement, while this function is disrupted by a single amino acid change in the 232th residue from Ile to Thr in Fc\u03b3RIIB\u2019s TM domain. Two early biochemical studies proposed a model of reduced affinity between 232T and lipid rafts to explain the functional relevance and effect of this natural mutation (Floto et al., 2005; Kono et al., 2005). A recent study also proposed a different model that I232T mutation enforces the inclination of the TM domain inside the membrane, thereby reducing the lateral mobility and inhibitory functions of Fc\u03b3RIIB (Xu et al., 2016). However, both models assumed that 232T and Fc\u03b3RIIB-WT (232I) have an equal capability to perceive and bind to their ligands, the IgG\u2019s Fc portion within the antibody-antigen immune complexes. This important but experimentally un-proved pre-requisition in both models is based on the argument that 232T and 232I are identical in the amino acid sequence of their extracellular domains and thus the potential structure of ligand binding site for recognizing the ligands, that\u00a0is, the IgG\u2019s Fc portions (Dal Porto et al., 2004; D'Ambrosio et al., 1996). However, to date, there is no direct experimental evidence to validate this pre-requisite assumption. We also address this question in this report.\n\n## Results and discussion\n\nIn this report, we firstly performed systemic examination over the association of Fc\u03b3RIIB-I232T with clinical manifestations of SLE. We enrolled 711 unrelated Chinese SLE patients with complete clinical documents into this study (Supplementary file 1). 688 unrelated healthy Chinese volunteers with matched gender and age were also enrolled as controls (Supplementary file 1). We confirm the presence of a strong positive association of the homozygous Fc\u03b3RIIB-I232T polymorphism with SLE (\u03c72\u00a0=\u00a027.224, p=0.008, odds ratio with 95% confidence interval (CI)\u00a0=\u00a01.927) (Supplementary file 1), consistent with the published epidemiological data (Chu et al., 2004; Clatworthy et al., 2007; Kyogoku et al., 2002; Niederer et al., 2010; Siriboonrit et al., 2003; Willcocks et al., 2010). Next, we comprehensively analyzed the clinical data for all 711 SLE patients, including 50 Fc\u03b3RIIB-I232T homozygotes, 283 Fc\u03b3RIIB-I232T heterozygotes and 378 Fc\u03b3RIIB-WT carriers (Table 1 and Supplementary file 2). We find that the homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with early disease onset (age at disease onset\u00a0<37, p=0.002) (Table 1). We also observe a significant association of the homozygous Fc\u03b3RIIB-I232T polymorphism with more severe SLE clinical manifestations since the corresponding SLE patients present significant elevation in the amounts of anti-dsDNA antibodies (p=0.004), anti-nuclear antibodies (p=0.021) and total Immunoglobulin (Ig) (p=0.032) in comparison to patients carrying heterozygous Fc\u03b3RIIB-I232T polymorphism or Fc\u03b3RIIB-WT (Table 1). Moreover, homozygous Fc\u03b3RIIB-I232T polymorphism is also significantly associated with the higher SLE disease activity index (SLEDAI) score (p=0.014 for SLEDAI\u00a0\u226512 vs. p=0.861 for SLEDAI\u00a0<12) as well as more severe clinical manifestations including arthritis (p=0.008), anemia (p=0.006), leukopenia (p=0.005), complement decrease (p=0.006), hematuria (p=0.004) and leucocyturia (p=0.010) (Table 1). A suggestive association is also observed between homozygous Fc\u03b3RIIB-I232T polymorphism and serositis (p=0.063) (Table 1). These clinical association analyses demonstrate that SLE patients homozygous for Fc\u03b3RIIB-I232T polymorphism are prone to develop more severe clinical manifestations than the patients carrying heterozygous Fc\u03b3RIIB-I232T polymorphism or Fc\u03b3RIIB-WT, reinforcing the importance to study the pathogenic mechanism of Fc\u03b3RIIB-I232T polymorphism since this SNP occurs at a notable frequency in up to 40% (heterozygous polymorphism) humans (Niederer et al., 2010; Smith and Clatworthy, 2010).\n\n**Table 1.**\n Association analysis between homozygous Fc\u03b3RIIB-I232T genotype and SLE in subphenotype-control cohorts, adjusting for age and sex\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Genotype frequency</th>\n      <th colspan=\"3\">Subphenotype vs. controls</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Tt+tc (%)/CC (%)</td>\n      <td>OR</td>\n      <td>95%</td>\n      <td>P value</td>\n    </tr>\n    <tr>\n      <td>Controls</td>\n      <td>376+286 (96.2)/26 (3.8)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Disease Onset, age\u00a0&lt;\u00a037</td>\n      <td>207+150 (92.7)/28 (7.3)</td>\n      <td>2.739</td>\n      <td>1.456\u20135.152</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>Disease Onset, age\u00a0&gt;=\u00a037</td>\n      <td>171+133 (93.3)/22 (6.7)</td>\n      <td>1.657</td>\n      <td>0.872\u20133.150</td>\n      <td>0.123</td>\n    </tr>\n    <tr>\n      <td>Arthritis\u00a0=\u00a01</td>\n      <td>203+166 (92.5)/30 (7.5)</td>\n      <td>2.074</td>\n      <td>1.206\u20133.565</td>\n      <td>0.008</td>\n    </tr>\n    <tr>\n      <td>Arthritis\u00a0=\u00a00</td>\n      <td>132+87 (94.8)/12 (5.2)</td>\n      <td>1.41</td>\n      <td>0.698\u20132.847</td>\n      <td>0.338</td>\n    </tr>\n    <tr>\n      <td>Hematological involvement\u00a0=\u00a01</td>\n      <td>242+185 (93.4)/30 (6.6)</td>\n      <td>1.797</td>\n      <td>1.048\u20133.084</td>\n      <td>0.033</td>\n    </tr>\n    <tr>\n      <td>Hematological involvement\u00a0=\u00a00</td>\n      <td>90+75 (94.8)/9 (5.2)</td>\n      <td>1.369</td>\n      <td>0.627\u20132.988</td>\n      <td>0.431</td>\n    </tr>\n    <tr>\n      <td>Anemia\u00a0=\u00a01</td>\n      <td>126+94 (91.7)/20 (8.3)</td>\n      <td>2.323</td>\n      <td>1.270\u20134.249</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>Anemia\u00a0=\u00a00</td>\n      <td>153+125 (94.2)/17 (5.8)</td>\n      <td>1.552</td>\n      <td>0.828\u20132.907</td>\n      <td>0.17</td>\n    </tr>\n    <tr>\n      <td>Leukopenia\u00a0=\u00a01</td>\n      <td>140+114 (91.7)/23 (8.3)</td>\n      <td>2.294</td>\n      <td>1.284\u20134.099</td>\n      <td>0.005</td>\n    </tr>\n    <tr>\n      <td>Leukopenia\u00a0=\u00a00</td>\n      <td>136+107 (94.9)/13 (5.1)</td>\n      <td>1.345</td>\n      <td>0.680\u20132.663</td>\n      <td>0.394</td>\n    </tr>\n    <tr>\n      <td>dsDNA\u00a0=\u00a01</td>\n      <td>198+151 (92.1)/30 (7.9)</td>\n      <td>2.224</td>\n      <td>1.293\u20133.826</td>\n      <td>0.004</td>\n    </tr>\n    <tr>\n      <td>dsDNA\u00a0=\u00a00</td>\n      <td>129+94 (94.5)/13 (5.5)</td>\n      <td>1.48</td>\n      <td>0.747\u20132.932</td>\n      <td>0.261</td>\n    </tr>\n    <tr>\n      <td>ANA\u00a0=\u00a01</td>\n      <td>308+241 (93.4)/39 (6.6)</td>\n      <td>1.82</td>\n      <td>1.094\u20133.030</td>\n      <td>0.021</td>\n    </tr>\n    <tr>\n      <td>ANA\u00a0=\u00a00</td>\n      <td>25+16 (93.2)/3 (6.8)</td>\n      <td>1.893</td>\n      <td>0.549\u20136.526</td>\n      <td>0.312</td>\n    </tr>\n    <tr>\n      <td>Total Ig\u00a0=\u00a01</td>\n      <td>131+101 (92.8)/18 (7.2)</td>\n      <td>1.969</td>\n      <td>1.060\u20133.66</td>\n      <td>0.032</td>\n    </tr>\n    <tr>\n      <td>Total Ig\u00a0=\u00a00</td>\n      <td>120+88 (93.7)/14 (6.3)</td>\n      <td>1.706</td>\n      <td>0.874\u20133.328</td>\n      <td>0.118</td>\n    </tr>\n    <tr>\n      <td>Complement Decrease\u00a0=\u00a01</td>\n      <td>227+162 (92.4)/32 (7.6)</td>\n      <td>2.1</td>\n      <td>1.233\u20133.578</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>Complement Decrease\u00a0=\u00a00</td>\n      <td>58+54 (95.7)/5 (4.3)</td>\n      <td>1.124</td>\n      <td>0.423\u20132.991</td>\n      <td>0.814</td>\n    </tr>\n    <tr>\n      <td>Hematuria\u00a0=\u00a01</td>\n      <td>95+65 (90.9)/16 (9.1)</td>\n      <td>2.634</td>\n      <td>1.370\u20135.063</td>\n      <td>0.004</td>\n    </tr>\n    <tr>\n      <td>Hematuria\u00a0=\u00a00</td>\n      <td>180+140 (94.7)/18 (5.3)</td>\n      <td>1.423</td>\n      <td>0.768\u20132.635</td>\n      <td>0.262</td>\n    </tr>\n    <tr>\n      <td>Leucocyturia\u00a0=\u00a01</td>\n      <td>64+57 (91.0)/12 (9.0)</td>\n      <td>2.541</td>\n      <td>1.246\u20135.178</td>\n      <td>0.010</td>\n    </tr>\n    <tr>\n      <td>Leucocyturia\u00a0=\u00a00</td>\n      <td>196+143 (93.9)/22 (6.1)</td>\n      <td>1.651</td>\n      <td>0.922\u20132.957</td>\n      <td>0.092</td>\n    </tr>\n    <tr>\n      <td>Serositis\u00a0=\u00a01</td>\n      <td>66+45 (92.5)/9 (7.5)</td>\n      <td>2.108</td>\n      <td>0.961\u20134.627</td>\n      <td>0.063</td>\n    </tr>\n    <tr>\n      <td>Serositis\u00a0=\u00a00</td>\n      <td>225+174 (94.1)/25 (5.9)</td>\n      <td>1.615</td>\n      <td>0.919\u20132.838</td>\n      <td>0.096</td>\n    </tr>\n    <tr>\n      <td>SLEDAI\u00a0&gt;=\u00a012</td>\n      <td>20+25 (88.2)/6 (11.8)</td>\n      <td>3.327</td>\n      <td>1.273\u20138.696</td>\n      <td>0.014</td>\n    </tr>\n    <tr>\n      <td>SLEDAI\u00a0&lt;\u00a012</td>\n      <td>116+93 (95.9)/9 (4.1)</td>\n      <td>1.072</td>\n      <td>0.493\u20132.328</td>\n      <td>0.861</td>\n    </tr>\n  </tbody>\n</table>\n\nNext, we examined whether I232T polymorphic substitution in the TM domain of Fc\u03b3RIIB allosterically affects ligand recognition. We did this investigation as our previous observation of the inclination of the TM domain by I232T (Xu et al., 2016) led us to hypothesize that tilted TM domain of 232T may lead to ectodomain conformational changes to allosterically attenuate ligand binding. We first carried out large-scale molecular dynamics simulations (MDS) with modeled structures of almost full-length human Fc\u03b3RIIB (either 232I or 232T) imbedded in the lipid bilayer (Figure 1A and Figure 1\u2014figure supplement 1A). The simulations confirm our previous results with the MDS of the TM domain of Fc\u03b3RIIB only (Xu et al., 2016), that\u00a0is, I232T polymorphic substitution enforces the inclination of the TM domain (Figure 1B, right). This inclination might result from the ability of H-bond formation between the side-chain O\u03b3 atom of T232 and the backbone oxygen atom of a neighbor residue V228 (Figure 1B, left). The difference of the TM domain orientation between 232I and 232T induces a distinct conformation on the ecto-membrane proximal region (ecto-TM linker) (Figure 1\u2014figure supplement 2). The membrane buried non-helical region of the linker extends more in 232T than that in 232I. And the length between S218 and P221 peaks at 11 \u00c5 for 232T, about 3 \u00c5 longer than that for 232I (Figure 1C). This length elongation further results in different conformation of residue P217. The main chain dihedral angle of P217 in 232I displays two populations at 141\u00b0\u00b123\u00b0 and \u221250\u00b0\u00b112\u00b0, respectively, but shifts to \u221240\u00b0\u00b145\u00b0 and \u221275\u00b0\u00b112\u00b0 in 232T (Figure 1D and Figure 1\u2014figure supplement 2). These effects propagate and lead to a striking effect on tilting Fc\u03b3RIIB\u2019s extracellular domains toward the lipid membrane (Figure 1E). Although the extracellular domains of 232I and 232T, especially their IgG binding sites, do not undergo obvious conformational change (Figure 1\u2014figure supplement 3), their orientations toward the membrane differ significantly. The ectodomain of 232I maintains more straight-up conformation, whereas that of 232T bends down toward the lipid bilayer (Figure 1E). Statistical analyses show that the ectodomain inclination angle of 232T distributes across 30\u00a0~\u00a060\u00b0 with a sharper single-peak at 40\u00b0 (Figure 1E). In contrast, the angle of 232I distributes much flatter with a favorable probability ranging from 50\u00b0 to 70\u00b0 (Figure 1E). The distance of C1 domain to the membrane is shorter for 232T than 232I (Figure 1E). To check whether these observations result from the thickness of the lipid membrane model, we carried out further simulations using lipids with shorter (14:0/16:1) or longer fatty acid tail (18:0/20:1) (Figure 1\u2014figure supplement 4A). The TM helix tilting and S218-P221 prolongation for 232T can be readily observed in these two systems (Figure 1\u2014figure supplement 4B\u20134C). These results suggest that I232T substitution may reduce the ligand recognition ability of Fc\u03b3RIIB via two aspects. First, the tilting orientation of 232T may sterically prevent the accessibility of the IgG\u2019s Fc portion, as significant clashes between docked Fc and the membrane are observed, although Fc\u03b3RIIB\u2019s Fc binding site is not completely buried into the membrane (Figure 1\u2014figure supplement 1B). Second, the ectodomain of 232T is less flexible (Figure 1E) such that the chance for Fc\u03b3RIIB to associate with the ligand is greatly decreased.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46689/elife-46689-fig1-v2.jpg)\n\n**Figure 1.:** (A) The modeled structures of almost full-length Fc\u03b3RIIB (232I and 232T, residues A46-I310, shown in gray cartoon) are complexed with IgG Fc (using the complex structure of IgG Fc and Fc\u03b3RIIB ectodomain, PDB ID: 3WJJ as a reference, shown in color shaded surface) and imbedded in an asymmetric lipid bilayer (lines with atoms colored by element type: P, tan; O, red; N, blue; C, cyan). The helical structures in the vicinity of residue 232 for 232I (green) and 232T (blue) are shown in the insets. (B) Probability distributions of the distance between T232 O\u03b3 atom and its nearest backbone O atom from residue V228 (left), and of the tilting angles between TM helix and lipid bilayer (right). The inclination of TM for 232T can be observed clearly. Blue dashed line in the upper inset of the left panel indicates H-bond. (C) The representative snapshot comparison of 232I and 232T at the stalk and TM region by superposing the lipid bilayers (left), and the length distribution of S218-P221 backbone in normal direction of lipid bilayer (right). (D) Conformational comparison of I212-S220 regions by aligning residues S218 to S220 (left), and the time courses of the dihedral angles (\u03c8, \u03c6) of residue P217 (right). (E) Representative snapshots of 232I and 232T with the inclination angles and C1(Ig-like C2-Type one domain)/bilayer distances, probability distributions of the inclination angle between Fc\u03b3RIIB ectodomain and lipid bilayer (left), and the distances between C1 domain and lipid bilayer (right).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46689/elife-46689-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The modeled structure of the transmembrane region is highlighted. Residue 232 is the only difference between 232I and 232T. (B) The ectodomain of 232I (green) stands straight and is free for Fc binding. (C) For Fc\u03b3RIIB-I232T polymorphic change, although the Fc binding site is still accessible, it occurs the clashes between the Fc and membrane. Therefore, the binding ability of 232T (blue) with Fc may be significantly reduced. The ectodomain in the Fc\u03b3RIIB/Fc complex structure (PDB code: 3WJJ) is superimposed to that observed by the MD simulation.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46689/elife-46689-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The conformation of the ecto-TM linker in lipid bilayer (left) or lipids removed (right, the residues number in this region is indicated). (B) Conformation differences of I212-S220 region were showed through aligning residues S218 to S220.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46689/elife-46689-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) RMSD time courses of protein backbone atoms in Ig-like C2-type two domain (left panel, colored red on the crystal structure shown in the inset) and IgG binding site (composed mainly with the residues W132, K158, R176 and Y202; right panel and colored red on the crystal structure shown in the inset) for 232I (green) or 232T (blue). No significant change in the domain and the binding site can be observed. (B) Structural comparison between crystal structure (gray) and representative snapshots of MD simulations in the 232I (green) or 232T(blue) system.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/46689/elife-46689-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Schematic of 14:0/16:1, 16:0/18:1 and 18:0/20:1 lipids (upper), and the membrane thickness comparisons with different lengths of lipid fatty acid chain (bottom). MD simulation results of TM helix tilting angle (B), and S218-P221 prolongation (C) in lipid membranes with different-length lipids and membrane thickness.\n\nWe next performed single-cell fluorescence resonance energy transfer (FRET) assay to experimentally validate whether I232T polymorphic change could allosterically bend the Fc\u03b3RIIB ectodomain toward cell membrane. We fused an mTFP (as FRET donor) at the N-terminal of 232I or 232T ectodomain (mTFP-232I or mTFP-232T) and hypothesized that it should fall in the spatial proximity (~16\u00a0~\u00a036 \u00c5) for FRET with plasma outer membrane labeled with octadecyl rhodamine B (R18, as FRET acceptor) (Figure 2A) and that I232T polymorphism may exhibit an enhanced FRET efficiency. With de-quenching assay (Chen et al., 2015; Xu et al., 2008) on A20II1.6 B cells expressing similar level of either mTFP-232I or mTFP-232T (Figure 2B and C), we find that I232T polymorphic change indeed enhances the FRET efficiency about two folds, from\u00a0~20% in 232I to\u00a0~40% in 232T (Figure 2C and D). This enhancement of FRET efficiency by I232T polymorphism indicates that 232T ectodomain prefers to a more recumbent orientation on the plasma membrane than 232I, consistent with above MDS observations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46689/elife-46689-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of mTFP-R18 FRET experimental setup to measure the FRET signals between the ectodomain of 232I (green) or 232T (blue) (N-terminal of ectodomain fused with mTFP as FRET donor, cyan) and the plasma membrane (stained with R18 dye as FRET acceptor, red). (B) Comparison of mTFP fluorescence intensities of A20II1.6 B cell lines expressing either mTFP-232I (green) or mTFP-232T (blue) constructs by FACS analysis. (C) Representative images of de-quenching FRET assay. R18-labeled mTFP-232I or mTFP-232T cell images were acquired in both channels before or after R18 photo-bleaching (BP or AP). (D) FRET efficiency comparison of mTFP-232I (green circle) and mTFP-232T (blue square) cells (~20 cells, respectively) with a p-value indicated. Error bars represent SEM.\n\nEctodomain orientation change of a receptor can significantly affect its in\u00a0situ binding affinity with its ligands (Huang et al., 2004). We therefore predicted that titling Fc\u03b3RIIB ectodomain toward plasma membrane by I232T polymorphic change may attenuate its ligand binding affinity, especially the ligand association rate. To test this hypothesis, we applied well-established single-cell biomechanical apparatus with adhesion frequency assay (Chesla et al., 1998; Huang et al., 2010) to directly and quantitatively measure in\u00a0situ two-dimensional (2D) binding kinetics of either 232I or 232T binding with its ligands (Figure 3A). The results show that the in\u00a0situ 2D effective binding affinity of 232I with human IgG1 antibody (anti-MERS virus S protein, or anti-S) is about three times higher than that of 232T (AcKa\u00a0=\u00a03.03\u00a0\u00b1\u00a00.15\u00d710\u22127 and 0.80\u00a0\u00b1\u00a00.04\u00a0\u00d7\u00a010\u22127 \u03bcm4, respectively), whereas that with human IgG4 is hardly measured as Fc\u03b3RIIB and IgG4 binding is known to be extremely weak and beyond the detection limit (10\u22128 \u03bcm4) of this assay (Huang et al., 2010) (Figure 3B and F). Further analyses show that although the 2D off-rates of 232I and 232T from human IgG1 are similar (7.75\u00a0\u00b1\u00a01.42 and 7.62\u00a0\u00b1\u00a01.41 s\u22121, respectively) (Figure 3B and H), the 2D effective on-rate of 232T with IgG1 is three times slower than that of 232I (Figure 3B and G). These results are also confirmed by using another human IgG1 antibody (anti-HIV1 gp120 IgG1, or anti-gp120). Both 2D effective affinity and on-rate of 232I with anti-gp120 human IgG1 are three times higher than those of 232T (AcKa\u00a0=\u00a07.74\u00a0\u00b1\u00a00.24\u00d710\u22127 and 2.43\u00a0\u00b1\u00a00.11\u00a0\u00d7\u00a010\u22127 \u03bcm4, respectively; Ackon=5.95\u00b10.19 and 2.16\u00a0\u00b1\u00a00.10\u00a0\u00d7\u00a010\u22127 \u03bcm4 s\u22121, respectively), while the respective off-rates are similar (7.70\u00a0\u00b1\u00a00.83 and 8.90\u00a0\u00b1\u00a01.61 s\u22121, respectively) (Figure 3C and F\u2013H). I232T polymorphic change also causes the reduction of 2D affinity and on-rate of Fc\u03b3RIIB\u2019s binding with other IgG subtypes (e.g. IgG2 and IgG3) (Figure 3D\u2013H).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46689/elife-46689-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematics of experimental setup for single-cell in\u00a0situ 2D kinetic measurement. Two opposing micropipettes aspirated a human red blood cell coated with a monoclonal IgG (red) and an A20II1.6 B cell expressing either 232I or 232T (green) to operate contact-retraction cycles manipulation,\u00a0respectively. (B\u2013H) Plots of adhesion frequency Pa versus contact time tc of Fc\u03b3RIIB (either 232I or 232T) binding with human IgG1 antibody (anti-S, B, or anti-gp120, (C)/IgG2 (D)/IgG3 (E), corresponding in\u00a0situ\u00a02D effective binding affinity AcKa (F), on-rate Ackon (G) and off-rate koff (H) are compared, respectively. mFc\u03b3RIIB and mIgG are surface molecular densities of respective proteins. Error bars represent SEM. ND, not detectable. NS, not significantly different.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46689/elife-46689-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Adhesion curves of Fc\u03b3RIIB (either 232I or 232T) and human IgG1 (anti-gp120) according to probabilistic kinetic model. (B\u2013D) Comparisons of in\u00a0situ 2D effective binding affinity (AcKa) (B), on-rate (Ackon) (C) and off-rate (koff) (D) between 232I and 232T binding to IgG1 when cells are fixed. Error bars represent SEM. NS, not significantly different.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46689/elife-46689-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Adhesion curves of Fc\u03b3RIIIA (158F or 158V) and human IgG1 antibody (anti-S) according to probabilistic kinetic model. (B) From the adhesion curves, in\u00a0situ 2D effective binding affinities (AcKa) were calculated. Error bars represent SEM.\n\nFurthermore, we aimed to rule out other factors that may potentially reduce ligand binding affinity of 232T. First, we fixed either 232I or 232T expressing B cells to exclude the effect from the reduced lateral diffusion by I232T (Xu et al., 2016). We find that fixing B cells expressing Fc\u03b3RIIB by paraformaldehyde (PFA) does not alter the ligand binding defects for I232T polymorphic change (Figure 3\u2014figure supplement 1), suggesting the reduction of lateral diffusion by I232T hardly contributes to the reduction of the ligand binding affinity and on-rate. Moreover, Zhu and colleagues have also extensively discussed and experimentally proved that the lateral diffusion has negligible impact on 2D affinity of receptor-ligand binding on live cells (Chesla et al., 2000). To further exclude potential technical artifacts in in\u00a0situ single-cell adhesion frequency assay, we confirm previously known binding-enhancing Fc\u03b3RIIIA-F158V polymorphism by using the 2D binding assay in this report (Figure 3\u2014figure supplement 2). All these data strongly support that I232T polymorphic change in the TM domain of Fc\u03b3RIIB allosterically tilts Fc\u03b3RIIB ectodomains toward the plasma membrane, rendering steric hindrance of its ligand binding domain. As a result, 232T exhibits significantly reduced 2D affinity and association on-rate to IgG antibodies. To be noted, it is possible that similar allosteric regulation may be applied to a broad range of transmembrane receptors, for example, potentially explaining how membrane anchor pattern of CD16a influences ligand recognition (Chesla et al., 2000).\n\nIn summary, we confirm that homozygous Fc\u03b3RIIB-I232T confers dramatically increased risk of developing more severe clinical manifestations in patients with SLE. The pathological relevant of I232T is caused by the inclination of the TM domain which leads to Fc\u03b3RIIB ectodomain bending toward plasma membrane, significantly impairing Fc\u03b3RIIB\u2019s binding ability to IgG\u2019s Fc portion through reducing in\u00a0situ binding affinity and association rate. The hampered Fc recognition ability of Fc\u03b3RIIB-I232T results in the deficiency on its inhibitory function and thus hyper-activated immune cells, potentially contributing to SLE.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>A20II1.6 B cell</td>\n      <td>ATCC</td>\n      <td></td>\n      <td>a gift from S.K. Pierce (National Institute of Allergy and Infectious Diseases, Bethesda, MD)</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>232I A20II1.6 B cell line</td>\n      <td>(Xu et al., 2016)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>232T A20II1.6 B cell line</td>\n      <td>(Xu et al., 2016)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>mTFP-232I A20II1.6 B cell line</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Stable mTFP-232I expressing A20II1.6 B cell lines were acquired by lentivirus infection.</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>mTFP-232T A20II1.6 B cell line</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Stable mTFP-232T expressing A20II1.6 B cell lines were acquired by lentivirus infection.</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-gp120 IgG1, human monoclonal</td>\n      <td>a kind gift from Dr. Y. Shi, The Institute of Microbiology of the Chinese Academy of Sciences</td>\n      <td></td>\n      <td>Dosage: 20 \u03bcg</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-S IgG1, human monoclonal</td>\n      <td>a kind gift from Dr. L. Zhang and X. Wang, Tsinghua University</td>\n      <td></td>\n      <td>Dosage: 20 \u03bcg</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IgG2, human monoclonal</td>\n      <td>a kind gift from Dr. H. Wang, Hisun, China</td>\n      <td>RANKL human IgG2 monoclonal antibody (HS629)</td>\n      <td>Dosage: 20 \u03bcg</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IgG3, human monoclonal</td>\n      <td>InvivoGen</td>\n      <td>Catalog#bgal-mab3; RRID: AB_2810285</td>\n      <td>recombinant Anti-\u03b2-Gal-hIgG3 was produced in CHO cells; dosage: 20 \u03bcg</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IgG4, human monoclonal</td>\n      <td>a kind gift from Dr. Y. Shi, The Institute of Microbiology of the Chinese Academy of Sciences</td>\n      <td></td>\n      <td>Dosage: 20 \u03bcg</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PHAGE-mTFP-232I (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>mTFP was fused to N-terminal of Fc\u03b3RIIB-232I in a pHAGE backbone</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PHAGE-mTFP-232T (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>mTFP was fused to N-terminal of Fc\u03b3RIIB-232T in a pHAGE backbone</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TIANamp Blood DNA Midi Kit</td>\n      <td>TIANGEN Biotech, China</td>\n      <td>Catalog#DP332-01</td>\n      <td>TaqMan probe C: 5\u2019-VIC-CGCTACAGCAGTCCCAGT-NFQ-3\u2019, TaqMan Probe T: 5\u2019-FAM-CGCTACAGCAATCCCAGT-NFQ-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TaqMan Genotyping Assays</td>\n      <td>Life Technology</td>\n      <td>Catalog#4351376</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ClonExpress MultiS One Step Cloning Kit</td>\n      <td>Vazyme, China</td>\n      <td>Catalog#C113</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Octadecyl rhodamine B (R18)</td>\n      <td>Invitrogen</td>\n      <td>Catalog#O246</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biotin-PEG-SGA</td>\n      <td>JenKem Technology, China</td>\n      <td>Catalog#ZZ324P050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Streptavidin</td>\n      <td>Sangon Biotech, China</td>\n      <td>Catalog#C600432</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EZ-Link Sulfo-NHS-LC-Biotin kits</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Catalog#21435</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>VMD (Visual Molecular Dynamics)</td>\n      <td>University of Illinois at Urbana-Champaign</td>\n      <td>Visual Molecular Dynamics, RRID:SCR_001820</td>\n      <td>http://www.ks.uiuc.edu/Research/vmd/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>NAMD</td>\n      <td>University of Illinois at Urbana-Champaign</td>\n      <td>NAMD, RRID:SCR_014894</td>\n      <td>http://www.ks.uiuc.edu/Research/namd/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CHARMM Force Field</td>\n      <td>Alex Mackerell lab at School of Pharmacy, University of Maryland</td>\n      <td></td>\n      <td>http://mackerell.umaryland.edu/charmm_ff.shtml</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad</td>\n      <td>GraphPad Prism, RRID:SCR_002798</td>\n      <td>https://www.graphpad.com/</td>\n    </tr>\n  </tbody>\n</table>\n\n### SNP rs1050501 genotyping and statistical analysis\n\nThe ethics committee of Peking University People's Hospital approved this study and informed consents were obtained from each patient and healthy volunteer. All the human-cell-associated experimental guidelines were approved by the Medical Ethics Committee of Peking University People\u2019s Hospital (approval no. 2014PHB116-01) and by the Medical Ethics Committee of Tsinghua University (approval no. 20180029). There were 711 patients fulfilling the 1997 revised classification criteria of the American College of Rheumatology that enrolled in this study. Healthy volunteers were recruited as controls. 4\u20138 ml peripheral blood was acquired from SLE patients and healthy volunteers. Genomic DNA was extracted from peripheral blood samples using the TIANamp Blood DNA Midi Kit (Catalog#DP332-01, TIANGEN Biotech, China) following the manufacturer\u2019s protocol. The TaqMan Genotyping Assays were applied for genotyping of SNP rs1050501 (TaqMan probe C: 5\u2019-VIC-CGCTACAGCA GTCCCAGT-NFQ-3\u2019, TaqMan Probe T: 5\u2019-FAM- CGCTACAGCA ATCCCAGT-NFQ-3\u2019) (Catalog#4351376, Life Technology). Amplification and genotyping analyses were performed using ABI 7300 Real-Time PCR system. Relative quantification of probes levels was calculated (7500 Sequence Detection System Software Version 1.4, ABI). Few samples were genotyped by using primers (forward: 5\u2019-AAGGGGAGCC CTTCCCTCTGTT-3\u2019, reverse: 5\u2019-CATCACCCAC CATGTCTCAC-3\u2019) binding to the flanking introns of exon five as reported (Floto et al., 2005; Kono et al., 2005). The DNA sequencing was done by BGI (Beijing). The Pearson chi-square tests were performed for the comparison of differences between cases and controls at genotype model (recessive model CC vs. TT+TC). The odds ratios (OR), 95% confidence intervals (CI) and p value for recessive model analysis were calculated using logistic regression, adjusting for age and sex. In statistical analyses, p value of less than 0.05 was considered statistically significant.\n\n### Molecular dynamics simulations\n\nStructure models of human Fc\u03b3RIIB system (residues A46-I310) were built by fusing the crystal structure of the ectodomain (PDB code 2FCB, residues A46-Q215) to the transmembrane (TM) helix (residues M222-R248) model obtained in the previous study (Xu et al., 2016). The stalk (residues A216-P221) and cytoplasmic regions (residues K249-I310) were randomly placed. Different initial models were built to minimize possible artifacts in structural modeling. An asymmetric lipid bilayer with the membrane lateral area of 100\u00a0\u00d7\u00a0100 \u00c52 was generated with Membrane Builder in CHARMM-GUI (Wu et al., 2014). The outer leaflet of lipid membrane contained PC, SM, and cholesterol with molar ratio 1:1:1, and the inner leaflet of lipid membrane contained PE, PC, PS, PIP2 and cholesterol with molar ratio 4:3:2:1:5. Different length of the lipid models were used, including the widely used PO series (16:0/18:1) which is the most common lipid within mammalian cell membranes, and other two lipid models with shorter (14:0/16:1) and longer (18:0/20:1) fatty acids. Fc\u03b3RIIB models were inserted into the lipid membranes with its TM perpendicular to the bilayer surface and the ectodomain stands straight, as shown in Figure 1A.\n\nThe 232I system was subsequently solvated in 100\u00a0\u00d7\u00a0100\u00a0\u00d7\u00a0203 \u00c53 rectagular water boxes with TIP3P water model and was neutralized by 0.15 M NaCl. The 232T system was obtained from the same configuration using the Mutator plugin of VMD (Humphrey et al., 1996). The final systems contained\u00a0~0.20 million atoms in total.\n\nBoth systems were first pre-equilibrated with the following three steps: (1) 5000 steps energy minimization with the heavy atoms of proteins and the head group of the lipids fixed, followed by two ns equilibration simulation under one fs timestep with these atoms constrained by five kcal/mol/\u00c52 spring; (2) 5000 steps energy minimization with the heavy atoms of protein fixed, followed by 2 ns equilibration simulation under 1 fs timestep with these atoms constrained by 1 kcal/mol/\u00c52 spring; (3) 4 ns equilibration simulation under 2 fs timestep with the heavy atoms of protein ecto- and TM domains constrained (i.e. the stalk and intracellular portion is free) by 0.2 kcal/mol/\u00c52 spring.\n\nThe resulted systems were subjected to productive simulations for 200 ns with 2 fs timestep without any constrains, and the snapshots of the last 80 ns (sampled at 10 ps intervals) were used for detailed analyses including the probability distributions of hydrogen bonds, tilting angles of the TM helix, inclination angles of ectodomain, the distance between Ig-like C2-type one domain and lipid bilayer. The tilting angle of TM helix was defined as the angle between TM helix and membrane plane, similar as that used in previous study (Xu et al., 2016). The inclination angle of ectodomain was defined as the angle between the membrane plane and the vector linking N-terminal of TM helix (M222-I224) and linker region of Ig-like C2-type 1 and 2 domain (S130-W132). The distance between Ig-like C2-type one domain and lipid bilayer was defined as the length between center of mass (COM) of this domain and the heavy atoms of phospholipid head in the normal direction of bilayer.\n\nAll simulations were performed with NAMD2 software (Phillips et al., 2005) using CHARMM36m force field with the CMAP correction (MacKerell et al., 1998). The simulations were performed in NPT ensemble (one atm, 310K) using a Langevin thermostat and Nos\u00e9-Hoover Langevin piston method (Feller et al., 1995), respectively. 12 \u00c5 cutoff with 10 to 12 \u00c5 smooth switching was used for the calculation of the van der Waals interactions. The electrostatic interactions were computed using the particle mesh Eward method under periodic boundary conditions. The system preparations and illustrations were conducted using VMD.\n\n### Plasmid construction and cell lines establishment\n\n232I and 232T pHAGE plasmids were previously constructed (Xu et al., 2016). mTFP was fused to N-terminal of either 232I or 232T in a pHAGE backbone by ClonExpress MultiS One Step Cloning Kit (Catalog#C113, Vazyme, China). Stable mTFP-232I/mTFP-232T expressing A20II1.6 B cell lines were acquired by lentivirus infection (three-vector system: mTFP-232I or mTFP-232I pHAGE, psPAX2, and pMD2.G). A20II1.6 B cell lines expressing similar level of either mTFP-232I or mTFP-232T were obtained by multiple rounds of cell sorting (Beckman moflo Astrios EQ). Either 232I or 232T expressing A20II1.6 B cell line was previously established (Xu et al., 2016).\n\n### FRET measurement\n\nFRET measurements were performed as previously described (Chen et al., 2015; Xu et al., 2008). Briefly, all FRET measurements were carried out on Nikon TiE C2 confocal microscope with 100x oil lens, Argon 457 nm and HeNe 561 nm laser. 1\u00a0\u00d7\u00a0106 mTFP-232I or mTFP-232T expressing A20II1.6 B cells were stained with 300 nM octadecyl rhodamine B (R18) (Catalog#O246, Invitrogen) on ice for 3 min, excited by two lasers sequentially, and imaged before and after R18 photo-bleaching. mTFP intensity was processed through Image J. FRET efficiency was then calculated by (DQ\u2212Q)/DQ, where DQ and Q are de-quenched and quenched mTFP intensity, respectively. FRET efficiencies of mTFP-232I and mTFP-232T cells (~20 cells, respectively) were calculated and plotted through Prism 7 (GraphPad). Error bars represent SEM.\n\n### RBC preparation\n\nStreptavidin (SA) coated red blood cells (SA-RBCs) preparation have been described previously (Huang et al., 2010). Briefly, RBCs freshly collected from finger prick were biotinylated with biotin-PEG-SGA (Catalog#ZZ324P050, JenKem Technology, China) (Liu et al., 2014; Wu et al., 2019), followed by incubation with streptavidin (Catalog#C600432, Sangon Biotech, China) to make SA-RBCs. Human antibodies (anti-gp120 IgG1 and IgG4, a kind gift from Dr. Y. Shi, The Institute of Microbiology of the Chinese Academy of Sciences; anti-S IgG1, a kind gift from Dr. L. Zhang and X. Wang, Tsinghua University; IgG2, a kind gift from Dr. H. Wang, Hisun, China; IgG3, Catalog#bgal-mab3, InvivoGen) were biotinylated by EZ-Link Sulfo-NHS-LC-Biotin kits (Catalog# 21435, Thermo Fisher Scientific). Different amount of biotinylated IgG was linked into SA-RBCs through SA-biotin interaction at RT for 30 min, respectively to produce IgG-coated RBCs. These IgG-coated RBCs were then used to measure 2D binding kinetics of Fc\u03b3RIIB/IgG with adhesion frequency assay. All above experimental processes were approved by the institutional ethical review board of Zhejiang University (approval no. 2015\u2013006).\n\n### Adhesion frequency assay\n\nThe adhesion frequency assay was applied to measure Fc\u03b3RIIB/IgG in\u00a0situ 2D binding kinetics. The detail experimental setup and procedure were previously described (Huang et al., 2010). In brief, two opposing micropipettes aspirating the RBC and Fc\u03b3RIIB-expressing A20II1.6 B cell (either 232I or 232T) respectively were controlled by a customized computer program to operate contact-retraction cycles. Through 50 contact-retraction cycles, the binding frequency Pa was acquired with definite contact area Ac and a series of preset contact time tc (0.1, 0.2, 0.5, 1, 2 s or longer). 3\u00a0~\u00a04 cell pairs were tested for each contact time. And these data were then non-linearly fitted to obtain effective 2D binding affinity AcKa and off-rate koff by probabilistic kinetic model (Chesla et al., 1998):\n\n$$\nP_{a}=1\u2212exp{\u2212m_{r}m_{l}A_{c}K_{a}(1\u2212exp(k_{off}))},\n$$\n\nwhere mr and ml are receptor and ligand densities on cells, respectively. Effective 2D on-rate Ackon was then calculated as following:\n\n$$\nA_{c}k_{on}=A_{c}K_{a}\\timesk_{off}.\n$$\n\nIn order to accurately calculate 2D binding affinity and on-rate, these two molecular densities (mFc\u03b3RIIB and mIgG) were determined by standard calibration beads (Quantum Alexa Fluor647 MESF kit, Catalog#647, Bangs Laboratories) on flow cytometry (Beckman CytoFLEX S), respectively. Binding kinetics were calculated and plotted through Prism 7 (GraphPad). Error bars represent SEM.\n",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "d0ad3b04-673b-4a25-9977-3a74883d07ea",
+      "submission_id": "848dd40d-0eee-42e5-bc1e-68e60b71dbdd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tomohiro Kurosaki, Osaka University Japan\n\nReviewers:\n- Toshiyuki Takai\n- Michael L Dustin, University of Oxford United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.46689.017](https://doi.org/10.7554/eLife.46689.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nDear Dr Chen,\n\nThank you for submitting your article \"Fc\u03b3RIIB I232T polymorphic change allosterically suppresses ligand binding\" for consideration by eLife. Your article has been reviewed by Tadatsugu Taniguchi as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Toshiyuki Takai (Reviewer #1); Michael L Dustin (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe short report adds to data supporting a connection of I232T polymorphism in Fc\u03b3RIIB to lupus. The paper then investigates the mechanism by bringing in a new idea from MD simulations that the molecules lies down on the surface and becomes less likely to bind ligand coming from another surface. The authors validate that the N-terminus of the FcR with the I232T is closer to the membrane using a good FRET method, and then use the adhesion frequency assay to determine that the 2D on-rate for initial bond formation is reduced 3-fold with no change in off-rate. This fits very well with the model and may explain other instances where changing the membrane anchor altered 2D kinetic rates.\n\nThere are a few issues to clarify.\n\n1) The clinical data is quite different than the biophysical data that follows. It is implied that it adds to prior studies by showing a difference between heterozygous and homozygous for I232T for risk of lupus. Can the authors confirm that this is new finding in relation to the numerous prior studies cited?\n\n2) The modelling of the distortion of the transmembrane-ectodomain interface (Figure 1) is based on a protein section (A216-P221) that is poorly defined structurally. How dependent are the effects on the composition/width of the model membrane? Is this representative of immune cell plasma membranes?\n\n3) Does Fc\u03b3RIIB-232T affect binding to all IgG subclasses (also IgG2 and IgG3)? One might expect this to be the case if affinity was altered based on differential rigidity/binding site occlusion. If this data is available or could be made available, it would add weight to the findings.\n\n4) The authors might want to cite Xu et al. (2008) if they agree it was first to use this effective FRET pair.\n\n5) That authors might want to cite Chesla et al. (2000) to indicate that others have found difficult to explain results after changing membrane anchor and perhaps this phenomenon might be invested in these situations.\n",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "65897fc1-466d-4448-a2a9-0273c4771d2a",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C1",
+      "claim": "Fc\u03b3RIIB binding to its ligand suppresses immune cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Fc\u03b3RIIB binding to its ligand suppresses immune cell activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established function of Fc\u03b3RIIB.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "db47f643-3327-4bf7-a195-bed4aa53438c",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C2",
+      "claim": "A single-nucleotide polymorphic (SNP) change, I232T, in the transmembrane (TM) domain of Fc\u03b3RIIB loses its suppressive function.",
+      "claim_type": "EXPLICIT",
+      "source": "A single-nucleotide polymorphic (SNP) change, I232T, in the transmembrane (TM) domain of Fc\u03b3RIIB loses its suppressive function, which is clinically associated with systemic lupus erythematosus (SLE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by clinical association data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "1307bfa9-5e61-4afb-a7c5-58876be9b909",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C3",
+      "claim": "I232T polymorphism is clinically associated with systemic lupus erythematosus (SLE).",
+      "claim_type": "EXPLICIT",
+      "source": "A single-nucleotide polymorphic (SNP) change, I232T, in the transmembrane (TM) domain of Fc\u03b3RIIB loses its suppressive function, which is clinically associated with systemic lupus erythematosus (SLE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by epidemiological data and citations in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "3ccf0c81-ee4c-4c9e-aef7-7104dba9c801",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C4",
+      "claim": "I232T tilts Fc\u03b3RIIB's TM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we reported that I232T tilts Fc\u03b3RIIB's TM domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and references previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "b17f39a7-286c-445f-a409-9a0316ae4ca3",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C5",
+      "claim": "I232T tilting of the TM domain bends the Fc\u03b3RIIB's ectodomain toward plasma membrane to allosterically impede Fc\u03b3RIIB's ligand association.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, combining with molecular dynamics simulations and single-cell FRET assay, we further reveal that such tilting by I232T unexpectedly bends the Fc\u03b3RIIB's ectodomain toward plasma membrane to allosterically impede Fc\u03b3RIIB's ligand association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by molecular dynamics simulations and FRET assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "88d1d6ed-8236-4829-a89d-a1e28d3e0a4e",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C6",
+      "claim": "I232T substitution reduces in situ two-dimensional binding affinities of Fc\u03b3RIIB to interact with IgG1 by three to four folds.",
+      "claim_type": "EXPLICIT",
+      "source": "I232T substitution reduces in situ two-dimensional binding affinities and association rates of Fc\u03b3RIIB to interact with its ligands, IgG1, IgG2 and IgG3 by three to four folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by adhesion frequency assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "f42214a8-02ca-4fe8-9fe4-3b901c907ca3",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C7",
+      "claim": "I232T substitution reduces in situ two-dimensional binding affinities of Fc\u03b3RIIB to interact with IgG2 by three to four folds.",
+      "claim_type": "EXPLICIT",
+      "source": "I232T substitution reduces in situ two-dimensional binding affinities and association rates of Fc\u03b3RIIB to interact with its ligands, IgG1, IgG2 and IgG3 by three to four folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by adhesion frequency assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "5e9ea98c-67d8-4b0f-8ce4-edf76f6eeab5",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C8",
+      "claim": "I232T substitution reduces in situ two-dimensional binding affinities of Fc\u03b3RIIB to interact with IgG3 by three to four folds.",
+      "claim_type": "EXPLICIT",
+      "source": "I232T substitution reduces in situ two-dimensional binding affinities and association rates of Fc\u03b3RIIB to interact with its ligands, IgG1, IgG2 and IgG3 by three to four folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by adhesion frequency assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "f9573319-f498-415d-8f77-079a7cf8fb18",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C9",
+      "claim": "I232T substitution reduces in situ two-dimensional association rates of Fc\u03b3RIIB to interact with IgG1 by three to four folds.",
+      "claim_type": "EXPLICIT",
+      "source": "I232T substitution reduces in situ two-dimensional binding affinities and association rates of Fc\u03b3RIIB to interact with its ligands, IgG1, IgG2 and IgG3 by three to four folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by adhesion frequency assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "76e91a16-70ed-49cc-bb41-9e7f196bbc3a",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C10",
+      "claim": "I232T substitution reduces in situ two-dimensional association rates of Fc\u03b3RIIB to interact with IgG2 by three to four folds.",
+      "claim_type": "EXPLICIT",
+      "source": "I232T substitution reduces in situ two-dimensional binding affinities and association rates of Fc\u03b3RIIB to interact with its ligands, IgG1, IgG2 and IgG3 by three to four folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by adhesion frequency assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "5c840e3b-455a-456d-a8a0-b9cee99c289a",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C11",
+      "claim": "I232T substitution reduces in situ two-dimensional association rates of Fc\u03b3RIIB to interact with IgG3 by three to four folds.",
+      "claim_type": "EXPLICIT",
+      "source": "I232T substitution reduces in situ two-dimensional binding affinities and association rates of Fc\u03b3RIIB to interact with its ligands, IgG1, IgG2 and IgG3 by three to four folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by adhesion frequency assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "abe4e2f5-1a14-4b2c-88d1-9904b8ef54a0",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C12",
+      "claim": "Fc\u03b3RIIB is widely expressed on most types of immune cells including B cells, plasma cells, monocytes, dendritic cells, macrophages, neutrophils, basophils, mast cells and even memory CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fc\u03b3RIIB is widely expressed on most types of immune cells including B cells, plasma cells, monocytes, dendritic cells, macrophages, neutrophils, basophils, mast cells and even memory CD8+ T cells (Starbeck-Miller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "bdbadb45-ad9b-40c3-a2ce-e3a6362e68ca",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C13",
+      "claim": "Among all the immune-receptors for Fc portion of IgG molecules (Fc\u03b3Rs), Fc\u03b3RIIB is unique due to its suppressive function against immune cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all the immune-receptors for Fc portion of IgG molecules (Fc\u03b3Rs), Fc\u03b3RIIB is unique due to its suppressive function against immune cell activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "17a976d5-1e7e-4f72-b8a5-438ea31dfe3d",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C14",
+      "claim": "Single-nucleotide polymorphisms (SNPs) of the human Fc\u03b3RIIB gene extensively influence the susceptibility toward autoimmune disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that single-nucleotide polymorphisms (SNPs) of the human Fc\u03b3RIIB gene extensively influence the susceptibility toward autoimmune disorders (Kyogoku et al., 2002; Niederer et al., 2010; Smith and Clatworthy, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "c050d9fc-524a-4d87-b660-b6856c70e7d9",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C15",
+      "claim": "A T-to-C variant in exon 5 (rs1050501) of Fc\u03b3RIIB causes the I232T substitution within the transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "A T-to-C variant in exon 5 (rs1050501) of Fc\u03b3RIIB causes the I232T substitution (Fc\u03b3RIIB-I232T) within the transmembrane (TM) domain and is positively associated with systemic lupus erythematosus (SLE) in the homozygous Fc\u03b3RIIB-I232T populations as reported in epidemiological studies (Chu et al., 2004; Clatworthy et al., 2007; Kyogoku et al., 2002; Niederer et al., 2010; Siriboonrit et al., 2003; Willcocks et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "1867be2a-b0f6-4e5e-ae9c-f27af16b65e7",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C16",
+      "claim": "The I232T substitution is positively associated with systemic lupus erythematosus (SLE) in the homozygous Fc\u03b3RIIB-I232T populations.",
+      "claim_type": "EXPLICIT",
+      "source": "A T-to-C variant in exon 5 (rs1050501) of Fc\u03b3RIIB causes the I232T substitution (Fc\u03b3RIIB-I232T) within the transmembrane (TM) domain and is positively associated with systemic lupus erythematosus (SLE) in the homozygous Fc\u03b3RIIB-I232T populations as reported in epidemiological studies (Chu et al., 2004; Clatworthy et al., 2007; Kyogoku et al., 2002; Niederer et al., 2010; Siriboonrit et al., 2003; Willcocks et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple epidemiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "1bd6216d-2038-4bb7-8b5f-dff6dea2500d",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C17",
+      "claim": "Monocytes harboring Fc\u03b3RIIB-232T are hyper-activated with augmented Fc\u03b3RI-triggered phospholipase D activation and calcium signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous biochemical studies revealed that monocytes harboring Fc\u03b3RIIB-232T (232T) are hyper-activated with augmented Fc\u03b3RI-triggered phospholipase D activation and calcium signaling (Floto et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "e440b6e7-87d7-4b49-9d9a-2f7ba654da9d",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C18",
+      "claim": "B lymphocytes expressing 232T are of hyperactivity with abnormal elevation of PLC\u03b32 activation, proliferation and calcium mobilization.",
+      "claim_type": "EXPLICIT",
+      "source": "B lymphocytes expressing 232T are of hyperactivity with abnormal elevation of PLC\u03b32 activation, proliferation and calcium mobilization (Kono et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "a6e4f5cd-7c4c-4651-a0fb-08c52d1c90db",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C19",
+      "claim": "232T-expressing B cells lose the ability to inhibit the oligomerization of B cell receptors (BCRs) upon co-ligation between BCR and Fc\u03b3RIIB.",
+      "claim_type": "EXPLICIT",
+      "source": "232T-expressing B cells lose the ability to inhibit the oligomerization of B cell receptors (BCRs) upon co-ligation between BCR and Fc\u03b3RIIB (Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "4e955836-10bf-4328-bfc8-e6faa79cf1f5",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C20",
+      "claim": "B cells expressing 232T fail to inhibit the spatial-temporal co-localization of BCR and CD19 within the B cell immunological synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent live-cell imaging studies showed that B cells expressing 232T fail to inhibit the spatial-temporal co-localization of BCR and CD19 within the B cell immunological synapses (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "5b29d598-918e-4195-9df3-f72b7e73ee76",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C21",
+      "claim": "Human primary B cells from SLE patients with homozygous Fc\u03b3RIIB-I232T reveal hyper-activation of PI3K.",
+      "claim_type": "EXPLICIT",
+      "source": "Human primary B cells from SLE patients with homozygous Fc\u03b3RIIB-I232T reveal hyper-activation of PI3K (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "e3009684-0924-42d7-850e-0ac53db7ab60",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C22",
+      "claim": "There is a strong positive association of the homozygous Fc\u03b3RIIB-I232T polymorphism with SLE (\u03c72 = 27.224, p=0.008, odds ratio with 95% confidence interval (CI) = 1.927).",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm the presence of a strong positive association of the homozygous Fc\u03b3RIIB-I232T polymorphism with SLE (\u03c72 = 27.224, p=0.008, odds ratio with 95% confidence interval (CI) = 1.927) (Supplementary file 1), consistent with the published epidemiological data (Chu et al., 2004; Clatworthy et al., 2007; Kyogoku et al., 2002; Niederer et al., 2010; Siriboonrit et al., 2003; Willcocks et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by statistical analysis of clinical data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "2f4b42c2-64e6-4496-9b03-f673ee0ef14e",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C23",
+      "claim": "The homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with early disease onset (age at disease onset <37, p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with early disease onset (age at disease onset <37, p=0.002) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "03795cb8-3be7-4e3a-b11a-7b0642a32509",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C24",
+      "claim": "The homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with elevation in the amounts of anti-dsDNA antibodies (p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe a significant association of the homozygous Fc\u03b3RIIB-I232T polymorphism with more severe SLE clinical manifestations since the corresponding SLE patients present significant elevation in the amounts of anti-dsDNA antibodies (p=0.004), anti-nuclear antibodies (p=0.021) and total Immunoglobulin (Ig) (p=0.032) in comparison to patients carrying heterozygous Fc\u03b3RIIB-I232T polymorphism or Fc\u03b3RIIB-WT (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "60246644-f0f4-4e6a-b0f1-e9083f1273a8",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C25",
+      "claim": "The homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with elevation in the amounts of anti-nuclear antibodies (p=0.021).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe a significant association of the homozygous Fc\u03b3RIIB-I232T polymorphism with more severe SLE clinical manifestations since the corresponding SLE patients present significant elevation in the amounts of anti-dsDNA antibodies (p=0.004), anti-nuclear antibodies (p=0.021) and total Immunoglobulin (Ig) (p=0.032) in comparison to patients carrying heterozygous Fc\u03b3RIIB-I232T polymorphism or Fc\u03b3RIIB-WT (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "9841cfe6-461d-4c17-9ae7-70d487d10f28",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C26",
+      "claim": "The homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with elevation in the amounts of total Immunoglobulin (Ig) (p=0.032).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe a significant association of the homozygous Fc\u03b3RIIB-I232T polymorphism with more severe SLE clinical manifestations since the corresponding SLE patients present significant elevation in the amounts of anti-dsDNA antibodies (p=0.004), anti-nuclear antibodies (p=0.021) and total Immunoglobulin (Ig) (p=0.032) in comparison to patients carrying heterozygous Fc\u03b3RIIB-I232T polymorphism or Fc\u03b3RIIB-WT (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "2feeafae-f5b7-46ec-b557-f9de7c4173a5",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C27",
+      "claim": "Homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with higher SLE disease activity index (SLEDAI) score (p=0.014 for SLEDAI \u226512).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, homozygous Fc\u03b3RIIB-I232T polymorphism is also significantly associated with the higher SLE disease activity index (SLEDAI) score (p=0.014 for SLEDAI \u226512 vs. p=0.861 for SLEDAI <12) as well as more severe clinical manifestations including arthritis (p=0.008), anemia (p=0.006), leukopenia (p=0.005), complement decrease (p=0.006), hematuria (p=0.004) and leucocyturia (p=0.010) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "ced13ab8-6d3d-477b-9eb1-d78f82ac7d5f",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C28",
+      "claim": "Homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with arthritis (p=0.008).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, homozygous Fc\u03b3RIIB-I232T polymorphism is also significantly associated with the higher SLE disease activity index (SLEDAI) score (p=0.014 for SLEDAI \u226512 vs. p=0.861 for SLEDAI <12) as well as more severe clinical manifestations including arthritis (p=0.008), anemia (p=0.006), leukopenia (p=0.005), complement decrease (p=0.006), hematuria (p=0.004) and leucocyturia (p=0.010) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "cae78c49-0fe2-453f-96aa-4282b86a1224",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C29",
+      "claim": "Homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with anemia (p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, homozygous Fc\u03b3RIIB-I232T polymorphism is also significantly associated with the higher SLE disease activity index (SLEDAI) score (p=0.014 for SLEDAI \u226512 vs. p=0.861 for SLEDAI <12) as well as more severe clinical manifestations including arthritis (p=0.008), anemia (p=0.006), leukopenia (p=0.005), complement decrease (p=0.006), hematuria (p=0.004) and leucocyturia (p=0.010) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "e5a353f9-94ca-47e7-91f4-0c681574741b",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C30",
+      "claim": "Homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with leukopenia (p=0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, homozygous Fc\u03b3RIIB-I232T polymorphism is also significantly associated with the higher SLE disease activity index (SLEDAI) score (p=0.014 for SLEDAI \u226512 vs. p=0.861 for SLEDAI <12) as well as more severe clinical manifestations including arthritis (p=0.008), anemia (p=0.006), leukopenia (p=0.005), complement decrease (p=0.006), hematuria (p=0.004) and leucocyturia (p=0.010) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "4a65738b-780c-48d0-b766-703277a9df15",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C31",
+      "claim": "Homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with complement decrease (p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, homozygous Fc\u03b3RIIB-I232T polymorphism is also significantly associated with the higher SLE disease activity index (SLEDAI) score (p=0.014 for SLEDAI \u226512 vs. p=0.861 for SLEDAI <12) as well as more severe clinical manifestations including arthritis (p=0.008), anemia (p=0.006), leukopenia (p=0.005), complement decrease (p=0.006), hematuria (p=0.004) and leucocyturia (p=0.010) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "4cf51f17-d74c-4af4-a212-f600ba86b872",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C32",
+      "claim": "Homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with hematuria (p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, homozygous Fc\u03b3RIIB-I232T polymorphism is also significantly associated with the higher SLE disease activity index (SLEDAI) score (p=0.014 for SLEDAI \u226512 vs. p=0.861 for SLEDAI <12) as well as more severe clinical manifestations including arthritis (p=0.008), anemia (p=0.006), leukopenia (p=0.005), complement decrease (p=0.006), hematuria (p=0.004) and leucocyturia (p=0.010) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "a98d9286-fb55-4dc6-9d11-e7849985d908",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C33",
+      "claim": "Homozygous Fc\u03b3RIIB-I232T polymorphism is significantly associated with leucocyturia (p=0.010).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, homozygous Fc\u03b3RIIB-I232T polymorphism is also significantly associated with the higher SLE disease activity index (SLEDAI) score (p=0.014 for SLEDAI \u226512 vs. p=0.861 for SLEDAI <12) as well as more severe clinical manifestations including arthritis (p=0.008), anemia (p=0.006), leukopenia (p=0.005), complement decrease (p=0.006), hematuria (p=0.004) and leucocyturia (p=0.010) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "ec6de5bc-096e-48ad-8b53-7d45c6c74dea",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C34",
+      "claim": "A suggestive association is observed between homozygous Fc\u03b3RIIB-I232T polymorphism and serositis (p=0.063).",
+      "claim_type": "EXPLICIT",
+      "source": "A suggestive association is also observed between homozygous Fc\u03b3RIIB-I232T polymorphism and serositis (p=0.063) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "bf9f59f7-536f-44f3-a5f7-d962393482ca",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C35",
+      "claim": "I232T substitution enforces the inclination of the TM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations confirm our previous results with the MDS of the TM domain of Fc\u03b3RIIB only (Xu et al., 2016), that is, I232T polymorphic substitution enforces the inclination of the TM domain (Figure 1B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "b3fc5b06-555c-448a-a3b3-b515ce516591",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C36",
+      "claim": "The inclination of the TM domain by I232T might result from the ability of H-bond formation between the side-chain O\u03b3 atom of T232 and the backbone oxygen atom of a neighbor residue V228.",
+      "claim_type": "EXPLICIT",
+      "source": "This inclination might result from the ability of H-bond formation between the side-chain O\u03b3 atom of T232 and the backbone oxygen atom of a neighbor residue V228 (Figure 1B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "45f96d14-876b-4af5-970d-e78a4d6bc2a3",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C37",
+      "claim": "The difference of the TM domain orientation between 232I and 232T induces a distinct conformation on the ecto-membrane proximal region (ecto-TM linker).",
+      "claim_type": "EXPLICIT",
+      "source": "The difference of the TM domain orientation between 232I and 232T induces a distinct conformation on the ecto-membrane proximal region (ecto-TM linker) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "5987e5d3-7882-461e-bfdb-aa58f4a53235",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C38",
+      "claim": "The length between S218 and P221 peaks at 11 \u00c5 for 232T, about 3 \u00c5 longer than that for 232I.",
+      "claim_type": "EXPLICIT",
+      "source": "And the length between S218 and P221 peaks at 11 \u00c5 for 232T, about 3 \u00c5 longer than that for 232I (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "14b0d053-6cda-46ff-b642-7339d52d2b00",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C39",
+      "claim": "The main chain dihedral angle of P217 in 232I displays two populations at 141\u00b0\u00b123\u00b0 and \u221250\u00b0\u00b112\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The main chain dihedral angle of P217 in 232I displays two populations at 141\u00b0\u00b123\u00b0 and \u221250\u00b0\u00b112\u00b0, respectively, but shifts to \u221240\u00b0\u00b145\u00b0 and \u221275\u00b0\u00b112\u00b0 in 232T (Figure 1D and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "35f49066-f814-43e9-887d-6787a4452ad7",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C40",
+      "claim": "The main chain dihedral angle of P217 in 232T shifts to \u221240\u00b0\u00b145\u00b0 and \u221275\u00b0\u00b112\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The main chain dihedral angle of P217 in 232I displays two populations at 141\u00b0\u00b123\u00b0 and \u221250\u00b0\u00b112\u00b0, respectively, but shifts to \u221240\u00b0\u00b145\u00b0 and \u221275\u00b0\u00b112\u00b0 in 232T (Figure 1D and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "64026a7e-3dcd-46ff-9ee8-7cc51c52e24e",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C41",
+      "claim": "The ectodomain of 232I maintains more straight-up conformation, whereas that of 232T bends down toward the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "The ectodomain of 232I maintains more straight-up conformation, whereas that of 232T bends down toward the lipid bilayer (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "4f93634e-a686-484b-b41a-ee3f01deec1d",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C42",
+      "claim": "The ectodomain inclination angle of 232T distributes across 30 ~ 60\u00b0 with a sharper single-peak at 40\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analyses show that the ectodomain inclination angle of 232T distributes across 30 ~ 60\u00b0 with a sharper single-peak at 40\u00b0 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "093b0bfc-907d-4d30-b6ae-18a753284420",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C43",
+      "claim": "The ectodomain inclination angle of 232I distributes much flatter with a favorable probability ranging from 50\u00b0 to 70\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the angle of 232I distributes much flatter with a favorable probability ranging from 50\u00b0 to 70\u00b0 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "f538cddf-3b13-412c-9b9f-c958f3812465",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C44",
+      "claim": "The distance of C1 domain to the membrane is shorter for 232T than 232I.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance of C1 domain to the membrane is shorter for 232T than 232I (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "c1487254-9486-4a3e-a1c2-987d96170517",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C45",
+      "claim": "The tilting orientation of 232T may sterically prevent the accessibility of the IgG's Fc portion.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the tilting orientation of 232T may sterically prevent the accessibility of the IgG's Fc portion, as significant clashes between docked Fc and the membrane are observed, although Fc\u03b3RIIB's Fc binding site is not completely buried into the membrane (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "4cdf7db0-3baa-4c30-b7a8-8a8190726a8c",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C46",
+      "claim": "The ectodomain of 232T is less flexible such that the chance for Fc\u03b3RIIB to associate with the ligand is greatly decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the ectodomain of 232T is less flexible (Figure 1E) such that the chance for Fc\u03b3RIIB to associate with the ligand is greatly decreased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "a3ed3b08-752b-4b20-aafa-9b27c4a15ff5",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C47",
+      "claim": "I232T polymorphic change enhances the FRET efficiency about two folds, from ~20% in 232I to ~40% in 232T.",
+      "claim_type": "EXPLICIT",
+      "source": "With de-quenching assay (Chen et al., 2015; Xu et al., 2008) on A20II1.6 B cells expressing similar level of either mTFP-232I or mTFP-232T (Figure 2B and C), we find that I232T polymorphic change indeed enhances the FRET efficiency about two folds, from ~20% in 232I to ~40% in 232T (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by FRET assay data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "94d25595-e036-4040-95df-5a413fcac587",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C48",
+      "claim": "The enhancement of FRET efficiency by I232T polymorphism indicates that 232T ectodomain prefers to a more recumbent orientation on the plasma membrane than 232I.",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancement of FRET efficiency by I232T polymorphism indicates that 232T ectodomain prefers to a more recumbent orientation on the plasma membrane than 232I, consistent with above MDS observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from FRET assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "ba95b210-0928-4a2e-87d8-e3e1ec8758c7",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C49",
+      "claim": "The in situ 2D effective binding affinity of 232I with human IgG1 antibody (anti-S) is about three times higher than that of 232T (AcKa = 3.03 \u00b1 0.15\u00d710\u22127 and 0.80 \u00b1 0.04 \u00d7 10\u22127 \u03bcm4, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that the in situ 2D effective binding affinity of 232I with human IgG1 antibody (anti-MERS virus S protein, or anti-S) is about three times higher than that of 232T (AcKa = 3.03 \u00b1 0.15\u00d710\u22127 and 0.80 \u00b1 0.04 \u00d7 10\u22127 \u03bcm4, respectively), whereas that with human IgG4 is hardly measured as Fc\u03b3RIIB and IgG4 binding is known to be extremely weak and beyond the detection limit (10\u22128 \u03bcm4) of this assay (Huang et al., 2010) (Figure 3B and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by adhesion frequency assay data shown in Figure 3B and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "65eb9a77-62ac-4b9e-9349-05010d92b456",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C50",
+      "claim": "The 2D off-rates of 232I and 232T from human IgG1 are similar (7.75 \u00b1 1.42 and 7.62 \u00b1 1.41 s\u22121, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Further analyses show that although the 2D off-rates of 232I and 232T from human IgG1 are similar (7.75 \u00b1 1.42 and 7.62 \u00b1 1.41 s\u22121, respectively) (Figure 3B and H), the 2D effective on-rate of 232T with IgG1 is three times slower than that of 232I (Figure 3B and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by adhesion frequency assay data shown in Figure 3B and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "7222d5a9-a74e-4797-be23-e23a262f625e",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C51",
+      "claim": "The 2D effective on-rate of 232T with IgG1 is three times slower than that of 232I.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analyses show that although the 2D off-rates of 232I and 232T from human IgG1 are similar (7.75 \u00b1 1.42 and 7.62 \u00b1 1.41 s\u22121, respectively) (Figure 3B and H), the 2D effective on-rate of 232T with IgG1 is three times slower than that of 232I (Figure 3B and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by adhesion frequency assay data shown in Figure 3B and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "88d89b86-362b-4ca7-a6ef-bdd9cf34b305",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C52",
+      "claim": "Both 2D effective affinity and on-rate of 232I with anti-gp120 human IgG1 are three times higher than those of 232T (AcKa = 7.74 \u00b1 0.24\u00d710\u22127 and 2.43 \u00b1 0.11 \u00d7 10\u22127 \u03bcm4, respectively; Ackon=5.95\u00b10.19 and 2.16 \u00b1 0.10 \u00d7 10\u22127 \u03bcm4 s\u22121, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "These results are also confirmed by using another human IgG1 antibody (anti-HIV1 gp120 IgG1, or anti-gp120). Both 2D effective affinity and on-rate of 232I with anti-gp120 human IgG1 are three times higher than those of 232T (AcKa = 7.74 \u00b1 0.24\u00d710\u22127 and 2.43 \u00b1 0.11 \u00d7 10\u22127 \u03bcm4, respectively; Ackon=5.95\u00b10.19 and 2.16 \u00b1 0.10 \u00d7 10\u22127 \u03bcm4 s\u22121, respectively), while the respective off-rates are similar (7.70 \u00b1 0.83 and 8.90 \u00b1 1.61 s\u22121, respectively) (Figure 3C and F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by adhesion frequency assay data shown in Figure 3C and F\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "309011dc-52d9-4cd9-81ef-c1af1f0c6b37",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C53",
+      "claim": "The off-rates of 232I and 232T with anti-gp120 human IgG1 are similar (7.70 \u00b1 0.83 and 8.90 \u00b1 1.61 s\u22121, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "These results are also confirmed by using another human IgG1 antibody (anti-HIV1 gp120 IgG1, or anti-gp120). Both 2D effective affinity and on-rate of 232I with anti-gp120 human IgG1 are three times higher than those of 232T (AcKa = 7.74 \u00b1 0.24\u00d710\u22127 and 2.43 \u00b1 0.11 \u00d7 10\u22127 \u03bcm4, respectively; Ackon=5.95\u00b10.19 and 2.16 \u00b1 0.10 \u00d7 10\u22127 \u03bcm4 s\u22121, respectively), while the respective off-rates are similar (7.70 \u00b1 0.83 and 8.90 \u00b1 1.61 s\u22121, respectively) (Figure 3C and F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by adhesion frequency assay data shown in Figure 3C and F\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "cc6ad4ce-022f-4ef0-b37a-a6634bcd0865",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C54",
+      "claim": "I232T polymorphic change causes the reduction of 2D affinity and on-rate of Fc\u03b3RIIB's binding with IgG2.",
+      "claim_type": "EXPLICIT",
+      "source": "I232T polymorphic change also causes the reduction of 2D affinity and on-rate of Fc\u03b3RIIB's binding with other IgG subtypes (e.g. IgG2 and IgG3) (Figure 3D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by adhesion frequency assay data shown in Figure 3D\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "53feb1cc-31aa-4e36-b1aa-bd468aaa62fe",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C55",
+      "claim": "I232T polymorphic change causes the reduction of 2D affinity and on-rate of Fc\u03b3RIIB's binding with IgG3.",
+      "claim_type": "EXPLICIT",
+      "source": "I232T polymorphic change also causes the reduction of 2D affinity and on-rate of Fc\u03b3RIIB's binding with other IgG subtypes (e.g. IgG2 and IgG3) (Figure 3D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by adhesion frequency assay data shown in Figure 3D\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "f3b39b39-d3ba-4a4c-a97f-50e3b794ddbd",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C56",
+      "claim": "Fixing B cells expressing Fc\u03b3RIIB by paraformaldehyde (PFA) does not alter the ligand binding defects for I232T polymorphic change.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that fixing B cells expressing Fc\u03b3RIIB by paraformaldehyde (PFA) does not alter the ligand binding defects for I232T polymorphic change (Figure 3\u2014figure supplement 1), suggesting the reduction of lateral diffusion by I232T hardly contributes to the reduction of the ligand binding affinity and on-rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by adhesion frequency assay data on fixed cells shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "965ec1f5-5de2-4de9-800b-aa8a00c77ef1",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C57",
+      "claim": "The reduction of lateral diffusion by I232T hardly contributes to the reduction of the ligand binding affinity and on-rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that fixing B cells expressing Fc\u03b3RIIB by paraformaldehyde (PFA) does not alter the ligand binding defects for I232T polymorphic change (Figure 3\u2014figure supplement 1), suggesting the reduction of lateral diffusion by I232T hardly contributes to the reduction of the ligand binding affinity and on-rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and inferred from adhesion frequency assay data on fixed cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "e31df87c-24e7-4b9d-ad17-79795b67d09b",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C58",
+      "claim": "Homozygous Fc\u03b3RIIB-I232T confers dramatically increased risk of developing more severe clinical manifestations in patients with SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we confirm that homozygous Fc\u03b3RIIB-I232T confers dramatically increased risk of developing more severe clinical manifestations in patients with SLE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the summary and supported by clinical data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "6af5f418-c094-4615-8792-73098f7b561c",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C59",
+      "claim": "The pathological relevance of I232T is caused by the inclination of the TM domain which leads to Fc\u03b3RIIB ectodomain bending toward plasma membrane, significantly impairing Fc\u03b3RIIB's binding ability to IgG's Fc portion through reducing in situ binding affinity and association rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathological relevant of I232T is caused by the inclination of the TM domain which leads to Fc\u03b3RIIB ectodomain bending toward plasma membrane, significantly impairing Fc\u03b3RIIB's binding ability to IgG's Fc portion through reducing in situ binding affinity and association rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the summary and supported by molecular dynamics simulations, FRET assay, and adhesion frequency assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "4c94ac38-947a-427e-84f4-81ff52ace4d0",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C60",
+      "claim": "The hampered Fc recognition ability of Fc\u03b3RIIB-I232T results in the deficiency on its inhibitory function and thus hyper-activated immune cells, potentially contributing to SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "The hampered Fc recognition ability of Fc\u03b3RIIB-I232T results in the deficiency on its inhibitory function and thus hyper-activated immune cells, potentially contributing to SLE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the summary and represents a logical inference from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "2c601848-cc3e-4204-8384-18ae30e77bab",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C61",
+      "claim": "711 unrelated Chinese SLE patients with complete clinical documents were enrolled into this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We enrolled 711 unrelated Chinese SLE patients with complete clinical documents into this study (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and describes the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "89795325-df55-447d-b60a-635b92e63a66",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C62",
+      "claim": "688 unrelated healthy Chinese volunteers with matched gender and age were enrolled as controls.",
+      "claim_type": "EXPLICIT",
+      "source": "688 unrelated healthy Chinese volunteers with matched gender and age were also enrolled as controls (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and describes the control cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "168abaab-8d1f-415b-99be-2ab70f7ed8ec",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C63",
+      "claim": "The study included 50 Fc\u03b3RIIB-I232T homozygotes, 283 Fc\u03b3RIIB-I232T heterozygotes and 378 Fc\u03b3RIIB-WT carriers among 711 SLE patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we comprehensively analyzed the clinical data for all 711 SLE patients, including 50 Fc\u03b3RIIB-I232T homozygotes, 283 Fc\u03b3RIIB-I232T heterozygotes and 378 Fc\u03b3RIIB-WT carriers (Table 1 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and describes the genotype distribution in the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "93ca019b-7d83-49de-915b-66568bd26cec",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C64",
+      "claim": "The extracellular domains of 232I and 232T, especially their IgG binding sites, do not undergo obvious conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the extracellular domains of 232I and 232T, especially their IgG binding sites, do not undergo obvious conformational change (Figure 1\u2014figure supplement 3), their orientations toward the membrane differ significantly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "f458521f-8c57-4967-ae1e-3a66302cb552",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C65",
+      "claim": "The orientations of the extracellular domains of 232I and 232T toward the membrane differ significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the extracellular domains of 232I and 232T, especially their IgG binding sites, do not undergo obvious conformational change (Figure 1\u2014figure supplement 3), their orientations toward the membrane differ significantly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "d4c9f099-8446-454e-98f8-7758b4e6631b",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C66",
+      "claim": "The TM helix tilting and S218-P221 prolongation for 232T can be readily observed in lipid membranes with different-length lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The TM helix tilting and S218-P221 prolongation for 232T can be readily observed in these two systems (Figure 1\u2014figure supplement 4B\u20134C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1\u2014figure supplement 4B\u20134C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "91b7804f-294e-4348-a8f1-531949cc3a56",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C67",
+      "claim": "Fc\u03b3RIIB's Fc binding site is not completely buried into the membrane in 232T.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the tilting orientation of 232T may sterically prevent the accessibility of the IgG's Fc portion, as significant clashes between docked Fc and the membrane are observed, although Fc\u03b3RIIB's Fc binding site is not completely buried into the membrane (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "23d9c897-1083-4ad1-97f1-771825a34562",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C68",
+      "claim": "Significant clashes between docked Fc and the membrane are observed for 232T.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the tilting orientation of 232T may sterically prevent the accessibility of the IgG's Fc portion, as significant clashes between docked Fc and the membrane are observed, although Fc\u03b3RIIB's Fc binding site is not completely buried into the membrane (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "469acf91-1ce3-4f3f-acc5-75c9ee4ffc38",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C69",
+      "claim": "Fc\u03b3RIIB and IgG4 binding is extremely weak and beyond the detection limit (10\u22128 \u03bcm4) of the adhesion frequency assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that the in situ 2D effective binding affinity of 232I with human IgG1 antibody (anti-MERS virus S protein, or anti-S) is about three times higher than that of 232T (AcKa = 3.03 \u00b1 0.15\u00d710\u22127 and 0.80 \u00b1 0.04 \u00d7 10\u22127 \u03bcm4, respectively), whereas that with human IgG4 is hardly measured as Fc\u03b3RIIB and IgG4 binding is known to be extremely weak and beyond the detection limit (10\u22128 \u03bcm4) of this assay (Huang et al., 2010) (Figure 3B and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "278e7e55-5094-43f5-b344-f946adaa27ff",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C70",
+      "claim": "The lateral diffusion has negligible impact on 2D affinity of receptor-ligand binding on live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Zhu and colleagues have also extensively discussed and experimentally proved that the lateral diffusion has negligible impact on 2D affinity of receptor-ligand binding on live cells (Chesla et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "7c6e6139-a5ba-4fce-ba26-10362939a409",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C71",
+      "claim": "The Fc\u03b3RIIIA-F158V polymorphism is a binding-enhancing polymorphism.",
+      "claim_type": "IMPLICIT",
+      "source": "To further exclude potential technical artifacts in in situ single-cell adhesion frequency assay, we confirm previously known binding-enhancing Fc\u03b3RIIIA-F158V polymorphism by using the 2D binding assay in this report (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by adhesion frequency assay data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "14b2eb83-edaf-4a6f-9e95-ece94c38491b",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C72",
+      "claim": "I232T polymorphic change in the TM domain of Fc\u03b3RIIB allosterically tilts Fc\u03b3RIIB ectodomains toward the plasma membrane, rendering steric hindrance of its ligand binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "All these data strongly support that I232T polymorphic change in the TM domain of Fc\u03b3RIIB allosterically tilts Fc\u03b3RIIB ectodomains toward the plasma membrane, rendering steric hindrance of its ligand binding domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations, FRET assay, and adhesion frequency assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "ab50dc4a-b2bb-46f0-a7ad-8ce74b2ddb2a",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C73",
+      "claim": "232T exhibits significantly reduced 2D affinity and association on-rate to IgG antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, 232T exhibits significantly reduced 2D affinity and association on-rate to IgG antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by adhesion frequency assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "88ced102-4cdd-4395-8728-358f77d00a0e",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C74",
+      "claim": "Similar allosteric regulation may be applied to a broad range of transmembrane receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "To be noted, it is possible that similar allosteric regulation may be applied to a broad range of transmembrane receptors, for example, potentially explaining how membrane anchor pattern of CD16a influences ligand recognition (Chesla et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and represents a speculative statement about broader implications.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "f4778998-9827-4e7e-ad41-72e62681241f",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C75",
+      "claim": "The membrane anchor pattern of CD16a influences ligand recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "To be noted, it is possible that similar allosteric regulation may be applied to a broad range of transmembrane receptors, for example, potentially explaining how membrane anchor pattern of CD16a influences ligand recognition (Chesla et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "ce902047-d4df-4114-ab23-b9de448c570e",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C76",
+      "claim": "Fc\u03b3RIIB-I232T is the first example that a naturally occurring diseases-associated SNP within the TM domain of a single-pass transmembrane receptor can allosterically suppress the receptor's ligand recognition and signaling functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is very likely that Fc\u03b3RIIB-I232T is the first example that a naturally occurring diseases-associated SNP within the TM domain of a single-pass transmembrane receptor can allosterically suppress the receptor's ligand recognition and signaling functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents a claim about the novelty of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "4314395a-6580-4f3c-b7bc-e8df90948a57",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C77",
+      "claim": "Fc\u03b3RIIB's suppressive function is triggered by its ligand engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Fc\u03b3RIIB's suppressive function is triggered by its ligand engagement, while this function is disrupted by a single amino acid change in the 232th residue from Ile to Thr in Fc\u03b3RIIB's TM domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents established knowledge about Fc\u03b3RIIB function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "e0eeafba-8b0a-4afd-946a-f0cadbfded90",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C78",
+      "claim": "The suppressive function of Fc\u03b3RIIB is disrupted by a single amino acid change in the 232th residue from Ile to Thr in Fc\u03b3RIIB's TM domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Fc\u03b3RIIB's suppressive function is triggered by its ligand engagement, while this function is disrupted by a single amino acid change in the 232th residue from Ile to Thr in Fc\u03b3RIIB's TM domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "476639c5-bedd-4646-a301-dac00228def7",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C79",
+      "claim": "Two early biochemical studies proposed a model of reduced affinity between 232T and lipid rafts to explain the functional relevance and effect of this natural mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two early biochemical studies proposed a model of reduced affinity between 232T and lipid rafts to explain the functional relevance and effect of this natural mutation (Floto et al., 2005; Kono et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "6890f6f0-e233-4054-b5da-678ea101ebf5",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C80",
+      "claim": "A recent study proposed a model that I232T mutation enforces the inclination of the TM domain inside the membrane, thereby reducing the lateral mobility and inhibitory functions of Fc\u03b3RIIB.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study also proposed a different model that I232T mutation enforces the inclination of the TM domain inside the membrane, thereby reducing the lateral mobility and inhibitory functions of Fc\u03b3RIIB (Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "74875aba-4141-49d8-8c58-046c92b90809",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C81",
+      "claim": "Both previous models assumed that 232T and Fc\u03b3RIIB-WT (232I) have an equal capability to perceive and bind to their ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both models assumed that 232T and Fc\u03b3RIIB-WT (232I) have an equal capability to perceive and bind to their ligands, the IgG's Fc portion within the antibody-antigen immune complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents a critique of previous models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "cdbd329c-a6cc-4303-83c6-eca53cfc55da",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C82",
+      "claim": "The assumption that 232T and 232I have equal ligand binding capability is based on the argument that they are identical in the amino acid sequence of their extracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This important but experimentally un-proved pre-requisition in both models is based on the argument that 232T and 232I are identical in the amino acid sequence of their extracellular domains and thus the potential structure of ligand binding site for recognizing the ligands, that is, the IgG's Fc portions (Dal Porto et al., 2004; D'Ambrosio et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "3a3433e2-fb4b-46b8-945e-2d52a10bd8b4",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C83",
+      "claim": "There is no direct experimental evidence to validate the assumption that 232T and 232I have equal ligand binding capability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to date, there is no direct experimental evidence to validate this pre-requisite assumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents a gap in the literature that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "f2be4e8f-b652-4919-9577-5754f979c2f1",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C84",
+      "claim": "The membrane buried non-helical region of the linker extends more in 232T than that in 232I.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane buried non-helical region of the linker extends more in 232T than that in 232I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "15bcc6a6-0b1c-4878-99cf-9bd25fd5a08c",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C85",
+      "claim": "The SNP I232T occurs at a notable frequency in up to 40% (heterozygous polymorphism) humans.",
+      "claim_type": "EXPLICIT",
+      "source": "These clinical association analyses demonstrate that SLE patients homozygous for Fc\u03b3RIIB-I232T polymorphism are prone to develop more severe clinical manifestations than the patients carrying heterozygous Fc\u03b3RIIB-I232T polymorphism or Fc\u03b3RIIB-WT, reinforcing the importance to study the pathogenic mechanism of Fc\u03b3RIIB-I232T polymorphism since this SNP occurs at a notable frequency in up to 40% (heterozygous polymorphism) humans (Niederer et al., 2010; Smith and Clatworthy, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "11490e93-6294-4366-97ba-deee0db73877",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "claim_id": "C86",
+      "claim": "SLE patients homozygous for Fc\u03b3RIIB-I232T polymorphism are prone to develop more severe clinical manifestations than the patients carrying heterozygous Fc\u03b3RIIB-I232T polymorphism or Fc\u03b3RIIB-WT.",
+      "claim_type": "EXPLICIT",
+      "source": "These clinical association analyses demonstrate that SLE patients homozygous for Fc\u03b3RIIB-I232T polymorphism are prone to develop more severe clinical manifestations than the patients carrying heterozygous Fc\u03b3RIIB-I232T polymorphism or Fc\u03b3RIIB-WT, reinforcing the importance to study the pathogenic mechanism of Fc\u03b3RIIB-I232T polymorphism since this SNP occurs at a notable frequency in up to 40% (heterozygous polymorphism) humans (Niederer et al., 2010; Smith and Clatworthy, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by clinical data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Homozygous Fc\u03b3RIIB-I232T polymorphism is strongly associated with SLE and correlates with more severe clinical manifestations including early disease onset, elevated autoantibodies, higher SLEDAI scores, and multiple organ system involvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C34 and C58-C63 provide comprehensive clinical data from 711 SLE patients and 688 controls showing statistically significant associations between homozygous I232T and disease severity. The chi-square test (p=0.008, OR=1.927) and multiple clinical parameters with p-values <0.05 support these associations. Sample sizes are adequate and statistical methods appear appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations reveal that I232T substitution causes TM domain tilting through H-bond formation, which propagates to alter the ecto-TM linker conformation and causes the ectodomain to bend toward the membrane with a more restricted angular distribution compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C44 present detailed MDS data showing structural changes from TM to ectodomain. The simulations used established methods (NAMD, CHARMM36m force field) with 200 ns trajectories and multiple lipid compositions (C66). Quantitative measurements of angles, distances, and dihedral angles are provided with clear differences between 232I and 232T. The mechanistic hypothesis (C36) about H-bond formation is reasonable but remains computational inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "5bcad750-7c91-4075-9063-83f983d0eb58",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FRET experiments demonstrate that I232T polymorphism increases FRET efficiency two-fold (~20% to ~40%), indicating the ectodomain adopts a more recumbent orientation toward the plasma membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 provide experimental validation of the MDS predictions using single-cell FRET with mTFP-tagged receptors and R18 membrane dye. The two-fold increase in FRET efficiency is statistically significant (p=0.0001, ~20 cells per condition) and consistent with reduced ectodomain-membrane distance predicted by simulations. The experimental design is appropriate for measuring orientation changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "I232T substitution reduces in situ 2D binding affinity and association rates with IgG1, IgG2, and IgG3 by three to four-fold, while dissociation rates remain similar, as measured by single-cell adhesion frequency assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 and C49-C55 present quantitative 2D binding kinetics from adhesion frequency assays. Multiple IgG subtypes were tested with 3-4 cell pairs per condition. The ~3-fold reduction in affinity and on-rate is consistent across different IgG1 antibodies (anti-S and anti-gp120) and extends to IgG2 and IgG3. Off-rates show no significant difference, indicating the defect is in association. Molecular density measurements were performed to enable accurate kinetic calculations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "43ff7178-43ad-4615-99c4-5cc3f86ee0f3",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cell fixation experiments and prior literature demonstrate that reduced lateral diffusion does not account for the decreased ligand binding affinity and on-rate observed with I232T.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 shows that PFA fixation (which eliminates lateral diffusion) does not alter the binding defects of I232T, directly testing whether mobility contributes to the phenotype. This is supported by C70 citing established work showing lateral diffusion has negligible impact on 2D affinity. The control experiment appropriately addresses a potential confounding mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "be500853-e9a3-4fb1-8856-df1fb1938876",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations suggest that the tilted orientation of 232T creates steric clashes between docked Fc and the membrane and reduces ectodomain flexibility, potentially explaining reduced ligand accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45-C46 and C67-C68 present computational observations of Fc-membrane clashes and reduced flexibility. However, these are inferences from simulations with docked Fc structures rather than direct experimental measurements. While consistent with the binding data, the mechanistic interpretation remains speculative. The binding site is noted to not be completely buried (C67), complicating the steric hindrance model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "2061f954-1839-4aa2-8eb7-dd4c892511d0",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The adhesion frequency assay successfully detects the known binding-enhancing Fc\u03b3RIIIA-F158V polymorphism, validating the technical approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 provides a positive control showing the assay can detect increased binding affinity for a known polymorphism. This validates the technical approach and demonstrates the assay is not systematically biased. The result strengthens confidence in the I232T binding measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "2d41cc8a-3908-48f8-8052-c51e63b5cf8f",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that I232T causes TM domain tilting leading to ectodomain bending, which allosterically impairs IgG binding through reduced affinity and association rate, resulting in loss of inhibitory function and contributing to SLE pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C60, and C72 synthesize the structural (MDS, FRET) and functional (binding kinetics) data into a mechanistic model. The allosteric mechanism is well-supported by the convergent evidence from multiple experimental approaches. However, C60's claim about contribution to SLE remains inferential as direct functional assays of immune cell inhibition are not presented in this study, though prior work (C17-C21) supports this connection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "3292820e-50da-4510-adda-7530361daf10",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Fc\u03b3RIIB is a widely expressed inhibitory immune receptor whose suppressive function is triggered by ligand engagement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12, C13, and C77 present established background knowledge about Fc\u03b3RIIB function and expression, supported by appropriate citations. These provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "7ac17ec8-6f05-445a-9a55-a4f46b515d22",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The I232T polymorphism in the Fc\u03b3RIIB transmembrane domain is associated with loss of suppressive function and SLE susceptibility in multiple epidemiological studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C14-C16 summarize prior epidemiological evidence linking I232T to SLE, supported by multiple citations. This establishes the clinical relevance and motivation for mechanistic investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "b2446bf8-a854-4685-889d-43ac7b70d8cc",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior studies demonstrate that cells expressing 232T exhibit hyperactivation, loss of BCR oligomerization inhibition, altered immunological synapse formation, and elevated PI3K activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 cite multiple prior studies characterizing the functional consequences of I232T in immune cells. These establish that the polymorphism causes loss of inhibitory function through various mechanisms, providing context for the current mechanistic investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "6344ff9e-050c-4913-8eb3-02ed166de0d9",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous models proposed that I232T causes TM tilting and reduced lipid raft affinity or lateral mobility, but assumed equal ligand binding capability between 232I and 232T\u2014an assumption lacking direct experimental validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C79-C83 accurately summarize prior mechanistic models and identify a critical gap: the assumption of equal ligand binding was never directly tested. This effectively motivates the current study's focus on measuring binding kinetics. The critique of prior work is fair and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "fd4ef150-b112-4a91-9b20-ab353c4e01c0",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A suggestive but non-significant association (p=0.063) is observed between homozygous I232T and serositis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C34 reports a p-value of 0.063, which does not meet the conventional significance threshold of 0.05. The authors appropriately describe this as 'suggestive' rather than significant. This represents a borderline finding that would require additional data to confirm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "80bab846-e232-4161-bf2f-13fe39641764",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that similar allosteric regulation may apply broadly to transmembrane receptors and suggest Fc\u03b3RIIB-I232T may be the first example of a disease-associated TM SNP causing allosteric suppression of ligand recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74 and C76 are explicitly speculative statements about broader implications and novelty. While the mechanism demonstrated here could apply to other receptors, this remains hypothetical. The claim of being 'first' (C76) is difficult to verify comprehensively and depends on how strictly one defines the criteria.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "b9e2939d-9045-4530-91fe-e239dbf224e8",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Fc\u03b3RIIB binding to IgG4 is extremely weak and below the detection limit of the adhesion frequency assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is supported by citation to prior work establishing weak Fc\u03b3RIIB-IgG4 binding. This explains why IgG4 was not extensively studied and is consistent with known receptor-ligand specificities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    },
+    {
+      "id": "77ebb71a-a1fd-4c19-99ad-ee6b7e34d2db",
+      "content_id": "b6ea3b88-71b9-4fd2-bda9-a31cb45c7922",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The I232T SNP occurs at a notable frequency of up to 40% (heterozygous) in human populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by citations and emphasizes the clinical relevance of studying this polymorphism given its high population frequency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:18:12.231580Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e3009684-0924-42d7-850e-0ac53db7ab60",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "2f4b42c2-64e6-4496-9b03-f673ee0ef14e",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "03795cb8-3be7-4e3a-b11a-7b0642a32509",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "60246644-f0f4-4e6a-b0f1-e9083f1273a8",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "9841cfe6-461d-4c17-9ae7-70d487d10f28",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "2feeafae-f5b7-46ec-b557-f9de7c4173a5",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "ced13ab8-6d3d-477b-9eb1-d78f82ac7d5f",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "cae78c49-0fe2-453f-96aa-4282b86a1224",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "e5a353f9-94ca-47e7-91f4-0c681574741b",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "4a65738b-780c-48d0-b766-703277a9df15",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "4cf51f17-d74c-4af4-a212-f600ba86b872",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "a98d9286-fb55-4dc6-9d11-e7849985d908",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "ec6de5bc-096e-48ad-8b53-7d45c6c74dea",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "e31df87c-24e7-4b9d-ad17-79795b67d09b",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "2c601848-cc3e-4204-8384-18ae30e77bab",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "89795325-df55-447d-b60a-635b92e63a66",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "168abaab-8d1f-415b-99be-2ab70f7ed8ec",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "11490e93-6294-4366-97ba-deee0db73877",
+      "result_id": "4b5b3cfa-618c-4c8d-8a0a-35319bb66fae"
+    },
+    {
+      "claim_id": "bf9f59f7-536f-44f3-a5f7-d962393482ca",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "b3fc5b06-555c-448a-a3b3-b515ce516591",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "45f96d14-876b-4af5-970d-e78a4d6bc2a3",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "5987e5d3-7882-461e-bfdb-aa58f4a53235",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "14b0d053-6cda-46ff-b642-7339d52d2b00",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "35f49066-f814-43e9-887d-6787a4452ad7",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "64026a7e-3dcd-46ff-9ee8-7cc51c52e24e",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "4f93634e-a686-484b-b41a-ee3f01deec1d",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "093b0bfc-907d-4d30-b6ae-18a753284420",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "f538cddf-3b13-412c-9b9f-c958f3812465",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "93ca019b-7d83-49de-915b-66568bd26cec",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "f458521f-8c57-4967-ae1e-3a66302cb552",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "d4c9f099-8446-454e-98f8-7758b4e6631b",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "f2be4e8f-b652-4919-9577-5754f979c2f1",
+      "result_id": "f4e1df7c-bbc3-41f9-92b7-f97aecd3ab7d"
+    },
+    {
+      "claim_id": "a3ed3b08-752b-4b20-aafa-9b27c4a15ff5",
+      "result_id": "5bcad750-7c91-4075-9063-83f983d0eb58"
+    },
+    {
+      "claim_id": "94d25595-e036-4040-95df-5a413fcac587",
+      "result_id": "5bcad750-7c91-4075-9063-83f983d0eb58"
+    },
+    {
+      "claim_id": "88d1d6ed-8236-4829-a89d-a1e28d3e0a4e",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "f42214a8-02ca-4fe8-9fe4-3b901c907ca3",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "5e9ea98c-67d8-4b0f-8ce4-edf76f6eeab5",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "f9573319-f498-415d-8f77-079a7cf8fb18",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "76e91a16-70ed-49cc-bb41-9e7f196bbc3a",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "5c840e3b-455a-456d-a8a0-b9cee99c289a",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "ba95b210-0928-4a2e-87d8-e3e1ec8758c7",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "65eb9a77-62ac-4b9e-9349-05010d92b456",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "7222d5a9-a74e-4797-be23-e23a262f625e",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "88d89b86-362b-4ca7-a6ef-bdd9cf34b305",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "309011dc-52d9-4cd9-81ef-c1af1f0c6b37",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "cc6ad4ce-022f-4ef0-b37a-a6634bcd0865",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "53feb1cc-31aa-4e36-b1aa-bd468aaa62fe",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "ab50dc4a-b2bb-46f0-a7ad-8ce74b2ddb2a",
+      "result_id": "24caea44-d9a9-4d42-b717-14b0cb8ca53f"
+    },
+    {
+      "claim_id": "f3b39b39-d3ba-4a4c-a97f-50e3b794ddbd",
+      "result_id": "43ff7178-43ad-4615-99c4-5cc3f86ee0f3"
+    },
+    {
+      "claim_id": "965ec1f5-5de2-4de9-800b-aa8a00c77ef1",
+      "result_id": "43ff7178-43ad-4615-99c4-5cc3f86ee0f3"
+    },
+    {
+      "claim_id": "278e7e55-5094-43f5-b344-f946adaa27ff",
+      "result_id": "43ff7178-43ad-4615-99c4-5cc3f86ee0f3"
+    },
+    {
+      "claim_id": "c1487254-9486-4a3e-a1c2-987d96170517",
+      "result_id": "be500853-e9a3-4fb1-8856-df1fb1938876"
+    },
+    {
+      "claim_id": "4cdf7db0-3baa-4c30-b7a8-8a8190726a8c",
+      "result_id": "be500853-e9a3-4fb1-8856-df1fb1938876"
+    },
+    {
+      "claim_id": "91b7804f-294e-4348-a8f1-531949cc3a56",
+      "result_id": "be500853-e9a3-4fb1-8856-df1fb1938876"
+    },
+    {
+      "claim_id": "23d9c897-1083-4ad1-97f1-771825a34562",
+      "result_id": "be500853-e9a3-4fb1-8856-df1fb1938876"
+    },
+    {
+      "claim_id": "7c6e6139-a5ba-4fce-ba26-10362939a409",
+      "result_id": "2061f954-1839-4aa2-8eb7-dd4c892511d0"
+    },
+    {
+      "claim_id": "6af5f418-c094-4615-8792-73098f7b561c",
+      "result_id": "2d41cc8a-3908-48f8-8052-c51e63b5cf8f"
+    },
+    {
+      "claim_id": "4c94ac38-947a-427e-84f4-81ff52ace4d0",
+      "result_id": "2d41cc8a-3908-48f8-8052-c51e63b5cf8f"
+    },
+    {
+      "claim_id": "14b2eb83-edaf-4a6f-9e95-ece94c38491b",
+      "result_id": "2d41cc8a-3908-48f8-8052-c51e63b5cf8f"
+    },
+    {
+      "claim_id": "65897fc1-466d-4448-a2a9-0273c4771d2a",
+      "result_id": "3292820e-50da-4510-adda-7530361daf10"
+    },
+    {
+      "claim_id": "abe4e2f5-1a14-4b2c-88d1-9904b8ef54a0",
+      "result_id": "3292820e-50da-4510-adda-7530361daf10"
+    },
+    {
+      "claim_id": "bdbadb45-ad9b-40c3-a2ce-e3a6362e68ca",
+      "result_id": "3292820e-50da-4510-adda-7530361daf10"
+    },
+    {
+      "claim_id": "4314395a-6580-4f3c-b7bc-e8df90948a57",
+      "result_id": "3292820e-50da-4510-adda-7530361daf10"
+    },
+    {
+      "claim_id": "db47f643-3327-4bf7-a195-bed4aa53438c",
+      "result_id": "7ac17ec8-6f05-445a-9a55-a4f46b515d22"
+    },
+    {
+      "claim_id": "1307bfa9-5e61-4afb-a7c5-58876be9b909",
+      "result_id": "7ac17ec8-6f05-445a-9a55-a4f46b515d22"
+    },
+    {
+      "claim_id": "17a976d5-1e7e-4f72-b8a5-438ea31dfe3d",
+      "result_id": "7ac17ec8-6f05-445a-9a55-a4f46b515d22"
+    },
+    {
+      "claim_id": "c050d9fc-524a-4d87-b660-b6856c70e7d9",
+      "result_id": "7ac17ec8-6f05-445a-9a55-a4f46b515d22"
+    },
+    {
+      "claim_id": "1867be2a-b0f6-4e5e-ae9c-f27af16b65e7",
+      "result_id": "7ac17ec8-6f05-445a-9a55-a4f46b515d22"
+    },
+    {
+      "claim_id": "e0eeafba-8b0a-4afd-946a-f0cadbfded90",
+      "result_id": "7ac17ec8-6f05-445a-9a55-a4f46b515d22"
+    },
+    {
+      "claim_id": "1bd6216d-2038-4bb7-8b5f-dff6dea2500d",
+      "result_id": "b2446bf8-a854-4685-889d-43ac7b70d8cc"
+    },
+    {
+      "claim_id": "e440b6e7-87d7-4b49-9d9a-2f7ba654da9d",
+      "result_id": "b2446bf8-a854-4685-889d-43ac7b70d8cc"
+    },
+    {
+      "claim_id": "a6e4f5cd-7c4c-4651-a0fb-08c52d1c90db",
+      "result_id": "b2446bf8-a854-4685-889d-43ac7b70d8cc"
+    },
+    {
+      "claim_id": "4e955836-10bf-4328-bfc8-e6faa79cf1f5",
+      "result_id": "b2446bf8-a854-4685-889d-43ac7b70d8cc"
+    },
+    {
+      "claim_id": "5b29d598-918e-4195-9df3-f72b7e73ee76",
+      "result_id": "b2446bf8-a854-4685-889d-43ac7b70d8cc"
+    },
+    {
+      "claim_id": "3ccf0c81-ee4c-4c9e-aef7-7104dba9c801",
+      "result_id": "6344ff9e-050c-4913-8eb3-02ed166de0d9"
+    },
+    {
+      "claim_id": "476639c5-bedd-4646-a301-dac00228def7",
+      "result_id": "6344ff9e-050c-4913-8eb3-02ed166de0d9"
+    },
+    {
+      "claim_id": "6890f6f0-e233-4054-b5da-678ea101ebf5",
+      "result_id": "6344ff9e-050c-4913-8eb3-02ed166de0d9"
+    },
+    {
+      "claim_id": "74875aba-4141-49d8-8c58-046c92b90809",
+      "result_id": "6344ff9e-050c-4913-8eb3-02ed166de0d9"
+    },
+    {
+      "claim_id": "cdbd329c-a6cc-4303-83c6-eca53cfc55da",
+      "result_id": "6344ff9e-050c-4913-8eb3-02ed166de0d9"
+    },
+    {
+      "claim_id": "3a3433e2-fb4b-46b8-945e-2d52a10bd8b4",
+      "result_id": "6344ff9e-050c-4913-8eb3-02ed166de0d9"
+    },
+    {
+      "claim_id": "ec6de5bc-096e-48ad-8b53-7d45c6c74dea",
+      "result_id": "fd4ef150-b112-4a91-9b20-ab353c4e01c0"
+    },
+    {
+      "claim_id": "88ced102-4cdd-4395-8728-358f77d00a0e",
+      "result_id": "80bab846-e232-4161-bf2f-13fe39641764"
+    },
+    {
+      "claim_id": "f4778998-9827-4e7e-ad41-72e62681241f",
+      "result_id": "80bab846-e232-4161-bf2f-13fe39641764"
+    },
+    {
+      "claim_id": "ce902047-d4df-4114-ab23-b9de448c570e",
+      "result_id": "80bab846-e232-4161-bf2f-13fe39641764"
+    },
+    {
+      "claim_id": "469acf91-1ce3-4f3f-acc5-75c9ee4ffc38",
+      "result_id": "b9e2939d-9045-4530-91fe-e239dbf224e8"
+    },
+    {
+      "claim_id": "15bcc6a6-0b1c-4878-99cf-9bd25fd5a08c",
+      "result_id": "77ebb71a-a1fd-4c19-99ad-ee6b7e34d2db"
+    }
+  ],
+  "comparisons": []
+}

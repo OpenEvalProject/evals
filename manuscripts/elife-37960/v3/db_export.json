@@ -1,0 +1,2136 @@
+{
+  "submission": {
+    "id": "0448b94f-783b-473f-b3ce-ecc8a52f9a10",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:36:21.944222Z",
+    "updated_at": "2025-12-02T06:36:21.944222Z"
+  },
+  "content": [
+    {
+      "id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "submission_id": "0448b94f-783b-473f-b3ce-ecc8a52f9a10",
+      "content_type": "manuscript",
+      "content_text": "# Effects of microcompartmentation on flux distribution and metabolic pools in Chlamydomonas reinhardtii chloroplasts\n\n## Authors\n\n- Anika K\u00fcken<sup>1</sup> ([ORCID: 0000-0003-1367-0719](https://orcid.org/0000-0003-1367-0719))\n- Frederik Sommer<sup>1</sup>\n- Liliya Yaneva-Roder<sup>1</sup>\n- Luke CM Mackinder<sup>3</sup> ([ORCID: 0000-0003-1440-3233](https://orcid.org/0000-0003-1440-3233))\n- Melanie H\u00f6hne<sup>1</sup>\n- Stefan Geimer<sup>4</sup>\n- Martin C Jonikas<sup>3</sup>\n- Michael Schroda<sup>1</sup>\n- Mark Stitt<sup>1</sup>\n- Zoran Nikoloski<sup>1</sup> ([ORCID: 0000-0003-2671-6763](https://orcid.org/0000-0003-2671-6763))\n- Tabea Mettler-Altmann<sup>1</sup> ([ORCID: 0000-0002-9161-4889](https://orcid.org/0000-0002-9161-4889)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute of Molecular Plant Physiology Potsdam-Golm Germany\n2. Bioinformatics Group, Institute of Biochemistry and Biology University of Potsdam Potsdam Germany\n3. Department of Plant Biology Carnegie Institution for Science Stanford United States\n4. Institute of Cell Biology University of Bayreuth Bayreuth Germany\n5. Cluster of Excellence on Plant Sciences Heinrich-Heine University D\u00fcsseldorf Germany\n6. Institute of Plant Biochemistry Heinrich-Heine University D\u00fcsseldorf Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nCells and organelles are not homogeneous but include microcompartments that alter the spatiotemporal characteristics of cellular processes. The effects of microcompartmentation on metabolic pathways are however difficult to study experimentally. The pyrenoid is a microcompartment that is essential for a carbon concentrating mechanism (CCM) that improves the photosynthetic performance of eukaryotic algae. Using Chlamydomonas reinhardtii, we obtained experimental data on photosynthesis, metabolites, and proteins in CCM-induced and CCM-suppressed cells. We then employed a computational strategy to estimate how fluxes through the Calvin-Benson cycle are compartmented between the pyrenoid and the stroma. Our model predicts that ribulose-1,5-bisphosphate (RuBP), the substrate of Rubisco, and 3-phosphoglycerate (3PGA), its product, diffuse in and out of the pyrenoid, respectively, with higher fluxes in CCM-induced cells. It also indicates that there is no major diffusional barrier to metabolic flux between the pyrenoid and stroma. Our computational approach represents a stepping stone to understanding microcompartmentalized CCM in other organisms.\n\n## Introduction\n\nCompartments of eukaryotic cells are surrounded by a single- or multiple-layer lipid membrane. Both eukaryotic and prokaryotic cells also include microcompartments that are not separated from the rest of the cell by a lipid membrane (for reviews, see Giordano et al., 2005; Hyman et al., 2014). In bacteria they are surrounded by protein shells (for reviews, see Kerfeld and Melnicki, 2016; Yeates et al., 2010). Such microcompartments may partition metabolic pools and enzymes; therefore, they can directly affect the operation of metabolic pathways. Microcompartments may serve diverse roles, from storage of special compounds (Bazylinski and Frankel, 2004), degradation of small molecules (Bobik et al., 1999), facilitation of enzyme clustering (Castellana et al., 2014), to regulating the activity of particular metabolic pathways.\n\nThe first described bacterial microcompartment was the carbon-fixing carboxysome in cyanobacteria (Drews and Niklowitz, 1956). It enables the cell to accumulate carbon dioxide (CO2) in the vicinity of Rubisco, which enhances the carboxylation rate. The carboxysome is an essential part of the cyanobacterial carbon concentrating mechanism (CCM). There are two types of carboxysomes, the alpha and beta carboxysome, and the structure and function of both types have been well-studied (Kerfeld and Melnicki, 2016). Loss of structural proteins results in carboxysome-less mutants that are unable to grow under ambient CO2 conditions (Berry et al., 2005; Ogawa et al., 1994; Woodger et al., 2005). Two other microcompartmentalized pathways, namely, propanediol and ethanolamine utilization, have also been experimentally explored in bacteria (Chen et al., 1994; Stojiljkovic et al., 1995). The role of the propanediol utilization (Pdu) microcompartment in Salmonella enterica is the degradation of 1,2-propanediol, a product of anaerobic sugar breakdown, without the release of the degradation intermediate propionaldehyde. Propionaldehyde is toxic and, once in the cytosol, causes damage to DNA (Sampson and Bobik, 2008). A similar role was suggested for the ethanolamine utilization (Eut) microcompartment in the detoxification of acetaldehyde produced during ethonalamine catabolism (Moore and Escalante-Semerena, 2016). Microcompartments are also known in eukaryotes, including: metabolic compartments in liver (Fujiwara and Itoh, 2014) and muscle cells (Saks et al., 2008), and the pyrenoid in chloroplasts of green algae (Gibbs, 1962).\n\nDespite these discoveries, it remains challenging to determine the implications of microcompartments for cellular physiology, and to study the function of microcompartments\u00a0under different conditions that may induce or suppress their formation. This task is experimentally tedious and often not feasible due to challenges in separating the microcompartments (Saks et al., 2008). Here we present a combined experimental and mathematical approach to quantify metabolic exchange fluxes at the boundary of the pyrenoid in the chloroplast of the green alga Chlamydomonas reinhardtii under two environmental conditions, atmospheric CO2 with an active CCM; and high CO2, where the CCM is inactive.\n\nDifferent CCMs have evolved in higher plants, algae and cyanobacteria to cope with the relatively low amounts of CO2 in the atmosphere (currently 0.03\u20130.04%) and to compensate for the low affinity of Rubisco for CO2 under these conditions (Delgado et al., 1995; Tcherkez et al., 2006). As already mentioned, CCM in cyanobacteria requires microcompartments called carboxysomes. In eukaryotic green algae, a microcompartment called the pyrenoid is crucial for the establishment of a CCM (Caspari et al., 2017; Genkov et al., 2010; Figure 1). There is no membrane or protein shell surrounding the pyrenoid which, like many of these non-membrane microcompartments (for review, see Hyman et al., 2014), was recently described as a liquid-like organelle formed by phase separation from the chloroplast stroma (Freeman Rosenzweig et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/37960/elife-37960-fig1-v3.jpg)\n\n**Figure 1.:** Under high CO2 conditions, no CCM is established (A). After exposure to ambient CO2, CCM is induced (B). As most of Rubisco and the other CBC enzymes are in the stroma under high CO2, most CBC flux is in the stroma (big grey circle in the stroma) and only partly involves the pyrenoid (smaller grey circle) (A). As most of Rubisco is inside the pyrenoid under ambient CO2, the CBC requires movement of selected metabolites between the stroma and pyrenoid (big grey circle) (B). To find out the exact differences of flux distribution between stroma and pyrenoid under these two conditions and how metabolites are exchanged between the two microcompartments were the aims of this study. Scheme adapted and simplified from Borkhsenious et al. (1998), Moroney et al. (2011), Wang et al. (2011), Engel et al. (2015) and Mackinder et al. (2016).\n\nPyrenoids are known to contain Rubisco (Kuchitsu et al., 1988b; Kuchitsu et al., 1991; McKay et al., 1991), Rubisco activase (McKay et al., 1991) and EPYC1, which has been proposed to be a structural protein in the pyrenoid (Mackinder et al., 2016). Immunolocalisation studies showed that about 40% and 90% of the total Rubisco is located in the pyrenoid under high CO2 and atmospheric CO2, respectively, while the rest is distributed in the stroma (Borkhsenious et al., 1998). Under ambient CO2 when CCM is induced, experimental evidence suggests that the inorganic carbon (Ci, the sum of CO2, CO32-, HCO3 and H2CO3) is actively transported across the membrane of the cell and accumulated as HCO3- in the thylakoid lumen (for reviews, see Grossman et al., 2007; Jungnick et al., 2014; Moroney and Ynalvez, 2007; Spalding, 2008; Wang et al., 2015). These luminal regions have highly branched tubules that reach into the pyrenoid and may facilitate movement of bicarbonate, CO2 and other small molecules (Engel et al., 2015). A carbonic anhydrase (CAH3), essential for the CCM, is localized to the lumen regions that pass through the pyrenoid and is thought to catalyze the dehydration of HCO3- to CO2, as the preferred form of Ci at the low pH of the lumen (Duanmu et al., 2009; Sinetova et al., 2012). The resulting CO2 may then diffuse back across the lumen membrane where it serves as concentrated substrate for the nearby Rubisco. A starch sheath, of unclear function, surrounds the pyrenoid, but only under ambient CO2 conditions (Kuchitsu et al., 1988a; Ramazanov et al., 1994). The starch sheath was suggested to serve as a diffusional barrier for CO2 and therefore potentially also larger molecules, such as metabolites, although the existing experimental evidence is inconsistent with this hypothesis (Badger and Price, 1994; Villarejo et al., 1996).\n\nWhat does the location of Rubisco in the pyrenoid mean for the rest of the carbon fixation pathway? The current model of CCM assumes that, apart from Rubisco, the remaining enzymes of the Calvin-Benson cycle (CBC) are situated in the stroma (Jungnick et al., 2014). This implies that the substrate and product of the carboxylation reaction catalyzed by Rubisco, ribulose-1,5-bisphosphate (RuBP) and 3-phosphoglyccerate (3PGA), need to move in and out of the pyrenoid, respectively. This assumption is supported by immunolocalisation studies that failed to detect glyceraldehyde 3-phosphate dehydrogenase (GAPDH), aldolase (FBA\u00a0+SBA) catalyzing the two aldol reactions of the CBC that produce fructose-1,6-bisphosphate (FBP) and sedoheptulose-1,7-bisphosphate (SBP), ribose-phosphate isomerase (RPI) or phosphoribulokinase (PRK) in pyrenoids (Kuchitsu et al., 1991; Suss et al., 1995). Such methods, however, are not well suited to demonstrate absence, and experimental evidence is still lacking for the localization of the remaining CBC enzymes (phosphoglycerokinase (PGK), triosephosphate isomerase (TPI), transketolase (TRK), fructose-1,6-bisphosphatase (FBPase), sedoheptulose-1,7-bisphosphatase (SBPase), and ribulose-phosphate epimerase (RPE)). Furthermore, the evidence for absence of CBC enzymes from the pyrenoid is not fully consistent as biochemical studies indicate PRK may be in close association with the pyrenoid (Holdsworth, 1971; McKay and Gibbs, 1991). Additionally, Rubisco is differently distributed under ambient and high CO2 (Borkhsenious et al., 1998) implying that the flux of the CBC that takes place in the pyrenoid may differ between these two conditions.\n\nOur study aims to experimentally localize all CBC enzymes, and to measure Calvin-Benson cycle intermediate levels under high and ambient CO2. These data are then used in combination with mathematical modeling to estimate fluxes through the CBC in the stroma and the pyrenoid under these two CO2 conditions. Our approach allows us to determine the exchange of fluxes at the boundary of the pyrenoid and to investigate the mode of transport of the exchanged metabolites.\n\n## Results\n\n### Distribution of Calvin-Benson cycle enzymes\n\nC. reinhardtii CC1690 cells were grown under low CO2 (LC), which fully induced the CCM (Figure 2\u2014figure supplement 1). In addition, we obtained data from cells grown under high CO2 (HC), where the induction of CCM was suppressed.\n\nC. reinhardtii was fractionated to provide samples enriched for stroma proteins and for pyrenoid-associated proteins according to Mackinder et al. (2016), followed by quantification of the abundance of enzymes involved in the CBC and starch synthesis, using either an enzymatic assay or shotgun proteomics (Figure 2, Supplementary file 1A,B). More than 61.8% of the Rubisco was found in the pyrenoid in LC grown cells, and about 21.8% in HC grown cells. Apart from GAPDH (8% in LC and 11% in HC grown cells) and PRK (13% in HC grown cells but\u00a0<2% in LC grown cells) less than 2% of the other CBC proteins were detected in the pyrenoid-enriched fractions. The\u00a0<2% of CBC proteins found in the pyrenoid-enriched fractions may represent experimental error, and resembled the distribution of phosphoglycerate mutase (PGM) and ADP-glucose pyrophosphorylase (AGPase) (0.6\u20131.9% in the pyrenoid\u00a0Supplementary file 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/37960/elife-37960-fig2-v3.jpg)\n\n**Figure 2.:** Chlamydomonas reinhardtii CC1690 cells were grown under high CO2 (HC for proteins and metabolites; white bars), ambient CO2 (LC for proteins; grey bars) and ambient CO2 bubbled for 15 min with high CO2 (LC* for metabolites; grey bars). Enzyme distribution between a pyrenoid-enriched fraction (P) and a stroma-enriched fraction (S) was determined by enzyme activity measurements (Rubisco; n\u00a0=\u00a04\u00a0\u00b1 SE) and shotgun proteomics (all other proteins; n\u00a0=\u00a04\u00a0\u00b1 SE). Metabolites of the Calvin-Benson cycle (CBC) in total cells were measured by HPLC-MS/MS. The metabolite concentrations were normalized to the chloroplast volume as described in the text and Supplementary file 1D, and given as absolute concentrations (\u00b5M) in the chloroplast, which includes both microcompartments, the stroma and the pyrenoid (S\u00a0+\u00a0P) (n\u00a0=\u00a04\u00a0\u00b1 SE). Student\u00b4s t-test (alpha\u00a0=\u00a00.05), significantly changed metabolites are marked with one asterisk.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37960/elife-37960-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Chlamydomonas reinhardtii CC1690 were grown at 46 \u03bcmol photons*m\u22122*s\u22121, 24\u00b0C and bubbled with 5% CO2 (HC) for two days at constant turbidity in a bioreactor. CO2 in the outlet air of the bioreactor was measured continuously during a 48 hr run (A). From time point zero onwards the culture was aerated with ambient air (0.039% CO2). The inserted graph shows the same CO2 data at lower CO2 concentrations. Cultures were harvested before (HC) and 25 and 34 hr (LC) after low-CO2 exposure for Western blot analysis (B). Protein amounts equivalent to 1 \u03bcg chlorophyll were loaded per lane and separated by 12% SDS-PAGE before transferred to a nitrocellulose membrane for detection via chemilumminescence by an antiserum recognizing mtCA (AgriSera Cat# AS11 1737, RRID:AB_10752086). Loading control: CF1\u03b2, \u03b2-subunit of the CF1-component of CF1FO-ATP synthase AgriSera Cat# AS10 1590, RRID:AB_10754669). Transmission electron microscopy (TEM) of cells exposed for 30 hr to low CO2 and 15 min to high CO2 (LC*; C). Cells were then quenched in the light for metabolite analysis by LC-MS/MS. Measure bar\u00a0=\u00a02 \u03bcm.\n\nThe localization of most of the CBC enzymes was further confirmed by confocal microscopy of proteins tagged with the yellow fluorescence protein Venus of cells grown under ambient CO2 (Nagai et al., 2002; Figure 3, Supplementary file 2). This was of particular interest as different isoforms exists for some of the CBC proteins (Rubisco small subunit, GAPDH, FBPase and aldolase). The proteins encoded by the two Rubisco small subunit genes (RBCS1 and RBCS2) both showed strong localization to the pyrenoid (discussed in more details below). PGK1, GAP1, GAP3, FBA3, SBP1, RPE1, RPI1 and PRK1 proteins were located in the plastid stroma and not in the pyrenoid. While the two isoforms of GAPDH (GAP1 and GAP3) that are predicted to be localized to the chloroplast, indeed showed a strong Venus-signal in the stroma of this organelle, this was not true for the two isoforms of aldolase. The Venus-signal of FBA3 was found in the stroma but the Venus-signal of FBA2 was detected in the cytosol, in particular surrounding or confining the nucleus, indicating a role unrelated to the CBC.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/37960/elife-37960-fig3-v3.jpg)\n\n**Figure 3.:** Chlamydomonas reinhardtii CC-4533 cells expressing Venus-fusion constructs (green) were grown under ambient CO2, imaged by fluorescence microscopy and two pictures per constructs are shown. On the left side, solely the signal of the Venus-fusion construct (green) and on the right side, the overlay picture of the signal of the Venus-fusion construct (green) and the chlorophyll fluorescence (magenta) is shown. The white bar represents 5 \u00b5m. Details on the protein names are given in the text and Supplementary file 2.\n\nOur pyrenoid-enrichment protocol detected 61.8% and 21.8% of Rubisco activity in the pyrenoid-enriched fraction of cells grown under LC and HC, respectively (Figure 2). The Venus-signals of the RBSC1 and RBSC2 subunits in the pyrenoid were very strong and very low in the stroma of non-dividing cells (Figure 3). The weaker stroma signal was dispersed over a much larger volume compared to the signal of the pyrenoid. Estimations by eye are therefore very difficult. Mackinder et al. (2016) quantified the fluorescence signal of RBSC1 and found 79% and 32% of the signal in pyrenoids in ambient-CO2-grown cells and high-CO2-grown cells, respectively. The lower values from the pyrenoid-enrichment protocol compared to fluorescence analyses might be because the pyrenoids were not completely stable during the enrichment protocol. Another possibility is that pyrenoids from dividing cells, which contain less Rubisco in their pyrenoid (Freeman Rosenzweig et al., 2017), contributed to a higher extent to the pyrenoid-enrichment analysis than to fluorescence analyses. However, the differences between the two approaches were less than 20%, which is not large considering these are from completely different methods, different laboratories and different cultivation set-ups. For our modelling approach, we took the values of the pyrenoid-enrichment protocols shown in Figure 2, because metabolites were measured in the same cultivation set-up.\n\n### Metabolites in high-CO2 grown (HC) cells, and in low-CO2 grown cells after 15 min of exposure to 5% CO2 (LC*)\n\nAbsolute quantification of the metabolites of the CBC and starch synthesis were obtained using an ion-paired liquid-chromatography coupled to triple-quadrupole mass spectrometry (HPLC-MS/MS)-based approach (Figure 2, Supplementary file 1C). As treatments necessary to separate pyrenoid from stroma would affect metabolite levels, only the total amounts of metabolite could be quantified. To convert content per cell to concentration, whole cell volume was measured by a Coulter counter (Materials\u00a0and\u00a0methods), and these were normalized to the chloroplast volume (31.18% of the whole cell volume) based on 3D reconstruction of EM-stacks of C. reinhardtii wild-type cells (Sch\u00f6tz et al., 1972; Supplementary file 1D). Metabolite distributions between cytosol and chloroplast were estimated based on data obtained by non-aqueous fractionation (Gerhardt et al., 1987; Supplementary file 1D). Measurements were carried out on cells grown and harvested in high CO2 (HC) and on cells grown in low CO2 and bubbled with 5% CO2 for 15 min before harvesting (LC*). This was done to investigate differences in metabolism between CCM-induced (LC*) and CCM-suppressed (HC) cells at comparable photosynthesis rates. This short high-CO2 treatment of CCM-induced cell did not change the physiology of the cells as judged from an unchanged pyrenoid structure (Figure 2\u2014figure supplement 1C). As anticipated, the rates of photosynthesis were almost equal in both sets of cells (55 and 57 \u00b5mol O2 * h\u22121* mg Chl\u22121 for HC cells and for LC*, respectively; Supplementary file 1E). As this total flux remains the same between the two conditions, any differences in metabolite pools are likely due to physiological changes such as the altered distribution of Rubisco.\n\nThe LC* cells showed a significant (Student\u2019s t-test, p-value<0.05) decrease in 3PGA, dehydroxyactone phosphate (DHAP) and significant increases in RuBP, fructose-6-phosphate (F6P), ribose-5-phosphate (R5P), xylulose-5-phosphate (Xu5P) and ribulose-5-phosphate (Ru5P) compared to HC cells (Figure 2, Supplementary file 1C). The increased level of RuBP and increased abundance of Rubisco in the pyrenoid under LC* provided a first indication that concentration gradient to drive diffusion or transport of RuBP into the pyrenoid may be increased in LC* cells. However, it remains unclear if and how the fluxes of the reactions comprising the CBC were affected by the microcompartments. For example, the significant decrease of 3PGA under low compared to high CO2 could not be readily explained without considering a systems approach in which the effects of all participating components are jointly considered. Further, interpretation of the metabolite data needs to take into consideration\u00a0the altered location of Rubisco\u00a0(see above).\n\n### Modelling the effect of chloroplast microcompartmentation on the CBC\n\nTo investigate the effect of microcompartmentation on the organization and partitioning of the reaction fluxes and metabolite pools of the CBC, we devised a mathematical model tailored to C. reinhardtii (Materials\u00a0and\u00a0methods, see Figure 4 for a graphical model representation and Supplementary file 3 for model details). The model consists of two nominal copies of the CBC, one in the stroma and a second one in the pyrenoid, interconnected by reversible transport reactions for every CBC intermediate. We combined the model with our experimental data to ask which parts of the CBC operate in the stroma, and which in the pyrenoid. For this purpose, the volume of the stroma and the pyrenoid were needed. The volume of the stroma was determined as described above and the pyrenoid volume was calculated as the average of 12 and 10 TEM pictures of HC and LC cells of this study, respectively, applying the equation for the volume of an ellipsoid (Supplementary file 1F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/37960/elife-37960-fig4-v3.jpg)\n\n**Figure 4.:** The model includes a copy of the Calvin-Benson cycle (CBC) in the chloroplast stroma and in the pyrenoid. In addition, the model considers reversible transport between the stroma and the pyrenoid for all CBC intermediates. A complete list of enzyme and metabolite names corresponding to the given abbreviations is presented in Supplementary file 3.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37960/elife-37960-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Model predictions under non-CCM (HC, (A) and CCM-induced (LC*; B) conditions were validated using the Chi-square statistic between predicted and measured total concentration for 11 metabolites over 5000 sampled steady-state flux distributions. The validation was done under three different assumptions: (i) activity of PRK, Rubisco and GAPDH, (ii) activity of PRK and Rubisco, and (iii) only activity of Rubisco in the pyrenoid. The red line shows the Chi-square statistic corresponding to a significance level of 0.05.\n\nAll enzymatic model reactions are decomposed into their elementary reactions such that the formation of the substrate-enzyme complexes is explicitly considered (Materials\u00a0and\u00a0methods). The resulting structure of the model was mathematically represented by the stoichiometric matrix, $N$, where rows correspond to model components (i.e., metabolites, enzymes, metabolite-enzyme complexes) and columns correspond to reactions (Orth et al., 2010). The entries of matrix $N$\u00a0indicated the molarity with which a component is produced (positive value) or consumed (negative value) by each reaction.\n\nFirst, we sampled steady-state flux distributions, $v(c,k)$, from the flux cone, $CN$, given by $C(N)={v(c,k)|N\u22c5v(c,k)=0$ and for every reaction $R_{i},v_{i}(c,k)\\geq0}$\u00a0of the modeled system under the additional constraint of constant CO2 uptake (398\u00a0\u03bcM/s\u00a0), ferredoxin-NADP+ reductase (FNR,\u00a0796\u00a0\u03bcM/s) and ATPase activity (1.194\u00a0\u03bcM/s\u00a0representing invariant NADPH and ATP formation. In addition, we integrated protein abundances from our experimental data on protein distribution in the chloroplast for HC and LC cells to draw conclusions on the physiologically relevant part of the flux cone (see Materials\u00a0and\u00a0methods) and to reduce the number of parameters which need to be estimated. The data were integrated under the assumption that the ratio of fluxes of the corresponding reactions between the stroma and the pyrenoid were bounded by the ratio of the experimentally-determined protein abundance (see Materials\u00a0and\u00a0methods).\n\nNext, we described the flux through each elementary reaction, $v$, by the ubiquitous mass action kinetics (Voit et al., 2015). According to this kinetic law, the flux through reaction $R_{i}$ was expressed by\u00a0$v_{i}=k_{i}\u041f_{j}c_{j}^{\\alpha_{ji}}$, with $\\alpha_{ji}$ denoting the stoichiometry with which a component (i.e. enzyme or metabolite)$j$, of concentration\u00a0$c_{j}$, enters reaction $i$\u00a0as a substrate and $k_{i}$ denoted the reaction rate constant. Log-transformation of this equation yielded a system of linear equations including the log-transformed fluxes, concentrations, and rate constants. Given a steady-state flux distribution sampled from $CN$\u00a0the linear system could be solved using a constraint-based optimization approach (see Materials\u00a0and\u00a0methods) to obtain model estimates of metabolite concentrations and rate constants under the constraint that the rate constants between stroma and pyrenoid were close to each other. For reactions with known rate constants, obtained from literature, the optimization program attempted to reduce the difference between modelled $k_{i}$ and the respective literature values (Supplementary file 4A). This approach facilitated the investigation of multiple possible modes of action of the CBC based on complete sets of model parameters. The resulting model predictions provided information about: (i) the flux state most compatible to data, (ii) microcompartment-specific metabolite and enzyme concentrations and (iii) rate constants serving as proxies for enzyme turnover rates\u00a0$k_{cat}$.\n\nDue to the ambiguous experimental data, with protein abundances indicating a low but detectable GAPDH and, sometimes, PRK activity in the pyrenoid fraction but low or non-detectable Venus-signal in the pyrenoid (Figure 2 and 3), we inspected model predictions for three different scenarios. We considered: (i) activity of PRK, Rubisco and GAPDH, (ii) activity of PRK and Rubisco, and (iii) only activity of Rubisco in the pyrenoid. To further reduce the number of parameters which need to be estimated, exchange was only allowed for metabolites involved in reactions catalyzed by enzymes present in the pyrenoid. To identify the best model, we used the Chi-square statistic, $\u03a7^{2}$, between modelled and measured total concentration for 11 metabolites over 5,000 steady-state flux distributions (Figure 4\u2014figure supplement 1). In line with the current understanding of the CCM, where apart from Rubisco, the remaining enzymes of the CBC are hypothesized to be situated in the stroma, a significant value for $\u03a7^{2}$ was obtained for the scenario in which Rubisco was the only active enzyme in the pyrenoid (average Rubisco localization in pyrenoid 61.8% for LC and 21.8% for HC conditions,\u00a0$X\u00af_{LC\u2217}^{2}=2.20,\u00a0X\u00af_{HC}^{2}=0.52$). A significant value was also observed when the activities of PRK (average PRK localization in pyrenoid 1.2% for LC and 12.6% for HC conditions), Rubisco and GAPDH (average GAPDH localization in pyrenoid 7.8% for LC and 11% for HC conditions) were allowed ($X\u00af_{LC\u2217}^{2}=0.26$,\u00a0$X\u00af_{HC}^{2}=0.31$). Simulations of this latter scenario showed no activity of GAPDH in the pyrenoid, hence the good fit in the $\u03a7^{2}$ statistic was a result of allowing a circular transport of NADP, NADPH, BPGA and GAP. Circular transport of metabolites between stroma and pyrenoid, without metabolites being used in the pyrenoids, however, is physiologically unlikely. Under the assumption that PRK and Rubisco were active in the pyrenoid, we observed average $\u03a7^{2}$ values of $X\u00af_{LC\u2217}^{2}=74.15,\u00a0X\u00af_{HC}^{2}=16.51$ (Figure 4\u2014figure supplement 1). Hence, in the following, we only provide modelling results for the scenario with Rubisco as the only active enzyme in the pyrenoid.\n\nSince we obtained at least 1000 samples with a significant fit between the modelled and measured concentrations under both experimental conditions, the presented findings rely on the parameter sets leading to the 1,000 best fits. In addition, we used the qualitative Pearson correlation coefficient to validate our predictions. We found that modelled quantities were in qualitatively excellent agreement with measurements under both conditions (Pearson correlation coefficient $\\geq$ 0.99, p-value < 10\u22126, Figure 5). Therefore, we further used this model to investigate and understand the influence of microcompartmentation on the function of the CBC.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/37960/elife-37960-fig5-v3.jpg)\n\n**Figure 5.:** (A\u00a0+\u00a0B) Modelled data is shown as white bars (n\u00a0=\u00a01,000\u00a0\u00b1 SD) and the SD-values are too small to be seen. Experimentally, metabolites were measured by HPLC-MS/MS as already shown in Figure 2 (n\u00a0=\u00a04\u00a0\u00b1 SD) (grey bars).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37960/elife-37960-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Distribution of estimated $\u0394G$ values for CBC metabolites over 1000 sampled steady-state flux distributions under no-CCM (HC; A) and CCM-induced (LC*; B) conditions.The estimated $\u0394G$ was negative for all enzymes except RPE and RPI for which $\u0394G>0$. In addition, TRK was found to be the only enzyme operating in both directions.\n\n### Two modes of CBC operation\n\nNext, we investigated differences in thermodynamic characteristics in HC and LC* cells. We used the modelled metabolite concentrations and equilibrium constants, $K_{eq},$\u00a0obtained from eQuilibrator (Flamholz et al., 2012) to estimate $\u0394G=\u2212RT\u00a0\u2217\u00a0(ln\u00a0K_{eq}\u00a0\u2212\u00a0ln\u00a0Q)$ for each reaction across the sampled flux distributions, where $Q$\u00a0is the ratio of active product concentrations and active reactant concentrations. In LC* cells (CCM-induced) we found TRK to be the only enzyme operating in both directions (Figure 5\u2014figure supplement 1). For the remaining enzymes, except RPE and RPI for which\u00a0$\u0394G>0$, the reactions were predicted to be exergonic (i.e., $\u0394G<0$,). The positive $\u0394G$\u00a0for reactions RPE and RPI may point to a substrate channeling (Chiappino-Pepe et al., 2017). We observed a change in sign of $\u0394G$\u00a0between the two conditions for enzyme TPI only (Figure 5\u2014figure supplement 1).\n\nIn addition, we studied the function of the CBC at the level of reaction fluxes. We compared the net flux, corresponding to the sum of fluxes of forward and backward reaction in case of reversible reactions for the HC and LC* cells (see Figure 6A for the fold-changes between the HC and LC* fluxes, see Figure 6\u2014figure supplement 1 for the fluxes at HC and LC* separately, Supplementary file 5 and 6). Under the assumption that the rate of CO2 uptake from the environment was the same in HC and LC* cells, the modelled rate of CO2 diffusion into the pyrenoid for LC* cells showed a three-fold increase in comparison to HC cells, indicating that the model captures the function of the CCM (Figure 6B). The rate of the Rubisco reaction in the pyrenoid followed the CO2 import into the microcompartment and was, therefore, three-fold increased under LC* conditions. Since the function of Rubisco depends not only on the import of CO2, but also on the availability of RuBP, its predicted rate of import into the pyrenoid from the stroma was also three-fold increased in LC* cells. In addition, the rate of 3PGA export from the pyrenoid into the stroma was higher under LC* conditions than in HC conditions.\n\n### Mechanisms of metabolite transport between microcompartments\n\nTo examine the mode of transport between pyrenoid and stroma, the bound and free metabolite levels were determined for both conditions (Figure 6C, Supplementary file 5B and 6B). Due to elementary reactions considered in modelling (Materials\u00a0and\u00a0methods), we modelled concentrations for free metabolites as well as concentrations for the respective metabolite-enzyme-complexes. In case a metabolite can bind multiple enzymes, the concentration of the bound metabolite was given by the sum of concentrations over the respective enzymes. The model predicted that the vast majority of the RuBP was bound. The observed increase in RuBP concentration for LC* cells was therefore mainly due to an increase in bound RuBP in the pyrenoid as a result of an increased Rubisco concentration (Figure 6\u2014source data 1). The model predicted slightly higher free RuBP in the stroma in comparison to the pyrenoid (0.024 \u00b5M and 0.008 \u00b5M difference under LC* and HC conditions, respectively). Furthermore, in line with increased transport RuBP rates into the pyrenoid, the difference between free RuBP in the stroma and pyrenoid was larger in LC* than HC cells. Since in both cell types we observed a concentration gradient in the direction of RuBP transport towards the pyrenoid, the model predictions indicate diffusion or facilitated transport may be a feasible mechanism of RuBP transport under HC and LC*\u00a0(although the estimated concentration gradient is very small). In contrast, the model predicted equal free amounts of 3PGA between pyrenoid and stroma under HC and LC*, implying diffusional equilibrium.\n\n## Discussion\n\nQuantitative and qualitative experimental data were obtained for the distribution of CBC and starch synthesis pathway enzymes between the chloroplast stroma and the microcompartment pyrenoid, confirming that Rubisco is largely located in the pyrenoids (average Rubisco localization in pyrenoid 61.8% for LC and 21.8% for HC conditions). All other CBC enzymes were present at only very low amounts (PRK, GAPDH) or were totally absent from the pyrenoid in LC cells with an operational CCM. Metabolite data measured in whole cells revealed that LC* cells have altered CBC metabolite levels to those in HC cells at the same CO2 concentration and net rate of photosynthesis. However, this data alone is not sufficient to understand flux between the stroma and pyrenoid.\n\nA kinetic model, parametrizing each reaction in the stroma and pyrenoid, allowed us to calculate flux distributions under the two distinct physiological states. The validation of the model indicated statistically significant quantitative and qualitative agreement between the experimental and modelled chloroplast metabolite concentrations. The fit for the model as a whole was assessed, considering the contribution of the predictions for each metabolite level. The agreement between experimental data and predicted metabolite levels was statistically acceptable for 10 out of 16 individual metabolites. In the case of GAP and SBP, the lack of statistical fit could be due to the fact that these compounds are involved in redox-regulated reactions, namely the reduction of BPGA to GAP catalyzed by GADPH (Sparla et al., 2002) and the hydrolysis of SBP catalyzed by SBPase (Dunford et al., 1998). The values given by the model are lower than the experimental pool sizes implying that there might be incomplete redox activation. This discrepancy is in line with the fact that the model does not include redox regulation. This explanation is supported by the observation that the applied light intensity of 46 \u03bcmol photons*m\u22122*s\u22121 is not saturating, and analysis of SBP and S7P indicated that SBPase is incompletely activated at this light intensity (Mettler et al., 2014). For the reaction catalyzed by GAPDH, it is likely that NADPH provided by the light reaction was rate limiting rather than GAPDH redox activation (Mettler et al., 2014).\n\nTo provide further validation of the model, we compared the predicted rate constants with values for kcat available from literature that were not used in the model parameterization (Materials\u00a0and\u00a0methods; Supplementary file 4A). This was the case for TRK (Xu5P, rate constant\u00a0=\u00a037 * s\u22121; Ru5P, rate constant\u00a0=\u00a037 * s\u22121) (Supplementary file 4B) for which the published kcat values in spinach are\u00a0<0.02 * s\u22121 for Xu5P and Ru5P (Teige et al., 1998). The values for the plant TRK reported in literature are surprisingly low, since those in yeast (kcat\u00a0=\u00a0113 * s\u22121) and human (kcat\u00a0=\u00a09 * s\u22121) (Albe et al., 1990) are much higher.\n\nThe first important output of the model included the fluxes of the exchange reactions between the pyrenoid and the stroma. The mathematical model enabled us to calculate exchange fluxes between chloroplast stroma and pyrenoid based on enzyme partitioning, rate constants of enzymatic reactions and steady-state metabolite levels. The model predicted an increase in the flux of the Rubisco reaction inside the pyrenoid under LC* compared to HC conditions. This prediction reflects the increased presence of Rubisco in the pyrenoid under these conditions. The model also predicted import of RuBP and export of 3PGA into and from pyrenoid, respectively, with both fluxes being higher under LC* compared to HC conditions. The concentration gradient for RuBP between stroma and pyrenoid was larger under LC* than under HC, but for both conditions the concentration gradients were small (0.024 \u00b5M and 0.008 \u00b5M, respectively). In case of 3PGA, the model predicted, for both conditions, that there is no concentration gradient between stroma and pyrenoid. Since there is no accumulation of RuBP in the pyrenoid or 3PGA in the stroma, active transport seems unnecessary and movement between the microcompartments may occur by diffusion.\n\nPreviously, the starch sheath surrounding the pyrenoid under ambient but not under high CO2 conditions, was suggested to work as diffusional barrier to prevent CO2 from diffusing out of the pyrenoid (Badger and Price, 1994). In this case, the starch sheath would also represent a diffusional barrier for RuBP entering into the pyrenoid. In the model, such an increased diffusional barrier could be seen as a change in the diffusion constant between HC, where no starch sheet was present, and LC*, where a starch sheet was established. The diffusion constants is proportional to 10.623 s\u22121 (86.664 \u00b5M s\u22121 * 0.008158\u22121 \u00b5M\u22121) and 10,259 s\u22121 (246.12 \u00b5Ms\u22121 * 0.02399\u22121 \u00b5M\u22121) for HC and LC*, respectively (Figure 6A, Figure 6\u2014source data 1), revealin\u00a0Figure 6\u2014figure supplement 1g that the difference in the diffusion constants was minor. Therefore, our model does not support the idea of an increased diffusional barrier between pyrenoid and stroma under LC* for RuBP. This finding is experimentally supported by the fact that a starch-less mutant, also lacking the starch sheath around the pyrenoid, is still able to develop a fully functional CCM (Villarejo et al., 1996).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/37960/elife-37960-fig6-v3.jpg)\n\n**Figure 6.:** (A) Fold changes of model predicted average net flux (represented by arrows) and total metabolite concentrations (represented by circles) between LC* and HC cells indicated by a colour code (see legend) and size of the arrows. The actual values are provided in Supplementary file 5 and 6 and summarized in Figure 6\u2014source data 1. The main difference observed between HC and LC* conditions was an increased flux through Rubisco in the pyrenoid and an increased flux of RuBP and 3PGA to the pyrenoid and from the pyrenoid, respectively. The flux through the Calvin-Benson cycle located in the stroma, however, is similar under both conditions (fold change of 1). (B) Net flux for transport of CO2, RuBP and 3PGA between stroma and pyrenoid under HC (orange) and LC* (blue) conditions. A positive value indicates transport from stroma to pyrenoid, while a negative value indicates transport from pyrenoid into stroma. (C) Concentrations of bound and free RuBP and 3PGA under HC (orange) and LC* (blue) conditions.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/37960/elife-37960-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The average values of the flux and total metabolite concentration are indicated by a colour code (see legend) and size of the arrows (denoting the reactions). The actual values are provided in Supplementary file 5 and 6. The main difference observed between HC and LC* conditions was an increased flux through Rubisco in the pyrenoid under LC* and an increase in the flux of RuBP and 3PGA into the pyrenoid and from the pyrenoid, respectively, under LC*. The flux through the Calvin-Benson cycle located in the stroma, however, was similar under both conditions.\n\nAs the fluxes of both 3PGA and RuBP are increased under LC* compared to HC with minor (RuBP) or no (3PGA) increase in the concentration gradients, flux is increasing with minor or no change in the driving force. This implies that instead of a strong diffusional boundary there may be facilitated diffusion under LC* compared to HC. Recently, several proteins that are known to be expressed under low CO2 conditions but are of unknown function were sub-cellularly localized (Mackinder et al., 2017). LCIC/LCIB and LCI9 are expressed in the proximity of the starch sheath and surrounding the pyrenoid, which is consistent with one or several of these proteins being involved in facilitating diffusion of RuBP into and of 3PGA out of the pyrenoid. This would occur exclusively under low CO2 conditions, as the according genes are only expressed under low CO2 (Yamano et al., 2008; Yamano et al., 2010). Recently it was suggested that LCIC/LCIB most likely has a carbonic anhydrase activity (Jin et al., 2016), but additional functions are still possible.\n\nA high resolution cryoEM study of the C. reinhardtii chloroplast (Engel et al., 2015) revealed the presence of pyrenoid minitubules that form narrow continuous channels between the inter-thylakoid stromal space and the pyrenoid matrix. One function of these minitubules could be to facilitate diffusion of RuBP and 3PGA, apart or in addition to the protein candidates mentioned above. The estimated minitubule lumen diameter is of the order of 3\u20134 nm by 8\u201315 nm, which is not much larger than the longest axes of RuBP and 3PGA (about 1.2 nm and 0.7 nm, respectively), so diffusion of these metabolites in the minitubules would be possible. It will be interesting to learn if the physiochemical properties of these minitubules favor facilitate diffusion of these metabolites, either as free acids or as the magnesium complexes that are likely to predominate at pH and magnesium concentration found in the stroma in the light (Portis, 1981; Werdan et al., 1975). Charge properties might, speculatively, provide a means to discriminate between CBC intermediates and the weakly anionic bicarbonate and neutral CO2.\n\nUnder low CO2 conditions and a fully functional CCM, the limiting Rubisco substrate CO2 is concentrated in the pyrenoid. Moreover, our data indicate that the CCM also establishes structures that allow facilitated transport of RuBP, the other Rubisco substrate, from the stroma to the pyrenoid and the release of the Rubisco product 3PGA into the stroma, where the rest of the CBC enzymes are located. Such channels for exchange of CBC metabolites were suggested to be present in the pyrenoid of C. reinhardtii (Engel et al., 2015) and the proteinaceous shell of the carboxysome based on the number of shell proteins and their localization in the shell (Kerfeld and Melnicki, 2016). However, supporting experimental data to our knowledge is scarce so far and therefore our study is the first with underlying experimental metabolite data postulating such transport reactions in a carbon-concentrating microcompartment.\n\nAltogether, our systems biology approach allowed us to demonstrate (i) that changes in microcompartments cause specific inhomogeneities that affect steady-state metabolite levels and have to be considered in mathematical modelling approaches based on such experimental data; (ii) that mathematical models with mild assumptions can be used to study flux distributions between reactions inside and outside microcompartments, which are very difficult and often technically impossible to study experimentally; and (iii) that metabolites can be identified that are exchanged between the compartments and their exchange fluxes quantified. Our study opens the possibility to investigate the effects of microcompartmentation in different cellular scenarios and to understand their role in the overall physiology of the investigated system.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Chlamydomonas reinhardtii)</td>\n      <td>CC1690 wild-type strain</td>\n      <td>Chlamydomonas Resource Center</td>\n      <td>RRID:SCR_014960</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Chlamydomonas reinhardtii)</td>\n      <td>CC-4533 wild-type strain</td>\n      <td>Chlamydomonas Resource Center</td>\n      <td>RRID:SCR_014960</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit Anti- Beta-CA1</td>\n      <td>AgriSera</td>\n      <td>Cat# AS11 1737; RRID:AB_10752086</td>\n      <td>(1:7500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit Anti-AtpD</td>\n      <td>AgriSera</td>\n      <td>Cat# AS10 1590; RRID:AB_10754669</td>\n      <td>(1:30000)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MaxQuant</td>\n      <td>MaxQuant (http://www.biochem.mpgde/5111795/maxquant)</td>\n      <td>RRID:SCR_014485</td>\n      <td>version 1.5.2.8</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Codes used for modelling</td>\n      <td></td>\n      <td></td>\n      <td>The mathematical models can be accessed via https://github.com/ankueken/Chlamy_model (copy archived at https://github.com/elifesciences-publications/Chlamy_model).</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell growth\n\nChlamydomonas reinhardtii CC1690 wild-type strain (Sager, 1955) was obtained from the Chlamydomonas Resource Center (RRID:SCR_014960) and cultivated as described in Mettler et al. (2014). Cells were growth photoautotrophically in a 5-litre bioreactor BIOSTATB-DCU (Sartorius Stedim, Germany) for five days until a cell density of 3\u20135*106 cells*ml\u22121 was reached and thereafter, turbidity was kept constant. The culture in the bioreactor was constantly stirred with 50 rpm at 24\u00b0C, exposed to an average of 46 \u03bcmol photons*m\u22122*s\u22121 (measured internally at four different positions) and bubbled at a rate of 400 ccm with air enriched with 5% CO2. Turbidity was kept constant by medium exchange (125 ml*h\u22121) for two days before harvesting the high-CO2-grown cells. Then the air bubbling of the bioreactor was changed from 5% CO2 to ambient air. Cells were adapted to the low-CO2 conditions for 30 hr. Turbidity was kept constant by medium exchange (39 ml*h\u22121) and CO2 in the outlet air of the bioreactor was measured (Figure 2\u2014figure supplement 1). The CO2 level measured by gas chromatography in the outlet air of the bioreactor dropped within 12 hr from 4.5% (bubbling with 5%) to a constant 0.02% (bubbling with air of approximately 0.039% CO2). Levels inducing CCM (0.1%) were already reached after 4 hr but the system needed at least an additional 8 hr to equilibrate at 0.02% CO2. We can therefore assume that cells in the bioreactor are exposed to, at a maximum, 0.02% CO2. LC cells were harvested after 30 hr of bubbling with ambient air and LC* cell after an additional 15 min bubbling with air enriched with 5% CO2. Cell number and cell volume were determined by a Z2 Cell Coulter (Beckman Coulter, USA) in triplicates of 100-fold diluted samples.\n\n### Cell harvesting\n\nBefore harvesting, 500 ml of, both, the high- and the low-CO2-grown cells were transferred to a 1 L glass bottle and kept at the same light intensity (46 \u03bcmol photons*m\u22122*s\u22121, measured internally as indicated above) as in the bioreactor, stirred and bubbled with ambient (LC) or 5% CO2 (HC and LC*) for 15 min. For metabolite measurement, the cells were quenched with 70% cold methanol as described in Mettler et al. (2014). For enzyme activities and proteomics experiments, 10 ml of cells were spun-down at 4000 rpm for 2 min at 4\u00b0C and stored at \u221280\u00b0C before usage.\n\n### Metabolite measurements by HPLC-MS/MS\n\nPolar metabolites were extracted with chloroform/methanol/water, separated with an ion-paired liquid chromatography and detected on a triple quadrupole as described in Mettler et al. (2014). The absolute amounts of metabolites measured by HPLC-MS/MS were normalized to the cell volume determined by a Coulter counter described above. The metabolite levels were then normalized to the chloroplast volume according to Sch\u00f6tz et al., 1972 using distributions between cytosol and chloroplast according to Gerhardt et al. (1987). See Supplementary file 1D and the Result section for more details.\n\n### Enzymatic activities\n\nThe ten ml algal material was defrosted on ice and extracted with extraction buffer (EB) containing 2% Triton (50 mM HEPES, 20 \u03bcM leupeptin, 500 \u03bcM DTT, 1 mM PMSF, 17.4% glycerol). The samples were sonicated 3 \u00d7 15 s (six cycles, 50% intensity, Sonoplus Bandelin electronics, Germany) and kept on ice in between for 90 s. Half of the sample was then used for analysis of total enzyme activity and half was centrifuged at 14000 rpm for 2 min to obtain a soluble and pellet fraction. The pellet was washed twice with 500 \u03bcl EB before resuspension in 500 \u03bcl EB. The enzyme activities of total, soluble and pellet fraction were analyzed together in 96 well microplates using a Janus pipetting robot (Perkin-Elmer, Belgium) and absorbances were determined using a Synergy, an ELX-800 or an ELX-808 microplate reader (Bio-Tek, Germany). For each enzyme three different dilutions of each algal sample were measured (final concentrations in assay were 1:60, 1:300, 1:600). The AGPase (Gibon et al., 2004), PGM (Manjunath et al., 1998) and Rubisco (Sulpice et al., 2007) enzymatic assay were performed as described previously. For Rubisco activity measurement, the assay length was adjusted to 30\u201360 min.\n\n### Proteomics data\n\nThe soluble and pellet fractions described above were subjected to shotgun proteomics analysis as described in Mackinder et al. (2016). Data analysis was done using the MaxQuant Software (RRID:SCR_014485; Cox and Mann, 2008).\n\n### Protein localization\n\nProteins were tagged and sub-compartmentally localized as described in Mackinder et al. (2017). Briefly, for the fluorescence protein tagging, open reading frames of CBC genes were PCR amplified (Phusion Hotstart II, Thermo Fisher Scientific, U.S.A.) from genomic DNA, gel purified and cloned in-frame with a C-terminal Venus-3xFLAG (pLM005) tag (Mackinder et al., 2016) by Gibson assembly. Junctions were Sanger sequenced and constructs were linearized by either EcoRV or DraI prior to transformation into WT C. reinhardtii (CC-4533). For transformation by electroporation, 14.5 ng kbp-1 of cut plasmid was mixed with 250 \u03bcL of 2 \u00d7 108 cells mL\u22121 at 16\u00b0C in a 0.4 cm gap electroporation cuvette then transformed using a Gene Pulser II (Bio-Rad Laboratories, U.S.A.) set to 800V and 25uF. Transformed cells were selected on Tris-acetate-phosphate (TAP) paromomycin (20 \u03bcg mL-1) plates and maintained in low light (5\u201310 \u03bcmol photons m\u22122 s\u22121) until screening for fluorescence using a Typhoon Trio fluorescence scanner (GE Healthcare, U.S.A.).\n\nFor confocal microscopy, Venus-tagged lines were grown photoautotrophically in Tris-phosphate (TP) liquid medium in air (ambient CO2) at 150 \u03bcmol photons m\u22122 s\u22121 light intensity. 15 \u00b5L of cells at\u00a0~2\u20134\u00d7106 cells mL\u22121 were pipetted onto poly-L-lysine coated plates (Ibidi) and overlaid with 120 \u00b5L of 1% TP low-melting-point agarose at\u00a0~34\u00b0C to minimize cell movement. Images were acquired using a spinning-disk confocal microscope (Leica DMI6000, Leica Microsystems, Germany). Venus signal was detected by 514 nm excitation with 543/22 nm emission and chlorophyll using 561 nm excitation with 685/40 nm emission. Images were analyzed using Fiji (Schindelin et al., 2012).\n\n### Model description\n\nThe model was constructed to simulate carbon fixation in the chloroplast under different CO2 availability. The model included two compartments: (i) the chloroplast stroma and (ii) the pyrenoid, a microcompartment located inside the chloroplast associated with the operation of a CCM. The postulated function of the pyrenoid is to generate a CO2-rich environment around the photosynthetic enzyme Rubisco (Kuchitsu et al., 1988b; Kuchitsu et al., 1991). During carbon fixation Rubisco catalyses the production of two molecules 3PGA from RuBP and CO2. Moreover, it catalyses the first reaction of the photorespiratory pathway: the reaction of RuBP and oxygen (O2) to 3PGA and 2-phosphoglycolate. The model, however, did not include this reaction since under the high CO2 conditions, this reaction was very likely suppressed (Supplementary file 1E).\n\nTo investigate the role and interplay of the pyrenoid and the CBC we included two full copies of the CBC, one in the chloroplast stroma and one in the pyrenoid. The copies of the CBC were linked by reversible transport reactions for all CBC intermediates. The enrichment of CO2 in the pyrenoid (CCM) can be achieved via diffusion of CO2 from the stroma into the pyrenoid. A full list of model reactions and components is presented in Supplementary file 2.\n\n### Model construction\n\nThe model simulated carbon fixation on the chloroplast level and included 62 reactions distributed over the chloroplast stroma and the pyrenoid. To compare the simulated data and experimentally determined enzyme parameters, each reaction was modelled by its elementary reaction steps. More specifically, given an irreversible reaction $A\u2192B$\u00a0catalyzed by enzyme\u00a0$E$, the model included three elementary reactions: $A+E\u2194AE$\u00a0and $AE\u2192B+E.$\u00a0For reversible reactions $C\u2194D$\u00a0the model includes six elementary reactions\u00a0$C+E\u2194CE$, $CE\u2192D+E$, $D+E\u2194DE$\u00a0and $DE\u2192C+E.$\n\nAfter splitting of reactions the model consists of 226 irreversible reactions and 128 components (metabolites, enzymes, enzyme-substrate complexes). Each CBC copy, thereby, comprised 65 elementary reactions linked by 40 irreversible diffusion reactions. Moreover, the model included eight irreversible reactions transporting triose-phosphates from the stroma into the cytosol and vice versa, ATPase reaction converting ADP to ATP and a simplified ferredoxin-NADP\u00a0+\u00a0reductase (FNR) reaction converting NADP to NADPH. The production of NADPH and ATP were calculated from the measured production of oxygen, assuming two molecules of NADPH produced per oxygen molecules and 1.5 ATP molecules per NADPH molecule (Supplementary file 1G).\n\nThe underlying system of ordinary differential equations (ODE), therefore, simulated a system of $n=226$ reactions acting on $m=128$ model species and was formulated as $\\frac{dc_{i}}{dt}=\\sumj=1mn_{ij}v_{j}$, where $v_{j}$ was the flux trough reaction $j$ and $n_{ij}$ the respective stoichiometric coefficient in the stoichiometric matrix $N$, indicating the molarity with which substrate $i$ enters reaction $j$. The ODE system was used to simulate the steady-state concentrations $c$ of all model species under different environmental conditions by solving $\\frac{dc_{i}}{dt}=\\sumj=1mn_{ij}v_{j}=0$. The reaction flux $v(c,k)$ depended on species concentrations $c$ and reaction rate constants, $k$, and is calculated using the law of mass-action. Thus, the flux through an irreversible reaction $j$ was given by $v_{j}(c,k)=k_{j}\\prodic_{i}^{n_{ij}^{\u2212}}$, where $n_{ij}^{\u2212}=\u2212n_{ij}ifn_{ij}<0$ and 0, otherwise.\n\n### Model parameterization\n\nHere, we describe the procedure of determining parameter values for $c$\u00a0and $k$\u00a0for sampled flux distributions,\u00a0$v$.\n\nTo guarantee a steady state, we first sampled steady-state flux distributions with the COBRA Toolbox (Schellenberger et al., 2011) function sampleCbModel by sampling solutions of the linear program in (Equation 1). To obtain flux distributions leading to a high quality fit between simulated and measured data and to reduce the number of parameters which need to estimated, we integrated the measured enzyme distribution between stroma and pyrenoid, whereby the flux ratio between pyrenoid and stroma for a reaction catalyzed by enzyme $E$\u00a0follows the measured ratio of protein abundance. Therefore, we sampled flux distributions from the solution space of the following linear program:\n\n$$\nNv=0v_{pyrenoid}=q(v_{stroma}+v_{pyrenoid})v^{FNR}=796v^{ATPase}=1.194v^{CO2\u00a0uptake}=3980\\leqv\\leqv_{max}\n$$\n\nConsequently,\u00a0if\u00a0$e_{pyrenoid}=q(e_{stroma}+e_{pyrenoid})$,\u00a0where\u00a0$e$ was the measured relative enzyme activity or if available amount, then $v_{pyrenoid}=q(v_{stroma}+v_{pyrenoid})$.\u00a0While\u00a0$q$ was chosen uniformly at random for each sampled flux distribution from the measured range. For enzymes with measured relative activity in the pyrenoid below 5%, we considered only the enzyme located in the stroma to be active. In addition, based on experimental data we fixed the rate of CO2\u00a0uptake\u00a0to\u00a0$398\u00a0\\muM/s$.\u00a0As upper limit of flux through a reaction we used $v_{max}=1,000\u00a0\\muM/s$.\u00a0Moreover, we fixed the flux through RNR and ATPase to constant values estimated from experimental data since light intensity was unaltered.\n\nFor each flux distribution $v^{\u2217}$ obtained from sampling, we determined species concentrations $c$\u00a0and reaction rate constants $k$\u00a0leading to the respective flux distribution under mass-action kinetics by solving the program in Equation 2:\n\n$$\nmin\u2061\\epsilon^{+}+\\epsilon^{-}\n$$\n\n\n\n$$\n\u2200_{j=1:n}\n$$\n\n\n\n$$\nlog\u2061v_{j}^{*}=log\u2061k_{j}+\\sumi=1mn_{ij}^{-}log\u2061c_{i}\n$$\n\n\n\n$$\nlog\u2061k_{pyrenoid}\u2212log\u2061k_{stroma}+\\epsilon^{+}=0\n$$\n\n\n\n$$\nlog\u2061k_{pyrenoid}-log\u2061k_{stroma}-\\epsilon^{-}=0\n$$\n\n\n\n$$\nlog\u2061k_{min}\\leqlog\u2061k\\leqlog\u2061k_{max}\n$$\n\n\n\n$$\nlog\u2061c_{min}\\leqlog\u2061c\\leqlog\u2061c_{max}\n$$\n\n\n\n$$\n\\epsilon^{+}\\geq0,\\epsilon^{-}\\geq0.\n$$\n\nThe lower bounds for the free concentrations of metabolites other than RuBP, BPGA and 3PGA in the linear program in Equation 2 were set to 90 and 99% to ensure agreement with the experimental data on the total metabolite levels. The lower bound for 3PGA were set to 50% of measured total concentration, while for RuBP and BPGA generic lower bounds of $c_{min_{i}}$ = 0.01 \u03bcM were used. The upper bounds for all free metabolite concentrations were set to 100% of the measured total concentration.\n\nSince we assumed that $k$\u00a0depends not only on environmental parameter, like temperature and pressure, but also includes regulation, which cannot be integrated in mass-action kinetics (e.g., allosteric regulation), we asked for the minimum difference in $k$\u00a0between pyrenoid and stroma leading to a feasible solution of the program. For reactions with known enzymatic turnover obtained from BRENDA (Chang et al., 2015;\u00a0Supplementary file 3), we integrated this information by restricting the respective parameter boundaries. Since the model provides subcompartment-specific estimates of metabolite concentrations, we considered the sum of the respective stroma and pyrenoid metabolite concentrations and compared them to the estimated and measured metabolite concentrations in the chloroplast. We then determined the goodness-of-fit for each set of simulated metabolite concentrations and enzyme distribution and rank the parameter sets based on their chi-square value considering the 1,000 top ranked for further investigation.\n\n### Net flux calculation\n\nIn case of non-enzymatic reactions of form $A\u2192v_{f}\u2190v_{b}B$\u00a0the reported net flux was calculated as\u00a0$v_{f}-v_{b}$. Since the activity of an enzyme is given by the rate of product formation per unit of time, we consider reaction flux $v_{cat}$ as net flux for an irreversible reaction catalyzed by enzyme $E$\u00a0with elementary reactions $A+E\u2192v_{f}\u2190v_{b}AE$\u00a0and\u00a0$AE\u00a0\u2192v_{cat}B+E$. In case of reversible enzymatic reactions modelled by elementary reactions\u00a0$C+E\u2192v_{f1}\u2190v_{b1}CE$, $CE\u2192v_{cat_f}D+E$, $D+E\u2192v_{f2}\u2190v_{b2}DE$\u00a0and\u00a0$DE\u2192v_{cat_b}C+E$, we consider $v_{cat_f}$\u2212$v_{cat_b}$ as reported net flux.\n",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "50e616e3-ad1a-4c2b-b7a1-bf41bba71c56",
+      "submission_id": "0448b94f-783b-473f-b3ce-ecc8a52f9a10",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daniel J Kliebenstein, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.37960.sa1](https://doi.org/10.7554/eLife.37960.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Effects of microcompartmentation on flux distribution and metabolic pools in Chlamydomonas reinhardtii chloroplasts\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ian Baldwin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis work begins the process of understanding how cellular compartmentalization is playing mediating the flux balance of a biochemical system.\n\nEssential revisions:\n\n1) There are issues surrounding the potential localization and quantification of this partitioning for Rubisco that need to be discussed/tested depending on how the study was conducted.\n\n2) Better clarity on how fractional metabolite levels were estimated.\n\n3) There was concern that the lack of allosteric factors in the model was creating the lack of fitting on specific metabolites. This potential hindrance of the model should be discussed and the potential role of this in limiting the model fit should be commented upon.\n\nReviewer #1:\n\nThe current manuscript addresses an important issue of green algal cell biology, the distribution of enzymes of the Calvin Benson cycle and metabolites within microcompartments of the chloroplast (pyrenoid, stroma) as well as their dependence on high and ambient CO2 concentrations. These data are the basis for modeling approaches. The model predicts that the substrate and end product of Rubisco diffuse in and out of the pyrenoid with higher fluxes in cells with ambient CO2 levels.\n\nThe authors measure Rubisco activity in fractions enriched in pyrenoid and stromal proteins and find differences in the activity in both fractions that change in their ratio, depending on the CO2 level (Figure 2). The authors write that more than 60% of Rubisco is in the pyrenoid in LC cells (ambient CO2 level) and about 20% in HC cells (5% CO2 level). Then, they perform immunolocalization studies with Venus-fusion constructs (Figure 3). To my mind, the results shown in Figure 3 contradict the former findings of the authors. The small Rubisco subunits RBCS1 and RBCS2 are only visible in the pyrenoid and not in the other parts of the chloroplast, including the stroma. Unfortunately, the authors do not mention if the used cells were grown under LC or HC for these experiments. In any case, a certain portion of Rubisco should be distributed over the chloroplast stroma if Rubisco is present to a significant extent in the stroma, and the results are not an artifact of an impure stromal fraction. The stromal fraction was obtained by lysis of the cells and a centrifugation step using the resulting supernatant. I am afraid that this fraction may be contaminated with pyrenoid proteins that derive from partial lysis of the pyrenoid when disrupting the cells. Figure 1A in Mackinder et al. (2016), to which the authors refer, shows parts of pyrenoids as well, being in agreement with this possibility. An alternative would be that the fusion construct is not reflecting the real localization pattern of the smaIl Rubisco subunits. I suggest that the authors clarify this important step by conducting immunolocalization experiments with cells grown at LC and HC using anti-Rubisco antibodies before they draw their final conclusions. Especially under HC, it should be visible that the Rubisco is not only present in the pyrenoid but also in the rest of the plastid.\n\nAnother critical point is that the authors change the CO2 treatment conditions when performing the metabolites studies. In the latter case, they use LC cells that have been treated for 15 min with 5% CO2 before harvesting. Their reasons are understandable, but it would be desirable to have the same conditions for the protein and metabolites studies.\n\nIn summary, this is an interesting and highly important topic and the manuscript should be of interest to a broad readership. However, the authors have to address the mentioned concerns to either verify their conclusion or to change it and consequently adapt their model.\n\nReviewer #2:\n\nThis is a very exciting manuscript detailing the distribution of many enzymes found in the chloroplast of Chlamydomonas reinhardtii. The authors are mainly focused on the location of the Calvin-Benson cycle (CBC) enzymes and whether a specific protein is in the pyrenoid or chloroplast stroma and whether they moved if the cells had a functioning CCM or not. They clearly demonstrate the localization by measuring enzymatic activity after fractionation, using an MS-based method on chloroplast fractions to quantitate protein abundance and using fluorescently tagged proteins to visualize their location (Figure 3). This work is solid and the conclusions are well considered.\n\nThe authors then go on to estimate the metabolite concentrations of a number of CBC intermediates and model metabolite fluxes between the stroma and pyrenoid. This is difficult to address experimentally but this work is the best estimation of the metabolite fluxes and concentrations to date. The fact that the estimated pyrenoid and stromal concentrations of RuBP and PGA are similar is very interesting.\n\nIn my opinion the authors should address two issues near the beginning of the Discussion. The most serious issue relates to the estimation of metabolite concentrations. If I understand the methods correctly, the authors have quantitated the metabolite amount in the entire cell and have not tried to determine the metabolite amounts in the chloroplast versus cytoplasm. If that is true, it is not clearly stated in the beginning of the Discussion. How were chloroplast CBC metabolite levels estimated if the measured amount of each metabolite was for the entire cell? The authors need to say exactly what assumptions they used to calculate the amount of the metabolite in the stroma. The only place this was addressed was in the legend to Figure 2. It should be in the Materials and methods section and reiterated at the beginning of the discussion.\n\nMy second concern was which value for the percentage of Rubisco in the pyrenoid was used? Clearly the 60% pyrenoid localization seen in fractionation is lower than earlier estimates using immunogold or the fluorescence measurements. Again at the beginning of the model description and in the discussion the actual values used should be stressed. From Figure 1 it would appear that the value used was 100% in the pyrenoid but I am not certain. I think any value over 90% is reasonable but the authors should state why they favored the fluorescence method or literature values over the MS or activity measurements. I suspect there is some dissolution of the pyrenoid and that is what accounts for the discrepancy but it should be noted.\n\nReviewer #3:\n\nThis manuscript examined the localisation of all enzymes involved in the CB cycle in Chlamydomonas. Of particular focus was the distribution between pyrenoid and thylakoid subcellular compartments. The authors also performed mathematical modeling of the fluxes and estimated kinetic and transport rates between the compartments.\n\nWhat is new about this work? My general assessment is that not much is new and what is new is not that surprising. The localization of the entire set of CBC enzymes is new, but most enzymes were found to be restricted to the stroma of the thylakoid. The results support what was previously known from other studies. Since Rubisco is known to be in both locations, it is obvious that the substrate and products of this enzyme will have to exchange between the compartments.\n\n1) I don't think the kinetic modeling will give correct information because it is lacks important known regulation (i.e. allostery, light) and is not parameterized with enough data. For estimating more parameters (65 k values and 40 diffusion constants) from steady-state measurements of 11 total metabolite concentrations and 12 enzymes under 2 conditions, which by my calculations is 46 measurements.\n\n2) The lack of statistical agreement for 6/16 metabolites, suggests the model (or the measurements) is wrong. Therefore, I don't understand why one would trust in the results from the model.\n\nOnce the experimental results of localization are known, I don't understand why the modeling would include transport reactions of all intermediates and enzymes in both locations. The modeling effort could be more focused if the subcellular experiments were first used as constraints, which would eliminate lots of transport and kinetic parameters.\n\nThe thermodynamic analysis while correct didn't provide much insight. What is the significance of two enzymes having a positive \u2206G? In panel A, TPI has a positive \u2206G. I think for a reversibility analysis in vivo metabolic flux analysis by 13C would be more informative.\n\nThe analysis of diffusion between compartments is important, but is rather unclear. In the subsection \u201cMechanisms of metabolite transport between microcompartments\u201d, what is the estimated concentration gradient (it seems you give this in the fourth paragraph of the Discussion on the order of 24 or 8 nM)? Given a reasonable estimate for diffusivity of small molecules in water, is diffusion feasible to support the flux? I question the logic in the aforementioned paragraph. Just because concentrations go downhill doesn't rule out facilitated transport (i.e. not bulk diffusion), but the converse would be true (i.e. uphill requires expenditure of cellular energy). For example, one normally starts a microbial culture with 30g/L of glucose (160 mM), the intracellular concentration is certainly lower than this, but it doesn't mean diffusion is sufficient to explain the results! Certainly facilitated transport is needed to pass through the plasma membrane. The authors get the point of facilitated transport correct in the Discussion, but the results can be improved.\n\nThe conclusion that transport is tightly regulated is a flawed conclusion. Your modeling effort enforces a steady-state, so of course the export rate of 3PGA would have to balance the import of RuBP by a factor of 2. You are proving what you assume. Where is the evidence of regulation, particularly of transport?\n",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c271cdf2-7fab-4f46-a7ae-9242764b32b6",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C1",
+      "claim": "Cells and organelles include microcompartments that alter the spatiotemporal characteristics of cellular processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells and organelles are not homogeneous but include microcompartments that alter the spatiotemporal characteristics of cellular processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cellular organization presented in the abstract without specific experimental data from this study, but draws on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "6c2d8fb6-fe5c-436b-a594-89245e9a3aec",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C2",
+      "claim": "The pyrenoid is a microcompartment that is essential for a carbon concentrating mechanism (CCM) that improves the photosynthetic performance of eukaryotic algae.",
+      "claim_type": "EXPLICIT",
+      "source": "The pyrenoid is a microcompartment that is essential for a carbon concentrating mechanism (CCM) that improves the photosynthetic performance of eukaryotic algae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge in the abstract and is supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "37698717-49fe-4ba6-99b4-c7298b52592e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C3",
+      "claim": "The model predicts that ribulose-1,5-bisphosphate (RuBP), the substrate of Rubisco, diffuses into the pyrenoid with higher fluxes in CCM-induced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that ribulose-1,5-bisphosphate (RuBP), the substrate of Rubisco, and 3-phosphoglycerate (3PGA), its product, diffuse in and out of the pyrenoid, respectively, with higher fluxes in CCM-induced cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational modeling results using experimental data on metabolites and proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "f9709cb9-d612-4a0c-a2fc-9fe6c5b1089e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C4",
+      "claim": "The model predicts that 3-phosphoglycerate (3PGA), the product of Rubisco, diffuses out of the pyrenoid with higher fluxes in CCM-induced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that ribulose-1,5-bisphosphate (RuBP), the substrate of Rubisco, and 3-phosphoglycerate (3PGA), its product, diffuse in and out of the pyrenoid, respectively, with higher fluxes in CCM-induced cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational modeling results using experimental data on metabolites and proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "f19d2d7d-464c-4237-83a6-3abc68eac727",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C5",
+      "claim": "There is no major diffusional barrier to metabolic flux between the pyrenoid and stroma.",
+      "claim_type": "EXPLICIT",
+      "source": "It also indicates that there is no major diffusional barrier to metabolic flux between the pyrenoid and stroma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is derived from modeling results showing similar diffusion constants between HC and LC* conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "801e40ca-8e84-43f0-8fd4-3a3acf7ef72d",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C6",
+      "claim": "Both eukaryotic and prokaryotic cells include microcompartments that are not separated from the rest of the cell by a lipid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Both eukaryotic and prokaryotic cells also include microcompartments that are not separated from the rest of the cell by a lipid membrane (for reviews, see Giordano et al., 2005; Hyman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "c5bedca8-57ab-46d6-841a-e891793aa0ef",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C7",
+      "claim": "In bacteria, microcompartments are surrounded by protein shells.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria they are surrounded by protein shells (for reviews, see Kerfeld and Melnicki, 2016; Yeates et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "c75cdffd-51f0-4291-9fe8-cb4babac7a91",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C8",
+      "claim": "Microcompartments may partition metabolic pools and enzymes and can directly affect the operation of metabolic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Such microcompartments may partition metabolic pools and enzymes; therefore, they can directly affect the operation of metabolic pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about microcompartment function based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "dceb12fd-21da-4762-843b-4865ef407a6a",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C9",
+      "claim": "The first described bacterial microcompartment was the carbon-fixing carboxysome in cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The first described bacterial microcompartment was the carbon-fixing carboxysome in cyanobacteria (Drews and Niklowitz, 1956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This historical fact is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "5a66dd15-db7c-4e9f-8191-0959930282d5",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C10",
+      "claim": "The carboxysome enables the cell to accumulate carbon dioxide (CO2) in the vicinity of Rubisco, which enhances the carboxylation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "It enables the cell to accumulate carbon dioxide (CO2) in the vicinity of Rubisco, which enhances the carboxylation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the function of the carboxysome based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "9d1200e5-aa35-4257-aaf6-65db2dfd0026",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C11",
+      "claim": "The carboxysome is an essential part of the cyanobacterial carbon concentrating mechanism (CCM).",
+      "claim_type": "EXPLICIT",
+      "source": "The carboxysome is an essential part of the cyanobacterial carbon concentrating mechanism (CCM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge about cyanobacterial CCM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "8ee51e0e-e9b3-405d-8f2f-e68aa0116e1b",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C12",
+      "claim": "There are two types of carboxysomes, the alpha and beta carboxysome.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two types of carboxysomes, the alpha and beta carboxysome, and the structure and function of both types have been well-studied (Kerfeld and Melnicki, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "c469371d-8f9a-4647-94ff-fbd3beee0de2",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C13",
+      "claim": "Loss of structural proteins results in carboxysome-less mutants that are unable to grow under ambient CO2 conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of structural proteins results in carboxysome-less mutants that are unable to grow under ambient CO2 conditions (Berry et al., 2005; Ogawa et al., 1994; Woodger et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "93782716-5720-451c-8827-69d169628a48",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C14",
+      "claim": "The role of the propanediol utilization (Pdu) microcompartment in Salmonella enterica is the degradation of 1,2-propanediol without the release of the degradation intermediate propionaldehyde.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of the propanediol utilization (Pdu) microcompartment in Salmonella enterica is the degradation of 1,2-propanediol, a product of anaerobic sugar breakdown, without the release of the degradation intermediate propionaldehyde.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the function of the Pdu microcompartment based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "b8a3cd5a-8726-4952-bc87-0bb0771eddff",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C15",
+      "claim": "Propionaldehyde is toxic and causes damage to DNA once in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Propionaldehyde is toxic and, once in the cytosol, causes damage to DNA (Sampson and Bobik, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "11badb30-3ac3-4572-a0c1-91e2c9fdac27",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C16",
+      "claim": "A similar role was suggested for the ethanolamine utilization (Eut) microcompartment in the detoxification of acetaldehyde produced during ethonalamine catabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar role was suggested for the ethanolamine utilization (Eut) microcompartment in the detoxification of acetaldehyde produced during ethonalamine catabolism (Moore and Escalante-Semerena, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "135d9e6e-a50b-429c-94cf-b05e97327786",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C17",
+      "claim": "The pyrenoid in chloroplasts of green algae is a microcompartment known in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Microcompartments are also known in eukaryotes, including: metabolic compartments in liver (Fujiwara and Itoh, 2014) and muscle cells (Saks et al., 2008), and the pyrenoid in chloroplasts of green algae (Gibbs, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "cd4d29fe-d3a5-4a81-829b-36130b603b67",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C18",
+      "claim": "Different CCMs have evolved in higher plants, algae and cyanobacteria to cope with the relatively low amounts of CO2 in the atmosphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Different CCMs have evolved in higher plants, algae and cyanobacteria to cope with the relatively low amounts of CO2 in the atmosphere (currently 0.03\u20130.04%) and to compensate for the low affinity of Rubisco for CO2 under these conditions (Delgado et al., 1995; Tcherkez et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "a6b50a36-d978-4bf5-bdeb-ba23f09fbbdd",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C19",
+      "claim": "The current atmospheric CO2 concentration is 0.03\u20130.04%.",
+      "claim_type": "EXPLICIT",
+      "source": "Different CCMs have evolved in higher plants, algae and cyanobacteria to cope with the relatively low amounts of CO2 in the atmosphere (currently 0.03\u20130.04%) and to compensate for the low affinity of Rubisco for CO2 under these conditions (Delgado et al., 1995; Tcherkez et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about atmospheric CO2 levels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "400c400a-cb96-4b98-859e-61cca2d7de4d",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C20",
+      "claim": "In eukaryotic green algae, a microcompartment called the pyrenoid is crucial for the establishment of a CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotic green algae, a microcompartment called the pyrenoid is crucial for the establishment of a CCM (Caspari et al., 2017; Genkov et al., 2010; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and a figure reference.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "a5614864-e5f7-4a79-96f4-0af8c845417f",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C21",
+      "claim": "There is no membrane or protein shell surrounding the pyrenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no membrane or protein shell surrounding the pyrenoid which, like many of these non-membrane microcompartments (for review, see Hyman et al., 2014), was recently described as a liquid-like organelle formed by phase separation from the chloroplast stroma (Freeman Rosenzweig et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "4c48b05e-f9d1-43c1-aec2-3262eb039bf5",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C22",
+      "claim": "The pyrenoid was recently described as a liquid-like organelle formed by phase separation from the chloroplast stroma.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no membrane or protein shell surrounding the pyrenoid which, like many of these non-membrane microcompartments (for review, see Hyman et al., 2014), was recently described as a liquid-like organelle formed by phase separation from the chloroplast stroma (Freeman Rosenzweig et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "c2a3c05a-fb46-464e-ac63-b1ff90fcb293",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C23",
+      "claim": "Pyrenoids contain Rubisco.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyrenoids are known to contain Rubisco (Kuchitsu et al., 1988b; Kuchitsu et al., 1991; McKay et al., 1991), Rubisco activase (McKay et al., 1991) and EPYC1, which has been proposed to be a structural protein in the pyrenoid (Mackinder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "65650870-3729-4afa-a343-84cd4a7d7993",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C24",
+      "claim": "Pyrenoids contain Rubisco activase.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyrenoids are known to contain Rubisco (Kuchitsu et al., 1988b; Kuchitsu et al., 1991; McKay et al., 1991), Rubisco activase (McKay et al., 1991) and EPYC1, which has been proposed to be a structural protein in the pyrenoid (Mackinder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "8b50ea6c-e5ff-43dd-95c8-86393e1c49f6",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C25",
+      "claim": "Pyrenoids contain EPYC1, which has been proposed to be a structural protein in the pyrenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyrenoids are known to contain Rubisco (Kuchitsu et al., 1988b; Kuchitsu et al., 1991; McKay et al., 1991), Rubisco activase (McKay et al., 1991) and EPYC1, which has been proposed to be a structural protein in the pyrenoid (Mackinder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "b70dbbed-295e-4412-b3e7-1ef9e1d14830",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C26",
+      "claim": "About 40% of the total Rubisco is located in the pyrenoid under high CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunolocalisation studies showed that about 40% and 90% of the total Rubisco is located in the pyrenoid under high CO2 and atmospheric CO2, respectively, while the rest is distributed in the stroma (Borkhsenious et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to an immunolocalization study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "261f0cfb-cb5a-4d2c-8cad-9dddb9f355a6",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C27",
+      "claim": "About 90% of the total Rubisco is located in the pyrenoid under atmospheric CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunolocalisation studies showed that about 40% and 90% of the total Rubisco is located in the pyrenoid under high CO2 and atmospheric CO2, respectively, while the rest is distributed in the stroma (Borkhsenious et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to an immunolocalization study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "2e78c4d1-5ebe-469b-9c61-d17185f2c92e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C28",
+      "claim": "Under ambient CO2 when CCM is induced, inorganic carbon (Ci) is actively transported across the membrane of the cell and accumulated as HCO3- in the thylakoid lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Under ambient CO2 when CCM is induced, experimental evidence suggests that the inorganic carbon (Ci, the sum of CO2, CO32-, HCO3 and H2CO3) is actively transported across the membrane of the cell and accumulated as HCO3- in the thylakoid lumen (for reviews, see Grossman et al., 2007; Jungnick et al., 2014; Moroney and Ynalvez, 2007; Spalding, 2008; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "9537a466-1591-46b9-82ae-9390e1df98af",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C29",
+      "claim": "Luminal regions have highly branched tubules that reach into the pyrenoid and may facilitate movement of bicarbonate, CO2 and other small molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "These luminal regions have highly branched tubules that reach into the pyrenoid and may facilitate movement of bicarbonate, CO2 and other small molecules (Engel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and includes speculation about function.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "978c8041-f087-4567-9297-d3fbf1feb5a0",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C30",
+      "claim": "A carbonic anhydrase (CAH3), essential for the CCM, is localized to the lumen regions that pass through the pyrenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "A carbonic anhydrase (CAH3), essential for the CCM, is localized to the lumen regions that pass through the pyrenoid and is thought to catalyze the dehydration of HCO3- to CO2, as the preferred form of Ci at the low pH of the lumen (Duanmu et al., 2009; Sinetova et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "9c65b5d8-b306-47e8-9910-b7c9a1c22ebd",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C31",
+      "claim": "CAH3 is thought to catalyze the dehydration of HCO3- to CO2, as the preferred form of Ci at the low pH of the lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "A carbonic anhydrase (CAH3), essential for the CCM, is localized to the lumen regions that pass through the pyrenoid and is thought to catalyze the dehydration of HCO3- to CO2, as the preferred form of Ci at the low pH of the lumen (Duanmu et al., 2009; Sinetova et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and includes inference about function.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "fd4af1db-6ab9-4a73-b1e6-f289437ab395",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C32",
+      "claim": "A starch sheath surrounds the pyrenoid, but only under ambient CO2 conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A starch sheath, of unclear function, surrounds the pyrenoid, but only under ambient CO2 conditions (Kuchitsu et al., 1988a; Ramazanov et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "fdd822cd-01a3-49e3-b7ae-4bf9b54373fb",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C33",
+      "claim": "The starch sheath was suggested to serve as a diffusional barrier for CO2 and potentially also larger molecules, such as metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "The starch sheath was suggested to serve as a diffusional barrier for CO2 and therefore potentially also larger molecules, such as metabolites, although the existing experimental evidence is inconsistent with this hypothesis (Badger and Price, 1994; Villarejo et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and notes that evidence is inconsistent with the hypothesis.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "09d5ab2d-a697-443a-8367-c704643967ea",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C34",
+      "claim": "The current model of CCM assumes that, apart from Rubisco, the remaining enzymes of the Calvin-Benson cycle (CBC) are situated in the stroma.",
+      "claim_type": "EXPLICIT",
+      "source": "The current model of CCM assumes that, apart from Rubisco, the remaining enzymes of the Calvin-Benson cycle (CBC) are situated in the stroma (Jungnick et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "876275fb-d863-4890-be99-2a446de0fd1f",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C35",
+      "claim": "The substrate and product of the carboxylation reaction catalyzed by Rubisco, ribulose-1,5-bisphosphate (RuBP) and 3-phosphoglyccerate (3PGA), need to move in and out of the pyrenoid, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the substrate and product of the carboxylation reaction catalyzed by Rubisco, ribulose-1,5-bisphosphate (RuBP) and 3-phosphoglyccerate (3PGA), need to move in and out of the pyrenoid, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the location of Rubisco in the pyrenoid and other CBC enzymes in the stroma.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "f72fc971-6ba9-49d6-996d-98aa48f70809",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C36",
+      "claim": "Immunolocalisation studies failed to detect glyceraldehyde 3-phosphate dehydrogenase (GAPDH), aldolase (FBA +SBA), ribose-phosphate isomerase (RPI) or phosphoribulokinase (PRK) in pyrenoids.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption is supported by immunolocalisation studies that failed to detect glyceraldehyde 3-phosphate dehydrogenase (GAPDH), aldolase (FBA +SBA) catalyzing the two aldol reactions of the CBC that produce fructose-1,6-bisphosphate (FBP) and sedoheptulose-1,7-bisphosphate (SBP), ribose-phosphate isomerase (RPI) or phosphoribulokinase (PRK) in pyrenoids (Kuchitsu et al., 1991; Suss et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to immunolocalization studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "ffcdd945-03dd-4d39-bc31-5f508fefef4e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C37",
+      "claim": "Biochemical studies indicate PRK may be in close association with the pyrenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the evidence for absence of CBC enzymes from the pyrenoid is not fully consistent as biochemical studies indicate PRK may be in close association with the pyrenoid (Holdsworth, 1971; McKay and Gibbs, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "05bf4ada-975c-4368-a320-403842022d19",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C38",
+      "claim": "Rubisco is differently distributed under ambient and high CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Rubisco is differently distributed under ambient and high CO2 (Borkhsenious et al., 1998) implying that the flux of the CBC that takes place in the pyrenoid may differ between these two conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and includes an inference about flux.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "2df99df5-6a82-4e1a-8e10-467021ea5435",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C39",
+      "claim": "More than 61.8% of the Rubisco was found in the pyrenoid in LC grown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 61.8% of the Rubisco was found in the pyrenoid in LC grown cells, and about 21.8% in HC grown cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements using enzyme activity assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "2b1eb0eb-1e1f-41a8-b5c8-a909008fe757",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C40",
+      "claim": "About 21.8% of the Rubisco was found in the pyrenoid in HC grown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 61.8% of the Rubisco was found in the pyrenoid in LC grown cells, and about 21.8% in HC grown cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements using enzyme activity assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "4c287a3b-13b3-4639-b5bd-d1d47d086574",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C41",
+      "claim": "8% of GAPDH was found in the pyrenoid in LC grown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from GAPDH (8% in LC and 11% in HC grown cells) and PRK (13% in HC grown cells but <2% in LC grown cells) less than 2% of the other CBC proteins were detected in the pyrenoid-enriched fractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements using shotgun proteomics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "6a05aea1-3c4a-4f39-9989-6e3a9c16ab54",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C42",
+      "claim": "11% of GAPDH was found in the pyrenoid in HC grown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from GAPDH (8% in LC and 11% in HC grown cells) and PRK (13% in HC grown cells but <2% in LC grown cells) less than 2% of the other CBC proteins were detected in the pyrenoid-enriched fractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements using shotgun proteomics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "1ce76c99-8d7e-49ca-9bd7-fba220de7ca1",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C43",
+      "claim": "13% of PRK was found in the pyrenoid in HC grown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from GAPDH (8% in LC and 11% in HC grown cells) and PRK (13% in HC grown cells but <2% in LC grown cells) less than 2% of the other CBC proteins were detected in the pyrenoid-enriched fractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements using shotgun proteomics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "e7959b6e-38c0-4cb5-ae92-5212cfb0df8f",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C44",
+      "claim": "Less than 2% of PRK was found in the pyrenoid in LC grown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from GAPDH (8% in LC and 11% in HC grown cells) and PRK (13% in HC grown cells but <2% in LC grown cells) less than 2% of the other CBC proteins were detected in the pyrenoid-enriched fractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements using shotgun proteomics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "29da2a3a-f843-4db5-ad51-7a9b5614e5bf",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C45",
+      "claim": "Less than 2% of the other CBC proteins (besides GAPDH and PRK) were detected in the pyrenoid-enriched fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from GAPDH (8% in LC and 11% in HC grown cells) and PRK (13% in HC grown cells but <2% in LC grown cells) less than 2% of the other CBC proteins were detected in the pyrenoid-enriched fractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements using shotgun proteomics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "f6b8b17c-a1cc-41ed-b90b-bade263cf555",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C46",
+      "claim": "The proteins encoded by the two Rubisco small subunit genes (RBCS1 and RBCS2) both showed strong localization to the pyrenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteins encoded by the two Rubisco small subunit genes (RBCS1 and RBCS2) both showed strong localization to the pyrenoid (discussed in more details below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on confocal microscopy of Venus-tagged proteins, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "844939ae-7976-4b33-9d09-abc3e34566cc",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C47",
+      "claim": "PGK1, GAP1, GAP3, FBA3, SBP1, RPE1, RPI1 and PRK1 proteins were located in the plastid stroma and not in the pyrenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "PGK1, GAP1, GAP3, FBA3, SBP1, RPE1, RPI1 and PRK1 proteins were located in the plastid stroma and not in the pyrenoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on confocal microscopy of Venus-tagged proteins, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "0fd17742-fa06-4d58-ae82-52a378346558",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C48",
+      "claim": "The two isoforms of GAPDH (GAP1 and GAP3) that are predicted to be localized to the chloroplast showed a strong Venus-signal in the stroma of this organelle.",
+      "claim_type": "EXPLICIT",
+      "source": "While the two isoforms of GAPDH (GAP1 and GAP3) that are predicted to be localized to the chloroplast, indeed showed a strong Venus-signal in the stroma of this organelle, this was not true for the two isoforms of aldolase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on confocal microscopy of Venus-tagged proteins, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "ca3314f0-459e-486c-949e-bfd3c6bd6926",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C49",
+      "claim": "The Venus-signal of FBA3 was found in the stroma.",
+      "claim_type": "EXPLICIT",
+      "source": "The Venus-signal of FBA3 was found in the stroma but the Venus-signal of FBA2 was detected in the cytosol, in particular surrounding or confining the nucleus, indicating a role unrelated to the CBC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on confocal microscopy of Venus-tagged proteins, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "0893b798-7e4f-4b22-bd89-8f2eff733e6d",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C50",
+      "claim": "The Venus-signal of FBA2 was detected in the cytosol, in particular surrounding or confining the nucleus, indicating a role unrelated to the CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "The Venus-signal of FBA3 was found in the stroma but the Venus-signal of FBA2 was detected in the cytosol, in particular surrounding or confining the nucleus, indicating a role unrelated to the CBC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on confocal microscopy of Venus-tagged proteins, as shown in Figure 3, with inference about function.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "657af358-6eca-4454-b868-854ed553cc32",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C51",
+      "claim": "The LC* cells showed a significant decrease in 3PGA compared to HC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The LC* cells showed a significant (Student's t-test, p-value<0.05) decrease in 3PGA, dehydroxyactone phosphate (DHAP) and significant increases in RuBP, fructose-6-phosphate (F6P), ribose-5-phosphate (R5P), xylulose-5-phosphate (Xu5P) and ribulose-5-phosphate (Ru5P) compared to HC cells (Figure 2, Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental metabolite measurements by HPLC-MS/MS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "c3dd4cd4-6b3c-4b67-9214-29a314e3218e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C52",
+      "claim": "The LC* cells showed a significant decrease in dehydroxyacetone phosphate (DHAP) compared to HC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The LC* cells showed a significant (Student's t-test, p-value<0.05) decrease in 3PGA, dehydroxyactone phosphate (DHAP) and significant increases in RuBP, fructose-6-phosphate (F6P), ribose-5-phosphate (R5P), xylulose-5-phosphate (Xu5P) and ribulose-5-phosphate (Ru5P) compared to HC cells (Figure 2, Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental metabolite measurements by HPLC-MS/MS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "562f4c7e-98ac-418d-91aa-a2c033316390",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C53",
+      "claim": "The LC* cells showed significant increases in RuBP compared to HC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The LC* cells showed a significant (Student's t-test, p-value<0.05) decrease in 3PGA, dehydroxyactone phosphate (DHAP) and significant increases in RuBP, fructose-6-phosphate (F6P), ribose-5-phosphate (R5P), xylulose-5-phosphate (Xu5P) and ribulose-5-phosphate (Ru5P) compared to HC cells (Figure 2, Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental metabolite measurements by HPLC-MS/MS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "4f35d27f-d402-4f9e-b234-8fe2e4172b5f",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C54",
+      "claim": "The LC* cells showed significant increases in fructose-6-phosphate (F6P) compared to HC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The LC* cells showed a significant (Student's t-test, p-value<0.05) decrease in 3PGA, dehydroxyactone phosphate (DHAP) and significant increases in RuBP, fructose-6-phosphate (F6P), ribose-5-phosphate (R5P), xylulose-5-phosphate (Xu5P) and ribulose-5-phosphate (Ru5P) compared to HC cells (Figure 2, Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental metabolite measurements by HPLC-MS/MS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "b746a752-f5f0-475b-8d90-6d65fa33526e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C55",
+      "claim": "The LC* cells showed significant increases in ribose-5-phosphate (R5P) compared to HC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The LC* cells showed a significant (Student's t-test, p-value<0.05) decrease in 3PGA, dehydroxyactone phosphate (DHAP) and significant increases in RuBP, fructose-6-phosphate (F6P), ribose-5-phosphate (R5P), xylulose-5-phosphate (Xu5P) and ribulose-5-phosphate (Ru5P) compared to HC cells (Figure 2, Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental metabolite measurements by HPLC-MS/MS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "6f70bbcc-d72b-48b9-86aa-d78cc8047127",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C56",
+      "claim": "The LC* cells showed significant increases in xylulose-5-phosphate (Xu5P) compared to HC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The LC* cells showed a significant (Student's t-test, p-value<0.05) decrease in 3PGA, dehydroxyactone phosphate (DHAP) and significant increases in RuBP, fructose-6-phosphate (F6P), ribose-5-phosphate (R5P), xylulose-5-phosphate (Xu5P) and ribulose-5-phosphate (Ru5P) compared to HC cells (Figure 2, Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental metabolite measurements by HPLC-MS/MS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "e575b61e-2120-4da2-8851-1c03d841e250",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C57",
+      "claim": "The LC* cells showed significant increases in ribulose-5-phosphate (Ru5P) compared to HC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The LC* cells showed a significant (Student's t-test, p-value<0.05) decrease in 3PGA, dehydroxyactone phosphate (DHAP) and significant increases in RuBP, fructose-6-phosphate (F6P), ribose-5-phosphate (R5P), xylulose-5-phosphate (Xu5P) and ribulose-5-phosphate (Ru5P) compared to HC cells (Figure 2, Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental metabolite measurements by HPLC-MS/MS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "ca2eef68-26f7-4550-87d8-a7454d73c631",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C58",
+      "claim": "The rates of photosynthesis were almost equal in HC cells and LC* cells (55 and 57 \u00b5mol O2 * h\u22121* mg Chl\u22121, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, the rates of photosynthesis were almost equal in both sets of cells (55 and 57 \u00b5mol O2 * h\u22121* mg Chl\u22121 for HC cells and for LC*, respectively; Supplementary file 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements of oxygen production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "b8a91b6b-9774-459e-9a55-7559d4b0a9bd",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C59",
+      "claim": "The model predicted that the vast majority of the RuBP was bound.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicted that the vast majority of the RuBP was bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "a4514cea-cab2-4ef5-b12c-47cc84f13c26",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C60",
+      "claim": "The observed increase in RuBP concentration for LC* cells was mainly due to an increase in bound RuBP in the pyrenoid as a result of an increased Rubisco concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed increase in RuBP concentration for LC* cells was therefore mainly due to an increase in bound RuBP in the pyrenoid as a result of an increased Rubisco concentration (Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "8b667ae6-43ce-4458-bc32-dff49e9c9f4c",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C61",
+      "claim": "The model predicted slightly higher free RuBP in the stroma in comparison to the pyrenoid (0.024 \u00b5M and 0.008 \u00b5M difference under LC* and HC conditions, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicted slightly higher free RuBP in the stroma in comparison to the pyrenoid (0.024 \u00b5M and 0.008 \u00b5M difference under LC* and HC conditions, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "cd858ca0-c6f8-42b4-bb7a-2b6d882a2f04",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C62",
+      "claim": "The difference between free RuBP in the stroma and pyrenoid was larger in LC* than HC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in line with increased transport RuBP rates into the pyrenoid, the difference between free RuBP in the stroma and pyrenoid was larger in LC* than HC cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "5efe7fe9-f47d-4756-974c-0c4904e303e4",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C63",
+      "claim": "A concentration gradient in the direction of RuBP transport towards the pyrenoid was observed in both cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Since in both cell types we observed a concentration gradient in the direction of RuBP transport towards the pyrenoid, the model predictions indicate diffusion or facilitated transport may be a feasible mechanism of RuBP transport under HC and LC* (although the estimated concentration gradient is very small).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data, with inference about transport mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "1493219b-9f99-4ddb-88e6-820479f51f84",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C64",
+      "claim": "Diffusion or facilitated transport may be a feasible mechanism of RuBP transport under HC and LC*.",
+      "claim_type": "EXPLICIT",
+      "source": "Since in both cell types we observed a concentration gradient in the direction of RuBP transport towards the pyrenoid, the model predictions indicate diffusion or facilitated transport may be a feasible mechanism of RuBP transport under HC and LC* (although the estimated concentration gradient is very small).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model predictions showing concentration gradients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "cc84413c-fe44-4689-ba87-5e74d7c23b9e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C65",
+      "claim": "The model predicted equal free amounts of 3PGA between pyrenoid and stroma under HC and LC*, implying diffusional equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the model predicted equal free amounts of 3PGA between pyrenoid and stroma under HC and LC*, implying diffusional equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data, with inference about equilibrium.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "2cca4a32-e774-4d39-8fdc-9462ae813c4e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C66",
+      "claim": "The validation of the model indicated statistically significant quantitative and qualitative agreement between the experimental and modelled chloroplast metabolite concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The validation of the model indicated statistically significant quantitative and qualitative agreement between the experimental and modelled chloroplast metabolite concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical comparison between model predictions and experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "d63064ba-81fe-421a-97b8-ab722eb3b3e7",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C67",
+      "claim": "The agreement between experimental data and predicted metabolite levels was statistically acceptable for 10 out of 16 individual metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "The agreement between experimental data and predicted metabolite levels was statistically acceptable for 10 out of 16 individual metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical comparison between model predictions and experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "343a5ea6-6da3-4790-b383-894aa545406e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C68",
+      "claim": "In the case of GAP and SBP, the lack of statistical fit could be due to the fact that these compounds are involved in redox-regulated reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of GAP and SBP, the lack of statistical fit could be due to the fact that these compounds are involved in redox-regulated reactions, namely the reduction of BPGA to GAP catalyzed by GADPH (Sparla et al., 2002) and the hydrolysis of SBP catalyzed by SBPase (Dunford et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain discrepancies between model and data, supported by citations about redox regulation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "3ab255a4-55e7-4b29-be5c-1bd778f2000a",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C69",
+      "claim": "The model does not include redox regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy is in line with the fact that the model does not include redox regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "88ad1755-65ca-412e-9a46-9adbc8987906",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C70",
+      "claim": "The applied light intensity of 46 \u03bcmol photons*m\u22122*s\u22121 is not saturating.",
+      "claim_type": "EXPLICIT",
+      "source": "This explanation is supported by the observation that the applied light intensity of 46 \u03bcmol photons*m\u22122*s\u22121 is not saturating, and analysis of SBP and S7P indicated that SBPase is incompletely activated at this light intensity (Mettler et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "390d73cc-da39-42d7-9eb2-d567e93c012a",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C71",
+      "claim": "Analysis of SBP and S7P indicated that SBPase is incompletely activated at 46 \u03bcmol photons*m\u22122*s\u22121 light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "This explanation is supported by the observation that the applied light intensity of 46 \u03bcmol photons*m\u22122*s\u22121 is not saturating, and analysis of SBP and S7P indicated that SBPase is incompletely activated at this light intensity (Mettler et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "c0335ad5-d703-49fa-a72b-ed66d7447b2f",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C72",
+      "claim": "For the reaction catalyzed by GAPDH, it is likely that NADPH provided by the light reaction was rate limiting rather than GAPDH redox activation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the reaction catalyzed by GAPDH, it is likely that NADPH provided by the light reaction was rate limiting rather than GAPDH redox activation (Mettler et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "830c98e1-d088-40c1-8f8b-93332928f917",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C73",
+      "claim": "The model predicted an increase in the flux of the Rubisco reaction inside the pyrenoid under LC* compared to HC conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicted an increase in the flux of the Rubisco reaction inside the pyrenoid under LC* compared to HC conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "29a3ddd8-3add-4c4f-a966-1598b5f09a9c",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C74",
+      "claim": "The model predicted import of RuBP into the pyrenoid, with fluxes being higher under LC* compared to HC conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The model also predicted import of RuBP and export of 3PGA into and from pyrenoid, respectively, with both fluxes being higher under LC* compared to HC conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "a8d4386e-233c-486b-b635-8d93ed22d203",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C75",
+      "claim": "The model predicted export of 3PGA from the pyrenoid, with fluxes being higher under LC* compared to HC conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The model also predicted import of RuBP and export of 3PGA into and from pyrenoid, respectively, with both fluxes being higher under LC* compared to HC conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "77c57a46-f425-435a-b28a-6091fee3276e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C76",
+      "claim": "The concentration gradient for RuBP between stroma and pyrenoid was larger under LC* than under HC.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration gradient for RuBP between stroma and pyrenoid was larger under LC* than under HC, but for both conditions the concentration gradients were small (0.024 \u00b5M and 0.008 \u00b5M, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "9667d28d-aceb-4e8f-8023-e080e93fdfe5",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C77",
+      "claim": "For both HC and LC* conditions, the concentration gradients for RuBP were small (0.024 \u00b5M and 0.008 \u00b5M, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration gradient for RuBP between stroma and pyrenoid was larger under LC* than under HC, but for both conditions the concentration gradients were small (0.024 \u00b5M and 0.008 \u00b5M, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "7e7f30a1-6eae-49f3-9dc3-bca0060bdd06",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C78",
+      "claim": "For 3PGA, the model predicted that there is no concentration gradient between stroma and pyrenoid for both conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of 3PGA, the model predicted, for both conditions, that there is no concentration gradient between stroma and pyrenoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "3af2d2d2-1d4c-41ae-9403-10beb9b3601a",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C79",
+      "claim": "Since there is no accumulation of RuBP in the pyrenoid or 3PGA in the stroma, active transport seems unnecessary and movement between the microcompartments may occur by diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there is no accumulation of RuBP in the pyrenoid or 3PGA in the stroma, active transport seems unnecessary and movement between the microcompartments may occur by diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model predictions about concentration gradients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "d2faef59-7c54-4c70-973a-423b0d2ee81a",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C80",
+      "claim": "The starch sheath was previously suggested to work as a diffusional barrier to prevent CO2 from diffusing out of the pyrenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the starch sheath surrounding the pyrenoid under ambient but not under high CO2 conditions, was suggested to work as diffusional barrier to prevent CO2 from diffusing out of the pyrenoid (Badger and Price, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "1f063072-6187-4c48-8c72-9d561543d818",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C81",
+      "claim": "The diffusion constant for RuBP is proportional to 10.623 s\u22121 for HC conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The diffusion constants is proportional to 10.623 s\u22121 (86.664 \u00b5M s\u22121 * 0.008158\u22121 \u00b5M\u22121) and 10,259 s\u22121 (246.12 \u00b5Ms\u22121 * 0.02399\u22121 \u00b5M\u22121) for HC and LC*, respectively (Figure 6A, Figure 6\u2014source data 1), revealin Figure 6\u2014figure supplement 1g that the difference in the diffusion constants was minor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "68bfe979-c3e6-45e2-a57f-416a03ff8023",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C82",
+      "claim": "The diffusion constant for RuBP is proportional to 10,259 s\u22121 for LC* conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The diffusion constants is proportional to 10.623 s\u22121 (86.664 \u00b5M s\u22121 * 0.008158\u22121 \u00b5M\u22121) and 10,259 s\u22121 (246.12 \u00b5Ms\u22121 * 0.02399\u22121 \u00b5M\u22121) for HC and LC*, respectively (Figure 6A, Figure 6\u2014source data 1), revealin Figure 6\u2014figure supplement 1g that the difference in the diffusion constants was minor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "896254af-b5c4-476b-97bc-60643f56a6eb",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C83",
+      "claim": "The difference in the diffusion constants for RuBP between HC and LC* was minor.",
+      "claim_type": "EXPLICIT",
+      "source": "The diffusion constants is proportional to 10.623 s\u22121 (86.664 \u00b5M s\u22121 * 0.008158\u22121 \u00b5M\u22121) and 10,259 s\u22121 (246.12 \u00b5Ms\u22121 * 0.02399\u22121 \u00b5M\u22121) for HC and LC*, respectively (Figure 6A, Figure 6\u2014source data 1), revealin Figure 6\u2014figure supplement 1g that the difference in the diffusion constants was minor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on calculated diffusion constants from model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "5280472b-11ed-4724-b924-a81475bd80e4",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C84",
+      "claim": "The model does not support the idea of an increased diffusional barrier between pyrenoid and stroma under LC* for RuBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our model does not support the idea of an increased diffusional barrier between pyrenoid and stroma under LC* for RuBP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on model predictions showing similar diffusion constants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "135dab58-9d6a-4ca3-b476-5e4d30b1cda0",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C85",
+      "claim": "A starch-less mutant, also lacking the starch sheath around the pyrenoid, is still able to develop a fully functional CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is experimentally supported by the fact that a starch-less mutant, also lacking the starch sheath around the pyrenoid, is still able to develop a fully functional CCM (Villarejo et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "3955f7d6-cb77-4c8e-a325-dd9f470b40ee",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C86",
+      "claim": "Flux of both 3PGA and RuBP is increasing under LC* compared to HC with minor (RuBP) or no (3PGA) increase in the concentration gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "As the fluxes of both 3PGA and RuBP are increased under LC* compared to HC with minor (RuBP) or no (3PGA) increase in the concentration gradients, flux is increasing with minor or no change in the driving force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model predictions of fluxes and concentration gradients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "6f808fe9-d9a5-4f50-a2bb-e22076470629",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C87",
+      "claim": "Instead of a strong diffusional boundary there may be facilitated diffusion under LC* compared to HC.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that instead of a strong diffusional boundary there may be facilitated diffusion under LC* compared to HC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model predictions showing increased flux without proportional increase in concentration gradient.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "4e517f3c-5c91-45c2-840e-fd94400e7516",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C88",
+      "claim": "LCIC/LCIB and LCI9 are expressed in the proximity of the starch sheath and surrounding the pyrenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, several proteins that are known to be expressed under low CO2 conditions but are of unknown function were sub-cellularly localized (Mackinder et al., 2017). LCIC/LCIB and LCI9 are expressed in the proximity of the starch sheath and surrounding the pyrenoid, which is consistent with one or several of these proteins being involved in facilitating diffusion of RuBP into and of 3PGA out of the pyrenoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a localization study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "57ed3fb1-9fb7-4b93-8789-92f179a89032",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C89",
+      "claim": "LCIC/LCIB and LCI9 localization is consistent with one or several of these proteins being involved in facilitating diffusion of RuBP into and of 3PGA out of the pyrenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, several proteins that are known to be expressed under low CO2 conditions but are of unknown function were sub-cellularly localized (Mackinder et al., 2017). LCIC/LCIB and LCI9 are expressed in the proximity of the starch sheath and surrounding the pyrenoid, which is consistent with one or several of these proteins being involved in facilitating diffusion of RuBP into and of 3PGA out of the pyrenoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on protein localization data and model predictions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "176141e8-f7d9-4ab9-8780-08181a142491",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C90",
+      "claim": "The genes encoding LCIC/LCIB are only expressed under low CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "This would occur exclusively under low CO2 conditions, as the according genes are only expressed under low CO2 (Yamano et al., 2008; Yamano et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to gene expression studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "f6bdb7c9-b0e4-459c-a07e-3b99fa568227",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C91",
+      "claim": "It was suggested that LCIC/LCIB most likely has a carbonic anhydrase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently it was suggested that LCIC/LCIB most likely has a carbonic anhydrase activity (Jin et al., 2016), but additional functions are still possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and notes that additional functions are possible.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "53be99df-1707-4ea1-8ef3-8a37d462f3ee",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C92",
+      "claim": "A high resolution cryoEM study of the C. reinhardtii chloroplast revealed the presence of pyrenoid minitubules that form narrow continuous channels between the inter-thylakoid stromal space and the pyrenoid matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "A high resolution cryoEM study of the C. reinhardtii chloroplast (Engel et al., 2015) revealed the presence of pyrenoid minitubules that form narrow continuous channels between the inter-thylakoid stromal space and the pyrenoid matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "2de6fb68-0409-43b8-ba49-0337933029c6",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C93",
+      "claim": "One function of pyrenoid minitubules could be to facilitate diffusion of RuBP and 3PGA.",
+      "claim_type": "EXPLICIT",
+      "source": "One function of these minitubules could be to facilitate diffusion of RuBP and 3PGA, apart or in addition to the protein candidates mentioned above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the function of minitubules based on their structure and location.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "d79e9365-ca53-4eb3-a979-7496a0a81047",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C94",
+      "claim": "The estimated minitubule lumen diameter is of the order of 3\u20134 nm by 8\u201315 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated minitubule lumen diameter is of the order of 3\u20134 nm by 8\u201315 nm, which is not much larger than the longest axes of RuBP and 3PGA (about 1.2 nm and 0.7 nm, respectively), so diffusion of these metabolites in the minitubules would be possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement compares structural dimensions to metabolite sizes to infer feasibility of diffusion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "c53bb267-db6f-41f8-938b-b281d2b359ea",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C95",
+      "claim": "The longest axes of RuBP and 3PGA are about 1.2 nm and 0.7 nm, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated minitubule lumen diameter is of the order of 3\u20134 nm by 8\u201315 nm, which is not much larger than the longest axes of RuBP and 3PGA (about 1.2 nm and 0.7 nm, respectively), so diffusion of these metabolites in the minitubules would be possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about molecular dimensions based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "9b7ab75e-e3f1-4804-8123-0167973ce1c9",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C96",
+      "claim": "Diffusion of RuBP and 3PGA in the minitubules would be possible based on size considerations.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated minitubule lumen diameter is of the order of 3\u20134 nm by 8\u201315 nm, which is not much larger than the longest axes of RuBP and 3PGA (about 1.2 nm and 0.7 nm, respectively), so diffusion of these metabolites in the minitubules would be possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing structural dimensions to metabolite sizes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "a98e35d8-f9b1-4cde-98a9-c5ff35b7dace",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C97",
+      "claim": "Under low CO2 conditions and a fully functional CCM, the limiting Rubisco substrate CO2 is concentrated in the pyrenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Under low CO2 conditions and a fully functional CCM, the limiting Rubisco substrate CO2 is concentrated in the pyrenoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about CCM function based on established knowledge and model predictions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "3514dccb-6866-422c-9952-9cd9d7a18e6a",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C98",
+      "claim": "The CCM establishes structures that allow facilitated transport of RuBP from the stroma to the pyrenoid and the release of 3PGA into the stroma.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our data indicate that the CCM also establishes structures that allow facilitated transport of RuBP, the other Rubisco substrate, from the stroma to the pyrenoid and the release of the Rubisco product 3PGA into the stroma, where the rest of the CBC enzymes are located.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "9facc64a-b940-41ba-80aa-2d47e6229948",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C99",
+      "claim": "Channels for exchange of CBC metabolites were suggested to be present in the pyrenoid of C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "Such channels for exchange of CBC metabolites were suggested to be present in the pyrenoid of C. reinhardtii (Engel et al., 2015) and the proteinaceous shell of the carboxysome based on the number of shell proteins and their localization in the shell (Kerfeld and Melnicki, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "a79c0ed4-feda-48c0-9c65-0464b73f8775",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C100",
+      "claim": "Channels for exchange of CBC metabolites were suggested to be present in the proteinaceous shell of the carboxysome.",
+      "claim_type": "EXPLICIT",
+      "source": "Such channels for exchange of CBC metabolites were suggested to be present in the pyrenoid of C. reinhardtii (Engel et al., 2015) and the proteinaceous shell of the carboxysome based on the number of shell proteins and their localization in the shell (Kerfeld and Melnicki, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "74e8e3f3-a2ee-4756-8020-e795513de0c2",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C101",
+      "claim": "This study is the first with underlying experimental metabolite data postulating transport reactions in a carbon-concentrating microcompartment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, supporting experimental data to our knowledge is scarce so far and therefore our study is the first with underlying experimental metabolite data postulating such transport reactions in a carbon-concentrating microcompartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study based on the authors' assessment of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "efaa0d2f-02a7-46cb-8ef4-819143a3167e",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C102",
+      "claim": "Changes in microcompartments cause specific inhomogeneities that affect steady-state metabolite levels and have to be considered in mathematical modelling approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our systems biology approach allowed us to demonstrate (i) that changes in microcompartments cause specific inhomogeneities that affect steady-state metabolite levels and have to be considered in mathematical modelling approaches based on such experimental data;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the combined experimental and modeling approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "5ffaedaf-9a3a-437d-abe9-38a6f8344939",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C103",
+      "claim": "Mathematical models with mild assumptions can be used to study flux distributions between reactions inside and outside microcompartments.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) that mathematical models with mild assumptions can be used to study flux distributions between reactions inside and outside microcompartments, which are very difficult and often technically impossible to study experimentally;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "50e3f7ca-a513-44eb-866a-79563319da55",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C104",
+      "claim": "Metabolites that are exchanged between compartments can be identified and their exchange fluxes quantified using the modeling approach.",
+      "claim_type": "EXPLICIT",
+      "source": "and (iii) that metabolites can be identified that are exchanged between the compartments and their exchange fluxes quantified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the capabilities of the modeling approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "b987e9bd-be82-4d51-b456-bb89715dfd97",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C105",
+      "claim": "The modelled rate of CO2 diffusion into the pyrenoid for LC* cells showed a three-fold increase in comparison to HC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the assumption that the rate of CO2 uptake from the environment was the same in HC and LC* cells, the modelled rate of CO2 diffusion into the pyrenoid for LC* cells showed a three-fold increase in comparison to HC cells, indicating that the model captures the function of the CCM (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction that validates the model's ability to capture CCM function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "a7cb68c8-5163-4327-be34-9e6efd95ec93",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C106",
+      "claim": "The rate of the Rubisco reaction in the pyrenoid was three-fold increased under LC* conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of the Rubisco reaction in the pyrenoid followed the CO2 import into the microcompartment and was, therefore, three-fold increased under LC* conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction based on increased CO2 availability in the pyrenoid.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "2291c615-6314-4b18-a668-6ff96b5da229",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C107",
+      "claim": "The predicted rate of RuBP import into the pyrenoid from the stroma was three-fold increased in LC* cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the function of Rubisco depends not only on the import of CO2, but also on the availability of RuBP, its predicted rate of import into the pyrenoid from the stroma was also three-fold increased in LC* cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction based on the increased Rubisco activity in the pyrenoid.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "d9df4521-e200-4115-8b5c-2cee71397c5b",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C108",
+      "claim": "The rate of 3PGA export from the pyrenoid into the stroma was higher under LC* conditions than in HC conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the rate of 3PGA export from the pyrenoid into the stroma was higher under LC* conditions than in HC conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction based on increased Rubisco activity producing more 3PGA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "6443081b-cf56-480f-8fe2-d0d2c029be2b",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C109",
+      "claim": "TRK was found to be the only enzyme operating in both directions in LC* cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In LC* cells (CCM-induced) we found TRK to be the only enzyme operating in both directions (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model predictions of thermodynamic characteristics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "bef11a55-4ca6-453b-9b95-8be4519b4349",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C114",
+      "claim": "C. reinhardtii CC1690 wild-type strain was obtained from the Chlamydomonas Resource Center.",
+      "claim_type": "EXPLICIT",
+      "source": "Chlamydomonas reinhardtii CC1690 wild-type strain (Sager, 1955) was obtained from the Chlamydomonas Resource Center (RRID:SCR_014960) and cultivated as described in Mettler et al. (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about materials and methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "f7f6c1f1-2494-41ff-906d-26ffef24f31a",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C115",
+      "claim": "Cells were grown photoautotrophically in a 5-litre bioreactor at 24\u00b0C, exposed to an average of 46 \u03bcmol photons*m\u22122*s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were growth photoautotrophically in a 5-litre bioreactor BIOSTATB-DCU (Sartorius Stedim, Germany) for five days until a cell density of 3\u20135*106 cells*ml\u22121 was reached and thereafter, turbidity was kept constant. The culture in the bioreactor was constantly stirred with 50 rpm at 24\u00b0C, exposed to an average of 46 \u03bcmol photons*m\u22122*s\u22121 (measured internally at four different positions) and bubbled at a rate of 400 ccm with air enriched with 5% CO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental growth conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "f2652aef-f16f-4b78-a786-ec9fb83ac3cc",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "claim_id": "C116",
+      "claim": "The CO2 level measured in the outlet air of the bioreactor dropped within 12 hr from 4.5% to a constant 0.02%.",
+      "claim_type": "EXPLICIT",
+      "source": "The CO2 level measured by gas chromatography in the outlet air of the bioreactor dropped within 12 hr from 4.5% (bubbling with 5%) to a constant 0.02% (bubbling with air of approximately 0.039% CO2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data on CO2 levels during the transition from high to low CO2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The distribution of Calvin-Benson cycle enzymes between the pyrenoid and stroma was experimentally determined. Under LC conditions, 61.8% of Rubisco was found in the pyrenoid compared to 21.8% under HC conditions. Most other CBC enzymes (PGK1, GAP1, GAP3, FBA3, SBP1, RPE1, RPI1, PRK1) were localized to the stroma with less than 2% in the pyrenoid, except for GAPDH (8% LC, 11% HC) and PRK (13% HC, <2% LC).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C50 provide converging experimental evidence from enzyme activity assays (C39-C40), shotgun proteomics (C41-C45), and confocal microscopy of Venus-tagged proteins (C46-C50). The multiple independent methods provide strong support for the enzyme distribution patterns, though minor discrepancies between methods are acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "5d0fb3a8-ce74-4115-afbc-eaae3a264673",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Metabolite levels in the Calvin-Benson cycle differ significantly between CCM-induced (LC*) and CCM-suppressed (HC) cells at comparable photosynthesis rates. LC* cells showed significant decreases in 3PGA and DHAP, and significant increases in RuBP, F6P, R5P, Xu5P, and Ru5P compared to HC cells, despite nearly identical photosynthesis rates (55 vs 57 \u00b5mol O2\u00b7h\u207b\u00b9\u00b7mg Chl\u207b\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C58 are based on HPLC-MS/MS measurements with appropriate statistical testing (Student's t-test, p<0.05) and proper experimental controls ensuring comparable photosynthesis rates. The metabolite data provide the experimental foundation for subsequent modeling, though interpretation requires the computational model to account for compartmentation effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "cf6f0a0c-3911-4ef9-afb2-d2a5b0c731e2",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The computational model predicts that under CCM-induced conditions (LC*), there is a three-fold increase in CO2 diffusion into the pyrenoid, Rubisco reaction flux, and transport of RuBP into and 3PGA out of the pyrenoid compared to HC conditions. These increased fluxes reflect the redistribution of Rubisco to the pyrenoid under CCM induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C73-C108 represent model predictions that are internally consistent with the experimental enzyme distribution data (C39-C50) and metabolite measurements (C51-C57). The model successfully captures the expected CCM function (three-fold CO2 increase) and makes testable predictions about metabolite fluxes. However, these are computational predictions rather than direct experimental measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "3d36298a-470a-4124-a5c8-8f9e979600a2",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model predicts small concentration gradients for RuBP between stroma and pyrenoid (0.008 \u00b5M for HC, 0.024 \u00b5M for LC*) and no gradient for 3PGA, with similar diffusion constants between conditions. This indicates there is no major diffusional barrier between pyrenoid and stroma, and suggests diffusion or facilitated transport rather than active transport as the mechanism for metabolite exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C61-C87 represent model predictions about concentration gradients and transport mechanisms. The predictions are internally consistent and supported by experimental evidence from starch-less mutants (C85). However, the very small predicted concentration gradients (C77) and the inference about facilitated diffusion (C87) remain speculative and would benefit from direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "2ae7c46e-d097-407b-9ccc-5a7d5bf3d659",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Model validation showed statistically significant agreement between predicted and measured metabolite concentrations for 10 out of 16 metabolites. Discrepancies for GAP and SBP are attributed to redox regulation not included in the model and incomplete enzyme activation at the applied light intensity (46 \u00b5mol photons\u00b7m\u207b\u00b2\u00b7s\u207b\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C72 provide transparent assessment of model performance with appropriate statistical validation. The authors acknowledge model limitations (lack of redox regulation, C69) and provide reasonable explanations for discrepancies supported by citations (C68, C70-C72). The 10/16 metabolite fit represents acceptable but not perfect model performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "ab7f3a2d-ffc5-4803-b75f-99de7b8f1fb0",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Potential mechanisms for facilitated metabolite transport include proteins LCIC/LCIB and LCI9 localized near the starch sheath, and pyrenoid minitubules (3-4 nm by 8-15 nm) that could accommodate RuBP (1.2 nm) and 3PGA (0.7 nm) based on size considerations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C96 are largely speculative (C89, C91, C93) despite being supported by structural data (C88, C92, C94-C95). The localization of proteins is established (C88), but their proposed function in facilitating metabolite transport (C89) is inference from the model rather than direct experimental evidence. Size compatibility (C96) is necessary but not sufficient evidence for function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "2ef11856-2116-405a-b531-43a4f59b8fa1",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model predicts that the vast majority of RuBP is bound to Rubisco, and the observed increase in total RuBP concentration in LC* cells is mainly due to increased bound RuBP in the pyrenoid resulting from increased Rubisco concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 represent model predictions that logically follow from the experimental observation of increased Rubisco in the pyrenoid under LC* conditions (C39) and increased total RuBP levels (C53). The prediction about bound vs. free RuBP is a reasonable inference from the model structure that explicitly includes enzyme-substrate complexes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "d0923bd2-f422-4073-9ad1-3da7434f2bd5",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The systems biology approach demonstrates that (i) microcompartment changes cause specific inhomogeneities affecting metabolite levels that must be considered in modeling, (ii) mathematical models can study flux distributions in microcompartments that are experimentally inaccessible, and (iii) exchanged metabolites and their fluxes can be identified and quantified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C104 represent valid conclusions about the methodological contributions of the study. The work successfully demonstrates the integration of experimental data with computational modeling to address questions about microcompartmentation that cannot be directly measured experimentally. These represent appropriate generalizations from the specific findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "75591c5c-bb83-44ed-ab95-6e09fa58a9c2",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Thermodynamic analysis of the model predictions indicates that transketolase (TRK) was the only enzyme operating in both directions in CCM-induced LC* cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C109 is based on model predictions of \u0394G values across sampled flux distributions. This represents a specific prediction about enzyme directionality that follows from the thermodynamic analysis of the model, though it would benefit from experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "1f87e80a-4b61-42e4-880e-f48bdb5646ec",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model does not support the previous hypothesis that the starch sheath acts as a diffusional barrier for RuBP, which is consistent with experimental evidence that starch-less mutants can develop fully functional CCMs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80 and C85 combine model predictions (similar diffusion constants between HC and LC*, C81-C84) with experimental evidence from mutants (C85). The convergence of computational and experimental evidence provides strong support for rejecting the starch sheath barrier hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "757ee80b-0fe8-4d77-8b4a-19b940b48a7b",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Under CCM conditions, CO2 is concentrated in the pyrenoid, and the CCM establishes structures allowing facilitated transport of RuBP and 3PGA. This study is the first to postulate such transport reactions in a carbon-concentrating microcompartment with underlying experimental metabolite data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C101 represent the main conclusions of the study. The concentration of CO2 (C97) is well-established, and the inference about facilitated transport structures (C98) is supported by the modeling results and literature on channels (C99-C100). The novelty claim (C101) appears reasonable given the integration of metabolite data with modeling, though the assessment of prior literature is based on the authors' knowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on microcompartments, CCMs, and the pyrenoid establishes the context for the study, including the structure and function of bacterial carboxysomes, the pyrenoid in algae, and the current understanding of enzyme localization and CCM operation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C38 represent background knowledge and literature review supported by appropriate citations. These establish the scientific context and prior understanding that motivates the current study. The claims are appropriately attributed to prior work and represent accurate summaries of established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    },
+    {
+      "id": "2bf3ce0a-195b-467e-bb46-d35e5f35ca45",
+      "content_id": "dc17ef60-f8d4-4707-9d6a-86a088f6a944",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Experimental methods included growth of C. reinhardtii CC1690 in a 5-liter bioreactor at 24\u00b0C with 46 \u00b5mol photons\u00b7m\u207b\u00b2\u00b7s\u207b\u00b9 light, with CO2 levels dropping from 4.5% to 0.02% within 12 hours after switching from high to ambient CO2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C116 describe experimental methods and conditions that are clearly documented and appropriate for the study objectives. The CO2 transition data (C116) provides important validation that CCM-inducing conditions were achieved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:36:21.944222Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2df99df5-6a82-4e1a-8e10-467021ea5435",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "2b1eb0eb-1e1f-41a8-b5c8-a909008fe757",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "4c287a3b-13b3-4639-b5bd-d1d47d086574",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "6a05aea1-3c4a-4f39-9989-6e3a9c16ab54",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "1ce76c99-8d7e-49ca-9bd7-fba220de7ca1",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "e7959b6e-38c0-4cb5-ae92-5212cfb0df8f",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "29da2a3a-f843-4db5-ad51-7a9b5614e5bf",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "f6b8b17c-a1cc-41ed-b90b-bade263cf555",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "844939ae-7976-4b33-9d09-abc3e34566cc",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "0fd17742-fa06-4d58-ae82-52a378346558",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "ca3314f0-459e-486c-949e-bfd3c6bd6926",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "0893b798-7e4f-4b22-bd89-8f2eff733e6d",
+      "result_id": "6f589ab1-ee3a-4e4a-b263-02e26124fdc6"
+    },
+    {
+      "claim_id": "657af358-6eca-4454-b868-854ed553cc32",
+      "result_id": "5d0fb3a8-ce74-4115-afbc-eaae3a264673"
+    },
+    {
+      "claim_id": "c3dd4cd4-6b3c-4b67-9214-29a314e3218e",
+      "result_id": "5d0fb3a8-ce74-4115-afbc-eaae3a264673"
+    },
+    {
+      "claim_id": "562f4c7e-98ac-418d-91aa-a2c033316390",
+      "result_id": "5d0fb3a8-ce74-4115-afbc-eaae3a264673"
+    },
+    {
+      "claim_id": "4f35d27f-d402-4f9e-b234-8fe2e4172b5f",
+      "result_id": "5d0fb3a8-ce74-4115-afbc-eaae3a264673"
+    },
+    {
+      "claim_id": "b746a752-f5f0-475b-8d90-6d65fa33526e",
+      "result_id": "5d0fb3a8-ce74-4115-afbc-eaae3a264673"
+    },
+    {
+      "claim_id": "6f70bbcc-d72b-48b9-86aa-d78cc8047127",
+      "result_id": "5d0fb3a8-ce74-4115-afbc-eaae3a264673"
+    },
+    {
+      "claim_id": "e575b61e-2120-4da2-8851-1c03d841e250",
+      "result_id": "5d0fb3a8-ce74-4115-afbc-eaae3a264673"
+    },
+    {
+      "claim_id": "ca2eef68-26f7-4550-87d8-a7454d73c631",
+      "result_id": "5d0fb3a8-ce74-4115-afbc-eaae3a264673"
+    },
+    {
+      "claim_id": "37698717-49fe-4ba6-99b4-c7298b52592e",
+      "result_id": "cf6f0a0c-3911-4ef9-afb2-d2a5b0c731e2"
+    },
+    {
+      "claim_id": "f9709cb9-d612-4a0c-a2fc-9fe6c5b1089e",
+      "result_id": "cf6f0a0c-3911-4ef9-afb2-d2a5b0c731e2"
+    },
+    {
+      "claim_id": "830c98e1-d088-40c1-8f8b-93332928f917",
+      "result_id": "cf6f0a0c-3911-4ef9-afb2-d2a5b0c731e2"
+    },
+    {
+      "claim_id": "29a3ddd8-3add-4c4f-a966-1598b5f09a9c",
+      "result_id": "cf6f0a0c-3911-4ef9-afb2-d2a5b0c731e2"
+    },
+    {
+      "claim_id": "a8d4386e-233c-486b-b635-8d93ed22d203",
+      "result_id": "cf6f0a0c-3911-4ef9-afb2-d2a5b0c731e2"
+    },
+    {
+      "claim_id": "b987e9bd-be82-4d51-b456-bb89715dfd97",
+      "result_id": "cf6f0a0c-3911-4ef9-afb2-d2a5b0c731e2"
+    },
+    {
+      "claim_id": "a7cb68c8-5163-4327-be34-9e6efd95ec93",
+      "result_id": "cf6f0a0c-3911-4ef9-afb2-d2a5b0c731e2"
+    },
+    {
+      "claim_id": "2291c615-6314-4b18-a668-6ff96b5da229",
+      "result_id": "cf6f0a0c-3911-4ef9-afb2-d2a5b0c731e2"
+    },
+    {
+      "claim_id": "d9df4521-e200-4115-8b5c-2cee71397c5b",
+      "result_id": "cf6f0a0c-3911-4ef9-afb2-d2a5b0c731e2"
+    },
+    {
+      "claim_id": "f19d2d7d-464c-4237-83a6-3abc68eac727",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "8b667ae6-43ce-4458-bc32-dff49e9c9f4c",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "cd858ca0-c6f8-42b4-bb7a-2b6d882a2f04",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "5efe7fe9-f47d-4756-974c-0c4904e303e4",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "1493219b-9f99-4ddb-88e6-820479f51f84",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "cc84413c-fe44-4689-ba87-5e74d7c23b9e",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "77c57a46-f425-435a-b28a-6091fee3276e",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "9667d28d-aceb-4e8f-8023-e080e93fdfe5",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "7e7f30a1-6eae-49f3-9dc3-bca0060bdd06",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "3af2d2d2-1d4c-41ae-9403-10beb9b3601a",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "1f063072-6187-4c48-8c72-9d561543d818",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "68bfe979-c3e6-45e2-a57f-416a03ff8023",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "896254af-b5c4-476b-97bc-60643f56a6eb",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "5280472b-11ed-4724-b924-a81475bd80e4",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "3955f7d6-cb77-4c8e-a325-dd9f470b40ee",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "6f808fe9-d9a5-4f50-a2bb-e22076470629",
+      "result_id": "3d36298a-470a-4124-a5c8-8f9e979600a2"
+    },
+    {
+      "claim_id": "2cca4a32-e774-4d39-8fdc-9462ae813c4e",
+      "result_id": "2ae7c46e-d097-407b-9ccc-5a7d5bf3d659"
+    },
+    {
+      "claim_id": "d63064ba-81fe-421a-97b8-ab722eb3b3e7",
+      "result_id": "2ae7c46e-d097-407b-9ccc-5a7d5bf3d659"
+    },
+    {
+      "claim_id": "343a5ea6-6da3-4790-b383-894aa545406e",
+      "result_id": "2ae7c46e-d097-407b-9ccc-5a7d5bf3d659"
+    },
+    {
+      "claim_id": "3ab255a4-55e7-4b29-be5c-1bd778f2000a",
+      "result_id": "2ae7c46e-d097-407b-9ccc-5a7d5bf3d659"
+    },
+    {
+      "claim_id": "88ad1755-65ca-412e-9a46-9adbc8987906",
+      "result_id": "2ae7c46e-d097-407b-9ccc-5a7d5bf3d659"
+    },
+    {
+      "claim_id": "390d73cc-da39-42d7-9eb2-d567e93c012a",
+      "result_id": "2ae7c46e-d097-407b-9ccc-5a7d5bf3d659"
+    },
+    {
+      "claim_id": "c0335ad5-d703-49fa-a72b-ed66d7447b2f",
+      "result_id": "2ae7c46e-d097-407b-9ccc-5a7d5bf3d659"
+    },
+    {
+      "claim_id": "4e517f3c-5c91-45c2-840e-fd94400e7516",
+      "result_id": "ab7f3a2d-ffc5-4803-b75f-99de7b8f1fb0"
+    },
+    {
+      "claim_id": "57ed3fb1-9fb7-4b93-8789-92f179a89032",
+      "result_id": "ab7f3a2d-ffc5-4803-b75f-99de7b8f1fb0"
+    },
+    {
+      "claim_id": "176141e8-f7d9-4ab9-8780-08181a142491",
+      "result_id": "ab7f3a2d-ffc5-4803-b75f-99de7b8f1fb0"
+    },
+    {
+      "claim_id": "f6bdb7c9-b0e4-459c-a07e-3b99fa568227",
+      "result_id": "ab7f3a2d-ffc5-4803-b75f-99de7b8f1fb0"
+    },
+    {
+      "claim_id": "53be99df-1707-4ea1-8ef3-8a37d462f3ee",
+      "result_id": "ab7f3a2d-ffc5-4803-b75f-99de7b8f1fb0"
+    },
+    {
+      "claim_id": "2de6fb68-0409-43b8-ba49-0337933029c6",
+      "result_id": "ab7f3a2d-ffc5-4803-b75f-99de7b8f1fb0"
+    },
+    {
+      "claim_id": "d79e9365-ca53-4eb3-a979-7496a0a81047",
+      "result_id": "ab7f3a2d-ffc5-4803-b75f-99de7b8f1fb0"
+    },
+    {
+      "claim_id": "c53bb267-db6f-41f8-938b-b281d2b359ea",
+      "result_id": "ab7f3a2d-ffc5-4803-b75f-99de7b8f1fb0"
+    },
+    {
+      "claim_id": "9b7ab75e-e3f1-4804-8123-0167973ce1c9",
+      "result_id": "ab7f3a2d-ffc5-4803-b75f-99de7b8f1fb0"
+    },
+    {
+      "claim_id": "b8a91b6b-9774-459e-9a55-7559d4b0a9bd",
+      "result_id": "2ef11856-2116-405a-b531-43a4f59b8fa1"
+    },
+    {
+      "claim_id": "a4514cea-cab2-4ef5-b12c-47cc84f13c26",
+      "result_id": "2ef11856-2116-405a-b531-43a4f59b8fa1"
+    },
+    {
+      "claim_id": "efaa0d2f-02a7-46cb-8ef4-819143a3167e",
+      "result_id": "d0923bd2-f422-4073-9ad1-3da7434f2bd5"
+    },
+    {
+      "claim_id": "5ffaedaf-9a3a-437d-abe9-38a6f8344939",
+      "result_id": "d0923bd2-f422-4073-9ad1-3da7434f2bd5"
+    },
+    {
+      "claim_id": "50e3f7ca-a513-44eb-866a-79563319da55",
+      "result_id": "d0923bd2-f422-4073-9ad1-3da7434f2bd5"
+    },
+    {
+      "claim_id": "6443081b-cf56-480f-8fe2-d0d2c029be2b",
+      "result_id": "75591c5c-bb83-44ed-ab95-6e09fa58a9c2"
+    },
+    {
+      "claim_id": "d2faef59-7c54-4c70-973a-423b0d2ee81a",
+      "result_id": "1f87e80a-4b61-42e4-880e-f48bdb5646ec"
+    },
+    {
+      "claim_id": "135dab58-9d6a-4ca3-b476-5e4d30b1cda0",
+      "result_id": "1f87e80a-4b61-42e4-880e-f48bdb5646ec"
+    },
+    {
+      "claim_id": "a98e35d8-f9b1-4cde-98a9-c5ff35b7dace",
+      "result_id": "757ee80b-0fe8-4d77-8b4a-19b940b48a7b"
+    },
+    {
+      "claim_id": "3514dccb-6866-422c-9952-9cd9d7a18e6a",
+      "result_id": "757ee80b-0fe8-4d77-8b4a-19b940b48a7b"
+    },
+    {
+      "claim_id": "9facc64a-b940-41ba-80aa-2d47e6229948",
+      "result_id": "757ee80b-0fe8-4d77-8b4a-19b940b48a7b"
+    },
+    {
+      "claim_id": "a79c0ed4-feda-48c0-9c65-0464b73f8775",
+      "result_id": "757ee80b-0fe8-4d77-8b4a-19b940b48a7b"
+    },
+    {
+      "claim_id": "74e8e3f3-a2ee-4756-8020-e795513de0c2",
+      "result_id": "757ee80b-0fe8-4d77-8b4a-19b940b48a7b"
+    },
+    {
+      "claim_id": "c271cdf2-7fab-4f46-a7ae-9242764b32b6",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "6c2d8fb6-fe5c-436b-a594-89245e9a3aec",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "801e40ca-8e84-43f0-8fd4-3a3acf7ef72d",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "c5bedca8-57ab-46d6-841a-e891793aa0ef",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "c75cdffd-51f0-4291-9fe8-cb4babac7a91",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "dceb12fd-21da-4762-843b-4865ef407a6a",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "5a66dd15-db7c-4e9f-8191-0959930282d5",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "9d1200e5-aa35-4257-aaf6-65db2dfd0026",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "8ee51e0e-e9b3-405d-8f2f-e68aa0116e1b",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "c469371d-8f9a-4647-94ff-fbd3beee0de2",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "93782716-5720-451c-8827-69d169628a48",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "b8a3cd5a-8726-4952-bc87-0bb0771eddff",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "11badb30-3ac3-4572-a0c1-91e2c9fdac27",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "135d9e6e-a50b-429c-94cf-b05e97327786",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "cd4d29fe-d3a5-4a81-829b-36130b603b67",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "a6b50a36-d978-4bf5-bdeb-ba23f09fbbdd",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "400c400a-cb96-4b98-859e-61cca2d7de4d",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "a5614864-e5f7-4a79-96f4-0af8c845417f",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "4c48b05e-f9d1-43c1-aec2-3262eb039bf5",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "c2a3c05a-fb46-464e-ac63-b1ff90fcb293",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "65650870-3729-4afa-a343-84cd4a7d7993",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "8b50ea6c-e5ff-43dd-95c8-86393e1c49f6",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "b70dbbed-295e-4412-b3e7-1ef9e1d14830",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "261f0cfb-cb5a-4d2c-8cad-9dddb9f355a6",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "2e78c4d1-5ebe-469b-9c61-d17185f2c92e",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "9537a466-1591-46b9-82ae-9390e1df98af",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "978c8041-f087-4567-9297-d3fbf1feb5a0",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "9c65b5d8-b306-47e8-9910-b7c9a1c22ebd",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "fd4af1db-6ab9-4a73-b1e6-f289437ab395",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "fdd822cd-01a3-49e3-b7ae-4bf9b54373fb",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "09d5ab2d-a697-443a-8367-c704643967ea",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "876275fb-d863-4890-be99-2a446de0fd1f",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "f72fc971-6ba9-49d6-996d-98aa48f70809",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "ffcdd945-03dd-4d39-bc31-5f508fefef4e",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "05bf4ada-975c-4368-a320-403842022d19",
+      "result_id": "7122365e-ce3d-4cdf-82f7-39f61d36a5a7"
+    },
+    {
+      "claim_id": "bef11a55-4ca6-453b-9b95-8be4519b4349",
+      "result_id": "2bf3ce0a-195b-467e-bb46-d35e5f35ca45"
+    },
+    {
+      "claim_id": "f7f6c1f1-2494-41ff-906d-26ffef24f31a",
+      "result_id": "2bf3ce0a-195b-467e-bb46-d35e5f35ca45"
+    },
+    {
+      "claim_id": "f2652aef-f16f-4b78-a786-ec9fb83ac3cc",
+      "result_id": "2bf3ce0a-195b-467e-bb46-d35e5f35ca45"
+    }
+  ],
+  "comparisons": []
+}

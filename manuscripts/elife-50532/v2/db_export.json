@@ -1,0 +1,1680 @@
+{
+  "submission": {
+    "id": "54043349-4e54-42b4-b412-8bf41fb21aa1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:41:54.340416Z",
+    "updated_at": "2025-12-02T15:41:54.340416Z"
+  },
+  "content": [
+    {
+      "id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "submission_id": "54043349-4e54-42b4-b412-8bf41fb21aa1",
+      "content_type": "manuscript",
+      "content_text": "# Sperm chemotaxis is driven by the slope of the chemoattractant concentration field\n\n## Authors\n\n- H\u00e9ctor Vicente Ram\u00edrez-G\u00f3mez<sup>1</sup> ([ORCID: 0000-0002-4526-4689](https://orcid.org/0000-0002-4526-4689))\n- Vilma Jimenez Sabinina<sup>2</sup> ([ORCID: 0000-0002-9390-1646](https://orcid.org/0000-0002-9390-1646))\n- Mart\u00edn Vel\u00e1zquez P\u00e9rez<sup>1</sup>\n- Carmen Beltran<sup>1</sup> ([ORCID: 0000-0001-9344-7618](https://orcid.org/0000-0001-9344-7618))\n- Jorge Carneiro<sup>3</sup> ([ORCID: 0000-0002-7520-3406](https://orcid.org/0000-0002-7520-3406))\n- Christopher D Wood<sup>4</sup>\n- Idan Tuval<sup>5</sup> ([ORCID: 0000-0002-6629-0851](https://orcid.org/0000-0002-6629-0851))\n- Alberto Darszon<sup>1</sup> \u2020\n- Ad\u00e1n Guerrero<sup>4</sup> ([ORCID: 0000-0002-4389-5516](https://orcid.org/0000-0002-4389-5516)) \u2020\n\n### Affiliations\n\n1. Departamento de Gen\u00e9tica del Desarrollo y Fisiolog\u00eda Molecular, Instituto de Biotecnolog\u00eda, Universidad Nacional Aut\u00f3noma de M\u00e9xico (UNAM) Cuernavaca Mexico\n2. Cell Biology and Biophysics Unit, European Molecular Biology Laboratory (EMBL) Heidelberg Germany\n3. Instituto Gulbenkian de Ci\u00eancia (IGC), Rua da Quinta Grande Oeiras Portugal\n4. Laboratorio Nacional de Microscop\u00eda Avanzada, Instituto de Biotecnolog\u00eda, Universidad Nacional Aut\u00f3noma de M\u00e9xico (UNAM) Cuernavaca Mexico\n5. Mediterranean Institute for Advanced Studies, IMEDEA (CSIC-UIB) Esporles Spain\n6. Department of Physics, University of the Balearic Islands Palma Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpermatozoa of marine invertebrates are attracted to their conspecific female gamete by diffusive molecules, called chemoattractants, released from the egg investments in a process known as chemotaxis. The information from the egg chemoattractant concentration field is decoded into intracellular Ca2+ concentration ([Ca2+]i) changes that regulate the internal motors that shape the flagellum as it beats. By studying sea urchin species-specific differences in sperm chemoattractant-receptor characteristics we show that receptor density constrains the steepness of the chemoattractant concentration gradient detectable by spermatozoa. Through analyzing different chemoattractant gradient forms, we demonstrate for the first time that Strongylocentrotus purpuratus sperm are chemotactic and this response is consistent with frequency entrainment of two coupled physiological oscillators: i) the stimulus function and ii) the [Ca2+]i changes. We demonstrate that the slope of the chemoattractant gradients provides the coupling force between both oscillators, arising as a fundamental requirement for sperm chemotaxis.\n\n## Introduction\n\nBroadcast spawning organisms, such as marine invertebrates, release their gametes into open water, where they are often subject to extensive dilution that reduces the probability of gamete encounter (Lotterhos et al., 2010). In many marine organisms, female gametes release diffusible molecules that attract homologous spermatozoa (Lillie, 1913; Miller, 1985; Suzuki, 1995), which detect and respond to chemoattractant concentration gradients by swimming toward the gradient source: the egg. Although it was in bracken ferns where sperm chemotaxis was first identified (Pfeffer, 1884), sea urchins are currently the best-characterized model system for studying sperm chemotaxis at a molecular level (Alvarez et al., 2012; Cook et al., 1994; Darszon et al., 2008; Str\u00fcnker et al., 2015; Wood et al., 2015).\n\nThe sea urchin egg is surrounded by an extracellular matrix which contains sperm-activating peptides (SAPs) that modulate sperm motility through altering intracellular Ca2+ concentration ([Ca2+]i) and other signaling intermediates (Darszon et al., 2008; Suzuki, 1995). The biochemical signals triggered by SAPs guide the sperm trajectory toward the egg.\n\nThe decapeptide speract is one of best characterized members of the SAP family due to its powerful stimulating effect on metabolism, permeability and motility in Strongylocentrotus purpuratus and Lytechinus pictus spermatozoa. The binding of speract to its receptor, located in the flagellar plasma membrane, triggers a train of [Ca2+]i increases in immobilized spermatozoa of both species (Wood et al., 2003). This calcium signal was proposed to regulate the activity of dynein motor proteins in the flagellum, and thus potentially modulate the trajectory of free-swimming spermatozoa (Brokaw, 1979; Mizuno et al., 2017).\n\nA direct link between [Ca2+]i signaling and sperm motility was established through the use of optochemical techniques to rapidly, and non-turbulently, expose swimming sea urchin spermatozoa to their conspecific attractant in a well-controlled experimental regime (B\u00f6hmer et al., 2005; Wood et al., 2005). Currently, it is well established that the transient [Ca2+]i increases triggered by chemoattractants produce a sequence of turns and straight swimming episodes (the \u2018turn-and-run\u2019 response), where each turning event results from a rapid increase in the [Ca2+]i (Alvarez et al., 2012; B\u00f6hmer et al., 2005; Shiba et al., 2008; Wood et al., 2005). The turn-and-run response seems to be a general requirement for sperm chemotaxis in sea urchins, however it is not sufficient on its own to produce a chemotactic response (Guerrero et al., 2010a; Str\u00fcnker et al., 2015; Wood et al., 2007; Wood et al., 2005).\n\nIn spite of 30 years of research since speract\u2019s isolation from S. purpuratus oocytes (Hansbrough and Garbers, 1981; Suzuki, 1995), chemotaxis of S. purpuratus sperm in the presence of this peptide has not yet been demonstrated (Cook et al., 1994; Darszon et al., 2008; Guerrero et al., 2010a; Kaupp, 2012; Miller, 1985; Wood et al., 2015). A comparison between individual L. pictus and S. purpuratus sperm responses to a specific chemoattractant concentration gradient generated by photoactivating caged speract (CS) revealed that only L. pictus spermatozoa exhibit chemotaxis under these conditions (Guerrero et al., 2010a). In that study, L. pictus spermatozoa experience [Ca2+]i fluctuations and pronounced turns while swimming in descending speract gradients, that result in spermatozoa reorienting their swimming behavior along the positive chemoattractant concentration gradient. In contrast, S. purpuratus spermatozoa experience similar trains of [Ca2+]i fluctuations that in turn drive them to relocate, but with no preference toward the center of the chemoattractant gradient (Guerrero et al., 2010a).\n\nIn the present work, we investigate boundaries that limit sperm chemotaxis of marine invertebrates. Particularly, we examined whether the chemoattractant concentration gradient must have a minimum steepness to provoke an adequate, chemotactic sperm motility response. Previous studies of chemotactic amoebas crawling up a gradient of cAMP, have shown that the slope of the chemical concentration gradient works as a determinant factor in chemotaxis of this species, where the signal-to-noise relationship of stimulus to the gradient detection mechanism imposes a limit for chemotaxis (Amselem et al., 2012). In addition, recent theoretical studies by Kromer and colleagues have shown that, in marine invertebrates, sperm chemotaxis operates efficiently within a boundary defined by the signal-to-noise ratio of detecting ligands within a chemoattractant concentration gradient (Kromer et al., 2018).\n\nIf certain, this detection limit may have prevented the observation and characterization of chemotactic responses on S. purpuratus spermatozoa to date. In this study, we identify the boundaries for detecting chemotactic signals of S. purpuratus spermatozoa, and show that sperm chemotaxis arises only when sperm are exposed to much steeper speract concentration gradients than those previously employed by Guerrero et al. (2010a). Furthermore, we examined the coupling between the recruitment of speract molecules during sperm swimming (i.e. stimulus function) and the internal Ca2+ oscillator, and demonstrate that sperm chemotaxis arises through coupling of these physiological oscillators.\n\n## Results\n\n### Species-specific differences in chemoattractant-receptor binding rates: chemoattractant sensing is limited by receptor density in S. purpuratus spermatozoa\n\nSpermatozoa measure the concentration and the changes in concentration of egg-released chemoattractant during their journey. Cells detect chemoattractant molecules in the extracellular media by integrating chemoattractant-receptor binding events. A spermatozoon moving in a medium where the chemoattractant concentration is isotropic will collect stochastic chemoattractant-receptor binding events with a rate $J$, according to Equation (1) (Figure 1).\n\n$$\nJ=4\\piDac\u2212\\frac{N}{N\u00a0+\u00a0\\pia/s}\u00a0=\u00a0J_{max}\\frac{N}{N\u00a0+\u00a0\\pia/s}\n$$\n\nWhere $D$ is the diffusion coefficient of the chemoattractant, $a$ is the radius of the cell, $c-$ is the mean chemoattractant concentration, N is the number of receptor molecules on the cell surface, s is the effective radius of the chemoattractant molecule, $J_{max}$ is the maximal flux that the cell can experience, and $\\frac{N}{N+\\pia/s}$\u00a0is the probability that a molecule that has collided with the cell will find a receptor (Berg and Purcell, 1977). The quantity \u03c0a/s is the number of receptors that allows half maximal binding rate for any concentration of chemoattractant, which is hereafter denoted as N1/2 (see 1.1. On the estimate of maximal chemoattractant absorption in Appendix 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig1-v2.jpg)\n\n**Figure 1.:** (a)\u00a0A spermatozoon swimming in an isotropic chemoattractant concentration field, where the number of molecules detected (n) is within the noise of detection. (b) A spermatozoon swimming near to an egg, while chemoattractant molecules are diffusing from its surrounding jelly layer creating a chemoattractant gradient. Note that the signal detected in this case is larger than the detection noise. (c) The assessment of a chemoattractant concentration gradient requires that the signal difference $\\partialc$ between two sampled positions $\\partialr$\u00a0must be greater than the noise. (d\u2013f) The signal-to-noise ratio in the determination of the chemoattractant gradient SNR plotted against the relative slope of the chemoattractant concentration gradient in log scale, $\u03be=c-^{-1}\\frac{\\partialc}{\\partialr}$, for different chemoattractant concentrations of speract for either S. purpuratus (d), or L. pictus (e) spermatozoa, and of resact for A. punctulata (f) spermatozoa (see Supplementary file 1 for the list of parameter values taken in consideration for panels d\u2013f). S. purpuratus spermatozoa have lower capacity of detection for the same chemoattractant concentrations at a given $\u03be$ than L. pictus and A. punctulata. The tone of the shaded areas indicates shallow or steep gradient conditions. The horizontal dotted line represents SNR = 1; the vertical magenta line represents $\u03be$ = 2.6 x 10\u22123 \u00b5m\u22121. Colors of the line traces (from blue to brown) indicate distinct chemoattractant concentrations in the range [10\u22126 \u2013 10\u221211 M].\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For a spherical cell of radius a, with N disk-like receptors of effective radius s, the diffusive current saturates for N >> N1/2 = \u03c0a\u2044s (N1/2 is highlighted for S. purpuratus, L. pictus and A. punctulata with a green, blue and black dots, respectively). For S. purpuratus, however, the number of receptors is smaller than N1/2 and the diffusive influx falls into an almost linear regime.\n\nThe expression above was used by Berg and Purcell (1977) to conclude that the chemoattractant binding and absorption rate saturate as a function of the density of receptors, becoming diffusion limited, that\u00a0is when $N\u226bN_{1/2}=\\pia/s$\u00a0the chemoattractant absorption flux becomes $J\u2245J_{max}$ (see 1.1. On the estimate of maximal chemoattractant absorption in Appendix 1). If the density of\u00a0the chemoattractant receptor is such that spermatozoa of the different species operate under this saturated or perfect absorber regime, then any postulated species-specific differences would have to be downstream.\n\nIn Supplementary file 1 we list the biophysical parameters considered for calculating the species-specific rate of binding as a function of the chemoattractant concentration. The different functions of the receptor density and the species receptor density are depicted in Figure 1\u2014figure supplement 1. Our calculations (see Appendix 1, section 1.1. On the estimate of maximal chemoattractant absorption) indicate that only S. purpuratus spermatozoa operate in a regime for which the rate of chemoattractant uptake is limited by receptor density, therefore it cannot be considered as a perfect absorber. The actual number of speract receptors for this species is approximately 2\u00d7104 per sperm cell which is fewer than the estimate of N1/2\u00a0~\u00a03\u00d7104 (Supplementary file 1). In contrast, L. pictus and A. punctulata spermatozoa seem to approximate toward operating as perfect absorbers (Figure 1\u2014figure supplement 1 and Supplementary file 1). Both observations hold when considering the cylindrical geometry of the sperm flagellum. A low number of (non-interacting) receptors, sparsely covering the flagellum (i.e. with a large distance between receptors compared to receptor size) entails a non-saturated diffusive flux that, hence, depends on the number of receptors. The cylindrical geometry of the flagellum strengthens the observation that the larger surface area of the cylinder gives a longer average distance between receptors and, hence, offsetting the saturation of the overall diffusive flux to higher receptor number (see section 1.1. On the estimate of maximal chemoattractant absorption in Appendix 1).\n\nIn conclusion, there are meaningful species-specific differences in chemoattractant receptor density which could by themselves explain differences in chemotactic behavior.\n\n### Receptor density constrains the chemoattractant concentration gradient detectable by spermatozoa\n\nA functional chemotactic signaling system must remain unresponsive while the cell swims through an isotropic chemoattractant concentration field and must trigger a directional motility response if the cell moves across a concentration gradient (Figure 1a\u2013c). This absolute prerequisite of the signaling system defines the minimal quantitative constraints for reliable detection of a gradient and therefore for chemotaxis.\n\nA cell moving along a circular trajectory in an isotropic chemoattractant field (Figure 1a) will collect a random number of chemoattractant-receptor binding events during the half revolution time $\u0394t$, that has a Poisson distribution with mean J$\u0394t$ and standard deviation $\\sqrt{J\u0394t}$. Because under these conditions there is no spatial positional information to guide the cell, the chemotactic signaling system must be unresponsive to the fluctuations in the number of binding events expected from the Poisson noise.\n\nThe chemotactic response should only be triggered when the cell moves into a concentration gradient (Figure 1b and c) sufficiently large to drive binding event fluctuations over the interval $\u0394t$ with an amplitude that supersedes that of the background noise. As derived in the Appendix 1, section 1.2. A condition for detecting a change in the chemoattractant concentration, the reliable detection of a chemoattractant gradient requires the following condition dependent on the maximal concentration difference experienced during half a revolution and on the mean chemoattractant concentration $c-$:\n\n$$\n(4\\piDac\u2212\\frac{N}{N\u00a0+\u00a0\\pia/s}\u0394t)v\u0394t\\frac{\u2202c}{\u2202r}c\u2212^{\u00a0\u22121}\u00a0>\u00a0\\sqrt{4\\piDac\u2212\\frac{N}{N\u00a0+\u00a0\\pia/s}\u0394t}\n$$\n\nNoting that the left-hand side of the condition represents the chemotactic signal and the right-hand side is a measurement of the background noise, Equation (2) can be rewritten in terms of signal-to-noise ratio:\n\n$$\nSNR=\u00a0v\u0394t^{3/2}(4\\piDac\u2212\\frac{N}{N\u00a0+\u00a0\\pia/s})^{1/2}\u03be\u00a0>\u00a01\n$$\n\nWhere $v$\u00a0is the mean linear velocity ($\\frac{\u0394r}{\u0394t}$), where $\u0394r$\u00a0is the sampling distance or diameter of the swimming circle, and $\u03be=c-^{-1}\\frac{\\partialc}{\\partialr}$ is the relative slope of the chemoattractant concentration gradient. The\u00a0quantity $\u03be$ measures the strength of the stimulus received when sampling a position r, relative to the mean concentration $c-$ (Figure 1c). As $\u03be$ increases, the strength of the chemotactic signal increases.\n\nEquation (3) means that the ability to reliably determine the source of the attractant depends critically on the relative slope of the chemoattractant concentration gradient $\u03be$, which must be steep enough to be distinguishable from noise (Figure 1b and c, and Supplementary file 1; for further explanation see 1.2. A condition for detecting a change in the chemoattractant concentration in Appendix 1).\n\nWe modeled the SNR corresponding to different gradients, and within a range of mean concentrations of chemoattractant between 10\u221211 to 10\u22126 M for three sea urchin species: S. purpuratus, L. pictus and A. punctulata (Figure 1d-f). For all species studied, at high mean concentrations of chemoattractant (10\u22128 to 10\u22126 M), the change in chemoattractant receptor occupancy experienced at two given distinct positions allows reliable assessment of relatively shallow chemical gradients (\u03be ~ [10\u22123,10\u22124] \u00b5m\u22121), with SNR > 1 for a wide range of $\u03be$ (Figure 1d-f). However, at low concentrations of chemoattractant (below 10\u22128 M), keeping all other parameters equal, stochastic fluctuations begin to mask the signal. In this low-concentration regime, the steepness of the chemoattractant concentration gradient is determinant for chemoattractant detection. Shallow gradients result in insufficient SNR, while steeper chemoattractant gradients (\u03be > 10\u22123 \u00b5m\u22121) are dependably detected by spermatozoa, that\u00a0is SNR > 1 (Figure 1d-f).\n\nPrevious reports show that A. punctulata spermatozoa are very sensitive to resact (presumably reacting to single molecules) due the high density of resact receptors (~3\u00d7105 per cell), which allows them to sense this chemoattractant at low picomolar concentrations (Kashikar et al., 2012). In contrast, L. pictus and S. purpuratus spermatozoa bear lower densities of chemoattractants receptors, approximately 6.3\u00d7104 and 2\u00d7104 receptors/cell, respectively (Nishigaki et al., 2001; Nishigaki and Darszon, 2000). According to these species-specific differences in chemoattractant receptor densities, Figure 1d\u2013f suggests that the spermatozoa of A. punctulata are likely more sensitive to resact, than those of either L. pictus or S. purpuratus species to the same mean concentration gradients of speract; with the spermatozoa of S. purpuratus being less sensitive than those of L. pictus species to equivalent speract gradients and mean concentrations. Moreover, the constraints on SNR imply that S. purpuratus spermatozoa should only respond to the chemoattractants at higher mean speract concentrations and at steeper gradients than those that elicit chemotaxis in L. pictus spermatozoa (compare Figure 1d and e).\n\nTo understand the differential sensitivity between the spermatozoa of S. purpuratus and L. pictus we analyzed the scenario in which the capacity to detect the gradient for both spermatozoa species were equal, that\u00a0is they would have the same signal-to-noise ratios, SNRpurpuratus\u00a0=\u00a0SNRpictus. We compute the ratio of the slopes of the speract concentration gradient experienced by either S. purpuratus or L. pictus spermatozoa, which represents a scaling factor (SF) in the gradient slope, expressed as:\n\n$$\nSF=\\frac{\u03be_{purpuratus}}{\u03be_{pictus}}=\\frac{v_{pictus}}{v_{purpuratus}}\\frac{\u0394t_{pictus}}{\u0394t_{purpuratus}}^{3/2}\\frac{Z_{pictus}}{Z_{purpuratus}}^{1/2}~3\n$$\n\nwhere $Z=(\\frac{Na}{N+\u00a0\\pia/s})$\u00a0is the probability that a speract molecule that has collided with the cell will bind to a receptor (Berg and Purcell, 1977), multiplied by the radius $a$ of the cell.\n\nThe estimation of the scaling factor SF predicts that S. purpuratus spermatozoa should undergo chemotaxis in a speract gradient three times steeper than the gradient that elicits chemotaxis in L. pictus spermatozoa, with $\u03be_{purpuratus}~3\u03be_{pictus}$.\n\nIn summary, the chemoreception model suggests that S. purpuratus spermatozoa detect chemoattractant gradients with lower sensitivity than those of L. pictus. It also predicts that S. purpuratus spermatozoa may detect chemoattractant gradients in the 10\u22129 M regime with sufficient certainty only if the slope of the chemoattractant concentration gradient is greater than 3\u00d710\u22123 \u00b5m\u22121 (i.e. steep concentration gradients) (Figure 1d).\n\nIf the latter holds true, then S. purpuratus spermatozoa should be able to experience chemotaxis when exposed to steeper speract gradients than those tested experimentally so far. Given this prediction, we designed and implemented an experimental condition for which we expect S. purpuratus spermatozoa to experience chemotaxis. In general terms, this scaling rule for sensing chemoattractant gradients might also apply for other species of marine invertebrates.\n\n### S.\u00a0purpuratus spermatozoa accumulate at steep speract concentration gradients\n\nOur experimental setup is designed to generate determined speract concentration gradients by focusing a brief (200 ms) flash of UV light along an optical fiber, through the objective, and into a field of swimming S. purpuratus spermatozoa containing caged-speract (CS) at 10 nM in artificial sea water (Guerrero et al., 2010a; Tatsu et al., 2002). To test experimentally whether S. purpuratus spermatozoa undergo chemotaxis, as predicted from the chemoreception model, we varied the slope of the speract concentration gradient by separately employing four optical fibers of distinct diameters, arranged into five different configurations (f1, f2, f3, f4, f5) (Figure 2c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig2-v2.jpg)\n\n**Figure 2.:** (a) Radial profile and its derivative (b) of the UV light scattered at the glass-liquid interface for each optical fiber (f1\u2013f5). (c) Spatial distribution of the UV flash energy for each fiber. (d) Representative motility and [Ca2+]i responses of S. purpuratus spermatozoa exposed to different concentration gradients of speract. F-F0 time projections, showing spermatozoa head fluorescence at 3 s intervals before and after photoactivation of 10 nM caged speract in artificial seawater with 200 ms UV flash. The pseudo-color scale represents the relative fluorescence of fluo-4, a [Ca2+]i indicator, showing maximum (red) and minimum (blue) relative [Ca2+]i. Scale bars of 50 \u00b5m.\n\nEach configuration produces a characteristic pattern of UV illumination within the imaging field (Figure 2c). The UV intensity, measured at the back focal plane of the objective for each fiber configuration, is shown in Supplementary file 2. The spatial derivative of the imaged UV light profile was computed as a proxy for the slope of the speract concentration gradient (Figure 2b). By examining these UV irradiation patterns, the highest concentration of speract released through photo-liberation from CS is generated by the f5 fiber, followed by f4>f3>f2>f1 (Figure 2a). The steepest UV irradiation gradients are those generated by the f2, f3 and f5 fibers (Figure 2b).\n\nIrrespective of the optical fiber used, the photo-activation of caged speract triggers the stereotypical Ca2+-dependent motility responses of S. purpuratus spermatozoa (Figure 2d, Video 1, Appendix 1\u2014video 1 and\u00a0Appendix 1\u2014videos 4, 5 and 6). To determine whether these changes lead to sperm accumulation, we developed an algorithm, which automatically scores the number of spermatozoa at any of the four defined concentric regions (R1, R2, R3, and R4) relative to the center of the speract concentration gradient (Figure 3a and Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig3-v2.jpg)\n\n**Figure 3.:** (a)\u00a0The positions of the sperm heads within the imaging field are automatically assigned to either R1, R2, R3 or R4 concentric regions around the centroid of the UV flash intensity distribution. Each ROI was also used to obtain the sperm head fluorescence from the raw video microscopy images (as the mean value of the ROI) (see Figure 3\u2014figure supplement 1). Scale bar of 50 \u00b5m. (b) Fold change in sperm number, defined as the number of spermatozoa at the peak of the response (6 s) relative to the mean number before speract stimulation (0\u20133 s) (see Figure 3\u2014figure supplement 2). (c) Relative changes in [Ca2+]i experienced by spermatozoa at the peak response (6 s) after speract stimulation. Negative controls for spermatozoa chemotaxis are artificial seawater with nominal Ca2+ (Low Ca2+); and artificial seawater with 40 mM of K+ (High K+). Both experimental conditions prevent chemotactic responses by inhibiting the Ca2+ membrane permeability alterations triggered by speract; the former disrupts the Ca2+ electrochemical gradient, and the later disrupt the K+ electrochemical gradient required as electromotive force needed to elevate pHi, and to open Ca2+ channels. The central line in each box plot represents the median value, the box denotes the data spread from 25% to 75%, and the whiskers reflect 10\u201390%. The number of experiments is indicated on the bottom of each experimental condition. We used the same number of experiments for the relative change in [Ca2+]i (right panel). *Statistical significance, p<0.05; multiple comparison test after Kruskal-Wallis.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Work-flow of the segmentation algorithm: Video microscopy images were background subtracted by removing the temporal average intensity projection (static fraction) of the un-stimulated frames (93 frames\u00a0=\u00a03 s), from the whole video (25 s). The resulting images were convolved with a low-pass spatial frequency filter to reduce noise (detector, electronic, shot). The resulting images were thresholded to generate arrays of regions of interest (ROIs), a heuristic search for connected components was then applied to label single ROIs and to assign the corresponding pixels to unique spermatozoa. Scale bar of 15 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Sperm motility responses to different speract concentration gradients (f1, f2, f3, f4, f5) at R1 (a), R2 (b), R3 (c) and R4 (d) concentric regions (see Figure 3a). Negative controls for sperm chemotaxis are artificial sea water with nominal 0 Ca2+ (Low Ca2+); and artificial sea water with 40 mM of K+ (High K+). Each time trace represents the mean sperm density from up to 20 video microscopy experiments. Note that peak responses occurred around 6 s (shown by the vertical dashed lines), some 3 s after speract exposure (indicated as vertical dotted lines). Purple vertical line indicates the UV flash (200 ms).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a)\u00a0Example of a spontaneous Ca2+ oscillation (two oscillations). Only 20% of sperm experiencing spontaneous oscillations suffer more than one oscillation, most of them experience only one [Ca2+]i increase. (b) Representative trace of speract-induced oscillations. Caged-speract was released after third second. (c) Comparison of Ca2+ oscillation amplitude between spontaneous (blue) vs. speract-induced (red) oscillations. n\u00a0=\u00a075 for spontaneous and n\u00a0=\u00a056 for speract-induced oscillations. (d) Comparison of Ca2+ oscillation period between spontaneous (blue) vs. speract-induced (red) oscillations. n\u00a0=\u00a016 for spontaneous and n\u00a0=\u00a056 for speract-induced oscillations. *Statistical significance, p<0.01, Mann-Whitney U test. [Ca2+]i oscillation traces (panels a and b) were smoothed using an average filter with a four frame window in a 30.8 fps setting. For further information see Extended Materials and methods, section 2.8. Spontaneous vs. speract-induced [Ca2+]i oscillations.\n\n![Video 1.](https://cdn.elifesciences.org/articles/50532/elife-50532-video1.mp4.jpg)\n\n**Video 1.:** Spermatozoa swimming in artificial sea water containing 10 nM caged speract, 3 s before and 5 s after 200 ms UV irradiation. An optical fiber of 0.6 mm internal diameter (f2) was used for the UV light path to generate the speract concentration gradient. Real time: 30.8 frames s\u22121, 40x/1.3NA oil-immersion objective. Note that spermatozoa located at R2, R3 and R4 regions prior to speract exposure swim up the speract concentration gradient, toward the center of the imaging field. The pseudo-color scale represents the relative fluorescence of fluo-4, a Ca2+ indicator, showing maximum (red) and minimum (blue) relative [Ca2+]i. Six S. purpuratus spermatozoa were manually tracked for visualization purposes. Scale bar of 50 \u00b5m.\n\nAs you can see in\u00a0Table 1 Supplementary file 1, the photo-liberation of speract through the different fibers used here triggered various response types (Figure 3b and c and Figure 3\u2014figure supplement 2). Negative controls (Low [Ca2+]i or High extracellular K+ ([K+]e) for f2 gradient) did not show increased sperm numbers in any region (Figure 3b and Figure 3\u2014figure supplement 2; Appendix 1\u2014videos 2 and 3, respectively).\n\n**Table 1.**\n Sperm accumulation responses triggered by different speract gradients.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Optical fiber</th>\n      <th>Sperm accumulation at the central regions of the imaging field</th>\n      <th>Sperm depleted of distal regions of the imaging field</th>\n      <th>[Ca2+]i rise (fold)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>f1</td>\n      <td>No</td>\n      <td>No</td>\n      <td>&lt;2</td>\n    </tr>\n    <tr>\n      <td>f2</td>\n      <td>R1 and R2</td>\n      <td>R3 and R4</td>\n      <td>&gt;2</td>\n    </tr>\n    <tr>\n      <td>f3</td>\n      <td>R1, R2 and R3</td>\n      <td>R4</td>\n      <td>&gt;2</td>\n    </tr>\n    <tr>\n      <td>f4</td>\n      <td>No</td>\n      <td>No</td>\n      <td>&gt;2</td>\n    </tr>\n    <tr>\n      <td>f5</td>\n      <td>No</td>\n      <td>No</td>\n      <td>~2</td>\n    </tr>\n  </tbody>\n</table>\n\n_Accumulation responses were evaluated at second 6, that\u00a0is 3 s after photo-liberation of speract by a 200 ms UV flash._\n\nIn summary, S. purpuratus spermatozoa accumulate significantly toward the center of the speract gradients generated by the f2- and f3-fibers\u00a0(Figure 3b), which provide UV light profiles with steeper slopes compared to the f1 and f4 fibers (Figure 2b). These observations agree with the chemoreception model, in that spermatozoa exposed to steeper gradients experience lower uncertainty (i.e. higher SNR) to determine the direction of the source of the chemoattractant.\n\nNotably, the use of fibers f4 and f5 uncages higher concentrations of speract (by providing higher UV energies than other fibers) (Figure 2a and Supplementary file 2), yet they do not trigger the maximum accumulation of S. purpuratus spermatozoa at the center of the chemoattractant field.\n\n### S.\u00a0purpuratus spermatozoa undergo chemotaxis upon exposure to steep speract gradients\n\nThe sperm accumulation responses observed in any of f2 and f3 conditions suggest that the slope of the chemoattractant concentration gradient might indeed function as a driving force for sperm chemotaxis. However, the accumulation of spermatozoa at the center of the field might also imply other factors, such as cell trapping, or cell death (Yoshida and Yoshida, 2011).\n\nTo more reliably scrutinize the trajectories described by S. purpuratus spermatozoa in response to speract gradients, chemotactic behavior was quantified using a chemotactic index (CI) that considers the sperm speed and direction both before and after the chemotactic stimulus (see Figure 4a and b). This CI takes values from \u22121 (negative chemotaxis) to 1 (positive chemotaxis), with 0 being no chemotaxis at all (Video 2). The temporal evolution of the CI, for each of f1, f2, f3, f4, f5 speract concentration fields, was computed (Figure 4c), and their distributions across time were analyzed by a binomial test (Figure 4d, and Appendix 1\u2014video 7 (for further explanation, see Chemotactic index section in Materials and methods).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig4-v2.jpg)\n\n**Figure 4.:** (a)\u00a0Sperm trajectory before (gray) and after (black) the UV irradiation (purple). (b) Definition of a chemotactic index to score chemotactic responses. Dots represent sperm trajectory before (gray) and after (black) UV irradiation. Green and blue empty spirals indicate the smoothed trajectory before and after UV irradiation. Gray and black vectors are the progressive sperm displacement before and after stimulation, respectively; and the v and u vectors are the linear speed before and after stimulation; and \u03d5 and \u03b8 are the angles to their corresponding reference vectors to the center of the imaging field \u2013 the highest UV irradiated area, (magenta and red, respectively). Chemotactic index (CI) is defined as in the inset (see also Video 2). (c) Temporal evolution of the chemotactic index. Functions were calculated from the median obtained from sperm trajectories of each of f1, f2, f3, f4, f5, f2-ZeroCa2+, and f2-HighK+ experimental conditions (Appendix 1\u2014video 7). (d) Radial histograms of CI computed at second 9 (vertical dotted line at panel c). Significant differences (Binomial test, p-value<0.05) were observed only for f2, f3 and f5 fibers, compared to controls. n represents the number of individual sperm trajectories analyzed. (e) CI as a function of the signal-to-noise ratio (SNR). Each parameter was calculated for single cells. Large filled points represent the median for each gradient condition distribution. (f) Fraction of responding cells as a function of the SNR (spermatozoa whose effective displacement was above the unstimulated cells). The apparent diffusion of the swimming drifting circle of unstimulated S. purpuratus spermatozoa is Dapp\u00a0=\u00a09\u00a0\u00b1\u00a03 \u00b5m2 s\u22121 (Friedrich, 2008; Friedrich and J\u00fclicher, 2008; Riedel et al., 2005), here responsive cells were considered by showing a Dapp\u00a0=\u00a09 \u00b5m2 s\u22121, and were evaluated at second 9.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** S. purpuratus sperm behavior classified in four different classes: i) No response (purple), when spermatozoa keep swimming in concentric circles and do not move more than 15 \u00b5m of progressive swimming; ii) Toward the chemoattractant source (cyan), when spermatozoa respond drifting in swimming circles with an orientation angle (\u03b8) smaller than 60\u00b0 (\u03b8\u00a0<\u00a060\u00b0); iii) Opposite to the chemoattractant source (pink), when spermatozoa respond drifting in swimming circles with an orientation angle (\u03b8) bigger than 120\u00b0 (\u03b8\u00a0>\u00a0120\u00b0); and iv) Perpendicular to the chemoattractant source (green), when spermatozoa respond drifting in swimming circles with an orientation angle (\u03b8) smaller than 120\u00b0 but bigger than 60\u00b0 (60\u00b0 \u2264 \u03b8\u00a0\u2264\u00a0120\u00b0). The orientation angle \u03b8 is defined as the swimming angle of the drifting circles after speract uncaging (see Figure 4b). This analysis was made at second six after speract uncaging. Numbers in each bar represent the number of spermatozoa in each condition. Inset at the right panel shows the orientation angles (\u03b8). For further information see Extended Materials and methods, section 2.7. Sperm swimming behavior in different chemoattractant gradients.\n\n![Video 2.](https://cdn.elifesciences.org/articles/50532/elife-50532-video2.mp4.jpg)\n\n**Video 2.:** Single-cell analysis was performed for approximately 1000 sperm trajectories for the different speract gradients (f1-f5 and negative controls). The sperm trajectory shown here is representative of a chemotactic sperm. This analysis was implemented after speract uncaging at 3 s (from 3.2 to 10 s). Trajectory before, after and during the 200 ms UV flash is shown in gray, black and purple, respectively.\n\nThe speract fields created by fibers f2, f3 and f5 produce significantly positive CI values compared to other conditions (f1, f4 and negative controls), confirming that steeper speract concentration gradients trigger chemotactic responses in S. purpuratus spermatozoa. Again, the lack of chemotactic responses in S. purpuratus spermatozoa observed by Guerrero et al. (2010a), was reproduced through stimulation with f4, zero Ca2+, or High K+ experimental regimes (a scrutiny of non-chemotactic cells is presented in Figure 4\u2014figure supplement 1 and section 2.7. Sperm swimming behavior in different chemoattractant gradients in Appendix 1).\n\nChemotactic efficiency, which in our work is reported by CI, contains information regarding the capability of single cells to detect and undergo a direct response toward a chemotactic stimulus. It also provides information about the percent of responsive cells that, after detecting a stimulus, can experience chemotaxis. As sperm chemotaxis, and chemotaxis in general, has evolved to operate optimally in the presence of noise (Amselem et al., 2012; Kromer et al., 2018; Lazova et al., 2011), we examined the boundary of SNR where sperm chemotaxis operates efficiently for S. purpuratus spermatozoa (Figure 4e). Take into account that in the regime of SNR\u00a0<\u00a01, chemotactic efficiency scales monotonically; for SNR\u00a0>\u00a01, saturation or adaptation mechanisms might impinge on the chemotactic efficiency, as reported in other chemotactic signaling systems (Amselem et al., 2012; Kromer et al., 2018; Lazova et al., 2011). In agreement with these results, we found that the percentage of S. purpuratus spermatozoa experiencing relocation increases monotonically with the SNR (Figure 4f), within the noise limits of 0.1\u00a0<\u00a0SNR\u00a0<\u00a00.8, which is also in agreement with the findings of sperm chemotaxis operating optimally in the presence of noise (Amselem et al., 2012; Kromer et al., 2018; Lazova et al., 2011).\n\n### The magnitude of slope of the gradient is a major determinant of sperm chemotaxis\n\nThe spatial derivative of the UV profiles shown in Figure 2b indicates that the steeper light gradients generated from UV irradiation are those of f2, f3 and f5, which are assumed to generate the steepest speract gradients of similar form. This assumption is strictly valid at the instant of UV exposure; subsequently the speract gradient dissipates over time with a diffusion coefficient of D \u2248 240 \u03bcm2s\u22121. However, the gradient steepness that each spermatozoon experiences during swimming is determined by the combination of UV flash duration, the speract diffusion time, and the sperm motility response by itself.\n\nIn nature, spermatozoa of external fertilizers tend to swim in spiral 3D trajectories. However, under the experimental conditions explored in this research, we analyzed sperm swimming in 2D circular-like trajectories confined at a few microns above the coverslip. The UV flash that sets the initial chemoattractant distribution was focused at the imaging plane (~1\u20134 \u00b5m above the coverslip) (Nosrati et al., 2015). Hence, the correct diffusion problem corresponds to that of a 2D diffusing regime. We sought to understand how the stimulus function, which S. purpuratus spermatozoa experience during the accumulation of bound speract throughout their trajectory, influences their motility response. For this purpose, we computed the spatio-temporal dynamics of the speract gradient for f1, f2, f3, f4 and f5 fibers (Figure 5a and b and Figure 5\u2014figure supplement 1). and analyzed the trajectories of spermatozoa swimming in these five distinct speract gradient configurations (Figure 5c, Figure 5\u2014figure supplement 2a and Figure 5\u2014figure supplement 2c). Moreover, we examined the stimulus function of individual spermatozoa in response to each of the five speract gradient forms (Figure 5e, Figure 5\u2014figure supplement 2b, Figure 5\u2014figure supplement 2d and Video 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig5-v2.jpg)\n\n**Figure 5.:** Dynamics of the f2 speract gradient. The blue dashed line (t0\u00a0=\u00a00 s) corresponds to a Gaussian distribution fitted to the UV light profile and illustrates the putative shape of the instantaneously-generated speract concentration gradient. Solid black lines illustrate the temporal evolution of the speract concentration field after t\u00a0=\u00a01, 2, 3, \u2026, 20 s. (b) Temporal changes in the f2 speract field computed radially (each 10 \u00b5m) from the center of the gradient. (c) Characteristic motility changes of a S. purpuratus spermatozoon exposed to the f2 speract gradient. Solid lines illustrate its swimming trajectory 3 s before (gray), during UV flash (purple) and 6 s after (black) speract exposure. (d) Spermatozoa head distance to the source of the speract gradient versus time, calculated from sperm trajectory in (c).\u00a0(e). Stimulus function computed from the swimming behavior of the spermatozoon in (c), considering the dynamics of (a and b).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The radial profiles of the UV light scattered at the glass-liquid interface of f1, f3, f4, f5 optical fibers are shown in gray. The speract gradient was generated as in Figure 5, but with the corresponding f1 (a and b), f3 (c and d), f4 (e and f) and f5 (g and h) optical fibers. Left panels - The dynamics of the speract gradient computed as is in Figure 5. The blue dashed line (t0\u00a0=\u00a00) corresponds to a Gaussian distribution fitted to the UV light profile, and illustrates the putative shape of the instantaneously generated speract gradient. Solid black lines illustrate the shape of the speract gradient after t\u00a0=\u00a01, 2, 3, \u2026, 20 s. Right panels - Simulated temporal changes in speract concentration gradients of f1 (a), f3 (c), f4 (e) and f5 (g) at each 10 \u00b5m radial point from the center of the concentration gradient.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Panels (a and b) show single cell responses to the f3 speract gradient (chemotactic); and panels c) and d) to the f4 speract gradient (non-chemotactic). (a, c) Solid lines illustrate the spermatozoon swimming trajectory 3 s before (gray) and 6 s after (black) speract gradient exposure. (b, d). Stimulus function computed from (a and c), considering the spatio-temporal dynamics of speract computed for the f3 and f4 gradients, respectively.\n\n![Video 3.](https://cdn.elifesciences.org/articles/50532/elife-50532-video3.mp4.jpg)\n\n**Video 3.:** Single-cell analysis was performed for approximately 1000 sperm trajectories from the different speract gradients (f1-f5 and negative controls). Angle \u03d5 is calculated just once and is always the same for each sperm trajectory. Angle \u03b8 is calculated per frame of the video for each sperm trajectory, resulting in the chemotactic index kinetics for each sperm trajectory (right panel). The sperm trajectory shown here represents a chemotactic sperm. This analysis was implemented from 4.5 s to 10 s. Speract uncaging was induced at 3 s. Trajectory before and after speract release is shown in gray and black dots, respectively.\n\nThe model of chemoreception presented in the previous sections (see Equations (2) and (3)) predicts a scaling rule for chemotactic responses between S. purpuratus and L. pictus spermatozoa of SF\u00a0~\u00a03 (Equation (4)). The derivatives of the UV-irradiation profiles shown in Figure 2b indicate that the f2, f3, and f5 fibers generate steeper speract gradients than the f1 and f4 fibers.\n\nTo determine the direction of the chemoattractant concentration gradient, the signal difference $\\partialc$ between two sampled positions $\\partialr$\u00a0must be greater than the noise (Figure 1a). To test the prediction of the chemoreception model, we computed the local relative slope of the chemoattractant concentration gradient $\u03be$ detected by single spermatozoa exposed to a given speract concentration gradient, with $\u03be=c-^{-1}\\frac{\\partialc}{\\partialr}$ (Figure 5e).\n\nWe found that, in agreement with the chemoreception model, the maximum relative slope of the chemoattractant concentration gradient $\u03be_{max}=max(\u03be_{1},\u03be_{2},\u03be_{3},\u2026,\u03be_{n})$ required by S. purpuratus spermatozoa to undergo chemotaxis is created when the f2 and f3 fibers are employed to generate speract gradients (Figure 5e). This relative slope of the chemoattractant concentration gradients is at least three times greater than that experienced when exposed to the f4-generated speract gradient (Figure 6b). In addition, L. pictus spermatozoa undergo chemotaxis when exposed to the f4 speract gradient, which is 2\u20133 times smaller than that required by S. purpuratus (Figure 6b). These findings support the predicted scaling rule for the detection of the speract concentration gradient between L. pictus and S. purpuratus spermatozoa (Figure 6b and c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig6-v2.jpg)\n\n**Figure 6.:** (a)\u00a0Coupled oscillator model. Each sperm has two independent oscillators: i) stimulus function and ii) [Ca2+]i, which can be coupled through a forcing term that connects them, in our case the slope of the chemoattractant concentration gradient (\u03be0). (b) Maximum relative slopes (\u03bemax) of the chemoattractant concentration gradient experienced by S. purpuratus (Sp) spermatozoa when exposed to f1, f2, f3, f4, f5 speract gradients. The maximum relative slopes of the chemoattractant concentration gradient experienced by L. pictus spermatozoa (Lp) toward\u00a0f4 experimental regime are also shown. Note that \u03bemax for f2, f3, and f5, are up to 2\u20133 times greater than in f4, regardless of the species. (c) Experimental signal-to-noise ratios (SNR) regimes experienced by spermatozoa swimming in different gradient conditions. Note that only f2, f3 and f5 have higher SNR, compared to other gradient conditions, for which stochastic fluctuations mask the signal. This SNR calculation assumes a 10% of speract uncaging. The maximum relative slopes (\u03be) are shown in log scale (d) Arnold\u2019s tongue indicating the difference in intrinsic frequency of the internal Ca2+ oscillator of S. purpuratus spermatozoa, just before and after the speract gradient exposure. (e). Phase difference between the time derivative of the stimulus function and the internal Ca2+ oscillator of S. purpuratus spermatozoa, obtained by computing the cross-correlation function between both time series (Figure 6\u2014figure supplement 2).\u00a0(f). Phase difference between the time derivative of the stimulus function and the internal Ca2+ oscillator of S. purpuratus spermatozoa expressed in temporal delays. (d-f) Gray points represent the collated data of all f1, f2, f3, f4, f5 experimental regimes. Red, black and blue points indicate chemotactic spermatozoa (CI\u00a0>\u00a00 at second three after UV flash), located in R3, and R4 regions just before the speract gradient is established under f2, f3 and f5 experimental regimes, respectively. Magenta lines represent the transition boundary (\u03b3min = $\u03be_{max}^{\u2217}\u00af$ ~ 2.6\u00d710\u22123 \u00b5m\u22121, see also Figure 1d\u2013f) below which no synchrony is observed, obtained from the theoretical estimates (black curves, mean of \u0394\u03c9) of panels (e) and (f). Green dashed lines indicate confidence intervals (mean\u00a0\u00b1\u00a0standard deviation).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Spermatozoa were immobilized on cover slips coated with poly-D-lysine (see Materials and methods), and ASW containing 500 nM caged speract added. Recordings were performed 3 s before and during 6 s after 200 ms of UV irradiation. f4 optical fiber was used for the UV light path, to generate the speract concentration gradient. Time traces indicate the [Ca2+]i of selected spermatozoa of Appendix 1\u2014video 8. Note that the photo-release of speract induces a train of [Ca2+]i increases in immobilized spermatozoa, and hence provides evidence for the presence of an internal Ca2+ oscillator triggered by speract.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50532/elife-50532-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Representative examples of [Ca2+]i (red) and the derivative of the stimulus function (dS) (black) were plotted and then analyzed by cross-correlation analysis (CCF). Red vertical lines indicate the zero, blue vertical lines indicate the point of maximum correlation for each case, which means that the phase shifting between [Ca2+]i and dS is around 200 ms in these cases. Examples of a pair of spermatozoa for the two principal chemotactic gradients (f2 and f3) are shown. (a, b) Representative examples of two spermatozoa in an f2 gradient. (c, d) Representative examples of two spermatozoa in an f3 gradient.\n\n### The slope of the speract concentration gradient is the critical determinant for the strength of coupling between the stimulus function and the internal Ca2+ oscillator\n\nFriedrich and J\u00fclicher proposed a general theory that captures the essence of sperm navigation traversing periodic paths in a non-homogeneous chemoattractant field, in which the sampling of a stimulus function S(t) is translated by intracellular signaling into the periodic modulation of the swimming path curvature k(t) (Friedrich and J\u00fclicher, 2008; Friedrich and J\u00fclicher, 2007; Riedel et al., 2005). As a result, the periodic swimming path drifts in a direction that depends on the internal dynamics of the signaling system. In this theory, the latency of the intracellular signaling (i.e. the [Ca2+]i signal), expressed as the phase shift between S(t) and k(t), is a crucial determinant of the directed looping of the swimming trajectory up the chemical concentration field (Friedrich and J\u00fclicher, 2009; Friedrich and J\u00fclicher, 2008).\n\nEven though this conceptual framework provides insights into the mechanism governing sperm chemotaxis, it does not explore the scenario where chemoattractants trigger an autonomous [Ca2+]i oscillator (Aguilera et al., 2012; Espinal et al., 2011; Wood et al., 2003), which suggests that sperm chemotaxis might operate in a dynamical space where two autonomous oscillators, namely the stimulus function and the internal Ca2+ oscillator, reach frequency entrainment (Figure 6a).\n\nTo test the hypothesis that the slope of the speract concentration gradient regulates the coupling between the stimulus function and the internal Ca2+ oscillator triggered by speract, we made use of a generic model for coupled phase oscillators (Pikovsky et al., 2003). In its simplest form, the model describes two phase oscillators of intrinsic frequencies \u03c91 and \u03c92 coupled with a strength \u03b3 through the antisymmetric function of their phase difference \u0278 = \u03c61 - \u03c62. The time evolution of \u0278 then follows an Adler equation d\u0278/dt = \u0394\u03c9 - 2\u03b3 sin(\u0278), which is the leading order description for weakly-coupled non-linear oscillators. In the present case, the two coupled oscillators are the internal Ca2+ oscillator and the oscillations in the stimulus function induced in spermatozoa swimming across a speract gradient (Figure 6a). The former occurs even for immotile cells, for which there are no stimulus oscillations under a spatially uniform speract field (Figure 6\u2014figure supplement 1, and\u00a0Appendix 1\u2014video 8); while the latter exists under two tested negative controls: cells swimming in Low Ca2+ and in High K+ artificial sea water, both of which inhibit Ca2+ oscillations (see Figure 3c, Figure 3\u2014figure supplement 2 and Appendix 1\u2014videos 2 and 3, respectively).\n\nWood et al., showed that immobilized S. purpuratus spermatozoa might experience spontaneous Ca2+ transients (Wood et al., 2003) (see Figure 6\u2014figure supplement 1). To provide insight into the mechanism of sperm chemotaxis we characterized and compared the spontaneous vs. the speract-induced [Ca2+]i oscillations, and conclude that they are of different oscillatory nature, hence the spontaneous oscillations do not have a role in sperm chemotaxis (see Figure 3\u2014figure supplement 3 and section 2.8. Spontaneous vs. speract-induced [Ca2+]i oscillations in Appendix 1).\n\nThere are two immediate predictions from the Adler model: first, there is a minimum coupling strength necessary for the two oscillators to synchronize (\u03b3min = \u0394\u03c9/2). For weaker coupling (i.e. \u03b3 < \u03b3min), the two oscillators run with independent frequencies and, hence, the phase difference increases monotonically with time; second, and within the synchronous region (i.e. \u03b3 > \u03b3min), the phase difference between the oscillators is constant and does not take any arbitrary value, but rather follows a simple relation to the coupling strength (\u0278sync\u00a0=\u00a0arcsin(\u0394\u03c9/2\u03b3)). Figure 6d shows the two regions in the parameter space given by \u0394\u03c9 and \u03b3. The boundary between these two regions corresponds to the condition \u03b3 = \u03b3min and it delimits what is known as an Arnold\u2019s tongue.\n\nWe measured the difference in intrinsic frequency by looking at the instantaneous frequency of the internal Ca2+ oscillator just before and after the speract gradient is established. The range of measured \u0394\u03c9 is shown in Figure 6d as a band of accessible conditions in our experiments (mean of \u0394\u03c9, black line; mean\u00a0\u00b1\u00a0standard deviation, green dashed lines). If the driving coupling force between the oscillators is the maximum slope of the speract concentration gradient, that\u00a0is \u03b3 = \u03bemax, we would expect to find a minimum slope ($\u00ee*max\u00af$) below which no synchrony is observed. This is indeed the case as clearly shown in Figure 6b, e and f (magenta line). Moreover, and for cells for which synchronization occurs, the measured phase difference is constrained by the predicted functional form of \u0278sync = \u0278sync(\u0394\u03c9, \u03b3) as can be verified from the collated data shown in Figure 6e and f within the theoretical estimates (see also Figure 6\u2014figure supplement 2). Altogether, the excellent agreement of this simple model of coupled phase oscillators with our data, points to the slope of the speract concentration gradient as the driving force behind the observed synchronous oscillations and, as a result, for the chemotactic ability of sea urchin spermatozoa.\n\n## Discussion\n\nWhat are the boundary conditions that limit a sperm\u2019s capacity to determine the source of guiding molecules?\n\nDuring their journey, spermatozoa must measure both the concentration and change on concentration of chemoattractants. Diffusing molecules bind to receptors as discrete packets arriving randomly over time with statistical fluctuations, imposing a limit on detection. By following the differences in the mean concentration of chemoattractants, sampled at a particular time, spermatozoa gather sufficient information to assess the source of the gradient. However, there is a lower detection limit to determine the direction of the chemical gradient, which depends on the swimming speed of the sperm, the sampling time, and as shown in this work, on the steepness of the slope of the chemoattractant concentration gradient.\n\nFor almost three decades, chemotaxis had not been observed for the widely-studied S. purpuratus species under diverse experimental conditions, raising doubts about their chemotactic capabilities in response to the speract concentration gradients (Cook et al., 1994; reviewed in Guerrero et al. (2010a); Guerrero et al. (2010b); Solzin et al. (2004). The observed lack of chemotactic responses by these spermatozoa has been recognized as an \u2018anomaly\u2019 in the field - if we aspire to generalize and interpret findings in sea urchin spermatozoa to chemotactic responses in other systems, then it is critical to accommodate and account for any apparent outliers, and not ignore them as inconveniently incongruent to the model.\n\nTo examine whether S. purpuratus spermatozoa are able to detect spatial information from specific chemoattractant concentration gradient, we use a model of chemoreception developed by Berg and Purcell (1977), which considers the minimal requirements needed for a single searcher (i.e. a sperm cell) to gather sufficient information to determine the orientation of a non-uniform concentration field. By considering the difference between L. pictus and S. purpuratus spermatozoa in terms of the number of chemoattractant receptors, receptor pocket effective size, cell size, sampling time, mean linear velocity, sampling distance, and the local mean and slope of the chemoattractant concentration gradient, our model predicts that S. purpuratus spermatozoa would need a speract gradient three times steeper than the gradient that drives chemotactic responses for L. pictus spermatozoa. We tested this experimentally by exposing S. purpuratus spermatozoa to various defined speract concentration gradients.\n\nWe showed that S. purpuratus spermatozoa can undergo chemotaxis, but only if the speract concentration gradients are sufficiently steep, as predicted by the chemoreception model (i.e. speract gradients that are at in the region of three times steeper than the speract concentration gradient that drives chemotaxis in L. pictus spermatozoa). This confirms and explains why the shallower speract gradients previously tested are unable to generate any chemotactic response in S. purpuratus spermatozoa (Guerrero et al., 2010a), despite inducing characteristic \u2018turn and run\u2019 motility responses.\n\nThese findings indicate that the guiding chemical gradient must have a minimum steepness to elicit sperm chemotaxis, where the signal-to-noise relationship (SNR) of stimulus to the gradient detection mechanism imposes a limit for the chemotactic efficiency. Our results are in agreement with recent theoretical studies by Kromer and colleagues, indicating that sperm chemotaxis of marine invertebrates operates optimally within a boundary defined by the SNR of collecting ligands within a chemoattractant concentration gradient (Kromer et al., 2018). We showed that SNR can be tuned by the steepness of the chemical gradient, where higher SNR\u2019s are reached at steeper gradients, hence increasing the probabilities of locating the source of the gradient.\n\nThe large majority of marine spermatozoa characterized to date, together with many motile microorganisms, explore their environment via helical swimming paths, whereupon encountering a surface these helices collapse to circular trajectories. The intrinsic periodicity of either swimming behavior commonly results in the periodic sampling of the cell chemical environment with direct implications for their ability to accurately perform chemotaxis.\n\nThe periodic sampling of chemoattractants by the sperm flagellum continuously feeds back to the signaling pathway governing the intracellular Ca2+ oscillator, hence providing a potential coupling mechanism for sperm chemotaxis. Indirect evidence for the existence of a feedback loop operating between the stimulus function and the Ca2+ oscillator triggered by chemoattractants has been found in L. pictus, A. punctulata and Ciona intestinalis (ascidian) species, whose spermatozoa show robust chemotactic responses toward their conspecific chemoattractants (B\u00f6hmer et al., 2005; Guerrero et al., 2010a; Jikeli et al., 2015; Shiba et al., 2008).\n\nTo investigate further the molecular mechanism involved in sperm chemotaxis, we measured both the stimulus function and the triggered [Ca2+]i oscillations for up to one thousand S. purpuratus spermatozoa exposed to five distinctly-shaped speract concentration gradients. We demonstrate that the steepness of the slope of the chemoattractant concentration gradient is a major determinant for sperm chemotaxis in S. purpuratus and might be an uncovered feature of sperm chemotaxis in general. A steep slope of the speract concentration gradient entrains the frequencies of the stimulus function and the internal Ca2+ oscillator triggered by the periodic sampling of a non-uniform speract concentration field. We assessed the transition boundary of the coupling term (the slope of the speract concentration gradient) for the two oscillators to synchronize and found it to be very close to the boundary where S. purpuratus starts to experience chemotaxis. The agreement of our data with a model of weakly-coupled phase oscillators suggests that the slope of the speract concentration gradient is the driving force behind the observed synchronous oscillations and, as a result, for the chemotactic ability of sea urchin spermatozoa.\n\nIt is not that surprising to find matching of frequencies when dealing with two oscillators coupled through a forcing term. Nonetheless, the boundaries of the \u2018region of synchrony\u2019 are by no means trivial. What is relevant to the former discussion is the existence of thresholds in the coupling strength, whose experimental calculations agree with our theoretical predictions based on the chemoreception model. In addition, such a minimal model for coupled oscillators is also able to predict computed functional dependencies that are well documented in the literature, that\u00a0is the observed temporal and frequency lags between the stimulation and signaling responses of the chemoattractant signaling pathway (Alvarez et al., 2012; B\u00f6hmer et al., 2005; Guerrero et al., 2010a; Kaupp et al., 2003; Nishigaki et al., 2004; Pichlo et al., 2014; Shiba et al., 2008; Str\u00fcnker et al., 2006; Wood et al., 2007; Wood et al., 2005).\n\nCaution must be exercised with the interpretations of the agreement of our data with such a generic model for coupled phase oscillators, particularly when considering only a few steps of the oscillatory cycles. The latter is relevant for assessing frequency entrainment, which in some cases demands a certain delay before reaching the synchronized state, that\u00a0is when the natural frequencies of the connected oscillators are very distinct. The chemotactic responses scored in the present study encompass a few steps (<10) of both the stimulus function and the internal Ca2+ oscillator triggered by speract (Figure 5\u2014figure supplement 2, Figure 6\u2014figure supplement 1 and Figure 6\u2014figure supplement 2). Our data indicate that within the chemotactic regime, frequency entrainment of the stimulus function and the internal Ca2+ oscillator of S. purpuratus spermatozoa seems to occur almost instantaneously, within the first three oscillatory steps (Figure 6\u2014figure supplement 2). Such interesting findings can be explained by the proximity of the natural frequencies of both oscillators (Figure 6d), which may relieve the need for a longer delay for reaching frequency entrainment. Whether the proximity of the frequencies of both oscillators is sculped by the ecological niche where sperm chemotaxis occurs is an open question, however, a near-instantaneous entrainment would confer obvious evolutionary advantage under the reproductively competitive conditions of synchronized spawning as undertaken by sea urchins.\n\nOne can further hypothesize about the evolutionary origin of the described differences in sensitivity to chemoattractant concentration gradients between S. purpuratus and L. pictus spermatozoa if we consider their respective ecological reproductive niches. The turbulent environment where sea urchins reproduce directly impinges on the dispersion rates of small molecules such as speract, hence, imposing ecological limits that constrain permissive chemoattractant gradient topologies within different hydrodynamic regimes. For instance, the reproductive success of L. pictus, S. purpuratus and abalone species has been shown to peak at defined hydrodynamic shearing values (Hussain et al., 2017; Mead and Denny, 1995; Riffell and Zimmer, 2007; Zimmer and Riffell, 2011). What are the typical values of the chemoattractant gradients encountered by the different species in their natural habitat? The correct scale to consider when discussing the small-scale distribution of chemicals in the ocean is the Batchelor scale, lB = (\u03b7D2/\u03b6)1/4, where \u03b7 is kinematic viscosity, D the diffusion coefficient and \u03b6 is the turbulent dissipation rate (Aref et al., 2017; Batchelor et al., 1959). Turbulence stirs dissolved chemicals in the ocean, stretching and folding them into sheets and filaments at spatial dimensions down to the Batchelor scale: below lB molecular diffusion dominates and chemical gradients are smoothened out.\n\nS. purpuratus is primarily found in the low intertidal zone. The purple sea urchin lives in a habitat with strong wave action and areas with shaking aerated water. These more energetic zones, including tidal channels and breaking waves, generate relatively high levels of turbulence (\u03b6\u00a0~10\u22124 m2s\u22123) which lead to somewhat small values of lB and, hence, to steep gradients (i.e. 1/lB). L. pictus, on the contrary, is mostly found at the edge of or inside kelp beds, well below the low tide mark where the levels of turbulence are much more moderate (\u03b6\u00a0~10\u22126 m2s\u22123) (Jimenez, 1997; Thorpe, 2007). This difference in the turbulent kinetic energy dissipation rate has a significant effect on the spatial dimensions of chemical gradients for sperm chemotaxis present in a particular habitat. The ratio of lB for the different habitats scales as lBpurpuratus/lBpictus ~ (\u03b6pictus/\u03b6purpuratus)1/4\u00a0~\u00a03, which fits considerably well with the relative sensitivity to speract of the two species. Furthermore, we have shown that S. purpuratus spermatozoa experience chemotaxis toward steeper speract gradients than those that guide L. pictus spermatozoa, which is also compatible with the distinct chemoattractant gradients they might naturally encounter during their journey in search of an egg.\n\n## Materials and methods\n\n### Materials\n\nArtificial seawater (ASW), and Low Ca2+ ASW were prepared as in Guerrero et al. (2010a), their detailed composition, together with an extended list of other materials is presented in the Appendix 1. Caged speract (CS), was prepared as described previously (Tatsu et al., 2002).\n\n### Loading of Ca2+-fluorescent indicator into spermatozoa and microscopy imaging\n\nS. purpuratus or L. pictus spermatozoa were labeled with fluo-4-AM (as described in section 2.2. Loading of Ca2+-fluorescent indicator into spermatozoa in Appendix 1), and their swimming behavior was studied at the water-glass interface on an epifluorescence microscope stage (Eclipse TE-300; Nikon). The cover slips were covered with poly-HEME to prevent the attachment of the cells to the glass. Images were collected with a Nikon Plan Fluor 40\u00d7/1.3NA oil-immersion objective. Temperature was controlled directly on the imaging chamber at a constant 15\u00b0C. Stroboscopic fluorescence excitation was provided by a Cyan LED synchronized to the exposure output signal of the iXon camera (2 ms illumination per individual exposure, observation field of 200\u00d7200 \u00b5m), the fluorescence cube was set up accordingly (see Appendix 1).\n\n### Image processing and quantification of global changes of spermatozoa number and [Ca2+]i\n\nTo study the dynamics of overall sperm motility and [Ca2+]i signals triggered by the distinct speract gradients, we developed an algorithm that provides an efficient approach to automatically detect the head of every spermatozoa in every frame of a given video-microscopy file. A detailed description of the algorithm is provided in the Appendix 1.\n\n### Computing the dynamics of speract concentration gradients\n\nThe dynamics of the chemoattractant gradient was computed using Green\u2019s function of the diffusion equation, considering diffusion in 2D:\n\n$$\nc=f(r,t)=\\frac{C_{0}}{4\\piD(t+t_{0})}e^{\\frac{\u2212r^{2}}{\\sigma^{2}}}+c_{b},\n$$\n\nEquation (5) for the concentration tells us that the profile has a Gaussian form, where D is the diffusion coefficient of the chemoattractant, $c_{b}$ is the basal concentration of the chemoattractant, t is the time interval, r is the distance to the center of the gradient and c0 is the initial concentration. The width of the Gaussian is $\\sigma=\\sqrt{4D(t+t_{0})}$, and hence it increases as the square root of time.\n\nThe speract concentration gradients were generated via the photolysis of 10 nM caged speract (CS) with a 200 ms UV pulse delivered through each of four different optical fibers with internal diameters of 0.2, 0.6, 2, and 4 mm (at two different positions). Light intensity was normalized dividing each point by the sum of all points of light intensity for each fiber and multiplying it by the fiber potency (measured at the back focal plane of the objective) in milliwatts (mW) (Supplementary file 2). Each spatial distribution of instantaneously-generated speract concentration gradient was computed by fitting their corresponding normalized spatial distribution of UV light (Residual standard error: 2.7 \u00d7 10\u22125 on 97 degrees of freedom), considering an uncaging efficiency of 5\u201310%, as reported (Tatsu et al., 2002).\n\nThe diffusion coefficient of speract has not been measured experimentally. However, the diffusion coefficient of a similar chemoattractant molecule, resact (with fourteen amino acids), has been reported, Dresact\u00a0=\u00a0239\u00a0\u00b1\u00a07 \u00b5m2 s\u22121 (Kashikar et al., 2012). If we consider that speract is a decapeptide, the 1.4 fold difference in molecular weight between speract and resact would imply a (1.4)1/3 fold difference in their diffusion coefficients, which is close to the experimental error reported (Kashikar et al., 2012). For the sake of simplicity, the spatio-temporal dynamics of the distinct instantaneously generated speract gradients was modeled considering a speract diffusion coefficient of Dsperact\u00a0=\u00a0240 \u00b5m2 s\u22121.\n\n### Computing [Ca2+]i dynamics and the stimulus function of single spermatozoa\n\nSpermatozoa were tracked semi-automatically by following the head centroid with the MtrackJ plugin (Meijering et al., 2012) of ImageJ 1.49u. Single cell [Ca2+]i signals were computed from the mean value of a 5x5 pixel region, centered at each sperm head along the time. The head position of each spermatozoa x was used to compute the mean concentration of speract at $r$ over each frame. The stimulus function of single spermatozoa $S=f(c)$ was computed by solving Equation (5) considering both their swimming trajectories, and the spatio-temporal evolution of a given speract concentration gradient. The profiles of UV light were used to compute the initial conditions at $c(r,t_{o})$.\n\nThe phase- and temporal-shifts between the time derivative of the stimulus function $dS/dt$ and the internal Ca2+ oscillator triggered by speract, were computed from their normalized cross-correlation function.\n\nPrograms were written in R statistical software (R Development Core Team, 2016).\n\n### Chemotactic index (CI)\n\nEach sperm trajectory was smoothened using a moving average filter, with a window of 60 frames (two seconds approximately) (Figure 4b and Video 2). A linear model was then fitted to the smoothed trajectory; the corresponding line was forced to go through the mean point of the smoothed trajectory (orange point in Figure 4b and Video 2). The \u03b8 angle between red and black vectors was calculated in each frame from the second 4.5 to 10.\n\nThe chemotactic index is defined based on the progressive displacement of the sperm trajectory as $CI=\\frac{ucos\\theta-vcos\\phi}{u+v}$, being \u03d5 and \u03b8 the angles between gray and magenta, and red and black vectors, respectively; and |v| and |u| the magnitude of the sperm progressive speed before and after speract uncaging, respectively (Figure 4b and Video 2). The CI considers the sperm displacement before speract uncaging (i.e. unstimulated drift movement at 0\u20133 s), and then subtracts it from the speract induced effect (at 3\u201310 s). The CI takes values from \u22121 (negative chemotaxis) to 1 (positive chemotaxis), being 0 no chemotaxis at all.\n\n### Statistical analyses\n\nThe normality of the CI distributions, each obtained from f1 to f5 speract gradient stimuli, was first assessed using the Shapiro-Wilk test; none of them were normal (Gaussian), so each CI distribution was analyzed using non-parametric statistics (Figure 4d and Appendix 1\u2014video 7). The curves obtained from medians of each CI distribution were smoothed using a moving average filter, with a window of 20 frames (0.6 s) (Figure 4c).\n\nData are presented for individual spermatozoa (n) collected from up to three sea urchins. All statistical tests were performed using R software (R Development Core Team, 2016). The significance level was set at 95% or 99%.\n",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "c514381e-305c-4e6a-8403-ecdaf9d863d4",
+      "submission_id": "54043349-4e54-42b4-b412-8bf41fb21aa1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.50532.sa1](https://doi.org/10.7554/eLife.50532.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe work of Ramirez-Gomez et al., is an important contribution to our understanding of sperm chemotaxis in sea urchins, a historically important class of organisms in the unravelling of this phenomenon. It was in these that sperm activating peptides such as speract were first identified; these play a role in triggering calcium increases that regulate dynein motor activity and thereby control motility. Through studies of various species of sea urchins and theoretical analysis of the limits of gradient detection the authors identify the boundaries for detecting chemotactic signals of S. purpuratus spermatozoa, and show that sperm chemotaxis arises only when sperm are exposed to sufficiently steep speract concentration gradients They show further that sperm chemotaxis arises through coupling between recruitment of speract molecules during sperm swimming and the internal Ca2+ oscillator.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"Sperm chemotaxis is driven by the slope of the chemoattractant concentration field\" for peer review at eLife. Your article is being evaluated by Naama Barkai as the Senior Editor, a Reviewing Editor, and three reviewers.\n\nGiven the list of essential revisions, the editors and reviewers invite you to respond within the next two weeks with an action plan and timetable for the completion of the additional work. We plan to share your responses with the reviewers and then issue a binding recommendation.\n\nThe reviewers had mixed opinions on this work, but reviewer #3 has raised a number of technical issues that need a clear response from you in order that we can reach a formal decision. Please pay particular attention to those items.\n\nReviewer #2:\n\nThere is nothing wrong with this paper. It gives a very thorough review of the well-researched field of chemotaxis including some solid modeling. The problem is that it isn't new or surprising (to me). The same manuscript was put online in June 2017 in bioRxiv with little note. The statement that \"For almost three decades, chemotaxis had not been observed for the widely-studied S. purpuratus species under diverse experimental conditions, raising doubts about their chemotactic capabilities in response to the speract concentration gradients\" is made without citation in both versions of the paper, but it doesn't seem to have been much of a mystery. The receptor density of low on S. purpuratis, which then requires a steeper gradient to overcome noise, as the authors have shown.\n\nWhile there is nothing wrong here, it seems very academic and has previously attracted little attention, so I question why it should be published in eLife.\n\nReviewer #3:\n\nI started the manuscript with excitement but it did not take long to recognise that the theoretical work has been not been implemented to sufficient standards of diligence; it appears unchecked for errors, both minor and fundamental, with examples of the latter including modelling assumption, equation solution and dimensions.\n\nThe limits of detection and the limits of when oscillators couple (e.g. that pendula on a wall are sufficiently coupled to synchronise) is interesting and is the concept in the context of chemotaxis explored here. However, thresholds by their nature are sensitive \u2013 the number of theoretical errors means that discussing and examining thresholds does not appear to be sound (as opposed to using controlled and justified approximations).\n\nHence, I am afraid I cannot recommend the manuscript for publication, with further details are below. I should note I have less confidence in the experimental aspects and leave this to other reviewers.\n\nEquation (1):\n\n- A list of assumptions should be provided with such equations. The authors have assumed a large Peclet number and it is not clear the Peclet number is large (it is, if the flagellum radius is used as the length scale, but the interaction of the fluid flow with the concentration field means such an assumption is not obviously valid). Appeal to Berg's paper is insufficient as the Peclet number is larger for bacteria, as the smaller the length scale the greater the effect of diffusion, and diffusion is dominant for an isolated bacterium. The assumption that Pe >> 1 is therefore a substantial one and should be justified \u2013 it is not clear, either way, whether it is true or false.\n\n- The authors assume a spherical geometry for the flagellum. This is flawed. It is commented on in the SI and an alternative is given, but not used. I did not understand why an inappropriate and inaccurate approximation is used in the main text when the authors know this is an issue; no explanation seems to be present.\n\n- The calculation of the receptor term, N/[N + \u03c0a/s], is for a spherical flagellum only and arises from interactions between the effects of adjacent receptors. For a fixed volume, as assumed, the sphere has minimal surface area and thus receptor interaction is highest given they are assumed placed at random. Thus, using the correct geometry with a fixed volume will reduce this receptor interaction effect and yet it is fundamental to the paper. Hence the authors are over-estimating the influence of one of the primary features they are testing for \u2013 this seems fundamental and one of the reasons I am recommending reject.\n\n- s is the receptor effective radius not the chemoattractant radius (subsection \u201cSpecies-specific differences in chemoattractant-receptor binding rates\u201d).\n\nEquation (5):\n\n- This is also flawed. It is dimensionally incorrect as stated.\n\n- To within a scaling to fix dimensions, it is the one-dimensional solution. Either the two-dimensional or three-dimensional solution is required here (depending on the gap between the cover slips, which does not appear to be given \u2013 my one comment on the experiments \u2013 the geometry should be clearly stated). The use of the incorrect spatial dimension changes the gradient term in the SDR expression and thus has major downstream impact, explicitly affecting what the authors are testing. Again, this seems fundamental in testing the chemoreception model and thus is a further reason I am recommending reject.\n\n- Equation (5) does not respect the fact any solution without initial conditions imposed will satisfy invariance to shifts t -> t+q for any q and so cannot be correct (it needs t+t0 rather than t in the square root or t0 must be zero).\n\nEquation (S4). Appendix 1 subsection \u201c1.2. A condition for detecting a change in the chemoattractant concentration\u201d. The chemoreception model uses the circumference of the sperm's circular path (v\u2206t) rather than its diameter, yet the diameter governs the range of concentrations the cell experiences. Given the ratio of circumference to diameter is \u03c0 this constitutes a factor of \u03c0 in the definition of SNR and feeds through to the rest of the paper. For studying thresholds, a factor of three can be very important and this contributes to my overall decision.\n\nAppendix 1 subsection \u201c1.1. On the estimate of maximal chemoattractant absorption\u201d There are dimensional errors in the expression for the effective size of the binding site.\n\nThere are numerous points of presentation, only the more general are below as opposed to detailed minor points (e.g. no equation punctuation, use of \u2202 for increments\u2026 which I have not documented).\n\n- \"Caution needs to be taken with the interpretations of the agreement of our data with such a generic model for coupled phase oscillators\" \u2013 such a generic model does not pin down mechanism and an oscillator inheriting the frequency of its forcing does not seem unexpected, so I am also hesitant about what can be learnt from the interpretations. Similarly, for (over)statements in the manuscript e.g. \"that spermatozoa exposed to steeper gradients experience lower uncertainty (i.e. higher SNR) to determine the direction of the source of the chemoattractant\". Any theory with sensible monotonic relationships will show this trend so I am also not clear what is learnt from such observations. This is probably a point of presentation only, but I struggled on such points.\n\n- It is unclear sometimes what is model prediction as statements that are derived from the models are often not stated as such making it harder to follow.\n\n[Editors\u2019 note: The editors accepted the authors\u2019 plan for revisions asking for further expansion on certain points.]\n\n3.2) Given the conviction of the authors, this should just be a simple case of providing an evidence-based estimate of the Peclet number for sperm (not bacteria \u2013 these are much smaller and thus unreliable for inferring the correct physical scales) to demonstrate transport is diffusively dominated. Such a demonstration is required.\n\n3.3) Please evidence that is a legitimate approximation or use the expression for a cylinder. There is no demonstration that the difference between the two geometries does not change the presented results. Such evidence is required.\n\n3.4) Please provide explicit evidence for your claims such that the use of this expression \u2013 based on a spherical flagellum \u2013 does not impact on the theoretical predictions and subsequent experimental comparisons, predictions, conclusions etc.\n",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6aaa2c80-a93f-42c6-a213-398f149769d2",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C1",
+      "claim": "Spermatozoa of marine invertebrates are attracted to their conspecific female gamete by diffusive molecules called chemoattractants released from the egg investments in a process known as chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Spermatozoa of marine invertebrates are attracted to their conspecific female gamete by diffusive molecules, called chemoattractants, released from the egg investments in a process known as chemotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established concept in the field, supported by the manuscript's introduction and references to prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "6757a5a8-cc12-4ad0-bfdf-01a8134eb762",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C2",
+      "claim": "The information from the egg chemoattractant concentration field is decoded into intracellular Ca2+ concentration ([Ca2+]i) changes that regulate the internal motors that shape the flagellum as it beats.",
+      "claim_type": "EXPLICIT",
+      "source": "The information from the egg chemoattractant concentration field is decoded into intracellular Ca2+ concentration ([Ca2+]i) changes that regulate the internal motors that shape the flagellum as it beats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the manuscript's theoretical framework and experimental observations linking Ca2+ signaling to flagellar beating.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "96c8c7f5-e28e-4d1e-ba3e-ffd71b69246a",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C3",
+      "claim": "Receptor density constrains the steepness of the chemoattractant concentration gradient detectable by spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "By studying sea urchin species-specific differences in sperm chemoattractant-receptor characteristics we show that receptor density constrains the steepness of the chemoattractant concentration gradient detectable by spermatozoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by theoretical modeling and experimental data comparing different species with varying receptor densities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "33cac08f-fff9-4769-a183-c3b6b89b8c92",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C4",
+      "claim": "Strongylocentrotus purpuratus sperm are chemotactic.",
+      "claim_type": "EXPLICIT",
+      "source": "Through analyzing different chemoattractant gradient forms, we demonstrate for the first time that Strongylocentrotus purpuratus sperm are chemotactic and this response is consistent with frequency entrainment of two coupled physiological oscillators: i) the stimulus function and ii) the [Ca2+]i changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript, demonstrated through experiments with different gradient configurations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "17e51605-27ea-45b5-9207-f4fe647c4bf5",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C5",
+      "claim": "The chemotactic response of S. purpuratus sperm is consistent with frequency entrainment of two coupled physiological oscillators: the stimulus function and the [Ca2+]i changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Through analyzing different chemoattractant gradient forms, we demonstrate for the first time that Strongylocentrotus purpuratus sperm are chemotactic and this response is consistent with frequency entrainment of two coupled physiological oscillators: i) the stimulus function and ii) the [Ca2+]i changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by theoretical modeling and experimental data showing synchronization between stimulus and Ca2+ oscillations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "4b52f7fd-1158-43eb-b076-b6ebdc34cce4",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C6",
+      "claim": "The slope of the chemoattractant gradients provides the coupling force between both oscillators, arising as a fundamental requirement for sperm chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the slope of the chemoattractant gradients provides the coupling force between both oscillators, arising as a fundamental requirement for sperm chemotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a central conclusion of the manuscript, supported by theoretical modeling and experimental validation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "4f39b436-0898-4e12-9091-7e6baccd1b80",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C7",
+      "claim": "Broadcast spawning organisms release their gametes into open water where they are often subject to extensive dilution that reduces the probability of gamete encounter.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadcast spawning organisms, such as marine invertebrates, release their gametes into open water, where they are often subject to extensive dilution that reduces the probability of gamete encounter (Lotterhos et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lotterhos et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "d252ebd2-b90f-4af5-b96f-aceac7c7115a",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C8",
+      "claim": "In many marine organisms, female gametes release diffusible molecules that attract homologous spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "In many marine organisms, female gametes release diffusible molecules that attract homologous spermatozoa (Lillie, 1913; Miller, 1985; Suzuki, 1995), which detect and respond to chemoattractant concentration gradients by swimming toward the gradient source: the egg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to historical work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "014fa3b3-1dd5-4038-8836-60b45ed16e86",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C9",
+      "claim": "Sperm chemotaxis was first identified in bracken ferns.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it was in bracken ferns where sperm chemotaxis was first identified (Pfeffer, 1884), sea urchins are currently the best-characterized model system for studying sperm chemotaxis at a molecular level (Alvarez et al., 2012; Cook et al., 1994; Darszon et al., 2008; Str\u00fcnker et al., 2015; Wood et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pfeffer, 1884.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "eefb5d2e-7179-4729-991b-3205bb2bdd62",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C10",
+      "claim": "Sea urchins are currently the best-characterized model system for studying sperm chemotaxis at a molecular level.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it was in bracken ferns where sperm chemotaxis was first identified (Pfeffer, 1884), sea urchins are currently the best-characterized model system for studying sperm chemotaxis at a molecular level (Alvarez et al., 2012; Cook et al., 1994; Darszon et al., 2008; Str\u00fcnker et al., 2015; Wood et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to recent work on sea urchin sperm chemotaxis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "96828f8b-479b-407e-8c7c-4c84553dd8d0",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C11",
+      "claim": "The sea urchin egg is surrounded by an extracellular matrix which contains sperm-activating peptides (SAPs) that modulate sperm motility through altering intracellular Ca2+ concentration ([Ca2+]i) and other signaling intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "The sea urchin egg is surrounded by an extracellular matrix which contains sperm-activating peptides (SAPs) that modulate sperm motility through altering intracellular Ca2+ concentration ([Ca2+]i) and other signaling intermediates (Darszon et al., 2008; Suzuki, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Darszon et al., 2008 and Suzuki, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "5199f492-b808-4af5-aa1a-6ea840571287",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C12",
+      "claim": "The biochemical signals triggered by SAPs guide the sperm trajectory toward the egg.",
+      "claim_type": "EXPLICIT",
+      "source": "The biochemical signals triggered by SAPs guide the sperm trajectory toward the egg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the function of SAPs, supported by the broader context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "823d713a-cf21-4bab-a663-adb8badc3b39",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C13",
+      "claim": "The decapeptide speract is one of best characterized members of the SAP family due to its powerful stimulating effect on metabolism, permeability and motility in Strongylocentrotus purpuratus and Lytechinus pictus spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "The decapeptide speract is one of best characterized members of the SAP family due to its powerful stimulating effect on metabolism, permeability and motility in Strongylocentrotus purpuratus and Lytechinus pictus spermatozoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "8e6ec3e6-5baa-4c80-a86c-f2fe942111f9",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C14",
+      "claim": "The binding of speract to its receptor, located in the flagellar plasma membrane, triggers a train of [Ca2+]i increases in immobilized spermatozoa of both S. purpuratus and L. pictus species.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of speract to its receptor, located in the flagellar plasma membrane, triggers a train of [Ca2+]i increases in immobilized spermatozoa of both species (Wood et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wood et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "b652653f-b5a7-4ce4-91f6-a89cd3abfcc2",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C15",
+      "claim": "The calcium signal triggered by speract was proposed to regulate the activity of dynein motor proteins in the flagellum, and thus potentially modulate the trajectory of free-swimming spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "This calcium signal was proposed to regulate the activity of dynein motor proteins in the flagellum, and thus potentially modulate the trajectory of free-swimming spermatozoa (Brokaw, 1979; Mizuno et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Brokaw, 1979 and Mizuno et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "5f06103b-9bdc-4d37-8317-b51217f9b4e1",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C16",
+      "claim": "A direct link between [Ca2+]i signaling and sperm motility was established through the use of optochemical techniques to rapidly, and non-turbulently, expose swimming sea urchin spermatozoa to their conspecific attractant in a well-controlled experimental regime.",
+      "claim_type": "EXPLICIT",
+      "source": "A direct link between [Ca2+]i signaling and sperm motility was established through the use of optochemical techniques to rapidly, and non-turbulently, expose swimming sea urchin spermatozoa to their conspecific attractant in a well-controlled experimental regime (B\u00f6hmer et al., 2005; Wood et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to B\u00f6hmer et al., 2005 and Wood et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "fa5e550e-87ca-42b8-b173-22bea9c7302a",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C17",
+      "claim": "The transient [Ca2+]i increases triggered by chemoattractants produce a sequence of turns and straight swimming episodes (the 'turn-and-run' response), where each turning event results from a rapid increase in the [Ca2+]i.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, it is well established that the transient [Ca2+]i increases triggered by chemoattractants produce a sequence of turns and straight swimming episodes (the 'turn-and-run' response), where each turning event results from a rapid increase in the [Ca2+]i (Alvarez et al., 2012; B\u00f6hmer et al., 2005; Shiba et al., 2008; Wood et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to work establishing the turn-and-run response.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "14e55cda-1ea6-4f1e-82db-f7fa0ca253e7",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C18",
+      "claim": "The turn-and-run response seems to be a general requirement for sperm chemotaxis in sea urchins, however it is not sufficient on its own to produce a chemotactic response.",
+      "claim_type": "EXPLICIT",
+      "source": "The turn-and-run response seems to be a general requirement for sperm chemotaxis in sea urchins, however it is not sufficient on its own to produce a chemotactic response (Guerrero et al., 2010a; Str\u00fcnker et al., 2015; Wood et al., 2007; Wood et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations showing that turn-and-run is necessary but not sufficient for chemotaxis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "918ce52d-891d-4de5-992a-b890e69e3f71",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C19",
+      "claim": "Chemotaxis of S. purpuratus sperm in the presence of speract has not yet been demonstrated despite 30 years of research since speract's isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of 30 years of research since speract's isolation from S. purpuratus oocytes (Hansbrough and Garbers, 1981; Suzuki, 1995), chemotaxis of S. purpuratus sperm in the presence of this peptide has not yet been demonstrated (Cook et al., 1994; Darszon et al., 2008; Guerrero et al., 2010a; Kaupp, 2012; Miller, 1985; Wood et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations documenting the lack of observed chemotaxis in S. purpuratus.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "ec7ccfd1-cc74-4c4e-82fe-3a074ac07284",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C20",
+      "claim": "Only L. pictus spermatozoa exhibit chemotaxis under conditions where a specific chemoattractant concentration gradient is generated by photoactivating caged speract, while S. purpuratus spermatozoa do not.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison between individual L. pictus and S. purpuratus sperm responses to a specific chemoattractant concentration gradient generated by photoactivating caged speract (CS) revealed that only L. pictus spermatozoa exhibit chemotaxis under these conditions (Guerrero et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Guerrero et al., 2010a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "2788a243-f50c-46e3-bbe2-148852357834",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C21",
+      "claim": "L. pictus spermatozoa experience [Ca2+]i fluctuations and pronounced turns while swimming in descending speract gradients, resulting in spermatozoa reorienting their swimming behavior along the positive chemoattractant concentration gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In that study, L. pictus spermatozoa experience [Ca2+]i fluctuations and pronounced turns while swimming in descending speract gradients, that result in spermatozoa reorienting their swimming behavior along the positive chemoattractant concentration gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes findings from Guerrero et al., 2010a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "6d58e0af-6fde-4b68-b2b5-b0fca2177a1d",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C22",
+      "claim": "S. purpuratus spermatozoa experience similar trains of [Ca2+]i fluctuations that drive them to relocate, but with no preference toward the center of the chemoattractant gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, S. purpuratus spermatozoa experience similar trains of [Ca2+]i fluctuations that in turn drive them to relocate, but with no preference toward the center of the chemoattractant gradient (Guerrero et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes findings from Guerrero et al., 2010a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "050337c2-d61e-4b9a-8652-fc06470fa32e",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C23",
+      "claim": "The slope of the chemical concentration gradient works as a determinant factor in chemotaxis of chemotactic amoebas crawling up a gradient of cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies of chemotactic amoebas crawling up a gradient of cAMP, have shown that the slope of the chemical concentration gradient works as a determinant factor in chemotaxis of this species, where the signal-to-noise relationship of stimulus to the gradient detection mechanism imposes a limit for chemotaxis (Amselem et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Amselem et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "fe46f222-d6ad-4637-9541-4dd6239cb902",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C24",
+      "claim": "In marine invertebrates, sperm chemotaxis operates efficiently within a boundary defined by the signal-to-noise ratio of detecting ligands within a chemoattractant concentration gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent theoretical studies by Kromer and colleagues have shown that, in marine invertebrates, sperm chemotaxis operates efficiently within a boundary defined by the signal-to-noise ratio of detecting ligands within a chemoattractant concentration gradient (Kromer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kromer et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "1cf3b477-6b64-4f89-ab30-f8520cacd8b2",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C25",
+      "claim": "S. purpuratus spermatozoa only experience chemotaxis when exposed to much steeper speract concentration gradients than those previously employed by Guerrero et al. (2010a).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identify the boundaries for detecting chemotactic signals of S. purpuratus spermatozoa, and show that sperm chemotaxis arises only when sperm are exposed to much steeper speract concentration gradients than those previously employed by Guerrero et al. (2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "01281240-ca07-4fbb-95fe-619642702479",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C27",
+      "claim": "The quantity \u03c0a/s is the number of receptors that allows half maximal binding rate for any concentration of chemoattractant, denoted as N1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantity \u03c0a/s is the number of receptors that allows half maximal binding rate for any concentration of chemoattractant, which is hereafter denoted as N1/2 (see 1.1. On the estimate of maximal chemoattractant absorption in Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition derived from the theoretical model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "81aab78c-b94b-4bca-bc5b-aa3a35021b80",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C28",
+      "claim": "Only S. purpuratus spermatozoa operate in a regime for which the rate of chemoattractant uptake is limited by receptor density, therefore it cannot be considered as a perfect absorber.",
+      "claim_type": "EXPLICIT",
+      "source": "Our calculations (see Appendix 1, section 1.1. On the estimate of maximal chemoattractant absorption) indicate that only S. purpuratus spermatozoa operate in a regime for which the rate of chemoattractant uptake is limited by receptor density, therefore it cannot be considered as a perfect absorber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by calculations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "3ff74978-f61e-4a77-bb70-6cb0da68d9d5",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C29",
+      "claim": "The actual number of speract receptors for S. purpuratus is approximately 2\u00d710^4 per sperm cell which is fewer than the estimate of N1/2 ~ 3\u00d710^4.",
+      "claim_type": "EXPLICIT",
+      "source": "The actual number of speract receptors for this species is approximately 2\u00d7104 per sperm cell which is fewer than the estimate of N1/2 ~ 3\u00d7104 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "2ad92eb2-7f32-4ef0-a22a-0235c6e92bcf",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C30",
+      "claim": "L. pictus and A. punctulata spermatozoa seem to approximate toward operating as perfect absorbers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, L. pictus and A. punctulata spermatozoa seem to approximate toward operating as perfect absorbers (Figure 1\u2014figure supplement 1 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calculations and data shown in Figure 1\u2014figure supplement 1 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "fa8a136f-2786-4499-85f5-9f822382c116",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C31",
+      "claim": "There are meaningful species-specific differences in chemoattractant receptor density which could by themselves explain differences in chemotactic behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, there are meaningful species-specific differences in chemoattractant receptor density which could by themselves explain differences in chemotactic behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical modeling and data analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "1f6febaf-e7ff-434b-acde-f5cd1126fbbf",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C32",
+      "claim": "A functional chemotactic signaling system must remain unresponsive while the cell swims through an isotropic chemoattractant concentration field and must trigger a directional motility response if the cell moves across a concentration gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "A functional chemotactic signaling system must remain unresponsive while the cell swims through an isotropic chemoattractant concentration field and must trigger a directional motility response if the cell moves across a concentration gradient (Figure 1a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a fundamental principle of chemotaxis, supported by the theoretical framework.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "5272ad9f-2f13-44a0-bd6b-0714c3ba0520",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C35",
+      "claim": "The signal-to-noise ratio for gradient detection is SNR = v\u0394t^(3/2)(4\u03c0Dac\u2212(N/(N + \u03c0a/s)))^(1/2)\u03be > 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Noting that the left-hand side of the condition represents the chemotactic signal and the right-hand side is a measurement of the background noise, Equation (2) can be rewritten in terms of signal-to-noise ratio:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical equation derived from the chemoreception model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "a9b0d9e5-4e25-47ad-8c97-819d3a9a0f57",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C38",
+      "claim": "At low concentrations of chemoattractant (below 10^\u22128 M), stochastic fluctuations begin to mask the signal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at low concentrations of chemoattractant (below 10\u22128 M), keeping all other parameters equal, stochastic fluctuations begin to mask the signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling results shown in Figure 1d-f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "86916b6d-ea69-4d07-bf3a-9161720d242a",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C39",
+      "claim": "In the low-concentration regime, steeper chemoattractant gradients (\u03be > 10^\u22123 \u00b5m^\u22121) are dependably detected by spermatozoa, that is SNR > 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this low-concentration regime, the steepness of the chemoattractant concentration gradient is determinant for chemoattractant detection. Shallow gradients result in insufficient SNR, while steeper chemoattractant gradients (\u03be > 10\u22123 \u00b5m\u22121) are dependably detected by spermatozoa, that is SNR > 1 (Figure 1d-f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling results shown in Figure 1d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "0b9d3797-1250-42a0-a154-64109a39f671",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C40",
+      "claim": "A. punctulata spermatozoa are very sensitive to resact (presumably reacting to single molecules) due the high density of resact receptors (~3\u00d710^5 per cell), which allows them to sense this chemoattractant at low picomolar concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports show that A. punctulata spermatozoa are very sensitive to resact (presumably reacting to single molecules) due the high density of resact receptors (~3\u00d7105 per cell), which allows them to sense this chemoattractant at low picomolar concentrations (Kashikar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kashikar et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "a9a353eb-21b8-4767-b38d-1206943c8b7a",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C41",
+      "claim": "L. pictus and S. purpuratus spermatozoa bear lower densities of chemoattractants receptors, approximately 6.3\u00d710^4 and 2\u00d710^4 receptors/cell, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, L. pictus and S. purpuratus spermatozoa bear lower densities of chemoattractants receptors, approximately 6.3\u00d7104 and 2\u00d7104 receptors/cell, respectively (Nishigaki et al., 2001; Nishigaki and Darszon, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nishigaki et al., 2001 and Nishigaki and Darszon, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "085f9f96-2f3f-4b73-bfef-7667ed7fb7fb",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C42",
+      "claim": "The spermatozoa of A. punctulata are likely more sensitive to resact than those of either L. pictus or S. purpuratus species to the same mean concentration gradients of speract.",
+      "claim_type": "EXPLICIT",
+      "source": "According to these species-specific differences in chemoattractant receptor densities, Figure 1d\u2013f suggests that the spermatozoa of A. punctulata are likely more sensitive to resact, than those of either L. pictus or S. purpuratus species to the same mean concentration gradients of speract; with the spermatozoa of S. purpuratus being less sensitive than those of L. pictus species to equivalent speract gradients and mean concentrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the modeling results shown in Figure 1d-f.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "dc20bd68-6e7b-421b-8262-cdc68c05a2d8",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C43",
+      "claim": "S. purpuratus spermatozoa should only respond to the chemoattractants at higher mean speract concentrations and at steeper gradients than those that elicit chemotaxis in L. pictus spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the constraints on SNR imply that S. purpuratus spermatozoa should only respond to the chemoattractants at higher mean speract concentrations and at steeper gradients than those that elicit chemotaxis in L. pictus spermatozoa (compare Figure 1d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the theoretical model, supported by Figure 1d and e.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "bbc18e2d-5ce2-4745-8867-208a0178c864",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C44",
+      "claim": "The scaling factor SF = \u03be_purpuratus/\u03be_pictus = (v_pictus/v_purpuratus)(\u0394t_pictus/\u0394t_purpuratus)^(3/2)(Z_pictus/Z_purpuratus)^(1/2) ~ 3.",
+      "claim_type": "EXPLICIT",
+      "source": "We compute the ratio of the slopes of the speract concentration gradient experienced by either S. purpuratus or L. pictus spermatozoa, which represents a scaling factor (SF) in the gradient slope, expressed as:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical calculation based on the chemoreception model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "5ffb196a-b4de-4236-89ab-88d8d8564ae8",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C46",
+      "claim": "S. purpuratus spermatozoa may detect chemoattractant gradients in the 10^\u22129 M regime with sufficient certainty only if the slope of the chemoattractant concentration gradient is greater than 3\u00d710^\u22123 \u00b5m^\u22121 (i.e. steep concentration gradients).",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the chemoreception model suggests that S. purpuratus spermatozoa detect chemoattractant gradients with lower sensitivity than those of L. pictus. It also predicts that S. purpuratus spermatozoa may detect chemoattractant gradients in the 10\u22129 M regime with sufficient certainty only if the slope of the chemoattractant concentration gradient is greater than 3\u00d710\u22123 \u00b5m\u22121 (i.e. steep concentration gradients) (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the theoretical model, supported by Figure 1d.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "ae4906e3-350d-49c5-ad54-58aebc632c5f",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C47",
+      "claim": "The experimental setup generates determined speract concentration gradients by focusing a brief (200 ms) flash of UV light along an optical fiber, through the objective, and into a field of swimming S. purpuratus spermatozoa containing caged-speract (CS) at 10 nM in artificial sea water.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental setup is designed to generate determined speract concentration gradients by focusing a brief (200 ms) flash of UV light along an optical fiber, through the objective, and into a field of swimming S. purpuratus spermatozoa containing caged-speract (CS) at 10 nM in artificial sea water (Guerrero et al., 2010a; Tatsu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "0fd74a43-8222-4f05-a115-12cdbca98b95",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C48",
+      "claim": "The slope of the speract concentration gradient was varied by separately employing four optical fibers of distinct diameters, arranged into five different configurations (f1, f2, f3, f4, f5).",
+      "claim_type": "EXPLICIT",
+      "source": "To test experimentally whether S. purpuratus spermatozoa undergo chemotaxis, as predicted from the chemoreception model, we varied the slope of the speract concentration gradient by separately employing four optical fibers of distinct diameters, arranged into five different configurations (f1, f2, f3, f4, f5) (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design used to test the predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "73e40d63-1037-470e-a7dc-290bdc91a903",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C49",
+      "claim": "Each fiber configuration produces a characteristic pattern of UV illumination within the imaging field.",
+      "claim_type": "EXPLICIT",
+      "source": "Each configuration produces a characteristic pattern of UV illumination within the imaging field (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "ca32c333-7170-453c-a6a6-e6a230497772",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C50",
+      "claim": "The highest concentration of speract released through photo-liberation from CS is generated by the f5 fiber, followed by f4>f3>f2>f1.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining these UV irradiation patterns, the highest concentration of speract released through photo-liberation from CS is generated by the f5 fiber, followed by f4>f3>f2>f1 (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "1c7c69a5-162e-43f8-ac5d-80ce732d9091",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C51",
+      "claim": "The steepest UV irradiation gradients are those generated by the f2, f3 and f5 fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "The steepest UV irradiation gradients are those generated by the f2, f3 and f5 fibers (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "4b22735b-8173-4769-a7ca-971b15f8431a",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C52",
+      "claim": "Irrespective of the optical fiber used, the photo-activation of caged speract triggers the stereotypical Ca2+-dependent motility responses of S. purpuratus spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of the optical fiber used, the photo-activation of caged speract triggers the stereotypical Ca2+-dependent motility responses of S. purpuratus spermatozoa (Figure 2d, Video 1, Appendix 1\u2014video 1 and Appendix 1\u2014videos 4, 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2d and associated videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "bf1e0936-9994-4cb8-a604-23a9b164c310",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C53",
+      "claim": "S. purpuratus spermatozoa accumulate significantly toward the center of the speract gradients generated by the f2- and f3-fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, S. purpuratus spermatozoa accumulate significantly toward the center of the speract gradients generated by the f2- and f3-fibers (Figure 3b), which provide UV light profiles with steeper slopes compared to the f1 and f4 fibers (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3b and Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "a41b81ac-ad9c-4a1d-82c0-ad1735102118",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C54",
+      "claim": "The use of fibers f4 and f5 uncages higher concentrations of speract (by providing higher UV energies than other fibers), yet they do not trigger the maximum accumulation of S. purpuratus spermatozoa at the center of the chemoattractant field.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the use of fibers f4 and f5 uncages higher concentrations of speract (by providing higher UV energies than other fibers) (Figure 2a and Supplementary file 2), yet they do not trigger the maximum accumulation of S. purpuratus spermatozoa at the center of the chemoattractant field.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2a and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "1e037148-7103-434a-ac2f-ab52ba20bd3a",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C55",
+      "claim": "The speract fields created by fibers f2, f3 and f5 produce significantly positive CI values compared to other conditions (f1, f4 and negative controls), confirming that steeper speract concentration gradients trigger chemotactic responses in S. purpuratus spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "The speract fields created by fibers f2, f3 and f5 produce significantly positive CI values compared to other conditions (f1, f4 and negative controls), confirming that steeper speract concentration gradients trigger chemotactic responses in S. purpuratus spermatozoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "de54c6c6-21df-43e4-9605-6dea081ab1b1",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C56",
+      "claim": "The lack of chemotactic responses in S. purpuratus spermatozoa observed by Guerrero et al. (2010a) was reproduced through stimulation with f4, zero Ca2+, or High K+ experimental regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the lack of chemotactic responses in S. purpuratus spermatozoa observed by Guerrero et al. (2010a), was reproduced through stimulation with f4, zero Ca2+, or High K+ experimental regimes (a scrutiny of non-chemotactic cells is presented in Figure 4\u2014figure supplement 1 and section 2.7. Sperm swimming behavior in different chemoattractant gradients in Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1 and discussed in the Appendix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "c15b5e1a-c1a3-4ae0-a4c3-91de8ce6525b",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C57",
+      "claim": "The percentage of S. purpuratus spermatozoa experiencing relocation increases monotonically with the SNR.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with these results, we found that the percentage of S. purpuratus spermatozoa experiencing relocation increases monotonically with the SNR (Figure 4f), within the noise limits of 0.1 < SNR < 0.8, which is also in agreement with the findings of sperm chemotaxis operating optimally in the presence of noise (Amselem et al., 2012; Kromer et al., 2018; Lazova et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4f and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "355f7bd9-9e11-410c-b248-ae9f2f0ad4d3",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C59",
+      "claim": "The relative slope of the chemoattractant concentration gradients required for S. purpuratus chemotaxis is at least three times greater than that experienced when exposed to the f4-generated speract gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "This relative slope of the chemoattractant concentration gradients is at least three times greater than that experienced when exposed to the f4-generated speract gradient (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "5cd4c3a8-751b-4fa8-8108-2e9375db4f81",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C60",
+      "claim": "L. pictus spermatozoa undergo chemotaxis when exposed to the f4 speract gradient, which is 2\u20133 times smaller than that required by S. purpuratus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, L. pictus spermatozoa undergo chemotaxis when exposed to the f4 speract gradient, which is 2\u20133 times smaller than that required by S. purpuratus (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "38828649-d739-4ddd-9242-208a8f6b1555",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C61",
+      "claim": "These findings support the predicted scaling rule for the detection of the speract concentration gradient between L. pictus and S. purpuratus spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support the predicted scaling rule for the detection of the speract concentration gradient between L. pictus and S. purpuratus spermatozoa (Figure 6b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "2c399a13-c442-4565-bab4-54d80435d5ed",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C62",
+      "claim": "The slope of the speract concentration gradient regulates the coupling between the stimulus function and the internal Ca2+ oscillator triggered by speract.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the hypothesis that the slope of the speract concentration gradient regulates the coupling between the stimulus function and the internal Ca2+ oscillator triggered by speract, we made use of a generic model for coupled phase oscillators (Pikovsky et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is tested using a coupled oscillator model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "3689f0f1-39ab-4487-a0a9-9d6238f0f1fd",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C63",
+      "claim": "There is a minimum coupling strength necessary for the two oscillators to synchronize (\u03b3_min = \u0394\u03c9/2).",
+      "claim_type": "EXPLICIT",
+      "source": "There are two immediate predictions from the Adler model: first, there is a minimum coupling strength necessary for the two oscillators to synchronize (\u03b3min = \u0394\u03c9/2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the Adler model for coupled oscillators.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "b189dd44-b20b-4c9f-bb49-c18c66b1baf4",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C64",
+      "claim": "Within the synchronous region (i.e. \u03b3 > \u03b3_min), the phase difference between the oscillators is constant and follows the relation \u0278_sync = arcsin(\u0394\u03c9/2\u03b3).",
+      "claim_type": "EXPLICIT",
+      "source": "second, and within the synchronous region (i.e. \u03b3 > \u03b3min), the phase difference between the oscillators is constant and does not take any arbitrary value, but rather follows a simple relation to the coupling strength (\u0278sync = arcsin(\u0394\u03c9/2\u03b3)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the Adler model for coupled oscillators.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "a0f9e83d-bc3e-4967-9380-446c27ad4867",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C66",
+      "claim": "For cells for which synchronization occurs, the measured phase difference is constrained by the predicted functional form of \u0278_sync = \u0278_sync(\u0394\u03c9, \u03b3).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, and for cells for which synchronization occurs, the measured phase difference is constrained by the predicted functional form of \u0278sync = \u0278sync(\u0394\u03c9, \u03b3) as can be verified from the collated data shown in Figure 6e and f within the theoretical estimates (see also Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6e and f and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "2607177e-b788-4447-8f96-7d7210858291",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C67",
+      "claim": "The excellent agreement of the simple model of coupled phase oscillators with the data points to the slope of the speract concentration gradient as the driving force behind the observed synchronous oscillations and, as a result, for the chemotactic ability of sea urchin spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the excellent agreement of this simple model of coupled phase oscillators with our data, points to the slope of the speract concentration gradient as the driving force behind the observed synchronous oscillations and, as a result, for the chemotactic ability of sea urchin spermatozoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the agreement between the model and experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "e2a0bd1a-9ec8-486f-8a0d-c46a8c9923b7",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C68",
+      "claim": "Diffusing molecules bind to receptors as discrete packets arriving randomly over time with statistical fluctuations, imposing a limit on detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusing molecules bind to receptors as discrete packets arriving randomly over time with statistical fluctuations, imposing a limit on detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of molecular detection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "5842c868-e30b-4e7f-83b0-368b545da44a",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C69",
+      "claim": "There is a lower detection limit to determine the direction of the chemical gradient, which depends on the swimming speed of the sperm, the sampling time, and the steepness of the slope of the chemoattractant concentration gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is a lower detection limit to determine the direction of the chemical gradient, which depends on the swimming speed of the sperm, the sampling time, and as shown in this work, on the steepness of the slope of the chemoattractant concentration gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical and experimental work presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "ecc5b06d-e59c-4102-a0cb-ac44a32a994e",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C70",
+      "claim": "For almost three decades, chemotaxis had not been observed for the widely-studied S. purpuratus species under diverse experimental conditions, raising doubts about their chemotactic capabilities in response to the speract concentration gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "For almost three decades, chemotaxis had not been observed for the widely-studied S. purpuratus species under diverse experimental conditions, raising doubts about their chemotactic capabilities in response to the speract concentration gradients (Cook et al., 1994; reviewed in Guerrero et al. (2010a); Guerrero et al. (2010b); Solzin et al. (2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations documenting the lack of observed chemotaxis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "6ee745fd-6f24-453f-ae8a-29d99d0499eb",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C71",
+      "claim": "S. purpuratus spermatozoa can undergo chemotaxis, but only if the speract concentration gradients are sufficiently steep, as predicted by the chemoreception model.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that S. purpuratus spermatozoa can undergo chemotaxis, but only if the speract concentration gradients are sufficiently steep, as predicted by the chemoreception model (i.e. speract gradients that are at in the region of three times steeper than the speract concentration gradient that drives chemotaxis in L. pictus spermatozoa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript, supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "376c1a2a-3076-43b8-9f17-1642889bbd1b",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C72",
+      "claim": "The shallower speract gradients previously tested are unable to generate any chemotactic response in S. purpuratus spermatozoa, despite inducing characteristic 'turn and run' motility responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms and explains why the shallower speract gradients previously tested are unable to generate any chemotactic response in S. purpuratus spermatozoa (Guerrero et al., 2010a), despite inducing characteristic 'turn and run' motility responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with previous work by Guerrero et al., 2010a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "98aa5a66-d7eb-4264-896a-e8f10dce97ec",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C73",
+      "claim": "The guiding chemical gradient must have a minimum steepness to elicit sperm chemotaxis, where the signal-to-noise relationship (SNR) of stimulus to the gradient detection mechanism imposes a limit for the chemotactic efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that the guiding chemical gradient must have a minimum steepness to elicit sperm chemotaxis, where the signal-to-noise relationship (SNR) of stimulus to the gradient detection mechanism imposes a limit for the chemotactic efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental and theoretical work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "9ece946e-ad98-4d42-bb2b-6ec7e0cc077a",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C74",
+      "claim": "SNR can be tuned by the steepness of the chemical gradient, where higher SNR's are reached at steeper gradients, hence increasing the probabilities of locating the source of the gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that SNR can be tuned by the steepness of the chemical gradient, where higher SNR's are reached at steeper gradients, hence increasing the probabilities of locating the source of the gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical and experimental work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "cde4bc4c-3526-437d-bacc-1829fb03deb2",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C75",
+      "claim": "The large majority of marine spermatozoa characterized to date, together with many motile microorganisms, explore their environment via helical swimming paths, whereupon encountering a surface these helices collapse to circular trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "The large majority of marine spermatozoa characterized to date, together with many motile microorganisms, explore their environment via helical swimming paths, whereupon encountering a surface these helices collapse to circular trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known characteristic of sperm swimming behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "3e40e842-e112-4778-98ff-a40d2212fb89",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C76",
+      "claim": "The intrinsic periodicity of swimming behavior commonly results in the periodic sampling of the cell chemical environment with direct implications for their ability to accurately perform chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrinsic periodicity of either swimming behavior commonly results in the periodic sampling of the cell chemical environment with direct implications for their ability to accurately perform chemotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the swimming behavior and its implications for chemotaxis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "fe9dc02d-9f7f-471a-b1c7-d625de87c42c",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C77",
+      "claim": "The periodic sampling of chemoattractants by the sperm flagellum continuously feeds back to the signaling pathway governing the intracellular Ca2+ oscillator, hence providing a potential coupling mechanism for sperm chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "The periodic sampling of chemoattractants by the sperm flagellum continuously feeds back to the signaling pathway governing the intracellular Ca2+ oscillator, hence providing a potential coupling mechanism for sperm chemotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "6b7b878f-6e17-4a10-a7b7-9fe23d03ed43",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C78",
+      "claim": "Indirect evidence for the existence of a feedback loop operating between the stimulus function and the Ca2+ oscillator triggered by chemoattractants has been found in L. pictus, A. punctulata and Ciona intestinalis (ascidian) species, whose spermatozoa show robust chemotactic responses toward their conspecific chemoattractants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indirect evidence for the existence of a feedback loop operating between the stimulus function and the Ca2+ oscillator triggered by chemoattractants has been found in L. pictus, A. punctulata and Ciona intestinalis (ascidian) species, whose spermatozoa show robust chemotactic responses toward their conspecific chemoattractants (B\u00f6hmer et al., 2005; Guerrero et al., 2010a; Jikeli et al., 2015; Shiba et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "9f6635e4-4f31-469a-8630-1d1055d41c65",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C79",
+      "claim": "The steepness of the slope of the chemoattractant concentration gradient is a major determinant for sperm chemotaxis in S. purpuratus and might be an uncovered feature of sperm chemotaxis in general.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate further the molecular mechanism involved in sperm chemotaxis, we measured both the stimulus function and the triggered [Ca2+]i oscillations for up to one thousand S. purpuratus spermatozoa exposed to five distinctly-shaped speract concentration gradients. We demonstrate that the steepness of the slope of the chemoattractant concentration gradient is a major determinant for sperm chemotaxis in S. purpuratus and might be an uncovered feature of sperm chemotaxis in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the manuscript, supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "3d98b8f1-9749-4ed5-8944-2df9acf2e35a",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C80",
+      "claim": "A steep slope of the speract concentration gradient entrains the frequencies of the stimulus function and the internal Ca2+ oscillator triggered by the periodic sampling of a non-uniform speract concentration field.",
+      "claim_type": "EXPLICIT",
+      "source": "A steep slope of the speract concentration gradient entrains the frequencies of the stimulus function and the internal Ca2+ oscillator triggered by the periodic sampling of a non-uniform speract concentration field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript, supported by experimental data and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "650c950a-2177-4722-b764-18d91f76a4f8",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C81",
+      "claim": "The transition boundary of the coupling term (the slope of the speract concentration gradient) for the two oscillators to synchronize is very close to the boundary where S. purpuratus starts to experience chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the transition boundary of the coupling term (the slope of the speract concentration gradient) for the two oscillators to synchronize and found it to be very close to the boundary where S. purpuratus starts to experience chemotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "a8457fe8-63c9-47f8-86e6-8f2ebd6d8438",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C82",
+      "claim": "Within the chemotactic regime, frequency entrainment of the stimulus function and the internal Ca2+ oscillator of S. purpuratus spermatozoa seems to occur almost instantaneously, within the first three oscillatory steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that within the chemotactic regime, frequency entrainment of the stimulus function and the internal Ca2+ oscillator of S. purpuratus spermatozoa seems to occur almost instantaneously, within the first three oscillatory steps (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "dc330d69-7636-4d3d-9ce8-0e6381cd3f77",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C83",
+      "claim": "A near-instantaneous entrainment would confer obvious evolutionary advantage under the reproductively competitive conditions of synchronized spawning as undertaken by sea urchins.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether the proximity of the frequencies of both oscillators is sculped by the ecological niche where sperm chemotaxis occurs is an open question, however, a near-instantaneous entrainment would confer obvious evolutionary advantage under the reproductively competitive conditions of synchronized spawning as undertaken by sea urchins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the evolutionary implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "00198f1a-2da4-4d08-8366-4e89df95bf65",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C84",
+      "claim": "The turbulent environment where sea urchins reproduce directly impinges on the dispersion rates of small molecules such as speract, hence, imposing ecological limits that constrain permissive chemoattractant gradient topologies within different hydrodynamic regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "The turbulent environment where sea urchins reproduce directly impinges on the dispersion rates of small molecules such as speract, hence, imposing ecological limits that constrain permissive chemoattractant gradient topologies within different hydrodynamic regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the ecological context of sperm chemotaxis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "bf1f1a55-8f55-4425-bd60-b2968728a9e9",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C85",
+      "claim": "The reproductive success of L. pictus, S. purpuratus and abalone species has been shown to peak at defined hydrodynamic shearing values.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the reproductive success of L. pictus, S. purpuratus and abalone species has been shown to peak at defined hydrodynamic shearing values (Hussain et al., 2017; Mead and Denny, 1995; Riffell and Zimmer, 2007; Zimmer and Riffell, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "b1ae08a0-263f-459d-acb0-fbcdd8658175",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C86",
+      "claim": "The correct scale to consider when discussing the small-scale distribution of chemicals in the ocean is the Batchelor scale, l_B = (\u03b7D^2/\u03b6)^(1/4), where \u03b7 is kinematic viscosity, D the diffusion coefficient and \u03b6 is the turbulent dissipation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The correct scale to consider when discussing the small-scale distribution of chemicals in the ocean is the Batchelor scale, lB = (\u03b7D2/\u03b6)1/4, where \u03b7 is kinematic viscosity, D the diffusion coefficient and \u03b6 is the turbulent dissipation rate (Aref et al., 2017; Batchelor et al., 1959).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established concept in fluid dynamics, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "5418b16e-491c-4cbf-83fa-94d93be5eb54",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C87",
+      "claim": "Turbulence stirs dissolved chemicals in the ocean, stretching and folding them into sheets and filaments at spatial dimensions down to the Batchelor scale: below l_B molecular diffusion dominates and chemical gradients are smoothened out.",
+      "claim_type": "EXPLICIT",
+      "source": "Turbulence stirs dissolved chemicals in the ocean, stretching and folding them into sheets and filaments at spatial dimensions down to the Batchelor scale: below lB molecular diffusion dominates and chemical gradients are smoothened out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established concept in fluid dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "e5c59b7c-4247-415c-ac71-58a1befcbcf0",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C88",
+      "claim": "S. purpuratus is primarily found in the low intertidal zone in a habitat with strong wave action and areas with shaking aerated water.",
+      "claim_type": "EXPLICIT",
+      "source": "S. purpuratus is primarily found in the low intertidal zone. The purple sea urchin lives in a habitat with strong wave action and areas with shaking aerated water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the ecological habitat of S. purpuratus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "488e0327-b918-4a99-b0af-a5d9531bdcd7",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C89",
+      "claim": "The more energetic zones inhabited by S. purpuratus, including tidal channels and breaking waves, generate relatively high levels of turbulence (\u03b6 ~10^\u22124 m^2s^\u22123) which lead to somewhat small values of l_B and, hence, to steep gradients (i.e. 1/l_B).",
+      "claim_type": "EXPLICIT",
+      "source": "These more energetic zones, including tidal channels and breaking waves, generate relatively high levels of turbulence (\u03b6 ~10\u22124 m2s\u22123) which lead to somewhat small values of lB and, hence, to steep gradients (i.e. 1/lB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the ecological habitat and fluid dynamics principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "602b25b4-b541-4742-85f3-d3860a046a8c",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C90",
+      "claim": "L. pictus is mostly found at the edge of or inside kelp beds, well below the low tide mark where the levels of turbulence are much more moderate (\u03b6 ~10^\u22126 m^2s^\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "L. pictus, on the contrary, is mostly found at the edge of or inside kelp beds, well below the low tide mark where the levels of turbulence are much more moderate (\u03b6 ~10\u22126 m2s\u22123) (Jimenez, 1997; Thorpe, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the ecological habitat of L. pictus, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "da04fd47-b8f0-4b41-a0d7-0dcbbb3e92b2",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C91",
+      "claim": "The ratio of l_B for the different habitats scales as l_B_purpuratus/l_B_pictus ~ (\u03b6_pictus/\u03b6_purpuratus)^(1/4) ~ 3, which fits considerably well with the relative sensitivity to speract of the two species.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of lB for the different habitats scales as lBpurpuratus/lBpictus ~ (\u03b6pictus/\u03b6purpuratus)1/4 ~ 3, which fits considerably well with the relative sensitivity to speract of the two species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the ecological habitats and fluid dynamics principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "d13f4213-b82a-4284-9559-1f371be828fc",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C92",
+      "claim": "S. purpuratus spermatozoa experience chemotaxis toward steeper speract gradients than those that guide L. pictus spermatozoa, which is compatible with the distinct chemoattractant gradients they might naturally encounter during their journey in search of an egg.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we have shown that S. purpuratus spermatozoa experience chemotaxis toward steeper speract gradients than those that guide L. pictus spermatozoa, which is also compatible with the distinct chemoattractant gradients they might naturally encounter during their journey in search of an egg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion that connects the experimental findings to the ecological context.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "64ca62f4-b530-40d4-9031-6b0887e778f5",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C93",
+      "claim": "The diffusion coefficient of resact has been reported as D_resact = 239 \u00b1 7 \u00b5m^2 s^\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the diffusion coefficient of a similar chemoattractant molecule, resact (with fourteen amino acids), has been reported, Dresact = 239 \u00b1 7 \u00b5m2 s\u22121 (Kashikar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kashikar et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "48b5d0f7-3574-4621-884c-449ce0ca2080",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "claim_id": "C94",
+      "claim": "The spatio-temporal dynamics of the distinct instantaneously generated speract gradients was modeled considering a speract diffusion coefficient of D_speract = 240 \u00b5m^2 s^\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "For the sake of simplicity, the spatio-temporal dynamics of the distinct instantaneously generated speract gradients was modeled considering a speract diffusion coefficient of Dsperact = 240 \u00b5m2 s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice for the modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a2b64080-37c3-4183-9aa2-6079ae39bd56",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context of sperm chemotaxis in marine invertebrates, particularly sea urchins, where chemoattractants released from eggs guide sperm through Ca2+-dependent signaling that modulates flagellar beating and produces turn-and-run motility responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 provide well-established background knowledge supported by appropriate citations to prior work. These claims describe the general phenomenon of sperm chemotaxis, the role of Ca2+ signaling, and the turn-and-run response, all of which are foundational to the study and properly referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "03b02df3-10ee-4a51-a87f-e444d7451794",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Receptor density constrains gradient detection in S. purpuratus spermatozoa. S. purpuratus operates below the perfect absorber regime with ~2\u00d710^4 receptors per cell (fewer than N1/2 ~ 3\u00d710^4), while L. pictus and A. punctulata approximate perfect absorbers with higher receptor densities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C27-C31 present theoretical calculations and species comparisons showing that S. purpuratus has insufficient receptor density to operate as a perfect absorber. The calculations are based on established biophysical principles (Berg and Purcell model) and supported by data in Supplementary file 1 and Figure 1\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "848f2535-86e8-4899-ad43-21a338c0a597",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A chemoreception model predicts that S. purpuratus requires steeper gradients (\u03be > 3\u00d710^-3 \u00b5m^-1) than L. pictus for reliable chemotaxis, with a scaling factor of ~3 between species based on differences in receptor density, swimming parameters, and signal-to-noise ratio requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C46 present a coherent theoretical framework predicting species-specific differences in gradient detection. The model is mathematically sound, incorporates appropriate biophysical parameters, and makes testable predictions. The SNR calculations and scaling factor derivation follow logically from the chemoreception model, though experimental validation is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "9613f713-fc7a-48ff-b15c-e5861d1bc3fe",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior work documented that S. purpuratus spermatozoa failed to show chemotaxis under conditions where L. pictus spermatozoa exhibited robust chemotactic responses, despite both species showing Ca2+ oscillations and turn-and-run behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 and C70 accurately summarize prior experimental findings from Guerrero et al. (2010a) and other cited work, establishing the historical context and the puzzle that motivated this study. The citations appropriately support these claims about the lack of observed S. purpuratus chemotaxis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "bb34bb9b-214d-4b97-94af-49a881be36de",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "S. purpuratus spermatozoa exhibit chemotaxis for the first time when exposed to sufficiently steep speract gradients (f2, f3 configurations), approximately 3 times steeper than those that elicit chemotaxis in L. pictus, as predicted by the chemoreception model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25, C47-C54, C71-C72 present the primary experimental finding demonstrating S. purpuratus chemotaxis. The experimental design using different optical fiber configurations to vary gradient steepness is sound, and the accumulation data (Figure 3b) clearly shows significant sperm accumulation for f2 and f3 gradients. The result confirms theoretical predictions and explains prior negative results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "9d9de458-8531-421e-805f-34a3f0ce3520",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Chemotactic index analysis confirms that f2, f3, and f5 gradients produce significantly positive chemotaxis in S. purpuratus, while f4 and negative controls do not. The percentage of responding cells increases monotonically with SNR in the range 0.1 < SNR < 0.8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C73-C74 provide quantitative validation of chemotaxis using the chemotactic index metric. The CI analysis (Figure 4d) shows statistically significant positive chemotaxis for steeper gradients, and the relationship between responding cells and SNR (Figure 4f) supports the theoretical framework. The reproduction of prior negative results with f4 strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "8472e2c1-acc7-426c-8942-656a15736a81",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The maximum relative slope required for S. purpuratus chemotaxis is at least 3 times greater than for L. pictus (which undergoes chemotaxis with f4 gradients), supporting the predicted scaling rule between species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 provide direct experimental validation of the theoretical scaling factor prediction. The comparison between S. purpuratus and L. pictus responses to different gradient configurations (Figure 6b) quantitatively confirms the ~3-fold difference in gradient steepness requirements predicted by the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "bea60976-c9c4-42e9-ab71-26cd0daed16e",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The chemotactic response is consistent with frequency entrainment of two coupled oscillators (stimulus function and Ca2+ oscillator), where the slope of the chemoattractant gradient provides the coupling force. The transition boundary for synchronization closely matches the boundary for chemotaxis onset, with entrainment occurring within the first three oscillatory steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C62-C67, C79-C82 present a mechanistic model for chemotaxis based on coupled oscillators. The Adler model predictions for minimum coupling strength and phase relationships match experimental data (Figure 6d-f). The agreement between theoretical predictions and measured phase differences supports the conclusion that gradient slope drives oscillator coupling. However, the analysis is based on relatively few oscillatory cycles (<10 steps).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "67c4afe1-3a64-4e82-bbe0-b74700e3fef8",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sperm chemotaxis operates through periodic sampling of the chemical environment during helical/circular swimming, with detection limits determined by stochastic binding fluctuations, swimming speed, sampling time, and gradient steepness. Periodic sampling provides a coupling mechanism between stimulus and Ca2+ oscillator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C75-C78 describe the mechanistic basis for chemotaxis through periodic sampling. These claims integrate fundamental principles of molecular detection with the observed swimming behavior and are supported by both theoretical considerations and citations to prior work showing feedback between stimulus and Ca2+ oscillations in other species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "c22990f8-357f-44d4-bfbd-302348aa5fe9",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work in other systems (chemotactic amoebas and theoretical studies) established that gradient steepness and signal-to-noise ratio impose limits on chemotaxis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 appropriately cite prior work (Amselem et al. 2012, Kromer et al. 2018) establishing that gradient steepness and SNR are determinants of chemotaxis in other systems, providing context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "9b86716a-bf13-41bb-9b9d-ee29105da792",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The differential gradient requirements between S. purpuratus and L. pictus may reflect adaptation to their distinct ecological niches, where turbulence levels differ by ~100-fold, creating steeper gradients in S. purpuratus habitat (high intertidal, strong wave action) versus L. pictus habitat (kelp beds, moderate turbulence). The Batchelor scale ratio (~3) matches the observed sensitivity difference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C92 present an ecological interpretation connecting gradient requirements to habitat turbulence. While the Batchelor scale calculations are sound and the habitat descriptions are supported by citations, this remains speculative. The agreement between turbulence-based predictions and observed sensitivity differences is intriguing but does not constitute proof of evolutionary adaptation. The authors appropriately frame this as speculation ('open question', 'might').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    },
+    {
+      "id": "a4364965-3607-4cdc-b820-03db85e71cde",
+      "content_id": "6836ef50-3965-41a0-9949-0512c6daf7db",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The speract diffusion coefficient was modeled as 240 \u00b5m^2 s^-1 based on the reported diffusion coefficient of the similar peptide resact (239 \u00b1 7 \u00b5m^2 s^-1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 describe a reasonable methodological choice for modeling. The diffusion coefficient is based on measurements of a similar peptide (resact) from Kashikar et al. 2012, with appropriate justification for the approximation based on molecular weight differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:54.340416Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6aaa2c80-a93f-42c6-a213-398f149769d2",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "6757a5a8-cc12-4ad0-bfdf-01a8134eb762",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "4f39b436-0898-4e12-9091-7e6baccd1b80",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "d252ebd2-b90f-4af5-b96f-aceac7c7115a",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "014fa3b3-1dd5-4038-8836-60b45ed16e86",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "eefb5d2e-7179-4729-991b-3205bb2bdd62",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "96828f8b-479b-407e-8c7c-4c84553dd8d0",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "5199f492-b808-4af5-aa1a-6ea840571287",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "823d713a-cf21-4bab-a663-adb8badc3b39",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "8e6ec3e6-5baa-4c80-a86c-f2fe942111f9",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "b652653f-b5a7-4ce4-91f6-a89cd3abfcc2",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "5f06103b-9bdc-4d37-8317-b51217f9b4e1",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "fa5e550e-87ca-42b8-b173-22bea9c7302a",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "14e55cda-1ea6-4f1e-82db-f7fa0ca253e7",
+      "result_id": "a2b64080-37c3-4183-9aa2-6079ae39bd56"
+    },
+    {
+      "claim_id": "96c8c7f5-e28e-4d1e-ba3e-ffd71b69246a",
+      "result_id": "03b02df3-10ee-4a51-a87f-e444d7451794"
+    },
+    {
+      "claim_id": "01281240-ca07-4fbb-95fe-619642702479",
+      "result_id": "03b02df3-10ee-4a51-a87f-e444d7451794"
+    },
+    {
+      "claim_id": "81aab78c-b94b-4bca-bc5b-aa3a35021b80",
+      "result_id": "03b02df3-10ee-4a51-a87f-e444d7451794"
+    },
+    {
+      "claim_id": "3ff74978-f61e-4a77-bb70-6cb0da68d9d5",
+      "result_id": "03b02df3-10ee-4a51-a87f-e444d7451794"
+    },
+    {
+      "claim_id": "2ad92eb2-7f32-4ef0-a22a-0235c6e92bcf",
+      "result_id": "03b02df3-10ee-4a51-a87f-e444d7451794"
+    },
+    {
+      "claim_id": "fa8a136f-2786-4499-85f5-9f822382c116",
+      "result_id": "03b02df3-10ee-4a51-a87f-e444d7451794"
+    },
+    {
+      "claim_id": "1f6febaf-e7ff-434b-acde-f5cd1126fbbf",
+      "result_id": "848f2535-86e8-4899-ad43-21a338c0a597"
+    },
+    {
+      "claim_id": "5272ad9f-2f13-44a0-bd6b-0714c3ba0520",
+      "result_id": "848f2535-86e8-4899-ad43-21a338c0a597"
+    },
+    {
+      "claim_id": "a9b0d9e5-4e25-47ad-8c97-819d3a9a0f57",
+      "result_id": "848f2535-86e8-4899-ad43-21a338c0a597"
+    },
+    {
+      "claim_id": "86916b6d-ea69-4d07-bf3a-9161720d242a",
+      "result_id": "848f2535-86e8-4899-ad43-21a338c0a597"
+    },
+    {
+      "claim_id": "0b9d3797-1250-42a0-a154-64109a39f671",
+      "result_id": "848f2535-86e8-4899-ad43-21a338c0a597"
+    },
+    {
+      "claim_id": "a9a353eb-21b8-4767-b38d-1206943c8b7a",
+      "result_id": "848f2535-86e8-4899-ad43-21a338c0a597"
+    },
+    {
+      "claim_id": "085f9f96-2f3f-4b73-bfef-7667ed7fb7fb",
+      "result_id": "848f2535-86e8-4899-ad43-21a338c0a597"
+    },
+    {
+      "claim_id": "dc20bd68-6e7b-421b-8262-cdc68c05a2d8",
+      "result_id": "848f2535-86e8-4899-ad43-21a338c0a597"
+    },
+    {
+      "claim_id": "bbc18e2d-5ce2-4745-8867-208a0178c864",
+      "result_id": "848f2535-86e8-4899-ad43-21a338c0a597"
+    },
+    {
+      "claim_id": "5ffb196a-b4de-4236-89ab-88d8d8564ae8",
+      "result_id": "848f2535-86e8-4899-ad43-21a338c0a597"
+    },
+    {
+      "claim_id": "918ce52d-891d-4de5-992a-b890e69e3f71",
+      "result_id": "9613f713-fc7a-48ff-b15c-e5861d1bc3fe"
+    },
+    {
+      "claim_id": "ec7ccfd1-cc74-4c4e-82fe-3a074ac07284",
+      "result_id": "9613f713-fc7a-48ff-b15c-e5861d1bc3fe"
+    },
+    {
+      "claim_id": "2788a243-f50c-46e3-bbe2-148852357834",
+      "result_id": "9613f713-fc7a-48ff-b15c-e5861d1bc3fe"
+    },
+    {
+      "claim_id": "6d58e0af-6fde-4b68-b2b5-b0fca2177a1d",
+      "result_id": "9613f713-fc7a-48ff-b15c-e5861d1bc3fe"
+    },
+    {
+      "claim_id": "ecc5b06d-e59c-4102-a0cb-ac44a32a994e",
+      "result_id": "9613f713-fc7a-48ff-b15c-e5861d1bc3fe"
+    },
+    {
+      "claim_id": "33cac08f-fff9-4769-a183-c3b6b89b8c92",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "1cf3b477-6b64-4f89-ab30-f8520cacd8b2",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "ae4906e3-350d-49c5-ad54-58aebc632c5f",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "0fd74a43-8222-4f05-a115-12cdbca98b95",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "73e40d63-1037-470e-a7dc-290bdc91a903",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "ca32c333-7170-453c-a6a6-e6a230497772",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "1c7c69a5-162e-43f8-ac5d-80ce732d9091",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "4b22735b-8173-4769-a7ca-971b15f8431a",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "bf1e0936-9994-4cb8-a604-23a9b164c310",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "a41b81ac-ad9c-4a1d-82c0-ad1735102118",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "6ee745fd-6f24-453f-ae8a-29d99d0499eb",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "376c1a2a-3076-43b8-9f17-1642889bbd1b",
+      "result_id": "bb34bb9b-214d-4b97-94af-49a881be36de"
+    },
+    {
+      "claim_id": "1e037148-7103-434a-ac2f-ab52ba20bd3a",
+      "result_id": "9d9de458-8531-421e-805f-34a3f0ce3520"
+    },
+    {
+      "claim_id": "de54c6c6-21df-43e4-9605-6dea081ab1b1",
+      "result_id": "9d9de458-8531-421e-805f-34a3f0ce3520"
+    },
+    {
+      "claim_id": "c15b5e1a-c1a3-4ae0-a4c3-91de8ce6525b",
+      "result_id": "9d9de458-8531-421e-805f-34a3f0ce3520"
+    },
+    {
+      "claim_id": "98aa5a66-d7eb-4264-896a-e8f10dce97ec",
+      "result_id": "9d9de458-8531-421e-805f-34a3f0ce3520"
+    },
+    {
+      "claim_id": "9ece946e-ad98-4d42-bb2b-6ec7e0cc077a",
+      "result_id": "9d9de458-8531-421e-805f-34a3f0ce3520"
+    },
+    {
+      "claim_id": "355f7bd9-9e11-410c-b248-ae9f2f0ad4d3",
+      "result_id": "8472e2c1-acc7-426c-8942-656a15736a81"
+    },
+    {
+      "claim_id": "5cd4c3a8-751b-4fa8-8108-2e9375db4f81",
+      "result_id": "8472e2c1-acc7-426c-8942-656a15736a81"
+    },
+    {
+      "claim_id": "38828649-d739-4ddd-9242-208a8f6b1555",
+      "result_id": "8472e2c1-acc7-426c-8942-656a15736a81"
+    },
+    {
+      "claim_id": "17e51605-27ea-45b5-9207-f4fe647c4bf5",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "4b52f7fd-1158-43eb-b076-b6ebdc34cce4",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "2c399a13-c442-4565-bab4-54d80435d5ed",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "3689f0f1-39ab-4487-a0a9-9d6238f0f1fd",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "b189dd44-b20b-4c9f-bb49-c18c66b1baf4",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "a0f9e83d-bc3e-4967-9380-446c27ad4867",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "2607177e-b788-4447-8f96-7d7210858291",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "9f6635e4-4f31-469a-8630-1d1055d41c65",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "3d98b8f1-9749-4ed5-8944-2df9acf2e35a",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "650c950a-2177-4722-b764-18d91f76a4f8",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "a8457fe8-63c9-47f8-86e6-8f2ebd6d8438",
+      "result_id": "bea60976-c9c4-42e9-ab71-26cd0daed16e"
+    },
+    {
+      "claim_id": "e2a0bd1a-9ec8-486f-8a0d-c46a8c9923b7",
+      "result_id": "67c4afe1-3a64-4e82-bbe0-b74700e3fef8"
+    },
+    {
+      "claim_id": "5842c868-e30b-4e7f-83b0-368b545da44a",
+      "result_id": "67c4afe1-3a64-4e82-bbe0-b74700e3fef8"
+    },
+    {
+      "claim_id": "cde4bc4c-3526-437d-bacc-1829fb03deb2",
+      "result_id": "67c4afe1-3a64-4e82-bbe0-b74700e3fef8"
+    },
+    {
+      "claim_id": "3e40e842-e112-4778-98ff-a40d2212fb89",
+      "result_id": "67c4afe1-3a64-4e82-bbe0-b74700e3fef8"
+    },
+    {
+      "claim_id": "fe9dc02d-9f7f-471a-b1c7-d625de87c42c",
+      "result_id": "67c4afe1-3a64-4e82-bbe0-b74700e3fef8"
+    },
+    {
+      "claim_id": "6b7b878f-6e17-4a10-a7b7-9fe23d03ed43",
+      "result_id": "67c4afe1-3a64-4e82-bbe0-b74700e3fef8"
+    },
+    {
+      "claim_id": "050337c2-d61e-4b9a-8652-fc06470fa32e",
+      "result_id": "c22990f8-357f-44d4-bfbd-302348aa5fe9"
+    },
+    {
+      "claim_id": "fe46f222-d6ad-4637-9541-4dd6239cb902",
+      "result_id": "c22990f8-357f-44d4-bfbd-302348aa5fe9"
+    },
+    {
+      "claim_id": "dc330d69-7636-4d3d-9ce8-0e6381cd3f77",
+      "result_id": "9b86716a-bf13-41bb-9b9d-ee29105da792"
+    },
+    {
+      "claim_id": "00198f1a-2da4-4d08-8366-4e89df95bf65",
+      "result_id": "9b86716a-bf13-41bb-9b9d-ee29105da792"
+    },
+    {
+      "claim_id": "bf1f1a55-8f55-4425-bd60-b2968728a9e9",
+      "result_id": "9b86716a-bf13-41bb-9b9d-ee29105da792"
+    },
+    {
+      "claim_id": "b1ae08a0-263f-459d-acb0-fbcdd8658175",
+      "result_id": "9b86716a-bf13-41bb-9b9d-ee29105da792"
+    },
+    {
+      "claim_id": "5418b16e-491c-4cbf-83fa-94d93be5eb54",
+      "result_id": "9b86716a-bf13-41bb-9b9d-ee29105da792"
+    },
+    {
+      "claim_id": "e5c59b7c-4247-415c-ac71-58a1befcbcf0",
+      "result_id": "9b86716a-bf13-41bb-9b9d-ee29105da792"
+    },
+    {
+      "claim_id": "488e0327-b918-4a99-b0af-a5d9531bdcd7",
+      "result_id": "9b86716a-bf13-41bb-9b9d-ee29105da792"
+    },
+    {
+      "claim_id": "602b25b4-b541-4742-85f3-d3860a046a8c",
+      "result_id": "9b86716a-bf13-41bb-9b9d-ee29105da792"
+    },
+    {
+      "claim_id": "da04fd47-b8f0-4b41-a0d7-0dcbbb3e92b2",
+      "result_id": "9b86716a-bf13-41bb-9b9d-ee29105da792"
+    },
+    {
+      "claim_id": "d13f4213-b82a-4284-9559-1f371be828fc",
+      "result_id": "9b86716a-bf13-41bb-9b9d-ee29105da792"
+    },
+    {
+      "claim_id": "64ca62f4-b530-40d4-9031-6b0887e778f5",
+      "result_id": "a4364965-3607-4cdc-b820-03db85e71cde"
+    },
+    {
+      "claim_id": "48b5d0f7-3574-4621-884c-449ce0ca2080",
+      "result_id": "a4364965-3607-4cdc-b820-03db85e71cde"
+    }
+  ],
+  "comparisons": []
+}

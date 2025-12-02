@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C88"
+    ],
+    "result": "PlantSeg is a two-step pipeline for volumetric segmentation of plant tissues into cells. The first step employs a convolutional neural network (CNN) to predict cell boundaries from microscopy images. The second step uses graph partitioning on a region adjacency graph constructed from the boundary predictions to segment individual cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C17-C18, and C88 consistently describe the core methodology of PlantSeg across abstract, introduction, and discussion sections. The two-step approach (CNN boundary prediction followed by graph partitioning) is explicitly stated and forms the foundation of the method. This is a clear description of the pipeline architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "PlantSeg was trained on two core datasets: (1) 48 confocal microscopy stacks of fixed Arabidopsis thaliana ovules at various developmental stages (voxel size 0.075\u00d70.075\u00d70.235 \u03bcm), and (2) 27 time points from three light sheet microscopy videos of developing Arabidopsis thaliana lateral root primordia (voxel size 0.1625\u00d70.1625\u00d70.250 \u03bcm), both with hand-curated ground truth segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C20, and C28-C35 provide detailed, consistent descriptions of the training datasets including imaging modalities, sample types, voxel sizes, and dataset sizes. The information is explicitly stated with specific quantitative details that are internally consistent across multiple sections of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The light sheet microscopy dataset has lower image quality than the confocal dataset, as measured by PSNR (22.5\u00b16.5 dB vs 25.9\u00b15.7 dB) and SSIM (0.53\u00b10.12 vs 0.63\u00b10.13). LSFM images are noisier and more difficult to segment due to both higher noise levels and nuclear labels appearing in the same channel as membrane staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 provide quantitative image quality metrics (PSNR and SSIM) with specific values and standard deviations. The comparison between datasets is explicit and the interpretation that LSFM images are noisier is supported by the quantitative measurements. The additional challenge from nuclear signal overlap is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "U-Net was selected as the base architecture and compared with Residual U-Net. Different loss functions (BCE, Dice, BCE-Dice), normalization layers, and patch sizes were tested. BCE-Dice loss generalized well across datasets. Residual U-Net performed best on LRP data while standard U-Net was better for ovules. Larger patch sizes did not improve performance over smaller patches due to the regularity of cell shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C44-C45, C47-C50 describe a systematic experimental comparison of network architectures and training procedures. The findings are supported by precision-recall curves (Figure 2) and are internally consistent. The data splits are clearly specified, and the conclusions about architecture performance are explicitly stated with figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Four graph partitioning strategies were tested for cell segmentation: Multicut, GASP, Mutex watershed, and DT watershed. GASP, Multicut, and Mutex watershed consistently produced accurate segmentation with low ARand errors and low merge/split rates on both datasets. DT watershed tended to over-segment with higher split errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe the graph partitioning methodology and comparative results. The findings are supported by quantitative metrics (ARand, VOImerge, VOIsplit) presented in Figure 3A-C and Appendix 5-table 2. The performance differences between methods are clearly stated and supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Qualitative assessment by expert biologists found PlantSeg segmentation quality very satisfactory on both datasets. The network correctly detected boundaries even when masked by nuclear signal (LRP) and detected weak boundaries where human experts failed (ovules). The main error mode in LRP was failure to detect boundaries adjacent to nuclei where the network removed nuclear signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide qualitative assessment with specific examples referenced to Figure 3D-E. The evaluation by domain experts adds credibility, and specific success and failure modes are identified with visual evidence. The error analysis is honest and specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PlantSeg was tested on external datasets without retraining: the Arabidopsis 3D Digital Tissue Atlas (8 organs) and developing Arabidopsis leaves. PlantSeg performed well qualitatively on all organs, correctly segmenting cell shapes not present in training data. Quantitatively, default parameters achieved performance on par with training datasets for some organs (anther, leaf, root), while parameter tuning improved segmentation by a factor of two (ARand error) for other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 describe generalization testing with specific datasets, qualitative results (Figure 4-5), and quantitative metrics (Table 1). The performance with default vs. tuned parameters is clearly documented. The acknowledgment that some tissues had lower performance with default parameters and the quantification of improvement with tuning demonstrates thorough evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C91",
+      "C92"
+    ],
+    "result": "PlantSeg was competitive on the Drosophila wing disc benchmark without training on benchmark data, using only ovule pre-trained models. Performance was close to benchmark leaders, and additional training on challenge data further narrowed the gap. PlantSeg was also faster than state-of-the-art methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C91-C92 describe benchmark performance on non-plant data. The result demonstrates generalization beyond plant tissues. While detailed quantitative results are referenced to an appendix, the main claims about competitive performance and speed are explicitly stated. The fact that pre-trained models work well on non-plant data is a strong generalization result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "PlantSeg is released as free, open-source software with both command-line and graphical user interfaces. It includes the complete pipeline (preprocessing, boundary prediction, segmentation with four partitioning methods), can export results as HDF5 or TIFF, comes with pre-trained 2D and 3D networks at multiple scales, provides tools for training on new data, and can segment both 2D and 3D images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C23-C26, C68-C73 consistently describe software features and availability across multiple sections. The features are explicitly stated, the GitHub repository is provided (C73), and the capabilities are clearly enumerated. This represents a comprehensive software package description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C93"
+    ],
+    "result": "PlantSeg enabled analysis of variability in ovule primordium development within a pistil. Six of eight stage 1 primordia showed comparable cell numbers (140.5\u00b110.84 cells), while two had fewer cells (91 and 57). Cell number did not necessarily correlate with primordium height. Overall, ovule primordium formation is relatively uniform with some variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 and C93 present a biological application with specific quantitative data (cell counts, statistics) supported by Figure 6B. The analysis is clearly described, the variability is quantified, and the biological interpretation is appropriately cautious ('relatively uniform, however, some variability'). The data support the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "PlantSeg enabled precise computation of daughter cell volumes following asymmetric division of lateral root founder cells, revealing a volume ratio of 0.65\u00b10.22 (n=23) between the two daughter cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by Figure 7 which shows the analysis and quantification. The volume ratio is explicitly stated with statistics (mean, SD, sample size). This demonstrates a clear biological application of the segmentation tool with quantitative results. However, the manuscript notes this asymmetric division was 'long been reported' so this is primarily a quantification of a known phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C96"
+    ],
+    "result": "PlantSeg segmentation of shoot apical meristem epidermal cells revealed that bce mutant cells have ~50% increased mean volume compared to wild type, while overall meristem size is only slightly reduced, implicating changes in epidermal cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 and C96 present quantitative findings (~50% volume increase) supported by Figure 8C. The comparison between mutant and wild type is clear, and the biological interpretation about cell division changes is appropriately stated as an implication rather than a proven mechanism. The data support the stated conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C97"
+    ],
+    "result": "PlantSeg improved automated surface segmentation of time-lapse leaf stacks when combined with MorphographX, producing lower ARand scores and higher accuracy than using raw input. This enabled growth tracking showing slow growth in midrib/distal margin and a proximal-distal gradient with maximum at basal margin. Comparison between A. thaliana and C. hirsuta revealed higher cell size and lobeyness in A. thaliana, especially toward the apex, confirming earlier differentiation onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 and C97 describe leaf analysis with quantitative metrics (Figure 9) and biological findings (Figure 10D-F). The integration with MorphographX is clearly demonstrated, the growth patterns are quantified, and the comparative analysis between species is supported by data. The interpretation about differentiation timing is appropriately stated as 'confirming' prior knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C21",
+      "C22",
+      "C89",
+      "C90"
+    ],
+    "result": "PlantSeg delivers accurate results and generalizes well across different tissues, scales, and acquisition settings, including non-plant samples. The method achieves high-quality segmentation on unseen data from the training datasets and performs excellently without retraining on various plant tissues and organs, including highly lobed epidermal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C21-C22, C89-C90 make broad generalization claims that are supported by multiple lines of evidence: performance on held-out test sets from training data, external plant datasets (3D Digital Tissue Atlas, leaf data), and non-plant data (Drosophila). The quantitative and qualitative results across these diverse datasets support the generalization claims. However, the manuscript also acknowledges limitations (C102) which provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "PlantSeg's boundary-based approach has limitations: blurry or barely detectable boundaries can cause under-segmentation. Results on new datasets are not fully perfect and require proof-reading to reach 100% accuracy. Manual correction was performed using Paintera, and newly proof-read results can be used to train improved networks for future applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 honestly acknowledge limitations of the method and provide a practical workflow for improvement. The limitations are consistent with the error modes identified in C58. The iterative improvement strategy (proof-reading \u2192 retraining) is reasonable and explicitly described. This transparent discussion of limitations strengthens the overall credibility of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C27"
+    ],
+    "result": "Very few benchmark datasets were available for plant cell segmentation tasks (with 3D Tissue Atlas as a notable exception). To address this gap, the authors publicly release their images and hand-curated ground truth at https://osf.io/uzq3w to catalyze future algorithm development and evaluation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 and C27 identify a gap in available resources and describe the authors' contribution to address it. The data availability is explicitly stated with a URL. This represents an important community contribution beyond the software tool itself. The acknowledgment of the 3D Tissue Atlas as an exception demonstrates awareness of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Networks were trained to predict binary boundary masks from ground truth labels processed with Gaussian smoothing (\u03c3=1.0) to reduce overfitting and thicken boundaries. Training used Adam optimizer for 150K iterations on 8 RTX 2080 Ti GPUs with learning rate reduction upon stagnation. Best networks were selected by lowest ARand error. Group normalization was used for large single patches to avoid weak batch statistics. Images were standardized and augmented with flips, rotations, elastic deformations, and noise. Networks were trained at multiple scales (downsampled 2\u00d7 and 3\u00d7) to handle voxel size variations. Inference used mirror padding and 50% overlapping patches with averaging to prevent artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107, C109, C111-C113, C116-C123 provide comprehensive methodological details for network training and inference. The procedures are clearly described with specific parameters, rationales are provided for key choices (e.g., group normalization, Gaussian smoothing), and the approach follows established best practices. The level of detail should enable reproduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "The segmentation pipeline first performs over-segmentation using DT watershed on boundary probability maps (threshold \u03b4=0.4, Gaussian smoothing \u03c3=2.0). DT watershed alone can be used for simple cases with low noise and sharp boundaries. For more complex cases, Multicut, GASP, or Mutex watershed are run on a region adjacency graph derived from DT watershed supervoxels to reduce computation time. Edge weights are computed as mean boundary probabilities. GASP is recommended as the starting point for new data, with manual proof-reading using Paintera if needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125, C127-C129, C131-C132 describe the graph partitioning methodology with specific parameters and provide practical guidance for users. The computational strategy (supervoxels to reduce complexity) is clearly explained, and the user recommendations are reasonable based on the comparative results. The integration with Paintera for manual correction provides a complete workflow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes context by citing that segmentation has become a bottleneck in large-scale imaging, existing pipelines have limitations, U-Net has demonstrated excellent performance and been extended to 3D, post-processing remains challenging for noisy data, watershed has known limitations, and few software packages make deep learning accessible to non-experts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 establish the motivation and context for the work through citations to prior literature. These are appropriately cited background claims that set up the problem PlantSeg addresses. The characterization of the field appears accurate based on the citations provided, though detailed verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The authors conclude that accurate and versatile cell outline extraction enabled by PlantSeg opens the door to rapid and robust quantitative morphometric analysis of plant cell geometry in complex tissues, which is particularly relevant given the central role of plant cell shape in controlling growth and division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 present the broader impact and significance of the work. C98 is a reasonable inference based on the demonstrated capabilities across multiple biological applications. C99 cites established knowledge about the importance of cell shape. Together, these claims appropriately contextualize the significance of the technical contributions.",
+    "result_type": "MINOR"
+  }
+]

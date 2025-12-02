@@ -1,0 +1,154 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C39",
+      "C70"
+    ],
+    "result": "eIF3 binds to the FTL 5'-UTR adjacent to the IRE and represses FTL translation. Deletion of the eIF3 binding site (\u2206PAR or \u22063RE) dramatically increases luciferase reporter translation (38-fold and 6-fold respectively) and abolishes preferential eIF3-FTL mRNA interaction in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17, C21-C23, C39, and C70 collectively demonstrate eIF3-mediated repression through multiple complementary approaches: luciferase reporter assays showing derepression upon deletion (C21, C22), immunoprecipitation showing loss of eIF3 binding in \u22063RE mutants (C39), and PAR-CLIP mapping of the binding site (C17). The convergence of in vitro and cellular data strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "eIF3 and IRP provide independent and synergistic repression of FTL translation. The \u22063RE mutation maintains IRP binding while disrupting eIF3 binding, and combining \u22063RE with IRP-disrupting mutations produces synergistic derepression. Mathematical modeling suggests IRP and eIF3 can act in cis on the same mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C31-C33, C35-C38 provide strong evidence through IRP binding assays (C24-C27), luciferase experiments with double mutants (C33), IRE position experiments (C31-C32), and mathematical modeling (C37-C38). The synergistic effect of combining mutations and the maintained IRP binding to \u22063RE RNA convincingly demonstrate independent regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C52",
+      "C57",
+      "C71",
+      "C72"
+    ],
+    "result": "CRISPR-edited \u22063RE cells show dramatically increased FTL protein levels without changes in FTL mRNA levels, indicating post-transcriptional derepression. These cells retain iron-responsive regulation and IRP binding, confirming that eIF3 disruption does not affect IRP-mediated control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48, C52, C71-C72 demonstrate the physiological consequences of eIF3 disruption through CRISPR editing. Western blots show increased FTL protein (C40), RT-qPCR confirms no mRNA changes (C41), iron treatment experiments show maintained responsiveness (C45-C47), and IRP immunoprecipitation confirms maintained binding (C48). This comprehensive cellular validation strongly supports the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C78",
+      "C80"
+    ],
+    "result": "Hyperferritinemia-associated SNPs G51C and G52C disrupt eIF3 binding while maintaining IRP binding. These mutations increase luciferase translation, abolish eIF3 interaction, but preserve near wild-type IRP binding and iron responsiveness, identifying eIF3 disruption as a cause of certain hyperferritinemia cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61, C63-C65, C67-C69, C78, C80 provide strong evidence linking specific disease-associated SNPs to eIF3 disruption. Luciferase assays (C63), eIF3 immunoprecipitation (C64), IRP competition assays (C65), and stable cell line experiments (C67-C68) collectively demonstrate that G51C and G52C specifically disrupt eIF3 function while preserving IRP regulation. This mechanistic insight into disease causation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C83"
+    ],
+    "result": "Disruption of eIF3-mediated FTL repression leads to decreased FTH levels and increased ferritin complex stability. The \u22063RE mutation causes concurrent FTH reduction without mRNA changes, increased IRP binding to FTH1 mRNA, and more stable ferritin complexes enriched in FTL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C44, C49-C51, C53-C56, C83 describe secondary effects on FTH and ferritin stability. While Western blots show decreased FTH (C43) and increased complex stability (C53-C54), the mechanistic connection is speculative (C50). The increased IRP binding to FTH1 (C49) is intriguing but the mechanism is unclear, and ferroportin levels are unchanged (C51), arguing against simple mass action. Additional experiments are needed to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C77",
+      "C81",
+      "C82",
+      "C86"
+    ],
+    "result": "This work identifies a direct role for eIF3-mediated translational control in human disease and demonstrates that clustered SNPs can cause disease through divergent molecular mechanisms (IRP binding, eIF3 binding, or RNA folding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C73, C77, C81-C82, C86 represent the broader significance of the findings. The experimental data throughout the manuscript (particularly the SNP analysis in Figure 4) support the conclusion that eIF3 plays a direct role in hyperferritinemia (C6, C77) and that different SNPs in the same region can disrupt different regulatory mechanisms (C81-C82). This represents a well-supported conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Transfected luciferase reporter mRNAs are equally stable during 6-hour time courses, ensuring observed changes reflect translational regulation rather than mRNA stability differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by RT-qPCR data in Figure 2\u2014figure supplement 2 showing similar mRNA levels across constructs. This control is essential for interpreting the luciferase data as reflecting translational differences rather than mRNA stability effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C85"
+    ],
+    "result": "The authors speculate about potential physical interactions between eIF3 and IRP, the role of eIF3 in iron-responsive regulation, and possible involvement in inflammation, but acknowledge these remain unclear and require future investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C76, C85 are explicitly speculative statements about future directions and unanswered questions. While the speculation is reasonable given the proximity of binding sites (C74) and ferritin's role in inflammation (C85), these represent hypotheses rather than tested conclusions. The authors appropriately identify these as limitations and future directions (C75).",
+    "result_type": "MINOR"
+  }
+]

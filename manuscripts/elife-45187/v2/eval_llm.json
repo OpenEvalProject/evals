@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "TMEM16F Q559K mutant exhibits a Ca2+-dependent shift in ion selectivity, with the permeability ratio changing from PNa+/PCl- = 2.1 \u00b1 0.4 in 15 \u00b5M Ca2+ to 0.47 \u00b1 0.03 in 1 mM Ca2+, indicating increased Cl- permeability at higher Ca2+ concentrations. This shift is also observed in wild-type TMEM16F.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C44-C47 provide consistent electrophysiological measurements showing reversal potential shifts with Ca2+ concentration changes. The data in Figure 1 clearly demonstrate the phenomenon in both Q559K mutant and wild-type channels. The measurements are internally consistent and the liquid junction potential corrections are appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The shift in ion permeability ratio is independent of channel activation state, as demonstrated by experiments showing that Erev remains unchanged during desensitization in 36 \u00b5M Ca2+ despite changes in current magnitude and rectification. PIP2 depletion does not contribute to the permeability shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are well-supported by Figure 3 data showing stable Erev during desensitization. The experimental design effectively dissociates Ca2+ concentration effects from activation state changes. The inference about PIP2 (C58) is reasonable given the slow depletion kinetics versus stable Erev.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The permeability shift occurs at intermediate Ca2+ concentrations and is not dependent on full channel opening, as shown by experiments with 6 \u00b5M Ca2+ and the Q559K_E667Q double mutant which exhibits Cl- selectivity in 1 mM Ca2+ despite not being fully open.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by Figure 2 data. The Q559K_E667Q double mutant experiment (C53-C54) provides strong evidence that the permeability shift is not strictly coupled to full channel opening, as the mutant shows Cl- selectivity at 1 mM Ca2+ despite EC50 = 0.88 mM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Mutations affecting TM6 stabilization (G615A, Q559K_G615A) alter voltage-dependent gating but do not prevent the Ca2+-dependent shift in ion selectivity, indicating that the permeability change depends on Ca2+ concentration rather than conformational state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C72 are well-supported by Figure 4 data. The G615A mutation increases Ca2+ sensitivity as expected from structural studies (C62-C64), and the Q559K_G615A double mutant shows the permeability shift persists regardless of TM6 stabilization (C69-C71), supporting the conclusion in C72.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "The permeability shift is mediated by electrostatic effects, as demonstrated by experiments with divalent (Zn2+) and trivalent (Gd3+) cations showing similar Ca2+-dependent shifts in ion selectivity, with divalent and trivalent cations having stronger effects than monovalent ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 are supported by Figure 5 data showing that Zn2+ and Gd3+ produce similar permeability shifts as Ca2+. The reversibility of Zn2+ effects (C74) and the charge-dependent magnitude of effects (C80) support the electrostatic mechanism proposed in C81. The experiments effectively test the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Increasing intracellular ionic strength (from 15 mM to 45 mM NaCl) increases relative Cl- permeability in 15 \u00b5M Ca2+, but has no significant effect in 1 mM Ca2+, indicating that millimolar Ca2+ dominates the electrostatic effect over monovalent ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by Figure 6 data showing PNa+/PCl- changes with NaCl concentration in 15 \u00b5M Ca2+ but not in 1 mM Ca2+. The statistical analysis is appropriate and the conclusion that Ca2+ outweighs Na+ effects (C86) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99"
+    ],
+    "result": "Depolarization increases relative Cl- permeability by facilitating Ca2+ entry into the membrane electric field, and the permeability ratio can be maintained during hyperpolarization, suggesting Ca2+ remains at or near the permeation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by Figure 7 data showing conditioning potential-dependent Erev shifts. The non-intersecting traces (C94) confirm the effect is not an artifact. The maintenance of permeability ratio during hyperpolarization (C96) is demonstrated by experiments with variable ramp speeds, supporting the proposed mechanism (C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The Q559K mutant shows minimal current rundown in 1 mM Ca2+ and reduced outward rectification compared to wild-type, with desensitization causing a shift in EC50 from 5.6 \u00b1 0.3 \u00b5M to 52 \u00b1 11 \u00b5M and a left-shift in voltage dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C40-C43 are well-supported by Figure 1 data. The Q559K mutant's reduced rundown (C40, C42) and altered voltage dependence (C43) are clearly demonstrated. The EC50 shift (C41) is appropriately measured and the normalized current magnitude (C42) shows significant difference from wild-type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Wild-type TMEM16F is activated by Ca2+ in a dose-dependent manner with V1/2 = 76 \u00b1 11 mV in 15 \u00b5M Ca2+, shows moderate Na+ selectivity, and exhibits current decrease above ~30 \u00b5M Ca2+ due to desensitization and rundown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by Figure 1 data and consistent with prior literature (C39). The dose-response relationship (C35), desensitization threshold (C36), and voltage dependence (C38) are clearly demonstrated. The mechanistic explanation for desensitization (C37) is appropriately cited to previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The Q559W mutant also prevents current rundown and exhibits the Ca2+-dependent Erev shift, and TMEM16F shows higher permeability to I- than Cl- for both wild-type and mutant channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by supplementary figure data. The Q559W mutant shows similar properties to Q559K regarding rundown prevention and Erev shift (C49-C50), and the I- permeability data (C51) is consistent with prior literature and shown in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In solutions with NMDG-MES or NMDG2-SO4, wild-type TMEM16F activated by 15 \u00b5M Ca2+ reverses near 0 mV, and whole-cell recordings show PNa+/PCl- of 1.0 \u00b1 0.1 in 15 mM NaCl with 150 mM intracellular NaCl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by supplementary figure data and Figure 6D,F. The measurements in different ionic conditions (C87-C88) are consistent and the whole-cell recording data (C89) provides complementary evidence for reduced cation selectivity in physiological ionic strength conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The glycine hinge G615 in TMEM16F TM6 corresponds to the hinge in TMEM16A, and its alanine substitution increases Ca2+ sensitivity and left-shifts voltage dependence, while adjacent mutations (G614A, N620A) do not have similar effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 are well-supported by structural alignment (Figure 4 supplement 1A) and functional data (Figure 4). The G615A effects (C63-C64) are consistent with TMEM16A literature (C59-C60), and the control mutations (C65, C67) appropriately demonstrate specificity. The I612A comparison (C66) provides additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "TMEM16F ion permeation pathway opens through TM6 rearrangement induced by Ca2+ binding, and elevation of intracellular divalent/trivalent cations increases relative anion permeability through electrostatic effects, with depolarization facilitating Ca2+ entry into the membrane electric field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 represent the integrated mechanistic model supported by the collective experimental evidence. The TM6 rearrangement (C97) is supported by structural citations and mutational data, the electrostatic mechanism (C98) is supported by experiments with multiple cations, and the depolarization effect (C99) is demonstrated by voltage-dependent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C16"
+    ],
+    "result": "TMEM16F is a Ca2+-activated protein with dual functions as a small-conductance ion channel and phospholipid scramblase, mediating phosphatidylserine exposure from the inner to outer membrane leaflet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C13, and C16 represent established knowledge about TMEM16F supported by extensive prior literature. The current manuscript provides additional characterization of the ion channel function but relies on previous work for the basic functional properties and scramblase activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "There is conflicting literature on TMEM16F ion selectivity, with excised-patch recordings showing cation selectivity while whole-cell recordings show reduced cation selectivity or Cl- selectivity, representing a discrepancy in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17-C20 accurately summarize the conflicting literature that motivated this study. The citations are appropriate and the discrepancy is well-documented. The current manuscript aims to resolve this conflict by demonstrating Ca2+-dependent dynamic selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "TMEM16 family members are dimeric proteins with 10 transmembrane helices per subunit and independent permeation pathways, with TMEM16A/B being Cl- channels and other members showing modest ion selectivity with scramblase activity. TMEM16A activation involves TM6 stabilization by Ca2+ binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 represent well-established structural and functional knowledge about the TMEM16 family, appropriately cited to structural and functional studies. This background information provides context for the current study but is not novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "TMEM16F exhibits rapid desensitization and rundown in high Ca2+ in excised patches, and Q559 is a pore-lining residue whose lysine substitution reduces PNa+/PCl-, prevents rundown, and reduces outward rectification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by prior literature (appropriately cited) and provide the rationale for using the Q559K mutant in this study. The properties of Q559K are well-documented in previous work and confirmed in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Depolarization facilitates Ca2+ entry into the membrane electric field and reduces EC50 for Ca2+ activation in both TMEM16A and TMEM16F, with TMEM16F permeating Ca2+ but not depleting it rapidly from the electric field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by appropriate citations to prior literature. This established phenomenon provides the mechanistic basis for interpreting the voltage-dependent permeability shifts observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Charge-screening mechanisms for ion selectivity are documented in other channels, TMEM16F has a Hill coefficient of ~2 for Ca2+ activation, the TMEM16F pore contains a large vestibule, and TMEM16K has multiple Ca2+ binding sites in cytoplasmic domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 provide comparative context from other channel families and TMEM16 members. C100 is appropriately cited, C101 is supported by dose-response data in the manuscript, and C102-C103 are appropriately cited to structural studies. These support the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "TMEM16A/B are Ca2+-activated Cl- channels while other TMEM16 members show modest ion selectivity with scramblase activity. All TMEM16 proteins are dimers with 10 transmembrane helices and conserved Ca2+-binding sites, with TM6 conformational changes involved in activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 represent established knowledge about TMEM16 family structure and function, appropriately cited to extensive prior literature. This provides important comparative context for understanding TMEM16F properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "TMEM16A shows voltage-dependent rectification that changes with Ca2+ occupancy, while TMEM16F is intrinsically outwardly rectifying across Ca2+ concentrations. The Q559K mutation may alter voltage gating rather than intrinsic rectification, and Gd3+ activation approaches ohmic conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C117 compare rectification properties between TMEM16A and TMEM16F, appropriately citing prior work. The distinction between voltage-dependent gating and intrinsic rectification (C113-C114, C116) is important for interpretation. The Gd3+ observation (C117) is supported by Figure 5E data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "TMEM16A activated by low Ca2+ concentrations (100-300 nM) is Cl--selective, and the Q649A mutant activated by depolarization in Ca2+-free solution remains Cl--selective before and after PLL application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C120 are supported by supplementary figure data, but the authors acknowledge they could not draw definitive conclusions about TMEM16A selectivity in 0 Ca2+ due to PLL effects on endogenous currents. The data are presented but interpretation is limited by technical challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The dynamic increase in Cl- permeability may provide negative feedback to reduce Ca2+ influx, the permeability ratio memory during repolarization may modulate action potential waveforms, and TMEM16F localization in primary cilia (with elevated Ca2+ and depolarization) may be functionally relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C124 represent speculative physiological implications. C121 is a reasonable inference but untested. C122 is speculative about action potential modulation without direct evidence. C123-C124 cite localization data but functional significance in cilia is not demonstrated. These are appropriate discussion points but lack experimental support.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1924 @@
+{
+  "submission": {
+    "id": "10c53e39-67a4-48de-9ab8-46592ebee64a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:28:29.980912Z",
+    "updated_at": "2025-12-02T18:28:29.980912Z"
+  },
+  "content": [
+    {
+      "id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "submission_id": "10c53e39-67a4-48de-9ab8-46592ebee64a",
+      "content_type": "manuscript",
+      "content_text": "# A two-lane mechanism for selective biological ammonium transport\n\n## Authors\n\n- Gordon Williamson<sup>1</sup> ([ORCID: 0000-0003-3053-8322](https://orcid.org/0000-0003-3053-8322))\n- Giulia Tamburrino<sup>2</sup>\n- Adriana Bizior<sup>1</sup>\n- M\u00e9lanie Boeckstaens<sup>4</sup> ([ORCID: 0000-0003-1629-7403](https://orcid.org/0000-0003-1629-7403))\n- Ga\u00ebtan Dias Mirandela<sup>1</sup> ([ORCID: 0000-0001-5871-6288](https://orcid.org/0000-0001-5871-6288))\n- Marcus G Bage<sup>2</sup>\n- Andrei Pisliakov<sup>2</sup> ([ORCID: 0000-0003-1536-0589](https://orcid.org/0000-0003-1536-0589))\n- Callum M Ives<sup>2</sup> ([ORCID: 0000-0003-0511-1220](https://orcid.org/0000-0003-0511-1220))\n- Eilidh Terras<sup>1</sup>\n- Paul A Hoskisson<sup>1</sup>\n- Anna Maria Marini<sup>4</sup>\n- Ulrich Zachariae<sup>2</sup> \u2020\n- Arnaud Javelle<sup>1</sup> ([ORCID: 0000-0002-3611-5737](https://orcid.org/0000-0002-3611-5737)) \u2020\n\n### Affiliations\n\n1. Strathclyde Institute of Pharmacy and Biomedical Sciences, University of Strathclyde Glasgow United Kingdom\n2. Computational Biology, School of Life Sciences, University of Dundee Dundee United Kingdom\n3. Physics, School of Science and Engineering, University of Dundee Dundee United Kingdom\n4. Biology of Membrane Transport Laboratory, Department of Molecular Biology, Universit\u00e9 Libre de Bruxelles Gosselies Belgium\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe transport of charged molecules across biological membranes faces the dual problem of accommodating charges in a highly hydrophobic environment while maintaining selective substrate translocation. This has been the subject of a particular controversy for the exchange of ammonium across cellular membranes, an essential process in all domains of life. Ammonium transport is mediated by the ubiquitous Amt/Mep/Rh transporters that includes the human Rhesus factors. Here, using a combination of electrophysiology, yeast functional complementation and extended molecular dynamics simulations, we reveal a unique two-lane pathway for electrogenic NH4+ transport in two archetypal members of the family, the transporters AmtB from Escherichia coli and Rh50 from Nitrosomonas europaea. The pathway underpins a mechanism by which charged H+ and neutral NH3 are carried separately across the membrane after NH4+ deprotonation. This mechanism defines a new principle of achieving transport selectivity against competing ions in a biological transport process.\n\n## Introduction\n\nThe transport of ammonium across cell membranes is a fundamental biological process in all domains of life. Ammonium exchange is mediated by the ubiquitous ammonium transporter/methylammonium-ammonium permease/Rhesus (Amt/Mep/Rh) protein family. The major role of bacterial, fungal, and plant Amt/Mep proteins is to scavenge ammonium for biosynthetic assimilation, whereas mammals are thought to produce Rh proteins in erythrocytes, kidney, and liver cells for detoxification purposes and to maintain pH homeostasis (Biver et al., 2008; Huang and Ye, 2010). In humans, Rh mutations are linked to pathologies that include inherited hemolytic anemia, stomatocytosis, and early-onset depressive disorder (Huang and Ye, 2010). Despite this key general and biomedical importance, so far, no consensus on the pathway and mechanism of biological ammonium transport has been reached.\n\nHigh-resolution structures available for several Amt, Mep and Rh proteins show a strongly hydrophobic pore leading towards the cytoplasm (Andrade et al., 2005; Gruswitz et al., 2010; Khademi et al., 2004; Lupo et al., 2007; van den Berg et al., 2016). This observation led to the conclusion that the species translocated through Amt/Mep/Rh proteins is neutral NH3. However, this view has been experimentally challenged, first for some plant Amt proteins (Ludewig et al., 2002; Mayer et al., 2006; McDonald and Ward, 2016; Neuh\u00e4user et al., 2014), followed by further in-vitro studies revealing that the activity of bacterial Amt proteins is electrogenic (Mirandela et al., 2019; Wacker et al., 2014). Taken together, these findings renewed a long-standing debate on the mechanism by which a charged molecule is translocated through a hydrophobic pore and how selectivity for NH4+ over competing ions is achieved.\n\nHere, we reveal the pathways, mechanism, and key determinants of selectivity of electrogenic ammonium transport in Amt and Rh proteins, unifying the diverse observations that led to these seemingly incompatible suggestions. The transport mechanism is underpinned by the separate transfer of H+ and NH3 on a unique two-lane pathway following NH4+ sequestration and deprotonation. This mechanism ensures that ammonium \u2013 which occurs mainly in protonated form in the aqueous phase \u2013 is efficiently translocated across the membrane, while maintaining strict selectivity against K+, a monovalent cation of similar size. This previously unobserved principle is likely to form a new paradigm for the electrogenic members of the Amt/Mep/Rh family. Similar mechanisms may be utilized by other membrane transporters to facilitate the selective translocation of pH-sensitive molecules.\n\n## Results and discussion\n\n### AmtB and NeRh50 activity is electrogenic\n\nMotivated by our finding that the activity of Escherichia coli AmtB is electrogenic (Mirandela et al., 2019), we first investigated the transport mechanism of the Rh50 protein from Nitrosomonas europaea (NeRh50). Rh and Amt proteins are distant homologs, and thus a functional distinction between both subfamilies has been proposed (Huang and Ye, 2010). The architecture of NeRh50 is highly representative of Rh proteins (Gruswitz et al., 2010; Lupo et al., 2007) which have been repeatedly reported to serve as electroneutral NH3 or CO2 gas channels (Cherif-Zahar et al., 2007; Hub et al., 2010a; Li et al., 2007; Lupo et al., 2007; Weidinger et al., 2007). The activity of purified NeRh50 reconstituted into liposomes was quantified using Solid-Supported Membrane Electrophysiology (SSME) (Bazzone et al., 2017) experiments, where we recorded a NH4+-selective current (Figure 1) with a decay rate that is strongly dependent on\u00a0the lipid-to-protein ratio (LPR; Table 1, Figure 1\u2014figure supplement 1). Expressed in a Saccharomyces cerevisiae triple-mep\u0394 strain, deprived of its three endogenous Mep ammonium transporters, NeRh50 complemented the growth defect on minimal medium containing ammonium as sole nitrogen source (Figure 1). The electrogenic transport activity observed for NeRh50 and AmtB may suggest a common transport mechanism amongst the distant Amt and Rh proteins, but more experiments are needed to conclusively confirm this. Also, the NH4+ selectivity of both transporters further highlighted the question of how these proteins achieve selective charge translocation through their hydrophobic pore.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig1-v3.jpg)\n\n**Figure 1.:** Transient current measured using SSME after a 200 mM pulse (ammonium or potassium). Insert: Yeast complementation by NeRh50 (strain 31019b, mep1\u0394 mep2\u0394 mep3\u0394 ura3) on minimal medium supplemented with 3 mM ammonium as sole nitrogen source.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Normalized traces following a 200 mM ammonium pulse in proteoliposomes containing NeRh50 at LPR 10 (black) or LPR 5 (red). Traces have been normalized based on their own maximum amplitude to permit comparison. eight sensors from two independent protein purification batches were measured, with three measurements recorded for each sensor. The average value are given Table 2. Single representative trace were chosen to visualize the results.\n\n**Table 1.**\n Decay time constants (s\u22121) of transient currents triggered after an ammonium or potassium pulse of 200 mM in proteoliposomes containing AmtB at various LPR*.Table 1\u2014source data 1.Decay time constants (s\u22121) of transient currents triggered after an ammonium or potassium pulse of 200 mM measured by SSME.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">NH4+</th>\n      <th colspan=\"2\">K+</th>\n    </tr>\n    <tr>\n      <th>Variant</th>\n      <th>LPR 10</th>\n      <th>LPR 5</th>\n      <th>LPR 10</th>\n      <th>LPR 5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>AmtB-WT</td>\n      <td>13.4\u00a0\u00b1\u00a01.5</td>\n      <td>18.7\u00a0\u00b1\u00a01.0</td>\n      <td>NC</td>\n      <td>NC</td>\n    </tr>\n    <tr>\n      <td>D160A</td>\n      <td>21.6\u00a0\u00b1\u00a01.2</td>\n      <td>24.3\u00a0\u00b1\u00a01.5</td>\n      <td>NC</td>\n      <td>NC</td>\n    </tr>\n    <tr>\n      <td>D160E</td>\n      <td>17.03\u00a0\u00b1\u00a02.84</td>\n      <td>19.53\u00a0\u00b1\u00a01.8</td>\n      <td>NC</td>\n      <td>NC</td>\n    </tr>\n    <tr>\n      <td>H168A H318A</td>\n      <td>29.5\u00a0\u00b1\u00a02.1</td>\n      <td>29.8\u00a0\u00b1\u00a02.6</td>\n      <td>NC</td>\n      <td>NC</td>\n    </tr>\n    <tr>\n      <td>S219A H168A H318A</td>\n      <td>NC</td>\n      <td>NC</td>\n      <td>NC</td>\n      <td>NC</td>\n    </tr>\n    <tr>\n      <td>H168A</td>\n      <td>28.3\u00a0\u00b1\u00a01.5</td>\n      <td>38.0\u00a0\u00b1\u00a01.0</td>\n      <td>2.7\u00a0\u00b1\u00a00.5</td>\n      <td>5.2\u00a0\u00b1\u00a01.0</td>\n    </tr>\n    <tr>\n      <td>H318A</td>\n      <td>22.56\u00a0\u00b1\u00a02.63</td>\n      <td>28.25\u00a0\u00b1\u00a03.1</td>\n      <td>10.07\u00a0\u00b1\u00a01.7</td>\n      <td>15.64\u00a0\u00b1\u00a02.1</td>\n    </tr>\n    <tr>\n      <td>NeRh50</td>\n      <td>24.0\u00a0\u00b1\u00a01.7</td>\n      <td>39.0\u00a0\u00b1\u00a03.6</td>\n      <td>NC</td>\n      <td>NC</td>\n    </tr>\n  </tbody>\n</table>\n\n_*NC: No transient current recorded._\n\n### Two interconnected water wires form an H+ translocation pathway in AmtB\n\nWe next made use of the most substantive body of structural information available for the archetypal ammonium transporter AmtB from E. coli and its variants to decipher the molecular mechanism of electrogenic NH4+ transport (Dias Mirandela et al., 2018). Computational (Wang et al., 2012) and experimental studies (Ariz et al., 2018)\u00a0have suggested that deprotonation of NH4+ is likely to be a major step in ammonium transport. We therefore aimed to identify dynamic polar networks across AmtB that could form a transfer pathway through the protein for the translocation of H+,\u00a0coming from NH4+ deprotonation. AmtB forms homotrimers in the cytoplasmic membrane, in which each monomer exhibits a potential periplasmic NH4+ binding region (S1) near residue D160, followed by a strongly hydrophobic pore leading towards the cytoplasm (Figure 2A; Khademi et al., 2004). Two highly conserved histidine residues, H168 and H318, protrude into the lumen, forming the family\u2019s characteristic \u2018twin-His\u2019 motif (Javelle et al., 2006). The only variation in the twin-His motif in members of the Amt/Mep/Rh family is in numerous fungal Mep transporters where the first His, corresponding to H168, is replaced by a Glu (Javelle et al., 2006). The general conservation pattern in the AmtB pore, as analysed with ConSurf (Ashkenazy et al., 2016), is shown in Figure 2\u2014figure supplement 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig2-v3.jpg)\n\n**Figure 2.:** (A) Extended atomistic simulations show a hydration pattern across the protein, in which cytoplasmic and periplasmic water wires, connected via H168, form a continuous pathway for proton transfer from the S1 NH4+ sequestration region to the cytoplasm. (B) Transient currents measured following a 200 mM ammonium pulse on sensors prepared with solutions containing either H2O (black) or D2O (red). D2O sensors were rinsed with H2O solutions and subsequently exposed to another 200 mM ammonium pulse (blue).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Evolutionary conservation scores indicate that the residues that line both the water wires and the internal hydrophobic pathway show a large degree of conservation among homologous proteins. Evolutionary conservation scores were estimated using the ConSurf server (Ashkenazy et al., 2016). In brief, a multiple sequence alignment (MSA) was built of homologues collected from the SWISS-PROT database. Homologues were identified by five iterations of HMMER, producing an MSA of 64 sequences. The evolutionary conservation scores are projected onto an AmtB monomer, (PDB code: 1U7G), with some helices removed for clarity. (A) Side view. (B) Top view from periplasmic side. (C) Close-up view of key residues involved in the two-lane mechanism.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The periplasmic water wire evolves on a slower time scale than the CWW and shows greater fluctuations. It is stabilized by the ED twin-His tautomeric state, where 23% occupancy of the PWW with three water molecules or more is observed. Stably occupied states are seen after\u00a0~25 ns simulated time. Since earlier simulations studying the internal hydration of AmtB were shorter (Lamoureux et al., 2007), this may explain why the PWW has not been described previously. A significant influence of membrane voltage of a magnitude that is biologically relevant for the cytoplasmic membrane of E. coli is not seen.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The cytoplasmic water wire develops in an early stage of the simulations, as has been previously observed (Lamoureux et al., 2007). The CWW is particularly stabilized in the DE twin-His tautomeric state, where the occupancy is 79% on average with at least three water molecules over the course of our simulations.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Nomenclature as in\u00a0Lamoureux et al., 2007.\u00a0The top panel shows the configuration of H168 and H318 observed in the DE simulations, with the protonated N\u03b4 atom of H168 pointing towards the N\u03b4 atom of H318. The bottom panel shows the two distinct configurations observed in the ED simulations; on the left is the equivalent of the situation observed in DE, while on the right the H168 sidechain flips and its N\u03b4 atom contacts the most proximal molecule of the PWW.\n\nTo locate potential polar transfer routes, we performed atomistic molecular dynamics (MD) simulations of AmtB in mixed lipid bilayers. The simulations initially showed hydration of part of the putative hydrophobic NH3 pathway from the twin-His motif to the cytoplasm (cytoplasmic water wire \u2013 CWW; Figure 2A), confirming previous observations (Lamoureux et al., 2007). Notably, a new observation we made over longer simulation timescales is the presence of a previously unidentified second water-filled channel (periplasmic water wire - PWW). The PWW spans from residue D160 near the S1 region to the central twin-His motif (Figure 2A) and is formed both in simulations without and with applied membrane voltage Vm (Figure 2A - Figure 2\u2014figure supplement 2; Vm in E. coli ~ \u2212140 mV [Felle et al., 1980]).\n\nAs the protonation pattern of the twin-His motif has been found to play a role in the hydration of the protein (Ishikita and Knapp, 2007), two different tautomeric states of the twin-His motif were systematically probed in the simulations. The tautomeric state in which H168 is protonated on its N\u03b4 and H318 is protonated on its N\u03b5 atom is referred to as \u2019DE\u2019, while \u2019ED\u2019 terms the twin-His configuration where H168 is protonated on N\u03b5 and H318 is protonated on N\u03b4 (Figure 2A- Figure 2\u2014figure supplement 2, 3, 4). Formation of the CWW is observed to occur within a few nanoseconds at the beginning of each simulation. In the DE tautomeric state, the cytoplasmic pocket of each subunit almost continuously remains occupied by 3\u20134 water molecules for the rest of the simulation (Figure 2A - Figure 2\u2014figure supplement 2, 3, 4; data for 0 mV membrane voltage). In the ED state, greater fluctuations in the number of water molecules in the chain are seen, and the average occupancy is decreased. Using a cut-off value of three water molecules per subunit, a complete water chain is present during 79% of the simulations in the DE state, and only during 12% of the simulated time in the ED state. The PWW is generally more transiently occupied than the cytoplasmic channel; however, we record up to 23% occupancy with at least three water molecules when the histidine sidechains are in the ED tautomeric state (Figure 2A - Figure 2\u2014figure supplement 2, 3, 4).\n\nBoth water wires are connected via the twin-His motif, which bridges the aqueous chains, while preventing the formation of a continuous water channel in the simulations. Although neither the CWW nor the PWW are sufficiently wide to allow the transfer of solvated NH4+, water molecules and histidine side chains could serve as efficient pathways to facilitate proton transfer in proteins (Acharya et al., 2010). As shown in Figure 2\u2014figure supplement 1, the key residues that line both water wires in AmtB are highly conserved in the family.\n\n### The interconnected water wires are functionally essential to AmtB activity\n\nTo experimentally test if the water wires are essential for proton conduction during the AmtB transport cycle, we made use of the reduced deuteron mobility of heavy water D2O. Because deuterons have twice the mass of a proton and the bond strength is increased, the deuteron mobility is reduced by 30% for each D2O molecule compared to normal water (Wiechert and Beitz, 2017). Since the polar network of water we identified involves more than three water molecules (Figure 2A), AmtB should be nearly inactive if tested in the presence of D2O. Indeed, we found that in an SSME-based assay where all buffers used to prepare the proteoliposomes and SSM sensors were made using D2O, AmtB activity was completely abolished compared to buffer containing water (Figure 2B). After rinsing the sensor prepared in D2O with water, AmtB re-gained 100% of its activity measured by SSME, showing that the presence of D2O did not affect the protein itself or the integrity of the proteoliposomes (Figure 2B). Further calculations suggested that H+ transfer between the water molecules is possible both within the PWW and CWW and could occur with high rates (the highest energy barrier is\u00a0~18 kJ/mol in the cytoplasmic wire near the twin-His motif; Table 2). Taken together, the experimental and computational data suggest that proton transfer between water molecules, most likely the PWW and CWW detected in the simulations, may underpin the electrogenic activity of AmtB.\n\n**Table 2.**\n Free energies for proton translocation through the cytoplasmic and periplasmic water wires and neighboring water molecules (bulk)*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\"></th>\n      <th>Z (\u00c5)</th>\n      <th>Free energy (kJ/mol)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">(bulk)</td>\n      <td rowspan=\"8\">Peripl. water wire</td>\n      <td>wat1</td>\n      <td>14.7</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>wat2</td>\n      <td>12.7</td>\n      <td>8.7</td>\n    </tr>\n    <tr>\n      <td>wat3</td>\n      <td>10.7</td>\n      <td>15.0</td>\n    </tr>\n    <tr>\n      <td>wat4</td>\n      <td>8.3</td>\n      <td>14.4</td>\n    </tr>\n    <tr>\n      <td>wat5</td>\n      <td>6.1</td>\n      <td>7.5</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">D160</td>\n      <td>wat6</td>\n      <td>5.4</td>\n      <td>11.0</td>\n    </tr>\n    <tr>\n      <td>wat7</td>\n      <td>3.2</td>\n      <td>14.4</td>\n    </tr>\n    <tr>\n      <td>wat8</td>\n      <td>0.6</td>\n      <td>18.5</td>\n    </tr>\n    <tr>\n      <td>H168</td>\n      <td colspan=\"4\"></td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\"></td>\n      <td rowspan=\"4\">cytopl. water wire</td>\n      <td>wat9</td>\n      <td>\u22120.4</td>\n      <td>17.3</td>\n    </tr>\n    <tr>\n      <td>wat10</td>\n      <td>\u22120.8</td>\n      <td>14.4</td>\n    </tr>\n    <tr>\n      <td>wat11</td>\n      <td>\u22123.2</td>\n      <td>12.1</td>\n    </tr>\n    <tr>\n      <td>H318</td>\n      <td>wat12</td>\n      <td>\u22125.1</td>\n      <td>13.8</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The vertical coordinate z was calculated relative to the position of the sidechain of H168. Positions of the sidechains of D160, H168 and H318 with respect to the periplasmic and cytoplasmic water wires are indicated in the left column._\n\n### AmtB activity is not driven by the proton motive force\n\nIn the absence of ammonium, a proton pulse did not trigger a discernible current and additionally, in the presence of ammonium, an inward-orientated pH gradient did not increase AmtB activity (Figure 3). These findings suggest that there is no H+-dependent symport activity of AmtB, showing instead that AmtB is not able to translocate a proton in the absence of NH4+, and indicating that the current induced by AmtB activity is generated by specific deprotonation of the substrate and subsequent H+ translocation. Furthermore, they show that AmtB cannot act as an uncoupler, which raises the question of proton selectivity and the coupling between NH3 and H+ transfer (Boogerd et al., 2011; Maeda et al., 2019). Our current data suggest that the PWW is transiently occupied and that its occupancy is strongly dependent on the particular state and conformation of D160, since even a D to E conservative change abolished presence of the PWW (Figure 4A). Any disruption of the PWW will, in turn, impede the capability of AmtB to transfer H+. The functionally relevant conformation and protonation state of D160 that stabilize the PWW is likely to be coupled to the presence of a charged substrate binding near S1, thereby linking substrate binding and deprotonation to H+ transfer.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig3-v3.jpg)\n\n**Figure 3.:** The transient currents were measured using SSME following an ammonium pulse of 200 mM at pH 7 (left) or under an inwardly directed pH gradient in the presence (center) or absence (right) of ammonium. eight sensors from two independent protein purification batches were measured, with three measurements recorded for each sensor. Single representative traces were chosen to visualize the results. Each sensor was measured in the order pH (in/out) 7/7, 8/5, 8/5 (this time without NH4+), and finally 7/7 again to be sure that the signals do not significantly decrease with time. The data are normalized against the measurements done at pH7 in/out for each sensor.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig4-v3.jpg)\n\n**Figure 4.:** (A)\u00a0The Periplasmic Water Wire (PWW) in the D160A and D160E variants. We observe no significant occupancy of the PWW above the threshold of at least three water molecules in the D160A and D160E AmtB variants, irrespective of the tautomeric protonation states of H168 and H318 (DE or ED, see Materials\u00a0and\u00a0method section).\u00a0(B) Upper panel: maximum amplitude of the transient current measured using SSME following a 200 mM ammonium pulse. Eight sensors from two independent protein purification batches were measured, with three measurements recorded for each sensor (means\u00a0\u00b1\u00a0SD). Lower panel: yeast complementation test (strain 31019b, mep1\u0394 mep2\u0394 mep3\u0394 ura3) using 7 mM Glutamate (Glu) or 1 mM ammonium as a sole nitrogen source. The growth tests have been repeated twice. (C) Kinetics analysis of the transport of ammonium. The maximum amplitudes recorded after a 200 mM ammonium pulse have been normalized to 1.0 for comparison. N.M.: Non Measurable. eight sensors from two independent protein purification batches were measured, with three measurements recorded for each sensor (means\u00a0\u00b1\u00a0SD).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Gel filtration trace (Superdex 200 10/300 increase) of wild-type AmtB and variants after solubilization of the proteoliposome in 2% DDM. All of the AmtB variants elute at\u00a0~11.5 ml.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) SSME analysis. Transient current measured after a 200 mM pulse of ammonium in proteoliposomes containing AmtB (black), AmtBD160A (blue), or AmtBD160E (orange) at LPR 10. (B) Normalized traces following a 200 mM ammonium pulse in proteoliposomes containing AmtBD160E at LPR 10 (orange), AmtBD160E at LPR 5 (red), AmtBD160A at LPR 10 (blue), and AmtBD160A at LPR 5 (green). Eight sensors from two independent protein purification batches were measured, with three measurements recorded for each sensor. Single representative traces were chosen to visualize the results.\n\n### The residue D160 is essential to stabilize the PWW\n\nAs the PWW is formed near the sidechain of D160, an invariant residue in the Amt/Mep/Rh superfamily (Marini et al., 2006; Thomas et al., 2000), we further investigated the role of this residue in ensuring PWW and CWW stability by simulating the AmtB D160A and D160E mutants. Both mutants were stable on the time scale of our simulations and we did not detect major rearrangements in the protein. Moreover, all the elution profiles of the purified WT and variants proteins obtained by analytical size exclusion chromatography, before and after solubilization of the proteoliposomes in 2% DDM, were identical, showing a single monodisperse peak eluting between 10.4\u201310.6 ml (Figure 4\u2014figure supplement 1). Taken together, these results suggest that major structural re-arrangements in the mutants are unlikely to occur. The simulations revealed no difference in the formation of the CWW in the D160A and D160E variants compared to the WT, however the formation of the PWW is almost completely abolished in the presence of these mutations (Figure 4A).\n\nWe then expressed wild-type AmtB as well as the D160A and D160E mutants in S. cerevisiae triple-mep\u0394. Using ammonium as the sole nitrogen source, we found that cells expressing the mutants failed to grow, showing that AmtBD160A or AmtBD160E are unable to replace the function of the endogenous Mep transporters (Figure 4B).\n\nThe activity of the purified variants reconstituted into liposomes was next quantified using SSME. Electrogenic transport activity, triggered by a 200 mM ammonium pulse, led to a transient current with a maximum amplitude of 3.38 nA in AmtB, while AmtBD160A and AmtBD160E displayed reduced maximum currents of 0.63 nA and 1.42 nA respectively (Figure 4B, Figure 4\u2014figure supplement 2). Importantly, the lifetime of currents in both variants was unaffected by changes in liposomal LPR, and therefore the small transient current accounts for the binding of a NH4+ to the proteins and not a full translocation cycle (Table 1, Figure 4\u2014figure supplement 2; Bazzone et al., 2017). Additionally, it was impossible to determine with confidence a catalytic constant (Km) for both variants since no clear saturation was reached, even after an ammonium pulse of 200 mM (Figure 4C). These results thus demonstrate that AmtBD160A and AmtBD160E are transport-deficient. Our data show that residue D160 plays a central role in the transport mechanism as opposed to having a strictly structural role as previously suggested (Khademi et al., 2004). Moreover, the fact that the conservative D to E variation at position 160 impairs ammonium transport via AmtB indicates that D160 does not only show electrostatic interaction with NH4+ at the S1 site but is also involved in the translocation mechanism by stabilizing the PWW.\n\n### AmtB switches from transporter to channel-like activity in the absence of the \u2018twin-His\u2019 motif\n\nThe CWW and PWW are connected via the twin-His motif, which bridges the aqueous chains, while preventing the formation of a continuous water channel in the simulations (Figure 2A). We therefore next probed if the twin-His motif enables proton transfer between the two water wires by recording the activities of twin-His variants. Expressed in S. cerevisiae triple-mep\u0394, AmtBH168A/H318A did not support cell growth on low ammonium (Figure 5A). In-vitro SSME measurements with this variant displayed LPR-independent current decay rates (Figure 5A, Figure 5\u2014figure supplement 1, Table 1), showing that the residual current is caused by the association of NH4+ to AmtB without further transport. No current was recorded for the triple mutant AmtBS219A/H168A/H318A, in which binding at the periplasmic face was further altered, confirming that the residual current reflects NH4+ interaction near S1 (Figure 5\u2014figure supplement 1). The double-His mutant AmtBH168A/H318A is thus able to interact with NH4+ but cannot transport the substrate across the membrane. This supports our previous structural analysis showing that the CWW in the pore of the double-His mutant AmtBH168A/H318A is absent (Javelle et al., 2006).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig5-v3.jpg)\n\n**Figure 5.:** (A) Upper panels: maximum amplitude of the transient current measure using SSME after a 200 mM ammonium pulse. Eight sensors from two independent protein purification batches were measured, with three measurements recorded for each sensor (means\u00a0\u00b1\u00a0SD). Lower panels: yeast complementation test (strain 31019b, mep1\u0394 mep2\u0394 mep3\u0394 ura3) using 7 mM Glutamate (Glu) or 1 mM ammonium as a sole nitrogen source. The growth tests have been repeated twice. (B) Transient currents measured using SSME following a 200 mM ammonium pulse on sensors prepared with solutions containing either H2O (black) or D2O (red). The maximum amplitudes recorded after a 200 mM ammonium pulse on sensor prepared in H2O have been normalized to 1.0 for comparison. eight sensors from two independent protein purification batches were measured, with three measurements recorded for each sensor (means\u00a0\u00b1\u00a0SD).\u00a0(C) Kinetics analysis of the transport of NH4+ (or K+ in AmtBH168A (black), AmtBH318A (red) and WT-AmtB (bleu, only for NH4+, as no signal was measurable with K+). The maximum amplitudes recorded after a 200 mM NH4+ or K+ pulse have been normalized to 1.0 for comparison. Eight sensors from two independent protein purification batches were measured, with three measurements recorded for each sensor (means\u00a0\u00b1\u00a0SD). (D) Upper panels: maximum amplitude of the transient current measured using SSME after a 200 mM potassium pulse. N.M. Non Measurable. Eight sensors from two independent protein purification batches were measured, with three measurements recorded for each sensor (means\u00a0\u00b1\u00a0SD). Lower panels: yeast complementation test (strain #228, mep1\u0394 mep2\u0394 mep3\u0394 trk1\u0394 trk2\u0394 leu2 ura3) using media supplemented with 20 mM or 3 mM KCl. The growth test has been repeated twice.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) SSME analysis. Transient current measured after a 200 mM pulse of ammonium in proteoliposomes containing AmtB (black), AmtBH168A (purple), AmtBH318A (green), AmtBH168AH318A (red), AmtBS219AH168AH318A (grey) at LPR 10. (B) Normalized traces following a 200 mM ammonium or K+ pulse in proteoliposomes containing various AmtB variant at LPR 10 (black) or LPR 5 (red). Traces have been normalized based on their own maximum amplitude to permit comparison. eight sensors from two independent protein purification batches were measured, with three measurements recorded for each sensor. The average value are given Table 2. Single representative trace were chosen to visualize the results.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig5-figsupp2-v3.jpg)\n\nBy contrast, the two single histidine-to-alanine substitutions in the twin-His motif unexpectedly produced an LPR-dependent current in our SSME recordings (Figure 5A, Figure 5\u2014figure supplement 1, Table 1). Furthermore, triple-mep\u0394 yeast cells expressing these variants were able to grow in the presence of low ammonium concentrations (Figure 5A). Our previous crystal structure (Javelle et al., 2006) and our MD simulations (Figure 5\u2014figure supplement 2) show increased hydration in the area around A168, which could potentially form a pathway for direct translocation of NH4+ without a deprotonation step. To test this hypothesis, we measured the activity of AmtBH168A and AmtBH318A in D2O conditions, as described above. Crucially, the activity of both variants measured in the presence or absence of D2O was similar (Figure 5B), in contrast to native AmtB where no activity was recorded in D2O (Figure 2B), showing that proton transfer between water molecules is not a key mechanistic feature in the activity of the mutants. Additionally, the translocation of NH4+ is not saturable in the tested concentration range [12.5\u2013200 mM] for AmtBH168A and AmtBH318A (Figure 5C). Summarizing, these results suggest that AmtB switches from transporter- to channel-like activity in the absence of the twin-His motif, directly translocating hydrated NH4+ through the pore. In the wild-types of Amt/Mep/Rh protein family members, the twin-His motif is highly conserved, which shows that transporter, as opposed to channel activity, is mechanistically crucial for the function of these proteins. The only variation seen in naturally occurring sequences is a replacement of the first His by Glu in some fungal Mep proteins (Javelle et al., 2006; Thomas et al., 2000). Channel activity is so far only observed for the alanine mutants, not the wild-type. We hypothesized that transport activity might thus be key to ensure ion selectivity of AmtB, since NH4+ and K+ are cations of similar size and hydration energy (Aydin et al., 2020).\n\n### The twin-His motif interconnects the two water wires to ensure the selectivity of AmtB\n\nSince NH4+ was directly translocated in the absence of the twin-his motif and earlier studies implicated a role of the motif in AmtB selectivity (Ganz et al., 2020; Hall and Yan, 2013), we repeated our SSME experiments on the AmtBH168A and AmtBH318A variants using the competing K+ ion as substrate. A 200 mM K+ pulse triggered currents in both variants, whose decay rates strongly depended on the\u00a0LPR (Figure 5D, Table 1, Figure 5\u2014figure supplement 1). Furthermore, the single His variants, but not native AmtB, complemented the growth defect of a yeast strain lacking its three endogenous ammonium (Mep) and potassium (Trk) transporters when a limited concentration of K+was present (Figure 5D). The K+ translocation activity is not saturable in the substrate range [12.5\u2013200 mM] (Figure 5C). These results demonstrate that both variants, AmtBH168A and AmtBH318A, translocate K+ ions across the membrane. The substitutions within the twin-His motif thus abolished selectivity for NH4+.\n\nThe presence of both histidine residues is therefore critical in ammonium transport, since permeability of ammonium transporters for K+ would compromise ionic homeostasis and disrupt the membrane potential of E. coli cells, which crucially depends on maintaining K+ concentration gradients across the membrane. Moreover, since AmtB is expressed in E. coli under nitrogen starvation conditions (low NH4+/K+ ratio), loss of selectivity for NH4+ would impede ammonium uptake. Our results thus demonstrate that the twin-His motif, which is highly conserved amongst members of the family, is an essential functional element in the transport mechanism, preventing the transport of competing cations, whilst providing a pathway for proton transfer by bridging the periplasmic and the cytoplasmic water wires.\n\n### NH3 permeation through the hydrophobic pore\n\nUmbrella sampling free-energy calculations were performed to establish the rate limiting step of NH4+ transport. Our calculations show that NH3 translocation experiences only a moderate energy barrier (~10 kJ/mol) at the periplasmic hydrophobic constriction region (F107 and F215) (Figure 6). The starting points of the sampling windows were determined from the centers of HOLE calculations (Smart et al., 1996), optimizing the pathway of NH3 translocation across the pore. A possible influence from this selection regarding the pathway was further reduced by allowing the molecule to move freely perpendicular to the pore axis within a radius of 5 \u00c5 in addition to extensive sampling; however, residual bias from window selection cannot be completely excluded. From the free energy profile of NH3 translocation, we identified a shallow binding site below the twin-His motif (~5 kJ/mol). This is followed by a second hydrophobic region (I28, V314, F31 and Y32) that forms a small energy barrier between this binding site and the cytoplasmic exit. The increased residence time of NH3 within this energy minimum suggests that reprotonation to NH4+, caused by the cytoplasmic pH, occurs in this region (Figure 6). Since both energy barriers for H+ transfer along the water chains and NH3 permeation are relatively small, we concluded that either initial deprotonation or proton transfer across the twin-His motif could be rate-limiting for overall NH4+ transport.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig6-v3.jpg)\n\n**Figure 6.:** We probed an optimal pathway for NH3 transfer during our PMF calculations (left, purple dash trajectory) in the presence of both the PWW and CWW. The software HOLE (49) was used to determine the most likely transfer route. The pathway from the periplasm to the cytoplasm traverses the hydrophobic gate region (F107 and F215), crosses the cavity next to the twin-His motif (H168 and H318) occupied by the CWW, and continues across a second hydrophobic region (I28, V314, F31, Y32) before entering the cytoplasm.\n\n### Conclusion\n\nA new model for the mechanism of electrogenic ammonium transport therefore emerges from our findings (Figure 7). After deprotonation of NH4+ at the periplasmic side, a previously undiscovered polar conduction route enables H+ transfer into the cytoplasm. A parallel pathway, lined by hydrophobic groups within the protein core, facilitates the simultaneous transfer of uncharged NH3, driven by concentration differences. On the cytoplasmic face, the pH of the cell interior leads to recombination to NH4+, most likely near a second hydrophobic gate (Figure 6). The twin-His motif, which bridges the water chains constitutes the major selectivity gate for NH4+ transport preventing K+ flow. We propose that this mechanism is conserved amongst the electrogenic members of the Amt/Mep/Rh family. Importantly, two RhAG polymorphisms associated to the overhydrated stomatocytosis human syndrome have also acquired the ability to transport K+. Thus, deciphering the transport mechanism of two archetypal members of the family such as AmtB and NeRh50 could bring new insights to the understanding of substrate specificity determinants in Rh proteins in the context of human diseases (Bruce et al., 2009).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig7-v3.jpg)\n\n**Figure 7.:** Following sequestration of NH4+ at the periplasmic face, NH4+ is deprotonated and H+ and NH3 follow two separated pathways to the cytoplasm (orange arrows depict the pathway for H+ transfer, dark blue arrows for NH3), facilitated by the presence of two internal water wires. NH3 reprotonation likely occurs near the cytoplasmic exit (Figure 6). The hydrated regions within the protein as observed in simulations are highlighted by wireframe representation, crucial residues involved in the transport mechanism are shown as sticks.\n\nOur findings define a new mechanism, by which ionizable molecules that are usually charged in solution are selectively and efficiently transported across a highly hydrophobic environment like the AmtB/Rh pore. Alongside size-exclusion and ion desolvation (Kopec et al., 2018), it adds a new principle by which selectivity against competing ions can be achieved. Other biological transport systems, like the formate/nitrite transporters, may share similar mechanisms involving deprotonation-reprotonation cycles (Wiechert and Beitz, 2017).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Escherichia coli)</td>\n      <td>AmtB</td>\n      <td>Zheng et al., 2004</td>\n      <td>Uniprot: C3TLL2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Nitrosomonas europea)</td>\n      <td>Rh50</td>\n      <td>Lupo et al., 2007</td>\n      <td>Uniprot Q82 \u00d7 47</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>C43 (DE3)</td>\n      <td>Miroux and Walker, 1996</td>\n      <td></td>\n      <td>Chemically competent cells</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>GT1000</td>\n      <td>Javelle et al., 2004</td>\n      <td></td>\n      <td>Chemically competent cells</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET22b (+)</td>\n      <td>Novagen</td>\n      <td>Cat# - 69744</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDR195</td>\n      <td>Rentsch et al., 1995</td>\n      <td>Addgene - 36028</td>\n      <td>High copy yeast expression vector</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAD7</td>\n      <td>Cherif-Zahar et al., 2007</td>\n      <td></td>\n      <td>pESV2-RH50(His)6</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p426MET25</td>\n      <td>Mumberg et al., 1994</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PZheng</td>\n      <td>Zheng et al., 2004</td>\n      <td></td>\n      <td>pET22b-AmtB(His)6</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGDM2</td>\n      <td>This study</td>\n      <td></td>\n      <td>pET22b-AmtB(His)6H168AH318A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGDM4</td>\n      <td>This study</td>\n      <td></td>\n      <td>pET22b-AmtB(His)6D160A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGDM5</td>\n      <td>This study</td>\n      <td></td>\n      <td>pET22b-AmtB(His)6D160E</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGDM6</td>\n      <td>This study</td>\n      <td></td>\n      <td>pET22b-AmtB(His)6S219AH168AH318A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGW2</td>\n      <td>This study</td>\n      <td></td>\n      <td>pET22b-AmtB(His)6H168A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGDM9</td>\n      <td>This study</td>\n      <td></td>\n      <td>pDR195-AmtB(His)6D160A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGDM10</td>\n      <td>This study</td>\n      <td></td>\n      <td>pDR195-AmtB(His)6D160E</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGDM12</td>\n      <td>This study</td>\n      <td></td>\n      <td>pDR195-AmtB(His)6H168AH318A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGDM13</td>\n      <td>This study</td>\n      <td></td>\n      <td>pDR195-AmtB(His)6S219AH168AH318A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGW7</td>\n      <td>This study</td>\n      <td></td>\n      <td>pDR195-AmtB(His)6H168A</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>AmtBS219A F</td>\n      <td>IDT</td>\n      <td>PCR Primer (Mutagenesis)</td>\n      <td>GGTGGCACCGTGGTGGATATTAACGCCGCAATC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>AmtBD160A F</td>\n      <td>IDT</td>\n      <td>PCR Primer (Mutagenesis)</td>\n      <td>CTCACGGTGCGCTGGCCTTCGCGGGTGGCACC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>AmtBD160E F</td>\n      <td>IDT</td>\n      <td>PCR Primer (Mutagenesis)</td>\n      <td>CTCACGGTGCGCTGGAGTTCGCGGGTGGCACC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>AmtBH168A F</td>\n      <td>IDT</td>\n      <td>PCR Primer (Mutagenesis)</td>\n      <td>GGTGGCACCGTGGTGGCCATTAACGCCGCAATC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>AmtBH318A F</td>\n      <td>IDT</td>\n      <td>PCR Primer (Mutagenesis)</td>\n      <td>TGTCTTCGGTGTGGCCGGCGTTTGTGGCATT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>AmtB XhoI</td>\n      <td>IDT</td>\n      <td>PCR primer</td>\n      <td>AGTCCTCGAGATGAAGATAGCGACGATAAAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>AmtB BamHI</td>\n      <td>IDT</td>\n      <td>PCR primer</td>\n      <td>AGTCGGATCCTCACGCGTTATAGGCATTCTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P5\u2019NeRh</td>\n      <td>IDT</td>\n      <td>PCR primer</td>\n      <td>GCCACTAGTATGAGTAAACACCTATGTTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>P3\u2019NeRh</td>\n      <td>IDT</td>\n      <td>PCR primer</td>\n      <td>GCCGAATTCCTATCCTTCTGACTTGGCAC</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>AmtB(His)6</td>\n      <td>This study</td>\n      <td></td>\n      <td>purified from E. coli C43 (DE3) cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>AmtB(His)6D160A</td>\n      <td>This study</td>\n      <td></td>\n      <td>purified from E. coli C43 (DE3) cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>AmtB(His)6 D160E</td>\n      <td>This study</td>\n      <td></td>\n      <td>purified from E. coli C43 (DE3) cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>AmtB(His)6 H168AH318A</td>\n      <td>This study</td>\n      <td></td>\n      <td>purified from E. coli C43 (DE3) cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>AmtB(His)6 S219AH168AH318A</td>\n      <td>This study</td>\n      <td></td>\n      <td>purified from E. coli C43 (DE3) cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>AmtB(His)6 H168A</td>\n      <td>This study</td>\n      <td></td>\n      <td>purified from E. coli C43 (DE3) cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>AmtB(His)6 H318A</td>\n      <td>This study</td>\n      <td></td>\n      <td>purified from E. coli C43 (DE3) cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>NeRh50(His)6</td>\n      <td>This study</td>\n      <td></td>\n      <td>purified from E. coli C43 GT1000 cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>XhoI</td>\n      <td>Promega</td>\n      <td>Cat# - R6161</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>BamHI</td>\n      <td>Promega</td>\n      <td>Cat# - R6021</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Quikchange XL site-directed mutagensis kit</td>\n      <td>Agilent Technologies</td>\n      <td>Cat# 200516</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>n-dodecyl-\u03b2-D-maltopyranoside (DDM)</td>\n      <td>Avanti</td>\n      <td>Cat#- 850520</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>lauryldecylamine oxide (LDAO)</td>\n      <td>Avanti</td>\n      <td>Cat#- 850545</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>E. coli Polar Lipids</td>\n      <td>Avanti</td>\n      <td>Cat#\u2212100600</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phosphotidylcholine (POPC)</td>\n      <td>Avanti</td>\n      <td>Cat#\u2212850457</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Graphpad Prism software</td>\n      <td>GraphPad Prism (https://www.graphpad.com)</td>\n      <td></td>\n      <td>Version 6.01</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Origin Pro Software</td>\n      <td>Origin Labs (https://www.originlab.com)</td>\n      <td></td>\n      <td>Origin 2017 Version 94E</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SURFE2R Control Software</td>\n      <td>Nanion (https://www.nanion.de/en/)</td>\n      <td></td>\n      <td>V1.5.3.2</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mutagenesis\n\nAmtB mutants were generated using the Quikchange XL site-directed mutagenesis kit (Agilent Technologies), according to the manufacturer\u2019s instructions. The primers used for mutagenesis are listed in Key\u00a0resources\u00a0table. The template was the amtB gene cloned into the plasmid pET22b(+), as previously described (Zheng et al., 2004; Key resources table).\n\n### AmtB and NeRh50 expression in yeast and complementation test\n\nThe different variants of amtB were amplified using amtB cloned into pET22b(+) (Key resources table) as a template with the primers AmtB XhoI and AmtB BamHI (Key resources table) and then sub-cloned into the plasmids pDR195 (Key resources table). The NeRh50 gene was amplified from N. europaea genomic DNA (kind gift from Daniel J. Arp and Norman G. Hommes, Department of Botany and Plant Pathology, Oregon State University, Corvallis, USA) using the primers P5\u2019NeRh and P3\u2019NeRh (Key resources table), and was then cloned into the SpeI and EcoRI restriction sites of the high-copy vector p426Met25 (Key resources table), allowing controlled-expression of NeRh50 by the yeast methionine repressible MET25 promoter.\n\nSaccharomyces cerevisiae strains used in this study are the 31019b strain (mep1\u0394 mep2\u0394 mep3\u0394 ura3) and the #228 strain (mep1\u0394 mep2\u0394 mep3\u0394 trk1\u0394 trk2\u0394 leu2 ura3)\u00a0(Hoopen et al., 2010; Marini et al., 1997). The plasmids used in this study are listed in Key resources table. Cell transformation was performed as described previously (Gietz et al., 1992). For growth tests on limiting ammonium concentrations, yeast cells were grown in minimal buffered (pH 6.1) medium and for growth tests on limiting potassium concentrations, a minimal buffered (pH 6.1) medium deprived of potassium salts was used (Jacobs et al., 1980). 3% glucose was used as the carbon source and, 0.1% glutamate, 0.1% glutamine or (NH4)2SO4 at the specified concentrations were used as the nitrogen sources.\n\nAll growth experiments were repeated at least twice.\n\n### Protein purification\n\nAmtB(His6) cloned into the pET22b(+) vector (Key resources table) was overexpressed and purified as described previously (Zheng et al., 2004). The plasmid pAD7 (Key resources table) was used to overexpress NeRh50 in the E. coli strain GT1000 (Javelle et al., 2004). GT1000 was transformed with pAD7 and grown in M9 medium (Elbing and Brent, 2002), in which ammonium was replaced by 200 \u03bcg/ml glutamine as sole nitrogen source. NeRh50 was purified as described by Lupo et al., 2007 with minor modifications, namely: the membrane was solubilized using 2% lauryldecylamine oxide (LDAO) instead of 5% n-octyl-\u03b2-D-glucopyranoside (OG), and 0.09% LDAO was used in place of 0.5% \u03b2-OG in the final size exclusion chromatography buffer (50 mL Tris pH 7.8, 100 mL NaCl, 0.09% LDAO).\n\n### AmtB and NeRh50 insertion into proteoliposomes\n\nAmtB and NeRh50 were inserted into liposomes containing E. coli polar lipids/phosphatidylcholine (POPC) 2/1(wt/wt) as previously described (Mirandela et al., 2019). For each AmtB variant, proteoliposomes were prepared at lipid-to-protein ratios (LPRs) of 5, 10, and 50 (wt/wt). The size distribution of proteoliposomes was measured by dynamic light scattering (DLS) using a Zetasizer Nano ZS (Malvern Instruments, Malvern, UK). This analysis showed that the proteoliposomes had an average diameter of 110 nm (Figure 8). Proteoliposomes were divided into 100 \u00b5L aliquots and stored at \u221280\u00b0C.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/57183/elife-57183-fig8-v3.jpg)\n\n**Figure 8.:** Dynamic light scattering was used to determine the number-weighted distribution of liposome sizes in the detection reagent. The distribution was monodisperse, with a mean diameter of 110 nm.\n\nTo ensure that all AmtB variants were correctly inserted into the proteoliposomes, the proteoliposomes were solubilized in 2% DDM and the proteins analyzed by size exclusion chromatography using a superdex 200 (10 \u00d7 300) enhanced column. The elution profile of all variants and the wild-type were identical, showing a single monodisperse peak eluting between 10.4\u201310.6 ml (Figure 4\u2014figure supplement 1). This demonstrated that all proteins were correctly folded, as trimers, in the proteoliposomes.\n\n### Solid supported membrane electrophysiology\n\nTo form the solid-supported membrane, 3 mm gold-plated sensors were prepared according to the manufacturer\u2019s instructions (Nanion Technologies, Munich, Germany), as described previously (Bazzone et al., 2017). Proteoliposomes/empty liposomes were defrosted and sonicated in a sonication bath at 35 W for 1 min, diluted 10 times in non-activating (NA) solution (Supplementary file 1), and then 10 \u00b5l were added at the surface of the SSM on the sensor. After centrifugation, the sensors were stored at 4\u00b0C for a maximum of 48 hr before electrophysiological measurements. For the D2O experiments, all the solutions were prepared using D2O instead of water.\n\nAll measurements were made at room temperature (21\u00b0C) using a SURFE2R N1 apparatus (Nanion Technologies, Munich, Germany) with default parameters (Bazzone et al., 2017). Prior to any measurements, the quality of the sensors was determined by measuring their capacitance (15\u201330 nF) and conductance (<5 nS).\n\nFor functional measurements at a fixed pH, a single solution exchange protocol was used with each phase lasting 1 s (Bazzone et al., 2017). First, non-active (NA) solution was injected onto the sensor, followed by activating (A) solution containing the substrate at the desired concentration and finally NA solution (Supplementary file 1).\n\nFor the measurements under inwardly orientated pH gradient, a double solution exchange protocol was used (Bazzone et al., 2017), in which an additional resting solution phase of 15 min in NA solution at pH 8 was added to the end. The incubation phase adjusts the inner pH of the proteoliposomes to pH 8 and establishes a pH gradient at the beginning of each measurement by pulsing the activation solution at pH 5.\n\nEach sensor was measured in the order pH (in/out) 7/7, 8/5 (with NH4+), 8/5 (without NH4+), and finally again 7/7 to ensure that the signals do not significantly decrease with time. The data are normalized against the measurements conducted at pH7 in/out for each sensor. All measurements were recorded on 8 sensors from two independent protein purification batches, with 3 measurements recorded for each sensor.\n\nThe kinetic parameters were calculated using Graphpad Prism 6 (GraphPad Software, San Diego, California, USA) and fitted according to the Michaelis-Menten equation (Key resources table). Lifetime analysis of the current (decay time of the transient current) was performed to differentiate small pre-steady state currents, which arise due to the binding of a charged species to membrane proteins, from currents reflecting full transport cycles, which show faster decay rates under raised liposomal LPR (Bazzone et al., 2017). The decay time of the transient current (Table 1) was calculated by fitting the raw transient current data between the apex of the peak and the baseline (after transport) with a non-linear regression using OriginPro 2017 (OriginLab, Northampton, Massachusetts, USA). The regression was done using a one-phase exponential decay function with time constant parameter:\n\n$$\ny=y_{0}=A_{1}e^{\u2212x/t_{1}}\n$$\n\nThe fit was obtained using the Levenberg-Marquardt iteration algorithm, where x and y represent coordinates on the respective axis, y0 represents the offset at a given point, A represents the amplitude, and t is the time constant.\n\n### Molecular Dynamics simulations\n\nThe AmtB trimer (PDB code: 1U7G) (Khademi et al., 2004) was processed using the CHARMM-GUI web server (Lee et al., 2016). Any mutations inserted during the crystallization process were reverted to the wild-type form. The N-termini and C-termini of the subunits were capped with acetyl and N-methyl amide moieties, respectively. The protein was then inserted into a membrane patch of xy-dimensions 13 \u00d7 13 nm. Unless otherwise specified, a membrane composition of palmitoyl oleoyl phosphatidyl ethanolamine and palmitoyl oleoyl phosphatidyl glycine (POPE/POPG) at a 3:1 ratio was used in order to approximate the composition of a bacterial cytoplasmic membrane. We employed the CHARMM36 forcefield for the protein and counter ions (Best et al., 2012). The water molecules were modeled with the TIP3P model (Jorgensen et al., 1983). Water bonds and distances were constrained by the Settle method (Miyamoto and Kollman, 1992), and all other bonds by the LINCS method (Hess et al., 1997). In simulations without ammonium, K+ and Cl- ions were added to neutralize the system and obtain a bulk ionic concentration of 250 mM. In simulations with ammonium, K+ was replaced by NH4+. The parameters for NH4+ and NH3 (umbrella sampling simulations) were adapted from Nygaard et al., 2006.\n\nAfter a steepest descent energy minimization, the system was equilibrated by six consecutive equilibration steps using position restraints on heavy atoms of 1000 kJ/mol.nm2. The first three equilibration steps were conducted in an NVT ensemble, applying a Berendsen thermostat (Berendsen et al., 1984) to keep the temperature at 310K. The subsequent steps were conducted under an NPT ensemble, using a Berendsen barostat (Berendsen et al., 1984) to keep the pressure at 1 bar. Production molecular dynamics simulations were carried out using a v-rescale thermostat (Bussi et al., 2007) with a time constant of 0.2 ps, and a Berendsen barostat with semi-isotropic coupling. A timestep of 2 fs was used throughout the simulations.\n\nIn a subset of simulations, we aimed to test the effect of membrane voltage on the internal hydration of AmtB using CompEL. For the CompEL simulations (Kutzner et al., 2016), the system was duplicated along the z-axis, perpendicular to the membrane surface. To focus on the physiologically relevant voltage gradient in E. coli, that\u00a0is a negative potential on the inside of the cell of magnitude \u2212140 to \u2212170 mV\u00a0(Cohen and Venkatachalam, 2014), an antiparallel orientation of the two trimers in the double bilayers was used (Felle et al., 1980). The final double system consisted of a rectangular box of 13 \u00d7 13\u00d720 nm. For the CompEL simulations, 1000 positively charged (either NH4+ or K+) and 1000 negatively charged ions (Cl-) were added to the system, then the system was neutralized, and the desired ion imbalance established.\n\nThe Umbrella Sampling (US) Potential-of-Mean-Force (PMF) calculations (Torrie and Valleau, 1977) were set up as described previously by Hub et al., 2010b. A snapshot was taken from the simulation of the single bilayer system with the twin-His motif in the DE protonation state and both the CWW and PWW occupied. The pore coordinates were obtained using the software HOLE (Smart et al., 1996), removing the solvent and mutating F215 to alanine during the HOLE run only. Starting coordinates for each umbrella window were generated by placing NH3 in the central x-y coordinate of the pore defined by HOLE at positions every 0.5 \u00c5 in the z coordinate. Solvent molecules within 2 \u00c5 of the ammonia's N atom were removed. Minimization and equilibration were then re-performed as described above. Unless otherwise stated, position restraints were used for all water oxygen atoms in the CWW with a 200 kJ/mol.nm2 force constant; while the TIP3 molecules within the lower water wire were not restrained. For the US the N atom of ammonia was position-restrained with a force constant of 1000 kJ/mol.nm2 on the z axis and a 400 kJ/mol.nm2 cylindrical flat-bottomed potential with a radius of 5 \u00c5 in the x-y plane, as described earlier by Hub et al., 2010a. For some US window simulations, the ammonia z-axis restraints were increased and the time step reduced in the equilibration to relax steric clashes between sidechains and ammonia. After equilibration, US simulations were run for 10ns, using the parameters described above (Lee et al., 2016) and removing the initial two ns for further equilibration. The PMF profiles were generated with the GROMACS implementation of the weighted histogram analysis method (WHAM) with the periodic implementation (Hub et al., 2010a). Further US simulations were performed to as needed to improve sampling in regions of the profile that were not sufficiently sampled. The Bayesian bootstrap method was performed with 200 runs to calculate the standard deviation of the PMF.\n\n### Free energy calculations for proton translocation\n\nThe free energies for proton translocation were evaluated by protonating the water molecules at different sites along the periplasmic and cytoplasmic water wires. Electrostatic effects in proteins are often treated more effectively using semi-macroscopic models which can overcome the convergence problems of more rigorous microscopic models. Here we used the semi-macroscopic protein dipole/Langevin dipole approach of Warshel and coworkers in the linear response approximation version (PDLD/S-LRA) (Kato et al., 2006; Sham et al., 2000). Positions of the water molecules in the PWW and CWW were obtained from the corresponding MD snapshots (Figure 1). All PDLD/S-LRA pKa calculations were performed using the automated procedure in the MOLARIS simulations package (Lee et al., 1993) in combination with the ENZYMIX force field. The simulation included the use of the surface\u2010constrained all atom solvent model (SCAAS) (Warshel and King, 1985) and the local reaction field (LRF) long-range treatment of electrostatics. At each site, 20 configurations for the charged and uncharged state were generated. The obtained pKa values were then converted to free energies for proton translocation.\n",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "ba889366-34c6-4c84-bb9e-b2075818609a",
+      "submission_id": "10c53e39-67a4-48de-9ab8-46592ebee64a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Ben-Tal, Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57183.sa1](https://doi.org/10.7554/eLife.57183.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nA radically new mechanism is suggested here for the transport of NH4+ across the cytoplasmic membrane. According to this suggestion, strongly supported by molecular simulations, as well as various biophysical, mutagenesis, and cellular assays, NH4+ transport involves deprotonation, translocation of NH3 via hydrophobic pathway and the proton via two water-wires connected to each other by two Histidines, and reprotonation in the other end.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A two-lane mechanism for selective biological ammonium transport\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Nir Ben-Tal as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Oded Lewinson (Reviewer #2); Ian Collinson (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nSummary:\n\nNature have 'invented' various mechanisms to meet the challenge of selective translocation of charged molecules across the membrane. A study of two homologous NH4+ transporters, Escherichia coli AmtB and Nitrosomonas europaea Rh50, presented in this manuscript, suggests a new and very unique mechanism. According to this suggestion, strongly supported by molecular simulations, as well as various biophysical, mutagenesis, and cellular assays, NH4+ transport involves deprotonation, translocation of NH3 via hydrophobic pathway and the proton via two water-wires connected to each other by two Histidines, and reprotonation in the other end. Key amino acids that facilitate both proton and NH3 transfer are highlighted.\n\nThis is a very well thought of and carefully conducted study, and the proposed mechanism is revolutionary. The manuscript can be published after the authors will address a few issues.\n\nEssential revisions:\n\n1) The suggested pathways emerged from umbrella sampling simulations, which require predetermination of the \"reaction coordinate\". How certain the authors are about the proper choice of these for the water wires and NH3 translocation pathways? Maybe consider using methods like metadynamics that may (or may not) detect the pathways without prejudice? Else, at the very least, this point, i.e., the arbitrarily chosen pathways, should be discussed.\n\n2) The data in Figure 3 is normalized, but the authors do not explain how or why. It would be interesting to know whether there is any pH effect on transport. Presumably the initial deprotonation event would be strongly inhibited by lowering the external pH? So if there is no effect, could it mean that the deprotonation event is very fast? Or something else?\n\n3) It is important to show decay at different lipid-to-protein ratios in all figures.\n\n4) \"The K+ translocation activity is not saturable in the substrate range [12.5-200 mM]\".\n\nWhy were higher values not tested? This would help convey the specificity message. In addition, this suggested insatiable substrate-dependence should be compare to the proton affinity.\n\n5) \"On the cytoplasmic face, the pH of the cell interior leads to recombination to NH4+\"\n\nWhy is that? The cell's interior should be slightly basic.\n\n6) \"Summarizing, these results suggest that AmtB switches from transporter- to channel-like activity in the absence of the twin-His motif, directly translocating hydrated NH4+ through the pore.\" If we understand correctly, this conclusion is drawn from the data of the mutants in which case it may be irrelevant for the WT.\n\n7) \"Additionally, it was impossible to determine with confidence a catalytic constant (Km) for both variants since no clear saturation was reached, even after an ammonium pulse of 200 mM (Figure 4B).\" The D160A data in Figure 4B looks like a reasonable Michaelis Menten fit. We suggest using higher ammonium concentration (can go up to 800 mM in SSME) and report data and fits.\n\n8) In Figure 4C, the activity of the WT should be shown to allow for comparisons.\n\n9) For reproducibility the authors should make the simulations readily available to the public. All the relevant parameter files, trajectory, etc.\n",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5504856d-e613-4aa5-b1f1-b8853749600c",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C1",
+      "claim": "The transport of charged molecules across biological membranes faces the dual problem of accommodating charges in a highly hydrophobic environment while maintaining selective substrate translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "The transport of charged molecules across biological membranes faces the dual problem of accommodating charges in a highly hydrophobic environment while maintaining selective substrate translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about membrane transport challenges, drawing from established scientific understanding of membrane biophysics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "f3aa2afd-2fe5-430a-bd38-4b5000a26037",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C2",
+      "claim": "Ammonium transport is mediated by the ubiquitous Amt/Mep/Rh transporters that includes the human Rhesus factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Ammonium transport is mediated by the ubiquitous Amt/Mep/Rh transporters that includes the human Rhesus factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the protein family responsible for ammonium transport.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "6c14e01b-06c5-4c4d-bf08-e05deb4e0c24",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C3",
+      "claim": "AmtB from Escherichia coli and Rh50 from Nitrosomonas europaea exhibit electrogenic NH4+ transport via a unique two-lane pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a combination of electrophysiology, yeast functional complementation and extended molecular dynamics simulations, we reveal a unique two-lane pathway for electrogenic NH4+ transport in two archetypal members of the family, the transporters AmtB from Escherichia coli and Rh50 from Nitrosomonas europaea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple experimental approaches including electrophysiology, yeast complementation, and MD simulations described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "ee698d83-7bf6-4d73-929d-1cee0e84b32d",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C4",
+      "claim": "The two-lane pathway underpins a mechanism by which charged H+ and neutral NH3 are carried separately across the membrane after NH4+ deprotonation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathway underpins a mechanism by which charged H+ and neutral NH3 are carried separately across the membrane after NH4+ deprotonation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic conclusion is inferred from the combined experimental and computational data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "94c4ee91-9c36-4024-8092-b48839d72f78",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C5",
+      "claim": "This mechanism defines a new principle of achieving transport selectivity against competing ions in a biological transport process.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism defines a new principle of achieving transport selectivity against competing ions in a biological transport process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings showing selectivity for NH4+ over K+.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "9ed329e8-c95f-4089-a0c1-1f26e792b41b",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C6",
+      "claim": "The major role of bacterial, fungal, and plant Amt/Mep proteins is to scavenge ammonium for biosynthetic assimilation.",
+      "claim_type": "EXPLICIT",
+      "source": "The major role of bacterial, fungal, and plant Amt/Mep proteins is to scavenge ammonium for biosynthetic assimilation, whereas mammals are thought to produce Rh proteins in erythrocytes, kidney, and liver cells for detoxification purposes and to maintain pH homeostasis (Biver et al., 2008; Huang and Ye, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "1604330b-b802-44d3-8916-4f0488cc556a",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C7",
+      "claim": "Mammals produce Rh proteins in erythrocytes, kidney, and liver cells for detoxification purposes and to maintain pH homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The major role of bacterial, fungal, and plant Amt/Mep proteins is to scavenge ammonium for biosynthetic assimilation, whereas mammals are thought to produce Rh proteins in erythrocytes, kidney, and liver cells for detoxification purposes and to maintain pH homeostasis (Biver et al., 2008; Huang and Ye, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "a4d56ff1-ab1b-4c85-8539-488fd75005ac",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C8",
+      "claim": "In humans, Rh mutations are linked to pathologies that include inherited hemolytic anemia, stomatocytosis, and early-onset depressive disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, Rh mutations are linked to pathologies that include inherited hemolytic anemia, stomatocytosis, and early-onset depressive disorder (Huang and Ye, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "5fd192b0-40ac-4022-8d1d-a433a597fdb9",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C9",
+      "claim": "High-resolution structures available for several Amt, Mep and Rh proteins show a strongly hydrophobic pore leading towards the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution structures available for several Amt, Mep and Rh proteins show a strongly hydrophobic pore leading towards the cytoplasm (Andrade et al., 2005; Gruswitz et al., 2010; Khademi et al., 2004; Lupo et al., 2007; van den Berg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "0ee3fcc2-28ed-46f7-bb33-8702ba9af021",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C10",
+      "claim": "The observation of a hydrophobic pore led to the conclusion that the species translocated through Amt/Mep/Rh proteins is neutral NH3.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation led to the conclusion that the species translocated through Amt/Mep/Rh proteins is neutral NH3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical interpretation based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "f18a6e6f-dcc7-4887-a63f-726b3b59f9d0",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C11",
+      "claim": "The view that NH3 is the translocated species has been experimentally challenged for some plant Amt proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this view has been experimentally challenged, first for some plant Amt proteins (Ludewig et al., 2002; Mayer et al., 2006; McDonald and Ward, 2016; Neuh\u00e4user et al., 2014), followed by further in-vitro studies revealing that the activity of bacterial Amt proteins is electrogenic (Mirandela et al., 2019; Wacker et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "95de446f-1d2e-41ac-8ea5-25434c3754b0",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C12",
+      "claim": "The activity of bacterial Amt proteins is electrogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this view has been experimentally challenged, first for some plant Amt proteins (Ludewig et al., 2002; Mayer et al., 2006; McDonald and Ward, 2016; Neuh\u00e4user et al., 2014), followed by further in-vitro studies revealing that the activity of bacterial Amt proteins is electrogenic (Mirandela et al., 2019; Wacker et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "c6002390-81b4-4a5a-bf82-152f48fe2379",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C13",
+      "claim": "The activity of E. coli AmtB is electrogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Motivated by our finding that the activity of Escherichia coli AmtB is electrogenic (Mirandela et al., 2019), we first investigated the transport mechanism of the Rh50 protein from Nitrosomonas europaea (NeRh50).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "c359e8c1-30c4-43be-bab1-9a0176175b04",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C14",
+      "claim": "Rh and Amt proteins are distant homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Rh and Amt proteins are distant homologs, and thus a functional distinction between both subfamilies has been proposed (Huang and Ye, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "b58cdca6-87ce-43c3-9011-e7adb6521208",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C15",
+      "claim": "A functional distinction between Rh and Amt subfamilies has been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Rh and Amt proteins are distant homologs, and thus a functional distinction between both subfamilies has been proposed (Huang and Ye, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "f420585c-1f59-4da3-a9ab-40101256f3d5",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C16",
+      "claim": "Rh proteins have been repeatedly reported to serve as electroneutral NH3 or CO2 gas channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of NeRh50 is highly representative of Rh proteins (Gruswitz et al., 2010; Lupo et al., 2007) which have been repeatedly reported to serve as electroneutral NH3 or CO2 gas channels (Cherif-Zahar et al., 2007; Hub et al., 2010a; Li et al., 2007; Lupo et al., 2007; Weidinger et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "237c0932-f560-4b47-9791-b8ef8a37eba1",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C17",
+      "claim": "Purified NeRh50 reconstituted into liposomes exhibits NH4+-selective current as measured by SSME.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of purified NeRh50 reconstituted into liposomes was quantified using Solid-Supported Membrane Electrophysiology (SSME) (Bazzone et al., 2017) experiments, where we recorded a NH4+-selective current (Figure 1) with a decay rate that is strongly dependent on the lipid-to-protein ratio (LPR; Table 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "dbb7ff54-e7d9-43a2-8925-117e30e2d7c9",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C18",
+      "claim": "The decay rate of NeRh50 current is strongly dependent on the lipid-to-protein ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of purified NeRh50 reconstituted into liposomes was quantified using Solid-Supported Membrane Electrophysiology (SSME) (Bazzone et al., 2017) experiments, where we recorded a NH4+-selective current (Figure 1) with a decay rate that is strongly dependent on the lipid-to-protein ratio (LPR; Table 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Table 1 and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "37cb9641-1a0b-4129-ab52-651180bcbd57",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C19",
+      "claim": "NeRh50 expressed in S. cerevisiae triple-mep\u0394 strain complemented the growth defect on minimal medium containing ammonium as sole nitrogen source.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressed in a Saccharomyces cerevisiae triple-mep\u0394 strain, deprived of its three endogenous Mep ammonium transporters, NeRh50 complemented the growth defect on minimal medium containing ammonium as sole nitrogen source (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by yeast complementation data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "812c7c7e-b20f-440f-9c31-389173f647bd",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C20",
+      "claim": "The electrogenic transport activity observed for NeRh50 and AmtB may suggest a common transport mechanism amongst the distant Amt and Rh proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The electrogenic transport activity observed for NeRh50 and AmtB may suggest a common transport mechanism amongst the distant Amt and Rh proteins, but more experiments are needed to conclusively confirm this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observed electrogenic activity of both proteins.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "5593d67b-22a0-4973-928a-b646190f549d",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C21",
+      "claim": "AmtB forms homotrimers in the cytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "AmtB forms homotrimers in the cytoplasmic membrane, in which each monomer exhibits a potential periplasmic NH4+ binding region (S1) near residue D160, followed by a strongly hydrophobic pore leading towards the cytoplasm (Figure 2A; Khademi et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to structural studies and shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "7eaab42f-a53e-4bf1-9465-dd12ccfcc2cf",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C22",
+      "claim": "Each AmtB monomer exhibits a potential periplasmic NH4+ binding region (S1) near residue D160.",
+      "claim_type": "EXPLICIT",
+      "source": "AmtB forms homotrimers in the cytoplasmic membrane, in which each monomer exhibits a potential periplasmic NH4+ binding region (S1) near residue D160, followed by a strongly hydrophobic pore leading towards the cytoplasm (Figure 2A; Khademi et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to structural studies and shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "c7976b57-6ca1-4105-95aa-1637c10dd0e6",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C23",
+      "claim": "Two highly conserved histidine residues, H168 and H318, protrude into the AmtB lumen, forming the family's characteristic 'twin-His' motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Two highly conserved histidine residues, H168 and H318, protrude into the lumen, forming the family's characteristic 'twin-His' motif (Javelle et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "818360e7-60b3-4aef-8f70-b449fa8b0cfc",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C24",
+      "claim": "The only variation in the twin-His motif in members of the Amt/Mep/Rh family is in numerous fungal Mep transporters where the first His, corresponding to H168, is replaced by a Glu.",
+      "claim_type": "EXPLICIT",
+      "source": "The only variation in the twin-His motif in members of the Amt/Mep/Rh family is in numerous fungal Mep transporters where the first His, corresponding to H168, is replaced by a Glu (Javelle et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous sequence analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "16730f83-bfa1-448f-ab32-c99d1a6ff01f",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C25",
+      "claim": "Extended atomistic simulations show hydration of part of the putative hydrophobic NH3 pathway from the twin-His motif to the cytoplasm (cytoplasmic water wire - CWW).",
+      "claim_type": "EXPLICIT",
+      "source": "Extended atomistic simulations show a hydration pattern across the protein, in which cytoplasmic and periplasmic water wires, connected via H168, form a continuous pathway for proton transfer from the S1 NH4+ sequestration region to the cytoplasm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "1b2476e8-e07b-4109-856e-a275ba025e88",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C26",
+      "claim": "A previously unidentified second water-filled channel (periplasmic water wire - PWW) spans from residue D160 near the S1 region to the central twin-His motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a new observation we made over longer simulation timescales is the presence of a previously unidentified second water-filled channel (periplasmic water wire - PWW). The PWW spans from residue D160 near the S1 region to the central twin-His motif (Figure 2A) and is formed both in simulations without and with applied membrane voltage Vm (Figure 2A - Figure 2\u2014figure supplement 2; Vm in E. coli ~ \u2212140 mV [Felle et al., 1980]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a new finding from the MD simulations presented in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "f8f662b2-50e5-4c0c-8afb-5701e7bb99fd",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C27",
+      "claim": "The PWW is formed both in simulations without and with applied membrane voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "The PWW spans from residue D160 near the S1 region to the central twin-His motif (Figure 2A) and is formed both in simulations without and with applied membrane voltage Vm (Figure 2A - Figure 2\u2014figure supplement 2; Vm in E. coli ~ \u2212140 mV [Felle et al., 1980]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data shown in Figure 2A and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "30cd574d-6e66-4c99-a7d8-4f69ed0a2a03",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C28",
+      "claim": "The membrane voltage in E. coli is approximately \u2212140 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The PWW spans from residue D160 near the S1 region to the central twin-His motif (Figure 2A) and is formed both in simulations without and with applied membrane voltage Vm (Figure 2A - Figure 2\u2014figure supplement 2; Vm in E. coli ~ \u2212140 mV [Felle et al., 1980]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "470e17a4-7d76-491e-ad6f-537b842315fe",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C29",
+      "claim": "In the DE tautomeric state, the cytoplasmic pocket of each subunit almost continuously remains occupied by 3\u20134 water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In the DE tautomeric state, the cytoplasmic pocket of each subunit almost continuously remains occupied by 3\u20134 water molecules for the rest of the simulation (Figure 2A - Figure 2\u2014figure supplement 2, 3, 4; data for 0 mV membrane voltage).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data shown in Figure 2\u2014figure supplements 2, 3, 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "29cfde77-3144-4da4-8570-527b7c34b2dd",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C30",
+      "claim": "Using a cut-off value of three water molecules per subunit, a complete water chain is present during 79% of the simulations in the DE state, and only during 12% of the simulated time in the ED state.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a cut-off value of three water molecules per subunit, a complete water chain is present during 79% of the simulations in the DE state, and only during 12% of the simulated time in the ED state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantitative data from the MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "14ffb2ac-d215-47c9-902f-289deff8a55c",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C31",
+      "claim": "The PWW is generally more transiently occupied than the cytoplasmic channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The PWW is generally more transiently occupied than the cytoplasmic channel; however, we record up to 23% occupancy with at least three water molecules when the histidine sidechains are in the ED tautomeric state (Figure 2A - Figure 2\u2014figure supplement 2, 3, 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data shown in Figure 2\u2014figure supplements 2, 3, 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "f9a896ab-f658-42d8-9195-3040d3c1d6a4",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C32",
+      "claim": "Both water wires are connected via the twin-His motif, which bridges the aqueous chains, while preventing the formation of a continuous water channel in the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Both water wires are connected via the twin-His motif, which bridges the aqueous chains, while preventing the formation of a continuous water channel in the simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "0e453e2f-828a-4d07-a450-72abd01ba5a2",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C33",
+      "claim": "Water molecules and histidine side chains could serve as efficient pathways to facilitate proton transfer in proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Although neither the CWW nor the PWW are sufficiently wide to allow the transfer of solvated NH4+, water molecules and histidine side chains could serve as efficient pathways to facilitate proton transfer in proteins (Acharya et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature on proton transfer mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "d8536dd2-33d8-4324-8fe9-89c29cfc760e",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C34",
+      "claim": "The key residues that line both water wires in AmtB are highly conserved in the family.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2\u2014figure supplement 1, the key residues that line both water wires in AmtB are highly conserved in the family.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by conservation analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "8d4ec001-a91d-4b48-a653-c73f16860610",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C35",
+      "claim": "AmtB activity was completely abolished when tested in the presence of D2O compared to buffer containing water.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that in an SSME-based assay where all buffers used to prepare the proteoliposomes and SSM sensors were made using D2O, AmtB activity was completely abolished compared to buffer containing water (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "c23855ae-2351-4f31-8ff5-2db1ba06cc9e",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C36",
+      "claim": "After rinsing the sensor prepared in D2O with water, AmtB re-gained 100% of its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "After rinsing the sensor prepared in D2O with water, AmtB re-gained 100% of its activity measured by SSME, showing that the presence of D2O did not affect the protein itself or the integrity of the proteoliposomes (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "5d1af9ad-cbd7-469f-a9b5-0feb92c0a79a",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C37",
+      "claim": "The presence of D2O did not affect the protein itself or the integrity of the proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "After rinsing the sensor prepared in D2O with water, AmtB re-gained 100% of its activity measured by SSME, showing that the presence of D2O did not affect the protein itself or the integrity of the proteoliposomes (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reversibility of the D2O effect.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "40bb3254-65dd-4c31-84d9-d2a752bcc99d",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C38",
+      "claim": "H+ transfer between water molecules is possible both within the PWW and CWW and could occur with high rates (the highest energy barrier is ~18 kJ/mol in the cytoplasmic wire near the twin-His motif).",
+      "claim_type": "EXPLICIT",
+      "source": "Further calculations suggested that H+ transfer between the water molecules is possible both within the PWW and CWW and could occur with high rates (the highest energy barrier is ~18 kJ/mol in the cytoplasmic wire near the twin-His motif; Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by free energy calculations shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "ed59ba92-6ea6-47bb-b638-111751cb967e",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C39",
+      "claim": "Proton transfer between water molecules, most likely the PWW and CWW detected in the simulations, may underpin the electrogenic activity of AmtB.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the experimental and computational data suggest that proton transfer between water molecules, most likely the PWW and CWW detected in the simulations, may underpin the electrogenic activity of AmtB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the combined experimental and computational data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "b59a055e-f472-4882-9400-ee8a83a05e43",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C40",
+      "claim": "In the absence of ammonium, a proton pulse did not trigger a discernible current.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ammonium, a proton pulse did not trigger a discernible current and additionally, in the presence of ammonium, an inward-orientated pH gradient did not increase AmtB activity (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "407dd06b-59fe-4073-9ac8-dddb8d876eae",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C41",
+      "claim": "In the presence of ammonium, an inward-orientated pH gradient did not increase AmtB activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ammonium, a proton pulse did not trigger a discernible current and additionally, in the presence of ammonium, an inward-orientated pH gradient did not increase AmtB activity (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "7cda7221-9bea-43aa-b06b-8d08a5a6b4a8",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C42",
+      "claim": "There is no H+-dependent symport activity of AmtB.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that there is no H+-dependent symport activity of AmtB, showing instead that AmtB is not able to translocate a proton in the absence of NH4+, and indicating that the current induced by AmtB activity is generated by specific deprotonation of the substrate and subsequent H+ translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing no proton-driven activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "1c0247ef-ef24-4255-88d7-6651344c51a5",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C43",
+      "claim": "AmtB is not able to translocate a proton in the absence of NH4+.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that there is no H+-dependent symport activity of AmtB, showing instead that AmtB is not able to translocate a proton in the absence of NH4+, and indicating that the current induced by AmtB activity is generated by specific deprotonation of the substrate and subsequent H+ translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing no proton-driven activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "a8423456-3adc-42bd-b55e-6746d85fe43f",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C44",
+      "claim": "The current induced by AmtB activity is generated by specific deprotonation of the substrate and subsequent H+ translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that there is no H+-dependent symport activity of AmtB, showing instead that AmtB is not able to translocate a proton in the absence of NH4+, and indicating that the current induced by AmtB activity is generated by specific deprotonation of the substrate and subsequent H+ translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "85c9b277-85b1-4c6c-9c46-7a8ebd7e897f",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C45",
+      "claim": "AmtB cannot act as an uncoupler.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, they show that AmtB cannot act as an uncoupler, which raises the question of proton selectivity and the coupling between NH3 and H+ transfer (Boogerd et al., 2011; Maeda et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing no proton-only transport.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "2a5d06f1-2e6e-4207-aef4-7cf527454eab",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C46",
+      "claim": "The PWW is transiently occupied and its occupancy is strongly dependent on the particular state and conformation of D160.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current data suggest that the PWW is transiently occupied and that its occupancy is strongly dependent on the particular state and conformation of D160, since even a D to E conservative change abolished presence of the PWW (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "8050bfeb-cee9-43b2-adb5-d53d68bd6120",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C47",
+      "claim": "A D to E conservative change at position 160 abolished presence of the PWW.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current data suggest that the PWW is transiently occupied and that its occupancy is strongly dependent on the particular state and conformation of D160, since even a D to E conservative change abolished presence of the PWW (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "d5e08338-ab2e-4ce3-8ac4-04c3cb232ecf",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C48",
+      "claim": "No significant occupancy of the PWW above the threshold of at least three water molecules was observed in the D160A and D160E AmtB variants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe no significant occupancy of the PWW above the threshold of at least three water molecules in the D160A and D160E AmtB variants, irrespective of the tautomeric protonation states of H168 and H318 (DE or ED, see Materials and method section).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "9cd88ffc-08bd-4aee-94a3-b5ad81dda496",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C49",
+      "claim": "Cells expressing AmtBD160A or AmtBD160E failed to grow using ammonium as the sole nitrogen source.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ammonium as the sole nitrogen source, we found that cells expressing the mutants failed to grow, showing that AmtBD160A or AmtBD160E are unable to replace the function of the endogenous Mep transporters (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from yeast complementation assays shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "750aa598-56e1-495a-b97f-2db741a7af44",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C50",
+      "claim": "AmtBD160A or AmtBD160E are unable to replace the function of the endogenous Mep transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ammonium as the sole nitrogen source, we found that cells expressing the mutants failed to grow, showing that AmtBD160A or AmtBD160E are unable to replace the function of the endogenous Mep transporters (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the yeast complementation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "28ec6698-141b-40e7-8ce9-dc7b833133f5",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C51",
+      "claim": "AmtBD160A displayed a reduced maximum current of 0.63 nA compared to 3.38 nA for wild-type AmtB.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrogenic transport activity, triggered by a 200 mM ammonium pulse, led to a transient current with a maximum amplitude of 3.38 nA in AmtB, while AmtBD160A and AmtBD160E displayed reduced maximum currents of 0.63 nA and 1.42 nA respectively (Figure 4B, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from SSME measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "99d4dd44-ffec-4b6d-a682-eba6082d4f1b",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C52",
+      "claim": "AmtBD160E displayed a reduced maximum current of 1.42 nA compared to 3.38 nA for wild-type AmtB.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrogenic transport activity, triggered by a 200 mM ammonium pulse, led to a transient current with a maximum amplitude of 3.38 nA in AmtB, while AmtBD160A and AmtBD160E displayed reduced maximum currents of 0.63 nA and 1.42 nA respectively (Figure 4B, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from SSME measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "13bd9c99-754a-43a7-9934-f88112766b79",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C53",
+      "claim": "The lifetime of currents in AmtBD160A and AmtBD160E variants was unaffected by changes in liposomal LPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the lifetime of currents in both variants was unaffected by changes in liposomal LPR, and therefore the small transient current accounts for the binding of a NH4+ to the proteins and not a full translocation cycle (Table 1, Figure 4\u2014figure supplement 2; Bazzone et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Table 1 and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "6e6d788a-1ceb-406d-8ef2-8f3a8ebef793",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C54",
+      "claim": "The small transient current in AmtBD160A and AmtBD160E accounts for the binding of NH4+ to the proteins and not a full translocation cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the lifetime of currents in both variants was unaffected by changes in liposomal LPR, and therefore the small transient current accounts for the binding of a NH4+ to the proteins and not a full translocation cycle (Table 1, Figure 4\u2014figure supplement 2; Bazzone et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the LPR-independence of the current decay.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "99217a51-8403-407b-994c-2dfd9edfa288",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C55",
+      "claim": "It was impossible to determine with confidence a catalytic constant (Km) for AmtBD160A and AmtBD160E variants since no clear saturation was reached, even after an ammonium pulse of 200 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it was impossible to determine with confidence a catalytic constant (Km) for both variants since no clear saturation was reached, even after an ammonium pulse of 200 mM (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "a8f0a84b-fa44-4fff-a1cc-9b206a9a68d9",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C56",
+      "claim": "AmtBD160A and AmtBD160E are transport-deficient.",
+      "claim_type": "EXPLICIT",
+      "source": "These results thus demonstrate that AmtBD160A and AmtBD160E are transport-deficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data showing reduced activity and lack of saturation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "9eea53b3-b44e-4535-ba21-c7b10c3a6fb1",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C57",
+      "claim": "Residue D160 plays a central role in the transport mechanism as opposed to having a strictly structural role.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that residue D160 plays a central role in the transport mechanism as opposed to having a strictly structural role as previously suggested (Khademi et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional data on D160 mutants.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "ff5c176b-0662-4d9e-bfaf-67ad109a3ef0",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C58",
+      "claim": "The conservative D to E variation at position 160 impairs ammonium transport via AmtB.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the fact that the conservative D to E variation at position 160 impairs ammonium transport via AmtB indicates that D160 does not only show electrostatic interaction with NH4+ at the S1 site but is also involved in the translocation mechanism by stabilizing the PWW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on the D160E mutant.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "49914cb9-95b4-4efe-b6c0-f596295a63bf",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C59",
+      "claim": "D160 is involved in the translocation mechanism by stabilizing the PWW.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the fact that the conservative D to E variation at position 160 impairs ammonium transport via AmtB indicates that D160 does not only show electrostatic interaction with NH4+ at the S1 site but is also involved in the translocation mechanism by stabilizing the PWW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental and computational data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "0db6e8cd-a65c-41b9-963b-5bf6b283c42f",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C60",
+      "claim": "AmtBH168A/H318A expressed in S. cerevisiae triple-mep\u0394 did not support cell growth on low ammonium.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressed in S. cerevisiae triple-mep\u0394, AmtBH168A/H318A did not support cell growth on low ammonium (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from yeast complementation assays shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "6b670833-35ba-424b-99c8-51cda2768e12",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C61",
+      "claim": "In-vitro SSME measurements with AmtBH168A/H318A displayed LPR-independent current decay rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In-vitro SSME measurements with this variant displayed LPR-independent current decay rates (Figure 5A, Figure 5\u2014figure supplement 1, Table 1), showing that the residual current is caused by the association of NH4+ to AmtB without further transport.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5A, Figure 5\u2014figure supplement 1, and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "4e1eccad-23ac-44b1-bfd8-3a6b4981fb12",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C62",
+      "claim": "The residual current in AmtBH168A/H318A is caused by the association of NH4+ to AmtB without further transport.",
+      "claim_type": "EXPLICIT",
+      "source": "In-vitro SSME measurements with this variant displayed LPR-independent current decay rates (Figure 5A, Figure 5\u2014figure supplement 1, Table 1), showing that the residual current is caused by the association of NH4+ to AmtB without further transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the LPR-independence of the current decay.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "075ffe7f-b3bf-41f8-9839-a53afb23b10d",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C63",
+      "claim": "No current was recorded for the triple mutant AmtBS219A/H168A/H318A.",
+      "claim_type": "EXPLICIT",
+      "source": "No current was recorded for the triple mutant AmtBS219A/H168A/H318A, in which binding at the periplasmic face was further altered, confirming that the residual current reflects NH4+ interaction near S1 (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "d53e7235-1ad7-45ad-bd45-bbf9db91cf35",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C64",
+      "claim": "The residual current in AmtBH168A/H318A reflects NH4+ interaction near S1.",
+      "claim_type": "EXPLICIT",
+      "source": "No current was recorded for the triple mutant AmtBS219A/H168A/H318A, in which binding at the periplasmic face was further altered, confirming that the residual current reflects NH4+ interaction near S1 (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of the double and triple mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "23d2a3ef-54ef-43a1-84d5-2aa460e2b63a",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C65",
+      "claim": "The double-His mutant AmtBH168A/H318A is able to interact with NH4+ but cannot transport the substrate across the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The double-His mutant AmtBH168A/H318A is thus able to interact with NH4+ but cannot transport the substrate across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing binding but no transport.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "a780d533-53ea-4b18-92d1-302fef81f45f",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C66",
+      "claim": "The CWW in the pore of the double-His mutant AmtBH168A/H318A is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports our previous structural analysis showing that the CWW in the pore of the double-His mutant AmtBH168A/H318A is absent (Javelle et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "c99eca4b-e0b3-4eb3-ae25-4bff7874ba80",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C67",
+      "claim": "The two single histidine-to-alanine substitutions in the twin-His motif produced an LPR-dependent current in SSME recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the two single histidine-to-alanine substitutions in the twin-His motif unexpectedly produced an LPR-dependent current in our SSME recordings (Figure 5A, Figure 5\u2014figure supplement 1, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5A, Figure 5\u2014figure supplement 1, and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "df5bbf0c-0fff-4351-84d2-cbb110c2e88a",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C68",
+      "claim": "Triple-mep\u0394 yeast cells expressing AmtBH168A or AmtBH318A were able to grow in the presence of low ammonium concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, triple-mep\u0394 yeast cells expressing these variants were able to grow in the presence of low ammonium concentrations (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from yeast complementation assays shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "b1eb5771-8986-4fe5-8081-1ff2b2e6857a",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C69",
+      "claim": "The crystal structure and MD simulations show increased hydration in the area around A168 in the H168A mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous crystal structure (Javelle et al., 2006) and our MD simulations (Figure 5\u2014figure supplement 2) show increased hydration in the area around A168, which could potentially form a pathway for direct translocation of NH4+ without a deprotonation step.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous structural data and MD simulations shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "c74f2792-8476-4474-b9d2-1a11565fc931",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C70",
+      "claim": "The activity of AmtBH168A and AmtBH318A measured in the presence or absence of D2O was similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the activity of both variants measured in the presence or absence of D2O was similar (Figure 5B), in contrast to native AmtB where no activity was recorded in D2O (Figure 2B), showing that proton transfer between water molecules is not a key mechanistic feature in the activity of the mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "9951b387-dc64-43a1-9bbd-d8ca914b14c1",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C71",
+      "claim": "Proton transfer between water molecules is not a key mechanistic feature in the activity of AmtBH168A and AmtBH318A mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the activity of both variants measured in the presence or absence of D2O was similar (Figure 5B), in contrast to native AmtB where no activity was recorded in D2O (Figure 2B), showing that proton transfer between water molecules is not a key mechanistic feature in the activity of the mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the D2O insensitivity of the mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "278d7cce-83a1-404d-8dbb-06ff4699cfc3",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C72",
+      "claim": "The translocation of NH4+ is not saturable in the tested concentration range [12.5\u2013200 mM] for AmtBH168A and AmtBH318A.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the translocation of NH4+ is not saturable in the tested concentration range [12.5\u2013200 mM] for AmtBH168A and AmtBH318A (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "decd8b25-8d94-42e4-94ac-18dfb733237b",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C73",
+      "claim": "AmtB switches from transporter- to channel-like activity in the absence of the twin-His motif, directly translocating hydrated NH4+ through the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Summarizing, these results suggest that AmtB switches from transporter- to channel-like activity in the absence of the twin-His motif, directly translocating hydrated NH4+ through the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data on the single His mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "6a6363b2-b85a-4a21-b018-8b7e535ff58f",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C74",
+      "claim": "The twin-His motif is highly conserved in the wild-types of Amt/Mep/Rh protein family members.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild-types of Amt/Mep/Rh protein family members, the twin-His motif is highly conserved, which shows that transporter, as opposed to channel activity, is mechanistically crucial for the function of these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence conservation analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "fa27b14f-5428-4608-98d6-c0a5ec4b00a1",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C75",
+      "claim": "Transporter, as opposed to channel activity, is mechanistically crucial for the function of Amt/Mep/Rh proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild-types of Amt/Mep/Rh protein family members, the twin-His motif is highly conserved, which shows that transporter, as opposed to channel activity, is mechanistically crucial for the function of these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the conservation of the twin-His motif and the functional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "2d07464e-70db-4126-b5c0-0eeba64f0729",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C76",
+      "claim": "A 200 mM K+ pulse triggered currents in AmtBH168A and AmtBH318A variants, whose decay rates strongly depended on the LPR.",
+      "claim_type": "EXPLICIT",
+      "source": "A 200 mM K+ pulse triggered currents in both variants, whose decay rates strongly depended on the LPR (Figure 5D, Table 1, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5D, Table 1, and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "d4e990ab-db1c-4891-9a25-5d23a3ef387d",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C77",
+      "claim": "The single His variants, but not native AmtB, complemented the growth defect of a yeast strain lacking its three endogenous ammonium (Mep) and potassium (Trk) transporters when a limited concentration of K+ was present.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the single His variants, but not native AmtB, complemented the growth defect of a yeast strain lacking its three endogenous ammonium (Mep) and potassium (Trk) transporters when a limited concentration of K+was present (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from yeast complementation assays shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "2475aec2-8f6e-44d2-88fd-38523ab7e644",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C78",
+      "claim": "The K+ translocation activity is not saturable in the substrate range [12.5\u2013200 mM] for AmtBH168A and AmtBH318A.",
+      "claim_type": "EXPLICIT",
+      "source": "The K+ translocation activity is not saturable in the substrate range [12.5\u2013200 mM] (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "7d9ec0b5-e337-4136-bee4-b94b84a85677",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C79",
+      "claim": "AmtBH168A and AmtBH318A translocate K+ ions across the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that both variants, AmtBH168A and AmtBH318A, translocate K+ ions across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined experimental data showing K+ transport activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "7e646282-ca50-4716-ac39-be93ba63cfee",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C80",
+      "claim": "The substitutions within the twin-His motif abolished selectivity for NH4+.",
+      "claim_type": "EXPLICIT",
+      "source": "The substitutions within the twin-His motif thus abolished selectivity for NH4+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the K+ transport activity of the mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "5cddcb8c-04af-466c-8d9e-338236d12223",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C81",
+      "claim": "The presence of both histidine residues is critical in ammonium transport.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of both histidine residues is therefore critical in ammonium transport, since permeability of ammonium transporters for K+ would compromise ionic homeostasis and disrupt the membrane potential of E. coli cells, which crucially depends on maintaining K+ concentration gradients across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional data and knowledge of cellular physiology.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "5fc39e5f-59ef-4317-8bba-cd7952141302",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C82",
+      "claim": "Permeability of ammonium transporters for K+ would compromise ionic homeostasis and disrupt the membrane potential of E. coli cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of both histidine residues is therefore critical in ammonium transport, since permeability of ammonium transporters for K+ would compromise ionic homeostasis and disrupt the membrane potential of E. coli cells, which crucially depends on maintaining K+ concentration gradients across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of cellular physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "fbc58c27-112a-4c25-bbb1-016d7ae6df76",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C83",
+      "claim": "AmtB is expressed in E. coli under nitrogen starvation conditions (low NH4+/K+ ratio).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since AmtB is expressed in E. coli under nitrogen starvation conditions (low NH4+/K+ ratio), loss of selectivity for NH4+ would impede ammonium uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of AmtB regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "5da58723-664c-4ec6-8038-df6ac2579e65",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C84",
+      "claim": "Loss of selectivity for NH4+ would impede ammonium uptake under nitrogen starvation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since AmtB is expressed in E. coli under nitrogen starvation conditions (low NH4+/K+ ratio), loss of selectivity for NH4+ would impede ammonium uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the physiological context.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "102574cb-4fe0-4f36-a682-6a6eee9668c1",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C85",
+      "claim": "The twin-His motif is an essential functional element in the transport mechanism, preventing the transport of competing cations, whilst providing a pathway for proton transfer by bridging the periplasmic and the cytoplasmic water wires.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus demonstrate that the twin-His motif, which is highly conserved amongst members of the family, is an essential functional element in the transport mechanism, preventing the transport of competing cations, whilst providing a pathway for proton transfer by bridging the periplasmic and the cytoplasmic water wires.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental and computational data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "59958b83-792d-4a3a-8d00-65e3429c1777",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C86",
+      "claim": "NH3 translocation experiences only a moderate energy barrier (~10 kJ/mol) at the periplasmic hydrophobic constriction region (F107 and F215).",
+      "claim_type": "EXPLICIT",
+      "source": "Our calculations show that NH3 translocation experiences only a moderate energy barrier (~10 kJ/mol) at the periplasmic hydrophobic constriction region (F107 and F215) (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by umbrella sampling free-energy calculations shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "f41e01c1-b0db-462e-8fd9-78a614abc766",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C87",
+      "claim": "A shallow binding site for NH3 exists below the twin-His motif (~5 kJ/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "From the free energy profile of NH3 translocation, we identified a shallow binding site below the twin-His motif (~5 kJ/mol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by free energy calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "400a0f62-46c5-47b1-ae4a-b3bc20bbe06b",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C88",
+      "claim": "A second hydrophobic region (I28, V314, F31 and Y32) forms a small energy barrier between the binding site and the cytoplasmic exit.",
+      "claim_type": "EXPLICIT",
+      "source": "This is followed by a second hydrophobic region (I28, V314, F31 and Y32) that forms a small energy barrier between this binding site and the cytoplasmic exit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by free energy calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "0b00a293-75ea-4d83-8b82-5bc395f730cf",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C89",
+      "claim": "The increased residence time of NH3 within the energy minimum suggests that reprotonation to NH4+, caused by the cytoplasmic pH, occurs in this region.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased residence time of NH3 within this energy minimum suggests that reprotonation to NH4+, caused by the cytoplasmic pH, occurs in this region (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the free energy profile.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "981e50f2-9412-4036-ac49-f5b525e92f18",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C90",
+      "claim": "Either initial deprotonation or proton transfer across the twin-His motif could be rate-limiting for overall NH4+ transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both energy barriers for H+ transfer along the water chains and NH3 permeation are relatively small, we concluded that either initial deprotonation or proton transfer across the twin-His motif could be rate-limiting for overall NH4+ transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the free energy calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "6e3ce19a-57f0-4ea7-a391-758a428b939a",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C91",
+      "claim": "After deprotonation of NH4+ at the periplasmic side, a polar conduction route enables H+ transfer into the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "After deprotonation of NH4+ at the periplasmic side, a previously undiscovered polar conduction route enables H+ transfer into the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the combined experimental and computational data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "3cc004b4-f5bc-4e9b-8094-4e9d732ddf53",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C92",
+      "claim": "A parallel pathway, lined by hydrophobic groups within the protein core, facilitates the simultaneous transfer of uncharged NH3, driven by concentration differences.",
+      "claim_type": "EXPLICIT",
+      "source": "A parallel pathway, lined by hydrophobic groups within the protein core, facilitates the simultaneous transfer of uncharged NH3, driven by concentration differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the combined experimental and computational data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "44f665e8-ee9b-4d0e-9902-2a2153904cb6",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C93",
+      "claim": "On the cytoplasmic face, the pH of the cell interior leads to recombination to NH4+, most likely near a second hydrophobic gate.",
+      "claim_type": "EXPLICIT",
+      "source": "On the cytoplasmic face, the pH of the cell interior leads to recombination to NH4+, most likely near a second hydrophobic gate (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the free energy profile and pH considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "d799f0bb-d77c-40ea-8365-373433ce88b3",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C94",
+      "claim": "The twin-His motif, which bridges the water chains, constitutes the major selectivity gate for NH4+ transport preventing K+ flow.",
+      "claim_type": "EXPLICIT",
+      "source": "The twin-His motif, which bridges the water chains constitutes the major selectivity gate for NH4+ transport preventing K+ flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental data on selectivity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "0bb4a8d9-bb09-4fb3-a296-0b7284ab993d",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C95",
+      "claim": "This mechanism is conserved amongst the electrogenic members of the Amt/Mep/Rh family.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that this mechanism is conserved amongst the electrogenic members of the Amt/Mep/Rh family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the findings for AmtB and NeRh50.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "9064f207-b4c6-46d8-ac7a-5299625e0b93",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C96",
+      "claim": "Two RhAG polymorphisms associated to the overhydrated stomatocytosis human syndrome have acquired the ability to transport K+.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, two RhAG polymorphisms associated to the overhydrated stomatocytosis human syndrome have also acquired the ability to transport K+. Thus, deciphering the transport mechanism of two archetypal members of the family such as AmtB and NeRh50 could bring new insights to the understanding of substrate specificity determinants in Rh proteins in the context of human diseases (Bruce et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "54540b86-7de2-4e51-a3c0-888a7426cb60",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C97",
+      "claim": "Deciphering the transport mechanism of AmtB and NeRh50 could bring new insights to the understanding of substrate specificity determinants in Rh proteins in the context of human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, two RhAG polymorphisms associated to the overhydrated stomatocytosis human syndrome have also acquired the ability to transport K+. Thus, deciphering the transport mechanism of two archetypal members of the family such as AmtB and NeRh50 could bring new insights to the understanding of substrate specificity determinants in Rh proteins in the context of human diseases (Bruce et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "89093a14-9de2-48a4-8711-3d0a0f9e8998",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C98",
+      "claim": "The findings define a new mechanism by which ionizable molecules that are usually charged in solution are selectively and efficiently transported across a highly hydrophobic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings define a new mechanism, by which ionizable molecules that are usually charged in solution are selectively and efficiently transported across a highly hydrophobic environment like the AmtB/Rh pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "74bf674b-9f7e-4127-be20-0b07eccc5111",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C99",
+      "claim": "This mechanism adds a new principle by which selectivity against competing ions can be achieved, alongside size-exclusion and ion desolvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Alongside size-exclusion and ion desolvation (Kopec et al., 2018), it adds a new principle by which selectivity against competing ions can be achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the findings, with citation to previous work on other selectivity mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "e3c563e5-d978-4f62-b840-b5ee9bf1d8a5",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "claim_id": "C100",
+      "claim": "Other biological transport systems, like the formate/nitrite transporters, may share similar mechanisms involving deprotonation-reprotonation cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Other biological transport systems, like the formate/nitrite transporters, may share similar mechanisms involving deprotonation-reprotonation cycles (Wiechert and Beitz, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement with citation to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "be3700c8-2fa4-4651-af02-c6f36902c827",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NeRh50 exhibits electrogenic NH4+-selective transport activity. Purified NeRh50 reconstituted into liposomes shows NH4+-selective current with LPR-dependent decay rates in SSME experiments, and complements growth defects in yeast lacking endogenous ammonium transporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 provide converging experimental evidence from electrophysiology (SSME) and functional complementation assays. The LPR-dependence of current decay (C18) is a critical control demonstrating full transport cycles rather than mere binding. The suggestion of a common mechanism with AmtB (C20) is appropriately qualified as speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "b816a1c8-f6ca-4c9e-b712-8c3bdc452016",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MD simulations reveal two interconnected water wires in AmtB: a cytoplasmic water wire (CWW) and a previously unidentified periplasmic water wire (PWW). The PWW spans from D160 to the twin-His motif, while the CWW extends from the twin-His to the cytoplasm. Both are connected via the twin-His motif, with occupancy dependent on histidine tautomeric states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 describe computational findings from extended MD simulations with quantitative occupancy data (C30: 79% vs 12% in DE vs ED states). The identification of the PWW is novel and supported by simulations at different voltages (C27). Conservation analysis (C34) strengthens the biological relevance. However, these are computational predictions requiring experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "fd7dd8d0-67ec-47d9-8ac4-4df7d84b418a",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "D2O experiments demonstrate that water-mediated proton transfer is essential for AmtB activity. AmtB activity is completely abolished in D2O but fully recovers upon rinsing with H2O. Free energy calculations show that H+ transfer along the water wires has moderate energy barriers (~18 kJ/mol).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The D2O experiment (C35-C37) provides strong experimental support for water-mediated proton transfer. The reversibility (C36) is a critical control ruling out protein denaturation. Free energy calculations (C38) complement the experimental findings. The inference that water wires underpin electrogenic activity (C39) is well-supported by the combined data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "08853939-7aac-4a3f-b1f9-384dc6617edf",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AmtB does not function as a H+-driven symporter or uncoupler. Proton pulses alone do not trigger current, and inward pH gradients do not enhance AmtB activity in the presence of ammonium. The electrogenic current is generated by NH4+ deprotonation and subsequent H+ translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 present clear negative results from pH gradient experiments shown in Figure 3. The inferences (C42-C45) logically follow from these data, ruling out alternative mechanisms. This is important for establishing the transport mechanism, though the experiments are relatively straightforward controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "4c5533f6-121a-429f-87b1-f76a28fac5dc",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Residue D160 is essential for AmtB transport function by stabilizing the PWW. D160A and D160E mutants abolish PWW formation in simulations, fail to complement yeast growth defects, show drastically reduced currents with LPR-independent decay, and lack saturable kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result combines computational (C46-C48) and experimental evidence (C49-C55) demonstrating that D160 plays a mechanistic rather than structural role. The convergence of MD simulations showing PWW loss, yeast complementation failure, reduced SSME currents, LPR-independence, and lack of saturation provides strong support. The conservative D\u2192E mutation also abolishing function (C47, C58) is particularly informative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "6337528c-0e05-4f9e-bf18-c64fdd4bbf23",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The double-His mutant AmtBH168A/H318A can bind NH4+ but cannot transport it. This mutant shows LPR-independent current decay indicating binding without translocation, fails to support yeast growth, and lacks the CWW according to previous structural analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 provide consistent evidence from yeast complementation and SSME showing binding without transport. The triple mutant control (C63-C64) strengthens the interpretation. Citation to previous structural work (C66) provides additional support. The data clearly distinguish binding from transport.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "661b8521-a1dc-4646-be9e-b7465aaae8d8",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Single histidine mutants (H168A and H318A) switch AmtB from transporter to channel-like activity, directly translocating hydrated NH4+. These mutants show LPR-dependent currents, support yeast growth, exhibit D2O-insensitive activity, and lack saturable kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 provide multiple lines of evidence for a mechanistic switch. The D2O insensitivity (C70-C71) is particularly compelling, contrasting with wild-type behavior. The lack of saturation (C72) supports channel-like behavior. However, the increased hydration observed in simulations (C69) is from a previous structure, not new data. The inference of channel-like activity (C73) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "8376975c-c214-4b44-9b1f-92e26f6cdb6f",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The twin-His motif is essential for NH4+ selectivity over K+. Single histidine mutants (H168A and H318A) transport K+ with LPR-dependent kinetics and complement yeast strains lacking both ammonium and potassium transporters, demonstrating loss of selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 provide strong experimental evidence for K+ transport by single His mutants using both SSME and yeast complementation. The loss of selectivity (C80) and its physiological implications (C81) are well-reasoned. The conclusion about the twin-His motif's role (C85) integrates multiple findings. This is a key result establishing the selectivity mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "a5ade84d-90b2-412a-931d-5825a5db5a29",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Umbrella sampling calculations reveal that NH3 translocation through the hydrophobic pore encounters moderate energy barriers (~10 kJ/mol at the periplasmic constriction). A shallow binding site exists below the twin-His motif, followed by a second hydrophobic region where NH3 reprotonation likely occurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 present free energy calculations with specific quantitative values. The methodology (umbrella sampling) is appropriate for this analysis. The inference about reprotonation location (C89) is reasonable based on residence time. The conclusion about rate-limiting steps (C90) appropriately acknowledges uncertainty. However, these are computational predictions without direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "3f74ea58-f70f-4faf-a5b0-03211083e18a",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "AmtB employs a novel two-lane mechanism for electrogenic NH4+ transport. After periplasmic deprotonation, H+ and NH3 traverse separate pathways: H+ through interconnected water wires and NH3 through a hydrophobic pore. The twin-His motif serves as the selectivity gate. This mechanism defines a new principle for selective transport of ionizable molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching mechanistic model (C3-C5, C91-C94, C98-C99) integrates multiple experimental and computational findings. The two-lane pathway is supported by: (1) water wire identification, (2) D2O sensitivity, (3) NH3 permeation calculations, (4) D160 and twin-His mutant data, and (5) selectivity experiments. The claim of novelty (C5, C98-C99) is justified by the unique combination of deprotonation, separate pathways, and selectivity mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "a14d9303-5c12-4d68-a550-6c976759c17a",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that this two-lane mechanism is conserved among electrogenic Amt/Mep/Rh family members and may be relevant to human disease and other transport systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C97 and C100 are explicitly speculative proposals about broader implications. While C96 cites disease-associated RhAG polymorphisms that transport K+, the extension to other family members (C95) and transport systems (C100) requires additional experimental validation. These are reasonable hypotheses for future work but not demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "3c3648fc-b83a-423c-926d-66fd62f20262",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context on ammonium transport and the Amt/Mep/Rh family, including their biological roles, structural features, and the historical debate about NH3 vs NH4+ as the transported species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C16 provide background information supported by appropriate citations to prior literature. These establish the scientific context and motivation for the study. C1 correctly describes the biophysical challenge. C2-C8 accurately summarize family functions and disease associations. C9-C16 appropriately describe the historical controversy about transport mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    },
+    {
+      "id": "5a96e8a7-f3bb-4ea6-9fab-61fe5ed04256",
+      "content_id": "b6c11737-4764-4556-95a0-d3a85a7392a0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Structural and functional context for AmtB, including its trimeric organization, substrate binding site, twin-His motif conservation, and physiological considerations regarding K+ homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 describe established structural features with appropriate citations. C28 cites the E. coli membrane potential. C33 discusses proton transfer mechanisms with citation. C74 notes twin-His conservation. C82-C83 provide physiological context for selectivity requirements. These are well-established facts supporting the study's rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:28:29.980912Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "237c0932-f560-4b47-9791-b8ef8a37eba1",
+      "result_id": "be3700c8-2fa4-4651-af02-c6f36902c827"
+    },
+    {
+      "claim_id": "dbb7ff54-e7d9-43a2-8925-117e30e2d7c9",
+      "result_id": "be3700c8-2fa4-4651-af02-c6f36902c827"
+    },
+    {
+      "claim_id": "37cb9641-1a0b-4129-ab52-651180bcbd57",
+      "result_id": "be3700c8-2fa4-4651-af02-c6f36902c827"
+    },
+    {
+      "claim_id": "812c7c7e-b20f-440f-9c31-389173f647bd",
+      "result_id": "be3700c8-2fa4-4651-af02-c6f36902c827"
+    },
+    {
+      "claim_id": "16730f83-bfa1-448f-ab32-c99d1a6ff01f",
+      "result_id": "b816a1c8-f6ca-4c9e-b712-8c3bdc452016"
+    },
+    {
+      "claim_id": "1b2476e8-e07b-4109-856e-a275ba025e88",
+      "result_id": "b816a1c8-f6ca-4c9e-b712-8c3bdc452016"
+    },
+    {
+      "claim_id": "f8f662b2-50e5-4c0c-8afb-5701e7bb99fd",
+      "result_id": "b816a1c8-f6ca-4c9e-b712-8c3bdc452016"
+    },
+    {
+      "claim_id": "470e17a4-7d76-491e-ad6f-537b842315fe",
+      "result_id": "b816a1c8-f6ca-4c9e-b712-8c3bdc452016"
+    },
+    {
+      "claim_id": "29cfde77-3144-4da4-8570-527b7c34b2dd",
+      "result_id": "b816a1c8-f6ca-4c9e-b712-8c3bdc452016"
+    },
+    {
+      "claim_id": "14ffb2ac-d215-47c9-902f-289deff8a55c",
+      "result_id": "b816a1c8-f6ca-4c9e-b712-8c3bdc452016"
+    },
+    {
+      "claim_id": "f9a896ab-f658-42d8-9195-3040d3c1d6a4",
+      "result_id": "b816a1c8-f6ca-4c9e-b712-8c3bdc452016"
+    },
+    {
+      "claim_id": "d8536dd2-33d8-4324-8fe9-89c29cfc760e",
+      "result_id": "b816a1c8-f6ca-4c9e-b712-8c3bdc452016"
+    },
+    {
+      "claim_id": "8d4ec001-a91d-4b48-a653-c73f16860610",
+      "result_id": "fd7dd8d0-67ec-47d9-8ac4-4df7d84b418a"
+    },
+    {
+      "claim_id": "c23855ae-2351-4f31-8ff5-2db1ba06cc9e",
+      "result_id": "fd7dd8d0-67ec-47d9-8ac4-4df7d84b418a"
+    },
+    {
+      "claim_id": "5d1af9ad-cbd7-469f-a9b5-0feb92c0a79a",
+      "result_id": "fd7dd8d0-67ec-47d9-8ac4-4df7d84b418a"
+    },
+    {
+      "claim_id": "40bb3254-65dd-4c31-84d9-d2a752bcc99d",
+      "result_id": "fd7dd8d0-67ec-47d9-8ac4-4df7d84b418a"
+    },
+    {
+      "claim_id": "ed59ba92-6ea6-47bb-b638-111751cb967e",
+      "result_id": "fd7dd8d0-67ec-47d9-8ac4-4df7d84b418a"
+    },
+    {
+      "claim_id": "b59a055e-f472-4882-9400-ee8a83a05e43",
+      "result_id": "08853939-7aac-4a3f-b1f9-384dc6617edf"
+    },
+    {
+      "claim_id": "407dd06b-59fe-4073-9ac8-dddb8d876eae",
+      "result_id": "08853939-7aac-4a3f-b1f9-384dc6617edf"
+    },
+    {
+      "claim_id": "7cda7221-9bea-43aa-b06b-8d08a5a6b4a8",
+      "result_id": "08853939-7aac-4a3f-b1f9-384dc6617edf"
+    },
+    {
+      "claim_id": "1c0247ef-ef24-4255-88d7-6651344c51a5",
+      "result_id": "08853939-7aac-4a3f-b1f9-384dc6617edf"
+    },
+    {
+      "claim_id": "a8423456-3adc-42bd-b55e-6746d85fe43f",
+      "result_id": "08853939-7aac-4a3f-b1f9-384dc6617edf"
+    },
+    {
+      "claim_id": "85c9b277-85b1-4c6c-9c46-7a8ebd7e897f",
+      "result_id": "08853939-7aac-4a3f-b1f9-384dc6617edf"
+    },
+    {
+      "claim_id": "2a5d06f1-2e6e-4207-aef4-7cf527454eab",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "8050bfeb-cee9-43b2-adb5-d53d68bd6120",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "d5e08338-ab2e-4ce3-8ac4-04c3cb232ecf",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "9cd88ffc-08bd-4aee-94a3-b5ad81dda496",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "750aa598-56e1-495a-b97f-2db741a7af44",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "28ec6698-141b-40e7-8ce9-dc7b833133f5",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "99d4dd44-ffec-4b6d-a682-eba6082d4f1b",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "13bd9c99-754a-43a7-9934-f88112766b79",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "6e6d788a-1ceb-406d-8ef2-8f3a8ebef793",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "99217a51-8403-407b-994c-2dfd9edfa288",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "a8f0a84b-fa44-4fff-a1cc-9b206a9a68d9",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "9eea53b3-b44e-4535-ba21-c7b10c3a6fb1",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "ff5c176b-0662-4d9e-bfaf-67ad109a3ef0",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "49914cb9-95b4-4efe-b6c0-f596295a63bf",
+      "result_id": "4c5533f6-121a-429f-87b1-f76a28fac5dc"
+    },
+    {
+      "claim_id": "0db6e8cd-a65c-41b9-963b-5bf6b283c42f",
+      "result_id": "6337528c-0e05-4f9e-bf18-c64fdd4bbf23"
+    },
+    {
+      "claim_id": "6b670833-35ba-424b-99c8-51cda2768e12",
+      "result_id": "6337528c-0e05-4f9e-bf18-c64fdd4bbf23"
+    },
+    {
+      "claim_id": "4e1eccad-23ac-44b1-bfd8-3a6b4981fb12",
+      "result_id": "6337528c-0e05-4f9e-bf18-c64fdd4bbf23"
+    },
+    {
+      "claim_id": "075ffe7f-b3bf-41f8-9839-a53afb23b10d",
+      "result_id": "6337528c-0e05-4f9e-bf18-c64fdd4bbf23"
+    },
+    {
+      "claim_id": "d53e7235-1ad7-45ad-bd45-bbf9db91cf35",
+      "result_id": "6337528c-0e05-4f9e-bf18-c64fdd4bbf23"
+    },
+    {
+      "claim_id": "23d2a3ef-54ef-43a1-84d5-2aa460e2b63a",
+      "result_id": "6337528c-0e05-4f9e-bf18-c64fdd4bbf23"
+    },
+    {
+      "claim_id": "a780d533-53ea-4b18-92d1-302fef81f45f",
+      "result_id": "6337528c-0e05-4f9e-bf18-c64fdd4bbf23"
+    },
+    {
+      "claim_id": "c99eca4b-e0b3-4eb3-ae25-4bff7874ba80",
+      "result_id": "661b8521-a1dc-4646-be9e-b7465aaae8d8"
+    },
+    {
+      "claim_id": "df5bbf0c-0fff-4351-84d2-cbb110c2e88a",
+      "result_id": "661b8521-a1dc-4646-be9e-b7465aaae8d8"
+    },
+    {
+      "claim_id": "b1eb5771-8986-4fe5-8081-1ff2b2e6857a",
+      "result_id": "661b8521-a1dc-4646-be9e-b7465aaae8d8"
+    },
+    {
+      "claim_id": "c74f2792-8476-4474-b9d2-1a11565fc931",
+      "result_id": "661b8521-a1dc-4646-be9e-b7465aaae8d8"
+    },
+    {
+      "claim_id": "9951b387-dc64-43a1-9bbd-d8ca914b14c1",
+      "result_id": "661b8521-a1dc-4646-be9e-b7465aaae8d8"
+    },
+    {
+      "claim_id": "278d7cce-83a1-404d-8dbb-06ff4699cfc3",
+      "result_id": "661b8521-a1dc-4646-be9e-b7465aaae8d8"
+    },
+    {
+      "claim_id": "decd8b25-8d94-42e4-94ac-18dfb733237b",
+      "result_id": "661b8521-a1dc-4646-be9e-b7465aaae8d8"
+    },
+    {
+      "claim_id": "2d07464e-70db-4126-b5c0-0eeba64f0729",
+      "result_id": "8376975c-c214-4b44-9b1f-92e26f6cdb6f"
+    },
+    {
+      "claim_id": "d4e990ab-db1c-4891-9a25-5d23a3ef387d",
+      "result_id": "8376975c-c214-4b44-9b1f-92e26f6cdb6f"
+    },
+    {
+      "claim_id": "2475aec2-8f6e-44d2-88fd-38523ab7e644",
+      "result_id": "8376975c-c214-4b44-9b1f-92e26f6cdb6f"
+    },
+    {
+      "claim_id": "7d9ec0b5-e337-4136-bee4-b94b84a85677",
+      "result_id": "8376975c-c214-4b44-9b1f-92e26f6cdb6f"
+    },
+    {
+      "claim_id": "7e646282-ca50-4716-ac39-be93ba63cfee",
+      "result_id": "8376975c-c214-4b44-9b1f-92e26f6cdb6f"
+    },
+    {
+      "claim_id": "5cddcb8c-04af-466c-8d9e-338236d12223",
+      "result_id": "8376975c-c214-4b44-9b1f-92e26f6cdb6f"
+    },
+    {
+      "claim_id": "102574cb-4fe0-4f36-a682-6a6eee9668c1",
+      "result_id": "8376975c-c214-4b44-9b1f-92e26f6cdb6f"
+    },
+    {
+      "claim_id": "59958b83-792d-4a3a-8d00-65e3429c1777",
+      "result_id": "a5ade84d-90b2-412a-931d-5825a5db5a29"
+    },
+    {
+      "claim_id": "f41e01c1-b0db-462e-8fd9-78a614abc766",
+      "result_id": "a5ade84d-90b2-412a-931d-5825a5db5a29"
+    },
+    {
+      "claim_id": "400a0f62-46c5-47b1-ae4a-b3bc20bbe06b",
+      "result_id": "a5ade84d-90b2-412a-931d-5825a5db5a29"
+    },
+    {
+      "claim_id": "0b00a293-75ea-4d83-8b82-5bc395f730cf",
+      "result_id": "a5ade84d-90b2-412a-931d-5825a5db5a29"
+    },
+    {
+      "claim_id": "981e50f2-9412-4036-ac49-f5b525e92f18",
+      "result_id": "a5ade84d-90b2-412a-931d-5825a5db5a29"
+    },
+    {
+      "claim_id": "6e3ce19a-57f0-4ea7-a391-758a428b939a",
+      "result_id": "3f74ea58-f70f-4faf-a5b0-03211083e18a"
+    },
+    {
+      "claim_id": "3cc004b4-f5bc-4e9b-8094-4e9d732ddf53",
+      "result_id": "3f74ea58-f70f-4faf-a5b0-03211083e18a"
+    },
+    {
+      "claim_id": "44f665e8-ee9b-4d0e-9902-2a2153904cb6",
+      "result_id": "3f74ea58-f70f-4faf-a5b0-03211083e18a"
+    },
+    {
+      "claim_id": "d799f0bb-d77c-40ea-8365-373433ce88b3",
+      "result_id": "3f74ea58-f70f-4faf-a5b0-03211083e18a"
+    },
+    {
+      "claim_id": "6c14e01b-06c5-4c4d-bf08-e05deb4e0c24",
+      "result_id": "3f74ea58-f70f-4faf-a5b0-03211083e18a"
+    },
+    {
+      "claim_id": "ee698d83-7bf6-4d73-929d-1cee0e84b32d",
+      "result_id": "3f74ea58-f70f-4faf-a5b0-03211083e18a"
+    },
+    {
+      "claim_id": "94c4ee91-9c36-4024-8092-b48839d72f78",
+      "result_id": "3f74ea58-f70f-4faf-a5b0-03211083e18a"
+    },
+    {
+      "claim_id": "89093a14-9de2-48a4-8711-3d0a0f9e8998",
+      "result_id": "3f74ea58-f70f-4faf-a5b0-03211083e18a"
+    },
+    {
+      "claim_id": "74bf674b-9f7e-4127-be20-0b07eccc5111",
+      "result_id": "3f74ea58-f70f-4faf-a5b0-03211083e18a"
+    },
+    {
+      "claim_id": "0bb4a8d9-bb09-4fb3-a296-0b7284ab993d",
+      "result_id": "a14d9303-5c12-4d68-a550-6c976759c17a"
+    },
+    {
+      "claim_id": "9064f207-b4c6-46d8-ac7a-5299625e0b93",
+      "result_id": "a14d9303-5c12-4d68-a550-6c976759c17a"
+    },
+    {
+      "claim_id": "54540b86-7de2-4e51-a3c0-888a7426cb60",
+      "result_id": "a14d9303-5c12-4d68-a550-6c976759c17a"
+    },
+    {
+      "claim_id": "e3c563e5-d978-4f62-b840-b5ee9bf1d8a5",
+      "result_id": "a14d9303-5c12-4d68-a550-6c976759c17a"
+    },
+    {
+      "claim_id": "5504856d-e613-4aa5-b1f1-b8853749600c",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "f3aa2afd-2fe5-430a-bd38-4b5000a26037",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "9ed329e8-c95f-4089-a0c1-1f26e792b41b",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "1604330b-b802-44d3-8916-4f0488cc556a",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "a4d56ff1-ab1b-4c85-8539-488fd75005ac",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "5fd192b0-40ac-4022-8d1d-a433a597fdb9",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "0ee3fcc2-28ed-46f7-bb33-8702ba9af021",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "f18a6e6f-dcc7-4887-a63f-726b3b59f9d0",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "95de446f-1d2e-41ac-8ea5-25434c3754b0",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "c6002390-81b4-4a5a-bf82-152f48fe2379",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "c359e8c1-30c4-43be-bab1-9a0176175b04",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "b58cdca6-87ce-43c3-9011-e7adb6521208",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "f420585c-1f59-4da3-a9ab-40101256f3d5",
+      "result_id": "3c3648fc-b83a-423c-926d-66fd62f20262"
+    },
+    {
+      "claim_id": "5593d67b-22a0-4973-928a-b646190f549d",
+      "result_id": "5a96e8a7-f3bb-4ea6-9fab-61fe5ed04256"
+    },
+    {
+      "claim_id": "7eaab42f-a53e-4bf1-9465-dd12ccfcc2cf",
+      "result_id": "5a96e8a7-f3bb-4ea6-9fab-61fe5ed04256"
+    },
+    {
+      "claim_id": "c7976b57-6ca1-4105-95aa-1637c10dd0e6",
+      "result_id": "5a96e8a7-f3bb-4ea6-9fab-61fe5ed04256"
+    },
+    {
+      "claim_id": "818360e7-60b3-4aef-8f70-b449fa8b0cfc",
+      "result_id": "5a96e8a7-f3bb-4ea6-9fab-61fe5ed04256"
+    },
+    {
+      "claim_id": "30cd574d-6e66-4c99-a7d8-4f69ed0a2a03",
+      "result_id": "5a96e8a7-f3bb-4ea6-9fab-61fe5ed04256"
+    },
+    {
+      "claim_id": "0e453e2f-828a-4d07-a450-72abd01ba5a2",
+      "result_id": "5a96e8a7-f3bb-4ea6-9fab-61fe5ed04256"
+    },
+    {
+      "claim_id": "6a6363b2-b85a-4a21-b018-8b7e535ff58f",
+      "result_id": "5a96e8a7-f3bb-4ea6-9fab-61fe5ed04256"
+    },
+    {
+      "claim_id": "5fc39e5f-59ef-4317-8bba-cd7952141302",
+      "result_id": "5a96e8a7-f3bb-4ea6-9fab-61fe5ed04256"
+    },
+    {
+      "claim_id": "fbc58c27-112a-4c25-bbb1-016d7ae6df76",
+      "result_id": "5a96e8a7-f3bb-4ea6-9fab-61fe5ed04256"
+    }
+  ],
+  "comparisons": []
+}

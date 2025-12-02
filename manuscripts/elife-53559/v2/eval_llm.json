@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "HOPS binds directly to each of the four individual SNAREs (R, Qa, Qb, Qc) as demonstrated by flotation assays, though binding to individual SNAREs appears stronger than to the assembled 4-SNARE complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C60 are directly supported by flotation assay data in Figure 2 showing HOPS binding to each SNARE. Claims C61-C66 provide mechanistic explanations for differential binding based on structural considerations from prior work. The direct binding data is robust and reproducible (Figure 2\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "HOPS catalyzes fusion when Q-SNAREs are not pre-assembled, whereas simple tethering (GST-PX) suffices only when all three Q-SNAREs are pre-assembled on the same membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are well-supported by fusion assays in Figure 1A-E showing that HOPS, but not GST-PX, enables fusion when individual Q-SNAREs are provided in soluble form. The data demonstrate HOPS has a catalytic role beyond simple tethering. Statistical support is provided in Figure 1\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Spontaneous assembly of Q-SNAREs without HOPS is extremely slow, with only Qc showing limited capacity for slow spontaneous assembly with QaQb-proteoliposomes, while Qa and Qb do not spontaneously assemble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 and C55-C57 are supported by kinetic data in Figure 1E and Figure 1\u2014figure supplement 2-3 showing GST-PX-mediated fusion has a 10-minute lag that is eliminated by pre-incubation with Qc, but not with Qa or Qb. The differential behavior of Qc versus Qa/Qb is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "HOPS assembles a rapid-fusion intermediate containing R and Qa SNAREs in trans configuration that undergoes immediate fusion upon addition of the missing Q-SNARE (Qc).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 and C74 are strongly supported by fusion kinetics (Figure 3A) and immunoprecipitation data (Figures 3B-C) showing HOPS-dependent R:Qa trans-complex formation that triggers rapid fusion upon Qc addition. The modest increase in trans-complex upon fusion (C71) suggests the intermediate is already primed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C87"
+    ],
+    "result": "HOPS-mediated rapid-fusion intermediates (both R:QaQb and R:QbQc) are stable in the presence of Sec17, Sec18, and ATP, whether these chaperones are present from the start or added after intermediate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C87 are supported by fusion assays in Figures 4A-B and Figure 4\u2014figure supplement 1 showing that Sec17/Sec18/ATP does not disassemble the rapid-fusion intermediates. This is important for understanding the temporal coordination of fusion machinery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C137"
+    ],
+    "result": "The Qc SNARE has a labile association with the HOPS:R:Qa rapid-fusion intermediate, requiring approximately one minute for full dissociation and capture by the dominant-negative Qc-3\u0394 mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by competition experiments in Figure 5B showing time-dependent inhibition by Qc-3\u0394. The data demonstrate that Qc associates with the intermediate but can be displaced, indicating a dynamic rather than stable interaction. The one-minute timescale is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "HOPS enables accumulation of fusion-competent intermediates containing R-SNARE and any two Q-SNAREs (R+QaQb, R+QaQc, or R+QbQc), which undergo more rapid fusion when the missing Q-SNARE is added after preincubation compared to when all components are present from the start.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are well-supported by fusion kinetics in Figures 6A-C and Figure 6\u2014figure supplement 1. The requirement for HOPS during preincubation (C78) and the inability of GST-PX to substitute (C79) demonstrate HOPS-specific catalytic function beyond tethering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The Qa-SNARE is essential for spontaneous SNARE complex assembly in detergent, as demonstrated by the inability to form RQbQc complexes when Qa is omitted, while other 3-SNARE combinations (RQaQc, RQaQb, QaQbQc) form readily.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are directly supported by pulldown assays in Figure 7 showing that all 3-SNARE combinations form except RQbQc. This establishes the unique requirement for Qa in spontaneous assembly, making the HOPS-mediated R:QbQc intermediate (C9) particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C124"
+    ],
+    "result": "HOPS assembles a rapid-fusion intermediate between R- and QbQc-SNARE proteoliposomes in the absence of Qa-SNARE, despite the inability of these SNAREs to associate spontaneously in detergent, requiring both Qb and Qc for stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by immunoprecipitation data in Figures 8B-C showing HOPS-dependent R:Qb association, and fusion kinetics in Figure 8A showing rapid fusion upon sQa addition. Claim C88 is supported by Figure 9 showing both Qb and Qc are required. This is a novel finding given C82/C85 show these SNAREs cannot spontaneously associate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "HOPS-dependent fusion exhibits saturation kinetics at low concentrations of each Q-SNARE (Qa, Qb, Qc), indicating functional binding sites for each Q-SNARE, whereas PEG-mediated fusion shows linear concentration dependence consistent with spontaneous assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 are strongly supported by saturation kinetics in Figure 10A-F showing HOPS-mediated fusion is invariant over wide Q-SNARE concentration ranges while PEG-mediated fusion is concentration-dependent. Claim C91 addresses a technical issue with MBP-tagged Qb. The data demonstrate HOPS has functional binding sites for each Q-SNARE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C107",
+      "C111",
+      "C114",
+      "C118",
+      "C122"
+    ],
+    "result": "HOPS functions as a tethering and SNARE-assembly machine that recognizes each of the four SNAREs and catalyzes assembly of rapid-fusion intermediates containing either R+Qa or R+QbQc in trans configuration, which are poised for immediate fusion upon addition of the missing Q-SNAREs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (claims C11, C98-C103, C107, C111, C114, C118, C122) synthesizes the major findings: HOPS binding to each SNARE (Figure 2), formation of rapid-fusion intermediates (Figures 3-6, 8), saturation kinetics (Figure 10), and functional catalysis beyond tethering (Figure 1). All component claims are well-supported by experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C108",
+      "C126",
+      "C127",
+      "C130",
+      "C136",
+      "C140"
+    ],
+    "result": "The precise molecular architecture of the rapid-fusion intermediates remains uncertain, including whether SNAREs are bound only to HOPS or have begun coiled-coil assembly, and whether all fusion components remain engaged through bilayer mixing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C108, C126-C127, C130, C136, and C140 appropriately acknowledge limitations and uncertainties. The authors correctly note that while trans-complexes are detected (C126), the exact structural state and dynamics during fusion remain unclear. This honest assessment of limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "A working model proposes that HOPS binding sites for each SNARE mediate initial associations, followed by potential coiled-coil assembly while maintaining HOPS association, with R:Qa and R:QbQc intermediates being sufficiently stable to accumulate, but R:Qb or R:Qc alone are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C135 present a speculative working model (Figure 11) that is consistent with the data but not directly demonstrated. The model reasonably integrates the findings but represents interpretation rather than direct evidence. Claims C132-C133 are explicitly speculative about the transition from HOPS binding to coiled-coil assembly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background claims establish the known components and mechanisms of yeast vacuole fusion, including the roles of SNAREs, HOPS, Sec17/Sec18, Ypt7, and various lipids, as well as prior knowledge about HOPS binding to R-, Qa-, and Qc-SNAREs but not Qb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12-C42 are background knowledge claims supported by appropriate citations to prior literature. These establish the context for the current work. Claim C35 correctly identifies the gap in knowledge (no reported HOPS-Qb binding) that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C109",
+      "C112",
+      "C113",
+      "C115",
+      "C116",
+      "C139",
+      "C141",
+      "C144",
+      "C145"
+    ],
+    "result": "Prior work has established HOPS binding to Qc (via Vps16/Vps18 subunits) and to R/Qa (via Vps33 SM subunit), HOPS-dependent 4-SNARE assembly requiring all four SNAREs, and structural features of SNARE-SM interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C109, C112-C113, C115-C116, C139, C141, C144-C145 accurately summarize prior work with appropriate citations. These claims provide essential context for interpreting the current findings, particularly the novelty of HOPS-Qb binding and R:QbQc intermediate formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C110",
+      "C119",
+      "C120",
+      "C153",
+      "C154"
+    ],
+    "result": "Tethering alone suffices for fusion when Q-SNAREs are pre-assembled, which represents a limitation to the SM protein templating model, though pre-assembled Qb and Qc may substitute for SM function in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C110, C119-C120, C153-C154 are supported by data in Figure 1A-B and prior work (Song and Wickner, 2019). Claim C120 is speculative but reasonable. This finding contextualizes when HOPS catalytic function is versus is not required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Soluble R-SNARE (sR) can form inhibitory complexes with Q-SNAREs, with complete inhibition observed when QaQb-proteoliposomes are preincubated with both sR and Qc, suggesting sRQaQbQc assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by inhibition data in Figure 1\u2014figure supplement 3. The complete inhibition by sR+Qc preincubation (C54) contrasts with partial inhibition in other conditions, supporting the inference of sRQaQbQc complex formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C142",
+      "C143"
+    ],
+    "result": "Only a small percentage of SNAREs engage in trans-associations at any time, HOPS has multiple binding affinities, and R/Qa SNAREs likely leave Vps33 contact before completing SNARE zippering, though the complex may remain bound via Qb/Qc affinities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is supported by prior work (Collins and Wickner, 2007). Claim C129 is supported by current data (Figure 2, 4) and citations. Claims C142-C143 are reasonable inferences from structural data (Baker et al., 2015; Sutton et al., 1998) about incompatibility of Vps33 binding with full SNARE complex formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Discussion of experimental approaches, historical models of fusion, and remaining uncertainties about the roles of Sec17/Sec18 and whether findings generalize to other organelles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138, C146-C152, C155-C158 provide appropriate discussion context, acknowledge limitations, and identify future directions. Claims C157-C158 appropriately note unresolved questions about Sec17/Sec18 function. Claim C146 correctly notes uncertainty about generalization to other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C123",
+      "C125"
+    ],
+    "result": "HOPS can 'template' SNARE assembly through SM recognition of R- and Qa-SNAREs, with the assembly of rapid-fusion intermediates presumably requiring R-SNARE binding on Vps33 and Q-SNARE binding sites on various HOPS subunits, with minimal R-Qb contacts in 4-SNARE complexes potentially explaining the need for both Qb and Qc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C7 is stated as a capability but the templating mechanism is not directly demonstrated. Claim C123 uses \"presumably\" indicating inference. Claim C125 offers a reasonable but speculative explanation for why both Qb and Qc are needed. These claims represent plausible interpretations requiring further validation.",
+    "result_type": "MINOR"
+  }
+]

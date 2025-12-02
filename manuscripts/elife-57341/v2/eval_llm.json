@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "GED analysis of LFP recordings from linear electrode arrays spanning the primate amygdala identified 1-5 statistically significant components per session (116 total from 41 sessions, 92 attributable to amygdala), with component spatial patterns mapping onto anatomical organization and discriminating between sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C18-C20, C23-C26 collectively demonstrate successful application of GED to identify functionally distinct subnetworks. The methodology is clearly described (C19-C20), statistical significance is established via permutation testing (C24-C25), and the spatial specificity is confirmed by the elimination of 24 components when non-amygdala contacts were removed (C26). The 95% of contacts showing significant LFP changes (C23) provides strong evidence of widespread stimulus-evoked activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C65",
+      "C66"
+    ],
+    "result": "The strongest GED components mapped onto internal and external anatomical boundaries of amygdala nuclei, with 67.4% overall contact matching and statistically significant overlap for first components (71.3%, p=0.009), demonstrating that LFP organization respects anatomical constraints unlike single-unit activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32, C65-C66 provide converging evidence for anatomical correspondence. The quantitative matching (67.4% overall, 71.3% for first components with proper statistical testing) supports the conclusion. The fact that GED is blind to spatial arrangement (C28) strengthens the interpretation that the anatomical correspondence reflects genuine functional organization. The detection of subnuclear divisions (C29-C30) demonstrates resolution beyond neuroimaging capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Time-frequency analysis revealed that 102 of 116 components discriminated between sensory modalities, with only 13 showing single-modality responses, demonstrating that amygdala subnetworks process predominantly multisensory information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C74-C78 provide strong quantitative evidence (102/116 components discriminating modalities, only 13/102 unimodal) with appropriate statistical testing (cluster-mass t-tests, \u03b1=0.01). The findings replicate prior single-unit results at a larger spatial scale (C36, C78), providing convergent validity. The example in C76 illustrates the multisensory nature with different frequency band contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C40",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Visual stimuli elicited larger low-frequency power changes than tactile or auditory stimuli, and only visual components significantly mapped onto nuclear boundaries, consistent with anatomical evidence for predominant visual inputs to the primate amygdala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C40, C79-C82 demonstrate visual dominance with appropriate statistical testing (Wilcoxon rank-sum tests, \u03b1=0.01). The anatomical interpretation (C81) is well-supported by citations to tract-tracing studies. The convergence between physiological findings and anatomical connectivity strengthens the conclusion about visual processing dominance (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Spectral analysis revealed prominent peaks at delta (3.5-4.5 Hz), theta (6-8 Hz), low-gamma (~38 Hz), and high-gamma (63-75 Hz) frequencies that were preserved after removing non-amygdala contacts, demonstrating that the primate amygdala exhibits cortex-like rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 provide clear evidence for specific frequency peaks with appropriate controls. The preservation of spectral peaks after removing non-amygdala contacts (C43) is critical for establishing that these rhythms are amygdala-generated rather than volume-conducted. The comparison to cortical rhythms (C44) is appropriately cautious in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Modality-specific GED analyses yielded similar numbers of components across modalities (visual=81, tactile=79, auditory=71, p=0.83) that correlated with combined-modality maps, but visual component maps showed significantly better anatomical boundary matching (p=0.0006 and p=0.001 for first and second components), suggesting mixed sensory-independent and sensory-dependent organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 demonstrate appropriate control analyses with proper statistical testing. The correlation between modality-specific and combined maps (C46) supports the robustness of the GED approach, while the visual-specific anatomical matching (C47-C48) provides nuanced insight into functional organization. The conclusion about mixed organization (C49) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "LFP data revealed visual modality bias not present in single-unit recordings from the same dataset, demonstrating that LFP contains information not accessible from spiking data alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 make an important methodological point supported by direct comparison to prior single-unit analysis (Morrow et al., 2019) from the same dataset. This demonstrates complementary information at different spatial scales, though the lack of eye movement monitoring (acknowledged in C85) limits interpretation of the visual bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study provides evidence for mesoscopic organization of the amygdala into putative subnetworks that often respect nuclear boundaries but sometimes reflect cross-nuclear synchronization, demonstrating that layered architecture is not required for meaningful LFP organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 appropriately summarize the main findings. The demonstration of identifiable subnetworks in a non-layered structure (C63) is an important conceptual contribution. The evidence for both within-nucleus and cross-nucleus organization (C62, C64) is supported by the component mapping analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C14",
+      "C52"
+    ],
+    "result": "Individual neurons with stimulus- and task-specific responses, including multisensory and modality-selective neurons, are not clustered in any amygdala nuclei or subnuclear regions, contrasting with the compartmentalized anatomical view.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9, C14, C52 are supported by citations to multiple studies including the authors' own work (Morrow et al., 2019). This establishes the motivation for the mesoscale LFP approach. However, these claims primarily summarize prior work rather than presenting new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Recordings were obtained from two adult male rhesus macaques using 16-contact linear electrode arrays, with electrode positions determined by high-resolution MRI, yielding 41 recording sessions with appropriate ethical approval and data availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 describe standard methodological details that are clearly documented. The sample size (2 animals, 41 sessions) is modest but appropriate for this type of invasive primate neurophysiology. Data availability (C99) supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C21",
+      "C22"
+    ],
+    "result": "Stimuli were unfamiliar, neutral (avoiding social or food-related content), and followed by consistent juice reward after a brief delay, with 3-4s inter-trial intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104, C21-C22 describe appropriate experimental controls to minimize confounds from stimulus salience or learned associations. The consistent reward across modalities (C22) is important for equating motivational factors. However, the lack of eye movement monitoring (acknowledged in C85) is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "GED has advantages over other decomposition methods including amenability to statistical thresholding and higher accuracy in validation studies, though other methods may reveal patterns not captured by GED.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 appropriately justify the methodological choice with citations to validation studies (C106). The acknowledgment of limitations (C107) demonstrates appropriate scientific caution. These are methodological justifications rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The amygdala shows anatomical compartmentalization into nuclei with distinct connectivity, and while LFPs have been studied in non-primate species, little is known about primate amygdala LFPs, particularly given its layerless architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C8, C10-C12, C53-C55 provide appropriate background and motivation from the literature. These are well-supported by citations but represent prior knowledge rather than new findings. They establish the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Based on prior findings that multisensory neurons discriminate between modalities and theoretical considerations about LFP generation, the authors hypothesized that different sensory modalities would elicit distinct spatiotemporal LFP patterns, testable using GED which reliably reconstructs network dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C15-C17 appropriately frame the study hypothesis based on prior work and theoretical considerations. The hypothesis (C16) is clearly stated and the methodological choice (C17) is justified by citations. These represent study design rather than results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C61"
+    ],
+    "result": "Prior single-unit studies show mixed evidence for nuclear clustering of response properties, with increasing reports of multidimensional neurons, while human neuroimaging has suggested mesoscopic organization based on connectivity and resting-state data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C61 summarize relevant prior literature with appropriate citations. This provides context for the current findings but represents background rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Anatomical studies show nucleus-specific projections (e.g., central nucleus to substantia nigra, basolateral complex to prefrontal cortex), which could support parallel processing loops or be distributed by intra-amygdala connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 summarize anatomical knowledge with appropriate citations. The speculation about functional implications (C59-C60) is appropriately tentative. This provides anatomical context but is not a finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Future multi-array recordings at different positions would enable 3D component mapping, better source localization, and testing of hypotheses about distributed inter-nuclear subnetworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C70 propose future experiments to address current limitations. While the proposals are reasonable given the single-array limitation (C68), these are speculations about future work rather than current findings. The potential benefits are plausible but undemonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Recent studies using decoding approaches have shown inter-nuclear differences, and future GED analyses could be used to generate task-parameter-specific components for comparison with decoding methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 discuss potential future analyses. While the comparison to decoding approaches (C71) is well-cited, the proposed future work (C72-C73) is speculative. These represent discussion of potential applications rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Without eye or facial movement monitoring, stimulus-related motor responses could partially account for observed activity patterns, as amygdala neurons respond to fixations and facial expression production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 appropriately acknowledge a significant limitation. The citations (C86-C87) support the plausibility of motor confounds. This is an important caveat that limits interpretation of the visual bias findings, though it doesn't invalidate the main results about subnetwork organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Future progress will come from analyzing field-field and spike-field interactions between amygdala and connected structures in brain-wide circuits, as LFP analyses have revealed directional interactions in other systems and could determine how the amygdala coordinates activity during social and affective behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C94 discuss future research directions with appropriate citations to related work (C89, C93). While the proposals are scientifically reasonable and build on prior successes, these are speculations about future work rather than current findings. The potential is plausible but undemonstrated.",
+    "result_type": "MINOR"
+  }
+]

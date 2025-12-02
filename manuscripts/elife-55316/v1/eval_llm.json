@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "LBNP successfully induced orthostatic stress with significant reductions in systolic blood pressure and interbeat interval, increased low-frequency blood pressure variability, and decreased high-frequency heart rate variability, indicating sympathetic activation and vagal withdrawal without changes in respiration or head movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 provide converging physiological evidence with appropriate statistical tests (paired t-tests, p<0.05, effect sizes reported). The pattern of autonomic changes (increased LFBPV, decreased HFHRV) is consistent with established cardiovascular physiology during orthostatic stress. Control measures (respiration, head motion) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C104"
+    ],
+    "result": "Masked ICA with optimized dimensionality (49 components, reproducibility r=0.80\u00b10.01) successfully segmented the hypothalamus into functionally distinct regions matching known anatomical subdivisions (three medio-lateral zones, three rostro-caudal regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C104 describe a systematic approach to determining optimal ICA dimensionality through reproducibility analysis. The resulting segmentation's correspondence with post-mortem anatomy (C36) provides anatomical validation. However, the removal of 6 'unspecific' components (C34, C105) relies on a somewhat arbitrary threshold criterion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Five hypothalamic regions fulfilled dual criteria for cardiovascular involvement (functional connectivity and spectral changes): right anterior LH/SON, bilateral tuberal LH/SON, right tuberal PVN/PH, and arcuate nucleus, each showing distinct patterns of BOLD spectral changes and connectivity with brainstem regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C52 identify specific regions with statistical support (t-tests, p\u22640.05). However, critical concerns include: (1) interpretation of HF BOLD signals (~0.28 Hz) requires assumptions beyond canonical HRF (C83); (2) multiple comparisons across 43 regions and two frequency bands without clear correction; (3) physiological noise confounds acknowledged but not fully resolved (C85-C90); (4) some p-values are marginal (e.g., C51: p\u22640.05 for LF in Arc).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The first hypothalamic cardiovascular system represents the 'textbook' baroreflex arc, characterized by PVN/PH connectivity with ipsilateral RVLM and Amb, with supplementary analysis showing NTS connectivity but no CVLM involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C61 propose a baroreflex system based on connectivity patterns (C58, C60) and interpretation (C59). The absence of CVLM connectivity (C61) contradicts classical baroreflex models, which the authors acknowledge but do not adequately explain. The strictly right-sided lateralization lacks mechanistic justification. The interpretation relies heavily on animal literature (C62-C64) which may not directly translate to humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The second hypothalamic system involves right anterior LH/SON connectivity with ipsilateral dorsal medulla (NTS, DMN), potentially representing neuroendocrine regulation through NTS-SON projections triggering vasoactive hormone release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71 identify connectivity patterns (C67) consistent with animal studies (C68-C69). However, the functional interpretation (C70-C71) is explicitly speculative ('potentially', 'may'), supported only by citations rather than direct evidence. The unilateral right-sided pattern lacks explanation. No endocrine measurements were obtained to validate the proposed hormonal mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The third hypothalamic system involves the arcuate nucleus showing connectivity with three distinct medullary regions, potentially representing integration of leptin-melanocortin and renin-angiotensin-aldosterone systems relevant to obesity-associated hypertension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 describe connectivity patterns with statistical support. However, the functional interpretation (C79-C80) regarding leptin-melanocortin and renin-angiotensin systems is based entirely on prior literature citations without direct experimental evidence. The arcuate nucleus has received less attention than other regions (acknowledged in text), making interpretation more speculative. The clinical relevance to obesity-hypertension (C80) is proposed but not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The bilateral tuberal LH/SON showed distinct connectivity patterns restricted to the hypothalamus, with positive within-nucleus changes bilaterally and negative connectivity between left LH/SON and arcuate nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 describe specific connectivity patterns that distinguish tuberal LH/SON from other identified regions. The within-nucleus connectivity interpretation (C42) is reasonable, though the functional significance of the asymmetric arcuate connectivity (C43) remains unclear. These findings are supported by the data shown in Figure 2b-c.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Low-dimensional ICA analysis revealed that three of five cardiovascular regions (right anterior LH/SON, PVN/PH, Arc) had low-dimensional equivalents that included portions of PVN/PH, while bilateral tuberal LH/SON did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe inter-dimensional matching results shown in Figure 3. The finding that low-dimensional components include PVN/PH portions (C55) supports the central role of this region. The absence of low-dimensional equivalents for tuberal LH/SON (C54) suggests these may represent more specialized functional units. This analysis provides convergent evidence for the importance of identified regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The selection of hypothalamic nuclei involved in cardiovascular regulation agrees with previous Fos-like protein expression studies in response to prolonged hypotension in animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 provides important cross-validation with animal studies (Li and Dampney, 1994), shown in Figure 2\u2014figure supplement 5. This agreement strengthens confidence in the identified regions, though differences between acute LBNP in humans and prolonged hypotension in animals should be noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Supplementary analyses demonstrated that results were not driven by physiological noise: segmentation remained consistent after noise regression, matched components showed similar connectivity changes, and four of five regions showed grey matter-dominated connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 describe two supplementary analyses addressing physiological noise concerns. The preservation of anatomical segmentation (C109) and similar (though smaller) connectivity changes after noise regression (C110) support robustness. Grey matter connectivity dominance (C111) argues against noise artifacts. However, the authors appropriately acknowledge that complete disentanglement of neuronal from non-neuronal signals is impossible (C85, C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C83",
+      "C84"
+    ],
+    "result": "The study's interpretation of BOLD signals in high-frequency bands (particularly HF ~0.28 Hz) requires assuming BOLD extends beyond the canonical frequency range (<0.1 Hz), an assumption supported by recent studies but representing a methodological limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18-C19, C83-C84 acknowledge a critical methodological assumption. While recent studies (Chen and Glover 2015, Lewis et al. 2016) support high-frequency BOLD oscillations (C19, C84), this remains an active area of investigation. The assumption is necessary for interpreting HF spectral changes (C83) but introduces uncertainty into the results. The authors appropriately flag this as requiring caution (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Complete disentanglement of neuronal from non-neuronal BOLD signals is impossible due to multiple physiological noise sources, their interdependence, coordinated vascular regulation across brain regions, and risks of removing meaningful signal through regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 provide an honest assessment of methodological limitations. The complexity of physiological noise (C86), interdependence of cardiac and respiratory signals (C87), coordinated vascular regulation (C88), and risks of over-correction (C89) are well-established issues in fMRI. The acknowledgment that some connectivity could reflect structured physiological noise (C90) is appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study employed optimized high-resolution fMRI preprocessing (2\u00d72\u00d72 mm\u00b3, 1.23s) with advanced distortion correction, symmetric diffeomorphic registration, no spatial smoothing, and deliberate retention of physiological fluctuations to preserve cardiovascular signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C99-C101 describe methodological choices appropriate for subcortical imaging. The spatial resolution balances anatomical specificity with signal-to-noise ratio. The decision not to smooth (C24, C101) and not to regress physiological signals (C25) is justified for cardiovascular studies, though it introduces the noise confounds discussed elsewhere. Single-step motion correction and unwarping (C100) minimizes resampling artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establish that cardiovascular regulation involves multiple neural and endocrine systems coordinated by brainstem and hypothalamic centers, with most knowledge derived from animal studies and limited human mechanistic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C12 provide standard background knowledge supported by appropriate citations. These establish the scientific context and rationale for the study. Claim C10 is explicitly presented as an assumption, which is appropriate. The gap in human mechanistic studies (C3, C9, C12) justifies the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The LBNP experimental paradigm at -30 mmHg simulates orthostatic stress and recruits both neural and endocrine cardiovascular mechanisms, with neural regulation measurable through characteristic LF and HF oscillations in blood pressure and heart rate variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 describe the experimental approach with appropriate citations. The LBNP method is well-established (C13-C14), and the physiological measures (C15-C17) are standard in autonomic research. The frequency band definitions (LFBPV ~0.1 Hz for sympathetic, HFHRV ~0.28 Hz for vagal) are supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Subcortical cardiovascular control regions in hypothalamus and brainstem are difficult to investigate in humans due to small size, depth, and physiological noise, necessitating specialized imaging approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 accurately describe known anatomical locations (with appropriate citations) and methodological challenges. The difficulties cited (C22) are well-established in the neuroimaging literature and justify the specialized methods employed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Animal studies demonstrate PVN projections to RVLM and Amb involving multiple neurotransmitters, with clinical evidence showing that baroreflex damage causes blood pressure abnormalities and that baroreceptor stimulation has variable therapeutic efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 summarize relevant animal and clinical literature with appropriate citations. These provide context for interpreting the proposed baroreflex system. The clinical relevance (C65-C66) supports the translational importance of understanding central baroreflex control in humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Prior literature establishes that the arcuate nucleus receives NTS input, links to cardiovascular organs through multiple lines of evidence, and may integrate leptin-melanocortin and renin-angiotensin systems relevant to obesity-hypertension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C77-C80 summarize relevant literature with appropriate citations. These provide context for the less-studied arcuate system. The clinical relevance to obesity-hypertension (C80) is appropriately presented as proposed rather than established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The authors anticipate that simultaneous in-vivo assessment of cardiovascular control systems will deepen understanding and may facilitate development of novel pharmaceutical and electroceutical treatments for cardiovascular precision medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are explicitly speculative statements about future impact ('anticipate', 'may facilitate'). These are appropriate forward-looking statements in a discussion section, though they represent hopes rather than demonstrated outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Methods description covering ethics approval, participant characteristics (n=22 healthy normotensive subjects), LBNP apparatus and protocol, MRI acquisition parameters, template generation, ICA dimensionality determination, component specificity testing, and frequency band definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98, C102-C103, C105-C108 provide standard methods descriptions. Sample size (n=22) is modest but reasonable for this type of study. The methods are generally well-described with appropriate citations to software and prior work. The criterion for identifying cardiovascular centers (C108) requiring both spectral and connectivity changes is reasonable but somewhat arbitrary.",
+    "result_type": "MINOR"
+  }
+]

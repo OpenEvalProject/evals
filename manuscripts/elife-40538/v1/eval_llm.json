@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The CILP method is based on the mathematical property that the Pearson correlation coefficient equals the average element-wise product of two mean-centered and scaled traits, and can accommodate covariates and continuous predictor variables by using the product vector as an outcome in linear models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 describe the mathematical foundation and methodological flexibility of CILP. C1 is an established mathematical fact about Pearson correlation, and C2 logically follows from the ability to use the product vector in standard linear modeling frameworks. Both claims are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Simulation studies demonstrate that CILP has high power to detect correlation QTLs (98.19% at p<0.05, 50.91% after Bonferroni correction with effect size 0.3 and n=1000), maintains appropriate false positive rates (5.19% at p<0.05 under the null), and is robust to various confounding scenarios including eQTLs, varQTLs, and batch effects, though power decreases in the presence of strong varQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 collectively describe simulation results validating CILP's statistical properties. The power estimates, false positive rates, and robustness to confounders are all supported by simulation data presented in Table 1 and supplementary figures. The observed 5.19% false positive rate matches the expected 5% threshold, confirming proper calibration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "LPS stimulation of human monocytes leads to widespread decoherence, with 958 gene pairs showing significant correlation changes at 2 hours (461 replicating at 24 hours), and a statistically significant bias toward loss of correlation (61% at 2hr, 73% at 24hr; p=1.05\u00d710\u207b\u2077 at 2hr, p<10\u207b\u00b9\u2076 at 24hr), independent of mean expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 describe the decoherence phenomenon in LPS-stimulated monocytes. The specific numbers of gene pairs, replication rates, percentages showing loss of correlation, and statistical significance are all supported by data from the Fairfax et al. dataset. The independence from mean expression changes (C11) addresses a potential confound and is supported by Figure 2\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Metabolic syndrome is associated with widespread changes in metabolite correlation structure, with 1528 metabolite pairs showing stronger correlation in healthy individuals versus 619 showing the opposite pattern (FDR<5%), representing a 2.20-fold enrichment (p<10\u207b\u00b9\u2076) for loss of correlation, affecting metabolites with varying mean expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 describe differential correlation patterns in metabolic syndrome from the YFS dataset. The specific numbers of metabolite pairs, enrichment ratios, and statistical significance are supported by the data. C19 importantly demonstrates that decoherence is not simply driven by mean expression differences, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Specific metabolite classes show enrichment for differential correlation in metabolic syndrome: apolipoproteins (OR=1.94, p=2.34\u00d710\u207b\u00b9\u00b3), total cholesterol (OR=1.39, p=1.58\u00d710\u207b\u00b9\u2075), and energy metabolism molecules (OR=1.43, p=2.75\u00d710\u207b\u00b9\u00b3) are enriched for decoherence, while fatty acids (OR=1.30, p=7.10\u00d710\u207b\u2076), HDL (OR=1.18, p=1.53\u00d710\u207b\u2075), and LDL (OR=1.28, p=3.58\u00d710\u207b\u2076) show increased correlation in metabolic syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 describe enrichment patterns for specific metabolite classes. All odds ratios and p-values are supported by hypergeometric tests on YFS data as reported in Figure 3 and Supplementary file 3. The biological coherence of these findings (lipoproteins, cholesterol, energy metabolism) strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "PC1 of 34 decoherent metabolites measured at baseline can predict future development of metabolic syndrome (R\u00b2=0.056, p=3.03\u00d710\u207b\u00b9\u2070, AIC=-448.40), outperforming traditional biomarkers like triglycerides (R\u00b2=0.046, p=6.32\u00d710\u207b\u2079, AIC=-432.61) and metabolites with the strongest mean differences (R\u00b2=0.037, p=1.42\u00d710\u207b\u2076, AIC=-422.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe the predictive power of decoherent metabolites using longitudinal YFS data. The R\u00b2 values, p-values, and AIC comparisons are all supported by the data. The comparison to traditional biomarkers (C27) and mean-difference-based approaches (C28) demonstrates the added value of the decoherence metric, though the effect sizes are modest (R\u00b2=0.056).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "484 correlation QTLs were identified in the NESDA discovery dataset (FDR<10%, involving 247 probe sets and 51 SNPs), with 304/484 replicating at Bonferroni-corrected significance and 428/484 at 10% FDR in an independent NESDA cohort, and 47/74 testable QTLs replicating in YFS with consistent effect directions (p<10\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 describe the discovery and replication of correlation QTLs. The specific numbers, statistical thresholds, and replication rates are all supported by data from NESDA and YFS cohorts. The high replication rate (62.8% at Bonferroni correction, 88.4% at FDR 10%) and consistent effect directions across independent cohorts provide strong evidence for the validity of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Correlation QTLs show specific genomic architecture: 73.76% are on the same chromosome as one correlated gene, 14.57% affect both genes in cis, 11.57% act in trans on both genes, 87.81% are also cis eQTLs or varQTLs for one gene, and none affect mean or variance of both genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 describe the genomic characteristics of correlation QTLs. All percentages are supported by analysis of the physical locations and functional effects of the identified QTLs. The finding that no QTL affects both genes (C39) is important for ruling out certain confounding mechanisms and is supported by Figure 4\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Genes involved in correlation QTLs are enriched for transcription factors (1.90x, p=1.7\u00d710\u207b\u00b3), TF targets (1.52x, p=6.7\u00d710\u207b\u2074), and biological processes including oxidative stress response (OR=2.21, p<10\u207b\u00b9\u2076), intracellular signaling (log2 OR=1.44, p<10\u207b\u00b9\u2076), and mitophagy (log2 OR=0.82, p=0.018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe functional enrichments among genes with correlation QTLs. All enrichment ratios and p-values are supported by hypergeometric tests using appropriate databases (TF-target interactions, Gene Ontology). The enrichment for TFs and their targets (C40-C41) is mechanistically coherent with proposed models of how genetic variation affects co-expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "87.81% of correlation QTLs involve three SNPs (rs1384673, rs333170, rs829373) that are strong eQTLs for RAP1GAP, and genes in these QTLs are closer to RAP1 binding sites (p=0.04) and more likely to be bound by RAP1 in vivo (OR=2.14, p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 describe the RAP1GAP correlation QTL hotspot. The percentage (C45) is supported by the data, and the enrichment for RAP1 binding (C46-C47) is supported by analysis of ChIP-seq data. However, the ChIP-seq data are from mouse embryonic fibroblasts rather than human blood cells, which is a limitation acknowledged by the authors but reduces confidence in the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C74"
+    ],
+    "result": "Environmental exposures (infection and disease) lead to systematic decoherence, manifested as widespread decreases in pairwise correlation coefficients between molecular traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C74 state the overarching finding about decoherence. This is well-supported by the combined evidence from LPS stimulation experiments (C9-C15) and metabolic syndrome analyses (C16-C19), which both show statistically significant biases toward loss of correlation following environmental perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C85"
+    ],
+    "result": "Decoherent metabolites are better predictors of future metabolic syndrome development than traditional biomarkers, and decoherence at the molecular level is associated with disease risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C85 describe the predictive value of decoherent metabolites. This is supported by the longitudinal analysis (C26-C28) showing that PC1 of decoherent metabolites outperforms traditional biomarkers. However, the effect sizes are modest (R\u00b2=0.056), and the clinical utility would require further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C90"
+    ],
+    "result": "Correlation between mRNA transcripts is under genetic control, as demonstrated by mapping hundreds of correlation QTLs, filling a gap in understanding the genetic basis of differential co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, and C90 state the main finding about genetic control of correlation. This is well-supported by the discovery of 484 correlation QTLs (C29-C34) with high replication rates across independent cohorts. The claim that this fills a gap (C90) is supported by the limited prior literature on this topic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The RAP1GAP correlation QTL hotspot is generated because genotype controls whether RAP1 and its targets are constitutively 'on' or 'off', with variation in RAP1 activity only modulating target gene expression within the 'on' genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 proposes a specific mechanistic model for the RAP1GAP hotspot. While this hypothesis is consistent with the observed data (C45-C47) and is illustrated in Figure 4\u2014figure supplement 3, it remains speculative. The ChIP-seq data supporting RAP1 binding are from mouse fibroblasts rather than human blood, and no direct experimental validation of the proposed mechanism is provided. Additional experiments would be needed to confirm this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "Decoherence may play a role in disease, potentially representing decanalization at the molecular level where formerly co-regulated molecules become dysregulated, and decoherent metabolites could serve as biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52, C84, C86, and C87 make speculative statements about the role of decoherence in disease and its potential clinical applications. While the association between decoherence and disease is well-documented (C48, C74), the causal role and mechanistic interpretation in terms of decanalization (C84) remain speculative. The biomarker potential (C87) is suggested by C26-C28 but would require extensive validation before clinical application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Co-expression analysis is important for understanding regulatory changes in disease and evolution, and decanalization theory suggests that gene regulatory networks evolve under stabilizing selection but can be disrupted by novel environments or mutations, potentially explaining the rise of non-communicable diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 and C70-C73 provide background context from the literature about co-expression analysis and decanalization theory. These claims are well-supported by appropriate citations to prior work and represent established knowledge in the field. They provide the conceptual framework for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Previous approaches for studying differential co-expression have limitations: they typically compare population-level statistics between groups, cannot test continuous predictors, and may not account for individual-level covariates, making it difficult to identify individual-specific factors affecting co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 critique previous methodological approaches. These critiques are supported by citations to prior work and logical analysis of the limitations of existing methods. The claims accurately describe the methodological gap that CILP aims to fill, though the characterization of all previous methods as having these limitations may be somewhat overstated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The relationship between genetic variation and co-expression is largely unexplored, though one proposed mechanism involves SNPs disrupting transcription factor binding sites, and alternative mechanisms may exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 discuss potential mechanisms for genetic effects on co-expression. C63 describes a hypothetical mechanism, C64 notes this has been proposed with some empirical support (citing appropriate literature), and C65-C66 note the limited exploration of this topic. These claims are well-supported and provide context for the novelty of the correlation QTL findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Similar patterns of biased loss of correlation have been observed in other contexts (cognitive impairment, aging, cancer), and the observed decoherence represents an extension of decanalization models, though traditionally decanalization has been conceptualized as increased variance rather than changed correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 place the current findings in the context of prior observations and decanalization theory. The citations to similar patterns in other systems (C75-C77) are appropriate, and the discussion of decanalization theory (C79-C83) accurately represents the literature while noting the novel interpretation of decanalization as correlation change rather than variance change.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Prior work on differential co-expression has focused on environmental contrasts while the genetic basis has received less attention, though recent studies by Nath et al., Lukowski et al., and van der Wijst et al. point toward genetic control of co-expression, and CILP provides tools to probe this further.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 review prior work on genetic effects on co-expression and position CILP as advancing this area. The characterization of prior work is accurate and supported by appropriate citations. The claim that CILP provides additional tools (C95) is supported by the methodological advantages described in C2 and demonstrated in the correlation QTL analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Future priorities include mapping correlation QTLs across environments and elucidating mechanisms, though genome-wide screens will require large sample sizes due to multiple testing burden; CILP's power increases with sample size, unlike methods comparing group-level statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 discuss future directions and limitations. The statements about future priorities (C96-C97) are reasonable research directions. The computational burden of genome-wide screens (C98-C99) is a logical inference. The claim about CILP's power scaling with sample size (C100) is supported by the simulation results, and the comparison to other methods (C101) is a valid statistical observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study focused on humans due to data availability but builds on model system work; CILP could be useful with multi-parent populations, for studying GxE effects on correlation, and in ecological contexts, as questions about correlation variation are central to many fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C111 discuss the scope of the current study and potential future applications. The rationale for focusing on humans (C102) is explicit, the connection to model system work (C103-C104) is supported by appropriate citations, and the proposed future applications (C105-C109) are reasonable extensions of the method. The broad applicability claim (C111) is speculative but plausible given the generality of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Previous work has found evidence for convergence of trans eQTL effects on RAP1GAP in whole blood, and RAP1 has been implicated in insulin resistance, inflammation, and obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C69 cite prior work on RAP1GAP and RAP1. These claims are supported by appropriate citations and provide biological context for the RAP1GAP correlation QTL hotspot findings. The relevance to metabolic disease (C69) is particularly pertinent given the focus on BMI-associated genes.",
+    "result_type": "MINOR"
+  }
+]

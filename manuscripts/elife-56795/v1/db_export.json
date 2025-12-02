@@ -1,0 +1,2011 @@
+{
+  "submission": {
+    "id": "3e542269-e610-465a-8c56-143c5910f70c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:29:43.622694Z",
+    "updated_at": "2025-12-02T21:29:43.622694Z"
+  },
+  "content": [
+    {
+      "id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "submission_id": "3e542269-e610-465a-8c56-143c5910f70c",
+      "content_type": "manuscript",
+      "content_text": "# Gamma activity accelerates during prefrontal development\n\n## Authors\n\n- Sebastian H Bitzenhofer<sup>1</sup> ([ORCID: 0000-0003-0736-6251](https://orcid.org/0000-0003-0736-6251)) \u2020\n- Jastyn A P\u00f6pplau<sup>1</sup> ([ORCID: 0000-0002-4350-3164](https://orcid.org/0000-0002-4350-3164))\n- Ileana Hanganu-Opatz<sup>1</sup> ([ORCID: 0000-0002-4787-1765](https://orcid.org/0000-0002-4787-1765)) \u2020\n\n### Affiliations\n\n1. Institute of Developmental Neurophysiology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf Hamburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nGamma oscillations are a prominent activity pattern in the cerebral cortex. While gamma rhythms have been extensively studied in the adult prefrontal cortex in the context of cognitive (dys)functions, little is known about their development. We addressed this issue by using extracellular recordings and optogenetic stimulations in mice across postnatal development. We show that fast rhythmic activity in the prefrontal cortex becomes prominent during the second postnatal week. While initially at about 15 Hz, fast oscillatory activity progressively accelerates with age and stabilizes within gamma frequency range (30\u201380 Hz) during the fourth postnatal week. Activation of layer 2/3 pyramidal neurons drives fast oscillations throughout development, yet the acceleration of their frequency follows similar temporal dynamics as the maturation of fast-spiking interneurons. These findings uncover the development of prefrontal gamma activity and provide a framework to examine the origin of abnormal gamma activity in neurodevelopmental disorders.\n\n## Introduction\n\nSynchronization of neuronal activity in fast oscillatory rhythms is a commonly observed feature in the adult cerebral cortex. While its exact functions are still a matter of debate, oscillatory activity in gamma frequency range has been proposed to organize neuronal ensembles and to shape information processing in cortical networks (Singer, 2018; Cardin, 2016; Sohal, 2016). Gamma activity emerges from reciprocal interactions between excitatory and inhibitory neurons. In the visual cortex, fast inhibitory feedback via soma-targeting parvalbumin (PV)-expressing inhibitory interneurons leads to fast gamma activity (30\u201380 Hz) (Cardin et al., 2009; Chen et al., 2017), whereas dendrite-targeting somatostatin (SOM)-expressing inhibitory interneurons contribute to beta/low gamma activity (20\u201340 Hz) (Chen et al., 2017; Veit et al., 2017). A fine-tuned balance between excitatory drive and inhibitory feedback is mandatory for circuit function underlying cognitive performance. Interneuronal dysfunction and ensuing abnormal gamma activity in the medial prefrontal cortex (mPFC) have been linked to impaired cognitive flexibility (Cho et al., 2015). Moreover, imbalance between excitation and inhibition in cortical networks and resulting gamma disruption have been proposed to cause cognitive disabilities in autism and schizophrenia (Cho et al., 2015; Cao et al., 2018; Rojas and Wilson, 2014).\n\nDespite substantial literature linking cognitive abilities and disabilities to gamma oscillations in the adult mPFC, the ontogeny of prefrontal gamma activity is poorly understood. This knowledge gap is even more striking considering that abnormal patterns of fast oscillatory activity have been described at early postnatal age in autism and schizophrenia mouse models (Chini et al., 2020; Richter et al., 2019; Hartung et al., 2016). Knowing the time course of prefrontal gamma maturation is essential for understanding the developmental aspects of mental disorders.\n\nTo this end, we performed an in-depth investigation of the developmental profile of gamma activity in the mouse mPFC from postnatal day (P) five until P40. We show that pronounced fast oscillatory activity emerges toward the end of the second postnatal week and increases in frequency and amplitude with age. While activation of layer 2/3 pyramidal neurons (L2/3 PYRs) drives fast oscillatory activity throughout development, the acceleration of its frequency follows the same dynamics as the maturation of inhibitory feedback and fast-spiking (FS)\u00a0interneurons.\n\n## Results\n\n### Fast oscillatory activity in the prefrontal cortex accelerates during development\n\nExtracellular recordings in the mPFC of anesthetized and non-anesthetized P5-40 mice revealed that oscillatory activity at fast frequencies (>12 Hz) can be detected at the beginning of the second postnatal week. The temporal dynamics of these fast oscillations are similar in the two states, yet their magnitude is higher in non-anesthetized mice, as previously described (Chini et al., 2019). The magnitude of fast oscillations increases with age (Mann-Kendall trend test, p=3.93\u00d710\u221222, n\u00a0=\u00a0114 recordings, tau-b 0.625) and can be detected as distinct peaks in power spectra at the end of the second postnatal week (Figure 1a,b). The peak frequency of these oscillations gradually increases with age (Mann-Kendall trend test, p=2.73\u00d710\u22128, n\u00a0=\u00a0114 recordings, tau-b 0.361), starting at\u00a0~\u00a020 Hz at P12 and reaching the characteristic gamma frequency of 50\u201360 Hz at P25 (Figure 1b\u2013d). Both, peak strength and peak frequency, do not change after P25. A linear regression model of peak frequency and peak amplitude shows significant correlation with age (n\u00a0=\u00a0114, df\u00a0=\u00a0111, R2\u00a0=\u00a00.542, p=5.48\u00d710\u221220; ANOVA: peak frequency F(1,111)=17.8, p=4.86\u00d710\u22125, peak amplitude F(1,111)=74.4, p=5.05\u00d710\u221214).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic of extracellular recordings in the mPFC of anesthetized and non-anesthetized P5-40 mice. (b) Characteristic examples of extracellular recordings of local field potentials (LFP) and multi-unit activity (MUA) at different ages after band-pass filtering (left) and the corresponding power spectra (right). (c) Z-scored average power spectra of spontaneous oscillatory activity for P5-40 mice (n\u00a0=\u00a0114 recordings from 100 mice). (d) Scatter plot displaying peak frequencies of fast oscillations (12\u2013100 Hz) during postnatal development of anesthetized (gray, n\u00a0=\u00a080 recordings/mice) and non-anesthetized mice (green, n\u00a0=\u00a034 recordings from 20 mice). Marker size displays peak strength. (See Supplementary file 1 for a summary of experimental conditions. See Supplementary file 2 for statistics.).\n\n### FS interneuron maturation resembles the time course of gamma development\n\nFS PV-expressing interneurons have been identified as key elements for the generation of oscillatory activity in gamma frequency range in the adult cortex (Cardin et al., 2009). To assess whether the developmental gamma dynamics relate to FS PV-expressing interneuron maturation, we performed immunohistochemistry and single unit analysis in P5-40 mice.\n\nFirst, immunostainings showed that PV expression in the mPFC starts at the end of the second postnatal week, increases until P25 and stabilizes afterwards (Mann-Kendall trend test, p=1.29\u00d710\u22127, n\u00a0=\u00a038 mice, tau-b 0.623) (Figure 2a). These dynamics over age follow a similar trend as the changes in peak power and peak frequency of the fast oscillations described above. In contrast, the number of SOM positive neurons does not significantly vary along postnatal development (Mann-Kendall trend test, p=0.99, n\u00a0=\u00a039 mice, tau-b \u22120.003) (Figure 2b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig2-v1.jpg)\n\n**Figure 2.:** (a) Left, examples of PV immunostaining in the mPFC at different ages. Right, scatter plot displaying the density of PV-immunopositive neurons in the mPFC of P5-40 mice (n\u00a0=\u00a038 mice). (b) Same as (a) for SOM-immunopositive neurons (n\u00a0=\u00a039 mice). (c) Example mean waveforms of extracellular recorded single units from P5-40 mice. (d) Schematic showing features classically used to distinguish RS and FS units in adult mice. (e) Left, scatter plot showing the first two components of a t-sne dimensionality reduction on the mean waveforms for all units recorded from P5-40 mice (n\u00a0=\u00a03554 units from 66 recordings/mice). Right, same as left with the first two clusters obtained by hierarchical clustering labeled in black and red. (f) Scatter plot of half width and trough-to-peak time for cluster 1 (black) and 2 (red). (g) Mean waveform for cluster 1 (black) and 2 (red). (h) Scatter plot showing the proportion of FS units for P5-40 mice. (i) Scatter plots showing classic spike shape features for P5-40 for cluster 1 (RS, black) and 2 (FS, red). (See Supplementary file 1 for a summary of experimental conditions. See Supplementary file 2 for statistics).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Dendrogram of binary hierarchical clustering after t-sne dimensionality reduction. The height of the lines represents the distance between subclusters. (b) Scatter plot showing the first two components of a t-sne dimensionality reduction on the mean waveforms for all units recorded from P5-40 (n\u00a0=\u00a03554 units from 66 recordings/mice) color coded by age. (c) Same as (b) color coded by mPFC layer. (d) Same as (b) color coded by values of classic spike shape features (half width, trough to peak time, amplitude).\n\nSecond, to directly assess the functional maturation of FS putatively PV-expressing neurons, we used bilateral extracellular recordings and identified single unit activity (SUA). The classically used action potential features to distinguish adult FS and regular-spiking (RS) neurons (i.e. trough to peak time and half width) cannot be applied during early development, because of a strong overlap of these features. Therefore, we developed an algorithm to classify RS and FS units using dimensionality reduction with t-Distributed Stochastic Neighbor Embedding (t-sne) on the mean waveforms of all units recorded across development, followed by hierarchical clustering based on pairwise Euclidean distance (Figure 2c\u2013e). This approach resulted in an unbiased detection of FS units across age (Figure 2f,g). Of note, a more detailed analysis revealed that the dimensionality reduction based on mean waveforms correlates with features like trough to peak and half width, but is less affected by age, cortical layer, and amplitude (Figure 2\u2014figure supplement 1). The classification of units with this method revealed that FS units start to be detected at the end of the second postnatal week. Their number gradually increased until P25 (Mann-Kendall trend test, p=1.44\u00d710\u22127, n\u00a0=\u00a066 recordings, tau-b 0.458) (Figure 2h). A comparison of the classical features across age showed that trough-to-peak duration (Mann-Kendall trend test, RS, p=4.57\u00d710\u22125, n\u00a0=\u00a03172 units, tau-b \u22120.051; FS, p=9.23\u00d710\u221211, n\u00a0=\u00a0382 units, tau-b \u22120.236), half width (Mann-Kendall trend test, RS, p=1.61\u00d710\u221228, n\u00a0=\u00a03172 units, tau-b \u22120.134; FS, p=5.17\u00d710\u221217, n\u00a0=\u00a0382 units, tau-b \u22120.295), and negative amplitude (Mann-Kendall trend test, RS, p=4.45\u00d710\u221222, n\u00a0=\u00a03172 units, tau-b \u22120.117; FS, p=3.82\u00d710\u22126, n\u00a0=\u00a0382 units, tau-b \u22120.163) of RS and FS units gradually decreased from the end of the second postnatal week until P25. However, the most prominent changes were detected for through-to-peak duration and half width of FS units (Figure 2i). A linear regression model of single unit features shows significant correlation with age (n\u00a0=\u00a052, df\u00a0=\u00a044, R2\u00a0=\u00a00.550, p=2.31\u00d710\u22127; see Supplementary file 2 for details). These results are consistent with a detailed description of the physiological development of prefrontal PV-expressing interneurons performed in brain slices (Miyamae et al., 2017).\n\nThus, in line with the immunohistochemical examination, the analysis of single units showed that FS putatively PV-positive interneurons show similar dynamics of maturation as fast oscillations recorded in the mPFC of P5-40 mice.\n\n### Activation of L2/3 pyramidal neurons drives fast oscillations with similar acceleration across development as spontaneous activity\n\nBesides FS interneurons, L2/3 PYRs in mPFC have been found to induce fast oscillations in the mPFC of P8-10 mice. Their non-rhythmic activation (but not activation of L5/6PYRs) drives oscillatory activity peaking within 15\u201320 Hz range (Bitzenhofer et al., 2017a; Bitzenhofer et al., 2017b), similar to the peak frequency of spontaneous network activity at this age. To test if L2/3 PYRs-driven activity also accelerates with age, we optogenetically manipulated these neurons in P5-40 mice. Stable expression of the light-sensitive channelrhodopsin two derivate E123T T159C (ChR2(ET/TC)) restricted to about 25% of PYR in L2/3 of the mPFC was achieved by in utero electroporation (IUE) at embryonic day (E) 15.5 (Figure 3a). Optogenetic stimulation with ramps of steadily increasing light power (473 nm, 3 s, 30 repetitions) were performed during extracellular recordings in the mPFC. As previously shown, this type of stimulation activates the network without forcing a specific rhythm (Bitzenhofer et al., 2017a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig3-v1.jpg)\n\n**Figure 3.:** (a) ChR2(ET/TC)\u22122A-RFP-expression in L2/3 PYRs in mPFC after IUE at E15.5 in a coronal slice of a P10 mouse. (b) Characteristic examples of extracellular recordings of LFP and MUA during ramp light stimulations (473 nm, 3 s) of prefrontal L2/3 PYRs at different ages (left) and the corresponding MI of power spectra (right). (c) Z-scored average MI of power spectra for P5-40 mice (n\u00a0=\u00a0115 recordings from 101 mice). (d) Scatter plot displaying stimulus induced peak frequencies during postnatal development for anesthetized (gray, n\u00a0=\u00a080 recordings/mice) and non-anesthetized mice (green, n\u00a0=\u00a035 recordings from 21 mice). Marker size displays peak strength. (See Supplementary file 1 for a summary of experimental conditions. See Supplementary file 2 for statistics).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Characteristic examples of extracellular recordings of LFP and MUA during control ramp light stimulations (594 nm, 3 s) of mPFC L2/3 PYR at different ages (left) and the corresponding MI of power spectra (right). (b) Z-scored average MI of power spectra for P5-40 mice (n\u00a0=\u00a0111 recordings from 97 mice). (c) Scatter plot displaying stimulus induced peak frequencies across age for anesthetized (gray, n\u00a0=\u00a076 recordings/mice) and non-anesthetized mice (green, n\u00a0=\u00a035 recordings from 21 mice). Marker size displays peak strength. (See Supplementary file 1 for a summary of experimental conditions. See Supplementary file 2 for statistics).\n\nSimilar to spontaneous activity, activating L2/3 PYRs induced oscillatory activity with a gradually increasing frequency during development (Figure 3b\u2013d). Consistent peaks in the modulation index (MI) of power spectra were detected at 15\u201320 Hz at the beginning of the second postnatal week and increased in frequency (Mann-Kendall trend test, p=7.69\u00d710\u22126, n\u00a0=\u00a0115 recordings, tau-b 0.288) and amplitude (Mann-Kendall trend test, p=1.04\u00d710\u22129, n\u00a0=\u00a0115 recordings, tau-b 0.392) until reaching stable values within 50\u201360 Hz at P25. A linear regression model of peak frequency and peak amplitude shows significant correlation with age (n\u00a0=\u00a0115, df\u00a0=\u00a0112, R2\u00a0=\u00a00.364, p=3.72\u00d710\u221212; ANOVA: peak frequency F(1,112)=13.9, p=2.95\u00d710\u22124, peak amplitude F(1,112)=43.8, p=1.26\u00d710\u22129). Control stimulations with light that does not activate ChR2(ET/TC) (594 nm, 3 s, 30 repetitions) did not induce activity and led to the detection of unspecific peak frequencies (Mann-Kendall trend test, p=0.09, n\u00a0=\u00a0111 recordings, tau-b 0.111) and low amplitudes (Mann-Kendall trend test, p=0.74, n\u00a0=\u00a0111 recordings, tau-b 0.022) (Figure 3\u2014figure supplement 1).\n\nPeak frequency and amplitude of activity induced by ramp light stimulation are significantly correlated with peak frequency and amplitude of spontaneous activity at the level of individual recordings (peak frequency n\u00a0=\u00a0114, df\u00a0=\u00a0112, R2\u00a0=\u00a00.16, p=6.00\u00d710\u22126; peak amplitude n\u00a0=\u00a0114, df\u00a0=\u00a0112, R2\u00a0=\u00a00.206, p=2.30\u00d710\u22127). Thus, L2/3 PYR-driven activity in the mPFC follows the same developmental dynamics as spontaneous activity indicating the importance of L2/3 PYRs for gamma maturation.\n\n### The rhythmicity of pyramidal cell and interneuron firing follows similar development as accelerating gamma activity in mPFC\n\nTo assess the contribution of distinct cell types to the emergence of gamma during postnatal development, we compared the firing of RS units, mainly corresponding to PYRs, and FS units, mainly corresponding to PV-expressing interneurons, during ramp light stimulations of L2/3 PYRs in P5-40 mice (Figure 4a,b, Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig4-v1.jpg)\n\n**Figure 4.:** (a) Raster plots and peri-stimulus time histograms for activated RS example units in response to ramp light stimulation (3 s, 473 nm, 30 repetitions) of prefrontal PYRs at different ages. (b) Same as (a) for FS units. (c) Average firing rate change of RS (black, n\u00a0=\u00a01824 units from 66 recordings/mice) and FS (red, n\u00a0=\u00a0226 units from 66 recordings/mice) units in response to ramp light stimulation of prefrontal L2/3 PYRs for different age groups. (d) Line plot displaying the average firing rate changes of RS and FS units during ramp light stimulation for different age groups. (e) Histograms of the MI of firing rates in response to ramp light stimulation for RS and FS units. (Average data is displayed as mean\u00a0\u00b1\u00a0sem. See Supplementary file 1 for a summary of experimental conditions. See Supplementary file 2 for statistics.).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Raster plots and peri-stimulus time histograms for inactivated (top) and unaffected (bottom) RS example units in response to ramp light stimulation (3 s, 473 nm) of prefrontal L2/3 PYRs at different ages. The displayed example units were recorded simultaneously with the examples shown in Figure 4a. (b) Same as (a) for FS units. These example units were recorded simultaneously with the examples shown in Figure 4b.\n\nThe average firing rate of RS and FS units in the stimulated hemisphere in the mPFC increased in response to ramp stimulation (Figure 4c). While ramp-induced firing rate changes averaged for RS units (Mann-Kendall trend test, p=0.07, n\u00a0=\u00a07 age groups, tau-b 0.619) became more prominent at older age, the average firing rate changes were stable for FS units (Mann-Kendall trend test, p=0.88, n\u00a0=\u00a07 age groups, tau-b 0.047) (Figure 4d). At the level of individual units, most RS units showed positive modulation of their firing rates in response to stimulation at P5-10, whereas at older age the proportion of positively modulated units decreased (Mann-Kendall trend test, p=1.52\u00d710\u221214, n\u00a0=\u00a01821 units, tau-b \u22120.123) (Figure 4e). In contrast, individual FS units showed both positive and negative modulation of activity throughout development (Mann-Kendall trend test, p=0.91, n\u00a0=\u00a0225 units, tau-b \u22120.005), yet the low number of FS units at young age precluded clear conclusions. Thus, during early postnatal development most RS units are activated by ramp light stimulations but only moderately increase their firing rate. During late postnatal development some RS units strongly increase their firing rate, whereas others reduce their firing rate.\n\nNext, we tested whether RS and FS units engage in rhythmic activity and calculated autocorrelations and spike-triggered LFP power of individual units. While no clear peaks of rhythmicity were found during spontaneous activity before stimulations (Figure 5\u2014figure supplement 1), autocorrelations showed that a subset of RS and FS units fire rhythmically in response to ramp light stimulation of prefrontal L2/3 PYRs (Figure 5a). The power of autocorrelations revealed that prominent rhythmic firing starts at about P15 and increases in frequency before it stabilizes at about P25 (Figure 5b). A multifactorial ANOVA shows significant effects for age group (F(6,153093)\u00a0=\u00a025.4, p=2.21\u00d710\u221230) and frequency (F(99,153093)\u00a0=\u00a0492.7, p=0.000), but not between RS and FS units (F(1,153093)\u00a0=\u00a01.56, p=0.211). Next, we calculated the power of averaged spike-triggered LFPs to examine the interaction of single unit rhythmicity with oscillatory LFP activity. The development of spike-triggered LFP power is consistent with the development of single unit autocorrelation power (multifactorial ANOVA: unit type F(1,814825)\u00a0=\u00a0277.2, p=3.12\u00d710\u221262, age group F(6,814825)\u00a0=\u00a0847.4, p=0.000, frequency F(400, 814825)=614.5, p=0.000), indicating that single unit rhythmicity of local neurons is reflected in the prefrontal LFP. Consistent results were obtained for inter-spike intervals and pairwise phase consistency (Figure 5\u2014figure supplement 2), as well as crosscorrelations between simultaneously recorded unit pairs (Figure 5\u2014figure supplement 3). RS units show higher values at lower instantaneous frequencies for inter-spike intervals than FS units, suggesting that they tend to skip cycles of induced gamma activity (Figure 5\u2014figure supplement 2d). Overall, the dynamics of RS and FS rhythmicity are similar to the development of spontaneous and stimulated gamma activity, indicating close interactions between RS and FS units during fast oscillations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig5-v1.jpg)\n\n**Figure 5.:** (a) Color-coded autocorrelations of prefrontal RS (top) and FS (bottom) units during ramp light stimulation (3 s, 473 nm) for different age groups. Each row represents one unit (only units firing\u00a0>\u00a01 Hz are included). (b) Average autocorrelation power of RS (black) and FS (red) units during ramp light stimulation for different age groups. (c) Average power of mean spike-triggered LFP of RS (black) and FS (red) units during ramp light stimulation for different age groups. (Average data is displayed as mean\u00a0\u00b1\u00a0sem. See Supplementary file 1 for a summary of experimental conditions. See Supplementary file 2 for statistics.).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Color-coded autocorrelations of prefrontal RS (top) and FS (bottom) units during spontaneous activity for different age groups. Each row represents one unit (only units firing\u00a0>\u00a01 Hz included). (b) Average autocorrelation power of RS (black) and FS (red) units during spontaneous activity for different age groups (multifactorial ANOVA: unit type F(1,153093)\u00a0=\u00a01.88, p=0.169, age group F(6, 153093)=41.8, p=2.53\u00d710\u221251, frequency F(99, 153093)=663.5, p=0.000). (c) Average power of mean spike-triggered LFP of RS (black) and FS (red) units during spontaneous activity for different age groups (multifactorial ANOVA: unit type F(1,805201)\u00a0=\u00a0248.426, p=5.83\u00d710\u221256, age group F(6, 805201)=1413.2, p=0.000, frequency F(400, 805201)=747.0, p=0.000). (Average data is displayed as mean\u00a0\u00b1\u00a0sem. See Supplementary file 1 for a summary of experimental conditions. See Supplementary file 2 for statistics).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Average variability of spiking measured as coefficient of variation (CV) of inter-spike intervals of RS (black) and FS (red) units during spontaneous activity (Mann-Kendall trend test, RS p=0.763, n\u00a0=\u00a07 age groups, tau-b 0.142; FS p=0.880, n\u00a0=\u00a07 age groups, tau-b 0.047) and ramp light stimulation (Mann-Kendall trend test, RS p=0.880, n\u00a0=\u00a07 age groups, tau-b 0.047; FS p=0.367, n\u00a0=\u00a07 age groups, tau-b \u22120.333) for different age groups. (b). Average variability of spiking measured as CV2 of adjacent inter-spike intervals of RS (black) and FS (red) units during spontaneous activity (Mann-Kendall trend test, RS p=0.763, n\u00a0=\u00a07 age groups, tau-b \u22120.142; FS p=0.880, n\u00a0=\u00a07 age groups, tau-b 0.047) and ramp light stimulation (Mann-Kendall trend test, RS p=0.367, n\u00a0=\u00a07 age groups, tau-b \u22120.333; FS p=0.367, n\u00a0=\u00a07 age groups, tau-b \u22120.333) for different age groups. (c) Average inter-spike intervals (shown as instantaneous frequency) of RS (black) and FS (red) units during spontaneous activity for different age groups (multifactorial ANOVA: unit type F(1,204893)\u00a0=\u00a05.24, p=0.022, age group F(6, 204893)=3519.8, p=0.000, frequency F(99, 204893)=583.2, p=0.000). (d) Same as (c) for RS and FS units during ramp light stimulation (multifactorial ANOVA: unit type F(1,204893)\u00a0=\u00a0146.6, p=9.64\u00d710\u221234, age group F(6, 204893)=2745.0, p=0.000, frequency F(99, 204893)=447.1, p=0.000). (e) Average pairwise phase consistency of RS (black) and FS (red) units during spontaneous activity for different age groups (multifactorial ANOVA: unit type F(1, 20262)=1.14, p=0.283, age group F(6, 20262)=6.83, p=2.93\u00d710\u22127, frequency F(9, 20262)=164.0, p=2.67\u00d710\u2212301). (f) Same as (e) for RS and FS units during ramp light stimulation (multifactorial ANOVA: unit type F(1,20385)\u00a0=\u00a03.61, p=0.057, age group F(6, 20385)=13.5, p=1.90\u00d710\u221215, frequency F(9, 20385)=124.8, p=8.13\u00d710\u2212230). (Average data is displayed as mean\u00a0\u00b1\u00a0sem. See Supplementary file 1 for a summary of experimental conditions. See Supplementary file 2 for statistics).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (a) Average crosscorrelation histograms of all simultaneously recorded RS unit pairs during ramp light stimulation for different age groups. (b) Same as (a) for FS unit pairs. (c) Same as (a) for RS-FS unit pairs (See Supplementary file 1 for a summary of experimental conditions).\n\n### Inhibitory feedback maturation resembles the dynamics of gamma development\n\nStimulation of prefrontal L2/3 PYRs with short light pulses (3 ms, 473 nm) at different frequencies was used to test the maximal firing frequencies of RS and FS units in P5-40 mice. Pulse stimulations induced a short increase of firing for both RS and FS units (Figure 6a). Confirming previous results (Bitzenhofer et al., 2017a), RS units did not follow high stimulation frequencies in mice younger than P11 and showed strong attenuation in the response to repetitive pulses. With ongoing development, this attenuation at high stimulation frequencies became less prominent for RS and FS units (Figure 6b), yet the low number of FS units at young age precluded clear conclusions. Inter-spike intervals of individual units revealed several peaks at fractions of the stimulation frequency for RS and FS, especially at higher stimulation frequencies (Figure 6\u2014figure supplement 1). These data suggest that individual units do not fire in response to every light pulse in the pulse train but skip some pulses.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig6-v1.jpg)\n\n**Figure 6.:** (a) Firing rate changes of prefrontal RS (black, n\u00a0=\u00a01824 units from 66 recordings/mice) and FS (red, n\u00a0=\u00a0226 units from 66 recordings/mice) units in response to repetitive pulse light stimulation (3 ms, 473 nm) of 4, 8, 16, 32, and 64 Hz averaged for different age groups. (b) Line plots displaying the ratio of firing rate change in response to the 10th versus the 1st pulse for different frequencies and age groups (multifactorial ANOVA: unit type F(1,7698)\u00a0=\u00a00.39, p=0.530, age group F(6, 7698)=18.7, p=1.00\u00d710\u221221, stimulation frequency F(4, 7698)=36.0, p=6.29\u00d710\u221230). (c) Firing rate changes of RS and FS units in response to pulse light stimulation (3 ms, 473 nm) of L2/3 PYRs averaged for different age groups. (d) Line plot displaying the average firing rate change of RS and FS units 0\u201310 ms after pulse light stimulation for different age groups. (e) Same as (c) displayed at longer time scale. (f) Same as (d) for 10\u201350 ms after pulse start. (Average data is displayed as mean\u00a0\u00b1\u00a0sem. See Supplementary file 1 for a summary of experimental conditions. See Supplementary file 2 for statistics).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56795/elife-56795-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Inter-spike intervals of prefrontal RS (black, n\u00a0=\u00a01824 units from 66 recordings/mice) and FS (red, n\u00a0=\u00a0226 units from 66 recordings/mice) units in response to repetitive ramp light stimulation of L2/3 PYRs (3 ms, 473 nm) of 4, 8, 16, 32, and 64 Hz averaged for different age groups. (Average data is displayed as mean\u00a0\u00b1\u00a0sem. See Supplementary file 1 for a summary of experimental conditions).\n\nTo assess the development of inhibitory feedback, we examined the firing rate changes of RS and FS units from P5-40 mice in response to individual 3 ms-long light pulses. The firing rate of RS and FS units transiently increased after pulse stimulation (Figure 6c). This effect significantly increased with age for RS units (Mann-Kendall trend test, p=0.04, n\u00a0=\u00a07 age groups, tau-b 0.714), but not for FS units (Mann-Kendall trend test, p=0.07, n\u00a0=\u00a07 age groups, tau-b 0.619) (Figure 6d). Next, we analyzed the delays of light-induced firing peaks for the two populations of units. The similar delays observed for RS and FS units suggest that the majority of RS units are non-transfected neurons, that are indirectly activated. The initial peak of increased firing was followed by reduced firing rates for RS and FS units only during late postnatal development (Figure 6e,f). The magnitude and duration of this firing depression gradually augmented with age and reached significance for RS units (Mann-Kendall trend test, RS, p=6.9\u00d710\u22123, n\u00a0=\u00a07 age groups, tau-b \u22120.905; FS, p=0.07, n\u00a0=\u00a07 age groups, tau-b \u22120.619). Thus, the inhibitory feedback in response to L2/3 PYR firing in the mPFC increases with age.\n\n### FS characteristics and rhythmicity of single units relate to the frequency of fast oscillatory activity\n\nWe used stepwise linear regression models to identify the most important correlations of single unit measures with gamma activity across development at the level of individual mice. The models included the following predictor variables (average values for each mouse): (i) proportion of FS units, action potential half width, trough-to-peak, and amplitude for RS and FS units (see Figure 2), (ii) firing rate change, peak power of autocorrelation, and peak power of spike-triggered LFP for RS and FS units during ramp light stimulation (see Figure 5), and (iii) firing rate change for RS and FS units 0\u201310 ms and 10\u201350 ms after pulse stimulation (see Figure 6). Stepwise linear regression to predict the peak frequency during ramp light stimulation identified action potential half width of FS units, as well as peak power of autocorrelation of RS and FS units as best predictor variables (n\u00a0=\u00a042, df\u00a0=\u00a038, R2\u00a0=\u00a00.136, p=0.036; see Supplementary file 2 for detailed statistics). Stepwise linear regression to predict the peak amplitude during ramp light stimulation identified firing rate change of RS units during ramp light stimulation, peak power of spike-triggered LFP for RS units, as well as RS firing rate change 0\u201310 ms after pulse stimulation and FS firing rate change 10\u201350 ms after pulse stimulation as best predictor variables (n\u00a0=\u00a048, df\u00a0=\u00a043, R2\u00a0=\u00a00.716, p=4.35\u00d710\u221212; see Supplementary file 2 for detailed statistics).\n\nThus, peak amplitude during ramp light stimulation is correlated with firing rate changes in response to ramp and pulse stimulations, indicating the importance of stimulation efficacy for peak amplitude. On the other hand, FS characteristics and rhythmicity of single units show the strongest correlation with the peak frequency of LFP power.\n\n## Discussion\n\nGamma oscillations (30\u201380 Hz) result from a fine-tuned interplay between excitation and inhibition in the adult brain (Atallah and Scanziani, 2009). For example, in sensory cortices, they arise through inhibitory feedback from PV-expressing interneurons (Cardin et al., 2009; Chen et al., 2017). Specifically, fast synaptic inhibition of the perisomatic region of pyramidal neurons by PV-expressing interneurons is critical for the generation of gamma oscillations (Cardin, 2016). Suppressing PV-expressing interneurons in the adult mPFC reduces the power in gamma frequency and impairs interhemispheric synchronization and cognitive abilities (Cho et al., 2015; Cho et al., 2020). SOM-expressing interneurons contribute to oscillatory activity at the lower end of the gamma frequency range (20\u201340 Hz) (Chen et al., 2017; Veit et al., 2017). In contrast, the mechanisms controlling the emergence of gamma activity during development are still poorly understood. Here, we reveal that the fast oscillatory activity in the mouse mPFC emerges during the second postnatal week and increases in frequency and amplitude before it stabilizes in gamma frequency range (30\u201380 Hz) during the fourth postnatal week. Further, we show that the functional maturation of FS PV-expressing interneurons and single unit rhythmicity of RS and FS units are best correlated with the accelerating gamma activity in the LFP. While activation of L2/3 PYR drives fast oscillatory activity throughout development, the acceleration toward higher frequencies relates to the maturation of inhibitory feedback and of FS interneurons. The time course of the maturation of FS units, putatively PV-expressing interneurons, is consistent with a recent characterization of PV-expressing interneuron physiology in the mPFC in vitro (Miyamae et al., 2017). These results suggest that the interplay between excitatory and inhibitory neurons is not only critical for the generation of adult gamma activity but also for its emergence during postnatal development.\n\nThe L2/3 PYRs-driven oscillatory activity was strongly correlated with spontaneously occurring fast frequency oscillations. However, broader peaks in power spectra for spontaneous activity indicate that the stimulation-induced activity might not cover the full diversity of spontaneous gamma activity. The broadness of spontaneous activity gamma power might also explain the absence of clear locking and rhythmicity of single units in the absence of prefrontal stimulation or task-induced activation of the mPFC.\n\nStarting with the first electroencephalographic recordings, adult brain rhythms have been defined according to their frequencies and related to a specific state or task (Buzs\u00e1ki and Draguhn, 2004). These \u2018classical\u2019 frequency bands (i.e. delta, theta, alpha, beta, gamma) are largely preserved between different mammalian species (Buzs\u00e1ki and Draguhn, 2004; Buzs\u00e1ki et al., 2013). However, how they emerge during development is still largely unknown. Synchronization of cortical areas in fast oscillatory rhythms starts during the first postnatal week (Brockmann et al., 2011). These low-amplitude patterns are detected in the rodent mPFC as early as P5,1\u20132 days later compared to primary sensory cortices (S1, V1) (Minlebaev et al., 2011; Yang et al., 2013; Dupont et al., 2006; Shen and Colonnese, 2016; Yang et al., 2009). However, this neonatal fast activity has a relative low frequency (around 20 Hz) (Brockmann et al., 2011; Yang et al., 2009). It is organized in infrequent short bursts and its detection is hampered by the lack of a clear peak in LFP power spectra. We previously showed that in the developing mPFC the detection of prominent fast oscillations with frequencies above 12 Hz coincides with the switch from discontinuous to continuous activity (Brockmann et al., 2011). These oscillations are initially within\u00a015-20 Hz frequency range that was classically defined as beta range. The present results indicate that these rhythms progressively increase their frequency and amplitude with age until they stabilize in gamma frequency range at 50\u201360 Hz during the fourth postnatal week. A similar increase in gamma frequency has been previously described after eye opening in the visual cortex (Hoy and Niell, 2015). Therefore, identification of oscillatory patterns in developing circuits according to \u2018classical\u2019 frequency bands established for adults should be avoided.\n\nAdult gamma activity in the cerebral cortex relies on FS PV-expressing interneurons (Cardin et al., 2009). To test whether this mechanism underlies the fast rhythms in the developing brain, we developed an unbiased approach to detect FS units corresponding to putatively PV-expressing interneurons. Since PV expression and FS characteristics do not completely overlap (Ma et al., 2006; Onorato et al., 2020), the method has the same drawback as that typically used for the distinction of adult RS and FS and cannot identify RS interneurons. For this, clustering of prefrontal neurons from mice of all investigated ages was performed based on a dimensionality reduction of their mean waveforms and not on pre-defined waveform features. To validate this approach, we compared the results to pre-defined waveform features typically used to identify FS units and found that they largely agree for adult mice. We demonstrate that FS units are detected in the mPFC during the second postnatal week and progressively mature until the fourth postnatal week, consistent with PV interneuron maturation (Okaty et al., 2009). The similar dynamics of FS interneuron maturation and acceleration of fast oscillatory activity, as well as the correlation of FS characteristics with induced fast oscillation frequencies across age supports the hypothesis that FS interneurons are key elements for prefrontal gamma development. In the absence of FS interneurons at early age, inhibitory feedback from SOM neurons \u2013 important for slow gamma activity in the adult cortex (Veit et al., 2017) \u2013 might contribute to early oscillatory activity at frequencies within 12\u201320 Hz range.\n\nWhile we only found minor age-dependent changes in the extracellular waveforms of RS units, an in-depth investigation of prefrontal PYRs during development had identified prominent changes in their dendritic arborization, passive and active membrane properties, as well as excitatory and inhibitory inputs (Kroon et al., 2019). These changes, even though not detected with extracellular recordings, most likely contribute to the maturation of pyramidal-interneuronal interactions and finally, of gamma activity. Indeed, we found that the maturation of inhibitory feedback in response to prefrontal L2/3 PYRs stimulation follows the same dynamics as the development of gamma oscillations. Furthermore, rhythmicity of single RS and FS units were identified as good predictors for the frequencies of oscillatory activity.\n\nGABAergic transmission in the rodent cortex matures during postnatal development, reaching an adult-like state toward the end of the fourth postnatal week (Le Magueresse and Monyer, 2013; Butt et al., 2017; Lim et al., 2018). Shortly after birth, GABA acts depolarizing due to high intracellular chloride in immature neurons expressing low levels of the chloride cotransporter KCC2 relative to NKCC1 (Rivera et al., 1999;\u00a0Lim et al., 2018). However, this depolarization is not sufficient to trigger action potential firing and results in shunting inhibition (Kirmse et al., 2018). The switch of GABA action from depolarizing to hyperpolarizing has been reported to occur during the second postnatal week (Ben-Ari et al., 2012), coinciding with the emergence of gamma band oscillations. Moreover, the composition of GABAA-receptor subunits changes during postnatal development, causing a progressive decrease of decay-time constants of inhibitory postsynaptic currents (IPSCs) until they reach adult-like kinetics in the fourth postnatal week (Okaty et al., 2009; Bosman et al., 2005; Laurie et al., 1992). Simulations of neuronal networks proposed that increasing IPSCs kinetics in FS interneurons results in increasing gamma frequency (Doischer et al., 2008). The gradual increase of prefrontal gamma frequency from the second to the fourth postnatal week provides experimental evidence for this hypothesis.\n\nIn-depth understanding of the dynamics and mechanisms of gamma activity in the developing cortex appears relevant for neurodevelopmental disorders, such as schizophrenia and autism. Both, in patients and disease mouse models, gamma oscillations have been reported to be altered, likely to reflect abnormal pyramidal-interneuronal interactions (Cho et al., 2015; Cao et al., 2018; Rojas and Wilson, 2014). These dysfunction seems to emerge already during development (Chini et al., 2020; Richter et al., 2019; Hartung et al., 2016). Elucidating the developmental dynamics of cortical gamma activity might uncover the timeline of disease-related deficits.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal-anti-parvalbumin</td>\n      <td>Abcam</td>\n      <td>ab11427</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal-anti-somatostatin</td>\n      <td>Santa Cruz</td>\n      <td>sc13099</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat-anti-rabbit secondary antibody, Alexa Fluor 488</td>\n      <td>Invitrogen-Thermo Fisher</td>\n      <td>A11008</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Isoflurane</td>\n      <td>Abbott</td>\n      <td>B506</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Urethane</td>\n      <td>Fluka analytical</td>\n      <td>94300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (mouse, both genders)</td>\n      <td>C57Bl/6J</td>\n      <td>Universit\u00e4tsklinikum Hamburg-Eppendorf \u2013Animal facility</td>\n      <td>C57Bl/6J</td>\n      <td>https://www.jax.org/strain/008199</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAAV-CAG-ChR2(E123T/T159C)\u22122AtDimer2</td>\n      <td>Provided by T. G. Oertner</td>\n      <td>pAAV-CAG-ChR2(E123T/T159C)\u22122AtDimer2</td>\n      <td>http://www.oertner.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab R2018b</td>\n      <td>MathWorks</td>\n      <td>Matlab R2018b</td>\n      <td>https://www.mathworks.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Kilosort2</td>\n      <td>MouseLand</td>\n      <td></td>\n      <td>https://github.com/MouseLand/Kilosort2</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>ImageJ</td>\n      <td></td>\n      <td>https://imagej.nih.gov/ij/</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Arduino Uno SMD</td>\n      <td>Arduino</td>\n      <td>A000073</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Digital Lynx 4SX</td>\n      <td>Neuralynx</td>\n      <td>Digital Lynx 4SX</td>\n      <td>http://neuralynx.com/</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Diode laser (473 nm)</td>\n      <td>Omicron</td>\n      <td>LuxX 473\u2013100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Electroporation device</td>\n      <td>BEX</td>\n      <td>CUY21EX</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Electroporation tweezer-type paddles</td>\n      <td>Protech</td>\n      <td>CUY650-P5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Recording electrode (one-shank, 16 channels)</td>\n      <td>Neuronexus</td>\n      <td>A1\u00a0\u00d7\u00a016 5 mm</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Recording electrode (four-shank, 16 channels)</td>\n      <td>Neuronexus</td>\n      <td>A4\u00a0\u00d7\u00a04 5 mm</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nAll experiments were performed in compliance with the German laws and the guidelines of the European Community for the use of animals in research and were approved by the local ethical committee (G132/12, G17/015, N18/015). Timed-pregnant mice from the animal facility of the University Medical Center Hamburg-Eppendorf were housed individually at a 12 hr light/12 hr dark cycle and were given access to water and food ad libitum. The day of vaginal plug detection was considered embryonic day (E) 0.5, the day of birth was considered postnatal day (P) 0. Experiments were carried out on C57Bl/6J mice of both sexes.\n\n### In utero electroporation (IUE)\n\nPregnant mice (C57Bl6/J, The Jackson Laboratory, ME, USA) received additional wet food daily, supplemented with 2\u20134 drops Metacam (0.5 mg/ml, Boehringer-Ingelheim, Germany) one day before until two days after in IUE. At E15.5, pregnant mice were injected subcutaneously with buprenorphine (0.05 mg/kg body weight) 30 min before surgery. Surgery was performed under isoflurane anesthesia (induction 5%, maintenance 3.5%) on a heating blanket. Eyes were covered with eye ointment and pain reflexes and breathing were monitored to assess anesthesia depth. Uterine horns were exposed and moistened with warm sterile PBS. 0.75\u20131.25 \u00b5l of opsin- and fluorophore-encoding plasmid (pAAV-CAG-ChR2(E123T/T159C)\u22122A-tDimer2, 1.25 \u00b5g/\u00b5l) purified with NucleoBond (Macherey-Nagel, Germany) in sterile PBS with 0.1% fast green dye was injected in the right lateral ventricle of each embryo using pulled borosilicate glass capillaries. Electroporation tweezer paddles of 5 mm diameter were oriented at a rough 20\u00b0 leftward angle from the midline of the head and a rough 10\u00b0 downward angle from the anterior to posterior axis to transfect precursor cells of medial prefrontal layer 2/3 PYRs neurons with five electroporation pulses (35 V, 50 ms, 950 ms interval, CU21EX, BEX, Japan). Uterine horns were placed back into the abdominal cavity. Abdominal cavity was filled with warm sterile PBS and abdominal muscles and skin were sutured with absorbable and non-absorbable suture thread, respectively. After recovery from anesthesia, mice were returned to their home cage, placed half on a heating blanket for two days after surgery. Fluorophore expression was assessed at P2 in the pups with a portable fluorescence flashlight (Nightsea, MA, USA) through the intact skin and skull and confirmed in brain slices postmortem.\n\n### Electrophysiology\n\n#### Acute head-fixed recordings\n\nMulti-site extracellular recordings were performed unilaterally or bilaterally in the mPFC of non-anesthetized or anesthetized P5-40 mice. Mice were on a heating blanket during the entire procedure. Under isoflurane anesthesia (induction: 5%; maintenance: 2.5%), a craniotomy was performed above the mPFC (0.5 mm anterior to bregma, 0.1\u20130.5 mm lateral to the midline). Pups were head-fixed into a stereotaxic apparatus using two plastic bars mounted on the nasal and occipital bones with dental cement. Multi-site electrodes (NeuroNexus, MI, USA) were inserted into the mPFC (four-shank, A4 \u00d7 4 recording sites, 100 \u00b5m spacing, 125 \u00b5m shank distance, 1.8\u20132.0 mm deep). A silver wire was inserted into the cerebellum and served as ground and reference. For non-anesthetized and anesthetized recordings, pups were allowed to recover for 30 min prior to recordings. For anesthetized recordings, urethane (1 mg/g body weight) was injected intraperitoneally prior to the surgery.\n\n### Acute head-fixed recordings with chronically implanted head-fixation adapters\n\nMultisite extracellular recordings were performed unilaterally in the mPFC of P23-25 and P38-40 mice. The adapter for head fixation was implanted at least 5 days before recordings. Under isoflurane anesthesia (5% induction, 2.5% maintenance), a metal head-post (Luigs and Neumann, Germany) was attached to the skull with dental cement and a craniotomy was performed above the mPFC (0.5\u20132.0 mm anterior to bregma, 0.1\u20130.5 mm right to the midline) and protected by a customized synthetic window. A silver wire was implanted between skull and brain tissue above the cerebellum and served as ground and reference. 0.5% bupivacaine/1% lidocaine was locally applied to cutting edges. After recovery from anesthesia, mice were returned to their home cage. After recovery from the surgery, mice were accustomed to head-fixation and trained to run on a custom-made spinning disc. For non-anesthetized recordings, craniotomies were uncovered and multi-site electrodes (NeuroNexus, MI, USA) were inserted into the mPFC (one-shank, A1 \u00d7 16 recording sites, 100 \u00b5m spacing, 2.0 mm deep).\n\nExtracellular signals were band-pass filtered (0.1\u20139000 Hz) and digitized (32 kHz) with a multichannel extracellular amplifier (Digital Lynx SX; Neuralynx, Bozeman, MO, USA). Electrode position was confirmed in brain slices postmortem.\n\n### Optogenetic stimulation\n\nRamp (linearly increasing light power) light stimulation and pulsed (short pulses of 3 ms) light stimulation at different frequencies was performed using an Arduino uno (Arduino, Italy) controlled laser system (473 nm / 594 nm wavelength, Omicron, Austria) coupled to a 50 \u00b5m (four- shank electrodes) or 105 \u00b5m (one-shank electrodes) diameter light fiber (Thorlabs, NJ, USA) glued to the multisite electrodes, ending 200 \u00b5m above the top recording site. Each type of stimulation was repeated 30 times. At the beginning of each recording, laser power was adjusted to reliably trigger neuronal spiking in response to light pulses of 3 ms duration.\n\n### Histology\n\nMice (P5-40) were anesthetized with 10% ketamine (aniMedica, Germanry)/2% xylazine (WDT, Germany) in 0.9% NaCl (10 \u00b5g/g body weight, intraperitoneal) and transcardially perfused with 4% paraformaldehyde (Histofix, Carl Roth, Germany). Brains were removed and postfixed in 4% paraformaldehyde for 24 hr. Brains were sectioned coronally with a vibratom at 50 \u00b5m for immunohistochemistry.\n\n### Immunohistochemistry\n\nFree-floating slices were permeabilized and blocked with PBS containing 0.8% Triton X-100 (Sigma-Aldrich, MO, USA), 5% normal bovine serum (Jackson Immuno Research, PA, USA) and 0.05% sodium azide. Slices were incubated over night with primary antibody rabbit-anti-parvalbumin (1:500, #ab11427, Abcam, UK) or rabbit-anti-somatostatin (1:250, #sc13099, Santa Cruz, CA, USA), followed by 2 hr incubation with secondary antibody goat-anti-rabbit Alexa Fluor 488 (1:500, #A11008, Invitrogen-Thermo Fisher, MA, USA). Sections were transferred to glass slides and covered with Fluoromount (Sigma-Aldrich, MO, USA).\n\n### Cell quantification\n\nImages of immunofluorescence in the right mPFC were acquired with a confocal microscope (DM IRBE, Leica, Germany) using a 10x objective (numerical aperture 0.3). Immunopositive cells were automatically quantified with custom-written algorithms in ImageJ environment. The region of interest (ROI) was manually defined over L2/3 of the mPFC. Image contrast was enhanced before applying a median filter. Local background was subtracted to reduce background noise and images were binarized and segmented using the watershed function. Counting was done after detecting the neurons with the extended maxima function of the MorphoLibJ plugin.\n\n### Data analysis\n\nElectrophysiological data were analyzed with custom-written algorithms in Matlab environment. Data were band-pass filtered (500\u20139000 Hz for spike analysis or 1\u2013100 Hz for local field potentials (LFP)) using a third-order Butterworth filter forward and backward to preserve phase information before down-sampling to analyze LFP. Each type of optogenetic stimulation (ramps or pulses at different frequencies) was repeated 30 times for each recording. Each recording contributes a single data point for Figures 1 and 3. Most mice were recorded once. Only mice with chronically implanted head fixation were recorded more than one time (13 recordings from six mice at P24-26 and 12 recordings from five mice at P37-40), but all recordings were with acutely inserted electrodes. All mice for single unit analysis were recorded only once. (See Supplementary file 1 for a summary of experimental conditions.)\n\n### Power spectral density\n\nFor power spectral density analysis, 2 s-long windows of LFP signal were concatenated and the power was calculated using Welch\u2019s method with non-overlapping windows. Spectra were multiplied with squared frequency.\n\n### Modulation index\n\nFor optogenetic stimulations, MI was calculated as (value stimulation - value pre- stimulation) / (value stimulation + value pre-stimulation).\n\n### Peak frequency and strength\n\nPeak frequency and peak strength were calculated for the most prominent peak in the spectrum defined by the product of peak amplitude, peak half width and peak prominence.\n\n### Single unit analysis\n\nSpikes were detected and sorted with Kilosort2 in Matlab. t-sne dimensionality reduction was applied on mean waveforms of all units. Hierarchical clustering was performed to identify FS and RS units for all ages simultaneously. Autocorrelations of single units with a minimum firing rate of 1 Hz were calculated before and during optogenetic ramp stimulation. Power spectral densities of mean autocorrelations were calculated per unit. Crosscorrelations of simultaneously recorded RS-RS, FS-FS, and RS-FS unit pairs were calculated during optogenetic ramp stimulation. Power of the mean spike-triggered LFP, pairwise phase consistency (Vinck et al., 2010), coefficient of variation, CV2 (Holt et al., 1996), and inter-spike intervals were calculated for individual units before and during optogenetic ramp stimulation.\n\n### Statistics\n\nNo statistical measures were used to estimate sample size since effect size was unknown. Data were tested for consistent trends across age with the non-parametric Mann-Kendall trend test. Mann-Kendall coefficient tau-b adjusting for ties is reported. Multifactorial ANOVAs were used to compare main effects. Linear regression models were used to test for significant links of averaged single unit and LFP activity measures with age per recording. Stepwise linear regression was used to identify significant links from averaged single unit activity measures (proportion FS units, as well as half width, trough to peak, amplitude, rate change for ramp light stimulation, autocorrelation peak during ramp light stimulation, spike-triggered LFP peak frequency during ramp stimulation, and rate change early (0\u201310 ms) and late (10\u201350 ms) after pulse stimulation for RS and FS units) with LFP activity (ramp light-induced frequency peak and amplitude). See Supplementary file 2 for detailed statistics.\n",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "9b6264bc-8256-431d-ba4c-49eac127d5b5",
+      "submission_id": "3e542269-e610-465a-8c56-143c5910f70c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Martin Vinck, Ernst Str\u00fcngmann Institute (ESI) for Neuroscience in Cooperation with Max Planck Society Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56795.sa1](https://doi.org/10.7554/eLife.56795.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nBitzenhofer et al., show that fast network oscillations in the \u03b3-frequency range become progressively stronger during early development, and stabilize around the fourth postnatal week. This development shows a similar temporal progression and is correlated with the maturation of fast spiking interneurons, a cell class that is known to regulate fast network oscillations. These findings provide important new insights into the development of \u03b3 oscillations and will be valuable for understanding the development of neuropsychiatric diseases linked to GABAergic dysfunction and abnormal oscillatory activity.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"\u0393 activity accelerates during prefrontal development\" for consideration by eLife. Your article has been reviewed by four peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Laura Colgin as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Quentin Perrenoud (Reviewer #3); Christopher I Moore (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nBitzenhofer et al., examined the developmental trajectory of \u03b3-band oscillations during early development in mice prefrontal cortex. The authors used extracellular recordings and optogenetic stimulations in mice aged P5-40. Rhythmic activity in the prefrontal cortex became more prominent during the second postnatal week and increased in frequency. Developmental modifications in the strength of \u03b3-band oscillations correlated with activation of layer 2/3 pyramidal neurons while the acceleration of their frequency followed similar temporal dynamics as the maturation of fast-spiking interneurons. The current findings provide important data on the maturation of rhythmic activity and the underlying mechanisms in prefrontal circuits. Given the relative scarcity of data in this field, the findings are potentially important and of general interest.\n\nThe reviewers made many positive comments on your manuscript. They think the study fills an important gap in terms of developmental studies on oscillations and provides mechanistic insight into the emergence of \u03b3 rhythms. They agree that the dataset is rich and contains many challenging experiments providing valuable data that is scarce in the field. They also consider that the findings fit well with the existing literature.\n\nEssential revisions:\n\nThe reviewers were generally appreciative of the quality and richness of the experiments. Their main concerns were the analysis and interpretation of the data. The reviewers assess that this work can be done without further experiments, but by further analysis.\n\n1) The greatest concern pertains to the claims about the mechanisms underlying the development of rhythms and their statistical support.\n\nThis refers to claims like, \"These results demonstrate that the interplay between excitatory and inhibitory neurons is not only critical for the generation of adult \u03b3 activity but also for its emergence during postnatal development.\"\n\nA core argument is that developmental modifications in high-frequency activity mirror the changes observed in both PV/FS-activation and L2/3 pyramidal neurons. The authors refer frequently to the fact the patterns of electrophysiological activity \"mirror\" those observed, for example, for the maturation of FS interneurons. The authors should investigate these relationships more formally, rather stating that there are similar trends in the data, for example, through analysis of individual changes.\n\nOverall, the authors make little effort to test this link statistically and their claim is only backed by observational and potentially subjective similarities between developmental trends.\n\nSpecifically, reviewers commented that all the data presented in the manuscript, except for the immunohistochemistry, come from the same data-set. It should thus be possible to test whether a significant link exists across recordings between the power or the mode of high frequency activity and the various metrics used by the authors to quantify RS and FS firing. A variety of methods exist for this purpose and would be acceptable here (a stepwise multi-linear regression for instance).\n\nThe authors should also characterize the development of synchrony and phase-locking over time. How does synchrony amongst FS evolve, for example, over time?\n\nIn general, the study makes strong claims like \"demonstrate that the interplay between excitatory and inhibitory neurons is not only critical for the generation of adult \u03b3 activity but also for its emergence during postnatal development\"(Discussion section). Most of the observation provided by the author are based on correlations. Thus, we encourage the author to be more cautious in their conclusions.\n\n2) Important analyses about neural activity are missing that are critical for the interpretation of the data. Overall, the analysis of the spiking and rhythmicity of RS and FS unit is somewhat limited. The reviewers feel that adding these analyses are necessary to make the paper more complete and impactful.\n\nRequests:\n\ni) Pairwise analyses of synchrony amongst FS over time. Important from many perspectives, including relating these data to the slice literature where younger animals are often used e.g. to examine coupling frequency.\n\nii) The authors should see whether other spiking metrics evolve over time: CV2 is one among many, ISI probability (as distinct from frequency analysis of the spike train--these do give a different perspective).\n\niii) The manuscript does not provide of direct measure of the phase-locking of RS and FS units to high-frequency activity. The sole metric used for this purpose is the autocorrelation which is rather a measure of intrinsic rhythmicity than a measure of the entrainment to LFP signals. It is also important to note that, while \u03b3 activity is often conceived as a sustained oscillation, studies have shown that in most cortical regions it patterns in short bouts (Siegle et al., 2014) having dynamics that are similar to filtered white noise (Burns et al., 2011). Thus, an increase in \u03b3 activity is generally not accompanied by an increase of rhythmicity in the autocorrelation of RS and FS units (Perrenoud et al., 2016). A more appropriate approach would be to estimate the phase of high-frequency activity using a wavelet or a Hilbert transform (Bruns, 2004) and to quantify the phase locking of RS and FS units using either spike-field coherence, or if firing bias is a concern, with the Pairwise Phase Consistency.\n\niv) The authors should do a more sensitive quantification of spike-field coherence for spontaneous firing, because autocorrelations will be highly insensitive when the firing rates are low. Otherwise, what does the \u03b3 in the PFC reflect, if not the firing of individual neurons?\n\nv) Given the richness of the dataset and the policies of eLife with respect to data publication, we strongly encourage the authors to published their raw data which may allow other aspects of this dataset to be analysed in the future.\n\n3) Spectral analyses. The reviewers requested a more refined spectral analysis:\n\ni) The authors examine spontaneous activity (Figure 1) and compare these data to optogenetically driven oscillations (Figure 3). However, inspection of spectrograms (Figure 1 and Figure 3B) may reveal some differences. The spontaneous high-frequency activity appears much more broadbanded (Figure 1B) than the optogenetically driven activity (Figure 3B). This raises the question whether the patterns are actually reflecting the same process and thus potentially involving different mechanisms (broad-band modulation vs. narrow-banded oscillation). Similarly, changes in peak-frequency vs. increases in power may reflect quite distinct phenomena that should be disentangled. In this context, did the authors examine also changes in lower frequency power across development? Close inspection of Figure 1B reveals a clear peak in the \u03b4/theta-range at P40 which is not present in other groups.\n\nii) Reviewers commented that there is very little low frequency power for the P5-10 group. Reviewers would like to see what happens if the authors normalize the power differently (using a standard division by the total power), and if there would not be more \u03b3 power at high frequencies?\n\nRelated to this, reviewers commented that the spontaneous firing rates seem to be very low for the P5-10 group (see Figure 4) and were concerns that comparing absolute power across animals amounts to comparing mean firing rates.\n\niii) The lower peak seems to shift to a lower frequency with age, rather than to a higher frequency. The authors should discuss this.\n\niv) There appear to be artifacts in the spectrum shown in Figure 1, column 3, second row P12 \u2013 what are these artifacts? Artifacts are peaks separated by about 10Hz, meaning they are 0.1s artifacts, this could be due to anesthesia apparatus? Could this have influenced the quantification of \u03b3?\n\nv) Figure 3C: From this figure, the developmental change in spectral power is not clearly visible. The authors may want to use a different way of highlighting changes in spectral power across development.\n\n4) Effect of behavioural state. The authors should address the issue of behavioural state.\n\nIn general comparisons are made between animals where it is not clear that the behavioural state is the same. For example, chronic recordings were done only in P25 and P40 groups, but the behavioural state of the younger (and the conditions of recordings) during wakefulness are completely unclear. It is not clear whether changes in \u03b3 observed might be due to behavioural state (see also Hoy and Niell, 2015). Was the behavioral state the same between mice? Did mice at different ages run more than at other ages? How did running impact FS or RS firing?\n\nThe reviewers further wondered how the time in the session impacted likelihood of seeing different rhythms (did lower frequencies predominate later in the session, as many prior studies would predict)?\n\nOverall, the authors feel that the data in this sense is underused and that there may be a lot of useful developmental richness that would make the paper a more important contribution.\n\nThe Materials and methods section says some wake animals were recorded from a stereotaxis apparatus. What does this apparatus imply for behavioral state?\n\nThe conditions of the recordings need to be clearly described.\n\n5) Richer analyses of the adaptation functions is highly warranted, given interesting work (e.g., by Llampl and many others) in the adaptation of inhibitory versus excitatory currents.\n\nReviewers further wondered if the difference in apparent adaptation cannot be simply explained by the overall difference in activation to light trains?\n\n6) While FS units are generally assumed to correspond to PV interneurons, pyramidal neurons (Onorato et al., 2019) and Somatostatin interneurons (Ma et al., 2006) can also display these characteristics. Thus, the FS units identified in this study might not only include PV interneurons. The authors should discuss this.\n\nThe authors wondered if the authors can give a strong argument or piece data that the \"fast-spiking firing properties\" are also altered, in the sense of the neurons' input-output functions (how they respond to current or synaptic input). That is fast spiking needs to be more clearly defined and interpreted.\n\n7) In general reviewers agreed that the dataset (nature of the statistical units, mice, recording and state \u2013 awake, anesthetized, sex) is not described clearly enough. These points would greatly improve the paper.\n\ni) Reviewers noted it is generally difficult to figure out how the authors exactly analyzed their data, what data points went in the figures, etc. Tables summarizing the dataset would be very useful.\n\nii) Chronic recordings were done only in P23-25 and P38-40 \u2013 are these difference mice?\n\nFigure 1C \u2013 are these different mice? If so, can we compare them to each other? What data goes exactly in this figure in terms of acute recordings and chronic recordings for 1A-C. It seems for the wake group the authors compare chronic to non-chronic conditions. That comparison seems problematic given the effect on behavioural state.\n\niii) N = 114 recordings, but n=80 and n=20,35 in the figure legends what does it refer to? The n's used for the analysis and the number of mice should be clear everywhere in the paper. Is every mouse contributing a separate data point for the statistics, or is every channel, or every recording a data point? If so, isn't the analysis problematic because you are inflating your statistical degrees of freedom massively. For example, p=2.73*10-8 seems to be a p-value that is suffering from inflation due to dependent measures. Similar comments apply to the rest of the paper.\n\nIt is unclear how sample size impact the inferences we should take from different plots and analyses--many more cells are sampled at certain days. For example, in Figure 6B, there seem to be differences in the adaptation functions, but it's not clear whether this is the case.\n\niv) Figure 1B panel right -there are no error bars on this figure, how reliable are these differences across mice? Figure 1 Heatmap \u2013 it seems that there is a lot variability, perhaps across different mice? The authors should show how consistent the effects are across mice that are recorded under similar conditions.\n\nv) The authors should describe the intensity of the laser, and say how the intensity was calibrated and determined. The reviewers wondered whether the laser is actually driving activity in the pups, because this is not clearly visible from the plots, perhaps due to extremely low spontaneous firing rates. It appears that high frequency activity (which is dominated by spiking) does not seem to be affected by the laser. Single examples of neurons with raster plots would be very helpful to understand this. In general, providing raster plots with single spikes would be extremely helpful for the reader to assess the reliability of optogenetics simulation and the meaning of various statistics computed. The authors should ideally show an example of a single neuron that is positively modulated by light stimulation for the young pups to understand what is going on.\n\nThe text should clearly distinguish between absolute rate changes and modulation. If spontaneous firing rates are very low, then neurons might show a large relative change, but they could still be largely unresponsive to the light.\n\nvi) The following statement is not clear. The first p-value doesn't seem to be significant.\n\n\"While ramp-induced firing rate changes of RS units (Mann207 Kendall trend test, p=0.07, n=7 age groups, tau-b 0.619) became more prominent at older 208 age, the firing rate changes were stable for FS units (Mann-Kendall trend test, p=0.88, 209 n=7 age groups, tau-b 0.047) (Figure 4B)\"\n\nvii) \"whereas at older age the number 211 of activated and inactivated RS units got more balanced (Mann-Kendall trend test, p=1.52*10-14 212 , n=1821 units, tau-b -0.123)\"\n\nPlease explain what \"more balanced\" means and how balanced is quantified.\n\nviii) Reviewers commented that in Figure 5, it is unclear what the quantification or statistical test is. It looks like only the P36-40 is qualitatively different, and the P5-10. But the intermediate ages do not seem to show a consistent pattern.\n\n(viiii) A variety of methods are available for hierarchical clustering. However, a reviewer did not understand which of these the authors use for the clustering of single units. Please make sure it is well detailed in the Materials and methods sections.\n\nComments on literature:\n\ni) The authors highlight in this paper the importance of early development for the maturation of neural oscillations. It would be useful to expand the literature review to indicate that development of rhythmic activity as well as the underlying mechanism extend beyond P40.\n\nii) In the Introduction, please specify that the results obtained by Chen et al., 2017; Veit et al., 2017 were acquired in the visual cortex as the type of \u03b2 activity observed in these studies has not yet been observed in other regions.\n\niii) Discussion and comparison with existing literature (Hoy and Niell, 2015 \u2013 which was not cited) is necessary. That study contains several findings reported here as well.\n",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ce229025-6d0d-4b90-86f6-168fcf3f2d8d",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C1",
+      "claim": "Fast rhythmic activity in the prefrontal cortex becomes prominent during the second postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that fast rhythmic activity in the prefrontal cortex becomes prominent during the second postnatal week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract and is supported by experimental data from extracellular recordings shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "326cb5c1-3fb1-4ae9-972e-4a2071841c74",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C2",
+      "claim": "Fast oscillatory activity initially occurs at about 15 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "While initially at about 15 Hz, fast oscillatory activity progressively accelerates with age and stabilizes within gamma frequency range (30\u201380 Hz) during the fourth postnatal week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by data in Figure 1 showing peak frequencies starting at ~20 Hz at P12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "a1e31f5f-c26d-4fd5-b57e-89cb2a794ea8",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C3",
+      "claim": "Fast oscillatory activity stabilizes within gamma frequency range (30\u201380 Hz) during the fourth postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "While initially at about 15 Hz, fast oscillatory activity progressively accelerates with age and stabilizes within gamma frequency range (30\u201380 Hz) during the fourth postnatal week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by experimental data showing stabilization at 50-60 Hz at P25 in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "3fa51b13-0a4c-4e83-9950-b155c1c304b2",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C4",
+      "claim": "Activation of layer 2/3 pyramidal neurons drives fast oscillations throughout development.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of layer 2/3 pyramidal neurons drives fast oscillations throughout development, yet the acceleration of their frequency follows similar temporal dynamics as the maturation of fast-spiking interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by optogenetic stimulation experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "5fc6b1ae-17a2-4733-8ff3-991fbffc27f5",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C5",
+      "claim": "The acceleration of fast oscillation frequency follows similar temporal dynamics as the maturation of fast-spiking interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of layer 2/3 pyramidal neurons drives fast oscillations throughout development, yet the acceleration of their frequency follows similar temporal dynamics as the maturation of fast-spiking interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by data comparing FS interneuron maturation (Figure 2) with gamma frequency development (Figure 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "bd43c011-ee07-4a1d-b18e-8d287b37775f",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C6",
+      "claim": "Gamma oscillations are a prominent activity pattern in the cerebral cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma oscillations are a prominent activity pattern in the cerebral cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "59ab5054-b24f-482f-923c-76cdf67c30ee",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C7",
+      "claim": "Oscillatory activity in gamma frequency range has been proposed to organize neuronal ensembles and to shape information processing in cortical networks.",
+      "claim_type": "EXPLICIT",
+      "source": "While its exact functions are still a matter of debate, oscillatory activity in gamma frequency range has been proposed to organize neuronal ensembles and to shape information processing in cortical networks (Singer, 2018; Cardin, 2016; Sohal, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "fba6faa0-67d3-4144-8445-fea930541e61",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C8",
+      "claim": "Gamma activity emerges from reciprocal interactions between excitatory and inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma activity emerges from reciprocal interactions between excitatory and inhibitory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge in the field, presented in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "b7094934-0aa7-41a8-8c4c-979ac36051c4",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C9",
+      "claim": "In the visual cortex, fast inhibitory feedback via soma-targeting parvalbumin (PV)-expressing inhibitory interneurons leads to fast gamma activity (30\u201380 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "In the visual cortex, fast inhibitory feedback via soma-targeting parvalbumin (PV)-expressing inhibitory interneurons leads to fast gamma activity (30\u201380 Hz) (Cardin et al., 2009; Chen et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "717219e4-e1ac-491f-a091-674e65b880ca",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C10",
+      "claim": "Dendrite-targeting somatostatin (SOM)-expressing inhibitory interneurons contribute to beta/low gamma activity (20\u201340 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas dendrite-targeting somatostatin (SOM)-expressing inhibitory interneurons contribute to beta/low gamma activity (20\u201340 Hz) (Chen et al., 2017; Veit et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "14c245ee-32c8-4266-bd78-be10f2db0c60",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C11",
+      "claim": "Interneuronal dysfunction and ensuing abnormal gamma activity in the medial prefrontal cortex (mPFC) have been linked to impaired cognitive flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Interneuronal dysfunction and ensuing abnormal gamma activity in the medial prefrontal cortex (mPFC) have been linked to impaired cognitive flexibility (Cho et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "fd602b4a-9916-4758-a018-61c7a97538d1",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C12",
+      "claim": "Imbalance between excitation and inhibition in cortical networks and resulting gamma disruption have been proposed to cause cognitive disabilities in autism and schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, imbalance between excitation and inhibition in cortical networks and resulting gamma disruption have been proposed to cause cognitive disabilities in autism and schizophrenia (Cho et al., 2015; Cao et al., 2018; Rojas and Wilson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "85affae5-38d6-4871-b37e-845c13ad76b6",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C13",
+      "claim": "The ontogeny of prefrontal gamma activity is poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite substantial literature linking cognitive abilities and disabilities to gamma oscillations in the adult mPFC, the ontogeny of prefrontal gamma activity is poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "3d1692bb-ab81-45ca-8a8d-9f334f584a4f",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C14",
+      "claim": "Abnormal patterns of fast oscillatory activity have been described at early postnatal age in autism and schizophrenia mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "This knowledge gap is even more striking considering that abnormal patterns of fast oscillatory activity have been described at early postnatal age in autism and schizophrenia mouse models (Chini et al., 2020; Richter et al., 2019; Hartung et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "08cc657f-038f-4424-b9f4-96b9448cc4ef",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C15",
+      "claim": "Oscillatory activity at fast frequencies (>12 Hz) can be detected in the mPFC at the beginning of the second postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular recordings in the mPFC of anesthetized and non-anesthetized P5-40 mice revealed that oscillatory activity at fast frequencies (>12 Hz) can be detected at the beginning of the second postnatal week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data from extracellular recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "b198356a-e508-4837-95cf-1a2bf53352a6",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C16",
+      "claim": "The temporal dynamics of fast oscillations are similar in anesthetized and non-anesthetized states, yet their magnitude is higher in non-anesthetized mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal dynamics of these fast oscillations are similar in the two states, yet their magnitude is higher in non-anesthetized mice, as previously described (Chini et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data and supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "2ca1552f-ff60-4489-a8dd-e573dd02e743",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C17",
+      "claim": "The magnitude of fast oscillations increases with age.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of fast oscillations increases with age (Mann-Kendall trend test, p=3.93\u00d710\u221222, n = 114 recordings, tau-b 0.625)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "dd7cf370-7abe-4850-8568-7d71231dc3a7",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C18",
+      "claim": "Fast oscillations can be detected as distinct peaks in power spectra at the end of the second postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of fast oscillations increases with age (Mann-Kendall trend test, p=3.93\u00d710\u221222, n = 114 recordings, tau-b 0.625) and can be detected as distinct peaks in power spectra at the end of the second postnatal week (Figure 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "7c71cc3a-68a5-45b2-aa2c-63238671df7b",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C19",
+      "claim": "The peak frequency of fast oscillations gradually increases with age.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak frequency of these oscillations gradually increases with age (Mann-Kendall trend test, p=2.73\u00d710\u22128, n = 114 recordings, tau-b 0.361)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "8f52177e-4357-4074-b05a-855a8f3b14a3",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C20",
+      "claim": "Fast oscillations start at ~ 20 Hz at P12.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak frequency of these oscillations gradually increases with age (Mann-Kendall trend test, p=2.73\u00d710\u22128, n = 114 recordings, tau-b 0.361), starting at ~ 20 Hz at P12 and reaching the characteristic gamma frequency of 50\u201360 Hz at P25 (Figure 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "a0cad6e3-b4c3-416e-91ba-791fc12ba16b",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C21",
+      "claim": "Fast oscillations reach the characteristic gamma frequency of 50\u201360 Hz at P25.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak frequency of these oscillations gradually increases with age (Mann-Kendall trend test, p=2.73\u00d710\u22128, n = 114 recordings, tau-b 0.361), starting at ~ 20 Hz at P12 and reaching the characteristic gamma frequency of 50\u201360 Hz at P25 (Figure 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "9cdfee97-035d-4c2a-a572-5ba3f41f89f7",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C22",
+      "claim": "Peak strength and peak frequency do not change after P25.",
+      "claim_type": "EXPLICIT",
+      "source": "Both, peak strength and peak frequency, do not change after P25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "1198cf20-a085-43ed-be61-bee085a4f4e4",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C23",
+      "claim": "Peak frequency and peak amplitude show significant correlation with age.",
+      "claim_type": "EXPLICIT",
+      "source": "A linear regression model of peak frequency and peak amplitude shows significant correlation with age (n = 114, df = 111, R2 = 0.542, p=5.48\u00d710\u221220; ANOVA: peak frequency F(1,111)=17.8, p=4.86\u00d710\u22125, peak amplitude F(1,111)=74.4, p=5.05\u00d710\u221214).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "880e0b26-3c33-41a8-a324-a94cfd53fc2d",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C24",
+      "claim": "PV expression in the mPFC starts at the end of the second postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "First, immunostainings showed that PV expression in the mPFC starts at the end of the second postnatal week, increases until P25 and stabilizes afterwards (Mann-Kendall trend test, p=1.29\u00d710\u22127, n = 38 mice, tau-b 0.623) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on immunohistochemistry data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "51f69320-4637-4cee-9173-b71851e47afc",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C25",
+      "claim": "PV expression increases until P25 and stabilizes afterwards.",
+      "claim_type": "EXPLICIT",
+      "source": "First, immunostainings showed that PV expression in the mPFC starts at the end of the second postnatal week, increases until P25 and stabilizes afterwards (Mann-Kendall trend test, p=1.29\u00d710\u22127, n = 38 mice, tau-b 0.623) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on immunohistochemistry data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "29a33875-b09e-473c-80a5-a1d0f8a5a114",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C26",
+      "claim": "The developmental dynamics of PV expression follow a similar trend as the changes in peak power and peak frequency of fast oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics over age follow a similar trend as the changes in peak power and peak frequency of the fast oscillations described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of PV expression data with oscillation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "f63bbb29-bd87-4298-ab31-edf55298563c",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C27",
+      "claim": "The number of SOM positive neurons does not significantly vary along postnatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the number of SOM positive neurons does not significantly vary along postnatal development (Mann-Kendall trend test, p=0.99, n = 39 mice, tau-b \u22120.003) (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on immunohistochemistry data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "78b24917-ccfd-4dde-b760-85388a3deb41",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C28",
+      "claim": "FS units start to be detected at the end of the second postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "The classification of units with this method revealed that FS units start to be detected at the end of the second postnatal week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on single unit analysis using t-sne dimensionality reduction and hierarchical clustering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "70e96edf-60e2-43e0-9bd4-6a62b3de8aed",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C29",
+      "claim": "The number of FS units gradually increased until P25.",
+      "claim_type": "EXPLICIT",
+      "source": "Their number gradually increased until P25 (Mann-Kendall trend test, p=1.44\u00d710\u22127, n = 66 recordings, tau-b 0.458) (Figure 2h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on single unit analysis data shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "2d03eafd-3c21-4730-accb-c59b0cad9d72",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C30",
+      "claim": "Trough-to-peak duration of RS and FS units gradually decreased from the end of the second postnatal week until P25.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the classical features across age showed that trough-to-peak duration (Mann-Kendall trend test, RS, p=4.57\u00d710\u22125, n = 3172 units, tau-b \u22120.051; FS, p=9.23\u00d710\u221211, n = 382 units, tau-b \u22120.236), half width (Mann-Kendall trend test, RS, p=1.61\u00d710\u221228, n = 3172 units, tau-b \u22120.134; FS, p=5.17\u00d710\u221217, n = 382 units, tau-b \u22120.295), and negative amplitude (Mann-Kendall trend test, RS, p=4.45\u00d710\u221222, n = 3172 units, tau-b \u22120.117; FS, p=3.82\u00d710\u22126, n = 382 units, tau-b \u22120.163) of RS and FS units gradually decreased from the end of the second postnatal week until P25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of single unit waveform features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "0a8a1174-d1ca-4086-bf22-fa633d96bc1f",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C31",
+      "claim": "Half width of RS and FS units gradually decreased from the end of the second postnatal week until P25.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the classical features across age showed that trough-to-peak duration (Mann-Kendall trend test, RS, p=4.57\u00d710\u22125, n = 3172 units, tau-b \u22120.051; FS, p=9.23\u00d710\u221211, n = 382 units, tau-b \u22120.236), half width (Mann-Kendall trend test, RS, p=1.61\u00d710\u221228, n = 3172 units, tau-b \u22120.134; FS, p=5.17\u00d710\u221217, n = 382 units, tau-b \u22120.295), and negative amplitude (Mann-Kendall trend test, RS, p=4.45\u00d710\u221222, n = 3172 units, tau-b \u22120.117; FS, p=3.82\u00d710\u22126, n = 382 units, tau-b \u22120.163) of RS and FS units gradually decreased from the end of the second postnatal week until P25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of single unit waveform features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "5e1b6e78-3323-4105-9b69-80ef1d59066d",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C32",
+      "claim": "Negative amplitude of RS and FS units gradually decreased from the end of the second postnatal week until P25.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the classical features across age showed that trough-to-peak duration (Mann-Kendall trend test, RS, p=4.57\u00d710\u22125, n = 3172 units, tau-b \u22120.051; FS, p=9.23\u00d710\u221211, n = 382 units, tau-b \u22120.236), half width (Mann-Kendall trend test, RS, p=1.61\u00d710\u221228, n = 3172 units, tau-b \u22120.134; FS, p=5.17\u00d710\u221217, n = 382 units, tau-b \u22120.295), and negative amplitude (Mann-Kendall trend test, RS, p=4.45\u00d710\u221222, n = 3172 units, tau-b \u22120.117; FS, p=3.82\u00d710\u22126, n = 382 units, tau-b \u22120.163) of RS and FS units gradually decreased from the end of the second postnatal week until P25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of single unit waveform features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "3959dfcf-7fb2-4c21-ac12-5f7a7bcca33a",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C33",
+      "claim": "The most prominent changes in waveform features were detected for through-to-peak duration and half width of FS units.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the most prominent changes were detected for through-to-peak duration and half width of FS units (Figure 2i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis of single unit waveform data shown in Figure 2i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "eb1f0788-bf5e-4ed7-a108-f4bf5ba956c7",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C34",
+      "claim": "Single unit features show significant correlation with age.",
+      "claim_type": "EXPLICIT",
+      "source": "A linear regression model of single unit features shows significant correlation with age (n = 52, df = 44, R2 = 0.550, p=2.31\u00d710\u22127; see Supplementary file 2 for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of single unit data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "204ba82b-4026-45ce-b6d7-f16076ec2cfc",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C35",
+      "claim": "The time course of the maturation of FS units is consistent with a detailed description of the physiological development of prefrontal PV-expressing interneurons performed in brain slices.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with a detailed description of the physiological development of prefrontal PV-expressing interneurons performed in brain slices (Miyamae et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the current findings with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "f999a42e-1584-4ea7-a893-47fe330acca0",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C36",
+      "claim": "The functional maturation of FS PV-expressing interneurons shows similar dynamics of maturation as fast oscillations recorded in the mPFC of P5-40 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in line with the immunohistochemical examination, the analysis of single units showed that FS putatively PV-positive interneurons show similar dynamics of maturation as fast oscillations recorded in the mPFC of P5-40 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of FS interneuron maturation data with oscillation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "dcd3d99a-f0c6-4011-aa40-4cf8748c0c10",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C37",
+      "claim": "L2/3 PYRs in mPFC induce fast oscillations in the mPFC of P8-10 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides FS interneurons, L2/3 PYRs in mPFC have been found to induce fast oscillations in the mPFC of P8-10 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references previous findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "071fe7e3-c79f-4bef-a881-2d8f44862326",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C38",
+      "claim": "Non-rhythmic activation of L2/3 PYRs (but not activation of L5/6PYRs) drives oscillatory activity peaking within 15\u201320 Hz range.",
+      "claim_type": "EXPLICIT",
+      "source": "Their non-rhythmic activation (but not activation of L5/6PYRs) drives oscillatory activity peaking within 15\u201320 Hz range (Bitzenhofer et al., 2017a; Bitzenhofer et al., 2017b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "ec1f70f2-6404-4245-a281-7661dca5893a",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C39",
+      "claim": "Stable expression of ChR2(ET/TC) restricted to about 25% of PYR in L2/3 of the mPFC was achieved by in utero electroporation at E15.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Stable expression of the light-sensitive channelrhodopsin two derivate E123T T159C (ChR2(ET/TC)) restricted to about 25% of PYR in L2/3 of the mPFC was achieved by in utero electroporation (IUE) at embryonic day (E) 15.5 (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the experimental method and is supported by Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "fdd3fe6c-9c29-4e0e-aaf2-5f47a02b3fcd",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C40",
+      "claim": "Activating L2/3 PYRs induced oscillatory activity with a gradually increasing frequency during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to spontaneous activity, activating L2/3 PYRs induced oscillatory activity with a gradually increasing frequency during development (Figure 3b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on optogenetic stimulation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "922aa091-6357-4ccd-8166-e8f76c18703e",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C41",
+      "claim": "Consistent peaks in the modulation index of power spectra were detected at 15\u201320 Hz at the beginning of the second postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent peaks in the modulation index (MI) of power spectra were detected at 15\u201320 Hz at the beginning of the second postnatal week and increased in frequency (Mann-Kendall trend test, p=7.69\u00d710\u22126, n = 115 recordings, tau-b 0.288) and amplitude (Mann-Kendall trend test, p=1.04\u00d710\u22129, n = 115 recordings, tau-b 0.392) until reaching stable values within 50\u201360 Hz at P25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of optogenetic stimulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "9833c111-6650-4494-8b83-9a644c87fcf1",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C42",
+      "claim": "L2/3 PYR-induced oscillations increased in frequency and amplitude until reaching stable values within 50\u201360 Hz at P25.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent peaks in the modulation index (MI) of power spectra were detected at 15\u201320 Hz at the beginning of the second postnatal week and increased in frequency (Mann-Kendall trend test, p=7.69\u00d710\u22126, n = 115 recordings, tau-b 0.288) and amplitude (Mann-Kendall trend test, p=1.04\u00d710\u22129, n = 115 recordings, tau-b 0.392) until reaching stable values within 50\u201360 Hz at P25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of optogenetic stimulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "83dac09c-6fe9-45e1-b93a-a09f1701a350",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C43",
+      "claim": "Control stimulations with light that does not activate ChR2(ET/TC) did not induce activity and led to the detection of unspecific peak frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Control stimulations with light that does not activate ChR2(ET/TC) (594 nm, 3 s, 30 repetitions) did not induce activity and led to the detection of unspecific peak frequencies (Mann-Kendall trend test, p=0.09, n = 111 recordings, tau-b 0.111) and low amplitudes (Mann-Kendall trend test, p=0.74, n = 111 recordings, tau-b 0.022) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on control experiments shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "d6e52237-3a5f-430e-83cc-4bc810d7a37f",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C44",
+      "claim": "Peak frequency and amplitude of activity induced by ramp light stimulation are significantly correlated with peak frequency and amplitude of spontaneous activity at the level of individual recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Peak frequency and amplitude of activity induced by ramp light stimulation are significantly correlated with peak frequency and amplitude of spontaneous activity at the level of individual recordings (peak frequency n = 114, df = 112, R2 = 0.16, p=6.00\u00d710\u22126; peak amplitude n = 114, df = 112, R2 = 0.206, p=2.30\u00d710\u22127).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis comparing spontaneous and induced activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "6d9d2f9c-a6fb-4610-896f-581480794e79",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C45",
+      "claim": "L2/3 PYR-driven activity in the mPFC follows the same developmental dynamics as spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, L2/3 PYR-driven activity in the mPFC follows the same developmental dynamics as spontaneous activity indicating the importance of L2/3 PYRs for gamma maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of optogenetically-induced and spontaneous activity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "38c1e8d4-a76f-48b3-8ade-d128874c25ba",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C46",
+      "claim": "The average firing rate of RS and FS units in the stimulated hemisphere in the mPFC increased in response to ramp stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The average firing rate of RS and FS units in the stimulated hemisphere in the mPFC increased in response to ramp stimulation (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on single unit analysis during optogenetic stimulation shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "669e9197-2e0d-4293-a154-f91bc4e1060b",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C47",
+      "claim": "Ramp-induced firing rate changes averaged for RS units became more prominent at older age.",
+      "claim_type": "EXPLICIT",
+      "source": "While ramp-induced firing rate changes averaged for RS units (Mann-Kendall trend test, p=0.07, n = 7 age groups, tau-b 0.619) became more prominent at older age, the average firing rate changes were stable for FS units (Mann-Kendall trend test, p=0.88, n = 7 age groups, tau-b 0.047) (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis of single unit firing rates shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "db2dbd30-31bd-462b-89cd-b93f1772ed06",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C48",
+      "claim": "The average firing rate changes were stable for FS units across development.",
+      "claim_type": "EXPLICIT",
+      "source": "While ramp-induced firing rate changes averaged for RS units (Mann-Kendall trend test, p=0.07, n = 7 age groups, tau-b 0.619) became more prominent at older age, the average firing rate changes were stable for FS units (Mann-Kendall trend test, p=0.88, n = 7 age groups, tau-b 0.047) (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis of single unit firing rates shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "ea772df1-d440-4999-bc1c-75faecf230ca",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C49",
+      "claim": "Most RS units showed positive modulation of their firing rates in response to stimulation at P5-10.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of individual units, most RS units showed positive modulation of their firing rates in response to stimulation at P5-10, whereas at older age the proportion of positively modulated units decreased (Mann-Kendall trend test, p=1.52\u00d710\u221214, n = 1821 units, tau-b \u22120.123) (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on single unit analysis shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "771d7002-d6a8-4871-b7f1-74f43a9646cf",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C50",
+      "claim": "At older age the proportion of positively modulated RS units decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of individual units, most RS units showed positive modulation of their firing rates in response to stimulation at P5-10, whereas at older age the proportion of positively modulated units decreased (Mann-Kendall trend test, p=1.52\u00d710\u221214, n = 1821 units, tau-b \u22120.123) (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on single unit analysis shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "41fb2598-4f21-49b2-bbe6-7f79bd891f99",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C51",
+      "claim": "Individual FS units showed both positive and negative modulation of activity throughout development.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, individual FS units showed both positive and negative modulation of activity throughout development (Mann-Kendall trend test, p=0.91, n = 225 units, tau-b \u22120.005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on single unit analysis of FS units.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "4a98bc05-e237-43c8-82c2-e5345e080f05",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C52",
+      "claim": "A subset of RS and FS units fire rhythmically in response to ramp light stimulation of prefrontal L2/3 PYRs.",
+      "claim_type": "EXPLICIT",
+      "source": "While no clear peaks of rhythmicity were found during spontaneous activity before stimulations (Figure 5\u2014figure supplement 1), autocorrelations showed that a subset of RS and FS units fire rhythmically in response to ramp light stimulation of prefrontal L2/3 PYRs (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on autocorrelation analysis shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "dc096265-507e-4182-b71a-94ba6cadcb5d",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C53",
+      "claim": "Prominent rhythmic firing starts at about P15 and increases in frequency before it stabilizes at about P25.",
+      "claim_type": "EXPLICIT",
+      "source": "The power of autocorrelations revealed that prominent rhythmic firing starts at about P15 and increases in frequency before it stabilizes at about P25 (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on autocorrelation power analysis shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "ce7182cd-487b-455f-9d58-1084bb568c60",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C54",
+      "claim": "The development of spike-triggered LFP power is consistent with the development of single unit autocorrelation power.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we calculated the power of averaged spike-triggered LFPs to examine the interaction of single unit rhythmicity with oscillatory LFP activity. The development of spike-triggered LFP power is consistent with the development of single unit autocorrelation power (multifactorial ANOVA: unit type F(1,814825) = 277.2, p=3.12\u00d710\u221262, age group F(6,814825) = 847.4, p=0.000, frequency F(400, 814825)=614.5, p=0.000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on spike-triggered LFP analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "27f19909-d4a9-45c1-b273-6d2c476ede47",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C55",
+      "claim": "Single unit rhythmicity of local neurons is reflected in the prefrontal LFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of spike-triggered LFP power is consistent with the development of single unit autocorrelation power (multifactorial ANOVA: unit type F(1,814825) = 277.2, p=3.12\u00d710\u221262, age group F(6,814825) = 847.4, p=0.000, frequency F(400, 814825)=614.5, p=0.000), indicating that single unit rhythmicity of local neurons is reflected in the prefrontal LFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the consistency between single unit and LFP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "2f0d528a-4719-44ab-b1d1-a28eaf0e99fc",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C56",
+      "claim": "RS units show higher values at lower instantaneous frequencies for inter-spike intervals than FS units.",
+      "claim_type": "EXPLICIT",
+      "source": "RS units show higher values at lower instantaneous frequencies for inter-spike intervals than FS units, suggesting that they tend to skip cycles of induced gamma activity (Figure 5\u2014figure supplement 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inter-spike interval analysis shown in Figure 5\u2014figure supplement 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "80c4cbd1-3f92-4a0d-9ae4-d03458fe1439",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C57",
+      "claim": "RS units tend to skip cycles of induced gamma activity.",
+      "claim_type": "EXPLICIT",
+      "source": "RS units show higher values at lower instantaneous frequencies for inter-spike intervals than FS units, suggesting that they tend to skip cycles of induced gamma activity (Figure 5\u2014figure supplement 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from inter-spike interval data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "73e0645a-33f2-4b6f-9408-33052709425a",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C58",
+      "claim": "The dynamics of RS and FS rhythmicity are similar to the development of spontaneous and stimulated gamma activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the dynamics of RS and FS rhythmicity are similar to the development of spontaneous and stimulated gamma activity, indicating close interactions between RS and FS units during fast oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of single unit rhythmicity with LFP oscillation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "7f2ec28d-0997-48b3-b2d0-467e63531d3d",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C59",
+      "claim": "RS units did not follow high stimulation frequencies in mice younger than P11 and showed strong attenuation in the response to repetitive pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming previous results (Bitzenhofer et al., 2017a), RS units did not follow high stimulation frequencies in mice younger than P11 and showed strong attenuation in the response to repetitive pulses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on pulse stimulation experiments and confirmed by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "2fbe0baf-dc19-4d64-b6b9-196fdd65de6a",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C60",
+      "claim": "With ongoing development, attenuation at high stimulation frequencies became less prominent for RS and FS units.",
+      "claim_type": "EXPLICIT",
+      "source": "With ongoing development, this attenuation at high stimulation frequencies became less prominent for RS and FS units (Figure 6b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on pulse stimulation data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "fa9d8b01-4b47-4c72-843e-45ae36dd0930",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C61",
+      "claim": "Individual units do not fire in response to every light pulse in the pulse train but skip some pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "Inter-spike intervals of individual units revealed several peaks at fractions of the stimulation frequency for RS and FS, especially at higher stimulation frequencies (Figure 6\u2014figure supplement 1). These data suggest that individual units do not fire in response to every light pulse in the pulse train but skip some pulses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from inter-spike interval data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "e2aa3f93-9660-4cff-bb13-03b3089c6191",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C62",
+      "claim": "The firing rate of RS and FS units transiently increased after pulse stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The firing rate of RS and FS units transiently increased after pulse stimulation (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on pulse stimulation data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "6b0a9fa9-1f84-4b9d-9d05-029a3a06f32f",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C63",
+      "claim": "The transient increase in firing rate significantly increased with age for RS units.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect significantly increased with age for RS units (Mann-Kendall trend test, p=0.04, n = 7 age groups, tau-b 0.714), but not for FS units (Mann-Kendall trend test, p=0.07, n = 7 age groups, tau-b 0.619) (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis of firing rate changes shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "db49dc77-0501-4aa8-8f79-2bfc13803f43",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C64",
+      "claim": "The similar delays observed for RS and FS units suggest that the majority of RS units are non-transfected neurons, that are indirectly activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we analyzed the delays of light-induced firing peaks for the two populations of units. The similar delays observed for RS and FS units suggest that the majority of RS units are non-transfected neurons, that are indirectly activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from analysis of firing peak delays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "9b300fc7-d911-4ccf-a17e-61569b7cb21d",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C65",
+      "claim": "The initial peak of increased firing was followed by reduced firing rates for RS and FS units only during late postnatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial peak of increased firing was followed by reduced firing rates for RS and FS units only during late postnatal development (Figure 6e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on firing rate analysis shown in Figure 6e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "282638a1-81bd-43d0-ae73-3b67f4c88a12",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C66",
+      "claim": "The magnitude and duration of firing depression gradually augmented with age and reached significance for RS units.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude and duration of this firing depression gradually augmented with age and reached significance for RS units (Mann-Kendall trend test, RS, p=6.9\u00d710\u22123, n = 7 age groups, tau-b \u22120.905; FS, p=0.07, n = 7 age groups, tau-b \u22120.619).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of firing depression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "a7b742b7-2183-4fbc-ab2f-ed78ba810e3d",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C67",
+      "claim": "The inhibitory feedback in response to L2/3 PYR firing in the mPFC increases with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the inhibitory feedback in response to L2/3 PYR firing in the mPFC increases with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the firing depression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "df60b294-ad7b-4f1f-a941-fc793af5ffc8",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C68",
+      "claim": "Action potential half width of FS units and peak power of autocorrelation of RS and FS units are the best predictor variables for peak frequency during ramp light stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Stepwise linear regression to predict the peak frequency during ramp light stimulation identified action potential half width of FS units, as well as peak power of autocorrelation of RS and FS units as best predictor variables (n = 42, df = 38, R2 = 0.136, p=0.036; see Supplementary file 2 for detailed statistics).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on stepwise linear regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "24e74b93-934d-4b5a-9039-88729378e211",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C69",
+      "claim": "Firing rate change of RS units during ramp light stimulation, peak power of spike-triggered LFP for RS units, RS firing rate change 0\u201310 ms after pulse stimulation, and FS firing rate change 10\u201350 ms after pulse stimulation are the best predictor variables for peak amplitude during ramp light stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Stepwise linear regression to predict the peak amplitude during ramp light stimulation identified firing rate change of RS units during ramp light stimulation, peak power of spike-triggered LFP for RS units, as well as RS firing rate change 0\u201310 ms after pulse stimulation and FS firing rate change 10\u201350 ms after pulse stimulation as best predictor variables (n = 48, df = 43, R2 = 0.716, p=4.35\u00d710\u221212; see Supplementary file 2 for detailed statistics).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on stepwise linear regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "3de9bd99-a3f9-4ace-878d-dae3de256816",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C70",
+      "claim": "Peak amplitude during ramp light stimulation is correlated with firing rate changes in response to ramp and pulse stimulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, peak amplitude during ramp light stimulation is correlated with firing rate changes in response to ramp and pulse stimulations, indicating the importance of stimulation efficacy for peak amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on regression analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "44e17661-0dd2-469b-8492-b498e8c5538f",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C71",
+      "claim": "FS characteristics and rhythmicity of single units show the strongest correlation with the peak frequency of LFP power.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, FS characteristics and rhythmicity of single units show the strongest correlation with the peak frequency of LFP power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on regression analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "7514d8be-b17d-4efa-8a46-3330e22f3ac0",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C72",
+      "claim": "Fast synaptic inhibition of the perisomatic region of pyramidal neurons by PV-expressing interneurons is critical for the generation of gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, fast synaptic inhibition of the perisomatic region of pyramidal neurons by PV-expressing interneurons is critical for the generation of gamma oscillations (Cardin, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "302892a1-e869-42d5-bed0-6c696deb9ce2",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C73",
+      "claim": "Suppressing PV-expressing interneurons in the adult mPFC reduces the power in gamma frequency and impairs interhemispheric synchronization and cognitive abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppressing PV-expressing interneurons in the adult mPFC reduces the power in gamma frequency and impairs interhemispheric synchronization and cognitive abilities (Cho et al., 2015; Cho et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "3177c7b0-b6b1-4bf5-9669-78583dd2564f",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C74",
+      "claim": "The functional maturation of FS PV-expressing interneurons and single unit rhythmicity of RS and FS units are best correlated with the accelerating gamma activity in the LFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we show that the functional maturation of FS PV-expressing interneurons and single unit rhythmicity of RS and FS units are best correlated with the accelerating gamma activity in the LFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes findings from the regression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "65a18f05-3079-41ac-a48d-740f3c3b7e0e",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C75",
+      "claim": "The acceleration toward higher frequencies relates to the maturation of inhibitory feedback and of FS interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While activation of L2/3 PYR drives fast oscillatory activity throughout development, the acceleration toward higher frequencies relates to the maturation of inhibitory feedback and of FS interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "1386024a-80c3-4a02-9f88-f7adbf9fc8e0",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C76",
+      "claim": "The interplay between excitatory and inhibitory neurons is critical for the generation of adult gamma activity and for its emergence during postnatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the interplay between excitatory and inhibitory neurons is not only critical for the generation of adult gamma activity but also for its emergence during postnatal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "bed9e737-e8dd-4325-a928-5e7e2edde8a8",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C77",
+      "claim": "The L2/3 PYRs-driven oscillatory activity was strongly correlated with spontaneously occurring fast frequency oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "The L2/3 PYRs-driven oscillatory activity was strongly correlated with spontaneously occurring fast frequency oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on correlation analysis between spontaneous and induced activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "034d097c-c72f-4935-9ce9-943ab8d6c8d0",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C78",
+      "claim": "Broader peaks in power spectra for spontaneous activity indicate that the stimulation-induced activity might not cover the full diversity of spontaneous gamma activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, broader peaks in power spectra for spontaneous activity indicate that the stimulation-induced activity might not cover the full diversity of spontaneous gamma activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from comparison of spontaneous and induced activity spectra.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "41cac623-7590-4e7c-8d78-beb7641da33e",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C79",
+      "claim": "The broadness of spontaneous activity gamma power might explain the absence of clear locking and rhythmicity of single units in the absence of prefrontal stimulation or task-induced activation of the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "The broadness of spontaneous activity gamma power might also explain the absence of clear locking and rhythmicity of single units in the absence of prefrontal stimulation or task-induced activation of the mPFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculative explanation for the observed data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "3c81b31c-d406-4dcb-8fef-86da6ab696f5",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C80",
+      "claim": "Classical frequency bands (i.e. delta, theta, alpha, beta, gamma) are largely preserved between different mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "These 'classical' frequency bands (i.e. delta, theta, alpha, beta, gamma) are largely preserved between different mammalian species (Buzs\u00e1ki and Draguhn, 2004; Buzs\u00e1ki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "97bdd559-c7cd-467d-8e2e-5c6971ccfa28",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C81",
+      "claim": "Synchronization of cortical areas in fast oscillatory rhythms starts during the first postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronization of cortical areas in fast oscillatory rhythms starts during the first postnatal week (Brockmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "e8951ef3-366d-4876-8e6a-a9a59e0b0622",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C82",
+      "claim": "Low-amplitude patterns are detected in the rodent mPFC as early as P5, 1\u20132 days later compared to primary sensory cortices (S1, V1).",
+      "claim_type": "EXPLICIT",
+      "source": "These low-amplitude patterns are detected in the rodent mPFC as early as P5,1\u20132 days later compared to primary sensory cortices (S1, V1) (Minlebaev et al., 2011; Yang et al., 2013; Dupont et al., 2006; Shen and Colonnese, 2016; Yang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "30bbe326-a23a-4912-b837-2a2b7e1718ef",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C83",
+      "claim": "Neonatal fast activity has a relative low frequency (around 20 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "However, this neonatal fast activity has a relative low frequency (around 20 Hz) (Brockmann et al., 2011; Yang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "b9413549-308f-4a69-8908-b3cedfda256a",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C84",
+      "claim": "In the developing mPFC the detection of prominent fast oscillations with frequencies above 12 Hz coincides with the switch from discontinuous to continuous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that in the developing mPFC the detection of prominent fast oscillations with frequencies above 12 Hz coincides with the switch from discontinuous to continuous activity (Brockmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references previous findings by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "60162c88-f40f-4fda-8ea8-79c7ab8838ee",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C85",
+      "claim": "A similar increase in gamma frequency has been previously described after eye opening in the visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar increase in gamma frequency has been previously described after eye opening in the visual cortex (Hoy and Niell, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "83b1e70f-3500-4214-97c7-12d271ddf9f8",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C86",
+      "claim": "Identification of oscillatory patterns in developing circuits according to 'classical' frequency bands established for adults should be avoided.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, identification of oscillatory patterns in developing circuits according to 'classical' frequency bands established for adults should be avoided.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "f3abd108-33b2-4b07-9e8e-8f12e87a74af",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C87",
+      "claim": "PV expression and FS characteristics do not completely overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PV expression and FS characteristics do not completely overlap (Ma et al., 2006; Onorato et al., 2020), the method has the same drawback as that typically used for the distinction of adult RS and FS and cannot identify RS interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "c3510ad5-e069-41cc-b58b-74cd5e6585ee",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C88",
+      "claim": "FS units are detected in the mPFC during the second postnatal week and progressively mature until the fourth postnatal week, consistent with PV interneuron maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that FS units are detected in the mPFC during the second postnatal week and progressively mature until the fourth postnatal week, consistent with PV interneuron maturation (Okaty et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data and supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "d45928c8-01e1-4ded-bab6-37f9a8521511",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C89",
+      "claim": "In the absence of FS interneurons at early age, inhibitory feedback from SOM neurons might contribute to early oscillatory activity at frequencies within 12\u201320 Hz range.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of FS interneurons at early age, inhibitory feedback from SOM neurons \u2013 important for slow gamma activity in the adult cortex (Veit et al., 2017) \u2013 might contribute to early oscillatory activity at frequencies within 12\u201320 Hz range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the data and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "f2716cc5-78a0-468a-9742-18871aafeb90",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C90",
+      "claim": "An in-depth investigation of prefrontal PYRs during development had identified prominent changes in their dendritic arborization, passive and active membrane properties, as well as excitatory and inhibitory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "While we only found minor age-dependent changes in the extracellular waveforms of RS units, an in-depth investigation of prefrontal PYRs during development had identified prominent changes in their dendritic arborization, passive and active membrane properties, as well as excitatory and inhibitory inputs (Kroon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "2a19a5bf-6fe0-4432-b963-1d44076a0022",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C91",
+      "claim": "Changes in pyramidal neuron properties most likely contribute to the maturation of pyramidal-interneuronal interactions and finally, of gamma activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes, even though not detected with extracellular recordings, most likely contribute to the maturation of pyramidal-interneuronal interactions and finally, of gamma activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on previous literature and the current findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "346148a0-71d5-4a29-a75b-aa60dead56dd",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C92",
+      "claim": "The maturation of inhibitory feedback in response to prefrontal L2/3 PYRs stimulation follows the same dynamics as the development of gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the maturation of inhibitory feedback in response to prefrontal L2/3 PYRs stimulation follows the same dynamics as the development of gamma oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data comparing inhibitory feedback with gamma development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "1c8cbc76-d49d-4041-8c0a-75276d48319e",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C93",
+      "claim": "Rhythmicity of single RS and FS units were identified as good predictors for the frequencies of oscillatory activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, rhythmicity of single RS and FS units were identified as good predictors for the frequencies of oscillatory activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "63bede6a-b78d-4aec-bcbc-4a79e7d69111",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C94",
+      "claim": "GABAergic transmission in the rodent cortex matures during postnatal development, reaching an adult-like state toward the end of the fourth postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAergic transmission in the rodent cortex matures during postnatal development, reaching an adult-like state toward the end of the fourth postnatal week (Le Magueresse and Monyer, 2013; Butt et al., 2017; Lim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "73648fd0-04a0-4002-8509-6fee6af5afc9",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C95",
+      "claim": "Shortly after birth, GABA acts depolarizing due to high intracellular chloride in immature neurons expressing low levels of the chloride cotransporter KCC2 relative to NKCC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly after birth, GABA acts depolarizing due to high intracellular chloride in immature neurons expressing low levels of the chloride cotransporter KCC2 relative to NKCC1 (Rivera et al., 1999; Lim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "0bbb7209-4f4c-4aa7-8043-930716e4bc05",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C96",
+      "claim": "Depolarization by GABA is not sufficient to trigger action potential firing and results in shunting inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this depolarization is not sufficient to trigger action potential firing and results in shunting inhibition (Kirmse et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "6233340b-a175-4116-9f46-04713ee10d22",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C97",
+      "claim": "The switch of GABA action from depolarizing to hyperpolarizing has been reported to occur during the second postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "The switch of GABA action from depolarizing to hyperpolarizing has been reported to occur during the second postnatal week (Ben-Ari et al., 2012), coinciding with the emergence of gamma band oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "97feb4de-6071-459f-8d1a-d8a86edefe6d",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C98",
+      "claim": "The composition of GABAA-receptor subunits changes during postnatal development, causing a progressive decrease of decay-time constants of inhibitory postsynaptic currents (IPSCs) until they reach adult-like kinetics in the fourth postnatal week.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the composition of GABAA-receptor subunits changes during postnatal development, causing a progressive decrease of decay-time constants of inhibitory postsynaptic currents (IPSCs) until they reach adult-like kinetics in the fourth postnatal week (Okaty et al., 2009; Bosman et al., 2005; Laurie et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "9c749f12-68a8-485e-bbca-097f45536850",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C99",
+      "claim": "Simulations of neuronal networks proposed that increasing IPSCs kinetics in FS interneurons results in increasing gamma frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of neuronal networks proposed that increasing IPSCs kinetics in FS interneurons results in increasing gamma frequency (Doischer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "3eb64c09-3f9f-4ff0-b129-2337004610e8",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C100",
+      "claim": "The gradual increase of prefrontal gamma frequency from the second to the fourth postnatal week provides experimental evidence for the hypothesis that increasing IPSCs kinetics results in increasing gamma frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The gradual increase of prefrontal gamma frequency from the second to the fourth postnatal week provides experimental evidence for this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the experimental findings to previous theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "1a54f25b-8d6f-465f-946e-d17b02a90c7d",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C101",
+      "claim": "In patients and disease mouse models of schizophrenia and autism, gamma oscillations have been reported to be altered, likely to reflect abnormal pyramidal-interneuronal interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Both, in patients and disease mouse models, gamma oscillations have been reported to be altered, likely to reflect abnormal pyramidal-interneuronal interactions (Cho et al., 2015; Cao et al., 2018; Rojas and Wilson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "1d021024-1bf9-49fd-9fa6-3634adbf7b1c",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C102",
+      "claim": "Gamma dysfunction in neurodevelopmental disorders seems to emerge already during development.",
+      "claim_type": "EXPLICIT",
+      "source": "These dysfunction seems to emerge already during development (Chini et al., 2020; Richter et al., 2019; Hartung et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "9ab8c184-0497-4c35-9ad2-7d813f6dd550",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "claim_id": "C103",
+      "claim": "Elucidating the developmental dynamics of cortical gamma activity might uncover the timeline of disease-related deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "Elucidating the developmental dynamics of cortical gamma activity might uncover the timeline of disease-related deficits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential implications of the research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Fast oscillatory activity in the mPFC emerges during the second postnatal week, starting at ~20 Hz at P12, and progressively increases in frequency and amplitude until stabilizing at 50-60 Hz (gamma range) by P25. Both peak frequency and amplitude show significant correlation with age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C15, C17-C23 collectively demonstrate the developmental trajectory of prefrontal gamma oscillations with appropriate statistical support (Mann-Kendall tests, linear regression). The data in Figure 1 provides clear visual evidence of the frequency acceleration and amplitude increase. The claim about initial frequency (~15 Hz in abstract vs ~20 Hz at P12 in results) shows minor inconsistency but the overall developmental pattern is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "c9ed6ea4-6204-43ce-9798-e655923e69a2",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PV expression in the mPFC begins at the end of the second postnatal week, increases until P25, and stabilizes thereafter, following similar developmental dynamics as fast oscillation maturation. In contrast, SOM neuron numbers remain stable throughout development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by immunohistochemistry data (Figure 2a,b) with appropriate statistical analysis (Mann-Kendall tests). The parallel maturation of PV expression and gamma oscillations provides correlative evidence for their relationship, though causation is not directly demonstrated here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "cdd12787-f582-49cb-a8b7-c132e7938f56",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FS units (putatively PV-expressing interneurons) are first detected at the end of the second postnatal week and progressively mature until P25, with significant decreases in waveform features (trough-to-peak duration, half width, amplitude). This maturation follows similar dynamics as gamma oscillation development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C36, C88 are supported by novel single-unit classification using t-SNE and hierarchical clustering (Figure 2c-i), avoiding age-dependent bias in traditional classification. Statistical support is robust (Mann-Kendall tests, linear regression R\u00b2=0.550). The consistency with prior in vitro work (C35) strengthens the findings. The method's limitation (cannot identify RS interneurons, incomplete overlap with PV expression) is acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "179526a2-5877-474b-9eb3-d22c322a201f",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optogenetic activation of L2/3 pyramidal neurons drives oscillatory activity throughout development with frequencies that progressively increase from 15-20 Hz to 50-60 Hz by P25, mirroring spontaneous activity development. Control stimulations confirm specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C37-C45, C77 are supported by optogenetic experiments with appropriate controls (Figure 3). The correlation between induced and spontaneous activity (R\u00b2=0.16 for frequency, R\u00b2=0.206 for amplitude) is statistically significant but modest, suggesting other factors contribute. The broader peaks in spontaneous activity (C78) indicate the stimulation may not capture full diversity of gamma activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "e91f0c30-2d29-4a4e-9b7a-4e7246f63bbd",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "During optogenetic ramp stimulation, RS and FS units show age-dependent changes in firing rate responses. RS units show increasing activation with age and decreasing proportion of positively modulated units, while FS units show stable average responses but mixed individual modulation throughout development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 are supported by single-unit analysis during optogenetic stimulation (Figure 4). However, the interpretation is complex: while average RS firing increases with age (C47, p=0.07, marginally non-significant), individual unit analysis shows decreasing proportion of activated units (C50, p=1.52\u00d710\u207b\u00b9\u2074). This apparent contradiction suggests heterogeneity in RS population responses that requires careful interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "a49da491-2edd-43bd-8689-3980c84760d9",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RS and FS units fire rhythmically during optogenetic stimulation, with prominent rhythmic firing emerging around P15 and increasing in frequency until P25. Single unit rhythmicity is reflected in LFP oscillations, with RS units tending to skip gamma cycles more than FS units.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 are supported by autocorrelation and spike-triggered LFP analysis (Figure 5). The consistency between single-unit autocorrelation and spike-triggered LFP power (multifactorial ANOVA with highly significant effects) strongly supports the link between cellular and network rhythmicity. The inference about RS units skipping cycles (C57) is appropriately qualified as a suggestion based on inter-spike interval data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "a1726594-1d2e-46a2-abd6-b4110e5c2281",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inhibitory feedback in response to L2/3 pyramidal neuron activation matures with age. Young mice show strong attenuation to repetitive stimulation, which decreases with development. Post-stimulation firing depression emerges during late development, indicating increasing inhibitory feedback that follows the same dynamics as gamma oscillation development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C67, C92 are supported by pulse stimulation experiments (Figure 6). The developmental increase in post-stimulation depression (C66: RS p=6.9\u00d710\u207b\u00b3, FS p=0.07) provides direct evidence for maturing inhibitory feedback. The inference about similar delays for RS and FS units suggesting indirect activation (C64) is reasonable but speculative. Overall, the data support the conclusion about maturing inhibitory feedback.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "99ca18bb-320e-45a0-8178-8d7a5b26504e",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Stepwise linear regression identifies FS unit characteristics (action potential half width) and single unit rhythmicity (autocorrelation power) as best predictors of gamma frequency, while firing rate changes and spike-triggered LFP power best predict gamma amplitude. FS maturation and unit rhythmicity correlate with accelerating gamma activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71, C74, C93 are supported by stepwise linear regression analysis. However, the model for frequency prediction is weak (R\u00b2=0.136, p=0.036), while amplitude prediction is stronger (R\u00b2=0.716, p=4.35\u00d710\u207b\u00b9\u00b2). The weak frequency model suggests other unmeasured factors significantly contribute to frequency determination. The conclusions are appropriately qualified but the predictive power for frequency is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "c45d1c9d-77bd-4bab-b1ec-801f13d3224c",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The acceleration of fast oscillation frequency follows similar temporal dynamics as the maturation of fast-spiking interneurons and inhibitory feedback. The interplay between excitatory and inhibitory neurons is critical for both adult gamma generation and its developmental emergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C75, C76 represent the main integrative conclusions of the study. They are supported by the convergence of multiple lines of evidence: parallel maturation timelines (PV expression, FS units, gamma frequency), optogenetic manipulation showing L2/3 pyramidal drive throughout development, and maturing inhibitory feedback. While correlative rather than causally definitive, the evidence strongly supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "13bcf7da-961c-4c7f-9590-9a26e8db4ead",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The broader peaks in spontaneous activity power spectra compared to stimulation-induced activity suggest that optogenetic stimulation may not capture the full diversity of spontaneous gamma activity, potentially explaining the absence of clear single unit rhythmicity during spontaneous activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79 are speculative interpretations (acknowledged as such in C79) based on observed differences between spontaneous and induced activity. While the observation of broader spontaneous peaks is valid, the causal explanation for lack of spontaneous rhythmicity is not directly tested. Alternative explanations (e.g., state-dependence, task requirements) are not excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "3b4dded7-86e4-487d-b073-ca70fdc6e1a6",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Classical frequency bands are preserved across mammalian species, but developmental oscillations should not be classified according to adult frequency bands. Fast oscillations in developing mPFC start at lower frequencies (~20 Hz) and progressively increase, similar to visual cortex development after eye opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C86 are supported by citations to prior literature (C80-C85) and the current findings. The recommendation to avoid adult frequency band classifications for developing circuits (C86) is a reasonable inference from the data showing progressive frequency increases. This represents appropriate contextualization of the findings within the broader developmental neuroscience literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "ac59a995-1f44-4c30-a84a-9b625d9a61a6",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PV expression and FS characteristics do not completely overlap. SOM neurons might contribute to early oscillatory activity (12-20 Hz) before FS interneuron maturation. Pyramidal neuron developmental changes, though not detected in extracellular recordings, likely contribute to gamma maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87, C89-C91 acknowledge limitations and propose speculative mechanisms. C87 is supported by citations. C89 is explicitly speculative about SOM contribution at early ages. C91 infers pyramidal contributions based on prior literature rather than current data. These are reasonable hypotheses but lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "5b47ede9-f9bb-4f56-8cd0-117749cfea39",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "GABAergic transmission matures during postnatal development, with GABA switching from depolarizing to hyperpolarizing during the second postnatal week and IPSC kinetics accelerating until the fourth week. The observed gamma frequency increase provides experimental evidence for computational predictions linking IPSC kinetics to gamma frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C100 integrate prior literature (C94-C99, supported by citations) with current findings (C100). The connection between known GABAergic maturation and observed gamma acceleration is logical and well-supported. However, this is correlative evidence; direct manipulation of IPSC kinetics was not performed. The claim appropriately positions the findings as 'experimental evidence' rather than proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Gamma oscillations are prominent in cerebral cortex and important for cognitive function. Gamma dysfunction occurs in neurodevelopmental disorders and emerges during development. Understanding developmental gamma dynamics may reveal the timeline of disease-related deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C14, C72-C73, C101-C103 provide background context and motivation, all supported by appropriate citations to prior literature. C103 is speculative about future implications but appropriately qualified. These claims establish the scientific rationale for the study rather than presenting new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    },
+    {
+      "id": "f111bfb5-ef49-42ce-9bb3-573dff66651f",
+      "content_id": "4cf78929-8d00-440a-9823-c52a1eeda3c0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The temporal dynamics of fast oscillations are similar in anesthetized and non-anesthetized states, though magnitude is higher in non-anesthetized mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C16 is supported by experimental data comparing both conditions (Figure 1d shows both) and citation to prior work. This validates that the developmental trajectory is not an artifact of anesthesia, strengthening the biological relevance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:29:43.622694Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ce229025-6d0d-4b90-86f6-168fcf3f2d8d",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "326cb5c1-3fb1-4ae9-972e-4a2071841c74",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "a1e31f5f-c26d-4fd5-b57e-89cb2a794ea8",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "08cc657f-038f-4424-b9f4-96b9448cc4ef",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "2ca1552f-ff60-4489-a8dd-e573dd02e743",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "dd7cf370-7abe-4850-8568-7d71231dc3a7",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "7c71cc3a-68a5-45b2-aa2c-63238671df7b",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "8f52177e-4357-4074-b05a-855a8f3b14a3",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "a0cad6e3-b4c3-416e-91ba-791fc12ba16b",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "9cdfee97-035d-4c2a-a572-5ba3f41f89f7",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "1198cf20-a085-43ed-be61-bee085a4f4e4",
+      "result_id": "b13cab9c-6f8b-4aac-8ccc-89682ca297b0"
+    },
+    {
+      "claim_id": "880e0b26-3c33-41a8-a324-a94cfd53fc2d",
+      "result_id": "c9ed6ea4-6204-43ce-9798-e655923e69a2"
+    },
+    {
+      "claim_id": "51f69320-4637-4cee-9173-b71851e47afc",
+      "result_id": "c9ed6ea4-6204-43ce-9798-e655923e69a2"
+    },
+    {
+      "claim_id": "29a33875-b09e-473c-80a5-a1d0f8a5a114",
+      "result_id": "c9ed6ea4-6204-43ce-9798-e655923e69a2"
+    },
+    {
+      "claim_id": "f63bbb29-bd87-4298-ab31-edf55298563c",
+      "result_id": "c9ed6ea4-6204-43ce-9798-e655923e69a2"
+    },
+    {
+      "claim_id": "78b24917-ccfd-4dde-b760-85388a3deb41",
+      "result_id": "cdd12787-f582-49cb-a8b7-c132e7938f56"
+    },
+    {
+      "claim_id": "70e96edf-60e2-43e0-9bd4-6a62b3de8aed",
+      "result_id": "cdd12787-f582-49cb-a8b7-c132e7938f56"
+    },
+    {
+      "claim_id": "2d03eafd-3c21-4730-accb-c59b0cad9d72",
+      "result_id": "cdd12787-f582-49cb-a8b7-c132e7938f56"
+    },
+    {
+      "claim_id": "0a8a1174-d1ca-4086-bf22-fa633d96bc1f",
+      "result_id": "cdd12787-f582-49cb-a8b7-c132e7938f56"
+    },
+    {
+      "claim_id": "5e1b6e78-3323-4105-9b69-80ef1d59066d",
+      "result_id": "cdd12787-f582-49cb-a8b7-c132e7938f56"
+    },
+    {
+      "claim_id": "3959dfcf-7fb2-4c21-ac12-5f7a7bcca33a",
+      "result_id": "cdd12787-f582-49cb-a8b7-c132e7938f56"
+    },
+    {
+      "claim_id": "eb1f0788-bf5e-4ed7-a108-f4bf5ba956c7",
+      "result_id": "cdd12787-f582-49cb-a8b7-c132e7938f56"
+    },
+    {
+      "claim_id": "204ba82b-4026-45ce-b6d7-f16076ec2cfc",
+      "result_id": "cdd12787-f582-49cb-a8b7-c132e7938f56"
+    },
+    {
+      "claim_id": "f999a42e-1584-4ea7-a893-47fe330acca0",
+      "result_id": "cdd12787-f582-49cb-a8b7-c132e7938f56"
+    },
+    {
+      "claim_id": "c3510ad5-e069-41cc-b58b-74cd5e6585ee",
+      "result_id": "cdd12787-f582-49cb-a8b7-c132e7938f56"
+    },
+    {
+      "claim_id": "3fa51b13-0a4c-4e83-9950-b155c1c304b2",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "dcd3d99a-f0c6-4011-aa40-4cf8748c0c10",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "071fe7e3-c79f-4bef-a881-2d8f44862326",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "ec1f70f2-6404-4245-a281-7661dca5893a",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "fdd3fe6c-9c29-4e0e-aaf2-5f47a02b3fcd",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "922aa091-6357-4ccd-8166-e8f76c18703e",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "9833c111-6650-4494-8b83-9a644c87fcf1",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "83dac09c-6fe9-45e1-b93a-a09f1701a350",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "d6e52237-3a5f-430e-83cc-4bc810d7a37f",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "6d9d2f9c-a6fb-4610-896f-581480794e79",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "bed9e737-e8dd-4325-a928-5e7e2edde8a8",
+      "result_id": "179526a2-5877-474b-9eb3-d22c322a201f"
+    },
+    {
+      "claim_id": "38c1e8d4-a76f-48b3-8ade-d128874c25ba",
+      "result_id": "e91f0c30-2d29-4a4e-9b7a-4e7246f63bbd"
+    },
+    {
+      "claim_id": "669e9197-2e0d-4293-a154-f91bc4e1060b",
+      "result_id": "e91f0c30-2d29-4a4e-9b7a-4e7246f63bbd"
+    },
+    {
+      "claim_id": "db2dbd30-31bd-462b-89cd-b93f1772ed06",
+      "result_id": "e91f0c30-2d29-4a4e-9b7a-4e7246f63bbd"
+    },
+    {
+      "claim_id": "ea772df1-d440-4999-bc1c-75faecf230ca",
+      "result_id": "e91f0c30-2d29-4a4e-9b7a-4e7246f63bbd"
+    },
+    {
+      "claim_id": "771d7002-d6a8-4871-b7f1-74f43a9646cf",
+      "result_id": "e91f0c30-2d29-4a4e-9b7a-4e7246f63bbd"
+    },
+    {
+      "claim_id": "41fb2598-4f21-49b2-bbe6-7f79bd891f99",
+      "result_id": "e91f0c30-2d29-4a4e-9b7a-4e7246f63bbd"
+    },
+    {
+      "claim_id": "4a98bc05-e237-43c8-82c2-e5345e080f05",
+      "result_id": "a49da491-2edd-43bd-8689-3980c84760d9"
+    },
+    {
+      "claim_id": "dc096265-507e-4182-b71a-94ba6cadcb5d",
+      "result_id": "a49da491-2edd-43bd-8689-3980c84760d9"
+    },
+    {
+      "claim_id": "ce7182cd-487b-455f-9d58-1084bb568c60",
+      "result_id": "a49da491-2edd-43bd-8689-3980c84760d9"
+    },
+    {
+      "claim_id": "27f19909-d4a9-45c1-b273-6d2c476ede47",
+      "result_id": "a49da491-2edd-43bd-8689-3980c84760d9"
+    },
+    {
+      "claim_id": "2f0d528a-4719-44ab-b1d1-a28eaf0e99fc",
+      "result_id": "a49da491-2edd-43bd-8689-3980c84760d9"
+    },
+    {
+      "claim_id": "80c4cbd1-3f92-4a0d-9ae4-d03458fe1439",
+      "result_id": "a49da491-2edd-43bd-8689-3980c84760d9"
+    },
+    {
+      "claim_id": "73e0645a-33f2-4b6f-9408-33052709425a",
+      "result_id": "a49da491-2edd-43bd-8689-3980c84760d9"
+    },
+    {
+      "claim_id": "7f2ec28d-0997-48b3-b2d0-467e63531d3d",
+      "result_id": "a1726594-1d2e-46a2-abd6-b4110e5c2281"
+    },
+    {
+      "claim_id": "2fbe0baf-dc19-4d64-b6b9-196fdd65de6a",
+      "result_id": "a1726594-1d2e-46a2-abd6-b4110e5c2281"
+    },
+    {
+      "claim_id": "fa9d8b01-4b47-4c72-843e-45ae36dd0930",
+      "result_id": "a1726594-1d2e-46a2-abd6-b4110e5c2281"
+    },
+    {
+      "claim_id": "e2aa3f93-9660-4cff-bb13-03b3089c6191",
+      "result_id": "a1726594-1d2e-46a2-abd6-b4110e5c2281"
+    },
+    {
+      "claim_id": "6b0a9fa9-1f84-4b9d-9d05-029a3a06f32f",
+      "result_id": "a1726594-1d2e-46a2-abd6-b4110e5c2281"
+    },
+    {
+      "claim_id": "db49dc77-0501-4aa8-8f79-2bfc13803f43",
+      "result_id": "a1726594-1d2e-46a2-abd6-b4110e5c2281"
+    },
+    {
+      "claim_id": "9b300fc7-d911-4ccf-a17e-61569b7cb21d",
+      "result_id": "a1726594-1d2e-46a2-abd6-b4110e5c2281"
+    },
+    {
+      "claim_id": "282638a1-81bd-43d0-ae73-3b67f4c88a12",
+      "result_id": "a1726594-1d2e-46a2-abd6-b4110e5c2281"
+    },
+    {
+      "claim_id": "a7b742b7-2183-4fbc-ab2f-ed78ba810e3d",
+      "result_id": "a1726594-1d2e-46a2-abd6-b4110e5c2281"
+    },
+    {
+      "claim_id": "346148a0-71d5-4a29-a75b-aa60dead56dd",
+      "result_id": "a1726594-1d2e-46a2-abd6-b4110e5c2281"
+    },
+    {
+      "claim_id": "df60b294-ad7b-4f1f-a941-fc793af5ffc8",
+      "result_id": "99ca18bb-320e-45a0-8178-8d7a5b26504e"
+    },
+    {
+      "claim_id": "24e74b93-934d-4b5a-9039-88729378e211",
+      "result_id": "99ca18bb-320e-45a0-8178-8d7a5b26504e"
+    },
+    {
+      "claim_id": "3de9bd99-a3f9-4ace-878d-dae3de256816",
+      "result_id": "99ca18bb-320e-45a0-8178-8d7a5b26504e"
+    },
+    {
+      "claim_id": "44e17661-0dd2-469b-8492-b498e8c5538f",
+      "result_id": "99ca18bb-320e-45a0-8178-8d7a5b26504e"
+    },
+    {
+      "claim_id": "3177c7b0-b6b1-4bf5-9669-78583dd2564f",
+      "result_id": "99ca18bb-320e-45a0-8178-8d7a5b26504e"
+    },
+    {
+      "claim_id": "1c8cbc76-d49d-4041-8c0a-75276d48319e",
+      "result_id": "99ca18bb-320e-45a0-8178-8d7a5b26504e"
+    },
+    {
+      "claim_id": "5fc6b1ae-17a2-4733-8ff3-991fbffc27f5",
+      "result_id": "c45d1c9d-77bd-4bab-b1ec-801f13d3224c"
+    },
+    {
+      "claim_id": "65a18f05-3079-41ac-a48d-740f3c3b7e0e",
+      "result_id": "c45d1c9d-77bd-4bab-b1ec-801f13d3224c"
+    },
+    {
+      "claim_id": "1386024a-80c3-4a02-9f88-f7adbf9fc8e0",
+      "result_id": "c45d1c9d-77bd-4bab-b1ec-801f13d3224c"
+    },
+    {
+      "claim_id": "034d097c-c72f-4935-9ce9-943ab8d6c8d0",
+      "result_id": "13bcf7da-961c-4c7f-9590-9a26e8db4ead"
+    },
+    {
+      "claim_id": "41cac623-7590-4e7c-8d78-beb7641da33e",
+      "result_id": "13bcf7da-961c-4c7f-9590-9a26e8db4ead"
+    },
+    {
+      "claim_id": "3c81b31c-d406-4dcb-8fef-86da6ab696f5",
+      "result_id": "3b4dded7-86e4-487d-b073-ca70fdc6e1a6"
+    },
+    {
+      "claim_id": "97bdd559-c7cd-467d-8e2e-5c6971ccfa28",
+      "result_id": "3b4dded7-86e4-487d-b073-ca70fdc6e1a6"
+    },
+    {
+      "claim_id": "e8951ef3-366d-4876-8e6a-a9a59e0b0622",
+      "result_id": "3b4dded7-86e4-487d-b073-ca70fdc6e1a6"
+    },
+    {
+      "claim_id": "30bbe326-a23a-4912-b837-2a2b7e1718ef",
+      "result_id": "3b4dded7-86e4-487d-b073-ca70fdc6e1a6"
+    },
+    {
+      "claim_id": "b9413549-308f-4a69-8908-b3cedfda256a",
+      "result_id": "3b4dded7-86e4-487d-b073-ca70fdc6e1a6"
+    },
+    {
+      "claim_id": "60162c88-f40f-4fda-8ea8-79c7ab8838ee",
+      "result_id": "3b4dded7-86e4-487d-b073-ca70fdc6e1a6"
+    },
+    {
+      "claim_id": "83b1e70f-3500-4214-97c7-12d271ddf9f8",
+      "result_id": "3b4dded7-86e4-487d-b073-ca70fdc6e1a6"
+    },
+    {
+      "claim_id": "f3abd108-33b2-4b07-9e8e-8f12e87a74af",
+      "result_id": "ac59a995-1f44-4c30-a84a-9b625d9a61a6"
+    },
+    {
+      "claim_id": "d45928c8-01e1-4ded-bab6-37f9a8521511",
+      "result_id": "ac59a995-1f44-4c30-a84a-9b625d9a61a6"
+    },
+    {
+      "claim_id": "f2716cc5-78a0-468a-9742-18871aafeb90",
+      "result_id": "ac59a995-1f44-4c30-a84a-9b625d9a61a6"
+    },
+    {
+      "claim_id": "2a19a5bf-6fe0-4432-b963-1d44076a0022",
+      "result_id": "ac59a995-1f44-4c30-a84a-9b625d9a61a6"
+    },
+    {
+      "claim_id": "63bede6a-b78d-4aec-bcbc-4a79e7d69111",
+      "result_id": "5b47ede9-f9bb-4f56-8cd0-117749cfea39"
+    },
+    {
+      "claim_id": "73648fd0-04a0-4002-8509-6fee6af5afc9",
+      "result_id": "5b47ede9-f9bb-4f56-8cd0-117749cfea39"
+    },
+    {
+      "claim_id": "0bbb7209-4f4c-4aa7-8043-930716e4bc05",
+      "result_id": "5b47ede9-f9bb-4f56-8cd0-117749cfea39"
+    },
+    {
+      "claim_id": "6233340b-a175-4116-9f46-04713ee10d22",
+      "result_id": "5b47ede9-f9bb-4f56-8cd0-117749cfea39"
+    },
+    {
+      "claim_id": "97feb4de-6071-459f-8d1a-d8a86edefe6d",
+      "result_id": "5b47ede9-f9bb-4f56-8cd0-117749cfea39"
+    },
+    {
+      "claim_id": "9c749f12-68a8-485e-bbca-097f45536850",
+      "result_id": "5b47ede9-f9bb-4f56-8cd0-117749cfea39"
+    },
+    {
+      "claim_id": "3eb64c09-3f9f-4ff0-b129-2337004610e8",
+      "result_id": "5b47ede9-f9bb-4f56-8cd0-117749cfea39"
+    },
+    {
+      "claim_id": "bd43c011-ee07-4a1d-b18e-8d287b37775f",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "59ab5054-b24f-482f-923c-76cdf67c30ee",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "fba6faa0-67d3-4144-8445-fea930541e61",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "b7094934-0aa7-41a8-8c4c-979ac36051c4",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "717219e4-e1ac-491f-a091-674e65b880ca",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "14c245ee-32c8-4266-bd78-be10f2db0c60",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "fd602b4a-9916-4758-a018-61c7a97538d1",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "85affae5-38d6-4871-b37e-845c13ad76b6",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "3d1692bb-ab81-45ca-8a8d-9f334f584a4f",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "7514d8be-b17d-4efa-8a46-3330e22f3ac0",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "302892a1-e869-42d5-bed0-6c696deb9ce2",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "1a54f25b-8d6f-465f-946e-d17b02a90c7d",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "1d021024-1bf9-49fd-9fa6-3634adbf7b1c",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "9ab8c184-0497-4c35-9ad2-7d813f6dd550",
+      "result_id": "1cd2e5c7-8b7f-433f-88bd-a446e6db22a0"
+    },
+    {
+      "claim_id": "b198356a-e508-4837-95cf-1a2bf53352a6",
+      "result_id": "f111bfb5-ef49-42ce-9bb3-573dff66651f"
+    }
+  ],
+  "comparisons": []
+}

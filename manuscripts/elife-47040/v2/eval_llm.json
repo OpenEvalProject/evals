@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study generated transcriptome-wide RNA-binding profiles for 30 RNA degradation factors in S. cerevisiae using PAR-CLIP. The experiments showed high reproducibility (Spearman correlations 0.87-1.00, mean 0.94) and yielded tens of thousands of high-confidence cross-link sites (p\u22640.005) per factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C12, and C104-C113 collectively establish the technical validity of the dataset. The high reproducibility between biological replicates (C11), stringent statistical thresholds (C111-C112), and detailed methodology (C104-C110) provide strong evidence for data quality. The number of cross-link sites obtained (C12) demonstrates sufficient coverage for downstream analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "RNA degradation factors show distinct binding preferences for different RNA classes. Deadenylation complexes (Ccr4/Not, Pan2/Pan3) bind broadly to mRNAs and ncRNAs, decapping factors preferentially bind SUTs and mRNA CDS/3'UTR, exosome subunits show varied preferences (Rrp6 for CUTs/NUTs, Csl4/Rrp40 for stable ncRNAs), TRAMP4 and TRAMP5 complexes exhibit distinct patterns (TRAMP4 enriched in introns/SUTs/CUTs/NUTs, TRAMP5 in rRNAs/tRNAs/snoRNAs), and NMD factors bind strongly to SUTs and NUTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13-C45 are supported by Figure 2 showing enrichment scores across transcript classes. The normalized enrichment analysis accounts for different class sizes and read numbers, making comparisons valid. The patterns are consistent with known functions (e.g., C23, C29, C33, C34 cite supporting literature). However, the enrichment analysis relies on proper normalization assumptions and the U-content similarity across classes (Figure 2\u2014supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Degradation factors show distinct positional preferences along mRNAs. Deadenylation factors bind near the pA site (except Ccr4 which binds 5' regions), most decapping factors show increasing occupancy toward the 3' end while Dcp2 binds almost exclusively at the pA site, Xrn1 resembles decapping factor profiles, exosome subunits cross-link to the 5' end, TRAMP complexes bind near the TSS, Ski complex components show varied patterns, and NMD factors bind throughout mRNAs with highest occupancy at the pA site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C60 are supported by metagene profiles in Figure 3 and supplements. The analysis appropriately filters neighboring genes to avoid contamination and uses both TIF-seq and ORF annotations. The Dcp2 pattern (C50-C51) is particularly striking and consistent with subsequent modeling (C87-C88). Comparison with published CRAC data (C52) provides external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The binding profiles are consistent with the canonical mRNA degradation pathway involving closed-loop formation. The counterintuitive localization of 5' decapping factors near the 3' end and 3' deadenylation factors near the 5' end may be explained by mRNA closed-loop structure where the ends are in proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C89-C92 propose a model to explain the observed binding patterns. While the data (Figure 3) showing deadenylation factors at pA sites and decapping factors at 3' ends is solid, the closed-loop interpretation (C89-C92) is speculative. The model is plausible and cited (C89: Gallie, 1991), but the PAR-CLIP data cannot directly demonstrate closed-loop formation. Alternative explanations (e.g., decapping factors traveling with Xrn1) are also mentioned but not distinguished experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C9",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The nuclear surveillance machinery involving Nrd1/Nab3, TRAMP4, and the exosome targets aberrant nuclear RNAs. Exosome subunits and TRAMP4 components show similar binding patterns to Nrd1/Nab3 on upstream antisense RNAs, are enriched for Nrd1/Nab3 motifs, and preferentially bind to genes with upstream NUTs. The model proposes that Nrd1/Nab3 recognizes aberrant RNAs, TRAMP4 adenylates them, and the nuclear exosome degrades them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C61-C65, C94-C98 are supported by Figure 4 showing similar antisense binding patterns for TRAMP4/exosome and Nrd1/Nab3, Figure 4\u2014supplement 1 showing motif enrichment, and Figure 3\u2014supplement 2 showing enrichment at genes with upstream NUTs. The filtering analysis (C64-C65, Figure 3\u2014supplement 3, Figure 4\u2014supplement 2) strengthens the conclusion by demonstrating signal reduction when NUT/CUT regions are excluded. The model integrates published interactions (C68, C95: Tudek et al., 2014; C66: Wyers et al., 2005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "TRAMP complexes are involved in snoRNA processing with distinct roles: TRAMP5 (Air1/Trf5) binds snoRNA gene bodies and is mainly involved in degradation, while TRAMP4 (Air2/Trf4) binds downstream of the 3' end and may work with Nrd1/Nab3 to pre-process snoRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C35-C38 are supported by Figure 2\u2014supplement 1 showing distinct binding patterns of TRAMP4 vs TRAMP5 around snoRNA genes. The functional interpretation (C37-C38) is reasonable given the positional differences and is consistent with known TRAMP/Nrd1/Nab3 cooperation in snoRNA processing (C34: Grzechnik and Kufel, 2008). However, the inference about distinct roles is based on binding position rather than direct functional assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Co-occupancy and co-localization analyses reveal functional associations between RNA processing factors. The analysis recovers known interactions (e.g., within decapping complex, between Air2 and Mtr4 in TRAMP4) and suggests new associations (e.g., Ccr4 and Air1 clustering with elongation factors, consistent with Ccr4's role in transcription elongation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 are supported by Figure 5 showing correlation matrices and tSNE clustering. The recovery of known interactions (C69-C71) validates the approach. The new associations are hypothesis-generating and supported by literature (C72: Kruk et al., 2011; C73: Jiao et al., 2010; C74: Tuck and Tollervey, 2013). However, co-occupancy/co-localization does not prove direct physical interaction or functional cooperation\u2014these are correlative analyses requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C93"
+    ],
+    "result": "The 5' decapping machinery and Xrn1 preferentially bind mRNAs with non-optimal codons, while 3' deadenylation machinery and exosome bind optimal transcripts. Multivariate regression analysis shows that low codon optimality is the most significant feature determining binding of decapping enhancers (Edc2, Edc3, Dhh1) and Xrn1, as well as NMD factors Upf1 and Upf3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C75-C81, C93 are supported by Figure 6A showing occupancy vs transcript optimality, Figure 6B showing codon enrichment patterns, and Figure 6C showing multivariate regression results. The regression analysis (C80) appropriately addresses confounding between optimality, expression, half-life, and length (Figure 6\u2014supplement 8). The findings are consistent with published models linking translation efficiency to mRNA decay (C79, C93: Heck and Wilusz, 2018; Radhakrishnan et al., 2016; C81: Celik et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "mRNAs with non-optimal codons are rapidly degraded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C8 is inferred from the preferential binding of decapping factors to non-optimal transcripts (C7, Figure 6A-B) and the known function of decapping in initiating degradation. However, the study does not directly measure degradation rates of optimal vs non-optimal transcripts\u2014this would require metabolic labeling or other kinetic approaches. The inference is reasonable but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Modeling based on mRNA half-lives suggests most degradation factors bind intact mRNAs, whereas decapping factors (especially Dcp2 with a/b ratio of 18.7) are recruited preferentially during active degradation. Dcp2 binds almost exclusively at the 3' end with higher occupancy on unstable transcripts and shows preference for A-rich sequences. This is consistent with decapping being a rate-limiting step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C82-C88 are supported by Figure 7A showing differential binding on stable vs unstable transcripts, Figure 7B showing the occupancy vs half-life model with fitted a/b ratios, and Figure 7C showing A-rich motif enrichment near Dcp2 cross-links. The linear model (occupancy = a/t\u2081/\u2082 + b) is simple but appropriate for distinguishing binding to intact vs degrading transcripts. The very high a/b ratio for Dcp2 (18.7) compared to other factors provides strong evidence for preferential recruitment during degradation (C87-C88). However, the model assumes steady-state conditions and that occupancy scales linearly with degradation rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The exosome is involved in 3'\u21925' cytoplasmic mRNA degradation and processing/degradation of stable ncRNAs (tRNAs, rRNAs, sn(o)RNAs). Differences in exosome co-factor binding to different RNA classes support the hypothesis that these factors confer specificity. Ski2 is important for initial degradation by dissolving secondary structures, TRAMP5 may target some mRNAs for exosomal degradation, and the exosome likely moves rapidly 3'\u21925' then slows down near the 5' end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 integrate the observed binding patterns (Figure 2-3) with known exosome functions. The differential binding of exosome co-factors (C100) is supported by Figure 2 and cited literature (Delan-Forino et al., 2017). The interpretations about Ski2 function (C101) and exosome movement (C103) are reasonable inferences from the positional data (Figure 3) supported by citations (Schneider and Tollervey, 2013). However, these are mechanistic interpretations of static binding data rather than direct kinetic measurements.",
+    "result_type": "MINOR"
+  }
+]

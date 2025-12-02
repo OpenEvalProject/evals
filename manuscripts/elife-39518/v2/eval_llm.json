@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "tRNA binds to the T-box riboswitch in two sequential steps: first, anticodon recognition (0.4 FRET state, k1 = 5.0\u00b11.6 \u00d7 10^5 M^-1s^-1, k-1 = 0.28\u00b10.05 s^-1) followed by rapid NCCA end binding (0.7 FRET state, k2 ~10 s^-1, k-2 very small). The anticodon recognition step is necessary for NCCA binding, as non-cognate tRNATyr shows no binding and tRNA\u0394NCCA cannot progress beyond the 0.4 FRET state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-step binding model is well-supported by multiple lines of smFRET evidence (C13-C33). The use of truncated tRNA (tRNA\u0394NCCA), non-cognate tRNA (tRNATyr), and truncated T-box (T-box149) constructs provides strong orthogonal validation. Kinetic parameters are quantified with appropriate error estimates from multiple replicates. The temporal ordering is convincingly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The second binding step (NCCA/t-box interaction) is accompanied by a conformational change in the T-box riboswitch, with the 3' half moving closer to the 5' half (FRET shift from ~0.5 to ~0.65). This conformational change requires binding of both the anticodon and NCCA, not anticodon recognition alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The intra-T-box FRET measurements (C34-C37) directly demonstrate conformational changes upon tRNA binding. The control experiments with tRNAPhe and tRNA\u0394NCCA showing no FRET change provide strong evidence that both binding steps are required for the conformational change. The experimental design is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The NCCA end of uncharged tRNA maintains its relative position to the base of Stem I (K-turn region) during the second binding step, as demonstrated by similar FRET values (~0.35) for both tRNAGly and tRNA\u0394NCCA when measured with T-box-Cy3(5').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tRNA-Cy5/T-box-Cy3(5') FRET pair measurements (C38-C39, C100-C102) provide orthogonal validation of the two-step model and reveal the spatial relationship between the NCCA end and Stem I base. The similar FRET values for both tRNA constructs in the partially bound state support the interpretation that the NCCA position is maintained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The C56U mutation in the T-loop region affects the first binding step (k1 ~20-fold slower, k-1 ~2.5-fold faster, ~50-fold higher Kd) but does not significantly affect the second binding step, indicating the T-loop is critical for anticodon recognition but not for NCCA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutational analysis of T-boxC56U (C40-C44, C103-C106) provides clear evidence for the modular nature of the binding process. The kinetic parameters are well-quantified and the interpretation is consistent with the structural role of the T-loop. The comparison with wild-type provides appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C64",
+      "C67",
+      "C107"
+    ],
+    "result": "Truncation of Stem III has a minor effect on the stability of the fully bound state (\u03c40.7 ~50% shorter than wild-type) but no influence on the first binding step, suggesting Stem III contributes to stabilization of the anti-terminator conformation, potentially through coaxial stacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The T-boxSIII-\u03944bp mutant analysis (C45-C46, C64, C67, C107) demonstrates the modest role of Stem III. The kinetic measurements are appropriate and the interpretation is cautious, noting the effect is minor. The speculation about coaxial stacking is reasonable but acknowledged as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C60",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Disruption of the K-turn affects both binding steps but has a dramatic effect on the second step: k1 is ~9-fold reduced, while k2_app is ~10-fold reduced and k-2_app is greatly increased (~150-fold change in equilibrium constant), leading to a highly unstable fully bound state (\u03c40.7 = 1.6\u00b10.3 s vs >24 s for wild-type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The T-box\u0394KT mutant analysis (C47-C50, C60, C108-C115) provides compelling evidence for the critical role of the K-turn in coordinating the two binding steps. The observation of three FRET states (0.2, 0.4, 0.7) and the detailed kinetic analysis strengthen the conclusions. The interpretation that K-turn flexibility is required for the conformational change is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C55",
+      "C62",
+      "C65",
+      "C66",
+      "C70"
+    ],
+    "result": "T-box structural elements drive the two-step binding process in a modular fashion: the 5' portion (Stem I, T-loops) is responsible for the first binding step, the 3' portion (t-box sequence, anti-terminator) for the second step, and the K-turn region coordinates the two steps by allowing structural flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overall conclusion about modularity (C4, C55, C62, C65-C66, C70) is well-supported by the comprehensive mutational analysis. The consistency with sequence conservation and in vivo data (C65-C66) strengthens the interpretation. This represents a synthesis of multiple experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C69",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The two-step binding mechanism is kinetically beneficial for efficient co-transcriptional recognition of cognate tRNA. At physiological tRNA concentrations (~1 \u03bcM), the apparent binding rate (~0.5 s^-1) allows tRNA to reach the partially bound state during transcriptional pausing (30-60 s), while the rapid second step (k2 ~10 s^-1) secures NCCA/t-box interaction within the decision time window (~0.5-1 s) before terminator transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic framework and co-transcriptional model (C5, C69, C76-C84) are well-reasoned based on the measured kinetic parameters and known biological constraints (RNAP elongation rate, tRNA concentrations, pause durations). The calculations are appropriate and the logic is sound. However, this remains an in vitro-based model that would benefit from direct in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61"
+    ],
+    "result": "The K-turn region plays a critical role in promoting fast coordination between anticodon sensing and NCCA end locking. Crystal structures show Stem I flexes around the K-turn, and this flexing is important for establishing anticodon-specifier interactions. The kinetic measurements of K-turn mutants explain in vivo loss-of-function phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation of K-turn function (C56-C59, C61) is well-supported by integration of structural knowledge from prior studies with the current kinetic data. The connection to in vivo phenotypes (C61) strengthens the biological relevance. The Mg2+ dependence (C57) is appropriately cited from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C14"
+    ],
+    "result": "The measured FRET value of 0.7 for the fully bound state is consistent with the SAXS-derived structural model, which predicts a distance of ~52 \u00c5 between labeling positions, corresponding to an estimated FRET range of 0.56-0.70 based on F\u00f6rster distance calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation of FRET measurements against structural models (C87-C89, C14) provides important calibration. The agreement between measured and predicted FRET values supports the structural interpretation. The acknowledgment that labeling has a modest effect on binding affinity (C87) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Two-step binding mechanisms are observed in various biological processes (TCR-MHC recognition, SRP-membrane interaction, Cas9-DNA interrogation, RISC-mRNA targeting) and generally provide a good balance between sensitivity and specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contextualization of the T-box mechanism within broader biological principles (C74-C75) is well-supported by appropriate citations. This provides useful perspective on the significance of the findings, though it is primarily a literature-based observation rather than a novel experimental result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Previous work by Suddala et al. revealed that the uncharged T-box/tRNAGly complex exists in two populations (stable: ~0.03 s^-1 dissociation; ultra-stable: <2.4\u00d710^-4 s^-1 dissociation). Both configurations are stable enough to allow transcription read-through.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion of prior work (C85-C86) appropriately acknowledges limitations of the current study (photobleaching, fluorophore effects) and integrates findings from Suddala et al. The interpretation that both populations would support transcription read-through is reasonable based on the kinetic constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The glyQS T-box riboswitch represents one of the simplest members of this class. Other T-box riboswitches are larger with additional structural elements and may show differences in the two-step binding process modulated by these additional elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion of generalizability (C71-C73) appropriately acknowledges the limitations of studying a simple model system. The speculation about other T-box riboswitches (C73) is reasonable and appropriately cautious. This provides important context for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The major function of Stem III is potentially to create a pause site to coordinate with co-transcriptional folding of the T-box.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim (C68) is explicitly speculative and based on prior studies rather than direct experimental evidence in the current work. While the speculation is reasonable given the minor effect on binding kinetics, it requires direct experimental validation of transcriptional pausing and co-transcriptional folding dynamics.",
+    "result_type": "MINOR"
+  }
+]

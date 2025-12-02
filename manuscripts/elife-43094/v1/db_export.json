@@ -1,0 +1,1533 @@
+{
+  "submission": {
+    "id": "890c68cf-2eb3-4585-b036-776f13869279",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:58:27.349523Z",
+    "updated_at": "2025-12-02T10:58:27.349523Z"
+  },
+  "content": [
+    {
+      "id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "submission_id": "890c68cf-2eb3-4585-b036-776f13869279",
+      "content_type": "manuscript",
+      "content_text": "# Centralized scientific communities are less likely to generate replicable results\n\n## Authors\n\n- Valentin Danchev<sup>1</sup> ([ORCID: 0000-0002-7563-0168](https://orcid.org/0000-0002-7563-0168)) \u2020\n- Andrey Rzhetsky<sup>3</sup> ([ORCID: 0000-0001-6959-7405](https://orcid.org/0000-0001-6959-7405))\n- James A Evans<sup>1</sup> ([ORCID: 0000-0001-9838-0707](https://orcid.org/0000-0001-9838-0707)) \u2020\n\n### Affiliations\n\n1. Department of Sociology University of Chicago Chicago United States\n2. Meta-Research Innovation Center at Stanford (METRICS) Stanford University Stanford United States\n3. Department of Medicine University of Chicago Chicago United States\n4. Department of Human Genetics University of Chicago Chicago United States\n5. Institute for Genomic and Systems Biology University of Chicago Chicago United States\n6. Santa Fe Institute Sante Fe United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nConcerns have been expressed about the robustness of experimental findings in several areas of science, but these matters have not been evaluated at scale. Here we identify a large sample of published drug-gene interaction claims curated in the Comparative Toxicogenomics Database (for example, benzo(a)pyrene decreases expression of SLC22A3) and evaluate these claims by connecting them with high-throughput experiments from the LINCS L1000 program. Our sample included 60,159 supporting findings and 4253 opposing findings about 51,292 drug-gene interaction claims in 3363 scientific articles. We show that claims reported in a single paper replicate 19.0% (95% confidence interval [CI], 16.9\u201321.2%) more frequently than expected, while claims reported in multiple papers replicate 45.5% (95% CI, 21.8\u201374.2%) more frequently than expected. We also analyze the subsample of interactions with two or more published findings (2493 claims; 6272 supporting findings; 339 opposing findings; 1282 research articles), and show that centralized scientific communities, which use similar methods and involve shared authors who contribute to many articles, propagate less replicable claims than decentralized communities, which use more diverse methods and contain more independent teams. Our findings suggest how policies that foster decentralized collaboration will increase the robustness of scientific findings in biomedical research.\n\n## Introduction\n\nConcerns over reliability (Ioannidis, 2005) and reproducibility (Prinz et al., 2011; Begley and Ellis, 2012) in biomedical science call into question the cumulative process of building on prior published results. In a publication environment that rewards novel findings over verifications (Nosek et al., 2015; Alberts et al., 2015), the replicability of research claims that biomedical scientists assemble into biological models, drug development trials, and treatment regimes remains unknown (Begley and Ellis, 2012; Yildirim et al., 2007). Exact replications of biomedical research (Errington et al., 2014) occur only on small scales due to prohibitive expense and limited professional incentive.\n\nReplication failures are typically attributed to systemic bias in a publication system that favors positive results (Ioannidis, 2005). This incentivizes questionable research choices such as p-hacking (Head et al., 2015; Simonsohn et al., 2014), \u2018flexible\u2019 data analysis (Simmons et al., 2011), low statistical power (Dumas-Mallet et al., 2017), selective reporting (the \u2018file drawer problem\u2019) (Rosenthal, 1979), and confirmation bias (Nuzzo, 2015). These questionable choices, combined with incomplete reporting of statistical methods and data (Nosek et al., 2015), contribute to the publication of false results that are unlikely to replicate in future experiments (Simmons et al., 2011).\n\nHere we investigate the community that coalesces around a drug-gene interaction claim. We hypothesize that a decentralized community of largely independent, non-overlapping teams, which draws from a diverse pool of prior publications, using distinct methods under varying experimental conditions, is more likely to produce robust results. Conversely, we expect that a centralized community involving repeated collaborations and using a narrow range of methods, knowledge from prior publications and experimental conditions is likely to produce less robust results. Unfortunately, repeated collaboration (Hicks and Katz, 1996; Guimer\u00e0 et al., 2005), growing teams (Wuchty et al., 2007), star scientists (Merton, 1968; Azoulay et al., 2014), expensive shared equipment, and common citations (Evans, 2008; Simkin and Roychowdhury, 2005; White et al., 2004) are defining characteristics of the biomedical research enterprise today (Hicks and Katz, 1996; Hand, 2010).\n\nPrior simulations have suggested that independent labs are less prone to peer pressure than a densely connected network of scientists, in which misleading early results can propagate more easily (Zollman, 2007; Payette, 2012). Related research on the \u2018wisdom of crowds\u2019 (Lorenz et al., 2011) and the exploration-exploitation trade-off (Lazer and Friedman, 2007) also found densely connected networks to be inefficient, and suggested that networks of semi-isolated subgroups would lead to an improvement in collective performance (Fang et al., 2010). A more recent experiment demonstrates that decentralized networks, rather than independence, may most improve collective performance.\u00a0In estimation tasks completed by networks of individuals, it was found that the dominance of central individuals in networks tended to bias the collective estimation process and decrease the average accuracy of group estimates (Becker et al., 2017).\n\nA separate body of literature attributes robustness of scientific findings to diverse methods (Kaelin, 2017; Wimsatt, 2012) used to corroborate them or distinct theories used to motivate them. A classic example is Jean Perrin\u2019s use of multiple experimental techniques and theories to precisely determine Avogadro\u2019s number (Salmon, 1984). Nevertheless, there has been no comprehensive evaluation of the relationship between the way scientific communities are networked and the robustness and replicability of published findings. Moreover, when empirical data on scientific collaboration have been used (Guimer\u00e0 et al., 2005), the outcomes of collective performance have typically been measured indirectly (e.g., via article\u00a0or\u00a0journal citations). Similarly, literature on research reliability has focused on methodological features rather than the way scientific communities are networked. Moreover, there has been relatively little research of this nature in the field of biomedical science.\n\nHere we demonstrate a strategy for evaluating the replication likelihood for tens of thousands of drug-gene interaction claims. This strategy builds on the synergy of two advances. First, databases of empirical claims curated from the scientific literature in certain subject areas such as molecular toxicology and biochemistry (Davis et al., 2017) can be linked to databases of scientific articles such as MEDLINE and the Web of Science to systematically analyze features that characterize the provenance of a scientific claim (Evans and Foster, 2011) such as authors, affiliations, and the number of experiments for and against. Second, data from high-throughput experiments (Subramanian et al., 2017) performed by robots allow researchers to estimate the replication likelihood for many published claims. Here we report the results of analyses performed on claims identified by comparing the Comparative Toxicogenomics Database (CTD;\u00a0Davis et al., 2017) and the LINCS L1000 experiment (Subramanian et al., 2017;\u00a0see Figure 1 and Materials and methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig1-v1.jpg)\n\n**Figure 1.:** (A) Our analysis of 51,292 DGI claims (see Supplementary file 1) in the literature revealed 60,159 supporting findings (green) and 4253 opposing findings (pink) in aggregate.\u00a0These DGI claims co-occurred in both the CTD publication dataset and the LINCS L1000 exerimental dataset. Most claims (45,624) were supported by just one published finding, 4127 claims were supported by two published findings, and the remaining 1541 claims were supported by three or more published findings. Some claims (3154) were both supported and opposed by the published findings,\u00a0meaning that in addition to the supporting finding(s), there is one or more increase/decrease interactions in the CTD dataset that propose the opposite effect: 2563 claims were opposed by one, 376 by two, and 215 by three or more published findings. Please note that both axes in the main graph are logarithmic. (B) We calculated experimental effect sizes with combined z-scores for the 51,292 DGI triples in the LINCS L1000 dataset. This graph plots the probability (y-axis) versus absolute value of the combined z-score for all triples (blue line) and those that are significant at the 0.05 level (salmon line). Significant in this context means that the drug-gene\u00a0effect is observed across a range of experiment conditions; the method used to determine significance is described in Materials and methods.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Bootstrap samples of agreement (1\u00a0=\u00a0agreement, 0\u00a0=\u00a0disagreement) among pairs of papers that reported findings about the same drug-gene interaction depending on whether the pairs of papers shared (2514 pairs of papers) or did not share author(s) in common (20,846 pairs of papers). (B) A two-tailed bootstrap test of difference between means indicates that papers with one or more authors in common have significantly higher agreement rates than pairs of papers with distinct authors (100,000 samples with replacement). The solid dark line indicates the sample mean, the dashed line indicates 95% CI, and the red line indicates the null hypothesis.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** We used the normal kernel function to estimate probability density functions.\n\nThe CTD had recorded over 1.26 million drug-gene interaction (DGI) claims published in journals as of June 7, 2016, with each claim being a \u2018triple\u2019 of a drug, a gene and an interaction effect. We selected interaction effects in which a drug either \u2018increases expression\u2019 or \u2018decreases expression\u2019 of an mRNA in human tissues. This resulted in a sample of 239,713 DGI claims curated from 11,754 scientific articles. The LINCS L1000 experiment generated 1.3 million gene expression profiles from 42,080 perturbagens across a range of different cell lines, time points and dosage\u00a0levels. Each profile consisted of a drug, a gene (mRNA) and a z-score. The LINCS L1000 experiment\u00a0consolidated multiple expression profiles to generate a moderated z-score for each experimental condition, and we combined these into a single combined z-score for each drug and gene (mRNA). We matched these triples from the LINCS L1000 experiments to triples in the CTD, and found 51,292 drug-gene interactions at the intersection, corresponding to 60,159 supportive findings and 4253 opposing findings from the literature, annotated from 3363 scientific articles (see Supplementary file 1). We use this sample to estimate how the probability of claim replication depends on support in the literature, social independence, methodological independence, knowledge independence, scientist centralization, journal prominence, and experimental variability (see Materials and methods).\n\nOur high-throughput replication strategy evaluates the replicability of a broad scientific claim rather than the reproducibility of any single experiment contributing to that claim. (The evaluation of an individual experiment requires the original experimental protocol to be repeated in the new experiment [Errington et al., 2014].) Nevertheless, collective agreement across many published findings provides evidence for a robust claim \u2013 that is, a claim that withstands changes in the technique used (Wimsatt, 2012; Nosek and Errington, 2017;\u00a0Kaelin, 2017),\u00a0the scientists doing the research and the experimental setting. Such claims form a solid foundation for further research and, potentially clinical trials based on the claim.\n\n## Results\n\n### Distribution and agreement of experiments\n\nWe observe a long-tailed distribution of published findings in support of a given DGI claim (Figure 1A). Most claims are supported by findings in one (89%) or two (8%) articles, while few appear in many articles. There is wide consensus in the literature: the vast majority of published findings (93%) agree on the direction of DGI claims. Among the 11% of claims supported by two or more published findings, the agreement increases to 94%. In contrast, only 41% (21,181/51,292) of the DGI effect-sizes in LINCS L1000 generalize across experimental conditions (Figure 1B). Although those two quantities \u2013 agreement among published findings and generalizability of LINCS L1000 effect sizes \u2013 are not directly comparable as they utilize different measurements, the overwhelming agreement observed in the literature compared to the LINCS L1000 data suggests that the literature may influence the selection and interpretation of experimental results by scientists through confirmation bias. One consequence of this is that experimental results that contradict preexisting knowledge are \u2018filed away\u2019 rather than submitted to journals (Rosenthal, 1979).\n\nFurther, we find that consensus in the biomedical literature is strongly and positively associated with connections between papers arising from overlapping authors. A pair of findings about a DGI claim reported in papers with some of the same authors are significantly more likely to agree (0.989, 2486\u00a0of 2514 overlapping pairs of papers) than findings reported in papers by socially independent teams (0.889, 18,527\u00a0of 20,846 non-overlapping pairs of papers), with a mean difference of 0.1001 (95% CI, 0.094\u20130.106, P <.0001, 100,000 bootstrap iterations; Figure 1\u2014figure supplement 1).\n\n### Replication rates\n\nFor a given set of claims it is possible to estimate a random or baseline replication rate RRrand and an observed replication rate RRobs (along with 95% confidence limits for both) using the approach outlined in \u2018Measuring relative replication increase\u2019 (see Methods and materials). For our sample we estimate RRobs to be 0.556 (95% CI, 0.553\u20130.558, $N$\u00a0= 51,292\u00a0claims) and RRrand to be 0.503 (95% CI, 0.498\u20130.506, $N$\u00a0= 51,292\u00a0claims): this corresponds to a per centage relative replication increase (RRI = ((RRobs \u2013 RRrand)/RRrand) \u00d7 100%) of 10.6% (95% CI, 9.3%\u201311.8%). Figure 2D shows that, as expected, DGIs that generalize across experimental conditions in LINCS L1000 are more likely to replicate published DGI claims ($RR_{obs}$\u00a0= 0.604, 95% CI, 0.597\u20130.610,\u00a0$n$ = 21,181\u00a0claims) than DGIs that do not generalize ($RR_{obs}$\u00a0= 0.522, 95% CI, 0.516\u20130.528, $n$\u00a0= 30,111\u00a0claims). Indeed, the replication rate for the latter group is only marginally higher than RRrand for this group ($RR_{rand}$\u00a0= 0.501, 95% CI, 0.496\u20130.507,\u00a0$n$\u00a0=\u00a030,111\u00a0claims). Encouragingly, this suggests that some disagreement within the literature is attributable to experimental and biological variation in the experiments performed by different scientists. In the subsequent analysis, we consider generalized LINCS L1000 DGIs because only those can serve to evaluate the replicability of published claims.\n\n### Collective correction in science\n\nA central concern is whether the replication problem applies only to novel and rare claims or if it also afflicts widely supported results, as recently hypothesized (Nissen et al., 2016; McElreath and Smaldino, 2015). To examine this question, we integrated collective findings using a binomial Bayesian model (Gelman et al., 2013) with a uniform prior that accommodates skewed distributions (Davidson-Pilon, 2015) like that of findings per claim we observed. The model allocates higher probability to scientific claims unanimously supported in a large number of articles and lower probability to infrequent and disputed claims (Figure 2A). The resulting posterior distributions of support were used to categorize DGI claims into five classes of support: Very High, High, Moderate, Low support, and Not Supported (see Figure 2B and Materials and methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig2-v1.jpg)\n\n**Figure 2.:** (A) Posterior distributions of probability of support in the biomedical literature for a sample of seven DGI claims for which there are at least two findings (supporting and/or opposing). Note that the top three claims receive only supporting findings in the literature, whereas the fourth and fifth claims are opposites (so papers that support the fourth claim oppose the fifth claim, and vice versa), and likewise for the sixth and seventh claims. We obtained model estimates for each claim by performing 10,000 Markov chain Monte Carlo (MCMC) sampling iterations (see Materials and methods). For each claim, we summarize the probability of support (dashed vertical line) using the lower bound on the one-sided\u00a095% posterior credible interval: this value ranges from 0.84 for a claim that is supported by 16 findings and opposed by no findings, to 0.03 for a claim that is supported by one finding and opposed by 10 findings. (B) DGI claims in the literature can be categorized into one of five classes of support (Very High; High; Moderate; Low; Not Supported) on the basis of distributions like those in panel A; the number of claims included in each class is shown in brackets. (C) Number of DGI claims that are significant (second row) and not significant (third row) at the 0.05 level in the LINCS L1000 dataset\u00a0for the whole corpus (second column) and for each of the five classes of support in the literature (columns 3\u20137). (D) Observed replication rates (RRobs) and expected replication rates (RRrand) for claims that are significant and non-significant in the LINCS L1000 dataset for the whole corpus (left) and for each of the five classes of support in the literature. (E) The relative replication increase rate ($RRI=100\\times\\frac{RR_{obs}\u2212RR_{rand}}{RR_{rand}}$) for claims that are significant in the LINCS L1000 dataset (left) and for each of the five classes of support in the literature. (F) Variability (coefficient of variation) in the LINCS L1000 dataset across cell lines, durations and dosages for claims that are significant in this dataset (left) and for each of the five classes of support in the literature. Statistical signi\ufb01cance and error bars were determined by bootstrapping (see Materials and methods). All error bars represent 95% CI.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Probability of claim replication estimated via a logistic regression model with replication as the response variable and support in the literature and experimental variability as predictors, for the whole corpus of 51,292 claims. (B) Same as A but for the subset of 21,181 significant drug-gene interactions in LINCS L1000. For each variable, we indicate odds ratios (OR), 95% confidence interval, and significance.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Mean number of findings supporting or opposing the direction of the effect for a scientific claim across our typology. (B) Cumulative distribution of the probability of support in the literature, including a schematic of our claim typology.\n\nFigure 2E shows that claims with Very High support in the biomedical literature (RRI\u00a0=\u00a045.5%; 95% CI, 21.8\u201374.2%) with an average of 6.9 papers confirming the claim, and claims with High support (RRI\u00a0=\u00a034.5%; 20.2\u201350.3%) with an average of 3.3 confirming papers, are substantially more likely to replicate in high-throughput experiments than those with Low and Moderate support (RRI\u00a0=\u00a019.0%; 16.9\u201321.2% and 16.2%; 9.8\u201322.9%, respectively). The replication of claims with Low and Moderate support is consistent with reproducibility estimates reported in the literature, ranging from 11% (N\u00a0=\u00a067;\u00a0Begley and Ellis, 2012) to 25% (N\u00a0=\u00a053;\u00a0Prinz et al., 2011). Claims with Very High and High support replicate at a much higher rate, whereas Not Supported claims are significantly less likely to replicate than random (RRI = \u221228.9%; \u221261.9%\u201316.7%). They are also associated with greater experimental variability (Figure 2F), confirming that collective disagreements among findings truthfully signal experimentally unstable interactions peculiar to specific contexts and unlikely to replicate.\n\nLogistic models adjusting for experimental variability confirm the positive relationship between scientific support in the literature $L_{supt}$ and the probability of replication success (Figure 2\u2014figure supplement 1). These results suggest that findings reported in a single biomedical article are\u00a0likely fallible. Viewed as a complex system of converging and diverging findings, however, biomedicine exhibits collective correction.\n\nWe note that the process of collective correction applies to a small subset of claims as the majority of claims (89%) in our corpus are only reported in a single paper. Multiple factors could account for why a large proportion of claims in the corpus are not reported in repeat experiments. The lower replication rate of single-study claims indicates that many of those novel claims were likely obtained by chance. Even if tested\u00a0further, they are less likely to produce positive results compared to multiple-studied claims, and thus more likely to be filed away than submitted to a journal. This\u00a0interpretation is supported by our finding that single-study claims in our corpus (ie, claims in the Low support class) have a RRobs of only 0.601,\u00a0while\u00a0the first published studies about multiple-studied claims that eventually achieve High or Very High support have a RRobs of 0.720.\n\n### Networked scientific communities and replicability\n\nIndependent and decentralized sources of evidence should increase claim robustness. We examine the impact of social and technical dependencies on the replication of biomedical claims by fitting logistic regression models to predict replication success against our network dependency measures for each claim. We performed this analysis using subsamples of DGI claims that simultaneously: 1) received support from multiple papers in the literature (i.e., claims with Moderate and above support in the literature), thereby converging on an effect direction; and 2) generalized across conditions in LINCS L1000. The resulting subsample consists of 2493 claims, associated with 6272 supporting and 339 opposing findings from 1282 research articles (see Supplementary file 2). Despite the smaller size of this subsample, our analysis represents the largest biomedical replication of its kind to date. We restrict our analysis of dependencies to a subsample of published DGI claims supported by multiple papers because single-paper claims cannot, by definition, exhibit network dependencies or centralization. By examining only interactions having significant agreement within both the literature and LINCS L1000, we can directly examine the effect of social, methodological, and knowledge dependencies on the replicability of published claims in high-throughput experiments (see Figure 3 and Figure 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig3-v1.jpg)\n\n**Figure 3.:** (A) Multilayer networks for four of the claims shown in Figure 2A. The nodes in each layer are scientific papers. Pairs of papers are connected by an unweighted edge in the top layer if they agree on the effect direction, and by a weighted edge in the other layers if there is an overlap of authors (second layer), methodologies (third layer) or references to prior publications (fourth layer): the thickness of the weighted edges is proportional to the overlap (Jaccard coefficient; JC); for clarity, we only plot edges above the mean JC value in the third layer. Dashed red lines in the top layer separate supporting and opposing findings. Each layer is associated with a score: support in the literature Lsupt, social independence Sind, methodological independence Mind, and knowledge independence Kind (see \u2018Network dependencies and centralization\u2019 in Methods and materials). Figures plotted with Pymnet (Kivela\u0308, 2017). (B) Bipartite network with edges connecting authors (rectangles) to the papers they published (circles) for the 10 papers that support the claim shown in the fourth panel of Figure 3A. A small group of investigators author most of these papers, while most investigators author only one paper, making this a centralized network. The Gini coefficient (see Materials and methods) for this network is 28.3%. (C) Bipartite network for the six papers that support the claim shown in the third panel of Figure 3A. Here all investigators author relatively comparable numbers of papers: this decentralized network has a Gini coefficient of 12.4%. (D, E) Lorenz curves for the examples shown in B and C.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Social, methodological, and prior knowledge independencies are positively correlated with each other and negatively correlated with the network centralization of scientific communities. n\u00a0=\u00a02493 claims.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Distribution of papers against the number of supporting findings they report. (B) Distribution of pairs of papers against the number of supporting findings they report.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig4-v1.jpg)\n\n**Figure 4.:** (A) Odds ratios derived from logistic regression models with claim replication as the response variable and seven predictors modeled independently (disconnected colored dots; n\u00a0=\u00a02493) and simultaneously (connected grey triangles; n\u00a0=\u00a02491). Predictors are rescaled $\\frac{x_{i}\u2212min(x)}{max(x)\u2212min(x)}$ for comparability. P-values are adjusted for multiple comparisons using the Benjamini\u2013Hochberg (Benjamini and Hochberg, 1995) procedure. (B\u2013C) Contour plots showing that the predicted probability of claim replication (derived from logistic regression models with interaction terms, see also Figure 4\u2014figure supplements 2,3) increases with decentralization and support in the literature (B), and with social independence and support in the literature (C), after adjusting for variability in LINCS L1000.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Relative risk (RR) of claim replication derived from the logistic regression models in Figure 4A. (B\u2013H) Predicted probabilities (PP) of claim replication $PP(R=1)=\\frac{exp(\\beta_{0}+\\beta_{1}X)}{1+exp(\\beta_{0}+\\beta_{1}X)}$ for the logistic regression models in Figure 4A of independent predictors with 95% error bounds. n\u00a0=\u00a02493 claims (n\u00a0=\u00a02491 in the Journal prominence model).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013C) Logistic interaction model with claim replication as the response variable regressed on support in the literature and author\u00a0centralization as interacting predictors, controlling for variability in LINCS L1000 across cell lines, durations, and dosages. Predictors are rescaled $\\frac{x_{i}\u2212min(x)}{max(x)\u2212min(x)}$ for comparability. n\u00a0=\u00a02493 claims. *** p < 0.001; ** p < 0.01; * p < 0.05.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013C) Logistic interaction model with claim replication as the response variable regressed on support from the literature and social independence as interacting predictors, controlling for variability in LINCS L1000 across cell lines, durations, and dosages. Predictors are rescaled $\\frac{x_{i}\u2212min(x)}{max(x)\u2212min(x)}$ for comparability. n\u00a0=\u00a02493 claims. *** p\u00a0<\u00a00.001; ** p < 0.01; * p < 0.05.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** We used the normal kernel function to estimate probability density functions.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/43094/elife-43094-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Odds ratios derived from logistic model with replication as the response variable, including only predictors with relatively low variance inflation factor (VIF\u00a0<4). Predictors are rescaled $\\frac{x_{i}\u2212min(x)}{max(x)\u2212min(x)}$ for comparability. n\u00a0=\u00a02491 claims. *** p\u00a0<\u00a00.001; ** p < 0.01; * p < 0.05.\n\nFigure 4A shows that the odds ratios (OR) of replication increase substantially with support in the literature $L_{supt}$ (OR 23.20, 95% CI, 9.08\u201359.3), social independence $S_{ind}$ (OR 6.31, 95% CI, 4.07\u20139.79), methodological independence $M_{ind}$ (OR 6.30, 95% CI, 3.44\u201311.53), and knowledge independence $K_{ind}$ (OR 5.53; 95% CI, 2.58\u201311.84). Consistent with this pattern, claim replication decreases sharply with centralization $C$\u00a0(OR 0.36, 95% CI, 0.27\u20130.48). Our estimates indicate that claim robustness, defined here as repeated instances of confirmatory decentralized evidence, increases replication success (see also Figure 4\u2014figure supplement 1). When all predictors are modeled simultaneously (Figure 4A), centralization and support in the literature largely account for all of the others. This suggests that centralized and extensive biomedical collaboration is associated with use of the same biomedical research techniques and attention to the same prior research (see Figure 3\u2014figure supplement 1).\n\nSocial dependencies could impact the composition of researchers studying a claim by discouraging researchers outside the dense communities of researchers who initially lay claim to it from pursuing or reporting their findings, as suggested in previous research (Azoulay et al., 2015). Focusing on High and Very High support claims with some degree of centralization (n\u00a0=\u00a0295), we found that claims originally reported and subsequently confirmed by papers with overlapping authors (n\u00a0=\u00a0117) resulted\u00a0in much more centralized communities (mean C\u00a0=\u00a00.6164; 95% CI, 0.5925\u20130.6402) compared to claims reported and subsequently confirmed by papers with independent authors (n\u00a0=\u00a0178; mean C\u00a0=\u00a00.4004; 95% CI, 0.3765\u20130.4242; two-way ANOVA test with unbalanced design.) This exploratory result suggests that claims exhibiting social dependencies very early in their development likely receive limited attention and reportage from researchers outside the communities that originated them.\n\nAn alternative explanation for replication success is the biological tendency for some DGI\u00a0claims to generalize across conditions and so replicate in future experiments. Figure 4A shows that experimental variability has a negative, marginally significant effect on replication, but support from multiple teams organized in decentralized communities are much more informative predictors of replication success.\n\nOur combined model also accounts for journal prominence\u00a0$J$, which we measure with journal eigenfactor (Bergstrom et al., 2008), a score that credits journals receiving many citations from highly cited journals. Claim replication increases with journal prominence (Figure 4A and Figure 4\u2014figure supplement 1), but prominent journals are responsible for only a tiny fraction of all claims. This warrants our evaluation strategy and the practice of extracting and archiving findings from a wide range of journals (Davis et al., 2017).\n\nFigure 4B shows that by accounting for biomedical support and decentralization, we can identify claims with high predicted probability of replication. Claims supported by many publications have about 45% higher predicted probability to replicate when investigated by decentralized versus centralized communities. Even if a DGI claim garners wide support, if it is studied exclusively by a centralized scientific community, the claim has a predicted probability of replication that is similar to that for a claim reported in a single paper. It is unlikely that such a claim will clear a clinical trial or enter medical practice (see Figure 4\u2014figure supplement 2). This suggests that collective correction in science can be undermined when one or several scientists exercise disproportionate influence on research across multiple investigations of a claim. Likewise, claims robust to many, socially independent investigations have 55% higher predicted probability of replication than those studied by a few overlapping collaborations (Figure 4C and Figure 4\u2014figure supplement 3). All models adjust for experimental variability in the\u00a0LINCS L1000\u00a0data. Results are robust to outliers and multicollinearity (see Appendix 1).\n\n## Discussion\n\nThis paper repurposes high-throughput experiments to evaluate the replicability of tens of thousands of DGI claims from the biomedical literature. It provides evidence that research replicability is associated with the way scientific collaborations are networked, after adjusting for variability in high-throughput experiments and the methodology of published studies. Centralized, overlapping communities with shared methodologies and exposure to the same prior knowledge are supported by extensive collaboration (Hicks and Katz, 1996; Hand, 2010), ubiquitous communication technologies, a reward system that places a premium on productivity, and cumulative advantage processes that create central, star biomedical scientists (Azoulay et al., 2014). Our results indicate that such communities are associated with scientific findings of lower replicability. Decentralized, sparsely connected communities explore diverse research methodologies and prior knowledge (Figure 3\u2014figure supplement 1) and are more likely to generate replicable findings.\n\nOur work addresses widely shared concerns about the robustness of research results in biomedicine. Recent work (Nissen et al., 2016; McElreath and Smaldino, 2015) submitted that reliability issues uniformly impact scientific findings, afflicting even widely accepted \u2018facts\u2019. Nissen et al. reason that even if many studies converge on the same finding, this may not increase our confidence because the same systematic biases \u2013 publication bias in particular \u2013 that made the original finding false are also likely to affect subsequent findings, resulting in a canonization of \u2018false facts\u2019 (Nissen et al., 2016). Our analysis identifies conditions under which such an argument holds, namely for research claims studied by centralized, overlapping collaborations. In the absence of social independence, replicability is low and the likelihood of a claim being revised or withdrawn is virtually non-existent as authors and methods reinforce agreement with themselves. Both disagreement and replication increase when teams from a decentralized or sparsely connected community provide separate confirming evidence for a claim. Our findings allay science policy concerns over a universal \u2018replication crisis\u2019 and identify conditions \u2013 decentralized and novel collaborations \u2013 that facilitate collective convergence on replicable findings in biomedical science.\n\nOur findings highlight the importance of science policies that promote decentralized and non-repeated collaborations. We acknowledge that certain \u2018big science\u2019 initiatives (Hand, 2010), such as the human genome project (International Human Genome Sequencing Consortium, 2001), involve large international consortiums that require a degree of repeated collaboration and centralization by design. It is also the case that the current organization of science incentivizes repeated collaborations (Guimer\u00e0 et al., 2005; Lungeanu and Contractor, 2015; Hilton and Cooke, 2015), including centralized communities revolving around star scientists (Azoulay et al., 2014) or prestigious and well-endowed institutes. By reducing information and coordination costs, repeated collaborations are more productive than new ones (Hilton and Cooke, 2015). Consequently, projects that involve prior collaborators are more likely to be funded (Lungeanu et al., 2014) and successfully completed (Cummings and Kiesler, 2008). Such positive feedback, however, can lead to the lock-in of rigid collaborative clusters, which produce voluminous scientific output with diminished value for the wider biomedical field. Science policies supporting biomedicine should account for the trade-off between increased productivity and diminished reliability.\n\nOur choice of repurposing the LINCS L1000 data to estimate the replication likelihood of published claims places importance on unfiltered high-throughput experiments for our results. We note, however, that our approach does not rely on the LINCS L1000 data being completely free from error. Rather, we argue that the LINCS L1000 data are: i) produced with methods representative of DGI research; ii) free from social, prior knowledge and narrow methodological dependencies associated with the sequential publication of findings by communities of researchers. In this way, our manuscript attempts to elucidate biases introduced by the social, cultural and methodological structure of science to noisy experimental data. From this perspective, LINCS L1000 experiments must remain unfiltered by the publication system and the expectations of any particular scientific community. In the current state of the biomedical literature, where most reported results are confirmatory, scalable approaches for identifying uncertain claims are in short supply. Experimental data such as the LINCS L1000 provides an informed approach to evaluate published claims.\n\nThis paper demonstrates an approach to evaluate the replicability of potentially vast numbers of published biomedical claims simultaneously. With the proliferation of high-throughput experimental platforms and improvements in cross-platform reproducibility (Haibe-Kains et al., 2013), the approach we report here could be further refined and extended to a continuous replication system (Goodman et al., 2016) that revises scientific results in light of new experimental evidence, increasing the credibility and robustness of biomedical knowledge.\n\n## Materials and methods\n\n### High throughput claim replication strategy\n\nWe examined a corpus of 51,292 scientific claims about drug-gene interactions in human systems. We compiled the corpus by using claims about directed drug-gene interactions (DGIs) curated from biomedical publications in the Comparative Toxicogenomics Database (CTD) (Davis et al., 2017). Each scientific claim is a triple of drug, gene, and interaction effect. For comparability with high-throughput experiments, we selected interaction effects in which a drug \u2018increases expression\u2019 or \u2018decreases expression\u2019 of an mRNA in humans (effect magnitudes were not recorded), amounting to 239,713 DGI claims curated from 11,754 scientific articles. The CTD provides PubMed IDs of articles in which the finding is reported, which enabled examination of article content (e.g., methods) and metadata (e.g., authors, citations).\n\nTo estimate replication likelihood, we map our corpus of DGI claims to high-throughput experimental data from the NIH LINCS L1000 program, which was performed at the Broad Institute of MIT and Harvard. This program generated 1.3M gene expression profiles from 42,080 chemical and genetic perturbagens across cell lines, time points, and dosage\u00a0levels (Subramanian et al., 2017). We used profiles induced by chemical perturbagens, amounting to 19,811 small molecule compounds (including FDA approved drugs). The LINCS L1000 data have been reported to be highly reproducible (Subramanian et al., 2017) compared to drug screen data generated via RNA sequencing, instances of which have been\u00a0found to exhibit inconsistencies across platforms (Haibe-Kains et al., 2013).\n\nThe LINCS L1000 team consolidated multiple expression profiles or replicates into signatures corresponding to moderated (Subramanian et al., 2017) z-scores (Level five data in LINCS L1000). Each signature and corresponding moderated z-score is a representation of gene responses to drug perturbations under a particular cell line, dosage, and duration. We combined moderated z-scores for each DGI using a bootstrapped modification of Stouffer\u2019s method (Whitlock, 2005; Himmelstein et al., 2017)\u00a0$Z =\\frac{\\sumi=1kz_{i}}{\\sqrt{k}}$, where\u00a0$z_{i}$ is a moderated z-score and $k$ is the number of moderated z-scores for the DGI. We bootstrapped (10,000 iterations) each sample of moderated z-scores per DGI to estimate confidence intervals. The samples vary across DGIs as a function of the number of cell lines, dosages, and durations under which the DGI was tested (the mean and median of moderated z-scores per DGI in our corpus are 143.8 and 49, respectively).\n\nThe above procedure generates triples of (i) drug, (ii) gene (mRNA), and (iii) combined z-score indicating experimental effect size and direction. We matched DGI triples from the LINCS L1000 experiments to DGI triples in CTD, and found 51,292 DGIs at the intersection, corresponding to 60,159 supportive and 4253 opposing findings from the literature, annotated from 3363 scientific articles (Appendix 1 details data sources). To verify that published findings have been obtained independently from the LINCS L1000 high-throughput data, a search in PubMed was performed using the search terms LINCS L1000 and L1000. The search identified no reference to the LINCS L1000 data among the 3363 articles.\n\n### Experimental generalizability and variability\n\nWe used the confidence intervals for the combined z-scores we estimated via bootstrapping for each of the 51,292 DGIs to differentiate generalized from context-specific interactions in LINCS L1000. We classified DGIs as 'generalized' those significant at the 0.05 level (i.e., the corresponding 95% confidence intervals do not contain the null value of 0;\u00a0see Figure 2C and 2D). For generalized/significant DGIs, we further examine robustness to experimental conditions (Kaelin, 2017; Goodman et al., 2016; Van Bavel et al., 2016) by measuring variability of each interaction in LINCS L1000 across cell lines, dosages, and durations using the coefficient of variation (CV). For a set of z-scores about a DGI in LINCS L1000, $CV_{z}$\u00a0is defined as the ratio of the standard deviation to the absolute value of the mean\u00a0$CV_{z}=\\frac{\\sigma_{z}}{abs(\\mu_{z})}$. $CV_{z}$ is a normalized measure of variability that allows us to make comparisons across DGIs.\n\n### Bayesian model of scientific support\n\nClaims about DGIs receive different proportions of supporting and opposing published findings. To estimate the probability of support or confirmation in the literature Lsupt for each DGI claim, we design a simple Bayesian model (Gelman et al., 2013; Davidson-Pilon, 2015; Kruschke, 2014). We assume that the prior distribution of\u00a0\u03b8 is uniform on the interval [0,1]: \u03b8i ~Uniform(min = 0, max = 1). Further, we assume that the\u00a0number of supporting published findings \u03b3 in n findings about that claim is drawn from a\u00a0binomial distribution, p(\u03b3|\u03b8) ~ Bin(\u03b3|n, \u03b8). We approximated the posterior density of \u03b8 for each\u00a0drug-gene claim by performing 10,000 Markov chain Monte Carlo (MCMC) sampling\u00a0iterations (2,500 burn-in iterations) for each drug-gene claim using the Metropolis\u2013Hastings\u00a0MCMC sampler implemented in the PyMC package (version 2.3.6) for Python.\u00a0To improve convergence, we approximate the maximum posterior (MAP) before running the MCMC sampler (Davidson-Pilon, 2015).\n\nWe used the posterior distributions from our Bayesian model of support to categorize DGI claims into classes. For each claim, we estimated the overlap between the posterior credible intervals (PCI) and the null value of \u03bc\u00a0=\u00a00.5 (Figure 2B): Very High support claims ($95%PCI$\u00a0exceeds \u03bc) yield agreement from multiple papers (~7 papers on average), amounting to 325 claims supported by 2241 findings, but only opposed by 21; High support claims ($80%PCI$ exceeds \u03bc) yield agreement from 3 papers on average, comprising\u00a01083 claims, supported by\u00a03525\u00a0and opposed by 42 findings; Moderate support claims ($68%PCI$ exceeds \u03bc) yield agreement from 2 papers on average,\u00a0comprising\u00a03743 claims, supported by\u00a07557\u00a0and opposed by 38 findings; Low support claims ($68%PCI$ contains \u03bc) are overwhelmingly supported by a single finding or opposed by virtually the same number of findings that support them such that the direction of the effect is undetermined,\u00a0comprising\u00a046,064 claims, supported\u00a0by 46,735\u00a0and opposed by\u00a03668 findings. Not Supported claims ($68%PCI$\u00a0is smaller than \u03bc) generate lower support than expected as a greater number of papers reported findings in the opposite direction, comprising only 77 claims, supported by 101\u00a0and opposed\u00a0by 484 findings (Figure 2\u2014figure supplement 2).\n\n### Measuring relative replication increase\n\nA DGI is replicated, $R=1,$ if the direction of the effect size (i.e., positive or negative combined z-score) in LINCS L1000 matches the direction of the effect (i.e., increase or decrease) claimed in literature, and $R=0,$ otherwise. For the entire corpus and for selected subsets of the corpus, we created replication vectors [1, 0] and calculated observed replication rates $RR_{obs}$ by dividing the number of replicated claims by the total number of claims. We then bootstrapped (100,000 iterations) the replication vectors to estimate the 95% percentile\u00a0confidence intervals of $RR_{obs}$ (Figure 2D). We empirically estimated the baseline or random replication rate $RR_{rand}$ (the proportion of random matches in which LINCS L1000 effects matched the direction of the effects reported in the literature) for the entire corpus and for various subsets of the corpus by iteratively matching published DGI claims to randomized combined z-scores in LINCS L1000 (100,000 random permutations). We then\u00a0used the resulting permutation distributions to determine the 95% confidence intervals of $RR_{rand}$. The empirical baseline model corrects for unbalanced data, which would occur if more claims of a certain direction, either \u2018increasing\u2019 or \u2018decreasing\u2019, are present in both literature and high-throughput experiments. The percentage relative replication increase RRI is defined as:\u00a0$RRI=100\\times((RR_{obs}\u2212RR_{rand}/RR_{rand})$.\n\n### Network dependencies and centralization\n\nWe represent network dependencies for each claim as a multilayer network (Kivela et al., 2014)\u00a0$M=(V_{M},E_{M},L)$ (Figure 3A). In each network layer $L$, nodes $V$ are biomedical papers and edges $E$ between pairs of papers represent either a binary relationship of agreement $(L_{1})$ or the amount of overlap between the authors $(L_{2})$, methodologies $(L_{3})$, and references to prior publications $(L_{4})$ in the two papers. We quantify the amount of overlap between research papers using the Jaccard coefficient (JC). For any attribute \u2013 i.e., authors, methods, or references \u2013 $A_{i}$ and $A_{j}$, JC is the size of intersection divided by the size of the union: $JC(A_{i},A_{j})=\\frac{|A_{i}\u2229A_{j}|}{|A_{i}|+|A_{j}|\u2212|A_{i}\u2229A_{j}|}$. The resulting quantity represents the edge weight between a pair of articles in the respective network layers of shared authors $(L_{2})$, methods $(L_{3})$, and references $(L_{4})$. Each drug-gene claim constitutes an undirected, multilayer network of papers connected via such weighted edges across layers (see Figure 3A).\n\nWe define an independence score IND as the proportion of maximum possible edges (Wasserman and Faust, 1994) in a network layer $E_{max}=\\frac{E}{n(n\u22121)/2}$ not present, $IND=\\frac{E_{max}\u2212W}{E_{max}}$, where $W$ is the sum over all weighted edges in a claim\u2019s respective layer of shared authors, methods, or references. Our independence scores can be viewed as the probability that any two randomly chosen findings about a claim are obtained by disconnected sets of authors (social independence $S_{ind}$), methods (methodological independence $M_{ind}$), and references (knowledge independence $K_{ind}$), respectively. The independence scores approach one when most papers with findings in support of a claim share no common authors, methods, and references, and 0 when all papers share all of their authors, methods, and references, respectively (see Appendix 1).\n\nTo quantify the centralization of research communities $C$ for each claim, we employed the Gini coefficient. The Gini coefficient is used to measure the heterogeneity of distributions in social and information networks (Kunegis and Preusse, 2012). The coefficient ranges between 0 and 1. In the context of a bipartite author-article network (Figure 3B\u2013C), the coefficient approaches 0 when all investigators author equal numbers of articles about a claim and increases to 0.3 and above (depending on the number of articles), when one investigator authors all articles and all others author only one. The Gini coefficient can be also represented as a percentage ranging from 0 to 100, as in Figure 2D\u2013E. While other measures of network centralization are available (e.g., Freeman\u2019s centralization [Freeman, 1978]), the Gini coefficient, and the Lorenz curve on which it is based, is independent from the underlying degree distribution, making it suitable for comparisons among networks with different size and mean degree (Kunegis and Preusse, 2012; Badham, 2013).\n\n### Replication prediction models\n\nWe fit univariate, multivariate, and interaction logistic regression models to estimate odds ratios, relative risk, and predicted probabilities of claim replication as a function of support in the literature $L_{supt}$, social independence $S_{ind}$, methodological independence $M_{ind}$, knowledge independence $K_{ind}$, centralization $C$, journal prominence $J$, and experimental variability $CV$. First, for exploratory purposes, we model each variable independently (see Figure 4A, Figure 4\u2014figure supplement 1, and Supplementary file 3). Second, we model our variables simultaneously (see Figure 4A, Figure 4\u2014figure supplement 1, and Supplementary file 4):\n\n$$\nlogit P\u00a0(R=1)=\\beta_{0}+\\beta_{1}\\timesL_{supt}+\\beta_{2}\\timesS_{ind}+\\beta_{3}\\timesM_{ind}+\\beta_{4}\\timesK_{ind}+\\beta_{5}\\timesC+\\beta_{6}\\timesJ+\\beta_{7}\\timesCV\n$$\n\nThird, we estimate two interaction models to examine the effect of support in the literature on replication success as a function of social independence and centralization, respectively (see Figure 4B\u2013C and Figure 4\u2014figure supplements 2,3):\n\n$$\nlogit P(R=1)=\\beta_{0}+\\beta_{1}\\timesL_{supt}\\times\u00a0S_{ind}+\\beta_{2}\\timesCV\\beta_{0}+\\beta_{1}\\timesL_{supt}\\times\u00a0C+\\beta_{2}\\timesCV\n$$\n\nTo estimate and visualize the logistic regression models, we used the glm() function, specifying binomial distribution and the canonical logit link function, and the packages effects (Fox, 2003), sjPlot (L\u00fcdecke, 2019), and ggplot2 (Wickham, 2016), all in R.\n\n### Data availability\n\nThe data and computer code associated with this analysis are available on the Open Science Framework at https://osf.io/xmvda/.\n",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "178dae92-94fe-4ba4-babe-510df8d1f287",
+      "submission_id": "890c68cf-2eb3-4585-b036-776f13869279",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- Luis AN Amaral, Northwestern University United States\n\n## Review text\n\nDOI: [10.7554/eLife.43094.030](https://doi.org/10.7554/eLife.43094.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Centralized Scientific Communities Less Likely to Generate Replicable Results\" to eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Peter Rodgers, the eLife Features Editor. The following individual involved in review of your submission have agreed to reveal his identity: Luis AN Amaral (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the eLife Features Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nDanchev, Rzhetshy, and Evans investigate the replicability and reliability of published findings by comparing published findings with the high throughput results from the NIH LINCS L1000 program. This is a clever approach. The paper is overall well written, and the analysis is thorough and complete. All in all, the authors provide important results that may help guide the development of more reliable science.\n\nEssential revisions:\n\n1) eLife papers use the Introduction/Results/Discussion/Materials and methods format, so you will need to reorder these sections in your manuscript. Also, eLife papers do not include supplementary information: rather, figures in the supplementary information need to become supplements to the figures in the main text (called Figure 1\u2014figure supplement 1 etc.), and the text in the supplementary information needs to be moved to the main text (usually to the methods section).\n\n2) The authors' analysis seems to rely on assuming that the LINCS L1000 data is true. A brief discussion about the importance of this assumption and perhaps what would happen were it violated would be helpful.\n\n3) While this study is very thorough as it stands, I believe that the authors have the opportunity to answer another question that could increase the impact of the paper. The authors find that most DGI claims are only reported in a single study. Why is this? I can imagine two scenarios: i) Gene is not thought to be important, so there is no incentive for further study, or ii) Gene is important but claim is by star scientist and attempts at publishing contradictory claim are stymied. It would be interesting to investigate whether the data support either of these scenarios (or another scenario). If the authors feel that such an analysis is beyond the scope of the present paper, they should at least comment on this issue.\n\n4) The reader needs more detail about bootstrapping (what is being bootstrapped? What is the typical sample size? What is the distribution of perturbations for each gene?). Please either add these details to the subsections \u201cHigh-throughput Claim Replication Strategy\u201d, last paragraph, \u201cExperimental Generalizability and Variability\u201d and \u201cMeasuring Relative Replication Increase\u201d, or include references to the relevant parts of the methods section.\n\n5) Please clarify how replication is defined. What if LINCS data is not consistent? Or if the other data/papers are not consistent (e.g. includes + and \u2013 results)?\n\n6) In the first paragraph of the Discussion, the authors imply a causal relationship between centralized communities and reliability of scientific findings. I recommend that this (and any other similar statements) be modified so as to not imply causation. It could be that some third confounding factor leads to lower reliability. For instance, this sentence could be written: \"Our results indicate that such communities are associated with lower reliability of scientific findings.\" If the authors believe this analysis can discern causality, please describe why.\n\n7) Figure 1. Panel A would make more sense to me as a scatter plot of number of supporting claims versus number of opposing claims. Panel C would be easier to read if the survival function was plotted instead of a frequency plot. In their current forms Panels B and D containing relatively little information: please consider deleting these panels and including the relevant data in the figure legend. Also, regarding panel D: it would be more interesting to plot the fractions that are significant as the p-value threshold for significance is changed.\n\n8) Figure 2. It is not clear to me what subset of data is being considered in Panel B. It appears to be different from the subset in Panel C since the number of contradictory claims is different for the two panels (43 vs. 77). I would name the different subsets of data, provide a table with their definition, and use the names in the text so as to help the reader. Also, please explain why there are two random groups in Panel C. Also, 'contradictory' seems to me not a good name since a potentially large majority of claims does not support the existence of the interaction: 'not supported' would appear to be a better designation.\n\n9) In figures including p-values (e.g. Figure 2D and 2E), it would be helpful to have p-values rather than stating \"n.s.\" Additionally, clarity on the p-values and how they are calculated in Figure 2D and 2E would be helpful\n\n10) Figure 3. Please provide a y-axis label for Panel B. This panel is also difficult to read so please consider having the lines end at the middle of the bottom edge of the rectangle/square, rather than inside the rectangle/square.\n\n11) Figure 4A claims to show the OR for replication in LINCS L1000 data but the figure legend claims that something else is being plotted. Moreover, several studies have showed that OR are usually misinterpreted and that use of relative risk (RR, which can be derived from the OR) is more informative of the actual impact of a factor. I recommend also plotting the RR.\n\n12) Figure 4\u2014figure supplement 3C: the 95% confidence intervals for the top 2 rows do not appear to contain any of the parameters in the table. More clarification on what they represent is needed.\n",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "78628aef-ffed-45f8-b1c8-9413f8e0804c",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C1",
+      "claim": "The sample included 60,159 supporting findings and 4253 opposing findings about 51,292 drug-gene interaction claims in 3363 scientific articles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our sample included 60,159 supporting findings and 4253 opposing findings about 51,292 drug-gene interaction claims in 3363 scientific articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by data presented in Figure 1A and the methods section describing the CTD and LINCS L1000 data matching.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "08623410-bb3f-46b8-bdb4-43496ac03a1b",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C2",
+      "claim": "Claims reported in a single paper replicate 19.0% (95% confidence interval [CI], 16.9\u201321.2%) more frequently than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that claims reported in a single paper replicate 19.0% (95% confidence interval [CI], 16.9\u201321.2%) more frequently than expected",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the analysis presented in the abstract and detailed in Figure 2E showing relative replication increase for Low support claims.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "fcb3e831-7e34-4971-aef5-5b497de90c43",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C3",
+      "claim": "Claims reported in multiple papers replicate 45.5% (95% CI, 21.8\u201374.2%) more frequently than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "while claims reported in multiple papers replicate 45.5% (95% CI, 21.8\u201374.2%) more frequently than expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the analysis presented in the abstract and detailed in Figure 2E showing relative replication increase for Very High support claims.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "833139dd-abd6-44a0-8510-d9f87ad4f77a",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C4",
+      "claim": "Centralized scientific communities propagate less replicable claims than decentralized communities.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyze the subsample of interactions with two or more published findings (2493 claims; 6272 supporting findings; 339 opposing findings; 1282 research articles), and show that centralized scientific communities, which use similar methods and involve shared authors who contribute to many articles, propagate less replicable claims than decentralized communities, which use more diverse methods and contain more independent teams.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the logistic regression analysis in Figure 4A showing that centralization has an odds ratio of 0.36 (95% CI, 0.27\u20130.48) for replication success.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "2d115bb9-e0b0-46c6-90c1-bffa82a4c9e0",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C5",
+      "claim": "The CTD had recorded over 1.26 million drug-gene interaction (DGI) claims published in journals as of June 7, 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD had recorded over 1.26 million drug-gene interaction (DGI) claims published in journals as of June 7, 2016",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the database size at a specific date, presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "17607c47-c195-4fba-be0f-667ed24bf485",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C6",
+      "claim": "The LINCS L1000 experiment generated 1.3 million gene expression profiles from 42,080 perturbagens across a range of different cell lines, time points and dosage levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The LINCS L1000 experiment generated 1.3 million gene expression profiles from 42,080 perturbagens across a range of different cell lines, time points and dosage levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the LINCS L1000 dataset, supported by citation to Subramanian et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "b5216f29-fae0-450e-85d3-c22709b011ce",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C7",
+      "claim": "Most claims (89%) are supported by findings in one or two (8%) articles.",
+      "claim_type": "EXPLICIT",
+      "source": "Most claims are supported by findings in one (89%) or two (8%) articles, while few appear in many articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the distribution shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "d10e8c20-2c06-439c-b6dd-4b91a8d976d6",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C8",
+      "claim": "The vast majority of published findings (93%) agree on the direction of DGI claims.",
+      "claim_type": "EXPLICIT",
+      "source": "There is wide consensus in the literature: the vast majority of published findings (93%) agree on the direction of DGI claims.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the analysis of agreement in the literature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "cbfe36f7-4504-4924-a7fa-fbed779fb3b7",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C9",
+      "claim": "Among claims supported by two or more published findings, the agreement increases to 94%.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 11% of claims supported by two or more published findings, the agreement increases to 94%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the analysis of agreement in the literature for multi-study claims.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "3448e15c-f2e1-44eb-89b3-8185c1176569",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C10",
+      "claim": "Only 41% (21,181/51,292) of the DGI effect-sizes in LINCS L1000 generalize across experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only 41% (21,181/51,292) of the DGI effect-sizes in LINCS L1000 generalize across experimental conditions (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the LINCS L1000 data analysis, shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "b8f4f391-e473-46c0-9d0a-f83618d0dafc",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C11",
+      "claim": "A pair of findings about a DGI claim reported in papers with some of the same authors are significantly more likely to agree (0.989) than findings reported in papers by socially independent teams (0.889).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we find that consensus in the biomedical literature is strongly and positively associated with connections between papers arising from overlapping authors. A pair of findings about a DGI claim reported in papers with some of the same authors are significantly more likely to agree (0.989, 2486 of 2514 overlapping pairs of papers) than findings reported in papers by socially independent teams (0.889, 18,527 of 20,846 non-overlapping pairs of papers), with a mean difference of 0.1001 (95% CI, 0.094\u20130.106, P <.0001, 100,000 bootstrap iterations; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bootstrap analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "8a2a823a-48f5-4b37-adb3-7dc475f6be73",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C14",
+      "claim": "The percentage relative replication increase (RRI) for the entire sample is 10.6% (95% CI, 9.3%\u201311.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "this corresponds to a per centage relative replication increase (RRI = ((RRobs \u2013 RRrand)/RRrand) \u00d7 100%) of 10.6% (95% CI, 9.3%\u201311.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the observed and random replication rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "4e861f67-6bf8-4ee8-ae32-49ac99b2d984",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C16",
+      "claim": "Claims with Very High support in the biomedical literature replicate 45.5% (95% CI, 21.8\u201374.2%) more frequently than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2E shows that claims with Very High support in the biomedical literature (RRI = 45.5%; 95% CI, 21.8\u201374.2%) with an average of 6.9 papers confirming the claim",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2E for the Very High support category.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "93f55d72-969a-4124-9e63-ca0a952654aa",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C17",
+      "claim": "Claims with High support replicate 34.5% (95% CI, 20.2\u201350.3%) more frequently than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "and claims with High support (RRI = 34.5%; 20.2\u201350.3%) with an average of 3.3 confirming papers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2E for the High support category.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "f5f1c07e-d51f-4fbb-888a-b0647b3659c2",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C18",
+      "claim": "Claims with Low support replicate 19.0% (95% CI, 16.9\u201321.2%) more frequently than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "are substantially more likely to replicate in high-throughput experiments than those with Low and Moderate support (RRI = 19.0%; 16.9\u201321.2% and 16.2%; 9.8\u201322.9%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2E for the Low support category.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "dfbb5988-b4d1-4a21-ab5a-410679d4ad4d",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C19",
+      "claim": "Claims with Moderate support replicate 16.2% (95% CI, 9.8\u201322.9%) more frequently than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "are substantially more likely to replicate in high-throughput experiments than those with Low and Moderate support (RRI = 19.0%; 16.9\u201321.2% and 16.2%; 9.8\u201322.9%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2E for the Moderate support category.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "f59df24d-2fb2-4bce-b002-282952f27a3b",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C20",
+      "claim": "Not Supported claims are significantly less likely to replicate than random (RRI = \u221228.9%; \u221261.9%\u201316.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Not Supported claims are significantly less likely to replicate than random (RRI = \u221228.9%; \u221261.9%\u201316.7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2E for the Not Supported category.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "3eea0c7d-27a0-4035-80f7-d341b1ee251d",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C21",
+      "claim": "Not Supported claims are associated with greater experimental variability.",
+      "claim_type": "EXPLICIT",
+      "source": "They are also associated with greater experimental variability (Figure 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2F comparing variability across support categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "64028709-aac0-4064-8bca-f3522c21c551",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C22",
+      "claim": "The replication of claims with Low and Moderate support is consistent with reproducibility estimates reported in the literature, ranging from 11% (N = 67; Begley and Ellis, 2012) to 25% (N = 53; Prinz et al., 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "The replication of claims with Low and Moderate support is consistent with reproducibility estimates reported in the literature, ranging from 11% (N = 67; Begley and Ellis, 2012) to 25% (N = 53; Prinz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the findings to prior published reproducibility studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "e27673d3-be93-4e1f-b1b4-764e164e8420",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C23",
+      "claim": "The majority of claims (89%) in the corpus are only reported in a single paper.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the process of collective correction applies to a small subset of claims as the majority of claims (89%) in our corpus are only reported in a single paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the distribution analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "53708f43-f3b7-4fea-8182-f3b5ab09021e",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C24",
+      "claim": "Single-study claims have an observed replication rate (RRobs) of only 0.601.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is supported by our finding that single-study claims in our corpus (ie, claims in the Low support class) have a RRobs of only 0.601",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the replication analysis of single-study claims.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "f0e2a79e-9a6e-46cf-a483-dea94ecf5010",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C25",
+      "claim": "The first published studies about multiple-studied claims that eventually achieve High or Very High support have an observed replication rate (RRobs) of 0.720.",
+      "claim_type": "EXPLICIT",
+      "source": "while the first published studies about multiple-studied claims that eventually achieve High or Very High support have a RRobs of 0.720.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the replication analysis of first studies in multi-study claims.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "dfb12596-e1b3-4b6d-9d3d-f0d0db25ed7a",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C26",
+      "claim": "The subsample for network dependency analysis consists of 2493 claims, associated with 6272 supporting and 339 opposing findings from 1282 research articles.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting subsample consists of 2493 claims, associated with 6272 supporting and 339 opposing findings from 1282 research articles (see Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the subsample used for the network analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "1ca68ee4-7235-4044-826a-1168ad9c746e",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C32",
+      "claim": "When all predictors are modeled simultaneously, centralization and support in the literature largely account for all of the other predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "When all predictors are modeled simultaneously (Figure 4A), centralization and support in the literature largely account for all of the others.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from the multivariate logistic regression analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "46718d87-616a-458b-9ea2-24e65cfc6f19",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C33",
+      "claim": "Centralized and extensive biomedical collaboration is associated with use of the same biomedical research techniques and attention to the same prior research.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that centralized and extensive biomedical collaboration is associated with use of the same biomedical research techniques and attention to the same prior research (see Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "94c74ed8-1d38-4626-9dc5-98ba842afeaf",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C34",
+      "claim": "Claims originally reported and subsequently confirmed by papers with overlapping authors resulted in much more centralized communities (mean C = 0.6164; 95% CI, 0.5925\u20130.6402) compared to claims reported and subsequently confirmed by papers with independent authors (mean C = 0.4004; 95% CI, 0.3765\u20130.4242).",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on High and Very High support claims with some degree of centralization (n = 295), we found that claims originally reported and subsequently confirmed by papers with overlapping authors (n = 117) resulted in much more centralized communities (mean C = 0.6164; 95% CI, 0.5925\u20130.6402) compared to claims reported and subsequently confirmed by papers with independent authors (n = 178; mean C = 0.4004; 95% CI, 0.3765\u20130.4242; two-way ANOVA test with unbalanced design.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from an exploratory analysis comparing centralization for claims with and without author overlap.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "0ac16651-8ad1-4bfd-97a4-4050f78531e0",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C35",
+      "claim": "Claim replication increases with journal prominence.",
+      "claim_type": "EXPLICIT",
+      "source": "Claim replication increases with journal prominence (Figure 4A and Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from the logistic regression analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "ab9791c0-ab7f-44cd-9e7b-619b2e29b01d",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C36",
+      "claim": "Claims supported by many publications have about 45% higher predicted probability to replicate when investigated by decentralized versus centralized communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4B shows that by accounting for biomedical support and decentralization, we can identify claims with high predicted probability of replication. Claims supported by many publications have about 45% higher predicted probability to replicate when investigated by decentralized versus centralized communities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from the interaction model shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "ee768668-86c0-4c97-a873-53b84eff0757",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C37",
+      "claim": "If a DGI claim garners wide support but is studied exclusively by a centralized scientific community, the claim has a predicted probability of replication that is similar to that for a claim reported in a single paper.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if a DGI claim garners wide support, if it is studied exclusively by a centralized scientific community, the claim has a predicted probability of replication that is similar to that for a claim reported in a single paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the interaction model shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "53f98f26-6340-448e-a945-80cd7ffc0c46",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C38",
+      "claim": "Claims robust to many, socially independent investigations have 55% higher predicted probability of replication than those studied by a few overlapping collaborations.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, claims robust to many, socially independent investigations have 55% higher predicted probability of replication than those studied by a few overlapping collaborations (Figure 4C and Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from the interaction model shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "42b2cadb-a85b-4ad4-a13b-b277693ca852",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C39",
+      "claim": "The LINCS L1000 data have been reported to be highly reproducible compared to drug screen data generated via RNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "The LINCS L1000 data have been reported to be highly reproducible (Subramanian et al., 2017) compared to drug screen data generated via RNA sequencing, instances of which have been found to exhibit inconsistencies across platforms (Haibe-Kains et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Subramanian et al., 2017 and Haibe-Kains et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "21e39b93-3544-45e5-ae32-3404e7b11b5c",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C40",
+      "claim": "A search in PubMed identified no reference to the LINCS L1000 data among the 3363 articles in the corpus.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that published findings have been obtained independently from the LINCS L1000 high-throughput data, a search in PubMed was performed using the search terms LINCS L1000 and L1000. The search identified no reference to the LINCS L1000 data among the 3363 articles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a verification step to ensure independence between the literature and LINCS L1000 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "9576446f-6619-46fc-9afd-774725b4c38a",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C41",
+      "claim": "Replication failures are typically attributed to systemic bias in a publication system that favors positive results.",
+      "claim_type": "EXPLICIT",
+      "source": "Replication failures are typically attributed to systemic bias in a publication system that favors positive results (Ioannidis, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the literature on replication failures, supported by citation to Ioannidis, 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "19abbf51-f85a-47d0-a542-8f3fbed9a2db",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C42",
+      "claim": "Publication bias incentivizes questionable research choices such as p-hacking, 'flexible' data analysis, low statistical power, selective reporting, and confirmation bias.",
+      "claim_type": "EXPLICIT",
+      "source": "This incentivizes questionable research choices such as p-hacking (Head et al., 2015; Simonsohn et al., 2014), 'flexible' data analysis (Simmons et al., 2011), low statistical power (Dumas-Mallet et al., 2017), selective reporting (the 'file drawer problem') (Rosenthal, 1979), and confirmation bias (Nuzzo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature on questionable research practices.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "431662ce-32d6-4103-becd-8a3d19635600",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C43",
+      "claim": "A decentralized community of largely independent, non-overlapping teams, which draws from a diverse pool of prior publications, using distinct methods under varying experimental conditions, is more likely to produce robust results.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that a decentralized community of largely independent, non-overlapping teams, which draws from a diverse pool of prior publications, using distinct methods under varying experimental conditions, is more likely to produce robust results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main hypothesis of the paper, tested through the empirical analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "5718d656-0026-4d93-8076-8c9f3a290dc3",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C44",
+      "claim": "A centralized community involving repeated collaborations and using a narrow range of methods, knowledge from prior publications and experimental conditions is likely to produce less robust results.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we expect that a centralized community involving repeated collaborations and using a narrow range of methods, knowledge from prior publications and experimental conditions is likely to produce less robust results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the contrasting hypothesis of the paper, tested through the empirical analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "f6721dbe-c8b1-4980-a663-0cf993f90511",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C45",
+      "claim": "Repeated collaboration, growing teams, star scientists, expensive shared equipment, and common citations are defining characteristics of the biomedical research enterprise today.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, repeated collaboration (Hicks and Katz, 1996; Guimer\u00e0 et al., 2005), growing teams (Wuchty et al., 2007), star scientists (Merton, 1968; Azoulay et al., 2014), expensive shared equipment, and common citations (Evans, 2008; Simkin and Roychowdhury, 2005; White et al., 2004) are defining characteristics of the biomedical research enterprise today (Hicks and Katz, 1996; Hand, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the literature on scientific collaboration and organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "6e6ac2e7-273c-48ed-bff7-7515226de659",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C46",
+      "claim": "Prior simulations have suggested that independent labs are less prone to peer pressure than a densely connected network of scientists, in which misleading early results can propagate more easily.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior simulations have suggested that independent labs are less prone to peer pressure than a densely connected network of scientists, in which misleading early results can propagate more easily (Zollman, 2007; Payette, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to simulation studies by Zollman, 2007 and Payette, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "f4ace5dc-fa3e-4bee-a4ee-47c10bbd2687",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C47",
+      "claim": "Research on the 'wisdom of crowds' and the exploration-exploitation trade-off found densely connected networks to be inefficient, and suggested that networks of semi-isolated subgroups would lead to an improvement in collective performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Related research on the 'wisdom of crowds' (Lorenz et al., 2011) and the exploration-exploitation trade-off (Lazer and Friedman, 2007) also found densely connected networks to be inefficient, and suggested that networks of semi-isolated subgroups would lead to an improvement in collective performance (Fang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lorenz et al., 2011, Lazer and Friedman, 2007, and Fang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "54e3efed-81d7-48a8-b99e-47adf7c2fc1b",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C48",
+      "claim": "In estimation tasks completed by networks of individuals, the dominance of central individuals in networks tended to bias the collective estimation process and decrease the average accuracy of group estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "A more recent experiment demonstrates that decentralized networks, rather than independence, may most improve collective performance. In estimation tasks completed by networks of individuals, it was found that the dominance of central individuals in networks tended to bias the collective estimation process and decrease the average accuracy of group estimates (Becker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Becker et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "ac8fd10b-71e2-4984-8a21-7a2b1b0f29d4",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C49",
+      "claim": "A separate body of literature attributes robustness of scientific findings to diverse methods used to corroborate them or distinct theories used to motivate them.",
+      "claim_type": "EXPLICIT",
+      "source": "A separate body of literature attributes robustness of scientific findings to diverse methods (Kaelin, 2017; Wimsatt, 2012) used to corroborate them or distinct theories used to motivate them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kaelin, 2017 and Wimsatt, 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "70fc9b73-b794-4814-b089-0649c5974d7e",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C50",
+      "claim": "Jean Perrin used multiple experimental techniques and theories to precisely determine Avogadro's number.",
+      "claim_type": "EXPLICIT",
+      "source": "A classic example is Jean Perrin's use of multiple experimental techniques and theories to precisely determine Avogadro's number (Salmon, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical example supported by citation to Salmon, 1984.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "9998a9e7-3c4c-46d3-b9f5-2a5ef45898bb",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C51",
+      "claim": "There has been no comprehensive evaluation of the relationship between the way scientific communities are networked and the robustness and replicability of published findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, there has been no comprehensive evaluation of the relationship between the way scientific communities are networked and the robustness and replicability of published findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in the literature that this paper addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "d5dc424a-60e3-47fc-8e91-2efa40bbe4ad",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C52",
+      "claim": "Literature on research reliability has focused on methodological features rather than the way scientific communities are networked.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, literature on research reliability has focused on methodological features rather than the way scientific communities are networked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the focus of prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "c22399e3-4c4d-4403-aeef-0d0aef75c533",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C53",
+      "claim": "There has been relatively little research on replication in the field of biomedical science.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there has been relatively little research of this nature in the field of biomedical science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in the literature that this paper addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "d9814e4e-7685-4c28-8d27-143a92df4f0e",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C54",
+      "claim": "The overwhelming agreement observed in the literature compared to the LINCS L1000 data suggests that the literature may influence the selection and interpretation of experimental results by scientists through confirmation bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Although those two quantities \u2013 agreement among published findings and generalizability of LINCS L1000 effect sizes \u2013 are not directly comparable as they utilize different measurements, the overwhelming agreement observed in the literature compared to the LINCS L1000 data suggests that the literature may influence the selection and interpretation of experimental results by scientists through confirmation bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comparison of agreement rates in the literature (93%) versus generalizability in LINCS L1000 (41%).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "bbe84e3f-6251-49b5-9a79-f1e4d11a5d28",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C55",
+      "claim": "One consequence of confirmation bias is that experimental results that contradict preexisting knowledge are 'filed away' rather than submitted to journals.",
+      "claim_type": "EXPLICIT",
+      "source": "One consequence of this is that experimental results that contradict preexisting knowledge are 'filed away' rather than submitted to journals (Rosenthal, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the file drawer problem, supported by citation to Rosenthal, 1979.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "050db4cc-0fa1-4f13-a45b-35a3d8bd774d",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C56",
+      "claim": "Some disagreement within the literature is attributable to experimental and biological variation in the experiments performed by different scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Encouragingly, this suggests that some disagreement within the literature is attributable to experimental and biological variation in the experiments performed by different scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the finding that generalized LINCS L1000 DGIs have higher replication rates than non-generalized ones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "44f15fb8-49d5-4ae3-ad2a-da4eb75422f3",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C57",
+      "claim": "Social dependencies could impact the composition of researchers studying a claim by discouraging researchers outside the dense communities of researchers who initially lay claim to it from pursuing or reporting their findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Social dependencies could impact the composition of researchers studying a claim by discouraging researchers outside the dense communities of researchers who initially lay claim to it from pursuing or reporting their findings, as suggested in previous research (Azoulay et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism, supported by citation to Azoulay et al., 2015.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "8c8d97db-d0df-4901-a1df-6b72fea9d164",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C58",
+      "claim": "Claims exhibiting social dependencies very early in their development likely receive limited attention and reportage from researchers outside the communities that originated them.",
+      "claim_type": "EXPLICIT",
+      "source": "This exploratory result suggests that claims exhibiting social dependencies very early in their development likely receive limited attention and reportage from researchers outside the communities that originated them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the exploratory analysis of centralization in claims with early author overlap.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "ed6ec3ac-17a0-4848-ab0e-b38a4b9a16a6",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C59",
+      "claim": "Experimental variability has a negative, marginally significant effect on replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4A shows that experimental variability has a negative, marginally significant effect on replication",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is from the logistic regression analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "9cdf9e1d-f12c-4576-a9f1-ed11e9b75701",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C60",
+      "claim": "Support from multiple teams organized in decentralized communities are much more informative predictors of replication success than experimental variability.",
+      "claim_type": "EXPLICIT",
+      "source": "but support from multiple teams organized in decentralized communities are much more informative predictors of replication success.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from the comparison of effect sizes in the logistic regression analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "c261a09b-12b0-4377-8f11-59cda9b1198f",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C61",
+      "claim": "Prominent journals are responsible for only a tiny fraction of all claims.",
+      "claim_type": "EXPLICIT",
+      "source": "but prominent journals are responsible for only a tiny fraction of all claims.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distribution of journal prominence shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "f4767eba-8fee-4f33-b062-2e471a7114ae",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C62",
+      "claim": "Collective correction in science can be undermined when one or several scientists exercise disproportionate influence on research across multiple investigations of a claim.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that collective correction in science can be undermined when one or several scientists exercise disproportionate influence on research across multiple investigations of a claim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the finding that centralized communities produce less replicable claims.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "5e7b20ee-fed8-4ec0-80d3-571c2e1ac1a5",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C63",
+      "claim": "A claim studied exclusively by a centralized scientific community is unlikely to clear a clinical trial or enter medical practice.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unlikely that such a claim will clear a clinical trial or enter medical practice (see Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the low predicted probability of replication for centralized claims.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "34ce936d-8f25-4d60-bfa1-57c9ae4738d1",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C64",
+      "claim": "Research replicability is associated with the way scientific collaborations are networked, after adjusting for variability in high-throughput experiments and the methodology of published studies.",
+      "claim_type": "EXPLICIT",
+      "source": "It provides evidence that research replicability is associated with the way scientific collaborations are networked, after adjusting for variability in high-throughput experiments and the methodology of published studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the paper, supported by the multivariate logistic regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "fd0292d0-bea5-4204-8cb4-8ca45734e0a9",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C65",
+      "claim": "Centralized, overlapping communities with shared methodologies and exposure to the same prior knowledge are supported by extensive collaboration, ubiquitous communication technologies, a reward system that places a premium on productivity, and cumulative advantage processes that create central, star biomedical scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Centralized, overlapping communities with shared methodologies and exposure to the same prior knowledge are supported by extensive collaboration (Hicks and Katz, 1996; Hand, 2010), ubiquitous communication technologies, a reward system that places a premium on productivity, and cumulative advantage processes that create central, star biomedical scientists (Azoulay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature on scientific collaboration and organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "df54d769-c45b-4c87-879e-323f71500dee",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C66",
+      "claim": "Centralized communities are associated with scientific findings of lower replicability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that such communities are associated with scientific findings of lower replicability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the paper, supported by the logistic regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "ffde0c28-f388-4286-89fd-d3597aa633d9",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C67",
+      "claim": "Decentralized, sparsely connected communities explore diverse research methodologies and prior knowledge and are more likely to generate replicable findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Decentralized, sparsely connected communities explore diverse research methodologies and prior knowledge (Figure 3\u2014figure supplement 1) and are more likely to generate replicable findings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main finding of the paper, supported by the logistic regression analysis and correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "f4abf01f-ed60-4116-8622-c373ad58961e",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C68",
+      "claim": "Nissen et al. reason that even if many studies converge on the same finding, this may not increase our confidence because the same systematic biases that made the original finding false are also likely to affect subsequent findings, resulting in a canonization of 'false facts'.",
+      "claim_type": "EXPLICIT",
+      "source": "Nissen et al. reason that even if many studies converge on the same finding, this may not increase our confidence because the same systematic biases \u2013 publication bias in particular \u2013 that made the original finding false are also likely to affect subsequent findings, resulting in a canonization of 'false facts' (Nissen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the argument made by Nissen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "50b80d77-dc62-4c5e-b17f-8a832aebc92b",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C69",
+      "claim": "The analysis identifies conditions under which the argument of Nissen et al. holds, namely for research claims studied by centralized, overlapping collaborations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis identifies conditions under which such an argument holds, namely for research claims studied by centralized, overlapping collaborations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the finding that centralized communities produce less replicable claims even with multiple studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "569ceccc-e374-4086-b695-9a98b50d7e34",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C70",
+      "claim": "In the absence of social independence, replicability is low and the likelihood of a claim being revised or withdrawn is virtually non-existent as authors and methods reinforce agreement with themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of social independence, replicability is low and the likelihood of a claim being revised or withdrawn is virtually non-existent as authors and methods reinforce agreement with themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the findings on social independence and centralization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "598331d6-b26b-4133-bbf5-788b3f1e8349",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C71",
+      "claim": "Both disagreement and replication increase when teams from a decentralized or sparsely connected community provide separate confirming evidence for a claim.",
+      "claim_type": "EXPLICIT",
+      "source": "Both disagreement and replication increase when teams from a decentralized or sparsely connected community provide separate confirming evidence for a claim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the findings on decentralization and social independence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "5c29070f-fc92-493b-bfad-16e5bc263fec",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C72",
+      "claim": "The findings allay science policy concerns over a universal 'replication crisis' and identify conditions that facilitate collective convergence on replicable findings in biomedical science.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings allay science policy concerns over a universal 'replication crisis' and identify conditions \u2013 decentralized and novel collaborations \u2013 that facilitate collective convergence on replicable findings in biomedical science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the implications of the findings for science policy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "e7e33ac7-55af-44fa-95e5-df19faa39943",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C73",
+      "claim": "Certain 'big science' initiatives, such as the human genome project, involve large international consortiums that require a degree of repeated collaboration and centralization by design.",
+      "claim_type": "EXPLICIT",
+      "source": "We acknowledge that certain 'big science' initiatives (Hand, 2010), such as the human genome project (International Human Genome Sequencing Consortium, 2001), involve large international consortiums that require a degree of repeated collaboration and centralization by design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of exceptions to the general findings, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "d0b99b5f-a819-47cf-b746-1b0c3b584395",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C74",
+      "claim": "The current organization of science incentivizes repeated collaborations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also the case that the current organization of science incentivizes repeated collaborations (Guimer\u00e0 et al., 2005; Lungeanu and Contractor, 2015; Hilton and Cooke, 2015), including centralized communities revolving around star scientists (Azoulay et al., 2014) or prestigious and well-endowed institutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature on scientific collaboration.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "16b35c20-54b7-4225-b746-eb3cbe9c3b36",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C75",
+      "claim": "By reducing information and coordination costs, repeated collaborations are more productive than new ones.",
+      "claim_type": "EXPLICIT",
+      "source": "By reducing information and coordination costs, repeated collaborations are more productive than new ones (Hilton and Cooke, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hilton and Cooke, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "a590e845-6aac-42c5-b503-d37ada85bbf0",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C76",
+      "claim": "Projects that involve prior collaborators are more likely to be funded and successfully completed.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, projects that involve prior collaborators are more likely to be funded (Lungeanu et al., 2014) and successfully completed (Cummings and Kiesler, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lungeanu et al., 2014 and Cummings and Kiesler, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "00c9435a-06fd-42e2-9c07-57642145f515",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C77",
+      "claim": "Positive feedback from repeated collaborations can lead to the lock-in of rigid collaborative clusters, which produce voluminous scientific output with diminished value for the wider biomedical field.",
+      "claim_type": "EXPLICIT",
+      "source": "Such positive feedback, however, can lead to the lock-in of rigid collaborative clusters, which produce voluminous scientific output with diminished value for the wider biomedical field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the findings on centralization and productivity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "786675f9-4588-4db4-bd56-37b3f2c5dc40",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C78",
+      "claim": "Science policies supporting biomedicine should account for the trade-off between increased productivity and diminished reliability.",
+      "claim_type": "EXPLICIT",
+      "source": "Science policies supporting biomedicine should account for the trade-off between increased productivity and diminished reliability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a policy recommendation based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "bf5b7c60-c2ad-40d3-be78-98d8c21c55d5",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C79",
+      "claim": "The approach does not rely on the LINCS L1000 data being completely free from error.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that our approach does not rely on the LINCS L1000 data being completely free from error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification about the assumptions of the approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "ba030549-4dcd-48c4-afbd-83123720edde",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C80",
+      "claim": "The LINCS L1000 data are produced with methods representative of DGI research and free from social, prior knowledge and narrow methodological dependencies associated with the sequential publication of findings by communities of researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, we argue that the LINCS L1000 data are: i) produced with methods representative of DGI research; ii) free from social, prior knowledge and narrow methodological dependencies associated with the sequential publication of findings by communities of researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument about the advantages of using LINCS L1000 data for replication assessment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "dac238b1-de30-481c-bd91-ebb72c06eed1",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C81",
+      "claim": "The manuscript attempts to elucidate biases introduced by the social, cultural and methodological structure of science to noisy experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, our manuscript attempts to elucidate biases introduced by the social, cultural and methodological structure of science to noisy experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the goal of the paper.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "880468a4-0f2a-46a7-bdf8-791e782023c5",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C82",
+      "claim": "LINCS L1000 experiments must remain unfiltered by the publication system and the expectations of any particular scientific community.",
+      "claim_type": "EXPLICIT",
+      "source": "From this perspective, LINCS L1000 experiments must remain unfiltered by the publication system and the expectations of any particular scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument about the importance of using unfiltered high-throughput data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "0672677f-8e75-4021-9493-1dcd4da41281",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C83",
+      "claim": "In the current state of the biomedical literature, where most reported results are confirmatory, scalable approaches for identifying uncertain claims are in short supply.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current state of the biomedical literature, where most reported results are confirmatory, scalable approaches for identifying uncertain claims are in short supply.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in the literature that this paper addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "cf75eda0-096c-4479-84e4-2be2e02ab292",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C84",
+      "claim": "Experimental data such as the LINCS L1000 provides an informed approach to evaluate published claims.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental data such as the LINCS L1000 provides an informed approach to evaluate published claims.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the value of high-throughput data for replication assessment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "22eeec4c-85d6-4de4-a882-8fda6810aa5a",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C85",
+      "claim": "With the proliferation of high-throughput experimental platforms and improvements in cross-platform reproducibility, the approach reported here could be further refined and extended to a continuous replication system that revises scientific results in light of new experimental evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "With the proliferation of high-throughput experimental platforms and improvements in cross-platform reproducibility (Haibe-Kains et al., 2013), the approach we report here could be further refined and extended to a continuous replication system (Goodman et al., 2016) that revises scientific results in light of new experimental evidence, increasing the credibility and robustness of biomedical knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications of the approach, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "07186d76-330a-4780-9dae-709bf9446c43",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C86",
+      "claim": "The analysis represents the largest biomedical replication of its kind to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the smaller size of this subsample, our analysis represents the largest biomedical replication of its kind to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the scale of the analysis compared to prior work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "635b362c-94fc-48df-9899-87f99a6edc43",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "claim_id": "C87",
+      "claim": "The data and computer code associated with this analysis are available on the Open Science Framework at https://osf.io/xmvda/.",
+      "claim_type": "EXPLICIT",
+      "source": "The data and computer code associated with this analysis are available on the Open Science Framework at https://osf.io/xmvda/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4aa8ae04-ef99-4336-a547-e1d288dfb4a6",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 51,292 drug-gene interaction (DGI) claims from the Comparative Toxicogenomics Database (CTD) matched with LINCS L1000 high-throughput experimental data, comprising 60,159 supporting and 4,253 opposing findings from 3,363 articles. Most claims (89%) are supported by findings in only one or two papers, and the datasets were verified to be independent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C7 provide consistent descriptive statistics about the dataset composition that are directly stated and supported by Figure 1A. C40 verifies independence between literature and LINCS L1000 data through PubMed search. C87 confirms data availability. These foundational data claims are well-documented and internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "f7a7ac4b-ff1c-4664-988f-6e8675b2b677",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The literature shows 93-94% agreement on DGI claim directions, significantly higher than the 41% generalizability observed in LINCS L1000 experiments. Papers with overlapping authors show significantly higher agreement (98.9%) than independent teams (88.9%), suggesting confirmation bias influences the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 present quantitative findings with statistical support (bootstrap analysis, Figure 1\u2014figure supplement 1). C54 provides a reasonable inference about confirmation bias based on the discrepancy between literature agreement (93%) and experimental generalizability (41%). The comparison is acknowledged as not directly comparable due to different measurements, but the pattern is striking and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "4b33695b-9ad6-48ef-a93c-9037266f7369",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Claims with multiple supporting papers show substantially higher replication rates than single-paper claims. Very High support claims replicate 45.5% (95% CI: 21.8-74.2%) more than expected, while single-paper claims replicate only 19.0% (95% CI: 16.9-21.2%) more than expected. Not Supported claims replicate 28.9% less than random and show greater experimental variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C14, C16-C21 present a coherent gradient of replication success correlated with literature support, all with confidence intervals from bootstrap analysis (Figure 2E-F). C22 appropriately contextualizes findings against prior reproducibility studies. C23-C25 provide supporting context about single vs. multi-study claims. The Bayesian model for categorizing support (Figure 2A-B) is methodologically sound, and results show clear dose-response relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "11b493d5-9552-44cc-b574-e5f976d1c004",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Centralized scientific communities with overlapping authors, shared methods, and common references produce less replicable claims (OR=0.36, 95% CI: 0.27-0.48) than decentralized communities with independent teams and diverse methodologies. When modeled simultaneously, centralization and literature support account for most other predictors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C32, C66-C67 present the core finding supported by multivariate logistic regression (Figure 4A). C26 describes the subsample (n=2,493 claims). C33-C34 provide supporting evidence for mechanisms through correlation analysis and exploratory ANOVA. The statistical models control for confounders including experimental variability, and effect sizes are substantial with tight confidence intervals. The network dependency measures are well-defined using established metrics (Jaccard coefficient, Gini coefficient).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "5299742d-71b4-4873-9029-4044ef1cdd5c",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Journal prominence positively predicts replication, but prominent journals account for only a small fraction of claims. Claims with high literature support have ~45% higher replication probability when studied by decentralized vs. centralized communities. Support from decentralized teams is a stronger predictor than experimental variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by logistic regression models with interaction terms (Figure 4A-C, Figure 4\u2014figure supplements 2-3). C59-C60 appropriately compare effect sizes showing centralization/social independence dominate over experimental variability. C61 is supported by Figure 4\u2014figure supplement 4. The interaction models are statistically appropriate and reveal meaningful effect modification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "e5b45de3-f818-4089-bc96-d258fc93a6cd",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors infer that confirmation bias leads to filing away contradictory results, social dependencies discourage outside researchers from pursuing claims, and collective correction is undermined by centralized influence. They identify conditions under which multiple studies may not increase confidence in findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C58, C62-C63, C69-C71 are primarily inferences and speculations about mechanisms. While these interpretations are plausible and supported by citations to relevant literature (C55, C57), they go beyond what the data directly demonstrate. C58 is based on exploratory analysis (C34) with limited sample size. C63 extrapolates to clinical implications without direct evidence. These are reasonable interpretations but require additional empirical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "dce6f92a-fc57-4cc0-8586-bc5aa6a7521a",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors argue that LINCS L1000 data, while not error-free, provides an appropriate replication benchmark because it uses representative methods and is free from social/methodological dependencies inherent in sequential publication. This approach can identify uncertain claims at scale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 establish LINCS L1000 reproducibility and independence from the literature corpus. C79-C82 present a coherent methodological argument about why imperfect high-throughput data can still serve as a replication benchmark by avoiding systematic biases in the publication system. C83-C84 appropriately position the contribution. The logic is sound: the goal is to detect social/cultural biases in science, not to have perfect experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "3b30c919-75a8-4d34-9741-09be21cee49a",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors review prior literature on replication failures, publication bias, network effects on collective performance, and methodological diversity. They identify a gap: no comprehensive evaluation of how scientific community network structure relates to replication of published findings, especially in biomedicine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C53 accurately summarize relevant prior work with appropriate citations. C43-C44 state the hypotheses tested in the paper. C51-C53 identify the research gap. These background claims are well-supported by citations and provide appropriate context. The literature review is selective but representative of key relevant work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "92b236e2-439d-496e-b0ec-ec3203df106d",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors conclude that research replicability is associated with network structure of scientific collaborations after adjusting for experimental variability and methodology. Current science organization incentivizes centralization, creating a productivity-reliability tradeoff. The findings allay concerns about a universal replication crisis by identifying conditions facilitating convergence on replicable findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 appropriately summarizes the main empirical finding supported by multivariate models. C65 contextualizes findings in the broader science organization literature with citations. C68 and C72 draw appropriate conclusions about implications. C73-C77 acknowledge nuances and exceptions (big science, repeated collaboration benefits) with supporting citations. C78 offers a reasonable policy recommendation based on the tradeoff identified. These conclusions follow logically from the empirical results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    },
+    {
+      "id": "c08ef9e4-9c50-464a-a7ae-322180457b20",
+      "content_id": "350e48b3-1972-45bb-a9a7-6e3495f31c38",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors suggest this approach could be extended to a continuous replication system with proliferating high-throughput platforms, and claim this is the largest biomedical replication study of its kind.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is speculative about future applications, appropriately hedged with 'could be.' C86 claims this is the 'largest biomedical replication of its kind' but provides no quantitative comparison to prior replication studies to substantiate this claim. While the scale (51,292 claims) is impressive, the comparative claim requires verification against other large-scale replication efforts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:58:27.349523Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "78628aef-ffed-45f8-b1c8-9413f8e0804c",
+      "result_id": "4aa8ae04-ef99-4336-a547-e1d288dfb4a6"
+    },
+    {
+      "claim_id": "2d115bb9-e0b0-46c6-90c1-bffa82a4c9e0",
+      "result_id": "4aa8ae04-ef99-4336-a547-e1d288dfb4a6"
+    },
+    {
+      "claim_id": "17607c47-c195-4fba-be0f-667ed24bf485",
+      "result_id": "4aa8ae04-ef99-4336-a547-e1d288dfb4a6"
+    },
+    {
+      "claim_id": "b5216f29-fae0-450e-85d3-c22709b011ce",
+      "result_id": "4aa8ae04-ef99-4336-a547-e1d288dfb4a6"
+    },
+    {
+      "claim_id": "21e39b93-3544-45e5-ae32-3404e7b11b5c",
+      "result_id": "4aa8ae04-ef99-4336-a547-e1d288dfb4a6"
+    },
+    {
+      "claim_id": "635b362c-94fc-48df-9899-87f99a6edc43",
+      "result_id": "4aa8ae04-ef99-4336-a547-e1d288dfb4a6"
+    },
+    {
+      "claim_id": "d10e8c20-2c06-439c-b6dd-4b91a8d976d6",
+      "result_id": "f7a7ac4b-ff1c-4664-988f-6e8675b2b677"
+    },
+    {
+      "claim_id": "cbfe36f7-4504-4924-a7fa-fbed779fb3b7",
+      "result_id": "f7a7ac4b-ff1c-4664-988f-6e8675b2b677"
+    },
+    {
+      "claim_id": "3448e15c-f2e1-44eb-89b3-8185c1176569",
+      "result_id": "f7a7ac4b-ff1c-4664-988f-6e8675b2b677"
+    },
+    {
+      "claim_id": "b8f4f391-e473-46c0-9d0a-f83618d0dafc",
+      "result_id": "f7a7ac4b-ff1c-4664-988f-6e8675b2b677"
+    },
+    {
+      "claim_id": "d9814e4e-7685-4c28-8d27-143a92df4f0e",
+      "result_id": "f7a7ac4b-ff1c-4664-988f-6e8675b2b677"
+    },
+    {
+      "claim_id": "08623410-bb3f-46b8-bdb4-43496ac03a1b",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "fcb3e831-7e34-4971-aef5-5b497de90c43",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "8a2a823a-48f5-4b37-adb3-7dc475f6be73",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "4e861f67-6bf8-4ee8-ae32-49ac99b2d984",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "93f55d72-969a-4124-9e63-ca0a952654aa",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "f5f1c07e-d51f-4fbb-888a-b0647b3659c2",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "dfbb5988-b4d1-4a21-ab5a-410679d4ad4d",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "f59df24d-2fb2-4bce-b002-282952f27a3b",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "3eea0c7d-27a0-4035-80f7-d341b1ee251d",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "64028709-aac0-4064-8bca-f3522c21c551",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "e27673d3-be93-4e1f-b1b4-764e164e8420",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "53708f43-f3b7-4fea-8182-f3b5ab09021e",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "f0e2a79e-9a6e-46cf-a483-dea94ecf5010",
+      "result_id": "4b33695b-9ad6-48ef-a93c-9037266f7369"
+    },
+    {
+      "claim_id": "833139dd-abd6-44a0-8510-d9f87ad4f77a",
+      "result_id": "11b493d5-9552-44cc-b574-e5f976d1c004"
+    },
+    {
+      "claim_id": "dfb12596-e1b3-4b6d-9d3d-f0d0db25ed7a",
+      "result_id": "11b493d5-9552-44cc-b574-e5f976d1c004"
+    },
+    {
+      "claim_id": "1ca68ee4-7235-4044-826a-1168ad9c746e",
+      "result_id": "11b493d5-9552-44cc-b574-e5f976d1c004"
+    },
+    {
+      "claim_id": "46718d87-616a-458b-9ea2-24e65cfc6f19",
+      "result_id": "11b493d5-9552-44cc-b574-e5f976d1c004"
+    },
+    {
+      "claim_id": "94c74ed8-1d38-4626-9dc5-98ba842afeaf",
+      "result_id": "11b493d5-9552-44cc-b574-e5f976d1c004"
+    },
+    {
+      "claim_id": "df54d769-c45b-4c87-879e-323f71500dee",
+      "result_id": "11b493d5-9552-44cc-b574-e5f976d1c004"
+    },
+    {
+      "claim_id": "ffde0c28-f388-4286-89fd-d3597aa633d9",
+      "result_id": "11b493d5-9552-44cc-b574-e5f976d1c004"
+    },
+    {
+      "claim_id": "0ac16651-8ad1-4bfd-97a4-4050f78531e0",
+      "result_id": "5299742d-71b4-4873-9029-4044ef1cdd5c"
+    },
+    {
+      "claim_id": "ab9791c0-ab7f-44cd-9e7b-619b2e29b01d",
+      "result_id": "5299742d-71b4-4873-9029-4044ef1cdd5c"
+    },
+    {
+      "claim_id": "ee768668-86c0-4c97-a873-53b84eff0757",
+      "result_id": "5299742d-71b4-4873-9029-4044ef1cdd5c"
+    },
+    {
+      "claim_id": "53f98f26-6340-448e-a945-80cd7ffc0c46",
+      "result_id": "5299742d-71b4-4873-9029-4044ef1cdd5c"
+    },
+    {
+      "claim_id": "ed6ec3ac-17a0-4848-ab0e-b38a4b9a16a6",
+      "result_id": "5299742d-71b4-4873-9029-4044ef1cdd5c"
+    },
+    {
+      "claim_id": "9cdf9e1d-f12c-4576-a9f1-ed11e9b75701",
+      "result_id": "5299742d-71b4-4873-9029-4044ef1cdd5c"
+    },
+    {
+      "claim_id": "c261a09b-12b0-4377-8f11-59cda9b1198f",
+      "result_id": "5299742d-71b4-4873-9029-4044ef1cdd5c"
+    },
+    {
+      "claim_id": "bbe84e3f-6251-49b5-9a79-f1e4d11a5d28",
+      "result_id": "e5b45de3-f818-4089-bc96-d258fc93a6cd"
+    },
+    {
+      "claim_id": "050db4cc-0fa1-4f13-a45b-35a3d8bd774d",
+      "result_id": "e5b45de3-f818-4089-bc96-d258fc93a6cd"
+    },
+    {
+      "claim_id": "44f15fb8-49d5-4ae3-ad2a-da4eb75422f3",
+      "result_id": "e5b45de3-f818-4089-bc96-d258fc93a6cd"
+    },
+    {
+      "claim_id": "8c8d97db-d0df-4901-a1df-6b72fea9d164",
+      "result_id": "e5b45de3-f818-4089-bc96-d258fc93a6cd"
+    },
+    {
+      "claim_id": "f4767eba-8fee-4f33-b062-2e471a7114ae",
+      "result_id": "e5b45de3-f818-4089-bc96-d258fc93a6cd"
+    },
+    {
+      "claim_id": "5e7b20ee-fed8-4ec0-80d3-571c2e1ac1a5",
+      "result_id": "e5b45de3-f818-4089-bc96-d258fc93a6cd"
+    },
+    {
+      "claim_id": "50b80d77-dc62-4c5e-b17f-8a832aebc92b",
+      "result_id": "e5b45de3-f818-4089-bc96-d258fc93a6cd"
+    },
+    {
+      "claim_id": "569ceccc-e374-4086-b695-9a98b50d7e34",
+      "result_id": "e5b45de3-f818-4089-bc96-d258fc93a6cd"
+    },
+    {
+      "claim_id": "598331d6-b26b-4133-bbf5-788b3f1e8349",
+      "result_id": "e5b45de3-f818-4089-bc96-d258fc93a6cd"
+    },
+    {
+      "claim_id": "42b2cadb-a85b-4ad4-a13b-b277693ca852",
+      "result_id": "dce6f92a-fc57-4cc0-8586-bc5aa6a7521a"
+    },
+    {
+      "claim_id": "bf5b7c60-c2ad-40d3-be78-98d8c21c55d5",
+      "result_id": "dce6f92a-fc57-4cc0-8586-bc5aa6a7521a"
+    },
+    {
+      "claim_id": "ba030549-4dcd-48c4-afbd-83123720edde",
+      "result_id": "dce6f92a-fc57-4cc0-8586-bc5aa6a7521a"
+    },
+    {
+      "claim_id": "dac238b1-de30-481c-bd91-ebb72c06eed1",
+      "result_id": "dce6f92a-fc57-4cc0-8586-bc5aa6a7521a"
+    },
+    {
+      "claim_id": "880468a4-0f2a-46a7-bdf8-791e782023c5",
+      "result_id": "dce6f92a-fc57-4cc0-8586-bc5aa6a7521a"
+    },
+    {
+      "claim_id": "0672677f-8e75-4021-9493-1dcd4da41281",
+      "result_id": "dce6f92a-fc57-4cc0-8586-bc5aa6a7521a"
+    },
+    {
+      "claim_id": "cf75eda0-096c-4479-84e4-2be2e02ab292",
+      "result_id": "dce6f92a-fc57-4cc0-8586-bc5aa6a7521a"
+    },
+    {
+      "claim_id": "9576446f-6619-46fc-9afd-774725b4c38a",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "19abbf51-f85a-47d0-a542-8f3fbed9a2db",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "431662ce-32d6-4103-becd-8a3d19635600",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "5718d656-0026-4d93-8076-8c9f3a290dc3",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "f6721dbe-c8b1-4980-a663-0cf993f90511",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "6e6ac2e7-273c-48ed-bff7-7515226de659",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "f4ace5dc-fa3e-4bee-a4ee-47c10bbd2687",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "54e3efed-81d7-48a8-b99e-47adf7c2fc1b",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "ac8fd10b-71e2-4984-8a21-7a2b1b0f29d4",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "70fc9b73-b794-4814-b089-0649c5974d7e",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "9998a9e7-3c4c-46d3-b9f5-2a5ef45898bb",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "d5dc424a-60e3-47fc-8e91-2efa40bbe4ad",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "c22399e3-4c4d-4403-aeef-0d0aef75c533",
+      "result_id": "3b30c919-75a8-4d34-9741-09be21cee49a"
+    },
+    {
+      "claim_id": "34ce936d-8f25-4d60-bfa1-57c9ae4738d1",
+      "result_id": "92b236e2-439d-496e-b0ec-ec3203df106d"
+    },
+    {
+      "claim_id": "fd0292d0-bea5-4204-8cb4-8ca45734e0a9",
+      "result_id": "92b236e2-439d-496e-b0ec-ec3203df106d"
+    },
+    {
+      "claim_id": "f4abf01f-ed60-4116-8622-c373ad58961e",
+      "result_id": "92b236e2-439d-496e-b0ec-ec3203df106d"
+    },
+    {
+      "claim_id": "5c29070f-fc92-493b-bfad-16e5bc263fec",
+      "result_id": "92b236e2-439d-496e-b0ec-ec3203df106d"
+    },
+    {
+      "claim_id": "e7e33ac7-55af-44fa-95e5-df19faa39943",
+      "result_id": "92b236e2-439d-496e-b0ec-ec3203df106d"
+    },
+    {
+      "claim_id": "d0b99b5f-a819-47cf-b746-1b0c3b584395",
+      "result_id": "92b236e2-439d-496e-b0ec-ec3203df106d"
+    },
+    {
+      "claim_id": "16b35c20-54b7-4225-b746-eb3cbe9c3b36",
+      "result_id": "92b236e2-439d-496e-b0ec-ec3203df106d"
+    },
+    {
+      "claim_id": "a590e845-6aac-42c5-b503-d37ada85bbf0",
+      "result_id": "92b236e2-439d-496e-b0ec-ec3203df106d"
+    },
+    {
+      "claim_id": "00c9435a-06fd-42e2-9c07-57642145f515",
+      "result_id": "92b236e2-439d-496e-b0ec-ec3203df106d"
+    },
+    {
+      "claim_id": "786675f9-4588-4db4-bd56-37b3f2c5dc40",
+      "result_id": "92b236e2-439d-496e-b0ec-ec3203df106d"
+    },
+    {
+      "claim_id": "22eeec4c-85d6-4de4-a882-8fda6810aa5a",
+      "result_id": "c08ef9e4-9c50-464a-a7ae-322180457b20"
+    },
+    {
+      "claim_id": "07186d76-330a-4780-9dae-709bf9446c43",
+      "result_id": "c08ef9e4-9c50-464a-a7ae-322180457b20"
+    }
+  ],
+  "comparisons": []
+}

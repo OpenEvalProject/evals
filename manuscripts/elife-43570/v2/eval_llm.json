@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C8",
+      "C87",
+      "C88"
+    ],
+    "result": "Guy1 transgenic lines exhibit complete and stable female-specific lethality across multiple generations. Two independent transgenic lines (nGuy1_2 and bGuy1tC) produced zero transgenic females among 9,615 screened progeny over 77 cumulative generations, demonstrating 100% penetrance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39, C8, C87-C88 provide strong convergent evidence from two independent transgenic lines showing zero transgenic females across extensive screening (9,615 progeny, 77 generations). The data in Table 1 directly supports complete penetrance, and the use of two independent lines with different promoters strengthens the conclusion about stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C86"
+    ],
+    "result": "Transgenic females exhibit delayed hatching and early larval lethality. Most transgenic females die at the embryonic stage or during/shortly after hatching, with a small percentage (~10% of expected) hatching at 58 hr post-oviposition (delayed compared to 42 hr for wild-type) and dying within 24 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 and C86 are supported by systematic monitoring data in Table 2 showing temporal patterns of hatching and death. The observation that only ~10% of expected transgenic females hatch (C43) and these hatch late (C41) with rapid death (C42) provides a clear developmental timeline for the lethal phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "Guy1 increases X chromosome gene expression specifically in transgenic females. RNA-Seq analysis from two independent transgenic lines shows significantly elevated median X-linked gene expression compared to autosomes in transgenic females (53.6 vs. 36.6, p=2.2e-16), while wild-type females show no such difference (35.4 vs. 36.9, p=0.31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C46-C48, C49, and C51 are strongly supported by RNA-Seq data from two independent experiments using different transgenic lines. The statistical significance is robust (p=2.2e-16), and the effect is consistent across all four biological replicates (Table 3) and validated in an independent experiment (C49, C51). The specificity to transgenic females strengthens the causal link to Guy1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "Guy1 upregulates approximately 40% of X chromosome genes in a chromosome-wide manner. DESeq2 analysis identified 382 commonly upregulated X-linked genes across two independent experiments, representing ~40% of the 996 X chromosome genes, with a strong bias toward upregulation (580 and 475 upregulated vs. 27 and 12 downregulated genes, p=2.2e-16 for both experiments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C52-C54, C57, C59-C60 are well-supported by DESeq2 differential expression analysis showing consistent upregulation across two independent experiments. The dramatic bias toward upregulation (ratio ~68 and ~29 times greater for X vs. autosomes, C54) and chromosome-wide distribution (Figure 4, C60) provide strong evidence for a global regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C55",
+      "C65",
+      "C66"
+    ],
+    "result": "Guy1 does not alter X chromosome expression in males. Transgenic males with an extra copy of Guy1 show no significant difference in median X/autosome expression ratio compared to wild-type males, and no observable phenotype, suggesting the dosage compensation mechanism is not dose-responsive to Guy1 copy number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C55, C65-C66 are supported by RNA-Seq data from male samples (Figure 1\u2014figure supplement 2) and DESeq2 analysis showing no bias toward X-linked gene upregulation in males (C55). The lack of phenotype in transgenic males (C65) combined with normal X/A ratios supports the inference about dose-responsiveness (C66), though this interpretation is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Guy1 may slightly downregulate X-linked genes in transgenic males. The ratio of upregulated to downregulated X-linked genes in transgenic vs. wild-type males is 0.69, suggesting preferential downregulation (p=0.0217).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is based on a statistically significant but modest effect (p=0.0217) with a ratio of 0.69. The biological significance is unclear, the effect size is small, and the authors themselves present this tentatively with speculative language. Additional validation would be needed to confirm this is a real biological effect rather than a statistical artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The 382 commonly upregulated X-linked genes encompass a broad functional range according to GO analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by GO enrichment analysis shown in Figure 3, which demonstrates diverse functional categories including biological regulation, cellular components, and molecular functions. The breadth of functional categories supports the claim of broad functional range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C33",
+      "C61",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Guy1 regulates dosage compensation in An. stephensi by upregulating X-linked genes, and this upregulation in females (which already have two X chromosomes) is the mechanism underlying female-specific lethality. Guy1 acts as an initial regulator of dosage compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C33, C61, C90-C92 represent the central mechanistic conclusion of the paper. The inference is well-supported by convergent evidence: (1) chromosome-wide X upregulation specifically in transgenic females (C4-C7), (2) complete female lethality (C8), (3) no effect in males (C50), and (4) consistency with dosage compensation mechanisms in other insects (C25-C28). The causal link between X upregulation and lethality is strongly supported though not definitively proven without rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "This is the first demonstration in a mosquito species that a primary embryonic signal expressed from the Y chromosome regulates dosage compensation by upregulating X-linked genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by the experimental data (C4-C7, C90-C91) combined with knowledge of the literature (C29-C32). While dosage compensation was previously demonstrated in Anopheles species (C30-C31), this is the first direct demonstration of a Y-linked factor regulating this process in mosquitoes, making the novelty claim appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C77"
+    ],
+    "result": "Guy1 likely affects the epigenetic system on a chromosome-wide basis through chromatin-remodeling mechanisms similar to those in Drosophila. A dosage compensation complex must use similar machinery to alter chromatin architecture and promote transcriptional upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C77 are reasonable inferences based on: (1) chromosome-wide upregulation pattern (C7, C60), (2) established knowledge that dosage compensation involves chromatin modification (C68), and (3) parallels with Drosophila (C15-C24). However, no direct chromatin modification data is presented, making this an inference rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "BLAST analysis of An. stephensi against D. melanogaster MSL complex proteins shows MOF and MLE homologs have highest conservation, MSL-3 is highly divergent, and no significant matches exist for MSL-1 or MSL-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by BLAST analysis performed by the authors against An. stephensi databases. The methods describe this analysis, and the results are consistent with prior reports for other mosquito species (C70-C72). However, specific BLAST scores and alignment details are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C32"
+    ],
+    "result": "Guy1 is a Y-linked primary signal and strong candidate for a male-determining factor that confers female-specific lethality in An. stephensi, as previously demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C32 are supported by citations to prior work (Criscione et al., 2016; Krzywinska et al., 2016). These represent established background from previous studies and are appropriately cited. The current manuscript builds on and mechanistically explains these prior observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C82"
+    ],
+    "result": "Background on sex determination and dosage compensation mechanisms in various organisms, including Drosophila, C. elegans, B. mori, and Anopheles mosquitoes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C31, C67-C68, C70-C72, and C82 represent established scientific knowledge appropriately cited from the literature. These provide necessary context for interpreting the current findings and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C76"
+    ],
+    "result": "Future experiments are needed to determine whether Guy1 suppression in males decreases X-linked gene expression, though technical challenges exist due to Guy1's restricted early embryonic expression. The role of MSL homologs in mosquito dosage compensation also remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C76 appropriately identify important follow-up experiments and acknowledge current limitations. These are reasonable assessments of what remains unknown and represent appropriate scientific caution about the completeness of the mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Guy1 may function as a DNA-binding protein capable of protein-protein interactions, and likely serves as an initial signal requiring downstream effectors to sustain X upregulation, given its restricted early embryonic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C81 are largely speculative, based on sequence analysis from prior work (C78-C79) and inference from expression timing (C81-C82). While the speculation is reasonable and appropriately qualified with tentative language, no direct functional data on Guy1 protein activity or binding is presented. These represent plausible hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Components of dosage compensation may be explored for novel mosquito control strategies, and the Guy1 transgene may be suitable for such applications, potentially enhanced by CRISPR-Cas9 gene drive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C83-C85 are speculative about future applications but are reasonable given the demonstrated stability and penetrance of the Guy1 phenotype (C8, C39). The speculation is appropriately qualified and supported by citations to prior proposals and demonstrations in related species (C85). These represent potential applications rather than demonstrated utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Mis-regulation of dosage compensation may be responsible for the observed transgenic female lethality, based on parallels with other insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 represents the initial hypothesis that motivated the study. It is supported by knowledge from other insects (C25-C28) and prior work (Criscione et al., 2016), and is subsequently validated by the experimental results (C33, C90-C92). This claim appropriately frames the rationale for the study.",
+    "result_type": "MINOR"
+  }
+]

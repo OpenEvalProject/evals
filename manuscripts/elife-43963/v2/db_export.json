@@ -1,0 +1,1958 @@
+{
+  "submission": {
+    "id": "e0f1ef29-0b4a-4e21-bc4c-0b395153058e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:15:57.454779Z",
+    "updated_at": "2025-12-02T10:15:57.454779Z"
+  },
+  "content": [
+    {
+      "id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "submission_id": "e0f1ef29-0b4a-4e21-bc4c-0b395153058e",
+      "content_type": "manuscript",
+      "content_text": "# The ion channel ppk301 controls freshwater egg-laying in the mosquito Aedes aegypti\n\n## Authors\n\n- Benjamin J Matthews<sup>1</sup> ([ORCID: 0000-0002-8697-699X](https://orcid.org/0000-0002-8697-699X))\n- Meg A Younger<sup>1</sup> ([ORCID: 0000-0003-4967-7939](https://orcid.org/0000-0003-4967-7939))\n- Leslie B Vosshall<sup>1</sup> ([ORCID: 0000-0002-6060-8099](https://orcid.org/0000-0002-6060-8099)) \u2020\n\n### Affiliations\n\n1. Laboratory of Neurogenetics and Behavior The Rockefeller University New York United States\n2. Howard Hughes Medical Institute New York United States\n3. Kavli Neural Systems Institute New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nFemale Aedes aegypti mosquitoes are deadly vectors of arboviral pathogens and breed in containers of freshwater associated with human habitation. Because high salinity is lethal to offspring, correctly evaluating water purity is a crucial parenting decision. We found that the DEG/ENaC channel ppk301 and sensory neurons expressing ppk301 control egg-laying initiation and choice in Ae. aegypti. Using calcium imaging, we found that ppk301-expressing cells show ppk301-dependent responses to water but, unexpectedly, also respond to salt in a ppk301-independent fashion. This suggests that ppk301 is instructive for egg-laying at low-salt concentrations, but that a ppk301-independent pathway is responsible for inhibiting egg-laying at high-salt concentrations. Water is a key resource for insect survival and understanding how mosquitoes interact with water to control different behaviors is an opportunity to study the evolution of chemosensory systems.\n\n## Introduction\n\nA female Ae. aegypti mosquito must take a blood-meal to develop a batch of eggs. Many strains of Ae. aegypti are anthropophilic, meaning that they target humans as their preferred blood source (Ponlawat and Harrington, 2005; McBride et al., 2014). Once proteins and other nutrients in the blood have been converted into eggs, a female mosquito must find a suitable body of freshwater to lay these eggs (Day, 2016). Larval and pupal stages of Ae. aegypti are aquatic and thus the choice of egg-laying site is a primary determinant of offspring survival (Christophers, 1960; Powell and Tabachnick, 2013). In the field, Ae. aegypti often lay eggs in small containers of freshwater, such as drinking water storage containers, discarded tires, clogged gutters, and other by-products of human settlement, likely contributing to their pernicious ability to adapt and colonize human settlements across the globe (Kraemer et al., 2015).\n\nThe act of choosing an egg-laying site in many insects, including Ae. aegypti, is a deliberate and evaluative behavior. A female Ae. aegypti mosquito with a fully developed batch of eggs will use elevated humidity and bacterial volatiles to locate water at a distance (Bentley and Day, 1989; Barbosa et al., 2010). Once in close-range, a mosquito contacts water to evaluate its suitability for egg-laying by sensing a wide variety of cues that include salinity, food, bitter toxins, and animal-derived chemical signals indicating the density of conspecific larvae and pupae or the presence of predators (Hudson, 1956; Benzon and Apperson, 1988; Bentley and Day, 1989; Zahiri and Rau, 1998; Pamplona et al., 2009; Afify and Galizia, 2015; Day, 2016; Zuharah et al., 2016). The physiological mechanisms by which a mosquito senses the presence of water and evaluates its composition to safely nurture her offspring remain unknown.\n\nHere, we show that the DEG/ENaC channel ppk301 is required for mosquitoes to exploit freshwater egg-laying substrates. When ppk301 mutant females contact water, they do not lay eggs as readily as wild-type animals and are more likely to make aberrant decisions between freshwater and saltwater at concentrations that impair offspring survival. We developed a CRISPR-Cas9-based genetic knock-in strategy to build genetic tools for labeling and imaging molecularly\u00a0defined populations of neurons and generated a reporter line expressing the QF2 transcriptional activator from the endogenous ppk301 locus. We found that ppk301 is expressed in sensory neurons in legs and proboscis, appendages that directly contact water, and that sensory afferents from these ppk301-expressing neurons project to central taste centers. Using in vivo calcium imaging with the genetically\u00a0encoded calcium sensor GCaMP6s at the axonal terminals of ppk301-expressing neurons in the ventral nerve cord, we found that ppk301\u00a0neurons respond to freshwater and that this response was almost entirely abolished in ppk301 mutant animals. Surprisingly, these projections were also activated by salt in both wild-type and ppk301 animals. We propose that ppk301 drives egg-laying at low-salt concentrations and that egg-laying is inhibited by a ppk301-independent pathway at high-salt concentrations.\n\n## Results\n\nWe observed Ae. aegypti egg-laying behavior in the laboratory to understand the range of sensory information that is integrated to guide the final decision to lay an egg. A female Ae. aegypti mosquito with a fully developed batch of eggs will first evaluate a potential egg-laying site by physical contact with some combination of sensory tissues that include all three pairs of legs and her proboscis.\u00a0If\u00a0a site is deemed suitable, she will lay eggs singly on the moist substrate above the waterline (Hudson, 1956) (Figure 1A, Video 1). When we used a mesh barrier to block access to liquid water, females did not lay eggs, even though they had free access to the moist filter paper substrate (Figure 1B,C). Together, this suggests that direct contact with liquid water is necessary to stimulate egg-laying in Ae. aegypti and we set out to probe the molecular and cellular basis of this water-sensation to better understand this critical mosquito behavior.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43963/elife-43963-fig1-v2.jpg)\n\n**Figure 1.:** (A) Still video frames of Ae. aegypti female with newly\u00a0laid eggs (yellow triangles) and contact between sensory appendages and liquid water (red circles) indicated. Right panels are magnification of animal in left panels. (B) Egg-papers (black circles) from 10 females allowed to lay eggs for 18 hr with access to water (left) or access blocked by metal mesh (right). (C) Eggs laid after 18 hr under conditions in b. n\u00a0=\u00a05; each dot represents data from a group of 10 females. (D) Egg-laying preference of single females between water and increasing concentrations of artificial seawater. Mean\u00a0\u00b195% confidence interval. n\u00a0=\u00a04\u201329/concentration. (E) Four-parameter log-logistic curve fit to egg-laying preference in D (blue, n\u00a0=\u00a04\u201329/concentration) or offspring surviving (red, n\u00a0=\u00a05/ concentration) in indicated concentrations of artificial seawater. Mean of the data is presented along with 95% confidence intervals of the model fit. (F) Eggs laid by single females given access to liquid of the indicated NaCl concentration. Mean\u00a0\u00b195% confidence interval. n\u00a0=\u00a014\u201328/concentration. (G) Cumulative survival of larvae in indicated concentration of NaCl. Mean\u00a0\u00b195% confidence interval. n\u00a0=\u00a09 groups/concentration. In a given panel, data labeled with different letters are significantly different from each other; p<0.05, two-way paired t-test (C), ANOVA followed by Tukey\u2019s HSD (D, F) or ANOVA followed by Tukey\u2019s HSD of survival at day 8 (G).\n\n![Video 1.](https://cdn.elifesciences.org/articles/43963/elife-43963-video1.mp4.jpg)\n\n**Video 1.:** This video shows a single female mosquito, 4 days after a blood-meal, in a small chamber with deionized water and a vertically\u00a0oriented piece of black paper partially submerged in the water. The mosquito directly contacts the liquid with sensory appendages including all legs and proboscis, followed by egg-laying on the moist black paper substrate above the water line. Freshly laid Ae. aegypti eggs are initially un-melanized and therefore appear white in this video and in Figure 1A.\n\nAs a consequence of their global spread, Ae. aegypti are faced with diverse habitats with a wide variety of potential egg-laying sites. For example, they can be found in abundance in a number of coastal regions rich with standing saltwater (Ramasamy et al., 2014; de Brito Arduino et al., 2015). To mimic the choice between freshwater and seawater in the lab, we developed a two-choice assay in which individual blood-fed females were placed in a container with a divided Petri dish filled with deionized water on one side and varying concentrations of a chemically\u00a0defined artificial seawater solution (Kester et al., 1967) on the other (Figure 1D, Supplementary file 1). Mosquitoes showed no significant preference between deionized water and dilute seawater up to 10%, with individual mosquitoes either picking a solution at random or distributing their eggs between both solutions (Figure 1D). However, they showed a strong dose-dependent aversion to higher concentrations of seawater, with an IC50 of 12.25% seawater (Figure 1D,E). Females showed near-complete aversion to 25\u2013100% seawater (Figure 1D,E). These choices have consequences for the offspring. When we measured survival of offspring reared in varying concentrations of seawater, we found dose-dependent lethality (LD50\u00a0=\u00a025.23%) (Figure 1E). To simplify the stimulus, we used sodium chloride (NaCl), the predominant salt in artificial seawater, in all subsequent experiments. Females showed dose-dependent inhibition of egg-laying with increasing concentrations of NaCl (Figure 1F) when they were only given access to a single concentration, suggesting that the preference for freshwater may be driven in part by an aversion to laying eggs in saltwater. Similar to artificial seawater, NaCl produced a dose-dependent decrease in offspring survival (Figure 1G). This demonstrates that the female mosquito\u2019s choice of freshwater or saltwater correlates with the survival of her offspring, making this an essential decision for the propagation and fitness of the species.\n\nIn a search for genes that control Ae. aegypti freshwater egg-laying, we reasoned that animals carrying a mutation in an egg-laying preference gene would fail to lay eggs in freshwater, inappropriately lay in saltwater, or both. pickpocket (ppk) genes are members of the Degenerin/ENaC channel superfamily and encode cation channel subunits that function as putative mechanoreceptors and chemoreceptors for a wide array of stimuli including pheromones, liquid osmolality, and salt (Adams et al., 1998; Chalfie, 2009; Cameron et al., 2010; Chen et al., 2010; Zelle et al., 2013). Through manual curation of geneset annotations, we predict that the Ae. aegypti genome (Matthews et al., 2018) contains 31 ppk genes. These are unevenly distributed across its three chromosomes. Whereas chromosome 1 has only three ppk genes, chromosome 3 has 22, including three clusters of 3\u20137 ppk genes (Figure 2A). The predicted protein products of many ppk genes have clear 1-to-1 orthologues in Drosophila melanogaster and the malaria mosquito Anopheles gambiae, while others are in species-specific expansions (Figure 2B). Examination of tissue-specific transcript abundance using previously published RNA-seq data (Matthews et al., 2016; Matthews et al., 2018) reveals a broad range of expression patterns in adult tissues, including in legs, proboscis, and other sensory tissues (Figure 2C). In a previous study (Kistler et al., 2015), we generated CRISPR-Cas9 mutations in four ppk genes (marked with arrowheads in Figure 2A,B) that we considered as candidates for controlling egg-laying.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43963/elife-43963-fig2-v2.jpg)\n\n**Figure 2.:** (A) Genomic organization of ppk ion channels on the three chromosomes of Ae. aegypti. (B) Phylogenetic tree of ppk ion channel proteins from Ae. aegypti, Anopheles gambiae, and Drosophila melanogaster. Scale bar\u00a0=\u00a01.0 substitution/site. (C) Gene expression of ppk ion channels across tissues. Data originally generated in a survey of gene expression across neural tissues (Matthews et al., 2016) were aligned to the AaegL5 genome (Matthews et al., 2018). Values represent mean of multiple replicates for each tissue. Genes studied in this paper are marked with arrowheads in A-C.\n\nWe first measured the ability of these mutant strains to blood-feed and found that all four were attracted to and engorged fully on the blood of a live human host (Figure 3A). To test egg-laying behavior, we introduced single blood-fed females of each strain into egg-laying vials containing a small amount of water and a filter paper as an egg-laying substrate. One mutant, ppk301, an orthologue of the Drosophila melanogaster ppk28 low-osmolality sensor (Cameron et al., 2010; Chen et al., 2010), showed a defect in egg-laying. Fewer than 40% of ppk301 mutants laid more than 10 eggs (Figure 3B). To exclude the possibility that this defect was due to an inability to convert blood into developed embryos, we counted the number of mature eggs in ovaries and confirmed that there was no difference between wild-type and ppk301 mutants (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43963/elife-43963-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Females of indicated genotype who blood-fed (A) or laid\u00a0>10 eggs given 18 hr to lay (B). n\u00a0=\u00a06\u201312 groups/genotype. (C) Embryos/ovary 72 hr post-blood-meal. n\u00a0=\u00a08\u201316/genotype. (D\u2013F) Eggs laid by single females of the indicated genotype in the indicated NaCl concentration. Only females laying\u00a0>10 eggs are presented. In D, lines connect data from individual animals (dots). Median (points)\u00a0\u00b1\u00a095% confidence interval (bars). n\u00a0=\u00a065\u2013314 animals/genotype (D) or n\u00a0=\u00a03\u2013314 animals/genotype (E) per concentration. In F, proportion of animals are binned into three behavioral groups by eggs laid on each substrate. (G\u2013I) Eggs laid in 0 mOsm/kg NaCl by single females of the indicated genotype. n\u00a0=\u00a030 females/genotype. Blue outline indicates days on which new eggs were laid and histograms indicate mean new eggs (per female). (J) Summary of data in G-I. Mean (line)\u00a0\u00b195% confidence interval (shaded bars). In B, data labeled with different letters are significantly different from each other p<0.05, in D,F * indicate difference from wild-type p<0.05 (D) p<0.01 (F); ns\u00a0=\u00a0not significant, ANOVA followed by Tukey\u2019s HSD (A, B, E, H), unpaired t-test (C), and chi-squared test corrected for FDR (F). Boxplots in A-C indicate median and 1st and 3rd quartiles, whiskers extend to 1.5x interquartile range.\n\nTo investigate freshwater egg-laying preference in the ppk mutants, we introduced single blood-fed female mosquitoes into individual chambers containing two Petri dishes, one filled with freshwater (0 mOsm/kg NaCl) and the other with 200 mOsm/kg NaCl. Even when ppk301 mutant animals laid eggs, they laid fewer eggs than wild-type on water and more eggs than wild-type on 200 mOsm/kg NaCl (Figure 3D). We assayed these four ppk mutant strains across a range of NaCl concentrations and found a significant reduction in aversion to salt solution only in the ppk301 mutant, as measured by the proportion of animals laying eggs primarily on salt solution (Figure 3D\u2013F). Together, these data support the conclusion that mutations in ppk301 disrupt freshwater egg-laying in two distinct ways: by dramatically reducing the drive to lay eggs in suitable, low-salt, substrates and reducing the aversion to concentrations of NaCl that are lethal to their offspring.\n\nIf ppk301 mutant animals fail to sense water, which normally triggers mosquitoes to lay an entire clutch of eggs in a short timespan, we hypothesized that these mutants would show a delay in onset and a reduced egg-laying rate when housed in close proximity to water for many days. To ask if ppk301 mutant animals will lay eggs on water given sufficient time, we introduced individual blood-fed females into egg-laying vials containing water and monitored the number of eggs laid per female per day over 7 days. While the vast majority of wild-type and ppk301 heterozygous animals laid all their eggs within the first 2 days of being introduced into egg-laying vials, ppk301 mutant animals did not. Instead, the mutants showed increased variability in the time of egg-laying initiation and a tendency to spread egg-laying out over many days (Figure 3G\u2013J). This slow, sustained, and variable egg-laying behavior on freshwater is consistent with a defect in sensing the water that triggers egg-laying.\n\nIf ppk301 directly senses the osmolality or salinity of liquid, we would expect it to be expressed in the sensory appendages that contact water. At the inception of this project, genetic tools for labeling, monitoring, and manipulating neurons in Ae. aegypti did not exist. To address this gap, we developed new genetic tools in the mosquito to label all ppk301-expressing neurons and to image neuronal activity at sensory neuron terminals using the genetically\u00a0encoded calcium sensor GCaMP6s (Chen et al., 2013). We adapted an approach in which a T2A \u2018ribosomal skipping\u2019 peptide is used to express multiple independent protein products from a single RNA transcript (Diao and White, 2012; Daniels et al., 2014). We first tested the efficiency of T2A in Ae. aegypti by generating a transgene containing a membrane-targeted mCD8:GFP fusion protein and a nuclear-targeted dsRed:NLS fusion protein separated by T2A and driven from the Ae. aegypti polyubiquitin promoter (Anderson et al., 2010) (Figure 4A). Confocal microscopy revealed complete subcellular separation of the two fluorophores in individual larval body-wall cells (Figure 4A). This demonstrates that T2A functions efficiently to prevent peptide bond formation in Ae. aegypti and can be used as a tool to independently express multiple gene products from a single locus.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43963/elife-43963-fig4-v2.jpg)\n\n**Figure 4.:** (A) Top, construct used to test the efficacy of T2A in Ae. aegypti. Bottom, confocal images of three Ae. aegypti body wall cells expressing both mCD8:GFP (green) and dsRed:NLS (red). (B) Diagram of coding region of ppk301 locus with exons (gray boxes), introns (connecting lines), and CRISPR-Cas9 gRNA site used to insert T2A (blue) and QF2 (orange). (C) Map of 15x-QUAS-dTomato-T2A-GCaMP6s transgene. (D) Female mosquito laying an egg on a moist substrate, highlighting proboscis and tarsal appendages that contact water (red boxes). Photo: Alex Wild. (E, F) Confocal image dTomato expression in ppk301>dTomato-T2A-GCaMP6s proboscis (E) and tarsi (F) with transmitted light overlay. (G) Cartoon of mosquito adult neural tissues. (H) 3D-reconstruction of female Ae. aegypti brain. Different regions of the brain are identified by Bruchpilot (Brp) immunostaining and homology to other insects. AMMC\u00a0=\u00a0Antennal Mechanosensory and Motor Center, SEZ\u00a0=\u00a0subesophageal zone. (I) Map of 15x-QUAS-mCD8:GFP transgene (J, K) Expression of ppk301>mCD8:GFP in female brain (J) and ventral nerve cord (K) Scale bars: 50 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43963/elife-43963-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Expression of ppk301>mCD8:GFP in males and controls for QF2/QUAS expression. (A) Male Ae. aegypti mosquito. Photo: Alex Wild. (B, C) Expression of ppk301>CD8:GFP in male brain (B) or ventral nerve cord (C). (D\u2013G) Female brain (D) or ventral nerve cord (E) and male brain (F) or ventral nerve cord (G) in driver-only ppk301-QF2 control animals. (H\u2013K) Female brain (H) or ventral nerve cord (I) and male brain (J) or ventral nerve cord (K) in responder-only 15x-QUAS-mCD8:GFP control animals. In all panels, Brp is in magenta and mCD8:GFP in green. Scale bars: 50 \u00b5m.\n\nTo build a flexible system for expressing a diverse array of effector transgenes, we employed the Q-binary expression system for transgene amplification (Potter et al., 2010), which has been successfully implemented in An. gambiae malaria mosquitoes (Riabinina et al., 2016; Afify et al., 2019). We used CRISPR-Cas9 with the same guide RNA used to generate the ppk301 mutant to introduce an in-frame T2A sequence into the ppk301 locus followed by the QF2 transcriptional activator (Figure 4B). This is predicted to cause a loss-of-function mutation in ppk301 and also express QF2 in all ppk301-expressing cells.\n\nWe also generated two transgenic QUAS effector strains. The first is a QUAS response element driving the expression of both cytosolic dTomato and GCaMP6s (15x-QUAS-dTomato-T2A-GCaMP6s), which allows us to simultaneously label neurons and image their activity with the genetically\u00a0encoded calcium sensor GCaMP6s (Chen et al., 2013) (Figure 4C). The second drives expression of membrane-bound GFP (15x-QUAS-mCD8:GFP), allowing us to reveal the complete morphology of the neurons in which it is expressed (Figure 4I). We looked for expression of the ppk301>dTomato-T2A-GCaMP6s reporter in the appendages that contact water during egg-laying (Figure 4D) and found that sensory neurons innervating trichoid sensilla in the labellar lobes of the proboscis (Figure 4E) were labeled. We also found labeling in the legs, primarily in the distal tarsal segments (Figure 4F).\n\nThe mosquito central nervous system consists of a brain and a ventral nerve cord (Ito et al., 2014; Smarandache-Wellmann, 2016; Court et al., 2017) (Figure 4G). To facilitate our understanding of the neuroanatomy of Ae. aegypti in general, and the projection pattern of the ppk301 driver line in particular, we built a three-dimensional female mosquito brain atlas, in which we identified and named the major neuropils in accordance with nomenclature established by the Insect Brain Name Working Group (Ito et al., 2014) (Figure 4H and http://mosquitobrains.org). Projections of ppk301-expressing sensory neurons in the head extend processes specifically to the subesophageal zone (Figure 4H,J). Two nerves enter each hemisphere of the subesophageal zone, arising from the proboscis and the pharynx (Figure 4J). Additionally, each leg sends projections into the ventral nerve cord, with nerves running into each neuromere (Figure 4K). Both brain and ventral nerve cord innervation patterns are consistent with these neurons mediating taste sensation (Scott, 2018). We noted that projections of ppk301-expressing neurons are also present in the male brain and ventral nerve cord (Figure 4\u2014figure supplement 1A\u2013C), consistent with a role for ppk301 in behaviors other than egg-laying. Labeling in both males and females was absent in genetic controls expressing either QF2 driver or QUAS effector alone (Figure 4\u2014figure supplement 1D\u2013K).\n\nWe hypothesized that if ppk301-expressing neurons were promoting egg-laying, they should be maximally activated by water, and we set out to test this by functional calcium imaging in response to freshwater and behaviorally relevant concentrations of NaCl. We developed an in vivo calcium imaging preparation with GCaMP6s (Chen et al., 2013) in ventral nerve cord sensory afferents of a mosquito presented with water or NaCl solutions on a single foreleg (Figure 5A,B). This appendage was chosen because it most frequently contacts water during egg-laying (Figure 1A, Video 1). We imaged the prothoracic segment of the ventral nerve cord with two-photon microscopy, using a custom fluidics device to deliver and retract liquids to the foreleg and compared responses to different stimuli within individual animals. ppk301-expressing neuronal projections in the ventral nerve cord were identified by dTomato expression (Figure 5C), which was also used to determine the region of interest for calcium imaging analysis.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/43963/elife-43963-fig5-v2.jpg)\n\n**Figure 5.:** (A) Side view schematic of ventral nerve cord imaging setup. (B) Top, ventral view schematic of mosquito during imaging showing ventral nerve cord (magenta) and imaging window (gray box). Bottom, confocal image of the approximate area contained in the imaging window. White box highlights the approximate area in C. Image from ppk301>mCD8:GFP animal. Scale bar 10 \u00b5m. (C) Top, two-photon image of dTomato (red) and region of interest (yellow). Scale bar 20 \u00b5m. Bottom: Representative GCaMP6s fluorescence at baseline (scale: arbitrary units). (D) Representative GCaMP6s fluorescence increase to indicated NaCl concentrations compared to baseline (scale: arbitrary units). (E) Average GCaMP6s traces from all wild-type and ppk301 mutant animals presented with three concentrations of NaCl until end of the trial, n\u00a0=\u00a024 sweeps from eight animals each. Mean (thick lines)\u00a0\u00b1\u00a0S.E.M. (thin lines). (F) Summary of data in E comparing the maximum \u0394F/F (arbitrary units) for each individual stimulus presentation in wild-type and ppk301 mutant animals. Lines denote mean and SEM. *p<0.05 ***p<0.001, t-test between genotypes at each concentration with Bonferroni correction.\n\nWe observed low GCaMP6s fluorescence at baseline and an increase in fluorescence in every trial where water was presented (Figure 5C\u2013E), with no apparent desensitization across trials (data not shown). Only the ipsilateral side of the ventral nerve cord innervated by the stimulated leg showed activation (data not shown). In D. melanogaster, cells that express the ppk301 orthologue ppk28 respond to water but are inhibited by high osmolality solutions including NaCl (Cameron et al., 2010; Chen et al., 2010; Jaeger et al., 2018). The population response in ppk301-expressing afferents in the mosquito is functionally different, showing robust responses to water and strong activation by salt solutions (Figure 5D\u2013F). To determine whether ppk301 is required for the neuronal responses to water or salt, we performed imaging experiments in a ppk301 mutant background and found that the response to water is almost entirely abolished in the ppk301 mutant (Figure 5D\u2013F). In contrast, 200 and 300 mOsm/kg NaCl solutions still elicited a strong response in the ppk301 mutant, albeit with a small reduction in amplitude (Figure 5D\u2013F). These data show that ppk301 is required for the activation of these neurons by freshwater and that a ppk301-independent pathway activates these neurons in response to salt. This suggests that mosquito ppk301-expressing afferents are either multi-modal (Zocchi et al., 2017) and each neuron responds to both water and salt, or that there is a functionally heterogeneous population of ppk301-expressing afferents with distinct neurons responding to water and salt.\n\nTo test if ppk301-expressing neurons are activated by any solution with increased osmolality, we performed imaging experiments with two additional solutes that are not ionic salts, L-serine and D-(+)-cellobiose. We delivered all stimuli at 200 mOsm/kg, the osmolality of NaCl that elicited the peak response. We found that ppk301-expressing neurons did not respond more strongly to L-serine or D-(+)-cellobiose than they did to water alone (Figure 6A\u2013B). Thus, activity in these neurons does not\u00a0only track with osmotic pressure. Intrigued by these findings, we performed egg-laying preference assays where mosquitoes were given a choice to lay eggs on freshwater and either L-serine or D-(+)-cellobiose. Although female mosquitoes found 200 mOsm/kg NaCl highly aversive, they did not discriminate between freshwater and L-serine or D-(+)-cellobiose at 200 mOsm/kg (Figure 6C\u2013D). Thus, the behavioral aversion to salt is unrelated to osmotic pressure.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/43963/elife-43963-fig6-v2.jpg)\n\n**Figure 6.:** (A) Top left, two-photon image of dTomato (red) and region of interest (yellow).\u00a0All other panels show representative GCaMP6s fluorescence increase to indicated solutions at 200mOsm/kg compared to baseline (scale: arbitrary units). (B) Maximum \u0394F/F (arbitrary units) for individual sweeps in wild-type animals. n\u00a0=\u00a021 sweeps/condition from n\u00a0=\u00a07 animals. (C) Eggs laid by single females of the indicated genotype in the indicated solute concentration. Only females laying\u00a0>10 eggs are presented, and lines connect data from individual animals. n\u00a0=\u00a053\u201379 animals/genotype. (D) Proportion of animals are binned into three behavioral groups by eggs laid on each substrate. Scale bar: 10 \u00b5m (B). In B, data labeled with different letters are significantly different from each other (two-way ANOVA with Tukey\u2019s HSD p<0.05). In (C) stars denote that the number of eggs laid on water are significantly different than the number of eggs laid on each solute (Paired Wilcoxon rank-sum test corrected for multiple comparisons by the Bonferroni method, ***=p\u00a0<\u00a00.001). In (D), different letters indicate that conditions are different from one another (p<0.05) by a chi-squared test corrected for FDR.\n\nThe observation that ppk301-expressing cells are activated by both water and salt is intriguing because wild-type females avoid laying eggs specifically in high-salt solutions. To understand how female mosquitoes interact with these different stimuli, we monitored real-time behavior of individual females offered either water or 300 mOsm/kg NaCl over 40 min by scoring their contact with liquid and individual egg-laying events. Both wild-type and ppk301 mutant mosquitoes contacted water, but only wild-type females consistently transformed these touches into egg-laying events (Figure 7A). When offered 300 mOsm/kg salt solution, both wild-type and ppk301 mutant mosquitoes touched liquid, but neither genotype reliably laid eggs (Figure 7A). These results are consistent with a model (Figure 7B) in which activation of ppk301 cells by water is a permissive signal for rapid and reliable egg-laying. Animals lacking ppk301 fail to detect the water activation signal and show delayed and intermittent egg-laying. Activation of ppk301-expressing neurons by high salt is not sufficient to drive egg-laying, suggesting that ppk301-expressing cells gate egg-laying at low NaCl concentrations, but as NaCl concentrations increase, an independent noxious salt-sensing pathway is recruited that overrides the activation of the tarsal ppk301-expressing cells imaged in this study to inhibit egg-laying (Figure 7B). We predict mutations that disrupt this noxious salt sensor would yield mosquitoes that show indiscriminate egg-laying on a high-salt substrate.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/43963/elife-43963-fig7-v2.jpg)\n\n**Figure 7.:** (A) Raster plot of eggs laid (circles) and physical contact with liquid (gray boxes) by eight individual females of the indicated genotype over 40-min observation period in the indicated NaCl solution.\u00a0(B) Model for ppk301 control of freshwater egg-laying.\n\n## Discussion\n\nAe. aegypti mosquitoes preferentially lay eggs in freshwater and avoid saltwater. We annotated the ppk ion channel gene family in Ae. aegypti and made targeted mutations in several candidate genes, identifying a mutation in ppk301 that disrupts freshwater egg-laying preference and behavior. ppk301 is expressed in sensory neurons of the tarsi and proboscis, tissues that contact water during egg-laying. ppk301-expressing tarsal sensory neurons are activated by both water and high salt. This response is not driven solely by osmotic pressure, because two other solutes L-serine and D-(+)-cellobiose presented at the same osmolality were indiscriminable from water. In a ppk301 mutant background, responses to water are almost entirely abolished but responses to salt remain. Together, these data suggest a model in which activation of ppk301-expressing neurons by water is required for egg-laying while a ppk301-independent pathway encodes aversion to high concentrations of salt (Figure 7B). This study identifies an important component of the circuitry regulating egg-laying behavior and provides an entry point into understanding the most important parenting decision a female mosquito makes.\n\nWhat sensory cues and modalities activate ppk301-expressing neurons? Sensory neurons in the D. melanogaster proboscis that express the orthologous ppk28 gene are maximally activated by water but inhibited by dissolved solutes (Cameron et al., 2010; Chen et al., 2010; Jaeger et al., 2018). In contrast, the afferents of the ppk301-expressing cells in the mosquito tarsi are not tuned specifically to osmolality but rather encode multimodal responses to liquid (ppk301-dependent) and to high concentrations of salt (ppk301-independent). Whether or not individual neurons within this population exhibit distinct tuning properties remains to be determined. In addition to the tarsi, ppk301 is expressed in the proboscis and pharynx.\u00a0It will be important to evaluate whether these populations of ppk301-expressing cells are strictly tuned to water, as are D. melanogaster ppk28-expressing labellar sensory neurons, and lack the multimodal responses seen in the tarsal ppk301-expressing neurons.\n\nHow does ppk301 regulate egg-laying? We favor a model in which ppk301-dependent activation of sensory neurons by liquid provides a permissive signal required for egg-laying, while high concentrations of salt activate noxious salt pathway(s) that can override this signal and prevent egg-laying. Together, these opposing signals are integrated to sculpt egg-laying preference and allow a mosquito to exploit freshwater substrates while preventing eggs from being laid on high-salt substrates that are lethal to their offspring.\n\nIt will be interesting to discover the biophysical mechanisms by which ppk301 neurons respond to water. ppk301 encodes a single subunit of a trimeric DEG/ENaC channel (Jasti et al., 2007). One possibility is that ppk301 ion channels are homomers that respond to osmotic pressure, similar to D. melanogaster ppk28 (Cameron et al., 2010; Chen et al., 2010). Alternatively, ppk301 could encode a promiscuous subunit that could be part of multiple heteromeric PPK channels with different ligands that account for some of the multimodal tuning properties seen in ppk301-expressing tarsal sensory neurons. In this scenario, genetic ablation of ppk301 could result in a novel set of PPK channels that are composed of the remaining subunits, thereby shifting the composition of channels on the membrane and influencing overall neuronal tuning properties.\n\nWater- and salt-sensing are critically important because all animals must regulate fluid and ion homeostasis for the proper functioning of their physiological systems. Terrestrial insects such as mosquitoes are small and have a large surface-area-to-volume ratio, meaning that they are susceptible to desiccation. Therefore, both male and female adult mosquitoes must seek out liquid for survival. It is not known if sensory systems used for determining the physical properties of liquids during fluid ingestion in male and female mosquitoes are the same as those used by the female for evaluating water quality during egg-laying. Our data show that ppk301 is expressed in both male and female appendages, and that neurons expressing ppk301 project to similar areas of the brain and ventral nerve cord. Studying the effects of ppk301 mutations on liquid ingestion in adult Ae. aegypti will provide insight into whether the same molecules and sensory neurons are being used in distinct behavioral contexts. It will also be interesting to investigate if the activity of ppk301 neurons is modulated by physiological state, including the presence of developed eggs or elevated thirst due to dehydration or desiccation stress. Previous studies have shown the existence of a canonical \u2018water\u2019 cell in the apical labral chemoreceptor sensilla of Ae. aegypti (Werner-Reiss et al., 1999), but we do not see ppk301 expression in this tissue, indicating that there may be additional osmosensitive receptors encoded in the mosquito genome.\n\nA complete cellular and molecular understanding of salt sensation in mosquitoes remains to be elucidated and the \u2018noxious salt sensor\u2019 proposed in our model remains to be discovered. We note that a distributed coding of salt taste in which distinct populations of sensory neurons are modulated by salt is not unprecedented. A recent study in Drosophila reveals that in the proboscis, salt can activate or inhibit every class of gustatory receptor neuron (Jaeger et al., 2018). Salt is also a key component of blood and understanding the mechanisms of salt sensation during blood-feeding, egg-laying, and other critical mosquito behaviors is an important future goal (Werner-Reiss et al., 1999; Sanford et al., 2013).\n\nThe evolution of egg-laying preference both within Ae. aegypti and in other mosquito species is a critical determinant of the types of environments and ecological niches that they are able to exploit. Indeed, some strains of Ae. aegypti have begun to exploit brackish water for egg-laying (Ramasamy et al., 2014; de Brito Arduino et al., 2015). Such an adaptation requires co-evolution of the shifting preference of females for salty water and larval tolerance of high salinity environments into which they are deposited. Investigating the underlying genetic changes that support the coordination of these shifting phenotypes in both larvae and adults will be important for understanding how Ae. aegypti adapts to novel breeding sites across the globe, which has greatly increased their capacity as a disease vector.\n\nThe advances described here depended critically on new genetic tools we developed that did not previously exist in this non-model insect. These techniques now make it possible to visualize neuronal anatomy and activity within molecularly\u00a0identified cell types and to identify the genetic and neural circuit substrates of many mosquito behaviors. These behaviors contribute to the spread of deadly pathogens and understanding their underlying biology could contribute to mosquito control efforts. The development of similar tools and reagents in other insect species of public health, agricultural, or ethological interest will broaden our view of insect biology and facilitate comparative studies of the genes and circuits underlying evolutionary adaptations in insects.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Brp (mouse monoclonal)</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>DSHB:NC82 RRID:AB_2314866</td>\n      <td>(1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFP (rabbit polyclonal)</td>\n      <td>Life Technologies</td>\n      <td>Molecular Probes: A11122 RRID:AB_221569</td>\n      <td>(1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>L-serine</td>\n      <td>Sigma</td>\n      <td>Sigma:s4500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-(+)-cellobiose</td>\n      <td>Sigma</td>\n      <td>Sigma:22150</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NaCl</td>\n      <td>Sigma</td>\n      <td>Sigma:s7653</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Aedes aegypti)</td>\n      <td>ppk301</td>\n      <td>NA</td>\n      <td>NCBI:LOC5564307</td>\n      <td>previously known as AAEL000582, ppk582</td>\n    </tr>\n    <tr>\n      <td>Gene (Ae. aegypti)</td>\n      <td>ppk204</td>\n      <td>NA</td>\n      <td>NCBI:LOC5573846</td>\n      <td>previously known as AAEL010779, ppk10779</td>\n    </tr>\n    <tr>\n      <td>Gene (Ae. aegypti)</td>\n      <td>ppk316</td>\n      <td>NA</td>\n      <td>NCBI:LOC5567201</td>\n      <td>previously known as AAEL000926, ppk00926</td>\n    </tr>\n    <tr>\n      <td>Gene (Ae. aegypti)</td>\n      <td>ppk306</td>\n      <td>NA</td>\n      <td>NCBI:LOC5563925</td>\n      <td>previously known as AAEL014228, ppk14228</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Ae. aegypti)</td>\n      <td>ppk301 -/-</td>\n      <td>PMID:25818303</td>\n      <td>NA</td>\n      <td>previously generated and referred to asAAEL00582 ECFP in Kistler et al., 2015 (PMID:25818303). Contains an insertion of a poly-ubiquitin promoter-driven ECFP into the coding sequence of ppk301</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Ae. aegypti)</td>\n      <td>ppk204 -/-</td>\n      <td>PMID:25818303</td>\n      <td>NA</td>\n      <td>previously generated and referred to asAAEL010779 -/- in Kistler et al., 2015 (PMID:25818303). Contains a 150 bp deletion in the coding sequence ofppk301 with a corresponding integration of a cassette with triple-stop codons.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Ae. aegypti)</td>\n      <td>ppk316 -/-</td>\n      <td>PMID:25818303</td>\n      <td>NA</td>\n      <td>previously generated and referred to asAAEL00926-/- in Kistler et al., 2015 (PMID:25818303). Contains an 86 bp deletion in the coding sequence of ppk316 with a corresponding integration of a cassette with triple-stop codons and several downstream SNPs.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Ae. aegypti)</td>\n      <td>ppk306 -/-</td>\n      <td>PMID:25818303</td>\n      <td>NA</td>\n      <td>previously generated and referred to asAAEL014228-/- in Kistler et al., 2015 (PMID:25818303). Contains a 106 bp deletion in the coding sequence of ppk306 with a corresponding integration of a cassette with triple-stop codons.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Ae. aegypti)</td>\n      <td>ppk301-T2A-QF2</td>\n      <td>this paper</td>\n      <td>NA</td>\n      <td>T2A-QF2 knockin into the ppk301 locus, described in Materials\u00a0and\u00a0methods.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Ae. aegypti)</td>\n      <td>Pub-mCD8:GFP-T2A-dsRed:NLS-SV40</td>\n      <td>this paper</td>\n      <td>NA</td>\n      <td>Ae. aegypti poly-ubiquitin promoter driving expression of membrane tethered GFP and nuclear dsRed separated by a T2A peptide. Described inMaterials\u00a0and\u00a0methods</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Ae. aegypti)</td>\n      <td>15x-QUAS-mCD8-GFP</td>\n      <td>this paper</td>\n      <td>NA</td>\n      <td>QUAS reporter strain driving expression of membrane-targeted GFP. Produced by transforming wild-type Ae. aegypti with plasmid RRID:Addgene_104878</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Ae. aegypti)</td>\n      <td>15x-QUAS-dTomato-T2A-GCaMP6s</td>\n      <td>this paper</td>\n      <td>NA</td>\n      <td>QUAS reporter strain driving expression of cytosolic dTomato and GCaMP6s separated by a T2A peptide. Described in Materials\u00a0and\u00a0methods</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mosquito rearing and maintenance\n\nAedes aegypti wild-type laboratory strains (Liverpool) were maintained and reared at 25\u201328\u00b0C, 70\u201380% relative humidity with a photoperiod of 14 hr light: 10 hr dark as previously described (DeGennaro et al., 2013). Adult mosquitoes were provided constant access to 10% sucrose. For routine strain maintenance, animals were blood-fed on live mice or human subjects. Adult females of all genotypes were blood-fed on a single human subject during mutant generation, for behavioral assays, and for calcium imaging. Blood-feeding procedures with live hosts were approved and monitored by The Rockefeller University Institutional Animal Care and Use Committee (IACUC protocol 15772) and Institutional Review Board, (IRB protocol LV-0652). Human subjects gave their written informed consent to participate.\n\n### Blood-feeding for egg-laying behavior\n\nAll Ae. aegypti mosquitoes used in egg-laying assays were housed in mixed-sex cages and were between 7\u00a0and\u00a014 days old. Female mosquitoes were blood-fed by giving them direct access to a human limb introduced in or on the mesh wall of a cage. Fully engorged female mosquitoes were selected within 24 hr of blood-feeding and housed in insectary conditions with ad libitum access to 10% sucrose before being introduced into behavior assays. Unless otherwise indicated, assays were performed beginning 96 hr post-blood-meal and continuing for\u00a0~18 hr.\n\n### Mesh barrier assay\n\n10 blood-fed female mosquitoes were introduced by mouth aspiration into a standard BugDorm rearing cage (30 cm3) containing a 10% sucrose wick. Two egg-laying cups were present in each cage, each containing deionized water and a 55 mm-diameter partially submerged Whatman filter paper (Grade 1; 1001\u2013055). In one of the cups, a metal mesh barrier placed\u00a0~1 cm above the water line prevented direct access of the mosquitoes to liquid, although the filter paper remained partially submerged and moist. Mosquitoes were allowed to lay eggs overnight (18 hr), after which the filter papers were dried and eggs counted.\n\n### Seawater preference assay\n\nArtificial seawater was mixed according to an established recipe (Kester et al., 1967) with lab-grade chemicals from Sigma-Aldrich. Specific dilutions were made, by volume, with deionized water. Single blood-fed females were introduced into a chamber comprised of a length of transparent acrylic tubing (inner diameter 9.525 cm) cut to 12 cm in height with a wire mesh grid glued to one end as a ceiling containing a two-sector 90 mm divided Petri dish with 10 mL of deionized water on one side and 10 mL of a specific dilution of artificial seawater on the other. As an egg-laying substrate, a 1 cm tall strip of seed germination paper (Anchor Paper; SD7615L) was wrapped around the outer diameter of each half of the Petri dish, partially submerged in the liquid. Animals were introduced by a mouth aspirator through a hole in the top of the chamber, which was then plugged with a cotton ball. Containers were stored under insectary conditions and mosquitoes were allowed to lay eggs overnight (~18 hr), after which the paper strips were dried and eggs counted.\n\n### Seawater survival assay\n\nWild-type mosquitoes were hatched in \u2018hatch broth\u2019 consisting of deoxygenated water containing ground Tetramin fish food. Approximately 1 day after hatching, 20 larvae were transferred into a small plastic cup containing 25 mL of a specific dilution of artificial seawater. Cups were examined each day, dead larvae removed, and ground Tetramin pellets added for food as needed. Animals successfully completing the transition to pupal stage by 8 days post-hatch were scored as surviving offspring.\n\n### Single-female modular egg-laying assay\n\nA multi-animal egg-laying assay was created out of sheet acrylic, comprising modular trays each with 14 single-animal chambers. Each chamber comprised two angled 50 mm Petri dishes each containing 2 mL of liquid and a 47 mm diameter filter paper (Whatman, Grade 1 Qualitative Filter Paper).\n\nWe next developed a standardized imaging setup to automatically count eggs from each Petri dish. Each dish was placed onto a LED light panel (SuperbrightLEDs.com item #2020) and images were captured with a Raspberry Pi and associated camera. Images were thresholded and pixels counted for each dish of each chamber. The number of eggs corresponding to each image was determined by dividing the average pixel value of eggs determined from a manually-counted set of 20 test images. The concordance between manual counting and automatic pixel-based counting was r2\u00a0=\u00a00.96. A parts list and schematics of the egg-laying chambers and the image acquisition and thresholding code can be found on http://github.com/VosshallLab/MatthewsYoungerVosshall2018/\u00a0(Vosshall Lab, 2019; copy archived at https://github.com/elifesciences-publications/MatthewsYoungerVosshall2018).\n\nFor studies of the effect of NaCl on egg production (Figure 1F), each dish was filled with the same concentration of NaCl. The osmolality of each solution was measured using a Wescor model 5520 vapor pressure osmometer. Blood-fed female mosquitoes were cold anesthetized and single animals introduced into each chamber by mouth aspiration. Animals were allowed to lay for 18 hr and dishes were imaged to calculate egg numbers. For two-choice assays (Figure 3D\u2013F), assays were performed identically, except that the two dishes contained deionized water and a NaCl solution of a specific osmolality. In Figure 6C\u2013D, the two dishes contained deionized water and either 200mOsm/kg L-serine (Sigma S4500) or D-(+)-cellobiose (Sigma 22150). The position of each solution was varied for each chamber. Experiments were performed anonymized to genotype and data included only for those animals who laid more than 10 eggs.\n\n### NaCl survival assay\n\nWild-type mosquitoes were hatched in hatch broth. Approximately 1 day after hatching, 20 larvae were transferred into a small plastic cup (VWR HDPE Multipurpose Containers; H9009-662) containing 25 mL of a specific concentration of NaCl, prepared as above. Cups were examined each day, dead larvae removed, and ground Tetramin pellets added for food as needed. The number of pupae and larvae remaining alive were counted each day, and cumulative survival was calculated for these offspring.\n\n### Egg-laying timing: vial assay\n\nTo measure the timing of egg-laying across days, individual blood-fed mosquitoes were introduced into egg-laying vials 48 hr after a blood-meal. Mosquitoes were transferred to a fresh vial every 24 hr and eggs from the previous day were counted and recorded. Experiments were performed anonymized to genotype.\n\n### Egg-laying timing: culture flask assay\n\nTo measure the timing of egg-laying and liquid touching, single animals were introduced into a 50 mL cell culture flask containing 10 mL of either deionized water or 300 mOsm/kg NaCl, and a 1\u2019 x 2\u2019 strip of seed germination paper, partially submerged. Animals were video recorded for 40 min using a Nikon D7000 SLR with a macro lens. Four flasks were recorded simultaneously, with each set containing 1 replicate of the following conditions: wild-type, 0 mOsm/kg NaCl; wild-type, 300 mOsm/kg; ppk301, 0 mOsm/kg; ppk301, 300 mOsm/kg. Videos were manually scored for physical contact with liquid and the appearance of freshly laid eggs. Data on physical touches were recorded in 5 s intervals, with each interval scored as \u2018touch\u2019 if a single frame revealed physical contact between any appendage of the mosquito and the liquid. Videos were scored anonymized to genotype and condition.\n\n### Curation and expression estimates of ppk gene family in Ae. aegypti\n\nTo identify members of the ppk gene family in Ae. aegypti and An. gambiae, we performed two complementary analyses: 1) using D. melanogaster ppk sequences as queries, we performed BLASTp against all translated protein-coding genes identified in AaegL5 (GCF_002204515.2_AaegL5.0_protein.faa) and 2) ran interproscan v5.29.68.0\u00a0(Finn et al., 2017) against the same database of translated protein-coding genes. We took all genes that were reciprocal best hits with the D. melanogaster ppk family via blastp and were annotated by interproscan as \u2018Amiloride-sensitive sodium channel.\u2019 We repeated this analysis for the An. gambiae, PEST strain geneset downloaded from Vectorbase (Anopheles-gambiae-PEST_PEPTIDES_AgamP4.9.fa). We re-named Ae. aegypti ppk genes by giving them a three-digit identifier corresponding to their chromosomal position. The first digit represents the chromosome (1, 2, or 3), while the next two digits represent its relative position on that chromosome from the left (p) arm to the right (q) arm according to coordinates found on NCBI.\n\nWe next built a phylogenetic tree to visualize the relationship between these genes across these three species. To do this, we selected the longest single isoform for genes predicted to encode multiple protein-coding isoforms and performed multiple sequence alignment using clustal-omega v1.2.3 (Sievers et al., 2011), including a human ASIC channel and Caenorhabditis elegans MEC4 sequence for comparison. A maximum-likelihood-estimate phylogenetic tree was constructed using PhyML v3.0 (Guindon et al., 2010) with default parameters and 100 bootstrap iterations, and manually re-rooted on MEC4 for presentation. A table of all genes and sequences incorporated in this analysis, with previous accessions, is presented in the Supplementary file 1.\n\n### Transcript abundance estimates of Ae. aegypti ppk genes\n\nTo visualize transcript abundance of each predicted ppk gene across tissues, we utilized published data (Matthews et al., 2016; Matthews et al., 2018). Heatmaps were generated as described (Matthews et al., 2018) and presented as log10(TPM\u00a0+1) of the mean expression value for all replicates of the indicated tissue using the heatmap.2 function of the gplots v3.0.1 (Warnes et al., 2016) package in R v3.5.0 (2017).\n\n### Generation of mutant and transgenic mosquito strains\n\nppk loss-of-function alleles were generated and described previously (Kistler et al., 2015). All new strains generated in this paper were injected into wild-type Liverpool embryos at the Insect Transformation Facility at the University of Maryland.\n\nPUb-mCD8:GFP-T2A-dsRed:NLS-SV40 was generated by Gibson assembly, using the following fragments: Plasmid backbone and MOS arms from a standard transformation vector (pMos-3xP3-dsRed); dsRed open reading frame amplified from the same vector by polymerase chain reaction (PCR); mCD8-GFP open reading frame PCR-amplified from a synthesized vector (Genscript); Ae. aegypti PUb promoter PCR-amplified from PSL1180-HR-PUb-ECFP (Addgene #47917). T2A and NLS sequences were added through PCR. 1000 embryos were injected with the plasmids and a Mos helper plasmid. Two stable lines were recovered with qualitatively similar expression patterns.\n\nppk301-T2A-QF2\u00a0was generated through CRISPR-mediated homologous recombination into the endogenous locus. We initially attempted to use constructs with gene-specific promoter fragments to drive transgenic constructs, including the broadly expressed polyubitiquin promoter (Anderson et al., 2010), but these either did not express at all or were expressed sporadically and mostly in non-neuronal cells (Bui et al., 2018). We also had no success with the Gal4/UAS (Brand and Perrimon, 1993) system in Ae. aegypti. We therefore developed techniques to use homologous recombination to knock QF2 into the ppk301 locus.\n\nppk301-T2A-QF2 was generated with a sgRNA targeting exon 2 of the ppk301 locus (ppk301-sgRNA-1, target sequence with PAM underlined: GGTTGGCAGTTGAGTCCCGG). sgRNA DNA template was prepared by annealing oligonucleotides as described (Kistler et al., 2015). In vitro transcription was performed using HiScribe Quick T7 kit (NEB, E2050S) following the manufacturer\u2019s directions and incubating for 2 hr at 37\u00b0C. Following transcription and DNAse treatment for 15 min at 37\u00b0C, sgRNA was purified using RNAse-free SPRI beads (Ampure RNAclean, Beckman-Coulter A63987), and eluted in Ultrapure water (Invitrogen, 10977\u2013015).\n\nThe donor plasmid was constructed by Gibson assembly using the following fragments: homology arms of\u00a0~1 kb on either side of the Cas9 cut site (two base pairs were deleted from the left arm immediately preceding the T2A to maintain the open reading frame); a fragment containing T2A-QF2-SV40 and 3xP3-dsRed, PCR-amplified from a vector derived from pBac-DsRed-ORCO_9kbProm-QF2 (gift of Chris Potter, Addgene #104877); a pUC57 vector backbone digested with EcoRI and HindIII. Clones were sequenced verified and midiprepped using an endotoxin free midiprep kit (Machery-Nagel) and eluted in Ultrapure nuclease-free water (Invitrogen). 2000 embryos were injected with a mixture of 300 ng/\u00b5L Cas9 protein (PNA Bio), 650 ng/\u00b5L dsDNA plasmid donor, and 40 ng/\u00b5L sgRNA. The progeny of 96 surviving G0 females were screened. Six potential founders were isolated, and one was verified to have a complete and in-frame insertion by PCR with the following primers (Forward 5\u2019 GTGAGGGTGGTGTCGAATTAACTCTT3\u2019,\u00a0Reverse 5\u2019GTTAGGTCAGAGGTATCCCTGAACAT3\u2019).\n\n15x-QUAS-mCD8-GFP was generated from an existing plasmid (a kind gift from Chris Potter, Addgene #104878). Embryos were injected with the plasmid and a PBac helper plasmid. Two independent lines were recovered.\n\n15x-QUAS-dTomato-T2A-GCaMP6s was generated by Gibson assembly of the following PCR-amplified fragments: Plasmid backbone and Mos arms from PUb-mCD8:GFP-T2A-dsRed:NLS-SV40 (described above); 15x-QUAS from pBAC-ECFP-15xQUAS_TATA-SV40 (Addgene #104875, gift of Chris Potter); dTomato-T2A-GCaMP6s PCR-amplified from a vector synthesized (Genscript). Embryos were injected with the construct and a PBac helper plasmid. Two independent lines were recovered.\n\n### Brain immunostaining\n\nDissection of adult brains and immunostaining was modified from previously used protocols (Siju et al., 2008; Riabinina et al., 2016). 6\u201314 day-old mosquitoes were anesthetized on ice. Heads were carefully removed from the body by pinching at the neck with sharp forceps. Heads were placed in a 1.5 mL tube for fixation with 4% paraformaldehyde, 0.1 M Millonig's Phosphate Buffer (pH 7.4), 0.25% Triton X-100, and nutated for 3 hr. Brains were then dissected out of the head capsule in ice cold Ca+2-, Mg+2-free phosphate buffered saline (PBS, Lonza, 17-517Q) and transferred to a 24-well plate. All subsequent steps were done on a low-speed orbital shaker. Brains were washed in PBS containing 0.25% Triton X-100 (PBT) at room temperature six times for 15 min. Brains were permeabilized with PBS, 4% Triton X-100, 2% Normal Goat Serum for\u00a0~48 hr (two nights) at 4\u00b0C. Brains were rinsed once then washed with PBT at room temperature six times for 15 min. Primary antibodies were diluted in PBS, 0.25% Triton X-100, 2% Normal Goat Serum for\u00a0~48 hr (two nights) at 4\u00b0C. The primary antibodies used in this experiment were anti-dmBrp (mouse; 1:50: NC82, DSHB) to label the synaptic neuropil and anti-GFP (Rabbit: 1:10,000; A11122, Life Technologies). Brains were rinsed once then washed in PBT at room temperature six times for 15 min. Secondary antibodies were diluted in PBS, 0.25% Triton X-100, 2% Normal Goat Serum for\u00a0~48 hr (two nights) at 4\u00b0C. The primary antibodies used in this experiment were anti-mouse-Cy5 (1:250; Life Technologies A-10524) and anti-Rabbit-488 (1:500; Life Technologies A-11034). Brains were rinsed once then washed in PBT at room temperature six times for 15 min. Brains equilibrated overnight in Vectashield (Vector Laboratories H-1000) and were mounted in Vectashield.\n\n### Ventral nerve cord immunostaining\n\nSix-\u00a0to\u00a014-day-old mosquitoes were anesthetized on ice and the bodies were carefully removed from the heads by pinching at the neck with sharp forceps. The bodies were placed in a 1.5 mL tube for fixation with 4% paraformaldehyde, 0.1M Millonig's Phosphate Buffer (pH 7.4), 0.25% Triton X-100, and nutated for 3 hr. Ventral nerve cords were dissected out of the body in ice cold PBS and transferred to a 24-well plate. All subsequent steps were the identical to the brain immunostaining protocol described above.\n\n### ppk301>mCD8:GFP immunostaining\n\nppk301>mCD8:GFP expression was visualized in brains and ventral nerve cords using a Zeiss Inverted LSM 880 laser scanning confocal with a 25x/0.8 NA immersion-corrected objective. Glycerol was used as the immersion medium to most closely match the refractive index of the mounting medium Vectashield. Brains were imaged at 2048 \u00d7 2048 pixel resolution in X and Y with 0.5 \u00b5m z-steps for a final voxel size of 0.1661 \u00d7 0.1661\u00d70.5 \u00b5m. Ventral nerve cords were imaged at 1024 \u00d7 1946 pixel resolution in X and Y with 0.5 \u00b5m z-steps for a final voxel size of 0.3321 \u00d7 0.3321\u00d70.5 \u00b5m ventral nerve cord images were tiled and stitched with 10% overlap. Confocal images were processed in ImageJ (NIH).\n\n3xP3 was used as a promoter to express fluorescent markers for transgene insertion, and care was taken to distinguish 3xP3 expression from the expression of the ppk301-QF2 driver line. 3xP3 labels the optic lobes, as well as some cells in the dorsal brain. Figure 4J,K and Figure 4\u2014figure supplement 1B,D,F,H,J were cropped to remove 3xP3 expression. In some cases, we saw projections from the optic lobes that traversed the brain. These were sometimes seen in the driver alone and effector alone controls, both of which contain a 3xP3 marker transgene. We speculate that these projections derive from cells marked by 3XP3 expression and are unrelated to ppk301 expression. These patterns of 3xP3 are worth noting, but due to the distance from the subesophageal zone and ventral nerve cord, they do not have an impact on the results of this study. In some brains, we observed faint unilateral projections from the subesophageal zone to the antennal lobe. We examined eight female brains and eight male brains for these projections and saw these projections in 5/8 brains. In males we did not see this projection in any of the eight brains examined.\n\n### Reference brain 3D-Reconstruction\n\nA reference Ae. aegypti brain from a 7 day old wild-type female mosquito was fixed and immunostained for Brp as described above. It was imaged as described above except with 1 \u03bcm voxels and as a tiled scan with 10% overlap. Thirty-nine brains were analyzed and the most complete and symmetric brain was chosen to serve as the template. Blind deconvolution was performed with AutoquantX3 software. The female brain was manually annotated using the segmentation and 3D reconstruction software ITK-SNAP. Regions were identified by the anatomical boundaries defined by Brp staining, and by homology to other insects, and named in accordance with revised insect brain nomenclature standards (Ito et al., 2014). Structures without clear boundaries were excluded. A surface mesh of each region was exported into the data analysis and visualization software ParaView, which was used to generate the 3D reconstruction shown in Figure 4H.\n\n### Mosquitobrains.org\n\nThe reference brain raw data and reconstruction are available on the website http://mosquitobrains.org. We have displayed this data as a brain atlas by creating an online \u2018Brain Browser\u2019 tool where users can scroll through the brain and highlight different regions. Ae. aegypti brains that are stained with the synaptic protein Brp can be warped onto this standard reference Aedes aegypti brain using the python code ClearMap (Renier et al., 2016). To use ClearMap, all images must be acquired with square voxels. The standard brain was imaged with 1 \u00b5m voxel size. To use it as a template, all images must either be taken at this resolution, or down sampled to a final voxel size of 1 \u00b5m. Additional channels can be warped and registered onto the reference brain, provided that one channel is imaged as described above.\n\n### T2A test construct validation\n\nThe previously characterized Ae. aegypti polyubiquitin promoter (Pub) (Anderson et al., 2010) was used to drive expression of both a membrane-bound variant of GFP (mCD8:GFP) and a nuclear localization sequence fused to dsRED by separating these genes with the T2A ribosomal skipping element (Diao and White, 2012; Daniels et al., 2014). This construct was expressed in a few cells in the adult brain, as well as in larval body-wall cells. We focused our analysis on the body-wall cells because their flat and compact shape made them amenable to examining the expression of our membrane and nuclear proteins.\n\nLarvae were dissected by pinning the head and the tail to Sylgard plates (DowDupont) with insect pins, and a long longitudinal cut was made along the dorsal surface of the body wall. The body wall was filleted open with four additional insect pins, and the organs were removed. The animals were fixed for 25 min in 4% paraformaldehyde, 0.1 M Millonig's Phosphate Buffer (pH 7.4), 0.25% Triton X-100 at room temperature, and then rinsed 3 times in PBS. Larvae were transferred to a 1.5 mL tube and washed with PBT 6 times for 15 min while nutating at room temperature. Larvae were then incubated in Vectashield with DAPI overnight and mounted in Vectashield for imaging. Larvae were imaged on a Zeiss Inverted LSM 880 laser scanning confocal with a 40X/1.2 NA oil immersion objective. The cells were imaged at a resolution of 2048 \u00d7 2048 pixels in a single confocal slice for a pixel size of 0.0692 \u00d7 0.0692 \u00b5m. Images were processed in ImageJ (NIH).\n\n### Visualization of ppk301-expressing cells in appendages\n\nTo visualize sensory neuron cell bodies in ppk301-T2A-QF2, 15xQUAS-dTomato-T2A-GCaMP6 animals we dissected live sensory tissues using fine forceps, dipped in cold methanol for\u00a0~5 s, and mounted on a slide in glycerol. Appendages were viewed on a Zeiss Inverted LSM 880 laser scanning confocal with a 25x/0.8 NA immersion corrected objective at a resolution of 1024 \u00d7 1024 pixels and a voxel size of 0.2076 \u00b5m x 0.2076 \u00b5m x 1 \u00b5m.\n\n### Two-photon calcium imaging of female ventral nerve cord\n\nCalcium imaging was performed on an Ultima IV two-photon laser-scanning microscope (Bruker Nanosystems) equipped with galvanometers and illuminated by a Chameleon Ultra II Ti:Sapphire laser (Coherent). GaAsP photomultiplier tubes (Hamamatsu) were used to collect emitted fluorescence. Images were acquired with a 60X/1.0N.A. Long Working Distance Water-Immersion Objective (Olympus) at a resolution of 256 \u00d7 256 pixels.\n\nCalcium imaging experiments were performed on female mosquitoes that were 7\u201311 days post-eclosion. Mosquitoes were fed a human-blood-meal 96\u2013108 hr prior to imaging and were not giving access to an egg laying substrate so that they were gravid at the time of imaging. Gravid females were anesthetized at 4\u00b0C for dissection. The wings were removed and the mosquito was fixed to a custom Delrin plastic holder with UV-curable glue (Bondic). The mosquito was inserted into a hole in the holder, such that the ventral thorax, including all coxae, were exposed above the surface of the holder, with the rest of the mosquito below. The mosquito was secured with a few points of glue (Bondic) on the abdomen, thorax and head. The leg that was presented with water remained free of glue to prevent damage to the tissue. Once the mosquito was secured to the plate, one of the forelegs was inserted into a small diameter tube that was secured to the bottom of the plate and could later be attached to the fluidics apparatus used for stimulus delivery (described below). The top of the dish was then filled with external saline. The recipe we used is based D. melanogaster imaging saline:103 mM NaCl, 3 mM KCl, 5 mM 2-[Tris(hydroxymethyl)methyl]\u22122-aminoethanesulfonic acid (TES), 1.5 mM CaCl2, 4 mM MgCl2, 26 mM NaHCO3, 1 mM NaH2PO4, 10 mM trehalose, 10 mM glucose, pH 7.3, osmolality adjusted to 275 mOsm/kg). The coxae were gently spread from the midline and secured in dental wax. The cuticle was removed above the prothoracic ganglia using very sharp forceps. Opaque non-neural tissue, primarily fat cells and muscle, was removed if they obstructed the ventral nerve cord. Great care was taken not to damage the ppk301-expressing nerves running from the legs into the ventral nerve cord. These run up the posterior-ventral region of the leg and are extremely superficial. dTomato fluorescence was examined before imaging to verify that the nerves were intact. If an animal did not respond to water, 200 mOsm/kg, or 300 mOsm/kg NaCl it was discarded.\n\nThe preparation was secured to the stage using a custom laser cut acrylic holder. A single plane through the center of the prothoracic neuropil was scanned at 4.22 fps with a 920 nm excitation wavelength imaged through a 680 nm shortpass infrared (IR) blocking filter, a 565 nm longpass dichroic and 595/50 nm or 525/70 nm bandpass filters. GCaMP6s and dTomato emission was collected simultaneously for 70 frames per trial. Each concentration was delivered at least three times per animal, and each animal was exposed to a series of either 0, 200, and 300 mOsm/kg NaCl, or 200 mOsm/kg NaCl, 200 mOsm/kg L-serine, 200 mOsm/kg D-(+)-cellobiose and freshwater. All wild-type and PPK301 mutant animals were reared and imaged in parallel.\n\nImaging remained stable during the duration of the imaging session in all animals that were included in this study. We did not notice a decrease in the response to stimuli over time. Before beginning the experiments using multiple concentrations of salt, we imaged animals with repeated water delivery, and saw no desensitization to the response to water over 10 presentations (data not shown).\n\n### Liquid delivery\n\nLiquids were delivered to a single foreleg of the mosquito using a custom built low-volume fluidics device. Piezoelectric diaphragm micropumps and their controller (Servoflo) were run by an Arduino using a code written for this purpose. A custom manifold was milled for small volume liquid delivery. The mosquito was illuminated with an IR light and liquid delivery was monitored using an IR camera. The liquid coated the tarsal and tibial segments and was retracted immediately after imaging each sweep. We waited at least 1 min between each trial. We only observed responses in the prothoracic region ipsilateral to the stimulus delivery.\n\n### Data analysis\n\nAll image processing was done using FIJI/ImageJ (NIH). Further processing was done using Excel and Prism (GraphPad). Regions of interest were selected based on the dTomato fluorescence intensity and used for analysis of GCaMP6s signal. All traces with motion, as determined by dTomato fluorescence instability, were discarded. A Gaussian blur with a sigma value of 1 was performed on the GCaMP6s signal. In the calculation of \u0394F/F, six frames were averaged before stimulus presentation to determine the baseline fluorescence. To determine Fmax, the average of 3 frames at the peak after stimulus delivery was determined for each sweep.\n\n### Statistical analysis\n\nAll statistical analyses were performed using Prism (GraphPad) or R version 3.5.0 (R Development CoreTeam, 2017). Data collected as percentage of total are shown as median with interquartile range and data collected as raw value are shown as mean\u00a0\u00b1\u00a0SEM or mean\u00a0\u00b1\u00a0SD. Details of statistical methods are reported in the figure legends.\n\n### Data availability\n\nAll plotted data (with the exception of raw video files) are available in Supplementary file 1, and behavior assay schematics and egg-laying counting image analysis scripts can be found at https://github.com/VosshallLab/MatthewsYoungerVosshall2018. (Vosshall Lab, 2019; copy archived at https://github.com/elifesciences-publications/MatthewsYoungerVosshall2018).\u00a0Plasmids will be made available from Addgene.\n",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "b380a9f0-b890-482c-a712-c85013fecc83",
+      "submission_id": "e0f1ef29-0b4a-4e21-bc4c-0b395153058e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Scott, University of California, Berkeley United States\n\nReviewers:\n- W Daniel Tracey, Indiana University United States\n\n## Review text\n\nDOI: [10.7554/eLife.43963.019](https://doi.org/10.7554/eLife.43963.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The ion channel ppk301 controls freshwater egg-laying in the mosquito Aedes aegypti\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Kristin Scott as Reviewing Editor and Catherine Dulac as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Daniel Tracey (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a fascinating study that examines the molecular and cellular control of egg laying in the mosquito Aedes aegypti. The study is a technical tour-de-force, developing new behavioral assays for egg laying preferences in water vs salt water in Aedes aegypti mosquitos, generating new genetic tools for the study of 4 ppk channels, and establishing an imaging preparation for tarsal taste receptor neurons. The basic finding is that neurons that express ppk301 are located in gustatory sensilla and that female mosquitos with the ppk301 mutation show reduced in egg laying near water and a tendency to lay more eggs in salt. A model is presented where ppk301 neurons gate egg laying by feeding into command circuits that both increase egg laying in the presence of water and decrease egg laying in the presence of high salt. Overall, this work represents a strong conceptual and technical achievement, and is certainly worthy of publication in eLife once appropriate revisions are made.\n\nEssential revisions:\n\n1) A more in-depth characterization of ppk301 neuron tuning, using calcium imaging, is necessary to address whether the \"salt\" response is specific to salt, or a general response to solutes. The minimum number of stimuli to determine whether these neurons respond to changes in osmolarity or specifically to salt and water should be examined.\n\nThe crux of the problem is that, at the moment, there is no stimulus demonstrated to give a smaller response than water. Thus, we don't know what property of the water ppk301 neurons are responding to. The implication is that it is the low osmolality, but this is not explicitly demonstrated. It is formally possible that these neurons respond to all liquids, and that water actually gives the smallest response of any liquid stimulus. A broader examination of the receptive fields of these neurons is necessary to resolve this issue.\n\n2) Calcium imaging of ppk301 neurons in ppk301 mutants in response to salt and water, which would presumably show a change in the water response compared to controls. This would greatly assist in linking the mutant behavior with the physiology of the neurons.\n\nOther points:\n\n1) This study clearly demonstrated that ppk301 is involved in egg-laying behavior in females. But it is unclear if ppk301-expressing neurons have instructive or permissive signals for this behavior. The authors favor an instructive model where the activation of ppk301 is directly linked to egg-laying. However, based on the functional data (Figure 5), ppk301-expressing neurons may simply transmit liquid information (e.g., existence of liquid) regardless of salinity, which provides permissive signals for egg-laying behavior. Subsequently, other pathways may mediate instructive signals for laying or not laying eggs based on salt concentration. These two models are testable by gain-of-function manipulation on ppk301 neurons: if the authors' model is correct, artificial activation of these neurons would drive egg-laying behavior without proximal water. Nevertheless, these experiments require a generation of new reporter line. If this is not feasible, it is worth considering a permissive model in Figure 5G.\n\n2) To more easily compare the results with artificial seawater to those with NaCl, it would be nice if the salt concentration were given for each percentage of artificial seawater.\n\n3) The authors should cite:\n\nGustatory receptor neuron responds to DEET and other insect repellents in the yellow-fever mosquito, Aedes aegypti\n\nBy: Sanford, Jillian L.; Shields, Vonnie D. C.; Dickens, Joseph C.\n\nNATURWISSENSCHAFTEN Volume: 100 Issue: 3 Pages: 269-273 Published: MAR 2013\n\nwhich has shown the existence of salt sensing neurons in Aedes (that don't also respond to water).\n",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19008dad-e1b2-44c0-943c-68ec9866191b",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C1",
+      "claim": "Female Aedes aegypti mosquitoes are deadly vectors of arboviral pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Female Aedes aegypti mosquitoes are deadly vectors of arboviral pathogens and breed in containers of freshwater associated with human habitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as established background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "f1dfc795-85cd-46f1-a14a-28c61d4eedfd",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C2",
+      "claim": "Aedes aegypti mosquitoes breed in containers of freshwater associated with human habitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Female Aedes aegypti mosquitoes are deadly vectors of arboviral pathogens and breed in containers of freshwater associated with human habitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as established background information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "dbd7bf9a-1783-4372-bd24-03b2909bfb7a",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C3",
+      "claim": "High salinity is lethal to Aedes aegypti offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Because high salinity is lethal to offspring, correctly evaluating water purity is a crucial parenting decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 1E,G showing dose-dependent lethality of offspring in salt solutions.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "ca428534-e2fd-4e58-826b-48cb90060ba3",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C4",
+      "claim": "The DEG/ENaC channel ppk301 controls egg-laying initiation in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the DEG/ENaC channel ppk301 and sensory neurons expressing ppk301 control egg-laying initiation and choice in Ae. aegypti.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by behavioral data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "ca1beff3-3498-4c12-9d6b-607cba1f5f68",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C5",
+      "claim": "Sensory neurons expressing ppk301 control egg-laying choice in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the DEG/ENaC channel ppk301 and sensory neurons expressing ppk301 control egg-laying initiation and choice in Ae. aegypti.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by behavioral data in Figure 3D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "665e642e-09f3-4deb-889a-50013ecd63c5",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C6",
+      "claim": "ppk301-expressing cells show ppk301-dependent responses to water.",
+      "claim_type": "EXPLICIT",
+      "source": "Using calcium imaging, we found that ppk301-expressing cells show ppk301-dependent responses to water but, unexpectedly, also respond to salt in a ppk301-independent fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by calcium imaging data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "64ed2100-7025-483e-b466-48923d90583d",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C7",
+      "claim": "ppk301-expressing cells respond to salt in a ppk301-independent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Using calcium imaging, we found that ppk301-expressing cells show ppk301-dependent responses to water but, unexpectedly, also respond to salt in a ppk301-independent fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by calcium imaging data in Figure 5D-F showing responses to salt persist in ppk301 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "48c1c5fc-d43f-4848-9bb0-113388e0f908",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C8",
+      "claim": "ppk301 is instructive for egg-laying at low-salt concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that ppk301 is instructive for egg-laying at low-salt concentrations, but that a ppk301-independent pathway is responsible for inhibiting egg-laying at high-salt concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the calcium imaging and behavioral data presented in the abstract.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "b5eab51c-dc02-4f6f-8252-c9ee82b04d36",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C9",
+      "claim": "A ppk301-independent pathway is responsible for inhibiting egg-laying at high-salt concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that ppk301 is instructive for egg-laying at low-salt concentrations, but that a ppk301-independent pathway is responsible for inhibiting egg-laying at high-salt concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the calcium imaging and behavioral data presented in the abstract.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "b12d8c54-c900-47ad-8bb0-edfa91d6261b",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C10",
+      "claim": "Many strains of Ae. aegypti are anthropophilic.",
+      "claim_type": "EXPLICIT",
+      "source": "Many strains of Ae. aegypti are anthropophilic, meaning that they target humans as their preferred blood source (Ponlawat and Harrington, 2005; McBride et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "1d33a913-ed35-48f8-a5c3-7d6dc79cdcd2",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C11",
+      "claim": "Anthropophilic mosquitoes target humans as their preferred blood source.",
+      "claim_type": "EXPLICIT",
+      "source": "Many strains of Ae. aegypti are anthropophilic, meaning that they target humans as their preferred blood source (Ponlawat and Harrington, 2005; McBride et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "67495a82-a908-4179-b034-1b35037f0bbc",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C12",
+      "claim": "A female Ae. aegypti mosquito must take a blood-meal to develop a batch of eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "A female Ae. aegypti mosquito must take a blood-meal to develop a batch of eggs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about mosquito biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "7235a7a0-c85d-465a-8e28-291694fd367d",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C13",
+      "claim": "Once proteins and other nutrients in the blood have been converted into eggs, a female mosquito must find a suitable body of freshwater to lay these eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "Once proteins and other nutrients in the blood have been converted into eggs, a female mosquito must find a suitable body of freshwater to lay these eggs (Day, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "5f9f225c-71cf-4aea-afb1-c1e1c0931bbd",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C14",
+      "claim": "Larval and pupal stages of Ae. aegypti are aquatic.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval and pupal stages of Ae. aegypti are aquatic and thus the choice of egg-laying site is a primary determinant of offspring survival (Christophers, 1960; Powell and Tabachnick, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "ed29af37-af6b-444f-a17a-9a63c5e00c98",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C15",
+      "claim": "The choice of egg-laying site is a primary determinant of offspring survival in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval and pupal stages of Ae. aegypti are aquatic and thus the choice of egg-laying site is a primary determinant of offspring survival (Christophers, 1960; Powell and Tabachnick, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support and logical inference from the aquatic nature of larvae.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "a628de4c-705f-4b1e-91d5-33a1effed7d8",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C16",
+      "claim": "Ae. aegypti often lay eggs in small containers of freshwater in the field.",
+      "claim_type": "EXPLICIT",
+      "source": "In the field, Ae. aegypti often lay eggs in small containers of freshwater, such as drinking water storage containers, discarded tires, clogged gutters, and other by-products of human settlement, likely contributing to their pernicious ability to adapt and colonize human settlements across the globe (Kraemer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "35577444-4c16-4089-8ae6-4182380b4c9d",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C17",
+      "claim": "Ae. aegypti lay eggs in drinking water storage containers, discarded tires, clogged gutters, and other by-products of human settlement.",
+      "claim_type": "EXPLICIT",
+      "source": "In the field, Ae. aegypti often lay eggs in small containers of freshwater, such as drinking water storage containers, discarded tires, clogged gutters, and other by-products of human settlement, likely contributing to their pernicious ability to adapt and colonize human settlements across the globe (Kraemer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "3d2b9c45-8b83-44fe-8c92-d95828a13201",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C18",
+      "claim": "The egg-laying behavior of Ae. aegypti contributes to their ability to adapt and colonize human settlements across the globe.",
+      "claim_type": "EXPLICIT",
+      "source": "In the field, Ae. aegypti often lay eggs in small containers of freshwater, such as drinking water storage containers, discarded tires, clogged gutters, and other by-products of human settlement, likely contributing to their pernicious ability to adapt and colonize human settlements across the globe (Kraemer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a likely inference with citation support.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "bde1ae4c-6362-414b-8506-101a5cae65f3",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C19",
+      "claim": "The act of choosing an egg-laying site in Ae. aegypti is a deliberate and evaluative behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The act of choosing an egg-laying site in many insects, including Ae. aegypti, is a deliberate and evaluative behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about insect behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "e2fe0ce8-d12c-488b-a74c-1b7608501754",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C20",
+      "claim": "A female Ae. aegypti mosquito with a fully developed batch of eggs will use elevated humidity and bacterial volatiles to locate water at a distance.",
+      "claim_type": "EXPLICIT",
+      "source": "A female Ae. aegypti mosquito with a fully developed batch of eggs will use elevated humidity and bacterial volatiles to locate water at a distance (Bentley and Day, 1989; Barbosa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "d83809ed-bf98-43e9-a319-de7861fe3b79",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C21",
+      "claim": "Once in close-range, a mosquito contacts water to evaluate its suitability for egg-laying by sensing salinity, food, bitter toxins, and animal-derived chemical signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Once in close-range, a mosquito contacts water to evaluate its suitability for egg-laying by sensing a wide variety of cues that include salinity, food, bitter toxins, and animal-derived chemical signals indicating the density of conspecific larvae and pupae or the presence of predators (Hudson, 1956; Benzon and Apperson, 1988; Bentley and Day, 1989; Zahiri and Rau, 1998; Pamplona et al., 2009; Afify and Galizia, 2015; Day, 2016; Zuharah et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with extensive citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "18568f76-d2af-4bd6-8040-a812aa7bc67d",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C22",
+      "claim": "A female Ae. aegypti mosquito with a fully developed batch of eggs will evaluate a potential egg-laying site by physical contact with legs and proboscis.",
+      "claim_type": "EXPLICIT",
+      "source": "A female Ae. aegypti mosquito with a fully developed batch of eggs will first evaluate a potential egg-laying site by physical contact with some combination of sensory tissues that include all three pairs of legs and her proboscis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on observations described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "fddcc9b2-a12f-4ddc-ab8f-726c67c40014",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C23",
+      "claim": "If a site is deemed suitable, Ae. aegypti will lay eggs singly on the moist substrate above the waterline.",
+      "claim_type": "EXPLICIT",
+      "source": "If a site is deemed suitable, she will lay eggs singly on the moist substrate above the waterline (Hudson, 1956) (Figure 1A, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with citation support and visual evidence from Figure 1A and Video 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "112ac8e5-a04a-4744-9230-b9a04bc6353e",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C24",
+      "claim": "When a mesh barrier blocks access to liquid water, female Ae. aegypti do not lay eggs even with free access to moist filter paper substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "When we used a mesh barrier to block access to liquid water, females did not lay eggs, even though they had free access to the moist filter paper substrate (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "172b911b-8a76-428e-930e-2dfd90575932",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C25",
+      "claim": "Direct contact with liquid water is necessary to stimulate egg-laying in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this suggests that direct contact with liquid water is necessary to stimulate egg-laying in Ae. aegypti and we set out to probe the molecular and cellular basis of this water-sensation to better understand this critical mosquito behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the mesh barrier experiment data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "90db7c3a-a121-43ad-a330-895e279917da",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C26",
+      "claim": "Ae. aegypti can be found in abundance in coastal regions rich with standing saltwater.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, they can be found in abundance in a number of coastal regions rich with standing saltwater (Ramasamy et al., 2014; de Brito Arduino et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "65e1c84e-153e-4be1-880e-e25f0a7cfd44",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C27",
+      "claim": "Ae. aegypti mosquitoes showed no significant preference between deionized water and dilute seawater up to 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosquitoes showed no significant preference between deionized water and dilute seawater up to 10%, with individual mosquitoes either picking a solution at random or distributing their eggs between both solutions (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "d4730535-e0b5-4935-b787-a069cdfdb200",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C28",
+      "claim": "Ae. aegypti mosquitoes showed a strong dose-dependent aversion to higher concentrations of seawater, with an IC50 of 12.25% seawater.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they showed a strong dose-dependent aversion to higher concentrations of seawater, with an IC50 of 12.25% seawater (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "2b1cb0d7-cb71-4b57-a482-14990e00a00c",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C29",
+      "claim": "Female Ae. aegypti showed near-complete aversion to 25\u2013100% seawater.",
+      "claim_type": "EXPLICIT",
+      "source": "Females showed near-complete aversion to 25\u2013100% seawater (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "aa1e0089-40f3-4085-bc4a-7101ba76da90",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C30",
+      "claim": "Offspring survival in varying concentrations of seawater shows dose-dependent lethality with LD50 = 25.23%.",
+      "claim_type": "EXPLICIT",
+      "source": "When we measured survival of offspring reared in varying concentrations of seawater, we found dose-dependent lethality (LD50 = 25.23%) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "328771ab-aa9b-4370-8cd9-73fdb9ee88b1",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C31",
+      "claim": "Female Ae. aegypti showed dose-dependent inhibition of egg-laying with increasing concentrations of NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Females showed dose-dependent inhibition of egg-laying with increasing concentrations of NaCl (Figure 1F) when they were only given access to a single concentration, suggesting that the preference for freshwater may be driven in part by an aversion to laying eggs in saltwater.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "eec2a275-4664-45ed-bf0d-8524e2b45677",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C32",
+      "claim": "NaCl produced a dose-dependent decrease in offspring survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to artificial seawater, NaCl produced a dose-dependent decrease in offspring survival (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "7aea75ec-b851-49ef-94a2-2ed4bbe4a349",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C33",
+      "claim": "The female mosquito's choice of freshwater or saltwater correlates with the survival of her offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the female mosquito's choice of freshwater or saltwater correlates with the survival of her offspring, making this an essential decision for the propagation and fitness of the species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data on egg-laying preference and offspring survival.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "ebf5fde6-1b26-4a38-b924-49d5e0e1b0c4",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C34",
+      "claim": "The Ae. aegypti genome contains 31 ppk genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Through manual curation of geneset annotations, we predict that the Ae. aegypti genome (Matthews et al., 2018) contains 31 ppk genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from manual curation with citation to the genome reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "5919a85b-0926-42fe-b9b3-cc269ddc7bd1",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C35",
+      "claim": "Chromosome 1 of Ae. aegypti has only three ppk genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These are unevenly distributed across its three chromosomes. Whereas chromosome 1 has only three ppk genes, chromosome 3 has 22, including three clusters of 3\u20137 ppk genes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from genome analysis and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "7530a618-12fd-419a-8391-ccc7d01388e3",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C36",
+      "claim": "Chromosome 3 of Ae. aegypti has 22 ppk genes, including three clusters of 3\u20137 ppk genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These are unevenly distributed across its three chromosomes. Whereas chromosome 1 has only three ppk genes, chromosome 3 has 22, including three clusters of 3\u20137 ppk genes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from genome analysis and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "e08b5bc6-f469-4b2a-8568-7b1f8bc793bb",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C37",
+      "claim": "Many ppk genes have clear 1-to-1 orthologues in Drosophila melanogaster and Anopheles gambiae, while others are in species-specific expansions.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted protein products of many ppk genes have clear 1-to-1 orthologues in Drosophila melanogaster and the malaria mosquito Anopheles gambiae, while others are in species-specific expansions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from phylogenetic analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "d77e1cf0-fd54-425a-8663-8be92dd787a9",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C38",
+      "claim": "ppk genes show a broad range of expression patterns in adult tissues, including in legs, proboscis, and other sensory tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of tissue-specific transcript abundance using previously published RNA-seq data (Matthews et al., 2016; Matthews et al., 2018) reveals a broad range of expression patterns in adult tissues, including in legs, proboscis, and other sensory tissues (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from RNA-seq data analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "78d6308c-e20d-4379-b85a-770ad06d7ece",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C39",
+      "claim": "All four ppk mutant strains tested were attracted to and engorged fully on the blood of a live human host.",
+      "claim_type": "EXPLICIT",
+      "source": "We first measured the ability of these mutant strains to blood-feed and found that all four were attracted to and engorged fully on the blood of a live human host (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "9fe578b2-1abc-4e82-ad84-941efd6bf69a",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C40",
+      "claim": "ppk301 mutants showed a defect in egg-laying, with fewer than 40% laying more than 10 eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "One mutant, ppk301, an orthologue of the Drosophila melanogaster ppk28 low-osmolality sensor (Cameron et al., 2010; Chen et al., 2010), showed a defect in egg-laying. Fewer than 40% of ppk301 mutants laid more than 10 eggs (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "237a2bcd-ad71-4ba1-9684-a41c7207d101",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C41",
+      "claim": "ppk301 is an orthologue of the Drosophila melanogaster ppk28 low-osmolality sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "One mutant, ppk301, an orthologue of the Drosophila melanogaster ppk28 low-osmolality sensor (Cameron et al., 2010; Chen et al., 2010), showed a defect in egg-laying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "c62bacdf-c727-46ab-8558-37ae2f637a4c",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C42",
+      "claim": "There was no difference in the number of mature eggs in ovaries between wild-type and ppk301 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude the possibility that this defect was due to an inability to convert blood into developed embryos, we counted the number of mature eggs in ovaries and confirmed that there was no difference between wild-type and ppk301 mutants (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "081a1ff2-140b-4997-a190-431a4663f696",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C43",
+      "claim": "ppk301 mutant animals laid fewer eggs than wild-type on water and more eggs than wild-type on 200 mOsm/kg NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when ppk301 mutant animals laid eggs, they laid fewer eggs than wild-type on water and more eggs than wild-type on 200 mOsm/kg NaCl (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "1b2f5f6d-29ee-429c-b1e9-ca892e70307a",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C44",
+      "claim": "Only the ppk301 mutant showed a significant reduction in aversion to salt solution across a range of NaCl concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We assayed these four ppk mutant strains across a range of NaCl concentrations and found a significant reduction in aversion to salt solution only in the ppk301 mutant, as measured by the proportion of animals laying eggs primarily on salt solution (Figure 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 3D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "cbd48cfc-934c-491e-88c6-3e841e34dfe5",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C45",
+      "claim": "Mutations in ppk301 disrupt freshwater egg-laying by dramatically reducing the drive to lay eggs in suitable, low-salt substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support the conclusion that mutations in ppk301 disrupt freshwater egg-laying in two distinct ways: by dramatically reducing the drive to lay eggs in suitable, low-salt, substrates and reducing the aversion to concentrations of NaCl that are lethal to their offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "d5144a2d-fda1-404f-8183-09ad2a75e81d",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C46",
+      "claim": "Mutations in ppk301 reduce the aversion to concentrations of NaCl that are lethal to offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support the conclusion that mutations in ppk301 disrupt freshwater egg-laying in two distinct ways: by dramatically reducing the drive to lay eggs in suitable, low-salt, substrates and reducing the aversion to concentrations of NaCl that are lethal to their offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "5342349c-33db-46ac-9f7f-908855f3c1e3",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C47",
+      "claim": "The vast majority of wild-type and ppk301 heterozygous animals laid all their eggs within the first 2 days of being introduced into egg-laying vials.",
+      "claim_type": "EXPLICIT",
+      "source": "While the vast majority of wild-type and ppk301 heterozygous animals laid all their eggs within the first 2 days of being introduced into egg-laying vials, ppk301 mutant animals did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 3G-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "f38c2058-0e0b-436f-abe9-f5a29020ff8d",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C48",
+      "claim": "ppk301 mutant animals showed increased variability in the time of egg-laying initiation and a tendency to spread egg-laying out over many days.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the mutants showed increased variability in the time of egg-laying initiation and a tendency to spread egg-laying out over many days (Figure 3G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data in Figure 3G-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "7c9c2b7d-9a67-4dc1-b0d2-133e4a9c7cf0",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C49",
+      "claim": "The slow, sustained, and variable egg-laying behavior of ppk301 mutants on freshwater is consistent with a defect in sensing the water that triggers egg-laying.",
+      "claim_type": "EXPLICIT",
+      "source": "This slow, sustained, and variable egg-laying behavior on freshwater is consistent with a defect in sensing the water that triggers egg-laying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data in Figure 3G-J.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "e9e9df50-d4d0-48ec-abe3-1d51184ecc57",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C50",
+      "claim": "T2A functions efficiently to prevent peptide bond formation in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy revealed complete subcellular separation of the two fluorophores in individual larval body-wall cells (Figure 4A). This demonstrates that T2A functions efficiently to prevent peptide bond formation in Ae. aegypti and can be used as a tool to independently express multiple gene products from a single locus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by imaging data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "dd5ef232-da17-46de-bbad-fcbb8db7d875",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C51",
+      "claim": "T2A can be used as a tool to independently express multiple gene products from a single locus in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that T2A functions efficiently to prevent peptide bond formation in Ae. aegypti and can be used as a tool to independently express multiple gene products from a single locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the T2A test construct validation experiment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "e5ea02a7-af1c-4cb5-9b7c-dc7835012b2b",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C52",
+      "claim": "Sensory neurons innervating trichoid sensilla in the labellar lobes of the proboscis express ppk301.",
+      "claim_type": "EXPLICIT",
+      "source": "We looked for expression of the ppk301>dTomato-T2A-GCaMP6s reporter in the appendages that contact water during egg-laying (Figure 4D) and found that sensory neurons innervating trichoid sensilla in the labellar lobes of the proboscis (Figure 4E) were labeled.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by imaging data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "9e17e002-4aba-4c81-976f-acaf47fd9085",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C53",
+      "claim": "ppk301 is expressed in the legs, primarily in the distal tarsal segments.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found labeling in the legs, primarily in the distal tarsal segments (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by imaging data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "72b3eb77-9bf8-4710-bf40-6edc9654bdcd",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C54",
+      "claim": "Projections of ppk301-expressing sensory neurons in the head extend processes specifically to the subesophageal zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Projections of ppk301-expressing sensory neurons in the head extend processes specifically to the subesophageal zone (Figure 4H,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by imaging data in Figure 4H,J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "ade357d0-68dd-4741-a2b9-b542e8880ee0",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C55",
+      "claim": "Two nerves enter each hemisphere of the subesophageal zone, arising from the proboscis and the pharynx.",
+      "claim_type": "EXPLICIT",
+      "source": "Two nerves enter each hemisphere of the subesophageal zone, arising from the proboscis and the pharynx (Figure 4J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by imaging data in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "bd1c4c89-ac90-466b-a2a0-edccccec07ca",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C56",
+      "claim": "Each leg sends projections into the ventral nerve cord, with nerves running into each neuromere.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, each leg sends projections into the ventral nerve cord, with nerves running into each neuromere (Figure 4K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by imaging data in Figure 4K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "5145b95e-b5f5-4106-9c9a-ee96b9801738",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C57",
+      "claim": "Both brain and ventral nerve cord innervation patterns of ppk301-expressing neurons are consistent with these neurons mediating taste sensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both brain and ventral nerve cord innervation patterns are consistent with these neurons mediating taste sensation (Scott, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the anatomical data with citation support.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "6827a0db-2783-4fd7-bd8b-13344ac5d735",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C58",
+      "claim": "Projections of ppk301-expressing neurons are present in the male brain and ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that projections of ppk301-expressing neurons are also present in the male brain and ventral nerve cord (Figure 4\u2014figure supplement 1A\u2013C), consistent with a role for ppk301 in behaviors other than egg-laying.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by imaging data in Figure 4\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "8bed1c78-696b-4222-ab9f-aafbea3f97a9",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C59",
+      "claim": "The presence of ppk301 projections in males is consistent with a role for ppk301 in behaviors other than egg-laying.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that projections of ppk301-expressing neurons are also present in the male brain and ventral nerve cord (Figure 4\u2014figure supplement 1A\u2013C), consistent with a role for ppk301 in behaviors other than egg-laying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of ppk301 expression in males.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "94a429b7-5564-4304-9e78-eb48bb2ccf9b",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C60",
+      "claim": "ppk301-expressing neuronal projections in the ventral nerve cord were identified by dTomato expression.",
+      "claim_type": "EXPLICIT",
+      "source": "ppk301-expressing neuronal projections in the ventral nerve cord were identified by dTomato expression (Figure 5C), which was also used to determine the region of interest for calcium imaging analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental method shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "9d51a8cc-7aa8-4a7b-a045-45275a2e95df",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C61",
+      "claim": "Low GCaMP6s fluorescence was observed at baseline and an increase in fluorescence occurred in every trial where water was presented.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed low GCaMP6s fluorescence at baseline and an increase in fluorescence in every trial where water was presented (Figure 5C\u2013E), with no apparent desensitization across trials (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by calcium imaging data in Figure 5C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "3b7488bd-5816-4881-955d-4b4939a205f4",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C62",
+      "claim": "There was no apparent desensitization of ppk301-expressing neurons across trials of water presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed low GCaMP6s fluorescence at baseline and an increase in fluorescence in every trial where water was presented (Figure 5C\u2013E), with no apparent desensitization across trials (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the calcium imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "884d183a-c13e-4408-9987-7dc0eee9002c",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C63",
+      "claim": "Only the ipsilateral side of the ventral nerve cord innervated by the stimulated leg showed activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the ipsilateral side of the ventral nerve cord innervated by the stimulated leg showed activation (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the calcium imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "97fc9194-db20-4a05-8678-6f78ac0e6d4b",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C64",
+      "claim": "In D. melanogaster, cells that express ppk28 respond to water but are inhibited by high osmolality solutions including NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "In D. melanogaster, cells that express the ppk301 orthologue ppk28 respond to water but are inhibited by high osmolality solutions including NaCl (Cameron et al., 2010; Chen et al., 2010; Jaeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support as background information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "15771549-f0a3-4b01-8fbf-9fdcdf0bb1c8",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C65",
+      "claim": "The population response in ppk301-expressing afferents in the mosquito is functionally different from D. melanogaster ppk28, showing robust responses to water and strong activation by salt solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "The population response in ppk301-expressing afferents in the mosquito is functionally different, showing robust responses to water and strong activation by salt solutions (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by calcium imaging data in Figure 5D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "2a28fe40-6276-483c-9bfb-0eb300545e55",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C66",
+      "claim": "The response to water is almost entirely abolished in the ppk301 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether ppk301 is required for the neuronal responses to water or salt, we performed imaging experiments in a ppk301 mutant background and found that the response to water is almost entirely abolished in the ppk301 mutant (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by calcium imaging data in Figure 5D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "b36df8c6-0bac-4f40-9ce1-b0f6a948bbf7",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C67",
+      "claim": "200 and 300 mOsm/kg NaCl solutions still elicited a strong response in the ppk301 mutant, albeit with a small reduction in amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 200 and 300 mOsm/kg NaCl solutions still elicited a strong response in the ppk301 mutant, albeit with a small reduction in amplitude (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by calcium imaging data in Figure 5D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "6ebab08c-70b5-4dc9-b7ad-4261086be206",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C68",
+      "claim": "ppk301 is required for the activation of ppk301-expressing neurons by freshwater.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that ppk301 is required for the activation of these neurons by freshwater and that a ppk301-independent pathway activates these neurons in response to salt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the calcium imaging data in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "35871518-a59e-4c7d-900c-630cc378a445",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C69",
+      "claim": "A ppk301-independent pathway activates ppk301-expressing neurons in response to salt.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that ppk301 is required for the activation of these neurons by freshwater and that a ppk301-independent pathway activates these neurons in response to salt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the calcium imaging data in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "864a6b62-5691-4d41-bfea-89a7b52a38ca",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C70",
+      "claim": "Mosquito ppk301-expressing afferents are either multi-modal and each neuron responds to both water and salt, or there is a functionally heterogeneous population of ppk301-expressing afferents with distinct neurons responding to water and salt.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that mosquito ppk301-expressing afferents are either multi-modal (Zocchi et al., 2017) and each neuron responds to both water and salt, or that there is a functionally heterogeneous population of ppk301-expressing afferents with distinct neurons responding to water and salt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the calcium imaging data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "7823bb14-9540-4ee2-9c9e-9b2949fafc23",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C71",
+      "claim": "ppk301-expressing neurons did not respond more strongly to L-serine or D-(+)-cellobiose at 200 mOsm/kg than they did to water alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ppk301-expressing neurons did not respond more strongly to L-serine or D-(+)-cellobiose than they did to water alone (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by calcium imaging data in Figure 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "88127817-3869-4578-9ab3-5fc5db479e94",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C72",
+      "claim": "Activity in ppk301-expressing neurons does not only track with osmotic pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, activity in these neurons does not only track with osmotic pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experiment with L-serine and D-(+)-cellobiose.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "abadd3ac-df0b-4087-9ced-c5dec4358db0",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C73",
+      "claim": "Female mosquitoes found 200 mOsm/kg NaCl highly aversive but did not discriminate between freshwater and L-serine or D-(+)-cellobiose at 200 mOsm/kg.",
+      "claim_type": "EXPLICIT",
+      "source": "Although female mosquitoes found 200 mOsm/kg NaCl highly aversive, they did not discriminate between freshwater and L-serine or D-(+)-cellobiose at 200 mOsm/kg (Figure 6C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by behavioral data in Figure 6C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "37652cb9-5d91-4e1b-804c-effed18a3878",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C74",
+      "claim": "The behavioral aversion to salt is unrelated to osmotic pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the behavioral aversion to salt is unrelated to osmotic pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral experiments with L-serine and D-(+)-cellobiose.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "3330222a-1543-4e7f-88d2-fe6a1587650a",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C75",
+      "claim": "Both wild-type and ppk301 mutant mosquitoes contacted water, but only wild-type females consistently transformed these touches into egg-laying events.",
+      "claim_type": "EXPLICIT",
+      "source": "Both wild-type and ppk301 mutant mosquitoes contacted water, but only wild-type females consistently transformed these touches into egg-laying events (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by behavioral observation data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "c61c4100-ab13-4209-a9a1-2a897d1daca0",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C76",
+      "claim": "When offered 300 mOsm/kg salt solution, both wild-type and ppk301 mutant mosquitoes touched liquid, but neither genotype reliably laid eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "When offered 300 mOsm/kg salt solution, both wild-type and ppk301 mutant mosquitoes touched liquid, but neither genotype reliably laid eggs (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by behavioral observation data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "38fc0d5b-0db7-4dcf-95d3-61990ea88a39",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C77",
+      "claim": "Activation of ppk301 cells by water is a permissive signal for rapid and reliable egg-laying.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with a model (Figure 7B) in which activation of ppk301 cells by water is a permissive signal for rapid and reliable egg-laying.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "e04d694a-5f16-44a9-a32c-881c006179f7",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C78",
+      "claim": "Animals lacking ppk301 fail to detect the water activation signal and show delayed and intermittent egg-laying.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals lacking ppk301 fail to detect the water activation signal and show delayed and intermittent egg-laying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "c0cb9f4d-1468-4a65-a66b-646ba6154130",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C79",
+      "claim": "Activation of ppk301-expressing neurons by high salt is not sufficient to drive egg-laying.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of ppk301-expressing neurons by high salt is not sufficient to drive egg-laying, suggesting that ppk301-expressing cells gate egg-laying at low NaCl concentrations, but as NaCl concentrations increase, an independent noxious salt-sensing pathway is recruited that overrides the activation of the tarsal ppk301-expressing cells imaged in this study to inhibit egg-laying (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the proposed model based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "4adc2476-3656-4d0a-8c29-4f4e30a7e82a",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C80",
+      "claim": "ppk301-expressing cells gate egg-laying at low NaCl concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of ppk301-expressing neurons by high salt is not sufficient to drive egg-laying, suggesting that ppk301-expressing cells gate egg-laying at low NaCl concentrations, but as NaCl concentrations increase, an independent noxious salt-sensing pathway is recruited that overrides the activation of the tarsal ppk301-expressing cells imaged in this study to inhibit egg-laying (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the proposed model based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "e9631c4f-e173-47c9-b947-712637a4b3dd",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C81",
+      "claim": "As NaCl concentrations increase, an independent noxious salt-sensing pathway is recruited that overrides the activation of the tarsal ppk301-expressing cells to inhibit egg-laying.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of ppk301-expressing neurons by high salt is not sufficient to drive egg-laying, suggesting that ppk301-expressing cells gate egg-laying at low NaCl concentrations, but as NaCl concentrations increase, an independent noxious salt-sensing pathway is recruited that overrides the activation of the tarsal ppk301-expressing cells imaged in this study to inhibit egg-laying (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the proposed model based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "cb853514-fda3-4fad-b215-76c05a4d6cf2",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C82",
+      "claim": "Mutations that disrupt the noxious salt sensor would yield mosquitoes that show indiscriminate egg-laying on a high-salt substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict mutations that disrupt this noxious salt sensor would yield mosquitoes that show indiscriminate egg-laying on a high-salt substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the proposed model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "830866b5-f637-4226-be3e-84595e134463",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C83",
+      "claim": "Sensory neurons in the D. melanogaster proboscis that express ppk28 are maximally activated by water but inhibited by dissolved solutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory neurons in the D. melanogaster proboscis that express the orthologous ppk28 gene are maximally activated by water but inhibited by dissolved solutes (Cameron et al., 2010; Chen et al., 2010; Jaeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support as background information for comparison.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "9087cf50-693d-441e-a473-23b19099022e",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C84",
+      "claim": "The afferents of the ppk301-expressing cells in the mosquito tarsi are not tuned specifically to osmolality but rather encode multimodal responses to liquid (ppk301-dependent) and to high concentrations of salt (ppk301-independent).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the afferents of the ppk301-expressing cells in the mosquito tarsi are not tuned specifically to osmolality but rather encode multimodal responses to liquid (ppk301-dependent) and to high concentrations of salt (ppk301-independent).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the calcium imaging experiments comparing mosquito to fly.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "c4701682-7a46-4c79-8cda-5c61cb143e94",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C85",
+      "claim": "ppk301-dependent activation of sensory neurons by liquid provides a permissive signal required for egg-laying.",
+      "claim_type": "EXPLICIT",
+      "source": "We favor a model in which ppk301-dependent activation of sensory neurons by liquid provides a permissive signal required for egg-laying, while high concentrations of salt activate noxious salt pathway(s) that can override this signal and prevent egg-laying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the favored model proposed in the Discussion based on all experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "752b9133-40d6-4dbf-97f5-a0de09ce49d8",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C86",
+      "claim": "High concentrations of salt activate noxious salt pathway(s) that can override the ppk301 signal and prevent egg-laying.",
+      "claim_type": "EXPLICIT",
+      "source": "We favor a model in which ppk301-dependent activation of sensory neurons by liquid provides a permissive signal required for egg-laying, while high concentrations of salt activate noxious salt pathway(s) that can override this signal and prevent egg-laying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the favored model proposed in the Discussion based on all experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "aebf389c-a746-43dc-aea8-0e91318a9f30",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C87",
+      "claim": "ppk301 ion channels could be homomers that respond to osmotic pressure, similar to D. melanogaster ppk28.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that ppk301 ion channels are homomers that respond to osmotic pressure, similar to D. melanogaster ppk28 (Cameron et al., 2010; Chen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative possibility discussed with citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "86935272-f55b-4bcb-ba59-f4c4be5cf678",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C88",
+      "claim": "ppk301 could encode a promiscuous subunit that could be part of multiple heteromeric PPK channels with different ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, ppk301 could encode a promiscuous subunit that could be part of multiple heteromeric PPK channels with different ligands that account for some of the multimodal tuning properties seen in ppk301-expressing tarsal sensory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative possibility discussed.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "eab8f34f-6c4f-4497-9a0b-b1a56d8535be",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C89",
+      "claim": "Genetic ablation of ppk301 could result in a novel set of PPK channels composed of the remaining subunits, thereby shifting the composition of channels on the membrane and influencing overall neuronal tuning properties.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, genetic ablation of ppk301 could result in a novel set of PPK channels that are composed of the remaining subunits, thereby shifting the composition of channels on the membrane and influencing overall neuronal tuning properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative scenario discussed.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "2a641dd8-137e-4a57-8da0-860bf1e0bc64",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C90",
+      "claim": "Both male and female adult mosquitoes must seek out liquid for survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Terrestrial insects such as mosquitoes are small and have a large surface-area-to-volume ratio, meaning that they are susceptible to desiccation. Therefore, both male and female adult mosquitoes must seek out liquid for survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about insect physiology.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "5a3bc49b-91c2-47fa-a899-9328178452d0",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C91",
+      "claim": "ppk301 is expressed in both male and female appendages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that ppk301 is expressed in both male and female appendages, and that neurons expressing ppk301 project to similar areas of the brain and ventral nerve cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the expression analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "3e342c9f-64a1-4a64-81e6-62398f8fb8f7",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C92",
+      "claim": "Neurons expressing ppk301 project to similar areas of the brain and ventral nerve cord in males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that ppk301 is expressed in both male and female appendages, and that neurons expressing ppk301 project to similar areas of the brain and ventral nerve cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the anatomical analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "65836f2b-dd7e-4d53-9eba-e1f9e1a4ba78",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C93",
+      "claim": "A canonical 'water' cell exists in the apical labral chemoreceptor sensilla of Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown the existence of a canonical 'water' cell in the apical labral chemoreceptor sensilla of Ae. aegypti (Werner-Reiss et al., 1999), but we do not see ppk301 expression in this tissue, indicating that there may be additional osmosensitive receptors encoded in the mosquito genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "c4bf2448-427e-47e6-9361-1dc731f889bf",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C94",
+      "claim": "ppk301 is not expressed in the apical labral chemoreceptor sensilla of Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown the existence of a canonical 'water' cell in the apical labral chemoreceptor sensilla of Ae. aegypti (Werner-Reiss et al., 1999), but we do not see ppk301 expression in this tissue, indicating that there may be additional osmosensitive receptors encoded in the mosquito genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "988fe235-e8b6-4a57-9d1d-de0e5023d28b",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C95",
+      "claim": "There may be additional osmosensitive receptors encoded in the mosquito genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown the existence of a canonical 'water' cell in the apical labral chemoreceptor sensilla of Ae. aegypti (Werner-Reiss et al., 1999), but we do not see ppk301 expression in this tissue, indicating that there may be additional osmosensitive receptors encoded in the mosquito genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that ppk301 is not expressed in the known water-sensing tissue.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "56068171-b0bf-43ad-8383-6891095f7929",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C96",
+      "claim": "In Drosophila, salt can activate or inhibit every class of gustatory receptor neuron in the proboscis.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study in Drosophila reveals that in the proboscis, salt can activate or inhibit every class of gustatory receptor neuron (Jaeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support as background information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "4e2bad02-aeb9-49c5-b94d-582271e3d0a9",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C97",
+      "claim": "Some strains of Ae. aegypti have begun to exploit brackish water for egg-laying.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, some strains of Ae. aegypti have begun to exploit brackish water for egg-laying (Ramasamy et al., 2014; de Brito Arduino et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "75f0524b-da3d-4936-b734-d7477c1f9c4b",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "claim_id": "C98",
+      "claim": "Adaptation to brackish water requires co-evolution of the shifting preference of females for salty water and larval tolerance of high salinity environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an adaptation requires co-evolution of the shifting preference of females for salty water and larval tolerance of high salinity environments into which they are deposited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference about evolutionary adaptation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f18f50be-b092-4664-823d-1f1aae390789",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Background claims establish that Aedes aegypti mosquitoes are deadly disease vectors that breed in freshwater containers associated with human habitation, require blood meals for egg development, and use complex sensory evaluation to select egg-laying sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C21) represent well-established background knowledge about Ae. aegypti biology and behavior, supported by extensive citations to prior literature. They provide appropriate context for the experimental work but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "82d3fe29-56f2-4f83-9eef-981c63de6a64",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Female Ae. aegypti mosquitoes show dose-dependent aversion to saltwater that correlates with offspring survival. Mosquitoes tolerate dilute seawater up to 10% but show strong aversion above 12.25% (IC50), with near-complete avoidance at 25-100%. Offspring survival shows dose-dependent lethality (LD50 = 25.23%), demonstrating that maternal egg-laying choices correlate with offspring fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C27-C33 are well-supported by experimental data in Figure 1D-G showing clear dose-response relationships for both behavioral preference and offspring survival. The IC50 and LD50 values are appropriately calculated, and the correlation between maternal choice and offspring survival is demonstrated. Statistical analyses appear appropriate with sufficient replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "91c69bc2-87a7-4c09-9641-bb78b800fc44",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Direct physical contact with liquid water is necessary to stimulate egg-laying in Ae. aegypti. When a mesh barrier blocks access to liquid water while maintaining access to moist substrate, females do not lay eggs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are supported by the mesh barrier experiment (Figure 1B,C) showing that mosquitoes require direct contact with liquid water for egg-laying. The experimental design appropriately controls for moisture availability while blocking liquid contact. However, the sample size (n=5 groups) is modest and additional replication would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "359e55bb-a86a-49fd-a2c5-af09963d0d97",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Ae. aegypti genome contains 31 ppk genes distributed unevenly across three chromosomes, with chromosome 3 containing 22 genes including three clusters. Many ppk genes have clear orthologues in D. melanogaster and An. gambiae, while others show species-specific expansions. Expression analysis reveals broad patterns across adult tissues including sensory appendages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by genomic annotation, phylogenetic analysis (Figure 2A,B), and RNA-seq data (Figure 2C). The manual curation approach is appropriate, though the methods for defining orthology relationships could be more explicitly described. The expression data appropriately uses published datasets with proper citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "fefa4b7f-23ef-46a8-846d-03b1aeb29668",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ppk301 mutant shows defects in egg-laying behavior while maintaining normal blood-feeding and egg development. Fewer than 40% of ppk301 mutants laid >10 eggs compared to wild-type. Mutants show reduced aversion to lethal salt concentrations and lay fewer eggs on water but more on 200 mOsm/kg NaCl compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 are well-supported by behavioral data in Figure 3A-F. The control showing normal ovary development (C42) appropriately rules out egg production defects. Statistical analyses with appropriate corrections are applied. The dual phenotype (reduced water response and reduced salt aversion) is clearly demonstrated across multiple salt concentrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "12eb95b1-5c56-4879-8ad7-be02dad3b937",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ppk301 mutants show delayed and variable egg-laying timing compared to wild-type. While wild-type and heterozygous animals lay all eggs within 2 days, mutants show increased variability in initiation timing and spread egg-laying over many days, consistent with a water-sensing defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by temporal egg-laying data in Figure 3G-J. The experimental design appropriately tracks individual animals over multiple days. The interpretation (C49) that this reflects a water-sensing defect is reasonable given the other data, though alternative explanations (e.g., general behavioral disruption) are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "bb448050-1dde-4508-b34f-baf1e601563d",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "T2A functions efficiently in Ae. aegypti to prevent peptide bond formation, enabling independent expression of multiple gene products from a single locus. This was demonstrated by complete subcellular separation of membrane-bound GFP and nuclear dsRed in larval body-wall cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by imaging data in Figure 4A showing clear separation of fluorophores. This is an important technical validation for the genetic tools developed in this study. The conclusion is appropriately limited to the tested context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "4e397b2b-53f6-4379-a315-823a488385a5",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ppk301 is expressed in sensory neurons of the proboscis (trichoid sensilla in labellar lobes) and distal tarsal segments of legs. Projections extend to the subesophageal zone in the brain and to neuromeres in the ventral nerve cord, consistent with a role in taste sensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 are supported by expression analysis using the ppk301-QF2 knock-in reporter (Figure 4E,F,H,J,K). The anatomical descriptions are detailed and appropriately referenced to established insect neuroanatomy. The interpretation of taste function (C57) is reasonable given the projection patterns and citation support, though functional confirmation would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "7e4472ed-2848-49f5-a144-8018a8493354",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ppk301 is expressed in both male and female appendages with similar projection patterns to brain and ventral nerve cord, consistent with roles beyond egg-laying behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 and C91-C92 are supported by imaging data in Figure 4\u2014figure supplement 1. The observation of expression in males appropriately suggests broader functional roles. However, the functional significance in males remains speculative without behavioral testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "14bdaace-02cf-456d-8fd4-deaf299feca2",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ppk301-expressing neurons in the ventral nerve cord respond robustly to both water and salt (200-300 mOsm/kg NaCl). In ppk301 mutants, water responses are almost entirely abolished while salt responses persist with only small amplitude reductions, demonstrating that ppk301 is required for water activation but a ppk301-independent pathway mediates salt responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C69 are strongly supported by calcium imaging data in Figure 5C-F. The experimental design appropriately uses within-animal comparisons and includes proper controls. The genetic dissection clearly demonstrates ppk301-dependent (water) and ppk301-independent (salt) responses. Sample sizes (n=8 animals, 24 sweeps each) are adequate. Statistical analyses with appropriate corrections are applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "6d572ccb-885b-4d2b-b06d-4b8f896986ce",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Unlike D. melanogaster ppk28 neurons that are inhibited by solutes, mosquito ppk301-expressing neurons show multimodal responses to both water (ppk301-dependent) and salt (ppk301-independent). The neurons may be individually multimodal or represent a heterogeneous population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C70, C83-C84 appropriately compare mosquito and fly systems with proper citations. The functional difference is clearly demonstrated by the calcium imaging data. The speculation about multimodal vs. heterogeneous populations (C70) is appropriately qualified as uncertain and would require single-cell resolution to resolve.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "4aa99527-1156-40ca-8400-d68cc001f1f3",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ppk301-expressing neurons do not respond more strongly to L-serine or D-(+)-cellobiose at 200 mOsm/kg than to water alone, indicating that neuronal activity does not simply track osmotic pressure. Behaviorally, mosquitoes show strong aversion to 200 mOsm/kg NaCl but do not discriminate between water and equi-osmolar L-serine or D-(+)-cellobiose, demonstrating that salt aversion is unrelated to osmotic pressure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 are well-supported by calcium imaging (Figure 6A-B) and behavioral data (Figure 6C-D). The experimental design appropriately controls for osmotic pressure by using equi-osmolar solutions. This is a critical control that strengthens the conclusion that salt-specific detection, rather than osmolality, drives the behavioral response. Statistical analyses are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "4bb49d76-de8b-40db-be2d-321d33ad586b",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Both wild-type and ppk301 mutants contact water, but only wild-type consistently transforms touches into egg-laying. On 300 mOsm/kg salt, both genotypes touch liquid but neither lays eggs reliably. This supports a model where ppk301 activation by water provides a permissive signal for egg-laying, while high salt activates a ppk301-independent noxious pathway that inhibits egg-laying.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C81 are supported by behavioral observation data (Figure 7A) and integrate well with the calcium imaging results. The model (C77-C81) is a reasonable interpretation of the combined data, though the proposed 'noxious salt sensor' remains hypothetical. The observation that ppk301 neurons are activated by high salt but this doesn't drive egg-laying is a key finding supporting the two-pathway model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "e87818a4-350c-4165-be7f-49f90f0a410f",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mutations disrupting the hypothetical noxious salt sensor would yield mosquitoes showing indiscriminate egg-laying on high-salt substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is a testable prediction based on the proposed model but remains speculative without experimental validation. The prediction is logical given the model but the noxious salt sensor has not been identified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "2407b73e-f3c1-41ff-9fb4-f3eec890f6b6",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors favor a model where ppk301-dependent activation by liquid provides a permissive signal for egg-laying, while high salt concentrations activate noxious pathways that override this signal to prevent egg-laying.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 represent the authors' favored mechanistic model integrating all experimental findings. The model is well-supported by the behavioral, genetic, and imaging data, though the molecular identity of the salt-sensing pathway (C86) remains speculative and requires future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "8701a95b-f9cc-446e-8273-fd649e333f5f",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Possible molecular mechanisms for ppk301 function include: homomeric channels responding to osmotic pressure (like D. melanogaster ppk28), promiscuous subunits forming heteromeric channels with different ligands, or genetic ablation creating novel channel compositions that shift tuning properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C89 are explicitly speculative possibilities discussed by the authors. These represent reasonable hypotheses about molecular mechanisms but lack experimental support in this study. They appropriately identify important questions for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "7c4b9a51-6159-48d3-8af5-1327ef7b6d53",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Both male and female mosquitoes must seek liquid for survival due to desiccation risk. A canonical 'water' cell exists in the apical labral chemoreceptor sensilla, but ppk301 is not expressed there, suggesting additional osmosensitive receptors exist in the mosquito genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90, C93-C95 combine general knowledge (C90) with cited prior work (C93) and observations from this study (C94). The inference about additional receptors (C95) is reasonable given the lack of ppk301 expression in known water-sensing tissue, though this remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "6d46328f-8900-4373-ab53-dc2322295ad0",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Some Ae. aegypti strains have adapted to exploit brackish water for egg-laying. Such adaptation requires co-evolution of female preference for salty water and larval tolerance of high salinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C97-C98 are supported by citations to prior work showing brackish water adaptation. The inference about co-evolution (C98) is logical and appropriately qualified. These claims provide important ecological context for the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    },
+    {
+      "id": "fba24c30-7e93-431a-ab72-f600e390a612",
+      "content_id": "fe35cef0-53d2-4f6d-b386-5f4dee601328",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "In Drosophila, salt can activate or inhibit every class of gustatory receptor neuron in the proboscis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is appropriately cited background information from recent Drosophila work, providing comparative context for understanding salt sensing complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:15:57.454779Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "19008dad-e1b2-44c0-943c-68ec9866191b",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "f1dfc795-85cd-46f1-a14a-28c61d4eedfd",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "b12d8c54-c900-47ad-8bb0-edfa91d6261b",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "1d33a913-ed35-48f8-a5c3-7d6dc79cdcd2",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "67495a82-a908-4179-b034-1b35037f0bbc",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "7235a7a0-c85d-465a-8e28-291694fd367d",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "5f9f225c-71cf-4aea-afb1-c1e1c0931bbd",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "ed29af37-af6b-444f-a17a-9a63c5e00c98",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "a628de4c-705f-4b1e-91d5-33a1effed7d8",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "35577444-4c16-4089-8ae6-4182380b4c9d",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "3d2b9c45-8b83-44fe-8c92-d95828a13201",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "bde1ae4c-6362-414b-8506-101a5cae65f3",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "e2fe0ce8-d12c-488b-a74c-1b7608501754",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "d83809ed-bf98-43e9-a319-de7861fe3b79",
+      "result_id": "f18f50be-b092-4664-823d-1f1aae390789"
+    },
+    {
+      "claim_id": "dbd7bf9a-1783-4372-bd24-03b2909bfb7a",
+      "result_id": "82d3fe29-56f2-4f83-9eef-981c63de6a64"
+    },
+    {
+      "claim_id": "65e1c84e-153e-4be1-880e-e25f0a7cfd44",
+      "result_id": "82d3fe29-56f2-4f83-9eef-981c63de6a64"
+    },
+    {
+      "claim_id": "d4730535-e0b5-4935-b787-a069cdfdb200",
+      "result_id": "82d3fe29-56f2-4f83-9eef-981c63de6a64"
+    },
+    {
+      "claim_id": "2b1cb0d7-cb71-4b57-a482-14990e00a00c",
+      "result_id": "82d3fe29-56f2-4f83-9eef-981c63de6a64"
+    },
+    {
+      "claim_id": "aa1e0089-40f3-4085-bc4a-7101ba76da90",
+      "result_id": "82d3fe29-56f2-4f83-9eef-981c63de6a64"
+    },
+    {
+      "claim_id": "328771ab-aa9b-4370-8cd9-73fdb9ee88b1",
+      "result_id": "82d3fe29-56f2-4f83-9eef-981c63de6a64"
+    },
+    {
+      "claim_id": "eec2a275-4664-45ed-bf0d-8524e2b45677",
+      "result_id": "82d3fe29-56f2-4f83-9eef-981c63de6a64"
+    },
+    {
+      "claim_id": "7aea75ec-b851-49ef-94a2-2ed4bbe4a349",
+      "result_id": "82d3fe29-56f2-4f83-9eef-981c63de6a64"
+    },
+    {
+      "claim_id": "18568f76-d2af-4bd6-8040-a812aa7bc67d",
+      "result_id": "91c69bc2-87a7-4c09-9641-bb78b800fc44"
+    },
+    {
+      "claim_id": "fddcc9b2-a12f-4ddc-ab8f-726c67c40014",
+      "result_id": "91c69bc2-87a7-4c09-9641-bb78b800fc44"
+    },
+    {
+      "claim_id": "112ac8e5-a04a-4744-9230-b9a04bc6353e",
+      "result_id": "91c69bc2-87a7-4c09-9641-bb78b800fc44"
+    },
+    {
+      "claim_id": "172b911b-8a76-428e-930e-2dfd90575932",
+      "result_id": "91c69bc2-87a7-4c09-9641-bb78b800fc44"
+    },
+    {
+      "claim_id": "ebf5fde6-1b26-4a38-b924-49d5e0e1b0c4",
+      "result_id": "359e55bb-a86a-49fd-a2c5-af09963d0d97"
+    },
+    {
+      "claim_id": "5919a85b-0926-42fe-b9b3-cc269ddc7bd1",
+      "result_id": "359e55bb-a86a-49fd-a2c5-af09963d0d97"
+    },
+    {
+      "claim_id": "7530a618-12fd-419a-8391-ccc7d01388e3",
+      "result_id": "359e55bb-a86a-49fd-a2c5-af09963d0d97"
+    },
+    {
+      "claim_id": "e08b5bc6-f469-4b2a-8568-7b1f8bc793bb",
+      "result_id": "359e55bb-a86a-49fd-a2c5-af09963d0d97"
+    },
+    {
+      "claim_id": "d77e1cf0-fd54-425a-8663-8be92dd787a9",
+      "result_id": "359e55bb-a86a-49fd-a2c5-af09963d0d97"
+    },
+    {
+      "claim_id": "78d6308c-e20d-4379-b85a-770ad06d7ece",
+      "result_id": "fefa4b7f-23ef-46a8-846d-03b1aeb29668"
+    },
+    {
+      "claim_id": "9fe578b2-1abc-4e82-ad84-941efd6bf69a",
+      "result_id": "fefa4b7f-23ef-46a8-846d-03b1aeb29668"
+    },
+    {
+      "claim_id": "237a2bcd-ad71-4ba1-9684-a41c7207d101",
+      "result_id": "fefa4b7f-23ef-46a8-846d-03b1aeb29668"
+    },
+    {
+      "claim_id": "c62bacdf-c727-46ab-8558-37ae2f637a4c",
+      "result_id": "fefa4b7f-23ef-46a8-846d-03b1aeb29668"
+    },
+    {
+      "claim_id": "081a1ff2-140b-4997-a190-431a4663f696",
+      "result_id": "fefa4b7f-23ef-46a8-846d-03b1aeb29668"
+    },
+    {
+      "claim_id": "1b2f5f6d-29ee-429c-b1e9-ca892e70307a",
+      "result_id": "fefa4b7f-23ef-46a8-846d-03b1aeb29668"
+    },
+    {
+      "claim_id": "cbd48cfc-934c-491e-88c6-3e841e34dfe5",
+      "result_id": "fefa4b7f-23ef-46a8-846d-03b1aeb29668"
+    },
+    {
+      "claim_id": "d5144a2d-fda1-404f-8183-09ad2a75e81d",
+      "result_id": "fefa4b7f-23ef-46a8-846d-03b1aeb29668"
+    },
+    {
+      "claim_id": "5342349c-33db-46ac-9f7f-908855f3c1e3",
+      "result_id": "12eb95b1-5c56-4879-8ad7-be02dad3b937"
+    },
+    {
+      "claim_id": "f38c2058-0e0b-436f-abe9-f5a29020ff8d",
+      "result_id": "12eb95b1-5c56-4879-8ad7-be02dad3b937"
+    },
+    {
+      "claim_id": "7c9c2b7d-9a67-4dc1-b0d2-133e4a9c7cf0",
+      "result_id": "12eb95b1-5c56-4879-8ad7-be02dad3b937"
+    },
+    {
+      "claim_id": "e9e9df50-d4d0-48ec-abe3-1d51184ecc57",
+      "result_id": "bb448050-1dde-4508-b34f-baf1e601563d"
+    },
+    {
+      "claim_id": "dd5ef232-da17-46de-bbad-fcbb8db7d875",
+      "result_id": "bb448050-1dde-4508-b34f-baf1e601563d"
+    },
+    {
+      "claim_id": "e5ea02a7-af1c-4cb5-9b7c-dc7835012b2b",
+      "result_id": "4e397b2b-53f6-4379-a315-823a488385a5"
+    },
+    {
+      "claim_id": "9e17e002-4aba-4c81-976f-acaf47fd9085",
+      "result_id": "4e397b2b-53f6-4379-a315-823a488385a5"
+    },
+    {
+      "claim_id": "72b3eb77-9bf8-4710-bf40-6edc9654bdcd",
+      "result_id": "4e397b2b-53f6-4379-a315-823a488385a5"
+    },
+    {
+      "claim_id": "ade357d0-68dd-4741-a2b9-b542e8880ee0",
+      "result_id": "4e397b2b-53f6-4379-a315-823a488385a5"
+    },
+    {
+      "claim_id": "bd1c4c89-ac90-466b-a2a0-edccccec07ca",
+      "result_id": "4e397b2b-53f6-4379-a315-823a488385a5"
+    },
+    {
+      "claim_id": "5145b95e-b5f5-4106-9c9a-ee96b9801738",
+      "result_id": "4e397b2b-53f6-4379-a315-823a488385a5"
+    },
+    {
+      "claim_id": "6827a0db-2783-4fd7-bd8b-13344ac5d735",
+      "result_id": "7e4472ed-2848-49f5-a144-8018a8493354"
+    },
+    {
+      "claim_id": "8bed1c78-696b-4222-ab9f-aafbea3f97a9",
+      "result_id": "7e4472ed-2848-49f5-a144-8018a8493354"
+    },
+    {
+      "claim_id": "5a3bc49b-91c2-47fa-a899-9328178452d0",
+      "result_id": "7e4472ed-2848-49f5-a144-8018a8493354"
+    },
+    {
+      "claim_id": "3e342c9f-64a1-4a64-81e6-62398f8fb8f7",
+      "result_id": "7e4472ed-2848-49f5-a144-8018a8493354"
+    },
+    {
+      "claim_id": "94a429b7-5564-4304-9e78-eb48bb2ccf9b",
+      "result_id": "14bdaace-02cf-456d-8fd4-deaf299feca2"
+    },
+    {
+      "claim_id": "9d51a8cc-7aa8-4a7b-a045-45275a2e95df",
+      "result_id": "14bdaace-02cf-456d-8fd4-deaf299feca2"
+    },
+    {
+      "claim_id": "3b7488bd-5816-4881-955d-4b4939a205f4",
+      "result_id": "14bdaace-02cf-456d-8fd4-deaf299feca2"
+    },
+    {
+      "claim_id": "884d183a-c13e-4408-9987-7dc0eee9002c",
+      "result_id": "14bdaace-02cf-456d-8fd4-deaf299feca2"
+    },
+    {
+      "claim_id": "15771549-f0a3-4b01-8fbf-9fdcdf0bb1c8",
+      "result_id": "14bdaace-02cf-456d-8fd4-deaf299feca2"
+    },
+    {
+      "claim_id": "2a28fe40-6276-483c-9bfb-0eb300545e55",
+      "result_id": "14bdaace-02cf-456d-8fd4-deaf299feca2"
+    },
+    {
+      "claim_id": "b36df8c6-0bac-4f40-9ce1-b0f6a948bbf7",
+      "result_id": "14bdaace-02cf-456d-8fd4-deaf299feca2"
+    },
+    {
+      "claim_id": "6ebab08c-70b5-4dc9-b7ad-4261086be206",
+      "result_id": "14bdaace-02cf-456d-8fd4-deaf299feca2"
+    },
+    {
+      "claim_id": "35871518-a59e-4c7d-900c-630cc378a445",
+      "result_id": "14bdaace-02cf-456d-8fd4-deaf299feca2"
+    },
+    {
+      "claim_id": "97fc9194-db20-4a05-8678-6f78ac0e6d4b",
+      "result_id": "6d572ccb-885b-4d2b-b06d-4b8f896986ce"
+    },
+    {
+      "claim_id": "864a6b62-5691-4d41-bfea-89a7b52a38ca",
+      "result_id": "6d572ccb-885b-4d2b-b06d-4b8f896986ce"
+    },
+    {
+      "claim_id": "830866b5-f637-4226-be3e-84595e134463",
+      "result_id": "6d572ccb-885b-4d2b-b06d-4b8f896986ce"
+    },
+    {
+      "claim_id": "9087cf50-693d-441e-a473-23b19099022e",
+      "result_id": "6d572ccb-885b-4d2b-b06d-4b8f896986ce"
+    },
+    {
+      "claim_id": "7823bb14-9540-4ee2-9c9e-9b2949fafc23",
+      "result_id": "4aa99527-1156-40ca-8400-d68cc001f1f3"
+    },
+    {
+      "claim_id": "88127817-3869-4578-9ab3-5fc5db479e94",
+      "result_id": "4aa99527-1156-40ca-8400-d68cc001f1f3"
+    },
+    {
+      "claim_id": "abadd3ac-df0b-4087-9ced-c5dec4358db0",
+      "result_id": "4aa99527-1156-40ca-8400-d68cc001f1f3"
+    },
+    {
+      "claim_id": "37652cb9-5d91-4e1b-804c-effed18a3878",
+      "result_id": "4aa99527-1156-40ca-8400-d68cc001f1f3"
+    },
+    {
+      "claim_id": "3330222a-1543-4e7f-88d2-fe6a1587650a",
+      "result_id": "4bb49d76-de8b-40db-be2d-321d33ad586b"
+    },
+    {
+      "claim_id": "c61c4100-ab13-4209-a9a1-2a897d1daca0",
+      "result_id": "4bb49d76-de8b-40db-be2d-321d33ad586b"
+    },
+    {
+      "claim_id": "38fc0d5b-0db7-4dcf-95d3-61990ea88a39",
+      "result_id": "4bb49d76-de8b-40db-be2d-321d33ad586b"
+    },
+    {
+      "claim_id": "e04d694a-5f16-44a9-a32c-881c006179f7",
+      "result_id": "4bb49d76-de8b-40db-be2d-321d33ad586b"
+    },
+    {
+      "claim_id": "c0cb9f4d-1468-4a65-a66b-646ba6154130",
+      "result_id": "4bb49d76-de8b-40db-be2d-321d33ad586b"
+    },
+    {
+      "claim_id": "4adc2476-3656-4d0a-8c29-4f4e30a7e82a",
+      "result_id": "4bb49d76-de8b-40db-be2d-321d33ad586b"
+    },
+    {
+      "claim_id": "e9631c4f-e173-47c9-b947-712637a4b3dd",
+      "result_id": "4bb49d76-de8b-40db-be2d-321d33ad586b"
+    },
+    {
+      "claim_id": "cb853514-fda3-4fad-b215-76c05a4d6cf2",
+      "result_id": "e87818a4-350c-4165-be7f-49f90f0a410f"
+    },
+    {
+      "claim_id": "c4701682-7a46-4c79-8cda-5c61cb143e94",
+      "result_id": "2407b73e-f3c1-41ff-9fb4-f3eec890f6b6"
+    },
+    {
+      "claim_id": "752b9133-40d6-4dbf-97f5-a0de09ce49d8",
+      "result_id": "2407b73e-f3c1-41ff-9fb4-f3eec890f6b6"
+    },
+    {
+      "claim_id": "aebf389c-a746-43dc-aea8-0e91318a9f30",
+      "result_id": "8701a95b-f9cc-446e-8273-fd649e333f5f"
+    },
+    {
+      "claim_id": "86935272-f55b-4bcb-ba59-f4c4be5cf678",
+      "result_id": "8701a95b-f9cc-446e-8273-fd649e333f5f"
+    },
+    {
+      "claim_id": "eab8f34f-6c4f-4497-9a0b-b1a56d8535be",
+      "result_id": "8701a95b-f9cc-446e-8273-fd649e333f5f"
+    },
+    {
+      "claim_id": "2a641dd8-137e-4a57-8da0-860bf1e0bc64",
+      "result_id": "7c4b9a51-6159-48d3-8af5-1327ef7b6d53"
+    },
+    {
+      "claim_id": "65836f2b-dd7e-4d53-9eba-e1f9e1a4ba78",
+      "result_id": "7c4b9a51-6159-48d3-8af5-1327ef7b6d53"
+    },
+    {
+      "claim_id": "c4bf2448-427e-47e6-9361-1dc731f889bf",
+      "result_id": "7c4b9a51-6159-48d3-8af5-1327ef7b6d53"
+    },
+    {
+      "claim_id": "988fe235-e8b6-4a57-9d1d-de0e5023d28b",
+      "result_id": "7c4b9a51-6159-48d3-8af5-1327ef7b6d53"
+    },
+    {
+      "claim_id": "90db7c3a-a121-43ad-a330-895e279917da",
+      "result_id": "6d46328f-8900-4373-ab53-dc2322295ad0"
+    },
+    {
+      "claim_id": "4e2bad02-aeb9-49c5-b94d-582271e3d0a9",
+      "result_id": "6d46328f-8900-4373-ab53-dc2322295ad0"
+    },
+    {
+      "claim_id": "75f0524b-da3d-4936-b734-d7477c1f9c4b",
+      "result_id": "6d46328f-8900-4373-ab53-dc2322295ad0"
+    },
+    {
+      "claim_id": "56068171-b0bf-43ad-8383-6891095f7929",
+      "result_id": "fba24c30-7e93-431a-ab72-f600e390a612"
+    }
+  ],
+  "comparisons": []
+}

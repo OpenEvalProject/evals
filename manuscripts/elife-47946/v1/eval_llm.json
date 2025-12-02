@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C88",
+      "C101",
+      "C102",
+      "C103",
+      "C118",
+      "C119"
+    ],
+    "result": "A kink in helical peptides destabilizes barrel-stave pores but stabilizes toroidal pores. This differential effect was demonstrated using two independent computational models (phenomenological Monte Carlo and MARTINI molecular dynamics) and validated by fluorescence leakage experiments. The mechanism involves entropic effects: rigid peptides fit better into the tight geometry of barrel-stave pores, while flexible kinked peptides can more easily adapt to the curved catenoid shape of toroidal pore lumens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C24, C88, C101-C103, C118-C119 collectively provide strong convergent evidence from multiple independent computational approaches (MC simulations with phenomenological model and MD simulations with MARTINI model) and experimental validation (fluorescence leakage assays). The mechanistic explanation is well-supported by free energy calculations and structural analysis. The experimental data (C83-C87) directly validates the computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C60",
+      "C61",
+      "C64",
+      "C65",
+      "C66",
+      "C90",
+      "C127",
+      "C128"
+    ],
+    "result": "The position of the proline/glycine kink in the peptide sequence determines the specific structure of toroidal pores (hourglass vs. U-shaped). When the kink is at the interface between hydrophobic and hydrophilic sectors, hourglass pores form with peptides spanning the membrane. When the kink is in the middle of the hydrophobic sector, U-shaped pores form with both termini anchored on the same leaflet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C58, C60-C61, C64-C66, C90, C127-C128 provide consistent evidence from MARTINI simulations across multiple peptide systems (LL-37 and Candidalysin variants). The structural characterization is detailed with specific geometric descriptions and supported by visual evidence in figures. The relationship between kink position and pore morphology is demonstrated through systematic sequence modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C27",
+      "C28",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C91",
+      "C92",
+      "C130",
+      "C132",
+      "C135",
+      "C136"
+    ],
+    "result": "Two helical peptides can form a kink-like connection through terminal interactions that mimics the behavior of a single peptide with a helix-kink-helix motif. This synergistic pore formation was observed in both phenomenological model simulations and MARTINI simulations with Magainin 2 and \u03b4-lysin peptides, with peptides preferentially associating at angles of approximately 135\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25, C27-C28, C75, C77-C81, C91-C92, C130, C132, C135-C136 demonstrate this finding through both coarse-grained phenomenological simulations and more detailed MARTINI simulations. The structural characterization includes specific geometric measurements (135\u00b0 angle) that agree with experimental observations cited in the literature (C28, C133). The analogy between flexible connections and kinks within single peptides is well-established through multiple peptide examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "Barrel-stave pores require rigid peptides with high hydrophobic content (\u2265270\u00b0 hydrophobic sector), strong peptide-peptide interactions, and peptide length matching membrane thickness. These requirements were identified through phenomenological Monte Carlo simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C110-C111, C113 provide specific quantitative criteria for barrel-stave pore formation derived from systematic MC simulations. The 270\u00b0 hydrophobic sector requirement is consistent with previous simulations and experiments on Alamethicin (C111). However, the phenomenological model simplifies peptide-peptide interactions to purely hydrophobic interactions (C34), which may not capture all relevant interactions in real peptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C116",
+      "C117"
+    ],
+    "result": "Toroidal pores form over a broader range of peptide properties compared to barrel-stave pores. Peptides with hydrophobic content of approximately 50% (hydrophobic sector <270\u00b0) can form toroidal pores without strong self-association. Peptides with hydrophobic sector >310\u00b0 either aggregate in solution or insert without pore formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C116-C117 provide specific quantitative boundaries for toroidal pore formation from phenomenological MC simulations. The broader range of peptide properties is consistent with the less stringent structural requirements of toroidal pores compared to barrel-stave pores. The upper limit (310\u00b0) is well-defined, though the exact boundaries may depend on model parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C89",
+      "C103"
+    ],
+    "result": "Buforin II variants demonstrate that peptide rigidity is more important than the chemical nature of the kink-forming residue for barrel-stave pore stabilization. Fully helical variants (P11L, P11A) stabilized barrel-stave pores for 50 \u00b5s, while variants with kinks (WT, P11G) did not stabilize pores. Gradually decreasing flexibility improved pore stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C89, C103 provide systematic evidence from MARTINI simulations showing the importance of rigidity over chemical identity. The comparison between P11L, P11A (rigid), WT (proline kink), and P11G (glycine kink) isolates the effect of flexibility. The gradual flexibility reduction experiment (C44) provides additional support. Results agree with prior experimental findings (C41, C104-C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Kink-induced flexibility is crucial for LL-37 toroidal pore formation in POPC membranes. Flexible variants (WT and I13G/G14I) stabilized toroidal pores with minimum diameter ~0.5 nm throughout simulations, while fully-helical variants (WT*, G14L) preferred membrane surface adsorption and showed rapid pore closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide clear evidence from MARTINI simulations with systematic comparison of flexible vs. rigid LL-37 variants. The specific pore diameter measurement (C55) and timescale of pore closure (C57) provide quantitative support. The results are consistent with the general principle established for toroidal pores and validated by experimental leakage assays (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Fluorescence leakage experiments validated computational predictions: Buforin II P11L showed greatest leakage, followed by P11A, with significantly lower leakage for WT and P11G. LL-37 WT exhibited greater leakage than G14L. Results confirm that flexible kinks hinder barrel-stave but promote toroidal pore formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 provide experimental validation of the main computational findings. The leakage assay results for Buforin II variants show clear rank order consistent with simulation predictions and previous experimental work (C85). The LL-37 results (C86) further support the conclusions. The experimental design using POPC:POPG (1:1) membranes is appropriate for bacterial membrane models (C138).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C112"
+    ],
+    "result": "Negatively charged lipids (POPG, POPS) affect barrel-stave pore morphology by reducing pore diameter and increasing peptide packing compactness. Charged lipid headgroups are preferentially pulled into the pore lumen by positively charged peptide side-chains, with POPG buried deeper than POPS despite identical charge. Overall pore stability remained similar across lipid compositions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50, C112 describe lipid composition effects from MARTINI simulations with Buforin II. The observations are well-characterized with phosphate density profiles (Figure 6) and structural analysis. The mechanistic explanation involving electrostatic interactions (C112) is reasonable. However, the interpretation is somewhat speculative (\"probably\") and the differential behavior of POPG vs. POPS (C50) lacks detailed mechanistic explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Flexible peptides with total length exceeding membrane thickness can adopt two distinct structures: Hourglass pores (peptides span membrane) or U-shaped pores (both termini anchored on same leaflet with central insertion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 describe structural observations from simulations with references to previous work describing these structures. The characterization is clear and consistent with observations across multiple peptide systems (LL-37, Candidalysin). The structures are well-visualized in figures and represent important structural diversity in toroidal pores.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C137"
+    ],
+    "result": "CandK peptide forms only transient toroidal pores in simulations. The authors note that changes in peptide adsorption could exceed effects on pore stabilization, making simple addition of kink-forming residues not always a viable strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 reports transient pore formation for CandK, but the experimental evidence (C68) shows the peptide does increase membrane permeability. The discrepancy between simulation (transient pores) and experiment (increased permeability) is not fully resolved. Claim C137 provides an important caveat about the limitations of the approach, but this cautionary note suggests the results may not be generalizable without accounting for adsorption effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Most pore-forming peptides could benefit from inclusion of proline/glycine residue in the middle of the sequence, but decreased peptide-membrane interaction must be accounted for. The Melittin L16G example shows reduced adsorption that can be compensated by adding negatively charged lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 presents a design recommendation, but it comes with significant caveats. Claims C121-C123 highlight that adding kinks alters membrane affinity, which could counteract benefits. The recommendation is based primarily on structural considerations without systematic evaluation of the adsorption-activity tradeoff. This represents a limitation acknowledged by the authors (C137) rather than a fully validated design principle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C22"
+    ],
+    "result": "Prior literature reported contradictory results regarding whether proline/glycine kinks enhance or reduce antimicrobial activity, motivating this study to resolve the discrepancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C22 accurately characterize the contradictory state of prior literature with extensive citations supporting both enhancement and reduction of activity. This provides important context and motivation for the study. The current work resolves this apparent contradiction by showing the effect depends on pore type (barrel-stave vs. toroidal).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Pore formation is energetically unfavorable, but the barrier can be decreased by peptide adsorption in a concentration-dependent manner. AMPs bind more strongly to curved pore lumens than membrane surfaces, providing driving force for pore opening. Above a critical concentration, pore formation becomes spontaneous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 describe established biophysical principles of pore formation supported by citations. These provide important background for understanding the simulation methodology (sub-critical regime with enhanced sampling). The statements are well-established in the field and properly cited.",
+    "result_type": "MINOR"
+  }
+]

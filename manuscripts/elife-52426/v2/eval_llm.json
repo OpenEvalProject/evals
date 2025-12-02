@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C118",
+      "C119"
+    ],
+    "result": "WikiProject Medicine (WPM) pages are significantly longer and have greater external link density than other Wikipedia (W) pages. WPM pages average 13,084.9 characters (70.1% longer than W pages at 7,676.4 characters) with external links appearing every 450.3 characters compared to every 657.3 characters in W pages. These differences are statistically significant (Mann-Whitney U test, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C44, C118-C119 are well-supported by descriptive statistics presented in Tables 2 and 6, and Figure 1. The statistical significance is confirmed by appropriate non-parametric testing (C42, C132). The data collection methodology (C27, C32-C35) is clearly described and the sample sizes are substantial (34,324 WPM pages vs 5,839,083 W pages).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C120"
+    ],
+    "result": "WPM pages receive significantly more pageviews than other Wikipedia pages. WPM pages received an average of 5,875,470.4 pageviews per day compared to 228,445,128.4 for W pages. While WPM represents only 0.6% of Wikipedia pages, it receives 2.6% of pageviews, indicating WPM pages are viewed approximately 4.4 times more frequently per page than W pages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51-C55, C120 are supported by pageview data presented in Table 3 and summarized in Table 6. The calculation that WPM pages are viewed 4.4 times more frequently is mathematically correct (2.6%/0.6% \u2248 4.3). However, the authors acknowledge limitations regarding bot exclusion effectiveness (C108), which may affect absolute pageview counts but likely not the relative comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The majority of pageviews for both WPM and W occurred on mobile devices, with WPM readers showing higher mobile usage (66.7%) compared to W readers (57.1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are directly supported by data in Table 3 showing device-specific pageview distributions. The difference is substantial (9.6 percentage points) and the sample sizes are large, making this finding reliable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C121"
+    ],
+    "result": "WPM readers spend significantly more time on pages before engaging with external links compared to W readers. The median time before first engagement was 47.5 seconds for WPM readers versus 32.8 seconds for W readers (44.8% longer), a difference that is statistically significant (Mann-Whitney U test, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C121 are supported by time-to-engagement data presented in Table 6. The use of Mann-Whitney U test is appropriate given the non-normal distributions (C131-C132). However, the very large IQR values (147,306 for WPM and 86,424 for W) suggest highly skewed distributions with potential outliers, which the authors do not discuss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C63",
+      "C64",
+      "C72",
+      "C73",
+      "C83",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "WPM readers engage more frequently with citation information through hovering and footnote clicks compared to W readers. WPM readers hover over links 68.9% more often per pageview (120.5 vs 203.5 pageviews per hover) and click footnote numbers 49.3% more often per pageview (211.8 vs 316.3 pageviews per footnote click). Overall, WPM readers engage with links 17.5% more frequently (56.6 vs 66.5 pageviews per event).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C63-C64, C72-C73, C83, C122-C124 are supported by event data in Tables 4-5 and summarized in Table 6. Statistical significance is confirmed by Fisher's exact test (C78, C133). However, the authors acknowledge that hover counts include both intentional and unintentional acts (C106), which limits interpretation of absolute hover frequencies but likely does not affect relative comparisons (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C65",
+      "C74",
+      "C84",
+      "C125"
+    ],
+    "result": "WPM readers click external links significantly less frequently than W readers. WPM readers click external links 35.5% less often per pageview (227.6 vs 146.7 pageviews per external click). The difference is especially pronounced on mobile devices, where W readers are almost twice as likely to click external links (488.5 vs 203.4 pageviews per external click).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C65, C74, C84, C125 are supported by data in Tables 4-5 and Table 6, with statistical significance confirmed by Fisher's exact test (C78). The mobile-specific finding is particularly striking and well-documented. The authors suggest this may relate to mobile-friendliness of external links (C75), though this remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C67",
+      "C85",
+      "C115"
+    ],
+    "result": "The pattern of high hovering/footnote viewing but low external clicking suggests that WPM readers use external links primarily to verify and validate Wikipedia content rather than to examine the sources themselves. This behavior indicates readers are more engaged in assessing citation quality than in pursuing sources as gateways for further learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C67, C85, C115 represent the authors' interpretation of the behavioral patterns documented in the previous results. This interpretation is reasonable and well-supported by the convergent evidence from multiple engagement metrics. However, the authors appropriately acknowledge that the study does not directly determine reader motivations (C103) and suggest follow-up studies with questionnaires or think-aloud protocols (C104).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C97",
+      "C100"
+    ],
+    "result": "Only 22.1% of research citations from PubMed in WPM pages are labeled as 'freely accessible' and display an open access icon on desktop devices. This represents approximately one-fifth of the research cited in WPM pages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C97, C100 are supported by data analysis of external links and illustrated in Figure 2. The finding is clearly stated and the percentage is specific. However, the methodology for determining open access status is not fully detailed (e.g., whether this includes only PubMed Central links or other open access sources).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C101"
+    ],
+    "result": "There was no evidence that links with open access icons were clicked more frequently than other links. This may be because typical research citations include multiple links (DOI, PMID, PMC) providing alternative access routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C101 are stated as findings from the data analysis. The lack of differential clicking on open access links is clearly reported (C70), and the explanation about multiple links per citation (C71) is reasonable. However, the authors do not provide detailed statistical analysis of open access vs. non-open access link clicking rates, making this a somewhat weaker finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The most common external link hostname in WPM pages is 'www.ncbi.nlm.nih.gov' (25.2%), indicating heavy reliance on PubMed database citations. In contrast, the rest of Wikipedia shows more diverse link patterns with 'tools.wmflabs.org' (3.5%), 'www.google.com' (2.9%), and 'books.google.com' (2.0%) as top hostnames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by hostname analysis of external links. The findings clearly demonstrate the biomedical literature focus of WPM pages (C45-C46) versus the more general reference patterns in W pages (C49). The percentages are specific and the contrast is striking, though the methodology for hostname extraction is not detailed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "W readers favor mobile devices for clicking external links, while WPM readers show lower external link engagement on mobile. The 'up click' function (returning from footnote to text) does not appear on iOS and Android mobile devices tested, as footnotes appear at the bottom of the screen and disappear when touching the text.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C76-C77 are supported by data in Table 4 and direct observation illustrated in Figure 2. The mobile interface difference is clearly documented. However, claim C75 (suggesting WPM external links may not be mobile-friendly) is speculative and not directly tested. The authors appropriately frame this as a suggestion rather than a definitive finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C94"
+    ],
+    "result": "The observed citation validation behavior may arise from two reader populations: (1) readers new to WPM pages seeking reassurance about scientific basis, or (2) health professionals trained in evidence-based medicine who can assess information quality from bibliographic references. The greater attention to citations likely reflects the educational backgrounds of WPM readers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 are explicitly speculative (marked with 'may arise') and represent possible explanations for observed behavior without direct evidence. Claim C88 makes assumptions about evidence-based practitioners' capabilities that are reasonable but not tested in this study. Claim C94 connects behavior to user demographics based on prior literature (C21-C24) but without direct verification of reader characteristics in this dataset. These interpretations are plausible but require empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Readers can assess citation quality by hovering over or viewing footnotes, which reveal whether sources are reviews (Wikipedia's 'ideal source'), publication details (date, language, journal, open access status), and in some cases, study details (patient populations, interventions, outcomes) or whether sources are standard medical textbooks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by the interface examples shown in Figures 3A and 3B. The information available through hovering is clearly documented. Claim C90 (Wikipedia's recommendation for review articles) is stated as established policy. However, the claim that readers actually use this information for quality assessment (implied by C88) is inferred rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "The lower external click rate in WPM may be explained by paywalls limiting access to ~80% of cited research. Prior studies show readers encountering paywalls are reluctant to explore further. If all research were open access and this was promoted, health professionals might be more likely to click through to sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is explicitly speculative ('one possibility') and C99, C102 are conditional statements about potential future behavior. While C98 is supported by citations to prior work (Moorhead et al., 2015; Maggio et al., 2016), the causal connection between paywall presence and lower clicking in this study is not empirically tested. The current study shows no differential clicking on open access links (C70), which somewhat contradicts this explanation. These claims represent reasonable hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Data was collected March 22-April 22, 2019 from Wikimedia's Event Logging system and MediaWiki database, with WMF approval. Data was anonymized by removing IP addresses, browser information, and editor-associated sessions. Only 21 sessions (34 events) involving anonymous editors were excluded. Code is publicly available on GitHub, though data is not publicly available but may be requested from WMF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35, C126-C128 describe the data collection methodology clearly and transparently. The exclusion of editor sessions (C29, C126-C128) is minimal and well-documented. The data availability policy (C30-C31) is clearly stated. The methodology appears sound, though the authors acknowledge limitations regarding bot exclusion (C108) and interwiki link exclusion (C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Statistical analysis used appropriate methods: descriptive statistics in Excel, inferential statistics using Python SciPy library, normality testing followed by Mann-Whitney U test for non-normal distributions (page length, time to engagement), and Fisher's exact test for pageviews per event comparisons. Data exploration used Spark/Pandas and visualization used Seaborn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 describe appropriate statistical methods for the data types and distributions. The use of non-parametric tests after rejecting normality (C131-C132) is correct. Fisher's exact test for categorical comparisons (C133) is appropriate. The tools and software are standard and well-documented. The complete analysis is available in the GitHub repository (C31), supporting reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Study limitations include: (1) hover counts capture both intentional and unintentional acts, though this likely affects both groups equally; (2) bot exclusion strategies have limited effectiveness; (3) interwiki link exclusion reduced external link counts; (4) findings are limited to English Wikipedia only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 appropriately acknowledge study limitations. The authors reasonably argue that measurement issues (C106-C109) likely affect both groups similarly and thus do not invalidate comparisons. The limitation to English Wikipedia (C110-C111) is clearly stated and appropriate. These limitations are honestly reported and do not fundamentally undermine the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The study involved extensive stakeholder engagement with the Wikimedia Foundation research team beginning in 2018, including publishing a research proposal on Meta-Wiki, inviting community feedback, holding teleconferences and meetings, and posting a public announcement on Wikipedia's Village Pump prior to data collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 describe the stakeholder engagement process with appropriate citations (C136, C139). This represents good research practice for studies involving Wikipedia data and community. The transparency and community involvement strengthen the study's credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background context establishes that WikiProject Medicine maintains health/medicine articles on Wikipedia that are widely used by health professionals and students, meet high quality standards, include hyperlinked references serving as authority sources and learning gateways, and that Wikipedia is a leading health information source. A previous study tracked DOI referrals but could not determine WPM origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C26 provide background context supported by appropriate citations to prior literature. These establish the rationale and context for the current study. Claim C26 identifies the gap that motivated this research. All background claims are appropriately cited and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Summary findings confirm that WPM pages are longer, have greater link density, and are viewed more often than other Wikipedia pages. These differences reflect page quality and reader trust. WPM readers engage more with links and spend longer on pages before engaging, supporting the quality assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C82, C112 summarize the main empirical findings that are well-supported by the data. Claims C80-C81, C113-C114 represent interpretations connecting the empirical findings to quality and trust, which are reasonable inferences but go beyond what the data directly demonstrate. The interpretation that popularity indicates trust (C80-C81) is plausible but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C103",
+      "C104",
+      "C105",
+      "C116",
+      "C117"
+    ],
+    "result": "Future research recommendations include: investigating internal link educational value, using questionnaires or think-aloud protocols to understand hovering vs. clicking behavior, conducting design experiments with open access labeling and mobile interfaces, and studying how citations affect learning and whether learning depth can be increased for health professionals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C103-C105, C116-C117 appropriately suggest future research directions based on study limitations and findings. These recommendations are reasonable and would address gaps in understanding reader behavior and motivations. They represent appropriate scientific practice in identifying next steps.",
+    "result_type": "MINOR"
+  }
+]

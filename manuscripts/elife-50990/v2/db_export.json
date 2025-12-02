@@ -1,0 +1,1827 @@
+{
+  "submission": {
+    "id": "16a14083-ace9-4c7b-bb89-6877d4dfe378",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:46:51.712944Z",
+    "updated_at": "2025-12-02T12:46:51.712944Z"
+  },
+  "content": [
+    {
+      "id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "submission_id": "16a14083-ace9-4c7b-bb89-6877d4dfe378",
+      "content_type": "manuscript",
+      "content_text": "# Inhibition of ErbB kinase signalling promotes resolution of neutrophilic inflammation\n\n## Authors\n\n- Atiqur Rahman<sup>1</sup>\n- Katherine M Henry<sup>1</sup> ([ORCID: 0000-0003-0554-2063](https://orcid.org/0000-0003-0554-2063))\n- Kimberly D Herman<sup>1</sup>\n- Alfred AR Thompson<sup>1</sup> ([ORCID: 0000-0002-0717-4551](https://orcid.org/0000-0002-0717-4551))\n- Hannah M Isles<sup>1</sup>\n- Claudia Tulotta<sup>1</sup>\n- David Sammut<sup>1</sup>\n- Julien JY Rougeot<sup>4</sup>\n- Nika Khoshaein<sup>1</sup>\n- Abigail E Reese<sup>1</sup>\n- Kathryn Higgins<sup>1</sup>\n- Caroline Tabor<sup>3</sup>\n- Ian Sabroe<sup>1</sup>\n- William J Zuercher<sup>5</sup>\n- Caroline O Savage<sup>6</sup>\n- Annemarie H Meijer<sup>4</sup>\n- Moira KB Whyte<sup>7</sup>\n- David H Dockrell<sup>1</sup>\n- Stephen A Renshaw<sup>1</sup> ([ORCID: 0000-0003-1790-1641](https://orcid.org/0000-0003-1790-1641))\n- Lynne R Prince<sup>1</sup> ([ORCID: 0000-0001-6133-9372](https://orcid.org/0000-0001-6133-9372)) \u2020\n\n### Affiliations\n\n1. Department of Infection, Immunity and Cardiovascular Disease University of Sheffield Sheffield United Kingdom\n2. Department of Biochemistry and Molecular Biology, Faculty of Biological Sciences University of Dhaka Dhaka Bangladesh\n3. The Bateson Centre University of Sheffield Sheffield United Kingdom\n4. Institute of Biology Leiden University Leiden Netherlands\n5. SGC-UNC, Division of Chemical Biology and Medicinal Chemistry, UNC Eshelman School of Pharmacy University of North Carolina at Chapel Hill Chapel Hill United States\n6. Immuno-Inflammation Therapy Area Unit GlaxoSmithKline Research and Development Ltd Stevenage United Kingdom\n7. MRC Centre for Inflammation Research University of Edinburgh Edinburgh United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeutrophilic inflammation with prolonged neutrophil survival is common to many inflammatory conditions, including chronic obstructive pulmonary disease (COPD). There are few specific therapies that reverse neutrophilic inflammation, but uncovering mechanisms regulating neutrophil survival is likely to identify novel therapeutic targets. Screening of 367 kinase inhibitors in human neutrophils and a zebrafish tail fin injury model identified ErbBs as common targets of compounds that accelerated inflammation resolution. The ErbB inhibitors gefitinib, CP-724714, erbstatin and tyrphostin AG825 significantly accelerated apoptosis of human neutrophils, including neutrophils from people with COPD. Neutrophil apoptosis was also increased in Tyrphostin AG825 treated-zebrafish in vivo. Tyrphostin AG825 decreased peritoneal inflammation in zymosan-treated mice, and increased lung neutrophil apoptosis and macrophage efferocytosis in a murine acute lung injury model. Tyrphostin AG825 and knockdown of egfra and erbb2 by CRISPR/Cas9 reduced inflammation in zebrafish. Our work shows that inhibitors of ErbB kinases have therapeutic potential in neutrophilic inflammatory disease.\n\n## Introduction\n\nNeutrophilic inflammation is central to chronic inflammatory diseases such as rheumatoid arthritis and chronic obstructive pulmonary disease (COPD), which impose an increasing social and economic burden on our aging population. Treatment of COPD by next-generation combination therapy with inhaled corticosteroids and newer bronchodilators are viewed as maintenance pharmacotherapies but they do not specifically target cellular inflammation. The anti-inflammatory phosphodiesterase-4 inhibitor, roflumilast, targets systemic inflammation associated with COPD and reduces moderate to severe exacerbations in severe disease, possibly via effects on eosinophils (Martinez et al., 2018; Rabe et al., 2018). In these diseases, clearance of neutrophils by apoptosis is dysregulated particularly during exacerbations (Pletz et al., 2004; Sapey et al., 2011), but to date it has not been possible to therapeutically modify this, indeed corticosteroids can supress neutrophil apoptosis and hence perpetuate inflammation (Liles et al., 1995). Recognising the urgent need for new therapies, we interrogated neutrophil inflammation and survival pathways using an unbiased approach focusing on potentially druggable kinases. Neutrophil persistence in tissues, caused by a delay in apoptosis, can result in a destructive cellular phenotype, whereby neutrophils have greater potential to expel histotoxic factors such as proteases and oxidative molecules onto surrounding tissue. This can occur either actively (by degranulation) or passively (by secondary necrosis). In COPD, among other diseases, delayed apoptosis is considered to be a key part of the pathogenesis, occurring either as a result of pro-survival factors that are present in the lung microenvironment or an innate apoptosis defect (Brown et al., 2009; Haslett, 1999; Pletz et al., 2004; Zhang et al., 2012). Despite this mechanistic understanding, there are no effective treatment strategies in clinical use to specifically reverse this cellular mechanism.\n\nAccelerating neutrophil apoptosis has been shown to promote the resolution of inflammation in multiple experimental models (Burgon et al., 2014; Chello et al., 2007; Ren et al., 2008; Rossi et al., 2006). A number of studies highlight the importance of protein kinases in regulating neutrophil apoptosis (Burgon et al., 2014; Rossi et al., 2006; Webb et al., 2000) and therefore reveal potential therapeutically targetable pathways for inflammatory disease. A growing class of clinically-exploited small molecule kinase inhibitors are being intensively developed (Wu et al., 2015), making this a timely investigation. Using parallel unbiased screening approaches in vitro and in vivo, we here identify inhibitors of the ErbB family of receptor tyrosine kinases (RTKs) as potential therapeutic drivers of inflammation resolution. The ErbB family consist of four RTKs with structural homology to the human epidermal growth factor receptor (EGFR/ErbB1/Her-1). In an in vivo zebrafish model of inflammation, we show that inhibition of ErbBs, pharmacologically and genetically, reduced the number of neutrophils at the site of injury. Furthermore, ErbB inhibitors reduced inflammation in a murine peritonitis model and promoted neutrophil apoptosis and clearance by macrophages in the mouse lung. This study reveals an opportunity for the use of ErbB inhibitors as a treatment for chronic neutrophilic inflammatory disease.\n\n## Results\n\n### Identifying kinases regulating the resolution of neutrophilic inflammation in vivo\n\nUsing a well-characterised transgenic zebrafish inflammation model (Henry et al., 2013; Renshaw et al., 2006), we adopted a chemical genetics approach, which has great potential for accelerated drug discovery (Jones and Bunnage, 2017). We initiated inflammation by controlled tissue injury of the zebrafish tail fin and screened a library of kinase inhibitors in order to establish which kinases could be exploited to enhance inflammation resolution in vivo (Figure 1\u2014figure supplement 1A). We quantified the ability of a library of 367 publicly available kinase inhibitors (PKIS) (Elkins et al., 2016) to reduce neutrophil number at the site of injury during the resolution phase of inflammation. The screen identified 16 hit compounds which reduced neutrophil number at the site of injury in the zebrafish model (Figure 1A). For each compound the degree of kinase inhibition had been established (Elkins et al., 2016) (Figure 1A). A number of kinases were inhibited by the 16 compounds, with Abelson murine leukaemia viral homolog 1 (ABL1), Platelet-derived growth factor receptor (PDGFR) \u03b1, PDGFR\u03b2, p38\u03b1 and ErbB4 being the top five most frequently targeted kinases overall. In addition to frequency of target, we also interrogated selectivity of compound. The most selective compounds, that\u00a0is those that strongly inhibited individual kinases or kinase families, targeted the kinases YES, ABL1, p38 and the ErbB family. Apoptosis is an important mechanism contributing to inflammation resolution; we therefore sought to identify kinases common to both inflammation resolution and neutrophil apoptosis pathways.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50990/elife-50990-fig1-v2.jpg)\n\n**Figure 1.:** (A) mpx:GFP zebrafish larvae (three dpf) that had undergone tail fin transection resulting in an inflammatory response at six hpi were incubated with individual PKIS compounds [25 \u00b5M] three larvae/well for a further 6 hr. Wells were imaged and manually scored between 0\u20133 on the basis of GFP at the injury site in the larvae. \u2018Hit\u2019 compounds scored\u00a0\u22651.5 (n\u00a0=\u00a02, three larvae per compound per experiment). Publicly available kinase profiling information was generated previously by Elkins et al. (2016) and kinase inhibition of each compound [1 \u00b5M] is shown as a gradient of blue to yellow. Hit compounds were ranked horizontally (left to right) from the most to least selective. Kinases (listed on the right) were vertically ranked from top to bottom from the most to least commonly targeted by inhibitors in PKIS. (B) PKIS compounds were incubated with primary human neutrophils for 6 hr. The entire library, at [62 \u00b5M], was screened on five separate days using five individual donors. Apoptosis was assessed by Annexin-V/TO-PRO-3 staining by flow cytometry and the percentage apoptosis calculated as Annexin-V single plus Annexin-V/TO-PRO-3 dual positive events. Data are expressed as fold change over DMSO control and each circle represents a single compound. Sixty two compounds accelerated apoptosis\u00a0\u22652 fold as identified by red dotted line (n\u00a0=\u00a01). Grey dotted line represents level of apoptosis in DMSO control (i.e. no change). (C) Of the 62 compounds identified above, 38 of the most specific inhibitors were incubated with neutrophils at [10 \u00b5M] for 6 hr and apoptosis measured as above. Controls included media, DMSO, GMCSF [50 u/mL] and pyocyanin [50 \u00b5M]. Eleven compounds (white bars) accelerated apoptosis\u00a0\u22652 fold over DMSO control (as identified by dotted line). Kinases targeted by the 11 compounds are shown in the inset table. Hatched bars represent data points in which ErbB inhibitors were used. Data are expressed as percentage apoptosis\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a03 neutrophil donors.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50990/elife-50990-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Tail fin transected three dpf Tg(mpx:GFP)i114 zebrafish larvae that had generated an inflammatory response at six hpi were incubated with individual PKIS compounds [25 \u00b5M] for a further 6 hr. Larvae were imaged and manually scored between 0\u20133 on the basis of green fluorescence at the injury site. (B) PKIS compounds were incubated with primary human neutrophils for 6 hr. Apoptosis was assessed by Annexin V/TO-PRO-3 staining by flow cytometry and the percentage apoptosis calculated as Annexin V single plus Annexin V/TO-PRO-3 dual positive events (as indicated by red box).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50990/elife-50990-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Human neutrophils were incubated for 6 hr with PKIS compounds identified as being pro-apoptotic from the first round of screening (Figure 1B). Neutrophils were also incubated with controls as follows: media, DMSO (vehicle), GM-CSF (anti-apoptotic) or pyocyanin (pro-apoptotic). Figure shows annexin-V (y-axis) and ToPro-3 (x-axis) flow dot plots for all compounds that accelerated apoptosis\u00a0<2 fold over DMSO control. Dot plots are representative of 3 independent experiments.\n\n### Identifying kinases regulating neutrophil apoptosis in vitro\n\nCirculating neutrophils have a short half-life in vivo (Summers et al., 2010) and undergo spontaneous apoptosis in the absence of growth factors in vitro. We re-screened PKIS library compounds in a human neutrophil apoptosis assay for their ability to accelerate apoptosis (Figure 1\u2014figure supplement 1B). PKIS compounds were screened at 62 \u00b5M in order to maximise the chance of identifying \u2018hits\u2019 and resulted in 62 compounds that accelerated neutrophil apoptosis\u00a0\u22652 fold compared to DMSO control (Figure 1B and Supplementary file 1). Secondary screening of top 38 compounds (chosen from the 62 hits based on greatest selectivity for kinase targets) was carried out at 10 \u00b5M in order to reduce false positives. This yielded 11 compounds that accelerated neutrophil apoptosis\u00a0\u22652 fold over control (as indicated by dashed green line, Figure 1C). Representative flow cytometry dot plots illustrating Annexin-V and ToPro-3 profiles for these hit compounds are shown in Figure 1\u2014figure supplement 2. Kinases targeted by these compounds included DYRK1B, KIT, EGFR, ErbB2 and ErbB4, PDGFR, CDK6 and p38 (Figure 1C, inset). The identification of known regulators of neutrophil survival (p38, PI3K) was encouraging support for the screen design and execution. We found that members of the ErbB family of RTKs were the next most frequently inhibited kinase family, being targeted by three highly selective compounds out of the 11 hits (Figure 1C, inset). Since inhibitors of the ErbB family were common hits in both zebrafish and human screens, we hypothesised that targeting ErbBs may be a potential strategy to reduce inflammation.\n\n### ErbB inhibitors accelerate neutrophil apoptosis\n\nTo address a role for ErbB antagonists in regulating neutrophil apoptosis we tested a range of clinical and non-clinical ErbB-targeting compounds. We show that among inhibitors of ErbBs that are in clinical use, the EGFR inhibitor, gefitinib, is the most effective in promoting neutrophil apoptosis, reaching significance at 50 \u00b5M (Figure 2A). The ErbB2-selective inhibitor, CP-724714 (Jani et al., 2007) also promoted neutrophil apoptosis in a dose-dependent manner (Figure 2B) as did Erbstatin and tyrphostin AG825, selective for EGFR and ErbB2 respectively (Osherov et al., 1993; Umezawa and Imoto, 1991) (Figure 2C\u2013D). Since caspase-dependent apoptosis is an anti-inflammatory and pro-resolution form of cell death, engagement of the apoptosis programme was verified biochemically by measuring phosphatidylserine (PS) exposure by Annexin-V staining (Figure 2\u2014figure supplement 1A\u2013C). Furthermore, the pan-caspase inhibitor Q-VD-OPh (Wardle et al., 2011) completely abrogated Erbstatin and tyrphostin AG825-driven neutrophil apoptosis, confirming the caspase dependence of inhibitor mediated cell death (Figure 2\u2014figure supplement 1D\u2013E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50990/elife-50990-fig2-v2.jpg)\n\n**Figure 2.:** Neutrophils were incubated with media or a concentration range of gefitinib (A), lapatinib (A), sapatinib (A), CP-724714 (B), erbstatin (Erb, C) or tyrphostin AG825 (Tyr, D) for 6 hr. Stars represent significant difference compared to DMSO control (indicated by \u20180\u2019 in B-D). Neutrophils from COPD patients (open bars) and age-matched healthy control subjects (black bars) were incubated with DMSO or a concentration range of erbstatin (E) or tyrphostin AG825 (F) for 6 hr. Apoptosis was assessed by light microscopy. The data are expressed as mean percentage apoptosis\u00a0\u00b1\u00a0SEM from 3 (B, D), 4 (A,C), 10 (E,F COPD), or 7 (E,F HC) independent experiments using different neutrophil donors. Statistical significances between control and inhibitor was calculated by one-way ANOVA with Dunnett\u2019s post-test, indicated as *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50990/elife-50990-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Neutrophils were incubated with DMSO or 20 \u00b5M or 40 \u00b5M erbstatin (Erb, A and B) or tyrphostin AG825 (Tyr, C) for 6 hr. Apoptosis was assessed by Annexin V/TO-PRO-3 staining by flow cytometry and the percentage apoptosis calculated as Annexin V single plus Annexin V/TO-PRO-3 dual positive events. (A) Representative quadrant plot of Erbstatin-treated neutrophils showing distribution of Annexin V and TO-PRO-3 positive events. (D\u2013E) Neutrophils were incubated with DMSO or Erbstatin [40 \u00b5M] in the presence or absence of the pan caspase inhibitor, Q-VD-OPh [1 \u00b5M] for 6 hr (D) or 20 hr (E). Apoptosis was assessed by light microscopy. The data are expressed as mean percentage apoptosis\u00a0\u00b1\u00a0SEM from 3 (B), 4 (C and E), or 5 (D) independent experiments. Statistical differences were calculated by one-way ANOVA (with Dunnett\u2019s post test (B\u2013C) and two-way ANOVA with Sidak (D\u2013E) post-tests) and indicated as *p\u22640.05, **p\u22640.01, ***p\u22640.001, ****p\u22640.0001.\n\nCOPD is a chronic inflammatory disease associated with functionally defective circulating neutrophils, including a resistance to undergoing apoptosis during exacerbations (Pletz et al., 2004; Sapey et al., 2011). To show ErbB inhibition is effective in driving apoptosis in subjects with systemic inflammation, we isolated neutrophils from the blood of patients with COPD and age-matched healthy control subjects. Erbstatin and tyrphostin AG825 significantly increased apoptosis of neutrophils from both COPD patients and healthy control subjects in a dose dependent manner at both 6 hr (Figure 2E\u2013F) and 20 hr (data not shown).\n\nErbB inhibition overcomes neutrophil survival stimuli. Neutrophils are exposed to multiple pro-survival stimuli at sites of inflammation, which could undermine the therapeutic potential of anti-inflammatory drugs. Factors that raise intracellular cAMP concentration ([cAMP]i) are present during inflammation, and elevated [cAMP]i is known to prolong neutrophil survival via activation of cAMP-dependent protein kinases (Krakstad et al., 2004; Vaughan et al., 2007). We show that neutrophil apoptosis was reduced by the cAMP analogue and site selective activator of PKA, N6-monobutyryl-cAMP (N6-MB-cAMP), and that this was reversed by Erbstatin analog (Figure 3A) and Tyrphostin AG825 (Figure 3B). Similar effects were observed in neutrophils from patients with COPD (Figure 3C). GMCSF is a key neutrophil chemoattractant and pro-survival factor, and is closely associated with the severity of inflammation in disease (Klein et al., 2000; Wicks and Roberts, 2016). We show that erbstatin and tyrphostin AG825 prevent GMCSF-mediated survival in COPD and age-matched healthy control neutrophils (Figure 3D\u2013E). GMCSF is known to promote neutrophil survival via the phosphatidylinositol 3-kinase (PI3K)/AKT pathway, ultimately leading to the stabilisation of the anti-apoptotic Bcl-2 family member, Mcl-1 (Derouet et al., 2004; Klein et al., 2000). To investigate potential mechanisms underpinning the ability of tyrphostin AG825 to prevent GMCSF-mediated survival, we assessed AKT-phosphorylation as a measure of PI3K activation and found that tyrphostin AG825 reduced GMCSF-induced AKT phosphorylation after 15 and 30 min of treatment becoming statistically significant at 15 mins (Figure 3F). Tyrphostin AG825 accelerated the spontaneous downregulation of Mcl-1 and also prevented GMCSF-induced stabilisation of Mcl-1 (Figure 3G). These data show ErbB inhibition engages neutrophil apoptosis even in the presence of inflammatory stimuli and therefore has the potential to drive apoptosis at inflammatory sites.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50990/elife-50990-fig3-v2.jpg)\n\n**Figure 3.:** Neutrophils were incubated with DMSO, Erbstatin [Erb, 40 \u00b5M] (A) or tyrphostin AG825 [Tyr, 50 \u00b5M] (B) in the presence of DMSO or N6-MB-cAMP [500 \u00b5M and 1 mM] for 20 hr. Neutrophils isolated from COPD patients were incubated with DMSO or tyrphostin AG825 [50 \u00b5M] in the presence of DMSO or N6-MB-cAMP [500 \u00b5M] for 20 hr (C). Neutrophils isolated from COPD patients and age-matched healthy control subjects (HC) were incubated with DMSO, erbstatin (D) [20, 40 \u00b5M] or tyrphostin AG825 (E) [25, 50 \u00b5M] in the presence or absence of GMCSF [50 u/mL] for 20 hr. Apoptosis was assessed by light microscopy. The data are expressed as mean percentage apoptosis\u00a0\u00b1\u00a0SEM from 4 to 6 independent experiments. (F) Neutrophils were incubated with DMSO or tyrphostin AG825 [Tyr, 50 \u00b5M] for 60 min before the addition of GMCSF [50 u/mL] for 15 or 30 mins. (G) Neutrophils were incubated with DMSO, tyrphostin AG825 [50 \u00b5M] for 60 min before the addition of GMCSF [50 u/mL] for a further 7 hr. Cells were lysed, subjected to SDS-PAGE electrophoresis and membranes probed for p-AKT, Mcl-1 or loading controls, AKT and P38. Images are representative of 3 independent experiments. Charts show densitometric values of 3 individual immunoblots and are expressed as a ratio of target (p-AKT or Mcl-1) over loading control (AKT or P38, respectively). Statistically significant differences were calculated by one-way ANOVA with Sidak post-test (A\u2013C, F\u2013G) or two-way ANOVA with Sidak post-test (D\u2013E) and indicated as *p<0.05, **p<0.01, ***p<0.001.\n\n### Kinase microarray profiling reveals ErbB2 is phosphorylated by neutrophil survival stimuli\n\nTo explore whether ErbB family members are phosphorylated in response to survival stimuli we studied the activated kinome in human neutrophils stimulated with N6-MB-cAMP (Vaughan et al., 2007). A Kinex antibody microarray was performed to detect the phosphorylation of over 400 kinases and kinase-associated proteins and this data set was interrogated to seek evidence of activation of ErbB by N6-MB-cAMP. Of the phospho-specific antibodies, 17 yielded an increase over baseline control of\u00a0\u22651.5 at 30 min and 8 at 60 min (Table 1). Among these targets, ErbB2 phosphorylation was detected at 30 min (1.94\u00a0>\u00a0control) and 60 min (1.53\u00a0>\u00a0control, Table 1). This suggests that ErbB is part of the neutrophil signalling response to survival stimuli. In support of this, we detected the presence of ErbB2 mRNA in human neutrophils by RT-PCR (Figure 4A) and a 60kD protein (lower molecular weight ErbB family products are well-documented (Jackson et al., 2013; Guillaudeau et al., 2012; Siegel, 1999; Ward et al., 2013) which was upregulated by GMCSF and dbcAMP (Figure 4B). ErbB3 was also detected in human neutrophils by ELISA (Figure 4C), at levels similar to those observed in other tissues in literature (Buta et al., 2016). We found ErbB3 expression was not regulated by growth factors, which may in part be due to regulation being primarily at the post-translational level.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50990/elife-50990-fig4-v2.jpg)\n\n**Figure 4.:** (A) ErbB2 was detected in neutrophils and the positive control cell line, BEAS-2B, by RT-PCR. Primer sequences are as follows: ErbB2 forward: ACCCAGCTCTTTGAGGACAA, reverse: ATCGTGTCCTGGTAGCAGAG and \u03b2-actin forward: ATATCGCCGCGCTCGTCGTC, reverse: TAGCCGCGCTCGGTGAGGAT. NTC \u2013 no template control. (B) Neutrophils were treated with GMCSF [50 u/mL] and dbcAMP [10 \u03bcM] for 5 hr and lysates subjected to SDS PAGE. Membranes were immunoblotted with antibodies to ErbB2 antibody or \u03b2-actin as a loading control. A 60kD band was detected which was upregulated by GMCSF and dbcAMP. The image is representative of three independent experiments. (C) ErbB3 was detected by ELISA in human neutrophils and the positive control cell line, HaCaT. Neutrophils were treated with media, dbcAMP [500 \u00b5M], GM-CSF [50 u/mL] or LPS [1 \u00b5g/mL] for 2 hr or 6 hr, after which lysates were collected and ELISA detecting total human ErbB3 was carried out (N\u00a0=\u00a04). Bars indicate mean + SEM and statistical differences between media control and treatments were measured by one-way ANOVA and Sidak post-test (C, ns).\n\n**Table 1.**\n Kinexus antibody microarray analysis.Ultrapurified neutrophils were incubated with N6-MB-cAMP [100 \u00b5M] for 30 and 60 min or lysed immediately following isolation (0\u2019). Lysates from four donors were pooled prior to Kinex antibody microarray analysis. Table shows all targets for which phospho-antibodies had Z ratios of\u00a0>1.5 compared to t\u00a0=\u00a00 baseline control, at each timepoint. ErbB related antibodies are in bold.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Target protein</th>\n      <th>Z-ratio (30\u2019 v 0\u2019)</th>\n      <th>Target protein</th>\n      <th>Z-ratio (60\u2019 v 0\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDK1</td>\n      <td>5.69</td>\n      <td>PDK1</td>\n      <td>4.79</td>\n    </tr>\n    <tr>\n      <td>ZAP70/Syk</td>\n      <td>4.85</td>\n      <td>PKCa/b2</td>\n      <td>2.73</td>\n    </tr>\n    <tr>\n      <td>p38a</td>\n      <td>3.21</td>\n      <td>Zap70/Syk</td>\n      <td>2.72</td>\n    </tr>\n    <tr>\n      <td>PLCg1</td>\n      <td>3.16</td>\n      <td>p38a</td>\n      <td>2.32</td>\n    </tr>\n    <tr>\n      <td>MAP2K1</td>\n      <td>2.70</td>\n      <td>S6Ka</td>\n      <td>2.05</td>\n    </tr>\n    <tr>\n      <td>FKHRL1</td>\n      <td>2.58</td>\n      <td>Rb</td>\n      <td>1.96</td>\n    </tr>\n    <tr>\n      <td>GSK3a/b</td>\n      <td>2.54</td>\n      <td>PKCg</td>\n      <td>1.79</td>\n    </tr>\n    <tr>\n      <td>Huntingtin</td>\n      <td>2.29</td>\n      <td>ErbB2</td>\n      <td>1.53</td>\n    </tr>\n    <tr>\n      <td>BLNK</td>\n      <td>2.25</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Jun</td>\n      <td>1.99</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rb</td>\n      <td>1.99</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ErbB2</td>\n      <td>1.94</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Btk</td>\n      <td>1.92</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bad</td>\n      <td>1.81</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>AMPKa1/2</td>\n      <td>1.70</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Synapsin 1</td>\n      <td>1.69</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PKBa</td>\n      <td>1.64</td>\n      <td></td>\n      <td colspan=\"2\"></td>\n    </tr>\n  </tbody>\n</table>\n\n### ErbB inhibitors and genetic knockdown increase apoptosis and reduce neutrophil number at the site of inflammation in vivo\n\nTo determine the ability of ErbB inhibition to exert an effect on neutrophil number and apoptosis in vivo, we used three complementary animal models of acute inflammation. To specifically address whether tyrphostin AG825 was able to accelerate apoptosis of neutrophils in the mammalian lung, we used a murine model of LPS-induced airway inflammation (Thompson et al., 2014). C57BL/6 mice nebulised with LPS developed an acute pulmonary neutrophilia after 48 hr, to a degree seen previously (Figure 5A\u2013B) (Thompson et al., 2014). Tyrphostin AG825 had no effect on percentage of, or absolute number of neutrophils or macrophages compared to DMSO control (Figure 5A\u2013B). Tyrphostin AG825 significantly increased the percentage of neutrophil apoptosis, both visualised as \u2018free\u2019 apoptotic cells (closed circles) and as a summation of both free apoptotic cells and apoptotic inclusions within macrophages in order to capture those that had been efferocytosed (closed triangles, Figure 5C). Macrophage efferocytosis was also significantly elevated by tyrphostin AG825, compared to vehicle control (Figure 5D), determined by counting the number of macrophages containing apoptotic inclusions as a proportion of total macrophages (Figure 5E). We next tested the anti-inflammatory potential of tyrphostin AG825 when administered once inflammation was established, which is more representative of the clinical scenario. Mice were i.p injected with zymosan to induce peritonitis and after 4 hr were treated (i.p.) with tyrphostin AG825 or vehicle control. Total cell counts in peritoneal lavage were 2.2 \u00d7 106 in PBS vs 1.7 \u00d7 107 in zymosan treated animals at 4 hr demonstrating established inflammation at this time point (Navarro-Xavier et al., 2010). Importantly, tyrphostin AG825 does not induce leukopenia (Figure 5F), however significantly fewer inflammatory cells were found in peritoneal lavage following tyrphostin AG825 treatment (Figure 5G). The neutrophil chemoattractant and proinflammatory cytokine, KC, was reduced in tyrphostin AG825 treated mice, and concomitant with this, a trend for less IL-6 was also observed (Figure 5H). IgM, which correlates with the number and activation of peritoneal B lymphocytes (Almeida et al., 2001), is significantly reduced in tyrphostin AG825-treated mice (Figure 5I).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50990/elife-50990-fig5-v2.jpg)\n\n**Figure 5.:** C57BL/6 mice were nebulized with LPS and immediately injected intraperitoneally with either 10% DMSO (control, n\u00a0=\u00a08) or 20 mg/Kg tyrphostin AG825 (Tyr, n\u00a0=\u00a08). After 48 hr the mice were sacrificed and subjected to bronchoalveolar lavage. Percentage neutrophils (A, closed icons) and macrophages (A, open icons) and absolute numbers of neutrophils (B, closed icons) and macrophages (B, open icons) in BAL were calculated by haemocytometer and light microscopy. (C) Percentage neutrophil apoptosis (circles) and percentage neutrophil apoptosis calculated by also including numbers of apoptotic inclusions visualised within macrophages (triangles) was assessed by light microscopy. (D) Macrophages containing one or more apoptotic inclusions expressed as a percentage of all macrophages. Light microscopy image showing apoptotic inclusions within macrophages as indicated by black arrows (E). C57BL/6 mice were injected i.p. with 1 mg zymosan and 4 hr later injected i.p. with 20 mg/Kg tyrphostin AG825 (Tyr, n\u00a0=\u00a05) or 10% DMSO (Control, n\u00a0=\u00a05). At 20 hr mice were sacrificed and subjected to peritoneal lavage. (F) WBC, neutrophils and macrophages in blood were measured by a Sysmex cell counter. Total cells in peritoneal lavage were counted by flow cytometry (G) and KC, IL-6 (H) and IgM (I) measured in lavage by ELISA. At least two independent experimental replicates each processing 1\u20133 mice/group were performed. Statistical significance was calculated by Mann\u2013Whitney U test (A\u2013D and G\u2013I) or one-way ANOVA with Sidak post-test (F) and indicated as *p<0.05, **p<0.01, ***p<0.001.\n\nTo further extend this observation, we tested the ability of ErbB inhibitors to modulate neutrophilic inflammation resolution as a whole, in a model which encompasses multiple mechanisms of neutrophil removal including both apoptosis and reverse migration. In the mpx:GFP zebrafish tail fin injury model (Renshaw et al., 2006) (Figure 6A) we were able to show that tyrphostin AG825 (Figure 6B) and CP-724714 (Figure 6C) significantly reduced the number of neutrophils at the site of injury at 4 and 8 hpi. Simultaneous gene knockdown of egfra and erbb2 via CRISPR/Cas9 (referred to as \u2018crispants\u2019) also recapitulated this phenotype (Figure 6D). Tyrphostin AG825 did not affect total neutrophil number (Figure 6E), but egfra and erbb2 crispants had significantly fewer neutrophils (Figure 6F). As demonstrated by TSA and TUNEL double staining (Figure 6G), tyrphostin AG825 upregulated neutrophil apoptosis at both the site of injury (Figure 6H) and in the caudal hematopoietic tissue (CHT) of zebrafish (Figure 6I). CHT neutrophil counts were unchanged between conditions (data not shown). egfra and erbb2 crispants had increased numbers of apoptotic neutrophils at the site of injury, but this was not significant (Figure 6J), perhaps suggesting the presence of compensatory mechanisms. These findings show that inhibiting ErbB RTKs accelerate neutrophil apoptosis in vitro and in vivo and enhance inflammation resolution, making ErbB inhibitors an attractive therapeutic strategy for inflammatory disease.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50990/elife-50990-fig6-v2.jpg)\n\n**Figure 6.:** Tail fin transection was performed as indicated by the red line (A, upper image). Zebrafish larvae (mpx:GFP) were pre-treated at two dpf with DMSO, tyrphostin AG825 [Tyr, 10 \u00b5M] (B, minimum n\u00a0=\u00a028 larvae per condition), or CP-724714 [10 \u00b5M] (C, minimum n\u00a0=\u00a042 larvae per condition) for 16 hr followed by injury. egfra and erbb2 crispants were generated and injured at two dpf (D, minimum n\u00a0=\u00a036 larvae per condition). The number of neutrophils at the site of injury was determined at 4 and 8 hpi by counting GFP-positive neutrophils. To enumerate neutrophils across the whole body, uninjured inhibitor treated larvae (three dpf) (E, minimum n\u00a0=\u00a023 larvae per condition) or crispants (two dpf) (F, minimum n\u00a0=\u00a028 larvae per condition) were imaged by fluorescent microscopy (A, lower image). Apoptosis was measured at the site of injury after 8 hr by TSA and TUNEL double staining (G) (white arrow indicates TUNEL positive neutrophil, scale bar 10 \u03bcM) of mpx:GFP tyrphostin AG825 [Tyr, 10 \u00b5M] or CP-724714 [10 \u00b5M] treated larvae at three dpf (H, minimum n\u00a0=\u00a035 larvae per condition). Uninjured inhibitor treated larvae were assessed for neutrophil apoptosis in the CHT at three dpf (I, minimum n\u00a0=\u00a027 larvae per group). Apoptosis at the tail fin injury site of egfra erbb2 crispants at two dpf was also measured at eight hpi (J, minimum n\u00a0=\u00a026 larvae per group). All data collated from at least three independent experiments, displayed as mean\u00a0\u00b1\u00a0SEM. Each icon shows one data point from one individual larvae. Statistically significant differences were calculated by two-way ANOVA with Sidak post-test (B\u2013D) or one-way ANOVA with Dunnett\u2019s post-test(E), Students\u2019 t-test (F), Kruskal-Wallis test with Dunn\u2019s post-test (H\u2013I) or Mann-Whitney U test (J), and indicated as *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n## Discussion\n\nNeutrophils are powerful immune cells because of their destructive anti-microbial contents. A deleterious by-product of this is their remarkable histotoxic potential to host tissue, ordinarily held in check by the onset of apoptosis. The inappropriate suppression of neutrophil apoptosis underpins a number of chronic inflammatory diseases, and we are yet to have available an effective treatment strategy that can reverse this cellular defect in clinical practice. Here we show in human, mouse and zebrafish models of inflammation and neutrophil cell death that targeting the ErbB family of RTKs regulates neutrophil survival and resolves inflammation.\n\nPromoting neutrophil apoptosis is a desirable approach for the resolution of inflammation, since apoptosis functionally downregulates the cell, promotes rapid cell clearance by efferocytosis and engages an anti-inflammatory phenotype in phagocytosing cells (Savill et al., 1989; Whyte et al., 1999). As proof of principle, driving apoptosis experimentally promotes the resolution of inflammation across multiple disease models (Chello et al., 2007; Ren et al., 2008; Rossi et al., 2006). Several compounds targeting the ErbB family have been approved as medicines for the treatment of cancer (Singh et al., 2016). Our findings open up the possibility of repurposing well-tolerated ErbB inhibitors for patients with inflammatory disease, potentially addressing a currently unmet clinical need.\n\nThe ErbB family are critical regulators of cell proliferation and are associated with the development of many human malignancies (Roskoski, 2014). In addition to the development of cancer, ErbB members have known roles in inflammatory diseases of the airway, skin and gut (Davies et al., 1999; Finigan et al., 2011; Frey and Brent Polk, 2014; Hamilton et al., 2003; Pastore et al., 2008). In the context of lung inflammation, ErbB2 is upregulated in whole lung lysates in murine bleomycin models of lung injury and EGFR ligands are increased in BAL from acute lung injury patients receiving mechanical ventilation (Finigan et al., 2011), suggesting ErbB signalling axes may play a role in the process of airway inflammation in vivo. We show, in murine models where Tyrphostin AG825 was administered either at the time of inflammatory stimulus or once inflammation was established, an impact on cell number, proinflammatory cytokine production and neutrophil apoptosis, further validating the use of ErbB inhibitors to reduce inflammation. The benefit of EGFR inhibitors in reducing inflammation in ventilator-induced and OVA/LPS-induced lung injury rodent models is shown by others, further supporting the targetting of this pathway in inflammatory disease settings (Bierman et al., 2008; Shimizu et al., 2018; Takezawa et al., 2016).\n\nOthers have reported that neutrophils express members of the ErbB family (Lewkowicz et al., 2005), particularly ErbB2 at low levels (Petryszak et al., 2016) and we show that they are phosphorylated and regulated following exposure to inflammatory stimuli. ErbBs have known roles in suppressing apoptosis of epithelial cells and keratinocytes, but this study is the first to show a role for ErbBs in survival signalling of myeloid cells. Little is known about the roles of ErbBs in neutrophil function. Erbstatin has been shown to inhibit neutrophil ROS production (Dreiem et al., 2003; M\u00f3csai et al., 1997; Reistad et al., 2005) and chemotactic responses (Yasui et al., 1994). Other kinase families have been found to play a role in neutrophil survival and neutrophilic inflammation, most notably the cyclin-dependent kinases (CDKs) (Rossi et al., 2006). In accordance with this, compounds targeting CDKs were identified as drivers of neutrophil apoptosis in both our primary and secondary screens. Moreover, p38 MAPK inhibitor compounds were also identified in both zebrafish and human screens, and since this kinase is known to mediate survival signals, these findings give confidence to the robustness of the screen design and execution.\n\nThe engagement of apoptosis by the ErbB inhibitors erbstatin and tyrphostin AG825 was confirmed both biochemically by phosphatidylserine exposure, and mechanistically by the caspase inhibitor Q-VD-OPh and loss of Mcl-1. This suggests that inhibiting ErbBs as a therapeutic strategy may achieve an overall anti-inflammatory effect in in vivo systems, facilitating clearance by macrophages. In support of this, we provide evidence of increased efferocytosis in vivo following tyrphostin AG825 treatment, with no evidence of secondary neutrophil necrosis due to overwhelming macrophage clearance capacity, evidenced both morphologically and by TO-PRO-3 staining.\n\nThe ability of ErbB inhibitors to promote neutrophil apoptosis even in the presence of multiple pro-survival stimuli emphasises the potential of ErbB inhibitors in the lung, at sites where inflammatory mediators are in abundance and where neutrophils are exposed to microorganisms. This is supported by the ability of tyrphostin AG825 to prevent early pro-survival signalling in response to GMCSF, including the phosphorylation of AKT. This precedes the onset of apoptosis, occurring at a time point (15 min) where apoptosis is typically less than 1%. Others have shown the ability of erbstatin to prevent GMCSF-mediated activation of PI3K in human neutrophils, although the impact on cell survival was not studied (al-Shami et al., 1997). Therefore, ErbBs may function as an early and upstream component of the survival pathway in neutrophils. Subsequent impact on Mcl-1 destabilisation by tyrphostin AG825 at 8 hr suggests a cellular mechanism by which these pro-apoptotic effects are mediated.\n\nThe effects of ErbB inhibitors in driving spontaneous apoptosis suggest that, under certain circumstances, ErbB activity might be required for constitutive neutrophil survival. It is not clear what, if anything, engages ErbB signalling in culture. The rapid phosphorylation of ErbB2 following N6-MB-cAMP treatment (30 min) suggests that perhaps a ligand is not required, or that the neutrophils can rapidly release ErbB agonists in an autocrine manner. Unlike all other ErbBs, ErbB2 monomers exist in a constitutively active conformation and can form homodimers that do not require a ligand for activation (Fan et al., 2008). ErbBs achieve great signalling diversity: in part because of the individual biochemical properties of ligands and multiple homo-heterodimer combinations, and in part because they activate multiple components including those known to be critical in neutrophil cell survival such as PI3K, MAPK and GSK-3, as well as phosphorylating the Bcl-2 protein Bad which inhibits its death-promoting activity (Yarden and Sliwkowski, 2001).\n\nA limitation of our study is the genetically intractability of human neutrophils, meaning we cannot exclude the possibility that the inhibitors are having off target effects in this system. Mammalian models of ErbB deletion are limited by profound abnormalities in utero and during development (Britsch et al., 1998; Dackor et al., 2007; Gassmann et al., 1995; Miettinen et al., 1995; Riethmacher et al., 1997). For this reason, CRISPR/Cas9 was used to knockdown egfra and erbb2 in zebrafish, which confirmed a role for ErbBs in resolving inflammation. Targeting ErbBs genetically and pharmacologically reduces the number of neutrophils at the site of injury in zebrafish, which may reflect inhibition of a number of pathways that regulate neutrophil number in the tissue, including migration pathways (Ellett et al., 2015). However, the increase in apoptotic neutrophil count at the site of injury with ErbB inhibitor treatment suggests ErbBs may be inducing anti-apoptotic signalling pathways within this inflammatory environment, which could at least in part be causing the phenotype. The reduced neutrophil count at the injury site may also be due to the increase in apoptotic neutrophils in the CHT, which may be preventing neutrophil migration to sites of injury. The unchanged whole body neutrophil number is potentially due to compensatory upregulation of neutrophil production within the CHT. Genetic deletion, but not pharmacological inhibition, of egfra and erbb2 significantly reduced whole body neutrophil number, which may reflect crispants being without egfra and erbb2 genes from a one-cell stage. Reduced neutrophils at the injury site of crispants may be explained by their reduced whole body neutrophil number, but potentially also defects in the migratory response of these neutrophils to a site of inflammation. Murine models of inflammatory disease, where tyrphostin AG825 was administered either at the time of inflammatory stimulus or once inflammation was established, show an impact on cell number, proinflammatory cytokine production and neutrophil apoptosis, further validating the use of ErbB inhibitors to reduce inflammation.\n\nIn conclusion, we have identified a previously undefined role for ErbB RTKs in neutrophil survival pathways and a potential new use for ErbB inhibitors in accelerating inflammation resolution. These findings suggest the ErbB family of kinases may be novel targets for treatments of chronic inflammatory disease, and the potential for repurposing ErbB inhibitors currently in use for cancer may have significant clinical potential in a broader range of indications.\n\n## Materials and methods\n\n### Experimental design\n\nOur objectives for this study are to identify compounds that are able to resolve neutrophilic inflammation. To do this we performed unbiased chemical screens in both human neutrophils in vitro and zebrafish models of inflammation in vivo. Results were validated in murine models of peritoneal and airway inflammation and zebrafish tail injury models. Genetic evidence was obtained by CRISPR/Cas9 genetic editing in zebrafish.\n\n### Isolation and culture of human neutrophils\n\nNeutrophils were isolated from peripheral blood of healthy subjects and COPD patients by dextran sedimentation and discontinuous plasma-Percoll gradient centrifugation, as previously described (Haslett et al., 1985; Ward et al., 1999b) in compliance with the guidelines of the South Sheffield Research Ethics Committee (for young healthy subjects; reference number: STH13927) and the National Research Ethics Service (NRES) Committee Yorkshire and the Humber (for COPD and age-matched healthy subjects; reference number: 10/H1016/25). Informed consent was obtained after the nature and possible consequences of the study were explained. Mean age in years was 61.7\u00a0\u00b1\u00a02.3 (n\u00a0=\u00a010) and 66.0\u00a0\u00b1\u00a03.6 (n\u00a0=\u00a07) for COPD and age-matched healthy subjects respectively. Ultrapure neutrophils, for Kinexus antibody array experiments, were obtained by immunomagnetic negative selection as previously described (Sabroe et al., 2002). Neutrophils were cultured (2.5 \u00d7 106/ml) in RPMI 1640 (Gibco, Invitrogen Ltd) supplemented with 10% FCS 1% penicillin-streptomycin, in the presence or absence of the following reagents: GMCSF (PeproTech, Inc), N6-MB-cAMP (Biolog), anti-ErbB3 blocking antibody, Tyrphostin AG825 (both Sigma-Aldrich), CP-724714 (AdooQ Bioscience), Erbstatin analog (Cayman Chemicals), Pyocyanin (Usher et al., 2002) or compounds from PKIS (Published Kinase Inhibitor Set 1, GlaxoSmithKline) at concentrations as indicated.\n\nIn vitro screening of PKIS in neutrophil apoptosis assays. PKIS consists of 367 small molecule protein kinase inhibitors and is profiled with respect to target specificity (Elkins et al., 2016). In primary screen experiments, neutrophils (from five independent donors over 5 days) were incubated with each compound at 62 \u00b5M for 6 hr. Apoptosis was measured by flow cytometry (Attune, Invitrogen). Secondary screening was performed with selected compounds that accelerated neutrophil apoptosis greater than twofold in the primary screen. Compounds were incubated with neutrophils at 10 \u00b5M for 6 hr and apoptosis assessed by Attune flow cytometry.\n\n### Human neutrophil apoptosis assays\n\nNeutrophil apoptosis was assessed by light microscopy and by flow cytometry. Briefly, for the assessment of apoptosis by light microscopy based on well-characterised morphological changes, neutrophils were cytocentrifuged, fixed with methanol, stained with Reastain Quick-Diff (Gentaur), and then apoptotic and non-apoptotic neutrophils were counted with an inverted, oil immersion microscope (Nikon Eclipse TE300, Japan) at 100X magnification (Savill et al., 1989). To assess apoptosis by flow cytometry, neutrophils were stained with PE conjugated Annexin-V (BD Pharminogen) and TO-PRO-3 (Thermofisher Scientific) (Savill et al., 1989; Vermes et al., 1995; Ward et al., 1999a) and sample acquisition was performed by an Attune flow cytometer (Life Technologies) and data analysed by FlowJo (FlowJo LLC).\n\n### Kinexus antibody array\n\nNeutrophils were incubated with N6-MB-cAMP [100 \u00b5M] for 30 and 60 min or lysed immediately following isolation (t0). Cells were lysed in PBS containing Triton-X, 1 \u00b5M PMSF and protease inhibitor cocktail and following 2 min on ice were centrifuged at 10,000 RPM to remove insoluble material. Lysates (containing protein at 6 mg/mL) from four donors were pooled prior to Kinex antibody microarray analysis (Kinexus Bioinformatics) (Zhang and Pelech, 2012). Lysates are subjected to 812 antibodies including phospho-site specific antibodies to specifically measure phosphorylation of the target protein. Fluorescent signals from the array were corrected to background and log2 transformed and a Z score calculated by subtracting the overall average intensity of all spots within a sample, from the raw intensity for each spot, and dividing it by the standard deviations (SD) of all the measured intensities within each sample (Cheadle et al., 2003). Z ratio values are further calculated by taking the difference between the averages of the Z scores and dividing by the SD of all differences of the comparison (e.g, 30 min treated samples versus 0 min control). A Z ratio of\u00a0\u00b11.5 is considered to be a significant change from control.\n\n### Western blotting\n\nWhole cell lysates were prepared by resuspending human neutrophils (5 \u00d7 106) in 50 \u00b5l hypotonic lysis buffer (1 mM PMSF, 50 mM NaF, 10 mM Sodium orthovanadate, protease inhibitors cocktail in water), and by boiling with 50 \u00b5l 2X SDS buffer (0.1M 1,4-Dithio-DL-threitol, 4% SDS, 20% Glycerol, 0.0625M Tris-HCl pH6.8% and 0.004% Bromophenol blue). Protein samples were separated by SDS-polyacrylamide gel electrophoresis, and electrotransfer onto PVDF (polyvenylidene difluoride) membranes was performed by semi-dry blotting method. Membranes were then blocked with 5% skimmed milk in TBS-tween and probed against antibodies to p-AKT, AKT (both Cell signalling Technology), Mcl-1 (Santa Cruz Biotechnology), ErbB2 (New England Biolabs), p38 or \u03b2-actin (loading controls, StressMarq Biosciences Inc or Sigma respectively), followed by HRP-conjugated secondary antibodies and detection with chemiluminescent substrate solution ECL2 (GE Healthcare).\n\n### Fish husbandry\n\nThe neutrophil-specific, GFP-expressing transgenic zebrafish line, Tg(mpx:GFP)i114, (referred to as mpx:GFP) (Renshaw et al., 2006) was raised and maintained according to standard protocols (N\u00fcsslein-Volhard and Dahm, 2002) in UK Home Office approved aquaria in the Bateson Centre at the University of Sheffield, according to institutional guidelines. Adult fish are maintained in 14 hr light and 10 hr dark cycle at 28\u00b0C.\n\n### Zebrafish tail injury model of inflammation\n\nPKIS screening: Tail fin transection was performed on mpx:GFP zebrafish larvae at 3 days post-fertilisation (dpf) (Elks et al., 2011; Renshaw et al., 2006). At 6 hr post-injury (hpi), larvae that had mounted a good inflammatory response, as defined by recruitment of\u00a0>15 neutrophils to the injury site, were arrayed at a density of 3 larvae per well and incubated with PKIS compounds at a final concentration of 25 \u00b5M or vehicle control for a further 6 hr. At 12 hpi, the plate was scanned using prototype PhenoSight equipment (Ash Biotech). Images were scored manually as described previously (Robertson et al., 2014). In brief, each well of three larvae was assigned a score between 0\u20133, corresponding to the number of larvae within the well with a reduced number of neutrophils at the site of injury. Kinase inhibitors which reduced green fluorescence at the injury site to an extent that their mean score was\u00a0\u22651.5 were regarded as hit compounds.\n\nErbB inhibition studies: Briefly, two dpf mpx:GFP larvae were treated with Tyrphostin AG825 [10 \u00b5M] for 16 hr before undergoing tailfin transection (Elks et al., 2011; Renshaw et al., 2006). The number of neutrophils at the site of injury was determined at 4 and 8 hpi by counting GFP-positive neutrophils by fluorescent microscopy. To enumerate neutrophils across the whole body, uninjured larvae were treated with Tyrphostin AG825 [10 \u00b5M] for 24 hr and then mounted in 0.8% low-melting point agarose (Sigma-Aldrich) followed by imaging by fluorescence microscopy (Nikon Eclipse TE2000-U) at 4X magnification, followed by manual counting.\n\n### Zebrafish apoptosis assays\n\nLarvae from each experimental group were pooled into 1.5 mL eppendorf tubes. TSA signal amplification of GFP-labelled neutrophils (driven by endogenous peroxidase activity) was carried out using TSA Plus Fluorescein System (Perkin Elmer). Larvae were fixed overnight in 4% paraformaldehyde at 4\u00b0C after which they were subjected to proteinase K digestion. Larvae were post-fixed in 4% paraformaldehyde, before subsequent TUNEL staining for apoptosis using ApopTag Red In Situ Apoptosis Detection Kit (Millipore). Larvae were then mounted in low-melting point agarose and images acquired and analysed using UltraVIEWVoX spinning disc confocal laser imaging system with Volocity 6.3 software (Perkin Elmer). Apoptotic neutrophil count was determined firstly by identifying cells with co-localisation of the TSA and TUNEL stains, then confirmed by accounting for apoptotic neutrophil morphology.\n\n### Generation of transient CRISPR/Cas9 zebrafish mutants\n\nTransient dual knockdown of egfra and erbb2 was induced using a Cas9 nuclease (New England Biolabs) in combination with transactivating RNA (tracr) and synthetic guide RNAs specific to zebrafish egfra and erbb2 genes (Merck). The non-targetting control in these experiments was a guide RNA targetted towards tyrosinase, a gene involved in pigment formation and therefore easy to identify when mutated, and which is used by others in the field as a CRISPR/Cas9 control (O\u2019Connor et al., 2019; Varshney et al., 2016). We have previously shown that this guide does not influence neutrophilic inflammation in the zebrafish (Evans et al., 2019; Isles et al., 2019). Guide RNAs were designed using the online tool CHOPCHOP (https://chopchop.cbu.uib.no/) with the following sequences: efgra: TGAATCTCGGAGCGCGCAGGAGG; erbb2: AACGCTTTGGACCTACACGTGGG; tyrosinase: GGACUGGAGGACUUCUGGGG. Each guide RNA was resuspended to 20 \u03bcM in nuclease-free water with 10 mM Tris-HCl (pH8). Guide RNA [20 \u03bcM], tracr [20 \u03bcM] and Cas9 protein [20 \u03bcM] were combined (in a 1:1:1 ratio). 0.5 \u03bcL phenol red was added to each injection solution for visualisation. A graticule was used to calibrate glass capillary needles to dispense 0.5 nL of injection solution, and 1 nL was injected into the yolk sac of single-cell stage mpx:GFP embryos. Tail injury assays were carried out at two dpf as described above.\n\n### Genotyping of crispant larvae\n\nHigh-resolution melt curve analysis was used to determine the rate of egfra and erbb2 mutation in larvae at two dpf. Genomic DNA was collected from individual larvae in both the control and experimental groups, by adding 90 \u03bcL 50 mM NaOH to each larvae in a 96-well qPCR plate and incubating at 95\u00b0C for 20 min. 10 \u03bcL Tris-HCl (pH 8) was then added as a buffer. Master mixes containing either egfra or erbb2 primers (Integrated DNA Technologies) (sequences in table below) were made up, with each well containing: 0.5 \u03bcL 10 \u03bcM forward primer, 0.5 \u03bcL 10 \u03bcM reverse primer, 5 \u03bcL 2X DyNAmo Flash SYBR Green (Thermo Scientific), 3 \u03bcL milliQ water. One \u03bcL genomic DNA was added to each master mix in a 96-well qPCR plate. Melt curve analysis was performed and analysed with Bio-Rad Precision Melt Analysis software. Mutation rate was calculated by determining the percentage of egfra erbb2 larvae that showed a different melt-curve profile to the genomic DNA collected from tyrosinase fish (based on 95% confidence intervals). The average mutation rate in our experiments was 97.5% and 87.9% for egfra and erbb2, respectively.\n\nPrimer sequences used for high-resolution melt curve analysis.\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Forward primer sequence</th>\n      <th>Reverse primer sequence</th>\n      <th>Product size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>egfra</td>\n      <td>CCAGCGGTTCGGTTTATTCAG</td>\n      <td>CGTCTTCGCGTATTCTTGAGG</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>erbb2</td>\n      <td>ACAAAGAGCCCAAAAACAGGTTTA</td>\n      <td>TCCTTCAGTGCATACCCAGA</td>\n      <td>93</td>\n    </tr>\n  </tbody>\n</table>\n\n### Murine model of LPS induced acute lung inflammation\n\nAll work involving animals was performed in accordance with the Animal (Scientific procedures) Act 1986. Protocols were produced in line with PREPARE guidelines and FRAME recommendations and were reviewed by the University of Sheffield\u2019s Animal Welfare Committee. C57BL/6 mice (female, 9\u201310 weeks old) were nebulised with LPS (3 mg per group of 8 mice) (Pseudomonas aeruginosa, Sigma-Aldrich) and immediately injected intraperitoneally (i.p.) with either Tyrphostin AG825 (Tocris Bioscience) at 20 mg/Kg in 10% DMSO v/v in vegetable oil (eight mice, treatment group) or an equivalent volume of 10% DMSO v/v in vegetable oil (eight mice, control group) (Kedrin et al., 2009; Roos et al., 2014). After 48 hr the mice were sacrificed by terminal anaesthesia by i.p. pentobarbitone and subjected to bronchoalveolar lavage (BAL, 4 \u00d7 1 mL of saline). BAL samples were microcentrifuged and the cellular fraction counted by a hemocytometer and cytocentrifuged. Neutrophil apoptosis and macrophage efferocytosis of apoptotic neutrophils was quantified by oil immersion light microscopy (Nikon Eclipse TE300, Japan).\n\n### Murine model of zymosan-induced peritonitis\n\nC57BL/6 mice were i.p. injected with 1 mg zymosan (Sigma-Aldrich) and 4 hr later injected i.p with 20 mg/Kg Tyrphostin AG825 in 10% DMSO v/v in vegetable oil (five mice, treatment group) or an equivalent volume of 10% DMSO v/v in vegetable oil (five mice, control group). At 20 hr the mice were subjected to terminal gaseous anaesthesia (isoflurane) followed by a cardiac puncture and peritoneal lavage (4 \u00d7 1 mL of saline). WBC, neutrophils and macrophages were enumerated in blood by an automated haematology analyser (KX-21N, Sysmex, Milton Keynes, UK). Lavage samples were microcentrifuged and the cellular fraction subjected to flow cytometry and cytocentrifuged for light microscopy. IL-6, KC (Duoset ELISA kits, R and D systems) and IgM (Thermofisher Scientific) in cell free lavage were measured by ELISA as per manufacturer\u2019s instructions.\n\n### Statistical analysis\n\nData were analysed using GraphPad Prism 8 (GraphPad Software, San Diego, CA) using one-way or two-way ANOVA (with appropriate post-test detailed in the Figure legends) for all in vitro data and appropriate in vivo experiments. Non-parametric tests (Mann-Whitney U-test or Kruskal-Wallis test) were used for selected in vivo experiments with non-Gaussian distribution. Data are expressed as mean\u00a0\u00b1\u00a0SEM (standard error of mean), and significance was accepted at p<0.05.\n",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "d104f61d-25d6-4e41-87b7-e3470af86ccf",
+      "submission_id": "16a14083-ace9-4c7b-bb89-6877d4dfe378",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jody Rosenblatt, King's College London United Kingdom\n\nReviewers:\n- Lee-Ann Allen, University of Iowa Health Care United States\n\n## Review text\n\nDOI: [10.7554/eLife.50990.016](https://doi.org/10.7554/eLife.50990.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Defining the functional neutrophil kinome reveals ErbB kinases as potential therapeutic targets in inflammatory disease\" for consideration by eLife. Your article has been reviewed by a Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Jean-Pierre Levraud.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nWithin our discussion, the reviewers all felt that while the story on the ErbB2 role in inflammation was interesting, more work was needed to really conclude its specific role, especially as this is not the first study to identify a role for ErbBs in neutrophil function and inflammation. Moreover, there was a consensus that the manuscript, as it stands now, really consists of two incomplete and disconnected stories: the kinome and the inhibitor screen. They were also more puzzled that ErB2, which was the main focus of the paper, did not even come up in the kinome. This brings up questions about both approaches. Overall, the impression was that this paper would be better understood as two separate stories but that both stories needed more experiments to be convincing, as outlined in the specific comments, below. One of the reviewers points out that there is a conditional (floxed) Erb2 mutant in mouse (Ozcelik et al., 2002). If the authors use this line and a neutrophil-specific Cre line, they could add genetic evidence. They also agreed that kinase assays needed to be performed to show that the effects were specific as well as live imaging of their zebrafish experiments to determine whether the effects were on cell migration or cell death. Because we all felt that it was unlikely for you produce more convincing data in less than 2 months, the usual turnaround for eLife, any resubmission would need to be as a new paper, and we would argue without the kinome data.\n\nReviewer #1:\n\nThe authors report that inhibition of ErbB kinase limits neutrophil inflammation by affecting neutrophil apoptosis. The paper uses several systems: human neutrophils, zebrafish and mice to probe the effect of ErbB kinase inhibition on inflammation. The observations are intriguing and suggest that ErbB inhibition may provide a therapeutic target for inflammatory disease.\n\nEssential revisions:\n\nGenetic approaches to implicate ErbB kinases in these processes, especially in the zebrafish model or cell lines would better support their conclusion that ErbB kinases regulate neutrophil apoptosis and inflammation. Are there genetic mutants or knockdowns in either cell lines or zebrafish?\n\nMore information about where ErbB kinases are expressed in human/mouse/zebrafish tissues would be informative. Is this a neutrophil intrinsic effect? The in vitro analysis supports this idea however it is unclear if this could be due to toxic effects of the compounds on neutrophils versus inhibition of a specific pathway.\n\nCell toxicity remains a concern (in particular Figure 4). Was there specificity of the inhibitors for ErbB kinases in neutrophils? Can a kinase activity assay be performed? What was the expression of ErbB kinases in human neutrophils? Was the activity/expression regulated by pro-survival signals?\n\nThroughout the number of replicates and total N was not always clear. This should be indicated in the figures and figure legends.\n\nFigure 1: The kinome figure is not user friendly. In Figure 1B, it would be useful to know what fold increase or decrease was observed with GMCSF treatment (and more information about the conditions of the treatment). Figure 1 should reference the tables that correspond with this data. An alternative would be to include a table within the figure (with fold changes in expression by GMCSF).\n\nFigure 2: The kinetics of the assay was long duration (24 hour pre-treatment). What was the effect if larvae were treated with the drug for shorter times? What happens at earlier time points?\n\nFigure 4: Is there a change in ErbB kinase expression or activity in normal/COPD donors? A western blot would be useful.\n\nFigures 5 and 6: Do pro-survival signals increase ErbB kinase expression or activity?\n\nFigure 7C: It was not entirely clear what is being measured here?\n\nFigure 8: Was there an effect on neutrophil reverse migration or just apoptosis? The authors have reported the use of photoconversion to analyze neutrophil reverse migration and this would be informative in this context.\n\nReviewer #2:\n\nThis manuscript is from an established group of respected neutrophil biologists and the study combines profiling of the neutrophil kinome with studies of selected kinase inhibitors as a strategy to advance understanding of neutrophil apoptosis regulation and to identify possible targets for therapeutic intervention in COPD and related diseases.\n\nThe main strengths of the study are the generation of a kinome profile of human neutrophils and evidence of significant overlap with the kinome of zebrafish.\n\nThe main weaknesses are the lack of validation of the kinome data and the results of the inhibitor screen. Thus, the kinome analsysis remains merely a list of enzymes, and the results of the associated inhibitor screen have not been directly validated.\n\nEssential revisions:\n\n1) Rather than characterizing the kinome itself, a library of kinase inhibitors was screened to identify compounds that accelerate neutrophil apoptosis. Based on these results, further experiments focused on inhibitors of the receptor tyrosine kinase ErbB. However, these data are incomplete. Thus, as presented, the manuscript contains two incomplete stories.\n\n2) Regarding the screen, what accounts for the differential effects of inhibitors that target the same kinases? Why does the ErbB1/B4 inhibitor induces more apoptosis than the ErbB1/B/B4 inhibitor (Figure 3)?\n\n3) Most experiments focus on ErbB2 as an inhibitor target of interest, yet the kinome suggests that only ErbB3 is present. What accounts for this discrepancy? Data demonstrating the abundance of all ErbB family proteins in neutrophils should be added.\n\n4) There is no direct measurement of ErbB isoform activity or phosphorylation or analysis of relevant substrates (in the absence or presence of inhibitors). Thus, the effects could be indirect or non-specific. To address this, the activity and abundance of ErbB family members in resting, apoptotic, and cAMP- or GMCSF-stimulated cells is missing. Reliance on inhibitors without demonstration of specificity and efficacy is risky.\n\nReviewer #3:\n\nRahman et al. use a drug discovery approach, combining an in vivo screen in zebrafish and an in vitro screen of human cells, to identify kinase inhibitors that would help resolve neutrophil-mediated inflammatory diseases. They focus on ErbB inhibitors and show that they promote neutrophil apoptosis, even in the presence of pro-survival stimuli. Then, they perform experiments in mouse and again in zebrafish to establish a proof-of-concept of the usefulness of this type of drugs in inflammatory diseases.\n\nThis combination of models makes for a powerful and exciting approach. In general, experiments are performed carefully, and the statistical analysis is sound. However, I find that the authors tend to overstate the novelty of their findings.\n\nInhibition of neutrophil function par erbstatin is not exactly something new \u2013 it has been described first in a 1990 paper (Naccache et al., 1990). Actually, searching PubMed with keywords \"neutrophil\" and \"erbstatin\" returns 38 references, of which not one is cited in the manuscript. Not all these references are relevant, but clearly the sentence at the end of the Introduction (\"This study is the first to identifiy a role for ErbBs in neutrophil function and inflammation\") is an exaggeration. The relevant previous literature has to be incorporated in Introduction and Discussion section.\n\nIn the Introduction, the authors state \"there are no treatment strategies in clinical use to reverse this cellular mechanism\": maybe not \"reverse\", but roflumilast is an approved anti-inflammatory drug to prevent exacerbation in COPD. This should be discussed at the very least.\n\nThe final zebrafish experiment (Figure 8) is a disappointing, given the easy imaging of neutrophil migration and death in this system. It does not add much to the initial screen. A measurement of frequency of neutrophil death at the site of injury, in particular, would be desirable considering the general emphasis of the manuscript on induction of neutrophil apoptosis.\n\nTable S1A: Please provide a quantitation of the expression level of each kinase in human neutrophils. Please also provide the complete list and quantitation of kinases expressed in zebrafish neutrophils (as S1B, thus moving the common set as S1C). For both human and zebrafish genes, provide unique identifiers (GenBank or Ensembl IDs), not just names, which are often ambiguous.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Inhibition of ErbB kinase signalling promotes resolution of neutrophilic inflammation\" for further consideration at eLife. Your revised article has been favorably evaluated by Tadatsugu Taniguchi (Senior Editor), a Reviewing Editor, and three reviewers.\n\nWe feel that the manuscript has greatly been improved and clarified since the last submission. We were fortunate to have two of the original reviewers and a new reviewer, as the previous third was unavailable at this time. We especially appreciate the new reviewer for comments, as they often need to understand the assessments from the previous iteration, which is no longer present. Through the post-review discussions, we felt it unnecessary to respond to the main points of reviewer #3 but they may be helpful in your final edits. We mainly would like you to address the statistical analysis and points on CRISPR controls raised by reviewer #2. The full reviewer comments are below:\n\nReviewer #1:\n\nThis study is a very interesting, well-designed, and important advance to the field of neutrophil biology and apoptosis regulation. The use of 3 complementary models is a key strength. The data are thorough and convincing, and all points noted in prior critiques have been adequately addressed. No further revisions requested.\n\nKinome data were leveraged to identify and characterize ErbB family kinases as key regulators of neutrophil longevity. These data were extended to shown that ErbB pathway inhibitors can overcome pro-survival signaling to induce apoptosis and thereby reverse pathological neutrophil accumulation in disease states, including COPD.\n\nReviewer #2:\n\nThe authors report that inhibition of ErbB kinase limits neutrophil inflammation by affecting neutrophil apoptosis. The paper uses several systems: human neutrophils, zebrafish and mice to probe the effect of ErbB kinase inhibition on inflammation. The observations are intriguing and suggest that ErbB inhibition may provide a pathway with therapeutic importance for inflammatory disease. The revised manuscript is significantly improved and addressed the concerns raised in the prior review. I recommend the revised manuscript for publication in eLife after these concerns are addressed.\n\nThe controls for the crispants are not clearly outlined. How were the crispants validated? How many targets were used? In general, more than one target should be used for each gene.\n\nStatistical analysis should be clarified in the legends and text.\n\nReviewer #3:\n\nThis study by Rahman et al. investigated the role of ErbB kinase in neutrophil apoptosis, using multiple approaches in vitro and in vivo. They observed that: (1) ErbB family were the common targets of compounds that leading to neutrophil apoptosis in both zebrafish inflammation model and human neutrophils; (2) the ErbBs inhibitors promoted the apoptosis of neutrophils from both healthy volunteers and COPD patients; (3) GMCSG and dbcAMP, the neutrophil survival stimuli, promoted ErbB2 and ErbB3 expression in human neutrophils; (4) tyrphostin AG825 (an ErbBs inhibitor) and knockdown of egfra and erbb2 reduced inflammation in vivo. Altogether, the authors conclude that ErbB family participate in neutrophil survival and ErbB inhibitors play positive roles in accelerating inflammation resolution.\n\nOverall, this study appears interesting, and data presented in this manuscript look solid. However, some data are confusing and do not fully support the conclusion of this study.\n\nThere are several issues that need to be addressed by the authors. Specific issues are referenced below.\n\nEssential revisions:\n\n1) Subsection \u201cIdentifying kinases regulating the resolution of neutrophilic inflammation in vivo\u201d: \"We quantified the ability of PKIS to reduce the number of neutrophils at the site of injury during the resolution phase of inflammation.\" Please provide the specific data. And how to determine the zebrafish inflammation model is in the phase of inflammatory resolution, not acute phase.\n\n2) The authors just showed the statistic results about apoptosis assessed by flow cytometry. It would be better to show the specific flow images in different groups and compare the differences.\n\n3) Detection apoptosis using light microscopy is not an ideal option. Maybe some apoptosis-related proteins should be detected by Western Blot, such as Bcl-2 and Bax.\n\n4) In Figure 1B what does the x-axis represent?\n\n5) The authors demonstrated that tyrphostin AG825-driven neutrophil apoptosis is caspase-dependent. It would be better to detect the caspase-3 expression by Western Blot.\n\n6) The author showed that the expressions of both total and phosphorylated ErbB2 (pErbB2) were elevated. Does the increase of total protein indirectly increase the amount of phosphorylated protein? It would be better to detect the expression of phosphorylated ErbB2 by Western Blot. And the ratio pErbB2/ErbB2 should be shown.\n\n7) The data in Figure 4 are not enough to support the conclusion. The flow cytometry images in different groups should be provided. Other methods for detecting neutrophil apoptosis in lung tissue should probably be provided, such as immunohistochemistry. Did Tyr accelerate the inflammatory resolution in lung tissue in zymosan treated mice? HE staining for lung tissue should be detected.\n\n8) The authors didn't demonstrate the role of ErbB inhibitors in accelerating inflammatory resolution both in mice and zebrafish models. The process of inflammatory resolution is dynamic. It would be better to monitor the tissue injury dynamically.\n",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5901ec3e-d5dd-4eb5-b32a-086fb6e6453b",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C1",
+      "claim": "Screening of 367 kinase inhibitors in human neutrophils and a zebrafish tail fin injury model identified ErbBs as common targets of compounds that accelerated inflammation resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening of 367 kinase inhibitors in human neutrophils and a zebrafish tail fin injury model identified ErbBs as common targets of compounds that accelerated inflammation resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that a screen of 367 kinase inhibitors was performed and identified ErbBs as targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "7b6101bd-18a6-48c8-a092-c51f7b1d4962",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C2",
+      "claim": "The ErbB inhibitors gefitinib, CP-724714, erbstatin and tyrphostin AG825 significantly accelerated apoptosis of human neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "The ErbB inhibitors gefitinib, CP-724714, erbstatin and tyrphostin AG825 significantly accelerated apoptosis of human neutrophils, including neutrophils from people with COPD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states these compounds accelerated neutrophil apoptosis, supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "9e081a9b-92fa-4e13-8d59-be80965ddb91",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C3",
+      "claim": "ErbB inhibitors significantly accelerated apoptosis of neutrophils from people with COPD.",
+      "claim_type": "EXPLICIT",
+      "source": "The ErbB inhibitors gefitinib, CP-724714, erbstatin and tyrphostin AG825 significantly accelerated apoptosis of human neutrophils, including neutrophils from people with COPD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract and Figure 2E-F show that erbstatin and tyrphostin AG825 increased apoptosis in COPD patient neutrophils.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "ab92a894-1869-4128-9818-b6993d364eef",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C4",
+      "claim": "Neutrophil apoptosis was increased in Tyrphostin AG825 treated-zebrafish in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophil apoptosis was also increased in Tyrphostin AG825 treated-zebrafish in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by data in Figure 6H-I showing increased apoptotic neutrophils.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "52f8ef38-7c80-4740-862e-16c97842347d",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C5",
+      "claim": "Tyrphostin AG825 decreased peritoneal inflammation in zymosan-treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyrphostin AG825 decreased peritoneal inflammation in zymosan-treated mice, and increased lung neutrophil apoptosis and macrophage efferocytosis in a murine acute lung injury model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, supported by data in Figure 5G showing reduced cell counts in peritoneal lavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "920379a4-4361-4435-ba1f-5d1b3010f7a1",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C6",
+      "claim": "Tyrphostin AG825 increased lung neutrophil apoptosis in a murine acute lung injury model.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyrphostin AG825 decreased peritoneal inflammation in zymosan-treated mice, and increased lung neutrophil apoptosis and macrophage efferocytosis in a murine acute lung injury model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, supported by data in Figure 5C showing increased neutrophil apoptosis in BAL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "80d9cc71-c00a-4314-8c9a-ebf72bbc45b9",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C7",
+      "claim": "Tyrphostin AG825 increased macrophage efferocytosis in a murine acute lung injury model.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyrphostin AG825 decreased peritoneal inflammation in zymosan-treated mice, and increased lung neutrophil apoptosis and macrophage efferocytosis in a murine acute lung injury model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, supported by data in Figure 5D showing increased macrophage efferocytosis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "b1b2c371-bbb7-44b8-be2c-3d27a9ded506",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C8",
+      "claim": "Tyrphostin AG825 reduced inflammation in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyrphostin AG825 and knockdown of egfra and erbb2 by CRISPR/Cas9 reduced inflammation in zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, supported by data in Figure 6B showing reduced neutrophils at injury site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "007838c8-9840-41e4-b89f-7b23af174fab",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C9",
+      "claim": "Knockdown of egfra and erbb2 by CRISPR/Cas9 reduced inflammation in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyrphostin AG825 and knockdown of egfra and erbb2 by CRISPR/Cas9 reduced inflammation in zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, supported by data in Figure 6D showing reduced neutrophils at injury site in crispants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "44a83da8-7a53-48c2-b160-24260440f429",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C10",
+      "claim": "Inhibitors of ErbB kinases have therapeutic potential in neutrophilic inflammatory disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that inhibitors of ErbB kinases have therapeutic potential in neutrophilic inflammatory disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract, based on the collective experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "b6e70ce4-7b81-4312-b111-808cd8a93296",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C11",
+      "claim": "Neutrophilic inflammation is central to chronic inflammatory diseases such as rheumatoid arthritis and chronic obstructive pulmonary disease (COPD).",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophilic inflammation is central to chronic inflammatory diseases such as rheumatoid arthritis and chronic obstructive pulmonary disease (COPD), which impose an increasing social and economic burden on our aging population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about inflammatory diseases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "278583e3-0064-4dcc-bb10-7f98738ac5cc",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C12",
+      "claim": "Treatment of COPD by next-generation combination therapy with inhaled corticosteroids and newer bronchodilators are viewed as maintenance pharmacotherapies but they do not specifically target cellular inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of COPD by next-generation combination therapy with inhaled corticosteroids and newer bronchodilators are viewed as maintenance pharmacotherapies but they do not specifically target cellular inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current COPD therapies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "6268ea7b-fd22-45c9-8495-ca9266072b42",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C13",
+      "claim": "The anti-inflammatory phosphodiesterase-4 inhibitor, roflumilast, targets systemic inflammation associated with COPD and reduces moderate to severe exacerbations in severe disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-inflammatory phosphodiesterase-4 inhibitor, roflumilast, targets systemic inflammation associated with COPD and reduces moderate to severe exacerbations in severe disease, possibly via effects on eosinophils (Martinez et al., 2018; Rabe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Martinez et al., 2018 and Rabe et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "a0ecfca5-798e-4bad-86f1-ff8cc1954932",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C14",
+      "claim": "In chronic inflammatory diseases, clearance of neutrophils by apoptosis is dysregulated particularly during exacerbations.",
+      "claim_type": "EXPLICIT",
+      "source": "In these diseases, clearance of neutrophils by apoptosis is dysregulated particularly during exacerbations (Pletz et al., 2004; Sapey et al., 2011), but to date it has not been possible to therapeutically modify this, indeed corticosteroids can supress neutrophil apoptosis and hence perpetuate inflammation (Liles et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Pletz et al., 2004 and Sapey et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "0d64058a-0ab2-4652-9c58-ab67c473feb4",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C15",
+      "claim": "Corticosteroids can suppress neutrophil apoptosis and hence perpetuate inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "In these diseases, clearance of neutrophils by apoptosis is dysregulated particularly during exacerbations (Pletz et al., 2004; Sapey et al., 2011), but to date it has not been possible to therapeutically modify this, indeed corticosteroids can supress neutrophil apoptosis and hence perpetuate inflammation (Liles et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Liles et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "30cf57a8-703e-48d8-8701-b122c5f3ffcb",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C16",
+      "claim": "Neutrophil persistence in tissues, caused by a delay in apoptosis, can result in a destructive cellular phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophil persistence in tissues, caused by a delay in apoptosis, can result in a destructive cellular phenotype, whereby neutrophils have greater potential to expel histotoxic factors such as proteases and oxidative molecules onto surrounding tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a mechanistic understanding of neutrophil-mediated tissue damage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "8dcef7cd-7b67-4e0f-9afe-31ba0e243655",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C17",
+      "claim": "In COPD, delayed apoptosis is considered to be a key part of the pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In COPD, among other diseases, delayed apoptosis is considered to be a key part of the pathogenesis, occurring either as a result of pro-survival factors that are present in the lung microenvironment or an innate apoptosis defect (Brown et al., 2009; Haslett, 1999; Pletz et al., 2004; Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Brown et al., 2009; Haslett, 1999; Pletz et al., 2004; Zhang et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "2c215562-8d56-46f1-98f8-d806f389a388",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C18",
+      "claim": "There are no effective treatment strategies in clinical use to specifically reverse delayed neutrophil apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this mechanistic understanding, there are no effective treatment strategies in clinical use to specifically reverse this cellular mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current clinical practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "07756b0d-4160-43cd-a5dc-1ba82aea38b3",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C19",
+      "claim": "Accelerating neutrophil apoptosis has been shown to promote the resolution of inflammation in multiple experimental models.",
+      "claim_type": "EXPLICIT",
+      "source": "Accelerating neutrophil apoptosis has been shown to promote the resolution of inflammation in multiple experimental models (Burgon et al., 2014; Chello et al., 2007; Ren et al., 2008; Rossi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Burgon et al., 2014; Chello et al., 2007; Ren et al., 2008; Rossi et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "7fd2e799-18bf-4d41-9ffb-0b34e3507cfb",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C20",
+      "claim": "Protein kinases are important in regulating neutrophil apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies highlight the importance of protein kinases in regulating neutrophil apoptosis (Burgon et al., 2014; Rossi et al., 2006; Webb et al., 2000) and therefore reveal potential therapeutically targetable pathways for inflammatory disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Burgon et al., 2014; Rossi et al., 2006; Webb et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "87cc3fd8-f37c-42bb-8c9a-baee9163fe55",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C21",
+      "claim": "The ErbB family consist of four RTKs with structural homology to the human epidermal growth factor receptor (EGFR/ErbB1/Her-1).",
+      "claim_type": "EXPLICIT",
+      "source": "The ErbB family consist of four RTKs with structural homology to the human epidermal growth factor receptor (EGFR/ErbB1/Her-1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge about the ErbB family.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "65e8a841-8b67-49f4-907b-6c1eb0aa0cf6",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C22",
+      "claim": "The screen identified 16 hit compounds which reduced neutrophil number at the site of injury in the zebrafish model.",
+      "claim_type": "EXPLICIT",
+      "source": "The screen identified 16 hit compounds which reduced neutrophil number at the site of injury in the zebrafish model (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "445425b9-1b1d-484b-a0ae-3cc65f029957",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C23",
+      "claim": "ABL1, PDGFR\u03b1, PDGFR\u03b2, p38\u03b1 and ErbB4 were the top five most frequently targeted kinases overall in the zebrafish screen.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of kinases were inhibited by the 16 compounds, with Abelson murine leukaemia viral homolog 1 (ABL1), Platelet-derived growth factor receptor (PDGFR) \u03b1, PDGFR\u03b2, p38\u03b1 and ErbB4 being the top five most frequently targeted kinases overall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing the zebrafish screen outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "1f91d599-4451-486a-8d23-cea651ecdc99",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C24",
+      "claim": "The most selective compounds in the zebrafish screen targeted the kinases YES, ABL1, p38 and the ErbB family.",
+      "claim_type": "EXPLICIT",
+      "source": "The most selective compounds, that is those that strongly inhibited individual kinases or kinase families, targeted the kinases YES, ABL1, p38 and the ErbB family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing the zebrafish screen outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "1d6fdc1c-d12f-4fa3-b392-922b6fd92a53",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C25",
+      "claim": "PKIS screening at 62 \u00b5M resulted in 62 compounds that accelerated neutrophil apoptosis \u22652 fold compared to DMSO control.",
+      "claim_type": "EXPLICIT",
+      "source": "PKIS compounds were screened at 62 \u00b5M in order to maximise the chance of identifying 'hits' and resulted in 62 compounds that accelerated neutrophil apoptosis \u22652 fold compared to DMSO control (Figure 1B and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "f98a4d1f-7f95-4dfc-9ef1-c3e42ea7ef4c",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C26",
+      "claim": "Secondary screening of top 38 compounds at 10 \u00b5M yielded 11 compounds that accelerated neutrophil apoptosis \u22652 fold over control.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary screening of top 38 compounds (chosen from the 62 hits based on greatest selectivity for kinase targets) was carried out at 10 \u00b5M in order to reduce false positives. This yielded 11 compounds that accelerated neutrophil apoptosis \u22652 fold over control (as indicated by dashed green line, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "5d88eac3-c7c4-4785-a2a0-24f0450ae2fb",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C27",
+      "claim": "Kinases targeted by the 11 hit compounds included DYRK1B, KIT, EGFR, ErbB2 and ErbB4, PDGFR, CDK6 and p38.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinases targeted by these compounds included DYRK1B, KIT, EGFR, ErbB2 and ErbB4, PDGFR, CDK6 and p38 (Figure 1C, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1C inset table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "eaee16e7-aa31-42c4-82ec-48faf758e1be",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C28",
+      "claim": "Members of the ErbB family of RTKs were the most frequently inhibited kinase family after known regulators of neutrophil survival (p38, PI3K).",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of known regulators of neutrophil survival (p38, PI3K) was encouraging support for the screen design and execution. We found that members of the ErbB family of RTKs were the next most frequently inhibited kinase family, being targeted by three highly selective compounds out of the 11 hits (Figure 1C, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "10284f77-faf6-4c18-ad14-6a3095544e47",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C29",
+      "claim": "Gefitinib is the most effective clinically used ErbB inhibitor in promoting neutrophil apoptosis, reaching significance at 50 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that among inhibitors of ErbBs that are in clinical use, the EGFR inhibitor, gefitinib, is the most effective in promoting neutrophil apoptosis, reaching significance at 50 \u00b5M (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "3cb3e087-f3fd-4a83-8b0a-447e014bc228",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C30",
+      "claim": "CP-724714 promoted neutrophil apoptosis in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The ErbB2-selective inhibitor, CP-724714 (Jani et al., 2007) also promoted neutrophil apoptosis in a dose-dependent manner (Figure 2B) as did Erbstatin and tyrphostin AG825, selective for EGFR and ErbB2 respectively (Osherov et al., 1993; Umezawa and Imoto, 1991) (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2B, with citation to Jani et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "a67307fd-ccd3-47ea-b8aa-5150ea69f73d",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C31",
+      "claim": "Erbstatin promoted neutrophil apoptosis in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The ErbB2-selective inhibitor, CP-724714 (Jani et al., 2007) also promoted neutrophil apoptosis in a dose-dependent manner (Figure 2B) as did Erbstatin and tyrphostin AG825, selective for EGFR and ErbB2 respectively (Osherov et al., 1993; Umezawa and Imoto, 1991) (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2C, with citations to Osherov et al., 1993 and Umezawa and Imoto, 1991.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "ba367579-1b0b-4b12-b6d9-961c08ed581f",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C32",
+      "claim": "Tyrphostin AG825 promoted neutrophil apoptosis in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The ErbB2-selective inhibitor, CP-724714 (Jani et al., 2007) also promoted neutrophil apoptosis in a dose-dependent manner (Figure 2B) as did Erbstatin and tyrphostin AG825, selective for EGFR and ErbB2 respectively (Osherov et al., 1993; Umezawa and Imoto, 1991) (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2D, with citations to Osherov et al., 1993 and Umezawa and Imoto, 1991.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "1435b54d-2856-4b66-840b-7afad8f9fd7e",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C33",
+      "claim": "The pan-caspase inhibitor Q-VD-OPh completely abrogated Erbstatin and tyrphostin AG825-driven neutrophil apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the pan-caspase inhibitor Q-VD-OPh (Wardle et al., 2011) completely abrogated Erbstatin and tyrphostin AG825-driven neutrophil apoptosis, confirming the caspase dependence of inhibitor mediated cell death (Figure 2\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2\u2014figure supplement 1D\u2013E, with citation to Wardle et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "b8569bf2-910d-4527-aaac-d582e08d3aa9",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C34",
+      "claim": "Erbstatin and tyrphostin AG825 significantly increased apoptosis of neutrophils from both COPD patients and healthy control subjects in a dose dependent manner at 6 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Erbstatin and tyrphostin AG825 significantly increased apoptosis of neutrophils from both COPD patients and healthy control subjects in a dose dependent manner at both 6 hr (Figure 2E\u2013F) and 20 hr (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "49b41b3a-4e40-41d5-a78d-e741cfd85279",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C35",
+      "claim": "Factors that raise intracellular cAMP concentration are present during inflammation and prolong neutrophil survival via activation of cAMP-dependent protein kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors that raise intracellular cAMP concentration ([cAMP]i) are present during inflammation, and elevated [cAMP]i is known to prolong neutrophil survival via activation of cAMP-dependent protein kinases (Krakstad et al., 2004; Vaughan et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Krakstad et al., 2004 and Vaughan et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "50f8c79b-44ec-47d9-804f-3b7809b14ca8",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C36",
+      "claim": "Neutrophil apoptosis was reduced by N6-MB-cAMP, and this was reversed by Erbstatin analog and Tyrphostin AG825.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that neutrophil apoptosis was reduced by the cAMP analogue and site selective activator of PKA, N6-monobutyryl-cAMP (N6-MB-cAMP), and that this was reversed by Erbstatin analog (Figure 3A) and Tyrphostin AG825 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "52a5e91c-0f40-4445-8860-d6aa836e8fac",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C37",
+      "claim": "Erbstatin and tyrphostin AG825 prevent GMCSF-mediated survival in COPD and age-matched healthy control neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that erbstatin and tyrphostin AG825 prevent GMCSF-mediated survival in COPD and age-matched healthy control neutrophils (Figure 3D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "265580bb-5623-4d6b-ade6-af922ab88d35",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C38",
+      "claim": "GMCSF is known to promote neutrophil survival via the phosphatidylinositol 3-kinase (PI3K)/AKT pathway, ultimately leading to the stabilisation of the anti-apoptotic Bcl-2 family member, Mcl-1.",
+      "claim_type": "EXPLICIT",
+      "source": "GMCSF is known to promote neutrophil survival via the phosphatidylinositol 3-kinase (PI3K)/AKT pathway, ultimately leading to the stabilisation of the anti-apoptotic Bcl-2 family member, Mcl-1 (Derouet et al., 2004; Klein et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Derouet et al., 2004 and Klein et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "283ddeac-db3c-4215-b5b0-86425da2d354",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C39",
+      "claim": "Tyrphostin AG825 reduced GMCSF-induced AKT phosphorylation after 15 and 30 min of treatment becoming statistically significant at 15 mins.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate potential mechanisms underpinning the ability of tyrphostin AG825 to prevent GMCSF-mediated survival, we assessed AKT-phosphorylation as a measure of PI3K activation and found that tyrphostin AG825 reduced GMCSF-induced AKT phosphorylation after 15 and 30 min of treatment becoming statistically significant at 15 mins (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "6883b4e1-eb30-4037-a559-443f5dc8e15a",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C40",
+      "claim": "Tyrphostin AG825 accelerated the spontaneous downregulation of Mcl-1 and prevented GMCSF-induced stabilisation of Mcl-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyrphostin AG825 accelerated the spontaneous downregulation of Mcl-1 and also prevented GMCSF-induced stabilisation of Mcl-1 (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "2c3b4dde-fcba-4065-b3f4-5bec537fffd3",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C41",
+      "claim": "ErbB2 phosphorylation was detected at 30 min (1.94 > control) and 60 min (1.53 > control) in neutrophils stimulated with N6-MB-cAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these targets, ErbB2 phosphorylation was detected at 30 min (1.94 > control) and 60 min (1.53 > control, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "4f9e14c7-4bd2-470d-a478-b7a7f7ad13cd",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C42",
+      "claim": "ErbB2 mRNA was detected in human neutrophils by RT-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, we detected the presence of ErbB2 mRNA in human neutrophils by RT-PCR (Figure 4A) and a 60kD protein (lower molecular weight ErbB family products are well-documented (Jackson et al., 2013; Guillaudeau et al., 2012; Siegel, 1999; Ward et al., 2013) which was upregulated by GMCSF and dbcAMP (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4A, with citations to Jackson et al., 2013; Guillaudeau et al., 2012; Siegel, 1999; Ward et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "8bbb5b8d-a02f-49a1-88a3-f42645c4e79b",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C43",
+      "claim": "A 60kD ErbB2 protein was detected in human neutrophils which was upregulated by GMCSF and dbcAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, we detected the presence of ErbB2 mRNA in human neutrophils by RT-PCR (Figure 4A) and a 60kD protein (lower molecular weight ErbB family products are well-documented (Jackson et al., 2013; Guillaudeau et al., 2012; Siegel, 1999; Ward et al., 2013) which was upregulated by GMCSF and dbcAMP (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4B, with citations to Jackson et al., 2013; Guillaudeau et al., 2012; Siegel, 1999; Ward et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "6eba7623-b1d6-4e2b-b917-ab6e93357ad8",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C44",
+      "claim": "ErbB3 was detected in human neutrophils by ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "ErbB3 was also detected in human neutrophils by ELISA (Figure 4C), at levels similar to those observed in other tissues in literature (Buta et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4C, with citation to Buta et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "e6b05a28-9939-427c-9f8d-fb2909360ab7",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C45",
+      "claim": "Tyrphostin AG825 had no effect on percentage of, or absolute number of neutrophils or macrophages in BAL compared to DMSO control in LPS-induced airway inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyrphostin AG825 had no effect on percentage of, or absolute number of neutrophils or macrophages compared to DMSO control (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "fc85009b-665b-48e1-817d-95723e16e8bf",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C46",
+      "claim": "Tyrphostin AG825 significantly increased the percentage of neutrophil apoptosis in murine LPS-induced airway inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyrphostin AG825 significantly increased the percentage of neutrophil apoptosis, both visualised as 'free' apoptotic cells (closed circles) and as a summation of both free apoptotic cells and apoptotic inclusions within macrophages in order to capture those that had been efferocytosed (closed triangles, Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "8f6036fb-fb14-4b7a-b8d7-b7716d58291d",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C47",
+      "claim": "Macrophage efferocytosis was significantly elevated by tyrphostin AG825 compared to vehicle control in murine LPS-induced airway inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophage efferocytosis was also significantly elevated by tyrphostin AG825, compared to vehicle control (Figure 5D), determined by counting the number of macrophages containing apoptotic inclusions as a proportion of total macrophages (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "7c2ec9f7-51a6-4c1d-be22-94ecd2805eb8",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C48",
+      "claim": "Tyrphostin AG825 does not induce leukopenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, tyrphostin AG825 does not induce leukopenia (Figure 5F), however significantly fewer inflammatory cells were found in peritoneal lavage following tyrphostin AG825 treatment (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "9fac57f9-5766-41b1-a0b2-04f9af8ef7c9",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C49",
+      "claim": "Significantly fewer inflammatory cells were found in peritoneal lavage following tyrphostin AG825 treatment in zymosan-induced peritonitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, tyrphostin AG825 does not induce leukopenia (Figure 5F), however significantly fewer inflammatory cells were found in peritoneal lavage following tyrphostin AG825 treatment (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "30ebd259-fb36-48f0-b0c5-e138641f4050",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C50",
+      "claim": "The neutrophil chemoattractant and proinflammatory cytokine, KC, was reduced in tyrphostin AG825 treated mice in zymosan-induced peritonitis.",
+      "claim_type": "EXPLICIT",
+      "source": "The neutrophil chemoattractant and proinflammatory cytokine, KC, was reduced in tyrphostin AG825 treated mice, and concomitant with this, a trend for less IL-6 was also observed (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "a3e73ae1-4fc5-43ad-8526-456a49526e4f",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C51",
+      "claim": "IgM is significantly reduced in tyrphostin AG825-treated mice in zymosan-induced peritonitis.",
+      "claim_type": "EXPLICIT",
+      "source": "IgM, which correlates with the number and activation of peritoneal B lymphocytes (Almeida et al., 2001), is significantly reduced in tyrphostin AG825-treated mice (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 5I, with citation to Almeida et al., 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "8b232a95-0cc8-4918-82e1-a296e9725e4f",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C52",
+      "claim": "Tyrphostin AG825 significantly reduced the number of neutrophils at the site of injury at 4 and 8 hpi in zebrafish tail fin injury model.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mpx:GFP zebrafish tail fin injury model (Renshaw et al., 2006) (Figure 6A) we were able to show that tyrphostin AG825 (Figure 6B) and CP-724714 (Figure 6C) significantly reduced the number of neutrophils at the site of injury at 4 and 8 hpi.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6B, with citation to Renshaw et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "dcb17603-8ffa-4d7e-8f89-e356eac57804",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C53",
+      "claim": "CP-724714 significantly reduced the number of neutrophils at the site of injury at 4 and 8 hpi in zebrafish tail fin injury model.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mpx:GFP zebrafish tail fin injury model (Renshaw et al., 2006) (Figure 6A) we were able to show that tyrphostin AG825 (Figure 6B) and CP-724714 (Figure 6C) significantly reduced the number of neutrophils at the site of injury at 4 and 8 hpi.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6C, with citation to Renshaw et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "aaf04ac6-52c6-45de-9ae2-6bc30a18a1c2",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C54",
+      "claim": "Simultaneous gene knockdown of egfra and erbb2 via CRISPR/Cas9 reduced the number of neutrophils at the site of injury in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous gene knockdown of egfra and erbb2 via CRISPR/Cas9 (referred to as 'crispants') also recapitulated this phenotype (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "b0307e5b-3f71-4c61-9b56-597d657d6d0c",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C55",
+      "claim": "Tyrphostin AG825 did not affect total neutrophil number in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyrphostin AG825 did not affect total neutrophil number (Figure 6E), but egfra and erbb2 crispants had significantly fewer neutrophils (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "10b778f9-7964-4665-943a-0076de950330",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C56",
+      "claim": "egfra and erbb2 crispants had significantly fewer total neutrophils in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyrphostin AG825 did not affect total neutrophil number (Figure 6E), but egfra and erbb2 crispants had significantly fewer neutrophils (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "3e5bcdab-ece5-4fb9-ba99-dee6071cc990",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C57",
+      "claim": "Tyrphostin AG825 upregulated neutrophil apoptosis at the site of injury in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated by TSA and TUNEL double staining (Figure 6G), tyrphostin AG825 upregulated neutrophil apoptosis at both the site of injury (Figure 6H) and in the caudal hematopoietic tissue (CHT) of zebrafish (Figure 6I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "15e264b5-2d69-427f-9905-b0e2d2807197",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C58",
+      "claim": "Tyrphostin AG825 upregulated neutrophil apoptosis in the caudal hematopoietic tissue (CHT) of zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated by TSA and TUNEL double staining (Figure 6G), tyrphostin AG825 upregulated neutrophil apoptosis at both the site of injury (Figure 6H) and in the caudal hematopoietic tissue (CHT) of zebrafish (Figure 6I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 6G and 6I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "f1685545-0d00-4787-9606-ed6f8a091cb8",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C59",
+      "claim": "Promoting neutrophil apoptosis is a desirable approach for the resolution of inflammation, since apoptosis functionally downregulates the cell, promotes rapid cell clearance by efferocytosis and engages an anti-inflammatory phenotype in phagocytosing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Promoting neutrophil apoptosis is a desirable approach for the resolution of inflammation, since apoptosis functionally downregulates the cell, promotes rapid cell clearance by efferocytosis and engages an anti-inflammatory phenotype in phagocytosing cells (Savill et al., 1989; Whyte et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Savill et al., 1989 and Whyte et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "223ac285-4fcc-4758-aa15-ba73d798fcfa",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C60",
+      "claim": "Several compounds targeting the ErbB family have been approved as medicines for the treatment of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Several compounds targeting the ErbB family have been approved as medicines for the treatment of cancer (Singh et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Singh et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "72b5b2b5-e68b-480f-a8c0-0bc7a2348f27",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C61",
+      "claim": "The ErbB family are critical regulators of cell proliferation and are associated with the development of many human malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "The ErbB family are critical regulators of cell proliferation and are associated with the development of many human malignancies (Roskoski, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Roskoski, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "c5e73fe9-91b8-4d0e-b679-6c6948b2cf69",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C62",
+      "claim": "ErbB members have known roles in inflammatory diseases of the airway, skin and gut.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the development of cancer, ErbB members have known roles in inflammatory diseases of the airway, skin and gut (Davies et al., 1999; Finigan et al., 2011; Frey and Brent Polk, 2014; Hamilton et al., 2003; Pastore et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Davies et al., 1999; Finigan et al., 2011; Frey and Brent Polk, 2014; Hamilton et al., 2003; Pastore et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "bac06b7f-3ad1-462f-b918-2a0077f34e95",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C63",
+      "claim": "ErbB2 is upregulated in whole lung lysates in murine bleomycin models of lung injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of lung inflammation, ErbB2 is upregulated in whole lung lysates in murine bleomycin models of lung injury and EGFR ligands are increased in BAL from acute lung injury patients receiving mechanical ventilation (Finigan et al., 2011), suggesting ErbB signalling axes may play a role in the process of airway inflammation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Finigan et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "91d9863a-2807-4699-986c-fc84062c4656",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C64",
+      "claim": "EGFR ligands are increased in BAL from acute lung injury patients receiving mechanical ventilation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of lung inflammation, ErbB2 is upregulated in whole lung lysates in murine bleomycin models of lung injury and EGFR ligands are increased in BAL from acute lung injury patients receiving mechanical ventilation (Finigan et al., 2011), suggesting ErbB signalling axes may play a role in the process of airway inflammation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Finigan et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "ef1e89d2-975b-45a2-a8f2-2230561d502a",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C65",
+      "claim": "The benefit of EGFR inhibitors in reducing inflammation in ventilator-induced and OVA/LPS-induced lung injury rodent models is shown by others.",
+      "claim_type": "EXPLICIT",
+      "source": "The benefit of EGFR inhibitors in reducing inflammation in ventilator-induced and OVA/LPS-induced lung injury rodent models is shown by others, further supporting the targetting of this pathway in inflammatory disease settings (Bierman et al., 2008; Shimizu et al., 2018; Takezawa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bierman et al., 2008; Shimizu et al., 2018; Takezawa et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "d53ea2e9-e060-4e66-bacd-fda40053acce",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C66",
+      "claim": "Neutrophils express members of the ErbB family.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have reported that neutrophils express members of the ErbB family (Lewkowicz et al., 2005), particularly ErbB2 at low levels (Petryszak et al., 2016) and we show that they are phosphorylated and regulated following exposure to inflammatory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Lewkowicz et al., 2005 and Petryszak et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "477c845b-a654-4132-b793-f041be66f98c",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C67",
+      "claim": "ErbBs have known roles in suppressing apoptosis of epithelial cells and keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "ErbBs have known roles in suppressing apoptosis of epithelial cells and keratinocytes, but this study is the first to show a role for ErbBs in survival signalling of myeloid cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "a7867215-5697-42e8-983c-2933dc21cde7",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C68",
+      "claim": "This study is the first to show a role for ErbBs in survival signalling of myeloid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ErbBs have known roles in suppressing apoptosis of epithelial cells and keratinocytes, but this study is the first to show a role for ErbBs in survival signalling of myeloid cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding of the current study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "88961baf-7de4-4f07-954f-c1f2727f9b7e",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C69",
+      "claim": "Erbstatin has been shown to inhibit neutrophil ROS production.",
+      "claim_type": "EXPLICIT",
+      "source": "Erbstatin has been shown to inhibit neutrophil ROS production (Dreiem et al., 2003; M\u00f3csai et al., 1997; Reistad et al., 2005) and chemotactic responses (Yasui et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Dreiem et al., 2003; M\u00f3csai et al., 1997; Reistad et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "41b30e92-baf2-4195-8cf0-9a6d6b6760c5",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C70",
+      "claim": "Erbstatin has been shown to inhibit neutrophil chemotactic responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Erbstatin has been shown to inhibit neutrophil ROS production (Dreiem et al., 2003; M\u00f3csai et al., 1997; Reistad et al., 2005) and chemotactic responses (Yasui et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Yasui et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "4585909d-6668-4ef9-8830-7edfd04b81f0",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C71",
+      "claim": "Cyclin-dependent kinases (CDKs) play a role in neutrophil survival and neutrophilic inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Other kinase families have been found to play a role in neutrophil survival and neutrophilic inflammation, most notably the cyclin-dependent kinases (CDKs) (Rossi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Rossi et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "82fda730-4ba1-4c9a-9481-cb467c66a41b",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C72",
+      "claim": "Compounds targeting CDKs were identified as drivers of neutrophil apoptosis in both primary and secondary screens.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with this, compounds targeting CDKs were identified as drivers of neutrophil apoptosis in both our primary and secondary screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the screening experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "369d693b-5f8b-4548-89c2-5ed4d590574c",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C73",
+      "claim": "p38 MAPK inhibitor compounds were identified in both zebrafish and human screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, p38 MAPK inhibitor compounds were also identified in both zebrafish and human screens, and since this kinase is known to mediate survival signals, these findings give confidence to the robustness of the screen design and execution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the screening experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "a198a6e9-c369-43d6-bd48-19e207f95208",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C74",
+      "claim": "p38 MAPK is known to mediate survival signals in neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, p38 MAPK inhibitor compounds were also identified in both zebrafish and human screens, and since this kinase is known to mediate survival signals, these findings give confidence to the robustness of the screen design and execution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "f8ea9be9-7741-4da6-9505-8de078e7b267",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C75",
+      "claim": "Inhibiting ErbBs as a therapeutic strategy may achieve an overall anti-inflammatory effect in in vivo systems, facilitating clearance by macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that inhibiting ErbBs as a therapeutic strategy may achieve an overall anti-inflammatory effect in in vivo systems, facilitating clearance by macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "c9ff8811-ef89-4d9e-8ba5-2d06757e0a67",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C76",
+      "claim": "There was no evidence of secondary neutrophil necrosis due to overwhelming macrophage clearance capacity following tyrphostin AG825 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, we provide evidence of increased efferocytosis in vivo following tyrphostin AG825 treatment, with no evidence of secondary neutrophil necrosis due to overwhelming macrophage clearance capacity, evidenced both morphologically and by TO-PRO-3 staining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "3b98cf63-0107-430c-bb45-591c69d9613f",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C77",
+      "claim": "Erbstatin can prevent GMCSF-mediated activation of PI3K in human neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have shown the ability of erbstatin to prevent GMCSF-mediated activation of PI3K in human neutrophils, although the impact on cell survival was not studied (al-Shami et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to al-Shami et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "4a7f8f77-ef5c-4fa1-b632-ef51133dc0dc",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C78",
+      "claim": "ErbBs may function as an early and upstream component of the survival pathway in neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, ErbBs may function as an early and upstream component of the survival pathway in neutrophils.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the experimental findings on AKT phosphorylation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "a3717971-b390-4b06-8efd-ce59fa040163",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C79",
+      "claim": "Unlike all other ErbBs, ErbB2 monomers exist in a constitutively active conformation and can form homodimers that do not require a ligand for activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike all other ErbBs, ErbB2 monomers exist in a constitutively active conformation and can form homodimers that do not require a ligand for activation (Fan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Fan et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "7765b92c-77ec-4a65-a803-34c4f1095746",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C80",
+      "claim": "ErbBs activate multiple components including those known to be critical in neutrophil cell survival such as PI3K, MAPK and GSK-3.",
+      "claim_type": "EXPLICIT",
+      "source": "ErbBs achieve great signalling diversity: in part because of the individual biochemical properties of ligands and multiple homo-heterodimer combinations, and in part because they activate multiple components including those known to be critical in neutrophil cell survival such as PI3K, MAPK and GSK-3, as well as phosphorylating the Bcl-2 protein Bad which inhibits its death-promoting activity (Yarden and Sliwkowski, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Yarden and Sliwkowski, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "82386283-b9f9-4597-b33b-fc5533a6ba95",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C81",
+      "claim": "ErbBs phosphorylate the Bcl-2 protein Bad which inhibits its death-promoting activity.",
+      "claim_type": "EXPLICIT",
+      "source": "ErbBs achieve great signalling diversity: in part because of the individual biochemical properties of ligands and multiple homo-heterodimer combinations, and in part because they activate multiple components including those known to be critical in neutrophil cell survival such as PI3K, MAPK and GSK-3, as well as phosphorylating the Bcl-2 protein Bad which inhibits its death-promoting activity (Yarden and Sliwkowski, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Yarden and Sliwkowski, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "897fff39-910e-49cb-a970-b8f39cb3c232",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C82",
+      "claim": "Mammalian models of ErbB deletion are limited by profound abnormalities in utero and during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian models of ErbB deletion are limited by profound abnormalities in utero and during development (Britsch et al., 1998; Dackor et al., 2007; Gassmann et al., 1995; Miettinen et al., 1995; Riethmacher et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Britsch et al., 1998; Dackor et al., 2007; Gassmann et al., 1995; Miettinen et al., 1995; Riethmacher et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "f1861478-b6a5-487c-bbfd-3a8492c244aa",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C83",
+      "claim": "Targeting ErbBs genetically and pharmacologically reduces the number of neutrophils at the site of injury in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting ErbBs genetically and pharmacologically reduces the number of neutrophils at the site of injury in zebrafish, which may reflect inhibition of a number of pathways that regulate neutrophil number in the tissue, including migration pathways (Ellett et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the zebrafish experiments, with citation to Ellett et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "4901ba45-967c-456f-bc92-725854420045",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C84",
+      "claim": "The increase in apoptotic neutrophil count at the site of injury with ErbB inhibitor treatment suggests ErbBs may be inducing anti-apoptotic signalling pathways within this inflammatory environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increase in apoptotic neutrophil count at the site of injury with ErbB inhibitor treatment suggests ErbBs may be inducing anti-apoptotic signalling pathways within this inflammatory environment, which could at least in part be causing the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "4c027708-9d4f-461c-8d4f-cbab654db4ab",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C85",
+      "claim": "The reduced neutrophil count at the injury site may be due to the increase in apoptotic neutrophils in the CHT, which may be preventing neutrophil migration to sites of injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced neutrophil count at the injury site may also be due to the increase in apoptotic neutrophils in the CHT, which may be preventing neutrophil migration to sites of injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation for the observed phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "40a8e936-e836-4385-8861-54320014c304",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C86",
+      "claim": "The unchanged whole body neutrophil number with tyrphostin AG825 treatment is potentially due to compensatory upregulation of neutrophil production within the CHT.",
+      "claim_type": "EXPLICIT",
+      "source": "The unchanged whole body neutrophil number is potentially due to compensatory upregulation of neutrophil production within the CHT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation for the observed phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "82d49650-a927-4d47-855c-aa1a4175fdd3",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C87",
+      "claim": "Genetic deletion of egfra and erbb2 significantly reduced whole body neutrophil number in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic deletion, but not pharmacological inhibition, of egfra and erbb2 significantly reduced whole body neutrophil number, which may reflect crispants being without egfra and erbb2 genes from a one-cell stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the zebrafish experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "05a5632d-5089-4bda-8503-d8919f2b1bfb",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C88",
+      "claim": "Reduced neutrophils at the injury site of crispants may be explained by their reduced whole body neutrophil number and potentially defects in the migratory response of these neutrophils to a site of inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced neutrophils at the injury site of crispants may be explained by their reduced whole body neutrophil number, but potentially also defects in the migratory response of these neutrophils to a site of inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation for the observed phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "12711fb8-38c4-4962-a076-5e4724abd755",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C89",
+      "claim": "The average mutation rate in egfra erbb2 crispants was 97.5% for egfra and 87.9% for erbb2.",
+      "claim_type": "EXPLICIT",
+      "source": "The average mutation rate in our experiments was 97.5% and 87.9% for egfra and erbb2, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the genotyping experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "c53975c4-7059-4159-a4c8-1295f4000b34",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C90",
+      "claim": "Total cell counts in peritoneal lavage were 2.2 \u00d7 10^6 in PBS vs 1.7 \u00d7 10^7 in zymosan treated animals at 4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Total cell counts in peritoneal lavage were 2.2 \u00d7 106 in PBS vs 1.7 \u00d7 107 in zymosan treated animals at 4 hr demonstrating established inflammation at this time point (Navarro-Xavier et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the peritonitis experiments, with citation to Navarro-Xavier et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "8c251c3d-483d-4adf-a195-9b140a5e8f73",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "claim_id": "C91",
+      "claim": "C57BL/6 mice nebulised with LPS developed an acute pulmonary neutrophilia after 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "C57BL/6 mice nebulised with LPS developed an acute pulmonary neutrophilia after 48 hr, to a degree seen previously (Figure 5A\u2013B) (Thompson et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from the LPS-induced airway inflammation experiments, with citation to Thompson et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "464abe98-c6f3-4b91-9fe3-bf8d5e368d3f",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A dual-screen approach using 367 kinase inhibitors in zebrafish tail fin injury and human neutrophil apoptosis assays identified ErbB family kinases as common targets. In zebrafish, 16 compounds reduced neutrophil numbers at injury sites, with ErbB4 among the top five targeted kinases. In human neutrophils, 62 compounds accelerated apoptosis at 62 \u00b5M, narrowed to 11 compounds at 10 \u00b5M, with ErbB family members (EGFR, ErbB2, ErbB4) being the most frequently targeted after known regulators p38 and PI3K.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The screening methodology is well-described with appropriate controls (C25-C28). The identification of known neutrophil survival regulators (p38, PI3K) validates the screen design (C28). The convergence of ErbB targets across two independent biological systems (zebrafish and human neutrophils) strengthens the finding (C1, C22-C28). Sample sizes and statistical thresholds are clearly defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "33bcd876-50c3-47a7-95b5-00c05cc9ee29",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Multiple ErbB inhibitors (gefitinib, CP-724714, erbstatin, tyrphostin AG825) significantly accelerated human neutrophil apoptosis in a dose-dependent manner. Gefitinib reached significance at 50 \u00b5M, while CP-724714, erbstatin, and tyrphostin AG825 showed dose-dependent effects. The pan-caspase inhibitor Q-VD-OPh completely abrogated erbstatin and tyrphostin AG825-driven apoptosis, confirming caspase-dependent apoptotic cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The dose-response relationships are demonstrated with appropriate statistical testing (C29-C32). The mechanistic validation using Q-VD-OPh provides strong evidence that the observed cell death is caspase-dependent apoptosis rather than necrosis or other forms of cell death (C33). Multiple independent compounds targeting ErbB family members show consistent effects, reducing the likelihood of off-target effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "12e13009-8cb8-4b89-8fab-731fd60db6b2",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Erbstatin and tyrphostin AG825 significantly increased apoptosis of neutrophils from COPD patients and age-matched healthy controls in a dose-dependent manner at 6 hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The study demonstrates that ErbB inhibitors are effective in neutrophils from disease-relevant patient populations (COPD, n=10) and age-matched controls (n=7), which is clinically important given that COPD neutrophils are known to have delayed apoptosis (C34). The dose-dependent response in both populations strengthens the therapeutic potential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "e88a7da2-8a23-4cd8-ad07-9ef7b36f23e5",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ErbB inhibitors (erbstatin and tyrphostin AG825) overcome pro-survival stimuli in neutrophils. They reversed N6-MB-cAMP-mediated survival suppression and prevented GMCSF-mediated survival in both COPD and healthy control neutrophils. Mechanistically, tyrphostin AG825 reduced GMCSF-induced AKT phosphorylation (significant at 15 min) and both accelerated spontaneous Mcl-1 downregulation and prevented GMCSF-induced Mcl-1 stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experiments demonstrate that ErbB inhibitors can overcome multiple pro-survival pathways (cAMP/PKA and GMCSF/PI3K/AKT) that are clinically relevant in inflammatory environments (C36-C37, C39-C40). The mechanistic data linking ErbB inhibition to reduced AKT phosphorylation and Mcl-1 destabilization provides a plausible pathway explanation. The time course experiments (15-30 min for AKT, 8 hr for Mcl-1) are appropriate for the signaling events studied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "a292932e-480e-478b-9883-102e364d7de2",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Human neutrophils express ErbB family members. ErbB2 phosphorylation was detected at 30 min (1.94-fold over control) and 60 min (1.53-fold) following N6-MB-cAMP stimulation by Kinexus antibody microarray. ErbB2 mRNA was detected by RT-PCR, and a 60kD ErbB2 protein was detected by Western blot and upregulated by GMCSF and dbcAMP. ErbB3 was detected by ELISA at levels similar to other tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple orthogonal methods (Kinexus array, RT-PCR, Western blot, ELISA) confirm ErbB expression in neutrophils (C41-C44). The detection of a 60kD ErbB2 protein is appropriately contextualized with citations noting that lower molecular weight ErbB products are well-documented (C43). The phosphorylation data from the Kinexus array (Z-ratio >1.5) meets the stated threshold for significance and shows ErbB2 is activated by survival stimuli.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "22914699-455b-4aae-9cf4-8b8c4059315f",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In a murine LPS-induced acute lung injury model, tyrphostin AG825 (20 mg/kg i.p.) did not affect neutrophil or macrophage numbers in BAL at 48 hr but significantly increased neutrophil apoptosis (both free apoptotic cells and those within macrophages) and significantly elevated macrophage efferocytosis compared to vehicle control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The murine model demonstrates that tyrphostin AG825 promotes resolution through increased apoptosis and efferocytosis without simply reducing neutrophil recruitment (C45-C47). The lack of effect on total cell numbers but increase in apoptosis and efferocytosis suggests the compound is acting on resolution mechanisms rather than recruitment. The experimental design with appropriate controls (DMSO vehicle) and sample sizes (n=8 per group) is adequate. The citation to Thompson et al., 2014 validates the model (C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "8f426df3-7574-449c-b2f8-7d8ad9246702",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In a murine zymosan-induced peritonitis model where tyrphostin AG825 was administered 4 hr after inflammation was established, the compound significantly reduced total inflammatory cells in peritoneal lavage, reduced the proinflammatory cytokine KC, and reduced IgM levels, without inducing leukopenia. Inflammation was confirmed to be established at 4 hr (2.2\u00d710\u2076 cells in PBS vs 1.7\u00d710\u2077 in zymosan-treated animals).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This experiment is clinically relevant as it demonstrates efficacy when the drug is administered after inflammation is established rather than prophylactically (C5, C49-C51, C90). The lack of leukopenia (C48) is an important safety finding. The reduction in KC and IgM suggests broader anti-inflammatory effects beyond neutrophils. Sample sizes (n=5 per group) are modest but the effects are statistically significant. The citation to Navarro-Xavier et al., 2010 validates the timing of established inflammation (C90).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "d7028f84-6e40-4ebe-91d1-9b3a6be8c658",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In zebrafish tail fin injury models, tyrphostin AG825 and CP-724714 significantly reduced neutrophil numbers at injury sites at 4 and 8 hpi. Tyrphostin AG825 increased neutrophil apoptosis both at the injury site and in the caudal hematopoietic tissue (CHT), as demonstrated by TSA and TUNEL double staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The zebrafish experiments provide in vivo validation of the apoptosis-promoting effects with appropriate temporal resolution (4 and 8 hpi) and adequate sample sizes (minimum n=28-42 larvae per condition) (C52-C53). The TSA/TUNEL double staining provides rigorous identification of apoptotic neutrophils by requiring both neutrophil marker and apoptosis marker colocalization (C57-C58). The effects are consistent across two different ErbB inhibitors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "14b96769-d3bc-43d5-912f-cb5221644b7e",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9-mediated simultaneous knockdown of egfra and erbb2 in zebrafish (crispants) reduced neutrophil numbers at injury sites and significantly reduced whole body neutrophil numbers. The average mutation rate was 97.5% for egfra and 87.9% for erbb2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic validation using CRISPR/Cas9 provides strong evidence that the pharmacological effects are on-target (C9, C54, C56, C87). The high mutation rates (>87%) documented by high-resolution melt curve analysis ensure effective gene knockdown (C89). The use of a tyrosinase-targeting control guide RNA is appropriate and validated by prior publications. Sample sizes are adequate (minimum n=28-36 larvae). The more severe phenotype with genetic deletion (reduced whole body neutrophils) compared to pharmacological inhibition is appropriately discussed as potentially reflecting developmental effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "90db34c0-75ed-43ca-bcf9-c1286d123e30",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Tyrphostin AG825 did not affect total whole body neutrophil number in zebrafish, which may be due to compensatory upregulation of neutrophil production in the CHT. The reduced neutrophil count at injury sites may be partly due to increased apoptotic neutrophils in the CHT preventing migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the observation that tyrphostin AG825 does not affect whole body neutrophil counts is clearly documented (C55), the proposed mechanisms are speculative (C85-C86). The authors appropriately present these as possible explanations using cautious language (\"may be due to,\" \"potentially\"). No direct evidence is provided for compensatory upregulation or impaired migration from CHT. These remain plausible hypotheses requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "5bd80224-36d1-4cec-912b-cb1a9b5ab645",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Reduced neutrophils at injury sites in egfra/erbb2 crispants may be explained by reduced whole body neutrophil numbers and potentially defects in neutrophil migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is explicitly presented as speculation (\"may be explained,\" \"potentially\") (C88). While the reduced whole body neutrophil count in crispants is documented (C56), no direct evidence is provided for migration defects. The authors appropriately acknowledge this uncertainty. Further experiments would be needed to distinguish between reduced neutrophil numbers versus migration defects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "96180bf0-6b99-4fed-9f72-bb0e5199962b",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors conclude that ErbB kinase inhibitors have therapeutic potential in neutrophilic inflammatory disease, representing the first demonstration of a role for ErbBs in myeloid cell survival signaling. Inhibiting ErbBs may achieve anti-inflammatory effects by facilitating macrophage clearance of apoptotic neutrophils.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conclusion is well-supported by the convergent evidence from multiple experimental systems (human neutrophils, zebrafish, mice) and both pharmacological and genetic approaches (C10, C68, C75). The novelty claim regarding ErbBs in myeloid cells is appropriately contextualized against prior knowledge of ErbB roles in epithelial cells (C67-C68). The therapeutic potential is supported by efficacy in disease-relevant contexts (COPD neutrophils, established inflammation models) and the existence of clinically approved ErbB inhibitors for cancer (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "66e2ba21-d368-4cd9-a6d4-3dc7b10abc13",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "There was no evidence of secondary neutrophil necrosis due to overwhelming macrophage clearance capacity following tyrphostin AG825 treatment, as evidenced morphologically and by TO-PRO-3 staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is an important safety observation demonstrating that increased apoptosis does not overwhelm the clearance capacity of macrophages, which could lead to secondary necrosis and inflammation (C76). The use of both morphological assessment and TO-PRO-3 staining (a necrosis marker) provides appropriate evidence. This supports the therapeutic potential by showing the approach does not cause unintended pro-inflammatory consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "2c2c84f4-5362-4ae2-b52f-48b1fc73cf9e",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that ErbBs function as early and upstream components of neutrophil survival pathways, and that ErbBs may induce anti-apoptotic signaling within inflammatory environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The inference that ErbBs are upstream in survival pathways is supported by the early effects on AKT phosphorylation (15 min) (C39) and the ability to block multiple downstream survival signals (C78, C84). The phosphorylation of ErbB2 in response to survival stimuli (30-60 min) (C41) and the effects on Mcl-1 stabilization (C40) provide a coherent mechanistic pathway. However, the authors appropriately use cautious language (\"may function,\" \"may be inducing\") acknowledging this is an inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing the clinical context: neutrophilic inflammation is central to chronic diseases like COPD; current therapies don't specifically target cellular inflammation; neutrophil apoptosis is dysregulated in these diseases; corticosteroids can suppress neutrophil apoptosis; delayed apoptosis leads to tissue damage; accelerating apoptosis promotes resolution; and protein kinases regulate neutrophil apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are appropriately supported by citations to relevant literature (C11-C21). They establish the clinical need and scientific rationale for the study. The claims are consistent with established knowledge in the field and provide appropriate context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "cc7b21de-da4d-4756-9295-77d7e374398c",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Additional background and discussion claims about cAMP/PKA signaling, GMCSF/PI3K/AKT/Mcl-1 pathways, ErbB biology, prior work on ErbBs in inflammation and cancer, ErbB expression in neutrophils, effects of erbstatin on neutrophil function, roles of CDKs and p38 MAPK, and limitations of mammalian ErbB knockout models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are appropriately supported by citations to relevant literature (C35, C38, C59-C82). They provide necessary context for interpreting the experimental findings and situating them within the broader literature. The citations appear appropriate and the claims are consistent with established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    },
+    {
+      "id": "d758074c-ffe2-4e25-93a3-5906dc99b794",
+      "content_id": "f322bc4d-19cf-45b7-88fe-793ea3a96fe0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Targeting ErbBs genetically and pharmacologically reduces neutrophil numbers at injury sites in zebrafish, which may reflect inhibition of multiple pathways including migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This summary claim is supported by the experimental data showing reduced neutrophils at injury sites with both pharmacological inhibitors and genetic knockdown (C52-C54). The acknowledgment that this may reflect multiple mechanisms including migration (with citation to Ellett et al., 2015) is appropriate given the complexity of neutrophil behavior in vivo (C83).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:51.712944Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5901ec3e-d5dd-4eb5-b32a-086fb6e6453b",
+      "result_id": "464abe98-c6f3-4b91-9fe3-bf8d5e368d3f"
+    },
+    {
+      "claim_id": "65e8a841-8b67-49f4-907b-6c1eb0aa0cf6",
+      "result_id": "464abe98-c6f3-4b91-9fe3-bf8d5e368d3f"
+    },
+    {
+      "claim_id": "445425b9-1b1d-484b-a0ae-3cc65f029957",
+      "result_id": "464abe98-c6f3-4b91-9fe3-bf8d5e368d3f"
+    },
+    {
+      "claim_id": "1f91d599-4451-486a-8d23-cea651ecdc99",
+      "result_id": "464abe98-c6f3-4b91-9fe3-bf8d5e368d3f"
+    },
+    {
+      "claim_id": "1d6fdc1c-d12f-4fa3-b392-922b6fd92a53",
+      "result_id": "464abe98-c6f3-4b91-9fe3-bf8d5e368d3f"
+    },
+    {
+      "claim_id": "f98a4d1f-7f95-4dfc-9ef1-c3e42ea7ef4c",
+      "result_id": "464abe98-c6f3-4b91-9fe3-bf8d5e368d3f"
+    },
+    {
+      "claim_id": "5d88eac3-c7c4-4785-a2a0-24f0450ae2fb",
+      "result_id": "464abe98-c6f3-4b91-9fe3-bf8d5e368d3f"
+    },
+    {
+      "claim_id": "eaee16e7-aa31-42c4-82ec-48faf758e1be",
+      "result_id": "464abe98-c6f3-4b91-9fe3-bf8d5e368d3f"
+    },
+    {
+      "claim_id": "7b6101bd-18a6-48c8-a092-c51f7b1d4962",
+      "result_id": "33bcd876-50c3-47a7-95b5-00c05cc9ee29"
+    },
+    {
+      "claim_id": "10284f77-faf6-4c18-ad14-6a3095544e47",
+      "result_id": "33bcd876-50c3-47a7-95b5-00c05cc9ee29"
+    },
+    {
+      "claim_id": "3cb3e087-f3fd-4a83-8b0a-447e014bc228",
+      "result_id": "33bcd876-50c3-47a7-95b5-00c05cc9ee29"
+    },
+    {
+      "claim_id": "a67307fd-ccd3-47ea-b8aa-5150ea69f73d",
+      "result_id": "33bcd876-50c3-47a7-95b5-00c05cc9ee29"
+    },
+    {
+      "claim_id": "ba367579-1b0b-4b12-b6d9-961c08ed581f",
+      "result_id": "33bcd876-50c3-47a7-95b5-00c05cc9ee29"
+    },
+    {
+      "claim_id": "1435b54d-2856-4b66-840b-7afad8f9fd7e",
+      "result_id": "33bcd876-50c3-47a7-95b5-00c05cc9ee29"
+    },
+    {
+      "claim_id": "9e081a9b-92fa-4e13-8d59-be80965ddb91",
+      "result_id": "12e13009-8cb8-4b89-8fab-731fd60db6b2"
+    },
+    {
+      "claim_id": "b8569bf2-910d-4527-aaac-d582e08d3aa9",
+      "result_id": "12e13009-8cb8-4b89-8fab-731fd60db6b2"
+    },
+    {
+      "claim_id": "50f8c79b-44ec-47d9-804f-3b7809b14ca8",
+      "result_id": "e88a7da2-8a23-4cd8-ad07-9ef7b36f23e5"
+    },
+    {
+      "claim_id": "52a5e91c-0f40-4445-8860-d6aa836e8fac",
+      "result_id": "e88a7da2-8a23-4cd8-ad07-9ef7b36f23e5"
+    },
+    {
+      "claim_id": "283ddeac-db3c-4215-b5b0-86425da2d354",
+      "result_id": "e88a7da2-8a23-4cd8-ad07-9ef7b36f23e5"
+    },
+    {
+      "claim_id": "6883b4e1-eb30-4037-a559-443f5dc8e15a",
+      "result_id": "e88a7da2-8a23-4cd8-ad07-9ef7b36f23e5"
+    },
+    {
+      "claim_id": "2c3b4dde-fcba-4065-b3f4-5bec537fffd3",
+      "result_id": "a292932e-480e-478b-9883-102e364d7de2"
+    },
+    {
+      "claim_id": "4f9e14c7-4bd2-470d-a478-b7a7f7ad13cd",
+      "result_id": "a292932e-480e-478b-9883-102e364d7de2"
+    },
+    {
+      "claim_id": "8bbb5b8d-a02f-49a1-88a3-f42645c4e79b",
+      "result_id": "a292932e-480e-478b-9883-102e364d7de2"
+    },
+    {
+      "claim_id": "6eba7623-b1d6-4e2b-b917-ab6e93357ad8",
+      "result_id": "a292932e-480e-478b-9883-102e364d7de2"
+    },
+    {
+      "claim_id": "e6b05a28-9939-427c-9f8d-fb2909360ab7",
+      "result_id": "22914699-455b-4aae-9cf4-8b8c4059315f"
+    },
+    {
+      "claim_id": "fc85009b-665b-48e1-817d-95723e16e8bf",
+      "result_id": "22914699-455b-4aae-9cf4-8b8c4059315f"
+    },
+    {
+      "claim_id": "8f6036fb-fb14-4b7a-b8d7-b7716d58291d",
+      "result_id": "22914699-455b-4aae-9cf4-8b8c4059315f"
+    },
+    {
+      "claim_id": "8c251c3d-483d-4adf-a195-9b140a5e8f73",
+      "result_id": "22914699-455b-4aae-9cf4-8b8c4059315f"
+    },
+    {
+      "claim_id": "52f8ef38-7c80-4740-862e-16c97842347d",
+      "result_id": "8f426df3-7574-449c-b2f8-7d8ad9246702"
+    },
+    {
+      "claim_id": "7c2ec9f7-51a6-4c1d-be22-94ecd2805eb8",
+      "result_id": "8f426df3-7574-449c-b2f8-7d8ad9246702"
+    },
+    {
+      "claim_id": "9fac57f9-5766-41b1-a0b2-04f9af8ef7c9",
+      "result_id": "8f426df3-7574-449c-b2f8-7d8ad9246702"
+    },
+    {
+      "claim_id": "30ebd259-fb36-48f0-b0c5-e138641f4050",
+      "result_id": "8f426df3-7574-449c-b2f8-7d8ad9246702"
+    },
+    {
+      "claim_id": "a3e73ae1-4fc5-43ad-8526-456a49526e4f",
+      "result_id": "8f426df3-7574-449c-b2f8-7d8ad9246702"
+    },
+    {
+      "claim_id": "c53975c4-7059-4159-a4c8-1295f4000b34",
+      "result_id": "8f426df3-7574-449c-b2f8-7d8ad9246702"
+    },
+    {
+      "claim_id": "ab92a894-1869-4128-9818-b6993d364eef",
+      "result_id": "d7028f84-6e40-4ebe-91d1-9b3a6be8c658"
+    },
+    {
+      "claim_id": "b1b2c371-bbb7-44b8-be2c-3d27a9ded506",
+      "result_id": "d7028f84-6e40-4ebe-91d1-9b3a6be8c658"
+    },
+    {
+      "claim_id": "8b232a95-0cc8-4918-82e1-a296e9725e4f",
+      "result_id": "d7028f84-6e40-4ebe-91d1-9b3a6be8c658"
+    },
+    {
+      "claim_id": "dcb17603-8ffa-4d7e-8f89-e356eac57804",
+      "result_id": "d7028f84-6e40-4ebe-91d1-9b3a6be8c658"
+    },
+    {
+      "claim_id": "3e5bcdab-ece5-4fb9-ba99-dee6071cc990",
+      "result_id": "d7028f84-6e40-4ebe-91d1-9b3a6be8c658"
+    },
+    {
+      "claim_id": "15e264b5-2d69-427f-9905-b0e2d2807197",
+      "result_id": "d7028f84-6e40-4ebe-91d1-9b3a6be8c658"
+    },
+    {
+      "claim_id": "007838c8-9840-41e4-b89f-7b23af174fab",
+      "result_id": "14b96769-d3bc-43d5-912f-cb5221644b7e"
+    },
+    {
+      "claim_id": "aaf04ac6-52c6-45de-9ae2-6bc30a18a1c2",
+      "result_id": "14b96769-d3bc-43d5-912f-cb5221644b7e"
+    },
+    {
+      "claim_id": "10b778f9-7964-4665-943a-0076de950330",
+      "result_id": "14b96769-d3bc-43d5-912f-cb5221644b7e"
+    },
+    {
+      "claim_id": "82d49650-a927-4d47-855c-aa1a4175fdd3",
+      "result_id": "14b96769-d3bc-43d5-912f-cb5221644b7e"
+    },
+    {
+      "claim_id": "12711fb8-38c4-4962-a076-5e4724abd755",
+      "result_id": "14b96769-d3bc-43d5-912f-cb5221644b7e"
+    },
+    {
+      "claim_id": "b0307e5b-3f71-4c61-9b56-597d657d6d0c",
+      "result_id": "90db34c0-75ed-43ca-bcf9-c1286d123e30"
+    },
+    {
+      "claim_id": "4c027708-9d4f-461c-8d4f-cbab654db4ab",
+      "result_id": "90db34c0-75ed-43ca-bcf9-c1286d123e30"
+    },
+    {
+      "claim_id": "40a8e936-e836-4385-8861-54320014c304",
+      "result_id": "90db34c0-75ed-43ca-bcf9-c1286d123e30"
+    },
+    {
+      "claim_id": "05a5632d-5089-4bda-8503-d8919f2b1bfb",
+      "result_id": "5bd80224-36d1-4cec-912b-cb1a9b5ab645"
+    },
+    {
+      "claim_id": "44a83da8-7a53-48c2-b160-24260440f429",
+      "result_id": "96180bf0-6b99-4fed-9f72-bb0e5199962b"
+    },
+    {
+      "claim_id": "a7867215-5697-42e8-983c-2933dc21cde7",
+      "result_id": "96180bf0-6b99-4fed-9f72-bb0e5199962b"
+    },
+    {
+      "claim_id": "f8ea9be9-7741-4da6-9505-8de078e7b267",
+      "result_id": "96180bf0-6b99-4fed-9f72-bb0e5199962b"
+    },
+    {
+      "claim_id": "c9ff8811-ef89-4d9e-8ba5-2d06757e0a67",
+      "result_id": "66e2ba21-d368-4cd9-a6d4-3dc7b10abc13"
+    },
+    {
+      "claim_id": "4a7f8f77-ef5c-4fa1-b632-ef51133dc0dc",
+      "result_id": "2c2c84f4-5362-4ae2-b52f-48b1fc73cf9e"
+    },
+    {
+      "claim_id": "4901ba45-967c-456f-bc92-725854420045",
+      "result_id": "2c2c84f4-5362-4ae2-b52f-48b1fc73cf9e"
+    },
+    {
+      "claim_id": "b6e70ce4-7b81-4312-b111-808cd8a93296",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "278583e3-0064-4dcc-bb10-7f98738ac5cc",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "6268ea7b-fd22-45c9-8495-ca9266072b42",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "a0ecfca5-798e-4bad-86f1-ff8cc1954932",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "0d64058a-0ab2-4652-9c58-ab67c473feb4",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "30cf57a8-703e-48d8-8701-b122c5f3ffcb",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "8dcef7cd-7b67-4e0f-9afe-31ba0e243655",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "2c215562-8d56-46f1-98f8-d806f389a388",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "07756b0d-4160-43cd-a5dc-1ba82aea38b3",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "7fd2e799-18bf-4d41-9ffb-0b34e3507cfb",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "87cc3fd8-f37c-42bb-8c9a-baee9163fe55",
+      "result_id": "33174b7f-eff5-4a9f-8b3b-95d2afb4e806"
+    },
+    {
+      "claim_id": "49b41b3a-4e40-41d5-a78d-e741cfd85279",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "265580bb-5623-4d6b-ade6-af922ab88d35",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "f1685545-0d00-4787-9606-ed6f8a091cb8",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "223ac285-4fcc-4758-aa15-ba73d798fcfa",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "72b5b2b5-e68b-480f-a8c0-0bc7a2348f27",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "c5e73fe9-91b8-4d0e-b679-6c6948b2cf69",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "bac06b7f-3ad1-462f-b918-2a0077f34e95",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "91d9863a-2807-4699-986c-fc84062c4656",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "ef1e89d2-975b-45a2-a8f2-2230561d502a",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "d53ea2e9-e060-4e66-bacd-fda40053acce",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "477c845b-a654-4132-b793-f041be66f98c",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "88961baf-7de4-4f07-954f-c1f2727f9b7e",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "41b30e92-baf2-4195-8cf0-9a6d6b6760c5",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "4585909d-6668-4ef9-8830-7edfd04b81f0",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "82fda730-4ba1-4c9a-9481-cb467c66a41b",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "369d693b-5f8b-4548-89c2-5ed4d590574c",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "a198a6e9-c369-43d6-bd48-19e207f95208",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "3b98cf63-0107-430c-bb45-591c69d9613f",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "a3717971-b390-4b06-8efd-ce59fa040163",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "7765b92c-77ec-4a65-a803-34c4f1095746",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "82386283-b9f9-4597-b33b-fc5533a6ba95",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "897fff39-910e-49cb-a970-b8f39cb3c232",
+      "result_id": "cc7b21de-da4d-4756-9295-77d7e374398c"
+    },
+    {
+      "claim_id": "f1861478-b6a5-487c-bbfd-3a8492c244aa",
+      "result_id": "d758074c-ffe2-4e25-93a3-5906dc99b794"
+    }
+  ],
+  "comparisons": []
+}

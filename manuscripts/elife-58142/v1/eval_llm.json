@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Spectral clustering of risk score trajectories reveals four distinct clusters following early prediction of septic shock. Prior to early prediction, risk scores are homogeneous across all clusters, followed by an abrupt increase within the hour preceding early warning. After this transition, trajectories diverge into four clusters stratified by septic shock prevalence (76.5% vs 10.4% for highest vs lowest risk) and mortality (43% vs 18%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 and C20-C24 collectively demonstrate the core finding with consistent data from Figure 1 and Table 1. The clustering methodology is described (C75-C76), the temporal pattern is clearly shown in the figures, and the stratification by clinical outcomes is statistically reported. The rapid transition and subsequent divergence are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A rapid (30-60 min) transition in risk occurs at threshold crossing, accompanied by coordinated physiological changes including steep increases in lactate, decreases in systolic blood pressure, and differences in heart rate between clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C29-C33 are supported by visual data in Figures 1 and 2. The temporal resolution of the transition is clearly stated, and the physiological correlates are documented. Lactate is identified as the most important feature (C30) with supporting supplementary data, and the coordinated changes across multiple physiological variables strengthen the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C34",
+      "C35"
+    ],
+    "result": "Clusters stratify by intervention timing, with high-risk patients receiving interventions later than low-risk patients. At time of early warning, only 7.8% of high-risk patients were adequately fluid resuscitated compared to 21.3% of low-risk patients, and 14.3% vs 50.7% had received vasopressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 and C34-C35 are supported by data in Table 2. The differences in intervention rates between clusters are substantial and clearly documented. The inference that cluster membership is influenced by intervention (C34) is reasonable given the observational data, though causality cannot be definitively established from this study design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Patients in the high-risk cluster are in a more severe physiological state 1 hour prior to first intervention than those in the low-risk cluster, with higher heart rate, lower blood pressure, higher lactate, and higher SOFA scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by detailed data in Table 3, which shows statistically significant differences (p<0.01, Bonferroni corrected) across 20 features for fluid resuscitation and 8 features for vasopressor administration. The Wilcoxon rank-sum test is appropriate for comparing these groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "High-risk trajectories can be classified with 76% accuracy using a single observation after early prediction, with accuracy exceeding 95% using 10 hours of data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by data in Figure 3 showing classification performance as a function of data duration. The k-nearest neighbors approach is appropriate given the spectral clustering methodology. Confidence intervals are provided via bootstrap, strengthening the reliability of these estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "When aligned by first intervention, spectral clustering produces five clusters stratified by outcomes. High-risk clusters show the greatest delay between threshold crossing and intervention. Risk trajectories begin diverging before intervention, and 12 hours post-intervention, risk scores show only modest improvement, suggesting patient state at time of first intervention largely determines outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C48 are supported by Figure 4 and Table 4. The alternative alignment by intervention time provides complementary evidence to the primary analysis. The observation that trajectories diverge before intervention (C44) and show limited improvement post-intervention (C46) supports the inference that timing is critical (C48). Statistical significance of timing differences is confirmed (Wilcoxon rank-sum, p<0.01, Bonferroni corrected).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Entry into pre-shock state results from physiological changes due to disease progression. Physiological state prior to treatment initiation is linked to risk trajectory, with patients in more severe states at intervention showing persistently high risk scores 12 hours later, while early treatment mitigates risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 synthesize observations from Figures 2 and 4 with prior literature (C50). The inferences are logical given the data showing limited improvement after intervention in high-risk patients (C54-C55) and the persistence of risk stratification (C52-C53). However, the observational nature limits causal interpretation\u2014confounding factors may influence both intervention timing and outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors hypothesize that the rapid transition in risk represents failure of compensatory biological systems, constituting the true onset of septic shock and potentially providing a new data-driven definition of septic shock onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C19 and C71-C74 represent interpretations and hypotheses rather than demonstrated findings. While the rapid transition is well-documented (C16, C72), the mechanistic explanation involving compensatory system failure (C17, C73-C74) is speculative. The proposal that this represents 'true' septic shock onset (C18) and a new definition (C19) requires validation through additional biological studies and prospective clinical trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The median time of entry into pre-shock state for high-risk patients precedes ICU admission by 135 minutes and follows hospital admission by 40 minutes, while for low-risk patients it occurs 48 minutes after ICU admission and 8 hours after hospital admission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 provide specific timing data that contextualizes when the critical transition occurs relative to clinical care transitions. These data points are clearly stated and help establish the clinical relevance of early detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Lactate measurement coincides with threshold crossing in only 41.7% of patients, with 56% of threshold crossings occurring before any lactate measurement. The authors suggest real-time risk scoring may be key to recognizing patients who would benefit from early interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by reported data. The inference in C64 is reasonable given the infrequent lactate measurements (C95: median 11.2 hr between measurements) and the difficulty in recognizing the subtle physiological changes shown in Figure 2. However, C64 contains speculative elements about the utility of real-time risk scoring that would require prospective validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Validation on the MIMIC-3 database reproduced the principal findings of rapid risk transition at threshold crossing, homogeneous trajectories before transition, and cluster stratification by septic shock prevalence and mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 demonstrate generalizability of findings across independent datasets (eICU and MIMIC-3). The replication of key patterns strengthens confidence in the results, though the supplementary figures referenced are not fully detailed in the main text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "54% of sepsis patients have at least one comorbidity. While 26 comorbidities are associated with mortality and 15 with septic shock, adding comorbidities to the risk model did not improve prediction performance, likely because physiological variables capture their contribution to risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 are supported by statistical analyses using appropriate tests (Wilcoxon rank-sum, Fisher's exact with Bonferroni correction). The finding that comorbidities don't improve model performance (C84) is consistent with prior literature (C88) and the interpretation (C85) is reasonable, though alternative explanations (e.g., insufficient sample size for rare comorbidities) are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The number of clusters is chosen using the eigengap heuristic, which by the Davis-Kahan theorem provides robustness to small perturbations. XGBoost is used for risk modeling via gradient boosting of decision trees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe methodological choices with appropriate theoretical justification. The eigengap heuristic is a standard approach for spectral clustering, and the Davis-Kahan theorem correctly supports the robustness claim. XGBoost is appropriately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study uses the eICU database (200,859 ICU stays from 208 US hospitals, 2014-2015) with 28 clinical features. Of 41,368 patients with suspected infection, sepsis and septic shock are defined using Sepsis-3 criteria and 2012 SSC guidelines for adequate fluid resuscitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 describe the data source and clinical definitions. The use of ICD-9 codes for infection (C91) is a limitation acknowledged by the authors due to limited blood culture data. The definitions are appropriately sourced to consensus guidelines (Sepsis-3, SSC 2012), though the temporal mismatch between 2012 guidelines and 2014-2015 data collection is noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The median time between lactate observations is 11.2 hours, far exceeding the 1-2 hour frequency advocated by Vincent et al. The authors hypothesize that more frequent measurements would improve prediction performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are factual statements supported by data and citation. Claim C97 is a reasonable hypothesis given the importance of lactate (C30) and the infrequent measurement rate, but remains speculative without prospective testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The risk prediction model achieves 0.912 AUC with XGBoost and 0.894 AUC with GLM, with comparable sensitivity (82.5-82.7%) and specificity (80.8-84.1%), median early warning times around 10 hours, and positive predictive values of 29.9-34.0%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 report model performance metrics with confidence intervals from bootstrap analysis (Figure 1\u2014figure supplement 2). The comparison of XGBoost and GLM provides useful context. However, the relatively low positive predictive values (29.9-34.0%) indicate substantial false positive rates, which is acknowledged but important for clinical implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background claims establish that sepsis/septic shock are leading causes of in-hospital mortality and costliest US medical conditions, with delayed treatment increasing mortality ~8% per hour. Treatment risks include vasopressor-associated mortality, unnecessary antibiotics in ~30% of suspected cases, and fluid overload in 67% of EGDT-treated patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C7-C9 are supported by appropriate citations to prior literature. These establish the clinical context and motivation for the study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors' previously developed method achieved 0.93 AUC, 88% sensitivity, 84% specificity, 52% average PPV, median early warning time of 7 hours, with patient-specific PPV as high as 91% for some patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 reference prior work by the same authors. The performance metrics are clearly stated and provide context for the current clustering analysis. These are appropriately cited to the prior publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10",
+      "C69",
+      "C70",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Prior work has identified sepsis subtypes (Seymour et al. 2019), modeled sepsis using dynamical systems with transcritical bifurcations (Reynolds et al. 2006), and shown that comorbidities lose prognostic value when physiological severity markers are included (Innocenti et al. 2018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C69-C70, and C86-C88 appropriately cite and summarize prior literature that contextualizes the current work. The citations appear accurate to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The eICU database consists of data from 208 hospitals in geographically disparate locations across the United States.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 accurately describes the eICU database with appropriate citation. This supports the generalizability argument made by the authors.",
+    "result_type": "MINOR"
+  }
+]

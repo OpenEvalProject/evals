@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "JMJD6 crystal structure reveals binding to monomethylarginine in a negatively charged catalytic pocket, suggesting peptide/protein substrates rather than demethylase activity. The structure shows the methyl group is positioned far from catalytic residues (Fe2+ and \u03b1-KG), indicating JMJD6 does not function as a demethylase. The catalytic center contains residues analogous to JMJD5/JMJD7, suggesting a similar novel protease mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C67-C73 are well-supported by crystallographic data (Figure 1, PDB:6MEV) showing monomethylarginine binding with clear electron density maps. The structural observations logically support the inference that JMJD6 is not a demethylase (C7, C8) based on the spatial positioning of the methyl group. The comparison to JMJD5/JMJD7 structures provides strong evidence for the proposed catalytic mechanism (C72, C73). Mass spectrometry confirmed no protease contaminants (C10), addressing potential concerns about the novel activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C26",
+      "C38",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "JMJD6 specifically cleaves MePCE at the R170-R171 site in vitro and in vivo. In Jmjd6 KO MEF cells, all 7SK snRNP components (MePCE, LARP7, HEXIM1) are decreased at protein but not mRNA level. JMJD6 overexpression causes MePCE cleavage generating ~25 kDa and ~65 kDa fragments. Mass spectrometry of synthetic peptides confirms cleavage between R170 and R171. Mutagenesis of the RRRR motif to AAAA abolishes cleavage in multiple experimental systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C11-C17, C20, C26, C38, C83-C87, C91-C97 are strongly supported by converging evidence from multiple experimental approaches: Western blots (Figures 2A-C, 3I-J), mass spectrometry (Figure 2E), in vitro cleavage assays, and mutagenesis studies. The RNA-Seq data (C12) appropriately rules out transcriptional regulation. The mass spectrometry data precisely identifies cleavage products with expected molecular weights (C87). The mutagenesis experiments (C26, C91-C96) provide definitive evidence for the cleavage site. The consistency across in vitro and in vivo systems strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C79",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "JMJD6 binds MePCE peptides with high affinity (Kd = 159 \u00b1 77 nM for R171-me2s), approximately 3-fold stronger than unmodified peptide (Kd = 471 \u00b1 292 nM). In contrast, JMJD6 binds histone H3 peptides weakly (Kd ~77-98 \u03bcM). Computational modeling shows R171 positioned identically to the crystallographic monomethylarginine, with eight charge-charge interactions between JMJD6 and MePCE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25, C79, C88-C90 are well-supported by MST and fluorescence polarization binding assays (Figure 3A-F, Figure 3\u2014supplement 1). The ~1000-fold difference in binding affinity between MePCE and histone peptides (C21, C25, C79) strongly supports substrate specificity. Cross-validation between MST and fluorescence polarization (C88) strengthens confidence in the measurements. The computational model (C23, C24) is consistent with experimental binding data, though it remains a theoretical prediction. Error bars are appropriately reported for all Kd values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C103",
+      "C104"
+    ],
+    "result": "Jmjd6 knockout reduces Pol II Ser2p-CTD phosphorylation by ~80% in MEF cells without affecting CDK9 levels. MePCE knockout in 293T cells dramatically increases Pol II Ser2p-CTD. JMJD6 re-expression rescues Ser2p-CTD levels. These results demonstrate that JMJD6 cleavage of MePCE is essential for P-TEFb release and Pol II CTD phosphorylation by CDK9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C103-C104 are supported by Western blot data (Figure 4A-C) with quantification showing statistical significance (p<0.01, Figure 4B). The opposing effects of JMJD6 KO (decreased Ser2p-CTD) and MePCE KO (increased Ser2p-CTD) provide strong reciprocal evidence for the proposed mechanism. The rescue experiment (C30) demonstrates causality. The unchanged CDK9 levels (C28) appropriately rule out indirect effects on kinase expression. However, the claim that cleavage is 'essential' (C104) may be overstated without dose-response or partial rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "JMJD6 shows activity on bulk histones in vitro but histone levels (total and arginine-methylated) remain unchanged in Jmjd6 KO MEF cells in vivo. JMJD6 binds histone peptides weakly (Kd ~150 \u03bcM). These data indicate histone tails are not cognate substrates of JMJD6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C79 are supported by in vitro assays (Figure 2\u2014supplement 1A), in vivo Western blots (Figure 2\u2014supplement 1B), and binding assays (Figure 3\u2014supplement 1D-E). The key evidence is the lack of change in histone levels in vivo (C75) despite in vitro activity (C74), which appropriately distinguishes between promiscuous in vitro activity and physiological substrates. The weak binding affinity (C79) further supports this conclusion. This result effectively addresses and refutes prior claims in the literature about JMJD6 being a histone demethylase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose a model where JMJD6 assists BRD4 in recruiting P-TEFb to Pol II CTD by disrupting the 7SK snRNP complex through MePCE cleavage. JMJD6 binds newly transcribed ssRNA (20-50 nt) and associates with BRD4, bringing P-TEFb to Pol II for Ser2-CTD phosphorylation. This mechanism is analogous to HIV TAT protein recruiting P-TEFb via TAR RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C102, C109-C116 represent a proposed mechanistic model that integrates current findings with prior literature. While the model is consistent with the experimental data (JMJD6 cleaves MePCE, affects Ser2p-CTD levels) and published interactions (JMJD6-BRD4, JMJD6-ssRNA), several key aspects remain speculative: (1) Direct evidence for JMJD6 binding to nascent Pol II transcripts is from prior work, not demonstrated here; (2) The spatial and temporal coordination of BRD4, JMJD6, and P-TEFb recruitment is inferred but not directly demonstrated; (3) The super elongation complex involvement (C115) is mentioned without supporting data. The model requires additional validation through ChIP-seq, proximity ligation assays, or reconstitution experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Commercial protease inhibitor cocktail (Roche) at 2x concentration cannot inhibit JMJD5, JMJD6, and JMJD7 activities. Mass spectrometry analysis detected no protease contaminants in purified recombinant JMJD6 samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 address a critical concern about potential protease contamination. The resistance to commercial protease inhibitors (C9) is consistent with a novel catalytic mechanism. Mass spectrometry analysis (C10, Supplementary file 2) provides comprehensive protein composition data ruling out contaminants. These controls are essential given the controversial nature of protease activity in this protein family. However, the manuscript would benefit from showing the actual mass spectrometry data rather than just stating the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MePCE contains 689 residues with theoretical MW of 74.4 kDa but migrates at ~90 kDa on SDS-PAGE due to high proline content (10.7%). The N-terminal region (first 150 residues) contains 18.0% prolines. The anti-MePCE antibody recognizes residues 200-250, explaining detection of the ~65 kDa C-terminal cleavage product.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C80-C82 provide important methodological context for interpreting Western blot data. The proline-rich composition explaining aberrant migration (C19) is well-established in the literature. The antibody epitope information (C81) appropriately explains which cleavage products are detected. The inference about the ~65 kDa band corresponding to residues 200-689 (C82) is logical given the antibody epitope and observed molecular weight. These are straightforward biochemical interpretations supported by sequence analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C45"
+    ],
+    "result": "JMJD5 and JMJD7 are proteases that cleave after methylated arginine, while JMJD6 cleaves before methylated arginine. The JMJD5 protease activity was independently confirmed by another group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C45 are supported by prior publications from the authors' group (Liu et al., 2017; 2018) and independent confirmation (Shen et al., 2017). The distinct cleavage specificity of JMJD6 (before methylarginine, C38) versus JMJD5/7 (after methylarginine, C37) is demonstrated by mass spectrometry (Figure 2E). This distinction strengthens the argument that these are genuine protease activities rather than contamination, as it would require two different contaminating proteases with opposite specificities. The independent validation (C45) is particularly important for establishing credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C41",
+      "C42",
+      "C117",
+      "C118"
+    ],
+    "result": "Background claims establishing the biological context: >30% of genes in higher eukaryotes are regulated by Pol II promoter-proximal pausing due to +1 nucleosome barriers. P-TEFb phosphorylation of Pol II CTD enables productive elongation. The 7SK snRNP complex sequesters P-TEFb until stimulation. MePCE is a core 7SK snRNP component. BRD4 recruits P-TEFb to paused Pol II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C41-C42, C117-C118 are well-established facts from the literature, appropriately cited (Core et al., 2008; Nechaev et al., 2010; Min et al., 2011; Weber et al., 2014; Voong et al., 2016; Jeronimo et al., 2007; Xue et al., 2010; Jang et al., 2005; Yang et al., 2005). These provide necessary context for understanding the significance of the current findings. The citations appear accurate and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C62",
+      "C63",
+      "C64",
+      "C77",
+      "C78"
+    ],
+    "result": "Prior work establishing JMJD6 properties: JMJD6 binds ssRNA with high affinity (~40 nM) via its C-terminal domain, associates with BRD4 through the ET domain, and can disrupt the 7SK snRNP complex in vitro. BRD4 recruits P-TEFb but binds weakly (Kd ~0.5 \u03bcM) compared to TAT-P-TEFb (Kd ~3 nM) and lacks RNA binding motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35, C46-C49, C62-C64, C77-C78 accurately cite prior literature (Hong et al., 2010; Rahman et al., 2011; Konuma et al., 2017; Liu et al., 2013; Itzen et al., 2014; Wei et al., 1998; Weimann et al., 2013; Wu and Chiang, 2007). These establish the rationale for the current study by highlighting the gap in understanding how BRD4 efficiently recruits P-TEFb despite weak binding affinity. The inference that RNA is not a catalytic substrate (C64) based on C-terminal domain requirement for binding (C62) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C108"
+    ],
+    "result": "JMJD6 knockout in mice results in neonatal lethality and severely compromised MEF cell growth, indicating JMJD6 is critical for embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C108 are supported by prior publications (Li et al., 2003; B\u00f6se et al., 2004) and consistent with the authors' observations of compromised MEF growth. These phenotypic observations provide biological context for the importance of JMJD6 function and are consistent with a role in regulating transcription elongation, which would be essential for development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C65",
+      "C66",
+      "C98"
+    ],
+    "result": "Prior work on JMJD5/JMJD7: These enzymes cleave histone tails via Tudor-domain-like recognition of methylarginines (not methyllysines), potentially generating tailless nucleosomes that facilitate Pol II elongation through nucleosome barriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C65-C66, C98 accurately cite prior work from the authors' group (Liu et al., 2017; 2018). The mechanistic speculation about facilitating Pol II elongation (C44) is appropriately qualified with 'could be associated' and 'may trigger.' This prior work provides important context for the structural and mechanistic comparisons made with JMJD6.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Historical claims about JMJD6: Initially identified as PS receptor, later corrected to nuclear protein. Subsequently reported to have arginine demethylase, hydroxylase, RNA demethylase, and PS binding activities, with the cognate substrate remaining controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 accurately summarize the controversial history of JMJD6 with appropriate citations (Fadok et al., 2000; B\u00f6se et al., 2004; Chang et al., 2007; Webby et al., 2009; Han et al., 2012; Liu et al., 2013; Neumann et al., 2015; Yang et al., 2015). This historical context effectively motivates the need for the current study to definitively identify JMJD6's cognate substrate and function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C105"
+    ],
+    "result": "Prior work on MePCE: Functions as methylphosphate capping enzyme on 7SK RNA, stabilizes 7SK snRNP in a capping-independent manner, and its knockdown destabilizes the complex. A nonsense MePCE variant causes neurodevelopmental disorder with Pol II hyperphosphorylation. MePCE may recruit CDK9 independently of 7SK snRNP on some genes, with CDK9 interacting with MePCE residues 1-400.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C105 accurately cite relevant MePCE literature (Jeronimo et al., 2007; Xue et al., 2010; Singh et al., 2011; Schneeberger et al., 2019; Shelton et al., 2018). The clinical observation (C60) provides important validation that MePCE dysfunction affects Pol II phosphorylation in humans. The CDK9 interaction with MePCE N-terminus (C105) is relevant for interpreting the cleavage site results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "A second potential JMJD6 cleavage site exists in MePCE at residues 363-367 (-RKRRR-), similar to the characterized site at 167-172 (-KRRRR-). If cleaved, MePCE may act as an anchor site for CDK9 on the 7SK snRNP complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 identify a second potential cleavage site based on sequence similarity but provide no experimental validation. The speculation about MePCE as a CDK9 anchor (C107) is appropriately qualified ('may act') but remains untested. This represents an interesting hypothesis for future work but should not be considered a supported result of the current study. The authors appropriately note this 'requires further investigation.'",
+    "result_type": "MINOR"
+  }
+]

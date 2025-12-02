@@ -1,0 +1,451 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C40",
+      "C43",
+      "C44",
+      "C66",
+      "C67",
+      "C68",
+      "C139",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "SpikeForest comprises a large, diverse database of 650 electrophysiological recordings (1.3 TB) with around 35,000 ground-truth units, contributed by eleven laboratories. The database includes paired intracellular/extracellular recordings and state-of-the-art simulated recordings, organized into studies and study sets based on common origin and experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C40, C43-C44, C66-C68, C139, and C148-C153 collectively describe the database composition with specific quantitative measurements (650 recordings, 35,000 units, 11 laboratories) and organizational structure. These are directly reported data from the authors' own system and are internally consistent across multiple claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C41",
+      "C45",
+      "C46",
+      "C47",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "SpikeForest provides standardized Python wrappers for ten popular spike sorting algorithms (HerdingSpikes2, IronClust, JRCLUST, KiloSort, KiloSort2, Klusta, MountainSort4, SpyKING CIRCUS, Tridesclous, WaveClus), encapsulated in Docker and Singularity containers. The pipeline runs these sorters on recordings, matches sorted units to ground-truth units, and computes accuracy metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C41, C45-C47, and C55-C65 describe the technical implementation with specific sorter names and containerization approach. Claims C163-C165 provide additional methodological details. These are consistent descriptions of the authors' own software system with clear documentation of included algorithms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C124",
+      "C125"
+    ],
+    "result": "No single spike sorter emerged as the top performer across all study sets; instead, IronClust, KiloSort2, MountainSort4, and SpyKING CIRCUS each appeared among the most accurate in at least six study sets, with different sorters being optimal in different experimental settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 and C124-C125 present the primary comparative finding from the benchmarking analysis. This conclusion is directly supported by the data presented in Figure 2 and is consistent with the detailed per-sorter analyses in claims C84-C114. The finding is based on systematic comparison across 650 recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C128"
+    ],
+    "result": "KiloSort2 showed higher average accuracy than its predecessor KiloSort, especially for paired recordings, and can retain high accuracy at lower SNR than other sorters for some units. However, KiloSort and KiloSort2 had higher crash rates than other sorters and KiloSort2 produced the largest number of false positive units in synthetic datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 and C128 provide a comprehensive assessment of KiloSort2 performance based on data from Figure 2 and Figure 3. The claims about accuracy improvements, SNR performance, and crash rates are directly observable from the results tables. The limitation regarding false positive units (C90, C170) is acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C127"
+    ],
+    "result": "IronClust appeared among the top average accuracies for eight study sets and excelled particularly in simulated and drifting recordings. It showed improved accuracy over its predecessor JRCLUST in most study sets, with better speed and reliability (no crashes observed), though a substantial portion of its development occurred with access to SpikeForest ground truth datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 and C127 describe IronClust's performance with specific quantitative results (eight study sets) and qualitative assessments. The potential concern about overfitting (C95) is acknowledged by the authors and addressed in the Discussion (C140-C142), noting that uniform parameters across studies limit overfitting potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C126"
+    ],
+    "result": "MountainSort4 was among the top performers for six study sets and performed particularly well for low-channel-count datasets (monotrodes and tetrodes). Its top performance on MANUAL_FRANKLAB is expected since that data source was used in the algorithm's development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 and C126 describe MountainSort4's performance with appropriate caveats about potential bias (C98). The acknowledgment that MANUAL_FRANKLAB data was used in algorithm development demonstrates appropriate transparency about potential overfitting, though this is a known limitation rather than invalidating the other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "SpyKING CIRCUS was among the best sorters for ten study sets when considering average accuracy, but ranked lower in unit count above threshold. It improved over several months as a result of using SpikeForest for benchmarking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 describe SpyKING CIRCUS performance and provide evidence of SpikeForest's impact on algorithm development (C52-C53, C138). The discrepancy between average accuracy and unit count metrics highlights the importance of considering multiple evaluation criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "HerdingSpikes2, designed for high-density MEA probes using 2D spike location estimates, was applied only to recordings with planar electrode arrays. Its performance was similar to top sorters for PAIRED_MEA64C_YGER but less accurate for other study sets, though it is computationally efficient for large arrays without GPU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 describe HerdingSpikes2's design constraints, application criteria, and performance. The selective application to planar arrays is a methodologically appropriate decision based on the algorithm's design. The computational efficiency claim (C105) is stated but not quantitatively demonstrated in the results tables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Tridesclous was among the top performers for both MEAREC study sets and PAIRED_MEA64C_YGER, but had substantially lower accuracy for most other datasets, appearing to struggle with lower-SNR units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 describe Tridesclous performance patterns. The inference about struggling with low-SNR units (C108) is reasonable based on the performance data, though this is an interpretation rather than a directly measured result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Klusta was substantially less accurate than other sorters in most study sets, except for MANUAL_FRANKLAB where it found the most units above accuracy 0.8. It also had one of the highest crash/timeout rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 describe Klusta's generally poor performance with one notable exception. The surprising result for MANUAL_FRANKLAB (C110) is appropriately flagged as unexpected, and the high crash rate is directly observable from the results tables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "For monotrode recordings, MountainSort4 was the most accurate among sorters that could process this data type, with accuracies slightly higher than WaveClus. Four sorters (HerdingSpikes2, JRCLUST, KiloSort, KiloSort2) were unable to sort monotrode data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 describe monotrode-specific results. The limitation of WaveClus to monotrodes (C112) and the inability of four sorters to process monotrode data (C113) represent important practical constraints for users. The comparative performance (C114) is directly supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "YASS was not included in the comparison because its performance was too poor, leading to suspicion of an installation or configuration problem despite considerable effort and contact with the authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 transparently reports the exclusion of YASS with appropriate caveats about potential technical issues rather than algorithmic limitations. This demonstrates good scientific practice in acknowledging uncertainty about the cause of poor performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "For paired studies, IronClust, KiloSort2, MountainSort4, and SpyKING CIRCUS had the highest precisions, with precisions generally much lower than recalls across most sorters. In synthetic studies, precision was often higher than recall, suggesting simulations may not yet duplicate the firing and noise statistics of real-world recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 describe precision-recall patterns from Figure 4. The inference about simulation fidelity (C118) is a reasonable interpretation of the precision-recall discrepancy between paired and synthetic data, though it remains speculative about the underlying cause.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The relationships between ground-truth accuracy and quality metrics (SNR, firing rate, ISI-vr) are highly dependent on the spike sorter. For example, SNR and log ISI-vr are predictive for IronClust, firing rate and SNR for KiloSort and SpyKING CIRCUS, and only firing rate for KiloSort2 and MountainSort4. A linear combination of metrics is a better predictor than any single metric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 describe the analysis from Figure 5 showing sorter-specific relationships between quality metrics and accuracy. The finding that combined metrics outperform individual metrics (C123) is directly demonstrated. However, the analysis is limited to one study (SYNTH_JANELIA tetrode) and the authors acknowledge this needs extension (text after C123).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SpikeForest has three main objectives: (1) aid neuroscientists in selecting optimal spike sorting software for their specific applications, (2) spur improvements in spike sorting software by providing standardized evaluation criteria, and (3) provide a unified Python interface for running multiple sorters. Developers have already made improvements in direct response to the project.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 state the project's objectives and provide evidence of impact (C53, C101, C138). The stated objectives are clearly articulated, and evidence of developer engagement and algorithm improvements (C138) supports the claim of impact, though the extent of improvements is not quantitatively assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C78",
+      "C79",
+      "C141",
+      "C161",
+      "C162",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "SpikeForest is fully open-source with all data, code, wrappers, containers, and parameters publicly available. The system uses SHA-1 content-addressable storage (kachery) to ensure data integrity and long-term reproducibility. The website provides auto-generated code to reproduce any sorting task and is updated regularly based on community input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C78-C79, C141, C161-C162, and C180-C182 describe the transparency and reproducibility infrastructure. The use of SHA-1 hashing for content verification (C162, C181) is a technically sound approach to ensuring data integrity. The claims about openness and reproducibility are verifiable through the provided website and code repositories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The total compute time for analyzing 650 recordings with 10 sorters is 380 core hours, but parallel execution on the compute cluster with 100-200 simultaneous jobs completes the analysis in only 3-4 hours (excluding failing jobs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 provide specific computational performance metrics. These are direct measurements from the authors' system. However, the authors appropriately note that these times are not ideal benchmarks due to shared resources and that the pipeline is optimized for accuracy results rather than speed benchmarking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "SpikeForest computes three evaluation metrics (accuracy, precision, recall) for comparison with ground truth, using a 1 ms acceptable firing time error. The current metrics only consider sorted units matched to ground-truth units and do not account for false positive units. Missing data from crashes/timeouts are imputed using linear regression based on other sorters' accuracies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C173 describe the evaluation methodology. The choice of metrics and matching criteria is clearly documented. The limitation regarding false positive units (C169-C170) is an important caveat acknowledged by the authors. The imputation method (C171-C172) is a reasonable approach to handling missing data, though it introduces assumptions about sorter similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "SNR is defined per neural unit as the ratio between peak absolute amplitude of the average spike waveform and estimated noise on the peak channel. SNR is computed on bandpass-filtered data (300-6000 Hz), with noise estimated as median absolute deviation divided by 0.6745.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C178 provide a complete mathematical definition of SNR computation. The method is clearly specified with appropriate citation (C178). The use of median absolute deviation for robust noise estimation is a standard approach in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C179",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "The SpikeForest analysis pipeline uses custom Python utilities with automatic caching to detect which processing needs updating. All sorters run in Docker/Singularity containers for reproducibility. A limitation is the assumption that sorting algorithms are deterministic, which can be violated by unfixed random seeds or hardware differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179, C183-C188 describe the pipeline infrastructure and acknowledge a key limitation (C185). The containerization approach is technically sound for reproducibility. The acknowledgment of the determinism assumption and its potential violations demonstrates appropriate awareness of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "The SpikeForest website is an isomorphic JavaScript application built with React and D3, optimized for efficient hierarchical navigation and rapid interactive response. All pages are automatically generated from the databases, and the site provides self-contained Python scripts for reproducing any sorting result offline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C194 describe the web interface implementation. These are straightforward descriptions of the technical architecture and features of the authors' own system. The provision of reproducible scripts (C194) supports the reproducibility goals stated elsewhere.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Prior spike sorting comparisons have been biased or limited, with most presented in the context of new methods where simulation choices can be unintentionally biased toward showing the new method is superior. The openness and reproducibility of SpikeForest partially remedies this situation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 critique prior work and position SpikeForest as an improvement. The criticism of prior studies (C35-C36) is supported by observations about methodological inconsistencies. The claim that SpikeForest remedies these issues (C133) is supported by the demonstrated transparency and reproducibility features (C49, C141).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "SpikeForest adopts the philosophy that spike sorting algorithms should be evaluated in an automated, reproducible fashion without human curation, as increasing data volumes will make manual curation infeasible. Automated parameter optimization has not been implemented due to computational cost, but developers have used SpikeForest to improve their software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 describe the design philosophy and its rationale. The prediction about manual curation becoming infeasible (C134) is a reasonable inference from technological trends. The decision not to implement automated parameter optimization (C137) is justified by computational constraints, though this represents a limitation for optimal performance assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The risk of overfitting to SpikeForest's 650 recordings is low because optimizing even dozens of parameters across such diverse data is difficult, and all code and parameters are publicly inspectable. The authors believe the benefit of improved sorters outweighs overfitting risk, though results are naturally biased toward conditions where ground-truth data exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 address the overfitting concern with reasonable arguments about database size and diversity (C139-C140) and transparency (C141). The acknowledgment of bias toward available ground-truth conditions (C143) is an important limitation. The value judgment (C142) is appropriately framed as the authors' opinion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Small paired ground-truth study sets (e.g., PAIRED_KAMPFF with 15 units, only 11 sortable) mean a single false split or merge can cause accuracy variations as large as \u00b10.05 and determine the most accurate sorter. This variance will decrease as ground-truth study sizes increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 identify an important limitation of small sample sizes in paired recordings. The quantitative estimate of \u00b10.05 accuracy variation (C146) is a reasonable calculation based on the small denominators. The prediction of improvement with larger datasets (C147) is logical but remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C26",
+      "C27"
+    ],
+    "result": "Spike sorting is a crucial step in electrophysiological studies, but there is little consensus about which spike sorting packages are most accurate under different experimental conditions. Decisions are often based on ease of installation or usage rather than evidence of accuracy or performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C16, C26-C27 establish the motivation for SpikeForest by describing the current state of the field. These are general knowledge claims about the field that are consistent with the cited literature and the authors' expertise. The lack of consensus (C2, C26) is the problem that SpikeForest aims to address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The gold standard for evaluating spike sorters is comparison with ground-truth data, but laboratory acquisition of paired recordings is difficult and time-consuming. Paired recordings yield only one ground-truth unit per recording, while hybrid and simulated recordings can contain 1-2 orders of magnitude more ground-truth units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe the rationale for including both paired and simulated data in SpikeForest. The characterization of paired recordings as the gold standard (C30) is supported by citations. The quantitative comparison of unit yields (C33) justifies the inclusion of simulated data despite potential fidelity concerns (C118).",
+    "result_type": "MINOR"
+  }
+]

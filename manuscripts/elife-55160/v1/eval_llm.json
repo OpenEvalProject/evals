@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Pyphe is a modular, open-source software toolbox for analyzing microbial fitness screen data that processes multiple fitness proxies (colony sizes, viability scores from phloxine B staining, and colony growth curves) through separate command-line tools operating on human-readable files.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6, C28-C31, C107-C111, and C141-C143 collectively describe pyphe's design, capabilities, and availability. The software's modular architecture, versatility in handling different data types, and open-source nature are consistently stated throughout the manuscript and supported by the described implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Pyphe-scan provides automated image acquisition functionality using SANE on Linux systems, specifically designed for EPSON V800 scanners, with features for plate numbering, cropping, flopping, and format conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 describe the pyphe-scan module's functionality. These are straightforward descriptions of implemented features supported by the software documentation and methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C120",
+      "C121"
+    ],
+    "result": "Pyphe-quantify operates in three modes (batch, redness, timecourse) to extract colony properties including area, intensity, circularity, perimeter, and coordinates, with measurements highly correlated (r=0.9991) to those from the established tool gitter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe pyphe-quantify functionality, while C120-C121 provide validation against gitter. The high correlation (r=0.9991) shown in Figure 1\u2014figure supplement 1 demonstrates that pyphe-quantify produces reliable measurements comparable to established methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C122",
+      "C123"
+    ],
+    "result": "Image pixel darkness scales non-linearly with colony thickness/cell number, causing pyphe fitness estimates to be related but not identical to cell counts, with the signal saturating as colonies grow larger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C122-C123 describe a known limitation of transmission scanning cited from Zackrisson et al., 2016. The authors appropriately acknowledge this limitation and direct users to Scan-o-matic for absolute population size calibration if needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C112"
+    ],
+    "result": "Pyphe implements grid normalization (based on Zackrisson et al., 2016) and row/column median normalization to produce relative fitness estimates, effectively reducing measurement noise without overcorrection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C112 describe pyphe's normalization methods. The effectiveness is demonstrated through CV and FUV analyses in Figure 2 and supported by the lack of negative correlation in neighbor analysis (C77), indicating no systematic overcorrection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Pyphe-interpret performs statistical analysis to assess differential fitness, allowing users to test either between-strain differences in the same condition or within-strain differences across conditions, with the latter recommended for condition-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe pyphe-interpret functionality. These are straightforward descriptions of implemented statistical testing options with a methodological recommendation based on experimental design considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C59",
+      "C60",
+      "C61",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Late endpoint measurements of colony sizes (after ~16 hr when growth stabilizes) are highly correlated with maximum growth slopes from time series (median r=0.95 across conditions), indicating that endpoint measurements capture similar fitness information to growth curves but with lower precision that can be compensated by additional replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C47-C61, C113-C117 collectively demonstrate that late endpoint measurements provide similar information to growth curves. This is supported by extensive time-series data from 57 diverse wild strains across 8 conditions (C52-C53), showing high correlation (r=0.95, C60) and stable readouts after 16 hr (C54-C55). The conclusion that timing precision is not critical for late timepoints (C116-C117) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Initial timepoint measurements show correlation with all later timepoints due to bias from initially deposited biomass, which is more pronounced in wild strains due to cell aggregation but can be neutralized by reporting fitness as ratios relative to control conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 identify a technical bias and propose a solution. The observation of correlation with initial timepoints is data-supported (C56), the explanation about wild strain aggregation is based on the authors' experience (C57), and the proposed solution of using ratios is a logical inference (C58) that addresses the identified problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C128"
+    ],
+    "result": "Coefficient of variation (CV) and fraction of unexplained variance (FUV) analyses show that normalization reduces noise, with CV reaching minimum around 20 hr and remaining stable after correction, while maximum slopes yield lower noise than endpoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 and C128 describe noise characteristics throughout growth curves. The data in Figure 2C and Figure 2\u2014figure supplement 3 support these observations. The authors appropriately note that CV alone is insufficient (C66) and introduce FUV as an additional metric (C67), demonstrating methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C124",
+      "C125"
+    ],
+    "result": "Grid normalization effectively removes primary edge effects but introduces a weak secondary edge effect that can be remedied by additional row/column median normalization, with no evidence of systematic overcorrection (no negative correlation with neighbors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 and C124-C125 address potential normalization artifacts. The secondary edge effect is documented in Figure 1\u2014figure supplement 2B (C73, C124-C125), a solution is provided (C74), and importantly, the absence of negative correlation with neighbors (C77) demonstrates no systematic overcorrection. This thorough analysis addresses a legitimate concern about normalization methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C98"
+    ],
+    "result": "Colony size and viability (redness) measurements provide complementary, independent information, showing weak correlation (r=-0.088) across 59,350 fitness assays of 238 S. pombe deletion strains in 70 conditions, with redness scores exhibiting low noise (CV=1.04%) and strong biological signal (FUV=7.83%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C78-C83, and C98 demonstrate the orthogonality of colony size and viability measurements. The weak correlation (r=-0.088, C79) from a large dataset (59,350 assays, C78) strongly supports independence. The low CV and FUV values (C81-C82) indicate high data quality. Many mutants showing phenotypes in only one readout (C80) further supports complementarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C133"
+    ],
+    "result": "Phloxine B does not substantially affect colony growth in most strains, with measurements with and without dye clustering together (median correlation 0.92) and performed in different batches to exclude batch effects, though one gene (tpp1) showed genotype-specific sensitivity requiring controls with phloxine B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 and C133 address potential toxicity of phloxine B. The experimental design separated batches (C84), identical conditions clustered together (C85-C86), and only one gene showed significant effects (C88). The recommendation to use phloxine B controls (C89) is appropriate given the identified exception. The citation supporting potential phototoxicity (C133) justifies the investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Phloxine B redness scores accurately reflect the fraction of live cells in colonies, with imaging flow cytometry showing strong inverse correlation (r=-0.88) between redness and live cell fraction across 23 samples, and 99.3% agreement with LIVE/DEAD staining in wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C90-C97 validate phloxine B staining using imaging flow cytometry. The strong correlation (r=-0.88, C92) between colony redness and live cell fraction, identification of three cell populations (C91), and high agreement with LIVE/DEAD staining (99.3%, C96) provide robust validation. The observation that lysed cells contribute to colony redness (C93-C95) is well-reasoned based on differential correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Uncorrected redness scores show strong row-dependent effects with increased redness in top and bottom rows, which can be effectively removed by row/column median normalization, with raw scores varying between plates based on media type (minimal vs. rich).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 describe spatial biases in redness measurements and their correction. The row-dependent effect is clearly shown in Figure 3\u2014figure supplement 1 (C129), the correction method is described (C130), and media-dependent variation is documented (C131). The finding that row/column normalization is effective for redness (C132) is data-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Corrected redness scores are stable for at least 24 hr after rapid growth ends, with CV and FUV remaining stable, though early timepoint analysis is not recommended due to background signal that increases with colony thickness, and mutants with strong redness phenotypes show increased redness during growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 characterize the temporal dynamics of redness measurements. The stability after growth ends (C134-C135) is shown in Figure 5B-C, the background signal issue (C139) is documented in Figure 5A, and the observation about strong phenotypes (C136-C137) is shown in Figure 5D. The recommendation against early timepoint analysis (C140) is appropriately based on these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The mechanism explaining how colonies show normal growth despite substantial dead cell fractions could involve temporal or spatial decoupling of growth and death, or trade-offs between viability and growth rate, though temporal decoupling does not appear to occur in the knockout mutants investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C103 are speculative explanations for observed phenomena. While the authors appropriately present these as possibilities (using 'could' and 'might'), they acknowledge that temporal decoupling does not explain their knockout mutant data (C100). The spatial decoupling hypothesis is supported by observed uneven redness distribution (C102), but these remain hypotheses requiring further investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Colony redness analysis could enable high-throughput chronological lifespan experiments, though the relationship between redness and live cells at very low viability levels requires examination due to potential signal saturation, and spatial distribution of dead cells within colonies may contain additional information not captured by pyphe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 are speculative statements about future applications and limitations. These are appropriately framed as possibilities and potential concerns rather than demonstrated results. They represent reasonable extrapolations from the current work but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The study used genetically and phenotypically diverse wild strains covering diverse morphology and growth behavior, though the tight correlation between late endpoints and maximum slopes may not generalize to other microbial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 describe the experimental scope and its limitations. The use of diverse wild strains (C118) is documented in the methods and supported by citation (C53). The caveat about generalizability (C119) is an appropriate acknowledgment of the study's limitations, demonstrating scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "The linear regression model for predicting missing corner colonies based on neighbors achieved R\u00b2=0.96, though extremely small grid colonies can result in negative expected colony size values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 describe a technical aspect of grid normalization. The high R\u00b2 (0.96) shown in Figure 1\u2014figure supplement 2C demonstrates effective prediction of missing corners. The acknowledgment of potential negative values (C127) is an appropriate caveat about edge cases in the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The introduction provides context on the state of microbial fitness screening, including the impact of knockout libraries, the workflow of phenomics screens, existing image analysis tools, normalization procedures, statistical approaches, growth curve analysis methods, and phloxine B staining applications, noting that no consensus data framework has emerged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C27 are background statements from the introduction, each supported by appropriate citations. These establish the context and motivation for developing pyphe. The claim that no consensus framework exists (C27) justifies the need for the presented work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C144"
+    ],
+    "result": "Phloxine B was prepared as a 5 g/L (1000x) stock in water and stored at 4\u00b0C in the dark.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C144 is a straightforward methodological detail stated in the Key resources table. This is standard protocol information necessary for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

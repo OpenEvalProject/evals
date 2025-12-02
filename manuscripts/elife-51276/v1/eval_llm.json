@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C36",
+      "C37",
+      "C38",
+      "C54"
+    ],
+    "result": "Standard culture conditions lead to rapid and selective loss of BBB transcripts while maintaining pan-EC transcripts. RNA-seq analysis revealed 3585 differentially expressed genes between acutely isolated and cultured brain ECs, with 181 of 279 BBB genes reduced >2-fold in culture. Beta-catenin-responsive genes showed little or no expression in cultured brain ECs, implying loss of beta-catenin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C23-C28, C36-C38, and C54 provide converging evidence from RNA-seq data showing selective loss of BBB transcripts while pan-EC transcripts are maintained. The quantitative data (3585 differentially expressed genes, 181/279 BBB genes reduced) and the observation of reduced beta-catenin-responsive gene expression provide strong support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63"
+    ],
+    "result": "Chromatin accessibility changes in cultured brain ECs reflect loss of beta-catenin signaling. ATAC-seq analysis identified 16,760 peaks lost and 20,654 peaks gained during culture. Lost accessible regions were enriched for TCF/LEF motifs, while gained regions were enriched for AP-1 and TEAD motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 and C63 provide comprehensive ATAC-seq data showing chromatin landscape changes that correlate with transcriptional changes. The motif enrichment analysis (TCF/LEF in lost regions, AP-1/TEAD in gained regions) provides mechanistic insight consistent with loss of beta-catenin signaling and increased proliferation/stress response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C103",
+      "C104"
+    ],
+    "result": "Cultured brain ECs show reduced expression of beta-catenin signaling mediators (Lef1, Tcf7, Zic3) and increased expression of AP-1 family members (Fosl2, Jund), while maintaining expression of pan-EC transcription factors (Erg, Ets1, Fli1). The reduction in Lef1 and Tcf7 likely contributes to reduced response to beta-catenin stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72, C74, C103-C104 provide RNA-seq data showing differential expression of transcription factors in cultured versus acutely isolated brain ECs. The interpretation that reduced Lef1/Tcf7 contributes to beta-catenin refractoriness is logical but remains inferential. The data are internally consistent and well-supported by the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Forced expression of stabilized beta-catenin (via Cre-mediated deletion of Ctnnb1 exon 3) has virtually no effect on gene expression or chromatin accessibility in cultured brain ECs. Despite production of stabilized beta-catenin transcripts, beta-catenin-responsive genes remained at extremely low levels, and PCA showed beta-catenin stabilized cultured ECs were virtually identical to WT cultured ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C83-C93 provide strong evidence from RNA-seq and ATAC-seq that beta-catenin stabilization fails to rescue BBB gene expression in culture. The detection of exon 2+4 spanning reads confirms genetic recombination (C86-C87), and the lack of transcriptional/chromatin changes (C88-C92) is well-documented. This is a surprising and important negative result that is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C53"
+    ],
+    "result": "In vitro culture has mixed effects on BBB functional gene expression. Tight junction proteins show variable responses (Cldn5 unchanged, Lsr/Ocln reduced ~2-fold, Jam2/Tjp1 reduced ~5-fold). Solute carrier transporters are either unchanged or reduced. ABC transporters are mostly unchanged or elevated except for Abcb1a (P-glycoprotein) which is greatly reduced. Transcytosis regulator Mfsd2a is dramatically reduced while caveolin pathway components are increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49, C51, C53 provide detailed RNA-seq data on specific BBB functional gene categories. The data show complex, gene-specific responses to culture rather than uniform changes. The quantitative fold-changes are clearly stated and supported by the supplementary figures. This provides important detail about which BBB functions are most affected by culture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Cultured adult brain ECs retain greater similarity to brain ECs than to peripheral ECs based on tissue-specific gene expression, but show substantial transcriptome divergence from in vivo brain ECs. P7 and adult in vivo brain EC transcriptomes are closely similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by dendrogram and PCA analyses shown in Figures 1C and 1D. The data show that while cultured brain ECs diverge from in vivo brain ECs, they remain more similar to brain than peripheral ECs, indicating partial retention of brain EC identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Cultured brain ECs show reduced expression of capillary cluster genes and increased expression of mitotic cluster genes, consistent with the BBB program manifesting primarily at the capillary level and EC proliferation in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by comparison to single-cell RNA-seq cluster signatures (Figure 1\u2014figure supplement 1D). The interpretations about capillary-level BBB expression and proliferation are reasonable inferences from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Five beta-catenin-responsive genes (Apcdd1, Axin2, Lef1, Notum, Spock2) also meet criteria for BBB genes, consistent with the established role of beta-catenin signaling in CNS ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 identify overlap between beta-catenin-responsive and BBB gene sets, which is well-supported by the data and consistent with prior knowledge about beta-catenin's role in BBB development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Motif enrichment patterns suggest that AP-1/TEAD signatures in gained accessible chromatin reflect proliferation/stress response, SP/KLF signatures in lost chromatin may reflect lack of laminar flow, and ETS motif enrichment in both gained and lost regions is consistent with maintenance of general EC markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C64-C68 provide interpretations of ATAC-seq motif enrichment data. The interpretations are reasonable and supported by citations (e.g., C65 on Klf2/Klf4 and flow). However, these remain interpretations rather than direct demonstrations. The data supporting the motif enrichments are solid (Figures 2D-E).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "SP5, a beta-catenin target and transcriptional repressor, is up-regulated in cultured ECs while SP1 is down-regulated. SP5 may act in the termination phase of beta-catenin signaling to repress beta-catenin target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 document SP5 up-regulation and SP1 down-regulation in culture (supported by Figure 2F) and provide context from prior literature about SP5 function. The interpretation about SP5's role in beta-catenin signaling termination (C78) is explicitly noted as a hypothesis from prior work (Huggins et al.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Primary brain ECs were cultured for 8 days using puromycin selection based on P-glycoprotein expression, yielding pure EC cultures with uniform CD31 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 describe the experimental methodology. The puromycin selection method is well-established (C21 with citations), and CD31 immunostaining (C22, Figure 1\u2014figure supplement 1A) confirms EC purity. The methodology is clearly described and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The rapid reduction in BBB transcript abundance in cultured brain ECs is correlated with reduced beta-catenin signaling at both transcriptional and chromatin accessibility levels, while generic EC gene expression is minimally affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 summarize the main findings from the RNA-seq and ATAC-seq analyses. These are well-supported by the data presented in earlier claims and serve as a synthesis of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "A proposed model suggests that under low beta-catenin signaling and no blood flow in culture, brain ECs use ETS TFs with AP1/TEAD TFs to promote proliferation, whereas in vivo under high beta-catenin signaling and normal blood flow, ETS TFs collaborate with SP/KLF, TCF/LEF, and ZIC factors to promote BBB gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 present a speculative model to explain the differences between in vivo and in vitro gene expression patterns. While the model is consistent with the observed data, it remains a hypothesis that has not been directly tested. The model integrates multiple observations but lacks experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose that one or more additional signaling pathways gate the beta-catenin signal in CNS ECs, and that these signals are missing from the in vitro culture system. During normal development, ECs encounter additional signals in the CNS that render them receptive to beta-catenin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112 present a hypothesis to explain why beta-catenin stabilization fails to rescue BBB gene expression in culture. While this is a reasonable interpretation of the negative result with beta-catenin stabilization, it remains speculative without identification of the proposed additional signaling pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Previous work by Paolinelli et al. showed that activating beta-catenin signaling can enhance BBB gene expression in cultured brain ECs, but the effects were relatively modest and did not include comparison to acutely isolated CNS ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 accurately describe and contextualize prior work. The authors appropriately note that their results appear to differ from Paolinelli et al. but suggest the prior effects may have been modest compared to in vivo/in vitro differences. This is a fair assessment of the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study demonstrates the utility of genome-wide transcriptional and chromatin accessibility profiling for characterizing ECs in culture, an approach previously used for tumor and immune cell subtypes that should be useful for defining CNS EC differentiation states under different culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 discuss the methodological contribution of the study. The successful application of combined RNA-seq and ATAC-seq to characterize cultured CNS ECs is demonstrated throughout the paper. The suggestion for future applications (C115) is reasonable speculation based on the demonstrated utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "CNS ECs variably lose their barrier properties during in vitro culture, hindering development of robust BBB functional assays. This loss could result from loss of brain-specific signaling including beta-catenin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C16 provide background context from prior literature (extensively cited in C14) and state the motivation for the study. These are well-established observations in the field that motivate the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "ECs develop tissue-specific properties to meet specialized needs. In the CNS, ECs acquire BBB/BRB properties through a genetic regulatory program that suppresses fenestrae/caveolae components and enhances tight junction proteins, transporters, and efflux pumps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 provide established background knowledge about EC specialization and BBB properties, supported by appropriate citations. This contextualizes the study within the broader field of vascular biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C82",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Prior genetic studies in mice have established that beta-catenin signaling, induced by neuronal/glial-derived ligands, is essential for BBB development and maintenance in vivo. LEF1 and TCF7 are present in CNS ECs but not non-CNS ECs, and TCF/LEF motifs are enriched in brain EC-specific genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C82, C94-C98 summarize prior knowledge about beta-catenin signaling in BBB development, supported by extensive citations. This provides important context for interpreting the current study's findings about loss of beta-catenin signaling in culture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C108"
+    ],
+    "result": "The data support the general inference from co-culture experiments that signals from brain parenchyma are required to maintain the BBB state. The lability of the BBB program in vitro is reminiscent of earlier experiments showing acute loss of EC beta-catenin signaling in vivo led to loss of BBB markers and barrier integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C108 connect the current findings to prior work on co-culture systems and in vivo beta-catenin deletion. These are reasonable interpretations that place the current results in the context of existing literature.",
+    "result_type": "MINOR"
+  }
+]

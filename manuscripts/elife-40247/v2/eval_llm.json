@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C30",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study reconstructed all axons within three pharyngeal nerves (AN, MxN, PaN) from a complete ssTEM volume of a 6-hour-old Drosophila larva CNS, manually annotating neurons and synapses using CATMAID software. All annotated synapses represent fast chemical synapses with typical ultrastructural criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C30, C94-C96 describe the core methodological approach and data source. The reconstruction is based on a previously published complete CNS EM dataset (Ohyama et al., 2015), uses established manual reconstruction methods with CATMAID, and applies standard criteria for synapse identification. The methods are well-documented and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Sensory neurons from enteric, pharyngeal, and external origins converge onto seven topographically distinct sensory compartments (ACa, AVa, AVp, ACp, ACal, ACpl, VM) in the CNS, identified through hierarchical clustering based on synapse similarity. Motor and modulatory neurons were distinguished by soma location in the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C31-C37 describe the identification and clustering of sensory compartments. The synapse similarity clustering approach is methodologically sound and yields seven distinct compartments with specific neuron counts and nerve origins. The criteria for distinguishing sensory (blind endings) from motor/modulatory neurons (CNS somata) are anatomically valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Output neurons comprise three types: neuroendocrine cells (mNSCs expressing Dilps, DH44, DMS), serotonergic modulatory neurons (Se0 cluster with 4 neurons subdivided into Se0ph and Se0ens), and feeding motor neurons. These receive monosynaptic inputs from sensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C41 describe the output neuron populations. The identification of mNSCs is supported by previous work (Schlegel et al., 2016), and the Se0 subdivision is validated by GAL4 expression patterns. The characterization is comprehensive and well-supported by both EM reconstruction and genetic markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Monosynaptic connections exist between sensory and output neurons, with the vast majority (90%) originating from three anterior sensory compartments (ACa, AVa, AVp). These connections cover motor, modulatory, and neuroendocrine targets in overlapping domains, with sensory inputs comprising 10-40% of total synaptic input to output neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42-C51 describe the monosynaptic connectivity pattern. The quantitative data on connection percentages and compartment-specific targeting patterns are directly derived from the EM reconstruction. The overlapping domain organization is clearly demonstrated with specific connectivity percentages for each sensory-output pair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C88",
+      "C89"
+    ],
+    "result": "Polysynaptic routes are superimposed on monosynaptic connections, with multiple properties: different sensory neurons converge on common outputs, each output can be reached via multiple interneuron routes, and interneurons receive inputs from different sensory neurons targeting the same output (Sherrington's 'common path').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C71-C73, C88-C89 describe the polysynaptic architecture. The analysis demonstrates that nearly all monosynaptic sensory-output pairs also have polysynaptic connections, with specific examples provided (e.g., sensory to neuroendocrine via hugin interneurons). The circuit properties align with classical concepts from Sherrington.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A different set of sensory compartments (ACp, ACal, ACpl, AL) connects to the mushroom body calyx via projection neurons, with no overlap with the monosynaptic reflex compartments (ACa, AVa, AVp). Specific percentages of synaptic outputs target different projection neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C63-C69 describe the MB connectivity. The complete segregation between monosynaptic reflex and MB-projecting sensory compartments is clearly demonstrated with quantitative data. The specific percentages for different projection neuron types (>20% ORNs to MB, ~40% ACal to thermosensory, ~45% ACp to gustatory) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C74",
+      "C75"
+    ],
+    "result": "Mushroom body output neuron MBON-f1 makes monosynaptic connections to interneurons that target all classes of feeding output neurons. These interneurons are shared with those comprising earlier layers of the feeding circuit, allowing the MB module to be superimposed on the existing circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C74-C75 describe MB output integration. The connectivity of MBON-f1 to interneurons targeting all feeding output classes is demonstrated, and the sharing of interneurons between MB and reflex circuit layers is clearly shown. This provides a mechanism for memory circuit influence on feeding outputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "High numbers of axo-axonic connections exist between sensory neurons within the CNS, with 50% of ACa neurons showing inter-sensory connections (vs. none in AL). These connections are mostly within the same compartment, occur both hierarchically and reciprocally, and suggest sensory processing at the inter-sensory level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 describe inter-sensory connectivity. The quantitative comparison with AL (no connections) validates the finding. The characterization of connection patterns (within-compartment, hierarchical/reciprocal) is data-driven. The inference about sensory processing is reasonable given the connectivity patterns, though functional validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Sensory compartments show a spectrum of peripheral origins: ACa is 100% enteric, AVa is 93% enteric (the only two with enteric origin), while AL is 100% from dorsal organ. The topographical location within the CNS mirrors peripheral origins in a concentric manner (innermost enteric to outermost external).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe compartment composition and spatial organization. The peripheral origin mapping is validated by multiple gustatory receptor GAL4 lines (Figure 5, supplements 1-9). The concentric spatial organization pattern is clearly demonstrated and represents an important organizational principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Most huginPC neurons receive inputs from sensory compartments ACa and AVa, the two major monosynaptic compartments originating from enteric regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 describes huginPC connectivity. This is supported by previous work (Schlegel et al., 2016) and the current reconstruction data. The finding that huginPC primarily receives enteric inputs rather than gustatory (ACp) inputs is notable and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C93"
+    ],
+    "result": "The circuit architecture involves monosynaptic and multisynaptic connections from sensory inputs converging on outputs via multiple paths. The circuit is organized into two main axes (sensory-neurosecretory and sensory-motor), with sensory neurons forming monosynaptic connections being mostly of enteric origin and distinct from those forming multisynaptic MB connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C76-C79, C93 summarize the overall circuit organization. These synthesis claims are well-supported by the detailed connectivity data presented in other claim groups. The two-axis organization and the distinction between monosynaptic (enteric) and multisynaptic (MB) pathways are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior work established foundational knowledge: C. elegans complete wiring diagram (White et al., 1986), well-described Drosophila larval muscle and endocrine systems, largely unknown central connectivity of pharyngeal nerves, complete larval CNS EM reconstruction, hugin as neuromedin U homolog regulating food intake, and functional similarities between insect SEZ and vertebrate brainstem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C20 cite established prior work. These are appropriately referenced citations that provide context for the current study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Mammalian cranial nerves VII-XII carry sensory and motor information from tongue, pharynx, and gut to topographically distinct areas in the brainstem medulla, with direct connections between brainstem and hypothalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 describe vertebrate cranial nerve anatomy for comparative context. These are well-established anatomical facts appropriately cited (Cordes, 2001; Simon et al., 2006; D'Agostino et al., 2016; Liu et al., 2017). The comparison provides useful context for understanding the Drosophila feeding circuit organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The Drosophila larval feeding reflex circuit comprises motor neurons innervating pharyngeal pumping muscles, neurosecretory neurons targeting endocrine organs, and serotonergic neurons innervating the enteric nervous system. The vast majority of sensory inputs derive from the enteric nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 describe the elemental feeding circuit composition. These are well-supported by the reconstruction data. Claim C83 about neuromodulatory effects is appropriately qualified as speculative ('may have'). The enteric predominance of sensory inputs is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Comparative observations: monosynaptic reflex connections are less common in larval ventral nerve cord (locomotion) than in head (feeding), similar to C. elegans where most monosynaptic reflexes are in head not body. Adult Drosophila shows higher intersensory connections between ORNs than larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 make comparative statements. C85 cites unpublished data, which cannot be fully evaluated. C86 appropriately cites Yan et al., 2017 for C. elegans comparison. C87 cites Tobin et al., 2017 for adult-larva comparison. While the citations appear appropriate, the unpublished data limits full evaluation of C85.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Hugin interneurons enable integration of sensory inputs from different peripheral origins (enteric and pharyngeal gustatory) to influence output responses, specifically to stop feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 interprets the functional significance of hugin interneurons. This is supported by the connectivity data showing hugin receives inputs from multiple sensory origins and the cited behavioral work (Schoofs et al., 2014a) showing hugin's role in stopping feeding. The interpretation is reasonable given the circuit architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The MB module forms a separate unit rather than being superimposed onto monosynaptic reflex circuits, utilizing different sensory compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 describes the relationship between MB and reflex circuits. This is clearly supported by the complete segregation of sensory compartments used by each system (C63-C65). However, C75 shows MB outputs do connect to shared interneurons, so the separation is at the input level while integration occurs at the output level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Classical conditioning of gill withdrawal reflex in Aplysia involves monosynaptic connections between mechanosensory and motor neurons with serotonergic neuromodulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 cites established work on Aplysia (Bailey et al., 2000) for comparative context. This is an appropriate citation of well-known findings used to draw parallels with the Drosophila feeding circuit organization.",
+    "result_type": "MINOR"
+  }
+]

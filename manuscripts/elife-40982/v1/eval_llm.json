@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ACAPseq is a novel platform that uses massively parallel RNA sequencing to identify protein-protein interactions by capturing polyribosomes based on nascent polypeptide affinity for immobilized protein baits. The method was developed using neonatal mouse brain polyribosomes and extracellular domain baits produced as Fc fusion proteins immobilized on Protein-G magnetic beads, with typical RNA yields in the nanogram range and requiring approximately 10 million reads per bait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C22-C28 collectively describe the ACAPseq methodology with consistent technical details. The workflow is clearly documented with experimental parameters (RNA yields, sequencing depth), and the choice of neonatal mouse brain is justified by its transcriptional diversity (C25). The methodological claims are internally consistent and supported by the described experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ACAPseq successfully captured known protein-protein interactions as technical validation: EFNA1-Fc captured Epha5 mRNA and FLRT3-Fc captured Adgrl3 mRNA, both with approximately 500-fold enrichment. These interactions had been previously reported in the literature, and the target mRNAs were present at low abundance (0.014% and 0.080% respectively) in the starting material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 provide strong validation of ACAPseq by demonstrating capture of known interactions (C32-C33) with quantitative enrichment data (C34-C36). The 500-fold enrichment from low-abundance starting material demonstrates both specificity and sensitivity. The use of previously validated interactions as positive controls is appropriate for method validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ACAPseq performance is relatively insensitive to 25-fold variations in bait and polyribosome concentrations for high-affinity interactions (EFNA1-EPHA), suggesting saturation conditions. Lower affinity interactions (EFNA1-HECTD1) showed dose-dependence, and standard conditions were established at 5-20 ml serum-free conditioned medium (~10 \u03bcg bait-Fc) and 40 \u03bcg polyribosomes, with EFNA1-Fc included as an internal control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 describe systematic optimization experiments with clear dose-response data. The interpretation that insensitivity to dilution indicates saturation (C39-C40) is reasonable, and the contrast with dose-dependent HECTD1 capture (C41) supports the distinction between high and low affinity interactions. The optimized parameters (C43-C44) are based on these experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "ACAPseq identified multiple specific bait-target interactions including Fc-VEGF capturing Flt1, Kdr, and Nrp1; reciprocal CNTN3-APP interactions; LYPD6-Fc selectively capturing Celsr1 and Celsr2 but not Celsr3; PCDH9-Fc capturing Pcdh9; and LPHN1/3-Fc capturing Flrt1, Flrt2, and Flrt3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 describe specific capture results with clear selectivity patterns (e.g., LYPD6 capturing Celsr1/2 but not Celsr3 in C49). The reciprocal capture of CNTN3-APP (C47-C48) provides internal validation. These results are supported by genome browser images showing specific enrichment patterns, though additional validation would strengthen confidence in novel interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C42"
+    ],
+    "result": "ACAPseq identified non-specific interactions where multiple diverse baits captured the same mRNAs (Plec, Golgb1, Myh10, Dbn1, Trip11), suggesting 'sticky' nascent polypeptides. Some apparently specific interactions like EFNA1-HECTD1 are likely technical artifacts due to incompatible subcellular localizations (extracellular bait vs. cytoplasmic target).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 and C42 identify important limitations and potential false positives. The interpretation that promiscuous capture indicates non-specific stickiness (C54) is reasonable. The identification of EFNA1-HECTD1 as an artifact based on subcellular localization (C56-C57, C42) demonstrates appropriate critical evaluation, though this also highlights the need for systematic filtering of such interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "A screen of 92 baits from 87 genes identified both previously known interactions (EFNA1-EPHA, VEGF-receptors, LPHN-FLRT) and novel interactions (CNTN3-APP, LYPD6-CELSR, PCDH9 homophilic binding). All extracellular domains were fused to the amino-terminus of Fc, with VEGF also tested as a carboxy-terminal fusion based on prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C68 describe the scope and outcomes of the screen with clear categorization of known vs. novel interactions. The citation of prior work for known interactions (C63-C65) and identification of novel interactions (C66-C68) is appropriate. The rationale for testing alternative VEGF fusion configurations (C61-C62) is well-justified by prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ACAPseq scatter plots (ASPs) provide genome-wide visualization of capture specificity, with most data points clustering at the origin (low abundance or non-captured mRNAs), sticky proteins along the 45-degree line, and specific targets showing high enrichment ratios. Real bait-target interactions typically showed 10-500-fold enrichment over control baits, and minimizing within-batch variability is important for data interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 describe the ASP visualization approach with clear interpretation of different data point distributions. The quantitative enrichment ranges (C79) and emphasis on batch effects (C81) demonstrate appropriate attention to technical factors. The ASP approach provides an effective genome-wide quality control and target identification method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "ACAPseq shows good reproducibility with Pearson correlations of 0.899-0.947 for all data points and 0.988-0.998 for specific targets (Epha/Ephb mRNAs) in within-batch and between-batch comparisons. The rank order of the seven most efficiently captured Epha mRNAs (spanning three orders of magnitude in TPM) is preserved across experiments, though overall capture efficiencies vary between experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 provide quantitative reproducibility data with appropriate statistical measures (Pearson correlations). The high correlations for specific targets (C83, C85) and preservation of rank order (C86) demonstrate good technical reproducibility. The acknowledgment of experiment-to-experiment variation in overall efficiency (C90) is important for interpreting absolute values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Performance analysis using VEGF (4 known targets) and EFNA1 (9 known EPH targets) showed sensitivities of 0.75-1.0, specificities of 0.987-1.0, and FDRs of 0.0-0.95 depending on threshold parameters. EFNA1-Fc performance was relatively insensitive to parameter variations (sensitivities 0.89-1.0, specificities 0.977-0.997), but no single set of parameters is optimal for all baits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 provide systematic performance evaluation using baits with known targets. The range of performance metrics (C93-C96) is appropriate for method characterization. The conclusion that optimal parameters vary by bait (C98) is well-supported by the data and reflects biological reality (varying target abundances and binding affinities). However, the high FDR for some VEGF conditions (0.9-0.95 in C93) is concerning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Using defined thresholds (>35 TPM, >3-fold enrichment vs. controls and starting material), 1207 supra-threshold targets were identified for 92 baits, with a highly skewed distribution. Among 86 baits from different genes, 24 (28%) captured one or more biologically plausible, high-signal targets that were validated or related to known interactions (64 bait-target pairs total), while 52 baits (57%) showed 1-10 targets and 15 baits (16%) showed no targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C107 describe the overall screen results with clear quantitative outcomes. However, the high number of supra-threshold targets (1207) combined with only 64 validated/plausible pairs (C107) suggests a high false positive rate. The skewed distribution with some baits showing >100 targets (C101-C102) and the interpretation that these may be sticky (C103) indicates significant data quality issues that require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Comparison with BioGRID and IntAct databases showed surprisingly low overlap, with only 8 bait-target pairs in common with each database among the 47 (BioGRID) or 43 (IntAct) shared baits. This low overlap likely reflects incomplete database coverage and lack of validation for many ACAPseq targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 document limited overlap with existing databases and provide reasonable explanations (incomplete database coverage, lack of validation). However, the low overlap (8/47 for BioGRID, 8/43 for IntAct) could also indicate high false positive rates in ACAPseq or fundamental differences in what the methods detect. The interpretation in C111 is plausible but not definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "ACAPseq detected interactions between FLRT proteins and UNC5 family members (FLRT1 with UNC5A and C; FLRT3 with UNC5A, B, C, and D), which were underrepresented in existing databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 identify specific FLRT-UNC5 interactions detected by ACAPseq. These interactions are biologically plausible given the known LPHN-FLRT-UNC5 complex, and their underrepresentation in databases supports the value of ACAPseq for discovering interactions. However, independent validation of these specific interactions would strengthen the result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "PCDH9-Fc showed highly specific homophilic binding, with Pcdh9 mRNA showing ~100-fold higher capture ratio compared to other cadherin/protocadherin family members and ~100-fold enrichment over starting abundance. Despite Pcdh9 being one of the more abundant cadherin/protocadherin mRNAs, other family members showed minimal enrichment, suggesting PCDH9 interactions are largely limited to homophilic binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 demonstrate remarkable specificity of PCDH9 homophilic binding across a large protein family. The ~100-fold selectivity (C114-C115) and lack of enrichment for other family members (C116) provide strong evidence for specificity. The interpretation that PCDH9 binding is limited to homophilic interactions (C118) is well-supported, though it relies on the assumption that binding domains are accessible in nascent polypeptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Comparison of VEGF fusion configurations showed that Fc-VEGF consistently gave higher capture efficiencies for Flt1, Kdr, and Nrp1 compared to VEGF-Fc in two independent experiments, with VEGF-Fc producing no enrichment of Nrp1. This demonstrates the importance of testing different bait-partner fusion configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 provide clear evidence that fusion protein configuration affects capture efficiency. The complete failure of VEGF-Fc to capture Nrp1 (C120) while Fc-VEGF succeeds demonstrates this is not a minor effect. The conclusion about testing different configurations (C121) is well-justified and represents an important practical consideration for ACAPseq design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "ACAPseq successfully captured EPHA targets from adult mouse testis polyribosomes with high signal-to-noise ratio, despite most targets being >10-fold less abundant in testis than brain. Seven of eight brain-enriched Epha targets were also enriched in testis (except Epha6), suggesting testis polyribosomes could serve as a useful high-complexity starting material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 demonstrate ACAPseq works with testis polyribosomes despite lower target abundance (C125). The 7/8 success rate (C126) and exception of Epha6 (C127) show both the potential and limitations. The rationale for using testis based on transcriptome complexity (C122-C123) is sound, though the caveat about sex-limited expression mentioned in the text is important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "ACAPseq captured both long and short alternatively spliced isoforms of CNTN4 (differing by three fibronectin domains) using PTPRG-Fc bait, and both isoforms of EPHA7 (differing in presence of tyrosine kinase domain) using EFNA1-Fc. Both isoforms of each protein contain the relevant binding domains, and the short CNTN4 isoform differs by only 8 amino acids, which would be challenging to detect by mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 demonstrate ACAPseq's ability to detect alternatively spliced isoforms with clear examples. The structural information (C130, C134-C135) confirms both isoforms contain binding domains. The point about mass spectrometry challenges for the short CNTN4 isoform (C132) highlights an advantage of ACAPseq. The data directly show capture of both isoforms through RNAseq reads.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Validation experiments confirmed ACAPseq predictions: LRTM2-Fc binding to TNR requires the trimerization domain and three tandem EGF domains (by immunoblot), and LYPD6-AP bound to cells expressing CELSR1 and CELSR2 but not CELSR3 (by live cell binding assay), consistent with ACAPseq specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 provide independent validation of ACAPseq results using orthogonal methods (immunoblot for LRTM2-TNR, cell binding for LYPD6-CELSR). The consistency between ACAPseq and validation assays (C138) strengthens confidence in the method. These validations are important for establishing that ACAPseq predictions reflect genuine binding interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Detailed analysis of PCDH9 homophilic binding using magnetic bead aggregation assays showed that deletion of cadherin domains 1 or 4 dramatically reduced binding, while deletion of domains 2 or 3 caused only modest reduction. Mixed bead experiments with complementary deletions (\u03941 with \u03944, or \u03942 with \u03943) showed strong aggregation, supporting an extended anti-parallel binding mode similar to PCDH19 and clustered protocadherins, with domains 1 and 4 contributing more to binding affinity than domains 2 and 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C149 provide systematic domain deletion analysis with clear differential effects (C144-C145) and complementation experiments (C146-C147). The interpretation of an extended anti-parallel binding mode (C148) is well-supported by the complementation data and analogy to structurally characterized PCDH19 (C139) and clustered protocadherins (C140). The inference about relative domain contributions (C149) is reasonable based on the deletion phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "ACAPseq has several advantages: it interrogates the entire translated proteome including splice isoforms in a single reaction; it is extremely sensitive (detecting targets at 1 part in 100,000, ~10 pg mRNA, capturing ~1 pg); modest enrichment (20-40 fold) provides signal above background; capture depends on binding not biological function; high valency may enable detection of weak interactions; and it surveys the full range of transcript diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C156 summarize ACAPseq advantages with quantitative support from the experimental data. The sensitivity claims (C151-C152) are supported by the Celsr1 and Flt1 examples. The point about modest enrichment being sufficient (C153) is demonstrated throughout. The advantage regarding splice isoforms (C150, C156) is shown by the CNTN4 and EPHA7 examples. The speculation about weak interactions (C155) is reasonable but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Potential sources of false positives in ACAPseq include: interactions with unfolded or partially folded polypeptides that persist in vitro; adventitious interactions between spatially sequestered proteins (e.g., secreted bait with cytoplasmic target); and non-optimal threshold parameter settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 identify plausible sources of false positives based on the method's design. The EFNA1-HECTD1 example demonstrates the spatial sequestration issue (C158). The parameter sensitivity shown in the VEGF/EFNA1 analysis supports C159. The speculation about unfolded polypeptides (C157) is reasonable given that nascent chains may not be fully folded, though direct evidence is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Potential sources of false negatives in ACAPseq include: true absence of binding partners; insufficient target expression; inappropriate bait fusion configuration (demonstrated by VEGF-Fc/Nrp1); incorrect folding of binding domains in nascent polypeptides (though some domains can fold co-translationally); requirements for multi-protein assembly or post-translational modifications (especially Golgi modifications absent from ER-derived polyribosomes); binding sites too close to the C-terminus; and insufficient signal-to-noise ratio. The type I topology of many cell-surface proteins (N-terminus extracellular) is favorable for ACAPseq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C169 provide a comprehensive analysis of potential false negative sources. Several are directly supported by data (fusion configuration in C162, signal-to-noise in C169). The discussion of folding (C163-C164) appropriately cites literature while acknowledging uncertainty. The points about post-translational modifications (C165-C166) and C-terminal binding sites (C167) are logical based on the method's design. This represents thoughtful consideration of method limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Potential improvements to ACAPseq include: reducing non-specific binding and enhancing reproducibility to detect lower affinity interactions and lower abundance mRNAs; adding chaperones or modifying enzymes to improve folding/modifications, or alternatively removing chaperones if they occlude binding sites. ACAPseq may be especially suitable for organisms without extensive cDNA collections since polyribosomes present the full proteome complexity. Overall, ACAPseq is a novel PPI discovery platform that could complement existing approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C174 provide reasonable suggestions for improvement based on identified limitations. The suggestions about chaperones (C171-C172) address the folding/modification issues discussed earlier. The point about organisms without cDNA collections (C173) is a valid application niche. The concluding statement (C174) appropriately positions ACAPseq as complementary rather than replacing existing methods, which is justified given the demonstrated advantages and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C5",
+      "C151"
+    ],
+    "result": "ACAPseq can detect binding to targets present at less than 1 part in 100,000 in the starting polyribosome preparation, corresponding to approximately 10 pg mRNA with approximately 1 pg captured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C151 state the same sensitivity metric with C151 providing additional quantitative detail. This is supported by specific examples (Celsr1, Flt1) at 0.014% and similar abundances. The sensitivity claim is well-documented and represents a key performance characteristic of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C4",
+      "C106",
+      "C107"
+    ],
+    "result": "Of 92 baits tested, 25 identified one or more biologically relevant binding partners, with 24 of 86 baits from different genes (28%) capturing biologically plausible, high-signal targets that were validated or related to known interactions, totaling 64 bait-target pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C106, and C107 provide overlapping but slightly inconsistent counts (25 vs. 24 baits with relevant targets). The abstract's claim of 25 baits with biologically relevant partners (C4) is somewhat at odds with the more stringent analysis yielding 24 baits with plausible targets (C106). The 64 validated/plausible pairs (C107) out of 1207 total supra-threshold targets suggests significant validation work remains. The discrepancy in counts and high proportion of unvalidated targets creates uncertainty.",
+    "result_type": "MAJOR"
+  }
+]

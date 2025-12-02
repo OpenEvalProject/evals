@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Serotonergic raphe neurons exhibit characteristic electrophysiological properties including spontaneous firing at 3-5 Hz, broad action potentials lasting 3-6 ms, and provide critical neuromodulation to autonomous and cognitive brain functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 describe well-established electrophysiological properties of serotonergic raphe neurons that are directly demonstrated in experimental recordings (Figure 1A-B) and supported by established literature. These characterizations provide essential context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Nav channels cycle through closed, open, and inactivated states during action potentials, recovering from inactivation by bypassing the open state, which creates hysteresis that separates inactivation from recovery processes and minimizes energy expenditure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 describe established Nav channel kinetics supported by extensive prior literature and illustrated in Figure 1C-D. The hysteresis mechanism and energy conservation are well-documented features of Nav channels that provide foundational context for understanding LTI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Nav channels in raphe neurons exhibit bi-exponential recovery from inactivation with approximately 80% recovering fast (milliseconds) and 20% recovering slowly (hundreds of milliseconds to seconds), with specific time constants measured at different voltages in both neonatal brain slices and acutely isolated mature neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C24 present comprehensive experimental characterization of LTI with detailed quantitative measurements from multiple preparations (Figure 2). The consistency across preparations (C24) strengthens the conclusion that this is a genuine Nav channel property. Statistical values are provided with appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Long-term inactivation represents fast entry into a long-lived inactivated state with recovery time constants differing by three orders of magnitude from entry, and similar properties have been observed in other neuronal types including hippocampal pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 define LTI and place it in broader context. The three-order-of-magnitude difference in time constants is supported by experimental data (C16-C23) and citations. The observation in other neuron types (C25) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A kinetic model incorporating a long-term inactivated state S13 connected to the open state O6 explains LTI behavior, with approximately 80% of channels following normal inactivation and 20% entering LTI during brief depolarizations, and entry into S13 occurring as a bi-exponential process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 describe the kinetic model that explains experimental observations. The model was validated using dynamic clamp (C29) and correctly predicts the 80/20 split (C33) and bi-exponential kinetics (C34-C36) observed experimentally. Model predictions are illustrated in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "During recovery from inactivation, channels in the normal inactivated state I12 recover fast (5-10 ms) without visiting the open state, while channels in LTI state S13 recover slowly (seconds) through the open state, producing bi-exponential recovery kinetics with minimal open probability during recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 explain the mechanistic basis for bi-exponential recovery observed experimentally. The model predictions (Figure 3C) are consistent with experimental data (Figure 2B), and the explanation for minimal open probability during recovery (C42) is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Nav channels can function as a leaky integrator where membrane potential is the input signal and LTI state occupancy is the output, with the membrane potential treated as a digital signal and the leak time scale orders of magnitude longer than action potential duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 establish the mathematical framework for understanding Nav channels as leaky integrators. The mathematical definitions (C45-C47) are standard, and the application to Nav channels (C48-C50) is supported by the kinetic properties demonstrated experimentally (time scale separation in C50 matches experimental observations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The leaky integrator mechanism operates through fast integration (incrementing PS during action potentials by ~20% of available channels) and slow leak (exponential decay during interspike intervals with time constant of hundreds of milliseconds), with PS accumulating over repeated action potentials unless interspike intervals allow complete recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C62 describe the operational details of the leaky integrator mechanism. These are well-supported by both experimental data (Figures 2, 4C) and model simulations (Figure 4A-B). The logic connecting channel kinetics to integrator function is sound and consistent with measured time constants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Nav channels as leaky integrators can measure action potential frequency and encode it in LTI state occupancy, with PS reaching steady-state values that depend nonlinearly on pulse repetition rate (approximately 0.3 at 5 Hz, 0.4 at 10 Hz, 0.5 at 20 Hz experimentally).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 demonstrate the frequency-to-amplitude conversion function of the leaky integrator. Experimental data (Figure 2A, 4C) and model simulations (Figure 4D) show consistent nonlinear frequency dependence. The specific values (C66) are from representative data and show the expected trend.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "RO neurons respond to available INa by changing spiking frequency in an approximately linear manner over the tested range (5-20 nS/pF), with the LTI model producing lower frequencies than the non-LTI model due to reduced dynamically available current, and INa primarily affecting depolarization rate above approximately -50 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 demonstrate the reciprocal relationship where INa drives firing frequency. Dynamic clamp experiments (Figure 5) provide direct evidence with appropriate statistical analysis (n=7, statistical tests reported). The mechanistic explanation for how INa affects firing (C78-C82) is supported by the voltage traces in Figure 5C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Neurons with LTI show reduced sensitivity to excitatory input and maintain lower firing rates, with frequency adaptation occurring through multiple mechanisms including but not limited to Nav LTI, as demonstrated by dynamic clamp experiments showing deeper frequency decay and flatter steady-state responses with the LTI model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C94 demonstrate the functional consequences of LTI for neuronal excitability. Dynamic clamp experiments (Figure 6) with appropriate controls (alternating model order) provide strong evidence. The acknowledgment of multiple adaptation mechanisms (C85, C94) appropriately recognizes complexity. Statistical analysis is provided (n=13, paired t-tests).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Nav channels implement a negative feedback control loop that regulates neuronal firing frequency, conceptually similar to engineering process controllers, where spiking frequency is measured by LTI state occupancy, the set point is determined by O6-S13 transition rate constants, and available INa serves as the control variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 synthesize the experimental findings into a coherent control theory framework. The negative feedback loop is well-supported by the demonstrated bidirectional relationships (frequency\u2192PS and INa\u2192frequency). The engineering analogy (C96-C101) is appropriate and helps conceptualize the mechanism, illustrated in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C137"
+    ],
+    "result": "The main finding is that Nav channels implement a molecular leaky integrator through LTI that measures action potential frequency, encodes it in current availability, establishes a negative feedback loop regulating firing frequency, and makes neurons less sensitive to excitatory input while maintaining lower firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the core conclusions of the study, synthesizing results from multiple experimental approaches (voltage clamp, dynamic clamp, modeling). The leaky integrator concept is well-supported by comprehensive data showing frequency encoding (Figures 2, 4), frequency driving (Figure 5), and feedback regulation (Figures 6, 7). All component claims are individually supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C128",
+      "C129"
+    ],
+    "result": "Nav channels serve as nonlinear amplifiers whose complex kinetic mechanisms are modulated by auxiliary factors to create new functional behaviors, with LTI significantly expanding their computational repertoire and demonstrating that molecular leaky integrators can monitor and regulate cellular activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104, C128-C129 place the findings in broader context. The role of auxiliary factors in creating LTI (C103-C104) is supported by citations and the experimental demonstration. The novelty of identifying Nav channels as molecular leaky integrators (C128) is appropriately contextualized with relevant citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The functional significance of LTI in raphe neurons may be to stabilize serotonin release levels while maintaining capability for short-term responses, relevant to their role in providing widespread serotonergic modulation and interactions with respiratory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109, C111-C112 are supported by citations and experimental data (Figure 6C), but C110 is explicitly speculative. While the speculation is reasonable given the demonstrated frequency stabilization, direct evidence for effects on serotonin release is lacking. The functional significance requires additional investigation beyond the scope of this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Nav channels participate in multiple feedback mechanisms including positive feedback through voltage-dependent activation and potentially closed-state inactivation (confined to single action potentials), while LTI provides negative feedback extending over many action potentials, with raphe neurons expressing channels with low closed-state inactivation rates and backup calcium channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C116-C117, C119 are well-supported by data and citations. However, C114-C115 regarding closed-state inactivation creating positive feedback are more speculative. C118 appropriately acknowledges uncertainty about closed-state LTI. The distinction between feedback mechanisms operating on different timescales (C119) is well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The simplest kinetic mechanism compatible with LTI involves an additional non-conducting state connected to the open state, though the actual mechanism may be more complex and the 80/20 ratio could reflect multiple Nav populations with different FHF interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 appropriately acknowledge model limitations and alternative explanations. The proposed model (C120) is the simplest consistent with data, validated by dynamic clamp. The acknowledgment of potential complexity (C121-C122) and citation of higher LTI fractions in transfected neurons (C123) demonstrate appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The same kinetic framework with open-state block can explain resurgent Na+ current, but with comparable entry/exit time constants, producing opposite functional effects (facilitating vs. suppressing high-frequency firing) compared to LTI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 appropriately compare LTI to the related phenomenon of resurgent current, supported by citations. The mechanistic similarity (open-state block) and functional difference (time constant ratios and effects on firing) are clearly explained and help contextualize the LTI mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Multiple molecular mechanisms can function as leaky integrators in neurons, including desensitization of nicotinic receptors, slow kinetics of potassium channels, intracellular Ca2+ dynamics, and enzymes like CaMKII, potentially serving to stabilize cellular function and implement short-term memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 place the Nav channel findings in broader context by citing other molecular leaky integrators. All claims are appropriately supported by citations. This contextualization strengthens the significance of the Nav channel findings by showing they represent a specific instance of a more general computational principle.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C74"
+    ],
+    "result": "Higher agreeableness is associated with increased longevity in male captive chimpanzees. Males with agreeableness scores less than 0.063 standard deviations below the mean had significantly higher mortality risk (p<0.027). Parametric hazard models confirmed this association with hazard ratios of 0.66 (95% CI: 0.49\u20130.89) for unadjusted scores and 0.61 (95% CI: 0.42\u20130.89) for age-adjusted scores, indicating that more agreeable males live longer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C65-C68 provide converging evidence from both decision tree and parametric hazard regression analyses showing a robust association between agreeableness and longevity in males. The effect persists after age adjustment, and statistical significance is demonstrated with appropriate p-values and confidence intervals. The sample size (n=216 males) and follow-up period (7-24 years) provide adequate power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C69",
+      "C70",
+      "C85",
+      "C86"
+    ],
+    "result": "Higher openness showed a weak association with increased longevity in female captive chimpanzees, but this effect disappeared when controlling for age. The hazard ratio for unadjusted openness was 0.77 (95% CI: 0.59\u20130.99), but became non-significant with age-adjusted scores. This is likely due to strong curvilinear relationships between age and openness, with younger chimpanzees scoring much higher in openness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C3, C69-C70, C85-C86 collectively show that the apparent association between openness and longevity in females is confounded by age. The effect disappears with age adjustment, indicating that lower openness may simply be a proxy for older age rather than an independent predictor of longevity. The authors themselves acknowledge this limitation and cannot conclude whether there is a true protective association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "No sex-specific cross-associations were found: higher openness in males was not related to longevity, nor was higher agreeableness in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 report null findings from the parametric hazard regression analyses (Table 1), demonstrating specificity of the personality-longevity associations to particular sex-trait combinations. These negative results strengthen the interpretation of the positive findings for male agreeableness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Rearing conditions and origin (wild-born vs. captive-born) were not associated with longevity in the subset of chimpanzees for which detailed rearing data were available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 reports null findings from survival analyses examining potential confounding by rearing variables. This is appropriately documented in supplementary materials (Table S1) and helps rule out alternative explanations for the personality-longevity associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Captive chimpanzees show markedly different mortality patterns compared to wild populations: 187 of 538 captive chimpanzees died during follow-up, with strikingly reduced infant mortality, longer overall lifespans, and accelerated mortality in older ages compared to wild chimpanzees. These differences reflect protection from extrinsic mortality sources such as predators, disease, and food scarcity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by the Kaplan-Meier survival curves (Figure 1) comparing captive and wild populations, showing clear visual and quantitative differences in survival patterns. The interpretation that captive conditions remove extrinsic mortality sources is logical and well-supported, though C61 involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Chimpanzee personality traits change with age, showing curvilinear relationships for all dimensions except neuroticism (which shows only a linear relationship). These age-related changes necessitated statistical adjustment to avoid confounding in survival analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by Figure 2 and the GAM regression analyses (Figure 2\u2014figure supplements 1-6), as well as prior literature (King et al., 2008). The methodological decision to create age-adjusted personality scores is appropriate given these demonstrated age effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The association between agreeableness and longevity in males suggests that evolution has favored the protective effects of low aggression and high-quality social bonds. More agreeable males may adopt cooperative dominance styles, allowing fewer but more consistent reproductive opportunities over a longer life, contrasting with the faster life-history strategy associated with coalitionary aggression in wild chimpanzees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C74, C76 involve speculative evolutionary interpretations that extend beyond the data. While C75 provides supporting evidence from wild chimpanzees about aggression and reproduction, the proposed mechanism linking agreeableness to life-history strategy in captive populations is inferential. The captive environment (C54-C56) limits direct evolutionary inferences, and no reproductive data are presented to test the proposed trade-off.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C82",
+      "C83"
+    ],
+    "result": "The null association between conscientiousness and longevity in captive chimpanzees suggests that the well-documented conscientiousness-longevity link in humans may be mediated by health-related behaviors rather than intrinsic biological characteristics. Captive chimpanzees lack opportunities to engage in health-promoting behaviors like self-medication that are available in the wild.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 is a speculative inference from a null finding. While the logic is plausible and supported by citations (C82-C83), the absence of an effect in captivity does not definitively prove that human associations are behavior-mediated. Alternative explanations (e.g., species differences, insufficient power, measurement issues) are not fully ruled out. This interpretation requires additional comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Dominance showed no association with longevity in captive chimpanzees, possibly because captive environments reduce fission-fusion dynamics and resource competition compared to wild populations, thereby minimizing the stress and mortality costs typically associated with high rank.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The null finding for dominance is reported, but the explanation (C94-C95) is speculative. While C91-C93 provide supporting context about rank-stress relationships in wild chimpanzees, the study did not directly measure rank, stress, or group stability in the captive sample. The proposed mechanism is plausible but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104"
+    ],
+    "result": "The study sample comprised 538 captive chimpanzees from multiple facilities across five countries, assessed for personality between 1993-2010 using standardized questionnaires completed by knowledgeable raters. Follow-up ranged from 7-24 years (2016-2017), during which 187 individuals died, 336 remained alive, and 17 were lost to follow-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C96-C104 provide clear methodological details about sample composition, data collection procedures, and follow-up. These are straightforward descriptive claims supported by the study design and adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Chimpanzee personality was assessed using questionnaires with 54 items (or 43 items in earlier assessments), each comprising a trait name and behavioral description. Different versions were used across sites and time periods, with the 43-item version used from 1993-2005 and the 54-item version starting in 2007.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 describe the personality assessment methodology with appropriate citations. The use of different questionnaire versions across sites and time periods is clearly documented, though potential measurement non-equivalence is not explicitly addressed as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Chimpanzee personality measures obtained through ratings have been extensively validated, showing higher reliability than behavioral codings, heritability, temporal stability, cross-sample generalizability, minimal anthropomorphic bias, and associations with observed behaviors, brain morphology, and genetic polymorphisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 summarize prior validation work through multiple citations. These are appropriately cited claims about the measurement properties of the personality assessment method, providing important context for interpreting the current results. The authors rely on prior published work rather than conducting new validation analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The study employed appropriate statistical methods: Generalized Additive Models (GAMs) to model non-linear age-personality relationships, and conditional inference survival trees which have been shown in simulations to identify correct predictors with 93-94% accuracy in datasets similar to this one.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 describe the statistical methodology with appropriate citations. The choice of GAMs for modeling non-linear relationships and conditional inference trees for survival analysis is well-justified. The simulation evidence (C117) supports the appropriateness of the decision tree approach for this type of data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Captive samples provide methodological advantages for studying personality-longevity associations by removing extrinsic mortality sources and controlling for confounds present in wild populations. They are uniquely suited to testing whether personality-mortality associations reflect intrinsic life-history strategies independent of health-related behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 present logical arguments about the methodological advantages of captive samples. These are reasonable inferences about study design, though they also acknowledge limitations (reduced generalizability to ancestral humans). The reasoning is sound and appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Life history theory posits that fitness strategies fall on a continuum between r-selected (early/frequent reproduction, rapid senescence, shorter lifespan) and K-selected (later/less frequent reproduction, delayed senescence, longer lifespan) strategies, supported by behavioral adaptations. Differences in life history strategy have been proposed to explain individual variation in personality traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C8 present well-established concepts from life history theory with appropriate citations (Stearns 1976, Dingemanse & R\u00e9ale 2005, R\u00e9ale et al. 2010). These provide the theoretical framework for the study and represent accepted knowledge in evolutionary biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior research on personality and life history in non-primate animals shows mixed support: bolder animals have greater reproductive success but shorter lifespans (supporting life history theory), while findings for aggression and exploration are less clear. Reviews indicate that greater boldness, activity, and aggressiveness, and lower sociability and exploration, are associated with faster life history strategies across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 accurately summarize prior literature with appropriate citations (Wolf et al. 2007, Smith & Blumstein 2008, R\u00e9ale et al. 2010, Biro & Stamps 2008). These provide important context for the current study's hypotheses and represent the state of knowledge in behavioral ecology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Human personality is characterized by the Big Five traits (extraversion, agreeableness, openness, neuroticism, conscientiousness), which correspond to traits studied in behavioral ecology: extraversion includes sociability and activity, agreeableness is the opposite of aggressiveness, openness corresponds to exploration, and neuroticism is the opposite of boldness. Conscientiousness involves self-control and planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 present established knowledge about human personality structure and its correspondence to behavioral ecology constructs, with appropriate citations (Digman 1990, Costa & McCrae 1995, R\u00e9ale et al. 2007). This provides the conceptual bridge between human personality psychology and animal behavioral ecology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "In humans, meta-analyses show that better health and longer life are associated with higher agreeableness, extraversion, and conscientiousness, and lower neuroticism. These associations are theorized to be mediated by health-related behaviors. Animal analogues of conscientiousness have been identified in chimpanzees and Asian elephants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 accurately summarize prior human and animal research with appropriate citations (Strickhouser et al. 2017, Roberts et al. 2007, Turiano et al. 2015, Graham et al. 2017, King & Figueredo 1997, Seltmann et al. 2018). This provides the rationale for examining similar associations in chimpanzees.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior studies of nonhuman primates show that higher sociability is associated with longer life in western lowland gorillas, baboons, and female rhesus macaques. However, in female blue monkeys, this association only held for individuals with consistent social bonds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 accurately summarize prior primate research with appropriate citations (Weiss et al. 2013, Silk et al. 2010, Archie et al. 2014, Seyfarth et al. 2012, Brent et al. 2017, Thompson & Cords 2018). This establishes the precedent for studying personality-longevity associations in primates and highlights the importance of social factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C34",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Chimpanzees are one of humans' closest great ape relatives, and their personality structure is more similar to humans than that of bonobos. Chimpanzee personality includes five dimensions resembling the human Big Five plus a dominance dimension not present in humans. These dimensions have been identified using both questionnaires and behavioral observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C39-C43 present established knowledge about chimpanzee personality structure with extensive citations. The comparative context (chimpanzees vs. bonobos vs. humans) provides important justification for using chimpanzees as a model species. The convergent validity across measurement methods strengthens confidence in the personality constructs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Bonobo personality shows evidence for agreeableness, conscientiousness, openness, and dominance dimensions, plus a unique attentiveness dimension, but little evidence for neuroticism and extraversion. This suggests that bonobo personality may have diverged from that of chimpanzees and other great apes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 summarize comparative personality research in bonobos with appropriate citations (Weiss et al. 2015, Staes et al. 2016). Claim C47 is somewhat speculative but appropriately qualified as 'one plausible scenario.' This comparative context helps justify the focus on chimpanzees rather than bonobos.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Animal personality ratings are validated by multiple lines of evidence: they yield comparable results to behavioral measures, show inter-rater agreement, are heritable and repeatable over time, show minimal anthropomorphic bias, and benefit from behavioral definitions that reduce subjective interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 summarize validation evidence for animal personality ratings with appropriate citations (Freeman & Gosling 2010, Weiss et al. 2017, 2012, Uher & Asendorpf 2008, Stevenson-Hinde & Zunz 1978). This addresses potential concerns about using ratings rather than behavioral observations and provides important methodological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Primates have slow life-history strategies where health and longevity are important fitness measures. They are highly social, and social standing relates to stress responses. In chimpanzees, high dominance is associated with higher stress and faster growth, and high-ranking individuals have greater mating success and resource access, suggesting higher rank is associated with faster life-history strategies. Personality ratings of dominance correlate with actual rank.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 provide theoretical and empirical background on primate life history and social dynamics with appropriate citations (Jones 2011, Napier & Napier 1967, Sapolsky 2005, Pusey et al. 1997, Ellis 1995, Buirski et al. 1978, Gale et al. 2017, Weston & Jackson 2018). This establishes the rationale for hypothesizing that dominance would be associated with shorter lifespan, making the null finding (C94-C95) more interpretable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Extraversion was associated with longevity in captive gorillas despite age-related declines, but high sociability does not support longevity in all primate circumstances. Differences in mating systems (gorillas have harems, chimpanzees are promiscuous) may explain species differences in personality-longevity associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 provide comparative context from other primate species with appropriate citations (Weiss et al. 2013, Kuhar et al. 2006, Thompson & Cords 2018, Harcourt et al. 1981, Tutin 1979). This helps explain the null finding for extraversion in chimpanzees and highlights the importance of species-specific social and mating systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "In humans, neuroticism's association with mortality is complex: high neuroticism is linked to smoking (which shortens lifespan), but also to greater stress reactivity and energetically expensive physiological responses. Some high-neuroticism individuals are more likely to quit smoking after disease onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 summarize human research on neuroticism and health with appropriate citations (Graham et al. 2017, Weston & Jackson 2018, Chapman et al. 2011, R\u00e9ale et al. 2010). This provides context for interpreting the null finding for neuroticism in chimpanzees and illustrates the complexity of personality-health associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The follow-up period of 7-24 years in chimpanzees is approximately equivalent to 10-36 human years based on comparative lifespan data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 provides a conversion between chimpanzee and human years citing Napier & Napier (1967). However, the appropriateness of this conversion is unclear\u2014it may be based on maximum lifespan ratios rather than age-specific mortality rates or developmental stages. The conversion factor and its justification are not explained, making this claim difficult to evaluate.",
+    "result_type": "MINOR"
+  }
+]

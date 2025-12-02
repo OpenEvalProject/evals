@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study used a retro-cue task with 25 participants (after exclusions) who viewed face and house stimuli and then imagined the cued stimulus. MEG data were recorded at 1200 Hz using a 275-channel system, with behavioral performance (89.9% accuracy on catch trials) indicating participants generated detailed mental images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C96-C103 describe the experimental design, participant characteristics, data acquisition, and behavioral validation. The high catch trial accuracy (C32) provides strong evidence that participants followed instructions and generated detailed imagery. The methodological details are clearly documented with appropriate quality control measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "During the initial feed-forward sweep (70-130 ms), stimulus information progresses from early visual cortex (EVC) to inferior temporal cortex (IT), with EVC activation preceding IT by 26.3 ms (CI = 13.1 to 32.9 ms). Source reconstruction shows information spreading from low-level to high-level visual areas during this period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 establish the perceptual feed-forward cascade using decoding analysis, source reconstruction, and cross-correlation. The timing estimates align with prior literature (C34, C35), and the confidence intervals for the lag between EVC and IT (C37) are appropriately reported. Figure 1A-B provides visual support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study employed LDA classifiers with distance-to-hyperplane measures to track neural representation reactivation. A five-fold cross-validation procedure prevented autocorrelation artifacts, and data were demeaned to control for amplitude differences between perception and imagery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C104-C106 describe the analytical approach with appropriate methodological controls. The use of distance measures is justified by prior work (C39, C40), cross-validation addresses potential confounds (C105), and demeaning controls for amplitude differences (C106). These are standard and appropriate methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "During imagery, perception models trained at later time points reactivated earlier (negative slope \u03b21 = -1.17, p=6.58e-8), indicating reversed information flow from IT to EVC with an 11.2 ms lag. This reversal disappeared with shuffled classifiers (p=0.446), and realignment revealed stimulus information in EVC that was obscured in time-locked analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 provide converging evidence for reversed processing during imagery through statistical modeling (C41-C43), cross-correlation (C44), realignment analysis (C45-C46), and control analysis (C47). The negative slope, control with permuted labels, and improved signal detection after realignment all support the reversal hypothesis. Statistical tests are appropriate with reported confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "During the first 400 ms of perception, an oscillatory pattern emerged where the relationship between perception time and imagery reactivation alternated between positive and negative slopes approximately four times, corresponding to an 11.2 Hz oscillation. Frequency analysis confirmed significant 10 Hz power (p<0.003) and FFT showed the effect was specific to 11.2 Hz (p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 demonstrate oscillatory recurrent processing using multiple analytical approaches: visual inspection of reactivation patterns (C48-C49), time-frequency decomposition (C50), and FFT (C51). The convergence of methods and statistical significance support the conclusion (C52). Figure 4B provides visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Feed-forward and feedback sweeps during perception proceeded at similar speeds, with average slopes of -0.69 (CI = -2.05 to -0.35) for feed-forward and 1.02 (CI = -0.31 to 2.14) for feedback phases. The absolute slope values did not differ significantly (Mdiff = 0.33, CI: -1.80 to 1.74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 quantify processing speeds for feed-forward and feedback sweeps using empirical mode decomposition. The confidence intervals are reported appropriately (C53-C54), and the statistical comparison (C55) supports the conclusion of no speed difference (C56). However, the wide confidence intervals suggest substantial uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The oscillatory pattern in the reactivation trace does not merely reflect evoked alpha oscillations in the raw signal, as coherence analysis showed no significant difference between true and permuted classifiers (FDR corrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C58 attempt to rule out that the oscillatory reactivation pattern is simply driven by raw signal alpha oscillations. While the coherence analysis (C57) shows no significant difference, the authors acknowledge in the manuscript that \"future research is necessary to fully characterise the relationship between the reactivation dynamics and the raw signal dynamics.\" The evidence is suggestive but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Within-perception reactivation analysis showed that training and testing on the same phase yielded positive slopes (diagonal), while different phases showed negative slopes. The Recurrence Index was significantly positive for true data (RI = 1.83, p < 0.0001) but not for permuted data (RI = -0.008, p=0.548), confirming recurrent information flow during perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide strong evidence for recurrent processing within perception using a novel Recurrence Index metric. The diagonal pattern (C59), off-diagonal pattern (C60), significant RI for true data (C61), non-significant RI for permuted data (C62), and the conclusion (C63) form a coherent and well-controlled analysis. Figure 5 provides visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The recurrence pattern was most strongly aligned to alpha frequency (11.2 Hz), restricted to the first 400 ms after stimulus onset, and limited to neighboring phases (M = 0.073 vs M = 0.002, p < 0.0001), suggesting that neural representations changed with subsequent recurrent cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 characterize the temporal and spectral properties of recurrent processing. The frequency specificity (C64), temporal restriction (C65), and phase-neighbor analysis (C66-C67) are well-supported by data. The interpretation that representations change across cycles (C67) is reasonable given the restricted recurrence pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72",
+      "C90",
+      "C92",
+      "C95"
+    ],
+    "result": "During imagery, early perception processes are reactivated in reverse order, with activation flowing from high-level to low-level visual areas via feedback processing. This demonstrates a fundamental asymmetry between perception and imagery, where similar representations are activated through different neural dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C72, C90, C92, and C95 represent the primary conclusions about imagery. These are well-supported by the reactivation analysis (C41-C47), source reconstruction (C44-C46), and control analyses (C47). The evidence converges on reversed processing during imagery, though the authors acknowledge limitations in detecting potential recurrent dynamics during imagery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C73",
+      "C91"
+    ],
+    "result": "During perception, stimulus representations are iteratively updated through cycles of recurrent processing, with an oscillatory pattern of feed-forward and feedback sweeps aligned to an 11 Hz oscillation. This recurrent processing characterizes perception in contrast to the unidirectional feedback during imagery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C73, and C91 represent the primary conclusions about perception. These are strongly supported by the oscillatory reactivation pattern (C48-C52), within-perception recurrence analysis (C59-C63), and frequency characterization (C64-C65). Multiple converging lines of evidence support recurrent processing during perception.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C85",
+      "C93",
+      "C94"
+    ],
+    "result": "The results align with predictive processing (PP) theories, which propose that perception involves iterative hypothesis testing through interplay between top-down predictions and bottom-up prediction errors. The equal speed of feed-forward and feedback sweeps supports hierarchical recurrent processing, and imagery may use the same predictive processes to run offline simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79, C85, C93-C94 interpret the findings in the context of PP theory. The alignment is reasonable given the observed recurrent dynamics (C74, C77), equal processing speeds (C79), and reversed processing during imagery (C85, C94). However, these are interpretations rather than direct tests of PP theory. The evidence is consistent with but does not uniquely prove PP mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "This is the first study to empirically demonstrate perceptual updating cycles in humans, showing approximately four cycles complete the perceptual inference process. All perceptual feed-forward and feedback sweeps showed negative relationships with the same imagery time window, suggesting imagery contains the complete stimulus representation inferred through recurrent perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 make novelty claims and interpretations about the completeness of imagery representations. The novelty claim (C80) appears justified given the literature review. The observation about four cycles (C81) is supported by the data. The finding that all perceptual phases map to the same imagery window (C82-C83) is interesting, though the interpretation about completeness (C84) is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18"
+    ],
+    "result": "The manuscript reviews established knowledge about visual processing: perception involves a feed-forward cascade from low-level to high-level areas completed within 150 ms, followed by feedback processes. Mental imagery activates similar representations to perception in both high-level and low-level visual areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C16, and C18 summarize well-established prior knowledge about visual perception and imagery, supported by extensive citations to classic and recent literature. These provide appropriate context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior to this study, it was hypothesized that imagery involves reversed neural processing, and predictive processing theories suggest reversals play a role in perception. However, direct experimental evidence for reversals in neural information flow was missing, and the temporal dynamics of imagery remained unclear. A recent study (Linde-Domingo et al., 2019) suggested reversed processing during memory recall, but had ambiguous localization and lacked direct comparison with encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C17, C19-C23 establish the gap in knowledge that motivates the study. The characterization of prior work is accurate, including appropriate critical evaluation of the Linde-Domingo et al. study (C22-C23). This effectively motivates the need for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Predictive processing theories propose that the brain incorporates prior knowledge to generate top-down predictions compared against bottom-up input, with perceptual inference accomplished by iteratively minimizing prediction error. This predicts an interplay between feed-forward and feedback sweeps dominated by slow-wave oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 accurately describe predictive processing theory with appropriate citations. These theoretical predictions (C27-C28) provide specific hypotheses tested in the study. The description is accurate and well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study provides direct evidence for reversal of the perceptual feed-forward cascade during imagery and shows that during perception, reversals alternate with feed-forward processing in an 11 Hz oscillatory pattern. Common feedback processes support both veridical perception and mental imagery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are the primary findings stated in the abstract. These are well-supported by the detailed analyses presented in the results section (C41-C67). The evidence from multiple converging analyses strongly supports these main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "During imagery, there is no bottom-up sensory input prompting hypothesis updating; instead, feedback connections generate low-level representations from given high-level causes. The initial feedforward sweep during perception is not influenced by attention, and MEG signals reflect hierarchically increasing complex features over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 provide conceptual distinctions between perception and imagery that are reasonable interpretations. Claims C88-C89 cite recent studies to address potential alternative explanations (attention, feature complexity), strengthening the interpretation of the findings. These are appropriately supported by citations.",
+    "result_type": "MINOR"
+  }
+]

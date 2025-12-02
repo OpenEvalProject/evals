@@ -1,0 +1,1568 @@
+{
+  "submission": {
+    "id": "5b794334-581d-460d-844d-c66739c07cfd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:11:05.934221Z",
+    "updated_at": "2025-12-02T17:11:05.934221Z"
+  },
+  "content": [
+    {
+      "id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "submission_id": "5b794334-581d-460d-844d-c66739c07cfd",
+      "content_type": "manuscript",
+      "content_text": "# Dataset decay and the problem of sequential analyses on open datasets\n\n## Authors\n\n- William Hedley Thompson<sup>1</sup> ([ORCID: 0000-0002-0533-6035](https://orcid.org/0000-0002-0533-6035)) \u2020\n- Jessey Wright<sup>1</sup> ([ORCID: 0000-0001-5003-0572](https://orcid.org/0000-0001-5003-0572))\n- Patrick G Bissett<sup>1</sup>\n- Russell A Poldrack<sup>1</sup> ([ORCID: 0000-0001-6755-0259](https://orcid.org/0000-0001-6755-0259))\n\n### Affiliations\n\n1. Department of Psychology, Stanford University Stanford United States\n2. Department of Clinical Neuroscience, Karolinska Institutet Stockholm Sweden\n3. Department of Philosophy, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOpen data allows researchers to explore pre-existing datasets in new ways. However, if many researchers reuse the same dataset, multiple statistical testing may increase false positives. Here we demonstrate that sequential hypothesis testing on the same dataset by multiple researchers can inflate error rates. We go on to discuss a number of correction procedures that can reduce the number of false positives, and the challenges associated with these correction procedures.\n\n## Introduction\n\nIn recent years, there has been a push to make the scientific datasets associated with published papers openly available to other researchers (Nosek et al., 2015). Making data open will allow other researchers to both reproduce published analyses and ask new questions of existing datasets (Molloy, 2011; Pisani et al., 2016). The ability to explore pre-existing datasets in new ways should make research more efficient and has the potential to yield new discoveries (Weston et al., 2019).\n\nThe availability of open datasets will increase over time as funders mandate and reward data sharing and other open research practices (McKiernan et al., 2016). However, researchers re-analyzing these datasets will need to exercise caution if they intend to perform hypothesis testing. At present, researchers reusing datasets tend to correct for the number of statistical tests that they perform on the datasets. However, as we discuss in this article, when performing hypothesis testing it is important to take into account all of the statistical tests that have been performed on the datasets.\n\nA distinction can be made between simultaneous and sequential correction procedures when correcting for multiple tests. Simultaneous procedures correct for all tests at once, while sequential procedures correct for the latest in a non-simultaneous series of tests. There are several proposed solutions to address multiple sequential analyses, namely $\\alpha$-spending and $\\alpha$-investing procedures (Aharoni and Rosset, 2014; Foster and Stine, 2008), which strictly control false positive rate. Here we will also propose a third, $\\alpha$-debt, which does not maintain a constant false positive rate but allows it to grow controllably.\n\nSequential correction procedures are harder to implement than simultaneous procedures as they require keeping track of the total number of tests that have been performed by others. Further, in order to ensure data are still shared, the sequential correction procedures should not be antagonistic with current data-sharing incentives and infrastructure. Thus, we have identified three desiderata regarding open data and multiple hypothesis testing:\n\n### Sharing incentive\n\nData producers should be able to share their data without negatively impacting their initial statistical tests. Otherwise, this reduces the incentive to share data.\n\n### Open access\n\nMinimal to no restrictions should be placed on accessing open data, other than those necessary to protect the confidentiality of human subjects. Otherwise, the data are no longer open.\n\n### Stable false positive rate\n\nThe false positive rate (i.e., type I error) should not increase due to reusing open data. Otherwise, scientific results become less reliable with each reuse.\n\nWe will show that obtaining all three of these desiderata is not possible. We will demonstrate below that the current practice of ignoring sequential tests leads to an increased false positive rate in the scientific literature. Further, we show that sequentially correcting for data reuse can reduce the number of false positives compared to current practice. However, all the proposals considered here must still compromise (to some degree) on one of the above desiderata.\n\n## An intuitive example of the problem\n\nBefore proceeding with technical details of the problem, we outline an intuitive problem regarding sequential statistical testing and open data. Imagine there is a dataset which contains the variables ($v_{1}$, $v_{2}$, $v_{3}$). Let us now imagine that one researcher performs the statistical tests to analyze the relationship between $v_{1}\u223cv_{2}$ and $v_{1}\u223cv_{3}$ and decides that a $p$\u00a0<\u00a00.05 is treated as a positive finding (i.e. null hypothesis rejected). The analysis yields p-values of $p$\u00a0=\u00a00.001 and $p$\u00a0=\u00a00.04 respectively. In many cases, we expect the researcher to correct for the fact that two statistical tests are being performed. Thus, the researcher chooses to apply a Bonferroni correction such that p < 0.025 is the adjusted threshold for statistical significance. In this case, both tests are published, but only one of the findings is treated as a positive finding.\n\nAlternatively, let us consider a different scenario with sequential analyses and open data. Instead, the researcher only performs one statistical test ($v_{1}\u223cv_{2}$, p\u00a0=\u00a00.001). No correction is performed, and it is considered a positive finding (i.e. null hypothesis rejected). The dataset is then published online. A second researcher now performs the second test ($v_{1}\u223cv_{3}$, p\u00a0=\u00a00.04) and deems this a positive finding too because it is under a $p$\u00a0<\u00a00.05 threshold and they have only performed one statistical test. In this scenario, with the same data, we have two published positive findings compared to the single positive finding in the previous scenario. Unless a reasonable justification exists for this difference between the two scenarios, this is troubling.\n\nWhat are the consequences of these two different scenarios? A famous example of the consequences of uncorrected multiple simultaneous statistical tests is the finding of fMRI BOLD activation in a dead salmon when appropriate corrections for multiple tests were not performed (Bennett et al., 2010; Bennett et al., 2009). Now let us imagine this dead salmon dataset is published online but, in the original analysis, only one part of the salmon was analyzed, and no evidence was found supporting the hypothesis of neural activity in a dead salmon. Subsequent researchers could access this dataset, test different regions of the salmon and report their uncorrected findings. Eventually, we would see reports of dead salmon activations if no sequential correction strategy is applied, but each of these individual findings would appear completely legitimate by current correction standards.\n\nWe will now explore the idea of sequential tests in more detail, but this example highlights some crucial arguments that need to be discussed. Can we justify the sequential analysis without correcting for sequential tests? If not, what methods could sequentially correct for the multiple statistical tests? In order to fully grapple with these questions, we first need to discuss the notion of a statistical family and whether sequential analyses create new families.\n\n## Statistical families\n\nA family is a set of tests which we relate the same error rate to (familywise error). What constitutes a family has been challenging to precisely define, and the existing guidelines often contain additional imprecise terminology (e.g. Cox, 1965; Games, 1971; Hancock and Klockars, 1996; Hochberg and Tamhane, 1987; Miller, 1981). Generally, tests are considered part of a family when: (i) multiple variables are being tested with no predefined hypothesis (i.e. exploration or data-dredging), or (ii) multiple pre-specified tests together help support the same or associated research questions (Hancock and Klockars, 1996; Hochberg and Tamhane, 1987). Even if following these guidelines, there can still be considerable disagreements about what constituents a statistical family, which can include both very liberal and very conservative inclusion criteria. An example of this discrepancy is seen in using a factorial ANOVA. Some have argued that the main effect and interaction are separate families as they answer 'conceptually distinct questions' (e.g. page 291 of Maxwell and Delaney, 2004), while others would argue the opposite and state they are the same family (e.g. Cramer et al., 2016; Hancock and Klockars, 1996). Given the substantial leeway regarding the definition of family, recommendations have directed researchers to define and justify their family of tests a priori (Hancock and Klockars, 1996; Miller, 1981).\n\nA crucial distinction in the definition of a family is whether the analysis is confirmatory (i.e. hypothesis-driven) or exploratory. Given issues regarding replication in recent years (Open Science Collaboration, 2015), there has been considerable effort placed into clearly demarcating what is exploratory and what is confirmatory. One prominent definition is that confirmatory research requires preregistration before seeing the data (Wagenmakers et al., 2012). However, current practice often involves releasing open data with the original research article. Thus, all data reuse may be guided by the original or subsequent analyses (a HARKing-like problem where methods are formulated after some results are known [Button, 2019]). Therefore, if adopting this prominent definition of confirmatory research (Wagenmakers et al., 2012), it follows that any reuse of open data after publication must be exploratory unless the analysis is preregistered before the data release.\n\nSome may find Wagenmakers et al., 2012 definition to be too stringent and instead would rather allow that confirmatory hypotheses can be stated at later dates despite the researchers having some information about the data from previous use. Others have said confirmatory analyses may not require preregistrations (Jebb et al., 2017) and have argued that confirmatory analyses on open data are possible (Weston et al., 2019). If analyses on open data can be considered confirmatory, then we need to consider the second guideline about whether statistical tests are answering similar or the same research questions. The answer to this question is not always obvious, as was highlighted above regarding factorial ANOVA. However, if a study reusing data can justify itself as confirmatory, then it must also justify that it is asking a 'conceptually distinct question' from previous instances that used the data. We are not claiming that this is not possible to justify, but the justification ought to be done if no sequential correction is applied as new families are not created just because the data is being reused (see next section).\n\nWe stress that our intention here is not to establish the absolute definition of the term family; it has been an ongoing debate for decades, which we do not intend to solve. We believe our upcoming argument holds regardless of the definition. This section aimed to provide a working definition of family that allows for both small and large families to be justified. In the next section, we argue that regardless of the specific definition of family, sequential testing by itself does not create a new family by virtue of it being a sequential test.\n\n## Families of tests through time\n\nThe crucial question for the present purpose is whether the reuse of data constitutes a new family of tests. If data reuse creates a new family of tests, then there is no need to perform a sequential correction procedure in order to maintain control over familywise error. Alternatively, if a new family has not been created simply by reusing data, then we need to consider sequential correction procedures.\n\nThere are two ways in which sequential tests with open data can differ from simultaneous tests (where correction is needed): a time lag between tests and/or different individuals performing the tests. Neither of these two properties is sufficient to justify the emergence of a new family of tests. First, the temporal displacement of statistical tests can not be considered sufficient reason for creating a new family of statistical tests, as the speed with which a researcher analyzes a dataset is not relevant to the need to control for multiple statistical tests. If it were, then a simple correction procedure would be to wait a specified length of time before performing the next statistical test. Second, it should not matter who performs the tests; otherwise, one could correct for multiple tests by crowd-sourcing the analysis. Thus if we were to decide that either of the two differentiating properties of sequential tests on open data creates a new family, undesirable correction procedures would be allowable. To prevent this, statistical tests on open data, which can be run by different people, and at different times, can be part of the same family of tests. Since they can be in the same family, sequential tests on open data need to consider correction procedures to control the rate of false positives across the family.\n\nWe have demonstrated the possibility that families of tests can belong to sequential analyses. However, in practice, when does this occur? The scale of the problem rests partly in what is classed as an exploratory analysis or not. If all data reuse is considered part of the same family due to it being exploratory, this creates a large family. If however, this definition is rejected, then it depends on the research question. Due to the fuzzy nature of 'family', and the argument above showing that data reuse does not create new families automatically, we propose a simple rule-of-thumb: if the sequential tests would be considered within the same family if performed simultaneously, then they are part of the same family in sequential tests. The definition of exploratory analyses and this rule-of-thumb indicate that many sequential tests should be considered part of the same family when reusing open data. We, therefore, suggest that researchers should apply corrections for multiple tests when reusing data or provide a justification for the lack of such corrections (as they would need to in the case of simultaneous tests belonging to different families).\n\n## The consequence of not taking multiple sequential testing seriously\n\nIn this section, we consider the consequences of uncorrected sequential testing and several procedures to correct for them. We start with a simulation to test the false positive rate of the different sequential correction procedures by performing 100 sequential statistical tests (Pearson correlations) where the simulated covariance between all variables was 0 (see Methods for additional details). The simulations ran for 1000 iterations, and the familywise error was calculated using a two-tailed statistical significance threshold of p<0.05.\n\nWe first consider what happens when the sequential tests are uncorrected. Unsurprisingly, the results are identical to not correcting for simultaneous tests (Figure 1A). There will almost always be at least one false positive any time one performs 100 sequential analyses with this simulation. This rate of false positives is dramatically above the desired familywise error rate of at least one false positive in 5% of the simulation's iterations: uncorrected sequential tests necessarily lead to more false positives.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53498/elife-53498-fig1-v1.jpg)\n\n**Figure 1.:** (A) The probability of there being at least one false positive (y-axis) increases as the number of statistical tests increases (x-axis). The use of a correction procedure reduces the probability of there being at least one false positive (B: \u03b1-debt; C: \u03b1-spending; D: \u03b1-investing). Plots are based on simulations: see main text for details. Dotted line in each panel indicates a probability of 0.05.\n\nTo correct for this false positive increase, we consider several correction procedures. The first sequential procedure we consider is $\\alpha$-debt. For the ith sequential test, this procedure considers there to be $i$ tests that should be corrected. This procedure effectively performs a Bonferroni correction \u2013 i.e. the threshold of statistical significance becomes $\\frac{\\alpha_{1}}{i}$ where $\\alpha_{1}$ is the first statistical threshold (here 0.05). Thus, on the first test $\\alpha_{1}$ = 0.05, then on the second sequential test $\\alpha_{2}$ = 0.025, $\\alpha_{3}$ = 0.0167, and so on. While each sequential test is effectively a Bonferroni correction considering all previous tests, this does not retroactively change the inference of any previous statistical tests. When a new test is performed, the previous test's $\\alpha$ is now too lenient considering all the tests that have been performed. Thus, when considering all tests together, the false positive rate will increase, accumulating a false positive 'debt'. This debt entails that the method does not ensure the type I error rate remains under a specific value, instead allows it to controllably increase under a 'debt ceiling' with each sequential test (the debt ceiling is the sum of all $\\alpha_{1}$ to $\\alpha_{t}$ at $t$). The debt ceiling will always increase, but the rate of increase in debt slows down. These phenomena were confirmed in the simulations (Figure 1B). Finally, the method can mathematically ensure that the false negative rate (i.e., type II error) is equal to or better than simultaneous correction with Bonferroni (See Methods).\n\nThe next two procedures we consider have previously been suggested in the literature $\\alpha$-spending and $\\alpha$-investing (Aharoni and Rosset, 2014; Foster and Stine, 2008). The first has a total amount of '\u03b1 wealth', and the sum of all the statistical thresholds for all sequential tests can never exceed this amount (i.e., if the \u03b1 wealth is 0.05 then the sum of all thresholds on sequential tests must be less than 0.05). Here, for each sequential test, we spend half the remaining wealth (i.e., \u03b11 is 0.025, \u03b12 is 0.0125, and so on). In the simulations, the sequential tests limit the probability of there being at least one false positive to less than 0.05 (Figure 1C). Finally, \u03b1-investing allows for the significance threshold to increase or decrease as researchers perform additional tests. Again there is a concept of $\\alpha$-wealth. If a test rejects the null hypothesis, there is an increase in the remaining \u03b1-wealth that future tests can use and, if the reverse occurs, the remaining $\\alpha$-wealth decreases (see methods). \u03b1-investing ensures control of the false discovery rate at an assigned level. Here we invest 50% of the remaining wealth for each statistical test. In the simulations, this method also remains under 0.05 familywise error rate as the sequential tests increase (Figure 1D).\n\nThe main conclusion from this set of simulations is that the current practice of not correcting for open data reuse results in a substantial increase in the number of false positives presented in the literature.\n\n## Sensitivity to the order of sequential tests\n\nThe previous simulation did not consider any true positives in the data (i.e. cases where we should reject the null hypothesis). Since the statistical threshold for significance changes as the number of sequential tests increases, it becomes crucial to evaluate the sensitivity of each method to both type I and type II errors in regards to the order of sequential tests. Thus, we simulated true positives (between 1-10) where the covariance of these variables and the dependent variable were set to $p$ ($p$ ranged between 0 and 1). Further, $\\lambda$ controlled the sequential test order determining the probability that a test was a true positive. When $\\lambda$ is positive, it entails a higher likelihood that earlier tests will be one of the true positives (and vice versa when $\\lambda$ was negative; see methods). All other parameters are the same as the previous simulation. Simultaneous correction procedures (Bonferroni and FDR) of all 100 tests were also included to contrast the different sequential procedures to these methods.\n\nThe results reveal that the order of the tests is pivotal for sequential correction procedures. Unsurprisingly, the uncorrected and simultaneous correction procedures do not depend on the sequential order of tests (Figure 2ABC). The sequential correction procedures all increased their true positive rate (i.e., fewer type II errors) when the true positives were earlier in the analysis order (Figure 2A). We also observe that $\\alpha$-debt had the highest true positive rate of the sequential procedures and, when the true positives were later in the test sequence, performed on par with Bonferroni. Further, when the true positives were earlier, $\\alpha$-debt outperformed Bonferroni at identifying them. $\\alpha$-investing and $\\alpha$-spending cannot give such assurances when the true positives are later in the analysis sequence (i.e. $\\lambda$ is negative) there is less sensitivity to true positives (i.e. type II errors). $\\alpha$-debt is more sensitive to true positives compared to $\\alpha$-spending because the threshold for the mth sequential test decreases linearly in $\\alpha$-debt and exponentially in $\\alpha$-spending. This fact results in a more lenient statistical threshold for $\\alpha$-debt in later sequential tests.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53498/elife-53498-fig2-v1.jpg)\n\n**Figure 2.:** (A) The true positive rate in the uncorrected case (left-most panel), in two cases of simultaneous correction (second and third panels), and in three cases of sequential correction (fourth, fifth and sixth panels). In each panel the true positive rate after 100 tests is plotted as a function of two simulation parameters: \u03bb (x-axis) and the simulated covariance of the true positives (y-axis). When \u03bb is positive (negative), it increases the probability of the true positives being an earlier (later) test. Plots are based on simulations in which there are ten true positives in the data: see main text for details. (B) Same as A for the false positive rate. (C) Same as A for the false discovery rate. (D) Same as C for the average false discovery rate in four quadrants. Q1 has \u03bb <0; covariance >0.25. Q2 has \u03bb >0; covariance >0.25. Q3 has \u03bb <0; covariance <0.25. Q4 has \u03bb >0; covariance <0.25. The probability of true positives being an earlier test is highest in Q2 and Q4 as \u03bb >0 in these quadrants. (E) Same as D with the false discovery rate (y-axis) plotted against the percentage of true positives (x-axis) for the four quadrants. The dotted lines in D and E indicate a false discovery rate of 0.05. Code is available at https://github.com/wiheto/datasetdecay (Thompson, 2020;\u00a0copy archived at https://github.com/elifesciences-publications/datasetdecay).\n\nThe false positive rate and false discovery rate are both very high for the uncorrected procedure (Figure 2BC). $\\alpha$-debt and $\\alpha$-spending both have a decrease in false positives and false discovery rate when $\\lambda$ is positive (Figure 2BC). The false discovery rate for $\\alpha$-debt generally lies between the spending (smallest) and investing procedures (largest and one that aims to be below 0.05). Also, for all methods, the true positive rate breaks down as expected when the covariance between variables approaches the noise level. Thus we split the false discovery rate along four quadrants based on $\\lambda$ and the noise floor (Figure 2D). The quadrants where true positive covariance is above the noise floor (Q1 and Q2) has a false discovery rate of less than 0.05 for all procedures except uncorrected (Figure 2D). Finally, when varying the number of true positives in the dataset, we found that Q1 and Q2 generally decrease as the number of true positives grows for $\\alpha$-spending and $\\alpha$-debt, whereas $\\alpha$-investing remains the 0.05 mark regardless of the number of true positives (Figure 2E).\n\nAll three sequential correction procedures performed well at identifying true positives when these tests were made early on in the analysis sequence. When the true positive tests are performed later, $\\alpha$-debt has the most sensitivity for true positives and $\\alpha$-investing is the only procedure that has a stable false discovery rate regardless of the number of true positives (the other two methods appear to be more conservative). The true positive sensitivity and false discovery rate of each of the three sequential correction methods considered depend on the order of statistical tests and how many true positives are in the data.\n\n## Uncorrected sequential tests will flood the scientific literature with false positives\n\nWe have demonstrated a possible problem with sequential tests on simulations. These results show that sequential correction strategies are more liberal than their simultaneous counterparts. Therefore we should expect more false positives if sequential correction methods were performed on a dataset. We now turn our attention to empirical data from a well-known shared dataset in neuroscience to examine the effect of multiple reuses of the dataset. This empirical example is to confirm the simulations and show that more positive findings (i.e. null hypothesis rejected) will be identified with sequential correction. We used 68 cortical thickness estimates from the 1200 subject release of the HCP dataset (Van Essen et al., 2012). All subjects belonging to this dataset gave informed consent (see Van Essen et al., 2013 for more details). IRB protocol #31848 approved by the Stanford IRB approves the analysis of shared data. We then used 182 behavioral measures ranging from task performance to survey responses (see Supplementary file 1). For simplicity, we ignore all previous publications using the HCP dataset (of which there are now several hundred) for our p-value correction calculation.\n\nWe fit 182 linear models in which each behavior (dependent variable) was modeled as a function of each of the 68 cortical thickness estimates (independent variables), resulting in a total of 12,376 statistical tests. As a baseline, we corrected all statistical tests simultaneously with Bonferroni and FDR. For all other procedures, the independent variables within each mode (i.e. cortical thickness) had simultaneous FDR correction while considering each linear model (i.e. each behavior) sequentially. The procedures considered were: uncorrected sequential analysis with both Bonferroni and FDR simultaneous correction procedures; all three sequential correction procedures with FDR simultaneous correction within each model. For the sequential tests, the orders were randomized in two ways: (i) uniformly; (ii) weighting the earlier tests to be the significant findings found during the baseline conditions (see Methods). The latter considers how the methods perform if there is a higher chance that researchers test hypotheses that produce positive findings earlier in the analysis sequence rather than later. Sequential analyses had the order of tests randomized 100 times.\n\nWe asked two questions with these models. First, we identified the number of positive findings that would be reported for the different correction methods (a positive finding is considered to be when the null hypothesis is rejected at p\u00a0<\u00a00.05, two tail). Second, we asked how many additional scientific articles would be published claiming to have identified a positive result (i.e. a null hypothesis has been rejected) for the different correction methods. Importantly, in this evaluation of empirical data, we are not necessarily concerned with the number of true relationships with this analysis. Primarily, we consider the differences in the inferred statistical relationships when comparing the different sequential correction procedures to a baseline of the simultaneous correction procedures. These simultaneous procedures allow us to contrast the sequential approaches with current practices (Bonferroni, a conservative procedure, and FDR, a more liberal measure). Thus any procedure that is more stringent than the Bonferroni baseline will be too conservative (more type II errors). Any procedure that is less stringent than FDR will have an increased false discovery rate, implying more false positives (relative to the true positives). Note that, we are tackling only issues regarding correction procedures to multiple hypothesis tests; determining the truth of any particular outcome would require additional replication.\n\nFigure 3 shows the results for all correction procedures. Using sequentially uncorrected tests leads to an increase in positive findings (30/44 Bonferroni/FDR), compared to a baseline of 2 findings when correcting for all tests simultaneously (for both Bonferroni and FDR procedures). The sequentially uncorrected procedures would also result in 29/30 (Bonferroni/FDR) publications that claim to identify at least one positive result instead of the simultaneous baseline of two publications (Bonferroni and FDR), reflecting a 1,400% increase in publications claiming positive results. If we accept that the two baseline estimates are a good trade-off between error rates, then we have good reason to believe this increase reflects false positives.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53498/elife-53498-fig3-v1.jpg)\n\n**Figure 3.:** (A) The number of significant statistical tests (x-axis) that are possible for various correction procedures in a real dataset from the Human Connectome Project: see the main text for more details, supplementary file 1 for a list of the variables used in the analysis, and https://github.com/wiheto/datasetdecay\u00a0copy archived at\u00a0https://github.com/elifesciences-publications/datasetdecay\u00a0for the code. (B) The potential number of publications (x-axis) that could result from the tests shown in panel A. This assumes that a publication requires a null hypothesis to be rejected in order to yield a positive finding. The dotted line shows the baseline from the two simultaneous correction procedures. Error bars show the standard deviation and circles mark min/max number of findings/studies for the sequential correction procedures with a randomly permuted test order.\n\nThe sequential correction procedures were closer to baseline but saw divergence based on the order of the statistical tests. If the order was completely random, then $\\alpha$-debt found, on average, 2.77 positive findings (min/max: 2/6) and 2.53 publications claiming positive results (min/max: 2/4) would be published. The random order leads to an increase in the number of false positives compared to baseline but considerably less than the sequentially uncorrected procedure. In contrast, $\\alpha$-spending found 0.33 positive findings (min/max: 0/5) resulting in 0.22 studies with positive findings (min/max: 0/2) and $\\alpha$-investing found 0.48 (min/max: 0/8) positive findings and 0.37 (min/max 0/4) studies with positive findings; both of which are below the conservative baseline of 2. When the order is informed by the baseline findings, the sequential corrections procedures increase in the number of findings (findings [min/max]: $\\alpha$-debt: 3.49 [2/7], $\\alpha$-spending: 2.58 [1/4], $\\alpha$-investing: 3.54 [1/10]; and publications with positive findings [min/max]: $\\alpha$-debt: 2.38 [2/4], $\\alpha$-spending: 1.97 [1/3], $\\alpha$-investing: 2.54 [1/5]). All procedures now increase their number of findings above baseline. On average $\\alpha$-debt with a random order has a 19% increase in the number of published studies with positive findings, substantially less than the increase in the number of uncorrected studies. Two conclusions emerge. First, $\\alpha$-debt remains sensitive to the number of findings found regardless of the sequence of tests (fewer type II errors) and can never fall above the Bonferroni in regards to type II errors. At the same time, the other two sequential procedures can be more conservative than Bonferroni. Second, while $\\alpha$-debt does not ensure the false positive rate remains under a specific level (more type I errors), it dramatically closes the gap between the uncorrected and simultaneous number of findings.\n\nWe have shown with both simulation and an empirical example of how sequential statistical tests, if left uncorrected, will lead to a rise of false positive results. Further, we have explored different sequential correction procedures and shown their susceptibility to both false negatives and false positives. Broadly, we conclude that the potential of a dataset to identify new statistically significant relationships will decay over time as the number of sequential statistical tests increases when controlling for sequential tests. In the rest of the discussion section, we first discuss the implications the different sequential procedures have in regards to the desiderata outlined in the introduction. Then we discuss other possible solutions that could potentially mitigate dataset decay.\n\n## Consequence for sequential tests and open data\n\nWe stated three desiderata for open data in the introduction: sharing incentive, open access, and a stable false positive rate. Having demonstrated some properties of sequential correction procedures, we revisit these aims and consider how the implementation of sequential correction procedures in practice would meet these desiderata. The current practice of leaving sequential hypothesis tests uncorrected leads to a dramatic increase in the false positive rate. While our proposed sequential correction techniques would mitigate this problem, all three require compromising on one or more of the desiderata (summarized in Table 1).\n\n**Table 1.**\n Summary of the different sequential correction methods and the open-data desiderata.Yes indicates that the method is compatible with the desideratum.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Sharing incentive</th>\n      <th>Open access</th>\n      <th>Stable false positive rate</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>No</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>\u03b1-spending</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>\u03b1-investing</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>Yes</td>\n      <td>No</td>\n      <td>\u03b1-debt</td>\n    </tr>\n  </tbody>\n</table>\n\nImplementing $\\alpha$-spending would violate the sharing incentive desideratum as it forces the initial analysis to use a smaller statistical threshold to avoid using the entire wealth of $\\alpha$. This change could potentially happen with appropriate institutional change, but placing restrictions on the initial investigator(s) (and increased type II error rate) would likely serve as a disincentive for those researchers to share their data. It also places incentives to restrict access to open data (violating the open access desideratum) as performing additional tests would lead to a more rapid decay in the ability to detect true positives in a given dataset.\n\nImplementing $\\alpha$-investing, would violate the open access desideratum for two reasons. First, like $\\alpha$-spending there is an incentive to restrict incorrect statistical tests due to the sensitivity to order. Second, $\\alpha$-investing would require tracking and time-stamping all statistical tests made on the dataset. Given the known issues of file drawer problem (Rosenthal, 1979), this is currently problematic to implement (see below). Also, publication bias for positive outcomes would result in statistical thresholds becoming more lenient over time with this correction procedure, which might lead to even more false positives (thus violating the no increase in false positives desideratum). Unless all statistical tests are time-stamped, which is possible but would require significant institutional change, this procedure would be hard to implement.\n\nImplementing $\\alpha$-debt would improve upon current practices but will compromise on the stable false positive rate desideratum. However, it will have little effect on the sharing incentive desideratum as the original study does not need to account for any future sequential tests. The open-access desideratum is also less likely to be compromised as it is less critical to identify the true-positives directly (i.e. it has the lowest type II error rate of the sequential procedures). Finally, while compromising the false positive desideratum, its false positive rate a marked improvement compared to sequentially uncorrected tests.\n\nFinally, a practical issue that must be taken into consideration with all sequential correction procedures is whether it is ever possible to know the actual number of tests performed on an unrestricted dataset. This issue relates to the file drawer problem where there is a bias towards the publication of positive findings compared to null findings (Rosenthal, 1979). Until this is resolved, to fully sequentially correct for the number of previous tests corrected, an estimation of the number of tests may be required (e.g. by identifying publication biases; Samartsidis et al., 2017; Simonsohn et al., 2013). Using such estimations is less problematic with $\\alpha$-debt because this only requires the number of tests to be known. Comparatively, $\\alpha$-investing requires the entire results chain of statistical tests to be known and $\\alpha$-spending requires knowing every $\\alpha$ value that has been used, both of which would require additional assumptions to estimate. However, even if $\\alpha$-debt correction underestimates the number of previous statistical tests, the number of false positives will be reduced compared to no sequential correction.\n\n## Towards a solution\n\nStatistics is a multifaceted tool for experimental researchers to use, but it (rarely) aims to provide universal solutions for all problems and use cases. Thus, it may be hard to expect a one size fits all solution to the problem of sequential tests on open data. Indeed, the idiosyncrasies within different disciplines regarding the size of data, open data infrastructure, and how often new data is collected, may necessitate that they adopt different solutions. Thus, any prescription we offer now is, at best, tentative. Further, the solutions also often compromise the desiderata in some way. That being said, there are some suggestions which should assist in mitigating the problem to different degrees. Some of these suggestions only require the individual researcher to adapt their practices, others require entire disciplines to form a consensus, and others require infrastructural changes. This section deals with solutions compatible with the null hypothesis testing framework, the next section considers solutions specific to other perspectives.\n\n### Preregistration grace period of analyses prior to open data release\n\nTo increase the number of confirmatory analyses that can be performed on an open dataset, one possible solution is to have a 'preregistration grace period'. Here a description of the data can be provided, and data re-users will have the opportunity to write a preregistration prior to the data being released. This solution allows for confirmatory analyses to be performed on open data while simultaneously being part of different statistical families. This idea follows Wagenmakers et al., 2012 definition of confirmatory analysis. Consequently, once the dataset or the first study using the dataset are published, the problems outlined in this paper will remain for all subsequent (non pre-registered) analyses reusing the data.\n\n### Increased justification of the statistical family\n\nOne of the recurring problems regarding statistical testing is that, given the Wagenmakers et al., 2012 definition, it is hard to class open data reuse as confirmatory after data release. However, if disciplines decide that confirmatory analyses on open data (post-publication) are possible, one of our main arguments above is that a new paper does not automatically create a new statistical family. If researchers can, for other reasons, justify why their statistical family is separate in their analysis and state how it is different from previous statistical tests performed on the data, there is no necessity to sequentially correct. Thus providing sufficient justification for new a family in a paper can effectively reset the alpha wealth.\n\n### Restrained or coordinated alpha-levels\n\nOne of the reasons the $\\alpha$-values decays quickly in $\\alpha$-invest and $\\alpha$-spend is the 50% invest/spend rate that we chose in this article uses a large portion of the total $\\alpha$-wealth in the initial statistical tests. For example, the first two tests in $\\alpha$-spend, use 75% of the overall $\\alpha$-wealth. Different spending or investing strategies are possible, which could restrain the decay of the remaining $\\alpha$-wealth, allowing for more discoveries in later statistical tests. For example, a discipline could decide that the first ten statistical tests spend 5% of the $\\alpha$ wealth, then the next ten spends 2.5% of the overall wealth. Such a strategy would still always remain under the overall wealth, but allow more people to utilize the dataset. However, imposing this restrained or fair-use of $\\alpha$-spending would either require consensus from all researchers (however, this strategy would be in vain if just one researcher fails to comply) or restricting data access (compromising the open access desideratum). Importantly, this solution does not mitigate the decay of the alpha threshold; it just reduces the decay.\n\n### Metadata about reuse coupled to datasets\n\nOne of the problems regarding sequential corrections is knowing how many tests have been made using the dataset. This issue was partially addressed above with suggestions for estimating the number of preceding tests. Additionally, repositories could provide information about all known previous uses of the data. Thus if data repositories were able to track summaries of tests performed and which variables involved in the tests, this would, at the very least, help guide future users with rough estimates. In order for this number to be precise, it would, however, require limiting the access to the dataset (compromising the open access desideratum).\n\n### Held out data on repositories\n\nA way to allow hypothesis testing or predictive frameworks (see below) to reuse the data is if the infrastructure exists that prevents the researcher from ever seeing some portion of the data. Dataset repositories could hold out data which data re-users can query their results against to either replicate their findings or test their predictive models. This perspective has seen success in machine learning competitions which hold out test data. Additional requirements could be added to this perspective, such as requiring preregistrations in order to query the held out data. However, there have been concerns that held out data can lead to overfitting (e.g. by copying the best fitting model) (Neto et al., 2016) although others have argued this does not generally appear to be the case when evaluating overfitting (Roelofs et al., 2019). However, Roelofs et al., 2019 noted that overfitting appears to occur on smaller datasets, which might prevent it from being a general solution for all disciplines.\n\n### Narrow hypotheses and minimal statistical families\n\nOne way to avoid the sequential testing problem is to ensure small family sizes. If we can justify that there should be inherently small family sizes, then there is no need to worry about the sequential problems outlined here. This solution would also entail that each researcher does not need to justify their own particular family choice (as suggested above), but rather a specific consensus of what the contested concept family actually means is achieved. This would require: (1) confirmatory hypothesis testing on open data is possible, (2) encouraging narrow (i.e. very specific) hypotheses that will help maintain minimal family sizes, as the specificity of the hypothesis will limit the overlap with any other statistical test. Narrow hypotheses for confirmatory analyses can lead to families which are small, and can avoid correcting for multiple statistical tests (both simultaneous and sequential). This strategy is a possible solution to the problem. However, science does not merely consist of narrow hypotheses. Broader hypotheses can still be used in confirmatory studies (for example, genetic or neuroimaging datasets often ask broader questions not knowing which specific gene or brain area is involved, but know that a gene or brain region should be involved to confirm a hypothesis about a larger mechanism). Thus, while possibly solving a portion of the problem, this solution is unlikely to be a general solution for all fields, datasets, and types of hypotheses.\n\n## Different perspective-specific solutions regarding sequential testing\n\nThe solutions above focused on possible solutions compatible within the null hypothesis testing framework to deal with sequential statistical tests, although many are compatible with other perspectives as well. There are a few other perspectives about data analysis and statistical inferences that are worth considering, three of which we discuss here. Each provide some perspective-specific solution to the sequential testing problem. Any of these possible avenues may be superior to the ones we have considered in this article, but none appear to readily applicable in all situations without some additional considerations.\n\nThe first alternative is Bayesian statistics. Multiple comparisons in Bayesian frameworks are often circumnavigated by partial pooling and regularizing priors (Gelman et al., 2013; Kruschke and Liddell, 2017). While Bayesian statistics can suffer from similar problems as NHST if misapplied (Gigerenzer and Marewski, 2014), it often deals with multiple tests without explicitly correcting for them, and may provide an avenue for sequential correction to be avoided. These techniques should allow for the sequential evaluation of different independent variables against a single dependent variable when using regularizing priors, especially as these different models could also be contrasted explicitly to see which model fits the data best. However, sequential tests could be problematic when the dependent variable changes and the false positive rate should be maintained across models. If uncorrected, this could create a similar sequential problem as outlined in the empirical example in the article. Nevertheless, there are multiple avenues where this could be fixed (e.g. sequentially adjusting the prior odds in Bayes-factor inferences). The extent of sequential analysis on open dataset within the Bayesian hypothesis testing frameworks, and possible solutions, is an avenue of future investigation.\n\nThe second alternative is using held-out data within prediction frameworks. Instead of using statistical inference, this framework evaluates a model by how well it performs on predicting unseen test data (Yarkoni and Westfall, 2017). However, a well-known problem when creating models to predict on test datasets is overfitting. This phenomenon occurs, for example, if a researcher queries the test dataset multiple times. Reusing test data will occur when sequentially reusing open data. Held-out data on data repositories, as discussed above, is one potential solution here. Further, within machine learning, there have been advances towards having reusable held-out data that can be queried multiple times (Dwork et al., 2015; Dwork et al., 2017; Rogers et al., 2019). This avenue is promising, but there appear to be some drawbacks for sequential reuse. First, this line of work within 'adaptive data analysis' generally considers a single user querying the holdout test data multiple times while optimizing their model/analysis. Second, this is ultimately a cross-validation technique which is not necessarily the best tool in datasets where sample sizes are small, (Varoquaux, 2018) which is often the case with open data and thus not a general solution to this problem. Third, additional assumptions exist in these methods (e.g., there is still a 'budget limit' in Dwork et al., 2015, and 'mostly guessing correctly' is required in Rogers et al., 2019). However, this avenue of research has the potential to provide a better solution than what we have proposed here.\n\nThe third and perhaps most radical alternative is to consider all open data analysis to be exploratory data analysis (EDA). In EDA, the primary utility becomes generating hypotheses and testing assumptions of methods (Donoho, 2017; Jebb et al., 2017; Thompson et al., 2020; Tukey, 1980). Some may still consider this reframing problematic, as it could make findings based on open data seem less important. However, accepting that all analyses on open data is EDA would involve less focus on statistical inference \u2014 the sequential testing problem disappears. An increase of EDA on exploratory analyses would lead to an increase of EDA results which may not replicate. However, this is not necessarily problematic. There would be no increase of false positives within confirmatory studies in the scientific literature and the increase EDA studies will provide a fruitful guide about which confirmatory studies to undertake. Implementing this suggestion would require little infrastructural or methodological change; however, it would require an institutional shift in how researchers interpret open data results. This suggestions of EDA on open data also fits with recent proposals calling for exploration to be conducted openly (Thompson et al., 2020).\n\n## Conclusion\n\nOne of the benefits of open data is that it allows multiple perspectives to approach a question, given a particular sample. The trade-off of this benefit is that more false positives will enter the scientific literature. We remain strong advocates of open data and data sharing. We are not advocating that every single reuse of a dataset must necessarily correct for sequential tests and we have outlined multiple circumstances throughout this article where this is the case. However, researchers using openly shared data should be sensitive to the possibility of accumulating false positives and ensuing dataset decay that will occur with repeated reuse. Ensuring findings are replicated using independent samples will greatly decrease the false positive rate, since the chance of two identical false positives relationships occurring, even on well-explored datasets, is small.\n\n## Methods\n\n### Preliminary assumptions\n\nIn this article, we put forward the argument that sequential statistical tests on open data could lead to an increase in the number of false positives. This argument requires several assumptions regarding (1) the type of datasets analyzed; (2) what kind of statistical inferences are performed; (3) the types of sequential analyses considered.\n\n#### The type of dataset\n\nwe consider a dataset to be a fixed static snapshot of data collected at a specific time point. There are other cases of combining datasets or datasets that grow over time, but we will not consider those here. Second, we assume a dataset to be a random sample of a population and not a dataset that contains information about a full population.\n\n#### The type of statistical testing\n\nWe have framed our discussion of statistical inference using null hypothesis statistical testing (NHST). This assumption entails that we will use thresholded p-values to infer whether a finding differs from the null hypothesis. Our decision for this choice is motivated by a belief that the NHST framework being the most established framework for dealing with multiple statistical tests. There have been multiple valid critiques and suggestions to improve upon this statistical practice by moving away from thresholded p-values to evaluate hypotheses (Cumming, 2014; Ioannidis, 2019; Lee, 2016; McShane et al., 2019; Wasserstein et al., 2019). Crucially, however, many proposed alternative approaches within statistical inference do not circumnavigate the problem of multiple statistical testing. For example, if confidence intervals are reported and used for inference regarding hypotheses, these should also be adjusted for multiple statistical tests (see, e.g. Tukey, 1991). Thus, any alternative statistical frameworks that still must correct for multiple simultaneous statistical testing will have the same sequential statistical testing problem that we outline here. Thus, while we have chosen NHST for simplicity and familiarity, this does not entail that the problem is isolated to NHST. Solutions for different frameworks may however differ (see the discussion section for Bayesian approaches and prediction-based inference perspectives).\n\n#### The types of analyses\n\nSequential analyses involve statistical tests on the same data. Here, we consider sequential analyses that reuse the same data and analyses to be a part of the same statistical family (see section on statistical families for more details). Briefly, this involves either the statistical inferences being classed as exploratory or answering the same confirmatory hypothesis or research question. Further, we only consider analyses that are not supersets of previous analyses. This assumption entails that we are excluding analyses where a statistical model may improve upon a previous statistical model by, for example, adding an additional layer in a hierarchical model. Other types of data reuse may not be appropriate for sequential correction methods and are not considered here.\n\nWhile we have restrained our analysis with these assumptions and definitions, it is done primarily to simplify the argument regarding the problem we are identifying. The degree to which sequential tests are problematic in more advanced cases remains outside the scope of this paper.\n\n### Simulations\n\nThe first simulation sampled data for one dependent variable and 100 independent variables from a multivariate Gaussian distribution (mean: 0, standard deviation: 1, covariance: 0). We conducted 100 different pairwise sequential analyses in a random order. For each analysis, we quantified the relationship between an independent and the dependent variable using a Pearson correlation. If the correlation had a two-tailed p-value less than 0.05, we considered it to be a false positive. The simulation was repeated for 1000 iterations.\n\nThe second simulation had three additional variables. First, a variable that controlled the number of true positives in the data. This variable varied between 1-10. Second, the selected true positive variables, along with the dependent variable, had their covariance assigned as $p$. $p$ varied between 0 and 1 in steps of 0.025. Finally, we wanted to test the effect of the analysis order to identify when the true positive were included in the statistical tests. Each sequential analysis, ($m_{1}$, $m_{2}$, $m_{3}$ \u2026), could be assigned to be a 'true positive' (i.e., covariance of $p$ with the dependent variable) or a 'true negative' (covariance of 0 with dependent variable). First, $m_{1}$ would be assigned one of the trials, then $m_{2}$ and so forth. This procedure continued until there were only true positives or true negatives remaining. The procedure assigns the ith analysis to be randomly assigned, weighted by $\\lambda$. If $\\lambda$ was 0, then there was a 50% chance that $m_{i}$ would be a true positive or true negative. If $\\lambda$ was 1, a true positive was 100% more likely to be assigned to $m_{i}$ (i.e. an odds ratio of 1+$\\lambda$:1), The reverse occurred if $\\lambda$ was negative (i.e. -1 meant a true negative was 100% more likely at $m_{i}$).\n\n### Empirical example\n\nData from the Human Connectome Project (HCP) 1200 subject release was used (Van Essen et al., 2012). We selected 68 estimates of cortical thickness to be the independent variables for 182 continuous behavioral and psychological variables dependent variables. Whenever possible, the age-adjusted values were used. Supplementary file 1 shows the variables selected in the analysis.\n\nFor each analysis, we fit an ordinary least squares model using Statsmodels (0.10.0-dev0+1579, https://github.com/statsmodels/statsmodels/). For all statistical models, we first standardized all variables to have a mean of 0 and a standard deviation of 1. We dropped any missing values for a subject for that specific analysis. Significance was considered for any independent variable if it had a p-value\u00a0<\u00a00.05, two-tailed for the different correction methods.\n\nWe then quantified the number of findings and the number of potential published studies with positive results that the different correction methods would present. The number of findings is the sum of independent variables that were considered positive findings (i.e. p\u00a0<\u00a00.05, two-tailed). The number of potential studies that identify positive results is the number of dependent variables that had at least one positive finding. The rationale for the second metric is to consider how many potential non null-finding publications would exist in the literature if a separate group conducted each analysis.\n\nFor the sequential correction procedures, we used two different orderings of the tests. The first was with a uniformly random order. The second was an informed order that pretends we somehow a priori knew which variables will be correlated. The motivation behind an informed order is because it may be unrealistic that scientists ask sequential questions in a random order. The 'informed' order was created by identifying the significant statistical tests when using simultaneous correction procedures (see below). With the baseline results, we identified analyses which were baseline positives (i.e. significant with any of the simultaneous baseline procedures. There were two analyses) and the other analyses that were baseline negatives. Then, as in simulation 2, the first analysis, $m_{1}$ was randomly assigned to be a baseline positive or negative with equal probability. This informed ordering means that the baseline positives would usually appear in an earlier in the sequence order. All sequential correction procedures were applied 100 times.\n\n### Simultaneous correction procedures\n\nWe used the Bonferroni method and the Benjamini and Hochberg FDR method for simultaneous correction procedures (Benjamini and Hochberg, 1995). Both correction methods were run using multipy (v0.16, https://github.com/puolival/multipy). The FDR correction procedure intends to limit the proportion of type I errors by keeping in below a certain level. In contrast, Bonferroni error intends to limit the probability of at least one type-I error. Despite ideological criticisms and objections to both these methods (Bonferroni: Perneger, 1998; FDR: Mayo, 2017), the Bonferroni correction is a conservative procedure that allows for more type II errors to occur and the FDR is a liberal method (i.e. allows for more type I errors). Together they offer a baseline range that allows us to contrast how the sequential correction procedures perform together.\n\nIn the second simulation, the false discovery rate was also calculated to evaluate different correction methods. To calculate this metric, the average number of true positives was divided by the average number of discoveries (average false positives + average true positives).\n\n### Sequential correction procedures\n\nUncorrected.\u00a0This procedure is to not correct for any sequential analyses. This analogous to reusing open data with no consideration for any sequential tests that occur due to data reuse. For all sequential hypothesis tests, p<0.05 was considered a significant or positive finding.\n\n$\\alpha$-debt. A sequential correction procedure that, to our knowledge, has not previously been proposed. At the first hypothesis tested, $\\alpha_{1}$ sets the statistical significance threshold (here 0.05). At the ith hypothesis tested the statistical threshold is $\\alpha_{i}=\\frac{\\alpha_{1}}{i}$. The rationale here is that, at the ith test, a Bonferroni correction is applied that considers there to be $i$ number of tests performed. This method lets the false positive rate increase (i.e. the debt of reusing the dataset) as each test corrects for the overall number of tests, but all earlier tests have a more liberal threshold. The total possible 'debt' incurred for $m$ number of sequential tests can be calculated by $\\sum_{i=1}^{m}\\alpha_{i}$ and will determine the actual false positive rate.\n\n$\\alpha$-spending. A predefined $\\alpha_{0}$ is selected, which is called the $\\alpha$-wealth. At the ith test the statistical threshold, $\\alpha_{i}$, a value is selected to meet the condition that $\\sumj=1i\\alpha_{j}<\\alpha_{0}$. The ith test selects $\\alpha_{i}$ that spends part of the remaining '$\\alpha$-wealth'. The remaining $\\alpha$-wealth at test $i$ is $\\alpha_{0}-\\sum_{j=1}^{i-1}\\alpha_{j}$. Like, $\\alpha$-debt, this method effectively decreases the p-value threshold of statistical significance at each test. However, it can also ensure that the false positive rate of all statistical tests is never higher than $\\alpha_{0}$. Here, at test $i$ we always spend 50% of $\\alpha_{i-1}$ and $\\alpha_{0}$ is set to 0.05. See Foster and Stine, 2008 for more details.\n\n$\\alpha$-investing. The two previous methods only allow for the statistical threshold to decrease over time and are more akin to familywise error correction procedures. An alternative approach, which is closer to false discovery rate procedures, is to ensure the false discovery rate remains below a predefined wealth value ($W_{0}$) (Foster and Stine, 2008). At each test, $\\alpha_{i}$ is selected from the remaining wealth at $W_{i-1}$. If the sequentially indexed test $i$ was considered statistically significant (i.e. rejecting the null hypothesis), then $W_{i}$ increases: $W_{i}=W_{i-1}+\\omega$. Alternatively, if the null hypothesis cannot be rejected at $i$, then the wealth decreases: $W_{i}=W_{i-1}-\\frac{\\alpha_{i}}{1-\\alpha_{i}}$. We set $\\omega$ to $\\alpha_{0}$, which is the convention, $\\alpha_{0}$ to 0.05, and $\\alpha_{i}$ is set to 50% of the remaining wealth. See Foster and Stine, 2008 for more details.\n\nWhen combining the simultaneous and sequential correction procedures in the empirical example, we used the sequential correction procedure to derive $\\alpha_{i}$, which we then used as the threshold in the simultaneous correction.\n",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "ee0bf0cf-0383-4e29-bd89-62aa226be55e",
+      "submission_id": "5b794334-581d-460d-844d-c66739c07cfd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chris I Baker, National Institute of Mental Health, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53498.sa1](https://doi.org/10.7554/eLife.53498.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Dataset decay and the problem of sequential analyses on open datasets\" for consideration by eLife. Please note that following a discussion among the relevant editors, your article was considered as a Feature Article rather than as a Research Article.\n\nYour article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor (Chris I Baker) and the eLife Features Editor (Peter Rodgers). The following individuals involved in review of your submission have agreed to reveal their identity: Chris I Baker (Reviewer #1); Nick Holmes (Reviewer #2); Guillaume A Rousselet (Reviewer #3).\n\nSummary:\n\nThe reviewers all agreed that the manuscript focused on an important topic, and they all appreciated the simulations and analyses included it. However, the manuscript would benefit from clarifying a number of points - please see below. In particular, some passages require more in-depth discussion, and the passage that discuss potential solutions need to be fleshed out.\n\nEssential revisions:\n\n1) The notion of exploratory versus confirmatory analyses is ultimately a key issue in this manuscript. Indeed the authors propose that one solution to the problem of sequential analyses is to treat all studies using open data as exploratory. However, the authors do not clearly define or discuss these terms or the implications of labelling analyses as one or the other. I think the manuscript would benefit from more explicitly describing and discussing the distinction between exploratory and confirmatory, rather than assuming that everyone is already on the same page.\n\n2) Another important issue is the ability to determine how many prior tests have been performed on a dataset. As the authors note several times in the discussion, the \"file drawer\" problem is of major concern here. But the authors do not really consider or discuss how this problem could possibly be dealt with. For example, should authors be required to preregister the analyses they plan to perform before being given access to a dataset? I think this is such an important issue in the context of the current manuscript that it deserves more in depth discussion - even if the field decides on an appropriate method of correction, that will only prove useful if there is a way to track the number of tests performed and not just those that resulted in a significant effect and hence publication.\n\n3) In general, while the manuscript does a good job of highlighting the problem of sequential analyses on open datasets and discusses some possible solutions, it does not really suggest any recommendations for the path forward. How should the field grapple with these issues? Which of the possible solutions should be favored, if any? How should the field decide what is the best solution? How should we keep track of analyses on open datasets.\n\n4) In the abstract, the authors state that \"we should expect a dataset's utility for discovering new true relations between variables to decay'. I don't quite follow this. The alpha level is about controlling the false-positive rates. I do not see a clear link between this and the likelihood of new true-positive discoveries (which would require consideration of likely effect sizes, power, etc). If a researcher has a (true) hypothesis which is clearly-predicted by theory, convergent with other datasets, supported by a small experiment, and comes with a precise effect-size, I do not see why *any* number of prior tests of an open dataset should affect that open dataset's ability to support the researcher's well-defined hypothesis. These researchers could, indeed, simply abandon the null-hypothesis significance-testing approach for the open dataset, and simply ask: what are the likely values for the effect that I am quite sure exists? Perhaps by 'new true relations' the authors here mean 'unpredicted' or 'novel' or even 'random' and only within the NHST approach? So, my general comment here is that I am uncomfortable with the idea that open data sets decay in usefulness with time, and I would ask the authors to consider this, and soften or qualify the description.\n\n5) I can see that the definition of what is a 'family' of tests is fundamental here. What I find a bit odd about this sequential testing approach is that, at the outset, the size of the family is not known. But it could be predicted based on prior or concurrent datasets, or could be set at an arbitrary level. Have the authors considered, for example: the first X hypothesis tests can use a certain alpha level, then the next X tests, etc. This stratified sequential approach would set the size of each family from the outset, and allow everyone in the first X groups of researchers to work on a level playing field (there would then, hopefully, be no great rush to be the first researchers to test their dubious hypotheses without thought, thus wasting their scoop of alpha).\n\n6) The sequential correction methods all punish late-comers to the data party. Perhaps a particular dataset is perfect to test an idea which has not yet been developed - the data comes before the idea's time. It seems wrong that good researchers or good ideas who happen to arrive at the dataset late relative to other (worse) researchers or ideas should be 'punished' with higher alphas just for being late. (Not wishing to increase the admin-burden, ) perhaps some of the alpha can be saved up for a rainy day? Perhaps some of the alpha can be won or awarded through a competitive merit-based process? Perhaps researchers who meet a certain level of good research practice (e.g., pre-registration, ethical, open, all the necessary review, meta-analysis, and experimental work already in place, etc), should be allowed to use standard alpha levels, and it is only the disorganised vultures feeding on the data carcass who should be discouraged with alpha-punishment?\n\n7) If the dataset comprises *all* the available data on a particular topic (e.g., brains affected by 'mad cow disease' in Britain in the late 1990s) - i.e., it is the population, and not just a sample - does this change the assumptions or outcomes of the authors' approach at all? It feels like it should be a special case, but maybe not...\n\n8) Relatedly, if a dataset is large, one solution could be simply to restrict researchers to a random sample of the dataset (say, 10% of the available data), and allow them to keep alpha at standard levels. Because exactly the same data will almost never be tested twice on the same or a different hypothesis, does this completely remove the problems of inflated false-positives? It feels to me like it should. Should alpha correction only apply to researchers who use exactly the same subset and/or all the dataset?\n\n9) In the authors' simulations, to estimate the likely number of publications resulting from false-positive findings, they assume that *every single 'significant' finding* will lead directly to a single publication - in effect, that publication bias is absolute, complete, and is itself unbiased. I find this assumption very hard to stomach. Researchers may tend to hold back significant results which don't support their, or their supervisors' or group's prior, current, or proposed research. Publication bias is not simply the immediate publication of (false) positive results, but also the delayed or suppressed publication of (true) negative or opposite-direction (false positive) results. Further, many (good) labs would replicate a result before going to press, or at least report multiple results, true and false, in the same paper. The authors may have stated this in other ways, but I think this strong assumption leads only to a very upper bound on the likely number of resulting (false positive) papers. Perhaps this can be stressed more clearly?\n\n10) The authors used a real dataset to test a series of psychological hypotheses. They seem to have assumed that none of these hypotheses would pick up on any real effects in the data. Can they comment on the likelihood that their tests are establishing the true null distribution of effects, rather than actually being skewed by real effects? One solution would be to scramble the raw data in some way to ensure that even if there was a true effect, randomised and then processed voxels would not show this effect.\n\n11) The introduction and discussion could do a better job at contrasting different empirical traditions and statistical approaches. The introduction could make clearer that the current project assumes that most researchers are engaged in a particular (though dominant) type of research involving confirmatory hypothesis testing in which the goal is to explain rather than predict. Do you think the problem would be different if the focus was on prediction?\n\nThe discussion mentions cross-validation and the problem with small sample sizes, but doesn't acknowledge explicitly the tension between explanatory and predictive research - Yarkoni & Westfall (2017) is a great reference on that topic:\n\nhttps://doi.org/10.1177/1745691617693393\n\n12) FDR is not clearly defined and would need to be better justified given the strong limitations of such a concept, which Richard Morey and Deborah Mayo described as completely flawed:\n\nhttps://osf.io/ps38b/\n\nhttps://medium.com/@richarddmorey/redefining-statistical-significance-the-statistical-arguments-ae9007bc1f91\n\n13) What if we are in a field in which inappropriate statistical methods are the norm: should future researcher using appropriate tools be penalised for analysing a dataset after many doomed attempts? You touch indirectly on the subject in the section \"Gray-area when families are not clear\". For instance, in a field dominated by fixed effect analyses of means, I would argue that researchers attempting to fit carefully justified generalised hierarchical models should be allowed to reset their alpha counter.\n\n14) The discussion mentions Bayesian statistics as a potential solution, but with the current trend in adopting arbitrary thresholds for Bayes factors, the same problems encountered in mindless frequentist practices will also apply to Bayesian/Laplacian ones:\n\nGigerenzer, G. & Marewski, J.N. (2015) Surrogate Science: The Idol of a Universal Method for Scientific Inference. Journal of Management, 41, 421-440.\n",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5f41b1c8-950d-4990-a27d-63039e5d9146",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C1",
+      "claim": "Open data allows researchers to explore pre-existing datasets in new ways.",
+      "claim_type": "EXPLICIT",
+      "source": "Open data allows researchers to explore pre-existing datasets in new ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about open data capabilities presented in the abstract without specific supporting data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "8111b05c-6afc-41a3-9f1a-896267c3170b",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C2",
+      "claim": "If many researchers reuse the same dataset, multiple statistical testing may increase false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if many researchers reuse the same dataset, multiple statistical testing may increase false positives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulations and empirical analyses presented in the manuscript showing increased false positive rates with sequential testing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "75c8d7c4-e1bd-43fd-ac5a-af9c496190f9",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C3",
+      "claim": "Sequential hypothesis testing on the same dataset by multiple researchers can inflate error rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that sequential hypothesis testing on the same dataset by multiple researchers can inflate error rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through simulations showing probability of false positives increases with sequential tests (Figure 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "7d219744-1d42-412b-970e-da1162cc714c",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C4",
+      "claim": "There has been a push to make scientific datasets associated with published papers openly available to other researchers in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, there has been a push to make the scientific datasets associated with published papers openly available to other researchers (Nosek et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nosek et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "c98fdb04-e76d-4d12-92a1-fda52af02dde",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C5",
+      "claim": "Making data open will allow other researchers to both reproduce published analyses and ask new questions of existing datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Making data open will allow other researchers to both reproduce published analyses and ask new questions of existing datasets (Molloy, 2011; Pisani et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Molloy, 2011 and Pisani et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "04710da3-5f4e-445e-ba4d-37bd57f5e9c6",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C6",
+      "claim": "The ability to explore pre-existing datasets in new ways should make research more efficient and has the potential to yield new discoveries.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to explore pre-existing datasets in new ways should make research more efficient and has the potential to yield new discoveries (Weston et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weston et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "72f934df-42d6-4a26-969b-7dcf8b22a1c0",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C7",
+      "claim": "The availability of open datasets will increase over time as funders mandate and reward data sharing and other open research practices.",
+      "claim_type": "EXPLICIT",
+      "source": "The availability of open datasets will increase over time as funders mandate and reward data sharing and other open research practices (McKiernan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McKiernan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "c0fc8fe8-34ce-40ec-a2be-317e8b535507",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C8",
+      "claim": "At present, researchers reusing datasets tend to correct for the number of statistical tests that they perform on the datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, researchers reusing datasets tend to correct for the number of statistical tests that they perform on the datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current research practice without specific supporting evidence in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "5268a80a-9ca6-418a-9413-f199ad9024ee",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C9",
+      "claim": "When performing hypothesis testing it is important to take into account all of the statistical tests that have been performed on the datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as we discuss in this article, when performing hypothesis testing it is important to take into account all of the statistical tests that have been performed on the datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main argument of the paper, supported by simulations and empirical examples showing increased false positives without sequential correction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "d6f3d812-499a-4091-8b37-1d7232031dce",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C10",
+      "claim": "A distinction can be made between simultaneous and sequential correction procedures when correcting for multiple tests.",
+      "claim_type": "EXPLICIT",
+      "source": "A distinction can be made between simultaneous and sequential correction procedures when correcting for multiple tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about statistical correction procedures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "859d1e0a-d6c8-4799-89b7-9c67a6ffe5a8",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C11",
+      "claim": "Simultaneous procedures correct for all tests at once, while sequential procedures correct for the latest in a non-simultaneous series of tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous procedures correct for all tests at once, while sequential procedures correct for the latest in a non-simultaneous series of tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about statistical correction procedures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "c7f6d3c0-b214-46ef-af91-327ced2a7ed4",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C14",
+      "claim": "Sequential correction procedures are harder to implement than simultaneous procedures as they require keeping track of the total number of tests that have been performed by others.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential correction procedures are harder to implement than simultaneous procedures as they require keeping track of the total number of tests that have been performed by others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the practical implementation challenges of sequential correction procedures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "db8a3bcf-bb40-45e6-aeef-dff6ecfab813",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C15",
+      "claim": "Obtaining all three desiderata (sharing incentive, open access, and stable false positive rate) is not possible.",
+      "claim_type": "EXPLICIT",
+      "source": "We will show that obtaining all three of these desiderata is not possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analysis of different correction procedures and their trade-offs (Table 1).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "0c923365-ccbc-40bb-9b62-81649d8722bb",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C16",
+      "claim": "The current practice of ignoring sequential tests leads to an increased false positive rate in the scientific literature.",
+      "claim_type": "EXPLICIT",
+      "source": "We will demonstrate below that the current practice of ignoring sequential tests leads to an increased false positive rate in the scientific literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through simulations (Figure 1A) and empirical analysis (Figure 3) showing dramatic increases in false positives without sequential correction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "e0d4e820-c7a3-45df-a267-4b5fbe102f2c",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C17",
+      "claim": "Sequentially correcting for data reuse can reduce the number of false positives compared to current practice.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we show that sequentially correcting for data reuse can reduce the number of false positives compared to current practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through simulations (Figure 1B-D) and empirical analysis (Figure 3) showing reduced false positives with sequential correction procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "7c8f89c3-46f6-40d3-891a-c41526537e33",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C18",
+      "claim": "All the sequential correction proposals must compromise (to some degree) on one of the desiderata.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all the proposals considered here must still compromise (to some degree) on one of the above desiderata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analysis of each correction procedure's compatibility with the three desiderata (Table 1).",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "4ca71d70-07a7-4734-82e6-1a17eb1092c0",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C19",
+      "claim": "fMRI BOLD activation was found in a dead salmon when appropriate corrections for multiple tests were not performed.",
+      "claim_type": "EXPLICIT",
+      "source": "A famous example of the consequences of uncorrected multiple simultaneous statistical tests is the finding of fMRI BOLD activation in a dead salmon when appropriate corrections for multiple tests were not performed (Bennett et al., 2010; Bennett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bennett et al., 2010 and Bennett et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "40bc26dd-637e-4ea4-8287-a64876046b4a",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C20",
+      "claim": "A family is a set of tests which we relate the same error rate to (familywise error).",
+      "claim_type": "EXPLICIT",
+      "source": "A family is a set of tests which we relate the same error rate to (familywise error).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about statistical families.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "1cd8ac3c-69b6-4c0c-ac01-aeea5ced071b",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C21",
+      "claim": "What constitutes a family has been challenging to precisely define, and the existing guidelines often contain additional imprecise terminology.",
+      "claim_type": "EXPLICIT",
+      "source": "What constitutes a family has been challenging to precisely define, and the existing guidelines often contain additional imprecise terminology (e.g. Cox, 1965; Games, 1971; Hancock and Klockars, 1996; Hochberg and Tamhane, 1987; Miller, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Cox, 1965; Games, 1971; Hancock and Klockars, 1996; Hochberg and Tamhane, 1987; Miller, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "95aa2fe4-7df9-4816-bc6f-7c9184526fbb",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C22",
+      "claim": "Tests are considered part of a family when multiple variables are being tested with no predefined hypothesis (i.e. exploration or data-dredging).",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, tests are considered part of a family when: (i) multiple variables are being tested with no predefined hypothesis (i.e. exploration or data-dredging), or (ii) multiple pre-specified tests together help support the same or associated research questions (Hancock and Klockars, 1996; Hochberg and Tamhane, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hancock and Klockars, 1996 and Hochberg and Tamhane, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "6cad726f-e40d-48d1-ab22-33dfec900577",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C23",
+      "claim": "Tests are considered part of a family when multiple pre-specified tests together help support the same or associated research questions.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, tests are considered part of a family when: (i) multiple variables are being tested with no predefined hypothesis (i.e. exploration or data-dredging), or (ii) multiple pre-specified tests together help support the same or associated research questions (Hancock and Klockars, 1996; Hochberg and Tamhane, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hancock and Klockars, 1996 and Hochberg and Tamhane, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "68e1a0da-9e72-4725-8c75-e2feae11e1cc",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C24",
+      "claim": "There can be considerable disagreements about what constitutes a statistical family, which can include both very liberal and very conservative inclusion criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if following these guidelines, there can still be considerable disagreements about what constituents a statistical family, which can include both very liberal and very conservative inclusion criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the example of factorial ANOVA where different researchers disagree on family definitions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "18ef470c-4002-42a2-97da-6ed9d0703d68",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C25",
+      "claim": "Some have argued that the main effect and interaction in factorial ANOVA are separate families as they answer 'conceptually distinct questions'.",
+      "claim_type": "EXPLICIT",
+      "source": "An example of this discrepancy is seen in using a factorial ANOVA. Some have argued that the main effect and interaction are separate families as they answer 'conceptually distinct questions' (e.g. page 291 of Maxwell and Delaney, 2004), while others would argue the opposite and state they are the same family (e.g. Cramer et al., 2016; Hancock and Klockars, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Maxwell and Delaney, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "95306188-db69-4479-90b6-ea1f189beba9",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C26",
+      "claim": "Some have argued that the main effect and interaction in factorial ANOVA are the same family.",
+      "claim_type": "EXPLICIT",
+      "source": "An example of this discrepancy is seen in using a factorial ANOVA. Some have argued that the main effect and interaction are separate families as they answer 'conceptually distinct questions' (e.g. page 291 of Maxwell and Delaney, 2004), while others would argue the opposite and state they are the same family (e.g. Cramer et al., 2016; Hancock and Klockars, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cramer et al., 2016 and Hancock and Klockars, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "9955b960-897d-4958-b2a4-863e195143ce",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C27",
+      "claim": "Recommendations have directed researchers to define and justify their family of tests a priori.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the substantial leeway regarding the definition of family, recommendations have directed researchers to define and justify their family of tests a priori (Hancock and Klockars, 1996; Miller, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hancock and Klockars, 1996 and Miller, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "975e6f1b-1c98-4905-903f-7b75c601994e",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C28",
+      "claim": "There has been considerable effort placed into clearly demarcating what is exploratory and what is confirmatory given issues regarding replication in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "Given issues regarding replication in recent years (Open Science Collaboration, 2015), there has been considerable effort placed into clearly demarcating what is exploratory and what is confirmatory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Open Science Collaboration, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "4ac8ad86-13b4-46d5-9742-ad6f2efb2382",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C29",
+      "claim": "One prominent definition is that confirmatory research requires preregistration before seeing the data.",
+      "claim_type": "EXPLICIT",
+      "source": "One prominent definition is that confirmatory research requires preregistration before seeing the data (Wagenmakers et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wagenmakers et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "db49411b-877c-42bc-b899-df90f149c3ce",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C30",
+      "claim": "Current practice often involves releasing open data with the original research article.",
+      "claim_type": "EXPLICIT",
+      "source": "However, current practice often involves releasing open data with the original research article.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current research practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "8893ddf8-fcb9-4e16-93f6-050c19899f12",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C31",
+      "claim": "All data reuse may be guided by the original or subsequent analyses (a HARKing-like problem where methods are formulated after some results are known).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, all data reuse may be guided by the original or subsequent analyses (a HARKing-like problem where methods are formulated after some results are known [Button, 2019]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Button, 2019.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "6f15d9f8-b1f9-4d4f-b1a7-0171d1804b19",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C32",
+      "claim": "If adopting Wagenmakers et al., 2012 definition of confirmatory research, it follows that any reuse of open data after publication must be exploratory unless the analysis is preregistered before the data release.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if adopting this prominent definition of confirmatory research (Wagenmakers et al., 2012), it follows that any reuse of open data after publication must be exploratory unless the analysis is preregistered before the data release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the definition from Wagenmakers et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "3a6c1bc2-0364-40ab-8886-3265f4963c65",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C33",
+      "claim": "Some have said confirmatory analyses may not require preregistrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Some may find Wagenmakers et al., 2012 definition to be too stringent and instead would rather allow that confirmatory hypotheses can be stated at later dates despite the researchers having some information about the data from previous use. Others have said confirmatory analyses may not require preregistrations (Jebb et al., 2017) and have argued that confirmatory analyses on open data are possible (Weston et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jebb et al., 2017 and Weston et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "d135cb76-ad4c-46d4-a447-7f671c5cc7fa",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C34",
+      "claim": "The temporal displacement of statistical tests can not be considered sufficient reason for creating a new family of statistical tests, as the speed with which a researcher analyzes a dataset is not relevant to the need to control for multiple statistical tests.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the temporal displacement of statistical tests can not be considered sufficient reason for creating a new family of statistical tests, as the speed with which a researcher analyzes a dataset is not relevant to the need to control for multiple statistical tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument about what should not constitute a new statistical family.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "486a7e38-8a61-4840-9a4a-f7d99c5953f9",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C35",
+      "claim": "It should not matter who performs the tests; otherwise, one could correct for multiple tests by crowd-sourcing the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it should not matter who performs the tests; otherwise, one could correct for multiple tests by crowd-sourcing the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument about what should not constitute a new statistical family.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "29224d03-d664-488a-b741-adc60c84cb23",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C36",
+      "claim": "Statistical tests on open data, which can be run by different people, and at different times, can be part of the same family of tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus if we were to decide that either of the two differentiating properties of sequential tests on open data creates a new family, undesirable correction procedures would be allowable. To prevent this, statistical tests on open data, which can be run by different people, and at different times, can be part of the same family of tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical conclusion based on the arguments about what should not create new families.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "8d37df17-0550-4b75-9d11-3c0e810a0f88",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C37",
+      "claim": "Sequential tests on open data need to consider correction procedures to control the rate of false positives across the family.",
+      "claim_type": "EXPLICIT",
+      "source": "Since they can be in the same family, sequential tests on open data need to consider correction procedures to control the rate of false positives across the family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical conclusion based on the argument that sequential tests can be part of the same family.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "ea134690-30c1-4c22-b6c0-cc9a95386a43",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C38",
+      "claim": "In simulations with 100 sequential statistical tests where the simulated covariance between all variables was 0, there will almost always be at least one false positive when tests are uncorrected.",
+      "claim_type": "EXPLICIT",
+      "source": "There will almost always be at least one false positive any time one performs 100 sequential analyses with this simulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the simulation results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "b575ece3-49e6-4986-9a69-0dbc93672e42",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C39",
+      "claim": "Uncorrected sequential tests necessarily lead to more false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "This rate of false positives is dramatically above the desired familywise error rate of at least one false positive in 5% of the simulation's iterations: uncorrected sequential tests necessarily lead to more false positives.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the simulation results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "b144c743-eaab-4f3e-a4a3-eadf38fd8675",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C41",
+      "claim": "\u03b1-debt can mathematically ensure that the false negative rate is equal to or better than simultaneous correction with Bonferroni.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the method can mathematically ensure that the false negative rate (i.e., type II error) is equal to or better than simultaneous correction with Bonferroni (See Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a mathematical property of the \u03b1-debt method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "95b1a40a-095e-47b6-9d47-173c49b87b0d",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C42",
+      "claim": "In \u03b1-spending, the sum of all the statistical thresholds for all sequential tests can never exceed the total amount of '\u03b1 wealth'.",
+      "claim_type": "EXPLICIT",
+      "source": "The first has a total amount of '\u03b1 wealth', and the sum of all the statistical thresholds for all sequential tests can never exceed this amount (i.e., if the \u03b1 wealth is 0.05 then the sum of all thresholds on sequential tests must be less than 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the \u03b1-spending method from Foster and Stine, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "a1c67f0e-6e65-48ab-9cfa-5a8bc3c9da6d",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C43",
+      "claim": "In simulations, \u03b1-spending limits the probability of there being at least one false positive to less than 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulations, the sequential tests limit the probability of there being at least one false positive to less than 0.05 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the simulation results shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "0f11f68f-6db2-4b51-83e5-a873ab3e414f",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C44",
+      "claim": "\u03b1-investing allows for the significance threshold to increase or decrease as researchers perform additional tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, \u03b1-investing allows for the significance threshold to increase or decrease as researchers perform additional tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the \u03b1-investing method from Foster and Stine, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "8fb0150a-4c7f-4c69-9d5e-091de42dd124",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C45",
+      "claim": "\u03b1-investing ensures control of the false discovery rate at an assigned level.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-investing ensures control of the false discovery rate at an assigned level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the \u03b1-investing method from Foster and Stine, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "78e826b8-731e-42f9-a35b-5158db1138fc",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C46",
+      "claim": "In simulations, \u03b1-investing remains under 0.05 familywise error rate as the sequential tests increase.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulations, this method also remains under 0.05 familywise error rate as the sequential tests increase (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the simulation results shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "2aa40d6e-11b4-42f7-898a-f79591674ef7",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C47",
+      "claim": "The order of the tests is pivotal for sequential correction procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "The results reveal that the order of the tests is pivotal for sequential correction procedures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the simulation results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "dc90216f-6279-401b-bc93-1aea4d499669",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C48",
+      "claim": "The uncorrected and simultaneous correction procedures do not depend on the sequential order of tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the uncorrected and simultaneous correction procedures do not depend on the sequential order of tests (Figure 2ABC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the simulation results shown in Figure 2ABC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "43b2755d-c979-483f-b334-b1781320f898",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C49",
+      "claim": "The sequential correction procedures all increased their true positive rate when the true positives were earlier in the analysis order.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequential correction procedures all increased their true positive rate (i.e., fewer type II errors) when the true positives were earlier in the analysis order (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the simulation results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "b3f62240-59bf-4850-b6d5-40062410fe0e",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C53",
+      "claim": "The false positive rate and false discovery rate are both very high for the uncorrected procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "The false positive rate and false discovery rate are both very high for the uncorrected procedure (Figure 2BC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the simulation results shown in Figure 2BC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "f4ead811-426f-41fd-b671-33088feef945",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C57",
+      "claim": "Using sequentially uncorrected tests on HCP data leads to 30/44 (Bonferroni/FDR) positive findings, compared to a baseline of 2 findings when correcting for all tests simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Using sequentially uncorrected tests leads to an increase in positive findings (30/44 Bonferroni/FDR), compared to a baseline of 2 findings when correcting for all tests simultaneously (for both Bonferroni and FDR procedures).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the empirical analysis results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "837750d2-cddb-49cf-84b1-e66085f66d9b",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C58",
+      "claim": "The sequentially uncorrected procedures would result in 29/30 (Bonferroni/FDR) publications that claim to identify at least one positive result instead of the simultaneous baseline of two publications, reflecting a 1,400% increase in publications claiming positive results.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequentially uncorrected procedures would also result in 29/30 (Bonferroni/FDR) publications that claim to identify at least one positive result instead of the simultaneous baseline of two publications (Bonferroni and FDR), reflecting a 1,400% increase in publications claiming positive results.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the empirical analysis results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "efbc3a56-0270-4295-a0f5-2e2babf99cea",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C64",
+      "claim": "The other two sequential procedures (\u03b1-spending and \u03b1-investing) can be more conservative than Bonferroni.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the other two sequential procedures can be more conservative than Bonferroni.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the empirical analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "f4352c9f-2da2-4dcf-a541-a2a1df9998c6",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C66",
+      "claim": "The potential of a dataset to identify new statistically significant relationships will decay over time as the number of sequential statistical tests increases when controlling for sequential tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly, we conclude that the potential of a dataset to identify new statistically significant relationships will decay over time as the number of sequential statistical tests increases when controlling for sequential tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the simulations and empirical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "5145e00a-32bc-4d0f-9cf4-7ef8d203d4b6",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C68",
+      "claim": "\u03b1-spending places restrictions on the initial investigator(s) (and increased type II error rate) which would likely serve as a disincentive for those researchers to share their data.",
+      "claim_type": "EXPLICIT",
+      "source": "This change could potentially happen with appropriate institutional change, but placing restrictions on the initial investigator(s) (and increased type II error rate) would likely serve as a disincentive for those researchers to share their data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the practical implications of implementing \u03b1-spending.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "73577b84-0244-4f8c-b969-b52dd15af567",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C69",
+      "claim": "\u03b1-spending places incentives to restrict access to open data (violating the open access desideratum) as performing additional tests would lead to a more rapid decay in the ability to detect true positives in a given dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "It also places incentives to restrict access to open data (violating the open access desideratum) as performing additional tests would lead to a more rapid decay in the ability to detect true positives in a given dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the practical implications of implementing \u03b1-spending.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "580c5ace-b5e3-43a8-bb2e-d91232c6b75f",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C71",
+      "claim": "Publication bias for positive outcomes would result in statistical thresholds becoming more lenient over time with \u03b1-investing, which might lead to even more false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, publication bias for positive outcomes would result in statistical thresholds becoming more lenient over time with this correction procedure, which might lead to even more false positives (thus violating the no increase in false positives desideratum).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the practical implications of implementing \u03b1-investing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "656fcbe8-1347-4dc9-b95d-75d01d81682f",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C73",
+      "claim": "\u03b1-debt will have little effect on the sharing incentive desideratum as the original study does not need to account for any future sequential tests.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it will have little effect on the sharing incentive desideratum as the original study does not need to account for any future sequential tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the practical implications of implementing \u03b1-debt.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "ad25231b-80ea-4425-9904-fdf957eebc0a",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C74",
+      "claim": "The open-access desideratum is less likely to be compromised with \u03b1-debt as it is less critical to identify the true-positives directly (i.e. it has the lowest type II error rate of the sequential procedures).",
+      "claim_type": "EXPLICIT",
+      "source": "The open-access desideratum is also less likely to be compromised as it is less critical to identify the true-positives directly (i.e. it has the lowest type II error rate of the sequential procedures).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the practical implications of implementing \u03b1-debt, supported by simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "627e1a0d-1c18-4f78-8ccc-76be5dd14636",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C75",
+      "claim": "While compromising the false positive desideratum, \u03b1-debt's false positive rate is a marked improvement compared to sequentially uncorrected tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, while compromising the false positive desideratum, its false positive rate a marked improvement compared to sequentially uncorrected tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the simulation and empirical results comparing \u03b1-debt to uncorrected sequential tests.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "af119265-b68e-4c65-8cc7-a74aa211cd5c",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C76",
+      "claim": "There is a bias towards the publication of positive findings compared to null findings (file drawer problem).",
+      "claim_type": "EXPLICIT",
+      "source": "Given the known issues of file drawer problem (Rosenthal, 1979), this is currently problematic to implement (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rosenthal, 1979.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "8198beea-4303-4a73-9322-2c94dbd71767",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C80",
+      "claim": "Multiple comparisons in Bayesian frameworks are often circumnavigated by partial pooling and regularizing priors.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple comparisons in Bayesian frameworks are often circumnavigated by partial pooling and regularizing priors (Gelman et al., 2013; Kruschke and Liddell, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gelman et al., 2013 and Kruschke and Liddell, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "d67fb84c-6793-4081-a825-da08de251246",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C81",
+      "claim": "Bayesian statistics can suffer from similar problems as NHST if misapplied.",
+      "claim_type": "EXPLICIT",
+      "source": "While Bayesian statistics can suffer from similar problems as NHST if misapplied (Gigerenzer and Marewski, 2014), it often deals with multiple tests without explicitly correcting for them, and may provide an avenue for sequential correction to be avoided.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gigerenzer and Marewski, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "a9e0f530-4f4c-4e06-adf1-ec17157814a2",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C82",
+      "claim": "A well-known problem when creating models to predict on test datasets is overfitting.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a well-known problem when creating models to predict on test datasets is overfitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in machine learning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "83dac2ac-0434-4ab7-a9d0-498421e2854c",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C83",
+      "claim": "Reusing test data will occur when sequentially reusing open data.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon occurs, for example, if a researcher queries the test dataset multiple times. Reusing test data will occur when sequentially reusing open data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the implications of sequential data reuse in prediction frameworks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "83b20f92-9cc0-47d9-96e8-19199dedf4f0",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C84",
+      "claim": "Within machine learning, there have been advances towards having reusable held-out data that can be queried multiple times.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, within machine learning, there have been advances towards having reusable held-out data that can be queried multiple times (Dwork et al., 2015; Dwork et al., 2017; Rogers et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dwork et al., 2015; Dwork et al., 2017; Rogers et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "b4e7906c-2249-4c7e-87a0-61f0ae9949f5",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C85",
+      "claim": "Cross-validation is not necessarily the best tool in datasets where sample sizes are small.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, this is ultimately a cross-validation technique which is not necessarily the best tool in datasets where sample sizes are small, (Varoquaux, 2018) which is often the case with open data and thus not a general solution to this problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Varoquaux, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "fd93611c-278b-47da-8b48-54e83167586a",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C86",
+      "claim": "In exploratory data analysis (EDA), the primary utility becomes generating hypotheses and testing assumptions of methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In EDA, the primary utility becomes generating hypotheses and testing assumptions of methods (Donoho, 2017; Jebb et al., 2017; Thompson et al., 2020; Tukey, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Donoho, 2017; Jebb et al., 2017; Thompson et al., 2020; Tukey, 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "9a11507c-2d80-4029-85cf-86e7df8e7d9a",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C87",
+      "claim": "Accepting that all analyses on open data is EDA would involve less focus on statistical inference \u2014 the sequential testing problem disappears.",
+      "claim_type": "EXPLICIT",
+      "source": "However, accepting that all analyses on open data is EDA would involve less focus on statistical inference \u2014 the sequential testing problem disappears.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the implications of treating all open data analyses as exploratory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "2d582403-eab4-4a9b-917d-99a870d21331",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C88",
+      "claim": "Ensuring findings are replicated using independent samples will greatly decrease the false positive rate, since the chance of two identical false positives relationships occurring, even on well-explored datasets, is small.",
+      "claim_type": "EXPLICIT",
+      "source": "Ensuring findings are replicated using independent samples will greatly decrease the false positive rate, since the chance of two identical false positives relationships occurring, even on well-explored datasets, is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the value of replication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "1d734c8d-783c-4371-a434-109085858eaa",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C89",
+      "claim": "68 cortical thickness estimates from the 1200 subject release of the HCP dataset were used in the empirical analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 68 cortical thickness estimates from the 1200 subject release of the HCP dataset (Van Essen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the empirical analysis, supported by citation to Van Essen et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "20b6816d-0528-4188-a33c-024d57abac37",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C90",
+      "claim": "182 behavioral measures ranging from task performance to survey responses were used as dependent variables in the empirical analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used 182 behavioral measures ranging from task performance to survey responses (see Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the empirical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "7191edd1-213a-4143-bb64-9c6bd3702b9d",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C91",
+      "claim": "182 linear models were fit in which each behavior (dependent variable) was modeled as a function of each of the 68 cortical thickness estimates (independent variables), resulting in a total of 12,376 statistical tests.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit 182 linear models in which each behavior (dependent variable) was modeled as a function of each of the 68 cortical thickness estimates (independent variables), resulting in a total of 12,376 statistical tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis performed on the HCP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "8cc7a348-9b0b-46eb-b5ec-d416d3b1fbdb",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C92",
+      "claim": "All subjects belonging to the HCP dataset gave informed consent.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects belonging to this dataset gave informed consent (see Van Essen et al., 2013 for more details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Van Essen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "b945b66b-c055-4910-bbb3-77fcffeb057a",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "claim_id": "C93",
+      "claim": "IRB protocol #31848 approved by the Stanford IRB approves the analysis of shared data.",
+      "claim_type": "EXPLICIT",
+      "source": "IRB protocol #31848 approved by the Stanford IRB approves the analysis of shared data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d60c7e15-cb12-4cf3-9a48-437607f67155",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Uncorrected sequential hypothesis testing on the same dataset by multiple researchers dramatically inflates false positive rates. Simulations with 100 sequential tests where true covariance was 0 showed nearly 100% probability of at least one false positive, far exceeding the desired 5% familywise error rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C16, C38, and C39 are strongly supported by simulation data (Figure 1A) demonstrating that uncorrected sequential testing leads to dramatically increased false positive rates. The simulation methodology is clearly described with appropriate null hypothesis conditions (covariance=0), and results show the probability of false positives approaches 1.0 with 100 tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "ecbf18c3-3074-4018-ae2c-a66b31c3d621",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Three sequential correction procedures (\u03b1-debt, \u03b1-spending, \u03b1-investing) can reduce false positives compared to uncorrected sequential testing. Simulations show \u03b1-spending and \u03b1-investing maintain familywise error rate below 0.05, while \u03b1-debt allows controlled increase but ensures type II error equal to or better than Bonferroni.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C41, C43, and C46 are supported by simulation results (Figures 1B-D) showing all three sequential correction methods reduce false positives relative to uncorrected testing. The mathematical properties of each method are described and simulation results confirm their behavior, though \u03b1-debt's mathematical guarantee (C41) lacks explicit proof in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "fd1c2d4f-2afb-40b3-acfe-9f9107d580ea",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The order of sequential tests critically affects performance of sequential correction procedures. Sequential methods show increased true positive rates when true positives appear earlier in the test sequence, while uncorrected and simultaneous correction procedures are order-independent. Uncorrected procedures show very high false positive and false discovery rates regardless of order.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 and C53 are supported by simulation results (Figure 2) that systematically vary test order using the \u03bb parameter. The simulations appropriately test order effects and show clear differential performance, with sequential methods being order-sensitive while simultaneous methods are not.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "95f9befd-cfcf-44e7-b42e-a978d9319b9d",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Empirical analysis of HCP data demonstrates that sequentially uncorrected tests produce 30/44 positive findings and 29/30 publications with positive results (1,400% increase) compared to baseline of 2 findings with simultaneous correction. Sequential correction procedures (\u03b1-spending, \u03b1-investing) can be more conservative than Bonferroni.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C58, and C64 are supported by empirical analysis on HCP data (Figure 3, C89-C91). The analysis uses 12,376 statistical tests on real neuroimaging data and clearly demonstrates the dramatic increase in positive findings without sequential correction. The comparison to simultaneous correction baselines is appropriate and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "1d8067d4-6255-4ad0-95da-6492f58a0292",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "No sequential correction procedure can simultaneously satisfy all three desiderata (sharing incentive, open access, stable false positive rate). \u03b1-spending violates sharing incentive and open access; \u03b1-investing violates open access and potentially stable false positive rate; \u03b1-debt violates stable false positive rate but best preserves other desiderata.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C18, and C68-C75 present logical analysis of trade-offs between correction procedures and desiderata, supported by Table 1 and simulation/empirical results. The reasoning about practical implementation challenges and incentive structures is sound, though some aspects (e.g., C68, C69, C71) are speculative inferences about researcher behavior rather than empirically demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "3df294b0-2a2a-4eac-852d-62f0f4bef9c1",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The potential of a dataset to identify new statistically significant relationships decays over time as the number of sequential statistical tests increases when controlling for sequential tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported as a general conclusion from both simulation (Figures 1-2) and empirical analyses (Figure 3). The 'dataset decay' concept is demonstrated through decreasing \u03b1 thresholds in sequential correction procedures and reduced ability to detect true positives in later tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "88130677-d6cb-482c-b089-a2f6df5ea070",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sequential tests on open data performed by different researchers at different times can constitute the same statistical family. Neither temporal displacement nor different investigators performing tests is sufficient to create a new statistical family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 present a logical argument about statistical family definitions. The reasoning is sound: allowing time or investigator identity to define new families would enable trivial circumvention of multiple testing corrections. This is a conceptual/theoretical result rather than empirical, but the logic is internally consistent and well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "8e31c359-31ff-48a0-b620-61358b34ce3c",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The empirical analysis used 68 cortical thickness estimates and 182 behavioral measures from the HCP 1200-subject dataset, resulting in 12,376 statistical tests across 182 linear models with appropriate ethical approval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C93 describe the empirical dataset and analysis methodology. These are straightforward methodological claims supported by appropriate citations (Van Essen et al., 2012, 2013) and IRB documentation. The dataset and analysis parameters are clearly specified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "3b81003c-ef20-4dd3-a003-3a831969ec06",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Simultaneous correction procedures correct for all tests at once, while sequential procedures correct for the latest in a non-simultaneous series of tests. A statistical family is a set of tests related to the same error rate (familywise error).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, and C20 are definitional statements about statistical correction procedures and families. These are standard statistical concepts accurately described and form the foundation for the manuscript's arguments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "682a8c80-fcf3-4972-91d1-044c30da446f",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "There has been a recent push toward open data sharing, which allows researchers to reproduce analyses and ask new questions of existing datasets, potentially making research more efficient and yielding new discoveries. The availability of open datasets will increase as funders mandate data sharing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 describe the open data movement and are supported by appropriate citations (Nosek et al., 2015; Molloy, 2011; Pisani et al., 2016; Weston et al., 2019; McKiernan et al., 2016). These are contextual claims establishing motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "71487587-17f1-4b9b-b14b-7be8b38984af",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The definition of a statistical family has been challenging to precisely define, with considerable disagreement about inclusion criteria. Generally, tests are considered part of a family when exploring multiple variables without predefined hypotheses or when multiple tests support the same research questions. Recommendations direct researchers to define families a priori.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 discuss the ambiguity in defining statistical families, supported by multiple citations (Cox, 1965; Games, 1971; Hancock and Klockars, 1996; Hochberg and Tamhane, 1987; Miller, 1981; Maxwell and Delaney, 2004; Cramer et al., 2016). The factorial ANOVA example effectively illustrates the disagreement in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "787c3627-0fd4-4943-9b6f-567a7d9b94ed",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "There has been effort to distinguish exploratory from confirmatory research, with one prominent definition requiring preregistration before seeing data. Current practice of releasing data with publications means data reuse may be guided by previous analyses (HARKing-like problem), making most open data reuse exploratory unless preregistered, though some argue confirmatory analyses on open data are possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 discuss the exploratory/confirmatory distinction in the context of open data, supported by citations (Open Science Collaboration, 2015; Wagenmakers et al., 2012; Button, 2019; Jebb et al., 2017; Weston et al., 2019). The logical inference about data reuse being exploratory (C32) follows from the cited definition, though alternative views are acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "24e3db15-86e6-4fc8-9bd0-40704d221109",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "fMRI BOLD activation was found in a dead salmon when appropriate corrections for multiple tests were not performed, illustrating consequences of uncorrected simultaneous statistical tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 references the famous Bennett et al. dead salmon study (2009, 2010) as an illustrative example of multiple testing problems. This is an accurate citation of prior work used for pedagogical purposes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "a0dc6a86-1b64-4607-b841-17d608be2d4b",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "\u03b1-spending constrains the sum of all statistical thresholds to never exceed total \u03b1-wealth. \u03b1-investing allows significance thresholds to increase or decrease with additional tests and ensures control of false discovery rate at an assigned level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C44, and C45 describe properties of \u03b1-spending and \u03b1-investing methods from Foster and Stine (2008). These are accurate descriptions of previously published methods, appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "796ed694-b90d-42c4-8f91-21c833b1e09b",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Sequential correction procedures are harder to implement than simultaneous procedures as they require keeping track of the total number of tests performed by others.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is a logical inference about practical implementation challenges. This is self-evidently true: sequential correction requires knowledge of all previous tests, which is more difficult than knowing only one's own tests for simultaneous correction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "b7ec4fac-a151-4d98-97cf-7d61a63766fc",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "There is a bias towards publication of positive findings compared to null findings (file drawer problem), which makes implementing sequential correction procedures problematic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 references the well-established file drawer problem (Rosenthal, 1979) and correctly identifies it as a challenge for sequential correction implementation. This is an accurate citation of prior work and valid concern.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "2fe723e3-d18a-4ae1-9a88-b0966ec1ee66",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Multiple comparisons in Bayesian frameworks are often circumnavigated by partial pooling and regularizing priors. While Bayesian statistics can suffer from similar problems as NHST if misapplied, it may provide an avenue for avoiding sequential correction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80 and C81 discuss Bayesian approaches to multiple comparisons, supported by appropriate citations (Gelman et al., 2013; Kruschke and Liddell, 2017; Gigerenzer and Marewski, 2014). The discussion acknowledges both potential advantages and limitations of Bayesian methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "b31316ab-e24b-4737-a366-1abf8742a3a6",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Overfitting is a well-known problem when creating predictive models, and reusing test data will occur with sequential open data reuse. Machine learning has developed reusable held-out data methods, though cross-validation may not be optimal for small sample sizes common in open data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 discuss prediction frameworks and overfitting, supported by citations (Dwork et al., 2015, 2017; Rogers et al., 2019; Varoquaux, 2018). The discussion accurately represents established knowledge about overfitting and recent developments in adaptive data analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "ff4a850f-0a05-49cf-84b9-626df075c3fe",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "In exploratory data analysis (EDA), the primary utility is generating hypotheses and testing method assumptions. Accepting that all analyses on open data are EDA would involve less focus on statistical inference, making the sequential testing problem disappear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86 and C87 discuss EDA as a potential solution, supported by citations (Donoho, 2017; Jebb et al., 2017; Thompson et al., 2020; Tukey, 1980). The logical inference that treating all open data analyses as exploratory eliminates the sequential testing problem is sound, though the authors acknowledge this requires institutional change.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "449c5302-cf73-4c00-92d0-6028fbf278a5",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Ensuring findings are replicated using independent samples will greatly decrease the false positive rate, since the chance of two identical false positive relationships occurring, even on well-explored datasets, is small.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is a logical inference about the value of replication. This is statistically sound reasoning: the probability of the same false positive occurring independently in two datasets is the product of individual false positive probabilities, which is very small.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    },
+    {
+      "id": "f717278a-8b09-4bc3-b378-7027e08a2d6d",
+      "content_id": "83474d19-18fa-4d23-9b2b-c7b8fdb0c1d1",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Open data allows researchers to explore datasets in new ways. Currently, researchers reusing datasets tend to correct for their own statistical tests, but it is important to account for all statistical tests performed on the datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8, and C9 establish the paper's motivation and main argument. C1 and C8 describe current practices (general knowledge claims), while C9 states the paper's central thesis, which is subsequently supported by the simulation and empirical results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:11:05.934221Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8111b05c-6afc-41a3-9f1a-896267c3170b",
+      "result_id": "d60c7e15-cb12-4cf3-9a48-437607f67155"
+    },
+    {
+      "claim_id": "75c8d7c4-e1bd-43fd-ac5a-af9c496190f9",
+      "result_id": "d60c7e15-cb12-4cf3-9a48-437607f67155"
+    },
+    {
+      "claim_id": "0c923365-ccbc-40bb-9b62-81649d8722bb",
+      "result_id": "d60c7e15-cb12-4cf3-9a48-437607f67155"
+    },
+    {
+      "claim_id": "ea134690-30c1-4c22-b6c0-cc9a95386a43",
+      "result_id": "d60c7e15-cb12-4cf3-9a48-437607f67155"
+    },
+    {
+      "claim_id": "b575ece3-49e6-4986-9a69-0dbc93672e42",
+      "result_id": "d60c7e15-cb12-4cf3-9a48-437607f67155"
+    },
+    {
+      "claim_id": "e0d4e820-c7a3-45df-a267-4b5fbe102f2c",
+      "result_id": "ecbf18c3-3074-4018-ae2c-a66b31c3d621"
+    },
+    {
+      "claim_id": "b144c743-eaab-4f3e-a4a3-eadf38fd8675",
+      "result_id": "ecbf18c3-3074-4018-ae2c-a66b31c3d621"
+    },
+    {
+      "claim_id": "a1c67f0e-6e65-48ab-9cfa-5a8bc3c9da6d",
+      "result_id": "ecbf18c3-3074-4018-ae2c-a66b31c3d621"
+    },
+    {
+      "claim_id": "78e826b8-731e-42f9-a35b-5158db1138fc",
+      "result_id": "ecbf18c3-3074-4018-ae2c-a66b31c3d621"
+    },
+    {
+      "claim_id": "2aa40d6e-11b4-42f7-898a-f79591674ef7",
+      "result_id": "fd1c2d4f-2afb-40b3-acfe-9f9107d580ea"
+    },
+    {
+      "claim_id": "dc90216f-6279-401b-bc93-1aea4d499669",
+      "result_id": "fd1c2d4f-2afb-40b3-acfe-9f9107d580ea"
+    },
+    {
+      "claim_id": "43b2755d-c979-483f-b334-b1781320f898",
+      "result_id": "fd1c2d4f-2afb-40b3-acfe-9f9107d580ea"
+    },
+    {
+      "claim_id": "b3f62240-59bf-4850-b6d5-40062410fe0e",
+      "result_id": "fd1c2d4f-2afb-40b3-acfe-9f9107d580ea"
+    },
+    {
+      "claim_id": "f4ead811-426f-41fd-b671-33088feef945",
+      "result_id": "95f9befd-cfcf-44e7-b42e-a978d9319b9d"
+    },
+    {
+      "claim_id": "837750d2-cddb-49cf-84b1-e66085f66d9b",
+      "result_id": "95f9befd-cfcf-44e7-b42e-a978d9319b9d"
+    },
+    {
+      "claim_id": "efbc3a56-0270-4295-a0f5-2e2babf99cea",
+      "result_id": "95f9befd-cfcf-44e7-b42e-a978d9319b9d"
+    },
+    {
+      "claim_id": "db8a3bcf-bb40-45e6-aeef-dff6ecfab813",
+      "result_id": "1d8067d4-6255-4ad0-95da-6492f58a0292"
+    },
+    {
+      "claim_id": "7c8f89c3-46f6-40d3-891a-c41526537e33",
+      "result_id": "1d8067d4-6255-4ad0-95da-6492f58a0292"
+    },
+    {
+      "claim_id": "5145e00a-32bc-4d0f-9cf4-7ef8d203d4b6",
+      "result_id": "1d8067d4-6255-4ad0-95da-6492f58a0292"
+    },
+    {
+      "claim_id": "73577b84-0244-4f8c-b969-b52dd15af567",
+      "result_id": "1d8067d4-6255-4ad0-95da-6492f58a0292"
+    },
+    {
+      "claim_id": "580c5ace-b5e3-43a8-bb2e-d91232c6b75f",
+      "result_id": "1d8067d4-6255-4ad0-95da-6492f58a0292"
+    },
+    {
+      "claim_id": "656fcbe8-1347-4dc9-b95d-75d01d81682f",
+      "result_id": "1d8067d4-6255-4ad0-95da-6492f58a0292"
+    },
+    {
+      "claim_id": "ad25231b-80ea-4425-9904-fdf957eebc0a",
+      "result_id": "1d8067d4-6255-4ad0-95da-6492f58a0292"
+    },
+    {
+      "claim_id": "627e1a0d-1c18-4f78-8ccc-76be5dd14636",
+      "result_id": "1d8067d4-6255-4ad0-95da-6492f58a0292"
+    },
+    {
+      "claim_id": "f4352c9f-2da2-4dcf-a541-a2a1df9998c6",
+      "result_id": "3df294b0-2a2a-4eac-852d-62f0f4bef9c1"
+    },
+    {
+      "claim_id": "d135cb76-ad4c-46d4-a447-7f671c5cc7fa",
+      "result_id": "88130677-d6cb-482c-b089-a2f6df5ea070"
+    },
+    {
+      "claim_id": "486a7e38-8a61-4840-9a4a-f7d99c5953f9",
+      "result_id": "88130677-d6cb-482c-b089-a2f6df5ea070"
+    },
+    {
+      "claim_id": "29224d03-d664-488a-b741-adc60c84cb23",
+      "result_id": "88130677-d6cb-482c-b089-a2f6df5ea070"
+    },
+    {
+      "claim_id": "8d37df17-0550-4b75-9d11-3c0e810a0f88",
+      "result_id": "88130677-d6cb-482c-b089-a2f6df5ea070"
+    },
+    {
+      "claim_id": "1d734c8d-783c-4371-a434-109085858eaa",
+      "result_id": "8e31c359-31ff-48a0-b620-61358b34ce3c"
+    },
+    {
+      "claim_id": "20b6816d-0528-4188-a33c-024d57abac37",
+      "result_id": "8e31c359-31ff-48a0-b620-61358b34ce3c"
+    },
+    {
+      "claim_id": "7191edd1-213a-4143-bb64-9c6bd3702b9d",
+      "result_id": "8e31c359-31ff-48a0-b620-61358b34ce3c"
+    },
+    {
+      "claim_id": "8cc7a348-9b0b-46eb-b5ec-d416d3b1fbdb",
+      "result_id": "8e31c359-31ff-48a0-b620-61358b34ce3c"
+    },
+    {
+      "claim_id": "b945b66b-c055-4910-bbb3-77fcffeb057a",
+      "result_id": "8e31c359-31ff-48a0-b620-61358b34ce3c"
+    },
+    {
+      "claim_id": "d6f3d812-499a-4091-8b37-1d7232031dce",
+      "result_id": "3b81003c-ef20-4dd3-a003-3a831969ec06"
+    },
+    {
+      "claim_id": "859d1e0a-d6c8-4799-89b7-9c67a6ffe5a8",
+      "result_id": "3b81003c-ef20-4dd3-a003-3a831969ec06"
+    },
+    {
+      "claim_id": "40bc26dd-637e-4ea4-8287-a64876046b4a",
+      "result_id": "3b81003c-ef20-4dd3-a003-3a831969ec06"
+    },
+    {
+      "claim_id": "7d219744-1d42-412b-970e-da1162cc714c",
+      "result_id": "682a8c80-fcf3-4972-91d1-044c30da446f"
+    },
+    {
+      "claim_id": "c98fdb04-e76d-4d12-92a1-fda52af02dde",
+      "result_id": "682a8c80-fcf3-4972-91d1-044c30da446f"
+    },
+    {
+      "claim_id": "04710da3-5f4e-445e-ba4d-37bd57f5e9c6",
+      "result_id": "682a8c80-fcf3-4972-91d1-044c30da446f"
+    },
+    {
+      "claim_id": "72f934df-42d6-4a26-969b-7dcf8b22a1c0",
+      "result_id": "682a8c80-fcf3-4972-91d1-044c30da446f"
+    },
+    {
+      "claim_id": "1cd8ac3c-69b6-4c0c-ac01-aeea5ced071b",
+      "result_id": "71487587-17f1-4b9b-b14b-7be8b38984af"
+    },
+    {
+      "claim_id": "95aa2fe4-7df9-4816-bc6f-7c9184526fbb",
+      "result_id": "71487587-17f1-4b9b-b14b-7be8b38984af"
+    },
+    {
+      "claim_id": "6cad726f-e40d-48d1-ab22-33dfec900577",
+      "result_id": "71487587-17f1-4b9b-b14b-7be8b38984af"
+    },
+    {
+      "claim_id": "68e1a0da-9e72-4725-8c75-e2feae11e1cc",
+      "result_id": "71487587-17f1-4b9b-b14b-7be8b38984af"
+    },
+    {
+      "claim_id": "18ef470c-4002-42a2-97da-6ed9d0703d68",
+      "result_id": "71487587-17f1-4b9b-b14b-7be8b38984af"
+    },
+    {
+      "claim_id": "95306188-db69-4479-90b6-ea1f189beba9",
+      "result_id": "71487587-17f1-4b9b-b14b-7be8b38984af"
+    },
+    {
+      "claim_id": "9955b960-897d-4958-b2a4-863e195143ce",
+      "result_id": "71487587-17f1-4b9b-b14b-7be8b38984af"
+    },
+    {
+      "claim_id": "975e6f1b-1c98-4905-903f-7b75c601994e",
+      "result_id": "787c3627-0fd4-4943-9b6f-567a7d9b94ed"
+    },
+    {
+      "claim_id": "4ac8ad86-13b4-46d5-9742-ad6f2efb2382",
+      "result_id": "787c3627-0fd4-4943-9b6f-567a7d9b94ed"
+    },
+    {
+      "claim_id": "db49411b-877c-42bc-b899-df90f149c3ce",
+      "result_id": "787c3627-0fd4-4943-9b6f-567a7d9b94ed"
+    },
+    {
+      "claim_id": "8893ddf8-fcb9-4e16-93f6-050c19899f12",
+      "result_id": "787c3627-0fd4-4943-9b6f-567a7d9b94ed"
+    },
+    {
+      "claim_id": "6f15d9f8-b1f9-4d4f-b1a7-0171d1804b19",
+      "result_id": "787c3627-0fd4-4943-9b6f-567a7d9b94ed"
+    },
+    {
+      "claim_id": "3a6c1bc2-0364-40ab-8886-3265f4963c65",
+      "result_id": "787c3627-0fd4-4943-9b6f-567a7d9b94ed"
+    },
+    {
+      "claim_id": "4ca71d70-07a7-4734-82e6-1a17eb1092c0",
+      "result_id": "24e3db15-86e6-4fc8-9bd0-40704d221109"
+    },
+    {
+      "claim_id": "95b1a40a-095e-47b6-9d47-173c49b87b0d",
+      "result_id": "a0dc6a86-1b64-4607-b841-17d608be2d4b"
+    },
+    {
+      "claim_id": "0f11f68f-6db2-4b51-83e5-a873ab3e414f",
+      "result_id": "a0dc6a86-1b64-4607-b841-17d608be2d4b"
+    },
+    {
+      "claim_id": "8fb0150a-4c7f-4c69-9d5e-091de42dd124",
+      "result_id": "a0dc6a86-1b64-4607-b841-17d608be2d4b"
+    },
+    {
+      "claim_id": "c7f6d3c0-b214-46ef-af91-327ced2a7ed4",
+      "result_id": "796ed694-b90d-42c4-8f91-21c833b1e09b"
+    },
+    {
+      "claim_id": "af119265-b68e-4c65-8cc7-a74aa211cd5c",
+      "result_id": "b7ec4fac-a151-4d98-97cf-7d61a63766fc"
+    },
+    {
+      "claim_id": "8198beea-4303-4a73-9322-2c94dbd71767",
+      "result_id": "2fe723e3-d18a-4ae1-9a88-b0966ec1ee66"
+    },
+    {
+      "claim_id": "d67fb84c-6793-4081-a825-da08de251246",
+      "result_id": "2fe723e3-d18a-4ae1-9a88-b0966ec1ee66"
+    },
+    {
+      "claim_id": "a9e0f530-4f4c-4e06-adf1-ec17157814a2",
+      "result_id": "b31316ab-e24b-4737-a366-1abf8742a3a6"
+    },
+    {
+      "claim_id": "83dac2ac-0434-4ab7-a9d0-498421e2854c",
+      "result_id": "b31316ab-e24b-4737-a366-1abf8742a3a6"
+    },
+    {
+      "claim_id": "83b20f92-9cc0-47d9-96e8-19199dedf4f0",
+      "result_id": "b31316ab-e24b-4737-a366-1abf8742a3a6"
+    },
+    {
+      "claim_id": "b4e7906c-2249-4c7e-87a0-61f0ae9949f5",
+      "result_id": "b31316ab-e24b-4737-a366-1abf8742a3a6"
+    },
+    {
+      "claim_id": "fd93611c-278b-47da-8b48-54e83167586a",
+      "result_id": "ff4a850f-0a05-49cf-84b9-626df075c3fe"
+    },
+    {
+      "claim_id": "9a11507c-2d80-4029-85cf-86e7df8e7d9a",
+      "result_id": "ff4a850f-0a05-49cf-84b9-626df075c3fe"
+    },
+    {
+      "claim_id": "2d582403-eab4-4a9b-917d-99a870d21331",
+      "result_id": "449c5302-cf73-4c00-92d0-6028fbf278a5"
+    },
+    {
+      "claim_id": "5f41b1c8-950d-4990-a27d-63039e5d9146",
+      "result_id": "f717278a-8b09-4bc3-b378-7027e08a2d6d"
+    },
+    {
+      "claim_id": "c0fc8fe8-34ce-40ec-a2be-317e8b535507",
+      "result_id": "f717278a-8b09-4bc3-b378-7027e08a2d6d"
+    },
+    {
+      "claim_id": "5268a80a-9ca6-418a-9413-f199ad9024ee",
+      "result_id": "f717278a-8b09-4bc3-b378-7027e08a2d6d"
+    }
+  ],
+  "comparisons": []
+}

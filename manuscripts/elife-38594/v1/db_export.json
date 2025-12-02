@@ -1,0 +1,1958 @@
+{
+  "submission": {
+    "id": "35025edb-f13d-4388-bf3b-fd9603a70ef4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:40:42.474575Z",
+    "updated_at": "2025-12-02T07:40:42.474575Z"
+  },
+  "content": [
+    {
+      "id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "submission_id": "35025edb-f13d-4388-bf3b-fd9603a70ef4",
+      "content_type": "manuscript",
+      "content_text": "# Privatisation rescues function following loss of cooperation\n\n## Authors\n\n- Sandra Breum Andersen<sup>1</sup> ([ORCID: 0000-0002-7030-040X](https://orcid.org/0000-0002-7030-040X)) \u2020\n- Melanie Ghoul<sup>1</sup>\n- Rasmus L Marvig<sup>3</sup> ([ORCID: 0000-0002-5267-3173](https://orcid.org/0000-0002-5267-3173))\n- Zhuo-Bin Lee<sup>1</sup>\n- S\u00f8ren Molin<sup>2</sup>\n- Helle Krogh Johansen<sup>4</sup> ([ORCID: 0000-0003-0268-3717](https://orcid.org/0000-0003-0268-3717))\n- Ashleigh S Griffin<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Zoology University of Oxford Oxford United Kingdom\n2. Novo Nordisk Foundation Center for Biosustainability Technical University of Denmark Lyngby Denmark\n3. Center for Genomic Medicine Rigshospitalet Copenhagen Denmark\n4. Department of Clinical Microbiology Rigshospitalet Copenhagen Denmark\n5. Department of Clinical Medicine, Faculty of Health and Medical Sciences University of Copenhagen Copenhagen Denmark\n\n\u2020 Corresponding author\n\n## Abstract\n\nA single cheating mutant can lead to the invasion and eventual eradication of cooperation from a population. Consequently, cheat invasion is often considered equal to extinction in empirical and theoretical studies of cooperator-cheat dynamics. But does cheat invasion necessarily equate extinction in nature? By following the social dynamics of iron metabolism in Pseudomonas aeruginosa during cystic fibrosis lung infection, we observed that individuals evolved to replace cooperation with a \u2018private\u2019 behaviour. Phenotypic assays showed that cooperative iron acquisition frequently was upregulated early in infection, which, however, increased the risk of cheat invasion. With whole-genome sequencing we showed that if, and only if, cooperative iron acquisition is lost from the population, a private system was upregulated. The benefit of upregulation depended on iron availability. These findings highlight the importance of social dynamics of natural populations and emphasizes the potential impact of past social interaction on the evolution of private traits.\n\n## Introduction\n\nIdentifying mechanisms responsible for the maintenance of cooperation is a major achievement of evolutionary biology (Axelrod and Hamilton, 1981; Hamilton, 1963). We can predict in which conditions cooperation will thrive, and where it might pay to exploit cooperative neighbours. Evidence of tension between cooperative and cheating strategies are all around us in nature \u2013 for example, in the co-evolution between flowers and their pollinators\u00a0(Jand\u00e9r and Herre, 2010),\u00a0the policing and counter-policing behaviours of social insects (Foster and Ratnieks, 2000) \u2013 and in human society (Mathew and Boyd, 2011; Rand et al., 2011). Cases where these dynamics have resulted in the loss of cooperation are much less well understood, primarily because long-term consequences of cheat invasions are unobserved and unreported (Sachs and Simms, 2006). This is for the obvious reason that it is inherently difficult to detect a history of something that no longer exists. And also because it is generally the case that once cheating has gone to fixation, it is almost impossible for cooperation to re-invade (Axelrod and Hamilton, 1981). This is where most studies of social dynamics end.\n\nIndividuals are nevertheless under selection to survive the loss of cooperation. Consider a population where cheating has gone to fixation. If cooperation fulfilled an important function, this population may now be at risk of extinction (Fiegna and Velicer, 2003). To escape this fate, selection may favour individuals that can restore function by employing a \u2018privatisation\u2019 strategy \u2013 replacement of a mechanism that was once performed cooperatively as a group, with a selfish one that only benefits the actor (Bel, 2006). As such, we use the term privatisation as it is normally understood in common language to describe a switch in strategy from one that helps a whole group to achieve a goal to one where a goal is achieved by the actor alone. This differs from its use for describing the acquisition of property for future benefit by a group or an individual (Strassmann and Queller, 2014), the retention of public goods for individual use (Asfahl and Schuster, 2017), and for when public goods only are useable to a part of a community (Niehus et al., 2017). Privatisation could be a common occurrence in nature that has nevertheless been overlooked because there is no reason, a priori, to interpret private function as a result of past social interaction. It may also have been missed for the practical reason that we are required to track behaviour over many generations post-cheat invasion in a natural population. We overcome these difficulties by studying the evolutionary dynamics of a cooperative trait for more than an estimated 1.3 million generations (Supplementary file 1A), in a population of bacterial cells. We report the first observation (to our knowledge) of a natural population responding to cheat invasion by adopting a privatisation strategy and, therefore, avoiding the possibility of extinction.\n\nOur study population is comprised of Pseudomonas aeruginosa bacteria causing lung infection in patients with cystic fibrosis (CF). CF is a genetic disease that causes the build-up of dehydrated mucus in lungs and sinuses, which P. aeruginosa infects (Folkesson et al., 2012). The host actively withholds iron to limit infection, and, as a counter-measure, P. aeruginosa employ a range of different iron acquisition strategies (Poole and McKay, 2003). The primary mechanism relies on secretion of the siderophore pyoverdine (Haas et al., 1991; Konings et al., 2013). This has been demonstrated to be a cooperative trait, where iron-bound pyoverdine molecules are available for uptake not only by the producer, but also by neighbouring cells (Buckling et al., 2007; West and Buckling, 2003). P. aeruginosa also make a secondary siderophore, pyochelin, which is cheaper to produce but has a lower affinity for iron (Dumas et al., 2013). In contrast, the Pseudomonas heme uptake system (phu) is private, as the iron-rich compound heme is taken up directly without the secretion of exploitable exoproducts (Table 1). Additional mechanisms of uptake include the private ferrous iron transport system (feo; Table 1 [Cartron et al., 2006]), and the heme assimilation system (has). The has system produces a hemophore that can bind to heme, or hemoglobin that contains heme. In the closely related system of Serratia marcescens it is conditionally cooperative, as uptake is direct without the hemophore at high concentrations (Ghigo et al., 1997; L\u00e9toff\u00e9 et al., 2004).\n\n**Table 1.**\n Main iron uptake systems of P. aeruginosa.The pyoverdine and pyochelin systems produce siderophores which can steal Fe3+from host carriers. The conditionally cooperative has system produces a hemophore that can bind to heme, or hemoglobin that contains heme. The phu and feo systems are private. All systems have a specific receptor and uptake feeds back to increase system expression. The illustration shows a receptor in the cell membrane taking up an iron source (star). In a cooperative system a secreted public good (circle) binds the target and is taken up by the receptor, whereas a private system takes up the iron source directly.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>System</th>\n      <th>Mechanism</th>\n      <th>Social status</th>\n      <th>Target</th>\n      <th>Illustration</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pyoverdine</td>\n      <td>Public good; siderophore and specific receptor</td>\n      <td>Cooperative</td>\n      <td>Fe3+, host-bound</td>\n      <td rowspan=\"3\"></td>\n    </tr>\n    <tr>\n      <td>Pyochelin</td>\n      <td>Public good; siderophore and specific receptor</td>\n      <td>Cooperative</td>\n      <td>Fe3+, host-bound</td>\n    </tr>\n    <tr>\n      <td>has</td>\n      <td>Public good; hemophore and specific receptor</td>\n      <td>Conditionally cooperative or private</td>\n      <td>Heme, hemoglobin</td>\n    </tr>\n    <tr>\n      <td>phu</td>\n      <td>Specific receptor</td>\n      <td>Private</td>\n      <td>Heme, hemoglobin</td>\n      <td rowspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>feo</td>\n      <td>Specific receptor</td>\n      <td>Private</td>\n      <td>Fe2+</td>\n    </tr>\n  </tbody>\n</table>\n\nP. aeruginosa iron metabolism evolves during long term infection. Pyoverdine production has repeatedly been found to be lost during CF infection (Andersen et al., 2015; Jeukens et al., 2014; Konings et al., 2013; Martin et al., 2011), and the phu system has been observed to be upregulated late in infection (Marvig et al., 2014; Nguyen et al., 2014). A major challenge is to identify the selective pressures experienced in situ that cause such changes. Host adaptation, to accommodate for\u00a0example antibiotic pressure and resource limitations, is frequently predicted to be the primary force in pathogen evolution (Lieberman et al., 2011; Young et al., 2012). Experimentally recreating host conditions in vitro is challenging, given the complex interplay between spatial structure, host immunity and nutrient availability (Clevers, 2016), which we are only beginning to be able to measure (Koo et al., 2011). Clinical measurements may differ from experimental in vivo and in vitro findings (Cornforth et al., 2018), and studies using \u2018simple\u2019 experimental conditions do not always give comparable results to those that use more complex, and potentially more clinically relevant conditions (Harrison et al., 2017). In contrast, longitudinal sampling of patients to track in situ evolution provides an opportunity to infer selection without making a priori assumptions about the experienced environment. Evolutionary theory lets us make testable predictions to distinguish the effect of host adaptations and social interactions. With this approach we have shown that cheating is a major selective force in the loss of cooperative iron acquisition in the CF lung (Andersen et al., 2015).\n\nHere, we identified changes in iron uptake strategies from genome sequences and correlated these with the social environment (the P. aeruginosa clonal lineage infecting a host), and duration of infection. Specifically, we test two hypotheses: first, we ask whether an increase in cooperation facilitates the breakdown of cooperation in a natural population, and second, can cells survive the loss of cooperation by switching to a private, and, therefore, unexploitable mechanism for acquiring iron. Two collections of P. aeruginosa samples were used, covering 551 whole genome sequenced isolates from 64 Danish patients, of 55 clone types (Andersen et al., 2015; Markussen et al., 2014; Marvig et al., 2013; Marvig et al., 2015; Rau et al., 2012; Yang et al., 2011); allowing for the identification of patterns of convergent evolution. While the P. aeruginosa populations within patients are remarkably uniform at the clone type level, colonizers diversify during infection (Mowat et al., 2011; Winstanley et al., 2016), and lineages may occupy distinct niches at late stages (Jorth et al., 2015). The isolate collection has been shown to represent the genetic diversity well, with multiple genotypes co-occurring within individual patient samples (Sommer et al., 2016). A key step in our analysis is to categorise isolates with respect to their social environment, for example, presence vs absence of cooperators (pyoverdine producers). This is necessary for testing our hypothesis that iron acquisition strategy is influenced by the social environment. The likelihood that we do not capture all co-infecting strains in our sample, for example leading to mis-classification of isolates as belonging to an environment without pyoverdine, will homogenise the sample groups and hence obscure any differences. Sampling errors of this kind will, therefore, hinder our ability to detect an effect (Type I error).\n\n## Materials and methods\n\n### Isolate collections\n\nTwo collections of whole genome sequenced P. aeruginosa isolates were used, as described previously (Andersen et al., 2015). The transmissible clonetypes DK1 (46 isolates) and DK2 (54 isolates) were sampled from 28 CF patients between 1972 and 2012 (Jelsbak et al., 2007; Markussen et al., 2014; Marvig et al., 2013; Rau et al., 2012; Yang et al., 2011). Six previously unanalysed DK1 isolates were included (from patients P55M3, P24M2 and P30M0, Supplementary file 1B). Further, 451 isolates of 54 clonetypes from 36 young CF patients were used (the \u2018children\u2019s collection\u2019 (Andersen et al., 2015; Marvig et al., 2015), of which 10 were of the DK1 clone type). At each sampling time, 1\u20138 colonies were cultured from patient sputum, and stored at \u221280\u00b0 C (Johansen et al., 2012; Sommer et al., 2016). The sampling regimen for each patient is described in Supplementary file 1B, and Appendix 1\u2014figures 1 and 2. The two collections complement each other as one covers a long time period, with relatively few samples from each patient and of both early and late infection stages, whilst the other covers the first 10 years of infection by environmental clone types, with more extensive sampling within patients. In the children\u2019s collection there is limited transmission between patients, but some clone types infect multiple patients, and some patients are infected by multiple clone types either at the same time or in succession (Marvig et al., 2015). All but two patients, however, harbour only one dominant clone type at a time and the social environment is thus made up of clonal lineages sharing the same ancestor. The analysis of increased pyoverdine production was only performed on the children\u2019s collection, as described below.\n\nThe phylogeny of the 54 DK2 isolates has previously been reported by Marvig et al. (2013), and this was adapted for this study to phylogenetically map the order of mutations in regions of interest. To allow a similar analysis for the DK1 clone type, we used Snippy (Seeman, 2015) to identify SNPs in each of the 56 DK1 isolates relative to the PAO1 reference genome (RefSeq assembly accession GCF_000006765.1) and compared the SNPs of all the DK1 isolates to identify those that differed between the isolates. The SNPs were further filtered to only retain SNPs at positions covered by at least 10 reads in all isolates and exclude those where all isolates show more than 80% non-reference reads at the given position. Based on 4,639 SNPs within 2,614,892 sites, a maximum-likelihood phylogenetic tree was computed with RAxML version 8.2.11 (Stamatakis, 2014), with default settings using a general time reversible model of nucleotide substitution (option -m GTRCAT). The tree was rooted with the PAO1 reference genome.\n\nThe length of infection of each clone type in each patient was calculated. Clone types sampled only once from an individual patient were excluded (23 isolates of 22 clone types). For the transmissible clone types DK1 and DK2 the total length of infection across patients was used (39 and 36 years, respectively). This is a very conservative estimate of length of infection, as evolution occurs independently in different patients. To calculate the number of generations, a doubling time of 74 min was used for clonal lineages infecting for less than 6 years, 83 min for 6\u201324 years and 109 min for\u00a0>24 years based on the measurements of Yang et al. (2011).\n\n### Changes in pyoverdine production during infection\n\nWe tested if the appearance of pyoverdine non-producers is correlated with preceding upregulation. Measurement of pyoverdine production was carried out by fluorescence readings at 400/460 nm excitation/emission with a 475 nm cut-off following growth in iron-limited media (Andersen et al., 2015; K\u00fcmmerli et al., 2009). For each clonal lineage the baseline pyoverdine production was determined as that of the first isolate(s) of a clone type from a patient, and the production of all subsequent isolates of this clone type was compared to this. An isolate was classified as an over-producer if its production was\u00a0>30% higher than that of the first. This cut-off was chosen as\u00a0~95% of the isolates had a lower standard deviation between replicates. The data is available from Dryad (doi:10.5061/dryad.6963pj3). The analysis was performed on longitudinally sampled clone types from the children\u2019s collection only, as the DK1 and DK2 isolates were not sampled frequently within patients. Only non-producers evolved from a clonal lineage that produced pyoverdine at the beginning of the infection period were included. Therefore clone types DK1 (10 isolates, P36F2), DK11 (two isolates, P51M5), DK40 (two isolates, P73M4) and DK53 (10 isolates, P36F2) were excluded from the analysis, as they were \u2018chronic\u2019 clone types with no pyoverdine producers sampled from the young patients (Appendix 1\u2014figure 1; Andersen et al., 2015). As there were only three samples from P51M5, this whole patient was excluded from the analyses. In lineages with both over- and non-producers, over-producers were sampled before non-producers\u00a0in all but three cases. In two cases there was\u00a0<5 months between sampling, and we scored non-producers as occurring at the same time as overproducers. In one case the non-producer was sampled 2.95 years prior to the over-producer and scored as having occurred in the absence of an over-producer. The subsequent sampling of the over-producer, and an additional non-producer that shared the genotype with the first non-producer, was not included in the analyses (Appendix 1\u2014figure 1, P53M4). In two clone types two independent transitions to non-producers were observed (non-producing isolates harboured different pyoverdine mutations) and these were included as independent events (P44F5 and P14M4). We focus here on within-clone type dynamics, as temporal overlap of longitudinally sampled clone types only occurred in two patients (Appendix 1\u2014figure 1; Andersen et al., 2015).\n\nWe categorized each clone type in individual patients as harbouring over-producers or not. If an over-producer was present, the length of time from that sampling to a non-producer was observed, or till the last sample was collected from the patient, was noted. Clone types without non-producers were classified as right-censored. The same was done for patients without over-producers. In total, 45 clonal lineages were followed covering 404 isolates of 33 clonetypes from 35 patients (Appendix 1\u2014figure 1; some clone types occur in multiple patients, and some patients are infected by multiple clone types [Marvig et al., 2015]). The timing of sampling of non-producers was analysed with the \u2018survival\u2019 package in R, which takes into account the sampling extent of a clonal lineage, that is both the timing and frequency of events (R Core Team, 2013; Therneau, 2015).\n\n### Identification of mutations in the pyoverdine, pyochelin, phu, has and feo systems\n\nMutations in the pyoverdine (pvdQ-pvdI\u00a0+pvdS pvdG+pvcA ptxR+fpvB), the pyochelin (ampP-pchA), the phu (prrF1-phuR), the has (PA3404-hasI) and the feo systems (PA4357-feoA) were identified previously from Illumina GAIIx or HiSeq2000 reads (Andersen et al., 2015; Markussen et al., 2014; Marvig et al., 2013; Marvig et al., 2015; Rau et al., 2012; Yang et al., 2011) (Supplementary file 1C-D). Mutations of iron systems in the six new DK1 isolates were identified as described previously (Andersen et al., 2015), by mapping reads against a DK1 draft genome (Markussen et al., 2014). Mapping of reads revealed low sequencing depth of the hasD (required for hemophore secretion) and hasS (the has anti-sigma factor) genes, likely due to repetitive regions. These were unsuccessfully attempted amplified by PCR. Mutations were categorized as synonymous (syn) or non-synonymous (ns) SNPs, insertions or deletions (indels), or intergenic. We tested for a bias in which genes in each operon were mutated with [Poisson test, P(X\u00a0\u2265\u00a0changes observed)~Poisson distribution (pois) (X; changes expected)\u00a0<\u00a00.05].\n\nWe identified the order of mutation across the different iron uptake systems, with a system classified as mutated by the presence of ns SNPs or indels in any gene in the system. For pyoverdine, the presence of mutations was compared to the actual measurements of production; the two measures are highly consistent (Andersen et al., 2015) but when incongruent the phenotype was used. For the phu region intergenic phuS//phuR mutations predicted to cause receptor upregulation were included, and when occurring without other phu mutations these were recorded separately. Transitions were identified within clonal lineages, that is if an isolate for example\u00a0had a pyoverdine mutation and measured loss of production, and a subsequent isolate had the same pyoverdine mutation in addition to a pyochelin mutation, this was considered a transition from wild-type (WT) to loss of pyoverdine, to loss of pyochelin. If for example a phu and pyochelin mutation was observed for the first time in the same isolate the exact order could not be inferred. In the transmissible clone type DK2 pyoverdine production was detected to have been lost in an isolate from 1973 and the mutation and phenotype was found in all later isolates. Subsequently, independent clonal lineages for example accumulate phu mutations. In the analyses this was counted as one loss of pyoverdine, and then multiple independent phu mutations. We calculated the expected order of mutation, equally weighted by the size and number of mutations of the different systems. We tested, as described above, whether this was different from the observed, using only cases where there was a clear order of mutations. The social environment, that\u00a0is the genotypes of co-occurring isolates, was not considered in this analysis.\n\nFor the phu system, we located mutations in the phuR receptor gene to functional regions (the N-terminal-domain, periplasmic turns, transmembrane strands or extracellular loops) using a predicted structure of the receptor (http://bioinformatics.biol.uoa.gr//PRED-TMBB [Bagos et al., 2004]). For each domain in the receptor we calculated the expected number of non-synonymous amino acid changes, as the proportion the domain comprises of the entire protein times the observed number of changes. Whether the observed changes in each domain differed significantly from the expected was calculated as described above.\n\n### Transitions between public and private iron uptake\n\nTo test if the appearance of intergenic phuS//phuR mutations that cause upregulation of the phu system was correlated with overall loss of pyoverdine production in the social environment we categorized each independent acquisition of these mutations as having occurred in the presence or absence of measured pyoverdine production, by the focal isolate and co-occurring isolates. In the absence of pyoverdine production the time between loss of production and occurrence of mutations was estimated. The analysis was performed on longitudinally sampled clonal lineages from both collections of isolates, that is lineages with at least two isolates with or without pyoverdine production. Further, three cases where the loss of pyoverdine production and phuS//phuR mutations were observed in the same isolate were also included. Clonal lineages that did not acquire phuS//phuR mutations were classified as right-censored. For DK1 and DK2 we used monophyletic clades with and without mutations as independent clonal lineages (Blue lines in Appendix 1\u2014figure 3 and 4). Branches with single isolates were not included unless they showed loss of pyoverdine from the social environment or phuS//phuR mutations (inclusion of these did not significantly affect the result of the test). We included isolates of DK53 where no WT pyoverdine producer was sampled, but phuS//phuR mutations were inferred by comparison to PAO1 (Supplementary file 1C).\n\nThe phuS//phuR mutations only occurred in isolates that had lost pyoverdine production (Appendix 1\u2014figure 3 and 4). In three instances these, however, co-occurred in the patient with isolates that produced pyoverdine (Appendix 1\u2014figure 5 and 6). The producers and non-producers with phu upregulation are unlikely to have interacted at the time when the iron system mutations occurred in two of these. In patient P30M0, infected with clone type DK1, the cooperating isolates were sampled from the patient\u2019s sinuses only, while the non-producers with phu upregulation came from lung samples. In patient P28F1, two lineages of clone type DK1 co-occurred. One had been transmitted from another patient, where pyoverdine production was lost, and phu likely upregulated, prior to transmission and establishment of a co-infection. In patient P82M3 a pyoverdine producer and an isolate with a phuS//phuR mutation, both of clone type DK32, were found in the same lung sample. The latter harbours the most common phuS//phuR mutation (G 146 upstream//35 upstream A, Supplementary file 1C), which is located outside the phuR promoter (Marvig et al., 2014). It is the only isolate to have this phuS//phuR mutation in isolation, all others with it have an additional SNP, and the effect of it is unknown (but see below).\n\nThe timing of sampling of mutants was analysed with the \u2018survival\u2019 package in R (Therneau, 2015). We are likely to over-estimate the length of time to mutation, as patients chronically infected with the transmissible DK1 and DK2 clone types were infrequently sampled (Markussen et al., 2014; Marvig et al., 2013). In these cases, with several years between longitudinal samples, a mutation may only be detected years after occurring.\n\n### Uptake of heme following phuS//phuR mutations\n\nWe tested if the presence of phuS//phuR mutations gives a growth advantage in iron-limited media supplemented with heme at different concentrations, using an isogenic pair of DK2 isolates only differing in the presence of a 1 bp phuS//phuR deletion (Marvig et al., 2014). Three biological replicates of each isolate were cultured in liquid LB media for 24\u201348 hr, so that all cultures reached an OD600 above 0.1. Cultures were subsequently standardised to a starting OD600 of 0.001, in iron-limited CAA media following K\u00fcmmerli et al. (2009), without heme or supplemented with 1, 2.5, 5 or 10 \u03bcM heme as an iron source (BioXtra porcine hemin\u00a0\u226597.0%, Sigma-Aldrich). Of each culture 200 \u03bcL were inoculated in 96 well plates. Plates were sealed with a breathable membrane to avoid evaporation and incubated in a plate reader measuring OD600 every 30 min for 48 hr. Growth curves were plotted in Excel and the average maximum OD600 of the three replicates calculated. The difference in max OD600 between the isolates with and without the phuS//phuR mutation at the various heme concentrations was analysed in R with a Two-Way ANOVA test with post hoc comparisons with Tukey HSD (R Core Team, 2013).\n\nWe also compared growth of pairs of clinical isolates with phuS//phuR mutations matched to their closest genetically related isolate without mutations. The phuS//phuR mutations occurred in three different clone types without additional phu mutations (DK1, DK2 and DK32, highlighted in yellow in Supplementary file 1C). Six isolates with mutations were matched with four closest relatives without, because DK2 in two instances had independent phuS//phuR mutations in two closely related isolates. The WT isolate for these pairs was used to make the isogenic pair described above, and the mutation of one of these clinical isolates moved to this background (P0M30-1979 and P173-2005; Appendix 1\u2014figure 7; Marvig et al., 2014). One additional DK2 isolate with a mutation was lost from the collection, and only available as sequence reads (P80F1; Appendix 1\u2014figure 4 and Supplementary file 1C). Growth was measured as described above with 2.5 or 5 \u03bcM heme as an iron source, and differences in max OD600 within a pair were compared with a t-test in R (R Core Team, 2013).\n\n## Results and discussion\n\n### More cooperative populations are more vulnerable to exploitation\n\nThe environmental clones that infect CF patients produce pyoverdine (Andersen et al., 2015) but what happens as they transition to life in a host? We compared pyoverdine production between isolates sampled at different time points of infection in iron-limited media, in which cells must produce pyoverdine to avoid iron starvation. In some clonal lineages of P. aeruginosa, defined as longitudinally sampled isolates of the same clone type that share a recent ancestor, pyoverdine production was maintained for\u00a0>30 years of CF infection: in the 12 clonal lineages of the transmissible clone type DK1 that were followed for\u00a0>30 years there were five independent losses of pyoverdine production but three clonal lineages maintained production (Andersen et al., 2015); Appendix 1\u2014figure 3, and below). Limited diffusion of secreted pyoverdine, as is likely in viscous CF sputum, impairs the ability of potential cheats to exploit and may contribute to stabilize cooperation in these lineages (Julou et al., 2013; Kummerli et al., 2009); although there may be significant exchange between spatially distinct microcolonies (Weigert and K\u00fcmmerli, 2017).\n\nWhen analysing the isolates from 35 frequently sampled young patients of 33 clone types (some clone types infect multiple patients and some patients harbour multiple clone types), we found that pyoverdine production increased in 36% of clonal lineages within the first two years of infection. Overall, these \u2018super-cooperator\u2019 isolates, which had\u00a0>30% higher production than isolates initiating infection, were detected in 25 of 45 independent clonal lineages (55%; Figure 1), and on average sampled 1.89\u00a0\u00b1\u00a01.79 st. dev. years into the infection. This suggests that upregulation is initially favoured, likely by iron limitation or inter-species competition. In CF patients, P. aeruginosa frequently co-infects with Staphylococcus aureus (Folkesson et al., 2012), and co-culture in vitro causes an upregulation of pyoverdine production (Harrison et al., 2008). When in co-infection, iron sequestering can have the additional benefit of making it unavailable for S. aureus or other competitors (Leinweber et al., 2018; Niehus et al., 2017). Increased production could also be part of a general acute infection phenotype, as either a pleiotropic side-effect or a beneficial trait (Coggan and Wolfgang, 2012). For six out of the 25 lineages with super-cooperators we identified candidate mutations in global regulatory and quorum sensing genes that likely cause increased production of pyoverdine as well as other virulence factors, such as pyochelin, pyocyanin and alginate (Supplementary file 1E). For the remainder, super-cooperators produced pyoverdine at a consistently higher rate than their ancestors but the genetic basis of upregulation was unclear.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38594/elife-38594-fig1-v1.jpg)\n\n**Figure 1.:** Inverse Kaplan-Meier graph showing that pyoverdine non-producers are found more often in the presence of super-cooperators (dotted line, n\u00a0=\u00a025 representing 24 clonal lineages in patients, one of which had two independent losses of pyoverdine production), compared to when super-cooperators are absent (solid line, n\u00a0=\u00a022, representing 21 clonal lineages in patients, one of which had two independent losses).\u00a0Circles indicate when sampling of clonal lineages stopped, without the observation of lost pyoverdine production. Insert shows that a transition from wild-type (WT) production to super-cooperation (pvd+) was observed in 24 clonal lineages, followed by nine independent occurrences of non-producers. Non-producers evolved in the absence of super-cooperators five times. In total, 33 clone types infecting 35 patients were followed.\n\nDespite the potential benefits of pyoverdine production, the presence of super-cooperators appears to weaken long-term stability of cooperation in the lung. In 12 out of the 35 patients, we previously observed the appearance of mutants that have lost the ability to synthesise pyoverdine (Andersen et al., 2015), sampled on average 3.06\u00a0\u00b1\u00a02.29 st. dev. years into infection. Here, we found that the likelihood of these non-producers arising was significantly higher in the presence of super-cooperators [Survival analysis, \u03c72 (2, N\u00a0=\u00a047)\u00a0=\u00a05.7; p\u00a0<\u00a00.05; Figure 1]. Non-producers were present in four out of 21 clonal lineages without (19%, on average 2.60\u00a0\u00b1\u00a02.45 st. dev years into infection) and in eight out of 24 lineages (disregarding one where the non-producer was sampled prior to the super-cooperator) with super-cooperators (33%, on average 3.32\u00a0\u00b1\u00a03.32 st. dev years into infection and 1.45\u00a0\u00b1\u00a01.39 st. dev. years after sampling of a super-cooperator). There was no significant difference between the time of sampling of non-producers between lineages with or without super-cooperators (Welch Two Sample t-test, t\u00a0=\u00a0\u22120.54, df\u00a0=\u00a08.01, p\u00a0=\u00a00.61). From the data set it is not clear whether cheats evolve from super-cooperators or directly from isolates with WT pyoverdine production, as the genetic basis of over-production is unknown.\n\nWhy is upregulation of pyoverdine production associated with the subsequent loss of this trait? Non-producers appear to be favoured as a result of exploiting the pyoverdine production of neighbouring cells \u2013 a strategy referred to as cheating (Ghoul et al., 2014a). We have previously shown that non-producers in the lung acquire mutations in a pattern consistent with a cheating strategy, as opposed to one expected from redundancy, in that they retained the pyoverdine receptor only if producers were present (Andersen et al., 2015). In other words, non-producers lose the capacity to contribute but retain the ability to benefit from pyoverdine, as long as it is being supplied by cooperative neighbours. The relative fitness of cheats is predicted by theory to be greater when there are higher levels of cooperation in a population, because their competitors are bearing a higher cost (Ross-Gillespie et al., 2007). This prediction has been shown to hold in empirical tests (Ghoul et al., 2014b; Harrison et al., 2008; Jiricny et al., 2010). Hence, super-cooperators are predicted to be especially vulnerable to exploitation and invasion of cheats. While isolates with a WT level of pyoverdine production may also benefit from the presence of super-cooperators, the larger production cost differential between non-producers and super-cooperators gives non-producers a greater advantage than WT producers. The pattern of upregulation, followed by loss, is likely to be applicable to the evolution of other exoproducts during infection.\n\n### Evolution of iron acquisition systems in the lung \u2013 the sequence of events\n\nHow do the changes in cooperative pyoverdine production relate to the overall iron metabolism of the cells? Comparison of the accumulation of mutations across five different iron uptake systems (Table 1) and measurement of pyoverdine production showed that the appearance of pyoverdine non-producers is the first change in iron metabolism observed in most clonal lineages, in both isolate collections. Loss-of-function of the cooperative pyoverdine system occurred earliest in 16 out of 25 clonal lineages where the phenotypic measurements and sequence analysis provided a clear order of systems affected (Figure 2; Supplementary file 1F). These were observed to occur on average 3.06 years after the first sampling of the clone type in the young patients (n\u00a0=\u00a011 clonal lineages in nine patients), and between 1\u201339 years after infection for the more rarely sampled transmissible clone types (n\u00a0=\u00a05 clonal lineages in five patients). When weighed by the high mutation rate of the system, reflecting a strong selection pressure, and its large size, this is not unexpected [Poisson test, P(X\u00a0\u2265\u00a016) \u223c pois (X; 14.69)\u00a0>\u00a00.05), Figure 2; Supplementary file 1D].\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38594/elife-38594-fig2-v1.jpg)\n\n**Figure 2.:** Wild type-like (WT) isolates colonize patients, and subsequent loss of cooperative pyoverdine production (pvd-) is the most common change in iron metabolism (n\u00a0=\u00a025), compared to mutations expected to affect the pyochelin, phu and has systems negatively (pch-, phu-, has-). Loss of pyoverdine production in clonal lineages is followed by intergenic phuS//phuR mutations, predicted to upregulate the private phu system, significantly more often than expected by chance (phu+, n\u00a0=\u00a09). Colour indicates iron uptake system (green\u00a0=\u00a0pyoverdine, yellow\u00a0=\u00a0pyochelin, dark red\u00a0=\u00a0intergenic phuS//phuR, orange\u00a0=\u00a0phu (either a mix of phuS//phuR and other phu mutations, or only ns SNPs), blue\u00a0=\u00a0has). The occurrence of has mutations may be underestimated due to low sequencing depth of two genes. The figure shows only transitions where there was a clear order in which systems were affected, see Supplementary file 1F for all transitions.\n\nMutation of the cooperative pyochelin system first was found not to differ from that expected given a random distribution of mutations [Poisson test, P(X\u00a0\u2265\u00a06) \u223c pois (X; 5.14)\u00a0>\u00a00.05), Figure 2; Supplementary file 1D]. The conditionally private or cooperative has heme uptake system was found to acquire few mutations during infection. It remains to be tested if this is because maintenance of the system is favoured by selection, or if selection for loss is relatively weak. The private feo system is rarely mutated (Supplementary file 1D) and has been suggested to be of increased importance as conditions turn microanaerobic during infection (Hunter et al., 2013).\n\nAcross both isolate collections we observed pyoverdine cheats appear 14 times without going to fixation within the patient during the sampling period, but further recorded eight cases where no producers were sampled a year prior to, or after emergence a non-producer, and two clonal lineages from where no producers are sampled at any point. This is the potential extinction scenario of cheat invasion. However, because we have continued to sample after this event, we can observe how the population responds to this potentially catastrophic situation. One of these events for example\u00a0occurred in the transmitted clone type DK2 that was subsequently sampled from 16 patients over 35 years. And because cheat invasion is not inevitable, we can compare dynamics in lungs with and without availability of pyoverdine.\n\n### Cheat invasion is associated with a subsequent switch to private iron uptake mechanism\n\nAfter cooperation was lost from a clonal lineage, and only if it was lost, we observed that iron uptake was privatised (Figure 3). This was achieved by upregulation of the private phu system. The phu system targets the iron-rich heme molecule, which is taken up directly through a membrane-bound receptor PhuR (Table 1; Ochsner et al., 2000). Increased expression of the phu system results from intergenic mutations between the phuS gene encoding a heme traffic protein, and the receptor gene phuR (phuS//phuR mutations; Marvig et al., 2014). In the isolate collections, a total of 29 SNPs and two indels accumulate in the phuS//phuR region. Eight of these mutations in the phuR promoter have been found to cause a significant upregulation of promoter activity, and one of these has further been shown, in an isogenic pair, to provide a growth benefit to the carrier when heme is available as an iron source (Marvig et al., 2014); see also below). These specific mutations were found to arise significantly more frequently than expected by chance following the loss of pyoverdine production [Poisson test, P(X\u00a0\u2265\u00a05) \u223c pois (X; 0.39)\u00a0<\u00a00.01); Figure 2]. In three patients, non-producing isolates with phuS//phuR mutations were sampled at the same time as pyoverdine producers, however in two of these the producer and non-producers were unlikely to interact, and in the third the phuS//phuR mutation occurred outside the phu promoter region with unknown effects on heme uptake (but see Appendix 1\u2014figure 7). We thus conclude that phu upregulation takes place when pyoverdine production is lost from the social environment. Many of the isolates with phuS//phuR mutations also harboured pyoverdine receptor mutations that eliminate the possibility to cheat (6 out of 7 in DK1, 7 out of 7 in DK2, 1 out of 2 in DK53, 0 out of 1 in DK32; Appendix 1\u2014figure 3\u20136; Andersen et al., 2015). Knock-out of the pyoverdine receptor is, however, not expected to be a selective force in phu upregulation. Rather, the data suggest that both occur because pyoverdine is no longer available in the environment, selecting for privatisation of iron uptake and elimination of the costly receptor (Andersen et al., 2015).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38594/elife-38594-fig3-v1.jpg)\n\n**Figure 3.:** Inverse Kaplan-Meier graph showing that phuS//phuR mutations are observed 15 times when pyoverdine is absent from the social environment (solid line, n\u00a0=\u00a026), and only once when pyoverdine is available in the social environment (dashed line, n\u00a0=\u00a047, see text).\u00a0The mutations are only found in clonal lineages that do not produce pyoverdine. Circles indicate when sampling of clonal lineages stopped, without the observation of phuS//phuR mutations. Insert shows that a transition from wild-type pyoverdine production (WT) to no production (pvd-) was observed 22 times in clonal lineages, while phuS//phuR mutations occurred 16 times independently (phu+), 13 of which were after loss of pyoverdine production from the environment. The order could not be inferred in three cases, in one of which the isolate co-occurred with pyoverdine producers.\n\nSocial interactions are unlikely to be the only selection pressure influencing dynamics in iron acquisition strategies. Changes in iron uptake strategy might more readily be expected to reflect changes in the lung environment as the availability of iron in different forms increases with disease progression (Hunter et al., 2013). And while iron is found to be equally available in its oxidized ferric (Fe3+) and reduced ferrous forms (Fe2+) in early infection, there is a skew towards the reduced form later, which the feo system targets (Hunter et al., 2013). Heme and hemoglobin are also present in the sputum (Ghio et al., 2013), and availability has been speculated to increase as the lung tissue degrades (Marvig et al., 2014), as evidenced by increased coughing up of blood, termed hemoptysis, with age (Thompson et al., 2015). As such, pyoverdine may be most efficient early in infection, and phu only advantageous later as lung tissue degrades and/or alternative sources of iron become more or less abundant. However, the patterns we observe are not consistent with this explanation. If pyoverdine production is maintained, the phuS//phuR genotype remains unaltered from colonization, even after more than 30 years of infection (Figure 3). The phuS//phuR mutations, responsible for upregulating the private phu system, are only observed in non-producers, and in 15 out of 16 cases after the loss of cooperation in the population [Survival analysis, \u03c72 (2, N\u00a0=\u00a073)\u00a0=\u00a011.7; p\u00a0<\u00a00.01; Figures 3 and 4], occurring between 0 to 35 years after the loss of pyoverdine production. Upregulation of private iron uptake can, therefore, be predicted from the social environment, not duration of infection and associated changes in the lung environment.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38594/elife-38594-fig4-v1.jpg)\n\n**Figure 4.:** Following infection (n\u00a0=\u00a045 clonal lineages of 33 clone types), pyoverdine production is frequently upregulated (n\u00a0=\u00a025). Cheaters are significantly more likely to invade following upregulation. Following loss of pyoverdine production in the social environment (n\u00a0=\u00a026 non-producing clonal lineages of 6 clone types, from eight independent losses of production and two clonal lineages from which no pyoverdine producers were sampled), the phu system is frequently upregulated by intergenic phuS//phuR mutations (15 times), while this very rarely occurs (one time) when pyoverdine is produced in the social environment (n\u00a0=\u00a047 producing clonal lineages of 32 clone types).\n\n### Why is private heme uptake only upregulated if cooperation is lost?\n\nThe fact that we only observe upregulation of the phu system if pyoverdine production has been lost suggests that privatisation is not universally beneficial but may instead represent a final recourse when other mechanisms are no longer functioning. P. aeruginosa iron uptake is finely controlled by feedback loops, in response to environmental iron concentrations and need (Vasil and Ochsner, 1999). As iron is toxic at high concentrations (Anzaldi and Skaar, 2010; Touati, 2000), an indiscriminate upregulation of one system could be a significant disadvantage in environments where iron concentrations fluctuate. We, therefore, tested whether the growth benefits of phu upregulation (by phuS//phuR mutations) were dependent on iron availability, in the form of heme which the phu system targets. We examined the growth difference between a clinical isolate that had lost pyoverdine production, and an isolate, isogenic but for a clinical phuS//phuR mutation that cause an upregulation of the heme receptor gene phuR (Marvig et al., 2014). The experiment was performed in iron-limited media supplemented with heme at biologically relevant concentrations, which ranged from\u00a0<1 \u03bcM typical of healthy individuals, across 2.5 \u03bcM, 5 \u03bcM to 10 \u03bcM typical of CF patients (Ghio et al., 2013).\n\nConsistent with our hypothesis, we find that phu upregulation is only beneficial at a narrow range of intermediate heme concentrations. There was a significant growth difference between the isolates and heme concentrations, and an interaction effect (Two-Way ANOVA; Interaction term: Isolate*Heme: F\u00a0=\u00a048.11, df\u00a0=\u00a03, p\u00a0<\u00a00.01; Figure 5; Supplementary file 1G). At 2.5 \u03bcM heme the isolate with an upregulated phu system achieved a higher density (Tukey HSD, padj\u00a0<0.01, Figure 5), consistent with previous findings (Marvig et al., 2014). In contrast, at 5 and 10 \u03bcM the isolate without upregulation had an advantage (padj\u00a0<0.05, Figure 5). No growth was observed in the absence of heme, and at 1 \u03bcM there was no significant difference in growth between the isolates but a trend for the WT to do better (padj\u00a0=\u00a00.073). This suggests that phuS//phuR mutations lead to increased heme uptake that is beneficial at low external concentrations (>1 and<5 \u03bcM heme) but detrimental at high concentrations (>5 \u03bcM heme). Analyses of pairs of clinical isolates with and without phuS//phuR mutations gave less clear results, but showed a similar pattern of a benefit of phuS//phuR mutations at low concentrations of added heme (Appendix 1\u2014figure 7). If iron availability increases during infection, an initially beneficial upregulation of heme uptake would turn toxic. In the phu system we found a significant bias towards mutations of the phu receptor gene phuR (Poisson test, P(X\u00a0\u2265\u00a024) \u223c pois (X; 10.69)\u00a0<\u00a00.05; Supplementary file 1D). These were not randomly distributed but primarily found in the extracellular loops of the phu receptor, that initiate the uptake of heme (Noinaj et al., 2010; Smith et al., 2015) [Poisson test, P(X\u00a0\u2265\u00a015)~pois (X; 7.28)\u00a0<\u00a00.05; Figure 6]. If there is selection to reduce iron concentration within cells, these may, therefore, represent compensatory mutations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38594/elife-38594-fig5-v1.jpg)\n\n**Figure 5.:** An isogenic pair of isolates differing only in a 1 bp phuS//phuR deletion was grown in iron-limited media supplemented with heme at 1\u201310 \u03bcM. The clinical isolate without the mutation, that does not produce pyoverdine (WT), had a significant higher maximum OD600 after 48 hr growth at 5 and 10 \u03bcM, whereas the mutant (phu+) grew best at 2.5 \u03bcM. There was no significant difference at 1 \u03bcM. Boxplots show median value, and the interquartile range\u00a0\u00b125%. The * marks a significant difference at p\u00a0<\u00a00.05.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/38594/elife-38594-fig6-v1.jpg)\n\n**Figure 6.:** The figure shows the \u03b2-barrel structure spanning the cell membrane (horizontal lines) with transmembrane strands (grey bars), extracellular loops (labelled L1-L11) and periplasmic turns (bottom loops). Green circles indicate the location of non-synonymous SNPs, the smallest circles denoting one mutation and the largest four. Mutations were significantly biased towards the extracellular loops.\n\n### Conclusions\n\nBacterial cells will be under selection to adapt to the host environment, including antibiotic pressure (Lieberman et al., 2011). The observations we report here, however, demonstrate the errors of interpretation that can arise from assuming that bacterial cells are driven entirely by the evolutionary imperative to survive in the host. As in all other organisms, fitness is also determined by the ability to compete with members of the same species, and these two evolutionary drivers \u2013 host adaptation and competition \u2013 do not always coincide. Our results show that the initial upregulation of cooperation, selected by either the environmental conditions, competition or as a pleiotropic side-effect, facilitates cheating. The subsequent privatisation of iron uptake is a response to the loss of cooperation, not simply an adaptation to iron availability in the host as previously suggested (Marvig et al., 2014), and as we show this carries its own costs. The effect of the social environment on iron acquisition mechanism remains statistically detectable despite the noise from variation in patient age, sex, infection and treatment. In a clinical system like this, failure to appreciate these factors can lead to misinterpretation of how bacterial cells are influenced by the host environment and, therefore, impair necessary understanding for the development of intervention strategies (Leggett et al., 2014).\n\nEvolutionary theory clearly predicts that any adaptation involving cooperation can be vulnerable to exploitation, irrespective of its benefits (Axelrod and Hamilton, 1981). But this is often overlooked when it is difficult to characterize the selective environment, as for example, inside a human host. By longitudinal sampling of bacterial populations, we were able to observe the consequences of cheat invasion for an essential trait and show that switching to a private strategy can provide bacterial cells with an evolutionary alternative. This observation highlights the importance of considering potential constraints imposed by social interactions: if a private trait is expressed it may not be the most efficient in a given environment, but simply the final recourse in a population with a history of exploitation.\n",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "6bb3f954-78e6-4b03-9a88-1b4f93572486",
+      "submission_id": "35025edb-f13d-4388-bf3b-fd9603a70ef4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Otto Cordero\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38594.032](https://doi.org/10.7554/eLife.38594.032)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Privatisation rescues essential function following loss of cooperation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Ian Baldwin as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Angela Wilks (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript by Andersen et al. describes the evolution of Pseudomonas aeruginosa in the lungs of people with CF with a particular focus on evolutionary contingency around cooperative iron acquisition systems. The authors analyze isolates obtained from CF patients sputum in two cohorts of patients with longitudinal sampling and conclude that a series of invasions caused by social evolution take place in the CF lung: first, social cheats invade in siderophore (public good) producing populations, leading to the demise of public good producers. Surprisingly, this event is followed by the raise in frequency of private iron acquisition strategies, which should in principle be able to compete against cheaters. This type evolutionary dynamics, reminiscent of a rock-paper-scissors game, are fundamentally interesting and potentially relevant in the context of pathogenesis, as they could shed light on the selective pressures that impact the evolution of Pseudomonas aeruginosa in CF patients.\n\nAll reviewers felt this was a potentially interesting and exciting study, however, a number of serious issues were raised by the reviewers (not by reviewer #3, who was brief but positive). These issues require your careful consideration before publication. Many of them revolve around the presentation of the data, which we felt lacked the required details. This lack of detail led to confusion by some of the reviewers, as you will see in their questions below. To be able to consider this paper for publication, we strongly encourage the authors to provide a better overview of the raw data in the main text (e.g. number of isolates, origin, time of isolation, numbers of isolates per patient, phenotypes tested, etc.). This could be done possibly through a dedicated figure or table.\n\nWe also found the style of writing to often be too colloquial. Specifically, frequent use of phrases like \"game over\", \"dead end\", \"last resort\" obscured the message of the paper. Other examples include \"Life, however, goes on\" and there are more. Along the same lines, the Abstract seems to sacrifice clarity for \"impact\". This needs to be corrected. See comment 6.\n\nOne of the reviewers also questioned the novelty of the results, relative to previous findings by the same group. The authors need to clarify their main new data relative to previous work.\n\nWe expect to see a detailed point by point reply to the comments you will read below. Given that many of the questions were related to a lack of clear scientific presentation, once we receive your comments we will have to reevaluate the novelty and significance of the findings.\n\nEssential revisions:\n\n1) Clarity of the data: It is very hard to follow the numbers in this work! Numbers are differently represented between figures and text and often do not seem to match. For example, In Figure 1 and the relevant text they claim they observed 14 pvd- cheating events (9+5), while later on they claim they had 23 events (14+9) (subsection \u201cEvolution of iron acquisition systems in the lung \u2013 the sequence of events\u201d). What is the relation between these two numbers? The authors need to find a better way to represent the data in a clearer fashion. We strongly suggest to have a new figure with a visualization of the number of strains per time point, per patient and their phenotypes/genotypes.\n\n2) Relation to previous work by the same group: The main problem I see here is the relation between this work and the mBio paper by Marvig et al., 2014, and the PNAS paper by Andersen et al., 2015, both done by the same research groups involved in this work and the latter with the same first author as the current work. The authors often refer to these two papers in the current manuscript, but reading these two papers reveal that most of the basic observations mentioned in the current text were already made in these two papers. It is therefore unclear what is the novelty of this manuscript.\n\na) Cheating on pyoverdine production: Andersen et al., 2015, have shown that pvd mutations first arise in pvd production pathway (mainly pvdS) and later in the reception pathway, only once the pvd- production mutants are fixed in the population (based on other strains obtained in the same sample and in previous samples of the same patient). They hypothesize that production mutants are cheaters and that pvd reception mutants are favorable due to the cost of reception in the absence of pvd-related benefit. Several points should be made with respect to this manuscript.\n\ni) First, it seems that the basic observation of cheating on pvd production has already been made. The only thing that is added in this manuscript is the observation regarding the relation between cheating and super-producers, to which I have several reservations (see separate point below).\n\nii) In the current work, only production mutants are discussed, while reception mutants are not mentioned at all. Since both pvd reception mutants and phu+ mutants are correlated with fixation of the pvd production mutants, it is surprising that reception mutants were not discussed and compared with phu+ mutants.\n\nb) Marvig et al., has already identified the phu+ promoter mutation and the fact that they arise only in pvd production mutants, though their work was done on a smaller number of lineages. Therefore, it is not clear what is the added value of the current work? Is it the demonstration that phu+ alleles are only beneficial at low heme levels (see comments on the experiments in a separate point)? Is the claim for novelty in this work depends on the enlarged statistical power? Or is it the claim that phu+ promoter mutants arise only when pvd+ phenotype is completely eliminated from the social environment and not only from the specific lineage? See comments on sociality below for the last option.\n\nAltogether, the distinction between the current work and previous works of the group are not sufficiently clear.\n\n3) Social interaction: It is hard to understand when do the authors discuss social environment within the given lineage (i.e., when discussing interaction between a mutant and its ancestor) and when do they discuss social environment based on multiple strains sampled from the same patient at the same time. While the authors claim social explanations for their observation, much of the analysis in the text is not based on direct social observations, but on comparisons between a mutant and its ancestors (e.g., Figure 1, 2, 3). The two places where a social context is mentioned are:\n\na) When they discuss the social environment of pvd- cheats, the authors mention that 14 events are not fixed while 9 other are fixed (subsection \u201cEvolution of iron acquisition systems in the lung \u2013 the sequence of events\u201d).\n\nb) Later, the authors mention that the phu+ mutations occurred significantly more when Pvd was lost, but here it is unclear whether they mean that Pvd was lost from the genome of the strains, or from the total social environment (subsection \u201cCheat invasion is associated with a subsequent switch to private iron uptake mechanism\u201d), as they refer to Figure 2 which, to the best of my understanding, discussed only changes within a given genome and not the social context. On the other hand, they specifically mention that in all but three cases (I guess therefore that in 31-3=28 cases, but again \u2013 distinction between lineages and patients is unclear), phu+ arise when no pvd+ strains were observed at all.\n\nIn both cases there is insufficient information given on the social environment \u2013 how many strains were analyzed in any given sample. This data in neither presented nor analyzed in anyway whatsoever in the text. Now, this is obviously important \u2013 I would find the claim for fixation of a given genotype (or the elimination of another) to be much stronger if 10 isolates were sampled from the same patient at the same time than if only two samples were taken (or one!). Yet, the social data is completely absent, so I do not know how to interpret the claim for fixation of the cheater. As this is, to the best of my understanding, the most important point of the paper, the data supporting it should be presented and properly analyzed!\n\n4) Pvd Super producers: the authors defined a subset of strains which produce more pvd than their ancestors (based on longitudinal sampling and genomic sequences). Super-production occurs in 50% of lineages and rather early (within ~2 years) in 33% of lineages. In a minority of super-producer lineages, the authors suggest that it is due to mutations in general regulators (e.g., lasR, mucA, gac). The authors suggest that this is an adaptation due to increased requirements for iron in the lungs. Finally, the author observed that a large fraction of super-producers became null producers (8/24) compared to strains that do not super-produce (4/21). We have several remarks on this part:\n\na) If super-production results from mutations in general regulators such as lasR or mucA, then pvd over-production might be a pleiotropic side effect of selection for a different trait dependent on the global regulator. This option is not mentioned in the text.\n\nb) Super-producers by themselves are also super-cooperators which will be cheated by their wild-type pvd producer ancestors in their social environment. Something needs to explain the increase of cooperation. Selection for private pleiotropic effects of the mutation (section a) might explain this increased cooperation. Again, social evolution is not discussed in this context.\n\nc) The observation that pvd- mutant phenotype arise more often in super-producers (8/24) than in wild-type producers (4/21) seems to be rather marginal to me. I'm not sure what is the statistical significance analysis, but if one simply assumes binomial distribution around the mean (12/45=26%), then with 21 samples, the chance of obtaining 4 or less events is ~30% and the chances of obtaining 8 events or more in 24 samples is ~40%. Therefore, I am not convinced that this difference is not occurring simply by chance.\n\n5) Sensitivity to heme levels. If I understand correctly, the authors show in Figure 5 the average final OD for multiple related pairs which encode for the phu+ or phu-wt alleles (all in pvd- background) for different levels of heme (1, 2, 5, 10\u03bcM). I thought I got the picture clearly, but looking at the supplementary information and figure got me completely confused. The authors refer to six pairs of strains, for which they measured the growth in 2 and 5 \u03bcm of heme, but it is unclear on what was 1 and 10 \u03bcm measured. Also, while Figure 5 indicates that the phu-wt allele has a growth advantage in 5uM, Appendix 1\u2014figure 7 shows that all the statistically significant (or marginally significant) effects in specific pairs, go on the other direction \u2013 phu+ grow better than phu-wt. I couldn't figure out how to resolve these two values in a satisfying manner.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Privatisation rescues essential function following loss of cooperation\" for further consideration at eLife. Your revised article has been favorably evaluated by Ian Baldwin (Senior Editor), a Reviewing Editor, and one reviewer.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nReviewer #2:\n\nIn this version, Andersen et al. tried to address the main criticism brought forward in the previous version. All in all, I find the data and figures added to the work to satisfy my main points of criticism. I still have few comments here and there, where I think analysis could be improved or representation could be simplified for the reader.\n\nI would go over my previous main reservations and whether I am satisfied from the corrections done by the authors:\n\n1) Connection between pvd receptor mutations and phu+ phenotypic change. The authors now added the analysis of pvd reception mutations and show a good correspondence between the phu+ promoter mutations and accumulation of pvd reception mutations. I think this supports the notion that cheating on pvd is not occurring upon the phu+ phenotypic change.\n\n2) Social interactions. This is the main point of the paper \u2013 loss of pyoverdine production from the social environment and not only from a specific lineage explains the rise of phu+ phenotype. The authors now provide Appendix 1\u2014figure 3A, B to directly show the data. I think this is a good start, but I would suggest that the authors would provide a more patient-centric view of the data and not lineage-centric. The problem with the current representation is that different lineages in the same patient are scattered throughout the two figures, complicating comparison. To look at the data of a specific patient, I had to scan the two figures to find all lineages sampled in this patient and then mentally order them by the sample time, to try and see whether the claim (pvd loss from all samples prior to phu+ mutation) can be verified. I suggest that in addition to the current representation, the authors should show a representation were the data samples for a single patient are clustered together with ascending years and the phenotypic/genetic status of each sample is clearly given (using the same mutation annotation as in the current figure). This would facilitate direct visual estimation of the social data in a given lineage. I don't think there is a need to show patients which have been sampled once with a single clone, as nothing much can be said about their social environment (many such patients are shown in Appendix 1\u2014figure 2).\n\n3) Super producers: the statistical claim of the author is that pvd cheaters are not only preferentially arising in the super-producers, but that they also arise more quickly (i.e., that the rate of appearance of the mutations is higher. This is clear from Figure 1 but is not mentioned appropriately in the text (subsection \u201cMore cooperative populations are more vulnerable to exploitation\u201d, third paragraph). I think the authors should also mention that the mean time for appearance of a pvd- mutation was quicker for the eight mutations that arose in the presence of super producer than the mean time for the four that arose without it.\n\n4) Number of generations. The reviewers have cut their estimates considerably, but still rely on an estimation of doubling time of ~70 minutes, which I still find unconvincing \u2013 it will either imply that the whole mocus volume of the lungs is replaced every 70 minutes (as in a chemostat, where growth is determined by clearance rate), or that there is a massive level of cell death alongside fast cell growth (and then the chemostat assumptions fail, as average growth does not reflect cell divisions). I am no expert in CF, but both things seem unlikely, though I might be completely wrong on that. In any case, I don't find this to be very important. I would just throw away this estimate, but if the authors choose to keep it, I would not object.\n",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d6bd23a1-5b0d-4302-a83b-aa4bb994d9be",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C1",
+      "claim": "A single cheating mutant can lead to the invasion and eventual eradication of cooperation from a population.",
+      "claim_type": "EXPLICIT",
+      "source": "A single cheating mutant can lead to the invasion and eventual eradication of cooperation from a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement presented in the introduction without specific experimental data from this study, drawing on established knowledge in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "f7826847-a8b1-4d88-8682-b88dfe79a062",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C2",
+      "claim": "Cheat invasion is often considered equal to extinction in empirical and theoretical studies of cooperator-cheat dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, cheat invasion is often considered equal to extinction in empirical and theoretical studies of cooperator-cheat dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes how cheat invasion is treated in the literature, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "8489947a-bc17-4819-a4b4-c9069bf40b54",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C3",
+      "claim": "Individuals evolved to replace cooperation with a 'private' behaviour during P. aeruginosa cystic fibrosis lung infection.",
+      "claim_type": "EXPLICIT",
+      "source": "By following the social dynamics of iron metabolism in Pseudomonas aeruginosa during cystic fibrosis lung infection, we observed that individuals evolved to replace cooperation with a 'private' behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on longitudinal sampling and genomic analysis of clinical isolates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "3be73f94-9d4b-4eb4-9e25-f26faeb63bb2",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C4",
+      "claim": "Cooperative iron acquisition was frequently upregulated early in infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic assays showed that cooperative iron acquisition frequently was upregulated early in infection, which, however, increased the risk of cheat invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phenotypic assays measuring pyoverdine production in clinical isolates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "614a4969-1500-4ec1-8f01-5a4340edb90d",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C5",
+      "claim": "Upregulation of cooperative iron acquisition increased the risk of cheat invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic assays showed that cooperative iron acquisition frequently was upregulated early in infection, which, however, increased the risk of cheat invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by survival analysis showing higher likelihood of non-producers in presence of super-cooperators.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "efd0fc86-3e94-4e57-a9b8-af4b1cb36a49",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C6",
+      "claim": "A private iron uptake system was upregulated if, and only if, cooperative iron acquisition was lost from the population.",
+      "claim_type": "EXPLICIT",
+      "source": "With whole-genome sequencing we showed that if, and only if, cooperative iron acquisition is lost from the population, a private system was upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on whole-genome sequencing data and survival analysis showing phuS//phuR mutations only occur after loss of pyoverdine production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "1ec62870-5481-4202-8428-9d72e2733c1e",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C7",
+      "claim": "The benefit of phu system upregulation depended on iron availability.",
+      "claim_type": "EXPLICIT",
+      "source": "The benefit of upregulation depended on iron availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental growth assays with isogenic pairs at different heme concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "1d7f5521-e39f-40e1-b406-81768a5e8570",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C8",
+      "claim": "Once cheating has gone to fixation, it is almost impossible for cooperation to re-invade.",
+      "claim_type": "EXPLICIT",
+      "source": "And also because it is generally the case that once cheating has gone to fixation, it is almost impossible for cooperation to re-invade (Axelrod and Hamilton, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Axelrod and Hamilton, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "390af8e5-63d9-466d-bcc2-d2e6a4820144",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C9",
+      "claim": "If cooperation fulfilled an important function, a population where cheating has gone to fixation may be at risk of extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "If cooperation fulfilled an important function, this population may now be at risk of extinction (Fiegna and Velicer, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fiegna and Velicer, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "8548cbb6-c0d6-41a9-b705-f1362c6b9b76",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C10",
+      "claim": "Selection may favour individuals that can restore function by employing a 'privatisation' strategy following loss of cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "To escape this fate, selection may favour individuals that can restore function by employing a 'privatisation' strategy \u2013 replacement of a mechanism that was once performed cooperatively as a group, with a selfish one that only benefits the actor (Bel, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction supported by citation and tested in the study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "a4e93c94-9f59-4e11-a619-d00426c5e1b3",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C11",
+      "claim": "Privatisation could be a common occurrence in nature that has been overlooked.",
+      "claim_type": "EXPLICIT",
+      "source": "Privatisation could be a common occurrence in nature that has nevertheless been overlooked because there is no reason, a priori, to interpret private function as a result of past social interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about why privatisation may have been missed in previous studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "48852fc3-43b2-4dc6-a086-8a96b566af99",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C12",
+      "claim": "The study tracked bacterial behavior over more than an estimated 1.3 million generations.",
+      "claim_type": "EXPLICIT",
+      "source": "We overcome these difficulties by studying the evolutionary dynamics of a cooperative trait for more than an estimated 1.3 million generations (Supplementary file 1A), in a population of bacterial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculations from longitudinal sampling data and estimated doubling times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "497ab609-8b51-49b8-a700-806c99f79a6e",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C13",
+      "claim": "This is the first observation of a natural population responding to cheat invasion by adopting a privatisation strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "We report the first observation (to our knowledge) of a natural population responding to cheat invasion by adopting a privatisation strategy and, therefore, avoiding the possibility of extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the study based on the longitudinal genomic and phenotypic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "14ca3470-6dc8-4b49-ba11-065d5581ffce",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C14",
+      "claim": "CF is a genetic disease that causes the build-up of dehydrated mucus in lungs and sinuses.",
+      "claim_type": "EXPLICIT",
+      "source": "CF is a genetic disease that causes the build-up of dehydrated mucus in lungs and sinuses, which P. aeruginosa infects (Folkesson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "1b24dbd1-d6a8-4363-a67f-da6e6b64f273",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C15",
+      "claim": "The host actively withholds iron to limit infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The host actively withholds iron to limit infection, and, as a counter-measure, P. aeruginosa employ a range of different iron acquisition strategies (Poole and McKay, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about host-pathogen interactions supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "dfab53a1-80e2-4b5d-b999-618fcddbd5ce",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C16",
+      "claim": "The primary iron acquisition mechanism of P. aeruginosa relies on secretion of the siderophore pyoverdine.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary mechanism relies on secretion of the siderophore pyoverdine (Haas et al., 1991; Konings et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about P. aeruginosa biology supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "735f9c2e-ebb2-451e-98a8-9b60a980d80b",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C17",
+      "claim": "Pyoverdine has been demonstrated to be a cooperative trait where iron-bound pyoverdine molecules are available for uptake by the producer and neighbouring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been demonstrated to be a cooperative trait, where iron-bound pyoverdine molecules are available for uptake not only by the producer, but also by neighbouring cells (Buckling et al., 2007; West and Buckling, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies demonstrating the cooperative nature of pyoverdine.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "b79ba0c5-cf28-4d40-985d-0d773598a486",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C18",
+      "claim": "P. aeruginosa makes a secondary siderophore, pyochelin, which is cheaper to produce but has a lower affinity for iron.",
+      "claim_type": "EXPLICIT",
+      "source": "P. aeruginosa also make a secondary siderophore, pyochelin, which is cheaper to produce but has a lower affinity for iron (Dumas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about P. aeruginosa iron acquisition supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "7e11aa54-6e4b-4f09-b637-b566f072d2f4",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C19",
+      "claim": "The Pseudomonas heme uptake system (phu) is private, as heme is taken up directly without secretion of exploitable exoproducts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Pseudomonas heme uptake system (phu) is private, as the iron-rich compound heme is taken up directly without the secretion of exploitable exoproducts (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about the phu system mechanism, also shown in Table 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "7d29722e-c4d4-4e0c-828c-ec4c2c1f7d55",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C20",
+      "claim": "The ferrous iron transport system (feo) is private.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional mechanisms of uptake include the private ferrous iron transport system (feo; Table 1 [Cartron et al., 2006]), and the heme assimilation system (has).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and shown in Table 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "b4dc60df-e223-4978-8f6d-fc2da7b46b5b",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C21",
+      "claim": "The has system is conditionally cooperative, as uptake is direct without the hemophore at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the closely related system of Serratia marcescens it is conditionally cooperative, as uptake is direct without the hemophore at high concentrations (Ghigo et al., 1997; L\u00e9toff\u00e9 et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on studies in a related organism, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "272657e6-e1e4-4842-ab4f-1f9cb0f4794f",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C22",
+      "claim": "Pyoverdine production has repeatedly been found to be lost during CF infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyoverdine production has repeatedly been found to be lost during CF infection (Andersen et al., 2015; Jeukens et al., 2014; Konings et al., 2013; Martin et al., 2011), and the phu system has been observed to be upregulated late in infection (Marvig et al., 2014; Nguyen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "36140e4f-d9bb-46a7-9115-01c8a4c0dc43",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C23",
+      "claim": "The phu system has been observed to be upregulated late in infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyoverdine production has repeatedly been found to be lost during CF infection (Andersen et al., 2015; Jeukens et al., 2014; Konings et al., 2013; Martin et al., 2011), and the phu system has been observed to be upregulated late in infection (Marvig et al., 2014; Nguyen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "3731d691-6cc0-43d6-83fc-719a9d0ba7e4",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C24",
+      "claim": "Host adaptation is frequently predicted to be the primary force in pathogen evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Host adaptation, to accommodate for example antibiotic pressure and resource limitations, is frequently predicted to be the primary force in pathogen evolution (Lieberman et al., 2011; Young et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common predictions in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "fa34abf6-3346-49b4-8ee3-44bd68cd4603",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C25",
+      "claim": "Cheating is a major selective force in the loss of cooperative iron acquisition in the CF lung.",
+      "claim_type": "EXPLICIT",
+      "source": "With this approach we have shown that cheating is a major selective force in the loss of cooperative iron acquisition in the CF lung (Andersen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous study by the authors, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "6eff7dbb-d146-4463-ad82-63200c2c8a3a",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C26",
+      "claim": "The study used 551 whole genome sequenced isolates from 64 Danish patients, of 55 clone types.",
+      "claim_type": "EXPLICIT",
+      "source": "Two collections of P. aeruginosa samples were used, covering 551 whole genome sequenced isolates from 64 Danish patients, of 55 clone types (Andersen et al., 2015; Markussen et al., 2014; Marvig et al., 2013; Marvig et al., 2015; Rau et al., 2012; Yang et al., 2011); allowing for the identification of patterns of convergent evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data set used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "d06d7bbf-9664-4c82-ae74-9f0a8e7972a4",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C27",
+      "claim": "P. aeruginosa populations within patients are remarkably uniform at the clone type level.",
+      "claim_type": "EXPLICIT",
+      "source": "While the P. aeruginosa populations within patients are remarkably uniform at the clone type level, colonizers diversify during infection (Mowat et al., 2011; Winstanley et al., 2016), and lineages may occupy distinct niches at late stages (Jorth et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "80ae9a29-1e98-49e5-94a8-afe464f03bc6",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C28",
+      "claim": "Colonizers diversify during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "While the P. aeruginosa populations within patients are remarkably uniform at the clone type level, colonizers diversify during infection (Mowat et al., 2011; Winstanley et al., 2016), and lineages may occupy distinct niches at late stages (Jorth et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "2874df4c-aad7-49a3-a6e1-ff06ce0ebbd4",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C29",
+      "claim": "Lineages may occupy distinct niches at late stages of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "While the P. aeruginosa populations within patients are remarkably uniform at the clone type level, colonizers diversify during infection (Mowat et al., 2011; Winstanley et al., 2016), and lineages may occupy distinct niches at late stages (Jorth et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "a2503eef-f320-42f7-b05c-314cf0e3650a",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C30",
+      "claim": "The isolate collection has been shown to represent the genetic diversity well, with multiple genotypes co-occurring within individual patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The isolate collection has been shown to represent the genetic diversity well, with multiple genotypes co-occurring within individual patient samples (Sommer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study validating the sampling approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "9cf8f107-2638-492b-b53f-7516e9954152",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C31",
+      "claim": "Super-cooperator isolates with >30% higher pyoverdine production than isolates initiating infection were detected in 25 of 45 independent clonal lineages (55%).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these 'super-cooperator' isolates, which had >30% higher production than isolates initiating infection, were detected in 25 of 45 independent clonal lineages (55%; Figure 1), and on average sampled 1.89 \u00b1 1.79 st. dev. years into the infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on phenotypic measurements of pyoverdine production, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "7d3f1495-7b66-447c-97c7-ef656802fdae",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C32",
+      "claim": "Super-cooperators were on average sampled 1.89 \u00b1 1.79 st. dev. years into the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these 'super-cooperator' isolates, which had >30% higher production than isolates initiating infection, were detected in 25 of 45 independent clonal lineages (55%; Figure 1), and on average sampled 1.89 \u00b1 1.79 st. dev. years into the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of longitudinal sampling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "99b08505-d4c1-48bc-af30-3e7adee1490d",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C33",
+      "claim": "Upregulation of pyoverdine is initially favoured, likely by iron limitation or inter-species competition.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that upregulation is initially favoured, likely by iron limitation or inter-species competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of increased pyoverdine production early in infection.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "4da042c7-c7c0-4e3f-bc00-d88749bf1e87",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C34",
+      "claim": "P. aeruginosa frequently co-infects with Staphylococcus aureus in CF patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In CF patients, P. aeruginosa frequently co-infects with Staphylococcus aureus (Folkesson et al., 2012), and co-culture in vitro causes an upregulation of pyoverdine production (Harrison et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "9b92f812-34d5-4206-9143-eaf3626676ed",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C35",
+      "claim": "Co-culture of P. aeruginosa with S. aureus in vitro causes an upregulation of pyoverdine production.",
+      "claim_type": "EXPLICIT",
+      "source": "In CF patients, P. aeruginosa frequently co-infects with Staphylococcus aureus (Folkesson et al., 2012), and co-culture in vitro causes an upregulation of pyoverdine production (Harrison et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "195035a4-4c31-4c2c-bdbb-0d7b9a2b7c98",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C36",
+      "claim": "Iron sequestering can have the additional benefit of making iron unavailable for S. aureus or other competitors.",
+      "claim_type": "EXPLICIT",
+      "source": "When in co-infection, iron sequestering can have the additional benefit of making it unavailable for S. aureus or other competitors (Leinweber et al., 2018; Niehus et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "1475817f-cbb1-4fe7-9842-b06db1bb5ece",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C37",
+      "claim": "For six out of 25 lineages with super-cooperators, candidate mutations in global regulatory and quorum sensing genes were identified that likely cause increased production of pyoverdine and other virulence factors.",
+      "claim_type": "EXPLICIT",
+      "source": "For six out of the 25 lineages with super-cooperators we identified candidate mutations in global regulatory and quorum sensing genes that likely cause increased production of pyoverdine as well as other virulence factors, such as pyochelin, pyocyanin and alginate (Supplementary file 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis of mutations in the isolates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "b6497100-f6d8-442b-9d69-c7141902f5f8",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C38",
+      "claim": "The likelihood of pyoverdine non-producers arising was significantly higher in the presence of super-cooperators.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the likelihood of these non-producers arising was significantly higher in the presence of super-cooperators [Survival analysis, \u03c72 (2, N = 47) = 5.7; p < 0.05; Figure 1].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on survival analysis of longitudinal data, shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "08acf1f2-41b7-43e8-85ff-a996c1f741d6",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C39",
+      "claim": "Non-producers were present in four out of 21 clonal lineages without super-cooperators (19%).",
+      "claim_type": "EXPLICIT",
+      "source": "Non-producers were present in four out of 21 clonal lineages without (19%, on average 2.60 \u00b1 2.45 st. dev years into infection) and in eight out of 24 lineages (disregarding one where the non-producer was sampled prior to the super-cooperator) with super-cooperators (33%, on average 3.32 \u00b1 3.32 st. dev years into infection and 1.45 \u00b1 1.39 st. dev. years after sampling of a super-cooperator).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of longitudinal sampling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "a4ada537-df86-4399-bb94-e0dc560e72e7",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C40",
+      "claim": "Non-producers were present in eight out of 24 lineages with super-cooperators (33%).",
+      "claim_type": "EXPLICIT",
+      "source": "Non-producers were present in four out of 21 clonal lineages without (19%, on average 2.60 \u00b1 2.45 st. dev years into infection) and in eight out of 24 lineages (disregarding one where the non-producer was sampled prior to the super-cooperator) with super-cooperators (33%, on average 3.32 \u00b1 3.32 st. dev years into infection and 1.45 \u00b1 1.39 st. dev. years after sampling of a super-cooperator).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of longitudinal sampling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "230750d0-58b3-4a76-bcd1-a1a3b03073dc",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C41",
+      "claim": "There was no significant difference between the time of sampling of non-producers between lineages with or without super-cooperators.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference between the time of sampling of non-producers between lineages with or without super-cooperators (Welch Two Sample t-test, t = \u22120.54, df = 8.01, p = 0.61).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the timing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "deb55bcd-e5c0-48e0-92c4-c9cd556a3555",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C42",
+      "claim": "Non-producers appear to be favoured as a result of exploiting the pyoverdine production of neighbouring cells \u2013 a strategy referred to as cheating.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-producers appear to be favoured as a result of exploiting the pyoverdine production of neighbouring cells \u2013 a strategy referred to as cheating (Ghoul et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data supported by citation to theoretical framework.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "eb28fade-c5a0-48c5-a91f-386030fc53b1",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C43",
+      "claim": "Non-producers in the lung acquire mutations in a pattern consistent with a cheating strategy, retaining the pyoverdine receptor only if producers were present.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that non-producers in the lung acquire mutations in a pattern consistent with a cheating strategy, as opposed to one expected from redundancy, in that they retained the pyoverdine receptor only if producers were present (Andersen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous study by the authors, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "73d78580-8ca9-46dd-99bf-dc06aacf148e",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C44",
+      "claim": "The relative fitness of cheats is predicted by theory to be greater when there are higher levels of cooperation in a population.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative fitness of cheats is predicted by theory to be greater when there are higher levels of cooperation in a population, because their competitors are bearing a higher cost (Ross-Gillespie et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "b99308e5-9969-4fc4-969a-843fe8ceb2dc",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C45",
+      "claim": "The prediction that cheats have greater relative fitness with higher cooperation has been shown to hold in empirical tests.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction has been shown to hold in empirical tests (Ghoul et al., 2014b; Harrison et al., 2008; Jiricny et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "84d6e692-e8f7-4dfb-ba93-659e7aeaa42c",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C46",
+      "claim": "Super-cooperators are predicted to be especially vulnerable to exploitation and invasion of cheats.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, super-cooperators are predicted to be especially vulnerable to exploitation and invasion of cheats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from evolutionary theory and the data showing higher cheat invasion with super-cooperators.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "18be5ea5-1f3c-4eea-a503-06885112a1b7",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C47",
+      "claim": "Loss-of-function of the cooperative pyoverdine system occurred earliest in 16 out of 25 clonal lineages where the order of systems affected was clear.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function of the cooperative pyoverdine system occurred earliest in 16 out of 25 clonal lineages where the phenotypic measurements and sequence analysis provided a clear order of systems affected (Figure 2; Supplementary file 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genomic and phenotypic analysis, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "04ef5e49-05f8-45ef-a706-216d37b90e13",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C48",
+      "claim": "Loss of pyoverdine production occurred on average 3.06 years after the first sampling of the clone type in young patients.",
+      "claim_type": "EXPLICIT",
+      "source": "These were observed to occur on average 3.06 years after the first sampling of the clone type in the young patients (n = 11 clonal lineages in nine patients), and between 1\u201339 years after infection for the more rarely sampled transmissible clone types (n = 5 clonal lineages in five patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of longitudinal sampling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "5bd93cc4-7cbd-48ed-bb3b-cf52c399dde4",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C49",
+      "claim": "The early occurrence of pyoverdine loss is not unexpected when weighed by the high mutation rate of the system and its large size.",
+      "claim_type": "EXPLICIT",
+      "source": "When weighed by the high mutation rate of the system, reflecting a strong selection pressure, and its large size, this is not unexpected [Poisson test, P(X \u2265 16) \u223c pois (X; 14.69) > 0.05), Figure 2; Supplementary file 1D].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis comparing observed to expected mutation rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "66d41ddc-a7cf-405d-aeba-b841fda1c88c",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C50",
+      "claim": "Mutation of the cooperative pyochelin system first did not differ from that expected given a random distribution of mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the cooperative pyochelin system first was found not to differ from that expected given a random distribution of mutations [Poisson test, P(X \u2265 6) \u223c pois (X; 5.14) > 0.05), Figure 2; Supplementary file 1D].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of mutation patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "d9d85d65-e27f-451e-9af8-55db4fced909",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C51",
+      "claim": "The conditionally private or cooperative has heme uptake system acquired few mutations during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The conditionally private or cooperative has heme uptake system was found to acquire few mutations during infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis of mutations in the has system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "73d0e23b-8801-4a00-bad3-c0ff44c01c95",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C52",
+      "claim": "The private feo system is rarely mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "The private feo system is rarely mutated (Supplementary file 1D) and has been suggested to be of increased importance as conditions turn microanaerobic during infection (Hunter et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis showing few mutations in the feo system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "db965ea8-4338-4c5d-91e6-7d36a1136f95",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C53",
+      "claim": "The feo system has been suggested to be of increased importance as conditions turn microanaerobic during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The private feo system is rarely mutated (Supplementary file 1D) and has been suggested to be of increased importance as conditions turn microanaerobic during infection (Hunter et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion from a previous study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "f4a5e2e6-8437-421d-bd80-4c674036f8d0",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C54",
+      "claim": "Pyoverdine cheats appeared 14 times without going to fixation within the patient during the sampling period.",
+      "claim_type": "EXPLICIT",
+      "source": "Across both isolate collections we observed pyoverdine cheats appear 14 times without going to fixation within the patient during the sampling period, but further recorded eight cases where no producers were sampled a year prior to, or after emergence a non-producer, and two clonal lineages from where no producers are sampled at any point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of longitudinal sampling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "f9b50ec4-888b-4ab9-a82e-d34bea2769ee",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C55",
+      "claim": "Eight cases were recorded where no pyoverdine producers were sampled a year prior to, or after emergence of a non-producer.",
+      "claim_type": "EXPLICIT",
+      "source": "Across both isolate collections we observed pyoverdine cheats appear 14 times without going to fixation within the patient during the sampling period, but further recorded eight cases where no producers were sampled a year prior to, or after emergence a non-producer, and two clonal lineages from where no producers are sampled at any point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of longitudinal sampling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "914c0bae-0755-453d-87a3-eb25872e0cf8",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C56",
+      "claim": "Two clonal lineages were identified from which no pyoverdine producers were sampled at any point.",
+      "claim_type": "EXPLICIT",
+      "source": "Across both isolate collections we observed pyoverdine cheats appear 14 times without going to fixation within the patient during the sampling period, but further recorded eight cases where no producers were sampled a year prior to, or after emergence a non-producer, and two clonal lineages from where no producers are sampled at any point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of longitudinal sampling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "814f71e2-18a0-4afd-b18d-cb08caad9b09",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C57",
+      "claim": "The transmitted clone type DK2 was subsequently sampled from 16 patients over 35 years after loss of pyoverdine production.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these events for example occurred in the transmitted clone type DK2 that was subsequently sampled from 16 patients over 35 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the longitudinal sampling data of the DK2 clone type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "11977eb3-b13f-44d0-8e51-21b115497e59",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C58",
+      "claim": "After cooperation was lost from a clonal lineage, and only if it was lost, iron uptake was privatised by upregulation of the private phu system.",
+      "claim_type": "EXPLICIT",
+      "source": "After cooperation was lost from a clonal lineage, and only if it was lost, we observed that iron uptake was privatised (Figure 3). This was achieved by upregulation of the private phu system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on genomic analysis and survival analysis, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "145860c4-dfdd-4e80-a8db-0c0579f2b4fe",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C59",
+      "claim": "The phu system targets the iron-rich heme molecule, which is taken up directly through a membrane-bound receptor PhuR.",
+      "claim_type": "EXPLICIT",
+      "source": "The phu system targets the iron-rich heme molecule, which is taken up directly through a membrane-bound receptor PhuR (Table 1; Ochsner et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about the phu system mechanism, supported by citation and shown in Table 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "5258558c-30e1-42ca-b518-d4fcfe48568a",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C60",
+      "claim": "Increased expression of the phu system results from intergenic mutations between the phuS gene and the receptor gene phuR.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased expression of the phu system results from intergenic mutations between the phuS gene encoding a heme traffic protein, and the receptor gene phuR (phuS//phuR mutations; Marvig et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "67e67b2f-a4bb-4286-aed4-c51a7922348e",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C61",
+      "claim": "A total of 29 SNPs and two indels accumulated in the phuS//phuR region in the isolate collections.",
+      "claim_type": "EXPLICIT",
+      "source": "In the isolate collections, a total of 29 SNPs and two indels accumulate in the phuS//phuR region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic analysis of the isolates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "7b3b33ca-c522-49bd-a19f-3dd8be40c1f4",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C62",
+      "claim": "Eight phuS//phuR mutations in the phuR promoter have been found to cause a significant upregulation of promoter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight of these mutations in the phuR promoter have been found to cause a significant upregulation of promoter activity, and one of these has further been shown, in an isogenic pair, to provide a growth benefit to the carrier when heme is available as an iron source (Marvig et al., 2014); see also below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study and experimental data in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "d29d64db-7575-450b-a159-1b77689d890f",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C63",
+      "claim": "One phuS//phuR mutation has been shown to provide a growth benefit to the carrier when heme is available as an iron source.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight of these mutations in the phuR promoter have been found to cause a significant upregulation of promoter activity, and one of these has further been shown, in an isogenic pair, to provide a growth benefit to the carrier when heme is available as an iron source (Marvig et al., 2014); see also below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study and experimental data in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "227e61f0-17a7-43ca-a2cf-e37949a467e2",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C64",
+      "claim": "Specific phuS//phuR mutations arose significantly more frequently than expected by chance following the loss of pyoverdine production.",
+      "claim_type": "EXPLICIT",
+      "source": "These specific mutations were found to arise significantly more frequently than expected by chance following the loss of pyoverdine production [Poisson test, P(X \u2265 5) \u223c pois (X; 0.39) < 0.01); Figure 2].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of mutation patterns, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "55e5dc62-e698-4d5c-8c03-45d9a4bdaf04",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C65",
+      "claim": "In three patients, non-producing isolates with phuS//phuR mutations were sampled at the same time as pyoverdine producers.",
+      "claim_type": "EXPLICIT",
+      "source": "In three patients, non-producing isolates with phuS//phuR mutations were sampled at the same time as pyoverdine producers, however in two of these the producer and non-producers were unlikely to interact, and in the third the phuS//phuR mutation occurred outside the phu promoter region with unknown effects on heme uptake (but see Appendix 1\u2014figure 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the sampling data and genomic sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "61bb4782-92f9-4fd8-b37f-080a9adf9918",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C66",
+      "claim": "Phu upregulation takes place when pyoverdine production is lost from the social environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that phu upregulation takes place when pyoverdine production is lost from the social environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the genomic and sampling data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "55d66476-fe25-456e-8df9-2c1249f63f45",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C67",
+      "claim": "Many isolates with phuS//phuR mutations also harboured pyoverdine receptor mutations that eliminate the possibility to cheat.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the isolates with phuS//phuR mutations also harboured pyoverdine receptor mutations that eliminate the possibility to cheat (6 out of 7 in DK1, 7 out of 7 in DK2, 1 out of 2 in DK53, 0 out of 1 in DK32; Appendix 1\u2014figure 3\u20136; Andersen et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genomic analysis of the isolates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "88b7cbc8-1415-457e-ad42-9a07ab95265e",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C68",
+      "claim": "Knock-out of the pyoverdine receptor is not expected to be a selective force in phu upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-out of the pyoverdine receptor is, however, not expected to be a selective force in phu upregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the understanding of the selective pressures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "79f8ae30-2d48-4675-baaf-00e634216b6f",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C69",
+      "claim": "Both pyoverdine receptor knock-out and phu upregulation occur because pyoverdine is no longer available in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the data suggest that both occur because pyoverdine is no longer available in the environment, selecting for privatisation of iron uptake and elimination of the costly receptor (Andersen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data, supported by citation to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "7bae04b0-e7db-4192-9128-6ab5259dbd9e",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C70",
+      "claim": "If pyoverdine production is maintained, the phuS//phuR genotype remains unaltered from colonization, even after more than 30 years of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "If pyoverdine production is maintained, the phuS//phuR genotype remains unaltered from colonization, even after more than 30 years of infection (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genomic analysis of long-term infections, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "9bc1ffbd-866a-429f-a35c-21f933fa39fe",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C71",
+      "claim": "The phuS//phuR mutations are only observed in non-producers, and in 15 out of 16 cases after the loss of cooperation in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "The phuS//phuR mutations, responsible for upregulating the private phu system, are only observed in non-producers, and in 15 out of 16 cases after the loss of cooperation in the population [Survival analysis, \u03c72 (2, N = 73) = 11.7; p < 0.01; Figures 3 and 4], occurring between 0 to 35 years after the loss of pyoverdine production.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on survival analysis, shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "32806af0-025f-4f08-99f2-a6f8fe81b061",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C72",
+      "claim": "phuS//phuR mutations occurred between 0 to 35 years after the loss of pyoverdine production.",
+      "claim_type": "EXPLICIT",
+      "source": "The phuS//phuR mutations, responsible for upregulating the private phu system, are only observed in non-producers, and in 15 out of 16 cases after the loss of cooperation in the population [Survival analysis, \u03c72 (2, N = 73) = 11.7; p < 0.01; Figures 3 and 4], occurring between 0 to 35 years after the loss of pyoverdine production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of longitudinal sampling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "fafd41e7-799d-45f9-9200-12d139aa3e7b",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C73",
+      "claim": "Upregulation of private iron uptake can be predicted from the social environment, not duration of infection and associated changes in the lung environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulation of private iron uptake can, therefore, be predicted from the social environment, not duration of infection and associated changes in the lung environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the survival analysis showing phu upregulation depends on loss of pyoverdine, not time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "a6ab8275-d188-4cbd-9192-ed4d08c7769b",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C74",
+      "claim": "Privatisation may not be universally beneficial but may represent a final recourse when other mechanisms are no longer functioning.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that we only observe upregulation of the phu system if pyoverdine production has been lost suggests that privatisation is not universally beneficial but may instead represent a final recourse when other mechanisms are no longer functioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that phu upregulation only occurs after loss of pyoverdine.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "07e1327a-d70c-4470-a80e-a462dcc5e6a6",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C75",
+      "claim": "P. aeruginosa iron uptake is finely controlled by feedback loops, in response to environmental iron concentrations and need.",
+      "claim_type": "EXPLICIT",
+      "source": "P. aeruginosa iron uptake is finely controlled by feedback loops, in response to environmental iron concentrations and need (Vasil and Ochsner, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about P. aeruginosa iron regulation, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "a8876593-ab12-432a-a3a3-8fca77591864",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C76",
+      "claim": "Iron is toxic at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "As iron is toxic at high concentrations (Anzaldi and Skaar, 2010; Touati, 2000), an indiscriminate upregulation of one system could be a significant disadvantage in environments where iron concentrations fluctuate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "8facb6ff-7819-4610-ad0e-1f8187c7f0a3",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C77",
+      "claim": "An indiscriminate upregulation of one iron uptake system could be a significant disadvantage in environments where iron concentrations fluctuate.",
+      "claim_type": "EXPLICIT",
+      "source": "As iron is toxic at high concentrations (Anzaldi and Skaar, 2010; Touati, 2000), an indiscriminate upregulation of one system could be a significant disadvantage in environments where iron concentrations fluctuate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the toxicity of iron and the need for regulation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "248aebf0-83f5-4e65-82cf-b52dd5579b2d",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C78",
+      "claim": "Phu upregulation is only beneficial at a narrow range of intermediate heme concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, we find that phu upregulation is only beneficial at a narrow range of intermediate heme concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on experimental growth assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "2e37b290-6740-46a5-be5a-aca9de1843cc",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C79",
+      "claim": "There was a significant growth difference between isolates with and without phu upregulation at different heme concentrations, with an interaction effect.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant growth difference between the isolates and heme concentrations, and an interaction effect (Two-Way ANOVA; Interaction term: Isolate*Heme: F = 48.11, df = 3, p < 0.01; Figure 5; Supplementary file 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of experimental growth data, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "b603822e-0099-441d-b762-e3c9963b09fd",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C80",
+      "claim": "At 2.5 \u03bcM heme the isolate with an upregulated phu system achieved a higher density.",
+      "claim_type": "EXPLICIT",
+      "source": "At 2.5 \u03bcM heme the isolate with an upregulated phu system achieved a higher density (Tukey HSD, padj <0.01, Figure 5), consistent with previous findings (Marvig et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental growth assays, shown in Figure 5, and consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "7b4a4426-9685-46ed-90b4-bff1bc7e063e",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C81",
+      "claim": "At 5 and 10 \u03bcM heme, the isolate without phu upregulation had a growth advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at 5 and 10 \u03bcM the isolate without upregulation had an advantage (padj <0.05, Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental growth assays, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "0f059d42-7369-4ccc-bde4-a94eda740fbf",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C82",
+      "claim": "No growth was observed in the absence of heme.",
+      "claim_type": "EXPLICIT",
+      "source": "No growth was observed in the absence of heme, and at 1 \u03bcM there was no significant difference in growth between the isolates but a trend for the WT to do better (padj = 0.073).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental growth assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "afd10e02-82a6-43be-91a3-734aec40bc4d",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C83",
+      "claim": "At 1 \u03bcM heme there was no significant difference in growth between isolates but a trend for the WT to do better.",
+      "claim_type": "EXPLICIT",
+      "source": "No growth was observed in the absence of heme, and at 1 \u03bcM there was no significant difference in growth between the isolates but a trend for the WT to do better (padj = 0.073).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental growth assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "8f50056e-8fad-4bd5-8299-f7c3b7f60a4d",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C84",
+      "claim": "phuS//phuR mutations lead to increased heme uptake that is beneficial at low external concentrations (>1 and <5 \u03bcM heme) but detrimental at high concentrations (>5 \u03bcM heme).",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that phuS//phuR mutations lead to increased heme uptake that is beneficial at low external concentrations (>1 and<5 \u03bcM heme) but detrimental at high concentrations (>5 \u03bcM heme).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental growth data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "41d7a158-3798-427e-acf0-d2cc45464f28",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C85",
+      "claim": "If iron availability increases during infection, an initially beneficial upregulation of heme uptake would turn toxic.",
+      "claim_type": "EXPLICIT",
+      "source": "If iron availability increases during infection, an initially beneficial upregulation of heme uptake would turn toxic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the experimental data showing toxicity at high heme concentrations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "fae5b88f-272f-4572-8b4d-98513a1b5a43",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C86",
+      "claim": "There was a significant bias towards mutations of the phu receptor gene phuR in the phu system.",
+      "claim_type": "EXPLICIT",
+      "source": "In the phu system we found a significant bias towards mutations of the phu receptor gene phuR (Poisson test, P(X \u2265 24) \u223c pois (X; 10.69) < 0.05; Supplementary file 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of mutation patterns in the genomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "61103b24-0233-418b-9acb-849ebda28fde",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C87",
+      "claim": "phuR mutations were not randomly distributed but primarily found in the extracellular loops of the phu receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "These were not randomly distributed but primarily found in the extracellular loops of the phu receptor, that initiate the uptake of heme (Noinaj et al., 2010; Smith et al., 2015) [Poisson test, P(X \u2265 15)~pois (X; 7.28) < 0.05; Figure 6].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of mutation locations, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "cd55b6a5-c524-4fe7-a983-aa7b5a544b33",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C88",
+      "claim": "Mutations in the extracellular loops of the phu receptor may represent compensatory mutations if there is selection to reduce iron concentration within cells.",
+      "claim_type": "EXPLICIT",
+      "source": "If there is selection to reduce iron concentration within cells, these may, therefore, represent compensatory mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the mutation pattern.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "e2e60780-1627-4491-a7f7-19425906f6ba",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C89",
+      "claim": "Bacterial cells are driven by the evolutionary imperative to survive in the host and to compete with members of the same species.",
+      "claim_type": "EXPLICIT",
+      "source": "As in all other organisms, fitness is also determined by the ability to compete with members of the same species, and these two evolutionary drivers \u2013 host adaptation and competition \u2013 do not always coincide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle of evolutionary biology applied to the study system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "d872ce9b-886c-4401-a390-6502e08c8b48",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C90",
+      "claim": "The initial upregulation of cooperation facilitates cheating.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the initial upregulation of cooperation, selected by either the environmental conditions, competition or as a pleiotropic side-effect, facilitates cheating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the survival analysis showing higher cheat invasion with super-cooperators.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "91947370-bad7-4dd1-97e3-078dfc850d93",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C91",
+      "claim": "The subsequent privatisation of iron uptake is a response to the loss of cooperation, not simply an adaptation to iron availability in the host.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsequent privatisation of iron uptake is a response to the loss of cooperation, not simply an adaptation to iron availability in the host as previously suggested (Marvig et al., 2014), and as we show this carries its own costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the survival analysis and experimental data, contrasting with previous interpretations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "ccf97c5c-ef17-46c6-a46d-a928a53ca6a1",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C92",
+      "claim": "Privatisation of iron uptake carries its own costs.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsequent privatisation of iron uptake is a response to the loss of cooperation, not simply an adaptation to iron availability in the host as previously suggested (Marvig et al., 2014), and as we show this carries its own costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental data showing phu upregulation is detrimental at high heme concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "96200d04-fccb-4abc-8a4d-2a180e27d3cf",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C93",
+      "claim": "The effect of the social environment on iron acquisition mechanism remains statistically detectable despite noise from variation in patient characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of the social environment on iron acquisition mechanism remains statistically detectable despite the noise from variation in patient age, sex, infection and treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the robustness of the statistical findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "79663066-e563-4966-a067-1b2f050091e4",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C94",
+      "claim": "Failure to appreciate social factors can lead to misinterpretation of how bacterial cells are influenced by the host environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In a clinical system like this, failure to appreciate these factors can lead to misinterpretation of how bacterial cells are influenced by the host environment and, therefore, impair necessary understanding for the development of intervention strategies (Leggett et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the implications of the findings, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "2558d3e3-e7dc-499c-b978-5aa8db13ffd9",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C95",
+      "claim": "Any adaptation involving cooperation can be vulnerable to exploitation, irrespective of its benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary theory clearly predicts that any adaptation involving cooperation can be vulnerable to exploitation, irrespective of its benefits (Axelrod and Hamilton, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "9622381f-f43d-46cd-a244-5c1bd13b9965",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C96",
+      "claim": "Switching to a private strategy can provide bacterial cells with an evolutionary alternative following cheat invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "By longitudinal sampling of bacterial populations, we were able to observe the consequences of cheat invasion for an essential trait and show that switching to a private strategy can provide bacterial cells with an evolutionary alternative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study based on the longitudinal data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "8e11dbdf-9b07-46a3-a4b1-a7e6b8444072",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C97",
+      "claim": "If a private trait is expressed it may not be the most efficient in a given environment, but simply the final recourse in a population with a history of exploitation.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation highlights the importance of considering potential constraints imposed by social interactions: if a private trait is expressed it may not be the most efficient in a given environment, but simply the final recourse in a population with a history of exploitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the implications of the findings for understanding trait evolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "5e54b3a7-5889-486b-bf4d-3fa10fc74ddf",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C98",
+      "claim": "Limited diffusion of secreted pyoverdine in viscous CF sputum impairs the ability of potential cheats to exploit and may contribute to stabilize cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "Limited diffusion of secreted pyoverdine, as is likely in viscous CF sputum, impairs the ability of potential cheats to exploit and may contribute to stabilize cooperation in these lineages (Julou et al., 2013; Kummerli et al., 2009); although there may be significant exchange between spatially distinct microcolonies (Weigert and K\u00fcmmerli, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about mechanisms stabilizing cooperation, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "97e1eea3-9b9b-4f0e-a981-de9f9628461b",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C99",
+      "claim": "There may be significant exchange between spatially distinct microcolonies in CF sputum.",
+      "claim_type": "EXPLICIT",
+      "source": "Limited diffusion of secreted pyoverdine, as is likely in viscous CF sputum, impairs the ability of potential cheats to exploit and may contribute to stabilize cooperation in these lineages (Julou et al., 2013; Kummerli et al., 2009); although there may be significant exchange between spatially distinct microcolonies (Weigert and K\u00fcmmerli, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "3dccf029-a43d-46f4-b1de-cd1a414eb573",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C100",
+      "claim": "Pyoverdine production increased in 36% of clonal lineages within the first two years of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "When analysing the isolates from 35 frequently sampled young patients of 33 clone types (some clone types infect multiple patients and some patients harbour multiple clone types), we found that pyoverdine production increased in 36% of clonal lineages within the first two years of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phenotypic measurements of pyoverdine production in the children's collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "04c95f1d-cf13-425c-8621-7ada5ecc4be3",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C101",
+      "claim": "In the transmissible clone type DK1, there were five independent losses of pyoverdine production but three clonal lineages maintained production over >30 years.",
+      "claim_type": "EXPLICIT",
+      "source": "In some clonal lineages of P. aeruginosa, defined as longitudinally sampled isolates of the same clone type that share a recent ancestor, pyoverdine production was maintained for >30 years of CF infection: in the 12 clonal lineages of the transmissible clone type DK1 that were followed for >30 years there were five independent losses of pyoverdine production but three clonal lineages maintained production (Andersen et al., 2015); Appendix 1\u2014figure 3, and below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on longitudinal sampling and phenotypic measurements of DK1 isolates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "6a8b0bd4-82bf-48a9-83ab-98a1d3c5f7c9",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C102",
+      "claim": "Non-producers were sampled on average 3.06 \u00b1 2.29 st. dev. years into infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the potential benefits of pyoverdine production, the presence of super-cooperators appears to weaken long-term stability of cooperation in the lung. In 12 out of the 35 patients, we previously observed the appearance of mutants that have lost the ability to synthesise pyoverdine (Andersen et al., 2015), sampled on average 3.06 \u00b1 2.29 st. dev. years into infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of longitudinal sampling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "8be83562-a652-4382-b8d0-aad267fba67f",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C103",
+      "claim": "The larger production cost differential between non-producers and super-cooperators gives non-producers a greater advantage than WT producers.",
+      "claim_type": "EXPLICIT",
+      "source": "While isolates with a WT level of pyoverdine production may also benefit from the presence of super-cooperators, the larger production cost differential between non-producers and super-cooperators gives non-producers a greater advantage than WT producers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from evolutionary theory about relative fitness advantages.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "c410ceb3-6cc3-42c5-b642-c7a50104f9ac",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "claim_id": "C104",
+      "claim": "The pattern of upregulation followed by loss is likely to be applicable to the evolution of other exoproducts during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of upregulation, followed by loss, is likely to be applicable to the evolution of other exoproducts during infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization from the findings about pyoverdine.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cooperative pyoverdine production is frequently upregulated early in P. aeruginosa CF infection (super-cooperators detected in 55% of lineages), and this upregulation significantly increases the risk of invasion by non-producing cheats. Super-cooperators were associated with higher rates of cheat invasion (33% vs 19% in lineages without super-cooperators), consistent with evolutionary theory predicting that higher cooperation levels increase cheat fitness advantage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C38-C41 provide strong statistical evidence from survival analysis (\u03c7\u00b2=5.7, p<0.05) showing significantly higher cheat invasion with super-cooperators. The phenotypic measurements (C4, C31, C100) and genomic analysis (C37) support upregulation early in infection. The interpretation as cheating (C42-C46) is well-supported by prior work and evolutionary theory. The temporal patterns and statistical tests are appropriate for the longitudinal data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Following loss of cooperative pyoverdine production from the population, and only after this loss, the private phu heme uptake system is upregulated through phuS//phuR mutations. This privatization occurs in 15 of 16 cases after pyoverdine loss (survival analysis \u03c7\u00b2=11.7, p<0.01), demonstrating that upregulation is driven by the social environment rather than infection duration or host adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C58, C66, C71, C73 present the core finding with strong statistical support from survival analysis. The genomic evidence (C60-C65) identifies specific mutations and their timing. Claim C70 provides compelling negative evidence that phu remains unchanged for >30 years when pyoverdine is maintained. The temporal ordering is well-established through longitudinal sampling, though the authors acknowledge potential overestimation of timing due to sampling intervals. The conclusion that this is a social rather than host-driven response (C73, C91) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "19504157-2475-4045-81e7-383aa3a422c7",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phu system upregulation provides fitness benefits only at intermediate heme concentrations (2.5 \u03bcM) but is detrimental at high concentrations (5-10 \u03bcM), explaining why privatization occurs only after loss of cooperation. This concentration-dependent benefit demonstrates that privatization carries costs and represents a constrained evolutionary response rather than an optimal adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C84 present experimental growth data with appropriate statistical analysis (Two-Way ANOVA with interaction term F=48.11, p<0.01; post-hoc Tukey HSD tests). The isogenic pair design (C79-C83) provides strong evidence for the mutation's effect. The interpretation that this explains conditional upregulation (C74, C84) is logical. However, the clinical isolate pairs showed less clear results (mentioned but not detailed), and the experiment tests only one mutation in one genetic background, limiting generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loss of the cooperative pyoverdine system occurs earliest among iron uptake system mutations in 16 of 25 clonal lineages, consistent with expectations based on system size and mutation rate. Other iron systems (pyochelin, has, feo) show different mutation patterns, with pyochelin loss not differing from random expectations and feo rarely mutated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 provide statistical analysis using Poisson tests comparing observed to expected mutation rates based on gene size. The finding that pyoverdine loss occurs first in 64% of cases (16/25) is not significantly different from the expected 59% (14.69/25), appropriately interpreted as consistent with neutral expectations given system size. The analysis of other systems (C50-C53) provides context. However, the analysis excludes cases where order was unclear, potentially biasing results, and the has system analysis may be incomplete due to sequencing depth issues (C51).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "65b0849e-c3da-45fd-8c96-b9ba9a6986f7",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutations in the phu receptor gene phuR are significantly biased toward extracellular loops (Poisson test p<0.05), which may represent compensatory mutations to reduce iron uptake if concentrations become toxic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C87 provide statistical evidence for non-random mutation distribution using Poisson tests. However, the interpretation as compensatory mutations (C88) is speculative without functional validation. The predicted protein structure used for localization may be inaccurate, and the functional significance of mutations in extracellular loops versus other domains is not experimentally tested. Alternative explanations (e.g., differential mutation rates, selection for other functions) are not excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "8a153721-8d40-464e-9586-6c48f1c29685",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "This study reports the first observation of a natural population responding to cheat invasion by adopting a privatization strategy, demonstrating that switching to private mechanisms can provide an evolutionary alternative to extinction following loss of cooperation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C6, C13, C96 present the core novelty claim supported by the longitudinal genomic and phenotypic data showing the sequence: cooperation \u2192 cheat invasion \u2192 privatization. The ~1.3 million generation timescale (C12) and multiple independent observations strengthen the finding. However, the claim of being 'first' (C13) is qualified as 'to our knowledge' and the generalizability beyond this system is uncertain. The interpretation that this 'avoids extinction' is somewhat speculative as the bacteria continue to survive and the functional importance of iron acquisition is assumed rather than directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "4d6f2c0a-36d8-4e2d-99cf-726d41c4e077",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study analyzed 551 whole-genome sequenced P. aeruginosa isolates from 64 patients over an estimated 1.3 million generations, with the isolate collection validated to represent genetic diversity well.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C30 describe the dataset with appropriate citations. The generation estimate (C12) is based on reasonable assumptions about doubling times, though these are estimates. The validation of sampling representativeness (C30) is important for the study's conclusions. The authors appropriately acknowledge that incomplete sampling could lead to misclassification but would bias toward null findings (Type I error), making detected effects conservative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "6dab9077-8d99-4505-b7d1-131326d551a6",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pyoverdine production can be maintained for >30 years in some lineages, potentially stabilized by limited diffusion in viscous CF sputum that impairs cheat exploitation, though three of twelve DK1 lineages maintained production while five lost it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98, C101 present observations of long-term cooperation maintenance with mechanistic speculation supported by citations. The data (C101) showing both maintenance and loss in different lineages of the same clone type is valuable for demonstrating variation in outcomes. However, the mechanism (limited diffusion, C98) is inferred rather than directly tested, and the caveat about potential exchange between microcolonies (C99) complicates the interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "751dff9e-8011-45e7-b42f-f0ae6a98defc",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims establish that cheat invasion typically leads to cooperation loss and potential extinction, that P. aeruginosa uses multiple iron acquisition systems in CF infection with pyoverdine as the primary cooperative mechanism, and that both host adaptation and intraspecific competition drive bacterial evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C2, C8-C9, C14-C25, C89, C95) provide established knowledge and theoretical framework supported by appropriate citations. They set up the study's hypotheses and context. The characterization of different iron systems (C16-C21) is well-established, though the has system characterization (C21) is based on a related species. These background claims are appropriately used to frame the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    },
+    {
+      "id": "0ba618bb-0094-4aac-8aeb-1134ce2fdbe8",
+      "content_id": "dc7678eb-180a-49bf-82bb-b5a70d5f65b8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The effect of social environment on iron acquisition remains statistically detectable despite patient variation, and failure to appreciate social factors can lead to misinterpretation of bacterial adaptation. The pattern may apply to other exoproducts during infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 appropriately notes the robustness of findings across patient heterogeneity. Claim C94 makes a reasonable point about interpretation with citation support. However, claim C104 is speculative about generalization to other systems without direct evidence. These are appropriate discussion points but represent implications rather than direct findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:40:42.474575Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8489947a-bc17-4819-a4b4-c9069bf40b54",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "3be73f94-9d4b-4eb4-9e25-f26faeb63bb2",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "614a4969-1500-4ec1-8f01-5a4340edb90d",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "9cf8f107-2638-492b-b53f-7516e9954152",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "7d3f1495-7b66-447c-97c7-ef656802fdae",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "99b08505-d4c1-48bc-af30-3e7adee1490d",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "4da042c7-c7c0-4e3f-bc00-d88749bf1e87",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "9b92f812-34d5-4206-9143-eaf3626676ed",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "195035a4-4c31-4c2c-bdbb-0d7b9a2b7c98",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "1475817f-cbb1-4fe7-9842-b06db1bb5ece",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "b6497100-f6d8-442b-9d69-c7141902f5f8",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "08acf1f2-41b7-43e8-85ff-a996c1f741d6",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "a4ada537-df86-4399-bb94-e0dc560e72e7",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "230750d0-58b3-4a76-bcd1-a1a3b03073dc",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "deb55bcd-e5c0-48e0-92c4-c9cd556a3555",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "eb28fade-c5a0-48c5-a91f-386030fc53b1",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "73d78580-8ca9-46dd-99bf-dc06aacf148e",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "b99308e5-9969-4fc4-969a-843fe8ceb2dc",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "84d6e692-e8f7-4dfb-ba93-659e7aeaa42c",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "d872ce9b-886c-4401-a390-6502e08c8b48",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "3dccf029-a43d-46f4-b1de-cd1a414eb573",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "6a8b0bd4-82bf-48a9-83ab-98a1d3c5f7c9",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "8be83562-a652-4382-b8d0-aad267fba67f",
+      "result_id": "ff6c4eda-8348-4b53-b4e7-2fb4d3292daf"
+    },
+    {
+      "claim_id": "efd0fc86-3e94-4e57-a9b8-af4b1cb36a49",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "11977eb3-b13f-44d0-8e51-21b115497e59",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "5258558c-30e1-42ca-b518-d4fcfe48568a",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "67e67b2f-a4bb-4286-aed4-c51a7922348e",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "7b3b33ca-c522-49bd-a19f-3dd8be40c1f4",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "d29d64db-7575-450b-a159-1b77689d890f",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "227e61f0-17a7-43ca-a2cf-e37949a467e2",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "55e5dc62-e698-4d5c-8c03-45d9a4bdaf04",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "61bb4782-92f9-4fd8-b37f-080a9adf9918",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "55d66476-fe25-456e-8df9-2c1249f63f45",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "88b7cbc8-1415-457e-ad42-9a07ab95265e",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "79f8ae30-2d48-4675-baaf-00e634216b6f",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "7bae04b0-e7db-4192-9128-6ab5259dbd9e",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "9bc1ffbd-866a-429f-a35c-21f933fa39fe",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "32806af0-025f-4f08-99f2-a6f8fe81b061",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "fafd41e7-799d-45f9-9200-12d139aa3e7b",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "91947370-bad7-4dd1-97e3-078dfc850d93",
+      "result_id": "3b37d24d-f23a-4188-98f8-8a5f8e6a1ab7"
+    },
+    {
+      "claim_id": "1ec62870-5481-4202-8428-9d72e2733c1e",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "248aebf0-83f5-4e65-82cf-b52dd5579b2d",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "2e37b290-6740-46a5-be5a-aca9de1843cc",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "b603822e-0099-441d-b762-e3c9963b09fd",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "7b4a4426-9685-46ed-90b4-bff1bc7e063e",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "0f059d42-7369-4ccc-bde4-a94eda740fbf",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "afd10e02-82a6-43be-91a3-734aec40bc4d",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "8f50056e-8fad-4bd5-8299-f7c3b7f60a4d",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "41d7a158-3798-427e-acf0-d2cc45464f28",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "a6ab8275-d188-4cbd-9192-ed4d08c7769b",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "07e1327a-d70c-4470-a80e-a462dcc5e6a6",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "a8876593-ab12-432a-a3a3-8fca77591864",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "8facb6ff-7819-4610-ad0e-1f8187c7f0a3",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "ccf97c5c-ef17-46c6-a46d-a928a53ca6a1",
+      "result_id": "19504157-2475-4045-81e7-383aa3a422c7"
+    },
+    {
+      "claim_id": "18be5ea5-1f3c-4eea-a503-06885112a1b7",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "04ef5e49-05f8-45ef-a706-216d37b90e13",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "5bd93cc4-7cbd-48ed-bb3b-cf52c399dde4",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "66d41ddc-a7cf-405d-aeba-b841fda1c88c",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "d9d85d65-e27f-451e-9af8-55db4fced909",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "73d0e23b-8801-4a00-bad3-c0ff44c01c95",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "db965ea8-4338-4c5d-91e6-7d36a1136f95",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "f4a5e2e6-8437-421d-bd80-4c674036f8d0",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "f9b50ec4-888b-4ab9-a82e-d34bea2769ee",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "914c0bae-0755-453d-87a3-eb25872e0cf8",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "814f71e2-18a0-4afd-b18d-cb08caad9b09",
+      "result_id": "991a3bd2-82e6-40c6-ba3a-937ca5df3b71"
+    },
+    {
+      "claim_id": "fae5b88f-272f-4572-8b4d-98513a1b5a43",
+      "result_id": "65b0849e-c3da-45fd-8c96-b9ba9a6986f7"
+    },
+    {
+      "claim_id": "61103b24-0233-418b-9acb-849ebda28fde",
+      "result_id": "65b0849e-c3da-45fd-8c96-b9ba9a6986f7"
+    },
+    {
+      "claim_id": "cd55b6a5-c524-4fe7-a983-aa7b5a544b33",
+      "result_id": "65b0849e-c3da-45fd-8c96-b9ba9a6986f7"
+    },
+    {
+      "claim_id": "497ab609-8b51-49b8-a700-806c99f79a6e",
+      "result_id": "8a153721-8d40-464e-9586-6c48f1c29685"
+    },
+    {
+      "claim_id": "9622381f-f43d-46cd-a244-5c1bd13b9965",
+      "result_id": "8a153721-8d40-464e-9586-6c48f1c29685"
+    },
+    {
+      "claim_id": "8e11dbdf-9b07-46a3-a4b1-a7e6b8444072",
+      "result_id": "8a153721-8d40-464e-9586-6c48f1c29685"
+    },
+    {
+      "claim_id": "8548cbb6-c0d6-41a9-b705-f1362c6b9b76",
+      "result_id": "8a153721-8d40-464e-9586-6c48f1c29685"
+    },
+    {
+      "claim_id": "a4e93c94-9f59-4e11-a619-d00426c5e1b3",
+      "result_id": "8a153721-8d40-464e-9586-6c48f1c29685"
+    },
+    {
+      "claim_id": "6eff7dbb-d146-4463-ad82-63200c2c8a3a",
+      "result_id": "4d6f2c0a-36d8-4e2d-99cf-726d41c4e077"
+    },
+    {
+      "claim_id": "d06d7bbf-9664-4c82-ae74-9f0a8e7972a4",
+      "result_id": "4d6f2c0a-36d8-4e2d-99cf-726d41c4e077"
+    },
+    {
+      "claim_id": "80ae9a29-1e98-49e5-94a8-afe464f03bc6",
+      "result_id": "4d6f2c0a-36d8-4e2d-99cf-726d41c4e077"
+    },
+    {
+      "claim_id": "2874df4c-aad7-49a3-a6e1-ff06ce0ebbd4",
+      "result_id": "4d6f2c0a-36d8-4e2d-99cf-726d41c4e077"
+    },
+    {
+      "claim_id": "a2503eef-f320-42f7-b05c-314cf0e3650a",
+      "result_id": "4d6f2c0a-36d8-4e2d-99cf-726d41c4e077"
+    },
+    {
+      "claim_id": "48852fc3-43b2-4dc6-a086-8a96b566af99",
+      "result_id": "4d6f2c0a-36d8-4e2d-99cf-726d41c4e077"
+    },
+    {
+      "claim_id": "5e54b3a7-5889-486b-bf4d-3fa10fc74ddf",
+      "result_id": "6dab9077-8d99-4505-b7d1-131326d551a6"
+    },
+    {
+      "claim_id": "97e1eea3-9b9b-4f0e-a981-de9f9628461b",
+      "result_id": "6dab9077-8d99-4505-b7d1-131326d551a6"
+    },
+    {
+      "claim_id": "04c95f1d-cf13-425c-8621-7ada5ecc4be3",
+      "result_id": "6dab9077-8d99-4505-b7d1-131326d551a6"
+    },
+    {
+      "claim_id": "d6bd23a1-5b0d-4302-a83b-aa4bb994d9be",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "f7826847-a8b1-4d88-8682-b88dfe79a062",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "1d7f5521-e39f-40e1-b406-81768a5e8570",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "390af8e5-63d9-466d-bcc2-d2e6a4820144",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "8548cbb6-c0d6-41a9-b705-f1362c6b9b76",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "14ca3470-6dc8-4b49-ba11-065d5581ffce",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "1b24dbd1-d6a8-4363-a67f-da6e6b64f273",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "dfab53a1-80e2-4b5d-b999-618fcddbd5ce",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "735f9c2e-ebb2-451e-98a8-9b60a980d80b",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "b79ba0c5-cf28-4d40-985d-0d773598a486",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "7e11aa54-6e4b-4f09-b637-b566f072d2f4",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "7d29722e-c4d4-4e0c-828c-ec4c2c1f7d55",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "b4dc60df-e223-4978-8f6d-fc2da7b46b5b",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "272657e6-e1e4-4842-ab4f-1f9cb0f4794f",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "36140e4f-d9bb-46a7-9115-01c8a4c0dc43",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "3731d691-6cc0-43d6-83fc-719a9d0ba7e4",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "fa34abf6-3346-49b4-8ee3-44bd68cd4603",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "e2e60780-1627-4491-a7f7-19425906f6ba",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "2558d3e3-e7dc-499c-b978-5aa8db13ffd9",
+      "result_id": "751dff9e-8011-45e7-b42f-f0ae6a98defc"
+    },
+    {
+      "claim_id": "96200d04-fccb-4abc-8a4d-2a180e27d3cf",
+      "result_id": "0ba618bb-0094-4aac-8aeb-1134ce2fdbe8"
+    },
+    {
+      "claim_id": "79663066-e563-4966-a067-1b2f050091e4",
+      "result_id": "0ba618bb-0094-4aac-8aeb-1134ce2fdbe8"
+    },
+    {
+      "claim_id": "c410ceb3-6cc3-42c5-b642-c7a50104f9ac",
+      "result_id": "0ba618bb-0094-4aac-8aeb-1134ce2fdbe8"
+    }
+  ],
+  "comparisons": []
+}

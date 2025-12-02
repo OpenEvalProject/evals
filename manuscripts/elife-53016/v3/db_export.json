@@ -1,0 +1,1816 @@
+{
+  "submission": {
+    "id": "d2f6c962-ebdf-4413-9ac0-3324a308a860",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:43:53.273620Z",
+    "updated_at": "2025-12-02T16:43:53.273620Z"
+  },
+  "content": [
+    {
+      "id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "submission_id": "d2f6c962-ebdf-4413-9ac0-3324a308a860",
+      "content_type": "manuscript",
+      "content_text": "# Pre-stimulus phase and amplitude regulation of phase-locked responses are maximized in the critical state\n\n## Authors\n\n- Arthur-Ervin Avramiea<sup>1</sup> ([ORCID: 0000-0002-0826-8269](https://orcid.org/0000-0002-0826-8269))\n- Richard Hardstone<sup>1</sup> ([ORCID: 0000-0002-7502-9145](https://orcid.org/0000-0002-7502-9145))\n- Jan-Matthis Lueckmann<sup>1</sup> ([ORCID: 0000-0003-4320-4663](https://orcid.org/0000-0003-4320-4663))\n- Jan B\u00edm<sup>1</sup> ([ORCID: 0000-0003-2780-5610](https://orcid.org/0000-0003-2780-5610))\n- Huibert D Mansvelder<sup>1</sup> ([ORCID: 0000-0003-1365-5340](https://orcid.org/0000-0003-1365-5340))\n- Klaus Linkenkaer-Hansen<sup>1</sup> ([ORCID: 0000-0003-2140-9780](https://orcid.org/0000-0003-2140-9780)) \u2020\n\n### Affiliations\n\n1. Department of Integrative Neurophysiology, Center for Neurogenomics and Cognitive Research (CNCR), Amsterdam Neuroscience Amsterdam Netherlands\n2. Neuroscience Institute, New York University School of Medicine New York United States\n3. Technical University of Munich Munich Germany\n4. Czech Technical University in Prague Prague Czech Republic\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding why identical stimuli give differing neuronal responses and percepts is a central challenge in research on attention and consciousness. Ongoing oscillations reflect functional states that bias processing of incoming signals through amplitude and phase. It is not known, however, whether the effect of phase or amplitude on stimulus processing depends on the long-term global dynamics of the networks generating the oscillations. Here, we show, using a computational model, that the ability of networks to regulate stimulus response based on pre-stimulus activity requires near-critical dynamics\u2014a dynamical state that emerges from networks with balanced excitation and inhibition, and that is characterized by scale-free fluctuations. We also find that networks exhibiting critical oscillations produce differing responses to the largest range of stimulus intensities. Thus, the brain may bring its dynamics close to the critical state whenever such network versatility is required.\n\n## Introduction\n\nUnderstanding how neurons coordinate their activity to produce emergent dynamics and behaviors is crucial to understanding how the brain gives rise to conscious perception. An influential approach for elucidating neural correlates of consciousness (Dehaene and Changeux, 2011; Engel and Singer, 2001; Tononi and Koch, 2008) has been that of threshold-stimulus detection (Li et al., 2014; Linkenkaer-Hansen et al., 2004; Wyart and Tallon-Baudry, 2009). In these tasks, subjects are given a stimulus that is set at the edge of perception, meaning that on 50% of trials subjects perceive it, and on 50% of trials they do not. In trials where the stimulus is perceived, primary sensory regions exhibit larger event-related potentials (Pins and Ffytche, 2003), larger event-related desynchronization (Vidal et al., 2015), and stronger phase-locking to the stimulus (Palva et al., 2005). However, what causes some trials to evoke stronger ERPs, event-related desynchronization, or phase-locking than other trials\u2014with dramatic consequences for perception\u2014cannot be explained by differences in the stimuli, which are held identical throughout the threshold-stimulus detection experiments. The alternative is that awareness of stimuli depends on brain processes that unravel around the time of the stimulation, for\u00a0example that pre-stimulus neuronal activity biases stimulus processing and conscious perception (Aru et al., 2012).\n\nOne candidate mechanism for gating stimulus processing is alpha oscillations (Jensen and Mazaheri, 2010), which inhibit unwanted stimuli from reaching consciousness (Capilla et al., 2014; H\u00e4ndel et al., 2011; Jensen et al., 2012; Jensen and Mazaheri, 2010; Thut et al., 2006). Fluctuations in alpha oscillations, possibly modulated by attention (Macdonald et al., 2011), may determine whether a stimulus is perceived or not. This was confirmed in threshold-stimulus experiments relating higher pre-stimulus alpha activity to decreased stimulus detection (Ergenoglu et al., 2004; Hanslmayr et al., 2005; Linkenkaer-Hansen et al., 2004). In addition to amplitude, the pre-stimulus alpha phase also predicts stimulus awareness (Busch et al., 2009; Mathewson et al., 2009; VanRullen, 2016).\n\nRegardless of the attentional state, neuronal oscillations in the alpha band exhibit spontaneous amplitude fluctuations. However, these fluctuations are not random, but exhibit a specific temporal structure: autocorrelations with scale-free decay that extends up to time scales of hundreds of seconds (Linkenkaer-Hansen et al., 2001), also called long-range temporal correlations (LRTC). This scale-free character of the oscillations emerges in neuronal networks with balanced excitatory and inhibitory forces (Poil et al., 2012) and is considered a sign of critical-state dynamics (Bak et al., 1987; Chialvo, 2010). Thus, oscillations exhibiting LRTC are referred to as \u2018critical oscillations\u2019. Criticality in the brain has also been associated with scale-free neuronal avalanches, and different computational models have used this link to indicate that critical dynamics are beneficial for processing information (Beggs and Plenz, 2003), for\u00a0example evoked responses show the largest dynamic range (Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011) and this has subsequently been confirmed experimentally (Gautam et al., 2015; Shew et al., 2009). However, it is not known whether critical-state dynamics of alpha oscillations is beneficial for stimulus processing. Importantly, it remains entirely unknown whether pre-stimulus bias of post-stimulus processing depends on brain dynamics being close to the critical point.\n\nTo answer this question, we consider the network response in terms of phase-locking to the stimulus, which is thought to play a role in reorganizing neuronal networks for efficient stimulus processing (Hanslmayr et al., 2005; Min et al., 2007; Sauseng et al., 2007; Voloh and Womelsdorf, 2016). We rely on an extension of a model of critical oscillations (CROS) (Poil et al., 2012), which exhibits dynamics comparable to human M/EEG (Dalla Porta and Copelli, 2019). We use the model to investigate the network phase-locking response as a function of network connectivity, stimulus size, and pre-stimulus alpha amplitude and phase. We then related short-term fluctuations in information processing in these networks, with a long-term characteristic of the oscillatory dynamics: their level of criticality. To evaluate the criticality of alpha oscillations, we used detrended fluctuation analysis (DFA, see Materials\u00a0and\u00a0methods), which can discriminate between random fluctuations in the amplitude of oscillations and critical oscillations with long-range temporal correlations. In addition, DFA has the advantage, over other measures of criticality such as neuronal avalanches, that it can be estimated noninvasively at electrode level. This will allow future experiments with EEG/MEG recordings to test whether for\u00a0example the criticality of sensory cortices biases stimulus processing. We show that pre-stimulus amplitude and phase regulation occurs for critical, but not for subcritical or supercritical networks. Thus, critical-state dynamics in a neuronal network is associated with versatile functions, allowing it to flow between low- and high-responsivity states on sub-second time scales. In addition, we show that a critical network can differentiate the widest range of stimulus sizes. Together, our results suggest that understanding how close neuronal networks are to criticality is essential for understanding their function.\n\n## Results\n\n### Unstimulated network produces multi-level criticality\n\nTo test the effect of critical oscillations on neuronal network functionality, we adapted a model of ongoing neuronal activity (CROS) (Poil et al., 2012) (see Materials\u00a0and\u00a0methods). CROS consists of 75% excitatory and 25% inhibitory integrate-and-fire neurons arranged in a 50 \u00d7 50 grid (Figure 1\u2014figure supplement 1A). The two parameters that need to be set when creating a network are the percentage of neurons within a local range (circular radius four neurons) that each excitatory and each inhibitory neuron connects to (Figure 1\u2014figure supplement 1A). The firing rate grew monotonously for both excitatory and inhibitory neurons, as we increased excitatory connectivity (Figure 1\u2014figure supplement 1B,C). Networks oscillated in the 8\u201316 Hz range (Figure 1\u2014figure supplement 1D), with the power of the oscillation increasing as we move towards an excitation-dominated regime (Figure 1\u2014figure supplement 1E). Importantly, the model exhibits multi-level criticality, with spatial and temporal power-law scaling behavior in network activity, which arises through a common mechanism of balanced E/I connectivity (Figure 1\u2014figure supplement 1F\u2013J). To illustrate the importance of the level of criticality on network function, we will show detailed data from three networks throughout the paper: a subcritical (45% excitatory/90% inhibitory connectivity - blue), a critical (60%/75% - green), and a supercritical one (75%/60%\u00a0-\u00a0red)(e.g., Figure 1E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig1-v3.jpg)\n\n**Figure 1.:** (A) A stimulus is connected to a random subset of excitatory neurons on the grid.\u00a0(B) We stimulated 1800 excitatory neurons in three example subcritical, critical and supercritical networks. The top plots show the total number of excitatory (red) and inhibitory (blue) spikes with millisecond resolution. Plots below show individual spikes for all 2500 excitatory and inhibitory neurons in the networks. In all cases, the response to the stimulus is oscillatory with a periodicity characteristic of an alpha (8\u201316 Hz) rhythm. (C) The phase-locking factor at a time point post-stimulus is calculated as the normalized vector sum of phase angles across trials (inset left). A value of 1 corresponds to all trials having the same phase, a value of 0 corresponds to a uniform distribution of phases. Post-stimulus phase-locking response to a stimulus is dependent on the size of the stimulus. Shown for different stimulus sizes in a critical network. (D) Dynamic range was calculated as the orders of magnitude of neurons stimulated between the 10th and 90th percentile, of a sigmoid fit to the phase-locking response, at a time point where the network shows response to the stimulus (150 ms post-stimulus). Shown for example sub-critical (blue), critical (green) and super-critical (red) networks. (E) Dynamic range is dependent on E/I connectivity balance. The black line indicates critical neuronal avalanches, as measured when the networks were not stimulated. The networks used to illustrate the functionality of different criticality regimes are shown as triangles on the phase-space with the colors of sub-critical (blue), critical (green) and super-critical (red). (F) Dynamic range of phase-locking response increases with long-range temporal correlations (LRTC) at 150 ms post-stimulus (Spearman correlation). Networks binned based on average DFA for each of the 256 excitatory/inhibitory connectivity parameter combinations, and dynamic range calculated as the mean of networks in that bin.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Network consists of excitatory and inhibitory neurons arranged on a grid. Connectivity is set separately for excitatory and inhibitory neurons, and is defined as the percentage of neurons within local range that each neuron connects to. (B,C) Firing rates of excitatory (B) and inhibitory (C) neurons increase as excitatory connectivity is increased. (D) Network activity shows oscillations between 8 and\u00a016 Hz. Shown for three example networks: inhibition-dominated (blue), balanced E/I (green), and excitation-dominated (red). (E) Oscillation power is dependent on the balance between excitation and inhibition. The locations of the three example networks are highlighted on the phase space by triangles with corresponding colors. (F) Spiking activity can display sub-critical (blue), critical (green) or super-critical (red) neuronal avalanches. Shown for same networks as (D). (G) Criticality of neuronal avalanches is dependent on E/I balance. The black line indicates critical neuronal avalanches ($\u03ba=1$). (H) Oscillations can exhibit LRTC in their amplitude modulation, as measured by detrended fluctuation analysis (DFA). DFA is ~0.5 for random signals, and > 0.5 for signals with temporal correlations. Shown for same networks as (D). (I) LRTC emerge when excitation balances inhibition in terms of connectivity. The black line indicates critical neuronal avalanches ($\u03ba=1$). (J) LRTC peak with at Kappa ~ 1, corresponding to critical neuronal avalanches.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Dynamic range of phase-locking factor is significantly correlated with LRTC (DFA) in the latency ranges highlighted with red (Spearman correlation, red\u00a0=\u00a0p\u00a0<\u00a00.001, with cluster-based correction for multiple comparisons). Each data point represents the Spearman correlation between the 20 bins of DFA computed for un-stimulated networks, and the mean dynamic range for the respective bins.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Replication of Figure 1D for comparison purposes. (B) Multiplying stimulus weight by 8, allows the response of super-critical networks to saturate. (C) Dynamic range of PLF for 10 network initializations of the example critical (green), subcritical (blue), and supercritical (red) networks, for different levels of the external input strength (ranging between 1/64 and 64 times the baseline value, winput\u00a0=\u00a00.0085). Lines denote mean dynamic range, and the gray ribbon represents standard error.\n\n### Dynamic range of phase-locking response is strongest for critical networks\n\nPreviously, it was shown that criticality maximizes the dynamic range of evoked firing-rate responses (Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011). However, event-related responses in large oscillatory networks also reflect a reset in the oscillatory phase following stimulation, leading to the phase-locking of the oscillation to the stimulus (Makeig et al., 2002; Min et al., 2007; Palva et al., 2005). As such, the firing rate and phase-locking responses reflect fundamentally different aspects of network activity, for\u00a0example evoked firing-rate responses may increase the overall network activity without affecting the phase of oscillatory activity in a particular frequency band. In fact, evoked firing-rate responses are not an appropriate measure of network response in networks with strong oscillations: they fluctuate continuously with the phase of the ongoing oscillation, making it difficult to judge the firing-rate response in absolute values, that\u00a0is without relating it to the ongoing oscillation. In that respect, the phase-locking response is a more appropriate way to detect changes in network activity occurring due to external stimulation.\n\nTo test whether criticality maximizes the dynamic range also for phase-locked oscillatory responses, we attached a stimulus to n excitatory neurons distributed randomly on the grid (Figure 1A). The stimulus had the same weight as any of the excitatory to excitatory synapses in the network (winput\u00a0=\u00a0wEE\u00a0=\u00a00.0085), and lasted for one time step (1 ms). We found that the stimulus response in our networks is indeed oscillatory, which may result in stimulus phase-locking (Figure 1B). We then investigated how changing the stimulus size, n, altered the phase-locking response of a network to the stimulus. In Figure 1C, we can see that a critical network increases the level of post-stimulus phase-locking as stimulus size is increased. This shows that the CROS model is capable of showing oscillatory responses to a stimulus, as has been seen in human subjects (Palva et al., 2005). We calculated the dynamic range, which gives an indication of how well a network can give differing responses to stimuli of different sizes (see Materials\u00a0and\u00a0methods). Critical networks show a wider dynamic range than their sub-/super-critical counterparts (Figure 1D\u2013F), and this effect is robust over a wide range of post-stimulus latencies (Figure 1\u2014figure supplement 2). Interestingly, in the case of supercritical networks, the strong, ongoing oscillatory activity prevents the phase-locking response from saturating (PLF\u00a0~1), even at the largest stimulus sizes (Figure 1D, Figure 2\u2014figure supplement 1). Another factor that can shape stimulus response, other than stimulus size, is the strength of the external stimulus. We found that an 8-fold increase in the external input strength was sufficient to bring the PLF of supercritical networks to saturation, for the largest stimulus size (Figure 1\u2014figure supplement 3B). However, such a large increase in the input strength also leads to a stronger PLF for the smaller stimulus sizes in the case of subcritical and critical networks, which means they no longer show weak PLF responses reducing their dynamic range. Of all tested strengths and networks, the maximal dynamic range occurs for critical networks at a multiplier\u00a0~1 (Figure 1\u2014figure supplement 3C). Overall, our results show that critical networks discriminate the widest range of stimulus\u00a0sizes through their post-stimulus phase-locking response.\n\n### Pre-stimulation amplitude influence on phase-locking requires critical dynamics\n\nThe ongoing oscillations showed a phase-locking response in the post-stimulus period (~65\u2013250 ms) to the stimulus, which depended on the criticality of the network (Figure 2A,B), as well as on the stimulus size (Figure 2\u2014figure supplement 1). Considering the complex variation of activity in a critical network, we wondered whether critical networks function differently depending on their instantaneous state. For this purpose, we assessed the network phase-locking response to a stimulus of 5 neurons, and related it to the pre-stimulus amplitude averaged over the \u2212150 to \u221250 ms time range, in the 8\u201316 Hz frequency band. We found that critical networks exhibit strong negative pre-stimulus amplitude regulation (Figure 2C\u2013E), whereas sub-critical or super-critical networks show no pre-stimulus amplitude regulation (Figure 2D,E). We confirmed this result statistically by showing that pre-stimulus amplitude regulation was more prominent for networks with stronger LRTC (Figure 2F, Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig2-v3.jpg)\n\n**Figure 2.:** (A) Ongoing oscillations phase-lock to stimulus.\u00a0Example shown for five neurons stimulated, for sub-critical (blue), critical (green), and super-critical networks (red). (B) Phase-locking response at 150 ms post-stimulus depends on the balance between excitation and inhibition, being highest for sub-critical networks, lowest for super-critical networks, and with intermediate values in the critical regime. The locations of the three example networks are highlighted on the phase space by triangles with corresponding colors. black line indicates critical neuronal avalanches.\u00a0(C) To calculate the PLF response across trials with similar pre-stimulus amplitude, we split trials in 10 bins based on the pre-stimulus amplitude in the \u2212150 to \u221250 ms time range, for the 8\u201316 Hz frequency band. Trials belonging to different pre-stimulus amplitude bins show different phase-locking response post-stimulus. Color indicates the percentile interval of the pre-stimulus amplitude bin. (D) Power of pre-stimulus oscillation can alter the phase-locking response of a network to the stimulus, in the presence of critical oscillations. Shown for example sub-critical (blue), critical (green), and super-critical (red) networks. Pre-stimulus amplitude regulation, Regamp, was computed as the Spearman correlation coefficient between the pre-stimulus amplitude percentile bins, and the PLF of the trials in each bin. (E) The strength of pre-stimulus amplitude regulation is dependent on a balance between excitation and inhibition in terms of connectivity. The black line indicates critical neuronal avalanches, as measured when the networks were not stimulated. Here shown for a stimulus size of 5 neurons. (F) Pre-stimulus amplitude regulation (Regamp) is more prominent for stronger LRTC (DFA) at 150 ms post-stimulus (Spearman correlation). DFA was measured for the non-stimulated networks, and Regamp was measured for the same networks, but with a five neuron stimulus. Networks binned based on DFA as in Figure 1F. (G) Critical networks exhibit pre-stimulus amplitude regulation for the widest range of stimuli. Supercritical networks also show regulation, but only at very high stimulus sizes. mean\u00a0\u00b1\u00a0sem corresponding to 10 individual networks with the same excitatory/inhibitory connectivity as the selected sub-critical (blue), critical (green), super-critical (red) networks. Horizontal lines at the bottom of the plot show the range of stimuli for which the networks show significant pre-stimulus regulation (two-sided t-test, null hypothesis mu\u00a0=\u00a00, Bonferroni corrected for 3 \u00d7 16 comparisons).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We ran 10 network initializations for each excitatory/inhibitory connectivity parameter combination, as well as for the entire range of stimulus sizes. The black line indicates critical neuronal avalanches ($\u03ba=1$), as measured when the networks were not stimulated. The phase-locking factor shows higher values for inhibition-dominated, sub-critical networks, and also for larger stimulus sizes. Note, that for the super-critical regime, even the largest stimulus sizes fail to saturate the phase-locking factor.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Pre-stimulus amplitude regulation shows a significant correlation with LRTC (DFA) in the latency ranges highlighted with red (Spearman correlation, red\u00a0=\u00a0p\u00a0<\u00a00.001, with cluster-based correction for multiple comparisons).\u00a0Each data point represents the Spearman correlation between the 20 bins of DFA computed for un-stimulated networks, and the mean Regamp for a five neuron stimulus, aggregated over each bin.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Replicates Figure 2G for comparison purposes.\u00a0(B) The dynamic range of pre-stimulus amplitude regulation changes if we increase the input weight by a factor of 8. (C) Subsequently, we ran 10 network initializations for each of the three example networks (sub-critical, critical, super-critical), at different levels of external input weight, ranging from 1/64 to 64 times the baseline value (winput\u00a0=\u00a00.0085). The dynamic range of pre-stimulus amplitude regulation was calculated as the orders of magnitude over which it shows significant effects. In critical networks, pre-stimulus amplitude regulation occurs over a wider range of stimulus sizes than sub/supercritical networks, regardless of the input weight.\n\nTo test whether this function is generic to criticality and not specific to the chosen stimulus size, we investigated the three combinations of excitatory/inhibitory connectivity and found that the critical network\u2014unlike the sub-/super-critical networks\u2014showed significant pre-stimulus amplitude modulation for a wide range of stimulus intensities (Figure 2G). Changing the weight of the external input also affects the range of stimuli over which networks show pre-stimulus amplitude regulation (Figure 2\u2014figure supplement 3B). Nonetheless, the range of stimuli over which the critical networks show pre-stimulus amplitude regulation is superior to that of the subcritical and supercritical networks, regardless of the strength of the input weight (Figure 2\u2014figure supplement 3C).\n\n### Pre-stimulation phase influence on phase-locking requires critical dynamics\n\nHaving identified a strong interaction between criticality of oscillations and pre-stimulus amplitude on stimulus-evoked phase-locking, we asked whether a similar effect is present for the phase of the pre-stimulus oscillation. For the sub- and super-critical networks there was no pre-stimulus phase regulation of response at a stimulus size of 5 neurons (Figure 3A). In contrast, the critical network showed large differences in post-stimulus phase-locking for different pre-stimulus phase bins (Figure 3A). These networks showed the weakest response on the descending side of the alpha cycle, when the network is inhibited, and the strongest response on the rising side of the alpha cycle, when the network is in an excitable state (Figure 3\u2014figure supplement 1). Looking across the connectivity parameter space, we found that pre-stimulus phase dependence of post-stimulus phase-locking requires a balance in E/I connectivity (Figure 3B), and is significantly correlated with criticality as reflected in LRTC (Figure 3C, Figure 3\u2014figure supplement 2). The pre-stimulus phase influence on phase-locking also generalized to other stimulus sizes. Given the three combinations of excitatory/inhibitory connectivity indicated in Figure 3D, we found that the critical networks show pre-stimulus regulation over the widest range of stimulus sizes. We found that changing the weight of the external input also affects the range of stimuli over which pre-stimulus phase regulation is significant (Figure 3\u2014figure supplement 3B). Nonetheless, pre-stimulus phase-regulation occurs for a wider range of stimuli in critical networks than in their subcritical or supercritical counterparts, regardless of the strength of the input weight (Figure 3\u2014figure supplement 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig3-v3.jpg)\n\n**Figure 3.:** (A) The phase of pre-stimulus oscillations can alter the phase-locking response of a network to a stimulus in the presence of critical oscillations.\u00a0Trials are split into 32 evenly spaced bins based on pre-stimulus phase (\u22125 ms) with an equal number of trials in each bin. Phase-locking at 150 ms post-stimulus was calculated for each bin. Pre-stimulus phase regulation of response, Regphase, was calculated based on the post-stimulus PLF distribution of the bins and examples are shown for sub-critical (blue), critical (green) and super-critical (red) networks. Super-critical networks show higher PLF per bin than sub-critical networks because the former have stronger alpha oscillations which carry the phase of alpha oscillations for a longer time into the post-stimulus period without adjusting the phase due to the stimulus. (B) Pre-stimulus phase regulation is dependent on E/I connectivity balance. The black line indicates critical neuronal avalanches, as measured when the networks were not stimulated. Here, shown for a stimulus size of 5 neurons. (C) Pre-stimulus phase regulation is more prominent for stronger LRTC at 150 ms post-stimulus (Spearman correlation). DFA was computed for the unstimulated networks, and Regphase for the same networks, but with five neurons stimulated. Networks binned based on DFA exponent, as in Figure 1F. (D) Critical networks exhibit pre-stimulus phase regulation over the widest range of stimulus\u00a0sizes. Supercritical networks also show regulation, but only at very high stimulus sizes. mean\u00a0\u00b1\u00a0sem corresponding to 10 individual networks with the same excitatory/inhibitory connectivity as the selected sub-critical (blue), critical (green), super-critical (red) networks. Black shaded line is the significance threshold calculated as the 95% percentile of pre-stimulus phase regulation based on bootstrapping of pre-stimulus and post-stimulus phases (see Supplementary information - Materials\u00a0and\u00a0methods).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We ran 10 network initializations for the same 3 parameter combinations used throughout the paper (subcritical A,B, critical C,D, supercritical E,F).\u00a0For each run we binned the trials in 32 bins based on the pre-stimulus phase at -5 ms, and computed the PLF at 150 ms for each bin. (A,C,E). Each individual colored line corresponds to the PLF distribution across phases for one of the 10 simulations. The black line represents the average across all 10 simulations. As shown before, the pre-stimulus phase regulates the post-stimulus response only for critical networks. For each simulation run, we highlighted the phase bin showing the highest PLF with a red rectangle, and the phase bin showing the lowest PLF with a blue rectangle. The bins with highest/lowest PLF are roughly the same across trials for critical networks (C), but highly spread out for sub/supercritical networks (A,E). (B,D,F) The pre-stimulus phase is calculated on the signal filtered using a one-way filter, which induces a phase shift of 125 ms. To resolve the phase of the oscillation right before the stimulation, we computed, for each of the 10 simulations, the average of the network signal (unfiltered), across trials belonging to the phase bin with the highest PLF (red) and the phase bin with the lowest PLF (blue). We included in our analysis stimulation trials from all 10 simulations. To isolate variation in pre-stimulus phase from the baseline level of activity, which differs between sub/super/critical networks, we standardized the data. We subtracted from the average across simulation runs, the mean of activity calculated between -50 and 0 ms, and then we divided by the standard deviation of the activity from the same time interval. For critical networks (D), there is a clear differentiation: on trials where the phase-locking response is strongest (red), the stimulus arrives half-way through the rising side of the alpha oscillation (where the phase is approximately 0). On trials where the phase-locking is weakest (blue), on the other hand, the stimulus arrives half-way through the falling side of the alpha oscillation (where the phase is approximately $\\pi$). Subcritical and supercritical networks do not show such a clear differentiation, thereby illustrating that pre-stimulus phase regulation of stimulus response requires critical-state dynamics.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Pre-stimulus phase regulation shows a significant correlation with LRTC (DFA) in the latency ranges highlighted with red (Spearman correlation, red\u00a0=\u00a0p\u00a0<\u00a00.001, with cluster-based correction for multiple comparisons).\u00a0Each data point represents the Spearman correlation between the 20 bins of DFA computed for un-stimulated networks, and the mean Regphase for a five neuron stimulus, aggregated for each bin.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Replicates Figure 3D for comparison purposes. (B) The dynamic range of pre-stimulus amplitude regulation changes if we increase the input weight by a factor of 8 (B). (C) Subsequently, we ran 10 network initializations for each of the three example networks (sub-critical, critical, super-critical), at different levels of external input weight, ranging from 1/64 to 64 times the baseline value (winput\u00a0=\u00a00.0085). The dynamic range of pre-stimulus phase regulation was calculated as the orders of magnitude over which it shows significant effects. In critical networks, pre-stimulus phase regulation occurs over a wider range of stimulus sizes than sub/supercritical networks, regardless of the input weight.\n\n### The relationship between criticality and network versatility is robust to changes in model parameters\n\nModel parameters were selected through an optimization process which aimed at getting power-law avalanche distributions and robust LRTC (as described in more detail in Materials and methods), but did not include any criteria to maximize the dynamic range of phase-locking response, or pre-stimulus amplitude or phase regulation. Therefore, we expect that the functional consequences of criticality on stimulus processing that emerged out of the model, are generic to criticality, and not specific to the actual parameters. To verify this, we repeated our analysis for two versions of the model where the synaptic weight of excitatory to excitatory connections (wEE) was multiplied by a factor of 0.75, or by a factor of 1.25. Multiplication of wEE by a factor of 0.75 reduced the overall activity in the network, which means that stronger connectivity is required to achieve the same dynamics, leading to a shift up of the critical line through the phase space (Figure 4). Increasing wEE had the opposite effect on the critical line. Importantly, the functional consequences of criticality\u2014maximized dynamic range, pre-stimulus amplitude and phase regulation\u2014followed this shift in the critical line. This suggests that the relationship between criticality and versatility in stimulus processing is not coincidental on the specific choice of parameters, but generic to criticality.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53016/elife-53016-fig4-v3.jpg)\n\n**Figure 4.:** Phase-space plots of LRTC (A,E), Dynamic Range (B,F) Amplitude Dependence (C,G), and Phase Dependence (D,H), for networks with the weight of the excitatory to excitatory connections (wEE) multiplied by a factor of 0.75 (top row) or 1.25 (bottom row). black line indicates critical neuronal avalanches, as measured when the networks were not stimulated.\n\n## Discussion\n\nIn this study, we establish for the first time a link between critical-state dynamics of oscillations and the ability of a network to respond differently depending on the amplitude of ongoing alpha oscillations. This functionality has been investigated in many human studies (Ergenoglu et al., 2004; Hanslmayr et al., 2005; Linkenkaer-Hansen et al., 2004), where a low oscillation power in relevant sensory areas in the pre-stimulus period has been seen as a pre-requisite of conscious perception. In non-relevant areas, on the other hand, it has been suggested that a high oscillation power serves to functionally inhibit that region (Smith et al., 2012). Our findings are also consistent with the notion that alpha oscillations create periodic fluctuations in excitability (Klimesch et al., 2007), which are indexed by the phase of the oscillations. Pre-stimulus phase has been shown to bias perception (Busch et al., 2009; Mathewson et al., 2009; VanRullen, 2016) and we found that this function is also likely to be modulated by the criticality of the network. In addition, we show that oscillatory spiking neuronal networks have an optimal dynamic range when they are critical, which is in agreement with previous work on non-oscillatory networks (Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011; Shew et al., 2009), and suggests that optimal dynamic range is a generic property of critical systems. Thus, since the level of criticality affects network response in terms of stimulus phase-locking, and phase-locking plays a role in the generation of event-related responses (ERPs) (Makeig et al., 2002; Min et al., 2007), we predict that criticality will also affect the different time components of ERPs.\n\nThere is much debate as to the cause of amplitude fluctuations during threshold stimulus detection tasks, with top-down mechanisms such as attention and expectation being suggested (Jensen et al., 2012; Melloni et al., 2011). Here, we show that a network with balanced excitatory and inhibitory connectivity produces spontaneous amplitude fluctuations that have a functional role, meaning that the network goes through periods of high and low sensitivity to external stimuli. In the unbalanced state, the network loses this function and either reliably reacts (in the sub-critical case), or ignores the stimulus (super-critical case). Thus, top-down mechanisms are not required for fluctuations in alpha power; however, it is plausible that attentional mechanisms can actively regulate the level of fluctuations to shift the network\u2019s operating point relative to the critical state, allowing the network to react in the required manner (Wyart and Tallon-Baudry, 2009). How do these findings relate to task performance? Pre-stimulus activity regulation of post-stimulus response has been found beneficial, by enhancing detection of stimuli that are attended to\u00a0(Capilla et al., 2014) or expected (Mayer et al., 2016), and reducing detection of irrelevant stimuli. The spontaneous fluctuations in amplitude observed at criticality, with impact on conscious perception, may serve to flexibly switch between the different stimuli competing for attention. To this is added another advantage of being in the critical state: it requires minimal attentional modulations to reach the sub- or super-critical states, and thus to enhance aspects of stimuli, for example in the case of stimulus discrimination (Tomen et al., 2014).\n\nHowever, is this network ability to regulate perception based on pre-stimulus amplitude always optimal for performing a task? In tasks where continuous detection ability is required, fluctuations in pre-stimulus activity will actually decrease task performance in those periods of amplitude that produce smaller post-stimulus response. In addition, the broadening of attention to external stimuli in the critical state, is accompanied by increased susceptibility to task-unrelated mentation, or mind-wandering (Hellyer et al., 2014). When people experience periods of mind-wandering during task-performance, this results in reduced phase-locking to a stimulus (Baird et al., 2014). In these cases a more sub-critical network would actually perform better in terms of constant attention (Irrmischer et al., 2018; Tomen et al., 2014) and a super-critical network would perform better in terms of constant functional inhibition. Our results are in line with the predictions of Cramer et al. (2019), which suggest that the critical state is not optimal for all information processing requirements: complex tasks benefit from criticality, whereas in simple tasks, the high susceptibility to stimuli, memory capacity and entropy of a critical regime might impair performance.\n\nWe have shown that critical networks have overall the widest dynamic range of phase-locking response, and pre-stimulus amplitude and phase regulation. However, we also found that supercritical networks can show differential PLF and pre-stimulus regulation for the large stimulus sizes where the PLF response of critical networks saturates. One way in which the brain can take advantage of the information processing benefits of different states is to regulate its dynamics with respect to the critical point in a task-dependent manner (Pfeffer et al., 2018). Zierenberg et al. (2020) show that the brain could also combine networks with different distances to the critical point, such that the resulting ensemble has a dynamic range of stimulus response wider than any of the ensemble networks. This strategy could plausibly be employed to extend the range of stimulus sizes over which pre-stimulus amplitude and phase regulation occur.\n\nAlthough our computational model abstracts many biophysiological neuronal mechanisms, it captures essential features of neuronal dynamics: alpha oscillations, long-range temporal correlations, and scale-free avalanches, which emerge at a specific balance of excitatory and inhibitory connectivity. We showed that the relationship between criticality and the maximal versatility of network function is not specific to the selection of model parameters, which suggests that it is generic to criticality. Future studies should test whether our results also hold for more physiologically realistic models, for\u00a0example where excitatory and inhibitory currents balance each other (Haider et al., 2006; Rudolph and Destexhe, 2003).\n\nPreviously, non-oscillatory neuronal models have shown maximized dynamic range at criticality (Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011; Shew et al., 2009). While it is plausible that non-oscillatory models could also show a pre-stimulus \u2018amplitude\u2019 regulation effect based on the level of pre-stimulus firing\u2014and that this effect is likely to be maximal at criticality\u2014it is unclear how a phase regulation effect could occur without an ongoing oscillation. Future studies could investigate whether the presence of oscillations is important for pre-stimulus phase and amplitude regulation to occur, in models with a different type of critical phase transition (such as absorbing/sustained) (Del Papa et al., 2017; Levina et al., 2007).\n\nOverall our study highlights the importance of critical-state dynamics (Chialvo, 2010) for understanding neuronal network function, and shows that it is possible to integrate oscillatory mechanisms into this framework. Importantly, while the quantitative hallmarks of criticality require long-time monitoring of spatial and temporal dynamics that are statistically stable, our results show that the concept of critical brain dynamics is compatible with time-varying functions\u2014an important notion in contemporary theories of neuronal oscillations and their role in neuronal communication and in attention.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Brian Simulator</td>\n      <td>https://briansimulator.org</td>\n      <td>RRID:SCR_002998</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>https://www.mathworks.com/products/matlab</td>\n      <td>RRID:SCR_001622</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>circular statistics</td>\n      <td>https://mathworks.com/matlabcentral/fileexchange/10676-circular-statistics-toolbox-directional-statistics</td>\n      <td>RRID:SCR_016651</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R Project for Statistical Computing</td>\n      <td>http://www.r-project.org/</td>\n      <td>RRID:SCR_001905</td>\n    </tr>\n  </tbody>\n</table>\n\n### CRitical OScillations (CROS) model\n\nWe used an adapted version of the model described in Poil et al. (2012), with synaptic weights optimized for power-law avalanches and long-range temporal correlations. The model was implemented using the Brian2 simulator for spiking neural networks (Stimberg et al., 2014; RRID:SCR_002998). Specifically, we modeled networks of 75% excitatory and 25% inhibitory integrate-and-fire neurons arranged on a 50x50 open grid. Placing neurons on the grid using uniform sampling may result, by chance, in clusters of excitatory or inhibitory neurons. To avoid this, we first positioned inhibitory neurons on the grid according to Mitchell\u2019s best candidate algorithm (Mitchell, 1991), which results in a more even spatial distribution. The remaining spaces were filled with excitatory neurons. Networks differ in their two connectivity parameters, $C_{E}$ and $C_{I}$, which are the percentage of other neurons within a local range (a circle with radius = 4 neurons centered on the presynaptic neuron) that each excitatory and each inhibitory neuron connects to, respectively. Connectivity parameters were set between 25\u00a0and\u00a0100% at 5% intervals, and 10 different networks were created for each combination of $C_{E}$ and $C_{I}$. Border neurons had fewer connections because these neurons had a lower number of neurons in their local range. Within local range, connection probability decreases exponentially with distance. More specifically, the probability, P, of a connection at a distance r was given by:\n\n$$\nP(r)=min(\\alphae^{\u2212r},1)\n$$\n\nwhere $\\alpha$ is optimized separately for excitatory and inhibitory neurons such that the overall connectivity probability within a neuron\u2019s local range is equal to $C_{E}$ or $C_{I}$, depending on whether the neuron is excitatory or inhibitory. For example in the case of an excitatory neuron i, with connectivity probability $C_{E}$, where the set of neighboring neurons within the local range is $J$, and $J$ is the number of neighbors, $\\alpha$ will have to satisfy the following equation:\n\n$$\n\\sumj\\inJP(r_{j})=\\sumj\\inJmin(\\alphae^{\u2212r_{j}},1)=C_{E}|J|\n$$\n\nAs such, we used the Nelder-Mead optimization algorithm to determine the value of $\\alpha$ which minimizes the following function:\n\n$$\nf(\\alpha)=|\\sumj\\inJmin(\\alphae^{\u2212r_{j}},1)\u2212C_{E}|J||\n$$\n\n### Neuron model\n\nNeurons were modeled using a synaptic model integrating received spikes, and a probabilistic spiking model. Each time step (dt) of 1 ms starts with each neuron, i, updating the input $I_{i}$ with spikes received from the presynaptic neurons $J_{i}$, together with an exponential synaptic decay:\n\n$$\nI_{i}(t+dt)=(I_{i}(t)+\\sumjJ_{i}W_{ij}S_{j}(t))(1\u2212\\frac{dt}{\\tau_{I}})\n$$\n\nThe weights $W_{ij}$ are fixed, and depend on the type of the pre- and post-synaptic neuron. $\\tau_{I}is$ the decay constant of inputs, and S is a is a binary vector, with $S_{j}$=1 if the pre-synaptic neuron j fired in the previous time step, and $S_{j}$=0 otherwise.\n\nThe activation of a neuron $A_{i}$, is then updated with these excitatory and inhibitory inputs, together with an exponential decay, $\\tau_{P}$, and a baseline activation level $A_{0}$:\n\n$$\nA_{i}(t+dt)=(A_{i}(t)+I_{i}(t))(1\u2212\\frac{dt}{\\tau_{P}})+A_{0}\\frac{dt}{\\tau_{P}}\n$$\n\nThe spiking probability $P_{i}^{s}$ is calculated as a function of the neuron activation A at the current timestep, as follows:\n\n$$\nP_{i}^{s}(t)={0,\u00a0A_{i}(t)<0\u00a0A_{i}(t),\u00a00\\leqA_{i}(t)\\leq11,\u00a0A_{i}(t)>1\n$$\n\nWe determine whether the neuron spikes with the probability PS. If a neuron spikes, the neuron activation A is reset to the reset value, $A_{r}$. At the next time step, all neurons that it connects to will have their input updated again according to Equation 4.\n\n### Model parameters\n\nAll model parameters were the same as in the original paper (Poil et al., 2012) apart from the synaptic weights. Neuron model: ($\\tau_{I}$= 9 ms), Synaptic model: Excitatory neurons ($\\tau_{P}$ = 6 ms, A0 = 0.000001, Ar = -2), Inhibitory neurons ($\\tau_{P}$ = 12 ms, A0 =0, Ar = -20). To improve the range and stability of the long-range temporal correlations from the original model, an evolutionary algorithm (Smit and Eiben, 2011) was applied to the synaptic weights. The parameters that could vary were the 2 connectivity parameters (taking values between 0\u00a0and\u00a0100%), and the natural logarithm of the magnitude of the 4 synaptic weights, WEE, WIE, WEI and WII (taking values between -5 and 1). For each run, a fitness value was calculated based on the avalanches size and duration distributions (see Materials\u00a0and\u00a0methods - Neuronal Avalanches), and the LRTCs (see Materials\u00a0and\u00a0methods - Detrended fluctuation analysis of long-range temporal correlations).\n\n$$\nfitness=\u00a0\\frac{1}{|1\u2212DFA|+|1\u2212\u03ba_{size}|+|1\u2212\u03ba_{duration}|}\n$$\n\nThe optimum weights (Wij, connecting the presynaptic neuron j to the postsynaptic neuron i) found by the algorithm were (WEE\u00a0=\u00a00.0085,WIE\u00a0=\u00a00.0085,WEI\u00a0=\u00a0\u22120.569,WII = \u22122).\n\n### Network activity analysis\n\nA network signal was created by summing the total number of neurons spiking at each time-step with a Gaussian white noise signal of the same length with mean\u00a0=\u00a00 and \u03c3\u00a0=\u00a03. This level of white noise was set to allow all networks to achieve a time-varying phase, which is not the case without adding the noise, when there are silent periods in the network. Detrended fluctuation analysis, oscillation power, and phase-locking factor, which are described below, were calculated on this pre-processed signal, with Gaussian noise added. The analysis of neuronal avalanches was performed on the raw signal, consisting of the total number of neurons spiking at each time step.\n\n### Oscillation power\n\nThe power spectrum was computed using the Welch method with a Hamming window with 211 FFT points.\n\n### Neuronal avalanches\n\nA neuronal avalanche is defined as a period where neurons are spiking above a certain threshold\u2014in our case set to half median of activity. The size of the avalanche is the number of spikes during this period. We then computed the \u03ba index (Poil et al., 2012; Shew et al., 2009), which determines the difference between the distribution of our data and a power-law, by calculating the average difference of the cumulative distribution of a power-law function, P, (with exponent \u22121.5 for size and \u22122.0 for duration) and that of our experimental data, A, at 10 equally spaced points on a logarithmic axis (\u03b2) and adding 1.\n\n$$\n\u03ba=\u00a0\\frac{1}{10}\\sumi=110(P(\\beta_{i})\u2212A(\\beta_{i}))+1\n$$\n\nA subcritical distribution is characterized by \u03ba\u00a0<1, and a supercritical distribution by \u03ba\u00a0>1, whereas \u03ba\u00a0=\u00a01 indicates a critical network.\n\n### Detrended fluctuation analysis of long-range temporal correlations\n\nDetrended fluctuation analysis (DFA) was used to analyze the scale-free decay of temporal (auto)correlations, also known as long-range temporal correlations (LRTC). The DFA was introduced as a method to quantify correlations in complex data with less strict assumptions about the stationarity of the signal than the classical autocorrelation function or power spectral density (Hardstone et al., 2012; Linkenkaer-Hansen et al., 2001). In addition, DFA facilitates a reliable analysis of LRTC up to time scales of at least 10% of the duration of the signal (Chen et al., 2002; Gao et al., 2006). DFA exponents in the interval of 0.5 to 1.0 indicate scale-free temporal correlations (autocorrelations), whereas an exponent of 0.5 characterizes an uncorrelated signal. The main steps from the broadband signal to the quantification of LRTC using DFA have been explained in detail previously (Hardstone et al., 2012; Linkenkaer-Hansen et al., 2001). In brief, the DFA measures the power-law scaling of the root-mean-square fluctuation of the integrated and linearly detrended signals, F(t), as a function of time-window size, t (with an overlap of 50% between windows). The DFA exponent is the slope of the fluctuation function F(t), and can be interpreted as the strength of the autocorrelations in signals. For our analyses we computed DFA on the amplitude envelope of the signal filtered in the 8\u201316 Hz range, and the exponent was fit between 2 and 50 s.\n\n### Unstimulated networks\n\nTo assess the dynamics of unstimulated networks we allowed connectivity to take values between 25\u00a0and\u00a0100% at 5% intervals. For all 256 possible parameter combinations of excitatory and inhibitory connectivity, we created 10 different networks and ran each network for 2 \u00d7 106 time-steps (2000 s).\n\n### Stimulation networks\n\nTo test network response to a stimulus we took one sample network for each combination of excitatory and inhibitory connectivity parameters, and for each run of the network we stimulated n excitatory neurons where n \u03b5 {1, 2, 3, 5, 9, 15, 25, 43, 74, 126, 216, 369, 632, 1081, 1800}. The stimulated neurons were randomly distributed across the grid. For all 256 possible parameter combinations of excitatory and inhibitory connectivity, and stimulus size, we used the same 10 different networks as in the unstimulated case, and ran each network for 2 \u00d7 106 time-steps (2000 s). During the stimulation runs all neurons in the receptive field simultaneously received a stimulus once in every 500\u20131500 ms. The stimulus had the same weight as any of the excitatory-excitatory connections in the network (winput\u00a0=\u00a0wEE\u00a0=\u00a00.0085), and was applied simultaneously, for one timestep\u00a0=\u00a01 ms, to all the n excitatory neurons which the stimulus connected to. Additionally, we investigated the effect of the stimulus strength on network dynamics by modulating winput by a factor of 1/64 to 64 times the original value, on a log2 scale.\n\n### Phase-locking factor\n\nStimulus response was calculated in the network in terms of the phase-locking factor (Palva et al., 2005). Data were filtered using a one-way causal FIR filter (order 250) between 8\u00a0and\u00a016 Hz. The use of a causal FIR filter ensured that pre-stimulus phase and amplitude were not contaminated by the stimulus responses, at the cost of delaying the peak response to the stimulus by 125 ms. The phase at any point in time was obtained by taking the angle of the Hilbert transform. Phase-locking factor (PLF) measures the uniformity of phases across trials at a time-point post-stimulus and was calculated as the mean vector length of all phases (Berens, 2009; RRID:SCR_016651):\n\n$$\nPLF=\u2016\\frac{1}{N}\\sumiTz_{i}\u2016\n$$\n\nwhere T is the set of trials, of size N, and $z_{i}$ is the unit vector whose angle corresponds to the momentary phase in trial i, at the time point for which PLF is calculated.\n\n### Dynamic range\n\nWe fit a sigmoid to the PLF response at 150 ms post-stimulus, as a function of the number of neurons stimulated. The dynamic range is calculated as the orders of magnitude of neurons stimulated between the 10% and 90% of the sigmoid we fit (Kinouchi and Copelli, 2006).\n\n### Pre-stimulus amplitude regulation of PLF\n\nTo calculate the PLF response corresponding to different levels of pre-stimulus amplitude, we separated trials into 10 percentile bins, based on the average amplitude in the \u2212150 to \u221250 ms time-range, calculated for the 8\u201316 Hz frequency band. The percentile binning procedure ensured an equal number of trials across bins, which is important because the PLF value reflects the distribution of phases, but is also determined by the number of trials (e.g., the PLF value for uniformly randomly distributed phases is dependent on the number of trials). PLF at 150 ms post-stimulus was calculated separately for each of the 10 bins. The regulation measure Regamp was calculated as the Spearman correlation between the index of the bin and the PLF for that bin.\n\n### Pre-stimulus phase regulation of PLF\n\nTo calculate the pre-stimulus phase regulation of PLF, trials were split into 32 overlapping bins of width \u03c0/8 based on the pre-stimulus phase in the 8\u201316 Hz frequency range at time \u22125 ms. To get an equal number of trials in each bin, x randomly selected trials from each bin were picked where x was the smallest number of trials in a bin. PLF at 150 ms post-stimulus was calculated separately for each bin. If no phase regulation takes place, a uniform distribution of post-stimulus PLF is expected. The calculation of phase regulation uses the phase-locking factor of each of 32 phase bins as the weight for the unit vector of that phase. The sum of the 32 vectors is then normalized by the sum of all PLFs. For this calculation, we used the circ_r function from the circ_stats package (Berens, 2009; RRID:SCR_016651):\n\n$$\nReg_{phase}=\u2016\\frac{1}{\\sumiPPLF_{i}}\\sumiPPLF_{i}z_{i}\u2016\n$$\n\nwhere P is the set of 32 bins, $z_{i}$ is the unit vector whose angle corresponds to the phase at the center of each bin i, and $PLF_{i}$ is the phase-locking factor across all trials belonging to bin i. This measure gives a value of Regphase between 0 (PLF is same for all bins) and 1 (PLF is non-zero in one bin, and zero in all others).\n\n### Association between criticality and network function\n\nCriticality was measured by the LRTC (DFA) of alpha oscillations in the non-stimulated networks. Network function was measured by pre-stimulus amplitude and phase modulation, as well as dynamic range, of the stimulated networks. To get robust estimators for criticality as well as our 3 indicators of network function, we averaged the values across all 10 network initializations, for each excitatory/inhibitory connectivity parameter combination (n=256). Before correlating criticality to network function, we had to address another aspect: a disproportionate amount of networks had low DFA. To this end, we binned the n=256 datapoints corresponding to each aspect of network function (pre-stimulus amplitude and phase modulation, dynamic range), by DFA, in bins of size 0.02, covering a DFA range of 0.5 to 0.9. The association between criticality and pre-stimulus amplitude regulation, for example, was computed as the Spearman correlation between the mean values of the 20 DFA bins, and the mean Regamp for the networks belonging to that bin. The same type of pre-processing was performed for pre-stimulus phase regulation and dynamic range. To identify the time ranges where criticality predicts network function, we calculated the Spearman correlation mentioned earlier, for all timepoints between 0 and 500 ms post-stimulus. To correct for multiple comparisons, we used the cluster-based correction with permutation (Nichols and Holmes, 2002), with a significance threshold $\\alpha=0.001$. We will exemplify again the process by looking at the association between criticality and pre-stimulus amplitude regulation, but the steps are the same for the other indicators of network function. First, we calculated the cluster significance threshold, to determine which clusters could have arisen by chance. While keeping the ordering of the DFA bins the same, we permuted the corresponding Regamp values, separately for each timepoint between 0 and 500 ms post-stimulus. We then computed the Spearman correlation coefficients $r_{S}$ between DFA and the permuted Regamp, for each timepoint, and identified all clusters \u2013 sets of contiguous timepoints with a p-value for the Spearman correlation $p\\leq\\alpha$. We defined cluster size $S_{c}=\\sumtT_{c}r_{S}^{t}$, where $t$ is a timepoint belonging to the set of contiguous timepoints $T_{c}$ in cluster $c$, and $r_{S}^{t}$ is the absolute value of the Spearman correlation coefficient at time $t$. We then calculated the maximum cluster size $S_{max_{i}}$ for the permuted dataset $i$ to be $maxc\\inC\u2061S_{c}$, where $C$ is the set of all clusters $C$. We repeated this process 10000 times, which gave us a distribution of $S_{max_{i}}$ over different permutations of the data. We set the cluster significance threshold $T_{S_{max}}$ to correspond to the $1-\\alpha*100$ percentile of $S_{max_{i}}$. We then identified all clusters from the actual (non-permuted data), consisting of contiguous timepoints with with a p-value for the Spearman correlation $p\\leq\\alpha$, and kept only those clusters, whose cluster size $S_{c}$>$T_{S_{max}}.$\n\n### Baseline level of pre-stimulus regulation\n\nFor this, we generated 10 synthetic runs (equal to the number of simulations of the CROS model for each excitatory/inhibitory connectivity combination)\u2014each consisting of 2000 pairs of pre/post stimulus phase (equal to the number of times that the CROS model was stimulated throughout a run) drawn from a uniform distribution, and calculated pre-stimulus phase regulation for each of the 10 synthetic runs. Then we computed the average phase regulation across all 10 runs. We repeated this process 10000 times to get the 95% percentile of phase regulation. We used this as a significance threshold to determine whether 10 individual subcritical, critical, or supercritical networks, at a certain stimulus size, showed pre-stimulus phase regulation above what is expected from a random distribution of pre/post-stimulus phases. As seen in Figure 3D, sub-critical networks at strong stimuli show phase regulation well below this threshold. That is because these networks respond reliably to the strong stimuli regardless of the pre-stimulus phase, thus the distribution of responses across phases is more uniform than expected from a random distribution. Some supercritical networks show phase regulation below threshold for the weaker stimuli, because they have strong alpha oscillations which maintain the phase of oscillations similar for a long time after they have been binned uniform.\n\n### Robustness of relationship between network versatility and criticality\n\nTo verify that our results are not dependent on the specific model parameters, we used two variants of the model, where the weight of excitatory to excitatory connections (wEE) was multiplied by a factor of 0.75 and 1.25, respectively. For each combination of excitatory and inhibitory connectivity, we created five different networks. We then ran each network for 2 \u00d7 106 time-steps (2000 s), for all combinations of stimulus size and weight of excitatory to excitatory connections (wEE).\n",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "a5f07080-1e26-40cb-bbeb-eb4fc4fd1407",
+      "submission_id": "d2f6c962-ebdf-4413-9ac0-3324a308a860",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Floris P de Lange, Radboud University Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53016.sa1](https://doi.org/10.7554/eLife.53016.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThere has been much interest in how stimulus processing depends on the phase and amplitude of pre-stimulus oscillatory activity. Using sophisticated computational modeling, this paper demonstrates that near-criticality is required to enable the ability of networks to regulate stimulus response based on pre-stimulus activity. This highlights a potential functional role for the critical state in allowing pre-stimulus states to influence sensory information processing.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Versatility of neuronal network function is maximized in the critical state\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Floris de Lange as the Senior Editor and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nSummary:\n\nThe authors study the stimulus-evoked responses in a previously published model (from the same group), which generates alpha oscillations and long-range temporal correlations. Previous results have shown that this model can exhibit critical dynamics depending on the connection probabilities of excitation and inhibition. The main novel contribution of this work is that it shows that the pre-stimulus biases (alpha frequency amplitude and phase) of the stimulus-evoked responses only occur in networks close to criticality. In particular, they found a strong negative correlation between pre-stimulus alpha amplitude and phase-locking response to stimulus in critical networks. This is consistent with experimental results that show higher alpha activity is correlated with decreased stimulus detection. This result also suggests that attention can modulate the network from the supercritical state where it ignores stimulus to the subcritical state where it reliably responds to stimulus.\n\nIn addition, the authors also show that networks at critical state have the largest dynamic range of phase-locking responses to stimulus. However, similar result has been shown in previous work for the dynamic range of firing rate responses.\n\nEssential revisions:\n\n1) Physiological realism.\n\nPlease report how the firing rates of excitatory and inhibitory neurons depend on E-I ratio (analog figure to e.g. 1E, but displaying the firing rates).\n\nPlease show raster plots of spiking for e.g. 100 randomly chosen neurons; a 250-500 ms window would be good to see; in addition, show population rates for a few seconds; both for the three examples (sub/super/critical).\n\n\"E-I balance\" in the strict sense refers to excitatory and inhibitory currents within a single neuron canceling each other. Does the model show that?\n\n2) Robustness.\n\nYou modified parameters with respect to the first version of the model. Ideally, the effects you show do not depend on these parameter modifications. Could you demonstrate that?\n\nLikewise, would you expect that other models, like Levina, Hermann and Geisel, 2007, or del Papa, Priesemann and Triesch, 2017, would show similar types of effects, even in the absence of oscillations, thus at the transition between absorbing/sustained activity?\n\n3) Dynamic Range.\n\nThe dynamic range at criticality is larger than at sub/supercritical models. However, the \"working point\" or response range also changes considerably. This is in analogy to Zierenberg et al., 2020. How do your results relate on the systematic change of the response range, and to their ideas that combining networks of different distances to criticality would greatly enhance the dynamic range?\n\n4) Writing.\n\nAs to the writing, I think this paper is too concise and requires prior knowledge of the previously published papers from this group. I would appreciate more explanations in the main text about the key terminologies and concepts, such as \"critical oscillation\", \"Long-range temporal correlations\", \"Detrended fluctuation analysis\".\n\n5) Data and code sharing.\n\nThe raw spike data for the three states (sub/super/critical) should be made available, so that everyone can re-analyse them. The code should be made available as well. Please share the code before acceptance.\n\n6) I didn't find a clear definition of the stimulus input? What's the duration and magnitude? Is it a constant current in time? Why is the stimulus strength defined as the number of stimulated neurons? Would results be similar if stimulus strength is modeled as the magnitude of input current?\n\n7) Figure 1D, if input current is larger, does it expand the dynamic range of the supercritical networks?\n\n8) Figure 1C, Is the phase-locking response related to the onset increase of firing rate? If the network shows onset response in rate, it would result in more rising phases, right? Since previous work has shown criticality maximizes dynamic range of evoked rate responses, how is this result different from previous work?\n\n9) Figure 3D, Similar to my comments above about the dynamics range, I wonder if the range of pre-stimulus regulation depends on the magnitude of input current. If you drive the supercritical network with stronger input for each neuron, does it expand the region of significant regulation.\n\n10) About the balance between excitation and inhibition: I think it should be the product of synaptic weight and connection probability that determines the network dynamics. Why is the critical transition at approximately when excitatory connectivity percentage equals inhibitory connectivity percentage? How does the transition depend on the recurrent weights?\n",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c8f68ddb-5e34-43c9-a17e-135d8afac862",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C1",
+      "claim": "The ability of networks to regulate stimulus response based on pre-stimulus activity requires near-critical dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show, using a computational model, that the ability of networks to regulate stimulus response based on pre-stimulus activity requires near-critical dynamics\u2014a dynamical state that emerges from networks with balanced excitation and inhibition, and that is characterized by scale-free fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this as a main finding of the computational modeling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "1221dd85-9ad0-4d47-90f0-fa3f6de265fb",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C2",
+      "claim": "Critical dynamics emerge from networks with balanced excitation and inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show, using a computational model, that the ability of networks to regulate stimulus response based on pre-stimulus activity requires near-critical dynamics\u2014a dynamical state that emerges from networks with balanced excitation and inhibition, and that is characterized by scale-free fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a characteristic of the critical state in their model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "800df529-f175-4351-af45-c97ac5a73d5a",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C3",
+      "claim": "Critical dynamics are characterized by scale-free fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show, using a computational model, that the ability of networks to regulate stimulus response based on pre-stimulus activity requires near-critical dynamics\u2014a dynamical state that emerges from networks with balanced excitation and inhibition, and that is characterized by scale-free fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes scale-free fluctuations as a characteristic of critical dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "69a84249-98c8-4362-b077-e71417a97690",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C4",
+      "claim": "Networks exhibiting critical oscillations produce differing responses to the largest range of stimulus intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that networks exhibiting critical oscillations produce differing responses to the largest range of stimulus intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding from the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "a1980c4a-b795-4473-a9ee-ae04c4e36f7a",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C5",
+      "claim": "The brain may bring its dynamics close to the critical state whenever network versatility is required.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the brain may bring its dynamics close to the critical state whenever such network versatility is required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative conclusion based on the modeling results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "2d84baf7-5d12-4a26-bc7d-b4651b8e4056",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C6",
+      "claim": "In trials where the stimulus is perceived, primary sensory regions exhibit larger event-related potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "In trials where the stimulus is perceived, primary sensory regions exhibit larger event-related potentials (Pins and Ffytche, 2003), larger event-related desynchronization (Vidal et al., 2015), and stronger phase-locking to the stimulus (Palva et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pins and Ffytche, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "79ebd0f6-1991-4136-a32a-58a1b23a3f03",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C7",
+      "claim": "In trials where the stimulus is perceived, primary sensory regions exhibit larger event-related desynchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "In trials where the stimulus is perceived, primary sensory regions exhibit larger event-related potentials (Pins and Ffytche, 2003), larger event-related desynchronization (Vidal et al., 2015), and stronger phase-locking to the stimulus (Palva et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Vidal et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "d5c214fd-7317-49e8-bc5e-250151f44f8f",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C8",
+      "claim": "In trials where the stimulus is perceived, primary sensory regions exhibit stronger phase-locking to the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In trials where the stimulus is perceived, primary sensory regions exhibit larger event-related potentials (Pins and Ffytche, 2003), larger event-related desynchronization (Vidal et al., 2015), and stronger phase-locking to the stimulus (Palva et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Palva et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "478eaae9-6560-4d52-a184-ed4956f0b71a",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C9",
+      "claim": "Pre-stimulus neuronal activity biases stimulus processing and conscious perception.",
+      "claim_type": "EXPLICIT",
+      "source": "The alternative is that awareness of stimuli depends on brain processes that unravel around the time of the stimulation, for example that pre-stimulus neuronal activity biases stimulus processing and conscious perception (Aru et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Aru et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "ceae28c1-aaf8-49ac-a027-480d91276424",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C10",
+      "claim": "Alpha oscillations inhibit unwanted stimuli from reaching consciousness.",
+      "claim_type": "EXPLICIT",
+      "source": "One candidate mechanism for gating stimulus processing is alpha oscillations (Jensen and Mazaheri, 2010), which inhibit unwanted stimuli from reaching consciousness (Capilla et al., 2014; H\u00e4ndel et al., 2011; Jensen et al., 2012; Jensen and Mazaheri, 2010; Thut et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations including Capilla et al., 2014; H\u00e4ndel et al., 2011; Jensen et al., 2012; Jensen and Mazaheri, 2010; Thut et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "0143406f-196a-401a-b83e-c9136c003d96",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C11",
+      "claim": "Higher pre-stimulus alpha activity is related to decreased stimulus detection.",
+      "claim_type": "EXPLICIT",
+      "source": "This was confirmed in threshold-stimulus experiments relating higher pre-stimulus alpha activity to decreased stimulus detection (Ergenoglu et al., 2004; Hanslmayr et al., 2005; Linkenkaer-Hansen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ergenoglu et al., 2004; Hanslmayr et al., 2005; Linkenkaer-Hansen et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "e9f9417a-026a-40fa-8caf-ae58bca6cf3e",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C12",
+      "claim": "Pre-stimulus alpha phase predicts stimulus awareness.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to amplitude, the pre-stimulus alpha phase also predicts stimulus awareness (Busch et al., 2009; Mathewson et al., 2009; VanRullen, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Busch et al., 2009; Mathewson et al., 2009; VanRullen, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "0799bb9b-e7eb-463f-a0b7-31b49af098d9",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C13",
+      "claim": "Neuronal oscillations in the alpha band exhibit spontaneous amplitude fluctuations with autocorrelations with scale-free decay that extends up to time scales of hundreds of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these fluctuations are not random, but exhibit a specific temporal structure: autocorrelations with scale-free decay that extends up to time scales of hundreds of seconds (Linkenkaer-Hansen et al., 2001), also called long-range temporal correlations (LRTC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Linkenkaer-Hansen et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "a83bf9b9-161a-4dda-90c5-4675bf6859a3",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C14",
+      "claim": "Scale-free character of oscillations emerges in neuronal networks with balanced excitatory and inhibitory forces.",
+      "claim_type": "EXPLICIT",
+      "source": "This scale-free character of the oscillations emerges in neuronal networks with balanced excitatory and inhibitory forces (Poil et al., 2012) and is considered a sign of critical-state dynamics (Bak et al., 1987; Chialvo, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Poil et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "00a14d87-23dd-4fa3-b9c9-b0613dc4dbc6",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C15",
+      "claim": "Scale-free character of oscillations is considered a sign of critical-state dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This scale-free character of the oscillations emerges in neuronal networks with balanced excitatory and inhibitory forces (Poil et al., 2012) and is considered a sign of critical-state dynamics (Bak et al., 1987; Chialvo, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bak et al., 1987; Chialvo, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "2e4966aa-7181-400b-957b-d8934dd4929c",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C16",
+      "claim": "Critical dynamics are beneficial for processing information.",
+      "claim_type": "EXPLICIT",
+      "source": "Criticality in the brain has also been associated with scale-free neuronal avalanches, and different computational models have used this link to indicate that critical dynamics are beneficial for processing information (Beggs and Plenz, 2003), for example evoked responses show the largest dynamic range (Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011) and this has subsequently been confirmed experimentally (Gautam et al., 2015; Shew et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Beggs and Plenz, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "7d68fc5e-3d7b-4ff4-ba88-63e3e5b715de",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C17",
+      "claim": "Evoked responses show the largest dynamic range in critical networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Criticality in the brain has also been associated with scale-free neuronal avalanches, and different computational models have used this link to indicate that critical dynamics are beneficial for processing information (Beggs and Plenz, 2003), for example evoked responses show the largest dynamic range (Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011) and this has subsequently been confirmed experimentally (Gautam et al., 2015; Shew et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "b6f7a8eb-a8ba-4414-b1d0-2917dd1e899d",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C18",
+      "claim": "The largest dynamic range of evoked responses in critical networks has been confirmed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Criticality in the brain has also been associated with scale-free neuronal avalanches, and different computational models have used this link to indicate that critical dynamics are beneficial for processing information (Beggs and Plenz, 2003), for example evoked responses show the largest dynamic range (Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011) and this has subsequently been confirmed experimentally (Gautam et al., 2015; Shew et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gautam et al., 2015; Shew et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "f12ad452-afb8-41ca-afd0-55b7268e0c26",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C19",
+      "claim": "Phase-locking plays a role in reorganizing neuronal networks for efficient stimulus processing.",
+      "claim_type": "EXPLICIT",
+      "source": "To answer this question, we consider the network response in terms of phase-locking to the stimulus, which is thought to play a role in reorganizing neuronal networks for efficient stimulus processing (Hanslmayr et al., 2005; Min et al., 2007; Sauseng et al., 2007; Voloh and Womelsdorf, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hanslmayr et al., 2005; Min et al., 2007; Sauseng et al., 2007; Voloh and Womelsdorf, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "762abf66-7928-40d7-aeb4-cabba051ae58",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C20",
+      "claim": "The CROS model exhibits dynamics comparable to human M/EEG.",
+      "claim_type": "EXPLICIT",
+      "source": "We rely on an extension of a model of critical oscillations (CROS) (Poil et al., 2012), which exhibits dynamics comparable to human M/EEG (Dalla Porta and Copelli, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dalla Porta and Copelli, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "031edd2e-5634-4682-b416-cbec8011fafa",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C21",
+      "claim": "CROS consists of 75% excitatory and 25% inhibitory integrate-and-fire neurons arranged in a 50 \u00d7 50 grid.",
+      "claim_type": "EXPLICIT",
+      "source": "CROS consists of 75% excitatory and 25% inhibitory integrate-and-fire neurons arranged in a 50 \u00d7 50 grid (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes the model composition and references Figure 1\u2014figure supplement 1A for visual representation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "11b9c941-52ab-4bf1-9785-247b95709006",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C22",
+      "claim": "The firing rate grew monotonously for both excitatory and inhibitory neurons as excitatory connectivity increased.",
+      "claim_type": "EXPLICIT",
+      "source": "The firing rate grew monotonously for both excitatory and inhibitory neurons, as we increased excitatory connectivity (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1\u2014figure supplement 1B,C showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "fd704671-403e-4a71-bf1e-7fbb5828eb42",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C23",
+      "claim": "Networks oscillated in the 8\u201316 Hz range.",
+      "claim_type": "EXPLICIT",
+      "source": "Networks oscillated in the 8\u201316 Hz range (Figure 1\u2014figure supplement 1D), with the power of the oscillation increasing as we move towards an excitation-dominated regime (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1\u2014figure supplement 1D showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "f5d1f4c9-4027-4994-ba2d-fbc82b0ec438",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C24",
+      "claim": "The power of the oscillation increased as networks moved towards an excitation-dominated regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Networks oscillated in the 8\u201316 Hz range (Figure 1\u2014figure supplement 1D), with the power of the oscillation increasing as we move towards an excitation-dominated regime (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1\u2014figure supplement 1E showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "5e2cd9d5-7a02-4e60-b93f-f28eeaaa44c6",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C25",
+      "claim": "The model exhibits multi-level criticality, with spatial and temporal power-law scaling behavior in network activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the model exhibits multi-level criticality, with spatial and temporal power-law scaling behavior in network activity, which arises through a common mechanism of balanced E/I connectivity (Figure 1\u2014figure supplement 1F\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1\u2014figure supplement 1F\u2013J showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "febb9ad6-b51b-40ce-aa9d-9f31faa1f777",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C26",
+      "claim": "Multi-level criticality arises through a common mechanism of balanced E/I connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the model exhibits multi-level criticality, with spatial and temporal power-law scaling behavior in network activity, which arises through a common mechanism of balanced E/I connectivity (Figure 1\u2014figure supplement 1F\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1\u2014figure supplement 1F\u2013J showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "e07a7d2b-dd37-4426-ba4f-7c9a5d35a559",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C27",
+      "claim": "The stimulus response in the networks is oscillatory.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the stimulus response in our networks is indeed oscillatory, which may result in stimulus phase-locking (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1B showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "7c8dec8f-3d0c-4481-8705-9a9949d2ab3b",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C28",
+      "claim": "A critical network increases the level of post-stimulus phase-locking as stimulus size is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 1C, we can see that a critical network increases the level of post-stimulus phase-locking as stimulus size is increased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1C showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "0133c694-9d69-48a4-8e68-2fad3a36d5b4",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C29",
+      "claim": "The CROS model is capable of showing oscillatory responses to a stimulus, as has been seen in human subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the CROS model is capable of showing oscillatory responses to a stimulus, as has been seen in human subjects (Palva et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text makes this comparison and cites Palva et al., 2005 for the human data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "bb4ceee1-e932-44e6-a07b-2e28f8306af6",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C30",
+      "claim": "Critical networks show a wider dynamic range than their sub-/super-critical counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Critical networks show a wider dynamic range than their sub-/super-critical counterparts (Figure 1D\u2013F), and this effect is robust over a wide range of post-stimulus latencies (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1D\u2013F and Figure 1\u2014figure supplement 2 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "439af840-ecbd-4f66-932f-4b996124e028",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C31",
+      "claim": "The wider dynamic range of critical networks is robust over a wide range of post-stimulus latencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Critical networks show a wider dynamic range than their sub-/super-critical counterparts (Figure 1D\u2013F), and this effect is robust over a wide range of post-stimulus latencies (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1\u2014figure supplement 2 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "462d4d79-9dd3-4a40-83e7-e1d60190b858",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C32",
+      "claim": "In supercritical networks, the strong, ongoing oscillatory activity prevents the phase-locking response from saturating even at the largest stimulus sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the case of supercritical networks, the strong, ongoing oscillatory activity prevents the phase-locking response from saturating (PLF ~1), even at the largest stimulus sizes (Figure 1D, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1D and Figure 2\u2014figure supplement 1 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "6921be2d-512e-4cfe-bf71-a74ba28b3651",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C33",
+      "claim": "An 8-fold increase in the external input strength was sufficient to bring the PLF of supercritical networks to saturation for the largest stimulus size.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that an 8-fold increase in the external input strength was sufficient to bring the PLF of supercritical networks to saturation, for the largest stimulus size (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1\u2014figure supplement 3B showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "0170e378-4e3d-4ed0-9768-56ea8016290a",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C34",
+      "claim": "The maximal dynamic range occurs for critical networks at a multiplier ~1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all tested strengths and networks, the maximal dynamic range occurs for critical networks at a multiplier ~1 (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1\u2014figure supplement 3C showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "13674319-82da-4d99-8d6c-a02ceb6b5cba",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C35",
+      "claim": "Critical networks discriminate the widest range of stimulus sizes through their post-stimulus phase-locking response.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results show that critical networks discriminate the widest range of stimulus sizes through their post-stimulus phase-locking response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a summary conclusion from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "0e28fab9-b8bb-4d6d-899d-9ea6d5a2e1b7",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C36",
+      "claim": "Critical networks exhibit strong negative pre-stimulus amplitude regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that critical networks exhibit strong negative pre-stimulus amplitude regulation (Figure 2C\u2013E), whereas sub-critical or super-critical networks show no pre-stimulus amplitude regulation (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 2C\u2013E showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "b2dcbaeb-d750-45c5-84ef-d917d39d2a88",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C37",
+      "claim": "Sub-critical or super-critical networks show no pre-stimulus amplitude regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that critical networks exhibit strong negative pre-stimulus amplitude regulation (Figure 2C\u2013E), whereas sub-critical or super-critical networks show no pre-stimulus amplitude regulation (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 2D,E showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "fd0188b6-da52-4f36-9933-1a5004f78a2a",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C38",
+      "claim": "Pre-stimulus amplitude regulation was more prominent for networks with stronger LRTC.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this result statistically by showing that pre-stimulus amplitude regulation was more prominent for networks with stronger LRTC (Figure 2F, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 2F and Figure 2\u2014figure supplement 2 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "53b8fa47-3d63-4ccb-b817-4e92fff457e8",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C39",
+      "claim": "For the sub- and super-critical networks there was no pre-stimulus phase regulation of response at a stimulus size of 5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For the sub- and super-critical networks there was no pre-stimulus phase regulation of response at a stimulus size of 5 neurons (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3A showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "69397f6b-8955-4348-b9ed-9f37e8f8a32b",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C40",
+      "claim": "The critical network showed large differences in post-stimulus phase-locking for different pre-stimulus phase bins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the critical network showed large differences in post-stimulus phase-locking for different pre-stimulus phase bins (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3A showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "12407bd4-413e-4808-8523-5743cadc1990",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C41",
+      "claim": "Critical networks showed the weakest response on the descending side of the alpha cycle, when the network is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "These networks showed the weakest response on the descending side of the alpha cycle, when the network is inhibited, and the strongest response on the rising side of the alpha cycle, when the network is in an excitable state (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3\u2014figure supplement 1 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "a8a6ca33-f036-4b54-b8ef-20a46f8f1f40",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C42",
+      "claim": "Critical networks showed the strongest response on the rising side of the alpha cycle, when the network is in an excitable state.",
+      "claim_type": "EXPLICIT",
+      "source": "These networks showed the weakest response on the descending side of the alpha cycle, when the network is inhibited, and the strongest response on the rising side of the alpha cycle, when the network is in an excitable state (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3\u2014figure supplement 1 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "f6f33220-5189-46b4-ac09-97e4a9a62c55",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C43",
+      "claim": "Pre-stimulus phase dependence of post-stimulus phase-locking requires a balance in E/I connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking across the connectivity parameter space, we found that pre-stimulus phase dependence of post-stimulus phase-locking requires a balance in E/I connectivity (Figure 3B), and is significantly correlated with criticality as reflected in LRTC (Figure 3C, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3B showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "d4c916ef-e055-4e39-8aff-92b2f5211896",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C44",
+      "claim": "Pre-stimulus phase dependence of post-stimulus phase-locking is significantly correlated with criticality as reflected in LRTC.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking across the connectivity parameter space, we found that pre-stimulus phase dependence of post-stimulus phase-locking requires a balance in E/I connectivity (Figure 3B), and is significantly correlated with criticality as reflected in LRTC (Figure 3C, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3C and Figure 3\u2014figure supplement 2 showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "9e661848-7137-47f8-9d5c-6d7b40eecfef",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C45",
+      "claim": "Critical networks show pre-stimulus regulation over the widest range of stimulus sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the three combinations of excitatory/inhibitory connectivity indicated in Figure 3D, we found that the critical networks show pre-stimulus regulation over the widest range of stimulus sizes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3D showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "2048f638-f883-4021-b431-dfd06ff9a537",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C46",
+      "claim": "Pre-stimulus phase-regulation occurs for a wider range of stimuli in critical networks than in their subcritical or supercritical counterparts, regardless of the strength of the input weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, pre-stimulus phase-regulation occurs for a wider range of stimuli in critical networks than in their subcritical or supercritical counterparts, regardless of the strength of the input weight (Figure 3\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3\u2014figure supplement 3C showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "bf91eb64-0ed2-4d97-9c4b-f9438082a7f2",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C47",
+      "claim": "Model parameters were selected through an optimization process which aimed at getting power-law avalanche distributions and robust LRTC.",
+      "claim_type": "EXPLICIT",
+      "source": "Model parameters were selected through an optimization process which aimed at getting power-law avalanche distributions and robust LRTC (as described in more detail in Materials and methods), but did not include any criteria to maximize the dynamic range of phase-locking response, or pre-stimulus amplitude or phase regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the parameter selection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "6e2b506b-2e3a-4309-a554-bcb2144a4e4d",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C48",
+      "claim": "The functional consequences of criticality on stimulus processing that emerged out of the model are generic to criticality, and not specific to the actual parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we expect that the functional consequences of criticality on stimulus processing that emerged out of the model, are generic to criticality, and not specific to the actual parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as an inference from the parameter selection process.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "993d4ccc-414c-49ec-af59-1cf0652b0b27",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C49",
+      "claim": "The functional consequences of criticality\u2014maximized dynamic range, pre-stimulus amplitude and phase regulation\u2014followed the shift in the critical line when wEE was changed.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the functional consequences of criticality\u2014maximized dynamic range, pre-stimulus amplitude and phase regulation\u2014followed this shift in the critical line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this finding from the parameter robustness analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "01ebf643-f9d6-400d-b215-32b9b5bd2999",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C50",
+      "claim": "The relationship between criticality and versatility in stimulus processing is not coincidental on the specific choice of parameters, but generic to criticality.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the relationship between criticality and versatility in stimulus processing is not coincidental on the specific choice of parameters, but generic to criticality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a conclusion from the parameter robustness analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "df7da7fb-0896-469f-8a32-f62303f3a899",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C51",
+      "claim": "This study establishes for the first time a link between critical-state dynamics of oscillations and the ability of a network to respond differently depending on the amplitude of ongoing alpha oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we establish for the first time a link between critical-state dynamics of oscillations and the ability of a network to respond differently depending on the amplitude of ongoing alpha oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states this as a novel contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "0600250b-b78d-4dd4-b170-76deb2c27d66",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C52",
+      "claim": "A low oscillation power in relevant sensory areas in the pre-stimulus period has been seen as a pre-requisite of conscious perception.",
+      "claim_type": "EXPLICIT",
+      "source": "This functionality has been investigated in many human studies (Ergenoglu et al., 2004; Hanslmayr et al., 2005; Linkenkaer-Hansen et al., 2004), where a low oscillation power in relevant sensory areas in the pre-stimulus period has been seen as a pre-requisite of conscious perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ergenoglu et al., 2004; Hanslmayr et al., 2005; Linkenkaer-Hansen et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "ced82e52-d9e8-4899-8f21-28bec14b0094",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C53",
+      "claim": "A high oscillation power serves to functionally inhibit non-relevant areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In non-relevant areas, on the other hand, it has been suggested that a high oscillation power serves to functionally inhibit that region (Smith et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Smith et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "d444efc1-8a76-478d-b308-3f0b5503ee67",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C54",
+      "claim": "Alpha oscillations create periodic fluctuations in excitability, which are indexed by the phase of the oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are also consistent with the notion that alpha oscillations create periodic fluctuations in excitability (Klimesch et al., 2007), which are indexed by the phase of the oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Klimesch et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "dd337f0f-6109-4fb5-9b10-72ff5b5a760c",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C55",
+      "claim": "Pre-stimulus phase has been shown to bias perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-stimulus phase has been shown to bias perception (Busch et al., 2009; Mathewson et al., 2009; VanRullen, 2016) and we found that this function is also likely to be modulated by the criticality of the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Busch et al., 2009; Mathewson et al., 2009; VanRullen, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "aabf6ab3-2919-4e33-821c-b402b9848ae2",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C56",
+      "claim": "The function of pre-stimulus phase biasing perception is likely to be modulated by the criticality of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-stimulus phase has been shown to bias perception (Busch et al., 2009; Mathewson et al., 2009; VanRullen, 2016) and we found that this function is also likely to be modulated by the criticality of the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "c3c3499e-31d6-4b4c-a75b-8006a8fd1137",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C57",
+      "claim": "Oscillatory spiking neuronal networks have an optimal dynamic range when they are critical.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that oscillatory spiking neuronal networks have an optimal dynamic range when they are critical, which is in agreement with previous work on non-oscillatory networks (Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011; Shew et al., 2009), and suggests that optimal dynamic range is a generic property of critical systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this finding and compares it to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "07b45067-9a85-4cb5-94f1-17e3c4cf1b4e",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C58",
+      "claim": "Optimal dynamic range is a generic property of critical systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that oscillatory spiking neuronal networks have an optimal dynamic range when they are critical, which is in agreement with previous work on non-oscillatory networks (Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011; Shew et al., 2009), and suggests that optimal dynamic range is a generic property of critical systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as an inference from the current and previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "eeab6afe-9526-48f5-99ad-4c9cc6610045",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C59",
+      "claim": "Phase-locking plays a role in the generation of event-related responses (ERPs).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, since the level of criticality affects network response in terms of stimulus phase-locking, and phase-locking plays a role in the generation of event-related responses (ERPs) (Makeig et al., 2002; Min et al., 2007), we predict that criticality will also affect the different time components of ERPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Makeig et al., 2002; Min et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "1622a818-e49d-4c2e-98b1-65e5df68eff0",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C60",
+      "claim": "Criticality will affect the different time components of ERPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, since the level of criticality affects network response in terms of stimulus phase-locking, and phase-locking plays a role in the generation of event-related responses (ERPs) (Makeig et al., 2002; Min et al., 2007), we predict that criticality will also affect the different time components of ERPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a prediction based on the findings and previous work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "2d7cdd71-5c08-478e-b8cc-9a2c99421753",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C61",
+      "claim": "Top-down mechanisms such as attention and expectation have been suggested as the cause of amplitude fluctuations during threshold stimulus detection tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "There is much debate as to the cause of amplitude fluctuations during threshold stimulus detection tasks, with top-down mechanisms such as attention and expectation being suggested (Jensen et al., 2012; Melloni et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Jensen et al., 2012; Melloni et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "991256a7-2bed-4d58-a3a6-262be88fe891",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C62",
+      "claim": "A network with balanced excitatory and inhibitory connectivity produces spontaneous amplitude fluctuations that have a functional role.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that a network with balanced excitatory and inhibitory connectivity produces spontaneous amplitude fluctuations that have a functional role, meaning that the network goes through periods of high and low sensitivity to external stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "d198be2a-3de3-437d-b998-86e3f52b1cc9",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C63",
+      "claim": "In the unbalanced state, the network loses the function of spontaneous amplitude fluctuations and either reliably reacts (in the sub-critical case), or ignores the stimulus (super-critical case).",
+      "claim_type": "EXPLICIT",
+      "source": "In the unbalanced state, the network loses this function and either reliably reacts (in the sub-critical case), or ignores the stimulus (super-critical case).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "01d08592-f136-439d-b3df-287c4cf642d5",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C64",
+      "claim": "Top-down mechanisms are not required for fluctuations in alpha power.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, top-down mechanisms are not required for fluctuations in alpha power; however, it is plausible that attentional mechanisms can actively regulate the level of fluctuations to shift the network's operating point relative to the critical state, allowing the network to react in the required manner (Wyart and Tallon-Baudry, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a conclusion from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "8b41cc8f-fc3c-41a5-85bf-01c40c199c15",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C65",
+      "claim": "It is plausible that attentional mechanisms can actively regulate the level of fluctuations to shift the network's operating point relative to the critical state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, top-down mechanisms are not required for fluctuations in alpha power; however, it is plausible that attentional mechanisms can actively regulate the level of fluctuations to shift the network's operating point relative to the critical state, allowing the network to react in the required manner (Wyart and Tallon-Baudry, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a speculation, with citation to Wyart and Tallon-Baudry, 2009.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "f56714be-6084-4b79-a422-a46cfb4e4d70",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C66",
+      "claim": "Pre-stimulus activity regulation of post-stimulus response has been found beneficial, by enhancing detection of stimuli that are attended to or expected.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-stimulus activity regulation of post-stimulus response has been found beneficial, by enhancing detection of stimuli that are attended to (Capilla et al., 2014) or expected (Mayer et al., 2016), and reducing detection of irrelevant stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Capilla et al., 2014 and Mayer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "45db4b52-aaeb-47d3-8e3a-9fff7d40bc54",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C67",
+      "claim": "The spontaneous fluctuations in amplitude observed at criticality may serve to flexibly switch between the different stimuli competing for attention.",
+      "claim_type": "EXPLICIT",
+      "source": "The spontaneous fluctuations in amplitude observed at criticality, with impact on conscious perception, may serve to flexibly switch between the different stimuli competing for attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "5431928d-26f7-41c7-a2ee-2bbb2ec2474f",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C68",
+      "claim": "Being in the critical state requires minimal attentional modulations to reach the sub- or super-critical states.",
+      "claim_type": "EXPLICIT",
+      "source": "To this is added another advantage of being in the critical state: it requires minimal attentional modulations to reach the sub- or super-critical states, and thus to enhance aspects of stimuli, for example in the case of stimulus discrimination (Tomen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as an inference, with citation to Tomen et al., 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "54e498cc-8b0f-43cb-b1bc-5347c1919abf",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C69",
+      "claim": "In tasks where continuous detection ability is required, fluctuations in pre-stimulus activity will decrease task performance in those periods of amplitude that produce smaller post-stimulus response.",
+      "claim_type": "EXPLICIT",
+      "source": "In tasks where continuous detection ability is required, fluctuations in pre-stimulus activity will actually decrease task performance in those periods of amplitude that produce smaller post-stimulus response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a logical inference from the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "3c33fdfa-8482-45d7-8925-158dc633186f",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C70",
+      "claim": "The broadening of attention to external stimuli in the critical state is accompanied by increased susceptibility to task-unrelated mentation, or mind-wandering.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the broadening of attention to external stimuli in the critical state, is accompanied by increased susceptibility to task-unrelated mentation, or mind-wandering (Hellyer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hellyer et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "a564ce87-5e6e-43c0-b407-af24a215ad4b",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C71",
+      "claim": "When people experience periods of mind-wandering during task-performance, this results in reduced phase-locking to a stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "When people experience periods of mind-wandering during task-performance, this results in reduced phase-locking to a stimulus (Baird et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Baird et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "306dbaf8-3dc3-41fd-8053-9774c28cddf3",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C72",
+      "claim": "A more sub-critical network would perform better in terms of constant attention.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases a more sub-critical network would actually perform better in terms of constant attention (Irrmischer et al., 2018; Tomen et al., 2014) and a super-critical network would perform better in terms of constant functional inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Irrmischer et al., 2018; Tomen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "842657b0-5cd5-465f-a625-74021c3afd14",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C73",
+      "claim": "A super-critical network would perform better in terms of constant functional inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases a more sub-critical network would actually perform better in terms of constant attention (Irrmischer et al., 2018; Tomen et al., 2014) and a super-critical network would perform better in terms of constant functional inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as an inference from the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "ab3c78b6-9dc0-4a8c-9f4e-e80a572e5be9",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C74",
+      "claim": "The critical state is not optimal for all information processing requirements: complex tasks benefit from criticality, whereas in simple tasks, the high susceptibility to stimuli, memory capacity and entropy of a critical regime might impair performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are in line with the predictions of Cramer et al. (2019), which suggest that the critical state is not optimal for all information processing requirements: complex tasks benefit from criticality, whereas in simple tasks, the high susceptibility to stimuli, memory capacity and entropy of a critical regime might impair performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cramer et al. (2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "8b3b4862-fe2f-4e89-b757-d78dd292cc36",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C75",
+      "claim": "Supercritical networks can show differential PLF and pre-stimulus regulation for the large stimulus sizes where the PLF response of critical networks saturates.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that critical networks have overall the widest dynamic range of phase-locking response, and pre-stimulus amplitude and phase regulation. However, we also found that supercritical networks can show differential PLF and pre-stimulus regulation for the large stimulus sizes where the PLF response of critical networks saturates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "4f265fad-3df4-4f9a-8d4a-9728f4a86496",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C76",
+      "claim": "The brain can take advantage of the information processing benefits of different states by regulating its dynamics with respect to the critical point in a task-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "One way in which the brain can take advantage of the information processing benefits of different states is to regulate its dynamics with respect to the critical point in a task-dependent manner (Pfeffer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pfeffer et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "b3723573-5bef-435a-9ef5-1a748a4b6fc6",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C77",
+      "claim": "The brain could combine networks with different distances to the critical point, such that the resulting ensemble has a dynamic range of stimulus response wider than any of the ensemble networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Zierenberg et al. (2020) show that the brain could also combine networks with different distances to the critical point, such that the resulting ensemble has a dynamic range of stimulus response wider than any of the ensemble networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zierenberg et al. (2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "38f1d53a-ebed-464d-b547-96c3067c4511",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C78",
+      "claim": "The computational model captures essential features of neuronal dynamics: alpha oscillations, long-range temporal correlations, and scale-free avalanches.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our computational model abstracts many biophysiological neuronal mechanisms, it captures essential features of neuronal dynamics: alpha oscillations, long-range temporal correlations, and scale-free avalanches, which emerge at a specific balance of excitatory and inhibitory connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the capabilities of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "9d701a0c-c946-4b79-beae-e5d5c649f1a5",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C79",
+      "claim": "Alpha oscillations, long-range temporal correlations, and scale-free avalanches emerge at a specific balance of excitatory and inhibitory connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our computational model abstracts many biophysiological neuronal mechanisms, it captures essential features of neuronal dynamics: alpha oscillations, long-range temporal correlations, and scale-free avalanches, which emerge at a specific balance of excitatory and inhibitory connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this as a finding from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "afed77e3-8e2f-4743-85c6-02ece8c3343b",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C80",
+      "claim": "Non-oscillatory neuronal models have shown maximized dynamic range at criticality.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, non-oscillatory neuronal models have shown maximized dynamic range at criticality (Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011; Shew et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gautam et al., 2015; Kinouchi and Copelli, 2006; Larremore et al., 2011; Shew et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "d500afdf-a97e-48e8-a1ce-46736b8e19c6",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C81",
+      "claim": "It is plausible that non-oscillatory models could show a pre-stimulus 'amplitude' regulation effect based on the level of pre-stimulus firing\u2014and that this effect is likely to be maximal at criticality.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is plausible that non-oscillatory models could also show a pre-stimulus 'amplitude' regulation effect based on the level of pre-stimulus firing\u2014and that this effect is likely to be maximal at criticality\u2014it is unclear how a phase regulation effect could occur without an ongoing oscillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a speculation about non-oscillatory models.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "589bf575-39bc-4626-b0c9-d8df32544222",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C82",
+      "claim": "It is unclear how a phase regulation effect could occur without an ongoing oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is plausible that non-oscillatory models could also show a pre-stimulus 'amplitude' regulation effect based on the level of pre-stimulus firing\u2014and that this effect is likely to be maximal at criticality\u2014it is unclear how a phase regulation effect could occur without an ongoing oscillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a logical inference about the necessity of oscillations for phase regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "ea2b87da-0b32-4fdb-a44b-c1de5bf9c6c3",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C83",
+      "claim": "The study highlights the importance of critical-state dynamics for understanding neuronal network function.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall our study highlights the importance of critical-state dynamics (Chialvo, 2010) for understanding neuronal network function, and shows that it is possible to integrate oscillatory mechanisms into this framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a conclusion from the study, with citation to Chialvo, 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "c36cbb6d-2d20-4e2d-a1b9-eb404522088c",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C84",
+      "claim": "It is possible to integrate oscillatory mechanisms into the critical-state dynamics framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall our study highlights the importance of critical-state dynamics (Chialvo, 2010) for understanding neuronal network function, and shows that it is possible to integrate oscillatory mechanisms into this framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a conclusion from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "f93f091a-db81-49a5-871b-88d06e482e99",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C85",
+      "claim": "The concept of critical brain dynamics is compatible with time-varying functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, while the quantitative hallmarks of criticality require long-time monitoring of spatial and temporal dynamics that are statistically stable, our results show that the concept of critical brain dynamics is compatible with time-varying functions\u2014an important notion in contemporary theories of neuronal oscillations and their role in neuronal communication and in attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text presents this as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "bb0cb1cf-c662-4d0a-95bc-4f8e8e5a61ff",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C86",
+      "claim": "DFA exponents in the interval of 0.5 to 1.0 indicate scale-free temporal correlations (autocorrelations).",
+      "claim_type": "EXPLICIT",
+      "source": "DFA exponents in the interval of 0.5 to 1.0 indicate scale-free temporal correlations (autocorrelations), whereas an exponent of 0.5 characterizes an uncorrelated signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the interpretation of DFA exponents based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "99eb7312-10d3-4884-93d5-ffc21468ac81",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C87",
+      "claim": "A DFA exponent of 0.5 characterizes an uncorrelated signal.",
+      "claim_type": "EXPLICIT",
+      "source": "DFA exponents in the interval of 0.5 to 1.0 indicate scale-free temporal correlations (autocorrelations), whereas an exponent of 0.5 characterizes an uncorrelated signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the interpretation of DFA exponents based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "686fd7ab-86ac-4ab6-a0a9-061caf38fd17",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C88",
+      "claim": "DFA facilitates a reliable analysis of LRTC up to time scales of at least 10% of the duration of the signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, DFA facilitates a reliable analysis of LRTC up to time scales of at least 10% of the duration of the signal (Chen et al., 2002; Gao et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chen et al., 2002; Gao et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "b244cbfe-adca-436d-9524-29225ea16ee5",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C89",
+      "claim": "The model was implemented using the Brian2 simulator for spiking neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was implemented using the Brian2 simulator for spiking neural networks (Stimberg et al., 2014; RRID:SCR_002998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the implementation method with citation to Stimberg et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "aa26e134-d6f4-4843-af66-87c9b5b23e64",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C90",
+      "claim": "Inhibitory neurons were positioned on the grid according to Mitchell's best candidate algorithm, which results in a more even spatial distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid this, we first positioned inhibitory neurons on the grid according to Mitchell's best candidate algorithm (Mitchell, 1991), which results in a more even spatial distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the method with citation to Mitchell, 1991.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "0bcf431f-8227-4d74-85e0-72df7486c507",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C91",
+      "claim": "Within local range, connection probability decreases exponentially with distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Within local range, connection probability decreases exponentially with distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes a feature of the model implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "cede4995-1caf-43da-84dc-e797ad25951f",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C92",
+      "claim": "A subcritical distribution is characterized by \u03ba <1.",
+      "claim_type": "EXPLICIT",
+      "source": "A subcritical distribution is characterized by \u03ba <1, and a supercritical distribution by \u03ba >1, whereas \u03ba = 1 indicates a critical network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text defines the interpretation of the \u03ba index.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "d3c226f0-a609-4ad4-bbe0-9ad02fdd0919",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C93",
+      "claim": "A supercritical distribution is characterized by \u03ba >1.",
+      "claim_type": "EXPLICIT",
+      "source": "A subcritical distribution is characterized by \u03ba <1, and a supercritical distribution by \u03ba >1, whereas \u03ba = 1 indicates a critical network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text defines the interpretation of the \u03ba index.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "171b9861-5b15-4769-aa8c-49e8cdbe45ec",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "claim_id": "C94",
+      "claim": "\u03ba = 1 indicates a critical network.",
+      "claim_type": "EXPLICIT",
+      "source": "A subcritical distribution is characterized by \u03ba <1, and a supercritical distribution by \u03ba >1, whereas \u03ba = 1 indicates a critical network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text defines the interpretation of the \u03ba index.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The CROS computational model consists of 75% excitatory and 25% inhibitory integrate-and-fire neurons arranged on a 50\u00d750 grid, exhibits oscillations in the 8-16 Hz range, and demonstrates multi-level criticality with spatial and temporal power-law scaling behavior that emerges through balanced excitatory/inhibitory connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26, C78-C79, and C89-C91 collectively describe the model architecture and its key dynamical properties. The model implementation is clearly documented with appropriate citations (Brian2 simulator, Mitchell's algorithm), and the emergence of critical dynamics from E/I balance is demonstrated with supporting figures showing firing rates, oscillation frequencies, power-law avalanches, and LRTC across parameter space.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "3639e728-b86a-4217-b4d6-39c9ee954447",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Critical networks show oscillatory stimulus responses with phase-locking that increases with stimulus size, and exhibit a wider dynamic range of phase-locking responses compared to subcritical or supercritical networks across a wide range of post-stimulus latencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 and C35 describe the phase-locking response properties with explicit reference to supporting figures (Figure 1B-F, Figure 1\u2014figure supplement 2). The dynamic range is quantified using sigmoid fits and the 10-90% criterion, and the superiority of critical networks is demonstrated across the connectivity parameter space. The comparison to human data (C29) appropriately cites Palva et al., 2005.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "11b5a6c6-9b3f-4ee0-a281-1b9b99a8ab02",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Critical networks exhibit strong negative pre-stimulus amplitude regulation of phase-locking responses, with stronger regulation correlating with stronger LRTC, while subcritical and supercritical networks show no such regulation. This establishes a novel link between critical-state dynamics and amplitude-dependent response modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 and C62-C63 describe pre-stimulus amplitude effects with supporting data (Figure 2C-F, Figure 2\u2014figure supplement 2). The statistical correlation with LRTC (C38) is demonstrated using Spearman correlation with cluster-based correction for multiple comparisons. Claim C51 appropriately identifies this as a novel contribution. The functional interpretation (C62-C63) follows logically from the modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "7ca18853-e1db-4c2b-8a74-a6db8e057133",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pre-stimulus phase dependence of post-stimulus phase-locking requires balanced E/I connectivity and is significantly correlated with criticality (LRTC). Critical networks show the strongest response on the rising side of the alpha cycle and weakest on the descending side, and exhibit pre-stimulus phase regulation over the widest range of stimulus sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 describe pre-stimulus phase effects with supporting figures (Figure 3A-D, Figure 3\u2014figure supplements 1-3). The phase-dependent response is characterized using 32 phase bins with equal trial numbers, and the correlation with LRTC is statistically demonstrated. The mechanistic interpretation linking phase to network excitability (C41-C42) is supported by Figure 3\u2014figure supplement 1 showing standardized network activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "1c98e7da-ff94-4a9d-a156-80fe70fa00a8",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Supercritical networks show incomplete saturation of phase-locking responses at standard stimulus strengths due to strong ongoing oscillations, but an 8-fold increase in input strength brings them to saturation. Critical networks show maximal dynamic range at baseline input strength, though supercritical networks can show differential responses at very large stimulus sizes where critical networks saturate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 and C75 describe the behavior of supercritical networks with supporting data (Figure 1D, Figure 1\u2014figure supplement 3B-C, Figure 2\u2014figure supplement 1). The systematic exploration of input strengths (1/64 to 64\u00d7 baseline) demonstrates that critical networks maintain superior dynamic range across conditions. The observation about supercritical networks at large stimuli (C75) is appropriately qualified as occurring where critical networks saturate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "f06e9703-0aa4-4e1e-8b50-99c6479fe1c0",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Model parameters were optimized for power-law avalanche distributions and robust LRTC without targeting dynamic range or pre-stimulus regulation. When excitatory-to-excitatory synaptic weights were varied (0.75\u00d7 and 1.25\u00d7), the functional consequences of criticality followed the shift in the critical line, demonstrating that the relationship between criticality and network versatility is generic to criticality rather than parameter-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 describe the parameter robustness analysis with supporting data (Figure 4). The optimization procedure is clearly described in Materials and Methods, and the systematic variation of wEE demonstrates that functional properties track the critical line across parameter changes. This provides strong evidence for generalizability, though the analysis is limited to variations in a single parameter.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "4c7aab3d-6b10-4c39-bc11-79e5e741bad3",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The ability of networks to regulate stimulus response based on pre-stimulus activity requires near-critical dynamics\u2014a state characterized by balanced E/I connectivity and scale-free fluctuations. Oscillatory spiking networks have optimal dynamic range when critical, suggesting this is a generic property of critical systems. Critical brain dynamics are compatible with time-varying functions and can be integrated with oscillatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C57-C58 represent the main conclusions synthesized from the modeling results. These are well-supported by the collective evidence from dynamic range (C30-C35), pre-stimulus amplitude regulation (C36-C38), and pre-stimulus phase regulation (C39-C46) analyses. The comparison to prior work on non-oscillatory networks (C57, C80) appropriately contextualizes the findings. Claims C83-C85 provide appropriate broader implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "80d18f17-477e-4bac-b756-bac93298474e",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Top-down mechanisms are not required for fluctuations in alpha power in the model, though attentional mechanisms could plausibly regulate fluctuation levels to shift the network's operating point. The spontaneous fluctuations at criticality may serve to flexibly switch between competing stimuli, and being critical requires minimal modulation to reach sub- or supercritical states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C69 and C73 represent interpretations and speculations about functional implications. While C64 is a reasonable inference from the modeling results showing spontaneous fluctuations in balanced networks, claims C65, C67, C68, and C73 are explicitly speculative and not directly tested in the model. These represent plausible hypotheses for future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "97bfd4b5-9045-4c4f-b6aa-69b36e82e355",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors predict that criticality will affect different time components of ERPs since phase-locking contributes to ERP generation. They speculate that non-oscillatory models might show pre-stimulus amplitude regulation at criticality, but note that phase regulation likely requires ongoing oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C82 are explicitly presented as predictions and speculations rather than demonstrated results. While C60 is a reasonable prediction based on the established role of phase-locking in ERPs (C59), it remains untested. Claims C81-C82 about non-oscillatory models are logical inferences but also untested. These represent appropriate directions for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "1e2777ed-96db-4199-8d70-981704a49ba2",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The brain may bring its dynamics close to the critical state when network versatility is required. The critical state may not be optimal for all tasks\u2014complex tasks benefit from criticality while simple tasks requiring constant attention may benefit from subcritical states. The brain could regulate its distance from criticality in a task-dependent manner or combine networks at different distances from criticality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C74, C76, and C77 represent speculative extensions to brain function based on the modeling results. While C74 appropriately cites Cramer et al. (2019) and C76-C77 cite relevant work (Pfeffer et al., 2018; Zierenberg et al., 2020), these claims go beyond what the current computational model demonstrates. They represent plausible hypotheses but lack direct empirical support from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "9e862817-3b0c-4f22-8a4a-44efb2839677",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript cites extensive prior work on threshold stimulus detection, alpha oscillations, pre-stimulus effects on perception, long-range temporal correlations, criticality, and dynamic range in neural systems to contextualize the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C20 and C52-C72, C80, C88 represent background knowledge from cited literature. These citations appear appropriate and accurately represent the cited work based on the claims made. The authors appropriately distinguish between established findings from prior work and their novel contributions (e.g., C51 explicitly states their work establishes a link \"for the first time\").",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    },
+    {
+      "id": "8044baeb-eb35-4eab-a9d2-5c767c75ad23",
+      "content_id": "762c1b48-9968-4add-be42-3b9ed9727a04",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript defines standard interpretations of DFA exponents and the \u03ba index for characterizing criticality in neural avalanche distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 and C92-C94 provide methodological definitions that are standard in the field. These are appropriately cited (C86-C87 reference established knowledge, C88 cites Chen et al., 2002 and Gao et al., 2006) and correctly describe the interpretation of these measures for assessing criticality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:53.273620Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "031edd2e-5634-4682-b416-cbec8011fafa",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "11b9c941-52ab-4bf1-9785-247b95709006",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "fd704671-403e-4a71-bf1e-7fbb5828eb42",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "f5d1f4c9-4027-4994-ba2d-fbc82b0ec438",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "5e2cd9d5-7a02-4e60-b93f-f28eeaaa44c6",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "febb9ad6-b51b-40ce-aa9d-9f31faa1f777",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "38f1d53a-ebed-464d-b547-96c3067c4511",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "9d701a0c-c946-4b79-beae-e5d5c649f1a5",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "b244cbfe-adca-436d-9524-29225ea16ee5",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "aa26e134-d6f4-4843-af66-87c9b5b23e64",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "0bcf431f-8227-4d74-85e0-72df7486c507",
+      "result_id": "52e59ce7-9060-4a87-ad8b-40fe51e99e7e"
+    },
+    {
+      "claim_id": "e07a7d2b-dd37-4426-ba4f-7c9a5d35a559",
+      "result_id": "3639e728-b86a-4217-b4d6-39c9ee954447"
+    },
+    {
+      "claim_id": "7c8dec8f-3d0c-4481-8705-9a9949d2ab3b",
+      "result_id": "3639e728-b86a-4217-b4d6-39c9ee954447"
+    },
+    {
+      "claim_id": "0133c694-9d69-48a4-8e68-2fad3a36d5b4",
+      "result_id": "3639e728-b86a-4217-b4d6-39c9ee954447"
+    },
+    {
+      "claim_id": "bb4ceee1-e932-44e6-a07b-2e28f8306af6",
+      "result_id": "3639e728-b86a-4217-b4d6-39c9ee954447"
+    },
+    {
+      "claim_id": "439af840-ecbd-4f66-932f-4b996124e028",
+      "result_id": "3639e728-b86a-4217-b4d6-39c9ee954447"
+    },
+    {
+      "claim_id": "13674319-82da-4d99-8d6c-a02ceb6b5cba",
+      "result_id": "3639e728-b86a-4217-b4d6-39c9ee954447"
+    },
+    {
+      "claim_id": "69a84249-98c8-4362-b077-e71417a97690",
+      "result_id": "3639e728-b86a-4217-b4d6-39c9ee954447"
+    },
+    {
+      "claim_id": "0e28fab9-b8bb-4d6d-899d-9ea6d5a2e1b7",
+      "result_id": "11b5a6c6-9b3f-4ee0-a281-1b9b99a8ab02"
+    },
+    {
+      "claim_id": "b2dcbaeb-d750-45c5-84ef-d917d39d2a88",
+      "result_id": "11b5a6c6-9b3f-4ee0-a281-1b9b99a8ab02"
+    },
+    {
+      "claim_id": "fd0188b6-da52-4f36-9933-1a5004f78a2a",
+      "result_id": "11b5a6c6-9b3f-4ee0-a281-1b9b99a8ab02"
+    },
+    {
+      "claim_id": "991256a7-2bed-4d58-a3a6-262be88fe891",
+      "result_id": "11b5a6c6-9b3f-4ee0-a281-1b9b99a8ab02"
+    },
+    {
+      "claim_id": "d198be2a-3de3-437d-b998-86e3f52b1cc9",
+      "result_id": "11b5a6c6-9b3f-4ee0-a281-1b9b99a8ab02"
+    },
+    {
+      "claim_id": "df7da7fb-0896-469f-8a32-f62303f3a899",
+      "result_id": "11b5a6c6-9b3f-4ee0-a281-1b9b99a8ab02"
+    },
+    {
+      "claim_id": "53b8fa47-3d63-4ccb-b817-4e92fff457e8",
+      "result_id": "7ca18853-e1db-4c2b-8a74-a6db8e057133"
+    },
+    {
+      "claim_id": "69397f6b-8955-4348-b9ed-9f37e8f8a32b",
+      "result_id": "7ca18853-e1db-4c2b-8a74-a6db8e057133"
+    },
+    {
+      "claim_id": "12407bd4-413e-4808-8523-5743cadc1990",
+      "result_id": "7ca18853-e1db-4c2b-8a74-a6db8e057133"
+    },
+    {
+      "claim_id": "a8a6ca33-f036-4b54-b8ef-20a46f8f1f40",
+      "result_id": "7ca18853-e1db-4c2b-8a74-a6db8e057133"
+    },
+    {
+      "claim_id": "f6f33220-5189-46b4-ac09-97e4a9a62c55",
+      "result_id": "7ca18853-e1db-4c2b-8a74-a6db8e057133"
+    },
+    {
+      "claim_id": "d4c916ef-e055-4e39-8aff-92b2f5211896",
+      "result_id": "7ca18853-e1db-4c2b-8a74-a6db8e057133"
+    },
+    {
+      "claim_id": "9e661848-7137-47f8-9d5c-6d7b40eecfef",
+      "result_id": "7ca18853-e1db-4c2b-8a74-a6db8e057133"
+    },
+    {
+      "claim_id": "2048f638-f883-4021-b431-dfd06ff9a537",
+      "result_id": "7ca18853-e1db-4c2b-8a74-a6db8e057133"
+    },
+    {
+      "claim_id": "aabf6ab3-2919-4e33-821c-b402b9848ae2",
+      "result_id": "7ca18853-e1db-4c2b-8a74-a6db8e057133"
+    },
+    {
+      "claim_id": "462d4d79-9dd3-4a40-83e7-e1d60190b858",
+      "result_id": "1c98e7da-ff94-4a9d-a156-80fe70fa00a8"
+    },
+    {
+      "claim_id": "6921be2d-512e-4cfe-bf71-a74ba28b3651",
+      "result_id": "1c98e7da-ff94-4a9d-a156-80fe70fa00a8"
+    },
+    {
+      "claim_id": "0170e378-4e3d-4ed0-9768-56ea8016290a",
+      "result_id": "1c98e7da-ff94-4a9d-a156-80fe70fa00a8"
+    },
+    {
+      "claim_id": "8b3b4862-fe2f-4e89-b757-d78dd292cc36",
+      "result_id": "1c98e7da-ff94-4a9d-a156-80fe70fa00a8"
+    },
+    {
+      "claim_id": "bf91eb64-0ed2-4d97-9c4b-f9438082a7f2",
+      "result_id": "f06e9703-0aa4-4e1e-8b50-99c6479fe1c0"
+    },
+    {
+      "claim_id": "6e2b506b-2e3a-4309-a554-bcb2144a4e4d",
+      "result_id": "f06e9703-0aa4-4e1e-8b50-99c6479fe1c0"
+    },
+    {
+      "claim_id": "993d4ccc-414c-49ec-af59-1cf0652b0b27",
+      "result_id": "f06e9703-0aa4-4e1e-8b50-99c6479fe1c0"
+    },
+    {
+      "claim_id": "01ebf643-f9d6-400d-b215-32b9b5bd2999",
+      "result_id": "f06e9703-0aa4-4e1e-8b50-99c6479fe1c0"
+    },
+    {
+      "claim_id": "c8f68ddb-5e34-43c9-a17e-135d8afac862",
+      "result_id": "4c7aab3d-6b10-4c39-bc11-79e5e741bad3"
+    },
+    {
+      "claim_id": "1221dd85-9ad0-4d47-90f0-fa3f6de265fb",
+      "result_id": "4c7aab3d-6b10-4c39-bc11-79e5e741bad3"
+    },
+    {
+      "claim_id": "800df529-f175-4351-af45-c97ac5a73d5a",
+      "result_id": "4c7aab3d-6b10-4c39-bc11-79e5e741bad3"
+    },
+    {
+      "claim_id": "c3c3499e-31d6-4b4c-a75b-8006a8fd1137",
+      "result_id": "4c7aab3d-6b10-4c39-bc11-79e5e741bad3"
+    },
+    {
+      "claim_id": "07b45067-9a85-4cb5-94f1-17e3c4cf1b4e",
+      "result_id": "4c7aab3d-6b10-4c39-bc11-79e5e741bad3"
+    },
+    {
+      "claim_id": "ea2b87da-0b32-4fdb-a44b-c1de5bf9c6c3",
+      "result_id": "4c7aab3d-6b10-4c39-bc11-79e5e741bad3"
+    },
+    {
+      "claim_id": "c36cbb6d-2d20-4e2d-a1b9-eb404522088c",
+      "result_id": "4c7aab3d-6b10-4c39-bc11-79e5e741bad3"
+    },
+    {
+      "claim_id": "f93f091a-db81-49a5-871b-88d06e482e99",
+      "result_id": "4c7aab3d-6b10-4c39-bc11-79e5e741bad3"
+    },
+    {
+      "claim_id": "01d08592-f136-439d-b3df-287c4cf642d5",
+      "result_id": "80d18f17-477e-4bac-b756-bac93298474e"
+    },
+    {
+      "claim_id": "8b41cc8f-fc3c-41a5-85bf-01c40c199c15",
+      "result_id": "80d18f17-477e-4bac-b756-bac93298474e"
+    },
+    {
+      "claim_id": "45db4b52-aaeb-47d3-8e3a-9fff7d40bc54",
+      "result_id": "80d18f17-477e-4bac-b756-bac93298474e"
+    },
+    {
+      "claim_id": "5431928d-26f7-41c7-a2ee-2bbb2ec2474f",
+      "result_id": "80d18f17-477e-4bac-b756-bac93298474e"
+    },
+    {
+      "claim_id": "54e498cc-8b0f-43cb-b1bc-5347c1919abf",
+      "result_id": "80d18f17-477e-4bac-b756-bac93298474e"
+    },
+    {
+      "claim_id": "842657b0-5cd5-465f-a625-74021c3afd14",
+      "result_id": "80d18f17-477e-4bac-b756-bac93298474e"
+    },
+    {
+      "claim_id": "1622a818-e49d-4c2e-98b1-65e5df68eff0",
+      "result_id": "97bfd4b5-9045-4c4f-b6aa-69b36e82e355"
+    },
+    {
+      "claim_id": "d500afdf-a97e-48e8-a1ce-46736b8e19c6",
+      "result_id": "97bfd4b5-9045-4c4f-b6aa-69b36e82e355"
+    },
+    {
+      "claim_id": "589bf575-39bc-4626-b0c9-d8df32544222",
+      "result_id": "97bfd4b5-9045-4c4f-b6aa-69b36e82e355"
+    },
+    {
+      "claim_id": "a1980c4a-b795-4473-a9ee-ae04c4e36f7a",
+      "result_id": "1e2777ed-96db-4199-8d70-981704a49ba2"
+    },
+    {
+      "claim_id": "ab3c78b6-9dc0-4a8c-9f4e-e80a572e5be9",
+      "result_id": "1e2777ed-96db-4199-8d70-981704a49ba2"
+    },
+    {
+      "claim_id": "4f265fad-3df4-4f9a-8d4a-9728f4a86496",
+      "result_id": "1e2777ed-96db-4199-8d70-981704a49ba2"
+    },
+    {
+      "claim_id": "b3723573-5bef-435a-9ef5-1a748a4b6fc6",
+      "result_id": "1e2777ed-96db-4199-8d70-981704a49ba2"
+    },
+    {
+      "claim_id": "2d84baf7-5d12-4a26-bc7d-b4651b8e4056",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "79ebd0f6-1991-4136-a32a-58a1b23a3f03",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "d5c214fd-7317-49e8-bc5e-250151f44f8f",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "478eaae9-6560-4d52-a184-ed4956f0b71a",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "ceae28c1-aaf8-49ac-a027-480d91276424",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "0143406f-196a-401a-b83e-c9136c003d96",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "e9f9417a-026a-40fa-8caf-ae58bca6cf3e",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "0799bb9b-e7eb-463f-a0b7-31b49af098d9",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "a83bf9b9-161a-4dda-90c5-4675bf6859a3",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "00a14d87-23dd-4fa3-b9c9-b0613dc4dbc6",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "2e4966aa-7181-400b-957b-d8934dd4929c",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "7d68fc5e-3d7b-4ff4-ba88-63e3e5b715de",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "b6f7a8eb-a8ba-4414-b1d0-2917dd1e899d",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "f12ad452-afb8-41ca-afd0-55b7268e0c26",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "762abf66-7928-40d7-aeb4-cabba051ae58",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "0600250b-b78d-4dd4-b170-76deb2c27d66",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "ced82e52-d9e8-4899-8f21-28bec14b0094",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "d444efc1-8a76-478d-b308-3f0b5503ee67",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "dd337f0f-6109-4fb5-9b10-72ff5b5a760c",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "eeab6afe-9526-48f5-99ad-4c9cc6610045",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "2d7cdd71-5c08-478e-b8cc-9a2c99421753",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "f56714be-6084-4b79-a422-a46cfb4e4d70",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "3c33fdfa-8482-45d7-8925-158dc633186f",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "a564ce87-5e6e-43c0-b407-af24a215ad4b",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "306dbaf8-3dc3-41fd-8053-9774c28cddf3",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "afed77e3-8e2f-4743-85c6-02ece8c3343b",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "686fd7ab-86ac-4ab6-a0a9-061caf38fd17",
+      "result_id": "9e862817-3b0c-4f22-8a4a-44efb2839677"
+    },
+    {
+      "claim_id": "bb0cb1cf-c662-4d0a-95bc-4f8e8e5a61ff",
+      "result_id": "8044baeb-eb35-4eab-a9d2-5c767c75ad23"
+    },
+    {
+      "claim_id": "99eb7312-10d3-4884-93d5-ffc21468ac81",
+      "result_id": "8044baeb-eb35-4eab-a9d2-5c767c75ad23"
+    },
+    {
+      "claim_id": "cede4995-1caf-43da-84dc-e797ad25951f",
+      "result_id": "8044baeb-eb35-4eab-a9d2-5c767c75ad23"
+    },
+    {
+      "claim_id": "d3c226f0-a609-4ad4-bbe0-9ad02fdd0919",
+      "result_id": "8044baeb-eb35-4eab-a9d2-5c767c75ad23"
+    },
+    {
+      "claim_id": "171b9861-5b15-4769-aa8c-49e8cdbe45ec",
+      "result_id": "8044baeb-eb35-4eab-a9d2-5c767c75ad23"
+    }
+  ],
+  "comparisons": []
+}

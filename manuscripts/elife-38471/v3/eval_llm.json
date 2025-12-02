@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes the scientific context that identifying low-dimensional features in large-scale neural recordings is challenging, and that traditional dimensionality reduction techniques fail to capture repeated temporal patterns (sequences) which are thought to be salient features of neural dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 represent well-established knowledge in the field, supported by the broader literature context. These claims appropriately frame the scientific problem that motivates the development of seqNMF.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors developed seqNMF, a software toolbox with new methods for extracting informative, non-redundant sequences from high-dimensional neural data, testing significance of extracted patterns, assessing prevalence of sequential structure, and promoting desirable features like orthogonality or sparsity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C31-C33 describe the core contribution of the paper. The toolbox is demonstrated throughout the manuscript with specific implementations, algorithms, and validation results, providing strong evidence for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C42"
+    ],
+    "result": "The seqNMF approach builds on convolutional non-negative matrix factorization (convNMF), which has been previously applied to audio signals and neural data, and uses matrix factorization to reconstruct neural dynamics using exemplar sequences without requiring external behavioral references.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 and C42 are well-supported by citations to prior work on convNMF and by the mathematical framework presented in the manuscript. The extension to neural sequence extraction is clearly described and justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C46",
+      "C47"
+    ],
+    "result": "Standard convNMF produces overly complex and redundant factorizations when the number of factors exceeds the true number of sequences, with inconsistent results across optimization runs from different initial conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C46-C47 identify limitations of standard convNMF that are supported by citations to prior work (C30, C47) and are demonstrated in the manuscript's figures showing redundant factorizations (Figure 1C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The x-ortho penalty promotes competition between factors to use a minimal set for reconstruction, can be approximated by formal regularization, and demonstrates reliable convergence, near-perfect consistency across runs, correct identification of sequence numbers, and robust performance on sequences with shared neurons and complex structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C75 describe the x-ortho penalty's properties and performance. These are supported by mathematical derivations (C62, Appendix 2), convergence analysis (C65-C66, Figure 2B), consistency measurements (C70, Figure 2C), and tests on various data structures (C71-C75, Figures 2D-F). The evidence is comprehensive and quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The x-ortho penalty is robust to multiple noise types (participation noise, additive noise, temporal jitter, temporal warping), producing factors highly similar to ground-truth under low-noise conditions with graceful degradation at higher noise levels, and requiring only three repetitions of each sequence for reliable extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are strongly supported by systematic testing across noise conditions (Figure 3, Figure 4\u2014figure supplement 5) with quantitative similarity metrics and visual validation. The claim about three repetitions being sufficient (C80) is supported by Figure 3\u2014figure supplement 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "L1 sparsity constraints can achieve performance comparable to the x-ortho penalty with optimal hyperparameter selection, but show differential performance across noise types, and the authors prefer the x-ortho approach due to its simpler single-parameter design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by systematic comparisons in Figure 4\u2014figure supplement 4 and Figure 4\u2014figure supplement 5. The preference statement (C99) is clearly a methodological choice based on practical considerations rather than a claim about absolute superiority.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C104",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The stability NMF approach (diss metric) was adapted for convNMF and identifies factorizations with correct number of factors that are highly similar to ground truth and minimize reconstruction error on held-out data, showing clear minima or distinguishing features in test error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C110 describe the second strategy for selecting the number of factors. The adaptation is described (C104), and performance is validated on simulated data (C108-C110, Figure 5, Figure 5\u2014figure supplement 2) with both similarity to ground truth and cross-validation metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118"
+    ],
+    "result": "Sequences with shared neurons can be interpreted in multiple ways corresponding to 'parts-based' or 'events-based' factorizations, which may reflect different underlying mechanisms and have different utilities for clustering neurons versus correlating with behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 describe an important conceptual framework for interpreting ambiguous factorizations. This is illustrated in Figure 6 and demonstrated on real data (Figure 9\u2014figure supplement 2). The claims appropriately distinguish between mathematical ambiguity and biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors developed a 'sequenciness' metric that varies approximately linearly with the degree of sequential structure in data, based on comparing convNMF performance on original versus column-shuffled data, and obtained high scores on real experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 describe a novel metric for quantifying sequential structure. The metric is validated on simulated data with varying proportions of sequential versus synchronous events (C130, Figure 7C) and applied to real data (C131). The approach is conceptually sound and empirically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C34",
+      "C35"
+    ],
+    "result": "The seqNMF methods were tested on simulated data under multiple noise conditions and on real neural and behavioral datasets from two different animal species using different recording technologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C34-C35 describe the validation strategy. This is comprehensively demonstrated throughout the Results section with simulated data (Figures 2-7) and real data from rats and songbirds (Figures 8-10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C36",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "In hippocampal data from rats performing a T-maze task with delay periods, seqNMF identified neural sequences without behavioral alignment that matched those previously found by trial-averaging, extracting one factor in Rat 1 (40.8% power, sequenciness 0.49) and three factors in Rat 2 (52.6% power, sequenciness 0.85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C36, and C132-C151 describe application to hippocampal data. The results are supported by Figure 8 showing extracted sequences, quantitative metrics (power explained, sequenciness scores), and correspondence to previously published findings. The behavioral task is clearly described, and the unsupervised extraction is validated against known sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C37",
+      "C38",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "In isolate songbirds that lack stereotyped songs, seqNMF discovered neural sequences in HVC that exhibit atypical properties including probabilistic overlap of sequences, which is associated with abnormal syllable structure variations characteristic of isolate song pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C37-C38, and C152-C171 describe a novel biological finding enabled by seqNMF. The results are supported by Figure 9 and supplementary figures, with clear documentation of the biological context (isolate birds), quantitative metrics (41% power, 0.7 sequenciness), and comparison to normal birds via citations. The discovery of probabilistic sequence overlap is a significant biological insight that would be difficult to obtain with behavioral alignment methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "SeqNMF can be applied to behavioral data such as song spectrograms, where it correctly identified repeated acoustic patterns in juvenile zebra finch vocalizations, with classifications agreeing with hand-labeled syllable types, suggesting broader applicability to other behavioral data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C179 demonstrate extension to behavioral data. The application to song spectrograms is shown in Figure 10, with agreement to published hand-labeled data (C178). The suggestion of broader applicability (C179) is appropriately framed as potential future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "By identifying temporal structure directly from neural data, seqNMF enables dissection of complex neural circuits without relying on temporal references from stimuli or behavioral outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is a high-level conclusion supported by the successful application of seqNMF to hippocampal data (matching behaviorally-aligned sequences without using behavioral alignment) and isolate songbird data (discovering sequences in highly variable songs where behavioral alignment would be impractical).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Recent technological advances enable recording hundreds to thousands of neurons with dynamics often structured in sparse sequences, but existing methods for identifying sequences either require behavioral alignment (limiting applicability) or face computational and statistical challenges when scaling to many neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 establish the scientific context and limitations of existing methods. These are supported by appropriate citations to prior work and accurately describe the state of the field, providing clear motivation for the development of seqNMF.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Matrix factorization underlies many unsupervised learning algorithms including PCA, NMF, dictionary learning, and k-means clustering, with NMF requiring non-negative elements, but standard matrix factorization is unsuitable for discovering temporally extended patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 provide mathematical background supported by appropriate citations. The limitation of standard matrix factorization for sequential data (C41) is a logical consequence of the independence assumption and is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The ability to detect and analyze temporal sequences in sensory streams is an essential cognitive function and necessary capability of neuronal circuits in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 represent established knowledge in neuroscience and cognitive science, appropriately supported by multiple citations. These claims provide important context for the biological relevance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49",
+      "C52"
+    ],
+    "result": "Regularization is a common optimization technique for incorporating constraints to improve generalization or resolve degeneracies, but a penalty based on HH^T does not prevent all types of errors in convNMF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C52 describe the regularization approach and its limitations. C49 is supported by citation to standard machine learning literature, and C52 is demonstrated by the analysis of different error types in Figure 1C and Figure 1\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "While sequences may be found in various neural datasets, their importance and prevalence is still a matter of debate and investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 accurately characterizes the current state of the field and provides motivation for developing the sequenciness metric. This is a fair assessment of ongoing scientific questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C180",
+      "C181"
+    ],
+    "result": "ConvNMF was originally developed for spectrograms, and it has been suggested that auditory cortex may use similar computations to represent and parse natural statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C181 are supported by appropriate citations and provide interesting context about the origins of convNMF and potential biological relevance of the computational approach.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1547 @@
+{
+  "submission": {
+    "id": "7f13d103-ea35-4135-9661-36262253aed8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:49:09.515345Z",
+    "updated_at": "2025-12-02T17:49:09.515345Z"
+  },
+  "content": [
+    {
+      "id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "submission_id": "7f13d103-ea35-4135-9661-36262253aed8",
+      "content_type": "manuscript",
+      "content_text": "# Distinct signals in medial and lateral VTA dopamine neurons modulate fear extinction at different times\n\n## Authors\n\n- Lili X Cai<sup>1</sup> ([ORCID: 0000-0003-3260-2367](https://orcid.org/0000-0003-3260-2367))\n- Katherine Pizano<sup>1</sup>\n- Gregory W Gundersen<sup>2</sup>\n- Cameron L Hayes<sup>1</sup> ([ORCID: 0000-0002-0388-5807](https://orcid.org/0000-0002-0388-5807))\n- Weston T Fleming<sup>1</sup>\n- Sebastian Holt<sup>1</sup>\n- Julia M Cox<sup>1</sup>\n- Ilana B Witten<sup>1</sup> ([ORCID: 0000-0003-0548-2160](https://orcid.org/0000-0003-0548-2160)) \u2020\n\n### Affiliations\n\n1. Princeton Neuroscience Institute, Princeton University Princeton United States\n2. Department of Computer Science, Princeton University Princeton United States\n3. Department of Psychology, Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDopamine (DA) neurons are thought to encode reward prediction error (RPE), in addition to other signals, such as salience. While RPE is known to support learning, the role of salience in learning remains less clear. To address this, we recorded and manipulated VTA DA neurons in mice during fear extinction. We applied deep learning to classify mouse freezing behavior, eliminating the need for human scoring. Our fiber photometry recordings showed DA neurons in medial and lateral VTA have distinct activity profiles during fear extinction: medial VTA activity more closely reflected RPE, while lateral VTA activity more closely reflected a salience-like signal. Optogenetic inhibition of DA neurons in either region slowed fear extinction, with the relevant time period for inhibition differing across regions. Our results indicate salience-like signals can have similar downstream consequences to RPE-like signals, although with different temporal dependencies.\n\n## Introduction\n\nA critical function of VTA DA neurons is to signal reward prediction error (RPE), or the difference between experienced and expected reward (Schultz et al., 1997; Cohen et al., 2012). This signal supports reinforcement learning (Steinberg et al., 2013; Chang et al., 2016; Tsai et al., 2009; Witten et al., 2011; Parker et al., 2016; Saunders et al., 2018; Zweifel et al., 2009; Kim et al., 2012; Stopper et al., 2014; Adamantidis et al., 2011). However, rather than uniformly representing a scalar RPE, there is recent appreciation that VTA DA neurons can display heterogeneous and spatially organized signals. For example, we recently demonstrated that during navigation-based decision making, there are spatially segregated representations within VTA DA neurons of a variety of sensory, motor, and cognitive variables (Engelhard et al., 2019). Others have demonstrated neural correlates of salience-like signals in certain DA neurons (de Jong et al., 2019; Saddoris et al., 2015; Wang and Tsien, 2011; Gore et al., 2014; Yuan et al., 2019; Cho et al., 2017; Aitken et al., 2016).\n\nAlthough most work examining neural correlates of behavior in VTA DA neurons has focused on reward-based tasks, several studies have recorded VTA DA neuron activity during aversive associations (Robinson et al., 2019; Lutas et al., 2019; Wang and Tsien, 2011; Mileykovskiy and Morales, 2011). In particular, VTA DA neurons were shown to represent RPE-like signals during fear extinction, in that they display elevated activity when the shock is omitted at the offset of the cue, signaling better-than-expected outcome (Salinas-Hern\u00e1ndez et al., 2018; Badrinarayan et al., 2012; Jo et al., 2018). Manipulation of this activity altered the rate of extinction, suggesting that an RPE-like signal in DA neurons drives reinforcement learning for aversive associations as well as rewarding associations (Salinas-Hern\u00e1ndez et al., 2018; Luo et al., 2018).\n\nHere, we first seek to determine if in addition to RPE-like signals, there are also heterogeneous and spatially organized signals in VTA DA neurons during fear extinction. One possibility is that there are neural correlates of salience, and not only RPE, in subregions of the VTA during fear extinction. Salience can be considered an unsigned prediction error - in other words, it is the absolute value of RPE (Bromberg-Martin et al., 2010; Rutledge et al., 2010). During fear extinction, a neural correlate of salience should have elevated activity during the tone that has been paired with a footshock, and elevated activity at the tone offset, when the expected footshock is not presented.\n\nSpatially segregated RPE versus salience signals in VTA DA neurons would provide a scenario to determine whether or not such distinct signals have similar or different effects on learning, an important question that has not been definitively answered in any behavioral paradigm. One hypothesis is that a salience signal may support learning, similar to an RPE signal. Alternatively, salience signals may acutely modify behavior rather than drive learning.\n\nAn advantage of utilizing fear extinction to address these questions is that it provides a continuous readout of learning via a mouse\u2019s freezing, allowing us to examine the precise temporal relationship between DA and the expression of learned behavior. However, one limitation of freezing as a readout of learning is that it traditionally requires hand scoring when mice are tethered to neural headgear, as existing software is not designed to dissociate tether movement from\u00a0mouse movement (Luyten et al., 2014; Shoji et al., 2014). The need for human labeling has often restricted the analysis of freezing to specific epochs, such as the presentation of the conditioned stimuli.\n\nTo overcome this limitation, and provide an automated and unbiased measure of freezing, we developed an analysis pipeline that uses deep learning to automatically identify freezing behavior. We combined this approach with fiber photometry to characterize the spatial distribution of RPE and salience correlates across the medial-lateral axis of the VTA during fear extinction. Finally, we performed optogenetic inhibition of DA neurons in each VTA subregion to assess if, when and how these signals affect fear extinction.\n\n## Results\n\n### Development and application of a convolutional neural network (CNN) to identify freezing behavior\n\nWe developed an analysis pipeline based on a convolutional neural network (CNN) to identify freezing behavior in mice. The CNN was initialized on the pre-trained ResNet18 architecture (He et al., 2016), and further trained on \u2018difference images,\u2019 the pixel-by-pixel intensity difference between consecutive pairs of frames. The rationale for inputting difference images to the CNN was to capture frame-by-frame motion. Each difference image was human-labeled as 1 or 0 to signify \u2018freeze\u2019 or \u2018no freeze,\u2019 and the network learned to predict labels for new difference images (Figure 1A\u2013C, Figure 1\u2014figure supplement 1A). We trained a CNN for each of two different experimental chambers (fear conditioning chamber and fear extinction chamber) and two different neural headgears (fiber photometry and optogenetics). Each classifier achieved optimal training within 50 training epochs (Figure 1\u2014figure supplement 1B\u2013E) and yielded 92\u201396% accuracy, 5\u201310% false positive rate (FPR) and 4\u20136% false negative rate (FNR) (Figure 1D). This was comparable to the relative performance between two humans: given one person\u2019s scoring held as ground truth, the other person scored with 95% accuracy, 11.5% FPR and 0.3% FNR (Figure 1\u2014figure supplement 1F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig1-v4.jpg)\n\n**Figure 1.:** (A)\u00a0Extract consecutive frames from experiment video. (B) Obtain \u2018difference images,\u2019 which are the pixel intensity difference between consecutive frames, and human label a subset as \u2018freeze\u2019 or \u2018not freeze.\u2019 (C) Train the CNN classifier to predict \u2018freeze\u2019 or \u2018no freeze\u2019, see Materials\u00a0and\u00a0methods for details. (D) Train four separate CNNs for two types of neural headgear (fiber photometry and optogenetics) and two experimental backgrounds (fear conditioning and fear extinction). For each CNN, plot shows its accuracy (Acc), false positive rate (FPR), false negative rate (FNR), false negatives (FN), false positives (FP), true negatives (TN), and true positives (TP). Error bars denote SEM of n different training and test datasets (n\u00a0=\u00a023 for fiber photometry conditioning context, n\u00a0=\u00a06 for fiber photometry extinction context, n\u00a0=\u00a015 for optogenetics fear conditioning context, n\u00a0=\u00a06 for optogenetics extinction context), see Materials\u00a0and\u00a0methods and Figure 1\u2014figure supplement 1 for details. (E-G) Comparison between human observer, CNN and FreezeFrame performance on held-out data in the fiber photometry extinction context. (E) Left: A trial from an example mouse showing percent freezing per second as measured by human observer (yellow), CNN (black), and FreezeFrame (red). For human\u00a0observer and CNN, percent freezing per second is the mean value of 11 frames where each frame is assigned \u20181\u2019 for \u2018freeze\u2019 and \u20180\u2019 for \u2018no freeze\u2019 relative to previous frame (video acquired at 11.2 Hz). Right: Data from all trials and seven mice showing percent freezing per second as measured by human observer (yellow), CNN (black), and FreezeFrame (red). (n\u00a0=\u00a07 mice, 15 trials per mouse). In both subplots, blue lines denote 20 s tone duration and error bars denote SEM. (F) 2-dimensional histogram to compare CNN labeling to human observer (Pearson correlation coefficient r\u00a0=\u00a00.96, p=0, n\u00a0=\u00a02940 samples). (G) 2-dimensional histogram to compare FreezeFrame labeling to human observer (Pearson correlation coefficient r\u00a0=\u00a00.82, p=0, n\u00a0=\u00a02940 samples). (F-G)\u00a0Color intensity denotes proportion of samples in each histogram bin.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig1-figsupp1-v4.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Examples of \u2018freeze\u2019 or \u2018no freeze\u2019 difference images from the fiber photometry extinction context used for input into the CNN. (B-E) CNN performance for different experimental backgrounds and neural headgear. (B) CNN performance for the fiber photometry fear conditioning context. 36,000 difference images used for training and testing. Top plot: Classifier loss during training for epochs 0 to 50 for train (blue) and held out test (red) data. Middle plot: test accuracy for epochs 0 to 50. Lower plot: Classifier false positive rate (FPR) and false negative rate (FNR) for epochs 0 to 50. In all plots, error bars denote SEM. (C) Same as B, for the fiber photometry fear extinction context. (D-E)\u00a0Same as B-C, for the optogenetics fear conditioning and extinction context. (F) Two human observers\u2019 scoring of 33,000 pairs of consecutive frames for fiber photometry extinction context. Left: Accuracy, true positive, false positive, true negative, false negative, false position rate and false negative rate of human observer 2, given human observer 1\u2019s result is held as ground truth. Analogous to Figure 1D. Right: 2-dimensional histogram to compare human observer one to human observer 2 (Pearson correlation coefficient r\u00a0=\u00a00.98, p=0, n\u00a0=\u00a02940 samples). Analogous to Figure 1F,G.\n\nWe compared the CNN performance with the popular proprietary software FreezeFrame (Figure 1E\u2013G) on an additional 33,000 frames from several mice. Since FreezeFrame produces a second-by-second readout of freezing, we calculated the mean freezing for each second from both the CNN and from human-labeled frames to create a comparable second-by-second readout. We found that the CNN better reflected the human observer than FreezeFrame (Figure 1E). The CNN and human observer yielded a correlation of 0.96 (Pearson correlation, Figure 1F), while FreezeFrame and human observer yielded a correlation of 0.85 (Pearson correlation, Figure 1G). In comparison, the correlation between two human observers was 0.98 (Pearson correlation, Figure 1\u2014figure supplement 1F).\n\nTaken together, our pipeline provides an automatic, fast and effective method for scoring freezing. In this paper, we used the CNN to analyze over 500 hrs of behavioral data during fear conditioning and extinction, which would have been prohibitively time consuming without an automated approach.\n\n### Neural activity in medial and lateral VTA DA neurons during fear extinction correlates with RPE and salience, respectively\n\nWe performed fear conditioning and extinction (Figure 2A) while simultaneously performing fiber photometry to record from VTA DA neurons. On day 1, mice were presented with ten tones of 20 s duration (\u2018habituation\u2019), followed by ten 20 s tones that coterminated with a 1 s, 0.5 mA foot shock (\u2018conditioning\u2019). On days 2 to 4, mice were presented with twenty-one 20 s tones alone each day (\u2018extinction\u2019). Mice froze very little during habituation, quickly increased freezing during conditioning, and slowly decreased freezing to the tone over three days of extinction (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig2-v4.jpg)\n\n**Figure 2.:** (A)\u00a0Auditory fear conditioning and extinction across 4 days: habituation and fear conditioning occur on the 1 st day, followed by 3 days of extinction. Habituation and conditioning occur in the same experimental chamber, and extinction occurs in a different experimental chamber. During habituation, mice received 10 tones lasting 20 s each. During fear conditioning, mice received 10 tones that coterminated with a 1 s foot shock. During each\u00a0extinction\u00a0day, mice received 21 tones. In all conditions, the inter-trial interval was jittered with a mean of 80 s. (B)\u00a0Mean freezing during each tone throughout auditory fear conditioning and extinction (n\u00a0=\u00a021 mice). Error bars denote SEM. (C) Schematic of expected neural activity representing reward prediction error (RPE) and salience during fear conditioning and extinction. During extinction, a neural correlate of RPE would have suppressed activity during a tone that has been paired with a footshock to signal worse than expected outcome, and elevated activity during the tone offset to signal better than expected outcome because the footshock was omitted. A neural correlate of salience can be considered an unsigned prediction error, or the absolute value of RPE.\n\nWe sought to determine if in VTA subregions, DA neurons correlated with RPE or salience. During fear extinction, we expect a neural correlate of RPE to have suppressed activity during a tone that has been paired with a foot shock to signal worse than expected outcome, and elevated activity during the tone offset to signal better than expected outcome because the footshock was omitted. A neural correlate of salience, which can be considered an unsigned prediction error, or the absolute value of RPE, should instead have elevated activity during the tone that has been paired with a footshock, and elevated activity at the tone offset, when the shock was unexpectedly omitted (Figure 2C).\n\nTo perform fiber photometry recordings from VTA DA neurons, we expressed the calcium indicator GCaMP6f in DA neurons by crossing Dat-Cre mice with Ai148D mice (see Materials\u00a0and\u00a0methods; Engelhard et al., 2019). We targeted the recording fiber to either medial or lateral VTA (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A; medial VTA group: n\u00a0=\u00a010 mice, lateral VTA group: n\u00a0=\u00a011 mice). We chose these subregions because of the electrophysiological, anatomical and functional evidence that there is a medial/lateral distinction within the VTA (Lammel et al., 2014; Beier et al., 2015; Yang et al., 2018; Engelhard et al., 2019; de Jong et al., 2019). We found that both regions showed increased activity to reward (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig3-v4.jpg)\n\n**Figure 3.:** (A)\u00a0Fiber photometry recordings in medial and lateral VTA. Left: Midbrain sagittal slice of fiber implant in VTA. Right: Medial and lateral fiber placements across the VTA, visualized at bregma\u00a0=\u00a0\u22123.28 AP. Circles indicate fiber tips, shading indicate approximate boundary of the two regions. (B) Example brain slices from different mice showing fiber placement in medial or lateral VTA, at bregma\u00a0=\u00a0\u22123.28 AP. Green denotes GCaMP6f. (C) Histology from lateral VTA, staining for cell nuclei (DAPI), tyrosine hydroxylase (TH), and GCaMP6f. (D-F) Behavior and VTA DA neuron activity during auditory fear extinction. At the bottom of each subplot, bright blue lines denote tone duration. (D) Left column: Time course of mean percent freezing for each tone during each day of fear extinction (n\u00a0=\u00a021 mice). For each extinction day subplot, color intensity corresponds to freezing percentage. Right column: Time course of mean percent freezing over all tones for each extinction day (n\u00a0=\u00a021 mice). Gray shading denotes one standard deviation. (E) Left column: Time course of mean medial VTA DA neuron activity (GCaMP6f fluorescence) for each tone during each day of fear extinction (n\u00a0=\u00a010 mice). For each extinction day subplot, color intensity denotes GCaMP6f z-score dF/F. Right column: Time course of mean medial VTA DA neuron activity (GCaMP6f fluorescence) over all tones for each extinction day (n\u00a0=\u00a010 mice). Pink shaded region denotes one standard deviation. Gray shaded region represents 1 s time points where GCaMP6f significantly deviates from shuffled data (percentile rank, p<0.01 after Bonferroni correction for multiple time point comparisons). (F) Same as E but for lateral VTA DA neuron activity (n\u00a0=\u00a011 mice), using blue instead of pink shading.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig3-figsupp1-v4.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Histology of unilateral fiber placement for medial VTA (rose dots) and lateral VTA (blue dots) fiber photometry recordings. (Expanded across the anterior-posterior coordinates of Bregma from Figure 2A) (B) GCaMP6f fluorescence during the first shock. Gray shading denotes time points when GCaMP6f fluorescence is significantly different from baseline (percentile rank, p<0.01 after Bonferroni correction for multiple time points comparison). Left: Medial VTA GCaMP6f fluorescence during first shock. Right: Lateral VTA GCaMP6f fluorescence during the first shock. (C) GCaMP6f fluorescence of shock only without the preceding tone. Left: Medial VTA (n\u00a0=\u00a010 mice, five shocks per mouse). Right: Lateral VTA (n\u00a0=\u00a011, five shocks per mouse). (D-E) Behavior and VTA DA neuron activity from example mice during auditory fear conditioning and extinction, for all experiment conditions and all tone trials, including the inter-trial interval. At the bottom of each subplot, bright blue lines denote tone duration, red tick denotes shock duration. (D) Example mouse with GCaMP6f fluorescence from medial VTA DA neurons. Left column: Time course of freezing for each tone, for each experiment condition. Right column: Time course of Medial VTA DA neuron activity (GcaMP6f fluorescence) for each tone, for each experiment condition. (E) Same as D, for an example mouse with GCaMP6f fluorescence from lateral VTA DA neurons. (F-H) Behavior and VTA DA neuron activity (GcaMP6f fluorescence) from a population of mice during habituation and auditory fear conditioning. At the bottom of each subplot, bright blue lines denote tone duration, red tick denotes shock duration. (F) Left column: Time course of mean percent freezing for each tone during habituation or fear conditioning (n\u00a0=\u00a021 mice). For each condition subplot, color intensity corresponds to freezing percentage. Right column: Time course of mean percent freezing over all tones for habituation or fear conditioning (n\u00a0=\u00a021 mice). Gray shading denotes one standard deviation. (G) Left column: Time course of mean medial VTA DA neuron activity (GCaMP6f fluorescence) for each tone during habituation or fear conditioning (n\u00a0=\u00a010 mice). For each subplot, color intensity denotes GCaMP6f z-score dF/F. Right column: Time course of mean medial VTA DA neuron activity (GCaMP6f fluorescence) over all tones for habituation or fear conditioning (n\u00a0=\u00a010 mice). Pink shaded region denotes one standard deviation. Gray shaded region represents 1 s time points where GCaMP6f significantly deviates from shuffled data (percentile rank, p<0.01 after Bonferroni correction for multiple time point comparisons). (H) Same as F but for lateral VTA DA neuron activity (n\u00a0=\u00a011 mice), using blue instead of pink shading.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig3-figsupp2-v4.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A)\u00a0Experiment schematic of fiber photometry recordings from VTA DA neurons, and fiber placement in medial VTA (pink circle) and lateral VTA (blue circles). (B) Recordings from medial (left) and lateral (right) VTA DA neurons of an example mouse during uncued reward delivery and consumption, aligned to first lick after reward delivery. Color intensity denotes GCaMP6f fluorescence (Z-score dF/F). (C) Mean GCaMP6f fluorescence (Z-score dF/F) across all reward consumption trials averaged across mice, aligned to first lick onset after reward delivery. Left: Medial VTA (n\u00a0=\u00a01 mouse). Right: Lateral VTA (n\u00a0=\u00a03 mice). In both plots, gray shading denotes GCaMP6f fluorescence at 1 s time bins that significantly differ from shuffled data (percentile rank p<0.01 accounting for multiple corrections, n\u00a0=\u00a0500 shuffles).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig3-figsupp3-v4.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A)\u00a0Fiber photometry recordings in SNc. Left: Midbrain sagittal slice of fiber implant in SNc. Center: SNc fiber placements, visualized at bregma\u00a0=\u00a0\u22123.28 AP. Circles indicate fiber tips, shading indicates approximate boundaries of the SNc.\u00a0(B-C) Mean freezing and SNc DA neuron activity for five experiment conditions: habituation, fear conditioning, extinction day 1, 2 and 3. At the bottom of each condition subplot, blue line denotes tone duration, red tick denotes shock. (B) Left column: Time course of mean percent freezing for each tone in each condition (n\u00a0=\u00a02 mice). Color intensity corresponds to freezing percentage. Right column: Time course of mean percent freezing over all tones for each condition (n\u00a0=\u00a02 mice). Gray shading denotes one standard deviation. (E) Left column: Time course of mean SNc DA neuron activity (GCaMP6f fluorescence) for each tone in each condition (n\u00a0=\u00a02 mice). Color intensity denotes GCaMP6f z-score dF/F. Right column: Time course of mean SNc DA neuron activity (GCaMP6f fluorescence) over all tones for each condition (n\u00a0=\u00a02 mice). Green shading denotes one standard deviation. Gray shading represents 1 s time bins where GCaMP6f significantly deviates from shuffled data (percentile rank, p<0.01 after Bonferroni correction for multiple time point comparisons).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig3-figsupp4-v4.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A.)\u00a0Virus injection and fiber placement for fiber photometry. (B) Medial and lateral VTA fiber placements visualized at Bregma\u00a0=\u00a0\u22123.28 AP. (C-E) Behavior and eYFP or eGFP fluorescence during auditory fear conditioning and extinction. At the bottom of each subplot, bright blue lines denote tone duration, red tick denotes shock duration. (C) Left column: Time course of mean percent freezing for each tone during each experiment condition (n\u00a0=\u00a08 mice). For each subplot, color intensity corresponds to freezing percentage. Right column: Time course of mean percent freezing over all tones for each condition (n\u00a0=\u00a08 mice). Gray shading denotes one standard deviation. (D) Left column: Time course of eYFP or eGFP fluorescence in medial VTA for each tone during each experiment condition (n\u00a0=\u00a04 mice). For each subplot, color intensity denotes GCaMP6f z-score dF/F. Right column: Time course of mean eYFP or eGFP fluorescence over all tones for each condition (n\u00a0=\u00a04 mice). Pink shaded region denotes one standard deviation. Gray shaded region represents 1 s time points where fluorescence significantly deviates from shuffled data (percentile rank, p<0.01 after Bonferroni correction for multiple time point comparisons). (E) Same as D but for lateral VTA eYFP or eGFP fluorescence (n\u00a0=\u00a04 mice), using blue instead of pink shading.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig3-figsupp5-v4.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Fiber photometry recordings of DA axons in NAcC. Left: Midbrain sagittal slice of fiber implant in NAcC of Ai148\u00a0x\u00a0Dat-Cre mice. Right: NAcC fiber placements, visualized at bregma = +1.1 AP. Circles indicate fiber tips, shading indicates approximate boundaries of the NAcC. (B-C) Mean freezing and NAcC DA axon activity for 5 experiment conditions: habituation, fear conditioning, extinction day 1, 2 and 3. At the bottom of each condition subplot, blue line denotes tone duration, red tick denotes shock. (B) Left column: Time course of mean percent freezing for each tone in each condition (n = 7 mice). Color intensity corresponds to freezing percentage. Right column: Time course of mean percent freezing over all tones for each condition (n = 7 mice). Gray shading denotes 1 standard deviation. (C) Left column: Time course of mean NAcC DA axon activity (GCaMP6f fluorescence) for each tone in each condition (n = 7 mice). Color intensity denotes GCaMP6f z-score dF/F. Right column: Time course of mean NAcC DA axon activity (GCaMP6f fluorescence) over all tones for each condition (n = 7 mice). Pink shading denotes one standard deviation. Gray shading represents 1 s time bins where GCaMP6f significantly deviates from shuffled data (percentile rank, p < 0.01 after Bonferroni correction for multiple time point comparisons). (D) Same as A, except for fiber photometry recordings of DA axons in DMS. (E) Same as C except for DMS DA axon activity using green shading instead of pink (n = 13 mice).\n\nDuring habituation and fear conditioning, medial and lateral VTA DA neuron signals were similar, but could not be easily explained as purely RPE or salience (Figure 3\u2014figure supplement 1D,E top two rows, and F-H). GCaMP6f fluorescence in both regions decreased throughout the tone during habituation and conditioning. Both regions also showed increased fluorescence to the shock (Figure 3\u2014figure supplement 1B,C).\n\nDuring fear extinction, we observed that medial versus lateral VTA cell bodies preferentially reflected RPE versus salience, respectively (Figure 3D\u2013F, Figure 3\u2014figure supplement 1D,E bottom three rows). Medial VTA DA neuron activity was consistent with RPE (Figure 2C): GCAMP6f fluorescence decreased throughout the tone that had been associated with a negative outcome, and increased at the offset of the tone, during the omission of the expected shock (Figure 3E; percentile rank of the mean GCaMP6f fluorescence every second relative to shuffled data: p<0.01 after Bonferroni correction for multiple time point comparison). Both of these signals diminished in magnitude throughout extinction, as expected with RPE.\n\nIn contrast, during fear extinction, lateral VTA DA neuron activity was more consistent with salience (Figure 2C). GCaMP6f fluorescence increased at the tone onset, consistent with an unsigned prediction error (Figure 3F; percentile rank of the mean GCaMP6f fluorescence every second relative to shuffled data: p<0.01 after Bonferroni correction for multiple time point comparisons). GCaMP6f fluorescence also increased at the tone offset, consistent with the idea that the omission of the shock is salient. Both these signals also diminished throughout extinction, as the tone loses its salience.\n\nTo control for the possibility that the lateral VTA signal could be coming from the adjacent SNc, in a separate group of mice we recorded from SNc and found different activity profiles (Figure 3\u2014figure supplement 3).\n\nTo control for possible artifacts in these recordings, we recorded from DAT-Cre mice expressing Cre-dependent GFP (AAV5-DIO-eGFP or AAV5-DIO-eYFP) in medial or lateral VTA. There was little modulation in the signal in the control mice. The exception was the time of the shock, which generated depressed fluorescence, which was the opposite of the increased fluorescence observed with GCaMP6f in medial and lateral VTA (Figure 3\u2014figure supplement 4). This suggests that our conclusions above were not due to a recording artifact.\n\nTo determine whether dopamine neuron activity in medial and lateral VTA would be similar to dopamine axon activity in the striatum, we recorded from dopamine axons in the nucleus accumbens core (NAcC) and dorsal medial striatum (DMS) using the same fiber photometry technique during the same fear conditioning and extinction behavior. We found that dopamine axons in the nucleus accumbens and DMS both showed RPE during fear extinction, similar to dopamine cell bodies in medial VTA (Figure 3\u2014figure supplement 5).\n\n### Medial and lateral VTA DA neuron activity during extinction correlate distinctly with freezing on a trial-by-trial basis and across animals\n\nWe next characterized the correlation between freezing and GCaMP6f fluorescence during fear extinction in medial and lateral VTA, both on a trial-by-trial basis, and across animals (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig4-v4.jpg)\n\n**Figure 4.:** (A-C)\u00a0Medial VTA trial-by-trial and across animal correlations between freezing and GCaMP6f during fear extinction. In each plot, each dot represents one mouse (n\u00a0=\u00a010 mice). (A) Trial-by-trial correlations: Pearson\u2019s correlation coefficient per mouse between mean freezing during each extinction tone and mean GCaMP6f fluorescence 5 s at tone onset (left) or tone offset (right) of the same tone. Error bars denote one standard deviation. Stars denote correlation coefficients that significantly differ from a mean of 0 using one sample t-test (*p<0.05, ***p<0.001). (B) Across animal correlations: Correlation across mice between mean freezing during all extinction tones and mean GCaMP6f fluorescence during extinction 5 s at tone onset. Correlation coefficient (r) and p-values on the bottom left of plot; star denotes p<0.05. (C) Same as B, but for mean GCaMP6f fluorescence 5 s after tone offset. (D-F)\u00a0Same as (A-C), but for lateral VTA trial-by-trial and across animal analysis (n\u00a0=\u00a011 mice).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig4-figsupp1-v4.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Trial-by-trial correlations between change in freezing and GCaMP6f in medial VTA DA neurons during fear extinction. Each pink dot represents one mouse\u2019s Pearson\u2019s correlation coefficient between change in freezing between next and current extinction tone and mean GCaMP6f fluorescence at tone onset (left) or tone offset (right) of the current tone (n\u00a0=\u00a010 mice). Dark pink dot represents the mean across mice, error bars denote one standard deviation. Stars denote correlation coefficients that significantly differ from a mean of 0 using one sample t-test (*p<0.05, **p<0.01, ***p<0.001). (B) Same as A but for GCaMP6f in lateral VTA DA neurons, in blue instead of pink.\n\nIn the medial VTA DA neurons, we observed a negative correlation between freezing during the tone and GCaMP6f fluorescence during the tone onset of the same trial (Figure 4A; one sample t-test p=0.021, n\u00a0=\u00a010 mice), but a positive correlation between freezing during the tone and GCaMP6f fluorescence at the tone offset of the same trial (Figure 4A; one sample t-test p<10\u22124, n\u00a0=\u00a010 mice). These correlations are consistent with the interpretation that medial VTA DA encodes an RPE-like signal during fear extinction. Specifically, the negative correlation between fluorescence during the tone and freezing is consistent with the idea that the degree of inhibition in DA during the tone reflects the learned negative association with the tone (Mileykovskiy and Morales, 2011). Similarly, the positive correlation between DA after the tone and freezing is consistent with the idea that the fluorescence reflects the degree of \u2018relief\u2019 that the animal experiences when the expected shock is omitted. These same correlations that we observed across trials were also evident when correlating trial-averaged medial VTA GCaMP6f fluorescence and freezing across animals (Figure 4B,C). Mice with lower average GCaMP6f fluorescence during the tone onset or higher average GCaMP6f fluorescence at the tone offset froze more to the tone (Pearson\u2019s correlation between GCaMP6f 5 s after tone onset and freezing during tone: r\u00a0=\u00a0\u22120.644, p=0.044; GCaMP6f 5 s after tone offset and freezing during tone: r\u00a0=\u00a00.768, p=0.010).\n\nIn contrast, in the lateral VTA, we observed a positive correlation across trials between freezing throughout the tone and GCaMP6f during the tone onset for each trial (Figure 4D; one sample t-test p<10\u22124, n\u00a0=\u00a011 mice), but not the tone offset (Figure 4D; one sample t-test p=0.071). This is consistent with the interpretation that fluorescence during the tone in lateral VTA reflects the salience of the tone, given that more salient stimuli should elicit more freezing. We observed similar trends across mice (Figure 4E,F; Pearson\u2019s correlation between GCaMP6f during tone onset and freezing during tone: r\u00a0=\u00a00.583, p=0.060. Pearson\u2019s correlation between GCaMP6f after tone offset and freezing during tone: Pearson\u2019s correlation, r\u00a0=\u00a00.665, p=0.025).\n\nIn contrast to these medial and lateral VTA trial-by-trial correlations between GCaMP6f and freezing, any correlation between GCaMP6f and change in freezing across trials was much more subtle (Figure 4\u2014figure supplement 1).\n\n### At the tone offset, inhibition of medial but not lateral VTA DA neurons slows fear extinction\n\nTo investigate whether medial or lateral VTA DA activity contributes to extinction learning, we used optogenetics to inhibit these subregions at specific time points. We injected Cre-dependent NpHR (AAV2/5 DIO-eNpHR3.0-EYFP) or YFP control virus (AAV2/5 DIO-EYFP) into the VTA of DAT-Cre mice and bilaterally implanted optic fibers above medial or lateral VTA.\n\nWe first confirmed the efficacy of photoinhibition using whole-cell recordings in acute slices (Figure 5A-D). We additionally confirmed photoinhibition in vivo in each subregion by performing real-time place aversion (RTPA) (Figure 5\u2014figure supplement 1A-C; medial VTA cohort: NpHR group n = 15, YFP group n = 10. Lateral VTA cohort: NpHR group n = 20, YFP group n = 18), as prior reports show inhibiting VTA DA causes conditioned place aversion (Calcagnetti and Schechter, 1991; Schechter and Meechan, 1994; Tan et al., 2012). Inhibiting either medial or lateral VTA DA caused real time place aversion to the inhibition chamber (Figure 5\u2014figure supplement 1D; 2-factor ANOVA with group and subregion as factors: group effect: F(1,1) = 103.33, p = 10\u221214; subregion effect: F(1,1) = 0.32, p = 0.576; group \u00d7 subregion interaction: F(1,1) = 0.01, p = 0.935) and decreased velocity during inhibition (Figure 5\u2014figure supplement 1E; 2-factor ANOVA with group and subregion as factors: group effect: F(1,1) = 14.35, p < 10\u22123; subregion effect: F(1,1) = 0.1, p = 0.754; group \u00d7 subregion interaction: F(1,1) = 0, p = 0.9441).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig5-v4.jpg)\n\n**Figure 5.:** (A-C)\u00a0Photoinhibition of NpHR-expressing VTA DA neurons during ex vivo whole-cell recordings. (A) Left: Mean and SEM of photocurrents evoked during voltage clamp (n = 7 neurons; peak current: 332.15 \u00b1 64.79 pA; steady state current: 318.84 \u00b1 63.64 pA). Right: Example trace of photocurrent. (B) Mean and SEM of NpHR-mediated hyperpolarization during current clamp (n = 7 neurons; peak hyperpolarization from baseline: 92.76 \u00b1 14.58 mV; steady state hyperpolarization from baseline: 62.93 \u00b1 10.92 mV). Baseline resting potentials ranged from -50 to -60 mV. Right: Example trace of NpHR-mediated hyperpolarization. Baseline potential is -60 mV. (C) Example trace of photoinhibition of spikes generated by current injections (200 pA injections) during current clamp recording. Baseline potential is -57 mV. Yellow bar denotes photostimulation period. (D) Histology of example lateral VTA neurons showing cell nuclei (DAPI), tyrosine hydroxylase (TH), NpHR-eYFP. (E) Optogenetic inhibition protocol. Laser inhibition (594 nm) occurs for 6 s for every extinction tone, starting 1 s prior to tone offset and ending 5 s after tone offset. (F-H) Medial VTA DA neuron tone offset inhibition during fear extinction (n = 14 NpHR mice, n = 10 YFP mice). (F) Left: Schematic of injection of an AAV2/5 virus expressing Cre-dependent eNpHR3.0-YFP (or YFP-only virus) into the VTA of Dat-Cre mice, with fiber implant into medial VTA. Middle: medial VTA fiber placements, visualized at bregma = -3.28 AP. Circles indicate fiber tips, yellow circles indicate NpHR mice, grey circles indicate YFP mice. For full AP coordinates of fiber placements, see Figure 5\u2014figure supplement 2A. Right: Example brain slice showing fiber placements in medial VTA. Green denotes NpHR3.0-eYFP. (G) Freezing during the tone for each tone number, by experiment condition: habituation, conditioning, extinction day 1, extinction day 2 and extinction day 3. Pink dots denote NpHR group, and black dots denote YFP control group. Error bars denote SEM. Gray shading denotes tone trials that significantly differ between NpHR and YFP group (post hoc student\u2019s unpaired t-test, p < 0.05). (H)\u00a0Percent freezing per second averaged across all tones for each extinction day during medial VTA tone offset inhibition (pink line denotes NpHR group, black line denotes YFP control group). Yellow shaded region denotes the inhibition period. Error bars denote SEM. Stars denote a significant group or interaction effect using a 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure. This analysis was applied to predict freezing during the tone (group effect: F(1,62) = 7.528, p = 0.012; group \u00d7 tone number interaction: F(1,62) = 1.056 p = 0.361), freezing during the 6 s inhibition period (group effect: F(1,62) = 17.668, p = 10\u22123; group \u00d7 tone number interaction: F(1,62) = 1.371 p = 0.032), and freezing 6 s following the inhibition period (group effect: F(1,62) = 28.082, p < 10\u22124; group \u00d7 tone number interaction: F(1,62) = 0.854 p = 0.782). (I) Same as F except for lateral VTA (n = 8 NpHR mice, n = 8 YFP mice). For full AP coordinates of fiber placements, see Figure 5\u2014figure supplement 2B. (J-K) Same as (G-H), but for lateral VTA DA neuron tone offset inhibition during fear extinction, with blue representing the NpHR group and black representing YFP group. (J) Post hoc analysis was not conducted because the 2-factor ANOVA in K did not yield a significant group effect on tone freezing. (K)\u00a0Stars denote a significant group or interaction effect using a 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure. This analysis was applied to predict freezing during the tone (group effect: F(1,62) = 0.002, p = 0.964; group \u00d7 tone number interaction: F(1,62) = 1.121 p = 0.249), freezing during the 6 s inhibition period (group effect: F(1,62) = 1.150, p = 0.302; group \u00d7 tone number interaction: F(1,62) = 1.387 p = 0.029), and freezing 6 s following the inhibition period (group effect: F(1,62) = 6.981, p = 0.019; group \u00d7 tone number interaction: F(1,62) = 1.480 p = 0.011).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig5-figsupp1-v4.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A)\u00a0Experiment schematic: 5 min baseline two-chamber exploration followed by 15 min real time place aversion assay (RTPA). Bottom: Legend for plots (B-E). (B) Difference between the percent of time mice spent in right minus left chamber during 5 min baseline. (C) Difference between the velocity in right minus left each chamber during the 5 min baseline. (D) Difference between the percent of time mice spent in laser minus no laser chamber during 15 min RTPA with laser inhibition. (E) Difference between the mouse velocity in laser minus no laser chamber during 15 min RTPA with laser inhibition. (B-E) In each plot, each light\u00a0shade\u00a0dot corresponds to one mouse. Darker shade dot represents mean, and error bars denote 1 standard deviation. A 2-factor ANOVA was used to determine significane between group (NpHR or YFP) or region of interest (medial or lateral VTA). n.s. denotes not significant\u00a0and *, **, *** denotes p<0.01, p<10\u22124 or p<10\u22125 for the group factor. Region of interest and interaction between group x region of interest yielded no significance in all cases.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig5-figsupp2-v4.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Histology for optogenetic experiments (expanded across the anterior-posterior coordinates of Bregma from Figures 5F, I and 6B). Dots represent individual optic fiber placement: orange dots for mice injected with AAV2/5-DIO-NpHR-eYFP, grey dots for control mice injected with AAV2/5-DIO-eYFP. (A) Bilateral fiber placement for medial VTA inhibition during tone offset (NpHR\u00a0=\u00a014, YFP\u00a0=\u00a010 mice). (B) Bilateral fiber placement for lateral VTA inhibition during tone offset (NpHR\u00a0=\u00a08, YFP\u00a0=\u00a08 mice). (C) Bilateral fiber placement for lateral VTA inhibition during tone onset (NpHR\u00a0=\u00a012, YFP\u00a0=\u00a010 mice). (D) Bilateral fiber placement for SNc inhibition during tone offset (NpHR\u00a0=\u00a07 mice, YFP\u00a0=\u00a06 mice).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig5-figsupp3-v4.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A)\u00a0Optogenetic inhibition protocol. Laser (594 nm) inhibition occurs 1 s prior to tone offset and lasts for 6 s. (B) SNc DA neuron tone offset inhibition during fear extinction (n = 7 NpHR mice, n = 6 YFP mice). Left: Schematic of injection of an AAV2/5 virus expressing Cre-dependent eNpHR3.0-YFP (or YFP-only virus) into the SNc of Dat-Cre mice, with fiber implant into SNc. Middle: SNc fiber placements, visualized at bregma = -3.28 AP. Circles indicate fiber tips, yellow circles indicate NpHR mice, grey circles indicate YFP mice. For full AP coordinates of fiber placements, see Figure 5\u2014figure supplement 2D. Right: Example brain slice showing fiber placements in SNc. Green denotes NpHR3.0-eYFP. (C) Mean freezing during the tone for each tone number, by experiment condition: habituation, conditioning, extinction day 1, extinction day 2 and extinction day 3. Green dots denote NpHR group, and black dots denote YFP control group. Error bars denote SEM. (D) Percent freezing per second averaged across all tone trials for each extinction day during SNc tone offset inhibition (green line denotes NpHR group, black line denotes YFP control group). Yellow shaded region denotes inhibition period. Error bars denote SEM. Star denotes significant effect and \u201cn.s.\u201d denotes no significant effect using a 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure. This analysis was applied to predict freezing during the tone: group effect: F(1,62) = 0.008, p = 0.930; group \u00d7 tone interaction: F(1,62) = 0.962, p = 0.560, and freezing during 30 s of the inter-trial interval: group effect: F(1,62) = 4.980, p = 0.047; group \u00d7 tone interaction: F(1,62) = 1.276, p 0.081.\n\nWe next examined the effect of VTA DA neuron inhibition during fear extinction in separate cohorts of mice with fibers in medial or lateral VTA; each cohort had separate groups of NpHR- or YFP-virus injected mice (Figure 5E\u2013K, Figure 5\u2014figure supplement 2A\u2013B; medial VTA cohort: NpHR group n\u00a0=\u00a014, YFP group n\u00a0=\u00a010. Lateral VTA cohort: NpHR group n\u00a0=\u00a08, YFP group n\u00a0=\u00a08). Both cohorts underwent fear conditioning, and during fear extinction, received inhibition lasting for 6 s starting from the last second of the tone to 5 s after the tone off.\n\nInhibiting medial VTA DA neurons at tone offset yielded an effect consistent with the representation of RPE in this subregion: NpHR mice froze more to the tone compared to the YFP controls (Figure 5F-H; 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 7.528, p = 0.012; group\u00a0\u00d7 tone number interaction: F(1,62) = 1.056 p = 0.361). This was consistent with previous work that showed inhibiting medial VTA during cue offset impairs extinction learning (Luo et al., 2018; Salinas-Hern\u00e1ndez et al., 2018). In addition to attenuating extinction of tone-induced freezing, NpHR mice increased freezing during and after the inhibition period compared to YFP controls (2-factor ANOVA with group and tone number as factors, tone number being a repeated measure. During 6 s inhibition period: group effect: F(1,62) = 17.668, p < 10\u22123; group \u00d7 tone number interaction: F(1,62) = 1.371 p = 0.032. During 6 s after inhibition period: group effect: F(1,62) = 28.082, p < 10\u22124; group \u00d7 tone number interaction: F(1,62) = 0.854 p = 0.782.) Thus, not only do medial VTA DA neurons lead to updating of the value (or freezing behavior) upon subsequent presentations of the tone that preceded inhibition, they also modify behavior subsequent to the inhibition period.\n\nIn contrast to the effects observed with medial VTA inhibition, inhibiting the lateral VTA DA neurons at tone offset yielded no change in freezing during the tone (Figure 5I-K; 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 0.002, p = 0.964; group \u00d7 tone number interaction: F(1,62) = 1.121 p = 0.249). This manipulation did, however, increase freezing after the inhibition period, an effect that increased with extinction (2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 6.981, p = 0.019; group \u00d7 tone number interaction: F(1,62) = 1.480 p = 0.011). This suggests that lateral VTA inhibition primarily affects freezing at time points after inhibition, rather than causing learned changes in the value of preceding events.\n\nWe performed analogous optogenetic experiments in mice with fibers targeting the SNc (Figure 5\u2014figure supplement 3A-C\u00a0and\u00a0Figure 5\u2014figure supplement 2D, NpHR group n = 7, YFP group n =\u00a06). Similar to the lateral VTA cohort, inhibiting SNc DA neurons at tone offset did not have an effect on tone freezing. However, SNc\u00a0NpHR mice showed decreased freezing during the ITI relative to the YFP group (Figure 5\u2014figure supplement 3D; 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 4.980, p = 0.047; group \u00d7 tone interaction: F(1,62) = 1.276, p 0.081), which we did not observe with the lateral VTA cohort. This suggests that lateral VTA and SNc inhibition during the cue offset may not have identical consequences.\n\n### Inhibition of lateral VTA at the tone onset slows extinction learning\n\nWe next inhibited lateral VTA DA neurons during fear extinction at the tone onset, given that is when the fiber photometry recordings showed a pronounced salience-like signal in that subregion (Figure 6A, B, Figure 5\u2014figure supplement 2C; NpHR group n = 12, YFP group n = 10; 6 s inhibition period). We found that NpHR mice extinguished more slowly to the tone. This is reflected in that there was no main effect of group, but a significant interaction between group and tone number (Figure 6C, D; 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 0.014, p = 0.908; group \u00d7 tone number interaction: F(1,62) = 2.217, p < 10\u22126). Additionally, we observed that NpHR mice showed decreased freezing during the ITI (Figure 6D; 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 6.477, p = 0.019; group \u00d7 tone number interaction: F(1,62) = 1.562 p = 0.004).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54936/elife-54936-fig6-v4.jpg)\n\n**Figure 6.:** (A)\u00a0Optogenetic inhibition protocol. Laser (594 nm) inhibition occurs simultaneously with tone onset for 6 s. (B) Lateral VTA DA neuron tone onset inhibition during fear extinction (n = 12 NpHR mice, n = 10 YFP mice). Left: Schematic of injection of an AAV2/5 virus expressing Cre-dependent eNpHR3.0-YFP (or YFP-only virus) into the VTA of Dat-Cre mice, with fiber implant into lateral VTA. Middle: lateral VTA fiber placements, flattened at bregma = -3.28 AP. Circles indicate fiber tips, yellow circles indicate NpHR mice, grey circles indicate YFP mice. For full AP coordinates of fiber placements, see Figure 5\u2014figure supplement 2C. Right: Example brain slice showing fiber placements in lateral VTA. Green denotes NpHR3.0-eYFP. (C) Freezing during the tone for each tone number, by experiment condition: habituation, conditioning, extinction day 1, extinction day 2 and extinction day 3. Blue dots denote NpHR group, and black dots denote YFP control group. Error bars denote SEM. Gray shading denotes tone trials that significantly differ between NpHR and YFP group (post hoc student\u2019s unpaired t-test, p < 0.05). (D) Percent freezing per second averaged across all tone trials for each extinction day during lateral VTA tone onset inhibition (blue line denotes NpHR group, black line denotes YFP control group). Yellow shaded region denotes inhibition period. Error bars denote SEM. Stars denote a significant interaction effect using a 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure. This analysis was applied to predict freezing during the tone: group effect: F(1,62) = 0.014, p = 0.908; group \u00d7 tone interaction: F(1,62) = 2.217, p < 10\u22126, and freezing 30 s during the ITI: group effect: F(1,62) = 6.477, p = 0.019; group \u00d7 tone number interaction: F(1,62) = 1.562 p = 0.004.\n\nTogether with the results from the previous experiments, this suggests that inhibiting the salience-like signal at tone onset slows extinction learning over time, even though activity of these neurons at tone offset does not update the value of the preceding tone.\n\n## Discussion\n\nDA neurons originating in the VTA are known to be modulated by aversive stimuli, and have been implicated in fear conditioning and extinction (El-Ghundi et al., 2001; Young et al., 1993; Inoue et al., 2000; Nader and LeDoux, 1999; Guarraci and Kapp, 1999; Holtzman-Assif et al., 2010; Delgado et al., 2008; Luo et al., 2018; Salinas-Hern\u00e1ndez et al., 2018; Zweifel et al., 2011; Pezze and Feldon, 2004; Mueller et al., 2010; Pignatelli et al., 2017; Nasehi et al., 2016; Pezze et al., 2003; Budygin et al., 2012; Robinson et al., 2019; Lammel et al., 2011; Jo et al., 2018; Lutas et al., 2019; Fadok et al., 2009; Groessl et al., 2018; Bouchet et al., 2018; Wenzel et al., 2018; Wang and Tsien, 2011; Mileykovskiy and Morales, 2011). However, it was unclear if and how neural correlates of fear extinction are topographically organized within the VTA. In addition, the causal contribution of spatially localized DA activity within the VTA to fear extinction was unknown. Here, we found that during fear extinction, medial VTA more closely resembled RPE, while lateral VTA more closely resembled salience. While activity in both subregions contributed causally to fear extinction, the temporal relationship between activity and freezing differed. Consistent with the idea that RPE signals update the value of preceding events, inhibition in medial VTA prevented\u00a0the\u00a0update of\u00a0value (or freezing response) to the tone preceding the inhibition, causing freezing to be more likely on subsequent tone presentations. In contrast, inhibition of the salience-like signal in lateral VTA affected freezing in the time period during or immediately following the inhibition, but did not update the value (or freezing response) to subsequent presentations of the tone if it preceded the inhibition.\n\n### Development and application of a CNN to identify freezing behavior\n\nLearned fear is typically quantified by measuring a mouse\u2019s freezing. When mice are tethered to neural headgear, existing automated algorithms cannot accurately dissociate movement of the mouse from movement of the tether. To solve this problem, we turned to deep learning, and used an off-the-shelf CNN architecture, ResNet, known for its applications in image classification and pose estimation (Nath et al., 2019; Insafutdinov et al., 2016; He et al., 2016; Mathis et al., 2018). Our CNN allowed accurate and automated classification of freezing behavior throughout the duration of our experiments with minimal labor, and enabled us to determine that the precise temporal relationship between dopamine neuron activity and freezing behavior depended on VTA subregion.\n\n### Spatial organization of RPE and salience-like signals in the medial versus lateral VTA during fear extinction\n\nOur finding of RPE-like signals in medial VTA and salience-like signals in lateral VTA during fear extinction may reflect a larger organizational structure across both the VTA and the substantia nigra pars compacta (SNc) dopamine neurons. Specifically, there is previous evidence that the SNc, which is lateral to the VTA, has a greater proportion of DA neurons that signal salience rather than RPE (Matsumoto and Hikosaka, 2009; Menegas et al., 2017). One question is how the presence of salience signals in lateral VTA and SNc may relate to other work showing correlates of kinematics in addition to RPE in those same regions (Engelhard et al., 2019; da Silva et al., 2018; Howe and Dombeck, 2016). One possible relationship between these seemingly disconnected findings of salience versus kinematic tuning is that an animal\u2019s speed is a reflection of the motivational salience of an environment (Zenon et al., 2016; Panigrahi et al., 2015; Wang et al., 2013).\n\nIt is worth noting that this medial/lateral distinction between RPE and salience does not hold across all behaviors\u00a0(Heymann et al., 2020). In fact, we found that during fear conditioning, medial and lateral VTA shared similar activity profiles, which may reflect heterogeneity in single neuron activity that is not captured with fiber photometry. Furthermore, it is not obvious how to integrate our spatial findings with recent DA terminal recordings within the NAc, despite the rough topography between VTA cell bodies and their projections (Yang et al., 2018; de Jong et al., 2019; Beier et al., 2015). In particular, recent studies reported increased activity to aversive stimuli in ventromedial NAc, and decreased activity to aversive stimuli in lateral NAc (de Jong et al., 2019; Yuan et al., 2019). Assuming topography between VTA cell bodies and their terminals in NAc, we may have expected the opposite result. This discrepancy could be due to a number of factors, including imperfect topography between cell bodies and terminals, differences in the behavioral paradigm, or terminal activity that does not reflect cell body activity (Berke, 2018; Threlfell et al., 2012).\n\n### Distinct temporal relationships between activity in the medial and lateral VTA and fear extinction\n\nOur manipulations of medial VTA DA neurons produced changes in extinction learning that were consistent with the presence of an RPE-like signal in that subregion. Specifically, the burst of DA at the omission of the expected shock contributed causally to extinction learning, a finding which aligned with previous work (Salinas-Hern\u00e1ndez et al., 2018; Luo et al., 2018).\n\nIn addition, this manipulation increased freezing in the time period immediately after the inhibition, suggesting that not only do these neurons regulate learning about the value of a preceding event (the tone), they also affect freezing behavior in the time period subsequent to the manipulation.\n\nWhile our results in medial VTA were consistent with evidence that RPE signals in DA neurons support reinforcement learning in a variety of paradigms (Steinberg et al., 2013; Witten et al., 2011; Chang et al., 2016; Zweifel et al., 2009; Tsai et al., 2009; Kim et al., 2012; Stopper et al., 2014; Adamantidis et al., 2011), the causal contribution of salience signals in DA neurons to behavior is much less clear. By leveraging the spatial organization we uncovered between RPE versus salience signals in medial versus lateral VTA, we could directly examine the causal role of salience-like signals. One possibility is that, similar to RPE, salience signals in lateral VTA may also support learning (Bromberg-Martin et al., 2010).\n\nWe found that inhibition of the lateral VTA at the tone offset did not influence extinction learning of the preceding tone. This was consistent with the previous observation that inhibition of a subpopulation of VTA neurons with projections to NAc Core did not affect extinction (Luo et al., 2018). However, similar to medial VTA, this manipulation increased freezing in the timepoints directly after the inhibition, suggesting that despite the fact that these neurons did not regulate learning about the value of a preceding event (the tone), they did affect behavior in the time period subsequent to the manipulation. Consistent with this manipulation affecting subsequent timepoints, inhibition at the tone onset, when these neurons have a burst of activity, slowed the rate of extinction. However, we cannot rule out that this manipulation affected the expression of freezing rather than extinction learning.\u00a0Additionally, this lateral VTA tone onset inhibition had more subtle effects on behavior relative tomedial VTA tone offset inhibition. .\n\nIn summary, during fear extinction, medial and lateral VTA DA neurons provide distinct but complementary signals that contribute to extinction learning, but at different times. Medial VTA encodes an RPE-like signal, which serves to update the value of the preceding tone. Lateral VTA encodes a salience-like signal at the tone onset, which does not update the value of the preceding tone, but affects freezing during the tone. This is consistent with the emerging framework that despite differences in neural correlates, different VTA/SNc DA subpopulations share a common function of mediating learning, even though they may differ in the specific setting in which they contribute to learning, or the specific aspect of learning that they mediate (Ellwood et al., 2017; Saunders et al., 2018; Cox and Witten, 2019; Bromberg-Martin et al., 2010; Menegas et al., 2018).\n\n## Materials and methods\n\n### Animals\n\nAll experiments followed guidelines established by the National Institutes of Health and reviewed by Princeton University Institutional Animals Care and Use Committee (IACUC). Dat-Cre mice with IRES-Cre inserted just 3' of the termination colon of the Slc6a3 gene that encodes the dopamine transporter (B6.SJL-Slc6a3tm1.1(cre)Bkmn/J, Jackson Labs) were bred in house with Ai148D mice (Ai148(TIT2L-GC6f-ICL-tTA2), Jackson Labs), and male progeny expressing GCaMP6f in dopamine neurons (Dat-Cre x Ai148D mice) were used for fiber photometry experiments. Male Dat-Cre mice were used for optogenetic experiments and electrophysiology recordings. Mice were group housed with up to five other mice, allowed ad libitum access to food and water, and kept on a 12 hr light on and 12 hr light-off schedule. Mice between 7\u201310 weeks of age were used during surgery. We conducted all surgery and behavioral experiments during light off period.\n\n### Stereotactic surgeries\n\nMice were induced to a surgical plane of anaesthesia using 4% isoflurane, and maintained at. 0.5\u20132% isoflurane for the duration of the surgery. Mice were kept warm using a heating pad, and breathing rate was monitored by the surgeon. At surgery onset, mice received i.p. injections of nonsteroidal anti-inflammatory drug meloxicam (2 mg/kg) and the antibiotic baytril (5 mg/kg). Twenty-four hours post surgery, mice received a second equivalent dose of meloxicam.\n\nFor fiber photometry experiments, we used transgenic Dat-Cre x Ai148D male mice which expressed GCaMP6f in dopamine neurons. Optic fibers of 400 \u00b5m core diameter (Mono Fiberoptic Cannula, Doric Lenses) were implanted unilaterally either in the medial VTA (-3.1 mm posterior, +/-0.5 mm lateral, -4.5 mm ventral, n=10 mice), lateral VTA (-3.1 mm posterior, +/- 0.75 mm lateral, -4.2 mm ventral, n=11 mice), or SNc (-2.9 posterior, +/-1.25 lateral, -4.2 ventral relative to Bregma\u00a0n = 2 mice), NAcC (+1.2 anterior, +/-1.0 lateral, -4.5 ventral relative to Bregma, n = 7 mice) or DMS (+0.74 anterior, +/-1.4 lateral, -2.6 ventral relative to Bregma, n = 13 mice). Fibers were affixed to the skull using dental cement (C&B-Metabond). To control for motion artifacts in fiber photometry experiments, we used a nanosyringe (World Precision Instruments) to inject Dat-Cre mice with 600\u00a0nL\u00a0of virus containing Cre-dependent green or yellow fluorescent protein (AAV2/5-CAG-FLEX-eGFP-WPRE-bGH (Allen Institute) or AAV2/5-EF1a-DIO-eYFP-hGHpA (UPenn or Princeton Vector Core)) into the VTA (-3.1 mm posterior, +/-. 5 mm lateral, -4.75 mm ventral).\u00a0Virus was injected bilaterally and needle remained in position post injection for 6 min to allow injection to disperse before removal. We\u00a0implanted optic fibers in the medial or lateral VTA as mentioned above (medial VTA n = 4 mice, lateral VTA n = 4 mice).\n\nFor optogenetic experiments, we used a nanosyringe (World Precision Instruments) to deliver 600 nL of virus containing Cre-dependent halorhodopsin AAV2/5-EF1a-DIO-eNpHR3.0-EYFP-WPRE-hGHpA (UPenn or Princeton vector core, 1013 to 1014 parts/ml) or the control virus AAV2/5-EF1a-DIO-eYFP-WPRE-hGHpA (Upenn and Princeton vector core, 1013 to 1014 parts/ml) into the brain. Virus was injected bilaterally into the medial VTA (\u22123.1 mm posterior, +/-\u00a00.5 mm lateral, \u22124.75 mm ventral, n\u00a0=\u00a026 mice, needle bevel pointed posterior), lateral VTA (\u22123.1 mm posterior, +/-\u00a00.75 mm lateral, \u22124.75 mm ventral, n\u00a0=\u00a028 mice, needle bevel pointed posterior), or SNc (\u22122.9 mm posterior, +/-\u00a00.75 mm lateral, \u22124.70 mm ventral, n\u00a0=\u00a013 mice, needle bevel pointed lateral); each injection was 600 nL in volume and injected at 100 nL/min, and the needle remained in position for 6 min post injection to allow injection to disperse before removal. Mice were then bilaterally implanted respectively with optic fibers (300 um core diameter) in the medial VTA (\u22123.1 mm posterior, +/-\u00a00.1.09 mm lateral, \u22124 mm ventral at 10 degree angle; no-angle exact coordinates \u22123.1 mm posterior, +/-\u00a00.5 mm lateral, \u22124.5 ventral), lateral VTA (\u22123.1 mm posterior, +/-\u00a00.1.69 mm lateral, \u22124 mm ventral at 10 degree angle; no-angle exact coordinates: \u22123.1 mm posterior, +/-\u00a00.75 mm lateral, \u22124.2 mm ventral), or SNc (\u22122.9 mm posterior, \u22121.9 mm lateral, \u22123.8 mm ventral at 10 degree angle; no angle coordinates: \u22122.9 mm posterior, \u22121.25 mm lateral, \u22124.0 mm ventral relative to Bregma). Optic fibers were affixed to the skull using dental cement.\n\n### Behavioral assays\n\n#### Auditory fear conditioning and extinction\n\nFollowing a minimum of 6 days to recover from cranial surgery, mice 8\u201312 weeks of age underwent auditory fear conditioning and extinction. We performed this assay using FreezeFrame (Coulbourn Instruments), and throughout the assay gray-scaled video was recorded at 11.2 Hz while mice were tethered to either fiber photometry or optogenetic cables for neural recording or manipulation, respectively. On day one, mice were placed in a chamber (10 cm x 10 cm) with a conductive metal floor and a smell of ethanol. Mice were habituated to ten 20 s tones (5 kHz, 70 dB), followed by ten 20 s tones that coterminated with a 1 s foot shock administered through the metal floor (1 mA, scrambled). On days two to four, mice underwent extinction in a different but similarly sized experimental chamber with plastic floor and walls, and a different smell (quatricide). During extinction, mice heard 21 tones per day without the shock. For all experiment days, the inter-trial interval (ITI) between tones was jittered with a Poisson distribution with a mean of 80 s; the ITI was randomly selected prior to all experiments and was the same for each mouse.\n\n#### Real-time place preference (RTPP)\n\nPrior to, or following the fear conditioning and extinction assay, mice underwent real-time place preference assay, counter-balanced between groups. Mice were connected to optical fibers and individually placed in a rectangular enclosure with two chambers (28 cm x 28 cm each), and allowed to freely explore the two chambers for 20 min. Gray-scaled video was recorded at 30 fps and mouse location and velocity was tracked throughout experiment using Ethovision XT 9. For the first 5 min, the mice freely explored both chambers but they did not receive optical stimulation (\u2018baseline\u2019). For the next 15 min, mice continued to have access to both chambers, but the presence in one chamber resulted in continuous delivery of laser light (594 nm, 6 mW, Cobalt) to the implanted optic fibers. The \u2018light on\u2019 chamber was randomly assigned and counterbalanced within each experimental group (NpHR or YFP).\n\n#### Random reward delivery\n\nMice with regular ad libitum access to food and water were put in a 21 cm\u00a0\u00d718 cm modular operant chamber (MED Associates, ENV-307W). 12 uL of sweetened condensed milk (Carnation, diluted 1:10) were delivered 5-10\u00a0times\u00a0at random intervals ranging from 60 to 200 s. Mouse licking was detected if the mouse\u2019s body closed the loop on an open circuit, where one end of the circuit was the metal floor of the operant chamber, and the other end of the circuit was the reward delivery spout; the\u00a0licking signal was acquired at 25 Hz. Fiber photometry fluorescence signal was also acquired at 25 Hz (instead of 100 Hz in all other fiber photometry recordings).\n\n### Fiber photometry experiments\n\nOne to two weeks after surgery, mice individually underwent fear conditioning and extinction during fiber photometry recording of VTA DA neurons expressing GCaMP6f. Mice were connected to a fiber photometry set up described in previous reports (Gunaydin et al., 2014). A 488 nm laser light (Micron Technology) was filtered (FL488, Thor Labs) then passed through a dichroic mirror (MD498, Thor Labs) and traveled through a patch cable (Mono Fiberoptic Patchcord, 400 um core, 0.48 Numerical Aperture, Doric Lenses) coupled via a ceramic split sleeve (2.5 mm diameter, Precision Fiber Products) to the optic fiber implanted in the mouse brain; the light traveled down the optic fiber into the VTA for fluorescence excitation. Laser light delivery was controlled by a lock-in amplifier (Ametek, 7265 Dual Phase DSP Lock-in Amplifier), which delivered light at 210.999 Hz, and the laser intensity at the tip of the patch cable was approximately 5 uW. Fluorescent emission from GCaMP6f at 500\u2013550 nm was then passed through the same patch cable, filtered (MF525-39, Thor Labs), and passed through the same dichroic mirror into a photodetector (Model 2151, New Focus), and the signal was filtered at the same 210.999 Hz using the same lock-in amplifier, and a time constant of 20 ms. AC gain on the lock-in amplifier was set to 0 dB. Signal was digitized at 100 Hz. dF/F was calculated by the following formula:\n\n$$\n\\frac{dF}{F}=\\frac{F-F_{0}_{}}{F_{0}_{}}\n$$\n\nWhere $F_{0}$ is the second order polynomial fit to the GCaMP6f signal for the duration of the experimental session, in order to account for very slow decline of the signal over time, presumably caused by photobleaching. Z-score of dF/F signal was calculated across experiment days for each mouse; the mean used for Z-score is the mean signal across all 4 experiment days, and standard deviation used for Z-score is the standard deviation across all 4 days. To obtain shuffled data, GCaMP6f fluorescence from each session was circularly shifted across the session in time by a random time bin (n = 1000 shuffles unless otherwise specified). The Bonferroni corrections used in Figure 3E, F, Figure 3\u2014figure supplement 1G, H, Figure 3\u2014figure supplement 3C; Figure 3\u2014figure supplement 4D,E, were corrected by 40 time points to account for the 40 1-second-long bins. The Bonferroni corrections used in\u00a0Figure 3\u2014figure supplement 2 were corrected with 10 time points to account for the 10 1-second-long bins.\n\nOne lateral VTA fiber photometry mouse was excluded from analysis because the fiber location was at the SNc border.\n\n### Optogenetic experiments\n\nApproximately 1 month after opsin or control virus injection, mice underwent fear conditioning and extinction. Littermates within a cage were randomly allocated to either NpHR or YFP group, with as equal distribution as possible. (Ie. in a cage with four mice: two mice were in NpHR group, two mice in YFP group. In a cage with five mice, two mice were in NpHR group and three mice in YFP group or vice versa.) Masking was not used during group allocation or data collection. This ensured that NpHR and YFP mice were interleaved during the experimental sessions and counterbalanced in different behavioral chambers. Masking was a central part of the behavioral analysis: the CNN scores freezing the same regardless of the mouse\u2019s experimental group.\n\nMedial or lateral VTA dopamine neurons were inhibited using continuous 594 nm laser illumination (~6 mW, Cobalt) during tone offset or tone onset during extinction (Figures 5E and 6A). Tone onset inhibition lasted for 6 s and started concurrent to the onset of the tone. Tone offset inhibition also lasted 6 s and started 1 s prior to the ending of the tone and lasted for 5 s after the tone offset. Video of the behavior was acquired as normal, with the addition of a 400\u2013650 nm filter (Kentek) in front of the camera lens to prevent laser light from appearing in the video.\n\nPrior to or following fear extinction, the same mice underwent the real time place preference (RTPP) assay with the same laser intensity (Figure 5\u2014figure supplement 1). For medial VTA tone off and lateral VTA tone on cohorts, an equal number of mice received RTPP before versus after fear conditioning and extinction. For lateral VTA tone off cohorts, all mice received RTPP after the fear conditioning and extinction assay.\n\nNo explicit power analysis was used to determine sample size for fiber photometry experiments. We decided the sample size (n is approximately 10 for each group) based on what is typically seen in the literature. The sample size of approximately N of 10 per group are biological replicates, where biological replicate means an individual mouse. For two of the three optogenetic cohorts, two different rounds of mice were run on separate occasions and data was combined for the full cohort. For the third cohort, all mice were run at once. All mice had at least one fiber in the lateral VTA (from histology images) and were included in statistical analysis. No outliers were discarded. From all cohorts, 1 NpHR mouse was removed from fear extinction analysis because the optic fiber connection slipped off during extinction day 3.\n\nFor the data in Figure 5, Figure 6\u00a0and\u00a0Figure 5\u2014figure supplement 3, a 2-factor ANOVA with group (NpHR or YFP) and tone number (repeated measure: 1 to 63 extinction tones) as factors was used to predict either (1) freezing during the tone (calculated as mean freezing for 1 to 19 s of the tone), (2) freezing during the 6 s laser offset inhibition period (calculated as the mean freezing for 1 s prior to tone offset through 5 s after tone offset), (3) freezing 6 s post inhibition period (calculated as mean freezing 6\u201311 s after tone offset) or (4) freezing for 30 s during the ITI (calculated as 12\u201341 s after tone offset). For the data in Figure 5\u2014figure supplement 1B\u2013E, a 2-factor ANOVA with group (NpHR or YFP) and subregion (medial VTA or lateral VTA) was used to determine significance.\n\n### Correlation between GCaMP6f and freezing\n\nNo explicit power analysis was used to determine sample size for fiber photometry experiments. We decided the sample size (N is approximately 10 for each group) based on what is typically seen in the literature. No outliers were discarded. For each fiber photometry cohort, 1\u20134 mice were run on each occasion and all data was aggregated to create the cohorts for the paper. For trial-by-trial analysis, we calculated the Pearson correlation coefficient between GCaMP6f and freezing during extinction for each mouse. Since there were 63 total extinction trials across three extinction days, each mouse had 63 values for mean freezing during the tone, correlated with 63 values for mean GCaMP6f fluorescence for 5 s after tone onset or 5 s after tone offset. We next gathered the correlation coefficients from each region (medial or lateral VTA) and GCaMP6f time point (5 s after tone onset or tone offset) and used a one sample t-test to determine if they significantly differed from 0 (Figure 3A and D). For across animal analysis, we used Pearson\u2019s correlation coefficient and resulting p-value to find the correlation between mean freezing per mouse with mean GCaMP6f (either 5 s after tone onset or after tone offset) per mouse, we drew the best fit line using estimates from a generalized linear regression model (Figure 3B,C,E,F).\n\n### Histology\n\nTo confirm the location of viral targeting and optical fiber implant, mice were anesthetized with Euthasol (.1 mL/mouse), perfused with 10 mL of phosphate buffered saline (PBS) followed by 10 mL of 4% paraformaldehyde (PFA) in PBS, their brains extracted, post-fixed with 4% PFA for 24 hrs, then stored in a 30% sucrose in PBS solution for at least 24 hrs before slicing. Brains were sliced coronally at 40 \u03bcm, and relevant VTA slices were stained for tyrosine hydroxylase (TH), a marker for dopamine neurons (primary antibody: Chicken Anti-TH, Aves Labs; secondary antibody: Alexa Fluor 647 Donkey Anti-Chicken IgG, Jackson ImmunoResearch) and GFP, to enhance viral expression (primary antibody: GFP Recombinant Rabbit Monoclonal Antibody, Thermo Fisher Scientific; secondary antibody: Alexa Fluor 488 Donkey Anti-Rabbit IgG, Life Technologies). Slices were then mounted with Fluoromount-G with DAPI (Thermo Fisher Scientific) to determine the location of cell nuclei.\n\n### Ex vivo electrophysiology recordings to relate optogenetic inhibition with decreased currents and spiking activity\n\nTo confirm optogenetic inhibition of VTA DA cells, we performed ex vivo electrophysiology in Dat-Cre mice. Coronal slices containing the VTA were prepared from 3 to 4 month old male Dat-Cre mice approximately 4 weeks after injecting with AAV5-DIO-NpHR-eYFP virus. Mice were deeply anaesthetized with an intraperitoneal injection of euthasol (0.06 ml per 30 g) and decapitated. After extraction, the brain was immersed in ice-cold carbogenated N-methyl-D-glucamine (NMDG) artificial cerebrospinal fluid (ACSF) (92 mM NMDG, 2.5 mM KCl, 1.25 mM NaH2PO4, 30 mM NaHCO3, 20 mM HEPES, 25 mM glucose, 2 mM thiourea, 5 mM Na-ascorbate, 3 mM Na-pyruvate, 0.5 mM CaCl2\u00b74H2O, 10 mM MgSO4\u00b77H2O and 12 mM N-acetyl-L-cysteine) for 2 min. Afterwards, coronal slices (300 \u03bcm) were sectioned using a vibratome (VT1200s, Leica) and then incubated in NMDG ACSF at 34\u00b0C for 15 min. Slices were then transferred into a holding solution of HEPES ACSF (92 mM NaCl, 2.5 mM KCl, 1.25 mM NaH2PO4, 30 mM NaHCO3, 20 mM HEPES, 25 mM glucose, 2 mM thiourea, 5 mM Na-ascorbate, 3 mM Na-pyruvate, 2 mM CaCl2\u00b74H2O, 2 mM MgSO4\u00b77H2O and 12 mM N-acetyl-L-cysteine, bubbled at room temperature with 95% O2, 5% CO2) for at least 45 min until recordings were performed. Whole cell recordings were performed using a Multiclamp 700B (Molecular Devices, Sunnyvale, CA) using pipettes with a resistance of 3\u20135 M\u03a9 filled with a potassium-based internal solution containing 120 mM potassium gluconate,\u00a00.2 mM EGTA, 10 mM HEPES, 5 mM NaCl, 1 mM MgCl2, 2 mM Mg-ATP and\u00a00.3 mM NA-GTP, with the pH adjusted to 7.2 with KOH. DA neurons in the VTA were identified for recordings based on YFP expression. Photostimulation parameters were 560 nm and 5 mW/mm2. Neurons were held at \u221270 mV during photocurrent measurements. To confirm the ability of photocurrents to eliminate action potentials, action potentials were induced by a positive current injection (120 pA, 100 ms pulse duration, 5 Hz).\n\n### CNN\n\nWe introduce an open-source pipeline to automate freezing analysis of behavioral videos. The main motivation and advantage of this pipeline is automation of freezing analysis, even when mice are tethered to neural headgear -- our analysis does not confuse headgear movement for mouse movement. Drawbacks to this technique include necessity for manual scoring to train the network (it took approximately seven hours to score the 33,000 images we used to train each network), and different networks must be trained for different backgrounds and neural headgear. Additionally, having a graphics processing unit (GPU) greatly speeds up network training (1\u20132 hrs to train 200 epochs on a 320 nVidia P100 GPU vs. 1 week on a 32 GB RAM, Intel Core i7 CPU) and using the network for analysis (10 min to run 25,000 frames on a 320 nVidia P100 GPU vs. 1 hr on a 32 GB RAM CPU).\n\nTraining and using the network involved: (1) Human labeling of freezing behavior, (2) Generating images for CNN input, (3) Training the CNN, (4) Assessing CNN accuracy and precision, and (5) Using network for analysis. Custom MATLAB software was developed for parts (1 - 2), and custom Python software was developed for parts (3 - 5). Code for all steps is available on GitHub: https://github.com/neurocaience/deepfreeze/ (Cai et al., 2020; copy archived at https://github.com/elifesciences-publications/deepfreeze).\n",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "6e836191-c6a7-4d88-8999-fc94ba19b5b4",
+      "submission_id": "7f13d103-ea35-4135-9661-36262253aed8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naoshige Uchida, Harvard University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54936.sa1](https://doi.org/10.7554/eLife.54936.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study shows a novel type of diversity within dopamine neurons in the ventral tegmental area (VTA). The use of fear extinction allowed the authors to reveal novel aspects of dopamine signals, in particular, salience-related signals in the lateral VTA contrasting with reward prediction error-like signals observed in the medial VTA. Optogenetic inhibition experiments further supports functional differences between dopamine neurons in the medial and lateral VTA. These results together provide evidence that extends the notion of heterogeneity in dopamine neurons in a significant manner.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Distinct signals in medial and lateral VTA dopamine neurons modulate fear extinction at different times\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Naoshige Uchida as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kate Wassum as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Satoshi Ikemoto (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary\n\nThe authors examine the role of ventral tegmental area dopamine neurons (VTA-DA) in the extinction of fear learning. Using fiber photometry they demonstrate that medial VTA-DA neuronal populations are inhibited by aversive predictive auditory tones and excited when an expected aversive shock is omitted during fear extinction learning. They also report that lateral VTA-DA neuron populations respond to aversive predictive tones and to shock omission. Using correlation analysis of neural activity on a trial-by-trial and across animal basis, they then show that the tone evoked activity during fear extinction in medial VTA-DA cells is negatively correlated with extinction learning while the shock omission related activity is positively correlated with freezing. Contrasting with this, lateral VTA-DA neuronal activity is positively correlated with the predictive tone. Finally, they use optogenetics to show that inhibition of medial VTA-DA neurons during shock omission reduces extinction while inhibiting lateral VTA-DA neurons only has an effect during the tone onset.\n\nThis is a timely study because there are increasing interests in diversity of DA neurons. Recent studies have shown fear extinction is regulated by DA neurons (e.g. Luo et al., 2018; Salinas-Hernandez et al., 2018), but the results of the current study extend these recent studies and provide important information on distinct neuronal activation in medial and lateral VTA-DA cells. The different effects of optogenetic inhibition between these cell populations are also potentially very important. The study is conducted with sound methods and care. The manuscript is written clearly and the results are presented well generally.\n\nWhile all the reviewers thought that this manuscript contains important results, it was pointed out that some findings of the present work overlaps with previous studies (Luo et al., 2018; and Salinas-Hernandez et al., 2018). This does not necessarily reduce the significance of the current work, but the authors should clarify the novelty of the current work and the difference from the previous studies, while giving more proper credits to previous studies. Reviewers also found various technical and interpretational issues that need to be addressed. We therefore would like to invite the authors to respond to these concerns before publication of this work in eLife.\n\nEssential revisions:\n\n1) The authors interpret the results as though they are specifically manipulating the medial and lateral VTA (highlighted in the title, as well). However, based on the fiber locations for photometry and optogenetics, some of the fibers for the \"lateral VTA\" appear to encompass the substantial nigra pars compacta (SNc). While this does not necessarily reduce the significance of the study, the results need to be reframed to clarify that it remains unclear whether the activity and optogenetic effects observed in this study come from lateral VTA or SNc.\n\n2) Previous studies demonstrated that VTA-DA neuronal activity and the release of DA in nucleus accumbens (NAc) increases when anticipated shocks are omitted (Badrinarayan et al., 2012; Salinas-Hern\u00e1ndez et al., 2018). Furthermore, prior work reported that inhibition of VTA-DA cells or medially situated VTA-DA projections to the medial NAc shell, but not more laterally positioned VTA-DA projections to NAc core, impairs extinction learning (Salinas-Hern\u00e1ndez et al., 2018; Luo et al., 2018). The present study replicates some of these findings and extends them by imaging from medial and lateral VTA-DA cell groups and showing distinct coding features (RPE vs. Salience) as well as trial-by-trial correlations of activity and behavior. Furthermore, they report that inhibition of lateral VTA-DA neurons during the cue slows extinction. While these are interesting findings, they are a bit incremental and their importance could be better framed in the context of the previous studies.\n\n3) In Figure 4E the authors show that medial VTA-DA neurons are excited at tone offset and that this decreases over the course of multiple days of extinction. To rule out the possibility that this is simply a response to the cessation of the tone itself which decays over days and not due to a prediction error set up by learning they should analyze and show the response to the tone before fear conditioning (habituation).\n\n4) The authors argue that medial VTA-DA neurons encode a reward prediction error, but during conditioning the VTA-DA neurons exhibit a large response to the electrical shocks (Figure 3\u2014figure supplement 1G). This suggests that the cell population they are recording from do not encode simply reward prediction error. They are using a fiber photometry approach which captures what could be heterogeneous medial VTA cell populations (some of which project to mPFC are may be aversive coding) which could account for this. Whatever the resolution, the authors should discuss this apparent discrepancy with their working model in more detail.\n\n5) As the authors mention, (motivational) salience can be defined as \"an unsigned prediction error\" or \"the absolute value of RPE\". The data appear to be preliminary to conclude that lateral VTA-DA neurons signal salience. First, as discussed in the point #1, whether the excitation at the CS onset and the termination of the CS comes from VTA or SNc. Second, the onset and the end of CS are often the time at which a sudden change in behavior occurs (e.g. see Figure 3D, freeze %). It is possible that the observed activation reflects a switch in behavior much like movement onset signals observed in previous studies. Third, the excitation at the end of CS is rather small. To strengthen the conclusion, it would be preferable to observe whether they are strongly activated by reward. Also, do the authors observe excitation during the US (footshock) during conditioning? Fourth, optogenetic inhibition of lateral VTA-DA neurons caused place aversion and decreased velocity. These results do not necessarily align with the idea that lateral VTA-DA neurons signal salience.\n\n6) Potentially the most important result in this study is slowing of fear extinction by optogenetic inhibition of lateral VTA-DA neurons at CS onset. However, this result is underdeveloped and appear preliminary. First, the result appears mainly due to increased freezing in the last half of Extinction Day 3. In the control experiment, the authors showed that optogenetic inhibition decreases the velocity of the animals' movement. It is unclear whether the authors can separate slowing of movement (which may increase \"apparent\" freezing) and a direct effect on extinction (i.e. a process of reducing a learned behavior). Second, the effect is relatively small. Perhaps, Figure S5 shows the effect more clearly than Figure 5 does (Please show this and a quantitative summary in the main figure). But still, the two conditions intersect. Third, there is significant decrease in the baseline (before CS) on Extinction Day 1 and 2. It is unclear whether this affected the data analysis. Overall, although this is one of the most important results of this study, the data are not particularly strong.\n",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "31d3be55-53aa-467d-8254-0c0a5f6cfad7",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C1",
+      "claim": "The CNN classifier achieved 92-96% accuracy for freezing behavior classification across different experimental chambers and neural headgears.",
+      "claim_type": "EXPLICIT",
+      "source": "Each classifier achieved optimal training within 50 training epochs (Figure 1\u2014figure supplement 1B\u2013E) and yielded 92\u201396% accuracy, 5\u201310% false positive rate (FPR) and 4\u20136% false negative rate (FNR) (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific accuracy percentages from CNN performance testing across different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "c570c3a7-c0ef-466f-8c61-1ac574fc9c8c",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C2",
+      "claim": "The CNN classifier performance was comparable to the relative performance between two human observers.",
+      "claim_type": "EXPLICIT",
+      "source": "This was comparable to the relative performance between two humans: given one person's scoring held as ground truth, the other person scored with 95% accuracy, 11.5% FPR and 0.3% FNR (Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct comparison of CNN metrics to human observer metrics is provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "e156b977-0ab6-4393-b40b-85120506ed2d",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C3",
+      "claim": "The CNN better reflected human observer scoring than FreezeFrame software.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the CNN better reflected the human observer than FreezeFrame (Figure 1E). The CNN and human observer yielded a correlation of 0.96 (Pearson correlation, Figure 1F), while FreezeFrame and human observer yielded a correlation of 0.85 (Pearson correlation, Figure 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Correlation coefficients comparing CNN and FreezeFrame to human observers are provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "667705ab-5a0f-489d-b58a-8b876bd0671b",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C4",
+      "claim": "Mice froze very little during habituation, quickly increased freezing during conditioning, and slowly decreased freezing over three days of extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice froze very little during habituation, quickly increased freezing during conditioning, and slowly decreased freezing to the tone over three days of extinction (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Behavioral data across experimental conditions is described and referenced in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "f76ab45b-8786-414b-a61a-b20e6c06fa97",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C5",
+      "claim": "During fear extinction, a neural correlate of RPE should have suppressed activity during a tone paired with footshock and elevated activity at tone offset when shock is omitted.",
+      "claim_type": "EXPLICIT",
+      "source": "During fear extinction, we expect a neural correlate of RPE to have suppressed activity during a tone that has been paired with a foot shock to signal worse than expected outcome, and elevated activity during the tone offset to signal better than expected outcome because the footshock was omitted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on RPE theory applied to fear extinction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "c3b99f7e-debb-4b89-bd9f-0c6be134dcea",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C6",
+      "claim": "A neural correlate of salience can be considered an unsigned prediction error, or the absolute value of RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "A neural correlate of salience, which can be considered an unsigned prediction error, or the absolute value of RPE, should instead have elevated activity during the tone that has been paired with a footshock, and elevated activity at the tone offset, when the shock was unexpectedly omitted (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines salience in relation to RPE based on established theoretical frameworks.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "53e60080-74b9-4164-bc8f-3d044881179c",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C7",
+      "claim": "Both medial and lateral VTA showed increased activity to reward.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both regions showed increased activity to reward (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Fiber photometry recordings during reward consumption are referenced.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "345343ea-a6e5-48ef-a7db-430932c3d8bb",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C8",
+      "claim": "During habituation and fear conditioning, medial and lateral VTA DA neuron signals were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "During habituation and fear conditioning, medial and lateral VTA DA neuron signals were similar, but could not be easily explained as purely RPE or salience (Figure 3\u2014figure supplement 1D,E top two rows, and F-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of neural activity patterns across VTA subregions during specific behavioral phases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "fb81b3ec-2556-4157-85cd-cce3045da770",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C9",
+      "claim": "GCaMP6f fluorescence in both medial and lateral VTA decreased throughout the tone during habituation and conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "GCaMP6f fluorescence in both regions decreased throughout the tone during habituation and conditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct observation from fiber photometry recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "ccf3082c-c61a-4c6b-96d0-6595905daa35",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C10",
+      "claim": "Both medial and lateral VTA showed increased fluorescence to the shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Both regions also showed increased fluorescence to the shock (Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Fiber photometry data during shock presentation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "834d01b1-086a-4508-964e-71153816df44",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C11",
+      "claim": "During fear extinction, medial VTA DA neuron activity was consistent with RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Medial VTA DA neuron activity was consistent with RPE (Figure 2C): GCAMP6f fluorescence decreased throughout the tone that had been associated with a negative outcome, and increased at the offset of the tone, during the omission of the expected shock (Figure 3E; percentile rank of the mean GCaMP6f fluorescence every second relative to shuffled data: p<0.01 after Bonferroni correction for multiple time point comparison).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of fiber photometry data showing activity patterns consistent with RPE predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "c2e17414-880c-4b30-afad-38a410828815",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C12",
+      "claim": "Both RPE-like signals in medial VTA diminished in magnitude throughout extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these signals diminished in magnitude throughout extinction, as expected with RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of signal changes across extinction days consistent with RPE theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "805d8f79-fcb5-4f1c-81bf-f487b36de0c4",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C13",
+      "claim": "During fear extinction, lateral VTA DA neuron activity was more consistent with salience.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, during fear extinction, lateral VTA DA neuron activity was more consistent with salience (Figure 2C). GCaMP6f fluorescence increased at the tone onset, consistent with an unsigned prediction error (Figure 3F; percentile rank of the mean GCaMP6f fluorescence every second relative to shuffled data: p<0.01 after Bonferroni correction for multiple time point comparisons).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of fiber photometry data showing activity patterns consistent with salience predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "2628c503-f606-450c-83fa-63c4dd9c2da6",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C14",
+      "claim": "GCaMP6f fluorescence in lateral VTA increased at tone offset, consistent with the omission of shock being salient.",
+      "claim_type": "EXPLICIT",
+      "source": "GCaMP6f fluorescence also increased at the tone offset, consistent with the idea that the omission of the shock is salient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Fiber photometry data interpreted in the context of salience theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "cf6c8c7b-9af6-4040-aa3b-17e0f6f60893",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C15",
+      "claim": "Both salience-like signals in lateral VTA diminished throughout extinction as the tone loses its salience.",
+      "claim_type": "EXPLICIT",
+      "source": "Both these signals also diminished throughout extinction, as the tone loses its salience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of signal changes across extinction days interpreted through salience framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "296a90d3-051d-472c-a0dc-674d0672f48c",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C16",
+      "claim": "SNc DA neurons showed different activity profiles from lateral VTA during fear extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "To control for the possibility that the lateral VTA signal could be coming from the adjacent SNc, in a separate group of mice we recorded from SNc and found different activity profiles (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control experiment with fiber photometry recordings from SNc.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "76e7732a-29f7-406f-84b6-c51984d8ae8d",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C17",
+      "claim": "Control mice expressing GFP or YFP showed little modulation in fluorescence signal except at the time of shock.",
+      "claim_type": "EXPLICIT",
+      "source": "There was little modulation in the signal in the control mice. The exception was the time of the shock, which generated depressed fluorescence, which was the opposite of the increased fluorescence observed with GCaMP6f in medial and lateral VTA (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control experiment data showing minimal signal in non-calcium indicator conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "ed537d7e-ba68-43a4-8d20-873133d8cbf5",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C18",
+      "claim": "Dopamine axons in the nucleus accumbens and DMS both showed RPE during fear extinction, similar to dopamine cell bodies in medial VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that dopamine axons in the nucleus accumbens and DMS both showed RPE during fear extinction, similar to dopamine cell bodies in medial VTA (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Fiber photometry recordings from DA axons in striatal regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "2ad0c6ad-33df-49c8-8fe0-ba4d69ad31cd",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C19",
+      "claim": "In medial VTA, there was a negative correlation between freezing during the tone and GCaMP6f fluorescence during tone onset on a trial-by-trial basis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the medial VTA DA neurons, we observed a negative correlation between freezing during the tone and GCaMP6f fluorescence during the tone onset of the same trial (Figure 4A; one sample t-test p=0.021, n = 10 mice)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of trial-by-trial correlations between behavior and neural activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "2c39cae3-de08-4fce-b3de-d39df4fd99a6",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C20",
+      "claim": "In medial VTA, there was a positive correlation between freezing during the tone and GCaMP6f fluorescence at tone offset on a trial-by-trial basis.",
+      "claim_type": "EXPLICIT",
+      "source": "but a positive correlation between freezing during the tone and GCaMP6f fluorescence at the tone offset of the same trial (Figure 4A; one sample t-test p<10\u22124, n = 10 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of trial-by-trial correlations between behavior and neural activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "b74f66a2-66af-4bf6-a8da-f2f1fb4cd488",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C21",
+      "claim": "The negative correlation between medial VTA fluorescence during tone and freezing reflects the learned negative association with the tone.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the negative correlation between fluorescence during the tone and freezing is consistent with the idea that the degree of inhibition in DA during the tone reflects the learned negative association with the tone (Mileykovskiy and Morales, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of correlation data in the context of prior literature on DA and aversive learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "489d9ef0-f515-475a-a046-9071246ce99d",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C22",
+      "claim": "The positive correlation between medial VTA DA after tone and freezing reflects the degree of 'relief' when expected shock is omitted.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the positive correlation between DA after the tone and freezing is consistent with the idea that the fluorescence reflects the degree of 'relief' that the animal experiences when the expected shock is omitted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of correlation data in the context of RPE theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "d1a93a20-063a-4c76-8daa-b55b6add3943",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C23",
+      "claim": "Mice with lower average medial VTA GCaMP6f fluorescence during tone onset froze more to the tone across animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice with lower average GCaMP6f fluorescence during the tone onset or higher average GCaMP6f fluorescence at the tone offset froze more to the tone (Pearson's correlation between GCaMP6f 5 s after tone onset and freezing during tone: r = \u22120.644, p=0.044",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cross-animal correlation analysis between neural activity and behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "3bbe4295-b010-4976-95dd-05ff6da0647d",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C24",
+      "claim": "Mice with higher average medial VTA GCaMP6f fluorescence at tone offset froze more to the tone across animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice with lower average GCaMP6f fluorescence during the tone onset or higher average GCaMP6f fluorescence at the tone offset froze more to the tone (Pearson's correlation between GCaMP6f 5 s after tone onset and freezing during tone: r = \u22120.644, p=0.044; GCaMP6f 5 s after tone offset and freezing during tone: r = 0.768, p=0.010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cross-animal correlation analysis between neural activity and behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "bf821039-870f-4712-b41a-5439075cfd36",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C25",
+      "claim": "In lateral VTA, there was a positive correlation across trials between freezing throughout the tone and GCaMP6f during tone onset.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the lateral VTA, we observed a positive correlation across trials between freezing throughout the tone and GCaMP6f during the tone onset for each trial (Figure 4D; one sample t-test p<10\u22124, n = 11 mice)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of trial-by-trial correlations between behavior and neural activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "c53e058d-ac9f-426c-82e5-7a429fc344e4",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C26",
+      "claim": "In lateral VTA, there was no significant correlation between freezing and GCaMP6f at tone offset on a trial-by-trial basis.",
+      "claim_type": "EXPLICIT",
+      "source": "but not the tone offset (Figure 4D; one sample t-test p=0.071).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis showing lack of significant correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "a5185c11-1d8d-4d5d-a76d-18407acef1f5",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C27",
+      "claim": "The positive correlation between lateral VTA fluorescence during tone onset and freezing reflects that more salient stimuli elicit more freezing.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the interpretation that fluorescence during the tone in lateral VTA reflects the salience of the tone, given that more salient stimuli should elicit more freezing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of correlation data in the context of salience theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "726c6faa-b987-4bcf-a2f5-b7b0f97d3466",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C28",
+      "claim": "NpHR-mediated photoinhibition produced peak photocurrents of 332.15 \u00b1 64.79 pA during voltage clamp recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Left: Mean and SEM of photocurrents evoked during voltage clamp (n = 7 neurons; peak current: 332.15 \u00b1 64.79 pA; steady state current: 318.84 \u00b1 63.64 pA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Ex vivo electrophysiology measurements of optogenetic inhibition efficacy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "05f74339-964c-46bd-aef9-f367b16d5984",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C29",
+      "claim": "NpHR-mediated hyperpolarization during current clamp showed peak hyperpolarization of 92.76 \u00b1 14.58 mV from baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean and SEM of NpHR-mediated hyperpolarization during current clamp (n = 7 neurons; peak hyperpolarization from baseline: 92.76 \u00b1 14.58 mV; steady state hyperpolarization from baseline: 62.93 \u00b1 10.92 mV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Ex vivo electrophysiology measurements of optogenetic inhibition efficacy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "4da83c8b-c720-496e-944e-eecfe644769e",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C30",
+      "claim": "Inhibiting either medial or lateral VTA DA caused real time place aversion to the inhibition chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting either medial or lateral VTA DA caused real time place aversion to the inhibition chamber (Figure 5\u2014figure supplement 1D; 2-factor ANOVA with group and subregion as factors: group effect: F(1,1) = 103.33, p = 10\u221214; subregion effect: F(1,1) = 0.32, p = 0.576; group \u00d7 subregion interaction: F(1,1) = 0.01, p = 0.935)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Behavioral data from real-time place aversion assay with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "8436b7a1-07da-41dc-b8db-77e0179dbf59",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C31",
+      "claim": "Inhibiting either medial or lateral VTA DA decreased velocity during inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "and decreased velocity during inhibition (Figure 5\u2014figure supplement 1E; 2-factor ANOVA with group and subregion as factors: group effect: F(1,1) = 14.35, p < 10\u22123; subregion effect: F(1,1) = 0.1, p = 0.754; group \u00d7 subregion interaction: F(1,1) = 0, p = 0.9441).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Behavioral data from real-time place aversion assay with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "0c27bee6-fb8b-4d6a-84e4-549fe1910b2b",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C32",
+      "claim": "Inhibiting medial VTA DA neurons at tone offset caused NpHR mice to freeze more to the tone compared to YFP controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting medial VTA DA neurons at tone offset yielded an effect consistent with the representation of RPE in this subregion: NpHR mice froze more to the tone compared to the YFP controls (Figure 5F-H; 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 7.528, p = 0.012; group \u00d7 tone number interaction: F(1,62) = 1.056 p = 0.361).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Optogenetic manipulation experiment with behavioral readout and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "395d82d5-02f7-4661-a598-0a3742778fa7",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C33",
+      "claim": "Medial VTA NpHR mice increased freezing during the inhibition period compared to YFP controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to attenuating extinction of tone-induced freezing, NpHR mice increased freezing during and after the inhibition period compared to YFP controls (2-factor ANOVA with group and tone number as factors, tone number being a repeated measure. During 6 s inhibition period: group effect: F(1,62) = 17.668, p < 10\u22123; group \u00d7 tone number interaction: F(1,62) = 1.371 p = 0.032.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Optogenetic manipulation experiment with behavioral readout and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "eeb2e3c5-38b0-43c9-a420-8b5e86608c17",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C34",
+      "claim": "Medial VTA NpHR mice increased freezing after the inhibition period compared to YFP controls.",
+      "claim_type": "EXPLICIT",
+      "source": "During 6 s after inhibition period: group effect: F(1,62) = 28.082, p < 10\u22124; group \u00d7 tone number interaction: F(1,62) = 0.854 p = 0.782.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Optogenetic manipulation experiment with behavioral readout and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "65f7e751-928b-4fe8-99e0-5fe069209511",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C35",
+      "claim": "Medial VTA DA neurons lead to updating of the value (or freezing behavior) upon subsequent presentations of the tone that preceded inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, not only do medial VTA DA neurons lead to updating of the value (or freezing behavior) upon subsequent presentations of the tone that preceded inhibition, they also modify behavior subsequent to the inhibition period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of optogenetic manipulation results in the context of learning theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "7285cbde-70eb-4f4e-992d-42748435a9b1",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C36",
+      "claim": "Inhibiting lateral VTA DA neurons at tone offset yielded no change in freezing during the tone.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the effects observed with medial VTA inhibition, inhibiting the lateral VTA DA neurons at tone offset yielded no change in freezing during the tone (Figure 5I-K; 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 0.002, p = 0.964; group \u00d7 tone number interaction: F(1,62) = 1.121 p = 0.249).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Optogenetic manipulation experiment with behavioral readout and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "d0fe93c9-b803-4c9d-a884-4bf830c77344",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C37",
+      "claim": "Lateral VTA tone offset inhibition increased freezing after the inhibition period, an effect that increased with extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "This manipulation did, however, increase freezing after the inhibition period, an effect that increased with extinction (2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 6.981, p = 0.019; group \u00d7 tone number interaction: F(1,62) = 1.480 p = 0.011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Optogenetic manipulation experiment with behavioral readout and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "7aa60e47-8a72-4b66-bdce-6d4b64f1f139",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C38",
+      "claim": "Lateral VTA inhibition primarily affects freezing at time points after inhibition, rather than causing learned changes in the value of preceding events.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that lateral VTA inhibition primarily affects freezing at time points after inhibition, rather than causing learned changes in the value of preceding events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of optogenetic manipulation results comparing temporal effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "9aa1c069-56be-4dd3-8515-1557af513042",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C39",
+      "claim": "Inhibiting SNc DA neurons at tone offset did not have an effect on tone freezing.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the lateral VTA cohort, inhibiting SNc DA neurons at tone offset did not have an effect on tone freezing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Optogenetic manipulation experiment in control region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "5bae6319-0766-44d2-a30e-ec1d8e409167",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C40",
+      "claim": "SNc NpHR mice showed decreased freezing during the ITI relative to the YFP group.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SNc NpHR mice showed decreased freezing during the ITI relative to the YFP group (Figure 5\u2014figure supplement 3D; 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 4.980, p = 0.047; group \u00d7 tone interaction: F(1,62) = 1.276, p 0.081)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Optogenetic manipulation experiment in control region with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "ac925c82-5bd2-4d08-a958-c7de820eff18",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C41",
+      "claim": "Lateral VTA and SNc inhibition during cue offset may not have identical consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that lateral VTA and SNc inhibition during the cue offset may not have identical consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of optogenetic manipulation effects across regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "130f27a2-d128-494e-9188-b884705e1f21",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C42",
+      "claim": "Inhibiting lateral VTA DA neurons at tone onset caused NpHR mice to extinguish more slowly to the tone.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that NpHR mice extinguished more slowly to the tone. This is reflected in that there was no main effect of group, but a significant interaction between group and tone number (Figure 6C, D; 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 0.014, p = 0.908; group \u00d7 tone number interaction: F(1,62) = 2.217, p < 10\u22126).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Optogenetic manipulation experiment with behavioral readout and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "7d2406f6-4851-4547-a25c-5c755c4f85be",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C43",
+      "claim": "Lateral VTA tone onset NpHR mice showed decreased freezing during the ITI.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed that NpHR mice showed decreased freezing during the ITI (Figure 6D; 2-factor ANOVA with group and tone number as factors, tone number being a repeated measure: group effect: F(1,62) = 6.477, p = 0.019; group \u00d7 tone number interaction: F(1,62) = 1.562 p = 0.004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Optogenetic manipulation experiment with behavioral readout and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "7a06a5ff-6926-444d-a912-ca0164489467",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C44",
+      "claim": "Inhibiting the salience-like signal at tone onset slows extinction learning over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the results from the previous experiments, this suggests that inhibiting the salience-like signal at tone onset slows extinction learning over time, even though activity of these neurons at tone offset does not update the value of the preceding tone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Synthesis of optogenetic manipulation results across different timing conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "d487f8f6-b039-4035-b4fe-28d2f37783f4",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C45",
+      "claim": "During fear extinction, medial VTA more closely resembled RPE, while lateral VTA more closely resembled salience.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that during fear extinction, medial VTA more closely resembled RPE, while lateral VTA more closely resembled salience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement integrating fiber photometry findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "037ab6e3-b7f8-4c7e-b76f-196cd97ad1ba",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C46",
+      "claim": "Activity in both medial and lateral VTA subregions contributed causally to fear extinction, but the temporal relationship between activity and freezing differed.",
+      "claim_type": "EXPLICIT",
+      "source": "While activity in both subregions contributed causally to fear extinction, the temporal relationship between activity and freezing differed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement integrating optogenetic manipulation findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "446052be-6f09-4a82-be92-1e82b5eae710",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C47",
+      "claim": "Inhibition in medial VTA prevented the update of value to the tone preceding the inhibition, causing freezing to be more likely on subsequent tone presentations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the idea that RPE signals update the value of preceding events, inhibition in medial VTA prevented the update of value (or freezing response) to the tone preceding the inhibition, causing freezing to be more likely on subsequent tone presentations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of medial VTA optogenetic results in the context of RPE theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "dcb2ee79-a482-4b28-99ef-351ee714e29a",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C48",
+      "claim": "Inhibition of the salience-like signal in lateral VTA affected freezing during or immediately following inhibition, but did not update the value to subsequent presentations of the tone if it preceded the inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, inhibition of the salience-like signal in lateral VTA affected freezing in the time period during or immediately following the inhibition, but did not update the value (or freezing response) to subsequent presentations of the tone if it preceded the inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of lateral VTA optogenetic results in the context of salience theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "94b8c9fb-58b5-40b5-a52e-21ea4f822cdf",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C49",
+      "claim": "VTA DA neurons are known to be modulated by aversive stimuli and have been implicated in fear conditioning and extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "DA neurons originating in the VTA are known to be modulated by aversive stimuli, and have been implicated in fear conditioning and extinction (El-Ghundi et al., 2001; Young et al., 1993; Inoue et al., 2000; Nader and LeDoux, 1999; Guarraci and Kapp, 1999; Holtzman-Assif et al., 2010; Delgado et al., 2008; Luo et al., 2018; Salinas-Hern\u00e1ndez et al., 2018; Zweifel et al., 2011; Pezze and Feldon, 2004; Mueller et al., 2010; Pignatelli et al., 2017; Nasehi et al., 2016; Pezze et al., 2003; Budygin et al., 2012; Robinson et al., 2019; Lammel et al., 2011; Jo et al., 2018; Lutas et al., 2019; Fadok et al., 2009; Groessl et al., 2018; Bouchet et al., 2018; Wenzel et al., 2018; Wang and Tsien, 2011; Mileykovskiy and Morales, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior literature with extensive citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "01c16ddc-3975-48b2-9270-8f919f148cea",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C50",
+      "claim": "A critical function of VTA DA neurons is to signal reward prediction error (RPE).",
+      "claim_type": "EXPLICIT",
+      "source": "A critical function of VTA DA neurons is to signal reward prediction error (RPE), or the difference between experienced and expected reward (Schultz et al., 1997; Cohen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established theory with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "6f326855-1127-4f69-826b-c7beb278b2e9",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C51",
+      "claim": "RPE signals support reinforcement learning.",
+      "claim_type": "EXPLICIT",
+      "source": "This signal supports reinforcement learning (Steinberg et al., 2013; Chang et al., 2016; Tsai et al., 2009; Witten et al., 2011; Parker et al., 2016; Saunders et al., 2018; Zweifel et al., 2009; Kim et al., 2012; Stopper et al., 2014; Adamantidis et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established theory with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "edbfba32-11b1-474d-b3d2-673c55daba66",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C52",
+      "claim": "VTA DA neurons can display heterogeneous and spatially organized signals rather than uniformly representing a scalar RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "However, rather than uniformly representing a scalar RPE, there is recent appreciation that VTA DA neurons can display heterogeneous and spatially organized signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of recent findings in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "1c89a7b9-59a1-4a83-b0b0-b91cf544898b",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C53",
+      "claim": "During navigation-based decision making, there are spatially segregated representations within VTA DA neurons of sensory, motor, and cognitive variables.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we recently demonstrated that during navigation-based decision making, there are spatially segregated representations within VTA DA neurons of a variety of sensory, motor, and cognitive variables (Engelhard et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "c794824c-0d86-474f-b822-e4986ce38458",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C54",
+      "claim": "Neural correlates of salience-like signals have been demonstrated in certain DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have demonstrated neural correlates of salience-like signals in certain DA neurons (de Jong et al., 2019; Saddoris et al., 2015; Wang and Tsien, 2011; Gore et al., 2014; Yuan et al., 2019; Cho et al., 2017; Aitken et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior literature with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "4f6b77e3-2554-440d-8377-2f052eafee99",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C55",
+      "claim": "VTA DA neurons were shown to represent RPE-like signals during fear extinction, displaying elevated activity when shock is omitted at cue offset.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, VTA DA neurons were shown to represent RPE-like signals during fear extinction, in that they display elevated activity when the shock is omitted at the offset of the cue, signaling better-than-expected outcome (Salinas-Hern\u00e1ndez et al., 2018; Badrinarayan et al., 2012; Jo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior literature with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "0e2605a1-8ac4-42d3-906f-a01c735f8005",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C56",
+      "claim": "Manipulation of RPE-like activity in DA neurons altered the rate of extinction, suggesting this signal drives reinforcement learning for aversive associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Manipulation of this activity altered the rate of extinction, suggesting that an RPE-like signal in DA neurons drives reinforcement learning for aversive associations as well as rewarding associations (Salinas-Hern\u00e1ndez et al., 2018; Luo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior literature with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "63c28314-9546-4adc-a32e-6c6ef8e4b515",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C57",
+      "claim": "Freezing traditionally requires hand scoring when mice are tethered to neural headgear, as existing software cannot dissociate tether movement from mouse movement.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one limitation of freezing as a readout of learning is that it traditionally requires hand scoring when mice are tethered to neural headgear, as existing software is not designed to dissociate tether movement from mouse movement (Luyten et al., 2014; Shoji et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of technical limitation with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "829f0c2f-cec9-480e-bcdd-7f2207804f79",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C58",
+      "claim": "The CNN was initialized on the pre-trained ResNet18 architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The CNN was initialized on the pre-trained ResNet18 architecture (He et al., 2016), and further trained on 'difference images,' the pixel-by-pixel intensity difference between consecutive pairs of frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of computational methods with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "cd046553-a38f-42e4-81d2-52c0f4ca96c4",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C59",
+      "claim": "The rationale for inputting difference images to the CNN was to capture frame-by-frame motion.",
+      "claim_type": "EXPLICIT",
+      "source": "The rationale for inputting difference images to the CNN was to capture frame-by-frame motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of methodological design choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "7e28fe2e-d566-4f75-92d1-60f2d7ecd09d",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C60",
+      "claim": "The correlation between two human observers was 0.98 (Pearson correlation).",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the correlation between two human observers was 0.98 (Pearson correlation, Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Benchmark data for human performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "04f82457-4bb8-4534-b686-d1870db61338",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C61",
+      "claim": "The CNN pipeline analyzed over 500 hrs of behavioral data during fear conditioning and extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paper, we used the CNN to analyze over 500 hrs of behavioral data during fear conditioning and extinction, which would have been prohibitively time consuming without an automated approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the scale of data analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "9c671b0e-3ccf-41b2-9433-01a5e4a6cd1b",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C62",
+      "claim": "There is electrophysiological, anatomical and functional evidence for a medial/lateral distinction within the VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose these subregions because of the electrophysiological, anatomical and functional evidence that there is a medial/lateral distinction within the VTA (Lammel et al., 2014; Beier et al., 2015; Yang et al., 2018; Engelhard et al., 2019; de Jong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Justification for experimental design based on prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "c81fdc76-f316-4dfd-a05f-dfa25414c0c1",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C63",
+      "claim": "The SNc has a greater proportion of DA neurons that signal salience rather than RPE compared to VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, there is previous evidence that the SNc, which is lateral to the VTA, has a greater proportion of DA neurons that signal salience rather than RPE (Matsumoto and Hikosaka, 2009; Menegas et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior literature with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "5cc8dee8-2ba8-40c9-b5c5-8c5d7cdaa025",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C64",
+      "claim": "An animal's speed may be a reflection of the motivational salience of an environment.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible relationship between these seemingly disconnected findings of salience versus kinematic tuning is that an animal's speed is a reflection of the motivational salience of an environment (Zenon et al., 2016; Panigrahi et al., 2015; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation linking different findings with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "39e0d110-b305-4896-9ecf-cb15b4845444",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C65",
+      "claim": "The medial/lateral distinction between RPE and salience does not hold across all behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that this medial/lateral distinction between RPE and salience does not hold across all behaviors (Heymann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of limitations with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "106db502-b440-45ae-afe5-61aa31eca562",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C66",
+      "claim": "During fear conditioning, medial and lateral VTA shared similar activity profiles, which may reflect heterogeneity in single neuron activity not captured with fiber photometry.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we found that during fear conditioning, medial and lateral VTA shared similar activity profiles, which may reflect heterogeneity in single neuron activity that is not captured with fiber photometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings acknowledging methodological limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "7b1cb9f4-fbd8-4b77-a3eb-f0f5762964a9",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C67",
+      "claim": "Inhibition of a subpopulation of VTA neurons with projections to NAc Core did not affect extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "This was consistent with the previous observation that inhibition of a subpopulation of VTA neurons with projections to NAc Core did not affect extinction (Luo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with prior literature with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "6af63e5c-65a4-4c9d-b038-ca36fdd12155",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C68",
+      "claim": "Despite differences in neural correlates, different VTA/SNc DA subpopulations share a common function of mediating learning.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the emerging framework that despite differences in neural correlates, different VTA/SNc DA subpopulations share a common function of mediating learning, even though they may differ in the specific setting in which they contribute to learning, or the specific aspect of learning that they mediate (Ellwood et al., 2017; Saunders et al., 2018; Cox and Witten, 2019; Bromberg-Martin et al., 2010; Menegas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Synthesis of findings in the context of broader theoretical framework with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "4fc0c7b7-6936-4339-ad28-0f5507a303dd",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C69",
+      "claim": "Dat-Cre mice were crossed with Ai148D mice to express GCaMP6f in DA neurons for fiber photometry recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "To perform fiber photometry recordings from VTA DA neurons, we expressed the calcium indicator GCaMP6f in DA neurons by crossing Dat-Cre mice with Ai148D mice (see Materials and methods; Engelhard et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "75f01348-3fbe-4292-9ab9-95f196e5885d",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C70",
+      "claim": "Optic fibers were targeted to either medial VTA (n=10 mice) or lateral VTA (n=11 mice) for fiber photometry recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted the recording fiber to either medial or lateral VTA (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A; medial VTA group: n = 10 mice, lateral VTA group: n = 11 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental design and sample sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "e6db08f1-ad28-4980-b86a-e89364a60c87",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C71",
+      "claim": "Mice were group housed with up to five other mice and allowed ad libitum access to food and water.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were group housed with up to five other mice, allowed ad libitum access to food and water, and kept on a 12 hr light on and 12 hr light-off schedule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of animal husbandry conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "5f31a99f-063e-4293-856c-b44cebb3f334",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C72",
+      "claim": "Mice between 7-10 weeks of age were used during surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice between 7\u201310 weeks of age were used during surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "0958c3e0-0f3b-4265-8cd8-776923902d33",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "claim_id": "C73",
+      "claim": "All experiments followed guidelines established by the National Institutes of Health and were reviewed by Princeton University IACUC.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments followed guidelines established by the National Institutes of Health and reviewed by Princeton University Institutional Animals Care and Use Committee (IACUC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1546d702-f697-4171-bf63-9dbd8213a606",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A CNN-based automated freezing detection system was developed and validated, achieving 92-96% accuracy comparable to human observers (95% accuracy) and outperforming commercial FreezeFrame software (correlation with human: 0.96 vs 0.85). The system was used to analyze over 500 hours of behavioral data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 provide convergent validation evidence including performance metrics, human comparison benchmarks, and superiority over existing software. The CNN architecture (C58-C59) is clearly described, human inter-rater reliability is established (C60: r=0.98), and practical utility is demonstrated (C61). Statistical comparisons and correlation coefficients support all performance claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "ac01b46d-1557-4d2e-a55b-cc7fbb01f1ef",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mice exhibited expected fear conditioning and extinction behavior patterns across a 4-day protocol, with minimal freezing during habituation, rapid increase during conditioning, and gradual decrease over three extinction days. Experiments used Dat-Cre x Ai148D mice (n=10 medial VTA, n=11 lateral VTA) with fiber photometry recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 describes the behavioral phenotype consistent with established fear conditioning paradigms. Claims C69-C73 provide complete methodological details including genetic background, sample sizes, and experimental conditions. The behavioral pattern serves as validation that the fear conditioning protocol worked as expected.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "fa16712d-09b0-4dd5-b118-1d53b26971e1",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study is grounded in established theoretical frameworks distinguishing RPE (signed prediction error) from salience (unsigned prediction error). Prior work has shown VTA DA neurons can display heterogeneous signals and that RPE-like signals in DA neurons contribute to fear extinction learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C50-C56 establish the theoretical foundation through extensive citations to prior literature. These are knowledge claims and literature summaries that accurately represent the field's understanding of RPE, salience, and DA neuron heterogeneity. The theoretical predictions (C5-C6) logically follow from established RPE and salience frameworks.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "f179b238-efa2-4bfb-a6a4-2bd9cbec0966",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During habituation and fear conditioning, medial and lateral VTA DA neurons showed similar activity profiles that could not be easily classified as pure RPE or salience. Both regions showed decreased fluorescence during tones and increased fluorescence to shock. Both regions also showed increased activity to reward.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 describe fiber photometry observations during early phases of the behavioral protocol, with appropriate figure references. Claim C66 acknowledges that the lack of differentiation may reflect methodological limitations of fiber photometry in capturing single-neuron heterogeneity. The findings are appropriately qualified and supported by data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "a87c7503-efbc-4651-a063-dc12456eb1d7",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "During fear extinction, medial VTA DA neuron activity was consistent with RPE: fluorescence decreased during the tone (signaling worse-than-expected outcome) and increased at tone offset (signaling better-than-expected outcome when shock was omitted). Both signals diminished across extinction days as expected with RPE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C11 provides statistical support (percentile rank p<0.01 after Bonferroni correction) for the RPE-like pattern. Claim C12 describes the temporal dynamics consistent with RPE theory. The pattern matches theoretical predictions (C5) and is supported by appropriate statistical analysis of shuffled controls. Claim C45 provides the summary conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "a93908c4-44aa-4c65-bc3d-d102b636d85c",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "During fear extinction, lateral VTA DA neuron activity was more consistent with salience: fluorescence increased at tone onset and tone offset (both representing salient events). Both signals diminished across extinction days as the tone lost salience.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C13 provides statistical support (percentile rank p<0.01 after Bonferroni correction) for the salience-like pattern at tone onset. Claims C14-C15 describe additional features consistent with salience encoding. The pattern matches theoretical predictions (C6) and is supported by appropriate statistical analysis. This represents a novel finding distinguishing lateral from medial VTA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "4ab8f18f-68b8-4714-b18d-938f97631901",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Control experiments validated the specificity of findings: SNc showed different activity profiles from lateral VTA, GFP/YFP controls showed minimal modulation except opposite responses to shock, and DA axons in NAc and DMS showed RPE similar to medial VTA cell bodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 describe critical control experiments. C16 rules out contamination from adjacent SNc (n=2 mice). C17 demonstrates that signals are calcium-dependent and not artifacts (n=8 control mice). C18 shows consistency between cell body and terminal recordings. These controls strengthen the main findings, though the SNc control has limited sample size.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "b1f185a5-2d7b-4999-976a-d8b56e214301",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In medial VTA, trial-by-trial analysis revealed negative correlation between tone-onset fluorescence and freezing (p=0.021) and positive correlation between tone-offset fluorescence and freezing (p<10^-4). Similar correlations were observed across animals. These patterns are consistent with RPE encoding where tone-onset inhibition reflects learned negative association and tone-offset activation reflects 'relief' from omitted shock.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 provide trial-by-trial correlation statistics with appropriate sample sizes (n=10 mice). Claims C23-C24 show cross-animal correlations (r=-0.644, p=0.044 for onset; r=0.768, p=0.010 for offset). Claims C21-C22 provide theoretical interpretation grounded in prior literature. The convergence of within-animal and across-animal correlations strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "71328145-ea89-4045-ac20-96eea9be26aa",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In lateral VTA, trial-by-trial analysis revealed positive correlation between tone-onset fluorescence and freezing (p<10^-4) but no significant correlation at tone offset (p=0.071). This pattern is consistent with salience encoding where more salient stimuli elicit more freezing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 provides strong statistical support for the tone-onset correlation (n=11 mice). Claim C26 appropriately reports the non-significant tone-offset correlation. Claim C27 provides interpretation consistent with salience theory. The differential pattern between tone onset and offset distinguishes this from the medial VTA pattern and supports the salience interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "d6e493f1-a01f-4cb5-badb-12ef843b0d34",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ex vivo electrophysiology confirmed NpHR-mediated optogenetic inhibition efficacy, producing peak photocurrents of 332.15\u00b164.79 pA and peak hyperpolarization of 92.76\u00b114.58 mV from baseline (n=7 neurons).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 provide quantitative validation of the optogenetic tool with appropriate sample size and error estimates. These are essential control experiments demonstrating that the optogenetic manipulation produces the intended physiological effect. The measurements are standard for optogenetic validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "3d7a4597-a107-4b77-9fa4-bb23b26586c3",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of either medial or lateral VTA DA neurons caused real-time place aversion (group effect: F(1,1)=103.33, p=10^-14) and decreased velocity (group effect: F(1,1)=14.35, p<10^-3), with no difference between subregions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 provide in vivo validation of optogenetic efficacy using a well-established behavioral assay. Statistical analysis with 2-factor ANOVA appropriately tests for both group and subregion effects. The lack of subregion difference (interaction p>0.5) indicates both manipulations are comparably effective, validating their use in subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "c8260f2d-8651-4c74-a7eb-7da6549bcae0",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Inhibiting medial VTA DA neurons at tone offset during extinction caused NpHR mice to freeze more to the tone compared to YFP controls (group effect: F(1,62)=7.528, p=0.012), and increased freezing during and after the inhibition period. This demonstrates that medial VTA DA neurons update the value of the preceding tone and modify subsequent behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 provide comprehensive statistical analysis of the behavioral effects with appropriate sample sizes (n=14 NpHR, n=10 YFP). The manipulation specifically at tone offset (when RPE signal occurs) produces effects on subsequent tone presentations, consistent with RPE-mediated learning. Claims C35 and C47 provide appropriate interpretation linking the causal manipulation to learning theory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "5ac62faf-c9be-44f6-8701-bea0ad024173",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Inhibiting lateral VTA DA neurons at tone offset yielded no change in freezing during the tone (group effect: F(1,62)=0.002, p=0.964) but increased freezing after the inhibition period (group effect: F(1,62)=6.981, p=0.019). This suggests lateral VTA affects freezing at timepoints after inhibition rather than updating the value of preceding events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 provide statistical evidence for the differential effect compared to medial VTA (n=8 NpHR, n=8 YFP). The lack of effect on tone freezing but presence of post-inhibition effects distinguishes this from the medial VTA pattern. Claims C38 and C48 provide appropriate interpretation distinguishing immediate behavioral effects from learning-related value updating.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "5571eab1-cc0a-4db1-9d14-e0b2f34476cf",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Inhibiting SNc DA neurons at tone offset did not affect tone freezing but decreased freezing during the inter-trial interval (ITI) (group effect: F(1,62)=4.980, p=0.047), suggesting lateral VTA and SNc inhibition may not have identical consequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 describe a control experiment in SNc (n=7 NpHR, n=6 YFP) that shows a different pattern from lateral VTA. The ITI effect was not observed in lateral VTA, supporting anatomical specificity. Claim C41 appropriately qualifies the conclusion. However, the sample size is relatively small and the effect is modest.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "16b88545-2d7a-408f-a9de-12849b6e6e1a",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Inhibiting lateral VTA DA neurons at tone onset caused NpHR mice to extinguish more slowly (significant group\u00d7tone interaction: F(1,62)=2.217, p<10^-6) and showed decreased ITI freezing (group effect: F(1,62)=6.477, p=0.019). This suggests inhibiting the salience signal at tone onset slows extinction learning over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 provide statistical evidence for effects of tone-onset inhibition (n=12 NpHR, n=10 YFP). The significant interaction term indicates the effect emerges over time, consistent with a learning deficit. Claim C44 synthesizes findings across tone-onset and tone-offset manipulations. The interpretation is reasonable though the authors acknowledge uncertainty about whether this reflects learning vs. expression effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "9b5f8f95-e45b-463d-93ff-ad502c20933b",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Activity in both medial and lateral VTA subregions contributed causally to fear extinction, but the temporal relationship between activity and freezing differed between regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 synthesizes the optogenetic manipulation results (C32-C44). Both regions causally contribute to extinction (both manipulations affect behavior), but medial VTA effects are time-locked to value updating of preceding events while lateral VTA effects are more immediate. This is supported by the differential patterns of behavioral effects across the manipulation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "950f36dc-04b8-4a97-a550-7a5976427018",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The medial/lateral distinction in VTA is supported by prior electrophysiological, anatomical, and functional evidence. However, this distinction may not hold across all behaviors, and different DA subpopulations may share common learning functions despite different neural correlates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 cite appropriate prior literature justifying the experimental design. Claims C64-C65 acknowledge limitations and alternative interpretations. Claims C67-C68 place findings in broader theoretical context. These discussion points appropriately qualify the main findings and acknowledge the complexity of DA neuron function across different behavioral contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    },
+    {
+      "id": "6b46d4f9-cc73-4dc7-980f-105f68f79473",
+      "content_id": "0ad745cd-03c5-481f-94c0-9175f4bc41e8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior work has established that VTA DA neurons are modulated by aversive stimuli and implicated in fear learning, can display spatially segregated representations of multiple variables, and that automated freezing analysis has been limited by inability to separate tether from mouse movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C53, and C57 are literature review statements with extensive appropriate citations. These establish the context and motivation for the current study. The claims accurately represent the state of the field and identify the gap that the current work addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:49:09.515345Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "31d3be55-53aa-467d-8254-0c0a5f6cfad7",
+      "result_id": "1546d702-f697-4171-bf63-9dbd8213a606"
+    },
+    {
+      "claim_id": "c570c3a7-c0ef-466f-8c61-1ac574fc9c8c",
+      "result_id": "1546d702-f697-4171-bf63-9dbd8213a606"
+    },
+    {
+      "claim_id": "e156b977-0ab6-4393-b40b-85120506ed2d",
+      "result_id": "1546d702-f697-4171-bf63-9dbd8213a606"
+    },
+    {
+      "claim_id": "829f0c2f-cec9-480e-bcdd-7f2207804f79",
+      "result_id": "1546d702-f697-4171-bf63-9dbd8213a606"
+    },
+    {
+      "claim_id": "cd046553-a38f-42e4-81d2-52c0f4ca96c4",
+      "result_id": "1546d702-f697-4171-bf63-9dbd8213a606"
+    },
+    {
+      "claim_id": "7e28fe2e-d566-4f75-92d1-60f2d7ecd09d",
+      "result_id": "1546d702-f697-4171-bf63-9dbd8213a606"
+    },
+    {
+      "claim_id": "04f82457-4bb8-4534-b686-d1870db61338",
+      "result_id": "1546d702-f697-4171-bf63-9dbd8213a606"
+    },
+    {
+      "claim_id": "667705ab-5a0f-489d-b58a-8b876bd0671b",
+      "result_id": "ac01b46d-1557-4d2e-a55b-cc7fbb01f1ef"
+    },
+    {
+      "claim_id": "4fc0c7b7-6936-4339-ad28-0f5507a303dd",
+      "result_id": "ac01b46d-1557-4d2e-a55b-cc7fbb01f1ef"
+    },
+    {
+      "claim_id": "75f01348-3fbe-4292-9ab9-95f196e5885d",
+      "result_id": "ac01b46d-1557-4d2e-a55b-cc7fbb01f1ef"
+    },
+    {
+      "claim_id": "e6db08f1-ad28-4980-b86a-e89364a60c87",
+      "result_id": "ac01b46d-1557-4d2e-a55b-cc7fbb01f1ef"
+    },
+    {
+      "claim_id": "5f31a99f-063e-4293-856c-b44cebb3f334",
+      "result_id": "ac01b46d-1557-4d2e-a55b-cc7fbb01f1ef"
+    },
+    {
+      "claim_id": "0958c3e0-0f3b-4265-8cd8-776923902d33",
+      "result_id": "ac01b46d-1557-4d2e-a55b-cc7fbb01f1ef"
+    },
+    {
+      "claim_id": "f76ab45b-8786-414b-a61a-b20e6c06fa97",
+      "result_id": "fa16712d-09b0-4dd5-b118-1d53b26971e1"
+    },
+    {
+      "claim_id": "c3b99f7e-debb-4b89-bd9f-0c6be134dcea",
+      "result_id": "fa16712d-09b0-4dd5-b118-1d53b26971e1"
+    },
+    {
+      "claim_id": "01c16ddc-3975-48b2-9270-8f919f148cea",
+      "result_id": "fa16712d-09b0-4dd5-b118-1d53b26971e1"
+    },
+    {
+      "claim_id": "6f326855-1127-4f69-826b-c7beb278b2e9",
+      "result_id": "fa16712d-09b0-4dd5-b118-1d53b26971e1"
+    },
+    {
+      "claim_id": "edbfba32-11b1-474d-b3d2-673c55daba66",
+      "result_id": "fa16712d-09b0-4dd5-b118-1d53b26971e1"
+    },
+    {
+      "claim_id": "c794824c-0d86-474f-b822-e4986ce38458",
+      "result_id": "fa16712d-09b0-4dd5-b118-1d53b26971e1"
+    },
+    {
+      "claim_id": "4f6b77e3-2554-440d-8377-2f052eafee99",
+      "result_id": "fa16712d-09b0-4dd5-b118-1d53b26971e1"
+    },
+    {
+      "claim_id": "0e2605a1-8ac4-42d3-906f-a01c735f8005",
+      "result_id": "fa16712d-09b0-4dd5-b118-1d53b26971e1"
+    },
+    {
+      "claim_id": "53e60080-74b9-4164-bc8f-3d044881179c",
+      "result_id": "f179b238-efa2-4bfb-a6a4-2bd9cbec0966"
+    },
+    {
+      "claim_id": "345343ea-a6e5-48ef-a7db-430932c3d8bb",
+      "result_id": "f179b238-efa2-4bfb-a6a4-2bd9cbec0966"
+    },
+    {
+      "claim_id": "fb81b3ec-2556-4157-85cd-cce3045da770",
+      "result_id": "f179b238-efa2-4bfb-a6a4-2bd9cbec0966"
+    },
+    {
+      "claim_id": "ccf3082c-c61a-4c6b-96d0-6595905daa35",
+      "result_id": "f179b238-efa2-4bfb-a6a4-2bd9cbec0966"
+    },
+    {
+      "claim_id": "106db502-b440-45ae-afe5-61aa31eca562",
+      "result_id": "f179b238-efa2-4bfb-a6a4-2bd9cbec0966"
+    },
+    {
+      "claim_id": "834d01b1-086a-4508-964e-71153816df44",
+      "result_id": "a87c7503-efbc-4651-a063-dc12456eb1d7"
+    },
+    {
+      "claim_id": "c2e17414-880c-4b30-afad-38a410828815",
+      "result_id": "a87c7503-efbc-4651-a063-dc12456eb1d7"
+    },
+    {
+      "claim_id": "d487f8f6-b039-4035-b4fe-28d2f37783f4",
+      "result_id": "a87c7503-efbc-4651-a063-dc12456eb1d7"
+    },
+    {
+      "claim_id": "805d8f79-fcb5-4f1c-81bf-f487b36de0c4",
+      "result_id": "a93908c4-44aa-4c65-bc3d-d102b636d85c"
+    },
+    {
+      "claim_id": "2628c503-f606-450c-83fa-63c4dd9c2da6",
+      "result_id": "a93908c4-44aa-4c65-bc3d-d102b636d85c"
+    },
+    {
+      "claim_id": "cf6c8c7b-9af6-4040-aa3b-17e0f6f60893",
+      "result_id": "a93908c4-44aa-4c65-bc3d-d102b636d85c"
+    },
+    {
+      "claim_id": "d487f8f6-b039-4035-b4fe-28d2f37783f4",
+      "result_id": "a93908c4-44aa-4c65-bc3d-d102b636d85c"
+    },
+    {
+      "claim_id": "296a90d3-051d-472c-a0dc-674d0672f48c",
+      "result_id": "4ab8f18f-68b8-4714-b18d-938f97631901"
+    },
+    {
+      "claim_id": "76e7732a-29f7-406f-84b6-c51984d8ae8d",
+      "result_id": "4ab8f18f-68b8-4714-b18d-938f97631901"
+    },
+    {
+      "claim_id": "ed537d7e-ba68-43a4-8d20-873133d8cbf5",
+      "result_id": "4ab8f18f-68b8-4714-b18d-938f97631901"
+    },
+    {
+      "claim_id": "2ad0c6ad-33df-49c8-8fe0-ba4d69ad31cd",
+      "result_id": "b1f185a5-2d7b-4999-976a-d8b56e214301"
+    },
+    {
+      "claim_id": "2c39cae3-de08-4fce-b3de-d39df4fd99a6",
+      "result_id": "b1f185a5-2d7b-4999-976a-d8b56e214301"
+    },
+    {
+      "claim_id": "b74f66a2-66af-4bf6-a8da-f2f1fb4cd488",
+      "result_id": "b1f185a5-2d7b-4999-976a-d8b56e214301"
+    },
+    {
+      "claim_id": "489d9ef0-f515-475a-a046-9071246ce99d",
+      "result_id": "b1f185a5-2d7b-4999-976a-d8b56e214301"
+    },
+    {
+      "claim_id": "d1a93a20-063a-4c76-8daa-b55b6add3943",
+      "result_id": "b1f185a5-2d7b-4999-976a-d8b56e214301"
+    },
+    {
+      "claim_id": "3bbe4295-b010-4976-95dd-05ff6da0647d",
+      "result_id": "b1f185a5-2d7b-4999-976a-d8b56e214301"
+    },
+    {
+      "claim_id": "bf821039-870f-4712-b41a-5439075cfd36",
+      "result_id": "71328145-ea89-4045-ac20-96eea9be26aa"
+    },
+    {
+      "claim_id": "c53e058d-ac9f-426c-82e5-7a429fc344e4",
+      "result_id": "71328145-ea89-4045-ac20-96eea9be26aa"
+    },
+    {
+      "claim_id": "a5185c11-1d8d-4d5d-a76d-18407acef1f5",
+      "result_id": "71328145-ea89-4045-ac20-96eea9be26aa"
+    },
+    {
+      "claim_id": "726c6faa-b987-4bcf-a2f5-b7b0f97d3466",
+      "result_id": "d6e493f1-a01f-4cb5-badb-12ef843b0d34"
+    },
+    {
+      "claim_id": "05f74339-964c-46bd-aef9-f367b16d5984",
+      "result_id": "d6e493f1-a01f-4cb5-badb-12ef843b0d34"
+    },
+    {
+      "claim_id": "4da83c8b-c720-496e-944e-eecfe644769e",
+      "result_id": "3d7a4597-a107-4b77-9fa4-bb23b26586c3"
+    },
+    {
+      "claim_id": "8436b7a1-07da-41dc-b8db-77e0179dbf59",
+      "result_id": "3d7a4597-a107-4b77-9fa4-bb23b26586c3"
+    },
+    {
+      "claim_id": "0c27bee6-fb8b-4d6a-84e4-549fe1910b2b",
+      "result_id": "c8260f2d-8651-4c74-a7eb-7da6549bcae0"
+    },
+    {
+      "claim_id": "395d82d5-02f7-4661-a598-0a3742778fa7",
+      "result_id": "c8260f2d-8651-4c74-a7eb-7da6549bcae0"
+    },
+    {
+      "claim_id": "eeb2e3c5-38b0-43c9-a420-8b5e86608c17",
+      "result_id": "c8260f2d-8651-4c74-a7eb-7da6549bcae0"
+    },
+    {
+      "claim_id": "65f7e751-928b-4fe8-99e0-5fe069209511",
+      "result_id": "c8260f2d-8651-4c74-a7eb-7da6549bcae0"
+    },
+    {
+      "claim_id": "446052be-6f09-4a82-be92-1e82b5eae710",
+      "result_id": "c8260f2d-8651-4c74-a7eb-7da6549bcae0"
+    },
+    {
+      "claim_id": "7285cbde-70eb-4f4e-992d-42748435a9b1",
+      "result_id": "5ac62faf-c9be-44f6-8701-bea0ad024173"
+    },
+    {
+      "claim_id": "d0fe93c9-b803-4c9d-a884-4bf830c77344",
+      "result_id": "5ac62faf-c9be-44f6-8701-bea0ad024173"
+    },
+    {
+      "claim_id": "7aa60e47-8a72-4b66-bdce-6d4b64f1f139",
+      "result_id": "5ac62faf-c9be-44f6-8701-bea0ad024173"
+    },
+    {
+      "claim_id": "dcb2ee79-a482-4b28-99ef-351ee714e29a",
+      "result_id": "5ac62faf-c9be-44f6-8701-bea0ad024173"
+    },
+    {
+      "claim_id": "9aa1c069-56be-4dd3-8515-1557af513042",
+      "result_id": "5571eab1-cc0a-4db1-9d14-e0b2f34476cf"
+    },
+    {
+      "claim_id": "5bae6319-0766-44d2-a30e-ec1d8e409167",
+      "result_id": "5571eab1-cc0a-4db1-9d14-e0b2f34476cf"
+    },
+    {
+      "claim_id": "ac925c82-5bd2-4d08-a958-c7de820eff18",
+      "result_id": "5571eab1-cc0a-4db1-9d14-e0b2f34476cf"
+    },
+    {
+      "claim_id": "130f27a2-d128-494e-9188-b884705e1f21",
+      "result_id": "16b88545-2d7a-408f-a9de-12849b6e6e1a"
+    },
+    {
+      "claim_id": "7d2406f6-4851-4547-a25c-5c755c4f85be",
+      "result_id": "16b88545-2d7a-408f-a9de-12849b6e6e1a"
+    },
+    {
+      "claim_id": "7a06a5ff-6926-444d-a912-ca0164489467",
+      "result_id": "16b88545-2d7a-408f-a9de-12849b6e6e1a"
+    },
+    {
+      "claim_id": "037ab6e3-b7f8-4c7e-b76f-196cd97ad1ba",
+      "result_id": "9b5f8f95-e45b-463d-93ff-ad502c20933b"
+    },
+    {
+      "claim_id": "9c671b0e-3ccf-41b2-9433-01a5e4a6cd1b",
+      "result_id": "950f36dc-04b8-4a97-a550-7a5976427018"
+    },
+    {
+      "claim_id": "c81fdc76-f316-4dfd-a05f-dfa25414c0c1",
+      "result_id": "950f36dc-04b8-4a97-a550-7a5976427018"
+    },
+    {
+      "claim_id": "5cc8dee8-2ba8-40c9-b5c5-8c5d7cdaa025",
+      "result_id": "950f36dc-04b8-4a97-a550-7a5976427018"
+    },
+    {
+      "claim_id": "39e0d110-b305-4896-9ecf-cb15b4845444",
+      "result_id": "950f36dc-04b8-4a97-a550-7a5976427018"
+    },
+    {
+      "claim_id": "7b1cb9f4-fbd8-4b77-a3eb-f0f5762964a9",
+      "result_id": "950f36dc-04b8-4a97-a550-7a5976427018"
+    },
+    {
+      "claim_id": "6af63e5c-65a4-4c9d-b038-ca36fdd12155",
+      "result_id": "950f36dc-04b8-4a97-a550-7a5976427018"
+    },
+    {
+      "claim_id": "94b8c9fb-58b5-40b5-a52e-21ea4f822cdf",
+      "result_id": "6b46d4f9-cc73-4dc7-980f-105f68f79473"
+    },
+    {
+      "claim_id": "1c89a7b9-59a1-4a83-b0b0-b91cf544898b",
+      "result_id": "6b46d4f9-cc73-4dc7-980f-105f68f79473"
+    },
+    {
+      "claim_id": "63c28314-9546-4adc-a32e-6c6ef8e4b515",
+      "result_id": "6b46d4f9-cc73-4dc7-980f-105f68f79473"
+    }
+  ],
+  "comparisons": []
+}

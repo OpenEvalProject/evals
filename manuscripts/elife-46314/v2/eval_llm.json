@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C76",
+      "C77",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors developed an improved pAG/MNase fusion protein by adding a 6-His tag for simplified purification and incorporating a Protein G domain to expand antibody compatibility. The construct enables direct use of mouse antibodies without secondary antibodies and yields ~100 \u00b5g of pure, highly active enzyme from 20 ml culture using a commercial cobalt kit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C33 provide converging experimental evidence for the improved construct: the 6-His tag enables simple purification (C23, C91-C92), the Protein A/G hybrid binds both rabbit and mouse antibodies (C26-C31, Figure 1B), and excess fusion protein does not increase background (C25). The construct performs similarly to the original pA/MNase while being easier to purify (C32-C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C78"
+    ],
+    "result": "The authors developed a high-calcium/low-salt digestion protocol (10 mM CaCl2, 3.5 mM HEPES pH 7.5) that prevents premature release of cleaved chromatin fragments during digestion. This modification reduces time-dependent variability, particularly for abundant epitopes like H3K27ac, by preventing pA/MNase-bound complexes from artifactually digesting accessible DNA sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C40-C42, and C44-C45 provide strong experimental support: Figure 2 shows no detectable DNA release without elution under high-calcium conditions (C37), correlation matrices demonstrate improved consistency across time points (C42, Figure 4), and yields increase with digestion time while maintaining high signal-to-noise (C44-C45). The mechanistic explanation based on nucleosome aggregation (C36) is supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C79",
+      "C80",
+      "C95"
+    ],
+    "result": "The authors discovered that E. coli DNA carried over from fusion protein purification correlates nearly perfectly (R\u00b2 = 0.96-0.99) with intentionally added yeast spike-in DNA across multiple experimental conditions. This carry-over DNA can serve as an internal calibration standard, enabling post-hoc normalization of existing CUT&RUN datasets without requiring spike-in addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide strong quantitative evidence with high R\u00b2 values across multiple conditions (Figures 5A-D, Table 1). The correlation is not due to cross-mapping (C59), and the mechanistic explanation involving ConA bead binding (C66-C68) is reasonable. However, the claim that this works for \"nearly all\" past experiments (C65) may be overstated without broader validation across different laboratories and batches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C89"
+    ],
+    "result": "The authors demonstrate that CUT&RUN can profile insoluble chromatin-associated proteins like RNA polymerase II Ser5-phosphate using either supernatant or total DNA extraction, yielding similar genic profiles with both rabbit and mouse antibodies when using pAG/MNase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 establish the precedent for profiling insoluble complexes (supported by citations), C49-C51 provide context about RNAPII properties, and C52 and C89 show experimental validation with similar profiles for both extraction methods (Figure 1B). The data support the technical feasibility of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C34",
+      "C35"
+    ],
+    "result": "The original CUT&RUN protocol is sensitive to digestion time, with under-digestion causing low yield and over-digestion causing premature release of pA/MNase-bound complexes that can digest accessible DNA sites, though performing digestion at 0\u00b0C minimizes this artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 identifies the limitation motivating the high-calcium protocol development. Claims C34-C35 provide mechanistic context supported by citation (C34) and established practice (C35). This limitation is directly addressed by the high-calcium/low-salt protocol results (Result 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C21"
+    ],
+    "result": "The original pA/MNase fusion protein requires cumbersome purification using an IgG column with low pH elution, resulting in batch-to-batch variability and limiting method dissemination due to lack of commercial availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 identify the practical limitations motivating the improved construct, while C20-C21 describe the technical issues with the original purification protocol. These claims establish the rationale for developing the improved pAG/MNase construct with 6-His tag purification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CUT&RUN is an established chromatin profiling method that has been rapidly adopted by >600 laboratories worldwide, with advantages over ChIP-seq including 10-fold lower sequencing depth, near base-pair resolution, low cell number capability, and compatibility with various applications including automation, low cell numbers, plant tissues, and high-throughput profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide background context supported by multiple citations to prior work (C1, C6-C15) and evidence of adoption (C16, C71-C74). All claims are appropriately attributed to prior publications or stated as factual observations. This establishes the foundation and motivation for the current improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The extremely low backgrounds of CUT&RUN necessitated a calibration strategy based on spike-in of heterologous DNA, which has been generally recommended for comparing samples in a series, in contrast to ChIP-seq which uses background levels for calibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 establish the context for the E. coli carry-over discovery by explaining current calibration practices. C53 describes ChIP-seq practice (supported by citation), while C54-C55 explain the CUT&RUN spike-in strategy (also supported by citations). This provides the rationale for Result 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "K562 cells used in the study were purchased from ATCC and tested negative for mycoplasma contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 provide standard methodological quality control information. The cell line source is documented and contamination testing was performed, meeting basic experimental standards.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The high-calcium/low-salt digestion conditions are compatible with direct end-polishing and ligation used for AutoCUT&RUN and could potentially facilitate single-cell applications of CUT&RUN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C38 regarding AutoCUT&RUN compatibility is supported by citation but lacks direct experimental validation in this manuscript. Claim C39 about single-cell applications is explicitly speculative (\"could facilitate\") with no supporting data. These potential applications require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The E. coli carry-over calibration strategy might serve as a more general replacement for conventional spike-ins in other chromatin profiling methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is explicitly speculative (\"might serve\") and extends beyond the CUT&RUN data presented. While C69 notes similar observations in CUT&Tag, broader applicability to other methods requires experimental validation. The generalizability claim is premature without testing in diverse experimental contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Adding antibody before ConA beads leads to increased recovery of yeast and E. coli DNA relative to human DNA, possibly due to loss of digitonin solubilization of membrane sugars causing cell loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 presents an experimental observation from Table 1, but C94 offers only a speculative mechanistic explanation without supporting evidence. The observation is documented but the proposed mechanism requires validation. The practical implication (order of addition matters) is clear, but the underlying cause remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "NPAT is a transcription factor that co-activates histone genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 states established biological knowledge about NPAT function, used to provide context for Figure 1B tracks showing the histone gene cluster. This is general knowledge appropriately applied to interpret the experimental results.",
+    "result_type": "MINOR"
+  }
+]

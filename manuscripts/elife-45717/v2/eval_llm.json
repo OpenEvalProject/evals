@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C9"
+    ],
+    "result": "MN1-GAL4 drives Shal-RNAi expression selectively in MN1 motoneurons, resulting in dramatic reduction of somatically measured IKA current. Wild-type MN1 shows IKA activation at approximately \u221230 mV reaching 20 pA/pF at +40 mV, while Shal-RNAi eliminates substantial current until +20 mV with only small residual outward current above this voltage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C9 provide converging evidence from GAL4 expression patterns (C1), prior validation of the RNAi construct (C2), and direct electrophysiological measurements (C3-C5) demonstrating effective elimination of somatic IKA. The data are supported by both current measurements and comparison to prior characterization of Shal null mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Acute pharmacological block of IKA with 4-AP significantly increases MN1 firing rates and causes depolarization block at high current steps, while chronic Shal knockdown maintains wild-type firing rates without depolarization block, demonstrating cell-autonomous firing rate homeostasis (FRH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 demonstrate a clear differential effect between acute (4-AP) and chronic (Shal-RNAi) elimination of IKA. The acute condition increases firing and causes depolarization block (C10-C12), while chronic knockdown maintains normal firing (C13-C14), with 4-AP specificity confirmed (C15). This provides strong evidence for cell-autonomous FRH (C16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C21"
+    ],
+    "result": "FRH preserves action potential waveform following Shal knockdown. While acute 4-AP application reduces after-hyperpolarization amplitude, chronic Shal elimination maintains wild-type action potential characteristics including repolarization kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C20-C21 demonstrate preservation of AP waveform during FRH. The differential effects of acute versus chronic IKA elimination on AP parameters provide evidence for precise homeostatic compensation. Statistical comparisons support the conclusion that AP waveform is maintained despite loss of a major potassium conductance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A CRISPR-engineered pore-blocking mutation (ShalW362F) eliminates IKA and induces robust FRH comparable to Shal-RNAi. The W362F mutation is a conserved pore-blocking substitution that traffics to the membrane, and ShalW362F mutants show normal firing rates that are insensitive to 4-AP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 establish that FRH can be induced by eliminating Shal conductance without eliminating Shal protein. The pore-blocking mutation is validated by prior work (C22-C23), eliminates IKA (C24), and produces FRH equivalent to protein elimination (C25-C26). This demonstrates FRH can be triggered by loss of channel function (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Shal knockdown induces compensatory increases in IKDR and IKCa currents without altering sodium or calcium currents. The elevated IKCa is primarily Slo-dependent, as demonstrated by virtual elimination in slo mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 document specific ionic conductance changes during FRH. The enhancement of IKDR and IKCa (C29, C34) with no change in INa or ICa (C30) is supported by voltage-clamp data. The Slo-dependence of IKCa is validated by slo mutant controls (C31) and prior transcript analysis (C32), though C33 acknowledges uncertainty about SK channel contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The transcription factor Kr\u00fcppel (Kr) is induced by loss of Shal and is required for FRH. Double knockdown of Shal and Kr significantly decreases firing rates compared to wild-type, while neither single knockdown alone alters baseline firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 establish Kr as essential for FRH. Prior work shows Kr induction by Shal loss (C39-C41), and the current data demonstrate that Kr knockdown in the Shal-RNAi background impairs FRH (C42-C43). Critical controls show no baseline effects of either single knockdown (C44-C46), supporting the conclusion that Kr specifically mediates homeostatic compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Kr controls homeostatic regulation of action potential waveform. While Shal-RNAi alone preserves wild-type AP waveform, double Shal-RNAi/Kr-RNAi significantly alters AP characteristics with reduced after-hyperpolarization and increased half-width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 demonstrate Kr's role in AP waveform homeostasis. The preserved waveform in Shal-RNAi (C47) contrasts with altered waveform in double knockdown (C49-C50), with Kr-RNAi alone having no effect (C48). This supports the conclusion that Kr participates in homeostatic control of both firing rate and AP waveform (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Post-mitotic Kr knockdown does not alter MN1 cell identity, morphology, or major passive electrical properties. Cell number, soma diameter, and dendrite width remain unchanged, though input resistance decreases in Kr-RNAi and double knockdown conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 address the concern that Kr knockdown might alter cell fate. Despite Kr's role in cell fate determination (C52), post-mitotic knockdown preserves cell number and morphology (C53-C54). The decreased input resistance (C55) is noted but does not account for the observed effects on firing rate and AP waveform, supporting the specificity of Kr's homeostatic role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Double Shal-RNAi/Kr-RNAi shows the highest cell-to-cell variability in firing rates, particularly at current steps above 100 pA, though no individual cell fires at rates exceeding wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 provide evidence that Kr loss disrupts homeostatic control rather than establishing a new set point. The increased variability (C56) and constraint on maximal firing rates (C57) suggest impaired homeostasis rather than a shifted set point, though the authors acknowledge uncertainty about defining homeostatic set points.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Kr selectively controls homeostatic enhancement of IKCa without affecting baseline IKCa or calcium currents. Kr knockdown completely blocks the increase in IKCa following Shal loss, representing the first gene demonstrated to have selective action on homeostatic changes without altering baseline channel activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 establish Kr's selective role in IKCa homeostasis. The complete block of IKCa enhancement (C58) with no effect on baseline IKCa (C59) or calcium currents (C60) demonstrates specificity. The conclusion that Kr is the first gene with this selective homeostatic action (C62) is supported by the data, though it relies on the authors' knowledge of the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Kr does not control homeostatic upregulation of IKDR. IKDR remains elevated in double Shal-RNAi/Kr-RNAi similar to Shal-RNAi alone, and Kr knockdown has no effect on baseline IKDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 demonstrate that Kr's homeostatic role is specific to IKCa and does not extend to IKDR. The maintained IKDR elevation in double knockdown (C63) and lack of baseline effect (C65) support this conclusion. Control data showing equivalent IKA knockdown efficiency (C66) rules out technical artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Acute pharmacological inhibition of BK channels with paxilline significantly reduces firing rates in both wild-type and Shal-RNAi neurons, with effects on AP waveform consistent with double Shal-RNAi/Kr-RNAi. Loss of Slo-dependent repolarization leads to broader APs and shallower AHPs, impairing sodium channel recovery and decreasing firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 validate the role of IKCa in maintaining firing rates. Paxilline reduces firing by 34% (C69) compared to 12% with Kr knockdown (C70), consistent with Kr specifically regulating homeostatic IKCa enhancement. The AP waveform effects (C71) and mechanistic interpretation (C72) are supported by the data and known biophysical properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "FRH is differentially achieved in ShalW362F compared to Shal-RNAi. ShalW362F shows upregulated IKDR but no change in IKCa, with no increase in Slo transcript and a small but significant AP broadening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 demonstrate distinct homeostatic mechanisms downstream of different Shal perturbations. The upregulated IKDR (C73) without IKCa change (C74) contrasts with Shal-RNAi. The qPCR data showing no Slo transcript change (C76) versus upregulation in Shal null (C75) supports differential mechanisms. The small AP broadening (C77) is consistent with lack of IKCa compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Gene expression changes differ between Shal null and ShalW362F mutants. While Kr\u00fcppel, Shaker, slo, and Shab transcripts are elevated in Shal null mutants, none show altered expression in ShalW362F. Similarly, KCNQ, Shaw, and Shawl remain unchanged in ShalW362F despite KCNQ upregulation in Shal null.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide molecular evidence for distinct homeostatic responses. The qPCR data demonstrate clear differences in gene expression between Shal null (C79-C80, C83) and ShalW362F (C81-C82), supporting the conclusion that different perturbations to the same gene trigger different homeostatic mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Motor behavior is differentially affected by different Shal perturbations. Wild-type and ShalW362F flies show normal climbing behavior, while pan-neuronal Shal knockdown dramatically impairs climbing. Motoneuron-specific Shal knockdown produces wild-type behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 demonstrate perturbation-specific effects on behavior. The normal behavior in ShalW362F (C84-C85) contrasts with impaired behavior in pan-neuronal Shal-RNAi (C86), with appropriate controls (C87-C88). This supports the conclusion that different homeostatic solutions have different functional consequences, though the underlying mechanisms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Presynaptic homeostatic plasticity (PHP) is differentially affected by Shal perturbations. While Shal null mutants fail to express PHP due to increased Shaker expression blocking ENaC-dependent depolarization, ShalW362F mutants retain normal PHP capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 demonstrate perturbation-specific effects on synaptic plasticity. The prior work showing PHP blockade in Shal null (C89-C91) contrasts with preserved PHP in ShalW362F (C92). The electrophysiological data showing compensatory increase in quantal content support this conclusion, consistent with the lack of Shaker upregulation in ShalW362F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study demonstrates four key advances: (1) FRH can be induced and expressed in single neurons, (2) FRH preserves action potential waveform, (3) Kr\u00fcppel is essential for FRH and selectively controls IKCa enhancement, and (4) different mechanisms of FRH are induced depending on how Shal is eliminated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 summarize the major findings. Each conclusion is supported by the experimental data: single-neuron FRH (C93-C94), AP waveform preservation (C95), Kr's essential role (C96), and perturbation-specific mechanisms (C97). These represent the core contributions of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors propose parallel homeostatic mechanisms responsive to differential Shal disruption. Altered activity cannot be the sole determinant of FRH, homeostatic signaling is sensitive to mutation type, and separable proteostatic and activity-dependent systems may act in concert.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 represent interpretive conclusions and proposed models. While the data support the existence of different homeostatic responses (C99-C100), the proposal of parallel proteostatic and activity-dependent systems (C98, C101) is speculative. The model is consistent with the data but requires additional experimental validation to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The introduction establishes the context for FRH research, noting widespread documentation across systems, precise restoration of firing properties, limited mechanistic understanding, and current theories emphasizing calcium-dependent feedback. Questions remain about whether calcium is the only sensed variable and why homeostatic mechanisms fail in disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 accurately represent the state of the field based on cited literature. These claims establish the rationale for the study and are supported by appropriate citations. They represent background knowledge rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C19"
+    ],
+    "result": "Prior characterization of Shal null mutants and pharmacological tools validates the current experimental approach. The Shal495 null shows a +50 mV voltage shift with remaining current from homeostatic Shaker upregulation in axonal membranes. 4-AP at 1-2 mM has reasonable specificity for IKA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C19 cite prior work to validate experimental approaches. The characterization of Shal null mutants (C6-C7) and Shaker localization (C8) from prior studies support the interpretation of current data. The 4-AP specificity (C19) is appropriately qualified, acknowledging limitations while citing supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C28",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The hypothesis that FRH involves compensatory ion channel gene expression is supported by prior work. Changes in IKDR parallel those in mammalian Kv4.2 knockouts. IKDR can be encoded by four genes in Drosophila, with XE991 showing no differential effect on IKDR in Shal-RNAi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C35-C38 establish the conceptual framework and provide comparative context. The hypothesis (C28) is supported by citations, the parallel to mammalian systems (C35) validates the findings, and the pharmacological test with XE991 (C37-C38) rules out KCNQ as the source of IKDR changes, though the data are not shown.",
+    "result_type": "MINOR"
+  }
+]

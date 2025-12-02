@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Deletion of MYO5 reduces the rate of membrane invagination growth but extends the growth phase, resulting in similar final invagination lengths. Sla1 inward movement speed decreased from 26.2 \u00b1 1.4 nm/s to 17.1 \u00b1 1.4 nm/s in myo5\u0394. Rvs167 recruitment is triggered at a specific invagination depth (~45 nm) rather than at a specific time, and scission occurs when invaginations reach ~150 nm in both WT and myo5\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 provide quantitative measurements from live-cell imaging showing reduced invagination speed in myo5\u0394 (C17, C18), delayed but depth-dependent Rvs167 recruitment (C19-C21), extended accumulation periods (C22), similar peak Rvs167 levels (C23), and similar final invagination depths (C25, C26). The data consistently support that MYO5 deletion slows but does not prevent invagination, with scission triggered by invagination length rather than time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Myo5 is required for efficient actin network growth. Deletion of MYO5 strongly reduced assembly rates for all actin network proteins (Abp1, Cap1, Arc18, Sac6, Act1), but extended accumulation periods by ~30% (except Arc18), resulting in comparable peak amounts for most proteins. Phalloidin staining confirmed a 12% decrease in F-actin at endocytic patches in myo5\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 present consistent quantitative data from live-cell imaging (Figure 2B-D) and phalloidin staining (Figure 2\u2014figure supplement 1) showing that MYO5 deletion reduces actin assembly rates but extends accumulation periods, resulting in near-normal peak levels. The data support that Myo5 stimulates actin network component addition and expansion. Statistical tests are appropriately reported with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Myo3 and Myo5 assemble at endocytic sites with the same timing and location, but Myo5 accumulates to approximately twice the level of Myo3 (77 vs 38 molecules). Myo5 has higher affinity for endocytic sites (59% of total cellular pool vs 34% for Myo3). Deletion of MYO3 does not affect Sla1 dynamics or Myo5 recruitment, and vice versa, indicating no compensatory mechanisms between the paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 provide quantitative measurements from dual-color imaging and molecule counting (Figure 3A-D). The data show differential recruitment levels despite similar timing, and calculations based on published cytoplasmic concentrations support differential affinity (C38-C39). The lack of compensatory recruitment changes is well-documented across multiple genetic backgrounds. Statistical comparisons are appropriately performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Sla1 inward movement speed increases with total myosin levels in a dose-dependent manner. Gene dosage experiments across haploid and diploid strains with varying MYO3 and MYO5 copy numbers demonstrate a strong positive correlation between total myosin molecules at endocytic sites and invagination speed, suggesting myosins control membrane invagination speed via actin network growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 present a comprehensive dose-response analysis using multiple genetic backgrounds (Figure 3E-G). The correlation between myosin levels and invagination speed is quantitatively demonstrated with appropriate statistical tests. The interpretation that myosins control invagination speed is well-supported by the dose-dependent relationship, though the mechanistic link to actin network growth is inferential but reasonable given other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Motor activity of Myo5 is critical for endocytic membrane invagination. The rigor mutant Myo5-G132R completely blocks Sla1 invagination movement despite recruiting ~40 molecules to endocytic sites (approximately half of wild-type levels), indicating that the motor activity rather than just myosin presence is essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present clear data from the rigor mutant experiment (Figure 4). The complete absence of invagination movement despite partial recruitment strongly supports that motor activity is critical. The interpretation is sound, though the reduction in recruitment could contribute to the phenotype. The result is consistent with prior literature on rigor mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C77"
+    ],
+    "result": "The nucleation-promoting factor (NPF) activity of Myo5 is not required for its role in invagination. Deletion of the CA-domain (myo5-CA\u0394) results in normal Act1 levels and Sla1 movement speed, contrasting with the full MYO5 deletion phenotype. This indicates that defects in myo5\u0394 cannot be attributed to decreased NPF activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 and C77 present data from the CA-domain deletion experiment (Figure 5) showing that removal of the NPF-containing domain does not phenocopy the full deletion. The logic is sound: if NPF activity were critical, CA-domain deletion should show similar defects to full deletion. The data clearly distinguish between NPF-dependent and NPF-independent functions of Myo5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C81"
+    ],
+    "result": "Increasing actin nucleation cannot compensate for loss of myosin function. The myo5\u0394 bbc1\u0394 double mutant restores Act1 levels to near-WT but does not rescue invagination speed, showing a combined phenotype of both single deletions. This demonstrates that Myo5 has roles beyond stimulating actin nucleation, specifically promoting actin filament polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 and C81 present a well-designed genetic epistasis experiment (Figure 6). The double mutant analysis effectively separates nucleation from polymerization functions. The data show that restoring actin levels through increased nucleation does not rescue the invagination defect, supporting the conclusion that myosins promote polymerization rather than nucleation. The logic is sound and the interpretation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C76"
+    ],
+    "result": "The actin network in myo5\u0394 is slightly but significantly narrower than in WT, as measured by superresolution microscopy of Abp1, Cap1, and Arc18 outer radii. This finding contradicts the model that myosins prevent actin network splaying over the plasma membrane surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C76 present quantitative superresolution microscopy data (Figure 7) showing reduced outer radii of actin network components in myo5\u0394. The measurements are statistically significant and appropriately analyzed. The interpretation that this contradicts the splaying model is logical, as splaying would increase rather than decrease network width. The result provides important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Myosin activity impacts endocytic membrane morphology. CLEM analysis of myo5\u0394 cells shows productive scission occurs, but invaginations have significantly larger tip diameters (35.5 \u00b1 7.6 nm vs 22.9 \u00b1 5.1 nm in WT, p=0.003). This expansion is present throughout invagination growth and does not correlate with invagination length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 present CLEM data (Figure 8) showing altered membrane morphology in myo5\u0394. The quantitative measurements of tip diameter are statistically significant and appropriately compared to published WT data. The observation that expansion occurs throughout invagination (C61) is supported by the lack of correlation with length. The conclusion that myosin activity impacts membrane morphology is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Endocytic modules show temporal coordination based on invagination state rather than absolute time. Scission is triggered at a specific invagination length (~150 nm) rather than after a set time period. Most endocytic proteins reach similar amounts and positions at scission in both WT and myo5\u0394, but Sla1 disassembly is linked to actin assembly onset rather than scission, resulting in premature coat disassembly in myo5\u0394 that may explain increased tip diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C70-C74 synthesize observations about temporal coordination from multiple protein dynamics measurements. The conclusion that scission is length-dependent rather than time-dependent (C67) is well-supported by Rvs167 recruitment data (C20-C21). The observation about Sla1 disassembly timing (C72-C73) is supported by the data, and the connection to tip diameter (C74) is a reasonable speculation supported by similar observations in sac6\u0394 (C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C7",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Type-I myosins promote actin network growth and expansion in a dose-dependent manner, controlling membrane invagination speed. The authors propose a model where myosins function as 'actin polymerases' by increasing polymerization rates through decreasing load on filament tips, either by pushing filaments inward or rotating them away from the membrane to allow continued elongation under high-load conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3-C4 are well-supported by the dose-dependent data and multiple experimental observations. However, claims C7, C84-C86 represent a proposed mechanistic model that, while consistent with the data, lacks direct experimental validation. The model is speculative and based on inference from indirect evidence. The authors appropriately present this as a 'working model' and 'propose,' but direct evidence for the specific mechanism (load reduction, filament reorientation) is not provided. Additional experiments would be needed to validate the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Myo3 and Myo5 do not compete for binding sites at physiological expression levels. Deletion or overexpression of one paralog generally does not affect recruitment of the other. In MYO5-duplication strains, total myosin recruitment plateaus at ~150 molecules, which may represent the total number of available binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are well-supported by the gene dosage experiments showing lack of compensatory changes. Claim C65 is a quantitative observation from the data. However, claim C66 is speculative ('may reflect') and represents an interpretation rather than a demonstrated fact. The plateau observation is interesting but alternative explanations (e.g., limiting recruitment factors, steric constraints) are not excluded. The speculation is reasonable but should be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The distribution of invagination lengths is not affected by the absence of Myo5, as shown by CLEM analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by data in Figure 8\u2014figure supplement 1. This observation is consistent with the conclusion that myo5\u0394 slows but does not fundamentally alter the invagination process, with similar final depths reached. The result supports the temporal coordination model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on endocytic mechanisms in yeast and metazoan cells, including the role of actin networks, Arp2/3 complex function, and the force generation model. These claims establish the context that actin polymerization provides force via Brownian ratchet mechanisms, though modeling suggests this may be insufficient to counter turgor pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C16 represent established knowledge from the field, appropriately cited to prior work. These provide necessary background context for the study. The citations appear appropriate and the statements accurately represent current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "Background on Myo3 and Myo5 properties, including their functional redundancy, domain structure, biochemical activities, and prior observations about their roles in endocytosis. These claims establish what was known about type-I myosins before the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C103 represent prior knowledge appropriately cited to published literature. The citations appear accurate and provide necessary context for understanding the novelty of the current work. These background claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The absence of Myo5 results in a slowdown of nearly all aspects of endocytic vesicle budding, including actin network assembly and invagination elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is a summary statement well-supported by the comprehensive measurements of multiple endocytic proteins (C17-C31) showing reduced rates across coat, actin, and scission modules. This represents an accurate synthesis of the experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Prior studies showed that deletion of Myo3 and Myo5 CA-domains has no effect on cell growth, endocytic internalization, or actin patch motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 cite prior literature appropriately. These claims provide important context for interpreting the CA-domain deletion results in the current study, supporting that NPF activity is dispensable for myosin function in endocytosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C75",
+      "C82",
+      "C83"
+    ],
+    "result": "Supporting observations from prior literature: RVS167 deletion results in shorter invaginations (C68), similar tip diameter expansion occurs in sac6\u0394 (C75), actin polymerization rates decrease with load (C82), and there is a gap between required and produced forces in yeast endocytosis (C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C75, C82, and C83 appropriately cite prior literature to support interpretations and provide context. These citations appear accurate and relevant to the discussion of results.",
+    "result_type": "MINOR"
+  }
+]

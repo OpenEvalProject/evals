@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6"
+    ],
+    "result": "IFN-\u03b1 pretreatments of different durations lead to opposite effects on transcriptional responses to a second IFN-\u03b1 input: short pretreatments (2-hr or 10-hr) enhance responses (priming), while prolonged pretreatment (24-hr) dramatically decreases responses (desensitization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C6 provide direct experimental evidence from Figure 1E-F showing enhanced PIRF9-YFP reporter induction with 2-hr and 10-hr pretreatments versus dramatic decrease with 24-hr pretreatment. Claim C1 accurately summarizes these duration-dependent opposite effects. The data are internally consistent and statistically significant (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "USP18 is required for desensitization induced by prolonged IFN-\u03b1 pretreatment, acting through a delayed negative feedback loop, while a fast-acting positive feedback loop mediates priming effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 provide strong experimental evidence that USP18 knockdown abolishes desensitization effects while preserving priming effects across all pretreatment durations. Claim C11 shows specificity by demonstrating SOCS1 knockdown does not affect desensitization. The regulatory network architecture (C2) is supported by both experimental data and computational modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "USP18 upregulation can only be initiated during G1/early S phases of the cell cycle, with cells treated during later phases showing extended delays until the next G1 phase, resulting in heterogeneous single-cell induction kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide direct experimental evidence from cell cycle tracking (Figure 4E) showing modest delays when treatment occurs at 0-35% of cell cycle versus extended delays proportional to time until next cycle. Claims C27-C28 provide independent validation using cell cycle synchronization and CDK2/FUCCI reporters (Figure 5A, 5C). The cell-to-cell variability explanation (C26) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Cell cycle gating provides temporal compartmentalization of feedback loops, enabling duration-dependent desensitization: short pretreatments allow only partial USP18 induction with priming dominating, while 24-hr pretreatment (longer than full cell cycle) induces USP18 in most cells regardless of cell cycle stage, causing desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide mechanistic interpretation supported by experimental data showing cell cycle-dependent USP18 induction and computational modeling. The temporal compartmentalization concept (C4, C75) logically integrates the cell cycle gating mechanism with the observed duration-dependent effects. The 24-hr pretreatment exceeding the 21.82-hr cell cycle length (C72) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "IRF9 and USP18 exhibit strikingly different activation kinetics despite being induced by the same JAK-STAT signaling: IRF9 shows fast, uniform induction (mean 7.9\u00b10.2 hrs) while USP18 shows slow, heterogeneous induction (mean 12.2\u00b10.2 hrs) with 16.7% of cells exhibiting prolonged delays >10 hrs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 provide quantitative experimental data from the dual reporter cell line (Figure 4C) with precise measurements of activation times and statistical parameters. The bimodal distribution of USP18 delay times (C22) is directly observed. The striking difference in kinetics (C19) is well-documented with confidence intervals provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Computational modeling suggests an ~8-hour delay in USP18 upregulation is required to reproduce experimental observations, and predicts that repetitive short pulses should produce higher transcriptional responses than sustained input, which was experimentally validated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 shows systematic model fitting identified 8-hr delay as optimal (Figure 3B-C). The model prediction (C16) was experimentally tested and confirmed (C17): 5\u00d78-hr pulses produced higher response than 40-hr sustained input. Claim C18 demonstrates this difference is USP18-dependent, validating the model mechanism. The integration of modeling and experimental validation is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The USP18 promoter contains highly methylated CpG sites, and DNA methylation inhibits USP18 induction, with cell cycle stages potentially impacting USP18 upregulation through modulating promoter methylation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C31 are supported by genome-wide methylation data. Claim C32 shows decitabine reduces USP18 delay times, supporting C33. However, C34 is speculative as the direct link between cell cycle stages and promoter methylation changes at the USP18 locus is not demonstrated. The mechanism remains incompletely characterized despite suggestive evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Computational modeling incorporating cell cycle gating estimates the open window for immediate USP18 induction at 7.3 hrs (~33% of cell cycle), and stochastic simulations show 24-hr pretreatment induces higher USP18 levels leading to reduced IRF9 induction, qualitatively matching experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 provides quantitative estimate from model fitting to experimental delay time distribution (Figure 6B). Claims C36-C37 show stochastic simulations qualitatively reproduce single-cell experimental patterns (Figure 6C-D). The authors acknowledge quantitative limitations but demonstrate the model captures key features. The integration of cell cycle gating into the model is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "USP18-mediated desensitization attenuates the antiviral effect of prolonged IFN-\u03b1 pretreatment, with USP18 knockdown showing ~15-fold greater viral suppression than wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 provides quantitative viral replication data (Figure 2\u2014figure supplement 4) showing dramatic difference between WT and USP18-KD. Claim C13 correctly interprets this as USP18-mediated desensitization attenuating antiviral effects. The functional consequence of the molecular mechanism is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "STAT1 shows rapid nuclear translocation within ~0.5 hr in response to IFN-\u03b1 stimulation, correlating temporally with increased PIRF9-driven transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by time-lapse imaging data (Figure 1B-C) and validated by western blotting (Figure 1\u2014figure supplement 1D). The temporal correlation between STAT1 translocation and transcriptional activity is clearly demonstrated. This establishes the basic response dynamics of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Desensitization in 24-hr pretreatment requires IFN-\u03b1 doses >10 ng/ml, and the desensitization effect decreases as a function of break time between pretreatment and second stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by dose-response experiments (Figure 1\u2014figure supplement 3) and break time experiments (Figure 1\u2014figure supplement 4). These characterize important parameters of the desensitization phenomenon, though they are secondary to the main findings about duration-dependence and mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Heterogeneity in upstream components (STAT1 and IRF9) contributes partially to cell-to-cell variation in USP18 expression levels, but delay times of USP18 upregulation correlate poorly with STAT1 or IRF9 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by single-cell correlation analysis (Figure 4\u2014figure supplement 2). This negative result is important as it rules out upstream heterogeneity as the primary source of USP18 delay variability, motivating the investigation of cell cycle effects. The analysis is appropriate for identifying sources of heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The length of a full cell cycle in the reporter cell line was estimated to be 21.82 hrs based on single-cell time trace measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by direct measurement from time-lapse imaging tracking cell divisions (Figure 2\u2014figure supplement 1). This parameter is essential for interpreting the relationship between pretreatment duration and cell cycle length, and for computational modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Reporter cell lines were constructed using CRISPR/Cas9 to tag STAT1 with mCherry, insert YFP under the IRF9 promoter with P2A spacer, and insert CFP with NLS under the USP18 promoter with P2A spacer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 describe the construction of reporter cell lines validated by PCR, sequencing, FACS, and western blotting (Figure 1A, Figure 1\u2014figure supplement 1, Figure 4A, Figure 4\u2014figure supplement 1). The methodological approach is well-documented and the reporters function as intended based on the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C59",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Background information on IFN-\u03b1 signaling, JAK-STAT pathway components, clinical applications, and prior literature on priming and desensitization effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C38-C52, C59, C63-C69) represent established knowledge from the literature, properly cited. They provide necessary context for the study but do not constitute novel findings. The citations appear appropriate and the background information is accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C60"
+    ],
+    "result": "Individual cells respond to IFNs heterogeneously, traditional population-based assays may not accurately characterize responses, and 100 ng/ml IFN-\u03b1 is a sub-saturating, clinically relevant concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 cite prior literature on single-cell heterogeneity, motivating the single-cell approach. Claim C60 is supported by dose-response data (Figure 1\u2014figure supplement 2) and citation. These provide methodological justification but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The coupled feedback system in the JAK-STAT pathway serves as a timer measuring input duration, representing a new mechanism for delayed gene induction distinct from other known mechanisms like nucleosome occupancy or network topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C78-C80 cite prior work on feedback loops and delay mechanisms. Claims C77 and C81 present the novel conceptual contribution: cell cycle gating as a timer and new delay mechanism. This interpretation is well-supported by the experimental and modeling data, though it represents a conceptual advance rather than a discrete experimental finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Speculative implications include: external conditions affecting cell cycle could modulate IFN responsiveness, cancer stem cell resistance may relate to G0/G1 residence time, G2/M inhibitors may enhance IFN effects, SARS-CoV-2 sensitivity to IFNs suggests therapeutic strategies, and repetitive short IFN administrations or USP18 inhibitors may enhance effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84, C88-C90 are explicitly speculative or cite single studies without direct experimental validation in this work. While these are reasonable hypotheses based on the findings, they represent future directions rather than established results. C88 cites recent literature but C89-C90 are untested predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Other mechanisms contribute to priming (histone H3 methylation) and desensitization (SOCS proteins), and 114 of 278 ISGs examined have >100 CpG sites in their promoters besides USP18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 cite prior literature acknowledging other regulatory mechanisms. Claim C87 presents descriptive data from genome-wide analysis (Figure 5\u2014figure supplement 2A). These provide context but are not central findings of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The coefficients of variation for IRF9 and USP18 activation times are 0.5558 and 0.4429 respectively, and 16.48% of cells show delays >10 hrs (Group 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 provide statistical parameters from experimental data (Figure 4C-D). These quantitative descriptors characterize the heterogeneity observed but are secondary metrics rather than primary findings.",
+    "result_type": "MINOR"
+  }
+]

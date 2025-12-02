@@ -1,0 +1,454 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C98",
+      "C99",
+      "C100",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C72"
+    ],
+    "result": "NeuroQuery is built on a large corpus of 13,459 full-text neuroimaging publications with 418,772 extracted peak activation coordinates and a vocabulary of 7,547 neuroscience terms. This corpus is significantly larger and richer than existing resources like NeuroSynth, containing 20 times more text and over 5 times more term-study associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26-C30, C98-C117, and C72 collectively establish the size and composition of the NeuroQuery dataset with specific quantitative metrics. The comparisons with NeuroSynth are supported by Table 3, and the coordinate extraction quality is validated through manual annotation (Table 2). The claims are internally consistent and provide converging evidence for the dataset's scale and quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C12",
+      "C16",
+      "C17",
+      "C18",
+      "C22",
+      "C23",
+      "C28",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C73",
+      "C74"
+    ],
+    "result": "NeuroQuery uses a multivariate predictive model that combines semantic smoothing via NMF with supervised ridge regression to map arbitrary text queries to brain activation patterns. The model is trained on 13,459 publications using TFIDF features and automatically selects approximately 200 keywords with strong links to brain activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C12, C16-C18, C22-C23, C28, C32-C36, C73-C74 describe the core statistical methodology of NeuroQuery. The approach is clearly documented with mathematical details provided in the Methods section. The two-stage process (semantic smoothing followed by regression) is well-justified and the feature selection procedure is quantitatively described. Figure 3 provides visual illustration of the pipeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "NeuroQuery can accurately predict brain maps for unseen combinations of terms that have never been studied together, achieving a median correlation of 0.85 between predicted maps and meta-analytic maps from left-out studies containing those term combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by systematic experiments on 1,000 randomly chosen term pairs (Figure 4, Figure 9, Figure 10). The quantitative results show only slight decreases in performance for unseen term pairs compared to standard cross-validation, and the median Pearson correlation of 0.85 demonstrates strong generalization. The linear additive model mechanism is clearly explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C76"
+    ],
+    "result": "NeuroQuery requires far fewer examples than existing methods to produce accurate brain maps for rare terms. For many terms, NeuroQuery needs only a dozen examples to produce maps close to full-corpus results, while NeuroSynth typically needs hundreds of examples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 and C76 are supported by systematic subsampling experiments shown in Figure 6. The power law distribution of term frequencies (C50, supported by citation and Figure 16) establishes why this capability is important. The quantitative comparison between NeuroQuery and NeuroSynth convergence rates provides clear evidence for the reduced sample complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "NeuroQuery is a predictive model that generalizes to out-of-sample studies, outperforming GCLDA, ridge regression baselines, and NeuroSynth on encoding prediction tasks. NeuroQuery achieves >72% accuracy in matching publications to their brain maps and shows significantly better log-likelihood of reported coordinates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by 16-fold cross-validation experiments (Figure 7). The quantitative metrics (log-likelihood and pairwise matching) provide clear evidence of predictive performance. The comparison with baselines is appropriate, though the explanation for NeuroSynth's poor performance (C62) is reasonable given its design for single-phrase meta-analysis rather than full-document encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "NeuroQuery predictions closely match reference meta-analytic maps and anatomical atlases, achieving median AUCs of 0.80-0.88 for IBMA maps, 0.98 for Harvard-Oxford atlas regions, and 0.90 for NeuroSynth maps on well-captured terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by systematic comparisons with multiple reference standards (Figures 13-15). The AUC metrics provide quantitative validation against high-quality ground truth. The improvement when reformulating labels (C67) demonstrates the importance of vocabulary matching. The high agreement with anatomical atlases (C68) provides strong validation for anatomical terms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "NeuroQuery addresses the problem of inconsistent terminology in neuroscience by using distributional semantics and co-occurrence statistics rather than expert-built ontologies, providing robustness to terminology variations through continuous semantic links.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C54-C58 are supported by Figure 1 showing consistent maps for related terms, Table 1 demonstrating low vocabulary overlap across ontologies, and the semantic smoothing methodology described in the Methods. The approach is well-justified given the documented limitations of existing ontologies (low coverage and incomplete relations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "NeuroQuery can generate brain maps directly from contrast descriptions without manual study selection, as demonstrated for the IBC dataset contrast 'Read pseudo-words vs. consonant strings', where ALE with only 29 matching studies lacks statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by Figure 2 and Figure 8, which show the NeuroQuery map overlaid on the actual IBC group-level map and compare it to the underpowered ALE result. The demonstration is compelling, though it represents a single case study. The claim about ALE lacking power with 29 studies is reasonable but could benefit from more formal statistical justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C11"
+    ],
+    "result": "Only 30% of terms in neuroscience ontologies or meta-analysis tools are common across resources, and the lack of a universally established vocabulary is a strong impediment to meta-analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C11 are directly supported by Table 1, which quantitatively demonstrates the low overlap between major neuroscience vocabularies. The citation to Poldrack and Yarkoni (2016) provides additional support. The data clearly shows that most pairwise overlaps are well below 30%, with many below 10%.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C117"
+    ],
+    "result": "NeuroQuery's coordinate extraction method is more accurate than NeuroSynth's, reducing false positives by a factor of 7 and false negatives by a factor of 3 based on manual annotation of 40 articles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C117 are supported by Table 2, which presents results from manual annotation of 40 articles where the two extraction methods disagreed. However, the sample size is relatively small (40 articles from a subset where methods disagree), and the authors acknowledge that errors are less likely in articles where both methods agree. The results are suggestive but limited in scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C37",
+      "C38",
+      "C39",
+      "C15"
+    ],
+    "result": "NeuroQuery maps are predictions of likelihood of observation rescaled by standard deviation and reported as Z statistics, but they do not control a voxel-level null hypothesis and have different meaning than ALE, MKDA, or NeuroSynth maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C37-C39, and C15 accurately describe the statistical nature of NeuroQuery outputs and their differences from traditional meta-analysis. This is an important limitation that is clearly stated. The distinction between predictive maps and hypothesis-testing maps is conceptually sound and well-explained in the Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "NeuroQuery is best used as an exploratory tool for hypothesis generation, ROI definition, and literature review rather than for providing conclusive evidence. It is particularly beneficial for rare terms, multi-term concepts, and fully automated queries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 provide appropriate usage recommendations based on the tool's design and limitations. These recommendations are consistent with the statistical properties described in other claims (particularly C38-C39). The guidance is reasonable and helps users understand appropriate applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "NeuroQuery has known failure modes for terms like 'agnosia' and 'ADHD' where predictions are driven by indirect or distant associations, but the interface detects and warns users about unreliable results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 honestly describe specific failure cases with clear examples. The explanation of why these failures occur (terms not well-represented in source data, no closely related terms with strong brain activity links) is reasonable. The warning system in the interface is a good mitigation strategy. This transparent discussion of limitations strengthens the overall work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Working with full text associates many more studies to a query than using abstracts: 2,779 studies for 'color' vs. 236 in NeuroSynth, and 147 for 'huntington' (not in NeuroSynth's vocabulary).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 provides specific quantitative examples of the benefit of using full text. These numbers are consistent with the overall corpus statistics (C112-C114) showing the NeuroQuery corpus contains 5+ times more term-study associations. The examples effectively illustrate the advantage of full-text analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "All extracted coordinates are treated as MNI coordinates even though some articles use Talairach space, which is acceptable because differences between the coordinate systems are at most ~1 cm and comparable to smoothing kernel size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 describe a methodological choice that introduces some imprecision. While the justification that differences are small (~1 cm) and comparable to the smoothing kernel (9 mm FWHM) is reasonable, this is still a source of error. The authors acknowledge this could be improved. The claim about maximum differences being ~1 cm is stated as general knowledge without citation, though it is consistent with the literature (Lancaster et al., 2007 is cited for related context).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "More than 6,000 publications per year contain 'neuroimaging' on PubMed, and individual brain-imaging studies seldom have enough statistical power to establish fully trustworthy results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a verifiable factual statement about PubMed publication counts. Claim C2 is supported by citations to Button et al., 2013 and Poldrack et al., 2017. These claims establish the motivation for meta-analysis but are background context rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C21"
+    ],
+    "result": "NeuroQuery is freely available as an online tool at neuroquery.org, as an open-source Python package, and all resources used to build it are freely available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 and C21 are factual statements about software and data availability that can be verified by visiting the provided URLs. This represents good open science practice and is important for reproducibility and adoption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The additive combination model used by NeuroQuery is standard in functional neuroimaging based on pure insertion of cognitive processes. Meta-analyses have inherent limitations including inability to correct primary literature biases, and reverse inference requires explicit statistical modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 provide important context about the assumptions and limitations of the approach and meta-analysis in general. These are supported by appropriate citations (Ulrich et al., 1999; Poldrack, 2010; Wager et al., 2016; Witt et al., 2008) and represent honest discussion of methodological constraints. C92 describes how NeuroQuery partially addresses baseline confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "GCLDA is the only multivariate meta-analytic model to date, but it produces low spatial resolution maps due to modeling activations as Gaussians and takes several days to train, making it unsuitable for online tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 characterize GCLDA as an important baseline. The statement about it being the only multivariate model (C46) is a strong claim about the field that could be challenged, but is presented as the authors' understanding. The limitations described (C47-C48) are reasonable characterizations based on the model's design and are supported by the performance comparisons in Figures 5-7.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Prior work including Brainmap, NeuroSynth, Nielsen et al. (2004), Poldrack et al. (2012), and Yarkoni et al. (2011) have contributed to automated meta-analysis and topic modeling in neuroimaging, with NeuroQuery differing by using supervised encoding rather than decoding models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 provide appropriate context about related work, all supported by citations. The characterization of prior contributions appears accurate and the distinction between NeuroQuery's encoding approach and Yarkoni et al.'s decoding approach (C81) is clearly explained. This represents good scholarly practice in situating the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "NeuroQuery uses Gaussian Kernel Density Estimation with bandwidth yielding FWHM close to 9 mm, which is in the typical range for fMRI meta-analysis, while NeuroSynth uses a hard ball of 10 mm radius.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe the density estimation methods with appropriate citations (Silverman, 1986; Scott, 2015; Wager et al., 2007; Wager et al., 2004; Turkeltaub et al., 2002). The choice of 9 mm FWHM is justified as being in the typical range. The comparison with NeuroSynth's approach is factual.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The feature selection procedure is based on the observation that informative words have large coefficients for many voxels in ridge regression, automatically selects approximately 200 features, and has very low computational cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 describe the feature selection methodology. The observation in C119 is reasonable and motivates the approach. The outcome of ~200 features (C120) is consistent with C36. The claim about low computational cost (C121) is reasonable given it requires only two ridge regressions, though this is somewhat subjective without detailed timing comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "The NeuroQuery model is not very sensitive to the NMF hyperparameters and obtains similar results for a range of different values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 reports a robustness analysis of the NMF hyperparameters. While the specific values tested and results are not shown in detail, this type of sensitivity analysis is appropriate and the conclusion that the model is robust is stated clearly. More detailed results would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C4",
+      "C8",
+      "C9"
+    ],
+    "result": "Current meta-analysis approaches model all studies as asking the same question. CBMA methods assess consistency by comparing spatial density of coordinates to uniform distribution, and NeuroSynth enables large-scale analyses with excellent statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C8-C9 characterize existing meta-analysis methods. C8 accurately describes CBMA with appropriate citations. C9's characterization of NeuroSynth is supported by citation. C4's claim that current approaches model all studies as asking the same question is a reasonable characterization of traditional meta-analysis that selects studies based on exact term matching, though it could be seen as somewhat oversimplified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Peak coordinates reported in the literature are noisy and incomplete with respect to full activation maps, making prediction scores difficult to interpret.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is a reasonable statement about the limitations of using peak coordinates as ground truth for validation. This is general knowledge in the neuroimaging field and explains why the quantitative validation metrics (Figures 7, 9) should be interpreted with appropriate caution. The claim appropriately tempers interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C7",
+      "C13",
+      "C14",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "NeuroQuery can handle text of arbitrary length, considers terms in a contextually-informed way allowing mutual interactions, produces high-quality maps for infrequently studied concepts, and uses NLP techniques to infer semantic similarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C13-C14, C18-C20 describe capabilities of NeuroQuery that follow from its design. These are supported by the methodology (semantic smoothing + regression) and validated by the experiments on rare terms (Figures 5-6) and unseen combinations (Figure 4). The claims are consistent with the technical approach and empirical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Term co-occurrences are more consistent and reliable than peak activation coordinates and capture semantic relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by citation to Turney and Pantel (2010) and is a well-established principle in natural language processing. This claim justifies the use of co-occurrence statistics for semantic smoothing in NeuroQuery. The principle is sound and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "NeuroQuery grounds meta-analysis in full-text descriptions as a proxy for an idealized ontology. It provides statistical maps for arbitrary queries and enables fully-automated meta-analysis where only semi-manual solutions were previously available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 describe the conceptual approach and contribution of NeuroQuery. These are supported by the demonstrated capabilities (arbitrary text queries, rare terms, unseen combinations) and represent a reasonable characterization of the advancement over existing tools. The claim about enabling automation where manual curation was needed (C97) is supported by examples like Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The NeuroQuery vocabulary is built from multiple ontologies and 12 anatomical atlases. TFIDF representations are simple and efficient for many text classification and retrieval applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 describes the vocabulary construction with reference to Table 1 and Table 4. Claim C108 is general knowledge about TFIDF features in NLP. Both claims are straightforward and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Out of 8,692 articles in the intersection of NeuroSynth and NeuroQuery corpora, extracted coordinates differ in 1,961 articles (23%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 provides a specific quantitative comparison of coordinate extraction between the two systems. This is a factual statement about the overlap analysis and sets up the manual validation study (C104). The 23% disagreement rate is substantial and motivates the quality comparison.",
+    "result_type": "MINOR"
+  }
+]

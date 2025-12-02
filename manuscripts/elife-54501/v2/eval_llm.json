@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "RNA-Seq analysis of sex-separated mice revealed progressive, age-dependent sexually dimorphic expression of three olfactory receptors (Olfr910, Olfr912, and Olfr1295) that are over-represented in female mice by 43 weeks of age. In situ hybridization confirmed that the proportion of OSNs expressing these receptors was significantly greater in 43-week-old female mice compared to males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide converging evidence from RNA-Seq (C1-C6) and in situ hybridization (C7-C8) with appropriate statistical analyses (unpaired two-tailed t-tests, p < 0.0001). The longitudinal design demonstrates progressive enrichment over time, and the use of n=3 biological replicates per condition is adequate for this type of analysis. The correlation between transcript abundance and OSN numbers (C7) is supported by prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "OSNs expressing Olfr910, Olfr912, and Olfr1295 are selectively activated by exposure to mature male mice but not by mature female mice or acetophenone, as demonstrated by elevated pS6 staining intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 describe a well-controlled experiment with appropriate negative controls (female mice, acetophenone, blank cassette) and statistical analysis (one-way ANOVA with Dunnett's correction, p < 0.0001 for male exposure, p > 0.05 for controls). The use of pS6 as an activity marker is established in the literature, and the specificity of the response strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "pS6-IP-Seq identified SBT as a robust agonist for OSNs expressing Olfr910 and Olfr912, and MTMT as a robust agonist for OSNs expressing Olfr1295. These findings were validated by concentration-dependent pS6 immunostaining, with no response to acetophenone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 demonstrate ligand-receptor pairing through two independent methods: pS6-IP-Seq (C14-C17) and in situ hybridization with immunostaining (C18-C20). The concentration-dependent responses (C18-C19) and appropriate negative controls (C20) strengthen the conclusions. Statistical analyses are appropriate (one-way ANOVA with Dunnett's correction), and the lowest FDR values support the claim of robust responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "OSN responses to SBT and MTMT show no sexual dimorphism in mature mice, indicating that the dimorphic representation is not due to differential responsiveness between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by appropriate statistical analysis (one-way ANOVA with Tukey's correction, p > 0.05) comparing male and female responses. This control experiment is important for distinguishing between dimorphic OSN abundance versus dimorphic OSN responsiveness, strengthening the overall mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Long-term cohabitation with the opposite sex (sex-combined housing from 26-43 weeks) severely attenuated the sexually dimorphic expression of Olfr910, Olfr912, and Olfr1295, with sex-separated females showing over-representation while all other groups were comparable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 demonstrate experience-dependent plasticity through both RNA-Seq (C22) and in situ hybridization (C23-C24) with appropriate statistical analyses (one-way ANOVA with Tukey's correction). The experimental design with 17 weeks of sex-combined housing provides sufficient time for the proposed mechanism. However, the claim that this is 'potentially via olfactory experience' (C25) is somewhat speculative, as other aspects of cohabitation could contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "Male-enriched olfactory receptors Olfr1437 and Olfr235 were identified in sex-separated mice, with their dimorphic expression also attenuated by sex-combined housing. These receptors respond to the macrocyclic musk odorant cyclopentadecanone (CPD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 and C31 provide parallel evidence for male-enriched ORs using the same methodological approaches as for female-enriched ORs. The identification of CPD as an agonist (C29) is supported by pS6-IP-Seq data. The inference about musk-related odorants (C31) is reasonable given the CPD data and prior literature on muscone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Single-cell RNA-Seq analysis revealed that OSNs expressing Olfr910, Olfr912, and Olfr1295 segregate together in UMAP space and show enrichment of activity-associated genes (S100a5, Ptprn, Pcp4l1, Nrp1), suggesting that odor experience influences gene expression via activity-dependent processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 leverage published single-cell data (Brann et al., 2020) to support the activity-dependent mechanism. The enrichment of known activity-associated genes (C33-C34) in OSNs expressing the female-enriched ORs is consistent with the hypothesis. However, the inference (C35) relies on the assumption that male mice self-expose to MTMT and SBT, which is reasonable but not directly demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Bax-/- mice fail to generate robust sexual dimorphism in OR expression, with no significant differences in OSN proportions between sex-separated males and females, suggesting that the mechanisms underlying sexual dimorphism are Bax-dependent and likely driven by activity-dependent modulations in OSN lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide genetic evidence for the proposed mechanism using Bax-/- mice. Both RNA-Seq (C36) and in situ hybridization (C37) show loss of dimorphism with appropriate statistical analyses. However, the interpretation (C38) is somewhat limited because Bax deletion causes many changes in OR expression (C64), making it difficult to isolate the specific mechanism. The authors acknowledge this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59"
+    ],
+    "result": "The lengthy timeframes (weeks to months) required to generate sexually dimorphic OSN representations are consistent with activity-dependent modulation of OSN lifespan and employ a distinct time course from fear conditioning-induced plasticity, suggesting multiple mechanisms operating at different time scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 provide temporal analysis supporting the proposed mechanism. The comparison to fear conditioning (C56-C58) with specific data (C58: no significant differences at 9 weeks) strengthens the argument for distinct mechanisms. The speculation about multiple mechanisms (C59) is reasonable given the data, though direct mechanistic evidence is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The specificity of the sexually dimorphic response is demonstrated by the finding that other ORs activated by SBT and MTMT did not exhibit sexual dimorphism, and OSNs expressing Olfr910, Olfr912, or Olfr1295 were not activated by other sex-specific odorants, suggesting a specialized role for these receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 provide important specificity controls demonstrating that the dimorphism is not a general property of all semiochemical-responsive ORs. The systematic screening of multiple odorants (C89-C90) and the lack of dimorphism in other responsive ORs (C88) strengthen the conclusion about specialized roles (C91), though this remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The decrease in OSN abundance following exposure to male-specific semiochemicals in sex-combined females is consistent with prior literature and suggests a homeostatic gain control mechanism for salient cue detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 appropriately cites supporting literature, but the interpretation as a 'gain control' mechanism (C63) is highly speculative. The data show decreased OSN abundance after exposure, but the functional consequences for detectability and the homeostatic nature of the mechanism are not directly tested. Alternative explanations (e.g., adaptation, desensitization) are not adequately addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The lack of sexual dimorphism in Bax-/- mice may result from either the absence of Bax-regulated activity-dependent alteration of OSN lifespan or from expansion of OSNs expressing other ORs due to increased epithelial thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C67 acknowledge important confounds in the Bax-/- experiment. The observation that Bax deletion changes expression of many ORs (C64) and causes epithelial expansion (C66) complicates interpretation. The authors appropriately present alternative explanations (C65, C67), but the data cannot distinguish between these possibilities, limiting the strength of mechanistic conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The mechanism by which OR activity influences OSN gene expression is not specific to the sexually dimorphic ORs, as evidenced by overlap in UMAP space with other OSNs, suggesting a general vectorizable axis of OR activity influencing OSN representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C78 present interesting speculation about general mechanisms, but the evidence is limited. The lack of activity-associated gene enrichment in Olfr1437/Olfr235-expressing OSNs (C73) is consistent with males not generating agonists (C74), but this is indirect evidence. The speculation about a 'vectorizable axis' (C78) and general mechanisms (C76-C77) goes beyond what the data directly support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C96",
+      "C97"
+    ],
+    "result": "The over-representation of Olfr910/Olfr912 in sex-separated females may enhance SBT detection for mediating the Whitten effect, and over-representation of Olfr1295 may enhance MTMT detection for mediating attractive responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 and C96-C97 are explicitly stated as speculation and rely on prior literature linking SBT to the Whitten effect (C48) and MTMT to attractive behaviors (C49). While the ligand-receptor pairings are well-established in this study, the functional behavioral consequences are not tested. These remain plausible hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study used appropriate animal models (C57BL/6J and Bax-/- mice), obtained ethical approval, employed adequate sample sizes (n=3 per condition), and used standard bioinformatics pipelines (STAR, RSEM, EdgeR) with data deposited in public repositories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 describe standard methodological details that are appropriate for the study. The sample size of n=3 biological replicates per condition is adequate for RNA-Seq studies, though larger sample sizes would increase power. The bioinformatics methods are standard and appropriate, and data availability (C105) supports reproducibility.",
+    "result_type": "MINOR"
+  }
+]

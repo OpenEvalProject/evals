@@ -1,0 +1,1897 @@
+{
+  "submission": {
+    "id": "ce8b4ef3-466f-4a02-b77a-d6480df16815",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:59:39.989688Z",
+    "updated_at": "2025-12-02T06:59:39.989688Z"
+  },
+  "content": [
+    {
+      "id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "submission_id": "ce8b4ef3-466f-4a02-b77a-d6480df16815",
+      "content_type": "manuscript",
+      "content_text": "# Plasmodium-specific atypical memory B cells are short-lived activated B cells\n\n## Authors\n\n- Dami\u00e1n P\u00e9rez-Mazliah<sup>1</sup> ([ORCID: 0000-0002-2156-2585](https://orcid.org/0000-0002-2156-2585))\n- Peter J Gardner<sup>2</sup> ([ORCID: 0000-0002-4940-2639](https://orcid.org/0000-0002-4940-2639))\n- Edina Schweighoffer<sup>1</sup>\n- Sarah McLaughlin<sup>1</sup>\n- Caroline Hosking<sup>1</sup>\n- Irene Tumwine<sup>1</sup>\n- Randall S Davis<sup>3</sup> ([ORCID: 0000-0003-1906-8219](https://orcid.org/0000-0003-1906-8219))\n- Alexandre J Potocnik<sup>6</sup> ([ORCID: 0000-0002-4730-8593](https://orcid.org/0000-0002-4730-8593))\n- Victor LJ Tybulewicz<sup>1</sup> ([ORCID: 0000-0003-2439-0798](https://orcid.org/0000-0003-2439-0798))\n- Jean Langhorne<sup>1</sup> ([ORCID: 0000-0002-2257-9733](https://orcid.org/0000-0002-2257-9733)) \u2020\n\n### Affiliations\n\n1. The Francis Crick Institute London United Kingdom\n2. MRC National Institute for Medical Research London United Kingdom\n3. Department of Medicine University of Alabama at Birmingham Birmingham United States\n4. Department of Microbiology University of Alabama at Birmingham Birmingham United States\n5. Department of Biochemistry and Molecular Genetics University of Alabama at Birmingham Birmingham United States\n6. School of Biological Sciences The University of Edinburgh Edinburgh United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nA subset of atypical memory B cells accumulates in malaria and several infections, autoimmune disorders and aging in both humans and mice. It has been suggested these cells are exhausted long-lived memory B cells, and their accumulation may contribute to poor acquisition of long-lasting immunity to certain chronic infections, such as malaria and HIV. Here, we generated an immunoglobulin heavy chain knock-in mouse with a BCR that recognizes MSP1 of the rodent malaria parasite, Plasmodium chabaudi. In combination with a mosquito-initiated P. chabaudi infection, we show that Plasmodium-specific atypical memory B cells are short-lived and disappear upon natural resolution of chronic infection. These cells show features of activation, proliferation, DNA replication, and plasmablasts. Our data demonstrate that Plasmodium-specific atypical memory B cells are not a subset of long-lived memory B cells, but rather short-lived activated cells, and part of a physiologic ongoing B-cell response.\n\n## Introduction\n\nAtypical memory B cells (AMB) are an unusual B-cell subset detected in both mouse models and humans in the context of certain infections and autoimmune disorders, including HIV, HCV, tuberculosis, malaria, rheumatoid arthritis and systemic lupus erythematosus, and accumulated with age (Knox et al., 2017b; Naradikian et al., 2016a; Portugal et al., 2017; Rubtsov et al., 2017). In the context of infections, AMB were first described in HIV-viremic subjects, and termed tissue-like memory B cells, due to their similarity to an FCRL4-expressing memory B-cell subset found in human tonsillar tissues (Ehrhardt et al., 2005; Moir et al., 2008). In addition to FCRL4, these cells express relatively high levels of other potentially inhibitory receptors including CD22, CD85j, CD85k, LAIR-1, CD72, and PD-1, and show a profile of trafficking receptors including expression of CD11b, CD11c and CXCR3, consistent with migration to inflamed tissues. They are antigen-experienced class-switched B cells, which lack the expression of CD21 and the hallmark human memory B-cell marker CD27. Further studies demonstrated the expression of the transcription factor T-bet and the cytokine IFN\u03b3 by these cells, also characteristic of Th1 CD4+ T cells (Knox et al., 2017b; Obeng-Adjei et al., 2017; Portugal et al., 2017). Due to their poor functional capacity upon in vitro re-stimulation with BCR ligands, AMB were characterized as dysfunctional B cells, and increased frequencies of these cells was proposed to be a consequence of B-cell exhaustion driven by chronic inflammation and stimulation, drawing parallels with T-cell exhaustion during chronic viral infections (Moir et al., 2008; Portugal et al., 2015; Sullivan et al., 2015). It has been hypothesized that expansion of AMB might contribute to the mechanisms driving autoimmune disorders and deficiencies in acquisition of immunity to chronic infections. However, due to lack of good tools and animal models to analyze antigen-specific atypical B cells in greater depth, many of these concepts remain speculative.\n\nSeveral studies suggest that AMB might contribute to poor acquisition of long-term immunity to Plasmodium infection (Illingworth et al., 2013; Portugal et al., 2015; Sullivan et al., 2015; Sullivan et al., 2016; Weiss et al., 2011; Weiss et al., 2009; Weiss et al., 2010). Indeed, some studies demonstrated that in the absence of constant re-exposure, Plasmodium-specific serum antibody levels rapidly wane, and full protection from clinical symptoms is lost, suggesting that B-cell memory is functionally impaired (Portugal et al., 2013). However, others have reported long-lasting maintenance of Plasmodium-specific antibodies and/or memory B cells in settings of differing malaria endemicity, and similar responses are also observed in mouse malaria models (Dorfman et al., 2005; Ndungu et al., 2009; Ndungu et al., 2013; Ndungu et al., 2012; Wipasa et al., 2010). Moreover, it has been shown that BCRs cloned from P. falciparum-specific AMB from malaria-exposed adults encode P. falciparum-specific IgG antibodies, which could contribute to P. falciparum-specific IgG antibodies in serum (Muellenbeck et al., 2013). These authors proposed that P. falciparum-specific AMB do not prevent, but rather contribute to the control of Plasmodium infection. These apparently contradictory results may reflect the fact that some studies were performed on the general peripheral blood B-cell pool and others focused on Plasmodium-specific B cells. In determining a role for these cells in a chronic infection it would be important to follow antigen-specific responses and to distinguish these from non-specific polyclonal B cell activation.\n\nThe study of the development of AMB is challenging and requires suitable mouse models, which allow for identification and isolation of antigen-specific B cells that exist often at very low frequency. Here, we generated a knock-in transgenic mouse with a high frequency of B cells specific to the 21 kDa C-terminal fragment of Plasmodium chabaudi Merozoite Surface Protein 1 (MSP121), to investigate memory B cells generated following mosquito-transmission of the rodent malaria, P. chabaudi. We identified a CD11b+CD11c+FCRL5hi subset of MSP121-specific B cells during the chronic infection with phenotypical and transcriptional features strikingly similar to those of human AMB. These AMB disappeared as the infection progressed, leaving a CD11b\u2014CD11c\u2014FCRL5hi MSP121-specific B-cell compartment with characteristics of long-lived classical memory B cells (Bmem) after the resolution of the infection. These short-lived MSP121-specific AMB were also generated in response to immunization, suggesting they may be a normal but transient component of a B-cell response to antigen. In this chronic P. chabaudi infection, it appears that AMB require ongoing antigenic stimulation driven by the sub-patent infection to persist, and do not represent a true long-lived \u2018memory\u2019 B cell subset. Moreover, we show that generation of Plasmodium-specific AMB does not prevent the generation of Plasmodium-specific Bmem, and does not prevent resolution of the infection.\n\n## Results\n\n### Generation of an immunoglobulin heavy chain knock-in transgenic mouse model to study Plasmodium-specific B cell responses\n\nTo study Plasmodium-specific B cell responses in a rodent malaria model, we generated an IghNIMP23/+ mouse strain on the C57BL/6J background (Materials and methods and Figure 1\u2014figure supplement 1).\n\nThe IghNIMP23/+ mice were healthy, with no unusual behavioral or physical characteristics. There were no alterations in total cellularity, pro-B, pre-B, immature B, mature B, total B220+CD19+ B cells,\u00a0and plasma cells in the bone marrow (Figure 1A\u2013B), and no alterations in number of T1, T2, T3, follicular, marginal zone, germinal center B cells, plasmablasts, plasma cells,\u00a0and total cellularity in the spleen of IghNIMP23/+ mice (Figure 1C\u2013D) (Sen et al., 1990; Young et al., 1994). Importantly, The IghNIMP23/+ mice had a greatly increased frequency of B cells specific for MSP121 (approximately 60% of the total B-cell compartment), as demonstrated by flow cytometry analysis of splenocytes with a MSP121 fluorescent probe consisting of biotinylated recombinant MSP121 loaded on streptavidin-PE (Figure 1E\u2013F). Thus, in this model, a recombinant light chain is not required to bring about specificity. This suggest that most endogenous light chains will pair with the NIMP23 heavy chain to generate a BCR with detectable binding to MSP121.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig1-v2.jpg)\n\n**Figure 1.:** (A) Flow cytometry gating strategy to identify different B-cell populations in bone marrow of IghNIMP23/+ mice. Arrows indicate flow of analysis. The same strategy was used for Igh+/+ littermates. (B) Percentages and numbers of different B-cell populations in bone marrow of IghNIMP23/+ and Igh+/+ littermates as defined in (A). (C) Flow cytometry gating strategy to identify different B-cell populations in spleen of IghNIMP23/+ mice. (D) Percentages and numbers of different B-cell populations in spleen of IghNIMP23/+ and Igh+/+ littermates as defined in (C). Data are representative of two independent experiments with four mice per group. (E) Flow cytometry analysis of B cells obtained from spleen of Igh+/+ (left) and IghNIMP23/+ (right) mice stained with anti-B220 and CD19 antibodies in combination with an MSP121 fluorescent probe. The gates show the frequency of B cells specific to MSP121. (F) Frequencies of MSP121-specific splenic B cells in IghNIMP23/+ and wild-type Igh+/+ littermate controls (Mann Whitney U test). Data pooled from two independent experiments with 3\u20135 mice per group. Mann Whitney U test.\u00a0*p<0.05.\u00a0Error bars are SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Annotated DNA and corresponding amino acid sequence of VDJHNIMP23 obtained from (A) gDNA including the Leader-V intron and (B) cDNA, of the NIMP23 hybridoma: start Methionine (Met) indicated by red star, intron splice donor and acceptor sites highlighted in red, dots indicate STOP codons, black bars indicate predicted complementarity determining regions according to the Kabat database (Johnson and Wu, 2001) (C) IMGT/V-Quest mouse Ig database (Lefranc et al., 1999) comparative analysis result summary of the gDNA derived VDJHNIMP23 sequence reveals the identity of the closest matching endogenous V and J genes (D) Schematic representation of (Igh+) Endogenous IgH locus showing the 4 JH segments, the DQ52 element, the Igh intronic enhancer (EH), the switch region for the constant \u00b5 gene (S), and (below) targeting construct indicating 5\u2019 and 3\u2019 homology arms and the inverted loxP-neor-loxP cassette and rearranged VDJHNIMP23 variable heavy chain region gene of the NIMP23 hybridoma, replacing DQ52 and all four JH segments of the endogenous IgH gene. IghNIMP23neo: Targeted Igh locus after homologous recombination. IghNIMP23: Final allele after Cre-mediated removal of neor.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Experimental strategy to generate mixed bone marrow chimeric mice. (B) Numbers of different splenic B-cell populations defined by flow cytometry in Rag2-/-.C57BL/6.SJL-Ptprca mice reconstituted with a mixture of IghNIMP23/+ and C57BL/6.SJL-Ptprca bone marrow in a 10:90 ratio (NIMP23\u2192 Rag2-/-), and control mice reconstituted with C57BL/6.SJL-Ptprca bone marrow (WT\u2192 Rag2-/-). Mann Whitney U test. Error bars are SEM. Data are representative of two independent experiments with five mice per group. (C) Flow cytometry of B cells obtained from different tissues of NIMP23\u2192Rag2-/- chimeric mice. Gates show frequencies of CD45.1+CD45.2- and CD45.1-CD45.2+ (D) Flow cytometry of B cells obtained from spleen of NIMP23\u2192Rag2-/- and WT\u2192Rag2-/- control chimeric mice. Gates show frequencies of MSP121-specific B cells as determined by CD45.2 vs MSP121 staining. (E) Frequencies of CD45.1-CD45.2+ (black) and CD45.2+MSP121+ (grey) B cells as gated in C and D, obtained from different organs of NIMP23\u2192Rag2-/- chimeric mice. (F) Blood-stage P. chabaudi parasitemia following mosquito transmission in NIMP23\u2192Rag2-/- and WT\u2192Rag2-/- control chimeric mice. (G) Flow cytometry data showing frequencies of MSP121-specific GC (CD38loGL-7hi) and class-switched (IgD\u2014IgG2bhi) B cells in the spleen of NIMP23\u2192Rag2-/- chimeric mice before infection (day 0) and at day 35 post-mosquito transmitted P. chabaudi infection. (H) Numbers of MSP121-specific B cells, GC and class-switched B cells in the spleen of NIMP23\u2192Rag2-/- chimeric mice as gated in B and E. Mann Whitney U test. Error bars are SEM. Data representative of two independent experiments with 3\u20137 mice per group.\n\n### Increase in Plasmodium-specific B cells after mosquito transmission of P. chabaudi\n\nTo investigate B cells in P. chabaudi infections, which last several weeks, and to avoid potential problems with activation arising from very high frequencies of MSP1-specific B cells, we reduced the precursor frequency of MSP121-specific B cells to match the natural level expected for antigen-specific B cells more closely, yet still readily detectable by flow cytometry. We generated mixed bone marrow (BM) chimeras by adoptively transferring a mixture of 10% bone marrow from either IghNIMP23/+ or Igh+/+ mice (CD45.2+) together with 90% bone marrow from C57BL/6.SJL-Ptprca mice (CD45.1+) into sub-lethally irradiated Rag2-/-.C57BL/6.SJL-Ptprca mice (CD45.1+) to generate NIMP23\u2192Rag2-/- and WT\u2192Rag2-/- bone marrow chimeric mice respectively (Figure 1\u2014figure supplement 2A\u2013B). In both types of chimeras, 2\u20133% of the B cells were CD45.2+ and in NIMP23\u2192Rag2-/- mice approximately 1\u20132% of the B cells were MSP121-specific (Figure 1\u2014figure supplement 2C\u2013E). No MSP121-specific B cells were detected in the control WT\u2192Rag2-/- chimeras (Figure 1\u2014figure supplement 2D).\n\nInfection of C57BL/6J wt mice with P. chabaudi by mosquito bite gives rise to a short (48 hr) pre-erythrocytic infection, followed by an acute blood parasitemia peaking approximately 10d post-transmission. Thereafter, the infection is rapidly controlled, reaching very low parasitemias by 15d post-transmission, with a subsequent prolonged (~90 d), but low-level chronic infection before parasite elimination (Brugat et al., 2017; Spence et al., 2013). NIMP23\u2192Rag2-/- mice infected with P. chabaudi by mosquito bite, showed a similar course of parasitemia to that of control WT\u2192Rag2-/- mice (Figure 1\u2014figure supplement 2F), and C57BL/6J wt mice (Brugat et al., 2017; Spence et al., 2013; Spence et al., 2012). Importantly, the MSP121-specific IghNIMP23/+ B cells (CD45.2+MSP121+) in NIMP23\u2192Rag2-/- chimeras showed a robust response to the infection, as demonstrated by a dramatic increase in the proportions and numbers of GL-7+CD38lo germinal centers (GC) and IgG2b+IgD\u2014 class-switched B cells in the spleen at 35 days post-infection (dpi) (Figure 1\u2014figure supplement 2G\u2013H).\n\nThus, we have generated a mouse model with detectable numbers of functional MSP121-specific B cells capable of responding to P. chabaudi infection.\n\n### Generation of Plasmodium-specific AMB after mosquito transmission of P. chabaudi infection\n\nWe investigated whether Plasmodium-specific AMB could be identified in mice during a blood-stage P. chabaudi infection. We selected a series of mouse homologues to human cell surface markers described on human AMB (Charles et al., 2011; Kardava et al., 2014; Kardava et al., 2011; Knox et al., 2017a; Li et al., 2016; Moir et al., 2008; Muellenbeck et al., 2013; Portugal et al., 2015; Russell Knode et al., 2017; Sullivan et al., 2015). Human AMB express CD11b, CD11c, Fc receptor-like (FCRL) 3\u20135, high levels of CD80, low levels of CD21, and are Ig class-switched. Mouse FCRL5 most closely resembles human FCRL3 and is the only mouse FCRL-family member which contains both ITIM and ITAM motifs in its cytoplasmic tail (Davis, 2007; Davis et al., 2004; Won et al., 2006; Zhu et al., 2013). Therefore, our flow cytometry panel for mouse AMB included antibodies against CD11b, CD11c, FCRL5, CD21, IgD, and also CD80 and CD273 which identify mouse B cells that are antigen-experienced and potentially memory cells (Anderson et al., 2007; Tomayko et al., 2010; Zuccarino-Catania et al., 2014).\n\nWe detected an increased number of cells in a distinct CD11b+CD11c+ MSP121-specific B-cell subset at 28-35dpi, in the chronic phase of P. chabaudi infection (Figure 2A\u2013B). This subset showed several AMB characteristics, including high expression of FCRL5 and low expression of CD21 and IgD (Figure 2C\u2013E). In addition, the CD11b+CD11c+ MSP121-specific B-cell subset was enriched with cells expressing CD80 and CD273 (Figure 2C\u2013E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig2-v2.jpg)\n\n**Figure 2.:** (A) Flow cytometry showing differential expression of CD11b and CD11c on splenic MSP121-specific B cells from NIMP23\u2192Rag2-/- chimeric mice before infection (day 0) and at 35 and 155dpi. (B) Numbers of splenic MSP121-specific CD11b+CD11c+ AMB from NIMP23\u2192Rag2-/- during the course of mosquito transmitted P. chabaudi infection. Kruskal-Wallis test vs day 0. ****, p<0.0001 (C) Flow cytometry showing expression of CD21/35, FCRL5, IgD, CD273 and CD80 on different subsets of splenic MSP121-specific B cells from NIMP23\u2192Rag2-/- chimeric mice defined based on CD11b and CD11c expression at 35dpi. (D) Geometric mean fluorescence intensity (MFI) of CD21/35, FCRL5, IgD, CD273 and CD80 expression on different subsets of splenic MSP121-specific B cells from NIMP23\u2192Rag2-/- chimeric mice defined based on CD11b and CD11c expression at 35dpi. (E) Frequencies of CD21/35, FCRL5, IgD, CD273 and CD80 positive cells among different subsets of splenic MSP121-specific B cells from NIMP23\u2192Rag2-/- chimeric mice defined based on CD11b and CD11c expression at 35dpi. Two-way ANOVA vs CD11b-CD11c- subset. *p<0.05; **p<0.01, ***p<0.001; ****p<0.0001. Error bars are SEM. Data pooled from three independent experiments with 3\u20135 mice per group.\n\nWe then explored whether this CD11b+CD11c+ MSP121-specific B cell subset was detected during the memory phase,that\u00a0is after resolution of the infection. As it takes up to 90 days for a blood-stage P. chabaudi infection to be eliminated from C57BL/6J mice (Achtman et al., 2007; Spence et al., 2013), we measured these responses from 155dpi onwards. Unexpectedly, the numbers of CD11b+CD11c+ MSP121-specific B cells were not significantly higher than background level (Figure 2A\u2013B).\n\nThese data demonstrate that a mosquito-borne infection with P. chabaudi generates Plasmodium-specific B cells resembling human AMB. However, these cells do not persist and are not detected above background level after parasite clearance.\n\n### Transcriptome analysis confirms the AMB nature of CD11b+CD11c+ MSP121-specific B cells, and reveals a plasmablast-like signature for this subset\n\nTo gain a better understanding of the identity of the CD11b+CD11c+ Plasmodium-specific B cell subset, we isolated both CD11b+CD11c+ and CD11b-CD11c- MSP121-specific B cells from spleens of P. chabaudi-infected NIMP23\u2192Rag2-/- mice (35dpi) (Figure 3\u2014figure supplement 1), and MSP121-specific B cells from the spleen of na\u00efve NIMP23\u2192Rag2-/- mice (Figure 2A), by flow cytometric sorting, and performed an mRNAseq transcriptional analysis on the three populations.\n\nWe then selected a large series of key genes previously shown to be either up or downregulated on human AMB (Supplementary file 1), and explored the expression of their mouse homologues on the three different B-cell subsets we sorted at day 35pi. The transcriptome of CD11b+CD11c+ MSP121-specific B cells highly resembled that of human AMB. A series of hallmark genes upregulated in human AMB were also upregulated in CD11b+CD11c+ MSP121-specific B cells, including IgG (Ighg2c and Ighg2b), Cxcr3, Tbx21 (T-bet), Lair1 and Fcrl5 (Figure 3, genes in red boxes, and references in Supplementary file 1). In addition, the MSP121-specific CD11b+CD11c+ B-cell subset showed upregulation of Ifng, Aicda, a large array of inhibitory receptors [including Pd1, Cd72, Cd85k, Fcgr2b (CD32b), Siglece], antigen-experienced/memory markers [Cd80, Cd86, Nt5e (CD73) and high Cd38], and additional class-switched immunoglobulins (i.e. Igha, Ighg1 and Ighg3), all of which have been shown to be upregulated on human AMB (Figure 3C\u2013G, references in Supplementary file 1). These cells also expressed Galectins (Lgals1 and Lgals3), previously implicated in B-cell anergy (Clark et al., 2007) (Figure 3H), and displayed a pro-apoptotic program (e.g. high expression of Fasl, and low expression of Bcl2) (Figure 3I). Interestingly, in agreement with data on human AMB, MSP121-specific CD11b+CD11c+ B cells showed upregulation of Mki67 (Figure 3J), indicative of proliferation, and had characteristics of plasmablasts and/or plasma cells, including upregulation of Cd138, Prdm1 (Blimp1) and Xbp1, and low expression of Cxcr5, Pax5, and Bcl6 (Figure 3B and K). However, these cells showed low expression of Irf4 and S1p1, suggesting that they may be in a pre-plasmablast or pre-migratory plasma-cell stage (Kabashima et al., 2006; Kallies et al., 2007) (Figure 3K). Finally, and similar to human AMB, CD11b+CD11c+ MSP121-specific B cells showed low expression of Cd40, Cr2 (CD21), Ms4a1 (CD20), and Cd24a (Figure 3L).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig3-v2.jpg)\n\n**Figure 3.:** MSP121-specific CD11b+CD11c+ (AMB) and CD11b\u2014CD11c\u2014 B cells were flow cytometry sorted from the spleen of NIMP23\u2192Rag2-/- chimeric mice at 35dpi; MSP121-specific B cells were flow cytometry sorted from the spleen of na\u00efve NIMP23\u2192Rag2-/-, and these three B cell populations were submitted to mRNAseq analysis. The heat maps display level of expression of selected individual genes, organized in functional clusters related to (A) Fc receptor like molecules, (B) cell trafficking, (C) cytokines, (D) transcription factors, (E) inhibitory receptors, (F) antigen experience/memory, (G) immunoglobulins, (H) galectins, (I) apoptosis, (J) proliferation, (K) plasma cells/plasmablasts/germinal centers, (L) surface markers. Each column corresponds to data from an individual mouse (n\u00a0=\u00a05 35 dpi, n\u00a0=\u00a05 0 dpi).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig3-figsupp2-v2.jpg)\n\nWe ran a Gene Set Enrichment Analysis (GSEA) (Subramanian et al., 2005) with a gene list ranked according to their differential expression between MSP121-specific CD11b+CD11c+ AMB sorted from infected mice and MSP121-specific B cells sorted from na\u00efve mice, using gene sets a priori obtained from Reactome (Fabregat et al., 2018). Among the gene sets yielding the top 50 significant (fdr\u00a0<0.001) highest normalized enrichment score (NES) we obtained gene sets corresponding to cell cycle, DNA replication, generation/consumption of energy, regulation of apoptosis, activation of NF-\u03baB on B cells, and downstream signaling events of the BCR (Supplementary file 2 and Figure 3\u2014figure supplement 2). These data further corroborate the activated and proliferative nature of MSP121-specific CD11b+CD11c+ AMB.\n\nTaken together, these data demonstrate that CD11b+CD11c+ MSP121-specific mouse AMB present during the chronic phase of P. chabaudi infection are very similar to human AMB described in several chronic infections. In addition, this B-cell subset shows features of activation, proliferation, DNA replication and plasmablasts, resembling previous observations in human AMB (Muellenbeck et al., 2013).\n\n### Generation of Plasmodium-specific AMB in response to immunization\n\nThe occurrence of CD11b+CD11c+ AMB might be a consequence of aberrant B-cell activation driven exclusively by certain pathogens. Alternatively, they might be part of a normal B-cell response, which is exacerbated by the persistent nature of certain infections. To test whether CD11b+CD11c+FCRL5+ AMB could be generated in the absence of persistent infection, we immunized mice with MSP121. A previous report had demonstrated the presence of CD11b+CD11c+Tbet+ B-cells 24 hr post-immunization with R848, a TLR7/8 ligand (Rubtsova et al., 2013). Therefore, we immunized IghNIMP23/+ mice with R848 together with the antigen MSP121 and looked for the appearance of MSP121-specific CD11b+CD11c+FCRL5+ atypical B cells. We observed substantial numbers of MSP121-specific CD11b+CD11c+ B cells in the spleens of IghNIMP23/+ mice 24 hr post-immunization (Figure 4A). These cells expressed increased levels of both FCRL5 and CD80 (Figure 4B\u2013C) and did not display GC characteristics (Figure 4D), similar to the MSP121-specific CD11b+CD11c+FCRL5+ atypical B cells generated following Plasmodium infection. The MSP121-specific CD11b+CD11c+ B cells observed after immunization appeared only transiently, as they could no longer be detected at 3 and 7d post-immunization (Figure 4A and E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig4-v2.jpg)\n\n**Figure 4.:** (A) Flow cytometry showing differential expression of CD11b and CD11c on splenic MSP121-specific B cells from IghNIMP23/+ mice before immunization (day 0) and at days 1 and 3 post-immunization with R848 and MSP121.\u00a0(B) Flow cytometry showing expression of FCRL5 and CD80 on different subsets of splenic MSP121-specific B cells from IghNIMP23/+ defined based on CD11b and CD11c expression at day one post-immunization and na\u00efve mice. (C) Geometric MFI of FCRL5 and CD80 expression on different subsets of splenic MSP121-specific B cells from IghNIMP23/+ defined based on CD11b and CD11c expression at day one post-immunization. Two-way ANOVA vs CD11b\u2014CD11c\u2014 subset. ****p<0.0001. (D) Flow cytometry of CD38 vs GL-7 (GC markers) on CD11b+CD11c+ MSP121-specific B cells from IghNIMP23/+ at day one post-immunization. (E) Numbers of splenic CD11b+CD11c+ MSP121-specific B cells from IghNIMP23/+ during the course of immunization. Kruskal-Wallis test compared to day 0. **p<0.01. Error bars are SEM. Data pooled from three independent experiments with 3\u20135 mice per group.\n\nThese data demonstrate that MSP121-specific CD11b+CD11c+ AMB with no functional characteristics of memory B cells can be generated independently of the infection and the presence of the pathogen, and that they are short-lived cells.\n\n### Plasmodium-specific CD80+CD273+ Bmem are generated and persist after resolution of P. chabaudi infection\n\nIdentification of mouse Bmem by flow cytometry originally relied on detecting B cells that had undergone Ig class-switching from IgM to IgG, and that did not express GC markers (i.e. IgG+CD38hiGL-7lo) (Lalor et al., 1992; Ridderstad and Tarlinton, 1998). More recently, this set of markers has been extended to include CD80, CD273 (PD-L2) and CD73, with CD273 and CD80 being the most useful to discriminate memory from na\u00efve B cells (Tomayko et al., 2010; Zuccarino-Catania et al., 2014). In combination, these markers allow the identification of different subsets of switched as well as non-class switched (i.e. IgM/D+) Bmem. Therefore, we used cell surface expression of CD80 and CD273 on MSP121-specific B cells to identify Bmem during and after resolution of P. chabaudi infection.\n\nMSP121-specific B cells from spleens of na\u00efve NIMP23\u2192Rag2-/- mixed BM chimeras showed little expression of either CD80 or CD273 (Figure 5A). By contrast, CD80+CD273+, CD80+CD273\u2014 and CD80\u2014CD273+ MSP121-specific B cells, both class-switched (IgM/Dlo) and non-class-switched (IgM/Dhi), were readily detected above background levels at 28-35dpi in P. chabaudi-infected NIMP23\u2192Rag2-/- mixed BM chimeras (Figure 5B and D). After resolution of infection (155-170dpi), the numbers of CD80+CD273+ and CD80+CD273\u2014 MSP121-specific B cells were either sustained or increased, while the CD80\u2014CD273+ population decreased, compared with 28-35dpi (Figure 5A\u2013D). All three MSP121-specific Bmem subsets showed high CD38 expression (Figure 5E,F). Importantly, the MSP121-specific GC B cells detected at 28-35dpi did not express either CD80 or CD273, further distinguishing GC from memory and atypical memory P. chabaudi-specific B-cell subsets (Figure 5G). No MSP121-specific GC B cells were detected above background level after resolution of the infection (Figure 5H). Finally, and in accordance with Figure 3, approximately 70% of the MSP121-specific CD11b+CD11c+ AMB observed at days 28-35pi expressed either CD80, CD273 or a combination of both (Figure 5I).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig5-v2.jpg)\n\n**Figure 5.:** (A), (B) and (C) Flow cytometry showing gating strategy to identify splenic IgM/Dhi and IgM/Dlo CD273+ and/or CD80+ MSP121-specific Bmem in NIMP23\u2192Rag2-/- chimeric mice before infection (day 0), at 35 and 155dpi, respectively. (D) Numbers of splenic IgM/Dhi and IgM/Dlo CD273+ and/or CD80+ MSP121-specific Bmem in NIMP23\u2192Rag2-/- chimeric mice during the course of mosquito transmitted P. chabaudi infection. Two-way ANOVA vs day 0. **p<0.01; ***p<0.001; ****p<0.0001. (E) Flow cytometry showing expression of CD38 on different subsets of splenic IgM/Dhi and IgM/Dlo MSP121-specific B cells from NIMP23\u2192Rag2-/- chimeric mice defined based on CD273 and CD80 expression at 155dpi. (F) Geometric MFI of CD38 expression on different subsets of IgM/Dhi and IgM/Dlo splenic MSP121-specific B cells from NIMP23\u2192Rag2-/- chimeric mice defined based on CD273 and CD80 expression at day 155 post-mosquito transmitted P. chabaudi infection. Two-way ANOVA vs CD273-CD80- subset. **p<0.01; ***p<0.001; ****p<0.0001. Error bars are SEM. (G) Flow cytometry of CD273 and CD80 expression on non-GC (CD38hiGL-7lo, blue) and GC (CD38loGL-7hi, red) splenic MSP121-specific B cells from NIMP23\u2192Rag2-/- chimeric mice at 35dpi. (H) Flow cytometry of CD38 vs GL-7 (GC markers) on splenic MSP121-specific B cells from NIMP23\u2192Rag2-/- chimeric mice at 0 and 155dpi. (I) CD11b+CD11c+ MSP121-specific B cells overlaid on the CD80 vs CD273 plot corresponding to total MSP121-specific B cells. Data pooled from three independent experiments with 3\u20137 mice per group.\n\nThese data show that, in contrast to the transient AMB, splenic CD80+CD273+ and CD80+CD273\u2014 class-switched and non-class-switched MSP121-specific Bmem persist after resolution of P. chabaudi infection.\n\n### Plasmodium-specific Bmem express high levels of FCRL5\n\nAs discussed above, no single marker has been described so far that can identify all mouse Bmem subsets. Surprisingly, we observed that after resolution of infection (155-170dpi), MSP121-specific B cells expressing different combinations of CD80 and CD273 (CD80+CD273+, CD80-CD273+ or CD80+CD273-) all expressed very high levels of FCRL5, in contrast to CD80-CD273- MSP121-specific B cells that express no memory markers at this stage (Figure 6A). This suggests that FCRL5 might be a marker for all Bmem. In order to confirm this, we used unsupervised methods to analyze our multiparameter flow cytometry data. We used PhenoGraph and t-SNE within the Cytofkit package (Materials and methods, Chen et al 2016) to analyze MSP121-specific B cells based on the expression of FCRL5, CD38, IgD, CD80 and CD273 on these cells, as determined by flow cytometry (Figure 6A and B). The analysis identified six clusters of cells with memory characteristics displaying high expression of CD38, CD80 and/or CD273, and variable expression of IgD, all of which expressed high levels of FCRL5 (Figure 6C: clusters identified with purple arrows). We then used Isomap, (Cytofkit package) to infer the relatedness between those cell subsets identified by PhenoGraph. This confirmed high similarities between the cell clusters expressing high levels of FCRL5 with the clusters expressing high levels of the memory markers CD80, CD273 and CD38 (Figure 6D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig6-v2.jpg)\n\n**Figure 6.:** (A) Flow cytometry showing expression of FCRL5 (right) on different subsets of splenic MSP121-specific B cells from NIMP23\u2192Rag2-/- chimeric mice defined based on CD273 and CD80 expression (left) at 155dpi. (B) t-SNE analysis of splenic MSP121-specific B cells based on FCRL5, CD38, IgD, CD273 and CD80 expression measured by flow cytometry (n\u00a0=\u00a05). Clusters identified by PhenoGraph are colored and numbered. (C) PhenoGraph heat map showing median expression of FCRL5, CD38, IgD, CD273 and CD80 on the different clusters of MSP121-specific B cells. Arrows point at the different clusters displaying a memory B cell phenotype. (D) Expression profiles of FCRL5, CD38, CD273 and CD80 for the different PhenoGraph clusters visualized on the first component of ISOMAP. The regression line estimated using the generalized linear model (GLM) is added for each marker. Data representative of three independent experiments with 4\u20137 mice per group. (E) Heat map showing expression levels of different genes on splenic FCRL5\u2014 and FCRL5hi MSP121-specific B cells sorted at 155dpi, and MSP121-specific B cells sorted before infection (na\u00efve), determined by RNAseq analysis. Each column corresponds to data from an individual mouse (n\u00a0=\u00a05 155 dpi, n\u00a0=\u00a05 0 dpi).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig6-figsupp1-v2.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Flow cytometry gating strategy to identify splenic MSP121-specific FCRL5neg (red) and FCRL5hi (blue) B cells, and additional surface markers expressed on these cells, in NIMP23\u2192 Rag2-/- mixed bone marrow chimeras infected with P. chabaudi (155dpi, top row) and immunized with recombinant MSP121 in Titermax Gold emulsion (day 29 post-immunization, bottom row). (B) Cumulative data showing geometric MFI for CD80, CD273, CD73, and CD38 memory markers on splenic MSP121-specific FCRL5neg and FCRL5hi B cells obtained from immunized mice. Mann Whitney U test. **, p<0.01. Error bars are SEM. Data representative of two independent experiments with 3\u20135 mice per group.\n\nTo confirm the memory identity of MSP121-specific FCRL5hi B-cells detected after resolution of the infection, we isolated MSP121-specific B cells expressing either high levels of FCRL5 or not expressing FCRL5 (i.e. FCRL5hi and FCRL5\u2014 MSP121-specific B cells) from the spleen of P. chabaudi-infected NIMP23\u2192Rag2-/- mice (155dpi) (Figure 6\u2014figure supplement 1), and MSP121-specific B cells from the spleen of na\u00efve NIMP23\u2192Rag2-/- mice, by flow cytometric sorting, and performed mRNAseq analysis on these three sorted cell populations (Figure 6E). As expected, the MSP121-specific FCRL5hi B cell subset showed high expression of genes encoding the hallmark memory B cell markers Cd38, Cd80, Cd86, Nt5e (CD73) and Pdcd1lg2 (CD273), when compared with either MSP121-specific FCRL5\u2014 B cells sorted at the same time or MSP121-specific B cells sorted from na\u00efve mice (Figure 6E). Moreover, the MSP121-specific FCRL5hi B cells sorted after resolution of the infection upregulated the anti-apoptotic Bcl2 gene, which is an additional hallmark characteristic of memory B cells (Figure 6E). Importantly, FCRL5 also identified CD80+ and CD273+ MSP121-specific Bmem subsets generated following immunization with a model antigen (Figure 6\u2014figure supplement 2).\n\nThus, after resolution of the infection, high expression of FCRL5 identifies P. chabaudi-specific Bmem.\n\n### Plasmodium-specific AMB are a distinct short-lived activated B cell subset\n\nAfter identifying and sorting MSP121-specific AMB during chronic P. chabaudi infection, and MSP121-specific Bmem after resolution of the infection, we then compared the transcriptome of these two B-cell subsets. Principal component analysis (PCA) demonstrated a strikingly distinct transcriptome of MSP121-specific AMB from that of MSP121-specific Bmem, as well as all other MSP121-specific B-cell subsets sorted in this study (Figure 7A). The MSP121-specific AMB sorted at 35dpi formed a separated cluster at the extreme right of the PC1 axis of the PCA plot, which accounts for the majority of the variance (Figure 7A). All the other subsets [including MSP121-specific CD11b\u2014CD11c\u2014 B-cells sorted from the same mice and at the same day post-infection as the MSP121-specific AMB (i.e. 35dpi)] clustered on the left of the PC1 axis, and showed differences mostly along the PC2 axis of the PCA plot, which accounts for only 10% of the variance (Figure 7A). Interestingly, MSP121-specific CD11b\u2014CD11c\u2014 and MSP121-specific Bmem clustered on opposite sides of the MSP121-specific na\u00efve B-cell subset along the PC2 axis (Figure 7A), which suggests that the MSP121-specific Bmem more closely resemble MSP121-specific na\u00efve B cells than MSP121-specific CD11b\u2014CD11c\u2014 B cells sorted at 35dpi.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig7-v2.jpg)\n\n**Figure 7.:** (A) Principal component analysis of RNAseq transcriptome data from splenic MSP121-specific AMB (CD11b+CD11c+, 35dpi), CD11b\u2014CD11c\u2014 B cells (35dpi), Bmem (FCRL5hi, 155dpi), FCRL5\u2014 B cells (155dpi) and B cells from na\u00efve mice (0dpi). The MSP121-specific AMB and Bmem are contained inside ellipses. (B) (C) (D) (E) Normalized counts corresponding to selected genes representing memory B-cell markers, anti and pro-apoptotic genes, immunoglobulins and atypical memory B-cell markers, respectively, for all five groups described in (A). Each bar represents an individual mouse. Data generated with five mice per group.\n\nMSP121-specific AMB sorted during chronic P. chabaudi infection, and MSP121-specific Bmem sorted after resolution of the infection shared the expression of a series of mouse memory markers, including Cd80, Fcrl5, Nt5e (CD73), and Cd86 (Figure 7B). However, these two subsets showed differences in the expression pattern of anti- and pro-apoptotic genes (Figure 7C). While MSP121-specific Bmem from after infection resolution showed the highest levels of expression of the anti-apoptotic Bcl2 gene, MSP121-specific AMB sorted during chronic P. chabaudi infection showed the lowest levels of expression of this hallmark anti-apoptotic gene (Figure 7C). In contrast to MSP121-specific Bmem, MSP121-specific AMB expressed high levels of the pro-apoptotic genes Bad, Bax, Fas and Fasl (Figure 7C). Interestingly, MSP121-specific AMB expressed very high levels of class-switched immunoglobulins, including Igha, Ighg1, Ighg2b, Ighg2c and Ighg3 (Figure 7D). Finally, MSP121-specific AMB highly expressed Cd11b, Cd11c, Tbx21, Ifng and Pdcd1 (Figure 7E), all hallmarks of human AMB, as well as Mki67, indicative of active cell division, as previously shown in human AMB.\n\nThese data demonstrate that AMB and Bmem share the expression of memory markers. However, they show striking differences in the expression of pro- and anti-apoptotic genes, immunoglobulins genes, and cell proliferation genes. The increased expression of Mki67, pro-apoptotic genes and class-switched immunoglobulins in AMB suggests that they resemble activated B cells. By contrast, Bmem express much less Mki67 (similar to na\u00efve cells) and present an anti-apoptotic gene expression pattern, consistent with being long-lived quiescent B cells.\n\nMouse FCRL5 has been shown to be expressed on marginal zone (MZ) and B1 B cells (Won et al., 2006). Therefore, it is possible that the AMB identified in this study might represent a specific subset of either MZ or B1 B cells. As discussed elsewhere (Baumgarth, 2011; Garraud et al., 2012; Pillai et al., 2005; Zouali, 2011), B1 and MZ B cells are CD1dmid/hi, CD9+, IgMhi and CD23\u2014. B1 are further CD43+, B220lo, and may (B1a) or may not (B1b) express CD5. MZ are further characterised by CD22hi, CD21/CR2hi, and the expression of the lysophospholipid sphingosine-1 phosphate receptor S1P1, and the lineage master regulator Notch2. Indeed, MSP121-specific CD11b+CD11c+ AMB showed high expression of some markers associated with B1 and/or MZ, including CD5, CD9 and CD43. However, these markers have also been shown to be highly expressed by activated B2 B cells and plasma cells (Baumgarth, 2011). Studying all these canonical markers, we found no other similarities between B1/MZ and MSP121-specific CD11b+CD11c+ AMB to suggest a relationship between these subsets (Figure 8A). This was further corroborated by flow cytometry analysis (Figure 8B). Moreover, unlike MZ and B1 B cells, MSP121-specific AMB were class-switched and expressed very high levels of IgG (Figure 7D). To further characterize the identity of MSP121-specific CD11b+CD11c+ AMB, we explored if these cells resemble GC B cells. Flow cytometry analysis demonstrated that MSP121-specific AMB did not display a GC phenotype (i.e. CD38hiGL-7lo) (Figure 8C) while the MSP121-specific CD38loGL-7hi GC B cells showed low expression of both CD11b and CD11c. Thus, MSP121-specific AMB are not GC B cells.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/39800/elife-39800-fig8-v2.jpg)\n\n**Figure 8.:** (A) MSP121-specific CD11b+CD11c+ (AMB) and CD11b\u2014CD11c\u2014 B cells were flow cytometry sorted from the spleen of NIMP23\u2192Rag2-/- chimeric mice at 35dpi; MSP121-specific B cells were flow cytometry sorted from the spleen of na\u00efve NIMP23\u2192Rag2-/-, and these three B cell populations were submitted to mRNAseq analysis. The heat map displays level of expression of selected individual genes known to be up or downregulated on either MZ, B1 B cells or both. Each column represents an individual mouse. (B) Flow cytometry analysis of surface markers of either MZ, B1 B cells or both, on MSP121-specific CD11b+CD11c+ (AMB) (blue) and MSP121-specific IgMhi (red) B cells from the spleen of IghNIMP23/+ mice at 20dpi. (C) Flow cytometry analysis of GC markers on MSP121-specific CD11b\u2014CD11c\u2014 (non-AMB, left) and CD11b+CD11c+ (AMB, right) B cells from the spleen of IghNIMP23/+ mice at 20dpi. (D) Flow cytometry analysis showing the expression of CD11b and CD11c on MSP121-specific CD11b+CD11c+ (AMB, blue) compared to GC (CD38loGL-7hi, red) B cells from the spleen of IghNIMP23/+ mice. Data generated with 5\u20136 mice per group.\n\nAll together, these data further show that P. chabaudi-specific AMB represent a distinct subset of short-lived activated B cells.\n\n## Discussion\n\nSimilar to other chronic infections [e.g. HIV, HCV and Mycobacterium tuberculosis (Knox et al., 2017b; Portugal et al., 2017)], Plasmodium infection, the cause of malaria, leads to an increase in the frequency of AMB [originally termed tissue-like memory B cells (Moir et al., 2008)] in peripheral blood from P. falciparum-exposed subjects (Illingworth et al., 2013; Portugal et al., 2015; Sullivan et al., 2016; Sullivan et al., 2015; Weiss et al., 2011; Weiss et al., 2010; Weiss et al., 2009). However, mouse models to investigate Plasmodium-specific AMB are lacking. Here we have generated an IgH knock-in transgenic mouse strain to study the generation of Plasmodium-specific AMB in a Plasmodium chabaudi infection. We demonstrate the generation of P. chabaudi-specific AMB in response to blood-stage mosquito-transmitted chronic P. chabaudi infection, and show the short-lived nature of these cells. P. chabaudi infections in mice present some outstanding characteristics for the study of AMB; a chronic phase which allows investigation of the impact of constant immune activation driven by persistent subpatent parasitemia, followed by a clearance phase which allows the study of immune responses after the infection is naturally resolved. Thus, it is possible to study both exhaustion driven by chronic immune activation, and memory immune responses which remain after P. chabaudi elimination.\n\nThe P. chabaudi-specific AMB we detected during the chronic phase of infection showed strong similarities to human AMB described in chronic malaria. These included being class-switched, and expressing mouse homologues of hallmark human atypical memory B-cell genes such as Itgax (Cd11b), Itgam (Cd11c), Cxcr3, Fcrl5, Tbx21 (T-bet), Ifng, Cd80, Cd86, Aicda, and a series on inhibitory receptors, including Lair1 and Pdcd1 (PD-1). Human AMB have been shown to share several characteristics with plasmablasts (Knox et al., 2017a; Muellenbeck et al., 2013; Obeng-Adjei et al., 2017; Sullivan et al., 2015). Interestingly, we also observed increased expression of several genes associated with plasmablasts in P. chabaudi-specific AMB, including Cd138, Xbp1, Prdm1 (encoding Blimp-1) and Mki67, accompanied by downregulation of Pax5 and Bcl6.\n\nAMB resemble age-associated B cells (ABC) which accumulate with age as well as in autoimmunity, and were also proposed to be a subset of long-lived memory B cells (Naradikian et al., 2016a; Portugal et al., 2017; Rubtsov et al., 2017). Expression of T-bet, CD11c and CXCR3 are shared by AMB, tissue-like memory B cells, and ABC (Knox et al., 2017b; Naradikian et al., 2016a). Moreover, similar to ABC, expansion of human AMB associated with malaria is driven by IFN\u03b3 (Obeng-Adjei et al., 2017). IL-21, which is highly expressed by follicular helper T cells in response to Plasmodium infection (Carpio et al., 2015; Obeng-Adjei et al., 2015; P\u00e9rez-Mazliah et al., 2015), also directly promotes T-bet expression in B cells in the context of TLR engagement (Naradikian et al., 2016b). Taken together, these data strongly suggest that this is the same T-bet+ B-cell subset, which accumulates with time due to repetitive antigenic exposure. In agreement with previous data (Rubtsova et al., 2013), we show here that immunization with MSP121 and R848, a TLR7/8 ligand, promotes a robust but short-lived CD11b+CD11c+ P. chabaudi-specific AMB response. T-bet+ atypical B cells are critical to eradicate various murine viral infections (Barnett et al., 2016; Rubtsova et al., 2013), and a recent study showed that yellow fever and vaccinia vaccinations of humans stimulated an acute T-bet+ B-cell response and suggested that these T-bet+ B-cell population may function as an early responder during acute viral infections (Knox et al., 2017a). Thus, T-bet+ B cells, even in the context of malaria, are likely to be a normal component of the immune compartment that becomes activated and expands, most probably in response to BCR, endosomal TLR, and IFN\u03b3 or IL-21 stimulation. Moreover, a recent study shows a TLR9/IFN\u03b3-dependent activation of autoreactive T-bet+CD11c+ atypical B cells in response to P. yoelii 17XNL infection in mice (Rivera-Correa et al., 2017). However, whether these cells remained part of the long-lived memory B-cell pool after resolution of the infection was not explored.\n\nHere, we show that P. chabaudi-specific AMB are short-lived activated B cells. These cells were absent after resolution of the infection, and immunization with purified antigen and TLR agonists resulted in a transient, yet robust, activation of P. chabaudi-specific AMB which lasted no more than 48 hr. Moreover, the IghNIMP23/+ mouse model allowed us to obtain a deep insight of the transcriptome profile of MSP121-specific AMB during natural infection, and compare it side-by-side with the transcriptome of MSP121-specific na\u00efve B cells. This allowed us to demonstrate their heavily pro-apoptotic and activated transcription profile, further explaining their short-lived nature. P. chabaudi-specific AMB showed very low expression of Bcl2, and high levels of expression of several pro-apoptotic genes including Bad, Bax, Fas and Fasl. In addition, these cells expressed very high levels of class-switched immunoglobulins and genes associated with DNA replication and proliferation.\n\nThe association of P. chabaudi-specific AMB with ongoing infection explains several observations in human studies: reduction of HIV plasma viremia by ART resulted in a significant reduction of HIV-specific AMB without altering the frequency of HIV-specific Bmem (de Bree et al., 2017; Kardava et al., 2014); individuals living in high malaria endemicity present higher frequencies of AMB than individuals living in areas with moderate transmission (Illingworth et al., 2013; Sullivan et al., 2015); repetitive Plasmodium episodes result in higher frequencies of AMB (Obeng-Adjei et al., 2017); the percentage of AMB is larger in children with persistent asymptomatic Plasmodium falciparum parasitemia as compared with parasite-free children (Weiss et al., 2009); previously exposed subjects significantly reduce the frequency of AMB following a year of continuous absence of exposure to Plasmodium falciparum infection (Ayieko et al., 2013). These observations all support the view that constant immune activation rather than impaired memory function leads to the accumulation of AMB in malaria.\n\nAfter resolution of infection, P. chabaudi-specific AMB did not persist, but instead subsets of P. chabaudi-specific Bmem were readily detected. These cells expressed different combinations of previously described mouse B-cell memory markers [i.e. CD80, CD273 and CD73 (Anderson et al., 2007; Tomayko et al., 2010; Zuccarino-Catania et al., 2014)]. P. chabaudi-specific Bmem included both class-switched and non-class-switched cells, which show different responses to a secondary challenge infection (Krishnamurty et al., 2016). Independently of the combination of previously described memory markers expressed on P. chabaudi-specific Bmem, all of these cells displayed very high expression of FCRL5. Previous data showed most prominent expression of FCRL5 in marginal zone B cells, while much less evident in the newly-formed and follicular splenic B cell subpopulations (Davis et al., 2004; Won et al., 2006). In agreement with this, we observed expression of FCRL5 on a subset of splenic P. chabaudi-specific B cells obtained from na\u00efve mice. However, the level of FCRL5 expression on P. chabaudi-specific Bmem detected after resolution of the infection was noticeably higher than that of na\u00efve B cells both at the protein and mRNA levels. In contrast to MSP121-specific AMB, these CD11b\u2014CD11c\u2014FCRL5hi MSP121-specific Bmem showed high expression of the hallmark memory and anti-apoptotic gene Bcl2 (Bhattacharya et al., 2007). Thus, after resolution of the infection, high expression of FCRL5 acted as a universal Bmem marker. Due to its complex dual ITIM/ITAM signaling capacity (Zhu et al., 2013), it is tempting to speculate that FCRL5 might serve as an important signal in the differentiation/maintenance of Bmem.\n\nTracking the fate of the different MSP121-specific B-cell subsets identified in this work will allow detailing the interplay between them. A model can be proposed in which antigen-specific AMB serve as an intermediate stage of differentiation between na\u00efve and Bmem. Alternatively, antigen-specific AMB might represent early plasmablasts or recent GC emigrates, based on class-switching and the high expression of IgG by these cells. These scenarios are not necessarily antagonist, and might even occur in parallel. Moreover, B1 B cells have been shown to class-switch and contribute to serum IgG1, IgG2a and IgA to influenza (Baumgarth et al., 2005), and IgG-producing B1a B cells have been shown to accumulate in the spleen of a mouse model of systemic lupus erythematosus (Enghard et al., 2010). Therefore, we can\u2019t rule out the possibility that AMB might represent a particular B1 B cell subset that expands in the spleen and blood in response to Plasmodium infection.\n\nOur data suggest that the expansion of AMB in malaria is not a consequence of B-cell exhaustion, but rather a physiologic stage of B-cell activation, and that these cells are sustained in high frequencies by ongoing chronic infections. Thus, Plasmodium-specific AMB are neither \u2018memory\u2019, nor \u2018atypical\u2019. Importantly, our data demonstrate that robust expansion of Plasmodium-specific AMB does not hinder clearance of the infection, activation of germinal centers, or generation of Plasmodium-specific long-lived quiescent Bmem upon resolution of the infection.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>B6.SJL-Ptprca Pepcb/BoyJ (B6.CD45.1)</td>\n      <td>The Jackson Laboratory</td>\n      <td>MGI:4819849</td>\n      <td>Bred in the specific pathogen-free facilities of the MRC National Institute for Medical Research and The Francis Crick Institute</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Rag2tm1Fwa(Rag2-/-)</td>\n      <td>The Jackson Laboratory</td>\n      <td>MGI:1858556</td>\n      <td>Bred in the specific pathogen- free facilities of the MRC National Institute for Medical Research and The Francis Crick Institute</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>IghNIMP23/+</td>\n      <td>This paper</td>\n      <td>_</td>\n      <td>Bred in the specific pathogen-free facilities of the MRC National Institute for Medical Research and The Francis Crick Institute</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Plasmodium chabaudi chabaudi, strain AS)</td>\n      <td>P. chabaudi</td>\n      <td>other</td>\n      <td>_</td>\n      <td>European Malaria Reagent Repository, University of Edinburgh.</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Anopheles stephensi, strain SD500, female)</td>\n      <td>mosquitos</td>\n      <td>PMID: 23217144</td>\n      <td>_</td>\n      <td>Bred in Jean Langhorne's lab</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat Anti-CD11b</td>\n      <td>BD Biosciences</td>\n      <td>563553</td>\n      <td>(dil 1/50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Hamster Anti-Mouse CD11c</td>\n      <td>BD Biosciences</td>\n      <td>561022</td>\n      <td>(dil 1/50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat Anti-Mouse CD138</td>\n      <td>BD Biosciences</td>\n      <td>553714</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat Anti-Mouse CD19</td>\n      <td>BD Biosciences</td>\n      <td>565076</td>\n      <td>(dil 1/200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD19</td>\n      <td>Biolegend</td>\n      <td>115530</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD19</td>\n      <td>Biolegend</td>\n      <td>115543</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD1d</td>\n      <td>Biolegend</td>\n      <td>123510</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-mouse CD2</td>\n      <td>Biolegend</td>\n      <td>100112</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclona Rat Anti-Mouse CD21/35</td>\n      <td>BD Biosciences</td>\n      <td>563176</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclona Rat Anti-Mouse CD21/35</td>\n      <td>BD Biosciences</td>\n      <td>553818</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD23</td>\n      <td>eBioscience</td>\n      <td>25\u20130232</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD273</td>\n      <td>BD Biosciences</td>\n      <td>564245</td>\n      <td>(dil 1/25)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Armenian Hamster anti-Mouse CD3</td>\n      <td>Biolegend</td>\n      <td>100336</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD38</td>\n      <td>Biolegend</td>\n      <td>102718</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD38</td>\n      <td>eBioscience</td>\n      <td>17\u20130381</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD38</td>\n      <td>BD Biosciences</td>\n      <td>740697</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD4</td>\n      <td>Biolegend</td>\n      <td>100414</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD45.1</td>\n      <td>Biolegend</td>\n      <td>110706</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD45.1</td>\n      <td>Biolegend</td>\n      <td>110728</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Mouse anti-Mouse CD45.2</td>\n      <td>BD Biosciences</td>\n      <td>563685</td>\n      <td>(dil 1/50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Mouse anti-Mouse CD45.2</td>\n      <td>Biolegend</td>\n      <td>109814</td>\n      <td>(dil 1/50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Mouse anti-Mouse CD45.2</td>\n      <td>Biolegend</td>\n      <td>109808</td>\n      <td>(dil 1/50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD45R/B220</td>\n      <td>BD Biosciences</td>\n      <td>564449</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD45R/B220</td>\n      <td>Biolegend</td>\n      <td>103224</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD45R/B220</td>\n      <td>eBioscience</td>\n      <td>25\u20130452</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD73</td>\n      <td>BD Biosciences</td>\n      <td>550741</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Armenian Hamster anti-Mouse CD80</td>\n      <td>Biolegend</td>\n      <td>104729</td>\n      <td>(dil 1/25)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD8a</td>\n      <td>Biolegend</td>\n      <td>100734</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD9</td>\n      <td>BD Biosciences</td>\n      <td>558749</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat anti-Mouse CD93 (AA4.1)</td>\n      <td>eBioscience</td>\n      <td>17\u20135892</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FCRL5</td>\n      <td>PMID: 17082595</td>\n      <td>_</td>\n      <td>Produced in Randall Davis' lab (dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Polyclonal Sheep anti-Mouse FCRL5</td>\n      <td>R and D Systems</td>\n      <td>FAB6756G</td>\n      <td>(dil 1/50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat Anti-Mouse T- and B-Cell Activation Antigen GL7</td>\n      <td>BD Biosciences</td>\n      <td>562080</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat Anti-Mouse IgD</td>\n      <td>Biolegend</td>\n      <td>405725</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat Anti-Mouse IgD</td>\n      <td>Biolegend</td>\n      <td>405723</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat Anti-Mouse IgD</td>\n      <td>Biolegend</td>\n      <td>405710</td>\n      <td>(dil 1/400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat Anti-Mouse IgG2b</td>\n      <td>Biolegend</td>\n      <td>406708</td>\n      <td>(dil 1/25)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Monoclonal Rat Anti-Mouse IgM</td>\n      <td>Biolegend</td>\n      <td>406512</td>\n      <td>(dil 1/100)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>VDJHNIMP23 anti-MSP121 variable region coding exon containing the Leader-V segment intron from gDNA of the NIMP23 hybridoma</td>\n      <td>PMID: 7141700</td>\n      <td>_</td>\n      <td>Produced in Jean Langhorne's lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>C57Bl/6 IgH HEL variable region knock-in construct</td>\n      <td>PMID: 12668643</td>\n      <td>_</td>\n      <td>Donated by Robert Brink of the Garvan Institute of Medical Research, New South Wales, Australia</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>MSP121</td>\n      <td>PMID: 11254580</td>\n      <td>_</td>\n      <td>Produced in Jean Langhorne's lab</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>EZ-Link Sulfo-NHS-LC-Biotinylation Kit</td>\n      <td>Thermo Scientific</td>\n      <td>21435</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RiboPure RNA Purification Kit</td>\n      <td>Invitrogen</td>\n      <td>AM1924</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Qubit 1X dsDNA HS Assay Kit</td>\n      <td>Invitrogen</td>\n      <td>Q33231</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SMART-Seq v4 Ultra Low Input RNA Kit for Sequencing</td>\n      <td>Takara</td>\n      <td>634889</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Ovation Ultralow Library System V2</td>\n      <td>Nugen</td>\n      <td>0344\u201332</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>LIVE/DEAD Fixable Aqua Dead Cell Stain Kit</td>\n      <td>Invitrogen</td>\n      <td>L34957</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>LIVE/DEAD Fixable Blue Dead Cell Stain Kit</td>\n      <td>Invitrogen</td>\n      <td>L23105</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Streptavidin-R-Phycoerythrin</td>\n      <td>Prozyme</td>\n      <td>PJRS25</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Streptavidin-Allophycocyanin</td>\n      <td>Prozyme</td>\n      <td>PJ27S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TiterMax Gold Adjuvant</td>\n      <td>Merck (formerly Sigma-Aldrich)</td>\n      <td>T2684-1ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>R848 (Resiquimod)</td>\n      <td>Invivogen</td>\n      <td>tlrl-r848</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TRI Reagent Solution</td>\n      <td>Invitrogen</td>\n      <td>AM9738</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cutadapt v1.9.1</td>\n      <td>doi:10.14806/ej.17.1.200</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RSEM v1.2.31</td>\n      <td>doi:10.1186/1471-2105-12-323</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR v2.5.1b</td>\n      <td>doi:10.1093/ bioinformatics/bts635</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DESeq2</td>\n      <td>doi:10.1186/s13059-014-0550-8</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R v3.4.0</td>\n      <td>other</td>\n      <td></td>\n      <td>https://www.r-project.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bioconductor v3.5</td>\n      <td>other</td>\n      <td></td>\n      <td>http://www. bioconductor.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Broad's Gene Set Enrichment Analysis (GSEA)</td>\n      <td>other</td>\n      <td></td>\n      <td>http://software.broadinstitute.org/gsea/index.jsp</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo version 9.6 or higher</td>\n      <td>Tree Star</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cytofkit</td>\n      <td>doi:10.1371/journa l.pcbi.1005112.s009</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism v6</td>\n      <td>GraphPad</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\n5-12\u00a0week-old female mice were used for experiments. C57BL/6J, C57BL/6.SJL-Ptprca (CD45.1 congenic), Rag2-/-.C57BL/6.SJL-Ptprca (CD45.1 congenic) and BALB/c mouse strains were bred in the specific pathogen-free facilities of the MRC National Institute for Medical Research and The Francis Crick Institute, and were housed conventionally with sterile bedding, food and irradiated water. Room temperature was 22\u00b0C with a 12 hr light/dark cycle; food and water were provided ad libitum. The study was carried out in accordance with the UK Animals (Scientific Procedures) Act 1986 (Home Office license 80/2538 and 70/8326), was approved by the MRC National Institute for Medical Research Ethical Committee and was approved by The Francis Crick Institute Ethical Committee.\n\nTo produce MSP121\u2013specific B cell knock-in mice capable of undergoing class switch recombination on the C57BL/6J genetic background, the VDJHNIMP23 anti-MSP121 variable region coding exon containing the Leader-V segment intron from gDNA of the NIMP23 hybridoma (Boyle et al., 1982) was inserted by homologous recombination into the 5\u2019 end of the endogenous IgH locus (Taki et al., 1993) (Figure 1\u2014figure supplement 1A\u2013C). The VDJHNIMP23 anti-MSP121 variable region coding exon was inserted into a previously described IgH targeting construct, replacing the anti-HEL heavy chain variable region coding exon that was already in it (Phan et al., 2003) (Figure 1\u2014figure supplement 1D). The final targeting construct included a loxP-flanked neomycin resistance cassette in reverse transcriptional orientation to the Igh locus, located immediately 5\u2019 to the rearranged VDJHNIMP23 variable region and its associated promoter (Figure 1\u2014figure supplement 1D). Electroporation of C57BL/6N-derived PRX embryonic stem cells with the targeting construct and selection of homologous recombinant clones was performed using standard techniques by PolyGene AG (Switzerland). One targeted ES clone was used for production of chimeric mice using standard techniques at the Biological Research Facilities of the MRC National Institute for Medical Research, London, UK. Male chimeric mice were crossed to C57BL/6J females and progeny carrying the IghNIMP23neo allele were crossed to PC3Cre mice (O'Gorman et al., 1997) to delete the neor gene in the germline and generate mice carrying the IghNIMP23 allele (Figure 1\u2014figure supplement 1D). The IghNIMP23/+ strain was maintained by backcrossing for at least 10 generations to C57BL/6J mice.\n\n### Mixed bone marrow chimeras\n\nFemurs and tibias were excised from female mice and cleaned of flesh using forceps and scalpel, and BM was obtained by flushing out with IMDM supplemented with 2 mM L-glutamine, 0.5 mM sodium pyruvate, 100 U penicillin, 100 mg streptomycin, 6 mM Hepes buffer, and 50 mM 2-ME (Gibco, Invitrogen), using a syringe with a needle. Thereafter, single BM cell suspensions were obtained by mashing through a 70 \u03bcm filter mesh, further sieved through 40 \u03bcm filter mesh and washed once. Live cells were resuspended in sodium chloride solution 0.9% (Sigma) at 4 \u00d7 106 cells/200 \u03bcl. Rag2-/-.C57BL/6.SJL-Ptprca mice were sub-lethally irradiated (5Gy) using a [137Cs] source and reconstituted less than 24 hr after irradiation by i.v. injections of a 10% IghNIMP23/+:90% C57BL/6.SJL-Ptprca combination of donor BM cells. Recipient mice were maintained on acidified drinking water and analyzed for reconstitution after 6\u20138 weeks.\n\n### Plasmodium chabaudi infection\n\nPlasmodium chabaudi chabaudi AS was transmitted by Anopheles stephensi mosquitoes, strain SD500, as described elsewhere (Spence et al., 2012). Briefly, C57BL/6J mice were injected i.p. with 105 P. chabaudi-infected red blood cells and used to feed mosquitos two weeks after the injection. Two weeks after mosquito feeding/infection, each experimental mouse was exposed to 20 infected mosquitos for 30 min. Blood parasitemia in infected experimental mice was routinely monitored by thin blood smears.\n\n### Immunizations\n\nMice were immunized i.p. with a combination of 100 \u03bcg of MSP121 (Quin and Langhorne, 2001) and 50 \u03bcl of Titermax Gold emulsion (Sigma), or a combination of 50 \u03bcg of MSP121 and 50 \u03bcg of R848 (Invivogen).\n\n### Flow cytometry and cell sorting\n\nSpleens, lymph nodes and bone marrows were dissected and single cell suspensions were obtained by mashing the organs through a 70 \u03bcm filter mesh in HBSS, 6 mM Hepes buffer (Gibco, Invitrogen). After removal of red blood cells from spleens and bone marrows by treatment with lysing buffer (Sigma), the remaining cells were resuspended in complete Iscove's Modified Dulbecco's Medium [IMDM supplemented with 10% FBS Serum Gold (PAA Laboratories, GE Healthcare), 2 mM L-glutamine, 0.5 mM sodium pyruvate, 100U penicillin, 100 mg streptomycin, 6 mM Hepes buffer, and 50 mM 2-ME (all from Gibco, Invitrogen)] and viable cells were counted using trypan blue (Sigma) exclusion and a hemocytometer. Cells were then resuspended in PBS and incubated with APC- or PE-labelled MSP121 fluorescent probes and/or different combinations of fluorochrome-conjugated antibodies (key resources table), and either acquired after two washes with PBS, or fixed with 2% paraformaldehyde and stored in staining buffer at 4\u00b0C until acquisition.\n\nThe APC and PE MSP121 fluorescent probes were produced as previously described (Krishnamurty et al., 2016; Taylor et al., 2012). Briefly, purified MSP121 (Quin and Langhorne, 2001) was biotinylated using an EZ-link Sulfo-NHS-LC- Biotinylation kit (Thermo Fisher Scientic) using a 1:1 ratio of biotin to protein, and loaded onto Streptavidin-APC conjugated or Phycolink Streptavidin-R-PE conjugated (ProZyme) in a 6:1 ratio of MSP121:Streptavidin-fluorochrome.\n\nCell sorting was performed on a MoFlo XDP (Beckman Coulter) or a BD FACSAria Fusion (BD Biosciences) and the target cell populations were directly dispensed into TRIreagent (Ambion) and stored at \u221280\u00b0C until RNA isolation. Purity checks were routinely performed for all assays by sorting aliquots of cells into PBS containing 2% FCS and reacquiring them on the cell sorter.\n\nDead cells were routinely excluded from the analysis by staining with LIVE/DEAD Fixable Aqua or Blue stain (Invitrogen). Singlets were selected based on FCS-A vs FCS-H and further based on SSC-A vs SSC-H. \u2018Fluorescence minus one\u2019 (FMO) controls were routinely used to verify correct compensation and to set the thresholds for positive/negative events. Analysis was performed with FlowJo software version 9.6 or higher (Tree Star).\n\nPhenoGraph and t-distributed stochastic neighbor embedding (t-SNE) were combined to analyze multiparameter flow cytometry data using the Cytofkit package (Chen et al., 2016). t-SNE renders high-dimensional single-cell data based on similarities into only two dimensions, and thus helps visualize multiparameter data (van der Maaten, 2008). PhenoGraph (Levine et al., 2015) allows partitioning of high-dimensional single-cell data into phenotypically coherent subpopulations (i.e. clusters). The relatedness of the cell clusters identified by PhenoGraph was inferred using Isomap (Cytofkit package), in which related clusters/subsets can be visualised close to each other.\n\n### RNA isolation, sequencing and data analysis\n\nTotal RNA from 1\u22125 \u00d7 104 cells sorted into TRIreagent (Ambion) was isolated using the Ribopure kit (Ambion). Concentration of purified RNA was determined by Qubit fluorometric quantitation using the HS assay kit (ThermoFisher Scientific), and the quality analyzed with a 2100 Bioanalyzer (Agilent). Samples with a RIN score above 8.50 were used for the next steps. cDNA was generated from total RNA with the SMART-Seq v4 Ultra Low Input RNA Kit (Takara Bio USA). Next-generation sequencing libraries were produced with the Ovation Ultralow System V2 (Nugen), and run as PE100 on a HiSeq 4000 sequencer (Illumina). GEO accession: GSE115155.\n\nFor bioinformatics analysis, paired-end sequence reads were adapter and quality trimmed using cutadapt v1.9.1 (Martin, 2011) with the following non-default settings: \u2018-a AGATCGGAAGAGC -A AGATCGGAAGAGC --minimum-length 30 -q 20,20\u2019. Gene-level abundance estimates were generated from the trimmed reads using RSEM v1.2.31 (Li and Dewey, 2011) running STAR v2.5.1b (Dobin et al., 2013) with default settings, aligned against the Mus musculus Ensembl release 89 transcriptome (mm10). All further analysis was conducted using the DESeq2 (Love et al., 2014) package from Bioconductor v3.5 run in R v3.4.0. The expected counts were imported and rounded to integers to generate a counts matrix. Differential expression between phenotype groups was assessed using the DESeq function with default settings. In the case of comparisons of different MSP121-specific B cell subsets obtained from the same experimental mouse, an additional mouse factor was added to the design formula to accommodate the paired nature of the data. Significance was thresholded using an FDR\u00a0\u2264\u00a00.01. PCA analysis was conducted using DESeq's plot PCA function with the regularized log (rlog) transformed count data. Heat maps were generated using the regularized log (rlog) transformed count data, scaled per gene using a z-score. Mouse homologues to genes previously associated with human AMB were selected (Supplementary file 1), and those showing significant differential expression on MSP121-specific AMB were used to produce separate heat maps split by functional annotation (Figure 3). The GSEA pre-ranked function from the Broad's Gene Set Enrichment Analysis (GSEA) (Subramanian et al., 2005) suite was used to assess significant enrichment of MSigDB's C2 Reactome gene sets associated with differential expression between cell types. The function was run using a list of genes ranked for differential expression using DESeq2's Wald test statistic with default settings except for: collapse dataset to gene\u00a0=\u00a0false enrichment statistic\u00a0=\u00a0classic\n\n### Statistical analysis\n\nStatistical analysis was performed using Mann Whitney U test, Kruskal-Wallis test followed by Dunn's multiple comparisons test, or Two-Way ANOVA followed by Dunnett's multiple comparisons test on Prism software version 6 (GraphPad). p<0.05 was accepted as a statistically significant difference.\n",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "7e7bf8d8-30b2-49e7-af05-efcf479ff81f",
+      "submission_id": "ce8b4ef3-466f-4a02-b77a-d6480df16815",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Facundo D Batista, Ragon Institute of MGH, MIT and Harvard United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39800.022](https://doi.org/10.7554/eLife.39800.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Plasmodium-specific atypical memory B cells are short-lived activated B cells\" for consideration by eLife. Your article has been reviewed by Michel Nussenzweig as the Senior Editor, a Reviewing Editor, and three reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nEssential revisions:\n\nAll three reviewers agreed that the study is of sufficient general interest but that the manuscript requires significant re-organization and rewriting to clarify the various points that they have collectively raised. For this, I am copying the reviewers\u2019 comments below. While this will not require new experimentation, it will be important that you revise the manuscript to incorporate and address all reviewers concerns.\n\nReviewer #2:\n\nAtypical memory B cells (AMB) are a feature of Plasmodium (malaria) infections and B cells with a similar phenotype (CD21lo, FCRLhi etc.) have been identified in many other human infections and immuno-deficiencies as well as in aging mice. There is still much conjecture around the function and of AMBs and what triggers their development, partly because they are frequently described in the context of active human infections. Studies in which the genesis and fate of AMBs can be studied in a more controlled manner are likely to provide greater insight into the nature of these cells.\n\nIn this manuscript, the authors have developed a novel BCR/Ig knock-in mouse in which B cells express a heavy chain recognising the P. chabaudi Merozoite Surface Protein 1 (MSP1) antigen allowing direct analysis of the response of anti-Plasmodium B cells. Importantly, responses were triggered in chimeric mice carrying low frequencies (~1%) of anti-MSP1 B cells and using the natural route of P. chabaudi infection i.e. via mosquito bite. Thus, the authors have utilised a carefully designed, relevant and informative model for this study.\n\nThe authors demonstrate that a population of B cells with an AMB-phenotype is generated but that this population does not persist long-term. It would be important to confirm that these are not GC B cells (see point 3, below). It is also apparent that an FCRL5hi population of conventional memory B cells does persist, providing new information about AMBs in the context of Plasmodium infection. Whilst this main result is an important one, there are a number of issues with the study that do need to be addressed.\n\n1) MSP121 needs to be defined (the 21kDa C-terminal fragment of MSP1).\n\n2) For clarity it should be pointed out that a recombinant light chain is not required and that most endogenous light chains will pair with the NIMP23 heavy chain to generate a BCR with detectable binding to MSP1. Can any assessment be made of the affinity cut-off for detection with the MSP1 fluorescent probes?\n\n3) Please explain briefly in the Results section the nature of the MSP1 fluorescent probes.\n\n4) It is unusual that CD2 has been used to delineate early B-lineage subsets in Figure 1A. Please provide a reference verifying this marker can be used for this purpose.\n\n5) The decision to separate the anti-MSP1 B cells present on day 35 of the response into 4 populations based solely on CD11b and CD11c staining is confusing. Although around two-thirds of the cells are GC B cells at this time point (Figure 1\u2014figure supplement 2G), it appears that no attempt has been made to exclude GC B cells from the analyses in Figure 2 or the sorting/mRNAseq analysis shown in Figure 3. Why was this not done? Although the AMBs (CD11b+, CD11c+) are presumably not GC B cells (this needs to be clarified), the \"non-AMB\" CD11b-, CD11c- population seems likely to contain many GC B cells as well as potentially other memory B cells. It is unclear how the mRNAseq data are to be meaningfully interpreted in this case. The fact that GC B cells are included in these analyses needs to be clearly indicated and the impact of this on the interpretation of the data spelled out. In particular, it is difficult to see how any meaningful comparison can be made between the gene expression profiles of AMBs and \"non-AMBs\".\n\n6) Please explain more clearly the justification of the genes chosen to display in Figure 3. In the Materials and methods section it mentioned that \"top 50 most up and down regulated gene heat maps\" were produced and then that \"Significant selected marker genes were used to produce separate heat maps split by functional annotation.\" Are the \"Top 50\" gene sets shown anywhere? And are the \"heat maps split by functional annotation\" shown in Figure 3 a subset of those in the \"Top 50\" gene sets? If the answer to both these questions is no, then the reference to these \"Top 50\" sets should be removed.\n\n8) In addition, an indication of what the units on the heat map scale are is required. Is this a z-score or log2-fold change or something else?\n\n7) The data in Figure 4 showing a transient population of CD11b+ CD11c+ B cells appearing 1 day after challenge with MSP1 protein is of dubious relevance to the generation/survival of AMBs. There is no way in which these cells could be described as any type of memory B cell. These data are misleading and should be removed.\n\n8) In the legend for Figure 5I, the first \"MSP121-specific B cells\" should be removed.\n\n9) The lengthy discussion about FCRL5 being used to identify the MSP121-specific Bmem cells was somewhat distracting/confusing in relation to that study's focus on AMBs. It subsequently became clear that it was the marker used to sort the Bmem. As it is not a well described marker for memory B cells it did need to be justified but an addition to line 325 at the end of FCRL5 Results section, \"\u2026 FCLR5 identifies P. chabaudi-specific Bmem\" indicating that it was subsequently used as a marker to sort on the Bmem cells, would make the reason for the focus on FCRL5 more clear.\n\n10) In subsection \u201cPlasmodium-specific Bmem express high levels of FCRL5\u201d and subsection \u201cMice\u201d the authors refer to FCRL5 (and CD80) as markers of \"antigen-experienced B cells.\" Since GC B cells and plasma cells are also antigen experienced B cells this statement needs to be made less general so as it applies to just AMBs and Bmem cells.\n\nReviewer #3:\n\nThe authors generate ki mice that express the heavy chain gene of a previously reported hybridma antibody with reactivity to the Plasmodium chabaudi blood stage surface protein, MSP1. Surprisingly, 60% of all B cells in this model bind MSP1 with only the heavy chain ki allele. B cell numbers appear normal, but the high frequency of MSP1-reactive B cells suggests that the heavy chain alone mediates antigen binding. A much less likely explanation may be that the repertoire is biased towards usage of a restricted light chain set and therefore might be highly clonal.\n\nUnfortunately, I cannot find information on the gene and SHM load, but it is likely mutated. It is also unclear how strongly the na\u00efve cells react to MSP1. A better description and discussion of the ki model is necessary to allow the reader to better judge the findings related to the development of AMBs and to support the physiological relevance of the model and findings. One way of demonstrating this may be to assess the response of the non-ki cells in the transfer model.\n\nThe authors state that they developed the model to study the formation of AMBs in response to mosquito-mediated P. chabaudi infection. AMBs have been described in humans. There is a debate as to whether AMBs represent exhausted/non-functional cells or whether they actively contribute to the immune response. In malaria, the latter is supported by the fact that they show signs of proliferation, CSR, and antibody secretion, but definite proof is difficult to obtain in humans.\n\nUsing a transfer model of the MSP1-specific B cells to obtain more physiological numbers of antigen-specific na\u00efve B cells, the authors demonstrate that a MSP1-specific B cell population resembling human AMBs transiently develops in their model and also after MSP1 immunization. The evidence is based on thorough phenotypic and transcriptome analyses, which reveal a plasmablast-like signature suggesting that the cells are activated, short-lived B cells that actively participate in the immune response. Classical memory B cells are also generated in the model and persist after resolution of the infection. These cells express high levels of FCRL5, which established FCRL5 as a marker for memory B cells in this model.\n\nTechnically, this is a very nice study, which demonstrates that AMBc develop also in a mouse model of malaria after mosquito transmission. The findings provide additional support for the notion that these cells actively participate in the response, but unfortunately there is no direct evidence. Do these cells secrete antibodies against the parasite? What about the phenotype of the endogenous B cells in the model? Is the development of AMBs linked to the chronicity of the response and blood stage parasitemia independent of the antigen or ki gene and presumably high affinity of the antibodies? What is the cellular origin of the cells? Do they develop in GCs?\n\nIt is not relevant to answer all questions in the manuscript, but some clear evidence for the function/role of AMBs should be provided to advance over previous descriptive studies in humans. The model should allow the authors to address these important questions.\n\nReviewer #4:\n\nIn this manuscript the authors present a rigorous analysis of the impact of P. chabaudi infection in mice on antigen-specific (MSP121-specific) B cells from IgH knock-in mice. The authors interpret their data in the context of the documented expansion in humans of what have been termed atypical memory B cells abbreviated here as AMBs. Indeed, defining AMBs in mice as CD11b+ CD11c+ FcRL5+ CD21LO the authors observe increases in the numbers of MSP121-specific B cells with these markers following infection and claim that the infection generated antigen-specific human-like AMB. The problem is that in mice (but not in humans) FcRL5 expression is a discrete/unique marker of marginal zone B cells and B-1a and B-1b cells (often referred to as innate-like B cells) (Davis, (2015); Won et al., (2006)). Thus, by Occam's razor it's fair to assume that authors are describing the impact of infection on marginal zone and B1 B cells. The authors only comment on the expression of FcRL5 in marginal B cells obliquely in the Discussion section.\n\nI believe it is fair to say that the relationship, if any, between B cells in mice that express T-bet (termed age-related B cells or ABCs) and human atypical B cells (also referred to as tissue-like memory B cells) is not established (Portugal et al., 2017), nor are the identities of unusual B cell populations between all human chronic infections and in autoimmunity. Thus, it would seem to be premature to relate the findings here to an aggregate B cell phenotype in humans particularly when the authors have chosen a discrete/unique marker of mouse innate-like B cells to define AMB. I believe the data here merit publication but as a study of marginal zone and B1 B cells not as a model of human atypical memory B cells.\n",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bbb0fbcb-5058-4e6a-814f-d73bd92595d5",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C1",
+      "claim": "A subset of atypical memory B cells accumulates in malaria and several infections, autoimmune disorders and aging in both humans and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of atypical memory B cells accumulates in malaria and several infections, autoimmune disorders and aging in both humans and mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Knox et al., 2017b; Naradikian et al., 2016a; Portugal et al., 2017; Rubtsov et al., 2017 in the manuscript text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "a8d9a7f1-9c0b-49e7-b721-b7c248160b90",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C2",
+      "claim": "Atypical memory B cells have been suggested to be exhausted long-lived memory B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested these cells are exhausted long-lived memory B cells, and their accumulation may contribute to poor acquisition of long-lasting immunity to certain chronic infections, such as malaria and HIV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what has been suggested in the literature, supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "4863571e-f346-4052-acdf-f2e25eb1147b",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C3",
+      "claim": "Plasmodium-specific atypical memory B cells are short-lived.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we generated an immunoglobulin heavy chain knock-in mouse with a BCR that recognizes MSP1 of the rodent malaria parasite, Plasmodium chabaudi. In combination with a mosquito-initiated P. chabaudi infection, we show that Plasmodium-specific atypical memory B cells are short-lived and disappear upon natural resolution of chronic infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the IghNIMP23/+ mouse model showing AMB disappear after infection resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "09c79aa4-bfa1-48e5-b17f-a7a04edc0fa8",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C4",
+      "claim": "Plasmodium-specific atypical memory B cells disappear upon natural resolution of chronic infection.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that Plasmodium-specific atypical memory B cells are short-lived and disappear upon natural resolution of chronic infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry data showing CD11b+CD11c+ MSP121-specific B cells are not detected above background at 155dpi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "772caf3c-42bc-4b0a-82ae-8d405a67262f",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C5",
+      "claim": "Plasmodium-specific atypical memory B cells show features of activation, proliferation, DNA replication, and plasmablasts.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells show features of activation, proliferation, DNA replication, and plasmablasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNAseq data showing expression of Mki67, cell cycle genes, and plasmablast markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "f5491a12-d30b-4e54-b2e0-c19a5beb0627",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C6",
+      "claim": "Plasmodium-specific atypical memory B cells are not a subset of long-lived memory B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that Plasmodium-specific atypical memory B cells are not a subset of long-lived memory B cells, but rather short-lived activated cells, and part of a physiologic ongoing B-cell response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing these cells disappear after infection resolution and have pro-apoptotic gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "215c58ae-86a7-4b49-8f78-32786e4f1b0d",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C7",
+      "claim": "Plasmodium-specific atypical memory B cells are short-lived activated cells and part of a physiologic ongoing B-cell response.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that Plasmodium-specific atypical memory B cells are not a subset of long-lived memory B cells, but rather short-lived activated cells, and part of a physiologic ongoing B-cell response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing AMB are generated in response to immunization and disappear rapidly, and by their activated transcriptional profile.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "a255fc60-3c54-4a21-9df6-ba7836fe81fe",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C8",
+      "claim": "Atypical memory B cells were first described in HIV-viremic subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of infections, AMB were first described in HIV-viremic subjects, and termed tissue-like memory B cells, due to their similarity to an FCRL4-expressing memory B-cell subset found in human tonsillar tissues (Ehrhardt et al., 2005; Moir et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ehrhardt et al., 2005 and Moir et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "7f355eee-223b-4fa2-9a4b-d6d3c5fd5b28",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C9",
+      "claim": "Human atypical memory B cells express FCRL4.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to FCRL4, these cells express relatively high levels of other potentially inhibitory receptors including CD22, CD85j, CD85k, LAIR-1, CD72, and PD-1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations in the introduction describing human AMB characteristics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "0e880422-3af1-4c0a-9481-39132b4a4bca",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C10",
+      "claim": "Human atypical memory B cells express high levels of inhibitory receptors including CD22, CD85j, CD85k, LAIR-1, CD72, and PD-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to FCRL4, these cells express relatively high levels of other potentially inhibitory receptors including CD22, CD85j, CD85k, LAIR-1, CD72, and PD-1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations describing human AMB characteristics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "35825eaf-a8da-4bac-b99d-6a1ab37297bb",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C11",
+      "claim": "Human atypical memory B cells express trafficking receptors including CD11b, CD11c and CXCR3.",
+      "claim_type": "EXPLICIT",
+      "source": "and show a profile of trafficking receptors including expression of CD11b, CD11c and CXCR3, consistent with migration to inflamed tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations describing human AMB characteristics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "865a7389-f404-4c31-bfd4-7eb9f7cd3a49",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C12",
+      "claim": "Human atypical memory B cells are antigen-experienced class-switched B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "They are antigen-experienced class-switched B cells, which lack the expression of CD21 and the hallmark human memory B-cell marker CD27.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations describing human AMB characteristics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "8d2d666d-24a5-4d92-baea-a15a60fb54b4",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C13",
+      "claim": "Human atypical memory B cells lack expression of CD21 and CD27.",
+      "claim_type": "EXPLICIT",
+      "source": "They are antigen-experienced class-switched B cells, which lack the expression of CD21 and the hallmark human memory B-cell marker CD27.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations describing human AMB characteristics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "522a0e56-122d-46b8-9433-3a0d689c1dd4",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C14",
+      "claim": "Human atypical memory B cells express the transcription factor T-bet.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies demonstrated the expression of the transcription factor T-bet and the cytokine IFN\u03b3 by these cells, also characteristic of Th1 CD4+ T cells (Knox et al., 2017b; Obeng-Adjei et al., 2017; Portugal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Knox et al., 2017b; Obeng-Adjei et al., 2017; Portugal et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "3196a26a-e9b1-4471-b570-8cec0cdcee33",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C15",
+      "claim": "Human atypical memory B cells express IFN\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies demonstrated the expression of the transcription factor T-bet and the cytokine IFN\u03b3 by these cells, also characteristic of Th1 CD4+ T cells (Knox et al., 2017b; Obeng-Adjei et al., 2017; Portugal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Knox et al., 2017b; Obeng-Adjei et al., 2017; Portugal et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "caed77d9-d0e7-45bd-aafe-eea3539998a2",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C16",
+      "claim": "Atypical memory B cells show poor functional capacity upon in vitro re-stimulation with BCR ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their poor functional capacity upon in vitro re-stimulation with BCR ligands, AMB were characterized as dysfunctional B cells, and increased frequencies of these cells was proposed to be a consequence of B-cell exhaustion driven by chronic inflammation and stimulation, drawing parallels with T-cell exhaustion during chronic viral infections (Moir et al., 2008; Portugal et al., 2015; Sullivan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Moir et al., 2008; Portugal et al., 2015; Sullivan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "beb77fa4-b11d-48ca-a23a-20a37e1cf4ad",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C17",
+      "claim": "The IghNIMP23/+ mice had approximately 60% of B cells specific for MSP121.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, The IghNIMP23/+ mice had a greatly increased frequency of B cells specific for MSP121 (approximately 60% of the total B-cell compartment), as demonstrated by flow cytometry analysis of splenocytes with a MSP121 fluorescent probe consisting of biotinylated recombinant MSP121 loaded on streptavidin-PE (Figure 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "67dcdae3-fe77-4eb3-a61e-8bd3fdd42375",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C18",
+      "claim": "Most endogenous light chains pair with the NIMP23 heavy chain to generate a BCR with detectable binding to MSP121.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in this model, a recombinant light chain is not required to bring about specificity. This suggest that most endogenous light chains will pair with the NIMP23 heavy chain to generate a BCR with detectable binding to MSP121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that high frequency of MSP121-specific B cells are detected without introducing a specific light chain.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "28c43758-8a1f-48da-96c4-1d1fec867af3",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C19",
+      "claim": "NIMP23\u2192Rag2-/- mice infected with P. chabaudi by mosquito bite showed a similar course of parasitemia to control WT\u2192Rag2-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "NIMP23\u2192Rag2-/- mice infected with P. chabaudi by mosquito bite, showed a similar course of parasitemia to that of control WT\u2192Rag2-/- mice (Figure 1\u2014figure supplement 2F), and C57BL/6J wt mice (Brugat et al., 2017; Spence et al., 2013; Spence et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by parasitemia data shown in Figure 1\u2014figure supplement 2F and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "2f585c8e-e422-4f90-8c62-0dcb021ffe89",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C20",
+      "claim": "MSP121-specific B cells showed a robust response to P. chabaudi infection with increased germinal center and class-switched B cells at 35 days post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the MSP121-specific IghNIMP23/+ B cells (CD45.2+MSP121+) in NIMP23\u2192Rag2-/- chimeras showed a robust response to the infection, as demonstrated by a dramatic increase in the proportions and numbers of GL-7+CD38lo germinal centers (GC) and IgG2b+IgD\u2014 class-switched B cells in the spleen at 35 days post-infection (dpi) (Figure 1\u2014figure supplement 2G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1\u2014figure supplement 2G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "3c2f1a28-8eb3-4633-984c-90dd10474f0b",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C21",
+      "claim": "A distinct CD11b+CD11c+ MSP121-specific B-cell subset was detected at 28-35dpi during chronic P. chabaudi infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected an increased number of cells in a distinct CD11b+CD11c+ MSP121-specific B-cell subset at 28-35dpi, in the chronic phase of P. chabaudi infection (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "bc074091-4832-4cfe-9445-a40da0cad8bb",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C22",
+      "claim": "The CD11b+CD11c+ MSP121-specific B-cell subset showed high expression of FCRL5 and low expression of CD21 and IgD.",
+      "claim_type": "EXPLICIT",
+      "source": "This subset showed several AMB characteristics, including high expression of FCRL5 and low expression of CD21 and IgD (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "56267e5d-370a-4cfd-b153-74bd1c5e6de7",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C23",
+      "claim": "The CD11b+CD11c+ MSP121-specific B-cell subset was enriched with cells expressing CD80 and CD273.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the CD11b+CD11c+ MSP121-specific B-cell subset was enriched with cells expressing CD80 and CD273 (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "5691804d-1e71-4a9b-a9b7-da6aa2024b17",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C24",
+      "claim": "CD11b+CD11c+ MSP121-specific B cells were not significantly detected above background level after resolution of infection (155dpi onwards).",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the numbers of CD11b+CD11c+ MSP121-specific B cells were not significantly higher than background level (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 2A-B at 155dpi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "5b138989-e12b-4e98-adf0-1974fed6ebdc",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C25",
+      "claim": "CD11b+CD11c+ MSP121-specific B cells highly expressed mouse homologues of genes upregulated in human AMB including IgG, Cxcr3, Tbx21, Lair1 and Fcrl5.",
+      "claim_type": "EXPLICIT",
+      "source": "A series of hallmark genes upregulated in human AMB were also upregulated in CD11b+CD11c+ MSP121-specific B cells, including IgG (Ighg2c and Ighg2b), Cxcr3, Tbx21 (T-bet), Lair1 and Fcrl5 (Figure 3, genes in red boxes, and references in Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "da0ace5b-2c95-4a52-9488-5cfedc614284",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C26",
+      "claim": "MSP121-specific CD11b+CD11c+ B cells showed upregulation of Ifng, Aicda, inhibitory receptors, antigen-experienced/memory markers, and class-switched immunoglobulins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the MSP121-specific CD11b+CD11c+ B-cell subset showed upregulation of Ifng, Aicda, a large array of inhibitory receptors [including Pd1, Cd72, Cd85k, Fcgr2b (CD32b), Siglece], antigen-experienced/memory markers [Cd80, Cd86, Nt5e (CD73) and high Cd38], and additional class-switched immunoglobulins (i.e. Igha, Ighg1 and Ighg3), all of which have been shown to be upregulated on human AMB (Figure 3C\u2013G, references in Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 3C-G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "71fc558b-3731-4436-8aab-4771ea4f9d3f",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C27",
+      "claim": "MSP121-specific CD11b+CD11c+ B cells expressed Galectins (Lgals1 and Lgals3).",
+      "claim_type": "EXPLICIT",
+      "source": "These cells also expressed Galectins (Lgals1 and Lgals3), previously implicated in B-cell anergy (Clark et al., 2007) (Figure 3H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 3H and citation to Clark et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "0a11dfd0-d182-443c-8bb9-383a8143d6e6",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C28",
+      "claim": "MSP121-specific CD11b+CD11c+ B cells displayed a pro-apoptotic program with high expression of Fasl and low expression of Bcl2.",
+      "claim_type": "EXPLICIT",
+      "source": "and displayed a pro-apoptotic program (e.g. high expression of Fasl, and low expression of Bcl2) (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "90c52dba-615a-4f11-b8c1-1041e6b33c2b",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C29",
+      "claim": "MSP121-specific CD11b+CD11c+ B cells showed upregulation of Mki67, indicative of proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in agreement with data on human AMB, MSP121-specific CD11b+CD11c+ B cells showed upregulation of Mki67 (Figure 3J), indicative of proliferation",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "fac7f936-eeb9-48f3-b7c8-f0b27c4fd720",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C30",
+      "claim": "MSP121-specific CD11b+CD11c+ B cells had characteristics of plasmablasts and/or plasma cells, including upregulation of Cd138, Prdm1 and Xbp1, and low expression of Cxcr5, Pax5, and Bcl6.",
+      "claim_type": "EXPLICIT",
+      "source": "and had characteristics of plasmablasts and/or plasma cells, including upregulation of Cd138, Prdm1 (Blimp1) and Xbp1, and low expression of Cxcr5, Pax5, and Bcl6 (Figure 3B and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 3B and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "c8257c6b-941a-479e-8cbd-8004c419a799",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C31",
+      "claim": "MSP121-specific CD11b+CD11c+ B cells showed low expression of Irf4 and S1p1, suggesting they may be in a pre-plasmablast or pre-migratory plasma-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these cells showed low expression of Irf4 and S1p1, suggesting that they may be in a pre-plasmablast or pre-migratory plasma-cell stage (Kabashima et al., 2006; Kallies et al., 2007) (Figure 3K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 3K and citations to Kabashima et al., 2006 and Kallies et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "11207ab4-1370-44a2-b3d1-04a7054e31dd",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C32",
+      "claim": "CD11b+CD11c+ MSP121-specific B cells showed low expression of Cd40, Cr2, Ms4a1, and Cd24a.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, and similar to human AMB, CD11b+CD11c+ MSP121-specific B cells showed low expression of Cd40, Cr2 (CD21), Ms4a1 (CD20), and Cd24a (Figure 3L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 3L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "8b0ec174-3a98-4324-bbe6-bd9963517723",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C33",
+      "claim": "Gene Set Enrichment Analysis showed MSP121-specific CD11b+CD11c+ AMB were enriched for gene sets corresponding to cell cycle, DNA replication, energy generation/consumption, regulation of apoptosis, activation of NF-\u03baB, and BCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the gene sets yielding the top 50 significant (fdr <0.001) highest normalized enrichment score (NES) we obtained gene sets corresponding to cell cycle, DNA replication, generation/consumption of energy, regulation of apoptosis, activation of NF-\u03baB on B cells, and downstream signaling events of the BCR (Supplementary file 2 and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Supplementary file 2 and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "6b63f52b-d62c-4a4b-aeaa-9bae31fc157d",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C34",
+      "claim": "Substantial numbers of MSP121-specific CD11b+CD11c+ B cells were observed in spleens of IghNIMP23/+ mice 24 hr post-immunization with R848 and MSP121.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed substantial numbers of MSP121-specific CD11b+CD11c+ B cells in the spleens of IghNIMP23/+ mice 24 hr post-immunization (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "b2dcc9d9-45df-4c04-a0f0-d651ed88e9b6",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C35",
+      "claim": "MSP121-specific CD11b+CD11c+ B cells generated after immunization expressed increased levels of FCRL5 and CD80.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells expressed increased levels of both FCRL5 and CD80 (Figure 4B\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "f14b52a8-88d1-4d92-8975-50eb00f36a4e",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C36",
+      "claim": "MSP121-specific CD11b+CD11c+ B cells generated after immunization did not display germinal center characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "and did not display GC characteristics (Figure 4D), similar to the MSP121-specific CD11b+CD11c+FCRL5+ atypical B cells generated following Plasmodium infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "015a2697-6853-4bb4-8cb9-d97250b31ded",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C37",
+      "claim": "MSP121-specific CD11b+CD11c+ B cells observed after immunization appeared only transiently and could no longer be detected at 3 and 7 days post-immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "The MSP121-specific CD11b+CD11c+ B cells observed after immunization appeared only transiently, as they could no longer be detected at 3 and 7d post-immunization (Figure 4A and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4A and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "f8addd56-43df-4a92-a67f-b99e8dd33208",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C38",
+      "claim": "CD80+CD273+, CD80+CD273\u2014 and CD80\u2014CD273+ MSP121-specific B cells, both class-switched and non-class-switched, were detected above background levels at 28-35dpi in P. chabaudi-infected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, CD80+CD273+, CD80+CD273\u2014 and CD80\u2014CD273+ MSP121-specific B cells, both class-switched (IgM/Dlo) and non-class-switched (IgM/Dhi), were readily detected above background levels at 28-35dpi in P. chabaudi-infected NIMP23\u2192Rag2-/- mixed BM chimeras (Figure 5B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 5B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "053d2e70-d750-45ef-96e9-909e4fa6bf6c",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C39",
+      "claim": "After resolution of infection (155-170dpi), the numbers of CD80+CD273+ and CD80+CD273\u2014 MSP121-specific B cells were either sustained or increased, while the CD80\u2014CD273+ population decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "After resolution of infection (155-170dpi), the numbers of CD80+CD273+ and CD80+CD273\u2014 MSP121-specific B cells were either sustained or increased, while the CD80\u2014CD273+ population decreased, compared with 28-35dpi (Figure 5A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "1aeb8363-3f20-41b7-b0e8-26c5b7ae531d",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C40",
+      "claim": "All three MSP121-specific Bmem subsets showed high CD38 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "All three MSP121-specific Bmem subsets showed high CD38 expression (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 5E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "0e0cbd89-64e5-43ea-bb51-09056416317e",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C41",
+      "claim": "MSP121-specific GC B cells detected at 28-35dpi did not express either CD80 or CD273.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the MSP121-specific GC B cells detected at 28-35dpi did not express either CD80 or CD273, further distinguishing GC from memory and atypical memory P. chabaudi-specific B-cell subsets (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "f236897e-32df-4667-9675-61e53b2bebbc",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C42",
+      "claim": "No MSP121-specific GC B cells were detected above background level after resolution of the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "No MSP121-specific GC B cells were detected above background level after resolution of the infection (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "7ea991da-51c6-4aec-81ee-4163ebc275ab",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C43",
+      "claim": "Approximately 70% of MSP121-specific CD11b+CD11c+ AMB observed at days 28-35pi expressed either CD80, CD273 or a combination of both.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, and in accordance with Figure 3, approximately 70% of the MSP121-specific CD11b+CD11c+ AMB observed at days 28-35pi expressed either CD80, CD273 or a combination of both (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "a96fc89d-3d27-404c-8e6e-3113e68fd010",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C44",
+      "claim": "After resolution of infection (155-170dpi), MSP121-specific B cells expressing different combinations of CD80 and CD273 all expressed very high levels of FCRL5.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed that after resolution of infection (155-170dpi), MSP121-specific B cells expressing different combinations of CD80 and CD273 (CD80+CD273+, CD80-CD273+ or CD80+CD273-) all expressed very high levels of FCRL5, in contrast to CD80-CD273- MSP121-specific B cells that express no memory markers at this stage (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "7d9914b2-a56f-4beb-8cd5-423a5ead7d35",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C45",
+      "claim": "FCRL5 might be a marker for all Bmem.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that FCRL5 might be a marker for all Bmem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that all memory B cell subsets express high FCRL5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "fa3d6e89-90c1-41ec-8549-2645c196714d",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C46",
+      "claim": "PhenoGraph analysis identified six clusters of MSP121-specific B cells with memory characteristics displaying high expression of CD38, CD80 and/or CD273, and variable expression of IgD, all of which expressed high levels of FCRL5.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis identified six clusters of cells with memory characteristics displaying high expression of CD38, CD80 and/or CD273, and variable expression of IgD, all of which expressed high levels of FCRL5 (Figure 6C: clusters identified with purple arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PhenoGraph analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "9dfa9972-668f-4312-9ca6-62edd77c0269",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C47",
+      "claim": "MSP121-specific FCRL5hi B cells showed high expression of hallmark memory B cell markers Cd38, Cd80, Cd86, Nt5e and Pdcd1lg2.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the MSP121-specific FCRL5hi B cell subset showed high expression of genes encoding the hallmark memory B cell markers Cd38, Cd80, Cd86, Nt5e (CD73) and Pdcd1lg2 (CD273), when compared with either MSP121-specific FCRL5\u2014 B cells sorted at the same time or MSP121-specific B cells sorted from na\u00efve mice (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "0bb9d429-9933-4d45-8175-c919213e74a3",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C48",
+      "claim": "MSP121-specific FCRL5hi B cells sorted after resolution of infection upregulated the anti-apoptotic Bcl2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the MSP121-specific FCRL5hi B cells sorted after resolution of the infection upregulated the anti-apoptotic Bcl2 gene, which is an additional hallmark characteristic of memory B cells (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "9bb9a308-fa84-4e04-b41c-9425881d6862",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C49",
+      "claim": "FCRL5 identified CD80+ and CD273+ MSP121-specific Bmem subsets generated following immunization with a model antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, FCRL5 also identified CD80+ and CD273+ MSP121-specific Bmem subsets generated following immunization with a model antigen (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "da16cac5-a8b1-4a14-95d7-1288b7867558",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C50",
+      "claim": "Principal component analysis demonstrated a strikingly distinct transcriptome of MSP121-specific AMB from that of MSP121-specific Bmem and all other MSP121-specific B-cell subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) demonstrated a strikingly distinct transcriptome of MSP121-specific AMB from that of MSP121-specific Bmem, as well as all other MSP121-specific B-cell subsets sorted in this study (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PCA analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "281dc043-37dc-45d6-a1d3-f166401954d9",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C51",
+      "claim": "MSP121-specific AMB and Bmem shared the expression of mouse memory markers including Cd80, Fcrl5, Nt5e, and Cd86.",
+      "claim_type": "EXPLICIT",
+      "source": "MSP121-specific AMB sorted during chronic P. chabaudi infection, and MSP121-specific Bmem sorted after resolution of the infection shared the expression of a series of mouse memory markers, including Cd80, Fcrl5, Nt5e (CD73), and Cd86 (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "691a7fd8-2cf3-4133-9fe1-a73fb70f2827",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C52",
+      "claim": "MSP121-specific Bmem showed the highest levels of expression of the anti-apoptotic Bcl2 gene, while MSP121-specific AMB showed the lowest levels.",
+      "claim_type": "EXPLICIT",
+      "source": "While MSP121-specific Bmem from after infection resolution showed the highest levels of expression of the anti-apoptotic Bcl2 gene, MSP121-specific AMB sorted during chronic P. chabaudi infection showed the lowest levels of expression of this hallmark anti-apoptotic gene (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "e7bae5af-487c-4818-8217-18858aa33531",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C53",
+      "claim": "MSP121-specific AMB expressed high levels of pro-apoptotic genes Bad, Bax, Fas and Fasl.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to MSP121-specific Bmem, MSP121-specific AMB expressed high levels of the pro-apoptotic genes Bad, Bax, Fas and Fasl (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "3b9530fb-fca9-4550-b603-6bd170b3c7ec",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C54",
+      "claim": "MSP121-specific AMB expressed very high levels of class-switched immunoglobulins, including Igha, Ighg1, Ighg2b, Ighg2c and Ighg3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, MSP121-specific AMB expressed very high levels of class-switched immunoglobulins, including Igha, Ighg1, Ighg2b, Ighg2c and Ighg3 (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "61299981-608b-42f9-9220-4cf6de4c4c79",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C55",
+      "claim": "MSP121-specific AMB highly expressed Cd11b, Cd11c, Tbx21, Ifng and Pdcd1, all hallmarks of human AMB.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, MSP121-specific AMB highly expressed Cd11b, Cd11c, Tbx21, Ifng and Pdcd1 (Figure 7E), all hallmarks of human AMB",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "09eb9488-924b-4e70-8158-0f196a0f3ce4",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C56",
+      "claim": "The increased expression of Mki67, pro-apoptotic genes and class-switched immunoglobulins in AMB suggests that they resemble activated B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased expression of Mki67, pro-apoptotic genes and class-switched immunoglobulins in AMB suggests that they resemble activated B cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the gene expression patterns observed in AMB.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "91811a0c-db69-4cb2-a623-27660df5053b",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C57",
+      "claim": "Bmem express much less Mki67 (similar to na\u00efve cells) and present an anti-apoptotic gene expression pattern, consistent with being long-lived quiescent B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Bmem express much less Mki67 (similar to na\u00efve cells) and present an anti-apoptotic gene expression pattern, consistent with being long-lived quiescent B cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the gene expression patterns observed in Bmem.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "4500630f-ba46-4947-81fe-34a538963cb8",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C58",
+      "claim": "Mouse FCRL5 has been shown to be expressed on marginal zone and B1 B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse FCRL5 has been shown to be expressed on marginal zone (MZ) and B1 B cells (Won et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Won et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "c2e77ef0-7f69-4627-8393-77a00d694cf7",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C59",
+      "claim": "MSP121-specific CD11b+CD11c+ AMB are not MZ or B1 B cells based on canonical marker expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying all these canonical markers, we found no other similarities between B1/MZ and MSP121-specific CD11b+CD11c+ AMB to suggest a relationship between these subsets (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq and flow cytometry data shown in Figure 8A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "dd4b2be9-fa05-4dbd-af0a-e03f3ddeca06",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C60",
+      "claim": "Unlike MZ and B1 B cells, MSP121-specific AMB were class-switched and expressed very high levels of IgG.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, unlike MZ and B1 B cells, MSP121-specific AMB were class-switched and expressed very high levels of IgG (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "7622a837-6811-461b-8dd7-1ebb1df3d8a4",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C61",
+      "claim": "MSP121-specific AMB did not display a GC phenotype (CD38hiGL-7lo).",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis demonstrated that MSP121-specific AMB did not display a GC phenotype (i.e. CD38hiGL-7lo) (Figure 8C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "c958dd6a-366c-4bea-b9c2-1317d934d769",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C62",
+      "claim": "MSP121-specific CD38loGL-7hi GC B cells showed low expression of both CD11b and CD11c.",
+      "claim_type": "EXPLICIT",
+      "source": "while the MSP121-specific CD38loGL-7hi GC B cells showed low expression of both CD11b and CD11c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from flow cytometry data showing GC cells are distinct from AMB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "3e3674fb-c07f-4506-81e1-ca2cfae0f2f6",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C63",
+      "claim": "P. chabaudi-specific AMB represent a distinct subset of short-lived activated B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, these data further show that P. chabaudi-specific AMB represent a distinct subset of short-lived activated B cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined data showing AMB are distinct from other B cell subsets and are short-lived.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "ca9e7d3a-fedf-4a0c-890c-88b72fb7652a",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C64",
+      "claim": "Reduction of HIV plasma viremia by ART resulted in a significant reduction of HIV-specific AMB without altering the frequency of HIV-specific Bmem.",
+      "claim_type": "EXPLICIT",
+      "source": "reduction of HIV plasma viremia by ART resulted in a significant reduction of HIV-specific AMB without altering the frequency of HIV-specific Bmem (de Bree et al., 2017; Kardava et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to de Bree et al., 2017 and Kardava et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "d319d0ea-60fd-4597-b31d-5316ec3bd10e",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C65",
+      "claim": "Individuals living in high malaria endemicity present higher frequencies of AMB than individuals living in areas with moderate transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "individuals living in high malaria endemicity present higher frequencies of AMB than individuals living in areas with moderate transmission (Illingworth et al., 2013; Sullivan et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Illingworth et al., 2013 and Sullivan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "07b1378a-1bf5-42cf-9225-a5fb5f469d4d",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C66",
+      "claim": "Repetitive Plasmodium episodes result in higher frequencies of AMB.",
+      "claim_type": "EXPLICIT",
+      "source": "repetitive Plasmodium episodes result in higher frequencies of AMB (Obeng-Adjei et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Obeng-Adjei et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "ca502b76-5c23-4d81-ad13-8ffa180a0efe",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C67",
+      "claim": "The percentage of AMB is larger in children with persistent asymptomatic Plasmodium falciparum parasitemia as compared with parasite-free children.",
+      "claim_type": "EXPLICIT",
+      "source": "the percentage of AMB is larger in children with persistent asymptomatic Plasmodium falciparum parasitemia as compared with parasite-free children (Weiss et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weiss et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "ef2abd49-21a0-4f06-885c-0ef86e184943",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C68",
+      "claim": "Previously exposed subjects significantly reduce the frequency of AMB following a year of continuous absence of exposure to Plasmodium falciparum infection.",
+      "claim_type": "EXPLICIT",
+      "source": "previously exposed subjects significantly reduce the frequency of AMB following a year of continuous absence of exposure to Plasmodium falciparum infection (Ayieko et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ayieko et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "2a021f29-6df1-40bf-9c15-5b54d0f82c9a",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C69",
+      "claim": "Constant immune activation rather than impaired memory function leads to the accumulation of AMB in malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations all support the view that constant immune activation rather than impaired memory function leads to the accumulation of AMB in malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observations that AMB frequency correlates with ongoing infection and decreases with infection resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "bb6c84a8-104c-4471-bf52-bda9d551f0b9",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C70",
+      "claim": "P. chabaudi-specific Bmem included both class-switched and non-class-switched cells, which show different responses to a secondary challenge infection.",
+      "claim_type": "EXPLICIT",
+      "source": "P. chabaudi-specific Bmem included both class-switched and non-class-switched cells, which show different responses to a secondary challenge infection (Krishnamurty et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Krishnamurty et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "c6e56a0f-7953-40c5-bb21-5d0f94fc70e7",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C71",
+      "claim": "The expansion of AMB in malaria is not a consequence of B-cell exhaustion, but rather a physiologic stage of B-cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the expansion of AMB in malaria is not a consequence of B-cell exhaustion, but rather a physiologic stage of B-cell activation, and that these cells are sustained in high frequencies by ongoing chronic infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the data showing AMB are short-lived, activated cells that disappear after infection resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "0322dab5-b399-49fa-933b-dead23988d72",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C72",
+      "claim": "Plasmodium-specific AMB are sustained in high frequencies by ongoing chronic infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the expansion of AMB in malaria is not a consequence of B-cell exhaustion, but rather a physiologic stage of B-cell activation, and that these cells are sustained in high frequencies by ongoing chronic infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the data showing AMB disappear after infection resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "7032cd44-8887-4bdd-a136-80101724e6c7",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C73",
+      "claim": "Robust expansion of Plasmodium-specific AMB does not hinder clearance of the infection, activation of germinal centers, or generation of Plasmodium-specific long-lived quiescent Bmem upon resolution of the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our data demonstrate that robust expansion of Plasmodium-specific AMB does not hinder clearance of the infection, activation of germinal centers, or generation of Plasmodium-specific long-lived quiescent Bmem upon resolution of the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing infection is cleared, GC are formed, and Bmem persist after infection resolution despite AMB expansion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "c3b35ff8-068c-4c5d-94fd-fe4bb723dec6",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C74",
+      "claim": "T-bet+ atypical B cells are critical to eradicate various murine viral infections.",
+      "claim_type": "EXPLICIT",
+      "source": "T-bet+ atypical B cells are critical to eradicate various murine viral infections (Barnett et al., 2016; Rubtsova et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barnett et al., 2016 and Rubtsova et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "c0216037-bc3d-4ce1-8545-be356459e826",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C75",
+      "claim": "Yellow fever and vaccinia vaccinations of humans stimulated an acute T-bet+ B-cell response.",
+      "claim_type": "EXPLICIT",
+      "source": "and a recent study showed that yellow fever and vaccinia vaccinations of humans stimulated an acute T-bet+ B-cell response and suggested that these T-bet+ B-cell population may function as an early responder during acute viral infections (Knox et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Knox et al., 2017a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "1cd3db85-f44e-4781-b93d-bfd7dca34209",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C76",
+      "claim": "Expansion of AMB associated with malaria is driven by IFN\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, similar to ABC, expansion of human AMB associated with malaria is driven by IFN\u03b3 (Obeng-Adjei et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Obeng-Adjei et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "c8883783-1841-403a-992b-c8233520fdff",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C77",
+      "claim": "IL-21 directly promotes T-bet expression in B cells in the context of TLR engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-21, which is highly expressed by follicular helper T cells in response to Plasmodium infection (Carpio et al., 2015; Obeng-Adjei et al., 2015; P\u00e9rez-Mazliah et al., 2015), also directly promotes T-bet expression in B cells in the context of TLR engagement (Naradikian et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Carpio et al., 2015; Obeng-Adjei et al., 2015; P\u00e9rez-Mazliah et al., 2015; Naradikian et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "99ee6358-688f-4690-81d2-ef8ec57c8e13",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C78",
+      "claim": "BCRs cloned from P. falciparum-specific AMB from malaria-exposed adults encode P. falciparum-specific IgG antibodies, which could contribute to P. falciparum-specific IgG antibodies in serum.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it has been shown that BCRs cloned from P. falciparum-specific AMB from malaria-exposed adults encode P. falciparum-specific IgG antibodies, which could contribute to P. falciparum-specific IgG antibodies in serum (Muellenbeck et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Muellenbeck et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "6c7f3f8d-c83c-4ebf-8c70-b280982338a3",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C79",
+      "claim": "P. falciparum-specific AMB do not prevent, but rather contribute to the control of Plasmodium infection.",
+      "claim_type": "EXPLICIT",
+      "source": "These authors proposed that P. falciparum-specific AMB do not prevent, but rather contribute to the control of Plasmodium infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what other authors proposed, supported by citation to Muellenbeck et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "07515d30-f5b8-44c6-b8fc-7450a32d7973",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C80",
+      "claim": "Generation of Plasmodium-specific AMB does not prevent the generation of Plasmodium-specific Bmem.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we show that generation of Plasmodium-specific AMB does not prevent the generation of Plasmodium-specific Bmem, and does not prevent resolution of the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing both AMB and Bmem are present during infection, and Bmem persist after resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "7b535238-bdce-4db6-bf3d-0548ada63b74",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C81",
+      "claim": "Generation of Plasmodium-specific AMB does not prevent resolution of the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we show that generation of Plasmodium-specific AMB does not prevent the generation of Plasmodium-specific Bmem, and does not prevent resolution of the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing infection is resolved despite AMB generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "0a1de35e-0fb7-4533-b109-293b1c892f9c",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C82",
+      "claim": "In this chronic P. chabaudi infection, AMB require ongoing antigenic stimulation driven by the sub-patent infection to persist.",
+      "claim_type": "EXPLICIT",
+      "source": "In this chronic P. chabaudi infection, it appears that AMB require ongoing antigenic stimulation driven by the sub-patent infection to persist, and do not represent a true long-lived 'memory' B cell subset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that AMB disappear after infection resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "d1c21491-a304-4985-9362-f46f71bd729a",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C83",
+      "claim": "AMB do not represent a true long-lived 'memory' B cell subset.",
+      "claim_type": "EXPLICIT",
+      "source": "In this chronic P. chabaudi infection, it appears that AMB require ongoing antigenic stimulation driven by the sub-patent infection to persist, and do not represent a true long-lived 'memory' B cell subset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the data showing AMB are short-lived and disappear after infection resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "68a6b83b-f2ae-49d4-a4f0-3df899ce1b00",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C84",
+      "claim": "The IghNIMP23/+ mice were healthy with no unusual behavioral or physical characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "The IghNIMP23/+ mice were healthy, with no unusual behavioral or physical characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the mouse model generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "0096ad91-ede3-4b4a-a16e-54d189eb0688",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C85",
+      "claim": "There were no alterations in B cell populations in the bone marrow of IghNIMP23/+ mice compared to wild-type littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no alterations in total cellularity, pro-B, pre-B, immature B, mature B, total B220+CD19+ B cells, and plasma cells in the bone marrow (Figure 1A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "525540fb-497b-4663-9d92-40789e908b4d",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C86",
+      "claim": "There were no alterations in B cell populations in the spleen of IghNIMP23/+ mice compared to wild-type littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "and no alterations in number of T1, T2, T3, follicular, marginal zone, germinal center B cells, plasmablasts, plasma cells, and total cellularity in the spleen of IghNIMP23/+ mice (Figure 1C\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "a13c5a48-330d-48f3-80e1-89201476264f",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C87",
+      "claim": "Infection of C57BL/6J wt mice with P. chabaudi by mosquito bite gives rise to a short (48 hr) pre-erythrocytic infection, followed by an acute blood parasitemia peaking approximately 10d post-transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection of C57BL/6J wt mice with P. chabaudi by mosquito bite gives rise to a short (48 hr) pre-erythrocytic infection, followed by an acute blood parasitemia peaking approximately 10d post-transmission. Thereafter, the infection is rapidly controlled, reaching very low parasitemias by 15d post-transmission, with a subsequent prolonged (~90 d), but low-level chronic infection before parasite elimination (Brugat et al., 2017; Spence et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brugat et al., 2017 and Spence et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "0b3083cf-09a2-4132-9e17-20c8d1ea9153",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C88",
+      "claim": "P. chabaudi infection is rapidly controlled, reaching very low parasitemias by 15d post-transmission, with a subsequent prolonged (~90 d), but low-level chronic infection before parasite elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereafter, the infection is rapidly controlled, reaching very low parasitemias by 15d post-transmission, with a subsequent prolonged (~90 d), but low-level chronic infection before parasite elimination (Brugat et al., 2017; Spence et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brugat et al., 2017 and Spence et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "b60450e3-429f-4041-9e72-4459e18623c1",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C89",
+      "claim": "Mouse FCRL5 most closely resembles human FCRL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse FCRL5 most closely resembles human FCRL3 and is the only mouse FCRL-family member which contains both ITIM and ITAM motifs in its cytoplasmic tail (Davis, 2007; Davis et al., 2004; Won et al., 2006; Zhu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Davis, 2007; Davis et al., 2004; Won et al., 2006; Zhu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "8e1d1f15-707a-4603-9165-d1b8763f989c",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C90",
+      "claim": "Mouse FCRL5 is the only mouse FCRL-family member which contains both ITIM and ITAM motifs in its cytoplasmic tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse FCRL5 most closely resembles human FCRL3 and is the only mouse FCRL-family member which contains both ITIM and ITAM motifs in its cytoplasmic tail (Davis, 2007; Davis et al., 2004; Won et al., 2006; Zhu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Davis, 2007; Davis et al., 2004; Won et al., 2006; Zhu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "e0269e5b-79a2-459b-9be7-24dcd9769db5",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C91",
+      "claim": "CD80 and CD273 identify mouse B cells that are antigen-experienced and potentially memory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our flow cytometry panel for mouse AMB included antibodies against CD11b, CD11c, FCRL5, CD21, IgD, and also CD80 and CD273 which identify mouse B cells that are antigen-experienced and potentially memory cells (Anderson et al., 2007; Tomayko et al., 2010; Zuccarino-Catania et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Anderson et al., 2007; Tomayko et al., 2010; Zuccarino-Catania et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "903480db-6e11-464c-9672-b72c7feb038c",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C92",
+      "claim": "CD11b+CD11c+ MSP121-specific mouse AMB present during the chronic phase of P. chabaudi infection are very similar to human AMB described in several chronic infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that CD11b+CD11c+ MSP121-specific mouse AMB present during the chronic phase of P. chabaudi infection are very similar to human AMB described in several chronic infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the transcriptome analysis showing similar gene expression patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "c3d96562-9e8d-45e7-ba64-0cabb5b7b15a",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "claim_id": "C93",
+      "claim": "CD11b+CD11c+ MSP121-specific B cells show features of activation, proliferation, DNA replication and plasmablasts, resembling previous observations in human AMB.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this B-cell subset shows features of activation, proliferation, DNA replication and plasmablasts, resembling previous observations in human AMB (Muellenbeck et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNAseq data and citation to Muellenbeck et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1544b98f-f730-421c-a450-28f90ef8a2ae",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The IghNIMP23/+ knock-in mouse model was successfully generated with approximately 60% of B cells specific for MSP121, and showed normal B cell development in bone marrow and spleen compared to wild-type littermates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 demonstrate normal B cell populations in the knock-in mice, and C17 shows high frequency of MSP121-specific B cells by flow cytometry. The data from Figure 1 provides clear evidence that the mouse model was successfully generated without developmental abnormalities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "2b9e35a8-fdf2-40cb-9726-a8c742b69da2",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Most endogenous light chains pair with the NIMP23 heavy chain to generate a BCR with detectable binding to MSP121.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 is supported by the observation that high frequencies of MSP121-specific B cells are detected without introducing a specific light chain (C17), suggesting promiscuous light chain pairing. This is a reasonable inference from the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "86922db9-1a2b-4191-acc9-0b609442e512",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NIMP23\u2192Rag2-/- chimeric mice showed normal parasitemia kinetics and robust MSP121-specific B cell responses to P. chabaudi infection, including germinal center formation and class-switching at 35 days post-infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 are supported by parasitemia data (Figure 1\u2014figure supplement 2F) and flow cytometry showing increased GC and class-switched B cells (Figure 1\u2014figure supplement 2G-H). This validates the functionality of the model system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "1a8c56e0-f327-4af8-a0e9-0891b7b58f51",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A distinct CD11b+CD11c+FCRL5hi MSP121-specific B cell subset with AMB characteristics was detected during chronic P. chabaudi infection (28-35dpi) but disappeared after infection resolution (155dpi onwards).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by flow cytometry data in Figure 2 showing the appearance and disappearance of CD11b+CD11c+ cells with AMB markers. The temporal dynamics are clearly demonstrated with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "271341be-3c51-4ced-bbe7-4156cbaf63d4",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MSP121-specific CD11b+CD11c+ B cells showed transcriptional profiles highly similar to human AMB, including expression of hallmark AMB genes, inhibitory receptors, memory markers, pro-apoptotic genes, proliferation markers, and plasmablast characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 and C92-C93 are supported by comprehensive RNAseq data shown in Figure 3. The transcriptional analysis demonstrates strong similarity to human AMB across multiple functional gene categories, providing robust molecular characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "985fa9f7-1319-435c-bd61-f33df39f4ea4",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gene Set Enrichment Analysis showed MSP121-specific CD11b+CD11c+ AMB were enriched for gene sets corresponding to cell cycle, DNA replication, energy metabolism, apoptosis regulation, NF-\u03baB activation, and BCR signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by GSEA analysis (Supplementary file 2 and Figure 3\u2014figure supplement 2) showing significant enrichment (fdr <0.001) of relevant pathways. This provides additional functional context for the AMB phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "d6689990-99dd-433b-a3e0-3b06112a4cb4",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MSP121-specific CD11b+CD11c+ B cells with AMB characteristics were generated transiently after immunization with R848 and MSP121, appearing at 24 hours but disappearing by 3-7 days post-immunization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 are supported by flow cytometry data in Figure 4 showing transient AMB generation after immunization. This demonstrates that AMB generation is not infection-specific but part of normal B cell activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "79333359-6012-4851-a7c6-24a39e2ccef4",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multiple subsets of MSP121-specific memory B cells expressing CD80 and/or CD273 were detected during infection and persisted after resolution, while germinal center B cells were present during infection but not after resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 are supported by flow cytometry data in Figure 5 showing distinct memory B cell populations with different marker combinations that persist after infection resolution, while GC cells disappear. This demonstrates successful memory B cell generation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "84677695-bbac-4125-9ced-fbf8e4dd9948",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "FCRL5 was identified as a universal marker for all MSP121-specific memory B cell subsets after infection resolution, with FCRL5hi B cells expressing hallmark memory markers including Cd38, Cd80, Cd86, Nt5e, Pdcd1lg2, and the anti-apoptotic gene Bcl2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 are supported by flow cytometry (Figure 6A), PhenoGraph analysis (Figure 6C), and RNAseq data (Figure 6E) showing FCRL5 expression on all memory subsets and their characteristic gene expression. This represents a novel finding for mouse memory B cell identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "9bbce436-9852-4ae3-b2aa-c8f1782ca15e",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MSP121-specific AMB and memory B cells showed distinct transcriptional profiles, with AMB expressing high levels of pro-apoptotic genes, class-switched immunoglobulins, and proliferation markers (Mki67), while memory B cells expressed anti-apoptotic Bcl2 and showed a quiescent profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C57 are supported by PCA analysis (Figure 7A) and RNAseq data (Figure 7B-E) showing clear transcriptional differences between AMB and memory B cells. The data strongly support the conclusion that AMB are activated cells rather than long-lived memory cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "fe9c4c1b-8c1b-49b8-a901-f369637c2d73",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "MSP121-specific CD11b+CD11c+ AMB represent a distinct subset that is not marginal zone, B1, or germinal center B cells based on canonical marker expression and phenotypic analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 are supported by RNAseq data (Figure 8A) and flow cytometry (Figure 8B-C) showing that AMB lack characteristic markers of MZ, B1, and GC B cells. This rules out alternative identities for the AMB population.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "66556f63-d1b2-4a92-87ea-ef10a171a474",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Plasmodium-specific atypical memory B cells are short-lived activated cells that require ongoing antigenic stimulation to persist and do not represent a true long-lived memory B cell subset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C6-C7, and C82-C83 are supported by the combined data showing AMB disappear after infection resolution (Figure 2), express pro-apoptotic genes (Figure 3, 7), and are generated transiently after immunization (Figure 4). This is the central conclusion of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "0bb872e8-6e36-4e01-88d8-2376d87d41c5",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The expansion of AMB in malaria is not a consequence of B-cell exhaustion but rather a physiologic stage of B-cell activation sustained by ongoing chronic infection, with constant immune activation rather than impaired memory function leading to AMB accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C71-C72 are supported by the experimental data showing AMB are short-lived, activated cells that disappear after infection resolution, combined with literature evidence (C64-C68) showing AMB frequency correlates with ongoing infection. This reinterprets the role of AMB in malaria.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "b7d97b54-63d8-47ec-9e7c-47f55f0bd269",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Robust expansion of Plasmodium-specific AMB does not hinder infection clearance, germinal center activation, or generation of long-lived memory B cells upon infection resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73, C80-C81 are supported by data showing successful infection resolution (Figure 1\u2014figure supplement 2F), GC formation (Figure 1\u2014figure supplement 2G-H), and persistent memory B cells (Figure 5) despite AMB expansion. This addresses concerns about AMB interfering with immunity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Atypical memory B cells accumulate in various infections, autoimmune disorders, and aging, and have been characterized as exhausted long-lived memory B cells with specific surface markers and poor functional capacity upon BCR re-stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C8-C16 are background claims supported by citations to prior literature. These establish the context for the current study but represent prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "77628eea-e704-4af1-8c43-629d5289de09",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Human studies show that AMB frequency correlates with ongoing infection and decreases with infection resolution or reduced exposure, including HIV viremia reduction by ART, malaria endemicity levels, and absence of Plasmodium exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by citations to prior human studies. These provide important context supporting the authors' interpretation but represent prior work rather than new experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "4d8e18d0-89cd-4379-9775-30bd19650491",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior studies have shown that P. chabaudi-specific memory B cells include class-switched and non-class-switched subsets, T-bet+ B cells are important for viral clearance, AMB expansion is driven by IFN\u03b3 and IL-21, and P. falciparum-specific AMB may contribute to infection control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70 and C74-C79 are supported by citations to prior literature. These provide important mechanistic and functional context but represent prior work rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "a697be2b-80b4-498f-bf59-532fa430da3c",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "P. chabaudi infection in C57BL/6J mice follows a characteristic course with acute parasitemia followed by chronic low-level infection before clearance, and mouse FCRL5 most closely resembles human FCRL3 with unique ITIM/ITAM motifs, while CD80 and CD273 identify antigen-experienced mouse B cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 are supported by citations to prior literature and establish methodological context. These are background facts rather than new findings but are important for interpreting the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    },
+    {
+      "id": "6f393a02-a9e8-44cf-81f3-33e0cfdac530",
+      "content_id": "7e498f28-1737-4106-9fc1-2ba662a82d50",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Plasmodium-specific atypical memory B cells show features of activation, proliferation, DNA replication, and plasmablasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is supported by RNAseq data showing expression of Mki67, cell cycle genes, and plasmablast markers (Figure 3). This is a key characterization of the AMB phenotype and is well-supported by molecular data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:59:39.989688Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "68a6b83b-f2ae-49d4-a4f0-3df899ce1b00",
+      "result_id": "1544b98f-f730-421c-a450-28f90ef8a2ae"
+    },
+    {
+      "claim_id": "0096ad91-ede3-4b4a-a16e-54d189eb0688",
+      "result_id": "1544b98f-f730-421c-a450-28f90ef8a2ae"
+    },
+    {
+      "claim_id": "525540fb-497b-4663-9d92-40789e908b4d",
+      "result_id": "1544b98f-f730-421c-a450-28f90ef8a2ae"
+    },
+    {
+      "claim_id": "beb77fa4-b11d-48ca-a23a-20a37e1cf4ad",
+      "result_id": "1544b98f-f730-421c-a450-28f90ef8a2ae"
+    },
+    {
+      "claim_id": "67dcdae3-fe77-4eb3-a61e-8bd3fdd42375",
+      "result_id": "2b9e35a8-fdf2-40cb-9726-a8c742b69da2"
+    },
+    {
+      "claim_id": "28c43758-8a1f-48da-96c4-1d1fec867af3",
+      "result_id": "86922db9-1a2b-4191-acc9-0b609442e512"
+    },
+    {
+      "claim_id": "2f585c8e-e422-4f90-8c62-0dcb021ffe89",
+      "result_id": "86922db9-1a2b-4191-acc9-0b609442e512"
+    },
+    {
+      "claim_id": "3c2f1a28-8eb3-4633-984c-90dd10474f0b",
+      "result_id": "1a8c56e0-f327-4af8-a0e9-0891b7b58f51"
+    },
+    {
+      "claim_id": "bc074091-4832-4cfe-9445-a40da0cad8bb",
+      "result_id": "1a8c56e0-f327-4af8-a0e9-0891b7b58f51"
+    },
+    {
+      "claim_id": "56267e5d-370a-4cfd-b153-74bd1c5e6de7",
+      "result_id": "1a8c56e0-f327-4af8-a0e9-0891b7b58f51"
+    },
+    {
+      "claim_id": "5691804d-1e71-4a9b-a9b7-da6aa2024b17",
+      "result_id": "1a8c56e0-f327-4af8-a0e9-0891b7b58f51"
+    },
+    {
+      "claim_id": "5b138989-e12b-4e98-adf0-1974fed6ebdc",
+      "result_id": "271341be-3c51-4ced-bbe7-4156cbaf63d4"
+    },
+    {
+      "claim_id": "da0ace5b-2c95-4a52-9488-5cfedc614284",
+      "result_id": "271341be-3c51-4ced-bbe7-4156cbaf63d4"
+    },
+    {
+      "claim_id": "71fc558b-3731-4436-8aab-4771ea4f9d3f",
+      "result_id": "271341be-3c51-4ced-bbe7-4156cbaf63d4"
+    },
+    {
+      "claim_id": "0a11dfd0-d182-443c-8bb9-383a8143d6e6",
+      "result_id": "271341be-3c51-4ced-bbe7-4156cbaf63d4"
+    },
+    {
+      "claim_id": "90c52dba-615a-4f11-b8c1-1041e6b33c2b",
+      "result_id": "271341be-3c51-4ced-bbe7-4156cbaf63d4"
+    },
+    {
+      "claim_id": "fac7f936-eeb9-48f3-b7c8-f0b27c4fd720",
+      "result_id": "271341be-3c51-4ced-bbe7-4156cbaf63d4"
+    },
+    {
+      "claim_id": "c8257c6b-941a-479e-8cbd-8004c419a799",
+      "result_id": "271341be-3c51-4ced-bbe7-4156cbaf63d4"
+    },
+    {
+      "claim_id": "11207ab4-1370-44a2-b3d1-04a7054e31dd",
+      "result_id": "271341be-3c51-4ced-bbe7-4156cbaf63d4"
+    },
+    {
+      "claim_id": "903480db-6e11-464c-9672-b72c7feb038c",
+      "result_id": "271341be-3c51-4ced-bbe7-4156cbaf63d4"
+    },
+    {
+      "claim_id": "c3d96562-9e8d-45e7-ba64-0cabb5b7b15a",
+      "result_id": "271341be-3c51-4ced-bbe7-4156cbaf63d4"
+    },
+    {
+      "claim_id": "8b0ec174-3a98-4324-bbe6-bd9963517723",
+      "result_id": "985fa9f7-1319-435c-bd61-f33df39f4ea4"
+    },
+    {
+      "claim_id": "6b63f52b-d62c-4a4b-aeaa-9bae31fc157d",
+      "result_id": "d6689990-99dd-433b-a3e0-3b06112a4cb4"
+    },
+    {
+      "claim_id": "b2dcc9d9-45df-4c04-a0f0-d651ed88e9b6",
+      "result_id": "d6689990-99dd-433b-a3e0-3b06112a4cb4"
+    },
+    {
+      "claim_id": "f14b52a8-88d1-4d92-8975-50eb00f36a4e",
+      "result_id": "d6689990-99dd-433b-a3e0-3b06112a4cb4"
+    },
+    {
+      "claim_id": "015a2697-6853-4bb4-8cb9-d97250b31ded",
+      "result_id": "d6689990-99dd-433b-a3e0-3b06112a4cb4"
+    },
+    {
+      "claim_id": "f8addd56-43df-4a92-a67f-b99e8dd33208",
+      "result_id": "79333359-6012-4851-a7c6-24a39e2ccef4"
+    },
+    {
+      "claim_id": "053d2e70-d750-45ef-96e9-909e4fa6bf6c",
+      "result_id": "79333359-6012-4851-a7c6-24a39e2ccef4"
+    },
+    {
+      "claim_id": "1aeb8363-3f20-41b7-b0e8-26c5b7ae531d",
+      "result_id": "79333359-6012-4851-a7c6-24a39e2ccef4"
+    },
+    {
+      "claim_id": "0e0cbd89-64e5-43ea-bb51-09056416317e",
+      "result_id": "79333359-6012-4851-a7c6-24a39e2ccef4"
+    },
+    {
+      "claim_id": "f236897e-32df-4667-9675-61e53b2bebbc",
+      "result_id": "79333359-6012-4851-a7c6-24a39e2ccef4"
+    },
+    {
+      "claim_id": "7ea991da-51c6-4aec-81ee-4163ebc275ab",
+      "result_id": "79333359-6012-4851-a7c6-24a39e2ccef4"
+    },
+    {
+      "claim_id": "a96fc89d-3d27-404c-8e6e-3113e68fd010",
+      "result_id": "84677695-bbac-4125-9ced-fbf8e4dd9948"
+    },
+    {
+      "claim_id": "7d9914b2-a56f-4beb-8cd5-423a5ead7d35",
+      "result_id": "84677695-bbac-4125-9ced-fbf8e4dd9948"
+    },
+    {
+      "claim_id": "fa3d6e89-90c1-41ec-8549-2645c196714d",
+      "result_id": "84677695-bbac-4125-9ced-fbf8e4dd9948"
+    },
+    {
+      "claim_id": "9dfa9972-668f-4312-9ca6-62edd77c0269",
+      "result_id": "84677695-bbac-4125-9ced-fbf8e4dd9948"
+    },
+    {
+      "claim_id": "0bb9d429-9933-4d45-8175-c919213e74a3",
+      "result_id": "84677695-bbac-4125-9ced-fbf8e4dd9948"
+    },
+    {
+      "claim_id": "9bb9a308-fa84-4e04-b41c-9425881d6862",
+      "result_id": "84677695-bbac-4125-9ced-fbf8e4dd9948"
+    },
+    {
+      "claim_id": "da16cac5-a8b1-4a14-95d7-1288b7867558",
+      "result_id": "9bbce436-9852-4ae3-b2aa-c8f1782ca15e"
+    },
+    {
+      "claim_id": "281dc043-37dc-45d6-a1d3-f166401954d9",
+      "result_id": "9bbce436-9852-4ae3-b2aa-c8f1782ca15e"
+    },
+    {
+      "claim_id": "691a7fd8-2cf3-4133-9fe1-a73fb70f2827",
+      "result_id": "9bbce436-9852-4ae3-b2aa-c8f1782ca15e"
+    },
+    {
+      "claim_id": "e7bae5af-487c-4818-8217-18858aa33531",
+      "result_id": "9bbce436-9852-4ae3-b2aa-c8f1782ca15e"
+    },
+    {
+      "claim_id": "3b9530fb-fca9-4550-b603-6bd170b3c7ec",
+      "result_id": "9bbce436-9852-4ae3-b2aa-c8f1782ca15e"
+    },
+    {
+      "claim_id": "61299981-608b-42f9-9220-4cf6de4c4c79",
+      "result_id": "9bbce436-9852-4ae3-b2aa-c8f1782ca15e"
+    },
+    {
+      "claim_id": "09eb9488-924b-4e70-8158-0f196a0f3ce4",
+      "result_id": "9bbce436-9852-4ae3-b2aa-c8f1782ca15e"
+    },
+    {
+      "claim_id": "91811a0c-db69-4cb2-a623-27660df5053b",
+      "result_id": "9bbce436-9852-4ae3-b2aa-c8f1782ca15e"
+    },
+    {
+      "claim_id": "4500630f-ba46-4947-81fe-34a538963cb8",
+      "result_id": "fe9c4c1b-8c1b-49b8-a901-f369637c2d73"
+    },
+    {
+      "claim_id": "c2e77ef0-7f69-4627-8393-77a00d694cf7",
+      "result_id": "fe9c4c1b-8c1b-49b8-a901-f369637c2d73"
+    },
+    {
+      "claim_id": "dd4b2be9-fa05-4dbd-af0a-e03f3ddeca06",
+      "result_id": "fe9c4c1b-8c1b-49b8-a901-f369637c2d73"
+    },
+    {
+      "claim_id": "7622a837-6811-461b-8dd7-1ebb1df3d8a4",
+      "result_id": "fe9c4c1b-8c1b-49b8-a901-f369637c2d73"
+    },
+    {
+      "claim_id": "c958dd6a-366c-4bea-b9c2-1317d934d769",
+      "result_id": "fe9c4c1b-8c1b-49b8-a901-f369637c2d73"
+    },
+    {
+      "claim_id": "3e3674fb-c07f-4506-81e1-ca2cfae0f2f6",
+      "result_id": "fe9c4c1b-8c1b-49b8-a901-f369637c2d73"
+    },
+    {
+      "claim_id": "4863571e-f346-4052-acdf-f2e25eb1147b",
+      "result_id": "66556f63-d1b2-4a92-87ea-ef10a171a474"
+    },
+    {
+      "claim_id": "09c79aa4-bfa1-48e5-b17f-a7a04edc0fa8",
+      "result_id": "66556f63-d1b2-4a92-87ea-ef10a171a474"
+    },
+    {
+      "claim_id": "f5491a12-d30b-4e54-b2e0-c19a5beb0627",
+      "result_id": "66556f63-d1b2-4a92-87ea-ef10a171a474"
+    },
+    {
+      "claim_id": "215c58ae-86a7-4b49-8f78-32786e4f1b0d",
+      "result_id": "66556f63-d1b2-4a92-87ea-ef10a171a474"
+    },
+    {
+      "claim_id": "0a1de35e-0fb7-4533-b109-293b1c892f9c",
+      "result_id": "66556f63-d1b2-4a92-87ea-ef10a171a474"
+    },
+    {
+      "claim_id": "d1c21491-a304-4985-9362-f46f71bd729a",
+      "result_id": "66556f63-d1b2-4a92-87ea-ef10a171a474"
+    },
+    {
+      "claim_id": "c6e56a0f-7953-40c5-bb21-5d0f94fc70e7",
+      "result_id": "0bb872e8-6e36-4e01-88d8-2376d87d41c5"
+    },
+    {
+      "claim_id": "0322dab5-b399-49fa-933b-dead23988d72",
+      "result_id": "0bb872e8-6e36-4e01-88d8-2376d87d41c5"
+    },
+    {
+      "claim_id": "2a021f29-6df1-40bf-9c15-5b54d0f82c9a",
+      "result_id": "0bb872e8-6e36-4e01-88d8-2376d87d41c5"
+    },
+    {
+      "claim_id": "7032cd44-8887-4bdd-a136-80101724e6c7",
+      "result_id": "b7d97b54-63d8-47ec-9e7c-47f55f0bd269"
+    },
+    {
+      "claim_id": "07515d30-f5b8-44c6-b8fc-7450a32d7973",
+      "result_id": "b7d97b54-63d8-47ec-9e7c-47f55f0bd269"
+    },
+    {
+      "claim_id": "7b535238-bdce-4db6-bf3d-0548ada63b74",
+      "result_id": "b7d97b54-63d8-47ec-9e7c-47f55f0bd269"
+    },
+    {
+      "claim_id": "bbb0fbcb-5058-4e6a-814f-d73bd92595d5",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "a8d9a7f1-9c0b-49e7-b721-b7c248160b90",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "a255fc60-3c54-4a21-9df6-ba7836fe81fe",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "7f355eee-223b-4fa2-9a4b-d6d3c5fd5b28",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "0e880422-3af1-4c0a-9481-39132b4a4bca",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "35825eaf-a8da-4bac-b99d-6a1ab37297bb",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "865a7389-f404-4c31-bfd4-7eb9f7cd3a49",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "8d2d666d-24a5-4d92-baea-a15a60fb54b4",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "522a0e56-122d-46b8-9433-3a0d689c1dd4",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "3196a26a-e9b1-4471-b570-8cec0cdcee33",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "caed77d9-d0e7-45bd-aafe-eea3539998a2",
+      "result_id": "ff2b63f6-f8c4-4588-b62d-0c1c36e068a2"
+    },
+    {
+      "claim_id": "ca9e7d3a-fedf-4a0c-890c-88b72fb7652a",
+      "result_id": "77628eea-e704-4af1-8c43-629d5289de09"
+    },
+    {
+      "claim_id": "d319d0ea-60fd-4597-b31d-5316ec3bd10e",
+      "result_id": "77628eea-e704-4af1-8c43-629d5289de09"
+    },
+    {
+      "claim_id": "07b1378a-1bf5-42cf-9225-a5fb5f469d4d",
+      "result_id": "77628eea-e704-4af1-8c43-629d5289de09"
+    },
+    {
+      "claim_id": "ca502b76-5c23-4d81-ad13-8ffa180a0efe",
+      "result_id": "77628eea-e704-4af1-8c43-629d5289de09"
+    },
+    {
+      "claim_id": "ef2abd49-21a0-4f06-885c-0ef86e184943",
+      "result_id": "77628eea-e704-4af1-8c43-629d5289de09"
+    },
+    {
+      "claim_id": "bb6c84a8-104c-4471-bf52-bda9d551f0b9",
+      "result_id": "4d8e18d0-89cd-4379-9775-30bd19650491"
+    },
+    {
+      "claim_id": "c3b35ff8-068c-4c5d-94fd-fe4bb723dec6",
+      "result_id": "4d8e18d0-89cd-4379-9775-30bd19650491"
+    },
+    {
+      "claim_id": "c0216037-bc3d-4ce1-8545-be356459e826",
+      "result_id": "4d8e18d0-89cd-4379-9775-30bd19650491"
+    },
+    {
+      "claim_id": "1cd3db85-f44e-4781-b93d-bfd7dca34209",
+      "result_id": "4d8e18d0-89cd-4379-9775-30bd19650491"
+    },
+    {
+      "claim_id": "c8883783-1841-403a-992b-c8233520fdff",
+      "result_id": "4d8e18d0-89cd-4379-9775-30bd19650491"
+    },
+    {
+      "claim_id": "99ee6358-688f-4690-81d2-ef8ec57c8e13",
+      "result_id": "4d8e18d0-89cd-4379-9775-30bd19650491"
+    },
+    {
+      "claim_id": "6c7f3f8d-c83c-4ebf-8c70-b280982338a3",
+      "result_id": "4d8e18d0-89cd-4379-9775-30bd19650491"
+    },
+    {
+      "claim_id": "a13c5a48-330d-48f3-80e1-89201476264f",
+      "result_id": "a697be2b-80b4-498f-bf59-532fa430da3c"
+    },
+    {
+      "claim_id": "0b3083cf-09a2-4132-9e17-20c8d1ea9153",
+      "result_id": "a697be2b-80b4-498f-bf59-532fa430da3c"
+    },
+    {
+      "claim_id": "b60450e3-429f-4041-9e72-4459e18623c1",
+      "result_id": "a697be2b-80b4-498f-bf59-532fa430da3c"
+    },
+    {
+      "claim_id": "8e1d1f15-707a-4603-9165-d1b8763f989c",
+      "result_id": "a697be2b-80b4-498f-bf59-532fa430da3c"
+    },
+    {
+      "claim_id": "e0269e5b-79a2-459b-9be7-24dcd9769db5",
+      "result_id": "a697be2b-80b4-498f-bf59-532fa430da3c"
+    },
+    {
+      "claim_id": "772caf3c-42bc-4b0a-82ae-8d405a67262f",
+      "result_id": "6f393a02-a9e8-44cf-81f3-33e0cfdac530"
+    }
+  ],
+  "comparisons": []
+}

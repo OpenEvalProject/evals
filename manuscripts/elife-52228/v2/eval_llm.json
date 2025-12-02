@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "IC neurons show bidirectional modulation of spontaneous activity during locomotion in normal-hearing mice. Among 96 recorded neurons, 53% increased firing, 23% decreased firing, and 24% showed no change during locomotion. Modulated neurons were distributed throughout the IC without spatial clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide detailed quantitative data with appropriate sample sizes (n=96) and statistical testing (permutation tests, \u03b1=0.01). The anatomical reconstruction (C30-C31) confirms widespread distribution. The correlation between firing rate and walking speed (C28-C29) strengthens the link between neural activity and locomotion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Walking sounds generated on the treadmill (~30 dB) are unlikely to be the primary driver of IC modulation. Playback of walking sounds evoked neural responses, but response magnitudes did not correlate with locomotion-induced modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by playback experiments (n=25 at 30 dB, n=20 at 40 dB) showing no significant correlation between playback-evoked and locomotion-induced responses (Figure 1\u2014figure supplement 1D-G). However, the noise reduction procedure and exclusion of 5 neurons at 40 dB due to baseline responses introduce some uncertainty about the completeness of this control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Neural modulation in IC neurons precedes locomotion onset by a median of 107 msec. This negative latency occurs regardless of whether neurons show increased or decreased firing during locomotion, demonstrating that modulation is not simply an auditory response to self-generated sounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by onset-triggered averaging analysis (n=30 neurons with significant averages). The median latency of -107 msec and lack of difference between excitatory and inhibitory modulation types (p=0.25, Wilcoxon rank sum test) provide strong evidence. However, only 30 of 73 modulated neurons yielded clear onset-triggered averages, suggesting this analysis may be limited to neurons with stronger or more consistent modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Locomotion modulates IC neuron activity in hearing-impaired mice with elevated hearing thresholds (\u226570 dB), demonstrating that non-auditory signals drive the modulation. The characteristics of modulation (proportions, magnitudes, latencies) are similar between normal and hearing-impaired mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by systematic threshold mapping showing \u226540 dB elevation (C39) and recordings from 34 neurons in hearing-impaired mice (C41-C42). Figure 3\u2014figure supplement 1 shows no significant differences in modulation index or latencies between groups. However, the authors acknowledge potential confounds from deafening-induced plasticity (C43), and the time between deafening and recording (8.2\u00b11.1 days) may allow for reorganization. The inference that walking sounds (~30 dB) would not evoke responses (C40) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Sound-evoked activity in IC neurons is attenuated during locomotion, with 72% of neurons showing significant suppression. The mean attenuation is -36\u00b15%, with greater suppression of weaker responses and non-best frequencies compared to stronger responses and best frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by tone-evoked response data from 65 neurons with appropriate statistical tests (one-sample t-test p=1.4\u00d710\u207b\u00b9\u2070 for population shift; paired t-test p=6.98\u00d710\u207b\u2074 for BF vs non-BF comparison). The differential attenuation pattern is well-documented. However, only neurons with excitatory responses were analyzed, potentially missing important aspects of IC processing during locomotion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Locomotion-induced attenuation sharpens frequency tuning in IC neurons by reducing tuning width (mean change -0.29 octaves, p=3.0\u00d710\u207b\u2077) while maintaining best frequencies. This represents increased frequency selectivity across the neuronal population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by quantitative tuning analysis (n=60 neurons, excluding 5 with complete suppression). The statistical significance is strong (Wilcoxon signed rank test), and the maintenance of best frequencies (C52) is clearly demonstrated. The exclusion of 5 neurons with near-complete suppression is appropriate but should be noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C50"
+    ],
+    "result": "The attenuation of sound-evoked activity during locomotion is global rather than frequency-specific, occurring across different best frequencies and temporal response patterns (onset vs. sustained).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by statistical analyses showing no correlation between attenuation and best frequency (r=-0.0031, p=0.98, n=65) and no significant difference between onset and sustained response types (p=0.103). This demonstrates the generality of the locomotion effect across IC neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The relationship between spontaneous and evoked activity modulation suggests partially overlapping mechanisms. Suppression of spontaneous and evoked activity correlates, suggesting shared mechanisms distinct from excitation. Modulation type also correlates with response pattern (sustained vs. suppressed types).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by correlation analyses in Figure 4\u2014figure supplement 1 and 2. The positive correlation between spontaneous and evoked suppression (r=0.83, p=0.02, n=7) and the differential distribution of modulation types across response patterns provide evidence for partial overlap. However, the small sample size for the decreased group (n=7) and the correlational nature of the evidence limit causal interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The magnitude of tuning width decrease (~0.3 octaves) exceeds behaviorally discriminable differences (~0.14-0.15 octaves), suggesting functional consequences. While attenuation may impair tone detection, increased frequency selectivity may improve frequency discrimination during locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is supported by comparison with cited behavioral thresholds, but C65 is speculative. The authors appropriately cite relevant studies but do not provide direct behavioral evidence linking their neural findings to perceptual outcomes. The functional interpretation requires validation through behavioral experiments measuring detection and discrimination during locomotion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Central mechanisms, particularly somatosensory inputs to the IC, likely play the major role in locomotion-related modulation. The negative latency (~100 msec) and robust modulation in hearing-impaired mice support central over peripheral mechanisms. Somatosensory signals appear more widespread across IC than previously hypothesized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C71-C72 are supported by the timing data (C36-C37) and hearing-impaired mouse experiments (C39-C43). However, claims C68-C70 about specific mechanisms are speculative, relying on anatomical knowledge from prior literature rather than direct experimental evidence. The widespread distribution of modulated neurons (C30-C31, C69) does suggest broader somatosensory influence than expected from known projections to lateral IC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Alternative mechanisms for locomotion-related modulation include efference copy of motor signals, descending projections from motor cortex, cholinergic inputs from peduncular pontine nucleus, and noradrenergic inputs from locus coeruleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 are entirely speculative, based on compatibility with prior literature rather than experimental evidence from this study. While these are plausible mechanisms supported by anatomical and functional studies in other systems, the current manuscript provides no direct evidence for any of these pathways. These represent hypotheses for future investigation rather than supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C58",
+      "C59",
+      "C60",
+      "C84"
+    ],
+    "result": "The IC integrates movement-related and auditory information during behavior. Locomotion-related signals are robust and widespread in this subcortical auditory center, suggesting that multi-modal integration is an essential aspect of IC sound processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C58-C60, and C84 represent the main conclusions synthesizing the experimental findings. These are well-supported by the data showing widespread modulation (C25-C31), non-auditory origins (C39-C43), and effects on sound processing (C44-C53). However, the claim that integration is \"essential\" (C8, C60, C84) goes beyond what the data directly demonstrate, as no causal manipulations or behavioral consequences are tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Greater attenuation of weaker responses may improve signal-to-noise ratio across the neuronal population during locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 is speculative functional interpretation of the differential attenuation pattern (C46-C47). While the observation of greater suppression of weaker responses is well-supported, the inference about improved signal-to-noise ratio is not directly tested. This would require analysis of response variability or behavioral measures of perceptual performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The discrepancy between IC spontaneous activity modulation and lack of MGB modulation in prior studies may be explained by subthreshold responses in thalamic neurons. IC attenuation could contribute to MGB attenuation observed in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C63 attempt to reconcile current findings with prior literature. C61 accurately cites prior studies, but C62 is speculative without direct evidence of subthreshold responses. C63 is a reasonable inference but remains untested. These claims highlight important questions about information flow in the auditory pathway but require direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Modulation differs depending on response types, and future work should determine how locomotion-related signals modulate different cell types (excitatory, inhibitory, specific subtypes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by data in Figure 4\u2014figure supplement 2 showing differential modulation across response types. Claim C78 appropriately identifies an important direction for future research. The current study's limitation to extracellular recordings without cell-type identification is acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Locomotion-related signals may serve multiple functions: informing IC neurons about movement and posture, distinguishing self-generated from external sounds, preventing desensitization, and enabling rapid behavioral responses by integrating spatial and body information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C83 are speculative functional interpretations informed by prior literature but not directly tested in this study. While these are plausible functions consistent with the observed modulation patterns, they remain hypotheses requiring behavioral and causal manipulation experiments for validation. C81 cites prior hypotheses about desensitization, but C82-C83 extend beyond the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Methodological details: recordings were performed in two mouse strains (C57BL/6N and VGAT-ChR2-EYFP) with no differences in modulation between strains. Pure tones were presented at 70 dB SPL. Baseline tuning widths ranged from 0.5 to 5 octaves (mean 2.2 octaves).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe methodological details that are clearly documented. The lack of strain differences (C86) is important for generalizability. These claims provide essential context for interpreting the results but are not primary findings.",
+    "result_type": "MINOR"
+  }
+]

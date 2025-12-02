@@ -1,0 +1,1654 @@
+{
+  "submission": {
+    "id": "d8e8f125-3a9c-4703-99fd-2e54339fdcbd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:18:58.451895Z",
+    "updated_at": "2025-12-02T19:18:58.451895Z"
+  },
+  "content": [
+    {
+      "id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "submission_id": "d8e8f125-3a9c-4703-99fd-2e54339fdcbd",
+      "content_type": "manuscript",
+      "content_text": "# The dynamic nature of the human origin recognition complex revealed through five cryoEM structures\n\n## Authors\n\n- Matt J Jaremko<sup>1</sup> ([ORCID: 0000-0002-0340-4452](https://orcid.org/0000-0002-0340-4452))\n- Kin Fan On<sup>1</sup> ([ORCID: 0000-0002-0949-732X](https://orcid.org/0000-0002-0949-732X))\n- Dennis R Thomas<sup>1</sup>\n- Bruce Stillman<sup>3</sup> ([ORCID: 0000-0002-9453-4091](https://orcid.org/0000-0002-9453-4091))\n- Leemor Joshua-Tor<sup>1</sup> ([ORCID: 0000-0001-8185-8049](https://orcid.org/0000-0001-8185-8049)) \u2020\n\n### Affiliations\n\n1. W. M. Keck Structural Biology Laboratory New York United States\n2. Howard Hughes Medical Institute New York United States\n3. Cold Spring Harbor Laboratory New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenome replication is initiated from specific origin sites established by dynamic events. The Origin Recognition Complex (ORC) is necessary for orchestrating the initiation process by binding to origin DNA, recruiting CDC6, and assembling the MCM replicative helicase on DNA. Here we report five cryoEM structures of the human ORC (HsORC) that illustrate the native flexibility of the complex. The absence of ORC1 revealed a compact, stable complex of ORC2-5. Introduction of ORC1 opens the complex into several dynamic conformations. Two structures revealed dynamic movements of the ORC1 AAA+ and ORC2 winged-helix domains that likely impact DNA incorporation into the ORC core. Additional twist and pinch motions were observed in an open ORC conformation revealing a hinge at the ORC5\u00b7ORC3 interface that may facilitate ORC binding to DNA. Finally, a structure of ORC was determined with endogenous DNA bound in the core revealing important differences between human and yeast origin recognition.\n\n## Introduction\n\nDNA replication is essential to all forms of life. In eukaryotes, replication is initiated from multiple start sites on chromosomes called replication origins (reviewed in Bell and Labib, 2016; Bleichert et al., 2017; Leonard and M\u00e9chali, 2013; On et al., 2018; Prioleau and MacAlpine, 2016). The very first step of this initiation process is accomplished by DNA association with the Origin Recognition Complex (ORC), a six-subunit protein that forms a partial ring around origin DNA (Li et al., 2018; Yuan et al., 2017). In Saccharomyces cerevisiae, this is a sequence-specific binding event, however, in metazoans the manner in which origins are identified is not yet clear. The bromo-adjacent homology (BAH)-domain at the N-terminus of ORC1 facilitates binding of ORC to DNA through nucleosomes which contain specific histone modifications that influence ORC1 affinity to the chromatin complex (Eaton et al., 2010; Hossain and Stillman, 2016; Kuo et al., 2012; M\u00fcller et al., 2010; Noguchi et al., 2006; Rivera et al., 2014). Once bound to origins, the ORC-related AAA+ ATPase CDC6 enters the complex to complete the ORC-CDC6 ring around the DNA (Yuan et al., 2017). Subsequent recruitment of the licensing factor CDT1 bound to the replicative helicase MCM hexamer complex then leads to the formation of MCM double-hexamers assembled around dsDNA in a head-to-head association (Evrin et al., 2009; Miller et al., 2019; Remus et al., 2009). During origin licensing, ORC must perform several tasks sequentially: bind DNA, find origin sites, and dissociate from DNA upon completion of the MCM double-hexamer loading and assembly. In fact, single molecule studies have shown that ORC is released from DNA immediately following stable association of two MCM molecules with the DNA substrate (Ticau et al., 2015). These dynamic events likely require significant conformational changes in ORC.\n\nHigh resolution structures of ORC from Saccharomyces cerevisiae (ScORC), Drosophila melanogaster (DmORC), and Homo sapiens (HsORC) have revealed the detailed architecture of the complex (Bleichert et al., 2015; Li et al., 2018; Tocilj et al., 2017; Yuan et al., 2017). The complex consists of six subunits (ORC1-6), with subunits ORC1-5 forming a partial ring capable of encircling DNA (Li et al., 2018; Tocilj et al., 2017; Yuan et al., 2017). All five subunits contain a winged-helix domain (WHD) and a AAA+ domain which consists of the RecA-fold and lid domains (Figure 1a), although the ORC2 and ORC3 RecA-folds have diverged slightly and do not contain a lid domain. Adjacent ORC subunits associate in a double-layer arrangement through interfaces between the WHDs in one layer and the AAA+ domains in another with ATP-binding sites sandwiched between the ORC1\u00b74, ORC4\u00b75, and ORC5\u00b73 AAA+ interfaces (Figure 1g; Tocilj et al., 2017). The ORC1\u00b74 and ORC4\u00b75 sites represent canonical AAA+ ATPase sites (Enemark and Joshua-Tor, 2008; Erzberger and Berger, 2006), while the ORC5\u00b73 interface is considerably more flexible relative to the other ATP interfaces. Of the three ATP-binding sites, only the ORC1\u00b74 site exhibits ATPase activity and this activity is essential for cell viability (Bowers et al., 2004; Klemm et al., 1997; Randell et al., 2006; Tocilj et al., 2017). In addition, several mutations at the ORC1\u00b74 ATPase site are associated with the developmental disorder Meier-Gorlin Syndrome (Bicknell et al., 2011a; Bicknell et al., 2011b; de Munnik et al., 2012a; de Munnik et al., 2012b; Guernsey et al., 2011). However, the functional role for ATP hydrolysis is still unknown.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig1-v2.jpg)\n\n**Figure 1.:** (a) Cartoon representation of the general structure of an ORC subunit with a winged-helix [WH], and a AAA+ domain containing a lid and RecA-fold, as illustrated by ORC1 from ORCO1AAA. Human ORC structures were determined in five conformations: (b) ORC2-5, (c) ORCO2WH, (d) ORCO1AAA, (e) ORCOPEN, and (f) ORCDNA. Each panel contains a density map and model and is color coded by subunit as illustrated in panel (b). ATP carbon atoms are colored in black and the remaining atoms, including Mg2+ (green spheres), are colored by the CPK and Jmol element colors. (g) Close-up of the three ORC ATP sites in ORCO1AAA with density maps overlaying the model. Residues important for coordination of the ATP molecules and Mg2+ are labelled. DNA is colored red/grey and all displayed atoms are colored by the CPK and Jmol element colors.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Close-up of the three ORC ATP sites in (a) ORCO2-5, (b) ORCO2WH, (c) ORCOPEN, and (d) ORCDNA with mesh density maps overlaying the model. Residues important for coordination of the ATP molecules and Mg2+ (shown as green spheres) are labelled.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Motion correction, averaging, CTF estimation, and particle picking were performed on movies real-time via the WARP software package. To determine an ab initio reconstruction, 2D classification and ab initio reconstruction was performed in Cryosparc v2. Motion correction and CTF estimation were also performed in Relion to allow convenient use of the Bayesian Polishing feature in the final post-processing Relion steps. The particle coordinates from WARP and the ab initio map from Cryosparc were both utilized in an initial 3D classification in Relion. All further processing steps were performed in Relion, including global and focused refinement and classification. The in silico purification resulted in four overall maps: ORC(O2WH) (3.2 \u00c5), ORC(O1AAA) (3.7 \u00c5), ORCOPEN (4.0 \u00c5), and ORCDNA (4.3 \u00c5). The mask used for focused 3D classification of the ORC2 WHD is highlighted in red. The focused maps of the ORC2 WHD focused classification are expanded to show two alternative conformations of the domain. See Methods section for details.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The workflow of the ORC2-5 data collection was the same as the ORC1-5 data collection (see Figure 1\u2014figure supplement 1). The processing resulted in a 3.5 \u00c5 map (ORCO2-5). The mask used for focused 3D classification of the ORC2 WHD is highlighted in red.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Fourier Shell Correlation of the ORC1-5 global maps ORC(O2WH) (blue), ORC(O1AAA) (red), ORCOPEN (green), and ORCDNA (yellow). Solid lines and dotted lines refer to the masked and unmasked FSCs, respectively. (b\u2013e) Resolutions maps were calculated using ResMap (Kucukelbir et al., 2014) for ORC(O2WH) (b), ORC(O1AAA) (c), ORCOPEN (d), and ORCDNA (e). (f\u2013i) Euler angle distribution plots of the ORC(O2WH) (f), ORC(O1AAA) (g), ORCOPEN (h), and ORCDNA (i) particles used in the final reconstruction maps.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) Fourier Shell Correlation of the ORC2-5 global map ORCO2-5. Solid lines and dotted lines refer to the masked and unmasked FSCs, respectively. (b) Resolutions maps were calculated using ResMap (Kucukelbir et al., 2014) for ORCO2-5. (c) Euler angle distribution plots of the ORCO2-5 particles used in the final reconstruction maps.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** The histograms and directional FSC plots for (a) ORCO2-5, (b) ORCO2WH, (c) ORCO1AAA, and (d) ORCOPEN, and (e) ORCDNA are plotted. The sphericity and global resolution values are reported within the graph windows.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Global (a) and focused (b) refinement of ORCO1AAA highlighting the regions of ORC2 and ORC3 near the ORC gap opening.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** The structure (a) and map (b) of human ORCO1AAA and the structues of (c) ScORC, and (d) DmORC are oriented to illustrate the tight interaction between subunits 2 and 3. ORC2 contains a N-terminal helix that positioned between ORC3 and ORC5, and ORC3 contains an N-terminal \u03b2-strand that forms a \u03b2-sheet with ORC2 \u03b2-strands.\n\nBased on the previous structures, ORC exhibits two main conformations differing primarily in the positions of the ORC1 AAA+- and ORC2 WH-domains: an open state (ScORC and HsORC) (Li et al., 2018; Tocilj et al., 2017; Yuan et al., 2017) and a closed, auto-inhibited state (DmORC) (Bleichert et al., 2015). In the open state, the ORC1 AAA+-domain binds to the ORC4 AAA+-fold to form the ORC1\u00b74 ATPase active site and ORC2 WHD is adjacent to the ORC3 WHD. The ring-shaped core of ORC in the open state is accessible to solvent and DNA substrates. In the closed state, the ORC1 AAA+ motif is dramatically rotated by\u00a0~80\u00b0 towards the ORC2 WHD position and ORC2 WHD is collapsed into the open ring-shaped core of the complex. The collapsed ORC1 AAA+-domain and ORC2 WHD in the closed state completely obstruct the core of ORC and could not accommodate DNA. In addition, the ORC1\u00b74 AAA+ interface is disrupted and, therefore, the main ATPase site is disrupted. Initially, the closed state was only seen in DmORC, but recent cryoEM studies on HsORC suggested that the ORC1 AAA+ domain also adopts the auto-inhibited conformation (Bleichert et al., 2018). Further structural analysis is necessary to determine the prevalence and function of the auto-inhibited state in other species.\n\nAs mentioned, origin recognition, which is conferred by ORC binding to DNA, differs between yeast and metazoans. In the yeast Saccharomyces cerevisiae, ORC specifically recognizes and binds to a class of DNA sequences, called the autonomously replicating sequences (ARSs), which act as the replication initiation sites in vivo (Bell and Stillman, 1992; Brewer and Fangman, 1987; Eaton et al., 2010; Huberman, 1987; Linskens and Huberman, 1988; Marahrens and Stillman, 1992; Rao and Stillman, 1995; Theis et al., 1999). Previous ScORC structures revealed multiple regions of Orc1, Orc2, Orc4 and Orc5 that interact with double stranded DNA, including a lysine-rich region in an unstructured domain of Orc1, as well as two motifs within the AAA+ domain in each subunit that interact with elements of ARS DNA: the initiation-specific motifs (ISM) in the AAA+-domains and \u03b2-hairpin wings in the WHDs (Bleichert et al., 2017; Li et al., 2018; On et al., 2018; Yuan et al., 2017). Of particular importance are the ISM of Orc2 and an \u03b1-helix inserted into the \u03b2-hairpin wing of Orc4. The Orc2 ISM binds to the DNA minor groove with the W396 sidechain tucked into the hydrophobic minor groove at the T-rich region within the ARS consensus DNA sequence (Li et al., 2018). Interestingly, the \u03b1-helix insertion in the \u03b2-hairpin wing of Orc4 extends deep into the DNA major groove and likely plays an important role in DNA sequence-specific interactions with the ARS sequence (Hu et al., 2020). The \u03b2-hairpin wing of Orc4 is unresolved in the DmORC and HsORC structures and the importance of this region is unknown in metazoans. In metazoans, notably, ORC lacks sequence specificity for origin recognition and may rely on interactions with nucleosomes to establish DNA origin sites (Noguchi et al., 2006; Remus et al., 2004; Vashee et al., 2003).\n\nIn this study, we have determined cryoEM structures of the human Origin Recognition Complex in various conformational states and at higher resolution than previous studies. Four cryoEM maps revealed dynamic movements of ORC without DNA. The ORC1 AAA+ domain and the ORC2 WHD seem to repel each other to create dynamic movement between two extreme states. In addition, a hinge was identified at the ORC3\u00b75 interface that creates prominent twist and pinch movements of the entire complex. Lastly, a structure of ORC bound to co-purified, endogenous DNA (ORCDNA) was determined that revealed several ORC regions in close contact with DNA. The ORC2 WH- and ORC1 AAA+-domains are both visible in this ORC conformation and bind DNA directly. The various ORC conformations provide insight into the dynamics of ORC during DNA replication initiation.\n\n## Results and discussion\n\n### Overall HsORC structure and comparison to ORC from Saccharomyces cerevisiae and Drosophila melanogaster\n\nTwo HsORC constructs were generated for recombinant expression based on our previous study (Tocilj et al., 2017) with the following changes: ORC2 was extended to full-length, the StrepTag was moved from the N-terminus of ORC1 to the N-terminus of ORC3 to improve sample purity during affinity purification, and the Sumo tag on ORC1 was removed. One construct consisted of full-length ORC1, but after expression and purification, ORC1 was absent yielding a complex of ORC2-5 (henceforth labelled ORCO2-5). Another construct included a truncated version of ORC1 [aa471-861] that yielded a purified complex of ORC1-5 with multiple conformations. We utilized cryo-electron microscopy (cryoEM) to investigate ORC due to the various conformations and potential flexibility seen in previous ORC structures (Bleichert et al., 2015; Li et al., 2018; Tocilj et al., 2017; Yuan et al., 2017). The cryoEM analysis lead to a 3.5 \u00c5 structure of the ORC2-5 complex (ORCO2-5) and four distinct structures of the ORC1-5 complex: ORCO1AAA (3.2 \u00c5), ORCO2WH (3.7 \u00c5), ORCOPEN (4.0 \u00c5), and ORCDNA (4.3 \u00c5) (Figure 1\u2014figure supplement 1\u20134 and Supplementary file 1). The four structures determined from ORC1-5 illustrate the flexibility and dynamic movements of ORC when ORC1 is present in the complex.\n\nThe ORCO2-5 structure that lacks the ORC1 subunit consists of subunits ORC2-5 in a compact and substantially closed conformation (Figure 1b). The ORC2 WHD of ORCO2-5 is collapsed into the ring-shaped core of the complex with the \u03b2-hairpin wing facing the ORC4 WHD (Figure 2c). The ORC2 WHD is significantly deeper in the core and rotated\u00a0~135\u00b0 compared to the auto-inhibited state of ORC2 WHD in the DmORC structure (Figure 2d and Video 1; Bleichert et al., 2015). Once ORC1 is bound to form ORC1-5, the complex opens up into several related conformations to accommodate ORC1 (Figure 1c\u2013f). The first of these, ORCO2WH, consists of a dynamic ORC1 AAA+ domain that is unresolved in the refined map (Figure 1c). Interestingly, in this structure, the ORC2 WHD was stably bound inside the ring-shaped core of ORC in a conformation that is similar to the auto-inhibited state observed in the DmORC structure (Figure 2d,f; Bleichert et al., 2015). In contrast to ORCO2WH, ORCO1AAA consists of a dynamic ORC2 WHD that is unresolved in the refined map (Figure 1d). The ORC1 AAA+ domain in this structure is ordered and forms the important interface with ORC4 with an ATP coordinated between the two subunits, an ATPase active conformation seen in previous ScORC and HsORC structures (Li et al., 2018; Tocilj et al., 2017; Yuan et al., 2017). The flexibility of ORC2 WHD is also observed in ScORC and in the DNA-bound ScORC, where the domain was located in several states proximal to DNA (Li et al., 2018), and different from its position in the yeast OCCM structure (Yuan et al., 2017). Thus, the dynamic movements of the domain are prevalent across species and likely influence binding to DNA and CDC6. The subunits of the third conformational state of the ORC1-5 structure, ORCOPEN, are arranged in a more open configuration relative to the previous two structures where the overall spiral of the complex is widened (Figure 1e and Figure 3a). The conformation of ORCOPEN resembles the ScORC conformation bound to Cdc6 (Yuan et al., 2017). It was noted previously from low resolution cryo-EM structures comparing ScORC on DNA with ScORC-Cdc6 on DNA that substantial changes in the location of parts of the Orc1 subunit occurred upon binding of Cdc6 to ORC (Sun et al., 2012). Finally, the cryoEM map of ORCDNA consists of DNA bound in the core of the complex (ORC1-5) with several ORC subunits making contacts to the DNA (Figure 1f, Figure 4). The ORC1 AAA+ and ORC2 WHD of ORCDNA most likely envelop DNA predominantly through electrostatic interactions. The ORCOPEN and ORCDNA maps suffered from the existence of a preferred orientation which likely contributed to the lower resolutions of these maps (Figure 1\u2014figure supplements 4 and 6). In addition, the nominal resolution of these maps, determined from their optimal direction is higher than their overall appearance merits. Nonetheless, these maps provided valuable information about the architecture and dynamics of the complex (see below).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig2-v2.jpg)\n\n**Figure 2.:** 3D classification ORCO2WH was performed with the density map low-pass filtered to 20 \u00c5 and an E-step resolution limit of 20 \u00c5. Two 3D classes from ORCO2WH contained densities for ORC1 AAA+ domain. The ORC1 AAA+ domain was fit into these densities which revealed the domain approaching the ORC1\u00b74 position (a) and the auto-inhibited position (b). (c-f) In the ORC core, the ORC2 WHD was observed in two conformations: an alternate state, called the inactive state (c, e), and the auto-inhibited state (f), similar to the DmORC2 WHD (PDB ID: 4xgc) (d). The ORCO2WH inactive state (e) was determined by focused classification of the ORCO2WH with a tight mask around ORC2 WH.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** 3D classification of ORCO1AAA (a) and ORCO2WH (b) were performed with each map low-pass filtered to 20 \u00c5 and an E-step resolution limit of 20 \u00c5. Two 3D classes from ORCO1AAA (left) illustrate dynamic movements of ORC2 WHD in place, while two 3D classes from the ORCO2WH (right) illustrate dynamic movements of ORC1 AAA+ approaching the ORC1\u00b74 position and the auto-inhibited position.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig3-v2.jpg)\n\n**Figure 3.:** (a) Overlay of ORCOPEN and ORCO1AAA illustrates a large conformational change of ORC2 and ORC3. ORC2\u00b73\u00b7(5 WH) and ORC1\u00b74\u00b7(5 AAA+) were designated as two bodies for Relion\u2019s multibody refinement. (b) Principal component analysis revealed two prominent movements of ORCO1AAA highlighted in red and blue. (c) Component 1 undergoes twist movement of ORC2\u00b73 across the ORC1 AAA+ domain. (d) Component 2 undergoes a pinch movement of ORC2\u00b73 towards the ORC1 AAA+ domain. Multibody Refinement results of ORCO2WH and ORCOPEN are available in Figure 3\u2014figure supplement 1. To validate the Multibody Refinement, Cryosparc\u2019s 3D Variability analysis was performed and yielded the same prominent movements. The movements from Multibody Refinement and 3D variability can be visualized in Video 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Principal component analysis results for, ORCO2WH (a), and ORCOPEN (b). The most prominent movements for each conformation are twist and pinch motions.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The N-terminal region of ORC3 in the ORCOPEN structures extends into a long \u03b1-helix compared to the other ORC conformations. The long \u03b1-helix likely contributes to the open conformation of the structure.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig4-v2.jpg)\n\n**Figure 4.:** (a) ORC subunits 1\u20135 contain regions with positively-charged residues proximal to the DNA. (b) The ORC1 RecA-fold contains several positively-charged residues in close proximity to DNA. (c) The ORC2 WHD, shown as a density map due to the lower resolution of this domain, moves to interact with the DNA in the core of the complex. (c) The \u03b2-hairpin loops of ORC4 and ORC5 contain positively-charged residues proximal to the DNA. The DNA depicted consists of non-specific sequence. (d) The ORC4 \u03b2-hairpin loop of S. cerevisiae contains an \u03b1-helix that inserts into the major groove of DNA making sequence-specific interactions with DNA bases. (e) The \u03b2-hairpin loop in ORCDNA does not contain an \u03b1-helix. However, ORC4 R390 in humans may interact with the DNA backbone similar to ORC4 R478 in S. cerevisiae. (f) The superimposition of the ScORC and HsORC \u03b2-hairpin loops illustrates the significant difference between the regions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Close-up of the DNA in ORCDNA with mesh density map overlaying the structure from the DNA axis (a) and side view (b). The top panel shows the mesh density map overlaying the structure and the bottom panel shows the surface density map with DNA in red and subunits in close proximity highlighted.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) After strep-tag purification of ORC1-5, the sample was applied to a 1% agarose gel. The ORC sample contained DNA of less than 0.5 kb. (b) Post 2D classification of the ORCDNA particle population. A strong signal is observed in the core of the complex.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Further 3D classification of ORCDNA particles revealed the DNA in multiple conformations in the core.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Sequences are ordered by similarity to H. sapiens. Positively-charged residues in close proximity to DNA in the human ORCDNA structure are highlighted in yellow. The sequence alignment was generated using MUSCLE (Edgar, 2004).\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Sequences are ordered by similarity to H. sapiens. The \u03b2-hairpin loop region is highlighted in yellow. ORC4 R390 in humans may interact with the DNA backbone similar to ORC4 R478 in S. cerevisiae. These arginines are highlighted in red. The sequence alignment was generated using MUSCLE (Edgar, 2004) and then structurally aligned.\n\n![Video 1.](https://cdn.elifesciences.org/articles/58622/elife-58622-video1.mp4.jpg)\n\n**Video 1.:** The ORC2 WHD in ORCO2WH is in a similar conformation to the autoinhibited state observed in DmORC (Bleichert et al., 2015). The ORC2 WHD must undergo a significant\u00a0~135\u00b0rotation to bind in the conformation observed in ORCO2-5.\n\nThree ATP nucleotides were well resolved in the ORC maps (Figure 1g and Figure 1\u2014figure supplement 1), consistent with previous observations (Tocilj et al., 2017). Although not provided in the sample buffer, magnesium ions were also resolved in the maps and were likely retained from the protein expression lysate. Only in the ORCO2WH structure was an ATP absent at the ORC1\u00b74 site due to the displacement of the ORC1 AAA+-domain (Figure 1c, Figure 2a,b and Video 2) and consequential disruption of the ATP binding site. The architectures of the ORC1\u00b74 and ORC4\u00b75 sites are characteristic of AAA+ ATPase proteins, where the Walker-A and Walker-B motifs of the RecA-fold of one subunit coordinate the ATP molecule on one face and three conserved basic residues, one from the same subunit and two from the other subunit coordinate the other face (Figure 1g). At the ORC1\u00b74 interface, for example, these three basic residues are R720 of the ORC1 lid domain, acting as the trigger (or sensor-II), the ORC4 finger R209, and the ORC4 tether R205 coordinating the other face (Figure 1g). As mentioned, the only site that has been shown to have ATPase activity is the ORC1\u00b74 site, and mutations at this site are associated with the developmental disorder Meier-Gorlin Syndrome (Tocilj et al., 2017). In contrast to ORC1\u00b74 and ORC4\u00b75, the ORC5\u00b73 interface appears considerably more flexible and, in fact, ORC3 does not seem to participate in ATP coordination (Figure 1g). Nonetheless, we do observe density for an ORC3 region proximal to the ATP site in low-pass filtered maps which indicate dynamic movements of the unresolved residues 86\u201394.\n\n![Video 2.](https://cdn.elifesciences.org/articles/58622/elife-58622-video2.mp4.jpg)\n\n**Video 2.:** A low-pass filtered 3D classification of ORCO2WH revealed an ORC1 AAA+ position near the ORC1\u00b74 interface that forms the ATP binding site and an ORC1 AAA+ position near the auto-inhibited state disrupting the ORC1\u00b74 ATP binding site.\n\nThe structures of ORC2, ORC3, and the WHD of ORC5 have significantly improved resolution compared to the previous published HsORC structure (Tocilj et al., 2017). ORCO1AAA was especially improved in this region due to the 3D focused refinement we applied (Figure 1\u2014figure supplement 7). The close intertwine between ORC2 and ORC3 in ScORC and DmORC structures is also apparent in the structures of HsORC presented here (Figure 1\u2014figure supplement 8). The N-terminal regions of ORC2 and ORC3 wrap around each other contributing to their tight binding. In fact, ORC2 and ORC3 localize to centromeres in mitosis and may function independently of the other ORC subunits (Craig et al., 2003; Prasanth et al., 2004; Prasanth et al., 2010). The solvent-accessible surface area buried between ORC2 and ORC3 (3296 \u00c52) is significantly larger than the next closest interacting subunits ORC4 and ORC5 (2707 \u00c52). In the ScORC structure, the ORC2 N-terminal region wraps around the WHD of ORC3 and forms a helix on the opposite end (Li et al., 2018). In the HsORC structures, the ORC2 N-terminal helix (aa239-249) is present in the ORCO1AAA and ORCO2WH maps, while the loop (aa250-267) wrapping around ORC3 is dynamic and thus unresolved (Figure 1\u2014figure supplement 8). In addition, the ORC3 N-terminal region (residues 10\u201314) loops around the RecA-like fold of ORC2 and forms a \u03b2-strand that adheres to one of the ORC2 RecA-like \u03b2-strands (aa335-339).\n\n### Dynamic states of ORC1 AAA+ and ORC2 WH\n\nThe ORCO1AAA and ORCO2WH structures illustrate the dynamic movements of ORC1 AAA+ and ORC2 WH domains relative to each other (Figure 1c,d). Other than the ORC1 AAA+ and ORC2 WHD, the architectures of the two conformations are similar. In both maps, density for the missing domains can be seen in 3D classifications with a 20 \u00c5 low-pass filtered template and E-step resolution limit of 20 \u00c5 (Figure 2a,b, Figure 2\u2014figure supplement 1 and Video 2). In the ORCO1AAA structure, the ORC2 WHD undergoes conformational changes but does not change its overall position in the complex (Figure 2\u2014figure supplement 1a). In contrast, in the ORCO2WH structure, the ORC1 AAA+ rotates\u00a0~90\u00b0 from a position proximal to the ORC4 AAA+ domain where it completes the major ATP binding site in the ORCO1AAA structure, to a position proximal to the ORC1 and ORC5 WHDs (Figure 2a,b, Figure 2\u2014figure supplement 1 and Video 2), disrupting the ORC1\u00b74 ATP binding site. The latter position resembles the auto-inhibited state observed in the DmORC structure (Bleichert et al., 2015). This state was also observed in 2D classifications of the human ORC (Bleichert et al., 2018). While ORC1 AAA+ is locked in the auto-inhibited state in DmORC, the ORC1 AAA+ domain in human ORC appears to be dynamic along a continuum of positions between two extreme states: the auto-inhibited state observed in the DmORC and when it forms the ORC1\u00b74 interface with ORC4 as observed in ORCO1AAA. As mentioned, the ATPase site between the ORC1 and ORC4 is the only site that exhibits activity and mutations at the site are associated with the developmental disorder Meier-Gorlin Syndrome, but the functional role of ATP hydrolysis is unknown. The ORC1 AAA+ domain\u2019s dynamic movements may be a consequence of ORC1\u00b74 ATP hydrolysis, but further investigation is necessary. On the other hand, the ORC4\u00b75 and ORC5\u00b73 subunit interfaces are stable, and do not appear to be disrupted, which may be a consequence of their inability to hydrolyze ATP. Based on this idea and previous studies using mutant ORC4 and ORC5 subunits (Siddiqui and Stillman, 2007), we conclude that ATP promotes the assembly and stability of the human ORC, which, unlike yeast ORC, is assembled and disassembled throughout the cell division cycle. Overall, the ORCO1AAA and ORCO2WH populations reveal a dynamic switch between the ORC1 AAA+ and ORC2 WHD where the locking into position of one domain within the ORC ring-shaped core kicks the other domain into a dynamic state. These domains are accommodated simultaneously only in the ORCOPEN and ORCDNA complexes, two conformations that separate the ORC1 AAA+ and ORC2 WH domains by widening the gap between ORC1 and ORC2 and by mutual electrostatic attraction to DNA, respectively (see below).\n\nA minor ORC2 WHD conformation was observed in further 3D classifications of the ORCO2WH particles (Figure 2e). Secondary structure elements can be seen in the ORC2 WHD region that are clearly different from the auto-inhibited conformation. In fact, this conformation resembles the completely collapsed ORC2 WHD conformations in the ORCO2-5 structure where the domain is further tucked into the core of the complex compared to the auto-inhibited state (Figure 2c). Although the density region of the ORC2 WHD alternative state in ORCO2WH is of low resolution, we were confidently able to fit this region once we modelled the ORC2 WHD inactive state in the well-resolved ORCO2-5 structure (Figure 2c). Notably, this alternative conformation does not resemble any of the conformations of ORC2 WHD in any previously reported structures of the various ORCs (Bleichert et al., 2015; Bleichert et al., 2018; Li et al., 2018; Tocilj et al., 2017; Yuan et al., 2017). The buried ORC2 WHD appears to stabilize ORC2-5 complex prior to ORC1 binding, hence we termed this structure of the ORC2 WHD the inactive state (Figure 1b and Figure 2c,e). The binding of ORC1 seems to facilitate the release of the O2 WHD from this tucked-in state, generating a more labile structure for downstream events. In both the yeast OCCM and ORC-DNA structures (Li et al., 2018; Yuan et al., 2017), the ORC2 WHD interacts with the origin DNA and is far away from the gap between the ORC1 and ORC2 AAA+ domains, forming a collar of ORC WHDs that surround the DNA. Thus the movement of the ORC2 WHD seems to be a universal feature of controlling DNA access to the ring-shaped core of ORC and hence binding to DNA.\n\n### Hinge movement arising from the ORC3\u00b75 interface\n\nThe ORCOPEN structure displays a conformation similar to what was reported previously for HsORC and ScORC (Figure 1e). When aligned to ORCO1AAA, a hinge in ORCOPEN is evident and originates from the somewhat loose ORC3\u00b75 interface, allowing the ORC2\u00b73 subunits (including the ORC5 WH) to rotate (22\u00b0 rotation angle) away from the ORC1\u00b74\u00b75 motor module in a hinge motion (Figure 3a). In fact, these two portions of ORC can exist as two separate stable complexes, as evident by the isolation of these stable sub-complexes previously (Tocilj et al., 2017). In addition, the ORC3 N-terminal region of ORCOPEN consists of an extended, straightened \u03b1-helix (aa42-86) that is bent in the other ORC conformations by 32\u00b0 (Figure 1e, Figure 3\u2014figure supplement 2). This long helix in ORCOPEN may provide structural stability to the open conformation. The ORC3 straight helix is also present in the ScORC structure (Li et al., 2018; Yuan et al., 2017), while the helix is bent in the DmORC structure (Bleichert et al., 2015). Interestingly, both the ORC1 AAA+ and O2 WHD are ordered in the open conformation. The extra space in the ORC ring opening reduces clashes between the ORC2 WHD and ORC1 AAA+ domain and allows both domains to adopt a fixed orientation relative to their mutually-exclusive static positioning observed in the more closed ORCO1AAA and ORCO2WH structures (Figure 2a,b, Figure 2\u2014figure supplement 1).\n\nTo assess the prominent movements around the ORC3\u00b7five interface, we performed multibody refinement in Relion on the ORCO1AAA, ORCO2WH, and ORCOPEN particle populations (Figure 3b\u2013d and Video 3). Subunits ORC2\u00b73 (including ORC5 WHD) and ORC1\u00b74\u00b75 of HsORC were designated as two separate masked bodies in Relion's multibody refinement to determine their independent movements (Nakane et al., 2018) (ORC1 was isolated as a third masked body in multibody refinement, but the experiment did not provide conclusive results, most likely due to the relatively small size of ORC1). The components of the masked bodies and ORC movements were further validated by performing Cryosparc\u2019s unbiased 3D Variability Analysis on the ORCO1AAA particles (Video 3; Punjani and Fleet, 2020). Compared to Multibody Refinement, 3D Variability Analysis does not rely on user input to determine regions that move independently of one another (Punjani and Fleet, 2020). Both Multibody Refinement and 3D Variability Analysis revealed the same prominent movements in the ORCO1AAA particle population. For all three ORC populations, multibody refinement generated two components (specific movements of ORC) that contributed significantly more to the overall variance (total movement of ORC) (Figure 3\u2014figure supplement 1b and Video 3). These movements contributed between 17% to 23% of the total variance of each particle population. The two movements can be described as twisting and pinching, respectively, both emanating from the hinge at the ORC3\u00b75 interface (Figure 3c,d and Video 3). The ORC twisting motion involves ORC1 and ORC2 sliding over each other, while the pinching motion involves ORC1 and ORC2 narrowing/widening the ORC ring opening between them (Figure 3c,d and Video 3). The twisting and pinching movements provide potential flexibility to ORC during replication initiation events, including DNA binding, movement along DNA, and/or complex release after MCM double hexamer formation.\n\n![Video 3.](https://cdn.elifesciences.org/articles/58622/elife-58622-video3.mp4.jpg)\n\n**Video 3.:** Relion\u2019s Multibody Refinement and Cryosparc\u2019s 3D Variability Analysis revealed the same two prominent movements which resemble a twist and pinch motion, respectively.\n\nIn the global refinement of ORC, the ORC2\u00b73 regions lining the gap with ORC1 suffered the most in terms of alignment. In refinements, the center of mass for alignments is located on ORC1\u00b74\u00b75 and, since ORC2\u00b73 moves independently of ORC1\u00b74\u00b75, the edges of ORC2 and ORC3 were misaligned. However, the multibody/focused refinement significantly improved the ORC2\u00b73 region of the map (Figure 1\u2014figure supplement 7). The N-terminus of ORC3, which wraps around ORC2 and extends the \u03b2-sheet of the RecA-like fold of ORC2 with an additional strand, was clearly resolved in the focused-refined map. In addition, the density of an ORC2 loop region (residues 361\u2013368), which comes into close proximity with bound DNA in the ORCDNA map (see below), is significantly improved. The improved density maps of ORC further validates the multibody refinement parameters and, therefore, the flexibility at the ORC3\u00b75 interface.\n\n### DNA bound to HsORC\n\nOne class from the ORC1-5 sample contained clear density for DNA in the core of the complex and yielded a 4.3 \u00c5 map into which DNA could be fit into the ORC1-5 structure (ORCDNA) (Figure 1f, Figure 4, Figure 4\u2014figure supplement 1). DNA was detected in the affinity-purified, recombinant HsORC expressed in Sf9 insect cells and the presence of this DNA species was only detected when ORC was expressed (Figure 4\u2014figure supplement 2a). Furthermore, a post 2D classification of the DNA-bound HsORC yielded classes with strong density in the core of the complex (Figure 4\u2014figure supplement 2b). The bright appearance of this density in the 2D classification likely represents the heavy phosphorous atoms in the DNA backbone since heavy atoms scatter electrons to a greater extent and to higher angles in TEM (Kellenberger et al., 1986). Since DNA-binding of HsORC is not sequence specific, the DNA is likely to have multiple orientations along its axis in the core, consistent with further 3D classification of the DNA-bound ORC populations (Figure 4\u2014figure supplement 3). In other words, the DNA fragment visualized is a result of a superposition of sequences along the DNA fragment. The overall conformation of ORCDNA resembles the more closed conformations of ORCO1AAA and ORCO2WH, albeit with ORC2 WHD in a different conformation (see below). The structure shows DNA contacts by all five subunits of ORC, with the most significant interactions occurring with the ORC1 RecA-fold and ORC2 WHD (Figure 4a\u2013c). In the ORC1 RecA-fold, two loops (residues 593\u2013596 and 626\u2013630, respectively) at the N-terminal regions of two \u03b1-helices are in close contact to the DNA. Importantly, there are several positively-charged and aromatic residues in the loops (K591, N595, H596 W626, H628, K629) that appear to be involved in binding the negatively-charged DNA backbone (Figure 4b). Sequence alignments show that while most of these residues are conserved in vertebrate species, they differ in insects, plants and fungi (Figure 4\u2014figure supplement 4). The ORC2 WHD is also in close contact with the DNA and this domain undergoes significant secondary structure rearrangement, which prevented precise fitting of modelled ORC2 WHD into the region, and the resolution is not high enough for unambiguous model building of this region (Figure 4c). The ORC2 WHD may adopt multiple conformations in this structure similar to the multiple ORC2 WHD states observed in DNA-bound ScORC (Li et al., 2018). Nevertheless, clear secondary structure is visible in the ORC2 WHD region of the map, in which, a long helix has significant contact with the DNA density (Figure 4c). In addition, the initiation specific motif (ISM) of ORC2 (residues 364\u2013368) in the RecA-like fold is near the DNA substrate. Specifically, the positively-charged ORC2 residue R367 emanating from this loop, appears to mediate the interaction with DNA. The ORC2 ISM in humans may play an important role in binding DNA similar to the ORC2 ISM in ScORC where W396 is buried in the minor groove of DNA (Li et al., 2018; Yuan et al., 2017). The \u03b2-hairpin loop in ORC5 of HsORC also consists of a positively-charged residue H398 in close proximity to DNA (Figure 4a,f). Similarly, the \u03b2-hairpin loop in ORC5 of ScORC contains positively-charged residues (N438, K439, N440, K447, R449) extending into the major groove of DNA (Li et al., 2018).\n\nThe Orc4 WHD plays an important role in origin-specific binding in S. cerevisiae (Hu et al., 2020; Li et al., 2018; Yuan et al., 2017). In S. cerevisiae, this domain contains an \u03b1-helix insertion in the \u03b2-hairpin wing (residues 481\u2013489) that inserts into the major groove of the ARS-sequence DNA and is a key contributor to conferring sequence specificity for origin recognition (Figure 4d). The homologous ORC4 region in HsORC is visible in the ORCO1AAA cryoEM density map allowing us to now model this region (Figure 4e). This region in HsORC is 20 residues shorter than the ScORC segment and does not contain an \u03b1-helix (Figure 4f and Figure 4\u2014figure supplement 5; Hu et al., 2020). The missing helix in HsORC likely reduces its ability to bind specifically to a DNA sequence resulting in the requirement of other mechanisms to establish stable origin interactions. This loss of specificity also contributes to the multiple conformations of DNA observed in the core of human ORC (Figure 4\u2014figure supplement 3). Despite the missing helix, the shorter ORC4 loop contacts the DNA in the ORCDNA structure proximal to R390 (Figure 4e), a positively-charged residue that may participate in DNA-backbone interactions similar to R478 in ScORC4 (Figure 4d). Based on sequence alignments (Figure 4\u2014figure supplement 5), the ORC4 helix insertion has likely evolved in a small clade of Saccharomyces-related budding yeast species in tandem with a loss of RNA interference (RNAi)-mediated transcriptional gene silencing, while the region is absent in most other eukaryotic organisms, including fungi, plants, and animals, which use RNAi for silencing (Hu et al., 2020). Since HsORC does not display DNA sequence specific DNA binding (Vashee et al., 2003; Vashee et al., 2001), the significant difference in ORC4 between budding yeast and human ORC contributes to the sequence-dependent and -independent origin binding in these species (Figure 4f). HsORC binds to specific locations in chromosomes (Miotto et al., 2016) and unlike ScORC, it is most likely targeted to these sites by binding to specific histones and their modifications (Hossain and Stillman, 2016; Kuo et al., 2012; Long et al., 2020).\n\n### Concluding remarks\n\nDNA replication initiation is a highly dynamic, multi-complex process that requires essential coordination by ORC. Our findings uncover several dynamic conformations of HsORC which have implications in facilitating initiation events including DNA engagement, CDC6 recruitment, and MCM complex assembly onto DNA. We determined four structures of ORC that demonstrate the previously unappreciated flexibility of the complex. The ORCO1AAA and ORCO2WH consists of two dynamic domains, ORC2 WH and ORC1 AAA+, respectively, that repel each other from adopting their fixed positions. The domain dynamics are possibly linked to the catalytic activity at the ORC1\u00b74 ATPase site, warranting further analysis to determine the molecular basis and the biological role of these domain movements. While the ORCOPEN structure largely resembles the ScORC conformation in the budding yeast OCCM complex and the previously reported HsORC structure, it unexpectedly reveals a significant hinge point at the ORC3-5 interface that generates a twist and pinch motion. The twist motion may allow ORC to move on DNA with a scanning mechanism to establish origin sites and the pinch motion may be involved in facilitating ORC to accommodate DNA into its central cavity via the partial ring opening and the subsequent incorporation of CDC6 into the ORC-DNA complex. The ATPase activity of ORC may promote the dynamic movement of the ORC1 and ORC2 subunits during assembly or prior to origin recognition. Lastly, the ORCDNA structure contains endogenous DNA bound in the core of ORC and reveals regions in the core that are in close proximity to the bound DNA. These observations along with previous studies on the dynamic, ATP-dependent assembly of ORC (Siddiqui and Stillman, 2007) suggest a model in which a pre-assembled ORC2-5 complex binds to ORC1 and promotes the opening of the ORC core to facilitate DNA binding. Since ORC1 appears to be the first ORC subunit to bind to chromosomes during mitosis (Kara et al., 2015; Okuno et al., 2001), ORC1 may recruit the other subunits via the pathway outlined in Figure 5. These interactions between ORC1 and ORC2-5 may be facilitated by intrinsically disordered regions (IDRs) the predicted N-terminal regions of ORC1 and ORC2 forming condensates via phase transitions (Parker et al., 2019). Proteins containing IDRs are difficult to express and by their nature contain large unstructured regions. We therefore removed the ORC1 N-terminal region from our construct and we were not able to resolve the ORC2 N-terminal region. Due to the absence of these regions, IDRs appear unnecessary for ORC assembly. Finally, it is known that the C-terminus of yeast Mcm3 binds to and activates the ATPase activity of the ORC-Cdc6 complex on DNA, possibly preventing futile loading of incomplete Mcm2-7 hexamers (Frigola et al., 2013). It is also possible that if the C-terminus of Mcm3 stimulates the ATPase activity of ORC, it may induce movement of the ORC1 AAA+ and a switch from the active to the inactive state of ORC after complete pre-RC assembly. Comparing the human and yeast ORC DNA contacts provides insights into the different sequence specificity requirements of ORC-DNA binding between the species. Our study establishes the foundation for further exploration of the critical determinants in metazoan replication origin establishment.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58622/elife-58622-fig5-v2.jpg)\n\n**Figure 5.:** The binding of ORC1 to ORC2-5 opens the complex and facilitates dynamic movements of ORC1 AAA+ and ORC2 WH at the ring opening and a hinge motion at the ORC3\u00b75 interface. The binding of DNA facilitates positioning of ORC1 AAA+ and ORC2 WHD on DNA for interaction to establish replication origin recognition.\n\n## Materials and methods\n\n### Protein preparation\n\nCodon optimized human Origin Recognition Complex (HsORC) synthetic genes [NP_004144.2 HsORC subunit 1 (HsORC1), NP_006181.1 HsORC subunit 2 (HsORC2), NP_862820.1 HsORC subunit 3 (HsORC3), NP_859525.1 HsORC subunit 4 (HsORC4), NP_002544.1 HsORC subunit 5 (HsORC5)] were cloned into the MultiBac baculovirus expression system (Bieniossek et al., 2008). The ORC1 subunit was truncated at the N-terminus to facilitate stability and monodispersity of human ORC based on the previous study (Tocilj et al., 2017), while the remaining subunits were expressed as full-length proteins.\n\nFor recombinant expression of the hetero-pentameric HsORC1-5, gene-coding sequences were cloned into the pFL vector (pH promoter HsORC1 residues 471\u2013861), pUCDM vector (pH promoter HsORC4 residues 1\u2013436 (full-length), p10 promoter HsORC3 residues 1\u2013712 (full-length) and pSPL vector (pH promoter HsORC2 residues 1\u2013577 (full-length), p10 promoter HsORC5 residues 1\u2013435 (full-length)). A StrepTag was introduced to the N-terminus of ORC3 for affinity purification. Sf9 insect cells were infected with baculovirus in Hyclone CCM3 media (GE Healthcare Life Sciences, Pittsburgh, PA) for 48 hr. For recombinant expression of HsORC2-5, the baculovirus system was identical to that of HsORC1-5, except that the HsORC1 was full-length (residues 1\u2013861). However, after affinity purification of HsORC2-5, ORC1 was not present in the protein sample. The purification steps of HsORC1-5 and HsORC2-5 were identical.\n\nAll purification steps were performed at 4\u00b0C. Cell pellets were thawed on ice and resuspended in lysis buffer (50 mM HEPES-NaOH (pH 7.5), 200 mM KCl, 6.5 mM dithiothreitol (DTT), 1.7 mM adenosine triphosphate (ATP)). Following sonication, the lysate was centrifuged for 45 min at 143,000 g and the supernatant was loaded onto 5 ml of StrepTactin Super-flow resin (IBA, Goettingen, Germany). The beads were washed and recombinant HsORC1-5 complex was eluted with lysis buffer, which contained 5 mM desthiobiotin. The elution was concentrated and loaded onto a Superdex 200 Increase 10/300 GL size exclusion column (GE Healthcare Life Sciences, Pittsburgh, PA) equilibrated with minimal buffer (25 mM HEPES-NaOH (pH 7.5), 80 mM KCl, 3.3 mM dithiothreitol (DTT), 0.8 mM adenosine triphosphate (ATP)).\n\n### Cryo-electron microscopy sample preparation\n\nCryoEM sample preparations for HsORC1-5 and HsORC2-5 were identical. ORC samples were diluted to 0.8 mg/ml and Lauryl Maltose Neopentyl Glycol (LMNG, Anatrace, Maumee, OH) were added to 0.05% w/v to reduce preferred orientations and promote thin layers of ice over grid holes. For cryoEM grid preparations, we applied 4 \u00b5l of ORC at a final concentration of 0.8 mg/ml to a glow-discharged Quantifoil R 2/1 300 mesh copper grid, incubated for 10 s at 25\u00b0C and 90% humidity, blotted for 2.9 s, and then plunged the grid into liquid ethane using a Leica Automatic Plunge Freezer EM GP2 (Buffalo Grove, IL).\n\n### Cryo-electron microscopy data acquisition\n\nCryo-EM data were collected on a FEI/ThermoFisher Titan Krios transmission electron microscope (TEM) operating at 300 keV. Dose-fractionated movies were collected using a Gatan K2 Summit direct electron detector operating in electron counting mode. For HsORC1-5, movies were collected with 30 frames during a 6 s exposure at an exposure rate of 2.2 e-/A2/frame, resulting in a cumulative exposure of 66 e-/\u00c52. For HsORC2-5, 35-frame movies were collected during a 7 s exposure at an exposure rate of 2.2 e-/A2/frame, resulting in a cumulative exposure of 77 e-/\u00c52. The EPU data collection software (ThermoFisher, Hillsboro, OR) was used to collect 9068 micrographs for HsORC1-5 and 5549 for HsORC2-5 micrographs by moving to hole centers and image shifting to five positions within the hole to acquire five exposures at 130,000x nominal magnification (1.07 \u00c5/pixel at the specimen level), with a nominal defocus range of \u22121.0 to \u22122.4 \u03bcm. Data collection information is summarized in Supplementary file 1.\n\n### Image processing and 3D reconstruction\n\nWARP was used to perform real-time image pre-processing (motion correction, CTF estimation, particle picking) during cryo-EM data collection for both HsORC1-5 and HsORC2-5 (Tegunov and Cramer, 2019). Particle picking was performed with the BoxNet pretrained neural network bundle employed in WARP and implemented in TensorFlow. A particle diameter of 160 \u00c5 and a threshold score of 0.6 yielded 2,112,391 particle coordinates for HsORC1-5 and 494,812 particle coordinates for HsORC2-5. These particles were initially subjected to a 2D classification in Cryosparc v2 (Punjani et al., 2017). A subset of particles were selected for ab initio reconstruction in Cryosparc v2 to generate an initial model for 3D classification in Relion 3.0 (Figure 1\u2014figure supplements 1\u20132; Zivanov et al., 2018). Relion 3.0 was used for all remaining processing steps, including reprocessing of the micrographs (Relion\u2019s implementation of motion correction), CTF estimation (Gctf) (Zhang, 2016; Zivanov et al., 2018).\n\nFor HsORC2-5, a total of 494,812 particles (from WARP/BoxNet coordinates) were initially extracted from micrographs using an unbinned box size of 320 pixels binned to a box size of 80 pixels (4 x bin) for 3D classification in Relion. The particles were classified into five classes using the scaled and low-pass filtered ab initio reconstruction from Cryosparc v2 as a reference map and a regularization parameter of four. The 209,479 particles contributing to the best 3D class average containing well-defined structural features were further unbinned, classified, and refined to yield a 3.7 \u00c5 map of 168,444 particles. To further improve the resolution, we performed Bayesian polishing and CTF refinement, twice each, to re-refine the particle stacks, which yielded a map with a reported resolution of 3.3 \u00c5. The ORC2 WHD in the refined map was significantly unresolved, therefore, a 3D classification (3 classes, no alignment, regularization parameter of 100) with a mask encompassing the ORC2 WHD was performed that yielded a map with more complete density in the region. The 53,009 particles from the classification were further refined to yield a final map of 3.5 \u00c5 (ORCO2-5).\n\nFor HsORC1-5, a total of 2,112,391 particles (from WARP/BoxNet coordinates) were initially extracted from micrographs using an unbinned box size of 320 pixels binned to a box size of 80 pixels (4 x bin) for 3D classification in Relion. The particles were classified into five classes using the scaled and low-pass filtered ab initio reconstruction from Cryosparc v2 as a reference map and a regularization parameter of four. The 855,373 particles contributing to the best 3D class average containing well-defined structural features were further unbinned, classified, and refined to yield four prominent density maps at resolutions of\u00a0~3.8 \u00c5 (ORCO1AAA),~4.0 \u00c5 (ORCO2WH),~4.0 \u00c5 (ORCopen), and\u00a0~4.3 \u00c5 (ORCDNA). The observable structural features of the ORCopen and ORCDNA maps were not consistent with the reported resolutions and appeared to suffer from issues with flexibility and misalignment, and preferred orientation and were, therefore, not further refined. In addition, the program 3DFSC (Tan et al., 2017) revealed that these maps also suffered from preferred orientation (Figure 1\u2014figure supplement 6). The ORCO1AAA and ORCO2WH maps contained well-defined features consistent with their respective resolutions, but were not sufficiently resolved for atomic modeling. To further improve the resolution, we performed CTF refinement and Bayesian polishing to re-refine the particle stacks, which yielded reconstructed maps with a reported resolution of 3.2 \u00c5 (ORCO1AAA) and 3.7 \u00c5 (ORCO2WH). Several regions of the ORCO1AAA map (particular the regions of ORC2 and ORC3 that line the gap in the ORC open-ring structure) did not contain structural features that are consistent with 3.2 \u00c5 cryo-EM density. Considering several 3D classes consisted of ORC2 and ORC3 in different orientations relative to the rest of the complex, we performed multibody refinement (Nakane et al., 2018) using two masked regions: ORC2\u00b73\u00b75 WHD and ORC1\u00b74\u00b75 AAA+. The chosen locations of the masks were further validated by performing Cryosparc\u2019s unbiased 3D Variability Analysis (Punjani and Fleet, 2020) on the ORCO1AAA particle population which revealed the same movements as the Multibody Refinement. The multibody refinement improved the resolution and map quality of the region of ORC2\u00b73 mentioned above (Figure 3\u2014figure supplement 2). A final composite ORCO1AAA map of the focused and non-focused refinements was generated for atomic model building and refinement using the \u2018vop max\u2019 operation in UCSF Chimera (Goddard et al., 2007). Final cryoEM density map information is summarized in Supplementary file 1.\n\n### Model building\n\nThe atomic model of HsORC (PDB ID: 5ujm) (Tocilj et al., 2017) was used as a template for model building in ORCO1AAA and map. Density in the ORC2 and ORC3 region of the previous structure were of low resolution and relied significantly on the Drosophila melanogaster ORC2 and ORC3 model as a template (Bleichert et al., 2015). In this work, the high-resolution map of ORCO1AAA allowed for precise modelling of each residue in Coot which resulted in regions that were rebuilt, and regions built for the first time (especially in ORC2 and ORC3). Subunits of the ORCO1AAA model were used as templates for model building into the ORCO2-5, ORCO2WH, ORCOPEN, and ORCDNA maps. The ORC2 WHD of the ORCO2WH map was modelled initially using the ORC2 WHD from the DmORC atomic model (Bleichert et al., 2015). Each subunit of the models was rigid body fit using the \u2018fit in map\u2019 function in UCSF Chimera (Goddard et al., 2007). The resulting model, including nucleotides and coordinating metal ions, was subject to further model building using the COOT software package (Emsley and Cowtan, 2004), and then real-space refined with the PHENIX package (Afonine et al., 2012). The rotation angle calculations at the O3\u00b75 hinge was determined using the \u2018align\u2019 function in UCSF ChimeraX (Goddard et al., 2018). The ORCO1AAA and ORCOPEN structures were aligned at ORC4, followed by alignment of ORC2\u00b73 which generates a report containing the rotation angle between the aligned ORC2\u00b73 subunits. UCSF ChimeraX (Goddard et al., 2018) was also used to generate the figures and buried surface areas were determined using the \u2018measure buriedarea\u2019 function in ChimeraX). Model statistics are summarized in Supplementary file 1.\n",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "0b4f1a3c-9781-43b4-94df-ee67ccdeb85d",
+      "submission_id": "d8e8f125-3a9c-4703-99fd-2e54339fdcbd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sriram Subramaniam, University of British Columbia Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58622.sa1](https://doi.org/10.7554/eLife.58622.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe structures that you report of multiple states of the human ORC complex, an essential replication complex in free and DNA-bound states, is a major advance. The resolution is significantly improved compared to what was reported previously and the newly described conformational states provide further mechanistic insight into the significance of protein movements that are relevant for DNA binding.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The dynamic nature of the human Origin Recognition Complex revealed through five cryoEM structures\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Sriram Subramaniam as the Reviewing Editor and John Kuriyan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Tim Grant (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nJaremko et al. describe structures of multiple states of the human ORC complex, an essential replication complex in free and DNA-bound states. The structures contribute a major advance, as the resolution is significantly improved compared to the previous HsORC structure and describe conformational states that provide further mechanistic insight into HsORC function. Altogether these results are important and should be published.\n\nEssential revisions:\n\n1) Validation and analysis:\n\nSupplementary file 1 and validation reports don't match. Supplementary file 1 lacks info.\n\n\u2013 FSC (model-to-map) for final models should be provided.\n\n\u2013 Maps should be displayed next to the model or a table indicating which conformation includes which subunits/domains/residues in the corresponding model should be provided to give the reader more clarity about which parts of the complex were modeled in each conformation and how the conformations differ from each other.\n\n\u2013 Show EM maps for all ATPs sites, not only 1 conformation (in Figure 1\u2014figure supplement 2).\n\n2) Revision of Figures 1, 2, 4 and Video 1:\n\nFigure 1:\n\n\u2013 Sideview does not add much new info, rather show a cryoEM map next to the model to visualize which parts of the map have been modeled.\n\n\u2013 Panel J) Show close-up of the \u03b2-341 hairpin loop of ORC4O1AAA and show corresponding area in ScORC as well as cartoon of WHD domains from HsORC4 and ScORC4 side by side either in 1J or as part of Figure 4. The difference in this critical DNA binding area is a major finding of the manuscript and needs to be visualized for the reader.\n\nShow intertwining of ORC2 and ORC3 from HsORC and comparison to DmORC.\n\nFigure 2:\n\n\u2013 Label subunits again. Panel 2B does not show structural change, needs a sideview or arrow to show the 90\u00b0 tilt of the subunit in the bottom panel.\n\n\u2013 Panel C-F: Display tilt angle of inactive versus autoinhibited conformation.\n\nFigure 4:\n\n\u2013 EM-Map hides DNA and it is not clear which residues interact with DNA. Show cartoon representation of structural models throughout this figure. Show top down view on dsDNA at appropriate zoom to visualize all interactions in 1 image.\n\nVideo 1:\n\n\u2013 Use colorzone command or encircle WHD domain to highlight WHD domain unambiguously. Label red map, blue map and don't change color at the end of the video?\n\n3) A deeper discussion of findings and the mechanistic model:\n\n\u2013 The authors find shortening of an \u03b1-helix in the WHD domain of HsORC4 compared to ScORC that could account for sequence specificity of ScORC. Is there more data to support this? Which organisms have or don't have this helix? Does the presence of the helix correlate with sequence specificity of Orc? Are there prior sequencing data of corresponding ScORC4-WHD domain mutants that support this? This is an important finding, but is explored very little in the manuscript.\n\n\u2013 The authors speculate that Arg89 of ORC3 could be involved in ATP coordination (subsection \u201cOverall HsORC structure and comparison to ORC from Saccharomyces cerevisiae and Drosophilamelanogaster\u201d). Ideally, they'd mutate the residue and test function. Absent that, is this residue conserved?\n\n\u2013 The authors also speculate that HsORC may detect intracellular levels of ATP. Is there data to back this up? What is the Kd of ATP? Is it reasonable for acting as a sensor? If not, then this needs to be removed.\n\n\u2013 The authors propose an interesting model for HsORC activation and DNA binding. Is there biochemical data in support of this model? Could comment a bit more on the role of the conserved WHD domain of ORC2 and the inactive state: Does the WHD domain in inactive state prevent nonspecific DNA binding of ORC2-5? Is there available DNA binding data on deletion mutants of WHD domain of ORC2?\n\n\u2013 Discussion in regard to IDRs and phase separation: The text reads as if IDRs are present in several subunits \u2013 in which subunits and where are the IDRs? Are they predicted? Why are they not present in structures? Are they not resolved (likely owing to flexibility) or were they not included in expression constructs? Please clarify in discussion.\n\n\u2013 Comment more on the characteristic structural changes from closed to open to DNA-bound (subunit to subunit translation, helical radius, etc). What does \"open\" refer to? Widening of the spiral?\n\nReport on buried surface interaction area between ORC subunits to confirm exceptional intertwining of ORC2 and ORC3 from HsORC and DmORC.\n\n\u2013 How do the authors come to the conclusion that the loop in ORC3 (Figure 1\u2014figure supplement 5) is related to DNA binding, is this area close to DNA or DNA binding site? Is this area resolved in all conformations?\n\n4) Multibody refinement:\n\n\u2013 To solidify the ORC3\u00b75 hinge, verify that hinge point is not an artefact of mask choice. Run multibody refine with a mask boundary between ORC1\u00b74 and ORC2\u00b73\u00b75 and report on results.\n\n\u2013 Figure legend is in discrepancy with text: Legend indicates that for multibody refinement particles from only 1 conformation were used, text states particles from 3 conformations were included.\n\n\u2013 The text is also not very quantitative in description of the MBR.\n\n5) DNA-bound structure:\n\nIt makes sense that the DNA sequence would not be in register because HsORC isn't sequence specific, but is the major/minor groove positioning in register? I would think that the positioning of the double helix is essentially fixed relative to the major/minor grooves. Can the authors make out DNA helix clearly? Clearer figures would help.\n\n6) Sample preparation details:\n\nIn the sample preparation, addition of ATP in the buffer is mentioned. Were there any divalent cations, Mg2+ or Mn2+, included? What is the rationale for the ATP addition instead of ATP\u03b3S, AMPPNP or ADP\u00b7BFx? What are the green spheres shown next to the ATP molecules in Figure 1G-I? Why is ATP not hydrolyzed in ORC1\u00b74 or ORC4\u00b75?\n\n7) In Figure 1\u2014figure supplement 3D and E, the maps look of much lower resolution than 3.7 \u00c5 (ORCOPEN) or 4.3 \u00c5 (ORCDNA). Were these maps unsharpened? The authors may consider showing representative EM map regions or 3D-FSC.\n\n8) DNA density:\n\nFor the ORCDNA complex, it will be important to show an EM map covering the DNA portion. Although base sequences are mixed, the DNA backbones should still be recognizable.\n\n9) Resolution anisotropy:\n\nThe resolution is extremely directionally dependent, and the true resolution of the ORC open and ORC DNA maps is low in all but one direction. Based on the direction plots shown in Figure 1\u2014figure supplement 3 all of the samples suffered somewhat from preferential orientation. I believe the authors should mention this, and perform a direction dependent resolution analysis of their maps (e.g. using the 3D FSC server \u2013 https://3dfsc.salk.edu/) and report the results.\n",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3a37ac05-66d9-4455-a390-e918c93a67a5",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C1",
+      "claim": "Five cryoEM structures of human ORC were determined: ORCO2-5 (3.5 \u00c5), ORCO1AAA (3.2 \u00c5), ORCO2WH (3.7 \u00c5), ORCOPEN (4.0 \u00c5), and ORCDNA (4.3 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "The cryoEM analysis lead to a 3.5 \u00c5 structure of the ORC2-5 complex (ORCO2-5) and four distinct structures of the ORC1-5 complex: ORCO1AAA (3.2 \u00c5), ORCO2WH (3.7 \u00c5), ORCOPEN (4.0 \u00c5), and ORCDNA (4.3 \u00c5) (Figure 1\u2014figure supplement 1\u20134 and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the resolutions of all five structures determined in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "3df9cb1c-c779-4993-906e-69f3999c31ae",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C2",
+      "claim": "The ORCO2-5 structure lacks the ORC1 subunit and consists of subunits ORC2-5 in a compact and substantially closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORCO2-5 structure that lacks the ORC1 subunit consists of subunits ORC2-5 in a compact and substantially closed conformation (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the structure and Figure 1b shows the ORCO2-5 structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "220628a2-7b65-4d8e-b70b-9c3347a3a683",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C3",
+      "claim": "In ORCO2-5, the ORC2 WHD is collapsed into the ring-shaped core of the complex with the \u03b2-hairpin wing facing the ORC4 WHD.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORC2 WHD of ORCO2-5 is collapsed into the ring-shaped core of the complex with the \u03b2-hairpin wing facing the ORC4 WHD (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the position of ORC2 WHD in ORCO2-5 and references Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "985069fb-b73d-4ffd-ac7a-63a5c960d090",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C4",
+      "claim": "The ORC2 WHD in ORCO2-5 is rotated ~135\u00b0 compared to the auto-inhibited state of ORC2 WHD in the DmORC structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORC2 WHD is significantly deeper in the core and rotated ~135\u00b0 compared to the auto-inhibited state of ORC2 WHD in the DmORC structure (Figure 2d and Video 1; Bleichert et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a specific rotation angle and cites the DmORC structure for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "cfe6948f-f7fa-4d1e-bf4a-bb9d1de7d1a1",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C5",
+      "claim": "In ORCO2WH, the ORC1 AAA+ domain is dynamic and unresolved in the refined map.",
+      "claim_type": "EXPLICIT",
+      "source": "The first of these, ORCO2WH, consists of a dynamic ORC1 AAA+ domain that is unresolved in the refined map (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states that the ORC1 AAA+ domain is unresolved in ORCO2WH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "cc6b6772-081c-4be8-a1ce-57f604543857",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C6",
+      "claim": "In ORCO2WH, the ORC2 WHD is stably bound inside the ring-shaped core in a conformation similar to the auto-inhibited state observed in DmORC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in this structure, the ORC2 WHD was stably bound inside the ring-shaped core of ORC in a conformation that is similar to the auto-inhibited state observed in the DmORC structure (Figure 2d,f; Bleichert et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the ORC2 WHD conformation in ORCO2WH and compares it to DmORC.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "9755b7c8-97b1-4d50-a916-d700261a4713",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C7",
+      "claim": "In ORCO1AAA, the ORC2 WHD is dynamic and unresolved in the refined map.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to ORCO2WH, ORCO1AAA consists of a dynamic ORC2 WHD that is unresolved in the refined map (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states that the ORC2 WHD is unresolved in ORCO1AAA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "5b4ad03f-50ea-4b97-9478-febcf0936252",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C8",
+      "claim": "In ORCO1AAA, the ORC1 AAA+ domain is ordered and forms an interface with ORC4 with an ATP coordinated between the two subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORC1 AAA+ domain in this structure is ordered and forms the important interface with ORC4 with an ATP coordinated between the two subunits, an ATPase active conformation seen in previous ScORC and HsORC structures (Li et al., 2018; Tocilj et al., 2017; Yuan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the ORC1 AAA+ domain in ORCO1AAA and cites previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "4baee34b-dd22-4203-aabd-452009701872",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C9",
+      "claim": "Three ATP nucleotides were well resolved in the ORC maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Three ATP nucleotides were well resolved in the ORC maps (Figure 1g and Figure 1\u2014figure supplement 1), consistent with previous observations (Tocilj et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states that three ATP molecules were resolved and references figures showing them.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "1cde16df-2646-4086-ba5c-5eff6aa58334",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C10",
+      "claim": "Magnesium ions were resolved in the ORC maps and were likely retained from the protein expression lysate.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not provided in the sample buffer, magnesium ions were also resolved in the maps and were likely retained from the protein expression lysate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that magnesium ions were observed despite not being added to the buffer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "2254b24e-9c2f-4560-bfca-e8e991629dd3",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C11",
+      "claim": "In ORCO2WH, an ATP is absent at the ORC1\u00b74 site due to the displacement of the ORC1 AAA+-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Only in the ORCO2WH structure was an ATP absent at the ORC1\u00b74 site due to the displacement of the ORC1 AAA+-domain (Figure 1c, Figure 2a,b and Video 2) and consequential disruption of the ATP binding site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states that ATP is absent at the ORC1\u00b74 site in ORCO2WH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "1794482f-67f4-4cd6-88a2-72c8b004a69d",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C12",
+      "claim": "The ORC1\u00b74 site is the only site that has been shown to have ATPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the three ATP-binding sites, only the ORC1\u00b74 site exhibits ATPase activity and this activity is essential for cell viability (Bowers et al., 2004; Klemm et al., 1997; Randell et al., 2006; Tocilj et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that only the ORC1\u00b74 site exhibits ATPase activity and cites multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "11e8c931-e0ff-41c4-b83f-425f4efe4818",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C13",
+      "claim": "Mutations at the ORC1\u00b74 ATPase site are associated with Meier-Gorlin Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several mutations at the ORC1\u00b74 ATPase site are associated with the developmental disorder Meier-Gorlin Syndrome (Bicknell et al., 2011a; Bicknell et al., 2011b; de Munnik et al., 2012a; de Munnik et al., 2012b; Guernsey et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the association between ORC1\u00b74 mutations and Meier-Gorlin Syndrome with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "be270280-fc81-49f4-a7dc-eedbafb64ea6",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C14",
+      "claim": "The ORC5\u00b73 interface appears considerably more flexible relative to the other ATP interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORC1\u00b74 and ORC4\u00b75 sites represent canonical AAA+ ATPase sites (Enemark and Joshua-Tor, 2008; Erzberger and Berger, 2006), while the ORC5\u00b73 interface is considerably more flexible relative to the other ATP interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the ORC5\u00b73 interface as more flexible.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "95b55b73-b6b4-4cd6-a545-0d4d9a7452b1",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C15",
+      "claim": "ORC3 does not seem to participate in ATP coordination at the ORC5\u00b73 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to ORC1\u00b74 and ORC4\u00b75, the ORC5\u00b73 interface appears considerably more flexible and, in fact, ORC3 does not seem to participate in ATP coordination (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states that ORC3 does not participate in ATP coordination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "59fd2f6d-892f-42d9-8767-d04e88ed0dd0",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C16",
+      "claim": "The solvent-accessible surface area buried between ORC2 and ORC3 (3296 \u00c52) is significantly larger than between ORC4 and ORC5 (2707 \u00c52).",
+      "claim_type": "EXPLICIT",
+      "source": "The solvent-accessible surface area buried between ORC2 and ORC3 (3296 \u00c52) is significantly larger than the next closest interacting subunits ORC4 and ORC5 (2707 \u00c52).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific surface area measurements for subunit interfaces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "bcd2193e-8e19-4fba-a6cc-49460fda0c9f",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C17",
+      "claim": "ORC2 and ORC3 localize to centromeres in mitosis and may function independently of the other ORC subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, ORC2 and ORC3 localize to centromeres in mitosis and may function independently of the other ORC subunits (Craig et al., 2003; Prasanth et al., 2004; Prasanth et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing ORC2 and ORC3 localization to centromeres.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "ba0ea6d7-bfd8-49dd-949b-b8e460f97d75",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C18",
+      "claim": "In ORCOPEN, the ORC2\u00b73 subunits rotate away from the ORC1\u00b74\u00b75 motor module by 22\u00b0 at a hinge originating from the ORC3\u00b75 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "When aligned to ORCO1AAA, a hinge in ORCOPEN is evident and originates from the somewhat loose ORC3\u00b75 interface, allowing the ORC2\u00b73 subunits (including the ORC5 WH) to rotate (22\u00b0 rotation angle) away from the ORC1\u00b74\u00b75 motor module in a hinge motion (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a specific rotation angle and describes the hinge motion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "fd5db5bf-584a-4153-8cfc-248cc367af07",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C19",
+      "claim": "The ORC3 N-terminal region in ORCOPEN consists of an extended, straightened \u03b1-helix (aa42-86) that is bent in other ORC conformations by 32\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ORC3 N-terminal region of ORCOPEN consists of an extended, straightened \u03b1-helix (aa42-86) that is bent in the other ORC conformations by 32\u00b0 (Figure 1e, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific residue numbers and a bending angle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "f5161b3f-75c8-4a8a-b28f-4de8942bcd34",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C20",
+      "claim": "Multibody refinement revealed two prominent movements of ORC: twisting and pinching, both emanating from the hinge at the ORC3\u00b75 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The two movements can be described as twisting and pinching, respectively, both emanating from the hinge at the ORC3\u00b75 interface (Figure 3c,d and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the two types of movements observed in multibody refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "c8825f4a-9c16-4d1d-8750-cec6b6e854a4",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C21",
+      "claim": "The twisting and pinching movements contributed between 17% to 23% of the total variance of each particle population.",
+      "claim_type": "EXPLICIT",
+      "source": "These movements contributed between 17% to 23% of the total variance of each particle population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific percentages for the contribution of these movements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "7b107a62-1b9c-456d-888a-863854564c0e",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C22",
+      "claim": "DNA was detected in the affinity-purified, recombinant HsORC expressed in Sf9 insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA was detected in the affinity-purified, recombinant HsORC expressed in Sf9 insect cells and the presence of this DNA species was only detected when ORC was expressed (Figure 4\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states that DNA was detected in the purified ORC sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "7451e508-b119-4da5-83ab-3ea27b9e037e",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C23",
+      "claim": "In ORCDNA, DNA contacts are made by all five subunits of ORC, with the most significant interactions occurring with the ORC1 RecA-fold and ORC2 WHD.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows DNA contacts by all five subunits of ORC, with the most significant interactions occurring with the ORC1 RecA-fold and ORC2 WHD (Figure 4a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes DNA contacts with all five ORC subunits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "00bf0e6e-d75f-48e9-a94b-0cf625de4ab5",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C24",
+      "claim": "In the ORC1 RecA-fold, two loops (residues 593\u2013596 and 626\u2013630) are in close contact with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ORC1 RecA-fold, two loops (residues 593\u2013596 and 626\u2013630, respectively) at the N-terminal regions of two \u03b1-helices are in close contact to the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific residue numbers for loops contacting DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "e0987f22-19f8-4130-8c5a-9aa5a359c95f",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C25",
+      "claim": "Several positively-charged and aromatic residues in ORC1 loops (K591, N595, H596 W626, H628, K629) appear to be involved in binding the negatively-charged DNA backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there are several positively-charged and aromatic residues in the loops (K591, N595, H596 W626, H628, K629) that appear to be involved in binding the negatively-charged DNA backbone (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript lists specific residues that appear to interact with DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "ec94d894-1c26-4557-b9b1-06ddad17e691",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C26",
+      "claim": "The ORC4 region in HsORC is 20 residues shorter than the ScORC segment and does not contain an \u03b1-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "This region in HsORC is 20 residues shorter than the ScORC segment and does not contain an \u03b1-helix (Figure 4f and Figure 4\u2014figure supplement 5; Hu et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides a specific length difference and describes the absence of an \u03b1-helix.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "e874662f-864f-4298-923c-c3747acfc1c1",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C27",
+      "claim": "The missing helix in HsORC4 likely reduces its ability to bind specifically to a DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The missing helix in HsORC likely reduces its ability to bind specifically to a DNA sequence resulting in the requirement of other mechanisms to establish stable origin interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers that the missing helix affects DNA binding specificity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "7543df67-c650-4a24-8c72-5424348265dc",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C28",
+      "claim": "In ScORC, the Orc4 WHD contains an \u03b1-helix insertion in the \u03b2-hairpin wing (residues 481\u2013489) that inserts into the major groove of ARS-sequence DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. cerevisiae, this domain contains an \u03b1-helix insertion in the \u03b2-hairpin wing (residues 481\u2013489) that inserts into the major groove of the ARS-sequence DNA and is a key contributor to conferring sequence specificity for origin recognition (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the \u03b1-helix insertion in ScORC4 and its role in DNA binding.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "ff99149e-cee8-4aae-8c07-9c4a3cb9f16a",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C29",
+      "claim": "The ORC4 helix insertion has likely evolved in a small clade of Saccharomyces-related budding yeast species in tandem with a loss of RNAi-mediated transcriptional gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on sequence alignments (Figure 4\u2014figure supplement 5), the ORC4 helix insertion has likely evolved in a small clade of Saccharomyces-related budding yeast species in tandem with a loss of RNA interference (RNAi)-mediated transcriptional gene silencing, while the region is absent in most other eukaryotic organisms, including fungi, plants, and animals, which use RNAi for silencing (Hu et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the evolutionary context of the ORC4 helix insertion with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "605a2888-067c-4cf6-9c21-6696b0e313d6",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C30",
+      "claim": "HsORC does not display DNA sequence specific DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Since HsORC does not display DNA sequence specific DNA binding (Vashee et al., 2003; Vashee et al., 2001), the significant difference in ORC4 between budding yeast and human ORC contributes to the sequence-dependent and -independent origin binding in these species (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states that HsORC lacks sequence-specific DNA binding with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "dbe32742-df30-44f2-84d4-937a454b001c",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C31",
+      "claim": "HsORC binds to specific locations in chromosomes and is most likely targeted to these sites by binding to specific histones and their modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "HsORC binds to specific locations in chromosomes (Miotto et al., 2016) and unlike ScORC, it is most likely targeted to these sites by binding to specific histones and their modifications (Hossain and Stillman, 2016; Kuo et al., 2012; Long et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes how HsORC is targeted to chromosomal locations with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "7a612a7e-1cfd-46c0-ab5b-dc5af5193100",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C32",
+      "claim": "The Origin Recognition Complex (ORC) is necessary for orchestrating the initiation process by binding to origin DNA, recruiting CDC6, and assembling the MCM replicative helicase on DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The Origin Recognition Complex (ORC) is necessary for orchestrating the initiation process by binding to origin DNA, recruiting CDC6, and assembling the MCM replicative helicase on DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the role of ORC in replication initiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "dc0ea5e1-da04-46c1-8f8b-a135be310239",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C33",
+      "claim": "The absence of ORC1 revealed a compact, stable complex of ORC2-5.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of ORC1 revealed a compact, stable complex of ORC2-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "e480e41e-58b5-435d-86c4-0fa030d37605",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C34",
+      "claim": "Introduction of ORC1 opens the complex into several dynamic conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of ORC1 opens the complex into several dynamic conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "45374d6d-8e16-4b62-996b-0500122a87a6",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C35",
+      "claim": "Two structures revealed dynamic movements of the ORC1 AAA+ and ORC2 winged-helix domains that likely impact DNA incorporation into the ORC core.",
+      "claim_type": "EXPLICIT",
+      "source": "Two structures revealed dynamic movements of the ORC1 AAA+ and ORC2 winged-helix domains that likely impact DNA incorporation into the ORC core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "a9dd05aa-bfbd-4b93-8df3-eb3b699d4d05",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C36",
+      "claim": "A hinge at the ORC5\u00b7ORC3 interface may facilitate ORC binding to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional twist and pinch motions were observed in an open ORC conformation revealing a hinge at the ORC5\u00b7ORC3 interface that may facilitate ORC binding to DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the abstract.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "85c69347-00b8-4744-a53d-23a00f57252f",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C37",
+      "claim": "A structure of ORC with endogenous DNA bound in the core reveals important differences between human and yeast origin recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a structure of ORC was determined with endogenous DNA bound in the core revealing important differences between human and yeast origin recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "d9ff74fe-453a-4f78-8af8-afd3886cfef3",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C38",
+      "claim": "In Saccharomyces cerevisiae, ORC specifically recognizes and binds to autonomously replicating sequences (ARSs).",
+      "claim_type": "EXPLICIT",
+      "source": "In the yeast Saccharomyces cerevisiae, ORC specifically recognizes and binds to a class of DNA sequences, called the autonomously replicating sequences (ARSs), which act as the replication initiation sites in vivo (Bell and Stillman, 1992; Brewer and Fangman, 1987; Eaton et al., 2010; Huberman, 1987; Linskens and Huberman, 1988; Marahrens and Stillman, 1992; Rao and Stillman, 1995; Theis et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "ea2328b3-fb05-41d6-a136-64eed03b068b",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C39",
+      "claim": "In metazoans, the manner in which origins are identified is not yet clear.",
+      "claim_type": "EXPLICIT",
+      "source": "In Saccharomyces cerevisiae, this is a sequence-specific binding event, however, in metazoans the manner in which origins are identified is not yet clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the uncertainty about origin identification in metazoans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "a83135b6-064f-4257-8cee-8a901b4ed166",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C40",
+      "claim": "The BAH-domain at the N-terminus of ORC1 facilitates binding of ORC to DNA through nucleosomes which contain specific histone modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "The bromo-adjacent homology (BAH)-domain at the N-terminus of ORC1 facilitates binding of ORC to DNA through nucleosomes which contain specific histone modifications that influence ORC1 affinity to the chromatin complex (Eaton et al., 2010; Hossain and Stillman, 2016; Kuo et al., 2012; M\u00fcller et al., 2010; Noguchi et al., 2006; Rivera et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the role of the BAH domain with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "c5a7fc3a-3ad0-4471-a5db-6bcdd52214c9",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C41",
+      "claim": "Single molecule studies have shown that ORC is released from DNA immediately following stable association of two MCM molecules with the DNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, single molecule studies have shown that ORC is released from DNA immediately following stable association of two MCM molecules with the DNA substrate (Ticau et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a single molecule study showing ORC release.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "8682e049-bba7-4c31-88c4-bbea53e66717",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C42",
+      "claim": "High resolution structures of ORC from Saccharomyces cerevisiae, Drosophila melanogaster, and Homo sapiens have revealed the detailed architecture of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "High resolution structures of ORC from Saccharomyces cerevisiae (ScORC), Drosophila melanogaster (DmORC), and Homo sapiens (HsORC) have revealed the detailed architecture of the complex (Bleichert et al., 2015; Li et al., 2018; Tocilj et al., 2017; Yuan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple structural studies of ORC from different species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "5fba8687-2d99-4cfd-ac03-7918a3e4ee01",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C43",
+      "claim": "The ORC complex consists of six subunits (ORC1-6), with subunits ORC1-5 forming a partial ring capable of encircling DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex consists of six subunits (ORC1-6), with subunits ORC1-5 forming a partial ring capable of encircling DNA (Li et al., 2018; Tocilj et al., 2017; Yuan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the ORC architecture with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "097d5865-2830-46e8-b169-77cc6eae9ac3",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C44",
+      "claim": "All five ORC subunits contain a winged-helix domain (WHD) and a AAA+ domain which consists of the RecA-fold and lid domains.",
+      "claim_type": "EXPLICIT",
+      "source": "All five subunits contain a winged-helix domain (WHD) and a AAA+ domain which consists of the RecA-fold and lid domains (Figure 1a), although the ORC2 and ORC3 RecA-folds have diverged slightly and do not contain a lid domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the domain architecture of ORC subunits.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "5633b8b9-443f-4bfa-8705-d2c2807d9c91",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C45",
+      "claim": "ORC exhibits two main conformations: an open state and a closed, auto-inhibited state.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the previous structures, ORC exhibits two main conformations differing primarily in the positions of the ORC1 AAA+- and ORC2 WH-domains: an open state (ScORC and HsORC) (Li et al., 2018; Tocilj et al., 2017; Yuan et al., 2017) and a closed, auto-inhibited state (DmORC) (Bleichert et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes two main ORC conformations with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "1578493e-07a3-454e-86b5-5dde2ff27031",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C46",
+      "claim": "In the open state, the ORC1 AAA+-domain binds to the ORC4 AAA+-fold to form the ORC1\u00b74 ATPase active site.",
+      "claim_type": "EXPLICIT",
+      "source": "In the open state, the ORC1 AAA+-domain binds to the ORC4 AAA+-fold to form the ORC1\u00b74 ATPase active site and ORC2 WHD is adjacent to the ORC3 WHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the open state conformation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "a84351b7-17a4-48f3-910a-9afe7b9b399f",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C47",
+      "claim": "In the closed state, the ORC1 AAA+ motif is dramatically rotated by ~80\u00b0 towards the ORC2 WHD position.",
+      "claim_type": "EXPLICIT",
+      "source": "In the closed state, the ORC1 AAA+ motif is dramatically rotated by ~80\u00b0 towards the ORC2 WHD position and ORC2 WHD is collapsed into the open ring-shaped core of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the closed state conformation with a specific rotation angle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "061f2f89-7989-4516-ba63-23437911cc50",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C48",
+      "claim": "The collapsed ORC1 AAA+-domain and ORC2 WHD in the closed state completely obstruct the core of ORC and could not accommodate DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The collapsed ORC1 AAA+-domain and ORC2 WHD in the closed state completely obstruct the core of ORC and could not accommodate DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the consequence of the closed state.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "87cd53dd-96fa-4342-afe2-44a67655cfef",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C49",
+      "claim": "Recent cryoEM studies on HsORC suggested that the ORC1 AAA+ domain also adopts the auto-inhibited conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, the closed state was only seen in DmORC, but recent cryoEM studies on HsORC suggested that the ORC1 AAA+ domain also adopts the auto-inhibited conformation (Bleichert et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a recent study showing the auto-inhibited state in HsORC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "0d564c88-bf66-4c20-bbb9-a7fcee254b92",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C50",
+      "claim": "In ScORC, the Orc2 ISM binds to the DNA minor groove with the W396 sidechain tucked into the hydrophobic minor groove at the T-rich region.",
+      "claim_type": "EXPLICIT",
+      "source": "The Orc2 ISM binds to the DNA minor groove with the W396 sidechain tucked into the hydrophobic minor groove at the T-rich region within the ARS consensus DNA sequence (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the Orc2 ISM interaction with DNA in ScORC with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "518d147d-118c-4c7d-8171-dd8cc0d2ab85",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C51",
+      "claim": "In metazoans, ORC lacks sequence specificity for origin recognition and may rely on interactions with nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoans, notably, ORC lacks sequence specificity for origin recognition and may rely on interactions with nucleosomes to establish DNA origin sites (Noguchi et al., 2006; Remus et al., 2004; Vashee et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that metazoan ORC lacks sequence specificity with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "92288194-f492-4b7c-8d90-d623774d240d",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C52",
+      "claim": "The ORC1 AAA+ domain in human ORC appears to be dynamic along a continuum of positions between the auto-inhibited state and when it forms the ORC1\u00b74 interface with ORC4.",
+      "claim_type": "EXPLICIT",
+      "source": "While ORC1 AAA+ is locked in the auto-inhibited state in DmORC, the ORC1 AAA+ domain in human ORC appears to be dynamic along a continuum of positions between two extreme states: the auto-inhibited state observed in the DmORC and when it forms the ORC1\u00b74 interface with ORC4 as observed in ORCO1AAA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the dynamic nature of ORC1 AAA+ in human ORC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "d5673778-3b78-456e-ace6-cfe16403529f",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C53",
+      "claim": "The ORC1 AAA+ domain's dynamic movements may be a consequence of ORC1\u00b74 ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORC1 AAA+ domain's dynamic movements may be a consequence of ORC1\u00b74 ATP hydrolysis, but further investigation is necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the cause of ORC1 AAA+ dynamics.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "fd3ec08d-bfd9-4a51-b4c1-090834af484d",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C54",
+      "claim": "ATP promotes the assembly and stability of the human ORC.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this idea and previous studies using mutant ORC4 and ORC5 subunits (Siddiqui and Stillman, 2007), we conclude that ATP promotes the assembly and stability of the human ORC, which, unlike yeast ORC, is assembled and disassembled throughout the cell division cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes that ATP promotes ORC assembly based on data and citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "9d620ece-f570-4376-9b90-1688c8a641b4",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C55",
+      "claim": "A minor ORC2 WHD conformation was observed in further 3D classifications of the ORCO2WH particles that resembles the completely collapsed ORC2 WHD conformations in the ORCO2-5 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "A minor ORC2 WHD conformation was observed in further 3D classifications of the ORCO2WH particles (Figure 2e). Secondary structure elements can be seen in the ORC2 WHD region that are clearly different from the auto-inhibited conformation. In fact, this conformation resembles the completely collapsed ORC2 WHD conformations in the ORCO2-5 structure where the domain is further tucked into the core of the complex compared to the auto-inhibited state (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes an alternative ORC2 WHD conformation observed in 3D classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "0539ae47-d188-44d2-860b-f9939de5c471",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C56",
+      "claim": "The buried ORC2 WHD appears to stabilize ORC2-5 complex prior to ORC1 binding, hence termed the inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "The buried ORC2 WHD appears to stabilize ORC2-5 complex prior to ORC1 binding, hence we termed this structure of the ORC2 WHD the inactive state (Figure 1b and Figure 2c,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript infers the function of the buried ORC2 WHD and names it the inactive state.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "5fb4b03f-45db-41e8-8592-2c77f53d8f30",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C57",
+      "claim": "The binding of ORC1 seems to facilitate the release of the O2 WHD from the tucked-in state.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of ORC1 seems to facilitate the release of the O2 WHD from this tucked-in state, generating a more labile structure for downstream events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers that ORC1 binding releases ORC2 WHD from the inactive state.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "5438f711-97ca-4360-8088-ba784ceb5075",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C58",
+      "claim": "In both the yeast OCCM and ORC-DNA structures, the ORC2 WHD interacts with the origin DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In both the yeast OCCM and ORC-DNA structures (Li et al., 2018; Yuan et al., 2017), the ORC2 WHD interacts with the origin DNA and is far away from the gap between the ORC1 and ORC2 AAA+ domains, forming a collar of ORC WHDs that surround the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites yeast structures showing ORC2 WHD-DNA interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "08d4cf03-32b1-4656-a9ad-374d4069f4b2",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C59",
+      "claim": "The movement of the ORC2 WHD seems to be a universal feature of controlling DNA access to the ring-shaped core of ORC.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the movement of the ORC2 WHD seems to be a universal feature of controlling DNA access to the ring-shaped core of ORC and hence binding to DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers that ORC2 WHD movement is a universal feature based on observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "6ab95336-afad-4116-a54b-c8450128fec3",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C60",
+      "claim": "The long helix in ORCOPEN may provide structural stability to the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This long helix in ORCOPEN may provide structural stability to the open conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the function of the long helix in ORCOPEN.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "972d0486-fe76-45f6-8555-8fb3de473782",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C61",
+      "claim": "Both Multibody Refinement and 3D Variability Analysis revealed the same prominent movements in the ORCO1AAA particle population.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Multibody Refinement and 3D Variability Analysis revealed the same prominent movements in the ORCO1AAA particle population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that two different methods yielded the same results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "de0fa1ae-f570-4162-848f-8c644f872450",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C62",
+      "claim": "The ORC twisting motion involves ORC1 and ORC2 sliding over each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORC twisting motion involves ORC1 and ORC2 sliding over each other, while the pinching motion involves ORC1 and ORC2 narrowing/widening the ORC ring opening between them (Figure 3c,d and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the twisting motion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "b91f9d61-629b-4479-a1c3-acaa141c1feb",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C63",
+      "claim": "The pinching motion involves ORC1 and ORC2 narrowing/widening the ORC ring opening between them.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORC twisting motion involves ORC1 and ORC2 sliding over each other, while the pinching motion involves ORC1 and ORC2 narrowing/widening the ORC ring opening between them (Figure 3c,d and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the pinching motion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "ce1c42fa-0c7a-4a51-abbe-a9417fd38405",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C64",
+      "claim": "The twisting and pinching movements provide potential flexibility to ORC during replication initiation events.",
+      "claim_type": "EXPLICIT",
+      "source": "The twisting and pinching movements provide potential flexibility to ORC during replication initiation events, including DNA binding, movement along DNA, and/or complex release after MCM double hexamer formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the functional significance of the observed movements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "b383944b-6f43-4501-8a9a-67ab23f15013",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C65",
+      "claim": "The DNA fragment visualized in ORCDNA is likely a result of a superposition of sequences along the DNA fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "Since DNA-binding of HsORC is not sequence specific, the DNA is likely to have multiple orientations along its axis in the core, consistent with further 3D classification of the DNA-bound ORC populations (Figure 4\u2014figure supplement 3). In other words, the DNA fragment visualized is a result of a superposition of sequences along the DNA fragment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript infers that the DNA density represents a superposition due to lack of sequence specificity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "58d766c3-fe8b-47ba-9e59-f0e71bed88c7",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C66",
+      "claim": "The overall conformation of ORCDNA resembles the more closed conformations of ORCO1AAA and ORCO2WH.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall conformation of ORCDNA resembles the more closed conformations of ORCO1AAA and ORCO2WH, albeit with ORC2 WHD in a different conformation (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares the ORCDNA conformation to other structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "2bf493ae-a086-42fa-a656-c3ff7aa58f9b",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C67",
+      "claim": "Most of the ORC1 DNA-binding residues are conserved in vertebrate species but differ in insects, plants and fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignments show that while most of these residues are conserved in vertebrate species, they differ in insects, plants and fungi (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes sequence conservation patterns based on alignments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "ee196346-9ab7-476e-a749-f667d9ee1435",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C68",
+      "claim": "The ORC2 WHD may adopt multiple conformations in ORCDNA similar to the multiple ORC2 WHD states observed in DNA-bound ScORC.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORC2 WHD may adopt multiple conformations in this structure similar to the multiple ORC2 WHD states observed in DNA-bound ScORC (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about ORC2 WHD conformations based on comparison to ScORC.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "79f0e156-248f-443c-a566-b8913993b015",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C69",
+      "claim": "The positively-charged ORC2 residue R367 appears to mediate the interaction with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the positively-charged ORC2 residue R367 emanating from this loop, appears to mediate the interaction with DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies a specific residue that appears to interact with DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "93cd9f07-f4ea-4be7-9aec-64585fb3a0f7",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C70",
+      "claim": "The ORC2 ISM in humans may play an important role in binding DNA similar to the ORC2 ISM in ScORC.",
+      "claim_type": "EXPLICIT",
+      "source": "The ORC2 ISM in humans may play an important role in binding DNA similar to the ORC2 ISM in ScORC where W396 is buried in the minor groove of DNA (Li et al., 2018; Yuan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the role of ORC2 ISM in humans based on comparison to yeast.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "e5efcd14-646e-475b-b8f6-5fe20d5daf14",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C71",
+      "claim": "The \u03b2-hairpin loop in ORC5 of HsORC consists of a positively-charged residue H398 in close proximity to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-hairpin loop in ORC5 of HsORC also consists of a positively-charged residue H398 in close proximity to DNA (Figure 4a,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript identifies a specific residue in ORC5 near DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "b8b934a8-cb6b-4efd-86ab-cef4ce590154",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C72",
+      "claim": "The \u03b2-hairpin loop in ORC5 of ScORC contains positively-charged residues extending into the major groove of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the \u03b2-hairpin loop in ORC5 of ScORC contains positively-charged residues (N438, K439, N440, K447, R449) extending into the major groove of DNA (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the ScORC structure showing ORC5 residues interacting with DNA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "a144feda-984a-4321-8c87-ac39321ed45e",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C73",
+      "claim": "The Orc4 WHD plays an important role in origin-specific binding in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "The Orc4 WHD plays an important role in origin-specific binding in S. cerevisiae (Hu et al., 2020; Li et al., 2018; Yuan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies showing the importance of Orc4 WHD in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "d46e113e-3eaf-44b4-9d10-cbd32eef51d1",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C74",
+      "claim": "The homologous ORC4 region in HsORC is visible in the ORCO1AAA cryoEM density map.",
+      "claim_type": "EXPLICIT",
+      "source": "The homologous ORC4 region in HsORC is visible in the ORCO1AAA cryoEM density map allowing us to now model this region (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states that the ORC4 region was modeled in the ORCO1AAA structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "2d38c971-be01-44b1-9ebe-8af842451fd4",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C75",
+      "claim": "The loss of the helix in HsORC4 contributes to the multiple conformations of DNA observed in the core of human ORC.",
+      "claim_type": "EXPLICIT",
+      "source": "This loss of specificity also contributes to the multiple conformations of DNA observed in the core of human ORC (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript infers that the missing helix contributes to DNA conformational heterogeneity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "0d45c09b-3d9a-4dec-87a6-617bef935e01",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C76",
+      "claim": "The shorter ORC4 loop contacts the DNA in the ORCDNA structure proximal to R390.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the missing helix, the shorter ORC4 loop contacts the DNA in the ORCDNA structure proximal to R390 (Figure 4e), a positively-charged residue that may participate in DNA-backbone interactions similar to R478 in ScORC4 (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes DNA contact by the ORC4 loop in ORCDNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "8361de07-0f0f-43c7-8c41-769b418ce2ae",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C77",
+      "claim": "The significant difference in ORC4 between budding yeast and human ORC contributes to the sequence-dependent and -independent origin binding in these species.",
+      "claim_type": "EXPLICIT",
+      "source": "Since HsORC does not display DNA sequence specific DNA binding (Vashee et al., 2003; Vashee et al., 2001), the significant difference in ORC4 between budding yeast and human ORC contributes to the sequence-dependent and -independent origin binding in these species (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript infers that ORC4 differences contribute to DNA binding specificity differences.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "05b443b3-8771-4482-bf0b-67ecfc444eac",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C78",
+      "claim": "ORC1 may recruit the other subunits via interactions facilitated by intrinsically disordered regions (IDRs) in the N-terminal regions of ORC1 and ORC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ORC1 appears to be the first ORC subunit to bind to chromosomes during mitosis (Kara et al., 2015; Okuno et al., 2001), ORC1 may recruit the other subunits via the pathway outlined in Figure 5. These interactions between ORC1 and ORC2-5 may be facilitated by intrinsically disordered regions (IDRs) the predicted N-terminal regions of ORC1 and ORC2 forming condensates via phase transitions (Parker et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript speculates about ORC assembly based on citations and proposes a model.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "e781d8d7-13dd-4804-a2a6-fbff4f42a479",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C79",
+      "claim": "IDRs appear unnecessary for ORC assembly based on the structures obtained without these regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the absence of these regions, IDRs appear unnecessary for ORC assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers that IDRs are not necessary based on successful assembly without them.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "ecdeb7ef-6909-4108-90e0-8090f2032a1b",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C80",
+      "claim": "The C-terminus of yeast Mcm3 binds to and activates the ATPase activity of the ORC-Cdc6 complex on DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is known that the C-terminus of yeast Mcm3 binds to and activates the ATPase activity of the ORC-Cdc6 complex on DNA, possibly preventing futile loading of incomplete Mcm2-7 hexamers (Frigola et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study showing Mcm3 activation of ORC-Cdc6 ATPase activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "60765e07-c80e-4f28-8793-263cbc4af537",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C81",
+      "claim": "If the C-terminus of Mcm3 stimulates the ATPase activity of ORC, it may induce movement of the ORC1 AAA+ and a switch from the active to the inactive state of ORC after complete pre-RC assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that if the C-terminus of Mcm3 stimulates the ATPase activity of ORC, it may induce movement of the ORC1 AAA+ and a switch from the active to the inactive state of ORC after complete pre-RC assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the potential effect of Mcm3 on ORC conformation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "a8901c86-8453-458b-ab50-36c8ce31273c",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "claim_id": "C82",
+      "claim": "Comparing the human and yeast ORC DNA contacts provides insights into the different sequence specificity requirements of ORC-DNA binding between the species.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the human and yeast ORC DNA contacts provides insights into the different sequence specificity requirements of ORC-DNA binding between the species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that the comparison provides insights into sequence specificity differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0d99d2e3-ceb8-4c63-a5f1-4bf9b7a1ee60",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Five distinct cryoEM structures of human ORC were determined at resolutions ranging from 3.2 to 4.3 \u00c5, revealing different conformational states. ORCO2-5 (3.5 \u00c5) lacks ORC1 and shows a compact closed conformation with ORC2 WHD collapsed into the core. ORCO2WH (3.7 \u00c5) has a dynamic unresolved ORC1 AAA+ domain with ORC2 WHD in an auto-inhibited state. ORCO1AAA (3.2 \u00c5) shows ordered ORC1 AAA+ forming the ORC1\u00b74 interface while ORC2 WHD is dynamic. ORCOPEN (4.0 \u00c5) and ORCDNA (4.3 \u00c5) represent additional conformational states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide detailed structural characterization of five ORC conformations with specific resolutions and domain arrangements. The data are supported by cryoEM density maps, model building, and comparison to previous structures. The resolutions are appropriate for the level of structural detail described, and the conformational differences are clearly documented through multiple complementary approaches including 3D classification and focused refinement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "46f6e1c7-5888-45df-a9b4-5e37200fc761",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Three ATP binding sites were resolved in ORC structures at the ORC1\u00b74, ORC4\u00b75, and ORC5\u00b73 interfaces, with magnesium ions also observed. Only the ORC1\u00b74 site exhibits ATPase activity essential for cell viability, and mutations at this site are associated with Meier-Gorlin Syndrome. The ORC5\u00b73 interface is more flexible than the other ATP sites, and ORC3 does not participate in ATP coordination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C15 describe ATP binding sites with structural evidence from density maps and cite previous functional studies. The observation of three ATP molecules is consistent with prior work (C9), and the functional significance of the ORC1\u00b74 site is well-established through multiple citations (C12, C13). The structural observations about flexibility and coordination are supported by the density maps, though some inferences about ORC3 participation could benefit from additional biochemical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "2cc431e3-0c3e-4ddb-9d15-b29cb684825f",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ORC2 and ORC3 have the largest buried surface area (3296 \u00c5\u00b2) among ORC subunit interfaces, significantly larger than ORC4-ORC5 (2707 \u00c5\u00b2). These subunits localize to centromeres in mitosis and may function independently of other ORC subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C16 provides quantitative surface area measurements that can be calculated from the structures. Claim C17 cites published studies showing ORC2-ORC3 centromere localization. The structural data support the tight interaction between these subunits, consistent with their potential independent function, though the functional claim relies on cited literature rather than data presented in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "776e3248-9105-4e94-8f0d-eb7514c15077",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ORCOPEN reveals a hinge at the ORC3\u00b75 interface allowing ORC2\u00b73 subunits to rotate 22\u00b0 away from the ORC1\u00b74\u00b75 motor module. The ORC3 N-terminal helix is straightened in ORCOPEN (bent by 32\u00b0 in other conformations). Multibody refinement identified two prominent movements\u2014twisting and pinching\u2014emanating from the ORC3\u00b75 hinge, contributing 17-23% of total variance. The twisting motion involves ORC1 and ORC2 sliding over each other, while pinching involves narrowing/widening the ring opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21, C62-C63 describe hinge movements with specific quantitative measurements (rotation angles, variance contributions). The multibody refinement approach is validated by independent 3D Variability Analysis (C61), and the movements are visualized in videos. The quantitative measurements are appropriate for the resolution of the structures, and the focused refinement improved map quality in critical regions. The functional implications are speculative but the structural observations are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "7f5a1295-b79e-43dc-818e-f8824dcd5f36",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The absence of ORC1 reveals a compact, stable ORC2-5 complex with ORC2 WHD in an 'inactive state' buried in the core. Introduction of ORC1 opens the complex into dynamic conformations where ORC1 AAA+ and ORC2 WHD domains move along a continuum between extreme states. ORC1 binding facilitates release of ORC2 WHD from the tucked-in state. This movement of ORC2 WHD appears to be a universal feature controlling DNA access to the ORC core.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35, C52, C56-C57, C59 describe the dynamic relationship between ORC1 and ORC2 WHD based on multiple structures showing different conformational states. The 'inactive state' nomenclature (C56) is an inference but is supported by structural comparison. The claim of universality (C59) is supported by comparison to yeast structures. The continuum of ORC1 AAA+ positions (C52) is demonstrated through 3D classification showing intermediate states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "51cbc4ca-602e-476b-84df-47db6f448154",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DNA was detected in affinity-purified recombinant HsORC and visualized in the ORCDNA structure. All five ORC subunits contact DNA, with major interactions from ORC1 RecA-fold (loops at residues 593-596 and 626-630 containing positively-charged residues K591, N595, H596, W626, H628, K629) and ORC2 WHD (including R367). The DNA likely represents a superposition of sequences due to lack of sequence specificity. ORC5 H398 is also proximal to DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25, C65-C66, C69, C71 describe DNA binding with structural evidence from the ORCDNA map. The presence of DNA is confirmed by gel electrophoresis (C22) and 2D classification showing strong density. The identification of specific residues near DNA is appropriate for the 4.3 \u00c5 resolution, though precise interaction geometry is limited. The inference about sequence superposition (C65) is reasonable given the lack of sequence specificity in human ORC. Some residue assignments are marked as 'appear to be involved' appropriately acknowledging resolution limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The ORC4 WHD region in HsORC is 20 residues shorter than ScORC and lacks an \u03b1-helix insertion (residues 481-489 in ScORC) that inserts into the DNA major groove for sequence-specific recognition. This helix likely evolved in Saccharomyces species with loss of RNAi-mediated silencing. The missing helix in HsORC4 reduces sequence-specific DNA binding and contributes to multiple DNA conformations observed. Despite lacking the helix, the shorter HsORC4 loop contacts DNA near R390, potentially similar to ScORC4 R478.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30, C73-C77 compare human and yeast ORC4 with structural and sequence evidence. The length difference and helix absence are directly observable in the structures (C26, C74). The evolutionary inference (C29) is supported by sequence alignments and cited literature. The functional consequences (C27, C75, C77) are reasonable inferences supported by comparison to yeast structures and cited biochemical studies showing lack of sequence specificity in human ORC (C30). The R390 contact (C76) is observed in the structure though the functional similarity to yeast R478 is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "03814703-480a-4e84-aeae-41fbd7aea0f2",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HsORC binds to specific chromosomal locations but lacks DNA sequence specificity, unlike ScORC. HsORC is targeted to sites by binding to specific histones and their modifications, particularly through the ORC1 BAH domain. In metazoans, ORC may rely on nucleosome interactions to establish origin sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C40, C51 describe the mechanism of origin recognition in human versus yeast based entirely on cited literature. These are well-established findings from prior work and provide important context for interpreting the structural differences observed. The claims accurately represent the current understanding of metazoan origin recognition, though no new experimental data supporting these mechanisms are presented in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "36345701-3993-46c5-9336-eb3bb8e91975",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The dynamic movements of ORC1 AAA+ may be a consequence of ORC1\u00b74 ATP hydrolysis, though further investigation is necessary. ATP promotes the assembly and stability of human ORC, which unlike yeast ORC is assembled and disassembled throughout the cell division cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 is explicitly speculative and acknowledges the need for further investigation. Claim C54 is an inference based on the structural observations and cited prior work with mutant subunits, but no direct biochemical or functional experiments testing ATP's role in assembly/stability are presented in this manuscript. The conclusion is reasonable but would require additional experiments (e.g., ATP hydrolysis assays, assembly kinetics) to be fully supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "a2d31141-0d81-4231-bb52-9f742d2ebc2f",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A minor ORC2 WHD conformation in ORCO2WH resembles the collapsed 'inactive state' observed in ORCO2-5, where the domain is tucked deeper into the core than the auto-inhibited state. This inactive state appears to stabilize ORC2-5 prior to ORC1 binding, and ORC1 binding facilitates release of ORC2 WHD from this tucked-in state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 describe an alternative ORC2 WHD conformation identified through focused 3D classification. The structural observation (C55) is supported by density maps showing distinct secondary structure. The functional interpretation (C56-C57) is an inference based on the observation that this state is prominent in ORC2-5 but less so when ORC1 is present. The nomenclature 'inactive state' is reasonable but the functional role would benefit from additional biochemical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "d059fc23-5b84-4c70-bf6e-e58dd3cffe8d",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The long straightened helix in ORCOPEN may provide structural stability to the open conformation. The twisting and pinching movements provide potential flexibility to ORC during replication initiation events, including DNA binding, movement along DNA, and/or complex release after MCM double hexamer formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60 and C64 are explicitly speculative about functional roles of observed structural features. While the structural observations (straightened helix, twist/pinch movements) are well-supported, the functional implications are hypotheses that would require additional experiments (e.g., mutational analysis, single-molecule studies, functional assays) to validate. The speculation is reasonable based on the structural context but remains unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "474724b8-d7b0-4653-93ce-d21973ae5721",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Most ORC1 DNA-binding residues are conserved in vertebrates but differ in insects, plants, and fungi. The ORC2 WHD may adopt multiple conformations in ORCDNA similar to DNA-bound ScORC. The ORC2 ISM in humans may play an important role in DNA binding similar to ScORC where W396 is buried in the DNA minor groove.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is supported by sequence alignments shown in supplementary figures. Claims C68 and C70 are speculative comparisons to yeast structures. The ORC2 WHD region in ORCDNA has lower resolution preventing precise modeling (C68), and the functional role of the human ORC2 ISM (C70) is inferred by analogy to yeast without direct experimental validation. These are reasonable hypotheses but require additional structural or biochemical data for confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "0c44c918-2c3f-4467-8175-a3906e2d221e",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ORC1 may recruit other subunits via interactions facilitated by intrinsically disordered regions (IDRs) in ORC1 and ORC2 N-termini, potentially forming condensates via phase transitions. However, IDRs appear unnecessary for ORC assembly based on successful structure determination without these regions. Mcm3 C-terminus stimulation of ORC ATPase activity may induce ORC1 AAA+ movement and a switch to the inactive state after pre-RC assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79, C81 are speculative models about assembly mechanisms and regulation. C78 cites literature about IDRs and phase transitions but presents no experimental data testing this model. C79 infers IDRs are unnecessary because structures were obtained without them, but this doesn't exclude a role in vivo. C81 is explicitly speculative ('it is also possible') about Mcm3 effects. These are reasonable hypotheses that would require extensive additional experiments to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "5875a81c-07d3-4429-8ea8-f3455162877b",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background and contextual claims about ORC function, structure, and origin recognition mechanisms in different species based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C38-C39, C41-C50, C58, C72, C80, C82 provide essential background context from well-established prior work. These claims are supported by appropriate citations and accurately represent the current understanding of ORC biology. They provide the foundation for interpreting the new structural findings but do not represent novel results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    },
+    {
+      "id": "cde85ba8-122a-4f0b-8f55-b00ebbf39db6",
+      "content_id": "33c9ee79-c574-482b-b52a-773275611fba",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Both Multibody Refinement and 3D Variability Analysis revealed the same prominent movements in the ORCO1AAA particle population, validating the computational approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 describes methodological validation where two independent computational approaches yielded consistent results. This cross-validation strengthens confidence in the identified movements (twist and pinch). The use of an unbiased method (3D Variability Analysis) to confirm results from a user-defined approach (Multibody Refinement) is appropriate and well-executed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:18:58.451895Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3a37ac05-66d9-4455-a390-e918c93a67a5",
+      "result_id": "0d99d2e3-ceb8-4c63-a5f1-4bf9b7a1ee60"
+    },
+    {
+      "claim_id": "3df9cb1c-c779-4993-906e-69f3999c31ae",
+      "result_id": "0d99d2e3-ceb8-4c63-a5f1-4bf9b7a1ee60"
+    },
+    {
+      "claim_id": "220628a2-7b65-4d8e-b70b-9c3347a3a683",
+      "result_id": "0d99d2e3-ceb8-4c63-a5f1-4bf9b7a1ee60"
+    },
+    {
+      "claim_id": "985069fb-b73d-4ffd-ac7a-63a5c960d090",
+      "result_id": "0d99d2e3-ceb8-4c63-a5f1-4bf9b7a1ee60"
+    },
+    {
+      "claim_id": "cfe6948f-f7fa-4d1e-bf4a-bb9d1de7d1a1",
+      "result_id": "0d99d2e3-ceb8-4c63-a5f1-4bf9b7a1ee60"
+    },
+    {
+      "claim_id": "cc6b6772-081c-4be8-a1ce-57f604543857",
+      "result_id": "0d99d2e3-ceb8-4c63-a5f1-4bf9b7a1ee60"
+    },
+    {
+      "claim_id": "9755b7c8-97b1-4d50-a916-d700261a4713",
+      "result_id": "0d99d2e3-ceb8-4c63-a5f1-4bf9b7a1ee60"
+    },
+    {
+      "claim_id": "5b4ad03f-50ea-4b97-9478-febcf0936252",
+      "result_id": "0d99d2e3-ceb8-4c63-a5f1-4bf9b7a1ee60"
+    },
+    {
+      "claim_id": "4baee34b-dd22-4203-aabd-452009701872",
+      "result_id": "46f6e1c7-5888-45df-a9b4-5e37200fc761"
+    },
+    {
+      "claim_id": "1cde16df-2646-4086-ba5c-5eff6aa58334",
+      "result_id": "46f6e1c7-5888-45df-a9b4-5e37200fc761"
+    },
+    {
+      "claim_id": "2254b24e-9c2f-4560-bfca-e8e991629dd3",
+      "result_id": "46f6e1c7-5888-45df-a9b4-5e37200fc761"
+    },
+    {
+      "claim_id": "1794482f-67f4-4cd6-88a2-72c8b004a69d",
+      "result_id": "46f6e1c7-5888-45df-a9b4-5e37200fc761"
+    },
+    {
+      "claim_id": "11e8c931-e0ff-41c4-b83f-425f4efe4818",
+      "result_id": "46f6e1c7-5888-45df-a9b4-5e37200fc761"
+    },
+    {
+      "claim_id": "be270280-fc81-49f4-a7dc-eedbafb64ea6",
+      "result_id": "46f6e1c7-5888-45df-a9b4-5e37200fc761"
+    },
+    {
+      "claim_id": "95b55b73-b6b4-4cd6-a545-0d4d9a7452b1",
+      "result_id": "46f6e1c7-5888-45df-a9b4-5e37200fc761"
+    },
+    {
+      "claim_id": "59fd2f6d-892f-42d9-8767-d04e88ed0dd0",
+      "result_id": "2cc431e3-0c3e-4ddb-9d15-b29cb684825f"
+    },
+    {
+      "claim_id": "bcd2193e-8e19-4fba-a6cc-49460fda0c9f",
+      "result_id": "2cc431e3-0c3e-4ddb-9d15-b29cb684825f"
+    },
+    {
+      "claim_id": "ba0ea6d7-bfd8-49dd-949b-b8e460f97d75",
+      "result_id": "776e3248-9105-4e94-8f0d-eb7514c15077"
+    },
+    {
+      "claim_id": "fd5db5bf-584a-4153-8cfc-248cc367af07",
+      "result_id": "776e3248-9105-4e94-8f0d-eb7514c15077"
+    },
+    {
+      "claim_id": "f5161b3f-75c8-4a8a-b28f-4de8942bcd34",
+      "result_id": "776e3248-9105-4e94-8f0d-eb7514c15077"
+    },
+    {
+      "claim_id": "c8825f4a-9c16-4d1d-8750-cec6b6e854a4",
+      "result_id": "776e3248-9105-4e94-8f0d-eb7514c15077"
+    },
+    {
+      "claim_id": "de0fa1ae-f570-4162-848f-8c644f872450",
+      "result_id": "776e3248-9105-4e94-8f0d-eb7514c15077"
+    },
+    {
+      "claim_id": "b91f9d61-629b-4479-a1c3-acaa141c1feb",
+      "result_id": "776e3248-9105-4e94-8f0d-eb7514c15077"
+    },
+    {
+      "claim_id": "dc0ea5e1-da04-46c1-8f8b-a135be310239",
+      "result_id": "7f5a1295-b79e-43dc-818e-f8824dcd5f36"
+    },
+    {
+      "claim_id": "e480e41e-58b5-435d-86c4-0fa030d37605",
+      "result_id": "7f5a1295-b79e-43dc-818e-f8824dcd5f36"
+    },
+    {
+      "claim_id": "45374d6d-8e16-4b62-996b-0500122a87a6",
+      "result_id": "7f5a1295-b79e-43dc-818e-f8824dcd5f36"
+    },
+    {
+      "claim_id": "92288194-f492-4b7c-8d90-d623774d240d",
+      "result_id": "7f5a1295-b79e-43dc-818e-f8824dcd5f36"
+    },
+    {
+      "claim_id": "0539ae47-d188-44d2-860b-f9939de5c471",
+      "result_id": "7f5a1295-b79e-43dc-818e-f8824dcd5f36"
+    },
+    {
+      "claim_id": "5fb4b03f-45db-41e8-8592-2c77f53d8f30",
+      "result_id": "7f5a1295-b79e-43dc-818e-f8824dcd5f36"
+    },
+    {
+      "claim_id": "08d4cf03-32b1-4656-a9ad-374d4069f4b2",
+      "result_id": "7f5a1295-b79e-43dc-818e-f8824dcd5f36"
+    },
+    {
+      "claim_id": "7b107a62-1b9c-456d-888a-863854564c0e",
+      "result_id": "51cbc4ca-602e-476b-84df-47db6f448154"
+    },
+    {
+      "claim_id": "7451e508-b119-4da5-83ab-3ea27b9e037e",
+      "result_id": "51cbc4ca-602e-476b-84df-47db6f448154"
+    },
+    {
+      "claim_id": "00bf0e6e-d75f-48e9-a94b-0cf625de4ab5",
+      "result_id": "51cbc4ca-602e-476b-84df-47db6f448154"
+    },
+    {
+      "claim_id": "e0987f22-19f8-4130-8c5a-9aa5a359c95f",
+      "result_id": "51cbc4ca-602e-476b-84df-47db6f448154"
+    },
+    {
+      "claim_id": "b383944b-6f43-4501-8a9a-67ab23f15013",
+      "result_id": "51cbc4ca-602e-476b-84df-47db6f448154"
+    },
+    {
+      "claim_id": "58d766c3-fe8b-47ba-9e59-f0e71bed88c7",
+      "result_id": "51cbc4ca-602e-476b-84df-47db6f448154"
+    },
+    {
+      "claim_id": "79f0e156-248f-443c-a566-b8913993b015",
+      "result_id": "51cbc4ca-602e-476b-84df-47db6f448154"
+    },
+    {
+      "claim_id": "e5efcd14-646e-475b-b8f6-5fe20d5daf14",
+      "result_id": "51cbc4ca-602e-476b-84df-47db6f448154"
+    },
+    {
+      "claim_id": "ec94d894-1c26-4557-b9b1-06ddad17e691",
+      "result_id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4"
+    },
+    {
+      "claim_id": "e874662f-864f-4298-923c-c3747acfc1c1",
+      "result_id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4"
+    },
+    {
+      "claim_id": "7543df67-c650-4a24-8c72-5424348265dc",
+      "result_id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4"
+    },
+    {
+      "claim_id": "ff99149e-cee8-4aae-8c07-9c4a3cb9f16a",
+      "result_id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4"
+    },
+    {
+      "claim_id": "605a2888-067c-4cf6-9c21-6696b0e313d6",
+      "result_id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4"
+    },
+    {
+      "claim_id": "a144feda-984a-4321-8c87-ac39321ed45e",
+      "result_id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4"
+    },
+    {
+      "claim_id": "d46e113e-3eaf-44b4-9d10-cbd32eef51d1",
+      "result_id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4"
+    },
+    {
+      "claim_id": "2d38c971-be01-44b1-9ebe-8af842451fd4",
+      "result_id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4"
+    },
+    {
+      "claim_id": "0d45c09b-3d9a-4dec-87a6-617bef935e01",
+      "result_id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4"
+    },
+    {
+      "claim_id": "8361de07-0f0f-43c7-8c41-769b418ce2ae",
+      "result_id": "4229d358-99e6-4b00-a44e-c1cf8b0bcee4"
+    },
+    {
+      "claim_id": "dbe32742-df30-44f2-84d4-937a454b001c",
+      "result_id": "03814703-480a-4e84-aeae-41fbd7aea0f2"
+    },
+    {
+      "claim_id": "a83135b6-064f-4257-8cee-8a901b4ed166",
+      "result_id": "03814703-480a-4e84-aeae-41fbd7aea0f2"
+    },
+    {
+      "claim_id": "518d147d-118c-4c7d-8171-dd8cc0d2ab85",
+      "result_id": "03814703-480a-4e84-aeae-41fbd7aea0f2"
+    },
+    {
+      "claim_id": "d5673778-3b78-456e-ace6-cfe16403529f",
+      "result_id": "36345701-3993-46c5-9336-eb3bb8e91975"
+    },
+    {
+      "claim_id": "fd3ec08d-bfd9-4a51-b4c1-090834af484d",
+      "result_id": "36345701-3993-46c5-9336-eb3bb8e91975"
+    },
+    {
+      "claim_id": "9d620ece-f570-4376-9b90-1688c8a641b4",
+      "result_id": "a2d31141-0d81-4231-bb52-9f742d2ebc2f"
+    },
+    {
+      "claim_id": "0539ae47-d188-44d2-860b-f9939de5c471",
+      "result_id": "a2d31141-0d81-4231-bb52-9f742d2ebc2f"
+    },
+    {
+      "claim_id": "5fb4b03f-45db-41e8-8592-2c77f53d8f30",
+      "result_id": "a2d31141-0d81-4231-bb52-9f742d2ebc2f"
+    },
+    {
+      "claim_id": "6ab95336-afad-4116-a54b-c8450128fec3",
+      "result_id": "d059fc23-5b84-4c70-bf6e-e58dd3cffe8d"
+    },
+    {
+      "claim_id": "ce1c42fa-0c7a-4a51-abbe-a9417fd38405",
+      "result_id": "d059fc23-5b84-4c70-bf6e-e58dd3cffe8d"
+    },
+    {
+      "claim_id": "2bf493ae-a086-42fa-a656-c3ff7aa58f9b",
+      "result_id": "474724b8-d7b0-4653-93ce-d21973ae5721"
+    },
+    {
+      "claim_id": "ee196346-9ab7-476e-a749-f667d9ee1435",
+      "result_id": "474724b8-d7b0-4653-93ce-d21973ae5721"
+    },
+    {
+      "claim_id": "93cd9f07-f4ea-4be7-9aec-64585fb3a0f7",
+      "result_id": "474724b8-d7b0-4653-93ce-d21973ae5721"
+    },
+    {
+      "claim_id": "05b443b3-8771-4482-bf0b-67ecfc444eac",
+      "result_id": "0c44c918-2c3f-4467-8175-a3906e2d221e"
+    },
+    {
+      "claim_id": "e781d8d7-13dd-4804-a2a6-fbff4f42a479",
+      "result_id": "0c44c918-2c3f-4467-8175-a3906e2d221e"
+    },
+    {
+      "claim_id": "60765e07-c80e-4f28-8793-263cbc4af537",
+      "result_id": "0c44c918-2c3f-4467-8175-a3906e2d221e"
+    },
+    {
+      "claim_id": "7a612a7e-1cfd-46c0-ab5b-dc5af5193100",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "d9ff74fe-453a-4f78-8af8-afd3886cfef3",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "ea2328b3-fb05-41d6-a136-64eed03b068b",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "c5a7fc3a-3ad0-4471-a5db-6bcdd52214c9",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "8682e049-bba7-4c31-88c4-bbea53e66717",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "5fba8687-2d99-4cfd-ac03-7918a3e4ee01",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "097d5865-2830-46e8-b169-77cc6eae9ac3",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "5633b8b9-443f-4bfa-8705-d2c2807d9c91",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "1578493e-07a3-454e-86b5-5dde2ff27031",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "a84351b7-17a4-48f3-910a-9afe7b9b399f",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "061f2f89-7989-4516-ba63-23437911cc50",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "87cd53dd-96fa-4342-afe2-44a67655cfef",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "0d564c88-bf66-4c20-bbb9-a7fcee254b92",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "5438f711-97ca-4360-8088-ba784ceb5075",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "b8b934a8-cb6b-4efd-86ab-cef4ce590154",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "ecdeb7ef-6909-4108-90e0-8090f2032a1b",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "a8901c86-8453-458b-ab50-36c8ce31273c",
+      "result_id": "5875a81c-07d3-4429-8ea8-f3455162877b"
+    },
+    {
+      "claim_id": "972d0486-fe76-45f6-8555-8fb3de473782",
+      "result_id": "cde85ba8-122a-4f0b-8f55-b00ebbf39db6"
+    }
+  ],
+  "comparisons": []
+}

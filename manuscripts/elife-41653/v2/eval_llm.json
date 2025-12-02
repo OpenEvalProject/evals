@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background knowledge on VSP structure and function is established. VSPs contain a VSD similar to voltage-gated ion channels but lack a pore-gate domain (C1). The VSD regulates the cytoplasmic catalytic region (CCR) (C2), but the coupling mechanisms remain elusive (C3). VSPs translate electrical signals to chemical signals by dephosphorylating phosphoinositides (C13, C14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish well-documented background knowledge about VSP structure and function, supported by multiple citations to prior work (C8-C20). The claims accurately describe the known architecture of VSPs and their functional role, providing appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior work suggests the VSD-PD linker is important for VSD-CCR coupling and that VSPs exhibit multiple conformational states. The VSD-PD linker acts as a hub to translate VSD motion to CCR conformational changes (C24). Previous studies showed VSPs can have multiple active states with distinct enzyme activities (C25-C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior findings from cited studies about the VSD-PD linker's role in coupling (C21-C24) and the existence of multiple VSP conformational states (C25-C32). The citations support the claims, establishing the knowledge gap this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Coarse-grained and atomistic MD simulations reveal differential membrane binding of the C2 domain and phosphatase domain (PD). The C2 domain shows stronger affinity for POPC bilayers than the PD (C36, C43). PI(3,4,5)P3 enhances PD binding more than C2 domain binding (C38, C42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulation results are well-documented with specific simulation parameters, multiple independent runs, and consistent findings across CG and AT simulations (C33-C43). The differential binding behavior is supported by quantitative data in figures and tables, though the biological relevance depends on subsequent experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The hydrophobic spine (Leu-284 and Phe-285) serves as the contact point between PD and membrane but shows compromised membrane penetration. The spine is located near the distal end of putative rotational motion (C44) and is surrounded by polar/ionizable residues that hamper deep membrane penetration (C45-C47). The spine shows superficial positioning ~3-4 \u00c5 from the phosphorus layer with weak, fluctuating membrane association (C48-C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification and characterization of the hydrophobic spine is well-supported by MD simulation data, including steered MD experiments (C46) and quantitative positioning measurements (C48). The 'compromised' nature is supported by both structural analysis and thermodynamic considerations, though the functional significance requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Voltage-dependent phosphatase activity depends on hydrophobicity of the hydrophobic spine. Mutations to hydrophobic residues (L284V, L284F) maintain or enhance activity (C51-C52), while hydrophilic mutations (L284Q, F285Q) reduce activity (C53, C56). The activity correlates with side chain hydrophobicity at positions 284 and 285 (C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological data using Kir channel readout is systematic and well-controlled, with sensing currents confirming expression (C54). The correlation between hydrophobicity and activity is demonstrated across multiple mutants (C55-C57) with appropriate statistical analysis. The experimental design is sound and results are reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Aromatic residues in the hydrophobic spine enhance voltage-dependent phosphatase activity beyond other hydrophobic residues. L284F shows enhanced activity compared to WT (C59-C60), and all aromatic mutations (L284Y, L284W, F285Y, F285W) show higher activity than WT (C61-C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enhancement effect of aromatic residues is demonstrated through systematic mutagenesis with multiple aromatic amino acids (C61) and verified using different pulse protocols (C62). The data consistently show aromatic residues provide additional enhancement beyond hydrophobicity alone, though the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Hydrophobicity in the hydrophobic spine is important for intrinsic CCR phosphatase activity, but aromatic enhancement is specific to voltage-dependent activity. In vitro assays show L284Q and F285Q have low activity consistent with cellular measurements (C63-C64), but L284F shows no enhancement in vitro despite enhanced voltage-dependent activity (C65-C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discrepancy between in vitro and cellular assays for aromatic mutants is clearly documented and appropriately interpreted (C66). This finding suggests the aromatic ring specifically affects VSD-CCR coupling rather than intrinsic catalytic activity, supporting the proposed mechanism. The comparison between assay types strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mutations in the hydrophobic spine affect VSD motion in a retrograde manner. VCF experiments with G214C-TMRM show that L284F and WT have similar saturation behavior (C69), while L284Q and F285Q do not saturate at 150 mV (C70). Kinetic differences emerge at voltages >50 mV (C71-C73), and the third component of Q208C-TMRM fluorescence, associated with VSD-CCR coupling, is absent in weak activity mutants (C74-C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The VCF data demonstrate retrograde effects of hydrophobic spine mutations on VSD motion, consistent with tight coupling. The experiments use established fluorescence reporters (C67, C75) and show systematic differences between high- and low-activity mutants. The kinetic analysis and component fitting provide quantitative support for the coupling mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "VSP has two active states with distinct CCR activities, and the hydrophobic spine drives transition to the fully activated state. Anap fluorescence at K555 shows biphasic changes in WT and L284F (C77-C78, C82) but only a single component in L284Q and F285Q (C79, C83). The hydrophobicity and aromatic ring in the hydrophobic spine drive the transition to the fully activated state (C80-C81, C86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Anap fluorescence data provide direct evidence for two CCR conformational states and the role of the hydrophobic spine in the second transition. The correlation between VSD (G214C-TMRM) and CCR (K555Anap) fluorescence changes (C84) supports tight coupling. The Boltzmann fitting analysis quantitatively demonstrates the two-state model, though additional structural data would strengthen the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The hydrophobic spine has a distinct role from the VSD-PD linker in VSD-CCR coupling. The VSD-PD linker initiates all enzymatic activity (C89, C92), while the hydrophobic spine specifically affects the later transition from intermediate to fully activated state (C90-C91). This is supported by similarity of weak activity mutants to VSD-PD linker decoupling mutants (C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional distinction between the VSD-PD linker and hydrophobic spine is well-supported by comparing fluorescence data from different mutants (C88) and integrating results from multiple experimental approaches. The model of sequential activation steps with distinct molecular requirements is consistent with all presented data, though direct structural evidence would be valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "MD simulations suggest a hinge-like motion mechanism where the C2 domain anchors to the membrane while the PD associates loosely via the hydrophobic spine. The C2 domain anchors through positive charges (C93), while the PD binds loosely due to the hydrophobic spine's compromised nature (C94-C96). The spine fine-tunes membrane-PD interaction by balancing hydrophobicity/hydrophilicity (C98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the MD simulations provide detailed molecular insights (C93-C98), the proposed hinge-like motion mechanism (C95) is largely speculative and not directly validated experimentally. The thermodynamic arguments about the anomalous positioning of hydrophobic residues are sound (C96-C97), but the functional model requires additional experimental validation, such as distance measurements or structural studies of the full-length protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The hydrophobic spine regulates phosphatase activity through hydrophobicity and aromatic interactions. Hydrophobicity is essential for maintaining activity (C99), while aromatic rings enhance voltage-dependent but not intrinsic activity (C100). The aromatic ring affects CCR transition between active states (C101) and may stabilize the high activity state through membrane interactions (C102).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The summary of experimental findings is well-supported by the mutagenesis and activity data (C99-C101). However, the mechanistic speculation about aromatic ring stabilization through membrane interactions (C102) lacks direct experimental evidence. The distinction between effects on voltage-dependent versus intrinsic activity is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Aromatic residues play important roles in membrane binding in other proteins. Studies of CaV \u03b22 subunit show membrane binding through basic and aromatic residues (C103), and tryptophan is important for PLA2 membrane binding (C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately cite relevant prior work on aromatic residue function in membrane protein interactions, providing appropriate context for interpreting the VSP results. The citations support the general principle that aromatic residues can enhance membrane interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "A three-state model is proposed for VSP activation: resting state with weak PD-membrane interaction (C105), partially activated state with weak PD-membrane association via VSD-PD linker (C106), and fully activated state with tight PD membrane anchoring (C107). The C2 domain maintains constitutive membrane binding (C108), while the hydrophobic spine fine-tunes PD membrane association (C109-C110).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposed three-state model integrates findings from simulations and experiments, but represents a speculative mechanistic interpretation (C105-C107). While consistent with the data, the model lacks direct structural validation of the proposed conformational states. The roles assigned to different structural elements (C108-C110) are reasonable inferences but require additional experimental support, such as FRET measurements or cryo-EM structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The hydrophobic spine is conserved in PTEN and other phosphoinositide phosphatases, suggesting a common functional role. The spine is conserved in PTEN (C112) and affects PTEN activity (C113). Similar hydrophobic clusters are found in SidF, INPP5B, OCRL, and SHIP2 (C114-C121), which interact with substrate acyl chains. The VSP hydrophobic spine may similarly interact with substrate acyl chains (C122) and stabilize substrates in the cytoplasmic environment (C123-C124).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conservation analysis and comparison with other phosphatases is well-documented through sequence alignments and structural comparisons (C111-C121). The experimental demonstration that the spine affects PTEN activity (C113) supports functional conservation. However, the proposed mechanism of substrate acyl chain interaction (C122-C124) is speculative and based on analogy rather than direct evidence for VSP. The comparison strengthens the biological significance of the findings but requires experimental validation of the proposed substrate interactions.",
+    "result_type": "MAJOR"
+  }
+]

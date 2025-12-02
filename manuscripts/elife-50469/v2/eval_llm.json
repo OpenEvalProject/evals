@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The experimental design involved two experiments with 22 and 40 subjects respectively, where subjects learned stimulus-response associations through trial and error with 90% reliable feedback and 10% misleading trials. Task-sets changed across episodes without explicit cues, with recurrent sessions using only 3 repeating task-sets and open-ended sessions using unique task-sets per episode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide a comprehensive description of the experimental design that is internally consistent and clearly documented. The experimental parameters (number of subjects, reward probabilities, episode structure) are explicitly stated and form the foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Subjects showed significantly higher performance in the recurrent session compared to the open-ended session when responding to stimuli seen for the first time after the first correct response (second stimulus: 0.53\u00b10.05 vs 0.39\u00b10.04, p=0.049; third stimulus: 0.65\u00b10.05 vs 0.46\u00b10.03, p=0.0049), demonstrating task-set learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 report statistically significant differences with appropriate statistical tests (t-tests), effect sizes, and p-values. The results directly support the hypothesis that subjects learned and exploited task-set structure in the recurrent session. Sample sizes (22 subjects) appear adequate for the reported effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Subjects did not modify their behavior following misleading feedback late in episodes in either session (recurrent: t=0.25, p=0.80; open-ended: t=0.68, p=0.50), consistent with task-set learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 report non-significant results with appropriate statistical tests. The lack of behavioral change after misleading feedback is interpreted as evidence for task-set learning, which is logically consistent with the hypothesis that subjects rely on learned task-sets rather than individual trial feedback.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The computational model consists of two subnetworks: an Associative Network (AN) with stimulus-selective and action-selective populations learning through reward-modulated plasticity, and a Task-set Network (TN) with mixed-selectivity populations undergoing temporal Hebbian learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 describe the model architecture with appropriate citations to prior work (Fusi et al., 2007; Rigotti et al., 2010b, 2013; Ostojic and Fusi, 2013). The model design is clearly specified and builds on established computational neuroscience frameworks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Task-set learning in the model requires that the learning rate in the task-set network be slower than in the associative network. When task-set network learning is too fast, the network tracks noisy associations and performance degrades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe a key theoretical prediction from the model that is supported by simulation results shown in Figures 3 and 4. The speed-accuracy trade-off is a well-established principle in learning theory, and the model demonstrates this principle applies to hierarchical task-set learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C50",
+      "C51",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The full model with task-set inference provided significantly better fits than the model without inference in the recurrent session (BIC comparison, t=14, p=4.3\u00d710\u207b\u00b9\u00b2) but not in the open-ended session. Fitting both sessions together degraded performance and failed to capture task-set retrieval dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C50-C51, C91-C96 describe the model fitting procedure and results with appropriate statistical comparisons (BIC, AIC, likelihood). The finding that separate fits are required for the two sessions is well-justified and consistent with the need to adapt learning rates to different task statistics. Subject-by-subject fitting and model validation procedures are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "The model predicted that performance on 'chunked' trials (where task-set retrieval occurs) should be higher than on 'independent' trials, and that incorrect task-set retrieval after misleading feedback should decrease performance. These predictions were confirmed by behavioral data and could not be explained by the model without inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C65 describe specific model predictions that were tested and confirmed in the behavioral data (Figure 6). The ability to make and validate novel predictions that distinguish between models with and without task-set inference provides strong support for the chunking mechanism. The falsification of the model without inference (C65) is particularly important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C58"
+    ],
+    "result": "BOLD activity correlated with the task-set inference signal in a prefrontal network, with positive correlations in dorsolateral prefrontal cortex, dorsal anterior cingulate cortex, and anterior supplementary motor area, and negative correlations in ventromedial prefrontal cortex in the recurrent session. No significant effects were found in the open-ended session, and the dorsal system was preferentially engaged when task-set retrieval improved performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C58 report fMRI results that are consistent with prior literature on prefrontal function and provide neural validation of the model's inference signal. The differential activation between recurrent and open-ended sessions supports the hypothesis that the dorsal system is specifically engaged for task-set retrieval. Appropriate statistical thresholding (FWE p=0.05) and ROI selection procedures were used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The model predicts that overlapping associations between task-sets induce a decrease in performance on the following trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 describes a model prediction for a scenario (overlapping task-sets) that was not tested in the actual experiments. While the prediction is theoretically motivated and shown in supplementary simulations (Figure 3\u2014figure supplement 2), it lacks empirical validation from the behavioral data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C99",
+      "C102"
+    ],
+    "result": "Ventromedial prefrontal cortex and striatal activity correlated positively with prediction error and synaptic strength of chosen associations, while dorsal anterior cingulate cortex, anterior supplementary motor area, and lateral prefrontal cortex showed negative correlations, consistent with previous findings in value-based decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C99, C102 report fMRI results that replicate well-established findings in the literature (multiple citations provided). These results serve as positive controls and validate the fMRI analysis pipeline, though they are not novel contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Hippocampal activation showed positive correlations with synaptic strength at decision onset and positive rewards at feedback onset in both sessions, but no significant difference between sessions and no significant activation corresponding to the task-set inference signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 report hippocampal fMRI results that are consistent with the general role of hippocampus in associative binding (C107, citing Davachi and DuBrow, 2015). The lack of differential activation for task-set inference is clearly stated and appropriately interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The hypothesis that task-set learning relies on unsupervised learning of temporal contiguity through Hebbian plasticity is supported by extensive prior literature on classical conditioning and temporal association learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 cite extensive prior literature (Rescorla and Wagner, 1972; Hebb, 1949; Rigotti et al., 2010b; and many others) supporting the theoretical foundation of the model. The citations are appropriate and the hypothesis is well-grounded in established neuroscience principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C75"
+    ],
+    "result": "The neural correlates of task-set retrieval are consistent with known functions of prefrontal regions: dorsolateral prefrontal cortex for temporal integration, anterior cingulate cortex for control allocation, and widespread observation of mixed-selectivity in prefrontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C75 cite appropriate prior literature to interpret the fMRI findings in the context of known prefrontal functions. The interpretations are consistent with established knowledge and provide a coherent framework for understanding the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C86",
+      "C87"
+    ],
+    "result": "The model was designed as an intermediate-level abstraction based on biologically constrained mechanisms but simplified for fitting to human behavioral data, specifically to test the hypothesis that task-set learning relies on Hebbian chunking of stimulus-response associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74, C86-C87 clearly describe the modeling approach and its rationale, with appropriate citations to prior work. The intermediate level of abstraction is justified as a bridge between detailed biophysical models and abstract behavioral models, allowing for direct comparison with human data while maintaining biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "A biologically plausible instantiation of the gating mechanism for task-set inference remains an open question due to insufficient physiological constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 appropriately acknowledges a limitation of the current model. The gating mechanism is implemented in a simplified manner, and the authors correctly note that a more detailed biological implementation requires additional empirical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The ventromedial prefrontal cortex correlated negatively with the inference signal (positively with compatibility between subnetworks), potentially consistent with its role in monitoring Bayesian actor reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 interpret the vmPFC results in light of prior work on the same experimental data (Donoso et al., 2014). The interpretation is plausible and consistent with the data, though it remains somewhat speculative as indicated by the use of 'potentially' and 'in accordance with'.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The temporal chunking mechanism could potentially be extended to hierarchical learning across multiple timescales, providing a candidate implementation for successor representations, multi-step transition maps, and generalization through hierarchical cortical layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C82 propose theoretical extensions of the model with citations to relevant frameworks (Gershman and Niv, 2012; Russek et al., 2017; Murray et al., 2014). However, these are speculative proposals without empirical validation or detailed implementation, as indicated by the use of 'may', 'could', and 'would'.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Prior work has established that the brain relies on estimates of uncertainty within and between task-sets, with Bayesian likelihood of task-sets evaluated and inferences occurring in medial and lateral prefrontal cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 cite extensive prior literature on uncertainty estimation and Bayesian inference in the brain, including specific findings from Collins and Koechlin (2012) and Donoso et al. (2014). These claims provide context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C103",
+      "C104"
+    ],
+    "result": "The fMRI analysis used appropriate preprocessing (z-scoring of parametric modulators) and ROI selection procedures (independent from statistical maps of betas) to ensure valid comparisons between conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C103-C104 describe methodological procedures with appropriate citations (Lebreton et al., 2019; Poldrack, 2007). The procedures follow established best practices for fMRI analysis to avoid circular analysis and ensure valid statistical inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The fMRI analysis regressed the inference strength from the task-set network as a cognitive control signal, providing an indirect measure of memory encoding rather than actual synaptic weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 clarify the interpretation of the fMRI analysis, appropriately noting that the inference signal is an indirect measure of task-set network activity. This clarification is important for understanding the relationship between the model and neural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The model was not fitted on reaction times, yet predicted reaction time differences between chunked and independent trials that were confirmed in the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 describes an important validation of the model: it makes correct predictions about reaction times despite not being fitted to this data. This provides additional evidence that the model captures genuine aspects of the underlying cognitive processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Code for the model and analyses is publicly available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 provides a specific URL for code availability, which is important for reproducibility. The claim is straightforward and verifiable.",
+    "result_type": "MINOR"
+  }
+]

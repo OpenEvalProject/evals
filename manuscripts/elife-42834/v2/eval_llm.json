@@ -1,0 +1,130 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors developed a live cell imaging system for Arabidopsis meiosis using a KINGBIRD reporter line (combining REC8:GFP and TagRFP:TUB4) that allows tracking of five cellular parameters (cell shape, MT array, nucleus position, nucleolus position, and chromosome configurations). Through analysis of 10,671 time points from 169 meiocytes, they identified 11 distinct cellular states (landmarks A1-A11) that occur in a fixed order during meiosis, with variable transition states between them. The system does not perturb meiosis, as timing measurements (26 hr from late leptotene to telophase II) match previous pulse-chase experiments, and allows resolution of late meiotic stages that were previously unresolvable due to asynchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims collectively provide strong evidence for the development and validation of the imaging system. The reporter lines are functional (C24, C27), the landmark system is statistically robust (C32, C33), and the timing data matches independent methods (C46-C49, C68). The ability to track individual cells overcomes previous limitations (C69, C70), and the system's modularity is demonstrated (C42-C45). The convergence of multiple validation approaches supports the main result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C77",
+      "C78"
+    ],
+    "result": "Re-analysis of tam mutants using the live imaging system revealed previously unrecognized phenotypes: ectopic spindle-like or phragmoplast-like MT structures form in the cytoplasm during diplotene before nuclear envelope breakdown (state 6), and two distinct cell populations (A and B) exist within the same anther. Population A (45.8% of cells) develops ectopic MT structures and follows a distinct landmark pathway (t6\u2192t7\u2192t9), while population B progresses more similarly to wild-type but slower (t6\u2192t8\u2192t9). The analysis indicates TAM functions as a major regulator of MT organization, preventing premature MT self-organization prior to chromosome condensation and acting early in prophase I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by direct observations from live imaging (C52-C54, C62-C64) and quantitative analysis (C55-C61). The discovery of ectopic MT structures and two cell populations represents genuinely new findings enabled by the live imaging approach. The functional interpretation (C65-C67, C77-C78) is appropriately cautious and directly supported by the observed phenotypes. The ability to distinguish cell populations within the same anther (C62-C64, C70) demonstrates a clear advantage of the live imaging system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Nuclear envelope breakdown was observed in the live cell imaging system but was captured in only 22 out of 10,671 time points due to its rapid progression. This event was not designated as a landmark because it showed loose correlation with other parameter states\u2014cell shape could be oval or round, and chromatin could be at different condensation levels when breakdown occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation is directly supported by imaging data (C36) and the reasoning for exclusion from the landmark system is methodologically sound (C37). The low capture rate is consistent with the known rapid kinetics of nuclear envelope breakdown, and the variable association with other parameters justifies its exclusion from the landmark classification system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Tapetum cell differentiation (endomitosis leading to polynucleation) was examined as a potential sixth parameter for staging meiosis. While polynucleated tapetum cells appear between A4/zygotene and A7/diplotene, endomitosis showed poor correlation with meiotic stages between A4 and A7, leading to the conclusion that meiotic progression and tapetum cell differentiation are not tightly correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by direct observations (C39) and correlation analysis (C40). The conclusion (C41) appropriately follows from the data showing weak correlation. This addresses a previously suggested staging criterion (C38) and provides new quantitative evidence against its utility, though the result is primarily negative/exclusionary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The REC8:GFP reporter is functional and meiosis-specific. Expression of PROREC8:REC8:GFP in rec8 mutants completely restored fertility and normal chromosome segregation. The GFP signal was only present in meiocytes, and the system was sensitive enough to detect centromeric REC8 remaining after the first meiotic division. Plants carrying double reporter constructs (KINGBIRD) showed no meiotic defects and normal seed production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functionality of the reporter is rigorously demonstrated through genetic complementation (C24), specificity is confirmed by localization (C25), and sensitivity is validated by detection of low-abundance centromeric REC8 (C26). The lack of perturbation by the reporters (C27) is essential for the validity of all subsequent observations. These claims provide critical validation of the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C79"
+    ],
+    "result": "The authors speculate that the observed correlation between cellular parameters may indicate common regulatory mechanisms or dependencies, and that TAM may function similarly to mitotic CDK activity in preventing cytokinesis after anaphase I by inhibiting factors like NACK1 and NPK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims (C76, C79) that propose mechanistic interpretations without direct experimental evidence. While the speculation is reasonable and grounded in the observations and analogies to known mitotic regulation, no experiments are presented to test these hypotheses. The claims represent interesting directions for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Precision (reproducibility of topology reconstruction measured by comparing topologies from 90% subsamples) directly correlates with accuracy (Pearson r=0.91, p<1e-100). For the LacI family, precision is 0.698, suggesting moderate reconstruction difficulty and that the all-sequence topology is not entirely accurate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17, C18, and C19 collectively establish a strong correlation between precision and accuracy with robust statistical support (r=0.91, p<1e-100). The LacI precision measurement (0.698) and its interpretation are consistent with the established correlation. Figure 1E provides visual confirmation of this relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C53"
+    ],
+    "result": "Among alignment and phylogeny inference algorithm combinations tested on 600 simulated families, alignment algorithm choice had the largest effect on accuracy. L-INS-i alignments produced the most accurate reconstructions, while FastTree2 and RAxML performed similarly. L-INS-i with FastTree2 was selected for subsequent analyses due to speed and accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C53 are supported by systematic comparison across algorithm combinations shown in Figure 1D. The selection of L-INS-i/FastTree2 is justified by both empirical performance data and computational efficiency considerations. Citations to prior work support the consistency of these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "600 protein families were simulated, each with 15 paralogs represented by 66 orthologs (990 sequences total). Evolution was simulated using the JTT substitution model, while phylogenies were inferred using the WAG model to introduce realistic model violation. Subsamples from all simulated orthosets were overwhelmingly monophyletic, validating the use of ortholog common ancestors as leaves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, and C44-C47 describe the simulation methodology comprehensively. The deliberate mismatch between simulation (JTT) and inference (WAG) models is well-justified to emulate realistic conditions. The monophyly validation (C11) supports the methodological approach. All claims are internally consistent and methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Topology search reliably identified better-scoring topologies under the substitution model. Surprisingly, all-sequence topologies scored better than true topologies under both the inference model and the simulation model. For high-precision families, all-sequence topologies scored better than true topologies even with the true alignment. True topologies were always located on a plateau outside the optimum well on the all-sequence alignment likelihood surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 describe a counterintuitive but well-documented finding supported by Figures 2A and 2\u2014figure supplement 1. The observation that all-sequence topologies score better than true topologies under multiple models reveals fundamental limitations of likelihood-based phylogenetic inference. The data clearly support these claims, though the findings challenge conventional expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Alignment accuracy correlates with topology accuracy (r=0.80), but this correlation is weaker than that between topology precision and accuracy (r=0.91). Alignment robustness is nearly perfectly correlated with alignment accuracy (r=0.97) but captures less variance in topology accuracy (r=0.78). Precision of topology inference naturally incorporates both alignment robustness and its effect on topology inference, resulting in stronger correlation with topology accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C70-C73 present a systematic comparison of different metrics' relationships with topology accuracy. The correlation coefficients are clearly stated with supporting data in Figure 2C. The interpretation that precision is superior to alignment robustness for predicting topology accuracy is well-justified by the comparative correlation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C74"
+    ],
+    "result": "In 90.7% of families, the top-ranked ASPEN topology is equal to or more accurate than the all-sequence topology (more accurate in 53.8%). At highest precision values, the top ASPEN topology is the true topology. ASPEN provides greatest improvement when precision is below 0.9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C74 are directly supported by data in Figure 4A. The percentages are specific and the relationship between precision and ASPEN improvement is clearly demonstrated. The finding that ASPEN recovers the true topology at high precision while improving over all-sequence at lower precision is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C75"
+    ],
+    "result": "The top-ranked ASPEN topology is the most accurate for 36.9% of families, while for 63.1% the most accurate tree is not top-ranked. However, 75% of the time the most accurate tree is in the top 10 ASPEN topologies. The most accurate topologies are ranked highest by ASPEN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C75 are supported by Figure 4B showing the rank distribution of most accurate topologies. While the top-ranked topology is not always most accurate, the concentration of accurate topologies in high ranks (75% in top 10) demonstrates that the log-frequency scoring function is related to accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C77"
+    ],
+    "result": "For 99% of families, the most accurate among the top 50 ASPEN topologies is better or equal to the all-sequence topology (76% of the time it is better).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C77 are directly supported by data in Figure 4C. The high percentage (99%) demonstrates that ASPEN consistently identifies topologies that are at least as accurate as all-sequence reconstructions, with substantial improvement in the majority of cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C80"
+    ],
+    "result": "Among paths where true and all-sequence topologies disagree, the ensemble correctly identified the true length for half or more paths across all but the highest-precision bin. In the highest-precision bin, topologies disagree on only 4.8% of path lengths. The fraction of disagreeing paths for which the ensemble correctly identifies the true length remains surprisingly constant as precision falls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C80 are supported by path length analysis in Figure 5A. The observation that ensemble identification of true path lengths remains constant while overall disagreement increases explains why ASPEN accuracy declines more slowly than all-sequence accuracy at lower precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The all-sequence LacI topology does not appear among the top 500 ASPEN topologies, indicating all 500 ASPEN topologies are more consistent with the ensemble than the all-sequence reconstruction. Results suggest the best ASPEN topology is more accurate than the all-sequence topology, but none are likely to match exactly the true LacI divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by the LacI analysis and Figure 6. The inference that ASPEN topologies are more accurate is reasonable given the synthetic family results showing correlation between log-frequency scores and accuracy. The caveat that no topology is likely exactly correct is appropriately conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ASPEN identifies accurate topologies despite misleading likelihood landscapes where the true topology is not the maximum likelihood topology. ASPEN accuracy declines as reconstruction difficulty increases, but significantly slower than single all-sequence reconstructions. ASPEN can identify when an all-sequence tree is likely inaccurate via precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 synthesize key findings about ASPEN's performance. These conclusions are well-supported by the likelihood landscape analysis (Figure 2), the precision-accuracy correlation (Figure 1E), and the comparative performance data (Figure 4). The claims accurately represent the demonstrated capabilities of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C121",
+      "C124"
+    ],
+    "result": "ASPEN produces significantly more accurate topology models than single-alignment reconstructions. Topologies capturing more shared information across many incorrect models are significantly more accurate. The methodology facilitates both assessment of reconstruction accuracy and reconstruction of maximally plausible topological models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C121, and C124 summarize the main contributions of ASPEN. These are well-supported by the comprehensive evaluation on 600 simulated families and the LacI case study. The philosophical framework about integrating across models that are 'wrong in different ways' is supported by the empirical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C73"
+    ],
+    "result": "The degree of optimum displacement due to resampling and realignment, captured by precision, reflects the overall dispersion of plausible topology models around the true topology. Less accurate all-sequence topologies are inferred over surfaces more susceptible to perturbation of input sequence selection and alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C69, and C73 provide a mechanistic interpretation of why precision correlates with accuracy. This interpretation is supported by the likelihood landscape analysis (Figure 2B) showing how subsampling displaces the optimum differently for families with different accuracy/precision levels. The reasoning is sound and consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "As precision drops, the number of topologies more accurate than all-sequence increases. At the lowest observed precision, all 50 ASPEN topologies are more accurate than the all-sequence topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 are supported by Figure 4D showing the relationship between precision and the number of better topologies. This finding is consistent with the interpretation that lower precision indicates greater topological uncertainty, where multiple alternative topologies may be more accurate than the all-sequence reconstruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Log-frequency score differences between ASPEN topologies decrease at lower precision, reflecting more uniform confidence in individual topologies. Log-frequency scores decay faster at higher precision, reflecting greater confidence differences between ranked topologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C82 are supported by Figures 6 and 6\u2014figure supplement 1. The observation that score differences relate to precision is consistent with the overall framework where precision reflects reconstruction difficulty and topological uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Specific ancestral nodes in the LacI topology differ between all-sequence and ASPEN reconstructions, with ASPEN nodes appearing more frequently across the top 500 topologies. The [Mal-B, AscG, GalRS] ancestor appears in 46% of ASPEN topologies vs. 24% for the all-sequence alternative. The [CscR, IdnR, GntR] ancestor appears in 76% of ASPEN topologies but is missing from the all-sequence topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by the detailed LacI topology comparison in Figure 7. The frequency data for specific ancestral nodes provides concrete evidence of differences between all-sequence and ASPEN reconstructions, with ASPEN-preferred nodes showing higher consistency across the ensemble.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C122",
+      "C123"
+    ],
+    "result": "The sensitivity of inference and alignment algorithms to inputs results from failure of objective functions to accurately model mutational events. Integrating across models that are wrong in different ways but right in the same way yields more useful models. For difficult inference problems, multiple models should be considered as equally viable explanations. Scientists should integrate analyses over multiple plausible phylogenetic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C120, C122, and C123 present the conceptual framework and recommendations based on the study's findings. These are well-supported by the empirical results showing that ensemble approaches outperform single reconstructions and that topological uncertainty increases with reconstruction difficulty. The recommendations are appropriate given the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ASPEN reconstruction of the least difficult synthetic families completed within an hour of CPU time, while the most difficult could take up to 400 CPU hours. However, the vast majority of N-best trees were identified early in the run (within a few hours), with the remainder spent rejecting worse topologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe ASPEN's computational performance. These are straightforward empirical observations about runtime. The finding that most good topologies are identified early is important for practical applications and suggests that early termination may be viable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C28",
+      "C76"
+    ],
+    "result": "ASPEN's scoring function rewards frequently observed path lengths and penalizes rarely observed ones. This approach and scoring function, which reflect consistency with ensemble-observed features, are related to topology accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C76 describe the ASPEN scoring function and its relationship to accuracy. The scoring function design is clearly stated, and its relationship to accuracy is demonstrated throughout the results (Figures 4-5). The log-frequency formulation is mathematically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "For families with high accuracy and high precision, the log-likelihood difference between subsampled and all-sequence topologies varied from 0 to 10^-4, suggesting the all-sequence topology is within the optimum well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by the likelihood landscape analysis in Figure 2B. The specific range of log-likelihood differences and the interpretation about the optimum well are consistent with the data and the overall framework of how subsampling affects likelihood landscapes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The test set of simulated families spans a range of difficulty, as observed by a range of inaccuracies across families, allowing observation of phylogenetic reconstruction performance as a function of difficulty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by Figure 1D showing accuracy ranging from 0 to 1 across the 600 families. This range of difficulties is essential for evaluating how methods perform under varying conditions and is a strength of the simulation design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C87",
+      "C90"
+    ],
+    "result": "Downstream analyses should consider multiple likely topologies produced by ASPEN rather than using a single topology. For most protein families, it will be necessary to consider multiple equally likely models of evolutionary divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C90 are recommendations based on the findings about topological uncertainty. These are well-justified by the results showing that (1) precision correlates with accuracy, (2) multiple topologies may be similarly accurate, and (3) ASPEN can identify sets of plausible topologies. The recommendations are appropriate and actionable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "If reduction in phylogenetic signal is the principal effect of non-independent evolution of sites, then precision should diminish accordingly and the accuracy-precision relationship should not be affected. Identifying evolutionary circumstances that result in systematic breakdown of the accuracy-precision relationship is vitally important for future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97 and C98 are speculative statements about future work and potential limitations. While the reasoning is sound, these claims are not tested in the current study. The speculation about site non-independence is reasonable but remains hypothetical. These represent important considerations for future research rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "ASPEN analysis starts with selecting ancestral nodes for search space decomposition, requiring sufficient confidence in each ancestor's existence. ASPEN can be used recursively to reconstruct divergence of closely related paralogs. Applicability hinges on existence of high confidence ancestors and willingness to sacrifice reconstruction of clades below them, though analysis remains applicable with at least one integrated-out clade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 describe the requirements and limitations for applying ASPEN to real data. These are reasonable methodological considerations based on the approach's design. The requirement for high-confidence ancestors is well-justified, and the discussion of applicability limits is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "ASPEN's branch-and-bound algorithm provides a guarantee of completeness that N-best trees were produced, but execution times can be substantial for large families. Topology assembly can be truncated after a fraction of full runtime while retaining a nearly-complete collection of N-best trees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 describe algorithmic properties and practical considerations. The completeness guarantee is a property of branch-and-bound algorithms. The observation about early identification of good topologies (C56) supports the claim about truncation. These are accurate characterizations of the method's properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "For common ancestors of orthologs, the species divergence topology should be used unless compelling evidence exists to the contrary. In simulated families where ortholog evolution followed the same species tree, the correct speciation topology was never recovered for all 15 paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107 and C108 provide a practical recommendation supported by empirical observation. The finding that correct speciation topology was never fully recovered (C108) strongly justifies the recommendation to use known species trees (C107) rather than attempting to infer them from single protein families.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "All large phylogenetic reconstructions required for the topology ensemble can be carried out concurrently, allowing maximal use of high-performance computing. ASPEN's reconstruction algorithm is affected only by the number of integrated-out clades, not the number of sequences within them, providing better scalability than simultaneous co-estimation approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C110 describe computational advantages of ASPEN's design. The parallelizability is a direct consequence of the independent reconstruction of subsampled topologies. The scalability advantage is a logical consequence of the search space decomposition strategy. These are accurate characterizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "ASPEN as a meta-analysis approach is likely to continue boosting accuracy regardless of underlying algorithms. The current implementation is tractable for nearly all protein families (subsampling/scoring) and reasonably sized families (branch-and-bound). More efficient topology space search and improved subsampling strategies are possible. A mechanism for robust branch length inference is desirable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C117 mix statements about current capabilities (C112-C114, which are supported) with speculations about future improvements and generalizability (C111, C115-C117). The speculations are reasonable but untested. The claims about current tractability are supported by the LacI analysis and simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Divergence reconstructions for well-studied protein families are relied upon extensively. The human kinome, constructed from only human sequences and cited over 6000 times, represents extreme subsampling. Such reconstructions from single alignments with sparse subsampling are likely extremely inaccurate. Individual reconstructions are extremely unreliable even for high-precision families with few descendants per ancestor. Revisiting important protein domains using ASPEN is worthwhile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 contextualize the study's importance and make recommendations. The citation count for the human kinome (C92) is verifiable. The inference that sparse subsampling leads to inaccuracy (C93-C94) is well-supported by the simulation results. The recommendation to revisit important families (C95) is justified by the demonstrated improvements ASPEN provides.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1490 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "When external feedback about decision outcomes is lacking, agents need to adapt their decision policies based on an internal estimate of the correctness of their choices (i.e., decision confidence).",
+    "claim_type": "EXPLICIT",
+    "source": "When external feedback about decision outcomes is lacking, agents need to adapt their decision policies based on an internal estimate of the correctness of their choices (i.e., decision confidence).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical claim stated in the abstract, supported by the experimental findings presented in the manuscript.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "When confidence is low in one decision, the agent needs more evidence before committing to a choice in the next decision, leading to slower but more accurate decisions.",
+    "claim_type": "EXPLICIT",
+    "source": "When confidence is low in one decision, the agent needs more evidence before committing to a choice in the next decision, leading to slower but more accurate decisions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This hypothesis is tested and supported by the experimental data showing increased decision bounds after low confidence trials.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Decision bounds depend on the reported confidence on the previous trial, independent of objective accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Decision bounds indeed depended on the reported confidence on the previous trial, independent of objective accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main finding supported by DDM fits across three experiments showing confidence-dependent modulation of decision bounds.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The increase in decision bound was predicted by a centro-parietal EEG component sensitive to confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "This increase in decision bound was predicted by a centro-parietal EEG component sensitive to confidence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is supported by EEG data from Experiment 2 showing the Pe component predicts subsequent decision bounds.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Internally computed neural signals of confidence predict the ongoing adjustment of decision policies.",
+    "claim_type": "EXPLICIT",
+    "source": "We conclude that internally computed neural signals of confidence predict the ongoing adjustment of decision policies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is drawn from the combined behavioral and EEG findings across all experiments.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Decision confidence can be conceptualized as the probability of a choice being correct, given the available evidence.",
+    "claim_type": "EXPLICIT",
+    "source": "Decision confidence can be conceptualized as the probability of a choice being correct, given the available evidence (Pouget et al., 2016; Sanders et al., 2016; Urai et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical definition supported by citations to previous work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "When information is sampled sequentially, confidence can be used to regulate how much information should be sampled before committing to a choice.",
+    "claim_type": "EXPLICIT",
+    "source": "Theoretical treatments posit that, when information is sampled sequentially, confidence can be used to regulate how much information should be sampled before committing to a choice (Meyniel et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical prediction from previous work that is tested in the current study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Bounded accumulation models for two-choice tasks postulate the temporal accumulation of noisy sensory evidence towards one of two decision bounds, crossing of which determines commitment to one alternative.",
+    "claim_type": "EXPLICIT",
+    "source": "Such models for two-choice tasks postulate the temporal accumulation of noisy sensory evidence towards one of two decision bounds, crossing of which determines commitment to one alternative (Bogacz et al., 2006; Gold and Shadlen, 2007; Usher and McClelland, 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an established theoretical framework cited from previous literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The drift diffusion model (DDM) is a widely used instance of bounded accumulation models.",
+    "claim_type": "EXPLICIT",
+    "source": "The drift diffusion model (DDM; Ratcliff and McKoon, 2008) is a widely used instance of these models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the DDM's status in the field, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Large signal-to-noise ratio (SNR) of the sensory evidence yields a large drift rate and, consequently, high accuracy and rapid decisions.",
+    "claim_type": "EXPLICIT",
+    "source": "Large signal-to-noise ratio (SNR) of the sensory evidence yields a large drift rate and, consequently, high accuracy and rapid decisions (conversely for low SNR; see Figure 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a theoretical property of the DDM illustrated in Figure 1A.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The separation of the two decision bounds determines response caution, that is, the tradeoff between decision time and accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "The separation of the two decision bounds determines response caution, that is, the tradeoff between decision time and accuracy: The larger the bound separation, the more evidence is required before committing to a choice, increasing accuracy at the cost of slower decisions (Figure 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a fundamental property of the DDM illustrated in Figure 1B.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Controlling decision bound separation enables the decision-maker to prioritize either speed or accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Controlling this decision bound separation, therefore, enables the decision-maker to prioritize either speed or accuracy (Bogacz et al., 2010b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical property of the DDM supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Decision-makers can change their decision bounds as a function of external manipulations such as instructions to adhere to a liberal or conservative response strategy.",
+    "claim_type": "EXPLICIT",
+    "source": "Several studies have shown that decision-makers can change their decision bounds as a function of external manipulations. For example, instructions to adhere to a liberal or conservative response strategy (Forstmann et al., 2008; Hanks et al., 2014; Palmer et al., 2005), or environments that reward fast or accurate responses (Bogacz et al., 2010a) all lead to changes in bound separation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of previous findings supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "In real-life decisions, explicit feedback about choice outcomes is often delayed or withheld.",
+    "claim_type": "EXPLICIT",
+    "source": "In real-life decisions, explicit feedback about choice outcomes is often delayed or withheld.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about real-world decision-making contexts.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "In the absence of external feedback, decision-makers set their decision bounds depending on internal signals encoding their decision confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "We hypothesized that, in the absence of external feedback, decision-makers set their decision bounds depending on internal signals encoding their decision confidence: in this way, low confidence about one choice gives rise to more cautious decision-making in the next (Meyniel et al., 2015; Yeung and Summerfield, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main hypothesis of the study, supported by theoretical citations and tested with experimental data.",
+    "evidence_type": [
+      "CITATION",
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Decision confidence predicted decision bounds on the subsequent trial across three different perceptual choice tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that decision confidence predicted decision bounds on the subsequent trial across three different perceptual choice tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main finding supported by data from all three experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "A centro-parietal EEG component that tracked confidence on the current trial was linearly related to the subsequent-trial decision bound.",
+    "claim_type": "EXPLICIT",
+    "source": "A centro-parietal EEG component that tracked confidence on the current trial was linearly related to the subsequent-trial decision bound.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This finding is supported by EEG data from Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Twenty-eight human participants performed a task that has been used widely in computational and neurophysiological analyses of perceptual decision-making: discrimination of the net motion direction in dynamic random dot displays.",
+    "claim_type": "EXPLICIT",
+    "source": "Twenty-eight human participants performed a task that has been used widely in computational and neurophysiological analyses of perceptual decision-making: discrimination of the net motion direction in dynamic random dot displays (Bogacz et al., 2006; Gold and Shadlen, 2007; Siegel et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental task used in Experiment 1, with citations to previous uses of this task.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "RTs on correct trials and choice accuracy scaled with motion coherence level in Experiment 1.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, RTs on correct trials and choice accuracy scaled with motion coherence level (Figure 2B; RTs: F(4, 45.33)=30.61, p<0.001, error rates: X\u00b2(4)=1285.6, p<0.001).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a behavioral finding from Experiment 1 supported by statistical tests and shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Drift rates estimated from DDM fits increased monotonically with coherence level in Experiment 1.",
+    "claim_type": "EXPLICIT",
+    "source": "Correspondingly, drift rates estimated from DDM fits (see Materials and methods) also increased monotonically with coherence level (Figure 2B; Friedman \u03c72(5)=140, p<0.001).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a modeling result from Experiment 1 supported by statistical tests and shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The average decision bound separation across participants in Experiment 1 was 2.09 (SD = 0.33).",
+    "claim_type": "EXPLICIT",
+    "source": "In these model fits, decision bound separation was not allowed to vary as a function of coherence; its average estimate across participants was 2.09 (SD = 0.33).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a parameter estimate from the DDM fits in Experiment 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The average non-decision time in Experiment 1 was 0.38 (SD = 0.09).",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, non-decision time was held constant across levels of coherence; its average was 0.38 (SD = 0.09).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a parameter estimate from the DDM fits in Experiment 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The DDM fitted the behavioral data well in Experiment 1.",
+    "claim_type": "EXPLICIT",
+    "source": "Model fits closely captured the patterns seen in behavior (i.e., green crosses in Figure 2B), indicating that the DDM fitted the behavioral data well.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an assessment of model fit quality based on visual inspection of Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Participants' confidence ratings exhibited an opposite-sign relation between evidence strength and confidence for correct and incorrect choices.",
+    "claim_type": "EXPLICIT",
+    "source": "Participants' confidence ratings exhibited a key signature of statistical decision confidence established in previous work (Sanders et al., 2016; Urai et al., 2017): an opposite-sign relation between evidence strength and confidence for correct and incorrect choices (Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a behavioral finding from Experiment 1 supported by previous literature and shown in Figure 2C.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The scaling of confidence judgments with coherence level depended on choice accuracy in Experiment 1.",
+    "claim_type": "EXPLICIT",
+    "source": "The scaling of confidence judgments with coherence level (F(4,52.6) = 4.56, p=0.003) depended on choice accuracy (F(4,6824.6) = 154.52, p<0.001), with confidence increasing with coherence levels for correct trials (linear contrast: p<0.001) and decreasing for error trials (linear contrast: p<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from Experiment 1 showing the interaction between coherence and accuracy on confidence.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The pattern of confidence scaling with coherence and accuracy was highly similar in blocks with continued evidence following the choice and blocks in which choices were followed by a blank screen.",
+    "claim_type": "EXPLICIT",
+    "source": "This pattern was highly similar in blocks with continued evidence following the choice and blocks in which choices were followed by a blank screen (see Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparison of conditions in Experiment 1 shown in a supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "A Bayesian ANOVA confirmed that the interactive effects of coherence and accuracy on confidence were similar for both post-decisional evidence conditions (BF = 0.05).",
+    "claim_type": "EXPLICIT",
+    "source": "A Bayesian ANOVA confirmed that the interactive effects of coherence and accuracy on confidence were similar for both conditions, BF = 0.05 (i.e., the null hypothesis was 20 times more likely than the alternative).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from Experiment 1 supporting the similarity of conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Confidence ratings were closely linked to choice accuracy in Experiment 1.",
+    "claim_type": "EXPLICIT",
+    "source": "Correspondingly, confidence ratings were closely linked to choice accuracy (Figure 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a behavioral finding from Experiment 1 shown in Figure 2D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Confidence ratings were monotonically related to choice accuracy on a trial-by-trial basis, even after factoring out motion coherence.",
+    "claim_type": "EXPLICIT",
+    "source": "Confidence ratings were monotonically related to choice accuracy on a trial-by-trial basis, even after factoring out motion coherence (logistic regression of confidence on accuracy with coherence as a covariate: positive slopes for all observers, 23 ps <0.025, five non-significant).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from Experiment 1 showing the relationship between confidence and accuracy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Rating-predicted accuracy ranged from 23% (certain error) up to 94% (certain correct), both significantly different from chance level (p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Rating-predicted accuracy ranged from 23% (certain error) up to 94% (certain correct), both significantly different from chance level (p<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from Experiment 1 showing the range of accuracy predicted by confidence ratings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "RTs for the initial choice, while monotonically related to accuracy, predicted accuracy variations only from about 60% to 90% correct.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, RTs for the initial choice (pooled across difficulty levels), while also monotonically related to accuracy (b = \u22120.03, t(27) = \u22129.41, p<0.001) predicted accuracy variations only from about 60% to 90% correct (Figure 2E), similar to previous results (Sanders et al., 2016; Urai et al., 2017).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a comparison of RT and confidence as predictors of accuracy, supported by statistical tests and shown in Figure 2E.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Human confidence ratings can lawfully account for certainty about errors (i.e., accuracy levels below 50%) when such certainty is enabled by the experimental protocol, due to post-decisional evidence accumulation.",
+    "claim_type": "EXPLICIT",
+    "source": "This shows that human confidence ratings can lawfully account for certainty about errors (i.e., accuracy levels below 50%) when such certainty is enabled by the experimental protocol, due to post-decisional evidence accumulation (see also Fleming et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the findings from Experiment 1, supported by citation to related work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Response caution increased after low-confidence decisions, in particular after 'perceived errors'.",
+    "claim_type": "EXPLICIT",
+    "source": "We hypothesized that response caution would increase after low-confidence decisions (in particular after 'perceived errors'), a change in speed-accuracy tradeoff mediated by an increase in decision bound. A bound increase will increase both RT and accuracy, a trend that was evident in the data (Figure 3A, left).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a hypothesis and supporting observation from Experiment 1 shown in Figure 3A.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "An aggregate measure of response caution (RT*accuracy) was predicted by the confidence rating from the previous decision (F(2,81) = 3.13, p=0.049).",
+    "claim_type": "EXPLICIT",
+    "source": "This aggregate measure of response caution was predicted by the confidence rating from the previous decision, F(2,81) = 3.13, p=0.049.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from Experiment 1 showing the effect of previous confidence on subsequent response caution.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Response caution increased after perceived errors compared to after both high confidence (z = 2.27, p=0.032) and low confidence (z = 2.05, p=0.041).",
+    "claim_type": "EXPLICIT",
+    "source": "Post-hoc contrasts showed increased caution after perceived errors compared to after both high confidence, z = 2.27, p=0.032, and low confidence, z = 2.05, p=0.041.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from Experiment 1 showing specific contrasts in response caution.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "There was no difference in caution following high and low confidence ratings (p=0.823).",
+    "claim_type": "EXPLICIT",
+    "source": "There was no difference in caution following high and low confidence ratings, p=0.823.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from Experiment 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The subsequent-trial separation of decision bounds scaled monotonically with the complement of decision confidence (i.e., uncertainty).",
+    "claim_type": "EXPLICIT",
+    "source": "As predicted, the subsequent-trial separation of decision bounds scaled monotonically with the complement of decision confidence (i.e., uncertainty; Figure 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a main finding from the DDM analysis of Experiment 1 shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Subsequent decision bound increased after low compared to high confidence decisions (M = 0.083, SD = 0.047, p=0.037).",
+    "claim_type": "EXPLICIT",
+    "source": "Subsequent decision bound increased after low compared to high confidence decisions (M = 0.083, SD = 0.047, p=0.037) and even further after participants perceived an error (M = 0.262, SD = 0.078, p<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the DDM analysis of Experiment 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Decision bound after perceived errors was larger compared to after low confidence decisions (p=0.021).",
+    "claim_type": "EXPLICIT",
+    "source": "Decision bound after perceived errors was also larger compared to after low confidence decisions (p=0.021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the DDM analysis of Experiment 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Decision confidence had no effect on subsequent drift rate in Experiment 1.",
+    "claim_type": "EXPLICIT",
+    "source": "Decision confidence had no effect on subsequent drift rate (Figure 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the DDM analysis of Experiment 1 shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The confidence rating-dependence of subsequent decision bound holds even for variations of confidence ratings within both correct and error trials.",
+    "claim_type": "EXPLICIT",
+    "source": "When estimating the effects of current confidence separately for current correct and error trials, we found that the confidence rating-dependence of subsequent decision bound holds even for variations of confidence ratings within both correct (Figure 4A) and error trials (Figure 4B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from additional analyses of Experiment 1 shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The effects of confidence ratings on subsequent decision bounds are unlikely to be caused by systematic manipulation of evidence strength (i.e., motion coherence) or evidence volatility.",
+    "claim_type": "EXPLICIT",
+    "source": "The effects of confidence ratings on subsequent decision bounds are unlikely to be caused by our systematic manipulation of evidence strength (i.e., motion coherence) or evidence volatility (Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by additional analyses showing no effect of coherence or volatility on subsequent bounds.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Confidence ratings were reliably affected by both evidence strength and evidence volatility.",
+    "claim_type": "EXPLICIT",
+    "source": "Confidence ratings were reliably affected by both evidence strength (as reported before; Figure 2C) and evidence volatility (data not shown, F(1, 26.7)=47.10, p<0.001, reflecting higher confidence with high evidence volatility).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from Experiment 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Evidence strength and volatility did not affect subsequent decision bound (both ps > 0.133).",
+    "claim_type": "EXPLICIT",
+    "source": "However, evidence strength and volatility, in turn, did not affect subsequent decision bound, both ps > 0.133.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from Experiment 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Slow ('scale-free') fluctuations were present in RT and confidence ratings.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, slow ('scale-free') fluctuations similar to those reported previously (Gilden, 2003; Palva et al., 2013) were present in the current RT and confidence rating (slopes of linear fits to log-log spectra of the corresponding time series were significant for both RTs, b = \u22120.42, t(23) = \u221211.21, p<0.001, and confidence, b = \u22120.60, t(23) = \u221213.15, p<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from analysis of temporal dynamics in Experiment 1, with citations to previous work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The confidence-dependent modulation of subsequent response caution was explained by a DDM in which decision bounds and drift rate could vary as a function of previous confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "The confidence-dependent change in subsequent response caution was explained by a DDM, in which decision bounds and drift rate could vary as a function of previous confidence (Figure 3A, green crosses; see Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a modeling result from Experiment 1 shown in Figure 3A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "In Experiment 2, both RTs and confidence judgments predicted choice accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Similar to Experiment 1, both RTs and confidence judgments predicted choice accuracy (see Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a behavioral finding from Experiment 2 shown in a supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The model-free measure of response caution (RT*accuracy) was modulated by confidence ratings on the previous trial in Experiment 2 (F(2,45) = 3.21, p=0.050).",
+    "claim_type": "EXPLICIT",
+    "source": "As in Experiment 1, our model-free measure of response caution (RT*accuracy) was modulated by confidence ratings on the previous trial, F(2,45) = 3.21, p=0.050 (perceived errors vs. high confidence: z = 2.53, p=0.011; no significant differences for other comparisons ps >0.178; Figure 5B; see Figure 5\u2014figure supplement 2A for the 'raw' effects of trialn and trialn+2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical result from Experiment 2 shown in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "In Experiment 3, RTs, accuracy and drift rate scaled monotonically with SNR.",
+    "claim_type": "EXPLICIT",
+    "source": "Similar to Experiment 1, RTs, accuracy and drift rate scaled monotonically with SNR, and both RTs and confidence judgments predicted choice accuracy (see Figure 5\u2014figure supplement 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a behavioral finding from Experiment 3 shown in a supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The model-free measure of response caution was affected by previous confidence ratings in Experiment 3 (F(2,66) = 14.43, p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Our model-free measure of response caution was again affected by previous confidence ratings, F(2,66) = 14.43, p<0.001 (perceived errors vs. high confidence: z = 4.61, p<0.001; perceived errors vs. low confidence: z = 4.69, p<0.001; high vs. low confidence: p=0.938; Figure 5B; see Figure 5\u2014figure supplement 2B for the 'raw' effects of trialn and trialn+2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical result from Experiment 3 shown in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "In both Experiments 2 and 3, subsequent decision bounds were modulated by decision confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "In both datasets, we again found that subsequent decision bounds were modulated by decision confidence (see Figure 5C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a main finding from the DDM analysis of Experiments 2 and 3 shown in Figure 5C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "When participants perceived to have committed an error, subsequent decision bounds were increased in Experiment 2 (M = 0.110, SD = 0.046, p=0.007) and Experiment 3 (M = 0.117, SD = 0.046, p=0.004).",
+    "claim_type": "EXPLICIT",
+    "source": "When participants perceived to have committed an error, subsequent decision bounds were increased (Exp2: M = 0.110, SD = 0.046; Exp3: M = 0.117, SD = 0.046) compared to having high confidence (Exp2: p=0.007; Exp3: p=0.004) or low confidence (Exp 2: M = 0.059, SD = 0.038, p=0.059; Exp 3: M = \u22120.046, SD = 0.027, p<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the DDM analysis of Experiments 2 and 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "In Experiment 3, subsequent decision bounds were lower following low confidence trials compared to high confidence (p=0.043).",
+    "claim_type": "EXPLICIT",
+    "source": "In Experiment 3, subsequent decision bounds were unexpectedly lower following low confidence trials compared to high confidence (p=0.043).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the DDM analysis of Experiment 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The effects of confidence ratings on subsequent decision bounds were present separately for confidence ratings on correct and error trials in Experiments 2 and 3.",
+    "claim_type": "EXPLICIT",
+    "source": "Again, the effects of confidence ratings on subsequent decision bounds were present separately for confidence ratings on correct (Figure 6A) and error trials (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from additional analyses of Experiments 2 and 3 shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Both Experiments 2 and 3 showed a small modulation of subsequent drift rate by decision confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "Both datasets also showed a small modulation of subsequent drift rate by decision confidence, an effect not present in Experiment 1, but consistent with recent studies of post error slowing (Purcell and Kiani, 2016): When participants had low confidence in their choice, mean drift rate on the subsequent trial was lower (Exp2: M = \u22120.216, SD = 0.121; Exp3: M = \u22120.149, SD = 0.085) relative to high confidence (Exp2: p=0.039; Exp3: p=0.039) and trials perceived as errors (Exp2: p=0.122; Exp3: p=0.034).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the DDM analysis of Experiments 2 and 3, with citation to related work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The error-related negativity (ERN) is a fronto-central signal peaking around the time of the response.",
+    "claim_type": "EXPLICIT",
+    "source": "Two components of the human EEG evoked potential are established neurophysiological markers of confidence and error processing: (i) the error-related negativitiy (ERN), a fronto-central signal peaking around the time of the response; and (ii) the Pe, a centro-parietal signal that follows the ERN in time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the ERN based on established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The Pe is a centro-parietal signal that follows the ERN in time.",
+    "claim_type": "EXPLICIT",
+    "source": "Two components of the human EEG evoked potential are established neurophysiological markers of confidence and error processing: (i) the error-related negativitiy (ERN), a fronto-central signal peaking around the time of the response; and (ii) the Pe, a centro-parietal signal that follows the ERN in time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the Pe based on established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The ERN originates from mid-frontal cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "The ERN originates from mid-frontal cortex (Dehaene et al., 1994; Van Veen and Carter, 2002) and has been implicated in error processing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the neural source of the ERN supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The Pe was initially linked to error perception and more recently to post-decisional evidence accumulation as well as fine-grained variations in decision confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "The Pe was initially linked to error perception (hence its name; Nieuwenhuis et al., 2001) and more recently to post-decisional evidence accumulation (Murphy et al., 2015) as well as fine-grained variations in decision confidence (Boldt and Yeung, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of previous findings about the Pe supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Both the Pe and the ERN were modulated by decision confidence in Experiment 2.",
+    "claim_type": "EXPLICIT",
+    "source": "Both the Pe and the ERN were modulated by decision confidence (Figure 7A), as already shown in the original report of these data (Boldt and Yeung, 2015).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a finding from the EEG analysis of Experiment 2 shown in Figure 7A, with citation to the original report.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "ERN amplitudes at electrode FCz were monotonically modulated by confidence (F(2,14) = 18.89, p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "ERN amplitudes at electrode FCz were monotonically modulated by confidence, F(2,14) = 18.89, p<0.001, and all conditions differed from each other, |ts| > 3.62 and ps <0.003.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the EEG analysis of Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Pe amplitude at electrode Pz was monotonically modulated by confidence (F(2,14) = 19.19, p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Likewise, Pe amplitude at electrode Pz was monotonically modulated by confidence, F(2,14) = 19.19, p<0.001, and all conditions differed from each other, |ts| > 2.19, ps <0.045.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the EEG analysis of Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The regression coefficient relating the Pe to subsequent decision bound was significantly different from zero (p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "The regression coefficient relating the Pe to subsequent decision bound was significantly different from zero (p<0.001) whereas the regression coefficient for the ERN was not (p=0.327).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the DDM analysis with EEG covariates in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The regression coefficient for the ERN predicting subsequent decision bound was not significantly different from zero (p=0.327).",
+    "claim_type": "EXPLICIT",
+    "source": "The regression coefficient relating the Pe to subsequent decision bound was significantly different from zero (p<0.001) whereas the regression coefficient for the ERN was not (p=0.327).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the DDM analysis with EEG covariates in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Regression coefficients of the Pe and the ERN for predicting subsequent decision bound were significantly different from each other (p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Regression coefficients of the Pe and the ERN were significantly different from each other (p<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the DDM analysis with EEG covariates in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "More positive Pe amplitudes predicted an increase of subsequent decision bound.",
+    "claim_type": "EXPLICIT",
+    "source": "The sign of the Pe regression coefficient was positive, indicating that more positive Pe amplitudes predicted an increase of subsequent decision bound.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the regression coefficient from the DDM analysis with EEG covariates in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The coefficient relating the Pe to subsequent drift rate differed from zero (p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Concerning the drift rate, the coefficient relating the Pe to subsequent drift rate differed from zero, p<0.001, whereas the ERN was unrelated to subsequent drift rate, p=0.340.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the DDM analysis with EEG covariates in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The ERN was unrelated to subsequent drift rate (p=0.340).",
+    "claim_type": "EXPLICIT",
+    "source": "Concerning the drift rate, the coefficient relating the Pe to subsequent drift rate differed from zero, p<0.001, whereas the ERN was unrelated to subsequent drift rate, p=0.340.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the DDM analysis with EEG covariates in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "More positive Pe amplitudes were related to smaller drift rates on the subsequent trial.",
+    "claim_type": "EXPLICIT",
+    "source": "The sign of the Pe regression coefficient was negative, indicating that more positive Pe amplitudes were related to smaller drift rates on the subsequent trial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the regression coefficient from the DDM analysis with EEG covariates in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Subsequent decision bounds increased monotonically (and approximately linearly) as a function of binned Pe amplitude quantile (Friedman \u03c72(4)=61.00, p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Subsequent decision bounds increased monotonically (and approximately linearly) as a function of binned Pe amplitude quantile, Friedman \u03c72(4)=61.00, p<0.001 (Figure 8B), with all adjacent bins differing significantly from each other, all ps < 0.010.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a statistical result from the binned Pe analysis in Experiment 2 shown in Figure 8B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Subsequent drift rates linearly decreased as a function of binned Pe amplitude quantile (Friedman \u03c72(4)=61.75, p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Likewise, subsequent drift rates linearly decreased as a function of binned Pe amplitude quantile, Friedman \u03c72(4)=61.75, p<0.001, and all adjacent bins were significantly different from each other, all ps < 0.055.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the binned Pe analysis in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "There was an approximately linear relationship between the amplitude of the error positivity (Pe) and subsequent decision bound separation as well as subsequent drift rate.",
+    "claim_type": "EXPLICIT",
+    "source": "In sum, there was an approximately linear relationship between the amplitude of the error positivity (Pe) and subsequent decision bound separation as well as subsequent drift rate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the findings from the binned Pe analysis in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The Pe qualifies as a neural marker of decision confidence predicting flexible, trial-to-trial adaptation of the decision bounds.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the Pe qualifies as a neural marker of decision confidence predicting flexible, trial-to-trial adaptation of the decision bounds.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the EEG findings in Experiment 2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The decision bound dynamically changes from trial to trial, dependent on the confidence about the previous decision.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we show that this decision bound, in fact, dynamically changes from trial to trial, dependent on the confidence about the previous decision: In three independent datasets the separation between decision bounds increased after participants sensed they had made an error.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main conclusion of the study supported by data from all three experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The increase in decision bound after perceived errors was observed independent of the objective accuracy of a trial.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, this was observed independent of the objective accuracy of a trial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key finding supported by analyses showing confidence effects within correct and error trials separately.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "A post-decisional brain signal, the Pe component, scaled with decision confidence and linearly predicted the decision bound on the subsequent trial.",
+    "claim_type": "EXPLICIT",
+    "source": "A post-decisional brain signal, the so-called Pe component, scaled with decision confidence and linearly predicted the decision bound on the subsequent trial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main finding from the EEG analysis in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "In the absence of external feedback about choice outcome, decision-makers use internal confidence signals to continuously update their decision policies.",
+    "claim_type": "EXPLICIT",
+    "source": "These findings indicate that, in the absence of external feedback about choice outcome, decision-makers use internal confidence signals to continuously update their decision policies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main conclusion of the study supported by all experimental findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Some behavioral variability is not actually noise, but rather due to dynamic variations in systematic decision biases due to choice history or arousal.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent evidence shows that some of this variability is not actually noise, but rather due to dynamic variations in systematic decision biases due to choice history (Urai et al., 2017) or arousal (de Gee et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of recent findings from other studies, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Across-trial variations in decision bound are governed by decision confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "The current work extends these insights by demonstrating that across-trial variations in decision bound are governed by decision confidence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main contribution of the current study.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Observers rely on an internal estimate of accuracy to generate a speed-accuracy tradeoff policy for the subsequent trial when they do not receive direct feedback about their accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "A key factor of the current work was that observers did not receive direct feedback about their accuracy. Consequently, observers rely on an internal estimate of accuracy to generate a speed-accuracy tradeoff policy for the subsequent trial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the experimental design and findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The hierarchical Bayesian approach allows participants with unequal trial numbers across conditions to contribute to the analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "One obvious advantage of this approach is that participants with unequal trial numbers across conditions can contribute to the analysis, whereas in traditional approaches their data would be lost.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of a methodological advantage of the hierarchical DDM approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Trial-to-trial variations in decision confidence likely result from several factors including low internal evidence quality or insufficient evidence accumulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Trial-to-trial variations in decision confidence likely result from several factors. For example, confidence might be low because of low internal evidence quality (i.e., low drift rate) or because insufficient evidence has been accumulated before committing to a choice (i.e., low decision bound).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical discussion of factors contributing to confidence variations.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Changes-of-mind about the perceived correct response have been explained by allowing post-decisional accumulation of evidence.",
+    "claim_type": "EXPLICIT",
+    "source": "Within the framework of sequential sampling models of decision-making, changes-of-mind about the perceived correct response have been explained by allowing post-decisional accumulation of evidence, coming from a sensory buffer (Resulaj et al., 2009) or from additional sensory input (Fleming et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of previous theoretical work supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Post-decisional evidence accumulation can naturally account for dissociations between confidence ratings and choice accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Such post-decisional evidence accumulation can naturally account for dissociations between confidence ratings and choice accuracy (Moran et al., 2015; Navajas et al., 2016; Pleskac and Busemeyer, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical statement supported by citations to previous work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "In Experiment 1, post-decisional sensory stimuli did not have a larger impact on confidence than a post-decisional delay with just a blank screen.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, in our Experiment 1, we found that post-decisional sensory stimuli did not have a larger impact on confidence than a post-decisional delay with just a blank screen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from Experiment 1 comparing the two post-decisional conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The fact that the post-decisional blank and the post-decisional evidence conditions showed indistinguishable confidence judgments indicates that post-decisional evidence was accumulated from a buffer, whereas extra sensory information was not used for the confidence judgment.",
+    "claim_type": "EXPLICIT",
+    "source": "The fact that the post-decisional blank and the post-decisional evidence conditions showed indistinguishable confidence judgments, indicates that post-decisional evidence was accumulated from a buffer, whereas extra sensory information was not used for the confidence judgment, different from Fleming et al. (2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the findings from Experiment 1, with comparison to previous work.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The error positivity (Pe) tracks post-decisional evidence accumulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous work has indicated that the error positivity (Pe) tracks post-decisional evidence accumulation (Murphy et al., 2015) and reflects variations in decision confidence (Boldt and Yeung, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of previous findings supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The Pe predicted increases in subsequent decision bound.",
+    "claim_type": "EXPLICIT",
+    "source": "We here demonstrated that the Pe predicted increases in subsequent decision bound.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main finding from the EEG analysis in Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The relation between Pe and subsequent decision bound was specific for the Pe, and not evident for the ERN.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, this relation was specific for the Pe, and not evident for another signal reflecting confidence and error processing, the ERN.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a finding from the EEG analysis in Experiment 2 showing specificity of the Pe effect.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Frontal theta oscillations have been proposed to drive the ERN.",
+    "claim_type": "EXPLICIT",
+    "source": "Other work has linked frontal theta oscillations, which have been proposed to drive the ERN (Cavanagh and Frank, 2014; Yeung et al., 2007); but see Cohen and Donner, 2013), to slowed reaction times following an error (Cavanagh et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of previous findings with citations, including a note of disagreement.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "In addition to affecting subsequent decision bounds, internal confidence (in particular: error) signals might also affect subsequent attentional focus on subsequent trials.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, in addition to affecting subsequent decision bounds, internal confidence (in particular: error) signals might also affect subsequent attentional focus on subsequent trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative interpretation of the drift rate findings.",
+    "evidence_type": [
+      "DATA",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Human observers slow down following incorrect choices, a phenomenon referred to as post-error slowing.",
+    "claim_type": "EXPLICIT",
+    "source": "Human observers slow down following incorrect choices, a phenomenon referred to as post-error slowing (Rabbitt, 1966).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-established phenomenon in the literature, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Post-error slowing has been interpreted as a strategic increase in decision bound in order to avoid future errors.",
+    "claim_type": "EXPLICIT",
+    "source": "Post-error slowing has been interpreted as a strategic increase in decision bound in order to avoid future errors (Dutilh et al., 2012a; Goldfarb et al., 2012; Holroyd et al., 2005) or an involuntary decrease in attentional focus (e.g., reduced drift rate) following an unexpected event (Notebaert et al., 2009; Purcell and Kiani, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of different theoretical interpretations of post-error slowing, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Similar adjustments to post-error slowing can be observed based on internally computed and graded confidence signals.",
+    "claim_type": "EXPLICIT",
+    "source": "A key observation of the current work is that similar adjustments can also be observed based on internally computed and graded confidence signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main contribution of the current study extending previous work on post-error slowing.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Internal, graded confidence signals enable the adjustment of decision parameters also in the absence of external feedback, and even after decisions that happened to be correct but were made with low confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "This aspect sets our work apart from previous model-based investigations of post-error slowing (e.g., Dutilh et al., 2012a; Goldfarb et al., 2012; Purcell and Kiani, 2016) and is important from an ecological perspective: internal, graded confidence signals enable the adjustment of decision parameters also in the absence of external feedback, and even after decisions that happened to be correct but were made with low confidence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a discussion of the ecological significance of the findings, with citations to previous work.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The current work uncovered a putative neural source of adaptive adjustments of decision-making overlying parietal cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, the current work uncovered a putative neural source of adaptive adjustments of decision-making overlying parietal cortex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the Pe findings in relation to previous work.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Modulating the speed-accuracy tradeoff by decision confidence can be thought of as an adaptive way to achieve a certain level of accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Modulating the speed-accuracy tradeoff by decision confidence can be thought of as an adaptive way to achieve a certain level of accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical interpretation of the findings.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Normative models prescribe that uncertainty (i.e., the inverse of confidence) should determine how much information needs to be sampled.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, normative models prescribe that uncertainty (i.e., the inverse of confidence) should determine how much information needs to be sampled (Bach and Dolan, 2012; Meyniel et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about normative models supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Decision confidence has been shown to guide study choices.",
+    "claim_type": "EXPLICIT",
+    "source": "Decision confidence has been shown to guide study choices (Metcalfe and Finn, 2008) and act as an internal teaching signal that supports learning (Guggenmos et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of previous findings supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Participants request more information when having low confidence in an impending choice.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the current findings bear close resemblance to previous work showing that participants request more information when having low confidence in an impending choice (Desender et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison to previous work by the authors, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The same post-decisional neural signature of confidence, the Pe, predicts increases in decision bound and information-seeking.",
+    "claim_type": "EXPLICIT",
+    "source": "Further evidence linking both lines of work comes from the observation that the same post-decisional neural signature of confidence, the Pe, predicts increases in decision bound (current work) and information-seeking (Desender et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison between the current findings and related work, supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Decision confidence seems to have no direct influence on top-down controlled processes such as response inhibition or working memory.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, decision confidence seems to have no direct influence on top-down controlled processes such as response inhibition (Koizumi et al., 2015) or working memory (Samaha et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of previous findings supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Confidence acts as a bridge in multi-step decision-making.",
+    "claim_type": "EXPLICIT",
+    "source": "Of direct relevance for the current work is a recent study by van den Berg et al. (2016) who showed that confidence acts as a bridge in multi-step decision-making.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of a previous study supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "In the van den Berg et al. (2016) study, there was a linear increase in decision bound with increasing confidence in the first decision of a sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "The results showed a linear increase in decision bound with increasing confidence in the first decision of a sequence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of findings from a previous study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The sign of the relation between confidence and decision bound in van den Berg et al. (2016) was opposite to what was observed in the current work.",
+    "claim_type": "EXPLICIT",
+    "source": "The sign of this relation was opposite to what we observed in the current work.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison between the current findings and previous work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "In the van den Berg et al. (2016) task, observers likely sacrificed performance on the second choice by decreasing the decision bound when having low confidence in the first choice.",
+    "claim_type": "EXPLICIT",
+    "source": "Given the multi-step nature of the task, observers likely sacrificed performance on the second choice (by decreasing the decision bound) when having low confidence in the first choice, given that both choices needed to be correct in order to obtain a reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the findings from van den Berg et al. (2016).",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "In the current work, observers were motivated to perform well on each trial, and thus adaptively varied the height of the decision bound in order to achieve optimal performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Contrary to this, in our current work observers were motivated to perform well on each trial, and thus adaptively varied the height of the decision bound in order to achieve optimal performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the task motivation in the current study, contrasted with van den Berg et al. (2016).",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Decision confidence affects subsequent decision bounds on a trial-by-trial level.",
+    "claim_type": "EXPLICIT",
+    "source": "In sum, we have shown that decision confidence affects subsequent decision bounds on a trial-by-trial level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the main finding of the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "A post-decisional brain signal sensitive to decision confidence predicted the adaptive modulation of the decision bound at a single-trial level.",
+    "claim_type": "EXPLICIT",
+    "source": "A post-decisional brain signal sensitive to decision confidence predicted this adaptive modulation of the decision bound at a single-trial level.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the EEG findings from Experiment 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

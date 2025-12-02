@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C36",
+      "C37",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "SARS-CoV-2 positivity rates among healthcare workers declined significantly from April to May 2020. In symptomatic HCWs and household contacts, positivity decreased from 13% (30/221) in the initial period to 1.7% (13/771) in the follow-up period (p<0.0001). In asymptomatic HCWs, positivity decreased from 3% (31/1032) to 0.8% (21/2611) (p<0.0001). During the final two weeks (11-24 May), only 4 positive tests were identified from 2016 tests performed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide comprehensive numerical data with appropriate statistical testing (Fisher's exact test) showing significant declines in both symptomatic and asymptomatic screening arms. The temporal trend data (C85-C92) and aggregate data (C3, C22-C26, C36-C37) are internally consistent and supported by Figure 1A and Table 2. The statistical significance is properly documented with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C4",
+      "C47",
+      "C7"
+    ],
+    "result": "The decline in HCW positive tests temporally correlated with declining patient positivity at the hospital and throughout the wider East of England region during the UK lockdown period. This occurred concurrently with a general decline in community transmission rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C4 are supported by visual evidence in Figure 1B-D showing parallel declining trends. Claims C7 and C47 provide contextual support from Public Health England data. However, the correlation is temporal rather than causal, which the authors appropriately acknowledge in C48. The parallel trends across HCWs, hospital patients, and regional cases provide strong observational support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Among 21 HCWs testing positive in the asymptomatic screening arm during the follow-up period, three distinct subgroups were identified: 38% (8/21) were truly asymptomatic at testing (63% remained asymptomatic 5-7 weeks later), 29% (6/21) had retrospective symptoms prior to screening, and 33% (7/21) were repeat positive tests from previously infected individuals with a median interval of 16.5 days between positive tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide detailed characterization of positive cases with specific numerical breakdowns that sum correctly (8+6+7=21). The follow-up data on symptom development (C28-C29) and the temporal data on repeat testing (C34) add rigor. The interpretation that repeat positives represent prolonged RNA detection rather than reinfection (C35) is reasonable given the short time intervals and is supported by external literature cited elsewhere in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C49"
+    ],
+    "result": "One cluster of HCW infections was detected on a general medical ward in late April/early May 2020. Triggered by four symptomatic staff testing positive (27-30 April), targeted screening of 40 staff identified three additional asymptomatic positive HCWs, and screening of 30 staff in a related area identified two more positive HCWs. The authors conclude that timely identification terminated transmission chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the cluster detection and response are well-documented (C40-C44), the causal claim that intervention \"proved effective in terminating chains of hospital transmission\" (C49) is not rigorously supported. No control group exists, transmission could have naturally declined, and the temporal correlation with broader community decline (C47) confounds interpretation. The conclusion requires stronger epidemiological evidence such as genomic sequencing or contact tracing data to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C55",
+      "C56",
+      "C83"
+    ],
+    "result": "The authors conclude that the hospital was not acting as an independent transmission hub, with the reproduction number R among HCWs being <1, likely due to combined efficacy of testing, infection control measures, and social distancing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The inference that R<1 (C45) follows logically from declining case numbers, but the attribution to specific interventions (C56, C83) versus community decline (C47) cannot be disentangled from the observational data. Claim C48 appropriately acknowledges this limitation, noting data are \"consistent with\" multiple explanations. The conclusion overstates certainty given the lack of controlled comparison and the confounding effect of simultaneous community transmission decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Baseline and aggregate testing data from the entire study period (6 April - 24 May 2020) showed 1.4% (52/3644) positivity in asymptomatic HCWs, 5.2% (38/725) in symptomatic HCWs, 1.8% (5/267) in symptomatic household contacts, and 2% (95/4657) overall positivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The aggregate data (C70-C73) are internally consistent with the baseline data from the previous study (C1, C2, C9) and the new study period data. The numbers are mathematically consistent across claims and properly reference both the prior publication and current data collection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21"
+    ],
+    "result": "During the follow-up period (25 April - 24 May 2020), 2611 asymptomatic, 555 symptomatic, and 216 household contact tests were performed. Study population demographics showed median ages of 36.5 years (HCWs) and 35.5 years (household contacts), with 68.4% female participants. Among positive cases, median ages were 32 years (HCWs) and 47 years (household contacts), with 77.9% female. The median laboratory turnaround time was 18 hr 45 min, and 360 individuals underwent repeat testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These descriptive statistics are clearly stated with specific numerical values. The demographic data are plausible for a healthcare workforce. The higher proportion of females among positive cases (77.9%) compared to the overall population (68.4%) is notable but not analyzed statistically. All claims are straightforward data reporting without complex inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Positive tests were distributed across job roles including nurses (25 asymptomatic, 19 symptomatic), healthcare assistants (14 asymptomatic, 8 symptomatic), doctors (8 asymptomatic, 6 symptomatic), and cleaners (2 asymptomatic, 3 symptomatic). No statistically significant difference was found in proportions testing positive across job roles in the symptomatic screening arm (p=0.419).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The numerical data from Table 1 are clearly presented (C74-C95). The statistical test (Pearson's chi-square, p=0.419) appropriately addresses the question of differential risk by job role in the symptomatic arm. The authors appropriately note that comparison for the asymptomatic arm was not valid due to non-random sampling by clinical area.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors cite modeling studies suggesting weekly testing prevents 16-33% of onward transmission and daily screening prevents 65% of HCW-to-HCW transmission, while reporting their own screening frequency of every 2-4 weeks with prioritization by COVID-19 exposure achieved \"good results.\"",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 appropriately cite external modeling studies. However, C52's assertion of \"good results\" with 2-4 week screening is subjective and not rigorously defined or compared against the cited models. The discrepancy between the cited recommendations (weekly to daily) and actual practice (2-4 weeks) is not adequately addressed. The claim lacks quantitative metrics to support \"good results.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Uptake of the symptomatic household contact screening arm was notably lower than the symptomatic HCW arm despite regular communications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by the numerical data showing 267 total household contact tests versus 725 symptomatic HCW tests over the entire study period (C71, C72). The observation is descriptive and appropriately qualified as \"notable\" rather than statistically tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C84",
+      "C57"
+    ],
+    "result": "The authors predict that comparable organizations in other sectors may be able to resume on-site work safely with similar precautions, noting the hospital employs approximately 11,000 staff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "This extrapolation (C58, C84) extends well beyond the data. The hospital setting has unique characteristics (healthcare training, infection control infrastructure, PPE availability, patient screening) that differ fundamentally from other sectors. No data from non-healthcare settings are presented. The prediction is speculative and not supported by evidence from the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Methodological details include self-swabbing of throat and nasal cavity followed by RT-PCR testing, cluster investigation triggered by \u22653 positive HCWs in one week in the same area, and management protocols for repeat positive tests based on UK/NICE guidance requiring negative tests before returning to work with immunocompromised patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are clearly stated and appropriately reference established protocols and national guidance (C61, C62). The operational definitions (C60) and testing procedures (C59, C69) are standard and well-described. Result reporting timelines (C67, C68) are specific and reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors cite external evidence supporting their approach to repeat positive tests, including Korean CDC data showing no transmission from 285 repeat-positive individuals (with 108 unsuccessful viral culture attempts) and studies showing inability to culture virus >8 days post-symptom onset, suggesting prolonged RNA detection does not indicate ongoing transmission risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite external literature to support the clinical management approach for repeat positive tests. The Korean CDC data (C63, C64) and viral culture studies (C65) provide reasonable scientific basis for the inference that prolonged RNA detection is not infectious (C66). The claims are properly attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C8",
+      "C39"
+    ],
+    "result": "The authors cite literature suggesting 20% of patient infections and up to 89% of HCW infections in UK hospitals may be nosocomial, raising concerns about hospitals becoming transmission hubs. Similar declining trends were observed in a London HCW cohort study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite external literature (C5, C6, C8, C39) to provide context for the study. The citations establish the importance of nosocomial transmission and provide comparative data. The claims are properly attributed and serve to frame the research question rather than present original findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C48"
+    ],
+    "result": "The authors acknowledge that HCW infections may be acquired from other HCWs, patients, or community sources, and that their data are consistent with reduced hospital transmission, reduced community acquisition, or a combination of both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately acknowledge the limitations of the observational study design and the inability to definitively attribute causation. This represents appropriate scientific caution and recognition of confounding factors. The acknowledgment strengthens rather than weakens the overall interpretation.",
+    "result_type": "MINOR"
+  }
+]

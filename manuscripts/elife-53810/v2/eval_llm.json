@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C32"
+    ],
+    "result": "The authors engineered a comprehensive library of 44,604 single codon changes encoding 14,160 amino acid variants in Hsp90 and quantified 98% of possible amino acid changes under standard and five stress conditions, representing the largest comprehensive fitness map of point mutants to date.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C3, and C32 collectively describe the scope and scale of the deep mutational scanning experiment. The experimental design is well-documented with appropriate methodology (barcoding strategy, bulk competitions, deep sequencing), and the coverage metrics (98% of amino acid changes, 44,604 codon changes) are clearly stated and supported by the described methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The experimental approach demonstrated high reproducibility with technical replicates showing strong correlation (R\u00b2 = 0.90) and biological replicates correlating strongly (R\u00b2 = 0.87) with a previous study of the Hsp90 N-domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 provide quantitative evidence of reproducibility through correlation analyses shown in Figures 1B and 1\u2014figure supplement 2. The high R\u00b2 values and consistency between technical and biological replicates support the reliability of the measurements, though some noise is noted for strongly deleterious variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41"
+    ],
+    "result": "Under standard conditions, most Hsp90 variants exhibited wild-type-like fitness, with only 17 positions showing low mutational tolerance. These critical positions cluster around the ATP-binding site, and the average selection coefficient correlates with distance from ATP (R\u00b2 = 0.49), indicating that ATP binding and hydrolysis impose dominant physical constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C40-C41 describe the fitness landscape under standard conditions with specific quantitative results (425 tolerant positions, 17 critical positions, R\u00b2 = 0.49 correlation with ATP distance). The structural analysis linking critical positions to ATP binding is supported by Figure 1C and established knowledge of Hsp90 function. The interpretation that ATP binding/hydrolysis imposes dominant constraints is a reasonable inference from the correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "All tested stress conditions reduced growth rate of the parental strain within a two-fold range, with nitrogen depletion causing the smallest and diamide the greatest reduction. While Hsp90 levels can be dramatically reduced under standard conditions without major growth impacts, reduced Hsp90 levels cause marked growth defects at 37\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 describe the characterization of stress conditions and Hsp90 dependence, supported by growth rate measurements in Figure 2A. The quantitative comparisons between conditions and the differential requirement for Hsp90 at elevated temperature are clearly documented and consistent with cited prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Environmental conditions have profound effects on Hsp90 mutational fitness: 37\u00b0C and diamide exaggerate growth defects while salt and ethanol rescue them. The average selection coefficients are more deleterious in diamide and temperature stress but less deleterious in ethanol and salt stress compared to standard conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C47-C50 describe environment-dependent fitness effects supported by comparative data in Figure 2B-C. The directional effects (exacerbation vs. rescue) are clearly demonstrated, and the interpretation that environment impacts Hsp90 evolution is well-supported by the data showing many variants with condition-dependent fitness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Environmentally responsive positions are distributed throughout all Hsp90 domains (unlike critical positions that cluster near ATP), are more conserved in nature, and are enriched at binding sites for clients and co-chaperones (65% vs. 15% for non-responsive positions), indicating that client and co-chaperone interactions have larger impacts on fitness under stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 describe the structural and functional properties of environmentally responsive positions, supported by analyses in Figure 3. The enrichment at binding sites (65% vs. 15%) is quantified with multiple citations, and the conservation analysis (Figure 3C) supports the inference that experimental conditions captured aspects of natural selection. The conclusion about client/co-chaperone interactions is a reasonable interpretation of the binding site enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Approximately 35% (884/2504) of deleterious variants at 37\u00b0C are temperature-specific, with 663 temperature-sensitive mutations identified (~5% of possible changes). These mutations cluster significantly at specific positions, are enriched in buried residues, and have negative Blosum scores. Individual testing revealed two mechanistic classes: destabilizing mutations (e.g., I66E, G170D, L499R) that are non-functional regardless of expression, and reduced-function mutations (e.g., L50D, K102A, D180L, K398L, K594I) that can be rescued by increased expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 describe temperature-sensitive mutations with specific quantitative results and mechanistic insights. The clustering analysis (Figure 4B) with statistical validation, structural properties (SASA, Blosum scores in Figures 4D-E), and individual variant testing (Figure 4F) provide converging evidence. The distinction between destabilizing and reduced-function mutations based on expression-dependence is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The largest number of beneficial variants occurred in high temperature and diamide conditions, clustering at specific positions in the ATP-binding and middle domains. These beneficial mutations are preferentially located on the protein surface at known interfaces with co-chaperones and clients, but tend to exhibit deleterious effects under standard conditions, consistent with a cost of adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 describe beneficial mutations with multiple lines of evidence: quantification (Figure 5A), significant clustering (Figure 5B), structural localization (Figures 5C-E), and fitness trade-offs (Figure 5F). The clustering analysis includes statistical validation against random simulations, and individual variants were confirmed. The interpretation of adaptation costs is supported by the negative correlation between beneficial effects in stress and fitness in standard conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "A synonymous mutation at the beginning of Hsp90 that was beneficial at high temperature was expressed at higher levels in the plasmid system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 describes a specific finding about synonymous mutations affecting expression, supported by individual clone analysis in Figure 5\u2014figure supplement 4C-D. This result is consistent with known effects of mRNA structure on translation efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of 1,750 amino acid differences at 499 positions across 267 eukaryotic sequences revealed that naturally occurring amino acids in Hsp90 had wild-type-like fitness in all conditions, were rarely deleterious, but were similarly likely to be beneficial as all possible amino acids (5%). This indicates that condition-dependent fitness benefits are not a major determinant of natural variation, and instead natural selection has favored substitutions that are robust to multiple stressful conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 describe the comparison between natural variants and experimental fitness data, supported by analyses in Figure 6. The finding that natural variants are enriched for robustness rather than condition-specific benefits is well-supported by the data showing wild-type-like fitness across conditions and lack of enrichment for beneficial effects. The interpretation about selection for robustness is a reasonable inference from the observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Multiple Hsp90 variants provided growth advantages under individual conditions but tended to exhibit growth defects in other environments. Natural Hsp90 sequences preferentially contain variants supporting robust growth under all tested conditions, suggesting long-term selective pressure from fluctuating environments rather than individual conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 summarize key findings about adaptive trade-offs and evolutionary implications. The trade-off pattern is supported by data in Figures 5F and 6, and the enrichment of natural variants for robustness is demonstrated in Figure 6B-D. However, C9 is explicitly labeled as a hypothesis/speculation by the authors, making it an interpretation rather than a directly demonstrated result. The supporting evidence is strong but the causal claim about fluctuating environments in natural history is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The clustering of beneficial mutations at known binding interfaces suggests that optimal binding affinity for partner proteins may depend on growth conditions, and the authors propose that natural Hsp90 variants have been selected for binding properties that are robust to different stresses rather than specific to individual conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 are explicitly speculative interpretations (labeled as \"suggests\" and \"propose\") about the mechanistic basis for beneficial mutations and evolutionary selection. While the clustering at binding interfaces is well-documented (C68), the inference about optimal binding affinities and the proposal about selection for robust binding properties are hypotheses that would require direct measurement of binding affinities and functional assays to validate.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors implement LTP-IE in a leaky integrate-and-fire (LIF) neuron model where neurons receive sensorimotor (S), recurrent (R), and gating (G) inputs. LTP-IE is applied when neurons fire at 10-20 Hz for 1 second, scaling G inputs by a factor \u03c3(r). This increases membrane voltage, variability, and spiking probability in response to inputs, with moderate synaptic weights (wPC,G) enabling spike probability increases from near zero to ~0.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C50 collectively describe the LIF model implementation and demonstrate LTP-IE effects on membrane voltage and spiking probability through simulation data shown in Figure 1. The sigmoid activation function choice is justified by experimental data (C45), and the physiological firing rate range (10-20 Hz) matches place cell activity (C50). The model behavior is well-characterized across parameter ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C51"
+    ],
+    "result": "The model network consists of 3000 pyramidal cells (PCs) with place-field tuning and 300 inhibitory neurons. PCs have recurrent excitatory connections with strength proportional to place field similarity. LTP-IE tags cells along a trajectory but does not store order or timing information. Inhibition limits active PC numbers and prevents bidirectional propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C51 describe the network architecture, which is clearly specified in the methods and demonstrated in Figure 2. The spatial organization, connectivity rules, and inhibitory architecture are well-defined. The claim that order/timing are not stored by LTP-IE (C37) is a key design feature that is subsequently validated by the model's ability to reconstruct sequences from connectivity alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Spontaneous replay events lasting 100-200 ms arise in the network with random gating inputs. Replay propagates in both forward and reverse directions, matching experimental observations. The 8 ms refractory period ensures unidirectional propagation. Replay can handle nonlinear trajectories and is trajectory-specific, not determined by connectivity alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 describe the main replay results demonstrated in Figure 2F-I and Figure 2\u2014figure supplement 1. The bidirectional replay (C53) matches cited experimental data. The trajectory-specificity (C56) is demonstrated by showing different trajectories produce different replay patterns. Population firing rates suggest connection to sharp-wave ripples (C58), though this is presented as a potential connection rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Replay events occur robustly across a wide range of network parameters including excitatory/inhibitory feedback strengths, connectivity length scales, LTP-IE levels, and gating input rates. Replay speed depends on connectivity parameters. Without sufficient inhibition, the network enters a 'blowup' regime or exhibits bidirectional events. Power spectral analysis shows oscillatory activity at tens of Hz, with frequency depending on inhibition strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 describe parameter sweep results shown in Figure 3A-H. The robustness across parameter ranges is well-demonstrated through systematic variation. The 'blowup' regime (C61) is clearly identified. The SWR-like oscillations (C65) occur at lower frequencies than biological SWRs (C66), but the model suggests this may be tunable through excitatory-inhibitory balance (C68), which is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In branched trajectory simulations, replay events can navigate through intersections, selecting a single path to continue. Without inhibition, sequences propagate along all branches, suggesting inhibition implements winner-take-all dynamics among competing sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 describe results from branched trajectory simulations shown in Figure 3I-J. The comparison between networks with and without inhibition (C70) provides clear evidence for the winner-take-all interpretation (C71). This is a logical inference well-supported by the contrasting behaviors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Experience-dependent LTP-IE at biological levels can rapidly and selectively modulate sequence propagation through realistic spiking neural networks across a range of parameter regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is a summary conclusion supported by the collective evidence from parameter sweeps (C59-C68) and the demonstration of sequence propagation (C52-C58). The biological plausibility is established through the use of experimentally-measured LTP-IE parameters and physiological firing rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "LTP-IE can induce multiple stimulus-response mappings in the network, with the same mapping implementable through different LTP-IE paths reflected in different response delays. This contrasts with other models that assume unique mapping representations and suggests LTP-IE provides a flexible substrate for temporary mappings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 describe stimulus-response mapping results shown in Figure 4. The demonstration of multiple implementations of the same mapping (C75-C76) is clearly shown. The comparison to other models (C77) is appropriately cited. The conclusion about flexibility (C78) is a reasonable inference from the demonstrated multiplicity of implementations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "A reduced network model operating in discrete time was developed where LTP-IE-tagged neurons receive twice the background gating input, and inhibition is implemented by limiting maximum simultaneously active neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 describe the reduced model architecture detailed in the Methods section. This is a straightforward description of the simplified model used for proof-of-concept demonstrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Using the reduced model with multi-dimensional (position and head-direction) tuning, LTP-IE can support replay of self-intersecting trajectories in the correct order without random branching. Random branching probability would increase for less orthogonal intersections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe results from the reduced model shown in Figure 5A-C. The successful replay through intersections is demonstrated. The inference about less orthogonal intersections (C84) is reasonable based on the connectivity structure, though not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In a randomly connected network without spatial structure, LTP-IE can encode stimulus-response mappings through selective tagging of 'switchboard' neurons that connect stimulus and motor ensembles. This demonstrates excitability-based computation in non-spatial networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe non-spatial mapping results shown in Figure 5D-E. The demonstration is clear and the comparison to the binding pool model (C87) is appropriately cited. The conclusion about general excitability-based computation (C88) is supported by this proof-of-concept demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C89",
+      "C90"
+    ],
+    "result": "Hippocampal and cortical replay of spike sequences occurs during rest following exploration, at compressed timescales and often in reverse order. Replay has been implicated in memory consolidation and planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C19, C89-C90 describe established experimental observations about neural replay, all supported by multiple citations to experimental literature. These provide the empirical motivation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "LTP-IE in CA3 pyramidal cells causes EPSPs from medial entorhinal cortex to more than double within 8 seconds following 1-2 seconds of 10-20 Hz spiking. This heterosynaptic mechanism persists for minutes and occurs at physiologically relevant firing rates, suggesting it may occur naturally. LTP-IE has only been observed in hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 describe the experimental LTP-IE phenomenon from cited studies (Hyun et al. 2013, 2015). The characterization is accurate to the cited work. The inference that it may occur naturally (C25) is reasonable given the firing rate match (C24). The statement about hippocampus-only observation (C28) is a factual statement about current experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Cognitive flexibility likely depends on modulating network dynamics. Existing mechanisms for inducing stimulus-response mappings require slow modifications through synaptic plasticity. STDP produces small changes and may occur rarely given low cortical firing rates and timing requirements, leading computational models to require many trials over extended periods. Modifying connections risks catastrophic forgetting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14 establish the scientific context and motivation. The characterization of STDP limitations (C8-C10) is supported by cited experimental work. The inference about STDP rarity (C10) is reasonable given the cited firing rates and timing requirements. The computational model limitations (C11) and catastrophic forgetting concern (C12) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The model mechanism involves LTP-IE biasing recently active cells toward recruitment during replay, with ordering determined by fixed recurrent connectivity. The network supports stable, self-sustaining sequences that propagate unidirectionally due to refractoriness. Replay occurs at network-determined timescales in both directions. Inhibition promotes unidirectional replay and competition among sequences. The model's SWR-like events are consistent with CA3 origin of hippocampal SWRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 summarize key model features and their relationship to experimental observations. These are well-supported by the simulation results presented in Figures 2-3. The comparison to synfire chains (C92) and experimental SWR properties (C99) are appropriately contextualized with citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The LTP-IE model is compared to oscillation-based and STDP-based replay models. Oscillation models have unclear input transformation mechanisms and limited multi-sequence capacity. STDP-based models may not account for single-trial replay given weak STDP magnitude. The LTP-IE model uses strong, fast heterosynaptic plasticity to tag cells, with ordering from fixed connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 provide critical comparison to alternative models, appropriately cited. The critiques of oscillation-based (C108) and STDP-based (C111) models are reasonable given the cited limitations. The characterization of the LTP-IE model's advantages (C109, C112) is supported by the demonstrated results. The mention of short-term plasticity (C113) appropriately acknowledges alternative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Excitability changes may interact with synaptic plasticity mechanisms like STDP/LTP. Replayed sequences compressed in time may trigger STDP, potentially transferring LTP-IE-based temporary memories to long-term synaptic changes. The model's robustness across parameters suggests potential interaction with heterogeneous connectivity. Multiple mechanisms likely contribute to memory and flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 discuss interactions between LTP-IE and synaptic plasticity. The co-occurrence of excitability and synaptic changes (C114) is supported by citations. The speculation about LTP-IE as a temporary buffer (C116) is reasonable given the time compression of replay and STDP timing requirements. The acknowledgment of multiple mechanisms (C119) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Selectively biasing cell recruitment generalizes beyond LTP-IE to include differential baseline inputs that can act as context signals controlling gain. Entorhinal neurons show history-dependent persistent activity that could provide differential inputs to CA3, potentially acting in concert with LTP-IE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 discuss alternative mechanisms for selective recruitment. The gain modulation mechanism (C121) is appropriately cited. The observation about entorhinal persistent activity (C122) is supported by citation. The speculation about combined mechanisms (C123) is reasonable but clearly presented as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Without forgetting or selective activation, all neurons would eventually undergo LTP-IE, preventing specific trajectory replay. Acetylcholine interacts with Kv1.2 channels hypothesized to underlie LTP-IE, and hippocampus receives state-dependent cholinergic input. Excitability changes in dentate gyrus decay after two hours. Regulation of excitability changes would be important for preventing pathological dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 discuss model limitations and potential regulatory mechanisms. The logical inference about saturation (C124) is valid. The cited mechanisms for regulation (C125-C126) are appropriate. The speculation about clinical implications (C128) is reasonable and appropriately cautious, referencing the 'blowup' regime observed in simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "While the model assumes homogeneous stochastic gating inputs, real cortical activity contains higher-order structure like grid representations. The model demonstrates replay can occur without additional mnemonic information, but such information would likely increase capacity and robustness. Entorhinal neurons may support persistent activity on LTP-IE timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 acknowledge model simplifications regarding gating inputs. The observation about grid cells (C129) is appropriately cited. The conclusion about model sufficiency (C130) is supported by the results. The speculation about persistent activity (C131) is appropriately cited and presented as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Empirical replay typically lasts ~100 ms but can last hundreds of milliseconds in larger environments. Replay may be gated by theta oscillations constraining events to 100-200 ms windows. Power-law activity distributions suggest scale-invariance and criticality. The model would not exhibit scale-free patterns due to inhibition, refractoriness, and finite environment size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 discuss replay duration and scale-free dynamics. The experimental observations (C132-C133) are appropriately cited. The discussion of power-law distributions (C134-C135) is supported by citations. The inference about model limitations (C136) is logical given the design constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The model makes testable predictions: (1) pharmacological blocking of LTP-IE during exploration should prevent replay; (2) inactivating MEC II should inhibit CA3 replay; (3) neurons need not be activated in sequential order during encoding, as ordering is reconstructed from connectivity; (4) replay should follow spatial paths rather than presentation order in virtual reality experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 present experimental predictions. The pharmacological prediction (C137) is reasonable and cites appropriate blocking agents. The MEC II prediction (C138) is supported by analogy to cited MEC III results. The core prediction about non-sequential encoding (C139-C140) directly follows from the model mechanism and would be a strong test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The model links isotropic spatial connectivity to bidirectional replay, predicting equal probability of forward/reverse replay since LTP-IE stores no directionality. Reverse replay would not be expected for non-spatial sequences. The gating signal may control state-dependent replay occurrence, ensuring replay happens at appropriate times without interfering with other computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 discuss computational insights. The link between isotropy and bidirectionality (C141-C142) is a logical consequence of the model design. The prediction about non-spatial sequences (C143) follows from the mechanism. The speculation about gating signal function (C144-C145) is reasonable and appropriately cited regarding pattern separation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C29",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "While LTP-IE has only been observed in hippocampus, similar mechanisms may exist in cortex. LTP-IE-like phenomena and preferential connectivity among similarly tuned cells have been observed in cortex. History-dependent excitability changes may occur over multiple timescales. Optogenetically imprinted ensembles might arise via excitability changes rather than Hebbian plasticity. Excitability changes alone might rapidly reshape network dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29, C100-C106 discuss potential cortical mechanisms and broader implications. While cortical LTP-IE-like phenomena (C101) and preferential connectivity (C102) are cited, the speculation about cortical mechanisms (C29) and reinterpretation of optogenetic results (C105) are presented as possibilities rather than demonstrated facts. The general conclusion (C106) is supported by the hippocampal model but extrapolation to cortex remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The binding pool model could potentially be recast in terms of excitability-based information flow. Persistent spiking's role in working memory is being reevaluated and could theoretically be replaced by excitability increases. The switchboard architecture may suit novel mapping storage. External modulatory inputs can control computation speed in recurrent networks. Excitability-based control without connectivity changes may be a rich framework for studying cognitive flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 discuss broader implications and connections to other work. The comparison to binding pool model (C146) is appropriately cited. The discussion of persistent activity alternatives (C147) cites relevant reevaluation. The inference about novel mappings (C148) is supported by the demonstrated flexibility. The citation about computation speed control (C149) is appropriate. The concluding proposal (C150) is a reasonable synthesis presented as a suggestion for future work.",
+    "result_type": "MINOR"
+  }
+]

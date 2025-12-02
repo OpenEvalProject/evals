@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study successfully generated and processed mitochondrial genome sequence data from 41 great auk individuals spanning 170-15,000 years before present across the species' geographic range. The dataset comprised 66 initial bone samples, of which 35 passed quality filtering, supplemented with 6 previously published sequences. Sequencing metrics showed mean read length of 55.12 bp and average coverage of 72.5\u00d7, with a final alignment of 16,641 bp including 9,994 bp shared across all samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 provide comprehensive methodological details and data characteristics that are internally consistent and follow standard ancient DNA practices. The sequencing coverage (average 72.5\u00d7) and read lengths (41-87 bp) are appropriate for ancient DNA from bone samples. The progression from 66 samples to 41 final sequences with quality filtering is transparent and reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C62"
+    ],
+    "result": "High haplotype diversity was maintained throughout the great auk's history, with only two individuals sharing identical haplotypes across all 41 mitogenomes. These two identical sequences were from different time periods, and when samples were divided into age groups, each group contained unique haplotypes with no reduction in diversity in more recent samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C62 are directly supported by the genetic data presented in Figure 2. The observation of 39 unique haplotypes among 41 individuals (95% uniqueness) demonstrates exceptionally high diversity. The temporal analysis showing maintained diversity across time periods is consistent with the data visualization and supports the conclusion of no pre-extinction decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C78",
+      "C79"
+    ],
+    "result": "No population structure was detected in great auk mitogenomes across space or time using four independent analytical approaches (BEAST, RAxML, TempNet, and PopART), indicating a lack of barriers to dispersal among populations across the species' range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C78, and C79 are supported by multiple independent phylogenetic and network analyses shown in Figures 2 and 3. The use of four different analytical methods that all converge on the same conclusion strengthens confidence in this result. However, the authors acknowledge this is based solely on mitochondrial DNA (C93), which only reflects female-mediated gene flow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "GPS-equipped drifting capsules deployed in the North Atlantic showed routes connecting major great auk breeding colonies at St Kilda (Scotland), Geirfuglasker/Eldey Island (Iceland), and Funk Island (Canada), providing potential evidence for ocean current-aided dispersal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C47 describe observational data from GPS capsules shown in Figure 4, but the authors themselves acknowledge this is highly speculative. Only two capsules were deployed, ocean currents may have changed over centuries, and the connection between modern ocean currents and historical great auk movement is inferential. This provides suggestive but not definitive evidence for dispersal mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C60",
+      "C61"
+    ],
+    "result": "Demographic reconstruction using 25 dated mitogenomes supported a constant population size through time with no evidence of decline prior to intensive hunting. The most recent common ancestor was dated to 42,188 ybp (95% CI: 24,743-84,894 ybp), with effective female population size estimated at 9,558 (95% CI: 4,548-19,665). A second analysis including undated samples yielded consistent results with Nef of 7,331.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C60-C61 present the core demographic findings using appropriate Bayesian phylogenetic methods in BEAST. The constant-size coalescent model was conservatively chosen despite exponential-growth having higher marginal likelihood, because the growth rate posterior was right-skewed with mode near zero (C152-C154). The consistency between analyses with and without undated samples strengthens the conclusion. However, the authors appropriately note this reflects the detection limit of genetic data rather than proof of no decline (C69-C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Census size estimates ranged widely from 12,292-756,346 individuals based on Ne/Nc ratios. The discrepancy between effective and census population size, combined with shallow divergence (<90,000 years), suggests a severe bottleneck in the late Pleistocene, potentially climate-related. High singleton haplotype frequency and large census size at the onset of hunting suggest successful recovery from this bottleneck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C73-C77 present reasonable inferences from the genetic data. The wide range in census size estimates (C52) reflects uncertainty in Ne/Nc ratios, which is appropriately acknowledged. The interpretation of a Pleistocene bottleneck followed by recovery is supported by the shallow divergence times, high singleton frequency (characteristic of post-bottleneck expansion per Slatkin & Hudson 1991), and historical accounts of large populations. However, the wide credibility intervals (C75) limit precision about the bottleneck timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C97"
+    ],
+    "result": "Population viability analysis using conservative settings showed that annual harvest rates up to 9% of the pre-hunting population were sustainable. For a population of 2 million birds, this corresponds to 180,000 birds annually. Harvest rates of 10.5% (with 5% egg harvest) led to extinction within 350 years in all simulations. Density-dependent mortality reduction had minimal effect on sustainable harvest rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 and C97 present results from population viability analysis using Vortex software with clearly documented parameters (Table 1). The simulations used conservative assumptions favoring survival (100% breeding success, lowest alcid mortality rates, C110-C111), making the sustainable harvest estimates likely overestimates (C109, C114). The results are internally consistent across different population sizes and show clear thresholds between sustainable and unsustainable harvest rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Using more realistic parameters based on razorbill mortality rates and variable reproductive success, sustainable harvest rates for a 2 million bird population dropped to approximately 40,000 birds per year (with no egg harvest and density-dependent mortality reduction). However, razorbills can produce replacement eggs, so this may underestimate great auk sustainable harvest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C115-C117 present alternative PVA scenarios using razorbill parameters. The dramatic reduction in sustainable harvest (from 180,000 to 40,000 birds) demonstrates sensitivity to mortality assumptions. The acknowledgment that razorbill biology differs (replacement eggs, C116) and that this likely underestimates great auk sustainable harvest (C117) shows appropriate caution. However, the uncertainty about which parameters are most realistic limits definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Historical harvest rates likely far exceeded sustainable levels identified in population viability analyses. From 1497 AD, 300-400 ships annually visited Newfoundland (the region with highest great auk density). Contemporary reports document 1,000 birds killed in 30 minutes by two vessels. If 400 vessels each spent 30 minutes annually harvesting at this rate, this alone would yield 200,000 birds\u2014exceeding the sustainable threshold. Additional mortality from feather trade and bycatch would have further increased harvest pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C106 combine PVA results with historical evidence to argue that actual harvest exceeded sustainable levels. The calculation in C104 (400 ships \u00d7 1,000 birds/30 min \u00d7 30 min = 200,000 birds) is mathematically correct and based on documented historical accounts (C99, C103). The comparison with PVA thresholds (C97: 210,000 birds causes extinction) is appropriate. However, the calculation assumes each ship harvested for only 30 minutes annually, which is likely a severe underestimate, strengthening rather than weakening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The great auk's reproductive biology made population recovery from heavy harvest particularly difficult: they laid only one egg per year which was not replaced if removed, making replenishment of harvested birds highly improbable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by citation to Bengtson 1984 and represent established knowledge about great auk biology. This reproductive constraint is a critical factor distinguishing great auk from related species like razorbill (which can produce replacement eggs, C116) and explains why harvest rates sustainable for other alcids would not be sustainable for great auks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The population viability analysis used unrealistically optimistic assumptions including 100% breeding participation and success, offspring independence from hatching, lowest observed alcid mortality rates, and optional density-dependent mortality reduction. Detrimental effects of small population size (e.g., inbreeding depression) were not included. These conservative settings likely overestimate sustainable harvest rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 transparently describe the assumptions and limitations of the PVA. The acknowledgment that conservative assumptions favor survival and likely overestimate sustainable harvest (C109, C114) is scientifically appropriate. This transparency strengthens rather than weakens the overall conclusions, as it indicates that actual sustainable harvest rates were likely even lower than estimated, making the hunting-driven extinction hypothesis more plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The harvest rates required to cause great auk extinction (200,000-630,000 birds annually depending on population size) are consistent with modern harvest rates for related species. Until recently, 200,000-300,000 murres were killed annually off eastern Canada, with rates of 300,000-700,000 thick-billed murres before the mid-1990s. In Iceland, 150,000-233,000 puffins were killed annually (2-3% of population), while 25-30% of black-backed gull populations are harvested annually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 provide important context by comparing estimated great auk harvest thresholds with documented modern harvest rates for related species. The comparisons are well-supported by citations (Wilhelm et al. 2008, Merkel & Barry 2008, Statistics Iceland 2016). The fact that modern sustainable harvest rates for related species are in the same range as the estimated great auk extinction thresholds supports the plausibility of the hunting-driven extinction hypothesis. The acknowledgment that current rates are declining (C123-C124) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C68",
+      "C92",
+      "C126",
+      "C127",
+      "C130"
+    ],
+    "result": "The study found no genetic evidence that great auks were at risk of extinction prior to intensive human hunting beginning in the early 16th century. Population viability analyses demonstrate that human hunting pressure alone was very likely sufficient to cause extinction even without environmental threats. However, the study does not provide unequivocal proof that humans alone caused extinction, as the rapid decline may have been beyond the detection limit of genetic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C68, C92, C126-C127, and C130 represent the primary conclusions of the study. These are well-supported by the genetic data (no decline signal, high diversity maintained) and PVA results (realistic harvest rates exceed sustainable thresholds). The authors appropriately acknowledge limitations: genetic data cannot detect rapid declines in long-lived species (C64, C69), and definitive proof would require simulations of population dynamics under environmental change (C128-C129). The careful distinction between 'no evidence of pre-hunting decline' and 'proof of hunting-only extinction' demonstrates scientific rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "If great auks had been at risk of extinction prior to intensive hunting due to environmental stress, genetic evidence of decline would be expected, as observed in cave bears and bison. However, genetic data have limited power to detect rapid declines in long-lived species. Studies of other rapidly extinct species (New Zealand moa, Hawaiian Petrel, huia, South Island k\u014dkako) similarly found no genetic evidence of pre-extinction decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide important context from comparative studies. The logic is sound: slow environmental decline should leave genetic signatures (as in cave bears/bison, C63), while rapid anthropogenic decline may not (C64). The citations to parallel cases (moa, Hawaiian Petrel, New Zealand songbirds, C65-C67) strengthen the interpretation that absence of genetic decline signal is consistent with rapid human-caused extinction. This comparative framework appropriately contextualizes the limitations of genetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "A localized decline in great auk numbers on the eastern North Atlantic over the past 2,000 years, inferred from declining bone finds in England, Scotland, and Scandinavia, does not appear to have been severe enough to leave a genetic signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 reconciles the genetic findings with archaeological evidence of regional decline. The interpretation that this decline was not severe enough to affect overall population genetics is reasonable given the lack of population structure (C45, C78) and maintained high diversity (C42-C44). However, this conclusion depends on the assumption that the eastern Atlantic decline was localized rather than species-wide, which cannot be definitively proven from the genetic data alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The lack of population structure contradicts previous predictions of limited trans-Atlantic interbreeding and regional philopatry, but is common in seabirds including great auk relatives (thick-billed murre, common murre, ancient murrelets, little auk) and penguins (emperor, chinstrap, Ad\u00e9lie). Ocean currents and high vagility, evidenced by the species' ability to track habitat in response to climate change, likely facilitated dispersal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C91 appropriately contextualize the lack of structure finding. The contradiction with previous predictions (C80-C81) is well-documented with citations. The extensive comparative data from related species (C82-C89) demonstrates that lack of structure is indeed common in seabirds, making the great auk result less surprising. The proposed mechanisms (ocean currents C90, high vagility C91) are plausible and supported by citations, though the GPS capsule data (C46-C47) provides only suggestive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The study has important limitations: mitochondrial DNA is a single genetic marker and samples were insufficiently preserved for nuclear SNP data, which would have provided greater resolution for detecting population structure. The sample size of 41 is relatively small for population genetic analysis and may have limited ability to resolve changes in population structure and size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 transparently acknowledge key limitations. The reliance on mitochondrial DNA alone is a significant constraint, as it only reflects female-mediated gene flow and has less power than genome-wide data. The sample size of 41, while substantial for ancient DNA studies of extinct species, is indeed modest for population genetics. The authors' transparency about these limitations is commendable and appropriately tempers the strength of conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The findings demonstrate that industrial-scale commercial exploitation can drive even abundant, wide-ranging, highly vagile, and genetically diverse species to extinction rapidly. This echoes conclusions for the passenger pigeon and emphasizes the need for thorough monitoring of commercially harvested species, particularly in poorly researched environments like oceans, to ensure evidence-based conservation management.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 present broader implications and conservation lessons from the study. The comparison with passenger pigeon (C132) is apt and well-cited (Murray et al. 2017). The conservation recommendations (C133-C134) follow logically from the findings. However, these are interpretive conclusions rather than direct results, and the generalization about 'industrial-scale exploitation' may be somewhat anachronistic for 16th-19th century hunting, though the scale was certainly unprecedented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The study employed rigorous ancient DNA methods including sampling from major geographic centers across 170-15,000 years, strict contamination controls, established extraction and library preparation protocols, hybridization capture enrichment, Illumina sequencing, and standard bioinformatics pipelines. Demographic analyses used BEAST, network analyses used PopART and TempNet, and population viability analysis used Vortex. GPS capsule tracking used North Star TrackPack devices deployed in January 2016.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C162 comprehensively describe the methods used in the study. All methods are standard for ancient DNA research and are appropriately cited. The contamination controls (C140-C143), established protocols (C144-C147), and analytical software (C150-C151, C158-C160) are appropriate for the research questions. The GPS capsule deployment (C161-C162) is adequately described. These methodological details support reproducibility and allow evaluation of the results' validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Model comparison showed exponential-growth coalescent prior had higher marginal likelihood than constant-size prior, but the population growth rate posterior was highly right-skewed with mode near zero, so constant-size prior was conservatively used. Analysis including undated samples with uniform age priors also supported constant population size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C157 describe the model selection process for demographic reconstruction. The conservative choice of constant-size model despite exponential-growth having higher marginal likelihood is justified by the growth rate posterior distribution (C153). This demonstrates appropriate statistical reasoning\u2014the higher marginal likelihood may reflect model flexibility rather than true population growth. The consistency across analyses with different sample sets (C157) strengthens confidence in the constant-size conclusion.",
+    "result_type": "MINOR"
+  }
+]

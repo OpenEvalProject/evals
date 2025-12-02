@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C102"
+    ],
+    "result": "HRMAn is an open-source image analysis platform based on KNIME Analytics Platform that integrates machine learning and deep convolutional neural networks for host-pathogen interaction analysis. The platform is designed to work with all file types from any microscope, requires no coding, and is available under GPLv3 license.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24-C27, C88-C91, and C102 collectively establish HRMAn as a novel open-source tool with specific technical characteristics. The platform choice (KNIME), implementation details (DL4J library), and availability (GitHub, GPLv3) are clearly documented. The claim of being the only open-source CNN-driven solution (C91) is a strong statement but is presented as a knowledge claim about the field at time of publication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "HRMAn operates in two stages: Stage 1 uses classical segmentation and decision tree machine learning for pathogen detection and enumeration, while Stage 2 employs a CNN (HRMAlexNet) for host protein recruitment analysis. The pipeline outputs \u226515 quantitative readouts and can be used modularly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 describe the workflow architecture with clear references to Figure 1. The two-stage design is well-documented, and the modular nature allowing stage 1 to be used independently (C35) provides flexibility. The output specifications (C34) are quantified and verifiable from the results presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "For Stage 1 pathogen detection, HRMAn was trained on >35,000 Toxoplasma gondii vacuoles using decision tree, gradient boosted tree, and random forest algorithms. A simple decision tree with MDL pruning achieved >99.5% accuracy and was selected for speed, successfully quantifying vacuoles containing 1, 2, 4, or >4 parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 describe the Stage 1 training with specific quantitative metrics (>35,000 vacuoles, >99.5% accuracy) and reference Figure 2B. The comparison of multiple algorithms and selection rationale is documented. The performance metric is high and the classification categories are clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "For Stage 2 host protein recruitment analysis, the CNN achieved 92.1% classification accuracy after 80 epochs of training, with precision of 0.92, 0.92, and 0.71 and recall of 0.94, 0.89, and 1.0 for 'no recruitment', 'recruitment', and 'artefacts' classes respectively. The authors claim this achieves human-level accuracy and exceeds human capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C42 provide specific quantitative performance metrics with reference to Figure 2E. However, C43's claim of achieving 'human accuracy' and 'far exceeding human capacity' lacks supporting evidence. No direct comparison with human annotators is presented, no inter-rater reliability is reported, and 'capacity' (presumably throughput) is not quantified. The precision/recall values are good but the human comparison claim is unsupported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "HRMAlexNet architecture consists of 5 convolutional layers with 2 fully connected layers, accepts 100\u00d7100\u00d72 pixel images, and uses ADAM optimizer instead of SGD. Training employed data augmentation (rotation, reflection, translation), mini-batches of 200, Xavier weight initialization, and negative log likelihood loss function. Validation used non-augmented test data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C114 provide comprehensive technical details about the neural network architecture and training procedure. The modifications from AlexNet are justified (C107: SGD failing to converge), and the use of 16-bit images (C108) is a technical advantage. Data augmentation rationale (C113) is appropriate for microscopy data. The methods are sufficiently detailed for reproduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Validation experiments showed >98% of parasites captured in images had successfully invaded and established parasitophorous vacuoles, and MOI of 3 resulted in 90% type I and 80% type II Tg infected host cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 describe important validation controls with reference to Figure 2\u2014figure supplement 1. The GRA2 staining confirms that detected parasites are intracellular, addressing a potential confound. The infection rates are quantified and support the experimental design. These are appropriate quality control measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C115",
+      "C116"
+    ],
+    "result": "HRMAn analysis of >15,000 HeLa cells infected with Toxoplasma gondii showed that IFN\u03b3 treatment did not affect infection percentage but reduced vacuoles per cell and parasites per cell. At single-cell level, IFN\u03b3 reduced vacuoles per cell and mean vacuole size, and significantly reduced replicating parasites, indicating both parasite killing and replication restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C115-C116 present Stage 1 analysis results with reference to Figure 3A-C. The scale (>15,000 cells) demonstrates high-throughput capability. The interpretation that reduced eGFP signal indicates killing (C116) is reasonable. The conclusion (C49) that IFN\u03b3 mediates both killing and restriction is supported by the data showing reduced vacuole:cell ratio (killing) and reduced parasites per vacuole (restriction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Stage 2 analysis of >25,000 vacuoles showed IFN\u03b3 increased ubiquitin/p62-positive vacuoles from 5.92% to 27.61%, with ubiquitin more closely associated with vacuoles than p62. Recruitment of both proteins increased with IFN\u03b3, and replication was restricted in decorated vacuoles, indicating IFN\u03b3 drives both killing and ubiquitin/p62 recruitment that restricts replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 present Stage 2 results with specific quantitative data and references to Figure 3D-F. The radial intensity analysis (C52) provides spatial information about protein recruitment. The observation that p62 is further from vacuoles than ubiquitin (C52) is consistent with p62 binding ubiquitinated substrates (C53, supported by citations). The correlation between decoration and restricted replication (C54) is demonstrated. The overall conclusion (C55) integrates Stage 1 and 2 findings appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Large-scale HRMAn analysis across 5 cell types (THP-1, A549, HeLa, HFF, HUVEC) with type I and II Toxoplasma at varying IFN\u03b3 concentrations revealed cell-type specific differences in killing versus replication restriction mechanisms, strain-specific responses, and differential ubiquitin/p62 recruitment patterns, with THP-1 cells showing unique constitutive decoration capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C68 present extensive comparative analysis across multiple cell types with references to Figure 3\u2014figure supplements 1-7. The scale (~90 GB, >175,000 vacuoles) demonstrates high-throughput capability (C56). The findings reveal biological complexity: different cell types use different control mechanisms (C58-C59), type II Tg is more susceptible (C62), and THP-1 cells have unique properties (C64-C65, C67). The data support cell-type and strain-specific differences in host-pathogen interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "HRMAn was successfully adapted to analyze Salmonella enterica Typhimurium, a bacterium 16\u00d7 smaller than Toxoplasma. Stage 1 analysis showed IFN\u03b3 reduced STm vacuoles/cell and bacterial load without affecting infection percentage, demonstrating HeLa cells control STm through IFN\u03b3-dependent killing and growth restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 demonstrate HRMAn's adaptability to a different pathogen with substantially different size (0.5 \u03bcm vs 8 \u03bcm). The results parallel those for Toxoplasma (C70-C71 reference Figure 4A-C), showing similar patterns of IFN\u03b3-mediated control. This successfully demonstrates the platform's flexibility across different pathogen types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Using transfer learning from the Toxoplasma model, HRMAn achieved 69.9% accuracy for STm ubiquitin recruitment classification with 10-fold less data in 40 epochs. Analysis showed IFN\u03b3 doubled the percentage of cells recruiting ubiquitin to STm and increased coat thickness, with restricted growth of decorated bacteria, suggesting HeLa cells reached their capacity for autophagy-mediated clearance independent of IFN\u03b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 demonstrate successful transfer learning with quantified performance (69.9% accuracy, 10-fold less data) and reference Figure 4D-G. The lower accuracy compared to Toxoplasma (69.9% vs 92.1%) may reflect the smaller pathogen size and reduced training data. The biological interpretation (C78) that cells reached clearance capacity is reasonable given the data showing increased recruitment intensity but only slight increase in decorated vacuoles per cell (C75). The findings are consistent with prior work on STm autophagy (C74, supported by citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "HRMAn successfully reproduced published findings that Toxoplasma virulence factors (ROP16, GRA15, ROP18) modulate recruitment of murine guanylate binding proteins to vacuoles, demonstrating the platform can study effects of pathogen effector proteins on host phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 validate HRMAn by reproducing prior work (C79 cites Virreira Winter et al., 2011) with reference to Figure 5A. Successfully replicating published results strengthens confidence in the platform. The conclusion (C81) that HRMAn can study effector protein effects is supported by this demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "HRMAn visualized accumulation of Toxoplasma effector proteins (GRA16, GRA24, TgIST) in host cell nuclei and showed nuclear accumulation correlated with parasite number per cell, demonstrating the platform can analyze both host and parasite parameters during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 extend HRMAn's capabilities beyond vacuole analysis to nuclear translocation of parasite proteins. The correlation between nuclear signal and parasite number (C84, Figure 5B) is a quantitative readout. This demonstrates versatility in analyzing different cellular compartments and both host and pathogen features (C85).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "HRMAn learns phenotypes from data without researcher assumptions, can recognize, classify and quantify pathogen killing, replication and cellular defense responses, is suitable for single image and high-content analysis, requires no coding, and can be rapidly adapted to different pathogens and experimental setups through transfer learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C96-C101 summarize HRMAn's capabilities demonstrated throughout the manuscript. The capacity to learn phenotypes (C2) is shown through CNN training. Recognition and quantification of killing, replication, and defense (C3) are demonstrated for both Tg and STm. Suitability for both single and high-content analysis (C4) is shown by the scale of experiments. Adaptability (C97) is proven by successful application to two different pathogens. User-friendliness (C98-C99) is supported by the KNIME platform choice. Transfer learning capability (C100) is demonstrated with STm. The claim about broad researcher access (C101) is speculative but reasonable given the demonstrated features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors establish the need for HRMAn by describing limitations of current approaches: most screens use population-level analysis, quantification is often manual, classical segmentation fails at quantifying host protein recruitment due to rule-based approaches, and no open-source AI-driven solution exists for this analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10, C13-C17, C21-C23 establish context and motivation through citations to prior work and statements about the field. The characterization of existing methods (C6-C7, C14-C15) is supported by citations. The limitation of classical methods for protein recruitment (C16-C17) is a reasonable assessment. The claim that no open-source AI solution existed (C22) is a knowledge claim about the field. The need statement (C23) follows logically from the identified gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C18",
+      "C19",
+      "C20",
+      "C86",
+      "C87",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors position HRMAn's deep learning approach as superior to classical methods because CNNs learn complex patterns from data automatically rather than using rule-based bulk statistics, thereby improving biological relevance of phenotypic readouts and circumventing problems of classical segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C18-C20, C86-C87, C92-C95 explain the conceptual advantage of deep learning over classical approaches. The distinction between rule-based (C17) and pattern-learning (C18-C19) methods is well-established in machine learning. The claim that this improves biological relevance (C20) is supported by the demonstrated ability to classify complex recruitment patterns. The statements are appropriately supported by citations to deep learning literature (C12, C86-C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Prior work indicates HeLa cells restrict Toxoplasma growth through ubiquitination of parasitophorous vacuoles and subsequent non-canonical, p62-dependent autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is a statement about prior work supported by citations (Selleck et al., 2015; Clough et al., 2016). This provides biological context for interpreting the HRMAn results on ubiquitin/p62 recruitment.",
+    "result_type": "MINOR"
+  }
+]

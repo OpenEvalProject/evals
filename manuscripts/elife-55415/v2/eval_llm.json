@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Mtb infection upregulates SIRT2 expression and induces its translocation from the cytoplasm to the nucleus in macrophages, where it deacetylates histone H3K18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary techniques (microarray, qRT-PCR, flow cytometry, immunofluorescence, and western blot) consistently demonstrate SIRT2 upregulation and nuclear translocation upon Mtb infection (C1, C13, C23-C25). The functional consequence of H3K18 deacetylation is supported by increased H3K18 acetylation upon AGK2 treatment in infected cells (C3, C28). The data are internally consistent and use appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C119"
+    ],
+    "result": "Pharmacological inhibition of SIRT2 with AGK2 restricts intracellular Mtb growth in macrophages through increased apoptosis and ROS generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anti-mycobacterial effect of AGK2 is demonstrated by both flow cytometry and CFU enumeration (C7, C119). The mechanistic link to ROS is supported by the rescue experiment with N-acetyl cysteine (C21-C22). AGK2 shows minimal effects on uninfected cells (C18, C20), indicating specificity. The use of both pharmacological inhibition and shRNA knockdown strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36"
+    ],
+    "result": "SIRT2 modulates host cell signaling and histone acetylation patterns during Mtb infection, with nuclear SIRT2 deacetylating H3K18 and cytosolic SIRT2 maintaining \u03b1-tubulin deacetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects on H3K18 acetylation in infected vs. uninfected cells upon AGK2 treatment (C27-C29) support infection-induced nuclear SIRT2 activity. The comparable increase in \u03b1-tubulin acetylation in both conditions (C31-C32) indicates maintained cytosolic activity. The decreased phosphorylation of ERK1/2 and p38 upon AGK2 treatment (C35) demonstrates effects on signaling pathways. However, the mechanistic link between these observations and bacterial restriction could be more directly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "RNAseq analysis reveals that SIRT2 controls the expression of 578 genes during Mtb infection, affecting pathways crucial for TB defense including antigen presentation, Th17 differentiation, and cytokine signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNAseq data with three biological replicates provides robust evidence for SIRT2-dependent transcriptional changes (C38-C41). The minimal effect of AGK2 on uninfected cells (C37) serves as an important control. KEGG pathway analysis appropriately identifies biologically relevant pathways (C42-C45). qRT-PCR validation of selected genes (Figure 3D-E) strengthens confidence in the RNAseq findings. The conclusion that Mtb hijacks SIRT2 (C47) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "SIRT2 inhibition in ex vivo co-culture experiments enhances macrophage activation markers (CD11b, CD11c, CD80, MHCII) and increases T cell activation and pro-inflammatory cytokine production (IFN\u03b3, IL17), with synergistic effects when both cell types are treated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-culture experimental design appropriately models macrophage-T cell interactions (C48-C59). The synergistic effect of treating both cell types (C56-C58) is a key finding supported by flow cytometry data. The increased expression of activation markers and cytokines is consistent across multiple measurements. However, the experiments are performed with splenocytes from infected mice, which may already be primed, potentially limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C60",
+      "C61",
+      "C72"
+    ],
+    "result": "In Mtb-specific T cells, SIRT2 is upregulated and deacetylates NF\u03baB p65 at K310, modulating T helper cell differentiation toward a Th1/Th17 response when inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The upregulation of SIRT2 in CD3+ lymphocytes from infected animals (C60) and the modulation of H3K18 acetylation (C61) are well-documented by flow cytometry. The deacetylation of NF\u03baB p65 at K310 (C5, C72) provides a mechanistic link to T cell function. The shift toward Th1/Th17 response upon SIRT2 inhibition (C6) is supported by increased IFN\u03b3 and IL17 production. The mechanistic connection between NF\u03baB p65 deacetylation and Th differentiation is inferred but biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C126"
+    ],
+    "result": "In vivo SIRT2 inhibition with AGK2 reduces bacterial burden, decreases lung pathology, and increases protective immune responses in C57BL/6 mice, with effects dependent on T cells as demonstrated in Rag1-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo efficacy is demonstrated by reduced CFU in multiple organs (C10, C63), decreased granuloma formation (C11, C62), and enhanced immune responses (C12). The critical experiment in Rag1-/- mice (C64-C65) definitively shows that T cells are required for AGK2's protective effect, addressing the discrepancy with previous myeloid-specific knockout studies (C126). The experimental design with appropriate controls and multiple readouts strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "AGK2 treatment in infected mice increases the frequency of activated antigen-presenting cells (CD11b+, CD11c+, CD80+, MHCII+) and activated T cells (CD4+CD69+, CD4+CD25+, CD8+CD69+, CD8+CD25+) producing IFN\u03b3 and IL17 in both lungs and spleen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Comprehensive flow cytometry analysis of immune cell populations in lungs and spleen (C66-C67, C69-C71, C73) provides strong evidence for enhanced immune activation. The increased production of protective cytokines IFN\u03b3 and IL17 (C71, C73-C74) is consistent with a Th1/Th17 bias. The data are internally consistent across multiple cell types and organs. However, the study would benefit from functional assays beyond phenotypic markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "T cells from AGK2-treated infected mice show no increased apoptosis or ROS but demonstrate enhanced capacity to restrict Mtb growth in macrophages and confer superior protection in adoptive transfer experiments to Rag1-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The adoptive transfer experiments (C79) provide strong functional evidence that AGK2 treatment generates more effective T cells. The lack of increased apoptosis or ROS in T cells (C75-C76) contrasts with effects in macrophages, indicating cell-type-specific mechanisms. The enhanced bactericidal capacity in co-culture (C77-C78) supports functional improvement. The experimental design appropriately tests the protective capacity of AGK2-primed T cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "AGK2 enhances the efficacy of isoniazid in combination therapy and shows activity against multidrug-resistant (MDR) and extensively drug-resistant (XDR) Mtb strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination therapy experiment (C9, C81) demonstrates synergy between AGK2 and INH, with significantly reduced bacterial burden compared to monotherapy. The activity against MDR and XDR strains (C8, C82-C83) is particularly important for clinical translation. The replication of protective effects in BALB/c mice (C80) confirms findings across mouse strains. However, the study is limited to a single time point and would benefit from dose-response and pharmacokinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C30",
+      "C34",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C124",
+      "C125"
+    ],
+    "result": "The manuscript contextualizes SIRT2's role within the broader field of pathogen-induced epigenetic modifications and sirtuin biology, citing relevant prior work on histone deacetylation during bacterial infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims appropriately cite established literature on SIRT2 biology (C106-C107, C111-C112), pathogen-induced chromatin remodeling (C100-C105), and previous studies on sirtuins in bacterial infections (C108-C110). The citations appear accurate and relevant. The comparison with Listeria monocytogenes (C26, C102) provides useful context for the H3K18 deacetylation findings. These claims establish the scientific foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The introduction establishes the clinical significance of tuberculosis, the limitations of current therapy, and the rationale for host-directed therapies targeting Mtb's immune evasion strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These introductory claims accurately describe the TB disease burden (C86-C87), treatment challenges (C88-C89), and the biological rationale for the study (C90-C99). The citations to WHO reports and primary literature are appropriate. These claims provide necessary context but do not constitute novel findings. The logic for pursuing host-directed therapies (C92-C93) is well-articulated, though these remain speculative benefits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The discussion integrates findings with established knowledge about SIRT2 function, immune responses to TB, and previous studies on SIRT2 in infection and inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite relevant literature on SIRT2 biology (C113-C116, C120-C121, C136-C142), TB immunology (C129-C133, C143-C144), and previous SIRT2 studies (C134, C145-C146). The integration of current findings with prior work is generally accurate. The discussion of differential effects in macrophages vs. T cells (C145) is supported by the data. These claims provide important context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C127",
+      "C128",
+      "C158"
+    ],
+    "result": "The study addresses discrepancies with previous work by Cardoso et al., attributing differences to the use of systemic SIRT2 inhibition versus myeloid-specific knockout, and validates findings across mouse strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with Cardoso et al. (C110, C127-C128) appropriately addresses an apparent contradiction in the literature. The explanation that systemic inhibition affects multiple cell types while myeloid-specific knockout does not is supported by the Rag1-/- experiments (C64-C65). The validation in both C57BL/6 and BALB/c mice (C158) strengthens generalizability. However, claim C127 is explicitly speculative and should be tested more directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C68",
+      "C84",
+      "C85",
+      "C147",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The manuscript cites established knowledge about immune cell markers, host-directed therapies, pathogen-induced epigenetic changes, and signaling pathways relevant to TB pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established scientific knowledge appropriately cited to support the study's rationale and interpretation. The statements about co-stimulatory molecules (C50, C68), host-directed therapies (C84-C85), pathogen-induced chromatin modifications (C159-C166), and signaling pathways (C167-C168) are accurate and well-supported by the cited literature. These provide necessary background but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C135",
+      "C156",
+      "C157",
+      "C171"
+    ],
+    "result": "The study concludes that it has identified a novel epigenetic mechanism by which Mtb subverts host immunity through SIRT2, representing the first demonstration of SIRT2's role in modulating adaptive immunity during bacterial infection, with potential for therapeutic exploitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data support SIRT2's role in TB pathogenesis and the efficacy of its inhibition (C117, C156), the claims of novelty (C135, C171) and therapeutic potential (C118, C157) require qualification. The novelty claim regarding adaptive immunity (C135, C171) is supported by the comprehensive T cell data, which extends beyond previous studies in Salmonella and Listeria. However, the therapeutic potential (C118, C157) remains speculative without additional preclinical development, toxicity studies, and validation in more complex models. The conclusions are reasonable inferences but require further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C36",
+      "C47",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The manuscript proposes that Mtb-induced SIRT2 upregulation and nuclear translocation represent a pathogen strategy to modulate host transcriptional responses, cellular signaling, and histone acetylation to favor bacterial survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data demonstrate that SIRT2 upregulation correlates with changes in histone acetylation (C148), cellular signaling (C149), and transcriptional profiles (C150-C151) that favor Mtb survival. The RNAseq data showing SIRT2-dependent modulation of 578 genes (C4) supports broad transcriptional effects. However, the claim that this represents a deliberate pathogen strategy (C47) is an inference that cannot be definitively proven without identifying specific Mtb factors that induce SIRT2. The alternative explanation\u2014that SIRT2 upregulation is a host response that Mtb exploits\u2014is equally plausible.",
+    "result_type": "MAJOR"
+  }
+]

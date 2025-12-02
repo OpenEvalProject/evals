@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C117"
+    ],
+    "result": "The computational model of striatal spiny projection neurons (SPNs) reproduces key electrophysiological and calcium imaging experimental data. The model exhibits characteristic SPN responses to current injection (C61), replicates back-propagating action potential (bAP)-evoked calcium dynamics in dendrites and spines (C62-C64), and shows appropriate contributions from different channel types (C65). The model is robust to parameter variations (C66) and exhibits calcium dynamics similar to published 3D models (C67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C61-C67, and C117 collectively demonstrate that the model successfully reproduces multiple experimental datasets. The validation includes electrophysiology (C61), calcium imaging from bAPs and EPSPs (C62-C64), channel blockade experiments (C65), sensitivity analysis (C66), and comparison to other computational models (C67). This comprehensive validation supports the claim that the model is well-suited for investigating calcium dynamics (C117).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The model reproduces plateau potentials in response to clustered distal synaptic inputs and demonstrates distance-dependent thresholds for supralinear spine calcium elevation. Distal (but not proximal) stimulation of 10-18 spines produces plateau potentials (C68), which are abolished by NMDAR blockade (C69) and attenuated by VGCC blockade (C70). The threshold for supralinear calcium responses is distance-dependent, requiring fewer spines at more distal locations (C73, C75), with graded responses above threshold (C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 are well-supported by model simulations shown in Figure 2A-B and are consistent with cited experimental observations (Du et al., 2017; Plotkin et al., 2011). The model reproduces the key experimental finding that plateau potentials occur only with distal stimulation, and the pharmacological manipulations (C69-C70) match experimental results. The distance-dependent threshold is a novel prediction from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Spatially dispersed synaptic inputs on distal dendrites can produce supralinear spine calcium elevation without requiring precise spatial clustering. Inputs dispersed over the distal half of a branch (~90 \u03bcm) still produce supralinear responses (C76, C78), though distributing inputs over the entire branch eliminates supralinearity (C77). The model predicts that ~16 coordinated excitatory inputs on a distal branch can produce plateau potentials and supralinear calcium elevation without precise clustering (C79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by model simulations shown in Figure 2C. This is a novel prediction that extends previous experimental findings, which focused on tightly clustered inputs. The finding that spatial dispersion within ~90 \u03bcm is tolerated has important implications for in vivo function, as precise clustering may be unlikely given the sparse connectivity pattern (1-3 synapses per cortical axon, C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Coordinated distal synaptic inputs produce three spatially distinct calcium responses: high supralinear calcium in stimulated spines (order of magnitude higher than non-stimulated spines), intermediate calcium in distal non-stimulated spines and dendritic shaft, and negligible calcium in proximal non-stimulated spines. This spatial specificity is maintained for both clustered and dispersed input patterns (C80-C81) and exhibits a distal-to-proximal gradient (C82-C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are well-supported by model simulations shown in Figure 3A. The order-of-magnitude difference between stimulated and non-stimulated spines provides a clear calcium signal for synapse-specific plasticity. The spatial gradient in non-stimulated spines and dendrites suggests potential mechanisms for heterosynaptic plasticity and branch-specific homeostatic regulation. The consistency across clustered and dispersed patterns strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The mechanisms underlying spine-specific calcium dynamics involve distinct sources: synaptic calcium influx (NMDAR and AMPAR) dominates in stimulated spines, while voltage-gated calcium channels (VGCCs) and diffusion contribute to calcium elevation in non-stimulated spines. Despite similar membrane potentials in stimulated and non-stimulated spines (C85), synaptic calcium currents are orders of magnitude higher than VGCC currents (C87). VGCCs determine peak amplitude in non-stimulated spines (C89), while diffusion contributes to duration (C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are supported by mechanistic analyses shown in Figure 3B-E. The finding that membrane potentials are similar but calcium responses differ dramatically (C85 vs C80-C81) is explained by the dominance of synaptic calcium sources in stimulated spines (C87). The diffusion-blocking experiments (C88-C89) provide clear evidence for the distinct contributions of VGCCs and diffusion to non-stimulated spine calcium dynamics. This mechanistic understanding is critical for interpreting the functional significance of the spatial specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Synaptic cooperativity exhibits dendritic branch specificity with limited interaction between branches. Dispersing inputs across multiple branches increases the total number of inputs required for supralinear responses (C91), though slight facilitation occurs when multiple branches are stimulated (C92). Temporal dispersion generally reduces supralinearity (C93), but small temporal dispersion (up to 5 ms ISI) can enhance cooperativity when multiple branches are stimulated (C94). Supralinearity is negligible for ISIs >10 ms (C95). These results suggest that distal dendritic branches function as relatively independent integration units (C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by model simulations shown in Figure 4. The finding of branch independence with limited interaction (C91-C92) is consistent with the theory that dendritic branches serve as computational subunits. The temporal window for cooperativity (C93-C95) provides important constraints on the timing requirements for in vivo function. The interpretation that branches function as independent units (C96) is a reasonable inference from the data, though it remains a model prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Distally evoked plateau potentials can facilitate calcium elevation in proximal spines in a timing-dependent manner. Simultaneous stimulation of a distal cluster and single proximal spine produces facilitation (C98), with maximal facilitation when the proximal stimulus occurs 25 ms after distal stimulation (C99). No facilitation occurs when the proximal stimulus precedes distal stimulation or when the delay is 50 ms (C100). The facilitation correlates with the amplitude of depolarization propagating from the distal plateau potential (C101), indicating an asymmetric temporal window of ~25 ms (C102).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are supported by model simulations shown in Figure 5. The timing-dependent facilitation is a novel prediction with implications for spike-timing-dependent plasticity rules. The mechanistic explanation (C101) linking facilitation to propagating depolarization is well-supported by the voltage measurements. The asymmetric temporal window (C102) is reminiscent of STDP rules and suggests that distal plateau potentials could serve as a dendritic 'teaching signal' for proximal synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Distal inhibition attenuates supralinear spine calcium responses in a location- and timing-dependent manner. Distal GABAergic inputs near the site of excitatory stimulation have the strongest inhibitory effect, reducing calcium by ~50% for slow GABAA kinetics (C104), while proximal inhibition has little effect. The timing of inhibition relative to excitation strongly affects the response (C105), with slow GABAA kinetics effective from 100 ms before to 25 ms after excitation (C106), and fast kinetics having a narrower temporal window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by model simulations shown in Figure 6A-B and are consistent with recent experimental studies (Du et al., 2017; Doron et al., 2017). The location-dependence (C104) suggests that LTSIs, NGFs, and SPN collaterals (which target distal dendrites) are the primary regulators of distal spine calcium dynamics, not FSIs (which target proximal dendrites). The temporal window for slow GABAA kinetics (C106) is particularly broad, suggesting that NGF interneurons may be potent regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Proximal GABAergic stimulation (modeling FSI input) can enhance spine calcium responses when excitatory inputs are sub- or near-threshold, but not when above threshold. This enhancement is specific to distal spines (C108) and occurs only for lower levels of excitatory input (16 spines/branch on one or two branches, C107).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by model simulations shown in Figure 6C and Figure 6\u2014figure supplement 1. This counterintuitive finding that proximal inhibition can enhance distal spine calcium is explained by the depolarizing effect of GABAergic stimulation when SPNs are in the hyperpolarized downstate, consistent with experimental observations (Blackwell et al., 2003; Bracci and Panzeri, 2006). The threshold-dependence (C107) and distance-dependence (C108) are important constraints on this effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C6"
+    ],
+    "result": "Inhibition enhances the spatial specificity of spine calcium transients by reducing the ratio of calcium in non-stimulated spines relative to stimulated spines (C109) and narrowing the spatial extent of calcium elevation in non-stimulated spines and dendrites (C110). This is the most significant functional effect of distal inhibition (C6), as it enhances the difference in calcium between stimulated and non-stimulated spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C109-C110 represent the most novel finding of the study and are supported by model simulations shown in Figure 7A-B. This result is particularly important because it suggests that inhibition does not simply reduce calcium globally, but rather enhances the contrast between stimulated and non-stimulated spines. This has critical implications for synaptic plasticity, as it could convert heterosynaptic LTP to LTD in non-stimulated spines while preserving homosynaptic LTP in stimulated spines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The enhancement of spatial specificity by inhibition is robust to parameter variations, with the exception of a 20% decrease in NMDAR conductance. The effect is most sensitive to NMDAR, CaR, and GABAR conductances, with both increases and decreases in NMDAR or CaR conductances reducing the ability of inhibition to enhance specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by systematic sensitivity analysis shown in Figure 7\u2014figure supplement 1. The robustness across most parameter variations strengthens confidence in the main finding. The sensitivity to NMDAR and CaR conductances (which are critical for plateau potential generation) and the finding that paired changes in these parameters reduce sensitivity suggest that neurons may regulate the balance of these channels to fine-tune spatial specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Under in vivo-like conditions with spatiotemporally distributed Poisson inputs, inhibition maintains spatial specificity at higher activity levels. At lower activity (n=200 inputs), specificity is robust with or without inhibition (C112), but at higher activity (n=300 inputs), specificity is reduced without inhibition (C113) and restored with inhibition (C114). Cluster analysis shows that inhibition reduces misclassification of spine stimulation status from 58 to 19 spines at high activity (C115) and increases cluster separation by 5.3% at low activity (C116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 are supported by model simulations and cluster analysis shown in Figure 7C-D. This result demonstrates that the enhancement of spatial specificity by inhibition is functionally relevant under realistic in vivo-like conditions, not just for idealized clustered inputs. The quantitative cluster analysis (C115-C116) provides objective measures of the effect. This strengthens the biological relevance of the main finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C7",
+      "C8"
+    ],
+    "result": "The model predicts that spine calcium dynamics encode synaptic input patterns (C7) and may serve as signals for both stimulus-specific potentiation in stimulated spines (C4) and heterosynaptic depression in non-stimulated spines (C5, C8), thereby maintaining balanced activity while inducing pattern-specific plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C5, C7-C8 are interpretations and predictions based on the observed calcium dynamics, not direct demonstrations of plasticity. While the calcium responses are well-characterized, the link to specific forms of plasticity (LTP vs LTD) requires additional modeling or experiments with plasticity rules. The authors acknowledge this in the Discussion by stating that extending a calcium-based plasticity rule to their results 'may yield key predictions.' The claims are reasonable inferences but remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The model predicts that striatal SPNs will exhibit cooperative LTP in response to coordinated synaptic inputs (C118), and that strict spatial clustering and precise temporal synchrony may not be required (C119). This prediction is based on the supralinear spine calcium elevation observed in the model and findings from other brain regions (pyramidal neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 are explicit predictions that have not been experimentally demonstrated in SPNs. While the model shows supralinear calcium elevation (which is associated with LTP in pyramidal neurons), the authors acknowledge that 'LTP induced by supralinear spine calcium elevation in response to coordinated synaptic inputs has not been experimentally demonstrated in the striatum.' The prediction is reasonable based on analogies to other neuron types, but remains to be validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The introduction establishes the scientific context and knowledge gaps that motivate the study. Key established knowledge includes: synaptic plasticity depends on calcium (C1, C21-C22), dendrites perform non-linear integration (C14), clustered inputs produce plateau potentials (C15-C18) and LTP (C19-C20), and calcium dynamics determine plasticity outcomes (C27-C28). Knowledge gaps include: the relationship between calcium and spatiotemporal input patterns is unclear (C2, C13), and how distributed inputs affect plasticity is unknown (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C32 are background knowledge claims supported by appropriate citations. These claims establish the scientific context and justify the study's focus on calcium dynamics in response to spatiotemporal input patterns. The knowledge gaps (C2, C13, C32) are well-documented and provide clear motivation for the computational modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The introduction establishes key differences between SPNs and pyramidal neurons, and identifies specific knowledge gaps regarding SPNs. SPNs exhibit plateau potentials (C33, C38-C39) but differ from pyramidal neurons in morphology (C40), channel expression (C41-C45), and state transitions (C46). The striatal circuit is predominantly inhibitory (C50-C55) with distinct spatial organization. Knowledge gaps include: the role of inhibition in regulating spine calcium (C56), how synapse-specificity is maintained during plateau potentials (C57, C60), and how distributed inputs affect SPNs (C32, C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C60 are background knowledge claims supported by appropriate citations. These claims establish why SPNs are an important and distinct system to study, and identify specific knowledge gaps that the model addresses. The emphasis on distributed inputs (C48-C49) and inhibition (C50-C56) provides strong motivation for the study's focus on these factors.",
+    "result_type": "MINOR"
+  }
+]

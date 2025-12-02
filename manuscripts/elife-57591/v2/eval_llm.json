@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A genetic screen for cold resistance in C. elegans identified a novel G281D mutation in rnp-6, encoding the splicing factor PUF60 ortholog. This mutation confers cold resistance without obvious developmental defects, despite null mutants being embryonic lethal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C30 provide converging evidence from the genetic screen design (C20-C21), identification of the rnp-6 mutation (C22, C27), and validation through independent CRISPR lines (C29-C30). The mutation's location in a conserved RNA binding motif (C27) and lack of severe developmental phenotypes (C28, C31-C34) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The rnp-6 G281D mutant exhibits resistance to multiple abiotic stresses including heat and oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by survival data from heat stress (Figure 1F) and oxidative stress (Figure 1G) experiments. This demonstrates broad stress resistance beyond cold tolerance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The rnp-6 G281D mutant shows increased sensitivity to multiple pathogenic bacteria (S. aureus, E. faecalis, P. aeruginosa) without changes in bacterial burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 demonstrate infection sensitivity across multiple bacterial species with independent validation (C41). The lack of difference in bacterial burden (C43) suggests the phenotype is not due to differential bacterial uptake or clearance, supporting a genuine immune defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The rnp-6 G281D mutant exhibits extended lifespan on non-pathogenic E. coli OP50 at 20\u00b0C but normal lifespan at 25\u00b0C, while remaining sensitive to pathogenic bacteria at both temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 establish a temperature-dependent longevity phenotype that is distinct from the infection sensitivity phenotype. This dissociation between longevity and infection resistance is well-documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "RNP-6 transcript and protein levels remain stable after S. aureus infection in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by qRT-PCR and western blot data (Figure 1\u2014figure supplement 1L,M). This suggests RNP-6 regulation occurs through mechanisms other than transcriptional or translational control in C. elegans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The rnp-6 G281D mutation causes widespread transcriptional dysregulation with enrichment for immune genes. Specifically, 116 infection-induced genes show dampened expression in the mutant, while 159 infection-repressed genes maintain higher expression, affecting antimicrobial and metabolic gene programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C60 present comprehensive RNA-seq data with GO enrichment analysis and qRT-PCR validation. The identification of rnp-6-dependent infection-responsive genes (C53-C54, C56-C58) with functional validation (C59-C60) provides strong evidence for RNP-6's role in immune gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Bacterial infection induces alternative splicing in an rnp-6-dependent manner. 83 genes show infection-induced splicing changes, with 43 of these also altered in rnp-6 mutants. Specific examples include prg-2, gyg-1, and tos-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 provide splicing analysis from RNA-seq data with RT-PCR validation of specific targets. The overlap between infection-induced and rnp-6-dependent splicing changes (C63) and validation of specific genes (C66-C69) support the conclusion that RNP-6 mediates infection-responsive splicing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RNAi knockdown of rnp-6 extends survival upon bacterial infection, induces immune gene expression, and affects splicing of infection-responsive genes, without affecting bacterial burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 demonstrate that reducing rnp-6 function enhances immunity through multiple lines of evidence: survival assays (C70-C71), gene expression (C73), and splicing changes (C74-C75). The lack of effect on bacterial burden (C72) indicates the mechanism is not through direct antimicrobial activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Overexpression of RNP-6 compromises infection survival on pathogenic bacteria but promotes longevity on non-pathogenic E. coli, without affecting bacterial burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 demonstrate that increased RNP-6 activity has opposite effects on immunity versus longevity. The phenotypes are validated on full lawns (C79) and are independent of bacterial burden (C80), supporting a genuine gain-of-function effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "RNP-6 acts through the TIR-1/PMK-1 MAPK signaling pathway to suppress immunity. rnp-6-dependent genes are enriched for PMK-1 targets, genetic epistasis shows rnp-6 requires pmk-1 and tir-1, and rnp-6 knockdown increases PMK-1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 provide multiple lines of evidence: bioinformatic enrichment (C81-C83), genetic epistasis (C84-C90), and biochemical data showing increased PMK-1 phosphorylation upon rnp-6 knockdown (C91). The lack of splicing changes in MAPK pathway components (C92) suggests indirect regulation. The epistasis experiments are well-controlled and demonstrate non-additivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The splicing factor SFA-1 similarly suppresses immunity and promotes longevity, working downstream or parallel to RNP-6 through PMK-1-dependent and independent pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C105 establish SFA-1's role through parallel experiments to RNP-6. Strong genetic interactions (C96-C99) and epistasis with pmk-1 (C103, C105) support the pathway relationship. The lack of physical interaction (C102) suggests functional rather than direct physical cooperation. The ability of sfa-1 RNAi to rescue pmk-1 mutants (C105) indicates additional pathways beyond PMK-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "In mammalian cells, S. aureus infection reduces PUF60 protein and transcript levels, and PUF60 knockdown induces pro-inflammatory cytokines without affecting anti-inflammatory genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 demonstrate evolutionarily conserved regulation of PUF60 in mammalian cells. Western blots and qRT-PCR show infection-induced reduction (C106-C107), and siRNA experiments show specific induction of pro-inflammatory cytokines (C108-C111). The specificity for pro-inflammatory genes (C110) supports a regulatory rather than general stress response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Overexpression of wildtype or mutated PUF60 (G300D) improves HeLa cell survival upon S. aureus infection without affecting bacterial internalization, though wildtype PUF60 overexpression shows non-significant effects on cytokine suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 explicitly states that wildtype PUF60 overexpression effects on cytokine induction were not statistically significant, which weakens the conclusion. While C114 shows improved cell survival, the mechanism remains unclear given the lack of significant cytokine suppression by wildtype PUF60. The mutated form shows stronger effects, but the interpretation is complicated by lower protein stability (mentioned in text but not in claims).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C124"
+    ],
+    "result": "The splicing factor RNP-6/PUF60 suppresses immunity but promotes longevity in an evolutionarily conserved manner, acting through MAPK signaling in C. elegans and displaying anti-inflammatory properties in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 and C124 represent the main conclusions of the study, synthesizing findings from C. elegans and mammalian systems. The evidence from genetic screens, functional studies, and cross-species validation provides strong support for evolutionary conservation of RNP-6/PUF60's immunosuppressive function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C37",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Background claims establishing prior knowledge about MAPK signaling, splicing factors, and PUF60 function in immunity and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17, C23-C26, C37, C116-C123 are supported by appropriate citations to published literature. These provide necessary context for interpreting the novel findings but are not original results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The rnp-6 G281D mutant exhibits minor developmental phenotypes including slightly reduced brood size, developmental delay (~3.5 hours), and marginally shorter body size, without affecting pharyngeal pumping rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 document phenotypic characterization of the mutant. These are well-supported by quantitative measurements (Figure 1\u2014figure supplement 1A-D) and establish that the mutation does not cause severe developmental defects that could confound interpretation of immunity and longevity phenotypes.",
+    "result_type": "MINOR"
+  }
+]

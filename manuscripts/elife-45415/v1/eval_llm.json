@@ -1,0 +1,126 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C40"
+    ],
+    "result": "The Ruby et al. (2018) dataset is heavily skewed toward young animals (87% observed \u22648 years, representing only ~25% of maximum lifespan), with only 23 individuals (<1%) observed for \u226518 years (all right-censored). This age distribution limits the ability to detect Gompertzian aging, which typically manifests in the second half of lifespan (expected \u226517 years for naked mole-rats). The authors argue this skew undermines Ruby et al.'s conclusion that naked mole-rats are 'non-aging mammals' across their full lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C18 and C40 provide converging evidence from multiple sources (Figure 1, Ruby et al.'s own data and statements, established aging biology principles) demonstrating the dataset's age skew and its implications. The mathematical calculations (C7, C10) are correct, the data extraction from Ruby et al.'s figures (C11, C12, C18) is verifiable, and the logical inference about limitations for detecting late-life aging (C17) follows from established principles (C8, C9). The conclusion that the data are 'skewed' (C40) is well-supported by the quantitative evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C40"
+    ],
+    "result": "The Ruby et al. dataset contains a critical data gap: no deaths were recorded for nearly 30 years (1978-2008, representing ~76% of the observation period), with only animals surviving past January 30, 2008 included in the study. This selective inclusion of death data introduces survivorship bias that can underestimate hazard rates and overestimate median survival. While Ruby et al. claim unpublished left-censorship analyses controlled for this bias, 250 animals were excluded due to insufficient resolution (including 37 with unknown death dates), and the extent of missing data from older age cohorts remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 document a serious methodological concern through direct analysis of Ruby et al.'s raw data (C19) and personal communication (C20-C22). The identification of the data gap is factual and verifiable. The statistical principle that selective death reporting biases survival analyses (C25) is well-established. However, the evaluation is limited by the unavailability of Ruby et al.'s unpublished left-censorship analysis (C21-C22), which prevents full assessment of whether the bias was adequately addressed. The exclusion of 250 animals (C23-C24) compounds concerns about data completeness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A simulation using Fukomys mole-rat data (n=339) demonstrates that artificially removing death records from the first 75% of the observation period (mimicking the Ruby et al. data structure) decreases survival curve slope, increases median survival by >30% (from 7.99 to 10.80 years), and decreases estimated mortality hazard by >25% (from 2.6\u00d710\u207b\u2074 to 1.9\u00d710\u207b\u2074 per day). The authors infer that Ruby et al.'s reported mortality hazard estimate (8\u00d710\u207b\u2075 per day) for naked mole-rats is likely underestimated due to similar bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The simulation methodology (C46) and quantitative results (C27-C29, C43-C44) are clearly presented with specific values and confidence intervals from Figure 2. However, the authors explicitly acknowledge this is 'just a single example' and that 'both data sets may quantitatively react differently to the introduced bias' (C31). The inference that Ruby et al.'s hazard estimate is 'probably underestimated' (C31) is reasonable but uncertain because: (1) the Fukomys and naked mole-rat datasets may respond differently to the same bias, (2) the simulation uses a different species with different life history, and (3) Ruby et al.'s unpublished left-censorship analysis (C21-C22) was not available for evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Ruby et al.'s Figure 3 shows that naked mole-rat breeders appear to live longer than helpers under laboratory conditions, a pattern previously suggested only by field data. This finding parallels divergent survival trajectories between breeders and non-breeders observed in several Fukomys species, potentially supporting the hypothesis that social mole-rat species have evolved life-prolonging mechanisms associated with breeding despite the classic reproduction-somatic maintenance trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 references a specific finding from Ruby et al.'s Figure 3, and C33-C34 cite relevant comparative data from other studies. However, the authors explicitly state this pattern requires 'corroboration by a stricter, unbiased analysis' before drawing firm conclusions (C34). The hypothesis about evolved life-prolonging mechanisms (C35) is presented as speculation ('may have evolved') rather than demonstrated fact. The result is uncertain because: (1) it relies on Ruby et al.'s potentially biased dataset, (2) the comparative pattern across species is suggestive but not conclusive, and (3) the mechanistic explanation remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Even if naked mole-rats exhibit delayed Gompertzian aging over much of their lifespan, they may still age in later years. Evidence for aging phenotypes includes age-associated pathologies in individuals >28 years old and various aging phenotypes documented in the scientific literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are appropriately cautious, presenting the possibility of late-life aging as speculation ('may nonetheless age') supported by cited evidence. C38 references specific findings from Edrey et al. (2011) about pathologies in old animals, and C39 cites multiple sources documenting aging phenotypes. This result serves as a counterpoint to Ruby et al.'s 'non-aging' conclusion by highlighting existing evidence of senescence, though it does not definitively prove aging occurs. The claims are well-supported as a literature-based argument for caution in interpreting the Ruby et al. findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Ruby et al. (2018) analyzed lifespan data from >3,200 naked mole-rats over ~38 years and concluded that mortality hazards do not increase across the observed lifespan, identifying naked mole-rats as 'non-aging mammals' that defy Gompertz's law.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 accurately summarize the Ruby et al. (2018) study being critiqued. These are factual statements about what Ruby et al. reported, supported by direct citation (C1-C3). This result establishes the context for the subsequent critical analysis and is well-supported as a description of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The maximum recorded lifespan of naked mole-rats is >33 years, and the Ruby et al. observation period spans approximately 38 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 references established knowledge about naked mole-rat longevity records, and C42 is calculated from information provided in the Ruby et al. dataset (76% of observation period = ~30 years, therefore total \u2248 38 years). These are factual baseline claims that provide context for evaluating the dataset's temporal coverage relative to species lifespan. The calculations are straightforward and the longevity record is verifiable from the literature.",
+    "result_type": "MINOR"
+  }
+]

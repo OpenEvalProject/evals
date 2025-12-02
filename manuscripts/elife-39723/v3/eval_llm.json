@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C40",
+      "C41",
+      "C42",
+      "C100"
+    ],
+    "result": "McdA binds DNA in an ATP-dependent manner and does not form filaments in vitro. EMSA and TIRFM experiments demonstrate that McdA-GFP-His and His-MBP-McdA shift DNA only in the presence of ATP, uniformly coat DNA surfaces without forming visible polymers, and show no binding with ADP, ATP-\u03b3-S, or absence of nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C40-C42, and C100 are strongly supported by complementary in vitro assays (EMSA and TIRFM) using multiple McdA constructs. The data consistently show ATP-dependent DNA binding without filament formation at the resolution limits tested. The use of multiple tagged variants and nucleotide conditions provides robust evidence against a cytoskeletal model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C101"
+    ],
+    "result": "N-terminally tagged mNG-McdA displays robust oscillations along the nucleoid in vivo, while C-terminally tagged McdA-mNG does not oscillate. The N-terminal fusion oscillates with a periodicity of 15.3 min per 3.3 \u03bcm (5-6\u00d7 faster than previously reported), maintains carboxysome positioning, and colocalizes with the DAPI-stained nucleoid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C36-C39, and C101 are well-supported by microscopy data from native fluorescent fusions with large sample sizes (n=950 and n=442 cells). The tag position-dependent differences in oscillation behavior are clearly documented, and the colocalization with nucleoid provides strong evidence that McdA uses the nucleoid as a scaffolding surface. The comparison to previous work is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C4",
+      "C62"
+    ],
+    "result": "McdB (Synpcc7942_1834) is essential for McdA oscillatory dynamics. Deletion of McdB results in complete loss of mNG-McdA oscillations, while deletion of other candidate genes (parB, Synpcc7942_1835) has no effect. In the absence of carboxysomes, McdA also fails to oscillate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C4, and C62 are strongly supported by systematic genetic deletion experiments with large sample sizes and clear phenotypic differences. The identification of McdB as the critical factor is convincing through the elimination of alternative candidates. The carboxysome-dependence of oscillation (C62) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C104"
+    ],
+    "result": "McdB is a novel 17 kDa protein with no homology to ParB family members, predicted to consist mainly of alpha-helices. McdA and McdB can self-associate and interact with each other in bacterial two-hybrid assays, with N-terminal tagging required for optimal McdA-McdB interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C104 are supported by bioinformatic analysis (BlastP, jPred4) and bacterial two-hybrid experiments. The lack of ParB homology is clearly established, and the interaction data show consistent patterns across different tagging configurations. However, the structural predictions are computational and would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C5",
+      "C53",
+      "C6",
+      "C54",
+      "C55"
+    ],
+    "result": "McdA exhibits unusually high intrinsic ATPase activity (>200-fold higher than traditional ParA proteins) despite lacking the signature N-terminal lysine in the Walker-A motif. McdB stimulates McdA ATPase activity synergistically with DNA and promotes McdA release from DNA, though McdB alone does not bind DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55, C5, and C6 are well-supported by sequence analysis and multiple biochemical assays (ATPase activity, EMSA). The unusually high ATPase activity is confirmed through co-elution experiments ruling out contamination. The synergistic stimulation by McdB and DNA is demonstrated, though the magnitude of stimulation (2-3 fold) is modest compared to canonical ParAB systems. The EMSA data clearly show McdB-mediated DNA release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C3",
+      "C61",
+      "C102"
+    ],
+    "result": "McdB localizes to carboxysomes in vivo. N-terminally tagged mNG-McdB appears as discrete foci that strongly colocalize with carboxysome marker RbcS-mTQ (PCC=0.92), while C-terminal fusions show diffuse localization. In the absence of carboxysomes (\u0394ccmK2LMNO), mNG-McdB signal becomes diffuse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C3, C61, and C102 are strongly supported by microscopy data with large sample sizes and quantitative colocalization analysis. The tag position-dependent localization pattern is consistent with the McdA results. The loss of McdB localization in carboxysome-deficient strains provides strong evidence for direct or indirect carboxysome association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C105"
+    ],
+    "result": "McdB interacts with multiple carboxysome shell proteins (CcmK2, CcmK3, CcmK4, CcmL, CcmO) but not CcmP, while McdA shows no direct interaction with shell proteins. This interaction requires N-terminal tagging of McdB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, and C105 are supported by systematic bacterial two-hybrid screening. The specificity of McdB interactions with multiple shell proteins but not CcmP is clearly demonstrated. However, the authors appropriately note that B2H results should be interpreted cautiously and that McdB could be 'sticky' or interact through an adaptor protein. The lack of McdA-shell protein interaction is also clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Deletion or overexpression of McdA or McdB disrupts carboxysome positioning and ultrastructure. In \u0394mcdB and \u0394mcdA strains, carboxysomes form large irregular clusters, McdA oscillations are lost, but McdB still localizes to carboxysomes in \u0394mcdA. Overexpression of McdB produces bar-shaped carboxysome structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are well-supported by extensive microscopy data with large sample sizes and clear phenotypic differences. The genetic perturbations produce consistent and interpretable phenotypes. The TEM data (referenced in Figure 5) provides additional ultrastructural evidence. The bar-shaped structures upon McdB overexpression are particularly striking and suggest a role in carboxysome biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C7",
+      "C8",
+      "C106"
+    ],
+    "result": "Carboxysomes create local McdA depletion zones on the nucleoid and move toward higher McdA concentrations. In cells with 1-2 carboxysomes, mNG-McdA is depleted near carboxysomes (PCC=0.20), and time-lapse imaging shows directed carboxysome movement toward regions of higher McdA concentration, with McdA re-recruitment between separated carboxysomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C84-C88, C7, C8, and C106 are strongly supported by innovative experiments using inducible carboxysome systems to control carboxysome number. The microscopy data clearly show McdA depletion zones and directed movement. The time-lapse imaging provides direct evidence for the Brownian-ratchet mechanism. The quantitative PCC analysis strengthens the depletion zone observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Following IPTG induction to generate multiple carboxysomes, mNG-McdA oscillations emerge throughout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by microscopy data showing reconstitution of oscillations upon carboxysome formation. This demonstrates that oscillations are an emergent property requiring multiple carboxysomes, supporting the proposed mechanism. The large sample size (n=439 cells) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C113"
+    ],
+    "result": "Carboxysomes display hexagonal packing at high densities and linear arrangements at lower densities. Hexagonal packing correlates with high carboxysome numbers relative to cell length and is observed in hyperelongated cells. Computational Brownian-ratchet modeling predicts that \u22645 carboxysomes distribute linearly while \u22656 carboxysomes adopt hexagonal packing on rod-shaped nucleoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93, C95, and C113 are well-supported by microscopy observations in normal and hyperelongated cells, combined with computational modeling. The correlation between carboxysome density and packing arrangement is clearly demonstrated. The modeling successfully recapitulates the experimental observations, supporting the Brownian-ratchet mechanism. The observation that carboxysomes always colocalize with nucleoid clusters in elongated cells provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C114"
+    ],
+    "result": "McdAB homologs exist in other cyanobacteria and can function in S. elongatus. S. elongatus McdA and McdB share 22.5% and 18.4% sequence identity with G. kilaueensis JS1 homologs, respectively. Despite low sequence identity, G. kilaueensis McdB colocalizes with S. elongatus carboxysomes (PCC=0.79). Bioinformatic analysis shows mcdA/B-like sequences frequently occur near \u03b1- and \u03b2-carboxysome operons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 and C114 are supported by sequence analysis and functional complementation experiments. The cross-species functionality of McdB despite low sequence identity suggests conserved structural or charge-based interactions. The bioinformatic analysis showing genomic association with carboxysome operons supports widespread distribution of the McdAB system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C24"
+    ],
+    "result": "McdA and McdB utilize a Brownian-ratchet mechanism rather than a cytoskeletal system to position carboxysomes. This model is consistent with asymmetric McdA distributions on the nucleoid driving directed carboxysome movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, and C24 represent the central mechanistic model proposed by the authors. This model is well-supported by the convergence of multiple lines of evidence: (1) lack of McdA filament formation in vitro, (2) McdA binding to nucleoid, (3) McdB-mediated McdA depletion zones, (4) directed carboxysome movement toward McdA gradients, (5) computational modeling recapitulating experimental observations, and (6) carboxysome number-dependent emergence of oscillations. While the model is inferential, it is strongly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "McdB likely has a distinct evolutionary origin from ParB-family members but convergently evolved to use nucleoid gradients of ParA-like proteins. McdB-carboxysome interactions are likely mediated by structural and/or charge features common to many shell proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107 and C108 are explicitly speculative hypotheses based on the lack of sequence homology and the cross-species functionality of McdB. While the observations support these hypotheses, they remain inferences without direct structural or evolutionary evidence. The authors appropriately present these as speculative interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Two alternative hypotheses are proposed for McdA oscillation emergence: (1) oscillation is a byproduct of multiple carboxysomes removing McdA along the nucleoid, or (2) oscillation depends on balanced McdA/McdB activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109 and C110 are explicitly presented as alternative speculative hypotheses. The data show that oscillations emerge with multiple carboxysomes and are lost with McdA/McdB imbalance, but the precise mechanism remains unclear. These hypotheses are appropriately presented as areas for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "McdA and McdB may directly regulate carboxysome size and shape during biogenesis, with the McdA/McdB ratio potentially influencing carboxysome size differences across environmental conditions or species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111 and C112 are speculative hypotheses based on observed changes in carboxysome ultrastructure in mutant and overexpression strains. While the TEM data clearly show altered carboxysome morphology, the authors appropriately note they cannot rule out indirect effects. The dramatic bar-shaped structures upon McdB overexpression are suggestive but require further mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background information on carboxysomes and bacterial microcompartments, including their structure, function, distribution, and ecological importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C17 provide established background knowledge supported by appropriate citations. These claims accurately represent the current understanding of carboxysomes and BMCs in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background information on ParA family proteins, their historical models, and recent challenges to cytoskeletal models in favor of Brownian-ratchet mechanisms for DNA segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C29 accurately summarize prior work on McdA and ParA family proteins, appropriately citing relevant literature. These claims provide essential context for understanding the novelty of the current work.",
+    "result_type": "MINOR"
+  }
+]

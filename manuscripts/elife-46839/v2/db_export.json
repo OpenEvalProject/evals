@@ -1,0 +1,2040 @@
+{
+  "submission": {
+    "id": "cc6f5828-fb19-4105-bf0c-45ca5187e454",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:59:26.231977Z",
+    "updated_at": "2025-12-02T10:59:26.231977Z"
+  },
+  "content": [
+    {
+      "id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "submission_id": "cc6f5828-fb19-4105-bf0c-45ca5187e454",
+      "content_type": "manuscript",
+      "content_text": "# Local synaptic inputs support opposing, network-specific odor representations in a widely projecting modulatory neuron\n\n## Authors\n\n- Xiaonan Zhang<sup>1</sup> ([ORCID: 0000-0003-3181-3648](https://orcid.org/0000-0003-3181-3648))\n- Kaylynn Coates<sup>2</sup> ([ORCID: 0000-0003-2592-8908](https://orcid.org/0000-0003-2592-8908))\n- Andrew Dacks<sup>2</sup> ([ORCID: 0000-0002-6805-4211](https://orcid.org/0000-0002-6805-4211))\n- Cengiz G\u00fcnay<sup>3</sup> ([ORCID: 0000-0001-7586-571X](https://orcid.org/0000-0001-7586-571X))\n- J Scott Lauritzen<sup>4</sup>\n- Feng Li<sup>4</sup> ([ORCID: 0000-0002-6658-9175](https://orcid.org/0000-0002-6658-9175))\n- Steven A Calle-Schuler<sup>4</sup>\n- Davi Bock<sup>4</sup> ([ORCID: 0000-0002-8218-7926](https://orcid.org/0000-0002-8218-7926))\n- Quentin Gaudry<sup>1</sup> ([ORCID: 0000-0002-6869-1253](https://orcid.org/0000-0002-6869-1253)) \u2020\n\n### Affiliations\n\n1. Department of Biology University of Maryland College Park United States\n2. Department of Biology West Virginia University Morgantown United States\n3. School of Science and Technology Georgia Gwinnett College Lawrenceville United States\n4. Janelia Farm Research Campus Howard Hughes Medical Institute Ashburn United States\n5. Department of Neurological Sciences, Larner College of Medicine University of Vermont Burlington United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSerotonin plays different roles across networks within the same sensory modality. Previously, we used whole-cell electrophysiology in Drosophila to show that serotonergic neurons innervating the first olfactory relay are inhibited by odorants (Zhang and Gaudry, 2016). Here we show that network-spanning serotonergic neurons segregate information about stimulus features, odor intensity and identity, by using opposing coding schemes in different olfactory neuropil. A pair of serotonergic neurons (the CSDns) innervate the antennal lobe and lateral horn, which are first and second order neuropils. CSDn processes in the antennal lobe are inhibited by odors in an identity independent manner. In the lateral horn, CSDn processes are excited in an odor identity dependent manner. Using functional imaging, modeling, and EM reconstruction, we demonstrate that antennal lobe derived inhibition arises from local GABAergic inputs and acts as a means of gain control on branch-specific inputs that the CSDns receive within the lateral horn.\n\n## Introduction\n\nVirtually all neuronal circuits are subject to neuromodulation from both neurons intrinsic to a network and extrinsic centrifugal sources (Katz, 1995; Lizbinski and Dacks, 2017). In vertebrates, extrinsic modulation is often supplied by nuclei located deep within the brainstem that release a variety of transmitters such as norepinephrine (NE) (Schwarz and Luo, 2015), serotonin (5-HT) (Charnay and L\u00e9ger, 2010; Hornung, 2003), dopamine (DA) (Ikemoto, 2007; Lammel et al., 2008), or acetylcholine (Ach) (Wenk, 1997). For example, the olfactory bulb (OB) in mammals receives a tremendous amount of centrifugal innervation (Padmanabhan et al., 2018) that can be critical for proper olfactory behavior (Nunez-Parra et al., 2013). However, by spanning and innervating most cortical and subcortical regions, modulatory systems target multiple points along the sensory-motor axis of functional circuits. A prominent view of such modulatory systems is that they provide a mechanism for top-down regulation of sensory processing (Jacob and Nienborg, 2018; Thiele and Bellgrove, 2018) and help coordinate activity across brain regions (Melzer et al., 2012). Modulatory systems are traditionally regarded as integrate-and-fire models where the neurons integrate synaptic inputs in their dendrites within their local nuclei and use action potentials to broadcast this signal to release sites across sensory networks. Such models imply that modulator release will be inherently correlated across distal targets. However, as virtually all axons are subject to pre-synaptic regulation (Miller, 1998), it is likely that most centrifugal modulatory neurons are subject to local influences by the circuits that they infiltrate. This suggests that the local release of transmitters from such systems may instead be decorrelated across brain regions. Decorrelating transmitter release across brain regions is advantageous, as it would provide greater flexibility in how neuromodulation may be employed. How transmitter release is locally regulated in modulatory neurons and how signals propagate through their processes has been exceedingly difficult to study in vertebrate systems due to many contributing factors. First, the vertebrate cerebrum is large and imaging the extensive processes of such neurons across brain areas requires specialized tools (Lecoq et al., 2014; Sofroniew et al., 2016; Stirman et al., 2016; Terada et al., 2018). Second, individual modulatory neurons within the same brainstem nucleus are highly heterogeneous in their projection patterns (Gagnon and Parent, 2014; van der Kooy and Kuypers, 1979) making it difficult to assign activity across brain regions to individual cells. Additionally, the spatial pattern of extrinsic input activation can also be stimulus specific. For example, different odors can activate unique presynaptic terminals from piriform neurons that feed back into the OB (Otazu et al., 2015). But whether such odor responses in centrifugal inputs arise from the recruitment of different individual cortical neurons or from local axo-axonic interactions within the OB remains unknown. The spatial pattern of cholinergic input to the OB is also odor-specific and arises through similarly undescribed mechanisms (Rothermel et al., 2014).\n\nThe Drosophila brain is an ideal preparation to study how signals propagate through wide-field modulatory neurons because such cells are often stereotyped and can be genetically targeted across individual flies. For example, only one serotonergic neuron per hemisphere, termed the contralaterally-projecting serotonin-immunoreactive deuterocerebral neuron (CSDn), innervates both the first and second order olfactory neuropils in the fly brain (Coates et al., 2017; Dacks et al., 2006; Roy et al., 2007; Sun et al., 1993) (Figure 1A). CSDns can be targeted genetically (Roy et al., 2007) and affect various olfactory behaviors involving appetitive (Xu et al., 2016) and pheromonal odorants, including cis-vaccenyl acetate (cVA) (Singh et al., 2013). The modulation of cVA-evoked behavioral responses is especially interesting because the CSDns are thought to participate in top-down modulation and to have their effects mainly in the first olfactory relay, the antennal lobe (AL) (Hill et al., 2002; Singh et al., 2013; Sun et al., 1993). However, CSDn processes avoid the cVA-sensitive DA1 glomerulus (Coates et al., 2017; Zhang and Gaudry, 2016) and DA1 projection neuron (PN) odor responses are not modulated with strong CSDn stimulation (Zhang and Gaudry, 2016). Finally, whole-cell recordings show strong inhibition of the CSDn during stimulation with cVA (Zhang and Gaudry, 2016). This suggests that the modulatory effects of the CSDns on cVA-guided behavior may not occur in the AL, but rather in one of the other olfactory neuropil that the CSDns innervate. Because the CSDns express pre- and postsynaptic markers throughout their arborizations (Zhang and Gaudry, 2016), it is possible that transmitter release is locally regulated via inputs from their target networks (Gaudry, 2018) and that olfactory-mediated modulation occurs predominantly downstream of the AL. In this study we employed 2-photon calcium imaging, electron microscopy, and compartmental modeling to show that the CSDns integrate synaptic inputs locally within their target regions giving rise to distinct odor evoked activity patterns within different olfactory neuropil.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46839/elife-46839-fig1-v2.jpg)\n\n**Figure 1.:** (A) A single CSDn expressing GFP shows processes in both the AL and the LH. White\u00a0=\u00a0GFP expression, blue\u00a0=\u00a0neuropil labeling via N-cadherin immunocytochemistry. Scale bar\u00a0=\u00a050 um. (B) Background fluorescence from GCaMP6s expression in CSDn neurites in the AL. L\u00a0=\u00a0lateral, p=posterior. The same notation is used in subsequent figures (C) Odor-evoked changes in calcium (\u0394F/F) levels in the AL processes of the CSDn. Cooler colors (blue) represent decreases in calcium levels and warmer (red) colors show increases in calcium. Color bar values are set to the maximum and minimum pixel value across all odors. Images are generated from volumetric stacks by first averaging the z-stack for each volume during the trial to generate 2D frames, and then averaging across three frames during the peak of the odor response. Each odor was presented 3\u20134 times and final image is the mean frame of these trials. Odors are diluted 10\u22122 in paraffin oil (PA), which serves as a solvent control. Images are scaled and oriented as in B. (D) Odor responses ranked according to the strength of the observed inhibition (n\u00a0=\u00a010). From left to right, p=0.06, p=0.81, p=0.51, p=0.0097, p=0.0022, p=0.0052, p=0.0051, p=0.0012, p=0.0017, p=1.82\u00d710\u22124, p=2.95\u00d710\u22126, p=2.50\u00d710\u22125. Student\u2019s t-test. *=p\u00a0<\u00a00.01, **=p\u00a0<\u00a00.001. (E) Odor-evoked inhibition observed in the CSDn soma via whole-cell patch-clamp recording. (F) Principal component analysis performed on the spatial pattern at the peak of the odor responses. White outline represents an ROI used to mask pixels outside of the AL for PCA. The first three PCs are shown. A structured response is only observed in PC1. Images are scaled and oriented as in B. The variance and SEM explained by PCs 1\u20133 are 60.3 \u00b1 2.2%, 6.3 \u00b1 0.4%, and 6.1 \u00b1 0.3%, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46839/elife-46839-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The same data as Figure 1C are displayed but with a rescaled color bar.\n\n## Results\n\nTo examine how CSDns contribute to olfactory processing across brain regions, we employed GCaMP6s (Chen et al., 2013) and 2-photon volumetric microscopy to characterize olfactory responses across their arbors. We initially imaged CSDn neurites in the AL (Figure 1B, Figure 1\u2014video 1) and found that nearly all compounds in a diverse panel of odorants resulted in inhibition (Figure 1C and D and Figure 1\u2014figure supplement 1). The only exception was ammonia, which produced a weak level of excitation as previously reported in whole-cell somatic recordings (Zhang and Gaudry, 2016). These results are consistent with previous studies demonstrating that odors generally inhibit the CSDns during electrophysiological somatic recordings (Figure 1E) (Zhang and Gaudry, 2016), which is due to prominent input from GABAergic local interneurons (LN) (Coates et al., 2017; Zhang and Gaudry, 2016).\n\nInhibition in the AL scales with increasing odor intensity and the spatial pattern of activation of GABAergic LNs is odor invariant (Hong and Wilson, 2015). Inhibition of the CSDn also scales with odor intensity (Zhang and Gaudry, 2016), but it is unknown if unique odors can recruit distinct spatial patterns of CSDn activity within its dendrites in the AL. We used principal component analysis (PCA) to examine the spatial profile of CSDn inhibition in response to our odor panel. This analysis revealed that only the first PC generated a structured image showing inhibition in the AL while PC2 captured the excitation resulting from stimulation with ammonia (Figure 1F). Thus, aside from ammonia, CSDn processes in the AL receive odor-invariant inhibition, and this inhibition scales with odor intensity (Zhang and Gaudry, 2016).\n\nWe next examined CSDn processes in the lateral horn (LH; Figure 2A), a brain region that receives direct input from the AL and mediates innate olfactory behaviors (de Belle and Heisenberg, 1994). Surprisingly, we found that every odorant in our panel produced excitation in the CSDn LH arbors (Figure 2B, Figure 2\u2014video 1). Furthermore, PCA revealed that CSDn odor responses in the LH varied spatially (Figure 2C, Figure 2\u2014figure supplement 1) and displayed a greater coefficient of variation compared to responses in the AL (Figure 2D). These results show that the processes of the CSDn have opposing responses to odor stimulation across different olfactory regions (Figure 2E). The CSDn has both pre- and postsynaptic sites in the LH (Zhang and Gaudry, 2016), so GCaMP signaling could represent either the activation of CSDn postsynaptic receptors or calcium influx at presynaptic release sites. Some GCaMP signaling in the LH must represent local activation of postsynaptic receptors in the CSDn since its AL processes are simultaneously inhibited. To assess whether this activity also correlates with synaptic release from the CSDn, we employed sytGCaMP6s, a variant of the calcium sensor that is tethered to synaptotagmin and trafficked to presynaptic release sites (Cohn et al., 2015). Olfactory stimulation showed increased sytGCaMP6s signaling (Figure 2\u2014figure supplement 2), suggesting odorants likely evoke transmitter release in the LH processes of the CSDn.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46839/elife-46839-fig2-v2.jpg)\n\n**Figure 2.:** (A) Background fluorescence from GCaMP6s expression in CSDn neurites in the LH. (B) Odor-evoked changes in calcium observed in CSDn processes in the LH. Odor scale bar\u00a0=\u00a020 \u03bcm (C) Principal component analysis performed on the spatial pattern at the peak of the odor responses for a sample preparation. White outline represents an ROI used for masking during PCA.The first three PCs are shown. A structured response is observed in each PC. Images are scaled as in B. The variance and SEM explained by PCs 1\u20133 are 45.2 \u00b1 2.6%, 12.4 \u00b1 0.9%, and 8.6 \u00b1 0.6%. (D) The coefficient of variation for odor responses in the AL and LH. n\u00a0=\u00a010, AL and n\u00a0=\u00a08, LH. p=0.0021, Student\u2019s t-test. The CV was calculated for each pixel in the odor response images and averaged across pixels for each preparation. (E) A comparison of the time series of \u0394F/F responses in the AL and LH to a single odorant, p-cresol. The response is the averaged across 10 animals in the AL and eight in the LH. Error bars represent SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46839/elife-46839-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The first 3 PC images are shown for three sample preparations (of our total data set of 8 animals). White ROI demarcates the boundaries of the LH. Note that for each preparation, PC1 shows activation of a core region of the LH, PC2 shows activation in outer shell region, and PC3 shows inhibition in the central core of the LH. (B) Differences in precise branching patterns of the CSDn across flies may contribute to the variability in odor responses across flies. Three CDNs are labeled in different flies and the exact branching pattern is unique to each animal.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46839/elife-46839-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) A schematic of the Drosophila brain and the region of imaging. (B) Odor responses measured with sytGCaMP6s revealing activation of presynaptic release sites in one preparation. Similar results were obtained in eight preparations in total. (C) Skeleton of the CSDn reconstruction in the lateral horn. Blue markers represent postsynaptic sites while red markers represent presynaptic sites. Scale bar\u00a0=\u00a050 um. (D - E) Insets from (A) highlighting the proximity of presynaptic and postsynaptic sites. (F) A histogram showing the distribution of distances to the closest postsynaptic site to each presynaptic site in the CSDn. Because pre- and postsynaptic sites occur in such close proximity, it is possible that calcium entry from postsynaptic receptors may directly cause presynaptic release. Additionally, overexpression of the sytGCaMP6s at presynaptic release sites could potentially allow the sensor to report calcium entry at postsynaptic receptors.\n\nTo determine if spatial patterns of CSDn odor-evoked activity in the LH were odor-specific, we quantified the similarity between CSDn odor responses by first computing the spatial correlation between them (Figure 3A). We then calculated the Euclidean linkage distance between all odor correlations to illustrate which odors are most similarly encoded in the neurites of the CSDn in the LH (Figure 3B). How might odor specific responses arise in the CSDn processes in the LH? PNs are a potential source of excitatory input to the CSDns in the LH as they are cholinergic, and their axons segregate anatomically (Jefferis et al., 2007; Tanaka et al., 2004) and functionally (Min et al., 2013; Seki et al., 2017; Strutz et al., 2014) in this region. We compared the odor representations of PN and CSDn processes within this structure to determine if PNs may provide excitatory drive to the CSDn branches in the LH. The linkage distance between the spatial pattern of odor responses was highly correlated between PN and CSDn responses in the LH (Figure 3C and Figure 3\u2014figure supplement 1). These data suggest that PNs may provide direct synaptic input onto the CSDn locally in the LH. Using synaptobrevin GFP Reconstitution Across Synaptic Partners (syb:GRASP) (Feinberg et al., 2008; Macpherson et al., 2015) we observed a positive signal for PNs synapsing onto the CSDns (Figure 3D\u2013F) in the LH. We further verified this synaptic connection by looking at the connectivity of a CSDn reconstructed within a whole fly brain EM dataset (Zheng et al., 2018). PNs from at least 17 glomeruli (presynaptic PN tracings provided as a personal communication from Greg Jefferis, Phillipp Schlegel, Alex Bates, Marta Costa, Fiona Love and Ruari Roberts) show direct input to the CSDn throughout the LH (Figure 3G\u2013I). Together these results suggest that the CSDns receive input from different cell classes in the AL and LH to shape its olfactory responses locally. In the AL, GABAergic LNs constitute a major input to the CSDns and drive inhibitory responses independent of odor identify. PNs make relatively few synaptic connections with the CSDns in the AL (Coates et al., 2017). In the LH, olfactory responses in the CSDn neurites are excitatory, odor specific, and are likely in part shaped by direct PN input.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46839/elife-46839-fig3-v2.jpg)\n\n**Figure 3.:** (A) A cross correlation of the spatial profile of odor responses in CSDn LH processes. (B) Clustering analysis using the Euclidean distance between correlations for odor pairs from (A). (C) Regression analysis on correlation distances between odor responses in processes of the CSDn and PN axons in the LH (R2\u00a0=\u00a00.77, p=4.07*10\u221222, n\u00a0=\u00a010 preparations for CSDn and n\u00a0=\u00a05 for PN responses). Distances were normalized to the max distance observed for CSDns and PNs. The 66 open circles represent the distances for each odor pair (12 odors and 66 pairwise comparisons). PN odor responses where measured using GCaMP6s and the GH146-Gal4 promoter. (D\u2013F) GRASP images showing direct synaptic input from PNs onto CSDn terminals. Green\u00a0=\u00a05 HT antibody to label CSDn processes, yellow\u00a0=\u00a0syb GFP subunits 1\u201310 expressed in PN axons, magenta\u00a0=\u00a0syb GRASP labeling of synapses. Scale bars\u00a0=\u00a020 \u03bcm. (G) EM image of a direct VA1d PN synapse onto a CSDn neurite in the AL Scale bar\u00a0=\u00a0500 nm. (H) EM reconstruction of the CSDn (black) arbors in the LH (grey boundary). Location of individual PN synapses onto the CSDn are marked in green. Scale bar\u00a0=\u00a025 um. (I) A total count of PN synapses onto the CSDn in the LH separated by glomerular identity. Glomeruli are listed above and below bars for clarity. DM2 is represented twice as two synapses arose from one DM2 PN and another synapse was identified from another DM2 PN. Counts taken from one female brain.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46839/elife-46839-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Calcium responses of PN axons in the LH revealed with GCaMP6s and the GH146-Gal4 promoter. PCA analysis shows several unique patterns of activation are required to explain the variance in the data set of odor response. (B) Clustering analysis on the Euclidean distance of correlations across odors in PN responses in the LH (n\u00a0=\u00a05).\n\nThe function of a neuron is often dictated by the manner in which synaptic inputs are integrated across its dendritic arbor. We therefore asked whether the AL and LH neurites of the CSDn function as electrotonically independent compartments within the same cell, or if signals propagate between regions during odor sampling. To examine how voltage spreads throughout the CSDn, we built a passive compartmental model based on an anatomical reconstruction of the CSDn generated from the whole fly brain EM dataset (Carnevale and Hines, 2006; Zheng et al., 2018) (Figure 4A and Figure 4\u2014figure supplement 1). While such models ignore the contributions of active conductances or variations in passive properties across dendrites, they can nevertheless provide insight into signal propagation and help formulate hypotheses. The model was generated by adjusting the membrane capacitance (Cm), the membrane conductance (gleak), and the axial resistance (Ra) so that simulated current injections into the model soma matched physiological responses taken in vivo (Figure 4B). A wide range of models with varying properties provided reasonable fits to the in vivo CSDn recordings. In these models, injecting simulated hyperpolarizing IPSPs into the AL resulted in varying amounts of spread throughout the neurites of the CSDn. In some models, the hyperpolarization was constrained only to the local injection site (Figure 4C), while in other models the hyperpolarization spread throughout the AL (Figure 4D). However, whole-cell recordings in vivo show that the inhibition arising from the AL indeed spreads to the soma (Zhang and Gaudry, 2016). Several of the models that we generated displayed this property. Importantly, all models that displayed somatic inhibition when current was injected into the CSDn processes in the AL also showed inhibition in the LH (Figure 4E). These results suggest that the geometry and passive properties of the CSDn allow the propagation of inhibition from the AL to the LH during olfactory stimulation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46839/elife-46839-fig4-v2.jpg)\n\n**Figure 4.:** (A) Morphological EM reconstruction of the CSDn arborizations used for a biophysical model consisting of 6056 compartments. (B) Somatic membrane potential changes in response to a white-noise current injection during an in vivo CSDn recording compared to responses of a passive compartmental model, to the same stimulus, fitted by optimizing three anatomical parameters, Cm (\u03bcF/cm2), gleak (S/cm2), and Ra (\u03a9cm), (C) An example of a model with well-fit somatic responses where a hyperpolarizing current injection in the AL resulted in highly localized voltage changes in AL only. A time series of voltage responses are shown for the soma, AL, and LH as gray traces near those structures. Cm\u00a0=\u00a04.8, gleak\u00a0=\u00a03094.3, and Ra\u00a0=\u00a0149.0183. Horizontal scale bar\u00a0=\u00a05 ms and vertical scale bar\u00a0=\u00a05 mV. (D) A similar model where injection of the current in the AL causes a voltage change throughout a greater portion of the AL. Cm\u00a0=\u00a04.8, gleak\u00a0=\u00a02911.3, and Ra\u00a0=\u00a028.83. Scale bars as in C. (E) A sample model where current injection into the AL causes both somatic and LH voltage changes. Cm\u00a0=\u00a01.8,wgleak\u00a0=\u00a077.33, and Ra\u00a0=\u00a00.12. See\u00a0Table 1 for full model properties .Scale bars as in C. (F) The proportion of voltage signal observed in the LH, AL, and cell body (CB) when voltage changes are induced in each region. The same model as in panel E was used to generate the data. Left, voltage steps are induced into the AL and voltage deflections are reported in the LH and CB. Right, voltage steps are induced in the LH and their effects are measured in the AL and CB. Horizontal scale bar\u00a0=\u00a010 ms and vertical scale bar\u00a0=\u00a010 mV. (G) A 2P image of basal GCaMP6s signal showing the effects of laser ablation in the CSDn LH neurite. (H) Basal GCaMP6s signals remain in the LH after laser ablation. (I) \u0394F/F responses of CSDn neurites in the LH to a set of odorants before and after laser ablation. (J) A times series of the changes in calcium levels in response to odorants in (I). (K) Left, quantification of odor response amplitudes in CSDn LH neurites before and after laser ablation. Right, control responses when the contralateral processes of the CSDn where ablated. Left column, top to bottom, p=0.0187, p=0.0067, p=0.0154; Right column, top to bottom p=0.2298, p=0.8958, p=0.1611. *=p\u00a0<\u00a00.05, **=p\u00a0<\u00a00.01, n.s.\u00a0=\u00a0not significant and p>0.05, paired Student\u2019s t-tests.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46839/elife-46839-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Reconstruction of the CSDn skeleton from the whole brain EM volume. Thickened processes indicate individual sampling locations from which 20\u201350 measures were taken. Inset box or brackets indicate individual regions from which multiple samples were taken and shown in more detail in subsequent panels. (B) Axon radius sampling locations from the main branch of the CSDn. (C) Sampling locations from the CSDn process passing through the superior-medial protocerebrum (SMP) to the LH. (D) Sampling locations from six separate branches of the CSDn in the LH (boundary shaded in grey).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46839/elife-46839-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Experimental approach as in Figure 4G -K. Top, basal fluorescence of GCaMP6s signal before and after ablation of the processes connecting the AL and LH. Bottom, \u0394F/F responses of CSDn neurites in the LH to cVA. (B) Top, a time course of the calcium response to cVA before and after laser ablation. Bottom, quantification of the data in A and B for ipsilateral and contralateral control lesion experiments.\n\nThe propagation of voltages through the dendrites of neurons is not always symmetrical and can be biased by impedance mismatches as well as differences in the diameters of intersecting branches (Stuart et al., 2016). We therefore asked if voltage changes generated in the LH would propagate as efficiently to the AL compared to the opposite direction. We injected current into the either the LH or the AL of the model to elicit voltage changes of similar magnitudes and calculated the proportion of the signal that propagated to the other region. This approach revealed that the geometry of the CSDn arbors favor the propagation of voltage signals from the AL preferentially to the LH (Figure 4F).\n\nIf voltage signals preferentially propagate from the AL to the LH, one would predict that isolating the CSDn processes in the LH from the rest of the CSDn would boost any odor evoked excitation due to local input within the LH. We therefore used 2-photon laser ablation to sever the CSDn neurites just proximal to their entrance into the LH. This manipulation isolates the LH processes of the CSDn from the AL, while still allowing these neurites to respond to synaptic input within the LH (Figure 4G and H). Olfactory responses to all odors tested increased in the processes of the CSDn in the LH following the removal of AL inhibition (Figure 4I,J and K). As a control for the non-specific damage of laser ablation, we severed the branches of the CSDn in the contralateral hemisphere and found that this had no impact on odor responses in the intact branches of the CSDn in the ipsilateral LH (Figure 4K). These results demonstrate that during normal odor sampling, inhibition from the AL propagates to suppress olfactory responses in the LH.\n\n## Discussion\n\nThere has been a recent interest in characterizing the structures that provide input to serotonergic neurons in vertebrates in an attempt to understand the types of processes that might impact 5-HT release (Sparta and Stuber, 2014). Such studies relied on genetically restricted retrograde labeling to identify regions that provide monosynaptic inputs to serotonergic raphe neurons (Ogawa et al., 2014; Pollak Dorocic et al., 2014; Weissbourd et al., 2014). Our functional approach of calcium imaging across brain regions is complementary but has the advantage of revealing where signals are integrated and determining whether the net effect of that integration within is excitatory or inhibitory. Here, we show that a serotonergic neuron with broad arbors integrates locally at multiple neuropil along to the olfactory pathway in Drosophila. Interestingly, synaptic inputs at the first and second order processing stages of olfaction impose opposite polarity responses in this neuron and likely decorrelate synaptic release in distinct target regions. Inhibition dominates responses in the AL and odor-specific excitation is prominent in the downstream LH. This suggests that across a single widely projecting modulatory neuron, branches within distinct neuropils can operate in different manners.\n\n### Local regulation of release in modulatory neurons\n\nClassical methods of studying the activation of modulatory systems during sensory processing in vertebrates rely heavily on recording extracellular spikes in the nuclei that house the neurons\u2019 somas. However, invertebrate studies involving motor systems have shown compartmentalization of neurons spanning distant neuropils (Nikitin et al., 2013; Sasaki et al., 2007). Our results demonstrate that the activity within a single serotonergic neuron can vary across neuropils involved in processing the same sensory modality. As a given modulator may perform distinct functions in different brain regions, local regulation of release allows these functions to be employed independently. For instance, 5-HT in the OB indirectly inhibits OSN terminals and has been proposed to serve a gain control function (Petzold et al., 2009), while in the piriform cortex 5-HT has no effect on stimulus input, but rather only decreases spontaneous activity (Lottem et al., 2016). Additionally, 5-HT has different effects on mitral cells in the main versus mitral cells in the accessory olfactory bulb (Huang et al., 2017). Local regulation of 5-HT release would allow these processes to be engaged in an independent and combinatorial manner, and thus allow for a greater net overall modulatory capacity.\n\nLocal regulation and decoupling of modulator release across synaptic sites is not unique to invertebrates and has been implicated in the normal function of the mammalian DA system. First, DA release is only partially correlated with firing activity, and release can be locally evoked in the absence of spiking in DA cells (Floresco et al., 1998). Additionally, local inactivation of the nucleus accumbens (NA) decreases DA release in the NA without impacting DA neuron firing (Jones et al., 2010). This has led to the theory that DA release can signal both motivation and reward prediction errors (RPE) on similar timescales (Hamid et al., 2016). Dopamine release related to motivation is thought to be shaped by local presynaptic mechanisms while dopamine related to RPE correlates more strongly with the firing properties of DA neurons (Berke, 2018). Measuring serotonergic transmission across release sites is more difficult compared to dopamine (Dankoski and Wightman, 2013), nevertheless, it is highly likely that 5-HT is also regulated by local presynaptic mechanisms (Egashira et al., 2002; Schlicker et al., 1984; Tao and Auerbach, 1995; Threlfell et al., 2004). Whether there is local regulation of 5-HT release in the vertebrate olfactory system is more controversial. EM reconstructions of raphe terminals in the OB have failed to reveal postsynaptic densities in raphe axons (Gracia-Llanes et al., 2010; Suzuki et al., 2015). This may be because such input is extra synaptic (Gaudry, 2018), as is the case with GABAB receptors in the raphe nucleus proper (Varga et al., 2002).\n\n### Multi-dendritic processing\n\nLocal integration in the AL and LH allow the CSDn to independently process and shape sensory information at multiple points in the early olfactory pathway of the fly. Specifically, we found that PN axons directly excite CSDn terminals in the LH in an odor specific manner while CSDn branches in the AL are inhibited. Previous studies have shown that the CSDn soma is also inhibited by odors and that stimulation of the CSDn has little impact on olfactory circuitry in the AL (Zhang and Gaudry, 2016), despite the CSDn being critical for normal olfactory behavior (Singh et al., 2013; Xu et al., 2016). Our current study resolves this issue by suggesting instead that the CSDn modulates behavior by affecting odor-processing in the LH (Figure 4 and Figure 4\u2014figure supplement 2), which has previously been unexplored. What then is the purpose of odor-evoked inhibition in the AL? Inhibition of CSDn processes in the AL does not appear to depend on odor identity as shown in this study, but rather correlates with the total amount of ORN activity that an odor elicits (Zhang and Gaudry, 2016). This can vary with both odor identity or concentration. Our compartmental modeling shows that AL and LH processes of the CSDn are electrotonically connected, but that voltage preferentially passes from the AL to the LH. As CSDn inhibition scales with increasing odor strength due to robust GABAergic LN input in the AL (Coates et al., 2017; Zhang and Gaudry, 2016), this inhibition shunts LH responses proportionally. This configuration ultimately allows olfactory modulation to be odor specific in the LH while being less dependent on odor concentration. Multi-dendritic computing is critical for processing other sensory modalities as well (Ranganathan et al., 2018), but most notably vision (Jones and Gabbiani, 2010; Koren et al., 2017). Synaptic integration between dendrites is used to compute object motion across the visual field on a collision course with the observer. Interestingly, the dendrites of starburst amacrine cells in the mammalian retina express mGluR to isolate dendritic compartments thus preventing integration to non-preferred stimuli while enabling regulated integration specifically to preferred directions of motion (Koren et al., 2017). Our laser ablation experiments demonstrate that CSDn neurites influence one another during olfaction, but it is intriguing that the magnitude of such coupling could be state dependent and regulated by active conductances.\n\n### Top-down versus bottom-up neuromodulation\n\nThe CSDn was originally proposed to participate in top-down modulation by transmitting higher order sensory information from the LH to the AL (Hill et al., 2002; Sun et al., 1993). However, direct evidence for top-down modulation via the CSDn has never been demonstrated. Our results suggest that during olfaction, the CSDn acts more in a bottom-up fashion where responses in the AL have a greater impact on downstream processing in the LH. Transmitter release during olfactory sampling putatively occurs only later in the sensory processing stream rather than at the earliest stages. Interestingly, the CSDn has numerous release sites in the AL (Coates et al., 2017; Sun et al., 1993; Zhang and Gaudry, 2016) and CSDn derived 5-HT directly inhibits several classes of neurons in the AL (Zhang and Gaudry, 2016). But how are CSDn release sites activated in the AL? Olfaction clearly inhibits both the processes of the CSDn in the AL as well at its spike initiation site (Zhang and Gaudry, 2016). However, it is likely that the CSDn also receives input from unidentified non-olfactory sources that excite the neuron's spike initiation site allowing it to modulate in a top-down manner. Further reconstruction of the CSDns inputs in the EM data set will reveal candidates for further physiological evaluation. Thus, non-olfactory stimulation of the CSDn may be consistent with top-down modulation and would constitute one mechanism by which a broadly arborizing modulatory neuron may be multifunctional depending on the source of its excitatory drive. Multifunctional neurons have been well described in central pattern generating networks (Briggman and Kristan, 2008) but are only recently becoming appreciated with regards to neuromodulation (Berke, 2018). Local synaptic interactions within the AL could shape 5-HT release as well to alter olfactory coding in a glomerulus-specific fashion (Kloppenburg and Mercer, 2008). Our findings in Drosophila suggest that integration into local circuits allows modulatory cells greater flexibility in how they participate in sensory processing and may be a feature that is often overlooked when assessing the function of these critical components of the central nervous system.\n\n## Materials and methods\n\n### Odors and odor delivery\n\nOdors were presented as previously described (Zhang and Gaudry, 2016). In brief, a carrier stream of carbon-filtered house air was presented at 2.2 L/min to the fly continuously. A solenoid was used to redirect 200 ml/min of this air stream into an odor vial before rejoining the carrier stream, thus diluting the odor a further 10-fold prior to reaching the animal. All odors were diluted 1:100 in paraffin oil (J.T. Baker VWR #JTS894), except for acids, which were diluted in distilled water. All odors were obtained from Sigma Aldrich (Saint Louis, MO) except for cVA, which was obtained from Pherobank (Wageningen, Netherlands). cVA was delivered as a pure odorant. In our olfactometer design, the odor vial path was split to 16 channels each with a different odor or solvent control. Pinch valves (Clark Solutions, Hudson MA part number PS1615W24V) were used to select stimuli between each trial. Each odor was presented sequentially one trial at a time. Each odor was presented 3\u20134 times within a preparation and the mean of these responses were then averaged across animals.\n\n<table>\n  <thead>\n    <tr>\n      <th>Odors</th>\n      <th>Supplier</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Paraffin oil</td>\n      <td>J.T.Baker CAS: 8012-95-1</td>\n    </tr>\n    <tr>\n      <td>Ammonium hydroxide</td>\n      <td>Sigma-Aldrich CAS: 1336-21-6</td>\n    </tr>\n    <tr>\n      <td>Ethyl acetate</td>\n      <td>Sigma-Aldrich CAS: 141-78-6</td>\n    </tr>\n    <tr>\n      <td>Methyl salicylate</td>\n      <td>Sigma-Aldrich CAS: 119-36-8</td>\n    </tr>\n    <tr>\n      <td>Benzaldehyde</td>\n      <td>Sigma-Aldrich CAS: 100-52-7</td>\n    </tr>\n    <tr>\n      <td>3-hexanone</td>\n      <td>Sigma-Aldrich CAS: 589-38-8</td>\n    </tr>\n    <tr>\n      <td>p-cresol</td>\n      <td>Sigma-Aldrich CAS: 106-44-5</td>\n    </tr>\n    <tr>\n      <td>1-octen-3-ol</td>\n      <td>Sigma-Aldrich CAS: 3391-86-4</td>\n    </tr>\n    <tr>\n      <td>Geranyl acetate</td>\n      <td>Sigma-Aldrich CAS: 105-87-3</td>\n    </tr>\n    <tr>\n      <td>cVA</td>\n      <td>Pherobank, Wijk bij Duurstede, Netherlands</td>\n    </tr>\n    <tr>\n      <td>geosmin</td>\n      <td>Sigma-Aldrich CAS: 16423-19-1</td>\n    </tr>\n    <tr>\n      <td>acetic acid</td>\n      <td>Sigma-Aldrich CAS: 64-19-7</td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly Genotypes\n\nThe following Drosophila genotypes were used in this study: w; UAS-GCaMP6s; R60F02-Gal4, UAS-GCaMP6s, w; NP2242-Gal4/Cyo; R60F02-Gal4, UAS-GCaMP6s, w; GH146-Gal4/+; UAS-GCaMP6s/+and w; UAS-CD4:spGFP11/Q-GH146; QUAS-syb:spCFP1-10/R60F02-Gal4. PN odor responses were measured in flies expressing the GH146-Gal4 and UAS-GCaMP6s transgenes. To produce the singleton CSDn in Figure 1A, we used UAS-myrGFP, QUAS-mtdTomato-3xHA/+; trans-Tango/+; Gal4-MB465C/+which occasionally labeled individual CSDns. Flies were generated from the following stocks.\n\n<table>\n  <thead>\n    <tr>\n      <th>Genotype</th>\n      <th>Source</th>\n      <th>RRID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>20XUAS-IVS-GCaMP6s (attP40)</td>\n      <td>BDSC</td>\n      <td>BDSC_42746</td>\n    </tr>\n    <tr>\n      <td>GMR60F02-GAL4 (attP2)</td>\n      <td>BDSC</td>\n      <td>BDSC_48228</td>\n    </tr>\n    <tr>\n      <td>20XUAS-IVS-GCaMP6s (VK00005)</td>\n      <td>BDSC</td>\n      <td>BDSC_42749</td>\n    </tr>\n    <tr>\n      <td>GH146-Gal4</td>\n      <td>BDSC</td>\n      <td>BDSC_30026</td>\n    </tr>\n    <tr>\n      <td>UAS-CD4:spGFP11</td>\n      <td>BDSC</td>\n      <td>BDSC_64315</td>\n    </tr>\n    <tr>\n      <td>GH146-QF2</td>\n      <td>BDSC</td>\n      <td>BDSC_66480</td>\n    </tr>\n    <tr>\n      <td>QUAS-syb:spCFP1-10</td>\n      <td colspan=\"2\">Marco Gallio, Northwestern University</td>\n    </tr>\n    <tr>\n      <td>UAS-myrGFP, QUAS-mtdTomato-3xHA; trans-Tango</td>\n      <td>BDSC</td>\n      <td>BDSC_77124</td>\n    </tr>\n    <tr>\n      <td>MB465C-Gal4</td>\n      <td>BDSC</td>\n      <td>BDSC_68371</td>\n    </tr>\n    <tr>\n      <td>NP2242-Gal4</td>\n      <td>DGRC</td>\n      <td>104134</td>\n    </tr>\n  </tbody>\n</table>\n\n_BDSC, Bloomington Drosophila Stock Center, Bloomington Indiana. DGRC, Kyoto Stock Center, Kyoto Japan._\n\n### Calcium imaging of odor-evoked activity\n\nFemale flies aged 3\u20135 weeks post-eclosion and reared at room temperature were used. In vivo imaging experiments were performed at room temperature. The brain was constantly perfused with saline containing (in mM): 103 NaCl, 3 KCl, 5 N-tris(hydroxymethyl)methyl-2- aminoethane-sulfonic acid, eight trehalose, 10 glucose, 26 NaHCO3, 1 NaH2PO4, 2 CaCl2, and 4 MgCl2 (adjusted to 270\u2013275 mOsm). The saline was bubbled with 95% O2/5% CO2 and reached a pH of 7.3. 920 nm wavelength light was used to excite GCaMP6s under two-photon microscopy. The microscope and data acquisition were controlled by ThorImage 3.0 (Thorlabs, Inc). Three-dimensional volumes of neuropil were used to measure odor responses. Volumes consisted of 6\u20138 frames separated by 5\u20136 \u03bcm in the z plane between frames. The volumes were scanned at 60 frames/second and thus a 6\u20137 complete volumes were imaged each second. Single imaging trials consisted of 90 volumes at a resolution of 256\u00a0\u00d7\u00a0256 pixels. Odors were delivered for 1 s after the first 2 s of each trial. An 80 s interval between each trial was applied to allow replenishing of the odor vial head space and to prevent photobleaching of GCaMP. Odors were presented sequentially such that each odor was presented every 16 min.\n\nTo quantify odor responses, we first generated the mean z-projection for every volume within a trial. Calcium transients (\u0394F/F) were then measured as changes in fluorescence, in which \u0394F/F was calculated by normalizing the fluorescence brightness changes over the baseline period (the first 2 s of each trial before the odor delivery). To reduce noise, a Gaussian low-pass filter of 4\u00a0\u00d7\u00a04 pixels in size was then applied to raw \u0394F/F signals prior to further analysis.Some trials contained motion artifacts that were removed using StackReg plugin for ImageJ. This motion correction was done on an individual trial basis. The frame containing the peak response was identified by plotting the \u0394F/F in an ROI as a function of frame number. The peak calcium signal for each trial was computed as the average of three consecutive frames centered on the frame of the peak response. We set the peak window the same for all trials within a preparation. For each odor stimulus, data were pooled by averaging the peak odor-evoked calcium signal across 3\u20134 repeats. All imaging data are available at\u00a0https://zenodo.org/record/3347197#.XTq2PpNKjUI.\n\n### Statistical analysis of calcium imaging\n\nPCA was applied on the spatial pattern of the peak calcium signal (\u0394F/F) in each trial (the mean frame of 2\u20133 volumes during the peak odor response). PCA was computed using the \u2018princomp\u2019 function in Matlab (Mathworks, Natick, MA). First an odor response was generated for each trial as described above as the mean response of 2\u20133 volumes during the peak response and averaged across 3\u20134 odor presentations per fly. The resulting image for each odor was converted into a 1-dimensional array consisting of 65,536 elements generated from the original 256 by 256 image). The odor response arrays were inserted as columns for the PCA input matrix. This matrix thus consisted of 12 columns, each representing an odor response. The output PCs were later reshaped back to 256 by 256 matrices for display purposes. The coefficient of variation was also calculated on the same vectorized odor response matrix so that a CV was generated for each pixel across odor responses and then averaged within that preparation. Thus, our reported CV incorporates variance for both the spatial profile and amplitude components of the responses. Correlations between odor responses within the LH were also performed using the same mean responses that served as inputs to the PCA. To calculate the diversity of response patterns to different odors we applied Linkage Hierarchical Clustering. The Euclidean distances between correlation pairs was calculated used as a parameter for clustering. Distances were normalized to the maximum distance within each preparation and then averaged across flies. A regression analysis was applied to compare the similarity between the odor response patterns of the CSDn and PNs in the LH. Our data set consisted of 12 odorants and thus 66 Euclidian distances were calculated for the regression. The p-value and the square of correlation coefficient (R2) were calculated as the indicator of similarity for each odor response pattern pairs evoked. Two-tailed paired t-tests were performed for all comparisons between before laser ablation and after laser ablation within the same group. All statistical functions were applied in Matlab.\n\n### CSDn EM reconstruction\n\nThe CSDn was identified and partially reconstructed in the female adult fly brain (FAFB) dataset as described in Zheng et al. (2018) using CATMAID (Saalfeld et al., 2009; Schneider-Mizell et al., 2016), available at https://catmaid-fafb.virtualflybrain.org. The CSDn reconstruction from the cell body along the primary and secondary arbors leading into the LH as well as tertiary and quaternary branches into the lateral horn were reviewed by a second observer back to the primary branch as previously described (Zheng et al., 2018). For the multi-compartmental model, measurements of the CSDn branch radius (to inform axial resistance parameters) were taken at seven locations along the primary arbor between the contralateral AL and protocerebrum, five locations along the second order branch leading into the lateral horn and six locations along primary and secondary branches within the lateral horn. For each location, 20\u201350 measures of axon radius were taken from consecutive tissue sections. Data on the projection neurons that are pre-synaptic to CSDn in the FAFB dataset were provided as a personal communication from Greg Jefferis, Phillip Schlegel, Alex Bates, Marta Costa, Fiona Love and Ruari Roberts.\n\n### Model construction\n\nA multi-compartmental conductance-based computer model of the CSDn neuron was constructed by taking its electron micrograph reconstruction and importing it into the Neuron simulator (Carnevale and Hines, 2006). An initial reconstruction contained more than 60,000 nodes, but a simplified version of it was generated with 6056 compartments in the Neuron simulator that retained its basic anatomical and electrotonic structure. The passive cable parameters (axial resistance Ra, leak conductance gpas, leak reversal Epas, and specific capacitance Cm) were fitted using Neuron\u2019s RunFitter algorithm. For fitting, we used recorded responses to stimuli of current-clamp and voltage-clamp steps and current-clamp white noise generated by Matlab (Mathworks, Natick, MA). Whole-cell recordings of the CSDn were performed as previously described (Zhang and Gaudry, 2016). The series resistance for CSDn recordings was approximately 10 M\u03a9, and input resistance was 500\u2013600 M\u03a9. The pipette resistance was between 8\u00a0and\u00a010 M\u03a9. The reversal potential of the CSDn was \u221245 mV. While fitting, parameters were restricted by physiological ranges (Ra between 0.0001\u20135000 \u03a9cm, Cm between 0.1\u20132 \u03bcF/cm2, gleak between 10\u22126-0.1 S/cm2, and Epas had unlimited range in mV, Supplementary file 1). For a given model, each compartment had the same values for Ra, gpas, Epas, and Cm. Only the difference in process thickness changed the passive properties of the compartments. The resulting passive model of the CSDn neuron was simulated using Neuron\u2019s default integration method with a time step of 0.025 ms.\u00a0The properties of the model used to generate the data in Figure 4E and F are shown in Table 1.\n\n**Table 1.**\n Morphological statistics of CSDn neuron sections used in Figure 4E and F.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>L [\u03bcm]</th>\n      <th>Diam [\u03bcm]</th>\n      <th>Area [\u03bcm2]</th>\n      <th>Ri [M\u03a9]</th>\n      <th>Cm [pF]</th>\n      <th>gpas [nS]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Whole cell</td>\n      <td>11031.21</td>\n      <td>0.05</td>\n      <td>1611.09</td>\n      <td>370.28</td>\n      <td>16.11</td>\n      <td>4.26</td>\n    </tr>\n    <tr>\n      <td>Cell body</td>\n      <td>308.15</td>\n      <td>0.27</td>\n      <td>258.89</td>\n      <td>0.31</td>\n      <td>2.59</td>\n      <td>0.68</td>\n    </tr>\n    <tr>\n      <td>LH</td>\n      <td>3758.09</td>\n      <td>0.04</td>\n      <td>474.12</td>\n      <td>169.05</td>\n      <td>4.74</td>\n      <td>1.25</td>\n    </tr>\n    <tr>\n      <td>AL</td>\n      <td>6245.41</td>\n      <td>0.04</td>\n      <td>787.66</td>\n      <td>281.13</td>\n      <td>7.88</td>\n      <td>2.08</td>\n    </tr>\n  </tbody>\n</table>\n\n_L, total length of section branches; Diam., length-weighted equivalent diameter of section; Area, surface area, Ri, resistance of from beginning to middle of section; Cm, total maximal capacitance of section (does not consider decay of voltage); gpas, total area-scaled leak conductance of the equivalent section._\n\nTo investigate how the passive signal travels from the AL to the other parts of the CSDn, we randomly picked ten spots within the AL and injected a square wave of current into the model to elicit a maximum voltage response ranging from about 2 to 20 mV. This was repeated six times in each condition. We monitored the voltage changes in the windows shown in Figure 4. The windows we set were for the cell body, the center of AL (three randomly selected monitor sites) and the LH (three randomly selected monitoring sites). The average voltage changes of each window were shown in the Figure 4. To investigate how signals preferentially propagated along the CSDn, the same method was applied to LH, so that current was injected in the LH and voltage change windows of interests across the CSDn were kept the same. The process was then repeated with current injection into the AL. The CSDn dendritic architecture does not represent a unique solution to asymmetrical voltage propagation. We were able to reproduce a similar phenomenon using a simpler three compartment model consisting of only a soma, an AL branch and a LH branch. The only requirement is to have differences in the resistances of two adjoining dendrites as predicted by cable theory (Rall and Agmon-Snir, 1998).\n\n### Laser transection\n\nThe transection window was guided by the Gcamp6s basal fluorescence at 920 nm, at about 20 \u03bcm before the CSDn neurites enter the lateral horn. An 80 mW laser pulse, which consisted of 10 repetitions of continuous frame scanning with 8 \u03bcsec of pixel dwell time, at 800 nm was then applied onto this window. A total estimated energy of 0.05 J was thus applied. Successful transection usually resulted in a small cavitation bubble (shown in Figure 4).\n\n### KCl induction of GRASP and immunohistochemistry\n\nIn brief, brains used for the induction of syb:GRASP were dissected and rinsed three times with a KCl solution (Macpherson et al., 2015). The brains were then fixed in 4% paraformaldehyde for 20 min. We used the following primary and secondary antibodies at the indicated dilutions: 1:1000 rabbit anti-5HT Sigma (S5545), 1:50 chicken anti-GFP Invitrogen (A10262), 1:100 mouse anti-GFP (referred as anti-GRASP, Sigma #G6539, ref:3), 1:500 rat anti-N-Cadherin (Developmental Studies Hybridoma Bank, DN-Ex #8), 1:250 Alexa Fluor 633 goat anti-rabbit (Invitrogen, A21071), 1:250 Alexa Fluor 488 goat anti-chicken (Life Technologies, A11039), 1:250 Alexa Fluor 568 goat anti-mouse lgG (Life Technologies, A11004) and 1:1000 Alexa Fluor 647 donkey anti-rat IgG (AbCam, ab150155). Brains were mounted and imaged in Vectashield mounting medium (Vector Labs). All steps were performed at room temperature. Confocal z-stacks for the syb:GRASP experiments were collected with a Zeiss LSM710 microscope using a 63\u00a0\u00d7\u00a0oil immersion lens and the z-stack of GFP expression in Figure 1A was collected with an Olympus FV1000s using a 40x oil-immersion lens.\n",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "7a1d7ba8-c446-4943-9b16-31b60cadd54f",
+      "submission_id": "cc6f5828-fb19-4105-bf0c-45ca5187e454",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin Ireland\n\nReviewers:\n- Mani Ramaswami, Trinity College Dublin Ireland\n- Baranidharan Raman, Washington University in St. Louis United States\n\n## Review text\n\nDOI: [10.7554/eLife.46839.021](https://doi.org/10.7554/eLife.46839.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Local synaptic inputs support opposing, network-specific odor representations in a widely projecting modulatory neuron\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Mani Ramaswami as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Ronald Calabrese as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Baranidharan Raman (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study investigates how the contralaterally-projecting serotonin-immunoreactive deuterocerebral neuron (CSDn) functions in olfactory processing across two brain areas: the antennal lobe (AL), the first olfactory neuropil, and the downstream lateral horn (LH), which is involved in innate olfactory behavior. By employing 2-photon calcium imaging the author show that the CSDn processes in the antennal lobe are hyperpolarized during most odorant exposure, whereas the CSDn processes in the downstream lateral horn are depolarized during the same epochs. Interestingly, the AL responses seem to be uniform and independent of the odor applied, while the LH responses show some degree of odor-specificity. By correlating the odor-evoked activities of the CSDn in the LH to responses of PNs, the authors demonstrate that these patterns are highly correlated and that PNs most likely provide the synaptic input onto the CSDn in the LH. GRASP experiments between both neuronal populations yield a positive signal and provide further support for a direct synaptic connection between certain PNs and the CSDn. Moreover, by using a dataset derived from whole brain EM reconstructions, the authors show that the CSDn receives input from about 17 glomeruli from the AL.\n\nUsing an experimentally-constrained, multi-compartmental model that captures the passive properties of the serotonergic neuron to analyze whether the neurites in the AL and LH function as independent compartments within the CSDn, the authors show that transmission of electrical signals in this neuron is asymmetric. While hyperpolarization from the antennal lobe spreads to the somatic and LH segments, propagation of electrical signals from LH compartment to the AL/somatic segments is impeded. Using laser ablation to isolate CSDn processes in LH, they test a prediction from the model. Odor-evoked CSDn responses in LH are enhanced following severing of connection between the AL and LH (as negative contributions from the hyperpolarized processes in the AL are removed).\n\nIn summary, this study demonstrates that the CSDn shows distinct odor response properties in different brain regions. Odor-independent inhibition in the AL is likely mediated by multiglomerular inhibitory local interneurons and odor-specific excitation in the LH mediated by projection neurons. It also shows that inhibition from the AL propagates to probably suppress olfactory responses at the LH level.\n\nShowing how different olfactory circuits may locally and differentially engage or disengage serotonergic modulation of stimulus-evoked responses, the findings of this study are very interesting and constitute an important advance on the authors previous paper in eLife. However, it could be improved and enhanced in the following ways.\n\nEssential revisions:\n\n1) It would be valuable to identify the synaptic partners of the CSDn in the LH to elucidate which responses are being suppressed at the LH level. The authors could use their EM reconstruction dataset to follow-up the neuronal circuitry within (and beyond) the LH.\n\n2) It would also be interesting to know whether PNs and the CSDn have any synaptic contacts at the AL level and if so, what that means for the CSDn responses in the LH. These data may already be available from the GRASP experiments.\n",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6e1ca2d8-9bce-4dc4-814c-e208c11ce1a1",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C1",
+      "claim": "Serotonergic neurons innervating the first olfactory relay in Drosophila are inhibited by odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we used whole-cell electrophysiology in Drosophila to show that serotonergic neurons innervating the first olfactory relay are inhibited by odorants (Zhang and Gaudry, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "5e06e2c2-dd5e-422a-88d8-48d52cc57213",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C2",
+      "claim": "A pair of serotonergic neurons (the CSDns) innervate the antennal lobe and lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "A pair of serotonergic neurons (the CSDns) innervate the antennal lobe and lateral horn, which are first and second order neuropils.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated directly in the abstract and supported by anatomical data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "4cd48c18-a77f-47bb-862d-f25ea453a28a",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C3",
+      "claim": "CSDn processes in the antennal lobe are inhibited by odors in an identity independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "CSDn processes in the antennal lobe are inhibited by odors in an identity independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calcium imaging data shown in Figure 1C-F and PCA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "340a3066-41dc-4f09-9ded-cd4b010c98c5",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C4",
+      "claim": "CSDn processes in the lateral horn are excited in an odor identity dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lateral horn, CSDn processes are excited in an odor identity dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calcium imaging data shown in Figure 2B-C and correlation analysis in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "2904052c-abac-44fd-a9c3-d464f07b7c3e",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C5",
+      "claim": "Antennal lobe derived inhibition arises from local GABAergic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using functional imaging, modeling, and EM reconstruction, we demonstrate that antennal lobe derived inhibition arises from local GABAergic inputs and acts as a means of gain control on branch-specific inputs that the CSDns receive within the lateral horn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by previous work cited (Coates et al., 2017; Zhang and Gaudry, 2016) and modeling data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "b0e2b7ab-fe83-4f7b-abd6-abc1dee70c13",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C6",
+      "claim": "Antennal lobe inhibition acts as a means of gain control on branch-specific inputs that the CSDns receive within the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "Using functional imaging, modeling, and EM reconstruction, we demonstrate that antennal lobe derived inhibition arises from local GABAergic inputs and acts as a means of gain control on branch-specific inputs that the CSDns receive within the lateral horn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by laser ablation experiments shown in Figure 4G-K and compartmental modeling in Figure 4E-F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "88d5fc08-02d8-4456-9987-5b1456ab7b01",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C7",
+      "claim": "The olfactory bulb in mammals receives a tremendous amount of centrifugal innervation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the olfactory bulb (OB) in mammals receives a tremendous amount of centrifugal innervation (Padmanabhan et al., 2018) that can be critical for proper olfactory behavior (Nunez-Parra et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Padmanabhan et al., 2018; Nunez-Parra et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "6e74cbf4-23ad-4e48-99fa-747a1ec23ba3",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C8",
+      "claim": "Centrifugal innervation of the olfactory bulb can be critical for proper olfactory behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the olfactory bulb (OB) in mammals receives a tremendous amount of centrifugal innervation (Padmanabhan et al., 2018) that can be critical for proper olfactory behavior (Nunez-Parra et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Nunez-Parra et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "6b067a33-288d-44de-8b19-db14c5bfd0dc",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C9",
+      "claim": "Modulatory systems provide a mechanism for top-down regulation of sensory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "A prominent view of such modulatory systems is that they provide a mechanism for top-down regulation of sensory processing (Jacob and Nienborg, 2018; Thiele and Bellgrove, 2018) and help coordinate activity across brain regions (Melzer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Jacob and Nienborg, 2018; Thiele and Bellgrove, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "5d0db88a-7bc7-4143-9121-12db93d89b21",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C10",
+      "claim": "Modulatory systems help coordinate activity across brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "A prominent view of such modulatory systems is that they provide a mechanism for top-down regulation of sensory processing (Jacob and Nienborg, 2018; Thiele and Bellgrove, 2018) and help coordinate activity across brain regions (Melzer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Melzer et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "02291ea1-d5a3-4ca0-9b62-cd42faa86282",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C11",
+      "claim": "Virtually all axons are subject to pre-synaptic regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as virtually all axons are subject to pre-synaptic regulation (Miller, 1998), it is likely that most centrifugal modulatory neurons are subject to local influences by the circuits that they infiltrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Miller, 1998).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "e913ec91-0a09-46c0-bcd5-c4f3c580af45",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C12",
+      "claim": "Different odors can activate unique presynaptic terminals from piriform neurons that feed back into the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, different odors can activate unique presynaptic terminals from piriform neurons that feed back into the OB (Otazu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Otazu et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "c61baf58-e940-4919-a7f0-4f8aabff5dc2",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C13",
+      "claim": "The spatial pattern of cholinergic input to the olfactory bulb is odor-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial pattern of cholinergic input to the OB is also odor-specific and arises through similarly undescribed mechanisms (Rothermel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Rothermel et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "0c1f9898-8c12-4cb9-ba5b-c313562184c9",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C14",
+      "claim": "Only one serotonergic neuron per hemisphere, termed the CSDn, innervates both the first and second order olfactory neuropils in the fly brain.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, only one serotonergic neuron per hemisphere, termed the contralaterally-projecting serotonin-immunoreactive deuterocerebral neuron (CSDn), innervates both the first and second order olfactory neuropils in the fly brain (Coates et al., 2017; Dacks et al., 2006; Roy et al., 2007; Sun et al., 1993) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to published literature (Coates et al., 2017; Dacks et al., 2006; Roy et al., 2007; Sun et al., 1993) and anatomical data shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "bc696893-1137-4cdb-a098-ef45fe66f2d3",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C15",
+      "claim": "CSDns can be targeted genetically.",
+      "claim_type": "EXPLICIT",
+      "source": "CSDns can be targeted genetically (Roy et al., 2007) and affect various olfactory behaviors involving appetitive (Xu et al., 2016) and pheromonal odorants, including cis-vaccenyl acetate (cVA) (Singh et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Roy et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "e4e852e0-7123-431c-8fbd-bb1290e578ed",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C16",
+      "claim": "CSDns affect various olfactory behaviors involving appetitive odorants.",
+      "claim_type": "EXPLICIT",
+      "source": "CSDns can be targeted genetically (Roy et al., 2007) and affect various olfactory behaviors involving appetitive (Xu et al., 2016) and pheromonal odorants, including cis-vaccenyl acetate (cVA) (Singh et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Xu et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "ad0ed461-d99e-4186-ba6e-74fce2ecde52",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C17",
+      "claim": "CSDns affect various olfactory behaviors involving pheromonal odorants, including cis-vaccenyl acetate (cVA).",
+      "claim_type": "EXPLICIT",
+      "source": "CSDns can be targeted genetically (Roy et al., 2007) and affect various olfactory behaviors involving appetitive (Xu et al., 2016) and pheromonal odorants, including cis-vaccenyl acetate (cVA) (Singh et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Singh et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "f902fb12-47ce-456a-8698-6acb53adaa41",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C18",
+      "claim": "CSDns are thought to participate in top-down modulation and to have their effects mainly in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The modulation of cVA-evoked behavioral responses is especially interesting because the CSDns are thought to participate in top-down modulation and to have their effects mainly in the first olfactory relay, the antennal lobe (AL) (Hill et al., 2002; Singh et al., 2013; Sun et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Hill et al., 2002; Singh et al., 2013; Sun et al., 1993).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "3b97d03a-ad8f-4c7d-9461-2c37ec3f0ca0",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C19",
+      "claim": "CSDn processes avoid the cVA-sensitive DA1 glomerulus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CSDn processes avoid the cVA-sensitive DA1 glomerulus (Coates et al., 2017; Zhang and Gaudry, 2016) and DA1 projection neuron (PN) odor responses are not modulated with strong CSDn stimulation (Zhang and Gaudry, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Coates et al., 2017; Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "358587b5-4f50-4ab1-b106-b94d61cacac5",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C20",
+      "claim": "DA1 projection neuron odor responses are not modulated with strong CSDn stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CSDn processes avoid the cVA-sensitive DA1 glomerulus (Coates et al., 2017; Zhang and Gaudry, 2016) and DA1 projection neuron (PN) odor responses are not modulated with strong CSDn stimulation (Zhang and Gaudry, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "8f4a83de-264e-4198-88da-cf8a820996d1",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C21",
+      "claim": "Whole-cell recordings show strong inhibition of the CSDn during stimulation with cVA.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, whole-cell recordings show strong inhibition of the CSDn during stimulation with cVA (Zhang and Gaudry, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "3287dbe3-5608-4344-a945-555c782df6e2",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C22",
+      "claim": "The CSDns express pre- and postsynaptic markers throughout their arborizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the CSDns express pre- and postsynaptic markers throughout their arborizations (Zhang and Gaudry, 2016), it is possible that transmitter release is locally regulated via inputs from their target networks (Gaudry, 2018) and that olfactory-mediated modulation occurs predominantly downstream of the AL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "8c1bff3c-0128-4360-80ab-a0a60077a39e",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C23",
+      "claim": "Nearly all compounds in a diverse panel of odorants resulted in inhibition of CSDn neurites in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially imaged CSDn neurites in the AL (Figure 1B, Figure 1\u2014video 1) and found that nearly all compounds in a diverse panel of odorants resulted in inhibition (Figure 1C and D and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by calcium imaging data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "ac65b4bb-1ffe-47ca-9e4d-2beef28964fb",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C24",
+      "claim": "Ammonia produced a weak level of excitation in CSDn neurites in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exception was ammonia, which produced a weak level of excitation as previously reported in whole-cell somatic recordings (Zhang and Gaudry, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calcium imaging data in Figure 1C and citation to previous work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "cbefa8b2-656a-462f-8312-afa40515a318",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C25",
+      "claim": "Inhibition in the antennal lobe scales with increasing odor intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition in the AL scales with increasing odor intensity and the spatial pattern of activation of GABAergic LNs is odor invariant (Hong and Wilson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Hong and Wilson, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "5339acb4-0083-40bf-9672-3e38923219cd",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C26",
+      "claim": "The spatial pattern of activation of GABAergic local interneurons is odor invariant.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition in the AL scales with increasing odor intensity and the spatial pattern of activation of GABAergic LNs is odor invariant (Hong and Wilson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Hong and Wilson, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "e9a0230f-43d8-4ca7-9573-a1e617153191",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C27",
+      "claim": "Inhibition of the CSDn scales with odor intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of the CSDn also scales with odor intensity (Zhang and Gaudry, 2016), but it is unknown if unique odors can recruit distinct spatial patterns of CSDn activity within its dendrites in the AL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "c884ef7c-cf38-4582-8637-d319eb89e921",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C28",
+      "claim": "Aside from ammonia, CSDn processes in the antennal lobe receive odor-invariant inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, aside from ammonia, CSDn processes in the AL receive odor-invariant inhibition, and this inhibition scales with odor intensity (Zhang and Gaudry, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PCA analysis shown in Figure 1F and citation to previous work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "303e5289-04fd-4114-86a7-555ffca4c105",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C29",
+      "claim": "The lateral horn is a brain region that receives direct input from the antennal lobe and mediates innate olfactory behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined CSDn processes in the lateral horn (LH; Figure 2A), a brain region that receives direct input from the AL and mediates innate olfactory behaviors (de Belle and Heisenberg, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (de Belle and Heisenberg, 1994).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "235ef2c9-73f1-4ac5-a482-301abab081c5",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C30",
+      "claim": "Every odorant in the panel produced excitation in the CSDn lateral horn arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that every odorant in our panel produced excitation in the CSDn LH arbors (Figure 2B, Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by calcium imaging data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "acb335d6-b13b-48aa-aae0-890c0e338131",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C31",
+      "claim": "CSDn odor responses in the lateral horn varied spatially.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, PCA revealed that CSDn odor responses in the LH varied spatially (Figure 2C, Figure 2\u2014figure supplement 1) and displayed a greater coefficient of variation compared to responses in the AL (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PCA analysis shown in Figure 2C and coefficient of variation analysis in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "74c7a776-30f2-4131-becb-ad9b5c171b6d",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C32",
+      "claim": "CSDn odor responses in the lateral horn displayed a greater coefficient of variation compared to responses in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, PCA revealed that CSDn odor responses in the LH varied spatially (Figure 2C, Figure 2\u2014figure supplement 1) and displayed a greater coefficient of variation compared to responses in the AL (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 2D (p=0.0021, Student's t-test).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "3d08dab6-31d2-4c79-8107-00312a954b0b",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C33",
+      "claim": "The processes of the CSDn have opposing responses to odor stimulation across different olfactory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the processes of the CSDn have opposing responses to odor stimulation across different olfactory regions (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by calcium imaging data comparing AL and LH responses shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "1150a472-b313-451e-8e52-b2cff5432dd9",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C34",
+      "claim": "The CSDn has both pre- and postsynaptic sites in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "The CSDn has both pre- and postsynaptic sites in the LH (Zhang and Gaudry, 2016), so GCaMP signaling could represent either the activation of CSDn postsynaptic receptors or calcium influx at presynaptic release sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "3ec6a438-42a4-454a-b9d5-4ea4e061f0a4",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C35",
+      "claim": "Olfactory stimulation showed increased sytGCaMP6s signaling in CSDn lateral horn processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory stimulation showed increased sytGCaMP6s signaling (Figure 2\u2014figure supplement 2), suggesting odorants likely evoke transmitter release in the LH processes of the CSDn.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sytGCaMP6s imaging data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "e620880e-3e0c-4bf3-995d-17129bf7fad1",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C36",
+      "claim": "Odorants likely evoke transmitter release in the lateral horn processes of the CSDn.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory stimulation showed increased sytGCaMP6s signaling (Figure 2\u2014figure supplement 2), suggesting odorants likely evoke transmitter release in the LH processes of the CSDn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from sytGCaMP6s imaging data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "e609de96-4e4e-4a27-ace3-257859c98003",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C37",
+      "claim": "Projection neurons are a potential source of excitatory input to the CSDns in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "How might odor specific responses arise in the CSDn processes in the LH? PNs are a potential source of excitatory input to the CSDns in the LH as they are cholinergic, and their axons segregate anatomically (Jefferis et al., 2007; Tanaka et al., 2004) and functionally (Min et al., 2013; Seki et al., 2017; Strutz et al., 2014) in this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Jefferis et al., 2007; Tanaka et al., 2004; Min et al., 2013; Seki et al., 2017; Strutz et al., 2014) and inference from known properties of PNs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "d0eb5658-c1ca-412c-86b6-85c995f2599b",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C38",
+      "claim": "Projection neurons are cholinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "PNs are a potential source of excitatory input to the CSDns in the LH as they are cholinergic, and their axons segregate anatomically (Jefferis et al., 2007; Tanaka et al., 2004) and functionally (Min et al., 2013; Seki et al., 2017; Strutz et al., 2014) in this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about projection neurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "df3adc5a-1cfa-476e-9cd3-fecf1befafc0",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C39",
+      "claim": "Projection neuron axons segregate anatomically in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "PNs are a potential source of excitatory input to the CSDns in the LH as they are cholinergic, and their axons segregate anatomically (Jefferis et al., 2007; Tanaka et al., 2004) and functionally (Min et al., 2013; Seki et al., 2017; Strutz et al., 2014) in this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Jefferis et al., 2007; Tanaka et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "5b6fac4d-3e22-41a6-98d7-43211a2ca27e",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C40",
+      "claim": "Projection neuron axons segregate functionally in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "PNs are a potential source of excitatory input to the CSDns in the LH as they are cholinergic, and their axons segregate anatomically (Jefferis et al., 2007; Tanaka et al., 2004) and functionally (Min et al., 2013; Seki et al., 2017; Strutz et al., 2014) in this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Min et al., 2013; Seki et al., 2017; Strutz et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "7c8b95f6-c1f3-4b29-9624-b987afc15b6f",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C41",
+      "claim": "The linkage distance between the spatial pattern of odor responses was highly correlated between projection neuron and CSDn responses in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "The linkage distance between the spatial pattern of odor responses was highly correlated between PN and CSDn responses in the LH (Figure 3C and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regression analysis shown in Figure 3C (R2 = 0.77, p=4.07*10\u221222).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "bc3c3559-5f1d-4009-acae-9da2595c0626",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C42",
+      "claim": "Projection neurons may provide direct synaptic input onto the CSDn locally in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that PNs may provide direct synaptic input onto the CSDn locally in the LH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from correlation analysis in Figure 3C and supported by GRASP data in Figure 3D-F and EM reconstruction in Figure 3G-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "531504dc-3a20-49d3-ae07-e4f94d22c515",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C43",
+      "claim": "Projection neurons show direct input to the CSDn throughout the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "PNs from at least 17 glomeruli (presynaptic PN tracings provided as a personal communication from Greg Jefferis, Phillipp Schlegel, Alex Bates, Marta Costa, Fiona Love and Ruari Roberts) show direct input to the CSDn throughout the LH (Figure 3G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by EM reconstruction data shown in Figure 3G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "b8f638a8-9649-4cad-908f-9ae0eeb93fe6",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C44",
+      "claim": "The CSDns receive input from different cell classes in the antennal lobe and lateral horn to shape its olfactory responses locally.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results suggest that the CSDns receive input from different cell classes in the AL and LH to shape its olfactory responses locally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined data on GABAergic LN input in the AL and PN input in the LH.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "14a3664a-bca3-487b-83e5-52ed46aa8124",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C45",
+      "claim": "GABAergic local interneurons constitute a major input to the CSDns in the antennal lobe and drive inhibitory responses independent of odor identity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the AL, GABAergic LNs constitute a major input to the CSDns and drive inhibitory responses independent of odor identify.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work (Coates et al., 2017; Zhang and Gaudry, 2016) and calcium imaging data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "3837b4d2-8abe-4e35-97dc-980089180a51",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C46",
+      "claim": "Projection neurons make relatively few synaptic connections with the CSDns in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "PNs make relatively few synaptic connections with the CSDns in the AL (Coates et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Coates et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "072deb2a-9225-48c8-8387-a52b237f5af4",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C47",
+      "claim": "Olfactory responses in the CSDn neurites in the lateral horn are excitatory, odor specific, and are likely in part shaped by direct projection neuron input.",
+      "claim_type": "EXPLICIT",
+      "source": "In the LH, olfactory responses in the CSDn neurites are excitatory, odor specific, and are likely in part shaped by direct PN input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calcium imaging data in Figure 2, correlation analysis in Figure 3, and EM reconstruction data in Figure 3G-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "ca4467f0-675e-443d-b5b3-d19b7540bca5",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C48",
+      "claim": "All models that displayed somatic inhibition when current was injected into the CSDn processes in the antennal lobe also showed inhibition in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all models that displayed somatic inhibition when current was injected into the CSDn processes in the AL also showed inhibition in the LH (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by compartmental modeling data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "ffdc00ca-9435-4c39-b2f2-7a4135120bee",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C49",
+      "claim": "The geometry and passive properties of the CSDn allow the propagation of inhibition from the antennal lobe to the lateral horn during olfactory stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the geometry and passive properties of the CSDn allow the propagation of inhibition from the AL to the LH during olfactory stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from compartmental modeling data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "57d73289-cfc2-4ceb-b188-3394595c0446",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C50",
+      "claim": "The geometry of the CSDn arbors favor the propagation of voltage signals from the antennal lobe preferentially to the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach revealed that the geometry of the CSDn arbors favor the propagation of voltage signals from the AL preferentially to the LH (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by compartmental modeling data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "4f372dbb-7d8f-4610-908f-fa5e90fe5a42",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C51",
+      "claim": "Olfactory responses to all odors tested increased in the processes of the CSDn in the lateral horn following the removal of antennal lobe inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Olfactory responses to all odors tested increased in the processes of the CSDn in the LH following the removal of AL inhibition (Figure 4I,J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by laser ablation experiments shown in Figure 4I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "ee68e400-44cc-404c-834d-fd39f9d068d3",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C52",
+      "claim": "During normal odor sampling, inhibition from the antennal lobe propagates to suppress olfactory responses in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that during normal odor sampling, inhibition from the AL propagates to suppress olfactory responses in the LH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by laser ablation experiments shown in Figure 4I-K and compartmental modeling in Figure 4E-F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "ee47c0f8-0944-4582-8a9a-f1c0d17098d0",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C53",
+      "claim": "A serotonergic neuron with broad arbors integrates locally at multiple neuropil along the olfactory pathway in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that a serotonergic neuron with broad arbors integrates locally at multiple neuropil along to the olfactory pathway in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calcium imaging data in Figures 1-2 and laser ablation experiments in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "2da6635c-8220-43d3-a6ce-1ff64ea4cfd2",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C54",
+      "claim": "Synaptic inputs at the first and second order processing stages of olfaction impose opposite polarity responses in the CSDn.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, synaptic inputs at the first and second order processing stages of olfaction impose opposite polarity responses in this neuron and likely decorrelate synaptic release in distinct target regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calcium imaging data showing inhibition in the AL (Figure 1) and excitation in the LH (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "9fa79b59-e984-4487-8fa4-ee27999700cd",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C55",
+      "claim": "Synaptic inputs at the first and second order processing stages of olfaction likely decorrelate synaptic release in distinct target regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, synaptic inputs at the first and second order processing stages of olfaction impose opposite polarity responses in this neuron and likely decorrelate synaptic release in distinct target regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the opposing responses in the AL and LH and the compartmental modeling showing voltage propagation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "14ae8013-b3e6-416e-abc1-a8094d42496e",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C56",
+      "claim": "Inhibition dominates responses in the antennal lobe and odor-specific excitation is prominent in the downstream lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition dominates responses in the AL and odor-specific excitation is prominent in the downstream LH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calcium imaging data in Figures 1-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "c85a8b80-eee3-4374-bb14-56650b094515",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C57",
+      "claim": "Across a single widely projecting modulatory neuron, branches within distinct neuropils can operate in different manners.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that across a single widely projecting modulatory neuron, branches within distinct neuropils can operate in different manners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the opposing responses observed in the AL and LH of the CSDn.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "8e25a990-a695-4ba6-bd95-d8aa98cd8a71",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C58",
+      "claim": "Invertebrate studies involving motor systems have shown compartmentalization of neurons spanning distant neuropils.",
+      "claim_type": "EXPLICIT",
+      "source": "However, invertebrate studies involving motor systems have shown compartmentalization of neurons spanning distant neuropils (Nikitin et al., 2013; Sasaki et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Nikitin et al., 2013; Sasaki et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "c4f01704-d405-4113-a55f-463bfcee5e51",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C59",
+      "claim": "The activity within a single serotonergic neuron can vary across neuropils involved in processing the same sensory modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that the activity within a single serotonergic neuron can vary across neuropils involved in processing the same sensory modality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calcium imaging data showing different responses in the AL and LH (Figures 1-2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "dd33e96b-f79a-42b8-bdd2-f02609d002b9",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C60",
+      "claim": "Local regulation of release allows modulatory functions to be employed independently in different brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "As a given modulator may perform distinct functions in different brain regions, local regulation of release allows these functions to be employed independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observed local integration in the CSDn and general principles of neuromodulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "3c934a25-ae28-4c9f-99e1-0c8732fe7353",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C61",
+      "claim": "Serotonin in the olfactory bulb indirectly inhibits olfactory sensory neuron terminals and has been proposed to serve a gain control function.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, 5-HT in the OB indirectly inhibits OSN terminals and has been proposed to serve a gain control function (Petzold et al., 2009), while in the piriform cortex 5-HT has no effect on stimulus input, but rather only decreases spontaneous activity (Lottem et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Petzold et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "3007e383-9d46-4372-b5f4-89654ca8c989",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C62",
+      "claim": "In the piriform cortex, serotonin has no effect on stimulus input, but rather only decreases spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, 5-HT in the OB indirectly inhibits OSN terminals and has been proposed to serve a gain control function (Petzold et al., 2009), while in the piriform cortex 5-HT has no effect on stimulus input, but rather only decreases spontaneous activity (Lottem et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Lottem et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "a9290bc5-19c0-4afe-b7e9-4819c77eee03",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C63",
+      "claim": "Serotonin has different effects on mitral cells in the main versus mitral cells in the accessory olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, 5-HT has different effects on mitral cells in the main versus mitral cells in the accessory olfactory bulb (Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Huang et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "b319dadd-bce6-4e55-8d47-f2fcfc650f7d",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C64",
+      "claim": "Local regulation and decoupling of modulator release across synaptic sites has been implicated in the normal function of the mammalian dopamine system.",
+      "claim_type": "EXPLICIT",
+      "source": "Local regulation and decoupling of modulator release across synaptic sites is not unique to invertebrates and has been implicated in the normal function of the mammalian DA system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work on dopamine release (Floresco et al., 1998; Jones et al., 2010; Hamid et al., 2016; Berke, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "bd2243bf-6324-4912-9250-b846859b5b37",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C65",
+      "claim": "Dopamine release is only partially correlated with firing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "First, DA release is only partially correlated with firing activity, and release can be locally evoked in the absence of spiking in DA cells (Floresco et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Floresco et al., 1998).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "aaa0c8a8-e3c4-4c6f-9f5b-637de7b6da79",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C66",
+      "claim": "Dopamine release can be locally evoked in the absence of spiking in dopamine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, DA release is only partially correlated with firing activity, and release can be locally evoked in the absence of spiking in DA cells (Floresco et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Floresco et al., 1998).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "0b7b22e0-ab57-470e-af60-d17471e38308",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C67",
+      "claim": "Local inactivation of the nucleus accumbens decreases dopamine release in the nucleus accumbens without impacting dopamine neuron firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, local inactivation of the nucleus accumbens (NA) decreases DA release in the NA without impacting DA neuron firing (Jones et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Jones et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "ff284dce-0b3f-4a98-b11b-14c80c48d493",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C68",
+      "claim": "Dopamine release can signal both motivation and reward prediction errors on similar timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "This has led to the theory that DA release can signal both motivation and reward prediction errors (RPE) on similar timescales (Hamid et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Hamid et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "4779e291-caf8-4cbc-b838-4543b3bdd2e5",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C69",
+      "claim": "Dopamine release related to motivation is thought to be shaped by local presynaptic mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine release related to motivation is thought to be shaped by local presynaptic mechanisms while dopamine related to RPE correlates more strongly with the firing properties of DA neurons (Berke, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Berke, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "510d6ba4-e339-42f4-94c1-d8ddf9f53f8d",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C70",
+      "claim": "Dopamine related to reward prediction errors correlates more strongly with the firing properties of dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine release related to motivation is thought to be shaped by local presynaptic mechanisms while dopamine related to RPE correlates more strongly with the firing properties of DA neurons (Berke, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Berke, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "4b06eca6-6ddb-4915-af60-ed62f1e6dac6",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C71",
+      "claim": "It is highly likely that serotonin is regulated by local presynaptic mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Measuring serotonergic transmission across release sites is more difficult compared to dopamine (Dankoski and Wightman, 2013), nevertheless, it is highly likely that 5-HT is also regulated by local presynaptic mechanisms (Egashira et al., 2002; Schlicker et al., 1984; Tao and Auerbach, 1995; Threlfell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Egashira et al., 2002; Schlicker et al., 1984; Tao and Auerbach, 1995; Threlfell et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "afa0ad08-0516-4288-abda-b8456daf5df9",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C72",
+      "claim": "EM reconstructions of raphe terminals in the olfactory bulb have failed to reveal postsynaptic densities in raphe axons.",
+      "claim_type": "EXPLICIT",
+      "source": "EM reconstructions of raphe terminals in the OB have failed to reveal postsynaptic densities in raphe axons (Gracia-Llanes et al., 2010; Suzuki et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Gracia-Llanes et al., 2010; Suzuki et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "d1348cb1-8a6f-4303-ada7-d68be3a72c32",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C73",
+      "claim": "Local integration in the antennal lobe and lateral horn allow the CSDn to independently process and shape sensory information at multiple points in the early olfactory pathway of the fly.",
+      "claim_type": "EXPLICIT",
+      "source": "Local integration in the AL and LH allow the CSDn to independently process and shape sensory information at multiple points in the early olfactory pathway of the fly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calcium imaging data in Figures 1-2 and laser ablation experiments in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "e2e2b136-ffb4-4c1d-8ac5-a6a4a342ee6d",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C74",
+      "claim": "Projection neuron axons directly excite CSDn terminals in the lateral horn in an odor specific manner while CSDn branches in the antennal lobe are inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that PN axons directly excite CSDn terminals in the LH in an odor specific manner while CSDn branches in the AL are inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calcium imaging data in Figures 1-2, GRASP data in Figure 3D-F, and EM reconstruction in Figure 3G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "5231b0aa-f98f-4f14-89f7-f246ca1a8c43",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C75",
+      "claim": "The CSDn soma is inhibited by odors.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the CSDn soma is also inhibited by odors and that stimulation of the CSDn has little impact on olfactory circuitry in the AL (Zhang and Gaudry, 2016), despite the CSDn being critical for normal olfactory behavior (Singh et al., 2013; Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "a07331b3-7db2-41d8-be37-1dd25d1be595",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C76",
+      "claim": "Stimulation of the CSDn has little impact on olfactory circuitry in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the CSDn soma is also inhibited by odors and that stimulation of the CSDn has little impact on olfactory circuitry in the AL (Zhang and Gaudry, 2016), despite the CSDn being critical for normal olfactory behavior (Singh et al., 2013; Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "4cc837ad-114a-4f33-b729-d4a25e086de1",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C77",
+      "claim": "The CSDn is critical for normal olfactory behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the CSDn soma is also inhibited by odors and that stimulation of the CSDn has little impact on olfactory circuitry in the AL (Zhang and Gaudry, 2016), despite the CSDn being critical for normal olfactory behavior (Singh et al., 2013; Xu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Singh et al., 2013; Xu et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "ba2de6b4-36a0-4d4d-a5ab-b4be5905e1b0",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C78",
+      "claim": "The CSDn modulates behavior by affecting odor-processing in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current study resolves this issue by suggesting instead that the CSDn modulates behavior by affecting odor-processing in the LH (Figure 4 and Figure 4\u2014figure supplement 2), which has previously been unexplored.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the laser ablation experiments in Figure 4 and the lack of AL modulation shown in previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "0deb47f8-2f22-4048-934e-0517f98c0ff5",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C79",
+      "claim": "Inhibition of CSDn processes in the antennal lobe does not appear to depend on odor identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of CSDn processes in the AL does not appear to depend on odor identity as shown in this study, but rather correlates with the total amount of ORN activity that an odor elicits (Zhang and Gaudry, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PCA analysis in Figure 1F and citation to previous work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "f2c3ad6d-42b3-4119-a293-e6ef2a3d8d8d",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C80",
+      "claim": "Inhibition of CSDn processes in the antennal lobe correlates with the total amount of olfactory receptor neuron activity that an odor elicits.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of CSDn processes in the AL does not appear to depend on odor identity as shown in this study, but rather correlates with the total amount of ORN activity that an odor elicits (Zhang and Gaudry, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "7b4b9f25-018d-4bed-91c2-a4a37377a3e3",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C81",
+      "claim": "Antennal lobe and lateral horn processes of the CSDn are electrotonically connected.",
+      "claim_type": "EXPLICIT",
+      "source": "Our compartmental modeling shows that AL and LH processes of the CSDn are electrotonically connected, but that voltage preferentially passes from the AL to the LH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by compartmental modeling data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "014d72f7-6090-45dd-8c3d-7264894b94a8",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C82",
+      "claim": "Voltage preferentially passes from the antennal lobe to the lateral horn in the CSDn.",
+      "claim_type": "EXPLICIT",
+      "source": "Our compartmental modeling shows that AL and LH processes of the CSDn are electrotonically connected, but that voltage preferentially passes from the AL to the LH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by compartmental modeling data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "2d468c0a-8c33-4671-8d96-08c176d4307d",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C83",
+      "claim": "CSDn inhibition scales with increasing odor strength due to robust GABAergic local interneuron input in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "As CSDn inhibition scales with increasing odor strength due to robust GABAergic LN input in the AL (Coates et al., 2017; Zhang and Gaudry, 2016), this inhibition shunts LH responses proportionally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Coates et al., 2017; Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "7f5aac34-8c0f-48e0-ad07-35741aeb5ac5",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C84",
+      "claim": "Antennal lobe inhibition shunts lateral horn responses proportionally.",
+      "claim_type": "EXPLICIT",
+      "source": "As CSDn inhibition scales with increasing odor strength due to robust GABAergic LN input in the AL (Coates et al., 2017; Zhang and Gaudry, 2016), this inhibition shunts LH responses proportionally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from compartmental modeling in Figure 4 and laser ablation experiments in Figure 4I-K.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "32494a82-70b4-4d3b-adc5-4942ea19ef0c",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C85",
+      "claim": "The configuration of the CSDn allows olfactory modulation to be odor specific in the lateral horn while being less dependent on odor concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "This configuration ultimately allows olfactory modulation to be odor specific in the LH while being less dependent on odor concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combination of odor-invariant AL inhibition that scales with intensity and odor-specific LH excitation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "039351f1-808b-42ca-a855-9c2558b270ef",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C86",
+      "claim": "Multi-dendritic computing is critical for processing other sensory modalities, most notably vision.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-dendritic computing is critical for processing other sensory modalities as well (Ranganathan et al., 2018), but most notably vision (Jones and Gabbiani, 2010; Koren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Ranganathan et al., 2018; Jones and Gabbiani, 2010; Koren et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "56076005-67df-4305-a5a9-930940074333",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C87",
+      "claim": "Synaptic integration between dendrites is used to compute object motion across the visual field on a collision course with the observer.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic integration between dendrites is used to compute object motion across the visual field on a collision course with the observer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about visual processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "98cc34f9-eb6b-4a46-98cc-e4936d8ee333",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C88",
+      "claim": "The dendrites of starburst amacrine cells in the mammalian retina express mGluR to isolate dendritic compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the dendrites of starburst amacrine cells in the mammalian retina express mGluR to isolate dendritic compartments thus preventing integration to non-preferred stimuli while enabling regulated integration specifically to preferred directions of motion (Koren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Koren et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "287f96b6-15c2-4fb7-a64a-30cab4b29e1a",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C89",
+      "claim": "CSDn neurites influence one another during olfaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our laser ablation experiments demonstrate that CSDn neurites influence one another during olfaction, but it is intriguing that the magnitude of such coupling could be state dependent and regulated by active conductances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by laser ablation experiments shown in Figure 4I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "1c3d1073-7b39-4767-bf0f-35bc86be0266",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C90",
+      "claim": "The CSDn was originally proposed to participate in top-down modulation by transmitting higher order sensory information from the lateral horn to the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The CSDn was originally proposed to participate in top-down modulation by transmitting higher order sensory information from the LH to the AL (Hill et al., 2002; Sun et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Hill et al., 2002; Sun et al., 1993).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "5c2530b1-7f61-42c8-b9a7-e4da8565a031",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C91",
+      "claim": "During olfaction, the CSDn acts more in a bottom-up fashion where responses in the antennal lobe have a greater impact on downstream processing in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that during olfaction, the CSDn acts more in a bottom-up fashion where responses in the AL have a greater impact on downstream processing in the LH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from compartmental modeling in Figure 4F and laser ablation experiments in Figure 4I-K.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "cb9b3968-9934-4f9d-8595-26cc2e28c376",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C92",
+      "claim": "Transmitter release during olfactory sampling putatively occurs only later in the sensory processing stream rather than at the earliest stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmitter release during olfactory sampling putatively occurs only later in the sensory processing stream rather than at the earliest stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the inhibition in the AL and excitation in the LH, combined with sytGCaMP6s data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "17233c2b-cd80-4615-80a1-119f60a65090",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C93",
+      "claim": "The CSDn has numerous release sites in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the CSDn has numerous release sites in the AL (Coates et al., 2017; Sun et al., 1993; Zhang and Gaudry, 2016) and CSDn derived 5-HT directly inhibits several classes of neurons in the AL (Zhang and Gaudry, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work (Coates et al., 2017; Sun et al., 1993; Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "b0d32f29-5025-45b2-a446-5c8e4dddf51d",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C94",
+      "claim": "CSDn derived serotonin directly inhibits several classes of neurons in the antennal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the CSDn has numerous release sites in the AL (Coates et al., 2017; Sun et al., 1993; Zhang and Gaudry, 2016) and CSDn derived 5-HT directly inhibits several classes of neurons in the AL (Zhang and Gaudry, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Zhang and Gaudry, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "e7c162e5-476a-457d-ae58-e4529b29f98d",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C95",
+      "claim": "It is likely that the CSDn receives input from unidentified non-olfactory sources that excite the neuron's spike initiation site allowing it to modulate in a top-down manner.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is likely that the CSDn also receives input from unidentified non-olfactory sources that excite the neuron's spike initiation site allowing it to modulate in a top-down manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and inferred from the presence of release sites in the AL despite olfactory inhibition.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "6fe21f4d-2e65-4ec0-98cb-110d00c07b7e",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C96",
+      "claim": "Non-olfactory stimulation of the CSDn may be consistent with top-down modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, non-olfactory stimulation of the CSDn may be consistent with top-down modulation and would constitute one mechanism by which a broadly arborizing modulatory neuron may be multifunctional depending on the source of its excitatory drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and inferred from the discussion of potential non-olfactory inputs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "36b4b480-026c-4f2d-938b-255ecb9bca60",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C97",
+      "claim": "Multifunctional neurons have been well described in central pattern generating networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Multifunctional neurons have been well described in central pattern generating networks (Briggman and Kristan, 2008) but are only recently becoming appreciated with regards to neuromodulation (Berke, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Briggman and Kristan, 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "a08e2f92-97b7-4432-9f30-bedd6d52741d",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C98",
+      "claim": "Multifunctional neurons are only recently becoming appreciated with regards to neuromodulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Multifunctional neurons have been well described in central pattern generating networks (Briggman and Kristan, 2008) but are only recently becoming appreciated with regards to neuromodulation (Berke, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Berke, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "0c398c30-cd33-42a0-b30c-8e58c94d7df9",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C99",
+      "claim": "Integration into local circuits allows modulatory cells greater flexibility in how they participate in sensory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings in Drosophila suggest that integration into local circuits allows modulatory cells greater flexibility in how they participate in sensory processing and may be a feature that is often overlooked when assessing the function of these critical components of the central nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the findings on local integration in the CSDn.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "ec0c3b9d-0b29-412f-8f6f-d875e6b7f462",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C100",
+      "claim": "Female flies aged 3\u20135 weeks post-eclosion and reared at room temperature were used for experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Female flies aged 3\u20135 weeks post-eclosion and reared at room temperature were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a methodological statement describing the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "e828ec81-c210-4e0f-9560-84e248fbd6ca",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C101",
+      "claim": "In vivo imaging experiments were performed at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo imaging experiments were performed at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a methodological statement describing experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "bcb07396-483a-421f-984f-aed4512beb75",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C102",
+      "claim": "920 nm wavelength light was used to excite GCaMP6s under two-photon microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "920 nm wavelength light was used to excite GCaMP6s under two-photon microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a methodological statement describing imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "18a0a7fe-0ad8-420d-b2ab-a0c5f1a8b54f",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C103",
+      "claim": "The CSDn was identified and partially reconstructed in the female adult fly brain dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The CSDn was identified and partially reconstructed in the female adult fly brain (FAFB) dataset as described in Zheng et al. (2018) using CATMAID (Saalfeld et al., 2009; Schneider-Mizell et al., 2016), available at https://catmaid-fafb.virtualflybrain.org.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a methodological statement supported by citations to published work (Zheng et al., 2018; Saalfeld et al., 2009; Schneider-Mizell et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "22ff7137-be25-4e05-8ef9-25a5a5aa5574",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C104",
+      "claim": "A multi-compartmental conductance-based computer model of the CSDn neuron was constructed by taking its electron micrograph reconstruction and importing it into the Neuron simulator.",
+      "claim_type": "EXPLICIT",
+      "source": "A multi-compartmental conductance-based computer model of the CSDn neuron was constructed by taking its electron micrograph reconstruction and importing it into the Neuron simulator (Carnevale and Hines, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a methodological statement supported by citation to published work (Carnevale and Hines, 2006).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "00c22124-1339-46ce-9707-3f0d6bcc9a52",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C105",
+      "claim": "The variance explained by PCs 1\u20133 in the antennal lobe are 60.3 \u00b1 2.2%, 6.3 \u00b1 0.4%, and 6.1 \u00b1 0.3%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The variance and SEM explained by PCs 1\u20133 are 60.3 \u00b1 2.2%, 6.3 \u00b1 0.4%, and 6.1 \u00b1 0.3%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PCA analysis data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "6ef5b420-60c5-4fdf-8b09-7b562bf93949",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "claim_id": "C106",
+      "claim": "The variance explained by PCs 1\u20133 in the lateral horn are 45.2 \u00b1 2.6%, 12.4 \u00b1 0.9%, and 8.6 \u00b1 0.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "The variance and SEM explained by PCs 1\u20133 are 45.2 \u00b1 2.6%, 12.4 \u00b1 0.9%, and 8.6 \u00b1 0.6%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by PCA analysis data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d40982c9-9156-48a3-85b4-85c741875694",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CSDn processes in the antennal lobe receive odor-invariant inhibition from GABAergic local interneurons. Nearly all odorants tested produced inhibition, with ammonia being the only exception showing weak excitation. PCA analysis confirmed that odor responses in the AL do not depend on odor identity but rather correlate with total olfactory receptor neuron activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C23, C24, C28, C45, and C79 collectively demonstrate odor-invariant inhibition in the AL through calcium imaging (Figure 1C-F), PCA analysis (Figure 1F), and citations to previous work. The statistical analysis and imaging data provide converging evidence for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "e456645f-4c7c-4184-95f5-27ff3304368a",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CSDn processes in the lateral horn are excited by odors in an odor-specific manner. Every odorant tested produced excitation, and PCA revealed spatially varying responses with greater coefficient of variation compared to the antennal lobe. This represents opposing polarity responses across different olfactory regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C30, C31, C32, C33, C47, and C56 are well-supported by calcium imaging data (Figure 2B-C), PCA analysis (Figure 2C), and statistical comparison of coefficient of variation (Figure 2D, p=0.0021). The data clearly demonstrate odor-specific excitation in the LH contrasting with AL inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "c7916cc9-5eaa-4d09-9f15-ee49a7ecfa8a",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Projection neurons provide direct synaptic input to CSDn terminals in the lateral horn in an odor-specific manner. The spatial pattern of odor responses was highly correlated between PN and CSDn responses (R\u00b2=0.77, p=4.07\u00d710\u207b\u00b2\u00b2). This was confirmed by GRASP data and EM reconstruction showing PNs from at least 17 glomeruli synapse onto the CSDn throughout the LH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 and C74 are strongly supported by multiple lines of evidence: correlation analysis (Figure 3C), GRASP experiments (Figure 3D-F), and EM reconstruction (Figure 3G-I). The convergence of functional imaging, anatomical, and connectivity data provides robust support for direct PN input to CSDn in the LH.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "dac8d618-e7f0-4ca3-a371-9fedaa5a2b70",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Compartmental modeling demonstrates that the geometry and passive properties of the CSDn allow propagation of inhibition from the antennal lobe to the lateral horn. All models displaying somatic inhibition from AL current injection also showed LH inhibition, and voltage signals preferentially propagate from AL to LH rather than the reverse direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50, C81, and C82 are supported by compartmental modeling data (Figure 4E-F). The modeling approach is appropriate and the results are internally consistent. However, the models are passive and ignore active conductances, which is acknowledged as a limitation. The conclusions are appropriately qualified as suggestions rather than definitive proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "7d1130d2-3fd5-40c0-9c1c-aed0c850c58f",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Laser ablation experiments demonstrate that antennal lobe inhibition propagates to suppress olfactory responses in the lateral horn during normal odor sampling. Severing CSDn processes proximal to the LH increased odor-evoked responses to all tested odors, while contralateral control lesions had no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C52, C84, and C89 are well-supported by laser ablation experiments (Figure 4G-K) with appropriate controls. The ipsilateral lesions showed significant increases in LH responses (p<0.05 for multiple odors) while contralateral controls showed no effect (p>0.05), demonstrating specificity. This provides direct experimental evidence for the modeling predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "1412167f-8da7-4967-8dc3-63d7ac2d6d7a",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Antennal lobe derived inhibition acts as a gain control mechanism on branch-specific inputs that CSDns receive in the lateral horn. This configuration allows olfactory modulation to be odor-specific in the LH while being less dependent on odor concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C83, and C85 are supported by the combination of modeling (Figure 4) and laser ablation experiments (Figure 4I-K), along with citations to previous work showing AL inhibition scales with odor intensity. The gain control interpretation is a reasonable inference from the data, though direct measurement of concentration-dependence in the LH would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "d0b2826f-475d-4e35-a0c7-ea2c5949b218",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Olfactory stimulation increases sytGCaMP6s signaling in CSDn lateral horn processes, suggesting odorants likely evoke transmitter release in the LH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C36 are supported by sytGCaMP6s imaging data (Figure 2\u2014figure supplement 2). However, the interpretation is qualified as 'likely' because sytGCaMP6s can potentially report calcium entry at postsynaptic receptors when overexpressed, as acknowledged in the figure legend. The claim is appropriately cautious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "f28f51f2-6ab3-4854-9bbe-2989bd135f87",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A serotonergic neuron with broad arbors integrates locally at multiple neuropils along the olfactory pathway, with synaptic inputs imposing opposite polarity responses that likely decorrelate synaptic release in distinct target regions. This demonstrates that branches within distinct neuropils can operate in different manners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55, C57, C59, and C73 represent the main conclusions of the study and are well-supported by the collective evidence from calcium imaging (Figures 1-2), laser ablation (Figure 4), and modeling. The inference about decorrelation of synaptic release is reasonable given the opposing responses and electrotonic properties, though direct measurement of release would be ideal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "b906389b-4aaf-42c5-9d7f-bed6ad10552c",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The CSDn modulates behavior by affecting odor-processing in the lateral horn rather than the antennal lobe, acting in a bottom-up fashion where AL responses impact downstream LH processing. Transmitter release during olfactory sampling putatively occurs later in the sensory processing stream.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C91, and C92 are supported by the laser ablation experiments (Figure 4) and previous work showing minimal AL modulation despite behavioral effects. However, C92 is explicitly speculative ('putatively') and would benefit from direct measurement of serotonin release. The bottom-up interpretation is a reasonable inference from the modeling and ablation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has established that CSDns are serotonergic neurons innervating both AL and LH, can be genetically targeted, affect olfactory behaviors, are inhibited by odors, and express pre- and postsynaptic markers throughout their arborizations. Previous studies suggested CSDns participate in top-down modulation with effects mainly in the AL, but CSDn processes avoid the cVA-sensitive DA1 glomerulus and DA1 PN responses are not modulated by CSDn stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C14-C22, C75-C77 summarize prior work and are supported by appropriate citations to published literature. These claims provide essential context for the current study and are accurately represented based on the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "0d4becb0-3ca3-4b97-841a-61b7dc935856",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The CSDn likely receives input from unidentified non-olfactory sources that could excite the spike initiation site, allowing top-down modulation. Non-olfactory stimulation may constitute a mechanism for multifunctional modulation depending on the source of excitatory drive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95 and C96 are explicitly speculative and inferred from the presence of release sites in the AL despite olfactory inhibition. While this is a reasonable hypothesis, there is no direct evidence presented for non-olfactory inputs. This represents a testable prediction for future work rather than a supported finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "847a6664-85fd-4abf-a714-e2e3f56012c2",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about neuromodulation, olfactory systems, and prior work on local regulation of modulatory neurons in vertebrates and invertebrates. These establish the broader context for understanding local integration in modulatory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C7-C13, C25-C27, C29, C34, C46, C58, C61-C72, C86-C88, C90, C93-C94, C97-C98) are supported by appropriate citations to published literature and provide important context for the study. They accurately represent the state of knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "6433abd2-4e84-4904-ac6b-b79c94d87260",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Local regulation of release allows modulatory functions to be employed independently in different brain regions, and integration into local circuits allows modulatory cells greater flexibility in sensory processing participation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C99 represent general conclusions inferred from the specific findings on CSDn local integration. These are reasonable extrapolations from the data, though they extend beyond what was directly demonstrated. The claims are appropriately qualified as suggestions rather than definitive conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    },
+    {
+      "id": "d5c81b39-39a8-4659-85a0-78669ccefc81",
+      "content_id": "3e42d179-cc72-41b8-85ed-96882cbaa956",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological details including fly age and rearing conditions, imaging parameters, EM reconstruction procedures, compartmental modeling construction, and PCA variance statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C106 describe methodological details that are appropriately documented with citations where relevant (C103, C104). The PCA variance statistics (C105, C106) are supported by the data shown in Figures 1F and 2C. These provide essential information for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:26.231977Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5e06e2c2-dd5e-422a-88d8-48d52cc57213",
+      "result_id": "d40982c9-9156-48a3-85b4-85c741875694"
+    },
+    {
+      "claim_id": "4cd48c18-a77f-47bb-862d-f25ea453a28a",
+      "result_id": "d40982c9-9156-48a3-85b4-85c741875694"
+    },
+    {
+      "claim_id": "8c1bff3c-0128-4360-80ab-a0a60077a39e",
+      "result_id": "d40982c9-9156-48a3-85b4-85c741875694"
+    },
+    {
+      "claim_id": "ac65b4bb-1ffe-47ca-9e4d-2beef28964fb",
+      "result_id": "d40982c9-9156-48a3-85b4-85c741875694"
+    },
+    {
+      "claim_id": "c884ef7c-cf38-4582-8637-d319eb89e921",
+      "result_id": "d40982c9-9156-48a3-85b4-85c741875694"
+    },
+    {
+      "claim_id": "14a3664a-bca3-487b-83e5-52ed46aa8124",
+      "result_id": "d40982c9-9156-48a3-85b4-85c741875694"
+    },
+    {
+      "claim_id": "0deb47f8-2f22-4048-934e-0517f98c0ff5",
+      "result_id": "d40982c9-9156-48a3-85b4-85c741875694"
+    },
+    {
+      "claim_id": "340a3066-41dc-4f09-9ded-cd4b010c98c5",
+      "result_id": "e456645f-4c7c-4184-95f5-27ff3304368a"
+    },
+    {
+      "claim_id": "235ef2c9-73f1-4ac5-a482-301abab081c5",
+      "result_id": "e456645f-4c7c-4184-95f5-27ff3304368a"
+    },
+    {
+      "claim_id": "acb335d6-b13b-48aa-aae0-890c0e338131",
+      "result_id": "e456645f-4c7c-4184-95f5-27ff3304368a"
+    },
+    {
+      "claim_id": "74c7a776-30f2-4131-becb-ad9b5c171b6d",
+      "result_id": "e456645f-4c7c-4184-95f5-27ff3304368a"
+    },
+    {
+      "claim_id": "3d08dab6-31d2-4c79-8107-00312a954b0b",
+      "result_id": "e456645f-4c7c-4184-95f5-27ff3304368a"
+    },
+    {
+      "claim_id": "072deb2a-9225-48c8-8387-a52b237f5af4",
+      "result_id": "e456645f-4c7c-4184-95f5-27ff3304368a"
+    },
+    {
+      "claim_id": "14ae8013-b3e6-416e-abc1-a8094d42496e",
+      "result_id": "e456645f-4c7c-4184-95f5-27ff3304368a"
+    },
+    {
+      "claim_id": "e609de96-4e4e-4a27-ace3-257859c98003",
+      "result_id": "c7916cc9-5eaa-4d09-9f15-ee49a7ecfa8a"
+    },
+    {
+      "claim_id": "d0eb5658-c1ca-412c-86b6-85c995f2599b",
+      "result_id": "c7916cc9-5eaa-4d09-9f15-ee49a7ecfa8a"
+    },
+    {
+      "claim_id": "df3adc5a-1cfa-476e-9cd3-fecf1befafc0",
+      "result_id": "c7916cc9-5eaa-4d09-9f15-ee49a7ecfa8a"
+    },
+    {
+      "claim_id": "5b6fac4d-3e22-41a6-98d7-43211a2ca27e",
+      "result_id": "c7916cc9-5eaa-4d09-9f15-ee49a7ecfa8a"
+    },
+    {
+      "claim_id": "7c8b95f6-c1f3-4b29-9624-b987afc15b6f",
+      "result_id": "c7916cc9-5eaa-4d09-9f15-ee49a7ecfa8a"
+    },
+    {
+      "claim_id": "bc3c3559-5f1d-4009-acae-9da2595c0626",
+      "result_id": "c7916cc9-5eaa-4d09-9f15-ee49a7ecfa8a"
+    },
+    {
+      "claim_id": "531504dc-3a20-49d3-ae07-e4f94d22c515",
+      "result_id": "c7916cc9-5eaa-4d09-9f15-ee49a7ecfa8a"
+    },
+    {
+      "claim_id": "e2e2b136-ffb4-4c1d-8ac5-a6a4a342ee6d",
+      "result_id": "c7916cc9-5eaa-4d09-9f15-ee49a7ecfa8a"
+    },
+    {
+      "claim_id": "ca4467f0-675e-443d-b5b3-d19b7540bca5",
+      "result_id": "dac8d618-e7f0-4ca3-a371-9fedaa5a2b70"
+    },
+    {
+      "claim_id": "ffdc00ca-9435-4c39-b2f2-7a4135120bee",
+      "result_id": "dac8d618-e7f0-4ca3-a371-9fedaa5a2b70"
+    },
+    {
+      "claim_id": "57d73289-cfc2-4ceb-b188-3394595c0446",
+      "result_id": "dac8d618-e7f0-4ca3-a371-9fedaa5a2b70"
+    },
+    {
+      "claim_id": "7b4b9f25-018d-4bed-91c2-a4a37377a3e3",
+      "result_id": "dac8d618-e7f0-4ca3-a371-9fedaa5a2b70"
+    },
+    {
+      "claim_id": "014d72f7-6090-45dd-8c3d-7264894b94a8",
+      "result_id": "dac8d618-e7f0-4ca3-a371-9fedaa5a2b70"
+    },
+    {
+      "claim_id": "4f372dbb-7d8f-4610-908f-fa5e90fe5a42",
+      "result_id": "7d1130d2-3fd5-40c0-9c1c-aed0c850c58f"
+    },
+    {
+      "claim_id": "ee68e400-44cc-404c-834d-fd39f9d068d3",
+      "result_id": "7d1130d2-3fd5-40c0-9c1c-aed0c850c58f"
+    },
+    {
+      "claim_id": "7f5aac34-8c0f-48e0-ad07-35741aeb5ac5",
+      "result_id": "7d1130d2-3fd5-40c0-9c1c-aed0c850c58f"
+    },
+    {
+      "claim_id": "287f96b6-15c2-4fb7-a64a-30cab4b29e1a",
+      "result_id": "7d1130d2-3fd5-40c0-9c1c-aed0c850c58f"
+    },
+    {
+      "claim_id": "2904052c-abac-44fd-a9c3-d464f07b7c3e",
+      "result_id": "1412167f-8da7-4967-8dc3-63d7ac2d6d7a"
+    },
+    {
+      "claim_id": "b0e2b7ab-fe83-4f7b-abd6-abc1dee70c13",
+      "result_id": "1412167f-8da7-4967-8dc3-63d7ac2d6d7a"
+    },
+    {
+      "claim_id": "2d468c0a-8c33-4671-8d96-08c176d4307d",
+      "result_id": "1412167f-8da7-4967-8dc3-63d7ac2d6d7a"
+    },
+    {
+      "claim_id": "32494a82-70b4-4d3b-adc5-4942ea19ef0c",
+      "result_id": "1412167f-8da7-4967-8dc3-63d7ac2d6d7a"
+    },
+    {
+      "claim_id": "3ec6a438-42a4-454a-b9d5-4ea4e061f0a4",
+      "result_id": "d0b2826f-475d-4e35-a0c7-ea2c5949b218"
+    },
+    {
+      "claim_id": "e620880e-3e0c-4bf3-995d-17129bf7fad1",
+      "result_id": "d0b2826f-475d-4e35-a0c7-ea2c5949b218"
+    },
+    {
+      "claim_id": "ee47c0f8-0944-4582-8a9a-f1c0d17098d0",
+      "result_id": "f28f51f2-6ab3-4854-9bbe-2989bd135f87"
+    },
+    {
+      "claim_id": "2da6635c-8220-43d3-a6ce-1ff64ea4cfd2",
+      "result_id": "f28f51f2-6ab3-4854-9bbe-2989bd135f87"
+    },
+    {
+      "claim_id": "9fa79b59-e984-4487-8fa4-ee27999700cd",
+      "result_id": "f28f51f2-6ab3-4854-9bbe-2989bd135f87"
+    },
+    {
+      "claim_id": "c85a8b80-eee3-4374-bb14-56650b094515",
+      "result_id": "f28f51f2-6ab3-4854-9bbe-2989bd135f87"
+    },
+    {
+      "claim_id": "c4f01704-d405-4113-a55f-463bfcee5e51",
+      "result_id": "f28f51f2-6ab3-4854-9bbe-2989bd135f87"
+    },
+    {
+      "claim_id": "d1348cb1-8a6f-4303-ada7-d68be3a72c32",
+      "result_id": "f28f51f2-6ab3-4854-9bbe-2989bd135f87"
+    },
+    {
+      "claim_id": "ba2de6b4-36a0-4d4d-a5ab-b4be5905e1b0",
+      "result_id": "b906389b-4aaf-42c5-9d7f-bed6ad10552c"
+    },
+    {
+      "claim_id": "5c2530b1-7f61-42c8-b9a7-e4da8565a031",
+      "result_id": "b906389b-4aaf-42c5-9d7f-bed6ad10552c"
+    },
+    {
+      "claim_id": "cb9b3968-9934-4f9d-8595-26cc2e28c376",
+      "result_id": "b906389b-4aaf-42c5-9d7f-bed6ad10552c"
+    },
+    {
+      "claim_id": "6e1ca2d8-9bce-4dc4-814c-e208c11ce1a1",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "0c1f9898-8c12-4cb9-ba5b-c313562184c9",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "bc696893-1137-4cdb-a098-ef45fe66f2d3",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "e4e852e0-7123-431c-8fbd-bb1290e578ed",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "ad0ed461-d99e-4186-ba6e-74fce2ecde52",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "f902fb12-47ce-456a-8698-6acb53adaa41",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "3b97d03a-ad8f-4c7d-9461-2c37ec3f0ca0",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "358587b5-4f50-4ab1-b106-b94d61cacac5",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "8f4a83de-264e-4198-88da-cf8a820996d1",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "3287dbe3-5608-4344-a945-555c782df6e2",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "5231b0aa-f98f-4f14-89f7-f246ca1a8c43",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "a07331b3-7db2-41d8-be37-1dd25d1be595",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "4cc837ad-114a-4f33-b729-d4a25e086de1",
+      "result_id": "1bb2de87-a686-467b-9b46-6ed9bd3517d0"
+    },
+    {
+      "claim_id": "e7c162e5-476a-457d-ae58-e4529b29f98d",
+      "result_id": "0d4becb0-3ca3-4b97-841a-61b7dc935856"
+    },
+    {
+      "claim_id": "6fe21f4d-2e65-4ec0-98cb-110d00c07b7e",
+      "result_id": "0d4becb0-3ca3-4b97-841a-61b7dc935856"
+    },
+    {
+      "claim_id": "88d5fc08-02d8-4456-9987-5b1456ab7b01",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "6e74cbf4-23ad-4e48-99fa-747a1ec23ba3",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "6b067a33-288d-44de-8b19-db14c5bfd0dc",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "5d0db88a-7bc7-4143-9121-12db93d89b21",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "02291ea1-d5a3-4ca0-9b62-cd42faa86282",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "e913ec91-0a09-46c0-bcd5-c4f3c580af45",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "c61baf58-e940-4919-a7f0-4f8aabff5dc2",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "cbefa8b2-656a-462f-8312-afa40515a318",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "5339acb4-0083-40bf-9672-3e38923219cd",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "e9a0230f-43d8-4ca7-9573-a1e617153191",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "303e5289-04fd-4114-86a7-555ffca4c105",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "1150a472-b313-451e-8e52-b2cff5432dd9",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "3837b4d2-8abe-4e35-97dc-980089180a51",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "8e25a990-a695-4ba6-bd95-d8aa98cd8a71",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "3c934a25-ae28-4c9f-99e1-0c8732fe7353",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "3007e383-9d46-4372-b5f4-89654ca8c989",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "a9290bc5-19c0-4afe-b7e9-4819c77eee03",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "b319dadd-bce6-4e55-8d47-f2fcfc650f7d",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "bd2243bf-6324-4912-9250-b846859b5b37",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "aaa0c8a8-e3c4-4c6f-9f5b-637de7b6da79",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "0b7b22e0-ab57-470e-af60-d17471e38308",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "ff284dce-0b3f-4a98-b11b-14c80c48d493",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "4779e291-caf8-4cbc-b838-4543b3bdd2e5",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "510d6ba4-e339-42f4-94c1-d8ddf9f53f8d",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "4b06eca6-6ddb-4915-af60-ed62f1e6dac6",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "afa0ad08-0516-4288-abda-b8456daf5df9",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "039351f1-808b-42ca-a855-9c2558b270ef",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "56076005-67df-4305-a5a9-930940074333",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "98cc34f9-eb6b-4a46-98cc-e4936d8ee333",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "1c3d1073-7b39-4767-bf0f-35bc86be0266",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "17233c2b-cd80-4615-80a1-119f60a65090",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "b0d32f29-5025-45b2-a446-5c8e4dddf51d",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "36b4b480-026c-4f2d-938b-255ecb9bca60",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "a08e2f92-97b7-4432-9f30-bedd6d52741d",
+      "result_id": "847a6664-85fd-4abf-a714-e2e3f56012c2"
+    },
+    {
+      "claim_id": "dd33e96b-f79a-42b8-bdd2-f02609d002b9",
+      "result_id": "6433abd2-4e84-4904-ac6b-b79c94d87260"
+    },
+    {
+      "claim_id": "0c398c30-cd33-42a0-b30c-8e58c94d7df9",
+      "result_id": "6433abd2-4e84-4904-ac6b-b79c94d87260"
+    },
+    {
+      "claim_id": "ec0c3b9d-0b29-412f-8f6f-d875e6b7f462",
+      "result_id": "d5c81b39-39a8-4659-85a0-78669ccefc81"
+    },
+    {
+      "claim_id": "e828ec81-c210-4e0f-9560-84e248fbd6ca",
+      "result_id": "d5c81b39-39a8-4659-85a0-78669ccefc81"
+    },
+    {
+      "claim_id": "bcb07396-483a-421f-984f-aed4512beb75",
+      "result_id": "d5c81b39-39a8-4659-85a0-78669ccefc81"
+    },
+    {
+      "claim_id": "18a0a7fe-0ad8-420d-b2ab-a0c5f1a8b54f",
+      "result_id": "d5c81b39-39a8-4659-85a0-78669ccefc81"
+    },
+    {
+      "claim_id": "22ff7137-be25-4e05-8ef9-25a5a5aa5574",
+      "result_id": "d5c81b39-39a8-4659-85a0-78669ccefc81"
+    },
+    {
+      "claim_id": "00c22124-1339-46ce-9707-3f0d6bcc9a52",
+      "result_id": "d5c81b39-39a8-4659-85a0-78669ccefc81"
+    },
+    {
+      "claim_id": "6ef5b420-60c5-4fdf-8b09-7b562bf93949",
+      "result_id": "d5c81b39-39a8-4659-85a0-78669ccefc81"
+    }
+  ],
+  "comparisons": []
+}

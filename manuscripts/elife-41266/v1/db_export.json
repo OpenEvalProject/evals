@@ -1,0 +1,1694 @@
+{
+  "submission": {
+    "id": "fb44ce4d-819f-450a-9f46-00199cf1774c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:46:09.600073Z",
+    "updated_at": "2025-12-02T10:46:09.600073Z"
+  },
+  "content": [
+    {
+      "id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "submission_id": "fb44ce4d-819f-450a-9f46-00199cf1774c",
+      "content_type": "manuscript",
+      "content_text": "# Dissecting the sharp response of a canonical developmental enhancer reveals multiple sources of cooperativity\n\n## Authors\n\n- Jeehae Park<sup>1</sup>\n- Javier Estrada<sup>1</sup> ([ORCID: 0000-0003-3646-204X](https://orcid.org/0000-0003-3646-204X))\n- Gemma Johnson<sup>1</sup>\n- Ben J Vincent<sup>1</sup>\n- Chiara Ricci-Tam<sup>1</sup> ([ORCID: 0000-0002-6549-1838](https://orcid.org/0000-0002-6549-1838))\n- Meghan DJ Bragdon<sup>1</sup>\n- Yekaterina Shulgina<sup>1</sup>\n- Anna Cha<sup>1</sup>\n- Zeba Wunderlich<sup>1</sup>\n- Jeremy Gunawardena<sup>1</sup> ([ORCID: 0000-0002-7280-1152](https://orcid.org/0000-0002-7280-1152))\n- Angela H DePace<sup>1</sup> ([ORCID: 0000-0001-5723-0438](https://orcid.org/0000-0001-5723-0438)) \u2020\n\n### Affiliations\n\n1. Department of Systems Biology Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDevelopmental enhancers integrate graded concentrations of transcription factors (TFs) to create sharp gene expression boundaries. Here we examine the hunchback P2 (HbP2) enhancer which drives a sharp expression pattern in the Drosophila blastoderm embryo in response to the transcriptional activator Bicoid (Bcd). We systematically interrogate cis and trans factors that influence the shape and position of expression driven by HbP2, and find that the prevailing model, based on pairwise cooperative binding of Bcd to HbP2 is not adequate. We demonstrate that other proteins, such as pioneer factors, Mediator and histone modifiers influence the shape and position of the HbP2 expression pattern. Comparing our results to theory reveals how higher-order cooperativity and energy expenditure impact boundary location and sharpness. Our results emphasize that the bacterial view of transcription regulation, where pairwise interactions between regulatory proteins dominate, must be reexamined in animals, where multiple molecular mechanisms collaborate to shape the gene regulatory function.\n\n## Introduction\n\nDuring development, multicellular organisms control cell differentiation by expressing genes in intricate patterns in space and time. These patterns are achieved by interactions between regulatory proteins and DNA, which convert incoming signals into transcription of mRNA; we refer to the quantitative relationship between the concentrations of transcription factors and the rate of mRNA, or protein, expression in steady state as the Gene Regulatory Function (GRF). Many GRFs for developmental genes are highly non-linear; they convert graded inputs to sharp, step-like outputs. A key mechanistic question is therefore how a sharp GRF is encoded in the regulatory DNA sequence and the interactions of proteins that regulate it.\n\nIn animals, gene expression patterns are controlled by enhancers, regulatory DNA comprised of multiple binding sites for transcription factors (TFs) (Long et al., 2016; Spitz and Furlong, 2012). The canonical model of how an enhancer gives rise to a non-linear GRF focuses on pairwise cooperative TF binding to these sites (De Val et al., 2008; Jolma et al., 2015; Panne et al., 2007; Rodda et al., 2005; Struhl, 2001), an idea that first emerged to explain gene regulation in phage lambda (Johnson et al., 1979) and has since been widely applied to other systems including eukaryotes. For example, the Drosophila melanogaster Hunchback P2 enhancer (HbP2) drives a highly nonlinear GRF in response to the transcriptional activator Bicoid (Bcd) in the early embryo; it has long been thought that the nonlinearity arises from pairwise cooperative binding of Bcd to six DNA binding sites in the enhancer (Burz et al., 1998; Driever et al., 1989; Ma et al., 1996; Struhl et al., 1989). Eukaryotic TFs can indeed influence each other\u2019s binding through direct protein-protein interactions (for Bcd examples include (Burz et al., 1998; Burz and Hanes, 2001; Lebrecht et al., 2005), and this observation led to substantial efforts to find a \u2018cis-regulatory code\u2019 where the position, orientation and affinity of TF binding sites can predict the output of a given enhancer (Y\u00e1\u00f1ez-Cuna et al., 2013). However, such a code has remained elusive (Catarino and Stark, 2018), indicating that there are likely additional molecular mechanisms contributing to non-linear GRF formation.\n\nIn addition to direct protein-protein interactions between TFs, there are many ways that TFs can cooperate indirectly, especially in eukaryotes (Gertz et al., 2009; Spitz and Furlong, 2012). The eukaryotic transcriptional machinery involves not only TFs, but also chromatin remodeling machinery, and cofactors that relay information about TF binding to the basal transcriptional machinery (Allen and Taatjes, 2015; Hargreaves and Crabtree, 2011; Levine, 2010; Wang et al., 2013; Zentner and Henikoff, 2013). Thus cooperativity between TFs can potentially arise indirectly through any mechanism that facilitates subsequent TF binding, or through synergistic activation of the basal transcriptional machinery. Indirect mechanisms that can affect TF binding include collaborative cooperativity, where TFs each affect nucleosome binding or modification state (Mirny, 2010; Voss et al., 2011), TFs co-binding to a co-factor complex (Allen and Taatjes, 2015; Borggrefe and Yue, 2011; Wang et al., 2013), TFs altering the topology of DNA (Courey, 2001) or TFs increasing the effective local concentration of other proteins (Landman et al., 2017). Indirect mechanisms that do not rely on facilitating TF binding include synergistic activation of the basal transcriptional machinery through multiple allosteric interactions (Nussinov et al., 2013), or synergy through activation of multiple steps in the transcription cycle (Coulon et al., 2013; Duarte et al., 2016; Govind et al., 2005;\u00a0Herschlag and Johnson, 1993; Scholes et al., 2017).\n\nWe recently used mathematical theory, grounded in molecular biophysics, to explore the mechanisms underlying nonlinear GRFs generated by a single activating TF, inspired by the example of HbP2 activation by Bcd (Estrada et al., 2016b). GRFs are often characterized by fitting experimental data to a Hill function, which parameterizes the shape of a GRF in terms of three parameters (below) but does not give any mechanistic or biophysical insight into how the GRF arises (Engel, 2012; Weiss, 1997). The GRF of early anterior Hunchback expression with respect to Bcd fits a Hill function with coefficient 5\u20136. It is often informally assumed that this can be explained in terms of pairwise cooperative binding of Bcd to six sites in HbP2, with the Hill coefficient matching the number of sites (Burz et al., 1998; Driever et al., 1989; Gregor et al., 2007; Lopes et al., 2005; Ma et al., 1996). We used our mathematical theory to prove that this assumption is unfounded, providing further evidence that additional mechanisms are required to fully explain the response of HbP2 (Xu et al., 2014; Singh et al., 2005; Fu et al., 2004). We showed that if there are n binding sites for a transcriptional activator, the GRF can reach a Hill coefficient of nearly n only through two non-exclusive mechanisms: either there is \u2018higher-order\u2019 cooperativity, through which binding of a TF to one site can be influenced by multiple other sites, or there is energy expenditure which maintains the regulatory system away from thermodynamic equilibrium.\n\nIn this study, we experimentally probe the mechanisms underlying the shape of the HbP2 GRF using quantitative experiments and compare the results to our previously developed theory. We created a number of variants of HbP2, where we changed the number of Bcd binding sites and the background sequence of HbP2; we measured the resulting GRFs using quantitative imaging of reporter constructs in embryos. A synthetic version of HbP2 containing only Bcd binding sites indicates that other TFs play a role in determining the anterior/posterior position of the GRF. We perturbed the concentration of multiple transcriptional cofactors using RNAi and found that cofactors can also affect the shape of the HbP2 GRF, both in terms of the anterior/posterior position of expression and the steepness of the curve. Finally, we compared our experimental results to theoretical predictions for HbP2 and its variants; this comparison confirms our previous conclusion that higher cooperativity and/or energy expenditure are required to achieve the sharp response of HbP2 to Bcd. Together, our results demonstrate that the shape of the non-linear HbP2 GRF is determined by multiple underlying molecular mechanisms which can be regulated independently and collectively by distinct inputs.\n\n## Results\n\n### The HbP2 reporter system\n\nOur study focuses on a canonical developmental enhancer, HbP2, that drives expression of hunchback (hb) in the Drosophila melanogaster blastoderm embryo. The anterior expression of hb is set by three enhancers: HbP2, which is promoter-proximal, a distal shadow enhancer and a distal stripe enhancer (Figure 1). HbP2 drives early expression of hb at nuclear cycle 14, while the shadow enhancer and stripe enhancer contribute to expression at later times (Perry et al., 2012; Perry et al., 2011). Many studies have correlated in vivo hb expression (using either hb mRNA or protein) to HbP2 sequence features without accounting for these other enhancers (Gregor et al., 2007; Duarte et al., 2016; Lopes et al., 2012); this approach is only valid when analysing early timepoints when HbP2 is active and the others are not, and even then may suffer from errors. To control for this complexity, we isolated HbP2 in a reporter construct consisting of HbP2 and the native hunchback promoter driving expression of lacZ (hereafter called WTHbP2). This construct is the basis for our permuted enhancers, including Bcd binding site deletions and synthetic hbP2 constructs (SynHbP2 plus variants thereof). We inserted all reporter constructs into the attP2 landing site on chromosome 3LT via PhiC31 integrase-mediated transgenesis (see Materials and Methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig1-v1.jpg)\n\n**Figure 1.:** (A)\u00a0Schematics of the hunchback (hb) gene locus showing the three enhancers active in the blastoderm (top) and our reporter construct designed to express lacZ mRNA from the proximal enhancer (HbP2) and hb native promoter. HbP2 has six foot-printed Bicoid binding sites (bottom). (B) (top) A Drosophila melanogaster blastoderm embryo at nuclear cycle 14 stained for Bicoid (Bcd) protein and hb mRNA; image is a maximum projection of z-stack. (bottom) The average Bcd protein and hb expression profiles along anterior-posterior (AP) axis measured at midsagittal plane; data from six embryos.\u00a0Average is represented by the thick line, standard deviation is shown by the shaded area. (C) GRFs for hb mRNA and WTHbP2-reporter expression profiles. Expression of hb or LacZ along the anterior posterior axis is plotted on the left; hb or LacZ expression relative to Bcd concentration is shown on the right. Colors represent individual embryos. Lines on the left are extracted expression traces. On the right, each dot is a measured mRNA level and lines represent fits to the Hill function. From these data, we computed the Hill coefficient (nH), which reflects the shape of the curve, and generalised Michaelis-Menten constant (gMM) which reflects the location of the expression boundary along the anterior/posterior axis.\n\nTo visualize the activity of our reporter constructs via expression of LacZ, we fluorescently stained fixed embryos using in situ hybridization against LacZ (see Materials and Methods). We measured the Bcd expression profile using fluorescent immunostaining, both separately and in embryos co-stained for LacZ mRNA (see Materials and Methods). We imaged entire embryos using 2-photon microscopy and parsed image stacks into cellular resolution pointclouds using a semi-automated pipeline (see (Fowlkes et al., 2011; Fowlkes et al., 2008) and Materials and Methods). Full 3D images of embryos are particularly useful for alignment, which reduces error due to dorsal ventral variation in the hb expression pattern. We gathered data from the earliest stages of nuclear cycle 14 when HbP2 is active. In subsequent figures, we present a subset of this full 3D dataset for simplicity; we show a lateral trace along the anterior-posterior (AP) axis (Figure 1A). Full cellular resolution data are available for download from Figshare (https://doi.org/10.6084/m9.figshare.8235491.v1 [1]).\n\nTo analyze the relationship between Bcd concentration and transcription driven by HbP2, we extract the gene regulatory function (GRF) relating these two quantities. The Bcd gradient is highly reproducible from embryo to embryo (Gregor et al., 2007); we therefore plot the average Bcd protein profile from six embryos against the LacZ expression profile from individual embryos stained for LacZ mRNA driven by the HbP2 reporters. We chose to analyze individual reporter output against the average Bcd profile for two reasons. First, by obtaining an average Bcd profile once and using it as a standard, our embryos can be stained either for protein or RNA, but not both; incompatibilities between in situ hybridization (to detect LacZ) and immunostaining (to detect Bcd protein) lead to noisier data than staining for either alone. Second, we can detect if our perturbations affect variability in expression pattern between individual embryos, which would otherwise be masked in average to average fitting which is commonly used (Gregor et al., 2007; Lopes et al., 2012).\n\nFor convenience of analysis, we will describe the shape of our GRFs by fitting lateral traces to a Hill function of the form,\n\n$$\nE=Emax[Bcd]^{nH}/(Ka^{nH}+[Bcd]^{nH})\n$$\n\nHere, E is the hb mRNA expression level in steady state, in arbitrary units, with Emax being its maximal value. The Hill coefficient, nH, is a measure of how sharply the GRF changes, while the parameter Ka gives the concentration at which the expression level becomes half-maximal and determines the location of the GRF on the anterior-posterior (AP) axis of the embryo. We will refer to Ka as the \u2018generalised Michaelis-Menten constant\u2019 (gMM constant), as it reduces to the well-known Michaelis-Menten constant when the GRF becomes a hyperbolic function with a Hill coefficient of 1. As noted above, the Hill function gives little biophysical insight but it offers a widely-used measure of shape. We will later interpret the shape of the GRF in terms of the mathematical theory that we introduced previously, from which we will draw more mechanistic conclusions.\n\nWe measure a Hill coefficient for the endogenous hb mRNA expression pattern of 6.2 +/- 1.1, which corresponds with other reports in the literature (Gregor et al., 2007; He et al., 2011; Lopes et al., 2012). For WTHbP2, the Hill coefficient is 5.2+/- 0.3, indicating that HbP2 enhancer alone can drive sharp expression comparable to expression from native hb locus. The boundary position for the HbP2 pattern (gMM = 0.072 $\\pm$ 0.011) is also comparable to that of the endogenous hb (gMM = 0.063 $\\pm$0.011).\n\n### HbP2 variants do not adhere to the classical hill function model\n\nA common assumption based on Hill fits to the endogenous Hb mRNA pattern is that Bcd binds cooperatively to 6 Bcd binding sites in HbP2 and that this gives rise to a Hill coefficient of\u00a0~6; more generally this model states that cooperative binding at n sites gives rise to a Hill function with coefficient nH\u00a0=\u00a0n. A concrete test of this hypothesis is to measure the GRF when Bcd binding sites are removed from WTHbP2 where this \u2018classical Hill function model\u2019 predicts two outcomes. First, removing all Bcd binding sites from HbP2 should eliminate expression. Second, deleting individual Bcd binding sites should lead to a progressive, integral decrease in the Hill coefficient. We tested the classical Hill function model by mutating individual Bcd binding sites in the WTHbP2 reporter and measuring LacZ expression. We deleted each Bcd binding site in series starting from the distal end relative to the promoter (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig2-v1.jpg)\n\n**Figure 2.:** (A) (left) Schematics of hbP2-reporter constructs with Bcd binding sites sequentially removed by mutation to preserve the length of the construct. (center) mRNA expression profiles obtained from embryos that carry transgenic reporter constructs shown on the left. (right) GRF of Bcd to LacZ level from each constructs. Dots represent measured mRNA value and lines show a fit to Hill function. (B) From these data, we computed the Hill coefficient (nH), which reflects the shape of the curve, and generalised Michaelis-Menten constant (gMM) which reflects the location of the expression boundary along the anterior/posterior axis. The mRNA expression level at maximum (Emax) was measured for subsets of constructs using a co-stain method (Wunderlich et al., 2014). These quantities are plotted against the number of Bcd binding sites in each construct. (C) (left) Schematics of mutant hbP2 constructs where 1, 2, or 3 Bcd binding sites were removed at different positions. (center) Average expression profiles for each construct on the left. Colors are as indicated. Average is represented by the thick line, standard deviation is shown by the\u00a0shaded area. We extracted both gMM and nH from these data by comparing Bcd input to the LacZ expression profile for each reporter construct. These analyses reveal that different Bcd binding sites have roughly equal contributions to the HbP2 GRF.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The WTHbP2 sequence contains six canonical predicted Bcd binding sites and one additional predicted site that overlaps with X3. The native hb promoter also contains an additional predicted Bcd binding site. We removed both of these sites (delta6 TFBS\u00a0+delta1 predTFBS) and measured expression in reporter constructs in embryos. We also show\u00a0data from delta6, where all six canonical WTHbP2 Bcd binding sites have been removed, and data from delta5 for comparison (also shown in Figure 2). (A) (left) mRNA expression profile obtained from embryos that carry transgenic reporter constructs with Bcd TFBS removed. (right) Bcd/LacZ GRF for each reporter construct. Dots represent measured value and lines show a fit to Hill function. (B) Hill Coefficient (nH) obtained from each reporter construct, reflecting the shape of the GRF. (C) The generalised Michaelis-Menten constant obtained from each construct, reflecting the location of the expression boundary.\n\nFirst, eliminating all 6 Bcd binding sites does not abolish expression. This indicates that other binding sites, either for Bcd or other TFs, contribute to HbP2 expression, which has been previously argued in the literature (Chen et al., 2012; Holloway and Spirov, 2015; Liu and Ma, 2013; Mito et al., 2006; Xu et al., 2014). We analyzed the sequence of HbP2 and hb native promoter and found two predicted binding sites for Bcd. Removing these additional sites further reduced gene expression level, however it did not completely abolish it (Figure 2\u2014figure supplement 1). Second, while the Hill coefficient does decrease as Bcd sites are removed, it only decreases by\u00a0~0.5 for each site removed. Removing Bcd binding sites also decreases the gMM constant and shifts the expression of HbP2 toward the anterior. Together, these results indicate that the assumption that Hill coefficient follows a one-to-one relationship with the number of binding sites in the enhancer is wrong, as we would have predicted from our biophysical model.\n\nA common question is whether individual Bcd binding sites contribute differently to the WTHbP2 GRF. Of the six Bicoid binding sites, three are strong affinity sites (sTFBSs) and three weak affinity sites (wTFBSs). wTFBSs are clustered together at the center of WTHbP2 while sTFBS are located on the flanks with varying distance to the nearest Bcd binding site (13 bp to 106 bp, center to center). The role of these individual sites has been investigated in terms of pairwise interactions between Bcd molecules in vitro (Ma et al., 1996) and in yeast (Burz and Hanes, 2001), where binding is influenced by the location and orientation of the sites. The role of individual binding sites in embryos has been explored, but without quantitative imaging (Driever et al., 1989), making the effects difficult to discern.\n\nWe also did limited experiments to test whether the affinity or location of the weak and strong Bcd binding sites influences the WTHbP2 GRF in our reporter construct. To compare the effect of weak and strong Bcd binding sites, we deleted single binding sites with different affinities (Figure 2C). In all cases, removing a Bcd binding site decreased the Hill coefficient by\u00a0~0.5 indicating that this parameter was not disproportionately affected by any particular site. The gMM constant also decreased sequentially upon TFBS removal without distinctive dependence on any particular single site. To test whether the cluster of weak Bcd binding sites has a disproportionate effect on sharpness, we deleted sets of two and three binding sites, either all in the central cluster or not. We found removing Bcd binding sites from the central cluster differentially affects both the gMM constant and the Hill coefficient, with the central cluster having a moderately larger effect on the gMM but the differences are within error (Figure 2C). Together, these results indicate that all six binding sites contribute roughly equally to GRF shape, despite variations in affinity and position, which was also observed in other work (Smith, 2015).\n\n### Bcd and other transcription factors contribute to expression driven by HbP2\n\nHbP2 contains predicted binding motifs for TFs other than Bcd, including Hb itself and the pioneer factor Zelda (Figure 3A). To test if these other binding sites contribute to the WTHbP2 GRF, we created a synthetic HbP2 enhancer (synHbP2). This sequence maintains the endogenous Bcd binding sites in place but replaces the intervening sequences with computationally designed \u2018neutral sequences\u2019; these neutral spacers are devoid of motifs for 11 TFs known to regulate even-skipped that are expressed in the blastoderm (Bcd, Cad, dStat, D, Gt, Hb, Kni, Kr, Nub, Tll, Zld) (Estrada et al., 2016a). We chose this limited list because designing sequences lacking motifs for all 37 TFs expressed in the blastoderm is technically intractable and often results in highly repetitive sequences. Bcd is a homeodomain protein and these are sensitive to DNA shape dictated by sequence outside of the core binding motif (Dror et al., 2014). We therefore made constructs with various amounts of endogenous sequence flanking each Bcd site. Robust expression requires 7 bp of endogenous sequence flanking each Bcd binding site; using only the 7 bp core Bcd binding motif, or motifs flanked by 2 bp did not drive robust expression (Figure 3A, right).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematics of WTHbP2 illustrating the location and affinity of predicted binding sites for Bicoid (Bcd, dark blue), Hunchback (Hb, green), Zelda (Zld, red), Tailless (tll, grey) and Kr\u00fcppel (Kr, light blue), and SynHbP2 where these other sites have been replaced by a computationally designed synthetic DNA backbone. In SynHbP2, Bcd binding sites are preserved in their native position and flanked by differing amounts of endogenous DNA. SynHbP2 constructs containing Bcd binding sites without endogenous flanking sequences did not express (data not shown); adding back native sequence (+2 bp or\u00a0+7 bp) flanking Bicoid TFBS restored expression (right). (B) SynHbP2 expresses in an anteriorly shifted position, but with a comparable shape. On the left, we compare the expression driven by WTHbP2 to expression driven by SynHbP2 with 7 bp flanks (hereafter SynHbP2) along the anterior posterior axis. On the right, we convert the data into the Bcd/LacZ GRF and extract nH and gMM as previously described. (C) We depleted Hunchback and Zelda from blastoderm embryos using RNAi to test their role in regulating WTHbP2. We show the average LacZ expression profiles from RNAi treated embryos (left column, thick line is the average over eight embryos, shaded area indicates standard deviation), the Bcd/LacZ GRF (center column), and the fit of the GRF to a Hill function to extract nH and gMM (right column). For reference, nH and gMM for WTHbP2 are 5.2\u00a0\u00b1\u00a00.3 and 0.072\u00a0\u00b1\u00a00.011, respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We deleted binding sites from a version of SynHbP2 that contained 12 bp of endogenous sequence flanking each Bcd binding site. (A) Average expression profile from SynP2 deletion constructs color coded as in B. Shaded area indicates standard deviation. (B) Schematics of SynhbP2-reporter constructs with binding site sequentially removed. (C) (left) mRNA expression profiles obtained from embryos that carry transgenic reporter constructs. (right) Bcd/LacZ GRFs for each construct in (B). Dots represent measured value and lines show a fit to Hill function. (D) Hill Coefficient (nH) obtained from each reporter construct, reflecting the shape of the GRF. The generalised Michaelis-Menten constant obtained from each construct, reflecting the location of the expression boundary.\n\nSynHbP2 drives expression comparable to WTHbP2, with a similar Hill coefficient but at an anteriorly shifted location in the embryo, corresponding to an increased gMM constant (Figure 3B). These results indicate that Bcd alone can mediate sharp expression but that other TFs, such as Hb and Zelda may affect the gMM constant and the location of the GRF along the AP axis. To further test the role of Hb and Zelda in mediating a sharp response from HbP2, we knocked down expression of Hb and Zelda in trans using RNAi (Figure 3C). Our RNAi strategy specifically knocks down the maternal contribution of these proteins (see Materials and Methods) (Staller et al., 2013). If SynHbP2\u2019s anterior shift is due to missing activity from Hb or Zelda, we expect similar anterior shifts in WTHbP2 expression when depleting these proteins in trans. Indeed, knock-down of hb and Zelda shifted the location of expression by 8% and 5% anteriorly along the AP axis without distinctive changes in the steepness of the response (nH(hbRNAi)=5.9\u00a0\u00b1 0.6, nH(Zelda RNAi)=5.8\u00a0\u00b1\u00a00.9). Previous studies have noted an anterior shift in HbP2 expression when Zelda or Hb are perturbed, although the GRF was not quantitatively analysed (Xu et al., 2014). Our results confirm and quantitate this anterior shift, and reveal the differential influence of these perturbations on the steepness and location of the boundary.\n\nTo test how the GRF depends on the number of Bcd binding sites in SynHbP2, we deleted Bcd binding sites individually from the distal end, as we did for WTHbP2 (Figure 3\u2014figure supplement 1). Removing Bcd binding sites from SynHbP2 shifted the boundary position further toward the anterior and reduced boundary steepness as observed with WTHbP2, demonstrating that the individual Bcd binding sites are functionally contributing to the GRF when\u00a0in the synthetic background.\n\n### Mediator and chromatin remodelers influence the shape of the HbP2 gene regulatory function.\n\nCooperativity can arise through a wide variety of potential molecular mechanisms, including chromatin remodeling or modification, or binding to a multi-valent cofactor such as Mediator. We therefore perturbed the expression of 12 transcriptional cofactors and known (or potential) interactors of Bcd using RNAi, and measured the effect on the WTHbP2 GRF (Table 1,\u00a0Table 2). We knocked down the maternal expression of these factors using shRNAs available through TRiP (https://fgr.hms.harvard.edu/fly-in-vivo-rnai), and using the Gal4/UAS system (Staller et al., 2013). We observed significant effects for 5 of 12 target genes, see Materials and Methods and described below. Note that negative results in this experiment are not necessarily informative, as RNAi lines may not result in sufficient knockdown to observe a phenotype.\n\n**Table 1.**\n List of shRNA lines\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Target gene name</th>\n      <th>TRiP ID</th>\n      <th># of embryos</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Nejire (CBP)</td>\n      <td>HMS01570</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Bin1/SAP18</td>\n      <td>GL00127</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Sin3A</td>\n      <td>HMS00359</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>HDAC6</td>\n      <td>HMS00077</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Mediator complex subunit 1</td>\n      <td>HMS01139</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>Mediator complex subunit 11</td>\n      <td>HMS01094</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Mediator complex subunit 14</td>\n      <td>HMS01049</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Mediator complex subunit 20</td>\n      <td>HMS01051</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Mediator complex subunit 22</td>\n      <td>HMS01047</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Mediator complex subunit 27</td>\n      <td>HMS01050</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Mediator complex subunit 28</td>\n      <td>HMS00458</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Mediator complex subunit 7</td>\n      <td>HMS01140</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Vielfaltig (Zld)</td>\n      <td>HMS02441</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>hunchback</td>\n      <td>GL01321</td>\n      <td>11</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Number of Embryos Imaged\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reporter contructs</th>\n      <th># of embryos</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Endogeous hb</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>WThbP2</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>WThbP2 (5TFBS)</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>WThbP2 (4TFBS)</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>WThbP2 (3TFBS)</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>WThbP2 (2TFBS)</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>WThbP2 (1TFBS)</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>WThbP2 (\u03941b)</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>WThbP2 (\u03942b)</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>WThbP2 (\u03943b)</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>SynHbP2 (2 bp)</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>SynHbP2 (7 bp)</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>SynHbP2 (12 bp)</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>SynHbP2 (12 bp, 4TFBS)</td>\n      <td>15</td>\n    </tr>\n  </tbody>\n</table>\n\nWe hypothesized that chromatin remodelers might modulate the accessibility of regulatory DNA, and therefore influence the sensitivity of the WTHbP2 GRF to Bcd concentration and thus to the location of expression along the AP axis. For example, Creb Binding Protein (CBP) a histone acetyl transferase and the Drosophila ortholog of p300 (Fu et al., 2004), is known to destabilize chromatin and facilitate chromatin opening (Chan and La Thangue, 2001). CBP is also reported to be an enhancer-dependent co-activator of Bcd, facilitating its activation in S2 cells (Fu et al., 2004). Indeed, we found that knocking down CBP or HDAC6, both proteins involved in histone acetylation, results in a distinctive shift in location of expression toward the anterior (34 \u00b1 2.5 %AP, 40 \u00b1 1.5%AP respectively) without much change to the Hill coefficient (nH\u00a0=\u00a04.5\u00a0\u00b1\u00a00.53 and nH\u00a0=\u00a06.22\u00a0\u00b1\u00a00.03 respectively) (Figure 4, Table 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig4-v1.jpg)\n\n**Figure 4.:** We knocked down the maternal contribution of multiple trans factors using RNAi in embryos harboring the WTHbP2 reporter. We stained for LacZ expression and present the average expression profile (left), the expression traces from individual embryos (center), and the Hill function fits of Bcd/LacZ GRFs from individual embryos (right).\u00a0The number of embryos imaged is listed in Table 2. We present three proteins whose knockdown had a significant effect on the location of WTHbP2 expression. CBP is a histone acetylase that coactivates Bcd (Fu et al., 2004). SAP18 and Sin3A are cofactors of Bicoid that have histone deacetylase activity (Singh et al., 2005). For reference, nH and gMM for WTHbP2 are 5.2\u00a0\u00b1\u00a00.3 and 0.072\u00a0\u00b1\u00a00.011, respectively.\n\nWe also hypothesized that multi-valent cofactors, such as Mediator, might influence the shape of the WTHbP2 GRF by facilitating interactions between Bcd molecules. We found that knocking down Mediator subunits had three types of effects on the WTHbP2 GRF. First, some subunits, such as MED14, reduce the overall expression level. Second, some subunits, such as MED20 and MED22, do not affect the Hill coefficient, but do affect the gMM constant. Finally, some subunits, such as MED11 and MED27, decrease the Hill coefficient, but do not affect the gMM constant (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig5-v1.jpg)\n\n**Figure 5.:** Mediator subunits were knocked down using RNAi (see Materials and Methods).\u00a0The number of embryos imaged is listed in Table 2. (Left column) Average gene expression profiles from hbP2-reporter construct in embryos with respective trans-factors depleted using RNAi; bold line is the average, shadow is the standard deviation. (Middle column) Individual gene expression profiles from each embryo; each color represents a separate embryo. (Right column) Bcd/LacZ mRNA GRF fit to the Hill function. Hill coefficient (nH) reflects the shape of the curve, generalized Michaelis Menten coefficient (gMM) reflects the location along the anterior posterior axis. For reference, nH and gMM for WTHbP2 are 5.2\u00a0\u00b1\u00a00.3 and 0.072\u00a0\u00b1\u00a00.011, respectively.\n\n### Comparing expression driven by variants of WTHbP2 and SynHbP2 to theory indicates multiple molecular mechanisms underlie the GRF\n\nFitting GRFs to Hill functions is a convenient way to characterize the shape of the response, but doesn\u2019t give any molecular insights. We developed a theoretical framework, rooted in molecular biophysics, to explore how individual TFs contribute to the GRF (Estrada et al., 2016b). If energy is not being expended to regulate transcription, so that regulation may be assumed to take place at thermodynamic equilibrium, our theory allows for arbitrary forms of \u2018higher-order\u2019 cooperativity (HOC), through which the affinity of binding at a site can be influenced by binding at multiple other sites. Such HOC allows any form of information integration which can be accomplished at thermodynamic equilibrium to be accommodated in a model. The molecular mechanisms that give rise to such higher-order effects may include chromatin, nucleosomes or co-regulators like Mediator. To assess the shape and location of the GRF, we introduced two non-dimensional parameters, called \u2018steepness\u2019 and \u2018position\u2019, which correspond to the maximal derivative and the location of the maximal derivative, respectively, of the normalised GRF. These intrinsic measures of shape are more biophysically informative than the nH and gMM constant of a fitted Hill function.\n\nHigher order effects have rarely been considered previously. An exception is a series of quantitative studies of regulation of the Drosophila even-skipped gene, which are notable for their predictive accuracy (Janssens et al., 2006; Kim et al., 2013). The model underlying these studies, described in detail in (Reinitz et al., 2003), allows for higher order interactions of multiple binding sites, assuming thermodynamic equilibrium. These higher order effects seem important for the accuracy of the model. However, the effects are treated in a phenomenological way, which makes it difficult to draw quantitative comparisons with the biophysical model that we use.\n\nIn our previous work, mRNA expression was treated as an average over different TF binding microstates (Estrada et al., 2016b). For the present paper, we introduced a more refined model in which RNA polymerase is explicitly recruited to the promoter. In effect, RNA polymerase was treated as another molecular entity which can bind to DNA at a single site. The rate of mRNA expression was then taken to be proportional to the probability of RNA polymerase being bound. This model more accurately represents the behavior of TFs, which include domains that bind specifically to DNA, as well as domains which interact directly or indirectly with\u00a0RNA polymerase. Accordingly, higher-order cooperativities may arise between TF binding sites (TF-TF HOC) as well as between TF sites and RNA polymerase (TF-Pol HOC).\n\nHere, we compare our model with various numbers of TF binding sites to our experimental data from deletions of WTHbP2 and SynHbP2 (Figure 6). In our model, we created GRFs by randomly choosing HOCs, for both TF-TF and TF-Pol, within a plausible range and determined the boundary of the position-steepness region occupied by any of such GRFs. This allows us to ask whether the position and steepness of the experimentally determined GRF is found within this biophysically plausible region. Note that this approach does not require fitting the GRF to experimental data. Instead, we mathematically determine the region of position and steepness in which the data should fall. We find that the WTHbP2 and SynHbP2 GRFs lie on the boundary of the position-steepness region, and that pairwise cooperativities, either TF-TF or TF-Pol, are inadequate to explain the data. Moreover, the deletion constructs yield GRFs whose steepness is higher than the model can accommodate, especially for low numbers of TF binding sites.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig6-v1.jpg)\n\n**Figure 6.:** (A) Using an updated version of the mathematical model in Estrada et al., we calculated the boundaries of the steepness and position for GRFs that can be generated by six transcription factor binding sites, either including higher-order cooperativities (solid grey line), pairwise TF-TF cooperativities (dashed grey line, lower left) or pairwise TF-Pol cooperativities (dashed grey line, lower right). For comparison, the Hill line, consisting of the position and steepness points for varying values of the Hill coefficient, nH, is plotted in magenta with the points corresponding to integer values of nH marked by crosses. Experimental data from WTHbP2 (individual embryos are shown as small red circles; the average is shown as a largered disc with a black surround) and SynHbP2 (individual embryos are shown as small orange circles; the average is shown as a large\u00a0orange disc with a black surround). (B) We plotted the data from WTHbP2 variants where Bcd sites have been removed, described in Figure 2, in terms of steepness and position and compared it to the model with corresponding numbers of TF binding sites. The boundaries of the model for 2, 3, 4, 5 and 6 sites are shown in nested solid grey lines. The model corresponding to the number of remaining Bcd binding sites is shown in dashed black. Individual embryos are shown as small\u00a0black circles; the average is shown as a red disc. P-values correspond to the probability of finding the GRFs inside the thermodynamic equilibrium region (see Materials and methods). (C) Data from two variants of SynHbP2 are plotted as in B, except the average is shown as an orange disc. In these constructs, the Bcd binding sites are flanked by 12 bp of endogenous sequence rather than 7 bp, as is shown in panel A. See supplementary data for the construct schematics and sequence details.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (Top) Estimated position and steepness for wild-type and synthetic Hb enhancer with subsequent TF binding site deletions (indicated in the title of each panel), plotted against the boundaries of the mathematical model of N\u00a0=\u00a07 binding sites and the same number of deletions. (Bottom) Similar to the top plot, but mathematical model starting at N\u00a0=\u00a08 binding sites.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) (top left) Estimated non-normalized GRFs for WTHbP2 deletion series as shown in Figure 2. Average expression profile from each deletion construct. (bottom left) Non-normalized \u2018raw\u2019 position and steepness for each deletion construct. (top right) Estimated GRFs for WTHbP2 deletion series, normalizing Bcd concentration by Bcd05. (bottom center) Position vs steepness for each deletion constructs after normalization using Bcd05. (bottom right) Estimated Bcd05 for each construct. (B) Analysis equivalent to panel A for SynHbP2 deletion series, as shown in Figure 3\u2014figure supplement 1.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (Top) Graph for the gene regulation model with two sites for a transcription factor, L, and a single site for RNA polymerase, P, giving a 2\u00a0+\u00a01 model. (Bottom) The set-theoretic notation used for microstates and transition rates at thermodynamic equilibrium is illustrated for 4\u00a0+\u00a01 sites, with K denoting association constants and [-] denoting concentration. To fix the level of RNA polymerase, it is assumed that K P,(\u00d8, 0) [P]=1. (Bottom, inset) Non-dimensional higher-order cooperativities are defined as ratios of association constants.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/41266/elife-41266-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Position-steepness boundaries are shown for GRFs generated by six transcription factor binding sites, as in Figure 6, for varying parametric ranges.\u00a0The boundaries stabilise rapidly as the parametric range is increased from a\u00a0=\u00a03, which is the value used in Figure 6, to a\u00a0=\u00a04 and a\u00a0=\u00a04.5. The purple boundary for a\u00a0=\u00a04 is obscured by the green boundary for a\u00a0=\u00a04.5. The magenta curve marks the Hill line, as in Figure 6.\n\nThese discrepancies between our model and experiments indicate that additional features not included in our model must contribute to the steepness of the HbP2 GRF. For example, there may be cryptic Bcd binding sites that contribute to HbP2 expression. Alternatively, because our model accommodates all thermodynamically feasible mechanisms for a single transcriptional activator, additional regulators may play a crucial role. However, we attempted to control for this possibility by creating SynHbP2, which consists of only Bcd binding sites and still generates expression patterns with position and steepness beyond the limits of our model. We are left to consider whether non-equilibrium models requiring energy dissipation are central to generating the HbP2 GRF. We address these various possibilities further in the Discussion.\n\n## Discussion\n\nIn 1989, Driever and Nusslein-Volhard proposed that Bcd binds cooperatively to the HbP2 enhancer to generate a sharp response from a graded input (Driever et al., 1989). Fitting the sigmoidal output of an HbP2 reporter construct to a Hill function revealed a Hill coefficient of 5 to 6, and this was interpreted to mean that Bcd bound cooperatively to HbP2, resulting in a GRF where n binding sites give rise to a Hill coefficient of n; this idea has been persistent in the Drosophila literature (Gregor et al., 2007; He et al., 2010a; He et al., 2011; Lopes et al., 2012; Xu et al., 2015). Here we test this model directly by making mutations in the HbP2 enhancer and measuring the consequences quantitatively. We first demonstrate that predicted relationship between binding site number and Hill coefficient does not hold. Then, we put forward data to support an alternative model where Bcd, other TFs and co-factors such as Mediator and CBP work together to shape the GRF through two largely separable properties - the steepness and position of the response. Finally, by comparing our results to theory, we propose that either unrecognized Bcd binding sites contribute to HbP2 expression, or that activation by a single TF at thermodynamic equilibrium may not be adequate to explain the response of HbP2, even when accounting for higher order cooperativities between TFs.\n\n### Experimental distinctions between our work and previous studies\n\nOur results agree qualitatively with previous studies, including those by Driever and Nusslein-Volhard. Upon removal of Bcd binding sites from HbP2, the expression boundary shifts toward the anterior and the sharpness decreases. However, our constructs do differ from that previous study in some important respects. Driever and Nusslein-Volhard removed Bcd TFBS by truncating WTHbP2 to shorter pieces. This strategy not only removes Bcd TFBS but also other neighboring sequences and it changes the distance of binding sites relative to the promoter. In contrast, our series of HbP2 variants preserve enhancer length, binding site positions and inter-motif sequences. All of our reporters used the native Hb promoter (Perry et al., 2012) rather than using the HSP 70 promoter (Driever et al., 1989) or a smaller fragment of the Hb promoter (+1 to+107) (Driever et al., 1989). But most significantly, we used quantitative imaging methods to measure the output of our HbP2 variants; this allows us to interpret our data differently. We find that the changes to the GRF upon binding site removal do not conform to the simple model where n binding sites can produce a GRF with a Hill coefficient of n. Instead, the Hill coefficient decreases by 0.5 with each site removed (rather than by one as would be predicted).\n\nOur work also differs from recent quantitative studies on the Bcd/Hb GRF. In (Gregor et al., 2007; He et al., 2010a; Lopes et al., 2012), the authors measured the endogenous Hb protein expression profile, whereas we measured mRNA from an HbP2 reporter construct. In (He et al., 2011), the authors compared Bcd to endogenous hb mRNA expression using in situ hybridization. Importantly, all of these studies, including ours, largely agree, measuring Hill coefficients between 5 and 6. However endogenous hb mRNA (and endogenous Hb protein) cannot be directly interpreted as the output of the HbP2 GRF because it is difficult to exclude outputs from other hb enhancers that are known to contribute to anterior hb gene expression (Perry et al., 2012). For the purpose of deciphering the molecular details of an enhancer, our reporter designs and assays provide the most direct experimental tests. Lastly, we note that a recent quantitative fluorescence in situ hybridization study showed evidence of\u00a0~6 Bicoid molecules\u00a0bound to the hb locus of earlier stage embryos (Xu et al., 2015). Our results suggest that either more than 6 Bcd molecules are interacting on HbP2, or energy is being spent to maintain the system away from equilibrium.\n\nMultiple studies have focused on identifying interactions between Bcd molecules that could help explain cooperative binding. The studies used synthetic DNA sequences and mutated proteins in cell culture assays, and came to varied conclusions about the role of distance and clustering between Bcd binding sites (Driever et al., 1989; Ochoa-Espinosa et al., 2005). In our study using the endogenous enhancer in embryos, the arrangement, position, orientation, clustering and affinity of Bcd binding sites were not distinctive features for the degree of cooperativity. However, the number of perturbations we did to explore these parameters is limited, and it remains possible that they contribute partially to the degree of sharpness in the Bcd/HbP2 GRF.\n\n### Flanking sequence influences bcd binding site efficacy\n\nBcd belongs to the homeodomain protein family, which recognize a common -TAAT- motif. While some homeodomain proteins have a degenerate specificity (Berger et al., 2008; Christensen et al., 2012; Noyes et al., 2008a), Bcd binds to the specific TAATCC motif (Bergman et al., 2005; Noyes et al., 2008a, Noyes et al., 2008b). Bcd has some unique structural features that allow this specificity, including recognition of -CC by direct contact with K50/R54 (Baird-Titus et al., 2006), and recognition of a weak binding motif (-TAAGCT-, X1) by the \u2018recognition helix\u2019 that harbors R54 (Adhikary et al., 2017; Dave et al., 2000; Zhao et al., 2000). This degree of specific binding makes it reasonable to assume that the core motif would be sufficient for Bcd binding and activity in vivo; however, here we show that including 7 bp of endogenous flanking sequence around each core Bcd motif dramatically increases the activity of a synthetic HbP2 enhancer. When we increased the flanking sequence to 12 bp, we didn\u2019t observe any additional effect. These flanking sequences do not have any obvious similarity to one another, though the number we have is far too small to analyze bioinformatically. We hypothesize that the flanks form a specific DNA shape that is favorable for Bcd recognition, as has been shown for other homeodomain proteins (Dror et al., 2014).\n\n### Additional bcd binding sites outside HbP2\n\nEven after all six known binding sites are removed from WTHbP2, we still observe gene expression with a sigmoidal, non-linear response. WTHbP2 does not express at all when Bcd is removed by RNAi (data not shown), indicating that some Bcd responsive element remains even after removing the canonical six sites. In our constructs, WTHbP2 is conjugated with its native hb promoter which is\u00a0~500 bp in length. The WTHbP2 sequence contains one additional predicted Bcd binding site in addition to the canonical six which overlaps with a weak binding site, and the native hb promoter also contains an additional predicted Bcd binding site. These two sites are obvious candidates for the residual Bcd responsive activity. We deleted these two additional sites and measured expression; expression is lowered further but still detectable (see Figure 2\u2014figure supplement 1). We also calculated the limits of steepness and position assuming 7 or 8 TFBS and compared the boundaries to the experimental data from our TFBS deletion series. As expected, including 1 or two additional sites broadened the boundary of the steepness/position space. However, experimental data still often fall on the edge of the boundary and at lower number of TFBS, experimental data is outside the the boundary (see Figure 6\u2014figure supplement 1). Because of the complexity of the native WTHbP2 enhancer sequence, we believe that synthetic constructs with defined binding site content such as the one we present here will be an important tool for dissecting the role of individual TF binding sites in dictating a response. In future studies, coupling our SynHbP2 to a synthetic promoter could also prove to be useful. We also note that promoters and enhancers have similar abilities to recruit PolII (Henriques et al., 2018), and especially in systems like ours where the enhancer is immediately adjacent to the promoter, may need to be considered as a single functional unit.\n\nImportantly, our conclusion that pairwise cooperative binding of Bcd is inadequate to produce the observed expression from HbP2 is unaffected by how many Bcd sites there are (Estrada et al., 2016b). However, when considering the role of higher order cooperativity, additional binding sites allow the theory and experiment to be within range of one another. We therefore conclude that future efforts to understand the mechanism of cooperativity for WTHbP2 should focus on how higher order cooperativity can be achieved, or non-equilibrium mechanisms.\n\n### Modulating the position of expression through effective concentration of Bcd\n\nMultiple perturbations shifted the anterior/posterior location of expression driven by WTHbP2, reflecting a change in the sensitivity to Bcd concentration. We hypothesize that these perturbations all influence the accessibility of WTHbP2, and thus the ability of Bcd to bind. For example, removing binding sites for the pioneer factor Zelda may result in decreased accessibility of WTHbP2, a requirement for higher levels of Bcd to activate expression, and an anterior shift in expression. Similarly, Hb may also facilitate Bcd binding through collaborative cooperativity, and CBP may be necessary to modify nucleosomes. This hypothesis is consistent with previous studies where modulating Bcd concentrations influences the location of expression without altering the steepness (Liu et al., 2013; Struhl et al., 1989).\n\n### Cofactors shape the gene regulatory function\n\nBecause of their central role in regulating transcription, TFs have been the primary focus of research to determine the molecular mechanisms underlying the shape of gene regulatory functions (Janssens et al., 2006; Junion et al., 2012; Kazemian et al., 2010; Segal and Widom, 2009; Zinzen et al., 2009). Specifically, pairwise cooperative binding between TFs has been widely proposed to underlie sharp responses to graded inputs (He et al., 2010b; Segal et al., 2008), though a series of models from the Reinitz group allow for higher-order cooperativity between TFs and other components (Reinitz et al., 2003; Janssens et al., 2006; Kim et al., 2013). In the scenario where cooperative binding between TFs dominates, the many cofactors crucial for eukaryotic gene regulation serve as \u2018cogs in the machine\u2019 to relay decisions from TFs to the basal transcriptional machinery.\n\nOur work calls the TF-centric view into question using both theory and experiment. We show that theory grounded in physics must include higher order cooperativity between TFs to generate GRFs with sufficient steepness and position to compare to in vivo measurements; this assumes that the regulatory mechanism is operating at thermodynamic equilibrium, which may still be inadequate to capture experimental data, indicating that energy dissipation may be required. Cofactors are prime candidates for implementing higher-order cooperativity or energy dissipation through binding directly to multiple TFs or by facilitating their binding through indirect processes such as chromatin remodeling or modification. Indeed, we present experimental evidence that perturbing some cofactors changes the WTHbP2 GRF by altering either the anterior/posterior position or shape of expression. A role for cofactors in shaping the GRF is consistent with in vitro studies where purified Bcd protein binds to HbP2 but yields a Hill coefficient of only 3\u20134 (Ma et al., 1996). In independent work, we have shown that allosteric interactions arising from dynamically changing conformations can give rise to higher-order cooperativities (Biddle et al., submitted) and it is conceivable that cofactors may employ this mechanism at HbP2. We hope to investigate this in future studies. Together, these results argue that cofactors do not simply execute the decisions made by TFs; they collaborate with TFs to shape the quantitative features of the gene regulatory function.\n\nCooperativity between TFs mediated by cofactors may help to explain the rapid evolution of regulatory DNA. Because cooperative binding requires direct TF-TF contact, it should be a strong constraint on regulatory evolution. However, the number, position and affinity of WTHbP2 binding sites varies over evolutionary time. We speculate that cooperativity through cofactors may enable rapid evolution of regulatory sequence as motifs at disparate locations can still be integrated into the output of the enhancer.\n\n### Broader implications\n\nThe shape of a gene regulatory function reflects the underlying molecular mechanisms of transcription. Coupling quantitative measurements to mechanistically meaningful biophysical models is a powerful strategy to decipher the individual role of such mechanisms, and how they collaborate to influence gene expression. This strategy has been enormously successful in bacteria (Belliveau et al., 2018; Landman et al., 2017; Razo-Mejia et al., 2018), and the toolbox for applying this strategy in animals is rapidly growing. Drosophila embryos are becoming a flagship system for this strategy due to key strengths developed by the community over time: the transcriptional network is well studied (Levine, 2008; N\u00fcsslein-Volhard and Wieschaus, 1980), high resolution imaging of mRNA and protein is tractable (Fowlkes et al., 2008; Gregor et al., 2014; Pisarev et al., 2009), and genetic and optogenetic perturbations are possible (Huang et al., 2017). Controlled synthetic systems, like the one we develop here and others that are emerging (Crocker et al., 2017), will be another crucial tool to harness the molecular complexity of animal transcription. As we show, coupling measurements to models has the power to reveal fundamental features of transcription that differ between animals and bacteria. As models improve, they will be a valuable tool in predicting the activity of animal enhancers and their variants and in engineering enhancers with desired activities, both of which are central goals of precision medicine.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Drosophila melanogaster)</td>\n      <td>Nejire (CBP) RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 36682, RRID:BDSC_36682</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>Bin1/SAP18 RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 36781, RRID:BDSC_36781</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>Sin3A RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 32368, RRID:BDSC_32368</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>HDAC6 RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 34072, RRID:BDSC_34072</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>MED1 RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 34662, RRID:BDSC_34662</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>MED11 RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 34083, RRID:BDSC_34083</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>MED14 RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 34575, RRID:BDSC_34575</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>MED20 RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 34577, RRID:BDSC_34577</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>MED22 RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 34573, RRID:BDSC_34573</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>MED27 RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 34576, RRID:BDSC_34576</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>MED28 RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 32459, RRID:BDSC_32459</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>MED7 RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 34663, RRID:BDSC_34663</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>Vielfaltig (Zld) RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 42016, RRID:BDSC_42016</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. melanogaster)</td>\n      <td>hunchback (hb) RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC Cat# 54478, RRID:BDSC_54478</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Creating transgenic fly lines\n\nThe D. mel hb proximal enhancers (hbP2) and hb proximal promoter used were as previously defined (Perry et al., 2012). The proximal promoter was cloned with the following primers: Pfwd: cagtcagtcacgagtttgttac, Prev:cttggcggctctagacg. The HbP2 enhancer (\u2212321 to\u00a0+22), and HbP2 mutants were synthesized by Integrated DNA Technologies, Inc. For removing Bcd TFBS, the core Bcd binding sequence was modified as follows; A1, A2 and A3 (TAATC) were mutated to CCGAG; X1 and X2 (TAAGC) were mutated to CCGAG, and X3 (TCATC) was mutated to CCGAG (A1,A2,A3, X1,X2,X3 notations are from (Driever et al., 1989). The resulting sequences were checked for possible new binding motifs of AP patterning TFs (Bcd, Cad, dStat, D, Gt, Hb, Kni, Kr, Nub, Tll, Zld) using Patser (http://stormo.wustl.edu/software.html) with a p value of 0.001; the PWMs we used for these TFs (Voss et al., 2011; Noyes et al., 2008a) can be downloaded from Figshare (https://doi.org/10.6084/m9.figshare.8235587.v1).[2] Gibson assembly was used to replace the eve basal promoter of pB\u03a6Y with the hb proximal promoter. All other elements such as the LacZ reporter, Amp and mini-white marker genes, and an attB site for site-specific integration remained identical (Groth et al., 2004; Hare et al., 2008). Constructs were injected by Genetic Services and BestGene Inc, into the attP2 landing site. Flies were made homozygous using the mini-white marker.\n\n### Creating synthetic enhancer constructs\n\nTo create SynHbP2, SiteOut was used to remove motifs of interest (Estrada et al., 2016a). First the sequence of WThbP2 was scrambled to remove known motifs of TFs (Bcd, Cad, dStat, D, Gt, Hb, Kni, Kr, Nub, Tll, Zld) involved in AP patterning of the blastoderm embryo. Then Bcd TFBS were restored to their native locations and the resultant sequence checked for any newly created motifs around the restored Bcd TFBS using PATSER (http://stormo.wustl.edu/software.html). The binding motifs are from FlyFactorSurvey (http://pgfe.umassmed.edu/ffs/; Noyes et al., 2008b), and a pseudocount of 0.1 and a GC (guanine and cytosine) content of 0.406 when generating position weight matrices from these count matrices was used. Full sequences for the resulting synthetic enhancers can be downloaded from Figshare (https://doi.org/10.6084/m9.figshare.8235614.v1). [3]\n\n### RNAi screening\n\nTo measure reporter expression in RNAi backgrounds, we followed the protocol developed in (Staller et al., 2013). Briefly, virgin females with a maternal-tubulin-Gal4 driver were crossed to males with a UAS-short hairpin RNA (shRNA) construct. We then collected virgin female offspring and crossed them to males bearing hbP2-reporter constructs. The resulting embryos were collected and fixed for in situ hybridization. The UAS-shRNA line for each gene can be found in supplementary information with Transgenic RNAi Research Project [TRiP] number.\n\n### In situ Hybridization\n\nIn situ hybridizations were performed as previously described (Luengo Hendriks et al., 2006). Flies were raised at 25\u00b0C and embryos aged 0- to 4-hr-old were collected and fixed. Embryos were incubated at 56\u00b0C for 2 days with 2,4-dinitrophenyl (DNP)-labeled probes for lacZ and hkb and digoxigenin (DIG)-labeled probes for ftz. For the expression level comparison among transgenic reporter lines, hkb was costained for normalization as described in (Wunderlich et al., 2014). Probes were sequentially detected with anti-DIG HRP (horseradish peroxidase) antibody (Roche) plus coumarin-tyramide color reaction (PerkinElmer) and anti-DNP HRP (PerkinElmer) antibody plus Cy3-tyramide color reaction (PerkinElmer). Embryos were treated with RNase A and then nuclei stained with Sytox Green (Life Technologies). Embryos were mounted in DePex (Electron Microscopy Sciences), using a bridge of #1 coverslips to preserve embryo morphology.\n\n### Image acquisition, Processing, and Analysis\n\nA two-photon laser scanning microscope (Zeiss LSM 710) with a plan-apochromat 20\u00a0\u00d7\u00a00.8 NA objective was used to acquired z-stacks of each embryo. Each stack was converted into a PointCloud; a text file that includes the location and levels of gene expression for each nucleus (Luengo Hendriks et al., 2006). Embryos were imaged in the early blastoderm stage (0%\u20134% membrane invagination). LacZ levels were normalised to the 95% quantile of hkb expression in the posterior 10% of each embryo. (Wunderlich et al., 2014). Importantly lacZ levels were only compared between other embryos stained within the same batch to avoid extraneous sources of noise in the normalization. Line traces of embryos were generated using the extractpattern command in the PointCloud toolbox (http://bdtnp.lbl.gov/Fly-Net/bioimaging.jsp?w=analysis). This divides the embryo into 16 strips along the AP axis of the embryo and, for each strip, calculates the mean expression level in 100 bins along the AP axis. Strips were extracted along the right lateral sides of the embryos and subtracted the minimum value along the axis to remove background noise.\n\n### Estimating position and steepness from experimental data\n\nFor each embryo, the expression level driven by the corresponding reporter construct is measured as described above. The Bcd expression profile is estimated from a single sample of six embryos stained with Bcd antibody. This allows an estimate of a gene regulatory function (GRF) for each reporter construct, where expression level is expressed as a function of Bcd concentration. Normalized position (P) and normalized steepness (S) are estimated from an averaged GRF obtained by averaging over a random subsample of half the number of embryos in a particular condition. Given an averaged GRF, we estimate normalized steepness and position by: 1) Computing Bcd05: Bcd concentration for which expression level is half its maximum value 2) Computing the maximum derivative of the GRF (raw steepness: rS) and the Bcd concentration for which it is found (raw position: rP) 3) Normalizing the raw steepness and raw position using Bcd05: p=rP/Bcd05 and S\u00a0=\u00a0rS*Bcd05. 100 random subsamples per condition are taken, allowing to compute a distribution of possible positions and steepnesses for a given condition. Kernel Density Estimation is used to estimate a probability distribution for the particular reporter construct to exhibit a particular combination of steepness and position. A gaussian basis is used, where the bandwidth is estimated using Silverman's rule of thumb (Silverman, 2018), which is optimal, provided the underlying distribution is, in fact, Gaussian. A p-value for the probability of finding GRFs inside the thermodynamic equilibrium region is estimated by computing the proportion of the estimated kernel density that lies within the equilibrium boundary (Figure 6\u2014figure supplement 2).\n\n### Model of gene regulation\n\nThe biophysical approach to gene regulation used in (Estrada et al., 2016b) was introduced in (Ahsendorf, Wong, Eils, Gunawardena, \u2018A framework for modelling gene regulation which accommodates non-equilibrium mechanisms\u2019, BMC Biology 12:102 2014). It allows for multiple molecular entities interacting with DNA, giving rise to \u2018microstates\u2019, corresponding to the various molecular patterns which can arise on DNA, and transitions between these microstates, corresponding, for instance, to binding and unbinding. This specifies in a graphical way the master equation of the underlying Markov process, from which the steady-state probabilities of the microstates can be calculated algebraically, without having to know the numerical values of the transition rates. If the steady-state is one of thermodynamic equilibrium, then the model can be parameterised by association constants, corresponding to ratios of on-rates to off-rates, along with the concentrations of the interacting molecular entities. The steady-state probabilities are identical to those given by equilibrium statistical mechanics for the grand canonical formalism. The parameterisation by association constants is more convenient for representing biochemical mechanisms than the conventional formulation in terms of free energies of microstates. The treatment accommodates any form of information integration that is achievable without energy expenditure.\n\nThe mathematical foundations for this approach were developed in previous work on the graph-based \u2018linear framework\u2019 (see Estrada et al., 2016a for references) and are summarised for the specific application to gene regulation in Section 1 of the Supplementary Information of (Estrada et al., 2016b). We provide sufficient information here to reproduce the results of the present paper, based on these previously published results. This general approach to gene regulation was applied to the Hb-Bcd system in (Estrada et al., 2016a), assuming a single activating transcription factor (TF) binding at any number of sites, with mRNA synthesis given by averaging over the steady-state probabilities of the microstates. Higher-order cooperativites (HOCs), defined as ratios of association constants, were introduced as non-dimensional parameters which measure information integration.\n\nFor the present paper, we followed the same approach with a slightly extended model, in which RNA polymerase was introduced as a molecular entity with a single binding site, corresponding to the transcription start site (Figure 6\u2014figure supplement 3). Higher-order cooperativity can now arise from subsets of TF sites acting on a TF site (TF-TF HOC) and between subsets of TF sites acting on RNA polymerase (TF-Pol HOC) (Figure 6\u2014figure supplement 3, bottom inset). The mRNA synthesis\u00a0rate is assumed to be proportional to the steady-state probability of RNA polymerase being bound and the steady-state amount of mRNA is then determined as the balance between synthesis and linear degradation (Estrada et al., 2016a, SI, Section 5). Using the rules described in (Estrada et al., 2016b, SI, Section 1), the normalised mRNA amount can be calculated algebraically in terms of the concentration of the TF and the HOCs, giving thereby a fully specified gene regulation function (GRF).\n\nTo measure the sharpness of this GRF, we follow the method in (Estrada et al., 2016b) by using \u2018steepness\u2019 (maximum of the derivative of the GRF) and \u2018position\u2019 (normalised concentration at which the maximum is achieved). To compare these biophysically defined GRFs to data, we do not fit them but, instead, we plot the region of position and steepness which is accessible, assuming that the HOC parameters are independently chosen as 10 u, where u is drawn at random from the uniform distribution on [\u22123, 3]. This range seems plausible on biophysical grounds but the boundaries of the position-steepness regions stabilise rapidly as the parameter range is increased (Estrada et al., 2016a). Changing the range from [\u22123, 3] to [\u22124,4] changes the boundary only slightly, indicating that the boundary has nearly stabilized, and does not affect our results (Figure 6\u2014figure supplement 4).\n",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "9889313a-e52b-4a39-8a38-2a4eee62f204",
+      "submission_id": "fb44ce4d-819f-450a-9f46-00199cf1774c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David N Arnosti, Michigan State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41266.025](https://doi.org/10.7554/eLife.41266.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dissecting the sharp response of a canonical developmental enhancer reveals multiple sources of cooperativity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a guest Reviewing Editor and Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, the authors have quantitatively assessed the in vivo activity of the Drosophila hunchback regulatory element controlled by Bicoid binding sites in the embryo. Simple cooperative binding models do not reproduce the effects of perturbations, suggesting that either the thermodynamic equilibrium assumption is invalid for these types of elements, or that the cooperativities are more complex, possibly involving the influence of cofactors, chromatin, or DNA shape. The authors test the influence of additional transcriptional regulators by cis-element mutations and RNAi knockdowns. Previous studies showed that Zld and Hb are involved in Bcd-dependent activation, and these effects are confirmed using shRNA interference of each gene. The perturbations also include disruption of the general transcriptional machinery as well (i.e. Mediator). The reviewers found worth in the quantitative assessments and modeling for the gene regulatory output function of the hunchback promoter. Although the main points were to rule out the simplest models, the work points to a productive path forward and provide valuable quantitative data for modeling.\n\nEssential revisions:\n\nIn a number of places, the authors oversimplify current and past discussions about sources of cooperativity, function of cofactors, and neglect earlier efforts to incorporate some of the additional layers of interactions in cooperative models (e.g. Reinitz, (2003) Complexus; Janssens et al., 2006, Kim et al. (PLoS Genetics) 2013].).\n\nRegarding the number of Bicoid sites and Hill coefficients, among the papers that the authors cited for the sentences above, only Gregor et al., 2007, mention the matching relationship between Hill coefficients (nH = 5) and the number of Bcd molecules (n=5, but not the number of sites, Gregor mentioned 7 binding sites in the paper). Furthermore, many previous studies including ones the authors cited mentioned that additional or unknown factors or mechanisms might be required to fully explain the measured Hill coefficients or transcriptional response of Hb promoters.\n\nIt would be important to understand how the PWMs used here for Bcd impact model sensitivity, selectivity, specificity. The quality of PWMs can significantly affect its accuracy in predicting TF binding and because HbP2 mutant sequences used in this study were made based on the PWMs, the test of predictive capability of the PWMs can strongly support the author's arguments in relation to the mutants.\n\nThe Hill Equation given in the subsection \u201cThe HbP2 reporter system\u201d, is an incredibly simple model of regulation. This model assumes that Bcd is the only mechanism through which HbP2 is being activated. The model also assumes all sites are 'equal', without considering relative spacing, affinity, etc. Therefore, it is not surprising at all that the HbP2 variants tested do not adhere to this model framework. This limitation should be addressed in the Discussion.\n\nA more complex model involves post-binding cooperative interactions with the basal machinery; details of this model must be presented. In the subsection \u201cComparing expression driven by variants of WTHbP2 and SynHbP2 to theory indicates multiple molecular mechanisms underlie the GRF\u201d, the authors introduce a more refined model. However, the model itself (full description, equations, etc.) is not presented. This should be included in the Materials and methods section, as well as all parameter values used in the model and specifically which higher-order terms were included during parameter fitting. It is very hard to assess whether the expression patterns are \"beyond the limits\" of their model without this information.\n",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b9088777-83e5-4c7a-a5a0-bbb8e36e4715",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C1",
+      "claim": "The hunchback P2 (HbP2) enhancer drives a sharp expression pattern in the Drosophila blastoderm embryo in response to the transcriptional activator Bicoid (Bcd).",
+      "claim_type": "EXPLICIT",
+      "source": "Here we examine the hunchback P2 (HbP2) enhancer which drives a sharp expression pattern in the Drosophila blastoderm embryo in response to the transcriptional activator Bicoid (Bcd).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract describing the experimental system studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "ed3ac27f-c4e8-4cf9-9cfd-b22c00a8bd7f",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C2",
+      "claim": "The prevailing model based on pairwise cooperative binding of Bcd to HbP2 is not adequate to explain the sharp expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "We systematically interrogate cis and trans factors that influence the shape and position of expression driven by HbP2, and find that the prevailing model, based on pairwise cooperative binding of Bcd to HbP2 is not adequate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on systematic experimental interrogation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "ac8af170-8926-494e-ac71-c492e4ea02b8",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C3",
+      "claim": "Other proteins such as pioneer factors, Mediator and histone modifiers influence the shape and position of the HbP2 expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that other proteins, such as pioneer factors, Mediator and histone modifiers influence the shape and position of the HbP2 expression pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on experimental perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "78afd306-1776-4bfc-a290-fd865936def0",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C4",
+      "claim": "Higher-order cooperativity and energy expenditure impact boundary location and sharpness of the HbP2 expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing our results to theory reveals how higher-order cooperativity and energy expenditure impact boundary location and sharpness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing experimental results to theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "44124b33-7b04-4738-b15b-c5bb37beaaef",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C5",
+      "claim": "The bacterial view of transcription regulation, where pairwise interactions between regulatory proteins dominate, must be reexamined in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results emphasize that the bacterial view of transcription regulation, where pairwise interactions between regulatory proteins dominate, must be reexamined in animals, where multiple molecular mechanisms collaborate to shape the gene regulatory function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad conclusion drawn from the experimental findings and theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "4d6e8a60-e879-4537-a784-efb25c523b20",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C6",
+      "claim": "The hunchback gene has three enhancers that drive anterior expression: HbP2, a distal shadow enhancer, and a distal stripe enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The anterior expression of hb is set by three enhancers: HbP2, which is promoter-proximal, a distal shadow enhancer and a distal stripe enhancer (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1, citing previous work (Perry et al., 2012; Perry et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "44332d53-7064-4b74-a2a7-534fe43b33c7",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C7",
+      "claim": "HbP2 drives early expression of hb at nuclear cycle 14, while the shadow enhancer and stripe enhancer contribute to expression at later times.",
+      "claim_type": "EXPLICIT",
+      "source": "HbP2 drives early expression of hb at nuclear cycle 14, while the shadow enhancer and stripe enhancer contribute to expression at later times (Perry et al., 2012; Perry et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "abe2698b-afcf-4efa-b82d-a53ea814d42c",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C8",
+      "claim": "The Hill coefficient for endogenous hb mRNA expression pattern is 6.2 +/- 1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "We measure a Hill coefficient for the endogenous hb mRNA expression pattern of 6.2 +/- 1.1, which corresponds with other reports in the literature (Gregor et al., 2007; He et al., 2011; Lopes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the study with citations to corroborating literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "96518ccc-d688-4bd0-b731-1e84c9fb3f01",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C9",
+      "claim": "The Hill coefficient for WTHbP2 is 5.2+/- 0.3.",
+      "claim_type": "EXPLICIT",
+      "source": "For WTHbP2, the Hill coefficient is 5.2+/- 0.3, indicating that HbP2 enhancer alone can drive sharp expression comparable to expression from native hb locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "05c1a3a9-519c-4a00-b4f5-9272baaa1b3f",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C10",
+      "claim": "HbP2 enhancer alone can drive sharp expression comparable to expression from native hb locus.",
+      "claim_type": "EXPLICIT",
+      "source": "For WTHbP2, the Hill coefficient is 5.2+/- 0.3, indicating that HbP2 enhancer alone can drive sharp expression comparable to expression from native hb locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Hill coefficient measurement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "9af993b8-aa73-4f9b-914c-14415e4dc3e0",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C12",
+      "claim": "A common assumption is that Bcd binds cooperatively to 6 Bcd binding sites in HbP2 and that this gives rise to a Hill coefficient of ~6.",
+      "claim_type": "EXPLICIT",
+      "source": "A common assumption based on Hill fits to the endogenous Hb mRNA pattern is that Bcd binds cooperatively to 6 Bcd binding sites in HbP2 and that this gives rise to a Hill coefficient of ~6; more generally this model states that cooperative binding at n sites gives rise to a Hill function with coefficient nH = n.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a prevailing assumption in the field that the study tests.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "e612da8b-ccff-45f2-bcfd-145dff1b334b",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C13",
+      "claim": "Removing all 6 Bcd binding sites from HbP2 does not abolish expression.",
+      "claim_type": "EXPLICIT",
+      "source": "First, eliminating all 6 Bcd binding sites does not abolish expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the binding site deletion series.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "cf3d1383-1687-4abb-a2a7-f1e849011ab3",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C14",
+      "claim": "Other binding sites, either for Bcd or other TFs, contribute to HbP2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that other binding sites, either for Bcd or other TFs, contribute to HbP2 expression, which has been previously argued in the literature (Chen et al., 2012; Holloway and Spirov, 2015; Liu and Ma, 2013; Mito et al., 2006; Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observation that expression persists after removing all 6 canonical Bcd sites, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "f056ecce-c8c0-409f-89e6-e4fa27e62802",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C15",
+      "claim": "The Hill coefficient decreases by ~0.5 for each Bcd site removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, while the Hill coefficient does decrease as Bcd sites are removed, it only decreases by ~0.5 for each site removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the binding site deletion series.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "a96eed68-f057-4d89-8de8-56ac600f185d",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C16",
+      "claim": "Removing Bcd binding sites decreases the gMM constant and shifts the expression of HbP2 toward the anterior.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing Bcd binding sites also decreases the gMM constant and shifts the expression of HbP2 toward the anterior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the binding site deletion series.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "ae8a9f35-17ee-45da-b20f-a9a4e375f415",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C17",
+      "claim": "The assumption that Hill coefficient follows a one-to-one relationship with the number of binding sites in the enhancer is wrong.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that the assumption that Hill coefficient follows a one-to-one relationship with the number of binding sites in the enhancer is wrong, as we would have predicted from our biophysical model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations and theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "3978769b-e4f7-4560-b2ec-cc6c627a5ef1",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C18",
+      "claim": "HbP2 contains three strong affinity Bcd binding sites (sTFBSs) and three weak affinity sites (wTFBSs).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the six Bicoid binding sites, three are strong affinity sites (sTFBSs) and three weak affinity sites (wTFBSs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the HbP2 sequence composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "4bd82241-49de-4412-a357-edbd794ff9e7",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C19",
+      "claim": "All six Bcd binding sites contribute roughly equally to GRF shape, despite variations in affinity and position.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that all six binding sites contribute roughly equally to GRF shape, despite variations in affinity and position, which was also observed in other work (Smith, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from experiments testing individual and clustered binding site deletions, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "e548bfcd-d0f0-4277-a619-088e5c5af320",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C20",
+      "claim": "HbP2 contains predicted binding motifs for TFs other than Bcd, including Hb itself and the pioneer factor Zelda.",
+      "claim_type": "EXPLICIT",
+      "source": "HbP2 contains predicted binding motifs for TFs other than Bcd, including Hb itself and the pioneer factor Zelda (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "1365f279-d9f6-4248-99ba-4be07a7c9b76",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C21",
+      "claim": "SynHbP2 maintains the endogenous Bcd binding sites in place but replaces the intervening sequences with computationally designed 'neutral sequences'.",
+      "claim_type": "EXPLICIT",
+      "source": "This sequence maintains the endogenous Bcd binding sites in place but replaces the intervening sequences with computationally designed 'neutral sequences'; these neutral spacers are devoid of motifs for 11 TFs known to regulate even-skipped that are expressed in the blastoderm (Bcd, Cad, dStat, D, Gt, Hb, Kni, Kr, Nub, Tll, Zld) (Estrada et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the synthetic enhancer construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "c760565b-1cbb-4db3-84c5-36095273d3b9",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C22",
+      "claim": "Robust expression from SynHbP2 requires 7 bp of endogenous sequence flanking each Bcd binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Robust expression requires 7 bp of endogenous sequence flanking each Bcd binding site; using only the 7 bp core Bcd binding motif, or motifs flanked by 2 bp did not drive robust expression (Figure 3A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from testing different SynHbP2 variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "ad1d0e57-b4bc-4597-bcd4-8a1353431cbd",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C23",
+      "claim": "SynHbP2 drives expression comparable to WTHbP2, with a similar Hill coefficient but at an anteriorly shifted location in the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "SynHbP2 drives expression comparable to WTHbP2, with a similar Hill coefficient but at an anteriorly shifted location in the embryo, corresponding to an increased gMM constant (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation comparing SynHbP2 to WTHbP2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "0c70e20b-199e-423b-9dc4-03143469a797",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C24",
+      "claim": "Bcd alone can mediate sharp expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Bcd alone can mediate sharp expression but that other TFs, such as Hb and Zelda may affect the gMM constant and the location of the GRF along the AP axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the SynHbP2 expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "f1729df1-38bf-460a-a4c6-b413ba3f06d6",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C25",
+      "claim": "Other TFs, such as Hb and Zelda may affect the gMM constant and the location of the GRF along the AP axis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Bcd alone can mediate sharp expression but that other TFs, such as Hb and Zelda may affect the gMM constant and the location of the GRF along the AP axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the anterior shift observed in SynHbP2 compared to WTHbP2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "4d87348a-7a12-4867-a7a2-b471df6bd813",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C26",
+      "claim": "Knock-down of hb shifted the location of WTHbP2 expression by 8% anteriorly along the AP axis without distinctive changes in the steepness of the response (nH(hbRNAi)=5.9 \u00b1 0.6).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, knock-down of hb and Zelda shifted the location of expression by 8% and 5% anteriorly along the AP axis without distinctive changes in the steepness of the response (nH(hbRNAi)=5.9 \u00b1 0.6, nH(Zelda RNAi)=5.8 \u00b1 0.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from RNAi experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "10530ae6-597a-4749-8fc2-8607c94a680c",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C27",
+      "claim": "Knock-down of Zelda shifted the location of WTHbP2 expression by 5% anteriorly along the AP axis without distinctive changes in the steepness of the response (nH(Zelda RNAi)=5.8 \u00b1 0.9).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, knock-down of hb and Zelda shifted the location of expression by 8% and 5% anteriorly along the AP axis without distinctive changes in the steepness of the response (nH(hbRNAi)=5.9 \u00b1 0.6, nH(Zelda RNAi)=5.8 \u00b1 0.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from RNAi experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "0ac7a11e-3b5a-4574-a2e9-43e7bbb31f12",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C28",
+      "claim": "Previous studies have noted an anterior shift in HbP2 expression when Zelda or Hb are perturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have noted an anterior shift in HbP2 expression when Zelda or Hb are perturbed, although the GRF was not quantitatively analysed (Xu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous work that observed similar effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "5eabc78b-8aa0-4839-8d73-8d7089591d05",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C29",
+      "claim": "Knocking down CBP results in a distinctive shift in location of expression toward the anterior (34 \u00b1 2.5 %AP) without much change to the Hill coefficient (nH = 4.5 \u00b1 0.53).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that knocking down CBP or HDAC6, both proteins involved in histone acetylation, results in a distinctive shift in location of expression toward the anterior (34 \u00b1 2.5 %AP, 40 \u00b1 1.5%AP respectively) without much change to the Hill coefficient (nH = 4.5 \u00b1 0.53 and nH = 6.22 \u00b1 0.03 respectively) (Figure 4, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from RNAi experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "8dabf35b-0451-4e04-b8a2-11a09d637baa",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C30",
+      "claim": "Knocking down HDAC6 results in a distinctive shift in location of expression toward the anterior (40 \u00b1 1.5%AP) without much change to the Hill coefficient (nH = 6.22 \u00b1 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that knocking down CBP or HDAC6, both proteins involved in histone acetylation, results in a distinctive shift in location of expression toward the anterior (34 \u00b1 2.5 %AP, 40 \u00b1 1.5%AP respectively) without much change to the Hill coefficient (nH = 4.5 \u00b1 0.53 and nH = 6.22 \u00b1 0.03 respectively) (Figure 4, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from RNAi experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "b0fef367-bb45-4de9-8e58-762c0895fd94",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C31",
+      "claim": "CBP is a histone acetyl transferase and the Drosophila ortholog of p300.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Creb Binding Protein (CBP) a histone acetyl transferase and the Drosophila ortholog of p300 (Fu et al., 2004), is known to destabilize chromatin and facilitate chromatin opening (Chan and La Thangue, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "7e5f5787-5295-442c-a623-29778aee1072",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C32",
+      "claim": "CBP is known to destabilize chromatin and facilitate chromatin opening.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Creb Binding Protein (CBP) a histone acetyl transferase and the Drosophila ortholog of p300 (Fu et al., 2004), is known to destabilize chromatin and facilitate chromatin opening (Chan and La Thangue, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "c613c66f-781b-42e3-b3b8-3e2f5a951655",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C33",
+      "claim": "CBP is reported to be an enhancer-dependent co-activator of Bcd, facilitating its activation in S2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CBP is also reported to be an enhancer-dependent co-activator of Bcd, facilitating its activation in S2 cells (Fu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "3d844e53-a76e-4f6e-99e0-e78704759896",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C34",
+      "claim": "Knocking down Mediator subunits had three types of effects on the WTHbP2 GRF: some subunits reduce overall expression level, some affect the gMM constant but not the Hill coefficient, and some decrease the Hill coefficient but do not affect the gMM constant.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that knocking down Mediator subunits had three types of effects on the WTHbP2 GRF. First, some subunits, such as MED14, reduce the overall expression level. Second, some subunits, such as MED20 and MED22, do not affect the Hill coefficient, but do affect the gMM constant. Finally, some subunits, such as MED11 and MED27, decrease the Hill coefficient, but do not affect the gMM constant (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This summarizes experimental observations from RNAi experiments targeting different Mediator subunits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "4e38709e-c5a8-4813-ab34-4e3d4c49a8a5",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C35",
+      "claim": "The WTHbP2 and SynHbP2 GRFs lie on the boundary of the position-steepness region predicted by the thermodynamic equilibrium model.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the WTHbP2 and SynHbP2 GRFs lie on the boundary of the position-steepness region, and that pairwise cooperativities, either TF-TF or TF-Pol, are inadequate to explain the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing experimental data to theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "fabace14-ee47-49a7-81d4-01cecd67c0fb",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C36",
+      "claim": "Pairwise cooperativities, either TF-TF or TF-Pol, are inadequate to explain the WTHbP2 and SynHbP2 data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the WTHbP2 and SynHbP2 GRFs lie on the boundary of the position-steepness region, and that pairwise cooperativities, either TF-TF or TF-Pol, are inadequate to explain the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing experimental data to theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "e0fe549b-216d-4240-8a6d-927d043762f8",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C37",
+      "claim": "The deletion constructs yield GRFs whose steepness is higher than the thermodynamic equilibrium model can accommodate, especially for low numbers of TF binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the deletion constructs yield GRFs whose steepness is higher than the model can accommodate, especially for low numbers of TF binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing experimental data from deletion constructs to theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "4f29b934-96ca-4a4f-8139-15803b7b3090",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C38",
+      "claim": "The relationship between binding site number and Hill coefficient predicted by the classical model does not hold for HbP2.",
+      "claim_type": "EXPLICIT",
+      "source": "We first demonstrate that predicted relationship between binding site number and Hill coefficient does not hold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the Discussion based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "cb93f0b9-9fda-4037-945c-c6f47444232a",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C39",
+      "claim": "Bcd, other TFs and co-factors such as Mediator and CBP work together to shape the GRF through two largely separable properties - the steepness and position of the response.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we put forward data to support an alternative model where Bcd, other TFs and co-factors such as Mediator and CBP work together to shape the GRF through two largely separable properties - the steepness and position of the response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the Discussion based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "57b3cf0b-7a00-4390-a133-53e3d33d4661",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C40",
+      "claim": "Either unrecognized Bcd binding sites contribute to HbP2 expression, or activation by a single TF at thermodynamic equilibrium may not be adequate to explain the response of HbP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by comparing our results to theory, we propose that either unrecognized Bcd binding sites contribute to HbP2 expression, or that activation by a single TF at thermodynamic equilibrium may not be adequate to explain the response of HbP2, even when accounting for higher order cooperativities between TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the Discussion based on comparing experimental results to theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "a1e6c4b4-2238-4946-8cd6-8e41f5c3c615",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C41",
+      "claim": "Driever and Nusslein-Volhard's constructs differ from the current study in that they removed Bcd TFBS by truncating WTHbP2 to shorter pieces, which also removes other neighboring sequences and changes the distance of binding sites relative to the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Driever and Nusslein-Volhard removed Bcd TFBS by truncating WTHbP2 to shorter pieces. This strategy not only removes Bcd TFBS but also other neighboring sequences and it changes the distance of binding sites relative to the promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological difference between the current study and previous work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "e4b8fd73-6c2b-48bd-81ad-c5de01ec9557",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C42",
+      "claim": "The current study's series of HbP2 variants preserve enhancer length, binding site positions and inter-motif sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our series of HbP2 variants preserve enhancer length, binding site positions and inter-motif sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological feature of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "2923af32-27d7-4ed0-99d8-4eaaeec781f1",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C43",
+      "claim": "The current study used the native Hb promoter rather than the HSP 70 promoter or a smaller fragment of the Hb promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "All of our reporters used the native Hb promoter (Perry et al., 2012) rather than using the HSP 70 promoter (Driever et al., 1989) or a smaller fragment of the Hb promoter (+1 to+107) (Driever et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological feature of the current study with citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "e5506e7f-49af-4a8f-960f-da34db61555d",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C44",
+      "claim": "The current study used quantitative imaging methods to measure the output of HbP2 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "But most significantly, we used quantitative imaging methods to measure the output of our HbP2 variants; this allows us to interpret our data differently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological feature of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "74b2501a-4142-4d39-b716-25516ace8eed",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C45",
+      "claim": "The Hill coefficient decreases by 0.5 with each Bcd site removed rather than by one as would be predicted by the classical model.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the changes to the GRF upon binding site removal do not conform to the simple model where n binding sites can produce a GRF with a Hill coefficient of n. Instead, the Hill coefficient decreases by 0.5 with each site removed (rather than by one as would be predicted).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the binding site deletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "1aa3a902-11c8-45ed-a8b3-1fa84b9dbc99",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C46",
+      "claim": "Recent quantitative studies measured Hill coefficients between 5 and 6 for the Bcd/Hb GRF, largely agreeing with the current study.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all of these studies, including ours, largely agree, measuring Hill coefficients between 5 and 6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current study's results to previous quantitative studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "eabfa9f5-81da-4646-8410-4a7f80e98503",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C47",
+      "claim": "Endogenous hb mRNA cannot be directly interpreted as the output of the HbP2 GRF because it is difficult to exclude outputs from other hb enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "However endogenous hb mRNA (and endogenous Hb protein) cannot be directly interpreted as the output of the HbP2 GRF because it is difficult to exclude outputs from other hb enhancers that are known to contribute to anterior hb gene expression (Perry et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration stated with a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "d3afc3e3-5857-47b3-bb09-19d14fb05c2a",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C48",
+      "claim": "A recent quantitative fluorescence in situ hybridization study showed evidence of ~6 Bicoid molecules bound to the hb locus of earlier stage embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we note that a recent quantitative fluorescence in situ hybridization study showed evidence of ~6 Bicoid molecules bound to the hb locus of earlier stage embryos (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a previous study's finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "1d0774ea-68e7-4018-bde1-3615b160ea9f",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C49",
+      "claim": "The current study's results suggest that either more than 6 Bcd molecules are interacting on HbP2, or energy is being spent to maintain the system away from equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that either more than 6 Bcd molecules are interacting on HbP2, or energy is being spent to maintain the system away from equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the current study's results in light of previous findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "3f68d8e6-09a9-4281-a4d6-c16f5bfe6fb0",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C50",
+      "claim": "In the current study using the endogenous enhancer in embryos, the arrangement, position, orientation, clustering and affinity of Bcd binding sites were not distinctive features for the degree of cooperativity.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study using the endogenous enhancer in embryos, the arrangement, position, orientation, clustering and affinity of Bcd binding sites were not distinctive features for the degree of cooperativity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from experiments testing different binding site configurations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "824398cc-f84f-4e5d-b9b6-e56d77a95610",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C51",
+      "claim": "Bcd belongs to the homeodomain protein family, which recognize a common -TAAT- motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Bcd belongs to the homeodomain protein family, which recognize a common -TAAT- motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Bcd.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "26f22397-89f6-4cb0-87b5-bb29e7674881",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C52",
+      "claim": "Bcd binds to the specific TAATCC motif.",
+      "claim_type": "EXPLICIT",
+      "source": "While some homeodomain proteins have a degenerate specificity (Berger et al., 2008; Christensen et al., 2012; Noyes et al., 2008a), Bcd binds to the specific TAATCC motif (Bergman et al., 2005; Noyes et al., 2008a, Noyes et al., 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "aaefc77c-3573-428b-80c2-5fea240fde06",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C53",
+      "claim": "Including 7 bp of endogenous flanking sequence around each core Bcd motif dramatically increases the activity of a synthetic HbP2 enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This degree of specific binding makes it reasonable to assume that the core motif would be sufficient for Bcd binding and activity in vivo; however, here we show that including 7 bp of endogenous flanking sequence around each core Bcd motif dramatically increases the activity of a synthetic HbP2 enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from testing SynHbP2 variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "fe310b31-bca4-4d7d-9f36-d805e0a9ddd1",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C54",
+      "claim": "Increasing the flanking sequence to 12 bp did not result in any additional effect on SynHbP2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "When we increased the flanking sequence to 12 bp, we didn't observe any additional effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from testing SynHbP2 variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "37692519-6f9c-40a6-ad58-7c5da22bea58",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C55",
+      "claim": "The flanking sequences around Bcd binding sites may form a specific DNA shape that is favorable for Bcd recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the flanks form a specific DNA shape that is favorable for Bcd recognition, as has been shown for other homeodomain proteins (Dror et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental observations and cited work on other homeodomain proteins.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "0a0e00ef-e270-4af7-9259-871b4c2f3332",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C56",
+      "claim": "Even after all six known binding sites are removed from WTHbP2, expression is still observed with a sigmoidal, non-linear response.",
+      "claim_type": "EXPLICIT",
+      "source": "Even after all six known binding sites are removed from WTHbP2, we still observe gene expression with a sigmoidal, non-linear response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the binding site deletion series.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "3b6f7a5d-10f9-415a-a370-bd924e20fa9d",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C57",
+      "claim": "WTHbP2 does not express at all when Bcd is removed by RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "WTHbP2 does not express at all when Bcd is removed by RNAi (data not shown), indicating that some Bcd responsive element remains even after removing the canonical six sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from RNAi experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "f62210ed-f80c-46d4-ae2d-40ef9e67f396",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C58",
+      "claim": "The WTHbP2 sequence contains one additional predicted Bcd binding site in addition to the canonical six which overlaps with a weak binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The WTHbP2 sequence contains one additional predicted Bcd binding site in addition to the canonical six which overlaps with a weak binding site, and the native hb promoter also contains an additional predicted Bcd binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "7553a297-4432-4cb8-8d3a-2d40315baaab",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C59",
+      "claim": "The native hb promoter contains an additional predicted Bcd binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The WTHbP2 sequence contains one additional predicted Bcd binding site in addition to the canonical six which overlaps with a weak binding site, and the native hb promoter also contains an additional predicted Bcd binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "6566135d-0889-4ef6-9597-b78be886b577",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C60",
+      "claim": "Deleting two additional predicted Bcd sites further reduced gene expression but did not completely abolish it.",
+      "claim_type": "EXPLICIT",
+      "source": "We deleted these two additional sites and measured expression; expression is lowered further but still detectable (see Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from additional binding site deletions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "54b8ea34-8e7c-43f9-b7f9-bdb34d139c1c",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C61",
+      "claim": "The conclusion that pairwise cooperative binding of Bcd is inadequate to produce the observed expression from HbP2 is unaffected by how many Bcd sites there are.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our conclusion that pairwise cooperative binding of Bcd is inadequate to produce the observed expression from HbP2 is unaffected by how many Bcd sites there are (Estrada et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the robustness of the study's conclusions with a citation to previous theoretical work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "69e9d237-bdc8-486d-89f0-5d13c5d66ff5",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C62",
+      "claim": "When considering the role of higher order cooperativity, additional binding sites allow the theory and experiment to be within range of one another.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when considering the role of higher order cooperativity, additional binding sites allow the theory and experiment to be within range of one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing experimental data to theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "04870b48-0e08-4b86-943d-86ae63ed2bbb",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C63",
+      "claim": "Multiple perturbations shifted the anterior/posterior location of expression driven by WTHbP2, reflecting a change in the sensitivity to Bcd concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple perturbations shifted the anterior/posterior location of expression driven by WTHbP2, reflecting a change in the sensitivity to Bcd concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes experimental observations from various perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "d2bf52be-b087-4ae9-8d8b-922c1292a0aa",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C64",
+      "claim": "The perturbations that shift expression location all influence the accessibility of WTHbP2, and thus the ability of Bcd to bind.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that these perturbations all influence the accessibility of WTHbP2, and thus the ability of Bcd to bind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis to explain the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "082fb584-3301-47ed-963c-be0a15b29d2d",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C65",
+      "claim": "Removing binding sites for the pioneer factor Zelda may result in decreased accessibility of WTHbP2, a requirement for higher levels of Bcd to activate expression, and an anterior shift in expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, removing binding sites for the pioneer factor Zelda may result in decreased accessibility of WTHbP2, a requirement for higher levels of Bcd to activate expression, and an anterior shift in expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis to explain the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "ac5b72e4-72f4-4f84-9d5e-fe0719fc5411",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C66",
+      "claim": "Hb may facilitate Bcd binding through collaborative cooperativity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Hb may also facilitate Bcd binding through collaborative cooperativity, and CBP may be necessary to modify nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis to explain the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "26d6399f-d4cd-4bd2-a13d-60b227acafa6",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C67",
+      "claim": "CBP may be necessary to modify nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Hb may also facilitate Bcd binding through collaborative cooperativity, and CBP may be necessary to modify nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis to explain the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "56c8ac1c-ac45-444b-8281-ad4d7a005bdf",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C68",
+      "claim": "The hypothesis that perturbations influence WTHbP2 accessibility is consistent with previous studies where modulating Bcd concentrations influences the location of expression without altering the steepness.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is consistent with previous studies where modulating Bcd concentrations influences the location of expression without altering the steepness (Liu et al., 2013; Struhl et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the current hypothesis to previous experimental findings with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "11e2bd7a-66f8-40de-9ebb-e31a3c1feb57",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C69",
+      "claim": "Pairwise cooperative binding between TFs has been widely proposed to underlie sharp responses to graded inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, pairwise cooperative binding between TFs has been widely proposed to underlie sharp responses to graded inputs (He et al., 2010b; Segal et al., 2008), though a series of models from the Reinitz group allow for higher-order cooperativity between TFs and other components (Reinitz et al., 2003; Janssens et al., 2006; Kim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a prevailing view in the field with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "ecf00dfc-378b-4253-a9a6-7faf987124a5",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C70",
+      "claim": "A series of models from the Reinitz group allow for higher-order cooperativity between TFs and other components.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, pairwise cooperative binding between TFs has been widely proposed to underlie sharp responses to graded inputs (He et al., 2010b; Segal et al., 2008), though a series of models from the Reinitz group allow for higher-order cooperativity between TFs and other components (Reinitz et al., 2003; Janssens et al., 2006; Kim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an alternative modeling approach with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "d30cffc7-d2a9-44b2-8397-a1897fcd292e",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C71",
+      "claim": "The current study's work calls the TF-centric view into question using both theory and experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work calls the TF-centric view into question using both theory and experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "d0d6a9a8-a20f-4938-a9af-8a8783d3bf46",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C72",
+      "claim": "Theory grounded in physics must include higher order cooperativity between TFs to generate GRFs with sufficient steepness and position to compare to in vivo measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that theory grounded in physics must include higher order cooperativity between TFs to generate GRFs with sufficient steepness and position to compare to in vivo measurements; this assumes that the regulatory mechanism is operating at thermodynamic equilibrium, which may still be inadequate to capture experimental data, indicating that energy dissipation may be required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "c142815d-d803-449a-9b80-a56e50db0bfb",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C73",
+      "claim": "The assumption that the regulatory mechanism is operating at thermodynamic equilibrium may be inadequate to capture experimental data, indicating that energy dissipation may be required.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that theory grounded in physics must include higher order cooperativity between TFs to generate GRFs with sufficient steepness and position to compare to in vivo measurements; this assumes that the regulatory mechanism is operating at thermodynamic equilibrium, which may still be inadequate to capture experimental data, indicating that energy dissipation may be required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing theory to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "311279d7-e762-4fc5-b2ed-6fc4d2071fc6",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C74",
+      "claim": "Cofactors are prime candidates for implementing higher-order cooperativity or energy dissipation through binding directly to multiple TFs or by facilitating their binding through indirect processes such as chromatin remodeling or modification.",
+      "claim_type": "EXPLICIT",
+      "source": "Cofactors are prime candidates for implementing higher-order cooperativity or energy dissipation through binding directly to multiple TFs or by facilitating their binding through indirect processes such as chromatin remodeling or modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the role of cofactors based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "10b09332-50ed-43ce-b25b-73a34c31b3e9",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C76",
+      "claim": "A role for cofactors in shaping the GRF is consistent with in vitro studies where purified Bcd protein binds to HbP2 but yields a Hill coefficient of only 3\u20134.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for cofactors in shaping the GRF is consistent with in vitro studies where purified Bcd protein binds to HbP2 but yields a Hill coefficient of only 3\u20134 (Ma et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the current findings to previous in vitro studies with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "c601dce6-7061-46e1-bf10-c4c490b0c5d6",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C77",
+      "claim": "Cofactors do not simply execute the decisions made by TFs; they collaborate with TFs to shape the quantitative features of the gene regulatory function.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results argue that cofactors do not simply execute the decisions made by TFs; they collaborate with TFs to shape the quantitative features of the gene regulatory function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad conclusion of the study based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "2c57c58b-f375-4318-9b21-d7a81cc7b06f",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C78",
+      "claim": "Cooperativity between TFs mediated by cofactors may help to explain the rapid evolution of regulatory DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Cooperativity between TFs mediated by cofactors may help to explain the rapid evolution of regulatory DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about evolutionary implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "c46997e0-03e6-436a-9f4c-c97b7d2b9a8f",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C79",
+      "claim": "The number, position and affinity of WTHbP2 binding sites varies over evolutionary time.",
+      "claim_type": "EXPLICIT",
+      "source": "Because cooperative binding requires direct TF-TF contact, it should be a strong constraint on regulatory evolution. However, the number, position and affinity of WTHbP2 binding sites varies over evolutionary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about evolutionary variation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "bd7439e2-55fc-4798-bafc-e53a8e96c276",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C80",
+      "claim": "Cooperativity through cofactors may enable rapid evolution of regulatory sequence as motifs at disparate locations can still be integrated into the output of the enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that cooperativity through cofactors may enable rapid evolution of regulatory sequence as motifs at disparate locations can still be integrated into the output of the enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about evolutionary mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "73d90ffd-346d-40fc-9709-75a223d294c7",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C81",
+      "claim": "Coupling quantitative measurements to mechanistically meaningful biophysical models is a powerful strategy to decipher the individual role of molecular mechanisms in transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupling quantitative measurements to mechanistically meaningful biophysical models is a powerful strategy to decipher the individual role of such mechanisms, and how they collaborate to influence gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodological approach of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "8c41946e-639b-4d51-be4b-56ac63af6798",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C82",
+      "claim": "This strategy has been enormously successful in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy has been enormously successful in bacteria (Belliveau et al., 2018; Landman et al., 2017; Razo-Mejia et al., 2018), and the toolbox for applying this strategy in animals is rapidly growing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous work in bacteria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "11da4e4e-e276-4343-ab58-218c3f1231e6",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C83",
+      "claim": "Drosophila embryos are becoming a flagship system for coupling quantitative measurements to biophysical models due to key strengths developed by the community.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila embryos are becoming a flagship system for this strategy due to key strengths developed by the community over time: the transcriptional network is well studied (Levine, 2008; N\u00fcsslein-Volhard and Wieschaus, 1980), high resolution imaging of mRNA and protein is tractable (Fowlkes et al., 2008; Gregor et al., 2014; Pisarev et al., 2009), and genetic and optogenetic perturbations are possible (Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous work establishing these capabilities.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "ded7a11b-8795-4fc4-8094-8a92eefd3c1b",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C84",
+      "claim": "Controlled synthetic systems will be a crucial tool to harness the molecular complexity of animal transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Controlled synthetic systems, like the one we develop here and others that are emerging (Crocker et al., 2017), will be another crucial tool to harness the molecular complexity of animal transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the value of synthetic systems with a citation to related work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "4ba553d0-fb83-42cb-9da1-d1982843a7d9",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C85",
+      "claim": "Coupling measurements to models has the power to reveal fundamental features of transcription that differ between animals and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show, coupling measurements to models has the power to reveal fundamental features of transcription that differ between animals and bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad conclusion about the methodological approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "6df79cec-d9e0-4f2b-bfa5-98e74109570f",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "claim_id": "C86",
+      "claim": "As models improve, they will be a valuable tool in predicting the activity of animal enhancers and their variants and in engineering enhancers with desired activities.",
+      "claim_type": "EXPLICIT",
+      "source": "As models improve, they will be a valuable tool in predicting the activity of animal enhancers and their variants and in engineering enhancers with desired activities, both of which are central goals of precision medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future applications of the modeling approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f275536e-1e7a-4cb4-86ee-5a0d5ab69536",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The HbP2 enhancer drives sharp expression in Drosophila embryos with a Hill coefficient of 5.2\u00b10.3, comparable to endogenous hb expression (Hill coefficient 6.2\u00b11.1). HbP2 is one of three enhancers regulating hb, driving early expression at nuclear cycle 14.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C10 establish the experimental system and provide quantitative measurements of HbP2 activity. The Hill coefficients are measured with appropriate error estimates and are consistent with cited literature (C8). The reporter system is well-characterized and controls for contributions from other enhancers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "fa3e3a56-9d2c-4bdb-bfff-54a025347874",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The classical model predicting that n binding sites yield a Hill coefficient of n is incorrect for HbP2. Removing Bcd binding sites sequentially decreases the Hill coefficient by ~0.5 per site (not 1.0), and removing all 6 canonical sites does not abolish expression, indicating additional binding sites or TFs contribute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17, C38, C45 provide systematic experimental evidence from binding site deletion series with quantitative measurements. The data clearly contradict the classical model (C12) and are internally consistent. The observation that expression persists after removing all 6 sites (C13) is supported by additional sequence analysis (C58-C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "a8c88761-25d8-4937-91b5-2cf67b651e0d",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "All six Bcd binding sites (three strong, three weak affinity) contribute roughly equally to the GRF shape, despite variations in affinity, position, orientation, and clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19, C50 are supported by experiments testing individual and clustered binding site deletions (Figure 2C). The conclusion is consistent with cited work (C19) and represents a systematic test of binding site properties in the endogenous enhancer context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "f041366a-0fd2-4db2-9b5a-332005abf9f6",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A synthetic HbP2 (SynHbP2) containing only Bcd binding sites with 7 bp flanking sequences drives sharp expression (similar Hill coefficient to WTHbP2) but at an anteriorly shifted position, indicating Bcd alone can mediate sharpness while other TFs (Hb, Zelda) affect boundary position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 describe a well-designed synthetic enhancer experiment with appropriate controls testing different flanking sequence lengths (C22). The anterior shift in SynHbP2 (C23) provides clear evidence that other TFs influence position (C25), supported by subsequent RNAi experiments (C26-C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "b810e44c-b420-4f08-9733-051dd1c80e49",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RNAi knockdown of hb or Zelda shifts WTHbP2 expression anteriorly by 8% and 5% respectively, without significantly changing Hill coefficient, confirming these TFs affect boundary position but not steepness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 provide quantitative RNAi data with error estimates that support the interpretation from SynHbP2 experiments. The results are consistent with previous qualitative observations (C28) but add quantitative GRF analysis. The differential effects on position vs. steepness are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "f3c56a3f-c571-43a8-b2e6-50efede2fd04",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Knockdown of histone modifiers CBP and HDAC6 shifts WTHbP2 expression anteriorly without substantially changing Hill coefficient, suggesting chromatin accessibility affects boundary position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 provide quantitative RNAi data for chromatin modifiers with appropriate error estimates. The interpretation is supported by established knowledge about CBP function (C31-C33) and is consistent with the hypothesis that chromatin accessibility affects Bcd binding efficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "874451ab-fd2e-439f-8ec8-e436ae449f67",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Knockdown of different Mediator subunits has three distinct effects on WTHbP2 GRF: some reduce expression level (MED14), some affect position but not steepness (MED20, MED22), and some affect steepness but not position (MED11, MED27).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 summarizes systematic RNAi experiments targeting multiple Mediator subunits (Figure 5). The data show clear differential effects on GRF parameters, demonstrating that different cofactor subunits can independently modulate distinct aspects of the transcriptional response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "3b5cc6dc-ab6a-498e-a0db-ad81d60bac3e",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison of experimental GRFs to thermodynamic equilibrium theory shows that WTHbP2 and SynHbP2 lie at the boundary of the position-steepness region, pairwise cooperativities are inadequate to explain the data, and deletion constructs yield steepness values exceeding model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 compare experimental data to theoretical predictions (Figure 6). The position-steepness analysis provides a rigorous biophysical framework for evaluating mechanisms. The conclusion that pairwise cooperativity is insufficient is well-supported by the data falling outside or at the boundary of predicted regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "a514712a-c297-42ca-9c47-fa2a8fdb50a4",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The prevailing model of pairwise cooperative Bcd binding is inadequate; instead, Bcd, other TFs, and cofactors (Mediator, CBP) collaborate to shape the GRF through largely separable effects on steepness and position, challenging the TF-centric view of gene regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C39, C71, C77 represent the main conclusions synthesized from multiple experimental results (binding site deletions, synthetic enhancers, RNAi screens). The evidence from diverse approaches converges on the conclusion that multiple molecular mechanisms beyond pairwise TF cooperativity are required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "98de2f32-fdac-4fec-8b1c-a11685949d34",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Comparison to theory reveals that higher-order cooperativity and/or energy expenditure (non-equilibrium mechanisms) are required to explain HbP2's sharp response. Either unrecognized Bcd sites contribute, or thermodynamic equilibrium models are insufficient even with higher-order cooperativity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C40, C49, C72-C73 propose mechanistic interpretations based on theory-experiment comparison. While the inadequacy of pairwise cooperativity is well-supported, distinguishing between additional cryptic binding sites, higher-order cooperativity, and non-equilibrium mechanisms remains uncertain. The data are consistent with multiple explanations (C40, C49), and definitive tests would require additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "b468d0ba-bfda-46c4-a9a2-13079d05ccab",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Bcd binding site activity requires 7 bp of endogenous flanking sequence beyond the core TAATCC motif, possibly due to DNA shape recognition, as 12 bp flanks provide no additional benefit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 describe systematic testing of flanking sequence requirements in SynHbP2 constructs. The experimental observations (C53-C54) are clear, though the mechanistic interpretation involving DNA shape (C55) is speculative but supported by analogy to other homeodomain proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "cca755a0-c64e-4a8b-861e-de0588e4b183",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Additional predicted Bcd binding sites exist in WTHbP2 and the hb promoter beyond the canonical six. Deleting these further reduces but does not abolish expression. The conclusion that pairwise cooperativity is inadequate holds regardless of the exact number of sites, though additional sites allow higher-order cooperativity models to better match data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 address the complexity of identifying all functional Bcd sites. The experimental observations (C56-C60) are clear, and the theoretical analysis (C61-C62) appropriately considers how additional sites affect model predictions. The robustness of the main conclusion to site number uncertainty is an important control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "089acdbf-400c-4b85-8372-e8145b2b8379",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Multiple perturbations shift expression position by affecting WTHbP2 accessibility and Bcd binding efficiency. Zelda removal may decrease accessibility, Hb may facilitate Bcd binding through collaborative cooperativity, and CBP may modify nucleosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C68 propose a unifying hypothesis to explain position shifts from various perturbations. While the experimental observations (C63) are well-supported and consistent with prior work (C68), the mechanistic interpretations (C64-C67) are speculative. Direct tests of accessibility or binding efficiency are not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "e8dadf41-174c-450f-bddb-bca93c29ace8",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The current study improves upon previous work by preserving enhancer length and binding site positions in deletion constructs, using the native hb promoter, employing quantitative imaging, and isolating HbP2 from other enhancers in a reporter system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44, C46-C47 describe important methodological improvements that strengthen the study's conclusions. The comparison to previous work is fair and the advantages of the current approach are clearly articulated. These methodological advances enable more rigorous quantitative analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "b84de12e-5f21-4daa-9bcd-bbdd57c2d40c",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cofactors are candidates for implementing higher-order cooperativity or energy dissipation through direct or indirect mechanisms. Cofactor-mediated cooperativity may explain rapid regulatory DNA evolution, as it allows integration of dispersed binding sites without requiring direct TF-TF contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74, C76, C78-C80 propose broader implications and evolutionary hypotheses. While the role of cofactors in shaping GRFs is supported by experimental data, the specific mechanisms (C74) and evolutionary implications (C78-C80) are speculative. The consistency with in vitro data (C76) provides some support but is not definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    },
+    {
+      "id": "793a9618-d96b-41f2-82d8-2de729f938e0",
+      "content_id": "cccb3741-93d9-4efd-8476-8940ce6804c2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The bacterial view of transcription regulation dominated by pairwise TF interactions must be reexamined in animals. Coupling quantitative measurements to biophysical models, as demonstrated here in Drosophila, can reveal fundamental differences between bacterial and animal transcription and will enable prediction and engineering of enhancer activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C69-C70, C81-C86 place the work in broader context and discuss methodological approaches. The conclusion that animal transcription differs fundamentally from bacterial systems (C5, C85) is well-supported by the experimental results. The discussion of methodological approaches (C81-C84) appropriately cites relevant work, though future applications (C86) are speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:09.600073Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b9088777-83e5-4c7a-a5a0-bbb8e36e4715",
+      "result_id": "f275536e-1e7a-4cb4-86ee-5a0d5ab69536"
+    },
+    {
+      "claim_id": "4d6e8a60-e879-4537-a784-efb25c523b20",
+      "result_id": "f275536e-1e7a-4cb4-86ee-5a0d5ab69536"
+    },
+    {
+      "claim_id": "44332d53-7064-4b74-a2a7-534fe43b33c7",
+      "result_id": "f275536e-1e7a-4cb4-86ee-5a0d5ab69536"
+    },
+    {
+      "claim_id": "abe2698b-afcf-4efa-b82d-a53ea814d42c",
+      "result_id": "f275536e-1e7a-4cb4-86ee-5a0d5ab69536"
+    },
+    {
+      "claim_id": "96518ccc-d688-4bd0-b731-1e84c9fb3f01",
+      "result_id": "f275536e-1e7a-4cb4-86ee-5a0d5ab69536"
+    },
+    {
+      "claim_id": "05c1a3a9-519c-4a00-b4f5-9272baaa1b3f",
+      "result_id": "f275536e-1e7a-4cb4-86ee-5a0d5ab69536"
+    },
+    {
+      "claim_id": "9af993b8-aa73-4f9b-914c-14415e4dc3e0",
+      "result_id": "fa3e3a56-9d2c-4bdb-bfff-54a025347874"
+    },
+    {
+      "claim_id": "e612da8b-ccff-45f2-bcfd-145dff1b334b",
+      "result_id": "fa3e3a56-9d2c-4bdb-bfff-54a025347874"
+    },
+    {
+      "claim_id": "cf3d1383-1687-4abb-a2a7-f1e849011ab3",
+      "result_id": "fa3e3a56-9d2c-4bdb-bfff-54a025347874"
+    },
+    {
+      "claim_id": "f056ecce-c8c0-409f-89e6-e4fa27e62802",
+      "result_id": "fa3e3a56-9d2c-4bdb-bfff-54a025347874"
+    },
+    {
+      "claim_id": "a96eed68-f057-4d89-8de8-56ac600f185d",
+      "result_id": "fa3e3a56-9d2c-4bdb-bfff-54a025347874"
+    },
+    {
+      "claim_id": "ae8a9f35-17ee-45da-b20f-a9a4e375f415",
+      "result_id": "fa3e3a56-9d2c-4bdb-bfff-54a025347874"
+    },
+    {
+      "claim_id": "4f29b934-96ca-4a4f-8139-15803b7b3090",
+      "result_id": "fa3e3a56-9d2c-4bdb-bfff-54a025347874"
+    },
+    {
+      "claim_id": "74b2501a-4142-4d39-b716-25516ace8eed",
+      "result_id": "fa3e3a56-9d2c-4bdb-bfff-54a025347874"
+    },
+    {
+      "claim_id": "3978769b-e4f7-4560-b2ec-cc6c627a5ef1",
+      "result_id": "a8c88761-25d8-4937-91b5-2cf67b651e0d"
+    },
+    {
+      "claim_id": "4bd82241-49de-4412-a357-edbd794ff9e7",
+      "result_id": "a8c88761-25d8-4937-91b5-2cf67b651e0d"
+    },
+    {
+      "claim_id": "3f68d8e6-09a9-4281-a4d6-c16f5bfe6fb0",
+      "result_id": "a8c88761-25d8-4937-91b5-2cf67b651e0d"
+    },
+    {
+      "claim_id": "e548bfcd-d0f0-4277-a619-088e5c5af320",
+      "result_id": "f041366a-0fd2-4db2-9b5a-332005abf9f6"
+    },
+    {
+      "claim_id": "1365f279-d9f6-4248-99ba-4be07a7c9b76",
+      "result_id": "f041366a-0fd2-4db2-9b5a-332005abf9f6"
+    },
+    {
+      "claim_id": "c760565b-1cbb-4db3-84c5-36095273d3b9",
+      "result_id": "f041366a-0fd2-4db2-9b5a-332005abf9f6"
+    },
+    {
+      "claim_id": "ad1d0e57-b4bc-4597-bcd4-8a1353431cbd",
+      "result_id": "f041366a-0fd2-4db2-9b5a-332005abf9f6"
+    },
+    {
+      "claim_id": "0c70e20b-199e-423b-9dc4-03143469a797",
+      "result_id": "f041366a-0fd2-4db2-9b5a-332005abf9f6"
+    },
+    {
+      "claim_id": "f1729df1-38bf-460a-a4c6-b413ba3f06d6",
+      "result_id": "f041366a-0fd2-4db2-9b5a-332005abf9f6"
+    },
+    {
+      "claim_id": "4d87348a-7a12-4867-a7a2-b471df6bd813",
+      "result_id": "b810e44c-b420-4f08-9733-051dd1c80e49"
+    },
+    {
+      "claim_id": "10530ae6-597a-4749-8fc2-8607c94a680c",
+      "result_id": "b810e44c-b420-4f08-9733-051dd1c80e49"
+    },
+    {
+      "claim_id": "0ac7a11e-3b5a-4574-a2e9-43e7bbb31f12",
+      "result_id": "b810e44c-b420-4f08-9733-051dd1c80e49"
+    },
+    {
+      "claim_id": "5eabc78b-8aa0-4839-8d73-8d7089591d05",
+      "result_id": "f3c56a3f-c571-43a8-b2e6-50efede2fd04"
+    },
+    {
+      "claim_id": "8dabf35b-0451-4e04-b8a2-11a09d637baa",
+      "result_id": "f3c56a3f-c571-43a8-b2e6-50efede2fd04"
+    },
+    {
+      "claim_id": "b0fef367-bb45-4de9-8e58-762c0895fd94",
+      "result_id": "f3c56a3f-c571-43a8-b2e6-50efede2fd04"
+    },
+    {
+      "claim_id": "7e5f5787-5295-442c-a623-29778aee1072",
+      "result_id": "f3c56a3f-c571-43a8-b2e6-50efede2fd04"
+    },
+    {
+      "claim_id": "c613c66f-781b-42e3-b3b8-3e2f5a951655",
+      "result_id": "f3c56a3f-c571-43a8-b2e6-50efede2fd04"
+    },
+    {
+      "claim_id": "3d844e53-a76e-4f6e-99e0-e78704759896",
+      "result_id": "874451ab-fd2e-439f-8ec8-e436ae449f67"
+    },
+    {
+      "claim_id": "4e38709e-c5a8-4813-ab34-4e3d4c49a8a5",
+      "result_id": "3b5cc6dc-ab6a-498e-a0db-ad81d60bac3e"
+    },
+    {
+      "claim_id": "fabace14-ee47-49a7-81d4-01cecd67c0fb",
+      "result_id": "3b5cc6dc-ab6a-498e-a0db-ad81d60bac3e"
+    },
+    {
+      "claim_id": "e0fe549b-216d-4240-8a6d-927d043762f8",
+      "result_id": "3b5cc6dc-ab6a-498e-a0db-ad81d60bac3e"
+    },
+    {
+      "claim_id": "ed3ac27f-c4e8-4cf9-9cfd-b22c00a8bd7f",
+      "result_id": "a514712a-c297-42ca-9c47-fa2a8fdb50a4"
+    },
+    {
+      "claim_id": "cb93f0b9-9fda-4037-945c-c6f47444232a",
+      "result_id": "a514712a-c297-42ca-9c47-fa2a8fdb50a4"
+    },
+    {
+      "claim_id": "d30cffc7-d2a9-44b2-8397-a1897fcd292e",
+      "result_id": "a514712a-c297-42ca-9c47-fa2a8fdb50a4"
+    },
+    {
+      "claim_id": "c601dce6-7061-46e1-bf10-c4c490b0c5d6",
+      "result_id": "a514712a-c297-42ca-9c47-fa2a8fdb50a4"
+    },
+    {
+      "claim_id": "78afd306-1776-4bfc-a290-fd865936def0",
+      "result_id": "98de2f32-fdac-4fec-8b1c-a11685949d34"
+    },
+    {
+      "claim_id": "57b3cf0b-7a00-4390-a133-53e3d33d4661",
+      "result_id": "98de2f32-fdac-4fec-8b1c-a11685949d34"
+    },
+    {
+      "claim_id": "1d0774ea-68e7-4018-bde1-3615b160ea9f",
+      "result_id": "98de2f32-fdac-4fec-8b1c-a11685949d34"
+    },
+    {
+      "claim_id": "d0d6a9a8-a20f-4938-a9af-8a8783d3bf46",
+      "result_id": "98de2f32-fdac-4fec-8b1c-a11685949d34"
+    },
+    {
+      "claim_id": "c142815d-d803-449a-9b80-a56e50db0bfb",
+      "result_id": "98de2f32-fdac-4fec-8b1c-a11685949d34"
+    },
+    {
+      "claim_id": "824398cc-f84f-4e5d-b9b6-e56d77a95610",
+      "result_id": "b468d0ba-bfda-46c4-a9a2-13079d05ccab"
+    },
+    {
+      "claim_id": "26f22397-89f6-4cb0-87b5-bb29e7674881",
+      "result_id": "b468d0ba-bfda-46c4-a9a2-13079d05ccab"
+    },
+    {
+      "claim_id": "aaefc77c-3573-428b-80c2-5fea240fde06",
+      "result_id": "b468d0ba-bfda-46c4-a9a2-13079d05ccab"
+    },
+    {
+      "claim_id": "fe310b31-bca4-4d7d-9f36-d805e0a9ddd1",
+      "result_id": "b468d0ba-bfda-46c4-a9a2-13079d05ccab"
+    },
+    {
+      "claim_id": "37692519-6f9c-40a6-ad58-7c5da22bea58",
+      "result_id": "b468d0ba-bfda-46c4-a9a2-13079d05ccab"
+    },
+    {
+      "claim_id": "0a0e00ef-e270-4af7-9259-871b4c2f3332",
+      "result_id": "cca755a0-c64e-4a8b-861e-de0588e4b183"
+    },
+    {
+      "claim_id": "3b6f7a5d-10f9-415a-a370-bd924e20fa9d",
+      "result_id": "cca755a0-c64e-4a8b-861e-de0588e4b183"
+    },
+    {
+      "claim_id": "f62210ed-f80c-46d4-ae2d-40ef9e67f396",
+      "result_id": "cca755a0-c64e-4a8b-861e-de0588e4b183"
+    },
+    {
+      "claim_id": "7553a297-4432-4cb8-8d3a-2d40315baaab",
+      "result_id": "cca755a0-c64e-4a8b-861e-de0588e4b183"
+    },
+    {
+      "claim_id": "6566135d-0889-4ef6-9597-b78be886b577",
+      "result_id": "cca755a0-c64e-4a8b-861e-de0588e4b183"
+    },
+    {
+      "claim_id": "54b8ea34-8e7c-43f9-b7f9-bdb34d139c1c",
+      "result_id": "cca755a0-c64e-4a8b-861e-de0588e4b183"
+    },
+    {
+      "claim_id": "69e9d237-bdc8-486d-89f0-5d13c5d66ff5",
+      "result_id": "cca755a0-c64e-4a8b-861e-de0588e4b183"
+    },
+    {
+      "claim_id": "04870b48-0e08-4b86-943d-86ae63ed2bbb",
+      "result_id": "089acdbf-400c-4b85-8372-e8145b2b8379"
+    },
+    {
+      "claim_id": "d2bf52be-b087-4ae9-8d8b-922c1292a0aa",
+      "result_id": "089acdbf-400c-4b85-8372-e8145b2b8379"
+    },
+    {
+      "claim_id": "082fb584-3301-47ed-963c-be0a15b29d2d",
+      "result_id": "089acdbf-400c-4b85-8372-e8145b2b8379"
+    },
+    {
+      "claim_id": "ac5b72e4-72f4-4f84-9d5e-fe0719fc5411",
+      "result_id": "089acdbf-400c-4b85-8372-e8145b2b8379"
+    },
+    {
+      "claim_id": "26d6399f-d4cd-4bd2-a13d-60b227acafa6",
+      "result_id": "089acdbf-400c-4b85-8372-e8145b2b8379"
+    },
+    {
+      "claim_id": "56c8ac1c-ac45-444b-8281-ad4d7a005bdf",
+      "result_id": "089acdbf-400c-4b85-8372-e8145b2b8379"
+    },
+    {
+      "claim_id": "a1e6c4b4-2238-4946-8cd6-8e41f5c3c615",
+      "result_id": "e8dadf41-174c-450f-bddb-bca93c29ace8"
+    },
+    {
+      "claim_id": "e4b8fd73-6c2b-48bd-81ad-c5de01ec9557",
+      "result_id": "e8dadf41-174c-450f-bddb-bca93c29ace8"
+    },
+    {
+      "claim_id": "2923af32-27d7-4ed0-99d8-4eaaeec781f1",
+      "result_id": "e8dadf41-174c-450f-bddb-bca93c29ace8"
+    },
+    {
+      "claim_id": "e5506e7f-49af-4a8f-960f-da34db61555d",
+      "result_id": "e8dadf41-174c-450f-bddb-bca93c29ace8"
+    },
+    {
+      "claim_id": "1aa3a902-11c8-45ed-a8b3-1fa84b9dbc99",
+      "result_id": "e8dadf41-174c-450f-bddb-bca93c29ace8"
+    },
+    {
+      "claim_id": "eabfa9f5-81da-4646-8410-4a7f80e98503",
+      "result_id": "e8dadf41-174c-450f-bddb-bca93c29ace8"
+    },
+    {
+      "claim_id": "311279d7-e762-4fc5-b2ed-6fc4d2071fc6",
+      "result_id": "b84de12e-5f21-4daa-9bcd-bbdd57c2d40c"
+    },
+    {
+      "claim_id": "10b09332-50ed-43ce-b25b-73a34c31b3e9",
+      "result_id": "b84de12e-5f21-4daa-9bcd-bbdd57c2d40c"
+    },
+    {
+      "claim_id": "2c57c58b-f375-4318-9b21-d7a81cc7b06f",
+      "result_id": "b84de12e-5f21-4daa-9bcd-bbdd57c2d40c"
+    },
+    {
+      "claim_id": "c46997e0-03e6-436a-9f4c-c97b7d2b9a8f",
+      "result_id": "b84de12e-5f21-4daa-9bcd-bbdd57c2d40c"
+    },
+    {
+      "claim_id": "bd7439e2-55fc-4798-bafc-e53a8e96c276",
+      "result_id": "b84de12e-5f21-4daa-9bcd-bbdd57c2d40c"
+    },
+    {
+      "claim_id": "44124b33-7b04-4738-b15b-c5bb37beaaef",
+      "result_id": "793a9618-d96b-41f2-82d8-2de729f938e0"
+    },
+    {
+      "claim_id": "11e2bd7a-66f8-40de-9ebb-e31a3c1feb57",
+      "result_id": "793a9618-d96b-41f2-82d8-2de729f938e0"
+    },
+    {
+      "claim_id": "ecf00dfc-378b-4253-a9a6-7faf987124a5",
+      "result_id": "793a9618-d96b-41f2-82d8-2de729f938e0"
+    },
+    {
+      "claim_id": "73d90ffd-346d-40fc-9709-75a223d294c7",
+      "result_id": "793a9618-d96b-41f2-82d8-2de729f938e0"
+    },
+    {
+      "claim_id": "8c41946e-639b-4d51-be4b-56ac63af6798",
+      "result_id": "793a9618-d96b-41f2-82d8-2de729f938e0"
+    },
+    {
+      "claim_id": "11da4e4e-e276-4343-ab58-218c3f1231e6",
+      "result_id": "793a9618-d96b-41f2-82d8-2de729f938e0"
+    },
+    {
+      "claim_id": "ded7a11b-8795-4fc4-8094-8a92eefd3c1b",
+      "result_id": "793a9618-d96b-41f2-82d8-2de729f938e0"
+    },
+    {
+      "claim_id": "4ba553d0-fb83-42cb-9da1-d1982843a7d9",
+      "result_id": "793a9618-d96b-41f2-82d8-2de729f938e0"
+    },
+    {
+      "claim_id": "6df79cec-d9e0-4f2b-bfa5-98e74109570f",
+      "result_id": "793a9618-d96b-41f2-82d8-2de729f938e0"
+    }
+  ],
+  "comparisons": []
+}

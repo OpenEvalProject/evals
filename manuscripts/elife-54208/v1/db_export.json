@@ -1,0 +1,2259 @@
+{
+  "submission": {
+    "id": "2832b6ca-8368-446d-bbad-91db16b79035",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:28:02.466936Z",
+    "updated_at": "2025-12-02T15:28:02.466936Z"
+  },
+  "content": [
+    {
+      "id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "submission_id": "2832b6ca-8368-446d-bbad-91db16b79035",
+      "content_type": "manuscript",
+      "content_text": "# Agonist-selective recruitment of engineered protein probes and of GRK2 by opioid receptors in living cells\n\n## Authors\n\n- Miriam Stoeber<sup>1</sup> ([ORCID: 0000-0002-5210-2864](https://orcid.org/0000-0002-5210-2864)) \u2020\n- Damien Julli\u00e9<sup>1</sup>\n- Joy Li<sup>1</sup>\n- Soumen Chakraborty<sup>4</sup>\n- Susruta Majumdar<sup>4</sup>\n- Nevin A Lambert<sup>6</sup> ([ORCID: 0000-0001-7550-0921](https://orcid.org/0000-0001-7550-0921))\n- Aashish Manglik<sup>7</sup>\n- Mark von Zastrow<sup>1</sup> ([ORCID: 0000-0003-1375-6926](https://orcid.org/0000-0003-1375-6926)) \u2020\n\n### Affiliations\n\n1. Department of Psychiatry University of California, San Francisco San Francisco United States\n2. Department of Cell Physiology and Metabolism University of Geneva Geneva Switzerland\n3. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n4. Center for Clinical Pharmacology Washington University School of Medicine St. Louis United States\n5. St Louis College of Pharmacy St. Louis United States\n6. Department of Pharmacology and Toxicology Medical College of Georgia, Augusta University Augusta United States\n7. Department of Pharmaceutical Chemistry University of California, San Francisco San Francisco United States\n8. Department of Anesthesia University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nG protein-coupled receptors (GPCRs) signal through allostery, and it is increasingly clear that chemically distinct agonists can produce different receptor-based effects. It has been proposed that agonists selectively promote receptors to recruit one cellular interacting partner over another, introducing allosteric \u2018bias\u2019 into the signaling system. However, the underlying hypothesis - that different agonists drive GPCRs to engage different cytoplasmic proteins in living cells - remains untested due to the complexity of readouts through which receptor-proximal interactions are typically inferred. We describe a cell-based assay to overcome this challenge, based on GPCR-interacting biosensors that are disconnected from endogenous transduction mechanisms. Focusing on opioid receptors, we directly demonstrate differences between biosensor recruitment produced by chemically distinct opioid ligands in living cells. We then show that selective recruitment applies to GRK2, a biologically relevant GPCR regulator, through discrete interactions of GRK2 with receptors or with G protein beta-gamma subunits which are differentially promoted by agonists.\n\n## Introduction\n\nG protein-coupled receptors (GPCRs) comprise nature\u2019s largest family of signaling receptors and an important class of therapeutic drug targets. GPCRs signal by allostery, and were considered for many years to operate as binary switches that bind to cognate transducer and regulator proteins in a single agonist-induced activated state. Over the past decade an expanded view has taken hold, supported by accumulating in vitro evidence that GPCRs are conformationally flexible (Lohse and Hofmann, 2015; Mahoney and Sunahara, 2016; Nygaard et al., 2013; Weis and Kobilka, 2018; Wingler et al., 2019) and a confluence of cell biological and in vivo evidence supporting the existence of functionally selective agonist effects (Smith et al., 2018; Urban et al., 2007; Williams et al., 2013). According to this still-evolving view, agonists have the potential to promote GPCRs to selectively recruit one transducer or regulator protein over another, introducing bias into the signaling cascade at a receptor-proximal level that is either propagated downstream or eliminated during intermediate transduction steps (Lau et al., 2011; Tsvetanova et al., 2017).\n\nOpioid receptors provide a representative example. Interest in selective agonist effects at these GPCRs dates back to the initial demonstration that opioid receptors can be activated by diverse peptide and non-peptide agonists (Kosterlitz and Hughes, 1977). Early experimental evidence for such selectivity among ligands emerged from the observation of an agonist-induced state of opioid receptors in neuroblastoma cells that discriminates between opioid peptides and opiate alkaloids (Von Zastrow et al., 1993). This was followed by the demonstration of agonist-selective control of opioid receptor endocytosis, leading to the identification of functional selectivity among agonists defined by differences in relative ability to drive receptor engagement of G protein relative to beta-arrestin-dependent cellular pathways (Keith et al., 1998; Keith et al., 1996; Whistler et al., 1999; Whistler and von Zastrow, 1998). This concept further evolved to the present view of biased receptor recruitment of G proteins relative to beta-arrestins, with receptor-proximal selectivity calculated by fitting quantitative measures of downstream pathway or protein response to operational models of receptor-effector coupling (Schmid et al., 2017).\n\nTwo key gaps persist in our present understanding. First, selective protein recruitment by GPCRs in intact cells remains largely calculated rather than directly observed. Accordingly, the understanding of receptor-proximal agonist bias is inherently limited by assumptions of the model used to calculate it (Kenakin, 2018; Klein Herenbrink et al., 2016). Indeed, and despite intense efforts motivated by interest in the therapeutic impact of biased agonist effects at opioid receptors (Johnson et al., 2017; Schmid et al., 2017; Whistler et al., 1999), significant challenges remain in reliably assessing selectivity of receptor-proximal protein recruitment based on downstream cell-based readouts (Conibear and Kelly, 2019). Second, challenges can arise even using cell-based assays that are direct. For example, multiple methods have been developed to detect GPCR interaction with beta-arrestins in intact cells (Chen et al., 2012; Kim et al., 2017). However, this binding involves multiple biochemical steps and, in particular, it typically requires the receptor to undergo prior agonist-induced phosphorylation (Eichel et al., 2018; Gurevich et al., 1995; Thomsen et al., 2016). This has been clearly established for opioid receptors (Whistler and von Zastrow, 1998; Zhang et al., 1998), for which full interaction with beta-arrestin requires the receptor to be phosphorylated at multiple sites in the cytoplasmic tail through a defined sequence of agonist-dependent reactions which are catalyzed by distinct GPCR kinase (GRK) isoforms (Chiu et al., 2017; Just et al., 2013; Lau et al., 2011; Miess et al., 2018). Accordingly, beta-arrestin recruitment measured in such assays clearly reflects a process that is considerably more complex than allosteric selection by the receptor.\n\nHere we describe an alternative approach to address these knowledge gaps. We delineate a cell-based method to simply assess selective protein recruitment by opioid receptors at the receptor-proximal level, taking advantage of two engineered protein folds established to bind agonist-activated GPCRs in intact cells without requiring or engaging other known cellular proteins (Stoeber et al., 2018; Wan et al., 2018). Using these engineered proteins comparatively as orthogonal receptor-interaction biosensors, we directly demonstrate selectivity in receptor-proximal protein recruitment elicited by various opioid agonists in living cells. We then show how the principle of receptor-proximal protein selection applies in a more complex manner to GRK2, a biologically relevant regulator.\n\n## Results\n\n### Comparative detection of direct protein recruitment by opioid receptors in living cells\n\nTwo agonist-activated opioid receptor complexes have been described in structural detail (Figure 1A), one bound to a nucleotide-free G protein heterotrimer and another to an active state-stabilizing nanobody (Nb) (Huang et al., 2015; Koehl et al., 2018). The receptor conformation resolved in each complex is similar but not identical, with Nb and G protein interactions involving distinct molecular contacts on cytoplasmic domains of the receptor. Nbs are inherently orthogonal to intracellular biochemistry but heterotrimeric G proteins engage multiple cellular proteins in addition to activated receptors. Thus we focused on mini-G (mG) proteins, engineered versions of the Ras-like domain of G protein alpha subunits which bind directly to activated GPCRs but are not known to engage other cellular proteins (Nehm\u00e9 et al., 2017; Wan et al., 2018). We assessed binding to receptors in intact cells by redistribution of fluorescently labeled Nb or mG fusion proteins from the cytoplasm to the plasma membrane (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig1-v1.jpg)\n\n**Figure 1.:** (A) Crystal structures of the DAMGO-bound MOR (red) - Gi (green/blue) complex (PDB: 6DDF) and the BU27-bound MOR (red) \u2013 nanobody (green) complex (PDB: 5C1M). Ligands are shown in blue. (B) Schematic of nanobody (Nb)/miniGsi (mGsi) and OR localization in cells and expected probe re-localization upon agonist addition. (C) Scheme of a cell imaged by total internal reflection fluorescence microscopy (TIR-FM). The evanescent excitation field selectively illuminates fluorophores close to the plasma membrane. (D) TIR-FM images of a time series of a HEK293 cell, expressing Venus-mGsi and FLAG-KOR (not shown). Medium was exchanged to DynA (agonist, 100 nM) and to 5\u2019GNTI (antagonist, 100 \u03bcM) by bath application. The scale bar represents 10 \u03bcm. Intensity of mGsi and KOR (labeled with anti-FLAG M1-AF647) during the TIR-FM time-lapse. 5 s between frames is shown. F0, average fluorescence intensity before agonist. (E) Same as in (D) but with HEK293 cell expressing EGFP-Nb33 instead of mGsi. Intensity of Nb33 and KOR during TIR-FM time-lapse with 5 s between frames is shown. (F) Intensity of mGs and KOR (labeled with anti-FLAG M1-AF647) during the TIR-FM time-lapse, adding increasing concentrations of DynA (1 nM - 10 \u03bcM). 5 s between frames is shown. F0, average fluorescence intensity before agonist. (G) mGsi intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi and KOR, adding increasing concentrations of U69 (1 nM - 10 \u03bcM) followed by reference compound DynA (10 \u03bcM). 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (reference compound DynA). (H) Same as in (F) with HEK293 cell expressing EGFP-Nb33 instead of mGsi. (I\u2013K) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR, measured by TIR-FM upon different agonists. Normalization of intensity values is shown (range [0\u20131]). Regression curves with Hill slope of 1 are shown. (I) DynA concentration response (n\u00a0=\u00a03; average\u00a0\u00b1\u00a0SEM). (J) U69 concentration response, normalized to DynA (n\u00a0=\u00a03; average\u00a0\u00b1\u00a0SEM). (K) U50 concentration response, normalized to DynA (n\u00a0=\u00a04; average\u00a0\u00b1\u00a0SEM).\n\nFor a mG probe we chose mGsi, derived from the Ras-like domain of Gs alpha but with nine residues at the distal C-terminus replaced by the corresponding residues from Gi alpha1. These C-terminal residues form a major determinant of G protein coupling specificity (Conklin et al., 1993) by folding into a helical structure (alpha-5 helix) that occupies the agonist-activated GPCR core (Carpenter and Tate, 2017; Koehl et al., 2018). Because Gs couples poorly to opioid receptors, we reasoned that a sensor derived from mGsi would primarily detect this interaction. For a Nb probe we selected Nb33, previously used to detect activated mu (MOR) and delta (DOR) opioid receptors in living cells (Stoeber et al., 2018). Nb33 shares receptor contact residues with Nb39, a close analog that has been resolved at high resolution in complex with activated MOR (Huang et al., 2015) and in a similar complex with activated kappa opioid receptor (KOR) (Che et al., 2018). Because cytoplasmic residues contacted by the Nb in these structures are largely distinct from those engaged by the G protein alpha-5 helix, we reasoned that the Nb-derived sensor has the potential to provide different allosteric information.\n\nFluorescent protein fusions of mGsi or Nb33 localized diffusely when expressed in the cytoplasm of HEK293 cells, and recruitment by receptors was monitored using total internal reflection fluorescence microscopy (TIR-FM) in cells co-expressing Flag-tagged KOR (Figure 1C). Importantly, HEK293 cells do not express endogenous opioid receptors or other opioid ligand binding sites, thereby providing a null genetic background on which to directly examine protein probe recruitment mediated specifically by the co-expressed receptor. We observed rapid and robust recruitment of mGsi by KOR upon application of the kappa-selective peptide agonist Dynorphin A (DynA, Dynorphin 1\u201317). Recruitment of mGsi was reversible because application of the high-affinity competitive KOR antagonist 5\u2019GNTI resulted in rapid redistribution of the biosensor back to the cytoplasm (Figure 1D). In contrast, mGs was not detectably recruited in response to KOR activation by DynA using the same assay (Figure 1F), verifying assay specificity and that mGsi recruitment is driven primarily by the Gi-derived distal C-terminus. Further, we verified that agonist-induced recruitment of mGsi occurred separately from a change in surface expression of KOR, which was monitored in parallel using anti-Flag antibody (Figure 1D). Nb33 was also rapidly recruited in response to KOR activation by DynA using the same experimental protocol, and this recruitment was also reversible upon antagonist application and occurred without a detectable change in surface receptor expression (Figure 1E). Accordingly, both mGsi and Nb33 can be used as biosensors of ligand-dependent recruitment by KOR in living cells using the TIR-FM assay, and both sensors produce a reversible recruitment signal that is sufficiently robust and fast (t1/2< 30 s) to enable reliable detection of protein recruitment without possible complications of later receptor trafficking.\n\nWe next tested two non-peptide KOR full agonists, U69593 (U69) and U50488 (U50). We generated concentration-response curves by increasing agonist concentration in a stepwise manner and then adding DynA in excess (10 \u03bcM) at the end of each series as an internal reference (Figure 1G and H). Both Nb33 and mGsi were robustly recruited in a concentration-dependent manner in response to DynA and both of the non-peptide full agonist drugs (Figure 1I\u2013K), consistent with the previously established pharmacology of these compounds (DiMattio et al., 2015), but we also noted that the concentration-response relationship for mGsi recruitment was consistently left-shifted relative to Nb33. These results demonstrate that both Nb33 and mGsi are robustly recruited by KOR after activation by peptide and non-peptide full agonists in living cells, but with a potency shift indicating that the interactions are not identical.\n\n### Agonist-selective recruitment of engineered protein probes\n\nWe then applied the same approach to investigate the effect of the alkaloid agonist etorphine (ET) on mGsi and Nb33 recruitment by KOR. ET is an opiate alkaloid drug that is structurally distinct from opioid peptides as well as from U50 and U69. ET efficaciously promotes G protein activation and signaling but has long been recognized to drive KOR internalization and phosphorylation poorly, supporting its classification as a G protein-biased agonist by operational criteria (Chu et al., 1997; DiMattio et al., 2015; Jordan et al., 2000). ET behaved as a potent but partial agonist in the mGsi recruitment assay, producing a maximum biosensor recruitment response reaching 67% of that produced by DynA (Figure 2A and D). Remarkably, ET produced little or no recruitment of Nb33 despite a robust response to DynA verified in each assay and in the same cells (Figure 2B and E). This lack of Nb33 recruitment was evident even at very high concentrations of ET (Figure 2B and C), in contrast to mGsi that was potently recruited (Figure 2C\u2013E). Further verifying this difference, selective recruitment of mGsi relative to Nb33 was observed when the biosensors were tagged with distinct fluorophores, co-expressed, and imaged in parallel in the same cells (Figure 2F). Again, mGsi was potently recruited in response to ET but Nb33 was not, despite DynA producing strong recruitment of both probes and in the same cells (Figure 2G). These results indicate that mG and Nb probes can distinguish receptor-proximal agonist effects in intact cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig2-v1.jpg)\n\n**Figure 2.:** (A) mGsi intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi and KOR, adding increasing concentrations of etorphine (1 nM - 10 \u03bcM), followed by reference compound DynA (10 \u03bcM). 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (reference compound DynA). (B) Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing EGFP-Nb33 and KOR, treated, imaged, and normalized as in (A). (C) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR upon etorphine (ET) addition, measured by TIR-FM and using DynA as reference. Normalization of intensity values is shown (range [0\u20131]). Regression curves with Hill slope of 1 are shown. n\u00a0=\u00a05; average\u00a0\u00b1\u00a0SEM. (D) TIR-FM images of a time series of a HEK293 cell, expressing Venus-mGsi and KOR (not shown). Increasing concentrations of etorphine were added, followed by DynA. Venus-mGsi is pseudocolored, low to high intensity. The scale bar represents 10 \u03bcm. (E) Same as in (D) but with HEK293 cell expressing EGFP-Nb33 instead of mGsi. EGFP-Nb33 is pseudocolored, low to high intensity. The scale bar represents 10 \u03bcm. (F) Experimental set up for measuring agonist-dependent recruitment of both mGsi and Nb33 to KOR in same cell. (G) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-KOR. Cell was treated with increasing concentrations of etorphine, followed by DynA, and antagonist 5\u2019GNTI. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (reference DynA). Lower panel: 10 min kymograph traced inside the cell, depicting intensities of Venus-mGsi, mCherry-Nb33, and FLAG-KOR (labeled with anti-FLAG M1-AF647), all pseudocolored, low to high intensity. (H) Schematic of the C-tail domain of KOR, indicating the known agonist-dependent phosphorylation sites that are mutated to alanine in KOR-TPD. (I) Same as in (G) but with HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-KOR-TPD. (J) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR-TPD upon etorphine addition. Experimental setup and analysis as in (C). n\u00a0=\u00a05; average\u00a0\u00b1\u00a0SEM. (K) Concentration-dependent recruitment of mGsi and Nb33 probes to KOR upon etorphine addition, in cells pre-treated with GRK2/3 inhibitor Cmpd101 (30 \u03bcM). Experimental setup and analysis as in (C). n\u00a0=\u00a03; average\u00a0\u00b1\u00a0SEM.\n\nA simple interpretation of these results is that differential probe recruitment reflects a primary allosteric effect at the level of receptor-proximal protein engagement by the agonist-activated opioid receptor. An alternative possibility is that agonists produce differential probe recruitment as a secondary consequence of agonist-selective post-translational modifications of the receptor. In particular, because agonist-induced internalization of KOR requires multi-site phosphorylation on its cytoplasmic tail, and ET is known to stimulate this phosphorylation less strongly than DynA (Chen et al., 2016), we considered the possibility that differential biosensor recruitment occurs secondarily to differential phosphorylation. To test this, we measured biosensor recruitment by a mutant KOR lacking all relevant phosphorylation sites in the cytoplasmic tail (KOR-TPD for \u2018total phosphorylation defective\u2019, Figure 2H). The pronounced difference in mGsi relative to Nb33 recruitment was still observed (Figure 2I and J). Independently verifying this, selective probe recruitment by wild type KOR was not detectably perturbed in the presence of Compound101 (Figure 2K), a chemical inhibitor of GRK2/3 activity known to strongly reduce KOR phosphorylation in HEK293 cells (Chiu et al., 2017). Together, these results support the hypothesis that selective recruitment of mG relative to Nb probes occurs as a primary consequence of allosteric protein selection at the receptor, rather than a secondary effect of differential phosphorylation.\n\n### Agonist-selective probe recruitment is not restricted to KOR\n\nWe next asked if our experimental strategy can also detect differential protein recruitment by MOR. Nb33 is already known to be recruited by agonist-activated MORs (Stoeber et al., 2018), and we verified that this is also the case for mGsi. DAMGO, a peptide full agonist of MOR, produced rapid and robust recruitment of mGsi that was rapidly reversed by the competitive antagonist naloxone (Figure 3A and B). Similar to what was observed for recruitment of the engineered protein probes by KOR, the concentration-response relationship for recruitment of mGsi by DAMGO was left-shifted relative to Nb33 (Figure 3C). ET (also an agonist of MOR) promoted recruitment of both probes by MOR, and to the same maximum degree when compared to the peptide full agonist (Figure 3C). This contrasts with partial recruitment of mGsi and no detectable recruitment of Nb33 by KOR (Figure 2), indicating that differential recruitment of the engineered protein probes by opioid receptors is both agonist-dependent and receptor subtype-specific.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig3-v1.jpg)\n\n**Figure 3.:** (A) 7 min kymograph traced inside a cell expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR (labeled with anti-FLAG M1-AF647) and treated with increasing concentrations of DAMGO (agonist), followed by addition of Naloxone (antagonist). Fluorescence intensities are pseudocolored, low to high intensity. (B) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding increasing concentrations of DAMGO followed by Naloxone. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 \u03bcM DAMGO). (C) Concentration-dependent recruitment of mGsi and Nb33 to MOR upon DAMGO and etorphine addition, measured by TIR-FM. Normalization of intensity values is shown (range [0\u20131]) with DAMGO as reference. Regression curves with Hill slope of 1 are shown. DAMGO n\u00a0=\u00a03, etorphine n\u00a0=\u00a04, average\u00a0\u00b1\u00a0SEM. (D) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding increasing concentrations of morphine or PZM21 followed by reference compound DAMGO (10 \u03bcM). 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 \u03bcM DAMGO). (E) Concentration-dependent recruitment of mGsi and Nb33 probes to MOR upon morphine or PZM21 treatment, setup and analysis as in (C). morphine n\u00a0=\u00a05, PZM21 n\u00a0=\u00a05, average\u00a0\u00b1\u00a0SEM. (F) mGsi and Nb33 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding increasing concentrations of mitragynine pseudoindoxyl (MP) followed by DAMGO, using bath application. 5 s between frames is shown. (G) mGsi (left) and Nb33 (right) intensity during TIR-FM time-lapse series of a cell, co-expressing Venus-mGsi, mCherry-Nb33, and FLAG-MOR, adding 10 \u03bcM of reference DAMGO, followed by agonist washout using perfusion (\u2018wo\u2019, highlighted in gray), and addition of 10 \u03bcM MP. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 \u03bcM DAMGO). (H) Concentration-dependent recruitment of mGsi and Nb33 to MOR upon MP addition, measured by TIR-FM with DAMGO as reference. n\u00a0=\u00a04; average\u00a0\u00b1\u00a0SEM.\n\nTo expand our search, and taking into account the fact that DAMGO and ET are both generally classified as full agonists at MOR, we next examined morphine and PZM21. Both of these non-peptide drugs are partial agonists with respect to assays of G protein activation or signaling, but each is derived from a different chemical scaffold and differs in degree of bias estimated using a beta-arrestin recruitment assay (Manglik et al., 2016). Using the same experimental protocol, and comparing recruitment promoted by the test ligand relative to the peptide full agonist (DAMGO) reference, both morphine and PZM21 produced partial recruitment of mGsi as well as Nb33 (Figure 3D and E). Whereas morphine and PZM21 were similar in the degree of mGsi recruitment that they produced at saturating concentration, morphine was found to be significantly more efficacious than PZM21 in recruiting Nb33. Together, these results reveal a range of selective protein recruitment effects among chemically diverse MOR partial agonists.\n\nThe experimental strategy used to compare test agonist effects relative to the peptide reference was robust in practice but, in principle, it could underestimate differences relative to the reference peptide if the test agonist dissociates slowly or has an on-rate much faster than the peptide reference. We found evidence for this when evaluating another chemically distinct MOR partial agonist, the semi-synthetic natural product mitragynine pseudoindoxyl (MP) (V\u00e1radi et al., 2016). Using the sequential agonist addition protocol, MP appeared to be similarly efficacious to DAMGO in promoting recruitment of mGsi because no further increase was elicited by subsequent addition of DAMGO while, in contrast, MP failed to produce any detectable recruitment of Nb33. However, we noted that DAMGO also failed to promote recruitment of Nb33 in cells that were previously exposed to MP (Figure 3F), despite DAMGO promoting a strong Nb33 recruitment response in cells not previously exposed to MP (Figure 3B). Adding a perfusion wash step, in order to remove excess test agonist between applications, avoided this complication. With this modification, MP was verified to indeed promote mGsi recruitment by MOR, but to a significantly reduced maximal degree relative to DAMGO and without promoting detectable recruitment of Nb33 (Figure 3G and H). These results further expand the range of differential protein recruitment effects documented among chemically diverse MOR agonists.\n\n### Differential protein recruitment can be elicited by diverse opioid agonists\n\nTo simplify comparison across agonists and receptors, we defined the maximum recruitment response elicited by each agonist compared to the corresponding peptide full agonist reference (DynA for KOR and DAMGO for MOR) as a relative \u2018intrinsic activity\u2019 for each agonist (Figure 4A). We then plotted these relative values for each biosensor (Figure 4B). Some non-peptide agonists were indistinguishable from the reference peptide by this analysis, recruiting both protein probes to a similar maximal degree (corresponding to an \u2018I.A.\u2019 value of 1 for both probes), but others departed from the diagonal. This is not consistent with the traditional concept of partial agonism based on a unitary agonist-induced receptor \u2018on\u2019 state, which would predict the recruitment responses elicited by all agonists to fall along the diagonal. Rather, the present results support the view that opioid receptors are more flexibly activated, enabling them to selectively recruit one interaction probe over another in living cells. They further suggest that the ability to promote selective protein recruitment is widespread among chemically diverse opioid agonists (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig4-v1.jpg)\n\n**Figure 4.:** (A) Table summarizing mGsi and Nb33 recruitment efficacies to KOR and MOR upon different agonists. Intrinsic activities (\u2018I.A.\u2019, maximal response) for both probes and each agonist are given (average\u00a0\u00b1\u00a0SEM). DynA serves as reference for KOR, DAMGO as reference for MOR. mGsi/Nb33\u00a0=\u00a0ratios of intrinsic activities. (B) Plot of intrinsic activities (maximal responses) of mGsi recruitment as function of Nb33 recruitment for all KOR and MOR agonists. The diagonal (dotted) line indicates the theoretical trajectory for probe recruitment without bias. MS\u00a0=\u00a0morphine, ET\u00a0=\u00a0etorphine, MP\u00a0=\u00a0mitragynine pseudoindoxyl. (C) Summary of the effects of DynA vs. etorphine on KOR-proximal protein recruitment. The chemically distinct agonists differentially promote recruitment of protein probes mGsi (interaction 1) and Nb33 (interaction 2), revealing biased recruitment of cytoplasmic proteins by opioid receptors.\n\n### Relevance to agonist-selective recruitment of GRK2\n\nWhile we found the engineered proteins useful as orthogonal probes to unambiguously assess receptor-proximal recruitment in living cells, their disconnection from endogenous cellular machineries and pathways means that they are not directly related to function. Accordingly, we next asked if agonist-selective protein recruitment applies to a physiologically relevant GPCR-interacting protein. We focused on GRK2 because this kinase is known to be important for generating agonist-selective patterns of multi-site phosphorylation in the MOR cytoplasmic tail, which convey biased effects downstream from the receptor by distinguishing engagement of beta-arrestins and regulating receptor entry into the endocytic network (Just et al., 2013; Lau et al., 2011). We were also intrigued by GRK2 because it is recruited by activated GPCRs through multiple interactions, including with the activated GPCR and with beta-gamma subunits that are exposed on the inner membrane leaflet following activation of the G protein heterotrimer (DebBurman et al., 1995; Lodowski et al., 2003; Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic depicting two modes of GRK2 recruitment from the cytosol to the plasma membrane upon KOR activation: one involves interaction with G beta-gamma subunits exposed upon G protein activation and another with the activated receptor itself. (B) GRK2 intensity during TIR-FM time-lapse series of a HEK293 cell, co-expressing GRK2-EGFP and KOR, adding increasing concentrations of DynA. 5 s between frames is shown. Intensity is normalized between 0 (no agonist) and 1 (10 \u03bcM DynA). (C) GRK2 intensity for cells transfected as in (B) but adding increasing concentrations of etorphine (ET), followed by 10 \u03bcM DynA as reference. Imaging and normalization as in (B). (D) Concentration-dependent recruitment of GRK2 to the plasma membrane upon DynA or ET addition, measured by TIR-FM. Normalization of intensity values is shown (range [0\u20131]) with DynA as reference. Regression curve with Hill slope of 1 is shown for DynA, no fit for ET. DynA n\u00a0=\u00a06, ET n\u00a0=\u00a07, average\u00a0\u00b1\u00a0SEM. (E) Intensity of GRK2 during the TIR-FM time-lapse series of a HEK293 cell, expressing GRK2-EGFP and FLAG-KOR (not shown). Medium was exchanged to ET (100 nM) and then to DynA (1 \u03bcM) by bath application. 5 s between frames is shown. F0 is the average fluorescence intensity before agonist. n\u00a0=\u00a04, average\u00a0\u00b1\u00a0SEM. (F) GRK2 intensity time course as in (E), but cells express FLAG-KOR-TPD instead of wild-type. n\u00a0=\u00a04, average\u00a0\u00b1\u00a0SEM. (G) Intensity of GRK2-C-tail during the TIR-FM time-lapse series of a HEK293 cell, expressing GRK2-C-tail-EGFP and FLAG-KOR, imaged and treated as in (E). n\u00a0=\u00a05, average\u00a0\u00b1\u00a0SEM. (H) GRK2 intensity time course as in (E), but cells were pre-treated with pertussis toxin (PTX, 100 ng/ml). n\u00a0=\u00a03, average\u00a0\u00b1\u00a0SEM.\n\nWe began by examining a functional GFP-fusion of GRK2 using the same TIR-FM imaging assay used to monitor orthogonal probe recruitment. We focused on comparing the effects of ET relative to DynA on KOR because these agonist-receptor pairs appeared to differ most dramatically based on the orthogonal biosensor recruitment assay (Figure 4). DynA promoted rapid, concentration-dependent recruitment of GRK2 to the plasma membrane (Figure 5B) while ET, despite being highly potent, produced a degree of GRK2 recruitment clearly lower than that produced by DynA (Figure 5C and D). This difference was not a secondary effect of receptor phosphorylation because ET also produced less maximal GRK2 recruitment than DynA using the phosphorylation-defective mutant KOR-TPD in place of KOR (Figure 5E and F).\n\nAlthough ET promoted recruitment of full-length GRK2 less strongly than DynA, these agonists produced similarly strong recruitment of a probe corresponding to the isolated C-terminal PH domain from GRK2 that interacts with G beta-gamma (Figure 5G). This suggested that GRK2 binding to G beta-gamma subunits, enabled by G protein activation triggered by either agonist, is responsible for partial recruitment promoted by ET. We independently verified this conclusion by returning to assay of full length tagged GRK2, and testing the effect of blocking Gi activation by pre-exposing cells to pertussis toxin (PTX). In this condition, ET failed to produce any detectable recruitment of GRK2. However, as expected, DynA still produced a significant recruitment response in the same cells (Figure 5H), but to a reduced degree relative to the recruitment response elicited by DynA in cells not previously exposed to pertussis toxin.\n\nThe above results indicate that ET and DynA share the ability to promote GRK2 recruitment to the plasma membrane via binding G beta-gamma, and that DynA engages an additional mode of binding that is separate from the G protein and not shared with ET. We hypothesized that this interaction occurs with the activated opioid receptor itself. In order to test this, we devised an assay to resolve GRK2 recruitment to the plasma membrane from GRK2 binding directly to the receptor. To do so, we clustered receptors on the cell surface using an antibody cross-linking protocol, forming clusters that appeared in TIRF images as discrete spots of laterally concentrated KOR (Figure 6A and B, \u2018KOR\u2019 panels). We then used this characteristic appearance to distinguish GRK2 recruitment to KOR-containing clusters from recruitment to the surrounding plasma membrane separately from KOR clusters. As expected, in the absence of agonist GRK2 was primarily distributed in the cytosol and not detectably associated with KOR (Figure 6B left, \u2018GRK2\u2019 panel). Within\u00a0~1 min after application of DynA, GRK2 specifically accumulated at the KOR-containing clusters (Figure 6B right). In contrast, application of ET produced a diffuse increase in GRK2 fluorescence at the plasma membrane but no specific accumulation at KOR-containing clusters (Figure 6C). Quantification of the GRK2 intensity in KOR clusters relative to the surrounding plasma membrane verified significant accumulation of GRK2 with receptors promoted by DynA but not ET (Figure 6D), despite both agonists promoting diffuse membrane recruitment (Figure 5). These results support a model of GRK2 engagement driven by discrete biochemical modes which are differentially regulated by agonists: DynA and ET share the ability to promote GRK2 recruitment to the plasma membrane via receptor-activated G beta-gamma, but DynA is different from ET in its ability to additionally promote GRK2 recruitment by binding directly to KOR (Figure 6E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54208/elife-54208-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic of receptor clustering in the plasma membrane using cross-linking by polyclonal antibody. (B) TIR-FM images of a cell expressing GRK2-mCherry and SEP-KOR. KOR was cross-linked with polyclonal antibodies before imaging. Frames were collected immediately before agonist (left panels) and 1 min after application of 1 \u03bcM DynA (right panels). The scale bar represents 10 \u03bcm. (C) Same as in (B) but cells were treated with etorphine (ET, 1 \u03bcM) instead of DynA. The scale bar represents 10 \u03bcm. (D) GRK2 intensity in KOR clusters relative to surrounding plasma membrane (see methods). Quantification of images collected before agonist and 2 min after agonist (DynA or ET) application, similar to images shown in (A) and (B). DynA (26 cells) and ET (15 cells) across three independent experiments. Mean with SD is shown. ***p =\u00a0<0.0001 by paired two-tailed t-test. n.s.\u00a0=\u00a0not significant (p=0.30). (E) The two biochemical modes of GRK2 recruitment are selectively promoted by distinct agonists. While etorphine only drives GRK2 binding to G beta-gamma, DynA additionally promotes direct interaction of GRK2 with activated KOR.\n\n## Discussion\n\nThe ability of agonists to impose selectivity on protein recruitment by GPCRs has been proposed for many years and is a core hypothesis underlying the present concept of biased agonism (Schmid et al., 2017; Smith et al., 2018; Urban et al., 2007), but testing this hypothesis in an intact cellular environment has remained challenging due to the complexity of cellular transduction and regulatory pathways that GPCRs typically engage (Kenakin, 2019). The present study describes a direct, reductionist approach to this problem based on the application of engineered proteins that bind activated receptors but are not known to bind other cellular proteins. We show that agonists differ in relative ability to drive recruitment of the engineered probes to opioid receptors in living cells, and then delineate how the principle of agonist-selective recruitment applies to GRK2 as a physiologically relevant regulator.\n\nOur results indicate that selective recruitment of one cellular protein over another not only occurs in intact cells, but it is widespread and elicited by diverse agonists. All partial agonists examined were found to promote mGsi recruitment more strongly than Nb33 when present at saturating concentration. Further, concentration-response curves for mGsi relative to Nb33 recruitment by opioid receptors were left-shifted even for peptide full agonists. The allosteric nature of GPCR activation is well established, and has been recognized since early studies of receptor coupling to heterotrimeric G proteins in vitro (De Lean et al., 1980; Maguire et al., 1975; Strachan et al., 2014; Sunahara and Insel, 2016). The present results are fully consistent with this concept, and expand it by providing clear biochemical evidence for discrete protein-engaged receptor states that can be selectively produced by diverse agonists in the complex environment of intact, living cells. The engineered interaction probes that we focused on here demonstrate such an additional level of allosteric selection most simply, but our results delineating differential recruitment of GRK2 by receptors suggest that the same principle applies in a more complex manner to biologically relevant GPCR-interacting proteins.\n\nIn its present state of development, our approach is limited by the number of orthogonal probes available for assessing protein recruitment. We focused here on two previously validated GPCR-interacting proteins, selected based on existing biophysical evidence that each recognizes different structural features of the activated receptor. It is possible, and we think likely, that still more specificity exists in receptor-proximal protein recruitment. In future studies it will be interesting to develop or adapt additional structurally diverse protein folds to address this question, and to explore additional agonist diversity using the existing probes. For example, it will be interesting to determine if ligands can be found that promote recruitment of Nb33 preferentially to mGsi.\n\nAn important next step is to delineate the biophysical basis for the observed selectivity of protein recruitment induced by opioid agonists, with differential effects of DynA and ET on Nb33 recruitment to KOR providing a striking example. The present results clearly indicate that the complexes responsible for agonist-selective protein recruitment must be distinct, but leave unresolved the nature of the distinction. One possibility is that distinct allosteric complexes reflect unique conformational ensembles of the receptor. Although currently available structural data for KOR (Che et al., 2018; Wu et al., 2012) preclude direct assessment of such conformational differences, prior structures of MOR in complex with either Nb39 (Huang et al., 2015) (a close analog of Nb33) or heterotrimeric Gi (Koehl et al., 2018) offer some insight. Both Nb39 and Gi alpha stabilize an active MOR conformation in the intracellular domain; however, the precise conformation of the MOR intracellular loop 3 (ICL3) differs between the two structures. Thus, differential recruitment of Nb33 and mGsi may reflect agonist-selective stabilization of distinct active receptor conformations. Alternatively, agonists may promote receptors to adopt similar active conformations, and distinctions in the kinetics of sensor binding, sensor concentration, and/or sensor affinity contribute to differential recruitment. Future studies, combining biophysical and cell biological approaches, will be needed to answer this question. We also note that these classes of mechanism are not mutually exclusive, and think it is\u00a0likely that both contribute to agonist-selective allosteric effects observed in intact cells.\n\nIt will be particularly interesting to extend the present approach toward examining kinetic aspects of selective protein recruitment by receptors. We found that the orthogonal probes produce a time-invariant recruitment response within\u00a0~30 s after agonist application. This enables the approach to be used as an end-point assay scalable to a drug screening platform, and we focused on steady state recruitment values in the present work for simplicity. However, in light of clear and long-standing evidence for kinetic differences in agonist action at GPCRs (Klein Herenbrink et al., 2016; Swaminath et al., 2004), we anticipate that time-dependent analysis of probe recruitment will provide additional insight into selectivity among agonists.\n\nIn sum, and viewed more broadly, the present results reinforce an emerging understanding that GPCRs operate as allosteric machines with the potential to communicate significantly more information about local chemical environment than the mere presence or absence of a cognate agonist (Costa-Neto et al., 2016; Kenakin, 2019). We propose from the present observations that the mGsi probe reports allosteric effects relevant to G protein engagement by opioid receptors, and that the Nb probe reports additional effects relevant to GRK engagement. Our results further support the hypothesis that agonist bias, now generally defined by operational criteria, can be deconvolved into discrete receptor-proximal molecular selection events. The present study makes initial inroads toward decoding this underlying \u2018machine language\u2019 of GPCR signaling, and thus toward precisely delineating how much chemical information content receptors actually convey physiologically.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (human, female)</td>\n      <td>HEK293</td>\n      <td>ATCC</td>\n      <td>CRL-1573; RRID: CVCL_0045</td>\n      <td>Human embryonic kidney</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-FLAG (M1)</td>\n      <td>Sigma-Aldrich</td>\n      <td>F-3040; RRID: AB_439712</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-GFP</td>\n      <td>Invitrogen</td>\n      <td>A-11122; RRID: AB_221569</td>\n      <td>(1:100)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>EGFP-Nb33</td>\n      <td>(Stoeber et al., 2018)</td>\n      <td>N/A</td>\n      <td>EGFP-C1 backbone</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pmApple-Nb33</td>\n      <td>(Stoeber et al., 2018)</td>\n      <td>N/A</td>\n      <td>pmApple-C1 backbone</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>NES-Venus-mGsi</td>\n      <td>(Wan et al., 2018)</td>\n      <td>N/A</td>\n      <td>pcDNA3 backbone</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>NES-Venus-mGs</td>\n      <td>(Wan et al., 2018)</td>\n      <td>N/A</td>\n      <td>pcDNA3 backbone</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>signal sequence FLAG (ssf)-MOR, murine</td>\n      <td>(Stoeber et al., 2018)</td>\n      <td>N/A</td>\n      <td>pcDNA3 backbone</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ssf-KOR, murine</td>\n      <td>(Chu et al., 1997)</td>\n      <td>N/A</td>\n      <td>pcDNA3 backbone</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ssf-KOR-TPD (S356A, T357A, T363A, S369A)</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>pcDNA3 backbone, see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Super ecliptic pHluorin (SEP) -KOR, murine</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>pCAGGS-SE backbone, see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GRK2-EGFP, murine</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>pCAGGS-SE backbone, see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GRK2-pmApple, murine</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>pCAGGS-SE backbone, see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GRK2-C-tail- EGFP (aa 546\u2013670)</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>pCAGGS-SE backbone, see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Dynorphin A (1\u201317, DynA)</td>\n      <td>Anaspec</td>\n      <td>AS-24298</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>DAMGO, [D-Ala2, N-Me-Phe4, Gly5-ol]-Enkephalin acetate salt</td>\n      <td>Sigma-Aldrich</td>\n      <td>E7384</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>U-69593 (U69)</td>\n      <td>Cayman Chemical</td>\n      <td>13255</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>U-50488 hydrochloride (U50)</td>\n      <td>Tocris</td>\n      <td>0495</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GNTI dihydrochloride (5\u2019GNTI)</td>\n      <td>Axon Med Chem</td>\n      <td>1226</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Etorphine-HCl</td>\n      <td>NIDA</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Morphine sulfate (MS)</td>\n      <td>Sigma-Aldrich</td>\n      <td>1448005</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Naloxone hydrochloride dihydrate</td>\n      <td>Sigma-Aldrich</td>\n      <td>N7758</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PZM21</td>\n      <td>Enamine</td>\n      <td>N/A</td>\n      <td>custom synthesis</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>mitragynine pseudoindoxyl (MP)</td>\n      <td>This study</td>\n      <td>N/A</td>\n      <td>(V\u00e1radi et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Compound101 (Cmpd101)</td>\n      <td>HelloBio</td>\n      <td>HB2840</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pertussis toxin</td>\n      <td>Sigma-Aldrich</td>\n      <td>P7208</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Alexa Fluor 647 Protein Labeling Kit</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A20173</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>8.1.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>Imagej.net/contributors</td>\n      <td>2.0.0-rc-54/1.51 g</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MathWorks</td>\n      <td>R2014b</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>Schr\u00f6dinger</td>\n      <td>v1.7.4.5</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mammalian cell culture conditions\n\nHEK293 (CRL-1573, ATCC, female, mycoplasma-tested) were cultured in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM, GIBCO), supplemented with 10% fetal bovine serum (UCSF Cell Culture Facility). Stably transfected HEK293 cells expressing N-terminally FLAG-tagged MOR or KOR were cultured in the presence of 250 \u03bcg/ml Geneticin (Gibco). For transient DNA expression, Lipofectamine 2000 (Invitrogen) was used according to manufacturer\u2019s instructions. For live cell imaging, cells were plated on poly-L-lysine-coated 35 mm glass-bottomed culture dishes (MatTek Corporation) 48 hr before the experiments. Cells were transfected 24 hr prior to imaging. Per 35 mm culture dish, 200 ng DNA was used for mGsi and Nb33, 300 ng DNA was used for GRK2 constructs and 1.2 \u03bcg DNA was used for receptor constructs.\n\n### cDNA constructs\n\nGRK2-EGFP and GRK2-pmApple were created by amplifying murine GRK2 and GFP or pmApple DNA by PCR and inserting GRK2 and the respective fluorescent protein using In-Fusion cloning into pCAGGS-SE cut with KpnI and EcoRI. Super ecliptic pHluorin (SEP)-KOR was generated by PCR amplification of SEP and KOR, and insertion using In-Fusion cloning into pCAGGS-SE cut with KpnI and EcoRI. ssfKOR-TPD was generated by In-Fusion cloning of three PCR fragments that cover ssfKOR and introduce mutations S356A, T357A, T363A, and S369A.\n\n### Live cell total internal reflection fluorescence microscopy (TIR-FM)\n\nLive cell image series measuring protein recruitment to the plasma membrane were performed at 37\u00b0C using a Nikon Ti-E microscope equipped for through-the-objective TIR-FM with a temperature-, humidity- and CO2-controlled chamber (Okolab), objective heater, perfect focus system, and an Andor DU897 EMCCD camera. Images were obtained with a 100 \u00d7 1.49 NA Apo TIRF objective (Nikon) with solid-state lasers of 488, 561 and 647 nm (Keysight Technologies). Before imaging, receptors at the cell surface were labelled with M1 monoclonal FLAG antibody (1:1,000) conjugated to Alexa647 dye for 10 min at 37\u00b0C. Cells were then washed and live imaged in HBS imaging solution (Hepes buffered saline (HBS) with 135 mM NaCl, 5 mM KCl, 0.4 mM MgCl2,1.8 mM CaCl2, 20 mM Hepes, 5 mM d-glucose adjusted to pH 7.4 and 300\u2013315 mOsmol/l). Agonists or antagonists were either added by bath application at concentrations indicated in the figure legends or by media perfusion. For the latter, an insert was 3D-printed and placed inside the imaging dish where it left a dead volume of about 300 \u03bcL. It was used to perfuse HBS imaging solution with agonists or without agonists (agonist washout) at concentrations indicated in the figure legends with a flow rate of 1.5 ml/min.\n\n### Cell treatments prior to live cell imaging\n\nTo cluster receptors in the plasma membrane, cells transfected with SEP\u2013KOR were treated with a polyclonal rabbit anti-GFP antibody (1:100) for 15 min at 37\u00b0C. Cells were then washed and imaged live in HBS imaging solution. To inhibit GRK2/3, cells were pre-incubated with Compound101 (30 \u03bcM) for 15 min at 37\u00b0C and Compound101 was present throughout the imaging experiment. To inhibit KOR coupling to Gai/o, cells were treated with PTX (100 ng/mL) for 16 hr and PTX was present throughout the imaging experiment.\n\n### Agonist concentration dependence of protein recruitment\n\nFor probing protein recruitment to the plasma membrane, HEK293 cells co-expressing the cytosolic protein of interest (mGsi, Nb33, or GRK2) and MOR or KOR were imaged using TIR-FM. Cells were treated with increasing concentrations of agonist (bath application) and imaged at a frame rate of 0.2/s (total movie length 6\u20138 min). Protein intensity during time lapse series was measured using ImageJ. If indicated, values were normalized between 0 (before agonist) and 1 (10 \u03bcM reference agonist). Regression curves with Hill slope of 1 were fit using Prism 8.\n\n### Quantitative image analysis\n\nAll quantitative image analysis was performed on unprocessed images using MATLAB (MathWorks, R2014b) or ImageJ (2.0.0). For quantifying GRK2-mCherry recruitment to the plasma membrane and receptor clusters, we used a custom written MATLAB script. In brief, a polygon was drawn on the TIR-FM image to encompass the cell of interest. Then, a mask of the receptor clusters was generated by thresholding the SEP-KOR signal within the polygon. The average GRK2-mCherry fluorescence was measured within the cluster mask (KOR clusters) and outside of the mask (membrane) of the polygon, allowing to calculate the ratio. Quantification was performed in cells imaged before (t\u00a0=\u00a00) and after (t\u00a0=\u00a01\u20132 min) agonist addition.\n\n### Statistics\n\nQuantification of data are presented as mean\u00a0\u00b1\u00a0standard error of the mean (SEM) or standard deviation of the mean\u00a0(SD)\u00a0based on at least three biologically independent experiments with the precise number indicated in the figure legends. Statistical analysis was performed using Prism (8.1.1, GraphPad) and using paired or unpaired two tailed Student\u2019s t test.\n",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "7e0e321c-fcc6-4c1b-a4bd-4a31488dcc30",
+      "submission_id": "2832b6ca-8368-446d-bbad-91db16b79035",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54208.sa1](https://doi.org/10.7554/eLife.54208.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript examines agonist selective recruitment of engineered molecules directly to opioid receptors, both kappa and mu subtypes. The two engineered molecules, Nb33 and mGsi, have been previously well characterized and are used as surrogates for GRK and G-beta-gamma proteins. The results show that different opioid agonists differentially recruit the receptor association of the two sensor molecules independently of downstream signaling. These results are of considerable interest and constitute a major advance in our ability to understand GPCR signalling.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Agonist-selective recruitment of engineered protein probes and of GRK2 by opioid receptors in living cells\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Volker D\u00f6tsch as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: John T Williams (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript is well written and the work well executed, with many controls reported. Only one minor comment was raised during the discussion.\n\nThe only further and useful addition would be a consideration of the proposed structural changes induced by the different agonists in the Discussion section. Since crystal structures are known, some speculation about the differently activated states would add a mechanistic/structural component to the manuscript.\n",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b02998fe-a4cf-4a7a-9ede-026820dc78cc",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C1",
+      "claim": "G protein-coupled receptors (GPCRs) signal through allostery.",
+      "claim_type": "EXPLICIT",
+      "source": "G protein-coupled receptors (GPCRs) signal through allostery, and it is increasingly clear that chemically distinct agonists can produce different receptor-based effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract and is supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "444ca57f-2072-41f0-aed6-e8c441782f21",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C2",
+      "claim": "Chemically distinct agonists can produce different receptor-based effects.",
+      "claim_type": "EXPLICIT",
+      "source": "G protein-coupled receptors (GPCRs) signal through allostery, and it is increasingly clear that chemically distinct agonists can produce different receptor-based effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an increasingly clear observation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "719aff2b-b7de-4c10-adb3-0d1aa390c4be",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C3",
+      "claim": "Different agonists drive GPCRs to engage different cytoplasmic proteins in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the underlying hypothesis - that different agonists drive GPCRs to engage different cytoplasmic proteins in living cells - remains untested due to the complexity of readouts through which receptor-proximal interactions are typically inferred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data demonstrating differential recruitment of biosensors and GRK2 by different agonists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "7c33978b-68b6-438c-8f92-802ede9e2b2a",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C4",
+      "claim": "GPCR-interacting biosensors can be disconnected from endogenous transduction mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe a cell-based assay to overcome this challenge, based on GPCR-interacting biosensors that are disconnected from endogenous transduction mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the use of engineered proteins (Nb33 and mGsi) that bind activated receptors but are not known to engage other cellular proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "4f234c4d-f821-4f9d-898a-57e6a3aaa3de",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C5",
+      "claim": "Chemically distinct opioid ligands produce differences in biosensor recruitment in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on opioid receptors, we directly demonstrate differences between biosensor recruitment produced by chemically distinct opioid ligands in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents TIR-FM data showing differential recruitment of mGsi and Nb33 by various opioid agonists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "09e3fc85-4459-47fe-99ce-980b73ce3370",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C6",
+      "claim": "Selective recruitment applies to GRK2 through discrete interactions with receptors or with G protein beta-gamma subunits which are differentially promoted by agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "We then show that selective recruitment applies to GRK2, a biologically relevant GPCR regulator, through discrete interactions of GRK2 with receptors or with G protein beta-gamma subunits which are differentially promoted by agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing that DynA promotes both modes of GRK2 recruitment while ET only promotes recruitment via G beta-gamma.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "2a7c4931-502c-443b-ae66-18f56276bc4e",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C7",
+      "claim": "GPCRs are conformationally flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the past decade an expanded view has taken hold, supported by accumulating in vitro evidence that GPCRs are conformationally flexible (Lohse and Hofmann, 2015; Mahoney and Sunahara, 2016; Nygaard et al., 2013; Weis and Kobilka, 2018; Wingler et al., 2019) and a confluence of cell biological and in vivo evidence supporting the existence of functionally selective agonist effects (Smith et al., 2018; Urban et al., 2007; Williams et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "55464e43-88cc-44dc-b132-fbde937ecde6",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C8",
+      "claim": "Functionally selective agonist effects exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the past decade an expanded view has taken hold, supported by accumulating in vitro evidence that GPCRs are conformationally flexible (Lohse and Hofmann, 2015; Mahoney and Sunahara, 2016; Nygaard et al., 2013; Weis and Kobilka, 2018; Wingler et al., 2019) and a confluence of cell biological and in vivo evidence supporting the existence of functionally selective agonist effects (Smith et al., 2018; Urban et al., 2007; Williams et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to cell biological and in vivo studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "fc7bcfd0-7391-4aef-91a9-8ff92ced36fb",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C9",
+      "claim": "Agonists have the potential to promote GPCRs to selectively recruit one transducer or regulator protein over another.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this still-evolving view, agonists have the potential to promote GPCRs to selectively recruit one transducer or regulator protein over another, introducing bias into the signaling cascade at a receptor-proximal level that is either propagated downstream or eliminated during intermediate transduction steps (Lau et al., 2011; Tsvetanova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a theoretical view supported by citations and is experimentally tested in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "6c3a24e6-59a8-41a0-8a0e-a70b19d1c1b8",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C10",
+      "claim": "Opioid receptors can be activated by diverse peptide and non-peptide agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Interest in selective agonist effects at these GPCRs dates back to the initial demonstration that opioid receptors can be activated by diverse peptide and non-peptide agonists (Kosterlitz and Hughes, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to early work on opioid receptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "413feabf-44c7-4da0-ae49-cfde35bc544a",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C11",
+      "claim": "An agonist-induced state of opioid receptors in neuroblastoma cells discriminates between opioid peptides and opiate alkaloids.",
+      "claim_type": "EXPLICIT",
+      "source": "Early experimental evidence for such selectivity among ligands emerged from the observation of an agonist-induced state of opioid receptors in neuroblastoma cells that discriminates between opioid peptides and opiate alkaloids (Von Zastrow et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "83df1e4e-09f2-449d-9b2e-407abe5d3d05",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C12",
+      "claim": "Agonist-selective control of opioid receptor endocytosis has been demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "This was followed by the demonstration of agonist-selective control of opioid receptor endocytosis, leading to the identification of functional selectivity among agonists defined by differences in relative ability to drive receptor engagement of G protein relative to beta-arrestin-dependent cellular pathways (Keith et al., 1998; Keith et al., 1996; Whistler et al., 1999; Whistler and von Zastrow, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "ef72b9a6-ba45-4c28-8ddd-84370bf700b3",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C13",
+      "claim": "Selective protein recruitment by GPCRs in intact cells remains largely calculated rather than directly observed.",
+      "claim_type": "EXPLICIT",
+      "source": "First, selective protein recruitment by GPCRs in intact cells remains largely calculated rather than directly observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a knowledge gap that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "3f149542-a21d-492f-af93-ab727c95feb6",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C14",
+      "claim": "The understanding of receptor-proximal agonist bias is inherently limited by assumptions of the model used to calculate it.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the understanding of receptor-proximal agonist bias is inherently limited by assumptions of the model used to calculate it (Kenakin, 2018; Klein Herenbrink et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations discussing limitations of operational models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "977a0e21-b438-4ad8-bdc3-a50aee53a9af",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C15",
+      "claim": "Significant challenges remain in reliably assessing selectivity of receptor-proximal protein recruitment based on downstream cell-based readouts.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, and despite intense efforts motivated by interest in the therapeutic impact of biased agonist effects at opioid receptors (Johnson et al., 2017; Schmid et al., 2017; Whistler et al., 1999), significant challenges remain in reliably assessing selectivity of receptor-proximal protein recruitment based on downstream cell-based readouts (Conibear and Kelly, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation discussing challenges in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "c3f4d30d-23ab-4017-904c-8ba18cfa6578",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C16",
+      "claim": "Beta-arrestin binding to GPCRs involves multiple biochemical steps.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, multiple methods have been developed to detect GPCR interaction with beta-arrestins in intact cells (Chen et al., 2012; Kim et al., 2017). However, this binding involves multiple biochemical steps and, in particular, it typically requires the receptor to undergo prior agonist-induced phosphorylation (Eichel et al., 2018; Gurevich et al., 1995; Thomsen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on beta-arrestin recruitment.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "ddc24f10-0f7f-4cb2-b892-fe966ad41de5",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C17",
+      "claim": "Beta-arrestin binding to GPCRs typically requires the receptor to undergo prior agonist-induced phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this binding involves multiple biochemical steps and, in particular, it typically requires the receptor to undergo prior agonist-induced phosphorylation (Eichel et al., 2018; Gurevich et al., 1995; Thomsen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on GPCR phosphorylation and beta-arrestin recruitment.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "39cbe4ed-dd95-444d-b6c3-e616fedd04c4",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C18",
+      "claim": "Full interaction of opioid receptors with beta-arrestin requires the receptor to be phosphorylated at multiple sites in the cytoplasmic tail.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been clearly established for opioid receptors (Whistler and von Zastrow, 1998; Zhang et al., 1998), for which full interaction with beta-arrestin requires the receptor to be phosphorylated at multiple sites in the cytoplasmic tail through a defined sequence of agonist-dependent reactions which are catalyzed by distinct GPCR kinase (GRK) isoforms (Chiu et al., 2017; Just et al., 2013; Lau et al., 2011; Miess et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on opioid receptor phosphorylation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "525ea374-8495-4257-ae48-960406ca4837",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C19",
+      "claim": "Opioid receptor phosphorylation occurs through a defined sequence of agonist-dependent reactions catalyzed by distinct GRK isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been clearly established for opioid receptors (Whistler and von Zastrow, 1998; Zhang et al., 1998), for which full interaction with beta-arrestin requires the receptor to be phosphorylated at multiple sites in the cytoplasmic tail through a defined sequence of agonist-dependent reactions which are catalyzed by distinct GPCR kinase (GRK) isoforms (Chiu et al., 2017; Just et al., 2013; Lau et al., 2011; Miess et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on GRK-mediated phosphorylation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "6e417d59-f5e2-434c-a076-b4797b8e0cd4",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C20",
+      "claim": "Two agonist-activated opioid receptor complexes have been described in structural detail: one bound to a nucleotide-free G protein heterotrimer and another to an active state-stabilizing nanobody.",
+      "claim_type": "EXPLICIT",
+      "source": "Two agonist-activated opioid receptor complexes have been described in structural detail (Figure 1A), one bound to a nucleotide-free G protein heterotrimer and another to an active state-stabilizing nanobody (Nb) (Huang et al., 2015; Koehl et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to structural studies and Figure 1A shows the structures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "fee3edb7-859f-4266-a796-e025ca97bc2e",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C21",
+      "claim": "The receptor conformation in the G protein-bound complex is similar but not identical to the nanobody-bound complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The receptor conformation resolved in each complex is similar but not identical, with Nb and G protein interactions involving distinct molecular contacts on cytoplasmic domains of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural data cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "e6917a0c-a305-4ab6-bde2-034e0826cb41",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C22",
+      "claim": "Nb and G protein interactions involve distinct molecular contacts on cytoplasmic domains of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The receptor conformation resolved in each complex is similar but not identical, with Nb and G protein interactions involving distinct molecular contacts on cytoplasmic domains of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural data cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "8f9b7c55-c0fa-4695-b32a-d0aee9eb9053",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C23",
+      "claim": "Nanobodies are inherently orthogonal to intracellular biochemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "Nbs are inherently orthogonal to intracellular biochemistry but heterotrimeric G proteins engage multiple cellular proteins in addition to activated receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of nanobodies based on their nature as engineered proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "f9b56fed-2cb4-4914-a7c6-10f1e62c697b",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C24",
+      "claim": "Heterotrimeric G proteins engage multiple cellular proteins in addition to activated receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Nbs are inherently orthogonal to intracellular biochemistry but heterotrimeric G proteins engage multiple cellular proteins in addition to activated receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about G protein signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "a4024e50-b358-49e5-a995-09cafc0666cd",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C25",
+      "claim": "Mini-G proteins are engineered versions of the Ras-like domain of G protein alpha subunits which bind directly to activated GPCRs but are not known to engage other cellular proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus we focused on mini-G (mG) proteins, engineered versions of the Ras-like domain of G protein alpha subunits which bind directly to activated GPCRs but are not known to engage other cellular proteins (Nehm\u00e9 et al., 2017; Wan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies describing mini-G proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "2fded3b1-34c3-4972-88aa-37f82e1d6073",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C26",
+      "claim": "mGsi is derived from the Ras-like domain of Gs alpha with nine residues at the distal C-terminus replaced by corresponding residues from Gi alpha1.",
+      "claim_type": "EXPLICIT",
+      "source": "For a mG probe we chose mGsi, derived from the Ras-like domain of Gs alpha but with nine residues at the distal C-terminus replaced by the corresponding residues from Gi alpha1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the mGsi probe used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "ca009f87-566f-4e54-9c00-60df5c65573c",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C27",
+      "claim": "The C-terminal residues of G protein alpha subunits form a major determinant of G protein coupling specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "These C-terminal residues form a major determinant of G protein coupling specificity (Conklin et al., 1993) by folding into a helical structure (alpha-5 helix) that occupies the agonist-activated GPCR core (Carpenter and Tate, 2017; Koehl et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on G protein coupling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "804d07b7-ea78-4201-b0f0-2c3442c8e585",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C28",
+      "claim": "The C-terminal residues of G protein alpha subunits fold into a helical structure (alpha-5 helix) that occupies the agonist-activated GPCR core.",
+      "claim_type": "EXPLICIT",
+      "source": "These C-terminal residues form a major determinant of G protein coupling specificity (Conklin et al., 1993) by folding into a helical structure (alpha-5 helix) that occupies the agonist-activated GPCR core (Carpenter and Tate, 2017; Koehl et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "ea1e58fa-7359-47de-9e96-e917136d9e05",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C29",
+      "claim": "Gs couples poorly to opioid receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Gs couples poorly to opioid receptors, we reasoned that a sensor derived from mGsi would primarily detect this interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about opioid receptor signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "2b8b9927-5710-47df-b2e9-186b5d4f09eb",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C30",
+      "claim": "Nb33 was previously used to detect activated mu and delta opioid receptors in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For a Nb probe we selected Nb33, previously used to detect activated mu (MOR) and delta (DOR) opioid receptors in living cells (Stoeber et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "a5a110ab-9be7-4a4c-9511-fbb174a0c875",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C31",
+      "claim": "Nb33 shares receptor contact residues with Nb39.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb33 shares receptor contact residues with Nb39, a close analog that has been resolved at high resolution in complex with activated MOR (Huang et al., 2015) and in a similar complex with activated kappa opioid receptor (KOR) (Che et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "39093f02-7682-4bf5-9c5d-2c0698dac22b",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C32",
+      "claim": "Cytoplasmic residues contacted by Nb39 are largely distinct from those engaged by the G protein alpha-5 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Because cytoplasmic residues contacted by the Nb in these structures are largely distinct from those engaged by the G protein alpha-5 helix, we reasoned that the Nb-derived sensor has the potential to provide different allosteric information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural data cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "72bd4aa9-62b9-4afa-9fde-fb230139a152",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C33",
+      "claim": "HEK293 cells do not express endogenous opioid receptors or other opioid ligand binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, HEK293 cells do not express endogenous opioid receptors or other opioid ligand binding sites, thereby providing a null genetic background on which to directly examine protein probe recruitment mediated specifically by the co-expressed receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HEK293 cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "e1f8c8ec-4b0e-4517-9b80-4b876e018e32",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C34",
+      "claim": "Dynorphin A produces rapid and robust recruitment of mGsi by KOR.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed rapid and robust recruitment of mGsi by KOR upon application of the kappa-selective peptide agonist Dynorphin A (DynA, Dynorphin 1\u201317).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by TIR-FM data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "b9191ef6-626c-456b-965f-775337775093",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C35",
+      "claim": "Recruitment of mGsi by KOR is reversible upon application of the antagonist 5'GNTI.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of mGsi was reversible because application of the high-affinity competitive KOR antagonist 5'GNTI resulted in rapid redistribution of the biosensor back to the cytoplasm (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "9b6ee1d3-7645-430e-9dcc-6833b68c0e7c",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C36",
+      "claim": "mGs is not detectably recruited in response to KOR activation by DynA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mGs was not detectably recruited in response to KOR activation by DynA using the same assay (Figure 1F), verifying assay specificity and that mGsi recruitment is driven primarily by the Gi-derived distal C-terminus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "6c6c9474-1798-4d40-bc45-af1ae93dbfaf",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C37",
+      "claim": "mGsi recruitment is driven primarily by the Gi-derived distal C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mGs was not detectably recruited in response to KOR activation by DynA using the same assay (Figure 1F), verifying assay specificity and that mGsi recruitment is driven primarily by the Gi-derived distal C-terminus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the comparison of mGs and mGsi recruitment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "9c3b4914-a6b8-48a8-b113-46b0eb69b6e5",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C38",
+      "claim": "Agonist-induced recruitment of mGsi occurs separately from a change in surface expression of KOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we verified that agonist-induced recruitment of mGsi occurred separately from a change in surface expression of KOR, which was monitored in parallel using anti-Flag antibody (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by parallel monitoring of KOR surface expression in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "7ae37835-35b4-4db8-be5d-d668b085986e",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C39",
+      "claim": "Nb33 is rapidly recruited in response to KOR activation by DynA.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb33 was also rapidly recruited in response to KOR activation by DynA using the same experimental protocol, and this recruitment was also reversible upon antagonist application and occurred without a detectable change in surface receptor expression (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "074ed511-e403-4250-bcde-0efc5ecb446c",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C40",
+      "claim": "Nb33 recruitment by KOR is reversible upon antagonist application.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb33 was also rapidly recruited in response to KOR activation by DynA using the same experimental protocol, and this recruitment was also reversible upon antagonist application and occurred without a detectable change in surface receptor expression (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "6a1344e3-9364-41a7-adbb-20c45c038764",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C41",
+      "claim": "Both mGsi and Nb33 produce a reversible recruitment signal that is sufficiently robust and fast (t1/2 < 30 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, both mGsi and Nb33 can be used as biosensors of ligand-dependent recruitment by KOR in living cells using the TIR-FM assay, and both sensors produce a reversible recruitment signal that is sufficiently robust and fast (t1/2< 30 s) to enable reliable detection of protein recruitment without possible complications of later receptor trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the kinetic data shown in Figures 1D and 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "dccdc887-454e-48e9-8719-29a975fb35a7",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C42",
+      "claim": "U69593 and U50488 are non-peptide KOR full agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested two non-peptide KOR full agonists, U69593 (U69) and U50488 (U50).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established pharmacology of these compounds, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "112d354a-22e5-4c4d-a7b2-a9eb0e56c611",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C43",
+      "claim": "Both Nb33 and mGsi are robustly recruited in a concentration-dependent manner in response to DynA, U69, and U50.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Nb33 and mGsi were robustly recruited in a concentration-dependent manner in response to DynA and both of the non-peptide full agonist drugs (Figure 1I\u2013K), consistent with the previously established pharmacology of these compounds (DiMattio et al., 2015), but we also noted that the concentration-response relationship for mGsi recruitment was consistently left-shifted relative to Nb33.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by concentration-response curves in Figures 1I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "4fa8e65a-a907-473b-ba97-71ae8c00c038",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C44",
+      "claim": "The concentration-response relationship for mGsi recruitment by KOR is consistently left-shifted relative to Nb33.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Nb33 and mGsi were robustly recruited in a concentration-dependent manner in response to DynA and both of the non-peptide full agonist drugs (Figure 1I\u2013K), consistent with the previously established pharmacology of these compounds (DiMattio et al., 2015), but we also noted that the concentration-response relationship for mGsi recruitment was consistently left-shifted relative to Nb33.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by concentration-response curves in Figures 1I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "e14924fd-33f8-4330-ae13-58f606f949af",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C45",
+      "claim": "Etorphine is an opiate alkaloid drug that is structurally distinct from opioid peptides as well as from U50 and U69.",
+      "claim_type": "EXPLICIT",
+      "source": "ET is an opiate alkaloid drug that is structurally distinct from opioid peptides as well as from U50 and U69.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the chemical structure of etorphine.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "a550f564-2bab-44c8-9517-8fe2a01823a8",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C46",
+      "claim": "Etorphine efficaciously promotes G protein activation and signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "ET is an opiate alkaloid drug that is structurally distinct from opioid peptides as well as from U50 and U69. ET efficaciously promotes G protein activation and signaling but has long been recognized to drive KOR internalization and phosphorylation poorly, supporting its classification as a G protein-biased agonist by operational criteria (Chu et al., 1997; DiMattio et al., 2015; Jordan et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "7e04102c-1e60-481f-aa98-f7d036879da2",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C47",
+      "claim": "Etorphine drives KOR internalization and phosphorylation poorly.",
+      "claim_type": "EXPLICIT",
+      "source": "ET efficaciously promotes G protein activation and signaling but has long been recognized to drive KOR internalization and phosphorylation poorly, supporting its classification as a G protein-biased agonist by operational criteria (Chu et al., 1997; DiMattio et al., 2015; Jordan et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "3bc92567-4ecf-45f2-adc5-1fa669035732",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C48",
+      "claim": "Etorphine is classified as a G protein-biased agonist by operational criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "ET efficaciously promotes G protein activation and signaling but has long been recognized to drive KOR internalization and phosphorylation poorly, supporting its classification as a G protein-biased agonist by operational criteria (Chu et al., 1997; DiMattio et al., 2015; Jordan et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "130387b8-1a7b-4423-ac33-9a1a4fe3e844",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C49",
+      "claim": "Etorphine behaves as a potent but partial agonist in the mGsi recruitment assay, producing a maximum recruitment response reaching 67% of that produced by DynA.",
+      "claim_type": "EXPLICIT",
+      "source": "ET behaved as a potent but partial agonist in the mGsi recruitment assay, producing a maximum biosensor recruitment response reaching 67% of that produced by DynA (Figure 2A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by concentration-response data in Figures 2A and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "e7fa5813-d637-4628-aa58-96c1662f0291",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C50",
+      "claim": "Etorphine produces little or no recruitment of Nb33 by KOR despite a robust response to DynA.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, ET produced little or no recruitment of Nb33 despite a robust response to DynA verified in each assay and in the same cells (Figure 2B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM data in Figures 2B and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "afce6905-a952-49bc-9edb-5d4c74c292b0",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C51",
+      "claim": "Etorphine fails to recruit Nb33 even at very high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of Nb33 recruitment was evident even at very high concentrations of ET (Figure 2B and C), in contrast to mGsi that was potently recruited (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by concentration-response data in Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "bab783a2-dec8-4b79-a516-34532e6a611b",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C52",
+      "claim": "Selective recruitment of mGsi relative to Nb33 by etorphine is observed when the biosensors are co-expressed and imaged in parallel in the same cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further verifying this difference, selective recruitment of mGsi relative to Nb33 was observed when the biosensors were tagged with distinct fluorophores, co-expressed, and imaged in parallel in the same cells (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dual-color TIR-FM data in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "30c7068e-53b5-4a23-8c29-309dd6586ba7",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C53",
+      "claim": "mG and Nb probes can distinguish receptor-proximal agonist effects in intact cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that mG and Nb probes can distinguish receptor-proximal agonist effects in intact cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential recruitment data for etorphine vs. DynA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "0fad7771-d707-4e33-a0c1-92905e5f9472",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C54",
+      "claim": "Agonist-induced internalization of KOR requires multi-site phosphorylation on its cytoplasmic tail.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, because agonist-induced internalization of KOR requires multi-site phosphorylation on its cytoplasmic tail, and ET is known to stimulate this phosphorylation less strongly than DynA (Chen et al., 2016), we considered the possibility that differential biosensor recruitment occurs secondarily to differential phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "bb896ffd-552d-4782-bb6d-a8b66bd9a393",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C55",
+      "claim": "Etorphine stimulates KOR phosphorylation less strongly than DynA.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, because agonist-induced internalization of KOR requires multi-site phosphorylation on its cytoplasmic tail, and ET is known to stimulate this phosphorylation less strongly than DynA (Chen et al., 2016), we considered the possibility that differential biosensor recruitment occurs secondarily to differential phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "11ac2993-3309-44ad-9eb5-69939c9e9841",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C56",
+      "claim": "The pronounced difference in mGsi relative to Nb33 recruitment by etorphine is still observed using KOR-TPD (a mutant lacking all relevant phosphorylation sites).",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we measured biosensor recruitment by a mutant KOR lacking all relevant phosphorylation sites in the cytoplasmic tail (KOR-TPD for 'total phosphorylation defective', Figure 2H). The pronounced difference in mGsi relative to Nb33 recruitment was still observed (Figure 2I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data in Figures 2I and 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "eec096a8-b983-4480-a369-c4f2057ad7ec",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C57",
+      "claim": "Selective probe recruitment by wild type KOR is not detectably perturbed in the presence of Compound101, a GRK2/3 inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Independently verifying this, selective probe recruitment by wild type KOR was not detectably perturbed in the presence of Compound101 (Figure 2K), a chemical inhibitor of GRK2/3 activity known to strongly reduce KOR phosphorylation in HEK293 cells (Chiu et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "02d497f0-501d-4ea1-8430-846292f8c1b8",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C58",
+      "claim": "Selective recruitment of mG relative to Nb probes occurs as a primary consequence of allosteric protein selection at the receptor, rather than a secondary effect of differential phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results support the hypothesis that selective recruitment of mG relative to Nb probes occurs as a primary consequence of allosteric protein selection at the receptor, rather than a secondary effect of differential phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the KOR-TPD and Compound101 experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "e8b9e2a0-eb2c-494c-8960-e1035cdc043f",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C59",
+      "claim": "Nb33 is recruited by agonist-activated MORs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nb33 is already known to be recruited by agonist-activated MORs (Stoeber et al., 2018), and we verified that this is also the case for mGsi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work and verified by data in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "095f4dc7-5b14-45a6-9d76-b0389d08e069",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C60",
+      "claim": "DAMGO produces rapid and robust recruitment of mGsi by MOR that is rapidly reversed by naloxone.",
+      "claim_type": "EXPLICIT",
+      "source": "DAMGO, a peptide full agonist of MOR, produced rapid and robust recruitment of mGsi that was rapidly reversed by the competitive antagonist naloxone (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM data in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "bb6d3f78-f966-4be8-8fe8-0c22c9f3fb76",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C61",
+      "claim": "The concentration-response relationship for recruitment of mGsi by DAMGO is left-shifted relative to Nb33.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what was observed for recruitment of the engineered protein probes by KOR, the concentration-response relationship for recruitment of mGsi by DAMGO was left-shifted relative to Nb33 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by concentration-response data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "c526a956-2f8b-46fb-ac9b-bdc217a9e152",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C62",
+      "claim": "Etorphine promotes recruitment of both mGsi and Nb33 by MOR to the same maximum degree as DAMGO.",
+      "claim_type": "EXPLICIT",
+      "source": "ET (also an agonist of MOR) promoted recruitment of both probes by MOR, and to the same maximum degree when compared to the peptide full agonist (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by concentration-response data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "5ddeca7b-0abd-47d0-9aed-e450d00b6070",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C63",
+      "claim": "Differential recruitment of engineered protein probes by opioid receptors is both agonist-dependent and receptor subtype-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with partial recruitment of mGsi and no detectable recruitment of Nb33 by KOR (Figure 2), indicating that differential recruitment of the engineered protein probes by opioid receptors is both agonist-dependent and receptor subtype-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from comparing etorphine effects on KOR vs. MOR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "ba77e324-fbf5-492d-82c5-82d44c8400e8",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C64",
+      "claim": "Morphine and PZM21 are partial agonists with respect to assays of G protein activation or signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these non-peptide drugs are partial agonists with respect to assays of G protein activation or signaling, but each is derived from a different chemical scaffold and differs in degree of bias estimated using a beta-arrestin recruitment assay (Manglik et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "a1fc2785-bd26-4a55-91db-c9c25827c786",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C65",
+      "claim": "Morphine and PZM21 differ in degree of bias estimated using a beta-arrestin recruitment assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these non-peptide drugs are partial agonists with respect to assays of G protein activation or signaling, but each is derived from a different chemical scaffold and differs in degree of bias estimated using a beta-arrestin recruitment assay (Manglik et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "48ae4164-ee68-40d7-965d-760c7ac6486d",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C66",
+      "claim": "Both morphine and PZM21 produce partial recruitment of mGsi as well as Nb33 by MOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same experimental protocol, and comparing recruitment promoted by the test ligand relative to the peptide full agonist (DAMGO) reference, both morphine and PZM21 produced partial recruitment of mGsi as well as Nb33 (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by concentration-response data in Figures 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "29e55fc8-3444-4128-9b5b-bce1cda3bef8",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C67",
+      "claim": "Morphine and PZM21 are similar in the degree of mGsi recruitment that they produce at saturating concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas morphine and PZM21 were similar in the degree of mGsi recruitment that they produced at saturating concentration, morphine was found to be significantly more efficacious than PZM21 in recruiting Nb33.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by concentration-response data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "32b89ee8-0339-4b8f-b757-29a59c91f09c",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C68",
+      "claim": "Morphine is significantly more efficacious than PZM21 in recruiting Nb33 to MOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas morphine and PZM21 were similar in the degree of mGsi recruitment that they produced at saturating concentration, morphine was found to be significantly more efficacious than PZM21 in recruiting Nb33.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by concentration-response data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "14a12b4e-d25e-4774-84b6-2ebea0b715fd",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C69",
+      "claim": "There is a range of selective protein recruitment effects among chemically diverse MOR partial agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results reveal a range of selective protein recruitment effects among chemically diverse MOR partial agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential recruitment data for morphine and PZM21.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "b3edfe73-8f41-4168-9529-1b0542e98928",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C70",
+      "claim": "Mitragynine pseudoindoxyl (MP) is a semi-synthetic natural product and MOR partial agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "We found evidence for this when evaluating another chemically distinct MOR partial agonist, the semi-synthetic natural product mitragynine pseudoindoxyl (MP) (V\u00e1radi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "bf69c2a3-11a8-462c-a28a-d02d635d4adc",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C71",
+      "claim": "MP promotes mGsi recruitment by MOR to a significantly reduced maximal degree relative to DAMGO.",
+      "claim_type": "EXPLICIT",
+      "source": "With this modification, MP was verified to indeed promote mGsi recruitment by MOR, but to a significantly reduced maximal degree relative to DAMGO and without promoting detectable recruitment of Nb33 (Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by concentration-response data in Figures 3G and 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "90d68032-a2a7-4b7f-9b29-4d024be2f274",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C72",
+      "claim": "MP does not promote detectable recruitment of Nb33 to MOR.",
+      "claim_type": "EXPLICIT",
+      "source": "With this modification, MP was verified to indeed promote mGsi recruitment by MOR, but to a significantly reduced maximal degree relative to DAMGO and without promoting detectable recruitment of Nb33 (Figure 3G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by concentration-response data in Figures 3G and 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "dc94c2c5-5b13-445d-8097-0c7b94ec3260",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C73",
+      "claim": "The ability to promote selective protein recruitment is widespread among chemically diverse opioid agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "They further suggest that the ability to promote selective protein recruitment is widespread among chemically diverse opioid agonists (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the comprehensive analysis of multiple agonists shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "1b247ba5-acdb-4b9f-81ce-e95955962b2e",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C74",
+      "claim": "Some non-peptide agonists recruit both protein probes to a similar maximal degree as the reference peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Some non-peptide agonists were indistinguishable from the reference peptide by this analysis, recruiting both protein probes to a similar maximal degree (corresponding to an 'I.A.' value of 1 for both probes), but others departed from the diagonal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the plot in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "faf4db95-d35f-436c-bf36-930d8a0e785f",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C75",
+      "claim": "The observed selectivity of protein recruitment is not consistent with the traditional concept of partial agonism based on a unitary agonist-induced receptor 'on' state.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not consistent with the traditional concept of partial agonism based on a unitary agonist-induced receptor 'on' state, which would predict the recruitment responses elicited by all agonists to fall along the diagonal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the deviation of data points from the diagonal in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "f73d8dcb-e459-4df1-bd3f-4b6f8b5d8ee9",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C76",
+      "claim": "Opioid receptors are flexibly activated, enabling them to selectively recruit one interaction probe over another in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the present results support the view that opioid receptors are more flexibly activated, enabling them to selectively recruit one interaction probe over another in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential recruitment data across multiple agonists.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "3ad5d0a3-e128-4899-8f9b-f85666e0ab3d",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C77",
+      "claim": "GRK2 is important for generating agonist-selective patterns of multi-site phosphorylation in the MOR cytoplasmic tail.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on GRK2 because this kinase is known to be important for generating agonist-selective patterns of multi-site phosphorylation in the MOR cytoplasmic tail, which convey biased effects downstream from the receptor by distinguishing engagement of beta-arrestins and regulating receptor entry into the endocytic network (Just et al., 2013; Lau et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "0ee409ec-c497-4d44-807d-fcf113e360f7",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C78",
+      "claim": "Agonist-selective patterns of MOR phosphorylation convey biased effects downstream by distinguishing engagement of beta-arrestins and regulating receptor entry into the endocytic network.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on GRK2 because this kinase is known to be important for generating agonist-selective patterns of multi-site phosphorylation in the MOR cytoplasmic tail, which convey biased effects downstream from the receptor by distinguishing engagement of beta-arrestins and regulating receptor entry into the endocytic network (Just et al., 2013; Lau et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "a77dc481-38ab-42ee-9e3b-0f65c7f42262",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C79",
+      "claim": "GRK2 is recruited by activated GPCRs through multiple interactions, including with the activated GPCR and with beta-gamma subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "We were also intrigued by GRK2 because it is recruited by activated GPCRs through multiple interactions, including with the activated GPCR and with beta-gamma subunits that are exposed on the inner membrane leaflet following activation of the G protein heterotrimer (DebBurman et al., 1995; Lodowski et al., 2003; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to prior work and illustrated in Figure 5A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "26aca565-c3bb-4573-acee-a70ecc39ab4d",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C80",
+      "claim": "DynA promotes rapid, concentration-dependent recruitment of GRK2 to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "DynA promoted rapid, concentration-dependent recruitment of GRK2 to the plasma membrane (Figure 5B) while ET, despite being highly potent, produced a degree of GRK2 recruitment clearly lower than that produced by DynA (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "7e6a8d01-a252-45c1-8711-bedde3037fcf",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C81",
+      "claim": "Etorphine produces a degree of GRK2 recruitment clearly lower than that produced by DynA.",
+      "claim_type": "EXPLICIT",
+      "source": "DynA promoted rapid, concentration-dependent recruitment of GRK2 to the plasma membrane (Figure 5B) while ET, despite being highly potent, produced a degree of GRK2 recruitment clearly lower than that produced by DynA (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM data in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "7b3915e4-23e8-4982-803d-e1e1069697af",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C82",
+      "claim": "The difference in GRK2 recruitment between etorphine and DynA is not a secondary effect of receptor phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference was not a secondary effect of receptor phosphorylation because ET also produced less maximal GRK2 recruitment than DynA using the phosphorylation-defective mutant KOR-TPD in place of KOR (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data in Figures 5E and 5F using KOR-TPD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "4b75726e-2f79-4bf5-afe1-5aeedeea37c0",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C83",
+      "claim": "Etorphine and DynA produce similarly strong recruitment of the isolated C-terminal PH domain from GRK2 that interacts with G beta-gamma.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ET promoted recruitment of full-length GRK2 less strongly than DynA, these agonists produced similarly strong recruitment of a probe corresponding to the isolated C-terminal PH domain from GRK2 that interacts with G beta-gamma (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM data in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "6d12d8a9-3785-4a0e-9c1a-0a104f0e1fdb",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C84",
+      "claim": "GRK2 binding to G beta-gamma subunits, enabled by G protein activation, is responsible for partial recruitment promoted by etorphine.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that GRK2 binding to G beta-gamma subunits, enabled by G protein activation triggered by either agonist, is responsible for partial recruitment promoted by ET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the GRK2 C-tail recruitment data in Figure 5G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "3448479b-15c2-413c-884b-f72e6899b9fa",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C85",
+      "claim": "Etorphine fails to produce detectable recruitment of GRK2 in cells pre-exposed to pertussis toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "We independently verified this conclusion by returning to assay of full length tagged GRK2, and testing the effect of blocking Gi activation by pre-exposing cells to pertussis toxin (PTX). In this condition, ET failed to produce any detectable recruitment of GRK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by TIR-FM data in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "fc5868fa-cf68-4949-8c5f-857beee6ab58",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C86",
+      "claim": "DynA still produces a significant GRK2 recruitment response in cells pre-exposed to pertussis toxin, but to a reduced degree relative to cells not exposed to pertussis toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as expected, DynA still produced a significant recruitment response in the same cells (Figure 5H), but to a reduced degree relative to the recruitment response elicited by DynA in cells not previously exposed to pertussis toxin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM data in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "6cad1d7f-9de8-4506-9366-12aee57b7281",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C87",
+      "claim": "Etorphine and DynA share the ability to promote GRK2 recruitment to the plasma membrane via binding G beta-gamma.",
+      "claim_type": "EXPLICIT",
+      "source": "The above results indicate that ET and DynA share the ability to promote GRK2 recruitment to the plasma membrane via binding G beta-gamma, and that DynA engages an additional mode of binding that is separate from the G protein and not shared with ET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the GRK2 C-tail and PTX experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "2d1cddc1-cdef-4d1a-adbd-f3105cf193ec",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C88",
+      "claim": "DynA engages an additional mode of GRK2 binding that is separate from the G protein and not shared with etorphine.",
+      "claim_type": "EXPLICIT",
+      "source": "The above results indicate that ET and DynA share the ability to promote GRK2 recruitment to the plasma membrane via binding G beta-gamma, and that DynA engages an additional mode of binding that is separate from the G protein and not shared with ET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential GRK2 recruitment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "d697c31e-83b0-4330-88bb-25d085745e8e",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C89",
+      "claim": "DynA specifically promotes accumulation of GRK2 at KOR-containing clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Within ~1 min after application of DynA, GRK2 specifically accumulated at the KOR-containing clusters (Figure 6B right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM images in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "740cc4e5-139f-40e4-b0d5-963870471d6e",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C90",
+      "claim": "Etorphine produces a diffuse increase in GRK2 fluorescence at the plasma membrane but no specific accumulation at KOR-containing clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, application of ET produced a diffuse increase in GRK2 fluorescence at the plasma membrane but no specific accumulation at KOR-containing clusters (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TIR-FM images in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "09cc9863-3c34-47da-b80a-70943eb06959",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C91",
+      "claim": "DynA promotes significant accumulation of GRK2 with receptors but etorphine does not.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the GRK2 intensity in KOR clusters relative to the surrounding plasma membrane verified significant accumulation of GRK2 with receptors promoted by DynA but not ET (Figure 6D), despite both agonists promoting diffuse membrane recruitment (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "120afc86-1f74-4f8e-b462-e4371e98f3eb",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C92",
+      "claim": "GRK2 engagement is driven by discrete biochemical modes which are differentially regulated by agonists: DynA and ET share the ability to promote GRK2 recruitment via receptor-activated G beta-gamma, but DynA additionally promotes GRK2 recruitment by binding directly to KOR.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support a model of GRK2 engagement driven by discrete biochemical modes which are differentially regulated by agonists: DynA and ET share the ability to promote GRK2 recruitment to the plasma membrane via receptor-activated G beta-gamma, but DynA is different from ET in its ability to additionally promote GRK2 recruitment by binding directly to KOR (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the model concluded from all GRK2 recruitment experiments and illustrated in Figure 6E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "872012b5-04c9-4ecd-95fb-4b38dd989e35",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C93",
+      "claim": "Agonists differ in relative ability to drive recruitment of engineered probes to opioid receptors in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that agonists differ in relative ability to drive recruitment of the engineered probes to opioid receptors in living cells, and then delineate how the principle of agonist-selective recruitment applies to GRK2 as a physiologically relevant regulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, demonstrated by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "c86f5419-71c8-4eaf-972b-9ba01291fca9",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C94",
+      "claim": "Selective recruitment of one cellular protein over another occurs in intact cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that selective recruitment of one cellular protein over another not only occurs in intact cells, but it is widespread and elicited by diverse agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the comprehensive analysis of multiple agonists and probes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "d58feee1-dc6a-44c9-84f4-8bd91297e185",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C95",
+      "claim": "All partial agonists examined promote mGsi recruitment more strongly than Nb33 when present at saturating concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "All partial agonists examined were found to promote mGsi recruitment more strongly than Nb33 when present at saturating concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the summary data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "f6fff54a-1900-4ab5-ac7a-ba07926e7c60",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C96",
+      "claim": "Concentration-response curves for mGsi relative to Nb33 recruitment by opioid receptors are left-shifted even for peptide full agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, concentration-response curves for mGsi relative to Nb33 recruitment by opioid receptors were left-shifted even for peptide full agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the concentration-response data in Figures 1 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "e424c19c-015f-48f9-83c2-f3c5fbc751ed",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C97",
+      "claim": "The present results provide clear biochemical evidence for discrete protein-engaged receptor states that can be selectively produced by diverse agonists in intact, living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The present results are fully consistent with this concept, and expand it by providing clear biochemical evidence for discrete protein-engaged receptor states that can be selectively produced by diverse agonists in the complex environment of intact, living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential recruitment data across multiple agonists and probes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "04e87c78-a17e-4982-8dd7-99da0259e342",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C98",
+      "claim": "The engineered interaction probes demonstrate an additional level of allosteric selection most simply.",
+      "claim_type": "EXPLICIT",
+      "source": "The engineered interaction probes that we focused on here demonstrate such an additional level of allosteric selection most simply, but our results delineating differential recruitment of GRK2 by receptors suggest that the same principle applies in a more complex manner to biologically relevant GPCR-interacting proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from comparing the engineered probe data with the GRK2 data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "22859d53-28a7-4a46-8405-2b11b925a855",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C99",
+      "claim": "The same principle of agonist-selective recruitment applies in a more complex manner to biologically relevant GPCR-interacting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The engineered interaction probes that we focused on here demonstrate such an additional level of allosteric selection most simply, but our results delineating differential recruitment of GRK2 by receptors suggest that the same principle applies in a more complex manner to biologically relevant GPCR-interacting proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the GRK2 recruitment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "691dd1fa-4b30-4fad-bf54-2af67985e866",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C100",
+      "claim": "It is likely that still more specificity exists in receptor-proximal protein recruitment beyond what was observed with the two probes used.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible, and we think likely, that still more specificity exists in receptor-proximal protein recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings with two probes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "e6891bb4-ec22-482a-aa9d-9f540b5ce058",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C101",
+      "claim": "The complexes responsible for agonist-selective protein recruitment must be distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "The present results clearly indicate that the complexes responsible for agonist-selective protein recruitment must be distinct, but leave unresolved the nature of the distinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential recruitment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "1899cf63-a74a-41a4-9d89-5897ee9e1548",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C102",
+      "claim": "Distinct allosteric complexes may reflect unique conformational ensembles of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that distinct allosteric complexes reflect unique conformational ensembles of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as a possible mechanism for the observed selectivity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "4278b1d2-d776-4b9c-b972-d3e05d4645b8",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C103",
+      "claim": "The precise conformation of MOR intracellular loop 3 (ICL3) differs between the Nb39-bound and Gi-bound structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Nb39 and Gi alpha stabilize an active MOR conformation in the intracellular domain; however, the precise conformation of the MOR intracellular loop 3 (ICL3) differs between the two structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of published structures.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "a062f1b7-0f7e-4146-b6b9-55480c6e6ca8",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C104",
+      "claim": "Differential recruitment of Nb33 and mGsi may reflect agonist-selective stabilization of distinct active receptor conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, differential recruitment of Nb33 and mGsi may reflect agonist-selective stabilization of distinct active receptor conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as a possible mechanism based on structural data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "3f71fe17-9ca7-413f-b29f-457b86b33b68",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C105",
+      "claim": "Agonists may promote receptors to adopt similar active conformations, and distinctions in the kinetics of sensor binding, sensor concentration, and/or sensor affinity contribute to differential recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, agonists may promote receptors to adopt similar active conformations, and distinctions in the kinetics of sensor binding, sensor concentration, and/or sensor affinity contribute to differential recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as an alternative mechanism for the observed selectivity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "f15fd020-d807-49e1-bf71-d65bcfa3107c",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C106",
+      "claim": "The orthogonal probes produce a time-invariant recruitment response within ~30 s after agonist application.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the orthogonal probes produce a time-invariant recruitment response within ~30 s after agonist application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the kinetic data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "ac693062-94c6-4e6b-9212-b86ce4430f64",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C107",
+      "claim": "The approach can be used as an end-point assay scalable to a drug screening platform.",
+      "claim_type": "EXPLICIT",
+      "source": "This enables the approach to be used as an end-point assay scalable to a drug screening platform, and we focused on steady state recruitment values in the present work for simplicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed based on the rapid and robust nature of the recruitment response.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "1483bfdd-54f3-4224-8d62-34035f7fb910",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C108",
+      "claim": "GPCRs operate as allosteric machines with the potential to communicate significantly more information about local chemical environment than the mere presence or absence of a cognate agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, and viewed more broadly, the present results reinforce an emerging understanding that GPCRs operate as allosteric machines with the potential to communicate significantly more information about local chemical environment than the mere presence or absence of a cognate agonist (Costa-Neto et al., 2016; Kenakin, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the findings and supported by citations to related work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "9ab9a889-7162-4afc-b0e3-54e00dfb9cce",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C109",
+      "claim": "The mGsi probe reports allosteric effects relevant to G protein engagement by opioid receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose from the present observations that the mGsi probe reports allosteric effects relevant to G protein engagement by opioid receptors, and that the Nb probe reports additional effects relevant to GRK engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed based on the differential recruitment patterns observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "fb80495b-ddec-45ee-9659-534d6687001a",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C110",
+      "claim": "The Nb probe reports additional effects relevant to GRK engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose from the present observations that the mGsi probe reports allosteric effects relevant to G protein engagement by opioid receptors, and that the Nb probe reports additional effects relevant to GRK engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed based on the differential recruitment patterns observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "18405548-45e4-43d3-a274-0adba43a33ef",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "claim_id": "C111",
+      "claim": "Agonist bias can be deconvolved into discrete receptor-proximal molecular selection events.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results further support the hypothesis that agonist bias, now generally defined by operational criteria, can be deconvolved into discrete receptor-proximal molecular selection events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the demonstration of discrete recruitment modes for GRK2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "de31d868-0b71-48f3-8f8e-101323995f34",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed engineered protein biosensors (mGsi and Nb33) that bind activated opioid receptors but are disconnected from endogenous cellular signaling pathways. mGsi is derived from the Ras-like domain of Gs alpha with the C-terminus replaced by Gi alpha1 residues, while Nb33 is a nanobody that contacts different cytoplasmic residues than G proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C25, C26, C23, C30-C32 collectively establish the design and rationale for the biosensors. The engineering is well-described with appropriate citations (C25, C30, C31), and the orthogonality of nanobodies is established knowledge (C23). The structural basis for differential binding is supported by cited structural studies (C31, C32).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "fd90eee1-4ea5-4854-8830-3f091ae3a78f",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both mGsi and Nb33 are rapidly and reversibly recruited to KOR upon agonist (DynA) stimulation in living cells, with recruitment occurring within 30 seconds and independently of receptor internalization. mGsi recruitment is driven primarily by the Gi-derived C-terminus, as mGs shows no detectable recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 are supported by TIR-FM data in Figures 1D-F showing rapid, reversible recruitment with appropriate controls. The specificity control using mGs (C36) and parallel monitoring of receptor surface expression (C38) strengthen the conclusion that recruitment is direct and not secondary to trafficking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "84c29d1c-3c7f-46cf-b08f-df8da5c24f33",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Non-peptide KOR full agonists U69593 and U50488 promote concentration-dependent recruitment of both mGsi and Nb33, but the concentration-response curve for mGsi is consistently left-shifted relative to Nb33.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by concentration-response data in Figures 1I-K. The left-shift in mGsi potency relative to Nb33 is consistently observed across multiple agonists, suggesting differential binding affinities or kinetics. The pharmacological characterization is appropriate with internal reference controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "53147c31-b567-4cb8-bc65-7bc55561ff23",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Etorphine (ET) shows agonist-selective recruitment: it acts as a partial agonist for mGsi recruitment (67% of DynA maximum) but produces little to no Nb33 recruitment even at high concentrations. This differential recruitment is observed in the same cells when biosensors are co-expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C53 demonstrate the key finding of agonist-selective protein recruitment. The data in Figures 2A-G show clear differential recruitment with appropriate controls including dual-color imaging in the same cells (C52, Figure 2F-G). The prior characterization of ET as G protein-biased (C46-C48) provides important context supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "e4aaa8cc-6147-436c-bab6-5082a0dd690c",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Differential biosensor recruitment by etorphine versus DynA occurs as a primary allosteric effect at the receptor level, not as a secondary consequence of differential receptor phosphorylation. This is demonstrated using a phosphorylation-defective KOR mutant (KOR-TPD) and GRK2/3 inhibitor (Compound101).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 address a critical alternative explanation. The experiments using KOR-TPD (C56, Figures 2I-J) and Compound101 (C57, Figure 2K) provide strong evidence that differential recruitment is not secondary to phosphorylation. The controls are appropriate and the conclusion (C58) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "437bd39d-1401-43ae-909c-0faf827609a6",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "At MOR, etorphine promotes recruitment of both mGsi and Nb33 to the same maximum degree as the peptide full agonist DAMGO, contrasting with its partial/absent recruitment at KOR. This demonstrates that differential recruitment is both agonist-dependent and receptor subtype-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 extend the findings to MOR and demonstrate receptor subtype specificity. The data in Figure 3A-C show that ET behaves as a full agonist at MOR for both probes, contrasting with KOR (Figure 2). This receptor-specific difference strengthens the conclusion of allosteric selectivity and rules out probe-specific artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "39b5159f-1259-40d3-af5d-41425b5f7055",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MOR partial agonists morphine and PZM21 show differential recruitment patterns: both produce similar partial mGsi recruitment, but morphine is significantly more efficacious than PZM21 in recruiting Nb33, revealing a range of selective protein recruitment effects among chemically diverse partial agonists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 demonstrate diversity in recruitment patterns among partial agonists. The data in Figures 3D-E show clear differences between morphine and PZM21 in Nb33 recruitment despite similar mGsi recruitment. The prior characterization (C64-C65) provides appropriate context, and the conclusion (C69) is supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "b5b108d0-6328-45ae-8aa0-8f897669d0e4",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mitragynine pseudoindoxyl (MP) promotes reduced maximal mGsi recruitment relative to DAMGO and no detectable Nb33 recruitment at MOR, representing an extreme case of selective recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 are supported by data in Figures 3G-H. The authors appropriately modified their protocol to include a washout step to address potential complications from slow dissociation kinetics. The data clearly show MP's selective recruitment profile, extending the range of observed selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "71f25e48-9a29-4466-9105-3a032104f283",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comprehensive analysis across multiple agonists reveals that selective protein recruitment is widespread among chemically diverse opioid agonists. The recruitment patterns deviate from predictions of a unitary receptor 'on' state, supporting flexible receptor activation that enables selective recruitment of one probe over another.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 and C93-C96 synthesize the findings across all agonists tested. Figure 4 provides a comprehensive summary showing that many agonists deviate from the diagonal (unitary activation), with all partial agonists showing preferential mGsi recruitment (C95) and left-shifted concentration-response curves even for full agonists (C96). The conclusion is well-supported by the cumulative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "8d3fb382-bf5d-45ce-ba01-25867a4a9c98",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "GRK2 is recruited to activated GPCRs through multiple interactions: direct binding to the activated receptor and binding to G protein beta-gamma subunits. GRK2 is important for generating agonist-selective phosphorylation patterns that convey biased signaling effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 establish the biological relevance of GRK2 and its dual recruitment mechanisms. These are well-established facts supported by appropriate citations to prior work. Figure 5A illustrates the dual recruitment model. This provides important context for testing whether agonist-selective recruitment applies to endogenous signaling proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "1c12cb7a-06d5-4763-90f9-7ff5802fa699",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "DynA promotes robust GRK2 recruitment to the plasma membrane, while etorphine produces significantly lower maximal GRK2 recruitment despite being highly potent. This difference is not secondary to receptor phosphorylation, as demonstrated using the phosphorylation-defective KOR-TPD mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 are supported by TIR-FM data in Figures 5B-F. The concentration-response data (Figures 5B-D) show clear differences in maximal GRK2 recruitment, and the KOR-TPD control (Figures 5E-F) rules out phosphorylation as the cause. The experimental design appropriately parallels the biosensor experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "919e977c-97b3-4e73-83c0-0e99988086a7",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Etorphine and DynA both promote GRK2 recruitment via G beta-gamma binding (demonstrated by recruitment of the isolated GRK2 C-terminal PH domain and pertussis toxin sensitivity), but DynA additionally engages a G protein-independent mode of GRK2 recruitment not shared with etorphine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 dissect the mechanisms of GRK2 recruitment. The GRK2 C-tail recruitment data (Figure 5G) shows both agonists recruit this domain equally, while PTX experiments (Figure 5H) show ET recruitment is completely blocked but DynA recruitment is only partially reduced. These complementary approaches strongly support the conclusion of dual recruitment modes differentially engaged by agonists.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "8e4efeca-f92f-412a-ad85-009232602d37",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Using receptor clustering to distinguish membrane recruitment from direct receptor binding, DynA specifically promotes GRK2 accumulation at KOR clusters while etorphine produces only diffuse membrane recruitment. This supports a model where DynA promotes both G beta-gamma-mediated and direct receptor-mediated GRK2 recruitment, while etorphine promotes only G beta-gamma-mediated recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 provide spatial resolution of GRK2 recruitment modes. The receptor clustering approach (Figures 6A-D) is innovative and clearly distinguishes diffuse membrane recruitment from receptor-specific accumulation. Quantification (Figure 6D) shows statistically significant differences (p<0.0001 for DynA, p=0.30 for ET). The model (C92, Figure 6E) is well-supported by all GRK2 experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "0906b96c-77f7-4e61-805e-dee0732d13e7",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The results provide direct biochemical evidence for discrete protein-engaged receptor states that are selectively produced by different agonists in living cells. This principle applies both to engineered probes and to biologically relevant proteins like GRK2, though in a more complex manner for the latter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C99 and C101 synthesize the major conclusions. The evidence from both engineered probes and GRK2 converges to support discrete allosteric states. The distinction between the simpler engineered probes and the more complex GRK2 recruitment (C98-C99) is appropriately noted. The conclusion is well-supported by the cumulative experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "3cfc10f7-df26-417d-b7dc-273edb9f5e5f",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The biophysical basis for agonist-selective recruitment remains unresolved. Possible mechanisms include agonist-selective stabilization of distinct receptor conformational ensembles (supported by structural differences in ICL3 between Nb39-bound and Gi-bound MOR structures) or differences in binding kinetics, concentration, or affinity with similar receptor conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C105 propose mechanistic hypotheses but acknowledge they are speculative (C102, C105 explicitly marked as speculation). The structural observation about ICL3 differences (C103) is based on comparison of published structures, but whether this explains the observed selectivity is not tested. These are reasonable hypotheses for future work but not demonstrated by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "8bd27ebe-1efb-4339-8145-0579bc0d60da",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The biosensor recruitment response reaches steady state within ~30 seconds, enabling use as an end-point assay potentially scalable to drug screening platforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 are supported by the kinetic data throughout the manuscript showing rapid recruitment. However, C107's claim about scalability to screening is somewhat speculative (marked as INFERENCE/SPECULATION) as no actual screening validation is performed. The steady-state observation (C106) is well-supported by data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "9190461e-dab4-4270-b64a-6b50d2d23919",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The findings support the view that GPCRs operate as allosteric machines communicating detailed information about chemical environment beyond simple agonist presence. The authors propose that mGsi reports G protein-relevant allosteric effects while Nb33 reports GRK-relevant effects, and that agonist bias can be deconvolved into discrete receptor-proximal molecular selection events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C111 represent the broader conceptual conclusions. C108 is supported by the data and citations to related work. C109-C110 are reasonable proposals based on the differential recruitment patterns and the GRK2 data, though the direct link between Nb33 and GRK engagement is inferred rather than directly demonstrated. C111 is supported by the demonstration of discrete GRK2 recruitment modes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "bf8a3670-e2a4-405d-8a2b-05614237948d",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background context: GPCRs signal through allostery and are conformationally flexible. Chemically distinct agonists can produce functionally selective effects, with opioid receptors providing a well-studied example where agonist-selective endocytosis and G protein versus beta-arrestin engagement have been demonstrated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C12 establish the background and motivation. These are well-established facts in the field supported by appropriate citations to prior work. They provide necessary context for understanding the significance of the current study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "dc03f177-a6c9-4b87-a76f-3ff90b457b24",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Knowledge gaps addressed: Selective protein recruitment by GPCRs has been largely calculated rather than directly observed, and current assays (e.g., beta-arrestin recruitment) involve multiple biochemical steps including receptor phosphorylation, making it difficult to assess receptor-proximal selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C19 identify the knowledge gaps that motivate the current study. These are well-supported by citations discussing limitations of operational models (C14) and the complexity of beta-arrestin recruitment assays (C16-C19). This establishes the need for the direct recruitment assay developed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "eba80283-99ac-47ad-89ce-28f619ef85a2",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Study objectives: The authors aimed to directly test whether different agonists drive GPCRs to engage different cytoplasmic proteins in living cells, focusing on demonstrating differences in biosensor recruitment by opioid ligands and showing that selective recruitment applies to GRK2 through discrete interaction modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C5, C6 state the study objectives, which are clearly achieved by the experimental data presented. C3 identifies the hypothesis being tested, while C5 and C6 summarize the main findings that are supported by the data discussed in other result groups.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "d2e56ee4-cd8e-47b1-ae7e-2a4eb16baf89",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Structural context: Two agonist-activated opioid receptor complexes have been structurally characterized (G protein-bound and nanobody-bound), showing similar but not identical receptor conformations with distinct molecular contacts on cytoplasmic domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 describe published structural data (cited to Huang et al. 2015 and Koehl et al. 2018) that provides rationale for the biosensor design. Figure 1A shows these structures. The structural differences are inferred from the cited studies and provide important context for interpreting the differential recruitment observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "2f2388a1-18e9-4b9c-a1bd-8fc84ce02c0a",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Experimental system: The study uses HEK293 cells (which lack endogenous opioid receptors) expressing tagged opioid receptors. The biosensor design exploits known properties of G protein coupling (C-terminal alpha-5 helix determines specificity, Gs couples poorly to opioid receptors).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C27-C29, C33 describe the experimental system and design rationale. These are established facts about G protein structure/function (C27-C28, supported by citations) and cell line properties (C33, established knowledge). The system provides an appropriate null background for studying receptor-specific recruitment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    },
+    {
+      "id": "c7b78684-f450-4b91-b14b-ed14c410ad3f",
+      "content_id": "8c458b0f-f683-4ac6-be45-4dce905c84e5",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Future directions: The authors speculate that additional specificity in receptor-proximal protein recruitment likely exists beyond what was observed with the two probes used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C100 is explicitly marked as speculation. While reasonable based on the findings with two probes showing differential recruitment, this is a hypothesis for future work rather than a demonstrated result. The claim appropriately acknowledges uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:28:02.466936Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7c33978b-68b6-438c-8f92-802ede9e2b2a",
+      "result_id": "de31d868-0b71-48f3-8f8e-101323995f34"
+    },
+    {
+      "claim_id": "a4024e50-b358-49e5-a995-09cafc0666cd",
+      "result_id": "de31d868-0b71-48f3-8f8e-101323995f34"
+    },
+    {
+      "claim_id": "2fded3b1-34c3-4972-88aa-37f82e1d6073",
+      "result_id": "de31d868-0b71-48f3-8f8e-101323995f34"
+    },
+    {
+      "claim_id": "8f9b7c55-c0fa-4695-b32a-d0aee9eb9053",
+      "result_id": "de31d868-0b71-48f3-8f8e-101323995f34"
+    },
+    {
+      "claim_id": "2b8b9927-5710-47df-b2e9-186b5d4f09eb",
+      "result_id": "de31d868-0b71-48f3-8f8e-101323995f34"
+    },
+    {
+      "claim_id": "a5a110ab-9be7-4a4c-9511-fbb174a0c875",
+      "result_id": "de31d868-0b71-48f3-8f8e-101323995f34"
+    },
+    {
+      "claim_id": "39093f02-7682-4bf5-9c5d-2c0698dac22b",
+      "result_id": "de31d868-0b71-48f3-8f8e-101323995f34"
+    },
+    {
+      "claim_id": "e1f8c8ec-4b0e-4517-9b80-4b876e018e32",
+      "result_id": "fd90eee1-4ea5-4854-8830-3f091ae3a78f"
+    },
+    {
+      "claim_id": "b9191ef6-626c-456b-965f-775337775093",
+      "result_id": "fd90eee1-4ea5-4854-8830-3f091ae3a78f"
+    },
+    {
+      "claim_id": "9b6ee1d3-7645-430e-9dcc-6833b68c0e7c",
+      "result_id": "fd90eee1-4ea5-4854-8830-3f091ae3a78f"
+    },
+    {
+      "claim_id": "6c6c9474-1798-4d40-bc45-af1ae93dbfaf",
+      "result_id": "fd90eee1-4ea5-4854-8830-3f091ae3a78f"
+    },
+    {
+      "claim_id": "9c3b4914-a6b8-48a8-b113-46b0eb69b6e5",
+      "result_id": "fd90eee1-4ea5-4854-8830-3f091ae3a78f"
+    },
+    {
+      "claim_id": "7ae37835-35b4-4db8-be5d-d668b085986e",
+      "result_id": "fd90eee1-4ea5-4854-8830-3f091ae3a78f"
+    },
+    {
+      "claim_id": "074ed511-e403-4250-bcde-0efc5ecb446c",
+      "result_id": "fd90eee1-4ea5-4854-8830-3f091ae3a78f"
+    },
+    {
+      "claim_id": "6a1344e3-9364-41a7-adbb-20c45c038764",
+      "result_id": "fd90eee1-4ea5-4854-8830-3f091ae3a78f"
+    },
+    {
+      "claim_id": "dccdc887-454e-48e9-8719-29a975fb35a7",
+      "result_id": "84c29d1c-3c7f-46cf-b08f-df8da5c24f33"
+    },
+    {
+      "claim_id": "112d354a-22e5-4c4d-a7b2-a9eb0e56c611",
+      "result_id": "84c29d1c-3c7f-46cf-b08f-df8da5c24f33"
+    },
+    {
+      "claim_id": "4fa8e65a-a907-473b-ba97-71ae8c00c038",
+      "result_id": "84c29d1c-3c7f-46cf-b08f-df8da5c24f33"
+    },
+    {
+      "claim_id": "e14924fd-33f8-4330-ae13-58f606f949af",
+      "result_id": "53147c31-b567-4cb8-bc65-7bc55561ff23"
+    },
+    {
+      "claim_id": "a550f564-2bab-44c8-9517-8fe2a01823a8",
+      "result_id": "53147c31-b567-4cb8-bc65-7bc55561ff23"
+    },
+    {
+      "claim_id": "7e04102c-1e60-481f-aa98-f7d036879da2",
+      "result_id": "53147c31-b567-4cb8-bc65-7bc55561ff23"
+    },
+    {
+      "claim_id": "3bc92567-4ecf-45f2-adc5-1fa669035732",
+      "result_id": "53147c31-b567-4cb8-bc65-7bc55561ff23"
+    },
+    {
+      "claim_id": "130387b8-1a7b-4423-ac33-9a1a4fe3e844",
+      "result_id": "53147c31-b567-4cb8-bc65-7bc55561ff23"
+    },
+    {
+      "claim_id": "e7fa5813-d637-4628-aa58-96c1662f0291",
+      "result_id": "53147c31-b567-4cb8-bc65-7bc55561ff23"
+    },
+    {
+      "claim_id": "afce6905-a952-49bc-9edb-5d4c74c292b0",
+      "result_id": "53147c31-b567-4cb8-bc65-7bc55561ff23"
+    },
+    {
+      "claim_id": "bab783a2-dec8-4b79-a516-34532e6a611b",
+      "result_id": "53147c31-b567-4cb8-bc65-7bc55561ff23"
+    },
+    {
+      "claim_id": "30c7068e-53b5-4a23-8c29-309dd6586ba7",
+      "result_id": "53147c31-b567-4cb8-bc65-7bc55561ff23"
+    },
+    {
+      "claim_id": "0fad7771-d707-4e33-a0c1-92905e5f9472",
+      "result_id": "e4aaa8cc-6147-436c-bab6-5082a0dd690c"
+    },
+    {
+      "claim_id": "bb896ffd-552d-4782-bb6d-a8b66bd9a393",
+      "result_id": "e4aaa8cc-6147-436c-bab6-5082a0dd690c"
+    },
+    {
+      "claim_id": "11ac2993-3309-44ad-9eb5-69939c9e9841",
+      "result_id": "e4aaa8cc-6147-436c-bab6-5082a0dd690c"
+    },
+    {
+      "claim_id": "eec096a8-b983-4480-a369-c4f2057ad7ec",
+      "result_id": "e4aaa8cc-6147-436c-bab6-5082a0dd690c"
+    },
+    {
+      "claim_id": "02d497f0-501d-4ea1-8430-846292f8c1b8",
+      "result_id": "e4aaa8cc-6147-436c-bab6-5082a0dd690c"
+    },
+    {
+      "claim_id": "e8b9e2a0-eb2c-494c-8960-e1035cdc043f",
+      "result_id": "437bd39d-1401-43ae-909c-0faf827609a6"
+    },
+    {
+      "claim_id": "095f4dc7-5b14-45a6-9d76-b0389d08e069",
+      "result_id": "437bd39d-1401-43ae-909c-0faf827609a6"
+    },
+    {
+      "claim_id": "bb6d3f78-f966-4be8-8fe8-0c22c9f3fb76",
+      "result_id": "437bd39d-1401-43ae-909c-0faf827609a6"
+    },
+    {
+      "claim_id": "c526a956-2f8b-46fb-ac9b-bdc217a9e152",
+      "result_id": "437bd39d-1401-43ae-909c-0faf827609a6"
+    },
+    {
+      "claim_id": "5ddeca7b-0abd-47d0-9aed-e450d00b6070",
+      "result_id": "437bd39d-1401-43ae-909c-0faf827609a6"
+    },
+    {
+      "claim_id": "ba77e324-fbf5-492d-82c5-82d44c8400e8",
+      "result_id": "39b5159f-1259-40d3-af5d-41425b5f7055"
+    },
+    {
+      "claim_id": "a1fc2785-bd26-4a55-91db-c9c25827c786",
+      "result_id": "39b5159f-1259-40d3-af5d-41425b5f7055"
+    },
+    {
+      "claim_id": "48ae4164-ee68-40d7-965d-760c7ac6486d",
+      "result_id": "39b5159f-1259-40d3-af5d-41425b5f7055"
+    },
+    {
+      "claim_id": "29e55fc8-3444-4128-9b5b-bce1cda3bef8",
+      "result_id": "39b5159f-1259-40d3-af5d-41425b5f7055"
+    },
+    {
+      "claim_id": "32b89ee8-0339-4b8f-b757-29a59c91f09c",
+      "result_id": "39b5159f-1259-40d3-af5d-41425b5f7055"
+    },
+    {
+      "claim_id": "14a12b4e-d25e-4774-84b6-2ebea0b715fd",
+      "result_id": "39b5159f-1259-40d3-af5d-41425b5f7055"
+    },
+    {
+      "claim_id": "b3edfe73-8f41-4168-9529-1b0542e98928",
+      "result_id": "b5b108d0-6328-45ae-8aa0-8f897669d0e4"
+    },
+    {
+      "claim_id": "bf69c2a3-11a8-462c-a28a-d02d635d4adc",
+      "result_id": "b5b108d0-6328-45ae-8aa0-8f897669d0e4"
+    },
+    {
+      "claim_id": "90d68032-a2a7-4b7f-9b29-4d024be2f274",
+      "result_id": "b5b108d0-6328-45ae-8aa0-8f897669d0e4"
+    },
+    {
+      "claim_id": "dc94c2c5-5b13-445d-8097-0c7b94ec3260",
+      "result_id": "71f25e48-9a29-4466-9105-3a032104f283"
+    },
+    {
+      "claim_id": "1b247ba5-acdb-4b9f-81ce-e95955962b2e",
+      "result_id": "71f25e48-9a29-4466-9105-3a032104f283"
+    },
+    {
+      "claim_id": "faf4db95-d35f-436c-bf36-930d8a0e785f",
+      "result_id": "71f25e48-9a29-4466-9105-3a032104f283"
+    },
+    {
+      "claim_id": "f73d8dcb-e459-4df1-bd3f-4b6f8b5d8ee9",
+      "result_id": "71f25e48-9a29-4466-9105-3a032104f283"
+    },
+    {
+      "claim_id": "872012b5-04c9-4ecd-95fb-4b38dd989e35",
+      "result_id": "71f25e48-9a29-4466-9105-3a032104f283"
+    },
+    {
+      "claim_id": "c86f5419-71c8-4eaf-972b-9ba01291fca9",
+      "result_id": "71f25e48-9a29-4466-9105-3a032104f283"
+    },
+    {
+      "claim_id": "d58feee1-dc6a-44c9-84f4-8bd91297e185",
+      "result_id": "71f25e48-9a29-4466-9105-3a032104f283"
+    },
+    {
+      "claim_id": "f6fff54a-1900-4ab5-ac7a-ba07926e7c60",
+      "result_id": "71f25e48-9a29-4466-9105-3a032104f283"
+    },
+    {
+      "claim_id": "3ad5d0a3-e128-4899-8f9b-f85666e0ab3d",
+      "result_id": "8d3fb382-bf5d-45ce-ba01-25867a4a9c98"
+    },
+    {
+      "claim_id": "0ee409ec-c497-4d44-807d-fcf113e360f7",
+      "result_id": "8d3fb382-bf5d-45ce-ba01-25867a4a9c98"
+    },
+    {
+      "claim_id": "a77dc481-38ab-42ee-9e3b-0f65c7f42262",
+      "result_id": "8d3fb382-bf5d-45ce-ba01-25867a4a9c98"
+    },
+    {
+      "claim_id": "26aca565-c3bb-4573-acee-a70ecc39ab4d",
+      "result_id": "1c12cb7a-06d5-4763-90f9-7ff5802fa699"
+    },
+    {
+      "claim_id": "7e6a8d01-a252-45c1-8711-bedde3037fcf",
+      "result_id": "1c12cb7a-06d5-4763-90f9-7ff5802fa699"
+    },
+    {
+      "claim_id": "7b3915e4-23e8-4982-803d-e1e1069697af",
+      "result_id": "1c12cb7a-06d5-4763-90f9-7ff5802fa699"
+    },
+    {
+      "claim_id": "4b75726e-2f79-4bf5-afe1-5aeedeea37c0",
+      "result_id": "919e977c-97b3-4e73-83c0-0e99988086a7"
+    },
+    {
+      "claim_id": "6d12d8a9-3785-4a0e-9c1a-0a104f0e1fdb",
+      "result_id": "919e977c-97b3-4e73-83c0-0e99988086a7"
+    },
+    {
+      "claim_id": "3448479b-15c2-413c-884b-f72e6899b9fa",
+      "result_id": "919e977c-97b3-4e73-83c0-0e99988086a7"
+    },
+    {
+      "claim_id": "fc5868fa-cf68-4949-8c5f-857beee6ab58",
+      "result_id": "919e977c-97b3-4e73-83c0-0e99988086a7"
+    },
+    {
+      "claim_id": "6cad1d7f-9de8-4506-9366-12aee57b7281",
+      "result_id": "919e977c-97b3-4e73-83c0-0e99988086a7"
+    },
+    {
+      "claim_id": "2d1cddc1-cdef-4d1a-adbd-f3105cf193ec",
+      "result_id": "919e977c-97b3-4e73-83c0-0e99988086a7"
+    },
+    {
+      "claim_id": "d697c31e-83b0-4330-88bb-25d085745e8e",
+      "result_id": "8e4efeca-f92f-412a-ad85-009232602d37"
+    },
+    {
+      "claim_id": "740cc4e5-139f-40e4-b0d5-963870471d6e",
+      "result_id": "8e4efeca-f92f-412a-ad85-009232602d37"
+    },
+    {
+      "claim_id": "09cc9863-3c34-47da-b80a-70943eb06959",
+      "result_id": "8e4efeca-f92f-412a-ad85-009232602d37"
+    },
+    {
+      "claim_id": "120afc86-1f74-4f8e-b462-e4371e98f3eb",
+      "result_id": "8e4efeca-f92f-412a-ad85-009232602d37"
+    },
+    {
+      "claim_id": "e424c19c-015f-48f9-83c2-f3c5fbc751ed",
+      "result_id": "0906b96c-77f7-4e61-805e-dee0732d13e7"
+    },
+    {
+      "claim_id": "04e87c78-a17e-4982-8dd7-99da0259e342",
+      "result_id": "0906b96c-77f7-4e61-805e-dee0732d13e7"
+    },
+    {
+      "claim_id": "22859d53-28a7-4a46-8405-2b11b925a855",
+      "result_id": "0906b96c-77f7-4e61-805e-dee0732d13e7"
+    },
+    {
+      "claim_id": "e6891bb4-ec22-482a-aa9d-9f540b5ce058",
+      "result_id": "0906b96c-77f7-4e61-805e-dee0732d13e7"
+    },
+    {
+      "claim_id": "1899cf63-a74a-41a4-9d89-5897ee9e1548",
+      "result_id": "3cfc10f7-df26-417d-b7dc-273edb9f5e5f"
+    },
+    {
+      "claim_id": "4278b1d2-d776-4b9c-b972-d3e05d4645b8",
+      "result_id": "3cfc10f7-df26-417d-b7dc-273edb9f5e5f"
+    },
+    {
+      "claim_id": "a062f1b7-0f7e-4146-b6b9-55480c6e6ca8",
+      "result_id": "3cfc10f7-df26-417d-b7dc-273edb9f5e5f"
+    },
+    {
+      "claim_id": "3f71fe17-9ca7-413f-b29f-457b86b33b68",
+      "result_id": "3cfc10f7-df26-417d-b7dc-273edb9f5e5f"
+    },
+    {
+      "claim_id": "f15fd020-d807-49e1-bf71-d65bcfa3107c",
+      "result_id": "8bd27ebe-1efb-4339-8145-0579bc0d60da"
+    },
+    {
+      "claim_id": "ac693062-94c6-4e6b-9212-b86ce4430f64",
+      "result_id": "8bd27ebe-1efb-4339-8145-0579bc0d60da"
+    },
+    {
+      "claim_id": "1483bfdd-54f3-4224-8d62-34035f7fb910",
+      "result_id": "9190461e-dab4-4270-b64a-6b50d2d23919"
+    },
+    {
+      "claim_id": "9ab9a889-7162-4afc-b0e3-54e00dfb9cce",
+      "result_id": "9190461e-dab4-4270-b64a-6b50d2d23919"
+    },
+    {
+      "claim_id": "fb80495b-ddec-45ee-9659-534d6687001a",
+      "result_id": "9190461e-dab4-4270-b64a-6b50d2d23919"
+    },
+    {
+      "claim_id": "18405548-45e4-43d3-a274-0adba43a33ef",
+      "result_id": "9190461e-dab4-4270-b64a-6b50d2d23919"
+    },
+    {
+      "claim_id": "b02998fe-a4cf-4a7a-9ede-026820dc78cc",
+      "result_id": "bf8a3670-e2a4-405d-8a2b-05614237948d"
+    },
+    {
+      "claim_id": "444ca57f-2072-41f0-aed6-e8c441782f21",
+      "result_id": "bf8a3670-e2a4-405d-8a2b-05614237948d"
+    },
+    {
+      "claim_id": "2a7c4931-502c-443b-ae66-18f56276bc4e",
+      "result_id": "bf8a3670-e2a4-405d-8a2b-05614237948d"
+    },
+    {
+      "claim_id": "55464e43-88cc-44dc-b132-fbde937ecde6",
+      "result_id": "bf8a3670-e2a4-405d-8a2b-05614237948d"
+    },
+    {
+      "claim_id": "fc7bcfd0-7391-4aef-91a9-8ff92ced36fb",
+      "result_id": "bf8a3670-e2a4-405d-8a2b-05614237948d"
+    },
+    {
+      "claim_id": "6c3a24e6-59a8-41a0-8a0e-a70b19d1c1b8",
+      "result_id": "bf8a3670-e2a4-405d-8a2b-05614237948d"
+    },
+    {
+      "claim_id": "413feabf-44c7-4da0-ae49-cfde35bc544a",
+      "result_id": "bf8a3670-e2a4-405d-8a2b-05614237948d"
+    },
+    {
+      "claim_id": "83df1e4e-09f2-449d-9b2e-407abe5d3d05",
+      "result_id": "bf8a3670-e2a4-405d-8a2b-05614237948d"
+    },
+    {
+      "claim_id": "ef72b9a6-ba45-4c28-8ddd-84370bf700b3",
+      "result_id": "dc03f177-a6c9-4b87-a76f-3ff90b457b24"
+    },
+    {
+      "claim_id": "3f149542-a21d-492f-af93-ab727c95feb6",
+      "result_id": "dc03f177-a6c9-4b87-a76f-3ff90b457b24"
+    },
+    {
+      "claim_id": "977a0e21-b438-4ad8-bdc3-a50aee53a9af",
+      "result_id": "dc03f177-a6c9-4b87-a76f-3ff90b457b24"
+    },
+    {
+      "claim_id": "c3f4d30d-23ab-4017-904c-8ba18cfa6578",
+      "result_id": "dc03f177-a6c9-4b87-a76f-3ff90b457b24"
+    },
+    {
+      "claim_id": "ddc24f10-0f7f-4cb2-b892-fe966ad41de5",
+      "result_id": "dc03f177-a6c9-4b87-a76f-3ff90b457b24"
+    },
+    {
+      "claim_id": "39cbe4ed-dd95-444d-b6c3-e616fedd04c4",
+      "result_id": "dc03f177-a6c9-4b87-a76f-3ff90b457b24"
+    },
+    {
+      "claim_id": "525ea374-8495-4257-ae48-960406ca4837",
+      "result_id": "dc03f177-a6c9-4b87-a76f-3ff90b457b24"
+    },
+    {
+      "claim_id": "719aff2b-b7de-4c10-adb3-0d1aa390c4be",
+      "result_id": "eba80283-99ac-47ad-89ce-28f619ef85a2"
+    },
+    {
+      "claim_id": "4f234c4d-f821-4f9d-898a-57e6a3aaa3de",
+      "result_id": "eba80283-99ac-47ad-89ce-28f619ef85a2"
+    },
+    {
+      "claim_id": "09e3fc85-4459-47fe-99ce-980b73ce3370",
+      "result_id": "eba80283-99ac-47ad-89ce-28f619ef85a2"
+    },
+    {
+      "claim_id": "6e417d59-f5e2-434c-a076-b4797b8e0cd4",
+      "result_id": "d2e56ee4-cd8e-47b1-ae7e-2a4eb16baf89"
+    },
+    {
+      "claim_id": "fee3edb7-859f-4266-a796-e025ca97bc2e",
+      "result_id": "d2e56ee4-cd8e-47b1-ae7e-2a4eb16baf89"
+    },
+    {
+      "claim_id": "e6917a0c-a305-4ab6-bde2-034e0826cb41",
+      "result_id": "d2e56ee4-cd8e-47b1-ae7e-2a4eb16baf89"
+    },
+    {
+      "claim_id": "f9b56fed-2cb4-4914-a7c6-10f1e62c697b",
+      "result_id": "2f2388a1-18e9-4b9c-a1bd-8fc84ce02c0a"
+    },
+    {
+      "claim_id": "ca009f87-566f-4e54-9c00-60df5c65573c",
+      "result_id": "2f2388a1-18e9-4b9c-a1bd-8fc84ce02c0a"
+    },
+    {
+      "claim_id": "804d07b7-ea78-4201-b0f0-2c3442c8e585",
+      "result_id": "2f2388a1-18e9-4b9c-a1bd-8fc84ce02c0a"
+    },
+    {
+      "claim_id": "ea1e58fa-7359-47de-9e96-e917136d9e05",
+      "result_id": "2f2388a1-18e9-4b9c-a1bd-8fc84ce02c0a"
+    },
+    {
+      "claim_id": "72bd4aa9-62b9-4afa-9fde-fb230139a152",
+      "result_id": "2f2388a1-18e9-4b9c-a1bd-8fc84ce02c0a"
+    },
+    {
+      "claim_id": "691dd1fa-4b30-4fad-bf54-2af67985e866",
+      "result_id": "c7b78684-f450-4b91-b14b-ed14c410ad3f"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Cerox1 is a conserved, intergenic long non-coding RNA. Mouse Cerox1 is a 1.2 kb, two-exon transcript sharing a bidirectional promoter with Sox8. A human ortholog (CEROX1) was identified with 60-70% sequence identity in alignable regions. Both transcripts have low protein-coding potential with no proteomic evidence of translation, and the CEROX1 promoter shows greater conservation than the adjacent SOX8 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from genomic structure, sequence conservation (GERP scores), computational coding potential analysis, and proteomic databases. The identification of human ortholog by synteny and sequence similarity is standard practice. The conservation data (Figure 1B) and lack of proteomic evidence support the lncRNA classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Cerox1 is highly and specifically expressed in neural tissues. Expression levels rank in the top 13% of lncRNAs with CAGE clusters and exceed 64% of protein-coding genes in adult brain. Expression is particularly high in neuroglia, neural progenitor cells, and oligodendrocyte progenitors, and is developmentally regulated, serving as a marker for type one pre-hematopoietic stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are supported by multiple independent expression datasets (CAGE, published studies, developmental databases). The quantitative rankings provide clear benchmarks. Citation of published work (C9, C12) adds external validation. However, the manuscript could benefit from more detailed statistical analysis of tissue-specific expression differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Genetic variants near CEROX1 are associated with anthropomorphic traits and CEROX1 expression. The SNP rs3809674 shows genome-wide significant associations with multiple body composition traits (p<5\u00d710\u207b\u2078) and acts as an eQTL for CEROX1 in 30 GTEx tissues with effect sizes reaching 0.83. This variant has a minor allele frequency of 28% in human populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 present robust genetic association data from large-scale UK Biobank analysis with appropriate genome-wide significance thresholds. The eQTL data from GTEx provides mechanistic support. However, the manuscript acknowledges but doesn't fully resolve whether effects are mediated through CEROX1 or neighboring genes (LMF1, SOX8). The argument against LMF1 based on protein function is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Cerox1 depletion may impair stem cell or B cell differentiation contributions to hematopoiesis in a mouse model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by citation of published work (Del\u00e1s et al., 2019). However, this is entirely based on prior work and represents context rather than a novel finding of this manuscript. The use of 'may' appropriately indicates uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In mouse N2A cells, Cerox1 is predominantly cytoplasmic with specific biochemical properties. Cerox1 shows 15-fold enrichment in the cytoplasmic fraction, has a short half-life of 36\u00b116 minutes, and is mainly associated with the ribosome-free fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by appropriate cell fractionation experiments (n=5), actinomycin D chase experiments, and sucrose gradient fractionation. The cytoplasmic localization is consistent with the proposed mechanism. However, the ribosome-free localization (C21) appears contradictory to later claims about ribosomal localization of human CEROX1 (C60, 94% ribosome-associated). This inconsistency is not adequately addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Cerox1 overexpression leads to differential expression of 286 genes, with 83% upregulated, showing strong enrichment for mitochondrial respiratory chain components. Of 15 upregulated OXPHOS genes, 53% are Complex I subunits. Twelve of 35 nuclear-encoded Complex I subunit transcripts increased >40% with overexpression, and all 12 decreased with knockdown (3 significantly with sh92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are supported by microarray analysis with appropriate multiple testing correction (Bonferroni, q<0.05) and qPCR validation. The binomial test (p<10\u207b\u2076) for upregulation bias is appropriate. The reciprocal knockdown experiments provide important validation, though the less effective shRNA (sh1159) shows weaker effects. Sample sizes (n=3 biological replicates) are adequate for qPCR but modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Cerox1 overexpression increases protein levels of Complex I subunits beyond transcript changes. Western blots show ~2.0-fold increases in NDUFS1 and NDUFS3 proteins (p=0.0013 and 0.002), exceeding their ~1.4-fold transcript increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by quantitative western blots (n=7 biological replicates) with appropriate statistical testing. The observation that protein changes exceed transcript changes is interesting and suggests post-transcriptional amplification. However, the mechanism for this amplification is not fully explained, and alternative explanations (e.g., changes in protein stability) are not thoroughly explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Cerox1 overexpression alters cellular metabolism and proliferation. Ten metabolites show significant changes (q<0.05, n=6), including a significant increase in GSH:GSSG ratio (p=1.3\u00d710\u207b\u00b3). Cerox1-overexpressing cells show 43% reduced cell cycle activity without changes in viability or cell cycle phase distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by LC-MS metabolomics with appropriate multiple testing correction and adequate sample sizes. The GSH:GSSG ratio increase is consistent with reduced oxidative stress. The cell cycle phenotype is well-controlled with viability and phase distribution measurements. However, the mechanism linking Cerox1 to cell cycle regulation is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Cerox1 overexpression substantially increases mitochondrial enzyme activities and oxygen consumption in N2A cells. Complex I activity increases 22% (p=0.01) and Complex IV increases 50% (p=0.003). Seahorse analysis shows 85% increase in basal respiration (p=5\u00d710\u207b\u2074), 107% increase in ATP-linked respiration (p=1\u00d710\u207b\u2074), and 59% increase in maximum uncoupled respiration (p=4\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by appropriate enzyme activity assays and Seahorse respirometry (n=8 and n=5 respectively) with strong statistical significance. The magnitude of effects is substantial and physiologically relevant. Controls for mitochondrial number (complexes II, III, citrate synthase unchanged) strengthen the interpretation. However, the mechanism by which partial subunit increases lead to such large functional changes requires further explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cerox1 knockdown reciprocally decreases mitochondrial function. sh92-mediated knockdown reduces Complex I activity by 11% (p=0.03) and Complex IV by 19% (p=0.02). Oxygen consumption decreases: 53% basal (p=0.011), 52% ATP-linked (p=0.034), and 61% maximal uncoupled respiration (p=0.042).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide important reciprocal validation of overexpression results with appropriate sample sizes (n=8, n=5) and statistical testing. The effects are directionally opposite to overexpression, supporting causality. However, the less effective shRNA (sh1159) showed non-significant effects, which somewhat weakens the conclusion. The magnitude of knockdown effects appears larger than overexpression effects, which is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Changes in mitochondrial enzyme activities are not due to altered mitochondrial number. Complexes II, III, and citrate synthase activities remain unchanged, and the mitochondrial-to-nuclear genome ratio is unaltered by Cerox1 manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide essential negative controls that strengthen the specificity of the observed effects. The use of multiple independent measures (enzyme activities and genome ratios) is appropriate. Sample sizes appear adequate (n=12 for genome ratio). This effectively rules out a major alternative explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Cerox1 levels inversely correlate with oxidative stress. Knockdown increases ROS by ~20% (p=4.2\u00d710\u207b\u2076, n=12), while overexpression nearly halves ROS production (p=3.5\u00d710\u207b\u2077, n=12) and reduces protein carbonylation by 35% (p=1\u00d710\u207b\u00b3, n=6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by appropriate ROS measurements (Amplex Red) and protein oxidation assays with strong statistical significance and adequate sample sizes. The bidirectional effects strengthen causality. The results are consistent with improved mitochondrial function. However, the mechanism linking Complex I activity to reduced ROS is not fully explained, as Complex I is typically a major ROS source.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cerox1 levels affect cellular sensitivity to mitochondrial stressors. Overexpression protects against rotenone (37%, p<0.01) and sodium azide (58%, p<0.01), while knockdown increases sensitivity to rotenone (12%, p<0.001) and heat (11%, p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by cell viability assays (n=6) with appropriate statistical testing. The specificity for Complex I and IV inhibitors is consistent with the enzyme activity changes. However, the heat sensitivity phenotype in knockdown cells is less directly explained by the proposed mechanism and may indicate broader cellular effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Cerox1's effects on mitochondrial metabolism are miRNA-dependent. Overexpression in wildtype mouse ES cells increases six Complex I subunit transcripts, but this effect is abolished in Dicer-deficient ES cells lacking mature miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide crucial mechanistic insight using an appropriate genetic model (Dicer knockout). The loss of function in Dicer-deficient cells strongly supports miRNA-dependency. Sample sizes (n=3) are modest but adequate for this type of experiment. However, Dicer knockout affects all miRNAs, so this doesn't identify specific miRNAs involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "A Cerox1 mutant with five mutated conserved MREs fails to alter Complex I transcript levels or OXPHOS enzymatic activity when overexpressed in N2A cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by qPCR and enzyme activity assays (n=6) comparing wildtype and 5xMRE mutant. This is a strong loss-of-function experiment that supports the importance of these specific MREs. However, mutating five MREs simultaneously makes it difficult to assess individual MRE contributions or potential redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "miR-488-3p shows the strongest interaction with Cerox1 among tested miRNAs. Overexpression causes >90% Cerox1 depletion. Dual fluorescent in situ hybridization shows proximity of miR-488-3p and Cerox1 within N2A cells, with both localized to the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by qPCR (n=3) and imaging data. The >90% knockdown is substantial and suggests strong interaction. The co-localization data support physical proximity. However, the resolution of fluorescent in situ hybridization may not be sufficient to definitively establish direct interaction, and the 'proximity' is somewhat qualitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "CEROX1 transcripts are predominantly (94%) localized to ribosomes in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by citation of published work (van Heesch et al., 2014). However, this creates an apparent contradiction with C21 (mouse Cerox1 mainly ribosome-free). This species difference or methodological discrepancy is not adequately addressed and raises questions about the consistency of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "miR-488-3p directly regulates Complex I subunit transcript levels. Overexpression significantly downregulates all 12 Cerox1-sensitive transcripts, while inhibition increases 10 of 12 transcripts (4 significantly: Ndufa2, Ndufb9, Ndufs4, Ndufs1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by qPCR from miRNA overexpression and inhibition experiments (n=3). The bidirectional effects strengthen the conclusion. However, the inhibition effects are weaker and less consistent than overexpression effects, which may reflect incomplete inhibition or compensatory mechanisms. The sample size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The miR-488-3p MRE in Cerox1 is functionally critical. Mutations in this single MRE abrogate miR-488-3p-mediated destabilization in luciferase assays and abolish Cerox1's ability to elevate Complex I transcript levels and enzymatic activity when overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by luciferase assays (n=4), qPCR (n=3), and enzyme activity assays (n=8) with appropriate statistical testing. This is a strong structure-function experiment that identifies a specific functional MRE. The convergence of multiple assay types strengthens the conclusion. However, the manuscript doesn't fully explain why this single MRE is so critical when multiple MREs were predicted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "miR-488-3p directly binds Cerox1 and Complex I transcripts. Biotinylated miR-488-3p pull-down confirms physical interaction with Cerox1 and identifies 10 of 12 tested Complex I transcripts as direct binding targets. miR-488-3p directly regulates at least 12 nuclear-encoded Complex I subunit genes (31% of all).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by biotinylated miRNA pull-down assays (n=3) with appropriate negative controls. This provides direct biochemical evidence for physical interactions. The identification of 10/12 transcripts as direct targets is substantial. However, some identified targets lack predicted canonical MREs, suggesting non-canonical binding, which is acknowledged but not fully characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Human CEROX1 shows similar expression characteristics to mouse Cerox1. CEROX1 is cytoplasmic in HEK293T cells, ranks in the top 0.3% of lncRNAs and exceeds 87.5% of protein-coding genes in expression. Expression is highest in brain tissues, particularly basal ganglia and cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by cell fractionation (n=4), GTEx expression data, and tissue profiling. The high expression levels and brain enrichment parallel mouse findings, supporting conservation. The quantitative rankings provide clear benchmarks. However, the basal ganglia enrichment is used to speculate about disease relevance without direct functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CEROX1 overexpression increases mitochondrial function in human HEK293T cells. Complex I activity increases 31% and Complex III increases 18%. Seahorse analysis shows 35% increase in basal respiration (p=0.02), 31% increase in ATP-linked respiration (p=0.04), and 31% increase in maximum uncoupled respiration (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by enzyme assays (n=8) and Seahorse respirometry (n=6) with appropriate statistical testing. The effects parallel mouse findings, supporting functional conservation. However, the pattern differs slightly (Complex III vs. Complex IV affected), which may reflect species or cell-type differences but is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Cerox1 function is conserved across species. Reciprocal cross-species expression (mouse Cerox1 in human cells or human CEROX1 in mouse cells) recapitulates Complex I activity increases, demonstrating conservation over 90 million years of evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by cross-species overexpression experiments (n=8) showing functional complementation. This is strong evidence for functional conservation despite sequence divergence. However, the mouse-to-human effect appears weaker than human-to-mouse, which may reflect differences in miRNA pools or MRE compatibility but is not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C95",
+      "C96"
+    ],
+    "result": "Cerox1 represents a novel class of lncRNA regulator. It is the first evolutionarily conserved lncRNA demonstrated experimentally to regulate mitochondrial oxidative phosphorylation through post-transcriptional regulation via miRNA decoying, particularly miR-488-3p. Cerox1 and miR-488-3p represent novel targets for modulating Complex I activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 and C95-C96 synthesize the major findings. The novelty claim is supported by literature review (C92) and the comprehensive experimental evidence. The mechanism (miRNA decoying) is well-supported by multiple lines of evidence. However, the 'first' claim should be qualified as 'to our knowledge' (which it is), and the therapeutic potential (C96) is speculative without in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "miR-488-3p shares evolutionary and expression characteristics with Cerox1 and has prior links to mitochondrial function. It has an early eutherian origin, elevated brain expression, and was previously shown to alter mitochondrial dynamics in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by citations of published work. This provides important context for why miR-488-3p is a plausible mediator. However, these are not novel findings of this manuscript and represent background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The magnitude of Cerox1's effects on mitochondrial function is disease-relevant. Changes in catalytic activity match those seen in mitochondrial dysfunction diseases. Parkinson's and Alzheimer's diseases show 30-40% reductions in Complex I/IV activities. A 20% increase in Complex I activity protects against Parkinson's disease models. CEROX1 is highly expressed in basal ganglia regions vulnerable to Parkinson's and Huntington's diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by citations of published disease studies and GTEx expression data. The comparisons to disease states provide important context for physiological relevance. However, these are largely correlative observations, and direct disease relevance would require in vivo disease models or patient studies, which are not presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The manuscript situates Cerox1 within the broader context of mitochondrial complex assembly and lncRNA biology. Complex I incorporates 45 subunits into a ~1 MDa structure with dynamic subunit exchange. Previous work identified SAMMSON as a mitochondrial lncRNA, but nuclear-encoded cytosolic lncRNAs had not been implicated in OXPHOS regulation. miRNA-mediated mRNA turnover occurs on ribosomes, and fewer than 20% of lncRNAs are conserved across mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 provide important background context supported by appropriate citations. These establish the novelty and significance of the findings but are not novel results of this manuscript. The literature review appears accurate and comprehensive.",
+    "result_type": "MINOR"
+  }
+]

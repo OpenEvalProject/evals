@@ -1,0 +1,161 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C21",
+      "C22",
+      "C43",
+      "C54"
+    ],
+    "result": "MGC is a dependence test that combines k-nearest neighbors, kernel methods, and multiscale analysis. The method is theoretically valid and universally consistent for distributions with finite second moments, with computational complexity O(n\u00b2log n), similar to existing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, C21 establish the theoretical foundation through citation to a companion paper (Shen et al., 2018) proving validity and consistency. C22 provides computational complexity analysis. C43 and C54 describe specific theoretical properties. The theoretical results are appropriately delegated to a separate mathematical manuscript, which is standard practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C35",
+      "C36"
+    ],
+    "result": "In a benchmark suite of 20 relationships across dimensions 1-1000, MGC achieves the highest or near-highest power with 100 samples. For high-dimensional non-monotonic relationships, other universally consistent methods require approximately double the sample size to achieve equivalent power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by extensive simulation results (Figure 2, Table 1). The benchmark includes 20 diverse relationships (C35, C36) extending prior work. C12-C15 provide specific performance comparisons. However, the claim of 'double or triple' samples (C2, C15) appears to be based on median values across specific relationship types, which may not generalize uniformly. The simulations use fixed parameters (n=100, specific noise levels) that may not reflect all practical scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C63"
+    ],
+    "result": "MGC uniquely characterizes the latent geometry of relationships through the MGC-Map. For monotonic dependencies, the optimal scale is global; for non-monotonic dependencies, MGC selects smaller local scales. Similar dependencies produce similar MGC-Maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by Figure 3 showing MGC-Maps for all 20 simulated relationships. C21 establishes theoretical convergence. Theorem 1 (referenced in text) proves that linear relationships yield global optimal scales. However, the interpretation of 'geometric characterization' (C3, C63) is somewhat subjective - the MGC-Map provides scale information but the connection to underlying geometry requires inference and may not be unique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "In brain imaging data, MGC detects significant relationships between rs-fMRI activity and personality (p=0.043) where global methods fail, and between brain connectivity and creativity (p=0.011). MGC correctly controls false positive rates at 5% when \u03b1=0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by Table 2 and Figure 4A-B. C26 shows MGC achieves p<0.05 while Dcorr, Mcorr, Hhg fail at this threshold. C28-C29 show detection of connectivity-creativity relationship with global optimal scale. C30 demonstrates proper false positive control. However, the activity-personality result (p=0.043) is marginally significant and close to the threshold. The sample sizes are not clearly stated in the claims, limiting assessment of statistical power. The interpretation of MGC-Maps as 'strongly nonlinear' (C27) vs 'linear' (C29) is qualitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MGC identified neurogranin as a protein with strong dependency specifically with pancreatic cancer. Literature searches suggest neurogranin is a potentially valuable biomarker. In k-NN classification, neurogranin selected by MGC achieves better true/false positive rates than peptides selected by Hsic or Hhg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C31 is supported by Figure 4C showing neurogranin with low p-value. C32 cites literature supporting biological plausibility. However, C33's classification validation is limited - it uses leave-one-out cross-validation on the same dataset used for discovery, which is circular and prone to overfitting. No independent validation cohort is provided. The claim that neurogranin 'has not been linked with any other cancer type' (C32) is a negative claim that's difficult to verify comprehensively. Multiple testing correction details are not provided in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In illustrative linear and spiral relationships between cloud density and grass wetness, MGC demonstrates that all pairwise distances are informative for linear relationships (selecting global scale), while only local distances are informative for nonlinear relationships (selecting local scale).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 describe the pedagogical example in Figure 1, which effectively illustrates MGC's adaptive scale selection. The linear relationship shows global correlation (C55-C56, C59, C61) while the spiral shows local structure (C57-C58, C60). This is a constructed example designed to demonstrate the method's behavior, not an empirical validation. The example successfully motivates the approach but doesn't constitute evidence of real-world performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C34"
+    ],
+    "result": "Prior dependence tests include Pearson (1895), Dcorr (universally consistent for finite second moments), and Hsic (kernel version of energy statistics). No existing test performs well on high-dimensional nonlinear data with typical sample sizes, and existing tests don't characterize dependency structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C34 accurately cite prior work on dependence testing methods and their theoretical properties. C8 and C9 represent the authors' assessment of gaps in existing methods, which motivates MGC development. These claims are appropriately supported by citations. However, C8's claim that 'no test performs particularly well' is somewhat subjective and depends on what constitutes 'typical sample sizes' and 'particularly well.' C9's claim about characterization is accurate to the authors' knowledge but represents a literature gap claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C45",
+      "C46"
+    ],
+    "result": "MGC's default implementation uses Euclidean distance, requires O(n\u00b2) space and time, and is available in MATLAB, R, and Python at https://mgc.neurodata.io/.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C42 states the default metric choice with citation to consistency guarantees. C45 acknowledges computational limitations for very large datasets. C46 provides code availability information. These are straightforward implementation details that are verifiable and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C44"
+    ],
+    "result": "MGC can be interpreted as regularized distance/kernel methods and adapted for goodness-of-fit, ANOVA, conditional dependence, feature selection, and K-sample testing. MGC is the first dependence test addressing valid post-selection inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37, C39, C40, C41 describe potential extensions and connections to other methods, supported by citations. However, these are largely speculative - the actual adaptations are not demonstrated in this work. C44's claim about 'first' for post-selection inference is a priority claim that's difficult to verify and may be overstated, as the permutation procedure doesn't fully solve post-selection inference problems (the scale selection still occurs on the same data used for testing). These represent discussion points rather than validated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Spiral relationships are prevalent in nature (shells, hurricanes, galaxies) and canonical in manifold learning evaluations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C64, C65) provide general scientific context with appropriate citation (Lee and Verleysen, 2007) to justify using spiral relationships in simulations. This is background knowledge appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

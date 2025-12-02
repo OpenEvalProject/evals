@@ -1,0 +1,2187 @@
+{
+  "submission": {
+    "id": "1a34a78c-3164-42c2-a5be-00414e7ec321",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:49:21.512303Z",
+    "updated_at": "2025-12-02T06:49:21.512303Z"
+  },
+  "content": [
+    {
+      "id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "submission_id": "1a34a78c-3164-42c2-a5be-00414e7ec321",
+      "content_type": "manuscript",
+      "content_text": "# Structures of translationally inactive mammalian ribosomes\n\n## Authors\n\n- Alan Brown<sup>1</sup> ([ORCID: 0000-0002-0021-0476](https://orcid.org/0000-0002-0021-0476)) \u2020\n- Matthew R Baird<sup>1</sup>\n- Matthew CJ Yip<sup>2</sup> ([ORCID: 0000-0002-2505-9987](https://orcid.org/0000-0002-2505-9987))\n- Jason Murray<sup>3</sup> ([ORCID: 0000-0002-8679-8281](https://orcid.org/0000-0002-8679-8281))\n- Sichen Shao<sup>2</sup> ([ORCID: 0000-0003-2679-5537](https://orcid.org/0000-0003-2679-5537)) \u2020\n\n### Affiliations\n\n1. Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n2. Department of Cell Biology Harvard Medical School Boston United States\n3. MRC Laboratory of Molecular Biology Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe cellular levels and activities of ribosomes directly regulate gene expression during numerous physiological processes. The mechanisms that globally repress translation are incompletely understood. Here, we use electron cryomicroscopy to analyze inactive ribosomes isolated from mammalian reticulocytes, the penultimate stage of red blood cell differentiation. We identify two types of ribosomes that are translationally repressed by protein interactions. The first comprises ribosomes sequestered with elongation factor 2 (eEF2) by SERPINE mRNA binding protein 1 (SERBP1) occupying the ribosomal mRNA entrance channel. The second type are translationally repressed by a novel ribosome-binding protein, interferon-related developmental regulator 2 (IFRD2), which spans the P and E sites and inserts a C-terminal helix into the mRNA exit channel to preclude translation. IFRD2 binds ribosomes with a tRNA occupying a noncanonical binding site, the \u2018Z site\u2019, on the ribosome. These structures provide functional insights into how ribosomal interactions may suppress translation to regulate gene expression.\n\n## Introduction\n\nTranslation is an important point of regulation for gene expression. The overall levels and activities of ribosomes are implicated in cellular differentiation, developmental disorders, and cancers (Buszczak et al., 2014; Narla and Ebert, 2010). Red blood cell differentiation and function is especially sensitive to ribosome concentrations and activity. Humans produce over two million red blood cells every second (Dzierzak and Philipsen, 2013), with hemoglobin comprising 98% of total protein content of each cell. To achieve this, translation is optimized for hemoglobin production during red blood cell differentiation (Mills et al., 2016; Smith and McNamara, 1971). This translational program occurs predominantly in enucleated cells, precluding transcriptional control and relying solely on preexisting ribosomes and translational factors before the ribosomes are degraded upon terminal differentiation (Rowley, 1965).\n\nUnderscoring the importance of ribosomal activity in blood cell differentiation, mutations in ribosomal proteins, ribosome-assembly factors, and the ribosome-degradation machinery manifest as blood disorders (Draptchinskaia et al., 1999; Ebert et al., 2008) and are often found in cancers of blood cells (De Keersmaecker et al., 2013; Ljungstr\u00f6m et al., 2016). A recent study demonstrated that mutations that cause Diamond-Blackfan anemia alter global ribosome levels, which dictates the mRNAs that are translated (Khajuria et al., 2018). Similarly, mutations in the ubiquitination machinery required to eliminate ribosomes during terminal red blood cell differentiation results in anemia in mice (Nguyen et al., 2017).\n\nAlthough controlling absolute ribosome levels is an effective mechanism to regulate gene expression, assembling and degrading ribosomes is slow and requires significant energy consumption (Kressler et al., 2010; Warner, 1999). For faster responses, two mechanisms are known to acutely and reversibly repress global translation in eukaryotes. The first is phosphorylation of translation initiation factor eIF2\u03b1, which dampens protein synthesis by preventing the formation of productive translation initiation complexes (Wek et al., 2006). In mammals, four distinct kinases phosphorylate eIF2\u03b1 in response to different cellular stresses, including nutrient deprivation, endoplasmic reticulum (ER) stress, viral infections, and heme deprivation (Chen, 2014). The second mechanism is translational repression by the yeast Stm1 protein or its mammalian homolog, SERPINE mRNA-binding protein 1 (SERBP1). Stm1 directly binds and sequesters 80S ribosomes (Balagopal and Parker, 2011; Van Dyke et al., 2006). This function of Stm1 is thought to preserve ribosomes during nutrient deprivation (Van Dyke et al., 2013) and may influence the degradation of some mRNAs (Balagopal and Parker, 2011).\n\nDespite emerging evidence of the importance of global translation levels on short- and long-term gene regulation, other mechanisms for modulating ribosome activities remain poorly characterized. Here, we use electron cryomicroscopy (cryo-EM) to analyze translationally inactive ribosomes isolated from mammalian reticulocytes, the penultimate stage of red blood cell differentiation (Dzierzak and Philipsen, 2013). In addition to observing ribosomes silenced by SERBP1, we identify interferon-related developmental regulator 2 (IFRD2) as a novel factor capable of translationally inactivating ribosomes. IFRD2 directly binds 80S ribosomes, precluding binding of mRNA and P-site tRNA. We additionally observe deacylated tRNA occupying a noncanonical binding site on the mammalian ribosome that is exploited by viral internal ribosome entry site (IRES)-mediated translation. We observe tRNA in this site in the presence and absence of either IFRD2 and P-site tRNA. Together, these findings identify new ribosomal interactions that may modulate global translation activity during erythropoiesis and in other differentiating cells.\n\n## Results\n\n### Identification of translationally inactive ribosomes in reticulocyte lysate\n\nWe previously used a cell-free translation system derived from rabbit reticulocyte lysate to isolate various ribosomal complexes for cryo-EM analysis (Brown et al., 2015b; Shao et al., 2016). Despite biochemical enrichment for specific complexes, the target structures generally derived from 10%\u00a0to\u00a020% of the particles within each cryo-EM dataset. The remaining particles are various translation intermediates and inactive ribosomes that copurify with the target complex. To characterize these reticulocyte ribosomal populations, we reanalyzed a combined cryo-EM dataset of 971,191 ribosomal particles purified from in vitro translation reactions containing a dominant-negative release factor (DN-eRF1) added to enrich for translational termination complexes (Brown et al., 2015b). These datasets were imaged under identical conditions, with the only difference being the identity of the stop codon in the mRNA used to program the in vitro translation reactions. As all stop codons adopt the same structural fold (Brown et al., 2015b), these samples can be considered biochemically and structurally analogous.\n\nThree-dimensional classification of the combined dataset of ribosomal particles identified nine structurally distinct classes of 80S ribosomes (Figure 1; Table 1). These included the target termination complex and known intermediates of translation. Notably, we did not observe any empty 80S ribosomes lacking a bound tRNA or protein factor. Four classes represented non-translating ribosomes based on the absence of canonical tRNAs. These structures fall into three types of translationally inactive 80S ribosomes (1) bound to eEF2 and SERBP1, (2) bound to IFRD2, and (3) containing a tRNA in a noncanonical binding site.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40486/elife-40486-fig1-v2.jpg)\n\n**Figure 1.:** In silico classification of a cryo-EM dataset of ribosomal particles reveals known intermediates of translation and translationally inactive 80S ribosomes. The overall resolution and number of particles that make up the reconstruction are shown for each complex.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40486/elife-40486-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Fourier-shell-correlation (FSC) curves for each reported cryo-EM reconstruction. FSC values at 0.5 and 0.143 are indicated with dashed lines. (B) The cryo-EM map for each factor colored by local resolution. (C) Validation curves.\n\n### SERBP1 traps eEF2 on different conformations of inactive ribosomes\n\nThe two most abundant classes of non-translating ribosomes are distinct conformations (rotated and unrotated) of 80S ribosomes bound to the elongation factor eEF2 (Figure 2\u2014figure supplement 1A). eEF2 normally catalyzes the translocation of mRNA and peptidyl-tRNA during translation, although its association with inactive ribosomes is well established (Liu and Qian, 2016). Closer inspection reveals that all maps of non-translating ribosomes with eEF2 in our dataset also contain SERBP1 in the mRNA entrance channel (Figure 2A,B). It is possible that eEF2 requires SERBP1 to form stable interactions with inactive ribosomes. Our map resolution (3.4 \u00c5) allows the reassignment of SERBP1 residues from a 5.4 \u00c5-resolution cryo-EM structure of eEF2-SERBP1 on the human ribosome (Anger et al., 2013) to produce a model that is more consistent with the structure of Stm1 on the yeast ribosome (Ben-Shem et al., 2011) and cross-linking data (Liu et al., 2015).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40486/elife-40486-fig2-v2.jpg)\n\n**Figure 2.:** Comparison of (A) SERBP1 (SERPINE1 mRNA-binding protein 1) and eEF2 (eukaryotic elongation factor 2) bound to the rabbit ribosome with (B) Stm1 bound to the yeast ribosome (PDB 4V88). (C) Path of SERBP1 and (D) Stm1 through the mRNA entrance channel. (E) Interaction between SERBP1 and eEF2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40486/elife-40486-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Overview of the two classes of 80S ribosomes bound to eEF2 and SERBP1 (see Figure 1). The small ribosomal subunit (SSU) in the rotated conformation is colored in yellow, with the corresponding eEF2 density colored in blue. The other unrotated class is aligned to this map via the large ribosomal subunit (LSU), with the corresponding SSU and eEF2 densities colored in grey and green, respectively. (B) Density of SERBP1 (purple) displaying interactions with 18S rRNA and the uS3 protein in the mRNA entrance channel of the small ribosomal subunit (yellow). (C) Comparison of the EM map density for SERBP1 (purple) in the rotated (top) or unrotated (bottom) ribosome. (D) Comparison of the interactions between the C-terminus of either rabbit SERBP1 (purple, left panel) or yeast Stm1 (pink, right panel) with the indicated proteins of the small ribosomal subunit. (E) Map density of the interaction between eEF2 (blue) and SERBP1 (purple). The diphthamide (diph) modification on His715 of eEF2 is indicated. (F) Map density for the GDP nucleotide (green) bound to eEF2 (blue). (G) Comparison of different conformations of the eEF2 nucleotide-binding domain on the rotated (top) and unrotated (bottom) ribosome.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40486/elife-40486-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Sequence alignment of four isoforms of rabbit SERBP1 and yeast Stm1, with highly conserved residues highlighted in blue. The segments of SERBP1 isoform two modeled from this work are shown above the sequence alignment, depicted as secondary structure.\n\nSERBP1 and Stm1 interact with the A and P sites of the ribosomal mRNA channel via conserved residues (Figure 2\u2014figure supplement 2), including a DRHS motif (residues 194\u2013197 in SERBP1) that forms a 310-helix around nucleotide C1701 of 18S rRNA (Figure 2C,D; Figure 2\u2014figure supplement 1B). The density of SERBP1 is less clear following residue 201 in the unrotated ribosome (Figure 2\u2014figure supplement 1C), potentially the result of averaging splice variants that differ at this site (Figure 2\u2014figure supplement 2). The C-termini of SERBP1 and Stm1 emerge from the mRNA channel to interact with eS10, eS12 and eS31, although the density is only sufficiently resolved to model a short helix of SERBP1 (Figure 2\u2014figure supplement 1D). Unlike Stm1, we observe no interaction between the N terminus of SERBP1 and the ribosomal large subunit.\n\nAt the A site, SERBP1 residues 198\u00a0\u2013\u00a0201 interact with domain IV of eEF2 (Figure 2E, Figure 2\u2014figure supplement 1E). This small interface is unlikely to physically anchor eEF2 to the ribosome, and the presence of GDP in the nucleotide-binding pocket of eEF2 (Figure 2\u2014figure supplement 1F) despite differences in the switch-loop conformations (Figure 2\u2014figure supplement 1G) indicates that SERBP1 does not impair GTP hydrolysis by eEF2. The exact mechanism for how SERBP1 is able to trap eEF2 on the ribosome is unclear, although there are similarities with the eEF2-inhibitor sordarin (Pellegrino et al., 2018). Like SERBP1, sordarin traps eEF2 on the yeast ribosome without impairing GTP hydrolysis or inducing large-scale structural changes in eEF2 (Pellegrino et al., 2018). Instead, sordarin binds in a pocket between domains III, IV, and V, and increases interdomain contacts to subtly constrain the domains in conformations that prevent release. SERBP1 may also constrain domain rearrangements necessary for release through its interaction with eEF2 domain IV. Thus, SERBP1 simultaneously removes a ribosome and an abundant translational GTPase from active translation.\n\n### IFRD2 binds the ribosomal core and is incompatible with translation\n\nThe second most abundant subset of translationally inactive 80S ribosomes contain IFRD2 in the intersubunit space of a nonrotated ribosome, where it occludes tRNA binding to the P and E sites (Figure 3A) and mRNA binding to the mRNA channel. We identified IFRD2 by comparing the predominantly \u03b1-helical density with the secondary structure profiles of approximately 150 candidates identified by mass spectrometry of the cryo-EM sample (Supplementary file 1). IFRD2 matches the number and length of the helices present in the map and has a sequence that fits regions of the map with well-defined density (Figure 3\u2014figure supplement 1A,B). Supporting this assignment, both IFRD2 and its paralog IFRD1 co-immunoprecipitate with endogenously tagged ribosomes from mouse embryonic stem cells (Simsek et al., 2017), although IFRD1 could be excluded here based on side-chain density (Figure 3\u2014figure supplement 1B). IFRD proteins are generally described as transcriptional regulators implicated in cellular differentiation and various human diseases (Vietor et al., 2002), although their naming as \u2018interferon-related\u2019 is apparently due to a mistaken sequence similarity with mouse interferon-\u03b2 (Tirone and Shooter, 1989). Our structure suggests that IFRD proteins regulate translation instead of, or in addition to, transcription.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40486/elife-40486-fig3-v2.jpg)\n\n**Figure 3.:** (A) IFRD2 (interferon-related developmental regulator 2) occupies the intersubunit space in a subset of ribosomes containing Z-site tRNA. (B) Model of IFRD2 colored by domain. (C) IFRD2 interacts with many of the same ribosomal elements as P-site tRNA. (D) The C-terminal \u03b1-helix of IFRD2 occupies the mRNA exit channel and follows the path taken by mRNA through the ribosome. (E) 200 nM ribosomes isolated from rabbit reticulocyte lysate were treated without or with 50 \u03bcg/mL RNase A or 10 mM EDTA for 5 min and subjected to native size fractionation on 10\u00a0\u2013\u00a050% sucrose gradients. Eleven fractions taken from the top were collected and subjected to immunoblotting for IFRD2. Absorbance readings at 254 nm are shown below.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40486/elife-40486-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Fit of the IFRD2 model (teal) to the EM density map. (B) EM density corresponding to helix 8 of IFRD2, with corresponding residues of IFRD2 and aligned residues of IFRD1 (grey) indicated. (C) Comparison of interactions of P-site tRNA (green, left panel) and IFRD2 (right panel) with rRNA and proteins (uL13 and uL5) of the large ribosomal subunit. (D) Density of the C-terminal tail of IFRD2 (green), displaying interactions with 18S rRNA, uS11, and eS26 in the mRNA exit channel.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40486/elife-40486-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Alignment of IFRD family paralog sequences from multiple eukaryotes, with highly conserved residues highlighted in purple. Secondary structure corresponding to the atomic model of IFRD2, colored as in Figure 3, is shown above.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/40486/elife-40486-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Rabbit reticulocyte lysate was directly treated without or with 50 \u03bcg/mL RNase A for 5 min and subjected to size fractionation on a 10\u00a0\u2013\u00a050% sucrose gradient. Eleven fractions collected from the top of the gradient were analyzed by SDS-PAGE and immunoblotting for IFRD2. Migration of 80S ribosomes is indicated. Note that all detectable endogenous IFRD2 is in ribosomal fractions. (B) Ribosomes isolated from reticulocyte lysate and HEK293T cell lysate by centrifugation were directly analyzed by SDS-PAGE and immunoblotting for the indicated ribosomal proteins and IFRD2. Comparing 0.2 pmol of reticulocyte ribosomes (lane 1) with a serial twofold titration of HEK293T ribosomes reveals an enrichment of IFRD2 on the former. (C) HEK293T cells overexpressing Flag-tagged IFRD2 were lysed and directly analyzed as in (A) and immunoblotting against the Flag epitope. (D) Lysates from HEK293T cells overexpressing Flag-tagged IFRD2 were subject to affinity purification via the Flag epitope. The elution and 10% equivalent input were analyzed by SDS-PAGE, Ponceau staining (top) and immunoblotting for ribosomal proteins, revealing that IFRD2 copurifies with ribosomes. (E) Ribosomes (ribo.) in the elution in (D) were pelleted and subjected to native size fractionation on a 10\u201350% gradient without or with 10 mM EDTA. Eleven fractions from the top were collected and analyzed by SDS-PAGE and immunoblotting for Flag-tagged IFRD2. (F) Cryo-EM map of Flag-tagged IFRD2 on human 80S ribosomes, with the model of IFRD2 (Figure 3) docked.\n\n**Table 1.**\n Structurally distinct classes identified within a cryo-EM dataset of 971,191 ribosomal particles.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Ribosomal complex</th>\n      <th>Resolution (\u00c5)</th>\n      <th>Particles</th>\n      <th>% of particles</th>\n      <th>EMDB accession code</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">80S classes (unrotated)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>80S \u2022 P</td>\n      <td>5.9</td>\n      <td>2101</td>\n      <td>0.2</td>\n      <td>9234</td>\n    </tr>\n    <tr>\n      <td>80S \u2022 P \u2022 E</td>\n      <td>3.8</td>\n      <td>23,945</td>\n      <td>2.5</td>\n      <td>9235</td>\n    </tr>\n    <tr>\n      <td>80S \u2022 P \u2022 E \u2022 eRF1 \u2022 ABCE1</td>\n      <td>3.6</td>\n      <td>83,682</td>\n      <td>8.6</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>80S \u2022 Z</td>\n      <td>4.2</td>\n      <td>10,783</td>\n      <td>1.1</td>\n      <td>9236</td>\n    </tr>\n    <tr>\n      <td>80S \u2022 Z \u2022 P</td>\n      <td>3.6</td>\n      <td>62,560</td>\n      <td>6.4</td>\n      <td>9237</td>\n    </tr>\n    <tr>\n      <td>80S \u2022 Z \u2022 IFRD2</td>\n      <td>3.4</td>\n      <td>74,031</td>\n      <td>7.6</td>\n      <td>9239</td>\n    </tr>\n    <tr>\n      <td>80S \u2022 eEF2 \u2022 SERBP1 (head swivel)</td>\n      <td>3.3</td>\n      <td>146,801</td>\n      <td>15.1</td>\n      <td>9240</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">80S classes (rotated)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>80S \u2022 A/P \u2022 P/E</td>\n      <td>3.8</td>\n      <td>33,664</td>\n      <td>3.5</td>\n      <td>9241</td>\n    </tr>\n    <tr>\n      <td>80S \u2022 eEF2 \u2022 SERBP1</td>\n      <td>3.4</td>\n      <td>133,480</td>\n      <td>13.7</td>\n      <td>9242</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Model statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>80S \u2022 Z \u2022 P</th>\n      <th>80S \u2022 Z \u2022 IFRD2</th>\n      <th>80S \u2022 eEF2 \u2022 SERBP1 (head swivel)</th>\n      <th>80S \u2022 eEF2 \u2022 SERBP1 (rotated)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Model composition</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>11,547</td>\n      <td>11,901</td>\n      <td>12,760</td>\n      <td>12,591</td>\n    </tr>\n    <tr>\n      <td>RNA bases (+modified bases)</td>\n      <td>5686 (40)</td>\n      <td>5603 (26)</td>\n      <td>5534 (36)</td>\n      <td>5528 (40)</td>\n    </tr>\n    <tr>\n      <td>Ligands (Zn2+/Mg2+)</td>\n      <td>8/297</td>\n      <td>8/311</td>\n      <td>8/297</td>\n      <td>8/298</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>3.6</td>\n      <td>3.4</td>\n      <td>3.3</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B factor (\u00c52)</td>\n      <td>\u2212101.9</td>\n      <td>\u221295.5</td>\n      <td>\u221297.1</td>\n      <td>\u221295.1</td>\n    </tr>\n    <tr>\n      <td>Average B factor (\u00c52)</td>\n      <td>75.6</td>\n      <td>51.8</td>\n      <td>84.1</td>\n      <td>86.1</td>\n    </tr>\n    <tr>\n      <td>Correlation coefficient volume mask</td>\n      <td>0.844 0.865</td>\n      <td>0.825 0.853</td>\n      <td>0.847 0.862</td>\n      <td>0.847 0.862</td>\n    </tr>\n    <tr>\n      <td>Rms deviations</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.010</td>\n      <td>0.009</td>\n      <td>0.007</td>\n      <td>0.008</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.2</td>\n      <td>1.1</td>\n      <td>1.1</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>Validation (proteins)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>1.79</td>\n      <td>1.64</td>\n      <td>1.68</td>\n      <td>1.71</td>\n    </tr>\n    <tr>\n      <td>Clashscore, all atoms</td>\n      <td>5.8</td>\n      <td>5.0</td>\n      <td>5.6</td>\n      <td>5.7</td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers (%)</td>\n      <td>1.3</td>\n      <td>0.8</td>\n      <td>0.9</td>\n      <td>0.9</td>\n    </tr>\n    <tr>\n      <td>EMRinger score</td>\n      <td>2.87</td>\n      <td>3.24</td>\n      <td>2.86</td>\n      <td>2.97</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>94.0</td>\n      <td>94.3</td>\n      <td>94.5</td>\n      <td>94.0</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0.1</td>\n      <td>0.1</td>\n      <td>0.1</td>\n      <td>0.1</td>\n    </tr>\n    <tr>\n      <td>Validation (RNA)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Probably wrong sugar puckers (%)</td>\n      <td>1.6</td>\n      <td>1.5</td>\n      <td>1.6</td>\n      <td>1.4</td>\n    </tr>\n    <tr>\n      <td>Bad backbone conformations (%)</td>\n      <td>23.6</td>\n      <td>23.6</td>\n      <td>22.8</td>\n      <td>22.0</td>\n    </tr>\n    <tr>\n      <td>PDB</td>\n      <td>6MTB</td>\n      <td>6MTC</td>\n      <td>6MTD</td>\n      <td>6MTE</td>\n    </tr>\n  </tbody>\n</table>\n\nThe core of IFRD2 (residues 71\u00a0\u2013\u00a0342), which follows an unstructured N-terminus absent in our reconstruction, adopts an Armadillo-type fold formed by six HEAT repeats (Figure 3B). Each HEAT repeat contains two \u03b1-helices linked by a short loop that together form a curved \u03b1-solenoid. A small globular domain of IFRD2 (residues 343\u00a0\u2013\u00a0400) binds the concave surface of the \u03b1-solenoid and contacts each repeat. These core domains occupy the same space as a P-site tRNA and interact with many of the same ribosomal elements (Figure 3C). For example, an \u03b1-helix of IFRD2 (residues 375\u2013384) contacts H69 of 28S rRNA at the same place as the D stem of a P-site tRNA, and IFRD2 interactions with uL5 and uL13 are reminiscent of those made by the P-site tRNA acceptor arm (Figure 3\u2014figure supplement 1C). IFRD2 also interacts with the ribosomal small subunit through a C-terminal tail containing an \u03b1-helix that protrudes into the mRNA exit channel (Figure 3D, Figure 3\u2014figure supplement 1D). Its path through the channel follows that of mRNA: it starts at the P site, extends through the E site, and ends by contacting ribosomal proteins uS11 and eS26 at the channel exit. The \u03b1-helix forms multiple electrostatic interactions with the rRNA phosphate backbone that lines the channel via highly conserved residues (Figure 3\u2014figure supplement 2), suggesting that other IFRD proteins bind the ribosome with a similar insertion.\n\nThese interactions indicate that IFRD2 engages non-translating ribosomes with vacant mRNA channels and precludes further translation. Although a previous large-scale mass spectrometry study suggested that the ribosomal interaction of IFRD1 and IFRD2 are sensitive to RNase treatment (Simsek et al., 2017), treating reticulocyte lysate or ribosomes with RNase collapses mRNA-dependent polysomes but does not disrupt the stoichiometric association of endogenous IFRD2 with 80S ribosomes (Figure 3E; Figure 3\u2014figure supplement 3A). This is consistent with our structure showing that IFRD2 binds to core ribosomal features independently of mRNA and tRNAs.\n\nThe observation that almost 8% of particles in the dataset contain IFRD2 suggests that it is highly abundant in reticulocytes. Indeed, IFRD2 appears to be\u00a0~8 fold less abundant on human HEK293T ribosomes compared to reticulocyte ribosomes (Figure 3\u2014figure supplement 3B). Overexpressed Flag-tagged human IFRD2 in HEK293T cells also associates and copurifies with 80S ribosomes independent of RNase treatment (Figure 3\u2014figure supplement 3C\u2013E), further supporting the specific association of IFRD2 with ribosomes. We collected a small cryo-EM dataset of affinity purified IFRD2-containing ribosomes from HEK293T cells, which confirmed that IFRD2 binds human ribosomes identically as those observed in the reticulocyte sample (Figure 3\u2014figure supplement 3F).\n\n### A new tRNA-binding site on the mammalian ribosome\n\nAll ribosomes bound to IFRD2 in the reticulocyte dataset also contain a tRNA in an extreme position on the ribosome past the E site that we call the \u2018Z site\u2019 (Figure 3A). Although we could not distinguish any IFRD2-containing reticulocyte ribosomes lacking Z-site tRNA, we do not observe Z-site tRNA in the reconstruction of IFRD2 on the human ribosome (Figure 3\u2014figure supplement 3F), indicating that Z-site tRNA is not required for IFRD2 binding. In the combined dataset of reticulocyte ribosomes, Z-site tRNA also binds 80S ribosomes alone and with peptidyl-tRNA (Figure 1) but would clash with an E-site tRNA (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40486/elife-40486-fig4-v2.jpg)\n\n**Figure 4.:** (A) Position of Z-site tRNA on the ribosome in the presence of a P-site tRNA. Docked E-site tRNA (shown in cartoon representation) is incompatible with a Z-site tRNA. (B) Interactions between the Z-site tRNA (CCA nucleotides shown in stick representation) and the 60S ribosomal subunit. (C) Interaction between the anticodon stem-loop (anticodon nucleotides shown in stick representation) of Z-site tRNA and eS25. (D) Cryo-EM map of CrPV IRES (EMD-2599), with the L1.1 and stem-loop V (SLV) domains, which make similar interactions as Z-site tRNA, indicated, bound to the Kluyveromyces lactis ribosome. LSU \u2013 large ribosomal subunit; SSU \u2013 small ribosomal subunit; IRES \u2013 internal ribosome entry site; SLV \u2013 stem-loop V.\n\nLike the universal tRNA-binding positions, Z-site tRNA bridges the ribosomal subunits. Three distinct interactions are observed between the tRNA and the large subunit. First, the backbone of the 3\u2019 CCA binds a lysine-rich stretch of eL42 (residues 27\u00a0\u2013\u00a030) (Figure 4B). Second, the acceptor arm binds the backbone of helix 68 of 28S rRNA (nucleotides 3730\u00a0\u2013\u00a03732), and third, the elbow of the Z-site tRNA interacts with the L1 stalk (Figure 4B). At the head of the 40S subunit, the anticodon stem-loop of the Z-site tRNA binds a positively charged site on the non-essential ribosomal protein, eS25 (Figure 4C). Although eS25 has not been shown to bind tRNAs previously, it is a common binding site for internal ribosome entry site (IRES) sequences utilized by many viruses, including human immunodeficiency virus (HIV) and the hepatitis C virus (Quade et al., 2015; Yamamoto et al., 2015), to initiate translation of viral RNA on host ribosomes. The Z-site tRNA most closely resembles the ribosome-binding conformation of the cricket paralysis virus (CPrV) IRES (Fern\u00e1ndez et al., 2014), which also bridges eS25 and the ribosomal L1 stalk (Figure 4D). Thus, viruses appear to exploit the Z site for IRES-mediated translation.\n\n## Discussion\n\nOur structural analysis of reticulocyte ribosomes in a large cryo-EM dataset has revealed new insights into ribosome inactivation in mammals. We identify new similarities between yeast Stm1 and mammalian SERBP1, reveal the interactions that sequester eEF2 on the ribosome, and redefine the IFRD family as ribosome-silencing proteins.\n\nAs proposed for Stm1, IFRD2 may repress translation during cellular stress. Previous studies indicate that IFRD2 expression is induced in specific circumstances, such as tetradecanoyl phorbol acetate treatment and serum replenishment after starvation (Varnum et al., 1989). In addition, IFRD proteins appear to escape translational repression by stress-induced eIF2\u03b1 phosphorylation via an upstream open-reading frame (uORF) (Andreev et al., 2015; Zhao et al., 2010). IFRD proteins may also provide a general mechanism to reduce translational output, which may explain the pleiotropic effects of IFRD ablation on the differentiation of various cell types (Vietor et al., 2002).\n\nOur results suggest that IFRD2 is especially abundant on ribosomes in reticulocytes, the immediate precursors to red blood cells. Reticulocytes also express enhanced levels of other factors that can suppress protein synthesis, including the heme-dependent eIF2\u03b1 kinase HRI (Crosby et al., 1994). Considering the importance of ribosomal levels (Khajuria et al., 2018) and global translational regulation (Grevet et al., 2018) on red blood cell differentiation and function, IFRD2 may offer an additional layer of translational control to dictate blood cell fate.\n\nWhile SERBP1 and IFRD2 may act redundantly to inactivate mammalian ribosomes, our structures suggest they target different subsets of ribosomes and may induce different fates. In yeast, Stm1-inactivated ribosomes are recycled after starvation by Dom34-Hbs1 (Pelota-Hbs1l in mammals) and Rli1 (ABCE1 in mammals) (van den Elzen et al., 2014). Whether IFRD2-silenced ribosomes are similarly rescued, and the physiological conditions and timescales of these processes, remain to be determined. The regulation of these two mechanisms may impact their role on global translation activity during different types of cellular differentiation and stress.\n\nWe additionally observe Z-site tRNA on all reticulocyte ribosomes containing IFRD2. Although we cannot rule out the possibility that a tRNA in the Z site results from an artefact of isolating these samples, the stable association of Z-site tRNA and the similarity with IRES interactions supports the idea that the Z site is a preferred binding site for certain RNA structures, potentially including cellular mRNAs. In yeast, knocking out eS25, a key interacting partner of Z-site tRNA, decreases global protein synthesis and slows growth (Ferreira-Cerca et al., 2005; Landry et al., 2009). A recent study also suggests that eS25 is expressed at substoichiometric levels relative to total ribosomes in mammals, and that ribosomes containing eS25 may preferentially translate subsets of mRNAs (Shi et al., 2017).\n\nThe Z-site may represent a late-stage intermediate of tRNA ejection downstream of the E site. This hypothesis is supported by the observation that Z-site tRNA can bind simultaneously with a P-site tRNA but not a canonical E-site tRNA, and that Z-site tRNA interacts with the L1 stalk, which interacts with all known tRNA-ejection intermediates in bacteria (Agrawal et al., 2000) (Zhang et al., 2018). However, the interaction of Z-site tRNA with the eukaryotic-specific proteins eL42 and eS25 suggests that the Z site is distinct from bacterial tRNA-ejection intermediates.\n\nA Z-site tRNA ejection intermediate would be transient during active translation, occurring only before the next translocation event. Therefore, the presence of a stably bound Z-site tRNA could act as signature of a translationally incompetent ribosome regardless of whether it engages the Z site from the E site or from a pool of deacylated tRNAs in the cytosol. In this scenario, tRNA binding to the Z site is more likely when deacylated tRNA levels rise, for example by amino acid depletion, or when translational factors are limiting. Intriguingly, deacylated tRNAs, a yeast-specific tRNA ejection factor, and stalled ribosomes are all implicated in regulating the integrated stress response by the GCN2 kinase (Ishimura et al., 2016; Ramirez et al., 1991; Visweswaraiah et al., 2012).\n\nOur unexpected observation of IFRD2 and a new tRNA position on the mammalian ribosome highlights the ability of mining cryo-EM datasets to reveal new biological interactions from heterogeneous samples. This strategy is directly applicable to identifying and visualizing binding partners of other biological assemblies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell Line (H. sapiens)</td>\n      <td>HEK293T</td>\n      <td>American Type Culture Collection</td>\n      <td>Cat# CRL-3216 RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1-3xFLAG-TEV-IFRD2</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Mammalian expression vector expressing Flag-tagged IFRD2 behind a CMV promoter</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IFRD2</td>\n      <td>Invitrogen</td>\n      <td>Cat# PA5-48833 RRID:AB_2634289</td>\n      <td>IB: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FLAG M2</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# F3165 RRID:AB_259529</td>\n      <td>IB: 1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>uL2</td>\n      <td>Abcam</td>\n      <td>Cat# ab169538 RRID:AB_2714187</td>\n      <td>IB: 1:10000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>eS24</td>\n      <td>Abcam</td>\n      <td>Cat# ab196652 RRID:AB)2714188</td>\n      <td>IB: 1:3000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HRP anti-mouse</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat# 115-035-003 RRID:AB_10015289</td>\n      <td>IB: 1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HRP anti-rabbit</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>Cat# 111-035-003 RRID:AB_2313567</td>\n      <td>IB: 1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FLAG M2 agarose resin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# A2220 RRID:AB_10063035</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>3X FLAG peptide</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# F4799</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>RNase A</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# R6513</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dulbecco's Modified Eagle Medium (DMEM)</td>\n      <td>Gibco/Thermo Fisher</td>\n      <td>Cat# 10569</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>HyClone Fetal Bovine Serum</td>\n      <td>GE Healthcare Life Sciences</td>\n      <td>Cat# SH30910.03</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trypsin-EDTA</td>\n      <td>Gibco/Thermo Fisher</td>\n      <td>Cat# 25200</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>OptiMEM</td>\n      <td>Gibco/Thermo Fisher</td>\n      <td>Cat# 31985</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TransIT 293</td>\n      <td>Mirus</td>\n      <td>Cat# MIR2705</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EDTA</td>\n      <td>GrowCells</td>\n      <td>Cat# MRGF-1202</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SuperSignal West Pico</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# 34080</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (O. cuniculus)</td>\n      <td>Rabbit reticulocyte lysate</td>\n      <td>Green Hectares</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION-2.0 or RELION-2.1</td>\n      <td>Kimanius et al., 2016</td>\n      <td>RRID:SCR_016274</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/relion</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>Zheng et al., 2017</td>\n      <td>RRID:SCR_016499</td>\n      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GCTF</td>\n      <td>Zhang, 2016</td>\n      <td>RRID:SCR_016500</td>\n      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>Pettersen et al., 2004</td>\n      <td>RRID:SCR_004097</td>\n      <td>https://www.cgl.ucsf.edu/chimera/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot v.0.8.9</td>\n      <td>Brown et al., 2015a</td>\n      <td>RRID:SCR_014222</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>I-TASSER</td>\n      <td>Zhang, 2008</td>\n      <td>RRID:SCR_014627</td>\n      <td>https://zhanglab.ccmb.med.umich.edu/I-TASSER/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>Adams et al., 2010</td>\n      <td>RRID:SCR_014224</td>\n      <td>https://www.phenix-online.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MolProbity v.4.3.1</td>\n      <td>Chen et al., 2010</td>\n      <td>RRID:SCR_014226</td>\n      <td>http://molprobity.biochem.duke.edu/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>EMRinger</td>\n      <td>Barad et al., 2015</td>\n      <td>N/A</td>\n      <td>http://emringer.com/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SBGrid</td>\n      <td>Morin et al., 2013</td>\n      <td>RRID:SCR_003511</td>\n      <td>https://sbgrid.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL</td>\n      <td>DeLano, 2002</td>\n      <td>RRID:SCR_000305</td>\n      <td>http://www.pymol.org</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SCIPION</td>\n      <td>de la Rosa-Trev\u00edn et al., 2016</td>\n      <td>N/A</td>\n      <td>http://scipion.i2pc.es/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MonoRes</td>\n      <td>Vilas et al., 2018</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmids and antibodies\n\nThe ORF of IFRD2 was subcloned into a pcDNA3.1-based vector after a CMV promoter and an N-terminal 3X Flag tag and TEV cleavage site. IFRD2 antibody was obtained from Invitrogen (PA5-48833). Anti-FLAG M2 monoclonal antibody (F3165), resin (A2220) and 3X FLAG peptide (F4799) were obtained from Sigma-Aldrich.\n\n### Mass spectrometry\n\nThree samples for mass-spectrometry analysis were prepared to identify the proteins present in the samples used for cryo-EM (Supplementary file 1). The first was prepared exactly as for cryo-EM analysis (Brown et al., 2015b). Briefly, we performed 2 mL in vitro translation reactions of a model substrate encoding an N-terminal 3X Flag tag, the autonomously folding villin headpiece domain, and the cytosolic portion of Sec61\u03b2 in the presence of 0.5 \u03bcM dominant negative eRF1 in which the catalytic GGQ motif is mutated to AAQ to trap ribosomes at stop codons. Immediately after the translation reaction, we affinity purified the stalled ribosome-nascent protein complexes via the N-terminal 3X Flag tag on the nascent protein using anti-Flag M2 agarose beads (Sigma). The reactions were incubated with M2 affinity resin at 4\u00b0C for 1 hr, followed by three sequential 6 mL washes with: (1) 50 mM Hepes pH 7.4, 100 mM KOAc, 5 mM Mg(OAc)2, 0.1% Triton X-100, 1 mM DTT, (2) 50 mM Hepes pH 7.4, 250 mM KOAc, 5 mM Mg(OAc)2, 0.5% Triton X-100, 1 mM DTT, and (3) 50 mM Hepes pH 7.4, 100 mM KOAc, 5 mM Mg(OAc)2, 1 mM DTT. Two sequential elutions were performed with 0.1 mg/mL 3X Flag peptide in the third wash buffer for 25 min each at room temperature. This elution was directly analyzed as \u2018sample A\u2019 (Supplementary file 1).\n\nTo reduce the identification of ribosomal protein peptides, we evenly divided the elutions into two halves. We maintained one half in physiological salt concentrations and adjusted the other half to a final concentration of 750 mM KOAc, 15 mM Mg(OAc)2. We centrifuged both samples at 100,000 rpm for 30 min in a TLA120.2 rotor to pellet ribosomes and strip off peripherally\u00a0associated proteins under the high-salt conditions. The supernatants from both spins were precipitated with trichloroacetic acid (TCA) and analyzed by SDS-PAGE and Coomassie staining. The entire gel lanes were excised and submitted for mass spectrometry analysis as \u2018sample B\u2019 (physiological salt wash) and \u2018sample C\u2019 (high-salt wash). The proteins identified by mass-spectrometry are given in Supplementary file 1.\n\n### Cell, lysate, and ribosomal treatments\n\nHEK293T cells were maintained in Dulbecco\u2019s Modified Eagle Medium (DMEM) with high glucose and 10% fetal bovine serum and verified to be mycoplasma free. Transfections of Flag-tagged IFRD2 were performed when cells were 60\u00a0\u2013\u00a070% confluency using TransIT 293 (MIRUS) according to manufacturer instructions. 16\u00a0\u2013\u00a018 hr after transfection, we lysed cells in 50 mM Hepes pH 7.4, 100 mM KOAc, 5 mM Mg(OAc)2, 0.5% Triton X-100, 1 mM DTT, and protease inhibitor cocktail. Lysates were clarified by spinning at 20,000xg at 4\u00b0C for 10 min before being subjected to biochemical treatments.\n\nWhere applicable, rabbit reticulocyte lysate (Green Hectares; Figure 3\u2014figure supplement 3A), 200 nM ribosomes (Figure 3E) isolated from reticulocytes or HEK293T cell lysate (Figure 3\u2014figure supplement 3C) were treated with 50 \u03bcg/mL RNase A at 25\u00b0C for 5 min before sucrose gradients. RNase A efficiency was confirmed after sucrose gradients by measuring absorbance at 254 nm to confirm the collapse of polysomes into monosome fractions (Figure 3E). EDTA was included with ribosomes isolated from reticulocytes (Figure 3E) or ribosomes pelleted after Flag-tagged IFRD2 affinity purification (Figure 3\u2014figure supplement 3E) at a final concentration 10 mM. All size fractionation were performed using 200 \u03bcL 10\u201350% sucrose gradients prepared in 50 mM Hepes pH 7.4, 100 mM KOAc, 5 mM Mg(OAc)2 without or with 10 mM EDTA.\n\nSamples were layered on top of the gradients and spun at 55,000 rpm using a TLS-55 rotor in an OptimaMax ultracentrifuge (Beckman Coulter) for 30 min at 4\u00b0C using the slowest acceleration and deceleration settings. Eleven 20 \u03bcL fractions were manually collected from the top for immunoblotting analysis.\n\n### Affinity purification and cryo-EM analysis of human IFRD2-80S ribosome complexes\n\nFour 10 cm plates of HEK293T cells were transfected as described above and passaged 1:4 the day after transfection. Two days later, the cells were lysed as described above and incubated with M2 anti-Flag agarose resin for 1 hr at 4\u00b0C. The resin was washed with 6 mL of lysis buffer and subjected to two sequential elutions using one column volume of 0.1 mg/mL 3X Flag peptide incubated at room temperature for 25 min. A portion of the elution was directly frozen onto cryo-EM grids, and the leftover elution was pelleted at 100,000 rpm for 40 min at 4\u00b0C in a TLA120.2 rotor to isolate ribosomes, which were subjected to biochemical analysis (Figure 3\u2014figure supplement 3E).\n\nFor cryo-EM analysis, 3 \u03bcL of the pooled elution containing\u00a0~80 nM ribosomes were directly frozen onto glow-discharged Quantifoil Cu R2/2 grids with a thin (~50 \u00c5) continuous layer of carbon using a Vitrobot Mark III at 4\u00b0C and 100% humidity with 30 s wait time and 3 s blot time. A dataset of 877 micrographs was collected using an automated data collection pipeline in SerialEM on a Talos Arctica operated at 200 kV. Images were acquired at a nominal magnification of 36,000x (corresponding to a pixel size of 1.169 \u00c5) with a Gatan K2 direct electron detector in super-resolution mode and defocus values ranging from \u22121.3 to \u22123 \u03bcm. Each movie was acquired at 5 frames/s over a total exposure time of 8 s and a dose rate of 5.4 electrons/pixel/s.\n\n### Data processing\n\nTo take advantage of recent developments in cryo-EM image processing, we reprocessed datasets of ribosomes isolated in the presence of a dominant-negative eukaryotic release factor (DN-eRF1) (Brown et al., 2015b). All processing steps were performed within RELION-2.0 or RELION-2.1 (Kimanius et al., 2016). We used MotionCor2 (Zheng et al., 2017) to correct for global and local (5 \u00d7 5 patches) beam-induced motion and to dose weight the individual frames. The motion-corrected sums without dose weighting were used for CTF estimation with GCTF (Zhang, 2016). All motion- and CTF-corrected micrographs and their Fourier transforms were inspected manually to remove those that displayed astigmatism or ice contamination.\n\nTo generate reference templates for auto-picking, 2000 ribosomal particles were picked manually and subjected to 2D classification. The best five classes (out of 10) were low-pass filtered to 20 \u00c5 and used for auto-picking in RELION (Scheres, 2015). For autopicking, a mask diameter of 360 \u00c5 and a minimum interparticle distance of 200 \u00c5 was used. The autopicked particles were extracted with a box size of 400 pixels and sorted by a Z-score generated by subtracting the reference image from the extracted particles. The sorted particles were inspected manually and non-ribosomal particles with a low Z score discarded. Retained particles were subjected to reference-free 2D classification and the best-resolved classes selected. In total, 971,191 particles were retained after 2D classification.\n\nAll selected particles were subjected to an initial round of refinement using RELION\u2019s 3D autorefine in which a 30 \u00c5 low-pass filtered map of the rabbit 80S ribosome with tRNAs but no factors (EMD-4129) (Shao et al., 2016) was used as a reference. Following refinement, a single round of three-dimensional classification without alignment was performed. This strategy was very effective at separating rotated and unrotated 80S ribosomes from 60S ribosomal subunits.\n\nTo isolate particles corresponding to different classes within the set of 80S particles we used multiple rounds of focused classification with signal subtraction (FCwSS) (Bai et al., 2015) centered on the A, P, E, and Z sites of the ribosome. These sites were chosen as they displayed nebulous density after the initial round of refinement, consistent with mixed occupancy. The use of FCwSS in classifying the data represents the most significant difference from how the maps were processed originally (Brown et al., 2015b).\n\nOnce a defined class had been isolated, the particles were realigned, and the resultant maps postprocessed in RELION. For post-processing, solvent masks were generated using relion_mask_create. Typically, these binary masks were generated from the final map from refinement low-pass filtered to 15 \u00c5 at a threshold of 0.015 or 0.02. The initial binary mask was extended by 4 \u00c5 in all directions and a raised-cosine edge was added to create a soft mask. During post-processing, phase-randomization was used to correct for the convolution effects of the solvent mask. Overall resolution estimates were calculated from Fourier shell correlations at 0.143 between the two independently refined half-maps. Final reconstructions were sharpened using automatically estimated B-factors (Rosenthal and Henderson, 2003).\n\nProcessing of the human IFRD2-80S ribosomal complex was performed in RELION 2.1 as described above. After 2D classification, 22,807 particles were subject to an initial refinement using EMD-4129 low-pass filtered to 40 \u00c5 as a reference. We used the refined map, which already had clear IFRD2 density, as a reference for 3D classification to isolate 80S ribosomes, followed by a round of FCwSS centered on IFRD2 density. A final refinement of 5714 particles resulted in an 8.3 \u00c5 map without postprocessing.\n\n### Model building and refinement\n\nOur 3.6 \u00c5 map of 80S\u2022eRF1\u2022ABCE1 complex was used as the starting point for model building. The model of the rabbit 80S ribosome in an unrotated state (PDB accession code 5LZV) (Shao et al., 2016) was fitted into this map using the \u2018fit in map\u2019 feature of Chimera (Pettersen et al., 2004). All non-ribosomal elements were deleted, and chemical modifications added to ribosomal RNA and proteins uL4 and eL40 using the cryo-EM structure of the human ribosome as a guide (Natchiar et al., 2017). This model was propagated to all other maps as individual 60S and 40S subunits. For the rotated and head-swiveled classes, the individual proteins and rRNA in the head of the 40S subunit were fitted as rigid bodies following docking of the ribosomal subunits.\n\nProtein factors and tRNAs were modeled in Coot v0.8.9 (Brown et al., 2015a). P- and E-site tRNAs were extracted from the rabbit 80S ribosome (PDB accession code 5LZV) (Shao et al., 2016). The Z-site tRNA was modeled using the same sequence as for the E-site tRNA, although the density comes from a mixture of different tRNAs. The model for the L1 stalk was built using the crystal structure of the L1-stalk fragment from Haloarcula marismortui (PDB accession code 5Ml7) as a template. The rabbit L1 protein (NCBI ID: XP_002714675) was modeled by docking a comparative model generated using I-TASSER (Zhang, 2008) and morphing it to fit the density using Phenix.real_space_refinement (Afonine et al., 2018). The model for IFRD2 (NCBI XP_002713258) was built de novo from polyalanine helices placed into the map. Sequences were assigned to these helices based on side chain density and the helices connected by manual model building in Coot. eEF2 was modeled using the model of Sus scrofa eEF2 (PDB accession code 3J7P) (Voorhees et al., 2014) as a template. Human numbering and sequence (Uniprot ID: P13639) was used as sequence information is not available for rabbit eEF2. SERBP1 isoform X2 (XP_002715981) was built de novo into the density.\n\nAll models were refined using Phenix.real_space_refinement v1.13_2998 (Afonine et al., 2018). Each round of global real-space refinement featured five macro-cycles with secondary structure, rotamer, Ramachandran, and C\u03b2-torsion restraints applied. Secondary structure restraints were determined directly from the model and recalculated for each round of refinement. For the rRNA and tRNAs present in the models, hydrogen-bonding and base-pair and stacking parallelity restraints were applied. Additional restraints were applied for the chemical modifications of the ribosome and the diphthamide modification of eEF2. These restraints were generated using phenix.readyset. The high-resolution limit was set during refinement to match the nominal resolution obtained by postprocessing in Relion.\n\nThe final models were validated using MolProbity v.4.3.1 (Chen et al., 2010) and EMRinger (Barad et al., 2015), with final statistics given in table S2. Over-fitting was monitored using cross-validation (Amunts et al., 2014) (Figure 1\u2014figure supplement 1).\n\nSoftware used in the project were installed and configured by SBGrid (Morin et al., 2013).\n\n### Figures\n\nFigure panels were generated using PyMOL (DeLano, 2002) or Chimera (Pettersen et al., 2004). Maps colored by local resolution were generated with unsharpened density maps using MonoRes (Vilas et al., 2018).\n",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "ab00f5f0-4340-405d-92d0-251c949f320b",
+      "submission_id": "1a34a78c-3164-42c2-a5be-00414e7ec321",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40486.042](https://doi.org/10.7554/eLife.40486.042)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structures of translationally inactivated mammalian ribosomes\" for consideration by eLife. Your article has been reviewed by James Manley as the Senior Editor, a Reviewing Editor and three peer reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors report cryo-EM structures of mammalian 80S ribosomes bound with SERBP1\u2022eEF2 or with IFRD2. Importantly, they document a tRNA-binding, which differs from the canonical A, P and E sites. The structures allow near-atomic interpretation of interactions between the ribosomes, SERBP1 and eEF2, shedding new light on the mechanism of SERBP1. The work describes several new findings that will be of interest to researchers in and beyond the ribosome field.\n\nEssential revisions:\n\nThe reviewers believe that your paper contains novel and interesting data, but that the paper needs revisions to (1) include reference to biochemical/biophysical work in the field (please see in the reviews below) and (2) provide a clearer explanation/review of the biological relevance of these structures as \"inactivated\" complexes. As you can see reviewer #1, in particular, is concerned whether the \"inactive\" states are just an artifact of isolation and treatment or whether they represent true inactive states that might reflect different physiological conditions. Also, there is the possibility that they represent intermediates (i.e. perhaps during recycling)?\n\nReviewer #1:\n\nThis is an interesting manuscript that reports on the structure of complexes of \"inactivated\" ribosomes. As such, these may offer little new insight into the process of translation but may be very important in elements relating to the regulation of translation and availability of ribosomal subunits. A major concern for this paper is whether the structures determined are biologically relevant as these inactive complexes have not been shown to directly be related to any process within the cell that might have generated such inactive particles (i.e. either as soluble complexes or as stress granules). Secondly, in the partial purification of ribosomal complexes, the authors use high speed centrifugation which is known to cause inactivation of ribosomes (Lu et al., 1997 or Scheck and Landau, 1982). Thus, there is the concern as to whether the complexes observed represent native structures or ones altered by hydrostatic pressure. However, that said, it is impressive that the authors can resolve so many structures from a large dataset and offers promise for the ability to readily obtain almost any ribosomal structure.\n\n1) Title \u2013 it is not clear that these ribosomes have been inactivated, but rather that they are in an inactive state as the A, P and E sites or mRNA channel are blocked. There is the possibility that some of these complexes (i.e. 80S\u2022P\u2022E\u2022eRF1\u2022ABCE1) may represent intermediates in the translation cycle (and therefore, should not be considered inactive).\n\n2) The authors use affinity tags for purification, but it is not clear that this process has actually worked. How is this population different from one where no affinity purification is used?\n\n3) It is anticipated that a comparison of the yield of different proteins as determined by mass spectrometry should be reflected in the types of particles that are examined. Is there any data that would allow one to relate the amount of protein (as reflected in Supplementary file 1 to the different ribosomal classes as identified in Table 1)?\n\n4) Supplementary file 1 \u2013 Initiation factors: the authors should identify the subunits of eIF2 as \u03b1, \u03b2 and \u03b3 so as to not confuse the reader with eIF2A, a separate initiation factor (MW 65,000). Secondly, is there any explanation as to why eIF1, 1A, 5 or 5B were not found?\n\n5) IFRD2 \u2013 The authors have failed to indicate that rabbit reticulocytes are essentially \"interferon treated cells\" in that they have elevated levels of several normally interferon induced proteins (PKR, oligo(A) synthase and RNAse L). Thus, this complex is likely to not normally be present in most tissues in the absence of exposure to interferon.\n\n6) For the Z site tRNA, is it possible that this unique conformation is influenced by eIF5A which binds in this vicinity (i.e. would this small protein have been seen?)?\n\n7) Discussion section \u2013 \"tRNA binding to the Z site is more likely during periods of elevated deacylated tRNA levels.\". This is not likely to occur as a slight increase in deacylated tRNA leads to the phosphorylation of eIF2 and the shutoff of protein synthesis (thus sparing the use of aminoacyl-tRNAs).\n\nReviewer #2:\n\nBrown and co-authors describe cryo-EM structures of mammalian 80S ribosomes bound with SERBP1\u2022eEF2 (at a higher resolution than the previously published 80S\u2022SERBP1\u2022eEF2 structural work) or with IFRD2. In addition, a tRNA-binding site is described, which differs from the canonical A, P and E sites. These results were obtained by re-evaluation of a previously published cryo-EM data set. The structures allow near-atomic interpretation of interactions between the ribosomes, SERBP1 and eEF2, bringing insights into the mechanism of SERBP1, however the authors' description of the mechanism is not clear (see below). The 80S\u2022IFRD2 structure is an exciting finding, which identifies a new protein's role in translation regulation. The new tRNA position near the E site echoes a recent work on the bacterial ribosome. The authors propose that this position is on the pathway of deacyl-tRNA dissociation from the E site. Overall this work describes several new findings that will be of interest to researchers in and beyond the ribosome field.\n\nThe following changes/clarifications are suggested:\n\n1) The mechanistic implications of SERBP1\u2022eEF2 complex remain unclear. Based on the finding of SERBP1 bound together with eEF2, the authors propose that SERBP1 depletes cellular eEF2. First, it would be helpful to expand the discussion and mention that yeast homologue Stm1 binds yeast ribosomes without eEF2. Do the mechanisms of translation regulation by Stm1 and SERBP1 differ in that the latter depletes not only the 80S but also eEF2? Alternatively, the authors may have missed 80S\u2022SERBP1 particles in their data set. Such particles may even be more abundant than 80S\u2022SERBP1\u2022eEF2 but also more dynamic, thus difficult to average and classify. Second, the mechanistic description of how SERBP1 prevents eEF2 dissociation remains vague. Comparison with other available eEF2 structures (with sordarin or other drugs and/or GDPNP/GDP nucleotides) might bring insights into how the conformational dynamics of eEF2 and/or the ribosome are affected by SERBP1.\n\n2) IFRD2 is proposed to regulate translation by binding to non-translating 80S. But could IFRD2 also bind vacant 40S and prevent translation initiation?\n\n3) Describe the rotational state of the 80S bound with P-tRNA and Z-tRNA (likely non-rotated, but it would help to state this in the paper). Does IFRD2 induce a different 80S conformation?\n\nReviewer #3:\n\nThis manuscript describes the results of a refined analysis of a data set of nearly 1 million ribosome particles obtained from an in vitro rabbit reticulocyte translation reaction in which a dominant negative release factor had been added to enrich for translation termination complexes (Brown et al., 2015b). Evidently, individual complexes only represent a small portion (5-25%) of the ribosomes isolated by the procedures used and the authors have mined this reaction for complexes other than those that have already been published to define 9 new structures (described in summary in Figure 1). There is little information in the present manuscript that describes how the complexes examined here were specifically obtained from the reticulocyte lysate, but it would appear that they work under conditions in which only 80S particles form and that the isolated 80S peak is filled with a diverse array of distinct ribosome complexes. In the Brown et al., 2015 paper it appears to describe a FLAG-tag pull down of the nascent peptide, where focus was given to the eRF1-trapped sub-population of complexes. One of the 9 complexes defined here appears to be the same structure as that which was published in Brown et al., 2015b (the eRF1-ABCE1 POST complex), indicating a duplication or positive control of sorts. While I might be able to understand how the other P-site tRNA-containing complexes were isolated by a nascent polypeptide-directed pull-down approach, it is unclear how the complexes lacking P-site tRNA were obtained (i.e. the focus of the present investigations). I would strongly suggest further clarification on these points for the sake of reproducibility.\n\nThe two translationally inactive complexes discussed in detail in Figure 2, Figure 3 and Figure 4 are certainly interesting in regards to the mechanisms by which cells may \"store\" excess ribosomes and the quality of the data appear sufficient enough to support the claims that the authors make, which are largely qualitative descriptions of the SERBP1 and IFRD2 binding sites and the global positioning of the deacylated tRNA within the E site. In this regard, I think the paper is perfectly suitable for publication.\n\nWhat appears to need further clarification and elaboration is the discussion surrounding the \"Z\" site for tRNA binding. Alternative positions for E-site tRNA have been described since the early 80s in the early fluorescence studies of eukaryotic ribosomes (Robertson and Wintermeyer, 1987; Rodnina and Wintermeyer, 1992). Movements of deacylated tRNA within the E site have also been specifically described in recent single-molecule fluorescence studies (Ferguson et al., 2015 and references therein). Although the authors state that their \"Z\" site position may be similar or related to the position (Eout) described by (Zhang et al., 2017), I don't see how they make this connection. I also don't understand the authors reference to the \"known role [of the L1 stalk] in escorting deacylated tRNA from the ribosome\", citing two bodies of work in bacteria that make no such claim or data to support such a claim. In this regard, is it really wise to give it a name other than E' or something of the sort? I fear that re-naming it the \"Z\" site will significantly complicate its description in future publications. The new position the authors see is clearly an \"E site\" position, yes?\n\nAside from these major points, the paper certainly seems publishable in its present format from my perspective.\n",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4b1a6db2-a545-4313-b931-51c053e5e15b",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C1",
+      "claim": "Humans produce over two million red blood cells every second.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans produce over two million red blood cells every second (Dzierzak and Philipsen, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dzierzak and Philipsen, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "bd4fade7-dd96-4862-837a-0821ca756a36",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C2",
+      "claim": "Hemoglobin comprises 98% of total protein content of each red blood cell.",
+      "claim_type": "EXPLICIT",
+      "source": "with hemoglobin comprising 98% of total protein content of each cell",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "627997eb-ea09-4b17-b8ff-03bc9151f441",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C3",
+      "claim": "Translation is optimized for hemoglobin production during red blood cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this, translation is optimized for hemoglobin production during red blood cell differentiation (Mills et al., 2016; Smith and McNamara, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mills et al., 2016 and Smith and McNamara, 1971",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "0c5fc9cb-dcd3-4753-91fb-8baa4b18f8bf",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C4",
+      "claim": "The translational program during red blood cell differentiation occurs predominantly in enucleated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This translational program occurs predominantly in enucleated cells, precluding transcriptional control and relying solely on preexisting ribosomes and translational factors before the ribosomes are degraded upon terminal differentiation (Rowley, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rowley, 1965",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "678cbaa3-8abd-4273-90d6-d9d5ccc98ee3",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C5",
+      "claim": "Mutations in ribosomal proteins manifest as blood disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Underscoring the importance of ribosomal activity in blood cell differentiation, mutations in ribosomal proteins, ribosome-assembly factors, and the ribosome-degradation machinery manifest as blood disorders (Draptchinskaia et al., 1999; Ebert et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Draptchinskaia et al., 1999 and Ebert et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "d8fc00ae-19e7-405a-a5c1-8622910b8f69",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C6",
+      "claim": "Mutations in ribosomal proteins are often found in cancers of blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and are often found in cancers of blood cells (De Keersmaecker et al., 2013; Ljungstr\u00f6m et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Keersmaecker et al., 2013 and Ljungstr\u00f6m et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "ae20e728-821b-4928-8fcd-3baca31eeb95",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C7",
+      "claim": "Mutations that cause Diamond-Blackfan anemia alter global ribosome levels, which dictates the mRNAs that are translated.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study demonstrated that mutations that cause Diamond-Blackfan anemia alter global ribosome levels, which dictates the mRNAs that are translated (Khajuria et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Khajuria et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "0ecf23ab-772f-40d8-a2b0-dc9606ff40c5",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C8",
+      "claim": "Mutations in the ubiquitination machinery required to eliminate ribosomes during terminal red blood cell differentiation results in anemia in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, mutations in the ubiquitination machinery required to eliminate ribosomes during terminal red blood cell differentiation results in anemia in mice (Nguyen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nguyen et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "c32e5ddc-27d8-4ce7-8423-28ac4d8f087e",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C9",
+      "claim": "Assembling and degrading ribosomes is slow and requires significant energy consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Although controlling absolute ribosome levels is an effective mechanism to regulate gene expression, assembling and degrading ribosomes is slow and requires significant energy consumption (Kressler et al., 2010; Warner, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kressler et al., 2010 and Warner, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "deb8cb4e-dc1f-42c3-9a89-fef990b58944",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C10",
+      "claim": "Phosphorylation of translation initiation factor eIF2\u03b1 dampens protein synthesis by preventing the formation of productive translation initiation complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is phosphorylation of translation initiation factor eIF2\u03b1, which dampens protein synthesis by preventing the formation of productive translation initiation complexes (Wek et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wek et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "749c796f-17ee-4d3d-bb4e-1226ce3f5738",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C11",
+      "claim": "In mammals, four distinct kinases phosphorylate eIF2\u03b1 in response to different cellular stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, four distinct kinases phosphorylate eIF2\u03b1 in response to different cellular stresses, including nutrient deprivation, endoplasmic reticulum (ER) stress, viral infections, and heme deprivation (Chen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "8afe3b7c-ac83-4060-b87b-a4a796509ad0",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C12",
+      "claim": "Stm1 directly binds and sequesters 80S ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Stm1 directly binds and sequesters 80S ribosomes (Balagopal and Parker, 2011; Van Dyke et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Balagopal and Parker, 2011 and Van Dyke et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "b90b6778-8fc6-434e-ad37-b2a810982d57",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C13",
+      "claim": "Stm1 function is thought to preserve ribosomes during nutrient deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This function of Stm1 is thought to preserve ribosomes during nutrient deprivation (Van Dyke et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Van Dyke et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "3bb14d55-6f0c-4ecf-b43d-d89aafb2c621",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C14",
+      "claim": "Stm1 may influence the degradation of some mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "and may influence the degradation of some mRNAs (Balagopal and Parker, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Balagopal and Parker, 2011, with speculative language 'may'",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "c3164a5e-4f09-4edd-9bb8-eda3c86a8ac7",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C15",
+      "claim": "Three-dimensional classification of the combined dataset of ribosomal particles identified nine structurally distinct classes of 80S ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Three-dimensional classification of the combined dataset of ribosomal particles identified nine structurally distinct classes of 80S ribosomes (Figure 1; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1 and Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "c0065120-dc60-41b1-ad4d-425fe3682dad",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C16",
+      "claim": "No empty 80S ribosomes lacking a bound tRNA or protein factor were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we did not observe any empty 80S ribosomes lacking a bound tRNA or protein factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observation from the cryo-EM data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "f48cb26a-7fdc-4f7e-9aec-83d489390738",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C17",
+      "claim": "Four classes represented non-translating ribosomes based on the absence of canonical tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Four classes represented non-translating ribosomes based on the absence of canonical tRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis of the cryo-EM data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "186cce59-3e51-498b-bdd2-472000b9e50c",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C18",
+      "claim": "The structures fall into three types of translationally inactive 80S ribosomes: (1) bound to eEF2 and SERBP1, (2) bound to IFRD2, and (3) containing a tRNA in a noncanonical binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures fall into three types of translationally inactive 80S ribosomes (1) bound to eEF2 and SERBP1, (2) bound to IFRD2, and (3) containing a tRNA in a noncanonical binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural classification from cryo-EM data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "13c91b36-807b-4758-9319-f22bc64d2ff6",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C19",
+      "claim": "The two most abundant classes of non-translating ribosomes are distinct conformations (rotated and unrotated) of 80S ribosomes bound to the elongation factor eEF2.",
+      "claim_type": "EXPLICIT",
+      "source": "The two most abundant classes of non-translating ribosomes are distinct conformations (rotated and unrotated) of 80S ribosomes bound to the elongation factor eEF2 (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data shown in Figure 2\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "6f25bac2-ac65-4958-b5b8-784974a526d0",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C20",
+      "claim": "All maps of non-translating ribosomes with eEF2 in the dataset also contain SERBP1 in the mRNA entrance channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer inspection reveals that all maps of non-translating ribosomes with eEF2 in our dataset also contain SERBP1 in the mRNA entrance channel (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural analysis shown in Figure 2A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "efed5086-b474-418b-8d11-74154f679f08",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C21",
+      "claim": "It is possible that eEF2 requires SERBP1 to form stable interactions with inactive ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that eEF2 requires SERBP1 to form stable interactions with inactive ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on structural observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "faec9e92-a2b8-4410-9f28-2240f911686f",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C22",
+      "claim": "The map resolution (3.4 \u00c5) allows the reassignment of SERBP1 residues from a 5.4 \u00c5-resolution cryo-EM structure of eEF2-SERBP1 on the human ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our map resolution (3.4 \u00c5) allows the reassignment of SERBP1 residues from a 5.4 \u00c5-resolution cryo-EM structure of eEF2-SERBP1 on the human ribosome (Anger et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on improved resolution of current data compared to previous structure cited",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "27757927-4a7c-41b3-97f5-ef4c8f835ddf",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C23",
+      "claim": "The reassigned model is more consistent with the structure of Stm1 on the yeast ribosome and cross-linking data.",
+      "claim_type": "EXPLICIT",
+      "source": "to produce a model that is more consistent with the structure of Stm1 on the yeast ribosome (Ben-Shem et al., 2011) and cross-linking data (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with cited structures and cross-linking data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "60d045f0-f95b-47f1-980d-5c3c08170163",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C24",
+      "claim": "SERBP1 and Stm1 interact with the A and P sites of the ribosomal mRNA channel via conserved residues.",
+      "claim_type": "EXPLICIT",
+      "source": "SERBP1 and Stm1 interact with the A and P sites of the ribosomal mRNA channel via conserved residues (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural analysis and sequence alignment shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "0531e196-969c-48f1-aeac-c81c0640f346",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C25",
+      "claim": "A DRHS motif (residues 194\u2013197 in SERBP1) forms a 310-helix around nucleotide C1701 of 18S rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "including a DRHS motif (residues 194\u2013197 in SERBP1) that forms a 310-helix around nucleotide C1701 of 18S rRNA (Figure 2C,D; Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "3e1a1e72-095f-4f26-b9e4-8b19f6dadadf",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C26",
+      "claim": "The density of SERBP1 is less clear following residue 201 in the unrotated ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The density of SERBP1 is less clear following residue 201 in the unrotated ribosome (Figure 2\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on observation of cryo-EM density shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "031079cb-7bcb-4906-b8b8-9ec894109117",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C27",
+      "claim": "The unclear density following residue 201 is potentially the result of averaging splice variants that differ at this site.",
+      "claim_type": "EXPLICIT",
+      "source": "potentially the result of averaging splice variants that differ at this site (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculative explanation based on sequence analysis",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "c29312c0-e004-4da7-8fb2-6caa4f5dc6e1",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C28",
+      "claim": "The C-termini of SERBP1 and Stm1 emerge from the mRNA channel to interact with eS10, eS12 and eS31.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-termini of SERBP1 and Stm1 emerge from the mRNA channel to interact with eS10, eS12 and eS31, although the density is only sufficiently resolved to model a short helix of SERBP1 (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural analysis shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "c0f62237-3f14-4731-a51a-b2bddd6351a5",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C29",
+      "claim": "Unlike Stm1, no interaction is observed between the N terminus of SERBP1 and the ribosomal large subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Stm1, we observe no interaction between the N terminus of SERBP1 and the ribosomal large subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "bb5572da-7aea-4342-a8e6-eb1480c16e28",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C30",
+      "claim": "SERBP1 residues 198\u2013201 interact with domain IV of eEF2.",
+      "claim_type": "EXPLICIT",
+      "source": "At the A site, SERBP1 residues 198 \u2013 201 interact with domain IV of eEF2 (Figure 2E, Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "fde9183e-cfb2-431a-af2a-9d9de05f0f54",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C31",
+      "claim": "The small interface between SERBP1 and eEF2 is unlikely to physically anchor eEF2 to the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This small interface is unlikely to physically anchor eEF2 to the ribosome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "86603eaa-708b-424c-a823-4c4fc1940518",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C32",
+      "claim": "The presence of GDP in the nucleotide-binding pocket of eEF2 indicates that SERBP1 does not impair GTP hydrolysis by eEF2.",
+      "claim_type": "EXPLICIT",
+      "source": "and the presence of GDP in the nucleotide-binding pocket of eEF2 (Figure 2\u2014figure supplement 1F) despite differences in the switch-loop conformations (Figure 2\u2014figure supplement 1G) indicates that SERBP1 does not impair GTP hydrolysis by eEF2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on structural observation of GDP presence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "03db50bc-9d30-49ac-b083-3380298a8758",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C33",
+      "claim": "The exact mechanism for how SERBP1 is able to trap eEF2 on the ribosome is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact mechanism for how SERBP1 is able to trap eEF2 on the ribosome is unclear",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of uncertainty",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "58ca6971-5f04-4492-9d41-5cf2643e6675",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C34",
+      "claim": "There are similarities between SERBP1 and the eEF2-inhibitor sordarin.",
+      "claim_type": "EXPLICIT",
+      "source": "although there are similarities with the eEF2-inhibitor sordarin (Pellegrino et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pellegrino et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "399b5c7e-2f34-4e7a-a3b6-a97aba5d1606",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C35",
+      "claim": "Sordarin traps eEF2 on the yeast ribosome without impairing GTP hydrolysis or inducing large-scale structural changes in eEF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Like SERBP1, sordarin traps eEF2 on the yeast ribosome without impairing GTP hydrolysis or inducing large-scale structural changes in eEF2 (Pellegrino et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pellegrino et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "aac89248-c733-48d2-9a50-c3d16b237904",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C36",
+      "claim": "Sordarin binds in a pocket between domains III, IV, and V, and increases interdomain contacts to subtly constrain the domains in conformations that prevent release.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, sordarin binds in a pocket between domains III, IV, and V, and increases interdomain contacts to subtly constrain the domains in conformations that prevent release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge from previous studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "ea0b2270-7715-4865-be1c-2443c78f24a5",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C37",
+      "claim": "SERBP1 may constrain domain rearrangements necessary for release through its interaction with eEF2 domain IV.",
+      "claim_type": "EXPLICIT",
+      "source": "SERBP1 may also constrain domain rearrangements necessary for release through its interaction with eEF2 domain IV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism based on structural comparison",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "06f07678-2c92-4cfd-b52f-a72dce2cf114",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C38",
+      "claim": "SERBP1 simultaneously removes a ribosome and an abundant translational GTPase from active translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SERBP1 simultaneously removes a ribosome and an abundant translational GTPase from active translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural and functional analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "bb00f584-7132-494d-9f20-b117ea188dc4",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C39",
+      "claim": "The second most abundant subset of translationally inactive 80S ribosomes contain IFRD2 in the intersubunit space of a nonrotated ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The second most abundant subset of translationally inactive 80S ribosomes contain IFRD2 in the intersubunit space of a nonrotated ribosome, where it occludes tRNA binding to the P and E sites (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "c5c26f67-0520-4cb4-9dde-2c0350b8f8c2",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C40",
+      "claim": "IFRD2 occludes tRNA binding to the P and E sites.",
+      "claim_type": "EXPLICIT",
+      "source": "where it occludes tRNA binding to the P and E sites (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural observation shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "475c9abe-be1e-42f3-a188-20101a893270",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C41",
+      "claim": "IFRD2 occludes mRNA binding to the mRNA channel.",
+      "claim_type": "EXPLICIT",
+      "source": "and mRNA binding to the mRNA channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "2858001b-6e01-4025-9b4f-9ffc4f0a3d8f",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C42",
+      "claim": "IFRD2 was identified by comparing the predominantly \u03b1-helical density with the secondary structure profiles of approximately 150 candidates identified by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified IFRD2 by comparing the predominantly \u03b1-helical density with the secondary structure profiles of approximately 150 candidates identified by mass spectrometry of the cryo-EM sample (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mass spectrometry data and structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "17216910-c61d-4701-a83d-c37dde652cf9",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C43",
+      "claim": "IFRD2 matches the number and length of the helices present in the map and has a sequence that fits regions of the map with well-defined density.",
+      "claim_type": "EXPLICIT",
+      "source": "IFRD2 matches the number and length of the helices present in the map and has a sequence that fits regions of the map with well-defined density (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural fitting shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "009ae86b-41c2-401c-9ad2-ad785ed96fc1",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C44",
+      "claim": "Both IFRD2 and its paralog IFRD1 co-immunoprecipitate with endogenously tagged ribosomes from mouse embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this assignment, both IFRD2 and its paralog IFRD1 co-immunoprecipitate with endogenously tagged ribosomes from mouse embryonic stem cells (Simsek et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Simsek et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "1e8a1aae-f3fc-4979-b290-0ddceea0e7e2",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C45",
+      "claim": "IFRD1 could be excluded based on side-chain density.",
+      "claim_type": "EXPLICIT",
+      "source": "although IFRD1 could be excluded here based on side-chain density (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural analysis shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "5c82e2f5-2b30-4524-b6ab-e56f259c510e",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C46",
+      "claim": "IFRD proteins are generally described as transcriptional regulators implicated in cellular differentiation and various human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "IFRD proteins are generally described as transcriptional regulators implicated in cellular differentiation and various human diseases (Vietor et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vietor et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "eb8e4b59-b252-478a-813f-d4ba27ef2972",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C47",
+      "claim": "The naming of IFRD proteins as 'interferon-related' is apparently due to a mistaken sequence similarity with mouse interferon-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "although their naming as 'interferon-related' is apparently due to a mistaken sequence similarity with mouse interferon-\u03b2 (Tirone and Shooter, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tirone and Shooter, 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "e18eb3b3-5f60-48e0-a548-1a86d65ab829",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C48",
+      "claim": "The structure suggests that IFRD proteins regulate translation instead of, or in addition to, transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure suggests that IFRD proteins regulate translation instead of, or in addition to, transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "9f8078dc-d244-4340-bdd5-d5874d8013e5",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C49",
+      "claim": "The core of IFRD2 (residues 71\u2013342) adopts an Armadillo-type fold formed by six HEAT repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "The core of IFRD2 (residues 71 \u2013 342), which follows an unstructured N-terminus absent in our reconstruction, adopts an Armadillo-type fold formed by six HEAT repeats (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural analysis shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "c18b59b4-c92b-4ffb-86f5-88959c71923c",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C50",
+      "claim": "Each HEAT repeat contains two \u03b1-helices linked by a short loop that together form a curved \u03b1-solenoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Each HEAT repeat contains two \u03b1-helices linked by a short loop that together form a curved \u03b1-solenoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "aa596812-a856-4ae2-ba40-9cfdc3c22340",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C51",
+      "claim": "A small globular domain of IFRD2 (residues 343\u2013400) binds the concave surface of the \u03b1-solenoid and contacts each repeat.",
+      "claim_type": "EXPLICIT",
+      "source": "A small globular domain of IFRD2 (residues 343 \u2013 400) binds the concave surface of the \u03b1-solenoid and contacts each repeat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "6213f170-a7a4-485d-b010-2d32200ddd77",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C52",
+      "claim": "The core domains of IFRD2 occupy the same space as a P-site tRNA and interact with many of the same ribosomal elements.",
+      "claim_type": "EXPLICIT",
+      "source": "These core domains occupy the same space as a P-site tRNA and interact with many of the same ribosomal elements (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural comparison shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "cad282ba-8b22-424e-9c65-5ed1904cfae8",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C53",
+      "claim": "An \u03b1-helix of IFRD2 (residues 375\u2013384) contacts H69 of 28S rRNA at the same place as the D stem of a P-site tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an \u03b1-helix of IFRD2 (residues 375\u2013384) contacts H69 of 28S rRNA at the same place as the D stem of a P-site tRNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "09766d53-4445-4a73-ac87-5634573811c6",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C54",
+      "claim": "IFRD2 interactions with uL5 and uL13 are reminiscent of those made by the P-site tRNA acceptor arm.",
+      "claim_type": "EXPLICIT",
+      "source": "and IFRD2 interactions with uL5 and uL13 are reminiscent of those made by the P-site tRNA acceptor arm (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural comparison shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "5513c304-1256-4567-9d21-e8eb5da30670",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C55",
+      "claim": "IFRD2 interacts with the ribosomal small subunit through a C-terminal tail containing an \u03b1-helix that protrudes into the mRNA exit channel.",
+      "claim_type": "EXPLICIT",
+      "source": "IFRD2 also interacts with the ribosomal small subunit through a C-terminal tail containing an \u03b1-helix that protrudes into the mRNA exit channel (Figure 3D, Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "b7361e3c-2e84-43aa-afa5-b9f1f589332e",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C56",
+      "claim": "The path of the C-terminal helix through the channel follows that of mRNA: it starts at the P site, extends through the E site, and ends by contacting ribosomal proteins uS11 and eS26 at the channel exit.",
+      "claim_type": "EXPLICIT",
+      "source": "Its path through the channel follows that of mRNA: it starts at the P site, extends through the E site, and ends by contacting ribosomal proteins uS11 and eS26 at the channel exit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "5a27c1d9-a07b-459a-9fe4-6704c08e24dc",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C57",
+      "claim": "The \u03b1-helix forms multiple electrostatic interactions with the rRNA phosphate backbone that lines the channel via highly conserved residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1-helix forms multiple electrostatic interactions with the rRNA phosphate backbone that lines the channel via highly conserved residues (Figure 3\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural analysis and sequence conservation shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "a3c6a966-74b8-4182-acd7-0414cff8d4cb",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C58",
+      "claim": "The conserved residues suggest that other IFRD proteins bind the ribosome with a similar insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that other IFRD proteins bind the ribosome with a similar insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on sequence conservation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "324f6ea6-6e4c-486f-8fd6-220faffe60c3",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C59",
+      "claim": "The interactions indicate that IFRD2 engages non-translating ribosomes with vacant mRNA channels and precludes further translation.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions indicate that IFRD2 engages non-translating ribosomes with vacant mRNA channels and precludes further translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "3a9174ff-82ff-4b1e-8bab-f9d6d140e9d7",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C60",
+      "claim": "A previous large-scale mass spectrometry study suggested that the ribosomal interaction of IFRD1 and IFRD2 are sensitive to RNase treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a previous large-scale mass spectrometry study suggested that the ribosomal interaction of IFRD1 and IFRD2 are sensitive to RNase treatment (Simsek et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Simsek et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "b2340a48-d959-43ad-8f12-ce55a431ec33",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C61",
+      "claim": "Treating reticulocyte lysate or ribosomes with RNase collapses mRNA-dependent polysomes but does not disrupt the stoichiometric association of endogenous IFRD2 with 80S ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "treating reticulocyte lysate or ribosomes with RNase collapses mRNA-dependent polysomes but does not disrupt the stoichiometric association of endogenous IFRD2 with 80S ribosomes (Figure 3E; Figure 3\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "3bf5e293-c388-463a-81b2-58c6e387acdf",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C62",
+      "claim": "The RNase resistance is consistent with the structure showing that IFRD2 binds to core ribosomal features independently of mRNA and tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our structure showing that IFRD2 binds to core ribosomal features independently of mRNA and tRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference connecting experimental data with structural findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "5cb03a23-58b1-45d6-80c8-bca0c0bc1367",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C63",
+      "claim": "Almost 8% of particles in the dataset contain IFRD2.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that almost 8% of particles in the dataset contain IFRD2 suggests that it is highly abundant in reticulocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on quantification from cryo-EM data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "311e3009-110f-4c20-bda5-6ea23cf83085",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C64",
+      "claim": "IFRD2 is highly abundant in reticulocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that almost 8% of particles in the dataset contain IFRD2 suggests that it is highly abundant in reticulocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on particle abundance in dataset",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "aca4d893-3baa-4abc-91e8-bb1b716921f5",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C65",
+      "claim": "IFRD2 appears to be ~8 fold less abundant on human HEK293T ribosomes compared to reticulocyte ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, IFRD2 appears to be ~8 fold less abundant on human HEK293T ribosomes compared to reticulocyte ribosomes (Figure 3\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparative biochemical data shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "2050ffd4-751f-480f-9c2b-28a4e7296cc4",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C66",
+      "claim": "Overexpressed Flag-tagged human IFRD2 in HEK293T cells associates and copurifies with 80S ribosomes independent of RNase treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressed Flag-tagged human IFRD2 in HEK293T cells also associates and copurifies with 80S ribosomes independent of RNase treatment (Figure 3\u2014figure supplement 3C\u2013E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "374723c3-9466-45dd-9686-37d567200708",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C67",
+      "claim": "A small cryo-EM dataset of affinity purified IFRD2-containing ribosomes from HEK293T cells confirmed that IFRD2 binds human ribosomes identically as those observed in the reticulocyte sample.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected a small cryo-EM dataset of affinity purified IFRD2-containing ribosomes from HEK293T cells, which confirmed that IFRD2 binds human ribosomes identically as those observed in the reticulocyte sample (Figure 3\u2014figure supplement 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on cryo-EM data shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "4c4f2052-a9d9-4708-bbdf-0207cc12f3bb",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C68",
+      "claim": "All ribosomes bound to IFRD2 in the reticulocyte dataset also contain a tRNA in an extreme position on the ribosome past the E site called the 'Z site'.",
+      "claim_type": "EXPLICIT",
+      "source": "All ribosomes bound to IFRD2 in the reticulocyte dataset also contain a tRNA in an extreme position on the ribosome past the E site that we call the 'Z site' (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural observation shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "de6d94c8-a258-475c-9339-fbc6b6036746",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C69",
+      "claim": "No IFRD2-containing reticulocyte ribosomes lacking Z-site tRNA could be distinguished.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we could not distinguish any IFRD2-containing reticulocyte ribosomes lacking Z-site tRNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of the dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "2851bf4c-c522-4676-90ae-063673426962",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C70",
+      "claim": "Z-site tRNA is not observed in the reconstruction of IFRD2 on the human ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "we do not observe Z-site tRNA in the reconstruction of IFRD2 on the human ribosome (Figure 3\u2014figure supplement 3F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural data shown in figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "ca5b1604-5512-400e-a5d5-7d02205290c1",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C71",
+      "claim": "Z-site tRNA is not required for IFRD2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that Z-site tRNA is not required for IFRD2 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on observation of IFRD2 binding without Z-site tRNA",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "438fd08e-efc6-4db1-ac36-aab916ee789c",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C72",
+      "claim": "In the combined dataset of reticulocyte ribosomes, Z-site tRNA also binds 80S ribosomes alone and with peptidyl-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the combined dataset of reticulocyte ribosomes, Z-site tRNA also binds 80S ribosomes alone and with peptidyl-tRNA (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural classification shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "d5a85c35-6070-45d7-8077-613ae9a0b93a",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C73",
+      "claim": "Z-site tRNA would clash with an E-site tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "but would clash with an E-site tRNA (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural modeling shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "8c673f53-531f-4406-9572-5e6eb14b54f0",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C74",
+      "claim": "Z-site tRNA bridges the ribosomal subunits like the universal tRNA-binding positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the universal tRNA-binding positions, Z-site tRNA bridges the ribosomal subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "3a079955-ba23-4527-8b27-da9182568a2f",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C75",
+      "claim": "Three distinct interactions are observed between the Z-site tRNA and the large subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Three distinct interactions are observed between the tRNA and the large subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "e62fb9f1-80e3-4de2-9f24-7a1c616540bd",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C76",
+      "claim": "The backbone of the 3' CCA of Z-site tRNA binds a lysine-rich stretch of eL42 (residues 27\u201330).",
+      "claim_type": "EXPLICIT",
+      "source": "First, the backbone of the 3' CCA binds a lysine-rich stretch of eL42 (residues 27 \u2013 30) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "9c9dfa71-7cc4-4691-bca7-50b0ebda6047",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C77",
+      "claim": "The acceptor arm of Z-site tRNA binds the backbone of helix 68 of 28S rRNA (nucleotides 3730\u20133732).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the acceptor arm binds the backbone of helix 68 of 28S rRNA (nucleotides 3730 \u2013 3732)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "1b4b3f9a-b599-4ea3-8793-02eb777122a1",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C78",
+      "claim": "The elbow of the Z-site tRNA interacts with the L1 stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "and third, the elbow of the Z-site tRNA interacts with the L1 stalk (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "85102395-2a4e-4c7d-842e-b3a9711f3efc",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C79",
+      "claim": "The anticodon stem-loop of the Z-site tRNA binds a positively charged site on the non-essential ribosomal protein, eS25.",
+      "claim_type": "EXPLICIT",
+      "source": "At the head of the 40S subunit, the anticodon stem-loop of the Z-site tRNA binds a positively charged site on the non-essential ribosomal protein, eS25 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "7d8894c8-e2a5-4c9e-8eb9-c84423274cb1",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C80",
+      "claim": "eS25 has not been shown to bind tRNAs previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Although eS25 has not been shown to bind tRNAs previously",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about lack of prior evidence",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "f05a94b7-0897-4f84-b8ea-82e89b69bc5c",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C81",
+      "claim": "eS25 is a common binding site for internal ribosome entry site (IRES) sequences utilized by many viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "it is a common binding site for internal ribosome entry site (IRES) sequences utilized by many viruses, including human immunodeficiency virus (HIV) and the hepatitis C virus (Quade et al., 2015; Yamamoto et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Quade et al., 2015 and Yamamoto et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "b897d7a3-ab95-4be6-8772-0b8a2db8cc6c",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C82",
+      "claim": "The Z-site tRNA most closely resembles the ribosome-binding conformation of the cricket paralysis virus (CrPV) IRES.",
+      "claim_type": "EXPLICIT",
+      "source": "The Z-site tRNA most closely resembles the ribosome-binding conformation of the cricket paralysis virus (CPrV) IRES (Fern\u00e1ndez et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural comparison with cited structure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "37423d28-6b11-4780-b6d8-511cc7f79c28",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C83",
+      "claim": "The CrPV IRES bridges eS25 and the ribosomal L1 stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "which also bridges eS25 and the ribosomal L1 stalk (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on structural comparison shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "1eb68c2d-26eb-4400-8985-22c7061dbc87",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C84",
+      "claim": "Viruses appear to exploit the Z site for IRES-mediated translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, viruses appear to exploit the Z site for IRES-mediated translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural similarity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "0cb0cc47-5b8e-4c57-83b3-43063f198c87",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C85",
+      "claim": "SERBP1 and IFRD2 may act redundantly to inactivate mammalian ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While SERBP1 and IFRD2 may act redundantly to inactivate mammalian ribosomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "8dd2a290-8d4e-4bb8-9dca-9c60154ac891",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C86",
+      "claim": "The structures suggest SERBP1 and IFRD2 target different subsets of ribosomes and may induce different fates.",
+      "claim_type": "EXPLICIT",
+      "source": "our structures suggest they target different subsets of ribosomes and may induce different fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural differences",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "0e05263c-33a3-4610-8b69-8eed2b9f1ff5",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C87",
+      "claim": "In yeast, Stm1-inactivated ribosomes are recycled after starvation by Dom34-Hbs1 (Pelota-Hbs1l in mammals) and Rli1 (ABCE1 in mammals).",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, Stm1-inactivated ribosomes are recycled after starvation by Dom34-Hbs1 (Pelota-Hbs1l in mammals) and Rli1 (ABCE1 in mammals) (van den Elzen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to van den Elzen et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "7f58be87-4ba0-4264-8c08-d70f1c9f1952",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C88",
+      "claim": "Whether IFRD2-silenced ribosomes are similarly rescued, and the physiological conditions and timescales of these processes, remain to be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether IFRD2-silenced ribosomes are similarly rescued, and the physiological conditions and timescales of these processes, remain to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of unknown aspects",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "d3c57ff7-c62b-444e-9362-954aef0635de",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C89",
+      "claim": "The regulation of SERBP1 and IFRD2 mechanisms may impact their role on global translation activity during different types of cellular differentiation and stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of these two mechanisms may impact their role on global translation activity during different types of cellular differentiation and stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential impact",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "5880ee9f-b9db-4732-82f4-883a1c419ce9",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C90",
+      "claim": "Z-site tRNA is observed on all reticulocyte ribosomes containing IFRD2.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally observe Z-site tRNA on all reticulocyte ribosomes containing IFRD2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "8ea15cff-e4c8-4341-b107-5ad340f6965f",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C91",
+      "claim": "The possibility that a tRNA in the Z site results from an artefact of isolating these samples cannot be ruled out.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we cannot rule out the possibility that a tRNA in the Z site results from an artefact of isolating these samples",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of potential limitation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "9a1276e8-1f68-427b-8015-7f7a8995d69b",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C92",
+      "claim": "The stable association of Z-site tRNA and the similarity with IRES interactions supports the idea that the Z site is a preferred binding site for certain RNA structures.",
+      "claim_type": "EXPLICIT",
+      "source": "the stable association of Z-site tRNA and the similarity with IRES interactions supports the idea that the Z site is a preferred binding site for certain RNA structures, potentially including cellular mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural observations and comparisons",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "2a061a7f-dda6-4fc4-a7e2-e60b55cc1bec",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C93",
+      "claim": "In yeast, knocking out eS25 decreases global protein synthesis and slows growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, knocking out eS25, a key interacting partner of Z-site tRNA, decreases global protein synthesis and slows growth (Ferreira-Cerca et al., 2005; Landry et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ferreira-Cerca et al., 2005 and Landry et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "9861f863-84c4-4332-a529-5e869e08cac6",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C94",
+      "claim": "eS25 is expressed at substoichiometric levels relative to total ribosomes in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study also suggests that eS25 is expressed at substoichiometric levels relative to total ribosomes in mammals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to a recent study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "6b582e58-4806-407f-a4e5-d3a71719dca7",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C95",
+      "claim": "Ribosomes containing eS25 may preferentially translate subsets of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "and that ribosomes containing eS25 may preferentially translate subsets of mRNAs (Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shi et al., 2017, with speculative language 'may'",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "1b70d3f6-8ad3-453e-a64d-2a8277ce9faf",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C96",
+      "claim": "The Z-site may represent a late-stage intermediate of tRNA ejection downstream of the E site.",
+      "claim_type": "EXPLICIT",
+      "source": "The Z-site may represent a late-stage intermediate of tRNA ejection downstream of the E site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis based on structural observations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "0f3b13ad-e702-4ce4-a899-1a13aad064c6",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C97",
+      "claim": "This hypothesis is supported by the observation that Z-site tRNA can bind simultaneously with a P-site tRNA but not a canonical E-site tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is supported by the observation that Z-site tRNA can bind simultaneously with a P-site tRNA but not a canonical E-site tRNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "eb6c52f5-865b-4a87-a1cf-2b06f51ae896",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C98",
+      "claim": "Z-site tRNA interacts with the L1 stalk, which interacts with all known tRNA-ejection intermediates in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "and that Z-site tRNA interacts with the L1 stalk, which interacts with all known tRNA-ejection intermediates in bacteria (Agrawal et al., 2000) (Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Agrawal et al., 2000 and Zhang et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "2b2016cd-436e-4c48-90f3-a86d13f6a364",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C99",
+      "claim": "The interaction of Z-site tRNA with the eukaryotic-specific proteins eL42 and eS25 suggests that the Z site is distinct from bacterial tRNA-ejection intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the interaction of Z-site tRNA with the eukaryotic-specific proteins eL42 and eS25 suggests that the Z site is distinct from bacterial tRNA-ejection intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "9e52b205-71e2-43dc-943f-57c71786b231",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C100",
+      "claim": "A Z-site tRNA ejection intermediate would be transient during active translation, occurring only before the next translocation event.",
+      "claim_type": "EXPLICIT",
+      "source": "A Z-site tRNA ejection intermediate would be transient during active translation, occurring only before the next translocation event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about the nature of ejection intermediates",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "60702adb-787a-49b5-ace2-2cf546c1db71",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C101",
+      "claim": "The presence of a stably bound Z-site tRNA could act as signature of a translationally incompetent ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the presence of a stably bound Z-site tRNA could act as signature of a translationally incompetent ribosome regardless of whether it engages the Z site from the E site or from a pool of deacylated tRNAs in the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "e68bbe61-4782-45ad-b26e-6a151eaad49a",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C102",
+      "claim": "tRNA binding to the Z site is more likely when deacylated tRNA levels rise or when translational factors are limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, tRNA binding to the Z site is more likely when deacylated tRNA levels rise, for example by amino acid depletion, or when translational factors are limiting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative scenario based on reasoning",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "63e9d11e-ae05-4aa9-b453-6945c9f6fcd8",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C103",
+      "claim": "Deacylated tRNAs, a yeast-specific tRNA ejection factor, and stalled ribosomes are all implicated in regulating the integrated stress response by the GCN2 kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, deacylated tRNAs, a yeast-specific tRNA ejection factor, and stalled ribosomes are all implicated in regulating the integrated stress response by the GCN2 kinase (Ishimura et al., 2016; Ramirez et al., 1991; Visweswaraiah et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ishimura et al., 2016, Ramirez et al., 1991, and Visweswaraiah et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "27d86004-4cea-40ec-b91e-89fbe4d37257",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C104",
+      "claim": "The observation of IFRD2 and a new tRNA position on the mammalian ribosome highlights the ability of mining cryo-EM datasets to reveal new biological interactions from heterogeneous samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Our unexpected observation of IFRD2 and a new tRNA position on the mammalian ribosome highlights the ability of mining cryo-EM datasets to reveal new biological interactions from heterogeneous samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reflection on the methodological approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "3ca976cc-2ac1-4191-b829-ba1d425d3d35",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C105",
+      "claim": "This strategy is directly applicable to identifying and visualizing binding partners of other biological assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy is directly applicable to identifying and visualizing binding partners of other biological assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about broader applicability of the approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "7cb467b3-d757-42b3-9fa0-4e39b989bc86",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C106",
+      "claim": "IFRD2 may repress translation during cellular stress.",
+      "claim_type": "EXPLICIT",
+      "source": "As proposed for Stm1, IFRD2 may repress translation during cellular stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on analogy with Stm1",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "98648bd0-bc9e-4e75-a93a-3ebcaf8b79c6",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C107",
+      "claim": "IFRD2 expression is induced in specific circumstances, such as tetradecanoyl phorbol acetate treatment and serum replenishment after starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies indicate that IFRD2 expression is induced in specific circumstances, such as tetradecanoyl phorbol acetate treatment and serum replenishment after starvation (Varnum et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Varnum et al., 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "5ddf23ed-afea-41b1-bf68-26f8906a5da1",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C108",
+      "claim": "IFRD proteins appear to escape translational repression by stress-induced eIF2\u03b1 phosphorylation via an upstream open-reading frame (uORF).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, IFRD proteins appear to escape translational repression by stress-induced eIF2\u03b1 phosphorylation via an upstream open-reading frame (uORF) (Andreev et al., 2015; Zhao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Andreev et al., 2015 and Zhao et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "3a6e0dfe-f022-42ed-99a9-6fdc17431b91",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C109",
+      "claim": "IFRD proteins may provide a general mechanism to reduce translational output.",
+      "claim_type": "EXPLICIT",
+      "source": "IFRD proteins may also provide a general mechanism to reduce translational output",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "79df0cdb-a432-4876-9145-a60032b22e39",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C110",
+      "claim": "The general mechanism to reduce translational output may explain the pleiotropic effects of IFRD ablation on the differentiation of various cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "which may explain the pleiotropic effects of IFRD ablation on the differentiation of various cell types (Vietor et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation supported by citation to Vietor et al., 2002",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "b60cae00-f8cb-479c-8cb6-d2aa5a2708f1",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C111",
+      "claim": "IFRD2 is especially abundant on ribosomes in reticulocytes, the immediate precursors to red blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that IFRD2 is especially abundant on ribosomes in reticulocytes, the immediate precursors to red blood cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "85e2d9b4-ad2b-4c81-b4fc-4f4d5de2b799",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C112",
+      "claim": "Reticulocytes express enhanced levels of other factors that can suppress protein synthesis, including the heme-dependent eIF2\u03b1 kinase HRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Reticulocytes also express enhanced levels of other factors that can suppress protein synthesis, including the heme-dependent eIF2\u03b1 kinase HRI (Crosby et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Crosby et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "f312dc1a-eb0a-4875-962b-75f6e9f59b2c",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C113",
+      "claim": "Ribosomal levels are important for red blood cell differentiation and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the importance of ribosomal levels (Khajuria et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Khajuria et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "48aee68d-6ed0-46fd-aca3-04fe723ae659",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C114",
+      "claim": "Global translational regulation is important for red blood cell differentiation and function.",
+      "claim_type": "EXPLICIT",
+      "source": "and global translational regulation (Grevet et al., 2018) on red blood cell differentiation and function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Grevet et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "4548afe8-b1c2-4d11-ae63-264d2061a225",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "claim_id": "C115",
+      "claim": "IFRD2 may offer an additional layer of translational control to dictate blood cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "IFRD2 may offer an additional layer of translational control to dictate blood cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c15cf90c-b8f9-467e-ae74-791dace22944",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cryo-EM classification of reticulocyte ribosomes identified nine structurally distinct classes of 80S ribosomes, with no empty ribosomes observed. Four classes represented non-translating ribosomes falling into three types: (1) bound to eEF2 and SERBP1, (2) bound to IFRD2, and (3) containing a tRNA in a noncanonical binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are well-supported by the cryo-EM data presented in Figure 1 and Table 1. The structural classification is based on rigorous computational analysis with appropriate resolution and particle numbers. The absence of empty ribosomes (C16) is a clear observational finding from the dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "9a028d73-3023-4f3c-8047-27baec5a94bc",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SERBP1 traps eEF2 on inactive ribosomes by occupying the mRNA entrance channel and forming interactions with eEF2 domain IV. The improved resolution (3.4 \u00c5) allowed reassignment of SERBP1 residues, revealing conserved interactions with the ribosomal mRNA channel similar to yeast Stm1. SERBP1 does not impair GTP hydrolysis by eEF2 but may constrain domain rearrangements necessary for eEF2 release, similar to the mechanism of sordarin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C38 are well-supported by high-resolution structural data (3.3-3.4 \u00c5) shown in Figures 2 and supplementary figures. The structural observations are consistent with prior work on yeast Stm1 and sordarin. While the exact mechanism of eEF2 trapping (C33, C37) remains speculative, the structural evidence for SERBP1-eEF2 interactions and GDP presence is clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "IFRD2 was identified as a novel ribosome-binding protein that occupies the intersubunit space, occluding tRNA binding to P and E sites and mRNA binding to the mRNA channel. IFRD2 was identified through mass spectrometry and structural fitting, with supporting evidence from co-immunoprecipitation studies. The structure suggests IFRD2 regulates translation rather than transcription as previously thought.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C48 are well-supported by multiple lines of evidence: cryo-EM structure at 3.4 \u00c5 resolution (Figure 3A), mass spectrometry identification from ~150 candidates, structural fitting, and independent validation through co-IP experiments (C44). The reinterpretation of IFRD2 function (C48) is a reasonable inference from the structural data showing direct ribosome binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IFRD2 adopts an Armadillo-type fold with six HEAT repeats and a small globular domain. The core domains occupy the same space as P-site tRNA and interact with similar ribosomal elements. A C-terminal \u03b1-helix protrudes into the mRNA exit channel, forming conserved electrostatic interactions with rRNA, suggesting other IFRD proteins bind similarly. These interactions indicate IFRD2 engages non-translating ribosomes and precludes translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C59 are well-supported by the 3.4 \u00c5 cryo-EM structure (Figure 3B-D and supplements). The structural analysis clearly shows the Armadillo fold, HEAT repeats, and interactions with ribosomal elements. Sequence conservation analysis (Figure 3\u2014figure supplement 2) supports the inference that other IFRD proteins bind similarly (C58). The conclusion that IFRD2 precludes translation (C59) is a reasonable inference from the structural occlusion of tRNA and mRNA binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "4a694c0c-44ec-400a-a437-97528d4c615d",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IFRD2 binds ribosomes independently of mRNA and tRNA, as demonstrated by RNase resistance experiments. IFRD2 is highly abundant in reticulocytes (~8% of particles) but ~8-fold less abundant on HEK293T ribosomes. Overexpressed Flag-tagged IFRD2 in HEK293T cells copurifies with 80S ribosomes independent of RNase treatment, and cryo-EM confirmed identical binding to human ribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C67 are well-supported by multiple experimental approaches: RNase treatment experiments (Figure 3E, Figure 3\u2014figure supplement 3A), quantification from cryo-EM data (C63), comparative biochemical analysis (Figure 3\u2014figure supplement 3B), and affinity purification followed by cryo-EM validation (Figure 3\u2014figure supplement 3C-F). The RNase resistance data (C61) directly contradicts a prior study (C60), but the authors provide clear experimental evidence supporting their conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "7e0130ab-e856-4cf1-a7ef-8ee8e048398d",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "All IFRD2-bound ribosomes in the reticulocyte dataset contain a tRNA in a novel 'Z site' position past the E site. However, Z-site tRNA is not observed in IFRD2-bound human ribosomes, indicating it is not required for IFRD2 binding. Z-site tRNA also binds 80S ribosomes alone and with peptidyl-tRNA but would clash with E-site tRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 are supported by structural observations from the cryo-EM data (Figures 1, 3A, 4A). The observation that Z-site tRNA is present in all reticulocyte IFRD2 complexes (C68) but absent in human IFRD2 complexes (C70) provides clear evidence that Z-site tRNA is not required for IFRD2 binding (C71). The structural clash with E-site tRNA (C73) is demonstrated by modeling in Figure 4A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "39e78c7a-fd66-4289-aca3-19f72cac7909",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Z-site tRNA bridges ribosomal subunits through three interactions with the large subunit (3' CCA with eL42, acceptor arm with H68 of 28S rRNA, elbow with L1 stalk) and binding to eS25 on the small subunit. The Z-site tRNA resembles the cricket paralysis virus (CrPV) IRES, which also bridges eS25 and the L1 stalk, suggesting viruses exploit the Z site for IRES-mediated translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C84 are well-supported by structural data at 3.6 \u00c5 resolution (Figure 4B-D). The specific molecular interactions are clearly resolved in the cryo-EM maps. The comparison with CrPV IRES (C82-C83) is supported by structural similarity, and the inference that viruses exploit the Z site (C84) is reasonable given the structural overlap. The claim about eS25 as an IRES binding site (C81) is supported by cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "bcb32975-5f7f-4235-875b-3e2751593465",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SERBP1 and IFRD2 may act redundantly to inactivate mammalian ribosomes, but the structures suggest they target different ribosome subsets and may induce different fates. In yeast, Stm1-inactivated ribosomes are recycled by Dom34-Hbs1 and Rli1. Whether IFRD2-silenced ribosomes are similarly rescued remains to be determined, and regulation of these mechanisms may impact global translation during cellular differentiation and stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C89 are largely speculative about the functional consequences and regulation of SERBP1 and IFRD2. While the structural differences between SERBP1 and IFRD2 binding modes are clear (supporting C86), the claims about redundancy (C85), recycling mechanisms (C88), and impact on translation (C89) lack direct experimental evidence. The comparison to yeast Stm1 recycling (C87) is supported by citation but does not validate the mammalian mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "820ebaff-92b0-4ac2-b5c8-1e65dfc3b35b",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Z-site tRNA is observed on all reticulocyte IFRD2-bound ribosomes. While the possibility of an isolation artifact cannot be ruled out, the stable association and similarity with IRES interactions supports the Z site as a preferred binding site for certain RNA structures. In yeast, eS25 knockout decreases protein synthesis, and eS25 may be expressed substoichiometrically in mammals, with eS25-containing ribosomes potentially translating specific mRNA subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C95 mix well-supported observations (C90, C93) with speculative interpretations (C91, C92, C95). The structural observation of Z-site tRNA is clear, but the functional significance remains uncertain. The acknowledgment of potential artifacts (C91) is appropriate. The claims about eS25 function (C93-C95) are supported by citations but represent prior work rather than findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "5d2320d8-32ba-4551-b061-b0d3a7036bad",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Z-site may represent a late-stage tRNA ejection intermediate downstream of the E site, supported by observations that Z-site tRNA can bind with P-site but not E-site tRNA and interacts with the L1 stalk. However, interactions with eukaryotic-specific proteins eL42 and eS25 suggest the Z site is distinct from bacterial intermediates. A stably bound Z-site tRNA could mark translationally incompetent ribosomes, with binding more likely when deacylated tRNA levels rise or translational factors are limiting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C103 present a speculative model for Z-site tRNA function. While the structural observations supporting the hypothesis (C97, C98) are valid, the interpretation as an ejection intermediate (C96) versus a marker of incompetent ribosomes (C101) remains uncertain. The distinction from bacterial intermediates (C99) is supported by structural differences. The connection to stress response via GCN2 (C103) is supported by citations but does not directly validate the Z-site model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "a8b2b500-5b53-4def-9be3-b4f1d81916c5",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The observation of IFRD2 and a new tRNA position on the mammalian ribosome highlights the ability of mining cryo-EM datasets to reveal new biological interactions from heterogeneous samples. This strategy is directly applicable to identifying binding partners of other biological assemblies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C105 are supported by the successful identification of IFRD2 and Z-site tRNA from a heterogeneous dataset originally collected for a different purpose. The methodological approach of reanalyzing existing cryo-EM data with improved classification methods proved effective. The claim about broader applicability (C105) is a reasonable inference from the demonstrated success.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "IFRD2 may repress translation during cellular stress, with expression induced under specific conditions and escape from eIF2\u03b1-mediated repression via uORF. IFRD2 may provide a general mechanism to reduce translational output, explaining pleiotropic effects of IFRD ablation on cell differentiation. IFRD2 is especially abundant on reticulocyte ribosomes, which also express enhanced levels of other translational suppressors like HRI. Given the importance of ribosomal levels and translational regulation for red blood cell differentiation, IFRD2 may offer an additional layer of translational control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C106-C115 are largely speculative about IFRD2's physiological role, drawing on prior literature (C107, C108, C112-C114) and the structural findings. While the high abundance of IFRD2 in reticulocytes (C111) is supported by the cryo-EM data (C63-C64), the functional implications (C106, C109, C115) lack direct experimental validation. The connections to stress response, cell differentiation, and erythropoiesis are reasonable hypotheses but require further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    },
+    {
+      "id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5",
+      "content_id": "c3e87a2c-59e0-44f5-b601-75cee9797b3d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the importance of translation regulation in red blood cell differentiation, including the role of ribosome levels, translational optimization for hemoglobin production, and the connection between ribosomal mutations and blood disorders. Two known mechanisms for global translational repression are eIF2\u03b1 phosphorylation and Stm1/SERBP1-mediated ribosome sequestration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 represent background information supported by appropriate citations to prior literature. These claims establish the biological context and rationale for the study but do not represent novel findings from this work. All claims are appropriately referenced and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:49:21.512303Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c3164a5e-4f09-4edd-9bb8-eda3c86a8ac7",
+      "result_id": "c15cf90c-b8f9-467e-ae74-791dace22944"
+    },
+    {
+      "claim_id": "c0065120-dc60-41b1-ad4d-425fe3682dad",
+      "result_id": "c15cf90c-b8f9-467e-ae74-791dace22944"
+    },
+    {
+      "claim_id": "f48cb26a-7fdc-4f7e-9aec-83d489390738",
+      "result_id": "c15cf90c-b8f9-467e-ae74-791dace22944"
+    },
+    {
+      "claim_id": "186cce59-3e51-498b-bdd2-472000b9e50c",
+      "result_id": "c15cf90c-b8f9-467e-ae74-791dace22944"
+    },
+    {
+      "claim_id": "13c91b36-807b-4758-9319-f22bc64d2ff6",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "6f25bac2-ac65-4958-b5b8-784974a526d0",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "efed5086-b474-418b-8d11-74154f679f08",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "faec9e92-a2b8-4410-9f28-2240f911686f",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "27757927-4a7c-41b3-97f5-ef4c8f835ddf",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "60d045f0-f95b-47f1-980d-5c3c08170163",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "0531e196-969c-48f1-aeac-c81c0640f346",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "3e1a1e72-095f-4f26-b9e4-8b19f6dadadf",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "031079cb-7bcb-4906-b8b8-9ec894109117",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "c29312c0-e004-4da7-8fb2-6caa4f5dc6e1",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "c0f62237-3f14-4731-a51a-b2bddd6351a5",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "bb5572da-7aea-4342-a8e6-eb1480c16e28",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "fde9183e-cfb2-431a-af2a-9d9de05f0f54",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "86603eaa-708b-424c-a823-4c4fc1940518",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "03db50bc-9d30-49ac-b083-3380298a8758",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "58ca6971-5f04-4492-9d41-5cf2643e6675",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "399b5c7e-2f34-4e7a-a3b6-a97aba5d1606",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "aac89248-c733-48d2-9a50-c3d16b237904",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "ea0b2270-7715-4865-be1c-2443c78f24a5",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "06f07678-2c92-4cfd-b52f-a72dce2cf114",
+      "result_id": "9a028d73-3023-4f3c-8047-27baec5a94bc"
+    },
+    {
+      "claim_id": "bb00f584-7132-494d-9f20-b117ea188dc4",
+      "result_id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55"
+    },
+    {
+      "claim_id": "c5c26f67-0520-4cb4-9dde-2c0350b8f8c2",
+      "result_id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55"
+    },
+    {
+      "claim_id": "475c9abe-be1e-42f3-a188-20101a893270",
+      "result_id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55"
+    },
+    {
+      "claim_id": "2858001b-6e01-4025-9b4f-9ffc4f0a3d8f",
+      "result_id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55"
+    },
+    {
+      "claim_id": "17216910-c61d-4701-a83d-c37dde652cf9",
+      "result_id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55"
+    },
+    {
+      "claim_id": "009ae86b-41c2-401c-9ad2-ad785ed96fc1",
+      "result_id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55"
+    },
+    {
+      "claim_id": "1e8a1aae-f3fc-4979-b290-0ddceea0e7e2",
+      "result_id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55"
+    },
+    {
+      "claim_id": "5c82e2f5-2b30-4524-b6ab-e56f259c510e",
+      "result_id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55"
+    },
+    {
+      "claim_id": "eb8e4b59-b252-478a-813f-d4ba27ef2972",
+      "result_id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55"
+    },
+    {
+      "claim_id": "e18eb3b3-5f60-48e0-a548-1a86d65ab829",
+      "result_id": "51be729e-cdb6-4e52-b38a-92c6f1b1ae55"
+    },
+    {
+      "claim_id": "9f8078dc-d244-4340-bdd5-d5874d8013e5",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "c18b59b4-c92b-4ffb-86f5-88959c71923c",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "aa596812-a856-4ae2-ba40-9cfdc3c22340",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "6213f170-a7a4-485d-b010-2d32200ddd77",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "cad282ba-8b22-424e-9c65-5ed1904cfae8",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "09766d53-4445-4a73-ac87-5634573811c6",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "5513c304-1256-4567-9d21-e8eb5da30670",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "b7361e3c-2e84-43aa-afa5-b9f1f589332e",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "5a27c1d9-a07b-459a-9fe4-6704c08e24dc",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "a3c6a966-74b8-4182-acd7-0414cff8d4cb",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "324f6ea6-6e4c-486f-8fd6-220faffe60c3",
+      "result_id": "8d32aac5-9ad8-4f88-b976-96c3855e61ee"
+    },
+    {
+      "claim_id": "3a9174ff-82ff-4b1e-8bab-f9d6d140e9d7",
+      "result_id": "4a694c0c-44ec-400a-a437-97528d4c615d"
+    },
+    {
+      "claim_id": "b2340a48-d959-43ad-8f12-ce55a431ec33",
+      "result_id": "4a694c0c-44ec-400a-a437-97528d4c615d"
+    },
+    {
+      "claim_id": "3bf5e293-c388-463a-81b2-58c6e387acdf",
+      "result_id": "4a694c0c-44ec-400a-a437-97528d4c615d"
+    },
+    {
+      "claim_id": "5cb03a23-58b1-45d6-80c8-bca0c0bc1367",
+      "result_id": "4a694c0c-44ec-400a-a437-97528d4c615d"
+    },
+    {
+      "claim_id": "311e3009-110f-4c20-bda5-6ea23cf83085",
+      "result_id": "4a694c0c-44ec-400a-a437-97528d4c615d"
+    },
+    {
+      "claim_id": "aca4d893-3baa-4abc-91e8-bb1b716921f5",
+      "result_id": "4a694c0c-44ec-400a-a437-97528d4c615d"
+    },
+    {
+      "claim_id": "2050ffd4-751f-480f-9c2b-28a4e7296cc4",
+      "result_id": "4a694c0c-44ec-400a-a437-97528d4c615d"
+    },
+    {
+      "claim_id": "374723c3-9466-45dd-9686-37d567200708",
+      "result_id": "4a694c0c-44ec-400a-a437-97528d4c615d"
+    },
+    {
+      "claim_id": "4c4f2052-a9d9-4708-bbdf-0207cc12f3bb",
+      "result_id": "7e0130ab-e856-4cf1-a7ef-8ee8e048398d"
+    },
+    {
+      "claim_id": "de6d94c8-a258-475c-9339-fbc6b6036746",
+      "result_id": "7e0130ab-e856-4cf1-a7ef-8ee8e048398d"
+    },
+    {
+      "claim_id": "2851bf4c-c522-4676-90ae-063673426962",
+      "result_id": "7e0130ab-e856-4cf1-a7ef-8ee8e048398d"
+    },
+    {
+      "claim_id": "ca5b1604-5512-400e-a5d5-7d02205290c1",
+      "result_id": "7e0130ab-e856-4cf1-a7ef-8ee8e048398d"
+    },
+    {
+      "claim_id": "438fd08e-efc6-4db1-ac36-aab916ee789c",
+      "result_id": "7e0130ab-e856-4cf1-a7ef-8ee8e048398d"
+    },
+    {
+      "claim_id": "d5a85c35-6070-45d7-8077-613ae9a0b93a",
+      "result_id": "7e0130ab-e856-4cf1-a7ef-8ee8e048398d"
+    },
+    {
+      "claim_id": "8c673f53-531f-4406-9572-5e6eb14b54f0",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "3a079955-ba23-4527-8b27-da9182568a2f",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "e62fb9f1-80e3-4de2-9f24-7a1c616540bd",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "9c9dfa71-7cc4-4691-bca7-50b0ebda6047",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "1b4b3f9a-b599-4ea3-8793-02eb777122a1",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "85102395-2a4e-4c7d-842e-b3a9711f3efc",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "7d8894c8-e2a5-4c9e-8eb9-c84423274cb1",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "f05a94b7-0897-4f84-b8ea-82e89b69bc5c",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "b897d7a3-ab95-4be6-8772-0b8a2db8cc6c",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "37423d28-6b11-4780-b6d8-511cc7f79c28",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "1eb68c2d-26eb-4400-8985-22c7061dbc87",
+      "result_id": "39e78c7a-fd66-4289-aca3-19f72cac7909"
+    },
+    {
+      "claim_id": "0cb0cc47-5b8e-4c57-83b3-43063f198c87",
+      "result_id": "bcb32975-5f7f-4235-875b-3e2751593465"
+    },
+    {
+      "claim_id": "8dd2a290-8d4e-4bb8-9dca-9c60154ac891",
+      "result_id": "bcb32975-5f7f-4235-875b-3e2751593465"
+    },
+    {
+      "claim_id": "0e05263c-33a3-4610-8b69-8eed2b9f1ff5",
+      "result_id": "bcb32975-5f7f-4235-875b-3e2751593465"
+    },
+    {
+      "claim_id": "7f58be87-4ba0-4264-8c08-d70f1c9f1952",
+      "result_id": "bcb32975-5f7f-4235-875b-3e2751593465"
+    },
+    {
+      "claim_id": "d3c57ff7-c62b-444e-9362-954aef0635de",
+      "result_id": "bcb32975-5f7f-4235-875b-3e2751593465"
+    },
+    {
+      "claim_id": "5880ee9f-b9db-4732-82f4-883a1c419ce9",
+      "result_id": "820ebaff-92b0-4ac2-b5c8-1e65dfc3b35b"
+    },
+    {
+      "claim_id": "8ea15cff-e4c8-4341-b107-5ad340f6965f",
+      "result_id": "820ebaff-92b0-4ac2-b5c8-1e65dfc3b35b"
+    },
+    {
+      "claim_id": "9a1276e8-1f68-427b-8015-7f7a8995d69b",
+      "result_id": "820ebaff-92b0-4ac2-b5c8-1e65dfc3b35b"
+    },
+    {
+      "claim_id": "2a061a7f-dda6-4fc4-a7e2-e60b55cc1bec",
+      "result_id": "820ebaff-92b0-4ac2-b5c8-1e65dfc3b35b"
+    },
+    {
+      "claim_id": "9861f863-84c4-4332-a529-5e869e08cac6",
+      "result_id": "820ebaff-92b0-4ac2-b5c8-1e65dfc3b35b"
+    },
+    {
+      "claim_id": "6b582e58-4806-407f-a4e5-d3a71719dca7",
+      "result_id": "820ebaff-92b0-4ac2-b5c8-1e65dfc3b35b"
+    },
+    {
+      "claim_id": "1b70d3f6-8ad3-453e-a64d-2a8277ce9faf",
+      "result_id": "5d2320d8-32ba-4551-b061-b0d3a7036bad"
+    },
+    {
+      "claim_id": "0f3b13ad-e702-4ce4-a899-1a13aad064c6",
+      "result_id": "5d2320d8-32ba-4551-b061-b0d3a7036bad"
+    },
+    {
+      "claim_id": "eb6c52f5-865b-4a87-a1cf-2b06f51ae896",
+      "result_id": "5d2320d8-32ba-4551-b061-b0d3a7036bad"
+    },
+    {
+      "claim_id": "2b2016cd-436e-4c48-90f3-a86d13f6a364",
+      "result_id": "5d2320d8-32ba-4551-b061-b0d3a7036bad"
+    },
+    {
+      "claim_id": "9e52b205-71e2-43dc-943f-57c71786b231",
+      "result_id": "5d2320d8-32ba-4551-b061-b0d3a7036bad"
+    },
+    {
+      "claim_id": "60702adb-787a-49b5-ace2-2cf546c1db71",
+      "result_id": "5d2320d8-32ba-4551-b061-b0d3a7036bad"
+    },
+    {
+      "claim_id": "e68bbe61-4782-45ad-b26e-6a151eaad49a",
+      "result_id": "5d2320d8-32ba-4551-b061-b0d3a7036bad"
+    },
+    {
+      "claim_id": "63e9d11e-ae05-4aa9-b453-6945c9f6fcd8",
+      "result_id": "5d2320d8-32ba-4551-b061-b0d3a7036bad"
+    },
+    {
+      "claim_id": "27d86004-4cea-40ec-b91e-89fbe4d37257",
+      "result_id": "a8b2b500-5b53-4def-9be3-b4f1d81916c5"
+    },
+    {
+      "claim_id": "3ca976cc-2ac1-4191-b829-ba1d425d3d35",
+      "result_id": "a8b2b500-5b53-4def-9be3-b4f1d81916c5"
+    },
+    {
+      "claim_id": "7cb467b3-d757-42b3-9fa0-4e39b989bc86",
+      "result_id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0"
+    },
+    {
+      "claim_id": "98648bd0-bc9e-4e75-a93a-3ebcaf8b79c6",
+      "result_id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0"
+    },
+    {
+      "claim_id": "5ddf23ed-afea-41b1-bf68-26f8906a5da1",
+      "result_id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0"
+    },
+    {
+      "claim_id": "3a6e0dfe-f022-42ed-99a9-6fdc17431b91",
+      "result_id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0"
+    },
+    {
+      "claim_id": "79df0cdb-a432-4876-9145-a60032b22e39",
+      "result_id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0"
+    },
+    {
+      "claim_id": "b60cae00-f8cb-479c-8cb6-d2aa5a2708f1",
+      "result_id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0"
+    },
+    {
+      "claim_id": "85e2d9b4-ad2b-4c81-b4fc-4f4d5de2b799",
+      "result_id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0"
+    },
+    {
+      "claim_id": "f312dc1a-eb0a-4875-962b-75f6e9f59b2c",
+      "result_id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0"
+    },
+    {
+      "claim_id": "48aee68d-6ed0-46fd-aca3-04fe723ae659",
+      "result_id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0"
+    },
+    {
+      "claim_id": "4548afe8-b1c2-4d11-ae63-264d2061a225",
+      "result_id": "1e23c6a7-3312-4512-ab9d-91512f7fdfd0"
+    },
+    {
+      "claim_id": "4b1a6db2-a545-4313-b931-51c053e5e15b",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "bd4fade7-dd96-4862-837a-0821ca756a36",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "627997eb-ea09-4b17-b8ff-03bc9151f441",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "0c5fc9cb-dcd3-4753-91fb-8baa4b18f8bf",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "678cbaa3-8abd-4273-90d6-d9d5ccc98ee3",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "d8fc00ae-19e7-405a-a5c1-8622910b8f69",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "ae20e728-821b-4928-8fcd-3baca31eeb95",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "0ecf23ab-772f-40d8-a2b0-dc9606ff40c5",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "c32e5ddc-27d8-4ce7-8423-28ac4d8f087e",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "deb8cb4e-dc1f-42c3-9a89-fef990b58944",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "749c796f-17ee-4d3d-bb4e-1226ce3f5738",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "8afe3b7c-ac83-4060-b87b-a4a796509ad0",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "b90b6778-8fc6-434e-ad37-b2a810982d57",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    },
+    {
+      "claim_id": "3bb14d55-6f0c-4ecf-b43d-d89aafb2c621",
+      "result_id": "bcd2fdce-bb37-4987-bb06-b9432a6f1bd5"
+    }
+  ],
+  "comparisons": []
+}

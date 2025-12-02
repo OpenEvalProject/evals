@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Avian ANP32B is evolutionarily distinct from mammalian ANP32B. Phylogenetic analysis shows avian ANP32B forms a separate clade with Xenopus ANP32C and non-placental mammal proteins, not with mammalian ANP32B. Synteny analysis confirms this relationship, and evidence suggests placental mammals lost the functional ortholog of avian ANP32B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C31-C39, C89-C94 are well-supported by phylogenetic analysis (Figure 1) and synteny analysis (Figure 1\u2014figure supplement 2). The phylogenetic tree construction used appropriate methods (RAxML with 100 bootstraps), and synteny provides independent corroboration. The conclusion that avian and mammalian ANP32B are paralogues is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C55",
+      "C88"
+    ],
+    "result": "Chicken ANP32B does not support IAV polymerase activity, even for human-adapted viruses. In both human and chicken cells, chANP32B failed to rescue polymerase activity in minigenome assays, while chANP32A did. Knockout of chANP32B in chicken cells had no effect on polymerase activity, demonstrating that IAV relies solely on chANP32A in chicken cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40-C50, C54-C55, C88 are strongly supported by minigenome assay data in multiple cell types (Figures 2, 3). The experiments include appropriate controls (empty vector, WT cells), protein expression confirmation by Western blot, and mRNA expression verification by qRT-PCR. The conclusion that IAV relies solely on chANP32A is well-supported by the knockout experiments showing no loss of activity when chANP32B is absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Removal of the 33 amino acid insertion from chANP32A restricts avian (PB2 627E) but not human-adapted (PB2 627K) polymerase activity. Complete knockout of chANP32A restricts both polymerases. Exogenous expression of chANP32A rescues activity in both mutant cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by minigenome assays in genome-edited PGC-derived fibroblasts (Figure 3c-e). The genetic modifications were confirmed by sequencing and Western blot. The rescue experiments with exogenous chANP32A demonstrate specificity of the genetic alterations. The phenotypes mirror those observed in mammalian cells, providing consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C95",
+      "C99"
+    ],
+    "result": "Amino acids N129I and D130N in the fifth LRR domain of chANP32B account for its inability to support IAV polymerase. Domain-swapping experiments identified LRR5 as critical, and single amino acid mutations N129I and D130N in chANP32A significantly reduced polymerase support. The N129I mutation alone substantially impaired function in both human and chicken cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C58-C66, C95, C99 are well-supported by systematic domain-swapping and mutagenesis experiments (Figure 4). The chimeric constructs were expressed and localized properly (confirmed by Western blot and immunofluorescence). The sequential narrowing from domains to specific residues is methodologically sound. The N129I mutation was tested in multiple contexts (human and chicken cells) with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C100"
+    ],
+    "result": "The sequence of the central domain (amino acids 149-175) and the 33 amino acid insertion are both critical for IAV polymerase function. Scrambling amino acids 149-175 abolished both avian and human-adapted polymerase activity, while scrambling the 33 amino acid insertion only abolished avian polymerase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70, C100 are supported by minigenome assays with scrambled mutants (Figure 5). The experiments demonstrate that sequence, not just length, is important. The differential effects on 627E vs 627K polymerases are consistent with previous findings. Western blot confirms protein expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C95"
+    ],
+    "result": "The N129I mutation disrupts binding between chANP32A and IAV polymerase. Split luciferase complementation assays showed strong interaction between chANP32A and polymerase, but chANP32B showed significantly less interaction. The N129I mutation reduced luciferase complementation 22-fold for PB2 627E and 52-fold for PB2 627K polymerase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76, C95 are supported by split luciferase assays (Figure 6b-c). The quantitative NLR measurements provide strong evidence for reduced binding. Western blot confirms expression of fusion proteins. The magnitude of reduction (22-52 fold) is substantial and consistent with loss of function observed in minigenome assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C117"
+    ],
+    "result": "The N129I mutation does not impair chANP32A's ability to bind histone 4, suggesting the mutation specifically affects IAV polymerase interaction without disrupting the cellular chromatin regulation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C117 are supported by split luciferase assays measuring histone binding (Figure 6d). The control experiment with H3-H4 interaction validates the assay. This result is important for demonstrating specificity of the mutation's effect and has implications for potential therapeutic applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C105",
+      "C106",
+      "C111"
+    ],
+    "result": "Chicken cells lacking chANP32A are highly resilient to IAV replication, particularly at low MOI. At low MOI, no infectious virus was detected. At high MOI, virus replication was significantly reduced (16-1365 fold) compared to WT cells. No PB2 adaptation was observed in virus recovered from aKO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87, C105-C106, C111 are supported by multi-cycle growth kinetics experiments with two different virus strains (Figure 7). The experiments include appropriate controls (WT cells) and multiple time points. Sequencing of recovered virus confirms no adaptation occurred. The MOI-dependent phenotype is interesting and suggests some residual polymerase function at high MOI, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "A novel method of differentiating chicken PGCs into fibroblast-like cells enabled robust testing of defined genotypes and will permit future investigation of other host genetic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are supported by the experimental data throughout the manuscript demonstrating successful use of PGC-derived fibroblasts for minigenome assays and virus infection studies. The differentiation protocol is described in Methods and illustrated in Figure 3\u2014figure supplement 2. The cells were functional for the intended experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C56",
+      "C57"
+    ],
+    "result": "Background information on influenza A virus biology, species barriers, polymerase structure, and ANP32 protein function based on established knowledge and prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C30, C56-C57 represent established knowledge and prior work that is appropriately cited. These provide necessary context for the current study but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Human ANP32A and ANP32B support human-adapted IAV polymerase but not avian IAV polymerase, which requires avian ANP32A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are supported by prior work (cited) and confirmed by experiments in this manuscript (Figure 2). This is established knowledge that provides context for the novel findings about chicken ANP32B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C77",
+      "C78",
+      "C92"
+    ],
+    "result": "Background information on ANP32A-polymerase interaction and ANP32A's cellular functions based on prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C77-C78, C92 represent prior work that is appropriately cited and provides context for the current experiments. These are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Other avian ANP32B proteins (duck, turkey) carry isoleucine at residue 129, suggesting findings may be applicable to other avian hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by sequence alignment data (Figure 4\u2014figure supplement 2). However, C97 is speculative as functional testing in other avian species was not performed. The sequence conservation provides suggestive but not definitive evidence of functional conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The replacement of asparagine (N129) with isoleucine may disrupt a key electrostatic interaction between ANP32A and polymerase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is speculative about the molecular mechanism. While the mutation clearly affects function and binding (supported by data), the specific mechanism (electrostatic interaction) is not directly demonstrated. Structural studies would be needed to confirm this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Independent corroboration of the finding that chANP32B is non-functional for IAV polymerase and that residues 129I and 130N are responsible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by citation to Zhang et al., 2019. This provides independent validation of the key findings, strengthening confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The SUMO Interaction motif (SIM) in the 33 amino acid insertion is required for strong polymerase binding, and its deletion or mutation decreases support of avian IAV polymerase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by citations to prior work (Baker et al., 2018; Domingues and Hale, 2017) and are consistent with the scrambling experiments in this manuscript (Figure 5). This represents prior work that is confirmed by the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C118",
+      "C119",
+      "C122",
+      "C123"
+    ],
+    "result": "Speculative statements about future research directions, potential mechanisms, and applications including drug design and generation of influenza-resilient chickens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104, C107-C110, C112-C114, C116, C118-C119, C122-C123 are speculative about future work, potential mechanisms, and applications. While these are reasonable hypotheses based on the data, they are not directly tested in this manuscript. Some (C108, C114, C118) cite prior work to support the speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Specific domains of ANP32 proteins are important for IAV polymerase function, and there is a lack of redundancy in ANP32 family members supporting IAV polymerase in chicken cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 represent summary conclusions that are well-supported by the collective experimental data throughout the manuscript (Figures 2-6). These synthesize the major findings of the study.",
+    "result_type": "MAJOR"
+  }
+]

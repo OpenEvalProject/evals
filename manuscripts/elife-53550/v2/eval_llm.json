@@ -1,0 +1,525 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Focal inactivation of Apc and Arid1a in hepatocytes leads to severe liver pathology characterized by peliosis-like lesions, hepatomegaly, and mortality. [Apc-Arid1a]ko-focal mice developed irregular livers with blood-filled lacunar spaces, abnormal blood vessels, sinusoidal dilatation, and decreased vascular perfusion, with 50% mortality at 10 months and 100% at 14 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 are well-supported by multiple complementary data types including gross morphology (Figure 1b), ultrasound imaging (Figure 1c), survival analysis (Figure 1d), histology (Figure 1e), and contrast-enhanced ultrasound (Figure 1\u2014supplement 2). The phenotype is consistently observed across all 24 mice studied, with appropriate controls showing no such pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Arid1a loss suppresses \u03b2-catenin-dependent hepatocarcinogenesis. While 92% of [Apc]ko-focal mice developed liver tumors, only 8% of [Apc-Arid1a]ko-focal mice developed tumors, suggesting that Arid1a loss inhibits the tumorigenic effect of activated Wnt/\u03b2-catenin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the tumor incidence data (C44-C45) are clearly presented in Figure 1\u2014supplement 4a, the interpretation (C46) is confounded by the severe hematological phenotype and early mortality in [Apc-Arid1a]ko-focal mice. The authors themselves acknowledge (C153) that results were not fully exploitable due to the deleterious hematological disorder. The reduced tumor incidence may reflect insufficient time for tumor development rather than true tumor suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Peliosis-like regions in [Apc-Arid1a]ko-focal livers show transcriptional signatures of angiogenesis, erythropoietin pathway activation, and Wnt/\u03b2-catenin signaling. GSEA revealed enrichment of angiogenesis and EPO pathway genes in peliosis areas compared to adjacent tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by GSEA data (Figure 2b, Figure 2\u2014supplement 1) and RT-qPCR validation (Figure 2c). The transcriptomic analysis appropriately used microdissected tissue to compare peliosis regions with adjacent areas (n=4 each), providing spatial resolution. The statistical significance and biological coherence of the enriched pathways support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "[Apc-Arid1a]ko-focal mice exhibit dramatic erythrocytosis with significantly elevated RBC counts, hematocrit, and hemoglobin levels compared to controls and single knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are strongly supported by hematological parameter measurements (Figure 2d) with appropriate statistical analysis (one-way ANOVA) and adequate sample sizes (WT n=7, [Apc]ko-focal n=12, [Arid1a]ko-focal n=19, [Apc-Arid1a]ko-focal n=20). The data show clear and consistent elevation of all three erythrocyte parameters specifically in the double knockout mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "[Apc-Arid1a]ko-focal mice show marked reactivation of hepatic Epo expression and elevated plasma EPO protein levels, with the liver as the source rather than the kidney. No Epo expression was detected in control or single knockout livers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by RT-qPCR data (Figure 2e) showing liver and kidney Epo mRNA levels, and ELISA data (Figure 2f) measuring plasma EPO protein. The inference that plasma EPO derives from the liver (C60) is reasonable given elevated liver Epo mRNA without changes in kidney expression. Sample sizes are adequate (WT n=5-7, knockouts n=7-20).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Human HCC harboring compound CTNNB1/ARID1A mutations do not show changes in EPO mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by TCGA data analysis (Figure 1\u2014supplement 4d) comparing EPO expression across different mutation groups. This negative result is important for understanding the translational relevance and suggests the mouse phenotype may not directly translate to human cancer biology, possibly due to differences in tumor microenvironment or the non-cancerous context of the mouse model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "[Apc-Arid1a]ko-focal mice exhibit splenic erythropoiesis with marked splenomegaly, expansion of red pulp with erythroblasts, threefold increase in splenic erythroid precursors, 13-fold increase in CFU-E, and elevated expression of erythropoiesis factors. No intrahepatic erythropoiesis was observed, and bone marrow erythroid populations were unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are comprehensively supported by multiple complementary assays: gross morphology and spleen/body weight ratios (Figure 3a,b), histology (Figure 3c), flow cytometry (Figure 3d,e), CFU-E assays (Figure 3f), and RT-qPCR (Figure 3g). The data consistently demonstrate splenic-specific erythropoiesis with appropriate controls and adequate sample sizes (n=4-17 depending on assay). The conclusion that erythropoiesis is splenic rather than hepatic or medullary is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C77",
+      "C78"
+    ],
+    "result": "Anti-EPO antibody treatment reverses erythrocytosis and splenic erythropoiesis in [Apc-Arid1a]ko-focal mice. Treatment restored hematocrit to control levels, reduced splenic erythroid precursors 10-fold, and decreased expression of erythropoiesis factors, demonstrating that high plasma EPO is directly responsible for the erythrocytosis and splenic erythropoiesis phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72, C77-C78 are supported by anti-EPO blocking experiments with hematocrit measurements (Figure 4a), flow cytometry (Figure 4b,c), and RT-qPCR (Figure 4d). The experimental design appropriately uses before/after comparisons (n=4 each) and demonstrates clear reversal of the phenotype. The causal inference (C77-C78) is justified by the functional rescue experiment, though sample sizes are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "Anti-EPO treatment reduces intrahepatic RBCs but does not affect liver vascular architecture disruption, indicating that EPO alone is not responsible for the angiogenic abnormalities in [Apc-Arid1a]ko-focal livers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C79 are supported by histology (Figure 4e, Figure 4\u2014supplement 1), flow cytometry (Figure 4f,g), and RT-qPCR of angiogenic factors (Figure 4h). The persistence of vascular disruption despite EPO blockade provides strong evidence that the angiogenic phenotype is EPO-independent. This dissection of EPO-dependent and EPO-independent phenotypes is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "EPO expression is cell-autonomous to hepatocytes and requires both \u03b2-catenin activation and Arid1a loss. Epo mRNA was detected only in hepatocytes (not NPCs) of [Apc-Arid1a]ko-TOTAL mice, and EPO expression was induced in both mouse and human primary hepatocytes by combined Arid1a knockdown and Wnt/\u03b2-catenin activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by RT-qPCR from isolated hepatocytes and NPCs (Figure 5c,d), in vitro experiments with primary mouse hepatocytes (Figure 5e, Figure 5\u2014supplement 2), HEPA1.6 cells (Figure 5\u2014supplement 2d), and primary human hepatocytes (Figure 5f). The cell-autonomous nature is demonstrated by hepatocyte isolation, and conservation across species strengthens the findings. Multiple experimental approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C146"
+    ],
+    "result": "Single-molecule RNA in situ hybridization reveals that Epo expression occurs in rare Axin2-positive (\u03b2-catenin-activated) hepatocytes after Apc and Arid1a inactivation. In control mice, Epo is not expressed in liver but is abundant in rare kidney interstitial cells. Epo expression is restricted to peliosis areas in the focal model and occurs in rare hepatocytes in the panlobular model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90, C146 are supported by RNA in situ hybridization data (Figure 6, Figure 6\u2014supplement 1) showing spatial localization of Epo transcripts. The single-molecule resolution reveals the stochastic nature of Epo expression, occurring only in a subset of \u03b2-catenin-activated, Arid1a-null hepatocytes. This explains why bulk measurements show Epo induction but highlights the complexity of transcriptional regulation. The technical approach is appropriate and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The Epo 3' enhancer is bound by Tcf4 and shows developmental regulation of H3K27Ac marks. Tcf4 binding is stronger in \u03b2-catenin-activated hepatocytes. Luciferase reporter assays demonstrate that Wnt/\u03b2-catenin signaling increases Epo enhancer activity 5-8 fold, independent of Arid1a status in the reporter context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by ChIP-Seq data (Figure 7a), ENCODE data analysis, and luciferase reporter assays (Figure 7c,d). The identification of the Epo 3' enhancer as the Tcf4 binding site is based on prior ChIP-Seq data (Gougelet et al., 2014). The luciferase assays appropriately demonstrate enhancer activity, though the independence from chromatin context (C96) is expected for episomal reporters and doesn't contradict the requirement for Arid1a loss in the endogenous chromatin context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Epo induction by \u03b2-catenin/Arid1a is independent of hypoxia and HIF signaling. No hypoxia or HIF1\u03b1/HIF2\u03b1 accumulation was detected in knockout livers. While HIF knockdown reduced DFO-induced Epo enhancer activity, it did not reduce \u03b2-catenin-induced activity in Apc or Apc-Arid1a knockout hepatocytes, demonstrating HIF-independent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 are supported by Hypoxyprobe staining (Figure 7\u2014supplement 1a), Western blots (Figure 7\u2014supplement 1b,c), RT-qPCR (Figure 7\u2014supplement 1d), and luciferase assays with HIF knockdown (Figure 7e, Figure 7\u2014supplement 2). The experimental design appropriately distinguishes HIF-dependent (DFO-induced) from HIF-independent (\u03b2-catenin-induced) Epo regulation. This is a key mechanistic finding showing a novel pathway for EPO regulation distinct from the classical hypoxia response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Tcf4 binds the HRE/DR2 motif of the Epo enhancer, and this binding is enhanced by \u03b2-catenin activation. EMSA demonstrates weak Tcf4 binding in control extracts and stronger binding with \u03b2-catenin/Tcf4 complex formation in [Apc]ko-TOTAL extracts. Competitive EMSA confirms binding to both DR2 and classical WRE motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by EMSA data (Figure 8a,b,c) showing Tcf4 binding to the Epo enhancer HRE and competitive binding experiments. The demonstration that Tcf4 can bind HRE motifs (not just classical WREs) is mechanistically important and consistent with prior work (Gougelet et al., 2014). The supershift with \u03b2-catenin provides evidence for complex formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "\u03b2-catenin activation and Arid1a loss have distinct but complementary effects on the Epo enhancer. \u03b2-catenin increases Tcf4 binding and chromatin accessibility, while Arid1a loss decreases H3K27me3 repressive marks. Together, they increase H3K27Ac active marks and promote Epo transcription. Classical \u03b2-catenin target genes (Glul, Axin2) are not affected by Arid1a status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C125 are supported by comprehensive chromatin analysis including ChIP-qPCR for Tcf4, H3K27Ac, and H3K27me3 (Figure 8d,e) and ATAC-qPCR for chromatin accessibility (Figure 8f, Figure 8\u2014supplement 2). The data reveal distinct mechanisms: \u03b2-catenin affects accessibility and Tcf4 binding, while Arid1a affects histone modifications. The differential effects on Epo versus canonical targets (C111) suggest enhancer-specific chromatin requirements. Sample sizes are adequate (n=2-7) for these technically demanding assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Tcf4/\u03b2-catenin binds the Hnf4-Responsive Element in the Epo 3' enhancer, and enhancer activity is independent of HIF in this context, contrasting with HIF-\u03b2-catenin cooperation reported in colorectal cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 are supported by EMSA and ChIP data (Figure 8) and luciferase assays (Figure 7e). The HIF-independence is demonstrated by the lack of effect of HIF knockdown on \u03b2-catenin-induced enhancer activity. The contrast with colorectal cancer (C130, citing Kaidi et al., 2007) highlights tissue-specific mechanisms of Wnt/\u03b2-catenin signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "The phenotype in [Apc-Arid1a]ko-focal mice is distinct from other liver-induced erythrocytosis models and results from both EPO-dependent erythrocytosis and EPO-independent aberrant angiogenesis (peliosis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by comparison with cited models (Minamishima and Kaelin, 2010; Ruschitzka et al., 2000; Takeda et al., 2008) and the anti-EPO blocking experiments demonstrating dissociable phenotypes. The lethality distinguishes this model from others with equivalent erythrocytosis, and the persistence of vascular disruption after EPO blockade confirms the EPO-independent angiogenic component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Arid1a inactivation is required for \u03b2-catenin-dependent Epo transcription, representing a distinct mechanism from previously described chromatin remodeling in hypoxia-dependent Epo regulation. Unlike studies of BRG1/BRM ATPases (core SWI/SNF subunits), Arid1a loss (a facultative BAF component) has a specific repressive role through modulating chromatin accessibility and H3K27me3 marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 are supported by the combined genetic, expression, and chromatin data throughout the manuscript. The distinction from prior work (Wang et al., 2004; Sena et al., 2013) is justified: those studies examined hypoxia-dependent regulation and core SWI/SNF subunits, while this work demonstrates HIF-independent regulation requiring loss of the facultative subunit Arid1a. The mechanistic distinction is supported by citations (Sun et al., 2016; Nagl et al., 2005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "EPO production shifts from embryonic liver to adult kidney, but the adult liver retains the capacity to produce EPO. In mouse embryos, hepatoblasts are the primary EPO source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C54-C56 represent established knowledge about developmental EPO regulation, supported by citations (Weidemann and Johnson, 2009; Suzuki, 2015; Jelkmann, 2007). These provide essential background context for understanding the significance of hepatic EPO reactivation in the experimental models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Chromatin dynamics modulate gene expression, with the liver being a prominent tissue for chromatin-mediated cell fate programming. ARID1A is a BAF subunit of SWI/SNF chromatin remodeling complexes that use ATP to reposition nucleosomes and modulate DNA accessibility, regulating gene expression in various cellular functions. Mutations in chromatin modifiers are found in cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 represent established knowledge about chromatin remodeling and ARID1A function, supported by appropriate citations (Zaret, 2016; de la Serna et al., 2006; Kadoch et al., 2016). These provide necessary background for understanding the experimental rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "ARID1A is frequently inactivated in hepatocellular carcinoma (>13% of HCCs), preferentially co-occurring with CTNNB1 mutations (one-third of HCCs). Arid1a plays roles in liver regeneration and tumorigenesis in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 represent established knowledge about ARID1A in liver biology and cancer, supported by citations (Sun et al., 2018; Sun et al., 2016; Torre et al., 2016; Guichard et al., 2012; Rebouissou et al., 2016). These provide the clinical and biological rationale for studying Arid1a-Apc interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Wnt/\u03b2-catenin signaling in adult liver has both physiological and oncogenic effects, is restricted to pericentral hepatocytes where it patterns metabolic functions, and can induce hepatomegaly/lethality when panlobularly activated or tumors when focally activated. \u03b2-catenin translocates to the nucleus, binds Tcf4, and targets WREs, with chromatin remodeling unlocking access to these elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 represent established knowledge about hepatic Wnt/\u03b2-catenin signaling, supported by multiple citations (Cavard et al., 2008; Colnot, 2016; Monga, 2015; Planas-Paz et al., 2016; Benhamouche et al., 2006; Gougelet et al., 2014; Torre et al., 2011; Colnot et al., 2004; Mosimann et al., 2009). These provide essential background for understanding the experimental models and interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C53",
+      "C73"
+    ],
+    "result": "EPO is a key cytokine for erythropoiesis and a pleiotropic growth factor that can stimulate vessel growth through autocrine/paracrine mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C73 represent established knowledge about EPO function, supported by citations (Jelkmann, 2007; Kim\u00e1kov\u00e1 et al., 2017). These provide context for interpreting the erythrocytosis and angiogenesis phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "HIF2\u03b1 has a prominent role in hepatic EPO transcription under hypoxic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 represents established knowledge supported by citation (Mastrogiannaki et al., 2012), providing context for the HIF-independence experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "In colorectal cancer cell lines, HIF and \u03b2-catenin cooperate transcriptionally in hypoxia adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is supported by citation (Kaidi et al., 2007) and provides important context showing tissue-specific differences in Wnt-HIF interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "HIF stabilizers are used clinically to restore EPO levels in anemia but have safety concerns due to lack of targeting specificity. Using cell transcriptional machinery to produce EPO has been proposed as an alternative approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 represent current clinical knowledge and therapeutic strategies, with C132 supported by citation (Kular and Macdougall, 2019). These provide translational context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Arid1a and Polycomb complexes may act in concert to modulate Epo expression, consistent with synthetic lethality of EZH2 inhibition in ARID1A-mutated tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C141 is speculative, based on known SWI/SNF-Polycomb antagonism and the H3K27me3 data. Claim C142 (citing Bitler et al., 2015; Alldredge and Eskander, 2017) provides supporting evidence for functional interaction, but direct evidence for Polycomb involvement in Epo regulation is not provided. This represents a reasonable hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Arid1a loss increases Epo enhancer accessibility to Tcf4 and \u03b2-catenin. Tcf4 DNA binding is stronger with nuclear \u03b2-catenin, contrary to the paradigm of \u03b2-catenin-independent Tcf4 binding. Numerous interactions between chromatin remodeling and Wnt/\u03b2-catenin signaling have been described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 is supported by ChIP data (Figure 8e). Claim C144 is supported by citation to prior work (Gougelet et al., 2014). Claim C145 is supported by multiple citations (Barker et al., 2001; Eckey et al., 2012; Mathur et al., 2017; Song et al., 2009; Yan et al., 2014; Zhai et al., 2016), providing broader context for the chromatin-Wnt interactions observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C147"
+    ],
+    "result": "Transcription in the liver is gene-dependent and can be either bursty/dynamic or stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C147 is supported by citation (Bahar Halpern et al., 2015) and provides context for interpreting the rare, stochastic Epo expression observed by RNA in situ hybridization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "Arid1a loss does not change transcription of canonical hepatic Wnt/\u03b2-catenin target genes (Glul, Axin2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C148 is supported by RT-qPCR data (Figure 8\u2014supplement 1) and is important for demonstrating enhancer-specific effects of Arid1a loss rather than global effects on \u03b2-catenin signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Arid1a loss may unmask new chromatin-dependent \u03b2-catenin target genes, including those involved in liver angiogenesis. Future genome-wide studies combining transcriptome, ATAC-Seq, histone marks, and ChIP-Seq will be needed to identify these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C151 are speculative, representing proposed future work. While the angiogenesis phenotype (C150) suggests additional target genes beyond Epo, systematic identification requires the proposed genome-wide studies. This is appropriately framed as future work rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "Arid1a loss appears to protect against \u03b2-catenin-dependent carcinogenesis in the experimental models, but results are not fully exploitable due to the severe hematological disorder and early mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C153 acknowledge a limitation: the reduced tumor incidence (8% vs 92%) could reflect tumor suppression or simply insufficient time for tumor development due to early death from the hematological phenotype. The authors appropriately recognize this confounding factor and note that new models are needed to properly assess oncogenic cooperation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C154",
+      "C155"
+    ],
+    "result": "Arid1a can have either tumor suppressor or oncogenic roles depending on cellular context, as shown in liver and colorectal cancer studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155 are supported by citations (Sun et al., 2018; Mathur et al., 2017) and provide important context for interpreting the complex role of Arid1a in cancer, which may be context-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Pathological erythrocytosis and hepatic vascular lesions have been identified in some liver cancers, but mechanisms are poorly understood. The current study suggests these are not linked to CTNNB1/ARID1A mutations but more likely to hypoxia in cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 are supported by multiple citations (Matsuyama et al., 2000; Bunn, 2013; Ke et al., 2017; Hoshimoto et al., 2009; Tsuchiya et al., 2009; Vik et al., 2009) and the negative result in human HCC (C61). The inference that hypoxia rather than CTNNB1/ARID1A mutations explains cancer-associated erythrocytosis is reasonable given the data, though the study doesn't directly test this hypothesis in cancer models.",
+    "result_type": "MINOR"
+  }
+]

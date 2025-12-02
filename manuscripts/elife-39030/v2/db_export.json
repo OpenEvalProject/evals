@@ -1,0 +1,2089 @@
+{
+  "submission": {
+    "id": "e9fdf56b-a9a3-4fe0-97cf-2f9c099a9a12",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:05:48.350710Z",
+    "updated_at": "2025-12-02T07:05:48.350710Z"
+  },
+  "content": [
+    {
+      "id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "submission_id": "e9fdf56b-a9a3-4fe0-97cf-2f9c099a9a12",
+      "content_type": "manuscript",
+      "content_text": "# Targeting MYC dependency in ovarian cancer through inhibition of CDK7 and CDK12/13\n\n## Authors\n\n- Mei Zeng<sup>1</sup> ([ORCID: 0000-0001-5316-3522](https://orcid.org/0000-0001-5316-3522))\n- Nicholas P Kwiatkowski<sup>1</sup>\n- Tinghu Zhang<sup>1</sup>\n- Behnam Nabet<sup>1</sup> ([ORCID: 0000-0002-6738-4200](https://orcid.org/0000-0002-6738-4200))\n- Mousheng Xu<sup>1</sup>\n- Yanke Liang<sup>1</sup>\n- Chunshan Quan<sup>1</sup>\n- Jinhua Wang<sup>1</sup>\n- Mingfeng Hao<sup>1</sup>\n- Sangeetha Palakurthi<sup>4</sup>\n- Shan Zhou<sup>4</sup>\n- Qing Zeng<sup>4</sup>\n- Paul T Kirschmeier<sup>4</sup>\n- Khyati Meghani<sup>5</sup>\n- Alan L Leggett<sup>1</sup>\n- Jun Qi<sup>1</sup>\n- Geoffrey I Shapiro<sup>6</sup>\n- Joyce F Liu<sup>7</sup>\n- Ursula A Matulonis<sup>7</sup>\n- Charles Y Lin<sup>8</sup> ([ORCID: 0000-0002-9155-090X](https://orcid.org/0000-0002-9155-090X)) \u2020\n- Panagiotis A Konstantinopoulos<sup>7</sup> \u2020\n- Nathanael S Gray<sup>1</sup> ([ORCID: 0000-0001-5354-7403](https://orcid.org/0000-0001-5354-7403)) \u2020\n\n### Affiliations\n\n1. Department of Cancer Biology Dana-Farber Cancer Institute Boston United States\n2. Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n3. Department of Medicine Harvard Medical School Boston United States\n4. Belfer Center for Applied Cancer Science Dana-Farber Cancer Institute Boston United States\n5. Department of Radiation Oncology Dana-Farber Cancer Institute Boston United States\n6. Early Drug Development Center Dana-Farber Cancer Institute Boston United States\n7. Department of Medical Oncology Dana-Farber Cancer Institute Boston United States\n8. Department of Biochemistry and Molecular Biology Baylor College of Medicine Houston United States\n9. Department of Molecular and Human Genetics Baylor College of Medicine Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHigh-grade serous ovarian cancer is characterized by extensive copy number alterations, among which the amplification of MYC oncogene occurs in nearly half of tumors. We demonstrate that ovarian cancer cells highly depend on MYC for maintaining their oncogenic growth, indicating MYC as a therapeutic target for this difficult-to-treat malignancy. However, targeting MYC directly has proven difficult. We screen small molecules targeting transcriptional and epigenetic regulation, and find that THZ1 - a chemical inhibiting CDK7, CDK12, and CDK13 - markedly downregulates MYC. Notably, abolishing MYC expression cannot be achieved by targeting CDK7 alone, but requires the combined inhibition of CDK7, CDK12, and CDK13. In 11 patient-derived xenografts models derived from heavily pre-treated ovarian cancer patients, administration of THZ1 induces significant tumor growth inhibition with concurrent abrogation of MYC expression. Our study indicates that targeting these transcriptional CDKs with agents such as THZ1 may be an effective approach for MYC-dependent ovarian malignancies.\n\n## Introduction\n\nEpithelial ovarian cancer (OC) is the fifth most common cause of female cancer death in the United States and the most lethal gynecologic malignancy (Siegel et al., 2017). High-grade serous ovarian carcinoma (HGSOC) represents the most common and aggressive histologic subtype of OC, and accounts for the majority of its deaths (Konstantinopoulos and Awtrey, 2012). Large-scale genomic studies have demonstrated that HGSOCs are characterized by high degree of genomic instability with high frequency of DNA copy number alterations and almost universal presence of TP53 mutations (Cancer Genome Atlas Research Network, 2011). Approximately 50% of HGSOCs exhibit an underlying defect in DNA repair via homologous recombination (HR) and are highly sensitive to double-strand-break-inducing agents such as platinum analogues and PARP-inhibitors (PARPi) (Konstantinopoulos et al., 2015). However, although first-line platinum-based chemotherapy results in clinically complete remissions in approximately 70% of OC patients, relapse occurs in more than 90% of these patients, at which point the disease is much less responsive to subsequent treatment and is essentially non-curable. Similarly, despite initial responses to PARPi among HR-deficient HGSOCs, acquired resistance occurs commonly and represents a significant barrier to the long-term survival of these patients (Lord and Ashworth, 2017). Overall, the outlook for patients with platinum and PARPi-resistant disease is poor, so novel therapeutic strategies are urgently needed (Vaughan et al., 2011).\n\nThe control of gene transcription involves a set of cyclin-dependent kinases (CDKs), including CDK7, CDK8, CDK9, CDK11,\u00a0CDK12, CDK13, and CDK19, that play essential roles in transcription initiation and elongation by phosphorylating RNA polymerase II (RNAPII) and other components of the transcription apparatus (Larochelle et al., 2007; Zhou et al., 2012). Recent studies have shown that certain oncogenes, for\u00a0example MYC, MYCN, and RUNX1 exhibit significant dependence on continuous active transcription, and that inhibition of the general transcriptional machinery may allow for highly selective effects on these oncogenes in cancer cells before global downregulation of transcription occurs (Kwiatkowski et al., 2014;\u00a0Cao and Shilatifard, 2014; Chipumuro et al., 2014). The continuous active transcription of these oncogenes in cancer cells is often driven by exceptionally large clustered enhancer regions, termed super-enhancers, which are densely occupied by transcription factors and co-factors (Hnisz et al., 2013; Lov\u00e9n et al., 2013). In this vein, it was recently shown that CDK7 mediates transcriptional addiction to a vital cluster of genes associated with super-enhancers in triple-negative breast cancer (TNBC), and that TNBC cells are exceptionally dependent on CDK7 (Wang et al., 2015). The CDK7 covalent inhibitor THZ1, which also inhibits the closely related kinases CDK12 and CDK13 (CDK12/13), has been also shown to directly suppress super-enhancer-associated oncogenic transcription in T-cell acute lymphoblastic leukemia, neuroblastoma and small cell lung cancer (Kwiatkowski et al., 2014;\u00a0Chipumuro et al., 2014; Christensen et al., 2014).\n\nHere, we identified THZ1 as a highly potent compound that downregulates MYC expression. THZ1 demonstrates exceptional in vivo activity in patient-derived xenograft (PDX) models of ovarian cancer that were platinum and PARPi resistant. Notably, suppression of MYC was only achieved by simultaneous inhibition of CDK7, CDK12, and CDK13. Our data suggest that combined inhibition of transcriptional CDKs with THZ1, or its derivatives, may be an effective approach for treating MYC-dependent ovarian\u00a0cancer.\n\n## Results and discussion\n\n### MYC is frequently amplified in ovarian cancer and is essential for cancer cell growth\n\nPrevious large-scale studies of HGSOC demonstrated extensive copy number alterations (Cancer Genome Atlas Research Network, 2011). Among the total eight recurrent chromosome-arm gains, chromosome 8q has the most significant gains and occurred in 65% of the tumors (n\u00a0=\u00a0489) (Cancer Genome Atlas Research Network, 2011). Analyzing the updated TCGA dataset that includes more patient samples also indicate the widespread 8q gain, in addition to 8 p loss (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig1-v2.jpg)\n\n**Figure 1.:** (A) Copy number plots of TCGA high-grade serous ovarian cancer samples for chromosome 8 (top) and part of the q24 arm (bottom). Red color indicates a high chromosomal copy number ratio, blue represents low (see color key on the right). Data were analyzed and plotted using UCSC Xena Functional Genomics Browser (xena.ucsc.edu). (B) Frequency of MYC amplification across cancer types. (C) Correlation between MYC copy number and its gene expression in ovarian cancer. The relative copy number value and normalized RNA-seq expression\u00a0values of MYC were downloaded from cBioportal and plotted in GraphPad Prism. Pearson correlation coefficient was measured and the p-value<1\u00d710\u22124. (D) CRISPR/Cas9-mediated gene editing in ovarian cancer cells. Immunoblotting of lysates from ovarian\u00a0cancer cells that were infected with lentivirus encoding Cas9 and sgRNA targeting GFP or MYC, and then harvested 2 days after puromycin selection (top). Cells were fixed after 12 days and stained with crystal violet (bottom). (E) Effect of JQ1 in ovarian cancer cells (top) and in a multiple myeloma line MM1.S (bottom). Cells were treated with vehicle control (DMSO) or increasing concentrations of JQ1 for 6 hr before lysates were prepared for immunoblotting with the indicated antibodies. Also see Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Data were downloaded from https://depmap.org/portal/, and analyzed in GraphPad Prism 7. (A)\u00a0Lack of correlation between MYC gene copy number and MYC dependency scores. (B) MYC dependency is highly correlated with MAX dependency in ovarian cancer cell lines. Each circle represents one cancer cell line. Pearson correlation coefficient (r) is indicated, with p values shown for the statistical significance test of Pearson correlation.\n\nInspired by earlier investigations of ovarian cancer reporting the amplification of 8q regions as well as that of MYC oncogene in 8q24 (Baker et al., 1990; Etemadmoghadam et al., 2009; Staebler et al., 2006), we focus on the amplification of MYC in ovarian cancer. Notably, ovarian cancer demonstrates the highest frequency of MYC amplification (Figure 1B), compared to many other tumor types. We further analyzed and found a significant correlation between the gene copy number of MYC and its gene expression level (assayed by RNA sequencing) (Figure 1C). Therefore, MYC has widespread amplification in ovarian cancer, and its amplification typically correlates with high-level expression of the MYC oncogene.\n\nDriven by the extensive alterations on both MYC gene copy and expression scales, we next proceeded to evaluate the functional role of MYC in OC lines. We utilized CRISPR/Cas9-mediated gene editing technique to disrupt the expression of MYC (Sanjana et al., 2014), and observed an efficient loss of MYC protein in cells infected with lenti-virus encoding two independent MYC-targeting guide RNAs (Figure 1D, top). MYC-depleted KURAMOCHI and OVCAR8 cells showed a significant deficit in cell viability compared to control cells as determined by clonogenic growth survival assay (Figure 1D, bottom). In addition, we analyzed the large-scale CRISPR screen performed by Broad Institute, a study where they developed the CERES computational model to reduce the false-positive differential dependencies caused by multiple DNA breaks resulted from targeting amplified regions (Meyers et al., 2017). In the analysis illustrating MYC dependency in a total of\u00a0484 cancer cell lines, there is no statistical correlation between MYC dependency values and with MYC copy number (Figure 1\u2014figure supplement 1A), indicating the successful computational elimination of effects introduced by targeting amplified MYC. Notably, ovarian cancer cells overall demonstrate a high dependence on MYC (indicated by the low CERES values), and as expected, MYC dependency is highly correlated with cell dependency on MAX \u2013 a partner of MYC for transcriptional regulation (Figure 1\u2014figure supplement 1B). These data further confirm the functional roles of MYC for ovarian cancer cell proliferation and indicate MYC as a promising therapeutic target for ovarian cancer.\n\n### Screening transcriptional/epigenetic regulators identifies THZ1 as a potent inhibitor for MYC expression in ovarian cancer cells\n\nGiven the prominent gene amplification/overexpression of MYC and its critical roles for ovarian cancer cell growth, we next explored pharmacologic strategies for targeting MYC. Since the MYC protein lacks characteristics enabling specific and direct binding to small molecule compounds, recent studies have focused on approaches to interrupt the genesis of MYC transcript/protein or key downstream functions of MYC. In this regard, several studies have shown that inhibition of BET bromodomain proteins can effectively downregulate MYC transcription and consequently the growth of MYC-dependent cancer cells (Delmore et al., 2011; Mertz et al., 2011). Consistent with previous studies (Delmore et al., 2011), we found that MYC expression in the multiple myeloma line MM1.S is highly sensitive to JQ1; treating cells with JQ1 at nanomolar concentrations was sufficient to downregulate MYC protein abundance (Figure 1E, bottom). Surprisingly, this effect was not observed in ovarian cancer cells (Figure 1E, top), a phenotype reminiscent of that seen in other non-hematologic cancer cells, such as lung adenocarcinoma cells (Lockwood et al., 2012), and some triple-negative breast cancer cells (Shu et al., 2016).\n\nTo identify regulatory pathways that control MYC gene transcription in ovarian cancer, we proceeded to screen a selected group of chemicals. We selected 42 compounds, derived from the HMS small molecule library (http://lincs.hms.harvard.edu/db/sm/), targeting various transcriptional and/or epigenetic components, such as histone modification enzymes, transcriptional CDKs, transcriptional co-activators, and DNA modification enzymes (Figure 2A; Supplementary file 1). The compounds were used for treating two OC cell lines, KURAMOCHI and COV362. Whole cell lysates were then harvested for fluorescent immunoblotting, and MYC protein signal was normalized to that of loading control in the same membrane (Figure 2A; Figure 2\u2014figure supplement 1). In both cell lines, these inhibitors display various effects on MYC protein abundance, and the most potent inhibitor is THZ1, an inhibitor known to target CDKs 7, 12, and 13 (Kwiatkowski et al., 2014) (Figure 2B;\u00a0Figure 2\u2014figure supplement 1; Supplementary file 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic diagram of a screen for small molecules that inhibit MYC expression. Ovarian cancer cells were treated with selected epigenetic/transcriptional inhibitors for 6 hr at a final concentration of 1 \u03bcM. Whole cell lysates were subjected to fluorescent immunoblotting with anti-MYC and anti-\u03b1-tubulin (loading control) antibodies. (B) Normalized signals of MYC by immunoblotting in KURAMOCHI cells. THZ1 was the most potent inhibitor that reduces MYC expression. (C) The indicated cells were treated with increasing concentrations of THZ1 for 6 hr. Cell lysates were subjected to immunoblotting using the indicated antibodies. (D) qPCR analysis of MYC and MCL-1 in THZ1-treated ovarian cancer cells. Student\u2019s t-test was performed and data were presented as mean values\u00a0\u00b1\u00a0SD of technical triplicates. Also see Figure 2\u2014figure supplement 1; Figure 2\u2014figure supplement 2; Supplementary file 1 and Supplementary file 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A-B) Ovarian cancer cell lines, KURAMOCHI (A) or COV362 (B), were treated with indicated inhibitors for 6 hr, followed by preparation of whole cell lysates and immunoblotting using the indicated antibodies.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A)\u00a0Kaplan-Meier plot of disease-free survival in ovarian cancer patients with (red) or without (blue) co-amplification of MYC and MCL-1 (left panel). Kaplan-Meier plot of disease-free survival in ovarian cancer patients with co-amplification of MYC and MCL-1 (red) or with MYC amplification alone (blue) (right panel). Disease-free survival data and annotations of MCL1 and MYC amplification were downloaded from the TCGA provisional dataset at the cbioportal website. The statistical significance was calculated using the log rank test. (B) Ovarian cancer cells were treated with increasing concentrations of THZ1. Cells were subjected to CellTiter-Glow Luminescent Cell Viability Assay after 72 hr of treatment. Data were represented as mean\u00a0\u00b1\u00a0SD of biological triplicates. (C) Basal expression of MYC and MCL-1 in OC cell lines. Note that SKOV3 cells (highlighted in red box) has the least abundance of MYC and MCL1. (D) (Top) Immunoblotting of lysates from indicated cells that were infected with lentivirus encoding Cas9 and sgRNA targeting GFP or MCL-1. (Bottom) Cells were infected with lenti-CRISPR, and following puromycin selection, subjected to clonogenic cell growth. Cells were fixed 12 days after seeding and stained with crystal violet. (E) Cells were treated and assayed as described in D, with either MYC or MCL-1-targeting sgRNAs was used.\n\nWe next validated the potency of THZ1 for inhibiting MYC expression in ovarian cancer cells. MYC protein abundance was decreased by THZ1 at\u00a0~250 nM and was further abolished when higher doses of THZ1 were used (Figure 2C). Consistent with the roles of CDK7 in regulating the phosphorylation of the carboxyl-terminal domain (CTD) of RNA polymerase II subunit RPB1, CTD phosphorylation at Ser2, 5, and 7 was suppressed by THZ1(Figure 2C).\n\n### MCL-1 expression is sensitive to THZ1\n\nInterestingly, the anti-apoptotic protein of Bcl-2 family, pro-survival protein myeloid cell leukemia 1 (MCL-1), was repressed by THZ1 concomitantly (Figure 2C; Figure 2\u2014figure supplement 1A\u2013B). We further examined the mRNA level of MYC and MCL-1, and found that treating both KURAMOCHI and COV362 cells with THZ1 (250 nM) led to a 50% or greater reduction of both transcripts (Figure 2D), indicating that the transcriptional inhibition of MYC and MCL-1 genes may be largely responsible for the observed reduction in protein abundance.\n\nAlthough less prevalent than MYC amplification, MCL-1 amplification was observed in 12% of HGSOCs of the TCGA dataset. Notably, in the TCGA, HGSOCs that harbored both MYC and MCL-1 amplification were associated with poor outcome, which was significantly worse compared to all remaining HGSOCs (Figure 2\u2014figure supplement 2A, left panel). Additionally, among MYC amplified HGSOCs, those that co-exhibited MCL-1 amplification had significantly worse prognosis compared to MYC amplified tumors without MCL-1 amplification (Figure 2\u2014figure supplement 2A, right panel), indicating a role of MCL-1 during disease progression.\n\nInterestingly, out of the total eight ovarian cancer cell lines (KURAMOCHI, COV362, OVCAR8, SKOV3, IGROV1, OVSAHO, OVCAR3, OVCAR4), the only cell line (SKOV3) that is least sensitive to THZ1 in terms of cell growth inhibition demonstrates low protein abundance of both MYC and MCL-1 (Figure 2\u2014figure supplement 2B\u2013C). While THZ1-sensitive lines, such as KURAMOCHI and OVACAR8, are susceptible to CRISPR/Cas9-mediated gene editing of MYC (Figure 1D) or MCL-1 (Figure 2\u2014figure supplement 2D), the THZ1-insensitive line SKOV3 was largely unaffected by the loss of MYC or MCL-1 (Figure 2\u2014figure supplement 2E). These data suggest that the expression levels of MYC and MCL-1 in OC cells may determine its sensitivity to THZ1.\n\n### THZ1 represses MYC target genes in ovarian cancer cells\n\nWe next performed global gene expression profiling in ovarian cancer cells to investigate the effects of THZ1 on transcriptional programs. In two THZ1-sensitive cell lines KURAMOCHI\u00a0(Ku) and COV362\u00a0(Cov), we treated cells for 6 hr with vehicle control or THZ1 at two concentrations (50 and 250 nM) in duplicates, and then subjected samples for RNA isolation, library construction, and sequencing.\n\nWe analyzed the actively expressed genes (n\u00a0=\u00a014,068) in two ovarian cancer cell lines and the global change of gene expression was displayed in a concentration-dependent manner upon THZ1 treatment, shown by the heatmaps (Figure 3A). A profound suppression of gene expression was observed following treatment of THZ1 at 250 nM in both cell lines, with 1060 genes downregulated and 58 genes upregulated in Ku cells\u00a0(Figure 3B,\u00a0top), and\u00a01524 genes downregulated and 50 genes upregulated in Cov cells (Figure 3B),\u00a0bottom). Among these, both MYC and MCL-1 were significantly downregulated in both cell lines, with the cutoff of Log2 fold change\u00a0>0.5 and FDR adjusted p-value<0.001 (Figure 3B). The regulation on MYC expression by THZ1 appears quite specific, because PVT1 \u2212 a lncRNA gene co-amplified with MYC on 8q24 \u2212 is not significantly downregulated by THZ1 (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig3-v2.jpg)\n\n**Figure 3.:** (A) Heatmaps showing row normalized gene expression for all actively expressed genes (n\u00a0=\u00a014,068) (cell count normalized FPKM\u00a0>\u00a01 in at least one sample). (B) Scatter plots comparing change in gene expression upon THZ1 treatment to gene expression levels in DMSO. X-axis shows the Log2 fold change of expression (THZ1/DMSO). Y-axis shows the adjusted log2 counts per million (CPM) expression in DMSO. Differentially regulated genes as determined by edgeR are shown for downregulated (blue) and upregulated (red) genes. A FDR adjusted p-value cutoff of 1e-3 and a log fold change (LFC) cutoff of 0.5 are used as the threshold for significance. (C) Left - Venn diagram showing the intersection of differential downregulated genes between Ku and Cov cells upon THZ1 250 nM treatment. Significance of overlap is determined by a fisher's exact test. p-value and odds ratio are shown. Right - Scatter plots comparing the log2 fold change in gene expression upon THZ1 250 nM treatment between Ku and Cov cells. Differential downregulated genes that are shared between Ku and Cov are shown in blue. The pearson correlation of differential genes is shown (Rho\u00a0=\u00a00.76). (D) Bar plot showing gene sets from the MSigDB Hallmarks of Cancer that are significantly enriched (FDR q value\u00a0<\u00a01e-3) amongst the 685 genes shared as differentially downregulated between Ku and Cov upon 250 nM THZ1 treatment. MYC target gene sets are shown in red. (E) Box plots showing the log2 fold change in gene expression upon THZ1 treatment for MYC target genes (red, n\u00a0= 58) and other active genes (grey, n\u00a0=\u00a014,010) in Ku and Cov cell lines. MYC target genes are drawn from the HALLMARKS_MYC_TARGETS_V2 signature. The statistical significance between MYC target genes and other active genes is shown from a Wilcoxson rank sum test (one-sided). Also see Figure 3\u2014figure supplement 1; Figure 3\u2014figure supplement 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Scatter plots comparing change in gene expression upon THZ1 treatment to gene expression levels in DMSO, in KUROMOCHI (left) and COV362 cells (right). X-axis shows the Log2 fold change of expression (THZ1/DMSO). Y-axis shows the adjusted log2 counts per million (CPM) expression in control cells. Differentially regulated genes as determined by edgeR are shown for downregulated (blue) and upregulated (red) genes. A FDR adjusted p-value cutoff of 1e-3 and a log fold change cutoff of 0.5 are used as the threshold for significance. Note that MYC and MCL1 expression, but not PVT1, is significantly suppressed by THZ1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Bar plot showing gene sets from the MSigDB Hallmarks of Cancer that are significantly enriched as differentially downregulated upon 250 nM THZ1 treatment in Kuramochi and Cov362 cells (FDR q value cutoff 1e-9). MYC Targets gene sets (v1 and v2) are shown in red.\n\nNext, we examined how many downregulated genes were shared between Ku and Cov cells and what the potential pathways these genes might be involved in. There were 685 differential downregulated genes been identified upon THZ1 250 nM treatment, shown by the Venn diagram (p-value for significance of overlap\u00a0<2e-16) (Figure 3C, Left) and by the scatter plot(Figure 3C, Right), with the overlapped downregulated genes shown in blue (Pearson correlation coefficient Rho\u00a0=\u00a00.76). To search for the oncogenic pathways that were selectively downregulated by THZ1, we queried the Molecular Signature Database (MSigDB) Hallmarks of Cancer in Gene Set Enrichment Analysis (Broad Institute). G2M_checkpoint and E2F_targets appeared to be the top two hallmark gene sets that were significantly enriched amongst the 685 genes in\u00a0Ku and Cov upon THZ1 250 nM treatment. Two MYC hallmark gene sets, MYC_targets_V1 and MYC_targets_V2 (shown in red), were also identified (Figure 3D). Additionally, these two MYC hallmark gene sets were also significantly enriched when analyzed individually (Figure 3\u2014figure supplement 2). When comparing the MYC target genes (defined from the HALLMARKS_MYC_TARGETS_V2 gene set, in red) with all other active genes (in gray), they were significantly downregulated upon THZ1 250 nM treatment in both cell lines (Figure 3E). This analysis is consistent with THZ1 downregulating a MYC-dependent gene expression program.\n\n### MYC and MCL-1 downregulation require the inhibition of both CDK7 and CDK12/13\n\nGiven the polypharmacology of THZ1, we asked whether the loss of MYC and MCL-1 resulted from inhibition of CDK7, or CDK12/13, or combined inhibition of CDK7 and CDK12/13. To do this, we turned to two recently described compounds that were selective for CDK7 (YKL-1\u2013116, Kalan et al., 2017) or CDK12/13 (THZ531, Zhang et al., 2016) (Figure 4A). Compared with THZ1 (Figure 2C), YKL-1\u2013116 exhibited similar but less potent effects on MYC downregulation in two OC cell lines (Figure 4B\u2013C, Figure 4\u2014figure supplement 1A\u2013B). Different from THZ1 and YKL-1\u2013116, the CDK12/13 inhibitor, THZ531, has a unique effect on\u00a0MYC expression: at low doses of THZ531 MYC expression is induced, while higher doses of THZ531 cause MYC to be repressed (Figure 4B\u2013C, Figure 4\u2014figure supplement 1A\u2013B). To test whether the combined CDK7 and CDK12/13 inhibition enhances MYC and MCL-1 downregulation, we treated cells with the combination of YKL-1\u2013116 and THZ531. Interestingly, we found that the combination of YKL-1\u2013116 and THZ531 led to pronounced reduction of MYC and MCL-1, recapitulating the effects of THZ1 (Figure 4D\u2013E, Figure 4\u2014figure supplement 1C\u2013D). In addition, the combination of YKL-1\u2013116 and THZ531 further reduced the phosphorylation of RNA polymerase II RPB1 at Ser5, but not at Ser 2 and 7 (Figure 4E and Figure 4\u2014figure supplement 1D). Although it remains to be understood how MYC and MCL-1 transcription requires the activity of both CDK7 and CDK12/13, our data indicate that the ability of THZ1 to downregulate MYC and MCL-1 is likely due to its multi-targeting effect on CDK7 and CDK12/13.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig4-v2.jpg)\n\n**Figure 4.:** (A) Chemical structures of inhibitors and their primary protein targets. (B) KURAMOCHI cells were treated with increasing concentrations of YKL-1\u2013116 or THZ531, with cell lysates prepared following 6 hr of treatment. (C) qPCR analysis of MYC and MCL-1 in YKL-1\u2013116 or THZ531-treated KURAMOCHI cells for 6 hr. Student\u2019s t-test was performed and data were presented as mean values\u00a0\u00b1\u00a0SD of technical triplicates. (D) qPCR analysis of MYC and MCL-1 in single or combination treatment with\u00a0YKL-1\u2013116 and THZ531 for 6 hr. Red arrows indicate an enhanced repression by the combination treatment. Student\u2019s t-test was performed and data were presented as mean values\u00a0\u00b1\u00a0SD of technical triplicates.(E) Combining YKL-1\u2013116 and THZ531 efficiently downregulates MYC expression. KURAMOCHI cells were treated with increasing concentrations of YKL-1\u2013116 (0.5 or 1 \u03bcM), in combination with increasing concentrations of THZ531 (0.0625, 0.125, 0.25, or 0.5 \u03bcM) for 6 hr before lysates were prepared for immunoblotting. Also see Figure 4\u2014figure supplement 1; Figure 4\u2014figure supplement 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) COV362 cells were treated with increasing concentrations of YKL-1\u2013116 or THZ531, with cell lysates prepared following 6 hr of treatment. (B) qPCR analysis of MYC in ovarian cancer cells treated with YKL-1\u2013116 or THZ531. Student\u2019s t-test was performed and data were presented as mean values\u00a0\u00b1\u00a0SD of technical triplicates. (C) qPCR analysis of MYC and MCL-1 in single or combination treatment with\u00a0YKL-1\u2013116 and/or THZ531 for 6 hr. Red arrows indicate an enrepression by the combination treatment. Student\u2019s t-test was performed and data were presented as mean values\u00a0\u00b1\u00a0SD of technical triplicates. (D) COV362 cells were treated with increasing concentrations of YKL-1\u2013116 (0.5 or 1 \u03bcM), combined with increasing concentrations of THZ531 (0.125, 0.25, 0.5, or 1 \u03bcM). Cell lysates were harvested after 6 hr, and prepared for immunoblotting.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** OVCAR8 cells were infected with or without HA-tagged wild-type\u00a0CDK7 (WT) or C312S mutant (CS), followed by G418 selection to obtain stably transduced cells. The cells were pre-treated with doxycycline (200 ng/ml), and\u00a0were then (A) seeded in 12 well plate and treated with THZ1 at 250 and 500 nM, with cell lysates prepared for\u00a0immunoblotting\u00a0after 6 hr of treatment. (B) seeded in 96-well plate and treated with increasing concentrations of THZ1 or YKL-1\u2013116. Cells were subjected to CellTiter-Glow Luminescent Cell Viability Assay after 72 hr of treatment. Data were represented as mean\u00a0\u00b1\u00a0SD of biological triplicates. (C) seeded in 12-well plate and treated with increasing concentrations of YKL-1\u2013116 (0, 62.5, 125, 250, 500, 1000 nM) in duplicate, and subjected to clonogenic cell growth. Cells were fixed 7 days after seeding, and stained with crystal violet.\n\nWe next proceeded to investigate whether downregulation of MYC by THZ1 was mediated through CDK7 inhibition, we overexpressed HA-tagged wild-type CDK7 (WT) or C312S mutant (CS) in ovarian cancer cells by lentiviral infection. Cysteine 312 is the site for covalent modification, and\u00a0its mutation to serine prevented THZ1 from covalently binding to CDK7 and from inhibiting CDK7 activity in an irreversible manner (Kwiatkowski et al., 2014). First, we examined whether downregulation of MYC by THZ1 can be rescued by CDK7 the C312S mutant. Expectedly, we find that the mutant CDK7 (C312S), but not the wild type, effectively rescues THZ1-induced MYC downregulation upon THZ1 treatment at 250 and 500 nM for 6 hr\u00a0(Figure 4\u2014figure supplement 2A). Concurrently, other readouts of CDK7 activity, such as CTD phosphorylation of RNAPII at Ser 5 and Ser 7, are also rescued by this CDK7 mutant (Figure 4\u2014figure supplement 2A). These data indicate that CDK7 is indeed a target of THZ1 in downregulating MYC. Although overexpression of mutant CDK7 (C312S) fails to rescue cell growth inhibition conferred by THZ1 (Figure 4\u2014figure supplement 2B), it significantly rescues cell growth inhibition by the selective CDK7 inhibitor, YKL-1\u2013116 (Figure 4\u2014figure supplement 2B\u20132C). We would expect that a greater degree of rescue might require the elimination of endogenous CDK7. In addition, considering that THZ1 targets both CDK7 and CDK12/13, we speculate that co-overexpression of mutant CDK7 (C312S), mutant CDK12 (C1039S), and mutant CDK13 may rescue cell growth inhibition by THZ1. Unfortunately, we failed to achieve overexpression of CDK12/13, likely due to their large sizes (1490 aa for CDK12, and 1512 aa for CDK13).\u00a0Notably,\u00a0expression of a THZ1-resistant mutant of CDK7\u00a0rescued\u00a0THZ1-induced MYC downregulation\u00a0but was not sufficient to rescue the\u00a0aberrant\u00a0cancer cell growth. This indicates that\u00a0parallel pathways to MYC may also be altered by THZ1 and may contribute to the observed phenotypes upon THZ1\u00a0treatment.\n\n### THZ1 suppresses the growth of patient-derived ovarian tumors\n\nNext, we evaluated the therapeutic efficacy of THZ1 in ovarian tumor models. Although THZ1 targets expression of more genes than MYC via CDK7/12/13 inhibition, its high efficiency in downregulating MYC and other genes that are critical for ovarian cancer cells, such as MCL-1, provides strong rationale for translational development. We used the orthotopic ovarian patient-derived xenografts (PDX) models that we established previously (Liu et al., 2017). The primary tumor cells were transduced with luciferase gene to enable the use of bioluminescent imaging for measurement of tumor growth.\n\nTo compare the single agent potency of THZ1 with combination effect of drugs, we performed a combination study with THZ1 and PARP inhibitor Olaparib, a FDA-approved drug in relapsed ovarian cancer irrespective of BRCA1/2 status. We first conducted tolerability studies and found that THZ1 administered by intraperitoneal injection (IP) twice daily (BID) at 10 mg/kg was well-tolerated with no signs of overt toxicity as judged by body weight and animal behavior (data not shown). In efficacy studies, we first implanted ascites-derived ovarian tumor cells into the mice, and after 7 days assigned animals into four groups receiving vehicle control (10 ml/kg, PO, QD) or THZ1 (10 mg/kg, IP, BID) or Olaparib (100 mg/kg, PO, QD) or combo (THZ1\u00a0+Olaparib) for 27 days, with bioluminescent imaging performed at 5 timepoints (0, 6, 13, 20, and 27 days) (Figure 5A\u2013B). Consistent with previous studies of THZ1 or Olaparib, mouse body weight was minimally affected by the inhibitor (Figure 5\u2014figure supplement 1). In all the 11 independent PDX models investigated, the administration of THZ1 caused significant inhibition on tumor cell growth (Figure 5B\u2013C). Notably, in four models (DF-149, 172, 83, and 86), THZ1 induced complete inhibition on tumor growth (Figure 4C, termed category i). In six models (DF-101, 106, 118, 20, 68, and 216), THZ1 first caused an obvious decrease of tumor burden but re-gained growth at later time points (termed category ii). Only one model (DF-181, termed category iii) did not demonstrate tumor regression and rather present slower tumor cell growth upon THZ1 treatment. The administration of Olaparib did not dramatically inhibit tumor growth, and only showed very modest effect in three models (DF-106, 68, and 83). The combination of THZ1 and Olaparib, however, displayed synergistic effect and further inhibition on tumor growth was observed in five models (DF-106, 118, 86, 181, and 68).In addition, we found that the protein abundance of both MYC and MCL-1 in the tumor was nearly abrogated following THZ1 treatment (Figure 5D). Overall, the potency of THZ1 in suppressing tumor growth in our ovarian tumor models is striking, given that tumor regression is rarely observed in previous studies using THZ1. The combination study indicated that combining THZ1 with clinical PARP inhibitors could be promising future therapeutic approach for treating ovarian cancer.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig5-v2.jpg)\n\n**Figure 5.:** (A) A\u00a0schematic diagram of the experimental design. (B) Luminescence picture of luciferized PDX mice (eg. DF-106) at day 0 and day 27, treated with vehicle control (10 ml/kg, PO, QD) or THZ1 (10 mg/kg, IP, BID) or Olaparib (100 mg/kg, PO, QD) or Combo (THZ1\u00a0+Olaparib)., Luminescence scale bar was\u00a0shown on the right. (C) Luminescence signal of the tumor in 11 PDX models (n\u00a0=\u00a044 mice) treated with vehicle control or THZ1 or Olaparib or Combo. (D) Following the last treatment on day 27, tumor ascites from 5 PDX models (n\u00a0=\u00a010 mice) were harvested for the preparation of whole cell lysates followed by immunoblotting using the indicated antibodies. Also see Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39030/elife-39030-fig5-figsupp1-v2.jpg)\n\nIn summary, our study demonstrates an exceptional antitumor activity of THZ1 in models of ovarian cancer and point to at least part of its mechanistic actions whereby an oncogenic transcription factor with widespread alteration in ovarian cancer, MYC, is strongly suppressed by this compound. Thus the current study provides a compelling rationale for investigating THZ1, or its derivatives, for treating MYC-dependent ovarian cancer in the clinic. In addition, we find that suppression of MYC expression can only be achieved by simultaneous inhibition of CDK7, CDK12 and CDK13, further demonstrating the advantage of polypharmacology in overcoming functional redundancy in transcriptional regulation through targeting multiple CDKs.\n\n## Materials and methods\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti-c-MYC\u00a0(Y69)</td>\n      <td>ABCAM</td>\n      <td>Cat# ab32072; RRID: AB_731658</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-MCL-1</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>Cat# sc-819; RRID: AB_2144105</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-alpha-Tubulin</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 3873S; RRID: AB_1904178</td>\n      <td>1:5000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti-HA tag</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 3724; RRID: AB_1549585</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-GAPDH</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 2118; RRID: AB_561053</td>\n      <td>1:3000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-RNA Polymerase II RPB1</td>\n      <td>Bethyl Laboratories</td>\n      <td>Cat# A300-653A; RRID: 519334</td>\n      <td>1:500 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat monoclonal anti-RNA Polymerase II subunit B1 (phosphor CTD ser-2)</td>\n      <td>EMD Millipore</td>\n      <td>Cat# 04\u20131571; RRID: AB_2687450</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat monoclonal anti-RNA Polymerase II subunit B1 (phosphor CTD ser-5)</td>\n      <td>EMD Millipore</td>\n      <td>Cat# 04\u20131572; RRID: AB_ 2687451</td>\n      <td>1:5000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat monoclonal anti-RNA Polymerase II subunit B1 (phosphor CTD ser-7)</td>\n      <td>EMD Millipore</td>\n      <td>Cat# 04\u20131570; RRID: AB_2687452</td>\n      <td>1:5000 dilution</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>THZ1</td>\n      <td>Synthesized in our laboratory</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>THZ531</td>\n      <td>Synthesized in our laboratory</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>YKL-1\u2013116</td>\n      <td>Synthesized in our laboratory</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CellTiter-Glo Luminescent Cell Viability Assay</td>\n      <td>Promega</td>\n      <td>Cat# G7573</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNeasy Plus Mini kit</td>\n      <td>Qiagen</td>\n      <td>Cat# 74136</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>High-Capacity RNA-to-cDNA Kit</td>\n      <td>Applied Biosystems</td>\n      <td>Cat# 4387406</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SYBR Select Master Mix</td>\n      <td>Applied Biosystems</td>\n      <td>Cat# 4472908</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>KURAMOCHI</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL 1345</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>COV362</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL_2420</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>OVCAR8</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL_1629</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>IGROV1</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL_1304</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>SKOV3</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL_0532</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>CAOV3</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL_0201</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>OVCAR3</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL_0465</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>OVCAR4</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL_1627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>OVSAHO</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL_3114</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>PEO1</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL_Y032</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>JHOS2</td>\n      <td>Panagiotis A. Konstantinopoulos\u2019s laboratory</td>\n      <td>RRID:CVCL_4647</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>293T</td>\n      <td>Jean Zhao\u2019s laboratory</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>MM1.S</td>\n      <td>James Bradner's laboratory</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLenti_crispr_sgGFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLenti_crispr_sgMYC_1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLenti_crispr_sgMYC_2</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLenti_crispr_sgMCL1_1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLenti_crispr_sgMCL1_2</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pTrex_HA_CDK7 WT</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pTrex_HA_CDK7 C312S</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>Graphpad Software Inc</td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image Studio Lite</td>\n      <td>LI-COR Biosciences</td>\n      <td>https://www.licor.com/bio/products/software/image_studio_lite/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>National Institutes of Health</td>\n      <td>https://imagej.nih.gov/ij/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Vector NTI</td>\n      <td>Invitrogen</td>\n      <td>https://www.thermofisher.com/us/en/home/life-science/cloning/vector-nti-software.html</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nAll cells were grown in RPMI1640 or DMEM medium (Life Technologies), supplemented with 10% fetal bovine serum (Gibco), 50 units/mL penicillin, 50 units/mL streptomycin, and maintained in humidified 37\u00b0C/5%CO2 incubator. Ovarian cancer cell lines, including KURAMOCHI, COV362, IGROV1, OVCAR8, OVSAHO, SKOV3, CAOV3, JHOS2, PEO1, OVCAR3 and OVCAR4, were generous gifts from Panos Konstantinopoulos\u2019s laboratory at Dana-Farber Cancer Institute. All the cell lines have been tested to be mycoplasma-free using MycoAlert Mycoplasma Detection Kit (Lonza).\n\n### Immunoblotting\n\nCells were washed once with 1x phosphate buffered saline (PBS) and then lysed in RIPA buffer (50 mM Tris, pH 7.5, 150 mM NaCl, 1% NP-40, 0.5% sodium deoxycholate, and 0.1% SDS) supplemented with protease and phosphatase inhibitors (Roche). Protein concentrations were determined by using the Pierce BCA protein assay kit (Life Technologies). Equal amount of protein was resolved on SDS-PAGE and was subsequently transferred onto nitrocellulose membrane (Bio-Rad). The membrane was blocked with Odyssey block buffer TBS (LI-COR Biosciences) and was then incubated with primary antibodies in 20% of Odyssey block buffer TBST (with 0.1%Tween20) overnight at 4\u00b0C with gentle rotating. After washing, the membrane was incubated with fluorophore-conjugated secondary antibodies (1: 10,000) in 20% of Odyssey block buffer TBST (with 0.1%\u00a0Tween20) for 1 hr at room temperature. The membrane was then washed three times in TBST and scanned with an Odyssey Infrared scanner (Li-Cor Biosciences). Primary antibodies include anti-alpha-Tubulin (Cell Signaling Technology # 3873S), anti-c-MYC (Y69) (ABCAM # ab32072), anti-MCL-1(S-19) (Santa Cruz # sc-819), anti-RNA polymerase II (Bethyl Laboratories #A300-653A), anti-RNA polymerase II subunit B1 (phospho CTD Ser-2, clone 3E10) (Millipore #04\u20131571), anti-RNA polymerase II subunit B1 (phospho-CTD Ser-5, clone 3E8) (Millipore #04\u20131572), anti-RNA polymerase II subunit B1 (phospho-CTD Ser-7, clone 4E12) (Millipore #04\u20131570), GAPDH (Cell Signaling Technology #2118), and anti-HA-tag (C29F4) (Cell Signaling Technology #3724). Secondary antibodies include IRDye 800CW Goat anti-Rabbit IgG (LICOR Biosciences #926\u201332211), IRDye 680LT Goat anti-Mouse IgG (LICOR Biosciences #926\u201368020), and IRDye 680RD Goat anti-Rat IgG (LICOR Biosciences #925\u201368076).\n\n### Plasmids and primers\n\nPlasmids: pLenti_CRISPR_v2 vector was\u00a0ordered from Addgene (Addgene #52961).\n\npLenti_sgGFP, pLenti_sgMYC_1, pLenti_sgMYC_2, pLenti_sgMCL1_1, pLenti_sgMCL1_2, pTrex_HA_cdk7 WT, and pTrex_HA_cdk7 C312S lentiviral plasmids were made in our laboratory.\n\nPrimers for cloning sgRNA into pLenti_CRISPR_v2 vector\n\nsgGFP_1F: CACCGGGGCGAGGAGCTGTTCACCG\n\nsgGFP_1R: AAACCGGTGAACAGCTCCTCGCCCC\n\nsgMYC_1F: CACCGAACGTTGAGGGGCATCGTCG\n\nsgMYC_1R: AAACCGACGATGCCCCTCAACGTTC\n\nsgMYC_2F: CACCGGCCGTATTTCTACTGCGACG\n\nsgMYC_2R: AAACCGTCGCAGTAGAAATACGGCC\n\nsgMCL1_1F: CACCGGCTTCCGCCAATCACCGCGC\n\nsgMCL1_1R: AAACGCGCGGTGATTGGCGGAAGCC\n\nsgMCL1_2F: CACCGCTCGGCCCGGCGAGAGATAG\n\nsgMCL1_2R: AAACCTATCTCTCGCCGGGCCGAGC\n\nPrimers for qPCR:\n\nGAPDH_qPCR_forward: GGTCTCCTCTGACTTCAACA\n\nGAPDH_qPCR_reverse: GTGAGGGTCTCTCTCTTCCT\n\nMYC_qPCR_forward: GGCTCCTGGCAAAAGGTCA\n\nMYC_qPCR_reverse: CTGCGTAGTTGTGCTGATGT\n\nMCL1_qPCR_forward: TGCTTCGGAAACTGGACATCA\n\nMCL1_qPCR_reverse: TAGCCACAAAGGCACCAAAAG\n\n### Virus infection\n\nLentiviruses were generated in HEK293T cells by transfecting cells with packaging DNA plus pLenti_CRISPR plasmids. Typically, 2 \u03bcg pLenti_CRISPR plasmid encoding sgRNA, 1.5 \u03bcg pCMVdR8.91, and 0.5 \u03bcg pMD2-VSVG, 12 \u03bcl Lipofectamin2000 (Invitrogen) were used. DNA and lipid were pre-diluted in 300 \u03bcl Opti-MEM (Invitrogen) individually and then mixed well gently. After 30 min of incubation\u00a0at\u00a0RT, the DNA-lipid mixtures were added dropwise to HEK293T cells (2 \u00d7 106 cells were\u00a0seeded in one T-25 flask, one day prior to transfection). Viral supernatant was collected 2 and 3 days after transfection, filtered through 0.45 \u03bcm membranes, and added to target cells in the presence of polybrene (8 \u03bcg/ml, Millipore). Target cells were infected twice with the virus at 48 hr and 72 hr later. Puromycin (1 \u03bcg/ml for KURAMOCHI and OVCAR8; 2 \u03bcg/ml for SKOV3) was used to treat cells for 2 days for selection, which eliminated all cells in an uninfected control group. Cells were harvested 4 days after the initial viral infection and subjected them for either western blotting to assess the knockdown efficiency or for clonogenic cell growth assay. For lentiviral infection with pTrex_HA_cdk7 WT and pTrex_HA_cdk7 C312S plasmids, cells were infected as described above, and were selected with G418 (1 mg/ml) for 5 days then treated with 0.2 \u03bcg/ml Doxycycline for 1 day to induce the HA\u00a0tagged-CDK7 overexpression. Doxycycline was replenished every 3 days during the following assays.\n\n### Cell proliferation assays\n\nAfter virus infection and selection with puromycin, cells were seeded in 12-well plates (at the density of 5\u00a0\u00d7\u00a0103) in 1 ml medium. 14 days later, cells were fixed with 1% formaldehyde\u00a0for\u00a015\u00a0minutes, and stained with crystal violet (0.05%, wt/vol), a chromatin-binding cytochemical stain\u00a0for\u00a015\u00a0minutes. The plates were washed extensively in plenty of deionized water, dried upsidedown on filter paper, and imaged with Epson scanner.\n\nFor the 3-day cell proliferation assay in 96-well plate, cells were plated at the density of 6000 to 10,000 cells per well and treated with THZ1 or YKL-1\u2013116 of various concentrations on the next day. After 72 hr incubation, CellTiter-Glo reagent (Promega #G7572) was added to cells directly and luminescent signal was read on a plate reader (Perkin Elmer EnVision).\n\n### RNA extraction\n\nCells were plated in six-well plates and allowed to adhere overnight. Following treatment with compounds for 6 hr, cells were lysed, homogenized using QIAshredder spin column (Qiagen #79654), and subjected to total RNA extraction using RNeasy\u00a0Plus Mini kit (Qiagen #74136). This kit contains gDNA columns to remove genomic DNA, according to the manufacturer\u2019s instructions.\n\n### RT-qPCR\n\nFirst strand cDNA was synthesized from 2 \u00b5g of\u00a0total RNA using The High Capacity cDNA Reverse Transcription Kit (Life technologies #4368814). The cDNAs were diluted 15-fold in deionized water and then mixed with specific primers (10\u00a0\u03bcM)\u00a0and 2X\u00a0SYBR Select Master Mix (Applied Biosystems #4472908). The reactions were set up in MicroAmp Fast Optical 96-Well Reaction Plate (Life Technologies #4346906) and were run on 7500 Real-Time PCR System (Applied Biosystems). The GAPDH gene was used as a housekeeping gene control. Relative gene expression was calculated using the comparative method (2^\u2013\u0394\u0394Ct).\n\n### RNA-sequencing\n\nFollowing total RNA extraction, cell-count-normalized RNA samples were mixed with the RNA standards - External RNA Control Consortium (ERCC) Spike-In Mix (Ambion, 4456740) prior\u00a0to library construction (Lov\u00e9n et al., 2012). Libraries were prepared using TruSeq Stranded mRNA Library Prep Kit (Illumina), and equimolar libraries were multiplexed and sequenced on an Illumina NextSeq 500 (single end 75 bp reads) by the Molecular Biology Core Facility at the Dana-Farber Cancer Institute. Fastq files were aligned to human genome build hg19 using HiSat with default parameters. Transcripts were assembled, and Fragments Per Kilobase of transcript per Million mapped reads (FPKM) values were generated using cuffquant and cuffnorm from the cufflinks pipeline (Trapnell et al., 2010). FPKM values were then normalized to synthetic ERCC spike-in RNAs as described previously (Lov\u00e9n et al., 2012). A transcript was considered to\u00a0be\u00a0expressed in each data set if in at least one experimental condition the normalized FPKM\u00a0>1.\n\n### Animal studies\n\nAll animal experiments were conducted in accordance with the animal use guidelines from the NIH and with protocols (Protocol # 11\u2013044) approved by the Dana-Farber Cancer Institute Animal Care and Use Committee. We used the ovarian patient-derived xenografts (PDX) models that we established previously (Liu et al., 2017). The primary tumor cells were transduced with luciferase gene to enable the use of non-invasive\u00a0bioluminescent imaging\u00a0(BLI) for measurement of tumor growth. Briefly, ovarian cancer cells were taken from consented patients with HGSOC and implanted intraperitoneally into immunocompromised NOD-SCID IL2R\u03b3null mice (NSG, Jackson Laboratory). 5 \u00d7 106 ascites-derived cells were implanted in each mouse and 7 days post implantation, mice were imaged by BLI and assigned to four groups of treatment with vehicle control via oral gavage (PO) once daily (QD) at the dose of 10 ml/kg; THZ1 intraperitoneally (IP) twice daily (BID) at the dose of 10 mg/kg; Olaparib via PO, QD at the dose of 100 mg/kg; the combination of THZ1 and Olaparib. Tumor growth was assessed every 7 days (0, 6, 13, 20, 27 days) using BLI until day 27. Upon harvesting, tumors or other tissues were snap-frozen in liquid nitrogen for preparation of lysates and immunoblotting.\n\n### Data availability\n\nRNA-sequencing data reported in this paper has been deposited to the NCBI GEO and are available under the accession number GSE116282.\n",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8497e62d-3232-48fe-bb94-8c8f1790433f",
+      "submission_id": "e9fdf56b-a9a3-4fe0-97cf-2f9c099a9a12",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ross L Levine, Memorial Sloan-Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39030.022](https://doi.org/10.7554/eLife.39030.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Targeting MYC dependency in ovarian cancer through inhibition of CDK7 and CDK12/13\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Charles Sawyers as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a relatively straightforward study that proposes that transcriptional downregulation of MYC and possibly MCL1 through inhibition of CDKs7, 12 and 13 is a potential therapeutic avenue for MYC amplified or overexpressed ovarian cancer. While the authors have conducted a nice series of experiments, the conclusions are overly biased towards effects on MYC and MCL1 and disregard other transcriptional effects of THZ1 that are evident from the study. Moreover, the authors must do a better job of acknowledging the potential contribution of off-targets (i.e. proteins other than CDK7, CDK12, or CDK13) in this study and they need further experiments to verify whether CDK7 and/or CDK12/13 are in fact the relevant targets. These issues are particularly important given many of the conclusions have been made in previous papers, with a difference here being a focus on ovarian cancer.\n\nEssential revisions:\n\n1) The lack of clear mechanistic insight into how THZ1 inhibits MYC expression and target expression in MYC amplified tumors is a relative shortcoming. How do the authors believe that this agent can reduce the expression of a gene which is on a recurrent amplicon? Are there other genes on 8q whose expression is increased and how are they affected by the drug? Specifically, the data presented clearly shows that PVT1 is also amplified and increased in its expression, which has been demonstrated to independently contribute to ovarian cancer pathogenesis. Is PVT1 a transcriptional target of THZ1/JQ1 in these cells? In addition, CDK7 inhibition by YKL-1-116 alone was able to decrease mRNA levels of MYC, whereas THZ-531 (targeting CDK12 and CDK13) was not. This effect appears to be cell type-specific, because the results in Figure 3 (KURAMOCHI line) were different and somewhat more consistent with the statement in the Abstract. Pursuant to this, the authors have not conclusively demonstrated that CDK7, CDK12, or CDK13 are the relevant targets in this study. At minimum, the authors should test point mutants of CDK7 and/or CDK12 and CDK13 to confirm that they are the relevant targets in these cell lines.\n\n2) The relative impact of the drug on MYC and MCL-1 vs. downstream targets is not clear. Can this be delineated further? Genetic rescue of MYC and MCL1 should also be performed to provide more than correlative data. Moreover, the effects observed of the MYC targeting sgRNAs is attributed to the loss of MYC expression, however, a major problem with targeting sgRNAs to amplified regions in the genome is the induction of DNA damage and cell death, independent of the sgRNA target (Aguirre AJ et al., 2017, Cancer Discovery). Are these cells responsive to shRNA mediated depletion of MYC or can the effect be rescued by MYC overexpression?\n\n3) The PDX data is the most exciting. One wonders if there are agents used in R/R ovarian cancer which can be tested in combination to determine if the first studies should be monotherapy or combination studies.\n",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5d00e7bb-8d98-4017-b543-afb0f934c083",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C1",
+      "claim": "High-grade serous ovarian cancer is characterized by extensive copy number alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "High-grade serous ovarian cancer is characterized by extensive copy number alterations, among which the amplification of MYC oncogene occurs in nearly half of tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding from large-scale genomic studies referenced in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "4012bf4f-5a1e-46f1-a905-98e23ed8bc48",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C2",
+      "claim": "MYC oncogene amplification occurs in nearly half of high-grade serous ovarian cancer tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "High-grade serous ovarian cancer is characterized by extensive copy number alterations, among which the amplification of MYC oncogene occurs in nearly half of tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis from TCGA and other genomic studies cited in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "64e9314c-f924-467a-8c10-1f006b4bc201",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C3",
+      "claim": "Ovarian cancer cells highly depend on MYC for maintaining their oncogenic growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that ovarian cancer cells highly depend on MYC for maintaining their oncogenic growth, indicating MYC as a therapeutic target for this difficult-to-treat malignancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through CRISPR/Cas9 experiments and CERES dependency analysis shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "5e30a627-6c23-4026-9965-f525da63a1d9",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C4",
+      "claim": "MYC is a therapeutic target for ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that ovarian cancer cells highly depend on MYC for maintaining their oncogenic growth, indicating MYC as a therapeutic target for this difficult-to-treat malignancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the demonstrated dependency of ovarian cancer cells on MYC.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "f416d2eb-ce8f-44cd-b65a-b1f922334717",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C5",
+      "claim": "Targeting MYC directly has proven difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "However, targeting MYC directly has proven difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of cancer therapeutics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "51801371-d70e-4703-9322-61f081949fcd",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C6",
+      "claim": "THZ1 markedly downregulates MYC in ovarian cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We screen small molecules targeting transcriptional and epigenetic regulation, and find that THZ1 - a chemical inhibiting CDK7, CDK12, and CDK13 - markedly downregulates MYC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by screening data and immunoblotting experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "b21937e1-cec1-4e86-9f45-55ea6f4d67f2",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C7",
+      "claim": "THZ1 inhibits CDK7, CDK12, and CDK13.",
+      "claim_type": "EXPLICIT",
+      "source": "We screen small molecules targeting transcriptional and epigenetic regulation, and find that THZ1 - a chemical inhibiting CDK7, CDK12, and CDK13 - markedly downregulates MYC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from previous characterization of THZ1 cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8c90a607-b199-4028-a7fe-bacd0da7e4db",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C8",
+      "claim": "Abolishing MYC expression cannot be achieved by targeting CDK7 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, abolishing MYC expression cannot be achieved by targeting CDK7 alone, but requires the combined inhibition of CDK7, CDK12, and CDK13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experiments using selective inhibitors YKL-1-116 and THZ531.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "f84be72f-b7fd-47b9-a474-848fd6b628ce",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C9",
+      "claim": "Abolishing MYC expression requires the combined inhibition of CDK7, CDK12, and CDK13.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, abolishing MYC expression cannot be achieved by targeting CDK7 alone, but requires the combined inhibition of CDK7, CDK12, and CDK13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through combination experiments with YKL-1-116 and THZ531.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8747b2f5-7666-4781-8102-c78d7c08c128",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C10",
+      "claim": "THZ1 induces significant tumor growth inhibition in 11 patient-derived xenograft models derived from heavily pre-treated ovarian cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In 11 patient-derived xenografts models derived from heavily pre-treated ovarian cancer patients, administration of THZ1 induces significant tumor growth inhibition with concurrent abrogation of MYC expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through in vivo PDX experiments with bioluminescent imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "7d7a8d57-2ae0-407b-a72c-2202c4060c8e",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C11",
+      "claim": "THZ1 administration causes concurrent abrogation of MYC expression in patient-derived xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "In 11 patient-derived xenografts models derived from heavily pre-treated ovarian cancer patients, administration of THZ1 induces significant tumor growth inhibition with concurrent abrogation of MYC expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through immunoblotting of tumor samples from PDX models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "205fed41-2cc8-4127-a18c-62aea155ccf1",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C12",
+      "claim": "Targeting transcriptional CDKs with agents such as THZ1 may be an effective approach for MYC-dependent ovarian malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study indicates that targeting these transcriptional CDKs with agents such as THZ1 may be an effective approach for MYC-dependent ovarian malignancies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined in vitro and in vivo experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "37e2d17d-f7f9-472c-8357-cbe61237696a",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C13",
+      "claim": "Epithelial ovarian cancer is the fifth most common cause of female cancer death in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Epithelial ovarian cancer (OC) is the fifth most common cause of female cancer death in the United States and the most lethal gynecologic malignancy (Siegel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to epidemiological data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "e072605c-be5f-42b6-9ef8-a68fe3610c39",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C14",
+      "claim": "Epithelial ovarian cancer is the most lethal gynecologic malignancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Epithelial ovarian cancer (OC) is the fifth most common cause of female cancer death in the United States and the most lethal gynecologic malignancy (Siegel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to epidemiological data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "482de50c-72b6-4e66-a6ad-a8d094f49923",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C15",
+      "claim": "High-grade serous ovarian carcinoma represents the most common and aggressive histologic subtype of ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "High-grade serous ovarian carcinoma (HGSOC) represents the most common and aggressive histologic subtype of OC, and accounts for the majority of its deaths (Konstantinopoulos and Awtrey, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to clinical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "d49b0b64-2e5c-46e7-883a-13a3107b3945",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C16",
+      "claim": "High-grade serous ovarian carcinoma accounts for the majority of ovarian cancer deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "High-grade serous ovarian carcinoma (HGSOC) represents the most common and aggressive histologic subtype of OC, and accounts for the majority of its deaths (Konstantinopoulos and Awtrey, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "fae39ddb-434b-4181-9576-3898695152c4",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C17",
+      "claim": "HGSOCs are characterized by high degree of genomic instability with high frequency of DNA copy number alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale genomic studies have demonstrated that HGSOCs are characterized by high degree of genomic instability with high frequency of DNA copy number alterations and almost universal presence of TP53 mutations (Cancer Genome Atlas Research Network, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to TCGA study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "f4ae9384-5011-41ee-b637-dfb524bcfaa4",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C18",
+      "claim": "HGSOCs have almost universal presence of TP53 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale genomic studies have demonstrated that HGSOCs are characterized by high degree of genomic instability with high frequency of DNA copy number alterations and almost universal presence of TP53 mutations (Cancer Genome Atlas Research Network, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to TCGA study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "7f9820dc-1b3d-4f7a-8b05-a5a4a26bc538",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C19",
+      "claim": "Approximately 50% of HGSOCs exhibit an underlying defect in DNA repair via homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 50% of HGSOCs exhibit an underlying defect in DNA repair via homologous recombination (HR) and are highly sensitive to double-strand-break-inducing agents such as platinum analogues and PARP-inhibitors (PARPi) (Konstantinopoulos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to clinical research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "707147f6-1a00-46ef-b856-957d6d1b4c81",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C20",
+      "claim": "HR-deficient HGSOCs are highly sensitive to double-strand-break-inducing agents such as platinum analogues and PARP-inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 50% of HGSOCs exhibit an underlying defect in DNA repair via homologous recombination (HR) and are highly sensitive to double-strand-break-inducing agents such as platinum analogues and PARP-inhibitors (PARPi) (Konstantinopoulos et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to clinical research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "386f2480-4f23-40fc-bff6-89f49c793e56",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C21",
+      "claim": "First-line platinum-based chemotherapy results in clinically complete remissions in approximately 70% of ovarian cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although first-line platinum-based chemotherapy results in clinically complete remissions in approximately 70% of OC patients, relapse occurs in more than 90% of these patients, at which point the disease is much less responsive to subsequent treatment and is essentially non-curable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge cited in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "b5727998-da4b-42de-85c2-2e094571067d",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C22",
+      "claim": "Relapse occurs in more than 90% of ovarian cancer patients who achieve complete remission with first-line platinum-based chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although first-line platinum-based chemotherapy results in clinically complete remissions in approximately 70% of OC patients, relapse occurs in more than 90% of these patients, at which point the disease is much less responsive to subsequent treatment and is essentially non-curable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "458e1bac-dad3-473d-9b94-c8a0ba02fb30",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C23",
+      "claim": "Relapsed ovarian cancer is much less responsive to subsequent treatment and is essentially non-curable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although first-line platinum-based chemotherapy results in clinically complete remissions in approximately 70% of OC patients, relapse occurs in more than 90% of these patients, at which point the disease is much less responsive to subsequent treatment and is essentially non-curable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "6814960b-deb2-4acb-bc49-3fcf8a3ac802",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C24",
+      "claim": "Acquired resistance to PARPi occurs commonly among HR-deficient HGSOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, despite initial responses to PARPi among HR-deficient HGSOCs, acquired resistance occurs commonly and represents a significant barrier to the long-term survival of these patients (Lord and Ashworth, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to clinical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "fb9a9aff-e451-49c4-9076-359e1fe60f85",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C25",
+      "claim": "Acquired resistance to PARPi represents a significant barrier to the long-term survival of HR-deficient HGSOC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, despite initial responses to PARPi among HR-deficient HGSOCs, acquired resistance occurs commonly and represents a significant barrier to the long-term survival of these patients (Lord and Ashworth, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to clinical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8176c739-acc1-47f1-b3b4-6ccf918c1e4a",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C26",
+      "claim": "The outlook for patients with platinum and PARPi-resistant ovarian cancer is poor.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the outlook for patients with platinum and PARPi-resistant disease is poor, so novel therapeutic strategies are urgently needed (Vaughan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to clinical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "152c8d87-755b-49fb-b961-c6acae184d08",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C27",
+      "claim": "Novel therapeutic strategies are urgently needed for platinum and PARPi-resistant ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the outlook for patients with platinum and PARPi-resistant disease is poor, so novel therapeutic strategies are urgently needed (Vaughan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the poor clinical outcomes described.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "c81391f9-1827-491b-8d10-ecce42eb0e82",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C28",
+      "claim": "Transcriptional cyclin-dependent kinases include CDK7, CDK8, CDK9, CDK11, CDK12, CDK13, and CDK19.",
+      "claim_type": "EXPLICIT",
+      "source": "The control of gene transcription involves a set of cyclin-dependent kinases (CDKs), including CDK7, CDK8, CDK9, CDK11, CDK12, CDK13, and CDK19, that play essential roles in transcription initiation and elongation by phosphorylating RNA polymerase II (RNAPII) and other components of the transcription apparatus (Larochelle et al., 2007; Zhou et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature on transcriptional CDKs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "9f85b9cd-375d-45e4-ba23-2c68ea59e110",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C29",
+      "claim": "Transcriptional CDKs play essential roles in transcription initiation and elongation by phosphorylating RNA polymerase II and other components of the transcription apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "The control of gene transcription involves a set of cyclin-dependent kinases (CDKs), including CDK7, CDK8, CDK9, CDK11, CDK12, CDK13, and CDK19, that play essential roles in transcription initiation and elongation by phosphorylating RNA polymerase II (RNAPII) and other components of the transcription apparatus (Larochelle et al., 2007; Zhou et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature on transcriptional CDKs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "2e57b304-3256-41cb-9a15-7a9cb778181f",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C30",
+      "claim": "Certain oncogenes such as MYC, MYCN, and RUNX1 exhibit significant dependence on continuous active transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that certain oncogenes, for example MYC, MYCN, and RUNX1 exhibit significant dependence on continuous active transcription, and that inhibition of the general transcriptional machinery may allow for highly selective effects on these oncogenes in cancer cells before global downregulation of transcription occurs (Kwiatkowski et al., 2014; Cao and Shilatifard, 2014; Chipumuro et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "bdeabb98-ecee-4ca9-bd0e-cf6853a827aa",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C31",
+      "claim": "Inhibition of the general transcriptional machinery may allow for highly selective effects on transcription-dependent oncogenes in cancer cells before global downregulation of transcription occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that certain oncogenes, for example MYC, MYCN, and RUNX1 exhibit significant dependence on continuous active transcription, and that inhibition of the general transcriptional machinery may allow for highly selective effects on these oncogenes in cancer cells before global downregulation of transcription occurs (Kwiatkowski et al., 2014; Cao and Shilatifard, 2014; Chipumuro et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "a7e805fe-c41f-494e-b117-e96feb4df028",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C32",
+      "claim": "The continuous active transcription of certain oncogenes in cancer cells is often driven by exceptionally large clustered enhancer regions termed super-enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The continuous active transcription of these oncogenes in cancer cells is often driven by exceptionally large clustered enhancer regions, termed super-enhancers, which are densely occupied by transcription factors and co-factors (Hnisz et al., 2013; Lov\u00e9n et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to super-enhancer literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "6760b843-aed8-4142-870d-abb98a716390",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C33",
+      "claim": "Super-enhancers are densely occupied by transcription factors and co-factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The continuous active transcription of these oncogenes in cancer cells is often driven by exceptionally large clustered enhancer regions, termed super-enhancers, which are densely occupied by transcription factors and co-factors (Hnisz et al., 2013; Lov\u00e9n et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to super-enhancer literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "9d4cc786-e47a-48ab-9f7e-1d1004c9eef3",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C34",
+      "claim": "CDK7 mediates transcriptional addiction to a vital cluster of genes associated with super-enhancers in triple-negative breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In this vein, it was recently shown that CDK7 mediates transcriptional addiction to a vital cluster of genes associated with super-enhancers in triple-negative breast cancer (TNBC), and that TNBC cells are exceptionally dependent on CDK7 (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "13850174-f467-44f0-a878-55a1bf3d917b",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C35",
+      "claim": "Triple-negative breast cancer cells are exceptionally dependent on CDK7.",
+      "claim_type": "EXPLICIT",
+      "source": "In this vein, it was recently shown that CDK7 mediates transcriptional addiction to a vital cluster of genes associated with super-enhancers in triple-negative breast cancer (TNBC), and that TNBC cells are exceptionally dependent on CDK7 (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "b8fb3678-0bb4-4f2c-9070-cd1979634e8f",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C36",
+      "claim": "THZ1 is a CDK7 covalent inhibitor that also inhibits the closely related kinases CDK12 and CDK13.",
+      "claim_type": "EXPLICIT",
+      "source": "The CDK7 covalent inhibitor THZ1, which also inhibits the closely related kinases CDK12 and CDK13 (CDK12/13), has been also shown to directly suppress super-enhancer-associated oncogenic transcription in T-cell acute lymphoblastic leukemia, neuroblastoma and small cell lung cancer (Kwiatkowski et al., 2014; Chipumuro et al., 2014; Christensen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous THZ1 studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "b43bf493-e165-4acd-82e3-806e8f19aaba",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C37",
+      "claim": "THZ1 directly suppresses super-enhancer-associated oncogenic transcription in T-cell acute lymphoblastic leukemia, neuroblastoma and small cell lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The CDK7 covalent inhibitor THZ1, which also inhibits the closely related kinases CDK12 and CDK13 (CDK12/13), has been also shown to directly suppress super-enhancer-associated oncogenic transcription in T-cell acute lymphoblastic leukemia, neuroblastoma and small cell lung cancer (Kwiatkowski et al., 2014; Chipumuro et al., 2014; Christensen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous THZ1 studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8f56898e-c74f-40eb-a516-997fd7b01652",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C38",
+      "claim": "THZ1 demonstrates exceptional in vivo activity in patient-derived xenograft models of ovarian cancer that were platinum and PARPi resistant.",
+      "claim_type": "EXPLICIT",
+      "source": "THZ1 demonstrates exceptional in vivo activity in patient-derived xenograft (PDX) models of ovarian cancer that were platinum and PARPi resistant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through PDX experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "1b8d0dd0-9380-448e-9bbd-bb9d077e7566",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C39",
+      "claim": "Suppression of MYC was only achieved by simultaneous inhibition of CDK7, CDK12, and CDK13.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, suppression of MYC was only achieved by simultaneous inhibition of CDK7, CDK12, and CDK13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experiments with selective inhibitors and their combinations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "2c1e9417-7c9b-45c0-9157-2139c9217b89",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C40",
+      "claim": "Combined inhibition of transcriptional CDKs with THZ1, or its derivatives, may be an effective approach for treating MYC-dependent ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that combined inhibition of transcriptional CDKs with THZ1, or its derivatives, may be an effective approach for treating MYC-dependent ovarian cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "ac7bff65-ec9e-44fa-b9c9-b8f475a86ea3",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C41",
+      "claim": "Chromosome 8q has the most significant gains among recurrent chromosome-arm gains in HGSOC and occurred in 65% of tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the total eight recurrent chromosome-arm gains, chromosome 8q has the most significant gains and occurred in 65% of the tumors (n = 489) (Cancer Genome Atlas Research Network, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to TCGA data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "f1453d30-88fd-4adc-87b9-b915a4f94817",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C42",
+      "claim": "Ovarian cancer demonstrates the highest frequency of MYC amplification compared to many other tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ovarian cancer demonstrates the highest frequency of MYC amplification (Figure 1B), compared to many other tumor types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B comparing MYC amplification across cancer types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "b3b8a55d-6a60-44b0-a471-008aec689c4f",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C43",
+      "claim": "There is a significant correlation between the gene copy number of MYC and its gene expression level in ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We further analyzed and found a significant correlation between the gene copy number of MYC and its gene expression level (assayed by RNA sequencing) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through correlation analysis shown in Figure 1C with p-value<1\u00d710\u22124.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "6fea9f93-cb95-40a7-9881-6f86362f115c",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C44",
+      "claim": "MYC has widespread amplification in ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, MYC has widespread amplification in ovarian cancer, and its amplification typically correlates with high-level expression of the MYC oncogene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TCGA data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "1882625b-668d-478e-8925-4062c7cdf4f6",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C45",
+      "claim": "MYC amplification typically correlates with high-level expression of the MYC oncogene in ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, MYC has widespread amplification in ovarian cancer, and its amplification typically correlates with high-level expression of the MYC oncogene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "bad0bd90-783d-418f-bc13-bc903d56395e",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C46",
+      "claim": "CRISPR/Cas9-mediated depletion of MYC results in efficient loss of MYC protein in KURAMOCHI and OVCAR8 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We utilized CRISPR/Cas9-mediated gene editing technique to disrupt the expression of MYC (Sanjana et al., 2014), and observed an efficient loss of MYC protein in cells infected with lenti-virus encoding two independent MYC-targeting guide RNAs (Figure 1D, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "c22c9b17-9a20-4b5e-ae35-a98827726538",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C47",
+      "claim": "MYC-depleted KURAMOCHI and OVCAR8 cells showed a significant deficit in cell viability compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MYC-depleted KURAMOCHI and OVCAR8 cells showed a significant deficit in cell viability compared to control cells as determined by clonogenic growth survival assay (Figure 1D, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through clonogenic assays shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "4654428d-31e6-4fed-a548-513aa888481a",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C48",
+      "claim": "There is no statistical correlation between MYC dependency values and MYC copy number in cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In the analysis illustrating MYC dependency in a total of 484 cancer cell lines, there is no statistical correlation between MYC dependency values and with MYC copy number (Figure 1\u2014figure supplement 1A), indicating the successful computational elimination of effects introduced by targeting amplified MYC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1A using CERES computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "6e74a8c8-4cd9-4e48-936f-f2dcbd8f79f7",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C49",
+      "claim": "Ovarian cancer cells overall demonstrate a high dependence on MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ovarian cancer cells overall demonstrate a high dependence on MYC (indicated by the low CERES values), and as expected, MYC dependency is highly correlated with cell dependency on MAX \u2013 a partner of MYC for transcriptional regulation (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through CERES dependency analysis in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "eedca74a-47ca-433b-8f10-408f1baa8652",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C50",
+      "claim": "MYC dependency is highly correlated with cell dependency on MAX in ovarian cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ovarian cancer cells overall demonstrate a high dependence on MYC (indicated by the low CERES values), and as expected, MYC dependency is highly correlated with cell dependency on MAX \u2013 a partner of MYC for transcriptional regulation (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through correlation analysis in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8f9309b9-d45c-4c87-a4c4-f529d9994ac3",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C51",
+      "claim": "MAX is a partner of MYC for transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ovarian cancer cells overall demonstrate a high dependence on MYC (indicated by the low CERES values), and as expected, MYC dependency is highly correlated with cell dependency on MAX \u2013 a partner of MYC for transcriptional regulation (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of MYC biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "45ffaebe-5dfb-4a5e-aa52-a92352f21285",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C52",
+      "claim": "MYC expression in the multiple myeloma line MM1.S is highly sensitive to JQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Delmore et al., 2011), we found that MYC expression in the multiple myeloma line MM1.S is highly sensitive to JQ1; treating cells with JQ1 at nanomolar concentrations was sufficient to downregulate MYC protein abundance (Figure 1E, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting shown in Figure 1E and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "1548bcba-301e-482f-b34e-77ff1e4adcf8",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C53",
+      "claim": "JQ1 at nanomolar concentrations does not downregulate MYC in ovarian cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, this effect was not observed in ovarian cancer cells (Figure 1E, top), a phenotype reminiscent of that seen in other non-hematologic cancer cells, such as lung adenocarcinoma cells (Lockwood et al., 2012), and some triple-negative breast cancer cells (Shu et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "bbf9a7dd-92ff-44f4-83b8-ceb039d41d2b",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C54",
+      "claim": "THZ1 was the most potent inhibitor that reduces MYC expression in the screen of 42 compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cell lines, these inhibitors display various effects on MYC protein abundance, and the most potent inhibitor is THZ1, an inhibitor known to target CDKs 7, 12, and 13 (Kwiatkowski et al., 2014) (Figure 2B; Figure 2\u2014figure supplement 1; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the screening results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "ebb59fbc-79fb-4cef-af5d-fd2322aeb30b",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C55",
+      "claim": "MYC protein abundance was decreased by THZ1 at ~250 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "MYC protein abundance was decreased by THZ1 at ~250 nM and was further abolished when higher doses of THZ1 were used (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through dose-response immunoblotting shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "576d472e-5b7f-4521-8020-5caa6420db4a",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C56",
+      "claim": "CTD phosphorylation at Ser2, 5, and 7 was suppressed by THZ1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the roles of CDK7 in regulating the phosphorylation of the carboxyl-terminal domain (CTD) of RNA polymerase II subunit RPB1, CTD phosphorylation at Ser2, 5, and 7 was suppressed by THZ1(Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "cc9224e5-db55-4cb2-a361-35ee3e7a9988",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C57",
+      "claim": "The anti-apoptotic protein MCL-1 was repressed by THZ1 concomitantly with MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the anti-apoptotic protein of Bcl-2 family, pro-survival protein myeloid cell leukemia 1 (MCL-1), was repressed by THZ1 concomitantly (Figure 2C; Figure 2\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting shown in Figure 2C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "b97a25b0-cad9-4ca0-adb7-751b8c655fda",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C58",
+      "claim": "Treating KURAMOCHI and COV362 cells with THZ1 (250 nM) led to a 50% or greater reduction of MYC and MCL-1 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "We further examined the mRNA level of MYC and MCL-1, and found that treating both KURAMOCHI and COV362 cells with THZ1 (250 nM) led to a 50% or greater reduction of both transcripts (Figure 2D), indicating that the transcriptional inhibition of MYC and MCL-1 genes may be largely responsible for the observed reduction in protein abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through qPCR analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8f2d57ed-4a2a-4fee-bcff-57ca74c9878a",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C59",
+      "claim": "Transcriptional inhibition of MYC and MCL-1 genes may be largely responsible for the observed reduction in protein abundance upon THZ1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We further examined the mRNA level of MYC and MCL-1, and found that treating both KURAMOCHI and COV362 cells with THZ1 (250 nM) led to a 50% or greater reduction of both transcripts (Figure 2D), indicating that the transcriptional inhibition of MYC and MCL-1 genes may be largely responsible for the observed reduction in protein abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between mRNA and protein reduction.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "e7f63c15-cdef-4deb-b048-804e94a1f06f",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C60",
+      "claim": "MCL-1 amplification was observed in 12% of HGSOCs in the TCGA dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Although less prevalent than MYC amplification, MCL-1 amplification was observed in 12% of HGSOCs of the TCGA dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on TCGA data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "93eb229e-172a-471f-ae5d-035ffa049c6b",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C61",
+      "claim": "HGSOCs that harbored both MYC and MCL-1 amplification were associated with poor outcome, which was significantly worse compared to all remaining HGSOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in the TCGA, HGSOCs that harbored both MYC and MCL-1 amplification were associated with poor outcome, which was significantly worse compared to all remaining HGSOCs (Figure 2\u2014figure supplement 2A, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Kaplan-Meier survival analysis shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "c6f3741c-42e4-4ee7-9f18-af7b80510b4e",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C62",
+      "claim": "Among MYC amplified HGSOCs, those that co-exhibited MCL-1 amplification had significantly worse prognosis compared to MYC amplified tumors without MCL-1 amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, among MYC amplified HGSOCs, those that co-exhibited MCL-1 amplification had significantly worse prognosis compared to MYC amplified tumors without MCL-1 amplification (Figure 2\u2014figure supplement 2A, right panel), indicating a role of MCL-1 during disease progression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Kaplan-Meier survival analysis shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "59b486a6-d37f-4fca-89a3-9143dc67742c",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C63",
+      "claim": "MCL-1 plays a role during ovarian cancer disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, among MYC amplified HGSOCs, those that co-exhibited MCL-1 amplification had significantly worse prognosis compared to MYC amplified tumors without MCL-1 amplification (Figure 2\u2014figure supplement 2A, right panel), indicating a role of MCL-1 during disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the survival analysis showing worse outcomes with MCL-1 amplification.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8be4e5da-4e74-4bd8-9819-a7e73a7fe662",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C64",
+      "claim": "SKOV3 is the only ovarian cancer cell line that is least sensitive to THZ1 in terms of cell growth inhibition and demonstrates low protein abundance of both MYC and MCL-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, out of the total eight ovarian cancer cell lines (KURAMOCHI, COV362, OVCAR8, SKOV3, IGROV1, OVSAHO, OVCAR3, OVCAR4), the only cell line (SKOV3) that is least sensitive to THZ1 in terms of cell growth inhibition demonstrates low protein abundance of both MYC and MCL-1 (Figure 2\u2014figure supplement 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through cell viability assays and immunoblotting shown in Figure 2\u2014figure supplement 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "513f0f6a-9d5a-4d18-8772-59c99c766bca",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C65",
+      "claim": "THZ1-sensitive lines such as KURAMOCHI and OVCAR8 are susceptible to CRISPR/Cas9-mediated gene editing of MYC or MCL-1.",
+      "claim_type": "EXPLICIT",
+      "source": "While THZ1-sensitive lines, such as KURAMOCHI and OVACAR8, are susceptible to CRISPR/Cas9-mediated gene editing of MYC (Figure 1D) or MCL-1 (Figure 2\u2014figure supplement 2D), the THZ1-insensitive line SKOV3 was largely unaffected by the loss of MYC or MCL-1 (Figure 2\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through CRISPR experiments shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "685c1fde-cd14-4ed7-8a2b-a48078274950",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C66",
+      "claim": "The THZ1-insensitive line SKOV3 was largely unaffected by the loss of MYC or MCL-1.",
+      "claim_type": "EXPLICIT",
+      "source": "While THZ1-sensitive lines, such as KURAMOCHI and OVACAR8, are susceptible to CRISPR/Cas9-mediated gene editing of MYC (Figure 1D) or MCL-1 (Figure 2\u2014figure supplement 2D), the THZ1-insensitive line SKOV3 was largely unaffected by the loss of MYC or MCL-1 (Figure 2\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through CRISPR experiments shown in Figure 2\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "cd6aa651-8077-4ca5-95a2-0f8a22c28951",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C67",
+      "claim": "The expression levels of MYC and MCL-1 in ovarian cancer cells may determine its sensitivity to THZ1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the expression levels of MYC and MCL-1 in OC cells may determine its sensitivity to THZ1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between MYC/MCL-1 expression and THZ1 sensitivity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "81791b69-c1c5-434a-98c5-cba5156f87ae",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C68",
+      "claim": "A profound suppression of gene expression was observed following treatment of THZ1 at 250 nM in both KURAMOCHI and COV362 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "A profound suppression of gene expression was observed following treatment of THZ1 at 250 nM in both cell lines, with 1060 genes downregulated and 58 genes upregulated in Ku cells (Figure 3B, top), and 1524 genes downregulated and 50 genes upregulated in Cov cells (Figure 3B), bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through RNA-seq analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "278da022-377c-44e8-b209-0ba40d886439",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C69",
+      "claim": "1060 genes were downregulated and 58 genes were upregulated in KURAMOCHI cells upon THZ1 250 nM treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "A profound suppression of gene expression was observed following treatment of THZ1 at 250 nM in both cell lines, with 1060 genes downregulated and 58 genes upregulated in Ku cells (Figure 3B, top), and 1524 genes downregulated and 50 genes upregulated in Cov cells (Figure 3B), bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through RNA-seq analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "b0812dd0-428e-4cba-960c-d9e22e2d228d",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C70",
+      "claim": "1524 genes were downregulated and 50 genes were upregulated in COV362 cells upon THZ1 250 nM treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "A profound suppression of gene expression was observed following treatment of THZ1 at 250 nM in both cell lines, with 1060 genes downregulated and 58 genes upregulated in Ku cells (Figure 3B, top), and 1524 genes downregulated and 50 genes upregulated in Cov cells (Figure 3B), bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through RNA-seq analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "f910f247-307f-4181-be99-13f0fb94969a",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C71",
+      "claim": "Both MYC and MCL-1 were significantly downregulated in both KURAMOCHI and COV362 cell lines upon THZ1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, both MYC and MCL-1 were significantly downregulated in both cell lines, with the cutoff of Log2 fold change >0.5 and FDR adjusted p-value<0.001 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through RNA-seq analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "3885bfbb-b250-4c26-bdcb-3a69769eb793",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C72",
+      "claim": "PVT1 is not significantly downregulated by THZ1.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation on MYC expression by THZ1 appears quite specific, because PVT1 \u2212 a lncRNA gene co-amplified with MYC on 8q24 \u2212 is not significantly downregulated by THZ1 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through RNA-seq analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "348dfae8-703d-45b9-91b3-e12568d0d58f",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C73",
+      "claim": "PVT1 is a lncRNA gene co-amplified with MYC on 8q24.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation on MYC expression by THZ1 appears quite specific, because PVT1 \u2212 a lncRNA gene co-amplified with MYC on 8q24 \u2212 is not significantly downregulated by THZ1 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the genomic location of PVT1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "88a9b38e-6337-413f-8eb4-72b3ee9faad6",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C74",
+      "claim": "There were 685 differential downregulated genes shared between KURAMOCHI and COV362 cells upon THZ1 250 nM treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 685 differential downregulated genes been identified upon THZ1 250 nM treatment, shown by the Venn diagram (p-value for significance of overlap <2e-16) (Figure 3C, Left) and by the scatter plot(Figure 3C, Right), with the overlapped downregulated genes shown in blue (Pearson correlation coefficient Rho = 0.76).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Venn diagram and scatter plot analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "f6233159-01c1-4b91-8767-93cf3a225c8f",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C75",
+      "claim": "G2M_checkpoint and E2F_targets appeared to be the top two hallmark gene sets that were significantly enriched amongst the 685 genes downregulated in both KURAMOCHI and COV362 upon THZ1 250 nM treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "G2M_checkpoint and E2F_targets appeared to be the top two hallmark gene sets that were significantly enriched amongst the 685 genes in Ku and Cov upon THZ1 250 nM treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through gene set enrichment analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "32ad6a84-36d5-4028-addc-0e6aa3f4dc76",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C76",
+      "claim": "Two MYC hallmark gene sets, MYC_targets_V1 and MYC_targets_V2, were significantly enriched amongst the 685 genes downregulated in both KURAMOCHI and COV362 upon THZ1 250 nM treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Two MYC hallmark gene sets, MYC_targets_V1 and MYC_targets_V2 (shown in red), were also identified (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through gene set enrichment analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "11dead08-96ff-49c9-ac1c-c35849302ce7",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C77",
+      "claim": "MYC target genes were significantly downregulated upon THZ1 250 nM treatment in both KURAMOCHI and COV362 cell lines compared to all other active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the MYC target genes (defined from the HALLMARKS_MYC_TARGETS_V2 gene set, in red) with all other active genes (in gray), they were significantly downregulated upon THZ1 250 nM treatment in both cell lines (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through box plot analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "f2587961-fbe7-4773-8203-8b854c414472",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C78",
+      "claim": "THZ1 downregulates a MYC-dependent gene expression program.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis is consistent with THZ1 downregulating a MYC-dependent gene expression program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enrichment of MYC target genes among downregulated genes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "56590e69-303f-41de-8567-8ab2ce6ccb3e",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C79",
+      "claim": "YKL-1-116 is selective for CDK7.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we turned to two recently described compounds that were selective for CDK7 (YKL-1\u2013116, Kalan et al., 2017) or CDK12/13 (THZ531, Zhang et al., 2016) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Kalan et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "52b205e1-ade3-44e8-bb0b-81fb6d5988c7",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C80",
+      "claim": "THZ531 is selective for CDK12/13.",
+      "claim_type": "EXPLICIT",
+      "source": "To do this, we turned to two recently described compounds that were selective for CDK7 (YKL-1\u2013116, Kalan et al., 2017) or CDK12/13 (THZ531, Zhang et al., 2016) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Zhang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "25861238-0fa8-4362-9423-592ebfc02a2e",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C81",
+      "claim": "YKL-1-116 exhibited similar but less potent effects on MYC downregulation compared with THZ1 in ovarian cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with THZ1 (Figure 2C), YKL-1\u2013116 exhibited similar but less potent effects on MYC downregulation in two OC cell lines (Figure 4B\u2013C, Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting and qPCR shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "ef372b83-8dbe-4a78-8bfd-fd5451e325b4",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C82",
+      "claim": "At low doses of THZ531 MYC expression is induced, while higher doses of THZ531 cause MYC to be repressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Different from THZ1 and YKL-1\u2013116, the CDK12/13 inhibitor, THZ531, has a unique effect on MYC expression: at low doses of THZ531 MYC expression is induced, while higher doses of THZ531 cause MYC to be repressed (Figure 4B\u2013C, Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting and qPCR shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "99b8ee4d-b42a-4d2a-ad05-9974115734ac",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C83",
+      "claim": "The combination of YKL-1-116 and THZ531 led to pronounced reduction of MYC and MCL-1, recapitulating the effects of THZ1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that the combination of YKL-1\u2013116 and THZ531 led to pronounced reduction of MYC and MCL-1, recapitulating the effects of THZ1 (Figure 4D\u2013E, Figure 4\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through qPCR and immunoblotting shown in Figure 4D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "dfcee5cf-0fed-481d-9f85-1d30aba5c481",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C84",
+      "claim": "The combination of YKL-1-116 and THZ531 further reduced the phosphorylation of RNA polymerase II RPB1 at Ser5, but not at Ser 2 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the combination of YKL-1\u2013116 and THZ531 further reduced the phosphorylation of RNA polymerase II RPB1 at Ser5, but not at Ser 2 and 7 (Figure 4E and Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8d0d9797-9399-42b2-8862-c91de531bfcb",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C85",
+      "claim": "The ability of THZ1 to downregulate MYC and MCL-1 is likely due to its multi-targeting effect on CDK7 and CDK12/13.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it remains to be understood how MYC and MCL-1 transcription requires the activity of both CDK7 and CDK12/13, our data indicate that the ability of THZ1 to downregulate MYC and MCL-1 is likely due to its multi-targeting effect on CDK7 and CDK12/13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination experiments showing that both CDK7 and CDK12/13 inhibition are required.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "c7e36bbc-c5f2-44e6-bffe-4b47f39dcd1c",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C86",
+      "claim": "The CDK7 C312S mutant effectively rescues THZ1-induced MYC downregulation upon THZ1 treatment at 250 and 500 nM for 6 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Expectedly, we find that the mutant CDK7 (C312S), but not the wild type, effectively rescues THZ1-induced MYC downregulation upon THZ1 treatment at 250 and 500 nM for 6 hr (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "916f56f7-d8af-4be6-9e8a-1be1de076a5d",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C87",
+      "claim": "CTD phosphorylation of RNAPII at Ser 5 and Ser 7 are rescued by the CDK7 C312S mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently, other readouts of CDK7 activity, such as CTD phosphorylation of RNAPII at Ser 5 and Ser 7, are also rescued by this CDK7 mutant (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "47a2125f-a225-4e46-a0ae-c4956d7c50b7",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C88",
+      "claim": "CDK7 is a target of THZ1 in downregulating MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that CDK7 is indeed a target of THZ1 in downregulating MYC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue experiments with CDK7 C312S mutant.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "4928fdbd-0a95-48b9-b055-74e05d0a35b5",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C89",
+      "claim": "Overexpression of mutant CDK7 (C312S) fails to rescue cell growth inhibition conferred by THZ1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although overexpression of mutant CDK7 (C312S) fails to rescue cell growth inhibition conferred by THZ1 (Figure 4\u2014figure supplement 2B), it significantly rescues cell growth inhibition by the selective CDK7 inhibitor, YKL-1\u2013116 (Figure 4\u2014figure supplement 2B\u20132C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through cell viability assays shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "92aaf46c-7029-4104-a404-2f9a31689227",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C90",
+      "claim": "Overexpression of mutant CDK7 (C312S) significantly rescues cell growth inhibition by the selective CDK7 inhibitor, YKL-1-116.",
+      "claim_type": "EXPLICIT",
+      "source": "Although overexpression of mutant CDK7 (C312S) fails to rescue cell growth inhibition conferred by THZ1 (Figure 4\u2014figure supplement 2B), it significantly rescues cell growth inhibition by the selective CDK7 inhibitor, YKL-1\u2013116 (Figure 4\u2014figure supplement 2B\u20132C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through cell viability and clonogenic assays shown in Figure 4\u2014figure supplement 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "abdb8443-532c-4b83-9da4-649cfb6978d6",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C91",
+      "claim": "Expression of a THZ1-resistant mutant of CDK7 rescued THZ1-induced MYC downregulation but was not sufficient to rescue the aberrant cancer cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, expression of a THZ1-resistant mutant of CDK7 rescued THZ1-induced MYC downregulation but was not sufficient to rescue the aberrant cancer cell growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the rescue experiments shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "1b4c7e9c-c5e9-491d-8adc-35fc1199d6c1",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C92",
+      "claim": "Parallel pathways to MYC may also be altered by THZ1 and may contribute to the observed phenotypes upon THZ1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that parallel pathways to MYC may also be altered by THZ1 and may contribute to the observed phenotypes upon THZ1 treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the inability of CDK7 C312S to rescue cell growth despite rescuing MYC expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "7841d122-a08a-48d8-8e13-d67bd5453e47",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C93",
+      "claim": "THZ1 administered by intraperitoneal injection twice daily at 10 mg/kg was well-tolerated with no signs of overt toxicity as judged by body weight and animal behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We first conducted tolerability studies and found that THZ1 administered by intraperitoneal injection (IP) twice daily (BID) at 10 mg/kg was well-tolerated with no signs of overt toxicity as judged by body weight and animal behavior (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on tolerability studies conducted in mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "f14a5180-fe0b-4fdf-a9fe-2cb95e4b4af6",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C94",
+      "claim": "In all 11 independent PDX models investigated, the administration of THZ1 caused significant inhibition on tumor cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In all the 11 independent PDX models investigated, the administration of THZ1 caused significant inhibition on tumor cell growth (Figure 5B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through bioluminescent imaging shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "d82f6dda-7a5d-49f0-8783-cbf63ef140e8",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C95",
+      "claim": "In four PDX models (DF-149, 172, 83, and 86), THZ1 induced complete inhibition on tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in four models (DF-149, 172, 83, and 86), THZ1 induced complete inhibition on tumor growth (Figure 4C, termed category i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through bioluminescent imaging shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "aa044868-e3fb-4e05-8af0-35a1d0bd8389",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C96",
+      "claim": "In six PDX models (DF-101, 106, 118, 20, 68, and 216), THZ1 first caused an obvious decrease of tumor burden but re-gained growth at later time points.",
+      "claim_type": "EXPLICIT",
+      "source": "In six models (DF-101, 106, 118, 20, 68, and 216), THZ1 first caused an obvious decrease of tumor burden but re-gained growth at later time points (termed category ii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through bioluminescent imaging shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "d3115869-da49-4829-a327-4b88c89c3537",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C97",
+      "claim": "In one PDX model (DF-181), THZ1 did not demonstrate tumor regression and rather present slower tumor cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Only one model (DF-181, termed category iii) did not demonstrate tumor regression and rather present slower tumor cell growth upon THZ1 treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through bioluminescent imaging shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "78519ebe-864e-49fc-9702-7a33a6d289d2",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C98",
+      "claim": "The administration of Olaparib did not dramatically inhibit tumor growth in most PDX models.",
+      "claim_type": "EXPLICIT",
+      "source": "The administration of Olaparib did not dramatically inhibit tumor growth, and only showed very modest effect in three models (DF-106, 68, and 83).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through bioluminescent imaging shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "ec59f11c-9ad7-4ea7-914a-99eb5b97d917",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C99",
+      "claim": "The combination of THZ1 and Olaparib displayed synergistic effect and further inhibition on tumor growth in five PDX models (DF-106, 118, 86, 181, and 68).",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of THZ1 and Olaparib, however, displayed synergistic effect and further inhibition on tumor growth was observed in five models (DF-106, 118, 86, 181, and 68).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through bioluminescent imaging shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "ca9fbcab-80ba-4252-a80a-0967c0075311",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C100",
+      "claim": "The protein abundance of both MYC and MCL-1 in the tumor was nearly abrogated following THZ1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that the protein abundance of both MYC and MCL-1 in the tumor was nearly abrogated following THZ1 treatment (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through immunoblotting of tumor samples shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "02bf1478-ea98-4437-8d00-e0f38981f792",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C101",
+      "claim": "The potency of THZ1 in suppressing tumor growth in ovarian tumor models is striking, given that tumor regression is rarely observed in previous studies using THZ1.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the potency of THZ1 in suppressing tumor growth in our ovarian tumor models is striking, given that tumor regression is rarely observed in previous studies using THZ1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with previous THZ1 studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "6a288048-b48e-4317-903c-e21b61ca1d54",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C102",
+      "claim": "Combining THZ1 with clinical PARP inhibitors could be promising future therapeutic approach for treating ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination study indicated that combining THZ1 with clinical PARP inhibitors could be promising future therapeutic approach for treating ovarian cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the synergistic effects observed in combination studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "a65ec012-134b-4e88-b965-56eab75be016",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C103",
+      "claim": "THZ1 demonstrates exceptional antitumor activity in models of ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our study demonstrates an exceptional antitumor activity of THZ1 in models of ovarian cancer and point to at least part of its mechanistic actions whereby an oncogenic transcription factor with widespread alteration in ovarian cancer, MYC, is strongly suppressed by this compound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through PDX experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "2a8f2c74-532d-4148-a18f-73b6326b9bd3",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C104",
+      "claim": "MYC is strongly suppressed by THZ1 in ovarian cancer models.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our study demonstrates an exceptional antitumor activity of THZ1 in models of ovarian cancer and point to at least part of its mechanistic actions whereby an oncogenic transcription factor with widespread alteration in ovarian cancer, MYC, is strongly suppressed by this compound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through immunoblotting and RNA-seq experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "be68b0fe-72d8-4ba2-b14f-116f26fee39e",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C105",
+      "claim": "The current study provides a compelling rationale for investigating THZ1, or its derivatives, for treating MYC-dependent ovarian cancer in the clinic.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the current study provides a compelling rationale for investigating THZ1, or its derivatives, for treating MYC-dependent ovarian cancer in the clinic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined in vitro and in vivo experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "c81bd9e0-1fb4-400c-92fe-92c9d253b5eb",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C106",
+      "claim": "Suppression of MYC expression can only be achieved by simultaneous inhibition of CDK7, CDK12 and CDK13.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we find that suppression of MYC expression can only be achieved by simultaneous inhibition of CDK7, CDK12 and CDK13, further demonstrating the advantage of polypharmacology in overcoming functional redundancy in transcriptional regulation through targeting multiple CDKs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through combination experiments with selective inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "9b22e85f-565c-4d3d-a0ca-8e7348f3fa53",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "claim_id": "C107",
+      "claim": "Polypharmacology has an advantage in overcoming functional redundancy in transcriptional regulation through targeting multiple CDKs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we find that suppression of MYC expression can only be achieved by simultaneous inhibition of CDK7, CDK12 and CDK13, further demonstrating the advantage of polypharmacology in overcoming functional redundancy in transcriptional regulation through targeting multiple CDKs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for combined CDK inhibition to suppress MYC.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b87536b3-51f1-4d60-bdc1-712887a62b04",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MYC is frequently amplified in high-grade serous ovarian cancer (HGSOC), with chromosome 8q gains occurring in 65% of tumors and MYC showing the highest amplification frequency among cancer types. MYC copy number correlates significantly with gene expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C17, C41-C45 are well-supported by TCGA data analysis shown in Figure 1A-C, demonstrating widespread MYC amplification and significant correlation (p<1\u00d710\u207b\u2074) between copy number and expression. The data presentation is clear and appropriately analyzed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "e3be5abf-ac83-484f-a54a-d1d128af4b79",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ovarian cancer cells demonstrate high functional dependence on MYC for maintaining oncogenic growth. CRISPR/Cas9-mediated MYC depletion significantly reduces cell viability in KURAMOCHI and OVCAR8 cells, and CERES dependency analysis shows ovarian cancer cells have high MYC dependency that correlates with MAX dependency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C46-C50 are supported by CRISPR experiments (Figure 1D) and CERES computational analysis (Figure 1\u2014figure supplement 1). The use of CERES model appropriately controls for copy number effects. The correlation with MAX dependency provides biological validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "3afef846-6d7e-48b8-a7dc-02f6a5225ff1",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "JQ1, a BET bromodomain inhibitor, effectively downregulates MYC in multiple myeloma cells (MM1.S) at nanomolar concentrations but does not downregulate MYC in ovarian cancer cells at similar concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by immunoblotting data in Figure 1E showing differential response between MM1.S and ovarian cancer cells. This establishes the rationale for screening alternative approaches to target MYC in ovarian cancer.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "d5c329ee-ee9f-4ccb-8300-65b31b957c3a",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "THZ1, a multi-CDK inhibitor targeting CDK7, CDK12, and CDK13, was identified as the most potent compound for downregulating MYC expression in a screen of 42 transcriptional/epigenetic inhibitors. THZ1 decreases MYC protein at ~250 nM and suppresses RNA polymerase II CTD phosphorylation at Ser2, 5, and 7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C54-C56 are well-supported by screening data (Figure 2B) and dose-response immunoblotting (Figure 2C). The screen design is appropriate, and the biochemical readouts (CTD phosphorylation) are consistent with CDK7 inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "bc53121d-0b31-454f-b511-77043d448eac",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "THZ1 concomitantly represses MCL-1, an anti-apoptotic protein, along with MYC at both mRNA and protein levels. MCL-1 amplification occurs in 12% of HGSOCs, and co-amplification of MYC and MCL-1 is associated with significantly worse prognosis compared to MYC amplification alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 are supported by immunoblotting (Figure 2C), qPCR (Figure 2D), TCGA data analysis, and Kaplan-Meier survival analysis (Figure 2\u2014figure supplement 2A). The survival analysis shows statistically significant differences (log-rank test), supporting the clinical relevance of MCL-1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "f47bdf2b-b0d2-47fb-beb8-7e9cc332dc6d",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SKOV3 cells, which have low basal expression of MYC and MCL-1, are the least sensitive to THZ1 among eight ovarian cancer cell lines tested and are largely unaffected by CRISPR-mediated loss of MYC or MCL-1. This suggests that MYC and MCL-1 expression levels determine THZ1 sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 are supported by cell viability assays, immunoblotting (Figure 2\u2014figure supplement 2B-C), and CRISPR experiments (Figure 2\u2014figure supplement 2D-E). The correlation between expression levels and drug sensitivity is logical, though causality is inferred rather than directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "65f7d587-a1ad-41c8-80cd-0a913e1f3fe3",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "THZ1 treatment at 250 nM causes profound suppression of gene expression in KURAMOCHI and COV362 cells, with 1060 and 1524 genes downregulated respectively. Both MYC and MCL-1 are significantly downregulated (Log2 FC >0.5, FDR<0.001), while PVT1, a lncRNA co-amplified with MYC, is not significantly affected. 685 genes are commonly downregulated between the two cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72, C74 are supported by RNA-seq analysis (Figure 3A-C). The statistical thresholds are appropriate, and the specificity for MYC over PVT1 (Figure 3\u2014figure supplement 1) strengthens the conclusion. The overlap analysis shows significant concordance (p<2e-16).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "35c79aa9-1a52-493d-9905-eaef2bea6281",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gene set enrichment analysis reveals that G2M_checkpoint and E2F_targets are the top enriched pathways among genes downregulated by THZ1. MYC target gene sets (MYC_targets_V1 and V2) are significantly enriched, and MYC target genes show significantly greater downregulation compared to other active genes, indicating THZ1 downregulates a MYC-dependent gene expression program.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 are supported by GSEA analysis (Figure 3D-E) with appropriate statistical testing (Wilcoxon rank sum test, p=0.006 and p=0.003). The enrichment of MYC target genes provides mechanistic support for MYC-dependent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Abolishing MYC expression requires combined inhibition of CDK7, CDK12, and CDK13, not CDK7 alone. YKL-1-116 (CDK7-selective) shows weaker MYC downregulation than THZ1, while THZ531 (CDK12/13-selective) has biphasic effects on MYC. The combination of YKL-1-116 and THZ531 recapitulates THZ1's effects on MYC and MCL-1 downregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C39, C79-C85, C106 are well-supported by experiments using selective inhibitors (Figure 4A-E). The combination experiments provide strong evidence for the requirement of multi-CDK inhibition. However, the mechanism explaining why both CDK7 and CDK12/13 are required remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "ab1e3a7f-d64d-4888-b773-afe3a0407c65",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A THZ1-resistant CDK7 mutant (C312S) rescues THZ1-induced MYC downregulation and CTD phosphorylation at Ser5 and Ser7, confirming CDK7 as a THZ1 target. However, CDK7 C312S overexpression does not rescue THZ1-induced cell growth inhibition, though it rescues YKL-1-116 effects, suggesting parallel pathways beyond MYC contribute to THZ1's anti-proliferative effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C92 are supported by rescue experiments (Figure 4\u2014figure supplement 2). The differential rescue of molecular markers versus cell growth is appropriately interpreted as evidence for additional THZ1 targets. The inability to rescue THZ1 effects with CDK7 alone is consistent with the multi-targeting requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "562ea613-7801-4e70-aa48-478053bb53df",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In 11 patient-derived xenograft (PDX) models from heavily pre-treated ovarian cancer patients, THZ1 (10 mg/kg IP BID) was well-tolerated and induced significant tumor growth inhibition in all models. Four models showed complete inhibition, six showed initial regression followed by regrowth, and one showed slower growth. MYC and MCL-1 protein levels were nearly abrogated in tumors following THZ1 treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, C38, C93-C97, C100 are supported by PDX experiments with bioluminescent imaging (Figure 5B-C) and immunoblotting (Figure 5D). The use of 11 independent PDX models from heavily pre-treated patients strengthens clinical relevance. However, the claim of 'no overt toxicity' is based on body weight and behavior only (data not shown), lacking comprehensive toxicity assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "8d7dbbba-6228-48c2-af5f-454b33bd16a6",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Olaparib (PARP inhibitor) showed modest effects in only three PDX models. The combination of THZ1 and Olaparib displayed synergistic effects with further tumor growth inhibition in five models, suggesting that combining THZ1 with PARP inhibitors could be a promising therapeutic approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C99 are supported by PDX data (Figure 5C), but C102 is speculative. The term 'synergistic' is used without formal synergy analysis (e.g., Bliss independence or combination index calculations). The combination shows additive or enhanced effects in some models, but true synergy is not rigorously demonstrated. Additional mechanistic studies would be needed to support clinical translation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "240b65d8-f5dc-4610-906c-9c0e6f19fda2",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study demonstrates exceptional antitumor activity of THZ1 in ovarian cancer models through strong suppression of MYC, providing a compelling rationale for investigating THZ1 or its derivatives for treating MYC-dependent ovarian cancer clinically. The requirement for simultaneous CDK7, CDK12, and CDK13 inhibition demonstrates the advantage of polypharmacology in overcoming functional redundancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C40, C103-C105, C107 represent appropriate conclusions from the combined in vitro and in vivo data. The evidence supports THZ1's efficacy and the multi-CDK targeting mechanism. However, C105 is somewhat speculative regarding clinical translation, as additional preclinical studies (pharmacokinetics, comprehensive toxicity, resistance mechanisms) would typically be needed before clinical investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing the clinical context: ovarian cancer is the fifth leading cause of female cancer death and most lethal gynecologic malignancy; HGSOC is the most common and aggressive subtype; HGSOCs have universal TP53 mutations and ~50% have HR deficiency; platinum-based therapy achieves 70% complete remission but >90% relapse; resistance to platinum and PARP inhibitors is common, creating urgent need for novel therapies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16, C18-C27 are standard background knowledge appropriately cited from epidemiological and clinical literature. These establish the clinical rationale for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "f375ac60-19bd-4527-be14-a55508e5efba",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims on transcriptional CDKs and their role in cancer: CDK7, CDK8, CDK9, CDK11, CDK12, CDK13, and CDK19 regulate transcription by phosphorylating RNA polymerase II; certain oncogenes (MYC, MYCN, RUNX1) depend on continuous transcription driven by super-enhancers; THZ1 inhibits CDK7, CDK12, and CDK13 and suppresses super-enhancer-associated transcription in other cancers; MAX is a MYC partner; PVT1 is co-amplified with MYC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C37, C51, C73 represent established knowledge from prior literature, appropriately cited. These provide mechanistic context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    },
+    {
+      "id": "48b3a0a6-6567-48ca-89f6-39f38dd7b119",
+      "content_id": "7e6d92f3-0cd4-4b07-b395-7de45bebbc9d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Targeting MYC directly has proven difficult.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is well-established knowledge in cancer therapeutics, providing rationale for indirect targeting approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:05:48.350710Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5d00e7bb-8d98-4017-b543-afb0f934c083",
+      "result_id": "b87536b3-51f1-4d60-bdc1-712887a62b04"
+    },
+    {
+      "claim_id": "4012bf4f-5a1e-46f1-a905-98e23ed8bc48",
+      "result_id": "b87536b3-51f1-4d60-bdc1-712887a62b04"
+    },
+    {
+      "claim_id": "fae39ddb-434b-4181-9576-3898695152c4",
+      "result_id": "b87536b3-51f1-4d60-bdc1-712887a62b04"
+    },
+    {
+      "claim_id": "ac7bff65-ec9e-44fa-b9c9-b8f475a86ea3",
+      "result_id": "b87536b3-51f1-4d60-bdc1-712887a62b04"
+    },
+    {
+      "claim_id": "f1453d30-88fd-4adc-87b9-b915a4f94817",
+      "result_id": "b87536b3-51f1-4d60-bdc1-712887a62b04"
+    },
+    {
+      "claim_id": "b3b8a55d-6a60-44b0-a471-008aec689c4f",
+      "result_id": "b87536b3-51f1-4d60-bdc1-712887a62b04"
+    },
+    {
+      "claim_id": "6fea9f93-cb95-40a7-9881-6f86362f115c",
+      "result_id": "b87536b3-51f1-4d60-bdc1-712887a62b04"
+    },
+    {
+      "claim_id": "1882625b-668d-478e-8925-4062c7cdf4f6",
+      "result_id": "b87536b3-51f1-4d60-bdc1-712887a62b04"
+    },
+    {
+      "claim_id": "64e9314c-f924-467a-8c10-1f006b4bc201",
+      "result_id": "e3be5abf-ac83-484f-a54a-d1d128af4b79"
+    },
+    {
+      "claim_id": "5e30a627-6c23-4026-9965-f525da63a1d9",
+      "result_id": "e3be5abf-ac83-484f-a54a-d1d128af4b79"
+    },
+    {
+      "claim_id": "bad0bd90-783d-418f-bc13-bc903d56395e",
+      "result_id": "e3be5abf-ac83-484f-a54a-d1d128af4b79"
+    },
+    {
+      "claim_id": "c22c9b17-9a20-4b5e-ae35-a98827726538",
+      "result_id": "e3be5abf-ac83-484f-a54a-d1d128af4b79"
+    },
+    {
+      "claim_id": "4654428d-31e6-4fed-a548-513aa888481a",
+      "result_id": "e3be5abf-ac83-484f-a54a-d1d128af4b79"
+    },
+    {
+      "claim_id": "6e74a8c8-4cd9-4e48-936f-f2dcbd8f79f7",
+      "result_id": "e3be5abf-ac83-484f-a54a-d1d128af4b79"
+    },
+    {
+      "claim_id": "eedca74a-47ca-433b-8f10-408f1baa8652",
+      "result_id": "e3be5abf-ac83-484f-a54a-d1d128af4b79"
+    },
+    {
+      "claim_id": "45ffaebe-5dfb-4a5e-aa52-a92352f21285",
+      "result_id": "3afef846-6d7e-48b8-a7dc-02f6a5225ff1"
+    },
+    {
+      "claim_id": "1548bcba-301e-482f-b34e-77ff1e4adcf8",
+      "result_id": "3afef846-6d7e-48b8-a7dc-02f6a5225ff1"
+    },
+    {
+      "claim_id": "51801371-d70e-4703-9322-61f081949fcd",
+      "result_id": "d5c329ee-ee9f-4ccb-8300-65b31b957c3a"
+    },
+    {
+      "claim_id": "b21937e1-cec1-4e86-9f45-55ea6f4d67f2",
+      "result_id": "d5c329ee-ee9f-4ccb-8300-65b31b957c3a"
+    },
+    {
+      "claim_id": "bbf9a7dd-92ff-44f4-83b8-ceb039d41d2b",
+      "result_id": "d5c329ee-ee9f-4ccb-8300-65b31b957c3a"
+    },
+    {
+      "claim_id": "ebb59fbc-79fb-4cef-af5d-fd2322aeb30b",
+      "result_id": "d5c329ee-ee9f-4ccb-8300-65b31b957c3a"
+    },
+    {
+      "claim_id": "576d472e-5b7f-4521-8020-5caa6420db4a",
+      "result_id": "d5c329ee-ee9f-4ccb-8300-65b31b957c3a"
+    },
+    {
+      "claim_id": "cc9224e5-db55-4cb2-a361-35ee3e7a9988",
+      "result_id": "bc53121d-0b31-454f-b511-77043d448eac"
+    },
+    {
+      "claim_id": "b97a25b0-cad9-4ca0-adb7-751b8c655fda",
+      "result_id": "bc53121d-0b31-454f-b511-77043d448eac"
+    },
+    {
+      "claim_id": "8f2d57ed-4a2a-4fee-bcff-57ca74c9878a",
+      "result_id": "bc53121d-0b31-454f-b511-77043d448eac"
+    },
+    {
+      "claim_id": "e7f63c15-cdef-4deb-b048-804e94a1f06f",
+      "result_id": "bc53121d-0b31-454f-b511-77043d448eac"
+    },
+    {
+      "claim_id": "93eb229e-172a-471f-ae5d-035ffa049c6b",
+      "result_id": "bc53121d-0b31-454f-b511-77043d448eac"
+    },
+    {
+      "claim_id": "c6f3741c-42e4-4ee7-9f18-af7b80510b4e",
+      "result_id": "bc53121d-0b31-454f-b511-77043d448eac"
+    },
+    {
+      "claim_id": "59b486a6-d37f-4fca-89a3-9143dc67742c",
+      "result_id": "bc53121d-0b31-454f-b511-77043d448eac"
+    },
+    {
+      "claim_id": "8be4e5da-4e74-4bd8-9819-a7e73a7fe662",
+      "result_id": "f47bdf2b-b0d2-47fb-beb8-7e9cc332dc6d"
+    },
+    {
+      "claim_id": "513f0f6a-9d5a-4d18-8772-59c99c766bca",
+      "result_id": "f47bdf2b-b0d2-47fb-beb8-7e9cc332dc6d"
+    },
+    {
+      "claim_id": "685c1fde-cd14-4ed7-8a2b-a48078274950",
+      "result_id": "f47bdf2b-b0d2-47fb-beb8-7e9cc332dc6d"
+    },
+    {
+      "claim_id": "cd6aa651-8077-4ca5-95a2-0f8a22c28951",
+      "result_id": "f47bdf2b-b0d2-47fb-beb8-7e9cc332dc6d"
+    },
+    {
+      "claim_id": "81791b69-c1c5-434a-98c5-cba5156f87ae",
+      "result_id": "65f7d587-a1ad-41c8-80cd-0a913e1f3fe3"
+    },
+    {
+      "claim_id": "278da022-377c-44e8-b209-0ba40d886439",
+      "result_id": "65f7d587-a1ad-41c8-80cd-0a913e1f3fe3"
+    },
+    {
+      "claim_id": "b0812dd0-428e-4cba-960c-d9e22e2d228d",
+      "result_id": "65f7d587-a1ad-41c8-80cd-0a913e1f3fe3"
+    },
+    {
+      "claim_id": "f910f247-307f-4181-be99-13f0fb94969a",
+      "result_id": "65f7d587-a1ad-41c8-80cd-0a913e1f3fe3"
+    },
+    {
+      "claim_id": "3885bfbb-b250-4c26-bdcb-3a69769eb793",
+      "result_id": "65f7d587-a1ad-41c8-80cd-0a913e1f3fe3"
+    },
+    {
+      "claim_id": "88a9b38e-6337-413f-8eb4-72b3ee9faad6",
+      "result_id": "65f7d587-a1ad-41c8-80cd-0a913e1f3fe3"
+    },
+    {
+      "claim_id": "f6233159-01c1-4b91-8767-93cf3a225c8f",
+      "result_id": "35c79aa9-1a52-493d-9905-eaef2bea6281"
+    },
+    {
+      "claim_id": "32ad6a84-36d5-4028-addc-0e6aa3f4dc76",
+      "result_id": "35c79aa9-1a52-493d-9905-eaef2bea6281"
+    },
+    {
+      "claim_id": "11dead08-96ff-49c9-ac1c-c35849302ce7",
+      "result_id": "35c79aa9-1a52-493d-9905-eaef2bea6281"
+    },
+    {
+      "claim_id": "f2587961-fbe7-4773-8203-8b854c414472",
+      "result_id": "35c79aa9-1a52-493d-9905-eaef2bea6281"
+    },
+    {
+      "claim_id": "8c90a607-b199-4028-a7fe-bacd0da7e4db",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "f84be72f-b7fd-47b9-a474-848fd6b628ce",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "1b8d0dd0-9380-448e-9bbd-bb9d077e7566",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "56590e69-303f-41de-8567-8ab2ce6ccb3e",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "52b205e1-ade3-44e8-bb0b-81fb6d5988c7",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "25861238-0fa8-4362-9423-592ebfc02a2e",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "ef372b83-8dbe-4a78-8bfd-fd5451e325b4",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "99b8ee4d-b42a-4d2a-ad05-9974115734ac",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "dfcee5cf-0fed-481d-9f85-1d30aba5c481",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "8d0d9797-9399-42b2-8862-c91de531bfcb",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "c81bd9e0-1fb4-400c-92fe-92c9d253b5eb",
+      "result_id": "b98b753d-e7f7-450a-b8c4-fb9866b0a79e"
+    },
+    {
+      "claim_id": "c7e36bbc-c5f2-44e6-bffe-4b47f39dcd1c",
+      "result_id": "ab1e3a7f-d64d-4888-b773-afe3a0407c65"
+    },
+    {
+      "claim_id": "916f56f7-d8af-4be6-9e8a-1be1de076a5d",
+      "result_id": "ab1e3a7f-d64d-4888-b773-afe3a0407c65"
+    },
+    {
+      "claim_id": "47a2125f-a225-4e46-a0ae-c4956d7c50b7",
+      "result_id": "ab1e3a7f-d64d-4888-b773-afe3a0407c65"
+    },
+    {
+      "claim_id": "4928fdbd-0a95-48b9-b055-74e05d0a35b5",
+      "result_id": "ab1e3a7f-d64d-4888-b773-afe3a0407c65"
+    },
+    {
+      "claim_id": "92aaf46c-7029-4104-a404-2f9a31689227",
+      "result_id": "ab1e3a7f-d64d-4888-b773-afe3a0407c65"
+    },
+    {
+      "claim_id": "abdb8443-532c-4b83-9da4-649cfb6978d6",
+      "result_id": "ab1e3a7f-d64d-4888-b773-afe3a0407c65"
+    },
+    {
+      "claim_id": "1b4c7e9c-c5e9-491d-8adc-35fc1199d6c1",
+      "result_id": "ab1e3a7f-d64d-4888-b773-afe3a0407c65"
+    },
+    {
+      "claim_id": "8747b2f5-7666-4781-8102-c78d7c08c128",
+      "result_id": "562ea613-7801-4e70-aa48-478053bb53df"
+    },
+    {
+      "claim_id": "7d7a8d57-2ae0-407b-a72c-2202c4060c8e",
+      "result_id": "562ea613-7801-4e70-aa48-478053bb53df"
+    },
+    {
+      "claim_id": "8f56898e-c74f-40eb-a516-997fd7b01652",
+      "result_id": "562ea613-7801-4e70-aa48-478053bb53df"
+    },
+    {
+      "claim_id": "7841d122-a08a-48d8-8e13-d67bd5453e47",
+      "result_id": "562ea613-7801-4e70-aa48-478053bb53df"
+    },
+    {
+      "claim_id": "f14a5180-fe0b-4fdf-a9fe-2cb95e4b4af6",
+      "result_id": "562ea613-7801-4e70-aa48-478053bb53df"
+    },
+    {
+      "claim_id": "d82f6dda-7a5d-49f0-8783-cbf63ef140e8",
+      "result_id": "562ea613-7801-4e70-aa48-478053bb53df"
+    },
+    {
+      "claim_id": "aa044868-e3fb-4e05-8af0-35a1d0bd8389",
+      "result_id": "562ea613-7801-4e70-aa48-478053bb53df"
+    },
+    {
+      "claim_id": "d3115869-da49-4829-a327-4b88c89c3537",
+      "result_id": "562ea613-7801-4e70-aa48-478053bb53df"
+    },
+    {
+      "claim_id": "ca9fbcab-80ba-4252-a80a-0967c0075311",
+      "result_id": "562ea613-7801-4e70-aa48-478053bb53df"
+    },
+    {
+      "claim_id": "78519ebe-864e-49fc-9702-7a33a6d289d2",
+      "result_id": "8d7dbbba-6228-48c2-af5f-454b33bd16a6"
+    },
+    {
+      "claim_id": "ec59f11c-9ad7-4ea7-914a-99eb5b97d917",
+      "result_id": "8d7dbbba-6228-48c2-af5f-454b33bd16a6"
+    },
+    {
+      "claim_id": "6a288048-b48e-4317-903c-e21b61ca1d54",
+      "result_id": "8d7dbbba-6228-48c2-af5f-454b33bd16a6"
+    },
+    {
+      "claim_id": "205fed41-2cc8-4127-a18c-62aea155ccf1",
+      "result_id": "240b65d8-f5dc-4610-906c-9c0e6f19fda2"
+    },
+    {
+      "claim_id": "2c1e9417-7c9b-45c0-9157-2139c9217b89",
+      "result_id": "240b65d8-f5dc-4610-906c-9c0e6f19fda2"
+    },
+    {
+      "claim_id": "a65ec012-134b-4e88-b965-56eab75be016",
+      "result_id": "240b65d8-f5dc-4610-906c-9c0e6f19fda2"
+    },
+    {
+      "claim_id": "2a8f2c74-532d-4148-a18f-73b6326b9bd3",
+      "result_id": "240b65d8-f5dc-4610-906c-9c0e6f19fda2"
+    },
+    {
+      "claim_id": "be68b0fe-72d8-4ba2-b14f-116f26fee39e",
+      "result_id": "240b65d8-f5dc-4610-906c-9c0e6f19fda2"
+    },
+    {
+      "claim_id": "9b22e85f-565c-4d3d-a0ca-8e7348f3fa53",
+      "result_id": "240b65d8-f5dc-4610-906c-9c0e6f19fda2"
+    },
+    {
+      "claim_id": "37e2d17d-f7f9-472c-8357-cbe61237696a",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "e072605c-be5f-42b6-9ef8-a68fe3610c39",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "482de50c-72b6-4e66-a6ad-a8d094f49923",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "d49b0b64-2e5c-46e7-883a-13a3107b3945",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "f4ae9384-5011-41ee-b637-dfb524bcfaa4",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "7f9820dc-1b3d-4f7a-8b05-a5a4a26bc538",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "707147f6-1a00-46ef-b856-957d6d1b4c81",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "386f2480-4f23-40fc-bff6-89f49c793e56",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "b5727998-da4b-42de-85c2-2e094571067d",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "458e1bac-dad3-473d-9b94-c8a0ba02fb30",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "6814960b-deb2-4acb-bc49-3fcf8a3ac802",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "fb9a9aff-e451-49c4-9076-359e1fe60f85",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "8176c739-acc1-47f1-b3b4-6ccf918c1e4a",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "152c8d87-755b-49fb-b961-c6acae184d08",
+      "result_id": "bacf7ee5-e01c-4a7c-80b4-e89f0d6a383e"
+    },
+    {
+      "claim_id": "c81391f9-1827-491b-8d10-ecce42eb0e82",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "9f85b9cd-375d-45e4-ba23-2c68ea59e110",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "2e57b304-3256-41cb-9a15-7a9cb778181f",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "bdeabb98-ecee-4ca9-bd0e-cf6853a827aa",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "a7e805fe-c41f-494e-b117-e96feb4df028",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "6760b843-aed8-4142-870d-abb98a716390",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "9d4cc786-e47a-48ab-9f7e-1d1004c9eef3",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "13850174-f467-44f0-a878-55a1bf3d917b",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "b8fb3678-0bb4-4f2c-9070-cd1979634e8f",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "b43bf493-e165-4acd-82e3-806e8f19aaba",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "8f9309b9-d45c-4c87-a4c4-f529d9994ac3",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "348dfae8-703d-45b9-91b3-e12568d0d58f",
+      "result_id": "f375ac60-19bd-4527-be14-a55508e5efba"
+    },
+    {
+      "claim_id": "f416d2eb-ce8f-44cd-b65a-b1f922334717",
+      "result_id": "48b3a0a6-6567-48ca-89f6-39f38dd7b119"
+    }
+  ],
+  "comparisons": []
+}

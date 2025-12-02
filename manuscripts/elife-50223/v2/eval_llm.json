@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "HCC827 cells harbor EGFR ex19 del mutation and are highly sensitive to EGFR TKI treatment (IC50 = 25.6 \u00b1 3.6 nM), but approximately 30% of cells survive high-dose erlotinib treatment and can form drug-tolerant persister (DTP) cells that eventually proliferate into drug-resistant colonies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 provide converging evidence from dose-response curves (C20), survival assays (C21), proliferation assays (C22), and colony formation assays (C23-C24) that collectively demonstrate the incomplete response of HCC827 cells to EGFR TKI treatment. The experimental data are internally consistent and supported by appropriate figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A genome-wide CRISPR-Cas9 screen using a pooled sgRNA library targeting 18,360 genes identified 35 genes whose inactivation sensitized cells to erlotinib (including known mediators FGFR1 and YAP1) and 47 genes whose inactivation conferred resistance (enriched for PI3K-mTOR and RAS-MAPK pathways).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 describe a well-designed genome-wide screen with appropriate coverage (5 sgRNAs per gene), stringent hit selection criteria (RSA and z-score thresholds), and validation through pathway enrichment analysis. The identification of known resistance mechanisms (C27, C32) validates the screen performance. Statistical methods and bioinformatics analyses are appropriately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The CRISPR screen identified components of the Cullin 5 (CUL5)-RING E3 ligase complex (CUL5, RNF7, UBE2F) and ARIH2 as novel mediators of EGFR TKI resistance, alongside known resistance genes KEAP1 and FBXW7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by the screen data and represent novel findings. The identification of multiple components of the same complex (CRL5) provides internal validation. However, the mechanistic basis for their role in resistance requires further investigation (addressed in later claims).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Validation experiments confirmed that sgRNAs targeting negatively selected hits (YAP1, USP22, LPAR2, GNB2, PKN2, RIC8A) sensitized cells to EGFR TKIs, while sgRNAs targeting positively selected hits (ARIH2, CUL5, RNF7, KCTD5, PDCD10, BTAF1) conferred resistance in both HCC827 and NCI-H3255 cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide orthogonal validation of screen hits using colony formation assays in two independent cell lines with different EGFR mutations. The consistency across cell lines strengthens the findings. Western blot confirmation of gene knockout and on-target EGFR inhibition adds rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "LPAR antagonists (Compound 2, AM095, and Ki16425) synergized with erlotinib to inhibit clonogenic cell growth in HCC827 and NCI-H3255 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by colony formation assays showing synergy between LPAR antagonists and erlotinib. This provides pharmacological validation of the genetic findings and suggests therapeutic potential. However, the mechanism of synergy is not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "RIC8A knockout in EGFR-mutant NSCLC cells (HCC827, HCC4006, PC9, NCI-H3255) leads to decreased G protein subunit levels, enhanced sensitivity to EGFR TKIs, accelerated apoptosis, and dramatically suppressed resistant colony formation without affecting basal proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 provide comprehensive characterization of RIC8A loss effects across multiple cell lines with different EGFR mutations. The data include dose-response curves, apoptosis assays, and colony formation assays. The rescue experiment (C46) provides strong evidence for on-target effects. The consistency across multiple cell lines strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "RIC8A loss in NCI-H1975 cells (harboring EGFR-L858R and T790M mutations) dramatically enhanced the growth suppressive effect of the third-generation EGFR TKI EGF816, promoted apoptosis, and attenuated development of resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 extend the RIC8A findings to third-generation EGFR TKIs and T790M-mutant cells. The data demonstrate that RIC8A loss can overcome T790M-mediated resistance, which is clinically significant. Multiple complementary assays (viability, apoptosis, colony formation) support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "RIC8A loss exhibited no effect on EGFR TKI sensitivity in EGFR wild-type NSCLC cell lines or normal bronchial epithelial cells, indicating that RIC8A synthetic lethality with EGFR inhibition is specific to EGFR-mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide important specificity controls demonstrating that RIC8A loss effects are specific to EGFR-mutant cells. This is critical for assessing therapeutic potential and suggests a favorable therapeutic window. The testing across multiple EGFR-WT cell lines and normal cells strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "RIC8A loss in HEK293A cells significantly decreased YAP reporter activity, reduced expression of YAP target genes (ANKRD1, CTGF, CYR61), and suppressed YAP-dependent growth, all of which could be rescued by overexpression of constitutively active YAP (YAP-5SA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 establish RIC8A as a positive regulator of YAP signaling using multiple complementary approaches (reporter assay, gene expression, functional assay). The rescue experiment with YAP-5SA (C59) provides strong evidence for the mechanistic connection. The use of two independent sgRNAs strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RIC8A loss in EGFR-mutant NSCLC cells resulted in increased YAP phosphorylation at Ser127 (indicating inactivation) and significantly suppressed expression of YAP target genes across all tested cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 extend the RIC8A-YAP connection to EGFR-mutant NSCLC cells using Western blot and qRT-PCR analyses. The consistency across multiple cell lines strengthens the conclusion. The use of YAP phosphorylation as a readout of YAP activity is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Overexpression of constitutively active YAP (YAP-5SA) in HCC827 cells blocked the effect of RIC8A loss on YAP signaling, conferred resistance to EGFR inhibition, and rescued the synthetic lethality phenotype, demonstrating that RIC8A synergizes with EGFR inhibition by attenuating YAP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide critical mechanistic evidence linking RIC8A loss, YAP signaling, and EGFR TKI sensitivity. The rescue experiments with YAP-5SA demonstrate that YAP is a key downstream effector of RIC8A in this context. Multiple complementary assays (gene expression, viability, colony formation) support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RHOA loss increased YAP phosphorylation, decreased YAP target gene expression, and induced synthetic lethality with EGFR inhibition. RIC8A loss caused morphological changes and decreased Cofilin phosphorylation (downstream of RHOA-ROCK signaling), and ROCK inhibition (Y-27632) also induced synthetic lethality with EGFR inhibition, suggesting the RIC8A-G\u03b1-RHOA-YAP axis regulates EGFR TKI sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C75 attempt to establish the mechanistic connection between RIC8A and YAP through RHOA. While RHOA loss phenocopies RIC8A loss effects on YAP and EGFR TKI sensitivity (C68-C70), the authors acknowledge difficulty in detecting RHOA activity changes upon RIC8A loss. The morphological changes (C72) and Cofilin phosphorylation (C73) provide indirect evidence, but the inability to directly measure RHOA activity changes weakens the mechanistic link. The proposed negative feedback through ARHGAP29 (C71) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ARIH2 loss in HCC827 cells decreased sensitivity to erlotinib, reduced apoptosis induction upon erlotinib treatment, and facilitated more cells to enter the drug-tolerant persister (DTP) state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 demonstrate that ARIH2 loss promotes early resistance mechanisms using viability assays, apoptosis assays, and DTP assays. The use of two independent sgRNAs strengthens the findings. The DTP assay is particularly relevant for understanding resistance development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ARIH2 loss substantially enhanced clonogenic cell survival upon EGFR inhibition and showed substantial outgrowth under EGFR TKI pressure in cell competition assays, while having little or no effect on basal proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 demonstrate long-term resistance effects of ARIH2 loss using colony formation and competitive proliferation assays. The rescue experiment with CRISPR-resistant ARIH2 (C79) provides strong evidence for on-target effects. The cell competition assay (C80) is a rigorous approach to assess selective advantage under drug pressure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "ARIH2 loss-mediated drug resistance was observed in NCI-H3255 cells but had no effect on EGFR TKI sensitivity in EGFR-WT NSCLC cells or normal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide validation in an independent cell line and important specificity controls. The specificity to EGFR-mutant cells is critical for assessing therapeutic implications. Testing across multiple EGFR-WT cell lines and normal cells strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In HCC827 xenograft models, ARIH2 loss alone had little effect on tumor growth in vehicle-treated mice, but significantly accelerated the development of erlotinib-resistant tumors compared to control xenografts where resistance emerged after approximately 90 days of continuous erlotinib treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide critical in vivo validation of the ARIH2 resistance phenotype. The xenograft study is well-designed with appropriate controls and demonstrates clinical relevance. The observation that ARIH2 loss accelerates resistance development without affecting basal growth is consistent with in vitro findings and clinically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Mass spectrometry analysis identified 46 proteins that increased and 13 that decreased upon ARIH2 loss. ARIH2 loss increased protein levels of METAP2, ALDOA, and PSAT1 without affecting their mRNA levels in HCC827 cells, with similar effects observed in NCI-H3255 and HEK293T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 describe an unbiased proteomics approach to identify ARIH2 substrates/targets. The stringent criteria (fold change and p-value thresholds) and validation by Western blot strengthen the findings. The observation that protein levels change without mRNA changes suggests post-transcriptional regulation. The consistency across multiple cell types supports a general mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "METAP2 overexpression conferred resistance to EGFR inhibition in HCC827 cells. EGFR inhibition drastically inhibited nascent protein synthesis, but METAP2 overexpression or ARIH2 loss increased protein synthesis when challenged by erlotinib treatment, suggesting ARIH2 loss confers resistance by maintaining higher protein synthesis rates through METAP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 establish METAP2 as a key mediator of ARIH2 loss-induced resistance using gain-of-function experiments and AHA labeling to measure protein synthesis. The mechanistic connection between METAP2 and protein synthesis is well-established in the literature. The data provide a clear mechanistic link between ARIH2 loss, METAP2 upregulation, and resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Proteasome inhibitor (Bortezomib) treatment increased METAP2 protein abundance in control but not ARIH2-deficient cells, indicating proteasome-mediated METAP2 degradation is ARIH2-dependent. ARIH2 loss also increased nascent METAP2 protein synthesis, demonstrating that ARIH2 regulates both protein translation and degradation of METAP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 provide mechanistic insights into how ARIH2 regulates METAP2 levels. The bortezomib experiments (C97-C98) suggest ARIH2 promotes METAP2 degradation, while AHA labeling experiments (C99) show ARIH2 also regulates METAP2 translation. The dual regulation mechanism is interesting but somewhat unusual. The inability to detect METAP2 ubiquitination (mentioned in text) suggests indirect regulation or technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Overexpression of ALDOA or PSAT1 promoted resistance to EGFR inhibition in HCC827 cells, indicating that ARIH2 loss confers resistance through multiple mechanisms involving METAP2, ALDOA, and PSAT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 demonstrate that multiple proteins upregulated by ARIH2 loss contribute to resistance. The gain-of-function experiments with ALDOA and PSAT1 provide direct evidence for their roles. The conclusion that ARIH2 loss integrates multiple resistance mechanisms is well-supported, though the relative contributions of each protein are not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that lung cancer is the leading cause of cancer mortality, EGFR mutations are present in 10-40% of NSCLC patients, EGFR TKIs have achieved clinical success but responses are incomplete with variable duration, and resistance develops through multiple mechanisms including T790M mutation, pathway reactivation, and non-genetic alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide well-established background information supported by appropriate citations to the literature. These claims set the context for the study but do not represent novel findings. The citations appear appropriate and the claims are consistent with current understanding of EGFR-mutant NSCLC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C55",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Background claims establish the functions of RIC8A, LPAR signaling, YAP pathway, ARIH2/CRL5 complex, and their roles in various cancers based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C55, C104-C118 provide relevant background information from the literature that contextualizes the current findings. The citations appear appropriate and the claims accurately represent prior work. These are not novel findings but provide important context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Summary claims state that the genome-wide CRISPR screen revealed synthetic lethal vulnerabilities and resistance mechanisms, that RIC8A knockout enhanced EGFR TKI-induced cell death through YAP signaling regulation, and that ARIH2 knockout conferred resistance through METAP2-mediated protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 are high-level summary statements that accurately reflect the major findings of the study. These claims are well-supported by the detailed experimental evidence presented in the other claim groups. They represent appropriate synthesis of the results.",
+    "result_type": "MAJOR"
+  }
+]

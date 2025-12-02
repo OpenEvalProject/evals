@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Feedback inhibition in the dentate gyrus is recruited steeply with a low dynamic range, saturating when 0-4% of granule cells are active. This was demonstrated using electrical stimulation combined with patch-clamp recordings and calcium imaging, showing that IPSCs saturate at ~3.7% active GCs and reach ~90% of maximum with less than 3% of GCs active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C24 provide converging experimental evidence from electrical stimulation experiments (Figures 1B-K) with appropriate pharmacological controls (GABAzine, DCG-IV) and quantitative measurements linking IPSC amplitude to active cell fraction. The steep recruitment curve and low dynamic range are well-documented with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Optogenetic validation confirmed the steep recruitment of feedback inhibition, with saturation at approximately 4% of active GCs. Focal and global optogenetic stimulation produced similar maximal IPSC amplitudes despite different activation patterns, indicating that local GC populations can fully recruit the feedback circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide independent validation using optogenetic methods (Figure 2) with glutamatergic blockers confirming synaptic recruitment. The comparison between focal and global stimulation (C29-C31) provides strong evidence that local populations saturate the circuit. Statistical tests support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Single granule cells do not elicit feedback inhibition in the dentate gyrus, contrasting with neocortex and CA3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by negative results from dual patch-clamp experiments (n=15 pairs, Figure 2\u2014figure supplement 3) and is consistent with a cited large-scale study reporting extremely sparse single-cell connections (0.124%). The experimental approach was appropriate for detecting single-cell effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Feedback inhibition exhibits spatial tuning with local inhibition being stronger, more steeply recruited, faster, and having lower jitter than remote inhibition. Local inhibition was recruited with half-maximal activation at 1.99\u00b10.22% active cells versus 3.17\u00b10.57% for remote inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 describe comprehensive spatial profiling experiments (Figure 3) with appropriate statistical analyses (two-way RM ANOVAs). The kinetic measurements (latency, jitter, rise time, decay) are well-controlled and show consistent spatial gradients. Sample sizes appear adequate (n=8 cells per blade).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Net feedback inhibition shows strong frequency-dependent facilitation, driven by facilitating mossy fiber inputs to hilar cells. Facilitation indices increased significantly with frequency (1 Hz: 0.99\u00b10.07 to 50 Hz: 2.09\u00b10.19), contrasting with CA1 where feedback inhibition depresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C43-C47 provide converging evidence from GC recordings (Figure 4A-C) and hilar cell recordings (Figure 4D-L) with appropriate statistical tests. The mechanistic link to mossy fiber facilitation is supported by recordings from both interneurons and mossy cells. Cell classification was validated by k-means clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A biophysically realistic computational model tuned to experimental data demonstrates that both feedback and feedforward inhibition contribute significantly to pattern separation, with effects more pronounced during gamma than theta modulated activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 describe modeling results (Figure 6C-D) where the model was appropriately constrained by experimental data before testing pattern separation. Statistical analyses with n=7 network seeds provide adequate replication. The model successfully reproduces key experimental features (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C64",
+      "C66"
+    ],
+    "result": "Pattern separation is selectively and powerfully enhanced at gamma frequencies (>30 Hz) compared to theta frequencies (10 Hz), particularly for highly similar input patterns. This frequency-dependent effect is driven specifically by feedback inhibition, with pattern separation for highly similar inputs more than doubling from 10 Hz to 30 Hz (Cohen's d=4.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C51-C53, C64, C66 present the major computational finding with robust statistical support (Figure 6E-G). The effect was validated across multiple similarity metrics (Figure 6\u2014figure supplement 2), time windows (Figure 6F-G, supplements 4), decay constants (supplement 5), and input strengths (supplement 7). The large effect size and extensive robustness testing strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The frequency-dependent pattern separation effect is highly robust across different similarity measures, IPSC decay time constants (0.5x to 5x), frequencies up to 100 Hz, and a large range of input strengths and resulting GC sparsities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C59-C61 document extensive robustness analyses shown in supplementary figures. The systematic variation of key parameters while maintaining the core finding demonstrates the robustness of the frequency-dependent effect. The analyses are appropriately designed and statistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Facilitation contributed approximately 20% of the isolated feedback effect for both frequency paradigms, while spatial tuning did not affect mean pattern separation but appeared to reduce its variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 describe targeted model manipulations (Figure 6\u2014figure supplement 3) with appropriate statistical tests. The small but significant contribution of facilitation and the lack of effect of spatial tuning on mean pattern separation are clearly demonstrated, though the effect on variability is noted as small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Pattern separation occurs even within a single theta cycle (100 ms), with feedback inhibition contributing in both frequency paradigms. The selective increase during slow-gamma modulated inputs is driven by feedback inhibition and includes a contribution from mossy fiber facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 present time-resolved analyses (Figure 6F-G) showing pattern separation within short timescales. Statistical tests (Wilcoxon signed rank tests, two-way RM ANOVAs) support the conclusions. The analysis at 33 ms resolution (supplement 4) further validates the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "For highly similar input patterns, the more efficient sparsification of the GC population at 30 Hz did not fully account for the gains in pattern separation, suggesting that the feedback circuit mediates direct assembly competition beyond pure sparsification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 present an important mechanistic inference from Figure 6\u2014figure supplement 7F, showing that matching sparsity levels between frequencies does not equalize pattern separation. This suggests a mechanism beyond simple activity reduction, though the inference is appropriately qualified as a suggestion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The gain and sensitivity of the feedback circuit are well suited to strongly modulate feedback inhibition within the range of GC activity reported in vivo (estimated <2% for 100 ms windows based on published firing rates).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 makes an appropriate comparison between the experimental findings (saturation at 3-4% active GCs) and in vivo activity levels from the literature. The inference that the circuit is well-tuned to physiological activity ranges is reasonable given the experimental data and cited in vivo studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The frequency-dependent pattern separation mechanism involved decreased interneuron activity and was particularly efficient for very similar input patterns. The precise spatiotemporal organization of the feedback circuit together with temporal structure of inputs is a crucial determinant of pattern separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 present key mechanistic insights from the modeling study (Figure 6\u2014figure supplement 1C-D shows decreased interneuron activity at 30 Hz). The conclusion about spatiotemporal organization is well-supported by the frequency-dependent effects that would not be captured in time-discretized models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Feedforward inhibition was robustly independent of frequency modulation. The facilitation of feedback inhibition is a novel feature of the DG, contrasting with CA1 where feedback inhibition shows strong depression, and is principally mediated by facilitating mossy fiber inputs to the feedback circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 present important comparative findings. The frequency-independence of feedforward inhibition (C73) is shown in modeling results. The novelty claim (C74) is appropriately qualified. The contrast with CA1 (C75) is supported by citations. The mechanistic conclusion (C76) is supported by both experimental and modeling data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "In the model, spatial tuning of feedback inhibition had no effects on pattern separation, which may derive from the fact that perforant path inputs were spatially broad and random as suggested by anatomical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 present a modeling result and its interpretation. The lack of effect of spatial tuning (Figure 6\u2014figure supplement 3) is clearly demonstrated. The interpretation regarding broad PP inputs is appropriately qualified and supported by anatomical citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establishing the theoretical framework: feedback inhibition is important for pattern separation across species, the dentate gyrus is critically involved in pattern separation in mammals, and the DG feedback circuit is complex with multiple interneuron types showing prominent theta and gamma oscillations during different behavioral states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C19 provide well-cited background establishing the scientific context. These are appropriately supported by extensive literature citations and represent established knowledge in the field rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The dentate pattern separator may be optimized to rapidly detect subtle differences in gamma-dominated exploratory brain states, potentially supporting memory encoding of novel features. This is supported by literature showing gamma activity during novelty and its causal relationship to associative memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C72 present speculative interpretations connecting the modeling results to behavioral function. While the cited literature (C69-C71) supports the occurrence of gamma oscillations during relevant behaviors, the claim that the circuit is 'optimized' for this function (C72) goes beyond what the data directly demonstrate. This is appropriately qualified as a suggestion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Speculative functional interpretations: facilitation may aid sparse GC spiking to recruit inhibition during bursts; localized inhibition might support independent processing between DG blades; spatial tuning may promote gamma oscillations which critically impact pattern separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77, C80-C83 present speculative interpretations appropriately qualified with 'may' or 'might'. While these are reasonable hypotheses based on the data and literature, they represent suggestions for future investigation rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "This mechanism may be relevant for understanding disease states with coincident dentate gyrus pathology, abnormal oscillatory activity, and memory/pattern separation deficits such as temporal lobe epilepsy, Alzheimer's disease, or schizophrenia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 presents a speculative clinical relevance statement appropriately qualified with 'may be'. While the cited literature supports the co-occurrence of DG pathology and cognitive deficits in these diseases, the direct relevance of the frequency-dependent pattern separation mechanism to these conditions remains to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

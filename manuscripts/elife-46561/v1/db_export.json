@@ -1,0 +1,948 @@
+{
+  "submission": {
+    "id": "f338c68d-1476-4f87-847a-4cd68c08b64e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:54:30.629346Z",
+    "updated_at": "2025-12-02T09:54:30.629346Z"
+  },
+  "content": [
+    {
+      "id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "submission_id": "f338c68d-1476-4f87-847a-4cd68c08b64e",
+      "content_type": "manuscript",
+      "content_text": "# Comment on 'The distribution of antibiotic use and its association with antibiotic resistance'\n\n## Authors\n\n- Koen B Pouwels<sup>1</sup> ([ORCID: 0000-0001-7097-8950](https://orcid.org/0000-0001-7097-8950)) \u2020\n- Christopher C Butler<sup>3</sup>\n- Julie V Robotham<sup>1</sup>\n\n### Affiliations\n\n1. Health Economics Research Centre, Nuffield Department of Population Health University of Oxford Oxford United Kingdom\n2. Modelling and Economics Unit, National Infection Service Public Health England London United Kingdom\n3. Nuffield Department of Primary Care Health Sciences University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe are writing to comment on the recent study by Olesen et al., 2018 on antibiotic use and antibiotic resistance.\n\n## Introduction\n\nCountries are increasingly implementing strategies to reduce antibiotic prescribing in an attempt to decrease antibiotic resistance. It should be possible to achieve relatively large reductions in antibiotic prescribing by focusing on prescribing events for acute and uncomplicated presentations for respiratory tract infections (Smieszek et al., 2018; Pouwels et al., 2018a). However, reducing antibiotic prescriptions in more complex cases, such as in patients receiving repeat prescriptions for chronic recurrent infections, may be more difficult. It is important to know whether focussing on unnecessary prescriptions for infectious syndromes where there is little chance of benefit from antibiotic treatment is sufficient to halt or lower antibiotic resistance levels. Olesen et al. recently reported that repeat (intensive) use had a weaker association with resistance than first (extensive) use, suggesting that it may indeed be sufficient to focus on the latter (Olesen et al., 2018).\n\nTheir analysis uses cross-sectional state-level data, which makes it difficult to draw conclusions. Causal inference based on such data is difficult because it requires several, often implausible, assumptions (Reichenheim and Coutinho, 2010). A fundamental requirement is that reverse causality should not play a role, i.e. antibiotic resistance should not influence antibiotic prescribing. This assumption is highly unlikely to hold. If there is a high prevalence of resistance against a specific antibiotic, or even perceived high prevalence, doctors are likely to prescribe that antibiotic only to patients that are at low risk of having a resistant infection, e.g. patients who have not been recently exposed to that antibiotic (first-time users). Under these circumstances, doctors are likely to avoid that particular antibiotic in patients who have a high risk of having a resistant infection, e.g. patients recently exposed to that antibiotic (repeat users). In case resistance against a commonly prescribed antibiotic is low, the pre-test probability of resistance will likely be low among all patients including those recently exposed to that antibiotic, making substitution less relevant. Of note, various other factors that correlate with antibiotic resistance, such as comorbidity and age, also influence antibiotic prescribing decisions.\n\nThus, reverse causality may influence repeat use more than first use, potentially contributing to the observed associations. While the choice of which antibiotic is needed is likely influenced by antibiotic resistance levels, the choice of whether or not to prescribe an antibiotic is to a much smaller extent influenced by antibiotic resistance. Therefore, an analysis focusing on overall antibiotic use is likely less susceptible to reverse causality. We therefore decided to evaluate whether repeat use had a stronger association with resistance when using any antibiotic use instead of one specific antibiotic to create the first-time and repeat use predictors. Here we report the results showing that repeat use has a stronger association with antibiotic resistance than first use when focusing on overall use. We also discuss why both the previous and our analysis should not be interpreted as being causal.\n\n## Results\n\nWhen using the data Olesen et al. (2018) used in their main analysis, but focusing on use of any antibiotic, instead of use of particular antibiotics (see Methods): intensive use is more often positively associated with high resistance than extensive use (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46561/elife-46561-fig1-v1.jpg)\n\n**Figure 1.:** Each point represents a pathogen\u2013antibiotic combination. The position of the points show the two coefficients from the regressions. The units of the coefficients are proportion resistant per annual claim per 10 people. Error bars show 95% confidence intervals.\n\nBy focusing solely on the point estimates one would conclude, if one would assume the associations from Figure 1 are causal, that overall repeat use is more often positively associated with resistance than first use. However, focusing on point estimates only, as Olesen et al. (2018) seem to have done, does not necessarily adequately take into account the relatively large variance. Multicollinearity is known to frequently cause implausible effect estimates and wrong signs of the coefficients. We agree that unbiased estimates can still be obtained despite the presence of multicollinearity: however, this does not mean that the point estimate of a specific study should be expected to be close to the 'true' value (Farrar and Glauber, 1967). Deviations from the true value are especially expected when using relatively small datasets, such as those used by Olesen et al. (2018). To evaluate whether reliance on point estimates alone is nevertheless reasonable we evaluated whether similar conclusions would be reached when performing 10,000 bootstrap replications. Supplementary file 1 shows that similar results were obtained when bootstrapping, with only five occasions where the mean of the bootstrap samples had a different sign.\n\n## Discussion\n\nOur results show that when evaluating the association between overall use of antibiotics and antibiotic resistances that repeat use has a stronger association with antibiotic resistance than first use. These results are in the opposite direction of the results of Olesen et al. (2018).\n\nTo better understand why these contrasting results may be obtained it is important to consider the relative contributions of forward and reverse causation. Use of one antibiotic may select for or even against resistance to another antibiotic via various mechanisms, such as co-selection, collateral resistance, collateral sensitivity, or by simply killing competing bacteria (Pouwels et al., 2018b; Imamovic and Sommer, 2013; Baym et al., 2016; Kahlmeter and Menday, 2003). Therefore, only considering use of one antibiotic may not be sufficient to obtain the effect of that antibiotic on resistance against that same antibiotic, even in the absence of other biases (Pouwels et al., 2018b). Moreover, resistance against sulphonamides remained high despite drastic reductions in sulphonamide prescribing, largely driven by co-selection via use of other antibiotics (Enne et al., 2001). While 'overall antibiotic use' does partly account for selection of resistance via other antibiotics, it likely includes antibiotics that do not select for antibiotic resistance, thereby potentially attenuating forward causation compared to an analysis with an exposure measure that only includes antibiotics that do select for antibiotic resistance. However, as explained above, overall antibiotic use may be less susceptible to reverse causality because antibiotic resistance has likely a stronger influence on which antibiotic to prescribe than on the decision to prescribe an antibiotic or not. It could be argued that with higher levels of resistance, more unique drugs will be required to cure an infection, making overall use susceptible to reverse causality, however treatment failures due to antibiotic resistance are likely underlying only a small proportion of treatment switches among repeat users in the outpatient setting (Coenen and Goossens, 2014).\n\nWhether the results can be interpreted as the causal effects of first and repeat use of antibiotics on antibiotic resistance levels depends on several assumptions. We want to stress that both our as well as the previous analyses of Olesen et al. (2018) are likely affected by several other biases. Sicker patients require more antibiotics and are likely also be more prone to acquire resistant pathogens independent of antibiotic use in the community. Indeed, a substantial number of studies suggest that comorbidities are associated with increased antibiotic resistance levels, even after accounting for antibiotic use (Chatterjee et al., 2018). Furthermore, while on average a large proportion of antibiotics are being used in an outpatient setting, specific antibiotics may be much more frequently used in the inpatient setting, for which no data is included. For example, in the UK\u00a0>\u00a040% of cephalosporin prescriptions are among hospital in-patients (ESPAUR writing committee, 2018), questioning the validity of some of the analyses if similar patterns of use were to be observed in the US.\n\nA potentially more fundamental problem is that the distribution of different specimen types across States is unclear. The prevalence of resistance likely differs between different types of specimens. For example, in England approximately 18% of Escherichia coli blood samples were resistant to ciprofloxacin, while approximately 11% of urinary E. coli samples were resistant to ciprofloxacin in England in 2015 (https://fingertips.phe.org.uk/). Analyses are likely further complicated by variation in the likelihood of sending specific specimens for susceptibility testing. It has previously been found that a substantial part of the variation in (apparent) antibiotic resistance prevalence against trimethoprim among Klebsiella Pneumoniae and Proteus mirabilis can be explained by variation of the number of urinary samples tested per population (Pouwels et al., 2018b). If patterns of antibiotic use correlate with the likelihood of taking samples, for example because doctors are more likely to send a sample for testing among patients that were already exposed to antibiotics multiple times, associations will suffer from substantial bias.\n\nGiven the facts that i) treatment failures and repeat use of antibiotics increase the chances that a clinician will send a sample for susceptibility testing; and ii) there is more repeat than first use of antibiotics (Olesen et al., 2018; Shallcross et al., 2017; Dolk et al., 2018), the majority of specimens are expected to be taken from patients exposed to repeat antibiotics and at higher risk of antibiotic resistance. It remains a question whether variation in resistance among specimens taken from such patients would be more driven by their own intensive use or extensive use of antibiotics by other patients.\n\nIn conclusion, given the limitations discussed and the observation that repeat use has a stronger association with resistance than first use when focusing on overall antibiotic use, the conclusion that first-use has a bigger impact on resistance than repeat use of antibiotics is not justified (yet).\n\n## Materials and methods\n\nWe used the antibiotic use data and antibiotic resistance data that accompanied the by Olesen et al. Details about the data sources are described in Olesen et al. (2018). We replicated their main analysis with the exception that we focused on overall use of antibiotics instead of specific antibiotic use \u2013 antibiotic resistance pairs. For example, instead of evaluating the association between use of first and repeat use of quinolone and quinolone resistance among E. coli, we analysed the association between use of first and repeat use of any antibiotic and quinolone resistance among E. coli. Multiple linear regressions were performed for the different bug-drug combinations. We compared these results with results obtained when performing 10,000 bootstrap samples for each bug\u2013drug combination. States were sampled with replacement and a linear regression was performed on each sample.\n",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3839f3dc-fe62-40c2-8820-86ec6d852343",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C1",
+      "claim": "Countries are increasingly implementing strategies to reduce antibiotic prescribing in an attempt to decrease antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Countries are increasingly implementing strategies to reduce antibiotic prescribing in an attempt to decrease antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about current policy trends without specific supporting data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "3554296f-d423-4533-b7d1-e018495962f6",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C2",
+      "claim": "It should be possible to achieve relatively large reductions in antibiotic prescribing by focusing on prescribing events for acute and uncomplicated presentations for respiratory tract infections.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be possible to achieve relatively large reductions in antibiotic prescribing by focusing on prescribing events for acute and uncomplicated presentations for respiratory tract infections (Smieszek et al., 2018; Pouwels et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by two citations to previous research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "94920bd2-a033-40a8-98a4-a1fb9c38b4e3",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C3",
+      "claim": "Reducing antibiotic prescriptions in more complex cases, such as in patients receiving repeat prescriptions for chronic recurrent infections, may be more difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "However, reducing antibiotic prescriptions in more complex cases, such as in patients receiving repeat prescriptions for chronic recurrent infections, may be more difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the complexity of clinical cases, presented as a contrast to the previous claim.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "62e78980-0538-4b41-8d50-7fe55384ec2b",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C4",
+      "claim": "Olesen et al. reported that repeat (intensive) use had a weaker association with resistance than first (extensive) use.",
+      "claim_type": "EXPLICIT",
+      "source": "Olesen et al. recently reported that repeat (intensive) use had a weaker association with resistance than first (extensive) use, suggesting that it may indeed be sufficient to focus on the latter (Olesen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the Olesen et al. 2018 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "b4987833-ebd1-4c47-9f27-952945163873",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C5",
+      "claim": "The analysis by Olesen et al. uses cross-sectional state-level data, which makes it difficult to draw conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Their analysis uses cross-sectional state-level data, which makes it difficult to draw conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of cross-sectional data design.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "6586917a-f155-423f-8dc2-bd0e7d60507f",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C6",
+      "claim": "Causal inference based on cross-sectional data is difficult because it requires several, often implausible, assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Causal inference based on such data is difficult because it requires several, often implausible, assumptions (Reichenheim and Coutinho, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by a citation to methodological literature on causal inference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "b2299ce3-7034-4104-bd77-b41302db90db",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C7",
+      "claim": "A fundamental requirement for causal inference is that reverse causality should not play a role, i.e. antibiotic resistance should not influence antibiotic prescribing.",
+      "claim_type": "EXPLICIT",
+      "source": "A fundamental requirement is that reverse causality should not play a role, i.e. antibiotic resistance should not influence antibiotic prescribing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about requirements for causal inference.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "c6e4dfa1-dd82-4220-bd12-88d1b49851a3",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C8",
+      "claim": "The assumption that antibiotic resistance does not influence antibiotic prescribing is highly unlikely to hold.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption is highly unlikely to hold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on clinical practice reasoning provided in the subsequent text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "0e801e76-5df0-468b-9e57-acfcd6f39306",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C9",
+      "claim": "If there is a high prevalence of resistance against a specific antibiotic, doctors are likely to prescribe that antibiotic only to patients that are at low risk of having a resistant infection.",
+      "claim_type": "EXPLICIT",
+      "source": "If there is a high prevalence of resistance against a specific antibiotic, or even perceived high prevalence, doctors are likely to prescribe that antibiotic only to patients that are at low risk of having a resistant infection, e.g. patients who have not been recently exposed to that antibiotic (first-time users).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about physician prescribing behavior based on clinical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "ec554806-e174-4e7d-9211-606a6ec97c55",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C10",
+      "claim": "Doctors are likely to avoid prescribing an antibiotic with high resistance prevalence to patients who have a high risk of having a resistant infection, such as patients recently exposed to that antibiotic.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these circumstances, doctors are likely to avoid that particular antibiotic in patients who have a high risk of having a resistant infection, e.g. patients recently exposed to that antibiotic (repeat users).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about physician prescribing behavior based on clinical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "f24d8341-9541-4d4e-b1cd-8611a72d1601",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C11",
+      "claim": "Various factors that correlate with antibiotic resistance, such as comorbidity and age, also influence antibiotic prescribing decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, various other factors that correlate with antibiotic resistance, such as comorbidity and age, also influence antibiotic prescribing decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about clinical decision-making and confounding factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "f3ac116d-088c-4475-bb65-751c97729b37",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C12",
+      "claim": "Reverse causality may influence repeat use more than first use, potentially contributing to the observed associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, reverse causality may influence repeat use more than first use, potentially contributing to the observed associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the preceding arguments about prescribing behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "39cc30a3-0581-42f6-a753-f38864510f40",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C13",
+      "claim": "The choice of which antibiotic is needed is likely influenced by antibiotic resistance levels.",
+      "claim_type": "EXPLICIT",
+      "source": "While the choice of which antibiotic is needed is likely influenced by antibiotic resistance levels, the choice of whether or not to prescribe an antibiotic is to a much smaller extent influenced by antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about clinical decision-making based on reasoning about prescribing behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "bbf2fa0e-94fe-4c44-b024-7f2bab05f440",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C14",
+      "claim": "The choice of whether or not to prescribe an antibiotic is to a much smaller extent influenced by antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "While the choice of which antibiotic is needed is likely influenced by antibiotic resistance levels, the choice of whether or not to prescribe an antibiotic is to a much smaller extent influenced by antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about clinical decision-making based on reasoning about prescribing behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "8849682d-b33c-428c-be3b-007c3b4c8f47",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C15",
+      "claim": "An analysis focusing on overall antibiotic use is likely less susceptible to reverse causality than one focusing on specific antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, an analysis focusing on overall antibiotic use is likely less susceptible to reverse causality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the preceding argument about prescribing decisions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "46cc0835-5080-4096-969a-5633562d2028",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C16",
+      "claim": "When using overall antibiotic use instead of specific antibiotic use, intensive use is more often positively associated with high resistance than extensive use.",
+      "claim_type": "EXPLICIT",
+      "source": "When using the data Olesen et al. (2018) used in their main analysis, but focusing on use of any antibiotic, instead of use of particular antibiotics (see Methods): intensive use is more often positively associated with high resistance than extensive use (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the authors' own data analysis and presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "faaf1722-f7ff-407b-921b-dd224ac30a44",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C17",
+      "claim": "Olesen et al. (2018) focused on point estimates only without adequately taking into account the relatively large variance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, focusing on point estimates only, as Olesen et al. (2018) seem to have done, does not necessarily adequately take into account the relatively large variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the methodological approach used by Olesen et al.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "6f915ce4-15ec-4637-b75c-97a2081e4c09",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C18",
+      "claim": "Multicollinearity is known to frequently cause implausible effect estimates and wrong signs of the coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "Multicollinearity is known to frequently cause implausible effect estimates and wrong signs of the coefficients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established statistical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "93abdbf7-073b-4ff9-a82e-a46ddef333f4",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C19",
+      "claim": "Unbiased estimates can still be obtained despite the presence of multicollinearity, but this does not mean that the point estimate of a specific study should be expected to be close to the 'true' value.",
+      "claim_type": "EXPLICIT",
+      "source": "We agree that unbiased estimates can still be obtained despite the presence of multicollinearity: however, this does not mean that the point estimate of a specific study should be expected to be close to the 'true' value (Farrar and Glauber, 1967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by a citation to statistical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "f78e3616-96dd-412b-bfbf-ee4c6546c61b",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C20",
+      "claim": "Deviations from the true value are especially expected when using relatively small datasets, such as those used by Olesen et al. (2018).",
+      "claim_type": "EXPLICIT",
+      "source": "Deviations from the true value are especially expected when using relatively small datasets, such as those used by Olesen et al. (2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on statistical principles applied to the specific study.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "3ae09775-980f-40ae-931d-1e6ac1a042ed",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C21",
+      "claim": "Bootstrap analysis with 10,000 replications showed similar results to the original analysis, with only five occasions where the mean of the bootstrap samples had a different sign.",
+      "claim_type": "EXPLICIT",
+      "source": "Supplementary file 1 shows that similar results were obtained when bootstrapping, with only five occasions where the mean of the bootstrap samples had a different sign.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' own bootstrap analysis presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "3a674b54-1b28-41a1-abed-9541dba7c06e",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C22",
+      "claim": "When evaluating the association between overall use of antibiotics and antibiotic resistances, repeat use has a stronger association with antibiotic resistance than first use.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that when evaluating the association between overall use of antibiotics and antibiotic resistances that repeat use has a stronger association with antibiotic resistance than first use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' own data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "56cd5837-170d-43a7-8368-e2a31f4deea5",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C23",
+      "claim": "The results showing repeat use has a stronger association with resistance are in the opposite direction of the results of Olesen et al. (2018).",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in the opposite direction of the results of Olesen et al. (2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the current study's findings and those of Olesen et al.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "1fbbe1a1-d6de-4979-9f78-9d4c62a73865",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C24",
+      "claim": "Use of one antibiotic may select for or even against resistance to another antibiotic via various mechanisms, such as co-selection, collateral resistance, collateral sensitivity, or by simply killing competing bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of one antibiotic may select for or even against resistance to another antibiotic via various mechanisms, such as co-selection, collateral resistance, collateral sensitivity, or by simply killing competing bacteria (Pouwels et al., 2018b; Imamovic and Sommer, 2013; Baym et al., 2016; Kahlmeter and Menday, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "293a2a02-9b51-44cf-b58b-42dc90651291",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C25",
+      "claim": "Only considering use of one antibiotic may not be sufficient to obtain the effect of that antibiotic on resistance against that same antibiotic, even in the absence of other biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, only considering use of one antibiotic may not be sufficient to obtain the effect of that antibiotic on resistance against that same antibiotic, even in the absence of other biases (Pouwels et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "fbfe2c0c-f83c-4c91-b116-35ba96172bb3",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C26",
+      "claim": "Resistance against sulphonamides remained high despite drastic reductions in sulphonamide prescribing, largely driven by co-selection via use of other antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, resistance against sulphonamides remained high despite drastic reductions in sulphonamide prescribing, largely driven by co-selection via use of other antibiotics (Enne et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "92d2d97b-069b-4a5e-b7f5-6222cd885544",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C27",
+      "claim": "Overall antibiotic use may be less susceptible to reverse causality because antibiotic resistance has likely a stronger influence on which antibiotic to prescribe than on the decision to prescribe an antibiotic or not.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as explained above, overall antibiotic use may be less susceptible to reverse causality because antibiotic resistance has likely a stronger influence on which antibiotic to prescribe than on the decision to prescribe an antibiotic or not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on reasoning about clinical decision-making.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "28997653-b0f6-443c-861e-a43c1860e2ae",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C28",
+      "claim": "Treatment failures due to antibiotic resistance are likely underlying only a small proportion of treatment switches among repeat users in the outpatient setting.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be argued that with higher levels of resistance, more unique drugs will be required to cure an infection, making overall use susceptible to reverse causality, however treatment failures due to antibiotic resistance are likely underlying only a small proportion of treatment switches among repeat users in the outpatient setting (Coenen and Goossens, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "f3ec1d20-b751-4b96-9744-71e8e0e34564",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C29",
+      "claim": "Both the current analysis and the previous analyses of Olesen et al. (2018) are likely affected by several biases.",
+      "claim_type": "EXPLICIT",
+      "source": "We want to stress that both our as well as the previous analyses of Olesen et al. (2018) are likely affected by several other biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about methodological limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "bbd2b861-814a-4b23-8d5c-e0361ee17478",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C30",
+      "claim": "Sicker patients require more antibiotics and are likely also be more prone to acquire resistant pathogens independent of antibiotic use in the community.",
+      "claim_type": "EXPLICIT",
+      "source": "Sicker patients require more antibiotics and are likely also be more prone to acquire resistant pathogens independent of antibiotic use in the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on clinical knowledge about patient risk factors.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "9d2d5453-06b5-42cb-a39c-f6743f80cfe0",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C31",
+      "claim": "A substantial number of studies suggest that comorbidities are associated with increased antibiotic resistance levels, even after accounting for antibiotic use.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a substantial number of studies suggest that comorbidities are associated with increased antibiotic resistance levels, even after accounting for antibiotic use (Chatterjee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "bdc1e130-c68e-4a42-9570-afe5d5ea6690",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C32",
+      "claim": "In the UK, more than 40% of cephalosporin prescriptions are among hospital in-patients.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the UK > 40% of cephalosporin prescriptions are among hospital in-patients (ESPAUR writing committee, 2018), questioning the validity of some of the analyses if similar patterns of use were to be observed in the US.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by a citation to a UK surveillance report.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "3987479b-876a-4829-a31a-3510eeb7178e",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C33",
+      "claim": "The prevalence of resistance likely differs between different types of specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of resistance likely differs between different types of specimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on clinical and microbiological knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "9e8c74e3-8966-4f19-92eb-987ad11d2c87",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C34",
+      "claim": "In England, approximately 18% of Escherichia coli blood samples were resistant to ciprofloxacin in 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in England approximately 18% of Escherichia coli blood samples were resistant to ciprofloxacin, while approximately 11% of urinary E. coli samples were resistant to ciprofloxacin in England in 2015 (https://fingertips.phe.org.uk/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from a public health surveillance database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "e386f3d5-3615-4fa8-afea-771caf99a625",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C35",
+      "claim": "In England, approximately 11% of urinary E. coli samples were resistant to ciprofloxacin in 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in England approximately 18% of Escherichia coli blood samples were resistant to ciprofloxacin, while approximately 11% of urinary E. coli samples were resistant to ciprofloxacin in England in 2015 (https://fingertips.phe.org.uk/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from a public health surveillance database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "530ab3e8-76c6-478c-af3c-276d72050cb5",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C36",
+      "claim": "A substantial part of the variation in apparent antibiotic resistance prevalence against trimethoprim among Klebsiella Pneumoniae and Proteus mirabilis can be explained by variation of the number of urinary samples tested per population.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been found that a substantial part of the variation in (apparent) antibiotic resistance prevalence against trimethoprim among Klebsiella Pneumoniae and Proteus mirabilis can be explained by variation of the number of urinary samples tested per population (Pouwels et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "a7355a1c-49d4-489a-9274-1bfdab16be3c",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C37",
+      "claim": "If patterns of antibiotic use correlate with the likelihood of taking samples, associations will suffer from substantial bias.",
+      "claim_type": "EXPLICIT",
+      "source": "If patterns of antibiotic use correlate with the likelihood of taking samples, for example because doctors are more likely to send a sample for testing among patients that were already exposed to antibiotics multiple times, associations will suffer from substantial bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about potential bias in observational studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "b39cea9f-a7b2-4d44-8edc-eb9cb9caec5f",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C38",
+      "claim": "Treatment failures and repeat use of antibiotics increase the chances that a clinician will send a sample for susceptibility testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the facts that i) treatment failures and repeat use of antibiotics increase the chances that a clinician will send a sample for susceptibility testing; and ii) there is more repeat than first use of antibiotics (Olesen et al., 2018; Shallcross et al., 2017; Dolk et al., 2018), the majority of specimens are expected to be taken from patients exposed to repeat antibiotics and at higher risk of antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about clinical practice behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "629e5cb5-52be-4cc2-87bb-e314d028bb01",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C39",
+      "claim": "There is more repeat than first use of antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the facts that i) treatment failures and repeat use of antibiotics increase the chances that a clinician will send a sample for susceptibility testing; and ii) there is more repeat than first use of antibiotics (Olesen et al., 2018; Shallcross et al., 2017; Dolk et al., 2018), the majority of specimens are expected to be taken from patients exposed to repeat antibiotics and at higher risk of antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to three previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "a018fbc5-acd3-4397-b516-d317ab2435fc",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C40",
+      "claim": "The majority of specimens are expected to be taken from patients exposed to repeat antibiotics and at higher risk of antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the facts that i) treatment failures and repeat use of antibiotics increase the chances that a clinician will send a sample for susceptibility testing; and ii) there is more repeat than first use of antibiotics (Olesen et al., 2018; Shallcross et al., 2017; Dolk et al., 2018), the majority of specimens are expected to be taken from patients exposed to repeat antibiotics and at higher risk of antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the two preceding facts about clinical practice and antibiotic use patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "aa182214-a902-49e1-ad53-f78e95f91695",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C41",
+      "claim": "The conclusion that first-use has a bigger impact on resistance than repeat use of antibiotics is not justified.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, given the limitations discussed and the observation that repeat use has a stronger association with resistance than first use when focusing on overall antibiotic use, the conclusion that first-use has a bigger impact on resistance than repeat use of antibiotics is not justified (yet).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' analysis and discussion of limitations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "025a325b-e130-440e-9d32-472a023389a1",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C42",
+      "claim": "The authors used the antibiotic use data and antibiotic resistance data that accompanied the study by Olesen et al.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the antibiotic use data and antibiotic resistance data that accompanied the by Olesen et al.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the current analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "81c1e9e8-9c1e-4f45-95ac-ea084353a515",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C43",
+      "claim": "The authors replicated the main analysis of Olesen et al. with the exception that they focused on overall use of antibiotics instead of specific antibiotic use.",
+      "claim_type": "EXPLICIT",
+      "source": "We replicated their main analysis with the exception that we focused on overall use of antibiotics instead of specific antibiotic use \u2013 antibiotic resistance pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "4f974d7f-e532-4d78-887f-705993443102",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C44",
+      "claim": "Multiple linear regressions were performed for the different bug-drug combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple linear regressions were performed for the different bug-drug combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "1a397d48-1d93-4399-9389-e693f68ce93f",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "claim_id": "C45",
+      "claim": "The authors performed 10,000 bootstrap samples for each bug-drug combination, sampling states with replacement and performing a linear regression on each sample.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared these results with results obtained when performing 10,000 bootstrap samples for each bug\u2013drug combination. States were sampled with replacement and a linear regression was performed on each sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the bootstrap validation method used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a67837f2-930a-4bdd-9406-e45c6a3a7213",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors critique the Olesen et al. (2018) study for using cross-sectional state-level data, arguing that such data makes causal inference difficult due to reverse causality. Specifically, they argue that antibiotic resistance levels influence prescribing decisions, with doctors avoiding resistant antibiotics in repeat users more than first-time users, thereby biasing the observed associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C12 provide a logically coherent argument about reverse causality bias in cross-sectional studies. The reasoning about physician prescribing behavior (C9-C10) and confounding factors (C11) is plausible and well-established in epidemiological literature (C6). The critique of Olesen et al.'s methodology is appropriately supported by general causal inference principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "c1211afc-040a-4fd8-a847-900feda8e7e2",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors propose that analyzing overall antibiotic use (rather than specific antibiotics) is less susceptible to reverse causality because resistance levels influence which antibiotic is prescribed more than whether to prescribe any antibiotic at all.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 and C27 present a logical argument distinguishing between two types of prescribing decisions. The reasoning is internally consistent and represents a plausible hypothesis about clinical decision-making, though it remains an inference rather than empirically demonstrated fact. This forms the conceptual basis for their alternative analytical approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "7816f168-de8d-4d1a-94ee-2aa29b721052",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using the same data as Olesen et al. but analyzing overall antibiotic use instead of specific antibiotics, the authors find that repeat (intensive) use has a stronger association with antibiotic resistance than first (extensive) use\u2014the opposite of Olesen et al.'s findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C22, and C23 are directly supported by the authors' reanalysis shown in Figure 1. The methodology (C42-C44) is clearly described as a replication with modified exposure variables. The finding directly contradicts Olesen et al.'s conclusion, providing empirical evidence for the authors' critique.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "3dc56e28-81cd-4117-9cee-441823238846",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors address concerns about multicollinearity and variance in point estimates by performing bootstrap validation with 10,000 replications, finding that their conclusions remain robust with only five instances of sign changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 and C45 describe appropriate statistical concerns and validation methods. The bootstrap analysis (C21, C45) provides empirical support for the robustness of their findings. The discussion of multicollinearity (C18-C20) is grounded in established statistical principles, though the specific application to small datasets could benefit from more detailed justification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "2e9630d8-344d-4f59-a080-da140ab7ab9e",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors argue that analyzing single antibiotic-resistance pairs is insufficient because one antibiotic can affect resistance to other antibiotics through mechanisms like co-selection, collateral resistance, and competitive bacterial dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are well-supported by multiple citations to relevant literature. The sulphonamide example (C26) provides concrete empirical evidence for the co-selection phenomenon. This represents established knowledge in antimicrobial resistance research and strengthens the rationale for analyzing overall antibiotic use.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "822c06bc-eaee-4ce2-a898-91e5d38f8239",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors acknowledge that both their analysis and Olesen et al.'s are affected by confounding biases, including patient comorbidities that independently increase resistance risk and incomplete capture of hospital antibiotic use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 appropriately identify important limitations. The comorbidity confounding (C30-C31) is supported by citation, and the hospital prescribing issue (C32) is documented with UK data. This demonstrates scientific rigor in acknowledging that their own analysis shares some limitations with the study they critique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "de2850ff-7f9c-4569-b3bd-58785acbdc59",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors identify sampling bias as a fundamental problem: resistance prevalence varies by specimen type, and clinicians are more likely to test samples from repeat antibiotic users, potentially biasing observed resistance-use associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 present a coherent argument about ascertainment bias. The E. coli resistance differences by specimen type (C34-C35) and trimethoprim example (C36) provide empirical support. The inference about differential sampling (C37-C40) is logical and well-reasoned, though it remains a hypothesis about the data generation process rather than a demonstrated fact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "784aa226-1d56-4ff0-830b-dcde3f4029bf",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors argue that treatment failures due to resistance represent only a small proportion of treatment switches in outpatient settings, limiting reverse causality concerns for overall antibiotic use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C28 is supported by a citation but represents a single inference point. While plausible, the extent to which this holds across different settings and populations is unclear. More empirical evidence would strengthen this claim, which is important for justifying why overall antibiotic use is less susceptible to reverse causality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "35eb15ba-8a4b-48ac-a3de-0c7052e505c7",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors conclude that Olesen et al.'s claim that first-use has a bigger impact on resistance than repeat use is not justified given the methodological limitations and contradictory findings when analyzing overall antibiotic use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 represents a reasonable conclusion based on the accumulated evidence and arguments presented throughout the manuscript. The authors have demonstrated contradictory empirical findings (C16, C22, C23) and identified multiple sources of bias (reverse causality, sampling bias, confounding) that undermine causal interpretation of cross-sectional associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    },
+    {
+      "id": "4f7ffea3-67d7-4940-a6b9-3cfd7cd63b5b",
+      "content_id": "dfcbb636-5cb4-4f38-a60a-5c29261afc55",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors provide context that countries are implementing antibiotic stewardship strategies, with potential for large reductions by targeting acute respiratory infections, though reducing prescriptions for complex cases may be more difficult.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish appropriate background context. C1 represents general knowledge about policy trends, C2 is supported by citations, and C3 is a reasonable inference. These claims effectively motivate the importance of understanding whether targeting first-use versus repeat-use prescriptions is more effective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:54:30.629346Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "62e78980-0538-4b41-8d50-7fe55384ec2b",
+      "result_id": "a67837f2-930a-4bdd-9406-e45c6a3a7213"
+    },
+    {
+      "claim_id": "b4987833-ebd1-4c47-9f27-952945163873",
+      "result_id": "a67837f2-930a-4bdd-9406-e45c6a3a7213"
+    },
+    {
+      "claim_id": "6586917a-f155-423f-8dc2-bd0e7d60507f",
+      "result_id": "a67837f2-930a-4bdd-9406-e45c6a3a7213"
+    },
+    {
+      "claim_id": "b2299ce3-7034-4104-bd77-b41302db90db",
+      "result_id": "a67837f2-930a-4bdd-9406-e45c6a3a7213"
+    },
+    {
+      "claim_id": "c6e4dfa1-dd82-4220-bd12-88d1b49851a3",
+      "result_id": "a67837f2-930a-4bdd-9406-e45c6a3a7213"
+    },
+    {
+      "claim_id": "0e801e76-5df0-468b-9e57-acfcd6f39306",
+      "result_id": "a67837f2-930a-4bdd-9406-e45c6a3a7213"
+    },
+    {
+      "claim_id": "ec554806-e174-4e7d-9211-606a6ec97c55",
+      "result_id": "a67837f2-930a-4bdd-9406-e45c6a3a7213"
+    },
+    {
+      "claim_id": "f24d8341-9541-4d4e-b1cd-8611a72d1601",
+      "result_id": "a67837f2-930a-4bdd-9406-e45c6a3a7213"
+    },
+    {
+      "claim_id": "f3ac116d-088c-4475-bb65-751c97729b37",
+      "result_id": "a67837f2-930a-4bdd-9406-e45c6a3a7213"
+    },
+    {
+      "claim_id": "39cc30a3-0581-42f6-a753-f38864510f40",
+      "result_id": "c1211afc-040a-4fd8-a847-900feda8e7e2"
+    },
+    {
+      "claim_id": "bbf2fa0e-94fe-4c44-b024-7f2bab05f440",
+      "result_id": "c1211afc-040a-4fd8-a847-900feda8e7e2"
+    },
+    {
+      "claim_id": "8849682d-b33c-428c-be3b-007c3b4c8f47",
+      "result_id": "c1211afc-040a-4fd8-a847-900feda8e7e2"
+    },
+    {
+      "claim_id": "92d2d97b-069b-4a5e-b7f5-6222cd885544",
+      "result_id": "c1211afc-040a-4fd8-a847-900feda8e7e2"
+    },
+    {
+      "claim_id": "46cc0835-5080-4096-969a-5633562d2028",
+      "result_id": "7816f168-de8d-4d1a-94ee-2aa29b721052"
+    },
+    {
+      "claim_id": "3a674b54-1b28-41a1-abed-9541dba7c06e",
+      "result_id": "7816f168-de8d-4d1a-94ee-2aa29b721052"
+    },
+    {
+      "claim_id": "56cd5837-170d-43a7-8368-e2a31f4deea5",
+      "result_id": "7816f168-de8d-4d1a-94ee-2aa29b721052"
+    },
+    {
+      "claim_id": "025a325b-e130-440e-9d32-472a023389a1",
+      "result_id": "7816f168-de8d-4d1a-94ee-2aa29b721052"
+    },
+    {
+      "claim_id": "81c1e9e8-9c1e-4f45-95ac-ea084353a515",
+      "result_id": "7816f168-de8d-4d1a-94ee-2aa29b721052"
+    },
+    {
+      "claim_id": "4f974d7f-e532-4d78-887f-705993443102",
+      "result_id": "7816f168-de8d-4d1a-94ee-2aa29b721052"
+    },
+    {
+      "claim_id": "faaf1722-f7ff-407b-921b-dd224ac30a44",
+      "result_id": "3dc56e28-81cd-4117-9cee-441823238846"
+    },
+    {
+      "claim_id": "6f915ce4-15ec-4637-b75c-97a2081e4c09",
+      "result_id": "3dc56e28-81cd-4117-9cee-441823238846"
+    },
+    {
+      "claim_id": "93abdbf7-073b-4ff9-a82e-a46ddef333f4",
+      "result_id": "3dc56e28-81cd-4117-9cee-441823238846"
+    },
+    {
+      "claim_id": "f78e3616-96dd-412b-bfbf-ee4c6546c61b",
+      "result_id": "3dc56e28-81cd-4117-9cee-441823238846"
+    },
+    {
+      "claim_id": "3ae09775-980f-40ae-931d-1e6ac1a042ed",
+      "result_id": "3dc56e28-81cd-4117-9cee-441823238846"
+    },
+    {
+      "claim_id": "1a397d48-1d93-4399-9389-e693f68ce93f",
+      "result_id": "3dc56e28-81cd-4117-9cee-441823238846"
+    },
+    {
+      "claim_id": "1fbbe1a1-d6de-4979-9f78-9d4c62a73865",
+      "result_id": "2e9630d8-344d-4f59-a080-da140ab7ab9e"
+    },
+    {
+      "claim_id": "293a2a02-9b51-44cf-b58b-42dc90651291",
+      "result_id": "2e9630d8-344d-4f59-a080-da140ab7ab9e"
+    },
+    {
+      "claim_id": "fbfe2c0c-f83c-4c91-b116-35ba96172bb3",
+      "result_id": "2e9630d8-344d-4f59-a080-da140ab7ab9e"
+    },
+    {
+      "claim_id": "f3ec1d20-b751-4b96-9744-71e8e0e34564",
+      "result_id": "822c06bc-eaee-4ce2-a898-91e5d38f8239"
+    },
+    {
+      "claim_id": "bbd2b861-814a-4b23-8d5c-e0361ee17478",
+      "result_id": "822c06bc-eaee-4ce2-a898-91e5d38f8239"
+    },
+    {
+      "claim_id": "9d2d5453-06b5-42cb-a39c-f6743f80cfe0",
+      "result_id": "822c06bc-eaee-4ce2-a898-91e5d38f8239"
+    },
+    {
+      "claim_id": "bdc1e130-c68e-4a42-9570-afe5d5ea6690",
+      "result_id": "822c06bc-eaee-4ce2-a898-91e5d38f8239"
+    },
+    {
+      "claim_id": "3987479b-876a-4829-a31a-3510eeb7178e",
+      "result_id": "de2850ff-7f9c-4569-b3bd-58785acbdc59"
+    },
+    {
+      "claim_id": "9e8c74e3-8966-4f19-92eb-987ad11d2c87",
+      "result_id": "de2850ff-7f9c-4569-b3bd-58785acbdc59"
+    },
+    {
+      "claim_id": "e386f3d5-3615-4fa8-afea-771caf99a625",
+      "result_id": "de2850ff-7f9c-4569-b3bd-58785acbdc59"
+    },
+    {
+      "claim_id": "530ab3e8-76c6-478c-af3c-276d72050cb5",
+      "result_id": "de2850ff-7f9c-4569-b3bd-58785acbdc59"
+    },
+    {
+      "claim_id": "a7355a1c-49d4-489a-9274-1bfdab16be3c",
+      "result_id": "de2850ff-7f9c-4569-b3bd-58785acbdc59"
+    },
+    {
+      "claim_id": "b39cea9f-a7b2-4d44-8edc-eb9cb9caec5f",
+      "result_id": "de2850ff-7f9c-4569-b3bd-58785acbdc59"
+    },
+    {
+      "claim_id": "629e5cb5-52be-4cc2-87bb-e314d028bb01",
+      "result_id": "de2850ff-7f9c-4569-b3bd-58785acbdc59"
+    },
+    {
+      "claim_id": "a018fbc5-acd3-4397-b516-d317ab2435fc",
+      "result_id": "de2850ff-7f9c-4569-b3bd-58785acbdc59"
+    },
+    {
+      "claim_id": "28997653-b0f6-443c-861e-a43c1860e2ae",
+      "result_id": "784aa226-1d56-4ff0-830b-dcde3f4029bf"
+    },
+    {
+      "claim_id": "aa182214-a902-49e1-ad53-f78e95f91695",
+      "result_id": "35eb15ba-8a4b-48ac-a3de-0c7052e505c7"
+    },
+    {
+      "claim_id": "3839f3dc-fe62-40c2-8820-86ec6d852343",
+      "result_id": "4f7ffea3-67d7-4940-a6b9-3cfd7cd63b5b"
+    },
+    {
+      "claim_id": "3554296f-d423-4533-b7d1-e018495962f6",
+      "result_id": "4f7ffea3-67d7-4940-a6b9-3cfd7cd63b5b"
+    },
+    {
+      "claim_id": "94920bd2-a033-40a8-98a4-a1fb9c38b4e3",
+      "result_id": "4f7ffea3-67d7-4940-a6b9-3cfd7cd63b5b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,384 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Chloroplast-targeted roGFP (chl-roGFP) exhibited a distinct bimodal distribution following H2O2 treatment (50-100 \u00b5M), revealing two subpopulations: 'oxidized' cells (~100% OxD) and 'reduced' cells (30-43% OxD). These subpopulations emerged within minutes and stabilized after 46-51 min, with the proportion being H2O2-dose dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 are well-supported by flow cytometry data shown in Figure 2B-D and supplementary figures. The bimodal distribution is clearly visible, time-course data demonstrate rapid emergence, and dose-dependent effects are quantified. Statistical rigor is appropriate with multiple biological replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Nuclear-targeted roGFP displayed a continuous distribution (no distinct subpopulations) in response to H2O2, with fast oxidation even at low concentrations (50 \u00b5M) followed by slow recovery (>5 hr), while higher concentrations led to stable oxidation in the entire population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by flow cytometry data in Figure 2F-H showing continuous distributions and distinct kinetics compared to chloroplast. The compartment-specific response is well-documented with appropriate controls and time-course measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Mitochondria-targeted roGFP exhibited heterogeneous redox response starting at ~24 min post H2O2 treatment, but distinct subpopulations were not clearly separated until later stages and were not detected consistently across experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by data in Figure 2K-L and Figure 2\u2014figure supplement 4. The authors appropriately acknowledge inconsistency across experiments and lack of clear separation, demonstrating scientific rigor in reporting negative/ambiguous results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "The fraction of 'oxidized' cells at 1-2 hr post H2O2 treatment was strongly correlated with the fraction of dead cells at 24 hr (R\u00b2=0.89, p=2.2\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is well-supported by data in Figure 3A with robust statistical analysis showing strong correlation. The large sample size (n\u22653 per treatment across 5 experiments) and highly significant p-value provide strong evidence for the predictive relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "FACS-sorted 'oxidized' cells showed high survival (92.3\u00b11.4%) when sorted 30 min post-treatment, similar to 'reduced' cells, but survival decreased significantly at later time points (45.1\u00b12% at 60 min, 12.7\u00b12.1% at 100 min). The 'reduced' subpopulation maintained high survival at all time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by CFU survival data in Figure 3B with appropriate statistical tests (paired t-test, Dunnett test, Tukey test). The time-dependent decrease in 'oxidized' cell survival is well-documented with n\u22656 biological replicates. Statistical significance is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "A 'pre-commitment' phase of approximately 30-60 min exists during which 'oxidized' cells can still survive if stress is removed, after which cell death becomes irreversible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by inference from the CFU survival data in Figure 3B showing high survival at 30 min but progressive decline at later time points. The interpretation is logical and consistent with the data, though the exact timing may vary between cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Microfluidics live-imaging confirmed the bimodal response observed by flow cytometry, with subpopulations emerging within 20 min of H2O2 exposure. No differences in basal OxD were observed prior to treatment. The 'reduced' cells showed initial oxidation followed by gradual recovery over 8 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are well-supported by microfluidics data in Figure 4 and Videos 1-2. The single-cell tracking provides strong validation of flow cytometry results. Controls exclude shear stress artifacts. The temporal dynamics are clearly documented with n\u2265250 cells from multiple fields.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Early chloroplast oxidation (within 40 min) predicted subsequent cell fate with high accuracy. Logistic regression modeling identified a threshold of ~74% OxD that discriminated between cells that died versus survived with 98.8% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are strongly supported by microfluidics data in Figure 4A-G with appropriate statistical modeling (logistic regression). The high accuracy (98.8%) with low false positive (0.8%) and false negative (1.7%) rates demonstrates robust predictive power. Sample size is adequate (n=252 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Clonal populations derived from single cells maintained the bimodal response pattern, demonstrating that subpopulations arise from phenotypic variability rather than genetic differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by data in Figure 5 showing bimodal distributions in all clones examined (\u226518 clones per group across 2 experiments). This is a critical control that rules out genetic heterogeneity as the source of the observed variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Cell cycle analysis revealed that the 'oxidized' subpopulation was enriched in G1 phase (86.9\u00b11.8%) compared to control (76.8\u00b10.7%, p=0.0024), while the 'reduced' subpopulation had fewer G1 cells (68.7\u00b12.2%) and more G2/M cells. Cell cycle phase is linked to but does not fully explain the differential response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by DAPI staining data in Figure 6 with appropriate statistical tests (Tukey test, paired t-test). The authors appropriately conclude that cell cycle is a contributing factor but not the sole explanation, demonstrating nuanced interpretation. Sample size is adequate (n=6, 1200-2000 cells per sample).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Transition to darkness caused immediate oxidation of basal chl-roGFP (peaking within 15 min), followed by gradual reduction while still in dark, and rapid recovery (within 2 min) upon return to light. This oxidation was chloroplast-specific and not detected in the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are well-supported by flow cytometry data in Figure 7A,D and Figure 7\u2014figure supplement 2. The temporal dynamics are clearly documented with n=3 biological replicates. Organelle specificity is demonstrated by comparing chloroplast and nuclear responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Darkness eliminated the bimodal pattern of chl-roGFP oxidation and increased H2O2 sensitivity in the entire population. The bimodal pattern was regained only upon return to light and only at lower H2O2 doses. Dark-treated cultures showed higher mortality (p\u22640.0064), demonstrating that the bimodal response mechanism is light-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are strongly supported by data in Figure 7B-C,E with appropriate statistical analysis (t-test). The light-dependency of the bimodal response is a key mechanistic insight. The experimental design with light/dark transitions is well-controlled with n=3 biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "High light (HL, 2000 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9) exposure induced an 'oxidized' subpopulation starting at 1.5 hr, with the fraction increasing over time. These subpopulations were not detected under low light or in nuclear-roGFP cells, demonstrating chloroplast specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by flow cytometry data in Figure 8A-B and supplementary figures. The time-dependent emergence and organelle specificity are well-documented with appropriate controls (low light, nuclear-roGFP). Sample size is adequate (n=3, >9000 cells per histogram).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "CFU survival of HL-exposed 'oxidized' cells decreased over time (77.3\u00b14.2% at \u22643 hr to 3.1\u00b10.9% at >6 hr, p<0.001) while 'reduced' cells maintained high survival (92.7\u00b13.6%, p=0.93 vs control) at all time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are well-supported by CFU data in Figure 8D with appropriate statistical tests (Tukey test, ANCOVA). The time-dependent decrease in 'oxidized' cell survival under HL is clearly demonstrated. Sample size is adequate (n=6, 64-96 sorted cells per repeat across 2 experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Transition from HL to low light (LL) after 6.3 hr HL exposure clarified the separation between subpopulations. High light can generate heterogeneity in chloroplast ROS accumulation leading to differential survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by data in Figure 8A and supplementary figures. The HL-induced heterogeneity and its link to survival probability are well-documented. The conclusion about ecological implications is appropriately cautious ('likely affecting').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors propose that chloroplast EGSH is involved in sensing environmental stress cues and regulating cell fate in diatoms. The chloroplast generates both ROS and reductive power, and specific stressors (nitrogen limitation, infochemicals, HL) lead to chloroplast ROS accumulation and EGSH oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 integrate the current findings with prior literature (well-cited). The model is supported by the data presented (Figures 1, 8A) and previous work. The proposal is appropriately framed as a model rather than definitive proof, acknowledging the need for further mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Both mitochondrial and chloroplast redox dynamics are involved in cell fate regulation in diatoms, with evidence for organellar coupling and cooperative interactions in PCD execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 synthesize findings from this study with prior work (well-cited). The integration of mitochondrial and chloroplast roles is supported by the data and literature, though the mechanistic details of their interaction remain to be fully elucidated. The conclusion is appropriately cautious ('suggest').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors propose a 'death threshold' model where cells accumulating ROS above a threshold induce PCD-like cell death, while cells below the threshold recover. The threshold can be detected by early chl-roGFP oxidation (~74% OxD), and the balance between cellular metabolic state, antioxidant capacity, and stress magnitude determines whether cells cross this threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 present a mechanistic model supported by the microfluidics data (Figure 4G) and CFU survival experiments (Figures 3B, 8D). The 74% OxD threshold is empirically derived with high predictive accuracy. The model appropriately integrates multiple factors and is consistent with all presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The observed variability results from phenotypic plasticity rather than genetic differences (demonstrated by clonal populations). Multiple factors (life history, cell cycle, cell age, metabolic activity, microenvironment, biological noise) contribute to metabolic heterogeneity. Cell cycle differences likely represent pre-existing disparities but are a contributing factor rather than the sole source. Microfluidics showed no basal OxD differences between subpopulations prior to treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by clonal population data (Figure 5), cell cycle analysis (Figure 6), and microfluidics data (Figure 4\u2014figure supplement 2B). The authors appropriately acknowledge that the source of heterogeneity is not fully identified while ruling out genetic differences and basal OxD differences. The discussion is well-supported by extensive literature citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors propose that heterogeneity could arise from variability in photosynthesis-derived reductive power regulating antioxidant recycling rates. Darkness may compromise GSH biosynthesis and recycling, enhancing oxidative stress sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 present a mechanistic hypothesis supported by the dark/light experiments (Figure 7) and cited literature (Volpert et al., 2018). The proposal is appropriately framed as speculation ('may have', 'propose that') while being consistent with established knowledge about photosynthesis and redox metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors discuss ecological implications: fluctuating light conditions in nature may affect diatom stress susceptibility. Phenotypic variability can provide a 'bet-hedging' strategy for population survival under unpredictable stress. Redox-based phenotypic variability may provide a rapid, adjustable strategy compared to genetic diversity alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 present ecological interpretations well-supported by the experimental findings and extensive literature citations. The 'bet-hedging' concept is appropriately applied and well-cited. The authors appropriately acknowledge speculation ('may') while grounding interpretations in established ecological theory and their experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The novel approaches (flow cytometry, microfluidics) developed here provide new insights into single-cell dynamics in marine phytoplankton and enable studying dynamic processes at the single-cell level in diatoms and other microorganisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by the successful application of flow cytometry and custom microfluidics platform (detailed in Materials and methods, Figures 4\u2014figure supplement 1, Videos 1-2). The methodological innovations are clearly documented and enable single-cell resolution studies previously not possible in diatoms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Methodological details: P. tricornutum strain Pt1 8.6 (CCMP2561) was used, grown under defined conditions (18\u00b0C, 16:8 hr light:dark, 80 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9). roGFP strains were obtained from previous work. roGFP oxidation is reversible and quantifiable, reporting EGSH and representing oxidation state of native proteins in monitored organelles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 provide essential methodological information well-supported by citations to prior work (Graff van Creveld et al., 2015; Rosenwasser et al., 2014; Meyer, 2008). The roGFP methodology is well-established and appropriately applied. Culture conditions are clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background on diatom ecology and ROS biology: Diatoms form massive blooms central to biogeochemical cycling, are exposed to diverse stressors, and PCD contributes to bloom demise. ROS play important roles in stress sensing across kingdoms, are produced by metabolism and stress, and cells maintain ROS scavenging systems. H2O2 is a stable ROS signaling molecule with preferential activity toward cysteine residues and can diffuse across membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C13 provide well-established background information extensively supported by literature citations (5-8 citations per claim). These are standard knowledge claims in the field and are appropriately cited. No experimental validation is needed for these introductory statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "H2O2 application in diatoms reproduces oxidation patterns similar to environmental stressors (nutrient limitation, infochemicals, high light). While H2O2 concentrations used (50-200 \u00b5M) are higher than bulk seawater (nanomolar), local concentrations in phytoplankton microenvironments can be orders of magnitude higher. H2O2 induces dose-dependent cell death with PCD characteristics, and early mitochondrial GSH oxidation precedes cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by prior work (Graff van Creveld et al., 2015; Rosenwasser et al., 2014) and data in Figure 1. The justification for H2O2 concentrations is well-reasoned with appropriate citations about microenvironments (Stocker, 2012; Chrachri et al., 2018; Seymour et al., 2017). The link to prior PCD work is appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

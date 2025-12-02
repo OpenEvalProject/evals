@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C31",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C89"
+    ],
+    "result": "A universal B cell genome editing strategy was developed using CRISPR-Cas9 and homology-directed repair (HDR) to replace the heavy chain variable region with the PG9 HIV broadly neutralizing antibody sequence. The strategy is designed to work in cells regardless of their VDJ recombination history, introducing the PG9 VDJ gene between conserved sites (V7-81 or V3-74 promoter and J6 splice site) that are retained in all B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C31, C33-C34, C37-C38, and C89 collectively describe the development and design of the editing strategy with clear experimental evidence. The approach is validated in both Ramos cell lines (C37-C39) and primary B cells from three donors (C8, C80), with sequencing confirmation (C42) and functional expression (C4, C57). The universal design rationale is well-justified based on B cell biology (C29-C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "PG9 heavy chain can pair with diverse endogenous light chains to form functional chimeric antibodies. When co-transfected in HEK293 cells, PG9 HC paired with multiple lambda and kappa LCs, including the Ramos LC, producing properly assembled antibodies that neutralized HIV, though with reduced breadth compared to the original PG9 HC/LC pair. About 60% of chimeras showed autoreactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 are well-supported by multiple complementary assays: SEC and SDS-PAGE confirmed proper assembly (C19), neutralization assays demonstrated HIV-specific activity (C20-C22), BLI showed binding to HIV envelope trimers (C24), and HEp-2 assays detected autoreactivity (C25). The observation of LC-dependent restriction (C23) is a logical inference from the neutralization data. This establishes the feasibility of the HC replacement approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47"
+    ],
+    "result": "The universal V781 editing strategy successfully replaced ~0.5 Mb of the IGHV locus with engineering efficiency of 0.21% (\u00b10.03%), only ~8-fold lower than the Ramos-specific V434 strategy (1.75% \u00b10.20%) that replaced just 400 bp. Sanger sequencing and whole genome sequencing confirmed correct integration of the PG9 VDJ gene at the expected locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C42-C44, C46-C47 provide strong evidence for successful long-range genome editing. The efficiency measurements are reproducible (12 replicates, C39), sequencing confirms on-target integration (C42), and whole genome sequencing validates the large deletion in the expressed allele (C43-C44). The comparison to prior work in mouse ESCs (C41) provides additional context. The relatively modest reduction in efficiency for such a large deletion is encouraging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Off-target integration events occurred via NHEJ mechanisms at Cas9 cut sites, as evidenced by high coverage depth at homology regions and detection of donor DNA backbone sequences. However, the design minimizes functional expression from most off-target events because proper transcription requires proximity to the downstream enhancer and correct splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 document off-target events with whole genome sequencing (C48-C49) and PCR analysis (C52-C55). The observation of NHEJ-mediated integration is expected (C50) and well-characterized. Importantly, the design rationale (C51) explains why most off-target events should not produce functional protein. The detection of one selectable off-target event (C54) confirms this is possible but rare. The analysis is thorough and honest about limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C10",
+      "C84"
+    ],
+    "result": "Engineered B cells retained the ability to undergo class switching. In Ramos 2G6 cells, PG9 HC was transcribed and correctly spliced to both IgM and IgG constant regions after stimulation with CD40L, IL-2, and IL-4. Primary engineered B cells expressed PG9 as multiple isotypes including IgM, IgD, IgG1, and IgG4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C56-C58, C10, and C84 demonstrate class switching capability through RT-PCR and sequencing (C57) in Ramos 2G6 cells and NGS analysis (C84) in primary cells. The use of the appropriate Ramos subclone known to support class switching (C56) is methodologically sound. The detection of multiple isotypes in primary cells (C10, C84) confirms this is not an artifact of the cell line. This is critical for demonstrating that engineered cells retain normal B cell function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Engineered Ramos cells underwent somatic hypermutation via endogenous AID activity, generating variants with improved HIV neutralization. Selection with SOSIP probes enriched for an S97N mutation in the Ramos light chain CDRL3 that shifted a glycosylation site and improved binding affinity and neutralization potency, including against a virus not neutralized by the original chimera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C59-C69 demonstrate affinity maturation through iterative selection (C60), NGS analysis identifying enriched mutations (C61), functional validation showing improved binding (C64) and neutralization (C65), and structural modeling explaining the mechanism (C68). The mutations occurred at AID hotspots (C61) in cells with constitutive AID activity (C59). The improved variants maintained favorable properties (C66-C67). This is strong evidence that engineered BCRs can undergo affinity maturation, though the speculation about ease of recovery (C69) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The introduced PG9 VDJ gene accumulated mutations over time in culture, with many mutations occurring at canonical AID hotspots (WRCY motifs), suggesting normal somatic hypermutation of the engineered locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by NGS analysis using UMI-based error correction to distinguish true mutations from PCR artifacts. The observation that mutations cluster at AID hotspots (C71) strongly suggests genuine somatic hypermutation rather than random errors. However, the speculation about codon optimization (C72) is appropriately presented as a possibility rather than a demonstrated result. The caveat about potential PCR artifacts (C87) is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Primary B cells from three donors were successfully engineered using the V374 universal strategy with efficiencies approaching 0.1%. Engineered cells bound the PG9 epitope, expressed PG9 HC as multiple isotypes (IgM, IgD, IgG1, IgG4), and showed evidence of somatic hypermutation with mutations at AID hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C76-C78, C80-C86 demonstrate successful engineering of primary human B cells with multiple lines of evidence: FACS detection of PG9-specific BCRs (C9, C80), RT-PCR confirmation (C83), NGS showing multiple isotypes (C84), and detection of mutations at AID hotspots (C85-C86). The timing of nucleofection was optimized based on cell cycle analysis (C76-C77). The consistency between FACS and NGS frequencies (C81-C82) suggests engineered cells survive and proliferate normally. This extends the proof-of-concept from cell lines to primary cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The rationale for the study is based on established knowledge that some protective antibodies require features difficult to elicit through natural affinity maturation, that some antibodies have protective paratopes encoded primarily in the heavy chain, and that HIV broadly neutralizing antibodies are protective but difficult to elicit by vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 establish the scientific rationale through appropriate citations to prior work. These are background claims that contextualize the study rather than novel findings. The citations appear appropriate and the logic for choosing HIV bnAbs as a model system is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C35",
+      "C36",
+      "C45",
+      "C50",
+      "C75"
+    ],
+    "result": "The manuscript correctly describes established principles of genome editing, B cell biology, and the structure of the immunoglobulin heavy chain locus that underpin the experimental design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C35-C36, C45, C50, and C75 accurately describe established knowledge about HDR mechanisms, VDJ recombination, the IGHV locus structure, and cell cycle effects on HDR. These are appropriately cited and provide necessary context for understanding the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The authors acknowledge limitations in distinguishing true somatic hypermutation from potential PCR artifacts and propose an experiment using AID knockout to confirm AID-dependence of observed mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 appropriately acknowledge a limitation (potential PCR artifacts despite error correction) and propose a control experiment (AID knockout) that was not performed. This represents good scientific practice in acknowledging uncertainty, but the proposed experiment remains speculative (C88) and was not conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C72",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors speculate about potential applications and future directions, including that affinity maturation may be relatively easy to achieve, that codon optimization could direct mutations, that engineered cells might function well in vivo, and that the technology could be developed for therapeutic use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69, C72, C90-C93 are explicitly speculative about future possibilities and applications. While C92 cites other work suggesting feasibility, these remain hypotheses rather than demonstrated results. The speculation is reasonable based on the presented data but requires substantial additional work to validate, particularly in vivo studies (C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The V3-74 promoter strategy showed higher engineering efficiency (0.35%) and brighter staining compared to V7-81, presumably due to stronger promoter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 report an empirical observation (higher efficiency and expression with V3-74) with a reasonable mechanistic hypothesis (promoter strength). The data support the observation, though the mechanistic explanation remains inferential. This optimization was important for the primary cell experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "High concentrations of transfected DNA (9 \u03bcg total) were toxic to primary B cells, leading to the use of 6 \u03bcg total DNA (2 \u03bcg of each plasmid) for engineering experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 reports an optimization finding that informed the experimental design. This is a straightforward observation about transfection toxicity that guided the choice of DNA concentration for the primary cell experiments.",
+    "result_type": "MINOR"
+  }
+]

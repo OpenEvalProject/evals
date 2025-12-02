@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C98",
+      "C99"
+    ],
+    "result": "The Atg16 complex interacts with the Atg1 complex via Atg12, and this interaction requires intact Atg16 and Atg1 complexes, higher-order assembly of Atg1 complexes, and is mediated by direct Atg12-Atg17 binding. The interaction is rapamycin-dependent and independent of Atg1 kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C64 and C98-C99 provide converging evidence from multiple experimental approaches (mass spectrometry, co-immunoprecipitation, yeast two-hybrid, mutant analysis) demonstrating the Atg16-Atg1 complex interaction. The data consistently show that both complexes must be intact, that higher-order Atg1 assembly is required, and that Atg12 directly binds Atg17 to mediate this interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C103"
+    ],
+    "result": "The N-terminal region of Atg12 (specifically residues 1-56) is required for the interaction between the Atg16 complex and the Atg1 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C103 are supported by co-immunoprecipitation data (Figure 3A) showing that deletion of the N-terminal 56 residues of Atg12 abolishes interaction with the Atg1 complex. This is consistent with the yeast two-hybrid and overexpression data showing direct Atg12-Atg17 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C69",
+      "C70"
+    ],
+    "result": "PAS localization of the Atg16 complex (visualized via Atg5) is abolished when both the PI3P-dependent pathway (via ATG14 or ATG21 deletion) and the Atg12-dependent pathway (via ATG12 deletion or Atg12\u0394N56 mutation) are disrupted, while single pathway disruptions cause partial defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 and C69-C70 are supported by fluorescence microscopy data (Figures 1 and 3B) showing that Atg5-GFP localization to the PAS is completely lost only in double mutants (atg14\u0394 atg12\u0394 or atg21\u0394 atg12\u0394 or atg21\u0394 atg12\u0394N56), while single mutants retain partial localization. The quantitative data and statistical analysis support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C71",
+      "C72",
+      "C75",
+      "C91"
+    ],
+    "result": "Cells lacking both the PI3P-dependent and Atg12-dependent mechanisms for Atg16 complex recruitment completely lose PAS localization of the Atg16 complex and show no autophagic activity, while single pathway disruptions cause only partial defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C71-C72, C75, and C91 are supported by ALP assay data (Figure 3C) showing that atg21\u0394 atg12\u0394N56 double mutants have almost no autophagic activity, while single mutants (atg21\u0394 or atg12\u0394N56) retain partial activity. This is consistent with the localization data and demonstrates functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C93"
+    ],
+    "result": "Both the PI3P-dependent and Atg12-dependent pathways cooperatively promote Atg8-PE formation during starvation. Disruption of both pathways completely abolishes starvation-induced Atg8-PE formation, while single pathway disruptions cause partial defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80, C82, and C93 are supported by urea-SDS-PAGE analysis (Figure 4A) showing that Atg8-PE levels are significantly reduced in atg21\u0394 or atg12\u0394N56 single mutants and completely abolished in atg21\u0394 atg12\u0394N56 double mutants during nitrogen starvation. The quantitative data with statistical analysis support the cooperative function of both pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C95"
+    ],
+    "result": "The Atg12-dependent pathway, but not the PI3P-dependent pathway, is specifically involved in PAS scaffold assembly. Atg17-GFP puncta formation (representing PAS scaffold assembly) is decreased by disruption of the Atg12-dependent mechanism but increased by disruption of the PI3P-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C86-C88, and C95 are supported by fluorescence microscopy data (Figures 1, 4B, 4C) showing that Atg17-GFP puncta are decreased in atg12\u0394, atg5\u0394, atg16\u0394, and atg12\u0394N56 mutants but increased in atg14\u0394 and atg21\u0394 mutants. This demonstrates a specific, non-E3 function for the Atg12-dependent pathway in PAS scaffold assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C90",
+      "C92",
+      "C96"
+    ],
+    "result": "The Atg16 complex is recruited to the PAS through two partially redundant pathways: the PI3P-dependent pathway and the Atg12-dependent pathway. The Atg12-dependent pathway has dual functions: stimulating Atg8 lipidation (E3 activity) and facilitating PAS scaffold assembly (non-E3 activity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C90, C92, and C96 represent the main conclusions of the study and are supported by the collective evidence from localization, functional, and biochemical assays. The data demonstrate that both pathways contribute to Atg8 lipidation, but only the Atg12-dependent pathway facilitates PAS scaffold assembly, establishing functional differences between the pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The interaction of the Atg16 complex with the Atg1 complex targets the Atg16 complex to the PAS, and defects caused by absence of this interaction can be partly compensated by the PI3P-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are inferences supported by the rescue experiments (Figures 3B, 3C) showing that wild-type Atg12 but not Atg12\u0394N56 rescues PAS localization and autophagic activity in atg21\u0394 atg12\u0394 cells. This demonstrates that the Atg12-dependent interaction targets the Atg16 complex to the PAS and that the two pathways can partially compensate for each other.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C102"
+    ],
+    "result": "The Atg16 complex, which is dimerized via Atg16 homodimerization, simultaneously binds two copies of Atg1 complexes via the N-terminal regions of Atg12, thereby crosslinking Atg1 complexes and facilitating their supramolecular assembly to form the PAS scaffold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100 and C102 are speculative models proposed by the authors based on the structural properties of the complexes and the experimental data. While the model is consistent with the data showing that the Atg16 complex facilitates PAS scaffold assembly, direct evidence for simultaneous binding to two Atg1 complexes or crosslinking is not provided. This remains a plausible but unproven hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The Atg16 complex recruited through association with the Atg1 complex likely contributes to Atg8 lipidation at later stages of autophagosome formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is speculation based on the complementary relationship between the two pathways. While the data show that the Atg12-dependent pathway contributes to Atg8 lipidation (C82, C93), the temporal dynamics and whether this occurs at later stages is not directly demonstrated. This is a reasonable inference but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C108",
+      "C109"
+    ],
+    "result": "In mammalian cells, the Atg16L complex associates with the ULK1 complex via Atg16L-FIP200 interaction, which is important for Atg16L complex localization. This represents a conserved process between yeast and mammals, although the molecular mechanisms differ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C108-C109 are supported by citations to previous work (Nishimura et al., 2013) and represent established knowledge in the field. The authors correctly note that while the underlying mechanisms differ (Atg12-Atg17 in yeast vs. Atg16L-FIP200 in mammals), the functional principle of Atg16/Atg16L complex recruitment via association with the Atg1/ULK1 complex is conserved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "It is unclear how the Atg16L-ULK1 association cooperates with the PI3P (WIPI2)-dependent mechanism in mammalian cells, but the Atg16L complex may facilitate supramolecular assembly of ULK complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111 acknowledge gaps in current knowledge and propose speculation about mammalian autophagy based on the yeast findings. C110 correctly identifies an open question in the field, while C111 is speculation without direct experimental support. These represent reasonable hypotheses for future investigation but are not demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C76",
+      "C89"
+    ],
+    "result": "The Atg16 complex is recruited to the PAS via the PI3P-dependent pathway involving Atg21 (or WIPI2b in mammals), but knockout of ATG21 does not completely abolish PAS localization, suggesting an additional unknown mechanism exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C24-C28, C76, and C89 represent established knowledge from prior work and are supported by appropriate citations. The observation that ATG21 knockout does not completely abolish Atg16 complex localization (C27-C28, C89) is confirmed by the data in this study (Figure 1) and motivated the discovery of the Atg12-dependent pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Previous work showed that while the ubiquitin-like domain of Atg12 is essential for autophagy, deletion of the N-terminal region causes only a partial defect. The N-terminal region is not required for Atg12-Atg5 conjugation, E3 activity, or Atg16 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by citations to previous work (Hanada and Ohsumi, 2005) and confirmed by data in Figure 3\u2014figure supplement 1. This established the functional mystery of the Atg12 N-terminal region that this study resolves by showing it mediates interaction with the Atg1 complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Autophagy is a conserved cellular process involving formation of autophagosomes that sequester cytoplasmic material for degradation. Core Atg proteins organize the PAS where autophagosome formation initiates, and the Atg12-Atg5-Atg16 complex acts as an E3 enzyme for Atg8-PE conjugation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C23 represent established background knowledge about autophagy and are supported by appropriate citations to review articles and primary literature. These claims provide necessary context for understanding the significance of the novel findings but are not new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C57",
+      "C85",
+      "C101",
+      "C104",
+      "C107",
+      "C112"
+    ],
+    "result": "Various established facts about Atg protein functions and properties, including: the Atg1 complex serves as a PAS scaffold; Atg10 is required for Atg12-Atg5 conjugation; specific Atg13 and Atg1 mutations affect complex formation and kinase activity; Atg17-GFP puncta represent PAS scaffold assembly; Atg16 homodimerizes; FIP200 is the mammalian Atg17 counterpart; and rapamycin induces autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41, C46, C51-C53, C55, C57, C85, C101, C104, C107, and C112 represent established knowledge from prior work and are supported by appropriate citations. These facts are correctly stated and provide necessary context for interpreting the experimental results, but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The residual Atg8-PE in cells lacking both Atg21 and the N-terminal region of Atg12 represents conjugates produced at the vacuolar membrane by dispersed Atg16 complex, independent of autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is an inference based on previous knowledge (Nakatogawa et al., 2012a) about autophagy-independent Atg8 lipidation at the vacuolar membrane. This interpretation is reasonable and consistent with prior work, explaining the baseline Atg8-PE levels observed in the double mutant (Figure 4A).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The Atg1 complex serves as a scaffold to initiate PAS organization at an early step, whereas Atg21 is recruited later following PI3P production by PI3K complex I, suggesting functional differences between the two pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by established knowledge about the temporal order of Atg protein recruitment to the PAS and is consistent with the functional data showing that only the Atg12-dependent pathway facilitates PAS scaffold assembly. This temporal distinction helps explain why the two pathways have overlapping but distinct functions.",
+    "result_type": "MINOR"
+  }
+]

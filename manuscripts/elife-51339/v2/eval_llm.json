@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C26",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Five distinct NK cell developmental clusters were identified in murine bone marrow using scRNA-seq: an immature NK (iNK) cluster, three transitional NK (transNK1, transNK2, transNK3) clusters, and a terminally mature NK (termNK) cluster. These clusters were characterized by differential expression of maturation markers (CD27, CD11b, KLRG1), functional molecules (Gzma, Gzmb), and cluster-specific gene signatures. Pseudotime analysis and module score progression support the developmental ordering: iNK\u2192transNK1\u2192transNK2\u2192transNK3\u2192termNK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of five NK clusters is well-supported by multiple complementary analyses including unbiased clustering (C1, C26), differential gene expression (C31-C48), hierarchical clustering showing transcriptional similarity (C49-C50), module score progression (C51-C52), and pseudotime trajectory analysis (C53). The characterization includes appropriate markers and is validated through multiple analytical approaches. The data in Figures 1 and 2 provide strong visual and quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C54",
+      "C57",
+      "C58",
+      "C62",
+      "C63"
+    ],
+    "result": "Machine-learning classification reveals that approximately 50% of Rictor-deficient (mTORC2-deficient) NK cells belong to the least mature iNK cluster, contradicting cell surface marker-based classification which showed only terminal maturation defects. Rictor-deficient NK cells exhibit elevated expression of immature NK signature genes and cluster transcriptionally with the most immature WT NK populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is well-supported by machine-learning classification results (C2, C62), module score analysis showing elevated iNK signature gene expression (C3, C57), and hierarchical clustering demonstrating transcriptional similarity to immature WT clusters (C58). The contradiction with surface marker-based classification (C63) is appropriately documented. Multiple classifiers converge on similar results (Figure 4), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "T-bet-deficient NK cells exhibit a pronounced immature transcriptomic signature, with more than 60% classified as iNK cluster by machine-learning. T-bet deficiency results in up-regulation of immature NK signature genes (10 of 14 iNK genes) and down-regulation of terminally mature NK genes (18 of 56 termNK genes). GSEA analysis of 796 CD27 SP signature genes shows significant enrichment in T-bet-deficient NK cells, indicating T-bet is required to suppress immature NK gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by convergent evidence from machine-learning classification (C27, C69), direct gene expression comparison in scRNA-seq (C70-C72), bulk RNA-seq validation (C73-C74), and GSEA analysis (C74-C75). The module score analysis (C67) and hierarchical clustering (C68) provide additional support. The data span multiple experimental approaches and are validated in both scRNA-seq and bulk RNA-seq datasets (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C7",
+      "C29",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Deletion of Foxo1 rescues the developmental impairment of Rictor-deficient NK cells at both the cell surface marker level (CD11b SP and KLRG1+ populations) and transcriptome level (reduced iNK signature, increased termNK signature). Foxo1 deletion restores T-bet expression in CD27 SP and DP subsets, though rescue is incomplete in CD11b SP compartment, suggesting additional mTORC2-dependent factors regulate T-bet expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue is well-documented through multiple measurements: cell numbers (C90), maturation markers (C91), T-bet protein levels (C6, C93), machine-learning classification (C97), and gene expression signatures (C7, C98-C99). The incomplete rescue in some contexts (C94) and evidence for additional regulatory factors (C96) appropriately acknowledge limitations. The data in Figure 7 provide comprehensive support across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C22",
+      "C75",
+      "C82",
+      "C88",
+      "C92",
+      "C101"
+    ],
+    "result": "The mTORC2-AktS473-FoxO1-T-bet axis suppresses the transcriptional signature of immature NK cells during development. The authors propose a negative feedback loop between FoxO1 and T-bet, where T-bet suppresses FoxO1 expression and FoxO1 suppresses T-bet expression, with this reciprocal regulation defining mature NK cell transcriptional identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the rescue experiments (C6-C7, C29) and gene expression data (C3, C5, C28) support a role for this axis in suppressing immature gene expression, several aspects remain speculative. The claim that T-bet suppresses FoxO1 (C85, C101) is based on correlative evidence rather than direct mechanistic proof. The proposed negative feedback loop (C101) is a hypothesis requiring additional validation. The mechanism by which FoxO1 drives immature gene expression (C88) is inferred but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "T-bet does not directly bind and suppress the majority of immature NK signature genes. ChIP-seq analysis shows T-bet-binding genes are significantly depleted in the iNK cluster and enriched in the termNK cluster. While several immature NK genes show direct T-bet binding at regulatory regions, the bulk of immature gene suppression appears to be indirect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reanalysis of published ChIP-seq data (C76) is appropriate, and the GSEA showing depletion of T-bet-binding genes in iNK signature (C77) and enrichment in termNK signature (C79-C80) provides strong evidence. The identification of some direct targets (C81) appropriately acknowledges exceptions. The conclusion that T-bet acts primarily indirectly (C78, C82) is a reasonable inference from the data presented in Figure 6A-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "FoxO1 is enriched in T-bet-deficient NK cells, with significantly higher Foxo1 transcript levels. T-bet directly binds to regulatory regions of the Foxo1 locus (intron and upstream of TSS), suggesting T-bet may suppress Foxo1 expression. FoxO1 has highest expression in the CD27 SP subset and may be essential for driving immature NK signature gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The enrichment of FoxO1 in T-bet-deficient cells (C83) and elevated Foxo1 transcripts (C84) are well-supported by data. The ChIP-seq evidence for direct T-bet binding at Foxo1 locus (C86) is strong. However, the claim that T-bet suppresses Foxo1 expression (C85) is speculative, based on correlation rather than direct mechanistic evidence. The hypothesis that FoxO1 drives immature gene expression (C88) is reasonable but requires additional validation beyond the correlative and rescue data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Different housing conditions result in alterations in transcriptome profiles that lead to individual-specific phenotypes in scRNA-seq analysis of NK cells, as evidenced by separate clustering of mice from different facilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation is clearly documented in Figure 1\u2014figure supplement 1D and E, showing that mice from Jackson Laboratory clustered separately from mice housed at MCW. This is an important technical observation for scRNA-seq studies. The authors appropriately addressed this by scaling sample variance in subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "CD3\u03b5\u2212CD122+ cells from bone marrow contain three major cell types: conventional NK cells, ILC1, and Cd3high cells (potentially related to NK-T lineage).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of these three populations is well-supported by differential marker expression shown in Figure 1A-B. The NK cells express Ncr1 and Klrb1a/b/c, ILC1 express Tmem176a/b and Cxcr6 (C33), and Cd3high cells express Cd3d/e/g (C35). The characterization is consistent with established markers for these populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C61"
+    ],
+    "result": "Nearly all Raptor-deficient NK cells cluster distinctly from WT cells, with the most dominant cluster being transNK2 (>50% of Raptor-deficient NK cells). ILC1 cluster contains both WT and Raptor-deficient cells, suggesting mTORC1 may be dispensable for ILC1 development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distinct clustering of Raptor-deficient cells is clearly shown in Figure 3A (C54). The identification of ILC1 by marker expression (C55) and the presence of both genotypes in this cluster (C56) support the inference about mTORC1 dispensability for ILC1, though this is appropriately stated as speculative. The classification showing transNK2 dominance (C61) is supported by machine-learning results in Figure 4C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Among five machine-learning classifiers tested (GL, GB, XGB, RF, DL), the deep learning classifier achieved the highest accuracy (70%) with the lowest error rate for NK cell classification. All classifiers identified the five NK clusters except RF, which failed to detect transNK3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison of classifier performance is clearly documented in Figure 4\u2014figure supplement 1A (C59), showing test accuracies ranging from 60-70%. The identification of clusters by different classifiers (C60) is shown in Figure 4A. This represents appropriate validation of the machine-learning approach through multiple algorithms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ILC1 and Cd3high cluster cells are nearly absent in Tbx21\u2212/\u2212 samples, consistent with T-bet being the master transcription factor of ILC1 lineage and NK-T cells being nearly absent in Tbx21\u2212/\u2212 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation is documented in Figure 5\u2014figure supplement 1B (C64) and is consistent with established knowledge about T-bet's role in ILC1 (C65, supported by Klose et al., 2014) and NK-T cells (C66, supported by Townsend et al., 2004). This serves as an internal validation of the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Both Rictor and FoxO1 are haplo-sufficient for NK cell development, as Rictorfl/+Foxo1fl/+Ncr1Cre/WT mice were used as WT controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors state this is based on unpublished data (\"data not shown\"). While this is likely true and is a reasonable experimental design choice, the lack of presented data means this claim cannot be independently evaluated from the manuscript. This is a minor methodological detail but should have supporting data included.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background knowledge claims about NK cell development, including markers of lineage commitment (CD122), developmental stages (CD27/CD11b/KLRG1), transcription factors (Ets-1, PU.1, E4BP4, Id2, Eomes, T-bet, Zeb2), and signaling pathways (PDK1, mTORC1, mTORC2) that regulate NK cell maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field, appropriately cited to primary literature (C9-C24). They provide necessary context for the current study and are not novel findings of this manuscript. The citations appear appropriate and the claims are consistent with the field's understanding of NK cell biology.",
+    "result_type": "MINOR"
+  }
+]

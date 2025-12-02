@@ -1,0 +1,2016 @@
+{
+  "submission": {
+    "id": "13110c12-2c74-4e49-b51d-0af56bb970c1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:03:17.527650Z",
+    "updated_at": "2025-12-02T11:03:17.527650Z"
+  },
+  "content": [
+    {
+      "id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "submission_id": "13110c12-2c74-4e49-b51d-0af56bb970c1",
+      "content_type": "manuscript",
+      "content_text": "# The molecular architecture of engulfment during Bacillus subtilis sporulation\n\n## Authors\n\n- Kanika Khanna<sup>1</sup> ([ORCID: 0000-0001-7150-0350](https://orcid.org/0000-0001-7150-0350))\n- Javier Lopez-Garrido<sup>1</sup> ([ORCID: 0000-0002-8907-502X](https://orcid.org/0000-0002-8907-502X))\n- Ziyi Zhao<sup>1</sup> ([ORCID: 0000-0003-4455-3224](https://orcid.org/0000-0003-4455-3224))\n- Reika Watanabe<sup>1</sup> ([ORCID: 0000-0002-7427-7702](https://orcid.org/0000-0002-7427-7702))\n- Yuan Yuan<sup>1</sup> ([ORCID: 0000-0002-9509-9167](https://orcid.org/0000-0002-9509-9167))\n- Joseph Sugie<sup>1</sup> ([ORCID: 0000-0003-2911-1807](https://orcid.org/0000-0003-2911-1807))\n- Kit Pogliano<sup>1</sup> ([ORCID: 0000-0002-7868-3345](https://orcid.org/0000-0002-7868-3345)) \u2020\n- Elizabeth Villa<sup>1</sup> ([ORCID: 0000-0003-4677-9809](https://orcid.org/0000-0003-4677-9809)) \u2020\n\n### Affiliations\n\n1. Division of Biological Sciences University of California, San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe study of bacterial cell biology is limited by difficulties in visualizing cellular structures at high spatial resolution within their native milieu. Here, we visualize Bacillus subtilis sporulation using cryo-electron tomography coupled with cryo-focused ion beam milling, allowing the reconstruction of native-state cellular sections at molecular resolution. During sporulation, an asymmetrically-positioned septum generates a larger mother cell and a smaller forespore. Subsequently, the mother cell engulfs the forespore. We show that the septal peptidoglycan is not completely degraded at the onset of engulfment. Instead, the septum is uniformly and only slightly thinned as it curves towards the mother cell. Then, the mother cell membrane migrates around the forespore in tiny finger-like projections, whose formation requires the mother cell SpoIIDMP protein complex. We propose that a limited number of SpoIIDMP complexes tether to and degrade the peptidoglycan ahead of the engulfing membrane, generating an irregular membrane front.\n\n## Introduction\n\nFrom an architectural point of view, bacterial cells are among the simplest forms of life on the planet. Their cytoplasm is typically devoid of membrane bound organelles, and their cellular morphology relies upon a semi-rigid peptidoglycan (PG) cell wall that imposes its shape on the malleable cell membrane(s). Bacterial cells are inflated by their high internal turgor pressure, which pushes the membranes against the cell wall, causing the PG to stretch and the cell to adopt its appropriate shape. Despite the apparent simplicity, studies in the past few decades have demonstrated that bacterial cellular architecture is far more complex than previously thought, in terms of both its ultrastructure and dynamic capabilities (Hawver et al., 2016; Wagstaff and L\u00f6we, 2018; Wang et al., 2013).\n\nEndospore formation in Bacillus subtilis represents a striking example of the dynamic capabilities of bacterial cells, as it entails dramatic changes in cellular architecture. First, the division site shifts to polar position, generating a sporangium comprised of two cells: a larger mother cell and a smaller forespore (Figure 1A; Errington, 2003; Higgins and Dworkin, 2012; Tan and Ramamurthi, 2014). The polar septum traps the forespore chromosome, which is subsequently transported to the forespore by SpoIIIE, a membrane-anchored ATPase that assembles a translocation complex at septal midpoint (Bath et al., 2000; Yen Shin et al., 2015; Wu and Errington, 1994; Wu and Errington, 1997). Chromosome translocation increases the turgor pressure in the forespore, causing it to inflate and expand into the mother cell (Lopez-Garrido et al., 2018). Simultaneously, the mother cell engulfs the forespore in a process that resembles eukaryotic phagocytosis (Figure 1A). After engulfment, the forespore is fully enclosed within the cytoplasm of the mother cell, where it matures in a process that involves the synthesis of protective layers of cortex and coat, and the partial dehydration of the forespore cytoplasm. Finally, the mother cell lyses and the mature spore is released to the environment, where it remains dormant until the conditions are appropriate for germination.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic illustrating the process of polar septation, chromosome translocation, engulfment and spore maturation. Membranes (red), PG (gray), chromosomes (blue), SpoIIIE (orange) and coat proteins (shades of brown) are highlighted. Outward arrows in the stage IIii forespore indicate increased turgor pressure due to chromosome translocation. (B) Revised engulfment model (Ojkic et al., 2016): new PG (purple) is synthesized ahead of the leading edge of the engulfing membrane by forespore-associated PG biosynthetic enzymes (blue) and is subsequently degraded by DMP (yellow pacman), making room for the engulfing membrane to advance. The coordinated synthesis and degradation of PG at the leading edge of the engulfing membrane can move the junction between the septum (pink) and the lateral cell wall (gray) around the forespore. (C) Schematic illustrating cryo-FIB-ET methodology for bacterial samples (see Materials and methods). (D\u2013I) Slices through cryo-electron tomograms representing different stages of engulfment: (D) flat\u00a0polar septum (Stage IIi), (F) curved septum (Stage IIii) and (H) engulfing septum (Stage IIiii). Scale bar\u00a0for\u00a0(D,F,I): 200 nm. The corresponding forespore membrane (green) and the mother cell membrane (yellow) are annotated in (E,G,I) respectively. n indicates the number of tomograms acquired for each cell type. Scale bars have been omitted for (E,G,I) as cells are shown in perspective views . (J\u2013N) Zoomed-in slices through cryo-electron tomograms showing (J) a large ellipsoidal complex adjacent to the forespore membrane (black arrow), (K) a putative SpoIIIE channel (brown arrow)\u00a0and (L) another putative\u00a0channel (brown arrow), (L,M) coat filaments (green arrows), (M) basement coat layer (maroon arrow) and (N) amorphous coat proteins (purple arrow). Scale bar\u00a0for\u00a0(J-N): 50 nm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The forespore (green) and the mother cell (yellow) membranes are annotated and shown adjacent to each tomogram. (A\u2013D) represent flat septum (Stage IIi) sporangia, (E\u2013H) represent curved septum (Stage IIii) sporangia and (I\u2013L) represent engulfing septum (Stage IIiii) sporangia. Scale bar for the tomogram slices (A,C,E,G,I,K): 200 nm. Scale bars have been omitted for all segmented images as cells are displayed in perspective mode.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) represents an earlier stage than (B). A dense spore with coat and cortex layers is observed in (B). Scale bar: 200 nm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Ellipsoidal structure (black arrow) seen in the forespore shortly after septum formation as shown in Figure 1J.\u00a0Scale bar: 50 nm. (B,C) 2 different slices through the same cryo-electron tomogram shown in (A) depicting the 3D annotation of the ellipsoidal structures (maroon). The structure highlighted in (A) in black arrow is pointed out at in (C). (D) Slice through a cryo-electron tomogram with putative SpoIIIE channel (black arrow) highlighted as in Figure 1K and (E) shows the corresponding color-coded distance of the forespore membrane from the mother cell membrane. The putative channel corresponds to a septal thickness of ~14 nm. (F) Slice through a cryo-electron tomogram with coat filaments (green arrow) and amorphous dense coat layer (orange arrow) highlighted. (G) shows the corresponding 3D annotations of the filaments (green) and the coat layer (orange), along with the forespore membrane (green) and the mother cell membrane (yellow). Scale bar for (D,F): 50 nm. Scale bars have been omitted for all segmented images as cells are displayed in perspective mode.\n\nEngulfment represents a major rearrangement of the sporangium, from two cells that lie side by side to a cell within a cell. Such rearrangement likely involves a profound remodeling of the PG cell wall around the forespore, which would otherwise constrain the movement of the engulfing membrane. At the onset of engulfment, the engulfing mother cell membrane must circumvent the physical barrier posed by the septal PG in order to migrate around the forespore. This has led to the logical proposal that engulfment must entail the complete dissolution of the septal PG, a process often referred to as \u2018septal thinning\u2019 (Chastanet and Losick, 2007; Illing and Errington, 1991; Perez et al., 2000). This proposal was supported by early electron microscopy studies of fixed and stained sporangia showing that engulfment-defective mutants had thicker septa than wild type sporangia (Holt et al., 1975; Illing and Errington, 1991; Rousseau and Hermier, 1975). Further studies showed that engulfment requires three mother cell proteins: SpoIID, SpoIIM and SpoIIP, which form a complex (DMP) with PG degradation activity (Abanes-De Mello et al., 2002; Aung et al., 2007; Chastanet and Losick, 2007; Morlot et al., 2010). In principle, DMP could mediate the complete dissolution of the septal PG to remove the steric block to the movement of the mother cell membrane around the forespore.\n\nThe idea that septal PG is completely degraded has been more recently challenged by cryo-electron tomography (cryo-ET) images showing that a thin PG layer is present between the forespore and the mother cell membranes throughout engulfment (Tocheva et al., 2013). It has also been shown that DMP-mediated PG degradation is required and rate-limiting for membrane migration even after the septal barrier has been bypassed, suggesting that DMP plays a role separate from the dissolution of septal PG (Abanes-De Mello et al., 2002; Gutierrez et al., 2010). In addition, the movement of the mother cell membrane also requires PG synthesis at the leading edge of the engulfing membrane (Meyer et al., 2010; Ojkic et al., 2016). Based on these observations, we proposed a revised model for engulfment membrane migration in which coordinated PG synthesis and degradation at the leading edge of the engulfing mother cell membrane moves the junction between the septum and the lateral cell wall around the forespore, making room for the engulfing membrane to advance (Figure 1B; Ojkic et al., 2016). This model eliminates the need for complete dissolution of the septal PG and predicts that PG synthesis happens ahead of the leading edge of the engulfing membrane. Then, the mother cell DMP degrades this new PG to mediate membrane migration. However, due to the limited resolution of optical microscopy, conclusive evidence that PG synthesis occurs ahead of PG degradation is lacking.\n\nCryo-ET allows the visualization of three-dimensional (3D) architecture of bacterial membranes and cell wall in a hydrated near-native state that cannot be achieved by methods reliant on chemical fixation and staining (Ben-Harush et al., 2010; Matias and Beveridge, 2005; Oikonomou et al., 2016). However, a limitation of cryo-ET is that the samples must be less than\u00a0~500 nm thick to obtain high-resolution tomograms, constraining its application to only a handful of bacteria that are either naturally slender, or, as in the case of B. subtilis, for which slender mutant strains are available (Tocheva et al., 2013). But the latter typically contain mutations in genes involved in PG metabolism and may not be ideal to study cell wall remodeling. Recent application of cryo-focused ion beam (cryo-FIB) milling has produced artifact-free thin sample sections of\u00a0~100\u2013300 nm, which allows the acquisition of high-resolution tomograms of sections of wild type cells (Figure 1C; Marko et al., 2007; Rigort et al., 2012; Villa et al., 2013). Cryo-FIB milling coupled with cryo-ET (or cryo-FIB-ET) is therefore becoming the method of choice for studies of cellular architecture of both eukaryotic and prokaryotic cells (Chaikeeratisak et al., 2017; Engel et al., 2015; Lopez-Garrido et al., 2018; Mahamid et al., 2016).\n\nHere, we have used cryo-FIB-ET to study sporulation in B. subtilis, revealing the different stages of engulfment with a resolution that has not been achieved previously. We have analyzed wild type sporangia, engulfment mutants, and sporangia treated with PG synthesis inhibitors to obtain new mechanistic insights into the PG transformations that occur during engulfment. First, we provide evidence that septal PG is not degraded completely at the onset of engulfment. Second, we show that during membrane migration, the newly synthesized PG deforms the forespore membrane ahead of the leading edge of the engulfing mother cell membrane, indicating that PG synthesis precedes PG degradation. Third, we observe that the mother cell membrane migrates around the forespore by forming tiny finger-like projections, the formation of which depends on DMP complexes tethering to and degrading the PG ahead of the engulfing membrane. The methodology, images and analyses presented here will provide valuable resources for future studies of spore assembly and other fundamental cell biological processes.\n\n## Results\n\n### Visualizing sporulation in wild type B. subtilis at molecular resolution\n\nRecently, we used cryo-FIB-ET to illustrate the role of DNA translocation in inflating the forespore (Lopez-Garrido et al., 2018). These data confirmed the presence of a thin layer of PG between the forespore and the mother cell membranes in the wild type strain, as previously visualized by cryo-ET of a slender ponA mutant of B. subtilis (Tocheva et al., 2013). We expanded our cryo-FIB-ET studies to investigate the architecture of B. subtilis cells during different stages of sporulation (Figure 1C; see Materials and methods). We acquired high-quality data of wild type cells during engulfment (Stage II, Figure 1D\u2013I; Figure 1\u2014figure supplement 1) and during later stages of sporulation, when cortex and coat were being assembled (Stages III-VI, Figure 1\u2014figure supplement 2). Data of very late stages of sporulation failed to provide high-resolution information inside the forespore, likely due to the dehydration of this cell, which increases sensitivity of cryo-ET samples to the electron beam (Wu et al., 2012).\n\nOur data showed that the external cell wall of sporulating cells was\u00a0~20\u201330 nm thick, consistent with other EM studies (Matias and Beveridge, 2005; Tocheva et al., 2013). The polar septum formed close (within 500 nm) to one cell pole, and was initially flat (Figure 1D,E, Figure 1\u2014figure supplement 1A\u2013D, Video 1). Eventually, the septum bent smoothly into the mother cell (Figure 1F,G, Figure 1\u2014figure supplement 1E\u2013H, Video 2) and the mother cell membrane moved forward to engulf the forespore, at which stage the forespore was roughly rounded (Figure 1H,I, Figure 1\u2014figure supplement 1I\u2013L, Video 3).\n\n![Video 1.](https://cdn.elifesciences.org/articles/45257/elife-45257-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/45257/elife-45257-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/45257/elife-45257-video3.mp4.jpg)\n\nVisual inspection of tomograms also revealed several structures that have not been characterized previously. Immediately after polar septation, we observed ellipsoidal complexes that were present only in the forespore, adjacent to the membrane and often close to the intersection between the septum and the lateral cell wall (Figure 1J, Figure 1\u2014figure supplement 3A\u2013C). These structures were observed in 2 out of 7 tomograms of wild type sporangia with flat septa, with\u00a0~4 ellipsoidal complexes observed in\u00a0~200 nm slices. The 3D reconstruction of these complexes revealed that the ellipsoidal structures had a mean radius of\u00a0~45 nm (Figure 1\u2014figure supplement 3A\u2013C, see Materials and methods). The molecular identity of these structures remains undetermined. We also identified a region approximately in the center of a flat septum where the two membranes are closer together than elsewhere on the septum (14 nm vs. 23 nm, Figure 1K, Figure 1\u2014figure supplement 3D,E). This constriction may correspond to paired hexameric SpoIIIE channels (Fleming et al., 2010; Liu et al., 2006; Yen Shin et al., 2015). We also observed structures that appear to be channels crossing the septum (Figure 1L) that may correspond to SpoIIIA-SpoIIQ complexes (Blaylock et al., 2004; Levdikov et al., 2012; Morlot and Rodrigues, 2018; Zeytuni et al., 2017). We observed this thin region in the polar septum and channel-like features (Figure 1K,L) in 2 out of 15 tomograms of wild type sporangia with flat and curved septa. The low frequency of observation could be attributed to the fact that we are imaging only\u00a0~150\u2013250 nm slices of cells that are over 1 \u03bcm wide. So, many tomograms would not include low abundance structures such as SpoIIIE, which is comprised of two adjacent channels. Next, we observed a basement coat layer adjacent to the outer forespore membrane that is likely comprised of SpoVM and/or SpoIVA (Figure 1M; Ramamurthi and Losick, 2009). This layer is visible as an array of dots spaced\u00a0~4\u20136 nm apart, similar to that observed previously in Acetonema longum sporulating cells (Tocheva et al., 2011). Moving outward, we observed a dense amorphous layer and a filamentous layer (Figure 1L\u2013N, Figure 1\u2014figure supplement 3F,G) that may contain CotE, SpoIVA and other coat proteins that are recruited to the outer forespore membrane during engulfment (McKenney et al., 2013). Further studies are required to determine the molecular identity of these structures unambiguously.\n\n### Septal PG is not completely degraded at the onset of engulfment\n\nThe cryo-FIB-ET images provided high-resolution details of the septum and the engulfing membrane. Hence, we focused on those details to obtain mechanistic insights about engulfment. The complete degradation of the septal PG during septal thinning has been traditionally considered a prerequisite for engulfment (Abanes-De Mello et al., 2002; Chastanet and Losick, 2007; Eichenberger et al., 2001; Perez et al., 2000). However, we observed a thin PG layer between the mother cell and the forespore membranes throughout engulfment in both wild type (Figure 2A; Lopez-Garrido et al., 2018) and a slender ponA mutant (Tocheva et al., 2013), suggesting that the septal PG is either not completely degraded or is quickly resynthesized after degradation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Slices through cryo-electron tomograms of wild type engulfing sporangia that are (A) untreated, (B) bacitracin-treated, (C) cephalexin-treated, (D) penicillin V-treated and (E) penicillin V- and cephalexin-treated. The thin layer of septal PG is indicated by yellow arrows in the zoom-in panels for each of the tomographic slices. n indicates the number of tomograms acquired for each cell type. Antibiotic concentrations used for the experiments are indicated in the bottom right. Scale bar: 200 nm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013D) Time-lapse microscopy showing the growth of wild type vegetative B.\u00a0subtilis cells that are\u00a0(A) untreated, (B) cephalexin-treated, (C) penicillin V-treated and (D) treated with a combination of cephalexin and penicillin V. The cells at the top in panels (B\u2013D) had initiated septation before imaging, but the formation of the septum is interrupted upon exposure to the antibiotics, indicating that the blockage of PG synthesis happens on a time scale of a few minutes. An abortive polar septum close to the upper cell pole is observed in the cell in top panel (B), and abortive vegetative septa in the middle of the cell are observed in top panels (C) and (D). The cells at the bottom in panels (B\u2013D) have dotted lines plotted along the lower and the upper pole of the cell from where the time-lapse experiment starts (0 min time point) to provide visual cue for the change in cell length over the course of time. Scale bars for (A\u2013D): 1 \u03bcm. (E) Average length of vegetative cells (normalized) plotted as a function of time for untreated and different antibiotic-treated cases. n indicates the number of cells analyzed for each case and antibiotic concentrations used in the study are indicated alongside.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013C) Slices through cryo-electron tomograms of wild type untreated B.\u00a0subtilis sporangia, (D\u2013F) cephalexin-treated) sporangia, and (G,H) cephalexin- and penicillin V-treated sporangia.\u00a0The thin layer of PG between the forespore and the mother cell membranes is indicated by yellow arrows in the zoom-in panels for each tomographic slice. Antibiotic concentrations used are indicated in the bottom right. Scale bars for (A\u2013H): 200 nm.\n\nTo probe this, we imaged engulfing sporangia after treatment with antibiotics that block PG synthesis. When PG synthesis is inhibited, engulfment membrane migration does not continue, although the septum still stretches and curves into the mother cell (Ojkic et al., 2016). We reasoned that, if the septal PG was completely degraded, we would observe sporangia lacking PG between the mother cell and the forespore membranes after antibiotic treatment. However, if the septal PG was not completely degraded, the sporangia would show a layer of PG around the forespore, independent of antibiotic treatment.\n\nTo inhibit PG synthesis, we treated the cells with bacitracin, cephalexin, penicillin V or a combination of penicillin V and cephalexin (Figure 2). We previously assessed the extent of PG inhibition after antibiotic treatment by determining the frequency of division events, which rely on the synthesis of new PG (Ojkic et al., 2016). As expected, our results showed that untreated cells continued to grow and divide under the experimental conditions (Figure 2\u2014figure supplement 1A) but when treated with cephalexin and penicillin V, cell division was completely blocked. These results also indicated that PG synthesis was inhibited within a few minutes of antibiotic treatment, because cells that were already undergoing septation were unable to complete septum formation (Figure 2\u2014figure supplement 1B\u2013D, top panels). To complement this analysis, we tested if these drugs also inhibited elongation, which also depends on PG synthesis (Spratt, 1975). To do so, we measured the elongation of vegetative cells present in sporulating cultures over a period of one hour after antibiotic treatment (Figure 2\u2014figure supplement 1E, see Materials and methods). The length of wild type untreated vegetative cells increased by\u00a0~35% in an hour, but when treated with cephalexin or penicillin V alone, they elongated only\u00a0~10%. Furthermore, when treated with a combination of cephalexin and penicillin V, the cells elongated negligibly, indicating complete blockage of both septation and elongation (Figure 2\u2014figure supplement 1, Videos 4\u20137).\n\n![Video 4.](https://cdn.elifesciences.org/articles/45257/elife-45257-video4.mp4.jpg)\n\n**Video 4.:** Pictures were taken every 5 minutes for 2 hours (related to Figure 2\u2014figure supplement 1).\n\n![Video 5.](https://cdn.elifesciences.org/articles/45257/elife-45257-video5.mp4.jpg)\n\n**Video 5.:** Pictures were taken every 5 minutes for 2 hours (related to Figure 2\u2014figure supplement 1).\n\n![Video 6.](https://cdn.elifesciences.org/articles/45257/elife-45257-video6.mp4.jpg)\n\n**Video 6.:** Pictures were taken every 5 minutes for 2 hours (related to Figure 2\u2014figure supplement 1).\n\n![Video 7.](https://cdn.elifesciences.org/articles/45257/elife-45257-video7.mp4.jpg)\n\n**Video 7.:** Pictures were taken every 5 minutes for 2 hours (related to Figure 2\u2014figure supplement 1).\n\nFor cryo-FIB-ET, we added the antibiotics two hours after inducing sporulation, when\u00a0~\u00a040\u201350% of the cells have undergone polar septation (Ojkic et al., 2016), and plunge froze the samples either one (for bacitracin) or two hours (for cephalexin, penicillin V, and combination of cephalexin and penicillin V) later. Indeed, we observed a thin PG layer in both untreated and antibiotic-treated sporangia (Figure 2, Figure 2\u2014figure supplement 2), suggesting that septal PG is not completely degraded at the onset of engulfment.\n\n### Septal thickness decreases slightly and uniformly across the entire septum during engulfment\n\nThe above observation prompted us to re-evaluate the process of septal thinning. The current model for septal thinning proposes that DMP initially localizes to the septal midpoint, where it starts degrading the septal PG as it moves towards the edge of the septal disk (Abanes-De Mello et al., 2002; Chastanet and Losick, 2007; Illing and Errington, 1991; Meyer et al., 2010). This enzymatic septal thinning model predicts that, during the transition from flat to curved septa, the septum should be thinner in the middle than at the edges (Figure 3A). To test this, we measured the distance between the forespore and the mother cell membranes across the length of the septum (see Materials and methods) for cells with flat (Stage IIi), curved (Stage IIii) and engulfing (Stage IIiii) septa (Figure 3B\u2013D, Figure 3\u2014figure supplement 1). Sporangia with flat septa had an average septal thickness of\u00a0~23 nm\u00b13.3 nm (Figure 3B,E,F) with 3 out of 5 septa being thicker at the middle (~28 nm) than at the edges (~22 nm) (Figure 3B,E, Figure 3\u2014figure supplement 1A), contrary to what is proposed by the enzymatic septal thinning model. The septal thickness decreased by\u00a0~25% to~18 nm during later stages of engulfment (Figure 3C\u2013F, Figure 3\u2014figure supplement 1B,C) and a thin layer of PG was observed in all septa (Figure 2A, Figure 2\u2014figure supplement 2A\u2013C). Importantly, septal thickness was uniform across the entire septum during later stages (Figure 3C,D,E, Figure 3\u2014figure supplement 1B,C) and no septum was thinner in the middle than in the edges. These results show that the transition from thick to thin septum is homogenous, contrary to the prediction of the enzymatic septal thinning model, and consistent with the model that DNA translocation dependent forespore growth stretches septal PG.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustrating the model of septal thinning driven by septal PG (black meshwork) degradation by the DMP complex (yellow pacman) with membranes (red) and lateral PG (gray) highlighted. (B\u2013D) Septal disc is color-coded according to the distance between the forespore and the mother cell membranes in five wild type sporangia with (B) flat, (C) curved and (D) engulfing septa. Schematic representing the morphology of each cell type is shown on the far left. (E) Average thickness of the septum across the forespore surface for the cells shown in (B\u2013D,G). Error bars indicate standard deviation. n indicates the number of tomograms used for calculating septal distances in each case. (F) Average septal thickness for wild type flat (Stage IIi), curved (Stage IIii) and engulfing (Stage IIiii) sporangia and spoIIDMP mutant sporangia. Error bars indicate standard deviation (n.s.: p>0.05; *: p\u22640.05; **: p\u22640.01; ***: p\u22640.001, unpaired t-test). (G) Septal disc is color-coded according to the distance between the forespore and the mother cell membranes in seven spoIIDMP mutant sporangia. Scale bars have been omitted in distance plots as perspective views are shown. (H) Slice through a cryo-electron tomogram of spoIIDMP mutant sporangia. Scale\u00a0bar:\u00a0200\u00a0nm.\u00a0(I) Annotated forespore (green) and mother cell (yellow) membranes for the tomogram in (H). Excess membrane accumulation is highlighted by green arrows. (J) Schematic representing the role of DMP (yellow pacman) in septal thinning with membranes (red), lateral PG (gray) and septal PG (pink) highlighted. The rigid and thick septum in wild type can curve into the mother cell during engulfment but that of DMP becomes even thicker and does not curve into the mother cell.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Average thickness of the septum across the forespore surface for five wild type Stage IIi sporangia shown in Figure 3B.\u00a0(B) Average thickness of the septum across the forespore surface for five wild type Stage IIii sporangia shown in Figure 3C. (C) Average thickness of the septum across the forespore surface for five wild type Stage IIiii sporangia shown in Figure 3D.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013D) Slices through cryo-electron tomograms of spoIIP sporangia with annotations of the forespore membrane (green) and the mother cell membrane (yellow) adjacent to each tomogram.\u00a0Scale bars for tomogram slices in (A,C): 200 nm. Scale bars have been omitted in segmented images owing to their perspective nature. The septum of spoIIP sporangia typically contains a bulge in the middle, and a thicker, flat region at the edges that does not bulge towards the mother cell. The distance between the membranes was only determined for the part of the setum that bulges towards the mother cell, but not for the thicker part at the edges that does not bulge. (E) Color-coded distance of the forespore membrane from the mother cell membrane along the length of the septum for spoIIP mutant sporangia. (F) Average thickness of the septum across the forespore surface for five spoIIP mutant sporangia shown in (E). (G) Average septal thickness for wild type stages IIi-iii and spoIIDMP and spoIIP mutant sporangia. Error bars indicate standard deviation (n.s.: p>0.05; *: p\u22640.05; **: p\u22640.01; ***: p\u22640.001, unpaired t-test).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A\u2013D) Slices through cryo-electron tomograms of spoIIDMP mutant sporangia with annotations of the forespore membrane (green) and the mother cell membrane (yellow) adjacent to each tomogram.\u00a0Bulges are indicated by green arrows in (A,B) and in red arrows in the middle of the septum in (C,D). Scale bars for tomogram slices in (A,C): 200 nm. Scale bars are omitted for all segmented images due to their perspective nature. (E) Average thickness of the septum across the forespore surface for seven spoIIDMP sporangia shown in Figure 3G.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Wild type sporulating cells stained with a green fluorescent derivative of penicillin V (BOCILLIN-FL).\u00a0Membranes were stained with FM 4\u201364 (red). White arrows indicate cells with enhanced fluorescent signal at the leading edges of the engulfing membrane. (B) spoIIDMP mutant sporangia stained with BOCILLIN-FL (green). Membranes were stained with FM 4\u201364 (red). White arrows indicate cells with enhanced fluorescent signal in variable regions of the septum. Scale bars: 1 \u03bcm. (C) Schematic to explain accumulation of PG synthases in the septum (blue circles) in the absence of DMP as opposed to being localized near the leading edges in wild type sporangia. Membranes (red), lateral PG (gray) and septal PG (pink circles) are also highlighted.\n\n### SpoIIDMP is essential to maintain a thin, flexible septum\n\nNext, we tested whether DMP was required to mediate the slight thinning observed during the transition from flat to curved septum. To address this question, we measured septal thickness in DMP mutants. In single mutants lacking D, M or P, engulfment is blocked but the septum bulges towards the mother cell, which complicates the analysis (Figure 3\u2014figure supplement 2). However, bulge formation is largely abolished in a triple mutant lacking functional versions of D, M and P simultaneously (Eichenberger et al., 2001). Therefore, we imaged the DMP triple mutant by cryo-FIB-ET and measured its septal thickness (Figure 3G\u2013I, Figure 3\u2014figure supplement 3).\n\nMost sporulation septa of the DMP triple mutant were either flat or slightly curved into the mother cell (Figure 3G\u2013I, Figure 3\u2014figure supplement 3A\u2013D). In some cells, we observed membrane accumulation in the mother cell (Figure 3H,I, Figure 3\u2014figure supplement 3A,B) and small bulges approximately in the middle of the septum (Figure 3\u2014figure supplement 3C,D, Video 8). Septal thickness ranged from\u00a0~25 nm to\u00a0~45 nm, with an average thickness of 28 nm\u00a0\u00b12.09 nm (Figure 3E\u2013G, Figure 3\u2014figure supplement 3E), which is\u00a0~5 nm greater than that of wild type sporangia with flat septa. Importantly, there were no significant differences in septal thickness between flat and curved septa in DMP mutant sporangia (Figure 3G, Figure 3\u2014figure supplement 3E), indicating that DMP is in fact necessary for the slight thinning of the septum observed in wild type sporangia.\n\n![Video 8.](https://cdn.elifesciences.org/articles/45257/elife-45257-video8.mp4.jpg)\n\nSurprisingly, the thickness of individual DMP mutant septum was irregular across the septal length, with thicker regions of more than 45 nm, that were not observed in wild type cells (Figure 3G, Figure 3\u2014figure supplement 3E). One possible explanation for this finding is that in the absence of DMP, proteins involved in PG synthesis persist at the septum, and their continued activity leads to thicker and less flexible septal regions (Figure 3J). To test this model, we stained wild type and DMP mutant sporangia with BOCILLIN-FL, a fluorescent-derivative of penicillin V with affinity for multiple penicillin-binding proteins (PBPs) (Zhao et al., 1999, see Materials and methods). We observed continuous fluorescent signal around the septa in both strains, but the signal was brightest at the leading edge in wild type sporangia (Ojkic et al., 2016) and at different positions across the septum in DMP mutant sporangia (Figure 3\u2014figure supplement 4). This mislocalization might allow ongoing synthesis of septal PG, leading to abnormally thick sporulation septa.\n\n### PG is synthesized ahead of the leading edge of the engulfing membrane\n\nOnce the septum curves, the mother cell membrane starts to migrate around the forespore. Since the PG is not completely degraded, it will represent a major obstacle for the advancement of the engulfing membrane. To explain how cells overcome this hurdle, we previously proposed a conceptually new model for engulfment in which coordinated PG synthesis and degradation at the leading edge of the engulfing membrane moves the junction between the septum and the lateral cell wall around the forespore, making room for the engulfing mother cell membrane to advance (Figure 1B; Ojkic et al., 2016). In this \u2018make before break\u2019 model, new PG would be synthesized ahead of the engulfing membrane by forespore-associated PG biosynthetic complexes and subsequently degraded by DMP. To test this model, we first focused on the shape of the forespore membrane opposing the leading edge of the engulfing mother cell membrane. In wild type sporangia, the forespore membrane was rounded immediately ahead of the engulfing membrane (Figure 4A). This could be due to accumulation of additional PG at this site, which might push and deform the forespore membrane, introducing a broader curve. To confirm this, we analyzed the shape of the forespore membrane of sporangia in which PG synthesis was blocked with either bacitracin or cephalexin (Figure 4B, Figure 4\u2014figure supplement 1, see Materials and methods). The forespore membrane was less rounded and had a sharp corner with a radius of curvature that was four times smaller than that of untreated cells (~30 nm vs.\u00a0~120 nm, Figure 4C). These results indicate that new PG is indeed synthesized ahead of the leading edge of the engulfing membrane, and that it deforms the forespore membrane at the junction between the septum and the lateral cell wall.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig4-v2.jpg)\n\n**Figure 4.:** (A,B) Slices through cryo-electron tomograms of wild type (A) untreated and (B) cephalexin-treated sporangia. The radius of curvature (orange circle) of the forespore membrane (blue spline) ahead of the leading edge of the engulfing membrane is highlighted in the respective insets. (C) Plot showing the average radius of curvature (nm) of the forespore membrane ahead of the leading edge of the engulfing membrane for untreated and antibiotic-treated sporangia. Blue dots indicate individual data points (as also indicated by n); black bars indicate the standard deviation (***: p<0.001, unpaired t-test). (D) Slice through a cryo-electron tomogram of wild type B. subtilis sporangium. (E,F) Annotated forespore (green) and mother cell (yellow) membranes for the tomogram shown in (D) as viewed from both the left (blue asterisk) and the right (maroon asterisk) sides respectively, with insets of zoomed-in views of the leading edge of the engulfing membrane of both sides. Similar labeling scheme is followed through (H\u2013N). (G) Schematic showing the localization of DMP PG degradation machinery (yellow pacman) and PG synthases (blue circles). Membranes (red), lateral PG (gray), septal PG (pink) and new PG (purple) are also highlighted. (H) Slice through a cryo-electron tomogram of spoIIP mutant sporangium. (I,J) Annotated membranes for the tomogram shown in (H) with insets of zoomed-in views of the leading edge of the engulfing membrane of both sides. (K) Schematic representing a cell in which the DMP complex (yellow pacman) does not assemble. (L) Slice through a cryo-electron tomogram of cephalexin-treated sporangium. (M,N) Annotated membranes for the tomogram shown in (L) with insets of zoomed-in views of the leading edge of the engulfing membrane of both sides. (O) Schematic representing a cell in which PG synthesis (blue circles) has been inhibited. Scale bar for (D,H,L): 200 nm. Scale bars have been omitted for surface rendered images owing to their perspective nature. (P) Model for mother cell membrane migration. DMP complexes (yellow pacman) present at different positions on the mother cell membrane (red) tether the membrane to the PG (gray) synthesized ahead. Due to a limited number of DMP complexes, the engulfing membrane may move forward in finger-like projections. This is indicated by a representative annotated mother cell membrane (yellow) from Figure 4F.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Slice through a cryo-electron tomogram of a wild type sporangium treated with bacitracin (50 \u03bcg/ml) with the radius of curvature of the forespore membrane ahead of the leading edge of the engulfing membrane highlighted.\u00a0Scale bar: 200 nm. (B) Raw data for radius of curvature of the forespore membrane of wild type sporangia and antibiotic (cephalexin and bacitracin) treated sporangia with mean and standard deviation indicated.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** n indicates the number of tomograms analysed. The mean and standard deviation for each case is indicated.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Slice through a cryo-electron tomogram of a wild type sporangium.\u00a0(B,C) Annotation of membranes for the tomogram shown in (A). Forespore membrane is shown in green and mother cell membrane in yellow and both sides of the engulfing mother cell membrane are indicated by blue and maroon asterisks respectively. Scale bar for (A): 200 nm. Scale bars are omitted for annotated panels that are shown in perspective mode.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) Slice through a cryo-electron tomogram of a\u00a0spoIIP sporangium.\u00a0(B,C) Annotation of membranes for the tomogram shown in (A). Forespore membrane is shown in green and mother cell membrane in yellow and both sides of the engulfing mother cell membrane are indicated by blue and maroon asterisks respectively. Scale bar for (A): 200 nm. Scale bars are omitted for annotated panels that are shown in perspective mode.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A,D) Slices through cryo-electron tomograms of spoIIDMP sporangia.\u00a0(B,C) Annotation of membranes for the tomogram shown in (A). (E,F) Annotation of membranes for the tomogram shown in (D). Forespore membrane is shown in green and mother cell membrane in yellow and both sides of the engulfing mother cell membrane are indicated by blue and maroon asterisks respectively. A bulge in the middle of the septum (orange arrow) in (D) is highlighted in orange in (E) and (F). Scale bars for (A,D): 200 nm. Scale bars are omitted for annotated panels that are shown in perspective mode.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A) Slice through a cryo-electron tomogram of a\u00a0wild type sporangium treated with penicillin V.\u00a0(B,C) Annotation of membranes for the tomogram shown in (A). Forespore membrane is shown in green and mother cell membrane in yellow and both sides of the engulfing mother cell membrane are indicated by blue and maroon asterisks respectively. Scale bar for (A): 200 nm. Scale bars are omitted for annotated panels that are shown in perspective mode.\n\nTo exclude the possibility that new PG synthesis also happened behind the leading edge of the engulfing membrane, we analyzed septal thickness in sporangia treated with cephalexin and a combination of cephalexin and penicillin V using cryo-FIB-ET. If the septum is thinner in the presence of antibiotics, it would suggest that additional septal PG is synthesized after the DMP complex advances and degrades the PG ahead of the leading edge of the engulfing membrane. However, if septal thickness is independent of the presence of antibiotics, it would suggest that PG is not normally synthesized behind the DMP complex. Our data showed that the septal thickness of cells treated with cephalexin was comparable to that of untreated cells. Surprisingly, the septal thickness of cells treated with a combination of cephalexin and penicillin V was\u00a0~3 nm greater than that of untreated cells (Figure 4\u2014figure supplement 2). This modest increase in septal thickness is of a magnitude that is consistent with recent molecular dynamics simulations which show that relaxed PG is thicker than stretched PG (Beeby et al., 2013). It is possible that treatment with antibiotics blocking PG synthesis inhibits the stretching of septal PG due to the absence of membrane migration which could pull the septal PG around the forespore. Alternatively, the residual DMP might partially cleave septal PG, releasing the tension and leading to slightly thicker septa. Taken together, in both cases of antibiotic treatment the septal thickness did not decrease compared to untreated sporangia, suggesting that PG is not synthesized behind the DMP complex.\n\n### 3D architecture of the leading edge of the engulfing membrane\n\nThe new PG synthesized ahead of the leading edge of the engulfing membrane might interfere with the movement of the engulfing membrane, until it is degraded by DMP. To obtain insights about the movement of the engulfing membrane, we annotated the forespore and the mother cell membranes in our tomograms to visualize the architecture of the leading edge in 3D. Our data showed that the leading edge of the engulfing membrane in wild type sporulating cells moved around the forespore in tiny finger-like projections (Figure 4D\u2013G, Figure 4\u2014figure supplement 3). The projections were\u00a0~10\u201330 nm wide and\u00a0~5\u201320 nm long, with significant variations from cell to cell. We hypothesized that those projections could be due to the uneven degradation of PG ahead of the leading edge of the engulfing membrane. To test this possibility, we imaged spoIIP mutant sporangia, which lack a functional DMP complex. As expected, the septum bulged towards the mother cell cytoplasm, but the mother cell membrane did not move forward in these cells. No membrane projections anywhere were observed in the mother cell membrane in any of the tomograms that were annotated (Figure 4H\u2013K, Figure 4\u2014figure supplement 4, Video 9). Also, no projections were observed in the DMP triple mutant, most of which did not form bulges (Figure 4\u2014figure supplement 5). These findings suggest that SpoIIDMP is necessary for the formation of finger-like projections in the engulfing mother cell membrane.\n\n![Video 9.](https://cdn.elifesciences.org/articles/45257/elife-45257-video9.mp4.jpg)\n\nWe next tested whether PG synthesis was also required for the formation of finger-like projections. To study this possibility, we focused on sporangia in which PG synthesis was blocked using cephalexin (Figure 4L\u2013O, Video 10). When treated with antibiotics that block PG synthesis, membrane migration is blocked although\u00a0the forespore continues to grow into the mother cell (Ojkic et al., 2016). The case of cephalexin-treated cells is more complicated than other antibiotics, because after the septum curves into the mother cell, the leading edge sometimes retracts on one side while advancing slightly on the other (Video 10; Ojkic et al., 2016). This appears to consist of rotation of the \u2018cup\u2019 formed by the bulging septum relative to the lateral cell wall, rather than membrane migration, because the distance between the leading edges does not decrease during this process. Thus, rotation of the septal cup does not reflect the degree to which the forespore is engulfed. Cephalexin inhibits the earliest stages of cell division (Eberhardt et al., 2003; Kocaoglu and Carlson, 2015), and therefore we speculate that it might be required to tether the extending septum to the lateral cell wall. In the absence of these bridges, the septum might be free to rotate according to Brownian motion, perhaps anchored by the Q-AH ratchet that can also mediate engulfment in the absence of the cell wall (Broder and Pogliano, 2006). We used cryo-FIB-ET to compare the architecture of both sides of the engulfing membrane in cephalexin-treated sporangia (Figure 4L\u2013O). We did not observe finger-like projections in the side of the membrane that retracts (Figure 4M) but observed a few projections in the opposite side (Figure 4N), which might remain tethered to PG ahead of the engulfing membrane. Also, when cells were treated with penicillin V, we observed fewer projections that were shorter compared to untreated cells (Figure 4\u2014figure supplement 6). Taken together, these results suggest that the finger-like projections at the leading edge of the engulfing membrane might be caused by tethering of the engulfing membrane to the PG via DMP (Figure 4P).\n\n![Video 10.](https://cdn.elifesciences.org/articles/45257/elife-45257-video10.mp4.jpg)\n\n## Discussion\n\nIn this study, we have visualized the developmental process of sporulation in Bacillus subtilis using cryo-FIB-ET. We have obtained images of cells during different stages of sporulation at a resolution of a few nanometers, revealing new details about the architecture of spore assembly, as well as several hitherto unknown structures inside and around the developing spore (Figure 1). Our results also provide mechanistic insights into engulfment, including the early step of septal thinning (Figures 2 and 3) and membrane migration (Figure 4) which are captured in the model presented in Figure 5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45257/elife-45257-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of a sporulating cell with a flat septum and relaxed septal PG (pink). Membranes (red), lateral PG (gray), SpoIIIE (orange) and forespore chromosome (green) are also highlighted. (B) As SpoIIIE translocates the chromosome to the forespore, the septal PG is stretched which may contribute to septal thinning. (C) Top view of the sporulating cell wherein coordinated PG degradation by DMP (yellow pacman) and PG synthesis by PG biosynthetic enzymes (blue) at the leading edge provide room for the engulfing mother cell membrane migration. (D) Side view depicting the proposed membrane migration model with mother cell membrane (red), PG synthesized ahead of the membrane (purple) and lateral PG (gray) highlighted. During engulfment, DMP complexes present at different locations on the mother cell membrane may move forward by degrading the PG ahead and their rate-limiting activity may lead to the formation of tiny finger-like projections. FS: Forespore; MC: mother cell.\n\nWe provide evidence that the septal PG is not completely degraded at the onset of engulfment. Instead, the septum gets slightly (~25%) thinner as it curves into the mother cell, with PG continuously present between the mother cell and the forespore membranes. In addition, the whole septum transitions from thick to thin homogenously, contrary to previous results that suggested that septal thinning started in the middle and progressed towards the edges. The homogenous thinning of the septum can be explained by our previous finding that septal PG is stretched as the forespore grows towards the mother cell due to increased turgor pressure caused by SpoIIIE-mediated chromosome translocation (Lopez-Garrido et al., 2018). Thus, septal thinning could simply represent a change in the conformation of the septal PG, from a relaxed to a stretched state, triggered by the increased turgor pressure in the forespore. This is consistent with recent molecular dynamics simulations on Gram-positive cell walls, which show that relaxed PG fragments are\u00a0~25% thicker than those in a strained conformation (Beeby et al., 2013).\n\nOur results also indicate that DMP is required to maintain a flexible septum that can curve as the forespore grows into the mother cell (Figure 3). We found that the septa of DMP triple mutants have irregular thickness and are on average thicker than wild type septa (Figure 3E\u2013G). Since DMP is produced after polar septation, the septa of DMP mutant sporangia must have thickened after they have been formed. Thus, it is possible that DMP prevents septal thickening by clearing PG synthases from the septum, where they would accumulate after polar septation. This model is consistent with the increased localization of PBPs throughout the septum in DMP mutants (Figure 3\u2014figure supplement 4). Nevertheless, we cannot rule out the possibility that DMP degrades the septal PG partially to generate a flexible septum. If this was the case, the partial degradation should happen simultaneously across the whole septum to enable the homogenous transition from thick to thin. However, since DMP is rate limiting for engulfment, it seems unlikely that there may be enough DMP complexes to mediate the homogeneous thinning of the septum.\u00a0We therefore favor the model that septal thinning is primarily driven by stretching of septal peptidoglycan.\n\nOur data also provide insights into the mechanism of membrane migration during engulfment. Using fluorescence microscopy, we previously observed that new PG is synthesized at the leading edge of the engulfing membrane (Ojkic et al., 2016; Tocheva et al., 2013). We also showed that many forespore penicillin binding proteins (PBPs) can track the leading edge of the engulfing mother cell membrane (Ojkic et al., 2016), suggesting that PG synthesis at the leading edge of the engulfing membrane is carried out by forespore PBPs. The cryo-FIB-ET images presented here provide further support to this idea:\u00a0the comparison\u00a0of the architecture of the leading edge of the engulfing membrane between native sporangia and sporangia in which PG synthesis is blocked by antibiotics shows that new PG deforms and rounds the forespore membrane ahead of the leading edge of the engulfing membrane (Figure 4A\u2013C), indicating that new PG is synthesized by forespore PBPs immediately ahead of the leading edge of the engulfing mother cell membrane. We propose that DMP complexes at the leading edge of the engulfing membrane target this new PG for degradation, making room for the engulfing membrane to advance (Figures 1B and 5C). This relatively simple model suggests that engulfment could have evolved by developing new mechanisms to spatially and temporally regulate the conserved protein machineries that synthesize and degrade peptidoglycan.\n\nThe 3D reconstruction of the leading edge of the engulfing mother cell membrane shows the presence of finger-like projections that resemble the filopodia of eukaryotic cells (Mattila and Lappalainen, 2008). In eukaryotic cells, these membrane projections are produced by cytoskeletal proteins, and the projections are typically a few micrometers wide. In contrast, no cytoskeletal elements contributing to engulfment have been described so far (or visualized in our tomograms) and the finger-like projections at the leading edge of the engulfing membrane are only a few nanometers wide. Instead, our results demonstrate that DMP is required for the formation of these finger-like projections. The simplest model to explain these data is that DMP tethers the engulfing membrane to the PG ahead of the leading edge of the engulfing membrane, as it degrades the new PG to make room for the engulfing membrane to expand. DMP activity is rate limiting for membrane migration (Abanes-De Mello et al., 2002; Meyer et al., 2010), suggesting that there is a discrete number of DMP complexes to remove the steric barrier posed by the newly synthesized PG ahead of the leading edge. The limited number of DMP complexes might cause the PG to be degraded irregularly, generating an uneven membrane front in the form of finger-like projections. The distance between the tips of the finger-like projections is\u00a0~5\u201320 nm, which would require that some DMP complexes are ahead of others by 2 to 8 glycan strands (Turner et al., 2018). Our observations are consistent with the hypothesis that the finger-like projections are produced via the tethering of the DMP complex to existing peptidoglycan, since short fingers are observed when PG synthesis is inhibited, and that these fingers are either stabilized or enhanced by binding newly synthesized peptidoglycan, since longer fingers are observed in the presence of ongoing PG synthesis. This is supported by prior studies of the two enzymes that degrade peptidoglycan (D and P), which have shown that these comprise a processive enzyme complex in which P binds and cleaves PG first, allowing D to bind and cleave PG (Morlot et al., 2010). Our cell biological data showed that localization of P to the leading edge of the engulfing membrane is decreased but not completely absent when PG synthesis is inhibited (Ojkic et al., 2016), suggesting that P can bind to existing PG, but that high affinity binding requires newly synthesized peptidoglycan. This increased binding of P would likely allow the formation of longer finger-like projections. From a functional perspective, we speculate that the finger-like projections could be compared to \u2018friction ridges\u2019, the minutely raised ridges of the epidermis that provide a grasping surface on our fingers (Tomlinson et al., 2007). During engulfment, these membrane projections may provide the engulfing membrane a tighter lateral grip while moving around the forespore, hence serving as a ratchet that prevents backward movement of the membrane.\n\nThe application of cryo-FIB-ET has been instrumental in allowing us to visualize and accurately measure structural details of engulfing sporangia, which transpire at a scale of a few nanometers. Our studies support a mechanistic model for the enigmatic process of engulfment, while revealing novel architectural details about engulfment and spore assembly, including intriguing new molecular structures that will require further study to unambiguously identify them. Our findings reveal details about sporulation at an unprecedented resolution and further illustrate the potential of cryo-FIB-ET to reveal critical new information about dynamic biological processes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis PY79)</td>\n      <td>PY79</td>\n      <td>(Youngman et al., 1984)</td>\n      <td>Tax. ID:1415167</td>\n      <td>Wild type</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis PY79)</td>\n      <td>\u0394spoIIP::tet</td>\n      <td>(Frandsen and Stragier, 1995)</td>\n      <td></td>\n      <td>KP513</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis PY79)</td>\n      <td>spoIID298, spoIIM-mls, \u0394spoIIP::tet</td>\n      <td>(Broder and Pogliano, 2006)</td>\n      <td></td>\n      <td>KP4188</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FM4-64</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#T13320</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bacitracin</td>\n      <td>MilliporeSigma</td>\n      <td>Cat#B0125</td>\n      <td>Conc. used: 50 \u03bcg/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Penicillin V</td>\n      <td>MilliporeSigma</td>\n      <td>Cat#1504489</td>\n      <td>Conc. used: 500 \u03bcg/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cephalexin</td>\n      <td>MilliporeSigma</td>\n      <td>Cat#C4895</td>\n      <td>Conc. used: 50 \u03bcg/ml</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>JFilament</td>\n      <td>(Smith et al., 2010)</td>\n      <td>http://athena.physics.lehigh.edu/jfilament/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IMOD</td>\n      <td>(Mastronarde, 1997)</td>\n      <td>http://bio3d.colorado.edu/imod/; RRID: SCR_003297</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TomoSegMemTV</td>\n      <td>(Martinez-Sanchez et al., 2014)</td>\n      <td>https://sites.google.com/site/3demimageprocessing/tomosegmemtv</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Amira</td>\n      <td>Commercial software by Thermo Scientific (formerly FEI)</td>\n      <td>https://www.fei.com/software/amira-3d-for-life-sciences/; RRID: SCR_014305</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SerialEM</td>\n      <td>(Mastronarde, 2005)</td>\n      <td>http://bio3d.colorado.edu/SerialEM/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab code to calculate septal distances of sporangia</td>\n      <td>This paper; Source code 1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab code to calculate cell length using fluorescence microscopy images</td>\n      <td>This paper; Source code 2</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Strains and culture conditions\n\nWe used Bacillus subtilis PY79 background for all data acquisition. The strains (see Key Resources Table) were grown in LB plates at 30\u00b0C. The bacteria were first grown in \u00bc diluted LB to OD600\u00a0~0.5\u20130.7. Sporulation was then induced by resuspension in A\u00a0+\u00a0B media at 37\u00b0C. For cryo-FIB-ET, we collected wild type sporulating cells 1.5\u20133 hr after sporulation induction. For cells treated with antibiotics, 50 \u03bcg/ml of bacitracin, 50 \u03bcg/ml of cephalexin and 500 \u03bcg/ml of penicillin V were used. Antibiotics were added two hours after induction of sporulation and samples for cryo-FIB-ET were collected either one (for bacitracin) or two hours (for cephalexin, penicillin V and a combination of cephalexin and penicillin V) later. For spoIIP and spoIIDMP mutant sporangia, cells were collected 2.5 hr after induction of sporulation for cryo-ET.\n\n### Cryo-FIB-ET and image processing\n\n7 \u03bcl of diluted liquid culture was deposited onto glow-discharged (using Pelco easyGlow) holey carbon coated QUANTIFOIL R 2/1 200 mesh copper grids. Manual blotting was performed using Whatman No. one filter paper from the reverse side to remove excess resuspension media such that cells form a monolayer on the grids. They were then immediately plunge-frozen into a liquid ethane/propane mixture cooled by liquid nitrogen using a custom-built vitrification device (Max Planck Institute for Biochemistry, Munich). These grids were then stored in storage boxes in liquid nitrogen until further use.\n\nVitrified bacterial samples forming a monolayer on the grids were mounted into modified autogrids (Max Planck Institute for Biochemistry) for milling inside a Thermo Scientific Scios DualBeam (cryo-FIB/SEM) (Materials and methods). 100\u2013250 nm thin sections or lamellae (12\u201315 \u03bcm in width) were then prepared using rectangular milling patterns and beam current of 0.1 nA or 0.3 nA for rough milling and 10 pA or 30 pA for fine milling as described in Chaikeeratisak et al. (2017). Tilt series were collected in a 300-keV Tecnai G2 Polara (Thermo Scientific) equipped with a K2 Summit direct detection camera (Gatan) and a post-column Quantum energy filter (Gatan). The samples were usually tilted from \u221266\u00b0\u00a0to +66\u00b0\u00a0(the range per tilt series depending on the quality of the lamellae) with an increment of 1.5\u00b0\u00a0or 2\u00b0. The tilt series were acquired using SerialEM (Mastronarde, 2005). The images were recorded at a defocus of \u22125 to \u22126 \u03bcm at nominal magnifications of 34,000 (pixel size: 0.61 nm) or 41,000 (pixel size: 0.49 nm) with a cumulative dose of\u00a0~60\u2013130 e-/\u00c52. Images for later stages of sporulation (Figure 1\u2014figure supplement 2B) were acquired at nominal magnification of 22,500 (pixel size: 0.92 nm) as these samples were highly sensitive to radiation damage.\n\nThe patch-tracking feature of IMOD was used to reconstruct the tilt-series (Kremer et al., 1996). TomosegmemTV (Martinez-Sanchez et al., 2014) was used for semi-automatic segmentation of membranes followed by manual refinement in the Amira software package.\n\n### Measuring mean radius of ellipsoidal complexes\n\nThe mean radius (r) of an ellipse is given by:\n\n$$\nr=\\sqrt{\\frac{a^{2}+b^{2}}{2}}\n$$\n\nwhere a is the semi-major axis of the ellipse and b is the semi-minor axis of the ellipse. For ellipsoidal complexes observed in our tomograms (Figure 1J, Figure 1\u2014figure supplement 3A\u2013C), average value of a is\u00a0~45 nm and that of b is\u00a0~42 nm.\n\n### Calculating septal distances\n\n\u2018Surface distance\u2019 feature of Amira was used to calculate the septal distances between the forespore and mother cell membranes. The septal-disc was color coded according to these values (Figure 3B\u2013D,G, Figure 3\u2014figure supplement 2E). Five tomograms each of wild type cells representing different stages of engulfment (flat, curved and engulfing septa) were used for analysis. For engulfment mutants, five spoIIP sporangia and seven spoIIDMP sporangia were analyzed. For antibiotic treated cells, six cephalexin-treated sporangia and five cephalexin- and penicillin V- combination treated sporangia were analyzed. To get the linear profiles of the distances, the data was grouped into smaller bins of approximately equal area for each tomogram. Then the average of the distance within a bin was used to represent the distance between the membranes at that location of the bin (see Source code 1). Figure 3E represents an average of all the profiles for each cell type in Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 3E.\n\n### Fluorescence microscopy\n\nCells were visualized on an Applied Precision DV Elite optical sectioning microscope equipped with a Photometrics CoolSNAP-HQ2 camera and deconvolved using SoftWoRx v5.5.1 (Applied Precision). For experiment outlined in Figure 3\u2014figure supplement 4, the median focal plane of the image is shown. Membranes were stained with 0.5 \u03bcg/ml of FM4-64 (Thermo Fisher Scientific) that was added directly to 1.2% agarose pads prepared using sporulation resuspension medium. 10 \u03bcg/\u03bcl of BOCILLIN-FL was added to 1 ml of culture aliquoted\u00a0~2.5 hr after sporulation induction (at 37\u00b0C) and washed with sporulation resuspension medium three times. 12 \u03bcl of washed cells were then transferred to agarose pads for imaging.\n\nFor time-lapse microscopy, sporulation was induced at 30\u00b0C. 0.5 \u03bcg/ml FM4-64 was added to the cultures\u00a0~1.5 hr after sporulation induction and incubation continued for another hour. Composition of agarose pads for time-lapse microscopy is as follows: 2/3 vol of supernatant from the sporulation culture, 1/3 vol 3.6% agarose in fresh A\u00a0+\u00a0B sporulation medium, 0.17 \u03bcg/ml FM4-64, supplemented with antibiotics according to concentrations mentioned above in \u2018Strains and culture conditions\u2019. 12 \u03bcl samples were taken 3 hr after resuspension and transferred to the agarose pads. Pads were covered with a glass slide and sealed with petroleum jelly to avoid dehydration during time-lapse imaging. Pictures were taken in an environmental chamber at 30\u00b0C every 5 min for\u00a0~5 hr. Excitation/emission filters were TRITC/CY5 for membrane imaging. Excitation light transmission was set to 5% to minimize phototoxicity and exposure time was set to 0.1 s.\n\n### Calculating cell length using fluorescence microscopy images\n\nTo determine the length of vegetative cells over time (Figure 2\u2014figure supplement 1E), membrane contours were extracted from microscopy images for each time frame (up\u00a0to 60 min post treatment with antibiotics) using semi-automated active contour software JFilament, available as a Fiji plugin (Schindelin et al., 2012; Smith et al., 2010). The cell length was then calculated by measuring along the long axis of the contours using a custom-built MATLAB script (see Source code 2). To plot the average cell length, the data was normalized to the initial cell length for each of the cases.\n\n### Calculating radius of curvature\n\nTo calculate radius of curvature (Figure 4A\u2013C, Figure 4\u2014figure supplement 1), a slice was taken approximately from the center of the z-stack for each of the tomograms. \u2018Measure spline curvature\u2019 feature of sabl_mpl (Yao et al., 2017) was then used to plot radii of curvatures around the forespore membranes just ahead of the leading edge for seven native sporangia and five antibiotic-treated sporangia wherein membrane migration appears to be blocked.\n",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "643e134e-b07a-4710-91c6-2d4b4e9e8e7b",
+      "submission_id": "13110c12-2c74-4e49-b51d-0af56bb970c1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- T\u00e2m Mignot, CNRS-Aix Marseille University France\n\nReviewers:\n- Cecile Morlot, Institut de Biologie Structurale France\n\n## Review text\n\nDOI: [10.7554/eLife.45257.044](https://doi.org/10.7554/eLife.45257.044)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for sending your article entitled \"The molecular architecture of engulfment during Bacillus subtilis sporulation\" for peer review at eLife. Your article is being evaluated by two peer reviewers, and the evaluation is being overseen by a Reviewing Editor and Gisela Storz as the Senior Editor.\n\nEngulfment is a phagocytic-like process that is essential for bacterial sporulation. During engulfment, the mother cell membrane migrates around the developing spore, generating a cell within a cell. Membrane migration involves cell wall synthesis and remodeling events that remain incompletely resolved. In this study, authors use state-of-the-art cryo-FIB-ET to investigate these unresolved aspects in Bacillus subtilis. Their data confirm earlier observations (obtained by ECT, Tocheva et al., 2013) that a layer of PG remains in the intermembrane space separating the mother cell and forespore. In addition, the unprecedented resolution of their images provides new insights into the thickness of this septal PG layer, as well as the morphology of the engulfing membranes at different stages of the engulfment process and upon impaired PG degradation or synthesis.\n\nEssential revisions:\n\nWhile their observations represent a significant contribution to the field, there are two major concerns regarding their conclusions, both based on the fact that the extend of PG inhibition in the presence of antibiotics is not clear:\n\n- Authors observe finger-like projections associated with migrating membranes. They provide convincing evidence that these projections are associated with the DMP complex and they propose that they result from \"tethering of the engulfing membrane to newly synthesized PG via DMP\". However, these finger-like projections are still observed at the leading side of the engulfing membrane, although being less prominent, when PG synthesis is inhibited by cephalexin (Figure 4N and subsection \u201c3D architecture of the leading edge of the engulfing membrane\u201d, second paragraph).\n\nDo authors really consider that PG synthesis is fully inhibited in the presence of cephalexin? If so, remnant finger-like projections and membrane migration still occurs when PG synthesis is inhibited. They might result from tethering of the engulfing membrane to old PG surrounding the forespore via DMP. In that case, finger-like projections may be stabilized/enhanced (rather than \"caused\") by tethering of the engulfing membrane to newly synthesized PG. To resolve this problem, the authors need to test the extent of PG synthesis inhibition by Cephalexin.\n\n- Figure 4B shows a reduced rounding of the forespore membrane in the presence of antibiotics, providing evidence that PG is synthesized at the leading edge of the engulfing membrane. Based on this observation and a previous study (Ojkic et al., 2016), authors propose a model (Figure 5) in which PG is exclusively synthesized ahead of the leading edge of the engulfing membrane. However, these data do not exclude the possibility that PG synthesis also happens behind the leading edge of the engulfing membrane, or in other words that PG is resynthesized after degradation by the DMP complex. Indeed, as pointed in the previous point, the fact that membrane migration still happens in the presence of antibiotics again questions whether PG synthesis is fully inhibited. In cells displaying incomplete or asymmetrical engulfment (such as those shown in Figure 2), PG synthesis might have continued for a while and stopped, resulting in septal disks containing newly synthesized PG and leading edges showing impaired PG synthesis. Analysis of septum thickness (as performed in Figure 3B-E) in the presence of antibiotics might shed light on this issue: a thinner septum (but not absent if DMP does not totally degrades septal PG) in the presence of antibiotics would suggest that PG is synthesized behind the DMP complex. If septum thickness is independent of the presence of antibiotics, it suggests that either PG is not synthesized behind the DMP complex or that PG is not fully inhibited in the presence of antibiotics. This uncertainty impacts the hypothesis proposed by the authors because PG synthesis happening behind the DMP complex might explain why a slight and homogenous septal thinning is observed (Figure 3); it might also contribute to the residual PG layer observed in the intermembrane space\n",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bf11a70a-c0eb-44fa-80d1-a860dd178d4c",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C1",
+      "claim": "Cryo-electron tomography coupled with cryo-focused ion beam milling allows the reconstruction of native-state cellular sections at molecular resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we visualize Bacillus subtilis sporulation using cryo-electron tomography coupled with cryo-focused ion beam milling, allowing the reconstruction of native-state cellular sections at molecular resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a methodological capability demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "6534c05c-b748-4014-b77c-262882c284b9",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C2",
+      "claim": "During sporulation, an asymmetrically-positioned septum generates a larger mother cell and a smaller forespore.",
+      "claim_type": "EXPLICIT",
+      "source": "During sporulation, an asymmetrically-positioned septum generates a larger mother cell and a smaller forespore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known feature of sporulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "d11bd0d1-7a35-489b-9721-ebdb84b88010",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C3",
+      "claim": "The septal peptidoglycan is not completely degraded at the onset of engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the septal peptidoglycan is not completely degraded at the onset of engulfment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "1a061d70-c6fe-4398-a0c3-4ec49ed651d5",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C4",
+      "claim": "The septum is uniformly and only slightly thinned as it curves towards the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the septum is uniformly and only slightly thinned as it curves towards the mother cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by measurements in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "57b8f678-9570-4534-b5e6-3cb1f5656317",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C5",
+      "claim": "The mother cell membrane migrates around the forespore in tiny finger-like projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, the mother cell membrane migrates around the forespore in tiny finger-like projections, whose formation requires the mother cell SpoIIDMP protein complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by 3D reconstructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "801ed142-adeb-4e68-910b-c0c83ce563dc",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C6",
+      "claim": "Formation of finger-like projections requires the mother cell SpoIIDMP protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, the mother cell membrane migrates around the forespore in tiny finger-like projections, whose formation requires the mother cell SpoIIDMP protein complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "c8cb730b-3e56-4a59-8c87-b40a08caaa74",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C7",
+      "claim": "A limited number of SpoIIDMP complexes tether to and degrade the peptidoglycan ahead of the engulfing membrane, generating an irregular membrane front.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that a limited number of SpoIIDMP complexes tether to and degrade the peptidoglycan ahead of the engulfing membrane, generating an irregular membrane front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a proposed model in the abstract.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "7b8f3ad3-ff51-4b1f-8cf8-dcd53f6374e9",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C8",
+      "claim": "Bacterial cellular architecture is far more complex than previously thought.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the apparent simplicity, studies in the past few decades have demonstrated that bacterial cellular architecture is far more complex than previously thought, in terms of both its ultrastructure and dynamic capabilities (Hawver et al., 2016; Wagstaff and L\u00f6we, 2018; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "fbf1cb9a-6ec1-4f0d-a281-00404ec3139e",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C9",
+      "claim": "Bacterial cells are inflated by their high internal turgor pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial cells are inflated by their high internal turgor pressure, which pushes the membranes against the cell wall, causing the PG to stretch and the cell to adopt its appropriate shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about bacterial cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "1726e38c-19fa-435b-ba64-d2a435a2b676",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C10",
+      "claim": "The division site shifts to polar position during sporulation, generating a sporangium comprised of two cells: a larger mother cell and a smaller forespore.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the division site shifts to polar position, generating a sporangium comprised of two cells: a larger mother cell and a smaller forespore (Figure 1A; Errington, 2003; Higgins and Dworkin, 2012; Tan and Ramamurthi, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "4f23b1f4-6d3a-4fec-b3d7-9c0b3c9807be",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C11",
+      "claim": "The polar septum traps the forespore chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The polar septum traps the forespore chromosome, which is subsequently transported to the forespore by SpoIIIE, a membrane-anchored ATPase that assembles a translocation complex at septal midpoint (Bath et al., 2000; Yen Shin et al., 2015; Wu and Errington, 1994; Wu and Errington, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "9a3b05c3-3978-4299-a6ff-d2e45641f3a5",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C12",
+      "claim": "SpoIIIE is a membrane-anchored ATPase that assembles a translocation complex at septal midpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "The polar septum traps the forespore chromosome, which is subsequently transported to the forespore by SpoIIIE, a membrane-anchored ATPase that assembles a translocation complex at septal midpoint (Bath et al., 2000; Yen Shin et al., 2015; Wu and Errington, 1994; Wu and Errington, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "3372c171-06e7-48cc-ae3b-0eb9171db62e",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C13",
+      "claim": "Chromosome translocation increases the turgor pressure in the forespore, causing it to inflate and expand into the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosome translocation increases the turgor pressure in the forespore, causing it to inflate and expand into the mother cell (Lopez-Garrido et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "b3e99e69-c650-4aa1-b69f-fe495787f3b9",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C14",
+      "claim": "The mother cell engulfs the forespore in a process that resembles eukaryotic phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, the mother cell engulfs the forespore in a process that resembles eukaryotic phagocytosis (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "3db26128-600f-48e6-b0e9-1dd338998208",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C15",
+      "claim": "After engulfment, the forespore is fully enclosed within the cytoplasm of the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "After engulfment, the forespore is fully enclosed within the cytoplasm of the mother cell, where it matures in a process that involves the synthesis of protective layers of cortex and coat, and the partial dehydration of the forespore cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the sporulation process description.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "e43a437b-2530-426f-ac62-f77b23f9079f",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C16",
+      "claim": "Forespore maturation involves the synthesis of protective layers of cortex and coat, and the partial dehydration of the forespore cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "After engulfment, the forespore is fully enclosed within the cytoplasm of the mother cell, where it matures in a process that involves the synthesis of protective layers of cortex and coat, and the partial dehydration of the forespore cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the sporulation process description.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "17136ca7-f88b-4cef-ba62-699beb4adba3",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C17",
+      "claim": "The mother cell lyses and the mature spore is released to the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the mother cell lyses and the mature spore is released to the environment, where it remains dormant until the conditions are appropriate for germination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the final step of sporulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "cd65c014-cf72-4254-b6ba-c7fdc00598cb",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C18",
+      "claim": "The mature spore remains dormant until the conditions are appropriate for germination.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the mother cell lyses and the mature spore is released to the environment, where it remains dormant until the conditions are appropriate for germination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of mature spores.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "e07e3d6a-2f17-41e1-8896-aa60fc93d570",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C19",
+      "claim": "Early electron microscopy studies showed that engulfment-defective mutants had thicker septa than wild type sporangia.",
+      "claim_type": "EXPLICIT",
+      "source": "This proposal was supported by early electron microscopy studies of fixed and stained sporangia showing that engulfment-defective mutants had thicker septa than wild type sporangia (Holt et al., 1975; Illing and Errington, 1991; Rousseau and Hermier, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "b3ef0456-694b-4e26-9d2f-0c87617b70b2",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C20",
+      "claim": "Engulfment requires three mother cell proteins: SpoIID, SpoIIM and SpoIIP, which form a complex (DMP) with PG degradation activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies showed that engulfment requires three mother cell proteins: SpoIID, SpoIIM and SpoIIP, which form a complex (DMP) with PG degradation activity (Abanes-De Mello et al., 2002; Aung et al., 2007; Chastanet and Losick, 2007; Morlot et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "2fb6aa93-b89c-4a8e-a6b1-903c5259ef53",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C21",
+      "claim": "A thin PG layer is present between the forespore and the mother cell membranes throughout engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "The idea that septal PG is completely degraded has been more recently challenged by cryo-electron tomography (cryo-ET) images showing that a thin PG layer is present between the forespore and the mother cell membranes throughout engulfment (Tocheva et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior cryo-ET work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "894dac21-05ec-4ed7-9a7e-081727c598c8",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C22",
+      "claim": "DMP-mediated PG degradation is required and rate-limiting for membrane migration even after the septal barrier has been bypassed.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that DMP-mediated PG degradation is required and rate-limiting for membrane migration even after the septal barrier has been bypassed, suggesting that DMP plays a role separate from the dissolution of septal PG (Abanes-De Mello et al., 2002; Gutierrez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "1f7bcde0-2e96-46ab-952b-2456396bb1cb",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C23",
+      "claim": "The movement of the mother cell membrane requires PG synthesis at the leading edge of the engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the movement of the mother cell membrane also requires PG synthesis at the leading edge of the engulfing membrane (Meyer et al., 2010; Ojkic et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "bf60adc1-2c61-40de-ba37-49299213f138",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C25",
+      "claim": "Cryo-ET allows the visualization of three-dimensional (3D) architecture of bacterial membranes and cell wall in a hydrated near-native state.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-ET allows the visualization of three-dimensional (3D) architecture of bacterial membranes and cell wall in a hydrated near-native state that cannot be achieved by methods reliant on chemical fixation and staining (Ben-Harush et al., 2010; Matias and Beveridge, 2005; Oikonomou et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work on cryo-ET methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "3012f40c-2389-4be4-b25c-a58796d45e58",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C26",
+      "claim": "Samples must be less than ~500 nm thick to obtain high-resolution tomograms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a limitation of cryo-ET is that the samples must be less than ~500 nm thick to obtain high-resolution tomograms, constraining its application to only a handful of bacteria that are either naturally slender, or, as in the case of B. subtilis, for which slender mutant strains are available (Tocheva et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical limitation of cryo-ET.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "404688c4-b3b5-4cbd-a8c1-33f33295f66d",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C27",
+      "claim": "Cryo-focused ion beam (cryo-FIB) milling produces artifact-free thin sample sections of ~100\u2013300 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent application of cryo-focused ion beam (cryo-FIB) milling has produced artifact-free thin sample sections of ~100\u2013300 nm, which allows the acquisition of high-resolution tomograms of sections of wild type cells (Figure 1C; Marko et al., 2007; Rigort et al., 2012; Villa et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with citations and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "06332fd2-08ce-4ba9-b1b8-6802db9c9e9f",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C28",
+      "claim": "Cryo-FIB milling coupled with cryo-ET is becoming the method of choice for studies of cellular architecture of both eukaryotic and prokaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-FIB milling coupled with cryo-ET (or cryo-FIB-ET) is therefore becoming the method of choice for studies of cellular architecture of both eukaryotic and prokaryotic cells (Chaikeeratisak et al., 2017; Engel et al., 2015; Lopez-Garrido et al., 2018; Mahamid et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to recent applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "0898737b-0e40-4aba-a65b-773ace991cd4",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C29",
+      "claim": "The external cell wall of sporulating cells was ~20\u201330 nm thick.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed that the external cell wall of sporulating cells was ~20\u201330 nm thick, consistent with other EM studies (Matias and Beveridge, 2005; Tocheva et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the cryo-FIB-ET data with citations to consistent prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "a628a4e8-1884-49a0-ae3d-3ad0de3b8cf1",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C30",
+      "claim": "The polar septum formed close (within 500 nm) to one cell pole.",
+      "claim_type": "EXPLICIT",
+      "source": "The polar septum formed close (within 500 nm) to one cell pole, and was initially flat (Figure 1D,E, Figure 1\u2014figure supplement 1A\u2013D, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "e73b8f27-8515-410a-87ed-d2318089aa65",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C31",
+      "claim": "The septum bent smoothly into the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, the septum bent smoothly into the mother cell (Figure 1F,G, Figure 1\u2014figure supplement 1E\u2013H, Video 2) and the mother cell membrane moved forward to engulf the forespore, at which stage the forespore was roughly rounded (Figure 1H,I, Figure 1\u2014figure supplement 1I\u2013L, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "d0918fa2-ad58-46ae-b40b-302e98371919",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C32",
+      "claim": "Ellipsoidal complexes were present only in the forespore, adjacent to the membrane and often close to the intersection between the septum and the lateral cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately after polar septation, we observed ellipsoidal complexes that were present only in the forespore, adjacent to the membrane and often close to the intersection between the septum and the lateral cell wall (Figure 1J, Figure 1\u2014figure supplement 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "c643e49b-8dc5-4109-b3d2-7107902d79df",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C33",
+      "claim": "Ellipsoidal structures were observed in 2 out of 7 tomograms of wild type sporangia with flat septa.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures were observed in 2 out of 7 tomograms of wild type sporangia with flat septa, with ~4 ellipsoidal complexes observed in ~200 nm slices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "bef38a1c-df9d-4ff5-ba83-5b9024099cbf",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C34",
+      "claim": "The ellipsoidal structures had a mean radius of ~45 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D reconstruction of these complexes revealed that the ellipsoidal structures had a mean radius of ~45 nm (Figure 1\u2014figure supplement 3A\u2013C, see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the 3D reconstructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "a223fdd3-5336-47a0-b008-fd21eda4570d",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C35",
+      "claim": "A region approximately in the center of a flat septum was identified where the two membranes are closer together than elsewhere on the septum (14 nm vs. 23 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified a region approximately in the center of a flat septum where the two membranes are closer together than elsewhere on the septum (14 nm vs. 23 nm, Figure 1K, Figure 1\u2014figure supplement 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "fcf21d8f-a888-493b-92a2-f99014e7c683",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C36",
+      "claim": "The constriction in the septum may correspond to paired hexameric SpoIIIE channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This constriction may correspond to paired hexameric SpoIIIE channels (Fleming et al., 2010; Liu et al., 2006; Yen Shin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed structure with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "f68aabaf-5016-4ebb-91b7-5c190102a7db",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C37",
+      "claim": "Structures that appear to be channels crossing the septum may correspond to SpoIIIA-SpoIIQ complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed structures that appear to be channels crossing the septum (Figure 1L) that may correspond to SpoIIIA-SpoIIQ complexes (Blaylock et al., 2004; Levdikov et al., 2012; Morlot and Rodrigues, 2018; Zeytuni et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of observed structures with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "91717a15-8010-4d62-9cda-0f10665d48c3",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C38",
+      "claim": "A basement coat layer adjacent to the outer forespore membrane is likely comprised of SpoVM and/or SpoIVA.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we observed a basement coat layer adjacent to the outer forespore membrane that is likely comprised of SpoVM and/or SpoIVA (Figure 1M; Ramamurthi and Losick, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of observed structures with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "593c2a10-90ea-4bb7-b103-42a431754ba5",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C39",
+      "claim": "The basement coat layer is visible as an array of dots spaced ~4\u20136 nm apart.",
+      "claim_type": "EXPLICIT",
+      "source": "This layer is visible as an array of dots spaced ~4\u20136 nm apart, similar to that observed previously in Acetonema longum sporulating cells (Tocheva et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the cryo-FIB-ET data with citation to similar observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "5c881e59-294a-4920-b443-d90927495ecf",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C40",
+      "claim": "A thin PG layer was observed between the mother cell and the forespore membranes in both untreated and antibiotic-treated sporangia.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed a thin PG layer in both untreated and antibiotic-treated sporangia (Figure 2, Figure 2\u2014figure supplement 2), suggesting that septal PG is not completely degraded at the onset of engulfment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data comparing different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "fc2d0f4a-70b7-4519-a728-c01ff3c98152",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C41",
+      "claim": "Untreated cells continued to grow and divide under the experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, our results showed that untreated cells continued to grow and divide under the experimental conditions (Figure 2\u2014figure supplement 1A) but when treated with cephalexin and penicillin V, cell division was completely blocked.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from time-lapse microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "dc6c3647-16d1-4bf7-80dd-4e6a05585475",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C42",
+      "claim": "When treated with cephalexin and penicillin V, cell division was completely blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, our results showed that untreated cells continued to grow and divide under the experimental conditions (Figure 2\u2014figure supplement 1A) but when treated with cephalexin and penicillin V, cell division was completely blocked.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from time-lapse microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "edbbb286-7aae-451f-8224-38d700ffb7d8",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C43",
+      "claim": "PG synthesis was inhibited within a few minutes of antibiotic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also indicated that PG synthesis was inhibited within a few minutes of antibiotic treatment, because cells that were already undergoing septation were unable to complete septum formation (Figure 2\u2014figure supplement 1B\u2013D, top panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observation that ongoing septation was interrupted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "aa0577f7-31b5-4537-a884-16c02364b13f",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C44",
+      "claim": "The length of wild type untreated vegetative cells increased by ~35% in an hour.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of wild type untreated vegetative cells increased by ~35% in an hour, but when treated with cephalexin or penicillin V alone, they elongated only ~10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from time-lapse microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "37d0cc18-d6be-4a96-9979-5e335067b628",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C45",
+      "claim": "When treated with cephalexin or penicillin V alone, vegetative cells elongated only ~10%.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of wild type untreated vegetative cells increased by ~35% in an hour, but when treated with cephalexin or penicillin V alone, they elongated only ~10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from time-lapse microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "fdb90fe9-7ad7-4e42-bad7-ffb649f0ecd4",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C46",
+      "claim": "When treated with a combination of cephalexin and penicillin V, the cells elongated negligibly, indicating complete blockage of both septation and elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when treated with a combination of cephalexin and penicillin V, the cells elongated negligibly, indicating complete blockage of both septation and elongation (Figure 2\u2014figure supplement 1, Videos 4\u20137).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement and interpretation from time-lapse microscopy experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "23eb09bd-b0e7-4cda-9341-6c43c02ea503",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C47",
+      "claim": "Sporangia with flat septa had an average septal thickness of ~23 nm\u00b13.3 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Sporangia with flat septa had an average septal thickness of ~23 nm\u00b13.3 nm (Figure 3B,E,F) with 3 out of 5 septa being thicker at the middle (~28 nm) than at the edges (~22 nm) (Figure 3B,E, Figure 3\u2014figure supplement 1A), contrary to what is proposed by the enzymatic septal thinning model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "5945bd0c-64da-4059-8008-53a326b97ea9",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C48",
+      "claim": "3 out of 5 flat septa were thicker at the middle (~28 nm) than at the edges (~22 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "Sporangia with flat septa had an average septal thickness of ~23 nm\u00b13.3 nm (Figure 3B,E,F) with 3 out of 5 septa being thicker at the middle (~28 nm) than at the edges (~22 nm) (Figure 3B,E, Figure 3\u2014figure supplement 1A), contrary to what is proposed by the enzymatic septal thinning model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "b2dd6858-d9ee-4037-8cd3-3bb8aa5c7bbc",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C49",
+      "claim": "The septal thickness decreased by ~25% to~18 nm during later stages of engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "The septal thickness decreased by ~25% to~18 nm during later stages of engulfment (Figure 3C\u2013F, Figure 3\u2014figure supplement 1B,C) and a thin layer of PG was observed in all septa (Figure 2A, Figure 2\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "ce8f6d64-bd66-40f2-9b00-e459ae0cdcd0",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C50",
+      "claim": "Septal thickness was uniform across the entire septum during later stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, septal thickness was uniform across the entire septum during later stages (Figure 3C,D,E, Figure 3\u2014figure supplement 1B,C) and no septum was thinner in the middle than in the edges.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "12b156b9-8d53-43f4-98d9-bb42655ce05b",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C51",
+      "claim": "The transition from thick to thin septum is homogenous.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the transition from thick to thin septum is homogenous, contrary to the prediction of the enzymatic septal thinning model, and consistent with the model that DNA translocation dependent forespore growth stretches septal PG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the septal thickness measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "060c7087-71ef-44a1-817d-cf522acf9f24",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C52",
+      "claim": "Most sporulation septa of the DMP triple mutant were either flat or slightly curved into the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Most sporulation septa of the DMP triple mutant were either flat or slightly curved into the mother cell (Figure 3G\u2013I, Figure 3\u2014figure supplement 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data of mutant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "4cecd238-e7e3-4566-87bb-53970a58957b",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C53",
+      "claim": "Septal thickness in DMP mutants ranged from ~25 nm to ~45 nm, with an average thickness of 28 nm \u00b12.09 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Septal thickness ranged from ~25 nm to ~45 nm, with an average thickness of 28 nm \u00b12.09 nm (Figure 3E\u2013G, Figure 3\u2014figure supplement 3E), which is ~5 nm greater than that of wild type sporangia with flat septa.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the cryo-FIB-ET data of mutant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "6005feec-c65c-4b53-895b-6299784c37a3",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C54",
+      "claim": "The average septal thickness of DMP mutants is ~5 nm greater than that of wild type sporangia with flat septa.",
+      "claim_type": "EXPLICIT",
+      "source": "Septal thickness ranged from ~25 nm to ~45 nm, with an average thickness of 28 nm \u00b12.09 nm (Figure 3E\u2013G, Figure 3\u2014figure supplement 3E), which is ~5 nm greater than that of wild type sporangia with flat septa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of measurements from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "b8258a39-eddb-4190-8aa0-b760b6279a16",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C55",
+      "claim": "There were no significant differences in septal thickness between flat and curved septa in DMP mutant sporangia.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there were no significant differences in septal thickness between flat and curved septa in DMP mutant sporangia (Figure 3G, Figure 3\u2014figure supplement 3E), indicating that DMP is in fact necessary for the slight thinning of the septum observed in wild type sporangia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of measurements from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "86d2b1eb-19d4-4380-9119-44ffc7c76c18",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C56",
+      "claim": "DMP is necessary for the slight thinning of the septum observed in wild type sporangia.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there were no significant differences in septal thickness between flat and curved septa in DMP mutant sporangia (Figure 3G, Figure 3\u2014figure supplement 3E), indicating that DMP is in fact necessary for the slight thinning of the septum observed in wild type sporangia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the comparison of wild type and mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "2721a0dc-9985-4d9d-9775-18b3bb3553c0",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C57",
+      "claim": "The thickness of individual DMP mutant septum was irregular across the septal length, with thicker regions of more than 45 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the thickness of individual DMP mutant septum was irregular across the septal length, with thicker regions of more than 45 nm, that were not observed in wild type cells (Figure 3G, Figure 3\u2014figure supplement 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data of mutant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "a0ae06a1-4263-407d-84c4-7748080642af",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C58",
+      "claim": "In the absence of DMP, proteins involved in PG synthesis persist at the septum, and their continued activity leads to thicker and less flexible septal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this finding is that in the absence of DMP, proteins involved in PG synthesis persist at the septum, and their continued activity leads to thicker and less flexible septal regions (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed explanation for the observed irregular thickness in DMP mutants.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "dd2e0bcd-3acd-4b8f-bbee-e6706b8a03b0",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C59",
+      "claim": "Continuous fluorescent signal was observed around the septa in both wild type and DMP mutant strains stained with BOCILLIN-FL.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed continuous fluorescent signal around the septa in both strains, but the signal was brightest at the leading edge in wild type sporangia (Ojkic et al., 2016) and at different positions across the septum in DMP mutant sporangia (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from fluorescence microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "1c1e4cac-8d9c-4720-a8b7-63255097c784",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C60",
+      "claim": "The fluorescent signal was brightest at the leading edge in wild type sporangia.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed continuous fluorescent signal around the septa in both strains, but the signal was brightest at the leading edge in wild type sporangia (Ojkic et al., 2016) and at different positions across the septum in DMP mutant sporangia (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from fluorescence microscopy experiments with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "2b74ce13-595b-4953-891e-e2cb752a776f",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C61",
+      "claim": "The fluorescent signal was brightest at different positions across the septum in DMP mutant sporangia.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed continuous fluorescent signal around the septa in both strains, but the signal was brightest at the leading edge in wild type sporangia (Ojkic et al., 2016) and at different positions across the septum in DMP mutant sporangia (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from fluorescence microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "7c6c71a9-b90f-4d28-bb51-83d5f4a74410",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C62",
+      "claim": "In wild type sporangia, the forespore membrane was rounded immediately ahead of the engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild type sporangia, the forespore membrane was rounded immediately ahead of the engulfing membrane (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "a9d8b097-4c71-46e3-a55b-4d3dbe17b91c",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C63",
+      "claim": "The forespore membrane of sporangia in which PG synthesis was blocked was less rounded and had a sharp corner with a radius of curvature that was four times smaller than that of untreated cells (~30 nm vs. ~120 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "The forespore membrane was less rounded and had a sharp corner with a radius of curvature that was four times smaller than that of untreated cells (~30 nm vs. ~120 nm, Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement comparing treated and untreated cells from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "b49cc9e4-23ec-419b-8bb7-f1d18c55862e",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C64",
+      "claim": "New PG is synthesized ahead of the leading edge of the engulfing membrane, and it deforms the forespore membrane at the junction between the septum and the lateral cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that new PG is indeed synthesized ahead of the leading edge of the engulfing membrane, and that it deforms the forespore membrane at the junction between the septum and the lateral cell wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of membrane curvature in treated and untreated cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "a06c90a4-6789-4386-ac00-8accb6fdce58",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C65",
+      "claim": "The septal thickness of cells treated with cephalexin was comparable to that of untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed that the septal thickness of cells treated with cephalexin was comparable to that of untreated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of measurements from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "fc98e7bb-4a6c-4c50-8d3f-1f8e191bc3ba",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C66",
+      "claim": "The septal thickness of cells treated with a combination of cephalexin and penicillin V was ~3 nm greater than that of untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the septal thickness of cells treated with a combination of cephalexin and penicillin V was ~3 nm greater than that of untreated cells (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "62632626-0667-4118-85c8-81b7c9cfd7b6",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C67",
+      "claim": "The leading edge of the engulfing membrane in wild type sporulating cells moved around the forespore in tiny finger-like projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed that the leading edge of the engulfing membrane in wild type sporulating cells moved around the forespore in tiny finger-like projections (Figure 4D\u2013G, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from 3D reconstructions of the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "6b17181c-a338-4d8a-984f-13c48ff0906d",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C68",
+      "claim": "The projections were ~10\u201330 nm wide and ~5\u201320 nm long, with significant variations from cell to cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The projections were ~10\u201330 nm wide and ~5\u201320 nm long, with significant variations from cell to cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the 3D reconstructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "b5c5e2ee-b51d-415f-939e-af1ed950af08",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C69",
+      "claim": "No membrane projections were observed in the mother cell membrane in spoIIP mutant sporangia.",
+      "claim_type": "EXPLICIT",
+      "source": "No membrane projections anywhere were observed in the mother cell membrane in any of the tomograms that were annotated (Figure 4H\u2013K, Figure 4\u2014figure supplement 4, Video 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data of mutant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "42b4557b-0ef9-4a2a-85c5-64de27b07192",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C70",
+      "claim": "No projections were observed in the DMP triple mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, no projections were observed in the DMP triple mutant, most of which did not form bulges (Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data of mutant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "e0c59513-e9b2-48e8-b956-a2c3938c27f4",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C71",
+      "claim": "SpoIIDMP is necessary for the formation of finger-like projections in the engulfing mother cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that SpoIIDMP is necessary for the formation of finger-like projections in the engulfing mother cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of wild type and mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "697c57d9-4414-4dc7-8716-e5979ff3eb71",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C72",
+      "claim": "Finger-like projections were not observed in the side of the membrane that retracts in cephalexin-treated sporangia.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe finger-like projections in the side of the membrane that retracts (Figure 4M) but observed a few projections in the opposite side (Figure 4N), which might remain tethered to PG ahead of the engulfing membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data of antibiotic-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "b7ac1814-1069-4556-87c6-e0af3d515edb",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C73",
+      "claim": "A few projections were observed in the opposite side of the membrane in cephalexin-treated sporangia, which might remain tethered to PG ahead of the engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe finger-like projections in the side of the membrane that retracts (Figure 4M) but observed a few projections in the opposite side (Figure 4N), which might remain tethered to PG ahead of the engulfing membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation and interpretation from the cryo-FIB-ET data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "3efa99f6-254c-4317-9ff1-411cd7db250a",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C74",
+      "claim": "When cells were treated with penicillin V, fewer projections that were shorter compared to untreated cells were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, when cells were treated with penicillin V, we observed fewer projections that were shorter compared to untreated cells (Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data of antibiotic-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "5eeaa438-1fcb-4d1c-916a-bb38aafc986b",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C75",
+      "claim": "The finger-like projections at the leading edge of the engulfing membrane might be caused by tethering of the engulfing membrane to the PG via DMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that the finger-like projections at the leading edge of the engulfing membrane might be caused by tethering of the engulfing membrane to the PG via DMP (Figure 4P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the comparison of different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "ca1236e5-adb0-490c-b597-e5ac7faf5b62",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C76",
+      "claim": "Septal thinning could represent a change in the conformation of the septal PG, from a relaxed to a stretched state, triggered by the increased turgor pressure in the forespore.",
+      "claim_type": "EXPLICIT",
+      "source": "The homogenous thinning of the septum can be explained by our previous finding that septal PG is stretched as the forespore grows towards the mother cell due to increased turgor pressure caused by SpoIIIE-mediated chromosome translocation (Lopez-Garrido et al., 2018). Thus, septal thinning could simply represent a change in the conformation of the septal PG, from a relaxed to a stretched state, triggered by the increased turgor pressure in the forespore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation for the observed septal thinning with citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "b0e4d5b9-3d1a-4d77-9117-5aa0c655aa53",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C77",
+      "claim": "This is consistent with recent molecular dynamics simulations on Gram-positive cell walls, which show that relaxed PG fragments are ~25% thicker than those in a strained conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with recent molecular dynamics simulations on Gram-positive cell walls, which show that relaxed PG fragments are ~25% thicker than those in a strained conformation (Beeby et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior computational work that supports the interpretation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "47005433-cd82-4f43-aae5-ad34d4081933",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C78",
+      "claim": "DMP is required to maintain a flexible septum that can curve as the forespore grows into the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also indicate that DMP is required to maintain a flexible septum that can curve as the forespore grows into the mother cell (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the analysis of DMP mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "11d2edba-e119-41fe-886e-5a96fe7b1c42",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C79",
+      "claim": "The septa of DMP mutant sporangia have irregular thickness and are on average thicker than wild type septa.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the septa of DMP triple mutants have irregular thickness and are on average thicker than wild type septa (Figure 3E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-FIB-ET data of mutant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "ac097856-94d9-45b6-8376-c2ed7fba06fd",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C80",
+      "claim": "The septa of DMP mutant sporangia must have thickened after they have been formed.",
+      "claim_type": "EXPLICIT",
+      "source": "Since DMP is produced after polar septation, the septa of DMP mutant sporangia must have thickened after they have been formed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the timing of DMP production and the observed thickness.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "449e5b67-77c5-4f0a-896b-dc9824dd59d2",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C81",
+      "claim": "DMP prevents septal thickening by clearing PG synthases from the septum.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible that DMP prevents septal thickening by clearing PG synthases from the septum, where they would accumulate after polar septation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "715cab12-45b4-47f9-a14a-e7f5a7933d28",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C82",
+      "claim": "This model is consistent with the increased localization of PBPs throughout the septum in DMP mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is consistent with the increased localization of PBPs throughout the septum in DMP mutants (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement of consistency between the proposed model and fluorescence microscopy data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "0b03b6d0-71e9-4401-8b01-378c04b61ec4",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C83",
+      "claim": "The comparison of the architecture of the leading edge of the engulfing membrane between native sporangia and sporangia in which PG synthesis is blocked by antibiotics shows that new PG deforms and rounds the forespore membrane ahead of the leading edge of the engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-FIB-ET images presented here provide further support to this idea: the comparison of the architecture of the leading edge of the engulfing membrane between native sporangia and sporangia in which PG synthesis is blocked by antibiotics shows that new PG deforms and rounds the forespore membrane ahead of the leading edge of the engulfing membrane (Figure 4A\u2013C), indicating that new PG is synthesized by forespore PBPs immediately ahead of the leading edge of the engulfing mother cell membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the comparison of treated and untreated cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "a13967f9-644d-4f2a-98cb-28f0081368de",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C84",
+      "claim": "New PG is synthesized by forespore PBPs immediately ahead of the leading edge of the engulfing mother cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-FIB-ET images presented here provide further support to this idea: the comparison of the architecture of the leading edge of the engulfing membrane between native sporangia and sporangia in which PG synthesis is blocked by antibiotics shows that new PG deforms and rounds the forespore membrane ahead of the leading edge of the engulfing membrane (Figure 4A\u2013C), indicating that new PG is synthesized by forespore PBPs immediately ahead of the leading edge of the engulfing mother cell membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the comparison of treated and untreated cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "32a4b2eb-45ed-4693-b795-863a8a59b5d7",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C85",
+      "claim": "DMP complexes at the leading edge of the engulfing membrane target new PG for degradation, making room for the engulfing membrane to advance.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that DMP complexes at the leading edge of the engulfing membrane target this new PG for degradation, making room for the engulfing membrane to advance (Figures 1B and 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "1c257989-bc75-453f-a8ec-77f5129e2f91",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C86",
+      "claim": "The 3D reconstruction of the leading edge of the engulfing mother cell membrane shows the presence of finger-like projections that resemble the filopodia of eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D reconstruction of the leading edge of the engulfing mother cell membrane shows the presence of finger-like projections that resemble the filopodia of eukaryotic cells (Mattila and Lappalainen, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the 3D reconstructions with a comparison to eukaryotic structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "ea76833c-0c9e-408d-85e5-ec3aea3151c6",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C87",
+      "claim": "In eukaryotic cells, membrane projections are produced by cytoskeletal proteins, and the projections are typically a few micrometers wide.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotic cells, these membrane projections are produced by cytoskeletal proteins, and the projections are typically a few micrometers wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge about eukaryotic cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "3b4f747b-689f-4e6d-bc15-44e06deca2b9",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C88",
+      "claim": "No cytoskeletal elements contributing to engulfment have been described so far or visualized in the tomograms.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no cytoskeletal elements contributing to engulfment have been described so far (or visualized in our tomograms) and the finger-like projections at the leading edge of the engulfing membrane are only a few nanometers wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of observed cytoskeletal elements.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "8978238c-cc2a-4512-ad98-97dd9e10264e",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C89",
+      "claim": "The finger-like projections at the leading edge of the engulfing membrane are only a few nanometers wide.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no cytoskeletal elements contributing to engulfment have been described so far (or visualized in our tomograms) and the finger-like projections at the leading edge of the engulfing membrane are only a few nanometers wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the 3D reconstructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "0b084275-a9cb-4a5d-bdfb-ab634b11648a",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C90",
+      "claim": "DMP is required for the formation of finger-like projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our results demonstrate that DMP is required for the formation of these finger-like projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of wild type and mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "1e1ab9c5-144f-4cd7-9d69-6d935d4c559b",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C91",
+      "claim": "DMP tethers the engulfing membrane to the PG ahead of the leading edge of the engulfing membrane, as it degrades the new PG to make room for the engulfing membrane to expand.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest model to explain these data is that DMP tethers the engulfing membrane to the PG ahead of the leading edge of the engulfing membrane, as it degrades the new PG to make room for the engulfing membrane to expand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model to explain the observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "3012da2e-b67b-4b6a-878f-d851d381cfdb",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C92",
+      "claim": "DMP activity is rate limiting for membrane migration.",
+      "claim_type": "EXPLICIT",
+      "source": "DMP activity is rate limiting for membrane migration (Abanes-De Mello et al., 2002; Meyer et al., 2010), suggesting that there is a discrete number of DMP complexes to remove the steric barrier posed by the newly synthesized PG ahead of the leading edge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "7ebb2fb3-bb13-4875-b190-0a139cebafb4",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C93",
+      "claim": "There is a discrete number of DMP complexes to remove the steric barrier posed by the newly synthesized PG ahead of the leading edge.",
+      "claim_type": "EXPLICIT",
+      "source": "DMP activity is rate limiting for membrane migration (Abanes-De Mello et al., 2002; Meyer et al., 2010), suggesting that there is a discrete number of DMP complexes to remove the steric barrier posed by the newly synthesized PG ahead of the leading edge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the rate-limiting nature of DMP activity.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "e553aeb9-ca8c-4e66-a8fa-b1facf7e6a9b",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C94",
+      "claim": "The limited number of DMP complexes might cause the PG to be degraded irregularly, generating an uneven membrane front in the form of finger-like projections.",
+      "claim_type": "EXPLICIT",
+      "source": "The limited number of DMP complexes might cause the PG to be degraded irregularly, generating an uneven membrane front in the form of finger-like projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation for the observed finger-like projections.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "9ed8c21a-24cf-479e-a9bc-4edad2776dce",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C95",
+      "claim": "The distance between the tips of the finger-like projections is ~5\u201320 nm, which would require that some DMP complexes are ahead of others by 2 to 8 glycan strands.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance between the tips of the finger-like projections is ~5\u201320 nm, which would require that some DMP complexes are ahead of others by 2 to 8 glycan strands (Turner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the measured distances and known PG structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "f33f3b1e-68b4-4a52-ab56-3a03b6eae863",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C96",
+      "claim": "The finger-like projections are produced via the tethering of the DMP complex to existing peptidoglycan.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations are consistent with the hypothesis that the finger-like projections are produced via the tethering of the DMP complex to existing peptidoglycan, since short fingers are observed when PG synthesis is inhibited, and that these fingers are either stabilized or enhanced by binding newly synthesized peptidoglycan, since longer fingers are observed in the presence of ongoing PG synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the comparison of different conditions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "457cd9ac-7eb1-4e53-9bf5-dc70556751a2",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C97",
+      "claim": "P binds and cleaves PG first, allowing D to bind and cleave PG.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by prior studies of the two enzymes that degrade peptidoglycan (D and P), which have shown that these comprise a processive enzyme complex in which P binds and cleaves PG first, allowing D to bind and cleave PG (Morlot et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "d0682a8e-0c4c-4e8a-a72d-064147f40187",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C98",
+      "claim": "Localization of P to the leading edge of the engulfing membrane is decreased but not completely absent when PG synthesis is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cell biological data showed that localization of P to the leading edge of the engulfing membrane is decreased but not completely absent when PG synthesis is inhibited (Ojkic et al., 2016), suggesting that P can bind to existing PG, but that high affinity binding requires newly synthesized peptidoglycan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior fluorescence microscopy data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "24b506ec-1c94-4c5f-a720-c989097443f5",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C99",
+      "claim": "P can bind to existing PG, but high affinity binding requires newly synthesized peptidoglycan.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cell biological data showed that localization of P to the leading edge of the engulfing membrane is decreased but not completely absent when PG synthesis is inhibited (Ojkic et al., 2016), suggesting that P can bind to existing PG, but that high affinity binding requires newly synthesized peptidoglycan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of prior fluorescence microscopy data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "b73e5b87-940c-4f50-be2e-537eaa9532df",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C100",
+      "claim": "The finger-like projections could be compared to 'friction ridges', the minutely raised ridges of the epidermis that provide a grasping surface on our fingers.",
+      "claim_type": "EXPLICIT",
+      "source": "From a functional perspective, we speculate that the finger-like projections could be compared to 'friction ridges', the minutely raised ridges of the epidermis that provide a grasping surface on our fingers (Tomlinson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative functional analogy with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "46b51ba5-f55c-4e20-9383-8885a191d318",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "claim_id": "C101",
+      "claim": "During engulfment, membrane projections may provide the engulfing membrane a tighter lateral grip while moving around the forespore, hence serving as a ratchet that prevents backward movement of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "During engulfment, these membrane projections may provide the engulfing membrane a tighter lateral grip while moving around the forespore, hence serving as a ratchet that prevents backward movement of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative functional interpretation of the observed projections.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c06ad066-ff2c-432b-aeda-6620704c9e2c",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cryo-FIB-ET enables high-resolution visualization of B. subtilis sporulation at molecular resolution, revealing cellular architecture including cell wall thickness (~20-30 nm), polar septum formation, and septal bending during engulfment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C25-C31 collectively demonstrate successful application of cryo-FIB-ET methodology to visualize sporulation stages. The measurements (C29) are consistent with prior studies, and observations (C30-C31) are supported by multiple tomograms with figure references. The methodology overcomes the ~500 nm thickness limitation (C26) by producing 100-300 nm sections (C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "197df678-16f3-422c-828d-362fec344a62",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Septal peptidoglycan is not completely degraded at the onset of engulfment, as demonstrated by the presence of a thin PG layer in both untreated and antibiotic-treated sporangia where PG synthesis is blocked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C40 are directly supported by cryo-FIB-ET observations across multiple conditions. The antibiotic validation experiments (C41-C46) demonstrate effective PG synthesis inhibition within minutes, with quantitative measurements of cell elongation. The persistence of PG layer despite blocked synthesis (C40) provides strong evidence against complete degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "ee8a1900-4d5b-4df9-bb19-1a73422d4e32",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The septum thins uniformly by ~25% (from ~23 nm to ~18 nm) as it curves during engulfment, with no preferential thinning in the middle versus edges, contrary to the enzymatic septal thinning model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 provide quantitative measurements from cryo-FIB-ET data across multiple cells at different stages. The observation that 3 out of 5 flat septa are thicker in the middle (C48) directly contradicts the enzymatic thinning model. The uniform thinning pattern (C50) is consistently observed across later stages with statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "bdc29d67-01ba-4875-9095-317d1053d21f",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DMP is necessary for maintaining a thin, flexible septum during engulfment. DMP mutants have thicker septa (~28 nm vs ~23 nm) with irregular thickness and no thinning between flat and curved stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 provide quantitative measurements from DMP mutant analysis showing significantly thicker septa with irregular patterns. The lack of thinning between stages in mutants (C55) combined with wild-type data (C56) demonstrates DMP's role. Claims C78-C80 provide mechanistic interpretation supported by the timing of DMP production and observed phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "96c9907a-0c1e-4cd9-be45-ad64aeb0885a",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the absence of DMP, PG synthases persist and mislocalize throughout the septum rather than concentrating at the leading edge, leading to irregular septal thickening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 provide fluorescence microscopy evidence showing differential PBP localization between wild-type (concentrated at leading edge) and DMP mutants (distributed across septum). This observation supports the proposed mechanism (C58, C81) that DMP clears PG synthases. The consistency between structural (C57) and localization data (C82) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "bd64f7d9-654a-46fb-88b9-0d21a419e4fc",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "New PG is synthesized ahead of the leading edge of the engulfing membrane by forespore PBPs, as demonstrated by the rounded forespore membrane in untreated cells versus sharp corners (radius ~30 nm vs ~120 nm) when PG synthesis is blocked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 provide quantitative measurements showing a 4-fold difference in membrane curvature between treated and untreated cells. This structural difference (C64) directly supports PG synthesis ahead of the membrane. The septal thickness measurements in antibiotic-treated cells (C65-C66) indicate PG is not synthesized behind the leading edge, supporting the directional synthesis model (C83-C84).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "cc65bfa6-fba9-459e-8d28-073efe8093c2",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The mother cell membrane migrates around the forespore in tiny finger-like projections (~10-30 nm wide, ~5-20 nm long) whose formation requires the SpoIIDMP complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 provide quantitative measurements of projections from 3D reconstructions. The genetic requirement for DMP is demonstrated by complete absence of projections in both spoIIP (C69) and DMP triple mutants (C70), providing strong evidence for C71 and C90. The observations are consistent across multiple tomograms of different genotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "1f42f696-e34e-469a-a392-e49b65e47dba",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Finger-like projections are caused by DMP tethering the engulfing membrane to PG, with projections stabilized or enhanced by newly synthesized PG, as evidenced by fewer/shorter projections when PG synthesis is inhibited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 show differential projection formation under different conditions: absent on retracting side (C72), few on opposite side (C73), and fewer/shorter with penicillin V (C74). This pattern supports the tethering model (C75, C96). The requirement for both DMP (C6) and the enhancement by PG synthesis provides mechanistic insight, though the model remains partially inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "c3832f72-e94f-4e7f-a485-f41fedaa4826",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A limited number of DMP complexes tether to and degrade PG ahead of the engulfing membrane, with irregular degradation generating finger-like projections spaced 5-20 nm apart (corresponding to 2-8 glycan strands).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C93 cite prior work showing DMP is rate-limiting, supporting the limited number hypothesis. The calculation relating projection spacing to glycan strands (C95) is reasonable. However, the direct evidence for the proposed mechanism (C7, C91, C94) is largely inferential. While the model is consistent with observations, alternative explanations for projection formation have not been rigorously excluded. The claim requires additional biochemical or structural evidence to be fully supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "d043e0cb-1f9d-4b06-b41a-7449f4f1ad8d",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Septal thinning represents a conformational change from relaxed to stretched PG triggered by increased forespore turgor pressure, consistent with molecular dynamics simulations showing ~25% thickness difference between relaxed and strained PG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 proposes a mechanism consistent with prior work on chromosome translocation-driven forespore inflation (cited). The ~25% thinning observed (C49) matches the predicted magnitude from molecular dynamics simulations (C77). The uniform thinning pattern (C50-C51) supports stretching over enzymatic degradation. However, this remains a proposed mechanism rather than directly demonstrated causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "92419987-50fe-4083-a2af-52cf7e90eff3",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ellipsoidal complexes (~45 nm radius) are present in the forespore adjacent to the membrane near the septum-lateral wall intersection, observed in 2 out of 7 tomograms with flat septa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 describe novel structures with quantitative measurements from 3D reconstructions. The low frequency (2/7 tomograms) is acknowledged and explained by the limited slice thickness. The measurements are precise and reproducible. However, the molecular identity remains unknown, limiting biological interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "36601f87-413a-4f16-8c40-9cc6b88f890e",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A region in the center of flat septa shows closer membrane spacing (14 nm vs 23 nm) that may correspond to paired hexameric SpoIIIE channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C35 provides a quantitative measurement of membrane spacing. However, the interpretation as SpoIIIE channels (C36) is speculative, based only on size and location. The low frequency of observation (2/15 tomograms) and lack of molecular identification limit confidence. Additional structural or immunolabeling data would be needed to confirm the identity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "a9a9ba94-076a-401f-af1a-8a687ef12622",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Channel-like structures crossing the septum may correspond to SpoIIIA-SpoIIQ complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C37 describes observed structures but the molecular identification is entirely speculative, based only on morphology and citations to prior work. The low frequency of observation and lack of confirmatory data make this an uncertain structural assignment requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "3a33f3c5-2759-4fa4-839b-d0103220e687",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A basement coat layer adjacent to the outer forespore membrane, likely comprised of SpoVM and/or SpoIVA, appears as dots spaced ~4-6 nm apart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 describe a structural feature with quantitative spacing measurements consistent with prior observations in A. longum (cited). The molecular assignment is reasonable based on known coat protein localization, though not definitively proven. The observation is reproducible and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "0e1de10f-2e5b-4b84-a33a-193a45ae1964",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "DMP complexes at the leading edge target newly synthesized PG for degradation, making room for membrane advancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 synthesizes multiple lines of evidence: PG synthesis ahead of the membrane (C64, C83-C84), DMP requirement for projections (C71), and the coordinated synthesis-degradation model. While presented as a proposal, it is well-supported by the collective data. This represents the central mechanistic model of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "b729499f-2181-4495-bf08-bc5c6cf59fe9",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The DMP complex is processive with P binding and cleaving PG first, followed by D. P can bind existing PG but requires newly synthesized PG for high-affinity binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 cites prior biochemical studies establishing the processive mechanism. Claims C98-C99 cite prior cell biological data showing decreased but not absent P localization when PG synthesis is inhibited. These claims appropriately reference prior work to support the mechanistic interpretation of current observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "2639a155-c210-4fe9-8920-c34b8e5f7267",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Bacterial finger-like projections (~nanometers wide) differ from eukaryotic filopodia (~micrometers wide) in that they lack cytoskeletal elements and are much smaller.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 make appropriate comparisons between bacterial and eukaryotic membrane projections. The size measurements (C89) are from the data, while the absence of cytoskeletal elements (C88) is supported by both literature and the current tomograms. This contextualizes the novelty of the bacterial mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "8746fced-a377-40c4-8929-21d18014a2a2",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Membrane projections may function like friction ridges, providing lateral grip and serving as a ratchet to prevent backward membrane movement during engulfment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C101 propose a functional analogy and mechanism that is entirely speculative. While the analogy to friction ridges is creative, there is no experimental evidence testing this hypothesis. The ratchet function is plausible but undemonstrated. This represents speculation about function based on structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    },
+    {
+      "id": "546d7260-c266-4205-b315-b33f2eb815ed",
+      "content_id": "1c014514-aaa0-46e7-942b-52254a60e684",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background claims about sporulation biology, bacterial cell structure, and prior findings on engulfment mechanisms establish the context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C8-C23 appropriately cite prior literature to establish background knowledge about sporulation stages, cell wall structure, DMP function, and previous models of engulfment. These claims accurately represent the state of the field and provide necessary context, though they are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:03:17.527650Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bf11a70a-c0eb-44fa-80d1-a860dd178d4c",
+      "result_id": "c06ad066-ff2c-432b-aeda-6620704c9e2c"
+    },
+    {
+      "claim_id": "bf60adc1-2c61-40de-ba37-49299213f138",
+      "result_id": "c06ad066-ff2c-432b-aeda-6620704c9e2c"
+    },
+    {
+      "claim_id": "3012f40c-2389-4be4-b25c-a58796d45e58",
+      "result_id": "c06ad066-ff2c-432b-aeda-6620704c9e2c"
+    },
+    {
+      "claim_id": "404688c4-b3b5-4cbd-a8c1-33f33295f66d",
+      "result_id": "c06ad066-ff2c-432b-aeda-6620704c9e2c"
+    },
+    {
+      "claim_id": "06332fd2-08ce-4ba9-b1b8-6802db9c9e9f",
+      "result_id": "c06ad066-ff2c-432b-aeda-6620704c9e2c"
+    },
+    {
+      "claim_id": "0898737b-0e40-4aba-a65b-773ace991cd4",
+      "result_id": "c06ad066-ff2c-432b-aeda-6620704c9e2c"
+    },
+    {
+      "claim_id": "a628a4e8-1884-49a0-ae3d-3ad0de3b8cf1",
+      "result_id": "c06ad066-ff2c-432b-aeda-6620704c9e2c"
+    },
+    {
+      "claim_id": "e73b8f27-8515-410a-87ed-d2318089aa65",
+      "result_id": "c06ad066-ff2c-432b-aeda-6620704c9e2c"
+    },
+    {
+      "claim_id": "d11bd0d1-7a35-489b-9721-ebdb84b88010",
+      "result_id": "197df678-16f3-422c-828d-362fec344a62"
+    },
+    {
+      "claim_id": "5c881e59-294a-4920-b443-d90927495ecf",
+      "result_id": "197df678-16f3-422c-828d-362fec344a62"
+    },
+    {
+      "claim_id": "fc2d0f4a-70b7-4519-a728-c01ff3c98152",
+      "result_id": "197df678-16f3-422c-828d-362fec344a62"
+    },
+    {
+      "claim_id": "dc6c3647-16d1-4bf7-80dd-4e6a05585475",
+      "result_id": "197df678-16f3-422c-828d-362fec344a62"
+    },
+    {
+      "claim_id": "edbbb286-7aae-451f-8224-38d700ffb7d8",
+      "result_id": "197df678-16f3-422c-828d-362fec344a62"
+    },
+    {
+      "claim_id": "aa0577f7-31b5-4537-a884-16c02364b13f",
+      "result_id": "197df678-16f3-422c-828d-362fec344a62"
+    },
+    {
+      "claim_id": "37d0cc18-d6be-4a96-9979-5e335067b628",
+      "result_id": "197df678-16f3-422c-828d-362fec344a62"
+    },
+    {
+      "claim_id": "fdb90fe9-7ad7-4e42-bad7-ffb649f0ecd4",
+      "result_id": "197df678-16f3-422c-828d-362fec344a62"
+    },
+    {
+      "claim_id": "1a061d70-c6fe-4398-a0c3-4ec49ed651d5",
+      "result_id": "ee8a1900-4d5b-4df9-bb19-1a73422d4e32"
+    },
+    {
+      "claim_id": "23eb09bd-b0e7-4cda-9341-6c43c02ea503",
+      "result_id": "ee8a1900-4d5b-4df9-bb19-1a73422d4e32"
+    },
+    {
+      "claim_id": "5945bd0c-64da-4059-8008-53a326b97ea9",
+      "result_id": "ee8a1900-4d5b-4df9-bb19-1a73422d4e32"
+    },
+    {
+      "claim_id": "b2dd6858-d9ee-4037-8cd3-3bb8aa5c7bbc",
+      "result_id": "ee8a1900-4d5b-4df9-bb19-1a73422d4e32"
+    },
+    {
+      "claim_id": "ce8f6d64-bd66-40f2-9b00-e459ae0cdcd0",
+      "result_id": "ee8a1900-4d5b-4df9-bb19-1a73422d4e32"
+    },
+    {
+      "claim_id": "12b156b9-8d53-43f4-98d9-bb42655ce05b",
+      "result_id": "ee8a1900-4d5b-4df9-bb19-1a73422d4e32"
+    },
+    {
+      "claim_id": "060c7087-71ef-44a1-817d-cf522acf9f24",
+      "result_id": "bdc29d67-01ba-4875-9095-317d1053d21f"
+    },
+    {
+      "claim_id": "4cecd238-e7e3-4566-87bb-53970a58957b",
+      "result_id": "bdc29d67-01ba-4875-9095-317d1053d21f"
+    },
+    {
+      "claim_id": "6005feec-c65c-4b53-895b-6299784c37a3",
+      "result_id": "bdc29d67-01ba-4875-9095-317d1053d21f"
+    },
+    {
+      "claim_id": "b8258a39-eddb-4190-8aa0-b760b6279a16",
+      "result_id": "bdc29d67-01ba-4875-9095-317d1053d21f"
+    },
+    {
+      "claim_id": "86d2b1eb-19d4-4380-9119-44ffc7c76c18",
+      "result_id": "bdc29d67-01ba-4875-9095-317d1053d21f"
+    },
+    {
+      "claim_id": "2721a0dc-9985-4d9d-9775-18b3bb3553c0",
+      "result_id": "bdc29d67-01ba-4875-9095-317d1053d21f"
+    },
+    {
+      "claim_id": "47005433-cd82-4f43-aae5-ad34d4081933",
+      "result_id": "bdc29d67-01ba-4875-9095-317d1053d21f"
+    },
+    {
+      "claim_id": "11d2edba-e119-41fe-886e-5a96fe7b1c42",
+      "result_id": "bdc29d67-01ba-4875-9095-317d1053d21f"
+    },
+    {
+      "claim_id": "ac097856-94d9-45b6-8376-c2ed7fba06fd",
+      "result_id": "bdc29d67-01ba-4875-9095-317d1053d21f"
+    },
+    {
+      "claim_id": "a0ae06a1-4263-407d-84c4-7748080642af",
+      "result_id": "96c9907a-0c1e-4cd9-be45-ad64aeb0885a"
+    },
+    {
+      "claim_id": "dd2e0bcd-3acd-4b8f-bbee-e6706b8a03b0",
+      "result_id": "96c9907a-0c1e-4cd9-be45-ad64aeb0885a"
+    },
+    {
+      "claim_id": "1c1e4cac-8d9c-4720-a8b7-63255097c784",
+      "result_id": "96c9907a-0c1e-4cd9-be45-ad64aeb0885a"
+    },
+    {
+      "claim_id": "2b74ce13-595b-4953-891e-e2cb752a776f",
+      "result_id": "96c9907a-0c1e-4cd9-be45-ad64aeb0885a"
+    },
+    {
+      "claim_id": "449e5b67-77c5-4f0a-896b-dc9824dd59d2",
+      "result_id": "96c9907a-0c1e-4cd9-be45-ad64aeb0885a"
+    },
+    {
+      "claim_id": "715cab12-45b4-47f9-a14a-e7f5a7933d28",
+      "result_id": "96c9907a-0c1e-4cd9-be45-ad64aeb0885a"
+    },
+    {
+      "claim_id": "7c6c71a9-b90f-4d28-bb51-83d5f4a74410",
+      "result_id": "bd64f7d9-654a-46fb-88b9-0d21a419e4fc"
+    },
+    {
+      "claim_id": "a9d8b097-4c71-46e3-a55b-4d3dbe17b91c",
+      "result_id": "bd64f7d9-654a-46fb-88b9-0d21a419e4fc"
+    },
+    {
+      "claim_id": "b49cc9e4-23ec-419b-8bb7-f1d18c55862e",
+      "result_id": "bd64f7d9-654a-46fb-88b9-0d21a419e4fc"
+    },
+    {
+      "claim_id": "a06c90a4-6789-4386-ac00-8accb6fdce58",
+      "result_id": "bd64f7d9-654a-46fb-88b9-0d21a419e4fc"
+    },
+    {
+      "claim_id": "fc98e7bb-4a6c-4c50-8d3f-1f8e191bc3ba",
+      "result_id": "bd64f7d9-654a-46fb-88b9-0d21a419e4fc"
+    },
+    {
+      "claim_id": "0b03b6d0-71e9-4401-8b01-378c04b61ec4",
+      "result_id": "bd64f7d9-654a-46fb-88b9-0d21a419e4fc"
+    },
+    {
+      "claim_id": "a13967f9-644d-4f2a-98cb-28f0081368de",
+      "result_id": "bd64f7d9-654a-46fb-88b9-0d21a419e4fc"
+    },
+    {
+      "claim_id": "57b8f678-9570-4534-b5e6-3cb1f5656317",
+      "result_id": "cc65bfa6-fba9-459e-8d28-073efe8093c2"
+    },
+    {
+      "claim_id": "62632626-0667-4118-85c8-81b7c9cfd7b6",
+      "result_id": "cc65bfa6-fba9-459e-8d28-073efe8093c2"
+    },
+    {
+      "claim_id": "6b17181c-a338-4d8a-984f-13c48ff0906d",
+      "result_id": "cc65bfa6-fba9-459e-8d28-073efe8093c2"
+    },
+    {
+      "claim_id": "b5c5e2ee-b51d-415f-939e-af1ed950af08",
+      "result_id": "cc65bfa6-fba9-459e-8d28-073efe8093c2"
+    },
+    {
+      "claim_id": "42b4557b-0ef9-4a2a-85c5-64de27b07192",
+      "result_id": "cc65bfa6-fba9-459e-8d28-073efe8093c2"
+    },
+    {
+      "claim_id": "e0c59513-e9b2-48e8-b956-a2c3938c27f4",
+      "result_id": "cc65bfa6-fba9-459e-8d28-073efe8093c2"
+    },
+    {
+      "claim_id": "0b084275-a9cb-4a5d-bdfb-ab634b11648a",
+      "result_id": "cc65bfa6-fba9-459e-8d28-073efe8093c2"
+    },
+    {
+      "claim_id": "801ed142-adeb-4e68-910b-c0c83ce563dc",
+      "result_id": "1f42f696-e34e-469a-a392-e49b65e47dba"
+    },
+    {
+      "claim_id": "697c57d9-4414-4dc7-8716-e5979ff3eb71",
+      "result_id": "1f42f696-e34e-469a-a392-e49b65e47dba"
+    },
+    {
+      "claim_id": "b7ac1814-1069-4556-87c6-e0af3d515edb",
+      "result_id": "1f42f696-e34e-469a-a392-e49b65e47dba"
+    },
+    {
+      "claim_id": "3efa99f6-254c-4317-9ff1-411cd7db250a",
+      "result_id": "1f42f696-e34e-469a-a392-e49b65e47dba"
+    },
+    {
+      "claim_id": "5eeaa438-1fcb-4d1c-916a-bb38aafc986b",
+      "result_id": "1f42f696-e34e-469a-a392-e49b65e47dba"
+    },
+    {
+      "claim_id": "f33f3b1e-68b4-4a52-ab56-3a03b6eae863",
+      "result_id": "1f42f696-e34e-469a-a392-e49b65e47dba"
+    },
+    {
+      "claim_id": "c8cb730b-3e56-4a59-8c87-b40a08caaa74",
+      "result_id": "c3832f72-e94f-4e7f-a485-f41fedaa4826"
+    },
+    {
+      "claim_id": "1e1ab9c5-144f-4cd7-9d69-6d935d4c559b",
+      "result_id": "c3832f72-e94f-4e7f-a485-f41fedaa4826"
+    },
+    {
+      "claim_id": "3012da2e-b67b-4b6a-878f-d851d381cfdb",
+      "result_id": "c3832f72-e94f-4e7f-a485-f41fedaa4826"
+    },
+    {
+      "claim_id": "7ebb2fb3-bb13-4875-b190-0a139cebafb4",
+      "result_id": "c3832f72-e94f-4e7f-a485-f41fedaa4826"
+    },
+    {
+      "claim_id": "e553aeb9-ca8c-4e66-a8fa-b1facf7e6a9b",
+      "result_id": "c3832f72-e94f-4e7f-a485-f41fedaa4826"
+    },
+    {
+      "claim_id": "9ed8c21a-24cf-479e-a9bc-4edad2776dce",
+      "result_id": "c3832f72-e94f-4e7f-a485-f41fedaa4826"
+    },
+    {
+      "claim_id": "ca1236e5-adb0-490c-b597-e5ac7faf5b62",
+      "result_id": "d043e0cb-1f9d-4b06-b41a-7449f4f1ad8d"
+    },
+    {
+      "claim_id": "b0e4d5b9-3d1a-4d77-9117-5aa0c655aa53",
+      "result_id": "d043e0cb-1f9d-4b06-b41a-7449f4f1ad8d"
+    },
+    {
+      "claim_id": "d0918fa2-ad58-46ae-b40b-302e98371919",
+      "result_id": "92419987-50fe-4083-a2af-52cf7e90eff3"
+    },
+    {
+      "claim_id": "c643e49b-8dc5-4109-b3d2-7107902d79df",
+      "result_id": "92419987-50fe-4083-a2af-52cf7e90eff3"
+    },
+    {
+      "claim_id": "bef38a1c-df9d-4ff5-ba83-5b9024099cbf",
+      "result_id": "92419987-50fe-4083-a2af-52cf7e90eff3"
+    },
+    {
+      "claim_id": "a223fdd3-5336-47a0-b008-fd21eda4570d",
+      "result_id": "36601f87-413a-4f16-8c40-9cc6b88f890e"
+    },
+    {
+      "claim_id": "fcf21d8f-a888-493b-92a2-f99014e7c683",
+      "result_id": "36601f87-413a-4f16-8c40-9cc6b88f890e"
+    },
+    {
+      "claim_id": "f68aabaf-5016-4ebb-91b7-5c190102a7db",
+      "result_id": "a9a9ba94-076a-401f-af1a-8a687ef12622"
+    },
+    {
+      "claim_id": "91717a15-8010-4d62-9cda-0f10665d48c3",
+      "result_id": "3a33f3c5-2759-4fa4-839b-d0103220e687"
+    },
+    {
+      "claim_id": "593c2a10-90ea-4bb7-b103-42a431754ba5",
+      "result_id": "3a33f3c5-2759-4fa4-839b-d0103220e687"
+    },
+    {
+      "claim_id": "32a4b2eb-45ed-4693-b795-863a8a59b5d7",
+      "result_id": "0e1de10f-2e5b-4b84-a33a-193a45ae1964"
+    },
+    {
+      "claim_id": "457cd9ac-7eb1-4e53-9bf5-dc70556751a2",
+      "result_id": "b729499f-2181-4495-bf08-bc5c6cf59fe9"
+    },
+    {
+      "claim_id": "d0682a8e-0c4c-4e8a-a72d-064147f40187",
+      "result_id": "b729499f-2181-4495-bf08-bc5c6cf59fe9"
+    },
+    {
+      "claim_id": "24b506ec-1c94-4c5f-a720-c989097443f5",
+      "result_id": "b729499f-2181-4495-bf08-bc5c6cf59fe9"
+    },
+    {
+      "claim_id": "1c257989-bc75-453f-a8ec-77f5129e2f91",
+      "result_id": "2639a155-c210-4fe9-8920-c34b8e5f7267"
+    },
+    {
+      "claim_id": "ea76833c-0c9e-408d-85e5-ec3aea3151c6",
+      "result_id": "2639a155-c210-4fe9-8920-c34b8e5f7267"
+    },
+    {
+      "claim_id": "3b4f747b-689f-4e6d-bc15-44e06deca2b9",
+      "result_id": "2639a155-c210-4fe9-8920-c34b8e5f7267"
+    },
+    {
+      "claim_id": "8978238c-cc2a-4512-ad98-97dd9e10264e",
+      "result_id": "2639a155-c210-4fe9-8920-c34b8e5f7267"
+    },
+    {
+      "claim_id": "b73e5b87-940c-4f50-be2e-537eaa9532df",
+      "result_id": "8746fced-a377-40c4-8929-21d18014a2a2"
+    },
+    {
+      "claim_id": "46b51ba5-f55c-4e20-9383-8885a191d318",
+      "result_id": "8746fced-a377-40c4-8929-21d18014a2a2"
+    },
+    {
+      "claim_id": "6534c05c-b748-4014-b77c-262882c284b9",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "7b8f3ad3-ff51-4b1f-8cf8-dcd53f6374e9",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "fbf1cb9a-6ec1-4f0d-a281-00404ec3139e",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "1726e38c-19fa-435b-ba64-d2a435a2b676",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "4f23b1f4-6d3a-4fec-b3d7-9c0b3c9807be",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "9a3b05c3-3978-4299-a6ff-d2e45641f3a5",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "3372c171-06e7-48cc-ae3b-0eb9171db62e",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "b3e99e69-c650-4aa1-b69f-fe495787f3b9",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "3db26128-600f-48e6-b0e9-1dd338998208",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "e43a437b-2530-426f-ac62-f77b23f9079f",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "17136ca7-f88b-4cef-ba62-699beb4adba3",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "cd65c014-cf72-4254-b6ba-c7fdc00598cb",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "e07e3d6a-2f17-41e1-8896-aa60fc93d570",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "b3ef0456-694b-4e26-9d2f-0c87617b70b2",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "2fb6aa93-b89c-4a8e-a6b1-903c5259ef53",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "894dac21-05ec-4ed7-9a7e-081727c598c8",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    },
+    {
+      "claim_id": "1f7bcde0-2e96-46ab-952b-2456396bb1cb",
+      "result_id": "546d7260-c266-4205-b315-b33f2eb815ed"
+    }
+  ],
+  "comparisons": []
+}

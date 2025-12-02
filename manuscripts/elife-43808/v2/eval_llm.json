@@ -1,0 +1,436 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Adenine supplementation in yeast growth medium significantly increases intracellular ATP and NAD+, while decreasing ZMP, SZMP, and fumarate. Additionally, adenine feeding increases purine nucleosides/nucleobases and alters several NAD+ de novo pathway metabolites including tryptophan, nicotinic acid, kynurenine, 3-hydroxy-L-kynurenine, and 3-hydroxy-anthranilate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 are well-supported by experimental data shown in Figure 2 with appropriate statistical analysis (p-values provided). The metabolic profiling was performed on multiple biological replicates (N\u22655) with proper normalization by cell number and volume. The results are consistent with prior literature (citations provided) and demonstrate clear metabolic effects of adenine supplementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Modifying intracellular ATP levels through multiple genetic and nutritional perturbations (adk1 mutant, kcs1 mutant, prs3 mutant, phosphate limitation) consistently results in concomitant changes in intracellular NAD+, establishing a correlation between ATP and NAD+ levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 are supported by experimental data from multiple independent approaches (genetic mutants and nutrient limitation) shown in Figure 3 and supplements. The use of multiple experimental systems strengthens the conclusion. However, correlation does not establish causation or directionality, which is addressed in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "NAD+ synthesis is highly dependent on intracellular ATP, primarily through the salvage pathway utilizing nicotinic acid. Nicotinic acid depletion dramatically reduces NAD+ without affecting ATP, but in low-ATP conditions (adk1 mutant), nicotinic acid supplementation cannot restore NAD+ levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are well-supported by experimental data in Figure 3C-D demonstrating asymmetric dependency: NAD+ depends on ATP but not vice versa. The use of the adk1 mutant provides a critical test of directionality. The conclusion that the salvage pathway is the major NAD+ source is supported by both current data and cited literature (Sporty et al., 2009).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The npt1 mutation, which blocks nicotinic acid utilization, abolishes ATP-dependent stimulation of NAD+ synthesis. In the kcs1 npt1 double mutant, ATP is high but NAD+ remains low, demonstrating that ATP stimulates NAD+ synthesis specifically through the nicotinic acid salvage pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by genetic epistasis analysis shown in Figure 3\u2014figure supplement 5. The double mutant experiment provides strong evidence for pathway specificity. The conclusion that ATP variations affect NAD+ but not vice versa under standard conditions is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The BNA genes encoding NAD+ de novo pathway enzymes are transcriptionally upregulated under conditions of (S)ZMP accumulation via the Bas1/Pho2 transcription factors. This upregulation is abolished in bas1 or pho2 mutants but not in pho4 mutants, and results in increased Bna4 and Bna6 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C84 are supported by multiple lines of evidence: transcriptome data (Figure 4A), northern blots (Figure 4B), and western blots (Figure 4C-D). The genetic analysis with transcription factor mutants provides mechanistic insight. The use of both transcript and protein measurements strengthens the conclusions. Appropriate controls (Ade4, Ade13, Pgk1) are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "(S)ZMP is necessary and sufficient to increase flux through the NAD+ de novo pathway, as demonstrated by decreased tryptophan consumption and increased pathway intermediates in (S)ZMP-accumulating mutants. AICAR addition dose-dependently increases ZMP, SZMP, and pathway intermediates while decreasing tryptophan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are well-supported by metabolic profiling data in Figure 5A-L. The use of both genetic (ade16 ade17 mutant vs. quadruple mutant) and pharmacological (AICAR addition) approaches provides strong evidence for necessity and sufficiency. The dose-response with AICAR strengthens the causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "When the salvage pathway is active (nicotinic acid present), (S)ZMP accumulation does not affect intracellular NAD+ or nicotinic acid levels. However, when the salvage pathway is blocked (npt1 mutant or nicotinic acid-free medium), (S)ZMP accumulation increases NAD+ through the de novo pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by experiments comparing conditions with and without functional salvage pathway (Figure 5M-O, Figure 5\u2014figure supplement 1). The results demonstrate that the salvage pathway masks the effect of de novo pathway upregulation, consistent with the claim that salvage is the predominant route (C97, supported by Sporty et al., 2009).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Intracellular NAD+ remains responsive to adenine supplementation in bna2 and bna6 mutants that block the de novo pathway, establishing that flux through the de novo pathway is not strictly required for the adenine effect on NAD+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by data in Figure 6\u2014figure supplement 1 showing that bna2 and bna6 mutants still respond to adenine. This genetic evidence demonstrates that the adenine effect operates independently of de novo pathway flux, supporting the importance of the salvage pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "ATP enhances nicotinic acid utilization in yeast. In the kcs1 mutant with constitutively high ATP, intracellular nicotinic acid is low and unaffected by adenine limitation. An inverse correlation exists between intracellular ATP and nicotinic acid levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by metabolic measurements in Figure 6A-B. The use of the kcs1 mutant provides a genetic test of the ATP effect. The inverse correlation between ATP and nicotinic acid is consistent across wild-type and mutant strains, supporting the conclusion that ATP enhances nicotinic acid utilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "In the npt1 mutant, which cannot utilize nicotinic acid, intracellular nicotinic acid accumulates and is no longer affected by adenine supplementation, demonstrating that adenine affects nicotinic acid utilization rather than uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by data in Figure 6C and Figure 6\u2014figure supplement 2. The npt1 mutant provides a clear genetic test distinguishing uptake from utilization. The accumulation of nicotinic acid in the mutant and loss of adenine responsiveness strongly support the conclusion about utilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Nma1 is a major controller of NAD+ synthesis. Overexpression of NMA1 (but not NMA2, NPT1, or QNS1) significantly increases NAD+ levels. The nma1 mutant shows much greater defects in NAD+ synthesis than nma2, and the adenine response is lost in nma1 mutants but restored by NMA1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C114 are well-supported by systematic overexpression experiments (Figure 7A-B) and mutant analysis (Figure 7C-F). The differential effects of NMA1 vs. NMA2 are consistent with prior literature (Croft et al., 2018). The genetic rescue experiment (C112) provides strong evidence for Nma1's role in the regulatory process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The Nma1/Nma2-catalyzed step is a bottleneck for NAD+ synthesis, particularly when ATP is low. NPT1 overexpression causes NaMN accumulation without increasing NAD+, while NMA1 overexpression increases both NaAD+ and NAD+. NaMN accumulation from NPT1 overexpression is greater when ATP is lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 are supported by metabolic profiling of overexpression strains (Figure 7\u2014figure supplements 1-2). The identification of NaMN and NaAD+ peaks and their differential accumulation patterns provide strong evidence for the bottleneck at the Nma1/Nma2 step. The ATP-dependence of the bottleneck (C119-C120) is particularly well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Under physiological conditions in wild-type cells, NaMN is more abundant when adenine is absent (low ATP), while NaAD+ is higher when adenine is present (high ATP). This demonstrates that nicotinic acid mononucleotide adenylyltransferase (Nma1/Nma2) is limiting for NAD+ synthesis especially when ATP is low, and that ATP and Nma1 jointly control NAD+ synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 are supported by metabolic measurements in wild-type cells (Figure 8A-D) and bna2 mutants (Figure 8\u2014figure supplement 1). The physiological relevance is strengthened by demonstrating the effect in prototrophic strains without genetic manipulation. The reciprocal changes in NaMN and NaAD+ with adenine/ATP status provide strong evidence for the bottleneck.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "When ATP is lower, yeast cells stimulate NaMN synthesis via the less ATP-requiring de novo route through (S)ZMP-dependent transcriptional upregulation of BNA genes by Bas1/Pho2 transcription factors. This extends the adenine transcriptional regulon to include co-regulation of pyridine, purine, histidine, glutamine, and one-carbon unit pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 integrate findings from multiple experiments and are supported by the combined data. The model (Figure 8E-F) is consistent with all experimental observations. The extension of the adenine regulon (C129) is supported by citation to Ljungdahl and Daignan-Fornier, 2012, and the current findings. The chromatin immunoprecipitation data from Mieczkowski et al., 2006 (C128) provides independent support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "NAD+ synthesis integrates three metabolic parameters: ZMP (via Bas1/Pho2 transcriptional control), ATP (via Nma1 enzymatic activity), and NAD+ itself (via Hst1 feedback). ATP is critical for NAD+ synthesis independently of the de novo pathway, resulting in enhanced nicotinic acid assimilation and higher NAD+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 represent the integrated model synthesizing all major findings. The three-parameter integration model (C132) is well-supported by the experimental data, though the Hst1/NAD+ feedback component relies on prior literature (Bedalov et al., 2003) rather than new data. The independence of ATP effects from de novo pathway (C130) is demonstrated by experiments with bna mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "The adenine effect on NAD+ persists in mutants blocking the pyridine de novo pathway, indicating that an important part of the adenine effect is driven through the salvage pathway rather than the de novo pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by experiments with bna2 and bna6 mutants (Figure 6\u2014figure supplement 1). This result is critical for establishing the relative importance of salvage vs. de novo pathways in the adenine response and is consistent with the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Among yeast phosphoribosyl transferases, Npt1 uniquely requires ATP, not as a co-substrate but to phosphorylate a key histidine residue that stimulates NaMN formation. The in vitro allosteric constant for ATP is around 70 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by citations to established literature (Rajavel et al., 1998 for C136; Hanna et al., 1983 for C137). These are knowledge claims about enzyme mechanism. The authors correctly note that the in vitro Km cannot fully explain in vivo observations, suggesting additional regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Nma1 catalyzes incorporation of an entire AMP molecule into NaMN to form NaAD+. Only the double nma1 nma2 mutant is lethal, indicating both isoforms contribute to activity. Nma1 and Nma2 have very different Km values for ATP (0.1 and 1.4 mM respectively), with Nma1 contributing more to the regulatory process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 combine established biochemical knowledge (C138) with cited literature (C139: Kato and Lin, 2014; Croft et al., 2018; C140: Emanuelli et al., 2003) and current experimental data (Figure 7). The differential contribution of Nma1 vs. Nma2 is well-supported by the mutant analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Intracellular NAD+ concentration is in the same range as ATP (mM), and therefore NAD+ synthesis likely significantly impacts ATP backbone consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 are based on established knowledge about metabolite concentrations (C141) and logical inference about stoichiometry (C142). The inference is reasonable given that NAD+ synthesis consumes ATP as a substrate. However, the actual quantitative impact on ATP consumption is not directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Despite significant effects on ATP and NAD+ levels, adenine supplementation does not affect generation time during exponential growth, illustrating metabolic plasticity. However, adenine availability affects cell volume and biomass production in glucose medium but not in ethanol/glycerol medium, demonstrating that cell size variations are not simply correlated with ATP and NAD+ content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 are supported by growth measurements (Figure 2\u2014figure supplement 2) and metabolic data on different carbon sources (Figure 3\u2014figure supplement 4). The dissociation between metabolite levels and growth rate (C143) and between metabolite levels and cell size in non-fermentable carbon sources (C145-C146) are important observations about metabolic robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "The manuscript presents a model where adenine availability controls NAD+ synthesis through dual mechanisms: in adenine-depleted conditions (low ATP, high (S)ZMP), the de novo pathway is transcriptionally activated but downstream NAD+ synthesis is limited by ATP at the Nma1/2 step; in adenine-replete conditions (high ATP, low (S)ZMP), the salvage pathway is favored and the Nma1/2 bottleneck is loosened, resulting in higher NAD+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C148 represent the summary model integrating all findings (Figure 8E-F). The model is well-supported by the comprehensive experimental data presented throughout the manuscript. The dual control mechanism is demonstrated through multiple independent lines of evidence including genetic, metabolic, and transcriptional analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "(S)ZMP functions as a general transcriptional signal for purine shortage, reflecting broader nutrient limitation. Yeast cells with high (S)ZMP show longer lag times when transferred from poor to rich medium, though doubling time is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C149 is a speculative proposal about the ecological/physiological significance of (S)ZMP signaling, which is reasonable given the data but extends beyond direct experimental evidence. Claim C150 is supported by citation to Ceschin et al., 2015, providing independent evidence for (S)ZMP effects on cellular adaptation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background information on NAD+ function, metabolism, and biological roles in aging and disease, including its role as a coenzyme, co-substrate for various enzymes, its decline with aging, effects of supplementation, and the role of Sir2 sirtuin in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 are background/introduction claims supported by appropriate citations to established literature. These provide context for the study but are not novel findings. All claims are properly attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Description of NAD+ biosynthesis pathways in yeast, including the requirement for nicotinamide moiety and ribose phosphate, the convergence of de novo and salvage pathways at NaMN, the two-step conversion to NAD+, and differences between yeast and human NAD+ recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C25 describe established biochemical pathways with appropriate citations and reference to Figure 1. These are knowledge claims providing necessary background for understanding the experimental work. The pathway descriptions are accurate and well-supported by literature and the figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on transcriptional regulation of BNA genes by NAD+ levels through the Hst1 sirtuin and Sum1 repressor system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are background information supported by citation to Bedalov et al., 2003. This provides context for the NAD+ sensing mechanism in yeast, which is relevant for understanding the regulatory network studied in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background on purine metabolism in yeast, including NAD+ dependence on purine metabolism, ATP synthesis pathways, adenine preference over de novo synthesis, effects of adenine availability on gene expression and ATP levels, allosteric regulation by ATP, and the role of (S)ZMP as transcriptional signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C40 provide essential background on purine metabolism with appropriate citations. These establish the rationale for studying the connection between purine and pyridine metabolism. The claims about (S)ZMP as regulatory signals are particularly important as they set up the novel findings about BNA gene regulation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1501 @@
+{
+  "submission": {
+    "id": "1d307a40-82fa-4ba8-a0b6-7c54e58d975c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:54:16.799743Z",
+    "updated_at": "2025-12-02T21:54:16.799743Z"
+  },
+  "content": [
+    {
+      "id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "submission_id": "1d307a40-82fa-4ba8-a0b6-7c54e58d975c",
+      "content_type": "manuscript",
+      "content_text": "# A statistical framework for assessing pharmacological responses and biomarkers using uncertainty estimates\n\n## Authors\n\n- Dennis Wang<sup>1</sup> ([ORCID: 0000-0003-0068-1005](https://orcid.org/0000-0003-0068-1005)) \u2020\n- James Hensman<sup>3</sup>\n- Ginte Kutkaite<sup>4</sup> ([ORCID: 0000-0002-2918-294X](https://orcid.org/0000-0002-2918-294X))\n- Tzen S Toh<sup>6</sup> ([ORCID: 0000-0003-4211-333X](https://orcid.org/0000-0003-4211-333X))\n- Ana Galhoz<sup>4</sup> ([ORCID: 0000-0001-7402-5292](https://orcid.org/0000-0001-7402-5292))\n- Howard Lightfoot<sup>7</sup>\n- Howard Lightfoot\n- Wanjuan Yang\n- Maryam Soleimani\n- Syd Barthorpe\n- Tatiana Mironenko\n- Alexandra Beck\n- Laura Richardson\n- Ermira Lleshi\n- James Hall\n- Charlotte Tolley\n- William Barendt\n- Jonathan R Dry<sup>8</sup>\n- Julio Saez-Rodriguez<sup>9</sup> ([ORCID: 0000-0002-8552-8976](https://orcid.org/0000-0002-8552-8976))\n- Mathew J Garnett<sup>7</sup>\n- Michael P Menden<sup>4</sup> ([ORCID: 0000-0003-0267-5792](https://orcid.org/0000-0003-0267-5792)) \u2020\n- Frank Dondelinger<sup>11</sup> ([ORCID: 0000-0003-1816-6300](https://orcid.org/0000-0003-1816-6300)) \u2020\n\n### Affiliations\n\n1. Sheffield Institute for Translational Neuroscience, University of Sheffield Sheffield United Kingdom\n2. Department of Computer Science, University of Sheffield Sheffield United Kingdom\n3. PROWLER.io Cambridge United Kingdom\n4. Institute of Computational Biology, Helmholtz Zentrum M\u00fcnchen\u2014German Research Center for Environmental Health Neuherberg Germany\n5. Department of Biology, Ludwig-Maximilians University Munich Martinsried Germany\n6. The Medical School, University of Sheffield Sheffield United Kingdom\n7. Wellcome Sanger Institute Cambridge United Kingdom\n8. Research and Early Development, Oncology R&D, AstraZeneca Boston United States\n9. Institute of Computational Biomedicine,Faculty of Medicine,Heidelberg Universityand Heidelberg University Hospital, Bioquant Heidelberg Germany\n10. German Center for Diabetes Research (DZD e.V.) Neuherberg Germany\n11. Centre for Health Informatics, Computation and Statistics, Lancaster Medical School, Lancaster University Lancaster United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHigh-throughput testing of drugs across molecular-characterised cell lines can identify candidate treatments and discover biomarkers. However, the cells\u2019 response to a drug is typically quantified by a summary statistic from a best-fit dose-response curve, whilst neglecting the uncertainty of the curve fit and the potential variability in the raw readouts. Here, we model the experimental variance using Gaussian Processes, and subsequently, leverage uncertainty estimates to identify associated biomarkers with a new Bayesian framework. Applied to in vitro screening data on 265 compounds across 1074 cancer cell lines, our models identified 24 clinically established drug-response biomarkers, and provided evidence for six novel biomarkers by accounting for association with low uncertainty. We validated our uncertainty estimates with an additional drug screen of 26 drugs, 10 cell lines with 8 to 9 replicates. Our method is applicable to any dose-response data without replicates, and improves biomarker discovery for precision medicine.\n\n## Introduction\n\nThe failure rate for new drugs entering clinical trials is in excess of 90%, with more than a quarter of drugs failing due to lack of efficacy (Arrowsmith and Miller, 2013; Cook et al., 2014). The rapid development of technologies for deep molecular characterisation of clinical samples holds the promise to uncover molecular biomarkers that stratify patients towards more efficacious drugs, a cornerstone of precision medicine. In oncology, we can identify potential biomarkers of drug response in high-throughput screens (HTS) of patient-derived cell lines; these biomarkers need to be then validated in patients.\n\nAssessment of cell line drug response typically involves treatment with multiple concentrations of the compound, followed by measurement of the amount of viable cells after a fixed period of time for each dose, and derivation of a dose-response curve. The drug response is commonly then summarised by measurements taken from this curve, most often the concentration required to reduce cell viability by half that\u00a0is IC50, or the area under the curve that\u00a0is AUC. Currently the two largest in vitro drug screening studies, the Genomics of Drug Sensitivity in Cancer (GDSC) (Garnett et al., 2012; Iorio et al., 2016) and the Cancer Therapeutics Response Portal (CTRP) Rees et al., 2016 have shown that some clinically-actionable biomarkers of drug response can be concordantly discovered (Iorio et al., 2016; Seashore-Ludlow et al., 2015), and that different properties and mechanisms of drug response are best captured by different metrics dependent on the dose-response curve (Fallahi-Sichani et al., 2013).\n\nMost HTS efforts focus on increasing throughput (Iorio et al., 2016; Seashore-Ludlow et al., 2015) and thereby often neglect experimental replicates, which renders it impossible to correct for experimental noise, resulting in uncertainty for the estimated drug-response metrics (e.g. IC50 value). Extrapolating IC50 values beyond the tested drug concentration range is particularly challenging and often unaccounted for in quality control metrics (Haibe-Kains et al., 2013; Haverty et al., 2016). Most published studies using machine learning algorithms or mechanistic models for predicting drug response and biomarkers assume that the measured drug responses are precise (Costello et al., 2014; Keshava et al., 2019; Menden et al., 2019; Silverbush et al., 2017). If this assumption is not met and there is high uncertainty in the measured drug-response values, the utility of these methods for enhancing drug development may be severely limited (Costello et al., 2014; Menden et al., 2019; Silverbush et al., 2017). Experimental noise can be reduced by adding experimental replicates, however, this either reduces the throughput of the screen or increases the cost. Most current models for curve fitting and describing dose-response data have primarily assumed that cell viability has a sigmoidal relationship to the logarithm of the dose concentrations of the drug (Dawson et al., 2012; Wang et al., 2010). Whilst some models are more flexible by allowing many inflection points in the dose-response curve (Di Veroli et al., 2016; Vis et al., 2016), their main output is a single drug-response value that does not fully capture the uncertainty in the measurements (Fallahi-Sichani et al., 2013).\n\nGaussian Processes (GP) are a flexible, probabilistic modelling technique that has been successfully used to measure uncertainty in noisy gene expression datasets (Lopez-Lopera and Alvarez, 2019) and has been incorporated into machine learning prediction of cell fates (Boukouvalas et al., 2018). This technique has been shown to cope well with regression tasks on dependent data and high dimensional covariates (Rasmussen and Williams, 2005; Shi and Choi, 2011). Instead of fitting a single function to the data, GPs allow for a flexible range of beliefs about the function underlying the data (Tian et al., 2017). In the case of cell line drug responses, this can be conceptualised as fitting a range of curves that have equivalently strong fit to the data. We can sample from the inferred posterior distribution over functions, that\u00a0is the variance between these curves, to generate uncertainty estimates of quantities of interest, in our case, properties of the dose-response such as IC50.\n\nGPs have been recently utilised to identify and guide experimental validation of compounds, on top of being applied to protein engineering and imputing gene expression values (Hie et al., 2020). GPs have also been used in conjunction with neural networks to model dose-response curves as a function of molecular markers (Tansey et al., 2018). The main objective in this work was to predict drug response using the molecular measurements, and the non-linear nature of the prediction model makes interpretation for the purpose of biomarker detection challenging. By contrast, we aimed to develop a model that could provide interpretable summary statistics with uncertainty estimates that can be flexibly used to improve biomarker detection.\n\nIn this study, we therefore introduce a new GP regression approach for describing dose-response relationships in cancer cell lines that quantifies the uncertainty of the model fitted to measured responses for each single experiment, and we show that estimates of IC50 values within the tested concentration range correlates with confidence intervals obtained experimentally from replicate experiments. Subsequently, we use our new dose-response model to identify genetic sensitivity and resistance biomarkers in standard statistical tests (e.g. ANOVA). We demonstrate how the flexibility of the GP dose-response modelling can be further exploited in a Bayesian framework to identify novel biomarkers. We also describe the variation in the level of drug response uncertainty across cancer types and drug classes. By accounting for the uncertainty in dose-response experiments, detection of clinically-actionable biomarkers can be enhanced.\n\n## Results\n\n### A probabilistic framework for measuring dose-response and predicting biomarkers\n\nWe analysed in vitro screening data on 265 compounds across 1,074 cell lines (Iorio et al., 2016). In those experiments, we quantified the amount of cytotoxicity after four days of compound treatments at each dose compared to controls (Figure 1A). The relationship between the dose and response (decrease in cell viability) was first described using a dose-response curve derived with a sigmoidal function (Figure 1B and C). This assumes that the number of viable cells decreases at an exponential rate, then slows down and eventually plateaus at a lower limit. Since it was costly to test all possible doses, the sigmoid function was used to extrapolate the response at concentrations that had not been tested and to estimate overall measures of response, such as IC50 or AUC values, for downstream analysis. However, considering that each experiment tested only between five and nine dosage concentrations per experiment in GDSC, and a maximum of 16 in CTRP, the tightness of fit of the dose-response curve to the data points and therefore the level of uncertainty about the inferred response may vary. We utilised the probabilistic nature of GP models to quantify the uncertainty in the dose-response experiments as an alternate approach (Figure 1D). We sampled from the fitted GP and used the posterior distribution to quantify the uncertainty in curve fits for each experiment. We again generated summary statistics, IC50 and AUC values, by taking the average of the GP samples and also quantified the level of uncertainty for these statistics (Figure 1E). The GP model has the advantage that it models outliers at higher doses as one component of a two-component Beta mixture in the model (see Materials and methods). Such outliers are typically the result of an experimental failure, and cannot be modelled using simple Gaussian noise without over-estimating the noise parameter.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig1-v3.jpg)\n\n**Figure 1.:** (A) Large-scale drug screens test cell lines with different drugs and at different doses are used to obtain dose-response data. (B) Typically, for each drug tested in a cell line, the sigmoid model is fit to the drug-response data and (C) the overall measures of response (IC50, AUC, etc.) are extracted. (D) For each drug tested in a cell line, we fit a GP model to the dose-response data. The GP allows us to sample from a distribution of possible dose-response curves, obtaining a measure of uncertainty. (E) From these curves, we can extract overall measures of response, such as IC50, and importantly, their 95% confidence intervals. (F) Mutation markers for each cell line can be determined based on presence/absence of single nucleotide polymorphisms (SNPs) in key genes. Both the drug-response estimates and the mutation markers are used to compute (G) the F-statistic for ANOVA, and (H) Bayesian test for biomarker association. The drug-response summary measure\u00a0gi for cell\u00a0line\u00a0i is modelled via a cell\u00a0line- specific mean \u00b5i\u00a0and standard error \u03c3i. The mean is defined as a linear effect\u00a0\u03b2 of the biomarker status zi\u00a0and a further effect\u00a0\u03b3 from any remaining covariates xi, such as tissue type. The parameter \u03c3*\u00a0is the standard deviation of \u00b5i. (I) Boxplots illustrate the differences in the estimated mean IC50 of ERBB2 amplified and non-amplified breast cancer cell lines treated with afatinib. An ANOVA test was used to test this difference in means but did not consider uncertainty in each IC50 estimate. (J) We estimated posterior distributions of gene association using the Bayesian model, that\u00a0is the effect of a genetic mutation on the IC50 measurement of drug response. Distributions centred on zero indicate no effect whilst distributions on either side of zero indicate positive or negative effects of mutations on drug response.\n\nAfter fitting the dose-response data using the sigmoid and GP models, we tested various biomarker hypotheses by examining the association between the overall response statistics from the models with genetic variants detected in the cell lines using a frequentist and a Bayesian approach (Figure 1F\u2013H). For one biomarker hypothesis, as an example, we examined copy number alterations and point mutations in breast cancer cell lines in relation to the measured drug response of afatinib in those cells. The GP and sigmoid estimated IC50 from cell lines treated with afatinib were significantly different in cases with and without ERBB2 amplification (ANOVA q-value\u00a0=\u00a04.12e-9; Figure 1I). The GP models provided an added benefit of providing uncertainty estimates that were incorporated into a Bayesian hierarchical model to further verify the association between ERBB2 amplification and afatinib sensitivity (posterior probability\u00a0=\u00a00.001; Figure 1J).\n\n### Gaussian Processes provide estimates of dose-response uncertainty for single experiments\n\nBoth GP and sigmoid curve fitting produced comparable IC50 and AUC estimates. Precursor sigmoid curve fitting methods based on Markov Chain Monte Carlo simulations enabled error estimates in IC50 values (Garnett et al., 2012), however, this was neglected in the state-of-the-art sigmoid curve fitting (Vis et al., 2016) due to missing propagation to biomarker identification. Here, we introduce the added benefit of sampling from the GP posterior, which provides the models in-build uncertainty obtained for these IC50 estimates. This is important for high-throughput drug screening experiments where there is often a high number of drugs and samples tested but very few replicate experiments. By applying the GP model to each experiment, we estimated the standard deviation for each IC50 or AUC value based only on data points from that single experiment. These single sample standard deviations were compared to the standard deviations measured from here provided replicate experiments, that\u00a0is the same drug tested multiple times on the same cell line and at the same concentration. We applied our GP estimation method to data from replicate experiments of 26 drugs on 10 cell lines, which contained 260 test conditions and 8 to 9 replicates for each condition. We wanted to see if an estimate of the uncertainty of the summary statistic, such as the standard deviation of the IC50 posterior samples, would be correlated with the dispersion between replicates. Here, we refer to the variability between (mean) estimates for replicates as the observation uncertainty, and the variability in the estimate for a single replicate as the estimation uncertainty.\n\nWe compared observation and estimation uncertainty across replicate experiments of all 260 conditions (Figure 2A). When the estimation uncertainty is large, we will have less confidence in the estimated IC50 in an experiment. Measurement errors for individual points in a dose-response curve will generally result in larger estimation uncertainty, whereas greater variation between biological replicates will result in larger observation uncertainty. We found two trends in the relationship between observation and estimation uncertainty. First, for experiments where the estimated IC50 lies within the concentration range tested, the estimation uncertainty is positively correlated (Pearson correlation\u00a0=\u00a00.84, 95% CI [0.76, 0.89]) with the observation uncertainty. Second, for experiments where the estimated IC50 lies beyond the maximum tested concentration, we observed a negative correlation (Pearson correlation\u00a0=\u00a0\u22120.39, 95% CI [\u22120.51,\u20130.25]). We note that the latter experiments require extrapolation to estimate the IC50 beyond the concentration range, which increases the estimation uncertainty, but does not generally affect the observational uncertainty. However, we observed that the estimation uncertainty from our GPs for dabrafenib (BRAF inhibitor) tested in two independent studies on the same cell lines were comparable both within and beyond the concentration range (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig2-v3.jpg)\n\n**Figure 2.:** (A) Comparison between observational uncertainty (standard deviation over replicates of log10(IC50) mean estimates) and estimation uncertainty (average over replicates of log10(IC50) standard deviation) from each replication experiment. The colour of the points indicates whether the log10(IC50) mean estimates were within or outside the maximum concentration range for each assay. (B) Mean IC50 and the estimation uncertainty from the GPs for a BRAF inhibitor (dabrafenib) tested in each cell line in two independent studies (GDSC and CTD2). Estimation uncertainty (error bars and grey shading) were larger beyond the max concentration in both GDSC (dashed line) and CTD2 (grey line). The point estimates of the IC50s from the GPs (black dots) were also comparable to the published IC50s (red dots). (C-E) Three sets of replicate experiments, representing different amounts of estimation and observation uncertainty. Each density represents the distribution of IC50 values from the Gaussian process samples from each replicate experiment. The colours represent different experimental batches. Narrow distributions demonstrate low estimation uncertainty and overlapping distributions demonstrate low observation uncertainty. The thick black line represents the density obtained by pooling samples from all replicates and the dashed line shows the maximal dosage tested. GP-curve fits corresponding to the three sets of replicate experiments showing IC50 estimates with (F) high uncertainty, (G) low uncertainty, and (H) mix of uncertainties depending on whether estimates are made within or beyond the max concentration. The blue areas represent the 95% confidence interval in the curve fits and extrapolated GP curves (light grey lines) are displayed up to five times the maximum concentration, where the uncertainty will be extremely high.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Scatterplot of observation uncertainty against average estimation uncertainty, split by experimental batch.\n\nSince the replicate experiments were conducted in batches over a period of several months, we verified that the observed trends held regardless of batches (Figure 2\u2014figure supplement 1). Additionally, we examined the relationship between estimation uncertainty and observation uncertainty in a number of edge cases where IC50 was estimated within and beyond the maximum concentration tested (Figure 2C\u2013E). In the case of olaparib tested on PC-14, the uncertainty for the IC50 within each replicate experiment was high, and this level of uncertainty was consistent across all replicates even beyond the max concentration (Figure 2C and F). In other replicate experiments, both estimation and observation uncertainty were low (Figure 2D and G), or varied depending on whether the batch reported mostly IC50 values beyond the concentration range. Talazoparib tested in colorectal cancer line HCT-15 is a case where observation uncertainty was high, even though estimation uncertainty was low, and experiments in different batches showed different estimated IC50s from very different dose-response curves (Figure 2E and H).\n\nIn order to examine the diversity of uncertainty estimates across experiments further, we described the relationship between AUC value of GP fits with their corresponding estimation uncertainty (Figure 3). We decided to use AUC here due to the greater uncertainty of estimating IC50s beyond the maximum dose concentration. Since AUCs were computed within the tested concentration range, the estimation uncertainty for AUC was not substantially higher for cases where IC50s were estimated within compared to beyond the maximum concentration (Figure 3\u2014figure supplement 1A). The difference between the AUC estimates from the GP compared to the published GDSC sigmoid curve fits was greatest for experiments showing a partial response (AUC between 0.4 and 0.9), whilst at the same time these experiments also had the highest estimation uncertainty (Figure 3A). Our visual examination of the raw dose-response data from those experiments revealed evidence of poor quality readouts, for instance, where cell viability increases with increasing drug dose (Figure 3\u2014figure supplement 1B). We were able to quantify the quality of these readouts by estimating the Spearman correlation coefficient based on the raw cell viability counts and the dose concentrations (Figure 3B). A negative Spearman correlation indicates that cell viability decreases as dosage increases (as expected) whilst a positive Spearman correlation indicates the opposite. The experiments with high estimation uncertainty from our GPs were also the experiments with high Spearman correlation pointing to poor quality.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig3-v3.jpg)\n\n**Figure 3.:** (A) Coloured by difference between the AUC estimated by sigmoid vs GP fits. (B) Coloured by Spearman correlation between cell viability and dose concentration in the raw data. Poorer experiments (orange-red) result in greater uncertainty and positively correlated with cell viability increasing with higher dose. (C) Average uncertainty and AUC for experiments with uncertain fits (estimation uncertainty\u00a0>0.03) with drugs grouped by their target pathway. (D) Distribution of estimation uncertainty for all drugs targeting chromatin histone methylation, chromatin histone acetylation, and mitosis and (E) for individual drugs.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Estimation uncertainty for AUC (standard deviation) across replicate experiments were robust to whether the IC50 was within or beyond the maximum concentration tested. (B) Dose- response of a single experiment where there was high estimation uncertainty (dotted red line) despite the fitted curve (red line) crossing 50% viable cells before reaching the max dose concentration (dotted green line). The probability distribution of IC50 is estimated across dose concentrations (solid green line), however, raw data points (red dots) show increased cell viability with increased dose.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Estimation uncertainty grouped by (A) cancer type of cell lines, (B) growth media used, (C) tissue of origin, (D) growth condition of the cells, (E) dilution factor for each dose tested of a drug, and (F) target pathways of drugs.\n\nNext, we investigated whether there were any attributes of experiments that would correspond to high estimation uncertainty and poor quality results. Labelling of experiments based on cell culture conditions, dose and cancer type revealed no obvious associations with estimation uncertainty (Figure 3\u2014figure supplement 2A\u2013E). However, there was a large spread in the uncertainty estimates for AUC when we grouped the experiments into target pathways based on the primary targets of the tested drugs (Figure 3C; Figure 3\u2014figure supplement 2F). Whilst most drugs had similar average AUC point estimates between 0.6 and 0.8, suggesting they all had a spread of experiments showing resistance and sensitivity, the average estimation uncertainties varied across target pathways. Interestingly, similar target pathways (e.g. chromatin histone methylation and chromatin histone acetylation) had very different levels of estimation uncertainty. Within each of these target pathways, we also see different distributions of estimation uncertainties (Figure 3D). Most target pathways have a bi-modal distribution representing compounds that have low uncertainty in the cases of clear sensitivity or resistance, and high uncertainty in the cases of partial responders (Figure 3E). Both chromatin histone methylation drugs in particular had a much longer right tail towards higher estimation uncertainties that are associated with poor experimental readouts, or possibly off-targets.\n\n### Curve fits using Gaussian Processes can help identify clinically relevant biomarkers\n\nThe IC50 values are highly conconcordant for sigmoid and GP-curve fittings, showing an average weighted Pearson correlation of 0.88 (95% CI [0.85; 0.91]) across individual drugs, and cancer types (Figure 4A). Strong agreement is found when true responding cell lines were observed in the screen (Figure 4B). For example, if\u00a0>10% of cell lines responded within the concentration range, that\u00a0is IC50\u00a0<maximum tested concentration, then a weighted Pearson correlation\u00a0>0.75 was consistently achieved for all drugs. We found positive correlations for all drugs, even when comparing exclusively non-responding cell lines, where all the IC50 values are extrapolated beyond the maximum dosage range. Drug-response values are concordantly fitted with both methods for sensitive cell lines (Figure 4C, mean log10(IC50) in \u00b5M of 0.02 95% CI [\u22120.05; 0.09]), whilst extrapolated non-responders tend to lead to more conservative and higher IC50 values fitted with GP (Figure 4C, mean log10(IC50) in \u00b5M of 1.10, 95% CI [1.03; 1.18]). Whilst the average fits from the sigmoid and GP models identify known clinical biomarkers, there are clearly differences for individual cell lines, especially when the IC50 value has been extrapolated beyond the dosage range, that may help identify new biomarkers. Alternatively, AUC values can be used to compare both curve fitting methods (Figure 4\u2014figure supplement 1). Whilst known clinical biomarkers are recovered with AUC as a drug-response metric, IC50 measures were used in the subsequent analysis as they retain direct relationship with the drug concentration and are more interpretable.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig4-v3.jpg)\n\n**Figure 4.:** (A) Weighted Pearson correlation of each drug within cancer types. (B) Comparing the concordance of sigmoid and GP-curve fitting when stratifying for percentage of cell lines with IC50 value lower than maximum concentration. (C) IC50 value difference between GP and sigmoid curves. Grey histogram represents frequency distribution of the IC50 value difference between GP and sigmoid curves without stratification by within/outside the concentration range. (D) Drug-response biomarker comparison based on both curve fittings (sigmoid vs GP). The Benjamini-Hochberg adjusted p-values are in log10 scale and signed based on the direction of the effect size (Cohen\u2019s d). Additional biomarker examples for (E) diffuse large B-cell lymphoma (DLBCL) treated with nutlin-3a (MDM2 inhibitor) and stratified by TP53 mutants; (F) Low grade glioma (LGG) treated with daporinad (NAMPT inhibitor) and stratified by EGFR amplification; (G) Skin cutaneous melanoma (SKCM) treated with doramapimod (p38 and JNK2 inhibitor) and stratified with ARID2 mutations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** GP fitted log10(IC50)s with standard error (grey error bars) of the cell lines treated with (A) Lapatinib and (B) Nutlin-3a. GP fitted AUCs with standard error (grey error bars) of the cell lines treated with (C) Lapatinib and (D) Nutlin-3a. Volcano plot of drug-response biomarker associations based on (E) sigmoid and (F) GP-curve fitting using AUC as a measure. (G) Drug-response biomarker comparison based on both curve fittings.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Volcano plot of drug-response biomarker associations based on (A) sigmoid and (B) GP-curve fitting. (C) Drug-response biomarker comparison based on both curve fittings, and colour coding percentage of drug-response data observed within- concentration range.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Dashed line depicts maximum concentration. (A) Skin cutaneous melanoma (SKCM) treated with PLX-4720 (BRAF inhibitor) and stratified with BRAF mutations; (B) Skin cutaneous melanoma (SKCM) treated with PLX-4720 (BRAF inhibitor) and stratified with BRAF mutations - replicate; (C) Skin cutaneous melanoma (SKCM) treated with Dabrafenib (BRAF inhibitor) and stratified with BRAF mutations; (D) Thyroid carcinoma (THCA) treated with Dabrafenib (BRAF inhibitor) and stratified with BRAF mutations; (E) Lung adenocarcinoma (LUAD) treated with Afatinib (ERBB2, EGFR inhibitor) and stratified with EGFR mutations; (F) Lung adenocarcinoma (LUAD) treated with Afatinib (ERBB2, EGFR inhibitor) and stratified with EGFR mutations - replicate; (G) Lung adenocarcinoma (LUAD) treated with Gefitinib (EGFR inhibitor) and stratified with EGFR mutations; (H) Breast invasive carcinoma (BRCA) treated with Lapatinib (ERBB2, EGFR inhibitor) and stratified with ERBB2 amplifications; (I) Acute Myeloid Leukemia (LAML) treated with nutlin-3a (MDM2 inhibitor) and stratified by TP53 mutants; (J) Ovarian serous cystadenocarcinoma (OV) treated with nutlin-3a (MDM2 inhibitor) and stratified by TP53 mutants; (K) Glioblastoma multiforme (GBM) treated with nutlin-3a (MDM2 inhibitor) and stratified by TP53 mutants; (L) Skin cutaneous melanoma (SKCM) treated with nutlin-3a (MDM2 inhibitor) and stratified by TP53 mutants.\n\nTo highlight the overall agreement of both curve fitting methods, we systematically tested 26 clinically established biomarkers of drug response (Figure 4D, Figure 4\u2014figure supplement 2A\u2013C, Supplementary file 1) using previously established association tests (Iorio et al., 2016), 24 of which were significantly reproduced regardless of sigmoid or GP-curve fitting (10% FDR). For example, both curve fittings captured the association of BRAF inhibitors (PLX4720, progenitor of vemurafenib; and dabrafenib) with BRAF mutations in melanoma (Figure 4\u2014figure supplement 3A\u2013C; Chapman et al., 2011). Dabrafenib is a potent BRAF inhibitor and in addition we detected BRAF mutations as a sensitivity marker in thyroid carcinoma (Figure 4D, Figure 4\u2014figure supplement 3D). Another example are the EGFR inhibitors, afatinib and gefitinib, that are concordantly correlated with drug sensitivity in EGFR mutant cell lines in lung adenocarcinoma (Figure 4\u2014figure supplement 3E\u2013G; Tamura and Fukuoka, 2005; Yang et al., 2012). ERBB2(HER2) amplification in breast cancer was also recapitulated as a biomarker of sensitivity to the dual EGFR/ERBB2 inhibitor lapatinib (Figure 4\u2014figure supplement 3H;\u00a0Konecny et al., 2006). Among the 26 clinical biomarkers, we consistently found drug resistance of TP53 mutants to MDM2 inhibition with nutlin-3a in five different cancer types (Figure 4E, Figure 4\u2014figure supplement 3I\u2013L). Overall, the majority of expected clinical and preclinical biomarkers are reproduced, regardless of the drug-response curve fitting method.\n\nWe concordantly and significantly identified six novel (not yet clinically established) drug sensitivity biomarkers (0.1% FDR) regardless of the applied drug-response curve fitting method. Investigating two different curve fitting algorithms, and retrieving the same biomarkers can be considered as a test of robustness, which in our case concordantly highlighted non-gold standard associations for prioritising experimental validation. For example, daporinad (also known as FK866 and APO866) is a small-molecule inhibitor of nicotinamide phosphoribosyltransferase leading to inhibition of NAD+ biosynthesis. It has been clinically tested in melanoma (ClinicalTrials.gov Identifier: NCT00432107), Refractory B-CLL (NCT00435084) and Cutaneous T-cell Lymphoma (NCT00431912), whilst showing anti-proliferative effect in glioblastoma cell lines (Zhang et al., 2012). Therapeutic potential when combining with other drugs used to treat gliomas (Lucena-Cacace et al., 2019; Lucena-Cacace et al., 2017) has been suggested, whilst we additionally and concordantly identify EGFR amplification as a biomarker (Figure 4F).\n\nAnother novel and concordant identified biomarker is doramapimod response (also known as BIRB-796) in ARID2 mutant melanoma cell lines (Figure 4G). Doramapimod is a small-molecule p38 MAPK inhibitor and has been reported in different cancer types (in combination with other drugs) including cervical cancer, paracrine tumours and myeloma (Jin et al., 2016; Yasui et al., 2007). ARID2 is part of chromatin remodelling complex and is involved in DNA repair in hepatocellular carcinoma cells (Oba et al., 2017) and enriched in melanomas (Ding et al., 2014; Hodis et al., 2012). In conclusion, different curve fitting approaches lead to concordantly and novel identified biomarkers, thereby increasing the robustness in those findings, and consequently enabling to prioritise hypotheses.\n\n### Improved biomarker detection by taking into account uncertainty in a Bayesian framework\n\nSince both Bayesian and frequentist methods can be used to prioritise biomarkers for further testing, we compared association statistics (posterior probabilities and q-values) from both statistical methods. We observed a number of cases where the Bayesian and ANOVA tests disagree (Figure 5A; Supplementary file 2). For instance, BRAF mutations in colorectal cancer were detected as a sensitivity biomarker for dabrafenib by the Bayesian test, but less significant by the ANOVA test. This association had been repeatedly reported in in vitro models (Iorio et al., 2016; Rees et al., 2016) and also found in melanoma cases (Chapman et al., 2011), whilst not in colorectal cancer patients due to feedback activation of ERK-signalling mediated via EGFR (Corcoran et al., 2018; Prahallad et al., 2012). We note in Figure 5B that the Bayesian test takes advantage of the additional information that sensitive mutant cell lines have low estimation uncertainty, whilst the small number of resistant mutant cell lines have high estimation uncertainty, causing them to have less influence on the biomarker detection. On the other hand, the ANOVA model detected the KRAS copy number alteration as a resistance biomarker for lenalidomide (immunomodulatory drug) partial sensitivity in skin cutaneous melanoma (SKCM), whilst not detected by our Bayesian approach. Whilst on the linear IC50 scale there is some difference between the small number of mutant cell lines and wildtypes, the Bayesian model considered that the estimated responses of the mutant cell lines had high uncertainty (Figure 5C). Additionally, a comparison of the uncertainty estimates for the GP and the Sigmoid curve fitting methods revealed that both display concordant results (Figure 5B and C; Figure 5\u2014figure supplement 1); However, the Sigmoid curve fitting method (Materials and methods; Vis et al., 2016) underestimates variance of non-responding cell lines rendering the GP approach superior. The dosages within Figure 5B and C were rescaled to prevent the need for adapting the length-scale hyperparameter to the maximum dosage. IC50 values were back-transformed to the log10 drug dosage scale to make comparisons with (Iorio et al., 2016) (see Materials and methods). Whilst discrepancies between Bayesian and ANOVA tests have to be taken with caution, they may highlight novel biological insights which would be missed when applying only a single model.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig5-v3.jpg)\n\n**Figure 5.:** (A) Scatterplot of biomarker associations with IC50 drug response. The y-axis shows the negative log10 transformed posterior probability of a sign change in the effect under the Bayesian testing model, whilst the x-axis shows the negative log10 of the q-value from ANOVA testing. The size of the circles is proportional to the number of mutants or copy number variations in the given type of cancer cell line. (B) GP estimates for the mean and standard deviation of the log(IC50) from colorectal cell lines tested with BRAF inhibitor dabrafenib, which showed significant association with BRAF mutation in the Bayesian test. (C) Estimated IC50 and its uncertainty for skin cutaneous melanoma cell lines tested with the immunomodulatory drug lenalidomide, which showed significant association with KRAS copy number alteration in the ANOVA test. Black vertical lines show the location of the maximum experimental drug dosage. Dose-response curve of the (D) MDST8 colorectal cancer cell lines with BRAF mutation treated with dabrafenib. The black dotted line represents the maximum concentration of the drug used to treat the cell lines. The blue area represents the 95% confidence intervals in the dose-response fits. (E) Similar to (D) but for CHL-1 skin cutaneous melanoma cell lines with KRAS copy number alteration treated with lenalidomide.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Estimated log10(IC50) and uncertainties based on a bootstrap sampling method, for (A) colorectal cell lines tested with dabrafenib and (B) skin cutaneous melanoma cell lines tested with lenalidomide. Black vertical line represents the maximum experimental drug dosage.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60352/elife-60352-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) The distribution of the cell viability values. (B) The distribution of negative cell viability values.\n\n## Discussion\n\nThe GP approach developed in this research has several advantages compared to the traditional approach of fitting sigmoidal drug-response curves. Firstly, these flexible, non-parametric models can be used to fit a wider variety of dose-response curves than the parametric sigmoidal models, for\u00a0example curves of unexpected shapes may reflect biological signals of off-target effects. Secondly, the GP models provide straightforward uncertainty quantification of any summary statistic that can be calculated on a dose-response curve, a fact that we take advantage of in developing our hierarchical Bayesian model for biomarker testing. Thirdly, the GP model can deal with outlying measurements better than a sigmoidal model, due to formulating it as a mixture model with one component representing the latent GP process of the drug response, and the second component accounting for outliers.\n\nIn contrast to other GP-based models in\u00a0Tansey et al., 2018, our approach is highly interpretable, as we do not integrate the biomarkers into the model estimation in a non-linear fashion, but instead proceed in a two-step approach that first fits our Gaussian process model to the dose-response curves, and then uses the derived summary statistics and uncertainty measures to perform biomarker detection. Thus, we can take advantage of the flexibility of the Gaussian process without the complexity of fitting a non-linear neural network to enable prediction from molecular measurements.\n\nThe increased flexibility of the GP model comes at a price. Most notably, because we do not impose a specific functional form, there are few constraints on the behaviour of the curve outside the range of observed dosages. This leads to the counter-intuitive behaviour that the posterior mean estimate of drug response can go up when extrapolating beyond the maximum dosage. Note, however, that this goes along with a commensurate increase in the posterior variance (Figure 5D,E). In other words, the model is highlighting that extrapolation beyond the observed dosage range is highly uncertain, and the posterior mean estimate should not be relied on. It would be possible to constrain this behaviour by introducing artificial data points at a high concentration, or less crudely by imposing monotonicity constraints via virtual derivative observations (Riihim\u00e4ki and Vehtari, 2010). However, these methods would limit the flexibility of our method and lead us to underestimate the uncertainty of the posterior mean. An alternative approach is to constrain the Gaussian process using generalised analytic slice sampling (Tansey et al., 2019), which integrates the constraints into the sampling process. Whilst theoretically appealing, this approach is not compatible with the variational inference method that we have chosen for our work, and would lead to an unacceptable increase in computational burden for fitting the dose-response curves.\n\nWe have systematically compared the application of GP to sigmoid models across a pan-cancer drug screen. We demonstrated that our GP estimates of the IC50 values and their subsequently predicted biomarkers using ANOVA are reliable when compared to estimates from the sigmoid models. In addition, the GP models provide useful information about the uncertainty associated with the drug-response quantification. However, there is a crucial difference between estimation uncertainty on a single experiment and observational uncertainty across multiple replicates of the same experiment, which incorporates measurement error, technical and biological variation. We are interested in the former to assess the quality of the fit, and therefore the reliability of the estimated IC50. We hypothesized that estimation uncertainty characterises observational uncertainty within the dose concentration range tested. However, extrapolating beyond the concentration range would be challenging due to the uncertainty in the behaviour of the dose-response curve in unobserved concentrations. Imposing monotonicity may not be the best path in this case, but we avoid making this assumption. Instead, our method defines a very large confidence interval for drug-response statistics extrapolated beyond the maximum dose tested and we would additionally need to take the observation uncertainty between replicate experiments into account. We have verified this by applying our estimation method to a replication data set of 26 drugs tested on 10 different cell lines, with 8 to 9 replicates for each drug-cell line experiment. We conclude that whilst estimation uncertainty is a useful indicator for within-concentration IC50 values, it cannot be used as a proxy for observation uncertainty when the IC50 is extrapolated beyond the tested concentration range. Indeed, overall drug responses and biomarkers from independent drug screens were consistent when comparing similar dose ranges (Haverty et al., 2016). Any difference between replicate experiments may be due to batch effects or other unobserved factors that are not necessarily reflected in the estimation error. Whilst previous studies have attempted to capture uncertainty by measuring the spread of the residuals from the fitted curves, such as root mean square error, they were not able to capture these false positive biomarkers by setting strict cutoffs (Cokelaer et al., 2018).\n\nWhilst Bayesian posterior probabilities and ANOVA q-values are different statistical quantities for measuring biomarker associations that should not be compared in absolute terms, we compared these quantities in relative terms to prioritise biomarkers of response for further testing. Our Bayesian biomarker model extends the classical ANOVA testing, since it is able to leverage the estimation uncertainty of the IC50 values. We showed that taking estimation uncertainty into account in the Bayesian model can lead to both inclusion and exclusion of putative biomarkers. For example, the Bayesian model highlighted the association between BRAF mutation in colorectal cancer and BRAF inhibitor response. Targeting BRAF signalling has recently been confirmed as a viable option for metastatic colorectal cancer cases with BRAF mutations (Kopetz et al., 2019). In contrast, the Bayesian model excluded a suggestion from ANOVA of association between KRAS mutation with lenalidomide response in melanoma. Lenalidomide has thus far had no clinical success in KRAS mutant cases nor melanoma (Gandhi et al., 2013; Glaspy et al., 2009).\n\nAlthough we systematically tested for drug-biomarker associations, we did observe common behaviour for certain cell types or classes of drugs. The high uncertainty in the response estimates of chromatin histone methylation targeting compounds for instance may be due to the large number of factors contributing to epigenetic regulation of cells (Luo, 2015). It would be straightforward to extend the GP model to allow for sharing information across drugs or cell lines of similar class, by using either shared hyperparameters or a hyperprior on the hyperparameters. We have not implemented this approach in our work here as our aim was to show the advantage of fitting individual drug-response using GPs, and extending the method to fitting multiple curves jointly would increase the memory and computational requirements significantly. It is our hope to continue expanding the suite to multiple dimensions of dose-response and biomarker prediction needed for drug combinations, which is predominantly based on synergy modelling with either Loewe Additivity or Bliss Independence (Di Veroli et al., 2016; Vlot et al., 2019). In cases where multiple statistical models converge to concordant biomarkers, this increases the reproducibility of the evidence, potential for clinical translatability and ultimately enables precision medicine.\n\nThe increasing utilisation of high-throughput drug screening for identifying effective new treatments will necessitate the use of more powerful statistical and machine learning methods (Toh et al., 2019). We have introduced an approach for quantifying the uncertainties of dose-response using Gaussian Processes and further described how these uncertainties can be integrated into statistical testing of biomarkers. For cancer treatments, our approach can help estimate the uncertainty of dose-responses reported in the numerous drug screening studies by academic (Ghandi et al., 2019; Holbeck et al., 2017; Iorio et al., 2016) and pharmaceutical laboratories (Menden et al., 2019; O'Neil et al., 2016). This can provide more robust metrics for comparing drug responses to identify the most potent ones and highlight sensitivity biomarkers that are more likely to succeed clinically because they are associated with low uncertainty. The approach is also generalisable beyond cancer to any disease and any dose-response measures. We hope that by considering response uncertainty and providing a probabilistic view of drug biomarkers, the risks associated with drug development can be better balanced and smarter decisions can be made.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Home\u00a0sapines)</td>\n      <td>1074 cancer cell lines</td>\n      <td>(Iorio et al., 2016) PMID:27397505</td>\n      <td>GDSC cell line drug response:GDSC1 (v17); GDSC cell line genomics:GDSCtools_mobems</td>\n      <td>Further information about the cancer cell lines from the GDSC can be found here: https://www.cancerrxgene.org/downloads/bulk_download</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Source code for curve fitting and Bayesian biomarker detection</td>\n      <td>This paper</td>\n      <td></td>\n      <td>All source code can be found via GitHub here: https://github.com/FrankD/GPDrugModels</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GPFlow</td>\n      <td>GPFlow (https://www.gpflow.org)</td>\n      <td></td>\n      <td>Version 1.5.1</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TensorFlow</td>\n      <td>TensorFlow (https://www.tensorflow.org/)</td>\n      <td></td>\n      <td>Version 1.14.0</td>\n    </tr>\n  </tbody>\n</table>\n\n### Drug screening\n\nWe analysed 1074 cancer cell lines tested with 265 compounds from a high-throughput screen resulting in 225,384 experiments that were previously published (Iorio et al., 2016). Cell line data was retrieved and is publically available via the GDSC website (Key Resources Table). All cell lines were authenticated. Details for each cell line can be found at: https://www.cancerrxgene.org/help.\n\nCompounds were tested with 5 to 9 titration points, whilst either diluted with 4- or 2-fold, respectively. Cells were seeded on day zero, left in the microtiter plate for 24 hr to retain linear growth, and consecutively treated for 3 days. After those 3 days of treatment, cellTiterGlo staining is used to quantify ATP levels within each well. In parallel, untreated cells and blank wells were also measured to estimate and normalise cell viability.\n\nCompounds within the replicate study were screened across a seven point dose-response curve with a half-log dilution and 1000 fold range. The duration of drug treatment was 72 hr and cell viability was measured using CellTiter-Glo (Promega). Each cell line and compound pair was screened in technical triplicate, three assay plates generated simultaneously, and across three biological replicates with 46 and 44 days between the first to second and second to third replicates respectively. Cell viability measurements for these experiments can be found in Supplementary file 3.\n\n### Preprocessing\n\nPrior to analysis, we scaled the raw observed fluorescent intensities for each drug/cell line combination using the observations from the blank and negative control wells as follows. Let $R={r_{1},r_{2}...,r_{n}}$ be the observed intensities for n dosages. Let B be the mean of the intensities for the blank wells on the same plate as the experiment, and C be the mean of the intensities of the negative control wells (no drug added). Then the relative cell viability $V$\u00a0can be calculated as:\n\n$$\nV=\\frac{R\u00a0\u2212\u00a0B}{C\u00a0\u2212\u00a0B\u00a0}\n$$\n\nRelative cell viability values below 0 (n\u00a0=\u00a02646, Figure 5\u2014figure supplement 2) were set to 0.\n\nFor the purpose of fitting the Gaussian process models, we additionally rescale the dosages to avoid having to adapt the length-scale hyperparameter to the maximum dosage. We rescale the log2-transformed dosages $d={d_{1},d_{2}...,d_{n}}$\u00a0as follows:\n\n$$\nd'=\\frac{d\u00a0+\u00a01}{max(d)\u00a0+\u00a01\u00a0}\n$$\n\nNote that IC50 values have been back-transformed to the log10 drug dosage scale for comparability with those reported in Iorio et al., 2016.\n\n### Sigmoid drug-response model\n\nThe GDSC estimates in Iorio et al., 2016 were obtained using a sigmoid fit to the drug-response curve, using the same pre-processing of the fluorescent intensities as described above. The particular sigmoid model used is the one described in Vis et al., 2016. In brief, if we have shape parameter $s_{i}$ and position parameter\u00a0$p_{ij}$ for cell line $i$ and drug $j$ , then cell viability can be represented as a function of dosage $d$:\n\n$$\nf(d,s_{i},p_{ij})=\\frac{1}{1+exp(\\frac{d\u2212p_{ij}}{s_{i}})}\n$$\n\nNote that this allows for cell line/drug specific position parameters, but shape parameters that only vary by cell line and are shared across drugs. The position parameter $p_{ij}$ corresponds to the estimated IC50 for cell line $i$\u00a0and drug $j$. For full details, see Vis et al., 2016.\n\nTo estimate the uncertainty of the Sigmoid curve fitting, a random bootstrap sampling of 80% of all treated cell lines available for each drug over 100 iterations was performed. The Sigmoid curve fitting model from GDSC (Vis et al. 2013) estimates one scale parameter per drug across all treated cell lines, thus the sampling creates variance in the response data. The standard deviation of the log(IC50) estimates was computed to assess the model\u2019s variance.\n\n### Gaussian process drug-response model\n\nFor simplicity, we drop the subscripts $ij$ and present the combination. We model the drug response $y$ via a two-component Beta mixture such that:\n\n$$\nP(y|f,s_{1},\\mu_{2},s_{2},\\pi)=\\piBeta^{\\mu}(y|\u03a6^{\u22121}(f),s_{1}+(1+\\pi)Beta^{\\mu}(y|\\mu_{2},s_{2}))\n$$\n\nwhere $Beta^{\\mu}$ is the reparameterization of the Beta distribution in terms of the mean \u00b5 and a scale parameter $s$, and $\u03a6^{\u22121}$ is the probit function (the inverse of the standard normal cumulative distribution function). Component one represents the drug response, which is driven by a latent Gaussian process $f$, whilst component two represents outliers that deviate from the overall dose- response trend. We set the scale parameters $s_{1}=50$ and $s_{2}=11$ and specify $\\mu_{2}=0.9$ to reflect our belief that outliers will mostly be erroneous measurements of resistance. We set $\\pi=0.999$ as we believe that outliers are rare.\n\nWe place a standard Gaussian process prior on $f$, such that:\n\n$$\nP(f|d,\u03a8)=MVN(f|m,C_{\u03a8}(d,d^{\u2032}))\n$$\n\nwhere $m$\u00a0is the mean drug response, and $C_{\u03a8}(d,d^{\u2032})$ is a covariance function with hyperparameters $\u03a8$; in practice we choose a combined linear-Matern3/2 as a flexible option, which avoids the excessive smoothness of restrictions of the commonly used RBF kernel. Stein (1999) argues that this is a more realistic representation for physical processes (Stein, 2012). Information sharing across drugs and cell lines can be achieved via shared hyperpriors in a hierarchical model. For the application in this paper joint inference with shared hyperpriors would be computationally difficult, and we choose to instead empirically set the variance and length-scale parameters for the Matern to 0.2 and 0.3, respectively, and the variance parameter for the linear kernel to 0.1.\n\nInference is performed using variational learning (Hensman et al., 2013), via the GPFlow software (Matthews AG de and van der Wilk, 2017). We choose variational learning over alternatives such as Markov chain Monte Carlo due to its speed, which allows us to process large drug-response panels in a realistic time frame. Hyperparameters for the GP model were determined by manual tuning; however, for other datasets, we could also envision a Bayesian model selection procedure which places the variational inference in a variational-within-MCMC scheme where the MCMC moves update the hyperparameters. If fixed hyperparameters are desired, one could use the maximum a posteriori values. To avoid massive computational complexity, the MCMC scheme could be run on a representative subsample of cell lines.\n\n### Calculation of summary statistics\n\nSummary statistics of drug response can be calculated straightforwardly by sampling from the posterior of the Gaussian process (Supplementary file 4). Generally, let $g(d,y)$ be a function that calculates a summary statistic $\\tau$ from a dose-response curve with dosages $d$ and responses $y$, then we can obtain a posterior estimate of the mean of the summary statistic by first sampling $N$ dose-response curves from the posterior of the GP model, and then calculating the average:\n\n$$\n\\tau\u00af=\\frac{1}{N}\\sumlNg(d_{l},y_{l})\n$$\n\nA similar procedure can be used to calculate the posterior estimate of the standard deviation.\n\nAlthough we can extract other response statistics from our curve fits, the most common are the IC50 and the area under the drug-response curve (AUC). On the log2 dosage scale the dosages are equally spaced, and hence AUC can be straightforwardly estimated by the mean function:\n\n$$\ng_{AUC}(d,y)=\\frac{1}{n}\\summny_{m}\n$$\n\nwhere $m$ indexes over the $n$ dosages. For the IC50, estimation for a single curve is complicated by the fact that the curve may not cross the 50% viability threshold within the observed dosage range (non-crossing sample). We therefore extrapolate the GP samples to 10 times the maximum (log2) experimental dosage and specify $g_{IC50}(d,y)$ as:\n\n$$\ng_{IC50}(d,y)=d_{m}suchthaty_{m}=0.5if\u2203y_{m}\\leq0.5\n$$\n\nNote that this ignores samples where for all dosages, $y_{m}\\leq0.5$; one could devise a multivariate sufficient statistic that takes this information into account, but we have found that in general there is a reasonable amount of correlation between $g_{IC50}(d,y)$ and the number of non-crossing samples for a given cell\u00a0line/drug combination.\n\n### Comparison of GP and sigmoid IC50 values\n\nConcordance between IC50 values based on sigmoid and GP-curve fitting is quantified with Pearson correlation for each drug. To account for tissue specificity and the varying number of cell lines assessed per tissue type, we employed the average weighted Pearson correlation ($pw$) of the sigmoid-curve versus GP-curve fitted IC50 values for the individual cancer types ($i$).\n\nThe weight for a given cancer type $i$ was denoted as $\\sqrt{n_{i}\u22121}$, where $n_{i}$ is the total number of cell lines treated with the drug within this tissue type. The following metric was applied,\n\n$$\npw=tanh(\\frac{\\sumi=1N\\sqrt{n_{i}\u22121}arctanh(p_{i})}{\\sumi=1N\\sqrt{n_{i}\u22121}})\n$$\n\nwhere $p_{i}$ is unweighted Pearson correlation within a cancer type ($i$) and a total number of tested cancer types is $N=30$. For a given drug and tissue type combination, at least 10 cell lines need to be treated ($n_{i}\\geq10$).\n\nDifferences in IC50 values for each drug-response value j were consistently defined as\n\n$$\ndf_{i}=IC50_{j,GP}\u2212IC50_{j,sigmoid}\n$$\n\nwith a total number of tested cell line and drug combinations equalling to $N_{j}=171,937$.\n\n### Bayesian biomarker testing\n\nStandard statistical approaches for testing the influence of biomarkers on drug response mostly rely on analysis of variance (ANOVA) testing. An ANOVA can be understood as a linear model of the dependent variable $i$ (in this case, a summary measure of drug response such as IC50):\n\n$$\ng_{i}=\\alpha+\\betaz_{i}+\\gammax_{i}+\u03f5_{i}\n$$\n\nwhere $x_{i}$ is an indicator variable denoting the group membership of data point $i$. In our application, the data points are cell lines, $z_{i}$ indicates group membership, for example the mutation status of a given SNP, and $x_{i}$ indicates any other covariates that we wish to correct for, such as tissue type. The parameter $\\alpha$ captures the global mean of the drug response, whilst $\\beta$ captures the effect of mutation status on the drug response, $\\gamma$ is the effect of covariates, and $\u03f5_{i}$ is independent Gaussian noise.\n\nThis model, whilst useful, fails to account for the fact that our Gaussian process model provides estimates $\\sigma_{i}$ of the uncertainty (or standard error) associated with the mean IC50 estimates $g_{i}$. In order to make use of these uncertainty estimates, we take an idea from Bayesian meta-analysis, and integrate them via a hierarchical model:\n\n$$\ng_{i}\u223c\ud835\udca9(\\mu_{i},\\sigma_{i}^{2})\\mu_{i}\u223c\ud835\udca9(\\alpha+\\betaz_{i}+\\gammax_{i},\\sigma^{\u22172})\n$$\n\nwhere $\\mu_{i}$ is the mean drug-response estimate for cell line $i$, and $\\sigma^{\u22172}$ is the variance across cell lines (the variance of $\u03f5_{i}$ in the ANOVA example). Note that this model can be reduced to:\n\n$$\ng_{i}\u223c\ud835\udca9(\\alpha+\\betaz_{i}+\\gammax_{i},\\sigma_{i}^{2}+\\sigma^{\u22172})\n$$\n\nWe further specify a Gaussian prior $\\beta\u223c\ud835\udca9(0,0.1)$ on the effect size parameter to discourage false positives and reflect our prior belief that most mutations are not associated with drug response. We also place an exponential prior $\\sigma^{\u22172}\u223cExp(10)$ to regularize the variance parameter. Finally, $\\alpha\u223c\ud835\udca9(0,\\tau^{2})$ is a Gaussian prior on the global mean with standard error $\\tau\u223cGamma(1,1)$. Early exploratory results showed that using the estimates of $\\sigma_{i}$ directly placed too much weight on experiments with very low estimation uncertainty, leading to unrealistic posterior estimates of the effect size $\\beta$. To attenuate this, we used a transformed estimate $\\sigma_{i}^{c}$, where the effect of parameter $c$ was explored over the range [0,1], and empirically set to 0.25 for the results reported in this paper. The main tuneable hyperparameter is the scaling parameter c, as the model is robust to changes to the parameters for the sparse priors on $\\beta$ and $\\sigma^{\u22172}$. Setting this hyperparameter is straightforward, as we can use a simple line search to find a value that optimally trades off between disregarding the uncertainty estimates (c\u00a0=\u00a00) and placing too much weights on estimates with low uncertainty (c\u00a0>=\u00a01). One way to determine the optimal value for c is to randomly permute the biomarker labels, and reduce c until the false positive rate is below some acceptable threshold.\n\nInference in this model is performed using Hamiltonian Monte Carlo via the Stan software package Carpenter, 2017. We report the posterior mode of $\\beta$ as well as the posterior probability of observing $\\beta>0$ (if the posterior mode is positive) or $\\beta<0$ (if the posterior mode is negative).\n",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "a8a7d52f-b87d-431d-af99-fd1f1e9f53f2",
+      "submission_id": "1d307a40-82fa-4ba8-a0b6-7c54e58d975c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joseph Leh\u00e1r, Boyce Thompson Institute for Plant Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60352.sa1](https://doi.org/10.7554/eLife.60352.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript presents two statistical approaches to evaluating for drug effect measurements and associations between biomarkers, for dose curve data. Measurements of these kinds are made in many contexts, and frequently reported without accounting well for measurement uncertainties. A statistical framework of this kind will be widely useful and should be frequently applied.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A statistical framework for assessing pharmacological response and biomarkers using uncertainty estimates\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Alexander W Blocker (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nThis manuscript presents two statistical approaches to evaluating for drug effect measurements and associations between biomarkers, for dose curve data. Measurements of these kinds are made in many contexts, and frequently reported without accounting well for measurement uncertainties. A statistical framework of this kind will be widely useful and should be frequently applied.\n\nThe reviewers noted some issues with in the manuscript, which should be addressed before final acceptance to eLife.\n\nEssential revisions:\n\n1) While this work presents a clear statistical framework, the Discussion and Abstract should explain more clearly how this framework improves drug potency or biomarker discovery efforts. That will help communicate the relevance of this work.\n\n2) The authors should clarify of how measurement errors in the curves relate to fitted parameter uncertainties, to explain the superiority of particular fitting approaches.\n\n3) A more thorough discussion of fitting performance is recommended. In particular, accounting for how fitting parameter selection and degrees of freedom. It would also be helpful to explore robust estimators to assess the reliability of fitted parameters. A more thorough analysis is also recommended for edge cases where the IC50 falls outside the measured range.\n\n4) Additional model checking and comparisons would be useful. For example, Comparing the presented models to a more standard sigmoid, and additional comparisons highlighted in the comments. It would also help to clarify the relationship between Bayesian posterior probabilities, and ANOVA q-values for the GP approach.\n\n5) The authors should revise Figure 3C and D. Grouping response curves by mechanism can be misleading since different drugs or biomarkers may intrinsically have discordant potencies due to differing on-target binding efficiency or off-target effects.\n",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "05345955-ac96-40e5-a647-812c5e288969",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C1",
+      "claim": "The failure rate for new drugs entering clinical trials is in excess of 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure rate for new drugs entering clinical trials is in excess of 90%, with more than a quarter of drugs failing due to lack of efficacy (Arrowsmith and Miller, 2013; Cook et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Arrowsmith and Miller, 2013 and Cook et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "8f347f97-a177-40be-8e72-8d70187fb0b9",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C2",
+      "claim": "More than a quarter of drugs fail clinical trials due to lack of efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure rate for new drugs entering clinical trials is in excess of 90%, with more than a quarter of drugs failing due to lack of efficacy (Arrowsmith and Miller, 2013; Cook et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Arrowsmith and Miller, 2013 and Cook et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "1d549b39-3850-45ef-a6f4-33ebc2d26b8f",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C3",
+      "claim": "The study analyzed in vitro screening data on 265 compounds across 1074 cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to in vitro screening data on 265 compounds across 1074 cancer cell lines, our models identified 24 clinically established drug-response biomarkers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the abstract describing the dataset analyzed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "08d6a814-51dd-4d6b-b0eb-740d081cdf86",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C4",
+      "claim": "The GP models identified 24 clinically established drug-response biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to in vitro screening data on 265 compounds across 1074 cancer cell lines, our models identified 24 clinically established drug-response biomarkers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of results from applying the GP model to the dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "719c8f2d-50b1-4828-b92e-e3da2f478a4c",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C5",
+      "claim": "The GP models provided evidence for six novel biomarkers by accounting for association with low uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to in vitro screening data on 265 compounds across 1074 cancer cell lines, our models identified 24 clinically established drug-response biomarkers, and provided evidence for six novel biomarkers by accounting for association with low uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of novel findings from the GP model analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "5180915b-792b-4c2c-8767-cd34ea7c6547",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C6",
+      "claim": "The uncertainty estimates were validated with an additional drug screen of 26 drugs, 10 cell lines with 8 to 9 replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated our uncertainty estimates with an additional drug screen of 26 drugs, 10 cell lines with 8 to 9 replicates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing validation experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "6564461c-35e5-4ed5-ba3f-1c78f1912374",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C7",
+      "claim": "The two largest in vitro drug screening studies are GDSC and CTRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently the two largest in vitro drug screening studies, the Genomics of Drug Sensitivity in Cancer (GDSC) (Garnett et al., 2012; Iorio et al., 2016) and the Cancer Therapeutics Response Portal (CTRP) Rees et al., 2016",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with citations to the respective studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "efc9e88d-f8ee-4256-aa23-67ce6e3916cf",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C8",
+      "claim": "Some clinically-actionable biomarkers of drug response can be concordantly discovered between GDSC and CTRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently the two largest in vitro drug screening studies, the Genomics of Drug Sensitivity in Cancer (GDSC) (Garnett et al., 2012; Iorio et al., 2016) and the Cancer Therapeutics Response Portal (CTRP) Rees et al., 2016 have shown that some clinically-actionable biomarkers of drug response can be concordantly discovered (Iorio et al., 2016; Seashore-Ludlow et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Iorio et al., 2016 and Seashore-Ludlow et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "51d7bb9d-c024-4fb7-b563-b89c0090984b",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C9",
+      "claim": "Different properties and mechanisms of drug response are best captured by different metrics dependent on the dose-response curve.",
+      "claim_type": "EXPLICIT",
+      "source": "that different properties and mechanisms of drug response are best captured by different metrics dependent on the dose-response curve (Fallahi-Sichani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fallahi-Sichani et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "f0814e93-a4e2-40a7-b9b3-87d61a725c14",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C10",
+      "claim": "Most HTS efforts focus on increasing throughput and often neglect experimental replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Most HTS efforts focus on increasing throughput (Iorio et al., 2016; Seashore-Ludlow et al., 2015) and thereby often neglect experimental replicates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to Iorio et al., 2016 and Seashore-Ludlow et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "3bbf8800-5849-4ae2-a5d6-14d04e3cf7f0",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C11",
+      "claim": "Neglecting experimental replicates renders it impossible to correct for experimental noise, resulting in uncertainty for the estimated drug-response metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Most HTS efforts focus on increasing throughput (Iorio et al., 2016; Seashore-Ludlow et al., 2015) and thereby often neglect experimental replicates, which renders it impossible to correct for experimental noise, resulting in uncertainty for the estimated drug-response metrics (e.g. IC50 value).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the lack of replicates",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "4bc5dee4-8b2a-47e9-bd1a-da2f6729a038",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C12",
+      "claim": "Extrapolating IC50 values beyond the tested drug concentration range is particularly challenging and often unaccounted for in quality control metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrapolating IC50 values beyond the tested drug concentration range is particularly challenging and often unaccounted for in quality control metrics (Haibe-Kains et al., 2013; Haverty et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Haibe-Kains et al., 2013 and Haverty et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "ab97d2fa-e819-4769-bf4e-d28cf5bd213a",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C13",
+      "claim": "Most published studies using machine learning algorithms for predicting drug response assume that the measured drug responses are precise.",
+      "claim_type": "EXPLICIT",
+      "source": "Most published studies using machine learning algorithms or mechanistic models for predicting drug response and biomarkers assume that the measured drug responses are precise (Costello et al., 2014; Keshava et al., 2019; Menden et al., 2019; Silverbush et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "dbfc4b9a-22ac-4835-b426-3e05dd1c8138",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C14",
+      "claim": "If there is high uncertainty in measured drug-response values, the utility of machine learning methods for enhancing drug development may be severely limited.",
+      "claim_type": "EXPLICIT",
+      "source": "If this assumption is not met and there is high uncertainty in the measured drug-response values, the utility of these methods for enhancing drug development may be severely limited (Costello et al., 2014; Menden et al., 2019; Silverbush et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Costello et al., 2014, Menden et al., 2019, and Silverbush et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "7c6da44d-82ee-4cd8-8a92-68072ff0e6fb",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C15",
+      "claim": "Most current models for curve fitting assume that cell viability has a sigmoidal relationship to the logarithm of the dose concentrations of the drug.",
+      "claim_type": "EXPLICIT",
+      "source": "Most current models for curve fitting and describing dose-response data have primarily assumed that cell viability has a sigmoidal relationship to the logarithm of the dose concentrations of the drug (Dawson et al., 2012; Wang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dawson et al., 2012 and Wang et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "533b98f0-7eb6-41d6-8351-77ab8b12b436",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C16",
+      "claim": "Gaussian Processes have been successfully used to measure uncertainty in noisy gene expression datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Gaussian Processes (GP) are a flexible, probabilistic modelling technique that has been successfully used to measure uncertainty in noisy gene expression datasets (Lopez-Lopera and Alvarez, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lopez-Lopera and Alvarez, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "2a3602b7-a4e1-4246-a705-c9ceb4f679a0",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C17",
+      "claim": "Gaussian Processes have been incorporated into machine learning prediction of cell fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Gaussian Processes (GP) are a flexible, probabilistic modelling technique that has been successfully used to measure uncertainty in noisy gene expression datasets (Lopez-Lopera and Alvarez, 2019) and has been incorporated into machine learning prediction of cell fates (Boukouvalas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boukouvalas et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "76119a63-302b-4e52-a2e7-df87951e5e30",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C18",
+      "claim": "Gaussian Processes cope well with regression tasks on dependent data and high dimensional covariates.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique has been shown to cope well with regression tasks on dependent data and high dimensional covariates (Rasmussen and Williams, 2005; Shi and Choi, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rasmussen and Williams, 2005 and Shi and Choi, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "318a5273-5861-4fbd-bd2a-c25ab2638042",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C19",
+      "claim": "The estimation uncertainty is positively correlated with observation uncertainty for experiments where the estimated IC50 lies within the concentration range tested (Pearson correlation = 0.84, 95% CI [0.76, 0.89]).",
+      "claim_type": "EXPLICIT",
+      "source": "First, for experiments where the estimated IC50 lies within the concentration range tested, the estimation uncertainty is positively correlated (Pearson correlation = 0.84, 95% CI [0.76, 0.89]) with the observation uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of replicate experiments showing correlation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "d266a492-f358-4984-9555-6ea0a65d9a37",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C20",
+      "claim": "For experiments where the estimated IC50 lies beyond the maximum tested concentration, there is a negative correlation between estimation and observation uncertainty (Pearson correlation = \u22120.39, 95% CI [\u22120.51,\u20130.25]).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, for experiments where the estimated IC50 lies beyond the maximum tested concentration, we observed a negative correlation (Pearson correlation = \u22120.39, 95% CI [\u22120.51,\u20130.25]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of replicate experiments showing negative correlation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "c2bc52b5-c18d-4314-8ce4-6a806ab80a63",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C21",
+      "claim": "The estimation uncertainty from GPs for dabrafenib tested in two independent studies on the same cell lines were comparable both within and beyond the concentration range.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that the estimation uncertainty from our GPs for dabrafenib (BRAF inhibitor) tested in two independent studies on the same cell lines were comparable both within and beyond the concentration range (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of results from two independent studies shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "91633c48-c1f6-4453-9957-2f76abf2e7ca",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C22",
+      "claim": "The difference between the AUC estimates from the GP compared to the published GDSC sigmoid curve fits was greatest for experiments showing a partial response (AUC between 0.4 and 0.9).",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the AUC estimates from the GP compared to the published GDSC sigmoid curve fits was greatest for experiments showing a partial response (AUC between 0.4 and 0.9), whilst at the same time these experiments also had the highest estimation uncertainty (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of AUC differences shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "b72ecae9-3101-4f45-bb25-760eabb114b0",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C23",
+      "claim": "Experiments with high estimation uncertainty from GPs were also the experiments with high Spearman correlation pointing to poor quality.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments with high estimation uncertainty from our GPs were also the experiments with high Spearman correlation pointing to poor quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of relationship between estimation uncertainty and data quality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "8d8ba086-0b09-4190-86da-e368c91228e5",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C24",
+      "claim": "IC50 values are highly concordant for sigmoid and GP-curve fittings, showing an average weighted Pearson correlation of 0.88 (95% CI [0.85; 0.91]) across individual drugs and cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "The IC50 values are highly conconcordant for sigmoid and GP-curve fittings, showing an average weighted Pearson correlation of 0.88 (95% CI [0.85; 0.91]) across individual drugs, and cancer types (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of IC50 values from two methods shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "82de7e5f-e173-4cb0-a97d-6cd855d63807",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C25",
+      "claim": "If >10% of cell lines responded within the concentration range, then a weighted Pearson correlation >0.75 was consistently achieved for all drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, if >10% of cell lines responded within the concentration range, that is IC50 <maximum tested concentration, then a weighted Pearson correlation >0.75 was consistently achieved for all drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of correlation as a function of response rate",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "dce35691-64aa-4bb5-b8f3-d27afb72e5ef",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C26",
+      "claim": "The GP and sigmoid estimated IC50 from cell lines treated with afatinib were significantly different in cases with and without ERBB2 amplification (ANOVA q-value = 4.12e-9).",
+      "claim_type": "EXPLICIT",
+      "source": "The GP and sigmoid estimated IC50 from cell lines treated with afatinib were significantly different in cases with and without ERBB2 amplification (ANOVA q-value = 4.12e-9; Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical test result shown in Figure 1I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "c68c9851-6413-42cf-9a3d-39face4b7359",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C27",
+      "claim": "The GP models provided an added benefit of providing uncertainty estimates that were incorporated into a Bayesian hierarchical model to verify the association between ERBB2 amplification and afatinib sensitivity (posterior probability = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The GP models provided an added benefit of providing uncertainty estimates that were incorporated into a Bayesian hierarchical model to further verify the association between ERBB2 amplification and afatinib sensitivity (posterior probability = 0.001; Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Bayesian analysis result shown in Figure 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "b4abe8cf-1757-4cca-8af5-40e8f829326e",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C28",
+      "claim": "Both curve fittings captured the association of BRAF inhibitors (PLX4720 and dabrafenib) with BRAF mutations in melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both curve fittings captured the association of BRAF inhibitors (PLX4720, progenitor of vemurafenib; and dabrafenib) with BRAF mutations in melanoma (Figure 4\u2014figure supplement 3A\u2013C; Chapman et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis shown in supplementary figures with citation to Chapman et al., 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "f8e0539b-ac88-4d98-976e-411b7521869f",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C29",
+      "claim": "BRAF mutations were detected as a sensitivity marker for dabrafenib in thyroid carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Dabrafenib is a potent BRAF inhibitor and in addition we detected BRAF mutations as a sensitivity marker in thyroid carcinoma (Figure 4D, Figure 4\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis shown in Figure 4D and supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "c61e8688-26b6-4353-b939-4d7bbf161606",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C30",
+      "claim": "EGFR inhibitors (afatinib and gefitinib) are concordantly correlated with drug sensitivity in EGFR mutant cell lines in lung adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example are the EGFR inhibitors, afatinib and gefitinib, that are concordantly correlated with drug sensitivity in EGFR mutant cell lines in lung adenocarcinoma (Figure 4\u2014figure supplement 3E\u2013G; Tamura and Fukuoka, 2005; Yang et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis shown in supplementary figures with citations to clinical studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "797613ff-03cf-4405-b31f-91091adc7369",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C31",
+      "claim": "ERBB2(HER2) amplification in breast cancer was recapitulated as a biomarker of sensitivity to the dual EGFR/ERBB2 inhibitor lapatinib.",
+      "claim_type": "EXPLICIT",
+      "source": "ERBB2(HER2) amplification in breast cancer was also recapitulated as a biomarker of sensitivity to the dual EGFR/ERBB2 inhibitor lapatinib (Figure 4\u2014figure supplement 3H; Konecny et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis shown in supplementary figure with citation to Konecny et al., 2006",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "6940e046-b74d-4f17-aafd-85328006a75b",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C32",
+      "claim": "Drug resistance of TP53 mutants to MDM2 inhibition with nutlin-3a was consistently found in five different cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 26 clinical biomarkers, we consistently found drug resistance of TP53 mutants to MDM2 inhibition with nutlin-3a in five different cancer types (Figure 4E, Figure 4\u2014figure supplement 3I\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis shown in Figure 4E and supplementary figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "ae021a54-9455-48e4-ad2d-3ed13c3dfae8",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C33",
+      "claim": "Six novel drug sensitivity biomarkers were concordantly and significantly identified (0.1% FDR) regardless of the applied drug-response curve fitting method.",
+      "claim_type": "EXPLICIT",
+      "source": "We concordantly and significantly identified six novel (not yet clinically established) drug sensitivity biomarkers (0.1% FDR) regardless of the applied drug-response curve fitting method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis identifying novel biomarkers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "7f8a8a76-c64a-4d40-92a4-1aac3bda1d2f",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C34",
+      "claim": "Daporinad is a small-molecule inhibitor of nicotinamide phosphoribosyltransferase leading to inhibition of NAD+ biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, daporinad (also known as FK866 and APO866) is a small-molecule inhibitor of nicotinamide phosphoribosyltransferase leading to inhibition of NAD+ biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of drug mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "d7cfe04e-1469-418e-a9cd-dfaebde6058b",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C35",
+      "claim": "Daporinad has been clinically tested in melanoma, Refractory B-CLL, and Cutaneous T-cell Lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been clinically tested in melanoma (ClinicalTrials.gov Identifier: NCT00432107), Refractory B-CLL (NCT00435084) and Cutaneous T-cell Lymphoma (NCT00431912)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to clinical trial identifiers",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "21edf709-c587-4e7d-959d-149b22151f5e",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C36",
+      "claim": "Daporinad shows anti-proliferative effect in glioblastoma cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst showing anti-proliferative effect in glioblastoma cell lines (Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "22a7a45d-40c2-404f-b33d-93baa78bbcf2",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C37",
+      "claim": "EGFR amplification was concordantly identified as a biomarker for daporinad response.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst we additionally and concordantly identify EGFR amplification as a biomarker (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Novel finding from the analysis shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "de60bd90-7337-45e4-8f79-139708ed9671",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C38",
+      "claim": "Doramapimod response in ARID2 mutant melanoma cell lines was identified as a novel and concordant biomarker.",
+      "claim_type": "EXPLICIT",
+      "source": "Another novel and concordant identified biomarker is doramapimod response (also known as BIRB-796) in ARID2 mutant melanoma cell lines (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Novel finding from the analysis shown in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "ab10e50a-c128-4ace-b75f-66aea4700a99",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C39",
+      "claim": "Doramapimod is a small-molecule p38 MAPK inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Doramapimod is a small-molecule p38 MAPK inhibitor",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of drug mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "caf08b7c-4702-4bb8-8fc2-7088eb11a992",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C40",
+      "claim": "ARID2 is part of chromatin remodelling complex and is involved in DNA repair in hepatocellular carcinoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ARID2 is part of chromatin remodelling complex and is involved in DNA repair in hepatocellular carcinoma cells (Oba et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Oba et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "dd5ddd4c-238d-4f59-9586-df79f5107e49",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C41",
+      "claim": "ARID2 is enriched in melanomas.",
+      "claim_type": "EXPLICIT",
+      "source": "ARID2 is part of chromatin remodelling complex and is involved in DNA repair in hepatocellular carcinoma cells (Oba et al., 2017) and enriched in melanomas (Ding et al., 2014; Hodis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ding et al., 2014 and Hodis et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "405f48a1-022e-45ea-b3a7-dadf2fe2c986",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C42",
+      "claim": "BRAF mutations in colorectal cancer were detected as a sensitivity biomarker for dabrafenib by the Bayesian test, but less significant by the ANOVA test.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, BRAF mutations in colorectal cancer were detected as a sensitivity biomarker for dabrafenib by the Bayesian test, but less significant by the ANOVA test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of statistical test results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "b989dfb7-9c90-43f2-929a-1ab59f0b4f65",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C43",
+      "claim": "BRAF mutations as a biomarker for dabrafenib had been repeatedly reported in in vitro models.",
+      "claim_type": "EXPLICIT",
+      "source": "This association had been repeatedly reported in in vitro models (Iorio et al., 2016; Rees et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Iorio et al., 2016 and Rees et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "664d15c1-6c43-4bb7-9d94-ab24e43bc6ff",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C44",
+      "claim": "BRAF mutations as a biomarker for dabrafenib was found in melanoma cases.",
+      "claim_type": "EXPLICIT",
+      "source": "This association had been repeatedly reported in in vitro models (Iorio et al., 2016; Rees et al., 2016) and also found in melanoma cases (Chapman et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chapman et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "bf88fc97-7dfb-4f94-ba3c-64d2740cb2b3",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C45",
+      "claim": "BRAF mutations as a biomarker for dabrafenib was not found in colorectal cancer patients due to feedback activation of ERK-signalling mediated via EGFR.",
+      "claim_type": "EXPLICIT",
+      "source": "This association had been repeatedly reported in in vitro models (Iorio et al., 2016; Rees et al., 2016) and also found in melanoma cases (Chapman et al., 2011), whilst not in colorectal cancer patients due to feedback activation of ERK-signalling mediated via EGFR (Corcoran et al., 2018; Prahallad et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Corcoran et al., 2018 and Prahallad et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "09f2cdc3-ee37-463f-a5cb-fac20b8e72da",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C46",
+      "claim": "The Bayesian test takes advantage of the additional information that sensitive mutant cell lines have low estimation uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "We note in Figure 5B that the Bayesian test takes advantage of the additional information that sensitive mutant cell lines have low estimation uncertainty, whilst the small number of resistant mutant cell lines have high estimation uncertainty, causing them to have less influence on the biomarker detection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis shown in Figure 5B demonstrating how the Bayesian model uses uncertainty",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "84907d9f-9b3d-416a-9c98-4ec5a98d86b5",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C47",
+      "claim": "The ANOVA model detected the KRAS copy number alteration as a resistance biomarker for lenalidomide partial sensitivity in skin cutaneous melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the ANOVA model detected the KRAS copy number alteration as a resistance biomarker for lenalidomide (immunomodulatory drug) partial sensitivity in skin cutaneous melanoma (SKCM), whilst not detected by our Bayesian approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of statistical test results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "e2eed457-46a8-4bd8-9ec4-a955580ba0c5",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C48",
+      "claim": "The Bayesian model considered that the estimated responses of the KRAS mutant cell lines treated with lenalidomide had high uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst on the linear IC50 scale there is some difference between the small number of mutant cell lines and wildtypes, the Bayesian model considered that the estimated responses of the mutant cell lines had high uncertainty (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "fa09cd86-e6d1-4970-8502-f1a521d53a1f",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C49",
+      "claim": "The Sigmoid curve fitting method underestimates variance of non-responding cell lines rendering the GP approach superior.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Sigmoid curve fitting method (Materials and methods; Vis et al., 2016) underestimates variance of non-responding cell lines rendering the GP approach superior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of methods with citation to Vis et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "0cd4ff6b-98a8-4cc6-a257-1ee21b246fa9",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C50",
+      "claim": "GP models can fit a wider variety of dose-response curves than parametric sigmoidal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, these flexible, non-parametric models can be used to fit a wider variety of dose-response curves than the parametric sigmoidal models, for example curves of unexpected shapes may reflect biological signals of off-target effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of GP model advantages",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "5b4bc9e2-3418-4b1f-91cc-d10362d9abfa",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C51",
+      "claim": "GP models provide straightforward uncertainty quantification of any summary statistic that can be calculated on a dose-response curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the GP models provide straightforward uncertainty quantification of any summary statistic that can be calculated on a dose-response curve, a fact that we take advantage of in developing our hierarchical Bayesian model for biomarker testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of GP model advantages",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "fb324c19-e04a-41c2-b6e4-8c9c335b5297",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C53",
+      "claim": "The increased flexibility of the GP model comes at a price, notably because there are few constraints on the behaviour of the curve outside the range of observed dosages.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased flexibility of the GP model comes at a price. Most notably, because we do not impose a specific functional form, there are few constraints on the behaviour of the curve outside the range of observed dosages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of GP model limitations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "e80e0acf-8a09-475a-a204-602528a7b5d2",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C54",
+      "claim": "The posterior mean estimate of drug response can go up when extrapolating beyond the maximum dosage with the GP model.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to the counter-intuitive behaviour that the posterior mean estimate of drug response can go up when extrapolating beyond the maximum dosage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of GP model behavior during extrapolation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "df2ef79e-d283-4156-88ee-61e1fdc27dd1",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C55",
+      "claim": "When the posterior mean estimate goes up during extrapolation, this goes along with a commensurate increase in the posterior variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, however, that this goes along with a commensurate increase in the posterior variance (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation shown in Figure 5D and 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "ec435914-b340-400a-aebc-48436c45569e",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C56",
+      "claim": "Estimation uncertainty characterises observational uncertainty within the dose concentration range tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that estimation uncertainty characterises observational uncertainty within the dose concentration range tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis stated by the authors",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "beb3fb6a-f39c-4da7-bf09-661b9fdc19d5",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C57",
+      "claim": "Extrapolating beyond the concentration range would be challenging due to the uncertainty in the behaviour of the dose-response curve in unobserved concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, extrapolating beyond the concentration range would be challenging due to the uncertainty in the behaviour of the dose-response curve in unobserved concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of extrapolation challenges",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "ab5d8303-bb00-49bd-9c2d-f7c289deb651",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C58",
+      "claim": "Estimation uncertainty is a useful indicator for within-concentration IC50 values.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that whilst estimation uncertainty is a useful indicator for within-concentration IC50 values, it cannot be used as a proxy for observation uncertainty when the IC50 is extrapolated beyond the tested concentration range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from analysis of replicate experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "112a3bef-be47-4506-b5a7-2e1a5ff5bef8",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C59",
+      "claim": "Estimation uncertainty cannot be used as a proxy for observation uncertainty when the IC50 is extrapolated beyond the tested concentration range.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that whilst estimation uncertainty is a useful indicator for within-concentration IC50 values, it cannot be used as a proxy for observation uncertainty when the IC50 is extrapolated beyond the tested concentration range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from analysis of replicate experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "df8ae168-1a22-4056-a6e3-8b5d9547fa74",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C60",
+      "claim": "Overall drug responses and biomarkers from independent drug screens were consistent when comparing similar dose ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, overall drug responses and biomarkers from independent drug screens were consistent when comparing similar dose ranges (Haverty et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Haverty et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "87b978ea-20cf-4aaf-b015-c3dfd1f0e4b6",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C61",
+      "claim": "The Bayesian model highlighted the association between BRAF mutation in colorectal cancer and BRAF inhibitor response.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Bayesian model highlighted the association between BRAF mutation in colorectal cancer and BRAF inhibitor response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from Bayesian analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "f5e70de3-eb45-4ef4-ad67-93f96d6ebab8",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C62",
+      "claim": "Targeting BRAF signalling has recently been confirmed as a viable option for metastatic colorectal cancer cases with BRAF mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting BRAF signalling has recently been confirmed as a viable option for metastatic colorectal cancer cases with BRAF mutations (Kopetz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kopetz et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "5e402637-fb9c-4002-a8c5-c6aab39caa10",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C63",
+      "claim": "The Bayesian model excluded a suggestion from ANOVA of association between KRAS mutation with lenalidomide response in melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Bayesian model excluded a suggestion from ANOVA of association between KRAS mutation with lenalidomide response in melanoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of Bayesian and ANOVA results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "a9d209cb-7905-4d14-82b5-6448ab0a30d6",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C64",
+      "claim": "Lenalidomide has had no clinical success in KRAS mutant cases nor melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Lenalidomide has thus far had no clinical success in KRAS mutant cases nor melanoma (Gandhi et al., 2013; Glaspy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gandhi et al., 2013 and Glaspy et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "3f5371f0-395e-4322-a65b-d4e695aac8ff",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C65",
+      "claim": "The high uncertainty in the response estimates of chromatin histone methylation targeting compounds may be due to the large number of factors contributing to epigenetic regulation of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The high uncertainty in the response estimates of chromatin histone methylation targeting compounds for instance may be due to the large number of factors contributing to epigenetic regulation of cells (Luo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation supported by citation to Luo, 2015",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "b190da7b-08be-4f8a-979e-c6dc44d81679",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C66",
+      "claim": "The method is applicable to any dose-response data without replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method is applicable to any dose-response data without replicates, and improves biomarker discovery for precision medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about method applicability in the abstract",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "f60a94bf-b417-4469-89a1-1a95de72dea7",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C67",
+      "claim": "The method improves biomarker discovery for precision medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method is applicable to any dose-response data without replicates, and improves biomarker discovery for precision medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claim about method benefits in the abstract",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "d8269e36-06ef-454f-b92b-4f7cd3a787bf",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C68",
+      "claim": "Compounds were tested with 5 to 9 titration points, whilst either diluted with 4- or 2-fold, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds were tested with 5 to 9 titration points, whilst either diluted with 4- or 2-fold, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "606fe617-621e-4aa9-9568-65d506d36afa",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C69",
+      "claim": "Cells were seeded on day zero, left in the microtiter plate for 24 hr to retain linear growth, and consecutively treated for 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were seeded on day zero, left in the microtiter plate for 24 hr to retain linear growth, and consecutively treated for 3 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "4201b4e1-0d35-46eb-93f4-481f14cf74ce",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C70",
+      "claim": "After 3 days of treatment, cellTiterGlo staining is used to quantify ATP levels within each well.",
+      "claim_type": "EXPLICIT",
+      "source": "After those 3 days of treatment, cellTiterGlo staining is used to quantify ATP levels within each well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "f14fdc56-6435-4a57-a519-9270bcb583c2",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C71",
+      "claim": "Relative cell viability values below 0 (n = 2646) were set to 0.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative cell viability values below 0 (n = 2646, Figure 5\u2014figure supplement 2) were set to 0.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data preprocessing step with reference to supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "30e8ea22-2216-4dca-95d8-944ded55043b",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C72",
+      "claim": "The GP model has the advantage that it models outliers at higher doses as one component of a two-component Beta mixture in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The GP model has the advantage that it models outliers at higher doses as one component of a two-component Beta mixture in the model (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model formulation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "9321db60-b679-48ff-9307-eb35639d90b9",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C73",
+      "claim": "Outliers are typically the result of an experimental failure, and cannot be modelled using simple Gaussian noise without over-estimating the noise parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Such outliers are typically the result of an experimental failure, and cannot be modelled using simple Gaussian noise without over-estimating the noise parameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of why mixture model is needed",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "3369ece5-5578-4bd7-be3c-56667308f316",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "claim_id": "C74",
+      "claim": "The approach is generalisable beyond cancer to any disease and any dose-response measures.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach is also generalisable beyond cancer to any disease and any dose-response measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about method generalizability",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f297b747-d75f-4c90-ba81-7e526340fc42",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors applied Gaussian Process (GP) models to a large-scale drug screening dataset (265 compounds, 1074 cell lines) and identified 24 clinically established biomarkers and 6 novel biomarkers. The uncertainty estimates from the GP models were validated using an independent replicate screen of 26 drugs on 10 cell lines with 8-9 replicates per condition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 describe the main dataset, the biomarker identification results, and the validation approach. The dataset size is clearly stated (C3), the identification of 24 established and 6 novel biomarkers is explicitly reported (C4, C5), and validation experiments with replicates are described (C6). These claims are mutually reinforcing and provide converging evidence for the core findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "c9982d82-3bb2-4058-b71c-c8cfdcfd4e9e",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors found that GP estimation uncertainty correlates positively with observation uncertainty when IC50 values are within the tested concentration range (r=0.84), but negatively when IC50 values are extrapolated beyond the maximum concentration (r=-0.39). They conclude that estimation uncertainty is useful for within-range IC50 values but cannot proxy for observation uncertainty when extrapolating beyond the tested range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 provide specific statistical correlations with confidence intervals from replicate experiments. Claims C56-C59 present the authors' hypothesis and conclusions about the relationship between estimation and observation uncertainty. The positive correlation within range and negative correlation beyond range are both statistically significant with reported confidence intervals, and the conclusion (C58-C59) logically follows from the empirical observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "493be57d-a3f7-4148-bdf4-33c701c6b929",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "IC50 values from GP and sigmoid curve fitting methods showed high concordance (weighted Pearson correlation 0.88, 95% CI [0.85, 0.91]). Both methods successfully identified known clinically-actionable biomarkers including BRAF mutations with BRAF inhibitors in melanoma and thyroid carcinoma, EGFR mutations with EGFR inhibitors in lung adenocarcinoma, ERBB2 amplification with lapatinib in breast cancer, and TP53 mutations with nutlin-3a resistance across five cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C32 demonstrate concordance between GP and sigmoid methods through statistical correlation (C24-C25) and validation against known biomarkers (C26-C32). The weighted Pearson correlation of 0.88 with tight confidence intervals indicates strong agreement. Multiple established biomarkers are identified with both statistical significance (ANOVA q-values, Bayesian posterior probabilities) and literature support through citations to clinical studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "5b33fc3d-092c-4af3-93c6-c4a513471570",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Six novel drug sensitivity biomarkers were concordantly identified by both GP and sigmoid methods at 0.1% FDR. These include EGFR amplification as a biomarker for daporinad (NAMPT inhibitor) response in glioblastoma, and ARID2 mutations as a biomarker for doramapimod (p38 MAPK inhibitor) response in melanoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 states the overall finding of six novel biomarkers identified concordantly by both methods at stringent FDR threshold. Claims C34-C41 provide detailed examples with mechanistic context. The concordance between two independent curve-fitting methods strengthens confidence in these findings. However, these are computational predictions requiring experimental validation, which is appropriately acknowledged by the authors as 'not yet clinically established.'",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "dc4b4ae8-9cca-46e3-8020-485641d8394e",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Bayesian model incorporating uncertainty estimates detected BRAF mutations in colorectal cancer as a sensitivity biomarker for dabrafenib, which was less significant by ANOVA. This association has been reported in vitro and in melanoma patients, and BRAF targeting was recently confirmed as viable for metastatic colorectal cancer with BRAF mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 describe how the Bayesian test leverages uncertainty information to detect this biomarker more effectively than ANOVA. The Bayesian model appropriately weights cell lines with low uncertainty more heavily (C46). Claims C43-C45 and C62 provide literature support showing this association exists in vitro and has recent clinical validation (Kopetz et al., 2019), supporting the biological plausibility and clinical relevance of the computational finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "71245313-3a7f-4367-b1b5-9e776c25efe7",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The ANOVA model detected KRAS copy number alteration as a resistance biomarker for lenalidomide in melanoma, but the Bayesian model excluded this association due to high uncertainty in the mutant cell line responses. Lenalidomide has had no clinical success in KRAS mutant cases or melanoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 describe the discrepancy between ANOVA and Bayesian results, with the Bayesian model appropriately accounting for high uncertainty in the mutant estimates (C48). Claims C63-C64 provide the interpretation and clinical context showing lenalidomide has not been successful in these contexts. This demonstrates the value of incorporating uncertainty: the Bayesian model correctly excludes a false positive that ANOVA detects, as supported by negative clinical evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "df1467c0-91ef-4a16-ac6a-ecd57b7d3f3d",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Experiments showing partial drug response (AUC 0.4-0.9) had the greatest difference between GP and sigmoid AUC estimates and the highest estimation uncertainty. High estimation uncertainty from GPs correlated with high Spearman correlation (poor quality) in the raw dose-response data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 describe the relationship between estimation uncertainty and data quality. The observation that partial responders have highest uncertainty and greatest method disagreement is logical and supported by Figure 3A. The correlation between GP uncertainty estimates and Spearman correlation (a quality metric) validates that the GP uncertainty captures genuine data quality issues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "d8c688dd-683a-4946-b75e-5485251341cb",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GP models can fit a wider variety of dose-response curves than parametric sigmoidal models and provide straightforward uncertainty quantification for any summary statistic. The GP model uses a two-component Beta mixture to handle outliers at higher doses, which cannot be modeled with simple Gaussian noise without overestimating the noise parameter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 describe advantages of the GP approach in terms of flexibility and uncertainty quantification. Claims C72-C73 explain the technical approach to handling outliers. These are well-established properties of GP models and mixture models. The authors appropriately describe the methodological advantages, though the actual demonstration of fitting 'unexpected shapes' or 'off-target effects' is limited in the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "e0db6328-c8c6-4e3b-bffd-c30635d61368",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The GP model's increased flexibility comes at a cost: there are few constraints on curve behavior outside observed dosages, leading to counter-intuitive behavior where posterior mean estimates can increase when extrapolating beyond maximum dosage, accompanied by commensurate increases in posterior variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 describe a known limitation of non-parametric models when extrapolating. The authors appropriately acknowledge this limitation and note that increased uncertainty accompanies the counter-intuitive mean behavior (C55), as shown in Figures 5D-E. This is an honest assessment of the method's limitations and the uncertainty appropriately reflects the unreliability of extrapolation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "f2a84b09-800c-4178-a244-7bf522686a5b",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Sigmoid curve fitting method underestimates variance of non-responding cell lines, rendering the GP approach superior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 compares the two methods and asserts GP superiority for variance estimation in non-responders. This is supported by the comparison shown in Figure 5\u2014figure supplement 1 and the citation to Vis et al., 2016. The claim is consistent with the known limitation of parametric models having fixed variance structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "e7c941c9-f287-4e2b-b9e6-cd948d34c6bb",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The method is applicable to any dose-response data without replicates, improves biomarker discovery for precision medicine, and is generalizable beyond cancer to any disease and dose-response measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C67 and C74 make broad assertions about applicability and benefits. While the method is theoretically applicable to other dose-response data (C66, C74), this has not been demonstrated in the manuscript. The claim that it 'improves biomarker discovery' (C67) is supported for the specific cancer drug screening context but generalization requires additional validation. These are reasonable extrapolations but lack direct empirical support in the presented work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "e550032b-57d1-4c77-8a23-7f844e23c9ec",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors provide background context on drug development failure rates, existing drug screening studies, limitations of current approaches, and prior applications of Gaussian Processes in biological contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 provide background information supported by appropriate citations. These establish the motivation for the work: high drug failure rates (C1-C2), existence of large screening studies (C7-C8), limitations of current methods including lack of replicates (C10-C11), challenges with extrapolation (C12), and assumptions in machine learning approaches (C13-C14). Prior GP applications (C16-C18) establish precedent. All claims are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "e2e2f50b-d6f0-4c12-8e64-9c88e78d7e60",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The experimental protocol involved testing compounds at 5-9 titration points with 4-fold or 2-fold dilutions, seeding cells on day 0, allowing 24 hours for linear growth, treating for 3 days, and quantifying ATP levels with CellTiter-Glo. Negative cell viability values (n=2646) were set to 0 during preprocessing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 describe the experimental and preprocessing protocols. These are straightforward methodological descriptions that are clearly stated in the Materials and Methods section. The preprocessing decision to set negative values to 0 (C71) is explicitly documented with the number of affected values and reference to a supplementary figure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "976e9a55-1df1-4609-af31-6791e49f4117",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Overall drug responses and biomarkers from independent drug screens were consistent when comparing similar dose ranges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by citation to Haverty et al., 2016. This contextualizes the authors' findings about the importance of dose range in comparing studies and supports their conclusion about the limitations of extrapolation. The claim appropriately attributes this finding to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    },
+    {
+      "id": "123d5790-2a23-4010-8f02-4e32cba1f03c",
+      "content_id": "19d89cd2-8220-4ce5-86a2-8953a7aed1a3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The high uncertainty in response estimates of chromatin histone methylation targeting compounds may be due to the large number of factors contributing to epigenetic regulation of cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 is explicitly speculative ('may be due to') and offers a biological explanation for observed high uncertainty in a specific drug class. While the speculation is reasonable and supported by a citation to Luo, 2015 about epigenetic complexity, this remains an untested hypothesis. The authors appropriately present this as speculation rather than a demonstrated finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:54:16.799743Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1d549b39-3850-45ef-a6f4-33ebc2d26b8f",
+      "result_id": "f297b747-d75f-4c90-ba81-7e526340fc42"
+    },
+    {
+      "claim_id": "08d6a814-51dd-4d6b-b0eb-740d081cdf86",
+      "result_id": "f297b747-d75f-4c90-ba81-7e526340fc42"
+    },
+    {
+      "claim_id": "719c8f2d-50b1-4828-b92e-e3da2f478a4c",
+      "result_id": "f297b747-d75f-4c90-ba81-7e526340fc42"
+    },
+    {
+      "claim_id": "5180915b-792b-4c2c-8767-cd34ea7c6547",
+      "result_id": "f297b747-d75f-4c90-ba81-7e526340fc42"
+    },
+    {
+      "claim_id": "318a5273-5861-4fbd-bd2a-c25ab2638042",
+      "result_id": "c9982d82-3bb2-4058-b71c-c8cfdcfd4e9e"
+    },
+    {
+      "claim_id": "d266a492-f358-4984-9555-6ea0a65d9a37",
+      "result_id": "c9982d82-3bb2-4058-b71c-c8cfdcfd4e9e"
+    },
+    {
+      "claim_id": "c2bc52b5-c18d-4314-8ce4-6a806ab80a63",
+      "result_id": "c9982d82-3bb2-4058-b71c-c8cfdcfd4e9e"
+    },
+    {
+      "claim_id": "ec435914-b340-400a-aebc-48436c45569e",
+      "result_id": "c9982d82-3bb2-4058-b71c-c8cfdcfd4e9e"
+    },
+    {
+      "claim_id": "beb3fb6a-f39c-4da7-bf09-661b9fdc19d5",
+      "result_id": "c9982d82-3bb2-4058-b71c-c8cfdcfd4e9e"
+    },
+    {
+      "claim_id": "ab5d8303-bb00-49bd-9c2d-f7c289deb651",
+      "result_id": "c9982d82-3bb2-4058-b71c-c8cfdcfd4e9e"
+    },
+    {
+      "claim_id": "112a3bef-be47-4506-b5a7-2e1a5ff5bef8",
+      "result_id": "c9982d82-3bb2-4058-b71c-c8cfdcfd4e9e"
+    },
+    {
+      "claim_id": "8d8ba086-0b09-4190-86da-e368c91228e5",
+      "result_id": "493be57d-a3f7-4148-bdf4-33c701c6b929"
+    },
+    {
+      "claim_id": "82de7e5f-e173-4cb0-a97d-6cd855d63807",
+      "result_id": "493be57d-a3f7-4148-bdf4-33c701c6b929"
+    },
+    {
+      "claim_id": "dce35691-64aa-4bb5-b8f3-d27afb72e5ef",
+      "result_id": "493be57d-a3f7-4148-bdf4-33c701c6b929"
+    },
+    {
+      "claim_id": "c68c9851-6413-42cf-9a3d-39face4b7359",
+      "result_id": "493be57d-a3f7-4148-bdf4-33c701c6b929"
+    },
+    {
+      "claim_id": "b4abe8cf-1757-4cca-8af5-40e8f829326e",
+      "result_id": "493be57d-a3f7-4148-bdf4-33c701c6b929"
+    },
+    {
+      "claim_id": "f8e0539b-ac88-4d98-976e-411b7521869f",
+      "result_id": "493be57d-a3f7-4148-bdf4-33c701c6b929"
+    },
+    {
+      "claim_id": "c61e8688-26b6-4353-b939-4d7bbf161606",
+      "result_id": "493be57d-a3f7-4148-bdf4-33c701c6b929"
+    },
+    {
+      "claim_id": "797613ff-03cf-4405-b31f-91091adc7369",
+      "result_id": "493be57d-a3f7-4148-bdf4-33c701c6b929"
+    },
+    {
+      "claim_id": "6940e046-b74d-4f17-aafd-85328006a75b",
+      "result_id": "493be57d-a3f7-4148-bdf4-33c701c6b929"
+    },
+    {
+      "claim_id": "ae021a54-9455-48e4-ad2d-3ed13c3dfae8",
+      "result_id": "5b33fc3d-092c-4af3-93c6-c4a513471570"
+    },
+    {
+      "claim_id": "7f8a8a76-c64a-4d40-92a4-1aac3bda1d2f",
+      "result_id": "5b33fc3d-092c-4af3-93c6-c4a513471570"
+    },
+    {
+      "claim_id": "d7cfe04e-1469-418e-a9cd-dfaebde6058b",
+      "result_id": "5b33fc3d-092c-4af3-93c6-c4a513471570"
+    },
+    {
+      "claim_id": "21edf709-c587-4e7d-959d-149b22151f5e",
+      "result_id": "5b33fc3d-092c-4af3-93c6-c4a513471570"
+    },
+    {
+      "claim_id": "22a7a45d-40c2-404f-b33d-93baa78bbcf2",
+      "result_id": "5b33fc3d-092c-4af3-93c6-c4a513471570"
+    },
+    {
+      "claim_id": "de60bd90-7337-45e4-8f79-139708ed9671",
+      "result_id": "5b33fc3d-092c-4af3-93c6-c4a513471570"
+    },
+    {
+      "claim_id": "ab10e50a-c128-4ace-b75f-66aea4700a99",
+      "result_id": "5b33fc3d-092c-4af3-93c6-c4a513471570"
+    },
+    {
+      "claim_id": "caf08b7c-4702-4bb8-8fc2-7088eb11a992",
+      "result_id": "5b33fc3d-092c-4af3-93c6-c4a513471570"
+    },
+    {
+      "claim_id": "dd5ddd4c-238d-4f59-9586-df79f5107e49",
+      "result_id": "5b33fc3d-092c-4af3-93c6-c4a513471570"
+    },
+    {
+      "claim_id": "405f48a1-022e-45ea-b3a7-dadf2fe2c986",
+      "result_id": "dc4b4ae8-9cca-46e3-8020-485641d8394e"
+    },
+    {
+      "claim_id": "b989dfb7-9c90-43f2-929a-1ab59f0b4f65",
+      "result_id": "dc4b4ae8-9cca-46e3-8020-485641d8394e"
+    },
+    {
+      "claim_id": "664d15c1-6c43-4bb7-9d94-ab24e43bc6ff",
+      "result_id": "dc4b4ae8-9cca-46e3-8020-485641d8394e"
+    },
+    {
+      "claim_id": "bf88fc97-7dfb-4f94-ba3c-64d2740cb2b3",
+      "result_id": "dc4b4ae8-9cca-46e3-8020-485641d8394e"
+    },
+    {
+      "claim_id": "09f2cdc3-ee37-463f-a5cb-fac20b8e72da",
+      "result_id": "dc4b4ae8-9cca-46e3-8020-485641d8394e"
+    },
+    {
+      "claim_id": "87b978ea-20cf-4aaf-b015-c3dfd1f0e4b6",
+      "result_id": "dc4b4ae8-9cca-46e3-8020-485641d8394e"
+    },
+    {
+      "claim_id": "f5e70de3-eb45-4ef4-ad67-93f96d6ebab8",
+      "result_id": "dc4b4ae8-9cca-46e3-8020-485641d8394e"
+    },
+    {
+      "claim_id": "84907d9f-9b3d-416a-9c98-4ec5a98d86b5",
+      "result_id": "71245313-3a7f-4367-b1b5-9e776c25efe7"
+    },
+    {
+      "claim_id": "e2eed457-46a8-4bd8-9ec4-a955580ba0c5",
+      "result_id": "71245313-3a7f-4367-b1b5-9e776c25efe7"
+    },
+    {
+      "claim_id": "5e402637-fb9c-4002-a8c5-c6aab39caa10",
+      "result_id": "71245313-3a7f-4367-b1b5-9e776c25efe7"
+    },
+    {
+      "claim_id": "a9d209cb-7905-4d14-82b5-6448ab0a30d6",
+      "result_id": "71245313-3a7f-4367-b1b5-9e776c25efe7"
+    },
+    {
+      "claim_id": "91633c48-c1f6-4453-9957-2f76abf2e7ca",
+      "result_id": "df1467c0-91ef-4a16-ac6a-ecd57b7d3f3d"
+    },
+    {
+      "claim_id": "b72ecae9-3101-4f45-bb25-760eabb114b0",
+      "result_id": "df1467c0-91ef-4a16-ac6a-ecd57b7d3f3d"
+    },
+    {
+      "claim_id": "0cd4ff6b-98a8-4cc6-a257-1ee21b246fa9",
+      "result_id": "d8c688dd-683a-4946-b75e-5485251341cb"
+    },
+    {
+      "claim_id": "5b4bc9e2-3418-4b1f-91cc-d10362d9abfa",
+      "result_id": "d8c688dd-683a-4946-b75e-5485251341cb"
+    },
+    {
+      "claim_id": "30e8ea22-2216-4dca-95d8-944ded55043b",
+      "result_id": "d8c688dd-683a-4946-b75e-5485251341cb"
+    },
+    {
+      "claim_id": "9321db60-b679-48ff-9307-eb35639d90b9",
+      "result_id": "d8c688dd-683a-4946-b75e-5485251341cb"
+    },
+    {
+      "claim_id": "fb324c19-e04a-41c2-b6e4-8c9c335b5297",
+      "result_id": "e0db6328-c8c6-4e3b-bffd-c30635d61368"
+    },
+    {
+      "claim_id": "e80e0acf-8a09-475a-a204-602528a7b5d2",
+      "result_id": "e0db6328-c8c6-4e3b-bffd-c30635d61368"
+    },
+    {
+      "claim_id": "df2ef79e-d283-4156-88ee-61e1fdc27dd1",
+      "result_id": "e0db6328-c8c6-4e3b-bffd-c30635d61368"
+    },
+    {
+      "claim_id": "fa09cd86-e6d1-4970-8502-f1a521d53a1f",
+      "result_id": "f2a84b09-800c-4178-a244-7bf522686a5b"
+    },
+    {
+      "claim_id": "b190da7b-08be-4f8a-979e-c6dc44d81679",
+      "result_id": "e7c941c9-f287-4e2b-b9e6-cd948d34c6bb"
+    },
+    {
+      "claim_id": "f60a94bf-b417-4469-89a1-1a95de72dea7",
+      "result_id": "e7c941c9-f287-4e2b-b9e6-cd948d34c6bb"
+    },
+    {
+      "claim_id": "3369ece5-5578-4bd7-be3c-56667308f316",
+      "result_id": "e7c941c9-f287-4e2b-b9e6-cd948d34c6bb"
+    },
+    {
+      "claim_id": "05345955-ac96-40e5-a647-812c5e288969",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "8f347f97-a177-40be-8e72-8d70187fb0b9",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "6564461c-35e5-4ed5-ba3f-1c78f1912374",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "efc9e88d-f8ee-4256-aa23-67ce6e3916cf",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "51d7bb9d-c024-4fb7-b563-b89c0090984b",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "f0814e93-a4e2-40a7-b9b3-87d61a725c14",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "3bbf8800-5849-4ae2-a5d6-14d04e3cf7f0",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "4bc5dee4-8b2a-47e9-bd1a-da2f6729a038",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "ab97d2fa-e819-4769-bf4e-d28cf5bd213a",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "dbfc4b9a-22ac-4835-b426-3e05dd1c8138",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "7c6da44d-82ee-4cd8-8a92-68072ff0e6fb",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "533b98f0-7eb6-41d6-8351-77ab8b12b436",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "2a3602b7-a4e1-4246-a705-c9ceb4f679a0",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "76119a63-302b-4e52-a2e7-df87951e5e30",
+      "result_id": "e550032b-57d1-4c77-8a23-7f844e23c9ec"
+    },
+    {
+      "claim_id": "d8269e36-06ef-454f-b92b-4f7cd3a787bf",
+      "result_id": "e2e2f50b-d6f0-4c12-8e64-9c88e78d7e60"
+    },
+    {
+      "claim_id": "606fe617-621e-4aa9-9568-65d506d36afa",
+      "result_id": "e2e2f50b-d6f0-4c12-8e64-9c88e78d7e60"
+    },
+    {
+      "claim_id": "4201b4e1-0d35-46eb-93f4-481f14cf74ce",
+      "result_id": "e2e2f50b-d6f0-4c12-8e64-9c88e78d7e60"
+    },
+    {
+      "claim_id": "f14fdc56-6435-4a57-a519-9270bcb583c2",
+      "result_id": "e2e2f50b-d6f0-4c12-8e64-9c88e78d7e60"
+    },
+    {
+      "claim_id": "df8ae168-1a22-4056-a6e3-8b5d9547fa74",
+      "result_id": "976e9a55-1df1-4609-af31-6791e49f4117"
+    },
+    {
+      "claim_id": "3f5371f0-395e-4322-a65b-d4e695aac8ff",
+      "result_id": "123d5790-2a23-4010-8f02-4e32cba1f03c"
+    }
+  ],
+  "comparisons": []
+}

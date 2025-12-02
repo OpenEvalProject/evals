@@ -1,0 +1,1340 @@
+{
+  "submission": {
+    "id": "a69b67a8-2d42-481f-b561-f1c23a4ec6e0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:37:08.020943Z",
+    "updated_at": "2025-12-02T10:37:08.020943Z"
+  },
+  "content": [
+    {
+      "id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "submission_id": "a69b67a8-2d42-481f-b561-f1c23a4ec6e0",
+      "content_type": "manuscript",
+      "content_text": "# Determining cellular CTCF and cohesin abundances to constrain 3D genome models\n\n## Authors\n\n- Claudia Cattoglio<sup>1</sup> ([ORCID: 0000-0001-6100-0491](https://orcid.org/0000-0001-6100-0491))\n- Iryna Pustova<sup>1</sup>\n- Nike Walther<sup>3</sup> ([ORCID: 0000-0002-7591-5251](https://orcid.org/0000-0002-7591-5251))\n- Jaclyn J Ho<sup>1</sup>\n- Merle Hantsche-Grininger<sup>3</sup>\n- Carla J Inouye<sup>1</sup>\n- M Julius Hossain<sup>3</sup> ([ORCID: 0000-0003-3303-5755](https://orcid.org/0000-0003-3303-5755))\n- Gina M Dailey<sup>1</sup>\n- Jan Ellenberg<sup>3</sup> ([ORCID: 0000-0001-5909-701X](https://orcid.org/0000-0001-5909-701X))\n- Xavier Darzacq<sup>1</sup> ([ORCID: 0000-0003-2537-8395](https://orcid.org/0000-0003-2537-8395))\n- Robert Tjian<sup>1</sup> ([ORCID: 0000-0003-0539-8217](https://orcid.org/0000-0003-0539-8217))\n- Anders S Hansen<sup>1</sup> ([ORCID: 0000-0001-7540-7858](https://orcid.org/0000-0001-7540-7858)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, Li Ka Shing Center for Biomedical and Health Sciences, CIRM Center of Excellence University of California, Berkeley Berkeley United States\n2. Howard Hughes Medical Institute Berkeley United States\n3. Cell Biology and Biophysics Unit European Molecular Biology Laboratory (EMBL) Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nAchieving a quantitative and predictive understanding of 3D genome architecture remains a major challenge, as it requires quantitative measurements of the key proteins involved. Here, we report the quantification of CTCF and cohesin, two causal regulators of topologically associating domains (TADs) in mammalian cells. Extending our previous imaging studies (Hansen et al., 2017), we estimate bounds on the density of putatively DNA loop-extruding cohesin complexes and CTCF binding site occupancy. Furthermore, co-immunoprecipitation studies of an endogenously tagged subunit (Rad21) suggest the presence of cohesin dimers and/or oligomers. Finally, based on our cell lines with accurately measured protein abundances, we report a method to conveniently determine the number of molecules of any Halo-tagged protein in the cell. We anticipate that our results and the established tool for measuring cellular protein abundances will advance a more quantitative understanding of 3D genome organization, and facilitate protein quantification, key to comprehend diverse biological processes.\n\n## Introduction\n\nFolding of mammalian genomes into structures known as Topologically Associating Domains (TADs) is thought to help regulate gene expression while aberrant misfolding has been associated with disease (Dekker and Mirny, 2016; Fudenberg and Pollard, 2019; Hansen et al., 2018a; Hnisz et al., 2017; Lupi\u00e1\u00f1ez et al., 2015; Symmons et al., 2014). CTCF and cohesin have emerged as causal regulators of TAD formation and maintenance, since acute CTCF or cohesin depletion causes global loss of most\u00a0TADs (Gassler et al., 2017; Nora et al., 2017; Rao et al., 2017; Wutz et al., 2017). Concordantly, knock-out of cohesin loading proteins NIPBL (Schwarzer et al., 2017) and MAU2 (Haarhuis et al., 2017) also affect TAD organization, although to different extents. Likewise, loss of the cohesin unloader WAPL strengthens TADs (Gassler et al., 2017; Haarhuis et al., 2017; Wutz et al., 2017). Consistent with the key roles played by CTCF and cohesin, models of genome folding through cohesin-mediated loop extrusion, which is stopped by chromatin-bound CTCF, have been remarkably successful in reproducing the general features of genomic contact maps at the level of TADs (Fudenberg et al., 2016; Fudenberg et al., 2017; Sanborn et al., 2015). Nevertheless, these models have been limited by a dearth of quantitative biological data to constrain the modeling. Importantly, the number of CTCF and cohesin molecules, the molecular mechanism of loop extrusion and the stoichiometry of cohesin during this process remain unknown, further limiting our ability to test various models. Building on our recent genomic and imaging studies of endogenously tagged CTCF and cohesin (Hansen et al., 2017), here we (1) estimate bounds on the density of potentially loop-extruding cohesin complexes and estimate the CTCF-binding site occupancy probability in cells; (2) provide biochemical evidence that at least a subset of cohesin complexes exist as dimers or oligomers and (3) develop a simple method for determining the absolute cellular abundance of any protein fused to the widely used and highly versatile HaloTag (Los et al., 2008).\n\n### Determining the number of CTCF and cohesin proteins per cell\n\nTo estimate the absolute abundance (number of proteins per cell) of CTCF and cohesin, we applied a combination of three distinct methods: 1) \u2018in-gel\u2019 fluorescence, 2) Fluorescence Correlation Spectroscopy (FCS)-calibrated imaging, and 3) Flow Cytometry (FCM). First, we developed an \u2018in-gel\u2019 fluorescence method based on previously validated mouse and human cell lines where either CTCF (U2OS and mouse embryonic stem cells (mESC)) or the cohesin kleisin subunit Rad21 (mESC) were endogenously and homozygously Halo-tagged (Hansen et al., 2017). We showed that these cell lines express the tagged proteins at endogenous levels by quantitative western blotting, (Hansen et al., 2017). To establish a standard, we purified recombinant 3xFLAG-Halo-CTCF and Rad21-Halo-3xFLAG from insect cells and labeled the purified proteins with the bright dye JF646 coupled to the covalent HaloTag ligand (Grimm et al., 2015). We then ran a known quantity of protein side-by-side with a known number of cells labeled with the same fluorescent HaloTag ligand and quantified the total protein abundance per cell using \u2018in-gel\u2019 fluorescence (Figure 1A; Materials and methods). We note that JF646-labeling is near-quantitative in live cells (Yoon et al., 2016); moreover, a titration experiment indicated\u00a0\u226590% labeling efficiency (Figure 1\u2014figure supplement 1A\u2013C), although we cannot exclude slight undercounting due to incomplete labeling. Quantification by \u2018in-gel\u2019 fluorescence revealed that, on average, mESCs contain\u00a0~218,000\u00a0\u00b1 24,000 CTCF protein molecules (mean\u00a0\u00b1\u00a0std) as well as\u00a0~86,900\u00a0\u00b1 35,600 Rad21 proteins and thus presumably cohesin complexes (Figure 1B; Rad21 appears to be the least abundant cohesin subunit, see Materials and methods). Similarly, we determined the abundance of Halo-CTCF in U2OS cells (C32) to be\u00a0~104,900\u00a0\u00b1 14,600 proteins per cell. The CTCF abundance in human U2OS cells corresponds thus to about half the number of CTCF molecules determined for mESCs (~218,000 proteins/cell). Independent FCS experiments in HeLa Kyoto CTCF-EGFP cells measured\u00a0~125,000 CTCF molecules per cell in G1-phase and\u00a0~181,000 in G2-phase (Holzmann et al., 2019). It is thus tempting to speculate that cell-type-specific control of chromatin looping may be achieved in part by regulating CTCF abundance.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40164/elife-40164-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative SDS-PAGE gel showing a titration of purified and labeled JF646-3xFLAG-Halo-CTCF protein as a standard (first three lanes) side-by-side with JF646-Halo-CTCF from lysed mESCs (3 replicates of 150,000 cells each from two different clones and different replicates). (B) Absolute quantification as shown in (A) of mESC Halo-CTCF abundance (in two independent clones, (C87 and C59), of human U2OS Halo-CTCF (clone C32) and of mESC Rad21-Halo (C45). CTCF and Rad21 were homozygously tagged in all cell lines and by western blotting the expression levels were shown to be equivalent to the untagged protein levels in wild-type cells (Hansen et al., 2017). Each dot represents an independent biological replicate and error bars show standard deviation. (C) Representative FCS measurements at points (white crosses) in the nucleus (position 1) and cytoplasm (position 2) of a U2OS Halo-CTCF C32 cell labeled with TMR HaloTag ligand. Hoechst 33342 (DNA; magenta) and Atto 340LS-31 (labeled 500 kD dextran; cell boundary marker; gray) as well as TMR (Halo-CTCF; green) channels are shown. Scale bar: 10 \u00b5m (left panel). During FCS measurements photon counts at the indicated positions (position 1, nucleus, dark gray; position 2, cytoplasm, light gray) were recorded (upper right panel) and autocorrelation curves (circles) were computed and fitted to a two-component diffusion model (lines; lower right panel; see Materials and methods for details). These FCS measurements were the basis for FCS-calibrated imaging experiments to determine the number of Halo-CTCF molecules in U2OS C32 cells as plotted in (D). See Figure 1\u2014figure supplement 2 and Materials and methods for details. (D) Four independent FCS-calibrated imaging experiments of randomly sampled interphase U2OS Halo-CTCF C32 cells labeled with TMR HaloTag ligand were performed. TMR-Halo-CTCF protein numbers were calculated for each cell (green dots; replicate 1: n\u00a0=\u00a022; replicate 2: n\u00a0=\u00a021; replicate 3: n\u00a0=\u00a029; replicate 4: n\u00a0=\u00a029). For each replicate, the mean number of TMR-Halo-CTCF molecules per cell as well as the standard deviation (error bars) are indicated. The mean calculated from the means of the four replicates is indicated as dashed line. The single-cell measurements revealed a broad distribution of Halo-CTCF abundance reflecting, amongst others, biological cell-to-cell heterogeneity of interphase cells. (E) Flow cytometry (FCM) quantification method. Representative replicate showing FCM-estimated TMR fluorescence of mESC lines: C45 Rad21-Halo, C59 Halo-CTCF, C87 Halo-CTCF as well as mESC background (without TMR labeling). (F) Table of average protein numbers per cell determined by different methods. The table provides mean\u00a0\u00b1standard deviation (std is calculated over each replicate) for each cell line and for each method. The \u2018final average\u2019 in bold is from averaging the different methods. (G) Sketch of hypothetical loop extrusion model, wherein cohesin extrudes chromatin loops until it is blocked by chromatin-bound CTCF. Below, calculation of fractional CTCF occupancy and density of extruding cohesin molecules. See Materials and methods for calculation details.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40164/elife-40164-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) Halo-JF646 titration. The labeling efficiency using Halo-JF646 dye and mESC C59 Halo-CTCF was estimated using flow cytometry (FCM) for the indicated dye concentrations. For full experimental details, please see Materials and methods. (A\u2013C) shows three biological replicates. (D) Cell cycle phase distribution for mESC C59 Halo-CTCF cell line. Shows mean and standard deviation across the three biological replicates shown in (E\u2013G). (E\u2013G) Cell cycle phase distribution measured using flow cytometry using the Click-iT EdU Alexa Fluor 488 Flow Cytometry Assay Kit (ThermoFisher Scientific Cat. # C10425). Three biological replicates are shown and the DNA content was measured using DAPI staining. For full experimental details, please see Materials and methods. (H) Histogram of read counts at MACS2-called CTCF ChIP-Seq peaks using data for wild-type CTCF described in Hansen et al. (2017).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40164/elife-40164-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013B) Representative FCS measurements at points (white crosses) in the nucleus (position 1) and cytoplasm (position 2) of U2OS WT cells expressing free HaloTag (A) or U2OS C32 Halo-CTCF cells (B), both labeled with TMR HaloTag ligand. Transmission, Hoechst 33342 (DNA) and TMR (HaloTag) channels are shown. Scale bars: 20 \u00b5m (left panel). During FCS measurements photon counts at the indicated positions (position 1, nucleus, dark gray; position 2, cytoplasm, light gray) were recorded for 30 s (middle panel). Autocorrelation curves (circles) were computed from the recorded photon counts and fitted to a two-component diffusion model (lines) to estimate the number of molecules in the focal volume of the microscope (right panel; see Materials and methods for details). For Halo-CTCF (B), photon counts recorded in the cytoplasm were close to background. (C) Image acquisition and segmentation of a representative interphase U2OS C32 Halo-CTCF cell labeled with TMR HaloTag ligand. Shown is a central slice of the acquired z-stack in the transmission, Atto 340LS-31 (labeled 500 kD dextran; cell boundary marker), Hoechst 33342 (DNA) and TMR (Halo-CTCF) channels. 3D segmentation of the same cell (gray) and its nucleus (magenta) was performed based on the extracellular fluorescently labeled dextran as negative cell marker and the Hoechst 33342 staining as DNA marker, respectively. Scale bar: 20 \u00b5m. (D) To convert fluorescence intensities of the TMR-labeled HaloTag into protein concentrations, a calibration curve was computed for each FCS-calibrated imaging experiment and fitted to a linear function (black straight line). The calibration curve was generated from images and FCS measurements in U2OS WT cells expressing different levels of free HaloTag (cells transfected with plasmid pHTCHaloTag; blue squares; n\u00a0=\u00a032 measurements; see (A)) and U2OS C32 Halo-CTCF cells (Halo-CTCF; green circles; n\u00a0=\u00a027 measurements; see (B) and Figure 1C), both labeled with TMR HaloTag ligand. FCS measurements in U2OS WT cells stained with TMR HaloTag ligand (WT background; orange triangles; n\u00a0=\u00a022 measurements) were used for background correction of fluorescence intensities and photon counts. Representative data from replicate 3 (see Figure 1D) is shown. (E) TMR-Halo-CTCF fluorescence intensities of the cell shown in (C) were converted into protein concentrations (upper panel) and protein numbers (lower panel) by applying the calibration factor (slope) from the calibration curve in (D). See Materials and methods for details. Shown is the same central slice of an acquired z-stack as in (C). Scale bars: 20 \u00b5m.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/40164/elife-40164-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Raw fluorescence histograms for U2OS (background\u00a0=\u00a0unlabeled), C32 Halo-CTCF and mESCs (background\u00a0=\u00a0unlabeled), C45 Rad21-Halo, C59 Halo-CTCF and C87 Halo-CTCF after forward and side-scattering gating for live cells. All four biological replicates are shown and the abundances are reported as the mean\u00a0\u00b1\u00a0standard deviation from these replicates in the main text. Calculations for converting to absolute abundances using the U2OS C32 Halo-CTCF standard are shown on the right. For full details on how the measurements were performed, please see the Materials and methods section.\n\nHaving quantified CTCF and Rad21 abundance using \u2018in-gel\u2019 fluorescence, we sought to test the accuracy of this method. FCS-calibrated imaging has been recently established as a robust tool for absolute protein abundance quantification (Cai et al., 2018; Politi et al., 2018; Walther et al., 2018). We adapted this method to Halo-tagged proteins using the commercially available HaloTag ligand TMR (Figure 1\u2014figure supplement 2) and applied it to quantify cellular Halo-CTCF abundance in the U2OS C32 clone. We found a mean of 114,600\u00a0\u00b1\u00a010,200 CTCF proteins per U2OS interphase cell, randomly sampling asynchronously cycling single cells (mean\u00a0\u00b1\u00a0std of 4 replicates with number of cells n\u00a0\u2265\u00a021; 101 single cells in total; Figure 1C\u2013D). Over 90% of cellular Halo-CTCF molecules localized to the interphase U2OS nucleus (~106,000 nuclear Halo-CTCF molecules, which corresponds to a nuclear Halo-CTCF concentration of\u00a0~144.3 nM (Figure 1\u2014figure supplement 2B,E)). The result of our FCS-calibrated imaging method (~114,600\u00a0\u00b1\u00a010,200) agrees within technical error with our \u2018in-gel\u2019 fluorescence estimate of\u00a0~104,900\u00a0\u00b1\u00a014,600 CTCF molecules per cell, and thereby validates the latter approach for determining average cellular protein abundances. We take the mean of the two methods, 109,800 CTCF proteins per cell in U2OS cells, as our best and final cross-validated estimate.\n\nWe finally used our robust and cross-validated CTCF abundance estimate in U2OS cells as a standard to estimate protein abundances in the endogenously Halo-tagged mESC lines. We labeled cells with HaloTag TMR ligand and used FCM with TMR fluorescence as readout. After background subtraction, we could estimate the absolute abundance of TMR-labeled mESC C59 Halo-CTCF, C87 Halo-CTCF, and C45 Rad21-Halo by comparing to the standard U2OS C32 TMR-Halo-CTCF fluorescence (Figure 1E; Figure 1\u2014figure supplement 3). Notably, the estimates of mESC C59 and C87 Halo-CTCF were identical within error by both the \u2018in-gel\u2019 fluorescence and FCM method (Figure 1F). We take the mean of C59 and C87 across the two methods, namely\u00a0~217,200 CTCF proteins per cell in mESCs, as the best and final estimate. This provides additional cross-validation and furthermore suggests that FCM can be used to estimate the absolute abundance of other Halo-tagged proteins if the U2OS C32 Halo-CTCF cell line is used as a standard (see below; Figure 3). For mESC C45 Rad21-Halo, the FCM estimate of 131,800\u00a0\u00b1\u00a012,600 proteins/cell differed more from the \u2018in-gel\u2019 fluorescence estimate of 86,900\u00a0\u00b1\u00a035,600, but was still just within error. We speculate that this discrepancy could be due to poorer Rad21-Halo protein stability during the biochemical steps of the \u2018in-gel\u2019 fluorescence method. We again take the mean of the two methods,~109,400 Rad21 proteins per cell, as our final, although less certain, estimate of Rad21 abundance in mESCs.\n\n### Quantitative constraints of 3D genome organization from CTCF and cohesin abundances\n\nThe loop extrusion model posits that cohesin extrudes chromatin loops until blocked by chromatin-bound CTCF (Figure 1G; Fudenberg et al., 2017). Based on the determined abundances of CTCF and cohesin in mESCs, we can now parameterize this model. First, we measured the interphase cell cycle distribution of JM8.N4 mESCs: 10.2% in G1-phase, 73.9% in S-phase, and 15.9% in G2-phase (Figure 1\u2014figure supplement 1D\u2013G). This approximately agrees with other mESC estimates (Hansen et al., 2018b; Sladitschek and Neveu, 2015) and shows that an \u2018average\u2019 mESC is approximately half-way through the cell cycle and thus contains\u00a0~3 genome copies. We have previously determined the fraction of CTCF molecules bound to specific DNA sites in mESCs by single-molecule imaging (~49%) and the total number of CTCF sites in the mESC genome by ChIP-seq (~71,000) (Hansen et al., 2017). Now we can use the information on the absolute abundance of CTCF proteins per mESC (217,200) to calculate that an average CTCF-binding site is occupied\u00a0~50% of the time by a CTCF molecule (always assuming three genome copies; full details in Materials and methods). In the context of the loop extrusion model, this suggests that the time-averaged occupancy of an average CTCF boundary site by CTCF is\u00a0~50% (Figure 1G) \u2013 that is, an extruding cohesin will be blocked\u00a0~50% of the time at an average CTCF site in the simplest version of the loop extrusion model. We cannot estimate CTCF binding site occupancy and probability of blocking cohesin extrusion in U2OS cells, since these cells have a poorly defined karyotype.\n\nFor cohesin, we previously estimated the fraction of cohesin complexes that are relatively stably associated with chromatin (~20\u201325 min residence time in mESC G1) and thus presumably topologically engaged to be\u00a0~40% in G1 (Hansen et al., 2017). If we take this as the upper bound of putatively \u2018loop-extruding\u2019 cohesin complexes, we can similarly calculate the upper limit on the density of extruding cohesin molecules as\u00a0~5.3 per Mb assuming cohesin exists as a monomeric ring or\u00a0~2.7 per Mb if cohesin forms dimers (Figure 1G; full details on calculation in Materials and methods). This corresponds to a genomic distance between extruding cohesins of\u00a0~186\u2013372 kb in mESCs, which approximately matches computational estimates (Fudenberg et al., 2016; Gassler et al., 2017). We envision that these numbers will be useful starting points for constraining and parameterizing models of 3D genome organization and we discuss some limitations of these estimates below.\n\n### Mammalian cohesin can form dimers and/or higher order oligomers in cells\n\nInterpreting the cohesin data described above requires an accurate count of its molecular stoichiometry, but whether cohesin complexes function as single rings, dimers or higher order oligomeric structures (Figure 1G) has been highly debated in the literature. In addition to potentially engaging in loop extrusion (Hassler et al., 2018; Nichols and Corces, 2018) cohesin plays important roles in sister chromatid cohesion and DNA repair (Guacci et al., 1997; Losada et al., 1998; Michaelis et al., 1997; Onn et al., 2008). Cohesin is generally assumed to exist as a single tripartite ring composed of the subunits Smc1, Smc3 and Rad21/Scc1/Mcd1 at 1:1:1 stoichiometry (Nasmyth, 2011), with a fourth subunit, Scc3 (SA1 or SA2 in mammalian cells) that is bound to Rad21. However, higher order oligomeric cohesin structures have been proposed based upon the unusual genetic properties of cohesin subunits in budding yeast (Eng et al., 2015; Skibbens, 2016). Moreover, a previous study used self co-immunoprecipitation (CoIP) of cohesin subunits to suggest a handcuff-shaped dimer model for cohesin (Zhang et al., 2008). Still, this study has remained highly controversial (Nasmyth, 2011) and self-CoIP experiments of cohesin subunits in budding yeast (Haering et al., 2002) and human HeLa cells (Hauf et al., 2005) could not detect cohesin dimers. Moreover, budding yeast condensin, an SMC complex related to cohesin, can extrude loops in vitro as a monomer (Ganji et al., 2018). Since the mammalian study (Zhang et al., 2008) relied on over-expressed epitope-tagged cohesin subunits and given our recent observations that over-expression of the Rad21 subunit does not faithfully recapitulate the properties of endogenously tagged Rad21 (Hansen et al., 2017), we decided to revisit this important issue using endogenous tagging without overexpression. First, we generated mESCs where one endogenous Rad21 allele was Halo-V5 tagged while the other allele was not tagged (clone C85; Figure 2B\u2013C; see Materials and methods for details). We also generated an additional mESC line where one allele of Rad21 was tagged with Halo-V5 and the other with SNAP-3xFLAG (clone B4; Figure 2B\u2013C). We then carefully examined the specificity of several V5 and FLAG antibodies in both western blot and CoIP assays to select those with no cross-reactivity with either the reciprocal tag or the wild-type, untagged Rad21 protein (Figure 2\u2014figure supplement 1A and D). If cohesin exclusively existed as a single ring containing one Rad21 subunit, a V5 IP of Rad21-Halo-V5 should not pull down the Rad21 protein generated from the other allele. However, in the C85 clonal line, the V5 CoIP clearly precipitated wild-type Rad21 (Figure 2D). This cohesin:cohesin interaction appears to be protein-mediated rather than dependent on DNA association since benzonase treatment, which leads to complete DNA degradation (Figure 2\u2014figure supplement 1C), did not interfere with CoIP (Figure 2D; single-color blots in Figure 2\u2014figure supplement 1B). This demonstrates that Rad21 either directly or indirectly self-associates in a protein-mediated and biochemically stable manner, consistent with cohesin forming dimers or higher order oligomers in vivo. However, this observation does not implicate that cohesin dimers or oligomers are a functional state of loop-extruding cohesin complexes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40164/elife-40164-fig2-v2.jpg)\n\n**Figure 2.:** (A) Sketches of hypothetical single-ring, dimer and oligomer models of cohesin. The core single-ring cohesin complex consists of Smc1, Smc3, Rad21 and SA1/2 subunits. (B) Schematic of Cas9-mediated, genome-edited Rad21 alleles in diploid mESCs. Clone C85 expresses Rad21-Halo-V5 from one allele and near wild-type (wt) Rad21 from the other allele (see Materials and methods for details). Clone B4 expresses Rad21-Halo-V5 from one allele and Rad21-SNAP-3xFLAG from the other. (C) Western Blot of wild-type mESCs and endogenously Rad21-tagged mESC clones shown in (B). (D) Representative CoIP experiment in mESC clone C85 indicating protein-mediated Rad21 self-interaction. V5 IP followed by two-color western blot detection with Rad21 (green) and V5 (red) antibodies shows no effect of nuclease treatment on IP and self-CoIP efficiencies. The Rad21-Halo-V5 protein reacts with both antibodies and thus appears as yellow. See also Figure 2\u2014figure supplement 1 for single-color blots. (E) Representative CoIP experiment in the doubly tagged B4 mESC clone. V5 IP followed by FLAG and V5 immunoblotting measures self-CoIP and IP efficiencies in the presence or absence of benzonase nuclease (90% of the IP sample loaded). (F) Reciprocal FLAG IP and quantification of benzonase DNA degradation similar to (E).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40164/elife-40164-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Western blot of wild-type mESCs and endogenously Rad21-tagged mESC clones shown in Figure 2B, probing the specificity of the antibodies used to either pull down or detect V5- and FLAG-tagged Rad21 proteins. The rabbit anti-V5 antibody does, in fact, detect an unrelated protein of approximately the same size of Rad21-Halo-V5 in wild-type (wt), untagged mESCs (*). However, as shown in the top panel of (D), such a non-specific interaction does not pull down cohesin in untagged cells. On the other hand, the rabbit anti-FLAG antibody weakly immunoreacts with an unrelated protein specifically in wt, untagged cells (black arrow). Pull-down experiments in (D) show that such protein might indeed be untagged Rad21. To avoid erroneous data interpretation due to cross-reactivity, the rabbit anti-FLAG antibody was not used for further experiments. Corresponding beta actin blots are included below each blot to show equal protein load. Antibodies used were as follows: anti Rad21 raised in mouse (M) from Millipore (05\u2013908); anti-V5 raised in rabbit (R) from abcam (ab9116); anti-V5-M from invitrogen (R960-25); anti-FLAG-R and M from Sigma (F7425 and F3165); anti-ACTB from Sigma (A2228). (B) Single-color blots corresponding to the dual-color and overlaid blots shown in Figure 2D. (C) Effective nucleic acid digestion by benzonase nuclease in Rad21 CoIP experiments. Nucleic acids were phenol/chloroform extracted from CoIP lysates and quantified by qPCR using primers specific to the Actb gene. Error bars are SD, n\u00a0=\u00a03. (D) Rad21 co-immunoprecipitation (CoIP) experiments in wt, untagged mESCs and in another doubly tagged mESC clone (A2) derived independently of the B4 clone in Figure 2. Pull downs were performed in the presence of benzonase nuclease. V5 IP followed by FLAG immunoblotting and, viceversa, FLAG IP followed by V5 immunoblotting measure self-CoIP and IP efficiencies in the knock-in cell line. The leftmost blots were stripped and re-blotted with anti-Rad21 antibodies to check for cross-reactivity of V5 and FLAG antibodies with untagged Rad21 protein in wt cells. The antibodies used are the same as in (A); anti-Rad21-R is from abcam (ab154769). Black asterisks denote non-specific bands, while red asterisks mark specific bands. The FLAG antibody raised in rabbit showed some cross-reactivity with what might be wt, untagged Rad21 (#, Rabbit FLAG IP, rightmost blot). This could also explain the intense band detected in the mouse V5 IP (#, leftmost blot), corresponding to the size of the Rad21-Halo-V5 protein. To avoid erroneous data interpretation due to cross-reactivity, the rabbit anti-FLAG antibody was not used for further experiments.\n\nTo independently verify this result and to ensure that the CoIP\u2019ed Rad21 was not a degradation product of the tagged protein, we repeated these CoIP studies in the clonal cell line B4, where the two endogenous Rad21 alleles express orthogonal epitope tags. Again, a V5-IP efficiently pulled down Rad21-SNAP-3xFLAG (Figure 2E) and, reciprocally, a FLAG-IP pulled down Rad21-Halo-V5 (Figure 2F). As before, the Rad21 self-interaction was entirely benzonase-resistant and thus independent of nucleic acid binding as this enzyme degrades both DNA and RNA (Figure 2\u2014figure supplement 1C). Under the simplest assumption of cohesin forming dimers, we calculated that at least\u00a0~8% of cohesin is in a dimeric state during our pull-down experiment, based on our IP and CoIP efficiencies (full calculation details in Materials and methods). This percentage is likely an underestimate of the actual oligomeric vs monomeric ratio in live cells, since we expect a substantial proportion of the self-interactions not to survive cell lysis and the typically harsh IP procedures. Thus, while these results cannot exclude that some or even a majority of mammalian cohesin exists as a single-ring (Figure 2A), they do suggest that a measureable population may exist as dimers or oligomers. Whether this subpopulation represents handcuff-like dimers, oligomers (Figure 2A), cohesin clusters (Hansen et al., 2017) or an alternative state (e.g. single rings bridged by another factor such as CTCF) will be an important direction for future studies.\n\n### A simple general method for determining the abundance of Halo-tagged proteins in live cells\n\nHere, we have illustrated how absolute quantification of protein abundance can provide crucial functional insights into mechanisms regulating genome organization when integrated with genomic and/or imaging data (Figure 1; Hansen et al., 2017). The HaloTag (Los et al., 2008) is a popular and versatile protein-fusion platform that has found applications in a broad range of experimental systems (England et al., 2015). Indeed, it is currently the preferred choice for live-cell single molecule imaging. Combined with the development of Cas9-mediated genome-editing (Ran et al., 2013), endogenous Halo-tagging of proteins has thus become the gold standard (Chong et al., 2018; Hansen et al., 2017; Komatsubara et al., 2019; Rhodes et al., 2017a; Rhodes et al., 2017b; Stevens et al., 2017; Teves et al., 2016; Teves et al., 2018; Youmans et al., 2018), because it avoids the now well-established limitations and potential artifacts associated with protein overexpression (Hansen et al., 2017; Shao et al., 2018; Teves et al., 2016).\n\nNow that we have determined the absolute abundance of CTCF in U2OS cells and cross-validated it using FCS-calibrated confocal imaging (Figure 1A\u2013D,F), determining the absolute abundance of any other Halo-tagged protein becomes straightforward as demonstrated in Figure 1E: by growing a cell line homozygously encoding a Halo-tagged protein of interest side-by-side with the U2OS C32 Halo-CTCF line, absolute quantification can be achieved simply by measuring the relative fluorescence intensity using flow cytometry (Figure 3). To illustrate this, here we compared the background-subtracted TMR-fluorescence intensity of mESC lines carrying homozygously Halo-tagged Sox2 (Teves et al., 2016) and TBP (Teves et al., 2018) to our U2OS C32 Halo-CTCF cell line, and determined the average protein copy number per cell to be 460,517\u00a0\u00b1\u00a025,606 for Halo-Sox2 and 99,111\u00a0\u00b1\u00a029,125 for Halo-TBP (Figure 3; Figure 3\u2014figure supplement 1). Although this method should be generally applicable, we note that it may not be robust for very lowly expressed proteins (below\u00a0~10,000 proteins per cell; Figure 3\u2014figure supplement 1). Similarly, since the standard and the cell line of interest have to be measured side-by-side, the dynamic range of the flow cytometer will in principle impose an upper limit. This will be instrument-specific, but we note that our method may not be appropriate for extremely highly expressed proteins (>10\u201320 million proteins per cell; calculated based on the LSR Fortessa instrument used in this study). Compared to the \u2018in-gel\u2019 fluorescence method (Figure 1A\u2013B), we believe this live-cell FCM method is both more convenient and robust, since it avoids cell lysis and other biochemical steps that may affect protein stability. The HaloTag knock-in cell lines described here will be freely available to the research community for use as a convenient standard to enable rapid absolute quantification of any Halo-tagged protein of interest.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40164/elife-40164-fig3-v2.jpg)\n\n**Figure 3.:** (1)\u00a0Cells expressing the Halo-tagged protein of interest are grown together with one of the cell standards described here (e.g.\u00a0U2OS C32 Halo-CTCF; Figure 1B). (2) After labeling with a fluorophore coupled to the HaloTag ligand (e.g. TMR or a JF-dye), the absolute (3) and relative (4) fluorescence intensities can be measured using flow cytometry (FCM) and thus the absolute abundance of the protein of interest can be calculated (5). Here, this is illustrated using mESC lines for Halo-Sox2 (Teves et al., 2016) and Halo-TBP (Teves et al., 2018) (raw data in Figure 3\u2014figure supplement 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40164/elife-40164-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Raw fluorescence histograms for U2OS (background\u00a0=\u00a0unlabeled), C32 Halo-CTCF and mESCs (background\u00a0=\u00a0unlabeled), C3 Halo-Sox2 and C41 Halo-TBP after forward and side-scattering gating. All four biological replicates are shown and the abundances are reported as the mean and standard deviation from these replicates in the main text. For full details on how the measurements were performed, please see the Materials and methods section.\n\n## Discussion\n\nDespite the essential roles of cohesin in sister chromatid paring and interphase genome organization, and of condensin in mitotic chromosome compaction, the stoichiometry of these SMC complexes remains a matter of debate (Nasmyth, 2011; Skibbens, 2016). Our results suggest that a significant subpopulation of mammalian cohesin (lower bound:\u00a0~8%) may exist as either a dimer or an oligomeric complex (Figure 2A). This is consistent with an earlier study that relied on over-expression of tagged mammalian cohesin subunits (Zhang et al., 2008). Along these lines, the related bacterial SMC complex, MukBEF, also forms a dimer or and even \u2018dimers of dimers\u2019 (Arciszewska et al., 2019; Badrinarayanan et al., 2012; Fennell-Fezzie et al., 2005; Matoba et al., 2005; Woo et al., 2009). Moreover, the B. subtilis SMC condensin complex has been proposed to extrude DNA loops at a speed of\u00a0~50 kb/min as a dimeric handcuff complex (Wang et al., 2017). In budding yeast, cohesin exhibits inter-allelic complementation (Eng et al., 2015) consistent with a dimeric or higher order complex. However, previous self-CoIP experiments with differentially tagged budding yeast cohesin subunits failed to detect cohesin dimers or oligomers (Haering et al., 2002). Likewise, single-step photobleaching strongly indicates that budding yeast condensin can extrude loops as a single ring complex in a one-sided, asymmetric fashion in vitro (Ganji et al., 2018). Nevertheless, other studies have shown that budding yeast condensin can exist as both monomers, dimers, and oligomers and that multimeric budding yeast condensin is more active in a single-molecule magnetic tweezers-based DNA-compaction assay (Keenholtz et al., 2017). Furthermore, recent computer simulations suggest that only\u00a0effectively two-sided extrusion (either two-sided extrusion, or one-sided extrusion with directional switching) can achieve the\u00a0~1000 fold condensin-mediated compaction observed for mammalian mitotic chromosomes (Banigan and Mirny, 2018). Although SMC complexes are highly conserved from prokaryotes to mammals, it remains unclear to what extent cohesin and condensin mechanistically differ and to what extent mammalian and budding yeast cohesin differ. For example, several cohesin proteins that are encoded by a single gene in budding yeast are encoded by multiple genes in mammals (e.g. Scc3 in budding yeast vs SA1 or SA2 in mammals). Since mammalian cohesin contains either SA1 or SA2, but not both (Sumara et al., 2000) and since SA1- and SA2-cohesin appear to mediate at least partially different functions (Kojic et al., 2018), one possibility would be that SA1- and SA2-cohesin might also differ in their architecture. Our CoIP results show that cohesin can exist in a dimeric and/or oligomeric state in mESCs (Figure 2). These oligomers may also be arising from cohesin clusters, which we previously observed with super-resolution microscopy (Hansen et al., 2017), or even from larger complexes that contain single ring cohesins which do not directly interact. We hope that our results here spur further investigations using orthogonal methods into the stoichiometry of mammalian cohesin and the architecture of the putatively loop-extruding cohesin complex. Moreover, although polymer-modeling of 3D genome organization is rapidly advancing (Fudenberg et al., 2017; Nuebler et al., 2018; Racko et al., 2018), a paucity of quantitative data to inform us of the stoichiometry of key 3D genome organizers currently constrains our ability to test the various models that have been reported. We hope that the data presented here will prove useful in informing and advancing such efforts in the future.\n\nThe absolute CTCF and cohesin protein measurements that we report here for mESCs will be valuable to constrain current in-silico models of 3D genome organization. However, we note that these calculations have inherent limitations. First, although the different methods gave nearly identical CTCF estimates, the cohesin estimate is less certain. Second, these numbers represent averages (e.g. we averaged over different cell cycle phases, and protein abundance can vary significantly between phases of the cell cycle and even between genetically identical cells, as visible by the biological cell-to-cell heterogeneity of CTCF abundance in U2OS C32 cells determined by FCS-calibrated imaging (Figure 1D)). Third, although it remains unclear how ChIP-Seq peak strength relates to time-averaged occupancy, the wide distribution of CTCF ChIP-Seq read counts (Figure 1\u2014figure supplement 1H) suggests that some CTCF binding sites will be occupied most of the time, while other sites are rarely bound (i.e. 50% is an average). Fourth, the density of extruding cohesin complexes is unlikely to be uniform across the genome (e.g. due to uneven loading or obstacles to cohesin extrusion by other large DNA-binding protein complexes) and our estimate is only an upper bound. Fifth, although we have previously shown that CTCF and cohesin interact as a dynamic complex (Hansen et al., 2017), we are currently unable to accurately estimate what fraction of chromatin-bound CTCF proteins are directly interacting with cohesin. This is an important aspect for future research, as it will constrain loop extrusion models further.\n\nAlthough knowing the absolute in vivo abundance of a protein is crucial for understanding its function, methods for determining absolute protein abundances tend to be inconvenient and labor-intensive (e.g. the \u2018in-gel\u2019 fluorescence method in Figure 1A\u2013B) and/or require extensive and sophisticated experimental and computational infrastructure (e.g. FCS-calibrated imaging (Figure 1C\u2013D) or quantitative mass spectrometry (Ref: Holzmann et al., 2019, also submitted to eLife)). As a consequence, absolute abundance measurements are currently limited to a subset of cellular proteins (Cai et al., 2018; Walther et al., 2018). Here, we introduce and validate a simple FCM-based method using U2OS C32 Halo-CTCF as a standard for absolute protein quantification in live cells (Figure 3). We will freely share the cell lines described here as standards for absolute quantifications of any Halo-tagged protein of interest. Given that our FCM-based method is simple, fast and convenient, we hope that it will find widespread use for accurate quantification of absolute protein abundances.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>U2OS</td>\n      <td>(Hansen et al., 2017)</td>\n      <td>U2OS</td>\n      <td>Wild-type U2OS cell line. RRID:CVCL_0042</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>mESC</td>\n      <td>(Pettitt et al., 2009) and UC Davis KOMP Repository</td>\n      <td>JM8.N4 mESC</td>\n      <td>https://www.komp.org/pdf.php?cloneID=8669 (RRID:CVCL_J962)</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>mESC C59 Halo-CTCF</td>\n      <td>(Hansen et al., 2017)</td>\n      <td>mESC C59 Halo-mCTCF</td>\n      <td>mESC (JM8.N4) endogenous knock-in cell line where both endogenous copies of Ctcf have been N-terminally tagged with FLAG-HaloTag and where both endogenous copies of Rad21 have been C-terminally tagged with SNAPf-V5. Clone 59</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>mESC C87 Halo-CTCF</td>\n      <td>(Hansen et al., 2017)</td>\n      <td>mESC C87 Halo-mCTCF</td>\n      <td>mESC (JM8.N4) endogenous knock-in cell line where both endogenous copies of Ctcf have been N-terminally tagged with FLAG-HaloTag. Clone 87</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>mESC C45 Rad21-Halo</td>\n      <td>(Hansen et al., 2017)</td>\n      <td>mESC C45\u00a0mRad21-Halo</td>\n      <td>mESC (JM8.N4) endogenous knock-in cell line where both endogenous copies of Rad21 have been C-terminally tagged with HaloTag-V5. Clone 45.</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>mESC C3 Halo-Sox2</td>\n      <td>(Teves et al., 2016)</td>\n      <td>mESC\u00a0C3\u00a0Halo-Sox2</td>\n      <td>mESC (JM8.N4) endogenous knock-in cell line where both endogenous copies of Sox2 have been N-terminally tagged with FLAG-HaloTag. Clone 3</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>U2OS C32 Halo-CTCF</td>\n      <td>(Hansen et al., 2017)</td>\n      <td>U2OS\u00a0C32\u00a0Halo-hCTCF</td>\n      <td>U2OS endogenous knock-in cell line where all endogenous copies of Ctcf have been N-terminally tagged with FLAG-HaloTag. Clone 32</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>mESC C85 Rad21-Halo-V5 het</td>\n      <td>This Paper</td>\n      <td>C85</td>\n      <td>mESC (JM8.N4) endogenous knock-in cell line where one endogenous Rad21 allele is Halo-V5 tagged while the other allele is \u2018near wild type\u2019\u00a0(see Materials and methods). Clone 85</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>mESC B4 Rad21-Halo-V5/Rad21-SNAPf-3xFLAG</td>\n      <td>This Paper</td>\n      <td>B4</td>\n      <td>mESC (JM8.N4) endogenous knock-in cell line where one endogenous Rad21 allele is Halo-V5 tagged while the other allele is SNAPf-3xFLAG tagged. Clone B4</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>mESC A2 Rad21-Halo-V5/Rad21-SNAPf-3xFLAG</td>\n      <td>This Paper</td>\n      <td>A2</td>\n      <td>mESC (JM8.N4) endogenous knock-in cell line where one endogenous Rad21 allele is Halo-V5 tagged while the other allele is SNAPf-3xFLAG tagged. Clone A2</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-V5</td>\n      <td>Abcam</td>\n      <td>Cat. # ab9116, RRID:AB_307024</td>\n      <td>(1:2000) for western blot (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal mouse anti-V5</td>\n      <td>ThermoFisher Scietific</td>\n      <td>Cat. # R960-25, RRID:AB_2556564;</td>\n      <td>(1:5000) for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-FLAG</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. # F7425, RRID:AB_439687</td>\n      <td>(1:1000) for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal anti-FLAG</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. # F3165, RRID:AB_259529</td>\n      <td>(1:5000) for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-Rad21</td>\n      <td>Abcam</td>\n      <td>Cat. # ab154769, RRID:AB_2783833</td>\n      <td>(1:2000) for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-Rad21</td>\n      <td>Millipore</td>\n      <td>Cat. # 05\u2013908, RRID:AB_417383</td>\n      <td>(1:5000) for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal anti-Halo</td>\n      <td>Promega</td>\n      <td>Cat. # G9211, RRID:AB_2688011</td>\n      <td>(1:1000) for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal anti-\u03b2actin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. # A2228, RRID:AB_476697</td>\n      <td>(1:4000) for WB</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>3xFLAG-Halo-CTCF-His6</td>\n      <td>This Paper</td>\n      <td>3xFLAG-Halo-CTCF-His6</td>\n      <td>See Materials and methods.</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>His6-Rad21-Halo-3xFLAG</td>\n      <td>This paper</td>\n      <td>His6-Rad21-Halo-3xFLAG</td>\n      <td>See Materials and methods.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pHTCHaloTag</td>\n      <td>This paper</td>\n      <td>pHTCHaloTag</td>\n      <td>For FCS-calibrated imaging experiments (referred to as pHTCHaloTag), a stop codon was introduced into the pHTC HaloTag CMV-neo vector (Promega, #9PIG771)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>The Mathworks</td>\n      <td>MATLAB 2014b</td>\n      <td>https://www.mathworks.com/products/matlab.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Flow cytometry analysis (Matlab)</td>\n      <td>This paper</td>\n      <td>Flow cytometry analysis</td>\n      <td>https://gitlab.com/tjian-darzacq-lab/cattoglio_et_al_absoluteabundance_2019</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FCSREAD (Matlab)</td>\n      <td>Mathworks File Exchange</td>\n      <td>FCSREAD (Matlab)</td>\n      <td>https://www.mathworks.com/matlabcentral/fileexchange/8430-flow-cytometry-data-reader-and-visualization</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Click-iT EdU Alexa Fluor 488 Flow Cytometry Assay Kit</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Click-iT EdU Alexa Fluor 488 Flow Cytometry Assay Kit</td>\n      <td>Cat. # C10425</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI</td>\n      <td>Sigma-Aldrich</td>\n      <td>4\u2032,6-Diamidine-2\u2032-phenylindole dihydrochloride</td>\n      <td>Cat. # 10236276001</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Halo-TMR</td>\n      <td>Promega</td>\n      <td>HaloTag TMR ligand</td>\n      <td>Cat. # G8251</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Halo-JF646</td>\n      <td>(Grimm et al., 2015)</td>\n      <td>Halo-JF646</td>\n      <td>Please contact Luke D Lavis for distribution.</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hoechst 33342</td>\n      <td>Sigma-Aldrich</td>\n      <td>Hoechst 33342</td>\n      <td>Cat. # B2261</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nJM8.N4 mouse embryonic stem cells (Pettitt et al., 2009) (Research Resource Identifier: RRID:CVCL_J962; obtained from the KOMP Repository at UC Davis) were cultured as previously described (Hansen et al., 2017). Briefly, mESC lines were grown on plates pre-coated with 0.1% gelatin (autoclaved and filtered; Sigma-Aldrich, G9391) under feeder-free conditions in knock-out DMEM with 15% FBS and LIF (full recipe: 500 mL knockout DMEM (ThermoFisher #10829018), 6 mL MEM NEAA (ThermoFisher #11140050), 6 mL GlutaMax (ThermoFisher #35050061), 5 mL Penicillin-streptomycin (ThermoFisher #15140122), 4.6 \u03bcL 2-mercapoethanol (Sigma-Aldrich M3148), 90 mL fetal bovine serum (HyClone FBS SH30910.03 lot #AXJ47554)). mES cells were fed by replacing half the medium with fresh medium daily and passaged every 2 days by trypsinization. Human U2OS osteosarcoma cells (Research Resource Identifier: RRID:CVCL_0042; a gift from David Spector\u2019s lab, Cold Spring Harbor Laboratory) were grown as previously described (Hansen et al., 2017). Briefly, U2OS cells were grown in low-glucose DMEM with 10% FBS (full recipe: 500 mL DMEM (ThermoFisher #10567014), 50 mL fetal bovine serum (HyClone FBS SH30910.03 lot #AXJ47554) and 5 mL Penicillin-streptomycin (ThermoFisher #15140122)) and were passaged every 2\u20134 days before reaching confluency. Both mouse ES and human U2OS cells were grown in a Sanyo copper alloy IncuSafe humidified incubator (MCO-18AIC(UV)) at 37\u00b0C/5.5% CO2. Both the mESC and U2OS cell lines were pathogen-tested and found to be clean and the U2OS cell line was authenticated through STR profiling. Full details on pathogen-testing and authentication can be found elsewhere (Hansen et al., 2017).\n\n### CRISPR/Cas9-mediated genome editing\n\nCTCF knock-in U2OS and mESC lines were as previously described (Hansen et al., 2017). The Rad21 knock-in C85 and B4 mESC clones were sequentially created roughly according to published procedures (Ran et al., 2013), but exploiting the HaloTag and SNAPf-Tag to perform fluorescence activated cell sorting (FACS) for edited cells. The SNAPf-Tag is an optimized version of the SNAP-Tag, and we purchased a plasmid encoding this gene from NEB (NEB, Ipswich, MA, #N9183S). We transfected mESCs with Lipofectamine 3000 (ThermoFisher L3000015) according to manufacturer\u2019s protocol, co-transfecting a Cas9 and a repair plasmid (2 \u03bcg repair vector and 1 \u03bcg Cas9 vector per well in a 6-well plate; 1:2 w/w). The Cas9 plasmid was slightly modified from that distributed from the Zhang lab (Ran et al., 2013): 3xFLAG-SV40NLS-pSpCas9 was expressed from a CBh promoter; the sgRNA was expressed from a U6 promoter; and mVenus was expressed from a PGK promoter. For the repair vector, we modified a pUC57 plasmid to contain the tag of interest (Halo-V5 for C85 or SNAPf-3xFLAG for B4) preceded by the Sheff and Thorn linker (GDGAGLIN) (Sheff and Thorn, 2004), and flanked by\u00a0~500 bp of genomic homology sequence on either side. To generate the C85 Rad21-Halo-V5 heterozygous clone, we used three previously described sgRNAs (Hansen et al., 2017) that overlapped with the STOP codon and, thus, that would not cut the repair vector (see table below for sequences). To generate the B4 Rad21-Halo-V5/Rad21-SNAPf-3xFLAG tagged clone, we re-targeted clone C85 with sgRNAs specific to the \u2018near wild-type\u2019 allele (see below) while providing the SNAPf-3xFLAG repair vector.\n\nWe cloned the sgRNAs into the Cas9 plasmid and co-transfected each sgRNA-plasmid with the repair vector individually. 18\u201324 hr later, we then pooled cells transfected with each of the sgRNAs individually and FACS-sorted for YFP (mVenus) positive, successfully transfected cells. YFP-sorted cells were then grown for 4\u201312 days, labeled with 500 nM Halo-TMR (Halo-Tag knock-ins) or 500 nM SNAP-JF646 (SNAPf-Tag knock-in) and the cell population with significantly higher fluorescence than similarly labeled wild-type cells, FACS-selected and plated at very low density (~0.1 cells per mm2). Clones were then picked, expanded and genotyped by PCR using a three-primer PCR (genomic primers external to the homology sequence and an internal Halo or SNAPf primer). Successfully edited clones were further verified by PCR with multiple primer combinations, Sanger sequencing and Western blotting. The chosen C85 and B4 clones show similar tagged protein levels to the endogenous untagged protein in wild-type controls (Figure 2C).\n\nGenomic DNA sequencing of the C85 heterozygous clone showed the expected Halo-V5-targeted allele, and a \u2018near wild-type\u2019 allele, where repair following Cas9-cutting generated a 4 bp deletion (nt 2145\u20132148 in the NCBI Reference Sequence NM_009009.4), expected to result in a reading frame shift replacing the two most C-terminal amino acids (II) with SEELDVFELVITH. The mutation was repaired in clone B4 by providing a corrected SNAPf-3xFLAG repair vector.\n\nAll plasmids used in this study are available upon request. The table below lists the primers used for genome editing and genotyping of the Rad21 knock-in clones.\n\n<table>\n  <thead>\n    <tr>\n      <th>Name/description</th>\n      <th>Sequence (5\u2019\u22123\u2019)</th>\n      <th>Experiment</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>mESC mRad21-Halo-V5 sgRNA 1:</td>\n      <td>CCTCAGATAATATGGAACCG</td>\n      <td>Genome-editing (mESC C85)</td>\n    </tr>\n    <tr>\n      <td>mESC mRad21-Halo-V5 sgRNA 2:</td>\n      <td>CCACGGTTCCATATTATCTG</td>\n      <td>Genome-editing (mESC C85)</td>\n    </tr>\n    <tr>\n      <td>mESC mRad21-Halo-V5 sgRNA 3:</td>\n      <td>ATCTAGCTCCTCAGATAATA</td>\n      <td>Genome-editing (mESC C85)</td>\n    </tr>\n    <tr>\n      <td>mESC mRad21-SNAPf-3xFLAG sgRNA 1:</td>\n      <td>AGCTCCTCAGAATGGAACCG</td>\n      <td>Genome-editing (mESC B4)</td>\n    </tr>\n    <tr>\n      <td>mESC mRad21-SNAPf-3xFLAG sgRNA 2:</td>\n      <td>TGGACCACGGTTCCATTCTG</td>\n      <td>Genome-editing (mESC B4)</td>\n    </tr>\n    <tr>\n      <td>mESC mRad21-SNAPf-3xFLAG sgRNA 3:</td>\n      <td>ACACATCTAGCTCCTCAGAA</td>\n      <td>Genome-editing (mESC B4)</td>\n    </tr>\n    <tr>\n      <td>mRad21 genome F1</td>\n      <td>CTGGAGCACCCGTGACAGTTC</td>\n      <td>Genotyping</td>\n    </tr>\n    <tr>\n      <td>mRad21 genome R1</td>\n      <td>CTGAGGAGTCACGCCACTGT</td>\n      <td>Genotyping</td>\n    </tr>\n    <tr>\n      <td>Internal Halo F</td>\n      <td>GTCGCGCTGGTCGAAGAATA</td>\n      <td>Genotyping (C85)</td>\n    </tr>\n    <tr>\n      <td>Internal Halo R</td>\n      <td>GGGGTCGAATGGAAAGCCA</td>\n      <td>Genotyping (C85)</td>\n    </tr>\n    <tr>\n      <td>Internal SNAPf R</td>\n      <td>CTGTTCGCACCCAGACAGTT</td>\n      <td>Genotyping (B4)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Antibodies\n\nAntibodies were as follows: ChromPure mouse normal IgG from Jackson ImmunoResearch; anti-V5 for IP from Abcam (ab9116) and for Western blot (WB) from ThermoFisher (R960-25); anti-FLAG for IP (F7425) and for WB (F3165) from Sigma-Aldrich; anti-Rad21 for WB from Abcam (ab154769); anti-Halo for WB from Promega (G9211); anti-\u03b2actin for WB from Sigma-Aldrich (A2228).\n\n### Western blot and co-immunoprecipitation (CoIP) experiments\n\nCells were collected from plates by scraping in ice-cold phosphate-buffered saline (PBS) with PMSF and aprotinin, pelleted, and flash-frozen in liquid nitrogen.\n\nFor western blot analysis, cell pellets where thawed on ice, resuspended to 1 mL/10 cm plate of low-salt lysis buffer (0.1 M NaCl, 25 mM HEPES pH 7.5, 1 mM MgCl2, 0.2 mM EDTA, 0.5% NP-40 and protease inhibitors), with 125 U/mL of benzonase (Novagen, EMD Millipore), passed through a 25G needle, rocked at 4\u00b0C for 1 hr and 5M NaCl was added to reach a final concentration of 0.2 M. Lysates were then rocked at 4C for 30 min and centrifuged at maximum speed at 4\u00b0C. Supernatants were quantified by Bradford. 15 \u03bcg of proteins were loaded on 8% Bis-Tris SDS-PAGE gel and transferred onto nitrocellulose membrane (Amersham Protran 0.45 um NC, GE Healthcare) for 2 hr at 100\u00a0V.\n\nFor chemiluminescent western blot detection with HRP-conjugated secondary antibodies, after the transfer the membrane was blocked in TBS-Tween with 10% milk for 1 hr at room temperature and blotted overnight at 4\u00b0C with primary antibodies in TBS-T with 5% milk. HRP-conjugated secondary antibodies were diluted 1:5000 in TBS-T with 5% milk and incubated at room temperature for an hour.\n\nFor fluorescence detection, after the transfer the membrane was blocked with the Odyssey Blocking Buffer (PBS) for 1 hr at room temperature, followed by overnight incubation at 4\u00b0C with primary antibodies in Odyssey Blocking Buffer (PBS) and PBS (1:1). IRDye secondary antibodies were used for detection at 1:5000 dilution and 1 hr incubation at room temperature. After extensive washes, the membrane was scanned with a LI-COR Odyssey CLx scanner.\n\nFor co-immunoprecipitation experiments (CoIP), cell pellets where thawed on ice, resuspended to 1 ml/10 cm plate of cell lysis buffer (5 mM PIPES pH 8.0, 85 mM KCl, 0.5% NP-40 and protease inhibitors), and incubated on ice for 10 min. Nuclei were pelleted in a tabletop centrifuge at 4\u00b0C, at 4000 rpm for 10 min, and resuspended to 0.5 ml/10 cm plate of low salt lysis buffer either with or without benzonase (600 U/ml) and rocked for 4 hr at 4\u00b0C. After the 4-hr-incubation, the salt concentration was adjusted to 0.2M NaCl final and the lysates were incubated for another 30 min at 4\u00b0C. Lysates were then cleared by centrifugation at maximum speed at 4\u00b0C and the supernatants quantified by Bradford. In a typical CoIP experiment, 1 mg of proteins was diluted in 1 ml of CoIP buffer (0.2 M NaCl, 25 mM HEPES pH 7.5, 1 mM MgCl2, 0.2 mM EDTA, 0.5% NP-40 and protease inhibitors) and pre-cleared for 2 hr at 4\u00b0C with protein-G sepharose beads (GE Healthcare Life Sciences) before overnight immunoprecipitation with 4 mg of either normal serum IgGs or specific antibodies as listed above. Some pre-cleared lysate was kept at 4\u00b0C overnight as input. Protein-G-sepharose beads precleared overnight in CoIP buffer with 0.5% BSA were then added to the samples and incubated at 4\u00b0C for 2 hr. Beads were pelleted and all the CoIP supernatant was removed and saved for phenol-chloroform extraction of DNA. The beads were then washed extensively with CoIP buffer, and the proteins were eluted from the beads by boiling for 5 min in 2X SDS-loading buffer and analyzed by SDS-PAGE and western blot.\n\n### Estimate of cohesin dimer-to-monomer ratio from CoIP experiments\n\nAssuming that a dimeric state is responsible for the observed protein-based cohesin self-interaction, we calculated the percentage of cohesin molecules forming dimers from our CoIP experiments in the clonal cell line B4. In these cells, one allele of Rad21 is tagged with Halo-V5 and the other with SNAP-3xFLAG, and the two proteins are expressed at virtually identical levels (Figure 2C). We also assumed that V5:V5 and FLAG:FLAG dimers are formed with the same likelihood of V5:FLAG dimers, the latter being the only ones that our assay probes for. Since we observed no difference when treating with benzonase, we averaged all western blot results from both the V5 and the FLAG reciprocal pull-downs (Figure 2E and F). We used the ImageJ \u2018Analyze Gels\u2019 function (Schindelin et al., 2012) to measure pull-down and input (IN) band intensities (I) and used those numbers to calculate IP and CoIP efficiencies (%) as follows:\n\n$$\n%IP=\\frac{0.015I_{IP}}{0.1I_{IN}}\n$$\n\n\n\n$$\n%CoIP=\\frac{0.015I_{CoIP}}{0.9I_{IN}}\n$$\n\nwith 0.015 being the percent of input loaded onto gel as a reference and 0.1 or 0.9 the amount of the pull-down material loaded onto gel to quantify the IP or CoIP efficiency, respectively.\n\nWithin the assumed scenario, we will use the V5 pull-down of Figure 2E to illustrate our calculations. The V5 antibody immunoprecipitates Rad21 V5 monomers (MV5), V5:V5 dimers (DV5), and V5:FLAG dimers (DV5-FLAG). The %IP (i.e. the fraction of all V5 molecules that are pulled down) is thus the sum of the three terms:\n\n%IP = MV5+2 x DV5 + DV5-FLAG\n\nwhere each DV5 contains two V5 molecules, and a DV5-FLAG contains a single V5 molecule. Since we assumed an equal likelihood of V5 and V5-FLAG dimers, the equation becomes:\n\n%IP = MV5+3 x DV5-FLAG\n\nSince the total number of V5 and FLAG-tagged Rad21 molecules are the same:\n\nDV5-FLAG = %CoIP\n\nthus\n\nMV5 = %IP - 3 x %CoIP\n\nFinally, adjusting for the efficiency of the V5 pull-down, the total percentage of Rad21 molecules in monomers can be calculated as:\n\n% Monomeric Rad21 = MV5 / % IP and\n\n% Dimeric Rad21\u00a0=\u00a01 % Monomeric Rad21\n\nAfter performing the calculations described above, the resulting percentages of cohesin molecules in dimers for all the experiments were:\n\nV5 IP, untreated: 11.23%\n\nV5 IP, Benzonase: 7.60%\n\nFLAG IP, untreated: 5.19%\n\nFLAG IP, Benzonase: 6.47%\n\nThe\u00a0average percentage\u00a0of cohesin molecules in dimers was thus 7.62 \u00b1 2.6% (standard deviation).\n\n### DNA extraction and quantification\n\nFor DNA extraction, the CoIP supernatant was extracted twice with an equal volume of phenol-chloroform (UltraPure Phenol:Chloroform:Isoamyl Alcohol (25:24:1, v/v)). After centrifugation at room temperature and maximum speed for 5 min, we\u00a0added\u00a0the aqueous phase containing DNA of 2 volumes of 100% ethanol and precipitated 30 min at \u221280\u00b0C. After centrifugation at 4\u00b0C for 20 min at maximum speed, DNA was re-dissolved in 25 \u03bcl of water and quantified by nanodrop. About 100 ng of the untreated sample DNA, or an equal volume from the nuclease-treated samples, were used for relative quantification by quantitative PCR (qPCR) with SYBR Select Master Mix for CFX (Applied Biosystems, ThermoFisher) on a BIO-RAD CFX Real-time PCR system.\n\nPrimers for DNA quantification were as follows:\n\nActb promoter forward: CATGGTGTCCGTTCTGAGTGATC\n\nActb promoter reverse: ACAGCTTCTTTGCAGCTCCTTCG\n\n### Expression and purification of recombinant 3xFLAG-Halo-CTCF and Rad21-Halo-3xFLAG\n\nRecombinant Bacmid DNAs for the fusion mouse proteins 3xFLAG-Halo-CTCF-His6 (1086 amino acids; 123.5 kDa) and His6-Rad21-Halo-3xFLAG (972 amino acids; 110.2 kDa) were generated from pFastBAC constructs according to manufacturer\u2019s instructions (Invitrogen). Recombinant baculovirus for the infection of Sf9 cells was generated using the Bac-to-Bac Baculovirus Expression System (Invitrogen). Sf9 cells (~2\u00d7106/ml) were infected with amplified baculoviruses expressing Halo-CTCF or Rad21-Halo. Infected Sf9 suspension cultures were collected at 48 hr post-infection, washed extensively with cold PBS, lysed in five packed cell volumes of high-salt lysis buffer (HSLB; 1.0 M NaCl, 50 mM HEPES pH 7.9, 0.05% NP-40, 10% glycerol, 10 mM 2-mercaptoethanol, and protease inhibitors), and sonicated. Lysates were cleared by ultracentrifugation, supplemented with 10 mM imidazole, and incubated at 4\u00b0C with Ni-NTA resin (Qiagen) for either 90 mins for Halo-CTCF or 16 hr for Rad21-Halo. Bound proteins were washed extensively with HSLB with 20 mM imidazole, equilibrated with 0.5 M NaCl HGN (50 mM HEPES pH 7.9, 10% glycerol, 0.01% NP-40) with 20 mM imidazole, and eluted with 0.5 M NaCl HGN supplemented with 0.25 M imidazole. Eluted fractions were analyzed by SDS-PAGE followed by PageBlue staining.\n\nPeak fractions were pooled and incubated with anti-FLAG (M2) agarose (Sigma) and 3X molar excess fluorogenic JF646 for 4 hr at 4\u00b0C in the dark. Bound proteins were washed extensively with HSLB, equilibrated to 0.2M NaCl HGN, and eluted with 3xFLAG peptide (Sigma) at 0.4 mg/ml. Protein concentrations were determined by PageBlue staining compared to a \u03b2-Galactosidase standard (Sigma). HaloTag Standard (Promega) was labeled according to the method described above to determine the extent of fluorescent labeling.\n\n### Quantification of CTCF and Rad21 molecules per cell\n\nThe number of CTCF and Rad21 molecules per cell was quantified by comparing JF646-labeled cell lysates to known amounts of purified JF646-labeled protein standards (e.g. 3xFLAG-Halo-CTCF-His6 or His6-Rad21-Halo-3xFLAG) as shown in Figure 1A. JM8.N4 mouse embryonic stem cells (either C45 mRad21-Halo-V5; C59 FLAG-Halo-mCTCF, mRad21-SNAPf-V5; or C87 FLAG-Halo-mCTCF) were grown overnight on gelatin-coated P10 plates and human U2OS osteosarcoma C32 FLAG-Halo-hCTCF cells on P10 plates. Cells were then labeled with 500 nM (final concentration) Halo-JF646 dye (Grimm et al., 2015) in cell culture medium for 30 min at 37\u00b0C/5.5% CO2. Importantly, it has previously been shown that Halo-JF646 labeling is near-quantitative for cells grown in culture (Yoon et al., 2016). Cells were washed with PBS, dissociated with trypsin, collected by centrifugation and re-suspended in 1 mL PBS and stored on ice in the dark. Cells were diluted 1:10 and counted with a hemocytometer. Cells were then collected by centrifugation and resuspended in 1x SDS loading buffer (50 mM Tris-HCl, pH 6.8, 100 mM DTT, 2.5% beta-mercaptoethanol, 2% SDS, 10% glycerol) to a concentration of\u00a0~10,000\u201320,000 cells per \u03bcL. 5\u20138 biological replicates were collected per cell line.\n\nCell lysates equivalent to 5.0 \u00d7 104 to 1.5 \u00d7 105 cells were run on 10% SDS-PAGE alongside known amounts of purified JF646-labeled 3xFLAG-Halo-CTCF-His6 or His6-Rad21-Halo-3xFLAG. The protein standards were processed similar to the cell lysates to account for any loss of JF646 fluorescence due to denaturation or SDS-PAGE, allowing for quantitative comparisons. JF646-labeled proteins were visualized on a Pharos FX-plus Molecular Imager (Bio-Rad) using a 635 nm laser line for excitation and a Cy5-bandpass emission filter. Band intensities were quantified using Image Lab (Bio-Rad). From the absolute protein standards, we calculated the fluorescence per protein molecule, such that we could normalize the cell lysate fluorescence by the fluorescence per molecule and the known number of cells per lane to determine the average number of molecules per cell.\n\n### Fractional occupancy and mean density calculations\n\nNext, we calculated the fractional occupancy of CTCF in JM8.N4 mouse embryonic stem cells. Previously (Hansen et al., 2017), using ChIP-Seq we found 68,077 MACS2-called peaks in wild-type mESCs and 74,374 peaks in C59 FLAG-Halo-mCTCF/mRad21-SNAPf-V5 double knock-in mESCs. If we take the mean, this corresponds to\u00a0~\u00a071,200 CTCF-binding sites in vivo. This is per haploid genome. An \u2018average\u2019 mouse embryonic stem cell is halfway through the cell cycle and thus contains three genomes (Figure 1\u2014figure supplement 1D\u2013G). In total, an \u2018average\u2019 mES cell therefore contains\u00a0~\u00a0213,600 CTCF-binding sites. Previously (Hansen et al., 2017), we found that 48.9% and 49.3% of Halo-mCTCF molecules were bound to cognate binding sites in the C59 and C87 cell lines (two independent clones where CTCF has been homozygously Halo-Tagged), respectively. This corresponds to a mean of 49.1%. The average number of Halo-mCTCF molecules per cell was 215,200\u00a0\u00b1\u00a03400 and 219,200\u00a0\u00b1\u00a0990 in the C59 and C87 cell lines, respectively (mean across \u2018in-gel\u2019 fluorescence and FCM estimates\u00a0\u00b1\u00a0standard deviation). This corresponds to a mean of\u00a0~\u00a0217,200 molecules per cell. Thus, the average occupancy (i.e. fraction of time the site is occupied) per CTCF binding site is:\n\n$$\nf_{mCTCF}=\\frac{0.491\u2219217200}{3\u221971200}=0.499\n$$\n\nThus, an average CTCF binding site is bound by CTCF\u00a0~\u00a050% of the time in mES cells. Note, that this analysis assumes that all binding sites are equally likely to be occupied. Most likely, some of the sites will exhibit substantially higher and lower fractional occupancy as suggested by Figure 1\u2014figure supplement 1 (i.e. some sites may be occupied essentially all of the time, whereas others only rarely).\n\nWithin the context of the loop extrusion model (Fudenberg et al., 2016; Sanborn et al., 2015), it is crucial to know the average density of extruding cohesin complexes (e.g. number of extruding cohesins per Mb). We found the average number of mRad21-Halo molecules per JM8.N4 mES cell to be ~ 109,400 \u00b1 31,700 (mean across \u2018in-gel\u2019 fluorescence and FCM estimates\u00a0\u00b1\u00a0standard deviation; note the significant uncertainty in this estimate). Previously (Hansen et al., 2017), we found 39.8% of mRad21-Halo molecules to be topologically bound to chromatin in G1 phase and 49.8% in S/G2-phase. After DNA replication begins in S-phase, cohesin adopts multiple functions other than loop extrusion (Skibbens, 2016). Thus, we will use 39.8% as an estimate of the upper bound of the fraction of cohesin molecules that are topologically engaged and involved in loop extrusion throughout the cell cycle. The estimated size of the inbred C57BL/6J mouse genome, the strain background from which the JM8.N4 mES cell line is derived, is 2716 Mb (Waterston et al., 2002). Importantly, using single-molecule tracking we found that essentially all endogenously tagged mRad21-Halo protein is incorporated into cohesin complexes (Hansen et al., 2017). Accordingly, we can assume that the number of Rad21 molecules per cell corresponds to the number of cohesin complexes per cell. Thus, we get an average density of \u2018loop extruding\u2019 cohesin complexes of (assuming again, that an \u2018average\u2019 cell contains three genomes):\n\n$$\nd_{mRad21}=\\frac{0.398\u2219109400}{3\u22192716Mb}=5.34\\frac{molecules}{Mb}\n$$\n\nThus, on average each megabase of chromatin contains 5.34 loop extruding cohesin molecules. We note that it is still not clear whether cohesin functions as a single ring or as a pair of rings (Skibbens, 2016). Thus, if cohesin functions as a single ring, the estimated average density is 5.34 extruding cohesins per Mb and if cohesin functions as a pair, the estimated average density is 2.67 extruding cohesin complexes per Mb. We also note that it is currently unclear whether or not the density of extruding cohesins is likely to be uniform across the genome. Finally, here we have assumed that the cohesin subpopulation we observed by single-molecule live-cell imaging to be relatively stably associated with chromatin (Hansen et al., 2017) is entirely engaged in loop extrusion. However, this may not be the case and this estimate should therefore be interpreted as an upper bound, since the true fraction is not known.\n\n### Flow-cytometry-based absolute abundance of Halo-tagged cell lines\n\nTo obtain the absolute abundance of the Halo-Sox2 (Teves et al., 2016) and Halo-TBP (Teves et al., 2018) cell lines, we grew them side-by-side with the U2OS C32 Halo-CTCF knock-in cell line. We labeled them with 500 nM Halo-TMR (Promega G8251) for 30 min at 37\u00b0C/5.5% CO2 in a tissue-culture incubator, washed out the dye (remove medium; add PBS; remove medium; add fresh medium) and then immediately prepared the cells for Flow Cytometry. We collected cells through trypsinization and centrifugation, resuspended the cells in fresh medium, filtered the cells through a 40 \u03bcm filter and placed the live cells on ice until their fluorescence was read out by Flow Cytometry (~20 min delay). Using a LSR Fortessa (BD Biosciences) flow cytometer, live cells were gated using forward and side scattering. TMR fluorescence was excited using a 561 nm laser and emission read out using a 610/20 band pass filter. The measured mean fluorescence intensity in the C32 standard cell line was scaled to a value of 10,000 arbitrary units, and all the values measured in the other cell lines were re-scaled accordingly. Finally, the absolute abundance of protein X was obtained according to:\n\n$$\nn_{X}=\\frac{I_{X}-I_{mESC Background}}{I_{C32}-I_{U2OS Background}}n_{C32}\n$$\n\nwhere $n_{X}$ is the absolute abundance of the protein of interest (mean number of molecules per cell), $I_{X}$\u00a0is the average measured fluorescence intensity of cell lines expressing protein X (in AU), $I_{Background}$\u00a0is the average measured fluorescence intensity of cell lines that were not labeled with TMR, $I_{C32}$\u00a0is the average measured fluorescence intensity of the C32 cell line standard and $n_{C32}$ is the absolute abundance of C32 (~109,800 proteins per cell).\n\nTo quantify the abundance of Sox2 and TBP in mESCs, we performed four biological replicates and the measurements for each are shown in Figure 3\u2014figure supplement 1. The raw FCM data as well as the Matlab code used to analyze it is available at\u00a0https://gitlab.com/tjian-darzacq-lab/cattoglio_et_al_absoluteabundance_2019\u00a0(Hansen, 2019; copy archived at https://github.com/elifesciences-publications/cattoglio_et_al_absoluteabundance_2019).\n\n### Cell cycle phase analysis in mESCs\n\nCell cycle phase analysis was performed using the Click-iT EdU Alexa Fluor 488 Flow Cytometry Assay Kit (ThermoFisher Scientific Cat. # C10425) according to manufacturer\u2019s instructions, but with minor modifications as previously described (Hansen et al., 2018b). C59 mESCs (Halo-CTCF; Rad21-SNAPf) were grown overnight in a six-well plate. One well was labeled with 10 \u03bcM EdU for 30 min at 37\u00b0C/5.5% CO2 in a TC incubator and one well was unlabeled and used as a negative control. Cell were harvested, washed with 1% BSA in PBS, permeabilized (using 100 \u03bcl 1x Click-iT saponin-based permeabilization and wash reagent (Component D; see kit manual), mixed well and then incubated for 15 min. 0.5 ml Click-iT reaction was added to each tube and incubated for 30 min in the dark. Cells were washed with 1x Click-iT saponin-based permeabilization and wash reagent and resuspended in 1x Click-iT saponin-based permeabilization and wash reagent with DAPI (5 ng/mL) and incubated for 10 min. Cells were then spun down and re-suspended in 1% BSA in PBS and FACS performed on a LSR Fortessa Cytometer. DAPI fluorescence was excited using a 405 nm laser and collected using a 450/50 bandpass emission filter. Alexa Flour 488 fluorescence was excited using a 488 nm laser and collected using a 525/50 bandpass emission filter. Cells were gated based on forward and side scattering. Cell cycle analysis was then performed using custom-written MATLAB code as illustrated in Figure 1\u2014figure supplement 1D\u2013G. Three independent biological replicates were performed.\n\n### JF646-titration to estimate labeling efficiency\n\nTo estimate the efficiency of live-cell labeling of the Halo-tagged proteins, we performed a titration experiment in three biological replicates. Labeling was performed and Flow Cytometry was performed as previously described (Hansen et al., 2017). Briefly, mESC C59 Halo-CTCF cells were grown in a gelatin-coated six-well plate and labeled with either 0 nM, 30 nM, 100 nM, 500 nM, 1000 nM or 5000 nM Halo-JF646 dye (Grimm et al., 2015) for 30 min at 37\u00b0C/5.5% CO2 in a tissue-culture incubator, washed out the dye (remove medium; add PBS; remove medium; add fresh medium) and then immediately prepared the cells for Flow Cytometry. We collected cells through trypsinization and centrifugation, resuspended the cells in fresh medium, filtered the cells through a 40 \u03bcm filter and placed the live cells on ice until their fluorescence was read out by Flow Cytometry (~20 min delay). Using a LSR Fortessa (BD Biosciences) flow cytometer, live cells were gated using forward and side scattering. JF646 fluorescence was excited using a 640 nm laser and emission read out using a 670/30 band pass emission filter. Background-corrected fluorescence was then plotted as a function of the Halo-JF646 concentration as shown in Figure 1\u2014figure supplement 1A\u2013C. As can be seen, 500 nM Halo-JF646 yields near-quantitative labeling in agreement with (Yoon et al., 2016).\n\n### Cloning of plasmid expressing HaloTag including HaloTag linker\n\nTo generate a plasmid expressing HaloTag including HaloTag linker (referred to as pHTCHaloTag) for FCS-calibrated imaging experiments, a stop codon was introduced into the pHTC HaloTag CMV-neo vector (Promega; #9PIG771) by PCR amplification using primer A 5\u2019-ACGTCTAGAATGCTCGAGCCAACCAC-3\u2019 and primer B 5\u2019-ACGGCGGCCGCTTAACCGGAAATCTCC-3\u2019 (Sigma), followed by restriction digest using XhoI (NEB; #R0146) and NotI (NEB; #R0189) and subsequent ligation by T4 DNA ligase (NEB; #M0202). The plasmid was purified endotoxin-free using EndoFree Plasmid Maxi Kit (Qiagen; #12362) for transient transfection into U2OS cells. Sequence is available upon request.\n\n### FCS-calibrated imaging and analysis of U2OS Halo-CTCF C32 interphase cells\n\nFCS-calibrated imaging of U2OS Halo-CTCF C32 cell line was essentially performed as described (Cai et al., 2018; Politi et al., 2018; Walther et al., 2018).\n\n### Cell preparation for FCS-calibrated imaging\n\nIn detail, 1.2 \u00d7 104 U2OS wild-type (WT) cells and 2 \u00d7 104 U2OS Halo-CTCF C32 cells, respectively, were seeded into individual wells (two wells for U2OS WT, one well for U2OS Halo-CTCF C32) of a Nunc eight-well LabTek #1.0 chambered coverglass (Thermo Fisher Scientific; #155411) 2 days before imaging and incubated at 37\u00b0C and 5% CO2 in a cell culture incubator. On the following day, in one-well U2OS WT cells were transiently transfected with 150 ng pHTCHaloTag plasmid using FuGENE6 Transfection Reagent (Promega; #E2693) according to the manufacturer\u2019s instructions. On the day of imaging, cells were labeled with 500 nM HaloTag TMR ligand (Promega; #G8252) in cell culture medium for 30 min at 37\u00b0C and 5% CO2 in a cell culture incubator. Cells were washed with PBS and incubated in cell culture medium for 10 min at 37\u00b0C and 5% CO2. Cells were again washed with PBS and 250 \u00b5l imaging medium (CO2-independed imaging medium without phenol red; custom order based on #18045070 from Thermo Fisher Scientific; supplemented with 10% v/v FBS (Thermo Fisher Scientific; #10270106; qualified, European Union approved, and South American origin), 1 mM sodium pyruvate (Thermo Fisher Scientific; #11360070) and 2 mM L-glutamine (Thermo Fisher Scientific; #25030081)) was added per well containing 1 \u00b5g/ml Bisbenzimide Hoechst 33342 (Sigma-Aldrich; #B2261) and in addition for U2OS Halo-CTCF C32 cells 2 \u00b5M 500-kD Dextran (Thermo Fisher Scientific; #D7144) labeled with Atto 430LS-31 (Molecular Probes; #AD-430LS-31; Dextran-Atto 430LS-31 was produced in house; Politi et al., 2018).\n\n### FCS-calibrated imaging\n\nFCS measurements and fluorescence images were recorded on a Zeiss LSM780, Confocor3, laser scanning microscope equipped with a fluorescence correlation setup and a temperature control chamber. Imaging was performed at 37\u00b0C and using a C-Apochromat UV-visible-IR 40X/1.2-NA water objective lens (Zeiss). Data acquisition was performed using ZEN 2012 Black software (Zeiss) as well as in-house developed software applications (Politi et al., 2018). An in-house-designed objective cap and a water pump enabled automatic water immersion during data acquisition.\n\nTo determine the effective confocal volume, FCS measurements of a 50 nM fluorescent dye solution containing an equimolar mix of Alexa Fluor 488 (Thermo Fisher Scientific; #A20000) and Alexa Fluor 568 (Thermo Fisher Scientific; #A20003) were carried out using the 488 nm laser (laser at 0.2% excitation (exc.) power) and the 561 nm laser (laser at 0.06% exc. power) and avalanche photodiode (APD) detectors with band pass filters (BPs) set to 505\u2013540 nm and 600\u2013650 nm, respectively. Photon counts were recorded for 30 s and six repetitions were performed. For all three cell samples, namely WT U2OS cells, WT cells transiently transfected with pHTCHaloTag plasmid to express free HaloTag and U2OS Halo-CTCF C32 cells, all labeled with HaloTag TMR ligand, single plane images (xy pixel size 200 nm; image size 512 \u00d7 512 pixels; pixel dwell time 0.79 \u00b5s; 4x line averaging) were recorded with gallium arsenide phosphide (GaAsP) detectors in the TMR (561 nm laser, laser at 1% exc. power, detection window at 571\u2013695 nm) and Hoechst 33342 (405 nm laser, laser at 0.2% exc. power, detection window at 410\u2013481 nm) channels in separate tracks using main beam splitters (MBS) at 458/561 nm and 405 nm, respectively as well as in the transmission channel. For U2OS Halo-CTCF C32 cells, the Atto 430LS-31 channel (458 nm laser, laser at 6.0% exc. power, detection window at 491\u2013553 nm) was additionally recorded in a separate track. In addition to a single plane image, two FCS measurement points were set per cell, one inside the nucleus and one inside the cytoplasm, and photon counts were recorded using the 561 nm laser (laser at 0.06% exc. power) and the APD detector (BP 600\u2013605 nm) for 30 s per measurement point. To determine background fluorescence and background photon counts, FCS measurements were performed in WT U2OS interphase cells labeled with HaloTag TMR ligand. To estimate an experiment-specific calibration factor used to transform HaloTag-TMR fluorescence into HaloTag-TMR concentration, FCS measurements were performed in WT U2OS interphase cells transiently expressing different levels of free HaloTag labeled with HaloTag TMR ligand as well as in cells expressing Halo-CTCF labeled with HaloTag TMR ligand.\n\nHigh-resolution confocal images covering the whole volume of individual interphase U2OS cells homozygously expressing Halo-CTCF labeled with HaloTag TMR ligand were acquired as described above for the single plane images for FCS calibration, whereby z-stacks consisting of 21 planes with a z interval of 600 nm were recorded.\n\n### Analysis of FCS-calibrated imaging data\n\nFCS data processing and generation of calibrated images was performed as described (Cai et al., 2018; Politi et al., 2018; Wachsmuth et al., 2015; Walther et al., 2018). To reconstruct chromosomal and cell surfaces from the Hoechst 33342 (DNA) and Dextran-Atto 430LS-31 (cell boundary) channels, respectively, a previously developed 3D segmentation pipeline (Cai et al., 2018; Walther et al., 2018) was optimized for U2OS interphase cells. In detail, in order to reduce the processing time, the original z-stack was cropped so that only the central 72 \u00b5m x 72 \u00b5m xy region of the stack remained. Cropped stacks were interpolated along the z direction to generate isotropic stacks from anisotropic source data and a 3D Gaussian filter was applied. The nuclear mass was detected from the Hoechst 33342 channel by applying adaptive thresholding (Otsu) on each xy plane of a z-stack as well as on all xy planes from the stack together (H\u00e9rich\u00e9 et al., 2014). The volume and the number of the detected binary masses were compared with a range of values determined empirically to accept the detected threshold. Otherwise, re-thresholding was performed iteratively after suppressing the higher intensity values in the histogram. Morphological features of individual connected components were analyzed to merge or split the components and binary masses with very small volumes were excluded from further processing. The remaining masses were utilized as markers to detect individual cell regions from the Dextran-Atto 430LS-31 channel using a marker-based watershed algorithm. The volumes of individual nuclear masses and their distances from the center of the image were used to detect the nuclear as well as the cell mass of interest.\n\nThe segmentation of cell and nuclear masses allowed the determination of several parameters, such as volume and total fluorescence intensity, in the whole cell as well as in the nuclear and cytoplasmic compartments. These parameters were used to calculate the average concentration of Halo-CTCF proteins and their total number in each of these compartments according to Politi et al. (2018), by using the following equations:\n\n$$\nC_{a}=(\\frac{I_{t}}{V_{p}}\u2212I_{b})\u2217k_{nM}\n$$\n\n\n\n$$\nN_{t}=(I_{t}\u2212V_{p}\u2217I_{b})\u2217k_{nM}\u2217V_{\\mu}\u2217N_{A}\n$$\n\nwhere $C_{a}$ is the average concentration of the corresponding compartment, $I_{t}$\u00a0is the total intensity, $V_{p}$\u00a0is the total volume in number of pixels,\u00a0$I_{b}$ is the background intensity, $k_{nM}$\u00a0is the FCS calibration factor in nM (nmol/L), $N_{t}$\u00a0is the total number of proteins and $V_{\\mu}$ is the total volume in \u03bcm. $N_{A}$\u00a0is derived from the Avogadro constant and set to 0.602214086 so that the units equal out.\n\nIn total, four independent FCS-calibrated imaging experiments were performed, whereby the number of cells was n\u00a0\u2265\u00a021. Mean and standard deviation of the number of TMR-labeled Halo-CTCF molecules per U2OS interphase cell were calculated per experiment as well as from all four replicates using Excel (2007; Microsoft).\n\n### Code and data deposition\n\nThe source code for 3D segmentation of cellular and nuclear compartments of interphase U2OS cells to determine their volumes as well as for calculating protein concentrations and protein numbers within these compartments based on a FCS calibration curve (Politi et al., 2018) is available at https://git.embl.de/grp-ellenberg/genome_organization_cattoglio_2019.\u00a0Confocal z-stacks of TMR-labeled U2OS Halo-CTCF cells, FCS calibration curves, and a summary results table are deposited at BioStudies database (McEntyre et al., 2015) under the accession number S-BSST229.\n",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "6b1cd9dd-0634-4a75-9c6b-ccd6c572ef41",
+      "submission_id": "a69b67a8-2d42-481f-b561-f1c23a4ec6e0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David J Sherratt, University of Oxford United Kingdom\n\nReviewers:\n- David J Sherratt, University of Oxford United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.40164.016](https://doi.org/10.7554/eLife.40164.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Architectural Features of 3D Genome Organization Revealed by Counting CTCF and Cohesin Molecules\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including David J Sherratt as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kevin Struhl as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe manuscript provides quantitative abundance estimates of the cohesin subunit Rad21 and of the architectural protein CTCF. When validated these are invaluable to the chromatin organization field and for the modelling of genome folding and loop extrusion processes. The manuscript also proposes novel methods to quantify absolute protein abundancy in living cells. Nevertheless, better validation of the methods and discussion of their limitations is required. In places the manuscript contains 'over-selling' and 'over-interpretation', combined in places with a lack of clarity and failure to discuss the field incisively.\n\nOur agreed consensus is to ask you for a revised submission based on the comments below. All three of us are of the opinion that there is potentially important and useful material in the manuscript, but that significant revision is required if it is to be published in eLife.\n\nClarity/over-interpretation\n\n1) Regarding the Title of the manuscript, we didn't see which 'Architectural features' have been revealed by the work. 'Quantitative features\u2026' would be better. Furthermore, the work does not address directly '3D organisation'. A simple accurate title would do the work justice.\n\n2) In the Introduction, the authors don't quite correctly cite the recent work on cohesin depletion. Schwarzer et al., did not deplete cohesin itself, but like Haarhuis et al., rather depleted a subunit of the cohesin loader complex. Both these papers should be cited appropriately.\n\n3) One reviewer felt that 'CTCF boundary permeability' is an inappropriate term for the Abstract without explanation of what this esoteric term means. A second reviewer was of the opinion that the work did not directly address CTCF boundary permeability as stated in the Abstract. The reviewer states: 'to determine boundary permeability, one would need to do either in vitro experiments that assess cohesin passage, or otherwise perform detailed genomic analysis of TAD boundary strength; experiments beyond the scope of the current manuscript.\n\n4) Similarly, the reviewers were concerned that the absolute numbers of Rad21 taken together with the fraction that was stably bound (previous work) was distilled into a statement concerning 'the number of cohesins that are extruding loops'. We do not understand the basis of this statement, since 'loop extrusion' is not assayed or directly addressed in the manuscript. Stably DNA-bound cohesin could be doing anything, and in other cases maybe even be doing nothing (e.g. if it stops translocating at appropriately paired CTCF-bound CTCF sites). Given the data, it is premature to make assumptions on the amount of extruding cohesin complexes. The authors work beautifully determines the upper limit for this number, as we now know that are no more than a certain number of complexes per cell. The authors should phrase the text accordingly and should not say that they have 'determined the density of extruding cohesins', as they do in the Abstract and in the main text.\n\n5) One thing that is missing is determination of (or discussion of) the fraction of cohesin molecules that are associated with CTCF at CTCF sites (wasn't this information potentially accessible using the methods here; for example, using co-immunoprecipitation?).\n\n6) Overall, the manuscript needs finessing with care to avoid over-interpretation and repetition (e.g. the statement 'In the context of the loop extrusion model, is repeated at least twice). In places it is not clear whether bound CTCF or bound cohesin is being talked about; for example, in subsection \u201cAbsolute CTCF/cohesin quantification and implications for 3D genome organization\u201d, occupancy by what? (I presume CTCF?) \u2013 this needs to be stated explicitly.\n\nCohesin oligomers?\n\nThis is a contentious and much debated issue, except for the E. coli SMC complex MukBEF, in which the dimeric kleisin provides the basis for the inferred dimer of dimer complexes in vivo. The authors show by co-immunoprecipitation experiments of endogenously tagged Rad21 that a significant fraction of Tagged Rad21 can form dimers or multimers (assessed by co-immunoprecipitation with unlabelled or differentially tagged Rad21) or be in complexes with other proteins, where separate and potentially non-interacting cohesin monomers are co-immunoprecipitated?. The statement: 'this demonstrates that Rad21 either directly or indirectly self-associates in a protein-mediated and biochemically stable manner consistent with dimers or higher order oligomers' is just about OK, although the authors veer towards a model that this likely means functional cohesin dimers, when as best as can be ascertained this could have resulted from single rings interacting independently with other proteins (CTCF?). The issue needs better and more incisive discussion that takes into account other published work. Haering et al., (2002, Figure 6) previously found that budding yeast cohesin rarely if ever forms dimers. They also used endogenously tagged alleles. How do the authors explain their own quite different results? A potential scenario is that the IP used in the current manuscript unspecifically pulls along Rad21. A good control would therefore be to side by side include the untagged parental cells. This should yield no Rad21 pull-downs. Furthermore, Ganji et al., (2018) recently found that the related condensin complex extrudes loops as monomers. Considering the structural similarity between cohesin and condensin, it seems intuitively more likely that cohesin also acts as a monomeric complex. The authors should explain how they envisage that cohesin then acts as a dimer, while condensin acts as a monomer. One possibility could for example be that cohesin dimers/multimers do sometimes exist, but that they play no role in loop formation-perhaps they are found at stalled cohesin-CTCF complexes? If the authors wish to make a strong case for the dimer hypothesis, it would be necessary to additionally show cohesin dimers by using a different method, particularly since oligomerization has only been probed on V5-tagged protein. Therefore, repeating the experiments with a different couple of tags, or probing oligomerization by a different method could strengthen this point of the manuscript. Could the authors use fluorescence fluctuation measurements (e.g. Numbers and Brightness analysis or Photon Counting Histogram analysis) on Halo-Tagged cohesin? This could also provide quantitative estimates on the fraction of cohesin molecules engaged in oligomers.\n\nValidation and assumptions\n\n1) In subsection 'A simple general method for counting Halo-tagged proteins in living cells', the authors do not provide sufficient data supporting the reliability of the proposed method. The text does not discuss that abundance of proteins can change throughout the cell cycle. Therefore, the method has the same limitation as other ensemble methods, unless cells are sorted into different cell cycle stages, or single-cell microscopy is used-this could be a useful discussion point?\n\n2) At a minimum, the authors should apply the method described in Figure 3 to compare the copy number of two proteins that they already measured with another method. For example, the authors could use the c45 (mRAD21-Halo) cell line as a standard, and apply the method of Figure 3 to the c87 (Halo-CTCF) cell line, in order to verify that the \"in-gel fluorescence\" and the \"live-cell\" method can provide comparable estimates for the number of CTCF molecules/cell. Also, it is not clear from the text whether the authors tried to quantify the Sox2 protein number by both flow-cytometry and by microscopy. If yes, the authors should mention how the estimated protein number by these two methods differ. If not, they should only describe the experiments they actually did, and maybe comment in the Discussion section about the possible extension of the proposed method using other approaches (e.g. cell cytometry vs. live microscopy) \u2013 also considering that the dynamic range of these two methods is expected to be different.\n\n3) Additional control experiments should be performed in order to test the reliability of the novel methods introduced and applied in this manuscript. For example, in the text that relates to Figure 1, the authors use the fluorescent signal from a bright fluorescent ligand (JF646) to quantify the protein copy number of endogenous proteins tagged with HaloTag via genome editing. The authors claim that previous work has shown that JF646 labelling is \"quantitative\" in living cells, but it seems that in the cited paper (Yoon et al., 2016) the fluorescent ligand is only used in a quantitative way to estimate relative changes in expression, with no real proof of its reliability for estimating absolute numbers of proteins. Importantly, the authors should cross-validate the proposed method using an established approach in the same cell line, for example by fluorescence correlation spectroscopy or mass spectrometry. At least the authors could show what are the minimum and maximum protein copy numbers measured in the cellular population and how they relate with the dynamic range in endogenous protein expression measured for example by immunofluorescence or fluorescence cytometry on the non-labelled protein population.\n\n4) Did the authors check if the HaloTag sequence interfere with transcription, RNA stability, protein synthesis, protein degradation? Any of these processes can influence the protein copy number. At minimum the authors should show by quantitative Western Blotting that the amount of HaloTag-CTCF in the gene-edited cell line is identical to the amount of non-tagged CTCF in the parental cell-line.\n\n5) How can the authors be sure that all the protein is extracted and detected following cell lysis? How can the authors be sure that all the protein is labelled by the JF646 fluorescent ligand? Interestingly the authors used 500nM ligand to label cellular CTCF, while a previous paper from another group using HaloTag labelling (Mazza et al., 2012 \u2013 Supplementary Figure 1) estimated that at this concentration only about 80% of a relatively low abundancy protein such as p53 is labelled by a similar concentration of TMR. The authors could titrate the concentration of fluorescent ligand added to the cells to identify a saturating concentration. The same concerns could potentially apply whenever the methods would be used on a different protein or in a different cell line. For example, the membrane permeability to the ligand might be cell-dependent and the degradation rate of different proteins could be differently affected by the presence of a tag. It would be therefore useful to the scientific community if the authors could discuss the list of controls that would be needed when applying their method to a novel target.\n\n6) The authors assume that on average a cycling cell is halfway through the cell cycle, and that on average cells therefore have 3 copies of the genome. For mES cells which are mainly in S phase, and whose G1 and G2 are both short, this assumption may well be correct. But the authors also measure the amount of CTCF in U2OS cells, which spend most of their time in G1, and also aren't diploid. Since the authors suggest that their method can be widely applied, it would be good if they could normalise the absolute abundance of the factor of interest relative to DNA content, for example by using appropriate staining in the FACS analysis.\n",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1428839e-239b-4de3-b4bd-dc37503b30c8",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C1",
+      "claim": "mESCs contain on average ~218,000 \u00b1 24,000 CTCF protein molecules (mean \u00b1 std).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification by 'in-gel' fluorescence revealed that, on average, mESCs contain ~218,000 \u00b1 24,000 CTCF protein molecules (mean \u00b1 std)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from 'in-gel' fluorescence measurements shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "096beae3-6ad0-4d08-b5b3-5f149563bf57",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C2",
+      "claim": "mESCs contain on average ~86,900 \u00b1 35,600 Rad21 proteins and thus presumably cohesin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification by 'in-gel' fluorescence revealed that, on average, mESCs contain ~218,000 \u00b1 24,000 CTCF protein molecules (mean \u00b1 std) as well as ~86,900 \u00b1 35,600 Rad21 proteins and thus presumably cohesin complexes (Figure 1B; Rad21 appears to be the least abundant cohesin subunit, see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from 'in-gel' fluorescence measurements shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "eb812ab3-77d9-4482-9917-67fce3f8c461",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C3",
+      "claim": "U2OS cells contain ~104,900 \u00b1 14,600 Halo-CTCF proteins per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we determined the abundance of Halo-CTCF in U2OS cells (C32) to be ~104,900 \u00b1 14,600 proteins per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from 'in-gel' fluorescence measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "274c3300-4a47-412c-92bd-9b73d60e7f8f",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C4",
+      "claim": "The CTCF abundance in human U2OS cells corresponds to about half the number of CTCF molecules determined for mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTCF abundance in human U2OS cells corresponds thus to about half the number of CTCF molecules determined for mESCs (~218,000 proteins/cell).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from comparing the measured CTCF abundances in U2OS cells (~104,900) and mESCs (~218,000).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "3a3e103a-93df-408d-94ba-fc100b06368f",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C5",
+      "claim": "Independent FCS experiments in HeLa Kyoto CTCF-EGFP cells measured ~125,000 CTCF molecules per cell in G1-phase and ~181,000 in G2-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent FCS experiments in HeLa Kyoto CTCF-EGFP cells measured ~125,000 CTCF molecules per cell in G1-phase and ~181,000 in G2-phase (Holzmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Holzmann et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "dae1e708-dada-41ab-ba06-c2bd2a6e0169",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C6",
+      "claim": "Cell-type-specific control of chromatin looping may be achieved in part by regulating CTCF abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus tempting to speculate that cell-type-specific control of chromatin looping may be achieved in part by regulating CTCF abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the observed differences in CTCF abundance between cell types.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "b0282c34-324e-4a9a-bb19-953b4cc3e25b",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C7",
+      "claim": "FCS-calibrated imaging found a mean of 114,600 \u00b1 10,200 CTCF proteins per U2OS interphase cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a mean of 114,600 \u00b1 10,200 CTCF proteins per U2OS interphase cell, randomly sampling asynchronously cycling single cells (mean \u00b1 std of 4 replicates with number of cells n \u2265 21; 101 single cells in total; Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from FCS-calibrated imaging measurements shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "3b1c9378-e69e-42d7-b1e9-dc9e4973cabd",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C8",
+      "claim": "Over 90% of cellular Halo-CTCF molecules localized to the interphase U2OS nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 90% of cellular Halo-CTCF molecules localized to the interphase U2OS nucleus (~106,000 nuclear Halo-CTCF molecules, which corresponds to a nuclear Halo-CTCF concentration of ~144.3 nM (Figure 1\u2014figure supplement 2B,E)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from FCS-calibrated imaging measurements shown in Figure 1\u2014figure supplement 2B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "6cdcc7fb-34af-453b-9878-52a042368cf5",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C9",
+      "claim": "The FCS-calibrated imaging result of ~114,600 \u00b1 10,200 CTCF molecules per cell agrees within technical error with the 'in-gel' fluorescence estimate of ~104,900 \u00b1 14,600 CTCF molecules per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The result of our FCS-calibrated imaging method (~114,600 \u00b1 10,200) agrees within technical error with our 'in-gel' fluorescence estimate of ~104,900 \u00b1 14,600 CTCF molecules per cell, and thereby validates the latter approach for determining average cellular protein abundances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of data from two different experimental methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "f480e9fa-4aba-4a91-8050-876ba259ac2a",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C10",
+      "claim": "The best and final cross-validated estimate of CTCF abundance in U2OS cells is 109,800 CTCF proteins per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We take the mean of the two methods, 109,800 CTCF proteins per cell in U2OS cells, as our best and final cross-validated estimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on averaging data from two different experimental methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "04206df6-fed1-4fe3-8485-485e7e8bfec0",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C11",
+      "claim": "The FCM estimate of mESC C45 Rad21-Halo is 131,800 \u00b1 12,600 proteins/cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For mESC C45 Rad21-Halo, the FCM estimate of 131,800 \u00b1 12,600 proteins/cell differed more from the 'in-gel' fluorescence estimate of 86,900 \u00b1 35,600, but was still just within error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from FCM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "8f85da10-17f2-40e2-82f1-d2e154fa08ad",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C12",
+      "claim": "The best and final estimate of Rad21 abundance in mESCs is ~109,400 Rad21 proteins per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We again take the mean of the two methods,~109,400 Rad21 proteins per cell, as our final, although less certain, estimate of Rad21 abundance in mESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on averaging data from two different experimental methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "c54d965f-5aa2-42bd-84de-847e04eb73e5",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C13",
+      "claim": "The interphase cell cycle distribution of JM8.N4 mESCs is 10.2% in G1-phase, 73.9% in S-phase, and 15.9% in G2-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we measured the interphase cell cycle distribution of JM8.N4 mESCs: 10.2% in G1-phase, 73.9% in S-phase, and 15.9% in G2-phase (Figure 1\u2014figure supplement 1D\u2013G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from cell cycle analysis shown in Figure 1\u2014figure supplement 1D\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "9beda265-0cfa-48d9-9159-8cbc38eaf05f",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C14",
+      "claim": "The cell cycle distribution of JM8.N4 mESCs approximately agrees with other mESC estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "This approximately agrees with other mESC estimates (Hansen et al., 2018b; Sladitschek and Neveu, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to other studies (Hansen et al., 2018b; Sladitschek and Neveu, 2015).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "dd704592-7bb8-4f6a-bb9b-5636c2082922",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C15",
+      "claim": "An 'average' mESC is approximately half-way through the cell cycle and thus contains ~3 genome copies.",
+      "claim_type": "EXPLICIT",
+      "source": "This approximately agrees with other mESC estimates (Hansen et al., 2018b; Sladitschek and Neveu, 2015) and shows that an 'average' mESC is approximately half-way through the cell cycle and thus contains ~3 genome copies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the measured cell cycle distribution data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "cb0b026b-8ac2-4549-8617-f7e14d724c1c",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C16",
+      "claim": "The fraction of CTCF molecules bound to specific DNA sites in mESCs is ~49%.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously determined the fraction of CTCF molecules bound to specific DNA sites in mESCs by single-molecule imaging (~49%) and the total number of CTCF sites in the mESC genome by ChIP-seq (~71,000) (Hansen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study (Hansen et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "a0f0788f-90ec-4cb4-9c80-526ea03a3c31",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C17",
+      "claim": "The total number of CTCF sites in the mESC genome is ~71,000.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously determined the fraction of CTCF molecules bound to specific DNA sites in mESCs by single-molecule imaging (~49%) and the total number of CTCF sites in the mESC genome by ChIP-seq (~71,000) (Hansen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study (Hansen et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "aa94823b-b07a-44e0-a33b-88294423e920",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C18",
+      "claim": "An average CTCF-binding site is occupied ~50% of the time by a CTCF molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Now we can use the information on the absolute abundance of CTCF proteins per mESC (217,200) to calculate that an average CTCF-binding site is occupied ~50% of the time by a CTCF molecule (always assuming three genome copies; full details in Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculations using measured CTCF abundance and previously determined binding site numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "50b0597d-2fc5-46d1-9bd5-b36b9652e002",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C19",
+      "claim": "In the context of the loop extrusion model, the time-averaged occupancy of an average CTCF boundary site by CTCF is ~50%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of the loop extrusion model, this suggests that the time-averaged occupancy of an average CTCF boundary site by CTCF is ~50% (Figure 1G) \u2013 that is, an extruding cohesin will be blocked ~50% of the time at an average CTCF site in the simplest version of the loop extrusion model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from calculated CTCF site occupancy in the context of the loop extrusion model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "df6c95ea-c29d-41b0-b8f6-18b29adb184e",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C20",
+      "claim": "The fraction of cohesin complexes that are relatively stably associated with chromatin and thus presumably topologically engaged is ~40% in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "For cohesin, we previously estimated the fraction of cohesin complexes that are relatively stably associated with chromatin (~20\u201325 min residence time in mESC G1) and thus presumably topologically engaged to be ~40% in G1 (Hansen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study (Hansen et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "10751d66-3320-4e51-be3f-4be1e8b891c6",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C21",
+      "claim": "The upper limit on the density of extruding cohesin molecules is ~5.3 per Mb assuming cohesin exists as a monomeric ring or ~2.7 per Mb if cohesin forms dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "If we take this as the upper bound of putatively 'loop-extruding' cohesin complexes, we can similarly calculate the upper limit on the density of extruding cohesin molecules as ~5.3 per Mb assuming cohesin exists as a monomeric ring or ~2.7 per Mb if cohesin forms dimers (Figure 1G; full details on calculation in Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculations using measured cohesin abundance and previously determined chromatin-bound fraction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "0d9bae53-fc47-436f-b77a-f15ba7c73e48",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C22",
+      "claim": "The calculated density of extruding cohesins corresponds to a genomic distance between extruding cohesins of ~186\u2013372 kb in mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to a genomic distance between extruding cohesins of ~186\u2013372 kb in mESCs, which approximately matches computational estimates (Fudenberg et al., 2016; Gassler et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculations from measured data and comparison with computational estimates from cited studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "4fe2ee7f-600d-4ec6-a345-8da4dc3d4f38",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C23",
+      "claim": "A previous study used self co-immunoprecipitation (CoIP) of cohesin subunits to suggest a handcuff-shaped dimer model for cohesin.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a previous study used self co-immunoprecipitation (CoIP) of cohesin subunits to suggest a handcuff-shaped dimer model for cohesin (Zhang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Zhang et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "1741646c-9b9a-45d4-a4fb-5dac52220917",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C24",
+      "claim": "Self-CoIP experiments of cohesin subunits in budding yeast and human HeLa cells could not detect cohesin dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, this study has remained highly controversial (Nasmyth, 2011) and self-CoIP experiments of cohesin subunits in budding yeast (Haering et al., 2002) and human HeLa cells (Hauf et al., 2005) could not detect cohesin dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to other studies (Nasmyth, 2011; Haering et al., 2002; Hauf et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "e9cd425f-15b6-42c9-8dac-e31d23483c09",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C25",
+      "claim": "Budding yeast condensin can extrude loops in vitro as a monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, budding yeast condensin, an SMC complex related to cohesin, can extrude loops in vitro as a monomer (Ganji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Ganji et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "59ecad7e-bdfc-4da0-a0ef-b77493c957d0",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C26",
+      "claim": "Over-expression of the Rad21 subunit does not faithfully recapitulate the properties of endogenously tagged Rad21.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the mammalian study (Zhang et al., 2008) relied on over-expressed epitope-tagged cohesin subunits and given our recent observations that over-expression of the Rad21 subunit does not faithfully recapitulate the properties of endogenously tagged Rad21 (Hansen et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study (Hansen et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "a339ba14-9fee-4a11-b530-e43d820d8a76",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C27",
+      "claim": "In the C85 clonal line, the V5 CoIP clearly precipitated wild-type Rad21.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the C85 clonal line, the V5 CoIP clearly precipitated wild-type Rad21 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "ba3e6fba-8134-45ca-8aeb-32e0b62bded0",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C28",
+      "claim": "The cohesin:cohesin interaction appears to be protein-mediated rather than dependent on DNA association.",
+      "claim_type": "EXPLICIT",
+      "source": "This cohesin:cohesin interaction appears to be protein-mediated rather than dependent on DNA association since benzonase treatment, which leads to complete DNA degradation (Figure 2\u2014figure supplement 1C), did not interfere with CoIP (Figure 2D; single-color blots in Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing that benzonase treatment did not affect CoIP, as shown in Figure 2D and Figure 2\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "9d2ab475-ce33-4271-a811-2b96084e40f5",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C29",
+      "claim": "Rad21 either directly or indirectly self-associates in a protein-mediated and biochemically stable manner, consistent with cohesin forming dimers or higher order oligomers in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that Rad21 either directly or indirectly self-associates in a protein-mediated and biochemically stable manner, consistent with cohesin forming dimers or higher order oligomers in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the CoIP experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "f7adfc7f-1b0d-4596-b50c-1a62d48df503",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C30",
+      "claim": "In the B4 clonal cell line, a V5-IP efficiently pulled down Rad21-SNAP-3xFLAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, a V5-IP efficiently pulled down Rad21-SNAP-3xFLAG (Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "b0f2348c-9d0f-45e0-9504-4da6fc45287d",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C31",
+      "claim": "In the B4 clonal cell line, a FLAG-IP pulled down Rad21-Halo-V5.",
+      "claim_type": "EXPLICIT",
+      "source": "and, reciprocally, a FLAG-IP pulled down Rad21-Halo-V5 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "b441cede-e2d7-4ea4-8054-fea08fe597cd",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C32",
+      "claim": "The Rad21 self-interaction was entirely benzonase-resistant and thus independent of nucleic acid binding.",
+      "claim_type": "EXPLICIT",
+      "source": "As before, the Rad21 self-interaction was entirely benzonase-resistant and thus independent of nucleic acid binding as this enzyme degrades both DNA and RNA (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing benzonase resistance, as shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "550608c3-d318-4339-9740-563f29d60a5f",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C33",
+      "claim": "At least ~8% of cohesin is in a dimeric state during the pull-down experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the simplest assumption of cohesin forming dimers, we calculated that at least ~8% of cohesin is in a dimeric state during our pull-down experiment, based on our IP and CoIP efficiencies (full calculation details in Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculations from IP and CoIP efficiency data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "165c9c33-1658-4c74-9fa9-5d3ab39ebef5",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C34",
+      "claim": "The percentage of cohesin in dimeric state is likely an underestimate of the actual oligomeric vs monomeric ratio in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This percentage is likely an underestimate of the actual oligomeric vs monomeric ratio in live cells, since we expect a substantial proportion of the self-interactions not to survive cell lysis and the typically harsh IP procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about the effects of experimental procedures on protein interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "dfb90c25-6d2c-4029-9bb2-4d3566824a8f",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C35",
+      "claim": "A measureable population of mammalian cohesin may exist as dimers or oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while these results cannot exclude that some or even a majority of mammalian cohesin exists as a single-ring (Figure 2A), they do suggest that a measureable population may exist as dimers or oligomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the CoIP experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "9e8470a8-7965-4e8f-a158-8f631e830300",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C36",
+      "claim": "The average protein copy number per cell is 460,517 \u00b1 25,606 for Halo-Sox2.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate this, here we compared the background-subtracted TMR-fluorescence intensity of mESC lines carrying homozygously Halo-tagged Sox2 (Teves et al., 2016) and TBP (Teves et al., 2018) to our U2OS C32 Halo-CTCF cell line, and determined the average protein copy number per cell to be 460,517 \u00b1 25,606 for Halo-Sox2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from FCM measurements using the U2OS C32 Halo-CTCF standard.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "b6f97d85-ba54-44d3-b73a-b00598f6f5bd",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C37",
+      "claim": "The average protein copy number per cell is 99,111 \u00b1 29,125 for Halo-TBP.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate this, here we compared the background-subtracted TMR-fluorescence intensity of mESC lines carrying homozygously Halo-tagged Sox2 (Teves et al., 2016) and TBP (Teves et al., 2018) to our U2OS C32 Halo-CTCF cell line, and determined the average protein copy number per cell to be 460,517 \u00b1 25,606 for Halo-Sox2 and 99,111 \u00b1 29,125 for Halo-TBP (Figure 3; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from FCM measurements using the U2OS C32 Halo-CTCF standard.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "4efb124d-b7bf-41b5-a8f3-c4ace71c3b71",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C38",
+      "claim": "The FCM method may not be robust for very lowly expressed proteins (below ~10,000 proteins per cell).",
+      "claim_type": "EXPLICIT",
+      "source": "Although this method should be generally applicable, we note that it may not be robust for very lowly expressed proteins (below ~10,000 proteins per cell; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data and method limitations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "6afb750d-700e-4a5d-b495-c564bbe24649",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C39",
+      "claim": "The FCM method may not be appropriate for extremely highly expressed proteins (>10\u201320 million proteins per cell).",
+      "claim_type": "EXPLICIT",
+      "source": "This will be instrument-specific, but we note that our method may not be appropriate for extremely highly expressed proteins (>10\u201320 million proteins per cell; calculated based on the LSR Fortessa instrument used in this study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from instrument specifications and method limitations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "172d476e-1996-447a-8d6e-f3e6be24429e",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C40",
+      "claim": "Acute CTCF or cohesin depletion causes global loss of most TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF and cohesin have emerged as causal regulators of TAD formation and maintenance, since acute CTCF or cohesin depletion causes global loss of most TADs (Gassler et al., 2017; Nora et al., 2017; Rao et al., 2017; Wutz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Gassler et al., 2017; Nora et al., 2017; Rao et al., 2017; Wutz et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "8a67c477-b979-473e-8296-e280bf2befad",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C41",
+      "claim": "Knock-out of cohesin loading protein NIPBL affects TAD organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Concordantly, knock-out of cohesin loading proteins NIPBL (Schwarzer et al., 2017) and MAU2 (Haarhuis et al., 2017) also affect TAD organization, although to different extents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Schwarzer et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "aeddb14b-a6cb-4e50-b027-bdd7e7e913de",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C42",
+      "claim": "Knock-out of cohesin loading protein MAU2 affects TAD organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Concordantly, knock-out of cohesin loading proteins NIPBL (Schwarzer et al., 2017) and MAU2 (Haarhuis et al., 2017) also affect TAD organization, although to different extents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Haarhuis et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "cd79b64f-9b99-46dd-8a27-b66a4fb1675e",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C43",
+      "claim": "Loss of the cohesin unloader WAPL strengthens TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, loss of the cohesin unloader WAPL strengthens TADs (Gassler et al., 2017; Haarhuis et al., 2017; Wutz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Gassler et al., 2017; Haarhuis et al., 2017; Wutz et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "476f1bca-01dd-4e9e-910e-00bf4908b022",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C44",
+      "claim": "Models of genome folding through cohesin-mediated loop extrusion, which is stopped by chromatin-bound CTCF, have been remarkably successful in reproducing the general features of genomic contact maps at the level of TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the key roles played by CTCF and cohesin, models of genome folding through cohesin-mediated loop extrusion, which is stopped by chromatin-bound CTCF, have been remarkably successful in reproducing the general features of genomic contact maps at the level of TADs (Fudenberg et al., 2016; Fudenberg et al., 2017; Sanborn et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Fudenberg et al., 2016; Fudenberg et al., 2017; Sanborn et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "7c62fc14-7575-41bd-99b6-8843023421e6",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C45",
+      "claim": "Loop extrusion models have been limited by a dearth of quantitative biological data to constrain the modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these models have been limited by a dearth of quantitative biological data to constrain the modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on assessment of the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "0f58f705-efd5-42f0-9332-2ff6a17d7ac4",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C46",
+      "claim": "The number of CTCF and cohesin molecules, the molecular mechanism of loop extrusion and the stoichiometry of cohesin during this process remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the number of CTCF and cohesin molecules, the molecular mechanism of loop extrusion and the stoichiometry of cohesin during this process remain unknown, further limiting our ability to test various models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on assessment of the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "9debc255-1564-4ef6-9c60-f1a0d8c1e5e4",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C47",
+      "claim": "JF646-labeling is near-quantitative in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that JF646-labeling is near-quantitative in live cells (Yoon et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Yoon et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "380cb2c3-1e44-4e55-aa7a-b426cab6b9e9",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C48",
+      "claim": "A titration experiment indicated \u226590% labeling efficiency for JF646.",
+      "claim_type": "EXPLICIT",
+      "source": "moreover, a titration experiment indicated \u226590% labeling efficiency (Figure 1\u2014figure supplement 1A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "ec866b3c-21cf-4dae-931f-6c2b46d44852",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C49",
+      "claim": "Rad21 appears to be the least abundant cohesin subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification by 'in-gel' fluorescence revealed that, on average, mESCs contain ~218,000 \u00b1 24,000 CTCF protein molecules (mean \u00b1 std) as well as ~86,900 \u00b1 35,600 Rad21 proteins and thus presumably cohesin complexes (Figure 1B; Rad21 appears to be the least abundant cohesin subunit, see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the measured abundances of cohesin subunits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "41eecf92-7bb0-433c-a976-96b230274983",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C50",
+      "claim": "Essentially all endogenously tagged mRad21-Halo protein is incorporated into cohesin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, using single-molecule tracking we found that essentially all endogenously tagged mRad21-Halo protein is incorporated into cohesin complexes (Hansen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study (Hansen et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "4a27b771-9725-4c35-a81b-969d71bdddb2",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C51",
+      "claim": "The bacterial SMC complex, MukBEF, forms a dimer or 'dimers of dimers'.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, the related bacterial SMC complex, MukBEF, also forms a dimer or and even 'dimers of dimers' (Arciszewska et al., 2019; Badrinarayanan et al., 2012; Fennell-Fezzie et al., 2005; Matoba et al., 2005; Woo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Arciszewska et al., 2019; Badrinarayanan et al., 2012; Fennell-Fezzie et al., 2005; Matoba et al., 2005; Woo et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "0819c66e-5b80-4656-aca7-04d2a7f67cec",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C52",
+      "claim": "The B. subtilis SMC condensin complex has been proposed to extrude DNA loops at a speed of ~50 kb/min as a dimeric handcuff complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the B. subtilis SMC condensin complex has been proposed to extrude DNA loops at a speed of ~50 kb/min as a dimeric handcuff complex (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Wang et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "7040da63-f0c7-4862-85df-cd3027691698",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C53",
+      "claim": "In budding yeast, cohesin exhibits inter-allelic complementation consistent with a dimeric or higher order complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, cohesin exhibits inter-allelic complementation (Eng et al., 2015) consistent with a dimeric or higher order complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Eng et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "bbed062a-dfa7-462a-b104-8189f806d75d",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C54",
+      "claim": "Previous self-CoIP experiments with differentially tagged budding yeast cohesin subunits failed to detect cohesin dimers or oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous self-CoIP experiments with differentially tagged budding yeast cohesin subunits failed to detect cohesin dimers or oligomers (Haering et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Haering et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "8919873e-48f6-462f-90d6-1710424291ed",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C55",
+      "claim": "Single-step photobleaching strongly indicates that budding yeast condensin can extrude loops as a single ring complex in a one-sided, asymmetric fashion in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, single-step photobleaching strongly indicates that budding yeast condensin can extrude loops as a single ring complex in a one-sided, asymmetric fashion in vitro (Ganji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Ganji et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "dd3e81ce-8376-496c-9413-f3ccce774c1a",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C56",
+      "claim": "Budding yeast condensin can exist as both monomers, dimers, and oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, other studies have shown that budding yeast condensin can exist as both monomers, dimers, and oligomers and that multimeric budding yeast condensin is more active in a single-molecule magnetic tweezers-based DNA-compaction assay (Keenholtz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Keenholtz et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "e065fea6-ad9d-4ce7-883b-2314db94839f",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C57",
+      "claim": "Multimeric budding yeast condensin is more active in a single-molecule magnetic tweezers-based DNA-compaction assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, other studies have shown that budding yeast condensin can exist as both monomers, dimers, and oligomers and that multimeric budding yeast condensin is more active in a single-molecule magnetic tweezers-based DNA-compaction assay (Keenholtz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Keenholtz et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "05473d71-8792-492c-88df-25a32c6126b2",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C58",
+      "claim": "Computer simulations suggest that only effectively two-sided extrusion can achieve the ~1000 fold condensin-mediated compaction observed for mammalian mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent computer simulations suggest that only effectively two-sided extrusion (either two-sided extrusion, or one-sided extrusion with directional switching) can achieve the ~1000 fold condensin-mediated compaction observed for mammalian mitotic chromosomes (Banigan and Mirny, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Banigan and Mirny, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "53e3a5bb-43e4-484f-a730-f1d05776a94d",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C59",
+      "claim": "Mammalian cohesin contains either SA1 or SA2, but not both.",
+      "claim_type": "EXPLICIT",
+      "source": "Since mammalian cohesin contains either SA1 or SA2, but not both (Sumara et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Sumara et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "efd67ed5-ebdf-466c-9821-6d52b1a615ce",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C60",
+      "claim": "SA1- and SA2-cohesin appear to mediate at least partially different functions.",
+      "claim_type": "EXPLICIT",
+      "source": "and since SA1- and SA2-cohesin appear to mediate at least partially different functions (Kojic et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to another study (Kojic et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "1056d896-a609-4881-9901-921df0ea4f30",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C61",
+      "claim": "Cohesin oligomers may be arising from cohesin clusters, which were previously observed with super-resolution microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "These oligomers may also be arising from cohesin clusters, which we previously observed with super-resolution microscopy (Hansen et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation and citation to a previous study (Hansen et al., 2017).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "40eb374c-dca8-4a7a-9668-289bac555806",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C62",
+      "claim": "Folding of mammalian genomes into structures known as Topologically Associating Domains (TADs) is thought to help regulate gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Folding of mammalian genomes into structures known as Topologically Associating Domains (TADs) is thought to help regulate gene expression while aberrant misfolding has been associated with disease (Dekker and Mirny, 2016; Fudenberg and Pollard, 2019; Hansen et al., 2018a; Hnisz et al., 2017; Lupi\u00e1\u00f1ez et al., 2015; Symmons et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Dekker and Mirny, 2016; Fudenberg and Pollard, 2019; Hansen et al., 2018a; Hnisz et al., 2017; Lupi\u00e1\u00f1ez et al., 2015; Symmons et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "6fe2019b-254a-4de2-81ac-cd0d258c31ee",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C63",
+      "claim": "Aberrant misfolding of TADs has been associated with disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Folding of mammalian genomes into structures known as Topologically Associating Domains (TADs) is thought to help regulate gene expression while aberrant misfolding has been associated with disease (Dekker and Mirny, 2016; Fudenberg and Pollard, 2019; Hansen et al., 2018a; Hnisz et al., 2017; Lupi\u00e1\u00f1ez et al., 2015; Symmons et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Dekker and Mirny, 2016; Fudenberg and Pollard, 2019; Hansen et al., 2018a; Hnisz et al., 2017; Lupi\u00e1\u00f1ez et al., 2015; Symmons et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "99c1be58-0b99-41f2-baa5-24bb3bcadac0",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C64",
+      "claim": "The HaloTag is a popular and versatile protein-fusion platform that has found applications in a broad range of experimental systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The HaloTag (Los et al., 2008) is a popular and versatile protein-fusion platform that has found applications in a broad range of experimental systems (England et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies (Los et al., 2008; England et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "2491343b-d351-47de-acbc-19341d5e8382",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C65",
+      "claim": "Endogenous Halo-tagging of proteins has become the gold standard.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with the development of Cas9-mediated genome-editing (Ran et al., 2013), endogenous Halo-tagging of proteins has thus become the gold standard (Chong et al., 2018; Hansen et al., 2017; Komatsubara et al., 2019; Rhodes et al., 2017a; Rhodes et al., 2017b; Stevens et al., 2017; Teves et al., 2016; Teves et al., 2018; Youmans et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Ran et al., 2013; Chong et al., 2018; Hansen et al., 2017; Komatsubara et al., 2019; Rhodes et al., 2017a; Rhodes et al., 2017b; Stevens et al., 2017; Teves et al., 2016; Teves et al., 2018; Youmans et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "85901edf-9978-469a-aa8a-9302a1e2a5df",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "claim_id": "C66",
+      "claim": "Endogenous tagging avoids the limitations and potential artifacts associated with protein overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "because it avoids the now well-established limitations and potential artifacts associated with protein overexpression (Hansen et al., 2017; Shao et al., 2018; Teves et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Hansen et al., 2017; Shao et al., 2018; Teves et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "74377155-d6fb-4934-a7ae-b388f212ab69",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors quantified absolute protein abundances using three independent methods: 'in-gel' fluorescence, FCS-calibrated imaging, and flow cytometry (FCM). For CTCF in mESCs, they report ~218,000 \u00b1 24,000 molecules/cell; for CTCF in U2OS cells, ~109,800 molecules/cell (cross-validated average); and for Rad21 in mESCs, ~109,400 molecules/cell (with higher uncertainty).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are well-supported by convergent evidence from multiple orthogonal quantification methods (C1-C3, C7, C9-C12). The 'in-gel' fluorescence and FCS-calibrated imaging methods yielded consistent CTCF estimates in U2OS cells within technical error (C9), providing strong cross-validation. The Rad21 measurements show greater variability between methods (C11-C12), which the authors acknowledge, but the estimates remain within error bounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "55195b05-ac3c-40ac-895a-ad8bb5bd57c1",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors calculated that an average CTCF binding site in mESCs is occupied ~50% of the time by CTCF, based on measured protein abundance (~217,200 molecules/cell), cell cycle distribution (~3 genome copies per average cell), fraction of CTCF bound to DNA (~49%), and total CTCF binding sites (~71,000 per haploid genome).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The calculation is logically sound and based on well-supported measurements (C13-C18). The cell cycle distribution data (C13) is consistent with prior literature (C14), and the binding site occupancy calculation (C18) appropriately integrates multiple measured parameters. However, the authors appropriately note that this represents an average across sites with likely heterogeneous occupancies, and the interpretation in the context of loop extrusion (C19) involves some speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "f78d61ef-f8eb-439c-a254-02e377046812",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors estimated the upper bound density of putatively loop-extruding cohesin complexes as ~5.3 per Mb (if monomeric) or ~2.7 per Mb (if dimeric), corresponding to genomic distances of ~186-372 kb between extruding cohesins in mESCs. This estimate matches computational predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The calculation is based on measured Rad21 abundance and previously determined chromatin-bound fraction (C20-C21). The authors appropriately acknowledge this as an upper bound and note important caveats: the chromatin-bound fraction may not all be engaged in loop extrusion, and the density may not be uniform across the genome. The agreement with computational estimates (C22) provides external validation, though the uncertainty in Rad21 measurements limits precision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "b350d5a8-399d-4be8-9e17-f130b23891c8",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors provide biochemical evidence that mammalian cohesin can exist as dimers or oligomers. Co-immunoprecipitation experiments in two independent endogenously-tagged mESC clones (C85 and B4) showed protein-mediated, benzonase-resistant Rad21 self-interaction. They estimate at least ~8% of cohesin exists in dimeric state during pull-down, likely an underestimate of the in vivo ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The CoIP data from two independent clones (C27, C30-C31) provide strong evidence for cohesin self-interaction. The benzonase resistance experiments (C28, C32) convincingly demonstrate the interaction is protein-mediated rather than DNA-dependent. The quantitative estimate (C33) is appropriately conservative and the authors acknowledge it likely underestimates the true in vivo ratio due to experimental disruption (C34). However, the data cannot definitively distinguish between dimers, oligomers, or alternative architectures (C35), which the authors appropriately acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "8801d9f0-24bc-42c2-bd0f-3ff2e005f234",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors developed and validated a simple FCM-based method for determining absolute protein abundance of any Halo-tagged protein using U2OS C32 Halo-CTCF as a standard. They demonstrated this by quantifying Halo-Sox2 (~460,517 \u00b1 25,606 molecules/cell) and Halo-TBP (~99,111 \u00b1 29,125 molecules/cell) in mESCs, with noted limitations for very low (<10,000) or very high (>10-20 million) expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The method is well-validated through cross-validation with 'in-gel' fluorescence and FCS-calibrated imaging for CTCF (C9-C10). The Sox2 and TBP quantifications (C36-C37) demonstrate practical application. The authors appropriately identify method limitations at extreme expression levels (C38-C39), though these are based on reasonable inferences rather than direct experimental validation. The method's simplicity and use of a validated standard make it a valuable tool.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "849002de-d566-4a43-a2d4-8389a5b32762",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors validated that JF646 labeling of Halo-tagged proteins is near-quantitative (\u226590% efficiency) in live cells through titration experiments and citation of prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claim is supported by both experimental titration data (C48, Figure 1\u2014figure supplement 1A-C) and citation to prior validation work (C47). This is an important control for the quantification methods, as incomplete labeling would lead to systematic undercounting. The \u226590% efficiency suggests minimal bias, though some undercounting remains possible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "c044e18c-1fe4-45cd-a7a6-1644d3bd6eed",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors review prior literature establishing CTCF and cohesin as causal regulators of TAD formation, the success of loop extrusion models in reproducing genomic contact maps, and the current limitations due to lack of quantitative biological data to constrain modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize well-established findings from the cited literature (C40-C44) and appropriately identify gaps in current knowledge (C45-C46). This contextualizes the importance of the quantitative measurements reported in the current study. The claims are appropriately supported by multiple citations to relevant prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors review the controversial literature on cohesin stoichiometry, noting conflicting evidence from different organisms and experimental systems regarding whether cohesin functions as monomers, dimers, or oligomers, and discuss potential functional differences between SA1- and SA2-containing cohesin complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately represent the state of the literature on cohesin stoichiometry, appropriately citing supporting studies for each assertion (C23-C26, C51-C60). The review highlights important controversies and methodological considerations (e.g., overexpression artifacts in C26) that motivated the current study's use of endogenous tagging. The speculation about cohesin clusters (C61) is appropriately tentative and cites prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "c028d794-adcd-4020-8eaa-3c2dec9bdc90",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors observe that CTCF abundance in U2OS cells (~105,000) is approximately half that in mESCs (~218,000), consistent with independent measurements in HeLa cells, and speculate this may reflect cell-type-specific regulation of chromatin looping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The quantitative comparison between cell types (C4) is well-supported by the measurements. The consistency with HeLa cell data (C5) provides some external validation. However, the speculation about cell-type-specific regulation (C6) is not directly tested and represents an interesting hypothesis rather than a demonstrated result. Additional experiments would be needed to establish whether CTCF abundance differences functionally regulate chromatin looping in different cell types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "b857642a-5f81-442f-9405-762c44fe2e6e",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Over 90% of cellular Halo-CTCF molecules localize to the nucleus in interphase U2OS cells, corresponding to ~106,000 nuclear molecules at ~144.3 nM concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by FCS-calibrated imaging data with 3D segmentation of nuclear and cytoplasmic compartments (C8, Figure 1\u2014figure supplement 2B,E). The nuclear localization is expected for a chromatin-binding protein and provides important context for interpreting the functional implications of total cellular abundance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "755d99c8-15b0-46ea-905e-220af1f0fa02",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors note that Rad21 appears to be the least abundant cohesin subunit and that essentially all endogenously tagged Rad21-Halo is incorporated into cohesin complexes based on prior single-molecule tracking studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claim about Rad21 being the least abundant subunit (C49) is stated as inference from Materials and methods but not fully detailed in the main text. The claim about Rad21 incorporation into complexes (C50) is supported by citation to prior work. These are important considerations for interpreting Rad21 abundance as a proxy for cohesin complex abundance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    },
+    {
+      "id": "f0c4de49-0f5e-4417-95d0-4a62e316681d",
+      "content_id": "d4dac9fc-4785-4f20-a795-53136e026976",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors provide background on TADs and their role in gene regulation and disease, and on the HaloTag system and advantages of endogenous tagging over overexpression approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These introductory claims accurately represent established knowledge in the field, appropriately supported by citations to relevant literature (C62-C66). They provide important context for understanding the significance and methodological choices of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:37:08.020943Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1428839e-239b-4de3-b4bd-dc37503b30c8",
+      "result_id": "74377155-d6fb-4934-a7ae-b388f212ab69"
+    },
+    {
+      "claim_id": "096beae3-6ad0-4d08-b5b3-5f149563bf57",
+      "result_id": "74377155-d6fb-4934-a7ae-b388f212ab69"
+    },
+    {
+      "claim_id": "eb812ab3-77d9-4482-9917-67fce3f8c461",
+      "result_id": "74377155-d6fb-4934-a7ae-b388f212ab69"
+    },
+    {
+      "claim_id": "b0282c34-324e-4a9a-bb19-953b4cc3e25b",
+      "result_id": "74377155-d6fb-4934-a7ae-b388f212ab69"
+    },
+    {
+      "claim_id": "6cdcc7fb-34af-453b-9878-52a042368cf5",
+      "result_id": "74377155-d6fb-4934-a7ae-b388f212ab69"
+    },
+    {
+      "claim_id": "f480e9fa-4aba-4a91-8050-876ba259ac2a",
+      "result_id": "74377155-d6fb-4934-a7ae-b388f212ab69"
+    },
+    {
+      "claim_id": "04206df6-fed1-4fe3-8485-485e7e8bfec0",
+      "result_id": "74377155-d6fb-4934-a7ae-b388f212ab69"
+    },
+    {
+      "claim_id": "8f85da10-17f2-40e2-82f1-d2e154fa08ad",
+      "result_id": "74377155-d6fb-4934-a7ae-b388f212ab69"
+    },
+    {
+      "claim_id": "c54d965f-5aa2-42bd-84de-847e04eb73e5",
+      "result_id": "55195b05-ac3c-40ac-895a-ad8bb5bd57c1"
+    },
+    {
+      "claim_id": "9beda265-0cfa-48d9-9159-8cbc38eaf05f",
+      "result_id": "55195b05-ac3c-40ac-895a-ad8bb5bd57c1"
+    },
+    {
+      "claim_id": "dd704592-7bb8-4f6a-bb9b-5636c2082922",
+      "result_id": "55195b05-ac3c-40ac-895a-ad8bb5bd57c1"
+    },
+    {
+      "claim_id": "cb0b026b-8ac2-4549-8617-f7e14d724c1c",
+      "result_id": "55195b05-ac3c-40ac-895a-ad8bb5bd57c1"
+    },
+    {
+      "claim_id": "a0f0788f-90ec-4cb4-9c80-526ea03a3c31",
+      "result_id": "55195b05-ac3c-40ac-895a-ad8bb5bd57c1"
+    },
+    {
+      "claim_id": "aa94823b-b07a-44e0-a33b-88294423e920",
+      "result_id": "55195b05-ac3c-40ac-895a-ad8bb5bd57c1"
+    },
+    {
+      "claim_id": "50b0597d-2fc5-46d1-9bd5-b36b9652e002",
+      "result_id": "55195b05-ac3c-40ac-895a-ad8bb5bd57c1"
+    },
+    {
+      "claim_id": "df6c95ea-c29d-41b0-b8f6-18b29adb184e",
+      "result_id": "f78d61ef-f8eb-439c-a254-02e377046812"
+    },
+    {
+      "claim_id": "10751d66-3320-4e51-be3f-4be1e8b891c6",
+      "result_id": "f78d61ef-f8eb-439c-a254-02e377046812"
+    },
+    {
+      "claim_id": "0d9bae53-fc47-436f-b77a-f15ba7c73e48",
+      "result_id": "f78d61ef-f8eb-439c-a254-02e377046812"
+    },
+    {
+      "claim_id": "a339ba14-9fee-4a11-b530-e43d820d8a76",
+      "result_id": "b350d5a8-399d-4be8-9e17-f130b23891c8"
+    },
+    {
+      "claim_id": "ba3e6fba-8134-45ca-8aeb-32e0b62bded0",
+      "result_id": "b350d5a8-399d-4be8-9e17-f130b23891c8"
+    },
+    {
+      "claim_id": "9d2ab475-ce33-4271-a811-2b96084e40f5",
+      "result_id": "b350d5a8-399d-4be8-9e17-f130b23891c8"
+    },
+    {
+      "claim_id": "f7adfc7f-1b0d-4596-b50c-1a62d48df503",
+      "result_id": "b350d5a8-399d-4be8-9e17-f130b23891c8"
+    },
+    {
+      "claim_id": "b0f2348c-9d0f-45e0-9504-4da6fc45287d",
+      "result_id": "b350d5a8-399d-4be8-9e17-f130b23891c8"
+    },
+    {
+      "claim_id": "b441cede-e2d7-4ea4-8054-fea08fe597cd",
+      "result_id": "b350d5a8-399d-4be8-9e17-f130b23891c8"
+    },
+    {
+      "claim_id": "550608c3-d318-4339-9740-563f29d60a5f",
+      "result_id": "b350d5a8-399d-4be8-9e17-f130b23891c8"
+    },
+    {
+      "claim_id": "165c9c33-1658-4c74-9fa9-5d3ab39ebef5",
+      "result_id": "b350d5a8-399d-4be8-9e17-f130b23891c8"
+    },
+    {
+      "claim_id": "dfb90c25-6d2c-4029-9bb2-4d3566824a8f",
+      "result_id": "b350d5a8-399d-4be8-9e17-f130b23891c8"
+    },
+    {
+      "claim_id": "9e8470a8-7965-4e8f-a158-8f631e830300",
+      "result_id": "8801d9f0-24bc-42c2-bd0f-3ff2e005f234"
+    },
+    {
+      "claim_id": "b6f97d85-ba54-44d3-b73a-b00598f6f5bd",
+      "result_id": "8801d9f0-24bc-42c2-bd0f-3ff2e005f234"
+    },
+    {
+      "claim_id": "4efb124d-b7bf-41b5-a8f3-c4ace71c3b71",
+      "result_id": "8801d9f0-24bc-42c2-bd0f-3ff2e005f234"
+    },
+    {
+      "claim_id": "6afb750d-700e-4a5d-b495-c564bbe24649",
+      "result_id": "8801d9f0-24bc-42c2-bd0f-3ff2e005f234"
+    },
+    {
+      "claim_id": "9debc255-1564-4ef6-9c60-f1a0d8c1e5e4",
+      "result_id": "849002de-d566-4a43-a2d4-8389a5b32762"
+    },
+    {
+      "claim_id": "380cb2c3-1e44-4e55-aa7a-b426cab6b9e9",
+      "result_id": "849002de-d566-4a43-a2d4-8389a5b32762"
+    },
+    {
+      "claim_id": "172d476e-1996-447a-8d6e-f3e6be24429e",
+      "result_id": "c044e18c-1fe4-45cd-a7a6-1644d3bd6eed"
+    },
+    {
+      "claim_id": "8a67c477-b979-473e-8296-e280bf2befad",
+      "result_id": "c044e18c-1fe4-45cd-a7a6-1644d3bd6eed"
+    },
+    {
+      "claim_id": "aeddb14b-a6cb-4e50-b027-bdd7e7e913de",
+      "result_id": "c044e18c-1fe4-45cd-a7a6-1644d3bd6eed"
+    },
+    {
+      "claim_id": "cd79b64f-9b99-46dd-8a27-b66a4fb1675e",
+      "result_id": "c044e18c-1fe4-45cd-a7a6-1644d3bd6eed"
+    },
+    {
+      "claim_id": "476f1bca-01dd-4e9e-910e-00bf4908b022",
+      "result_id": "c044e18c-1fe4-45cd-a7a6-1644d3bd6eed"
+    },
+    {
+      "claim_id": "7c62fc14-7575-41bd-99b6-8843023421e6",
+      "result_id": "c044e18c-1fe4-45cd-a7a6-1644d3bd6eed"
+    },
+    {
+      "claim_id": "0f58f705-efd5-42f0-9332-2ff6a17d7ac4",
+      "result_id": "c044e18c-1fe4-45cd-a7a6-1644d3bd6eed"
+    },
+    {
+      "claim_id": "4fe2ee7f-600d-4ec6-a345-8da4dc3d4f38",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "1741646c-9b9a-45d4-a4fb-5dac52220917",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "e9cd425f-15b6-42c9-8dac-e31d23483c09",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "59ecad7e-bdfc-4da0-a0ef-b77493c957d0",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "4a27b771-9725-4c35-a81b-969d71bdddb2",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "0819c66e-5b80-4656-aca7-04d2a7f67cec",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "7040da63-f0c7-4862-85df-cd3027691698",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "bbed062a-dfa7-462a-b104-8189f806d75d",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "8919873e-48f6-462f-90d6-1710424291ed",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "dd3e81ce-8376-496c-9413-f3ccce774c1a",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "e065fea6-ad9d-4ce7-883b-2314db94839f",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "05473d71-8792-492c-88df-25a32c6126b2",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "53e3a5bb-43e4-484f-a730-f1d05776a94d",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "efd67ed5-ebdf-466c-9821-6d52b1a615ce",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "1056d896-a609-4881-9901-921df0ea4f30",
+      "result_id": "1ae8806a-6ddb-470e-b979-55e86c9c85b0"
+    },
+    {
+      "claim_id": "274c3300-4a47-412c-92bd-9b73d60e7f8f",
+      "result_id": "c028d794-adcd-4020-8eaa-3c2dec9bdc90"
+    },
+    {
+      "claim_id": "3a3e103a-93df-408d-94ba-fc100b06368f",
+      "result_id": "c028d794-adcd-4020-8eaa-3c2dec9bdc90"
+    },
+    {
+      "claim_id": "dae1e708-dada-41ab-ba06-c2bd2a6e0169",
+      "result_id": "c028d794-adcd-4020-8eaa-3c2dec9bdc90"
+    },
+    {
+      "claim_id": "3b1c9378-e69e-42d7-b1e9-dc9e4973cabd",
+      "result_id": "b857642a-5f81-442f-9405-762c44fe2e6e"
+    },
+    {
+      "claim_id": "ec866b3c-21cf-4dae-931f-6c2b46d44852",
+      "result_id": "755d99c8-15b0-46ea-905e-220af1f0fa02"
+    },
+    {
+      "claim_id": "41eecf92-7bb0-433c-a976-96b230274983",
+      "result_id": "755d99c8-15b0-46ea-905e-220af1f0fa02"
+    },
+    {
+      "claim_id": "40eb374c-dca8-4a7a-9668-289bac555806",
+      "result_id": "f0c4de49-0f5e-4417-95d0-4a62e316681d"
+    },
+    {
+      "claim_id": "6fe2019b-254a-4de2-81ac-cd0d258c31ee",
+      "result_id": "f0c4de49-0f5e-4417-95d0-4a62e316681d"
+    },
+    {
+      "claim_id": "99c1be58-0b99-41f2-baa5-24bb3bcadac0",
+      "result_id": "f0c4de49-0f5e-4417-95d0-4a62e316681d"
+    },
+    {
+      "claim_id": "2491343b-d351-47de-acbc-19341d5e8382",
+      "result_id": "f0c4de49-0f5e-4417-95d0-4a62e316681d"
+    },
+    {
+      "claim_id": "85901edf-9978-469a-aa8a-9302a1e2a5df",
+      "result_id": "f0c4de49-0f5e-4417-95d0-4a62e316681d"
+    }
+  ],
+  "comparisons": []
+}

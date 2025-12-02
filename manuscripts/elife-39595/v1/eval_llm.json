@@ -1,0 +1,386 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The study mapped chromatin accessibility QTLs (caQTLs) in 1000 lymphoblastoid cell lines from 10 diverse populations (4 European, 4 African, 1 African-American, 1 Han Chinese), pooling 66-112 individuals per population and performing ATAC-seq with two biological replicates, generating ~808 million informative autosomal reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C33 provide consistent and detailed information about the study design, sample composition, and data generation. The experimental design is clearly described with specific numbers for populations, individuals, replicates, and sequencing reads, all of which are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The pooled ATAC-seq approach successfully identified caQTLs with high correlation between pre- and post-ATAC allele frequencies (r=0.92), mapping 13,657-26,182 independent caQTLs per population at p<5\u00d710\u207b\u2074 (corresponding to ~1% IDR), representing 1.5-3.0% of testable SNPs, with 126,773 total caQTLs significant in at least one population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe the caQTL mapping results with specific quantitative metrics. The high correlation (r=0.92) supports the validity of the pooled approach, and the IDR analysis (C36) provides statistical validation. The numbers are internally consistent and supported by referenced figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The caQTLs showed strong validation against previously mapped dsQTLs (33-76 fold enrichment, r=0.85 effect size correlation, 96.7-98.1% directionality agreement) and bQTLs (97.3-98.9% directionality agreement), suggesting a low false positive rate consistent with the 1% IDR estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide multiple independent lines of validation evidence. The enrichment analysis (C39), quantitative correlation (C40), and directionality agreements (C41-C42) all converge to support the accuracy of the caQTL calls. The interpretation (C43) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The pooled approach demonstrated superior efficiency compared to RASQUAL, mapping 2.8-fold more caQTLs with 15-fold fewer reads and 12-fold fewer libraries, resulting in ~40-fold improvement in cost per caQTL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide a direct comparison with a published method (RASQUAL). The comparison is made at matched significance cutoffs as described in the supplemental note. The efficiency gains are substantial and internally consistent (2.8 \u00d7 15 \u00d7 12 \u2248 40-fold improvement).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "caQTL sharing patterns reflected known phylogenetic relationships, with higher sharing within continents (59.9% within Africans, 59.8% within Europeans) than between continents (48.4% African-European), and African-American caQTLs showing intermediate sharing patterns consistent with admixed ancestry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe caQTL sharing patterns that are biologically plausible and consistent with population genetics. The quantitative sharing percentages follow expected patterns based on genetic relatedness. The interpretation (C52) appropriately acknowledges uncertainty about mechanisms while noting consistency with prior observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Trans-ethnic fine-mapping improved causal variant resolution, with increasing enrichment for known causal variants as more populations showed significance. Using Fisher's combined p-value across populations (p<5\u00d710\u207b\u2076), 45,243 shared caQTLs were identified, with 99.8% significant in multiple populations and 98.6% showing allelic concordance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 describe the fine-mapping approach and results. The enrichment analysis (C53) validates the approach using experimentally verified causal variants. The statistical method (Fisher's combined p-value) is appropriate, and the high concordance rates (C56-C57) support the reliability of the shared caQTLs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Shared caQTLs showed enrichment near active enhancers and TSSs (54% in 3.1% of genome), but after controlling for read density, exhibited 8.7-fold depletion near TSSs\u2014greater than the depletion of nonsynonymous mutations in exons\u2014suggesting these caQTLs are ~81% more likely to be deleterious than nonsynonymous mutations. Consistent with purifying selection, caQTLs near active TSSs had lower minor allele frequencies (median MAF=0.17 vs 0.21 elsewhere, p=1.5\u00d710\u207b\u00b2\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 describe genomic location patterns and their evolutionary interpretation. The depletion analysis controls for read density (C59-C60), which is methodologically sound. The comparison with nonsynonymous mutations (C62-C63) provides context, though the calculation details are in a supplemental note. The MAF analysis (C64) provides independent support for the selection hypothesis with strong statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Motif analysis revealed striking asymmetry: 80 TF motifs were enriched in open alleles (FDR\u22640.1%) but none in closed alleles, supporting TF binding disruption as a major caQTL mechanism. For CTCF, caQTL density strongly correlated with motif position information content (r=0.86), indicating enrichment at functionally critical positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe motif enrichment patterns. The asymmetry (C65-C66) is striking and biologically meaningful. The interpretation (C67) is well-supported by the data. The CTCF analysis (C68) provides additional validation with strong correlation between caQTL density and motif information content, which is expected if caQTLs are enriched at functionally important positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Shared caQTLs caused small but significant differences in DNA shape parameters compared to read-matched non-caQTL variants, suggesting DNA shape may contribute to chromatin accessibility variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe DNA shape analysis with appropriate controls (read-matched variants). The effects are described as small but significant, and the interpretation (C70) is appropriately cautious ('may contribute'). The analysis is referenced to a supplemental figure with Bonferroni-corrected p-values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "caQTLs affecting chromatin accessibility also influenced long-range chromosomal interactions, with 2.5-fold enrichment (p<10\u207b\u00b3\u2076) for more accessible alleles having more interactions >20kb away (2.7-fold for >100kb). This enrichment was not observed for inter-chromosomal interactions, establishing a role for chromatin accessibility in polymorphic long-range interactions similar in magnitude to CTCF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 describe the relationship between caQTLs and long-range interactions using Hi-C data. The enrichment is statistically significant with appropriate controls (inter-chromosomal interactions, C73). The magnitude is comparable to CTCF bQTLs, providing biological context. The interpretation (C74) is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "bQTLs affecting both TF binding and chromatin accessibility showed strong effects on long-range interactions (p<0.008 for all 6 TFs), while bQTLs affecting only TF binding showed no significant effect (p>0.08 for all 6 TFs), suggesting chromatin accessibility is a key intermediary between TF binding and chromosomal interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe a controlled comparison that isolates the effect of chromatin accessibility. The statistical tests are appropriate and consistent across multiple TFs. The interpretation (C78) is well-supported by the data, though the authors appropriately note additional evidence in a supplemental note. This represents a novel mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "caQTLs were strongly enriched for local eQTLs (p<10\u207b\u00b3\u2070\u2070), with enrichment maintained even when restricting to caQTLs without effects on long-range interactions, suggesting changes in interactions are not necessary for local transcriptional effects. However, enrichment for distal eQTLs (p<10\u207b\u2077\u2070) was entirely lost when restricting to caQTLs without interaction effects (p=0.20), suggesting alterations in long-range interactions are necessary for caQTLs to affect distal gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe a well-designed analysis that controls for effects on long-range interactions. The contrast between local and distal eQTL enrichments is striking and biologically meaningful. The statistical significance is very strong for the positive findings, and the lack of enrichment for distal eQTLs (p=0.20) is based on adequate sample size (1680 caQTLs). The mechanistic interpretation (C82-C83) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "For autoimmune diseases relevant to LCLs, shared caQTLs were enriched for likely causal variants, with mean causal probability 2.4-fold higher for Crohn's disease (p=0.002) and 2.6-fold higher for ankylosing spondylitis (p=0.001) compared to non-caQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe enrichment of shared caQTLs among variants with high causal probability from GWAS fine-mapping. The enrichments are statistically significant and biologically relevant for diseases related to the cell type studied (LCLs). This validates the fine-mapping approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "rs4409785, associated with rheumatoid arthritis, multiple sclerosis, and vitiligo, was predicted as causal for vitiligo (85% probability). This SNP is bound by CTCF, disrupts a CTCF motif, and is a caQTL in two European populations (FIN and TSI, p<3\u00d710\u207b\u2076), providing evidence of an effect on accessibility likely mediated by CTCF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 describe a specific example where caQTL data supports a predicted causal variant. The multiple lines of evidence (GWAS association, causal probability, CTCF binding, motif disruption, caQTL status) converge to support the interpretation. The limitation to European populations is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "For atopic dermatitis, trans-ethnic fine-mapping resolved conflicting evidence: rs479844 (90% causal probability in Europeans, but not replicated in some populations) is in strong LD with rs10791824 in Europeans (r\u00b2=0.92) but not Africans (r\u00b2=0.21). rs10791824 is a strong caQTL in all 6 non-European populations (p<10\u207b\u2074\u00b2) and 2/4 European populations, is an eQTL for OVOL1 (a TF involved in skin development), and affects transcription in reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 describe how trans-ethnic fine-mapping resolved a case with conflicting evidence. The LD patterns explain the population-specific associations, and the caQTL data supports rs10791824 as the likely causal variant. Multiple lines of functional evidence (eQTL, reporter assay, biological relevance of target gene) support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In a large LD block of 62 variants associated with multiple sclerosis (all <5% causal probability), rs485789 was identified as a caQTL shared across 8/10 populations (p<2\u00d710\u207b\u2075), was predicted as causal by sequence-based methods, and is an eQTL for IL12A (a cytokine implicated in autoimmune diseases), suggesting it is a likely causal variant acting on IL12A via chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 describe fine-mapping in a challenging case with many variants in LD. The convergence of evidence (caQTL status across populations, computational prediction, eQTL for biologically relevant gene) supports the conclusion. The mechanistic interpretation (C104) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Broadly, 5,598 caQTLs overlapped with GWAS associations (p<5\u00d710\u207b\u2078), with only ~2.2 caQTLs per GWAS locus providing a smaller credible set than typical GWAS fine-mapping. Among these, 115 caQTLs were shared across all 10 populations, suggesting many are likely causal for disease risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 summarize the GWAS overlap results. The numbers are substantial and the reduction in credible set size (from dozens to ~2.2) represents a significant improvement in resolution. The 115 variants shared across all populations represent the highest-confidence candidates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The regulatory effects of caQTLs are typically shared across most tissues (median 25/44 tissues for caQTL-eQTL overlaps vs 19/44 for eQTLs overall), suggesting caQTL effects on chromatin accessibility are broadly shared, which explains why caQTLs measured in LCLs can contribute to risk for diseases unrelated to LCLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 describe tissue-sharing analysis using GTEx data. The analysis is referenced to a supplemental note and figure. The finding that caQTLs show greater tissue-sharing than eQTLs overall is biologically plausible and supports the interpretation that LCL caQTLs are relevant to other tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study proposes a mechanistic model where TF binding affects long-range chromosomal interactions via chromatin accessibility, and chromatin accessibility affects distal gene transcription via long-range interactions, providing a molecular mechanism for distal eQTLs through variant-induced changes in enhancer-promoter interactions. The authors claim this represents the first evidence that variation in chromosomal interactions underlies long-range genetic effects on transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 synthesize the mechanistic findings into a coherent model. The model is supported by the analyses of bQTLs/caQTLs and long-range interactions (C75-C78) and the eQTL enrichment patterns (C79-C83). The novelty claim (C116) is appropriately qualified ('to our knowledge') and represents a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The study acknowledges several limitations: many caQTL variants remain unmapped (cell type-specific, trans-acting, rare variants, small effects); shared caQTLs are candidate causal variants requiring experimental validation; the pooled approach only maps caQTLs covered by ATAC-seq reads (though it genotypes essentially all common variants in open chromatin); and trans-ethnic fine-mapping requires variants present at appreciable frequency affecting the same trait across populations. Despite limitations, the approach yielded >10-fold more caQTLs than previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 appropriately acknowledge limitations of the study. These are reasonable and honest assessments. The comparison with previous studies (C121) provides context for the achievements despite limitations. The limitations do not invalidate the major findings but appropriately qualify their scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The introduction establishes the context and rationale: most GWAS hits are in cis-regulatory regions but causal variants remain unknown due to LD; pinpointing causal variants is essential for disease prediction and mechanistic understanding; trans-ethnic fine-mapping can improve resolution by leveraging different LD patterns across populations; molecular QTLs (eQTLs, splicing QTLs, bQTLs, caQTLs) are enriched for GWAS variants; but nearly all molecular QTL studies have been limited to single populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 establish background knowledge and rationale for the study. These are well-supported by citations to prior work and represent accurate characterizations of the field. The claims provide appropriate context for understanding the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The pooled QTL mapping approach minimizes experimental variability and reduces cost/effort by >25-fold compared to unpooled approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe the efficiency of the pooled approach based on prior work (Tehranchi et al., 2016). This is supported by citation and is validated in the current study by the comparison with RASQUAL (C44-C45) showing ~40-fold improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C123"
+    ],
+    "result": "The discussion synthesizes the complementary value of molecular QTL mapping (providing mechanistic information and allelic direction) and trans-ethnic fine-mapping (enabling causal variant identification). With >10\u2075 QTLs mappable for molecular traits, this provides opportunities for fine-mapping regulatory variants genome-wide. The authors propose that combining GWAS with pooled QTLs in diverse populations and cell types will be an efficient strategy for identifying causal variants and mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 accurately summarize the complementary strengths of the approaches demonstrated in the study. The forward-looking statement (C123) is appropriately speculative but well-grounded in the demonstrated results. The scale of mappable QTLs (>10\u2075) is supported by the current study's results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The authors hypothesize that mutations affecting accessibility near TSSs are more likely to be deleterious and selected against, explaining the observed 8.7-fold depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is explicitly labeled as a hypothesis. The hypothesis is reasonable given the observed depletion (C60) and is supported by additional evidence of lower MAF near TSSs (C64) and comparison with nonsynonymous mutations (C62-C63). While speculative, it is appropriately qualified and well-supported.",
+    "result_type": "MINOR"
+  }
+]

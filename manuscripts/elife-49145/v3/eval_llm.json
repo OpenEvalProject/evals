@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Apical tuft dendrites of layer 5 pyramidal neurons exhibit highly correlated, widespread calcium signals with minimal branch-specific activity (<3% of transients), which is dominated by small amplitude events and remains unchanged by visual stimulation or locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 demonstrate high correlation (r=0.92) across tuft branches regardless of branching order with appropriate statistical testing. Claims C5-C7 quantify branch-specific events as <3% of total transients, dominated by smallest amplitudes, with no significant modulation by visual or locomotor conditions (Three-way ANOVA). The convergent evidence from correlation analysis, event quantification, and amplitude distribution strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Calcium transient amplitudes are highly correlated throughout all compartments of layer 5 neurons from soma to distal tuft, with Pearson correlation values ranging from 0.74 (soma-trunk) to 0.92 (trunk-tuft).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 provide systematic correlation measurements across four compartment pairs using semi-simultaneous two-plane imaging with appropriate sample sizes (n=5-11 pairs). The correlation values are consistently high (0.74-0.92) with statistical significance demonstrated via paired t-tests. The methodology and statistical rigor support the conclusion of high somato-dendritic correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The frequency of calcium transients decreases in a distance-dependent manner from soma to apical tuft, with an estimated 40% reduction from soma to distal tuft, confirmed by independent measurements showing tuft frequency at 62% of somatic frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 provide systematic measurements of frequency decreases across compartment pairs (14%, 8%, 24%, 22%) with appropriate statistical testing (paired t-test, p=1.1e-6, n=31 pairs). Claim C17 estimates cumulative 40% decrease, and C18 independently confirms 62% retention (38% loss) using non-simultaneous imaging (n=13 neurons). The convergent evidence from two independent approaches strongly supports distance-dependent attenuation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C91",
+      "C92"
+    ],
+    "result": "Somato-dendritic coupling is asymmetric: while ~40% of somatic calcium transients attenuate before reaching the apical tuft (predominantly smaller amplitude events), only 1.4% of apical tuft events are not associated with somatic events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 demonstrate amplitude-dependent attenuation from proximal to distal compartments with visual evidence (Figure 3C, Videos 1-2). Claims C91-C92 quantify the asymmetry: 40% soma-to-tuft attenuation versus 1.4% tuft-specific events. The convergent quantitative and qualitative evidence, supported by multiple analytical approaches, strongly supports asymmetric coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Ex vivo calibration reveals that GCaMP6s detects somatic signals at \u22655 Hz firing while GCaMP6f requires \u226525 Hz; distal dendritic signals require >50 Hz for both indicators. GCaMP6f underestimates soma-to-dendrite attenuation compared to GCaMP6s due to reduced somatic sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 provide systematic ex vivo characterization with appropriate controls (n=9-10 neurons) showing frequency-dependent detection thresholds and critical frequency for dendritic signals (50-100 Hz). Claims C27-C29 demonstrate GCaMP6f's reduced sensitivity and resulting bias in attenuation measurements. The ex vivo validation with electrophysiological ground truth strongly supports these methodological findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C58",
+      "C59",
+      "C64"
+    ],
+    "result": "Low-frequency back-propagating action potentials (<50-100 Hz) likely underlie distance-dependent signal loss, while high somato-dendritic coupling results from either high-frequency somatic bursts or strong apical tuft depolarization capable of driving somatic spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 and C58-C59 provide mechanistic interpretations based on ex vivo data showing frequency-dependent signal propagation, supported by citations to established literature on dendritic electrogenesis. Claim C64 synthesizes these findings. While these are inferences from ex vivo data applied to in vivo observations, they are well-supported by the experimental evidence and consistent with established biophysical principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Visual stimulation and locomotion significantly increase mean calcium activity in layer 5 neurons but do not alter the relationship between calcium transient amplitude and somato-dendritic coupling or the proportion of compartment-specific events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 demonstrate significant increases in mean \u0394F/F0 with visual stimulation (p=0.005) and locomotion (p=0.003) using appropriate repeated measures ANOVA (n=14 neurons). Claims C34-C37 show no significant effects on coupling relationships using Three-way ANOVA with multiple compartment pairs (n=19 neurons, 31 pairs). The statistical rigor and sample sizes support the conclusion that behavioral/sensory states modulate activity levels but not coupling mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Orientation selectivity does not affect the high correlation of calcium transients in layer 5 neurons; locomotion increases responses equally in soma and tuft without changing orientation selectivity or preferred orientation, and correlation remains high regardless of grating orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 systematically examine orientation selectivity effects using appropriate statistical tests (paired t-test, repeated measures ANOVA) with adequate sample sizes (n=15 neurons, 68 branches). The findings show no significant effects of orientation selectivity on correlation (Figure 6A-D), no compartment differences in locomotion effects (p=0.38), and unchanged OSI across conditions (p=0.49, 0.42, 0.45). The comprehensive analysis supports the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C89",
+      "C90"
+    ],
+    "result": "Ex vivo experiments show that evoked apical tuft calcium events are strongly coupled to somatic spiking, with GCaMP6s reliably detecting coupling when somatic output exceeds 2 action potentials; single action potentials evoke tuft signals in 60% of trials but remain below somatic detection threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide systematic ex vivo characterization across stimulation parameters showing action potential number-dependent coupling. Claims C89-C90 synthesize these findings with appropriate detection thresholds. The ex vivo validation with simultaneous electrophysiology and imaging provides strong mechanistic support for the in vivo observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "This study finds stronger asymmetry in somato-dendritic coupling (98.6% dendritic events paired with somatic, 60% somatic paired with dendritic) compared to Beaulieu-Laroche et al. 2019 (83.9% and 73.4%), likely due to methodological differences including sparser labeling and use of GCaMP6s versus GCaMP6f.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 accurately cites prior work, C62 reports this study's findings with appropriate data, and C63 provides a reasonable mechanistic explanation supported by the ex vivo GCaMP6s vs GCaMP6f comparison (Figure 4G-H). The interpretation is logical and supported by the comparative experimental evidence, though alternative explanations are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "On average, 60% of events detected as branch-specific in apical tuft dendrites were also found in the trunk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by analysis of calcium transients detected in both tuft branches and trunk compartments (Figure 2\u2014figure supplement 2). This finding provides important context for interpreting branch-specific events, suggesting many are actually trunk-level events below detection threshold in one tuft branch.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The neurons included in this study mainly displayed thick-tufted morphology characteristic of pyramidal tract neurons, with somata at various depths within layer 5 (median 528 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by morphological analysis of imaged neurons with depth measurements (Figure 3\u2014figure supplement 1). This characterization is important for interpreting results in the context of layer 5 neuron subtypes, though the authors acknowledge potential sampling bias toward thick-tufted neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Lowering the detection threshold by 30% reduced branch-specific events from 3.8% to 0.8%, suggesting most branch-specific events were near detection threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 demonstrate robustness testing of the detection method (Figure 1\u2014figure supplement 2B). The threshold sensitivity analysis supports the interpretation that rare branch-specific events are predominantly near-threshold signals, strengthening confidence in the main findings about widespread global signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Prior literature establishes that active dendritic conductances impact synaptic integration, dendritic spikes occur in layer 5 neurons with associated calcium influx, and layer 5 neurons in V1 respond to visual features and locomotion, with previous work showing high somato-dendritic correlation unchanged by these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C57 accurately summarize relevant prior literature with appropriate citations. These claims provide essential context for interpreting the current study's findings. The citations appear accurate and relevant, though verification of each cited claim would require examining the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C65",
+      "C66",
+      "C74",
+      "C77",
+      "C79"
+    ],
+    "result": "Speculative interpretations suggest attenuation may involve active inhibitory mechanisms, coupling could occur with lower frequency action potentials paired with tuft inputs, somato-dendritic coupling may differ between layer 5 subtypes and during active learning, and widespread calcium activity may influence plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60, C65, C66, C74, C77, and C79 are explicitly speculative, supported by citations but not directly tested in this study. While these are reasonable hypotheses based on prior literature and the current findings, they represent future directions rather than demonstrated results. The speculative nature is appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Background knowledge claims establish that layer 5 pyramidal neurons comprise distinct subtypes with different morphologies and inputs, receive diverse synaptic inputs that vary with behavioral context, and that calcium imaging has known technical limitations including effects of labeling density and indicator sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C70-C73, C75-C76, C78, and C80-C84 provide important background knowledge supported by appropriate citations. These claims establish the biological and technical context necessary for interpreting the study's findings and limitations. The citations appear relevant and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Ex vivo observations show that action potentials evoked by dendritic stimulation were accompanied by enhanced afterdepolarization characteristic of distal dendritic electrogenesis, and the critical frequency for triggering distal dendritic calcium spikes is 50-100 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 report specific ex vivo observations supported by electrophysiological recordings and citations to established literature (Larkum et al., 1999a; Shai et al., 2015). These findings provide important mechanistic validation for interpreting the in vivo calcium imaging results.",
+    "result_type": "MINOR"
+  }
+]

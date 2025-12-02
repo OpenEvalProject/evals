@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "TB granulomas have characteristic histopathology with necrotic cores surrounded by immune cells, harbor Mtb in various cell types (especially foamy macrophages at the cellular-caseous interface), and exhibit abnormal vasculature that worsens from periphery to center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 are all supported by appropriate citations to prior literature. These claims establish the background knowledge about TB lesion structure, cellular composition, bacterial localization, and vascular dysfunction. All statements are properly attributed to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Adequate drug concentrations at infection sites are critical for TB treatment efficacy. Most TB drugs show differential partitioning in lesions. Fluoroquinolones (MXF, LVX, GTX) are important for MDR-TB treatment, with MXF showing particular promise in universal regimens and ability to kill persisters in caseum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 are supported by appropriate citations to prior work from the authors' group and others. These establish the rationale for studying fluoroquinolone distribution in TB lesions and the clinical importance of these drugs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "MALDI MSI reveals that fluoroquinolones (MXF, LVX, GTX) form heterogeneous distribution patterns in TB lesions with rings of high intensity adjacent to caseum and additional pockets in outer regions. Signal is 1.5-2 fold higher in cellular lesions than uninvolved lung and caseum, though absolute concentration differences are marginal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by MALDI MSI data (Figure 1) and quantitative analyses (Figure 1\u2014figure supplement 2). The imaging clearly shows heterogeneous distribution patterns, and both relative quantitation by MALDI and absolute quantitation by LC-MS/MS are provided. The observation that aggregate analysis masks heterogeneity is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "High-resolution H&E histology reveals that mature necrotic granulomas have concentric cellular layers: foamy macrophages adjacent to caseum, a lymphocyte layer, and an outer layer of less-foamy macrophages with lymphocytes. Mtb bacilli localize primarily to foamy macrophages and karyorrhectic neutrophils in caseous foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by detailed H&E histology images (Figure 2 and supplements). The concentric organization is clearly visible and well-described. The localization of bacteria to foamy macrophages and dying neutrophils is demonstrated by histological staining.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "MXF abundance varies significantly across 35 ROIs within a single lesion (43.4% between-ROI variability). Spearman correlation analysis reveals positive association with macrophage fraction and inverse correlations with distance from lesion border and necrosis fraction, but no significant association with other immune cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by statistical analyses shown in Figure 3\u2014figure supplement 4. The ANOVA and Spearman correlation analyses are appropriate for the data. The correlations identified are statistically significant and biologically plausible given the known biology of TB lesions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Nonlinear mixed-effects modeling shows that macrophage fraction, relative distance from lesion edge, and necrosis content are the primary drivers of MXF distribution, reducing unexplained variability from 44% to 18.9%. Other immune cell types do not significantly influence MXF partitioning. The model successfully predicts ROI-specific MXF abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are supported by comprehensive nonMEM analysis (Table 1, Figure 4). The modeling approach is appropriate, with proper train-test validation. The stepwise reduction in unexplained variability with addition of each predictor is clearly demonstrated. Model validation shows good predictive performance (Figure 4B, Figure 3\u2014figure supplement 4D,E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In vitro drug uptake assays demonstrate that all three fluoroquinolones (MXF, LVX, GTX) accumulate preferentially in macrophages compared to lymphocytes, neutrophils, and epithelial cells. Uptake is significantly higher in foamy macrophages (induced by \u03b3-irradiated Mtb, >80% Nile Red positive) than non-foamy macrophages (<30% Nile Red positive), with a mean ratio around 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by in vitro uptake data (Figure 5A,C) and flow cytometry characterization of foamy macrophages (Figure 5B). Statistical tests (Friedman test, Wilcoxon matched-pairs) are appropriate. The use of primary human cells is a strength. However, inter-donor variability is noted as high, which is appropriately addressed by showing individual donor ratios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The differential uptake in foamy versus non-foamy macrophages may be due to differential regulation of transporters/efflux pumps (FQs are actively transported), differential expression of transporters like ABCG1/ABCA1 in foamy macrophages, or upregulated pinocytosis in foam cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48 are supported by appropriate citations. However, C49 is explicitly speculative ('could be upregulated'). The authors present plausible mechanisms but provide no direct experimental evidence for which mechanism(s) actually explain their observations. This remains a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The preferential uptake of FQs by macrophages has positive clinical implications since drug-tolerant Mtb persisters reside in foamy macrophages. However, Mtb also resides in neutrophils (a site of bacterial replication) where MXF uptake is significantly lower than in macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by appropriate citations. C52 is supported by the in vitro uptake data (Figure 5A). The interpretation correctly identifies both positive (good penetration where persisters reside) and negative (poor penetration in neutrophils where bacteria replicate) implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study demonstrates that FQ distribution in TB lesions is heterogeneous and driven by macrophage content, distance from lesion border, and necrosis extent. In vitro assays confirm preferential uptake by macrophages over other immune cells, with even higher uptake in foamy macrophages where Mtb establishes dormancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 accurately summarize the major findings. The combination of high-resolution MALDI MSI, quantitative modeling, and in vitro validation provides strong converging evidence. The integration of in vivo imaging with in vitro mechanistic studies is a key strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The results are consistent with published data on FQ accumulation in macrophage cell lines and demonstrate significantly lower uptake in human neutrophils and lymphocytes, representing an advance over immortalized cell line studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by appropriate citations and the in vitro data. The use of primary human cells rather than cell lines is indeed a methodological advance, as the authors note that transporter/efflux pump expression can be altered in immortalized lines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The correlation between MXF abundance and distance from lesion border is consistent with prior studies showing vascular dysfunction increases with distance from granuloma edge. Vessel normalization therapies may improve drug delivery or potentiate TB therapy, analogous to oncology concepts where abnormal angiogenesis impairs drug delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by appropriate citations to prior work. The authors correctly place their findings in the context of vascular biology and draw appropriate parallels to oncology. However, these are interpretive claims based on prior literature rather than new experimental findings in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The methodology combining MALDI MSI, histology, and in vitro uptake is broadly applicable to drug mapping in complex diseased tissues and constitutes a powerful tool to guide in silico modeling of drug distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are reasonable assertions about the broader applicability of the methodology. The proof-of-concept is well-demonstrated for TB lesions. The potential for application to other diseases with complex immunopathology (tumors, atherosclerotic plaques) is plausible given the generality of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study used female NZW rabbits infected with M. tuberculosis HN878 via aerosol, treated with single doses of fluoroquinolones at 16-20 weeks post-infection, and euthanized at 2-12 hours post-dose. MALDI MSI was performed with 50 \u03bcm laser step size and detection limits of 100 fmol (750 ng/g).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 describe the experimental methods. These are clearly stated and appropriately detailed. The rabbit TB model is well-established (cited reference), drug doses and timing are specified, and analytical parameters are provided. The 50 \u03bcm resolution is appropriate for resolving small necrotic areas.",
+    "result_type": "MINOR"
+  }
+]

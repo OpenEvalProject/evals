@@ -1,0 +1,1221 @@
+{
+  "submission": {
+    "id": "2f240c62-cc2a-4c46-a4a6-0d4243aae366",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:48:58.069511Z",
+    "updated_at": "2025-12-02T17:48:58.069511Z"
+  },
+  "content": [
+    {
+      "id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "submission_id": "2f240c62-cc2a-4c46-a4a6-0d4243aae366",
+      "content_type": "manuscript",
+      "content_text": "# CRISPR-Cas12a exploits R-loop asymmetry to form double-strand breaks\n\n## Authors\n\n- Joshua C Cofsky<sup>1</sup> ([ORCID: 0000-0001-5403-8555](https://orcid.org/0000-0001-5403-8555))\n- Deepti Karandur<sup>1</sup>\n- Carolyn J Huang<sup>1</sup>\n- Isaac P Witte<sup>1</sup> ([ORCID: 0000-0002-3879-0306](https://orcid.org/0000-0002-3879-0306))\n- John Kuriyan<sup>1</sup> ([ORCID: 0000-0002-4414-5477](https://orcid.org/0000-0002-4414-5477))\n- Jennifer A Doudna<sup>1</sup> ([ORCID: 0000-0001-9161-999X](https://orcid.org/0000-0001-9161-999X)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States\n2. California Institute for Quantitative Biosciences (QB3), University of California, Berkeley Berkeley United States\n3. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n4. Department of Chemistry, University of California, Berkeley Berkeley United States\n5. MBIB Division, Lawrence Berkeley National Laboratory Berkeley United States\n6. Innovative Genomics Institute, University of California, Berkeley Berkeley United States\n7. Gladstone Institutes, University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nType V CRISPR-Cas interference proteins use a single RuvC active site to make RNA-guided breaks in double-stranded DNA substrates, an activity essential for both bacterial immunity and genome editing. The best-studied of these enzymes, Cas12a, initiates DNA cutting by forming a 20-nucleotide R-loop in which the guide RNA displaces one strand of a double-helical DNA substrate, positioning the DNase active site for first-strand cleavage. However, crystal structures and biochemical data have not explained how the second strand is cut to complete the double-strand break. Here, we detect intrinsic instability in DNA flanking the RNA-3\u2032 side of R-loops, which Cas12a can exploit to expose second-strand DNA for cutting. Interestingly, DNA flanking the RNA-5\u2032 side of R-loops is not intrinsically unstable. This asymmetry in R-loop structure may explain the uniformity of guide RNA architecture and the single-active-site cleavage mechanism that are fundamental features of all type V CRISPR-Cas systems.\n\n## Introduction\n\nCRISPR-Cas systems (clustered regularly interspaced short palindromic repeats, CRISPR-associated proteins) provide antiviral immunity to prokaryotes through the RNA-guided nuclease activity of enzymes including Cas9 and Cas12a (Barrangou et al., 2007; Jinek et al., 2012; Zetsche et al., 2015; Makarova et al., 2015), which are widely used for programmable genome editing (Pickar-Oliver and Gersbach, 2019). Both Cas9 and Cas12a use CRISPR RNA (crRNA) to recognize matching double-stranded DNA (dsDNA) sequences by forming an R-loop structure in which 20 nucleotides (nts) of the crRNA (the crRNA \u2018spacer\u2019) base pair with one strand of the target DNA (Figure 1A,B; Jinek et al., 2012; Jiang et al., 2016; Zetsche et al., 2015; Swarts et al., 2017). In addition, both protein families must bind to a protospacer-adjacent motif (PAM), a short DNA sequence next to the crRNA-complementary sequence, to initiate R-loop formation (Bolotin et al., 2005; Mojica et al., 2009; Sternberg et al., 2014; Singh et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig1-v1.jpg)\n\n**Figure 1.:** (A) Crystal structure of the DNA-bound Cas12a interference complex from Francisella novicida (FnCas12a, PDB 61IK) (Swarts and Jinek, 2019). While the protein ortholog used for most experiments in this manuscript is from Acidaminoccus species (AsCas12a,~40% identity to FnCas12a), the FnCas12a crystal structure shown here represents the most complete structure of such a complex to date, most notably with respect to the DNA at the target-strand cleavage sites. We did not perform any experiments with the particular DNA sequence used by Swarts and Jinek in crystallization, so the scissile phosphodiesters indicated were determined for a different sequence (see Appendix 2\u2014figure 1, Appendix 2\u2014figure 1\u2014figure supplement 6) and superimposed onto the structural model according to their distance from the PAM (in terms of number of nucleotides). The discontinuity modeled into the non-target strand corresponds to positions of weak electron density in the crystal structure, which could have been due to some combination of disorder of the (intact) intervening tract and/or in crystallo hydrolysis and dissociation of the intervening tract. (B) For Cas12a, successful R-loop formation results in activation of the RuvC DNase active site to cleave three classes of DNA substrates (yellow scissors): the non-target strand (in cis), the target strand (in cis), and non-specific ssDNA (in trans). Circled numbers indicate the required order of cis strand cleavage; three conserved active site carboxylates of the RuvC DNase are shown in yellow and red; \u2018PAM\u2019 indicates the protospacer-adjacent motif; red arrow indicates the direction in which the R-loop is opened. Cas9 contains two DNase domains: the RuvC domain cleaves the non-target strand, and the HNH domain cleaves the target strand.\n\nDespite their functional similarities, Cas9 and Cas12a evolved independently (Koonin et al., 2017) and use distinct mechanisms of DNA cleavage. Cas9 employs two active sites to generate a blunt DNA double-strand break near the PAM (Jinek et al., 2012; Gasiunas et al., 2012). In contrast, Cas12a uses a single active site to make staggered cuts distant from the PAM, and the same active site can cleave free single-stranded DNA (ssDNA) non-specifically once the enzyme has been activated by specific target binding (Figure 1B; Zetsche et al., 2015; Swarts et al., 2017; Chen et al., 2018). Additionally, the position of the 20-nucleotide spacer sequence in Cas12a crRNAs is opposite to that in Cas9 crRNAs (3\u2032 end versus 5\u2032 end, respectively) (Zetsche et al., 2015; Deltcheva et al., 2011), and consequently, R-loop formation by each enzyme family occurs with opposing directionality (Figure 1B).\n\nCas12a belongs to the type V family of CRISPR effector proteins (whose names each begin with \u2018Cas12\u2019), a classification defined by the presence of a single RuvC DNase domain (Koonin et al., 2017). Notably, although this classification is not strictly phylogenetic\u2014the \u2018family\u2019 is actually a paraphyletic assembly of several evolutionarily independent protein lineages (Koonin et al., 2017; Makarova et al., 2020)\u2014a second shared feature of all Cas12 interference complexes is the previously mentioned spacer-3\u2032 crRNA architecture. However, the reason for this evolutionary convergence is unknown. Furthermore, while structures of DNA-bound Cas12a are known (Yamano et al., 2016; Gao et al., 2016; Swarts et al., 2017; Stella et al., 2017; Stella et al., 2018; Swarts and Jinek, 2019) and an obligatory order of strand cleavage has been suggested biochemically (Swarts and Jinek, 2019), the mechanism by which type V CRISPR enzymes form double-strand breaks using one active site remains unclear.\n\nThe RuvC domain of Cas12a exhibits stringent specificity for single-stranded substrates when activated for cleavage of free DNA in trans (Appendix 1) (Chen et al., 2018), suggesting that substrates cleaved in cis (i.e., the two DNA strands of a protein-bound R-loop) are also single-stranded during each of their respective cleavage events. Consistent with this substrate preference, in the most complete crystal structures of the Cas12a-bound R-loop, displacement of the non-target strand (NTS) of the DNA allows its association with the RuvC active site as a single strand (Swarts et al., 2017; Swarts and Jinek, 2019). This conformation likely permits initial non-target-strand cleavage, which is a prerequisite of DNA target-strand (TS) cutting (Figure 1B; Swarts and Jinek, 2019).\n\nHowever, in these same crystal structures, the target-strand cleavage site is located within an ordered DNA duplex outside the R-loop,~25 \u00c5 away from the RuvC active site and inverted with respect to the most probable catalytic orientation (Figure 1A; Swarts et al., 2017; Swarts and Jinek, 2019). To satisfy these geometric constraints and the RuvC substrate preference, the target strand likely needs to separate from the non-target strand and bend, accessing a conformation evoked by some structures of the type V CRISPR-Cas enzymes Cas12b (C2c1) and Cas12e (CasX) (Yang et al., 2016; Liu et al., 2019). It has been hypothesized that contortion of the DNA substrate enables Cas12a (and other Cas12 family members) to cleave the target strand and complete its double-strand break\u00a0(Jeon et al., 2018;\u00a0Zhang et al., 2019), but it is unknown what enables this contortion.\n\nWe show here that Cas12a cleaves the target strand within a tract of DNA that is destabilized by the adjacent R-loop. Using chemical and fluorescent probes to investigate DNA conformation in protein-bound and protein-free R-loops in solution, we find that DNA flanking the RNA-3\u2032 side of the R-loop exhibits signatures of single-strandedness, despite this region\u2019s potential for complete base pairing. The location of this DNA distortion controls the location of RuvC-catalyzed target-strand cleavage, suggesting that Cas12a exploits local duplex instability to complete its double-strand break. This cleavage mechanism is likely shared by other DNA-targeting CRISPR-Cas12 systems, which all use a single RuvC active site to cut the target strand within the DNA tract flanking the RNA-3\u2032 side of the R-loop (Yang et al., 2016; Liu et al., 2019; Yan et al., 2019; Karvelis et al., 2020). Intriguingly, we find that nucleotides flanking the RNA-5\u2032 side of protein-free R-loops remain stably paired and stacked in solution. This fundamental asymmetry in nucleic acid structure offers a functional explanation for the puzzling convergence of type V CRISPR-Cas systems on the 5\u2032-repeat-spacer-3\u2032 crRNA orientation.\n\n## Results and discussion\n\n### Cas12a binding to DNA distorts the target-strand cleavage site\n\nWe suspected that dsDNA substrates of Cas12a would need to access a bent conformation to undergo target-strand cleavage. To chemically probe the structure of a Cas12a substrate in solution, we performed DNA permanganate footprinting on interference complexes containing a RuvC-inactivated mutant of a Cas12a ortholog from Acidaminococcus species (AsCas12a), hereafter called dCas12a. In this assay, permanganate selectively oxidizes thymines in non-B-form (e.g., locally melted or otherwise distorted) DNA structures, and oxidized positions are subsequently identified through piperidine-catalyzed strand cleavage (which occurs specifically at thymidine glycols) and denaturing polyacrylamide gel electrophoresis (PAGE) (Figure 2A; Bui et al., 2003). To enable sensitive detection of DNA fragments, we radiolabeled either the 5\u2032 or 3\u2032 end of each DNA strand (3\u2032-end radiolabeling of DNA, which is not a common procedure, was achieved using a protocol developed for the present work, Figure 2\u2014figure supplement 1). Consistent with previous applications of the permanganate assay to CRISPR-Cas-generated R-loops (Xiao et al., 2017), thymines within the portion of the non-target strand displaced by the crRNA were heavily oxidized, reflecting the single-strandedness of this DNA tract (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig2-v1.jpg)\n\n**Figure 2.:** (A) Denaturing PAGE phosphorimages of piperidine-treated permanganate oxidation products, demonstrating the assay\u2019s ability to detect non-B-form DNA conformations within and adjacent to a dCas12a-generated R-loop. Permanganate reactions were quenched after 10 s at 30\u00b0C. Each thymine in the DNA substrate is shown as a circled T. (B) Permanganate reactivity of a PAM-distal R-loop flank whose sequence was changed (as compared to the native protospacer sequence that was probed in A) to contain more thymines, with an intact or cleaved non-target strand (\u2018cleaved NTS\u2019 indicates that there is a 5-nt gap in the NTS\u2014see Appendix 2). Permanganate reactions were quenched after 2 min at 30\u00b0C. A raw phosphorimage is shown in Figure 2\u2014figure supplement 3. The permanganate reactivity index (PRI) is an estimate of the rate of oxidation at each thymine, normalized such that PRI\u00a0=\u00a01 for a fully single-stranded thymine (see Materials\u00a0and\u00a0methods). Columns and associated error bars indicate the mean and standard deviation of three replicates. The phosphodiester bonds normally cleaved by WT Cas12a are indicated with arrows on the substrate schematic for reference, but note that the complexes being probed with permanganate were formed with dCas12a.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** See Materials\u00a0and\u00a0methods for details.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Top panel: The affinity of dAsCas12a/crRNA for a cognate DNA target was assessed by an electrophoretic mobility shift assay (EMSA) and a filter-binding (FB) assay. dAsCas12a was titrated in a solution with fixed [crRNA] (750 nM) and [DNA probe] (100 pM), followed by separation of protein-bound DNA from free DNA. The EMSA indicated that the oligonucleotide annealing protocol yields 100% duplex DNA probe and that the binding conditions yield one major protein-bound species. \u2018Fraction bound\u2019 is defined as (background-subtracted volume of upper band)/(total background-subtracted lane volume) for the EMSA and (background-subtracted volume of Protran spot)/(total background-subtracted volume of Protran spot + Hybond N+ spot) for the filter-binding assay. The value of \u2018fraction bound\u2019 was 0 at [dAsCas12a]=0 for both assays (not shown in plot due to the logarithmic x-axis). When appropriate, data were fit to the sum of a hyperbola and a line (y\u00a0=\u00a0Bmax*x/(KD+x)+NS*x), where NS describes a non-specific binding mode. It is common to see Bmax values below 1 in EMSAs and filter-binding assays, in which the process of physical separation can disrupt bound species. KD for the EMSA was 8.2 nM (n\u00a0=\u00a01). KD for the filter-binding assay was 8.1 nM\u00a0\u00b10.8 (SD) (n\u00a0=\u00a03). Bottom panel: Using the filter binding assay, we assessed the affinity of dAsCas12a/crRNA for various cognate DNA targets. Protospacer 2 (used in Figure 2B) is the version of protospacer 1 (used in Figure 2A) modified for permanganate probing of the R-loop flank. Differences between protospacer 1 and protospacer 2 are highlighted in red (A/T base pairs substituted into the R-loop\u00a0flank, G/C base pairs substituted elsewhere to maintain stable association between the two DNA strands). \u2018Intact\u2019 protospacers are as shown in the sequence schematic. \u2018Pre-gapped\u2019 protospacers are missing nt 14\u201318 of the NTS (as measured from the PAM, see Appendix 2). The value of \u2018fraction bound\u2019 was 0 at [dAsCas12a]=0 for all substrates (not shown due to the logarithmic x-axis). Data were analyzed as described for the top panel. KD for protospacer 1 (intact) was 5 nM\u00a0\u00b11 (SD) (n\u00a0=\u00a03). KD for protospacer 2 (intact) was 54 nM\u00a0\u00b112 (SD) (n\u00a0=\u00a03). KD for protospacer 2 (pre-gapped) was 2.8 nM\u00a0\u00b10.5 (SD) (n\u00a0=\u00a03). Data from the protospacer 1 (pre-gapped) experiment indicated that the KD was near or below [DNA probe], preventing accurate KD determination by hyperbolic fitting. The reason for the low observed affinity of dAsCas12a for protospacer 2 (intact) is unknown.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Left panel: Kinetics of permanganate reaction with an unpaired thymine. The depicted substrate was subject to the standard permanganate reaction protocol with quenching at 0, 5, 10, 30, 60, and 120 seconds. Black arrows indicate chemical cleavage fragments that resulted from oxidation of the annotated thymine. \u2018Fraction oxidized at thymine X,\u2019 plotted in the graph at the bottom, was determined as described in Materials\u00a0and\u00a0methods and is equivalent to the variable $p_{i}$. The phosphorimage and graph shown are from a single representative replicate (n\u00a0=\u00a03). Data were fit to an exponential decay (y\u00a0=\u00a0(y0-plateau)*exp(-k*x)+plateau), with y0 constrained to 0 and the plateau value constrained to 1. The value of k was determined to be 0.998 min\u22121 \u00b10.027 (SD) (n\u00a0=\u00a03), which, when corrected to the reference thymine, yielded the value of $k_{ss,corr}$=0.79 min\u22121 that was used for normalization of the permanganate reactivity index in all other permanganate experiments. Right panel: Raw phosphorimage of quantified data presented in Figure 2B. Black arrows indicate chemical cleavage fragments that resulted from oxidation of the annotated thymine. The method to determine the 'permanganate reactivity index' and 'fraction oxidized' metrics from a raw phosphorimage is described in Materials\u00a0and\u00a0methods.\n\nInterestingly, we also observed significant oxidation at a thymine near the target-strand cleavage site (Figure 2A). To probe the region around the target-strand cleavage site more thoroughly, we adjusted the sequence of the DNA substrate to contain a stretch of A/T base pairs in the tract immediately adjacent to the R-loop, which we denote the R-loop flank (Figure 2B, Figure 2\u2014figure supplement 2). We assessed the permanganate reactivity of the R-loop flank in three states of the Cas12a cleavage pathway: prior to Cas12a binding (apo DNA), after R-loop formation, and after the first set of cleavage events, which yield a 5-nt gap in the non-target strand (see Appendix 2 for details of the NTS gap). At each step, we observed an increase in permanganate reactivity on both strands of the DNA that persisted seven base pairs past the end of the crRNA, suggesting that Cas12a binding promotes distortion of DNA in the PAM-distal flank of the R-loop (Figure 2B, Figure 2\u2014figure supplement 3, see Materials\u00a0and\u00a0methods).\n\nIn general, enhanced permanganate reactivity could reflect any of a variety of departures from B-form DNA duplex geometry, ranging from slight helical distortion to complete strand separation (Bui et al., 2003). As a result, the precise conformational ensemble of the R-loop flank cannot be absolutely determined from permanganate reactivity measurements. However, reactivity in the probed region was on the same order of magnitude as that of a fully single-stranded control, suggesting that the detected distortion involves substantial nucleobase unpairing and unstacking (Figure 2B, Figure 2\u2014figure supplement 3, see Materials\u00a0and\u00a0methods). Additionally, permanganate reactivity decreased with distance from the R-loop edge (Figure 2B), consistent with NTS:TS fraying events that initiate from the R-loop edge (see Materials\u00a0and\u00a0methods). The increase in bulk permanganate reactivity in response to NTS cleavage may be due, at least in part, to increased binding occupancy of dCas12a/crRNA on the DNA substrate, as the NTS gap creates a high-energy interruption in the DNA rewinding pathway that boosts the stability of the ribonucleoprotein:DNA interaction (Figure 2\u2014figure supplement 2; Knott et al., 2019). Thus, while the R-loop flank has the potential for complete base pairing, this DNA tract populates highly distorted, and probably unpaired, conformations when bound to Cas12a in solution.\n\n### Distortion of the R-loop flank facilitates target-strand cleavage\n\nDNA discontinuities as small as a nick or a single unpaired nucleotide are known to produce a \u2018swivel-like\u2019 point of flexibility within a duplex structure (Mills et al., 1994; Le Cam et al., 1994). We wondered whether the DNA distortion detected in the Cas12a R-loop flank may permit the global substrate bending and repositioning that is likely required for target-strand cleavage. A prediction of this model is that a change in the location of duplex instability should also change which phosphodiester bonds in the target strand are cleaved by the RuvC DNase. To test this prediction, we investigated the effect of R-loop size on the target-strand cut-site distribution. We reasoned that if DNA strand separation occurs at the R-loop edge, the location of the R-loop edge must define which nucleotides become unpaired and, consequently, which bonds can be accessed by the RuvC active site.\n\nWe first assessed our ability to shift the site of duplex instability by measuring permanganate reactivity in a truncated R-loop. To create a truncated R-loop, we mutated the DNA base pairs at positions 19 and 20, allowing crRNA strand invasion to progress only to the 18th nucleotide of the target sequence (position numbers indicate distance from the PAM). Additionally, we used a pre-cleaved non-target strand to lock the substrate in the chemical state that exists immediately before target-strand cleavage (Appendix 2). Finally, we prevented NTS:TS base pairing in the PAM-proximal part of the DNA target sequence by mutating the non-target strand at positions 1\u201312 (Figure 3A). This modification eliminated the branch-migration-catalyzed DNA dissociation pathway, allowing for the formation of uniformly stable complexes irrespective of PAM-distal crRNA:TS mismatches that would otherwise modulate affinity (Strohkendl et al., 2018; Figure 3\u2014figure supplement 1). As a result, variations in the bulk permanganate reactivity of these constructs reflect variations in DNA structure rather than differential Cas12a/crRNA binding occupancy.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig3-v1.jpg)\n\n**Figure 3.:** (A) Permanganate reactivity of A/T tract in a 20-nt R-loop and an 18-nt R-loop. Permanganate experiments were conducted as in Figure 2B (2 minutes, 30\u00b0C). Purple rectangles alongside DNA schematics indicate the location of the tract of DNA whose permanganate reactivity is being quantified. The y-axis denotes the fraction of DNA molecules estimated to have been oxidized on at least one thymine within the A/T tract (see Materials\u00a0and\u00a0methods). Columns and associated error bars indicate the mean and standard deviation of three replicates. (B) Target-strand cut-site distribution with a shrinking R-loop, as resolved by denaturing PAGE and phosphorimaging (n\u00a0=\u00a03). 100 nM AsCas12a and 120 nM crRNA were incubated with 1 nM of DNA target at 37\u00b0C for 1 hr, prior to quenching and resolution by denaturing PAGE (kinetics shown in Figure 3\u2014figure supplement 4). Each lane corresponds to a different DNA target, bearing varying numbers of PAM-distal mismatches with respect to the crRNA. Indicated above each lane is the number of base pairs of complementarity between the target strand and the crRNA spacer, starting with the base immediately adjacent to the PAM. For the lane lacking an asterisk, the DNA target was fully duplex. For the lanes that bear asterisks, the DNA target contained a bubble across the region of crRNA:TS complementarity, which stabilized the interaction of the DNA with the Cas12a/crRNA complex. Numbers to the left of the phosphorimage indicate the position (distance from the PAM, as numbered in C) of the dinucleotide whose phosphodiester was cleaved to yield the labeled band. Black arrows are drawn on the substrate diagrams to indicate cleaved phosphodiesters (as determined from the phosphorimage), and relative arrow lengths are roughly reflective of relative band intensities. (C) Target-strand cut-site distribution with various sequences in the R-loop flank (all with a 20-nt R-loop), as resolved by denaturing PAGE and phosphorimaging (n\u00a0=\u00a03). 100 nM AsCas12a and 120 nM crRNA were incubated with 1 nM of DNA target at 25\u00b0C for 10 min, prior to quenching and resolution by denaturing PAGE (kinetics shown in Figure 3\u2014figure supplement 7). All DNA targets were 5'-radiolabeled on the target strand. The non-target strand contained a gap from positions 14\u201318 (see Appendix 2) but was complementary to the target strand at positions 1\u201313 and 19\u201320. In each lane, the DNA target was varied to contain different sequences in the R-loop flank, which either formed a perfect duplex (substrates A, C, and E) or contained a 3-bp NTS:TS mismatch (substrates B, D, and F). Black arrows are drawn on the substrate diagrams as in B.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The affinity of dAsCas12a/crRNA for various cognate DNA targets was assessed by a filter-binding assay. \u2018Pre-gapped\u2019 indicates the presence of a 5-nt gap in the non-target strand (see Appendix 2). \u2018Pre-unwound\u2019 indicates the presence of a stretch of NTS:TS mismatches in the DNA substrate. In Figure 3A, protospacer 3 is annotated as \u2018DNA substrate 1;\u2019 protospacer 4 is annotated as \u2018DNA substrate 2;\u2019 and crRNA 3 is the depicted crRNA. For each combination of crRNA/DNA target, crRNA was titrated in a solution with fixed [dAsCas12a] (400 nM), [DNA probe] (100 pM), and [non-specific DNA competitor] (500 nM). The identities of the titrant/fixed component were inverted in this experiment (as compared to all other binding experiments) because crRNA can form a stable complex with pre-unwound DNA targets in the absence of protein. Keeping [dAsCas12a] at 400 nM favored the formation of (dAsCas12a/crRNA):DNA complexes over crRNA:DNA complexes (which would be indistinguishable from free DNA in the filter binding assay). In the presence of high [apo protein], 500 nM non-specific DNA competitor (a duplex with a short ssDNA overhang) was also included to disfavor non-specific interactions between radiolabeled DNA and apo protein. The value of \u2018fraction bound\u2019 was 0 at [crRNA]=0 for all substrates (not shown due to the logarithmic x-axis). For all pre-unwound DNA targets, the fraction bound was essentially concentration-independent across all nonzero concentrations tested, suggesting that the lowest concentration tested had already saturated the specific binding interaction being probed. The high stability is in line with thermodynamic expectations for an interaction involving hybridization of two complementary 18-nt or 20-nt oligonucleotides (Tm\u00a0>\u00a040\u00b0C) (Kibbe, 2007). The fact that the saturated bound fraction is less than 1 could be due to (1) a common feature of filter-binding assays in which the process of physical separation disrupts bound species or (2) a stable population of protein-free crRNA:DNA complexes. In any case, the important conclusion to be drawn from these data is that each protospacer exhibits the same fraction bound regardless of the presence of mismatches at positions 19 and 20 in the crRNA. Thus, the crRNA-dependent effects seen in Figure 3A and Figure 3\u2014figure supplement 2 must emerge from fundamental differences in conformational dynamics and not from differences in binding occupancy of Cas12a/crRNA on the DNA probe.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Permanganate reactivity of the A/T tract in a 20-nt R-loop and an 18-nt R-loop. In Figure 3A, protospacer 3 is annotated as \u2018DNA substrate 1;\u2019 protospacer 4 is annotated as \u2018DNA substrate 2;\u2019 and crRNA 3 is the depicted crRNA. Permanganate experiments were conducted as in Figure 2B (2 minutes, 30\u00b0C). See Materials\u00a0and\u00a0methods for description of the parameters plotted on the y-axis. Columns and associated error bars indicate the mean and standard deviation of three replicates. Columns 1, 2, 4, and 6 are equivalent to the data shown in Figure 3A. Columns 3 and 5 use a crRNA with compensatory mutations at positions 19\u201320, showing that the effect is dependent upon base pairing topology and not a particular sequence.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** 100 nM AsCas12a and 120 nM crRNA were incubated with 1 nM of DNA target at 37\u00b0C for 20 s, 1 min, 5 min, and 30 min, prior to quenching and resolution by denaturing PAGE. Each group of four lanes corresponds to a different DNA target, with varying numbers of PAM-distal mismatches with respect to the crRNA. Indicated above each group of four lanes is the number of base pairs of complementarity between the TS and the crRNA spacer, starting with the base immediately adjacent to the PAM. All DNA targets in this gel were fully duplex (not pre-unwound/bubbled), resulting in enhanced discrimination against PAM-distal mismatches as compared to the bubbled DNA targets in Figure 3B and Figure 3\u2014figure supplement 4.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** 100 nM AsCas12a and 120 nM crRNA were incubated with 1 nM of DNA target at 37\u00b0C for 0 s, 15 s, 2 min, 10 min, and 1 hr, prior to quenching and resolution by denaturing PAGE. Each time series corresponds to a different DNA target, bearing varying numbers of PAM-distal mismatches with respect to the crRNA. Indicated above each time series is the number of base pairs of complementarity between the TS and the crRNA spacer, starting with the base immediately adjacent to the PAM. For the time series lacking an asterisk, the DNA target was fully duplex (as in Figure 3\u2014figure supplement 3). For the time series that bear asterisks, the DNA target contained a bubble across the region of crRNA:TS complementarity (as illustrated in Figure 3B), which stabilized the R-loop. In the top panel, the NTS was 5'-radiolabeled. In the bottom panel, the TS was 5'-radiolabeled.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** 100 nM AsCas12a and 120 nM crRNA were incubated with 1 nM duplex DNA target radiolabeled on the 5' end of the target strand at 37\u00b0C for 0 s, 15 s, 1 min, 4 min, 15 min, or 1 hr, prior to quenching and resolution by denaturing PAGE. The 20-nt target sequence immediately adjacent to the PAM is shown below the crRNA spacer sequence used in each experiment. Red letters indicate TS:crRNA mismatches. Green letters indicate compensatory changes in the crRNA to restore a 20-nt match. The final timepoint of each reaction is reproduced in the gel on the right, for side-by-side comparison of the cleavage site distributions. \u2018Fraction cleaved\u2019 is defined as (sum of the volume of all bands below the uncleaved band)/(total volume in lane). Data were fit to an exponential decay (y\u00a0=\u00a0(y0-plateau)*exp(-k*x)+plateau), with y0 constrained to 0 and the plateau value constrained to\u00a0\u22641. A representative replicate is shown. The value of kobs for each time course is as follows: A (0.12 s\u22121), B (0.0093 s\u22121), C (0.0094 s\u22121), D (0.16 s\u22121), E (0.015 s\u22121). The precise value of kobs for A and D should be interpreted with caution due to poor sampling of informative timepoints.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Final timepoint (1 hr) of each time series in the non-target-strand gel shown in the top panel of Figure 3\u2014figure supplement 4, shown side-by-side for visual comparison\u2014analogous to the final timepoints for the target strand shown in Figure 3B.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig3-figsupp7-v1.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Experiment performed as described in legend to Figure 3C. 100 nM AsCas12a and 120 nM crRNA were incubated with 1 nM of DNA target at 25\u00b0C for 0 s, 15 s, 30 s, 1 min, 2 min, 4 min, or 10 min, prior to quenching and resolution by denaturing PAGE. All DNA targets were 5'-radiolabeled on the TS. The NTS was pre-gapped from positions 14\u201318 but complementary to the TS at positions 1\u201313 and 19\u201320. In each lane, the DNA target was varied to contain different sequences in the R-loop\u00a0flank, which either formed a perfect duplex (substrates A, C, and E) or contained a 3-bp NTS:TS mismatch (substrates B, D, and F). \u2018Fraction cleaved\u2019 is defined as (sum of the volume of all bands below the uncleaved band)/(total volume in lane). Data were fit to an exponential decay (y=(y0-plateau)*exp(-k*x)+plateau), with y0 constrained to 0. A representative replicate (n\u00a0=\u00a03) is shown. The value of kobs\u00a0\u00b1\u00a0SD for each time course is as follows: A [0.092\u00a0\u00b1\u00a00.012 s\u22121], B [0.145\u00a0\u00b1\u00a00.007 s\u22121], C [0.0059\u00a0\u00b1\u00a00.0006 s\u22121], D [0.137\u00a0\u00b1\u00a00.002 s\u22121], E [0.024\u00a0\u00b1\u00a00.002 s\u22121], F [0.061\u00a0\u00b1\u00a00.013 s\u22121]. The rate constants for B and D should be interpreted with caution due to poor sampling of informative timepoints.\n\nBy implementing the permanganate assay on these complexes, we found that the A/T tract was highly reactive in the full R-loop but had limited reactivity in the truncated R-loop, suggesting that the distorted region had migrated with the edge of the R-loop (Figure 3A). We also observed this effect for a second set of crRNA/DNA sequences with equivalent base-pairing topology, demonstrating that this result is not unique to the originally tested sequence (Figure 3\u2014figure supplement 2). Positions 19 and 20 of the DNA substrates were G/C base pairs, so DNA conformation at these nucleotides could not be assessed by permanganate reactivity. Nonetheless, these results show that nucleotide unpairing near the target-strand cleavage site depends not only on Cas12a binding and stable R-loop formation, but also on the extent of crRNA strand invasion (i.e., the size of the R-loop). Thus, by altering R-loop size, we can manipulate which nucleotides become unpaired upon Cas12a binding.\n\nTo test the hypothesis that distortion in the R-loop flank is linked to RuvC-mediated target-strand cleavage, we assembled wild type (WT) Cas12a with R-loops of various sizes and determined the distribution of target-strand cut sites. For these experiments, we used DNA substrates with an intact non-target strand that was mismatched with respect to the target strand throughout the region of crRNA complementarity (Figure 3B; DNA constructs containing such a mismatched tract are indicated with an asterisk\u2014for example, 1\u201318* indicates a DNA construct whose target-strand sequence matches the crRNA sequence at positions 1\u201318 and whose non-target-strand is mismatched with respect to the target strand at the same positions). Preventing NTS:TS base pairing in this region allowed observation of DNA cleavage in enzyme-substrate complexes that would otherwise be too unstable to yield detectable rates of catalysis (Strohkendl et al., 2018; Figure 3\u2014figure supplement 3).\n\nAs the R-loop edge was shifted toward the PAM, the target-strand cut-site distribution shifted toward the new R-loop edge (Figure 3B, Figure 3\u2014figure supplement 4). When compensatory mutations were made in the crRNA to restore the original R-loop size, the target-strand cut sites moved back toward their original distribution (Figure 3\u2014figure supplement 5). The observed shifts in the cut sites were not due to general destabilization of the R-loop, as a single crRNA:TS mismatch at an internal position of the target sequence (position 9) slowed cleavage without affecting cut-site distribution (Figure 3\u2014figure supplement 5). The cut-site distribution shared by the 1\u201317*, 1\u201316*, and 1\u201315* substrates, along with the lack of cleavage of the 1\u201314* substrate, may reveal a geometric limit on bent DNA conformations that still permit active site association (Figure 3B). Additionally, the broader target-strand cut-site distribution in the DNA target lacking NTS:TS mismatches (labeled \u20181\u201320\u2019 in Figure 3B) could reflect bending events that initiated from partially rewound R-loop conformations. Notably, the non-target-strand cut-site distribution did not change markedly as the R-loop was truncated, suggesting that non-target-strand cleavage is unrelated to nucleotide unpairing in the R-loop flank (Figure 3\u2014figure supplement 6). These results imply that the site of Cas12a-mediated target-strand cleavage is tied to, and perhaps dictated by, the location of weakened base pairing.\u00a0Consistent with this idea, a previous study found a linkage between Cas12a cut-site distribution and nucleic acid conformation as measured by F\u00f6rster resonance energy transfer (Zhang et al., 2019).\n\nThese principles predict that R-loop flank sequences with greater nucleobase stacking energy should limit the depth of fraying and, consequently, favor target-strand cleavage events that are closer to the PAM. In agreement with this prediction, of three DNA targets that differed only in the sequence of their R-loop flank\u2014native protospacer, AT-rich, or GC-rich\u2014the GC-rich substrate was cleaved most PAM-proximally (Figure 3C). Additionally, eliminating NTS:TS base pairing at positions 21\u201323 led to fast and PAM-distally shifted cleavage of the target strand in all cases (Figure 3C, Figure 3\u2014figure supplement 7). Together, these results suggest that DNA distortion in the R-loop flank is an important enabler of Cas12a-catalyzed target-strand cleavage.\n\n### Duplex instability is intrinsic to DNA in the RNA-3\u2032 flank of R-loops\n\nNext, we wondered what role the Cas12a protein plays in distortion of the R-loop flank. To assess the contribution of the protein, we formed a protein-free mimic of the nucleic acid structure immediately prior to target-strand cleavage. This artificial R-loop contained a pre-cleaved non-target strand that was mismatched with respect to the target strand in the 20-nt stretch adjacent to the PAM, and the same stretch of the target strand was hybridized to a complementary 20-nt RNA oligonucleotide (Figure 4A). When we probed the permanganate reactivity of this protein-free R-loop, we found that the A/T tract was slightly more reactive than in the Cas12a-generated R-loop experiment (Figure 4A, Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig4-v1.jpg)\n\n**Figure 4.:** (A) Permanganate reactivity of the A/T tract in a dCas12a R-loop, a dCas9 R-loop, and their protein-free mimics. The y-axis denotes the fraction of DNA molecules estimated to have been oxidized on at least one thymine within the A/T tract (see Materials\u00a0and\u00a0methods). Purple rectangles alongside DNA schematics indicate the location of the tract of DNA whose permanganate reactivity is being quantified. Columns and associated error bars indicate the mean and standard deviation of three replicates. (B) Model for the relative conformational dynamics of 3' and 5' R-loop boundaries, as suggested by permanganate reactivity experiments. The depth of fraying shown (three base pairs) was chosen arbitrarily for the schematic and should not be interpreted as a uniquely stable \u2018open\u2019 structure (see Materials\u00a0and\u00a0methods).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Permanganate experiments were conducted as in Figure 2B (2 minutes, 30\u00b0C). \u2018Pre-gapped\u2019 indicates the presence of a 5-nt gap in the non-target strand (see Appendix 2) (the NTS gap in the dCas9 target is unrelated to the cut that would normally be formed by a nuclease-active Cas9\u2014instead, it was designed to be analogous to the NTS gap formed by AsCas12a in an R-loop of the opposite topology, at positions 14\u201318). \u2018Pre-unwound\u2019 indicates the presence of a stretch of NTS:TS mismatches in the DNA substrate (20-nt bubble throughout the\u00a0region of RNA complementarity); asterisks highlight the constructs that contain these NTS:TS mismatches. The sequence of protospacer 5 is identical to that of protospacer 2 except for a change in the PAM, which is not expected to affect conformational dynamics at the A/T tract (besides in permitting dCas9 binding). See Materials\u00a0and\u00a0methods for description of the parameters plotted on the y-axis. Columns and associated error bars indicate the mean and standard deviation of three replicates. Experiments A, B, E, F, G, and J are equivalent to the data shown in Figure 4A.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The affinity of dSpCas9/sgRNA for a cognate DNA target was assessed by an electrophoretic mobility shift assay (EMSA) and a filter-binding (FB) assay. dSpCas9 was titrated in a solution with fixed [sgRNA] (750 nM) and [DNA probe] (100 pM), followed by separation of protein-bound DNA from free DNA. The EMSA indicated that the binding conditions yield one major protein-bound species. \u2018Fraction bound\u2019 is defined as (background-subtracted volume of upper band)/(total background-subtracted lane volume) for the EMSA and (background-subtracted volume of Protran spot)/(total background-subtracted volume of Protran spot + Hybond N+ spot) for the filter-binding assay. The value of \u2018fraction bound\u2019 was 0 at [dSpCas9]=0 for both substrates and both assays (not shown on plot due to the logarithmic x-axis). All data shown are from one representative replicate (n\u00a0= 1 for EMSA, n =\u00a03\u00a0for\u00a0FB). Protospacer 6 is identical to protospacer 1 (used for AsCas12a), except the PAM has been substituted with a SpCas9 PAM. Protospacer 5 is a modified version of protospacer 6, with differences highlighted in red (equivalent to the protospacer-1-to-protospacer-2 modifications). The \u2018intact\u2019 protospacer is as shown in the sequence schematic. The \u2018pre-gapped\u2019 protospacer is missing nt 14\u201318 of the NTS (as measured from the PAM). The NTS gap is unrelated to the cut that would normally be formed by a nuclease-active Cas9\u2014instead, it was designed to be analogous to the NTS gap formed by AsCas12a in an R-loop of the opposite topology, at positions 14\u201318. This DNA substrate binds tightly to dSpCas9. Thus, the failure of dSpCas9 to significantly distort the R-loop\u00a0flank in Figure 4A is due to a fundamental difference in conformational dynamics and not to a failure to bind.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Permanganate experiments were conducted as in Figure 2B (2 minutes, 30\u00b0C). See Materials\u00a0and\u00a0methods for description of the parameters plotted on the y-axis. Columns and associated error bars indicate the mean and standard deviation of three replicates. In all schematics, RNA molecules are outlined in orange, and DNA molecules are outlined in black. Circled \u2018P\u2019 indicates a 5\u2032-phosphate. All sequences, when read right-side up, go from 5\u2032 on the left to 3\u2032 on the right. The terms \u2018Cas12a-like\u2019 and \u2018Cas9-like\u2019 are descriptors only of each substrate\u2019s R-loop topology (the end of the RNA next to the boundary of interest is a 3\u2032 end or a 5\u2032 end, respectively)\u2014both kinds of substrates contain a Cas12a PAM and a Cas12a-like NTS gap. These results imply that the asymmetry in R-loop-flank stability is a fundamental feature of R-loop structure and not a peculiarity of the original tested sequence.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Permanganate experiments were conducted as in Figure 2B (2 minutes, 30\u00b0C), varying only the nature of the RNA molecule added to the pre-gapped/pre-unwound DNA substrate. See Materials\u00a0and\u00a0methods for description of the parameters plotted on the y-axis. Columns and associated error bars indicate the mean and standard deviation of three replicates. In both schematics, RNA molecules are outlined in orange, and DNA molecules are outlined in black. Circled \u2018P\u2019 indicates a 5\u2032-phosphate. All sequences, when read right-side up, go from 5\u2032 on the left to 3\u2032 on the right. \u2018OH\u2019 indicates a hydroxyl. \u2018Phos.\u2019 indicates a phosphate. \u2018Cyc. phos.\u2019 indicates a 2\u2032/3\u2032-cyclic phosphate. \u2018IVT/rz\u2019 indicates that the RNA oligo was synthesized in an enzymatic in vitro transcription reaction, with ribozymes on both ends that cleaved to yield homogeneous termini. \u2018Chem.\u2019 indicates that the RNA oligo was chemically synthesized by a commercial source. The terms \u2018Cas12a-like\u2019 and \u2018Cas9-like\u2019 are descriptors only of each substrate\u2019s R-loop topology (the end of the RNA next to the boundary of interest is a 3\u2032 end or a 5\u2032 end, respectively)\u2014both kinds of substrates contain a Cas12a PAM and a Cas12a-like NTS gap.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Permanganate experiments were conducted as in Figure 2B (2 minutes, 30\u00b0C). See Materials\u00a0and\u00a0methods for description of the parameters plotted on the y-axis. Columns and associated error bars indicate the mean and standard deviation of three replicates. In all schematics, RNA molecules are outlined in orange, and DNA molecules are outlined in black. All sequences, when read right-side up, go from 5\u2032 on the left to 3\u2032 on the right. These experiments provide the strongest point of comparison between the Cas12a-like and Cas9-like R-loop architecture, as the only component varied across conditions is which strand of an identical DNA bubble is hybridized to RNA (compare the cleaved R-loops, in which the position of the gap must be moved to the opposite strand, yielding slightly different baseline permanganate reactivity).\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Permanganate experiments were conducted as in Figure 2B (2 minutes, 30\u00b0C). See Materials\u00a0and\u00a0methods for description of the parameters plotted on the y-axis. Columns and associated error bars indicate the mean and standard deviation of three replicates. In all schematics, RNA molecules are outlined in orange, and DNA molecules are outlined in black. Circled \u2018P\u2019 indicates a 5\u2032-phosphate. All sequences, when read right-side up, go from 5\u2032 on the left to 3\u2032 on the right. These experiments probe the role of the 2-nt NTS overhang (immediately adjacent to the R-loop flank) in distortion of the A/T tract. When present, this dinucleotide results in a \u2018flapped\u2019 R-loop flank (RLF) terminus, and when absent, the RLF terminus is \u2018flush.\u2019 The terms \u2018(Cas)12a-like\u2019 and \u2018(Cas)9-like\u2019 are descriptors only of each substrate\u2019s R-loop topology (the end of the RNA next to the boundary of interest is a 3\u2032 end or a 5\u2032 end, respectively)\u2014both kinds of substrates contain a Cas12a PAM and a Cas12a-like NTS gap. These results show that the presence of the overhang can affect the absolute magnitude of distortion, but the nature of the asymmetry is unaffected.\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig4-figsupp7-v1.jpg)\n\n**Figure 4\u2014figure supplement 7.:** Columns and error bars show mean and standard deviation of three replicates. In all schematics, RNA molecules are outlined in orange, and DNA molecules are outlined in black. Circled \u2018P\u2019 indicates a 5\u2032-phosphate. All sequences, when read right-side up, go from 5\u2032 on the left to 3\u2032 on the right. The terms \u2018Cas12a-like\u2019 and \u2018Cas9-like\u2019 are descriptors only of each substrate\u2019s R-loop topology (the end of the RNA next to the boundary of interest is a 3\u2032 end or a 5\u2032 end, respectively)\u2014both kinds of substrates contain a Cas12a PAM and a Cas12a-like NTS gap. The absolute values of 2-AP fluorescence intensity have a wide range across different DNA probes, likely due to local sequence context or, in the case of the ssDNA control in the bottom right panel, perhaps the stable population of a conformation that enhances 2-AP fluorescence. Given this variation, it is important to use the perfect DNA duplex (C) and the pre-gapped/pre-unwound DNA bubble (D) conditions as benchmarks\u2014on the continuum from C to D, where does E lie? For condition E in the Cas12a-like topologies, the 2-AP fluoresces as if the RNA were absent. For condition E in the Cas9-like topologies, 2-AP fluorescence is quenched and approaches the intensity of the fully duplex control.\n\nTo interpret the reactivity of an R-loop mimic, we used the RNA-free DNA bubble control as a point of comparison. This bubbled DNA substrate reveals that permanganate reactions occur readily at the edge of the bubble, that\u00a0is, the terminus of the DNA homoduplex (substrate C in Figure 4\u2014figure supplement 1, also see Materials\u00a0and\u00a0methods). We therefore asked whether the adjacent RNA:DNA hybrid protects or sensitizes the DNA:DNA terminus as compared to the RNA-free control. The na\u00efve prediction is that a DNA duplex terminus should become more stable (i.e., less prone to end fraying) when another duplex is stacked on top of it (H\u00e4se and Zacharias, 2016). It is thus surprising that the RNA oligonucleotide in this experiment sensitizes the DNA:DNA terminus to oxidation by permanganate. This result indicates that distortion of the R-loop flank is a phenomenon intrinsic to the R-loop boundary itself and that the protein only needs to hold the R-loop open to promote flexibility in the adjacent DNA.\n\n### Duplex instability is not a feature of DNA in the RNA-5\u2032 flank of R-loops\n\nWhile Cas9 also conducts R-loop-dependent DNA cleavage, its R-loop topology is inverted with respect to that of Cas12a as a result of their opposing crRNA architectures\u2014Cas12a crRNAs occur as 5\u2032-repeat-spacer-3\u2032, whereas Cas9 crRNAs occur as 5\u2032-spacer-repeat-3\u2032 (Figure 1B). Given the instability of the Cas12a R-loop flank (referred to as a 3\u2032 R-loop flank because it contains a 3\u2032 RNA terminus), we wondered whether the PAM-distal flank of the Cas9 R-loop (a 5\u2032 R-loop flank) would also be unstable.\n\nTo test this question, we assayed flank distortion in an R-loop created by a catalytically inactive mutant of Cas9 from Streptococcus pyogenes (dCas9) and in the corresponding protein-free mimic (the non-target strand was pre-cleaved analogously to a Cas12a substrate). Remarkably, we found that the flank experienced nearly background oxidation levels both in the protein-bound R-loop (with dCas9 at a saturating concentration, Figure 4\u2014figure supplement 2) and in the protein-free mimic, suggesting that unlike 3\u2032 R-loop flanks, 5\u2032 R-loop flanks are not naturally unstable (Figure 4A, Figure 4\u2014figure supplement 1). The 5\u2032 R-loop flank behaved consistently with expectations about coaxial duplex stacking, as the RNA oligonucleotide protected the DNA:DNA duplex terminus as compared to the bubbled control (Figure 4\u2014figure supplement 1). Thus, an RNA:DNA hybrid can either stabilize or destabilize a juxtaposed DNA:DNA duplex terminus, depending on whether the hybrid terminus contains a 5\u2032 RNA end or a 3\u2032 RNA end, respectively. These results suggest a fundamental energetic difference in the conformational landscapes of 3\u2032 versus 5\u2032 R-loop flanks (Figure 4B).\n\nThe conformational difference between 3\u2032 and 5\u2032 R-loop flanks is intrinsic to strand polarity, as the trends in permanganate reactivity were robust to changes in nucleic acid sequence, end chemistry, and non-target-strand cleavage state (Figure 4\u2014figure supplements 3\u20136). Additionally, we detected the same polarity dependence when we measured fluorescence intensity of a single 2-aminopurine nucleotide present at position 21 of the original protospacer sequence, indicating that the conformational difference is not an artifact of the permanganate reactivity assay or of the AT-rich sequence of the modified protospacer (Figure 4\u2014figure supplement 7). Therefore, while Cas12a does not seem to actively destabilize the R-loop flank, the protein forms R-loops with the topology that natively yields a greater degree of flexibility in the region beyond the end of the crRNA.\n\n### Differences in interhelical stacking energy may underlie asymmetric R-loop flank stability\n\nSeeking a mechanistic explanation for the unequal stability of 3\u2032 versus 5\u2032 R-loop flanks, we hypothesized that the asymmetry may emerge from energetic differences in the coaxial stacking of a DNA homoduplex on either end of an RNA:DNA hybrid (Figure 5). Because interhelical junctions are known to explore both stacked and unstacked conformations in solution (Roll et al., 1998; Protozanova et al., 2004), they are expected to populate each state to a degree that depends on the free energy change associated with coaxial duplex stacking. Weaker stacking energy, then, encourages exploration of motions that initiate preferentially from unstacked duplex termini, such as DNA bending (Protozanova et al., 2004) and fraying (H\u00e4se and Zacharias, 2016).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig5-v1.jpg)\n\n**Figure 5.:** (A) Melting temperatures of nicked-dumbbell constructs that recapitulate each type of R-loop boundary, determined by monitoring absorbance of ultraviolet light while slowly cooling samples from 95\u00b0C to 2\u00b0C. Reported values show mean and standard deviation of three replicates. See Figure 5\u2014figure supplement 1 for refolding curves and control constructs. (B) Molecular dynamics simulations reveal nucleobase unstacking in 3' R-loop boundaries but not in 5' R-loop boundaries. At the top left is a schematized version of the true structural model shown immediately below (this coaxially stacked conformation is the starting structure that was used for simulation); hydrogens were present in the simulated model and analyses but are omitted from representations here for clarity. The simulated model contained only the nucleic acid molecules shown in stick representation; the protein and remainder of the R-loop are drawn in a schematic only to orient the reader as to where the simulated structure would fit into a full DNA-bound CRISPR interference complex; the Cas9-orientation R-loop is drawn with a Cas12a-like NTS gap to reflect the simulated model. The inset is a closeup of the two nucleotides on the \u2018flapped\u2019 side of the junction in the structural model; the 2'-OH is shown as a red sphere. Envelope surface area (ESA) was determined by isolating two nucleobases of the interhelical stack\u2014that on the RNA terminus and that stacked upon it from the NTS\u2014and calculating the surface area of the volume they jointly occupy over the course of each trajectory (envelope shown in cyan). High ESA values reflect unstacking of nucleobases, whereas low ESA values reflect a stacked architecture similar to that of the starting conformation. Pale lines are absolute ESA values, and bold lines are moving averages (1-ns sliding window). Data from ten independent 50-ns trajectories are shown in different colors. Simulations of a second set of sequences are described in Figure 5\u2014figure supplement 2.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Data from representative replicates of refolding experiments (small black dots) are overlaid on a best-fit curve (thick blue line) comprising a Boltzmann sigmoid with inclined baselines (y\u00a0=\u00a0(m*x+b)+((n*x+c)-(m*x+b))/(1+exp((Tm-x)/slope))). Because the dumbbells contain two separate duplexes that can, in principle, fold and unfold independently of each other, each of these molecules likely has more than two states. Thus, while there is no obvious visual sign of multiple transitions in the refolding curves, we did not attempt to extract thermodynamic parameters from the slope, and the Tm (written in the center of each plot) should only be used as a point of comparison rather than as\u00a0a determinant of a defined conformational ensemble. While the two RNA:DNA hairpins have slightly different Tm values, the much larger discrepancy in Tm of the nicked dumbbells is probably mostly due to the nature of duplex juxtaposition.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Schematics and data are presented as described in the legend to Figure 5B, which depicted simulation of Sequence 1. For Sequence 2, the nucleobases probed at the 3' R-loop boundary frequently exhibited unstacking or poorly stacked conformations (although to a lesser extent than in Sequence 1), while those probed at the 5' R-loop boundary were stably stacked over the course of the simulation. These results suggest that the difference in stacking instability detected for the interhelical junctions (with Sequence 1 or Sequence 2) are due to the difference in junction topology rather than the identities of the monitored nucleobases (pyrimidine/pyrimidine versus purine/purine).\n\nTo investigate whether differences in interhelical stacking energy could explain the difference in flank stability of the two R-loop topologies, we designed dumbbell substrates that reduced each type of R-loop boundary to a single chimeric oligonucleotide that contains both an RNA:DNA hybrid and a DNA:DNA homoduplex (Figure 5A, Figure 5\u2014figure supplement 1). A stronger interhelical stack in these dumbbells should increase the thermal stability of the folded state (Erie et al., 1987). Through temperature-dependent hyperchromicity measurements, we determined that the RNA-5\u2032 dumbbell (resembling the PAM-distal R-loop edge of Cas9) had a melting temperature 9\u00b0C higher than that of the RNA-3\u2032 dumbbell (resembling the PAM-distal R-loop edge of Cas12a) (Figure 5A, Figure 5\u2014figure supplement 1). The observed difference in melting temperature supports the idea that the resistance of 5\u2032 R-loop flanks to permanganate oxidation may emerge from a more stable interhelical stack.\n\nTo probe the structural and energetic features of the interhelical stacks in atomic detail, we built models of coaxially stacked interhelical junctions of the two types: one containing an RNA-3\u2032 end and one containing an RNA-5\u2032 end. We performed a total of 500 nanoseconds of molecular dynamics simulation on each model, and we performed a second set of simulations on models of a different nucleotide sequence. Strikingly, the 3\u2032 R-loop junctions frequently unstacked over the course of these short simulations, while the 5\u2032 R-loop junctions remained relatively stable (Figure 5B, Figure 5\u2014figure supplement 2). Observation of large-scale conformational transitions relevant to Cas12a-mediated DNA cleavage, such as fraying or bending events, would likely require much longer simulations (Leroy et al., 1988), but these short simulations suggest that the experimentally observed instability of 3\u2032 R-loop flanks may arise from frequent unstacking events that comprise an early step in the DNA bending pathway. We speculate that different levels of interhelical stacking energy may emerge from certain sequence-independent features of the two duplexes juxtaposed in each type of R-loop boundary, such as helical geometry. The difference in the stacking equilibrium then leads to an unequal propensity for base pairing in the flanking DNA homoduplex. However, whether a difference in interhelical stacking energy can fully explain the observed difference in fraying propensity will require more detailed experimentation and analysis.\n\n### Concluding remarks\n\nOur analyses have uncovered a fundamental asymmetry in the structure of the two kinds of R-loop flanks\u2014RNA-3\u2032 flanks exhibit a distorted conformation, whereas RNA-5\u2032 flanks resemble standard B-form DNA (Figure 4B)\u2014that is directly relevant to the mechanism of Cas12a-mediated DNA double-strand break formation. Specifically, the ability of the Cas12a RuvC active site to capture the target strand may rely on the active site\u2019s proximity to the uniquely malleable 3\u2032 R-loop flank, which relies in turn upon the topology of the Cas12a R-loop (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55143/elife-55143-fig6-v1.jpg)\n\n**Figure 6.:** Scissile DNA tracts are shown in yellow. The stable interhelical stack in the hypothetical inverted complex is highlighted in white.\n\nThis peculiar asymmetry in nucleic acid conformational dynamics may also have consequences for non-CRISPR-associated R-loops. R-loops are common byproducts of transcription in eukaryotic genomes, and their dysregulation has been linked to a number of diseases (Crossley et al., 2019). It has been proposed that the mode of pathogenesis, in some cases, may emerge from the aberrant activity of general DNA repair nucleases on R-loop boundaries, whose scission leads to the formation of toxic double-strand breaks (Sollier et al., 2014). Notably, in the earliest biochemical exploration of this process, purified XPG (a human DNA repair nuclease) and nuclease P1 (a secreted fungal nuclease commonly used to selectively degrade single-stranded nucleic acid structures) robustly cleaved a 3\u2032 R-loop flank but left the 5\u2032 R-loop flank largely untouched (Tian and Alt, 2000). While this result was originally attributed to an idiosyncrasy of the tested sequence, our results suggest that the flank preference may have been polarity-dependent, not sequence-dependent. The experiments of Tian and Alt could represent an independent observation of the phenomenon dissected in the present work, implying that the asymmetric structure of R-loop boundaries may affect DNase sensitivity and genome stability in multiple domains of life.\n\nCas12a\u2019s mode of dsDNA targeting contrasts with the established DNA cleavage mechanisms of other CRISPR interference complexes, which do not rely on instability in DNA flanking the R-loop. Cas9 forms R-loops with the topology that yields a stably base-paired PAM-distal R-loop flank (Figure 4A), but its second nuclease domain obviates the need to cleave outside the R-loop (Figure 1B). In type I CRISPR interference complexes, which have the same R-loop topology as Cas12a, the single-strand-specific DNase Cas3 is used to nick the displaced portion of the non-target strand after R-loop formation (Westra et al., 2012), similar to the initial non-target-strand nicking event in Cas12a. Cas3 eventually gains access to the PAM-proximal R-loop flank for processive DNA degradation, but, importantly, it uses an ATP-driven helicase to do so (Mulepati and Bailey, 2013). Thus, DNA cleavage in the 3\u2032 R-loop flank of the Cas12a interference complex seems to be a solution that maximizes the utility of its minimal enzymatic machinery.\n\nIntriguingly, all known DNA-targeting Cas12 enzymes, which are taxonomically defined by their minimal enzymatic machinery (a single RuvC DNase domain), form R-loops of the topology that allows target-strand cleavage within a PAM-distal 3\u2032 R-loop flank (Yang et al., 2016; Liu et al., 2019; Yan et al., 2019; Karvelis et al., 2020) (for target-strand cleavage properties of Cas12i, see Appendix 2). Given the importance of DNA bending in enabling a single RuvC active site to form double-strand breaks, we propose that the universal type V R-loop topology may be the product of biophysically imposed selective pressures. If a single-DNase Cas enzyme were to form R-loops of the Cas9-like topology, the target strand would be cut, by analogy, within a 5\u2032 R-loop flank. Our results indicate that 5\u2032 R-loop flanks resist fraying and bending, which may lead to slower target-strand cleavage in the hypothetical topology-inverted enzyme (Figure 6). We hypothesize that, under the strong evolutionary pressure for immune responses that efficiently produce double-strand breaks (Heitman et al., 1999), ancestral enzymes with PAM-distal 3\u2032 R-loop flanks outperformed topology-inverted variants, perhaps leading to the modern ubiquity of the Cas12a-like R-loop architecture in type V enzymes. Importantly, the extant diversity of Cas12 proteins likely did not emerge from a single CRISPR-associated ancestor but rather from many distinct transposon-encoded TnpB proteins (Koonin et al., 2017; Makarova et al., 2020), suggesting that several independent evolutionary trajectories have converged on the same R-loop topology.\n\nWhile these evolutionary speculations cannot be experimentally verified at present, our findings also provide valuable mechanistic information that will support the development of Cas12-based genome manipulation technologies. For instance, it has been proposed that Cas12-family proteins could be used as RNA-guided DNA \u2018nickases\u2019 through selective removal of target-strand cleavage activity, but those nickases reported so far are catalytically inefficient and do not totally eliminate target-strand cutting (Appendix 2) (Yamano et al., 2016; Yan et al., 2019). Our permanganate reactivity results revealed that target-strand distortion in Cas12a-generated R-loops, as probed by our experimental techniques, can be explained by conformational dynamics intrinsic to the nucleic acids (Figure 4A). Thus, engineering a type V CRISPR nickase that performs fast non-target-strand cleavage but undetectable target-strand cleavage will likely require modifications that shield or distance the RuvC active site from the intrinsically labile 3\u2032 R-loop flank. Looking further ahead, if de novo design of Cas-like RNA-guided nucleases (Rauch et al., 2019) someday enters the realm of dsDNA-targeting, knowledge of the asymmetry in R-loop flank stability may be useful in tailoring the architecture of a designed enzyme to a specific application. Our results suggest that placing a DNase domain near a 3\u2032 R-loop flank would encourage fast target-strand cleavage (for applications requiring double-strand breaks), while placing one near a 5\u2032 R-loop flank would likely inhibit target-strand cleavage (for nickase applications). Complex engineering feats will become more attainable through continued investigation into the functional, structural, and evolutionary features of natural dsDNA-targeting CRISPR systems.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMBP-AsCas12a expression plasmid</td>\n      <td>Chen et al. (2018)</td>\n      <td>RRID:Addgene_113430</td>\n      <td>See Supplementary file 1 for the sequences of all plasmids and oligonucleotides</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>T4 polynucleotide kinase</td>\n      <td>New England Biolabs</td>\n      <td>M0201S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>T4 RNA ligase 2</td>\n      <td>New England Biolabs</td>\n      <td>M0239S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>AsCas12a protein</td>\n      <td>this paper</td>\n      <td></td>\n      <td>All Cas proteins purified from E. coli BL21 Star(DE3) cells</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[\u03b3-32P]-ATP</td>\n      <td>PerkinElmer</td>\n      <td>BLU502A001MC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>potassium permanganate</td>\n      <td>Sigma-Aldrich</td>\n      <td>223468</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageQuant TL</td>\n      <td>GE Healthcare</td>\n      <td>RRID:SCR_014246</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nExpression plasmids were cloned as previously described (Chen et al., 2018; Knott et al., 2019). Briefly, protein-coding DNA segments were shuttled into custom pET-based vectors by Gibson assembly, and catalytic mutants were generated through site-directed mutagenesis by polymerase chain reaction (PCR) with blunt-end ligation (plasmid sequences are in Supplementary file 1). The parent plasmid from which the Cas12i1 expression plasmid was cloned (pET28a-mH6-Cas12i1) was a gift from Arbor Biotechnologies (Addgene plasmid #120882). AsCas12a protein expression and purification was performed as previously described (Chen et al., 2018) with the following modifications. The cells used for expression were E. coli BL21 Star(DE3). Lysis buffer was 50 mM HEPES (pH 7.5), 500 mM NaCl, 1 mM TCEP, 0.5 mM PMSF, 10 tablets/L cOmplete EDTA-free protease inhibitor cocktail (Roche), and 0.25 mg/mL chicken egg white lysozyme (Sigma-Aldrich). Ni-NTA wash buffer was 50 mM HEPES (pH 7.5), 500 mM NaCl, 1 mM TCEP, 5% glycerol, 20 mM imidazole. Ni-NTA elution buffer was 50 mM HEPES (pH 7.5), 500 mM NaCl, 1 mM TCEP, 5% glycerol, 300 mM imidazole. TEV protease cleavage was performed overnight while dialyzing against dialysis buffer (50 mM HEPES (pH 7.5), 250 mM NaCl, 1 mM TCEP, 5% glycerol). Low-salt ion exchange buffer was 50 mM HEPES (pH 7.5), 250 mM KCl, 1 mM TCEP, 5% glycerol. High-salt ion exchange buffer was 50 mM HEPES (pH 7.5), 1 M KCl, 1 mM TCEP, 5% glycerol. Gel filtration buffer was 20 mM HEPES (pH 7.5), 200 mM KCl, 1 mM TCEP, 5% glycerol. Cas12i1 was expressed and purified with the same protocol as for AsCas12a. FnCas12a and SpCas9 were expressed with the same protocol as for AsCas12a. Purification of FnCas12a only differed from that of AsCas12a in the lack of a TEV protease cleavage step, as the FnCas12a expression construct lacked a cleavable tag. Purification of SpCas9 only differed from that of AsCas12a in the ion exchange buffers and gel filtration buffer, which contained 10% glycerol instead of 5% glycerol. Each protein was expressed and purified once to create a single set of stock aliquots that were used for all experiments reported within this manuscript.\n\n### In vitro transcription of RNA\n\nGuide RNAs and some short RNAs used in R-loop mimics were produced by in vitro transcription (see Supplementary file 1). Double-stranded DNA templates for T7 RNA polymerase transcription were assembled from several overlapping DNA oligonucleotides (synthesized by IDT) by PCR. Transcription occurred in 40 mM Tris-Cl (pH 7.9 at 25\u00b0C), 25 mM MgCl2, 10 mM dithiothreitol, 0.01% (v/v) Triton X-100, and 2 mM spermidine, with 5 mM of each NTP and 100 \u00b5g/mL T7 RNA polymerase. Transcription was allowed to proceed for 2.5 hr at 37\u00b0C. Cas9 sgRNAs were transcribed with a hammerhead ribozyme on the 5\u2032 end to allow an arbitrary sequence on the 5\u2032 end of the final sgRNA. Cas12a and Cas12i crRNAs were transcribed with a hepatitis delta virus ribozyme\u00a0on the 3\u2032 end to avoid the impurities associated with non-templated nucleotide addition in the final crRNA. 20-nt spacers used in R-loop mimics were transcribed with both a 5\u2032-HHrz and a 3\u2032-HDVrz. For those RNA transcripts that contained hammerhead ribozyme, which is prone to misfolding, an additional 5 mM MgCl2 was added to the transcription products, and the reaction was placed on a thermocycler for iterative annealing ({80\u00b0C for 2 min, 37\u00b0C for 10 min} x 8, hold at 10\u00b0C). DNA in all transcription reactions was then digested with DNase I (RQ1 RNase-Free DNase, Promega) (0.05 U/\u00b5L, manufacturer\u2019s units) for 30 min at 37\u00b0C. RNA fragments released by the ribozymes were then purified by denaturing PAGE (10% acrylamide:bis-acrylamide 29:1, 7 M urea, 0.5X TBE), ethanol-precipitated, and resuspended in RNA storage buffer (0.1 mM EDTA, 2 mM sodium citrate, pH 6.4).\n\n### Nucleic acid and interference complex preparation\n\nAll DNA oligonucleotides and some RNA oligonucleotides (as indicated in Supplementary file 1) were ordered from Integrated DNA Technologies. DNA oligonucleotides used in biochemical experiments were PAGE-purified in house and resuspended in water. A260 was measured on a NanoDrop (Thermo Scientific), and concentration was estimated according to extinction coefficients determined by OligoCalc (Kibbe, 2007). DNA substrates were annealed in annealing buffer (10 mM Tris-Cl, pH 7.9 at 25\u00b0C, 50 mM KCl, 1 mM EDTA) by heating to 95\u00b0C and cooling to 25\u00b0C over the course of 40 min on a thermocycler. This annealing reaction was always performed with 40 nM radiolabeled DNA strand. When the DNA substrate comprised just two complementary strands, the unlabeled (complementary) strand was included in the annealing reaction at 80 nM. When the DNA substrate comprised more than two distinct strands, strands with the same sense as the radiolabeled strand were included at 80 nM, and strands complementary to the radiolabeled strand were included at 60 nM. For protein-free R-loop mimics, the RNA (or other spacer mimic) was included in the annealing reaction at 400 nM, to match the guide RNA concentration of a protein-containing experiment. The substrate concentrations reported in figure legends refer to the concentration of the radiolabeled strand. All crRNA and sgRNA molecules were annealed in RNA storage buffer (0.1 mM EDTA, 2 mM sodium citrate, pH 6.4) prior to use (80\u00b0C for 1 min, then moved directly to ice). To form CRISPR surveillance complexes (Cas protein + guide RNA), crRNA or sgRNA was combined with Cas protein (both at 2X final concentration in 1X reaction buffer) and allowed to equilibrate for 5 min at 37\u00b0C. To form complete interference complexes (Cas protein + guide RNA + DNA target), 1 vol of 2X surveillance complex (in 1X reaction buffer) was combined with 1 vol of 2X DNA substrate (in 1X reaction buffer) and allowed to equilibrate for 5 min at 37\u00b0C (if applicable).\n\n### DNA oligonucleotide radiolabeling\n\nStandard 5\u2032 radiolabeling was performed with T4 polynucleotide kinase (New England Biolabs) at 0.2 U/\u00b5L (manufacturer\u2019s units), 1X T4 PNK buffer (New England Biolabs), 400 nM DNA oligonucleotide, and 200 nM [\u03b3-32P]-ATP (PerkinElmer) for 30 min at 37\u00b0C, followed by a 20-min heat-killing incubation at 65\u00b0C. Radiolabeled oligos were then buffer exchanged into water using a Microspin G-25 spin column (GE Healthcare). For 3\u2032 radiolabeling (see Figure 2\u2014figure supplement 1), which was based on the mechanistic work of Nandakumar and Shuman (2004), the DNA oligonucleotide to be radiolabeled was synthesized by Integrated DNA Technologies with two modifications: the sugar moiety of the 3\u2032-most nucleotide was a ribose, and the sugar moiety of the penultimate nucleotide was a 2\u2032-O-methyl ribose. A \u2018phosphate shuttle\u2019 RNA oligonucleotide underwent a high-yield 5\u2032-radiolabeling procedure (0.5 U/\u00b5L T4 PNK, 1X T4 PNK buffer, 1 \u00b5M RNA oligonucleotide, 500 nM [\u03b3-32P]-ATP, 2 hr at 37\u00b0C, 20 min at 65\u00b0C, buffer exchanged into water). A T4 RNA ligase 2 substrate was then formed by hybridizing the phosphate shuttle (363 nM) and the DNA oligo to be radiolabeled (303 nM) to a \u2018splint\u2019 RNA (333 nM) in annealing buffer (10 mM Tris-Cl, pH 7.9 at 25\u00b0C, 50 mM KCl, 1 mM EDTA) by heating to 95\u00b0C and cooling to 25\u00b0C over the course of 40 min on a thermocycler. T4 RNA ligase 2 (New England Biolabs) at 0.5 U/\u00b5L (manufacturer\u2019s units), 1X T4 RNA ligase 2 reaction buffer, and 1 mM MgCl2 were added to this annealed structure. Ligation was allowed to proceed overnight at 37\u00b0C. The phosphate shuttle and splint RNA oligonucleotides were degraded by adding 150 mM NaOH and incubating at 95\u00b0C for 10 min. The degradation reaction was stopped by adding a stoichiometric amount of HCl and placing on ice. The 3\u2032-radiolabeled DNA oligonucleotide was then buffer-exchanged into 20 mM Tris-Cl (pH 7.9 at 25\u00b0C) using a Microspin G-25 spin column. This protocol has\u00a0~75% yield in terms of transfer of radioactivity from the phosphate shuttle RNA to the DNA oligonucleotide 3\u2032 end. The hot hydroxide treatment causes slight accumulation of depurination products, but such products comprise a trivial fraction of the total population of radiolabeled DNA and do not interfere with downstream analysis. See Supplementary file 1 for the identities and sequences of oligonucleotide reagents used in 3\u2032-radiolabeling procedures.\n\n### Permanganate reactivity experiments\n\nThe permanganate footprinting protocol was based on Pul et al. (2012). In 40 \u00b5L permanganate reaction buffer (20 mM Tris-Cl, pH 7.9 at 25\u00b0C, 150 mM KCl, 5 mM MgCl2), DNA (10 nM radiolabeled strand, 20 nM unlabeled strand), guide RNA or spacer mimic (100 nM), and protein (120 nM) were combined (omitting components as indicated for each experiment) and allowed to equilibrate to 30\u00b0C for\u00a0>5 min. 4 \u00b5L 160 mM KMnO4 (solution prepared in permanganate reaction buffer immediately before reaction) was added and allowed to react for 2 min (unless otherwise indicated) at 30\u00b0C. Reactions were quenched with 4.8 \u00b5L \u03b2-mercaptoethanol and moved to ice. 5.3 \u00b5L 500 mM EDTA was added. 45.9 \u00b5L water was added, and samples were extracted once with 100 \u00b5L 25:24:1 phenol:chloroform:isoamyl alcohol (pH 8) in 5PRIME Phase Lock Heavy tubes (Quantabio). The aqueous phase was isolated and combined with 10 \u00b5L 3 M sodium acetate (pH 5.2), 1 \u00b5L GlycoBlue coprecipitant (Invitrogen), and 300 \u00b5L ethanol, and left at \u221220\u00b0C for\u00a0>2 hr. DNA was precipitated by centrifugation, and supernatant was decanted. Wet ethanol pellets were resuspended in 10% piperidine and incubated at 90\u00b0C for 30 min. Solvent was evaporated in a SpeedVac (ThermoFisher Scientific). Approximate yield was determined by measuring radioactivity of the pellet-containing tube in a benchtop radiation counter (Bioscan QC-4000), and pellets were resuspended in an appropriate volume of loading solution (50% water, 50% formamide, 0.025% w/v bromophenol blue) to normalize signal across samples prior to resolution by denaturing PAGE. Oligonucleotide identities and sequences are shown in Supplementary file 1.\n\n### Denaturing polyacrylamide gel electrophoresis and phosphorimaging\n\nRadiolabeled DNA oligonucleotides were denatured (95\u00b0C in 50% formamide for 3 min) and resolved on a denaturing polyacrylamide gel (15% acrylamide:bis-acrylamide 29:1, 7 M urea, 0.5X TBE). Gels were dried (4 hr, 80\u00b0C) on a gel dryer (Bio-Rad) and exposed to a phosphor screen. Phosphor screens were imaged on an Amersham Typhoon phosphorimager (GE Healthcare). Phosphorimages were quantified using ImageQuant software (GE Healthcare).\n\n### Electrophoretic mobility shift assay and filter-binding assay\n\nIn both kinds of binding assays, complexes were formed in 1X binding buffer (20 mM Tris-Cl, pH 7.9 at 25\u00b0C, 150 mM KCl, 5 mM MgCl2, 1 mM TCEP, 50 \u00b5g/mL heparin, 50 \u00b5g/mL bovine serum albumin, 5% glycerol). Cas protein was first diluted in series in binding buffer, added to a fixed concentration of guide RNA, and incubated at 37\u00b0C for 5 min, then 25\u00b0C for 25 min. This complex was then added to the radiolabeled DNA probe and incubated at 37\u00b0C for 5 min, then 25\u00b0C for 1 hr. When the titrant was crRNA instead of Cas protein, the Cas12a:crRNA complex was incubated at 25\u00b0C for 30 min, added to DNA probe, and incubated at 25\u00b0C for an additional 1 hr. For the EMSA, samples were then resolved on a native PAGE gel (8% acrylamide:bis-acrylamide 29:1, 0.5X TBE, 5 mM MgCl2), which was dried and phosphorimaged. For the filter-binding assay, HT Tuffryn (Pall), Amersham Protran, and Amersham Hybond-N+ (GE Healthcare) membranes were equilibrated in 1X membrane wash buffer (20 mM Tris-Cl, pH 7.9 at 25\u00b0C, 150 mM KCl, 5 mM MgCl2, 1 mM TCEP, 5% glycerol) and assembled on a vacuum dot-blot apparatus. Radioactive samples were applied to the membranes, and each spot was washed once with 40 \u00b5L 1X wash buffer. Membranes were air-dried and phosphorimaged. For assays testing complex assembly in calcium-containing buffer, 5 mM CaCl2 was substituted for MgCl2 in the binding buffer. Oligonucleotide identities and sequences are shown in Supplementary file 1.\n\n### Enzymatic DNA cleavage assays\n\nTo initiate DNA cleavage, 1 vol of 2X surveillance complex, trans-active interference complex, or other nuclease (in 1X cleavage buffer) was combined with 1 vol of 2X radiolabeled DNA substrate (in 1X cleavage buffer) at 37\u00b0C (unless specified otherwise). For Cas12a, standard cleavage buffer was 10 mM Tris-Cl, pH 7.9 at 25\u00b0C, 150 mM KCl, 5 mM MgCl2, 1 mM TCEP. \u2018Calcium-containing\u2019 cleavage buffer contained 5 mM CaCl2 instead of MgCl2. For Cas12i1, cleavage buffer was 50 mM Tris-Cl, pH 8.0 at 25\u00b0C, 50 mM NaCl, 10 mM MgCl2. For S1 nuclease (ThermoScientific), cleavage buffer was the 1X reaction buffer provided by the manufacturer. At each timepoint, 1 vol of reaction was quenched with 1 vol of 2X quench buffer (94% formamide, 30 mM EDTA, 0.025% w/v bromophenol blue). For reactions catalyzed by Cas12i1, the 2X quench buffer also included 400 \u00b5g/mL heparin and 0.2% sodium dodecyl sulfate to prevent aggregation in gel wells. For \u2018t\u00a0=\u00a00\u2019 timepoints, surveillance complex was first added to quench buffer and mixed, followed by addition of DNA substrate. Products were then resolved by denaturing PAGE and phosphorimaging. Oligonucleotide identities and sequences are shown in Supplementary file 1.\n\n### 2-aminopurine fluorescence intensity measurements\n\nAll oligonucleotides used in these experiments were first ethanol-precipitated and resuspended to remove impurities from commercial synthesis that interfered with the optical spectra of interest. Oligonucleotides were combined to their final concentration in 1X nucleic acid spectroscopy buffer (10 mM K2HPO4/KH2PO4, pH 6.7, 150 mM KCl, 0.1 mM EDTA) and annealed on a thermocycler (95\u00b0C to 25\u00b0C over the course of 40 min). Final concentrations were 5 \u00b5M 2-AP-containing oligonucleotide, 5.5 \u00b5M complementary oligonucleotide (if present), 6 \u00b5M same-stranded oligonucleotide (if present), and 6 \u00b5M RNA oligonucleotide (if present). Samples were placed in a 1.5-mm fluorescence cuvette (Hellma Analytics) and allowed to equilibrate inside the temperature-controlled (30\u00b0C) cell of a QuantaMaster spectrofluorometer (Photon Technology International) for 3 min. The lamp power was set to 74 W, and the slit widths were set as follows (excitation slit 1: 0.5 mm; excitation slit 2: 1 mm; emission slit 1: 2 mm; emission slit 2: 0.9 mm). Fluorescence intensity (\u03bbex=310 nm (4 nm bandpass), \u03bbem=370 nm (3.6 nm bandpass)) was measured for 30 s, and the average across those 30 s was reported. Oligonucleotide identities and sequences are shown in Supplementary file 1.\n\n### Dumbbell/hairpin melting temperature determination\n\nAll oligonucleotides used in these experiments were first ethanol-precipitated to remove impurities from commercial synthesis that interfered with the optical spectra of interest. Oligonucleotides were resuspended to an estimated 2.25 \u00b5M (the extinction coefficient of a highly stacked nucleic acid structure is difficult to estimate, but the unimolecular physical processes being probed are concentration-independent, in theory) in 1X nucleic acid spectroscopy buffer (10 mM K2HPO4/KH2PO4, pH 6.7, 150 mM KCl, 0.1 mM EDTA). Samples were placed in a 1-cm CD-grade quartz cuvette (Starna Cells) with a stir bar and cap, which was placed in the sample cell of a temperature-controlled spectrophotometer (Cary UV-Vis 100). An equivalent cuvette containing only nucleic acid spectroscopy buffer was placed in the reference cell. The stir apparatus was turned on, the block was heated to 95\u00b0C, and the samples were allowed to equilibrate for 3 min. The system was cooled to 2\u00b0C at 1 \u00b0C/minute, collecting an A260 measurement every 0.5\u00b0C (averaging time\u00a0=\u00a02 s, slit bandwidth\u00a0=\u00a01 nm). Refolding of the Cas12a-like dumbbell at a slower temperature ramp rate (0.3 \u00b0C/minute) yielded results similar to those pictured, indicating that the faster ramp rate (1 \u00b0C/minute) was still slow enough that the absorbance measurements approached their equilibrium values. Oligonucleotide identities and sequences are shown in Supplementary file 1.\n\n### Molecular dynamics simulations\n\nThe starting conformation of each junction was based on a relaxed structure of a chimeric RNA:RNA/DNA:DNA duplex. A\u00a010-bp A-form RNA:RNA duplex and a 10-bp B-form DNA:DNA duplex were each built in x3DNA (Lu and Olson, 2003). These duplexes were manually placed in a coaxially stacked conformation using PyMOL (DeLano, 2010), and the junction was sealed on both strands using Coot (Emsley et al., 2010) (with slight adjustment of neighboring dihedrals to accommodate the introduced bonds). Using VMD (Humphrey et al., 1996), this system was solvated with TIP3 waters (Jorgensen et al., 1983) to a cube that stretched 15 \u00c5 past each edge of the nucleic acid duplex in its widest dimension. 150 mM NaCl and 5 mM MgCl2 were added to the solvent using VMD. The system was minimized for 2000 steps with the nucleic acid atoms held fixed, then minimized for an additional 2000 steps while allowing all atoms to move. The system was then equilibrated for 1 ns, and the final structure of the chimeric duplex was used as the basis for building the two kinds of junctions.\n\nFor the RNA-3\u2032 junction, the bond between the internal 3\u2032 end of the RNA tract and the internal 5\u2032 end of the DNA tract was removed, and a 2-nt DNA flap was modeled in an arbitrary conformation. On the opposite strand, all ribonucleotides were changed to 2\u2032-deoxyribonucleotides, and uracils were changed to thymines. The RNA-5\u2032 junction was built analogously. For both junctions, the outer termini of each duplex contained 5\u2032-OH and 3\u2032-OH. The internal DNA flap contained a 5\u2032-phosphate (RNA-3\u2032 junction) or a 3\u2032-OH (RNA-5\u2032 junction), in keeping with the chemical products of RuvC-catalyzed DNA cleavage. The internal RNA end contained a 3\u2032-OH (RNA-3\u2032 junction) or a 5\u2032-OH (RNA-5\u2032 junction). These systems were solvated and minimized as before. The systems were then equilibrated for 1 ns with the nucleic acid atoms held fixed. This system served as the starting state for 10 separate production trajectories that were each run for 50 ns with all atoms free. All equilibration and production runs were carried out in the NPT ensemble at a temperature of 300 K and pressure of 1 atm.\n\nThe simulations were performed on XSEDE computing resources (Towns et al., 2014) using the NAMD (Phillips et al., 2005) package with the CHARMM36m forcefield (Huang et al., 2017) and an integration timestep of 2 fs. The Particle Mesh Ewald approximation was used to calculate long-range electrostatic interactions (Darden et al., 1993) with a grid size of 1 \u00c5. Van der Waals interactions were truncated at 12 \u00c5. Hydrogen atoms bonded to heavy atoms were constrained with the ShakeH algorithm (Ryckaert et al., 1977). The Langevin thermostat was used to control the temperature with a damping coefficient of 1/ps, applied to non-hydrogen atoms. Pressure was controlled with the Nose-Hoover Langevin method (Martyna et al., 1994; Feller et al., 1995), with a Langevin piston period of 200 fs and a piston decay time of 50 fs.\n\nFor each trajectory, the coordinates of the two nucleobases at the junction on the flapped strand were isolated for further analysis at a sampling rate of 1/ps. Envelope surface area (ESA), defined as the solvent-exposed surface area of the two isolated nucleobases, was determined in PyMOL and serves as a metric of the degree of base stacking (bases that are well-stacked have a low ESA, whereas bases that are unstacked have a high ESA). All figures were prepared in PyMOL.\n\n### DNA size standard preparation\n\nTo identify a known specific cleavage site within the protospacer, radiolabeled DNA duplexes were digested with TseI (New England Biolabs) (0.025 U/\u00b5L final concentration, manufacturer\u2019s units) in DNase buffer (10 mM Tris-Cl, pH 7.9 at 25\u00b0C, 150 mM KCl, 5 mM MgCl2, 1 mM TCEP) for 10 min at 65\u00b0C. To generate a single-nucleotide ladder, the same radiolabeled DNA oligonucleotides were separately digested with nuclease P1, DNase I, trans-active AsCas12a, and T5 exonuclease (which all leave 5\u2032 phosphate and 3\u2032-OH on their cleavage products, chemically equivalent to products of Cas12a cis cleavage), and products were pooled at a 1:1:1:1 ratio (T5 exonuclease was not used for 5\u2032-radiolabeled oligonucleotides) prior to loading on the gel. Nuclease P1 (New England Biolabs) digests were performed with single-stranded radiolabeled DNA oligonucleotide and 0.5 U/\u00b5L enzyme (manufacturer\u2019s units) in DNase buffer for 3 min at 37\u00b0C. DNase I (RQ1 RNase-Free DNase, Promega) digests were performed with radiolabeled DNA duplex and 0.01 U/\u00b5L enzyme (manufacturer\u2019s units) in DNase buffer for 3 min at 37\u00b0C. AsCas12a digests were performed with single-stranded radiolabeled DNA oligonucleotide, 100 nM AsCas12a, 120 nM crRNA, and 50 nM pre-cleaved DNA activator in DNase buffer for 5 min at 37\u00b0C. T5 exonuclease (New England Biolabs) digests were performed with radiolabeled DNA duplex and 0.01 U/\u00b5L enzyme (manufacturer\u2019s units) in DNase buffer for 10 min at 37\u00b0C. All reactions were stopped by addition of 1 vol 2X quench buffer (94% formamide, 30 mM EDTA, 0.025% w/v bromophenol blue).\n\n### Steady-state Cas12a trans DNA cleavage kinetic analysis\n\nKinetics of ssDNA cleavage were assessed by monitoring the rate of dequenching of a fluorophore-DNA-quencher substrate, as in Chen et al. (2018). Briefly, trans-active holoenzyme (final concentrations: 100 nM AsCas12a, 120 nM crRNA, 10 nM pre-cleaved duplex activator) was added to various concentrations of fluorophore-DNA-quencher substrate, and fluorescence (excitation filter: 485 nm/20 bandpass, emission filter: 528 nm/20 bandpass) was monitored over time at 37\u00b0C on a Cytation5 fluorescence plate-reader (BioTek). V0 was determined as (slopeall components - slopeno DNA activator)\u00d7(fluorescence intensity:[product] conversion factor). The fluorescence intensity:[product] conversion factor was determined empirically for each separate concentration of fluorescent reporter (by equilibrium titration of purified cleaved/uncleaved reporter), as the relationship departed from linearity at higher substrate concentrations. Oligonucleotide identities and sequences are shown in Supplementary file 1.\n\n### Model fitting\n\nAll models were fit by the least-squares method in Prism 7 (GraphPad Software). The model used for each dataset is described in the corresponding figure legend.\n\n### Analysis and interpretation of permanganate reactivity data\n\nIn this work, data describing permanganate reactivity are presented in three ways:\n\nWhile visually inspecting phosphorimages from permanganate experiments, note that there are occasionally faint bands corresponding to strand cleavage at cytosines (permanganate oxidizes cytosines, albeit much more slowly than thymines) and at purines (which occurs during hydroxide treatment in the 3\u2032-radiolabeling protocol). Such bands constituted a trivial fraction of the total lane volume and did not meaningfully affect analysis.\n\nAdditionally, visual inspection of the raw phosphorimages can be informative but should be approached with caution because the absolute volume of a given band is meaningless without considering other bands that may have detracted from its signal. For example, a strongly oxidized thymine (thymine 1) may yield only a faint band if another strongly oxidized thymine (thymine 2) lies between thymine 1 and the radiolabeled terminus of the DNA oligonucleotide. If all thymine oxidation events are independent of each other (i.e., thymine 1 has the same oxidation probability irrespective of whether thymine 2, or any other thymine, has been oxidized or not), the oxidation probability of thymine 1 can be reconstructed by considering the thymine-1 band only as a subpopulation of the bands above it on the gel. In other words, out of all the DNA molecules on the gel for which oxidation of thymine 1 would have been observable (i.e., cleavage fragments at or above the thymine-1 fragment on the gel), what fraction of those molecules were in fact oxidized at thymine 1? In reality, clusters of thymines have been observed to mutually enhance oxidation probability (Nomura and Okamoto, 2008), so perfect independence cannot be assumed. Thus, the parameters described below are imperfect measures of the true rate of oxidation at each thymine.\n\nBeyond uncertainty in the measurement, it is also unknown to what extent the probing technique is changing the fundamental biophysical features of the DNA structures. Notably, thymine\u2019s reaction with permanganate breaks the planarity of the nucleobase and, consequently, its capacity to stack normally. In an A/T-rich sequence like our R-loop flank (Figure 2B), an oxidation event at thymine 1 could, in principle, begin a chain reaction of oxidation events as each adjacent thymine successively loses planarity and unstacks, exposing its neighbor to the oxidant. If such chain reactions occurred quickly as compared to the timescale of the assay (2 min), the distribution of band volumes would be skewed toward thymine 9. In reality, the band volume distributions are skewed sharply toward thymine 1 (Figure 2\u2014figure supplement 3), suggesting that, on the assayed timescale, the majority of oxidation events do not lead to additional oxidation events. Still, the possibility of chain reactions should be kept in mind when interpreting the observed permanganate reactivity patterns, in which reactivity decreases with distance from the R-loop edge (Figure 2B). While these patterns are consistent with fraying duplex termini, the apparent \u2018depth\u2019 of the fraying events should be interpreted as an upper limit on what would occur in a substrate unexposed to permanganate.\n\nFinally, the structural determinants of permanganate reactivity should be considered carefully when using these data to draw conclusions about DNA conformation. While high permanganate reactivity is often associated with \u2018single-strandedness\u2019 or \u2018lack of base pairing,\u2019 the reaction is more precisely dependent upon the ability of a permanganate molecule to approach the C5=C6 bond of the thymine nucleobase. This approach could be facilitated by assumption of a non-B-form helical geometry, global melting of the DNA duplex, or \u2018flipping\u2019 of a thymine out of the duplex without dramatically affecting the helical geometry (Bui et al., 2003). Furthermore, a thymine lying on a duplex terminus could, in principle, be approached and attacked while base paired, albeit from a restricted angle. This possibility is especially important to consider for thymine 1 of our A/T-rich R-loop flank (Figure 2B). The reactivity of this thymine varies in RNA-free DNA bubble controls that have different bubble sequences (Figure 4\u2014figure supplement 3), perhaps reflecting differences in the propensities of individual (unpaired) neighboring bases to stack on the duplex-terminal thymine. Finally, because thymines within the RNA:DNA hybrid of R-loop structures have two possible base pairing partners (DNA versus crRNA), the conformational ensemble at these positions is highly complex, and we did not attempt to draw any structural conclusions from their oxidation rates.\n\nGiven the aforementioned caveats, the PRI and FO metrics described below should be interpreted as estimates rather than accurate measurements of rate and extent of reaction. Additionally, permanganate reactivity data should be considered alongside the orthogonal techniques used in this work to assess the structure, energetics, and conformational dynamics of interhelical junctions. The definitions of permanganate reactivity index (PRI) and fraction oxidized (FO) are as follows:\n\nLet $v_{i}$ denote the volume of band $i$ in a lane with $n$ total bands (band 1 is the shortest cleavage fragment, band $n$ is the topmost band corresponding to the starting/uncleaved DNA oligonucleotide). The probability of oxidation at thymine $i$ is defined as:\n\n$$\np_{i}=\\frac{v_{i}}{\\sumj=inv_{j}}\n$$\n\nNote that this relationship allows determination of $p_{i}$ even if the values of $p_{1\\leqx<i}$ are unavailable (e.g., if the shortest cleavage products have been run off the bottom of the gel). Assuming thymine oxidation occurs with a uniform probability across the time course of permanganate application (see exponential curve in Figure 2\u2014figure supplement 3)\u00a0the rate constant associated with oxidation probability $p_{i}$ is defined as:\n\n$$\nk_{i}=\\frac{ln\u2061(\\frac{1}{1-p_{i}})}{t}\n$$\n\nwhere $t$ is the time of quenching. We found that across experimental replicates there was systematic variation in $k$ (e.g., $k$ was universally smaller in replicate 2 than in replicate 1 for any given thymine), likely due to variability in the oxidation activity of each new preparation of the potassium permanganate solution. To allow comparison across replicates, we normalized all values of $k$ to that of a reference thymine ($k_{ref}$) whose conformational dynamics were not expected to be affected by R-loop formation or associated substrate variations (the thymine 10 nt from the end of the 5\u2032-radiolabeled oligo, present in all DNA substrates tested). For every set of replicate experiments, which each involved a new preparation of potassium permanganate solution, we determined the average rate constant of the reference thymine across all substrates ($k-_{ref}$). The global average of $k_{ref}$ across all experiments and all replicates ($\\mu_{ref}$) was taken to be the true value of $k_{ref}$. The corrected value of $k_{i}$ for each thymine was then taken to be:\n\n$$\nk_{i,corr}=\\frac{\\mu_{ref}}{k-_{ref}}k_{i}\n$$\n\nThe permanganate reactivity index was then calculated as:\n\n$$\nPRI_{i}=\\frac{k_{i,corr}}{k_{ss,corr}}\n$$\n\nwhere $k_{ss,corr}$ is the reference-corrected oxidation rate constant for a thymine unassociated with a stable base-pairing partner. The value of $k_{ss,corr}$ used in our calculations was 0.79 min\u22121, empirically determined for an arbitrarily chosen thymine within a DNA bubble (Figure 2\u2014figure supplement 3).The estimated fraction of DNA molecules oxidized on at least one thymine within the R-loop flank (correcting to the value expected if the potassium permanganate solution had its average oxidation activity) was then calculated as:\n\n$$\np_{i,corr}=1-e^{-k_{i,corr}t}\n$$\n\n\n\n$$\nFO=1-\\proda\\inRLF1-p_{a,corr}=1-exp\u2061-\\suma\\inRLFk_{a,corr}t\n$$\n\nwhere $RLF$ denotes the set of band indices corresponding to the thymines labeled T1 through T9 in Figure 2B, combining data from both the NTS-radiolabeled and TS-radiolabeled experiments. Note that the PRI metric is subject to increased uncertainty as $p_{i}$ approaches 1, where the slope of $ln\u2061(\\frac{1}{1-p_{i}})$ approaches infinity.\n",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "f08aac51-c054-43fb-aba6-ea6998866192",
+      "submission_id": "2f240c62-cc2a-4c46-a4a6-0d4243aae366",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Scott Bailey, Department of Biochemistry and Molecular Biology, Johns Hopkins Bloomberg School of Public Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55143.sa1](https://doi.org/10.7554/eLife.55143.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper answers the puzzling question of how does a RNA guided CRISPR nuclease with a single active site (Cas12a) efficiently cleave both strands of its substrate DNA, an important question given Cas12a's use in gene editing? When Cas12a binds DNA the target strand base pairs with the guide RNA and the non-target strand is displaced forming an R-loop structure. It was found that this R-loop structure specifically destabilizes the double-stranded DNA 3' of the R-loop and that Cas12a the exploits this destabilized DNA to cut the second strand.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"CRISPR-Cas12a exploits R-loop asymmetry to form double-strand breaks\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Cynthia Wolberger as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Ailong Ke (Reviewer #1); Malcolm F White (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript by Cofsky et al. explores the mechanistic details underlying the poorly understood second strand cleavage catalysed by Cas12a \u2013 a type V CRISPR effector complex with a single RuvC active site. The crux of the question is to gain a molecular understanding for the observed activity of Cas12a, which cleaves the non-target strand and then the distorted target strand in the same active site. This question lies at the heart of the utility of Cas12a for genome engineering by targeted DSB formation.\n\nThe authors first use the classical method of Permanganate probing to assess the propensity of DNA bound by dCas12a to adopt a single stranded structure, identifying a region 3' of the R-loop that has a ss nature \u2013 an area coincident with the target site for Cas12a cleavage (Figure 2). They go on to demonstrate that the position of the R-loop junction dictates the site of target strand cleavage by Cas12a (Figure 3), and that R-loops specifically destabilise 3' R-loop flanks in a protein independent manner (Figure 4). This remarkable observation is confirmed using model nucleic acid structures (dumbbells), and appears to be due to differences in interhelical stacking (Figure 5).\n\nOverall, this study reveals significant differences in the stability of R-loop:DNA junctions, irrespective of protein. On the one hand, this is a very interesting observation that could have widespread implications in nucleic acid biology. On the other, it remains unproven that the fundamental stability differences observed here have strong implications for the mechanism of Cas12a, as the data shown correlation but not necessarily a causative link between DNA junction stability and target strand cleavage. After all, nucleases such as Cas12a are quite capable of using binding energy to manipulate nucleic acid substrates to a remarkable degree, and the Cas12a second strand cleavage reaction requires considerable more than merely fraying of the R-loop junction.\n\nThat said, this is an interesting manuscript presenting a number of carefully designed experiments that yield some important new data with potentially wide relevance. The significance of the work is discussed in a thoughtful way and the paper will represent an impactful contribution to the field. We propose an essential revision that does not require new experiments.\n\nEssential revision:\n\nSection about \"difference in interhelical stacking energy may underlie asymmetric R-loop flank stability\": Here the authors \"hypothesize that the asymmetry may emerge from energetic differences in the coaxial stacking of a DNA homoduplex on either end of an RNA:DNA hybrid\", which got me lost. The authors refer to crystal structures of the Cas12a/R-loop structure in the 2019 Swarts and Jinek paper (PDB 6I1K and 6I1L). 6I1K best depicts the Cas12a/R-loop, however, the PAM-distal DNA duplex is not coaxially stacked underneath the DNA/RNA hybrid in the structure, it is rotated 180\u00b0 to the side. I am not sure whether the discussion in this section and the molecular dynamics simulations in Figure 5 can directly explain the fraying propensity in PAM-distal DNA. Perhaps the authors should consider the possibility that the twisting of the backbone at the R-loop junction drives the DNA unwinding, which involves base-flipping in a sequential fashion from the junction of the R-loop. This rotation may be easier from the 3'-end of the R-loop because the backbone has a higher degree of rotation freedom, which means lower energetic barrier.\n",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "be2166fe-380c-48c4-9dd9-90982024f8f8",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C1",
+      "claim": "Type V CRISPR-Cas interference proteins use a single RuvC active site to make RNA-guided breaks in double-stranded DNA substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Type V CRISPR-Cas interference proteins use a single RuvC active site to make RNA-guided breaks in double-stranded DNA substrates, an activity essential for both bacterial immunity and genome editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a defining characteristic of Type V CRISPR-Cas proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "6a20ee1b-c747-4a4e-81f6-ab14c3f1951f",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C2",
+      "claim": "Cas12a initiates DNA cutting by forming a 20-nucleotide R-loop in which the guide RNA displaces one strand of a double-helical DNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The best-studied of these enzymes, Cas12a, initiates DNA cutting by forming a 20-nucleotide R-loop in which the guide RNA displaces one strand of a double-helical DNA substrate, positioning the DNase active site for first-strand cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established mechanism of Cas12a action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "e3c33fd3-2615-497e-99c0-42c9d4fd0417",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C3",
+      "claim": "DNA flanking the RNA-3\u2032 side of R-loops exhibits intrinsic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we detect intrinsic instability in DNA flanking the RNA-3\u2032 side of R-loops, which Cas12a can exploit to expose second-strand DNA for cutting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "9728b8b3-b2f0-49e5-8ae5-e63e26af5c56",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C4",
+      "claim": "DNA flanking the RNA-5\u2032 side of R-loops is not intrinsically unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, DNA flanking the RNA-5\u2032 side of R-loops is not intrinsically unstable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data comparing Cas12a and Cas9 R-loop structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "176c80df-3fcc-449d-bdac-2c706abec26e",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C5",
+      "claim": "Cas12a can exploit R-loop flank instability to expose second-strand DNA for cutting.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we detect intrinsic instability in DNA flanking the RNA-3\u2032 side of R-loops, which Cas12a can exploit to expose second-strand DNA for cutting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation stated in the abstract and supported by permanganate reactivity and cleavage site distribution experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "4c008761-6258-4e7f-b5f4-5ffbb3dfcb47",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C6",
+      "claim": "Asymmetry in R-loop structure may explain the uniformity of guide RNA architecture in type V CRISPR-Cas systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This asymmetry in R-loop structure may explain the uniformity of guide RNA architecture and the single-active-site cleavage mechanism that are fundamental features of all type V CRISPR-Cas systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion stated in the abstract based on the observed asymmetry in R-loop flank stability.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "621f30b0-5b99-4606-bd9c-939a43bc9d5f",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C7",
+      "claim": "Both Cas9 and Cas12a use CRISPR RNA (crRNA) to recognize matching double-stranded DNA sequences by forming an R-loop structure in which 20 nucleotides of the crRNA base pair with one strand of the target DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Cas9 and Cas12a use CRISPR RNA (crRNA) to recognize matching double-stranded DNA (dsDNA) sequences by forming an R-loop structure in which 20 nucleotides (nts) of the crRNA (the crRNA 'spacer') base pair with one strand of the target DNA (Figure 1A,B; Jinek et al., 2012; Jiang et al., 2016; Zetsche et al., 2015; Swarts et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with supporting citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "a088d60f-741b-45bd-a7e7-0b3fa7bd6e6a",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C8",
+      "claim": "Both Cas9 and Cas12a must bind to a protospacer-adjacent motif (PAM) to initiate R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both protein families must bind to a protospacer-adjacent motif (PAM), a short DNA sequence next to the crRNA-complementary sequence, to initiate R-loop formation (Bolotin et al., 2005; Mojica et al., 2009; Sternberg et al., 2014; Singh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with supporting citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "172100d3-5a87-4021-84ba-c2300f58c599",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C9",
+      "claim": "Cas9 employs two active sites to generate a blunt DNA double-strand break near the PAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 employs two active sites to generate a blunt DNA double-strand break near the PAM (Jinek et al., 2012; Gasiunas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with supporting citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "617f33dd-f8ce-42e6-9c80-a79918d1bdde",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C10",
+      "claim": "Cas12a uses a single active site to make staggered cuts distant from the PAM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Cas12a uses a single active site to make staggered cuts distant from the PAM, and the same active site can cleave free single-stranded DNA (ssDNA) non-specifically once the enzyme has been activated by specific target binding (Figure 1B; Zetsche et al., 2015; Swarts et al., 2017; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with supporting citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "30a82e97-7609-4ddc-b571-611637278250",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C11",
+      "claim": "Cas12a can cleave free single-stranded DNA non-specifically once activated by specific target binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Cas12a uses a single active site to make staggered cuts distant from the PAM, and the same active site can cleave free single-stranded DNA (ssDNA) non-specifically once the enzyme has been activated by specific target binding (Figure 1B; Zetsche et al., 2015; Swarts et al., 2017; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with supporting citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "95182e2c-3aa1-4b5f-9f6a-112ef6973728",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C12",
+      "claim": "The position of the 20-nucleotide spacer sequence in Cas12a crRNAs is opposite to that in Cas9 crRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the position of the 20-nucleotide spacer sequence in Cas12a crRNAs is opposite to that in Cas9 crRNAs (3\u2032 end versus 5\u2032 end, respectively) (Zetsche et al., 2015; Deltcheva et al., 2011), and consequently, R-loop formation by each enzyme family occurs with opposing directionality (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with supporting citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "25cfd428-97ad-4e7d-836d-6fc5d74ad0ed",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C13",
+      "claim": "R-loop formation by Cas12a and Cas9 occurs with opposing directionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the position of the 20-nucleotide spacer sequence in Cas12a crRNAs is opposite to that in Cas9 crRNAs (3\u2032 end versus 5\u2032 end, respectively) (Zetsche et al., 2015; Deltcheva et al., 2011), and consequently, R-loop formation by each enzyme family occurs with opposing directionality (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with supporting citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "bcf1c2f8-84af-4d98-aff6-6abe02113f27",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C14",
+      "claim": "Cas12a belongs to the type V family of CRISPR effector proteins, defined by the presence of a single RuvC DNase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas12a belongs to the type V family of CRISPR effector proteins (whose names each begin with 'Cas12'), a classification defined by the presence of a single RuvC DNase domain (Koonin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "5c0b97da-3e8c-4469-92f0-37a693f9490b",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C15",
+      "claim": "All Cas12 interference complexes share a spacer-3\u2032 crRNA architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, although this classification is not strictly phylogenetic\u2014the 'family' is actually a paraphyletic assembly of several evolutionarily independent protein lineages (Koonin et al., 2017; Makarova et al., 2020)\u2014a second shared feature of all Cas12 interference complexes is the previously mentioned spacer-3\u2032 crRNA architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "c2462758-51aa-437d-8197-0af357866f02",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C16",
+      "claim": "The RuvC domain of Cas12a exhibits stringent specificity for single-stranded substrates when activated for cleavage of free DNA in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "The RuvC domain of Cas12a exhibits stringent specificity for single-stranded substrates when activated for cleavage of free DNA in trans (Appendix 1) (Chen et al., 2018), suggesting that substrates cleaved in cis (i.e., the two DNA strands of a protein-bound R-loop) are also single-stranded during each of their respective cleavage events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "f5190f55-2ad6-4787-aceb-286507d1d588",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C17",
+      "claim": "Non-target-strand cleavage is a prerequisite of DNA target-strand cutting by Cas12a.",
+      "claim_type": "EXPLICIT",
+      "source": "This conformation likely permits initial non-target-strand cleavage, which is a prerequisite of DNA target-strand (TS) cutting (Figure 1B; Swarts and Jinek, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "1ab88e62-5c74-43b2-9415-ebddcb098766",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C18",
+      "claim": "In crystal structures of Cas12a-bound R-loops, the target-strand cleavage site is located within an ordered DNA duplex outside the R-loop, approximately 25 \u00c5 away from the RuvC active site.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in these same crystal structures, the target-strand cleavage site is located within an ordered DNA duplex outside the R-loop,~25 \u00c5 away from the RuvC active site and inverted with respect to the most probable catalytic orientation (Figure 1A; Swarts et al., 2017; Swarts and Jinek, 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Introduction with supporting citations and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "7b30bdd9-5041-42fa-b115-4ee721572b55",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C19",
+      "claim": "Cas12a binding to DNA distorts the target-strand cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspected that dsDNA substrates of Cas12a would need to access a bent conformation to undergo target-strand cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the hypothesis stated at the beginning of the Results section, which is then tested experimentally.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "80143597-9cc5-4ca6-9f13-47ac7be80641",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C20",
+      "claim": "Permanganate selectively oxidizes thymines in non-B-form DNA structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In this assay, permanganate selectively oxidizes thymines in non-B-form (e.g., locally melted or otherwise distorted) DNA structures, and oxidized positions are subsequently identified through piperidine-catalyzed strand cleavage (which occurs specifically at thymidine glycols) and denaturing polyacrylamide gel electrophoresis (PAGE) (Figure 2A; Bui et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a supporting citation describing the permanganate footprinting method.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "28e57049-e25f-4040-a6fa-04e61aa7b5f5",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C21",
+      "claim": "Thymines within the non-target strand displaced by the crRNA were heavily oxidized in permanganate assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous applications of the permanganate assay to CRISPR-Cas-generated R-loops (Xiao et al., 2017), thymines within the portion of the non-target strand displaced by the crRNA were heavily oxidized, reflecting the single-strandedness of this DNA tract (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 2A showing the experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "e5afd50a-bd41-4bf5-af8f-abc22c43d818",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C22",
+      "claim": "Significant oxidation was observed at a thymine near the target-strand cleavage site in dCas12a-generated R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also observed significant oxidation at a thymine near the target-strand cleavage site (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 2A showing the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "d22fda3c-9991-4551-83f2-5e233ec5c25b",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C23",
+      "claim": "Cas12a binding promotes distortion of DNA in the PAM-distal flank of the R-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "At each step, we observed an increase in permanganate reactivity on both strands of the DNA that persisted seven base pairs past the end of the crRNA, suggesting that Cas12a binding promotes distortion of DNA in the PAM-distal flank of the R-loop (Figure 2B, Figure 2\u2014figure supplement 3, see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 2B showing the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "2d6dcc15-495e-4a6d-add4-4f021aac10c2",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C24",
+      "claim": "Permanganate reactivity in the R-loop flank decreased with distance from the R-loop edge.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, permanganate reactivity decreased with distance from the R-loop edge (Figure 2B), consistent with NTS:TS fraying events that initiate from the R-loop edge (see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 2B showing the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "d444e3c9-bf58-4dab-b3db-8e44c9fa3bee",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C25",
+      "claim": "The R-loop flank populates highly distorted, and probably unpaired, conformations when bound to Cas12a in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while the R-loop flank has the potential for complete base pairing, this DNA tract populates highly distorted, and probably unpaired, conformations when bound to Cas12a in solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on permanganate reactivity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "4c77bd95-feb1-4a52-ae1d-cf6e94bd1f99",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C26",
+      "claim": "A change in the location of duplex instability changes which phosphodiester bonds in the target strand are cleaved by the RuvC DNase.",
+      "claim_type": "EXPLICIT",
+      "source": "A prediction of this model is that a change in the location of duplex instability should also change which phosphodiester bonds in the target strand are cleaved by the RuvC DNase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction stated in the Results section that is then tested experimentally.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "3fc3f0df-244b-405f-aa12-017b616a81a0",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C27",
+      "claim": "The A/T tract was highly reactive in the full R-loop but had limited reactivity in the truncated R-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "By implementing the permanganate assay on these complexes, we found that the A/T tract was highly reactive in the full R-loop but had limited reactivity in the truncated R-loop, suggesting that the distorted region had migrated with the edge of the R-loop (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 3A showing the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "54e6ffc3-7cb3-4fa1-bfe5-0ba4865e3f7a",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C28",
+      "claim": "As the R-loop edge was shifted toward the PAM, the target-strand cut-site distribution shifted toward the new R-loop edge.",
+      "claim_type": "EXPLICIT",
+      "source": "As the R-loop edge was shifted toward the PAM, the target-strand cut-site distribution shifted toward the new R-loop edge (Figure 3B, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 3B showing the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "d0479a68-31fb-4033-9f10-e196d05644e8",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C29",
+      "claim": "When compensatory mutations were made in the crRNA to restore the original R-loop size, the target-strand cut sites moved back toward their original distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "When compensatory mutations were made in the crRNA to restore the original R-loop size, the target-strand cut sites moved back toward their original distribution (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 3\u2014figure supplement 5 showing the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "705b6f9d-07ed-4916-895d-e573ce305f31",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C30",
+      "claim": "The non-target-strand cut-site distribution did not change markedly as the R-loop was truncated.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the non-target-strand cut-site distribution did not change markedly as the R-loop was truncated, suggesting that non-target-strand cleavage is unrelated to nucleotide unpairing in the R-loop flank (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 3\u2014figure supplement 6 showing the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "7102c36e-f592-4fc5-bbac-46315176193c",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C31",
+      "claim": "The site of Cas12a-mediated target-strand cleavage is tied to the location of weakened base pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results imply that the site of Cas12a-mediated target-strand cleavage is tied to, and perhaps dictated by, the location of weakened base pairing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on the cut-site distribution experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "21e22d34-c22d-4038-b3d3-45f185b5949b",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C32",
+      "claim": "Of three DNA targets that differed only in the sequence of their R-loop flank, the GC-rich substrate was cleaved most PAM-proximally.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this prediction, of three DNA targets that differed only in the sequence of their R-loop flank\u2014native protospacer, AT-rich, or GC-rich\u2014the GC-rich substrate was cleaved most PAM-proximally (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 3C showing the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "2812cdc8-3f90-4aff-b45d-cc1cc8c0c9e2",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C33",
+      "claim": "Eliminating NTS:TS base pairing at positions 21\u201323 led to fast and PAM-distally shifted cleavage of the target strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, eliminating NTS:TS base pairing at positions 21\u201323 led to fast and PAM-distally shifted cleavage of the target strand in all cases (Figure 3C, Figure 3\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 3C and Figure 3\u2014figure supplement 7 showing the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "efb4efe7-d42d-42ee-81e4-c6615568c61b",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C34",
+      "claim": "DNA distortion in the R-loop flank is an important enabler of Cas12a-catalyzed target-strand cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that DNA distortion in the R-loop flank is an important enabler of Cas12a-catalyzed target-strand cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "15af147c-2f41-4b9a-ae7d-32a7e5aeccd0",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C35",
+      "claim": "The A/T tract in a protein-free R-loop mimic was slightly more reactive to permanganate than in the Cas12a-generated R-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "When we probed the permanganate reactivity of this protein-free R-loop, we found that the A/T tract was slightly more reactive than in the Cas12a-generated R-loop experiment (Figure 4A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 4A showing the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "2c6443f8-3d90-4631-985e-5d540f744504",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C36",
+      "claim": "Distortion of the R-loop flank is a phenomenon intrinsic to the R-loop boundary itself.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that distortion of the R-loop flank is a phenomenon intrinsic to the R-loop boundary itself and that the protein only needs to hold the R-loop open to promote flexibility in the adjacent DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on the protein-free R-loop mimic experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "14d0ec4f-24b8-4c0d-8e11-0c08f0176084",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C37",
+      "claim": "The PAM-distal flank of the Cas9 R-loop experienced nearly background oxidation levels both in the protein-bound R-loop and in the protein-free mimic.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found that the flank experienced nearly background oxidation levels both in the protein-bound R-loop (with dCas9 at a saturating concentration, Figure 4\u2014figure supplement 2) and in the protein-free mimic, suggesting that unlike 3\u2032 R-loop flanks, 5\u2032 R-loop flanks are not naturally unstable (Figure 4A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 4A and Figure 4\u2014figure supplement 1 showing the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "2ee801ed-481e-4e63-8463-ceca7cab2a4d",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C38",
+      "claim": "An RNA:DNA hybrid can either stabilize or destabilize a juxtaposed DNA:DNA duplex terminus, depending on whether the hybrid terminus contains a 5\u2032 RNA end or a 3\u2032 RNA end.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, an RNA:DNA hybrid can either stabilize or destabilize a juxtaposed DNA:DNA duplex terminus, depending on whether the hybrid terminus contains a 5\u2032 RNA end or a 3\u2032 RNA end, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on the permanganate reactivity experiments comparing 3\u2032 and 5\u2032 R-loop flanks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "b07a6d2b-49e2-4727-9813-41a055935483",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C39",
+      "claim": "There is a fundamental energetic difference in the conformational landscapes of 3\u2032 versus 5\u2032 R-loop flanks.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest a fundamental energetic difference in the conformational landscapes of 3\u2032 versus 5\u2032 R-loop flanks (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion stated in the Results section based on the permanganate reactivity experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "e25fd7c0-31e4-4479-93b4-16f6a49ffe6b",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C40",
+      "claim": "The conformational difference between 3\u2032 and 5\u2032 R-loop flanks is intrinsic to strand polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational difference between 3\u2032 and 5\u2032 R-loop flanks is intrinsic to strand polarity, as the trends in permanganate reactivity were robust to changes in nucleic acid sequence, end chemistry, and non-target-strand cleavage state (Figure 4\u2014figure supplements 3\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to multiple supplementary figures showing the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "c1dcf410-5808-45ea-8487-6250e0462f60",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C41",
+      "claim": "The RNA-5\u2032 dumbbell had a melting temperature 9\u00b0C higher than that of the RNA-3\u2032 dumbbell.",
+      "claim_type": "EXPLICIT",
+      "source": "Through temperature-dependent hyperchromicity measurements, we determined that the RNA-5\u2032 dumbbell (resembling the PAM-distal R-loop edge of Cas9) had a melting temperature 9\u00b0C higher than that of the RNA-3\u2032 dumbbell (resembling the PAM-distal R-loop edge of Cas12a) (Figure 5A, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 5A showing the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "8f229735-423c-44c2-b67c-5e10a72f2be2",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C42",
+      "claim": "The 3\u2032 R-loop junctions frequently unstacked over the course of molecular dynamics simulations, while the 5\u2032 R-loop junctions remained relatively stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the 3\u2032 R-loop junctions frequently unstacked over the course of these short simulations, while the 5\u2032 R-loop junctions remained relatively stable (Figure 5B, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 5B showing the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "67be9b48-2ad2-4ad7-baed-837426e968e3",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C43",
+      "claim": "The experimentally observed instability of 3\u2032 R-loop flanks may arise from frequent unstacking events that comprise an early step in the DNA bending pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Observation of large-scale conformational transitions relevant to Cas12a-mediated DNA cleavage, such as fraying or bending events, would likely require much longer simulations (Leroy et al., 1988), but these short simulations suggest that the experimentally observed instability of 3\u2032 R-loop flanks may arise from frequent unstacking events that comprise an early step in the DNA bending pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on the molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "15857d06-e903-4489-8865-767d56a0f739",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C44",
+      "claim": "The ability of the Cas12a RuvC active site to capture the target strand may rely on the active site's proximity to the uniquely malleable 3\u2032 R-loop flank.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the ability of the Cas12a RuvC active site to capture the target strand may rely on the active site's proximity to the uniquely malleable 3\u2032 R-loop flank, which relies in turn upon the topology of the Cas12a R-loop (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion stated in the Discussion section based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "f43792d0-8e4c-4e74-9d89-7844859fa9e3",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C45",
+      "claim": "All known DNA-targeting Cas12 enzymes form R-loops of the topology that allows target-strand cleavage within a PAM-distal 3\u2032 R-loop flank.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, all known DNA-targeting Cas12 enzymes, which are taxonomically defined by their minimal enzymatic machinery (a single RuvC DNase domain), form R-loops of the topology that allows target-strand cleavage within a PAM-distal 3\u2032 R-loop flank (Yang et al., 2016; Liu et al., 2019; Yan et al., 2019; Karvelis et al., 2020) (for target-strand cleavage properties of Cas12i, see Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "aba15171-3218-4446-9520-8a384cf05cc5",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C46",
+      "claim": "The universal type V R-loop topology may be the product of biophysically imposed selective pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the importance of DNA bending in enabling a single RuvC active site to form double-strand breaks, we propose that the universal type V R-loop topology may be the product of biophysically imposed selective pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion stated in the Discussion section based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "bd48d9c0-8c54-47f0-b4aa-7598bafa628d",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C47",
+      "claim": "Under strong evolutionary pressure for immune responses that efficiently produce double-strand breaks, ancestral enzymes with PAM-distal 3\u2032 R-loop flanks may have outperformed topology-inverted variants.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that, under the strong evolutionary pressure for immune responses that efficiently produce double-strand breaks (Heitman et al., 1999), ancestral enzymes with PAM-distal 3\u2032 R-loop flanks outperformed topology-inverted variants, perhaps leading to the modern ubiquity of the Cas12a-like R-loop architecture in type V enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis stated in the Discussion section with a supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "c72d54bf-4a3e-443a-9c9e-8b4a5dab3bd8",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C48",
+      "claim": "The extant diversity of Cas12 proteins likely did not emerge from a single CRISPR-associated ancestor but rather from many distinct transposon-encoded TnpB proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the extant diversity of Cas12 proteins likely did not emerge from a single CRISPR-associated ancestor but rather from many distinct transposon-encoded TnpB proteins (Koonin et al., 2017; Makarova et al., 2020), suggesting that several independent evolutionary trajectories have converged on the same R-loop topology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "09b24a6e-119f-458e-9b46-1742afc88bdb",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C49",
+      "claim": "Engineering a type V CRISPR nickase that performs fast non-target-strand cleavage but undetectable target-strand cleavage will likely require modifications that shield or distance the RuvC active site from the intrinsically labile 3\u2032 R-loop flank.",
+      "claim_type": "EXPLICIT",
+      "source": "Our permanganate reactivity results revealed that target-strand distortion in Cas12a-generated R-loops, as probed by our experimental techniques, can be explained by conformational dynamics intrinsic to the nucleic acids (Figure 4A). Thus, engineering a type V CRISPR nickase that performs fast non-target-strand cleavage but undetectable target-strand cleavage will likely require modifications that shield or distance the RuvC active site from the intrinsically labile 3\u2032 R-loop flank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Discussion section based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "c11daf51-8d95-4b49-941d-990f88f5480c",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C50",
+      "claim": "Placing a DNase domain near a 3\u2032 R-loop flank would encourage fast target-strand cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that placing a DNase domain near a 3\u2032 R-loop flank would encourage fast target-strand cleavage (for applications requiring double-strand breaks), while placing one near a 5\u2032 R-loop flank would likely inhibit target-strand cleavage (for nickase applications).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Discussion section based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "d31971e8-5ad3-4828-9af8-401f21d02bf6",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C51",
+      "claim": "Placing a DNase domain near a 5\u2032 R-loop flank would likely inhibit target-strand cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that placing a DNase domain near a 3\u2032 R-loop flank would encourage fast target-strand cleavage (for applications requiring double-strand breaks), while placing one near a 5\u2032 R-loop flank would likely inhibit target-strand cleavage (for nickase applications).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Discussion section based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "53b68bcc-5fea-4a2d-a81e-48b1935246be",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C52",
+      "claim": "The crystal structure shown in Figure 1A is from Francisella novicida Cas12a (FnCas12a, PDB 6I1K).",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structure of the DNA-bound Cas12a interference complex from Francisella novicida (FnCas12a, PDB 61IK) (Swarts and Jinek, 2019).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "f3e0a109-75e8-4253-a7fa-3cf9a55e8ceb",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C53",
+      "claim": "The protein ortholog used for most experiments in this manuscript is from Acidaminoccus species (AsCas12a), which has approximately 40% identity to FnCas12a.",
+      "claim_type": "EXPLICIT",
+      "source": "While the protein ortholog used for most experiments in this manuscript is from Acidaminoccus species (AsCas12a,~40% identity to FnCas12a), the FnCas12a crystal structure shown here represents the most complete structure of such a complex to date, most notably with respect to the DNA at the target-strand cleavage sites.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "8de55983-9116-4755-80d1-54e17d3ce918",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C54",
+      "claim": "The FnCas12a crystal structure represents the most complete structure of a Cas12a-DNA complex to date, particularly with respect to the DNA at the target-strand cleavage sites.",
+      "claim_type": "EXPLICIT",
+      "source": "While the protein ortholog used for most experiments in this manuscript is from Acidaminoccus species (AsCas12a,~40% identity to FnCas12a), the FnCas12a crystal structure shown here represents the most complete structure of such a complex to date, most notably with respect to the DNA at the target-strand cleavage sites.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "2bafc760-4f72-41f9-9a4e-5e1546983c7b",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C55",
+      "claim": "Successful R-loop formation by Cas12a results in activation of the RuvC DNase active site to cleave three classes of DNA substrates: the non-target strand (in cis), the target strand (in cis), and non-specific ssDNA (in trans).",
+      "claim_type": "EXPLICIT",
+      "source": "For Cas12a, successful R-loop formation results in activation of the RuvC DNase active site to cleave three classes of DNA substrates (yellow scissors): the non-target strand (in cis), the target strand (in cis), and non-specific ssDNA (in trans).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "144976a9-b9a5-470d-86c9-467594df46f5",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C56",
+      "claim": "Cas9 contains two DNase domains: the RuvC domain cleaves the non-target strand, and the HNH domain cleaves the target strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 contains two DNase domains: the RuvC domain cleaves the non-target strand, and the HNH domain cleaves the target strand.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 legend.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "0b5882e3-914d-413f-95a0-409d7df1449b",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C57",
+      "claim": "The affinity of dAsCas12a/crRNA for a cognate DNA target was assessed by an electrophoretic mobility shift assay (EMSA) and a filter-binding (FB) assay, yielding a KD of approximately 8 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The affinity of dAsCas12a/crRNA for a cognate DNA target was assessed by an electrophoretic mobility shift assay (EMSA) and a filter-binding (FB) assay. dAsCas12a was titrated in a solution with fixed [crRNA] (750 nM) and [DNA probe] (100 pM), followed by separation of protein-bound DNA from free DNA. The EMSA indicated that the oligonucleotide annealing protocol yields 100% duplex DNA probe and that the binding conditions yield one major protein-bound species. 'Fraction bound' is defined as (background-subtracted volume of upper band)/(total background-subtracted lane volume) for the EMSA and (background-subtracted volume of Protran spot)/(total background-subtracted volume of Protran spot + Hybond N+ spot) for the filter-binding assay. The value of 'fraction bound' was 0 at [dAsCas12a]=0 for both assays (not shown in plot due to the logarithmic x-axis). When appropriate, data were fit to the sum of a hyperbola and a line (y = Bmax*x/(KD+x)+NS*x), where NS describes a non-specific binding mode. It is common to see Bmax values below 1 in EMSAs and filter-binding assays, in which the process of physical separation can disrupt bound species. KD for the EMSA was 8.2 nM (n = 1). KD for the filter-binding assay was 8.1 nM \u00b10.8 (SD) (n = 3).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in Figure 2\u2014figure supplement 2 legend with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "b58e80ff-9acd-4c1d-8fd8-d031e1c81762",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C58",
+      "claim": "The KD of dAsCas12a for protospacer 2 (intact) was 54 nM \u00b112 (SD).",
+      "claim_type": "EXPLICIT",
+      "source": "KD for protospacer 2 (intact) was 54 nM \u00b112 (SD) (n = 3).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in Figure 2\u2014figure supplement 2 legend with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "7a6626fc-27b5-475c-a524-22aa44d29a2a",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "claim_id": "C59",
+      "claim": "The KD of dAsCas12a for protospacer 2 (pre-gapped) was 2.8 nM \u00b10.5 (SD).",
+      "claim_type": "EXPLICIT",
+      "source": "KD for protospacer 2 (pre-gapped) was 2.8 nM \u00b10.5 (SD) (n = 3).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in Figure 2\u2014figure supplement 2 legend with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b0f60022-22c6-4253-9478-49a6435d79eb",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about Cas12a and Cas9 CRISPR systems, including their mechanisms of R-loop formation, DNA cleavage, and structural features. Cas12a uses a single RuvC active site to make staggered cuts distant from the PAM, while Cas9 employs two active sites. The two systems have opposing crRNA architectures and R-loop directionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent well-established background knowledge from prior literature, appropriately cited throughout (C7-C17). The structural information (C52-C56) is clearly documented with proper attribution to crystal structures and prior work. This foundational information is necessary context for the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "8475df36-b73d-4ada-a088-086d5b045424",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using permanganate footprinting, the authors demonstrate that DNA flanking the RNA-3\u2032 side of Cas12a-generated R-loops exhibits intrinsic instability. Permanganate reactivity was observed in the PAM-distal flank extending seven base pairs past the crRNA end, with reactivity decreasing with distance from the R-loop edge, suggesting the R-loop flank populates highly distorted and probably unpaired conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The permanganate reactivity data (C21-C24, Figure 2) provide direct experimental evidence for DNA distortion in the 3\u2032 R-loop flank. The methodology is well-established and appropriately applied. The interpretation that distortion decreases with distance from the R-loop edge is consistent with the quantitative data shown. The conclusion (C25) appropriately acknowledges the limitations of the technique while drawing reasonable inferences from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "930bb22a-5b26-43ff-a58c-788e8acb9f75",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The location of DNA distortion in the R-loop flank controls the distribution of target-strand cleavage sites. When the R-loop was truncated, the distorted region migrated with the R-loop edge, and the target-strand cut-site distribution shifted accordingly. Compensatory mutations restored the original distribution, while non-target-strand cleavage remained unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental design systematically tests the prediction (C26) through R-loop truncation experiments (C27-C29, Figure 3A-B). The compensatory mutation controls (C29) strengthen the conclusion by demonstrating sequence-independence. The observation that non-target-strand cleavage is unaffected (C30) provides important specificity. The conclusion (C31) is well-supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "9dee3114-e8cc-47aa-858a-7db129f595aa",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The sequence composition of the R-loop flank affects target-strand cleavage patterns. GC-rich substrates were cleaved most PAM-proximally, while eliminating base pairing at positions 21-23 led to fast and PAM-distally shifted cleavage, suggesting DNA distortion in the R-loop flank enables Cas12a-catalyzed target-strand cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sequence variation experiments (C32-C33, Figure 3C) provide strong support for the mechanistic model by showing that base-pairing stability affects cleavage position in predictable ways. The data are consistent with the hypothesis that weaker base pairing facilitates DNA bending and cleavage. The conclusion (C34) appropriately integrates these findings with the earlier results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "94432f2f-278c-48e8-8793-95f7048e0cc1",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Protein-free R-loop mimics show that distortion of the R-loop flank is intrinsic to the R-loop boundary itself. The A/T tract in protein-free mimics was slightly more reactive to permanganate than in Cas12a-generated R-loops, indicating the protein only needs to hold the R-loop open to promote flexibility in adjacent DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The protein-free R-loop mimic experiments (C35, Figure 4A) provide critical evidence that the observed DNA distortion is not protein-induced but rather an intrinsic property of the nucleic acid structure. The comparison between protein-bound and protein-free conditions is well-controlled. The conclusion (C36) is appropriately cautious and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "19dabe7d-e153-4b7f-a315-7b5457385793",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DNA flanking the RNA-5\u2032 side of R-loops (as in Cas9) is not intrinsically unstable. The PAM-distal flank of Cas9 R-loops showed nearly background permanganate oxidation levels in both protein-bound and protein-free conditions. This asymmetry between 3\u2032 and 5\u2032 R-loop flanks is intrinsic to strand polarity and represents a fundamental energetic difference in conformational landscapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison between Cas12a and Cas9 R-loop flanks (C37, Figure 4A) is well-controlled and demonstrates a striking asymmetry. The robustness of this difference across multiple sequence contexts and conditions (C40, Figure 4 supplements 3-6) strengthens the conclusion. The interpretation (C38-C39) is supported by converging evidence from permanganate reactivity and 2-aminopurine fluorescence experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "369fc286-a270-49da-9daf-f525d943f2c2",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Biophysical measurements support the asymmetry in R-loop flank stability. The RNA-5\u2032 dumbbell had a melting temperature 9\u00b0C higher than the RNA-3\u2032 dumbbell. Molecular dynamics simulations showed that 3\u2032 R-loop junctions frequently unstacked while 5\u2032 junctions remained stable, suggesting the instability arises from frequent unstacking events in the DNA bending pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The melting temperature measurements (C41, Figure 5A) provide orthogonal thermodynamic evidence for the asymmetry. The molecular dynamics simulations (C42, Figure 5B) offer atomic-level insight into the structural basis. The interpretation (C43) appropriately acknowledges the limitations of short simulations while drawing reasonable mechanistic inferences. The convergence of multiple biophysical approaches strengthens these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "73ea1e2c-e137-446a-a527-7ecb0eb79308",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cas12a exploits the intrinsic instability of 3\u2032 R-loop flanks to enable target-strand cleavage. The ability of the RuvC active site to capture the target strand relies on its proximity to the uniquely malleable 3\u2032 R-loop flank, which depends on the topology of the Cas12a R-loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This mechanistic conclusion (C5, C44) integrates multiple lines of evidence: permanganate reactivity showing DNA distortion, cleavage site distribution experiments linking distortion to cutting, protein-free mimics demonstrating intrinsic instability, and the asymmetry between 3\u2032 and 5\u2032 flanks. The model is well-supported by the experimental data and provides a coherent explanation for how Cas12a achieves double-strand breaks with a single active site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "7b625e9a-2167-4b69-9ad8-30c680b8faf3",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The universal 3\u2032 R-loop topology in type V CRISPR-Cas systems may result from biophysically imposed selective pressures. All known DNA-targeting Cas12 enzymes form R-loops that allow target-strand cleavage within a PAM-distal 3\u2032 R-loop flank. The authors hypothesize that ancestral enzymes with this topology outperformed inverted variants under evolutionary pressure for efficient double-strand breaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the observation that all Cas12 enzymes share this topology (C45) is well-documented with citations, the evolutionary explanation (C46-C47) is explicitly speculative. The hypothesis is reasonable and consistent with the biophysical findings, but lacks direct experimental support. The claim about independent evolutionary origins (C48) is appropriately cited but the proposed convergent evolution remains a hypothesis rather than a demonstrated result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "4d579a4e-5e8e-4c08-aa57-c0dc7c18d2cd",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The findings have implications for CRISPR engineering. Engineering type V nickases will likely require modifications that shield the RuvC active site from the intrinsically labile 3\u2032 R-loop flank. Placing a DNase domain near a 3\u2032 R-loop flank would encourage fast target-strand cleavage, while placement near a 5\u2032 flank would inhibit it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These engineering predictions (C49-C51) are logical extensions of the experimental findings. The conclusion that protein-free R-loop mimics show intrinsic instability (demonstrated in C35-C36) directly supports the prediction that protein modifications alone may be insufficient for nickase engineering (C49). The design principles (C50-C51) follow naturally from the demonstrated asymmetry in flank stability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "1a2b51ef-3480-4a16-8082-43c0a1e6a57a",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Crystal structures show the target-strand cleavage site is located within an ordered DNA duplex approximately 25 \u00c5 from the RuvC active site, motivating the hypothesis that DNA substrates must access a bent conformation for cleavage. Permanganate footprinting was used to probe DNA structure, as it selectively oxidizes thymines in non-B-form DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural observations from prior work (C18) are appropriately cited and provide clear motivation for the study. The hypothesis (C19) is reasonable given the geometric constraints. The permanganate method (C20) is well-established and appropriately applied with proper citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    },
+    {
+      "id": "03a76856-afe2-46eb-ab5c-9c3973283946",
+      "content_id": "ad17f26f-cfc0-4dc7-b0b6-3bcca7a2491b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Binding affinity measurements show dAsCas12a/crRNA binds cognate DNA targets with KD values of approximately 8 nM for standard substrates, 54 nM for protospacer 2 (intact), and 2.8 nM for protospacer 2 (pre-gapped).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The binding affinity measurements (C57-C59, Figure 2 supplement 2) are well-controlled using two independent methods (EMSA and filter-binding). The data include appropriate replicates and error estimates. These measurements are important controls demonstrating that the observed effects are not due to differential binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:48:58.069511Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "be2166fe-380c-48c4-9dd9-90982024f8f8",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "6a20ee1b-c747-4a4e-81f6-ab14c3f1951f",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "621f30b0-5b99-4606-bd9c-939a43bc9d5f",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "a088d60f-741b-45bd-a7e7-0b3fa7bd6e6a",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "172100d3-5a87-4021-84ba-c2300f58c599",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "617f33dd-f8ce-42e6-9c80-a79918d1bdde",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "30a82e97-7609-4ddc-b571-611637278250",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "95182e2c-3aa1-4b5f-9f6a-112ef6973728",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "25cfd428-97ad-4e7d-836d-6fc5d74ad0ed",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "bcf1c2f8-84af-4d98-aff6-6abe02113f27",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "5c0b97da-3e8c-4469-92f0-37a693f9490b",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "c2462758-51aa-437d-8197-0af357866f02",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "f5190f55-2ad6-4787-aceb-286507d1d588",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "53b68bcc-5fea-4a2d-a81e-48b1935246be",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "f3e0a109-75e8-4253-a7fa-3cf9a55e8ceb",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "8de55983-9116-4755-80d1-54e17d3ce918",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "2bafc760-4f72-41f9-9a4e-5e1546983c7b",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "144976a9-b9a5-470d-86c9-467594df46f5",
+      "result_id": "b0f60022-22c6-4253-9478-49a6435d79eb"
+    },
+    {
+      "claim_id": "e3c33fd3-2615-497e-99c0-42c9d4fd0417",
+      "result_id": "8475df36-b73d-4ada-a088-086d5b045424"
+    },
+    {
+      "claim_id": "28e57049-e25f-4040-a6fa-04e61aa7b5f5",
+      "result_id": "8475df36-b73d-4ada-a088-086d5b045424"
+    },
+    {
+      "claim_id": "e5afd50a-bd41-4bf5-af8f-abc22c43d818",
+      "result_id": "8475df36-b73d-4ada-a088-086d5b045424"
+    },
+    {
+      "claim_id": "d22fda3c-9991-4551-83f2-5e233ec5c25b",
+      "result_id": "8475df36-b73d-4ada-a088-086d5b045424"
+    },
+    {
+      "claim_id": "2d6dcc15-495e-4a6d-add4-4f021aac10c2",
+      "result_id": "8475df36-b73d-4ada-a088-086d5b045424"
+    },
+    {
+      "claim_id": "d444e3c9-bf58-4dab-b3db-8e44c9fa3bee",
+      "result_id": "8475df36-b73d-4ada-a088-086d5b045424"
+    },
+    {
+      "claim_id": "4c77bd95-feb1-4a52-ae1d-cf6e94bd1f99",
+      "result_id": "930bb22a-5b26-43ff-a58c-788e8acb9f75"
+    },
+    {
+      "claim_id": "3fc3f0df-244b-405f-aa12-017b616a81a0",
+      "result_id": "930bb22a-5b26-43ff-a58c-788e8acb9f75"
+    },
+    {
+      "claim_id": "54e6ffc3-7cb3-4fa1-bfe5-0ba4865e3f7a",
+      "result_id": "930bb22a-5b26-43ff-a58c-788e8acb9f75"
+    },
+    {
+      "claim_id": "d0479a68-31fb-4033-9f10-e196d05644e8",
+      "result_id": "930bb22a-5b26-43ff-a58c-788e8acb9f75"
+    },
+    {
+      "claim_id": "705b6f9d-07ed-4916-895d-e573ce305f31",
+      "result_id": "930bb22a-5b26-43ff-a58c-788e8acb9f75"
+    },
+    {
+      "claim_id": "7102c36e-f592-4fc5-bbac-46315176193c",
+      "result_id": "930bb22a-5b26-43ff-a58c-788e8acb9f75"
+    },
+    {
+      "claim_id": "21e22d34-c22d-4038-b3d3-45f185b5949b",
+      "result_id": "9dee3114-e8cc-47aa-858a-7db129f595aa"
+    },
+    {
+      "claim_id": "2812cdc8-3f90-4aff-b45d-cc1cc8c0c9e2",
+      "result_id": "9dee3114-e8cc-47aa-858a-7db129f595aa"
+    },
+    {
+      "claim_id": "efb4efe7-d42d-42ee-81e4-c6615568c61b",
+      "result_id": "9dee3114-e8cc-47aa-858a-7db129f595aa"
+    },
+    {
+      "claim_id": "15af147c-2f41-4b9a-ae7d-32a7e5aeccd0",
+      "result_id": "94432f2f-278c-48e8-8793-95f7048e0cc1"
+    },
+    {
+      "claim_id": "2c6443f8-3d90-4631-985e-5d540f744504",
+      "result_id": "94432f2f-278c-48e8-8793-95f7048e0cc1"
+    },
+    {
+      "claim_id": "9728b8b3-b2f0-49e5-8ae5-e63e26af5c56",
+      "result_id": "19dabe7d-e153-4b7f-a315-7b5457385793"
+    },
+    {
+      "claim_id": "14d0ec4f-24b8-4c0d-8e11-0c08f0176084",
+      "result_id": "19dabe7d-e153-4b7f-a315-7b5457385793"
+    },
+    {
+      "claim_id": "2ee801ed-481e-4e63-8463-ceca7cab2a4d",
+      "result_id": "19dabe7d-e153-4b7f-a315-7b5457385793"
+    },
+    {
+      "claim_id": "b07a6d2b-49e2-4727-9813-41a055935483",
+      "result_id": "19dabe7d-e153-4b7f-a315-7b5457385793"
+    },
+    {
+      "claim_id": "e25fd7c0-31e4-4479-93b4-16f6a49ffe6b",
+      "result_id": "19dabe7d-e153-4b7f-a315-7b5457385793"
+    },
+    {
+      "claim_id": "c1dcf410-5808-45ea-8487-6250e0462f60",
+      "result_id": "369fc286-a270-49da-9daf-f525d943f2c2"
+    },
+    {
+      "claim_id": "8f229735-423c-44c2-b67c-5e10a72f2be2",
+      "result_id": "369fc286-a270-49da-9daf-f525d943f2c2"
+    },
+    {
+      "claim_id": "67be9b48-2ad2-4ad7-baed-837426e968e3",
+      "result_id": "369fc286-a270-49da-9daf-f525d943f2c2"
+    },
+    {
+      "claim_id": "176c80df-3fcc-449d-bdac-2c706abec26e",
+      "result_id": "73ea1e2c-e137-446a-a527-7ecb0eb79308"
+    },
+    {
+      "claim_id": "15857d06-e903-4489-8865-767d56a0f739",
+      "result_id": "73ea1e2c-e137-446a-a527-7ecb0eb79308"
+    },
+    {
+      "claim_id": "4c008761-6258-4e7f-b5f4-5ffbb3dfcb47",
+      "result_id": "7b625e9a-2167-4b69-9ad8-30c680b8faf3"
+    },
+    {
+      "claim_id": "f43792d0-8e4c-4e74-9d89-7844859fa9e3",
+      "result_id": "7b625e9a-2167-4b69-9ad8-30c680b8faf3"
+    },
+    {
+      "claim_id": "aba15171-3218-4446-9520-8a384cf05cc5",
+      "result_id": "7b625e9a-2167-4b69-9ad8-30c680b8faf3"
+    },
+    {
+      "claim_id": "bd48d9c0-8c54-47f0-b4aa-7598bafa628d",
+      "result_id": "7b625e9a-2167-4b69-9ad8-30c680b8faf3"
+    },
+    {
+      "claim_id": "c72d54bf-4a3e-443a-9c9e-8b4a5dab3bd8",
+      "result_id": "7b625e9a-2167-4b69-9ad8-30c680b8faf3"
+    },
+    {
+      "claim_id": "09b24a6e-119f-458e-9b46-1742afc88bdb",
+      "result_id": "4d579a4e-5e8e-4c08-aa57-c0dc7c18d2cd"
+    },
+    {
+      "claim_id": "c11daf51-8d95-4b49-941d-990f88f5480c",
+      "result_id": "4d579a4e-5e8e-4c08-aa57-c0dc7c18d2cd"
+    },
+    {
+      "claim_id": "d31971e8-5ad3-4828-9af8-401f21d02bf6",
+      "result_id": "4d579a4e-5e8e-4c08-aa57-c0dc7c18d2cd"
+    },
+    {
+      "claim_id": "1ab88e62-5c74-43b2-9415-ebddcb098766",
+      "result_id": "1a2b51ef-3480-4a16-8082-43c0a1e6a57a"
+    },
+    {
+      "claim_id": "7b30bdd9-5041-42fa-b115-4ee721572b55",
+      "result_id": "1a2b51ef-3480-4a16-8082-43c0a1e6a57a"
+    },
+    {
+      "claim_id": "80143597-9cc5-4ca6-9f13-47ac7be80641",
+      "result_id": "1a2b51ef-3480-4a16-8082-43c0a1e6a57a"
+    },
+    {
+      "claim_id": "0b5882e3-914d-413f-95a0-409d7df1449b",
+      "result_id": "03a76856-afe2-46eb-ab5c-9c3973283946"
+    },
+    {
+      "claim_id": "b58e80ff-9acd-4c1d-8fd8-d031e1c81762",
+      "result_id": "03a76856-afe2-46eb-ab5c-9c3973283946"
+    },
+    {
+      "claim_id": "7a6626fc-27b5-475c-a524-22aa44d29a2a",
+      "result_id": "03a76856-afe2-46eb-ab5c-9c3973283946"
+    }
+  ],
+  "comparisons": []
+}

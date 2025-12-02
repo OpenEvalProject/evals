@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors identified distinct Wnt3 source and target regions in the zebrafish brain at 24 and 48 hpf by comparing the expression patterns of Wnt3EGFP (which spreads) and PMTmApple (which remains membrane-tethered). At 24 hpf, source regions included MHB, dCe, and Epi, with target regions being vCe and OT. At 48 hpf, source regions expanded to include mRP, FP, MHB, dCe, Epi, and dOT, while target regions were vCe and vOT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are well-supported by colocalization analysis using two transgenic lines with the same promoter driving either secreted Wnt3EGFP or membrane-tethered PMTmApple. The imaging data (Figures 2-3) clearly show differential distribution patterns, and the methodology is appropriate for distinguishing source from target regions. The use of FCS to confirm absence of PMTmApple signal in target regions strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C105"
+    ],
+    "result": "Wnt3EGFP exhibits extracellular diffusion in the zebrafish brain with distinct diffusion coefficients in different compartments. In the brain ventricle, Wnt3EGFP shows a fast component (54.6 \u00b1 11.3 \u00b5m\u00b2/s) and a slow component (4.8 \u00b1 3.4 \u00b5m\u00b2/s). Along cell boundaries, it displays a slow component (0.6 \u00b1 0.3 \u00b5m\u00b2/s) representing membrane-associated fraction and a fast component (27.6 \u00b1 3.9 \u00b5m\u00b2/s) representing extracellular diffusion. The secreted control secEGFP diffuses at 57.9 \u00b1 14.4 \u00b5m\u00b2/s along cell boundaries, confirming the existence of interstitial spaces even at tightly packed developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C33, C35-C36, and C105 are supported by rigorous FCS measurements with appropriate controls (secEGFP, LynEGFP). The use of Bayes inference-based model selection for fitting is methodologically sound. The diffusion coefficients are consistent with expected values for membrane vs. aqueous diffusion, and the presence of secEGFP along cell boundaries directly demonstrates interstitial spaces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C44",
+      "C62",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Wnt3 interacts with HSPG in the extracellular space, which retards its diffusion by approximately 2-fold. Disruption of HSPG by heparinase or surfen treatment increased Wnt3EGFP's fast diffusion coefficient from 24.7 \u00b1 4.8 \u00b5m\u00b2/s to ~43 \u00b5m\u00b2/s in FCS measurements and increased global diffusion from 0.5 \u00b1 0.2 \u00b5m\u00b2/s to 1.3 \u00b1 0.5 \u00b5m\u00b2/s in FRAP measurements. Control proteins (secEGFP and LynEGFP) showed no changes upon HSPG disruption, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C39, C41, C44, C62, C99-C101 are strongly supported by systematic experiments with appropriate controls. The use of both heparinase and surfen (different mechanisms of HSPG disruption) provides convergent evidence. The specificity is demonstrated by lack of effect on secEGFP and LynEGFP. The quantitative agreement between FCS and FRAP measurements strengthens the conclusion. The calculation showing that after HSPG disruption, the diffusion difference between Wnt3EGFP and secEGFP matches their mass difference (1.3-fold) is particularly convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C60",
+      "C102"
+    ],
+    "result": "Tissue tortuosity reduces Wnt3 diffusion by a factor of 3-5, as determined by comparing local (FCS) and global (FRAP) diffusion coefficients. Wnt3EGFP showed a global diffusion coefficient of 0.5 \u00b1 0.2 \u00b5m\u00b2/s (FRAP) compared to local diffusion of 24.7 \u00b1 4.8 \u00b5m\u00b2/s (FCS). The control secEGFP showed a similar but smaller reduction (13 \u00b1 4 \u00b5m\u00b2/s global vs. 57.9 \u00b1 14.4 \u00b5m\u00b2/s local), with the difference attributed to tortuosity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C45, C60, and C102 are supported by complementary FCS and FRAP measurements. The comparison with secEGFP as a non-interacting control is appropriate for isolating tortuosity effects. However, the calculation of the tortuosity factor relies on the assumption that secEGFP experiences only tortuosity effects, which is reasonable but not definitively proven. The FRAP analysis showing two recovery components with appropriate time constants strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C61",
+      "C77"
+    ],
+    "result": "Lrp5 is required for Wnt3-Fzd1 interaction in vivo, with an apparent dissociation constant of 112 \u00b1 15 nM. FCCS measurements detected positive cross-correlations between Wnt3EGFP and Fzd1mApple only in MHB and dCe regions at 48 hpf, correlating with lrp5 expression patterns. Knockdown of lrp5 abolished these interactions and increased Wnt3EGFP global diffusion from 0.5 \u00b5m\u00b2/s to 2.8 \u00b1 0.8 \u00b5m\u00b2/s, indicating that receptor binding slows Wnt3 diffusion by a factor of 5-6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47-C48, C50-C55, C61, and C77 are well-supported by FCCS measurements with appropriate positive and negative controls. The spatial restriction of interactions to lrp5-expressing regions provides strong correlative evidence. The lrp5 knockdown experiment with morpholinos is convincing, showing both loss of cross-correlation and increased diffusion. The use of mismatch morpholino controls strengthens the conclusion. The measured Kd is consistent with in vitro values, adding credibility. However, the Fzd1mApple is expressed under the wnt3 promoter rather than its native promoter, which may affect interpretation of spatial interaction patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C63",
+      "C104"
+    ],
+    "result": "Wnt3 distribution in the zebrafish brain is determined by extracellular diffusion modified by three factors: tissue morphology (tortuosity, 3-5-fold reduction), HSPG interactions (2-fold reduction), and Lrp5-mediated receptor binding (5-6-fold reduction), resulting in a total 30-60-fold reduction when comparing short-range to long-range diffusion. This accounts for the observed difference between local diffusion (~28 \u00b5m\u00b2/s by FCS) and global diffusion (~0.5 \u00b5m\u00b2/s by FRAP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C63, and C104 represent the main integrative conclusion, synthesizing results from multiple experimental approaches. The quantitative accounting is internally consistent: 3-5 (tortuosity) \u00d7 2 (HSPG) \u00d7 5-6 (receptor) = 30-60-fold total reduction, matching the observed 40-100-fold difference between FCS and FRAP measurements. Each component was measured independently with appropriate controls. The conclusion that diffusion is the primary transport mechanism is well-supported, though the authors acknowledge that other mechanisms (exosomes, cytonemes) may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C73",
+      "C114",
+      "C115"
+    ],
+    "result": "The Tg(-4.0wnt3:Wnt3EGFP) transgenic line expresses functionally active Wnt3EGFP, and the 4 kb wnt3 promoter contains most regulatory elements, making Tg(-4.0wnt3:PMTmApple) a faithful reporter of Wnt3 expression. The expression of EGFP transcripts closely mirrors wnt3 transcripts, though the authors acknowledge the possibility of underestimating the extent of Wnt3 source regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C73, C114-C115 are supported by previous characterization (Teh et al., 2015) showing functional activity and by comparison with in situ hybridization patterns. The FCS measurements showing no PMTmApple signal in target regions support the reporter's fidelity. However, the authors appropriately acknowledge limitations, including potential underestimation of source regions and possible effects of the EGFP tag on diffusion (~15% slower expected).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C98",
+      "C112",
+      "C113"
+    ],
+    "result": "The EGFP tag on Wnt3 is expected to slow its diffusion by approximately 15% based on mass considerations, but this effect is within normal sample heterogeneity. The specificity of Wnt3EGFP's behavior is demonstrated by the fact that only Wnt3EGFP (not secEGFP or LynEGFP) shows HSPG-dependent retardation and Fzd1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C98, C112-C113 address an important methodological concern. The calculation of expected tag effect is straightforward and reasonable. The comparison showing that Wnt3EGFP and secEGFP differ by the expected amount after HSPG disruption (1.3-fold based on mass) supports the conclusion that the tag effect is minimal. The specificity of HSPG and receptor interactions to Wnt3EGFP provides functional validation. However, the authors cannot completely rule out that the tag affects protein conformation or interactions in ways not captured by diffusion measurements alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "The interpretation of FCS measurements at cell boundaries is complicated by the confocal volume spanning both membrane and cytosol. The slow diffusion component (0.6 \u00b1 0.3 \u00b5m\u00b2/s) likely represents membrane-associated Wnt3EGFP, while the fast component (27.6 \u00b1 3.9 \u00b5m\u00b2/s) could represent either extracellular or cytosolic Wnt3EGFP. The ability to fit data with a 2D model suggests diffusion occurs either on the membrane or in narrow interstitial spaces (<200 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34, C106-C109, C111 acknowledge important technical limitations of FCS measurements. While the slow component is clearly consistent with membrane diffusion, the assignment of the fast component to extracellular space is not definitive from FCS alone. The authors address this uncertainty by using HSPG disruption experiments, which specifically affect extracellular but not cytosolic diffusion, providing indirect support for the extracellular interpretation. However, the possibility of cytosolic contribution to the fast component cannot be completely excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C90",
+      "C91",
+      "C92",
+      "C95"
+    ],
+    "result": "The measured in vivo Kd for Wnt3-Fzd1 (112 \u00b1 15 nM) is comparable to in vitro values (15-90 nM) reported in the literature. The authors note that protein dynamics and conformation may differ significantly in vivo compared to in vitro, and that the actual Kd might be even lower due to effects of endogenous proteins and fluorophore photophysics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C90-C92, C95 appropriately contextualize the in vivo binding affinity measurement. The comparison with in vitro values is reasonable, and the acknowledgment of potential underestimation due to technical factors (endogenous protein competition, photophysics) is scientifically sound. The claim that quantitative in vivo analysis was lacking (C92) is supported by the literature. However, the uncertainty about the true Kd value is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The presence of proteins (signaling molecules or receptors) as determined by fluorescence microscopy does not report on actual signaling; it is necessary to measure interactions or downstream signaling to differentiate concentration from functional distribution. This is demonstrated by the observation that Wnt3EGFP and Fzd1mApple are present in regions (vCe, OT) where they do not interact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 represent an important conceptual conclusion supported by the spatial mismatch between protein presence and functional interaction. The FCCS data clearly show that Wnt3EGFP and Fzd1mApple are both present in vCe and OT but do not interact there, only in MHB and dCe where lrp5 is expressed. This demonstrates that protein localization alone is insufficient to infer signaling activity, requiring direct measurement of interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "The identified Wnt3 target regions (vCe and OT) correspond to regions showing activation of the Wnt reporter line Tg(7xTcf-Xla.Siam:NLS-mCherry), which is activated by endogenous Wnt ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is supported by comparison of the identified target regions with the Wnt reporter expression pattern shown in supplementary figures. This provides independent validation that the regions identified as Wnt3 targets based on protein distribution are indeed sites of active Wnt signaling. However, the reporter responds to all Wnt ligands, not specifically Wnt3, so this is correlative rather than definitive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Knockdown of lrp5 results in defective brain development in zebrafish embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by imaging showing morphological defects in the optic tectum and cerebellum after lrp5 morpholino injection. This is consistent with the known role of Wnt signaling in brain development and provides functional validation of the lrp5 knockdown. However, the phenotypic characterization is limited to gross morphology without detailed analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "FRAP recovery of Wnt3EGFP shows two components: a fast component (\u03c4fast = 5-8 min) representing diffusion in extracellular spaces, and a slow component (\u03c4slow >40 min) representing protein synthesis and maturation. Recovery rates are similar at source and target regions. PMTmApple shows no recovery within 40 min because it is membrane-tethered and the mApple maturation time is ~30 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide reasonable interpretations of FRAP kinetics. The fast component time scale (5-8 min) is consistent with diffusion over cellular distances given the measured diffusion coefficients. The slow component time scale (>40 min) is consistent with protein synthesis and maturation. The lack of PMTmApple recovery before 30 min is consistent with its membrane-tethered nature and known mApple maturation time. The similarity of recovery rates at source and target regions supports a diffusion-based mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C116"
+    ],
+    "result": "The authors acknowledge uncertainties and limitations in their study, including the possibility that HSPG may assist in transfer of Wnt-bearing exosomes or lipoproteins, and that the extent of Wnt3 source regions may be underestimated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C116 represent appropriate acknowledgment of study limitations and alternative hypotheses. The speculation about HSPG's role in exosome/lipoprotein transport is supported by cited literature and is consistent with the observed slow diffusion component in the brain ventricle. The acknowledgment of potential underestimation of source regions is scientifically appropriate given the detection limits of fluorescence microscopy.",
+    "result_type": "MINOR"
+  }
+]

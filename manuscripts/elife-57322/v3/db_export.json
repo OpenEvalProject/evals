@@ -1,0 +1,1972 @@
+{
+  "submission": {
+    "id": "d3e88342-c35a-417d-811d-3130b0289161",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:44:32.278851Z",
+    "updated_at": "2025-12-02T17:44:32.278851Z"
+  },
+  "content": [
+    {
+      "id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "submission_id": "d3e88342-c35a-417d-811d-3130b0289161",
+      "content_type": "manuscript",
+      "content_text": "# An ECF-type transporter scavenges heme to overcome iron-limitation in Staphylococcus lugdunensis\n\n## Authors\n\n- Angelika Jochim<sup>1</sup>\n- Lea Adolf<sup>1</sup>\n- Darya Belikova<sup>1</sup>\n- Nadine Anna Schilling<sup>2</sup>\n- Inda Setyawati<sup>3</sup>\n- Denny Chin<sup>4</sup>\n- Severien Meyers<sup>5</sup> ([ORCID: 0000-0003-3481-4793](https://orcid.org/0000-0003-3481-4793))\n- Peter Verhamme<sup>5</sup>\n- David E Heinrichs<sup>4</sup> ([ORCID: 0000-0002-7217-2456](https://orcid.org/0000-0002-7217-2456))\n- Dirk J Slotboom<sup>3</sup> ([ORCID: 0000-0002-5804-9689](https://orcid.org/0000-0002-5804-9689))\n- Simon Heilbronner<sup>1</sup> ([ORCID: 0000-0002-6774-2311](https://orcid.org/0000-0002-6774-2311)) \u2020\n\n### Affiliations\n\n1. Interfaculty Institute of Microbiology and Infection Medicine, Department of Infection Biology, University of T\u00fcbingen T\u00fcbingen Germany\n2. Institute of Organic Chemistry, University of T\u00fcbingen T\u00fcbingen Germany\n3. Groningen Biomolecular Sciences and Biotechnology Institute, University of Groningen Groningen Netherlands\n4. Department of Microbiology and Immunology, University of Western Ontario London Canada\n5. Center for Molecular and Vascular Biology Leuven Belgium\n6. German Centre for Infection Research (DZIF), Partner Site T\u00fcbingen T\u00fcbingen Germany\n7. (DFG) Cluster of Excellence EXC 2124 Controlling Microbes to Fight Infections T\u00fcbingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nEnergy-coupling factor type transporters (ECF) represent trace nutrient acquisition systems. Substrate binding components of ECF-transporters are membrane proteins with extraordinary affinity, allowing them to scavenge trace amounts of ligand. A number of molecules have been described as substrates of ECF-transporters, but an involvement in iron-acquisition is unknown. Host-induced iron limitation during infection represents an effective mechanism to limit bacterial proliferation. We identified the iron-regulated ECF-transporter Lha in the opportunistic bacterial pathogen Staphylococcus lugdunensis and show that the transporter is specific for heme. The recombinant substrate-specific subunit LhaS accepted heme from diverse host-derived hemoproteins. Using isogenic mutants and recombinant expression of Lha, we demonstrate that its function is independent of the canonical heme acquisition system Isd and allows proliferation on human cells as sources of nutrient iron. Our findings reveal a unique strategy of nutritional heme acquisition and provide the first example of an ECF-transporter involved in overcoming host-induced nutritional limitation.\n\n## Introduction\n\nTrace nutrients such as metal ions and vitamins are needed as prosthetic groups or cofactors in anabolic and catabolic processes and are therefore crucial for maintaining an active metabolism. Metal ions such as iron, manganese, copper, zinc, nickel and cobalt must be acquired from the environment by all living organisms. In contrast many prokaryotes are prototrophic for vitamins like riboflavin, biotin and vitamin B12. However, these biosynthetic pathways are energetically costly (Roth et al., 1993), and prokaryotes have developed several strategies to acquire these nutrients from the environment. ABC transporters of the Energy-coupling factor type (ECF-transporters) represent highly effective trace nutrient acquisition systems (Erkens et al., 2012; Finkenwirth and Eitinger, 2019). In contrast to the substrate-binding lipoproteins/periplasmic proteins of conventional ABC transporters, the specificity subunits of ECF transporters (ECF-S) are highly hydrophobic membrane proteins (6\u20137 membrane spanning helices) (Erkens et al., 2012). ECF-S subunits display a remarkably high affinity for their cognate substrates in the picomolar to the low nanomolar range, which allows scavenging of smallest traces of their substrates from the environment (Rempel et al., 2019). Whether ECF type transporters can be used to acquire iron or iron-containing compounds is unknown.\n\nThe dependency of bacteria on trace nutrients is exploited by the immune system to limit bacterial proliferation by actively depleting nutrients from body fluids and tissues. This strategy is referred to as \u2018nutritional immunity\u2019 (Hood and Skaar, 2012; Cassat and Skaar, 2013). In this regard, depletion of nutritional iron (Fe2+/Fe3+) is crucial as iron is engaged in several metabolic processes such as DNA replication, glycolysis, and respiration (Schaible and Kaufmann, 2004; Weinberg, 2000). Extracellular iron ions are bound by high-affinity iron-chelating proteins such as lactoferrin and transferrin found in lymph and mucosal secretions and in serum, respectively. However, heme is a rich iron source in the human body and invasive pathogens can access this heme pool by secreting hemolytic factors to release hemoglobin or other hemoproteins from erythrocytes or other host cells. Bacterial receptors then extract heme from the hemoproteins. This is followed by import and degradation of heme to release the nutritional iron. To date, several heme acquisition systems of different Gram-positive and Gram-negative pathogens have been characterized at the molecular level (see Choby and Skaar, 2016 for an excellent review).\n\nStaphylococci are a major cause of healthcare-associated infections that can lead to morbidity and mortality. The coagulase-positive Staphylococcus aureus represents the best-studied and most invasive species. Coagulase-negative staphylococci (CoNS) are regarded as less pathogenic than S. aureus and infections caused by CoNS are normally subacute and less severe. In this regard, the CoNS Staphylococcus lugdunensis represents an exception. S. lugdunensis infections frequently show a fulminant and aggressive course of disease that resembles that of S. aureus. Strikingly, S. lugdunensis is associated with a series of cases of infectious endocarditis (Liu et al., 2010). The reasons for the apparently high virulence potential of S. lugdunensis remain largely elusive and few virulence factors have been identified so far. In this respect, it is interesting to observe that S. lugdunensis, unlike other staphylococci but similar to S. aureus, encodes an iron-dependent surface determinant locus (Isd) system (Heilbronner et al., 2011; Heilbronner et al., 2016). Isd facilitates the acquisition of heme from hemoglobin and can be regarded as a hallmark of adaption towards an invasive lifestyle. However, to ensure continuous iron acquisition within the host, many pathogens encode multiple systems to broaden the range of iron-containing molecules that can be acquired (Sheldon et al., 2016).\n\nHere we report the identification of an iron-regulated ECF-type ABC transporter (named LhaSTA) in S. lugdunensis. We found LhaSTA to be specific for heme, thus representing a novel strategy to overcome nutritional iron limitation. Recombinant LhaS accepted heme from several host hemoproteins such as hemoglobin, myoglobin or hemopexin. Consistent with these data, LhaSTA expression allowed proliferation of S. lugdunensis in the presence of these iron sources as well as human erythrocytes or cardiac myocytes as a sole source of nutrient iron. Our data indicate that LhaSTA function is independent of the presence of surface-displayed hemoprotein receptors suggesting Isd-independent acquisition of heme from host hemoproteins. Our work identifies LhaSTA as the first ECF transporter that facilitates iron acquisition, thus participating to overcome host immune defenses.\n\n## Results\n\n### LhaSTA encodes an iron regulated ECF transporter\n\nThe isd locus of S. lugdunensis shows several characteristics that distinguish it from the locus of S. aureus. Amongst these is the presence of three genes that encode a putative ABC transporter and are located between isdJ and isdB (Figure 1A;\u00a0Heilbronner et al., 2011). Analysis of the open reading frame using Pfam (El-Gebali et al., 2019) revealed that the three adjacent genes encode components of a putative ECF-transporter, namely a specificity subunit (lhaS - SLUG_00900), a transmembrane subunit (lhaT - SLUG_00910) and an ATPase (lhaA - SLUG_00920), and they might be part of a polycistronic transcript. The location within the isd operon suggested a role of the transporter in iron acquisition. Bacteria sense iron limitation using the ferric uptake repressor (Fur) which forms DNA-binding dimers in the presence of iron ions (Coy and Neilands, 1991). Under iron limitation, Fe dissociates from Fur and the repressor loses affinity for its consensus sequence (fur box) allowing transcription. Interestingly, a fur-box was located upstream of lhaS (Figure 1A). qPCR analysis in S. lugdunensis N920143 revealed that the expression of lhaS and lhaA increased\u00a0~21 and~12 fold, respectively, in the presence of the Fe-specific chelator EDDHA (Figure 1B). The effect of EDDHA could be prevented by addition of FeSO4 (Figure 1B). This confirmed iron-dependent regulation and suggested that LhaSTA is involved in iron acquisition.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic diagram of the isd operon of S. lugdunensis N920143. Coding sequences, direction of transcription and Fur-binding sites are indicated. ABC membrane-transporters are shown in green. lhaS - SLUG_00900; lhaT - SLUG_00910; lhaA - SLUG_00920 (B) Iron-regulated expression of Lha: S. lugdunensis was grown overnight in TSB, TSB + 200 \u00b5M EDDHA or TSB + 200 \u00b5M EDDHA + 200 \u00b5M FeSO4. Gene expression was quantified by qPCR. Expression was normalized to 5srRNA and to the TSB standard condition using the \u0394\u0394Ct method. Fold differences in gene expression are shown. Data represent mean and SD of four independent experiments. Statistical evaluation was performed using students unpaired t-test (lhaS: t\u00a0=\u00a07,045, df\u00a0=\u00a06; lhaA: t\u00a0=\u00a02,979, df\u00a0=\u00a06) C/D Growth curves of S. lugdunensis N920143 and isogenic mutants. The wild type (WT) S. lugdunensis N920143 strain and the indicated isogenic null mutant strains were grown in the presence of 20 \u00b5M FeSO4 (C) or 150 nM heme (D) as a sole source of iron. 500 \u00b5l of bacterial cultures were inoculated to an OD600\u00a0=\u00a00,05 in 48 well plates and OD600 was monitored every 15 min using an Epoch1 plate reader. For reasons of clarity values taken every 5 hr are displayed. Mean and SD of three experiments are shown. Statistical analysis was performed using one-way ANOVA followed by Dunett\u2019s test for multiple comparisons. * - p<0,05, ****p<0,00001.\n\n### LhaSTA allows bacterial proliferation on heme as a source of nutrient iron\n\nLhaSTA is encoded within the isd operon and the Isd system facilitates the acquisition of heme from hemoglobin (Heilbronner et al., 2016; Zapotoczna et al., 2012). Therefore, we speculated that LhaSTA might also be involved in the transport of heme. To test this, we used allelic replacement and created isogenic deletion mutants in S. lugdunensis N920143 lacking either lhaSTA or isdEFL, the latter of which encodes the conventional lipoprotein-dependent heme transporter of the isd locus. Further, we created a \u0394lhaSTA\u2206isdEFL double mutant. In the presence of 20 \u00b5M FeSO4 all strains showed similar growth characteristics (Figure 1C). The two single mutants had a slight growth defect compared to wild type when heme was the only iron source. However, the \u0394lhaSTA\u2206isdEFL mutant showed a significant growth defect under these conditions (Figure 1D). These data strengthen the hypothesis that LhaSTA is a heme transporter.\n\n### LhaS binds heme\n\nTo confirm the specificity of LhaSTA, we heterologously produced the substrate-specific component LhaS in E. coli and purified the protein. We observed that the recombinant protein showed a distinct red color when purified from E. coli grown in rich LB medium, which contains heme due to the presence of crude yeast\u00a0extract (Fyrestam and \u00d6stman, 2017;\u00a0Figure 2A). The absorption spectrum of the protein showed a Soret peak at 415 nm and Q-band maxima at 537 and 568 nm, suggesting histidine coordination of the heme group. Both the visible color and the spectral peaks were absent when LhaS was purified from E. coli grown in heme-deficient RPMI medium (Figure 2A). We conducted MALDI-TOF analysis of holo-LhaS purified from E. coli grown in LB and identified two peaks, one of which corresponds to full length recombinant LhaS (24074.437 Da expected weight), and the other to heme (616,1767 Da expected weight). Importantly, the heme peak was not detectable when LhaS was purified from RPMI (Figure 2B and C). Furthermore, ESI-MS confirmed the presence of heme only in LhaS samples purified from LB (Figure 2\u2014figure supplement 1). Using the extinction coefficients of LhaS and heme we calculated a heme-LhaS binding stoichiometry of 1:0.6 for the complex isolated from heme containing medium.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig2-v3.jpg)\n\n**Figure 2.:** (A) Ultraviolet-visible (UV-vis) spectrum of recombinant LhaS. C-terminal His-tagged LhaS was heterologously expressed in E. coli and purified from heme-containing LB medium or heme-free RPMI medium. The UV-vis spectrum of the purified LhaS was measured with a BioPhotometer. (B) and (C) MALDI-TOF mass spectra of recombinant LhaS. LhaS (B) was purified out of LB medium and apo-LhaS (C) was purified out of RPMI medium. Mass spectra were recorded with a Reflex IV in reflector mode. All spectra are a sum of 50 shots. Prior to measurements the protein samples were mixed with a 2,5-dihydroxybenzoic acid matrix dissolved in water/acetonitrile/trifluoroacetic acid (50/49.05/0.05) at a concentration of 10 mg ml\u22121 and spotted onto the MALDI polished steel sample plate.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Spectra of apo-LhaS isolated from E.\u00a0coli grown in RPMI medium (upper panel), holo-LhaS isolated from LB-medium (middle panel) and a heme standard (lower panel) were recorded on a HPLC-UV-HR mass spectrometer. The samples were diluted with MilliQ-H2O and applied to a Dionex Ultimate 3000 HPLC system that is coupled to the MaXis 4G ESI-QTOF mass spectrometer.\n\n### LhaSTA represents an iron acquisition system\n\nNext, we sought to investigate whether LhaSTA represents a functional and autonomous iron acquisition system. LhaSTA is located within the isd locus of S. lugdunensis, which, besides the conventional heme membrane transporter IsdEFL, also encodes the hemoglobin receptor IsdB and the cell wall-anchored proteins IsdJ and IsdC. Furthermore, the locus encodes the putative secreted/membrane-associated hemophore IsdK, whose role in heme binding or transport is currently unknown (Zapotoczna et al., 2012), and the autolysin atl remodeling the cell wall (Farrand et al., 2015). To study solely LhaSTA-dependent effects, we disabled all known heme import activity in S. lugdunensis by creation of a deletion mutant lacking the entire isd operon (from the atl gene to isdB, Figure 1A). Then we expressed lhaSTA under the control of its native promoter on a recombinant plasmid in the \u0394isd background. S. lugdunensis has been reported to degrade nutritional heme in an IsdG-independent fashion due to an unknown enzyme (OrfX) (Haley et al., 2011). Therefore, we speculated that heme degradation in this strain might still be possible. LhaSTA deficient and proficient strains showed comparable growth in the presence of FeSO4 (Figure 3\u2014figure supplement 1). However, only the lhaSTA expressing strain was able to grow in the presence of heme as sole source of nutrient iron (Figure 3A). To further support a role for LhaSTA in iron import, we isolated the cytosolic fraction of the strains prior and after incubation with heme and measured iron levels using the ferrozine assay (Riemer et al., 2004). Consistently, we found that LhaSTA expression increased cytosolic iron levels post incubation with heme (Figure 3B). These data suggest that LhaSTA represents a \u2018bona fide\u2019 and functional autonomous iron acquisition system.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig3-v3.jpg)\n\n**Figure 3.:** (A) LhaSTA-dependent proliferation. S. lugdunensis N920143 deletion mutant strains lacking the entire isd operon and expressing LhaSTA (\u2206isd pRB473:lhaSTA) or not (\u2206isd pRB473) from the plasmid pRB473 were grown in the presence of 200 nM heme as a sole source of iron. 500 \u00b5l of cultures were inoculated to an OD600\u00a0=\u00a00,05 in 48 well plates and OD600 was monitored every 15 min using an Epoch1 plate reader. For reasons of clarity values taken every 5 hr are displayed. Mean and SD of three experiments are shown. Statistical analysis was performed using students unpaired t-test. ***p<0,0001 (B) Intracellular accumulation of iron. Strains were grown in iron limited medium to OD600\u00a0=\u00a00,6 and 5 \u00b5M heme were added for 3 hr. Cell fractionation of 1 ml OD600\u00a0=\u00a050 was performed and the iron content of the cytosolic fraction was determined using the ferrozine assay. Data represent the mean and SD of three independent experiments. Statistical analysis was performed using students unpaired t-test (t\u00a0=\u00a05,12729, df\u00a0=\u00a04).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A/B) Proliferation of S. lugdunensis N920143 \u2206isd pRB473 and \u2206isd pRB473:lhaSTA strains. The indicated strains were grown in the absence of nutritional iron (A) or in the presence of 20 \u00b5M FeSO4 (B). 500 \u00b5l of cultures were inoculated to an OD600\u00a0=\u00a00,05 in 48 well plates and OD600 was monitored every 15 min using a Epoch1 plate reader. For reasons of clarity values taken every 5 hr are displayed. Mean and SD of three experiments are shown. Statistical analysis was performed using students unpaired t-test.\n\n### LhaSTA enables acquisition of heme from various host hemoproteins\n\nWe wondered how S. lugdunensis might benefit from a heme specific ECF-transporter when a heme acquisition system is already encoded by the canonical Isd system. Indeed, Isd represents a highly effective heme acquisition system. Interactions between the surface receptor IsdB and the proteinaceous part of hemoglobin are thought to enhance heme release to increase its availability (Bowden et al., 2018; Gianquinto et al., 2019). The downside of this mechanism is the specificity for hemoglobin because heme derived from other host hemoproteins such as myoglobin remains inaccessible. In contrast, the HasA hemophore produced by Gram negative pathogens is reported to bind heme with sufficient affinity to enable heme acquisition from a range of host hemoproteins without the need of protein-protein interactions to enhance heme release (Deniau et al., 2003; Wandersman and Delepelaire, 2004). As ECF-transporters are known to have high affinity towards their ligands, we speculated that LhaS might represent a membrane-located high affinity \u2018hemophore\u2019 allowing heme acquisition from hemoproteins other than hemoglobin. We explored this idea using the hemoprotein myoglobin which is abundant in muscle tissues. Myoglobin was previously reported not\u00a0to interact with S. lugdunensis IsdB (Zapotoczna et al., 2012) and is therefore unlikely to be a substrate for the Isd system. We analyzed the growth of the S. lugdunensis wild type (WT) strain as well as of the isogenic lhaSTA deficient strain (Figure 4A) on human hemoglobin (hHb) or on equine myoglobin (eqMb) as sole sources of nutrient iron (Figure 4B). Unlike the WT strain, the lhaSTA deficient strain displayed a mild proliferation defect on hHb and a pronounced growth defect on eqMb (Figure 4B). Interestingly, lhaSTA deficiency did not impact proliferation on hemoglobin-haptoglobin (Hb-Hap) complexes suggesting Isd-dependent acquisition of heme from Hb-Hap. These data strongly indicate that LhaSTA possesses a hemoprotein substrate range that differs from that of the Isd system. To further validate this, we used the above-described S. lugdunensis isd mutant expressing lhaSTA (Figure 4A) and tested its ability to proliferate on a range of different hemoproteins. (Figure 4C). We found that lhaSTA expression enabled growth on hemoglobin (human and murine origin) and myoglobin (human and equine origin) as well as with hemopexin (Hpx). Consistent with the above observations, Hb-Hap complexes did not enable growth of the lhaSTA proficient strain strengthening the notion that Hb-Hap acquisition is Isd-dependent. These data further indicate that LhaSTA allows extraction and usage of heme from a diverse set of host hemoproteins, thus expanding the range of hemoproteins accessible to S. lugdunensis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig4-v3.jpg)\n\n**Figure 4.:** (A) Schematic diagram of known heme acquisition systems in the S. lugdunensis mutant strains lacking either the genes encoding LhaSTA (\u2206lhaSTA, left) or the entire isd operon and expressing LhaSTA from the plasmid pRB473 (\u2206isd pRB473:lhaSTA). ABC membrane transporters are shown in green. Cell wall-anchored proteins of the Isd-system are shown in yellow. Heme/hemoglobin-binding NEAT motifs within each protein are indicated as black boxes. Black arrows indicate the transfer of heme. he: heme; hb: hemoglobin; PG: peptidoglycan. (B) Growth of S. lugdunensis N920143 wild type (WT) and \u2206lhaSTA. Strains were grown in the presence of 20 \u00b5M FeSO4 or 2.5 \u00b5g/ml human hemoglobin (hHb) or 10 \u00b5g/ml equine myoglobin (eqMb) or 117 nM hemoglobin-haptoglobin complex (Hb-Hap) as a sole source of iron. 500 \u00b5l of cultures were inoculated to an OD600\u00a0=\u00a00,05 in 48 well plates and OD600 was measured after 30 hr using an Epoch1 plate reader. Mean and SD of three experiments are shown. Statistical analysis was performed using students unpaired t-test. hHb - t\u00a0=\u00a06,0007, df\u00a0=\u00a04; eqMb \u2013 t\u00a0=\u00a020,52, df\u00a0=\u00a04; Hb-Hap \u2013 t\u00a0=\u00a01,978, df\u00a0=\u00a04. (C) Growth of S. lugdunensis N920143 \u2206isd pRB473 and \u2206isd pRB473:lhaSTA. Strains were grown in the presence of 20 \u00b5M FeSO4 or 2.5 \u00b5g/ml hHb or 2.5 \u00b5g/ml murine hemoglobin (mHb) or 10 \u00b5g/ml human myoglobin (hMb) or 10 \u00b5g/ml eqMb or 200 nM human hemopexin (Hpx) or 117 nM Hb-Hap as a sole source of iron. 500 \u00b5l of cultures were inoculated to an OD600\u00a0=\u00a00,05 in 48 well plates and OD600 was measured after 30 hr using an Epoch1 plate reader. Mean and SD of three experiments are shown. Statistical analysis was performed using students unpaired t-test hHb \u2013 t\u00a0=\u00a018,5, df\u00a0=\u00a04; mHb \u2013 t\u00a0=\u00a029,03, df\u00a0=\u00a04; hMb \u2013 t\u00a0=\u00a025,98, df\u00a0=\u00a04; eqMb \u2013 t\u00a0=\u00a03,442, df\u00a0=\u00a04; Hpx \u2013 t\u00a0=\u00a077,12 df\u00a0=\u00a04; Hb-Hap t\u00a0=\u00a02758 df\u00a0=\u00a04. (D) TMBZ-H2O2 stain of TGX gels for heme-associated peroxidase activity. Membrane vesicles were saturated with excess of hemoprotein (5.6 \u00b5M heme, 476 \u00b5g/ml hHb, 437 \u00b5g/ml eqMb, 5.6 \u00b5M Hpx, 476 \u00b5g/ml Hb-Hap) or no hemoprotein (-) for 10 min at RT. LhaS was purified, 15 \u00b5g protein was loaded on a TGX gel and stained for peroxidase activity with TMBZ-H2O2 (upper panel). Gels were destained and subsequently stained with BlueSafe (lower panel) to confirm the presence of the protein in all conditions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The indicated strains were grown in the presence of 20 \u00b5M FeSO4 or 2.5 \u00b5g/ml human hemoglobin (hHb), 2.5 \u00b5g/ml or murine hemoglobin (mHb) or 10 \u00b5g/ml human myoglobin (hMb) or 10 \u00b5g/ml equine myoglobin (eqMb) or 200 nM human hemopexin (Hpx) or 117 nM Hb-Hap as a sole source of iron. 500 \u00b5l of cultures were inoculated to an OD600\u00a0=\u00a00,05 in 48 well plates and OD600 was measured every 15 min. For reasons of clarity values taken every 5 hr are displayed. Mean and SD of three experiments are shown. Statistical analysis was performed using students unpaired t-test.\n\nTo confirm the activity of LhaSTA at the biochemical level, we isolated E. coli-derived membrane vesicles that carried apo-LhaS. Following incubation of the vesicles with or without different host hemoproteins, LhaS was purified using affinity chromatography. Heme saturation of LhaS was assessed using SDS-PAGE and tetramethylbenzidine (TMBZ) staining, a reagent that turns green in the presence of hemin-generated peroxides (Thomas et al., 1976;\u00a0Figure 4D). In the absence of hemoproteins during incubation, apo-LhaS did not stain with TMBZ, but TMBZ staining was observed after incubation with all the hemoproteins tested except for Hb-Hap. These data correlate with the ability of the lhaSTA proficient strain to grow on all hemoproteins but Hb-Hap complexes.\n\n### LhaSTA allows usage of human host hemoproteins as an iron source\n\nUsage of host derived hemoproteins requires the combined action of hemolytic factors to damage host cells as well as hemoprotein acquisition systems to use the released hemoproteins. Since we realized that the S. lugdunensis N920143 strain is non-hemolytic on sheep blood agar, we reproduced the \u0394isd deletion as well as the plasmid-based expression of lhaSTA in the hemolytic S. lugdunensis N940135 strain. As for N920143, LhaSTA-dependent usage of hemoproteins was also observed in the N940135 background (Figure 4\u2014figure supplement 1).\n\nWe speculated that the expression of LhaSTA is beneficial to S. lugdunensis during invasive disease as it allows usage of a wide range of hemoproteins as iron sources. To test this, we attempted to establish septic disease models for S. lugdunensis. However, we found that S. lugdunensis N940135 was unable to establish systemic disease in mice. Even when infected with 3*107 CFU/animal, mice did not show signs of infection (weight loss/reduced movement). Three days post infection, the organs of infected animals showed low bacterial burdens frequently approaching sterility (Figure 5\u2014figure supplement 1) and the expression of LhaSTA did not increase the bacterial loads within the organs. We speculate that the presence of human-specific but lack of mouse-specific virulence factors might reduce S. lugdunensis pathogenesis in mice. Little is known about virulence factors encoded by S. lugdunensis, however, human specific toxins that lyse erythrocytes to release nutritional hemoglobin have previously been described for S. aureus (Spaan et al., 2015). To further assess this, we performed hemolysis assays using human as well as murine erythrocytes (Figure 5\u2014figure supplement 2). Hemolytic activity of S. lugdunensis culture filtrates was low compared to those of S. aureus. Nevertheless, we observed lysis of human erythrocytes while murine erythrocytes were not affected by S. lugdunensis culture filtrates. This suggests human specific factors mediating host cell damage (Figure 5\u2014figure supplement 2).\n\nTherefore, we used an ex-vivo model to investigate whether LhaSTA facilitates the usage of human cells as a source of iron. First, we supplied freshly isolated human erythrocytes as a source of hemoglobin. Figure 5A shows, that the presence of human erythrocytes significantly improved the\u00a0growth of the Isd deficient but LhaSTA-expressing strain. Secondly, we used a human cardiac myocyte cell line as a source of iron. S. lugdunensis is associated with infective endocarditis and myocytes are a source of myoglobin which can be acquired via LhaSTA. Indeed, we found that lhaSTA expression enhanced the growth of S. lugdunensis in the presence of cardiac myocytes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig5-v3.jpg)\n\n**Figure 5.:** (A) Growth of S. lugdunensis N940135 \u2206isd pRB473:lhaSTA and \u2206isd pRB473 on human erythrocytes. Strains were grown in the presence of freshly isolated human erythrocytes (105 cells/ml) as a sole source of iron. 500 \u00b5l of cultures were inoculated to an OD600\u00a0=\u00a00,05 in 48 well plates and OD600 was monitored every 15 min using an Epoch1 plate reader. For reasons of clarity values taken every 5 hr are displayed. Mean and SD of three experiments are shown. Statistical analysis was performed using students unpaired t-test. ***p<0,0001 (B) Growth of S. lugdunensis N940135 \u2206isd pRB473 and \u2206isd pRB473:lhaSTA on human cardiac myocytes. Strains were grown in the presence of 40000 primary human cardiac myocytes per well as a sole source of iron. Cardiac myocytes were detached and washed once with RPMI+200 \u00b5M EDDHA prior addition to the wells. 500 \u00b5l of cultures were inoculated to an OD600\u00a0=\u00a00,05 in 48 well plates and OD600 was monitored every 15 min using an Epoch1 plate reader. For reasons of clarity values taken every 5 hr are displayed. Mean and SD of three experiments are shown. Statistical analysis was performed using students unpaired t-test. *p<0,05, **p<0,01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** C57BL/6 mice were infected with 3 \u00d7 107 CFU per animal. Mice were sacrificed 72 hr post infection and CFUs within the indicated organs were\u00a0enumerated. Horizontal lines show the median. Statistical analysis was performed using Mann Whitney test.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Human (left and middle panels) or mouse erythrocytes (right panel) were incubated with the filtrated culture supernatants of S. aureus (left panel) or S. lugdunensis (middle and right panels) for 24 and 48 hr.\n\nIn conclusion, our results suggest that LhaSTA represents a novel broad-range heme-acquisition system that expands the hemoprotein substrate range accessible to S. lugdunensis to overcome nutritional iron restriction (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57322/elife-57322-fig6-v3.jpg)\n\n**Figure 6.:** ABC membrane transporters are shown in green. Cell wall-anchored proteins of the Isd-system are shown in yellow. Heme/hemoglobin-binding NEAT motifs within each protein are indicated as black boxes. Black arrows indicated the transfer of heme. he: heme; hb: hemoglobin; PG: peptidoglycan; Mem: Membrane; Hap: Haptoglobin; Hpx:Hemopexin; Atl: Autolysin.\n\n## Discussion\n\nNutritional iron restriction represents an effective host strategy to prevent pathogen proliferation within sterile tissues. In turn, bacterial pathogens have developed a range of strategies to overcome nutritional iron limitation during infection. Amongst these is the production and acquisition of siderophores which scavenge the smallest traces of molecular iron to make it biologically available. The highly virulent S. aureus species produces the siderophores staphyloferrin A (SF-A) and staphyloferrin B (SF-B) which are important during infection (Beasley et al., 2011; Sheldon and Heinrichs, 2015). S. lugdunensis is associated with a series of cases of infective endocarditis and the course of disease mimics that of S. aureus endocarditis. In contrast to S. aureus, S. lugdunensis does not produce endogenous siderophores (Brozyna et al., 2014), suggesting that the iron requirements during infection must be satisfied through alternative strategies. Host hemoproteins can be used by pathogens to acquire iron-containing heme and a plethora of hemoproteins are available during infection. Hemoglobin or myoglobin becomes available if the intracellular pool of the host is tapped by secretion of hemolytic factors. Alternatively, host hemopexin or hemoglobin-haptoglobin complexes involved in heme/hemoglobin turnover are extracellularly available to pathogens. Host hemoproteins are characterized by a remarkable affinity towards heme: Both, globin and hemopexin bind heme with dissociation constants (Kds) smaller than 1 pM (Hargrove et al., 1996; Tolosano and Altruda, 2002). The usage of heme by invasive pathogens is widely distributed, however, the molecular pathways and hemoprotein substrate\u00a0ranges differ dramatically (see Choby and Skaar, 2016\u00a0for an excellent review). Iron dependent surface determinant loci are used to acquire heme from hemoglobin by several Gram-positive pathogens including S. aureus (Mazmanian et al., 2003), S. lugdunensis (Heilbronner et al., 2011; Heilbronner et al., 2016), Bacillus anthracis (Skaar et al., 2006), Streptococcus pyogenes (Lei et al., 2002) and Listeria monocytogenes (Jin et al., 2006).\n\nABC transporters of the Energy-coupling factor type (ECF) are trace element acquisition systems (Finkenwirth and Eitinger, 2019; Rempel et al., 2019). ECF-type transporters are characterized by high affinity towards their ligands and ECF systems specific for the vitamins riboflavin (Duurkens et al., 2007), folate (Eudes et al., 2008), thiamine (Erkens and Slotboom, 2010), biotin (Berntsson et al., 2012), cobalamine (Santos et al., 2018; Rempel et al., 2018), pantothenate (Neubauer et al., 2009; Zhang et al., 2014), niacin (ter Beek et al., 2011) and pyridoxamine (Wang et al., 2015) as well as for the trace metals nickel and cobalt (Yu et al., 2014; Kirsch and Eitinger, 2014) have been described. However, ECF-transporters that allow iron acquisition have so far remained elusive.\n\nNow we show that S. lugdunensis encodes the iron regulated ECF-transporter LhaSTA. LhaS binds heme and enables accumulation of iron within the cytoplasm. Therefore, the system represents a novel type of \u2018bona fide\u2019 iron acquisition system. Recombinant LhaS acquired heme from human and murine hemoglobin, from human and equine myoglobin as well as from human hemopexin. The ability of LhaS to accept heme from several sources strongly suggest an affinity-driven mechanism relying on passive diffusion of heme between proteins rather than on active extraction. Such a mechanism has been suggested for HasA-type hemophores of Gram-negative pathogens such as Serratia marcescens, Yersina pestis and Pseudomonas aeruginosa (Wandersman and Delepelaire, 2012; L\u00e9toff\u00e9 et al., 1999). Similar to LhaS, HasA has been shown to possess a broad hemoprotein substrate range and allows the usage of hemoglobin from different species as well as myoglobin and hemopexin (Wandersman and Delepelaire, 2012). This ability of HasA was attributed to its high affinity towards heme (Kd\u00a0=\u00a00.2 nM) (Deniau et al., 2003). ECF-specificity subunits frequently possess Kds towards their ligands in the low nanomolar to picomolar range (Rempel et al., 2019), supporting the idea that LhaS might directly accept heme from hemoproteins. We attempted isothermal titration calorimetry to determine the affinity of LhaS towards heme, but our efforts failed to deliver a precise Kd. However, co-purification of heme with heterologously expressed LhaS suggests that the off-rates are low, consistent with high-affinity binding. Therefore, the system might be superior to heme acquisition systems, which depend on specific interactions between bacterial hemoprotein-receptors and host hemoproteins to extract heme. The S. aureus Isd system is well-studied in this regard. The surface located receptor IsdB binds hemoglobin through its N-terminal NEAT domain (IsdB-N1). This binding is proposed to induce a steric strain that facilitates heme dissociation. Heme is then captured by the C-terminal NEAT domain (isdB-N2) and transported across the cell wall and membrane (Gianquinto et al., 2019; Sheldon and Heinrichs, 2015; Pilpa et al., 2009; Torres et al., 2006; Pishchany et al., 2014). Similarly, the secreted hemophores IsdX1 and IsdX2 of Bacillus anthracis possess NEAT motifs and perform the same two-step process as IsdB of S. aureus to acquire heme (Maresso et al., 2008). This mechanism harbours the disadvantage of facilitating heme acquisition only from a single hemoprotein. IsdB allows acquisition from hemoglobin but does not interact with myoglobin or hemopexin (Torres et al., 2006) and even hemoglobin from different species reduces the efficacy of the system (Choby et al., 2018; Pishchany et al., 2010). The same is true for IsdB of S. lugdunensis (Zapotoczna et al., 2012). Haemophilus influenza uses the specific interaction between the surface exposed receptor HxuA and hemopexin to facilitate heme dissociation. Heme is subsequently captured by HxuC (Zambolin et al., 2016; Hanson et al., 1992). Again, the specificity for hemopexin prevents usage of other hemoproteins by HxuA. Specific interactions between LhaS and multiple host hemoproteins seem unlikely, suggesting that the superior affinity of LhaS towards the heme group bypasses the need for protein-protein interactions and enables usage of different hemoproteins. However, additional experimental evidence is required to strengthen this hypothesis of passive heme transfer.\n\nThe LhaSTA operon of S. lugdunensis is located within the isd operon which encodes the hemoglobin receptor IsdB, the cell wall-anchored, heme-binding proteins IsdJ and IsdC as well as the conventional heme membrane transporter IsdEFL. Deletion of lhaSTA in combination with isdEFL did not completely abrogate acquisition of free heme. A similar effect has been observed in S. aureus suggesting the presence of additional, low affinity heme transporters within these species (Grigg et al., 2007). Furthermore, a putative secreted/membrane associated hemophore (IsdK) is encoded within the operon (Zapotoczna et al., 2012). Interestingly, we show LhaSTA to be functionally independent of the Isd cluster because LhaSTA-dependent usage of all host hemoproteins except for Hb-Hap was observed in the absence of all Isd-associated proteins. This indicates that LhaSTA does not rely on Isd-dependent funneling of heme across the cell wall, but also raises interesting questions about the spatial organization of heme acquisition and donor proteins. For an efficient transfer of heme between host hemoproteins and LhaS one would expect that spatial proximity between the proteins is required. Yet, LhaS is situated in the bacterial membrane and host hemoproteins are too large (hemoglobin\u00a0~64\u201316 kd (tetramer-monomer), myoglobin\u00a0~16 kDa, Hemopexin-heme\u00a0~70,6 kDa) to readily penetrate the peptidoglycan layer of Gram-positive bacteria. However, it has been shown that staphylococcal peptidoglycan contains pores that might allow access of proteins to the bacterial membrane (Kim et al., 2013; Turner et al., 2010). Along this line, it is tempting to speculate that surface receptor-dependent acquisition of Hb-Hap might be needed as these complexes exceed 100 kDa and might be unable to access the bacterial membrane. However, we also observed that recombinant LhaS did not accept heme from Hb-Hap which might indicate that binding of haptoglobin to hemoglobin increases the strength of heme binding to the protein complex. Such an effect of haptoglobin is to our knowledge not known and might be interesting for further investigation.\n\nWe failed to establish a functional mouse model of systemic disease to study the in vivo role of LhaSTA for the pathogenicity of S. lugdunensis. The reasons for this can be plentiful as little is known about virulence factors of S. lugdunensis. Genome analysis showed that S. lugdunensis lacks the wide variety of virulence and immune evasion molecules found in S. aureus (Heilbronner et al., 2011). This is the most likely explanation for the apparent reduced virulence of S. lugdunensis in mice. Nevertheless, the co-existence of the Isd and LhaSTA heme-acquisition system in this species may represent a virulent trait and be required for invasive disease. In line with this, most S. lugdunensis strains are highly hemolytic on blood agar plates suggesting that the release of hemoproteins from host cells can be achieved by this species. The hemolytic SLUSH peptides (Donvito et al., 1997) of S. lugdunensis resemble the \u03b2-PSMs of S. aureus (Rautenberg et al., 2011). Additionally, the sphingomyelinase C (\u00df-toxin) is conserved in S. lugdunensis (Heilbronner et al., 2011). However, recent research suggested that S. aureus targets erythrocytes specifically using the bi-component toxins LukED and HlgAB recognising the DARC receptor (Spaan et al., 2015). This creates human specificity. Whether similar mechanisms are used by S. lugdunensis is unclear, but we found that, in contrast to human cells, S. lugdunensis failed to lyse murine erythrocytes. This suggests that host specific virulence factors are present in S. lugdunensis. Bi-component toxin genes are not located in the chromosome but genes encoding a streptolysin-like toxin were identified (Heilbronner et al., 2011).\n\nWe found that LhaSTA facilitated growth of S. lugdunensis in the presence of human cells such as erythrocytes and cardiac\u00a0myocytes strongly suggesting that the system allows usage of these cells during invasive disease.\n\nAltogether our experiments identify LhaSTA as an ECF-transporter able to acquire iron and place this important class of nutrient acquisition system in the context of bacterial pathogenesis and immune evasion strategies. During the revision of this manuscript Chatterjee and colleagues published the identification of a heme-specific ECF transporter in streptococci (Chatterjee et al., 2020). In addition, a preprint manuscript that reports the identification of a heme-specific ECF transporter in Lactococcus sakei is present in bioarchives (Verplaetse, 2019). Although these transporters seem functionally redundant to the one of S. lugdunensis described here, the specificity subunits of the systems show remarkably little amino-acid sequence similarity. This suggests that the genes encoding them might have developed independently in bacterial species. This was also suggested for the cobalamin-specific components BtuM and CbrT which bind the same ligand despite little sequence conservation (Santos et al., 2018).\n\nAdditional experiments are required to determine whether heme-specific ECF transporters are also present in other bacterial pathogens and the biochemical properties of heme-binding need to be further characterized to better understand the role of these systems in overcoming nutritional iron limitation.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Staphylococus lugdunensis)</td>\n      <td>N940135</td>\n      <td>National Reference Center for Staphylococci, Lyon, France (Heilbronner et al., 2011)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. lugdunensis)</td>\n      <td>N920143</td>\n      <td>National Reference Center for Staphylococci, Lyon, France (Heilbronner et al., 2011)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. lugdunensis)</td>\n      <td>N920143 \u0394isdEFL</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Markerless deletion mutant of isdEFL</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. lugdunensis)</td>\n      <td>N920143 \u0394lhaSTA</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Markerless deletion mutant of lhaSTA</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. lugdunensis)</td>\n      <td>N920143 \u0394isdEFL\u0394lhaSTA</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Markerless double deletion mutant of isdEFL and lhaSTA</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>Human cardiac myocytes (HCM)</td>\n      <td>PromoCell</td>\n      <td>C-12810</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pQE-30</td>\n      <td>Qiagen</td>\n      <td></td>\n      <td>IPTG inducible expression plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pQE30:lhaS</td>\n      <td>This paper</td>\n      <td></td>\n      <td>LhaS expressing plasmid for protein purification</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pRB473: lhaSTA</td>\n      <td>This paper</td>\n      <td></td>\n      <td>LhaSTA expressing plasmid for complementation</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIMAY (plasmid)</td>\n      <td>Monk et al., 2012</td>\n      <td>See Material and methods</td>\n      <td>Thermosensitive vector for allelic exchange</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIMAY:\u2206isd</td>\n      <td>Zapotoczna et al., 2012</td>\n      <td></td>\n      <td>Plasmid for the deletion of the entire isd locus</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIMAY:\u2206isdEFL</td>\n      <td>This study</td>\n      <td></td>\n      <td>Plasmid for the deletion of conventional heme transporter isdEFL</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pIMAY:\u2206lhaSTA</td>\n      <td>This study</td>\n      <td></td>\n      <td>Plasmid for the deletion of heme specific ECF-transporter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pRB473</td>\n      <td>Br\u00fcckner, 1992</td>\n      <td></td>\n      <td>Expression plasmid without promotor region.</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Human)</td>\n      <td>Human hemoglobin</td>\n      <td>Own preparation</td>\n      <td>See Material and methods</td>\n      <td>Sex male</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Pork)</td>\n      <td>Porcine hemin</td>\n      <td>Sigma</td>\n      <td>51280</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Human)</td>\n      <td>Human Myoglobin</td>\n      <td>Sigma Aldrich</td>\n      <td>M6036</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Horse)</td>\n      <td>Equine Myoglobin</td>\n      <td>Sigma Alrich</td>\n      <td>M1882</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Human)</td>\n      <td>Human Haptoglobin (Phenotype 1\u20131)</td>\n      <td>Sigma Aldrich</td>\n      <td>SRP6507</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Human)</td>\n      <td>Human Hemopexin</td>\n      <td>Sigma Aldrich</td>\n      <td>H9291</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RPMI 1640 Medium</td>\n      <td>Sigma Aldrich</td>\n      <td>R6504-10L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Casamino acids</td>\n      <td>BACTO</td>\n      <td>223050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EDDHA</td>\n      <td>LGC Standarts</td>\n      <td>TRC-E335100-10MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dodecyl-\u03b2-D-maltosid (DDM)</td>\n      <td>Carl Roth</td>\n      <td>CN26.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>3,3',5,5'-tetramethylbenzidine (TMBZ)</td>\n      <td>Sigma Aldrich</td>\n      <td>860336</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Profinity IMAC resin nickel chrged</td>\n      <td>BIO RAD</td>\n      <td>1560135</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Chemicals\n\nIf not stated otherwise, reagents were purchased from Sigma.\n\n### Bacterial strains and growth in iron limited media\n\nAll bacterial strains generated and/or used in this study are listed in Key resources table. For growth in iron limited conditions, bacteria were grown overnight in Tryptic Soy Broth (TSB)\u00a0(Oxoid). Cells were harvested by centrifugation, washed with RPMI containing 10 \u00b5M EDDHA (LGC standards), adjusted to an OD600\u00a0=\u00a01 and 2,5 \u00b5l were used to inoculate 0,5 ml of RPMI+ 1% casamino acids (BACTO) + 10 \u00b5M EDDHA in individual wells of a 48 well microtiter plate (NUNC). As sole iron source 200 nM porcine hemin (Sigma), 2.5 \u00b5g/ml human hemoglobin (own preparation), 10 \u00b5g/ml human myoglobin (Sigma) or equine myoglobin (Sigma), 117 nM human haptoglobin-hemoglobin or 200 nM hemopexin-heme (Sigma) were added to the wells. Bacterial growth was monitored using an Epoch2 reader (300 rpm, 37\u00b0C). The OD600 was measured every 15 min.\n\n### Creation of markerless deletion mutants in S. lugdunensis\n\nFor targeted deletion of lhaSTA and isdEFL, 500 bp DNA fragments upstream and downstream of the genes to be deleted were amplified by PCR. A sequence overlap was integrated into the fragments to allow fusion and creating an ATG-TAA scar in the mutant allele. The 1 kb deletion fragments were created using spliced extension overlap PCR and cloned into pIMAY. All the oligonucleotides are summarized in Supplementary file 1 Targeted mutagenesis of S. lugdunensis was performed using allelic exchange described elsewhere (Monk et al., 2012). The plasmids and the primers used are listed in key resources table and Supplementary file 1, respectively.\n\n### Heterologous expression of LhaS and membrane vesicle preparation\n\nLhaS was overexpressed with a N-terminal deca-His tag using pQE-30 in E. coli XL1 blue in either Lysogeny broth (LB) medium or RPMI+1% casamino acids. 100 ml overnight culture in LB with 100 \u03bcg ml\u22121 ampicillin was harvested by centrifugation and washed once in PBS. Cells were resuspended in 5 ml PBS and used for inoculation of 2 L RPMI + 1% casamino acids or LB medium. Cells were allowed to grow at 37\u00b0C to an OD600\u00a0=\u00a00.6\u20130.8. Expression was induced by adding 0.3 mM IPTG for 4\u20135 hr at 25\u00b0C. Cells were harvested, washed with 50 mM potassium phosphate buffer (KPi) pH 7.5, and lysed through 3 rounds of sonification (Branson Digital Sonifier; 2 min, 30% amplitude), in presence of 200 \u03bcM PMSF, 1 mM MgSO4 and DNaseI. Cell debris were removed by centrifugation for 30 min at 7000 rpm and 4\u00b0C. The supernatant was centrifuged for 2 hr at 35000 rpm and 4\u00b0C to collect membrane vesicles (MVs). The MV pellet was homogenized in 50 mM KPi pH 7.5 and flash frozen in liquid nitrogen, stored at \u221280\u00b0C and used for purification.\n\n### Purification of LhaS\n\nHis-tagged LhaS MVs were dissolved in solubilisationbuffer (50 mM KPi pH 7.5, 200 mM KCl, 200 mM NaCl, 1% (w/v) n-dodecyl-b-D-maltopyranosid (DDM, Roth) for 1 hr at 4\u00b0C on a rocking table. Non-soluble material was removed by centrifugation at 35000 rpm for 30 min and 4\u00b0C. The supernatant was decanted into a poly-prep column (BioRad) containing a 0.5 ml bed volume Ni2+-NTA sepharose slurry, equilibrated with 20 column volumes (CV) wash buffer (50 mM KPi pH 7.5, 200 mM NaCl, 50 mM imidazole, 0.04% DDM) and incubated for 1 hr at 4\u00b0C while gently agitating. The lysate was drained out of the column and the column was washed with 4 CV wash buffer. Bound protein was eluted from the column in three fractions with elution buffer (50 mM KPi, pH 7.5, 200 mM NaCl, 350 mM imidazole, 0.04% DDM). The sample was centrifuged for 3 min at 10.000 rpm to remove aggregates and loaded on a Superdex 200 Increase 10/300 GL gel filtration column (GE Healthcare), which was equilibrated with SEC buffer (50 mM KPi pH 7.5, 200 mM NaCl, 0.04% DDM). Peak fractions were combined and concentrated in a Vivaspin disposable ultrafiltration device (Sartorius Stedim Biotec SA).\n\n### MV saturation with hemoproteins\n\nMVs (120 mg total protein content) from RPMI were thawed and incubated for 10 min at RT with each of the following molecules: 5.6 \u00b5M heme, 476 \u00b5g/ml human hemoglobin, 437 \u00b5g/ml equine myoglobin, 5.6 \u00b5M hemopexin-heme, 476 \u00b5g/ml hemoglobin-haptoglobin. Further purification was performed as described above. After Ni2+ affinity chromatography the protein was concentrated and used to measure the peroxidase activity of heme (TMBZ staining).\n\n### TMBZ staining of heme\n\nProtein content was determined by Bradford analysis (BIORAD) according to the manufacturer\u2019s protocol. 15 \u00b5g protein sample was mixed 1:1 with native sample buffer (BIORAD) and loaded on a Mini-PROTEAN TGX Precast Gel (BIORAD). The PAGE was run at 4\u00b0C and low voltage for 2 hr in Tris/Glycine buffer (BIORAD). The gel was rinsed with H2O for 5 min and stained with 50 ml staining solution (15 ml 3,3',5,5'-tetramethylbenzidine (TMBZ) solution (6.3 mM TMBZ in methanol) +35 ml 0.25 M sodium acetate solution (pH 5)) for 1 hr at room temperature (RT) while gently agitating. The gel was then incubated for 30 min at RT in the dark in presence of 30 mM H2O2. The background staining was removed by incubating the gel in a solution of isopropanol/0.25 M sodium acetate (3:7). Following scanning, the gel was completely destained in a solution of isopropanol/0.25 M sodium acetate (3:7) and stained with the BlueSafe stain (nzytech) for 10 min.\n\n### Preparation of human erythrocytes\n\nHuman blood was obtained from healthy volunteers and mixed 1:1 with MACS buffer (PBS w/o + 0.05% BSA + 2 mm EDTA). Erythrocytes were pelleted by density gradient centrifugation in a histopaque blood gradient for 20 min 380 x g at RT. The erythrocyte pellet was washed three times with erythrocyte wash buffer (21 mM Tris, 4.7 mM KCl, 2 mM CaCl2, 140.5 mM NaCl, 1.2 mM MgSO4, 5.5 mM Glucose, 0.5% BSA, pH 7.4). Cell count and viability was determined by using the trypan blue stain (BIO RAD).\n\n### Purification of human hemoglobin\n\nHuman/murine haemoglobin was purified by using standard procedures describe in detail elsewhere (Pishchany et al., 2013).\n\n### Preparation of saturated hemopexin and haptoglobin\n\nHuman hemopexin was dissolved in sterile PBS and saturated with porcine heme in a hemopexin: heme 1: 1.3 molar ratio for 1 hr at 37\u00b0C. This was followed by 48 hr dialysis in a Slide-a-Lyzer chamber (ThermoFisher) with one buffer (1 x PBS) change. Haptoglobin was saturated by mixing 4.7 \u00b5g/ml haemoglobin with 8.4 \u00b5g/ml human haptoglobin for 30 min at 37\u00b0C.\n\n### Quantification of intracellular iron\n\nBacteria were grown at 37\u00b0C in RPMI + 1% casamino acids to an OD600\u00a0=\u00a00.6. An aliquot of the culture was collected prior addition of 5 \u00b5M heme and 25 \u00b5M EDDHA and further incubation at 37\u00b0C for 3 hr. At this time point bacteria were collected and resuspended in buffer WB (10 mM Tris-HCl, pH 7, 10 mM MgCl2, 500 mM sucrose) to an OD600\u00a0=\u00a050. The bacterial pellet was collected by centrifugation at 8000 rpm for 7 min and resuspended in 1 ml buffer DB (10 mM Tris-HCl, pH 7, 10 mM MgCl2, 500 mM sucrose, 0.6 mg/ml lysostaphin, 25 U/ml mutanolysin, 30 \u03bcl protease inhibitor cocktail (one complete mini tablet dissolved in 1 ml H2O (Roche), 1 mM phenyl-methanesulfonylfluoride (Roth). The cell wall was digested by incubating at 37\u00b0C for 1.5 hr, followed by centrifugation at 17000 x g for 10 min at 4\u00b0C. Pelleted protoplasts were washed with 1 ml buffer WB, centrifuged and resuspended in 200 \u00b5l buffer LB (100 mM Tris-HCl; pH 7, 10 mM MgCl2, 100 mM NaCl, 100 \u03bcg/ml DNaseI, 1 mg/ml RNaseA). Protoplast lysis was performed through repeated cycles (3) of freezing and thawing. The lysate was centrifuged 30 min to pellet membrane fraction and recover the supernatant, which contained the cytosolic fraction and was used for quantification of total intracellular iron content.\n\nQuantification of intracellular iron content by heme uptake was carried out according to Riemer et al., 2004 with minor modifications. Briefly, 100 \u00b5l of the cytosolic fraction were mixed with 100 \u00b5l 50 mM NaOH, 100 \u00b5l HCL, and 100 \u00b5l iron releasing reagent (1:1 freshly mixed solution of 1.4 M HCl and 4.5% (w/v) KMnO4 in H2O). Samples were incubated for 2 hr at 60\u00b0C in a fume hood. 30 \u00b5l iron detection reagent (6.5 mM ferrozine, 6.5 mM neocuproine, 2.5 M ammonium acetate, 1 M ascorbic acid) was mixed with the samples and incubated for 30 min at 37\u00b0C while shaking (1100 rpm). Samples were centrifuged for 3 min at 12000 x g to remove precipitates. 150 \u00b5l of the supernatants were transferred to a 96-well microtiter plate and absorbance at 550 nm was measured in a plate reader (BMG Labtech). For determination of iron concentration, FeCl3 standards in a range of 0 to 100 \u00b5M were prepared.\n\n### Measurement of LhaS absorption spectra\n\nLhaS was purified from LB (holo LhaS) or RPMI (apo LhaS) as described above. 2 \u00b5l protein sample were loaded on an Eppendorf \u00b5Cuvette and absorptions spectra were measured at 260\u2013620 nm with a BioPhotometer (Eppendorf).\n\n### Characterization of LhaS and heme by mass spectrometry analysis\n\nMALDI-TOF mass spectra were recorded with a Reflex IV (Bruker Daltonics, Bremen, Germany) in reflector mode. Positive ions were detected and all spectra represent the sum of 50 shots. A peptide standard (Peptide Calibration Standard II, Bruker Daltonics) was used for external calibration. 2,5-dihydroxybenzoic acid (DHB, Bruker Daltonics) dissolved in water/acetonitrile/trifluoroacetic acid (50/49.05/0.05) at a concentration of 10 mg ml\u22121 was used as matrix. Before the measurements, the samples Lhas-apo (317 \u00b5g ml\u22121) and Lhas+heme (377 \u00b5g ml\u22121) were centrifuged and diluted with MilliQ-H2O (1:25). An aliquot of 1 \u00b5L of the samples was mixed with 1 \u00b5L of the matrix and spotted onto the MALDI polished steel sample plate. As the solution dried, the organic solvent evaporated quickly. At this point, the remaining mini droplet was removed gently with a pipette and the remaining sample was air-dried at room temperature.\n\nHigh resolution mass spectra of Lhas-apo (317 \u00b5g ml\u22121) and Lhas+heme (377 \u00b5g ml\u22121) were recorded on a HPLC-UV-HR mass spectrometer (MaXis4G with Performance Upgrade kit with ESI-Interface, Bruker Daltonics). The samples were diluted with MilliQ-H2O (1:25) and 3 \u00b5L were applied to a Dionex Ultimate 3000 HPLC system (Thermo Fisher Scientific), coupled to the MaXis 4G ESI-QTOF mass spectrometer (Bruker Daltonics). The ESI source was operated at a nebulizer pressure of 2.0 bar, and dry gas was set to 8.0 L min\u22121 at 200\u00b0C. MS/MS spectra were recorded in auto MS/MS mode with collision energy stepping enabled. Sodium formate was used as internal calibrant. The gradient was 90% MilliQ-H2O with 0.1% formic acid and 10% methanol with 0.06% formic acid to 100% methanol with 0.06% formic acid in 20 min with a flow rate of 0.3 mL/min on a NucleoshellEC RP-C18 (150 \u00d7 2 mm, 2.7 \u03bcm) from Macherey-Nagel.\n\n[M+H]+ calculated for C34H32FeN4O4+: 616.1767; found 616.1778 (\u2206 ppm 1.78).\n\n### Calculation of binding stoichiometry\n\nTo calculate the putative binding stoichiometry of heme and LhaS the heme concentration in Figure 2A was determined utilizing the extinction coefficient of 58,4 mM-1 cm\u22121 at 384 nm for heme. The LhaS concentration was determined utilizing the extinction coefficient of 29910 M-1 cm-1 (calculated with ProtParam tool \u2013 ExPASy) at 280 nm.\n\n### Human Cardiac Myocytes (HCM)\n\nPrimary human cardiac myocytes were purchased from PromoCell (the identity of the cell line was not verified; the culture was negative for mycoplasma) and in 75-cm2culture flasks in 20 ml of myocyte growth medium (PromoCell). Cells were detached with accutase, washed once with RPMI containing 200 \u00b5M EDDHA and resuspended in PRMI containing 200 \u00b5M EDDHA. 40000 cells per well were used for bacterial growth assays as described above.\n\n### Assessing hemolytic activity of S. lugdunensis culture supernatants\n\nS. aureus and S. lugdunensis were grown overnight in TSB. Cells were pelleted and culture supernatants were filter sterilized using a 0.22 \u03bcM filter. A 100 \u03bcL volume of supernatant was added into 1 mL of PBS containing either 5% v/v murine or human red blood cells. Mixtures were incubated at room temperature without shaking for 48 hr.\n",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "85cfea17-81b1-484d-b702-73e41bc1f8d6",
+      "submission_id": "d3e88342-c35a-417d-811d-3130b0289161",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sophie Helaine, Imperial College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57322.sa1](https://doi.org/10.7554/eLife.57322.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYou present here a strong piece of work describing the identification and initial characterization of a heme ECF transporter (LhaSTA) in the opportunistic human pathogen Staphylococcus lugdunensis that could allow the scavenging of iron from host cells. The manuscript is well written and the study is an important contribution since it reveals that heme is a substrate of ECF transporters.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"An ECF-type transporter scavenges heme to overcome iron-limitation in Staphylococcus lugdunensis\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos van der Meer as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nYou present here a strong piece of work describing the identification and initial characterization of a heme ECF transporter (LhaSTA) in the opportunistic human pathogen Staphylococcus lugdunensis that could allow the scavenging of iron from host cells. The manuscript is well written and the study is an important contribution since it reveals that heme is a substrate of ECF transporters.\n\nTo improve the clarity and presentation of the work, authors are asked to provide the following modifications to their manuscript:\n\n1) Subsection \u201cLhaS binds heme\u201d, last paragraph and Supplementary Figure 2: The outcome of the ITC experiments is unsatisfactory. According to Figure 4D, \"instability\" of LhaS in detergent solution in the absence of heme is not obvious on a proteolytic scale. It is not uncommon that a membrane protein's function depends on its lipid environment and is significantly impaired in detergent solution. There are several ways to overcome this problem. The authors could have considered to reconstitute LhaS into proteoliposomes or lipid nanodiscs prior to measurements. Potential alternatives include extraction of the protein and its lipid environment using styrene/maleic acid or diisobutylene/maleic acid copolymers without using detergents. However, the reviewers agreed that the key message of the paper is fully substantiated by the rest of the manuscript without having to incorporate this result. Please remove from the manuscript.\n\n2) Figure 1D: Could the authors discuss what allows growth on heme on Figure 1D? How is heme transported in the isdEF/lhaSTA double mutant?\n\n3) \"LB medium, which is known to contain heme\". Could the authors provide a reference?\n\n4) The authors are probably aware of a preprint posted on December 6, 2019 on a heme ECF transporter in Lactobacillus sakei (Verplaetse et al., 2019). Please consider citing it.\n\n5) Abstract: Although the list of experimentally verified or predicted substrates of ECF transporters is not very long, \"only a handful\" is an understatement.\n\n6) Subsection \u201cBackground\u201d, first paragraph: iron, manganese, copper and zinc are mentioned, but cobalt and nickel (for uptake of which ECF transporters exist) are not.\n",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ace4beac-8d52-48d7-9acd-87064dd258bb",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C1",
+      "claim": "Energy-coupling factor type transporters (ECF) represent trace nutrient acquisition systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Energy-coupling factor type transporters (ECF) represent trace nutrient acquisition systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about ECF transporters supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "e8e6a63f-e4c6-4e7f-88dc-6542b2e76931",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C2",
+      "claim": "Substrate binding components of ECF-transporters are membrane proteins with extraordinary affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Substrate binding components of ECF-transporters are membrane proteins with extraordinary affinity, allowing them to scavenge trace amounts of ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about ECF transporters and is referenced in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "cff21283-95c2-480b-877f-92c1322d318e",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C3",
+      "claim": "An involvement of ECF-transporters in iron-acquisition is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of molecules have been described as substrates of ECF-transporters, but an involvement in iron-acquisition is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the knowledge gap that the manuscript addresses, based on the state of the field prior to this work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "668b27a1-3fd3-461d-819c-eab47d7af1af",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C4",
+      "claim": "Host-induced iron limitation during infection represents an effective mechanism to limit bacterial proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Host-induced iron limitation during infection represents an effective mechanism to limit bacterial proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nutritional immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "57a0ea08-feae-482c-8569-24cde0c2070c",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C5",
+      "claim": "The iron-regulated ECF-transporter Lha was identified in Staphylococcus lugdunensis.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the iron-regulated ECF-transporter Lha in the opportunistic bacterial pathogen Staphylococcus lugdunensis and show that the transporter is specific for heme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data including qPCR showing iron-dependent regulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "89f690a1-ec85-4255-9f30-d988f4f3b58a",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C6",
+      "claim": "The Lha transporter is specific for heme.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the iron-regulated ECF-transporter Lha in the opportunistic bacterial pathogen Staphylococcus lugdunensis and show that the transporter is specific for heme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental data including binding studies, growth assays, and mass spectrometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "44e52519-471f-4b9f-9890-99fbc9b01840",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C7",
+      "claim": "The recombinant substrate-specific subunit LhaS accepted heme from diverse host-derived hemoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The recombinant substrate-specific subunit LhaS accepted heme from diverse host-derived hemoproteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D using TMBZ staining after incubation with various hemoproteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "e52a3e4d-78fb-4ddc-a267-24488cac257e",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C8",
+      "claim": "Lha function is independent of the canonical heme acquisition system Isd.",
+      "claim_type": "EXPLICIT",
+      "source": "Using isogenic mutants and recombinant expression of Lha, we demonstrate that its function is independent of the canonical heme acquisition system Isd and allows proliferation on human cells as sources of nutrient iron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by growth experiments using the \u0394isd mutant expressing lhaSTA shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "74ad849c-e59d-448f-995a-e7919bcd6320",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C9",
+      "claim": "Lha allows proliferation on human cells as sources of nutrient iron.",
+      "claim_type": "EXPLICIT",
+      "source": "Using isogenic mutants and recombinant expression of Lha, we demonstrate that its function is independent of the canonical heme acquisition system Isd and allows proliferation on human cells as sources of nutrient iron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 5 showing growth on human erythrocytes and cardiac myocytes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "dc3fa4f7-bc57-4cf1-9b90-04ae8c2b948c",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C10",
+      "claim": "LhaSTA represents the first example of an ECF-transporter involved in overcoming host-induced nutritional limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings reveal a unique strategy of nutritional heme acquisition and provide the first example of an ECF-transporter involved in overcoming host-induced nutritional limitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and the novelty of the finding in the context of existing knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "780ed58c-6996-4220-897e-6874b234ba68",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C11",
+      "claim": "ECF-S subunits are highly hydrophobic membrane proteins with 6-7 membrane spanning helices.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the substrate-binding lipoproteins/periplasmic proteins of conventional ABC transporters, the specificity subunits of ECF transporters (ECF-S) are highly hydrophobic membrane proteins (6\u20137 membrane spanning helices) (Erkens et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Erkens et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "2fe4f4c5-c45b-4395-a5e8-2e93f69d4518",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C12",
+      "claim": "ECF-S subunits display remarkably high affinity for their cognate substrates in the picomolar to low nanomolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "ECF-S subunits display a remarkably high affinity for their cognate substrates in the picomolar to the low nanomolar range, which allows scavenging of smallest traces of their substrates from the environment (Rempel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rempel et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "0fade3b1-fd6e-4f12-b27a-044c68539f72",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C13",
+      "claim": "Depletion of nutritional iron is crucial for nutritional immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, depletion of nutritional iron (Fe2+/Fe3+) is crucial as iron is engaged in several metabolic processes such as DNA replication, glycolysis, and respiration (Schaible and Kaufmann, 2004; Weinberg, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schaible and Kaufmann, 2004 and Weinberg, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "0cd8658c-6338-429d-bfaf-37b17cbf6d68",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C14",
+      "claim": "Iron is engaged in several metabolic processes such as DNA replication, glycolysis, and respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, depletion of nutritional iron (Fe2+/Fe3+) is crucial as iron is engaged in several metabolic processes such as DNA replication, glycolysis, and respiration (Schaible and Kaufmann, 2004; Weinberg, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schaible and Kaufmann, 2004 and Weinberg, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "75847e4a-857a-4a90-822d-28af6b9f160c",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C15",
+      "claim": "Extracellular iron ions are bound by high-affinity iron-chelating proteins such as lactoferrin and transferrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular iron ions are bound by high-affinity iron-chelating proteins such as lactoferrin and transferrin found in lymph and mucosal secretions and in serum, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about iron sequestration in the host.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "6d792cf4-eed5-4d81-b27a-273bacd151e3",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C16",
+      "claim": "Heme is a rich iron source in the human body.",
+      "claim_type": "EXPLICIT",
+      "source": "However, heme is a rich iron source in the human body and invasive pathogens can access this heme pool by secreting hemolytic factors to release hemoglobin or other hemoproteins from erythrocytes or other host cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about heme as an iron source.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "f13a9e86-5fb9-4277-ae5d-fd70ff504fe2",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C17",
+      "claim": "S. lugdunensis infections frequently show a fulminant and aggressive course of disease that resembles that of S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the CoNS Staphylococcus lugdunensis represents an exception. S. lugdunensis infections frequently show a fulminant and aggressive course of disease that resembles that of S. aureus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about S. lugdunensis pathogenicity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "2f6814e1-58e4-409a-931a-5ec26dba3a66",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C18",
+      "claim": "S. lugdunensis is associated with a series of cases of infectious endocarditis.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, S. lugdunensis is associated with a series of cases of infectious endocarditis (Liu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liu et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "25e84e62-e219-4b8c-a51a-f6bcc41d59a7",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C19",
+      "claim": "S. lugdunensis encodes an iron-dependent surface determinant locus (Isd) system.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, it is interesting to observe that S. lugdunensis, unlike other staphylococci but similar to S. aureus, encodes an iron-dependent surface determinant locus (Isd) system (Heilbronner et al., 2011; Heilbronner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Heilbronner et al., 2011 and Heilbronner et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "67297406-0335-4daf-b59f-a9e5ab4624ae",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C20",
+      "claim": "Isd facilitates the acquisition of heme from hemoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "Isd facilitates the acquisition of heme from hemoglobin and can be regarded as a hallmark of adaption towards an invasive lifestyle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Isd system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "ca4e405d-7ef6-4d66-b823-054cd9e666e2",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C21",
+      "claim": "Three genes encoding a putative ABC transporter are located between isdJ and isdB in the isd locus of S. lugdunensis.",
+      "claim_type": "EXPLICIT",
+      "source": "The isd locus of S. lugdunensis shows several characteristics that distinguish it from the locus of S. aureus. Amongst these is the presence of three genes that encode a putative ABC transporter and are located between isdJ and isdB (Figure 1A; Heilbronner et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genomic analysis and shown in Figure 1A, with citation to Heilbronner et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "d889e9d4-2d5c-430d-8715-b0e759a6cb3f",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C22",
+      "claim": "The three adjacent genes encode components of a putative ECF-transporter: a specificity subunit (lhaS), a transmembrane subunit (lhaT) and an ATPase (lhaA).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the open reading frame using Pfam (El-Gebali et al., 2019) revealed that the three adjacent genes encode components of a putative ECF-transporter, namely a specificity subunit (lhaS - SLUG_00900), a transmembrane subunit (lhaT - SLUG_00910) and an ATPase (lhaA - SLUG_00920), and they might be part of a polycistronic transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatic analysis using Pfam.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "c70f8f49-5c05-4f57-9708-abdd771e4be4",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C23",
+      "claim": "A fur-box was located upstream of lhaS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a fur-box was located upstream of lhaS (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "71abc759-e7f7-47e4-a70d-9c6af6dc3ad0",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C24",
+      "claim": "The expression of lhaS increased ~21 fold in the presence of the Fe-specific chelator EDDHA.",
+      "claim_type": "EXPLICIT",
+      "source": "qPCR analysis in S. lugdunensis N920143 revealed that the expression of lhaS and lhaA increased ~21 and~12 fold, respectively, in the presence of the Fe-specific chelator EDDHA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "1f18e436-97ed-4371-a488-dd69f63e32e3",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C25",
+      "claim": "The expression of lhaA increased ~12 fold in the presence of the Fe-specific chelator EDDHA.",
+      "claim_type": "EXPLICIT",
+      "source": "qPCR analysis in S. lugdunensis N920143 revealed that the expression of lhaS and lhaA increased ~21 and~12 fold, respectively, in the presence of the Fe-specific chelator EDDHA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "6b8abdd3-3bc4-4ce7-ac1a-3de7aa6c6384",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C26",
+      "claim": "The effect of EDDHA on lhaS and lhaA expression could be prevented by addition of FeSO4.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of EDDHA could be prevented by addition of FeSO4 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "805a709c-8d45-4c0b-bcbb-a6d84b8b3b5b",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C27",
+      "claim": "LhaSTA is involved in iron acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirmed iron-dependent regulation and suggested that LhaSTA is involved in iron acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the iron-dependent regulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "320718aa-f6b5-438b-8188-b3ee85168ad0",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C28",
+      "claim": "The \u0394lhaSTA\u2206isdEFL double mutant showed a significant growth defect when heme was the only iron source.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the \u0394lhaSTA\u2206isdEFL mutant showed a significant growth defect under these conditions (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth curve data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "aeade609-7f66-4e86-886a-43dee04d2594",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C29",
+      "claim": "The recombinant LhaS protein showed a distinct red color when purified from E. coli grown in rich LB medium.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the recombinant protein showed a distinct red color when purified from E. coli grown in rich LB medium, which contains heme due to the presence of crude yeast extract (Fyrestam and \u00d6stman, 2017; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation supported by visual evidence in Figure 2A and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "3f628e94-7bb9-4247-b5db-3f475349133f",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C30",
+      "claim": "LB medium contains heme due to the presence of crude yeast extract.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the recombinant protein showed a distinct red color when purified from E. coli grown in rich LB medium, which contains heme due to the presence of crude yeast extract (Fyrestam and \u00d6stman, 2017; Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fyrestam and \u00d6stman, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "05c47345-14a7-4723-aed3-5fd90bcf7b5d",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C31",
+      "claim": "The absorption spectrum of LhaS purified from LB showed a Soret peak at 415 nm and Q-band maxima at 537 and 568 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The absorption spectrum of the protein showed a Soret peak at 415 nm and Q-band maxima at 537 and 568 nm, suggesting histidine coordination of the heme group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spectroscopic data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "4d129fdd-6778-4620-b459-25d5e513899e",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C32",
+      "claim": "The spectral features of LhaS suggest histidine coordination of the heme group.",
+      "claim_type": "EXPLICIT",
+      "source": "The absorption spectrum of the protein showed a Soret peak at 415 nm and Q-band maxima at 537 and 568 nm, suggesting histidine coordination of the heme group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the spectroscopic data and knowledge of heme coordination chemistry.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "f48bbb31-84d4-41f1-af5c-8c36560d8c6f",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C33",
+      "claim": "The visible color and spectral peaks were absent when LhaS was purified from E. coli grown in heme-deficient RPMI medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the visible color and the spectral peaks were absent when LhaS was purified from E. coli grown in heme-deficient RPMI medium (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spectroscopic data and visual observation shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "999b1996-866e-4de7-80ab-02ef7f65d2aa",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C34",
+      "claim": "MALDI-TOF analysis of holo-LhaS identified two peaks corresponding to full length recombinant LhaS (24074.437 Da) and heme (616.1767 Da).",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted MALDI-TOF analysis of holo-LhaS purified from E. coli grown in LB and identified two peaks, one of which corresponds to full length recombinant LhaS (24074.437 Da expected weight), and the other to heme (616,1767 Da expected weight).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "2c402ef4-9448-44ba-b161-6d59fce9d139",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C35",
+      "claim": "The heme peak was not detectable when LhaS was purified from RPMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the heme peak was not detectable when LhaS was purified from RPMI (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "e37d6e1c-61df-4fba-a5df-0795406c55b6",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C36",
+      "claim": "ESI-MS confirmed the presence of heme only in LhaS samples purified from LB.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ESI-MS confirmed the presence of heme only in LhaS samples purified from LB (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ESI-MS data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "b5ff41d4-4eaf-42f3-9846-07e7014474b6",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C37",
+      "claim": "The heme-LhaS binding stoichiometry is 1:0.6 for the complex isolated from heme containing medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the extinction coefficients of LhaS and heme we calculated a heme-LhaS binding stoichiometry of 1:0.6 for the complex isolated from heme containing medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from spectroscopic data using extinction coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "e0549213-0ef1-4bf5-8a32-f8350f5169d6",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C38",
+      "claim": "Only the lhaSTA expressing strain was able to grow in the presence of heme as sole source of nutrient iron in the \u0394isd background.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only the lhaSTA expressing strain was able to grow in the presence of heme as sole source of nutrient iron (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth curve data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "ef0dbc63-dba5-4788-bb3a-ea83a6e8780d",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C39",
+      "claim": "LhaSTA expression increased cytosolic iron levels post incubation with heme.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we found that LhaSTA expression increased cytosolic iron levels post incubation with heme (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ferrozine assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "e923d754-9c31-4084-86dc-6018e6a8c06a",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C40",
+      "claim": "LhaSTA represents a 'bona fide' and functional autonomous iron acquisition system.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that LhaSTA represents a 'bona fide' and functional autonomous iron acquisition system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the growth and iron accumulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "9e71916a-a5a7-441a-a5f6-91cbe4d02e61",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C41",
+      "claim": "S. lugdunensis has been reported to degrade nutritional heme in an IsdG-independent fashion due to an unknown enzyme (OrfX).",
+      "claim_type": "EXPLICIT",
+      "source": "S. lugdunensis has been reported to degrade nutritional heme in an IsdG-independent fashion due to an unknown enzyme (OrfX) (Haley et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Haley et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "da943508-cf60-4a88-8972-46483d427ffc",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C42",
+      "claim": "The lhaSTA deficient strain displayed a mild proliferation defect on human hemoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the WT strain, the lhaSTA deficient strain displayed a mild proliferation defect on hHb and a pronounced growth defect on eqMb (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "cb3105e5-dedf-4d28-813d-e95c26f5b10e",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C43",
+      "claim": "The lhaSTA deficient strain displayed a pronounced growth defect on equine myoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the WT strain, the lhaSTA deficient strain displayed a mild proliferation defect on hHb and a pronounced growth defect on eqMb (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "a435892e-1aed-4008-a4bf-e53fb842f9cd",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C44",
+      "claim": "lhaSTA deficiency did not impact proliferation on hemoglobin-haptoglobin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, lhaSTA deficiency did not impact proliferation on hemoglobin-haptoglobin (Hb-Hap) complexes suggesting Isd-dependent acquisition of heme from Hb-Hap.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "12932672-b5f5-41c6-b74b-c42aeb16ce9a",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C45",
+      "claim": "Acquisition of heme from Hb-Hap is Isd-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, lhaSTA deficiency did not impact proliferation on hemoglobin-haptoglobin (Hb-Hap) complexes suggesting Isd-dependent acquisition of heme from Hb-Hap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that lhaSTA deficiency did not affect growth on Hb-Hap.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "b7ca0456-726c-4af3-ab3f-ebdc68d029ab",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C46",
+      "claim": "lhaSTA expression enabled growth on hemoglobin (human and murine origin) in the \u0394isd background.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lhaSTA expression enabled growth on hemoglobin (human and murine origin) and myoglobin (human and equine origin) as well as with hemopexin (Hpx).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "f257cbcc-a4a3-4739-8fe8-2411a67f637d",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C47",
+      "claim": "lhaSTA expression enabled growth on myoglobin (human and equine origin) in the \u0394isd background.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lhaSTA expression enabled growth on hemoglobin (human and murine origin) and myoglobin (human and equine origin) as well as with hemopexin (Hpx).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "a6793687-b048-49d8-b89e-3f1ec35e380d",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C48",
+      "claim": "lhaSTA expression enabled growth on hemopexin in the \u0394isd background.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lhaSTA expression enabled growth on hemoglobin (human and murine origin) and myoglobin (human and equine origin) as well as with hemopexin (Hpx).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "70809d1d-af02-44ad-93c2-5286e7f72d0a",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C49",
+      "claim": "Hb-Hap complexes did not enable growth of the lhaSTA proficient strain in the \u0394isd background.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the above observations, Hb-Hap complexes did not enable growth of the lhaSTA proficient strain strengthening the notion that Hb-Hap acquisition is Isd-dependent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "8adfcff3-9eed-42b5-a3de-9a65490a71ae",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C50",
+      "claim": "LhaSTA allows extraction and usage of heme from a diverse set of host hemoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These data further indicate that LhaSTA allows extraction and usage of heme from a diverse set of host hemoproteins, thus expanding the range of hemoproteins accessible to S. lugdunensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the growth data on multiple hemoproteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "719c8d36-c2de-4386-b7de-787dae961e34",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C51",
+      "claim": "Apo-LhaS did not stain with TMBZ in the absence of hemoproteins during incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of hemoproteins during incubation, apo-LhaS did not stain with TMBZ, but TMBZ staining was observed after incubation with all the hemoproteins tested except for Hb-Hap.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TMBZ staining data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "f5dbf4e2-f13f-4ed0-8388-1bd023986cea",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C52",
+      "claim": "TMBZ staining of LhaS was observed after incubation with all hemoproteins tested except for Hb-Hap.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of hemoproteins during incubation, apo-LhaS did not stain with TMBZ, but TMBZ staining was observed after incubation with all the hemoproteins tested except for Hb-Hap.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TMBZ staining data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "967e61f6-b547-4cad-b273-5c00a961815a",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C53",
+      "claim": "S. lugdunensis N920143 strain is non-hemolytic on sheep blood agar.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we realized that the S. lugdunensis N920143 strain is non-hemolytic on sheep blood agar, we reproduced the \u0394isd deletion as well as the plasmid-based expression of lhaSTA in the hemolytic S. lugdunensis N940135 strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from blood agar plates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "d498a56e-fafd-45f9-a2d5-4cc6a5457314",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C54",
+      "claim": "LhaSTA-dependent usage of hemoproteins was also observed in the N940135 background.",
+      "claim_type": "EXPLICIT",
+      "source": "As for N920143, LhaSTA-dependent usage of hemoproteins was also observed in the N940135 background (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "c8d129c9-00c8-461b-bbc2-56a3f1b6cfc2",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C55",
+      "claim": "S. lugdunensis N940135 was unable to establish systemic disease in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that S. lugdunensis N940135 was unable to establish systemic disease in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by infection experiments in mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "05c2ec66-1ad2-43d9-92a2-63514d5f9550",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C56",
+      "claim": "Mice infected with 3*10^7 CFU/animal of S. lugdunensis N940135 did not show signs of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when infected with 3*107 CFU/animal, mice did not show signs of infection (weight loss/reduced movement).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from mouse infection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "c7b71f2f-5c7e-493c-b258-86159a3a9841",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C57",
+      "claim": "Three days post infection, the organs of infected animals showed low bacterial burdens frequently approaching sterility.",
+      "claim_type": "EXPLICIT",
+      "source": "Three days post infection, the organs of infected animals showed low bacterial burdens frequently approaching sterility (Figure 5\u2014figure supplement 1) and the expression of LhaSTA did not increase the bacterial loads within the organs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CFU enumeration data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "8bbab283-40d3-4e1f-bff8-8679cd239637",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C58",
+      "claim": "The expression of LhaSTA did not increase the bacterial loads within the organs of infected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Three days post infection, the organs of infected animals showed low bacterial burdens frequently approaching sterility (Figure 5\u2014figure supplement 1) and the expression of LhaSTA did not increase the bacterial loads within the organs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CFU enumeration data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "6e0665d4-efb4-4093-b8b7-2ddc1fe508cd",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C59",
+      "claim": "Hemolytic activity of S. lugdunensis culture filtrates was low compared to those of S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "Hemolytic activity of S. lugdunensis culture filtrates was low compared to those of S. aureus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by hemolysis assay data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "ef5f7c1d-da68-4e45-845e-82c6e92e3940",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C60",
+      "claim": "S. lugdunensis culture filtrates lysed human erythrocytes but not murine erythrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we observed lysis of human erythrocytes while murine erythrocytes were not affected by S. lugdunensis culture filtrates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by hemolysis assay data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "ff18d043-7c97-4597-bea1-95f5dbf86120",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C61",
+      "claim": "S. lugdunensis possesses human specific factors mediating host cell damage.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests human specific factors mediating host cell damage (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential lysis of human vs. murine erythrocytes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "f62df3a0-1e36-4a60-a497-57a21c5562b7",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C62",
+      "claim": "The presence of human erythrocytes significantly improved the growth of the Isd deficient but LhaSTA-expressing strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5A shows, that the presence of human erythrocytes significantly improved the growth of the Isd deficient but LhaSTA-expressing strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "87b5d7bd-85e1-4278-9b3f-522ea240497e",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C63",
+      "claim": "lhaSTA expression enhanced the growth of S. lugdunensis in the presence of cardiac myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that lhaSTA expression enhanced the growth of S. lugdunensis in the presence of cardiac myocytes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "518c580d-5ccd-4ee6-ae41-0c355d931a01",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C64",
+      "claim": "LhaSTA represents a novel broad-range heme-acquisition system that expands the hemoprotein substrate range accessible to S. lugdunensis.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our results suggest that LhaSTA represents a novel broad-range heme-acquisition system that expands the hemoprotein substrate range accessible to S. lugdunensis to overcome nutritional iron restriction (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from all the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "c1c63247-5fce-46be-928c-20f3ca0ef07d",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C65",
+      "claim": "S. aureus produces the siderophores staphyloferrin A (SF-A) and staphyloferrin B (SF-B) which are important during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly virulent S. aureus species produces the siderophores staphyloferrin A (SF-A) and staphyloferrin B (SF-B) which are important during infection (Beasley et al., 2011; Sheldon and Heinrichs, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beasley et al., 2011 and Sheldon and Heinrichs, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "91f50d96-e6a5-40d5-91b4-00301158a714",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C66",
+      "claim": "S. lugdunensis does not produce endogenous siderophores.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to S. aureus, S. lugdunensis does not produce endogenous siderophores (Brozyna et al., 2014), suggesting that the iron requirements during infection must be satisfied through alternative strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Brozyna et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "97d7b185-b70c-46e7-afe1-abaf223aace1",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C67",
+      "claim": "Both globin and hemopexin bind heme with dissociation constants (Kds) smaller than 1 pM.",
+      "claim_type": "EXPLICIT",
+      "source": "Host hemoproteins are characterized by a remarkable affinity towards heme: Both, globin and hemopexin bind heme with dissociation constants (Kds) smaller than 1 pM (Hargrove et al., 1996; Tolosano and Altruda, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hargrove et al., 1996 and Tolosano and Altruda, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "8b89bebe-eeb0-4070-9795-440c1016f5ab",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C68",
+      "claim": "Iron dependent surface determinant loci are used to acquire heme from hemoglobin by several Gram-positive pathogens including S. aureus, S. lugdunensis, Bacillus anthracis, Streptococcus pyogenes and Listeria monocytogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Iron dependent surface determinant loci are used to acquire heme from hemoglobin by several Gram-positive pathogens including S. aureus (Mazmanian et al., 2003), S. lugdunensis (Heilbronner et al., 2011; Heilbronner et al., 2016), Bacillus anthracis (Skaar et al., 2006), Streptococcus pyogenes (Lei et al., 2002) and Listeria monocytogenes (Jin et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "f14ca912-4ee7-4d7a-a3ce-61b0453be6b6",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C69",
+      "claim": "ECF systems specific for riboflavin, folate, thiamine, biotin, cobalamine, pantothenate, niacin and pyridoxamine have been described.",
+      "claim_type": "EXPLICIT",
+      "source": "ECF systems specific for the vitamins riboflavin (Duurkens et al., 2007), folate (Eudes et al., 2008), thiamine (Erkens and Slotboom, 2010), biotin (Berntsson et al., 2012), cobalamine (Santos et al., 2018; Rempel et al., 2018), pantothenate (Neubauer et al., 2009; Zhang et al., 2014), niacin (ter Beek et al., 2011) and pyridoxamine (Wang et al., 2015) as well as for the trace metals nickel and cobalt (Yu et al., 2014; Kirsch and Eitinger, 2014) have been described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "c767aced-2a2d-44b5-9846-ff56d81720d3",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C70",
+      "claim": "ECF systems specific for the trace metals nickel and cobalt have been described.",
+      "claim_type": "EXPLICIT",
+      "source": "ECF systems specific for the vitamins riboflavin (Duurkens et al., 2007), folate (Eudes et al., 2008), thiamine (Erkens and Slotboom, 2010), biotin (Berntsson et al., 2012), cobalamine (Santos et al., 2018; Rempel et al., 2018), pantothenate (Neubauer et al., 2009; Zhang et al., 2014), niacin (ter Beek et al., 2011) and pyridoxamine (Wang et al., 2015) as well as for the trace metals nickel and cobalt (Yu et al., 2014; Kirsch and Eitinger, 2014) have been described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yu et al., 2014 and Kirsch and Eitinger, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "768cfe2a-0aea-48cd-b98c-67661d48bf45",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C71",
+      "claim": "HasA has been shown to possess a broad hemoprotein substrate range and allows the usage of hemoglobin from different species as well as myoglobin and hemopexin.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to LhaS, HasA has been shown to possess a broad hemoprotein substrate range and allows the usage of hemoglobin from different species as well as myoglobin and hemopexin (Wandersman and Delepelaire, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wandersman and Delepelaire, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "441c6eee-61f6-4c89-9cc3-13fb9052b1e5",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C72",
+      "claim": "The broad substrate range of HasA was attributed to its high affinity towards heme (Kd = 0.2 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "This ability of HasA was attributed to its high affinity towards heme (Kd = 0.2 nM) (Deniau et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Deniau et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "0c95659d-f0b4-41d5-a20c-034c3f1cb28e",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C73",
+      "claim": "ECF-specificity subunits frequently possess Kds towards their ligands in the low nanomolar to picomolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "ECF-specificity subunits frequently possess Kds towards their ligands in the low nanomolar to picomolar range (Rempel et al., 2019), supporting the idea that LhaS might directly accept heme from hemoproteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rempel et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "c8591762-ae68-4a9b-89b0-82d972df739d",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C74",
+      "claim": "Co-purification of heme with heterologously expressed LhaS suggests that the off-rates are low, consistent with high-affinity binding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, co-purification of heme with heterologously expressed LhaS suggests that the off-rates are low, consistent with high-affinity binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the co-purification data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "07e42fc7-7a68-4b07-987d-f6ff3477d632",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C75",
+      "claim": "The S. aureus Isd system surface located receptor IsdB binds hemoglobin through its N-terminal NEAT domain (IsdB-N1).",
+      "claim_type": "EXPLICIT",
+      "source": "The surface located receptor IsdB binds hemoglobin through its N-terminal NEAT domain (IsdB-N1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the S. aureus Isd system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "0e030e1a-f51e-4ea8-a6ad-16158b5c7e4b",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C76",
+      "claim": "IsdB binding to hemoglobin is proposed to induce a steric strain that facilitates heme dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "This binding is proposed to induce a steric strain that facilitates heme dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural and mechanistic studies of the Isd system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "9713f71d-df32-4142-b051-ffb2a177b975",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C77",
+      "claim": "IsdB of S. aureus allows acquisition from hemoglobin but does not interact with myoglobin or hemopexin.",
+      "claim_type": "EXPLICIT",
+      "source": "IsdB allows acquisition from hemoglobin but does not interact with myoglobin or hemopexin (Torres et al., 2006) and even hemoglobin from different species reduces the efficacy of the system (Choby et al., 2018; Pishchany et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Torres et al., 2006, Choby et al., 2018, and Pishchany et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "aa796e7f-007b-458d-877a-8b7a45f1726c",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C78",
+      "claim": "IsdB of S. lugdunensis does not interact with myoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "The same is true for IsdB of S. lugdunensis (Zapotoczna et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zapotoczna et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "00c60731-ddf2-4404-92a2-72228b46ed8f",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C79",
+      "claim": "Haemophilus influenza uses the specific interaction between the surface exposed receptor HxuA and hemopexin to facilitate heme dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Haemophilus influenza uses the specific interaction between the surface exposed receptor HxuA and hemopexin to facilitate heme dissociation. Heme is subsequently captured by HxuC (Zambolin et al., 2016; Hanson et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zambolin et al., 2016 and Hanson et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "42af0998-ac24-49d0-9e3b-8acb64f3f6e6",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C80",
+      "claim": "The LhaSTA operon of S. lugdunensis is located within the isd operon.",
+      "claim_type": "EXPLICIT",
+      "source": "The LhaSTA operon of S. lugdunensis is located within the isd operon which encodes the hemoglobin receptor IsdB, the cell wall-anchored, heme-binding proteins IsdJ and IsdC as well as the conventional heme membrane transporter IsdEFL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "8f833ee5-bf52-45bb-a189-6fc3a609b728",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C81",
+      "claim": "Deletion of lhaSTA in combination with isdEFL did not completely abrogate acquisition of free heme.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of lhaSTA in combination with isdEFL did not completely abrogate acquisition of free heme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the growth data in Figure 1D showing residual growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "105802e2-c608-4317-a9f1-b3c380f53f48",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C82",
+      "claim": "A similar effect of incomplete heme acquisition has been observed in S. aureus suggesting the presence of additional, low affinity heme transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar effect has been observed in S. aureus suggesting the presence of additional, low affinity heme transporters within these species (Grigg et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Grigg et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "85a10dd9-327a-434d-bcf1-7f50f359b699",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C84",
+      "claim": "LhaSTA does not rely on Isd-dependent funneling of heme across the cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that LhaSTA does not rely on Isd-dependent funneling of heme across the cell wall, but also raises interesting questions about the spatial organization of heme acquisition and donor proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional independence of LhaSTA from Isd.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "dcf9562e-3efe-4b7e-9df7-f9123591bb90",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C85",
+      "claim": "Staphylococcal peptidoglycan contains pores that might allow access of proteins to the bacterial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has been shown that staphylococcal peptidoglycan contains pores that might allow access of proteins to the bacterial membrane (Kim et al., 2013; Turner et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kim et al., 2013 and Turner et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "6b4ed83d-8a12-4ddc-9c3a-4ef78360d264",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C86",
+      "claim": "Recombinant LhaS did not accept heme from Hb-Hap.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also observed that recombinant LhaS did not accept heme from Hb-Hap which might indicate that binding of haptoglobin to hemoglobin increases the strength of heme binding to the protein complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TMBZ staining data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "6092c081-f096-4dfa-8611-5a1facafbb91",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C87",
+      "claim": "Binding of haptoglobin to hemoglobin might increase the strength of heme binding to the protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also observed that recombinant LhaS did not accept heme from Hb-Hap which might indicate that binding of haptoglobin to hemoglobin increases the strength of heme binding to the protein complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that LhaS did not accept heme from Hb-Hap.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "2c2829a7-0e9d-4087-8a94-068cc947c95e",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C88",
+      "claim": "Most S. lugdunensis strains are highly hemolytic on blood agar plates.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, most S. lugdunensis strains are highly hemolytic on blood agar plates suggesting that the release of hemoproteins from host cells can be achieved by this species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about S. lugdunensis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "2e8e3ff5-f083-45bf-9683-3e9f68e9e4ca",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C89",
+      "claim": "The hemolytic SLUSH peptides of S. lugdunensis resemble the \u03b2-PSMs of S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "The hemolytic SLUSH peptides (Donvito et al., 1997) of S. lugdunensis resemble the \u03b2-PSMs of S. aureus (Rautenberg et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Donvito et al., 1997 and Rautenberg et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "54a9377c-7945-47a0-8558-db686b0767ef",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C90",
+      "claim": "The sphingomyelinase C (\u00df-toxin) is conserved in S. lugdunensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the sphingomyelinase C (\u00df-toxin) is conserved in S. lugdunensis (Heilbronner et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Heilbronner et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "85626dff-f958-4919-873e-cefa29963bcc",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C91",
+      "claim": "S. aureus targets erythrocytes specifically using the bi-component toxins LukED and HlgAB recognising the DARC receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent research suggested that S. aureus targets erythrocytes specifically using the bi-component toxins LukED and HlgAB recognising the DARC receptor (Spaan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Spaan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "5a12ad18-7e69-4b7f-ac57-3351ba4b2220",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C92",
+      "claim": "S. lugdunensis failed to lyse murine erythrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether similar mechanisms are used by S. lugdunensis is unclear, but we found that, in contrast to human cells, S. lugdunensis failed to lyse murine erythrocytes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by hemolysis assay data in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "039508df-4201-45c2-bb52-b4276a09ed2b",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C93",
+      "claim": "Host specific virulence factors are present in S. lugdunensis.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that host specific virulence factors are present in S. lugdunensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential lysis of human vs. murine erythrocytes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "7701cf0e-f1db-43ba-990a-1105f397d431",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C94",
+      "claim": "LhaSTA facilitated growth of S. lugdunensis in the presence of human cells such as erythrocytes and cardiac myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LhaSTA facilitated growth of S. lugdunensis in the presence of human cells such as erythrocytes and cardiac myocytes strongly suggesting that the system allows usage of these cells during invasive disease.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "c72e33a5-b25f-4c09-b416-b96e8ff6567f",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C95",
+      "claim": "During the revision of this manuscript Chatterjee and colleagues published the identification of a heme-specific ECF transporter in streptococci.",
+      "claim_type": "EXPLICIT",
+      "source": "During the revision of this manuscript Chatterjee and colleagues published the identification of a heme-specific ECF transporter in streptococci (Chatterjee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to concurrent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "7bfbb9f3-dbce-43bc-a2f5-9fd5b5d6978a",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C96",
+      "claim": "A preprint manuscript that reports the identification of a heme-specific ECF transporter in Lactococcus sakei is present in bioarchives.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a preprint manuscript that reports the identification of a heme-specific ECF transporter in Lactococcus sakei is present in bioarchives (Verplaetse, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a preprint.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "f5388bf7-4e7d-4c3a-afd0-16765aa8fb15",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C97",
+      "claim": "The specificity subunits of heme-specific ECF transporters in different species show remarkably little amino-acid sequence similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these transporters seem functionally redundant to the one of S. lugdunensis described here, the specificity subunits of the systems show remarkably little amino-acid sequence similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "698c4877-cdaf-4d2d-b999-834fab9df704",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C98",
+      "claim": "The genes encoding heme-specific ECF transporters might have developed independently in bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the genes encoding them might have developed independently in bacterial species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low sequence similarity despite functional similarity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "92431962-74d1-46a6-8877-15801d8fa9bb",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "claim_id": "C99",
+      "claim": "The cobalamin-specific components BtuM and CbrT bind the same ligand despite little sequence conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "This was also suggested for the cobalamin-specific components BtuM and CbrT which bind the same ligand despite little sequence conservation (Santos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Santos et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "58ec1ef0-60b8-4926-b01d-f3e8cbe8869e",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identified an iron-regulated ECF-transporter (LhaSTA) in S. lugdunensis. The lhaSTA operon is located within the isd locus and encodes three components: a specificity subunit (lhaS), a transmembrane subunit (lhaT), and an ATPase (lhaA). A fur-box was identified upstream of lhaS, and qPCR analysis showed that lhaS and lhaA expression increased ~21-fold and ~12-fold, respectively, in the presence of the iron chelator EDDHA, an effect that was prevented by addition of FeSO4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C21-C27 provide converging evidence from genomic analysis (C21-C23), bioinformatic prediction (C22), and experimental validation via qPCR (C24-C26) that demonstrate iron-dependent regulation of the lhaSTA operon. The presence of a fur-box and the reversibility of EDDHA effects by FeSO4 addition strongly support iron-dependent regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "c7941abe-d18e-4629-8521-50fb1248a64d",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors demonstrate that LhaS is specific for heme. Recombinant LhaS purified from E. coli grown in heme-containing LB medium showed a distinct red color and characteristic absorption spectrum (Soret peak at 415 nm, Q-band maxima at 537 and 568 nm) consistent with histidine-coordinated heme. These features were absent when LhaS was purified from heme-deficient RPMI medium. MALDI-TOF and ESI-MS analyses confirmed the presence of heme (616.1767 Da) only in LhaS samples from LB medium. The calculated heme-LhaS binding stoichiometry was 1:0.6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C29-C37 provide multiple lines of evidence including visual observation, UV-vis spectroscopy, and mass spectrometry (MALDI-TOF and ESI-MS) that consistently demonstrate heme binding to LhaS. The differential binding depending on growth medium (LB vs. RPMI) and the spectroscopic characteristics are consistent with heme coordination. The stoichiometry calculation (C37) is based on appropriate spectroscopic methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "cc0abffa-4546-4f06-8ebf-9924fefef261",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrate that LhaSTA represents a functional autonomous iron acquisition system. In a \u0394isd background, only the lhaSTA-expressing strain was able to grow with heme as the sole iron source. LhaSTA expression also increased cytosolic iron levels following incubation with heme, as measured by ferrozine assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by growth experiments (C38, Figure 3A) and direct measurement of intracellular iron content (C39, Figure 3B). The use of the \u0394isd background is critical for demonstrating that LhaSTA functions independently of the canonical Isd system. The ferrozine assay provides quantitative evidence of iron accumulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "465239a2-fc3e-4bea-a0d4-1c94858388d3",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors demonstrate that LhaS accepts heme from diverse host-derived hemoproteins including human and murine hemoglobin, human and equine myoglobin, and hemopexin, but not from hemoglobin-haptoglobin complexes. Growth assays with \u0394lhaSTA mutants showed defects on myoglobin but not on Hb-Hap complexes. In the \u0394isd background, lhaSTA expression enabled growth on multiple hemoproteins except Hb-Hap. TMBZ staining confirmed that recombinant LhaS accepted heme from all tested hemoproteins except Hb-Hap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C42-C52 are supported by multiple complementary approaches: growth assays with mutant strains (C42-C49), biochemical assays with recombinant protein (C51-C52, Figure 4D), and experiments in both wild-type and \u0394isd backgrounds. The consistent pattern across different experimental systems (inability to use Hb-Hap but ability to use other hemoproteins) strengthens the conclusions. The TMBZ staining provides direct biochemical evidence of heme transfer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "90f9e1e7-863d-42c3-8162-85be6b1831b5",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors demonstrate that LhaSTA function is independent of the canonical Isd heme acquisition system. Growth experiments using the \u0394isd mutant expressing lhaSTA showed that LhaSTA can function in the complete absence of all Isd-associated proteins, indicating that LhaSTA does not rely on Isd-dependent funneling of heme across the cell wall.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C84 are supported by experiments using the \u0394isd deletion mutant (Figures 3 and 4). The ability of lhaSTA to restore growth on various hemoproteins in the complete absence of the Isd system provides strong evidence for functional independence. This is a critical control that rules out dependence on Isd components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "bc24123b-ab82-4501-a940-4e1df8bb657d",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors demonstrate that LhaSTA allows S. lugdunensis to proliferate on human cells as sources of nutrient iron. LhaSTA expression enhanced growth in the presence of human erythrocytes and cardiac myocytes in ex vivo assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C62-C63, and C94 are supported by ex vivo growth experiments with human cells (Figure 5). The use of both erythrocytes (hemoglobin source) and cardiac myocytes (myoglobin source) demonstrates the physiological relevance of the broad substrate range. The experiments were conducted in the \u0394isd background, confirming LhaSTA-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "983b160f-3d1c-494e-a2d8-f9d7724eab7d",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors conclude that LhaSTA represents the first example of an ECF-transporter involved in overcoming host-induced nutritional limitation and represents a novel broad-range heme-acquisition system that expands the hemoprotein substrate range accessible to S. lugdunensis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C64 represent the main conclusions of the study. These are well-supported by the collective evidence from all previous results showing: (1) LhaSTA is an ECF transporter (C22), (2) it is iron-regulated (C24-C26), (3) it binds heme (C29-C36), (4) it functions as an autonomous iron acquisition system (C38-C40), (5) it has broad hemoprotein substrate range (C46-C48), and (6) it enables growth on human cells (C62-C63). The novelty claim is supported by the literature review (C3, C69-C70) showing no prior examples of ECF transporters for iron acquisition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "2a0a0ead-6029-4e4a-8218-1446f52df018",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors attempted to establish a mouse model of systemic S. lugdunensis infection but found that S. lugdunensis N940135 was unable to establish systemic disease in mice. Even at high inoculum (3\u00d710^7 CFU/animal), mice showed no signs of infection, and organs showed low bacterial burdens approaching sterility three days post-infection. LhaSTA expression did not increase bacterial loads in organs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 are supported by in vivo infection experiments (Figure 5\u2014figure supplement 1). However, the negative result limits the ability to assess LhaSTA function in vivo. The authors appropriately acknowledge this limitation and provide a plausible explanation based on host-specific virulence factors (C59-C61, C92-C93).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "2db32b55-8993-4a91-8518-11977007197e",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors demonstrate that S. lugdunensis possesses human-specific hemolytic factors. S. lugdunensis culture filtrates lysed human erythrocytes but not murine erythrocytes, suggesting the presence of host-specific virulence factors that may explain the inability to establish infection in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 and C92-C93 are supported by hemolysis assays (Figure 5\u2014figure supplement 2) showing differential lysis of human versus murine erythrocytes. This provides a plausible explanation for the failure of the mouse infection model and suggests that S. lugdunensis may have evolved human-specific virulence mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "4be14782-50f8-4c02-bb5c-8b32dd18b909",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors show that deletion of both lhaSTA and isdEFL did not completely abrogate heme acquisition, suggesting the presence of additional low-affinity heme transporters in S. lugdunensis, similar to observations in S. aureus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C81-C82 are supported by growth data (Figure 1D) showing residual growth of the double mutant on heme. The comparison to S. aureus (C82) provides context from the literature. This observation is important for understanding the complete heme acquisition machinery but does not diminish the significance of LhaSTA.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "f9ddb8ea-479d-47cd-8820-18f9029ad468",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors validated their findings in a second S. lugdunensis strain (N940135) that is hemolytic, demonstrating that LhaSTA-dependent usage of hemoproteins is not strain-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by growth experiments in the N940135 background (Figure 4\u2014figure supplement 1). This validation in a second strain strengthens the generalizability of the findings, though the core mechanistic insights were established in the N920143 strain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "5c0c840e-da71-4fff-a6c6-b5a100728fb1",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors observed that recombinant LhaS did not accept heme from Hb-Hap complexes and speculate that binding of haptoglobin to hemoglobin might increase the strength of heme binding to the protein complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is supported by TMBZ staining data (Figure 4D), but claim C87 is explicitly speculative. The authors acknowledge that this mechanism is unclear and that such an effect of haptoglobin is not known in the literature. Additional experiments would be needed to test this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "066baae3-0c34-42b8-b7de-22aad64606d9",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors infer that LhaS has high-affinity heme binding based on co-purification of heme with heterologously expressed LhaS, suggesting low off-rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C74 is an inference from co-purification data (C29-C36). While co-purification is consistent with high-affinity binding, the authors explicitly state they failed to determine a precise Kd by isothermal titration calorimetry. The inference is reasonable but lacks direct quantitative measurement of binding affinity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "03ce9c19-199c-44b5-8b2f-cc7fb06be155",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors note that during manuscript revision, other groups published identification of heme-specific ECF transporters in streptococci and Lactococcus sakei. Despite functional similarity, the specificity subunits show little amino acid sequence similarity, suggesting independent evolutionary development, similar to cobalamin-specific ECF components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C99 appropriately contextualize the work within concurrent discoveries in the field. The sequence comparison (C97) and evolutionary inference (C98) are supported by the analogy to cobalamin transporters (C99). This discussion appropriately acknowledges the broader significance while noting the independent nature of the discoveries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "a3b3fd67-8aa7-47b3-97b3-158e5c5bb50f",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors provide background on ECF transporters as trace nutrient acquisition systems with high-affinity substrate binding components, noting that involvement in iron acquisition was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C11-C12 represent established knowledge about ECF transporters supported by appropriate citations (Erkens et al., 2012; Rempel et al., 2019). Claim C3 accurately describes the knowledge gap that motivated the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "6ec6634c-f23e-4293-abd4-e8daa1d41775",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors provide background on nutritional immunity, describing how host-induced iron limitation limits bacterial proliferation and how heme represents a rich iron source that pathogens can access.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C13-C16 represent established knowledge about nutritional immunity supported by appropriate citations. This background appropriately contextualizes the biological significance of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "46b50de7-f255-4135-a611-395f361afea8",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors provide background on S. lugdunensis as an unusually virulent coagulase-negative staphylococcus associated with infectious endocarditis and encoding an Isd heme acquisition system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 represent established knowledge about S. lugdunensis supported by appropriate citations. This background establishes the clinical relevance and provides context for why this organism is of interest.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    },
+    {
+      "id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6",
+      "content_id": "e75eb79d-761b-4755-a609-f6da112cc53e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors provide extensive background on bacterial iron acquisition systems, including siderophores, Isd systems, ECF transporters, and hemophores, drawing comparisons between different bacterial species and mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C91 represent literature review and established knowledge supported by appropriate citations throughout. This background appropriately contextualizes the novelty and significance of the findings within the broader field of bacterial iron acquisition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:44:32.278851Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "57a0ea08-feae-482c-8569-24cde0c2070c",
+      "result_id": "58ec1ef0-60b8-4926-b01d-f3e8cbe8869e"
+    },
+    {
+      "claim_id": "ca4e405d-7ef6-4d66-b823-054cd9e666e2",
+      "result_id": "58ec1ef0-60b8-4926-b01d-f3e8cbe8869e"
+    },
+    {
+      "claim_id": "d889e9d4-2d5c-430d-8715-b0e759a6cb3f",
+      "result_id": "58ec1ef0-60b8-4926-b01d-f3e8cbe8869e"
+    },
+    {
+      "claim_id": "c70f8f49-5c05-4f57-9708-abdd771e4be4",
+      "result_id": "58ec1ef0-60b8-4926-b01d-f3e8cbe8869e"
+    },
+    {
+      "claim_id": "71abc759-e7f7-47e4-a70d-9c6af6dc3ad0",
+      "result_id": "58ec1ef0-60b8-4926-b01d-f3e8cbe8869e"
+    },
+    {
+      "claim_id": "1f18e436-97ed-4371-a488-dd69f63e32e3",
+      "result_id": "58ec1ef0-60b8-4926-b01d-f3e8cbe8869e"
+    },
+    {
+      "claim_id": "6b8abdd3-3bc4-4ce7-ac1a-3de7aa6c6384",
+      "result_id": "58ec1ef0-60b8-4926-b01d-f3e8cbe8869e"
+    },
+    {
+      "claim_id": "805a709c-8d45-4c0b-bcbb-a6d84b8b3b5b",
+      "result_id": "58ec1ef0-60b8-4926-b01d-f3e8cbe8869e"
+    },
+    {
+      "claim_id": "89f690a1-ec85-4255-9f30-d988f4f3b58a",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "320718aa-f6b5-438b-8188-b3ee85168ad0",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "aeade609-7f66-4e86-886a-43dee04d2594",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "3f628e94-7bb9-4247-b5db-3f475349133f",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "05c47345-14a7-4723-aed3-5fd90bcf7b5d",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "4d129fdd-6778-4620-b459-25d5e513899e",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "f48bbb31-84d4-41f1-af5c-8c36560d8c6f",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "999b1996-866e-4de7-80ab-02ef7f65d2aa",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "2c402ef4-9448-44ba-b161-6d59fce9d139",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "e37d6e1c-61df-4fba-a5df-0795406c55b6",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "b5ff41d4-4eaf-42f3-9846-07e7014474b6",
+      "result_id": "c7941abe-d18e-4629-8521-50fb1248a64d"
+    },
+    {
+      "claim_id": "e0549213-0ef1-4bf5-8a32-f8350f5169d6",
+      "result_id": "cc0abffa-4546-4f06-8ebf-9924fefef261"
+    },
+    {
+      "claim_id": "ef0dbc63-dba5-4788-bb3a-ea83a6e8780d",
+      "result_id": "cc0abffa-4546-4f06-8ebf-9924fefef261"
+    },
+    {
+      "claim_id": "e923d754-9c31-4084-86dc-6018e6a8c06a",
+      "result_id": "cc0abffa-4546-4f06-8ebf-9924fefef261"
+    },
+    {
+      "claim_id": "44e52519-471f-4b9f-9890-99fbc9b01840",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "da943508-cf60-4a88-8972-46483d427ffc",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "cb3105e5-dedf-4d28-813d-e95c26f5b10e",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "a435892e-1aed-4008-a4bf-e53fb842f9cd",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "12932672-b5f5-41c6-b74b-c42aeb16ce9a",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "b7ca0456-726c-4af3-ab3f-ebdc68d029ab",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "f257cbcc-a4a3-4739-8fe8-2411a67f637d",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "a6793687-b048-49d8-b89e-3f1ec35e380d",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "70809d1d-af02-44ad-93c2-5286e7f72d0a",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "8adfcff3-9eed-42b5-a3de-9a65490a71ae",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "719c8d36-c2de-4386-b7de-787dae961e34",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "f5dbf4e2-f13f-4ed0-8388-1bd023986cea",
+      "result_id": "465239a2-fc3e-4bea-a0d4-1c94858388d3"
+    },
+    {
+      "claim_id": "e52a3e4d-78fb-4ddc-a267-24488cac257e",
+      "result_id": "90f9e1e7-863d-42c3-8162-85be6b1831b5"
+    },
+    {
+      "claim_id": "85a10dd9-327a-434d-bcf1-7f50f359b699",
+      "result_id": "90f9e1e7-863d-42c3-8162-85be6b1831b5"
+    },
+    {
+      "claim_id": "74ad849c-e59d-448f-995a-e7919bcd6320",
+      "result_id": "bc24123b-ab82-4501-a940-4e1df8bb657d"
+    },
+    {
+      "claim_id": "f62df3a0-1e36-4a60-a497-57a21c5562b7",
+      "result_id": "bc24123b-ab82-4501-a940-4e1df8bb657d"
+    },
+    {
+      "claim_id": "87b5d7bd-85e1-4278-9b3f-522ea240497e",
+      "result_id": "bc24123b-ab82-4501-a940-4e1df8bb657d"
+    },
+    {
+      "claim_id": "7701cf0e-f1db-43ba-990a-1105f397d431",
+      "result_id": "bc24123b-ab82-4501-a940-4e1df8bb657d"
+    },
+    {
+      "claim_id": "dc3fa4f7-bc57-4cf1-9b90-04ae8c2b948c",
+      "result_id": "983b160f-3d1c-494e-a2d8-f9d7724eab7d"
+    },
+    {
+      "claim_id": "518c580d-5ccd-4ee6-ae41-0c355d931a01",
+      "result_id": "983b160f-3d1c-494e-a2d8-f9d7724eab7d"
+    },
+    {
+      "claim_id": "c8d129c9-00c8-461b-bbc2-56a3f1b6cfc2",
+      "result_id": "2a0a0ead-6029-4e4a-8218-1446f52df018"
+    },
+    {
+      "claim_id": "05c2ec66-1ad2-43d9-92a2-63514d5f9550",
+      "result_id": "2a0a0ead-6029-4e4a-8218-1446f52df018"
+    },
+    {
+      "claim_id": "c7b71f2f-5c7e-493c-b258-86159a3a9841",
+      "result_id": "2a0a0ead-6029-4e4a-8218-1446f52df018"
+    },
+    {
+      "claim_id": "8bbab283-40d3-4e1f-bff8-8679cd239637",
+      "result_id": "2a0a0ead-6029-4e4a-8218-1446f52df018"
+    },
+    {
+      "claim_id": "6e0665d4-efb4-4093-b8b7-2ddc1fe508cd",
+      "result_id": "2db32b55-8993-4a91-8518-11977007197e"
+    },
+    {
+      "claim_id": "ef5f7c1d-da68-4e45-845e-82c6e92e3940",
+      "result_id": "2db32b55-8993-4a91-8518-11977007197e"
+    },
+    {
+      "claim_id": "ff18d043-7c97-4597-bea1-95f5dbf86120",
+      "result_id": "2db32b55-8993-4a91-8518-11977007197e"
+    },
+    {
+      "claim_id": "5a12ad18-7e69-4b7f-ac57-3351ba4b2220",
+      "result_id": "2db32b55-8993-4a91-8518-11977007197e"
+    },
+    {
+      "claim_id": "039508df-4201-45c2-bb52-b4276a09ed2b",
+      "result_id": "2db32b55-8993-4a91-8518-11977007197e"
+    },
+    {
+      "claim_id": "320718aa-f6b5-438b-8188-b3ee85168ad0",
+      "result_id": "4be14782-50f8-4c02-bb5c-8b32dd18b909"
+    },
+    {
+      "claim_id": "8f833ee5-bf52-45bb-a189-6fc3a609b728",
+      "result_id": "4be14782-50f8-4c02-bb5c-8b32dd18b909"
+    },
+    {
+      "claim_id": "105802e2-c608-4317-a9f1-b3c380f53f48",
+      "result_id": "4be14782-50f8-4c02-bb5c-8b32dd18b909"
+    },
+    {
+      "claim_id": "967e61f6-b547-4cad-b273-5c00a961815a",
+      "result_id": "f9ddb8ea-479d-47cd-8820-18f9029ad468"
+    },
+    {
+      "claim_id": "d498a56e-fafd-45f9-a2d5-4cc6a5457314",
+      "result_id": "f9ddb8ea-479d-47cd-8820-18f9029ad468"
+    },
+    {
+      "claim_id": "6b4ed83d-8a12-4ddc-9c3a-4ef78360d264",
+      "result_id": "5c0c840e-da71-4fff-a6c6-b5a100728fb1"
+    },
+    {
+      "claim_id": "6092c081-f096-4dfa-8611-5a1facafbb91",
+      "result_id": "5c0c840e-da71-4fff-a6c6-b5a100728fb1"
+    },
+    {
+      "claim_id": "c8591762-ae68-4a9b-89b0-82d972df739d",
+      "result_id": "066baae3-0c34-42b8-b7de-22aad64606d9"
+    },
+    {
+      "claim_id": "c72e33a5-b25f-4c09-b416-b96e8ff6567f",
+      "result_id": "03ce9c19-199c-44b5-8b2f-cc7fb06be155"
+    },
+    {
+      "claim_id": "7bfbb9f3-dbce-43bc-a2f5-9fd5b5d6978a",
+      "result_id": "03ce9c19-199c-44b5-8b2f-cc7fb06be155"
+    },
+    {
+      "claim_id": "f5388bf7-4e7d-4c3a-afd0-16765aa8fb15",
+      "result_id": "03ce9c19-199c-44b5-8b2f-cc7fb06be155"
+    },
+    {
+      "claim_id": "698c4877-cdaf-4d2d-b999-834fab9df704",
+      "result_id": "03ce9c19-199c-44b5-8b2f-cc7fb06be155"
+    },
+    {
+      "claim_id": "92431962-74d1-46a6-8877-15801d8fa9bb",
+      "result_id": "03ce9c19-199c-44b5-8b2f-cc7fb06be155"
+    },
+    {
+      "claim_id": "ace4beac-8d52-48d7-9acd-87064dd258bb",
+      "result_id": "a3b3fd67-8aa7-47b3-97b3-158e5c5bb50f"
+    },
+    {
+      "claim_id": "e8e6a63f-e4c6-4e7f-88dc-6542b2e76931",
+      "result_id": "a3b3fd67-8aa7-47b3-97b3-158e5c5bb50f"
+    },
+    {
+      "claim_id": "cff21283-95c2-480b-877f-92c1322d318e",
+      "result_id": "a3b3fd67-8aa7-47b3-97b3-158e5c5bb50f"
+    },
+    {
+      "claim_id": "780ed58c-6996-4220-897e-6874b234ba68",
+      "result_id": "a3b3fd67-8aa7-47b3-97b3-158e5c5bb50f"
+    },
+    {
+      "claim_id": "2fe4f4c5-c45b-4395-a5e8-2e93f69d4518",
+      "result_id": "a3b3fd67-8aa7-47b3-97b3-158e5c5bb50f"
+    },
+    {
+      "claim_id": "668b27a1-3fd3-461d-819c-eab47d7af1af",
+      "result_id": "6ec6634c-f23e-4293-abd4-e8daa1d41775"
+    },
+    {
+      "claim_id": "0fade3b1-fd6e-4f12-b27a-044c68539f72",
+      "result_id": "6ec6634c-f23e-4293-abd4-e8daa1d41775"
+    },
+    {
+      "claim_id": "0cd8658c-6338-429d-bfaf-37b17cbf6d68",
+      "result_id": "6ec6634c-f23e-4293-abd4-e8daa1d41775"
+    },
+    {
+      "claim_id": "75847e4a-857a-4a90-822d-28af6b9f160c",
+      "result_id": "6ec6634c-f23e-4293-abd4-e8daa1d41775"
+    },
+    {
+      "claim_id": "6d792cf4-eed5-4d81-b27a-273bacd151e3",
+      "result_id": "6ec6634c-f23e-4293-abd4-e8daa1d41775"
+    },
+    {
+      "claim_id": "f13a9e86-5fb9-4277-ae5d-fd70ff504fe2",
+      "result_id": "46b50de7-f255-4135-a611-395f361afea8"
+    },
+    {
+      "claim_id": "2f6814e1-58e4-409a-931a-5ec26dba3a66",
+      "result_id": "46b50de7-f255-4135-a611-395f361afea8"
+    },
+    {
+      "claim_id": "25e84e62-e219-4b8c-a51a-f6bcc41d59a7",
+      "result_id": "46b50de7-f255-4135-a611-395f361afea8"
+    },
+    {
+      "claim_id": "67297406-0335-4daf-b59f-a9e5ab4624ae",
+      "result_id": "46b50de7-f255-4135-a611-395f361afea8"
+    },
+    {
+      "claim_id": "c1c63247-5fce-46be-928c-20f3ca0ef07d",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "91f50d96-e6a5-40d5-91b4-00301158a714",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "97d7b185-b70c-46e7-afe1-abaf223aace1",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "8b89bebe-eeb0-4070-9795-440c1016f5ab",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "f14ca912-4ee7-4d7a-a3ce-61b0453be6b6",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "c767aced-2a2d-44b5-9846-ff56d81720d3",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "768cfe2a-0aea-48cd-b98c-67661d48bf45",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "441c6eee-61f6-4c89-9cc3-13fb9052b1e5",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "0c95659d-f0b4-41d5-a20c-034c3f1cb28e",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "07e42fc7-7a68-4b07-987d-f6ff3477d632",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "0e030e1a-f51e-4ea8-a6ad-16158b5c7e4b",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "9713f71d-df32-4142-b051-ffb2a177b975",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "aa796e7f-007b-458d-877a-8b7a45f1726c",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "00c60731-ddf2-4404-92a2-72228b46ed8f",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "42af0998-ac24-49d0-9e3b-8acb64f3f6e6",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "105802e2-c608-4317-a9f1-b3c380f53f48",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "dcf9562e-3efe-4b7e-9df7-f9123591bb90",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "2c2829a7-0e9d-4087-8a94-068cc947c95e",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "2e8e3ff5-f083-45bf-9683-3e9f68e9e4ca",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "54a9377c-7945-47a0-8558-db686b0767ef",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    },
+    {
+      "claim_id": "85626dff-f958-4919-873e-cefa29963bcc",
+      "result_id": "1a1f0da3-a692-4b51-8ce7-23e974336ed6"
+    }
+  ],
+  "comparisons": []
+}

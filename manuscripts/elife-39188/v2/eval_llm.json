@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the clinical context and motivation for the study, stating that there are no effective treatments for SCI, that current clinical assessments are inadequate, and that the pathophysiology of SCI is complex and poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C13 collectively establish the clinical and scientific rationale for the study. These claims are well-supported by citations to prior clinical trials and reviews (C8, C9, C11, C13), and represent accurate characterizations of the current state of SCI treatment and research based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Systems biology approaches, particularly gene coexpression network analysis, provide powerful methods to elucidate coordinated molecular processes in complex diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 establish the methodological rationale for using systems biology approaches. These claims are well-supported by multiple citations to prior successful applications of these methods in other neurological and psychiatric diseases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Systematic literature review of over 500 manuscripts identified 695 unique human genes associated with SCI response, with 559 upregulated, 213 downregulated, and 8 showing differential phosphorylation, with 151 genes replicated across multiple studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 describe the literature curation results with specific quantitative details. The systematic approach is described in the Methods section, and the numbers are internally consistent. However, the quality of this curation depends on the rigor of the inclusion/exclusion criteria and ortholog mapping, which appear reasonable based on the Methods description.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Literature-curated genes show multiple lines of evidence for biological coherence: enrichment for shared Gene Ontology terms, protein-protein interactions, formation of a large connected component in the interactome, co-participation in protein complexes, and preferential recovery by disease gene prediction algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 provide convergent validation of the literature-curated gene set using multiple independent approaches. Statistical significance is reported (p < 10\u207b\u00b3 or better), results are reproduced across multiple databases (C23, C24), and appropriate randomization controls are used. The multiple lines of evidence strengthen confidence in the biological relevance of the curated gene set.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Gene coexpression network analysis of 71 human spinal cord samples from GTEx identified 15 distinct modules of coexpressed genes using WGCNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe the primary network construction. The sample size (n=71) is reasonable for WGCNA, the data source (GTEx) is well-established, and the methods are standard. The identification of 15 modules is a direct result of the analysis with appropriate parameters described in Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C84"
+    ],
+    "result": "Five modules (M2, M3, M7, M8, M12) showed strong evidence of both reproducibility in independent human data and evolutionary conservation in mouse and rat, supporting the validity of integrating data across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C84 establish cross-species conservation of network architecture. The conservation analysis uses appropriate statistics (Z_summary > 10 for strong conservation) and is validated in independent datasets. The convergence of reproducibility and conservation for the same modules strengthens the conclusion that these represent biologically meaningful units.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Modules M3 (746 genes) and M7 (330 genes) are significantly enriched for literature-curated SCI genes, with M3 showing particularly robust enrichment that persists after removal of ~70% of seed genes or addition of random false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 establish the key integration of literature-curated genes with network modules. The enrichment is statistically significant (Bonferroni-corrected p < 10\u207b\u2077 for M3), and extensive robustness testing (C39-C41) demonstrates that the enrichment is not an artifact of the seed gene set. The quantitative details are consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Meta-analysis of five rodent transcriptomic studies identified consensus upregulation of M3, M6, M7, and M11, and consensus downregulation of M1 and M2 following SCI, with M8 upregulated in 4/5 datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 describe the meta-analysis results identifying consensus differential expression patterns. The use of multiple datasets increases confidence, and the identification of both up- and downregulated modules is biologically plausible. Statistical significance is reported for the strongest modules (p \u2264 10\u207b\u00b9\u2074 to 10\u207b\u2074\u2078).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Module M9 shows time-dependent expression, with consensus downregulation at acute time points but upregulation at chronic time points after SCI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 identifies a module with distinct temporal dynamics. This is supported by the temporal analysis described in Methods and shown in Figure 3G. The biphasic pattern is biologically plausible and suggests distinct roles in acute versus chronic injury responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Functional characterization reveals that consensus modules correspond to distinct cell types and biological processes: M1 (oligodendrocytes/myelination), M2 (neurons/synaptic transmission), M3 (microglia/endothelial cells/inflammation), M7 (microglia/immune response), M9 (astrocytes/oxidation-reduction/CNS development), M6 (protein modification), and M11 (mitochondrial translation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 provide functional and cell-type characterization of modules. These are supported by enrichment analyses using Gene Ontology and MSigDB, and meta-analysis of cell-type-specific markers from multiple independent datasets (bulk RNA-seq, single-cell RNA-seq, and proteomics). The assignments are biologically coherent and consistent with known SCI pathophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "In a mouse severity model, M3 was uniquely enriched for genes positively correlated with injury severity, while M1, M2, and M9 were enriched for genes anti-correlated with severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 establish the relationship between module expression and injury severity. The analysis uses an independent published dataset (GSE464) and appropriate statistical methods (gene-set enrichment). The finding that M3 is the sole module positively correlated with severity is striking and biologically meaningful, as shown in Figure 5A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C68"
+    ],
+    "result": "Independent prospective RNA-seq and proteomic studies in rats reproduced the consensus network signature and validated the overall agreement between transcriptomic and proteomic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C68 provide critical validation of the meta-analysis results in independent experimental data. The RNA-seq study (n=15 rats) and proteomic analysis reproduced the consensus signature (Figure 5F), and module preservation between RNA and protein levels was significant (Z_summary = 6.8-7.3 for M3 and M7). This cross-platform and cross-level validation substantially strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Six M3 hub genes (Anxa1, Colgalt1, Ifngr2, Shc1, Sod2, Tbc1d2b) stratified rats by injury severity with >90% accuracy, with Anxa1 achieving perfect classification accuracy and having been previously associated with SCI in three independent studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 identify potential biomarkers of injury severity. The analysis uses leave-one-out cross-validation (appropriate for small sample size), and the perfect accuracy for Anxa1 (C65) is supported by Figure 5I. The prior association of Anxa1 with SCI in three independent studies (C66) provides external validation. However, the small sample size (n=15) and perfect accuracy raise concerns about overfitting that would require validation in larger independent cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Proteomic analysis confirmed severity-dependent upregulation of M3 eigengene and ANXA1 protein, with ANXA1 stratifying moderate and severe injuries with 93% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 validate the transcriptomic findings at the protein level. The 93% accuracy for ANXA1 protein (C70) is slightly lower than the perfect RNA-level accuracy, which is expected given post-transcriptional regulation. The proteomic validation strengthens the potential clinical utility of ANXA1 as a biomarker, though larger validation studies are still needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C74",
+      "C75"
+    ],
+    "result": "All six consensus modules showed reversed differential expression in rats treated with NT-3 (which promotes functional recovery) and in wild-type versus STAT3 knockout mice (which show increased axonal dieback), indicating that reversal of SCI transcriptome changes is associated with improved outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C74, and C75 establish that module expression patterns are reversed in conditions associated with functional recovery (NT-3 treatment) or worsened outcomes (STAT3 knockout). The convergence of these two independent lines of evidence (Figure 5B, 5F) strongly supports the interpretation that the consensus network signature reflects pathophysiological processes relevant to recovery. However, causality cannot be definitively established from these correlative observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The identification of seven modules robustly associated with SCI response reflects the high complexity of SCI pathophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is a reasonable interpretation of the results showing multiple modules with distinct temporal patterns and functional roles. This is consistent with the known complexity of SCI pathophysiology and is supported by citation to prior reviews (Ramer et al., 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Annexin A1 is a calcium-dependent phospholipid-binding protein with anti-inflammatory functions, primarily expressed in microglia, upregulated in neuroinflammatory diseases including SCI, and previously identified as a biomarker of SCI severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 provide biological context for Anxa1/ANXA1. All claims are supported by appropriate citations to prior literature. The convergence of prior evidence for Anxa1 upregulation in SCI (C82) and its identification as a severity biomarker (C83) with the current findings strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study integrates literature-curated genes with genome-wide expression data to identify an evolutionarily conserved gene subnetwork enriched for SCI-associated genes, with severity-dependent upregulation after injury and downregulation in functional recovery, validated in rodents at transcriptomic and proteomic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 summarize the main findings of the study. These are well-supported by the detailed results described in other claim groups. The integrative approach is novel and the convergence of multiple lines of evidence (literature curation, network analysis, meta-analysis, prospective validation, functional recovery) provides strong support for the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "A strict majority-voting approach using seven ortholog databases was used to map genes from model organisms to human orthologs, requiring detection in at least half of databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 describe the ortholog mapping methodology. The use of multiple databases and majority voting is a rigorous approach that reduces false positives in ortholog assignment. This is appropriate given the importance of accurate cross-species mapping for the study's conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "RNA-seq and proteomic data have been deposited in public repositories (GEO: GSE115067; PRIDE: PXD010192).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are data availability statements that can be verified by checking the repositories. Public data deposition is essential for reproducibility and is a strength of the study.",
+    "result_type": "MINOR"
+  }
+]

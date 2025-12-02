@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C12",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "KIF13B specifically associates with Rab6-positive secretory vesicles through its MBS-coiled-coil-DUF3694 domain region (aa 607-1623), remains stably bound without exchange, and persists until vesicle fusion with the plasma membrane. KIF13A shows minimal binding to Rab6 vesicles, and Eg5 does not colocalize with Rab6 vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C18-C23 provide strong colocalization data (immunofluorescence, live imaging, FRAP, TIRFM fusion analysis) demonstrating KIF13B-Rab6 association and stable binding. Domain mapping (C22-C23) identifies the cargo-binding region through systematic deletion analysis. Negative controls with KIF13A (C10) and Eg5 (C17) strengthen specificity claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "KIF5B is the dominant motor for Rab6 vesicle transport in HeLa cells, with KIF13B playing a cooperative but minor role. KIF5B knockout dramatically reduces vesicle runs, while KIF13B knockout has minimal effect. The double KIF5B/KIF13B knockout shows synergistic reduction. KIF1B/KIF1C do not contribute significantly to Rab6 vesicle transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 are well-supported by systematic knockout experiments with multiple clones, automated tracking quantification (n=20-30 cells per condition), and appropriate statistical testing (Mann-Whitney U test). The synergistic effect in double knockouts (C31) and lack of additional phenotype in 4X-KO (C33) provide strong evidence for motor specificity. Western blots confirm protein loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Re-expression of either KIF5B or KIF13B individually rescues Rab6 vesicle motility in 4X-KO cells, while KIF1B/KIF1C co-expression or Eg5 expression does not rescue motility. KIF1B/KIF1C are functional as they rescue Rab11 endosome localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 demonstrate motor specificity through rescue experiments. The ability of either KIF5B or KIF13B alone to rescue (C34-C35) while KIF1B/KIF1C cannot (C36) is compelling. The control showing KIF1B/KIF1C functionality via Rab11 rescue (C37) rules out non-specific effects. Eg5 knockdown and overexpression controls (C38-C39) further validate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "KIF5B and KIF13B drive processive movements of Rab6 vesicles but have minimal impact on diffusive motility. Processive runs represent less than 10% of total vesicle tracks, but tracks containing runs are consistently six times longer than tracks without runs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by automated tracking analysis across multiple conditions. The consistent finding that processive movement fraction within tracks remains ~1/3 across conditions (C42) and that track duration correlates with run presence (C43) provides internal consistency. However, the authors acknowledge limitations in analyzing diffusive movements due to tracking errors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "KIF13B knockout mildly reduces vesicle speed, while KIF5B knockout results in faster residual movements (>3 \u03bcm/s), likely driven by dynein or other motors. Run duration is constant across conditions, but KIF13B loss does not affect run length, while KIF5B absence increases run length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by automated speed analysis with appropriate statistics (Mann-Whitney U test, n=20-30 cells). The appearance of high-speed vesicles (>3 \u03bcm/s) in KIF5B-depleted cells (C47) is consistent with dynein-driven transport. The interpretation that faster residual movements reflect dynein activity (C48) is reasonable given prior work cited, though direct evidence is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Rab6 vesicle speed distributions fit better to two Gaussians than one, indicating at least two vesicle populations with different speeds. Control cells show slow (1.20\u00b10.26 \u03bcm/s) and fast (1.71\u00b10.49 \u03bcm/s) populations. KIF13B is a faster motor than KIF5B, confirmed by single-molecule imaging and rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are well-supported by statistical fitting (extra sum-of-squares F test, p<0.0001 for all conditions) and single-molecule imaging (C60). The two-Gaussian model (C52-C53) is justified by the data. The speed difference between KIF5B and KIF13B rescue conditions (C56) is significant and consistent with prior literature (C59). The control that vesicle tracks are distributed throughout the cytoplasm (C57-C58) rules out spatial artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In the FRB-FKBP peroxisome trafficking assay, peroxisome speed increases as the KIF5B:KIF13B plasmid ratio decreases. Co-expression produces intermediate velocities suggesting simultaneous engagement or rapid switching. Excess KIF13B plasmid is needed to shift speeds higher, consistent with KIF5B dominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by the peroxisome trafficking assay with systematic variation of motor ratios (n=15-20 cells). The intermediate velocities with co-expression (C62) and requirement for excess KIF13B (C63) align with in vitro data cited. This artificial cargo system provides controlled validation of motor cooperation, though it may not fully recapitulate endogenous vesicle behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Approximately 1-2 KIF5B dimers and 3-5 KIF13B dimers are detected on Rab6 vesicles in rescue experiments, suggesting different maximum binding site numbers. Both motors can be present simultaneously on the same vesicle, with intermediate speeds when co-expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by fluorescence intensity quantification using KIF5B-560 as a standard (n=320-660 particles). The interpretation that KIF5B has fewer binding sites (C65) is reasonable but relies on overexpression conditions. The colocalization of both motors (C67) and intermediate speeds (C69) are directly demonstrated. The inference about endogenous KIF13B abundance (C66) is speculative but logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Sub-pixel localization reveals that KIF5B and KIF13B localize to the front of moving vesicles (median projected distances 76 nm and 56 nm respectively), with angles near zero. When co-expressed, KIF5B is shifted rearward relative to KIF13B. Vesicles rescued with KIF13B alone are smaller than those with KIF5B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 are supported by sophisticated sub-pixel localization analysis with chromatic aberration correction and large datasets (N=6-7 experiments, 82-89 cells, thousands of runs). The PAUF-Rab6 control showing random distribution (C71) validates the method. The interpretation that smaller vesicles with KIF13B reflect its lower performance under hindering load (C77) is reasonable given cited literature, though direct load measurements are absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "During direction reversal to minus-end movement, KIF13B shows near-zero projected distance (~3.5 nm) while KIF5B shows slightly negative displacement (~-34.1 nm), suggesting KIF13B does not undergo tug-of-war with dynein while KIF5B may exert hindering force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by analysis of opposite polarity runs (664 pairs for KIF13B, 83 for KIF5B). The differential behavior is consistent with known motor properties under load. However, the interpretation of tug-of-war (C80) is inferential and would benefit from direct force measurements or additional controls. The conclusion (C81) appropriately qualifies the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Kinesin-driven Rab6 vesicle transport is not essential for secretion efficiency (RUSH assay and NPY exocytosis show normal levels in 4X-KO), but is required for correct spatial distribution of exocytotic events. In 4X-KO cells, exocytosis is restricted to the Golgi vicinity rather than distributed to the cell periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 are well-supported by multiple secretion assays (RUSH with E-Cadherin and soluble-GFP, NPY-GFP exocytosis) with flow cytometry and TIRFM quantification (n=20 cells, 4 independent experiments). The finding that secretion efficiency is normal (C83-C85) but spatial distribution is altered (C86-C87) is a key functional insight. Statistical tests show no significant differences in secretion levels but clear spatial redistribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "MAP7 family proteins are required for KIF5B-dependent Rab6 vesicle transport. Depletion of all three MAP7 proteins reduces vesicle runs and increases speed, similar to KIF5B knockout. MAP7 proteins show a gradient distribution decreasing toward the cell periphery, and this distribution is independent of KIF5B. Vesicle speed increases are more pronounced in the cell center where MAP7 is enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 are supported by MAP7 knockout/knockdown experiments (C91-C92, n=20 cells), immunofluorescence quantification of MAP7 distribution (C93, n=41-50 cells), and spatial velocity analysis (C95-C97). The gradient distribution of MAP7 (C93) and its independence from KIF5B (C94) are well-documented. The spatial correlation between MAP7 enrichment and velocity changes (C95) provides mechanistic insight. Prior work citations (C89-C90) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "MAP7 displays delayed binding to freshly grown EB3-positive MT ends, and KIF5B-560 is less abundant on new MT ends compared to older lattices. In contrast, KIF13B-380-LZ is enriched at growing MT ends. Rab6 vesicles are less efficient at reaching EB3-positive MT ends in KIF13B-KO cells. The combined action of KIF5B and KIF13B allows efficient navigation of different MT populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 are supported by live cell imaging with kymograph analysis (C98-C100, n=15-19 cells) and colocalization quantification (C101, n=24-30 cells). The differential localization of MAP7/KIF5B versus KIF13B on MT ends provides a mechanistic explanation for motor cooperation. The conclusion about efficient navigation (C102-C103) integrates multiple observations logically. The effect is more obvious in mixed KIF13B-KO than clonal lines, suggesting possible compensation during clone selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C15",
+      "C16",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Prior work establishes that Rab6 is a robust marker of post-Golgi carriers, KIF13A binds Rab11-positive recycling endosomes, KIF1A/B/C transport Rab6 carriers in neurons/Vero cells, and various adaptor proteins mediate kinesin-cargo interactions. The composition of motors on Rab6 vesicles is expected to be cell type-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C15-C16, C104-C109 appropriately cite prior literature to establish context. The citations appear accurate and relevant. The expectation of cell-type specificity (C105) is a reasonable inference given the heterogeneity of Rab6 vesicles and documented differences between cell types (C106). These claims provide important background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The adaptor complexes for KIF5B and KIF13B on Rab6 vesicles may have overlapping components similar to lysosomes, but spatial segregation suggests they are not part of the same complex. KIF5B's higher resistance to detachment under load likely contributes to motor distribution. The data are incompatible with KIF5B and dynein being in the same protein complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 involve interpretation and speculation based on the data. The inference that spatial segregation indicates separate complexes (C111) is reasonable given the sub-pixel localization data. The conclusion that KIF5B and dynein are not in the same complex (C114) is well-supported by the direction reversal data showing KIF5B moves to the rear. However, C110 and C113 are speculative possibilities that would require additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Discussion claims synthesizing prior work and current findings: Rab6 vesicles serve multiple routes (only ~50-60% contain PAUF), drug-mediated MT disassembly doesn't block secretion, kinesin-1 may contribute to vesicle formation, spatial organization of exocytosis contributes to cell migration, cargo unloading at MT ends may be general for kinesin-3, KIF5B is restricted to stable MTs, MAP7 controls kinesin recruitment/activation, and KIF13B can work on MAP7-positive MTs despite reported inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C115-C129 are primarily discussion points integrating current findings with literature. Most cite appropriate prior work. The observation that only a subset of Rab6 vesicles contain PAUF (C13) is data-supported. The interpretation that KIF13B can function on MAP7-positive MTs (C127-C128) is supported by rescue experiments but appears to contradict cited work on MAP7 inhibition of kinesin-3, requiring further investigation. The speculation about additional MAPs (C129) is reasonable but untested.",
+    "result_type": "MINOR"
+  }
+]

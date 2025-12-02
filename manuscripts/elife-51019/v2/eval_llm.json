@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The replication study found that PTEN depletion did not significantly affect PTENP1 mRNA levels, and PTENP1 depletion did not significantly affect PTEN mRNA levels in DU145 cells. This contrasts with the original study which reported statistically significant reciprocal regulation. Meta-analyses showed that si-PTEN and si-PTEN/PTENP1 significantly decreased PTEN mRNA, but effects on PTENP1 mRNA were inconsistent between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C1, C2, and C38 report non-significant effects contradicting the original study (C3, C42, C43). While knockdown of PTEN itself was confirmed (C37), the key hypothesis of reciprocal regulation between PTEN and PTENP1 was not supported. Meta-analyses (C68-C73) show heterogeneity and inconsistent statistical significance across comparisons, undermining the central claim of mutual regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C74"
+    ],
+    "result": "PTEN protein levels decreased following transfection with siRNAs targeting PTEN and/or PTENP1 in DU145 cells, with patterns similar to the original study. Western blot quantification showed the original study values fell within the confidence intervals of the replication attempt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47, and C49 demonstrate decreased PTEN protein with appropriate statistical significance for key comparisons. Claim C74 confirms that original study values were within the CI of replication data, indicating consistency. While some comparisons (C50) were not significant, the overall pattern supports the protein-level effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Depletion of PTEN and/or PTENP1 increased DU145 cell proliferation compared to non-targeting siRNA, with effects in the same direction as the original study but without statistical significance in planned comparisons. ANOVA showed a significant main effect for PTENP1 depletion on proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C28 show increased proliferation trends, and C62-C63 confirm a significant PTENP1 main effect. However, C5 and C66 indicate planned comparisons were not statistically significant. Meta-analyses (C65-C67) show directional consistency but heterogeneity between studies. The biological effect appears present but statistical support is incomplete, complicated by potential transfection artifacts (C29-C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C51",
+      "C52",
+      "C53",
+      "C75",
+      "C76"
+    ],
+    "result": "PTEN 3'UTR overexpression in DU145 cells did not significantly affect PTENP1 expression in the replication study, contrasting with the original study which reported a significant increase. Effect sizes were in opposite directions between studies with significant heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C6 and C51 clearly show no effect on PTENP1 expression, directly contradicting the original study (C7, C52). Meta-analysis (C75-C76) confirms opposite effect directions and significant heterogeneity (Cochran's Q p=0.0425). Claim C53 identifies a critical limitation: PTEN 3'UTR expression levels were not verified, which could explain the discrepancy but also means the experimental manipulation was not validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C55",
+      "C56",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Overexpression of PTEN 3'UTR significantly decreased DU145 cell proliferation compared to vector control, consistent with the original study. Meta-analysis confirmed this effect was statistically significant (p=0.0093).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C55 demonstrate statistically significant growth inhibition (p=0.00076). Meta-analysis (C77-C79) shows directional consistency and overall statistical significance. Despite differences in absolute proliferation rates between studies (C56), the anti-proliferative effect of PTEN 3'UTR overexpression is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C30",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C44",
+      "C45",
+      "C46",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Multiple methodological factors differed between the original and replication studies, including knockdown efficiency, cellular confluence, transfection-mediated cytotoxicity, inter-laboratory variability, and cell growth phase, which may have influenced experimental outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C34, C44-C46, C53-C54, and C58 identify legitimate methodological variables that could affect results. Claims C30, C33, C35-C36 provide scientific rationale for why these factors matter. Claims C57-C61 document specific differences in growth profiles between experiments. These are appropriately acknowledged limitations supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript reviews prior literature on PTENP1 function as a competing endogenous RNA (ceRNA) that regulates PTEN through microRNA competition, with effects demonstrated across multiple cancer types and extension to broader ceRNA networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C26 accurately summarize published literature with appropriate citations. These provide context for the replication study and document the broader scientific impact of the original work. As literature review claims, they are supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "DU145 cells were cultured under defined conditions, maintained at 37\u00b0C in 6% CO2, and confirmed to be free of mycoplasma contamination with authenticated identity by STR profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 describe standard quality control procedures with documented verification. These methodological details are appropriately reported and supported by the referenced quality control data.",
+    "result_type": "MINOR"
+  }
+]

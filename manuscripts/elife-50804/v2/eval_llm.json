@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The brain's high metabolic demands (20% of resting metabolism despite being only 2% of body mass) have shaped various aspects of neural design including sparse coding, action potential biophysics, and synaptic failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by established literature citations (Attwell and Laughlin, 2001; Harris et al., 2012; Levy and Baxter, 1996; Lennie, 2003; Alle et al., 2009; Fohlmeister, 2009). These are background claims establishing the metabolic context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Experimental evidence from fruit flies, rats, and humans demonstrates that memory formation and synaptic plasticity are energetically expensive processes, with spaced learning (requiring protein synthesis) being more costly than massed learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 are supported by multiple experimental citations showing energy costs of memory formation (Mery and Kawecki, 2005; Pla\u00e7ais and Preat, 2013; Pla\u00e7ais et al., 2017; Gold, 1986; Hall et al., 1989). The evidence includes mortality rates, sucrose consumption, and lifespan reduction in flies, establishing the biological motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C20",
+      "C23",
+      "C55",
+      "C56"
+    ],
+    "result": "Traditional perceptron learning is metabolically inefficient, requiring approximately 900 times more energy than the theoretical minimum when operating near capacity (e.g., 1900 patterns with 1000 synapses), because weight modifications are repeatedly undone during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C20, C23, C55, C56 are supported by theoretical analysis (Equation 3) and simulation data (Figure 1C, 1D). The inefficiency formula matches simulations well, and the random walk approximation is validated. The 20% deviation from perfect random walk (C87, C88) is acknowledged and explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C30",
+      "C32",
+      "C33",
+      "C42",
+      "C68"
+    ],
+    "result": "Synaptic caching, which splits synaptic weights into transient and persistent components with threshold-based consolidation, increases energy efficiency manifold and can be applied to any plasticity rule including back-propagation and biophysical models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C30, C32, C33, C42, C68 are supported by simulations across multiple implementations (perceptron, spiking networks, back-propagation). Figure 2 shows optimal thresholds exist, Figure 2\u2014figure supplement 1 shows 80% energy savings in spiking networks, and Figure 4B shows comparable efficiency across variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C31"
+    ],
+    "result": "Transient forms of plasticity (anesthesia-resistant memory in flies, early-LTP/LTD in mammals) that decay and don't require protein synthesis are much less energy-demanding than long-term memory and may correspond biophysically to altered vesicle release rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by citations to established neuroscience literature (Mery and Kawecki, 2005; Pla\u00e7ais and Preat, 2013; Potter et al., 2010). C31 is appropriately marked as speculation with supporting citations (Padamsey and Emptage, 2014; Costa et al., 2015; Levy and Baxter, 2002).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The optimal consolidation threshold depends on decay rate and maintenance cost of transient plasticity, creating trade-offs between learning time and energy efficiency, with synaptic caching potentially reducing both metabolic cost and learning time under certain conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 are supported by systematic simulations shown in Figures 2B and 3. The trade-offs are demonstrated across parameter ranges, and Figure 3\u2014figure supplement 1A shows the learning time vs energy efficiency trade-off. The theoretical framework (Equations 4-7) matches simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C69"
+    ],
+    "result": "The synaptic caching implementation resembles synaptic tagging and capture phenomena, where consolidation of one synapse leads to consolidation of others, and all algorithmic variants (local vs global threshold/consolidation) achieve comparable efficiency gains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, C69 are supported by citations to synaptic tagging literature (Frey and Morris, 1997; Barrett et al., 2009; Sajikumar et al., 2005) and simulation data (Figure 4B) showing comparable efficiency across variants. The biological plausibility is established through comparison with known phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C70",
+      "C71"
+    ],
+    "result": "In multilayer back-propagation networks trained on MNIST, learning without synaptic caching is metabolically expensive (\u226520\u00d7 theoretical minimum), with energy rising exponentially with accuracy until convergence, and energy cost is independent of learning rate when sufficiently small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C70-C71 are supported by simulation data on MNIST (Figure 5A, 5B). The exponential relationship between energy and accuracy is demonstrated, and the learning rate independence is shown except at very large rates where convergence fails.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "There exists an optimal number of hidden units that minimizes energy consumption in multilayer networks, with energy increasing both when networks are barely sufficient (requiring longer training) and when they are very large, and higher accuracies require more units and energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C72-C75 are supported by systematic simulations varying hidden unit numbers (Figure 5C). The U-shaped energy curve with respect to network size is demonstrated, and the dependency on accuracy requirements is shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C79",
+      "C80"
+    ],
+    "result": "Synaptic caching provides a novel metabolic interpretation of synaptic consolidation phenomena, explaining why consolidation is competitive while transient plasticity is less so, why consolidation is affected by reward/novelty/punishment, and predicting that accumulated transient plasticity should trigger consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C79-C80 connect the model to experimental observations through appropriate citations (Redondo and Morris, 2011; Sajikumar et al., 2014; Pla\u00e7ais et al., 2017). The interpretations are logical extensions of the energy efficiency framework, though C46 is appropriately marked as a prediction requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C81"
+    ],
+    "result": "Unlike computer cache systems where information transfer is a bottleneck, biological synapses with co-localized transient and persistent components enable more efficient local consolidation without information transfer costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C81 are supported by citation to computer architecture literature (Kestor et al., 2013) and logical inference about biological organization. The comparison highlights a key architectural difference between biological and artificial systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C82"
+    ],
+    "result": "The main benefit of transient plasticity is to permit energy-efficient exploration of weight space to find desirable configurations, potentially also preventing catastrophic forgetting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C82 represent the main conclusion of the work, supported by the comprehensive simulation and theoretical analysis throughout the manuscript. C51 includes appropriate speculation about catastrophic forgetting with supporting citation (Leimer et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Energy requirements rise steeply with memory load and accuracy level, indicating fundamental trade-offs between energy consumption, network capacity, and performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by data from both perceptron (Figure 1C) and multilayer network (Figure 5A) simulations showing steep increases in energy requirements. This represents a key finding about the scaling properties of learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C91"
+    ],
+    "result": "The theoretical framework based on random walk approximation and Fokker-Planck equations (Equations 6-7) accurately predicts simulation results when accounting for the 20% smaller variance in weights compared to pure random walk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88, C91 describe methodological details and validation. The theoretical predictions match simulations well (Figure 6, Figure 1D), and the deviation from perfect random walk is acknowledged and explained by correlations in the learning process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C22",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "Background context: Perceptrons are used to model cerebellar plasticity, neurons operate near maximal capacity, the brain expends energy on multiple processes beyond plasticity, and the theoretical minimum energy would directly set weights to final values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C22, C53-C54, C57 provide established background knowledge and theoretical context with appropriate citations (Brunel et al., 2004; Brunel, 2016; Sacramento et al., 2015). These are well-supported contextual claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Further energy savings might be possible by adjusting consolidation thresholds dynamically during learning and using pathway-specific thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is speculation about potential improvements with citation to Leibold and Monsalve-Mercado, 2016. While plausible, this represents future work rather than demonstrated results and lacks supporting data in the current manuscript.",
+    "result_type": "MINOR"
+  }
+]

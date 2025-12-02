@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "Single-particle tracking (SPT) of H2A.Z and H2B in live yeast cells reveals that H2A.Z shows 82% chromatin-bound and 18% chromatin-free fractions, while H2B shows 76% chromatin-bound fraction. The diffusion coefficients for chromatin-bound H2A.Z and H2B are 0.03 \u03bcm\u00b2s\u207b\u00b9, and for chromatin-free fractions are 1.18 \u03bcm\u00b2s\u207b\u00b9 (H2A.Z) and 1.29 \u03bcm\u00b2s\u207b\u00b9 (H2B). These fractions remain consistent across cell cycle phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 present quantitative SPT data with specific percentages and diffusion coefficients derived from Spot-On analysis and shown in Figure 1E,F. Claims C31-C32 validate these measurements against prior literature. Claim C34 extends the findings to cell cycle conditions. The data are internally consistent and supported by appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The SWR1 chromatin remodeling complex shows more chromatin-free diffusion compared to histones, with 47% chromatin-bound fraction. Deletion of Swc2, a subunit required for SWR1 recruitment to promoters, reduces the chromatin-bound fraction from 47% to 21%, with the remaining slow-diffusing molecules attributed to transient binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 present SPT data for SWR1 in wild-type and swc2\u0394 mutant cells shown in Figure 1C,D,F. Claim C37 cites established knowledge about Swc2 function. Claim C38 provides a reasonable interpretation of the residual binding. The experimental design appropriately tests the role of Swc2 in SWR1 chromatin association.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Conditional depletion of Swc5, a subunit essential for SWR1 activity but not recruitment, reduces chromatin-bound H2A.Z from 79% to 49%. This decrease is consistent with ChIP-seq data showing genome-wide reduction of H2A.Z at +1 nucleosomes. The remaining chromatin-bound H2A.Z may represent residual +1 nucleosome H2A.Z or chaperone-mediated deposition elsewhere in the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 present anchor-away experimental data shown in Figures 2A-C and supplementary figures. Claim C41 validates findings against prior ChIP-seq studies. Claim C42 offers plausible interpretations for incomplete H2A.Z depletion. The experimental approach appropriately blocks H2A.Z deposition to reveal eviction dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Co-depletion of Swc5 and Rpb1 (the catalytic subunit of Pol II) by double anchor-away increases chromatin-bound H2A.Z to 66% compared to 49% with Swc5 depletion alone, indicating that Pol II plays a major role in H2A.Z eviction. Single depletion of Rpb1 shows only a marginal increase in chromatin-bound H2A.Z (84% to 87%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 present double anchor-away data shown in Figure 3A compared to Figure 2C,D, demonstrating rescue of H2A.Z eviction when Pol II is depleted. Claim C45 shows single Rpb1 depletion has minimal effect, which is appropriately explained by concomitant inhibition of SWR1 activity. The logic of the double depletion experiment is sound for identifying eviction factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Co-depletion of Swc5 and Ino80 shows no increase in chromatin-bound H2A.Z compared to Swc5 depletion alone, and single depletion of Ino80 has no effect on H2A.Z levels. These results indicate that Pol II, but not the INO80 remodeler, has a major role in H2A.Z eviction, though contributions from other factors like ANP32E are not excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 present double and single anchor-away data for Ino80 shown in Figure 3 and supplementary figures. Claim C48 draws an appropriate conclusion from the negative results. Claim C49 acknowledges limitations. The experimental design appropriately tests the INO80 hypothesis and the negative results are convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C65"
+    ],
+    "result": "Among three Pol II kinases tested (Kin28/Cdk7, Bur1/Cdk9, Ctk1/Cdk12), only Kin28 is required for H2A.Z eviction. Co-depletion of Kin28 and Swc5 increases chromatin-bound H2A.Z to 65% compared to 49% with Swc5 alone. Single Kin28 depletion shows a marginal increase (78% to 82%). Co-depletion of Bur1 or Ctk1 with Swc5 does not inhibit H2A.Z loss. These findings indicate that early transcription elongation linked to Pol II CTD Ser5 phosphorylation by Kin28 is required for H2A.Z eviction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 present systematic double anchor-away experiments for three kinases shown in Figure 4B-D,F. Claim C56 shows single Kin28 depletion effect. Claim C65 synthesizes the findings into a mechanistic conclusion. The experimental design appropriately dissects the transcription cycle by targeting specific kinases, and the selective requirement for Kin28 is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C79"
+    ],
+    "result": "Co-depletion of Swc5 with Cet1 (RNA capping enzyme) or Rrp6 (noncoding RNA degradation enzyme) shows no increase in chromatin-bound H2A.Z compared to Swc5 depletion alone. These results indicate that H2A.Z eviction is independent of RNA capping and RNA metabolizing activities downstream of CTD Ser5 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C63 present double anchor-away data for Cet1 and Rrp6 shown in Figure 4E and supplementary figures. Claims C62 and C79 draw appropriate conclusions from the negative results. The experimental design tests whether downstream RNA processing events are required for H2A.Z eviction, and the negative results help narrow the mechanism to early elongation events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C77",
+      "C78"
+    ],
+    "result": "The Pol II pre-initiation complex (PIC) plays an important role in H2A.Z eviction, but PIC assembly per se is not sufficient. Rather, Kin28-dependent phosphorylation of Ser5 of the CTD is important. The selective requirement for Kin28/Cdk7 but not Bur1/Cdk9 or Ctk1/Cdk12 narrows the relevant Pol II state to early elongation after promoter escape, not productive elongation. The PIC remains largely intact upon Kin28 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 synthesize the kinase depletion experiments into mechanistic conclusions supported by Figure 5. Claim C77 interprets the differential kinase requirements. Claim C78 cites prior work showing PIC integrity upon Kin28 depletion. The logic connecting the experimental observations to the proposed mechanism is sound and well-supported by the systematic kinase depletion experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C69",
+      "C90"
+    ],
+    "result": "The authors propose that global transcription at yeast promoters, particularly constitutive transcription of noncoding RNA by Pol II, is responsible for H2A.Z eviction. This is based on the finding that Pol II plays a key role in H2A.Z eviction and that H2A.Z eviction is not correlated with mRNA transcription levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8 and C90 propose a mechanism linking noncoding RNA transcription to H2A.Z eviction, supported by the Pol II dependence data and prior observations that H2A.Z turnover is uncorrelated with mRNA levels. However, the manuscript does not directly test whether noncoding RNA transcription is responsible for H2A.Z eviction. This remains a plausible but unvalidated hypothesis requiring additional experiments such as specific inhibition of noncoding RNA transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose a mechanistic model for the H2A.Z replacement cycle: early Pol II elongation dislodges H2A.Z-H2B dimers from +1 nucleosomes, with H3-H4 tetramer displacement requiring histone chaperones/remodelers. Canonical nucleosomes are then reassembled via histone chaperones and the predominating H2A-H2B pool, with positions reset by remodelers (ISWI, RSC, INO80). NDR maintenance and histone acetylation recruit SWR1 to canonical +1 nucleosomes, and substrate-stimulated Swr1 ATPase activity triggers H2A.Z-H2B exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C88 present a detailed mechanistic model shown in Figure 5, integrating the experimental findings with prior knowledge. However, many steps in this model are speculative (C82, C83, C84, C86) and not directly tested in this study. While the model is consistent with the data and prior literature, key predictions such as H2A.Z-H2B dimer dislodging by Pol II, H3-H4 tetramer displacement requirements, and the specific roles of various remodelers remain to be experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors speculate that H2A.Z eviction may be coupled to transcription by all three RNA polymerases (Pol I, II, III) and that similar mechanisms may operate at metazoan promoters (via Pol II pausing/release) and enhancers (via eRNA transcription).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89, C93, and C94 are explicitly speculative, extending the yeast findings to other polymerases and organisms. These are reasonable hypotheses based on the conservation of H2A.Z biology, but they are not tested in this manuscript and represent proposals for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C80",
+      "C81",
+      "C91",
+      "C92"
+    ],
+    "result": "The manuscript establishes context by citing established knowledge about H2A.Z biology, including its role as a permissive chromatin mark enriched at promoters and +1 nucleosomes, its deposition by SWR1, the higher turnover of +1 nucleosomes independent of mRNA transcription, and conflicting prior evidence about eviction mechanisms involving SWR1, INO80, or PIC assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C22, C66-C68, C70-C73, C80-C81, C91-C92 cite established knowledge and prior literature to provide context for the study. These are appropriately referenced and accurately represent the state of the field. The citations support the rationale for investigating H2A.Z eviction mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Single-particle tracking (SPT) is established as a robust technique for determining kinetic behaviors of chromatin-interacting proteins in live cells, complementary to ChIP-seq without caveats of fixation and chromatin manipulation, directly measuring both chromatin-free and chromatin-bound fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 describe the SPT methodology and its advantages, supported by appropriate citations. These claims establish the rationale for the methodological approach and are well-supported by prior literature demonstrating SPT applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C60",
+      "C64",
+      "C76"
+    ],
+    "result": "The manuscript cites established knowledge about Pol II transcription cycle regulation, including the roles of Kin28/Cdk7 in CTD Ser5 phosphorylation linked to capping, promoter escape and early elongation; Bur1/Cdk9 in facilitating transition to productive elongation; Ctk1/Cdk12 in CTD Ser2 phosphorylation during elongation; and the RNA capping machinery and Rrp6 exonuclease functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50-C54, C59-C60, C64, C76 cite established knowledge about transcription regulation to provide context for interpreting the kinase depletion experiments. These are appropriately referenced and accurately represent current understanding of the Pol II transcription cycle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The chromatin-free H2A.Z fraction represents soluble H2A.Z-H2B dimers associated with histone chaperones plus a minor population in complex with the SWR1 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 provides a reasonable interpretation of the fast-diffusing H2A.Z population based on known biochemistry of H2A.Z-H2B dimers and their association with chaperones and SWR1, supported by citation to Luk et al., 2007. This interpretation is consistent with the observed diffusion coefficients.",
+    "result_type": "MINOR"
+  }
+]

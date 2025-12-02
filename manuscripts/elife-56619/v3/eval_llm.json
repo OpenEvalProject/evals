@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior experience of live prey increases prey capture initiation frequency in larval zebrafish. Experienced fish have significantly more pursuits (p=0.003) and successful captures (p=0.001) than na\u00efve fish, but similar transition probabilities from pursuit to capture attempt (p=0.28) and from attempt to success (p=0.12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 provide strong statistical evidence with appropriate sample sizes (N=51 per group) and permutation tests. The pattern of results (increased initiation but not execution) is internally consistent and supports the main claim C1. The behavioral assay is well-controlled with multiple metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C71"
+    ],
+    "result": "Experience of live prey generalizes to virtual prey, with experienced fish showing significantly greater discriminability (d', p=0.03) and eye convergence rate at highest contrast (p=0.005) compared to na\u00efve fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 provide statistical evidence from virtual prey assays (N=23-25 per group). The generalization from live to virtual prey (C71) is well-supported by the data, though the virtual stimulus differs substantially from natural prey. The use of d' as a discriminability metric is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Differences in diet (paramecia vs. flakes) do not affect fish health, spontaneous behavior, or baseline motor activity. Fish length, swim velocities, and spontaneous behaviors are statistically indistinguishable between groups (all p>0.28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 provide comprehensive control data showing no differences in health or baseline behavior between dietary groups. C21 demonstrates that experience effects are food-specific (flake-fed fish respond more to flakes, p<0.0001), supporting that observed differences are experience-dependent rather than health-related.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Both prey-experienced and prey-na\u00efve fish show activity in visual areas (pretectum, optic tectum) and motor areas (cerebellum, hindbrain) during prey observation. Experienced fish have significantly higher eye convergence frequency (p=0.04) but similar tail flick frequency (p=0.74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C24 are supported by calcium imaging data from Figure 2. The observation that both groups activate similar brain regions but differ in behavioral output frequency is internally consistent. The contralateral asymmetry in tectal activity (C24) provides validation of the imaging approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C5"
+    ],
+    "result": "Prey-experienced fish show significantly greater activity in forebrain areas (telencephalon p=0.025, habenula p=0.009) during prey-evoked eye convergence compared to na\u00efve fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 provide statistical evidence from calcium imaging (N=13 experienced, N=7 na\u00efve) showing increased forebrain recruitment in experienced fish. The permutation tests are appropriate, though the sample size for na\u00efve fish is relatively small. This supports the broader claim C5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prey-experienced and prey-na\u00efve fish have similar visual area encoding of prey position. Retinotopic maps, correlation values, preferred angle distributions, and pretectal event properties do not differ significantly between groups (all p>0.20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide comprehensive evidence from encoding model analysis (N=17-23 per group) showing no differences in visual encoding. Multiple metrics (correlation, preferred angles, event frequency/amplitude) consistently show no group differences. This strongly supports C3 and indicates experience effects occur downstream of visual encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Granger-causality analysis reveals functional connectivity patterns consistent with known anatomy: tectal neuropil predicts tectal PVN activity, PVNs predict cerebellar activity, and cerebellum predicts hindbrain activity. These patterns are similar in experienced and na\u00efve fish and match anatomical connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 validate the Granger-causality approach by showing consistency with known anatomical connections (supported by multiple citations). C31 shows no experience-dependent differences in visual area connectivity. The validation against anatomy strengthens confidence in the method's application to novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C107"
+    ],
+    "result": "Experience of prey increases the gain of information flow from visual to motor areas. The functional link from tectal PVNs to telencephalon is significantly stronger in experienced fish, and the relationship between pretectal drive and capture initiation shows significant experience \u00d7 Granger-causality interactions for multiple pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide statistical evidence from Granger-causality and regression analyses (N=19 experienced, N=15 na\u00efve). The interaction terms (Diet*GC) are significant for pretectum\u2192tectal PVN, cerebellum, and hindbrain pathways. The interpretation C107 about increased gain is well-supported by the slope differences in Figure 5C-E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C106"
+    ],
+    "result": "Prey-experienced fish have higher probability of pretectal transients leading to eye convergence (p=0.03) and show significantly more telencephalon (p=0.02) and habenula (p=0.004) activity during pretectal events that trigger behavior versus those that do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide strong statistical evidence from calcium imaging analysis comparing pretectal events with/without behavioral output. The forebrain shows differential activity only for events leading to behavior, supporting the interpretation C106 that forebrain acts as a switch. Sample sizes are adequate (N=13-19 experienced, N=7-15 na\u00efve).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Chemical ablation of habenular neurons using NTR-MTZ reduces prey capture performance in experienced fish. MTZ treatment reduces habenular volume (p=0.003), eye convergence rate (p=0.033), percent time with eyes converged (p=0.004), and paramecia consumption rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide converging evidence from ablation experiments with appropriate controls (NTR+/\u2212MTZ and NTR\u2212/+MTZ groups). The fluorescence volume reduction (C38) validates the ablation, and multiple behavioral metrics show consistent deficits. The two-way repeated measures ANOVA is appropriate for the design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C108"
+    ],
+    "result": "Experience of prey strengthens visual drive to forebrain and lowers the threshold for visual activity to trigger motor output, thereby improving capture performance. This represents a gain control mechanism mediated by forebrain recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C108 represent integrative interpretations supported by multiple lines of evidence: increased forebrain activity (C25-C26), stronger visual-forebrain connectivity (C32), higher probability of visual events triggering behavior (C35), and necessity of habenula (C6). The gain control model is well-supported by the slope differences in Granger-causality relationships (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Background on zebrafish prey capture: The behavior is visually-guided, evident at 5 dpf, involves stereotyped motor sequences with eye convergence, and recruits known visual (pretectum AF7, optic tectum) and motor circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C53 represent established knowledge supported by appropriate citations to prior work. These provide necessary context for the current study and are well-documented in the literature. The citations appear appropriate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "General principles: Innate behaviors like hunting can be modulated by experience across species, neurons respond differently to ethologically-relevant stimuli, and sensory experience affects neural circuits through morphological and molecular changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 represent general principles from the literature, supported by appropriate citations. These establish the conceptual framework for studying experience-dependent plasticity in prey capture. The citations span appropriate model systems and are relevant to the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Literature context for interpretation: Prior work on habenula function, prey capture circuits, neuromodulation, comparative anatomy, and related behavioral systems provides framework for interpreting current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C103 represent contextual information from the literature with appropriate citations. These support the Discussion's interpretation of results within broader neuroscience knowledge. The citations appear accurate and relevant, though detailed verification of each would require checking primary sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The Tg(gng8:Gal4) line drives expression specifically in dorsal habenula and interpeduncular nucleus projections, with minimal olfactory bulb labeling. NTR-MTZ system effectively ablates expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by citations to prior characterization work and validated by imaging data in Figure 7. The specificity of expression is important for interpreting ablation results, and the authors appropriately note the minor olfactory bulb labeling while arguing prey capture is visually-guided (C42-C43).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Speculative model: Forebrain activity gates prey capture by sharpening contrast between visual events to create a 'go/no-go' signal, with experience enhancing this gating function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is explicitly speculative and represents a mechanistic hypothesis rather than a demonstrated result. While consistent with the data showing differential forebrain activity for behavioral vs. non-behavioral pretectal events (C36-C37), the specific 'go/no-go' gating mechanism requires additional experiments to test directly. The speculation is reasonable but not yet validated.",
+    "result_type": "MINOR"
+  }
+]

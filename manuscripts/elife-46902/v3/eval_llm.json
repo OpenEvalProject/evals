@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Chromosome scattering volume (CSV) is reduced soon after nuclear envelope breakdown (NEBD) in human cells. CSV was prominently reduced within the first 8 minutes following NEBD, with continued slower reduction over the following ~10 minutes. This reduction was observed in both synchronized cdk1-as cells and asynchronous wild-type U2OS cells, indicating it is not an artifact of the synchronization method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C13 are well-supported by quantitative measurements shown in Figure 1B and Figure 1\u2014figure supplement 2. The temporal dynamics are clearly documented, and the control experiment with wild-type cells (C12-C13) appropriately addresses potential artifacts from the cdk1-as synchronization system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CSV reduction occurs primarily independently of microtubules and is not an outcome of chromosome-spindle interactions. In nocodazole-treated cells lacking microtubules, CSV was reduced with very similar kinetics to control cells, although chromosomes remained in a spherical formation rather than aligning on the metaphase plate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C18 are supported by experimental data in Figure 1C showing CSV reduction in both control and nocodazole-treated cells. The nocodazole treatment was validated by immunostaining (C14, Figure 1\u2014figure supplement 3), and quantitative comparison demonstrates similar kinetics of CSV reduction in both conditions (C17).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "CSV reduction is not due to chromosome condensation. Chromosome mass volume (CMV) did not considerably change following NEBD, indicating that the reduction in CSV was not caused by chromosome condensation, which likely occurs mainly before NEBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by quantitative CMV measurements shown in Figure 1\u2014figure supplement 5. The distinction between CSV and CMV is methodologically sound, and the inference that CSV reduction is not due to condensation (C22) is appropriately drawn from the CMV data. The claim about timing of condensation (C23) is supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "An acto-myosin network is assembled on the cytoplasmic surface of the nuclear envelope prior to NEBD in a LINC complex-dependent manner. The actin network accumulated on the NE, peaking around NEBD and persisting after it, with the volume inside the network rapidly reduced within 6 minutes following NEBD. Super-resolution microscopy showed the actin network was separated outwardly from lamin B1 by 150-200 nm, and LINC-DN expression significantly diminished the actin network intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C38 are well-supported by multiple lines of evidence including live-cell imaging (Figure 2A), super-resolution microscopy (Figure 2B), and LINC-DN experiments (Figure 2C). The spatial localization data (C31-C32) and LINC complex dependence (C37-C38) are appropriately demonstrated. The observation in wild-type cells (C29-C30) addresses potential artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The actin network on nuclear envelope remnants confines chromosomes and its contraction leads to CSV reduction. CSV reduction was incomplete after NEBD in cells expressing LINC-DN compared with control expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by quantitative CSV measurements in LINC-DN expressing cells shown in Figure 2D. The incomplete CSV reduction when the actin network is disrupted provides functional evidence for the role of the network in confining chromosomes (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Actin depolymerization does not promote actin network contraction or CSV reduction. Jasplakinolide, an actin depolymerization inhibitor, had no effect on CSV reduction after NEBD, although it successfully inhibited cytokinesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by experimental data in Figure 3\u2014figure supplement 1. The positive control showing jasplakinolide inhibits cytokinesis (C42) validates the drug treatment, making the negative result for CSV reduction (C41) more convincing. The inference that actin depolymerization is not the mechanism (C43) is appropriately drawn.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Myosin II activity is required for actin network contraction and CSV reduction after NEBD, but not through effects on chromosome condensation or spindle morphology. Treatment with pnBB (myosin II inhibitor) alleviated both CSV reduction and actin network contraction following NEBD, without affecting chromosome mass volume, spindle pole distance, or spindle shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 are well-supported by multiple experiments. Myosin II co-localization (C45, Figure 3\u2014figure supplement 2) and pnBB effects on CSV and actin network (C46-C47, Figure 3A and Figure 3\u2014figure supplement 3) are clearly demonstrated. Important controls showing no effect on CMV (C48), spindle pole distance (C50), and spindle morphology (C51) strengthen the conclusion that the effect is specific to actin network contraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Myosin II promotes actin network contraction and CSV reduction after NEBD in a spindle microtubule-independent manner, though a microtubule-dependent mechanism may also contribute. pnBB treatment alleviated CSV reduction in the presence of nocodazole, and double treatment with pnBB and nocodazole seemed to further alleviate CSV reduction during 0-6 minutes compared with pnBB alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by experimental data in Figure 3B showing pnBB effects in nocodazole-treated cells. The inference that myosin II acts independently of microtubules (C55) is appropriately drawn. The observation of additive effects with double treatment (C56) and the interpretation of two mechanisms working in concert (C57) are reasonable, though the additive effect appears modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Myosin II activity within the actin network on nuclear envelope remnants causes its contraction and CSV reduction after NEBD. Local photoactivation of azido-blebbistatin (azBB) in half of the nucleus alleviated CSV reduction in the exposed region compared to the non-exposed region, while control cells showed no difference between exposed and non-exposed halves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by the azBB photoactivation experiments shown in Figure 4. The spatial control provided by local photoactivation (C58-C59) strengthens the causal link between myosin II activity and CSV reduction. The control experiment (C59) appropriately addresses potential artifacts from light exposure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Myosin-II-mediated contraction of the acto-myosin network facilitates timely chromosome congression, anaphase onset, and correct chromosome segregation. LINC-DN expression led to considerable delays in chromosome congression and anaphase onset, increased occurrence of back-of-spindle chromosomes, and more frequent abnormal chromosome segregation during anaphase. These results were reproduced with pnBB treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C61-C70 are well-supported by quantitative timing measurements (Figure 5B-C), analysis of back-of-spindle chromosomes (Figure 5D), and segregation errors (Figure 5E). The correlation between back-of-spindle chromosomes and congression delay (C66, C81) strengthens the mechanistic interpretation. Reproduction of results with pnBB (C68, Figure 5\u2014figure supplement 3) provides independent validation. Controls showing no defects in spindle positioning or length (C63) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The acto-myosin network may be correlated with ploidy status. RPE cells (diploid) showed accumulation of actin on the nuclear envelope in early mitosis, while HeLa cells (highly aneuploid) did not show such accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 are based on observations in two cell lines (Figure 5\u2014figure supplement 4). While the observations are documented (C71-C72), the correlation with aneuploidy (C73) is highly speculative and acknowledged as such by the authors. Only two cell lines are compared, which is insufficient to establish a correlation. Additional cell lines with varying ploidy would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C56",
+      "C57"
+    ],
+    "result": "A microtubule-dependent mechanism involving centrosome movement may contribute to CSV reduction during 0-6 minutes after NEBD. CSV may be slightly smaller at 4 minutes following NEBD in control cells compared to nocodazole-treated cells, possibly due to mild compression of nuclear envelope remnants by rapid MT-dependent inward movement of centrosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C20 and C56-C57 suggest a minor MT-dependent contribution to CSV reduction. While the observation of a difference at 4 minutes is noted (C19), the authors use cautious language ('may be slightly smaller'). The interpretation involving centrosome compression (C20) is speculative. The additive effect of double treatment (C56) provides some support, but the effect is modest and the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The acto-myosin network constrains chromosomes within the pole-to-pole region during 8-16 minutes after NEBD, facilitating chromosome movement to the middle of the spindle. LINC-DN expression and pnBB treatment mainly delayed chromosome movement to the middle of the spindle rather than the initial chromosome-MT interaction, and it is possible that earlier CSV reduction (0-8 minutes) facilitates initial chromosome-MT interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C83 present a mechanistic interpretation of when and how the acto-myosin network affects chromosome-spindle interactions. While the temporal analysis (C79-C80) is supported by data, the interpretation that the network mainly affects movement to the middle rather than initial interaction (C78) is speculative and acknowledged as a presumption by the authors. The possibility that earlier CSV reduction facilitates initial interaction (C83) is explicitly stated as speculative and lacks direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Contraction of the acto-myosin network starts immediately after NEBD, possibly triggered by NEBD reducing tension on the nuclear envelope. This mechanism is analogous to tension-dependent acto-myosin contraction observed during cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 is supported by temporal analysis (Figure 2\u2014figure supplement 1 and Figure 1B). However, the proposed trigger mechanism involving tension reduction (C85) is explicitly speculative. The analogy to cell migration (C86) is based on cited literature but does not provide direct evidence for the proposed mechanism in mitosis. The trigger mechanism requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background on chromosome-spindle interactions and spatial considerations. Chromosomes must be efficiently captured by spindle microtubules during mitosis, and the efficacy of this interaction can be influenced by chromosome spatial distribution. Chromosomes initially interact with the lateral side of spindle microtubules, and spatial positioning affects the efficiency of establishing chromosome-MT interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C93-C97 provide background context based on established knowledge and cited literature. These claims appropriately set up the rationale for the study. The logical reasoning about spatial relationships (C9, C96-C97) is sound and well-supported by the experimental results presented in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The actin cytoskeleton and non-muscle myosin contribute to high-fidelity chromosome segregation through multiple mechanisms across different organisms and cell types, including roles in starfish oocytes, Xenopus embryos, PtK2 cells, mouse oocytes, and in cortical positioning of the mitotic spindle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 summarize prior work from cited literature to provide context for the current findings. These claims are appropriately supported by citations and help position the current work within the broader field. The synthesis that actin and myosin contribute through multiple mechanisms (C92) is a reasonable interpretation of the cited literature combined with the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Methodological definitions and approaches. The convex hull is defined as the minimal polygon/polyhedron wrapping objects, and chromosome scattering volume (CSV) is defined as the volume of the 3D convex hull wrapping chromosomes. U2OS cdk1-as cells were synchronized using 1NM-PP1 arrest and release, and NEBD was identified by release of GFP-LacI-NLS into the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 describe methodological definitions and approaches. The convex hull definition (C98) is mathematically standard. The CSV definition (C99) is clearly stated and appropriate for quantifying chromosome spatial distribution. The synchronization method (C100) and NEBD identification (C101) are standard approaches that are adequately described.",
+    "result_type": "MINOR"
+  }
+]

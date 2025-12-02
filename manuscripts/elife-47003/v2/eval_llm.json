@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the epidemiological context for RSV vaccination strategies, including that RSV is the leading cause of lower respiratory tract infection in infants, that most children contract RSV by age two with highest disease severity in young infants, and that household transmission plays a significant role with older siblings often being the index case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 are all supported by appropriate citations to published literature (Nair et al., 2010; Glezen et al., 1986; Hall et al., 2009; Munywoki et al., 2014; KNBS, 2015; NovaVax, 2019, etc.). These background claims establish the scientific rationale for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "The observed RSV hospitalization data from KCH shows that all hospitalizations occurred in under-five year olds with 84% in under-one year olds, with sharp annual peaks showing erratic seasonality (November to April), and a 16% increase in under-ones between 2002-2009. The model captured 2147 hospitalizations compared to 2174 observed (excluding the anomalous 2005/2006 year with three peaks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C39 describe observed hospitalization data from KCH and are supported by Figure 2 and the KHDSS demographic surveillance data. The model fit is reasonable with observed data falling within the 95% prediction interval, though the 2005/2006 anomaly is acknowledged as unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C56",
+      "C57",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95"
+    ],
+    "result": "The model fitting methodology used six free parameters with an EM algorithm to infer parameters from RSV hospitalization data, treating yearly seasonality variation as missing data. The model broadly captured year-to-year variation in hospitalizations and age profiles. Forecasts used 500 realizations of random seasonal patterns over 10 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C56-C95 describe the statistical and computational methodology. The approach is technically sound using appropriate methods (EM algorithm, likelihood profiles for confidence intervals, Poisson errors for count data). The use of 500 simulations for forecasting provides adequate uncertainty quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "The model makes several key assumptions including: all U1 individuals are at risk of first RSV episode while all O1 individuals have been infected at least once; individuals are born with temporary immunity that fades; RSV provides only temporary protection from reinfection (mean 6 months); two-level social mixing (household and community); household size limited to \u226410 with \u22642 under-ones to capture \u224899% of U1s; and various vaccination deployment assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C51 and C82-C85 describe model assumptions that are clearly stated and justified either by citations to literature (e.g., Glezen et al., 1986 for RSV infection by age 2) or by practical modeling considerations (e.g., limiting household size to capture 99% of U1s). The assumptions are reasonable for the modeling objectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C78"
+    ],
+    "result": "The model inferred that the mean period of maternal antibody protection against RSV after birth is 21.6 days [17.2, 26.1 days 95% CI], which is much shorter than previously estimated in age-structured models (2.3-4 months in Kinyanjui et al., 2015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C78 present a key finding from parameter inference with appropriate confidence intervals. The discrepancy with previous estimates is acknowledged and discussed in relation to model structure differences (household vs. age-structured models). The inference appears statistically sound using the EM algorithm and likelihood profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C79"
+    ],
+    "result": "The model predicts that pre-vaccination, school-age children had the highest force of infection from outside the household followed by under-one year olds. Within households, 7-year-olds had the highest per-capita infection rates, with total household infection rates greatest in size 5-6 households. RSV attack rates within households were significant in maintaining transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C79 are supported by model predictions shown in Figure 3. However, C15 is noted to depend on the assumption of high within-school mixing, and alternative scenarios with lower school mixing gave similar results (appendix 3). The findings are internally consistent with the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C77",
+      "C80"
+    ],
+    "result": "The model predicts that a 50% reduction in RSV hospitalizations is achievable with 75 days of MAB protection at 100% coverage combined with 75% IRP household coverage (~7.5% population coverage). IRP vaccination alone can achieve up to 25% reduction in hospitalizations. The MAB vaccine significantly reduces hospitalizations but has negligible effect on total population infections. The combined strategy efficiently targets protection to high-risk infants through both direct protection and household cocooning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C20-C32, C59-C63, C77, C80 present the main vaccination strategy results supported by Figures 4-6. The predictions are based on 500 simulations with median values reported. The findings are internally consistent: MAB vaccine protects infants directly (reducing hospitalizations more than infections), while IRP vaccine provides indirect cocoon protection. The efficiency analysis (C27-C30) appropriately identifies redundancy when both vaccines are used together.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In the KHDSS population of ~240,000 people by 2016, 100% effective coverage of households where births occurred corresponds to ~10% effective population coverage, requiring 8,601 MAB vaccines and 0-24,095 IRP vaccines annually depending on household coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are straightforward calculations based on demographic data (birth rate and population size). The arithmetic is verifiable: 8,601 births/year in a population of 240,000 \u2248 3.6% birth rate, and with household members included reaches ~10% population coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The discrepancy between this study's estimate of maternal protection duration (21.6 days) and previous age-structured models (2.3-4 months) may be explained by household cocooning effects. Age-structured models for endemic diseases with long-lasting immunity may not adequately capture household structure effects, which are more important for diseases like RSV with rapid loss of immunity and seasonal epidemic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 provide a theoretical explanation for the discrepancy in parameter estimates between this household-structured model and previous age-structured models. The reasoning is supported by citations to relevant literature (Anderson and May, 1991; Geard et al., 2015) and is logically coherent: household structure matters more for diseases with short-lived immunity and seasonal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Several contextual factors are noted: RSV immunity wanes with a mean of 6 months between recovery and partial susceptibility; 97.5% of pregnant women in Kilifi have prenatal contact though timing in third trimester is uncertain; RSV hospitalizations are a crude proxy for disease burden; and the birth rate has stabilized at ~8,500/year with static at-risk under-ones since 2009.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C70-C76 provide contextual information supported by appropriate citations (Ohuma et al., 2012; KNBS, 2015; Modjarrad et al., 2016) or demographic data. These claims acknowledge limitations and uncertainties appropriately (e.g., C71 on timing of prenatal contact, C73 on hospitalization as crude proxy).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The model was unable to explain the unusual 2005/2006 RSV year which had three peaks in hospitalizations separated by at least a month, unlike other years with solitary peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 acknowledges a limitation of the model fit. This is an appropriate acknowledgment of model limitations and is visible in Figure 2A where the 2005/2006 period shows poor fit. The authors appropriately excluded this anomalous year from their fit statistics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C83"
+    ],
+    "result": "The model simulated RSV transmission in the KHDSS population between September 2001 and September 2016 using 1,926 possible household configurations based on household size, age categories, and RSV disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C83 describe the basic model structure and scope. These are factual statements about the model design that are consistent with the detailed methodology described in the Materials and Methods section.",
+    "result_type": "MINOR"
+  }
+]

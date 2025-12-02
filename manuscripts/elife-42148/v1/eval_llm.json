@@ -1,0 +1,187 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47"
+    ],
+    "result": "In epileptic animals, two distinct types of high-frequency oscillations co-occur in the same CA1 network: 'ripple-like' events that resemble control ripples in frequency and envelope amplitude, and 'pHFOs' that are associated with interictal spikes, exhibit higher frequencies, and occur independently of brain state. These event types can be distinguished using a combination of oscillation frequency and envelope amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C16-C23 provide converging evidence from clustering analysis (Figure 2), ROC discrimination, and statistical comparisons demonstrating two distinct oscillation types in epileptic animals. The classification is validated by multiple parameters (frequency, envelope amplitude, brain state dependence) with appropriate statistical tests and controls. The methodology is clearly described and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "pHFOs occur irrespective of brain state, including during active exploration with ongoing theta oscillations, and transiently suppress theta rhythm for several hundred milliseconds after occurrence. In contrast, ripple-like events in epileptic animals retain the brain state dependence of control ripples, occurring predominantly during immobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C29 are supported by statistical analyses of running speed distributions (Figure 3A), event rate calculations (Figure 3B), and wavelet analysis of theta power (Figure 3C-D). The p-values are appropriately reported (p = 5.3\u00d710\u207b\u2077\u2074 for speed differences, p = 4.7\u00d710\u207b\u00b2\u2079 for theta suppression), and controls for behavioral differences between groups are included (C27). The findings are consistent across multiple measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C53",
+      "C54"
+    ],
+    "result": "pHFOs and ripple-like events engage distinct subnetworks of CA1 principal neurons. In epileptic animals, only 46% of neurons are modulated by ripple-like events (compared to 91% in controls), and only 21% participate in pHFOs. Among modulated neurons, 72% respond to only one event type, with minimal overlap between the two populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30-C34, C53-C54 are supported by single-unit recording data (Figures 4-5) with appropriate statistical tests (chi-square tests with significant p-values). The proportion of modulated neurons is clearly quantified for each condition, and the segregation of neuronal populations is demonstrated both at the population level and for individual neurons recorded across both event types. The cluster quality metrics (Figure 4\u2014supplement 1) validate the single-unit isolation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C60",
+      "C62"
+    ],
+    "result": "Epileptic animals show increased network sparsity with fewer active neurons during foraging (73/177 vs 30/35 in controls) and reduced spatial information in active place cells (median 0.5 bits vs 1.7 bits in controls). This represents a general disruption of hippocampal spatial coding that extends beyond the immediate effects of pHFOs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35-C36, C60, C62 are supported by place field analysis (Figure 6) with appropriate statistical tests (chi-square test p < 1.5\u00d710\u207b\u2076 for proportion of active neurons; Wilcoxon rank sum test p = 3.0\u00d710\u207b\u2078 for spatial information). The findings are consistent with prior literature (C60, C61) and represent a novel observation about network sparsity during both behavior and ripple-like events (C62). Sample sizes are adequate (177 neurons in epilepsy, 35 in controls).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C66"
+    ],
+    "result": "pHFOs cause immediate disruptions in spatial information coding. pHFOs occur randomly with respect to spatial location (9/11 sessions), and removing spikes that occurred during pHFOs significantly improves spatial information (p = 9.2\u00d710\u207b\u2075), with the improvement correlating with the proportion of pHFO-related spikes removed (R\u00b2 = 0.82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C37-C40, C66 are supported by spatial information analysis (Figure 7) using appropriate controls (shuffled distributions, random down-sampling). The statistical tests are appropriate (Wilcoxon Sign Rank Test), and the correlation analysis (R\u00b2 = 0.82, p < 1.6\u00d710\u207b\u2078) provides strong evidence for a dose-dependent relationship. However, the effect size is modest (median increase of 0.02 bits), and only 10/21 maps showed improvement beyond random down-sampling, suggesting the immediate effects are relatively subtle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The coefficient of variation for peak voltage amplitudes of high-frequency oscillations is significantly higher in epileptic animals (0.5 \u00b1 0.05) compared to control animals (0.3 \u00b1 0.01), indicating greater heterogeneity in oscillation amplitudes within recording sessions in epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by statistical comparison (unpaired t-test, p = 0.04) and reference to Figure 1D. The sample sizes are small (n=4 control, n=12 epileptic sessions) but the effect is significant and provides initial evidence for heterogeneity in high-frequency oscillations in epilepsy. This finding motivates the subsequent clustering analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study used a kainate model of temporal lobe epilepsy in male Wistar rats (4 epileptic, 4 control) and employed identical high-frequency oscillation detection parameters (>140 Hz) across groups, with validation that filtering did not induce spurious artifact detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 describe the experimental methods with appropriate citations (C72) and validation controls (C75, Figure 1\u2014supplement 2). The sample size of 4 animals per group is standard for in vivo electrophysiology studies with large numbers of neurons recorded per animal. The validation of the filtering approach addresses a known concern in the field (B\u00e9nar et al., 2010).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C64",
+      "C69",
+      "C70"
+    ],
+    "result": "The preservation of ripple-like events alongside pHFOs suggests that memory-related neural computations are partially preserved in epileptic animals, though the association of pHFOs with increased network sparsity and decreased information coding represents a potential mechanism for memory impairment in epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46, C64, C69-C70 represent interpretations and inferences from the data rather than direct experimental findings. While the underlying observations (preservation of ripple-like events, network sparsity, distinct cellular populations) are well-supported, the functional implications for memory require additional behavioral testing. The claims are reasonable interpretations but lack direct causal evidence linking the observed network changes to memory performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C55",
+      "C59",
+      "C62",
+      "C71"
+    ],
+    "result": "The study makes several claims of novelty: first demonstration of waveform-based classification separating events at the same electrode, first recordings from large cell populations during pHFOs in freely exploring animals, and first observation of sparse activation during both behavior and ripple-like events in epilepsy. The authors propose brain state dependence as an additional classification criterion and suggest potential for selective therapeutic targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C59, C62 assert novelty but cannot be fully verified without comprehensive literature review. The proposals in C50-C51, C55, C71 are speculative suggestions for future work rather than demonstrated results. While the observations supporting these claims appear sound, the novelty claims and therapeutic implications require independent verification and additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C15",
+      "C48",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C63",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "The manuscript cites established knowledge and prior work regarding pHFOs as biomarkers in epilepsy, the properties of normal ripples, the overlap between ripples and pHFOs, mechanisms of interictal spike effects on memory, and disruptions in place coding and theta timing in epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C11, C15, C48, C52, C56-C58, C61, C63, C65, C67-C68 appropriately cite published literature to support background knowledge and contextualize the current findings. The citations appear appropriate and the claims are consistent with established understanding in the field. These provide necessary context for interpreting the novel findings.",
+    "result_type": "MINOR"
+  }
+]

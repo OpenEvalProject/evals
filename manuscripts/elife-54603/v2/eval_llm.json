@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C12",
+      "C13"
+    ],
+    "result": "Previous scRNA-seq studies reported that alternative splicing in single cells follows a bimodal pattern, where individual cells produce predominantly one isoform or the other, with few cells showing intermediate inclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C12, and C13 consistently describe prior observations from multiple cited studies (Shalek et al., 2013; Marinov et al., 2014; Song et al., 2017; Westoby et al., 2018) establishing the bimodal splicing pattern as a previously reported phenomenon. These are well-documented citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C16",
+      "C26",
+      "C91"
+    ],
+    "result": "The observed bimodal pattern of alternative splicing in single cells arises almost entirely from technical limitations of scRNA-seq, specifically low gene expression and low capture efficiency, which distort the observed distribution of isoforms and create the appearance of binary splicing outcomes even when cells express both isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C16, C26, and C91 present the central finding supported by extensive simulations (C5, C27, C51-59) and real data analysis (C31-40, C52). The simulations demonstrate that unimodal splicing distributions become artificially bimodal under low capture conditions, matching patterns in real datasets. The consistency between simulation predictions and observed data strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C47",
+      "C49",
+      "C50",
+      "C92",
+      "C93"
+    ],
+    "result": "The reliability of splicing measurements in single cells depends on the initial mRNA amount, capture efficiency, underlying splicing rate, and PCR amplification effects, with uncertainty decreasing as more molecules are captured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C47, C49, C50, C92, and C93 are supported by theoretical calculations (Figure 3\u2014figure supplement 1) and simulation results (Figure 3). The probabilistic analysis demonstrates how few captured molecules lead to high uncertainty in splicing estimates, with specific quantitative predictions (e.g., C47: 50% chance of observing only one isoform with 2 captured mRNAs at \u03a8=0.5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In real scRNA-seq datasets, exons with low junction read coverage show more binary \u03a8^ values, while cells with higher read coverage show more non-binary values. This association is due to technical sequencing coverage rather than biological transcription levels, suggesting distortion of underlying unimodal distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C40 are supported by consistent observations across multiple datasets (Figure 2a-d, Figure 2\u2014figure supplement 1a,b). The correlation between coverage and binary observations is demonstrated for intermediate exons but not constitutively spliced exons (C37), and the effect is attributed to technical rather than biological factors through analysis of total splice junction reads per cell (C39-C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Transcriptional bursting contributes to splicing variability only by determining overall mRNA abundance, not through direct effects on binary observations beyond read coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by linear regression analysis (Figure 2\u2014figure supplement 1c,d) showing that burst frequency and size correlate with binary observations but do not contribute beyond the effect of read coverage. This is consistent with single-molecule fluorescence observations (C44 cites Waks et al., 2011).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Simulations demonstrate that under a non-binary splicing regime, low capture efficiency causes observed \u03a8^ distributions to become artificially binary and bimodal, with the effect strongest for lowly covered exons and increasing as capture efficiency decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 describe simulation results (Figure 3a-g) showing that the non-binary model reproduces patterns seen in real data while the binary-bimodal model does not. The simulations systematically vary capture efficiency and gene expression to demonstrate the technical origins of apparent bimodality, with quantitative predictions matching real data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C101",
+      "C102"
+    ],
+    "result": "Census normalization can estimate the number of captured mRNA molecules, revealing that some datasets with many reads per cell have few mRNAs recovered. A threshold of 7-10 recovered mRNA molecules provides reliable splicing estimates, and exons meeting this criterion show substantially fewer binary observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70, C101-C102 describe the Census-based filtering approach supported by Figure 4a-b and Figure 4\u2014figure supplement 1c-d. The method successfully identifies datasets with low mRNA recovery despite high read counts (C65-C66, C97) and establishes quantitative thresholds (C68-C69) validated by simulation and real data analysis (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Filtering based on mRNA recovery removes spurious binary observations and reveals biologically meaningful splicing patterns, such as Cadm1 exon 8 showing increased inclusion during neuronal differentiation. Cell type differences can contribute to true bimodality that persists after filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by the Cadm1 example (Figure 4d-e) showing significant correlation with pseudotime after filtering (Spearman's rs = 0.52, p=1.2\u00d710^-7). The distinction between technical artifacts and biological cell-type differences is logically sound and supported by the filtering results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "After filtering for sufficient mRNA recovery, cell clusters show no or very few exons with bimodal splicing distributions within cell types. The remaining cases of bimodality reflect biological differences between cell types or subtypes (e.g., sex-specific splicing), not stochastic binary splicing within homogeneous cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C108-C110 are supported by systematic analysis across datasets (Figure 4h, Figure 4\u2014figure supplement 1f-i, Table 1) showing dramatic reduction in bimodal exons after filtering. The interpretation is strengthened by citations to experimental validations (C108-C109) showing that confirmed cases of bimodality involved cell type differences, not homogeneous cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Both mRNA-based and read-based filtering schemes substantially enrich for exons showing significant differential splicing between cell clusters, with enrichment increasing with test strictness. The optimal filtering approach varies by dataset depending on mRNA recovery and amplification characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 are supported by Kruskal-Wallis test results (Figure 4i-k, Figure 4\u2014figure supplement 2) showing significant enrichment for differentially spliced exons. The dataset-specific differences (C84-C86) demonstrate that mRNA recovery and amplification affect the interpretation of read counts, supporting the need for adaptive filtering (C87-C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C30",
+      "C104"
+    ],
+    "result": "Accounting for the true amount of information recovered through appropriate filtering enables biologically meaningful measurements of alternative splicing in single cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C29, C30, and C104 represent the practical outcome supported by the filtering analysis and differential splicing results (C73-C88). The enrichment for differentially spliced exons and recovery of known biological patterns (e.g., Cadm1, Figure 4l, Figure 4\u2014figure supplement 4) demonstrate that high-quality data can yield biological insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C48",
+      "C61",
+      "C63"
+    ],
+    "result": "Full-length scRNA-seq experiments have ~10% capture efficiency due to RNA degradation and inefficient reverse transcription, many genes are expressed at few molecules per cell, and experiments generally do not report absolute mRNA counts. Splice junction read counts are influenced by PCR amplification and sequencing depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C48, C61, and C63 describe established technical limitations of scRNA-seq supported by multiple citations (Marinov et al., 2014; Gr\u00fcn et al., 2014; Ziegenhain et al., 2017; Qiu et al., 2017; Shapiro et al., 2013; Zenklusen et al., 2008). These are well-documented technical facts that form the basis for the study's analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Sequencing library depth does not necessarily reflect quality; splicing observations are distorted by uneven amplification and overamplification. Increasing PCR cycles to compensate for low capture efficiency risks worsening distortion, as seen in the Song dataset with high reads but low mRNA recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by Census normalization analysis (Figure 4a, Figure 4\u2014figure supplement 1c) showing the Song dataset has high read counts but low mRNA recovery and extensive bimodality. The inference about PCR amplification effects (C95-C96) is consistent with the simulation model and understanding of technical processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Qualitative changes in observed \u03a8^ distributions between cell subpopulations do not necessarily reflect changes in underlying splicing rates, as changes in gene expression and mRNA recovery can create the illusion of splicing changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are logical inferences supported by the simulation results showing how technical factors can create apparent splicing differences. This is an important caveat for interpreting differential splicing between conditions with different expression levels or technical quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C103",
+      "C105"
+    ],
+    "result": "Future improvements should include statistical methods accounting for missing and redundant information, and experimental improvements in capture efficiency while moderating overamplification to enable better understanding of splicing regulation and cell-to-cell variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100, C103, and C105 are forward-looking recommendations and speculation about future work. While logically sound based on the study's findings, these represent proposed future directions rather than demonstrated results. C105 includes citations to recent methods but is explicitly speculative ('we hope').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Previous work showed contrasting results: single-molecule imaging found tightly regulated splicing with minimal cell-to-cell variability, while scRNA-seq studies found bimodal patterns. Some studies implemented workarounds or identified true differential splicing, but did not explain how technical limitations caused qualitative distortions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C20-C25 accurately summarize prior work with appropriate citations. C14 cites single-molecule imaging studies (Waks et al., 2011; Maamar et al., 2013), C20-C23 cite various computational approaches, and C25 provides critical assessment setting up the current study's contribution. These are fair characterizations of the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C68",
+      "C69"
+    ],
+    "result": "For an exon with 50% inclusion rate and 10% capture efficiency, at least 50 transcripts in the cell are needed for non-binary estimates, and 7-10 recovered mRNA molecules would likely capture both isoforms with observed \u03a8^ within 0.1 of the true value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C68, and C69 provide specific quantitative predictions from simulations (Figure 3h) and analytical calculations (Figure 2\u2014figure supplement 1d). These thresholds are used to establish the filtering criteria and are validated by their performance in identifying differentially spliced exons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Low recovery of reads from specific splice junctions may be due to annotation errors or poor recovery of fragments with particular sequence composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is explicitly speculative ('We expect', 'perhaps due to') about the causes of anomalously low splice junction read recovery. While plausible explanations are offered, no direct evidence is provided to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Single cells express limited mRNAs per gene, so splicing observations in single cells will always be inherently noisy reflections of underlying biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 represent fundamental biological and technical limitations. C106 is established knowledge, and C107 is a logical conclusion about the inherent limitations of single-cell measurements given finite molecular sampling.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C24",
+      "C26",
+      "C29",
+      "C30"
+    ],
+    "result": "Ten classes of sensory neurons regulate peroxide resistance in C. elegans. Mutations affecting sensory cilia (osm-5) and sensory transduction (tax-2, tax-4) increased peroxide resistance by 45-124%. Systematic ablation of specific sensory neurons identified seven classes that normally reduce peroxide resistance (ASI, ASG, ASK, AFD, AWC, IL2, and ADE/PDE/CEP) and three classes that increase it (ASJ, AWA, and URX/AQR/PQR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C24, C26, C29, and C30 are well-supported by systematic genetic ablation experiments shown in Figure 1 with appropriate controls and statistical analyses. The experimental design is rigorous, covering 54 of 72 sensory neurons, and the results are internally consistent with multiple independent measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ASI sensory neurons regulate peroxide resistance via DAF-7/TGF\u03b2 signaling. Loss-of-function mutations in daf-7 increased peroxide resistance two-fold, which was rescued by reintroducing daf-7(+) specifically in ASI neurons. This regulation is specific to peroxide resistance, as daf-7 mutants showed normal survival to arsenite, paraquat, and dithiothreitol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 are strongly supported by genetic rescue experiments (C35, C36, C38) and specificity controls (C40). The tissue-specific rescue experiments provide compelling evidence that ASI is the relevant source of DAF-7 for peroxide resistance regulation. The specificity to peroxide versus other stressors strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DAF-7/TGF\u03b2 signals through a canonical pathway involving DAF-1 receptor and DAF-3/DAF-5 transcriptional complex. DAF-1 functions redundantly in multiple sets of interneurons (including AVK and at least two other sets) to regulate peroxide resistance. DAF-3 must be active in all DAF-1-sufficiency sets of neurons to increase peroxide resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 are supported by comprehensive genetic epistasis experiments and tissue-specific rescue studies. The redundant function of DAF-1 in multiple neuronal sets is demonstrated through promoter-specific expression experiments (C48, C53). The requirement for DAF-3 activity in all DAF-1-sufficiency sets (C54, C55) is logically consistent with the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "DAF-7/TGF\u03b2 regulation of peroxide resistance is independent of pathways controlling dauer formation (DAF-12), fat storage (MGL-1/MGL-3), and germline-mediated effects. Double mutant analyses show that daf-1 and germline ablation independently increase peroxide resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C60, C63-C65 are supported by appropriate double mutant analyses showing independence of pathways. The genetic logic is sound: if pathways were dependent, suppression would be observed in double mutants, but additive or independent effects were seen instead. This establishes pathway specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "DAF-7/TGF\u03b2 signaling regulates peroxide resistance partially through the insulin/IGF1 receptor DAF-2 and the FOXO transcription factor DAF-16. Loss of daf-2 increased peroxide resistance three-fold, and daf-16 was necessary for increased peroxide resistance in daf-2 mutants and partially necessary in daf-1 mutants (reducing resistance by ~50%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 are supported by genetic epistasis experiments. The partial suppression of daf-1 phenotypes by daf-16 (C74) appropriately supports the conclusion of partial dependence (C75). The additive effects of daf-1 and daf-2 mutations (C70) suggest overlapping but not identical mechanisms, consistent with the partial dependence model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C77"
+    ],
+    "result": "SKN-1/NRF transcription factor acts independently of DAF-16 to promote peroxide resistance in daf-1 mutants. RNAi knockdown of skn-1 reduced peroxide resistance of daf-1 mutants by 30% and also reduced resistance in daf-16; daf-1 double mutants, while hlh-30 had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C79, and C77 are supported by RNAi experiments showing non-overlapping function of SKN-1 and DAF-16. The observation that skn-1 RNAi affects daf-16; daf-1 double mutants (C79) provides strong evidence for independent pathways. The negative result with hlh-30 (C77) appropriately rules out this alternative transcription factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "DAF-16/FOXO functions in the intestine and neurons to increase peroxide resistance when DAF-1 signaling is reduced. Tissue-specific rescue experiments showed that restoring daf-16(+) in the intestine partially rescued peroxide resistance, while restoration in body-wall muscles had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C82, and C83 are supported by tissue-specific rescue experiments using appropriate promoters. The partial rescue with intestinal expression (C80) and lack of rescue with muscle expression (C82) provide clear evidence for tissue-specific function. The conclusion (C83) appropriately integrates these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "Loss of daf-7 causes widespread transcriptional changes, with 3641 genes downregulated and 3229 genes upregulated. Downregulated genes are associated with reproduction and germline expression, while upregulated genes are associated with defense responses and intestinal expression. The daf-7 mutation increases expression of SKN-1 and DAF-16 target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by mRNA-seq data with appropriate statistical thresholds (q < 0.001) and biological replicates. The Gene Ontology analysis (C85) and comparison to known SKN-1 and DAF-16 targets (C86) provide functional validation of the transcriptomic changes. The inference about DAF-7 repressing these targets (C88) is reasonable given the genetic epistasis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "Food ingestion regulates peroxide resistance independently of the feeding defect in daf-1 mutants. E. coli concentration before the assay has a dose-dependent effect on peroxide resistance. The eat-2 feeding-defective mutation decreased peroxide resistance by 25%, and DAF-3 is proposed to be activated in response to reduced feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C94 are supported by experimental data, but C96 is explicitly labeled as a speculative proposal. While the data on feeding effects (C91, C93) are solid, the mechanistic proposal about DAF-3 activation (C96) lacks direct experimental validation. The relationship between feeding and DAF-3 activity requires additional experiments to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "E. coli catalases protect C. elegans from hydrogen peroxide. Wild-type E. coli MG1655 protected nematodes from hydrogen peroxide killing, while catalase-deficient E. coli JI377 did not. In assays with catalase-deficient E. coli, daf-7 mutants and ASI-ablated animals showed increased hydrogen peroxide resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C106-C109 are supported by experiments using defined E. coli strains with and without catalase activity. The use of the JI377 triple mutant (lacking KatG, KatE, and AhpCF) provides a clean genetic background to test the role of bacterial catalases. The observation that daf-7 effects are revealed only with catalase-deficient bacteria (C108, C109) is logically consistent with the freeloading model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C114",
+      "C117",
+      "C118",
+      "C119",
+      "C121",
+      "C122"
+    ],
+    "result": "The DAF-7/TGF\u03b2 pathway downregulates C. elegans catalase expression, particularly ctl-1, partly via DAF-16. The ctl-1 and ctl-2 genes were induced by daf-7 mutation in mRNA-seq. Overexpression of all three catalases doubled hydrogen peroxide resistance. The ctl-1 null mutation partially suppressed increased resistance in daf-1 mutants. ctl-1 mRNA and protein expression were elevated in daf-1 mutants in a partially DAF-16-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C114, C117-C119, C121-C122 are supported by multiple complementary approaches: transcriptomics (C111), overexpression (C114), genetic epistasis (C117), qRT-PCR (C118, C119), and microscopy (C121). The partial DAF-16 dependence (C119) is appropriately demonstrated by the small but significant reduction in ctl-1 expression in daf-16; daf-1 double mutants. The conclusion (C122) integrates these findings appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C15"
+    ],
+    "result": "Background claims about hydrogen peroxide as a chemical weapon, its sources, and cellular defense mechanisms. These include statements about hydrogen peroxide production by various organisms, its role as a byproduct of respiration, cellular defense mechanisms, and potential side effects of catalase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C7, C9, C11-C13, C15 are all supported by appropriate citations to established literature. These are background claims that provide context for the study rather than novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C27",
+      "C31"
+    ],
+    "result": "Background claims about C. elegans sensory neurons, their functions, and the effects of peroxide exposure on nematode lifespan. These include descriptions of sensory neuron functions, the number of sensory neurons, and the reduction in lifespan caused by tert-butyl hydroperoxide exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18, C21-C23, C25, C27, C31 are supported by appropriate citations to established literature. These provide necessary background about the C. elegans nervous system and establish the experimental context. The claims about peroxide effects (C22) are supported by both citation and experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C42",
+      "C43",
+      "C52",
+      "C56",
+      "C59",
+      "C61",
+      "C66",
+      "C67",
+      "C71",
+      "C76"
+    ],
+    "result": "Background claims about DAF-7/TGF\u03b2 signaling pathway components and their known functions in C. elegans, including roles in feeding, development, metabolism, lifespan, dauer formation, fat storage, and germline regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C42-C43, C52, C56, C59, C61, C66-C67, C71, C76 are all supported by appropriate citations to established literature. These provide necessary background about the DAF-7 signaling pathway and establish the context for investigating its role in peroxide resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C98",
+      "C100",
+      "C102",
+      "C103",
+      "C110",
+      "C113",
+      "C123",
+      "C125",
+      "C126",
+      "C128",
+      "C131"
+    ],
+    "result": "Background claims about feeding regulation, E. coli hydrogen peroxide scavenging systems, C. elegans catalase genes, and comparative biology of catalase-mediated protection across species. These include information about neurotransmitter biosynthesis, ASI neuron regulation, bacterial catalases, and examples of catalase-mediated protection in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C98, C100, C102-C103, C110, C113, C123, C125-C126, C128, C131 are all supported by appropriate citations to established literature. These provide necessary background and comparative context for the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C20"
+    ],
+    "result": "Summary claims about the main findings: that C. elegans neurons signal via TGF\u03b2-insulin/IGF1 relay to repress hydrogen peroxide defenses in the presence of E. coli, and that ASI sensory neurons initiate a multistep hormonal relay involving DAF-7/TGF\u03b2 and insulin/IGF1 signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C20 are high-level summary statements that integrate multiple experimental findings from the manuscript. These are supported by the collective evidence from genetic, molecular, and cellular experiments described in the other claims. They represent appropriate synthesis of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Germline-ablated mes-1 mutants showed a 57% increase in peroxide resistance compared to fertile siblings, consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by experimental data in Figure 4D and is consistent with cited prior work (Steinbaugh et al., 2015). This establishes that germline ablation affects peroxide resistance, providing context for the independence experiments with daf-1.",
+    "result_type": "MINOR"
+  }
+]

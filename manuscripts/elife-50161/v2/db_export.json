@@ -1,0 +1,1722 @@
+{
+  "submission": {
+    "id": "0569edfe-63df-4d08-a204-bceca873c12b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:11:59.822701Z",
+    "updated_at": "2025-12-02T14:11:59.822701Z"
+  },
+  "content": [
+    {
+      "id": "4038b54c-e295-486e-b292-d758e3773384",
+      "submission_id": "0569edfe-63df-4d08-a204-bceca873c12b",
+      "content_type": "manuscript",
+      "content_text": "# Metabolic modulation regulates cardiac wall morphogenesis in zebrafish\n\n## Authors\n\n- Ryuichi Fukuda<sup>1</sup> ([ORCID: 0000-0002-0281-5161](https://orcid.org/0000-0002-0281-5161)) \u2020\n- Alla Aharonov<sup>2</sup>\n- Yu Ting Ong<sup>3</sup> ([ORCID: 0000-0003-3407-2515](https://orcid.org/0000-0003-3407-2515))\n- Oliver A Stone<sup>1</sup>\n- Mohamed El-Brolosy<sup>1</sup>\n- Hans-Martin Maischein<sup>1</sup>\n- Michael Potente<sup>3</sup>\n- Eldad Tzahor<sup>2</sup> ([ORCID: 0000-0002-5212-9426](https://orcid.org/0000-0002-5212-9426))\n- Didier YR Stainier<sup>1</sup> ([ORCID: 0000-0002-0382-0026](https://orcid.org/0000-0002-0382-0026)) \u2020\n\n### Affiliations\n\n1. Department of Developmental Genetics Max Planck Institute for Heart and Lung Research Ludwigstrasse Germany\n2. Department of Molecular Cell Biology Weizmann Institute of Science Rehovot Israel\n3. Angiogenesis & Metabolism Laboratory Max Planck Institute for Heart and Lung Research Ludwigstrasse Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring cardiac development, cardiomyocytes form complex inner wall structures called trabeculae. Despite significant investigation into this process, the potential role of metabolism has not been addressed. Using single cell resolution imaging in zebrafish, we find that cardiomyocytes seeding the trabecular layer actively change their shape while compact layer cardiomyocytes remain static. We show that Erbb2 signaling, which is required for trabeculation, activates glycolysis to support changes in cardiomyocyte shape and behavior. Pharmacological inhibition of glycolysis impairs cardiac trabeculation, and cardiomyocyte-specific loss- and gain-of-function manipulations of glycolysis decrease and increase trabeculation, respectively. In addition, loss of the glycolytic enzyme pyruvate kinase M2 impairs trabeculation. Experiments with rat neonatal cardiomyocytes in culture further support these observations. Our findings reveal new roles for glycolysis in regulating cardiomyocyte behavior during cardiac wall morphogenesis.\n\n## Introduction\n\nDuring development, the heart undergoes a series of morphogenetic changes to form a functional cardiac wall structure (Moorman and Christoffels, 2003; Staudt and Stainier, 2012). The outer wall of the developing ventricle consists of compact layer cardiomyocytes (CMs), while the inner wall consists of complex muscular ridges, termed trabeculae, which facilitate efficient cardiac contraction and oxygenation of the cardiac wall prior to the formation of coronary vessels (Sedmera et al., 2000; Staudt and Stainier, 2012). Disruption of ventricular wall morphogenesis is associated with congenital cardiac malformations, the most common type of birth defects (Fahed et al., 2013), yet the cellular and molecular mechanisms regulating this complex process remain unclear.\n\nNeuregulin (NRG)/Erb-b2 receptor tyrosine kinase (ERBB) 2/4 signaling has been shown to be essential for cardiac trabeculation. Nrg1, Erbb2 and Erbb4 knockout mice (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995) and nrg2a (Rasouli and Stainier, 2017) and erbb2 (Liu et al., 2010) mutant fish fail to form trabeculae. ERBBs are members of the epidermal growth factor (EGF) receptor tyrosine kinase family. NRGs are expressed by the endocardium (Corfas et al., 1995; Meyer and Birchmeier, 1995; Grego-Bessa et al., 2007; Rasouli and Stainier, 2017) and bind to ERBBs on CMs, triggering homo- or heterodimerization of ERBB family members and leading to activation of downstream pathways (Sanchez-Soria and Camenisch, 2010). However, the targets of ERBB2 signaling that regulate CM behavior during trabeculation have not been identified.\n\nCardiac metabolism has been extensively studied in adult animals due to its central role in supplying energy for cardiac contraction (Doenst et al., 2013;\u00a0Kolwicz et al., 2013). Adult CMs rely mostly on fatty acids as an energy substrate, and they are oxidized in mitochondria to generate ATP (Ellen Kreipke et al., 2016). Under conditions of hypertrophic or ischemic stress, CMs revert to glycolytic metabolism (Doenst et al., 2013), which is characteristic of embryonic cardiomyocytes and uses glucose as a fuel. Besides its role in energy generation, little is known about the role of metabolism during cardiac development.\n\nHere, using high-resolution single cell imaging in zebrafish, we first show that developing CMs undergo extensive shape changes during the formation of the trabecular layer. By modulating glucose metabolism pharmacologically, we show that glycolysis regulates these processes. Using CM-specific loss- and gain-of-function models as well as mutant animals compromised in their glycolytic activity, we identify a role for glycolysis in cardiac wall morphogenesis. This study provides new insights into the role of cardiac metabolism in cardiac development.\n\n## Results\n\n### Cardiomyocytes that enter the trabecular layer exhibit distinct behaviors\n\nDuring cardiac trabeculation in zebrafish and mouse, CMs delaminate from the compact layer to seed the trabecular layer (Liu et al., 2010; Zhang et al., 2013; Staudt et al., 2014; Jim\u00e9nez-Amilburu et al., 2016; Del Monte-Nieto et al., 2018). Although CM behavior during trabeculation has been observed in zebrafish (Staudt et al., 2014; Cherian et al., 2016), the 3D morphology of single cardiomyocytes during the trabeculation process needs to be further explored. To this end, we performed 3D time-course imaging using chimeric hearts generated by cell transplantation. To label CM membranes and nuclei with EGFP and DsRed2 respectively, we used Tg(myl7:EGFP-HRAS); Tg(myl7:nDsRed2) cells as donors (Figure 1a and Figure 1\u2014figure supplement 1a). We found that delaminating CMs exhibit morphological changes as well as rearrangements of contact sites (Figure 1b\u2013c\u201d and Figure 1\u2014figure supplement 1b\u2013d\u201d; Figure 1\u2014videos 1 and 2), while CMs remaining in the compact layer do not exhibit such changes (Figure 1d\u2013e\u201d). To examine cell-cell junctions during delamination, we analyzed N-cadherin (Cdh2), a major adherens junction component, at single cell resolution, and to this end used Tg(myl7:EGFP-HRAS); Tg(myl7:cdh2-tdTomato) cells as donors (Figure 1\u2014figure supplement 1e). We observed that N-cadherin localizes to protruding membranes in delaminating CMs (Figure 1\u2014figure supplement 1f\u2013g\u201d) and to the lateral membranes of compact layer CMs (Figure 1\u2014figure supplement 1h\u2013i\u201d), in agreement with a previous report (Cherian et al., 2016). Next, we analyzed sarcomere structure during delamination using Tg(myl7:LIFEACT-GFP); Tg(myl7:nDsRed2) cells as donors. We found that CMs display partial sarcomere disassembly in their protrusions when entering the trabecular layer (Figure 1f\u2013g\u201d). These data indicate that delaminating CMs exhibit distinct behaviors including dynamic cell shape changes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50161/elife-50161-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of the transplantation experiment. (b\u2013e) 3D time-course images of chimeric hearts; magnified view (b\u2019, c\u2019, d\u2019, e\u2019) of area in white boxes and Y-Z plane images (b\u201d, c\u201d, d\u201d, e\u201d) along white dashed lines (b\u2019, c\u2019, d\u2019, e\u2019). CMs initially in the compact layer (b\u2019, b\u201d) enter the trabecular layer (c\u2019, c\u201d) exhibiting morphological changes and membrane protrusions (c\u2019; arrowheads; n\u00a0=\u00a05 CMs); CMs remaining in the compact layer (d\u2019, d\u201d, e\u2019, e\u201d) do not exhibit obvious morphological changes (n\u00a0=\u00a05 CMs). The same CMs are shown at 126 and 175 hpf as indicated in the images. (f, g) 3D time-course images of chimeric heart; magnified view (f\u2019, f\u201d, g\u2019, g\u201d) of area in white boxes. CMs entering the trabecular layer exhibit partial disassembly of their sarcomeres (g\u2019; arrowhead). Scale bars, 20 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50161/elife-50161-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Schematic of the transplantation experiment. (b) Circularity analysis of CMs in the compact and trabecular layers (n\u00a0=\u00a07\u20139 CMs from 3 to 5 ventricles). (c\u2013c\u201d) 3D images of chimeric hearts; Y-Z plane images (d\u2013d\u201d) along white dashed line (c\u201d). A host-derived CM entering the trabecular layer exhibits membrane protrusions (c, d, c\u2019, d\u2019; arrows). (e) Schematic of the transplantation experiment. (f\u2013f\u201d, h\u2013h\u201d) 3D images of chimeric hearts; Y-Z plane images (g\u2013g\u201d, i\u2013i\u201d). A CM entering the trabecular layer exhibits N-cadherin localization in protruding membranes (g, g\u2019; arrows), while a CM remaining in the compact layer exhibits lateral localization of N-cadherin (i, i\u2019; arrowheads). L, cardiac lumen. Error bars, s.e.m.; **p<0.001 by two-tailed unpaired t-test. Scale bars, 20 \u03bcm.\n\n### ERBB2 signaling activates glycolysis in cardiomyocytes\n\nTo gain additional insight into the molecular mechanisms that regulate trabeculation, we focused on ERBB2 signaling which is essential for this process in both mouse (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995) and zebrafish (Liu et al., 2010; Peshkovsky et al., 2011; Rasouli and Stainier, 2017). In order to identify targets of ERBB2 signaling, we analyzed protein expression in a CM-specific transgenic mouse model inducibly expressing a constitutively active form of ERBB2 (CAERBB2) (D\u2019Uva et al., 2015). We found that upon CAERBB2 overexpression (OE), several glycolytic enzymes were upregulated, while mitochondrial proteins and oxidative phosphorylation (OXPHOS)-related enzymes were downregulated (Figure 2\u2014source data 1). We also tested the effects of Erbb2 OE, which like CAErbb2 OE, activates downstream signaling (Pedersen et al., 2009), on the expression of glycolytic enzyme genes in rat neonatal CMs, and found that many of them were upregulated (Figure 2a). Notably, we found that Erbb2 OE in rat neonatal CMs greatly upregulated the levels of pyruvate kinase M2 (PKM2), a key glycolytic enzyme, (Figure 2b and c), and increased glycolytic activity as evidenced by measuring extracellular acidification rate (ECAR) (Figure 2d). NRG1 stimulation also activated glycolysis in rat neonatal CMs (Figure 2\u2014figure supplement 1a). These findings are also supported by a study analyzing changes in mRNA levels in caErbb2 OE mouse hearts (Honkoop et al., 2019). Moreover, we treated zebrafish embryos with an Erbb2 inhibitor (Figure 2e), which has been shown to severely affect trabeculation (Figure 2\u2014figure supplement 1b) (Liu et al., 2010; Peshkovsky et al., 2011), and found that the cardiac expression of glycolytic enzyme genes was downregulated (Figure 2b). Altogether, these data indicate that ERBB2 signaling activates glycolysis in CMs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50161/elife-50161-fig2-v2.jpg)\n\n**Figure 2.:** (a) qPCR analysis of mRNA levels of glycolytic enzyme genes in control and Erbb2 overexpressing (OE) rat neonatal CMs (n\u00a0=\u00a03). Error bars, s.e.m. (b) Staining for PKM2, CTNI and DNA (DAPI) in control and Erbb2 OE rat neonatal CMs; arrowheads point to PKM2+ CMs. (c) Western blot analysis of PKM2 levels in control and Erbb2 OE rat neonatal CMs. (d) Extracellular acidification rate (ECAR) analysis in control and Erbb2 OE rat neonatal CMs; glycolytic capacity shown on the right (n\u00a0=\u00a07). Error bars, s.d. (e) qPCR analysis of mRNA levels of glycolytic enzyme genes in DMSO and Erbb2 inhibitor treated zebrafish hearts (n\u00a0=\u00a03). Error bars, s.e.m.; *p<0.05 and **p<0.001 by two-tailed unpaired t-test. NS, not significant. Scale bar, 20 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50161/elife-50161-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) ECAR analysis in control and NRG1 treated rat neonatal CMs; glycolytic capacity shown on the right (n\u00a0=\u00a07). (b) Confocal images (mid-sagittal sections) of 77 hpf zebrafish hearts treated with DMSO or Erbb2 inhibitor; magnified view of area in white boxes shown below; arrowheads point to CMs in the trabecular layer. Error bars, s.d.; *p<0.05 by two-tailed unpaired t-test. Scale bars, 20 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50161/elife-50161-fig2-figsupp2-v2.jpg)\n\n### Glycolysis regulates cardiomyocyte delamination during development\n\nIn order to analyze the role of glycolysis during trabeculation, we first focused on pyruvate metabolism. The pyruvate dehydrogenase complex (PDC) catalyzes the conversion of pyruvate to acetyl-coenzyme A (acetyl-CoA), which enters the tricarboxylic acid cycle (Zhang et al., 2014). Pyruvate dehydrogenase kinases (PDKs) inhibit PDC activity and enhance glycolysis in CMs (Zhao et al., 2008) and cancer cells (Koukourakis et al., 2005; Lu et al., 2008; Leclerc et al., 2017; Peng et al., 2018), thereby regulating the switch between glycolysis and OXPHOS (Zhang et al., 2014). Our analyses show that ERBB2 signaling positively regulates Pdk3 gene as well as protein expression (Figure 2a and b and Figure 2\u2014source data 1). Thus, we hypothesized that PDK3 was one of the key enzymes regulating glycolysis in delaminating CMs in response to Erbb2 signaling. Consistent with this model, we found that the PDK inhibitor dichloroacetate (DCA) led to a significant reduction in the number of CMs in the trabecular layer (Figure 3a). Of note, this phenotype is similar to the one caused by Erbb2 inhibition (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50161/elife-50161-fig3-v2.jpg)\n\n**Figure 3.:** (a) Confocal images (mid-sagittal sections) of 77 hpf hearts treated with DMSO, dichloroacetate (DCA) or Erbb2 inhibitor; magnified view of area in white boxes shown below; arrowheads point to CMs in the trabecular layer; percentage of CMs in the trabecular layer shown on the right (n\u00a0=\u00a05\u20137 ventricles). (b) Confocal images (mid-sagittal sections) of 77 hpf Tg(myl7:BFP-CAAX) alone or in combination with Tg(myl7:pdha1aSTA-P2A-tdTomato) or Tg(myl7:pdk3b-P2A-tdTomato) hearts; magnified view of area in white boxes shown below; arrowheads point to CMs in the trabecular layer; percentage of CMs in the trabecular layer shown on the right (n\u00a0=\u00a05\u20137 ventricles). (c\u2013e\u201d) Staining for CTNI, N-cadherin and DNA (DAPI) in control (c), Pdk3 (d) and Erbb2 (e) OE rat neonatal CMs; magnified view of area in yellow (c\u2019, d\u2019, e\u2019) and white (c\u201d, d\u201d, e\u201d) boxes; percentage of CMs exhibiting membrane protrusions shown on the right (n\u00a0=\u00a03 individual experiments; each value corresponds to an average of 30 CMs). Pdk3 and Erbb2 OE causes rat neonatal CMs to exhibit membrane protrusions (d\u2019, e\u2019; arrows) and cell-cell junction rearrangements (d\u2019, e\u2019; arrowheads). Error bars, s.e.m.; *p<0.05 and **p<0.001 by ANOVA followed by Tukey\u2019s HSD test. Scale bars, 20 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50161/elife-50161-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Confocal images (mid-sagittal sections) of 131 hpf Tg(myl7:EGFP-HRAS) alone or in combination with Tg(myl7:pdha1aSTA-P2A-tdTomato) and of 131 hpf Tg(myl7:EGFP-HRAS); pkma2-/-; pkmb-/- hearts; magnified view of area in white boxes shown below; arrowheads point to trabecular CMs; percentage of trabecular area shown on the right (n\u00a0=\u00a05 ventricles). (b) Confocal images (mid-sagittal sections) of 77 hpf Tg(myl7:mVenus-gmnn); Tg(myl7:BFP-CAAX) alone or in combination with Tg(myl7:pdha1aSTA-P2A-tdTomato) or Tg(myl7:pdk3b-P2A-tdTomato) hearts; arrowheads point to myl7:mVenus-Gmnn+ CMs; percentage of myl7:mVenus-Gmnn + CMs shown on the right (n\u00a0=\u00a05 ventricles). Error bars, s.e.m.; *p<0.05 and **p<0.001 by two-tailed unpaired t-test (a) or ANOVA followed by Tukey\u2019s HSD test (b). NS, not significant. Scale bars, 20 \u03bcm.\n\nWe next focused on pyruvate dehydrogenase E1 alpha 1 subunit a (pdha1a), which encodes a catalytic subunit of the PDC. Analysis of CM-specific loss of Pdha1 in mice has revealed the importance of PDC activity for OXPHOS (Sun et al., 2016). We generated a Tg(myl7:pdha1aSTA-P2A-tdTomato) line to overexpress an activated form of Pdha1a in CMs. This activated form of Pdha1a (Pdha1aSTA) contains mutations in its phosphorylation sites and thus is not inhibited by PDK. As a result, glycolysis is reduced and OXPHOS enhanced, as previously shown in cancer cells (Hitosugi et al., 2011; Fan et al., 2014). Notably, larvae expressing this activated form of Pdha1a exhibited a significant decrease in the number of CMs in the trabecular layer (Figure 3b and Figure 3\u2014figure supplement 1a). We also generated a Tg(myl7:pdk3b-P2A-tdTomato) line to overexpress pdk3b in CMs and thereby promotes glycolysis (Lu et al., 2008), and found that these transgenic larvae exhibited a significant increase in the number of CMs in the trabecular layer (Figure 3b). Next, we tested whether the modulation of glycolysis affected CM proliferation and found that Tg(myl7:pdha1aSTA-P2A-tdTomato) or Tg(myl7:pdk3b-P2A-tdTomato) larvae did not exhibit a significant change compared to WT in the percentage of mVenus-gmnn+ CMs (Figure 3\u2014figure supplement 1b). Furthermore, we examined whether the modulation of glycolysis affected CM morphology in rat neonatal CMs in culture and found that Pdk3 overexpression led to the induction of membrane protrusions (Figure 3d and d\u2019), as well as cell-cell junction rearrangements (Figure 3d\u2013d\u201d). Similar effects were also observed following Erbb2 overexpression (Figure 3e\u2013e\u201d). Together, these data suggest that CM morphological changes regulated by glycolysis are important for delamination.\n\nIn order to further assess the role of glycolysis in trabeculation, we focused on zebrafish pkm2 to analyze a glycolytic enzyme mutant model. Loss of PKM2 has been shown to impair glycolysis in endothelial cells (Stone et al., 2018), and PKM2 expression has been associated with glycolysis and cell growth in cancer cells (Christofk et al., 2008). Moreover, in rat neonatal CMs, Erbb2 OE upregulated Pkm2 (Figure 2b and c). Mammalian Pkm encodes two splice variants (M1 and M2 isoforms); PKM2 plays an important role in glycolysis, while PKM1 promotes OXPHOS (Christofk et al., 2008; Lunt et al., 2015; Zheng et al., 2016). Zebrafish pkma2, a splice variant of pkma, and pkmb are the orthologues of mammalian Pkm2 (Stone et al., 2018). During early development, pkma is expressed in the heart, head, spinal cord and blood vessels, while pkmb is highly expressed in the somites (Figure 4\u2014figure supplement 1a). At later stages, pkmb becomes clearly expressed in the heart (Figure 4\u2014figure supplement 1b; Gunawan et al., 2019). We examined pkma2; pkmb double mutants in which Pkma1, which drives pyruvate metabolism via OXPHOS, remains intact, and found that loss of pkma2 and pkmb impaired trabeculation (Figure 4\u2014figure supplement 1c). We did not find evidence for increased CM apoptosis in pkma2; pkmb double mutants compared to WT (Figure 4\u2014figure supplement 1d). In order to examine the CM-specific role of pkma2 and pkmb in trabeculation, we performed cell transplantation experiments whereby pkma2; pkmb double heterozygous and double mutant cells were transplanted into WT embryos (Figure 4a). We found a significantly lower percentage of double mutant versus double heterozygous CMs in the trabecular layer of mosaic hearts (Figure 4b\u2013c), indicating the importance of these genes in trabeculation. We also counted the number of trabecular CMs in these chimeric hearts and observed no significant deviation from WT (Figure 4\u2014figure supplement 1e). Altogether, these results indicate that glycolysis plays important and CM-autonomous roles during trabeculation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50161/elife-50161-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic of the transplantation experiment. (b, b\u2019) 3D and mid-sagittal section images of chimeric hearts using pkma2+/-; pkmb+/-; Tg(myl7:EGFP-HRAS) (b) and pkma2-/-; pkmb-/-; Tg(myl7:EGFP-HRAS) (b\u2019) cells as donors; magnified view of area in white boxes shown below. (c) Percentage of donor-derived trabecular CMs (n\u00a0=\u00a010 ventricles). Error bars, s.e.m.; *p<0.05 by two-tailed unpaired t-test. Scale bars, 20 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50161/elife-50161-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Analysis of pkma and pkmb mRNA expression by in situ hybridization; magnified view shown in the top right corner; arrows point to the heart. (b) Expression levels of pkma and pkmb in 52 hpf and seven dpf hearts as detected by microarray analysis. (c) Confocal images (mid-sagittal sections) of 77 hpf Tg(myl7:EGFP-HRAS); pkma2+/-; pkmb+/- and Tg(myl7:EGFP-HRAS); pkma2-/-; pkmb-/- hearts; magnified view of area in white boxes shown below; arrowheads point to CMs in the trabecular layer; percentage of CMs in the trabecular layer shown on the right (n\u00a0=\u00a05\u20137 ventricles). (d) TUNEL assay in WT and chimeric hearts using Tg(myl7:nDsRed2); pkma2-/-; pkmb-/- cells as donors. As a positive control for the TUNEL assay, WT embryos were treated with DNase. (e) Percentage of trabecular CMs in WT and chimeric hearts using pkma2+/-; pkmb+/- or pkma2-/-; pkmb-/- cells as donors (n\u00a0=\u00a05 ventricles). Error bars, s.e.m.; *p<0.05 by two-tailed unpaired t-test (c) or ANOVA followed by Tukey\u2019s HSD test (e). Scale bars, 200 \u03bcm in a; 20 \u03bcm in c and d.\n\n## Discussion\n\nDuring trabeculation, CMs exhibit membrane protrusions (Staudt et al., 2014) and rearrange their cell-cell junctions (Cherian et al., 2016; Miao et al., 2019). Our 3D single CM imaging clearly reveals that CMs that enter the trabecular layer change their shape, similar to migrating cells, and lose cell-cell adhesion, indicating that they undergo phenotypic changes. Epithelial cells exhibit cellular plasticity as they change shape, and lose cell-cell adhesion and apicobasal polarity - a phenotypic transformation called epithelial to mesenchymal transition (EMT) (Nieto, 2013; Ye and Weinberg, 2015; Varga and Greten, 2017). Recent studies suggest that endothelial cells can also undergo phenotypic changes towards mesenchymal-like cells (Markwald et al., 1977; Zeisberg et al., 2007; Pearson, 2015; Dejana et al., 2017; Kovacic et al., 2019). Before the onset of trabeculation, compact layer CMs exhibit apicobasal polarity, and then some of them depolarize and subsequently delaminate to seed the trabecular layer (Jim\u00e9nez-Amilburu et al., 2016). Notably, ERBB2 signaling, which is essential for trabeculation (Lee et al., 1995; Liu et al., 2010), induces EMT in breast cancer cells (Carpenter et al., 2015; Ingthorsson et al., 2016). Altogether, these data indicate that during trabeculation CMs undergo an EMT-like process triggered by ERBB2 signaling.\n\nCardiac metabolism is essential for energy production to sustain continuous cardiac contractions (Doenst et al., 2013). However, the role of metabolism during cardiac development remains unclear. Our study reveals that glycolysis regulates CM behavior during cardiac wall morphogenesis. Glycolysis enables rapid production of ATP to meet the high-energy demands of cell proliferation and migration in developing tissues, cancer cells and endothelial cells (Lunt and Vander Heiden, 2011; Liberti and Locasale, 2016; Potente and Carmeliet, 2017). Moreover, glycolytic intermediates are utilized to produce biomass including proteins and nucleic acids, further supporting these processes (DeBerardinis et al., 2008; Potente and Carmeliet, 2017). In addition, excessive glycolysis is associated with EMT in cancer cells (Peppicelli et al., 2014; Huang and Zong, 2017; Morandi et al., 2017). These findings indicate that glycolysis could regulate CM behavior in several different ways, and it will be interesting to dissect these processes further.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>pkma2s717</td>\n      <td>Stone et al., 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>pkmbs718</td>\n      <td>Stone et al., 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>pdk3b</td>\n      <td></td>\n      <td>NM_001080688</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>pdha1a</td>\n      <td></td>\n      <td>NM_213393</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Rattus norvegicus)</td>\n      <td>Pdk3</td>\n      <td></td>\n      <td>NM_001106581</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>ERBB2</td>\n      <td></td>\n      <td>NM_004448</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Cardiac Troponin I (Goat polyclonal)</td>\n      <td>Abcam</td>\n      <td>AB_880622 Cat# ab56357</td>\n      <td>IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-PKM2 (Rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>AB_1904096 Cat# D78A4</td>\n      <td>IF(1:100) WB(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium dichloroacetate</td>\n      <td>Sigma Aldrich</td>\n      <td>347795</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Zen 2012 (Blue edition)</td>\n      <td>Carl Zeiss Microscopy</td>\n      <td>Version 1.1.2.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris x64</td>\n      <td>Bitplane</td>\n      <td>Version 9.3.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Sigma</td>\n      <td>D954</td>\n      <td>(1 \u00b5g/mL)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish\n\nAll zebrafish husbandry was performed under standard conditions in accordance with institutional (MPG) and national ethical and animal welfare guidelines. The following transgenic lines and mutants were used: Tg(myl7:EGFP-Has.HRAS)s883 (D'Amico et al., 2007) abbreviated Tg(myl7:EGFP-HRAS), Tg(myl7:LIFEACT-GFP)s974 (Reischauer et al., 2014), Tg(\u22125.1myl7:DsRed2-NLS)f2Tg (Mably et al., 2003) abbreviated Tg(myl7:nDsRed2), Tg(kdrl:Has.HRAS-mCherry)s896 (Chi et al., 2008) abbreviated Tg(kdrl:HRAS-mCherry), Tg(myl7:cdh2-tdTomato)bns78 (Fukuda et al., 2017), Tg(myl7:BFP-CAAX)bns193 (Guerra et al., 2018), Tg(myl7:mVenus-Gemnn)ncv43Tg (Jim\u00e9nez-Amilburu et al., 2016), pkma2s717 (Stone et al., 2018) and pkmbs718 (Stone et al., 2018). To generate Tg(myl7:pdk3b-P2A-tdTomato)bns365 and Tg(myl7:pdha1aSTA-P2A-tdTomato)bns366, pdk3b (NM_001080688) and pdha1a (NM_213393) were isolated by RT-PCR and cloned under the control of the myl7 promoter in a vector containing Tol2 elements and two I-SceI restriction enzyme sites. The following primers were used to amplify the cDNA: pdk3b (forward 5\u2019- AAGCAGACAGTGAACAAGCTTCCACCATGAAACTGTTTATCTGCCTACTG-3\u2019 and reverse 5\u2019-TAGCTCCGCTTCCGTCGACTCTGTTGACTTTGTATGTGGAC-3\u2019); pdha1a (forward 5\u2019-AAGCAGACAGTGAACAAGCTTCCACCATGAGAAAGATGCTAACCATAATT-3\u2019 and reverse 5\u2019-TAGCTCCGCTTCCGTCGACGCTGATGGACTTGAGTTTG-3\u2019).\n\nTo generate the plasmid encoding an activated form of pdha1a (pdha1aSTA), the equivalent residues for human PDHA1 Ser293 and Tyr301 were replaced by alanine using the following primers: pdha1aSTA (forward 5\u2019- CTATCGTTATCATGGACACGCTATGAGCGACCCAGGAGTCAGCGCCCGCACACGTGAGGAGA-3\u2019 and reverse 5\u2019- TTCCCTCACGTGTGCGGGCGCTGACTCCTGGGTCGCTCATAGCGTGTCCATGATAACGATAG-3\u2019). Plasmids were then injected into one-cell stage embryos with I-SceI (NEB) or Tol2 mRNA.\n\n### Quantification of CMs in the trabecular layer\n\nQuantification of trabecular CMs in 77 and 81 hpf heats was performed as previously described (Jim\u00e9nez-Amilburu et al., 2016) using the ZEN software (ZEISS). Starting from the mid-sagittal plane, we quantified trabecular versus compact layer CMs in the ventricular outer curvature, 12 planes up and 12 planes down at an increment of 1 \u03bcm per plane. To quantify donor-derived trabecular CMs in chimeric hearts generated by cell transplantation, we counted the number of donor-derived trabecular and compact layer CMs. Then, the percentage of donor-derived trabecular CMs was calculated by dividing the number of donor-derived trabecular CMs by the total number of donor-derived CMs. Quantification of trabecular CMs in 131 hpf hearts was performed using the ZEN software (ZEISS). Starting from the mid-sagittal plane, we measured the whole myocardial area as well as the trabecular area, 10 \u03bcm up and 10 \u03bcm down. Three different sagittal planes per heart were measured. The percentage of the trabecular area for each sagittal plane was calculated by dividing the trabecular area by the myocardial area, and the average value was used for the graph.\n\n### In situ hybridization\n\nIn situ hybridization was performed as previously described (Thisse and Thisse, 2008). To synthesize pkma (NM_199333) and pkmb (NM_001003488) RNA probes, the following primers were used to amplify the corresponding DNA fragments: pkma (forward 5\u2019- TTGGATCCACCATGTCTCAAACTAAAGCTC-3\u2019 and reverse 5\u2019- TTTGAATTCTTACGGCACTGGGACGACAC-3\u2019); pkmb (forward 5\u2019- TTGGATCCACCATGTCTCAGACAAAGACTA-3\u2019 and reverse 5\u2019- TTTGAATTCTCAAGGCACCACAACGATG\u2019). The DNA fragments were cloned into the pCS2 vector. DIG-labeled RNA probes were synthesized using a DIG RNA labeling kit (Sigma-Aldrich) and MegaScript T7 Transcription Kit (Thermo Fisher Scientific).\n\n### Pharmacological treatments\n\nZebrafish embryos were treated with DMSO (control), 30 mM DCA (Sigma-Aldrich) or 5 \u03bcM Erbb2 inhibitor (AG1478; Sigma-Aldrich) from 50 hpf to 77 hpf and then analyzed.\n\n### TUNEL assay\n\nTo examine apoptosis, an in situ cell death detection kit (Roche) was used.\n\n### Immunostaining\n\nRat neonatal CMs were fixed in 4% paraformaldehyde. Anti-cardiac troponin I (CTNI) 1:500 (ab56357, Abcam) and anti-PKM2 1:100 (D78A4, Cell Signaling) were used. After washing with PBS, samples were stained with Alexa-568, Alexa-488 or Alexa-647 secondary antibodies 1:500 (Life Technologies), followed by 4\u2032,6-Diamidine-2\u2032-phenylindole dihydrochloride (DAPI) 1:2000 (Merck) staining to visualize DNA.\n\n### Cell culture\n\nRat neonatal (P2-P4) CMs were isolated and cultured as previously described (Fukuda et al., 2017). Cells were plated onto 0.1% gelatin-coated (Sigma) plates and cultured in DMEM/F12 (Gibco) supplemented with 5% horse serum, L-glutamine, Na-pyruvate, penicillin and streptomycin at 37\u00b0C and 5% CO2. Adenovirus vectors for transfection into CMs were generated using the AdEasy system (Agilent Technologies). To generate adenovirus vectors encoding PDK3 (NM_001106581) or ERBB2 (NM_004448), the following primers were used to amplify Pdk3 from rat neonatal CM or ERBB2 from Addgene clone # 39321: Pdk3 (forward 5\u2019-TAGAGATCTGGTACCGTCGACCACCATGCGGCTCTTCTACCG-3\u2019 and reverse 5\u2019-GGATATCTTATCTAGAAGCTTCTAGAAAGTTTTATTACTCTTGATCTTGTCC-3\u2019); ERBB2 (forward 5\u2019-TAGAGATCTGGTACCGTCGACGCGGCCGCACCACCATGTATCCATATGATGTTCCAGATTATGCTATGGAGCTGGCGGCCTTG-3\u2019 and reverse 5\u2019-GGATATCTTATCTAGAAGCTTTCACACTGGCACGTCCAG).\n\n### Imaging\n\nZebrafish embryos and larvae were anesthetized with 0.2% tricaine and mounted in 1% low-melting agarose. A Zeiss spinning disk confocal microscope system (CSU-X1, Yokogawa) and ORCA-flash4.0 sCMOS camera (Hamamatsu) was used to acquire images.\u00a03D\u00a0images were processed using Imaris (Bitplane). Circularity was measured using ImageJ (NIH).\n\n### Western blotting\n\nProtein expression levels were analyzed by western blotting as previously described (Fukuda et al., 2017). In brief, proteins were extracted with lysis buffer (150 mM Tris-HCl pH 7.5, 150 mM NaCl, 1% Triton X-100, 0.2% SDS, 1 mM EDTA, 5 mM NaF, 0.1 mM orthovanadate, 1 mM phenylmethylsulfonyl fluoride and 1 \u03bcg/ml aprotinin). Proteins were separated by SDS-PAGE. The following primary antibodies were used: anti-PKM2 1:1000 (D78A4, Cell Signaling) and anti-alpha-Tubulin 1:1000 (T6199, Sigma).\n\n### qPCR\n\nRat neonatal CMs were transfected with adenovirus vectors encoding genes of interest. 24 hr after transfection, total RNA was extracted. Zebrafish embryos and larvae were treated with DMSO or Erbb2 inhibitor from 55 to 106 hpf, and then the hearts were isolated to extract total RNA. A miRNeasy Mini kit (Qiagen) was used for total RNA extraction and cDNA was synthesized using a SuperScript Second Strand kit (Life Technologies). A CFX Connect Real-Time system (Bio-Rad) and DyNAmo colorFlash SYBR green qPCR kit (ThermoFisher Scientific) were used. Primer sequences are shown in\u00a0Figure 2\u2014source data 2 and Ct values in Figure 2\u2014source data 3.\n\n### Metabolic assays\n\nThe extracellular acidification rate (ECAR) was measured using a Seahorse XFe96 analyzer (Seahorse Bioscience) following manufacturer\u2019s protocol. Rat neonatal CMs were seeded at 30,000 cells/well on to 0.1% gelatin-coated XFe96 microplates (Agilent Technologies) in DMEM/F12 (Gibco) containing 10% fetal bovine serum (FBS), L-glutamine, Na-pyruvate, penicillin and streptomycin at 37\u00b0C and 5% CO2. After 24 hr of culture, the medium was replaced with serum-free medium. Then, cells were transfected with adenovirus vectors encoding genes of interest or a mock adenovirus vector, or treated with NRG1 (100 ng/ml; Abcam). 24 hr after transfection or NRG1 treatment, cells were maintained in non-buffered assay medium (Agilent Technologies) in a non-CO2 incubator 1 hr prior to the assay. A glycolysis stress test kit (Seahorse Bioscience) was used to monitor ECAR where baseline measurements were made followed by sequential injection of glucose (10 mM), oligomycin (2 \u03bcM), and 2-DG (100 mM).\n",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "7aa01779-f241-4865-8b6e-d2b1c38bcf2a",
+      "submission_id": "0569edfe-63df-4d08-a204-bceca873c12b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, California Institute of Technology United States\n\nReviewers:\n- Shawn Burgess, National Human Genome Research Institute United States\n\n## Review text\n\nDOI: [10.7554/eLife.50161.sa1](https://doi.org/10.7554/eLife.50161.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is an elegant study that asks multiple questions about the roles of metabolism in cardiac wall formation and the initiation of trabeculation. Cell transplantations between different genetic/transgenic backgrounds allows detailed analysis of the behavior of cells at the initiation of trabeculation. Overexpression of constitutively active ERRB2 (OE) resulted in upregulation of glycolytic pathway and activity in mouse transgenics, rat neonatal cardiomyocyte cultures, and downregulation of oxidative phosphorylation pathways; the converse was seen with inhibition of Errb2. Multiple approaches, including cardiomyocyte-specific expression of transgenics in zebrafish and pkma2; pkmb double mutants, indicate the importance of glycolysis for initiation of trabeculation, downstream of Errb2.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Metabolic modulation regulates cardiac wall morphogenesis and regeneration in zebrafish\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Marianne Bronner as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Shawn Burgess (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAlthough all of the reviewers are enthusiastic about the manuscript, they concur that it would be important to drop the regeneration component of the manuscript, which feels a bit added on and is not entirely convincing. Other changes are recommended but non-essential. The full reviews are included below for your information.\n\nReviewer #1:\n\nFukuda and colleagues have submitted a manuscript describing the role of metabolic shifts in cardiac development and regeneration. The majority of the work focuses on a particular developmental stage where the inner walls of the heart begin forming from the compact layer via delaminating cardiomyocytes (trabeculation). ErbB2 signaling has been shown to be important for this process and modulation of erbb2 activity levels is the starting point for this manuscript. Across three model systems, increases in ErbB2 activity increases genes related to glycolysis and decreases in ErbB2 signaling have matching decreases in genes involved in glycolysis. The authors targeted specific enzymes modulating pyruvate metabolism, a summary of the results are 1) inhibiting pyruvate dehydrogenase kinase decreases CMs, 2) increasing PDK activity increases CMs, 3) increasing pyruvate dehydrogenase activity decreases CMs, 4) decreasing pyruvate kinase decreases CMs. Shifting attention to cardiac regeneration in adult zebrafish, similar roles for metabolic shifts are seen, inhibition of PDK (with DCA) or phosphoglucose isomerase (2DG) reduces regeneration as does loss of PK activity while loss of ppargc1a (involved in mitochondrial biosynthesis) stimulates regeneration. In general, these are well-controlled experiments that add significantly to our understanding of the relationship between metabolic modulation and embryonic morphogenesis.\n\nThere are some problems with conclusions and/or conflicting data that should be addressed.\n\n1) The authors have focused primarily on enzymes involved in the last steps of glycolysis: the pyruvate dehydrogenase complex (PDC), PDK, and pyruvate kinase (PK). It is true that these enzymes are listed in the glycolysis pathway, but except for PK which does release one ATP molecule, the other enzymes are primarily involved in shunting pyruvate either towards lactic acid (and the pentose phosphate pathway) or into the TCA cycle. This shift point isn't really modulating glycolysis but the choice between aerobic and anaerobic respiration and it may be that pyruvate concentration and/or utilization is the key step they are looking at and not glycolysis per se. I am arguing this point because otherwise the loss of PK activity (pkma2/pkmb) resulting in less trabeculation and regeneration appears to conflict with the other observations. Increasing PDK activity pushes pyruvate towards lactate (shunting away from mitochondria) resulting in an increase in trabeculation, blocking PDK activity has the opposite effect, less trabeculation more TCA cycle. The dominant active pyruvate dehydrogenase experiments are also consistent with these results, more PDK activity = less trabeculation. The PK knockouts should also reduce the availability of pyruvate for the mitochondria, yet it results in less trabeculation and less regeneration. Perhaps lactate is a key signaling molecule? This has been shown in neurons for example.\n\n2) I think the authors need to change the general use of glycolysis throughout the manuscript to specify whether they are talking about anaerobic or aerobic glycolysis. Can the redox state be determined during trabeculation?\n\nReviewer #2:\n\nThere are a few questions about the trabeculation results, but overall this part of the study is convincing and an important contribution to the heart development field. In contrast, there are significant concerns about the heart regeneration aspects of the paper.\n\n1) The interpretation that cardiac regeneration is altered is not convincing. The assays for regeneration were only taken to 5 days post cryo injury (dpci), which is not sufficient time to assess whether regeneration is normal or abnormal. The hearts in any of the experimental cohorts could be slightly delayed and then fully recovered by 30 dpci. There is an additional concern that the recovering fish are heat shocked every day for the first five days up to analysis. The standard in the field is 30- or 60-days post injury, with intermittent time points. I suggest removing the regeneration aspect of this paper. It is just too premature, unsupported conclusions in the title and Abstract could be incorrect.\n\n2) In Figure 4, cell transplantation is used to generate chimeric hearts is a very useful experiment. I imagine the numbers are in hand, but it would be useful to see them analyzed in a few different ways. Are the total number of trabecular cardiomyocytes decreased in the hearts that received mutant donor cells? Or is it just a shift between the mutant vs. host cells that can contribute to the trabeculae? Figure 4C indicates that the% of cardiomyocytes that are trabecular was decreased in hearts that received homozygous mutant cells. However, it does not tell us whether the cardiomyocytes that are trabecular are from the transplanted or host cells. The legend says 'percentage of donor CMs' However, Figure 4B' appears to show some labeled (transplant) cells that are interior (trabecular), outside the white box. It would be useful to know the number of labeled (transplant) vs. unlabeled (host) cells that are trabecular, to understand whether the effect is cell autonomous or non-autonomous.\n\n3) In Supplementary Figure 5, it appears that mCherry is also expressed in the epicardium after TAM and HS treatment. If this is the case, interpretation of results will need modification.\n\nReviewer #3:\n\nIn this manuscript, Fukuda et al. describe a role for glucose metabolism in not only normal development of the trabeculated myocardium, but also in the successful regeneration of the adult heart. Much is known about metabolic processes in the adult heart; here, the authors present a previously understudied role of glycolysis during development. First, by chimeric analysis to produce a higher-resolution look by live imaging, the authors show that cardiomyocytes elicit changes in cell shape to properly develop a trabeculated myocardium. Furthermore, the authors show Nrg1/Erbb2 signaling is required for trabeculation and activates glycolysis, which regulates development of the trabecular myocardium. Finally, the authors extend their study to adulthood and show that glycolysis is essential for successful dedifferentiation and proliferation of cardiomyocytes in cryoinjured adult hearts by upregulation of glycolytic enzymes at the wound border after injury. Overall, the authors contribute a new understanding of the role of glycolysis in proper heart development and repair.\n\n1) The authors describe cell shape changes and membrane protrusions of cardiomyocytes to enter the trabecular layer. While the images are that of live embryos, this argument would be strengthened by time-lapse imaging to track the individual cardiomyocytes changing shape and position over time.\n\n2) Methods used to determine glycolytic activity by assaying extracellular acidification rate should be explained in more detail.\n\n3) The authors use transplanted double heterozygous and double mutant cells to show double mutant cells cannot incorporate into trabeculae. While these are very careful experiments, the health of these cells after transplantation is a concern. Have the authors scored transplant survival? Or performed a TUNEL assay to ensure the mutant cells are not dying after transplantation? Is delamination the only cellular event (cell motility, shape change, membrane protrusions, etc) that is perturbed?\n\n4) Ppargc1a regulates genes involved in OXPHOS and are absent from regenerating hearts, but are they present in uninjured hearts by in situ?\n",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7d6bb788-73ac-4f3f-a594-39d88a13dd09",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C1",
+      "claim": "Cardiomyocytes seeding the trabecular layer actively change their shape during cardiac development in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single cell resolution imaging in zebrafish, we find that cardiomyocytes seeding the trabecular layer actively change their shape while compact layer cardiomyocytes remain static.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental imaging data presented in the manuscript, specifically shown in Figure 1 with time-course 3D imaging of chimeric hearts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "02c7cc00-80d6-485e-8c81-7b0af3ad3383",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C2",
+      "claim": "Compact layer cardiomyocytes remain static during trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single cell resolution imaging in zebrafish, we find that cardiomyocytes seeding the trabecular layer actively change their shape while compact layer cardiomyocytes remain static.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental imaging data showing that compact layer CMs do not exhibit morphological changes, as shown in Figure 1d-e\".",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "8c49327b-0482-4282-87ce-308544346e84",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C3",
+      "claim": "Erbb2 signaling is required for trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Erbb2 signaling, which is required for trabeculation, activates glycolysis to support changes in cardiomyocyte shape and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work and experimental data showing that Erbb2 inhibition impairs trabeculation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "ecdade4e-ff42-49c5-aa00-a4635d1d6bed",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C4",
+      "claim": "Erbb2 signaling activates glycolysis to support changes in cardiomyocyte shape and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Erbb2 signaling, which is required for trabeculation, activates glycolysis to support changes in cardiomyocyte shape and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing that Erbb2 overexpression upregulates glycolytic enzymes and increases glycolytic activity (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "a1426a5c-7d67-43e5-858f-444d97ec15ef",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C5",
+      "claim": "Pharmacological inhibition of glycolysis impairs cardiac trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of glycolysis impairs cardiac trabeculation, and cardiomyocyte-specific loss- and gain-of-function manipulations of glycolysis decrease and increase trabeculation, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing that DCA treatment reduces the number of CMs in the trabecular layer (Figure 3a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "7b32802b-5781-4e7d-b0a7-c8f15985cbba",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C6",
+      "claim": "Cardiomyocyte-specific loss-of-function manipulations of glycolysis decrease trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of glycolysis impairs cardiac trabeculation, and cardiomyocyte-specific loss- and gain-of-function manipulations of glycolysis decrease and increase trabeculation, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing that pdha1aSTA overexpression decreases trabecular CMs (Figure 3b).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "86d53e68-3a86-4e9e-868f-31b866243a01",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C7",
+      "claim": "Cardiomyocyte-specific gain-of-function manipulations of glycolysis increase trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of glycolysis impairs cardiac trabeculation, and cardiomyocyte-specific loss- and gain-of-function manipulations of glycolysis decrease and increase trabeculation, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing that pdk3b overexpression increases trabecular CMs (Figure 3b).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "19ce5264-093b-4fa7-b1ce-2579b0fc9b47",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C8",
+      "claim": "Loss of the glycolytic enzyme pyruvate kinase M2 impairs trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, loss of the glycolytic enzyme pyruvate kinase M2 impairs trabeculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing that pkma2; pkmb double mutants exhibit impaired trabeculation (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "043cbd1c-e3ce-4a6e-afda-c0ad13a26bde",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C9",
+      "claim": "Delaminating cardiomyocytes exhibit morphological changes during trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that delaminating CMs exhibit morphological changes as well as rearrangements of contact sites (Figure 1b\u2013c\" and Figure 1\u2014figure supplement 1b\u2013d\"; Figure 1\u2014videos 1 and 2), while CMs remaining in the compact layer do not exhibit such changes (Figure 1d\u2013e\").",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 3D time-course imaging data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "eda05cab-9902-4e63-a6bf-32462c4465ea",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C10",
+      "claim": "Delaminating cardiomyocytes exhibit rearrangements of contact sites during trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that delaminating CMs exhibit morphological changes as well as rearrangements of contact sites (Figure 1b\u2013c\" and Figure 1\u2014figure supplement 1b\u2013d\"; Figure 1\u2014videos 1 and 2), while CMs remaining in the compact layer do not exhibit such changes (Figure 1d\u2013e\").",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 3D time-course imaging data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "2efdd39c-f2ee-431d-9ec4-c0a3810c5979",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C11",
+      "claim": "N-cadherin localizes to protruding membranes in delaminating cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that N-cadherin localizes to protruding membranes in delaminating CMs (Figure 1\u2014figure supplement 1f\u2013g\") and to the lateral membranes of compact layer CMs (Figure 1\u2014figure supplement 1h\u2013i\"), in agreement with a previous report (Cherian et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data and is consistent with previous published work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "6b579143-010a-4513-bfa8-f0f657b0c256",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C12",
+      "claim": "N-cadherin localizes to the lateral membranes of compact layer cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that N-cadherin localizes to protruding membranes in delaminating CMs (Figure 1\u2014figure supplement 1f\u2013g\") and to the lateral membranes of compact layer CMs (Figure 1\u2014figure supplement 1h\u2013i\"), in agreement with a previous report (Cherian et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data and is consistent with previous published work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "0e25f06c-56fe-4cfe-a102-fd6a6e787612",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C13",
+      "claim": "Cardiomyocytes display partial sarcomere disassembly in their protrusions when entering the trabecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CMs display partial sarcomere disassembly in their protrusions when entering the trabecular layer (Figure 1f\u2013g\").",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data using LIFEACT-GFP to visualize sarcomere structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "755966b3-7324-4161-a8d9-ff99872ff825",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C14",
+      "claim": "Upon CAERBB2 overexpression, several glycolytic enzymes were upregulated in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that upon CAERBB2 overexpression (OE), several glycolytic enzymes were upregulated, while mitochondrial proteins and oxidative phosphorylation (OXPHOS)-related enzymes were downregulated (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by protein expression analysis in a transgenic mouse model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "1503d51c-0c38-4b79-90ed-9e514b187f23",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C15",
+      "claim": "Upon CAERBB2 overexpression, mitochondrial proteins and oxidative phosphorylation-related enzymes were downregulated in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that upon CAERBB2 overexpression (OE), several glycolytic enzymes were upregulated, while mitochondrial proteins and oxidative phosphorylation (OXPHOS)-related enzymes were downregulated (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by protein expression analysis in a transgenic mouse model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "79e7e539-c439-47de-b883-2a15e0be0f53",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C16",
+      "claim": "Erbb2 overexpression upregulates many glycolytic enzyme genes in rat neonatal cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the effects of Erbb2 OE, which like CAErbb2 OE, activates downstream signaling (Pedersen et al., 2009), on the expression of glycolytic enzyme genes in rat neonatal CMs, and found that many of them were upregulated (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data and is consistent with known signaling effects.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "b557006f-b98b-4f93-ac18-de4d69bb8915",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C17",
+      "claim": "Erbb2 overexpression greatly upregulates the levels of pyruvate kinase M2 in rat neonatal cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that Erbb2 OE in rat neonatal CMs greatly upregulated the levels of pyruvate kinase M2 (PKM2), a key glycolytic enzyme, (Figure 2b and c), and increased glycolytic activity as evidenced by measuring extracellular acidification rate (ECAR) (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining and Western blot data shown in Figure 2b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "21297004-8974-47f4-a529-4e82d46dbb61",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C18",
+      "claim": "Erbb2 overexpression increases glycolytic activity in rat neonatal cardiomyocytes as evidenced by measuring extracellular acidification rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that Erbb2 OE in rat neonatal CMs greatly upregulated the levels of pyruvate kinase M2 (PKM2), a key glycolytic enzyme, (Figure 2b and c), and increased glycolytic activity as evidenced by measuring extracellular acidification rate (ECAR) (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ECAR measurements shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "f6bb4a68-9552-42d2-b716-f8ffe5b7d433",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C19",
+      "claim": "NRG1 stimulation activates glycolysis in rat neonatal cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "NRG1 stimulation also activated glycolysis in rat neonatal CMs (Figure 2\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ECAR measurements shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "a9b8ed26-d25b-4e2e-9ce8-4fb2bc2c1a64",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C20",
+      "claim": "Erbb2 inhibitor treatment severely affects trabeculation in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we treated zebrafish embryos with an Erbb2 inhibitor (Figure 2e), which has been shown to severely affect trabeculation (Figure 2\u2014figure supplement 1b) (Liu et al., 2010; Peshkovsky et al., 2011), and found that the cardiac expression of glycolytic enzyme genes was downregulated (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data and previous publications.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "29a1b25a-b25d-4262-9fa3-be1b84746d19",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C21",
+      "claim": "Erbb2 inhibitor treatment downregulates the cardiac expression of glycolytic enzyme genes in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we treated zebrafish embryos with an Erbb2 inhibitor (Figure 2e), which has been shown to severely affect trabeculation (Figure 2\u2014figure supplement 1b) (Liu et al., 2010; Peshkovsky et al., 2011), and found that the cardiac expression of glycolytic enzyme genes was downregulated (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "a2b02264-6400-46b5-8442-c9c901f72b0b",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C22",
+      "claim": "The pyruvate dehydrogenase complex catalyzes the conversion of pyruvate to acetyl-coenzyme A.",
+      "claim_type": "EXPLICIT",
+      "source": "The pyruvate dehydrogenase complex (PDC) catalyzes the conversion of pyruvate to acetyl-coenzyme A (acetyl-CoA), which enters the tricarboxylic acid cycle (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to established biochemical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "3d494203-37a0-43ef-a2ab-1484df1e4f12",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C23",
+      "claim": "Pyruvate dehydrogenase kinases inhibit PDC activity and enhance glycolysis in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyruvate dehydrogenase kinases (PDKs) inhibit PDC activity and enhance glycolysis in CMs (Zhao et al., 2008) and cancer cells (Koukourakis et al., 2005; Lu et al., 2008; Leclerc et al., 2017; Peng et al., 2018), thereby regulating the switch between glycolysis and OXPHOS (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "f9eacf0f-682c-4324-88d3-aae5b8d8a498",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C24",
+      "claim": "ERBB2 signaling positively regulates Pdk3 gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses show that ERBB2 signaling positively regulates Pdk3 gene as well as protein expression (Figure 2a and b and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR and protein expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "b193ac19-048e-4129-b5ed-f6114b01012c",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C25",
+      "claim": "ERBB2 signaling positively regulates Pdk3 protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses show that ERBB2 signaling positively regulates Pdk3 gene as well as protein expression (Figure 2a and b and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR and protein expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "cf32253e-9894-4e21-9b56-3b1e2cecebdd",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C26",
+      "claim": "The PDK inhibitor dichloroacetate leads to a significant reduction in the number of cardiomyocytes in the trabecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this model, we found that the PDK inhibitor dichloroacetate (DCA) led to a significant reduction in the number of CMs in the trabecular layer (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging and quantification data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "6bcc86ce-2652-426c-a34f-20afb65f7615",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C27",
+      "claim": "The phenotype caused by DCA treatment is similar to the one caused by Erbb2 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, this phenotype is similar to the one caused by Erbb2 inhibition (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative imaging data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "a8567062-1a2c-43b0-92f4-e49e413d7a60",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C28",
+      "claim": "Larvae expressing activated Pdha1a exhibit a significant decrease in the number of cardiomyocytes in the trabecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, larvae expressing this activated form of Pdha1a exhibited a significant decrease in the number of CMs in the trabecular layer (Figure 3b and Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging and quantification data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "a0e0e29f-4e64-49a9-be96-f524ffbdd6c1",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C29",
+      "claim": "Transgenic larvae overexpressing pdk3b exhibit a significant increase in the number of cardiomyocytes in the trabecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "We also generated a Tg(myl7:pdk3b-P2A-tdTomato) line to overexpress pdk3b in CMs and thereby promotes glycolysis (Lu et al., 2008), and found that these transgenic larvae exhibited a significant increase in the number of CMs in the trabecular layer (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging and quantification data shown in Figure 3b, and is consistent with the known function of pdk3b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "8ec8ad33-3096-4269-a98e-a07cb53f8376",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C30",
+      "claim": "Tg(myl7:pdha1aSTA-P2A-tdTomato) or Tg(myl7:pdk3b-P2A-tdTomato) larvae do not exhibit a significant change in the percentage of mVenus-gmnn+ cardiomyocytes compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we tested whether the modulation of glycolysis affected CM proliferation and found that Tg(myl7:pdha1aSTA-P2A-tdTomato) or Tg(myl7:pdk3b-P2A-tdTomato) larvae did not exhibit a significant change compared to WT in the percentage of mVenus-gmnn+ CMs (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification of proliferating CMs shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "8223497a-22f5-4741-bc9c-13e8f0a77328",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C31",
+      "claim": "Pdk3 overexpression leads to the induction of membrane protrusions in rat neonatal cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we examined whether the modulation of glycolysis affected CM morphology in rat neonatal CMs in culture and found that Pdk3 overexpression led to the induction of membrane protrusions (Figure 3d and d'), as well as cell-cell junction rearrangements (Figure 3d\u2013d\").",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "4e87a656-e937-4121-98b9-f64b6e26f88e",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C32",
+      "claim": "Pdk3 overexpression leads to cell-cell junction rearrangements in rat neonatal cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we examined whether the modulation of glycolysis affected CM morphology in rat neonatal CMs in culture and found that Pdk3 overexpression led to the induction of membrane protrusions (Figure 3d and d'), as well as cell-cell junction rearrangements (Figure 3d\u2013d\").",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "663f401a-7921-46a3-9f72-eaf3ee31cf35",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C33",
+      "claim": "Erbb2 overexpression induces membrane protrusions in rat neonatal cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar effects were also observed following Erbb2 overexpression (Figure 3e\u2013e\").",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "759b393a-5a89-41f1-b61c-32cd2bc973f2",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C34",
+      "claim": "Erbb2 overexpression induces cell-cell junction rearrangements in rat neonatal cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar effects were also observed following Erbb2 overexpression (Figure 3e\u2013e\").",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "b3d03eb7-7eba-49b4-97d1-745bd8d3ba05",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C35",
+      "claim": "Loss of PKM2 impairs glycolysis in endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of PKM2 has been shown to impair glycolysis in endothelial cells (Stone et al., 2018), and PKM2 expression has been associated with glycolysis and cell growth in cancer cells (Christofk et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "56f68a9a-2876-43bb-bae1-846c70d91c70",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C36",
+      "claim": "PKM2 expression is associated with glycolysis and cell growth in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of PKM2 has been shown to impair glycolysis in endothelial cells (Stone et al., 2018), and PKM2 expression has been associated with glycolysis and cell growth in cancer cells (Christofk et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "544b45a6-7c44-412c-a0bf-b2865268c770",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C37",
+      "claim": "Zebrafish pkma2 is a splice variant of pkma and is an orthologue of mammalian Pkm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish pkma2, a splice variant of pkma, and pkmb are the orthologues of mammalian Pkm2 (Stone et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "948e2e5d-06ab-4983-92bc-184f27d3625a",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C38",
+      "claim": "Zebrafish pkmb is an orthologue of mammalian Pkm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish pkma2, a splice variant of pkma, and pkmb are the orthologues of mammalian Pkm2 (Stone et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "a47377ac-0275-4451-92c9-0986ec7b0ca1",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C39",
+      "claim": "During early development, pkma is expressed in the heart, head, spinal cord and blood vessels in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "During early development, pkma is expressed in the heart, head, spinal cord and blood vessels, while pkmb is highly expressed in the somites (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data shown in Figure 4\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "043ea221-9c98-4283-9220-17cde7c7add0",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C40",
+      "claim": "During early development, pkmb is highly expressed in the somites in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "During early development, pkma is expressed in the heart, head, spinal cord and blood vessels, while pkmb is highly expressed in the somites (Figure 4\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data shown in Figure 4\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "0e318718-bfc0-44f9-a991-134a3dd2bc2d",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C41",
+      "claim": "At later stages, pkmb becomes clearly expressed in the heart in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "At later stages, pkmb becomes clearly expressed in the heart (Figure 4\u2014figure supplement 1b; Gunawan et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microarray data and a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "cd7ade0b-52e9-48cf-ae11-23e65638d10c",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C42",
+      "claim": "Loss of pkma2 and pkmb impairs trabeculation in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined pkma2; pkmb double mutants in which Pkma1, which drives pyruvate metabolism via OXPHOS, remains intact, and found that loss of pkma2 and pkmb impaired trabeculation (Figure 4\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging and quantification data shown in Figure 4\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "8d161c3c-9d0f-4f38-a736-0b5efc7030bf",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C43",
+      "claim": "There is no evidence for increased cardiomyocyte apoptosis in pkma2; pkmb double mutants compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find evidence for increased CM apoptosis in pkma2; pkmb double mutants compared to WT (Figure 4\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TUNEL assay data shown in Figure 4\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "bfa8fefb-0f29-4faa-9c93-e314f6d11d97",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C44",
+      "claim": "There is a significantly lower percentage of pkma2; pkmb double mutant cardiomyocytes versus double heterozygous cardiomyocytes in the trabecular layer of mosaic hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significantly lower percentage of double mutant versus double heterozygous CMs in the trabecular layer of mosaic hearts (Figure 4b\u2013c), indicating the importance of these genes in trabeculation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell transplantation experiments and quantification shown in Figure 4b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "a4b5988a-ce69-4a2b-8253-a5c331c714a3",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C45",
+      "claim": "Nrg1, Erbb2 and Erbb4 knockout mice fail to form trabeculae.",
+      "claim_type": "EXPLICIT",
+      "source": "Nrg1, Erbb2 and Erbb4 knockout mice (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995) and nrg2a (Rasouli and Stainier, 2017) and erbb2 (Liu et al., 2010) mutant fish fail to form trabeculae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "aed4f00e-2a35-43fa-9715-e048bee8010e",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C46",
+      "claim": "nrg2a mutant zebrafish fail to form trabeculae.",
+      "claim_type": "EXPLICIT",
+      "source": "Nrg1, Erbb2 and Erbb4 knockout mice (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995) and nrg2a (Rasouli and Stainier, 2017) and erbb2 (Liu et al., 2010) mutant fish fail to form trabeculae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "d0b1702b-7365-4771-b5f4-beb511d8aa36",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C47",
+      "claim": "erbb2 mutant zebrafish fail to form trabeculae.",
+      "claim_type": "EXPLICIT",
+      "source": "Nrg1, Erbb2 and Erbb4 knockout mice (Gassmann et al., 1995; Lee et al., 1995; Meyer and Birchmeier, 1995) and nrg2a (Rasouli and Stainier, 2017) and erbb2 (Liu et al., 2010) mutant fish fail to form trabeculae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "75de3698-519d-4f20-9862-b9f2773049aa",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C48",
+      "claim": "NRGs are expressed by the endocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "NRGs are expressed by the endocardium (Corfas et al., 1995; Meyer and Birchmeier, 1995; Grego-Bessa et al., 2007; Rasouli and Stainier, 2017) and bind to ERBBs on CMs, triggering homo- or heterodimerization of ERBB family members and leading to activation of downstream pathways (Sanchez-Soria and Camenisch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "dc942371-08aa-491b-82b4-84a5eaca029a",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C49",
+      "claim": "NRGs bind to ERBBs on cardiomyocytes, triggering homo- or heterodimerization of ERBB family members.",
+      "claim_type": "EXPLICIT",
+      "source": "NRGs are expressed by the endocardium (Corfas et al., 1995; Meyer and Birchmeier, 1995; Grego-Bessa et al., 2007; Rasouli and Stainier, 2017) and bind to ERBBs on CMs, triggering homo- or heterodimerization of ERBB family members and leading to activation of downstream pathways (Sanchez-Soria and Camenisch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "ab484aad-a9c0-4994-9e81-c40910013672",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C50",
+      "claim": "NRG binding to ERBBs leads to activation of downstream pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "NRGs are expressed by the endocardium (Corfas et al., 1995; Meyer and Birchmeier, 1995; Grego-Bessa et al., 2007; Rasouli and Stainier, 2017) and bind to ERBBs on CMs, triggering homo- or heterodimerization of ERBB family members and leading to activation of downstream pathways (Sanchez-Soria and Camenisch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "62a9cd1c-b6ce-492a-9fe6-74329d054cd3",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C51",
+      "claim": "Adult cardiomyocytes rely mostly on fatty acids as an energy substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult CMs rely mostly on fatty acids as an energy substrate, and they are oxidized in mitochondria to generate ATP (Ellen Kreipke et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "be70eed7-1113-4880-a441-0f6b3123e6aa",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C52",
+      "claim": "Fatty acids are oxidized in mitochondria to generate ATP in adult cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult CMs rely mostly on fatty acids as an energy substrate, and they are oxidized in mitochondria to generate ATP (Ellen Kreipke et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "87f063e7-8ccc-4598-827d-44cb976ee59a",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C53",
+      "claim": "Under conditions of hypertrophic or ischemic stress, cardiomyocytes revert to glycolytic metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions of hypertrophic or ischemic stress, CMs revert to glycolytic metabolism (Doenst et al., 2013), which is characteristic of embryonic cardiomyocytes and uses glucose as a fuel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "58d71864-9312-4f09-a009-a9e425befe89",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C54",
+      "claim": "Glycolytic metabolism is characteristic of embryonic cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions of hypertrophic or ischemic stress, CMs revert to glycolytic metabolism (Doenst et al., 2013), which is characteristic of embryonic cardiomyocytes and uses glucose as a fuel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "bdf77faa-253b-4608-bc59-3beefba6f3ab",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C55",
+      "claim": "Glycolytic metabolism uses glucose as a fuel.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions of hypertrophic or ischemic stress, CMs revert to glycolytic metabolism (Doenst et al., 2013), which is characteristic of embryonic cardiomyocytes and uses glucose as a fuel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established biochemical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "2734eae5-f56f-4a62-8217-7f218b34af02",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C56",
+      "claim": "Trabeculae facilitate efficient cardiac contraction prior to the formation of coronary vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer wall of the developing ventricle consists of compact layer cardiomyocytes (CMs), while the inner wall consists of complex muscular ridges, termed trabeculae, which facilitate efficient cardiac contraction and oxygenation of the cardiac wall prior to the formation of coronary vessels (Sedmera et al., 2000; Staudt and Stainier, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "eb2e3efd-bf3d-437f-a96e-5f7da71779b6",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C57",
+      "claim": "Trabeculae facilitate oxygenation of the cardiac wall prior to the formation of coronary vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer wall of the developing ventricle consists of compact layer cardiomyocytes (CMs), while the inner wall consists of complex muscular ridges, termed trabeculae, which facilitate efficient cardiac contraction and oxygenation of the cardiac wall prior to the formation of coronary vessels (Sedmera et al., 2000; Staudt and Stainier, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "3217edf3-f20f-4477-90cf-fc8a23acf711",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C58",
+      "claim": "Disruption of ventricular wall morphogenesis is associated with congenital cardiac malformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of ventricular wall morphogenesis is associated with congenital cardiac malformations, the most common type of birth defects (Fahed et al., 2013), yet the cellular and molecular mechanisms regulating this complex process remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "dc8ba14c-c365-4f12-a2c0-07a422b27a15",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C59",
+      "claim": "Congenital cardiac malformations are the most common type of birth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of ventricular wall morphogenesis is associated with congenital cardiac malformations, the most common type of birth defects (Fahed et al., 2013), yet the cellular and molecular mechanisms regulating this complex process remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "55945969-d095-471a-8bae-e0e8f24b68db",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C60",
+      "claim": "During cardiac trabeculation in zebrafish and mouse, cardiomyocytes delaminate from the compact layer to seed the trabecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "During cardiac trabeculation in zebrafish and mouse, CMs delaminate from the compact layer to seed the trabecular layer (Liu et al., 2010; Zhang et al., 2013; Staudt et al., 2014; Jim\u00e9nez-Amilburu et al., 2016; Del Monte-Nieto et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "d185c6b1-c1b2-4b37-a73d-1dc4f5447177",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C61",
+      "claim": "Cardiomyocyte behavior during trabeculation has been observed in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CM behavior during trabeculation has been observed in zebrafish (Staudt et al., 2014; Cherian et al., 2016), the 3D morphology of single cardiomyocytes during the trabeculation process needs to be further explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "84ec5db7-ff2e-43f6-ad4b-d182606722f1",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C62",
+      "claim": "Mammalian Pkm encodes two splice variants (M1 and M2 isoforms).",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Pkm encodes two splice variants (M1 and M2 isoforms); PKM2 plays an important role in glycolysis, while PKM1 promotes OXPHOS (Christofk et al., 2008; Lunt et al., 2015; Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "8b4770ce-c847-4436-94e7-b1ab2a552fed",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C63",
+      "claim": "PKM2 plays an important role in glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Pkm encodes two splice variants (M1 and M2 isoforms); PKM2 plays an important role in glycolysis, while PKM1 promotes OXPHOS (Christofk et al., 2008; Lunt et al., 2015; Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "6d31b40e-29e8-40b9-8465-cee4ddc3a808",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C64",
+      "claim": "PKM1 promotes oxidative phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian Pkm encodes two splice variants (M1 and M2 isoforms); PKM2 plays an important role in glycolysis, while PKM1 promotes OXPHOS (Christofk et al., 2008; Lunt et al., 2015; Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "401e9292-97c0-4623-8ebe-5f881a5f8f7b",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C65",
+      "claim": "Before the onset of trabeculation, compact layer cardiomyocytes exhibit apicobasal polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Before the onset of trabeculation, compact layer CMs exhibit apicobasal polarity, and then some of them depolarize and subsequently delaminate to seed the trabecular layer (Jim\u00e9nez-Amilburu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "17032da0-9307-4d38-b634-6ad67281fed8",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C66",
+      "claim": "Some compact layer cardiomyocytes depolarize and subsequently delaminate to seed the trabecular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Before the onset of trabeculation, compact layer CMs exhibit apicobasal polarity, and then some of them depolarize and subsequently delaminate to seed the trabecular layer (Jim\u00e9nez-Amilburu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "9f2b379b-8b1b-4b96-88cd-b85c8894bdcb",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C67",
+      "claim": "ERBB2 signaling induces EMT in breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ERBB2 signaling, which is essential for trabeculation (Lee et al., 1995; Liu et al., 2010), induces EMT in breast cancer cells (Carpenter et al., 2015; Ingthorsson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "aa293777-9f82-4da3-9466-f3204bbd47a7",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C68",
+      "claim": "Glycolysis enables rapid production of ATP to meet the high-energy demands of cell proliferation and migration in developing tissues, cancer cells and endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycolysis enables rapid production of ATP to meet the high-energy demands of cell proliferation and migration in developing tissues, cancer cells and endothelial cells (Lunt and Vander Heiden, 2011; Liberti and Locasale, 2016; Potente and Carmeliet, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "4d5cc7c7-df6d-4a3c-95a5-1dded470d118",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C69",
+      "claim": "Glycolytic intermediates are utilized to produce biomass including proteins and nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, glycolytic intermediates are utilized to produce biomass including proteins and nucleic acids, further supporting these processes (DeBerardinis et al., 2008; Potente and Carmeliet, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "c10f8517-d40e-4f0f-9171-ab7daa4955e5",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C70",
+      "claim": "Excessive glycolysis is associated with EMT in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, excessive glycolysis is associated with EMT in cancer cells (Peppicelli et al., 2014; Huang and Zong, 2017; Morandi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "8a511e84-4924-45e3-bd26-391c482cf65c",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C71",
+      "claim": "During trabeculation, cardiomyocytes exhibit membrane protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "During trabeculation, CMs exhibit membrane protrusions (Staudt et al., 2014) and rearrange their cell-cell junctions (Cherian et al., 2016; Miao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "01bb8b74-8199-4220-8446-a95842b18287",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C72",
+      "claim": "During trabeculation, cardiomyocytes rearrange their cell-cell junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "During trabeculation, CMs exhibit membrane protrusions (Staudt et al., 2014) and rearrange their cell-cell junctions (Cherian et al., 2016; Miao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "bf6bcd1f-7819-4f7f-9f0d-bd8b63c67712",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C73",
+      "claim": "Cardiomyocytes that enter the trabecular layer change their shape, similar to migrating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our 3D single CM imaging clearly reveals that CMs that enter the trabecular layer change their shape, similar to migrating cells, and lose cell-cell adhesion, indicating that they undergo phenotypic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by imaging data and inference from the observed morphological changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "fb79dfe5-4a79-4c9d-aad5-e6f41619a6da",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C74",
+      "claim": "Cardiomyocytes that enter the trabecular layer lose cell-cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our 3D single CM imaging clearly reveals that CMs that enter the trabecular layer change their shape, similar to migrating cells, and lose cell-cell adhesion, indicating that they undergo phenotypic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by imaging data showing rearrangements of contact sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "6c6f0960-d05b-4e94-841c-b96fe6720b86",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C75",
+      "claim": "Cardiomyocytes that enter the trabecular layer undergo phenotypic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our 3D single CM imaging clearly reveals that CMs that enter the trabecular layer change their shape, similar to migrating cells, and lose cell-cell adhesion, indicating that they undergo phenotypic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observed morphological changes and loss of cell-cell adhesion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "d9bfdb2f-dd34-40ed-b65b-02ce1a899824",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C76",
+      "claim": "During trabeculation, cardiomyocytes undergo an EMT-like process triggered by ERBB2 signaling.",
+      "claim_type": "IMPLICIT",
+      "source": "Altogether, these data indicate that during trabeculation CMs undergo an EMT-like process triggered by ERBB2 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observed phenotypic changes in CMs and the known role of ERBB2 signaling in inducing EMT in other cell types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "e9fe0305-248b-43ce-9bb7-96b33f118193",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C77",
+      "claim": "Glycolysis regulates cardiomyocyte behavior during cardiac wall morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals that glycolysis regulates CM behavior during cardiac wall morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple experimental manipulations of glycolysis showing effects on trabeculation and CM morphology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "caa307b8-6832-45b3-a7b8-6d7bd44e33ce",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C78",
+      "claim": "Cardiomyocyte morphological changes regulated by glycolysis are important for delamination.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that CM morphological changes regulated by glycolysis are important for delamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that glycolysis modulation affects both CM morphology and trabeculation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "3c70f1fe-d25e-4f5c-ba18-6414cfea6908",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C79",
+      "claim": "pkma2 and pkmb play important and cardiomyocyte-autonomous roles during trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significantly lower percentage of double mutant versus double heterozygous CMs in the trabecular layer of mosaic hearts (Figure 4b\u2013c), indicating the importance of these genes in trabeculation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell transplantation experiments showing cell-autonomous effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "63f4bce0-c66f-4d86-a1af-0281a3b5f979",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C80",
+      "claim": "Glycolysis plays important and cardiomyocyte-autonomous roles during trabeculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results indicate that glycolysis plays important and CM-autonomous roles during trabeculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple lines of evidence including cell transplantation experiments and CM-specific transgenic manipulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "3cc19b78-da46-4bd2-acce-0467c8e56a2b",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C81",
+      "claim": "Activated Pdha1a contains mutations in its phosphorylation sites and is not inhibited by PDK.",
+      "claim_type": "EXPLICIT",
+      "source": "This activated form of Pdha1a (Pdha1aSTA) contains mutations in its phosphorylation sites and thus is not inhibited by PDK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the design of the mutant construct.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "d4e71806-a018-4af8-b6f7-6b385dd76a15",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C82",
+      "claim": "Activated Pdha1a reduces glycolysis and enhances oxidative phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, glycolysis is reduced and OXPHOS enhanced, as previously shown in cancer cells (Hitosugi et al., 2011; Fan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research in cancer cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "4e05a2d4-0f51-437c-939e-a0a42167c710",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C83",
+      "claim": "Erbb2 overexpression activates downstream signaling similar to CAErbb2 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the effects of Erbb2 OE, which like CAErbb2 OE, activates downstream signaling (Pedersen et al., 2009), on the expression of glycolytic enzyme genes in rat neonatal CMs, and found that many of them were upregulated (Figure 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "ba1ab4cb-21d4-4509-a470-adc603cbb78a",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C84",
+      "claim": "PDK3 is one of the key enzymes regulating glycolysis in delaminating cardiomyocytes in response to Erbb2 signaling.",
+      "claim_type": "IMPLICIT",
+      "source": "Thus, we hypothesized that PDK3 was one of the key enzymes regulating glycolysis in delaminating CMs in response to Erbb2 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis based on the observation that ERBB2 signaling upregulates Pdk3 expression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "e5021c2d-583f-4381-802b-b100637e4abc",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C85",
+      "claim": "Circularity of cardiomyocytes in the trabecular layer is significantly lower than in the compact layer.",
+      "claim_type": "EXPLICIT",
+      "source": "(b) Circularity analysis of CMs in the compact and trabecular layers (n = 7\u20139 CMs from 3 to 5 ventricles).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "54e0417c-d141-4f46-90fb-999c443007b6",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "claim_id": "C86",
+      "claim": "There is no significant deviation from wild-type in the number of trabecular cardiomyocytes in chimeric hearts with pkma2; pkmb mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also counted the number of trabecular CMs in these chimeric hearts and observed no significant deviation from WT (Figure 4\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantification data shown in Figure 4\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "32c3819f-6c83-4005-8b32-a11b429e604a",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Using 3D single-cell resolution imaging in zebrafish chimeric hearts, the authors demonstrate that cardiomyocytes entering the trabecular layer undergo dynamic morphological changes including shape changes, membrane protrusions, contact site rearrangements, and partial sarcomere disassembly, while compact layer cardiomyocytes remain static.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9, C10, C13, C73-C75, and C85 are well-supported by 3D time-course imaging data (Figure 1) showing distinct cellular behaviors. The circularity analysis (C85) provides quantitative support. The imaging approach using cell transplantation with membrane and nuclear markers provides clear visualization of single-cell morphology during trabeculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "ed0aae24-dfda-417a-8674-35356db63bd9",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "N-cadherin localizes to protruding membranes in delaminating cardiomyocytes and to lateral membranes in compact layer cardiomyocytes, consistent with previous reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C12 are supported by imaging data (Figure 1\u2014figure supplement 1f-i) and are consistent with cited prior work (Cherian et al., 2016). The localization patterns support the interpretation of cell-cell junction rearrangements during delamination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ERBB2 signaling activates glycolysis in cardiomyocytes by upregulating glycolytic enzyme expression (including PKM2 and PDK3) and increasing glycolytic activity, as demonstrated in mouse transgenic models, rat neonatal cardiomyocytes, and zebrafish embryos treated with ERBB2 inhibitor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C14-C21, C24-C25, and C83 are well-supported by multiple complementary approaches: protein expression analysis in CAERBB2 transgenic mice (C14-C15), qPCR and Western blot in rat neonatal CMs (C16-C18), ECAR measurements (C18-C19), and gene expression analysis in ERBB2 inhibitor-treated zebrafish (C20-C21). The convergence of evidence from multiple model systems strengthens this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "545ff26f-22fa-4fc1-8463-cd631f5d71c9",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pharmacological inhibition of glycolysis using dichloroacetate (DCA), a PDK inhibitor, significantly reduces the number of cardiomyocytes in the trabecular layer, phenocopying ERBB2 inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C26, and C27 are supported by imaging and quantification data (Figure 3a). The similarity between DCA and ERBB2 inhibitor phenotypes provides evidence linking ERBB2 signaling to glycolysis in trabeculation. However, DCA has off-target effects beyond PDK inhibition that are not discussed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "c76d68a7-09aa-4c7c-ac77-c796cf353ff7",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cardiomyocyte-specific expression of activated Pdha1a (which reduces glycolysis and enhances OXPHOS) decreases the number of cardiomyocytes in the trabecular layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C28, C81, and C82 are supported by imaging and quantification data from transgenic zebrafish (Figure 3b). The construct design (C81) is appropriate, and the expected metabolic shift (C82) is supported by citations to cancer cell studies. This genetic loss-of-function approach complements the pharmacological inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "8c5b4150-b8e2-48b1-8449-cde309d859a8",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cardiomyocyte-specific overexpression of pdk3b (which promotes glycolysis) increases the number of cardiomyocytes in the trabecular layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C29 are supported by imaging and quantification data from transgenic zebrafish (Figure 3b). This gain-of-function approach provides complementary evidence to the loss-of-function experiments, demonstrating bidirectional regulation of trabeculation by glycolysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "aad055c9-909e-49b8-ab54-0a3e3d3ef8e0",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Modulation of glycolysis via pdha1aSTA or pdk3b overexpression does not significantly affect cardiomyocyte proliferation as measured by mVenus-gmnn+ cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by quantification data (Figure 3\u2014figure supplement 1b). This control experiment is important for ruling out proliferation as the mechanism by which glycolysis affects trabeculation. However, the sample size and statistical power are not clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "b052f7ba-c0f5-41e8-919a-e827ee5d0135",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pdk3 and Erbb2 overexpression in cultured rat neonatal cardiomyocytes induces membrane protrusions and cell-cell junction rearrangements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are supported by immunostaining data (Figure 3d-e). This in vitro evidence links glycolysis modulation to cardiomyocyte morphological changes. However, the relevance of neonatal rat CM culture to zebrafish trabeculation in vivo requires careful interpretation, and quantification methods are not fully described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "65c2a04e-434d-4e75-807b-813915403d73",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Loss of the glycolytic enzymes pkma2 and pkmb impairs trabeculation in a cardiomyocyte-autonomous manner, as demonstrated by double mutant analysis and cell transplantation experiments, without increasing apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C42-C44, C79, and C86 are well-supported by genetic analysis and cell transplantation experiments (Figure 4). The mosaic heart approach (C44) elegantly demonstrates cell-autonomous effects. The lack of increased apoptosis (C43) rules out cell death as the mechanism. This provides strong genetic evidence for the role of glycolysis in trabeculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "61060c0a-d926-423c-9a9b-593351f5ead6",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Zebrafish pkma2 and pkmb are orthologues of mammalian PKM2, with pkma expressed in heart, head, spinal cord, and blood vessels during early development, while pkmb is highly expressed in somites early and becomes clearly expressed in the heart at later stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by citations (C37-C38) and in situ hybridization data (C39-C40) and microarray data (C41). This characterization provides important context for the genetic studies, though the temporal expression pattern of pkmb in the heart could be more precisely defined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "2685dae9-f447-48f7-8e51-0dcbbd86503e",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that cardiomyocytes undergo an EMT-like process during trabeculation triggered by ERBB2 signaling, based on observed phenotypic changes (shape changes, loss of cell-cell adhesion, loss of apicobasal polarity) and the known role of ERBB2 in inducing EMT in cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is an inference based on morphological observations (C73-C75) and analogies to EMT in other systems (C67, C70). While the phenotypic changes are well-documented, the claim of an 'EMT-like process' lacks direct molecular evidence. Key EMT markers, transcription factors (Snail, Twist, Zeb), and mesenchymal markers are not examined. The comparison to cancer cell EMT (C67, C70) may not be directly applicable to developmental cardiac trabeculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "cf3666eb-1383-4cac-afa8-54feeab3f6d6",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors conclude that glycolysis regulates cardiomyocyte behavior during cardiac wall morphogenesis, with morphological changes regulated by glycolysis being important for delamination, and that glycolysis plays cardiomyocyte-autonomous roles during trabeculation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C78, and C80 represent the main conclusions and are supported by the convergence of multiple lines of evidence: pharmacological inhibition (C5, C26), genetic loss- and gain-of-function (C6-C7, C28-C29), mutant analysis (C8, C42), cell transplantation (C44, C79), and in vitro morphology studies (C31-C34). The evidence collectively supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides background on metabolic pathways, including the role of PDC, PDKs, PKM isoforms, and the metabolic characteristics of adult versus embryonic cardiomyocytes, all supported by citations to established literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23, C35-C36, C51-C55, and C62-C64 are background knowledge claims supported by appropriate citations. These provide necessary context for the experimental work and are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript provides background on cardiac trabeculation, ERBB signaling, and the role of glycolysis in cell proliferation and migration, all supported by citations to established literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50, C56-C61, C68-C69 are background knowledge claims supported by appropriate citations. These establish the biological context and rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    },
+    {
+      "id": "7915a8fb-50ac-4bbb-8a36-ad4fc0cb7317",
+      "content_id": "4038b54c-e295-486e-b292-d758e3773384",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors hypothesize that PDK3 is one of the key enzymes regulating glycolysis in delaminating cardiomyocytes in response to Erbb2 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 is explicitly stated as a hypothesis and is reasonable based on the observation that ERBB2 signaling upregulates Pdk3 expression (C24-C25). The subsequent experiments testing this hypothesis (C26-C29) provide support, though PDK3 is likely one of multiple enzymes involved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:11:59.822701Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7d6bb788-73ac-4f3f-a594-39d88a13dd09",
+      "result_id": "32c3819f-6c83-4005-8b32-a11b429e604a"
+    },
+    {
+      "claim_id": "02c7cc00-80d6-485e-8c81-7b0af3ad3383",
+      "result_id": "32c3819f-6c83-4005-8b32-a11b429e604a"
+    },
+    {
+      "claim_id": "043cbd1c-e3ce-4a6e-afda-c0ad13a26bde",
+      "result_id": "32c3819f-6c83-4005-8b32-a11b429e604a"
+    },
+    {
+      "claim_id": "eda05cab-9902-4e63-a6bf-32462c4465ea",
+      "result_id": "32c3819f-6c83-4005-8b32-a11b429e604a"
+    },
+    {
+      "claim_id": "0e25f06c-56fe-4cfe-a102-fd6a6e787612",
+      "result_id": "32c3819f-6c83-4005-8b32-a11b429e604a"
+    },
+    {
+      "claim_id": "bf6bcd1f-7819-4f7f-9f0d-bd8b63c67712",
+      "result_id": "32c3819f-6c83-4005-8b32-a11b429e604a"
+    },
+    {
+      "claim_id": "fb79dfe5-4a79-4c9d-aad5-e6f41619a6da",
+      "result_id": "32c3819f-6c83-4005-8b32-a11b429e604a"
+    },
+    {
+      "claim_id": "6c6f0960-d05b-4e94-841c-b96fe6720b86",
+      "result_id": "32c3819f-6c83-4005-8b32-a11b429e604a"
+    },
+    {
+      "claim_id": "e5021c2d-583f-4381-802b-b100637e4abc",
+      "result_id": "32c3819f-6c83-4005-8b32-a11b429e604a"
+    },
+    {
+      "claim_id": "2efdd39c-f2ee-431d-9ec4-c0a3810c5979",
+      "result_id": "ed0aae24-dfda-417a-8674-35356db63bd9"
+    },
+    {
+      "claim_id": "6b579143-010a-4513-bfa8-f0f657b0c256",
+      "result_id": "ed0aae24-dfda-417a-8674-35356db63bd9"
+    },
+    {
+      "claim_id": "8c49327b-0482-4282-87ce-308544346e84",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "ecdade4e-ff42-49c5-aa00-a4635d1d6bed",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "755966b3-7324-4161-a8d9-ff99872ff825",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "1503d51c-0c38-4b79-90ed-9e514b187f23",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "79e7e539-c439-47de-b883-2a15e0be0f53",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "b557006f-b98b-4f93-ac18-de4d69bb8915",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "21297004-8974-47f4-a529-4e82d46dbb61",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "f6bb4a68-9552-42d2-b716-f8ffe5b7d433",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "a9b8ed26-d25b-4e2e-9ce8-4fb2bc2c1a64",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "29a1b25a-b25d-4262-9fa3-be1b84746d19",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "f9eacf0f-682c-4324-88d3-aae5b8d8a498",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "b193ac19-048e-4129-b5ed-f6114b01012c",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "4e05a2d4-0f51-437c-939e-a0a42167c710",
+      "result_id": "9e37d794-4ca9-4b16-ba99-1f0364314c2e"
+    },
+    {
+      "claim_id": "a1426a5c-7d67-43e5-858f-444d97ec15ef",
+      "result_id": "545ff26f-22fa-4fc1-8463-cd631f5d71c9"
+    },
+    {
+      "claim_id": "cf32253e-9894-4e21-9b56-3b1e2cecebdd",
+      "result_id": "545ff26f-22fa-4fc1-8463-cd631f5d71c9"
+    },
+    {
+      "claim_id": "6bcc86ce-2652-426c-a34f-20afb65f7615",
+      "result_id": "545ff26f-22fa-4fc1-8463-cd631f5d71c9"
+    },
+    {
+      "claim_id": "7b32802b-5781-4e7d-b0a7-c8f15985cbba",
+      "result_id": "c76d68a7-09aa-4c7c-ac77-c796cf353ff7"
+    },
+    {
+      "claim_id": "a8567062-1a2c-43b0-92f4-e49e413d7a60",
+      "result_id": "c76d68a7-09aa-4c7c-ac77-c796cf353ff7"
+    },
+    {
+      "claim_id": "3cc19b78-da46-4bd2-acce-0467c8e56a2b",
+      "result_id": "c76d68a7-09aa-4c7c-ac77-c796cf353ff7"
+    },
+    {
+      "claim_id": "d4e71806-a018-4af8-b6f7-6b385dd76a15",
+      "result_id": "c76d68a7-09aa-4c7c-ac77-c796cf353ff7"
+    },
+    {
+      "claim_id": "86d53e68-3a86-4e9e-868f-31b866243a01",
+      "result_id": "8c5b4150-b8e2-48b1-8449-cde309d859a8"
+    },
+    {
+      "claim_id": "a0e0e29f-4e64-49a9-be96-f524ffbdd6c1",
+      "result_id": "8c5b4150-b8e2-48b1-8449-cde309d859a8"
+    },
+    {
+      "claim_id": "8ec8ad33-3096-4269-a98e-a07cb53f8376",
+      "result_id": "aad055c9-909e-49b8-ab54-0a3e3d3ef8e0"
+    },
+    {
+      "claim_id": "8223497a-22f5-4741-bc9c-13e8f0a77328",
+      "result_id": "b052f7ba-c0f5-41e8-919a-e827ee5d0135"
+    },
+    {
+      "claim_id": "4e87a656-e937-4121-98b9-f64b6e26f88e",
+      "result_id": "b052f7ba-c0f5-41e8-919a-e827ee5d0135"
+    },
+    {
+      "claim_id": "663f401a-7921-46a3-9f72-eaf3ee31cf35",
+      "result_id": "b052f7ba-c0f5-41e8-919a-e827ee5d0135"
+    },
+    {
+      "claim_id": "759b393a-5a89-41f1-b61c-32cd2bc973f2",
+      "result_id": "b052f7ba-c0f5-41e8-919a-e827ee5d0135"
+    },
+    {
+      "claim_id": "19ce5264-093b-4fa7-b1ce-2579b0fc9b47",
+      "result_id": "65c2a04e-434d-4e75-807b-813915403d73"
+    },
+    {
+      "claim_id": "cd7ade0b-52e9-48cf-ae11-23e65638d10c",
+      "result_id": "65c2a04e-434d-4e75-807b-813915403d73"
+    },
+    {
+      "claim_id": "8d161c3c-9d0f-4f38-a736-0b5efc7030bf",
+      "result_id": "65c2a04e-434d-4e75-807b-813915403d73"
+    },
+    {
+      "claim_id": "bfa8fefb-0f29-4faa-9c93-e314f6d11d97",
+      "result_id": "65c2a04e-434d-4e75-807b-813915403d73"
+    },
+    {
+      "claim_id": "3c70f1fe-d25e-4f5c-ba18-6414cfea6908",
+      "result_id": "65c2a04e-434d-4e75-807b-813915403d73"
+    },
+    {
+      "claim_id": "54e0417c-d141-4f46-90fb-999c443007b6",
+      "result_id": "65c2a04e-434d-4e75-807b-813915403d73"
+    },
+    {
+      "claim_id": "544b45a6-7c44-412c-a0bf-b2865268c770",
+      "result_id": "61060c0a-d926-423c-9a9b-593351f5ead6"
+    },
+    {
+      "claim_id": "948e2e5d-06ab-4983-92bc-184f27d3625a",
+      "result_id": "61060c0a-d926-423c-9a9b-593351f5ead6"
+    },
+    {
+      "claim_id": "a47377ac-0275-4451-92c9-0986ec7b0ca1",
+      "result_id": "61060c0a-d926-423c-9a9b-593351f5ead6"
+    },
+    {
+      "claim_id": "043ea221-9c98-4283-9220-17cde7c7add0",
+      "result_id": "61060c0a-d926-423c-9a9b-593351f5ead6"
+    },
+    {
+      "claim_id": "0e318718-bfc0-44f9-a991-134a3dd2bc2d",
+      "result_id": "61060c0a-d926-423c-9a9b-593351f5ead6"
+    },
+    {
+      "claim_id": "d9bfdb2f-dd34-40ed-b65b-02ce1a899824",
+      "result_id": "2685dae9-f447-48f7-8e51-0dcbbd86503e"
+    },
+    {
+      "claim_id": "401e9292-97c0-4623-8ebe-5f881a5f8f7b",
+      "result_id": "2685dae9-f447-48f7-8e51-0dcbbd86503e"
+    },
+    {
+      "claim_id": "17032da0-9307-4d38-b634-6ad67281fed8",
+      "result_id": "2685dae9-f447-48f7-8e51-0dcbbd86503e"
+    },
+    {
+      "claim_id": "9f2b379b-8b1b-4b96-88cd-b85c8894bdcb",
+      "result_id": "2685dae9-f447-48f7-8e51-0dcbbd86503e"
+    },
+    {
+      "claim_id": "c10f8517-d40e-4f0f-9171-ab7daa4955e5",
+      "result_id": "2685dae9-f447-48f7-8e51-0dcbbd86503e"
+    },
+    {
+      "claim_id": "8a511e84-4924-45e3-bd26-391c482cf65c",
+      "result_id": "2685dae9-f447-48f7-8e51-0dcbbd86503e"
+    },
+    {
+      "claim_id": "01bb8b74-8199-4220-8446-a95842b18287",
+      "result_id": "2685dae9-f447-48f7-8e51-0dcbbd86503e"
+    },
+    {
+      "claim_id": "e9fe0305-248b-43ce-9bb7-96b33f118193",
+      "result_id": "cf3666eb-1383-4cac-afa8-54feeab3f6d6"
+    },
+    {
+      "claim_id": "caa307b8-6832-45b3-a7b8-6d7bd44e33ce",
+      "result_id": "cf3666eb-1383-4cac-afa8-54feeab3f6d6"
+    },
+    {
+      "claim_id": "63f4bce0-c66f-4d86-a1af-0281a3b5f979",
+      "result_id": "cf3666eb-1383-4cac-afa8-54feeab3f6d6"
+    },
+    {
+      "claim_id": "a2b02264-6400-46b5-8442-c9c901f72b0b",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "3d494203-37a0-43ef-a2ab-1484df1e4f12",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "b3d03eb7-7eba-49b4-97d1-745bd8d3ba05",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "56f68a9a-2876-43bb-bae1-846c70d91c70",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "62a9cd1c-b6ce-492a-9fe6-74329d054cd3",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "be70eed7-1113-4880-a441-0f6b3123e6aa",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "87f063e7-8ccc-4598-827d-44cb976ee59a",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "58d71864-9312-4f09-a009-a9e425befe89",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "bdf77faa-253b-4608-bc59-3beefba6f3ab",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "84ec5db7-ff2e-43f6-ad4b-d182606722f1",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "8b4770ce-c847-4436-94e7-b1ab2a552fed",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "6d31b40e-29e8-40b9-8465-cee4ddc3a808",
+      "result_id": "ee3fa65e-db0f-4d2a-b827-3070f0a73e0c"
+    },
+    {
+      "claim_id": "a4b5988a-ce69-4a2b-8253-a5c331c714a3",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "aed4f00e-2a35-43fa-9715-e048bee8010e",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "d0b1702b-7365-4771-b5f4-beb511d8aa36",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "75de3698-519d-4f20-9862-b9f2773049aa",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "dc942371-08aa-491b-82b4-84a5eaca029a",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "ab484aad-a9c0-4994-9e81-c40910013672",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "2734eae5-f56f-4a62-8217-7f218b34af02",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "eb2e3efd-bf3d-437f-a96e-5f7da71779b6",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "3217edf3-f20f-4477-90cf-fc8a23acf711",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "dc8ba14c-c365-4f12-a2c0-07a422b27a15",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "55945969-d095-471a-8bae-e0e8f24b68db",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "d185c6b1-c1b2-4b37-a73d-1dc4f5447177",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "aa293777-9f82-4da3-9466-f3204bbd47a7",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "4d5cc7c7-df6d-4a3c-95a5-1dded470d118",
+      "result_id": "163337cb-6331-46e9-a7d8-83b3f9c55ef9"
+    },
+    {
+      "claim_id": "ba1ab4cb-21d4-4509-a470-adc603cbb78a",
+      "result_id": "7915a8fb-50ac-4bbb-8a36-ad4fc0cb7317"
+    }
+  ],
+  "comparisons": []
+}

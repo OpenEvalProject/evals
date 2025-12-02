@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Mice performing a delay-discounting T-maze task showed decreased preference for the large reward arm as delay length increased from 0 to 40 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C97-C99 describe the behavioral task and the key finding that preference decreased with delay length (Figure 1C). The task design is clearly described and the behavioral result is quantified, providing solid evidence for delay discounting behavior in mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C94",
+      "C95"
+    ],
+    "result": "During delay periods, hippocampal CA1 showed rare sharp-wave ripples, dominant theta activity (7-11 Hz), and neurons were classified as excitatory or inhibitory based on waveform characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 report LFP findings with statistical support (Mann-Whitney U test, p<0.05), while C94-C95 describe methodological details. The physiological characterization is well-supported by data in Figure 2, with appropriate statistical tests confirming the circuit remained engaged during delays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Two distinct populations of CA1 neurons were identified: delay-active cells (38.0% of neurons) that increased firing during long delays, and delay-suppressed cells (48.9%) that decreased firing, with peak firing times distributed across the delay period and population activity segmented into start, delay, and goal periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe the core finding of two neuronal populations with opposing delay responses. The percentages are clearly quantified (Table 1), firing patterns are shown in Figures 3-4, and population vector analysis demonstrates temporal segmentation. The classification criteria and statistical methods are described in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The hippocampus encodes delay length through dual coding schemes: individual neurons showed significant correlations between firing rate and delay length (79.3% of delay-act cells for peak rate, 34.5% for mean rate), and population activity could decode delay length using SVM classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 describe single-cell and population-level delay encoding. The percentages are quantified with permutation tests (p=0.01), correlation analyses are shown in Figure 5, and SVM decoding results are presented in Figure 5\u2014supplement 1. Both coding schemes are well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "About 10% of delay-act cells initially fired at the goal during 0s delay, then shifted to delay-period firing when delays were introduced, and this shift did not reverse when delays were eliminated, suggesting experience-dependent plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 describe temporal shifts in firing patterns with quantified percentages (10%, 4/33 cells). The findings are shown in Figure 5\u2014supplement 2 with clear examples. However, the interpretation of 'experience of waiting and/or learning' (C42) is somewhat speculative as the specific mechanism is not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C66"
+    ],
+    "result": "The majority of delay-act (73.5%) and delay-sup (64.9%) neurons showed side-selectivity, but more than a quarter encoded delay independent of location, suggesting most CA1 neurons represent integrated information reflecting both location and delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide quantified percentages from side-selectivity analysis (Figure 6C, Tables 2-3) using three-way ANOVA. Claim C66 interprets this as integrated coding. The statistical analysis is appropriate and the conclusion is well-supported by the data showing both side-dependent and side-independent populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Delay-act and delay-sup cells showed opposing responses to reward manipulation: delay-act cells decreased firing with reward loss while delay-sup cells increased firing, with significantly different log ratios between populations (p=0.007 for loss, p=0.03 for gain).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe differential reward responses with statistical support (Mann-Whitney U test, one-sample t-tests). Figure 7B-D shows the opposing patterns clearly. The interpretation that these populations independently reflect positive and negative outcomes (C50) is reasonable given the opposing responses, though the functional significance requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "A subset of CA1 neurons showed similar responses to both delay and reward manipulations, suggesting value-coding properties, and delay-act neuron firing represents the animal's subjective value of chosen options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51, C73-C74 identify value-coding neurons from scatter plot analysis (Figure 7E), but C72 notes no global trend. Claim C52 about subjective value is inferred from forced-choice experiments (Figure 7\u2014supplement 2) with limited data. While the value-coding interpretation is plausible, the evidence is less definitive than for other results, and the proportion of true value-coding neurons is not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "CA1-NR1cKO mice showed impaired delay discounting behavior (maintained preference for large reward despite long delays) and disrupted CA1 delay-related activity, including altered proportions of delay-act/delay-sup cells, non-specific temporal firing patterns, and loss of population activity segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 describe behavioral and physiological phenotypes in cKO mice with statistical support (two-way ANOVA for behavior, Fisher's exact test for cell proportions, Mann-Whitney U test for firing ratios). Figure 8 shows clear differences between cKO and controls. The conclusion that NMDAR-dependent mechanisms are required (C61) is well-supported by converging behavioral and physiological evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Peak firing rate distribution was uniform only in the both-side condition (p=0.46, Kolmogorov-Smirnov test), while other conditions showed activity biased toward early delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 reports a specific statistical finding with appropriate test (Kolmogorov-Smirnov) and clear p-values distinguishing the both-side condition from others. The result is shown in Figure 4\u2014supplement 2. This is a well-supported observation about task-dependent temporal coding patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The NR1 knockout may extend beyond CA1 to other telencephalic regions, and the cKO phenotype (lower discount rate) is opposite to hippocampal lesion studies (higher discount rate), suggesting differences between NMDAR knockout and lesion effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 acknowledge important caveats about the genetic manipulation specificity and comparison with lesion literature. C91 is a valid methodological concern about the CaMK2-Cre line. C92 accurately cites prior lesion work, and C93 offers a reasonable interpretation of the discrepancy. These are important qualifications for interpreting the cKO results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The lowered delay discounting in NMDAR cKO mice may represent compulsive behavior, and hippocampal NMDARs may be associated with obsessive-compulsive disorder based on pharmacological and genetic evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C79 propose an alternative interpretation linking the cKO phenotype to compulsive behavior and OCD. While C76-C77 cite relevant prior work on D-cycloserine and NMDAR polymorphisms in OCD, the connection to the current findings (C75, C79) is speculative. The behavioral phenotype could reflect multiple mechanisms, and the OCD link requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establish that the hippocampus is implicated in delay discounting, episodic memory, and spatial navigation, and that hippocampal neurons can encode diverse spatiotemporal features including trajectories, time, and reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C22 summarize established knowledge from prior literature with appropriate citations. These background claims provide context for the current study and are well-supported by the cited references. They establish the rationale for investigating hippocampal encoding during delay discounting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "CA1 neuronal activity during delay is segregated into delay-active and delay-suppressed populations that show opposing responses to motivational changes, and NMDAR-dependent plasticity mechanisms are required for both delay-related firing patterns and delay-discounting behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 summarize the main conclusions of the study. These are well-supported by the converging evidence from wild-type recordings (showing two populations with opposing reward responses) and cKO experiments (showing disrupted delay coding and behavior). The conclusions appropriately synthesize the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The finding that CA1 neurons encode both space and time jointly is consistent with prior work, and the observation of dissociable reward-responsive subsets is consistent with previous studies showing both reward-activated and reward-omission-activated CA1 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 place the current findings in the context of prior literature with appropriate citations. The consistency with previous work on joint space-time coding and diverse reward responses strengthens the interpretation of the current results. These claims appropriately integrate the findings with existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "NMDAR-dependent synaptic plasticity contributes to hippocampal learning and memory, and prior cKO studies have implicated hippocampal NMDARs in spatial learning, anxiety, time perception, and decision making; the current findings that NMDAR deficiency disrupts delay coding suggest NMDARs are required to maintain or develop time-coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C90 summarize relevant prior work on hippocampal NMDARs with appropriate citations and integrate it with the current cKO findings. The interpretation that NMDARs are required for time-coding (C90) is reasonable given the disrupted delay-related activity in cKO mice, though the specific mechanisms remain to be determined.",
+    "result_type": "MINOR"
+  }
+]

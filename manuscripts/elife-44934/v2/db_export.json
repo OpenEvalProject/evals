@@ -1,0 +1,1305 @@
+{
+  "submission": {
+    "id": "e86a7e6b-8900-423f-92db-39b064c72c25",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:08:37.959827Z",
+    "updated_at": "2025-12-02T12:08:37.959827Z"
+  },
+  "content": [
+    {
+      "id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "submission_id": "e86a7e6b-8900-423f-92db-39b064c72c25",
+      "content_type": "manuscript",
+      "content_text": "# Calcium-driven regulation of voltage-sensing domains in BK channels\n\n## Authors\n\n- Yenisleidy Lorenzo-Ceballos<sup>1</sup> ([ORCID: 0000-0003-4309-9314](https://orcid.org/0000-0003-4309-9314))\n- Willy Carrasquel-Ursulaez<sup>2</sup>\n- Karen Castillo<sup>2</sup>\n- Osvaldo Alvarez<sup>2</sup>\n- Ramon Latorre<sup>2</sup> ([ORCID: 0000-0002-6044-5795](https://orcid.org/0000-0002-6044-5795)) \u2020\n\n### Affiliations\n\n1. Doctorado en Ciencias Menci\u00f3n Neurociencia, Facultad de Ciencias Universidad de Valpara\u00edso Valpara\u00edso Chile\n2. Centro Interdisciplinario de Neurociencia de Valpara\u00edso, Facultad de Ciencias Universidad de Valpara\u00edso Valpara\u00edso Chile\n3. Departamento de Biolog\u00eda, Facultad de Ciencias Universidad de Chile Santiago Chile\n\n\u2020 Corresponding author\n\n## Abstract\n\nAllosteric interactions between the voltage-sensing domain (VSD), the Ca2+-binding sites, and the pore domain govern the mammalian Ca2+- and voltage-activated K+ (BK) channel opening. However, the functional relevance of the crosstalk between the Ca2+- and voltage-sensing mechanisms on BK channel gating is still debated. We examined the energetic interaction between Ca2+ binding and VSD activation by investigating the effects of internal Ca2+ on BK channel gating currents. Our results indicate that Ca2+ sensor occupancy has a strong impact on VSD activation through a coordinated interaction mechanism in which Ca2+ binding to a single \u03b1-subunit affects all VSDs equally. Moreover, the two distinct high-affinity Ca2+-binding sites contained in the C-terminus domains, RCK1 and RCK2, contribute equally to decrease the free energy necessary to activate the VSD. We conclude that voltage-dependent gating and pore opening in BK channels is modulated to a great extent by the interaction between Ca2+ sensors and VSDs.\n\n## Introduction\n\nDiverse cellular events involve calcium ions as a primary mediator in the signal transduction pathways triggering, among other signaling processes, Ca2+-activated conductances. Since the BK channels are regulated by cytosolic Ca2+ and depolarizing voltages (Marty, 1981; Pallotta et al., 1981; Latorre et al., 1982), they are integrators of physiological stimuli involving intracellular Ca2+ elevation and membrane excitability. BK channels are modular proteins in which each module accomplishes a specific function. Thus, different modules harbor voltage and Ca2+ sensors that communicate allosterically with the channel gate (Cox et al., 1997; Horrigan and Aldrich, 1999; Horrigan and Aldrich, 2002; Horrigan et al., 1999; Rothberg and Magleby, 1999; Rothberg and Magleby, 2000; Cui and Aldrich, 2000). Functional BK channels are formed by homotetramers of \u03b1-subunits (Shen et al., 1994), each comprising a transmembrane voltage-sensing domain (VSD) and an intracellular Ca2+-sensing C-terminal domain (CTD) that can independently modulate the ion conduction gate in the pore domain (PD) (Latorre et al., 2017). The CTDs consist of two non-identical regulators of the conductance of K+ domains (RCK1 and RCK2) arranged in a ring-like tetrameric structure dubbed the gating ring (Wu et al., 2010; Yuan et al., 2010; Yuan et al., 2012; Hite et al., 2017; Tao et al., 2017). Each RCK domain contains distinct ligand-binding sites capable of detecting Ca2+ in the micromolar range (Schreiber and Salkoff, 1997; Bao et al., 2002; Xia et al., 2002).\n\nIn the absence of Ca2+, the activation of the VSD decreases the free energy necessary to fully open the BK channels in an allosteric fashion (Horrigan and Aldrich, 1999; Horrigan et al., 1999). With 0 Ca2+, very positive membrane potentials are required to drive all voltage sensors to their active conformations (Cui et al., 1997; Stefani et al., 1997; Horrigan et al., 1999; Contreras et al., 2012), ultimately leading to near-maximal BK activation. Thus, in cells such as neurons, an appreciable open probability of BK channels at physiologically relevant voltages necessarily requires the activation of the Ca2+ sensors on the gating ring. The allosteric interplays established between the functional and structural modules (VSD-PD, CTD-PD, and CTD-VSD) are key for enabling BK channels to operate over a wide dynamic range of internal Ca2+ and voltage, thereby fine-tuning the channel\u2019s gating machinery. Therefore, understanding the structure-functional bases that underlie the Ca2+ and voltage activation mechanisms interrelationship becomes essential to unveil how the channel behaves under different physiological conditions.\n\nThe voltage dependence of Ca2+-dependent gating ring rearrangements (Miranda et al., 2013; Miranda et al., 2018) and RCK1 site occupancy (Sweet and Cox, 2008; Savalli et al., 2012; Miranda et al., 2018) as well as the perturbation of VSD movements by Ca2+ binding (Savalli et al., 2012) support the idea that the energetic interaction between both specialized sensors may be crucial for BK channel activation. The physical CTD-VSD interface has been suggested to provide the structure capable of mediating the crosstalk between these sensory modules and their synergy in activating the pore domain (Yang et al., 2007; Sun et al., 2013; Tao et al., 2017; Zhang et al., 2017). However, the strength of the interaction between voltage and Ca2+ sensors and their relevance to BK channel activation is still debated (cf. Horrigan and Aldrich, 2002; Carrasquel-Ursulaez et al., 2015). Also, the functional role that each of the high-affinity Ca2+-binding sites plays in the CTD-VSD allosteric interaction is an open question. The RCK1 and RCK2 Ca2+-binding sites have distinct functional properties conferred by their different molecular structures and relative positions within the gating ring (Wu et al., 2010; Yuan et al., 2010; Yuan et al., 2012; Hite et al., 2017; Tao et al., 2017). Thus, the RCK sites differ in their Ca2+ binding affinities (Bao et al., 2002; Xia et al., 2002; Sweet and Cox, 2008), divalent cations selectivity (Oberhauser et al., 1988; Schreiber and Salkoff, 1997; Zeng et al., 2005; Zhou et al., 2012), voltage dependence (Sweet and Cox, 2008; Savalli et al., 2012; Miranda et al., 2018) and in their contribution to allosteric gating mechanisms (Yang et al., 2010; Yang et al., 2015). In particular, only the RCK1 site appears to be involved in communicating the Ca2+-dependent conformational changes towards the membrane-spanning VSD (Savalli et al., 2012; Miranda et al., 2018). Recently, the Aplysia BK structure has revealed that the N-lobe of the RCK1 domain is in a non-covalent contact with the VSD and the S4-S5 linker that connects the voltage sensor to the pore domain. This RCK1-VSD interaction surface is rearranged when comparing the liganded and Ca2+-free structures (Hite et al., 2017; Tao et al., 2017). In fact, it has been hypothesized that any Ca2+-induced rearrangements of the gating ring should ultimately be transmitted to the pore domain via the VSD (Hite et al., 2017; Zhou et al., 2017). Thereby, defining the extent to which Ca2+ binding influences to VSD is central for determining the importance of the crosstalk between sensors in decreasing the free energy necessary to open the BK channel.\n\nHere, we examined the Ca2+-dependence of the VSD activation by estimating the allosteric coupling between the Ca2+ and voltage sensors. By analyzing gating currents under unliganded and Ca2+-saturated conditions, we found a strong energetic influence of Ca2+-binding on voltage sensor equilibrium in a manner that is independent of channel opening. These findings show that a major component in the synergistic Ca2+ and voltage activation of BK channels resides in the strong coupling between Ca2+ binding and the voltage sensor activation. We also found that the Ca2+-dependence of voltage sensor activation is consistent with a CTD-VSD allosteric coupling that occurs through a concerted interaction scheme in which each Ca2+ bound to one subunit affects all voltage sensors in the BK tetramer equally. Notably, we found that the two distinct RCK1 and RCK2 Ca2+ sensors contribute equally to the VSD activation via independent allosteric pathways.\n\n## Results\n\n### Allosteric coupling between Ca2+-binding and voltage sensor activation is strong\n\nWe characterized the effects of Ca2+-binding on voltage sensor activation in BK channels by analyzing the gating currents measured in inside-out patches of Xenopus laevis oocyte membrane. The amount of gating charge displaced ($Q_{C}$) at each Ca2+ concentration was obtained by integrating the initial part of the decay of the ON-gating current (IG-ON), which was fitted to a single exponential (fast ON-gating; see Materials\u00a0and\u00a0methods). As we show below, we determined only the gating charge displaced before the opening of the BK channel. Figure 1A\u2013B show representative IG-ON records in response to 160 mV voltage step in the nominal absence of Ca2+ (\u2018zero\u2019 Ca2+) and in saturating Ca2+ concentration (100 \u00b5M Ca2+). In Figure 1A\u2013B, we also show the initial time courses of the corresponding macroscopic K+ current (IK) activation at the same voltage and internal Ca2+ conditions. The IG-ON relaxation exhibits an almost complete decay before the IK achieves an exponential time course in 0 Ca2+ conditions (Figure 1A). Thus, the time constant of the IK activation (~3.4 ms at 160 mV) following a delay of\u00a0~160 \u00b5s is consistent with the movement of the voltage sensors preceding channel opening. Under saturating internal Ca2+ conditions, the IG-ON time course develops 20 times faster than the exponential kinetic of the IK activation ($\\tau_{I_{G}\u2212ON\u00a0}$\u00a0=\u00a030 \u00b5s and $\u0394t_{I_{K}}$ = 660 \u00b5s at 160 mV) and is also almost complete within the time interval comprised by the IK delay ($\u0394t_{I_{K\u00a0}(100\u00a0\\muM\u00a0)}$\u00a0=\u00a084 \u00b5s) (Figure 1B). Thus, the fast IG-ON relaxation reflects the movement of the gating charge in the channel\u2019s closed conformation, regardless of internal Ca2+ concentration.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013B) Fast component of the ON-gating current (IG-ON) at 0 and 100 \u03bcM internal Ca2+ concentration, respectively. The representative IG-ON records were evoked by applying a 160 mV voltage step of 1 ms duration. The first 100 \u00b5s of the IG-ON were fitted to a single exponential function (red line; $\\tau_{I_{G}\u2212ON\u00a0(0\u00a0Ca^{2+})}$\u00a0= 58 \u00b5s and $\\tau_{I_{G}-ON100\\muM}$ = 30 \u00b5s). The area under the curve described by the monoexponential fit (gray areas) was integrated to obtain the charge displaced between closed states ($Q_{C}$). For comparison, the initial time course of the macroscopic K+ current (IK) activation (solid black line) obtained at 0 and 100 \u03bcM Ca2+ were superimposed on the IG-ON under the same internal Ca2+ conditions. The IK were evoked by a 15 ms pulse to 160 mV. The IK is described by an exponential function with initial delay: $\u0394t_{I_{K}\u00a0(0\u00a0Ca^{2+})}$\u00a0= 0.16 ms and $\\tau_{I_{K}0Ca^{2+}}$ = 3.37 ms at 0 Ca2+; and $\u0394t_{I_{K\u00a0}(100\u00a0\\muM\u00a0)}$ = 0.08 ms and $\\tau_{I_{K}100\\muM}$ = 0.66 ms at 100 \u03bcM Ca2+. After 1 ms, the IK increased to about 20% and 80% of its steady-state amplitude in 0 Ca2+ and 100 \u03bcM Ca2+, respectively. (C) Voltage-dependence of the $Q_{C}$ and of the gating current time constants ($\\tau_{I_{G}-ON}$) at 0 Ca2+ (open circles) and 100 \u03bcM Ca2+ (filled circles). Gating charge-voltage relationships ($Q_{C}(V)/Q_{C,\u00a0MAX}$) were obtained by integrating the fast component for each ON IG trace (from \u221290 mV to 350 mV). Boltzmann fitting to the experimental data (mean\u00a0\u00b1\u00a0SEM) is indicated by solid line at \u2018zero\u2019 Ca2+ ($V_{H}$\u00a0=\u00a0174.5\u00a0\u00b1\u00a02.4 mV, $z_{Q}$\u00a0= 0.60\u00a0\u00b1\u00a00.01, $n$\u00a0= 25) and by a dashed line at 100 \u00b5M Ca2+ ($V_{H}$\u00a0=\u00a031.9\u00a0\u00b1\u00a04.5 mV, $z_{Q}$\u00a0= 0.66\u00a0\u00b1\u00a00.01, $n$\u00a0= 7). Right ordinate shows the time constants data (mean\u00a0\u00b1\u00a0SEM) of the exponential decays of IG-ON ($\\tau_{I_{G}-ON}$) plotted against the voltage. The best fit to a two-state model of the VSD activation where the $z_{J}$ was constrained to the values found for the $Q_{C}V$ relation ($z_{Q}$) is indicated by solid lines at \u2018zero\u2019 Ca2+ ($\\alpha_{0}$\u00a0=\u00a03.73 ms\u22121, $\\beta_{0}$\u00a0= 76.10 ms\u22121 and $\\delta$\u00a0= 0.29) and dashed line at 100 \u00b5M Ca2+ ($\\alpha_{0}$\u00a0=\u00a07.28 ms\u22121, $\\beta_{0}$\u00a0= 6.98 ms\u22121 and $\\delta$\u00a0= 0.36). The corresponding $V_{H}$ at each internal Ca2+ concentration is indicated by a vertical line. (D) Semi-logarithmic plot of the $Q_{C}(V)/Q_{C,\u00a0MAX}$ curves at 0 Ca2+ and saturating Ca2+ concentration (100 \u00b5M). The allosteric parameter $E$\u00a0determines the vertical displacement of the 0 mV intercept (dashed vertical line) of the $Q_{C}(V)/Q_{C,\u00a0MAX}$ curve at 100 \u00b5M Ca2+ relative to the 0 Ca2+ condition.\n\nThe $Q_{C}$ was determined over a wide range of membrane potentials at low and high internal (100 \u03bcM) Ca2+ concentration. Increasing the Ca2+ concentration promoted a large leftward shift ($\\DeltaV_{H}$\u00a0= -142.6 \u00b1 4.5 mV) of the normalized $Q_{C}$ ($Q_{C}(V)/Q_{C,\u00a0MAX}$\u00a0curves) (Figure 1C). In spite of with the large leftward shift of the $Q_{C}$ at high Ca2+ concentrations, we found no appreciable slow component in IG-ON (cf. Horrigan and Aldrich, 2002; see also Figure 2\u2014figure supplement 1A). As expected, a large Ca2+-dependent leftward shift was also observed in the time constants of the exponential decays of IG-ON ($\\tau_{I_{G}-ON}$). The $\\tau_{I_{G}-ON}(V)$ curves were fitted to a two state model ($\\tau(V)=1/(\\alpha(V)+\\beta(V)$) where the forward ($\\alpha$) and backward ($\\beta$) rate constants represent the resting-active (R-A) transitions of the voltage sensors, that determine the equilibrium constant of the VSD activation ($J(V)=\\alpha(V)/\\beta(V)$). The predominant effect of Ca2+-binding on VSD activation appears to cause a decrease in the backward rate constant at zero voltage ($\\beta_{0}$; see Materials\u00a0and\u00a0methods). $\\beta_{0}$\u00a0decreases from 76 ms\u22121 at 0 Ca2+ to 7 ms\u22121 at 100 \u03bcM Ca2+, which results in a shift in the equilibrium of the voltage sensors towards their active conformation. Such a large shift ($\u0394V_{H}$\u00a0= -142.6 \u00b1 4.5 mV) implies that Ca2+ binding to the RCK Ca2+-binding sites alters the VSD equilibrium, which in consequence causes a decrease in the free energy ($\u0394\u0394G_{V}^{Ca}$) that defines the voltage sensor R-A equilibrium ($J$) by ~8 kJ/mol ($\u0394\u0394G_{V}^{Ca}$= -7.98 \u00b1 0.27 kJ/mol). In terms of the allosteric gating scheme (Horrigan and Aldrich, 2002), this result means that the $J$\u00a0equilibrium constant of VSD becomes amplified by an allosteric factor $E$\u00a0equal to 26.4 at Ca2+-saturated conditions (Figure 1D), revealing a strong allosteric coupling between Ca2+-binding sites and voltage sensors.\n\nFamilies of gating currents (IG) were evoked at different intracellular Ca2+ concentrations ([Ca2+]i) ranging from 0.1 to 100 \u00b5M in K+-free solution (Figure 2A). For all experiments, we first measured IG in 'zero' Ca2+ condition and then perfused the internal side with solutions containing different concentrations of Ca2+. The increase in internal Ca2+ promoted a leftward shift of the $Q_{C}$ versus voltage ($Q_{C}(V)$) curves (Figure 2B-C), which indicates that Ca2+-binding facilitates the activation of the voltage sensor, being more prominent as Ca2+-binding site occupancy increases.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative gating current (IG) recordings at different internal Ca2+ concentrations (from 0 to 100 \u03bcM). IG was evoked by the indicated voltage protocol of 1 ms duration. Representative gating current records are from different patches with the exception of 0 and 100 \u03bcM Ca2+. (B) Gating charge-voltage relationships ($Q_{C}(V)$) were obtained by integrating the fast component for each ON IG trace. Normalized gating charge data $(Q_{C}(V)/Q_{C,\u00a0MAX})$ (mean\u00a0\u00b1\u00a0SEM) were fitted using a single Boltzmann function (solid lines). The fit parameters are as follows: \u2018zero\u2019 Ca2+ ($V_{H}$\u00a0=\u00a0174.5\u00a0\u00b1\u00a02.4 mV, $z_{Q}$\u00a0= 0.60\u00a0\u00b1\u00a00.01, $n$\u00a0= 25); 0.1 \u00b5M Ca2+ ($V_{H}$\u00a0=\u00a0162.4\u00a0\u00b1\u00a04.2 mV, $z_{Q}$\u00a0= 0.59\u00a0\u00b1\u00a00.01, $n$\u00a0= 5); 0.5 \u00b5M Ca2+ ($V_{H}$\u00a0=\u00a0151.6\u00a0\u00b1\u00a01.3 mV, $z_{Q}$\u00a0= 0.60\u00a0\u00b1\u00a00.01, $n$\u00a0= 5); 1 \u00b5M Ca2+ ($V_{H}$\u00a0=\u00a0137.1\u00a0\u00b1\u00a05.1 mV, $z_{Q}$\u00a0= 0.61\u00a0\u00b1\u00a00.01, $n$\u00a0= 5); 5 \u00b5M Ca2+ ($V_{H}$\u00a0=\u00a0121.9\u00a0\u00b1\u00a03.8 mV,\u00a0$z_{Q}$\u00a0=\u00a00.63\u00a0\u00b1\u00a00.01, $n$\u00a0= 5); 10 \u00b5M Ca2+ ($V_{H}$\u00a0=\u00a067.3\u00a0\u00b1\u00a017.1 mV,\u00a0$z_{Q}$\u00a0=\u00a00.64\u00a0\u00b1\u00a00.08, $n$\u00a0= 4); 100 \u00b5M Ca2+ ($V_{H}$\u00a0=\u00a031.9\u00a0\u00b1\u00a04.5 mV, $z_{Q}$\u00a0= 0.66\u00a0\u00b1\u00a00.01, $n$\u00a0= 7). (C) $V_{H}$\u00a0obtained from the $Q_{C}(V)$ curves as a function of Ca2+ concentration (mean\u00a0\u00b1\u00a0SEM). Ca2+ binding produces a leftward shift in\u00a0$\u00a0V_{H}(\u0394V_{H})$: 0.1 \u00b5M Ca2+ ($\u0394V_{H}$\u00a0=\u00a0\u221212.1\u00a0\u00b1\u00a03.5 mV); 0.5 \u00b5M Ca2+ ($\u0394V_{H}$\u00a0=\u00a0\u221222.9\u00a0\u00b1\u00a01.8 mV); 1 \u00b5M Ca2+ ($\u0394V_{H}$\u00a0=\u00a0\u221237.1\u00a0\u00b1\u00a03.5 mV); 5 \u00b5M Ca2+ ($\u0394V_{H}$\u00a0=\u00a0\u221250.3\u00a0\u00b1\u00a04.7 mV); 10 \u00b5M Ca2+ ($\u0394V_{H}$\u00a0=\u00a0\u2212107.1\u00a0\u00b1\u00a017.1 mV); 100 \u00b5M Ca2+ ($\u0394V_{H}$\u00a0=\u00a0\u2212142.6\u00a0\u00b1\u00a04.5 mV). One-way ANOVA followed by Dunnett\u2019s post-hoc test analysis was used to assess statistical significance of the Ca2+-induced shifts in $V_{H}$ (***p<0.001).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Recording of gating current (IG) evoked by 200 mV pulses of different durations (from 0.2 to 4 ms) at 0 and 10 \u03bcM [Ca2+] conditions, respectively. (B\u2013C) The top panels show the superimposed traces of the IG-OFF recorded at \u221290 mV evidencing a decrease in amplitude and a slower decay of the OFF current as the duration of the pulse increases at 10 \u03bcM Ca2+. The dashed line represents the baseline for each experiment. IG-OFF were fitted with an exponential function of two-components (fast and slow components). IG-OFF traces at 0.2 ms and 4 ms pulse duration are displayed for each Ca2+ condition. Orange and blue lines correspond to fast and slow components of the two-exponential fits, respectively: (B) \u2018zero\u2019 Ca2+ ($\\tau_{F}$\u00a0=\u00a010 \u03bcs and $\\tau_{S}$\u00a0= 44 \u03bcs) and (C) 10 \u03bcM Ca2+ ($\\tau_{F}$\u00a0=\u00a025 \u03bcs and $\\tau_{S}$ = 212 \u03bcs). (D) Plots of the gating currents time constants measured at 0 Ca2+ (open symbols, solid line) and 10 \u03bcM Ca2+ (filled symbols, dot-dashed line). Data are well described using the equations of the two-sate model (see Materials\u00a0and\u00a0methods) with the following parameters: $\\alpha_{0}$\u00a0= 3.73 ms\u22121, $\\beta_{0}$\u00a0= 76.10 ms\u22121 and $\\delta$\u00a0= 0.29 at 0 Ca2+and $\\alpha_{0}$ = 3.98 ms\u22121, $\\beta_{0}$\u00a0= 10.61 ms\u22121 and $\\delta$\u00a0= 0.37 at 10 \u03bcM Ca2+. The fast OFF time constants at \u221290 mV for 0 Ca2+ (10 \u03bcs, orange open circles) and 10 \u03bcM Ca2+ (25 \u03bcs, orange filled circles) from panels B and C are shown. Time constants extrapolated to \u221290 mV from the two-state model are close to the experimental measurements: 3 \u03bcs and 21 \u03bcs for 0 Ca2+ and 10 \u03bcM Ca2+, respectively. Boltzmann fit of the $Q_{C}(V)$ curves for 0 Ca2+ (solid line) and 10 \u03bcM Ca2+ are also drawn (dot-dashed line). (E\u2013F) The relative amplitude of the OFF-charge components, the fast ($Q_{F}$, orange symbols) and slow ($Q_{S}$, blue symbols) charge components were plotted against the pulse duration and fitted with an exponential function representing the time course of the opening of the channel: (E) \u2018zero\u2019 Ca2+ (open circles, $\\tau_{0Ca^{2+}}$\u00a0= 1.8 ms) and (F) 10 \u03bcM Ca2+ (filled circles, $\\tau_{10\\muM}$\u00a0= 536 \u03bcs).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Normalized gating current (IG) trace at 160 mV voltage step for three different experiments recordings in 100 \u03bcM of internal Ca2+ conditions. The IG-160 mV trace represented by the black dashed line corresponds to the representative IG at 100 \u03bcM Ca2+ in Figure 2A. In this record, the IG-ON was evoked by 1 ms voltage steps of 10 mV, going from \u221290 to 350 and the OFF-gating currents (IG-OFF) recorded at \u221290 mV of 1 ms duration. For the IG represented by the purple and pink lines, the IG-ON was evoked by 2 ms voltage steps of 10 mV, going from \u221290 to 350 and the IG-OFF recorded at \u2212200 mV (Experiment 1) and \u2212150 mV (Experiment 2) of 2 ms duration, respectively. For comparison, only the IG trace at 160 mV voltage step of each experiment\u00a0was shown . (B) $Q_{ON}$\u00a0plotted against $Q_{OFF}$ are linearly related in Experiment 1 (Exp 1: purple symbols) and Experiment 2 (Exp 2: pink symbols). $Q_{ON}$\u00a0was obtained by integrating the fast component for each ON IG trace ($Q_{ON}$\u00a0=\u00a0$Q_{C}$), and the $Q_{OFF}$ was determined by integrating IG-OFF for each pulse. (C) Normalized ON gating charge data (open symbols:\u00a0$Q_{C}(V)/Q_{C,\u00a0MAX}$) and OFF gating charge data (filled symbols:\u00a0$Q_{OFF}(V)/Q_{OFF,\u00a0MAX}$) were fitted using a single Boltzmann function for each experiment: $Q_{C}(V)/Q_{C,\u00a0MAX}$\u00a0($V_{H}$\u00a0=\u00a044.5 mV, $z_{Q}$\u00a0= 0.59) and $Q_{OFF}(V)/Q_{OFF,\u00a0MAX}$ ($V_{H}$\u00a0=\ufeff\u00a052.8 mV, $z_{Q}$\u00a0= 0.62) for the Exp 1 (VOFF = \u2212200 mV); and $Q_{C}(V)/Q_{C,\u00a0MAX}$ ($V_{H}$\u00a0=\u00a029.5 mV, $z_{Q}$\u00a0= 0.53) and $Q_{OFF}(V)/Q_{OFF,\u00a0MAX}$ ($V_{H}$\u00a0=\u00a035.3 mV, $z_{Q}$\u00a0= 0.62) for the Exp 2 (VOFF = \u2212150 mV).\n\nFigure 2A shows that the OFF-gating current was dramatically modified becoming smaller in amplitude and with slower kinetics as the internal Ca2+ concentration was increased (see also Figure 2\u2014figure supplement 1A and Figure 2\u2014figure supplement 2A). At least two components (fast and slow components) could be resolved in the OFF gating current decay in 'zero' and 10 \u00b5M internal Ca2+ conditions (Figure 2\u2014figure supplement 1B-C). In Figure 2\u2014figure supplement 1D, we fitted $\\tau_{I_{G}-ON}(V)$ data for 0 and 10 \u00b5M internal Ca2+ to a two-state R-A model. Figure 2\u2014figure supplement 1D shows that the time constants of the fast relaxation of the IG-OFF evoked at -90 mV (open and closed orange circles) are in reasonable agreement with the time constants values extrapolated to the same voltage from the two-state model of the IG-ON kinetic. The change in the time constant of the fast component of OFF-gating current detected at 10 \u00b5M Ca2+ relative to 'zero' Ca2+ condition agrees with a Ca2+-induced effect primarily on the backward rate of the R-A transition ($\\beta_{0}$\u00a0decreases from 76 ms\u22121 at 0 Ca2+ to 10.6 ms\u22121 at 10 \u03bcM Ca2+, see\u00a0Figure 2\u2014figure supplement 1D), which is consistent with the large $Q_{C}(V)$ shift observed ($\u0394V_{H\u00a0(10\u00a0\\muM)\u00a0}$\u00a0= -107.1 \u00b1 17.1 mV). On the other hand, the relative contribution of the slower component increasing as internal Ca2+ is increased, reflecting an increase in the open probability of the channel (Figure 2\u2014figure supplement 1E-F). This kinetic behavior recapitulates the effect described on gating charge displacement as a function of the depolarizing pulse duration (Horrigan and Aldrich, 2002; Carrasquel-Ursulaez et al., 2015; Contreras et al., 2012), and confirms that this phenomenon is associated with the time course of channel opening revealing the allosteric interaction between voltage sensors and the pore gate (Horrigan and Aldrich, 2002).\n\nSince the OFF gating charge cannot be accurately estimated from the OFF gating current recorded at -90 mV, we performed two experiments using 100 \u00b5M internal Ca2+ concentration and recorded the OFF gating currents at -150 mV and -200 mV (Figure 2\u2014figure supplement 2A). At these applied voltages, the charge displaced in the ON is recovered in the OFF (Figure 2\u2014figure supplement 2B). As expected from the large shift to the left along the voltage axis of $Q_{C}$ at saturating internal Ca2+ concentrations, there was no difference between the $Q_{C}$ curve and the gating charge-voltage curves obtained from the OFF gating currents 2 ms after the onset of the voltage pulse, for applied voltages of -150 or -200 mV (Figure 2\u2014figure supplement 2C).\n\n### Ca2+ binding to a single \u03b1-subunit affects the R-A voltage sensor equilibrium of all four subunits equally\n\nTaking advantage of the dose-dependent effect of Ca2+ on voltage sensor activation we investigated the underlying mechanism of the communication between the Ca2+ binding and voltage sensors in the context of the well-established Horrigan-Aldrich (HA) allosteric gating model (Horrigan and Aldrich, 2002). Two different mechanisms were proposed by Horrigan and Aldrich for the interaction between the Ca2+-binding sites and voltage sensors. The first mechanism proposes that Ca2+ binding to one \u03b1-subunit only affects the VSD in the same subunit (Scheme I) (Figure 3A), whereas the second mechanism proposes that the Ca2+ binding affects all four VSD equally (Scheme II) (Figure 3B). It should be noted that the standard HA model makes two simplifying assumptions. First, the model considers that there is a single Ca2+-binding site per \u03b1-subunit. Second, the model assumes the Scheme I as the Ca2+ binding-VSD interaction scheme underlying the general gating mechanism of BK channel (Horrigan and Aldrich, 2002).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig3-v2.jpg)\n\n**Figure 3.:** Model-dependent behavior of the $Q_{C}(V)$ curves based on the CTD-VSD interaction mechanisms according to the fractional occupancy of Ca2+-binding sites.(A\u2013B) Cartoons representing two interaction schemes between voltage sensors and Ca2+-binding sites (modified from Horrigan and Aldrich, 2002). Scheme I (A) assumes that Ca2+-binding only affects the voltage sensor of one \u03b1-subunit ($E_{M1}$), whereas Scheme II (B) predicts that binding of Ca2+ to one \u03b1-subunit will affect VSD in all subunits equally, increasing the voltage sensor equilibrium constants ($J$) $E_{M2}$-fold in all four subunits ($E_{M2}^{4}$, when the four Ca2+ sites are occupied). In both schemes, a single Ca2+-binding site is considered in each \u03b1-subunit. (C\u2013D) Predictions of $Q_{C}(V)$ relationships at different internal calcium concentration (from 0 to 10 mM) by two distinctive interaction mechanisms between Ca2+-binding sites and voltage sensors (Scheme I and Scheme II), respectively. $Q_{C}(V)$\u00a0curves were generated using Equation 4 (blue: Model I) or Equation 6 (red: Model II), and the following set of parameters: $z_{J}$\u00a0= 0.58, $J_{0}$\u00a0= 0.018, $K_{D}$\u00a0= 11 \u00b5M and $E_{M1}$ = $E_{M2}^{4}$ = 25.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Sub-scheme describing calcium and voltage allosteric interaction for closed channels. The VSD transit between two resting (R) and active (A) configuration governed by the equilibrium constant\u00a0$J$, where each Ca2+ site undergoes unbound (U) - Ca2+ bound (B) transitions governed by the equilibrium constant\u00a0$K$. The allosteric factor $E$\u00a0accounts for the coupling between the calcium and voltage sensors (CTD-VSD). (B\u2013C) VSD kinetic models in the presence of Ca2+ according to CTD-VSD interaction schemes I and II (Figure 3A\u2013B), respectively, where the vertical transitions (R-A) represent the VSD movement and the horizontal transitions (R-R\u00a0and\u00a0A-A) are Ca2+-binding reactions when the VSD is in the resting or active conformation. For Scheme I (B), each VSD can undergo R0-A0 or R1-A1 transitions depending on the unbound or bound state of the Ca2+ site in the \u03b1-subunit, respectively. Thus, the R1-A1 equilibrium is defined by $J$\u00a0increased $E_{M1}$-fold ($JE_{M1}$). For Scheme II (C), the R0-A0 to R4-A4 transitions represent the VSD equilibrium with 0, 1, 2, 3, and four occupied Ca2+ sites in the channel. Thus, for each Ca2+ bound the equilibrium constant $J$\u00a0increase $E_{M2}$-fold reaching to $JE_{M2}^{4}$\u00a0when the four Ca2+ sites are occupied. The thickness of the arrows indicates the probability of transitions. (D) General sub-scheme of the CTD-VSD interaction including two Ca2+ sites for each CTD (RCK1 and RCK2 sites). For each RCK1 and RCK2 site the unbound-Ca2+ bound transitions are governed by the equilibrium constants $K_{1}$ and\u00a0$K_{2}$. The factor $G$\u00a0describes the cooperativity between the sites within the same \u03b1-subunit; and the $E_{S1}$ and $E_{S2}$ factors define the allosteric coupling between the RCK1 and RCK2 sites and the VSD, respectively. (E) Schematic representation of VSD kinetic model according to the extended version of the Scheme I (B)\u00a0and Scheme II (C) accounting for both RCK1 and RCK2 Ca2+-sites on each \u03b1-subunit. The VSD transitions in Scheme I only depend on the unbound or bound state of the RCK sites within the same \u03b1-subunit: unliganded (R0,0-A0,0), RCK1 site occupied (R1,0-A1,0), RCK2 site occupied (R0,1-A0,1) and both sites occupied (R1,1-A1,1). For sake simplicity, Scheme II, only depicts VSD transitions described for the Scheme I. In this case, x and y represent the number of RCK1 sites occupied and number of RCK2 sites occupied, respectively, in the other three \u03b1-subunits (x\u00a0=\u00a0from 0 to 3 and y\u00a0=\u00a0from 0 to 3).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Simulation of, as a function of the time constant ratios of Ca2+ binding and gating currents are shown. Gating currents were simulated for a BK Scheme I (Figure 3A). The Ca2+ binding rate constant was $k_{b}$\u00a0=\u00a01.81\u00d7108 M-1s-1 (Hou et al., 2016) and the unbinding rate constant $k_{u}$\u00a0= 1150. s-1 was calculated using a $K_{D}$\u00a0= 6.4\u00d710-6 M (Table 1). Voltage-dependent rates for the voltage sensor activation were taken from Figure 1. Gating current were simulated using different calcium-binding time constants: $\\tau_{Ca\u00a0binding}=1/x(k_{b}[Ca^{2+}]+k_{u})$\u00a0scaled with different x-factors ranging from 0.01 to 1000. We fitted the simulated gating current at 10 \u03bcM Ca2+ to a single exponential using the first 100 \u03bcs of the gating current decay. The maximum gating current time constant was used to calculate the time constant ratios shown in the horizontal axis of the figure. The vertical dashed line marks the time constant ratio calculated for x = 1. The $Q_{C}(V)$\u00a0data obtained by integration of the area under the exponential function were fitted using a Boltzmann function. The sum of the residuals squared, SMSQ, was used as an indication of the goodness of the fit. The figure shows that the fit was good (low SMSQ) and the experimental $z_{Q}$\u00a0value (0.61) was recovered for calcium-binding/gating current time constant ratio 0.04 or less; that\u00a0is fast calcium re-equilibration, which is obtained for a calcium-binding rated constant one hundred times faster than the reported by Hou et al. (2016). We conclude that the good fit to a single Boltzmann sigmoidal function to our experimental $Q_{C}(V)$\u00a0curves is not due to fast calcium re-equilibration but due to the failure of Model I to describe our data. This conclusion is the same for analysis based on the first 30 \u03bcs of the simulated gating currents.\n\nWe simulated the normalized $Q_{C}(V)$ curves over a wide range of Ca2+ concentrations (from 0 to 10 mM) for each Ca2+-VSD interaction scheme (Figure 3C-D). We assumed that the fast gating currents measured correspond to the charge displaced by the R-A transitions and does not include the charge associated with the transition between the activated states (see Figure 3\u2014figure supplement 1B-C). In other words, Equations 4 and 6 given in the Appendix describing the $Q_{C}(V)$ relationships for Schemes I and II are based on the assumption that channels equilibrate between Ca2+-bound states while the channel is closed and voltage sensors are not activated. We further assume that this distribution is not altered when gating current is measured because Ca2+ binding is slower than voltage-sensor activation. These assumptions are reasonable since the Ca2+-binding rate constant estimated for BK is 1.8 x 108 M\u22121s\u22121 (Hou et al., 2016) implying that at 10 \u00b5M internal Ca2+ (the highest non-saturating Ca2+ concentration tested) the time constant of the Ca2+ binding is ~300 \u00b5s, while the VSD activates with a time constant of ~60 \u03bcs at $V$\u00a0= $V_{H}$ (see the Appendix for details of the simulations).\n\nAt extreme conditions of low (0.03 to 0.1 \u00b5M) and high (\u2265100 \u00b5M) internal Ca2+, VSD activation behaves in a mechanism-independent manner since all voltage sensors are in the same functional state (unliganded or saturated). However, the distinctive effects on $Q_{C}(V)$ curves at intermediate Ca2+ concentrations (1-10 \u00b5M) provide useful signatures to distinguish between the two mechanisms. Indeed, Scheme I predicts two functional states of the VSD depending on the occupancy status of the Ca2+ site (Ca2+ bound and unbound) such that the $Q_{C}(V)$ curve is described by the fractional distribution of the unliganded and Ca2+-saturated functional states like an all-or-none allosteric effect (Figure 3C; Figure 3\u2014figure supplement 1B and Equation 4 in Appendix). By contrast, the Ca2+-binding effect on the VSD activation according to Scheme II is characterized by a five-component Boltzmann function (Figure 3\u2014figure supplement 1C and Equation 6 in Appendix). Each component represents a single functional state determined by the number of Ca2+ bound to the channel (from 0 to 4). In such a case, the $Q_{C}(V)$ curves resulting from a distribution of functional states are equivalent to a single Boltzmann function, leftward shifted by an incremental allosteric effect (from $E$\u00a0to\u00a0$E^{4}$) as the number of Ca2+ bound to the channel increases (Figure 3D). The experimental leftward shift of the $Q_{C}(V)$ curves occur with constant slope ($z_{Q}$) (Figure 2B), which is consistent with Model II. It can be argued that Scheme I can produce single Boltzmann curves without a change in $z_{Q}$ if Ca2+ re-equilibration is fast enough. However, Figure 3\u2014figure supplement 2 demonstrates that to recover the experimental $z_{Q}$ requires a Ca2+ binding rate constant that is 100-fold faster than the one reported by Hou et al. (2016) exceeding the diffusion limit constraint. Therefore, we can conclude that Ca2+-binding is slow enough to safely ignore calcium re-equilibration during the 100 \u03bcs it takes to measure the gating charges.\n\nTo further elucidate the mechanism by which Ca2+ and voltage sensors interact, we performed fits of the $Q_{C}(V)$ data using the two different models represented by Scheme I and Scheme II (Figure 4A-B). The allosteric factor $E$\u00a0that accounts for the coupling between the Ca2+-binding sites and the voltage sensors was constrained to values calculated from the experimental data for the $Q_{C}(V)$ shift at Ca2+ saturating conditions (100 \u00b5M) in relation to the same curve in the absence of Ca2+. The\u00a0$z_{J}$, $J_{0}$\u00a0and $K_{D}$ parameters obtained during the fitting procedure were very similar for each model (Table 1). The fitted values for the affinity constant ($K_{D}$\u00a0= 6 \u00b5M) agree with previous reports (Horrigan and Aldrich, 2002; Cox et al., 1997) although they are slightly smaller than those estimated for the closed conformation of the channel ($K_{D}$\u00a0= 11 \u00b5M). Based on the Akaike Information Criterion (AIC) (Akaike, 1974), the model that fits to the $Q_{C}(V,Ca^{2+})$ data best is Model II, whereas the probability of the Model I being the best model is negligible ($w_{i}$\u00a0= 10\u221247) (Table 1). Both models generates a $V_{H}$-$log\u2061Ca^{2+}$ curve that accounts reasonably well for the dose-response experimental data (Figure 4C). However, Model I predicts a pronounced decrease in the $z_{Q}$ parameter of the $Q_{C}(V)$ curves at intermediate Ca2+ conditions which differs markedly from the experimental values (Figure 4D). This prediction is a consequence of the fractional distribution of two very distinctive functional states of the voltage sensors (unliganded and Ca2+-saturated, see above). Additionally, the behavior of $Q_{C}(V)$ curves at intermediate Ca2+ concentrations (1-10 \u00b5M) is qualitatively consistent with the phenotype exhibited by the Ca2+-VSD scheme II (Figure 3D and Figure 4B). Thus, the experimental dose-dependent effect of Ca2+ on voltage sensor activation suggests that Ca2+-binding to a single \u03b1-subunit of BK channels increases $E$-fold the equilibrium constant $J$\u00a0that defines the equilibrium between resting and active conformations of the voltage sensors in all four subunits.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) The experimental $Q_{C}(V)$ data were fitted using the two possible allosteric interaction mechanisms between voltage and calcium sensors described by Scheme I and Scheme II. The blue and red lines represent the global fits by Model I and Model II, respectively. The allosteric factor $E$\u00a0($E_{M1}$\u00a0and\u00a0$E_{M2}$) was constrained to the value obtained from the individual fitting of the $Q_{C}(V)/Q_{C,\u00a0MAX}$ curves at 0 and 100 \u00b5M Ca2+ (experimental $E$\u00a0($E_{exp}$) equal to 26.4, see Table 1). The\u00a0$z_{J}$, $J_{0}$\u00a0and $K_{D}$ parameters were allowed to vary freely. Note that the allosteric factor $E$\u00a0for Model I ($E_{M1}$) and Model II ($E_{M2}$) have different interpretations, since $E_{M1}=E_{exp}$ whereas $E_{M2}=\\sqrt[4]{E_{exp}}$ given that the four voltage sensor will be altered in 2.3-fold ($E_{M2}$\u00a0=\u00a02.27) with each additional Ca2+ bound. (C\u2013D) The Ca2+-dependence of $z_{Q}$-$Q_{C}(V)$ (C) and $V_{H}$-$Q_{C}(V)$ (D) curves are superimposed with the $z_{Q}$ and $V_{H}$ values predicted by Model I (blue line) and Model II (red line).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Fitting of experimental $Q_{C}(V)$ data by the Ca2+-VSD interaction mechanisms including two Ca2+-binding sites per \u03b1-subunit.(A\u2013B) The blue and red lines represent the global fits to the experimental $Q_{C}(V)$ curves by Model I (A) and Model II (B), respectively, with two Ca2+ sites in each \u03b1-subunit. For each model a cooperativity factor between the Ca2+ sites within the same subunit ($G$\u00a0\u2260 1) (Upper) or no cooperative interactions between the Ca2+ sites ($G$\u00a0=\u00a01) (Bottom) was introduced. The estimated parameters for each model are shown in Table 1. The Ca2+-dependence of $z_{Q}$-$Q_{C}(V)$ data are superimposed with the $z_{Q}$ values predicted by Model I (C) and Model II (D). The statistical analysis using one-way ANOVA followed by Dunnett\u2019s post-hoc test showed no significant effect of Ca2+ on $z_{Q}$ (p>0.05).\n\n### High-affinity Ca2+-binding sites in RCK1 and RCK2 domains contribute equally to the allosteric coupling between Ca2+ and voltage sensors\n\nUnder physiological conditions, the RCK1 and RCK2 high-affinity Ca2+-binding sites are responsible for all the calcium sensitivity of the activation of BK channel (Schreiber and Salkoff, 1997; Bao et al., 2002; Bao et al., 2004; Xia et al., 2002). However, distinct physiological roles of the RCK1 Ca2+-sensor and Ca2+ bowl may be based on their functionally and structurally distinctive properties (Zeng et al., 2005; Sweet and Cox, 2008; Yang et al., 2010; Savalli et al., 2012; Tao et al., 2017). We next asked what the energetic contribution to VSD equilibrium was of the two high-affinity Ca2+-binding sites contained in the RCK1 and RCK2 domains.\n\nTo elucidate the effect of each Ca2+-sensor on the VSD activation we used mutations that selectively and separately abolish the function of the two different RCK Ca2+-sites. Disruption of the RCK1 Ca2+-sensor by the double mutant D362A/D367A (Xia et al., 2002) significantly reduced (48%, $\u0394V_{H}$(D362A/D367A) = -74.9 \u00b1 4.7 mV) the leftward shift of the $Q_{C}(V)$ curves at 100 \u03bcM Ca2+ compared with that for the wild-type (WT) BK channel (Figure 5A, C). We also examined the effect of the mutant M513I (Bao et al., 2002) which has been shown to eliminate the Ca2+ sensitivity mediated by the RCK1 site (Bao et al., 2002; Bao et al., 2004; Zhang et al., 2010). In this mutant, the 100 \u00b5M Ca2+-induced shift in $V_{H}$ of the VSD activation curve was also considerably smaller compared to that for the WT channel (about 54%, $\u0394V_{H}$(M513I) = -65.4 \u00b1 2.6 mV) (Figure 6). Therefore, both mutations affect the Ca2+-induced enhancement of the activation of the voltage sensor very similarly through the RCK1 site (Figure 6C), although their mechanisms of action could be quite different. The M513 residue appears to participate in the stabilization of the proper conformation of the RCK1 Ca2+-site whereas D367 is a key residue in the coordination of Ca2+ ions (Wu et al., 2010; Zhang et al., 2010; Tao et al., 2017). On the other hand, neutralization of the residues forming part of the Ca2+ bowl (Schreiber and Salkoff, 1997) (5D5A mutant, see Materials\u00a0and\u00a0methods) on the RCK2 domain decreased the leftward shift of the $Q_{C}(V)$ curve by approximately 54% ($\u0394V_{H}$(5D5A) = -65.7 \u00b1 4.7 mV) when Ca2+ was increased up to 100 \u03bcM (Figure 5B, D). The effect of Ca2+ binding on $\\DeltaV_{H}$ contributed by each high-affinity Ca2+ site is roughly half that for WT channels with both sites intact (Figure 5E). Therefore, both high-affinity Ca2+-binding sites contribute approximately equally to the decrease in free energy that is necessary to activate the VSD. Indeed, the change of free energy of the resting-active equilibrium of the voltage sensor in response to Ca2+-binding at RCK2 site is ~ -4 kJ/mol ($\u0394\u0394G_{V}^{Ca}$(D362A/D367A) = -4.2 \u00b1 0.3 kJ/mol and $\u0394\u0394G_{V}^{Ca}$(M513I) = -3.6 \u00b1 0.5 kJ/mol) (Figure 5C and Figure 6C). Similarly, the occupation of the RCK1 Ca2+-binding site decreased the free energy necessary to activate the VSD in -3.8 \u00b1 0.4 kJ/mol ($\u0394\u0394G_{V}^{Ca}$(5D5A)). Remarkably, these findings reveal an additive effect of Ca2+-binding to the RCK1 and Ca2+ bowl sites on the VSD activation, which suggest independent allosteric pathways through which they exert their modulation on the VSD.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013B) Representative gating current (IG) recordings at 0 and 100 \u03bcM of [Ca2+]i for the RCK1 site mutant (D362A/D367A) and the RCK2 site mutant (5D5A), respectively. (C\u2013D) Gating charge-voltage curves ($Q_{C}(V)$) were obtained at 0 Ca2+ (open symbols) and 100 \u03bcM Ca2+ (filled symbols) for D362A/D367A and 5D5A mutants, respectively. Boltzmann fitting to the experimental data (mean\u00a0\u00b1\u00a0SEM) is indicated by solid lines ($V_{H}$(D362A/D367A)\u00a0=\u00a0178.0\u00a0\u00b1\u00a02.7 mV, $z_{Q}$\u00a0= 0.58\u00a0\u00b1\u00a00.01, $n$\u00a0= 12 and $V_{H}$(5D5A)\u00a0=\u00a0176.4\u00a0\u00b1\u00a04.6 mV, $z_{Q}$\u00a0= 0.58\u00a0\u00b1\u00a00.01, $n$\u00a0= 17 at \u2018zero\u2019 Ca2+; $V_{H}$(D362A/D367A)\u00a0=\u00a0104.2\u00a0\u00b1\u00a07.3 mV, $z_{Q}$\u00a0= 0.56\u00a0\u00b1\u00a00.02, $n$\u00a0= 7 and $V_{H}$(5D5A)\u00a0=\u00a0110.8\u00a0\u00b1\u00a06.7 mV, $z_{Q}$\u00a0= 0.58\u00a0\u00b1\u00a00.02, $n$\u00a0= 6 at 100 \u00b5M Ca2+). For comparison, all $Q_{C}(V)$ plots include the Boltzmann fit of the $Q_{C}(V)$ curves for WT at 0 Ca2+ (dashed black line) and 100 \u03bcM Ca2+ (solid black line). (E) Quantification of the $V_{H}$ shift $(\u0394V_{H})$ in the $Q_{C}(V)$ curves and the free energy change $(\u0394\u0394G_{V}^{Ca})$ induced by 100 \u03bcM Ca2+. The non-parametric t-test was used to evaluate statistical significances between WT BK channel and the RCK sites mutants (***p<0.001).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44934/elife-44934-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative gating current (IG) recordings at 0 and 100 \u03bcM [Ca2+]i for the RCK1 site mutant M513I. (B) Gating charge-voltage curves $Q_{C}(V)$ were obtained at 0 Ca2+ and 100 \u03bcM Ca2+ (open and filled symbols) for the M513I mutant. Boltzmann fit to the experimental data (mean \u00b1 SEM) is indicated by solid lines ($V_{H}$(M513I)= 170.4 \u00b1 4.4 mV, $z_{Q}$ = 0.58 \u00b1 0.01, $n$\u00a0= 17 at \u2018zero\u2019 Ca2+ and $V_{H}$(M513I)= 105.0 \u00b1 6.3 mV, $z_{Q}$\u00a0= 0.62 \u00b1 0.03, $n$\u00a0= 4 at 100 \u00b5M Ca2+). For comparison, the $Q_{C}(V)$ plot includes the Boltzmann fit of the $Q_{C}(V)$ curves for WT at 0 Ca2+ and 100 \u03bcM Ca2+ (dashed and solid black line). (C) Quantification of the $V_{H}$\u00a0shift\u00a0$(\u0394V_{H})$\u00a0in the $Q_{C}(V)$ curves and the free energy change induced by 100 \u03bcM Ca2+$(\u0394\u0394G_{V}^{Ca})$. A non-parametric t-test was used to compare WT and RCK1-site mutants BK channels (***p<0.001).\n\nTaking these results into account, we expanded the Ca2+-VSD interaction models considering the energetic contribution of the two kinds of Ca2+ sensors on the VSD per \u03b1-subunit ($E_{WT}=E_{S1}*E_{S2}$) (Figure 3\u2014figure supplement 1D). As described in the above model fittings, the allosteric factors $E$\u00a0for each one RCK1 and RCK2 sites ($E_{S1}$\u00a0and\u00a0$E_{S2}$) were constrained to values equivalent to the Ca2+-induced energetic perturbations of the voltage sensor equilibrium for the 5D5A and D362A/D367A mutants, respectively. The inclusion of two Ca2+ sites per subunit in the Ca2+-VSD interaction schemes increases the functional states of the VSD for both models (Figure 3\u2014figure supplement 1E). Therefore, it becomes difficult to discriminate between different models based on the phenotype of the $Q_{C}(V)$ curves at intermediate Ca2+ concentrations (Figure 4\u2014figure supplement 1A-B). However, according to the AIC criteria (compare AICs for the models in Table 1), Model II - Two Ca2+ sites is the model that best describes the $Q_{C}(V,Ca^{2+})$ data ($w_{i}$= 0.99). As mentioned when describing the one Ca2+ site models, the goodness of the different models can be better appreciated by the Ca2+-dependence of the $z_{Q}$ parameter (Figure 4\u2014figure supplement 1C-D). The fractional distribution of the distinct functional states of the VSDs defined by Model I -Two Ca2+ sites (unliganded, RCK1 site occupied, RCK2 site occupied, and the two sites occupied; see Figure 3\u2014figure supplement 1E) produce a $z_{Q}$-$log\u2061Ca^{2+}$ curve with a pronounced minimum when the Ca2+ concentration is close to the $K_{D}$ value (Figure 4\u2014figure supplement 1C). Thus, Model I -Two Ca2+ sites predicts a prominent Ca2+- dependence of the $z_{Q}$ whereas as we found experimentally, the $z_{Q}$ predicted by Modell II is essentially independent of the Ca2+ concentration. The slight apparent increase in $z_{Q}$ data observed in Figure 4\u2014figure supplement 1C as the Ca2+ concentration is increased is not statistically significant.\n\nWe note here that when the intrasubunit cooperativity factor ($G$) is allowed to vary freely, Model II produces estimates of the $K_{D}$ parameters that are out the range relative to the apparent Ca2+ affinities previously reported in the literature for the Ca2+-binding sites ($K_{D(RCK1)}$\u00a0= 13 - 24 \u00b5M and $K_{D(RCK2)}$ = 3 - 5 \u00b5M) (Sweet and Cox, 2008; Bao et al., 2002; Xia et al., 2002). In addition, Model II reaches better estimates of the $K_{D}$ parameters (Table 1) if we consider non cooperative interactions between the Ca2+-binding sites. However, although the $K_{D}$ value for the RCK2 Ca2+-binding site is in agreement with previous reports, Model II underestimates the value for\u00a0$K_{D(RCK1)}$.\n\n## Discussion\n\nRecent functional and structural studies have revealed the existence of a major interplay between voltage- and Ca2+-sensing modules in the BK channel (Yuan et al., 2010; Savalli et al., 2012; Miranda et al., 2013; Miranda et al., 2016; Miranda et al., 2018; Carrasquel-Ursulaez et al., 2015; Hite et al., 2017; Tao et al., 2017; Zhang et al., 2017), which offer a new perspective on our understanding of its multimodal gating mechanism. However, the details of the CTD-VSD allosteric coupling as well its molecular nature have yet to be firmly established since their direct assessment is experimentally challenging. Based on the functional independence of the distinct structural domains involved (PD, CTD, and VSD), the energetic relationship between the sensory modules can be directly defined by comparing the change in the equilibrium of the voltage sensor under two extreme Ca2+ conditions: unliganded and saturated (Horrigan and Aldrich, 2002).\n\nThus, by characterizing the voltage dependence of charge movement in the virtual absence of internal Ca2+ and at Ca2+ concentrations that saturate the Ca2+ high-affinity sites, this work directly establishes that Ca2+-binding significantly facilitates VSD activation through direct energetic contribution to the R-A equilibrium ($\u0394V_{H}$\u00a0= -142.6 \u00b1 4.5 mV and\u00a0$\u0394\u0394G_{V}^{Ca}$ = -7.98 \u00b1 0.27 kJ/mol). Although this result is in agreement with previous reports from our laboratory ($\u0394V_{H}$\u00a0= -140 mV and $\u0394\u0394G_{V}^{Ca}$ = -7.9 kJ/mol; at [Ca2+]i = 100 \u00b5M) (Carrasquel-Ursulaez et al., 2015), it is at odds with the smaller leftward shift obtained by Horrigan and Aldrich (2002) at saturating Ca2+ concentration ($\u0394V_{H}$\u00a0= -33 mV and $\u0394\u0394G_{V}^{Ca}$ = -1.9 kJ/mol; at [Ca2+]i = 70 \u00b5M). The reason for the contradictory findings is not clear to us. At this stage, we can only identify two differences between the experimental procedures followed by Horrigan and Aldrich (2002) and by us. First, there is a difference in the BK channel clones used (hSlo1 vs mSlo1). Since mBK channels share a high degree of identity with hBKs (96%), it seems unlikely that the differences in Ca2+ binding and voltage sensor coupling are due to different BK clones. Second, Horrigan and Aldrich did all their experiments at 0 and 70 \u03bcM Ca2+ in HEK cells. Here, one can argue that the strength of coupling between Ca2+ binding and the voltage sensor may be different in distinct expression systems (e.g., differential modulation) but this is something that is outside the scope of the present paper. Moreover, even if we assume that the calcium effect on VSD is underestimated at 70 \u00b5M Ca2+ (Horrigan and Aldrich, 2002) compared to 100 \u00b5M (our work), we observed a significantly greater effect of Ca2+ concentrations (1, 5 and 10 \u00b5M, Figure 2) when less than 50% of the Ca2+ sensors are occupied ($K_{D}$\u00a0= 11 \u00b5M; Horrigan and Aldrich, 2002; Cox et al., 1997).\n\nFluorescence studies that optically track the motion of the voltage sensor or of the gating ring provide two lines of evidence that support the present findings. First, conformational rearrangements of the voltage sensors detected using voltage-clamp fluorometry can be provoked by Ca2+-binding to the high-affinity sites. A sudden rise in intracellular [Ca2+] caused by a UV flash induced-photolysis of caged Ca2+ prompts a leftward shift in both conductance-voltage ($GV$) and fluorescence-voltage ($FV$) relationships. These results suggest that functional activation of the gating ring is propagated to the VSD, leading to structural perturbations of voltages sensors, thereby favoring its active conformation (Savalli et al., 2012). Second, the structural rearrangement of the gating ring in response to Ca2+ has a voltage dependence (Miranda et al., 2013; Miranda et al., 2018) attributable to the operation of the voltage sensor. The origin of these voltage-dependent motions has recently been established via modifications of the voltage-sensing function of the BK channel using the patch-clamp fluorometry technique (Miranda et al., 2018). Both mutations of the charged residue on the S4 transmembrane segment (R210, R213, and E219) and the co-expression of the \u03b21-subunit with BK\u03b1 channel, modify the conformational changes of the gating ring triggered by depolarization in correspondence to the observed $GV$\u00a0shift measured for these channel constructs. In contrast, perturbations of pore opening equilibrium (e.g. through the F315A mutation or the assembly of BK\u03b1 channel with \u03b31-subunit) does not modify the voltage-dependent reorganization of the gating ring (Miranda et al., 2018).\n\nMechanistically, how might the CTD-VSD coupling occur in manner that is independent of channel opening? Taking into account the homotetrameric configuration of the BK channel, Horrigan and Aldrich (2002) defined the general gating scheme of BK channel considering the simplest CTD-VSD interaction model in which voltage sensors and Ca2+-binding sites interact solely within the same subunit. However, the VSD movement at non-saturating Ca2+ conditions observed here, which entail distinct functional states of the Ca2+-binding sites (unliganded and liganded), unveiled that the standard HA model is unable to explain the mechanistic interaction governing the allosteric coupling between the Ca2+ and voltage sensors. Assuming that Ca2+-sensors are independent and they modify the voltage sensor in the same subunit only, Scheme I would predict $Q_{C}(V)$ curves characteristic of an all-or-none model showing two well-distinguishable Boltzmann components corresponding to the fractions of unliganded and Ca2+-saturated BK channels (Figure 4A). Conversely, an energetic effect of each Ca2+-site on all the voltage sensors of the tetramer would lead to an equivalent functional status of each VSD, so that the $Q_{C}(V)$ curves would shift as the occupancy of the Ca2+ sites increased. Proposing that the VSD and Ca2+ sites interact in the manner described by Scheme II reproduces reasonably well the behavior of the Ca2+-dependent gating charge movement observed in our experiments (Figure 4B\u2013D). This concerted CTD-VSD communication may underlie a mechanism analogous to the mechanical strategy of interaction between the homooctameric ring of RCK domains and the pore module described for bacterial K+ channels (Jiang et al., 2002; Ye et al., 2006; Lingle, 2007; Pau et al., 2011; Smith et al., 2012; Smith et al., 2013). In both MthK and BK channels the Ca2+-site occupancy triggers a conformational change corresponding to a symmetric overall rearrangement of the cytosolic tetrameric structure that is ultimately propagated to the transmembrane regions (TMD) via C-linker and in the BK channel, also via the protein-protein interfaces between the gating ring and the TMD (Jiang et al., 2002; Jiang et al., 2003; Ye et al., 2006; Yuan et al., 2010; Yuan et al., 2012; Pau et al., 2011; Smith et al., 2012; Tao et al., 2017). Thus, we can speculate that each Ca2+-binding event produces a gradual conformational expansion of the gating ring affecting the four voltage sensors in each step through the progressive perturbations within the protein-protein interfaces.\n\nAs mentioned above, the communication pathway through which the Ca2+-driven conformational changes are propagated to the voltage sensors appears to reside on the CTD-VSD interface that involves non-covalent interactions between RCK1 N-lobe and S0-S4 transmembrane segments (Yang et al., 2007; Yang et al., 2008; Yang et al., 2010; Sun et al., 2013; Hite et al., 2017; Tao et al., 2017). Although it is not possible at present to dismiss the possibility that the Ca2+ binding effect on the VSD workings is, at least in part, mediated by the covalent pulling of the C-linker, we recall that the VSDs are domain-swapped with RCK domains in the gating ring (Tao et al., 2017). Therefore, binding of Ca2+ makes the RCK1 N-lobe pull on the S6 helix from its subunit whereas the modification of the contact surface between the RCK1 N-lobe with the voltage sensor of an adjacent subunit induces an outward displacement of the voltage sensor (Hite et al., 2017). These structural arguments make us favor the non-covalent interaction between the CTD and the VSD as the source of the coupling between these two structures. Scanning mutagenesis of RCK1-N terminal subdomain indicates that residues on the \u03b2A-\u03b1C region are involved in the allosteric connection of the Ca2+-dependent activation mediated by RCK1 site occupancy (Yang et al., 2010). In line with this study, the selective activation of the RCK1 domain was identified as being responsible for the Ca2+-induced VSD rearrangement (Savalli et al., 2012) and the voltage dependence of the Ca2+-driven motions of gating ring (Miranda et al., 2016; Miranda et al., 2018), suggesting that CTD-VSD allosteric coupling is primarily determined by the RCK1 site (Sweet and Cox, 2008). However, our results are inconsistent with this picture. The constructs D362A/D367A and 5D5A (D894A-D898A) selectively impair the Ca2+-sensitivity of the RCK1- and RCK2-sensors, respectively, by neutralizing the residues that are involved in contributing to Ca2+-coordination (Zhang et al., 2010; Tao et al., 2017). Comparing the fast gating charge movement at 0 Ca2+ and saturating Ca2+ conditions reveals that the energetic effect of Ca2+-binding on voltage sensor equilibrium is practically identical (~ \u22124 kJ/mol) for both the D362A/D367A and the 5D5A mutations (Figure 5). Thus, our findings establish that the RCK2-driven contribution to CTD-VSD energetic coupling is quite similar to the RCK1-driven contribution. The functional role of the RCK2-sensor on Ca2+-sensitivity of VSD activation was further corroborated using the M513I mutation (Figure 6). This point mutation hinders the Ca2+-dependent activation associated with the RCK1-sensor, presumably by disrupting the structural integrity of the binding site and the transduction pathway through the \u03b2A-\u03b1C region (Zhang et al., 2010). Thus, another residue involved in the BK Ca2+-dependent activation mediated by the RCK1 Ca2+-binding site but not forming part of the site itself, decreases the $Q_{C}(V)$ leftward shift almost in the same amount as does the D362A/D367A mutant.\n\nWe found that the energetic contribution of each RCK site to the voltage sensor equilibrium is the same and its combination mimics the VSD Ca2+-sensitivity of the fully occupied sites. These findings remind us of early reports showing that mutations in each RCK site shift the Ca2+-dependent $GV$\u00a0by approximately one-half relative to the effect seen for WT channels (Bao et al., 2002; Xia et al., 2002). Thus, our results suggest that the two RCK-sensors contribute independently to the modulation on the VSD, although we cannot eliminate the possibility of some cooperativity between them. Indeed, various lines of evidence indicate that there is some, albeit modest, cooperativity between the two high-affinity Ca2+-binding sites although its nature is still unclear (Qian et al., 2006; Savalli et al., 2012; Sweet and Cox, 2008). Intra and intersubunit structural connectivity supports the putative cooperative interactions between the Ca2+ sensors at the gating ring (Hite et al., 2017; Yuan et al., 2012). In fact, a recent functional study of the intrasubunit connections between the RCK1 site and Ca2+ bowl (R514-Y904/E902 interactions) has shown that such connections are potential candidates for the structural determinants underlying a cooperative mechanism between the RCK1- and RCK2-sensor. These interactions are involved in either the preservation of the integrity of RCK1 Ca2+-binding site or define the allosteric propagation pathway of the chemical energy induced by Ca2+ binding towards transmembrane domains (Kshatri et al., 2018). On the basis of the cryo-EM structure of Aplysia californica BK channel, (Hite et al., 2017) proposed that there should be a positive cooperativity between the Ca2+-binding at RCK1 site and the Ca2+ bowl since the Ca2+-induced conformational change of the RCK1-N lobes from closed to open configuration depends on the functional state (unliganded and liganded) of both RCK sites.\n\nOur analysis based on the CTD-VSD interaction model can not specify likely cooperative relations among the two high-affinity Ca2+ sites within the same \u03b1-subunit. In fact, the analysis of our gating current data when using cooperativity between the two high-affinity sites (Table 1) produced a result at odds with previous reports. Based on the structural information of the BK channels, it could be considered that cooperative interactions between the Ca2+ sensors of the different \u03b1-subunits (Hite et al., 2017) can also account, in part, for the Ca2+-dependent behavior of the VSDs. However, functional studies point out a more relevant role of the intrasubunit cooperativity (albeit modest) than the intersubunit cooperativity between the RCK Ca2+ sites (Niu and Magleby, 2002; Qian et al., 2006). Thus, although a concerted CTD-VSD model (Scheme II) gives better explanation than an independent CTD-VSD model (Scheme I) to the allosteric communication of the calcium and voltage sensors, more work is required to explore improved models able to reproduce more accurately the properties of the interaction CTD-VSD mechanism in BK channel.\n\n**Table 1.**\n Parameters for the best fits of the $Q_{C}(V)$ data using different Ca2+-VSD interaction models.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">One Ca2+-site per \u03b1-subunit</th>\n      <th></th>\n      <th colspan=\"6\">Two Ca2+-sites per \u03b1-subunit</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th rowspan=\"2\">Model I</th>\n      <th rowspan=\"2\">Model II</th>\n      <th></th>\n      <th></th>\n      <th colspan=\"2\">Model I</th>\n      <th></th>\n      <th colspan=\"2\">Model II</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Parameters</td>\n      <td></td>\n      <td>Parameters</td>\n      <td>With cooperativity</td>\n      <td>Without cooperativity</td>\n      <td></td>\n      <td>With cooperativity</td>\n      <td>Without cooperativity</td>\n    </tr>\n    <tr>\n      <td>zJ</td>\n      <td>0.61</td>\n      <td>0.61</td>\n      <td></td>\n      <td>zJ</td>\n      <td>0.61</td>\n      <td>0.61</td>\n      <td></td>\n      <td>0.61</td>\n      <td>0.61</td>\n    </tr>\n    <tr>\n      <td>J0</td>\n      <td>0.020</td>\n      <td>0.018</td>\n      <td></td>\n      <td>J0</td>\n      <td>0.019</td>\n      <td>0.019</td>\n      <td></td>\n      <td>0.021</td>\n      <td>0.019</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">E</td>\n      <td rowspan=\"2\">26.4*</td>\n      <td rowspan=\"2\">2.27*</td>\n      <td></td>\n      <td>ES1</td>\n      <td colspan=\"2\">4.57*</td>\n      <td></td>\n      <td colspan=\"2\">1.46*</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ES2</td>\n      <td colspan=\"2\">5.35*</td>\n      <td></td>\n      <td colspan=\"2\">1.52*</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">KD (\u00b5M)</td>\n      <td rowspan=\"2\">6.4</td>\n      <td rowspan=\"2\">6.1</td>\n      <td></td>\n      <td>KD1 (\u00b5M)</td>\n      <td>3.2</td>\n      <td>4.9</td>\n      <td></td>\n      <td>837.7</td>\n      <td>5.9</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>KD2 (\u00b5M)</td>\n      <td>631.7</td>\n      <td>6.9</td>\n      <td></td>\n      <td>6.6</td>\n      <td>5.9</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>G</td>\n      <td>56.1</td>\n      <td>1*</td>\n      <td></td>\n      <td>120.4</td>\n      <td>1*</td>\n    </tr>\n    <tr>\n      <td>AIC</td>\n      <td>\u2212948.4</td>\n      <td>\u22121150.9</td>\n      <td></td>\n      <td></td>\n      <td>\u22121088.9</td>\n      <td>\u22121090.3</td>\n      <td></td>\n      <td>\u22121162.0</td>\n      <td>\u22121147.5</td>\n    </tr>\n    <tr>\n      <td>Li</td>\n      <td>4*10\u221247</td>\n      <td>0.004</td>\n      <td></td>\n      <td></td>\n      <td>1*10\u221216</td>\n      <td>3*10\u221216</td>\n      <td></td>\n      <td>1</td>\n      <td>7*10\u22124</td>\n    </tr>\n    <tr>\n      <td>wi</td>\n      <td>4*10\u221247</td>\n      <td>0.004</td>\n      <td></td>\n      <td></td>\n      <td>1*10\u221216</td>\n      <td>3*10\u221216</td>\n      <td></td>\n      <td>0.995</td>\n      <td>0.001</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Fixed parameters in the model fitting. AIC values correspond to Akaike Information Criterion to select the best fit model. \u2112i and wi are the relative likelihood and the weight of each model within the set of candidate models._\n\nIn conclusion, our results depict a remarkable, and direct energetic interplay between the specialized sensory modules (VSD and CTD) of the BK channel. Our findings together with the emerging structural-functional information establish a new paradigm about how stimuli integration (depolarization and intracellular Ca2+) modulates this channel\u2019s activation and its relevance within a physiological context. Notable and unexpected is the equivalent contribution of the distinct ligand-binding sites in the cytosolic domain to the allosteric regulation of voltage sensing. Additional studies to discern the molecular bases underlying the Ca2+ and voltage propagation pathways and the cooperative interactions of the RCK1 and RCK2 regulatory domains may provide new clues about the dual gating mechanism of BK channel.\n\n## Materials and methods\n\n### Channel expression\n\nXenopus laevis oocytes were used as a heterologous system to express BK channels. The cDNA coding for the human BK \u03b1-subunit (U11058) was provided by L. Toro (University of California, Los Angeles, CA). The cDNA coding for independent mutants of each two high-affinity Ca2+ site from BK channel, the double mutant D362A/D367A (Xia et al., 2002), the mutant M513I (Bao et al., 2002) in the RCK1 Ca2+-binding site, and the mutant 5D5A (Schreiber and Salkoff, 1997) (D894A/D895A/D896A/D897A/D898A) in the RCK2 Ca2+-binding site or calcium bowl, were kindly provided by M. Holmgren (National Institutes of Health, Bethesda, MD). The cRNA was prepared using mMESSAGE mMACHINE (Ambion) for in vitro transcription. Xenopus laevis oocytes were injected with 50 ng of cRNA and incubated in an ND96 solution (in mM: 96 NaCl, 2 KCl, 1.8 CaCl2, 1 MgCl2, 5 HEPES, pH 7.4) at 18\u00b0C for 4\u20138 days before electrophysiological recordings.\n\n### Electrophysiological recordings\n\nAll recordings were made by using the patch-clamp technique in the inside-out configuration. Data were acquired with an Axopatch 200B (Molecular Devices) amplifier and the Clampex 10 (Molecular Devices) acquisition software. Gating current (IG) records were elicited by 1 ms voltage steps from \u221290 to 350 mV in increments of 10 mV. Both the voltage command and current output were filtered at 20 kHz using an 8-pole Bessel low-pass filter (Frequency Devices). Current signals were sampled with a 16-bit A/D converter (Digidata 1550B; Molecular Devices), using a sampling rate of 500 kHz. Linear membrane capacitance and leak subtraction were performed based on a P/4 protocol (Armstrong and Bezanilla, 1974).\n\nBorosilicate capillary glasses (1B150F-4, World Precision Instruments) were pulled in a horizontal pipette puller (Sutter Instruments). After fire-polishing, pipette resistance was 0.5\u20131 M\u03a9. The external (pipette) solution contained (in mM): 110 tetraethylammonium (TEA)-MeSO3, 10 HEPES, 2 MgCl2; pH was adjusted to 7.0. The internal solution (bath) contained (in mM): N-methyl-D-glucamine (NMDG)-MeSO3, 10 HEPES, and 5 EGTA for \u2018zero Ca2+\u2019 solution (\u223c0.8 nM, based on the presence of \u223c10 \u03bcM contaminant [Ca2+] (Cui et al., 1997). An agar bridge containing 1 M NaMES connected the internal solution to a pool of the external solution grounded with an Ag/AgCl electrode. The calculated bridge/bath junction potential was\u00a0~0.8 mV. For test solutions at different Ca2+ concentrations (0.1\u2013100 \u03bcM), CaCl2 was added to reach the desired free [Ca2+], and 5 mM EGTA (0.1\u20130.5 \u03bcM) or HEDTA (1\u201310 \u03bcM) was used as calcium buffer. No Ca2+ chelator was used in 100 \u00b5M Ca2+ solutions. Free calcium concentration was estimated using the WinMaxChelator Software and checked with a Ca2+-electrode (Hanna Instruments). All experiments were performed at room temperature (20\u201322\u00b0C). To measure IG at different Ca2+ concentrations in the same oocyte, the patch was excised and washed with an appropriate internal solution using at least 10 times the chamber volume.\n\n### Data analysis\n\nAll data analysis was performed using Clampfit 10 (Molecular Devices, RRID:SCR_011323), Matlab (MathWorks, RRID:SCR_001622) and Excel 2007 (Microsoft, RRID:SCR_016137). The first 50-100 \u00b5s of the ON-gating currents were fitted to a single exponential function and the area under the curve (Figure 1A-B) was integrated to obtain the charge displaced between closed states ($Q_{C}$) (Horrigan and Aldrich, 1999; Horrigan and Aldrich, 2002; Carrasquel-Ursulaez et al., 2015; Contreras et al., 2012). $Q_{C}(V)$\u00a0data for each [Ca2+]i were fitted using a Boltzmann function:\n\n$$\nQ_{C}(V)=\u00a0\\frac{Q_{C,\u00a0MAX}}{1+e^{(\\frac{\u2212z_{Q}F(V\u2212V_{H})}{RT})}}\n$$\n\nwhere $Q_{C,\u00a0MAX}$ is the maximum charge, $z_{Q}$\u00a0is the voltage dependence of activation, $V_{H}$\u00a0is the half-activation voltage, $T$\u00a0is the absolute temperature (typically 295 K), $F$\u00a0is the Faraday\u2019s constant, and $R$\u00a0is the universal gas constant.\u00a0$Q_{C,\u00a0MAX}$, $V_{H}$, and $z_{Q}$ were determined using least square minimization. $Q_{C}(V)$\u00a0curves were aligned by shifting them along the voltage axis by the mean $\u0394V=(\u27e8V_{H}\u27e9\u2212V_{H})$ to generate a mean curve that did not alter the voltage dependence (Horrigan et al., 1999). All error estimates are SEM.\n\nFor each experiment, the time constants obtained from exponential fits to ON-gating currents were shifted along the voltage axis by $\u0394V$\u00a0to determine the mean $\\tau_{I_{G}-ON}(V)$ relationships. $\\tau_{I_{G}-ON}(V)$\u00a0data were fitted to a two-states process described by\n\n$$\n\\tau(V)=1/\\alpha(V)+\\beta(V)\n$$\n\nwhere $\\alpha(V)=\\alpha_{0}e^{(z_{J}\\deltaFV/RT)}$\u00a0and $\\beta(V)=\\beta_{0}e^{(z_{J}(\\delta-1)FV/RT)}$\u00a0are, respectively, the forward and backward rate constants which determine the equilibrium constant $J$\u00a0of the voltage sensor (see below). The parameter $\\delta$\u00a0is the electrical distance at which the peak of the energy barrier that separates the two resting (R)-active\u00a0(A) states of the voltage sensor is located, and $z_{J}$ is the number of gating charges displaced during the R-A transition.\n\nThe Ca2+-induced effect on VSD activation was quantified as the $V_{H}$ shift relative to 'zero' Ca2+ condition:\u00a0$\u0394V_{H}=V_{H\u00a0([Ca^{2+}]_{i})}\u2212V_{H\u00a0(0\u00a0[Ca^{2+}]_{i})}$. For wild-type (WT) BK channel and the RCK Ca2+-sensor mutants (D362A/D367A, M513I and 5D5A), the energetic contribution of Ca2+-binding on resting-active (R-A) equilibrium of the voltage sensor was calculated as changes in Gibbs free energy of VSD activation induced by 100 \u00b5M Ca2+:\n\n$$\n\u0394\u0394G_{V}^{Ca}=F\u00a0(\u00a0z_{Q\u00a0(100\u00a0\\muM\u00a0[Ca^{2+}]_{i})}\u00a0V_{H\u00a0(100\u00a0\\muM\u00a0[Ca^{2+}]_{i})}\u2212\u00a0z_{Q\u00a0(0\u00a0[Ca^{2+}]_{i})}\u00a0V_{H\u00a0(0\u00a0[Ca^{2+}]_{i})})\n$$\n\n### Model fitting\n\nWe fit the $Q_{C}(V,Ca^{2+})$ experimental data using two distinct interaction mechanisms between Ca2+-binding sites and voltage sensor (see Scheme I and Scheme II in the Figure 3A-B) within the framework of Horrigan-Aldrich (HA) general allosteric model (Horrigan and Aldrich, 2002). Assumptions and considerations for the equations that describe each one of the Ca2+-VSD interaction schemes are given in the Appendix. In terms of the HA allosteric mechanisms, the voltage sensor R-A equilibrium is defined by the equilibrium constant $J$\u00a0according to the relation:\n\n$$\nJ=e^{\\frac{z_{J}F(V\u2212V_{H})}{RT}}=\u00a0J_{0}e^{\\frac{z_{J}FV}{RT}}\n$$\n\nwhere $J_{0}$ is the zero voltage equilibrium constant and $z_{J}$ the gating charge displacement per voltage sensor. Thus, the fraction of the total charge displaced essentially between closed states, $Q_{C}V/Q_{C,MAX}$\u00a0in the absence of calcium can be written as:\n\n$$\nQ_{C}(V)/Q_{C,\u00a0MAX}\u00a0(Ca^{2+}\u00a0\u226a\u00a0K_{D})=\\frac{1}{1+\u00a0J^{\u22121}}\n$$\n\nwhere $K_{D}$ is the dissociation constant of the high-affinity calcium-binding site with all voltage sensors at rest and the channel closed. In the presence of saturating Ca2+ (100 \u00b5M), the equilibrium of the R-A transition $J$\u00a0becomes amplified by the allosteric factor\u00a0$E$, which defines the coupling between Ca2+-binding sites and voltage sensors, being\n\n$$\nQ_{C}(V)/Q_{C,\u00a0MAX}\u00a0(Ca^{2+}\u00a0\u226b\u00a0K_{D})=\\frac{1}{1+\u00a0(JE)^{\u22121}}\n$$\n\nand\n\n$$\nJE=\u00a0J_{0}e^{\\frac{RTln\u2061(E)+z_{J}FV}{RT}}\n$$\n\nThe $Q_{C}(V)/Q_{C,\u00a0MAX}$ measured in the presence of high [Ca2+] and 'zero Ca2+' condition at the same voltage (so that $J$\u00a0be canceled out) but in the limit where $(JE)^{-1}\u226b1$ is:\n\n$$\n\\frac{Q_{C}(V)/Q_{C,\u00a0MAX}\u00a0(Ca^{2+}\u00a0\u226b\u00a0K_{D})}{Q_{C}(V)/Q_{C,\u00a0MAX}\u00a0(Ca^{2+}\u00a0\u226a\u00a0K_{D})}_{\u00a0(limJE^{\u22121}\u226b1)}\u00a0=\u00a0\\frac{JE}{J}\u00a0=\u00a0E\n$$\n\nThus, the Gibbs free energy perturbation of the voltage sensor R-A equilibrium when the high-affinity binding sites are approximately 100% occupied by Ca2+ (100 \u00b5M) is a straightforward measure of the allosteric factor:\u00a0$E=e^{\u2212\u0394\u0394G_{V}^{Ca}/RT}$.\n\nBased on these conditions, the values of the allosteric parameter $E$\u00a0were calculated and introduced in each of the two Ca2+-VSD interaction models as a fixed parameter. Once $E$\u00a0was obtained, the families of $Q_{C}(V,Ca^{2+})$ curves were simultaneously fitted to Equation 4 and Equation 6 (see Appendix) and estimating the\u00a0$z_{J}$, $J_{0}$\u00a0and $K_{D}$ parameters for each model by minimizing least-square values. To select the best Ca2+-VSD interaction scheme that describes the experimental data, the fits provided by each model were compared according to their Akaike Information Criterion ($AIC$) values (Akaike, 1974), calculated as\u00a0$AIC_{i}=2p_{i}-2ln\u2061L_{i}$, where $p_{i}$ is the number of free parameters and $ln\u2061L_{i}$ is the maximum log-likelihood of the model\u00a0$i$. The best fit being the one that achieves the lowest $AIC_{i}$ value. Minimum $AIC_{i}$ ($AIC_{MIN}$) values were used as model selection criteria. Using the $AIC_{i}$ weights ($w_{i}$), we estimated the probability of model $i$\u00a0is the best model given the data and the set of candidate models. $w_{i}$\u00a0are based on the relative likelihood of each tested model $i$\u00a0which is a function of the difference in $AIC_{i}$ score and the best model:\u00a0$\u0394AIC_{i}=AIC_{i}\u2212AIC_{MIN}$ (Anderson and Burnham, 2002). From the $\u0394AIC_{i}$ we obtained an estimate of the relative likelihood of model\u00a0$i$ ($\u2112_{i}$) by the simple transform:\u00a0$L_{i}=exp\u00a0(\u2212\\frac{1}{2}\u00a0\u0394AIC_{i})$. $w_{i}$\u00a0is calculated normalizing the $\u2112_{i}$ for each model:\u00a0$w_{i}=\u2112_{i}/\\sumk=1K\u2112_{k}$, where $K$\u00a0is the number of candidate models.\n\nThe models for the Ca2+-VSD interaction schemes were extended including two high-affinity Ca2+-binding sites per \u03b1-subunit (Figure 3\u2014figure supplement 1D-E). The contribution of each Ca2+-binding site to the free energy of the voltage sensor equilibrium may be split in two, such as\u00a0$E=E_{S1}\u2217E_{S2}=e^{\u2212(\u0394\u0394G_{V}^{Ca}(S1)\u00a0+\u00a0\u0394\u0394G_{V}^{Ca}(S2))/RT}$, where $E_{S1}$ and $E_{S2}$ are the allosteric factors $E$\u00a0for the RCK1 and RCK2 sites. Thus, for the global fit of the $Q_{C}(V,Ca^{2+})$ curves, we constrained the allosteric parameter $E_{S1}$ and $E_{S2}$ obtained experimentally for the RCK2 Ca2+-sensor mutant (5D5A) and RCK1 Ca2+-sensor mutant (D362A/D367A), respectively, as described above. The rest of the parameters\u00a0$z_{J}$, $J_{0}$, $K_{D1}$, $K_{D2}$, and\u00a0$G$, where $K_{D1}$ and $K_{D2}$ are the dissociation constants of the RCK1 and RCK2 sites and $G$\u00a0is a cooperativity factor between the two sites within the same \u03b1-subunit of the BK channel, were allowed to vary freely.\n",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "efbb6449-ae75-41f7-bfed-86d5d2d351a2",
+      "submission_id": "e86a7e6b-8900-423f-92db-39b064c72c25",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.44934.017](https://doi.org/10.7554/eLife.44934.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Calcium-driven regulation of voltage-sensing domains in BK channels\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers are in agreement that this paper represents an important contribution pertinent to the issue of how ligand-binding in BK channels may couple to channel activation. There is consensus that the results mainly embodied in Figure 1 are important and perhaps appropriate for eLife. However, the reviews together raise multiple, substantive points that can largely be broken into two categories. First, there are aspects of the data and analysis which require further elaboration. Second, to the extent the results challenge previous results, a rigorous, scholarly assessment of potential reasons for differences between the present results and those of Horrigan and Aldrich is required.\n\nRegarding the first point, details are given in the reviewers' comments, perhaps most clearly from reviewer #1, but all reviewers are in agreement on these issues. Here, some of the major concerns are summarized. The individual reviews elaborate on several important major issues. They are included below.\n\n1) It would be helpful to elaborate more clearly on how QC is determined, perhaps with examples, particularly at high Ca2+. The concern is that QC may not be adequately distinguished from QSS, which is known to shift substantially with increases in Ca2+. In this regard, it would also be valuable to have examples of the time course of current activation under identical conditions of higher Ca2+ to provide assurance that QC is not being affected by channel opening. These concerns are extensively developed particularly in the comments from reviewer #1.\n\n2) All reviewers note the apparent reduction in gating current amplitude at higher Ca2+. Although this may have a trivial explanation, some comment on this point should be provided. What was the time between each test step in the overall gating current protocol at a given Ca2+? Is QC,MAX changing with Ca2+? Does QOFF=QON, as expected? Is each example in Figure 1A from a separate patch?\n\n3) The shift in the QC /V relationship might also be expected to be associated with changes in kinetics, but this analysis was not done.\n\n4) The attempt to test various models by which Ca2+ binding might be coupled to effects on the voltage-sensor equilibrium focus on models with one Ca2+ binding site per subunit. Although the 4 Ca2+ site formulation appears to provide an ability to discriminate between Model I and II, it seems likely that an 8 site formulation might not discriminate as well between the two categories of model. As such, the conclusions from the considerations in Figure 2 and 3 seem less strongly based than one would like.\n\n5) There are various details in the results which are not mentioned. Why in some patches is there a non-zero offset during the gating current measurement? Was this dependent on Ca2+?\n\nFinally, although the conclusions are not qualitatively novel and interaction between Ca binding and VSD activation has previously been incorporated in the HA model, the conclusion that the interaction is \"strong\" rather \"weak\" is an important distinction and its implications e.g. for the HA model are incompletely explored. For example, if QC(V) is greatly shifted without a corresponding change in kinetics, then it suggests voltage-sensor activation cannot be described by a 2-state model. If the QC(V) relation is strongly shifted by Ca but QO-V is not then then VSD/Gate coupling (D) must be Ca-dependent (since D is defined by the difference between QC and QO). Horrigan and Aldrich concluded that QO is not very Ca-dependent because the limiting slope of the Po-V relation (i.e. QA-V) is only slightly shifted by Ca. We believe this is a result that has been essentially replicated by other labs. So trying to reconcile a large Ca-dependent shift in QC(V) with previous data about the Ca-dependence of Po would likely require fundamental changes in mechanistic assumptions that are not addressed.\n\nRegarding the assessment of the implications of the present results in comparison to Horrigan and Aldrich, it is not sufficient to simply claim the issue is resolved since the present results confirm earlier results from this same lab. That is ignoring the issue. Some assessment of whether there might be technical or analytical differences in each study would be minimally required. Taking both sets of results at face value, it would be helpful to provide readers with an objective comparison of the similarities and differences in what each group was measuring and how the gating current was determined. Although it may seem an unlikely explanation, there is also species difference and a difference in expression system. Although hSlo1 and mSlo1 are almost identical, there are unusual cases where single residue differences account for profound species differences. That can probably be discounted here, but it wouldn't hurt to mention it. Overall, the idea that there is some interaction between the cytosolic domain and the voltage sensor is not a new idea, but the question is the extent of the coupling. It should be kept in mind that, although the Aplysia structures have focused attention on this topic, the liganded aSlo1 structure included both high Mg and high Ca, and it is not unexpected that in the presence of Mg some interaction between the CTD and VSD would be observed. But structural information has not yet revealed that Ca alone may stabilize linkages between the cytosolic domain and the voltage-sensor.\n\nOverall, it is anticipated that the issues above can largely be addressed without new experiments, and it is hoped that some of the requested analysis may already be available. The reviewers feel that the observations in this paper are of merit, although currently difficult to interpret mechanistically. It is hoped that the requested changes will place this work on a stronger foundation that will help guide future work.\n\nReviewer #1:\n\nThis study examines the functional interaction between Calcium binding and voltage-sensor activation in BK channels, by measuring gating current at different [Ca2+] in the presence and absence of Ca2+ binding site mutations in RCK1 or RCK2 domains. The subject is timely given recent structural evidence that interactions between the cytoplasmic and voltage-sensor domains of Slo1 are modulated by Ca binding, and speculation that such interaction could make important contributions to Ca-dependent activation. Indeed, the authors conclude that direct interaction between Ca binding and voltage-sensor activation is strong, producing a ~26-fold increase in the equilibrium constant for voltage-sensor activation in saturating Ca2+. In addition, they find that Ca-binding to RCK1 and RCK2 make comparable and independent contributions to voltage sensor activation, and that the binding of Ca2+ to one subunit or site alters activation of all 4 voltage-sensors in a concerted manner. These conclusions have potentially important implication for understanding of BK channel gating mechanisms, with the caveat that some conclusions also appear to contradict previous studies making it more difficult to assess their significance.\n\nThe manuscript is generally well written, and the data are clearly described and appear to be of high quality. However, I think some additional analysis may be needed to help clarify differences between these and previous gating current results, and to better define the extent to which the data can discriminate between various models of interaction between Ca2+ binding sites and voltage sensors.\n\n1) Charge movement equilibria and kinetics:\n\nThe authors find that saturating Ca produces a -143 mV QC(V) shift, similar to a previous report from the same lab (Carrasquel-Ursulaez et al., 2015), but much larger than that reported by Horrigan and Aldrich (2002). Since there is no obvious explanation for these contradictory findings, the claim that \"this result resolves a previous debate regarding the magnitude of the Ca2+-driven shift\u2026\" does not appear reasonable. While I am not certain what criteria could resolve such a debate, for the authors' merely to replicate their previous findings does not seem sufficient in the absence of a clear source of error. Perhaps the best that can be done at this stage is to provide a detailed description of the data and analysis so that the results of the two groups can be adequately compared. Therefore, I think it is important to see a more complete description of the gating current kinetics including their voltage-dependence. One reason is simply that QC is estimated by fitting the ON current with an exponential function. Thus, it is conceivable that the kinetic analysis could contribute to differences in QC; and it would therefore be helpful to see examples of fits used to determine QC in the presence and absence of Ca2+. It also would be interesting to know whether a slow component of ON current and a slow increase in OFF charge with pulse duration (Qp) are observed in saturating Ca2+. Horrigan and Aldrich reported a large difference between QC(V) and the steady state Q-V relationship (QSS-V) in 70 \u03bcm Ca and prominent slow components of ON current and Qp (when measured at voltages near VH), consistent with a transition between QC and QSS when channels open. In the present study, however, if QC(V) is strongly shifted by Ca2+ then one might expect less difference between QC and QSS and little or no slow components of ON current and Qp. Another expectation is that if Ca produces a large QC(V) shift then it should also produce large changes in the time constant of fast charge movement (\u03c4fast). Therefore, it would be helpful to compare \u03c4fast(V) relations in the presence and absence of Ca. Horrigan and Aldrich observed a small Ca-dependent shift in the \u03c4fast(V) curves, comparable to that of QC(V), mainly due to an ~2-fold slowing of OFF charge movement. Surprisingly, the present study also describes small changes in kinetics including little effect of Ca on ON kinetics and a 2.5-fold slowing of the fast component of OFF kinetics in 10 \u03bcm Ca at -90 mV (Figure 2\u2014figure supplement 1). How can these effects be reconciled with the propose 26-fold change in equilibrium constant? Do the shapes of the \u03c4fast(V) curves provide any clues? Addressing these questions would help support the conclusions and gating models.\n\n2) Gating Models:\n\nWhether Ca binding to one subunit promotes activation of a single voltage sensor (Scheme I) or all 4 voltage-sensors through a concerted mechanism (Scheme II) is tested by comparing the ability of the corresponding gating schemes to fit QC(V) curves in different Ca. Importantly QC(V) curves shift with little change in shape. Therefore, Scheme I, which predicts a double-Boltzmann QC(V) at intermediate Ca is qualitatively inconsistent with the data while Scheme II, which predicts a sum of 5 Boltzmanns, can better account for the shape of the curves. However, I don't think this is an adequate test of the two mechanisms. Both models incorporate a single Ca site per subunit, inconsistent with the conclusion from Figure 4 that both sites contribute equally to voltage sensor activation. An extended version of scheme I with 2 binding sites would predict QC(V) curves that are essentially a sum of 3 Boltzmann functions and should therefore better fit the data. The question that should be addressed is whether the data can discriminate between versions of Schemes I and II with two binding sites per subunit.\n\nA related issue that should be clarified is the criteria used to discriminate between fits. The authors indicate that \"The best model fitting is that achieving the lowest AIC values\". However, they conclude that the extended version of Scheme II \"does not produce better fits to \ud835\udc44C(\ud835\udc49, [Ca2+]) according to the AIC criteria\" \u2013 even though the extended version appears to produce lower AIC values (Table 2) than the original version (Table 1). Presumably this is considered an insignificant difference. But there is no explanation of how to determine what is a significant difference.\n\n3) Modeling assumptions:\n\nAs I understand it, the equations (4 and 6) describing the QC(V) relations for Schemes I and II are based on the assumption that channels equilibrate between Ca-bound states while the channel is closed and voltage sensors are not activated \u2013 and that this distribution is not altered when gating current is measured because Ca binding is slower than voltage-sensor activation. While I agree that this is probably a reasonable assumption, I have some concern that it might not be. The authors argue \"the Ca2+-binding rate constant estimated for BK channel is about 108 M-1s-1(Hou et al., 2016) implying that at 10 \u03bcM internal Ca2+ the association time constant is 1 ms. Thus, Ca2+ binding at this Ca2+ concentration proceeds at a pace about 33-fold slower than the voltage sensor movement (~30 \u03bcs).\" I think this is an oversimplification and not accurate. First, the time-constant for Ca equilibration is also going to depend on the dissociation rate (~1560 s-1 for the low affinity site). Second, in the case of Scheme II, where subunits cannot be treated independently, the forward rate constant between Ca bound states is not simply equal to the association rate for a single binding site (1000 s-1) \u2013 e.g. it would be 4000 s-1 for the transition from zero to one Ca bound. So taken together, I think Ca-equilibration may only be ~4-5 slower than voltage-sensor movement. Is that enough of a difference?\n\nReviewer #2:\n\nThis manuscript shows a tour de force measurement of voltage dependence of gating charge movement (Q-V) during BK channel activation at various Ca concentrations ([Ca]). The large shift of the Q-V relation (-150 mV) in response to [Ca] increase from 0 to saturation (100 \u00b5M) suggests that Ca binding to the cytosolic gating ring alters voltage sensor activation. The authors conclude that the binding of Ca in each of the four subunits alters voltage sensor activation in all four subunits by fitting Q-V relations to different models. Mutational ablation of either of the two high affinity Ca2+ binding sites in each subunit reduces Ca2+ dependent shift of the Q-V relation by ~50%, suggesting that Ca2+ binding to either site contributes an equal amount of free energy in affecting voltage sensor activation. The authors made some conclusions based on these striking data, which are discussed as follows.\n\n1) Results section: \"In this manner, we determine only the gating charge displaced before the BK channel opening.\" This statement could be supported by showing ionic currents along with gating currents at the same voltages. The comparison in high [Ca] (\u226510 \u00b5M) would be particularly helpful.\n\n2) Figure 1 seems to show that as [Ca] increases the size of gating currents becomes smaller. Does this suggest that the total amount of fast charge movement diminishes at high [Ca]? What is the reason for this phenomenon and how is this related to the Ca-dependent shift of Q-V?\n\n3) The authors interpret their data based on the Horrigan and Aldrich (HA) allosteric model of voltage and Ca2+ dependent activation, despite a larger Q-V shift in response to [Ca] increase is observed than that by HA. As the authors point out, while this study suggests that Ca2+ binding to either of the RCK1 site or Ca Bowl affects VSD equally, previous studies showed that Ca2+ binding only to the RCK1 site affects voltage dependence of ionic currents (G-V). Do these differences in experimental observation suggest any novel mechanism of BK channel gating that requires a modification of the HA model? In fact, although the authors suggest that HA Model II in Figure 2 fits their data better than HA Model I, it seems that neither model fits the data well (Figure 3).\n\n4) Ca binding in one subunit equally affects all subunits, which suggests an allosteric interaction between Ca2+ binding and voltage sensor activation. It is not clear if Ca binding in one subunit alters all 4 cytosolic domains such that the entire gating ring interacts with all 4 VSD, or Ca binding in one subunit alters one VSD, which in turn affects all three other VSD's. There is also no evidence to distinguish if such an allosteric mechanism for Ca2+ binding to affect VSD activation is mediated by the covalent pulling of the C-linker or non-covalent interaction between the top of CTD and the bottom of VSD. Although based on previously published cryo-EM structures the authors favor the mechanism of the non-covalent VSD-CTD interactions, the present data seems not sufficient to exclude the contribution by the other mechanism.\n\nReviewer #3:\n\nThis is an important paper that addresses the issue of how Ca2+ binding to the cytosolic gating ring structure of BK channels allosterically couples to the voltage-sensor domains of BK channels, thereby ultimately influencing channel activation. One of the earlier papers on this topic (Horrigan and Aldrich, 2002) presented evidence that Ca2+ binding had only weak effects on voltage sensor equilibrium. More recent work has suggest that this may not be the case, and structures of the Aplysia Slo1 channel have supported the idea that there may be important links between the cytosolic domain and the voltage-sensors. Here, the authors present compelling evidence that Ca-binding to the cytosolic domain does allosterically influence VSD equilibrium and, furthermore, that each of the two Ca binding sites on a single BK \u03b1 subunit independently, and largely additively, influence the VSD equilibrium.\n\nThe authors undertake an analysis of a potential mechanism explaining their data and reveal that occupancy of any binding site allosterically influences the VSD equilibrium of all subunits (their Scheme II), rather than only a single associated VSD (Scheme I). This requires that binding to any individual site exerts some concerted effect through all four VSDs.\n\nOverall, the manuscript is clearly written and the data and analyses are solid. There are a few places that some clarifications in language are required. Also, a potential alternative conception of how 0-4 Ca2+ (actually, 0-8) may incrementally influence VSD equilibrium is mentioned, which the authors might want to consider.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Calcium-driven regulation of voltage-sensing domains in BK channels\" for further consideration at eLife. Your revised article has been favorably evaluated by Richard Aldrich (Senior Editor), a Reviewing Editor, and three reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nDetails regarding the remaining concerns were initially developed in the comments from reviewer #1, but all reviewers were in agreement that, if these concerns are addressed, it will greatly improve the paper and provide a better framework for evaluating the implications of the present work without the context of earlier work. As a general comment, several of the arguments developed in the responses to the initial reviews would be useful in clarifying for readers what was done in this paper, and the rationale for various inferences (point 4 below). In particular, both figures that were included in the response to reviewers would be valuable additions as supplementary figures. Similarly, although the new manuscript includes the analysis from the two-high-affinity binding site model in Table 1, readers may find it odd that fits from these models are not included on main figures (or at least in figure supplements) in the paper. In particular, as reviewer #1 notes, although Table 1 supports the view that Model II does better than Model I, even for the two Ca site formulation, visually comparing these in fits to the Q-V and VH-Ca curves would give us a better feel for how well the data may discriminate between Model I and Model II (point 2 below). We therefore recommend including comparisons of fits on relevant panels, either in the main figures or, if that seems too cluttered, perhaps in supplementary figures.\n\nThere are four main categories of concern/recommendations corresponding to the itemization of reviewer #1.\n\n1) Although the new information regarding gating current decay time constants is a valuable addition to the paper, there are aspects of this data that maintain the concern that Ca-equilibration with subunits with active voltage sensors may impact on the gating current decay time course, particularly at intermediate Ca. In particularly, the separation of calculated Ca equilibration rates and the observed time constants may not be as distinct as one might like. This might potentially impact the steepness of the VH-Ca relationship. I would recommend that the figure included in the rebuttal that plots the z\u2202 and residuals as a function of ratio of \u03c4Ca binding/\u03c4gating currents be made into a supplementary figure, but with the addition that the analysis be done both using the first 30 \u03bcs and also the first 100 \u03bcs for comparison. Reviewer #1 also includes an additional suggestion for such a figure. Please also check whether the discontinuity in the plot of residuals observed at \u03c4 ratios of about 4 and 5 is a feature of the simulation or something else. Such a discontinuity seems a bit odd for a simulated data.\n\nAlso pertinent to this issue, two reviewers point out that the example gating current decay time constants from the new Figure 1A and 1B may not be fully consistent with the averaged data in Figure 1C. E.g., the time constant in 1B is above 0.8 of that in 1A, while at +160 mV in 1C, the time constants at 100 \u03bcM are about 0.5 that at 0 \u03bcM.\n\n2) Showing the fits to the two Ca binding site formulation needs to be included, as mentioned above. Even if Model I and Model II give fits that extensively overlap, it is useful to know this. Similarly, a comparison of how much different the fits are with single site and two site Ca binding formulations would be helpful.\n\n3) There appear to be some discrepancies in the properties of OFF gating current time constants that need to be addressed.\n\n4) As stated at the outset, there is information in the response to reviewers that should be included in the manuscript to help guide readers.\n\nOverall, all of these issues can presumably be addressed without new experiments. We hope the authors will agree that these recommendations will strengthen an interesting paper and better help the intended audience place this work within the context of previous work on BK channel gating.\n\nReviewer #1:\n\nThe authors' response and modifications to the manuscript are helpful and address many of my questions. However, there are still some issues that require clarification.\n\n1) Appendix, subsection \u201cAssumptions and model predictions\u201d, third paragraph: \"Ca2+ binding at this Ca2+ concentration proceeds at a pace about 33-fold slower than the voltage sensor movement (~30 \u03bcs).\"\n\nThe new kinetic data (Figure 1C) indicates that the gating current time constant is actually as slow as 75 \u03bcs near VH (i.e. slower than 0 Ca). That, and the simulated effect of Ca-binding kinetics in response to my previous review, have increased concerns about the assumption that Ca binding does not re-equilibrate during gating current measurements at intermediate [Ca], and I think this issue requires some additional analysis. This assumption is critical for modeling the Ca-dependence of the Q-V data and distinguishing between Schemes I and II. The simulation indicates that if Ca binding can re-equilibrate, then Q-Vs predicted by Scheme I will become more Boltzmann-like, potentially making it more difficult to distinguish Schemes I and II. In addition, I wonder if re-equilibration could contribute to the remarkable steepness of the VH-Ca relation between 5 and 10 \u03bcm Ca \u2013 a feature that is not well described by any of the models. That is, re-equilibration should increase the VH shift (since voltage-sensor activation will enhance Ca-binding) and if Ca re-equilibration is faster at higher [Ca] then it would tend to increase the steepness of the curve\n\nThe 75 \u03bcs gating current time constant in Figure 1C increases my concern because it is potentially closer to the time constant of Ca binding. For example, at the [Ca] used in the simulation (15 \u03bcM), the on-rate at a single binding site would be 1500 s-1, or 6000 s-1 for the transition from zero to one Ca bound with 4 binding sites, implying a time constant less than 166 \u03bcs (depending on off-rate). Thus, it seems possible that Ca-binding could be only ~2 fold slower than voltage sensor activation under some conditions. The simulation seems to suggest this is probably not a problem since there is little change in the Q-V fit parameters when the Ca-binding time constant is 3-fold or more slower than gating current. However, I have two concerns about the simulation analysis: (1) the Q-Vs were measured by fitting the first 30 \u03bcs of the simulated gating current, whereas the experimental data were measured from the first 100 \u03bcs. This could lead the simulation to underestimate the potential contribution of Ca re-equilibration to the data. (2) It doesn't seem reasonable to fit the simulated Q-Vs with a single Boltzmann function if the assumption to be tested (no re-equilibration) predicts a double-Boltzmann Q-V. In other words, although the simulation shows little change in the Q-V fit parameters when the Ca-binding time constant is 3-fold or more slower than gating current, I wonder if this indicates that there is no change in the Q-V over this range, or merely that the fits to a single Boltzmann function are all equally bad. I think the simulation analysis should be repeated by fitting the initial 100 \u03bcs of the gating current, and fitting the resulting Q-Vs to the prediction when there is no re-equilibration of Ca (i.e. double Boltzmann). Presumably, such fits, or showing the actual Q-Vs, would better define the conditions under which the model assumptions are valid. Plotting VH might also be useful.\n\n2) Although I accept the conclusion, based on Table 1, that Scheme II fits the data better than Scheme I even with 2 binding sites per subunit, I think it would be good to show the fits for the 2-site models, at least in the supplement. One reason, as I suggested in my initial review, is that I don't think it is reasonable to dismiss Scheme I based on the qualitative difference in Q-V shape for a one-site model, when such a model is model is inconsistent with the data in Figure 5. That is simply a \"straw man\" argument. But, mainly, as noted by another reviewer, none of the models fit very well, suggesting neither Schemes are the final answer. In such a situation, I think it is important to show the fits for future reference.\n\n3) The authors partially addressed my question about gating current kinetics with Figure 1C. The time constants for the ON currents do appear to shift along the voltage-axis in response to Ca, consistent with the Q-V. But they didn't address my question regarding the relatively small 2.5-fold Ca-dependent change in OFF kinetics in Figure 2\u2014figure supplement 1. The authors suggest, based on Figure 1C that the main effect Ca is to slow OFF kinetics, but Figure 2\u2014figure supplement 1 isn't consistent with that prediction. Presumably if ON time constants are decreased ~2-fold by Ca then OFF time constants should increase ~10 fold to account for the large E-factor. Are the data representative? Can OFF kinetics included in the time constant plot?\n\n4) Finally, many of the responses to reviewers are fine, but should be incorporated in the manuscript. Requests for clarification generally refer to issues that need to be better explained not only to the reviewers but also to the intended audience of the paper. For example, when I requested clarification in the Materials and methods section regarding the grounding scheme, I meant that such details should be included in the Materials and methods section. Similarly, the author's clarification that representative traces in Figure 2A are from different patches with the exception of 0 and 100 Ca is helpful, but should be described in the figure legend.\n\nReviewer #2:\n\nThe revised manuscript is improved, and all my questions are addressed.\n\nReviewer #3:\n\nThe authors have responded in generally satisfactory fashion to many of the major issues raised by the reviewer. The includes the kinetics of QCactivation, how QCwas measured, the apparent Ca2+-dependence of gating current amplitude, the impact of including 2 types of Ca2+ binding sites in the model fitting, and a more balanced consideration of how the present results fit with previous work.\n\nThe manuscript and new changes still suffer from abundant English usage errors, including some where the meaning of the phrasing is not clear.\n\nThe new Figure 1 nicely addresses the issue of what is actually being measured and whether the QCmeasurements might include contamination from later voltage sensor movements. Furthermore, the figure address the topic of the Ca2+ dependent of QCkinetics. There is one issue that persists in this data. The time constant in 1A (0 Ca2+) is 52 \u03bcs, while in 1B (100 \u03bcM) it is 42 \u03bcs, both at +160 mV. Examination of the averaged data in panel C show that at +160 mV, \u03bcIG-ON is a bit larger than 0.06 ms for 0 Ca2+, generally consistent with the trace in 1A, while for 100 \u03bcM it appears to be a little above 0.025 ms. The values for the displayed example at 100 \u03bcM seems to be well outside the error bars, than one might expect. Perhaps something needs to be checked here.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below\n\nThank you for resubmitting your work entitled \"Calcium-driven regulation of voltage-sensing domains in BK channels\" for further consideration at eLife. Your revised article has been favorably evaluated by Richard Aldrich (Senior Editor), a Reviewing Editor, and three reviewers.\n\nThe manuscript has been improved but there a few remaining issues that need to be addressed before acceptance, as outlined below:\n\nPlease address reviewer #1's concerns about the off gating charge and correct the minor language issues. I believe that these will be easy for you to address.\n\nReviewer #1:\n\nThe revised manuscript is improved and adequately addresses most of my concerns. However, the authors expressed some confusion over my questions regarding the apparent discrepancy in OFF gating current kinetics, which I will attempt to clarify.\n\n\"We are somewhat confused about the reviewer 1 comment 3. As stated in Results the \ud835\udf0f\ud835\udc3a\u2212\ud835\udc42\ud835\udc41(\ud835\udc49) curves were fitted to a two-state model (\ud835\udf0f(\ud835\udc49)=1/(\ud835\udefc(\ud835\udc49)+\ud835\udefd(\ud835\udc49)) where the forward (\ud835\udefc) and backward (\ud835\udefd) rate constants represent the resting-active (R-A) transitions of the voltage sensors determining the equilibrium constant of the VSD activation (\ud835\udc3d(\ud835\udc49)=\ud835\udefc(\ud835\udc49)\ud835\udefd(\ud835\udc49)). Our statement that the main effect of Ca2+ is to slow down the OFF kinetics is based on the determination of \ud835\udefc(\ud835\udc49) and \ud835\udefd(\ud835\udc49) using the values of \ud835\udf0f\ud835\udc3c\ud835\udc3a\u2212\ud835\udc42\ud835\udc41(\ud835\udc49) and J(V). This calculation indicates that \ud835\udefd(\ud835\udc49) increase 10.9-fold when the Ca2+ concentration is increased to 100 \u03bcM (see legend in Figure 1), in a reasonable agreement with the large allosteric factor E. It is unclear to us why the reviewer is referring to Figure 2\u2014figure supplement 1, a figure that is not directly comparable to Figure 1C.\"\n\nMy questions about gating current kinetics (Comments #3 in previous review, #1 in original review) relate in large part to the data in Figure 2\u2014figure supplement 1. I asked whether the difference in gating current kinetics shown for 0 and 10 \u03bcm Ca in Figure 2\u2014figure supplement 1 are consistent with a large Q-V shift (as observed in 10 Ca). In particular, I noted that there is a relatively small change from 0 to 10 Ca in the time constant of the fast component of OFF current at -90 mV, which doesn't seem compatible with a large Q-V shift. The fast OFF component at -90 mV should be a relatively direct measure of the backward rate \u03b2 (i.e. \u03c4~=1/\u03b2). If there is a small change in ON kinetics and large Q-V shift, then there should be a large change in \u03b2 and hence OFF kinetics. The authors make essentially the same prediction based on their fits to the ON kinetics in Figure 1C. But they do not include OFF data to directly confirm the prediction or address my concern.\n\n\"We would like to include the OFF time constant plot requested by the reviewer, but these kind of experiments are in extremely difficult to do at high Ca2+,.\u2026\"\n\nI do not think that measurements of OFF kinetics at multiple voltages are necessary. Measurements at a single voltage like -90 mV should suffice. If OFF kinetics have not or cannot be measured at 100 Ca, then I suggest adding the ON kinetics at 10 Ca to Figure 1C together with OFF data at -90 mV for 0 and 10 Ca. Based on Figure 2\u2014figure supplement 1, such data already exists.\n\nReviewer #2:\n\nThe authors took the suggestions of the last review and the revised manuscript includes more complete data and balanced description. I have no further comments.\n\nReviewer #3:\n\nOverall, the authors have addressed most or all of the issues that have been raised in previous reviews. It is still unclear why the results here differ from those of Horrigan and Aldrich, but the present paper now thoroughly documents the results, and provides more detailed consideration of the assumptions and analysis that lead the authors to their conclusions. Furthermore, the paper now addresses the unresolved issues in a generally more scholarly fashion. Although questions remain, this paper provides a valuable contribution to the issue of CTD-VSD coupling in BK channels.\n",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c79a9d21-6a34-45a7-85af-aa3edb9a04be",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C1",
+      "claim": "BK channels are regulated by cytosolic Ca2+ and depolarizing voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the BK channels are regulated by cytosolic Ca2+ and depolarizing voltages (Marty, 1981; Pallotta et al., 1981; Latorre et al., 1982), they are integrators of physiological stimuli involving intracellular Ca2+ elevation and membrane excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three published studies (Marty, 1981; Pallotta et al., 1981; Latorre et al., 1982).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "a144c9b0-5881-4e2e-abc0-ba6e8633cf2c",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C2",
+      "claim": "BK channels are integrators of physiological stimuli involving intracellular Ca2+ elevation and membrane excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the BK channels are regulated by cytosolic Ca2+ and depolarizing voltages (Marty, 1981; Pallotta et al., 1981; Latorre et al., 1982), they are integrators of physiological stimuli involving intracellular Ca2+ elevation and membrane excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the dual regulation by Ca2+ and voltage, which are key physiological signals.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "ee85610d-7b9f-4a27-9bd5-ed0d3edf06d1",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C3",
+      "claim": "Different modules in BK channels harbor voltage and Ca2+ sensors that communicate allosterically with the channel gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, different modules harbor voltage and Ca2+ sensors that communicate allosterically with the channel gate (Cox et al., 1997; Horrigan and Aldrich, 1999; Horrigan and Aldrich, 2002; Horrigan et al., 1999; Rothberg and Magleby, 1999; Rothberg and Magleby, 2000; Cui and Aldrich, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "5a1f04e1-5292-4c0b-8fa5-4e916fcdca55",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C4",
+      "claim": "Functional BK channels are formed by homotetramers of \u03b1-subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional BK channels are formed by homotetramers of \u03b1-subunits (Shen et al., 1994), each comprising a transmembrane voltage-sensing domain (VSD) and an intracellular Ca2+-sensing C-terminal domain (CTD) that can independently modulate the ion conduction gate in the pore domain (PD) (Latorre et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies (Shen et al., 1994; Latorre et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "f04a8526-07b7-41d8-82d6-f5d1d1d5f48d",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C5",
+      "claim": "Each BK \u03b1-subunit comprises a transmembrane voltage-sensing domain (VSD) and an intracellular Ca2+-sensing C-terminal domain (CTD) that can independently modulate the ion conduction gate in the pore domain (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "Functional BK channels are formed by homotetramers of \u03b1-subunits (Shen et al., 1994), each comprising a transmembrane voltage-sensing domain (VSD) and an intracellular Ca2+-sensing C-terminal domain (CTD) that can independently modulate the ion conduction gate in the pore domain (PD) (Latorre et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Latorre et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "bdaa1705-459b-406c-b475-f82d7f07afa1",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C6",
+      "claim": "The CTDs consist of two non-identical regulators of the conductance of K+ domains (RCK1 and RCK2) arranged in a ring-like tetrameric structure dubbed the gating ring.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTDs consist of two non-identical regulators of the conductance of K+ domains (RCK1 and RCK2) arranged in a ring-like tetrameric structure dubbed the gating ring (Wu et al., 2010; Yuan et al., 2010; Yuan et al., 2012; Hite et al., 2017; Tao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "cb0a27f6-75f4-408c-a0de-5af328209ecf",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C7",
+      "claim": "Each RCK domain contains distinct ligand-binding sites capable of detecting Ca2+ in the micromolar range.",
+      "claim_type": "EXPLICIT",
+      "source": "Each RCK domain contains distinct ligand-binding sites capable of detecting Ca2+ in the micromolar range (Schreiber and Salkoff, 1997; Bao et al., 2002; Xia et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "1badf442-675d-49a7-ae2c-d68181c3ed28",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C8",
+      "claim": "In the absence of Ca2+, the activation of the VSD decreases the free energy necessary to fully open the BK channels in an allosteric fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Ca2+, the activation of the VSD decreases the free energy necessary to fully open the BK channels in an allosteric fashion (Horrigan and Aldrich, 1999; Horrigan et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "f630b467-9d9d-4c60-8423-4ecafdeb61ce",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C9",
+      "claim": "With 0 Ca2+, very positive membrane potentials are required to drive all voltage sensors to their active conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "With 0 Ca2+, very positive membrane potentials are required to drive all voltage sensors to their active conformations (Cui et al., 1997; Stefani et al., 1997; Horrigan et al., 1999; Contreras et al., 2012), ultimately leading to near-maximal BK activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "02bda4fa-95cc-4255-8cd3-64e34478adab",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C10",
+      "claim": "An appreciable open probability of BK channels at physiologically relevant voltages necessarily requires the activation of the Ca2+ sensors on the gating ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in cells such as neurons, an appreciable open probability of BK channels at physiologically relevant voltages necessarily requires the activation of the Ca2+ sensors on the gating ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement of very positive potentials in the absence of Ca2+ and the physiological context.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "cbd60552-20fe-45e7-a3c9-0a66f46d7c89",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C11",
+      "claim": "The voltage dependence of Ca2+-dependent gating ring rearrangements supports the idea that the energetic interaction between both specialized sensors may be crucial for BK channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The voltage dependence of Ca2+-dependent gating ring rearrangements (Miranda et al., 2013; Miranda et al., 2018) and RCK1 site occupancy (Sweet and Cox, 2008; Savalli et al., 2012; Miranda et al., 2018) as well as the perturbation of VSD movements by Ca2+ binding (Savalli et al., 2012) support the idea that the energetic interaction between both specialized sensors may be crucial for BK channel activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "28176431-5e26-4900-8fc0-67404d6ed118",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C12",
+      "claim": "The physical CTD-VSD interface has been suggested to provide the structure capable of mediating the crosstalk between these sensory modules and their synergy in activating the pore domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The physical CTD-VSD interface has been suggested to provide the structure capable of mediating the crosstalk between these sensory modules and their synergy in activating the pore domain (Yang et al., 2007; Sun et al., 2013; Tao et al., 2017; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "07170687-a632-4753-8e42-a868ed004e0e",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C13",
+      "claim": "The strength of the interaction between voltage and Ca2+ sensors and their relevance to BK channel activation is still debated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the strength of the interaction between voltage and Ca2+ sensors and their relevance to BK channel activation is still debated (cf. Horrigan and Aldrich, 2002; Carrasquel-Ursulaez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to conflicting studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "2968dd83-2134-4c73-becb-c24566ce0cc1",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C14",
+      "claim": "The RCK1 and RCK2 Ca2+-binding sites have distinct functional properties conferred by their different molecular structures and relative positions within the gating ring.",
+      "claim_type": "EXPLICIT",
+      "source": "The RCK1 and RCK2 Ca2+-binding sites have distinct functional properties conferred by their different molecular structures and relative positions within the gating ring (Wu et al., 2010; Yuan et al., 2010; Yuan et al., 2012; Hite et al., 2017; Tao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "db0c3aec-1fff-43eb-94df-d28f8d4f893e",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C15",
+      "claim": "The RCK sites differ in their Ca2+ binding affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the RCK sites differ in their Ca2+ binding affinities (Bao et al., 2002; Xia et al., 2002; Sweet and Cox, 2008), divalent cations selectivity (Oberhauser et al., 1988; Schreiber and Salkoff, 1997; Zeng et al., 2005; Zhou et al., 2012), voltage dependence (Sweet and Cox, 2008; Savalli et al., 2012; Miranda et al., 2018) and in their contribution to allosteric gating mechanisms (Yang et al., 2010; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "c80fad2d-6f33-41fd-9cfc-b3ad1a613314",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C16",
+      "claim": "Only the RCK1 site appears to be involved in communicating the Ca2+-dependent conformational changes towards the membrane-spanning VSD.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, only the RCK1 site appears to be involved in communicating the Ca2+-dependent conformational changes towards the membrane-spanning VSD (Savalli et al., 2012; Miranda et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "4838a5fb-41e1-4f4c-b4da-4887ce18d389",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C17",
+      "claim": "The Aplysia BK structure has revealed that the N-lobe of the RCK1 domain is in a non-covalent contact with the VSD and the S4-S5 linker that connects the voltage sensor to the pore domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the Aplysia BK structure has revealed that the N-lobe of the RCK1 domain is in a non-covalent contact with the VSD and the S4-S5 linker that connects the voltage sensor to the pore domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural information from the Aplysia BK channel.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "4f9faeb0-97b1-420f-b519-4569dc425094",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C18",
+      "claim": "The RCK1-VSD interaction surface is rearranged when comparing the liganded and Ca2+-free structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This RCK1-VSD interaction surface is rearranged when comparing the liganded and Ca2+-free structures (Hite et al., 2017; Tao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "33e98cdd-42f5-45e7-9434-30cc17f074d6",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C19",
+      "claim": "It has been hypothesized that any Ca2+-induced rearrangements of the gating ring should ultimately be transmitted to the pore domain via the VSD.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it has been hypothesized that any Ca2+-induced rearrangements of the gating ring should ultimately be transmitted to the pore domain via the VSD (Hite et al., 2017; Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "ba6a17ff-ffea-446c-9744-e72607434ff5",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C20",
+      "claim": "Ca2+ sensor occupancy has a strong impact on VSD activation through a coordinated interaction mechanism in which Ca2+ binding to a single \u03b1-subunit affects all VSDs equally.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that Ca2+ sensor occupancy has a strong impact on VSD activation through a coordinated interaction mechanism in which Ca2+ binding to a single \u03b1-subunit affects all VSDs equally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "d8d8d79c-cd00-4d0f-a06b-eb1c4e49416c",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C21",
+      "claim": "The two distinct high-affinity Ca2+-binding sites contained in the C-terminus domains, RCK1 and RCK2, contribute equally to decrease the free energy necessary to activate the VSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the two distinct high-affinity Ca2+-binding sites contained in the C-terminus domains, RCK1 and RCK2, contribute equally to decrease the free energy necessary to activate the VSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data from mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "d49c0fa0-325b-4078-ad8a-4e01188e1905",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C22",
+      "claim": "Voltage-dependent gating and pore opening in BK channels is modulated to a great extent by the interaction between Ca2+ sensors and VSDs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that voltage-dependent gating and pore opening in BK channels is modulated to a great extent by the interaction between Ca2+ sensors and VSDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "9a07088c-a6c7-4512-8cd9-249087b323c3",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C23",
+      "claim": "The IG-ON relaxation exhibits an almost complete decay before the IK achieves an exponential time course in 0 Ca2+ conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The IG-ON relaxation exhibits an almost complete decay before the IK achieves an exponential time course in 0 Ca2+ conditions (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "6c562e63-0a43-4ca6-9a9d-26549dbd94da",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C24",
+      "claim": "The time constant of the IK activation is ~3.4 ms at 160 mV in 0 Ca2+ conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the time constant of the IK activation (~3.4 ms at 160 mV) following a delay of ~160 \u00b5s is consistent with the movement of the voltage sensors preceding channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental measurements shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "6968487a-240e-4b50-b757-07fae532759b",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C26",
+      "claim": "The fast IG-ON relaxation reflects the movement of the gating charge in the channel's closed conformation, regardless of internal Ca2+ concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the fast IG-ON relaxation reflects the movement of the gating charge in the channel's closed conformation, regardless of internal Ca2+ concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the kinetic analysis of gating and ionic currents.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "c8e12132-d5e3-475b-9ddb-9186192a3c2f",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C34",
+      "claim": "The OFF-gating current was dramatically modified becoming smaller in amplitude and with slower kinetics as the internal Ca2+ concentration was increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2A shows that the OFF-gating current was dramatically modified becoming smaller in amplitude and with slower kinetics as the internal Ca2+ concentration was increased (see also Figure 2\u2014figure supplement 1A and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "6491b858-6cb2-455d-8aad-b0fdfbf64892",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C35",
+      "claim": "At least two components (fast and slow components) could be resolved in the OFF gating current decay in 'zero' and 10 \u00b5M internal Ca2+ conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "At least two components (fast and slow components) could be resolved in the OFF gating current decay in 'zero' and 10 \u00b5M internal Ca2+ conditions (Figure 2\u2014figure supplement 1B-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "f6abdb7e-dd6c-4735-b50b-108b906498e6",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C36",
+      "claim": "The time constants of the fast relaxation of the IG-OFF evoked at -90 mV are in reasonable agreement with the time constants values extrapolated to the same voltage from the two-state model of the IG-ON kinetic.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2\u2014figure supplement 1D shows that the time constants of the fast relaxation of the IG-OFF evoked at -90 mV (open and closed orange circles) are in reasonable agreement with the time constants values extrapolated to the same voltage from the two-state model of the IG-ON kinetic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "d5aafe1d-8737-476f-9979-acf6092f341c",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C38",
+      "claim": "The relative contribution of the slower component increasing as internal Ca2+ is increased, reflecting an increase in the open probability of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the relative contribution of the slower component increasing as internal Ca2+ is increased, reflecting an increase in the open probability of the channel (Figure 2\u2014figure supplement 1E-F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 1E-F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "550924bb-ef9d-4428-9ed8-ab7da18d317f",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C39",
+      "claim": "At applied voltages of -150 mV and -200 mV, the charge displaced in the ON is recovered in the OFF.",
+      "claim_type": "EXPLICIT",
+      "source": "At these applied voltages, the charge displaced in the ON is recovered in the OFF (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "ab7325bb-654a-4063-b069-3d5d42d5b2d5",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C41",
+      "claim": "The standard HA model makes two simplifying assumptions: the model considers that there is a single Ca2+-binding site per \u03b1-subunit, and the model assumes the Scheme I as the Ca2+ binding-VSD interaction scheme.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the standard HA model makes two simplifying assumptions. First, the model considers that there is a single Ca2+-binding site per \u03b1-subunit. Second, the model assumes the Scheme I as the Ca2+ binding-VSD interaction scheme underlying the general gating mechanism of BK channel (Horrigan and Aldrich, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the assumptions of the Horrigan-Aldrich model based on the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "7e50fcc6-3174-4b9f-8706-b49725fcd3c7",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C45",
+      "claim": "The Ca2+-binding effect on the VSD activation according to Scheme II is characterized by a five-component Boltzmann function.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the Ca2+-binding effect on the VSD activation according to Scheme II is characterized by a five-component Boltzmann function (Figure 3\u2014figure supplement 1C and Equation 6 in Appendix).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on model predictions shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "2a616271-1eb0-4bab-b2c7-6d086ba2bf37",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C48",
+      "claim": "Ca2+-binding is slow enough to safely ignore calcium re-equilibration during the 100 \u03bcs it takes to measure the gating charges.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we can conclude that Ca2+-binding is slow enough to safely ignore calcium re-equilibration during the 100 \u03bcs it takes to measure the gating charges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of Ca2+ binding kinetics relative to gating current kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "ed0ef9b3-0d92-45ff-970c-4d1b7a295670",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C53",
+      "claim": "Under physiological conditions, the RCK1 and RCK2 high-affinity Ca2+-binding sites are responsible for all the calcium sensitivity of the activation of BK channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Under physiological conditions, the RCK1 and RCK2 high-affinity Ca2+-binding sites are responsible for all the calcium sensitivity of the activation of BK channel (Schreiber and Salkoff, 1997; Bao et al., 2002; Bao et al., 2004; Xia et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "56e000f1-755f-4a69-b96c-d52e74307938",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C55",
+      "claim": "The mutant M513I has been shown to eliminate the Ca2+ sensitivity mediated by the RCK1 site.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined the effect of the mutant M513I (Bao et al., 2002) which has been shown to eliminate the Ca2+ sensitivity mediated by the RCK1 site (Bao et al., 2002; Bao et al., 2004; Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "3966e1fe-d8e1-477e-94b5-1bbe1e374e25",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C59",
+      "claim": "Both high-affinity Ca2+-binding sites contribute approximately equally to the decrease in free energy that is necessary to activate the VSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, both high-affinity Ca2+-binding sites contribute approximately equally to the decrease in free energy that is necessary to activate the VSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar effects of RCK1 and RCK2 mutations on VSD activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "8c9abf0c-0ee0-4289-87fb-ec87a8c455fd",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C62",
+      "claim": "These findings reveal an additive effect of Ca2+-binding to the RCK1 and Ca2+ bowl sites on the VSD activation, which suggest independent allosteric pathways through which they exert their modulation on the VSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, these findings reveal an additive effect of Ca2+-binding to the RCK1 and Ca2+ bowl sites on the VSD activation, which suggest independent allosteric pathways through which they exert their modulation on the VSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the equal and additive contributions of RCK1 and RCK2 sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "57186248-3b88-4729-b939-ba164aff26f3",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C69",
+      "claim": "These results suggest that functional activation of the gating ring is propagated to the VSD, leading to structural perturbations of voltages sensors, thereby favoring its active conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that functional activation of the gating ring is propagated to the VSD, leading to structural perturbations of voltages sensors, thereby favoring its active conformation (Savalli et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on interpretation of fluorescence studies cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "c0de159c-e159-4a0e-8786-e720135dbc23",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C70",
+      "claim": "The structural rearrangement of the gating ring in response to Ca2+ has a voltage dependence attributable to the operation of the voltage sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the structural rearrangement of the gating ring in response to Ca2+ has a voltage dependence (Miranda et al., 2013; Miranda et al., 2018) attributable to the operation of the voltage sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "5d3007b7-7b91-4f7a-bb1a-15f9e441ec03",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C72",
+      "claim": "Perturbations of pore opening equilibrium (e.g. through the F315A mutation or the assembly of BK\u03b1 channel with \u03b31-subunit) does not modify the voltage-dependent reorganization of the gating ring.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, perturbations of pore opening equilibrium (e.g. through the F315A mutation or the assembly of BK\u03b1 channel with \u03b31-subunit) does not modify the voltage-dependent reorganization of the gating ring (Miranda et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "bd050a07-fe01-447b-a980-310c22dc39d7",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C73",
+      "claim": "The VSD and Ca2+ sites interact in the manner described by Scheme II reproduces reasonably well the behavior of the Ca2+-dependent gating charge movement observed in our experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Proposing that the VSD and Ca2+ sites interact in the manner described by Scheme II reproduces reasonably well the behavior of the Ca2+-dependent gating charge movement observed in our experiments (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on model fitting to experimental data shown in Figure 4B\u2013D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "a41c927b-f190-4568-b12c-cdf578839431",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C74",
+      "claim": "This concerted CTD-VSD communication may underlie a mechanism analogous to the mechanical strategy of interaction between the homooctameric ring of RCK domains and the pore module described for bacterial K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This concerted CTD-VSD communication may underlie a mechanism analogous to the mechanical strategy of interaction between the homooctameric ring of RCK domains and the pore module described for bacterial K+ channels (Jiang et al., 2002; Ye et al., 2006; Lingle, 2007; Pau et al., 2011; Smith et al., 2012; Smith et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, drawing an analogy to bacterial K+ channels based on citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "cc32717c-a337-4452-8360-ab6f17990427",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C75",
+      "claim": "In both MthK and BK channels the Ca2+-site occupancy triggers a conformational change corresponding to a symmetric overall rearrangement of the cytosolic tetrameric structure that is ultimately propagated to the transmembrane regions (TMD) via C-linker and in the BK channel, also via the protein-protein interfaces between the gating ring and the TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "In both MthK and BK channels the Ca2+-site occupancy triggers a conformational change corresponding to a symmetric overall rearrangement of the cytosolic tetrameric structure that is ultimately propagated to the transmembrane regions (TMD) via C-linker and in the BK channel, also via the protein-protein interfaces between the gating ring and the TMD (Jiang et al., 2002; Jiang et al., 2003; Ye et al., 2006; Yuan et al., 2010; Yuan et al., 2012; Pau et al., 2011; Smith et al., 2012; Tao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "71e95d6c-d972-4bcd-b980-c423b21e3689",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C76",
+      "claim": "Each Ca2+-binding event produces a gradual conformational expansion of the gating ring affecting the four voltage sensors in each step through the progressive perturbations within the protein-protein interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we can speculate that each Ca2+-binding event produces a gradual conformational expansion of the gating ring affecting the four voltage sensors in each step through the progressive perturbations within the protein-protein interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "0b586d77-1411-41fa-99f4-46eda5740807",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C77",
+      "claim": "The communication pathway through which the Ca2+-driven conformational changes are propagated to the voltage sensors appears to reside on the CTD-VSD interface that involves non-covalent interactions between RCK1 N-lobe and S0-S4 transmembrane segments.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, the communication pathway through which the Ca2+-driven conformational changes are propagated to the voltage sensors appears to reside on the CTD-VSD interface that involves non-covalent interactions between RCK1 N-lobe and S0-S4 transmembrane segments (Yang et al., 2007; Yang et al., 2008; Yang et al., 2010; Sun et al., 2013; Hite et al., 2017; Tao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "4d402541-2c5a-4551-9ca9-3dd2a69fbc09",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C78",
+      "claim": "Binding of Ca2+ makes the RCK1 N-lobe pull on the S6 helix from its subunit whereas the modification of the contact surface between the RCK1 N-lobe with the voltage sensor of an adjacent subunit induces an outward displacement of the voltage sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, binding of Ca2+ makes the RCK1 N-lobe pull on the S6 helix from its subunit whereas the modification of the contact surface between the RCK1 N-lobe with the voltage sensor of an adjacent subunit induces an outward displacement of the voltage sensor (Hite et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural information from Hite et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "abd2e181-05a4-4115-a8c5-677d5758b7b4",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C79",
+      "claim": "Residues on the \u03b2A-\u03b1C region are involved in the allosteric connection of the Ca2+-dependent activation mediated by RCK1 site occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Scanning mutagenesis of RCK1-N terminal subdomain indicates that residues on the \u03b2A-\u03b1C region are involved in the allosteric connection of the Ca2+-dependent activation mediated by RCK1 site occupancy (Yang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "d4beb516-9d68-4c1d-a8e8-0eee9f4567d2",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C80",
+      "claim": "The selective activation of the RCK1 domain was identified as being responsible for the Ca2+-induced VSD rearrangement and the voltage dependence of the Ca2+-driven motions of gating ring.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this study, the selective activation of the RCK1 domain was identified as being responsible for the Ca2+-induced VSD rearrangement (Savalli et al., 2012) and the voltage dependence of the Ca2+-driven motions of gating ring (Miranda et al., 2016; Miranda et al., 2018), suggesting that CTD-VSD allosteric coupling is primarily determined by the RCK1 site (Sweet and Cox, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "12e6b8e4-efc3-4bce-8d82-457babff379e",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C81",
+      "claim": "The constructs D362A/D367A and 5D5A selectively impair the Ca2+-sensitivity of the RCK1- and RCK2-sensors, respectively, by neutralizing the residues that are involved in contributing to Ca2+-coordination.",
+      "claim_type": "EXPLICIT",
+      "source": "The constructs D362A/D367A and 5D5A (D894A-D898A) selectively impair the Ca2+-sensitivity of the RCK1- and RCK2-sensors, respectively, by neutralizing the residues that are involved in contributing to Ca2+-coordination (Zhang et al., 2010; Tao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "296200a9-b7a4-42a6-9a30-1b856048e1f4",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C82",
+      "claim": "Comparing the fast gating charge movement at 0 Ca2+ and saturating Ca2+ conditions reveals that the energetic effect of Ca2+-binding on voltage sensor equilibrium is practically identical (~ \u22124 kJ/mol) for both the D362A/D367A and the 5D5A mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the fast gating charge movement at 0 Ca2+ and saturating Ca2+ conditions reveals that the energetic effect of Ca2+-binding on voltage sensor equilibrium is practically identical (~ \u22124 kJ/mol) for both the D362A/D367A and the 5D5A mutations (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "ef4b9c92-719f-40ae-ab07-14d30502a4b6",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C83",
+      "claim": "Our findings establish that the RCK2-driven contribution to CTD-VSD energetic coupling is quite similar to the RCK1-driven contribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings establish that the RCK2-driven contribution to CTD-VSD energetic coupling is quite similar to the RCK1-driven contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data from mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "b7dc34cb-ce40-4d95-a108-58a7d72c69d7",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C84",
+      "claim": "The M513I mutation hinders the Ca2+-dependent activation associated with the RCK1-sensor, presumably by disrupting the structural integrity of the binding site and the transduction pathway through the \u03b2A-\u03b1C region.",
+      "claim_type": "EXPLICIT",
+      "source": "This point mutation hinders the Ca2+-dependent activation associated with the RCK1-sensor, presumably by disrupting the structural integrity of the binding site and the transduction pathway through the \u03b2A-\u03b1C region (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "7ce37c53-d796-4155-8ac1-3ca7c9ad72bc",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C85",
+      "claim": "The energetic contribution of each RCK site to the voltage sensor equilibrium is the same and its combination mimics the VSD Ca2+-sensitivity of the fully occupied sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the energetic contribution of each RCK site to the voltage sensor equilibrium is the same and its combination mimics the VSD Ca2+-sensitivity of the fully occupied sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data from mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "64c0fc40-66f8-4518-af77-7eb22741df87",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C87",
+      "claim": "Our results suggest that the two RCK-sensors contribute independently to the modulation on the VSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest that the two RCK-sensors contribute independently to the modulation on the VSD, although we cannot eliminate the possibility of some cooperativity between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the additive effects of RCK1 and RCK2 sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "7463e73f-51b3-4cd7-ade5-3ddd73169d0b",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C88",
+      "claim": "Various lines of evidence indicate that there is some, albeit modest, cooperativity between the two high-affinity Ca2+-binding sites although its nature is still unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, various lines of evidence indicate that there is some, albeit modest, cooperativity between the two high-affinity Ca2+-binding sites although its nature is still unclear (Qian et al., 2006; Savalli et al., 2012; Sweet and Cox, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "c65ac675-ebe9-4d9d-99c6-810b2cff514d",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C89",
+      "claim": "Intra and intersubunit structural connectivity supports the putative cooperative interactions between the Ca2+ sensors at the gating ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Intra and intersubunit structural connectivity supports the putative cooperative interactions between the Ca2+ sensors at the gating ring (Hite et al., 2017; Yuan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "0395275a-321f-4954-a877-0afc850df3d0",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C90",
+      "claim": "A recent functional study of the intrasubunit connections between the RCK1 site and Ca2+ bowl (R514-Y904/E902 interactions) has shown that such connections are potential candidates for the structural determinants underlying a cooperative mechanism between the RCK1- and RCK2-sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a recent functional study of the intrasubunit connections between the RCK1 site and Ca2+ bowl (R514-Y904/E902 interactions) has shown that such connections are potential candidates for the structural determinants underlying a cooperative mechanism between the RCK1- and RCK2-sensor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes findings from a recent functional study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "add0cf2b-091e-4c55-a1c3-1d8af5ee0d0a",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C91",
+      "claim": "These interactions are involved in either the preservation of the integrity of RCK1 Ca2+-binding site or define the allosteric propagation pathway of the chemical energy induced by Ca2+ binding towards transmembrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions are involved in either the preservation of the integrity of RCK1 Ca2+-binding site or define the allosteric propagation pathway of the chemical energy induced by Ca2+ binding towards transmembrane domains (Kshatri et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "2bff431c-4103-4ce4-a80b-e850ded03268",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C92",
+      "claim": "Based on the cryo-EM structure of Aplysia californica BK channel, it has been proposed that there should be a positive cooperativity between the Ca2+-binding at RCK1 site and the Ca2+ bowl since the Ca2+-induced conformational change of the RCK1-N lobes from closed to open configuration depends on the functional state (unliganded and liganded) of both RCK sites.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of the cryo-EM structure of Aplysia californica BK channel, (Hite et al., 2017) proposed that there should be a positive cooperativity between the Ca2+-binding at RCK1 site and the Ca2+ bowl since the Ca2+-induced conformational change of the RCK1-N lobes from closed to open configuration depends on the functional state (unliganded and liganded) of both RCK sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on structural analysis from Hite et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "f68507f3-8a5a-4ffa-ab81-419a1dfd4b66",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C93",
+      "claim": "Functional studies point out a more relevant role of the intrasubunit cooperativity (albeit modest) than the intersubunit cooperativity between the RCK Ca2+ sites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, functional studies point out a more relevant role of the intrasubunit cooperativity (albeit modest) than the intersubunit cooperativity between the RCK Ca2+ sites (Niu and Magleby, 2002; Qian et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "f8806268-cfa3-4ed5-baa8-a2932dd9a1ef",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C94",
+      "claim": "A concerted CTD-VSD model (Scheme II) gives better explanation than an independent CTD-VSD model (Scheme I) to the allosteric communication of the calcium and voltage sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although a concerted CTD-VSD model (Scheme II) gives better explanation than an independent CTD-VSD model (Scheme I) to the allosteric communication of the calcium and voltage sensors, more work is required to explore improved models able to reproduce more accurately the properties of the interaction CTD-VSD mechanism in BK channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on model comparison analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "f68bfcf9-c9f7-49bf-93a4-7e60956e6497",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C95",
+      "claim": "The cDNA coding for the human BK \u03b1-subunit (U11058) was provided by L. Toro (University of California, Los Angeles, CA).",
+      "claim_type": "EXPLICIT",
+      "source": "The cDNA coding for the human BK \u03b1-subunit (U11058) was provided by L. Toro (University of California, Los Angeles, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the source of materials used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "5f29a6a8-e2cd-43ee-9b5e-e216481d9507",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C96",
+      "claim": "The cDNA coding for independent mutants of each two high-affinity Ca2+ site from BK channel were kindly provided by M. Holmgren (National Institutes of Health, Bethesda, MD).",
+      "claim_type": "EXPLICIT",
+      "source": "The cDNA coding for independent mutants of each two high-affinity Ca2+ site from BK channel, the double mutant D362A/D367A (Xia et al., 2002), the mutant M513I (Bao et al., 2002) in the RCK1 Ca2+-binding site, and the mutant 5D5A (Schreiber and Salkoff, 1997) (D894A/D895A/D896A/D897A/D898A) in the RCK2 Ca2+-binding site or calcium bowl, were kindly provided by M. Holmgren (National Institutes of Health, Bethesda, MD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the source of materials used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "5db0fdf5-34d1-4bbb-aafc-4b38351f8c13",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C97",
+      "claim": "Xenopus laevis oocytes were used as a heterologous system to express BK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Xenopus laevis oocytes were used as a heterologous system to express BK channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental system used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "8550cf57-7e7d-44c4-b132-98c0835e37a8",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "claim_id": "C98",
+      "claim": "All recordings were made by using the patch-clamp technique in the inside-out configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "All recordings were made by using the patch-clamp technique in the inside-out configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2783185f-8c79-4ecb-a740-7d65abd51dc6",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BK channels are modular proteins regulated by both voltage and Ca2+, with distinct structural domains (VSD, CTD, PD) that communicate allosterically. At physiologically relevant voltages, Ca2+ binding to the gating ring is necessary for appreciable channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 are all supported by extensive citations to prior literature and represent well-established background knowledge about BK channel structure and function. These claims provide the foundational context for the study and are not contested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "8594ff91-b82e-4acd-8f38-d22ac3750be9",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work suggests energetic interaction between Ca2+ and voltage sensors is important for BK activation, with the RCK1-VSD interface potentially mediating crosstalk. However, the strength and mechanism of this interaction remain debated, and the specific roles of RCK1 vs RCK2 sites are unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C19 accurately summarize the state of prior knowledge and open questions in the field, supported by appropriate citations. These claims establish the motivation for the current study by identifying gaps and controversies in understanding CTD-VSD coupling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "d2cef1ef-bcbb-4ffe-898e-4371674ab964",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study's main findings are that Ca2+ binding strongly impacts VSD activation through a coordinated mechanism where Ca2+ binding to one subunit affects all VSDs equally, and that both RCK1 and RCK2 sites contribute equally to decreasing the free energy needed for VSD activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 represent the core conclusions of the manuscript and are supported by the experimental data presented in Figures 1-6, including gating current measurements, mutant analysis, and model fitting. The conclusions are logically derived from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "73d5cbe3-ece6-4061-bafd-437377ca7079",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The fast IG-ON relaxation reflects voltage sensor movement in the closed channel conformation, occurring before channel opening, as demonstrated by kinetic analysis showing the gating current decays before ionic current activation begins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are directly supported by the experimental data in Figure 1A-B showing temporal separation between gating current decay and ionic current activation. The interpretation that fast gating currents reflect closed-state voltage sensor movement is well-justified by the kinetic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "4199dd68-e3fb-41fb-93a3-c5d782e4213a",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "OFF-gating currents show Ca2+-dependent changes in amplitude and kinetics, with at least two components (fast and slow) that can be resolved. The fast component time constants agree with two-state model predictions, while the slow component increases with Ca2+, reflecting increased open probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are supported by data in Figure 2 and supplementary figures showing OFF-gating current properties. The kinetic analysis and model fitting provide quantitative support for the two-component interpretation and its relationship to channel opening.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "bcf2bbdc-cc5f-4285-be0e-47b92eb8936a",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The standard Horrigan-Aldrich model assumes a single Ca2+ site per subunit and independent CTD-VSD interaction (Scheme I). Alternative Scheme II predicts five-component Boltzmann behavior. Ca2+ binding is slow enough (~300 \u03bcs at 10 \u03bcM) relative to VSD activation (~60 \u03bcs) to ignore Ca2+ re-equilibration during gating current measurement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C45, and C48 are supported by appropriate citations for the HA model assumptions and by kinetic analysis (including Figure 3\u2014figure supplement 2) demonstrating that Ca2+ binding kinetics are sufficiently slow to justify the experimental approach. The reasoning is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "34762795-0b8b-4f45-a39d-cb4c8445c9a8",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Model II (concerted CTD-VSD interaction where Ca2+ binding to one subunit affects all VSDs) better explains the experimental Ca2+-dependent gating charge movement than Model I (independent interaction), based on AIC analysis and the constant slope of QC(V) curves across Ca2+ concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C94 are supported by the model fitting results in Figure 4 and Table 1, which show Model II has superior AIC values and correctly predicts the Ca2+-independence of zQ. The statistical model comparison provides strong quantitative support for this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "e7e85b85-ba3e-4e53-a2dd-f3d51010b8db",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both RCK1 and RCK2 high-affinity Ca2+-binding sites contribute approximately equally (~4 kJ/mol each) to decreasing the free energy needed for VSD activation. Mutations selectively disrupting each site (D362A/D367A for RCK1, 5D5A for RCK2, M513I for RCK1) show similar effects, suggesting independent allosteric pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C87 are strongly supported by the mutant analysis data in Figures 5-6 showing quantitatively similar energetic contributions from RCK1 and RCK2 sites. The use of multiple independent mutations affecting RCK1 (D362A/D367A and M513I) strengthens the conclusion. The additive effects support independent pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The CTD-VSD coupling mechanism likely involves Ca2+-induced conformational changes in the gating ring propagated to VSDs via the RCK1 N-lobe/VSD interface. This may occur through a concerted mechanism analogous to bacterial K+ channels, where each Ca2+ binding event produces gradual gating ring expansion affecting all four VSDs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C80 are largely based on prior structural and functional studies (citations) and speculation about mechanisms. While the cited evidence supports these interpretations, the current study does not directly test these structural mechanisms. Claim C76 is explicitly speculative. The mechanistic model is plausible but requires additional structural/functional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "4090f39c-2a8a-4684-998e-25a1e3f38b40",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "There is evidence for modest cooperativity between RCK1 and RCK2 Ca2+-binding sites, with structural connectivity supporting potential cooperative interactions. Functional studies suggest intrasubunit cooperativity is more relevant than intersubunit cooperativity, though the nature of cooperativity remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C93 accurately summarize prior literature on cooperativity between Ca2+ sites, supported by appropriate citations. These claims acknowledge the complexity and uncertainty in the field regarding cooperativity mechanisms, which is an honest assessment of the current state of knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    },
+    {
+      "id": "a5f4a9d3-fb12-4977-aeac-18de738f4d10",
+      "content_id": "6b92b6db-eb9f-4ae8-af4d-d58ea4e674c4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study used human BK \u03b1-subunit and mutants expressed in Xenopus oocytes, with recordings made using inside-out patch-clamp technique.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 describe standard methodological details that are clearly stated and appropriate for the experiments conducted. These are factual statements about materials and methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:08:37.959827Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c79a9d21-6a34-45a7-85af-aa3edb9a04be",
+      "result_id": "2783185f-8c79-4ecb-a740-7d65abd51dc6"
+    },
+    {
+      "claim_id": "a144c9b0-5881-4e2e-abc0-ba6e8633cf2c",
+      "result_id": "2783185f-8c79-4ecb-a740-7d65abd51dc6"
+    },
+    {
+      "claim_id": "ee85610d-7b9f-4a27-9bd5-ed0d3edf06d1",
+      "result_id": "2783185f-8c79-4ecb-a740-7d65abd51dc6"
+    },
+    {
+      "claim_id": "5a1f04e1-5292-4c0b-8fa5-4e916fcdca55",
+      "result_id": "2783185f-8c79-4ecb-a740-7d65abd51dc6"
+    },
+    {
+      "claim_id": "f04a8526-07b7-41d8-82d6-f5d1d1d5f48d",
+      "result_id": "2783185f-8c79-4ecb-a740-7d65abd51dc6"
+    },
+    {
+      "claim_id": "bdaa1705-459b-406c-b475-f82d7f07afa1",
+      "result_id": "2783185f-8c79-4ecb-a740-7d65abd51dc6"
+    },
+    {
+      "claim_id": "cb0a27f6-75f4-408c-a0de-5af328209ecf",
+      "result_id": "2783185f-8c79-4ecb-a740-7d65abd51dc6"
+    },
+    {
+      "claim_id": "1badf442-675d-49a7-ae2c-d68181c3ed28",
+      "result_id": "2783185f-8c79-4ecb-a740-7d65abd51dc6"
+    },
+    {
+      "claim_id": "f630b467-9d9d-4c60-8423-4ecafdeb61ce",
+      "result_id": "2783185f-8c79-4ecb-a740-7d65abd51dc6"
+    },
+    {
+      "claim_id": "02bda4fa-95cc-4255-8cd3-64e34478adab",
+      "result_id": "2783185f-8c79-4ecb-a740-7d65abd51dc6"
+    },
+    {
+      "claim_id": "cbd60552-20fe-45e7-a3c9-0a66f46d7c89",
+      "result_id": "8594ff91-b82e-4acd-8f38-d22ac3750be9"
+    },
+    {
+      "claim_id": "28176431-5e26-4900-8fc0-67404d6ed118",
+      "result_id": "8594ff91-b82e-4acd-8f38-d22ac3750be9"
+    },
+    {
+      "claim_id": "07170687-a632-4753-8e42-a868ed004e0e",
+      "result_id": "8594ff91-b82e-4acd-8f38-d22ac3750be9"
+    },
+    {
+      "claim_id": "2968dd83-2134-4c73-becb-c24566ce0cc1",
+      "result_id": "8594ff91-b82e-4acd-8f38-d22ac3750be9"
+    },
+    {
+      "claim_id": "db0c3aec-1fff-43eb-94df-d28f8d4f893e",
+      "result_id": "8594ff91-b82e-4acd-8f38-d22ac3750be9"
+    },
+    {
+      "claim_id": "c80fad2d-6f33-41fd-9cfc-b3ad1a613314",
+      "result_id": "8594ff91-b82e-4acd-8f38-d22ac3750be9"
+    },
+    {
+      "claim_id": "4838a5fb-41e1-4f4c-b4da-4887ce18d389",
+      "result_id": "8594ff91-b82e-4acd-8f38-d22ac3750be9"
+    },
+    {
+      "claim_id": "4f9faeb0-97b1-420f-b519-4569dc425094",
+      "result_id": "8594ff91-b82e-4acd-8f38-d22ac3750be9"
+    },
+    {
+      "claim_id": "33e98cdd-42f5-45e7-9434-30cc17f074d6",
+      "result_id": "8594ff91-b82e-4acd-8f38-d22ac3750be9"
+    },
+    {
+      "claim_id": "ba6a17ff-ffea-446c-9744-e72607434ff5",
+      "result_id": "d2cef1ef-bcbb-4ffe-898e-4371674ab964"
+    },
+    {
+      "claim_id": "d8d8d79c-cd00-4d0f-a06b-eb1c4e49416c",
+      "result_id": "d2cef1ef-bcbb-4ffe-898e-4371674ab964"
+    },
+    {
+      "claim_id": "d49c0fa0-325b-4078-ad8a-4e01188e1905",
+      "result_id": "d2cef1ef-bcbb-4ffe-898e-4371674ab964"
+    },
+    {
+      "claim_id": "9a07088c-a6c7-4512-8cd9-249087b323c3",
+      "result_id": "73d5cbe3-ece6-4061-bafd-437377ca7079"
+    },
+    {
+      "claim_id": "6c562e63-0a43-4ca6-9a9d-26549dbd94da",
+      "result_id": "73d5cbe3-ece6-4061-bafd-437377ca7079"
+    },
+    {
+      "claim_id": "6968487a-240e-4b50-b757-07fae532759b",
+      "result_id": "73d5cbe3-ece6-4061-bafd-437377ca7079"
+    },
+    {
+      "claim_id": "c8e12132-d5e3-475b-9ddb-9186192a3c2f",
+      "result_id": "4199dd68-e3fb-41fb-93a3-c5d782e4213a"
+    },
+    {
+      "claim_id": "6491b858-6cb2-455d-8aad-b0fdfbf64892",
+      "result_id": "4199dd68-e3fb-41fb-93a3-c5d782e4213a"
+    },
+    {
+      "claim_id": "f6abdb7e-dd6c-4735-b50b-108b906498e6",
+      "result_id": "4199dd68-e3fb-41fb-93a3-c5d782e4213a"
+    },
+    {
+      "claim_id": "d5aafe1d-8737-476f-9979-acf6092f341c",
+      "result_id": "4199dd68-e3fb-41fb-93a3-c5d782e4213a"
+    },
+    {
+      "claim_id": "550924bb-ef9d-4428-9ed8-ab7da18d317f",
+      "result_id": "4199dd68-e3fb-41fb-93a3-c5d782e4213a"
+    },
+    {
+      "claim_id": "ab7325bb-654a-4063-b069-3d5d42d5b2d5",
+      "result_id": "bcf2bbdc-cc5f-4285-be0e-47b92eb8936a"
+    },
+    {
+      "claim_id": "7e50fcc6-3174-4b9f-8706-b49725fcd3c7",
+      "result_id": "bcf2bbdc-cc5f-4285-be0e-47b92eb8936a"
+    },
+    {
+      "claim_id": "2a616271-1eb0-4bab-b2c7-6d086ba2bf37",
+      "result_id": "bcf2bbdc-cc5f-4285-be0e-47b92eb8936a"
+    },
+    {
+      "claim_id": "bd050a07-fe01-447b-a980-310c22dc39d7",
+      "result_id": "34762795-0b8b-4f45-a39d-cb4c8445c9a8"
+    },
+    {
+      "claim_id": "f8806268-cfa3-4ed5-baa8-a2932dd9a1ef",
+      "result_id": "34762795-0b8b-4f45-a39d-cb4c8445c9a8"
+    },
+    {
+      "claim_id": "ed0ef9b3-0d92-45ff-970c-4d1b7a295670",
+      "result_id": "e7e85b85-ba3e-4e53-a2dd-f3d51010b8db"
+    },
+    {
+      "claim_id": "56e000f1-755f-4a69-b96c-d52e74307938",
+      "result_id": "e7e85b85-ba3e-4e53-a2dd-f3d51010b8db"
+    },
+    {
+      "claim_id": "3966e1fe-d8e1-477e-94b5-1bbe1e374e25",
+      "result_id": "e7e85b85-ba3e-4e53-a2dd-f3d51010b8db"
+    },
+    {
+      "claim_id": "8c9abf0c-0ee0-4289-87fb-ec87a8c455fd",
+      "result_id": "e7e85b85-ba3e-4e53-a2dd-f3d51010b8db"
+    },
+    {
+      "claim_id": "12e6b8e4-efc3-4bce-8d82-457babff379e",
+      "result_id": "e7e85b85-ba3e-4e53-a2dd-f3d51010b8db"
+    },
+    {
+      "claim_id": "296200a9-b7a4-42a6-9a30-1b856048e1f4",
+      "result_id": "e7e85b85-ba3e-4e53-a2dd-f3d51010b8db"
+    },
+    {
+      "claim_id": "ef4b9c92-719f-40ae-ab07-14d30502a4b6",
+      "result_id": "e7e85b85-ba3e-4e53-a2dd-f3d51010b8db"
+    },
+    {
+      "claim_id": "7ce37c53-d796-4155-8ac1-3ca7c9ad72bc",
+      "result_id": "e7e85b85-ba3e-4e53-a2dd-f3d51010b8db"
+    },
+    {
+      "claim_id": "64c0fc40-66f8-4518-af77-7eb22741df87",
+      "result_id": "e7e85b85-ba3e-4e53-a2dd-f3d51010b8db"
+    },
+    {
+      "claim_id": "57186248-3b88-4729-b939-ba164aff26f3",
+      "result_id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d"
+    },
+    {
+      "claim_id": "c0de159c-e159-4a0e-8786-e720135dbc23",
+      "result_id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d"
+    },
+    {
+      "claim_id": "5d3007b7-7b91-4f7a-bb1a-15f9e441ec03",
+      "result_id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d"
+    },
+    {
+      "claim_id": "a41c927b-f190-4568-b12c-cdf578839431",
+      "result_id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d"
+    },
+    {
+      "claim_id": "cc32717c-a337-4452-8360-ab6f17990427",
+      "result_id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d"
+    },
+    {
+      "claim_id": "71e95d6c-d972-4bcd-b980-c423b21e3689",
+      "result_id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d"
+    },
+    {
+      "claim_id": "0b586d77-1411-41fa-99f4-46eda5740807",
+      "result_id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d"
+    },
+    {
+      "claim_id": "4d402541-2c5a-4551-9ca9-3dd2a69fbc09",
+      "result_id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d"
+    },
+    {
+      "claim_id": "abd2e181-05a4-4115-a8c5-677d5758b7b4",
+      "result_id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d"
+    },
+    {
+      "claim_id": "d4beb516-9d68-4c1d-a8e8-0eee9f4567d2",
+      "result_id": "a2b48ddf-416c-4c41-ae2d-266bcd95a41d"
+    },
+    {
+      "claim_id": "7463e73f-51b3-4cd7-ade5-3ddd73169d0b",
+      "result_id": "4090f39c-2a8a-4684-998e-25a1e3f38b40"
+    },
+    {
+      "claim_id": "c65ac675-ebe9-4d9d-99c6-810b2cff514d",
+      "result_id": "4090f39c-2a8a-4684-998e-25a1e3f38b40"
+    },
+    {
+      "claim_id": "0395275a-321f-4954-a877-0afc850df3d0",
+      "result_id": "4090f39c-2a8a-4684-998e-25a1e3f38b40"
+    },
+    {
+      "claim_id": "add0cf2b-091e-4c55-a1c3-1d8af5ee0d0a",
+      "result_id": "4090f39c-2a8a-4684-998e-25a1e3f38b40"
+    },
+    {
+      "claim_id": "2bff431c-4103-4ce4-a80b-e850ded03268",
+      "result_id": "4090f39c-2a8a-4684-998e-25a1e3f38b40"
+    },
+    {
+      "claim_id": "f68507f3-8a5a-4ffa-ab81-419a1dfd4b66",
+      "result_id": "4090f39c-2a8a-4684-998e-25a1e3f38b40"
+    },
+    {
+      "claim_id": "f68bfcf9-c9f7-49bf-93a4-7e60956e6497",
+      "result_id": "a5f4a9d3-fb12-4977-aeac-18de738f4d10"
+    },
+    {
+      "claim_id": "5f29a6a8-e2cd-43ee-9b5e-e216481d9507",
+      "result_id": "a5f4a9d3-fb12-4977-aeac-18de738f4d10"
+    },
+    {
+      "claim_id": "5db0fdf5-34d1-4bbb-aafc-4b38351f8c13",
+      "result_id": "a5f4a9d3-fb12-4977-aeac-18de738f4d10"
+    },
+    {
+      "claim_id": "8550cf57-7e7d-44c4-b132-98c0835e37a8",
+      "result_id": "a5f4a9d3-fb12-4977-aeac-18de738f4d10"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C72"
+    ],
+    "result": "Zebrafish ceratohyal (Ch) bones undergo extensive remodeling during juvenile stages, transitioning from cartilage-filled structures to fat-filled bones. Histological analysis shows that at 11 mm SL, the Ch contains chondrocytes throughout with a thin cortical bone layer. By 12-13 mm SL, cortical bone breaks appear with cartilage matrix degradation. At later stages (16-19 mm SL), cortical bone regains integrity and marrow adipocytes appear, culminating in adult bones with large fat cells and mineralized growth plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C18, and C72 are well-supported by detailed histological data in Figure 1, showing progressive developmental stages with pentachrome staining and LipidTOX labeling. The temporal sequence is clearly documented with specific size measurements and corresponding anatomical changes. The data directly demonstrate the remodeling process from cartilage to fat-filled bone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C103",
+      "C104"
+    ],
+    "result": "Ch bone remodeling is accompanied by extensive vascular invasion. At 10-11 mm SL, vessels are found outside the Ch bone. By 13-20 mm SL, increasing numbers of capillaries appear within the Ch, coinciding with chondrocyte replacement by adipocytes. At 28 mm SL, the Ch is heavily supplied with both blood vessels (kdrl:GFP+) and lymphatic vessels (lyve1:DsRed+) that abut the growth plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C103, and C104 are supported by confocal imaging data in Figure 2 showing progressive vascularization using multiple transgenic markers (fli1a:GFP, kdrl:GFP, lyve1:DsRed). The temporal correlation between vascular invasion and cartilage-to-adipocyte replacement is clearly demonstrated. The use of multiple independent vascular markers strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Growth plate chondrocytes marked by sox10:CreERT2 contribute to osteoblasts, marrow adipocytes, and mesenchymal cells in adult bones. Lineage tracing with 4-OHT treatment at 14-15 dpf labels chondrocytes and perichondrial cells, with labeled cells observed in adult Ch bones including adipocytes and ocn:GFP+ osteoblasts. Clonal analysis reveals individual clones containing growth plate chondrocytes, mesenchymal cells, and adipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25-C35 are supported by sox10:CreERT2 lineage tracing data in Figure 3, including proper controls showing no leaky conversion without 4-OHT (C26). The clonal analysis using both low-efficiency conversion and Zebrabow provides strong evidence for chondrocyte contribution to multiple cell types. However, sox10 expression in perichondrium (C25) complicates interpretation of osteoblast contribution, which is addressed by additional col2a1a lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Chondrocytes marked by col2a1a:CreERT2 contribute to osteoblasts, adipocytes, and mesenchymal cells in adult bones. Using a chondrocyte-specific R2 enhancer, 4-OHT treatment at 5 dpf labels chondrocytes but not perichondrium or osteoblasts at 12 dpf. In adults, labeled cells include growth plate chondrocytes, adipocytes, osteoblasts on endosteal and periosteal surfaces, and embedded osteocytes. Clonal analysis shows individual clones containing chondrocytes, adipocytes, and osteoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 are strongly supported by col2a1a:CreERT2 lineage tracing data in Figure 4. The use of the R2 enhancer addresses the limitation of sox10 labeling by restricting expression to chondrocytes (C38). The specificity is well-documented at 12 dpf with no labeling of sp7:GFP+ osteoblasts or perichondrium. The adult lineage tracing and clonal analysis provide compelling evidence for chondrocyte contribution to multiple cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A Cre-independent Histone2A-mCherry lineage tracing approach confirms that col2a1a+ chondrocytes generate osteoblasts. The long-lived Histone2A-mCherry protein reflects endogenous col2a1a expression levels. At pre-remodeling stages (7-8 mm SL), Histone2A-mCherry+ cells are restricted to chondrocytes with no overlap with bone or osteoblast markers. At post-remodeling stages (12-18 mm SL), extensive overlap is observed between Histone2A-mCherry and osteoblast markers (ocn:GFP, RUNX2:GFP, sp7:GFP) on cortical bone surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are well-supported by the Histone2A-mCherry lineage tracing data in Figure 5. This Cre-independent approach addresses potential concerns about off-target Cre activity. The temporal analysis showing no osteoblast labeling before remodeling (C48) and extensive labeling after remodeling (C49-C50) provides strong evidence. The observation of variable signal intensity (C51) supports the inference about cell division, though this is indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C75",
+      "C81",
+      "C110"
+    ],
+    "result": "Hypertrophic chondrocytes re-enter the cell cycle and express leptin receptor (lepr), suggesting conversion into progenitors. BrdU incorporation shows proliferating cells at the edge of the hypertrophic zone during remodeling (11-19 mm SL). RNAscope in situ hybridization reveals lepr expression in proliferative chondrocytes and chondrocyte-derived marrow cells. This suggests that chondrocytes may dedifferentiate into proliferative progenitors that subsequently differentiate into osteoblasts and adipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C53-C55, C57-C59, C75, C81, and C110 are supported by BrdU incorporation data (Figure 6B) and lepr expression analysis (Figure 6C-D). However, the interpretation that these cells are dedifferentiating into stem-like progenitors (C59, C81) is speculative. The data show cell proliferation and lepr expression but do not functionally demonstrate stem cell properties. The authors appropriately acknowledge this limitation (C59), noting that \"direct evidence will be needed to determine if any of these chondrocyte-derived lepr+ marrow cells behave as skeletal stem cells.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C74"
+    ],
+    "result": "Mutation of mmp9 results in delayed growth plate remodeling and fewer marrow adipocytes. In situ hybridization shows mmp9 expression in late-stage hypertrophic chondrocytes at the edge of the growth plate. mmp9 mutants are viable but show significantly enlarged hypertrophic zones at 21 and 27 mm SL compared to controls, along with reduced adipocyte numbers in the marrow cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C61-C66, and C74 are well-supported by mmp9 expression data (Figure 7A) and mutant phenotype analysis (Figure 7C-E,G). The quantification shows statistically significant differences in growth plate width (p=0.03 at 21 mm) and adipocyte numbers. The temporal specificity (no defect at 17 mm but defects at 21 and 27 mm) is clearly documented. The correlation between delayed remodeling and reduced adipocytes supports the model that adipocytes derive from chondrocytes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C91",
+      "C92"
+    ],
+    "result": "Neural crest transplantation experiments demonstrate that mmp9 functions in the neural crest lineage (and potentially chondrocytes) for growth plate remodeling. Wild-type neural crest cells transplanted into mmp9 mutants rescue growth plate width, with trends toward better rescue in wild-type versus mutant regions (p=0.06) and rescue of adipocyte number (p=0.06). Control transplants into wild-type animals show no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C70, C91, and C92 are supported by neural crest transplantation data (Figure 7E-G) with appropriate controls (C69). However, the statistical significance is marginal (p=0.06 for both growth plate rescue and adipocyte rescue), and the sample size is small (n=8). The authors appropriately acknowledge these limitations (C92), noting potential confounding factors including mosaic contribution and roles of non-growth plate cells. The conclusion that mmp9 functions \"primarily in chondrocytes\" (C91) is somewhat overstated given the marginal statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C90",
+      "C100"
+    ],
+    "result": "Mmp9-dependent growth plate remodeling and conversion of chondrocytes into osteoblasts and marrow adipocytes are conserved features of bony vertebrates. Despite anatomical differences between zebrafish and mammalian bones, growth plate remodeling is remarkably well conserved and likely ancestral to bony vertebrates. Similar delays in hypertrophic zone remodeling in mouse Mmp9 and zebrafish mmp9 mutants reveal genetic conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C71, C90, and C100 are supported by the collective data from the study showing parallels between zebrafish and mammalian bone development. The comparison of mmp9 mutant phenotypes between species (C90) is supported by citations to mouse studies. However, the claim of evolutionary conservation (C71, C100) is an inference based on similarity rather than direct phylogenetic evidence. The conclusion is reasonable but represents an interpretation of the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Chondrocyte-derived cells contribute significantly to both endosteal and periosteal surfaces of Ch bone and are a significant source of marrow adipocytes in zebrafish. However, there are likely other sources for osteoblasts and marrow adipocytes, particularly the periosteum which houses skeletal stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by the lineage tracing data in Figures 3-5 and citations to mouse studies. The acknowledgment of incomplete conversion efficiency and other potential cell sources (C78) is appropriate and demonstrates scientific rigor. The claim is well-balanced, recognizing both the significant contribution of chondrocytes and the likely contribution of other cell sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The mechanism of chondrocyte fate conversion may involve both transdifferentiation (direct conversion without cell division) and dedifferentiation through a proliferative progenitor. Osteoblasts with strong Histone2A-mCherry signal suggest some direct conversion, while weaker signal in distant osteoblasts and BrdU+ hypertrophic chondrocytes suggest proliferation of intermediates. Clonal analysis shows that chondrocytes throughout the growth plate, not just borderline chondrocytes, can undergo fate transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 present a nuanced interpretation of the mechanism supported by multiple lines of evidence: Histone2A-mCherry signal intensity (C83-C84), BrdU incorporation (C84), and clonal analysis (C85). The authors appropriately acknowledge that both mechanisms may occur (C82) rather than claiming a single mechanism. The evidence against the \"borderline chondrocyte\" model (C85) is supported by clonal analysis data in Figure 3E,F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "LepR expression in zebrafish shows similarities and differences compared to mice. In mice, LepR marks skeletal stem cells that contribute to osteoblasts and adipocytes postnatally. In zebrafish, lepr is expressed in both marrow cells and growth plate chondrocytes. The broader expression in zebrafish compared to mouse LepR-Cre labeling likely reflects isoform-specific expression differences. LepR expression in chondrocytes is conserved across mouse, rat, human, and zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C86-C89 are supported by citations to mouse studies (C56, C86, C88) and RNAscope data in zebrafish and mouse (C87, C89). The explanation for expression differences based on LepR isoforms (C88) is reasonable and supported by citations. The confirmation of LepR expression in mouse chondrocytes (C89) strengthens the comparative analysis. However, the functional significance of lepr+ cells in zebrafish remains uncertain (as acknowledged in C59).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C11",
+      "C12",
+      "C14",
+      "C19",
+      "C101",
+      "C102"
+    ],
+    "result": "Zebrafish have both intramembranous and endochondral bones. The Ch bone is derived from cranial neural crest cells and exhibits properties similar to mammalian long bones, including bidirectional growth plates and a marrow cavity. Zebrafish endochondral bones are hollow and filled with fat but do not support hematopoiesis. Unlike many fish species, zebrafish bones contain embedded osteocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C11, C12, C14, C19, C101, and C102 are supported by citations to previous studies and anatomical observations. These claims establish the background and context for the study. The citations are appropriate and the anatomical descriptions are consistent with the data presented in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C24",
+      "C36",
+      "C37",
+      "C46",
+      "C60",
+      "C79",
+      "C80",
+      "C93"
+    ],
+    "result": "Prior work in mammals has shown that hypertrophic chondrocytes can undergo cell death, that cultured chondrocytes can dedifferentiate or transdifferentiate, and that lineage tracing in mice reveals chondrocyte contribution to osteoblasts. Col2a1:CreERT2 in mice labels both chondrocytes and osteochondroprogenitors. In mice, Mmp9 functions in hematopoietic cells for growth plate remodeling, while Mmp13 in chondrocytes also contributes to remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C24, C36-C37, C46, C60, C79-C80, and C93 are all supported by appropriate citations to previous studies. These claims accurately represent prior work and provide important context for the current study. The citations appear to be correctly attributed and the descriptions are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The mechanism of Mmp9 function in growth plate remodeling may involve both canonical matrix degradation and potentially non-canonical nuclear functions. MMPs may be derived from both chondrocytes and hematopoietic cells, with relative importance varying between species. Compensation by mmp13 might explain the temporal pattern of mmp9 mutant phenotypes. Mmp9 has been shown to have nuclear functions in osteoclasts, which could potentially occur in chondrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C99 are largely speculative (C94, C95, C97, C99) or based on indirect evidence (C96). The speculation is appropriate and clearly labeled as such by the authors. The canonical matrix degradation function (C96) is well-supported by citations and consistent with observed matrix loss. However, the non-canonical nuclear function (C98-C99) is highly speculative, extrapolating from osteoclast studies without direct evidence in chondrocytes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "Methodological details and controls for lineage tracing experiments. The human SOX10 enhancer lacks chondrocyte expression seen with zebrafish sox10. SOX10:Cre drives broader conversion than sox10:CreERT2 and labels most adipocytes and marrow cells in adult Ch. In zebrafish, col2a1a is expressed in chondrocytes and weakly in osteoblasts and perichondrium. Osteoblast transgenes can be distinguished from membrane GFP by their stronger cytoplasmic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 and C111 describe methodological details and controls that are supported by the data in supplementary figures and citations. These technical details are important for interpreting the lineage tracing results and demonstrate appropriate experimental design. The comparison of different Cre drivers (C105-C107) helps validate the specificity of the lineage tracing approaches.",
+    "result_type": "MINOR"
+  }
+]

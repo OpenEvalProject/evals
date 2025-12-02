@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The C2A domain of UNC-13L in C. elegans exhibits conserved binding modes similar to mammalian Munc13-1, forming both C2A/C2A homodimers and C2A/RIM heterodimers. The homodimerization is disrupted by K49E mutation, and heterodimerization with UNC-10/RIM (Kd = 1.29 \u00b5M) is eliminated by K77/79E mutation in the RIM zinc finger domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C9 provide converging biochemical evidence from gel filtration (C7), ITC (C8, C9), co-immunoprecipitation (C9), and sequence alignment (C6) demonstrating both binding modes. The mutations specifically disrupt the intended interactions as designed, and the Kd value provides quantitative binding affinity. The data are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "C2A/RIM heterodimerization is required for tonic neurotransmitter release specifically in low calcium conditions (0 mM Ca2+), but this requirement is bypassed at physiological calcium levels (1 mM Ca2+). The mechanism differs between GABAergic and cholinergic synapses: heterodimerization increases tonic GABA release by preventing homodimer formation, whereas it promotes tonic ACh release through a distinct mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 demonstrate calcium-dependent effects on tonic release with appropriate controls across multiple genotypes. The differential rescue of mIPSCs versus mEPSCs in double mutants (C15, C16) provides strong evidence for distinct mechanisms. The calcium titration experiments (C13, C14) and systematic comparison of single versus double mutants support the conclusions, though the mechanism for ACh release remains incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "C2A/RIM heterodimerization is required for stimulus-evoked neurotransmitter release. Disrupting heterodimerization (unc-10 K77/79E mutant) reduces evoked EPSCs by ~44%, similar to C2A deletion (~46%). However, preventing C2A homodimerization (K49E mutation) alone has no effect, but fully rescues the evoked release defect in unc-10 mutants, indicating that the reduced release is mediated by increased formation of inhibitory C2A homodimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 provide strong genetic evidence through systematic analysis of single and double mutants. The quantitative similarity between \u0394C2A and unc-10(K77/79E) phenotypes (C20), combined with complete rescue in double mutants (C23), supports the autoinhibition model. The electrophysiological data are internally consistent and include appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The C2A domain is not required for synaptic vesicle priming, as UNC-13L lacking C2A restores sucrose-evoked currents (RRP size) to wild-type levels. Neither C2A homodimerization nor C2A/RIM heterodimerization affects SV priming. Instead, the C2A domain regulates release probability: Pvr is significantly reduced in \u0394C2A and unc-10(K77/79E) mutants despite normal RRP size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 demonstrate dissociation between priming and release probability through sucrose-evoked current measurements. The normal RRP in \u0394C2A mutants (C28) combined with reduced evoked release provides clear evidence for post-priming regulation. However, the reliance on sucrose-evoked currents as the sole measure of priming could be strengthened with additional assays (e.g., electron microscopy of docked vesicles).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "RIM functions as a molecular switch that releases UNC-13L C2A from an autoinhibitory homodimeric state. Homodimerization of the C2A domain inhibits SV release, and RIM binding competitively forms a heterodimer, allowing the C2A domain to become fusion-competent. The heterodimer itself does not produce additional effects beyond preventing homodimer formation, as monomeric C2A is fully functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C76-C78 present a coherent mechanistic model supported by the genetic rescue experiments. The complete restoration of function in double mutants (blocking both homo- and heterodimerization) provides strong evidence that RIM acts solely as a switch. The consistency with prior mouse studies (C25) strengthens the conclusion, though the model remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C79",
+      "C80"
+    ],
+    "result": "UNC-13 protein expression levels are similar across different rescue lines (wild-type, K49E, \u0394C2A), as measured by mApple fluorescence intensity. Disrupting C2A/RIM heterodimerization does not prevent synaptic localization of UNC-13L, as colocalization with the active zone marker ELKS-1 remains normal in unc-10(K77/79E) mutants. The decreased release in \u0394C2A mutants may result from mis-localization at the active zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C40 address important controls for expression and localization. While fluorescence intensity measurements (C34) suggest similar expression, this is a semi-quantitative approach that may not detect subtle differences. The colocalization analysis (C38-C40) shows normal gross localization but does not assess fine-scale positioning within active zones. Claim C37 about mis-localization in \u0394C2A mutants is speculative and not directly tested, creating uncertainty about the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Disrupting C2A/RIM heterodimerization does not affect synaptic depression or recovery kinetics. Both control and unc-10(K77/79E) mutants exhibit similar depression rates during 1 Hz and 5 Hz train stimulation, and similar recovery rates in paired-pulse experiments, indicating that C2A/RIM binding is not required for vesicle refilling or short-term plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide clear evidence from train stimulation and paired-pulse experiments that short-term plasticity mechanisms are intact in unc-10(K77/79E) mutants. The data are straightforward and well-controlled, though these represent negative results that support a limited role for C2A/RIM interaction in these specific processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C33",
+      "C73",
+      "C74"
+    ],
+    "result": "UNC-13L's C2A domain promotes synaptic transmission by regulating a post-priming process rather than priming itself. The regulatory domains of UNC-13L (C2A, C1, C2B) alter release probability but are not required for SV priming, suggesting that UNC-13 has multiple regulatory effects on synaptic strength achieved through differential control of release probability by its various functional domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C33, C73-C74 synthesize the major findings into a coherent model. The distinction between priming and post-priming regulation is well-supported by the experimental data. However, C73-C74 extend beyond the current study by incorporating findings about C1 and C2B domains from other studies, making these broader claims somewhat inferential. The core conclusion about C2A regulating post-priming processes is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Prior work has established that Munc13-1 is required for docking, priming, and Ca2+-triggered release, with the MUN domain mediating these functions. The C2A domain binds RIM's zinc finger domain, and disrupting this interaction reduces the RRP in mammalian neurons. However, studies in chromaffin cells and C. elegans show that truncated Munc13-1/UNC-13L lacking C2A can still mediate priming, creating conflicting findings about C2A's role in priming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C57 accurately summarize prior literature with appropriate citations. These claims establish the context and conflicting findings that motivated the current study. The citations appear accurate and the summary fairly represents the state of the field, including the contradictions between mammalian neuronal studies and chromaffin cell/C. elegans studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In C. elegans, UNC-10/RIM is not required for SV priming, as the RRP size in unc-10 mutants is comparable to wild-type despite slightly decreased docked SV numbers. Instead, UNC-10/RIM primarily regulates SV fusion by increasing release probability through binding UNC-13 and recruiting CaV2 calcium channels to presynaptic terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C63 present important findings about RIM function in C. elegans. However, C60 relies on unpublished data ('data not shown'), which cannot be evaluated. The electron microscopy data (C58) are from prior studies and show only slight decreases in docked SVs. While the conclusion about RIM's role in release probability versus priming is consistent with the presented data, the reliance on unpublished results for a key claim (normal RRP in unc-10 mutants) creates uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "SV priming consists of molecular and positional priming steps. The authors speculate that C. elegans may rely more on molecular priming (which does not require UNC-13/RIM interaction) while mice may require positional priming (which does require this interaction), potentially explaining species differences in RIM's role in maintaining the RRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C68 present a speculative model to explain species differences. While C64-C66 accurately describe established concepts about molecular and positional priming, C67-C68 are explicitly speculative ('One possibility is...', 'may require'). This hypothesis is reasonable but lacks direct experimental support and represents post-hoc rationalization of conflicting findings between species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Prior studies have shown that tonic release has different regulatory mechanisms from evoked release, and that various regulatory domains of Munc13-1/UNC-13L (C1, C2B, linker region) can affect release probability without changing RRP size, supporting the notion that these domains regulate post-priming processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 accurately cite prior literature establishing precedents for the current findings. The citations support the broader context that multiple Munc13 domains can regulate release probability independently of priming, which aligns with and supports the current study's conclusions about the C2A domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The Munc13 C2A domain has three binding states (homodimer, heterodimer, and monomer) that may co-exist in synaptic terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 describes an established model from prior research that provides the conceptual framework for the current study. This is well-supported by previous literature and the current biochemical data demonstrating all three states.",
+    "result_type": "MINOR"
+  }
+]

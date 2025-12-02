@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C75",
+      "C76",
+      "C103",
+      "C104",
+      "C105",
+      "C109",
+      "C111"
+    ],
+    "result": "Drosophila walking coordination exists on a single continuous manifold without discrete preferred gaits. UMAP embedding reveals a bell-shaped manifold parameterized by stepping frequency along its axis and a single global phase along its cyclic coordinate, with unimodal density distribution and no evidence for multiple modes corresponding to distinct gaits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple complementary analyses. The UMAP embedding (C103-C105, C109) provides direct visualization of the manifold structure, while phase distribution analyses (C75-C76) show only a single peak across all walking speeds. The unimodal density (C109) and manifold structure (C111) are consistent with a continuum rather than discrete gaits. Multiple independent analytical approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C36",
+      "C38",
+      "C139",
+      "C145",
+      "C174"
+    ],
+    "result": "Symmetric variability in walking speed is controlled by modulation of a single parameter\u2014stance duration\u2014while swing duration remains relatively constant. This control mechanism is consistent across spontaneous behavior and evoked responses to optogenetic and visual stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by experimental data showing stance duration varies inversely with forward velocity (C38) while swing duration changes minimally (C36). This pattern is reproduced in both optogenetic (C139) and visual stimulus (C145) experiments, demonstrating consistency across spontaneous and evoked behaviors. The convergence of multiple experimental approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C124",
+      "C125",
+      "C128",
+      "C130",
+      "C133",
+      "C172"
+    ],
+    "result": "Turning involves small (~25% modulation), asymmetric, limb-specific modulations of multiple kinematic parameters including swing duration, stance duration, step length, and step direction, representing a minor modification of the underlying symmetric walking pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by detailed kinematic measurements showing limb-specific modulations across multiple parameters (C124-C125, C128, C130). The magnitude of modulation (~25%, C126) is quantified, and the multi-dimensional nature of turning control (C133, C172) is demonstrated through systematic analysis of each kinematic parameter. The data clearly distinguish turning control from the single-parameter speed control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Turns are precisely timed relative to the walking coordination pattern, occurring at preferred phases of the limb oscillator with statistically significant differences (p<10\u207b\u2075) between phase distributions at yaw extrema versus all timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by statistical analysis showing significant phase-locking of turns (C135) with p<10\u207b\u2075 for all limbs. The phase preference (C134) is demonstrated through phase distribution analysis, and the coupling between symmetric and asymmetric variability (C136) is a logical inference from the phase-locked timing. The statistical rigor is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C137",
+      "C141",
+      "C142",
+      "C144",
+      "C146",
+      "C147"
+    ],
+    "result": "Commands modulating walking speed from optogenetic activation of moonwalker neurons or visual stimuli evoke changes in limb coordination consistent with spontaneous behavior, producing deflections along the same UMAP manifold dimension through modulation of stance duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by parallel experiments showing both optogenetic (C137, C141-C142) and visual (C144, C146-C147) perturbations produce changes along the same manifold dimension as spontaneous behavior. The consistency across different perturbation methods (C25) and the specific mechanism (stance duration modulation) strengthen the conclusion that evoked and spontaneous behaviors share control architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "A simple rule-based model with fixed unidirectional posterior-to-anterior coupling and a single control parameter (stance duration) qualitatively reproduces major features of symmetric walking variability including canonical gaits, non-canonical patterns, speed-dependent stance categories, two-cycle periodicity, and relative phase relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model successfully reproduces multiple independent features of the experimental data (C113-C121), including both qualitative patterns and quantitative relationships. The model's ability to generate the observed non-canonical pattern (C115) and tetrapod-like pattern with characteristic offset (C114) provides strong validation. The UMAP embedding of model data (C121) matching experimental structure further supports the model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C49",
+      "C50",
+      "C54"
+    ],
+    "result": "The number of feet in stance decreases with increasing forward velocity, with speed-dependent enrichment of 5-foot and 4-foot categories at slow speeds and 3-foot category at fast speeds. Tripod configurations occur in equal proportions at all speeds, while tetrapod and wave configurations do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are directly supported by observational data showing clear speed-dependent patterns in stance categories (C45, C47). The equal proportions of tripod configurations (C49) versus unequal proportions for other gaits (C50) provide evidence against discrete tetrapod/wave gaits. The specific velocity values (C54) are quantified from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C108"
+    ],
+    "result": "The number of feet in stance oscillates with a two-cycle periodicity as a function of limb phase at all forward walking speeds, inconsistent with tetrapod or wave gaits dominating the data but consistent with tripod-like coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-cycle periodicity (C57, C108) is consistently observed across all speeds and persists even when swing/stance threshold is modified, ruling out measurement artifacts. The inconsistency with tetrapod/wave gaits (C58) is a logical inference from the expected three-cycle and six-cycle periodicities for those gaits. The analysis is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Contralateral limb pairs maintain constant antiphase (0.5 cycle offset) across all walking speeds, while ipsilateral relative phases vary with speed and approach tripod-like coupling at fast speeds. Angular deviation decreases monotonically with increasing speed for all limb pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic analysis of relative phases conditioned on forward velocity. The constant contralateral phasing (C64) contrasts with variable ipsilateral phasing (C65), and the monotonic decrease in variance (C66) is clearly demonstrated. These patterns are key features distinguishing the coordination structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C93"
+    ],
+    "result": "Template-matching coherence analysis shows tripod coherence sharply peaked around 0.9, while tetrapod and wave coherences are broader and lower. No prominent peaks in coherence occur at characteristic velocities for different gaits, providing no strong evidence for preferred use of canonical tetrapod and wave gaits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The coherence analysis (C86-C89) provides quantitative assessment of gait similarity. The absence of velocity-specific peaks (C88) and the consistently higher tripod coherence support the conclusion (C93). However, the authors acknowledge limitations of the coherence metric (C91-C92), appropriately tempering the strength of negative conclusions about tetrapod/wave gaits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The simple linear model for limb tracking achieved mean error of 0.15 mm (3.5 pixels) between predicted and hand-annotated positions, comparable to published deep neural network methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tracking accuracy is validated through 10-fold cross-validation (C27) and comparison to published methods (C28). The error magnitude (~10% of stride length as noted in text) is reasonable for the analyses performed. The methodological validation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C32"
+    ],
+    "result": "Forward velocities range from -1.3 to 30.4 mm/s with peaks at 0 and ~17.5 mm/s. Lateral and angular velocity distributions are symmetric, showing no population-level handedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The velocity measurements (C29-C30) are direct observations from the data and consistent with previous studies. The symmetry of lateral/angular distributions (C32) is a straightforward inference from the data. These are basic characterizations of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "At slow speeds, canonical configurations show both transient (one frame) and longer durations for tripod, tetrapod, and wave patterns. At higher speeds, virtually all tetrapod and wave configurations are transient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dwell time analysis (C52-C53) provides evidence about the stability of different configurations at different speeds. The observation that tetrapod/wave configurations become predominantly transient at high speeds supports the continuum interpretation, though the presence of longer durations at slow speeds suggests these patterns do occasionally occur.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The simple model shows quantitative differences from experimental data including larger ipsilateral phase shifts, less variable swing timing, and constant swing duration. These differences are attributed to model simplifications including exclusion of turning and fixed swing duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge model limitations (C154-C158) and provide plausible explanations for discrepancies (C156-C158). The statement that these differences don't diminish model utility (C159) is reasonable given the model's purpose is to demonstrate sufficiency of simple coupling rules rather than quantitative prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C177"
+    ],
+    "result": "The findings suggest Drosophila employ a low-dimensional control architecture where symmetric coordination can be reproduced with fixed, speed-independent coupling and single-parameter control, implying simpler circuit models than those requiring multiple distinct coordination patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are reasonable inferences (C5, C151-C152, C177) from the experimental findings and modeling results. The prediction about neural circuit organization (C149-C150) follows logically from the model structure. However, these remain hypotheses about circuit implementation that require future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73"
+    ],
+    "result": "The decrease in relative phase variance at higher speeds may result from either weaker inter-limb coupling at low speeds (consistent with greater sensory sensitivity) or from properties of phase measurement with asymmetric duty cycles. Both explanations likely contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors present two plausible interpretations (C67, C69) with supporting citations and logic (C68, C72), but acknowledge both likely contribute (C73) without determining their relative importance. This represents appropriate scientific caution about mechanistic interpretation of an observed pattern. Additional experiments would be needed to distinguish these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C173",
+      "C175",
+      "C184",
+      "C185"
+    ],
+    "result": "The limb-specific, multi-dimensional modulations during turning suggest hemi-segmental level control, and the different control dimensions for yaw versus speed suggest distinct circuit bases for symmetric and asymmetric variability, though these must be coupled given phase-locked timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about hemi-segmental control (C173) is supported by the limb-specific modulations and consistent with cited work in stick insects. The argument for distinct circuits (C175, C185) based on different control dimensions is logical, and the requirement for coupling (C176) follows from the phase-locking data. These are reasonable inferences though direct circuit evidence is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The model implies differentiated roles for posterior versus anterior neuropils in speed regulation versus turning, supported by anatomical evidence showing moonwalker neurons receive input from metathoracic neuromere and kinematic evidence for distinct forelimb role in turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about differentiated neuropil roles (C178) follows from the model structure. The anatomical evidence (C180-C182) from previous studies supports this for the posterior neuropil. The kinematic evidence for anterior neuropil role in turning (C183) comes from the current data. The convergence of model predictions with anatomical and kinematic data strengthens these inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Principal component analysis reveals degenerate phase-shifted pairs but does not adequately represent frequency variations, as the first two PCs emphasize a single frequency and map different frequencies to the same radius. PCA does not permit easy visualization of the full data structure in 2-3 dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations of PCA for this dataset (C96-C99) are clearly demonstrated and explained. The observation of degenerate pairs (C94) is consistent with oscillatory data. The conclusion that PCA is insufficient for visualization (C99) appropriately motivates the use of UMAP. This is sound methodological reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "UMAP is ideal for this application because it preserves local and global topology of high-dimensional data, in contrast to t-SNE which emphasizes local structure at the expense of global structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The justification for UMAP choice (C101) is appropriate and supported by citations. The characterization of UMAP (C100) and t-SNE (C102) properties is accurate. This represents sound methodological decision-making for the analysis goals.",
+    "result_type": "MINOR"
+  }
+]

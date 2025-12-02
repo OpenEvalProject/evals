@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In hypoxic HL-1 cardiomyocytes, transcriptional changes are limited, with only a few genes (Vegfa, PAI-1, Apelin) showing significant induction as HIF1 targets, while major angiogenic factors like FGF2 and VEGFC are transcriptionally repressed. The authors conclude that transcriptional response is not the major mechanism controlling (lymph)angiogenic factor expression, suggesting post-transcriptional mechanisms are involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 provide consistent transcriptome data from Figure 1 showing limited transcriptional induction (56% of genes induced >1.5-fold at 8h, but few strongly induced) and repression of key factors. Claims C35-C36 draw appropriate inferences from this data. The conclusion is well-supported by the experimental evidence and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Translational activity decreases in hypoxic HL-1 cells (polysome/monosome ratio shifts from 1.55 to 1.40), confirmed by eIF2\u03b1 phosphorylation, yet 94% of (lymph)angiogenic genes show increased polysome recruitment. The authors conclude that the main response to early hypoxia in cardiomyocytes is translational, not transcriptional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are supported by polysome profiling data (Figure 2) showing paradoxical increase in specific mRNA recruitment despite global translation inhibition. The inference in C45 is justified by comparing transcriptome (Figure 1) with translatome (Figure 2C) data. The 4E-BP1 data (C39-C40) provides additional mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "All detectable IRES-containing angiogenic factor mRNAs (Fgf1, Vegfa, Vegfd, Cyr61, Hif1a, Igf1r) show 2-3 fold increased polysome recruitment in hypoxia as early as 4 hours, while Vegfa is the only one significantly induced at the transcriptome level. This indicates IRES-dependent translation is activated early in the hypoxic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are supported by Figure 3A-B showing differential regulation at transcriptome vs translatome levels. The conclusion (C54-C55) that IRES-dependent translation is an early event is justified by the 4h timepoint data. However, FGF2 and VEGFC mRNAs were not detectable in polysomes, which limits the comprehensiveness of the claim about 'all' IRES-containing mRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Bicistronic reporter assays reveal two groups of IRESs with distinct temporal activation: (lymph)angiogenic factor IRESs (FGF1, FGF2, VEGFAb, VEGFC, VEGFD) are activated in early hypoxia (4-8h), while non-angiogenic IRESs (c-myc, EMCV) are activated only in late hypoxia (24h). FGF1 IRES activation correlates with increased FGF1 protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by bicistronic reporter data in Figure 4B-D showing differential temporal activation patterns. The correlation with FGF1 protein (C58) is shown in Figure 4C. The grouping inference (C62) is logical based on the temporal patterns. The use of lentivectors to overcome transfection limitations is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "VASH1 is identified as a novel IRES trans-acting factor with RNA-binding activity. BIA-MS shows VASH1 binds FGF1 IRES in hypoxia (4-8h) and EMCV IRES in both conditions, but not VEGFA IRES. In silico analysis predicts two RNA-binding domains, and SPR confirms direct binding to FGF1, VEGFAa, and EMCV IRESs with nanomolar affinity (6.5-9.6 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C63-C71 are well-supported by multiple complementary approaches: BIA-MS (Figure 5A-C, Supplementary file 4), in silico prediction (Figure 5C, Figure 5\u2014figure supplement 1), and SPR validation (Figure 5D-F). The nanomolar affinity constants demonstrate significant RNA-binding activity. The novelty claim (C63) is appropriately stated. However, there's an apparent inconsistency: BIA-MS shows no VEGFA binding (C66), yet SPR shows binding with 8.0 nM affinity (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "VASH1 is expressed in HL-1 cardiomyocytes (previously only described in endothelial cells) and is translationally induced in early hypoxia. Despite decreased mRNA levels at 4h, Vash1 mRNA shows 7-fold increased polysome recruitment, leading to increased VASH1 protein expression. VASH1 localizes to both nucleus and cytoplasm as foci that increase in size during hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 are supported by multiple data types: RT-qPCR (Figure 6A), polysome profiling (Figure 6B), capillary Western (Figure 6C), and immunocytochemistry (Figure 6D-F). The translational induction inference (C77) is justified by the discordance between mRNA decrease and polysome recruitment increase. The foci size quantification (C80) is statistically significant (Figure 6F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "VASH1 knockdown (73% mRNA, 59% protein) specifically decreases FGF1 IRES activity by 64% in hypoxia, demonstrating VASH1 activates FGF1 IRES. In normoxia, VASH1 knockdown moderately increases several IRES activities (13-16%, significant for VEGFD and EMCV), suggesting VASH1 inhibits these IRESs under normoxic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by knockdown data (Figure 7A-B) and bicistronic reporter assays (Figure 7C-D). The moderate protein knockdown (C82-C83) is explained by VASH1's long half-life (>24h, Figure 7\u2014figure supplement 1). The functional specificity for FGF1 IRES in hypoxia (C85) is clear, though the moderate knockdown efficiency may underestimate the full effect. The dual role inference (C87) is supported by the opposing effects in normoxia vs hypoxia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "VASH1 depletion has broad effects on the translatome, affecting 60-70% of (lymph)angiogenic mRNAs in both normoxia and hypoxia. In normoxia, 22% of mRNAs show increased and 41% show decreased polysome recruitment; in hypoxia, 44% increase and 29% decrease. This demonstrates VASH1 can regulate translation both positively and negatively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are supported by polysome profiling data in Figure 8 showing widespread effects of VASH1 depletion. The dual role conclusion (C93) is justified by the bidirectional effects. However, the authors appropriately note (C92) that the mechanism (direct vs indirect) cannot be determined from this approach. The broad impact suggests VASH1 may have functions beyond direct IRES binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C12"
+    ],
+    "result": "The authors conclude that translational control is a pivotal process triggering new vessel formation in ischemic heart, based on the predominant translational (rather than transcriptional) regulation of (lymph)angiogenic genes and IRES activation in hypoxic cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 summarize the main findings supported by the comprehensive data. The overarching conclusion (C12) is justified by the convergent evidence from transcriptome, translatome, and IRES activity analyses. However, this conclusion is based on an in vitro cell line model (HL-1), and in vivo validation would strengthen the claim about ischemic heart.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors argue that moderate IRES activation (1.3-1.7 fold in their study) is physiologically significant, citing prior work showing 2-3 fold changes in VEGFC, VEGFD, and FGF1 IRES activity have substantial effects on vessel formation and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 are supported by appropriate citations to prior work. This contextualizes the moderate fold-changes observed in the current study and addresses a potential criticism. The comparison to viral IRESs (C97-C100) provides additional context for interpreting cellular IRES activation levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "HL-1 cardiomyocytes respond to hypoxia earlier (4-8h) than tumor cell lines (24h), with early activation of angiogenic IRESs. The authors speculate this may reflect cell-type-specific ITAFs and differences between non-tumoral and tumoral hypoxia responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 are supported by citations comparing HL-1 timing to tumor cell lines. However, the speculation (C105-C106) about tumor cell resistance and cell-type specificity is not directly tested. Alternative explanations (e.g., differences in culture conditions, oxygen sensing mechanisms) are not excluded. This remains a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Despite similar binding affinities to multiple IRESs (6.5-9.6 nM), VASH1 specifically regulates FGF1 IRES in hypoxia. The authors hypothesize that IRES specificity depends not on RNA-binding specificity but on IRESome multi-partner composition, consistent with the dual role observed for other ITAFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C126 are supported by the functional data (Figure 7D) and SPR data (Figure 5D-F). The hypothesis (C127, C129) is reasonable and supported by citation (C128), but is not directly tested. The mechanism by which VASH1 achieves functional specificity despite promiscuous binding remains unclear and requires identification of partner proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The introduction establishes background knowledge about hypoxia-induced (lymph)angiogenesis, HIF1-mediated transcriptional control, IRES-dependent translation during stress, and the role of ITAFs in IRES activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 are appropriately cited background knowledge establishing the context for the study. These are well-established facts in the field supported by appropriate citations. This provides the necessary foundation for understanding the significance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C101"
+    ],
+    "result": "HL-1 cells are an immortalized cardiomyocyte cell line that maintains the beating phenotype characteristic of cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C101 are supported by citation to the original description of HL-1 cells (Claycomb et al., 1998). The beating phenotype is used as an authentication method, which is appropriate for this cell type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The discussion contextualizes VASH1 findings within prior knowledge of VASH1 function in angiogenesis, stress response, and cell survival, and discusses potential mechanisms of VASH1 regulation and localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C123 appropriately cite and discuss prior work on VASH1 and other ITAFs. The speculation about VASH1 regulation by HuR (C113-C116) and stress granule localization (C122) is reasonable but not directly tested. The discussion of VASH1 isoforms (C117-C119) provides context for interpreting the results.",
+    "result_type": "MINOR"
+  }
+]

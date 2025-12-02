@@ -1,0 +1,1893 @@
+{
+  "submission": {
+    "id": "d8e62cc2-e63c-4356-840e-985ed84ea435",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:10:47.149498Z",
+    "updated_at": "2025-12-02T18:10:47.149498Z"
+  },
+  "content": [
+    {
+      "id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "submission_id": "d8e62cc2-e63c-4356-840e-985ed84ea435",
+      "content_type": "manuscript",
+      "content_text": "# Aromatic interactions with membrane modulate human BK channel activation\n\n## Authors\n\n- Mahdieh Yazdani<sup>1</sup> ([ORCID: 0000-0003-1300-4599](https://orcid.org/0000-0003-1300-4599))\n- Guohui Zhang<sup>2</sup> ([ORCID: 0000-0001-6905-0637](https://orcid.org/0000-0001-6905-0637))\n- Zhiguang Jia<sup>1</sup>\n- Jingyi Shi<sup>2</sup>\n- Jianmin Cui<sup>2</sup> ([ORCID: 0000-0002-9198-6332](https://orcid.org/0000-0002-9198-6332)) \u2020\n- Jianhan Chen<sup>1</sup> ([ORCID: 0000-0002-5281-1150](https://orcid.org/0000-0002-5281-1150)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry, University of Massachusetts Amherst United States\n2. Department of Biomedical Engineering, Center for the Investigation of Membrane Excitability Disorders, Cardiac Bioelectricity and Arrhythmia Center, Washington University St Louis United States\n3. Department of Biochemistry and Molecular Biology, University of Massachusetts Amherst United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLarge-conductance potassium (BK) channels are transmembrane (TM) proteins that can be synergistically and independently activated by membrane voltage and intracellular Ca2+. The only covalent connection between the cytosolic Ca2+ sensing domain and the TM pore and voltage sensing domains is a 15-residue \u2018C-linker\u2019. To determine the linker\u2019s role in human BK activation, we designed a series of linker sequence scrambling mutants to suppress potential complex interplay of specific interactions with the rest of the protein. The results revealed a surprising sensitivity of BK activation to the linker sequence. Combining atomistic simulations and further mutagenesis experiments, we demonstrated that nonspecific interactions of the linker with membrane alone could directly modulate BK activation. The C-linker thus plays more direct roles in mediating allosteric coupling between BK domains than previously assumed. Our results suggest that covalent linkers could directly modulate TM protein function and should be considered an integral component of the sensing apparatus.\n\n## Introduction\n\nWidely distributed in nerve and muscle cells, large-conductance potassium (BK) channels are characterized by a large single-channel conductance (~100\u2013300 pS) (Knaus et al., 1996; Uebele et al., 2000; Salkoff et al., 2006; Lee and Cui, 2010; Yang et al., 2015) and dual activation by both intracellular Ca2+ and membrane voltage (Shi and Cui, 2001; Horrigan and Aldrich, 2002; Gessner et al., 2012), thus an interesting model system for understanding the gating and sensor-pore coupling in ion channels. BK channels are involved in numerous vital physiological processes including intracellular ion homeostasis and membrane excitation, and are associated with pathogenesis of many diseases such as epilepsy, stroke, autism and hypertension (Zhou et al., 2017). Functional BK channels are homo-tetramers, each containing three distinct domains (Figure 1a). The voltage sensor domain (VSD) detects membrane potential, the pore-gate domain (PGD) controls the K+ selectivity and permeation, and the cytosolic tail domain (CTD) senses various intracellular ligands including Ca2+. The VSD and the CTD also form a Mg2+ binding site for Mg2+ dependent activation (Yang et al., 2008). The tetrameric assembly of CTD domains is also referred to as the \u2018gating ring\u2019. VSD and PGD together form the trans-membrane domain (TMD) of BK channels. Previous studies on mouse BK channels (Yang et al., 2008) and recent atomistic structures of full-length Aplysia californica (aSlo1) and human BK channel (hSlo1) (Hite et al., 2017; Tao et al., 2017; Tao and MacKinnon, 2019) reveal that CTD of each subunit reside beneath the TMD of the neighboring subunit in a surprising domain-swapped arrangement (Figure 1\u2014figure supplement 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig1-v3.jpg)\n\n**Figure 1.:** (a)\u00a0Key functional domains and structural organization of the human BK channel (hSol1). See main text for definition of domains; (b) Orientation of the pore lining S6 helices and C-linkers in the metal-free (green) and metal-bound (red) states; The dash lines indicate the approximate positions of membrane interfaces. The location of Tyr 332 and Gly 310 are indicated by yellow and blue spheres in the metal-bound and metal-free states, respectively. The black arrow shows S6 movement upon metal binding. (c) Macroscopic currents of WT, K0, K2 and K7 hSlo1 channels. The currents were elicited in 0 [Ca2+]i by voltage pulses from \u221230 to 250 mV with 20 mV increments for WT and K2 and voltage pulses from \u221280 to 200 mV with 20 mV increments for K0 and K7. The voltages before and after the pulses were \u221250 and \u221280 mV, respectively. (d) Conductance-voltage (G-V) curves for WT, K0, K2 and K7 hSlo1 channels in 0 [Ca2+]i showing significant shifts in the activation voltage (V0.5); All solid lines were fit to the Boltzmann relation (see Materials\u00a0and\u00a0methods), with V0.5 of 183.4\u00a0\u00b1\u00a03.2 mV for WT; 89.6\u00a0\u00b1\u00a03.5 mV for K0; 195.5\u00a0\u00b1\u00a03.5 mV for K2; and 48.7\u00a0\u00b1\u00a04.7 mV for K7. (e) Gating current traces of WT and K0, Voltage pulses were from \u221230 to 300 mV (WT) or from \u221280 to 300 mV (K0) with 20 mV increments. (f) Normalized gating charge-voltage (Q-V) relation of on-gating currents. The smooth curves are fits to the Boltzmann function with a V0.5 and slope factor of 159.1\u00a0\u00b1\u00a06.5 mV and 49.0\u00a0\u00b1\u00a05.9 mV for WT, and 161.9\u00a0\u00b1\u00a09.2 mV and 51.6\u00a0\u00b1\u00a08.5 mV for K0.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Domain swapping arrangement of BK channels. Shown is the structure of the human BK channels (hSlo1) with chain A colored blue and C-linker colored green. Other domains are made transparent for clarity. (b) The C-linker (green) directly connects the pore lining helix (S6, yellow) to the RCK1 N-lobe (blue) of the CTD. The bound Mg2+ is shown as an orange sphere.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Segments highlighted are: C-linker (residue 329\u2013343, green); RCK1 N-lobe (dark blue, residue 344\u2013427); VSD S0\u2019 (yellow, residue 92\u2013107) and S2-S3 loop (magenta, residue 171\u2013177). The orange sphere marks the position of S337 C\u03b1; Y332 and Y336 are shown as red Licorice. (b) Residue contact map of C-linker (blue labels) with VSD and RCK1 N-lobe (green and black labels) derived from the Cryo-EM structure of the metal-bound state of hSlo1 using the LigPlot server (https://www.ebi.ac.uk/thornton-srv/software/LIGPLOT).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Overlay of the full-length structures aligned using core residues 100 to 600. The backbone RMSD of two structures 2.18 \u00c5. (b) Overlay of the central pore region (including S6 helices), aligned based on residues 287 to 330. The backbone RMSD of the central pore is 0.87 \u00c5. (c-d) Overlay of the whole TMD structures c) side view, (d) top view, aligned on residues 100 to 343. The backbone RMSD is 2.53 \u00c5. Note that the main difference is in the relative arrangements of VSD and PGD, which is also observed in multiple Cryo-EM structures of the same aSlo1 or hSlo1 constructs and thus likely reflect inherent flexibility of the VSD/PGD packing.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Root-Mean-Square Fluctuations (RMSF) profiles of residues 230\u2013400 (PGD, C-linker and RCK1 N-lobe). C-linker RMSF is highlighted in the green dashed box and in insert. The C\u03b1 RMSD of (b)\u00a0the whole channel and (c) residues 100\u2013500 (the Core region) as a function of simulation time. RMSF and RMSD were obtained from the 150ns MD simulations with snapshots taken every 0.05 ns.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) Side view; (b) top view. For clarity, only the C-linker and S6 helix (yellow) of chain A (colored as blue ribbon) are highlighted.\n\nThe only covalent connection between CTD and TMD of BK channels is a 15-residue peptide referred to as the \u2018C-linker\u2019 (R329 to K343 in the human BK channel, hSlo1) (green in Figure 1a). This linker directly connects the pore lining S6 helices in the PGD (yellow in Figure 1\u2014figure supplement 1b) to the N-terminus of CTD (known as RCK1 N-lobe; blue in Figure 1\u2014figure supplement 1b), and is believed to play an important role in mediating the gating ring-pore coupling (Gessner et al., 2012; Yang et al., 2015; Zhou et al., 2017). For example, (Niu et al., 2004) observed that lengthening the C-linker through inserting poly-AAG (Supplementary file 1) was accompanied with right shifted voltage-dependent activation measured by conductance-voltage relations (G-V curves), while shortening the C-linker led to left-shifted G-V curves, clearly demonstrating the importance of C-linker in BK gating. Intriguingly, the voltage required for half activation, V0.5, displayed a highly linear relationship with the number of residues inserted or deleted in the absence of Ca2+. This led to the proposal that the linker-gating ring behaves as a \u2018passive spring\u2019 in activation of BK channels (Niu et al., 2004).\n\nEvidence has also accumulated to suggest that the C-linker may play more direct roles in mediating allosteric coupling of BK channels. Both Ca2+-free and bound Cryo-EM structures of full-length aSlo1 (Hite et al., 2017; Tao et al., 2017) were found to contain wide-open pores and thus did not provide clue to how the channel might be gated. Atomistic simulations later revealed that, due to the movement of pore-lining S6 helices (Figure 1b), the BK pore cavity become narrower, more elongated, and crucially, more hydrophobic in the metal-free state (i.e., without bound Ca2+ and Mg2+; presumably the closed state) (Jia et al., 2018). As such, the pore can readily undergo hydrophobic dewetting transition to give rise to a vapor barrier that prevents ion permeation (Jia et al., 2018). Recognition of hydrophobic gating in BK channels provides a mechanistic basis for further understanding how the C-linker may mediate the sensor-pore coupling. Specifically, key movements of S6 helices involve bending at the glycine hinge (G310, G311) toward the membrane upon Ca2+ binding (Figure 1b), leading to\u00a0~6 \u00c5 expansion of the pore entrance near I323. It has also been proposed that BK channels may be gated at the selectivity filter (Wilkens and Aldrich, 2006; Kopec et al., 2019; Schewe et al., 2019), the conformation of which could be modulated by the S6 helix orientation. The precise gating mechanism of BK channels thus remains to be further established. Nonetheless, considering that C-linkers are directly connected to S6 helices (Figure 1\u2014figure supplement 1b), their interactions with the rest of the channel as well as membrane and water will likely have an effect on the S6 orientation and consequently BK channel activation. The notion that interactions of C-linkers can modulate BK activation has actually been demonstrated in a recent study, where the R329KK331 residues in the C-linker was proposed to form alternating interactions with E321 and E224 from the neighboring chains and membrane lipids during each gating cycle (Tian et al., 2019).\n\nA key challenge of using mutagenesis to delineate the roles of a specific residue or interaction in protein function is that multiple competing effects may be perturbed simultaneously. The C-linker, in particular, is involved in extensive interactions with the gating ring and VSD (Figure 1\u2014figure supplement 2), making it very difficult to derive unambiguous interpretation of its role in BK activation (Tian et al., 2019). In this work, we examine a set of BK channels with scrambled C-linker sequences to determine if the C-linker is largely inert in mediating the sensor-pore coupling of BK channels. Combining mutagenesis, electrophysiology and atomistic simulation, we discover that the C-linker is a major pathway of gating ring-pore communication and can play a much more direct and specific role in mediating BK activation than previously thought. In particular, we show that dynamic interactions of the C-linker with the membrane/solvent environment, namely, membrane anchoring effects, can directly modulate voltage gating of BK channels. The dynamic and nonspecific nature of these interactions is in contrast to specific lipid-protein interactions, which involve binding of one or more lipid molecules to well-defined pockets on the protein in specific poses, or specific protein-protein interactions, which involve certain pairs of residues confined in space by the folded structure of the entire protein. This observation has been verified by additional experiments performed on BK constructs either lacking CTD or with the membrane anchoring residue mutated.\n\n## Results\n\n### Sequence scrambling of the C-linker dramatically modulates BK voltage activation\n\nStudies have shown that splice variant encompassing the C-linker region would profoundly affect the gating characteristics of BK channels (Soom et al., 2008). Although informative, such studies usually modify not only the composition but also the length (number of amino acids) in the C-linker region, making it difficult to draw firm conclusions about the role of the C-linker on the gating characteristics. Motivated by the linker gating \u2018passive spring\u2019 model (Niu et al., 2004), we aimed to investigate such behaviors through designing a series of BK mutants where the C-linker sequence has the same set of amino acids but the ordering is scrambled (Table 1). This design would allow exploring the \u2018passive spring\u2019 model without eliminating or adding amino acid. If the linker-gating ring largely acts like a passive spring with an inert C-linker, the expectation is that these scrambling mutant BK channels would have similar gating properties. Table 1 shows experimental results on the scramble mutant channels. Among these mutants K3, K5 and K6 did not show functional expression, while other mutant channels showed robust currents (Figure 1c). We measured voltage-dependent activation of these channels and the conductance-voltage (G-V) relationships were fitted using the Boltzmann function to derive V0.5, the voltage where G/GMax reaches 0.5 (Figure 1d). Left shift of G-V (V0.5 decreases) indicates that the channel requires less voltage to activate, while right shift of G-V (V0.5 increases) indicates that the channel is opened by higher voltage (See Materials\u00a0and\u00a0methods for details). Importantly, as shown in Figure 1d and Table 1, V0.5 depends very sensitively on the C-linker sequence, which is in line with previous observations (Soom et al., 2008). All five mutants that lead to functional channels, K0, K1, K2, K4 and K7, have significantly altered activation voltage, with V0.5 changes as large as\u00a0~135 mV.\n\n**Table 1.**\n C-linker scrambling mutations and measured V0.5 in the full-length at both 0 [Ca2+] and 100 \u03bcM [Ca2+] and Core-MT BK channels at 0 [Ca2+].The Core-MT constructs are based on the TMD, C-linker of mSlo1, and an 11-residue tail from KV 1.4 of the mouse Shaker family (Budelli et al., 2013; Zhang et al., 2017). The location of the nearest Tyr to the S6 C-terminal is underlined. K0 (Y330G) was designed to remove the Tyr sidechain in the K0 background.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Mutation</th>\n      <th rowspan=\"2\">Sequence</th>\n      <th colspan=\"3\">V0.5 (mV)</th>\n    </tr>\n    <tr>\n      <th colspan=\"2\">Full-Length</th>\n      <th>Core-MT</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>0 [Ca2+]</td>\n      <td>100 [Ca2+]</td>\n      <td>0 [Ca2+]</td>\n    </tr>\n    <tr>\n      <td>WT</td>\n      <td>EIIEL IGNRK KYGGS YSAVS GRK</td>\n      <td>183.4</td>\n      <td>0.2</td>\n      <td>235.0</td>\n    </tr>\n    <tr>\n      <td>K0</td>\n      <td>EIIEL IGNRY GKGSK YSRAV SKG</td>\n      <td>89.6</td>\n      <td>\u221266.7</td>\n      <td>192.6</td>\n    </tr>\n    <tr>\n      <td>K0(Y330G)</td>\n      <td>EIIEL IGNRG GKGSK YSRAV SKG</td>\n      <td>169.8</td>\n      <td>47.5</td>\n      <td>NM</td>\n    </tr>\n    <tr>\n      <td>K1</td>\n      <td>EIIEL RIGNK YGGSY KSAVR KSG</td>\n      <td>136.2</td>\n      <td>\u22124.2</td>\n      <td>NM</td>\n    </tr>\n    <tr>\n      <td>K2</td>\n      <td>EIIEL IGRKN YKGGS YSARV SGK</td>\n      <td>195.5</td>\n      <td>59.0</td>\n      <td>263.5</td>\n    </tr>\n    <tr>\n      <td>K3</td>\n      <td>EIIEL IGNYG GRSYS KAKVS RKG</td>\n      <td>NC</td>\n      <td>NC</td>\n      <td>NM</td>\n    </tr>\n    <tr>\n      <td>K4</td>\n      <td>EIIEL IGRNY GGSYS AKKVR SKG</td>\n      <td>94.6</td>\n      <td>\u221250.4</td>\n      <td>NM</td>\n    </tr>\n    <tr>\n      <td>K5</td>\n      <td>EIIER LIGKK RNYKG GSYSA VSG</td>\n      <td>NC</td>\n      <td>NC</td>\n      <td>NM</td>\n    </tr>\n    <tr>\n      <td>K6</td>\n      <td>EIIEL RKKIR KGNYG GSYSA VSG</td>\n      <td>NC</td>\n      <td>NC</td>\n      <td>NM</td>\n    </tr>\n    <tr>\n      <td>K7</td>\n      <td>EIIEL IGNYG GSYSA VRKSK GRK</td>\n      <td>48.7</td>\n      <td>\u221263.7</td>\n      <td>167.5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"4\">NC: no current, channel could not be expressed; NM: Mutation Not Made</td>\n    </tr>\n  </tbody>\n</table>\n\nWe further examined whether the C-linker scrambling mutation alters voltage-dependent gating by altering activation of the VSD. We measured the gating currents of the K0 mutant in BK channels (Figure 1e). Gating currents are generated by the movement of VSD during voltage-dependent activation, and the gating charge movement at various voltages, the Q-V relationship, of the K0 mutation is compared to that of the WT channels (Figure 1f). The results show that the K0 mutation gives rises to Q-V curves similar to that of the WT channels. This is in contrast to the G-V relation of the K0 mutation, which is shifted to more negative voltages by about \u221295 mV (Table 1). These results show that the K0 mutation does not affect voltage sensor movements, but may alter pore opening to modify BK channel activation.\n\n### C-linker is a structured loop with limited flexibility and a key dynamic pathway of BK gating ring-pore coupling\n\nAtomistic modeling and simulation were performed to investigate possible mechanisms of unexpected sensitivity of BK gating on the C-linker sequence. We first derived atomistic structures of the wild-type (WT) hSlo1 based on the aSlo1 Cryo-EM structures (Hite et al., 2017; Tao et al., 2017) (see Materials\u00a0and\u00a0methods). The homology models have been cross validated using Cryo-EM structures of hSlo1 that became available after the completion of this work (Tao and MacKinnon, 2019). The results show that aS1o1-derived models are essentially identical to the actual hSlo1 structures, with the central PGD structures differ by only 0.87 \u00c5 (Figure 1\u2014figure supplement 3). Atomistic simulations also suggest that the homology models and Cryo-EM structures lead to similar structural and dynamical properties (e.g., see Figure 1\u2014figure supplement 4). These structures reveal that the C-linker is a structured loop with essentially identical conformations in both metal-free (closed) and metal-bound (open) states (Figure 1b). The C\u03b1 root-mean-square deviation (RMSD) of C-linker conformations between the two states is only\u00a0~0.8 \u00c5. The linker forms extensive contacts with the RCK1 N-lobe (H344 to N427) of the gating ring, mainly mediated by the Y332GGSYSA338 segment in the C-linker, and S0\u2019 of VSD (Figure 1\u2014figure supplement 2). In particular, the two conserved tyrosine residues (Y332 and Y336) are fully embedded in a hydrophobic RCK1 N-lobe pocket, apparently maintaining a tight packing between the C-linker and RCK1 N-lobe (Figure 1\u2014figure supplement 2). Several positively charged residues (R329, K330, K331, R342 and K343) flank the above segment and are exposed to solvent, likely mediating the solvation of the C-linker. Importantly, these two short tracks of charged residues appear to be tightly anchored by the C-linker-RCK1 contacts.\n\nThe stability of the C-linker conformation as a structured loop is further confirmed by atomistic molecular dynamic (MD) simulations, which showed that the C-linker maintained stable conformations and contacts with VSD and RCK1 N-lobe throughout the 800 ns simulation time (Figure 2a\u2013b, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3 and Figure 2\u2014figure supplement 4, WT). The root-mean-square fluctuation (RMSF) of the C-linker region is\u00a0~1\u20132 \u00c5, which is only slightly elevated compared to regions with helical or sheet secondary structures (Figure 2b). The end-to-end distance of the C-linker fluctuated stably\u00a0~30 \u00c5 in both metal-bound and free state simulations (Figure 2a), even as the pore underwent dewetting transitions in the metal-free state (Figure 2\u2014figure supplement 4c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig2-v3.jpg)\n\n**Figure 2.:** (a) The C-linker N-C C\u03b1 distance during a representative 800-ns MD simulations of the WT hSlo1. (b) Residue Root-Mean-Square Fluctuations (RMSF) profiles of PGD, C-linker and RCK1 N-lobe derived from the same trajectory (green dashed box and shown in the insert). (c-d) Optimal and top 10 suboptimal pathways of dynamic coupling (yellow traces) between D895 in the RCK2 Ca2+ binding site of chain A (C\u03b1 colored as pink) and I323 in PGD of chain A (C\u03b1 colored as red) in the metal-free (c) and bound (d) states. The C-linker is colored green, S6 of chain A and its neighboring chain (chain C) in blue and grey, respectively. The rest of the channel is shown as transparent ribbons. Note that the pathways in the metal-free state go through the neighboring chain (chain C).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** VSD spans residues 45\u2013250, where residues 45 to 53 belong to S0 helix, 92\u2013107 to S0\u2019, 171\u2013177 to the S2-S3 loop, and 225\u2013230 to the S4-S5 loop. The contact probabilities were calculated from atomistic simulations. See Materials\u00a0and\u00a0methods for additional details.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** See Materials\u00a0and\u00a0methods for additional details.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) The C-linker N-C distance (329\u2013343 C\u03b1) as a function of time during 800-ns MD simulations. (b) RMSF profiles of residues 230\u2013400 (PGD, C-linker and RCK1 N-lobe) derived from the same MD trajectories, showing limited flexibility of the C-linker (green dashed box and in inserts). (c) Representative snapshots showing the equilibrated conformations of C-linkers in both metal-bound and free states. See Materials\u00a0and\u00a0methods for the details of the calculations.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The C\u03b1 RMSD of (a) the whole channel and (b) residues 100\u2013500 (the Core region) as a function of time during 800-ns MD simulations. (c) Evolution of the number of pore water, showing that all hSlo1 constructs readily undergo dewetting transitions in the metal-free state. See Materials\u00a0and\u00a0methods for additional details.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Whole channel is shown as transparent ribbon with each chain colored differently. S6 and C-linker of chain C are colored in gray and shown with a cartoon representation. (a) Path between R514 (located in RCK1 Ca2+ binding site in CTD; purple sphere) in chain C to I323 (located in S6 helix of PGD; yellow sphere) in chain C. (b) Path from E374 (located in Mg2+ binding site in CTD; purple sphere) in chain C to I323 (located in S6 helix of PGD; yellow sphere) in chain C. (c) Path from D99 (located in Mg2+ binding site in VSD; purple sphere) in chain B to I323 (located in S6 helix of PGD; yellow sphere) in chain C. See Materials\u00a0and\u00a0methods for additional details.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig2-figsupp6-v3.jpg)\n\n**Figure 2\u2014figure supplement 6.:** The average distances were calculated from ABSINTH simulations of isolated C-linker peptides. The red dashed line shows the linear relationship derived from the C-linker insertion/deletion study (Niu et al., 2004; also see Table S1).\n\nDynamic network analysis further reveals that the C-linker is a key pathway of dynamic coupling between the gating ring and PGD. Such analysis utilizes correlation of residue motions during MD simulations to uncover probable pathways of allosteric coupling in biomolecules (Eargle and Luthey-Schulten, 2012; LeVine and Weinstein, 2014; McClendon et al., 2014). The optimal and suboptimal paths of coupling are then identified as the shortest paths with the highest pairwise correlations, which should possess the highest probabilities of information transfer (Eargle and Luthey-Schulten, 2012). We analyzed the optimal and suboptimal pathways of coupling between I323 in the S6 helices, where substantial conformational change occurs during the gating event (Jia et al., 2018), and critical metal binding residues, including D895 and R514 in the RCK2 and RCK1 Ca2+ binding site, respectively, and E374 in the Mg2+ binding site residing in the CTD. The results reveal that the main pathways of communication from Ca2+ and Mg2+ binding sites to the PGD, go through the C-linker for all four chains (Figure 2c\u2013d and Figure 2\u2014figure supplement 5). This is not necessarily surprising since C-linker is the only covalent connection between the domains. Interestingly though, in the metal-free state the main path from the RCK2 Ca2+ binding site to PGD goes from the neighboring monomer in every other chain (Figure 2c\u2013d). This can be attributed to much tighter S6 helix packing in the metal-free state (Jia et al., 2018), and, combined with the domain swapped arrangement of BK tetramers, may help enforce cooperative gating response upon metal binding.\n\n### C-linker scrambling mutations minimally perturb channel structure, dynamics and sensor-pore coupling\n\nAtomistic simulations suggest that the changes in voltage dependent gating upon permutating linkers are unlikely to derive from a change in the overall structural features and dynamical properties of BK channel. The structure of the channel appears minimally perturbed by the mutated linkers, with the overall RMSD below\u00a0~5 \u00c5 and the TM domain (core) RMSD around 2\u20133 \u00c5 from the initial cryo-EM-derived structures for both WT and mutant channels (Figure 2\u2014figure supplement 4a\u2013b). All mutant channels can readily undergo hydrophobic dewetting transitions as observed for the WT channel (Figure 2\u2014figure supplement 4c). The linker region also maintains similar backbone conformations in WT and all mutants (Figure 2\u2014figure supplement 3), even though it becomes slightly more dynamic in the K7 mutant as reflected in the RMSF profile (Figure 2\u2014figure supplement 3b). Furthermore, scrambling mutations do not appear to perturb long-range coupling properties either; the C-linker remains to provide the key pathway of dynamic coupling between CTD and PGD.\n\nSequence properties, particularly distributions of charged residues, can modulate intrinsic conformational properties of disordered peptides including chain extension (Das and Pappu, 2013), which could explain the changes in channel activation in terms of the linker-gating ring passive spring model. To investigate this hypothesis, we performed atomistic simulations of the isolated C-linker segments in the ABSINTH implicit solvent (Vitalis and Pappu, 2009), which has been shown to reliably predict the inherent conformational extension of disordered peptides (Mao et al., 2013). The results suggest that V0.5 of linker scrambling mutants is not correlated with the inherent linker extension (Figure 2\u2014figure supplement 6) and is inconsistent with the prediction based on the previous linker-gating ring passive spring model (Niu et al., 2004) (dashed line in Figure 2\u2014figure supplement 6). Therefore, these inherent C-linker properties do not dictate the functional changes as we observed, which support the idea that the C-linker still adopts the same conformation as the WT C-linker shown in the structures (Figure 2\u2014figure supplement 3). These results also indicate that some interactions other than the inherited properties of the peptides are the cause of our experimental observations. As shown later, it is the aromatics-membrane interactions that are responsible for our experimental observations.\n\nFinally, since the C-linker is a structured loop with extensive interactions with the CTD and VSD (Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2), we considered whether some specific subsets of mutations could perturb the VSD to modulate voltage-dependent activation (V0.5), even though sequence scrambling is designed to suppress such effects. It has been proposed that interactions of lipid headgroups with charged patches of VSD stabilize the down state of the VSD in the Kv1.2 channel (Delemotte et al., 2011). To test this, we analyzed C-linker residue contact probability maps from MD trajectories to identify potential group of contacts that could be correlated to V0.5 (Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2). Contact analysis show that the C-linker does not have any contact with the putative gating charges of BK VSD (R207, R210 and R213) and thus unlikely interfere with potential lipid-VSD interactions. This is consistent with the experimental results that the K0 mutation does not alter VSD movements during voltage-dependent activation (Figure 1f).\n\n### Tyr membrane anchoring effects can modulate S6 orientation to affect BK activation\n\nAs discussed above, key conformational changes involved in activation of BK channels include the re-orientation of the pore-lining S6 helices, which bends outwardly and toward the membrane at the glycine hinge (G310 and G311) (Figure 1b;\u00a0Jia et al., 2018). Directly connected to the S6 helix, C-linker residues would be moved closer to the membrane interface during activation (e.g., comparing red vs green cartoons in Figure 1b). As such, it can be anticipated that nonspecific interactions of the C-linker with the membrane interface can affect channel activation by stabilizing the bent conformation of S6 helices, thus modulating the activation voltage. Among various amino acids, aromatic ones such as Tyr and Trp are known to be \u2018membrane anchoring\u2019, with a strong preference toward localizing at the membrane-water interface (Johansson and Lindahl, 2006; Monticelli et al., 2008). While the sequence scrambling was designed to suppress the potential effects of specific interactions of the C-linker, the two Tyr residues (Y332 and Y336 in WT) were placed at different separations from the membrane interface (Table 1, underlined). Indeed, the measured V0.5 shows a strong correlation with the sequence separation between E324 (the approximate location of membrane interface) and the nearest C-linker Tyr residue (Figure 3b) in both 0 [Ca2+]I and 100 \u00b5M [Ca2+]i. Positioning this Tyr residue closer to the membrane interface could allow stronger membrane anchoring, preferentially stabilizing the bent conformation of S6 in the open state and shifting the equilibrium toward the active state of the channel as observed. This effect is not affected by the change of [Ca2+]i, suggesting that the interaction between the Tyr residue and the membrane does not alter Ca2+ dependent activation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig3-v3.jpg)\n\n**Figure 3.:** (a) Macroscopic currents of WT, K0, K2 and K7 mSlo1 channels in 100 \u03bcM [Ca2+]i. The currents were elicited by voltage pulses from \u2212200 to 100 mV with 20 mV increments. The voltages before and after the pulses were \u221250 and \u2212120 mV, respectively. (b) G-V shifts as a function of the sequential distance (residue counts) of the nearest C-linker Tyr (Y332 in WT; Y330 in K0; Y331 in K1; Y331 in K2; Y330 in K4; Y329 in K7) to the S6 C-terminal (E324). V0.5 values were obtained by fitting Boltzmann equation to G-V relations in 0 (black) (Figure 1d) and 100 \u00b5M (red) [Ca2+]i. Straight line for 0 [Ca2+]i data is a linear fit to the data to highlight the correlation, for the 100 \u00b5M [Ca2+]i data is a parallel shift of the line for 0 [Ca2+]i.\n\nTo more directly examine if membrane anchoring plays a role in modulating BK activation, we further analyzed the atomistic trajectories to understand the details of Tyr interaction with the membrane interface. As illustrated in Figure 4, Tyr sidechains contain both aromatic rings and polar groups that allow them to embed their aromatic rings in the lipid tail region and at the same time direct the polar -OH groups toward the lipid headgroup region to form hydrogen bonding interactions with water and lipid headgroups (Johansson and Lindahl, 2006). In addition, the aromatic ring could also form \u03c0-cation interactions with positively charged cholines in lipid headgroups (Roberts et al., 2018). Importantly, results from simulation analysis confirm that positioning of the C-linker in the metal-bound state allows more extensive interactions between Try sidechains and the membrane interface (e.g., compare Figure 4a vs b and c vs d), which would stabilize the open state and thus lower the voltage required for activation. This is more clearly shown in the average hydrophobic, hydrogen-bonding and \u03c0-cation interactions formed by the nearest Tyr sidechains (Y332 in WT, Y330 in K0, Y331 in K2, and Y329 in K7; see Table 1), summarized in Figure 5 and Figure 5\u2014figure supplement 1. This is consistent with the observation that Tyr membrane anchoring lowers V0.5 significantly for all mutants except K2. Note that Y329 of K7 appears to be dominated by extensive \u03c0-cation interactions in the metal-bound state (Figure 5d, comparing empty and filled bars) and as a consequence forms slightly fewer hydrogen bonding interactions on average (Figure 5b). Consistent with our experimental data, placing Tyr closer to the end of the S6 helix shifts V0.5 (Figure 1c\u2013d and Figure 3) indeed allows more extensive Tyr/membrane interface interactions, forming larger numbers of polar and nonpolar interactions on average (Figure 5). However, we note that directly quantifying the free energy contribution of Tyr membrane anchoring effects is technically difficult. It requires rigorous calculation of the free energy of the open/close transition of the whole channel, which is not yet feasible given the current computational capability. In particular, there is substantial heterogeneity in the lipid distribution near the channel, especially around the C-linker region (e.g., see Figure 4 and Figure 5\u2014figure supplement 2). Achieving convergence on the free energy of activation transition would require sufficient sampling of these lipid configurations, which has been shown to be extremely slow at the multi-\u03bcs level or longer (Neale et al., 2014).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig4-v3.jpg)\n\n**Figure 4.:** Only the S6 helix and C-linker from one subunit are shown for clarity. POPC molecules near the Tyr residue are shown in sticks, with the phosphorous atoms shown in spheres and colored according to their distance to the membrane center (Z). POPC choline groups (orange Licorice) and water molecule near the Tyr sidechain are also shown to illustrate the \u03c0-cation and hydrogen bonding interactions. Note that the C-linker is positioned closer to the interface and forms more extensive interactions in the metal-bound (activated) state.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig5-v3.jpg)\n\n**Figure 5.:** (a) Average Tyr sidechain solvent accessible surface area (SASA) of burial by lipid tails, representing the level of hydrophobic contacts between the Tyr sidechain and aliphatic lipid tails. (b) Average number of hydrogen bonds between the Tyr OH group and the POPC hydrophilic head groups. (c) Average number of carbon-carbon (C-C) contacts between the Tyr aromatic ring and POPC hydrocarbon tails. (d) Average number of \u03c0-cation interactions between the Tyr aromatic ring and POPC choline group. All results are the average of three independent simulations, with the standard error shown as the error bar. No hydrophobic, hydrogen bonding, or C-C contacts as defined above were observed in the WT channel.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a)\u00a0Tyr side chain SASA (Solvent Accessible Surface Area) of burial by lipid tails. (b) Hydrogen bonding of Tyr OH with the lipid polar head groups. (c) Carbon-carbon contacts between the Tyr aromatic ring and lipid tails. (d) \u03c0-cation interactions between Tyr aromatic ring and POPC choline groups. Distributions derived from simulations of metal-free and bound states are shown in dashed and solid lines, respectively. No hydrophobic, hydrogen bonding, or C-C contacts as defined above were observed in the WT channel. See Materials\u00a0and\u00a0methods for the details of the calculations.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Top view, (b) side view. The POPC phosphorous atoms have been colored according to their distances to the membrane center. S6 helices are colored in magenta and Tyr 330 side chains are shown as pink spheres.\n\n### Tyr membrane anchoring affects BK channel activation similarly without the gating ring\n\nIf the observed effects on the voltage gating of full-length BK channels are indeed mainly due to the nonspecific interactions between the C-linker and membrane interface, they should persist in the Core-MT truncated channel (Budelli et al., 2013; Zhang et al., 2017), in which the whole gating-ring is removed and there is no CTD coupling with either VSD or PGD via the C-linker (Budelli et al., 2013;\u00a0Figure 6a). To test this prediction, Core-MT channels with three C-linker scrambling mutations, K0, K2 and K7, were expressed (Figure 6b) and their voltage-dependent activation measured. Mutations of the C-linker shifted the G-V relation of the Core-MT constructs in the same directions as observed for the full-length channels (Table 1), with K0 and K7 stabilizing channel activation (Figure 6c,e) while K2 making activation at higher voltages (Figure 6d). However, the reduction in the activation voltage by K0 mutation is only\u00a0~42 mV in Core-MT, compared to\u00a0~94 mV in the full-length channel (Figure 6c), and for K7 mutation is\u00a0~67 mV in Core-MT, compared to\u00a0~135 mV in the full-length channel (Figure 6e). This is not considered surprising as the C-linker is more flexible in the absence of the gating ring, thus weakening the effects of membrane anchoring. We measured the gating currents of the Core-MT and the K0 mutant in Core-MT (Figure 6f). The Q-V curves for these two channels are similar (Figure 6g) supporting that the K0 mutation does not affect voltage sensor movements, but may alter pore opening to modify BK channel activation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig6-v3.jpg)\n\n**Figure 6.:** (a) Illustration of the structure of the Core-MT BK channel, where the whole CTD is absent. The mini-tail is omitted in the illustration for clarity. (b) Macroscopic currents of the WT Core-MT construct as well as the K0, K2 and K7 C-linker scrambling mutants. The currents were elicited in 0 [Ca2+]i by voltage pulses from \u221230 to 250 mV with 20 mV increments. The voltages before and after the pulses were \u221250 and \u221280 mV, respectively. (c-e) G-V curves for WT Core-MT and K0, K2 and K7 mutants in 0 [Ca2+]i (red traces). The G-V curves of the Full-Length channels are also shown for reference (black traces). All lines were fit to the Boltzmann relation (see Materials\u00a0and\u00a0methods) with V0.5 of 235.0\u00a0\u00b1\u00a03.1 mV for WT Core-MT; 192.6\u00a0\u00b1\u00a03.8 mV for K0 Core-MT; 263.5\u00a0\u00b1\u00a04.0 mV for K2 Core-MT; and 167.5\u00a0\u00b1\u00a04.2 mV for K7 Core-MT. (f) Gating current traces of Core-MT and K0 in Core-MT mSlo1 channels. Voltage pulses were from \u221280 to 300 mV with 20 mV increments. (g) Normalized Q-V relation of on-gating currents. The smooth curves are fits to the Boltzmann function with a V0.5 and slope factor of 138.0\u00a0\u00b1\u00a03.1 mV and 51.3\u00a0\u00b1\u00a02.8 mV for Core-MT. and 154.7\u00a0\u00b1\u00a06.8 mV and 50.1\u00a0\u00b1\u00a05.6 mV for K0 on Core-MT.\n\nThe observation that linker sequence scrambling mutations can modulate BK activation even in the Core-MT background is remarkable, providing a direct evidence that the C-linker is more than an inert, passive covalent linker for coupling the gating ring and PGD. Instead, the linker plays a more direct and more specific role in modulating the opening of BK pore, such as through its interactions with the membrane environment. As such, the linker could be considered an integral component of the sensing apparatus.\n\n### Removal of membrane anchoring Tyr in a C-linker BK mutant recovers WT-like gating\n\nWe note that Tyr is not the only type of residues being shuffled in the sequence scrambling (Table 1) and that interactions of other residues, particularly charged ones (Tian et al., 2019), with membrane and water could also affect the open/close equilibrium of the channel. This may explain why K1 and K2 mutant channels have different V0.5, even though the nearest Tyr is at position 331 in both mutants (Table 1). To further examine if Tyr residues indeed provide the dominant contributions, we replaced Y330 with Gly in the full-length K0 mutant to completely remove the aromatic side chain. The mutant expressed robust currents (Figure 7a). Strikingly, K0 Y330G mutation abolished the effects of K0 on G-V relation and largely shifted the G-V back to that of the WT, with a V0.5 of 169.8\u00a0\u00b1\u00a05.0 mV as compared to 183.4\u00a0\u00b1\u00a03.2 mV for the WT (Figure 7b). This, together with the correlation shown in Figure 3, provides a direct support that membrane anchoring effects of Tyr are mainly responsible for modulating the activation voltage in the C-linker sequence scrambling mutants.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig7-v3.jpg)\n\n**Figure 7.:** (a) Macroscopic currents of K0 (Y330G) mutant channel. The currents were elicited in 0 [Ca2+]i by voltage pulses from \u221230 to 250 mV with 20 mV increments. The voltages before and after the pulses were \u221250 and \u221280 mV, respectively. (b)\u00a0The G-V curve in 0 [Ca2+]i, showing the recovery of activation voltage (V0.5) of the K0 (Y330G) to the WT level. The solid line was fit to the Boltzmann relation (see Materials\u00a0and\u00a0methods) with 169.8\u00a0\u00b1\u00a05.0 mV for the K0 (Y330G). The G-V curves of the full-length WT and K0 mutant channels are also shown for reference (solid and dash lines). (c-d)\u00a0Representative molecular snapshots showing the effects of Y330G mutation in K0 channels. See Figure 4 caption for the details of molecular representations.\n\n## Discussion\n\nWe have combined atomistic simulations and experiment to determine the role of the 15-residue C-linker in the sensor-pore coupling of BK channels. As the only covalent connection between PGD and CTD of BK channels, C-linker has been widely assumed to play an important role in mediating the information transfer and domain coupling. Our analysis show that C-linker is a structured loop with extensive contacts with CTD and VSD, and remain highly stable in both metal-bound (activated) and metal-free (deactivated) states. Dynamic coupling analysis confirms that C-linker is the key pathway of the senor-pore coupling. However, the linker is not just an inert pathway. Instead, sequence scrambling of the C-linker can greatly affect the activation voltage of BK channels. Atomistic simulations revealed that the effects on the activation voltage could be mainly attributed to the nonspecific interactions between the C-linker and membrane interface, particularly membrane anchoring effects of Tyr residues. These conclusions were supported by additional experiments showing that the effects of C-linker sequence scrambling persist in the Core-MT constructs, where the gating ring is completely removed, and that replacing the key Tyr residue with Gly largely abolishes the shift in the G-V curve in a selected C-linker mutant. To the best of our knowledge, this is one of the first direct demonstrations of how nonspecific membrane interactions can modulate TM protein function.\n\nIn BK channels the cytosolic gating ring is the Ca2+ sensor, harboring Ca2+ binding sites (Wei et al., 1994; Shi et al., 2002; Xia et al., 2002; Zhang et al., 2010; Hite et al., 2017; Tao et al., 2017; Tao and MacKinnon, 2019), and important for the coupling between the voltage sensor and the\u00a0gate (Zhang et al., 2017). The C-linker is the only covalent connection between the gating ring and the activation gate, and in this study we show that it is a major path for functional coupling between the gating ring and the pore (Figure 2c,d). Therefore, the C-linker is important for the coupling of both Ca2+ and voltage sensors to the gate. We show in this study that the C-linker scrambling mutation K0 alters the voltage dependence of channel opening but not VSD activation (Figures 1 and 6, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2), indicating that the mutation may alter either the activation gate or the coupling between the VSD and the pore. BK channel activation by voltage and Ca2+ can be well described by the HA allosteric model (Horrigan and Aldrich, 2002;\u00a0Figure 8a). We used this model to simulate how V0.5 changes with either the changes of the equilibrium for the intrinsic open-closed transitions of the activation gate (L0, Figure 8a,b) or the changes of the allosteric coupling between the VSD and the activation gate (D, Figure 8a,c). The results show that either changes could approximately reproduce the V0.5 changes caused by the C-linker scrambling mutations (Figure 3). These results support that the interaction of the Tyr side chain with the membrane in these C-linker scrambling mutations may affect BK channel activation by altering either the activation gate or the coupling between the VSD and the pore. However, since the C-linker is important for the coupling of the pore with both Ca2+ and voltage sensors, we expect that the C-linker scrambling mutations would have altered both Ca2+ and voltage-dependent activation if they were to primarily affect coupling. Since these mutations have little effect on Ca2+ dependent activation (Figure 3), it seems that the Tyr-membrane interactions primarily promote gate opening. We notice that the gating ring has some influence on the functional effects of the mutations (Figures 1 and 6, Table 1), these effects may be due to the conformational restraints imposed by the gating ring on the C-linker, but such restraints may not be sensitive to conformational changes caused by Ca2+ binding.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/55571/elife-55571-fig8-v3.jpg)\n\n**Figure 8.:** (a)\u00a0The HA model for BK channel activation, where L, J, and K are equilibrium constants to represent conformational changes in the PGD, VSD, and CTD domains respectively. D, C, and E are allosteric constants for coupling among the three domains. (b, c)\u00a0Simulations of V0.5 vs 1/D (b) and 1/L0 (c) in 0 and 100 \u00b5M [Ca2+]i. The HA model parameters used here are from fittings to the WT BK channels (Zhang et al., 2014), with L0\u00a0=\u00a03.5e-07, ZL\u00a0=\u00a00.18, ZJ\u00a0=\u00a00.59, VH\u00a0=\u00a0159, C\u00a0=\u00a010.0, D\u00a0=\u00a048, E\u00a0=\u00a04.2 and KD\u00a0=\u00a018.0. The curves are plotted with only D (b) or L0 (c) varying, while all other parameters remain constant.\n\nOur conclusion that the C-linker is unlikely an inert component of the linker-gating ring \u2018passive spring\u2019 is also consistent with other structural and functional studies of BK channels. For example, the Cryo-EM structures of BK channels (Hite et al., 2017; Tao et al., 2017) reveal that the previously published poly-AAG insertion site (Niu et al., 2004), right after residue S337 (Supplementary file 1), actually locates in a short loop following the C-linker segment -Y332GGSY336- that forms stable contacts with RCK1 N-lobe (Figure 1\u2014figure supplement 2). The inserted residues would project away from the channel (Figure 1\u2014figure supplement 5), and are very unlikely to affect the effective C-linker length (or the gating ring-pore distance) as originally designed. Instead, the observed effects in BK gating V0.5 upon insertion/deletion of C-linker residues could likely be attributed to certain nontrivial structural and/or dynamical impacts, such as weakening of the VSD/CTD interactions. Another important evidence that is inconsistent with the passive spring model comes from the study of Core-MT BK channels. Since the whole gating ring is removed, the Core-MT construct should correspond to a state where the passive spring is fully relaxed and thus V0.5 maximizes. Yet, the V0.5 of WT Core-MT is only\u00a0~52 mV larger than the full-length BK channel (Table 1). This is far below what may be expected based on poly-AAG insertion mutants, which can increase V0.5 by\u00a0~142 mV with (AAG)3 inserted (Niu et al., 2004) (also see Supplementary file 1). Interestingly, the recently published Cryo-EM structures confirms that \u03b2 subunits make extensive contacts with the C-linker for influencing the channel gating and manipulating the channel function (Tao and MacKinnon, 2019).\n\nTM ion channels and receptors frequently contain separate TM domains, which directly mediate function such as ion permeation, and intracellular and extracellular sensing domains, which often control the function of TM domains in response to various chemical signals (Hille, 2001). The general role of the covalent linkers connecting the sensing and TM domains is of great general interest (Magleby, 2003; Bavro et al., 2012). A central question is whether the linker mainly provides an inert and passive connection between sensing and TM domains or it should be considered an element of signal sensing itself. Dissecting the potential roles of covalent linkers is challenging because multiple sources of interactions and conformational transitions could impose competing strains on the linker to modulate functional regulation. It is difficult to design experiments that can unambiguously test and validate whether a particular type of strain imposed on the covalent linker could lead to predictable functional outputs. Linker sequence permutation could provide an effective strategy to suppress the potential consequence of specific (but unknown) linker interactions, allowing one to test the functional role of a single type of strain imposed on the linker (such as membrane anchoring). Our findings show that non-specific interactions of the C-linker can regulate BK voltage gating. Therefore, covalent linkers of membrane proteins could serve as sensors of signals that perturb their interaction with the environment, which in turn can modulate the functional center in the TM domain, may it be the gate of ion channels or intramolecular signaling pathway in receptors.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene Mus musculus</td>\n      <td>mslo1</td>\n      <td></td>\n      <td>GenBank GI: 47143</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene Mus musculus</td>\n      <td>Core-MT</td>\n      <td>Dr. Lawrence Salkoff</td>\n      <td></td>\n      <td>PMID:24067659</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Xenopus laevis)</td>\n      <td>oocyte</td>\n      <td>Xenopus laevis</td>\n      <td></td>\n      <td>Xenopus laevis purchased from Nasco, Fort Atkinson, WI</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>mMESSAGE T7 Transcription Kit</td>\n      <td>Thermo Fisher</td>\n      <td>AM1344</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Igor Pro 4.0</td>\n      <td>WaveMetrics</td>\n      <td>https://www.wavemetrics.com/products/igorpro</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>For site-directed mutagenesis</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>PCR primers seq for mutations made in this study (each mutation utilized two primers: b and c). K0 b: gCtctGCTgTActtGgaCCCcTtgccgTaGCGGTTTCCTATTAACTC c: cCaagTAcAGCagaGcTgtctccAagggGCACATTGTAGTCTGTG K1 b: cTtGtAcgaCCCGccaTaCTTgttGccgatCcTTAACTCTATGATTTCAG c: ggCGGGtcgTaCaAgAGCGCtGTccGcaagAGcggGCACATTGTAGTCTG K2 b: gagTAGctaCCgCCcTtgTagTTcttgcgTCCTATTAACTCTATGATTTC c: gGGcGGtagCTActcCGCcagggtctcAgGAAAGCACATTGTAGTC K4 b: ctTAgcGGAGtaCgaGccTccgTaGtttcTTCCTATTAACTCTATGATTT c: gCtcGtaCTCCgcTAagaaGGTTAGgaGcAaAggGCACATTGTAGTCTGT K7 b: CTAacGGcGCtgtaGctTccCccGtaGTTTCCTATTAACTCTATG c: gCtacaGCgCCgtTAGgaaGagTaagGGAAGAAAGCACATTGTAG K0 on Core-MT b: gCtctGCTgTActtGgaCCCcTtgccgTaGCGGTTTCCTATTAACTC c: cCaagTAcAGCagaGcTgtctccAagggtGGAGTCAAGGAATCATTA K7 on Core-MT b: gaaGagTaagGGAAGAAAGGGAGTCAAG c: GAAGAAAGGGAGTCAAGGAATCAT K2 on Core-MT b: CCTTGACTCCtTTTCcTgagaccctgG c: gGAAAaGGAGTCAAGGAATCATTATG K0 Y330G b: GCCGccGCGGTTTCCTATTAACTC c: GAAACCGCggCGGCAAGGGGTCCAAG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Homology modeling and atomistic simulations\n\nAs described previously (Jia et al., 2018), homology models of the WT metal-bound and metal-free hSol1 channels were built using Modeller v9.14 (Sali and Blundell, 1993) based on sequence alignment of Tao et al., 2017. Sequence alignment shows 55.95% identity for the full-length channels. The sequence identities in PGD is higher at 61.96%. The high level of sequence identity suggests that the homology models are likely reliable. This has been confirmed by direct comparison with the recently published Cryo-EM structures of hSlo1 (Tao and MacKinnon, 2019;\u00a0Figure 1\u2014figure supplement 3). The backbone RMSD between the model and new structure is only 2.18 \u00c5 at the whole channel level and as low as 0.87 \u00c5 in the PGD. Structures for C-linker scrambling mutants were build based on the WT hSlo1 models using CHARMM (Brooks et al., 2009).\n\nUsing CHARMM-GUI server (Lee et al., 2016), the homology modeled hSlo1 structures were inserted in POPC lipid bilayers followed by solvation using the TIP3P water model (Jorgensen et al., 1983). 450 mM KCl was then added, same as used in Cryo-EM structure determination (Hite et al., 2017; Tao et al., 2017). K+ ions were added to each binding site of the selectivity filter (S1-S4) without any intervening water. Each system was first energy minimized, followed by multiple cycles of equilibration dynamics with gradually decreasing harmonic restrains on positions of selected protein/lipid heavy atoms. To ensure that the size of the simulation box become stable, in the last equilibration step, only protein heavy atoms were harmonically restrained while the system equilibrated under NPT (constant particle number, pressure and temperature) condition. The final simulation box size is\u00a0~18\u00d718 x 15.4 nm3 with\u00a0~476,000 atoms, containing\u00a0~97,000 water molecules and\u00a0~800 lipid molecules. The Charmm36m all-atom force field (Huang et al., 2017) was used for all systems. The production simulations were performed using CUDA-enabled Amber14 (Case et al., 2014). The MD time step was set at two fs. Particle Mesh Ewald (PME) algorithm (Darden et al., 1993) with a cut-off at 12 \u00c5 was used to describe the electrostatic interactions. Van der Waals interactions were cutoff at 12 \u00c5 with a smooth switching function starting from 10 \u00c5. Lengths of all covalent bonds involving hydrogen atoms were fixed using SHAKE algorithm (Ryckaert et al., 1977). The system temperature was maintained at 298 K by Langevin dynamics with a friction coefficient of 1 ps\u22121, and the pressure was maintained semi-isotopically at 1 bar at both x and y (membrane lateral) directions using the Monte-Carlo barostat method (Chow and Ferguson, 1995; \u00c5qvist et al., 2004). Three independent 800-ns NPT production simulations were performed for each construct (WT, K0, K2 and K7) in both metal-free and bound states, with an aggregated simulation time of 19.2 \u03bcs. Snapshots were saved every 50 ps for post analysis.\n\n### Structural and dynamic analysis\n\nAll analyses were performed using a combination of in-house scripts, MDAnalysis (Michaud-Agrawal et al., 2011) and Gromacs2016 (Hess et al., 2008; Abraham et al., 2015) software. Only snapshots from the last 150 ns of all production MD trajectories were used for the calculation of Tyr-membrane interactions (SASA of burial, hydrogen bonding, \u03c0-cation and carbon-carbon contacts) as well as RMSF and the C-linker contact map (SI). A (hydrophobic) carbon-carbon contact was considered formed if the distance is no greater than 4.5 \u00c5. The \u03c0-cation interaction was identified when the distance between the center of mass of the Tyr aromatic ring and Nitrogen atom of POPC choline group is no greater than 5.0 \u00c5. We note that nonpolarizable fore fields such as Charmm36m used in this work have been shown to be capable of accurately describing the geometries of \u03c0-cation interactions, even though the energetics could be improved using modified Lennard-Jones potentials (Khan et al., 2019). Similarly, the cutoff was set at 5.0 \u00c5 for calculation of the C-linker contact map (SI) while only the heavy atoms of each residue were considered. Hydrogen bonds were analyzed using the MDAnalysis \u2018HyrogenBondAnalysis\u2019 class with default criteria. The number of pore water molecules was calculated using the same criteria as described previously (Jia et al., 2018). Dynamic network analysis was performed using the Networkview (Eargle and Luthey-Schulten, 2012) plugin of VMD (Humphrey et al., 1996). For this, snapshots were extract every one ns from the 800 ns molecular dynamic trajectories. To build the network, each amino acid was represented as a single node at their C\u03b1 position and a contact (edge) was defined between two nodes if the minimal heavy-atom distance between them was within a cutoff distance (4.5 \u00c5) during at least 75% of the trajectory. The resulting contact matrix were then weighted based on the correlation coefficients of dynamic fluctuation (Cij), calculated using the Carma software (Glykos, 2006), as wij = -log (|Cij|), where Cij = <\u0394ri(t).\u0394rj(t)> / (<\u0394ri(t)2> <\u0394rj(t)2>)1/2 and \u0394ri(t)=ri(t) -\u00a0<\u00a0ri(t)>, ri(t) is the position of the atom corresponding of the ith node and\u00a0<>denotes ensemble average (over the MD trajectory). The path length between the desired nodes were then calculated as the sum of the edge weights. The shortest (optimal) path, calculated using Floyd-Warshall algorithm (Floyd, 1962), is believed to represent the dominant mode of communication. Slightly longer (suboptimal) paths were also calculated. VMD was used for preparing all molecular illustrations.\n\n### Mutations and expression\n\nMutations in all experiments were made by using overlap-extension PCR (polymerase chain reaction) with Pfu polymerase (Stratagene) from the mbr5 splice variant of mslo1 (Uniprot ID: Q08460) (Butler et al., 1993). And then all PCR-amplified regions were verified by sequencing (Shi et al., 2002). RNA was then transcribed in vitro from linearized DNA with T3 polymerase (Ambion, Austin, TX) and an amount of 0.05\u201350 ng/oocyte RNA was injected into oocytes (stage IV-V) from female Xenopus laevis. After injection, these oocytes were incubated at 18\u00b0C for 2\u20137 days.\n\n### Electrophysiology\n\nWe used inside-out patches to record Ionic currents with an Axopatch 200-B patch-clamp amplifier (Molecular Devices, Sunnyvale, CA) and ITC-18 interface and Pulse acquisition software (HEKA Elektronik GmbH, Holliston, MA). Borosilicate pipettes those were used for inside-out patches had 0.5\u20131.5 M\u03a9 resistance and then formed patches from oocyte membrane. The current signals were recorded at 50 KHz sample rate (20-\u03bcs intervals) with low-pass-filtered at 10 KHz. In order to remove capacitive transients and leak currents, we applied a P/4 protocol with a holding potential of \u2013120 mV. Our solutions used in recording ionic currents were listed below. 1) Pipette solution (in mM): 140 potassium methanesulphonic acid, 20 HEPES, 2 KCl, 2 MgCl2, pH 7.2. 2) The nominal 0 \u00b5M [Ca2+]i solution, which contained about 0.5 nM free [Ca2+] i (in mM): 140 potassium methanesulphonic acid, 20 HEPES, 2 KCl, 5 EGTA, and 22 mg/L (+)\u221218-crown-6-tetracarboxylic acid (18C6TA), pH 7.2. 3) Basal bath (intracellular) solution (in mM): 140 potassium methanesulphonic acid, 20 HEPES, 2 KCl, 1 EGTA, and 22 mg/L 18C6TA, pH 7.2. Then we added CaCl2 into basal solution to obtain the desired free [Ca2+]i, which was determined by a Ca2+-sensitive electrode (Thermo Electron, Beverly, MA). Gating currents were recorded from inside-out patches at 200 kHz sample rate and 20 kHz low-pass filtration with leak subtraction using a -P/4 protocol. The pipette solution contained (in mM): 127 tetraethylammonium (TEA) hydroxide, 125 methanesulfonic acid, 2 HCl, 2 MgCl2, 20 HEPES, pH 7.2, and the Internal solution contained (in mM): 141 N-methyl-D-glucamine (NMDG), 135 methanesulfonic acid, 6 HCl, 20 HEPES, 5 EGTA, pH 7.2. All chemicals were from Sigma-Aldrich unless otherwise noted, and all the experiments were done at room temperature (22\u201324\u00b0C).\n\n### Electrophysiology data analysis\n\nRelative conductance (G) was obtained by measuring macroscopic tail current at \u201380 mV or \u2212120 mV. The conductance-voltage (G-V) relationships was plotted to fit with the Boltzmann function:\n\n$$\nG/G_{Max}=1/(1+exp(\u2212ze_{o}(V\u2212V_{0.5})/kT))=1/(1+exp((V_{0.5}\u2212V)/b))\n$$\n\nWhere G/GMax means the ratio of conductance to maximal conductance, z means the number of equivalent charges, eo means the elementary charge, V means membrane potential, V0.5 means the voltage where G/GMax reaches 0.5, k means Boltzmann\u2019s constant, T means absolute temperature, and b means the slope factor with units of mV. Each G-V relationship was the average of 3\u201315 patches and error bars in the figures is standard error of means (SEM.).\n\n### Model simulation of electrophysiology data\n\nHA model (Horrigan and Aldrich, 2002) was used to simulate the relationship between V0.5 and D or L0 in Figure 8.\n\n$$\nPo=L(1+KC+JD+JKCDE)^{4}/(L(1+KC+JD+JKCDE)^{4}+(1+K+J+JKE)^{4})\n$$\n\nV0.5 is the voltage for Po\u00a0=\u00a00.5, and the Equation (2) changes to:\n\n$$\nL(1+KC+JD+JKCDE)^{4}=(1+K+J+JKE)^{4}\n$$\n\nwhere\n\n$$\nL(V_{0.5})=L_{0}exp(\u2212Z_{L}V_{0.5}/KT)\n$$\n\n\n\n$$\nJ(V_{0.5})=J_{0}exp(\u2212Z_{J}V_{0.5}/KT)=exp((V_{0.5}\u2212V_{H})Z_{J}V/KT)\n$$\n\n\n\n$$\nK=[Ca^{2+}]_{i}/K_{D}\n$$\n\nThe parameters for the HA model were obtained previously by fitting the model to WT BK data (Zhang et al., 2014), where L0\u00a0=\u00a03.5e-07, ZL\u00a0=\u00a00.18, ZJ\u00a0=\u00a00.59, VH\u00a0=\u00a0159, C\u00a0=\u00a010.0, D\u00a0=\u00a048, E\u00a0=\u00a04.2 and KD\u00a0=\u00a018.0. To simulate V0.5 vs 1/D or V0.5 vs 1/L0, only D or L0 varied while all other parameters remained constant.\n",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "7ae3a11e-bbc1-439b-afae-7e6f1ec5bbe7",
+      "submission_id": "d8e62cc2-e63c-4356-840e-985ed84ea435",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55571.sa1](https://doi.org/10.7554/eLife.55571.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nGating, the closed to open state transition in high conductance potassium (BK) ion channels is modulated by complex interactions with a specialized domain that acts as a calcium sensor. In this manuscript Yazdani et al. present a set of experiments and simulation results which demonstrate that the BK, high-conductance channel, relies on the physical characteristics of a linker region joining the calcium-sensing domains to the pore domain to allosterically transmit energy for gating. The authors have used a nice combination of theory and experiments to provide solid evidence for this interaction. these results represent an advance in our understanding of these important proteins. After review, the authors have nicely revised their manuscript.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"Nonspecific membrane interactions can modulate BK channel activation\" for peer review at eLife. Your article has been evaluated by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Aldrich as the Senior Editor.\n\nApart from the individual reviews appended below, several concerns were raised by reviewers during online consultation. Mainly, the paper needs to be completely rewritten to better integrate simulations with experiments. Also, the reviewers think that several new experiments are needed to substantiate the conclusion, especially those pertaining the experimental part of the manuscript. Given the current world crisis due to COVID-19 and the closing of several labs, we want to gage the possibility that you can perform the experiments in reasonable time.\n\nReviewer #1:\n\nThe manuscript by X presents both experimental and computational (molecular dynamics) data pertaining the role of the C-linker, in BK channel activation. This region connecting the transmembrane domains and the intracellular ligand-binding domains has been thought of as a passive spring transmitting conformational changes from the RCK domains to the pore region and perhaps the voltage sensor. In this work, the authors show that tyrosines in the C-linker form non-specific interactions with inner membrane lipids and these interactions are capable of regulating the range of voltage over which channel activation occurs. This is an interesting result, and interactions of aromatic residues with the membrane may be found to be a general principle in other channels. My comments are the following:\n\n\u2013 The use of only the V1/2 value as a reporter of the open-close equilibrium is very limited. The mutations in the c-linker could affect the allosteric interactions between the pore, VSD and RCK domains in ways that are not predictable. The authors should provide other experimental measurements. Since the manuscript wants to study the effect of the composition of the c-linker on coupling of ligand to channel opening, why are all the experiments carried out in the absence of Ca2+? It seems that all the conclusions regarding coupling are being derived from the MD simulations, but no effort is made to actually dissect the effect of linker composition on coupling. The authors should show data on the dependence of v1/2 on calcium concentration of their constructs.\n\n\u2013 The manuscript has several grammatical errors and typos that need to be corrected. For example, \u201cbended\u201d.\n\n\u2013 Describing the C-linker as a passive spring is an over simplification, the amino acid composition , even if not forming specific interactions with other domains can affect the mechanical properties of the linker in a sequence-specific manner. The authors should be careful in stating this.\n\n\u2013 In general, calling the interaction of a tyrosine residue with the membrane non-specific seems non satisfactory. The interaction is specific to the tyr side chain and is mediated by specific physical-chemistry.\n\n\u2013 When the authors refer to Figure 5 in the subsection \u201cTyr membrane anchoring affects BK channel activation similarly without the gating ring\u201d, it should actually be Figure 6.\n\n\u2013 Figure 2 legend. The authors refer to the small values of RMSF as indicating limited flexibility of the C-linker. However, RMSF is not a measure of flexibility in a mechanical sense.\n\n\u2013 Figure 2 legend. There are no panels E and F in the figure.\n\n\u2013 Subsection \u201cC-linker is a structured loop with limited flexibility and a key dynamic pathway of BK gating ring-pore coupling\u201d, solubility of C-linker. How do you define solubility in this context, since the linker is attached to the protein? Perhaps using solvation of the linker is more precise.\n\n\u2013 \"These structures reveal that the C-linker is a structured loop with essentially identical conformations in both metal-free (closed) and metal-bound (open) states (Figure 1B).\" Please show a more detailed figure of the linker in both states, since the figure as is does not bear out this information.\n\n\u2013 Figure 2\u2014figure supplement 6, what is the correlation coefficient for? It seems that you cannot compare the simulation shown in Figure 2\u2014figure supplement 6 with the Niu et al. paper. Also, if you remove K0 from the graph, it seems you get a good correlation linear correlation as expected for a spring.\n\nReviewer #2:\n\nThrough molecular dynamics simulations, Yazdani et al. suggest that the C-linker segment connecting S6 and the gating ring domain is a relatively stable loop. The simulation results are accompanied by electrophysiological measurements from WT and select C-linker mutants.\n\nThe authors suggest that if the first (most N-terminal) Tyr residue in the C-linker segment is moved towards S6 (or upstream), the Tyr residue can interact with membrane lipids (I think this is what the authors call \"nonspecific membrane interactions\"). Such interactions are mostly absent or rare in wild-type channels presumably because the Tyr residue is too far away.\n\nThe simulation results seem straight forward and solid with three independent systems constructed (but see my comments elsewhere). The molecular dynamics is a useful tool but the method is imperfect. (Like other simulation results,) some concerns do exist \u2013 but I think that readers can decide on their own.\n\nIn an ideal study, there should be a high level of integration between the simulation and experimental results. I cannot say that this study in the present form achieves such a level. The study shows that what a single Tyr residue could achieve when selectively or strategically positioned, and, perhaps indirectly, tells us about how WT channels work.\n\nProbably two of my biggest concerns are the terms \"inert\" and \"nonspecific\" as used in this manuscript as described elsewhere.\n\nReviewer #3:\n\nThe C-linker physically couples the cytosolic and transmembrane domains in the large-conductance potassium (BK) channel yet its mechanistic role is not fully understood. In the present work, Cui, Cheng and co-workers aim at characterizing the C-linker's role in BK activation by investigating a series of linker sequences. The main conclusion is that the C-linker serves as a sensor of environmental signals that modulates BK channels by means of membrane-mediated nonspecific interactions. I believe the manuscript is of relevance and I would like to see it published provided that revisions are addressed by the authors.\n\nBecause the C-linker is a structured loop with an equilibrium end-to-end distance of ~ 31 \u00c5 and with extensive amino-acid interactions with the cytosolic and voltage-sensor domains, the intuitive hypothesis raised by the authors is that the C-linker may impact BK activation as being part of the gating apparatus of the channel. While the modulatory nature of the C-linker was experimentally shown to be true in terms of activation-voltage shifts, no explicit rationale was proposed by the authors to account for that fact, apart from the membrane-mediated nonspecific interactions \u2013 i.e., nonspecific interactions of the linker with membrane alone could directly modulate BK activation. Although the conclusion is sound and more importantly supported by the data, one may not avoid wondering about an alternative or complementary mechanism not yet explored or discussed by the authors. It is well known that the lipid-phosphoryl moiety helps stabilizing the down state of the voltage sensor via salt-bridge interactions with the positively gating charges of the domain (see for instance, Treptow and colleagues PNAS 2011, 2012 and 2014). Accordingly, the linker constructs might affect that specific lipid-protein interaction given their \"decoration\" with one or more basic amino acids in addition to the membrane-anchoring tyrosine \u2013 as shown in Figure 4 and Figure 2\u2014figure supplement 1, the linker appears to interact with the sensor domain, in all of its forms.\n\nAll said, I would then recommend the authors to analyze carefully if C-linker charges are \"competing\" for phospholipids sites and destabilizing salt-bridge interactions with the voltage sensor. Still by means of membrane-anchoring effects, it would not be very surprising if C-linker modulates the activation voltage of the channel by interfering with the voltage sensor.\n\nOther points:\n\nIt was stated in Figure 1\u2014figure supplement 4 that \"RMSF and RMSD were obtained from the 150ns MD simulations with time step 0.05ns\" \u2013 while understanding standard calculations in the context of MD simulations it is still not clear for me the purpose of that time step in the computation of the RMSF or RMSD adopted by the authors.\n\nWhat is the purpose of the dynamical-coupling analysis shown in Figure 2 \u2013 what is the hypothesis behind that study? Is there any control or reference benchmark for the analysis \u2013 for instance, how \"strongly\" does the C-linker couple S6/RCK1 versus VSD/RCK1 or any other region?\n\nThe residue contact map shown in Figure 1\u2014figure supplement 4 is very busy and does not clearly illustrate neither the orientation of the conserved residues (Y332, Y336, R329, K330, K331, R342 and K343) of the C-linker nor its packing with the VSD/RCK1 domains.\n\nAn equilibrium end-to-end distance of ~ 31 \u00c5 appears to be the necessary structural condition for a functional C-linker that couples cytosolic and transmembrane domains of the channel. Indeed, as shown in Figure 2\u2014figure supplement 3, that structural condition appears to be shared by the wild-type and the alternative C-linker constructs (K0, K2 and K7) despite their distinct impact on channel's gating and activation voltages. If that understanding is correct then the lack of correlation between end-to-end distances and voltage-shifts induced by mutations in Figure 2\u2014figure supplement 6 is expected and it cannot be used as an argument against the passive spring model.\n\nNotation of figures are degenerate \u2013 for instance, there are two Supplementary Figure 3s in the text.\n",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "07913044-62d3-484e-8b6f-7457069f7c3d",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C1",
+      "claim": "Large-conductance potassium (BK) channels have a large single-channel conductance of approximately 100\u2013300 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-conductance potassium (BK) channels are transmembrane (TM) proteins that can be synergistically and independently activated by membrane voltage and intracellular Ca2+. The only covalent connection between the cytosolic Ca2+ sensing domain and the TM pore and voltage sensing domains is a 15-residue 'C-linker'. To determine the linker's role in human BK activation, we designed a series of linker sequence scrambling mutants to suppress potential complex interplay of specific interactions with the rest of the protein. The results revealed a surprising sensitivity of BK activation to the linker sequence. Combining atomistic simulations and further mutagenesis experiments, we demonstrated that nonspecific interactions of the linker with membrane alone could directly modulate BK activation. The C-linker thus plays more direct roles in mediating allosteric coupling between BK domains than previously assumed. Our results suggest that covalent linkers could directly modulate TM protein function and should be considered an integral component of the sensing apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature (Knaus et al., 1996; Uebele et al., 2000; Salkoff et al., 2006; Lee and Cui, 2010; Yang et al., 2015) to support the conductance range.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "df608cd1-a24a-4199-b6b0-69cd8f955b36",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C2",
+      "claim": "BK channels are activated by both intracellular Ca2+ and membrane voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-conductance potassium (BK) channels are transmembrane (TM) proteins that can be synergistically and independently activated by membrane voltage and intracellular Ca2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature (Shi and Cui, 2001; Horrigan and Aldrich, 2002; Gessner et al., 2012) to support dual activation mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "777a7bc8-96b9-45f3-978d-551abe5dfe75",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C3",
+      "claim": "BK channels are involved in intracellular ion homeostasis and membrane excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "BK channels are involved in numerous vital physiological processes including intracellular ion homeostasis and membrane excitation, and are associated with pathogenesis of many diseases such as epilepsy, stroke, autism and hypertension (Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature (Zhou et al., 2017) to support the physiological roles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "4f20b9e8-092a-4b38-a876-6096e863e440",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C4",
+      "claim": "BK channels are associated with pathogenesis of epilepsy, stroke, autism and hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "BK channels are involved in numerous vital physiological processes including intracellular ion homeostasis and membrane excitation, and are associated with pathogenesis of many diseases such as epilepsy, stroke, autism and hypertension (Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature (Zhou et al., 2017) to support disease associations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "cc33f291-e326-4e1e-9de0-8a5b70c154b6",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C5",
+      "claim": "Functional BK channels are homo-tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional BK channels are homo-tetramers, each containing three distinct domains (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about BK channel structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "3af6fd8d-967e-4806-8e57-14c8691a7c94",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C6",
+      "claim": "Each BK channel subunit contains three distinct domains: voltage sensor domain (VSD), pore-gate domain (PGD), and cytosolic tail domain (CTD).",
+      "claim_type": "EXPLICIT",
+      "source": "Functional BK channels are homo-tetramers, each containing three distinct domains (Figure 1a). The voltage sensor domain (VSD) detects membrane potential, the pore-gate domain (PGD) controls the K+ selectivity and permeation, and the cytosolic tail domain (CTD) senses various intracellular ligands including Ca2+.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the three domains and their functions, with reference to Figure 1a.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "35d8a759-da6f-4925-8ed6-384a86a6cb44",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C7",
+      "claim": "The VSD and CTD form a Mg2+ binding site for Mg2+ dependent activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The VSD and the CTD also form a Mg2+ binding site for Mg2+ dependent activation (Yang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature (Yang et al., 2008) to support the Mg2+ binding site.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "a508d078-dcd5-49d1-9c5d-059ecfff77d0",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C8",
+      "claim": "The tetrameric assembly of CTD domains is referred to as the 'gating ring'.",
+      "claim_type": "EXPLICIT",
+      "source": "The tetrameric assembly of CTD domains is also referred to as the 'gating ring'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "e75a21e8-1dbf-4204-9be0-ed4a04e5272b",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C9",
+      "claim": "CTD of each BK subunit resides beneath the TMD of the neighboring subunit in a domain-swapped arrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies on mouse BK channels (Yang et al., 2008) and recent atomistic structures of full-length Aplysia californica (aSlo1) and human BK channel (hSlo1) (Hite et al., 2017; Tao et al., 2017; Tao and MacKinnon, 2019) reveal that CTD of each subunit reside beneath the TMD of the neighboring subunit in a surprising domain-swapped arrangement (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites published structures (Yang et al., 2008; Hite et al., 2017; Tao et al., 2017; Tao and MacKinnon, 2019) and references Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "8055b32e-0f85-4562-a337-bd18cb437ed7",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C10",
+      "claim": "The C-linker is a 15-residue peptide (R329 to K343 in human BK channel) that connects CTD and TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "The only covalent connection between CTD and TMD of BK channels is a 15-residue peptide referred to as the 'C-linker' (R329 to K343 in the human BK channel, hSlo1) (green in Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly defines the C-linker and its residue range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "50c96c21-047d-4b04-a556-9461289566a3",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C11",
+      "claim": "The C-linker directly connects the pore lining S6 helices in the PGD to the N-terminus of CTD (RCK1 N-lobe).",
+      "claim_type": "EXPLICIT",
+      "source": "This linker directly connects the pore lining S6 helices in the PGD (yellow in Figure 1\u2014figure supplement 1b) to the N-terminus of CTD (known as RCK1 N-lobe; blue in Figure 1\u2014figure supplement 1b), and is believed to play an important role in mediating the gating ring-pore coupling (Gessner et al., 2012; Yang et al., 2015; Zhou et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the structural connection with reference to Figure 1\u2014figure supplement 1b and cites literature (Gessner et al., 2012; Yang et al., 2015; Zhou et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "f65aca16-d656-4dbf-b130-2db0cce0799a",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C12",
+      "claim": "Lengthening the C-linker through inserting poly-AAG shifts voltage-dependent activation to more positive voltages (right shift in G-V curves).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, (Niu et al., 2004) observed that lengthening the C-linker through inserting poly-AAG (Supplementary file 1) was accompanied with right shifted voltage-dependent activation measured by conductance-voltage relations (G-V curves), while shortening the C-linker led to left-shifted G-V curves, clearly demonstrating the importance of C-linker in BK gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published experimental results (Niu et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "a9cdf5ec-dd72-44ab-b9cb-f68849b5e653",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C13",
+      "claim": "Shortening the C-linker leads to left-shifted G-V curves.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, (Niu et al., 2004) observed that lengthening the C-linker through inserting poly-AAG (Supplementary file 1) was accompanied with right shifted voltage-dependent activation measured by conductance-voltage relations (G-V curves), while shortening the C-linker led to left-shifted G-V curves, clearly demonstrating the importance of C-linker in BK gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published experimental results (Niu et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "96476210-befb-47bd-afdb-12b35d15ec4d",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C14",
+      "claim": "V0.5 displayed a highly linear relationship with the number of residues inserted or deleted in the C-linker in the absence of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the voltage required for half activation, V0.5, displayed a highly linear relationship with the number of residues inserted or deleted in the absence of Ca2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a relationship observed in previous work (Niu et al., 2004).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "2858f7e5-cc17-4e19-94ec-c73744e3d617",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C15",
+      "claim": "The linker-gating ring behaves as a 'passive spring' in activation of BK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This led to the proposal that the linker-gating ring behaves as a 'passive spring' in activation of BK channels (Niu et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a proposed model (Niu et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "d87c3215-b284-41f3-a77b-e2b4c8ce2d90",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C16",
+      "claim": "Both Ca2+-free and bound Cryo-EM structures of full-length aSlo1 contain wide-open pores.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Ca2+-free and bound Cryo-EM structures of full-length aSlo1 (Hite et al., 2017; Tao et al., 2017) were found to contain wide-open pores and thus did not provide clue to how the channel might be gated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published Cryo-EM structures (Hite et al., 2017; Tao et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "069a0514-016d-4803-aa4c-d11d4f20c70f",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C17",
+      "claim": "The BK pore cavity becomes narrower, more elongated, and more hydrophobic in the metal-free state due to movement of pore-lining S6 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Atomistic simulations later revealed that, due to the movement of pore-lining S6 helices (Figure 1b), the BK pore cavity become narrower, more elongated, and crucially, more hydrophobic in the metal-free state (i.e., without bound Ca2+ and Mg2+; presumably the closed state) (Jia et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites published simulation results (Jia et al., 2018) and references Figure 1b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "db62b585-a951-44fd-8090-195aad368012",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C18",
+      "claim": "The BK pore can undergo hydrophobic dewetting transition to give rise to a vapor barrier that prevents ion permeation.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the pore can readily undergo hydrophobic dewetting transition to give rise to a vapor barrier that prevents ion permeation (Jia et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published simulation results (Jia et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "c9935863-9c73-45d6-8661-c48f5388eec0",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C19",
+      "claim": "Key movements of S6 helices involve bending at the glycine hinge (G310, G311) toward the membrane upon Ca2+ binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, key movements of S6 helices involve bending at the glycine hinge (G310, G311) toward the membrane upon Ca2+ binding (Figure 1b), leading to ~6 \u00c5 expansion of the pore entrance near I323.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes structural changes with reference to Figure 1b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "8f615a82-7127-41e3-87ea-7cf809033fa5",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C20",
+      "claim": "S6 helix bending upon Ca2+ binding leads to approximately 6 \u00c5 expansion of the pore entrance near I323.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, key movements of S6 helices involve bending at the glycine hinge (G310, G311) toward the membrane upon Ca2+ binding (Figure 1b), leading to ~6 \u00c5 expansion of the pore entrance near I323.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes structural changes with reference to Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "36146836-6625-4f30-bf68-dd6421646f0f",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C21",
+      "claim": "BK channels may be gated at the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been proposed that BK channels may be gated at the selectivity filter (Wilkens and Aldrich, 2006; Kopec et al., 2019; Schewe et al., 2019), the conformation of which could be modulated by the S6 helix orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published proposals (Wilkens and Aldrich, 2006; Kopec et al., 2019; Schewe et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "678e760e-15ce-403f-9a85-83c20690c740",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C22",
+      "claim": "The R329KK331 residues in the C-linker form alternating interactions with E321 and E224 from neighboring chains and membrane lipids during each gating cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion that interactions of C-linkers can modulate BK activation has actually been demonstrated in a recent study, where the R329KK331 residues in the C-linker was proposed to form alternating interactions with E321 and E224 from the neighboring chains and membrane lipids during each gating cycle (Tian et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a published study (Tian et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "0ce8e38c-0a24-46ff-8224-b084f7f40c4e",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C23",
+      "claim": "C-linker sequence scrambling dramatically modulates BK voltage activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, as shown in Figure 1d and Table 1, V0.5 depends very sensitively on the C-linker sequence, which is in line with previous observations (Soom et al., 2008). All five mutants that lead to functional channels, K0, K1, K2, K4 and K7, have significantly altered activation voltage, with V0.5 changes as large as ~135 mV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data in Figure 1d and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "5e585903-8f69-4308-a220-46d05db009f1",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C24",
+      "claim": "K0, K1, K2, K4 and K7 C-linker scrambling mutants have significantly altered activation voltage, with V0.5 changes as large as approximately 135 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "All five mutants that lead to functional channels, K0, K1, K2, K4 and K7, have significantly altered activation voltage, with V0.5 changes as large as ~135 mV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "5134ab77-e64b-436d-9557-c9b530c7614b",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C25",
+      "claim": "K3, K5 and K6 C-linker scrambling mutants did not show functional expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these mutants K3, K5 and K6 did not show functional expression, while other mutant channels showed robust currents (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data in Figure 1c and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "b643ddf8-51d5-4805-a8a7-1a2b24577e65",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C26",
+      "claim": "The K0 mutation does not affect voltage sensor movements during voltage-dependent activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that the K0 mutation gives rises to Q-V curves similar to that of the WT channels. This is in contrast to the G-V relation of the K0 mutation, which is shifted to more negative voltages by about \u221295 mV (Table 1). These results show that the K0 mutation does not affect voltage sensor movements, but may alter pore opening to modify BK channel activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental gating current data comparing K0 and WT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "12c9129f-5a21-4e99-84a9-841518c50e7d",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C27",
+      "claim": "The K0 mutation may alter pore opening to modify BK channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the K0 mutation does not affect voltage sensor movements, but may alter pore opening to modify BK channel activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the gating current and G-V data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "6f88d7bf-7253-4ec0-80cc-38687a9608a0",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C28",
+      "claim": "The C-linker is a structured loop with essentially identical conformations in both metal-free (closed) and metal-bound (open) states.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures reveal that the C-linker is a structured loop with essentially identical conformations in both metal-free (closed) and metal-bound (open) states (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes structural analysis with reference to Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "a2966a23-4e59-4b83-8760-8f3420fa1230",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C29",
+      "claim": "The C\u03b1 root-mean-square deviation (RMSD) of C-linker conformations between metal-free and metal-bound states is only approximately 0.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The C\u03b1 root-mean-square deviation (RMSD) of C-linker conformations between the two states is only ~0.8 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents structural analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "bc7b6fdb-2138-4040-9388-e321e1a63266",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C30",
+      "claim": "The C-linker forms extensive contacts with the RCK1 N-lobe (H344 to N427) of the gating ring, mainly mediated by the Y332GGSYSA338 segment.",
+      "claim_type": "EXPLICIT",
+      "source": "The linker forms extensive contacts with the RCK1 N-lobe (H344 to N427) of the gating ring, mainly mediated by the Y332GGSYSA338 segment in the C-linker, and S0' of VSD (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes structural analysis with reference to Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "07f60581-cc9c-4bbc-b561-9492f5859fb7",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C31",
+      "claim": "The two conserved tyrosine residues (Y332 and Y336) are fully embedded in a hydrophobic RCK1 N-lobe pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the two conserved tyrosine residues (Y332 and Y336) are fully embedded in a hydrophobic RCK1 N-lobe pocket, apparently maintaining a tight packing between the C-linker and RCK1 N-lobe (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes structural analysis with reference to Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "fa441be4-2c20-4c9e-ac26-a779a9ab606f",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C32",
+      "claim": "Several positively charged residues (R329, K330, K331, R342 and K343) flank the Y332GGSYSA338 segment and are exposed to solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "Several positively charged residues (R329, K330, K331, R342 and K343) flank the above segment and are exposed to solvent, likely mediating the solvation of the C-linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "c0e54ef3-4177-470a-81ad-5b5140d064fd",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C33",
+      "claim": "The C-linker maintained stable conformations and contacts with VSD and RCK1 N-lobe throughout 800 ns simulation time.",
+      "claim_type": "EXPLICIT",
+      "source": "The stability of the C-linker conformation as a structured loop is further confirmed by atomistic molecular dynamic (MD) simulations, which showed that the C-linker maintained stable conformations and contacts with VSD and RCK1 N-lobe throughout the 800 ns simulation time (Figure 2a\u2013b, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3 and Figure 2\u2014figure supplement 4, WT).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation data with references to multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "3f2a8003-4566-4b84-98f7-4b62cfae3fb3",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C34",
+      "claim": "The root-mean-square fluctuation (RMSF) of the C-linker region is approximately 1\u20132 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The root-mean-square fluctuation (RMSF) of the C-linker region is ~1\u20132 \u00c5, which is only slightly elevated compared to regions with helical or sheet secondary structures (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation data in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "e260a398-12f3-4226-955d-73313347b21c",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C35",
+      "claim": "The end-to-end distance of the C-linker fluctuated stably around 30 \u00c5 in both metal-bound and free state simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The end-to-end distance of the C-linker fluctuated stably ~30 \u00c5 in both metal-bound and free state simulations (Figure 2a), even as the pore underwent dewetting transitions in the metal-free state (Figure 2\u2014figure supplement 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation data in Figure 2a and Figure 2\u2014figure supplement 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "23aadcd1-8d47-4413-9b82-e6a9de5ff7dd",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C36",
+      "claim": "C-linker is the key pathway of dynamic coupling between the gating ring and PGD.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic network analysis further reveals that the C-linker is a key pathway of dynamic coupling between the gating ring and PGD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents dynamic network analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "9ee0f94c-5ceb-46a6-8e57-932247facfda",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C37",
+      "claim": "The main pathways of communication from Ca2+ and Mg2+ binding sites to the PGD go through the C-linker for all four chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The results reveal that the main pathways of communication from Ca2+ and Mg2+ binding sites to the PGD, go through the C-linker for all four chains (Figure 2c\u2013d and Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents dynamic network analysis results with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "26faf1cc-d17b-41db-8634-26d20ea43cbc",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C38",
+      "claim": "In the metal-free state, the main path from the RCK2 Ca2+ binding site to PGD goes from the neighboring monomer in every other chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly though, in the metal-free state the main path from the RCK2 Ca2+ binding site to PGD goes from the neighboring monomer in every other chain (Figure 2c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents dynamic network analysis results with references to Figure 2c\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "364796ca-9142-4044-8423-51d47a8e5d72",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C39",
+      "claim": "The changes in voltage dependent gating upon permutating linkers are unlikely to derive from a change in the overall structural features and dynamical properties of BK channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Atomistic simulations suggest that the changes in voltage dependent gating upon permutating linkers are unlikely to derive from a change in the overall structural features and dynamical properties of BK channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents simulation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "85bfd92e-79d2-455c-a0be-e8f6f26f5746",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C40",
+      "claim": "The overall RMSD of mutant channels is below approximately 5 \u00c5 and the TM domain (core) RMSD is around 2\u20133 \u00c5 from the initial cryo-EM-derived structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the channel appears minimally perturbed by the mutated linkers, with the overall RMSD below ~5 \u00c5 and the TM domain (core) RMSD around 2\u20133 \u00c5 from the initial cryo-EM-derived structures for both WT and mutant channels (Figure 2\u2014figure supplement 4a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation data in Figure 2\u2014figure supplement 4a\u2013b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "56b01f2b-2e60-4efe-a5d5-30f18e33dad1",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C41",
+      "claim": "All mutant channels can readily undergo hydrophobic dewetting transitions as observed for the WT channel.",
+      "claim_type": "EXPLICIT",
+      "source": "All mutant channels can readily undergo hydrophobic dewetting transitions as observed for the WT channel (Figure 2\u2014figure supplement 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation data in Figure 2\u2014figure supplement 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "251a7799-1176-412a-9751-2524ad18aa1e",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C42",
+      "claim": "The linker region maintains similar backbone conformations in WT and all mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The linker region also maintains similar backbone conformations in WT and all mutants (Figure 2\u2014figure supplement 3), even though it becomes slightly more dynamic in the K7 mutant as reflected in the RMSF profile (Figure 2\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation data in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "c285c19b-667f-4124-94ad-30da58ef7eaf",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C43",
+      "claim": "Scrambling mutations do not appear to perturb long-range coupling properties; the C-linker remains to provide the key pathway of dynamic coupling between CTD and PGD.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, scrambling mutations do not appear to perturb long-range coupling properties either; the C-linker remains to provide the key pathway of dynamic coupling between CTD and PGD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents simulation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "2727c6a7-115e-47bf-b3a2-8de93f10bbfa",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C44",
+      "claim": "V0.5 of linker scrambling mutants is not correlated with the inherent linker extension.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that V0.5 of linker scrambling mutants is not correlated with the inherent linker extension (Figure 2\u2014figure supplement 6) and is inconsistent with the prediction based on the previous linker-gating ring passive spring model (Niu et al., 2004) (dashed line in Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation data in Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "4d74097b-231f-45a2-af11-511f3d70deaa",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C45",
+      "claim": "The C-linker does not have any contact with the putative gating charges of BK VSD (R207, R210 and R213).",
+      "claim_type": "EXPLICIT",
+      "source": "Contact analysis show that the C-linker does not have any contact with the putative gating charges of BK VSD (R207, R210 and R213) and thus unlikely interfere with potential lipid-VSD interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents contact analysis from simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "9a60126c-4172-4ab0-9da3-553ef860f5ff",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C46",
+      "claim": "The measured V0.5 shows a strong correlation with the sequence separation between E324 and the nearest C-linker Tyr residue in both 0 [Ca2+]i and 100 \u00b5M [Ca2+]i.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the measured V0.5 shows a strong correlation with the sequence separation between E324 (the approximate location of membrane interface) and the nearest C-linker Tyr residue (Figure 3b) in both 0 [Ca2+]I and 100 \u00b5M [Ca2+]i.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "f6479f5d-3b73-4600-a788-a39403e51c06",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C47",
+      "claim": "Positioning Tyr residue closer to the membrane interface could allow stronger membrane anchoring, preferentially stabilizing the bent conformation of S6 in the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "Positioning this Tyr residue closer to the membrane interface could allow stronger membrane anchoring, preferentially stabilizing the bent conformation of S6 in the open state and shifting the equilibrium toward the active state of the channel as observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this mechanism from the correlation between Tyr position and V0.5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "6a4d5fd9-9044-405a-a291-7bb00b69a4f8",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C48",
+      "claim": "The interaction between the Tyr residue and the membrane does not alter Ca2+ dependent activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is not affected by the change of [Ca2+]i, suggesting that the interaction between the Tyr residue and the membrane does not alter Ca2+ dependent activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the observation that the correlation holds at both 0 and 100 \u00b5M Ca2+.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "fa15b818-5002-4a92-b78c-753843e3aab2",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C49",
+      "claim": "Positioning of the C-linker in the metal-bound state allows more extensive interactions between Tyr sidechains and the membrane interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, results from simulation analysis confirm that positioning of the C-linker in the metal-bound state allows more extensive interactions between Try sidechains and the membrane interface (e.g., compare Figure 4a vs b and c vs d), which would stabilize the open state and thus lower the voltage required for activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "06cdc13a-08fd-4681-a426-cb6dbefd8583",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C50",
+      "claim": "Placing Tyr closer to the end of the S6 helix allows more extensive Tyr/membrane interface interactions, forming larger numbers of polar and nonpolar interactions on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our experimental data, placing Tyr closer to the end of the S6 helix shifts V0.5 (Figure 1c\u2013d and Figure 3) indeed allows more extensive Tyr/membrane interface interactions, forming larger numbers of polar and nonpolar interactions on average (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "4dca4ba2-a797-458d-83f0-3ad1f2f226ef",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C51",
+      "claim": "Y329 of K7 appears to be dominated by extensive \u03c0-cation interactions in the metal-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that Y329 of K7 appears to be dominated by extensive \u03c0-cation interactions in the metal-bound state (Figure 5d, comparing empty and filled bars) and as a consequence forms slightly fewer hydrogen bonding interactions on average (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "10f9c104-95ad-43c9-933e-dbc926100811",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C52",
+      "claim": "The effects of C-linker sequence scrambling on voltage gating persist in Core-MT constructs where the gating ring is completely removed.",
+      "claim_type": "EXPLICIT",
+      "source": "If the observed effects on the voltage gating of full-length BK channels are indeed mainly due to the nonspecific interactions between the C-linker and membrane interface, they should persist in the Core-MT truncated channel (Budelli et al., 2013; Zhang et al., 2017), in which the whole gating-ring is removed and there is no CTD coupling with either VSD or PGD via the C-linker (Budelli et al., 2013; Figure 6a). To test this prediction, Core-MT channels with three C-linker scrambling mutations, K0, K2 and K7, were expressed (Figure 6b) and their voltage-dependent activation measured. Mutations of the C-linker shifted the G-V relation of the Core-MT constructs in the same directions as observed for the full-length channels (Table 1), with K0 and K7 stabilizing channel activation (Figure 6c,e) while K2 making activation at higher voltages (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data in Figure 6 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "6b704302-7447-42fc-b7a4-3092a3bf6a32",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C53",
+      "claim": "The reduction in the activation voltage by K0 mutation is only approximately 42 mV in Core-MT, compared to approximately 94 mV in the full-length channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reduction in the activation voltage by K0 mutation is only ~42 mV in Core-MT, compared to ~94 mV in the full-length channel (Figure 6c), and for K7 mutation is ~67 mV in Core-MT, compared to ~135 mV in the full-length channel (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data in Figure 6c and 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "97552f36-6146-4d9b-9b7e-100c55cf8481",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C54",
+      "claim": "The reduction in the activation voltage by K7 mutation is approximately 67 mV in Core-MT, compared to approximately 135 mV in the full-length channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reduction in the activation voltage by K0 mutation is only ~42 mV in Core-MT, compared to ~94 mV in the full-length channel (Figure 6c), and for K7 mutation is ~67 mV in Core-MT, compared to ~135 mV in the full-length channel (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data in Figure 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "faf5e202-c9ef-403c-add4-4772ce7c8c6a",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C55",
+      "claim": "The C-linker is more flexible in the absence of the gating ring, thus weakening the effects of membrane anchoring.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not considered surprising as the C-linker is more flexible in the absence of the gating ring, thus weakening the effects of membrane anchoring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the reduced magnitude of V0.5 shifts in Core-MT constructs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "7ca60bc3-384c-45de-a506-13c4a766d021",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C56",
+      "claim": "The K0 mutation in Core-MT does not affect voltage sensor movements.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the gating currents of the Core-MT and the K0 mutant in Core-MT (Figure 6f). The Q-V curves for these two channels are similar (Figure 6g) supporting that the K0 mutation does not affect voltage sensor movements, but may alter pore opening to modify BK channel activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental gating current data in Figure 6f and 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "e5d8a69d-9840-480a-85c3-c1fa39549ce8",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C57",
+      "claim": "K0 Y330G mutation abolished the effects of K0 on G-V relation and largely shifted the G-V back to that of the WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, K0 Y330G mutation abolished the effects of K0 on G-V relation and largely shifted the G-V back to that of the WT, with a V0.5 of 169.8 \u00b1 5.0 mV as compared to 183.4 \u00b1 3.2 mV for the WT (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "e3f8201d-5bc4-49c7-a266-65ac1b77fe44",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C58",
+      "claim": "Membrane anchoring effects of Tyr are mainly responsible for modulating the activation voltage in the C-linker sequence scrambling mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This, together with the correlation shown in Figure 3, provides a direct support that membrane anchoring effects of Tyr are mainly responsible for modulating the activation voltage in the C-linker sequence scrambling mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the Y330G rescue experiment and the correlation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "255ce4a0-835a-4eb3-a1ed-40ac9ff28490",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C59",
+      "claim": "Nonspecific interactions of the C-linker with membrane alone could directly modulate BK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining atomistic simulations and further mutagenesis experiments, we demonstrated that nonspecific interactions of the linker with membrane alone could directly modulate BK activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "b638a0ef-965a-4bd9-b132-6e8beb8033d8",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C60",
+      "claim": "The C-linker plays more direct roles in mediating allosteric coupling between BK domains than previously assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-linker thus plays more direct roles in mediating allosteric coupling between BK domains than previously assumed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "4b19a30b-6566-4874-8295-78cfa414534f",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C61",
+      "claim": "Covalent linkers could directly modulate TM protein function and should be considered an integral component of the sensing apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that covalent linkers could directly modulate TM protein function and should be considered an integral component of the sensing apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "72c2865e-4c65-4c71-b708-297d5f5524dc",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C62",
+      "claim": "The V0.5 of WT Core-MT is only approximately 52 mV larger than the full-length BK channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the whole gating ring is removed, the Core-MT construct should correspond to a state where the passive spring is fully relaxed and thus V0.5 maximizes. Yet, the V0.5 of WT Core-MT is only ~52 mV larger than the full-length BK channel (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "80edeb66-df37-4d8b-a479-65ec4fdd3aef",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C63",
+      "claim": "The poly-AAG insertion site locates in a short loop following the C-linker segment -Y332GGSY336- that forms stable contacts with RCK1 N-lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Cryo-EM structures of BK channels (Hite et al., 2017; Tao et al., 2017) reveal that the previously published poly-AAG insertion site (Niu et al., 2004), right after residue S337 (Supplementary file 1), actually locates in a short loop following the C-linker segment -Y332GGSY336- that forms stable contacts with RCK1 N-lobe (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes structural analysis with references to published structures (Hite et al., 2017; Tao et al., 2017; Niu et al., 2004) and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "ba70b3d2-db34-46a4-9524-9addac562478",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C64",
+      "claim": "The inserted residues in poly-AAG insertion mutants would project away from the channel and are very unlikely to affect the effective C-linker length.",
+      "claim_type": "EXPLICIT",
+      "source": "The inserted residues would project away from the channel (Figure 1\u2014figure supplement 5), and are very unlikely to affect the effective C-linker length (or the gating ring-pore distance) as originally designed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript infers this from structural analysis with reference to Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "77b38d8a-ba16-44f0-b64f-1487695c3aa8",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C65",
+      "claim": "\u03b2 subunits make extensive contacts with the C-linker for influencing the channel gating and manipulating the channel function.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the recently published Cryo-EM structures confirms that \u03b2 subunits make extensive contacts with the C-linker for influencing the channel gating and manipulating the channel function (Tao and MacKinnon, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published Cryo-EM structures (Tao and MacKinnon, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "e68a8402-4ceb-4ff2-8f20-bda67d5e8cb3",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C66",
+      "claim": "Homology models of WT hSlo1 based on aSlo1 Cryo-EM structures are essentially identical to the actual hSlo1 structures, with the central PGD structures differing by only 0.87 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The homology models have been cross validated using Cryo-EM structures of hSlo1 that became available after the completion of this work (Tao and MacKinnon, 2019). The results show that aS1o1-derived models are essentially identical to the actual hSlo1 structures, with the central PGD structures differ by only 0.87 \u00c5 (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents structural comparison data in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "db41f797-830f-4b41-8fd4-0d51ac5c85c3",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C67",
+      "claim": "The backbone RMSD between the homology model and the hSlo1 Cryo-EM structure is only 2.18 \u00c5 at the whole channel level.",
+      "claim_type": "EXPLICIT",
+      "source": "The backbone RMSD between the model and new structure is only 2.18 \u00c5 at the whole channel level and as low as 0.87 \u00c5 in the PGD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents structural comparison data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "3ab57bde-356d-40f3-9f85-f690449a8ae1",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C68",
+      "claim": "Aromatic amino acids such as Tyr and Trp are 'membrane anchoring', with a strong preference toward localizing at the membrane-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Among various amino acids, aromatic ones such as Tyr and Trp are known to be 'membrane anchoring', with a strong preference toward localizing at the membrane-water interface (Johansson and Lindahl, 2006; Monticelli et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature (Johansson and Lindahl, 2006; Monticelli et al., 2008).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "df8422e1-4061-410c-8009-36bb5f8c3aed",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C69",
+      "claim": "Tyr sidechains can embed their aromatic rings in the lipid tail region and direct the polar -OH groups toward the lipid headgroup region to form hydrogen bonding interactions with water and lipid headgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 4, Tyr sidechains contain both aromatic rings and polar groups that allow them to embed their aromatic rings in the lipid tail region and at the same time direct the polar -OH groups toward the lipid headgroup region to form hydrogen bonding interactions with water and lipid headgroups (Johansson and Lindahl, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes Tyr-membrane interactions with reference to Figure 4 and cites literature (Johansson and Lindahl, 2006).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "a8b06a56-93c1-49fc-a668-ba4d0e40a0b8",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C70",
+      "claim": "The aromatic ring of Tyr could form \u03c0-cation interactions with positively charged cholines in lipid headgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the aromatic ring could also form \u03c0-cation interactions with positively charged cholines in lipid headgroups (Roberts et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature (Roberts et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "3a86a1b7-8f2c-49ed-a7c7-2458ae726055",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C71",
+      "claim": "The Tyr-membrane interactions primarily promote gate opening rather than affecting coupling between sensors and pore.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since the C-linker is important for the coupling of the pore with both Ca2+ and voltage sensors, we expect that the C-linker scrambling mutations would have altered both Ca2+ and voltage-dependent activation if they were to primarily affect coupling. Since these mutations have little effect on Ca2+ dependent activation (Figure 3), it seems that the Tyr-membrane interactions primarily promote gate opening.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript infers this from the observation that mutations affect voltage but not Ca2+ dependent activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "ebb5e31a-d506-4ded-8d47-a2b8b530c45a",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C72",
+      "claim": "The gating ring has some influence on the functional effects of the C-linker mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "We notice that the gating ring has some influence on the functional effects of the mutations (Figures 1 and 6, Table 1), these effects may be due to the conformational restraints imposed by the gating ring on the C-linker, but such restraints may not be sensitive to conformational changes caused by Ca2+ binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript infers this from comparing full-length and Core-MT data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "5714b81c-a4e7-4497-b1c3-208b5ca25e8d",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C73",
+      "claim": "The C-linker is unlikely an inert component of the linker-gating ring 'passive spring'.",
+      "claim_type": "EXPLICIT",
+      "source": "Our conclusion that the C-linker is unlikely an inert component of the linker-gating ring 'passive spring' is also consistent with other structural and functional studies of BK channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "e81b4471-6131-4a4b-aec8-451544bc200b",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C74",
+      "claim": "Homology models of the wild-type (WT) hSlo1 were derived based on the aSlo1 Cryo-EM structures using Modeller v9.14.",
+      "claim_type": "EXPLICIT",
+      "source": "As described previously (Jia et al., 2018), homology models of the WT metal-bound and metal-free hSol1 channels were built using Modeller v9.14 (Sali and Blundell, 1993) based on sequence alignment of Tao et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "34396aa7-3b3b-4128-8281-f44d77a5005c",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C75",
+      "claim": "Sequence alignment shows 55.95% identity for the full-length channels between hSlo1 and aSlo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignment shows 55.95% identity for the full-length channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents sequence analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "b70811d5-5c2f-4536-94f7-a75b94841fb4",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C76",
+      "claim": "The sequence identity in PGD between hSlo1 and aSlo1 is 61.96%.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence identities in PGD is higher at 61.96%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents sequence analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "560597fe-dfab-4f2a-83ce-94be35bca830",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C77",
+      "claim": "The homology modeled hSlo1 structures were inserted in POPC lipid bilayers followed by solvation using the TIP3P water model.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CHARMM-GUI server (Lee et al., 2016), the homology modeled hSlo1 structures were inserted in POPC lipid bilayers followed by solvation using the TIP3P water model (Jorgensen et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "2bfae58e-5022-442e-8f08-bd1a1953ecff",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C78",
+      "claim": "450 mM KCl was added to the simulation system, same as used in Cryo-EM structure determination.",
+      "claim_type": "EXPLICIT",
+      "source": "450 mM KCl was then added, same as used in Cryo-EM structure determination (Hite et al., 2017; Tao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the computational methods used and cites the Cryo-EM studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "b8bf057f-769e-4126-8226-003fc2f139fd",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C79",
+      "claim": "K+ ions were added to each binding site of the selectivity filter (S1-S4) without any intervening water.",
+      "claim_type": "EXPLICIT",
+      "source": "K+ ions were added to each binding site of the selectivity filter (S1-S4) without any intervening water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "dc6f78c8-b8f5-4fd6-b5d3-02ced6d41cd6",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C80",
+      "claim": "The final simulation box size is approximately 18\u00d718\u00d715.4 nm\u00b3 with approximately 476,000 atoms, containing approximately 97,000 water molecules and approximately 800 lipid molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The final simulation box size is ~18\u00d718 x 15.4 nm3 with ~476,000 atoms, containing ~97,000 water molecules and ~800 lipid molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the computational system setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "8ba6f45e-4071-4307-825a-eb0cbd301859",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C81",
+      "claim": "The Charmm36m all-atom force field was used for all simulation systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The Charmm36m all-atom force field (Huang et al., 2017) was used for all systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "bd64d00d-06d2-4471-87b9-54320c39d131",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C82",
+      "claim": "Three independent 800-ns NPT production simulations were performed for each construct (WT, K0, K2 and K7) in both metal-free and bound states, with an aggregated simulation time of 19.2 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "Three independent 800-ns NPT production simulations were performed for each construct (WT, K0, K2 and K7) in both metal-free and bound states, with an aggregated simulation time of 19.2 \u03bcs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "a6bb0d2c-02a0-4df7-8f89-18f329213c6d",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C83",
+      "claim": "Mutations in all experiments were made using overlap-extension PCR with Pfu polymerase from the mbr5 splice variant of mslo1.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in all experiments were made by using overlap-extension PCR (polymerase chain reaction) with Pfu polymerase (Stratagene) from the mbr5 splice variant of mslo1 (Uniprot ID: Q08460) (Butler et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "4d0e42af-34f4-477b-9992-7e0764f75beb",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C84",
+      "claim": "RNA was transcribed in vitro from linearized DNA with T3 polymerase and 0.05\u201350 ng/oocyte RNA was injected into oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA was then transcribed in vitro from linearized DNA with T3 polymerase (Ambion, Austin, TX) and an amount of 0.05\u201350 ng/oocyte RNA was injected into oocytes (stage IV-V) from female Xenopus laevis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "c876fbb1-14b4-4089-a09b-fad6682fda3e",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C85",
+      "claim": "Inside-out patches were used to record ionic currents with an Axopatch 200-B patch-clamp amplifier.",
+      "claim_type": "EXPLICIT",
+      "source": "We used inside-out patches to record Ionic currents with an Axopatch 200-B patch-clamp amplifier (Molecular Devices, Sunnyvale, CA) and ITC-18 interface and Pulse acquisition software (HEKA Elektronik GmbH, Holliston, MA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "4d2def70-7c74-4b4f-ade1-43738129da66",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C86",
+      "claim": "The current signals were recorded at 50 KHz sample rate with low-pass-filtered at 10 KHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The current signals were recorded at 50 KHz sample rate (20-\u03bcs intervals) with low-pass-filtered at 10 KHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "d5a407c0-6eb1-4539-a08d-c842eb1278a9",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "claim_id": "C87",
+      "claim": "Gating currents were recorded from inside-out patches at 200 kHz sample rate and 20 kHz low-pass filtration.",
+      "claim_type": "EXPLICIT",
+      "source": "Gating currents were recorded from inside-out patches at 200 kHz sample rate and 20 kHz low-pass filtration with leak subtraction using a -P/4 protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2d42c4dc-1b49-4af2-be00-96e8161e9e74",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BK channels are large-conductance potassium channels (100-300 pS) that are homo-tetramers with three distinct domains (VSD, PGD, CTD) and are activated by both voltage and intracellular Ca2+. They play important physiological roles and are associated with various diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide well-established background information about BK channel structure and function, supported by appropriate citations to published literature (Knaus et al., 1996; Shi and Cui, 2001; Horrigan and Aldrich, 2002; Yang et al., 2008; Zhou et al., 2017). This represents standard knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "2e685562-efa0-411b-916e-acb1bff7a775",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The C-linker is a 15-residue peptide (R329-K343) that serves as the only covalent connection between the CTD and TMD, directly linking the S6 helices to the RCK1 N-lobe. The CTD exhibits a domain-swapped arrangement where each subunit's CTD resides beneath the neighboring subunit's TMD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 describe the structural organization of BK channels based on published Cryo-EM structures (Hite et al., 2017; Tao et al., 2017; Tao and MacKinnon, 2019) and explicitly define the C-linker region. These structural features are well-documented in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "7d04a4a0-10f5-4916-9428-d7a1de8565e4",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Previous work showed that lengthening or shortening the C-linker through poly-AAG insertions/deletions shifts voltage-dependent activation in a linear relationship with the number of residues, leading to the 'passive spring' model of the linker-gating ring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 accurately describe prior work by Niu et al., 2004, which is appropriately cited. This provides important context for the current study's challenge to the passive spring model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "fbf33d95-d221-48dd-9984-81faba02dc76",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cryo-EM structures of aSlo1 show wide-open pores in both Ca2+-free and bound states. Atomistic simulations revealed that the pore becomes narrower, more elongated, and more hydrophobic in the metal-free state, undergoing hydrophobic dewetting transitions. Key S6 helix movements involve bending at the glycine hinge (G310, G311) toward the membrane upon Ca2+ binding, leading to ~6 \u00c5 pore expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 describe published structural and computational findings (Hite et al., 2017; Tao et al., 2017; Jia et al., 2018) that provide mechanistic context for BK channel gating. The citations are appropriate and the descriptions are consistent with the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "dbaa84c1-5951-42f2-8c84-6ff2452c92a8",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The R329KK331 residues in the C-linker form alternating interactions with E321 and E224 from neighboring chains and membrane lipids during each gating cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 cites a recent study (Tian et al., 2019) demonstrating that C-linker interactions can modulate BK activation. This provides important context for the current study's investigation of C-linker function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "b0823df6-5a91-4041-a27d-95fc10bc491c",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "C-linker sequence scrambling dramatically modulates BK voltage activation. Five functional mutants (K0, K1, K2, K4, K7) showed significantly altered activation voltage with V0.5 changes as large as ~135 mV, while three mutants (K3, K5, K6) did not show functional expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 present the core experimental finding that C-linker sequence scrambling affects BK activation. The data are presented in Figure 1d and Table 1, showing robust currents for functional mutants and large V0.5 shifts. The experimental design is appropriate for testing the passive spring model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "f98bcc03-0ef9-4a70-8d6b-951dce9d3c08",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The K0 mutation does not affect voltage sensor movements during voltage-dependent activation but may alter pore opening to modify BK channel activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are supported by gating current measurements (Figure 1e-f) showing similar Q-V curves for K0 and WT despite a ~95 mV shift in G-V. This provides important mechanistic insight that the C-linker mutations affect pore opening rather than VSD activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "13449fff-e724-4540-b8c7-041d358a3b50",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The C-linker is a structured loop with essentially identical conformations in both metal-free and metal-bound states (RMSD ~0.8 \u00c5). It forms extensive contacts with the RCK1 N-lobe via the Y332GGSYSA338 segment, with conserved tyrosines (Y332, Y336) embedded in a hydrophobic pocket, while flanking charged residues are solvent-exposed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 describe structural analysis based on Cryo-EM structures (Hite et al., 2017; Tao et al., 2017) with reference to Figure 1\u2014figure supplement 2. The structural characterization is detailed and consistent with the cited structures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "c73ad8ba-ab18-45a0-a0ba-466cf80e385c",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MD simulations show that the C-linker maintains stable conformations and contacts with VSD and RCK1 N-lobe throughout 800 ns, with RMSF of ~1-2 \u00c5 and end-to-end distance fluctuating stably around 30 \u00c5 in both metal-bound and free states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 present simulation data (Figure 2a-b and supplements) demonstrating C-linker stability. The simulation methods are described in detail, and the results are consistent with the structural loop characterization. Three independent 800-ns simulations provide adequate sampling for these structural properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "ea79d376-29f5-411d-b7d6-c1fd98a9da01",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dynamic network analysis reveals that the C-linker is the key pathway of dynamic coupling between the gating ring and PGD. The main pathways from Ca2+ and Mg2+ binding sites to the PGD go through the C-linker for all four chains, though in the metal-free state the path from RCK2 Ca2+ binding site goes through the neighboring monomer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 present dynamic network analysis results (Figure 2c-d and Figure 2\u2014figure supplement 5) using established methods (Eargle and Luthey-Schulten, 2012). The analysis appropriately identifies communication pathways and provides mechanistic insight into C-linker function in allosteric coupling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "93abc03c-3769-4622-b6bd-9b5452ef0568",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "C-linker scrambling mutations minimally perturb overall channel structure and dynamics. Mutant channels show RMSD below ~5 \u00c5 (core RMSD 2-3 \u00c5), undergo hydrophobic dewetting transitions like WT, maintain similar backbone conformations, and preserve the C-linker as the key pathway of dynamic coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 present simulation analysis (Figure 2\u2014figure supplements 3-4) showing that mutations do not grossly perturb channel structure or dynamics. This is important for ruling out non-specific structural perturbations as the cause of functional changes. The simulation data support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "438cf03b-8a5e-4661-b0fe-d90a20a7e9a0",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "V0.5 of linker scrambling mutants is not correlated with the inherent linker extension and is inconsistent with the passive spring model prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 presents ABSINTH implicit solvent simulations (Figure 2\u2014figure supplement 6) showing no correlation between V0.5 and intrinsic linker extension. This directly challenges the passive spring model and is supported by appropriate computational methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "63acf0f8-4fbf-48c6-a69a-a53184b59f57",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The C-linker does not have any contact with the putative gating charges of BK VSD (R207, R210, R213) and thus is unlikely to interfere with potential lipid-VSD interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 presents contact analysis from MD simulations ruling out direct C-linker interactions with VSD gating charges. This is consistent with the gating current data (C26) showing no effect on VSD movements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "bb4bbce7-a701-4d4c-a298-1684bc398c4e",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The measured V0.5 shows a strong correlation with the sequence separation between E324 and the nearest C-linker Tyr residue in both 0 and 100 \u00b5M Ca2+. Positioning Tyr closer to the membrane interface allows stronger membrane anchoring, stabilizing the bent S6 conformation in the open state without altering Ca2+-dependent activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 present a key finding (Figure 3b) showing correlation between Tyr position and V0.5. The correlation is observed at both Ca2+ concentrations, supporting the membrane anchoring hypothesis. The experimental data are clear and the interpretation is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "75e5d5f1-ad2f-4a3e-ad57-6e705a2c431f",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Simulation analysis confirms that positioning of the C-linker in the metal-bound state allows more extensive interactions between Tyr sidechains and the membrane interface. Placing Tyr closer to the S6 helix end allows more extensive Tyr/membrane interactions, forming larger numbers of polar and nonpolar interactions on average.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 present detailed simulation analysis (Figures 4-5) of Tyr-membrane interactions including hydrophobic contacts, hydrogen bonds, and \u03c0-cation interactions. The analysis is thorough and supports the membrane anchoring mechanism. However, the authors acknowledge that direct free energy calculations are not feasible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "0b0a311e-4fca-4b29-afbc-958d9a986227",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The effects of C-linker sequence scrambling on voltage gating persist in Core-MT constructs where the gating ring is completely removed, though with reduced magnitude (~42 mV for K0, ~67 mV for K7 vs ~94 mV and ~135 mV in full-length). The K0 mutation in Core-MT does not affect voltage sensor movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 present critical experiments (Figure 6, Table 1) showing that C-linker effects persist without the gating ring, directly supporting the membrane anchoring hypothesis. The reduced magnitude is explained by increased C-linker flexibility. Gating current measurements confirm no effect on VSD. This is strong evidence for the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "08c2e8db-5ca6-46ba-b845-72e20c4b3a2c",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "K0 Y330G mutation abolished the effects of K0 on G-V relation and largely shifted the G-V back to WT (V0.5 of 169.8 \u00b1 5.0 mV vs 183.4 \u00b1 3.2 mV for WT). This provides direct support that membrane anchoring effects of Tyr are mainly responsible for modulating activation voltage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 present a critical rescue experiment (Figure 7) showing that removing the Tyr sidechain abolishes the K0 effect. This is strong direct evidence for the Tyr membrane anchoring mechanism and represents a well-designed control experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "9fda040b-5343-4500-a40f-cf6064b8cf5c",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Nonspecific interactions of the C-linker with membrane alone can directly modulate BK activation. The C-linker plays more direct roles in mediating allosteric coupling between BK domains than previously assumed. Covalent linkers could directly modulate TM protein function and should be considered an integral component of the sensing apparatus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 represent the main conclusions of the study, supported by multiple lines of evidence: sequence scrambling effects (C23-C25), correlation with Tyr position (C46), persistence in Core-MT (C52), and Y330G rescue (C57). The conclusions are well-supported by the experimental and computational data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "f4dceb77-9cd9-46c6-b458-d70192fc6156",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The V0.5 of WT Core-MT is only ~52 mV larger than full-length BK channel. The poly-AAG insertion site locates in a loop following the C-linker segment that forms stable contacts with RCK1 N-lobe, and inserted residues would project away from the channel, unlikely to affect effective C-linker length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 provide structural reinterpretation of previous poly-AAG insertion experiments (Niu et al., 2004) based on Cryo-EM structures (Figure 1\u2014figure supplement 5). This challenges the passive spring model interpretation and is supported by structural analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "54630a84-e400-4bb5-bed8-f85b0cfb6496",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "\u03b2 subunits make extensive contacts with the C-linker for influencing channel gating and manipulating channel function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 cites recent Cryo-EM structures (Tao and MacKinnon, 2019) showing \u03b2 subunit-C-linker interactions. This provides additional context for C-linker functional importance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "f50c231d-721b-4b44-be37-35e980bc451d",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Homology models of WT hSlo1 based on aSlo1 Cryo-EM structures are essentially identical to actual hSlo1 structures, with central PGD structures differing by only 0.87 \u00c5 and whole channel backbone RMSD of 2.18 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 present validation of the homology models (Figure 1\u2014figure supplement 3) by comparison with subsequently published hSlo1 structures (Tao and MacKinnon, 2019). The low RMSD values support the reliability of the models used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "8423df71-3d2d-4990-9221-9ad4f35d24e2",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Aromatic amino acids such as Tyr and Trp are 'membrane anchoring' with strong preference for the membrane-water interface. Tyr sidechains can embed their aromatic rings in the lipid tail region while directing polar -OH groups toward the lipid headgroup region to form hydrogen bonds and \u03c0-cation interactions with cholines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 describe established properties of aromatic amino acids at membrane interfaces, appropriately cited (Johansson and Lindahl, 2006; Monticelli et al., 2008; Roberts et al., 2018). This provides the biophysical basis for the membrane anchoring hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "546c53e0-0772-453d-93ae-97d7faadd976",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The Tyr-membrane interactions primarily promote gate opening rather than affecting coupling between sensors and pore. The gating ring has some influence on the functional effects of C-linker mutations, possibly due to conformational restraints, but such restraints may not be sensitive to Ca2+ binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 present mechanistic interpretation based on the observation that mutations affect voltage but not Ca2+-dependent activation (Figure 3). The reasoning is sound: if mutations primarily affected coupling, both Ca2+ and voltage activation would be altered.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "17425a62-82ad-4562-acbc-4e0861ba5126",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The C-linker is unlikely an inert component of the linker-gating ring 'passive spring'.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 represents a main conclusion supported by multiple lines of evidence throughout the study, including the lack of correlation with intrinsic linker extension (C44), Core-MT results (C52), and structural reinterpretation of poly-AAG insertions (C63-C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "8b4044cc-9fd2-4235-861a-3e38dda0c646",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Homology models were built using Modeller v9.14 based on aSlo1 structures (55.95% full-length identity, 61.96% PGD identity). Models were inserted in POPC bilayers with TIP3P water, 450 mM KCl, and K+ ions in selectivity filter. The simulation box was ~18\u00d718\u00d715.4 nm\u00b3 with ~476,000 atoms. Three independent 800-ns NPT simulations were performed for each construct using Charmm36m force field, totaling 19.2 \u00b5s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C82 describe the computational methods in detail. The methods are appropriate and well-documented. The use of three independent 800-ns simulations provides adequate sampling for the structural and dynamical properties analyzed. The force field (Charmm36m) is state-of-the-art.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    },
+    {
+      "id": "74dd0909-5f05-455b-944f-dcb7298727b1",
+      "content_id": "1eda266c-114c-43a5-a28b-ec83c073b80c",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Mutations were made using overlap-extension PCR from mslo1 mbr5 splice variant. RNA was transcribed in vitro and 0.05-50 ng/oocyte injected into Xenopus oocytes. Inside-out patches were used to record ionic currents at 50 kHz sample rate with 10 kHz filtering. Gating currents were recorded at 200 kHz with 20 kHz filtering using -P/4 leak subtraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 describe standard experimental methods for BK channel electrophysiology. The methods are appropriate and well-established in the field. The recording parameters are suitable for the measurements performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:10:47.149498Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "07913044-62d3-484e-8b6f-7457069f7c3d",
+      "result_id": "2d42c4dc-1b49-4af2-be00-96e8161e9e74"
+    },
+    {
+      "claim_id": "df608cd1-a24a-4199-b6b0-69cd8f955b36",
+      "result_id": "2d42c4dc-1b49-4af2-be00-96e8161e9e74"
+    },
+    {
+      "claim_id": "777a7bc8-96b9-45f3-978d-551abe5dfe75",
+      "result_id": "2d42c4dc-1b49-4af2-be00-96e8161e9e74"
+    },
+    {
+      "claim_id": "4f20b9e8-092a-4b38-a876-6096e863e440",
+      "result_id": "2d42c4dc-1b49-4af2-be00-96e8161e9e74"
+    },
+    {
+      "claim_id": "cc33f291-e326-4e1e-9de0-8a5b70c154b6",
+      "result_id": "2d42c4dc-1b49-4af2-be00-96e8161e9e74"
+    },
+    {
+      "claim_id": "3af6fd8d-967e-4806-8e57-14c8691a7c94",
+      "result_id": "2d42c4dc-1b49-4af2-be00-96e8161e9e74"
+    },
+    {
+      "claim_id": "35d8a759-da6f-4925-8ed6-384a86a6cb44",
+      "result_id": "2d42c4dc-1b49-4af2-be00-96e8161e9e74"
+    },
+    {
+      "claim_id": "a508d078-dcd5-49d1-9c5d-059ecfff77d0",
+      "result_id": "2d42c4dc-1b49-4af2-be00-96e8161e9e74"
+    },
+    {
+      "claim_id": "e75a21e8-1dbf-4204-9be0-ed4a04e5272b",
+      "result_id": "2e685562-efa0-411b-916e-acb1bff7a775"
+    },
+    {
+      "claim_id": "8055b32e-0f85-4562-a337-bd18cb437ed7",
+      "result_id": "2e685562-efa0-411b-916e-acb1bff7a775"
+    },
+    {
+      "claim_id": "50c96c21-047d-4b04-a556-9461289566a3",
+      "result_id": "2e685562-efa0-411b-916e-acb1bff7a775"
+    },
+    {
+      "claim_id": "f65aca16-d656-4dbf-b130-2db0cce0799a",
+      "result_id": "7d04a4a0-10f5-4916-9428-d7a1de8565e4"
+    },
+    {
+      "claim_id": "a9cdf5ec-dd72-44ab-b9cb-f68849b5e653",
+      "result_id": "7d04a4a0-10f5-4916-9428-d7a1de8565e4"
+    },
+    {
+      "claim_id": "96476210-befb-47bd-afdb-12b35d15ec4d",
+      "result_id": "7d04a4a0-10f5-4916-9428-d7a1de8565e4"
+    },
+    {
+      "claim_id": "2858f7e5-cc17-4e19-94ec-c73744e3d617",
+      "result_id": "7d04a4a0-10f5-4916-9428-d7a1de8565e4"
+    },
+    {
+      "claim_id": "d87c3215-b284-41f3-a77b-e2b4c8ce2d90",
+      "result_id": "fbf33d95-d221-48dd-9984-81faba02dc76"
+    },
+    {
+      "claim_id": "069a0514-016d-4803-aa4c-d11d4f20c70f",
+      "result_id": "fbf33d95-d221-48dd-9984-81faba02dc76"
+    },
+    {
+      "claim_id": "db62b585-a951-44fd-8090-195aad368012",
+      "result_id": "fbf33d95-d221-48dd-9984-81faba02dc76"
+    },
+    {
+      "claim_id": "c9935863-9c73-45d6-8661-c48f5388eec0",
+      "result_id": "fbf33d95-d221-48dd-9984-81faba02dc76"
+    },
+    {
+      "claim_id": "8f615a82-7127-41e3-87ea-7cf809033fa5",
+      "result_id": "fbf33d95-d221-48dd-9984-81faba02dc76"
+    },
+    {
+      "claim_id": "36146836-6625-4f30-bf68-dd6421646f0f",
+      "result_id": "fbf33d95-d221-48dd-9984-81faba02dc76"
+    },
+    {
+      "claim_id": "678e760e-15ce-403f-9a85-83c20690c740",
+      "result_id": "dbaa84c1-5951-42f2-8c84-6ff2452c92a8"
+    },
+    {
+      "claim_id": "0ce8e38c-0a24-46ff-8224-b084f7f40c4e",
+      "result_id": "b0823df6-5a91-4041-a27d-95fc10bc491c"
+    },
+    {
+      "claim_id": "5e585903-8f69-4308-a220-46d05db009f1",
+      "result_id": "b0823df6-5a91-4041-a27d-95fc10bc491c"
+    },
+    {
+      "claim_id": "5134ab77-e64b-436d-9557-c9b530c7614b",
+      "result_id": "b0823df6-5a91-4041-a27d-95fc10bc491c"
+    },
+    {
+      "claim_id": "b643ddf8-51d5-4805-a8a7-1a2b24577e65",
+      "result_id": "f98bcc03-0ef9-4a70-8d6b-951dce9d3c08"
+    },
+    {
+      "claim_id": "12c9129f-5a21-4e99-84a9-841518c50e7d",
+      "result_id": "f98bcc03-0ef9-4a70-8d6b-951dce9d3c08"
+    },
+    {
+      "claim_id": "6f88d7bf-7253-4ec0-80cc-38687a9608a0",
+      "result_id": "13449fff-e724-4540-b8c7-041d358a3b50"
+    },
+    {
+      "claim_id": "a2966a23-4e59-4b83-8760-8f3420fa1230",
+      "result_id": "13449fff-e724-4540-b8c7-041d358a3b50"
+    },
+    {
+      "claim_id": "bc7b6fdb-2138-4040-9388-e321e1a63266",
+      "result_id": "13449fff-e724-4540-b8c7-041d358a3b50"
+    },
+    {
+      "claim_id": "07f60581-cc9c-4bbc-b561-9492f5859fb7",
+      "result_id": "13449fff-e724-4540-b8c7-041d358a3b50"
+    },
+    {
+      "claim_id": "fa441be4-2c20-4c9e-ac26-a779a9ab606f",
+      "result_id": "13449fff-e724-4540-b8c7-041d358a3b50"
+    },
+    {
+      "claim_id": "c0e54ef3-4177-470a-81ad-5b5140d064fd",
+      "result_id": "c73ad8ba-ab18-45a0-a0ba-466cf80e385c"
+    },
+    {
+      "claim_id": "3f2a8003-4566-4b84-98f7-4b62cfae3fb3",
+      "result_id": "c73ad8ba-ab18-45a0-a0ba-466cf80e385c"
+    },
+    {
+      "claim_id": "e260a398-12f3-4226-955d-73313347b21c",
+      "result_id": "c73ad8ba-ab18-45a0-a0ba-466cf80e385c"
+    },
+    {
+      "claim_id": "23aadcd1-8d47-4413-9b82-e6a9de5ff7dd",
+      "result_id": "ea79d376-29f5-411d-b7d6-c1fd98a9da01"
+    },
+    {
+      "claim_id": "9ee0f94c-5ceb-46a6-8e57-932247facfda",
+      "result_id": "ea79d376-29f5-411d-b7d6-c1fd98a9da01"
+    },
+    {
+      "claim_id": "26faf1cc-d17b-41db-8634-26d20ea43cbc",
+      "result_id": "ea79d376-29f5-411d-b7d6-c1fd98a9da01"
+    },
+    {
+      "claim_id": "364796ca-9142-4044-8423-51d47a8e5d72",
+      "result_id": "93abc03c-3769-4622-b6bd-9b5452ef0568"
+    },
+    {
+      "claim_id": "85bfd92e-79d2-455c-a0be-e8f6f26f5746",
+      "result_id": "93abc03c-3769-4622-b6bd-9b5452ef0568"
+    },
+    {
+      "claim_id": "56b01f2b-2e60-4efe-a5d5-30f18e33dad1",
+      "result_id": "93abc03c-3769-4622-b6bd-9b5452ef0568"
+    },
+    {
+      "claim_id": "251a7799-1176-412a-9751-2524ad18aa1e",
+      "result_id": "93abc03c-3769-4622-b6bd-9b5452ef0568"
+    },
+    {
+      "claim_id": "c285c19b-667f-4124-94ad-30da58ef7eaf",
+      "result_id": "93abc03c-3769-4622-b6bd-9b5452ef0568"
+    },
+    {
+      "claim_id": "2727c6a7-115e-47bf-b3a2-8de93f10bbfa",
+      "result_id": "438cf03b-8a5e-4661-b0fe-d90a20a7e9a0"
+    },
+    {
+      "claim_id": "4d74097b-231f-45a2-af11-511f3d70deaa",
+      "result_id": "63acf0f8-4fbf-48c6-a69a-a53184b59f57"
+    },
+    {
+      "claim_id": "9a60126c-4172-4ab0-9da3-553ef860f5ff",
+      "result_id": "bb4bbce7-a701-4d4c-a298-1684bc398c4e"
+    },
+    {
+      "claim_id": "f6479f5d-3b73-4600-a788-a39403e51c06",
+      "result_id": "bb4bbce7-a701-4d4c-a298-1684bc398c4e"
+    },
+    {
+      "claim_id": "6a4d5fd9-9044-405a-a291-7bb00b69a4f8",
+      "result_id": "bb4bbce7-a701-4d4c-a298-1684bc398c4e"
+    },
+    {
+      "claim_id": "fa15b818-5002-4a92-b78c-753843e3aab2",
+      "result_id": "75e5d5f1-ad2f-4a3e-ad57-6e705a2c431f"
+    },
+    {
+      "claim_id": "06cdc13a-08fd-4681-a426-cb6dbefd8583",
+      "result_id": "75e5d5f1-ad2f-4a3e-ad57-6e705a2c431f"
+    },
+    {
+      "claim_id": "4dca4ba2-a797-458d-83f0-3ad1f2f226ef",
+      "result_id": "75e5d5f1-ad2f-4a3e-ad57-6e705a2c431f"
+    },
+    {
+      "claim_id": "10f9c104-95ad-43c9-933e-dbc926100811",
+      "result_id": "0b0a311e-4fca-4b29-afbc-958d9a986227"
+    },
+    {
+      "claim_id": "6b704302-7447-42fc-b7a4-3092a3bf6a32",
+      "result_id": "0b0a311e-4fca-4b29-afbc-958d9a986227"
+    },
+    {
+      "claim_id": "97552f36-6146-4d9b-9b7e-100c55cf8481",
+      "result_id": "0b0a311e-4fca-4b29-afbc-958d9a986227"
+    },
+    {
+      "claim_id": "faf5e202-c9ef-403c-add4-4772ce7c8c6a",
+      "result_id": "0b0a311e-4fca-4b29-afbc-958d9a986227"
+    },
+    {
+      "claim_id": "7ca60bc3-384c-45de-a506-13c4a766d021",
+      "result_id": "0b0a311e-4fca-4b29-afbc-958d9a986227"
+    },
+    {
+      "claim_id": "e5d8a69d-9840-480a-85c3-c1fa39549ce8",
+      "result_id": "08c2e8db-5ca6-46ba-b845-72e20c4b3a2c"
+    },
+    {
+      "claim_id": "e3f8201d-5bc4-49c7-a266-65ac1b77fe44",
+      "result_id": "08c2e8db-5ca6-46ba-b845-72e20c4b3a2c"
+    },
+    {
+      "claim_id": "255ce4a0-835a-4eb3-a1ed-40ac9ff28490",
+      "result_id": "9fda040b-5343-4500-a40f-cf6064b8cf5c"
+    },
+    {
+      "claim_id": "b638a0ef-965a-4bd9-b132-6e8beb8033d8",
+      "result_id": "9fda040b-5343-4500-a40f-cf6064b8cf5c"
+    },
+    {
+      "claim_id": "4b19a30b-6566-4874-8295-78cfa414534f",
+      "result_id": "9fda040b-5343-4500-a40f-cf6064b8cf5c"
+    },
+    {
+      "claim_id": "72c2865e-4c65-4c71-b708-297d5f5524dc",
+      "result_id": "f4dceb77-9cd9-46c6-b458-d70192fc6156"
+    },
+    {
+      "claim_id": "80edeb66-df37-4d8b-a479-65ec4fdd3aef",
+      "result_id": "f4dceb77-9cd9-46c6-b458-d70192fc6156"
+    },
+    {
+      "claim_id": "ba70b3d2-db34-46a4-9524-9addac562478",
+      "result_id": "f4dceb77-9cd9-46c6-b458-d70192fc6156"
+    },
+    {
+      "claim_id": "77b38d8a-ba16-44f0-b64f-1487695c3aa8",
+      "result_id": "54630a84-e400-4bb5-bed8-f85b0cfb6496"
+    },
+    {
+      "claim_id": "e68a8402-4ceb-4ff2-8f20-bda67d5e8cb3",
+      "result_id": "f50c231d-721b-4b44-be37-35e980bc451d"
+    },
+    {
+      "claim_id": "db41f797-830f-4b41-8fd4-0d51ac5c85c3",
+      "result_id": "f50c231d-721b-4b44-be37-35e980bc451d"
+    },
+    {
+      "claim_id": "3ab57bde-356d-40f3-9f85-f690449a8ae1",
+      "result_id": "8423df71-3d2d-4990-9221-9ad4f35d24e2"
+    },
+    {
+      "claim_id": "df8422e1-4061-410c-8009-36bb5f8c3aed",
+      "result_id": "8423df71-3d2d-4990-9221-9ad4f35d24e2"
+    },
+    {
+      "claim_id": "a8b06a56-93c1-49fc-a668-ba4d0e40a0b8",
+      "result_id": "8423df71-3d2d-4990-9221-9ad4f35d24e2"
+    },
+    {
+      "claim_id": "3a86a1b7-8f2c-49ed-a7c7-2458ae726055",
+      "result_id": "546c53e0-0772-453d-93ae-97d7faadd976"
+    },
+    {
+      "claim_id": "ebb5e31a-d506-4ded-8d47-a2b8b530c45a",
+      "result_id": "546c53e0-0772-453d-93ae-97d7faadd976"
+    },
+    {
+      "claim_id": "5714b81c-a4e7-4497-b1c3-208b5ca25e8d",
+      "result_id": "17425a62-82ad-4562-acbc-4e0861ba5126"
+    },
+    {
+      "claim_id": "e81b4471-6131-4a4b-aec8-451544bc200b",
+      "result_id": "8b4044cc-9fd2-4235-861a-3e38dda0c646"
+    },
+    {
+      "claim_id": "34396aa7-3b3b-4128-8281-f44d77a5005c",
+      "result_id": "8b4044cc-9fd2-4235-861a-3e38dda0c646"
+    },
+    {
+      "claim_id": "b70811d5-5c2f-4536-94f7-a75b94841fb4",
+      "result_id": "8b4044cc-9fd2-4235-861a-3e38dda0c646"
+    },
+    {
+      "claim_id": "560597fe-dfab-4f2a-83ce-94be35bca830",
+      "result_id": "8b4044cc-9fd2-4235-861a-3e38dda0c646"
+    },
+    {
+      "claim_id": "2bfae58e-5022-442e-8f08-bd1a1953ecff",
+      "result_id": "8b4044cc-9fd2-4235-861a-3e38dda0c646"
+    },
+    {
+      "claim_id": "b8bf057f-769e-4126-8226-003fc2f139fd",
+      "result_id": "8b4044cc-9fd2-4235-861a-3e38dda0c646"
+    },
+    {
+      "claim_id": "dc6f78c8-b8f5-4fd6-b5d3-02ced6d41cd6",
+      "result_id": "8b4044cc-9fd2-4235-861a-3e38dda0c646"
+    },
+    {
+      "claim_id": "8ba6f45e-4071-4307-825a-eb0cbd301859",
+      "result_id": "8b4044cc-9fd2-4235-861a-3e38dda0c646"
+    },
+    {
+      "claim_id": "bd64d00d-06d2-4471-87b9-54320c39d131",
+      "result_id": "8b4044cc-9fd2-4235-861a-3e38dda0c646"
+    },
+    {
+      "claim_id": "a6bb0d2c-02a0-4df7-8f89-18f329213c6d",
+      "result_id": "74dd0909-5f05-455b-944f-dcb7298727b1"
+    },
+    {
+      "claim_id": "4d0e42af-34f4-477b-9992-7e0764f75beb",
+      "result_id": "74dd0909-5f05-455b-944f-dcb7298727b1"
+    },
+    {
+      "claim_id": "c876fbb1-14b4-4089-a09b-fad6682fda3e",
+      "result_id": "74dd0909-5f05-455b-944f-dcb7298727b1"
+    },
+    {
+      "claim_id": "4d2def70-7c74-4b4f-ade1-43738129da66",
+      "result_id": "74dd0909-5f05-455b-944f-dcb7298727b1"
+    },
+    {
+      "claim_id": "d5a407c0-6eb1-4539-a08d-c842eb1278a9",
+      "result_id": "74dd0909-5f05-455b-944f-dcb7298727b1"
+    }
+  ],
+  "comparisons": []
+}

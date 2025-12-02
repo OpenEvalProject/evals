@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "miR-934 is a primate-specific miRNA located on chromosome X, experimentally identified in Homo sapiens and Macaca mulatta, and predicted in other primate species including Pan troglodytes, Pongo pygmaeus, and Callithrix jacchus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C44-C47 collectively establish miR-934 as primate-specific through in silico analysis using miRBase v21, showing it is only annotated in certain primates with experimental identification in humans and rhesus macaques, and computational predictions in other primate species. The genomic location on chromosome X is documented in Figure 2d.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "miR-934 exhibits highly stage-specific expression during neural induction, ranking highest among 144 tissue-specific miRNAs (tau >0.7) at the NPC stage with undetectable expression in hESCs and neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39-C43 demonstrate stage-specific expression through tau index calculation (0.76), RNA-seq showing highest expression at NPC stage, and RT-qPCR validation confirming high expression in NPCs but undetectable levels in hESCs and neurons (Figure 2b-c). The tissue-specificity analysis is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "miR-934 expression associates predominantly with neural tissues, particularly fetal cortical tissues at gestational weeks 16.5-19.5, and is undetectable in adult nervous system and in vitro ESC/neuron samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by meta-analysis of 58 small RNA-Seq libraries showing neural tissue-specific expression (Figure 2e-f), with validation from published fetal cortical data (Nowakowski et al., 2018) and absence in adult nervous system and publicly available ESC/neuron datasets. The temporal specificity is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "miR-934 directly controls the progenitor to neuroblast transition, with overexpression increasing DCX+ neuroblasts by 41.8% and reducing PAX6+ progenitors by 39.4%, while inhibition has opposite effects (39.5% increase in PAX6+ cells, 27.8% decrease in DCX+ cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C52-C56 demonstrate functional control through gain-of-function and loss-of-function experiments with quantitative immunocytochemistry (Figure 3a-h, o-r). The bidirectional effects with statistical significance (p<0.05) provide strong evidence for direct regulatory control at the progenitor-neuroblast transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "miR-934 impacts neurite growth of newborn neurons, with inhibition causing 50% reduction in longest TUJ1+ neurite length and 40% decrease in bipolar cell morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C57-C59 are supported by morphological measurements on DCX+/TUJ1+ neurons showing significant effects on neurite length (p=0.02) and bipolar morphology (p=0.003) upon miR-934 inhibition (Figure 3i-n, s-t). The quantification methods using ImageJ and NeuronJ are appropriate for these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C64",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "miR-934 targets FZD5, TFCP2L1, STMN2, and RAB3B, genes involved in stem cell self-renewal, neurogenesis, and neurite outgrowth, validated by qRT-PCR and luciferase assays with evolutionary conservation analysis showing primate-specific binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C60, C64, C68-C71 identify targets through mirExTra v2 algorithm integration of RNA-seq data with microT-CDS predictions (scores 0.755-0.853), validated by qRT-PCR showing upregulation upon miR-934 inhibition (Figure 4a-b) and luciferase assays confirming direct binding (Appendix 1-figure 2). Evolutionary conservation analysis adds biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "miR-934 targets the primate-specific 8mer binding site on FZD5 3'-UTR, suppressing FZD5 protein (29\u00b14.5% increase upon inhibition) and active \u03b2-catenin (28.5\u00b15.2% increase), thereby modulating Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 demonstrate species-specific targeting through luciferase assays showing 36% suppression (p=0.002) of the human-chimpanzee conserved 8mer site (Figure 4c-d), with Western blot validation of protein-level effects on FZD5 and \u03b2-catenin (Figure 4e-g). The mechanistic link to Wnt pathway is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C80",
+      "C81"
+    ],
+    "result": "miR-934 inhibition results in profound transcriptome changes affecting 1458 genes (650 upregulated, 810 downregulated; p<0.05), enriched for biological processes including progenitor proliferation, differentiation, axonogenesis, neuronal migration, and neurotransmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C80-C81 are supported by RNA-seq differential expression analysis with appropriate statistical thresholds (p<0.05) and GO enrichment analysis (q<0.05) showing functional coherence (Figure 5a). The scale of transcriptome changes is consistent with miRNA regulatory networks, though direct vs. indirect effects are not fully distinguished.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C103",
+      "C104"
+    ],
+    "result": "miR-934 inhibition affects expression of 19 subplate-enriched genes including PRSS12 and TPD52L1, validated by qRT-PCR, suggesting modulation of this primate-prominent developmental compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C103-C104 demonstrate subplate gene involvement through differential expression analysis referenced to Miller et al. (2014) fetal brain dataset, with qRT-PCR validation of key markers (Figure 5f-g). The connection to subplate biology is biologically plausible given miR-934's primate specificity and developmental timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C108",
+      "C109"
+    ],
+    "result": "miR-934 inhibition alters expression of 79 miRNAs (p<0.05), including miR-34c-5p (reduced by ~50%, p=0.004), with the top 20 differentially expressed miRNAs associated with axon/neurite growth and synapse formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C108-C109 show secondary miRNA network effects through profiling with RT-qPCR validation of miR-34c-5p (Figure 6a-c). The bibliographic association of top miRNAs with neuronal processes (Figure 6b) provides functional context, though these represent indirect downstream effects rather than direct miR-934 targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Global expression profiling confirms successful neural differentiation with stage-appropriate marker expression: NANOG/OCT4 in hESCs/iPSCs, SOX2 in pluripotent and NPC states, PAX6/NEUROG1/NEUROG2/DCX in NPCs, and MAP2 in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 validate the differentiation system through RNA-seq showing distinct clustering patterns (Figure 1b-f) and appropriate marker expression (Figure 1g-h) with qRT-PCR confirmation. This establishes the experimental model's validity for studying neural development, providing essential context for miR-934 functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Known developmental miRNAs show expected stage-specific patterns: miR-302-367 cluster in pluripotency, miR-9/miR-125 in neurons (p<0.05), and miR-124 with widespread NPC-to-neuron expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 demonstrate system validation through expected expression patterns of well-characterized miRNAs (Figure 2a), with appropriate statistical significance and literature support. This positive control strengthens confidence in the miR-934 findings but represents confirmatory rather than novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "miR-934 inhibition upregulates N-Cadherin (promotes NPC self-renewal) and ID2 (inhibits differentiation) while reducing GATA2 (essential for neurogenesis), supporting its role in progenitor-to-neuron transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 show coordinated gene expression changes consistent with the functional phenotype (Figure 5b, g), with qRT-PCR validation and literature support for gene functions. These represent downstream transcriptional effects that mechanistically explain the observed cellular phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "miR-934 inhibition upregulates SYNGAP1, an essential repressive factor for dendritic spine synapse maturation localized in excitatory neurons and associated with intellectual disability and autism, linking early developmental regulation to later connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C124-C127 identify SYNGAP1 dysregulation through differential expression (Figure 5c, g) with established functional significance from literature. The proposed link between early miR-934 expression and later synaptic maturation (C127) is speculative but biologically plausible, representing an interesting hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "miR-934 inhibition dysregulates genes involved in axon guidance (semaphorin-neuropilin-plexin pathway, CRMPs, Ephrins, ROBOs), neuronal migration (Neuregulin-1/ErbB4, Reelin, SRF, matrilin 2), and neurotransmitter release (Snapin, synaptotagmins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 document broad transcriptional effects on neuronal differentiation pathways through differential expression analysis (Figure 5c-e) with qRT-PCR validation of selected genes (Figure 5g). These represent secondary downstream effects consistent with miR-934's role in neurogenesis, though direct vs. indirect regulation is not distinguished.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The differentiation system shows dorsal telencephalic identity with low/absent expression of intermediate progenitor (Tbr2/EOMES), outer radial glia (HOPX), ventral/midbrain (DLX1/2, PAX2, GBX2), and ganglionic eminence (Nkx2.1, GSX1/2) markers, with no miR-934-mediated changes in deep/upper layer neuron markers (FEZF2, TBR1, FOXP2, CTIP2, CUX2, SATB2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 characterize the cellular identity and developmental stage through marker gene analysis (Appendix 1-figure 4a-b), establishing dorsal forebrain identity and early developmental timing. This negative data is important for interpreting miR-934 function but represents system characterization rather than primary findings about miR-934.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Predicted miR-934 targets F11R (junctional adhesion molecule) and SLC16A1 (monocarboxylate transporter) showed no mRNA expression changes upon miR-934 perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 reports negative results for two computationally predicted targets (Figure 4a-b), appropriately documenting that not all predicted interactions are functionally relevant. This strengthens confidence in the validated targets by showing selective validation rather than universal confirmation of predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C132"
+    ],
+    "result": "miR-934 is proposed as a novel regulator of early human neurogenesis with potential species-specific evolutionary implications for brain function, controlling transcriptional networks for progenitor proliferation, neuronal differentiation, and subplate zone molecular profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C132 represent broad interpretive conclusions synthesizing the experimental findings. While the regulatory role in neurogenesis is well-supported by the data, the evolutionary implications and species-specific brain function claims (C9) are speculative, requiring comparative functional studies in primate vs. non-primate systems to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study used hESC line HUES6 and iPSC lines derived from healthy donor (C1-1, C1-2) and Parkinson's disease patient (PD1-1, PD1-2) fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 document the cell lines used with appropriate citations (Kouroupi et al., 2017). This methodological information is clearly stated and essential for reproducibility, though the PD patient lines do not appear to show disease-specific differences relevant to the miR-934 findings presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C31",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C78",
+      "C84",
+      "C85",
+      "C86",
+      "C94",
+      "C107",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C121",
+      "C122",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The manuscript establishes background knowledge about neocortical development, subplate biology, miRNA function, Wnt signaling, cytoskeletal dynamics, and neurotransmitter release through citations to established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C23, C31, C61-C63, C65-C66, C78, C84-C86, C94, C107, C111-C116, C118-C119, C121-C122, C128-C131 represent established knowledge appropriately cited from the literature. These provide essential context for interpreting the novel miR-934 findings but do not constitute new results from this study.",
+    "result_type": "MINOR"
+  }
+]

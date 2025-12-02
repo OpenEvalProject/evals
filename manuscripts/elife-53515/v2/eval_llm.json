@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C95"
+    ],
+    "result": "CTP specifically reduces Caulobacter ParB nucleation at parS sites. BLI experiments show that CTP, but not other NTPs, has a pronounced effect on ParB-parS interaction in the presence of Mg2+, reducing binding in a concentration-dependent manner and accelerating dissociation ~7-fold compared to buffer alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C21-C28, and C95 collectively demonstrate through BLI assays that CTP specifically modulates ParB nucleation at parS. The data show concentration-dependent effects, specificity for CTP over other NTPs, Mg2+ dependence, and appropriate negative controls (TetR-tetO, scrambled parS). The experimental design is sound with technical replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C18",
+      "C80"
+    ],
+    "result": "CTP is required for parS-dependent ParB accumulation on closed DNA substrates in vitro. With 169 bp dual-biotin-labeled DNA, CTP increased BLI response ~12-fold and pull-down enrichment ~13-15-fold. This effect was parS-dependent, Mg2+-dependent, specific to CTP, and conserved across eight additional bacterial ParB orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C43, C18, and C80 provide converging evidence from BLI and pull-down assays showing CTP-dependent ParB accumulation. Multiple controls validate specificity: scrambled parS (C34, C40), other NTPs (C41), Mg2+ requirement (C33), and spreading-defective mutant R104A (C35, C42). Conservation across orthologs (C37) strengthens generalizability. Both technical approaches yield consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C19",
+      "C89",
+      "C90",
+      "C106"
+    ],
+    "result": "ParB accumulation requires closed DNA substrates with blocked ends. Restriction enzyme digestion of dual-biotin-labeled DNA to create free ends abolished CTP-enhanced ParB accumulation in both BLI and pull-down assays, suggesting ParB can escape by running off free DNA ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48, C19, C89-C90, and C106 demonstrate through restriction enzyme experiments (BamHI, EcoRI, HindIII) that ParB-CTP accumulation requires closed DNA. The experimental design is rigorous with appropriate controls (heat-inactivated enzyme in C47). The interpretation that ParB diffuses laterally and runs off free ends (C89-C90, C106) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C94"
+    ],
+    "result": "DNA-bound TetR acts as a roadblock to ParB spreading. TetR binding at tetO on BamHI-restricted DNA partially rescued ParB accumulation by capping the free end, while TetR on closed DNA attenuated ParB accumulation. The blocking effect was reversed by anhydrotetracycline, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 and C94 demonstrate TetR roadblock effects through well-designed experiments. The rescue of ParB accumulation on restricted DNA by TetR (C51) and attenuation on closed DNA (C54) are internally consistent. The ahTc control (C55) confirms specificity. The interpretation aligns with published ChIP-seq data (C56). However, the rescue is described as 'partial' (C51), suggesting incomplete blocking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "parS DNA stimulates Caulobacter ParB to bind and hydrolyze CTP. DRaCALA assays show CTP binding to ParB-parS complexes with specificity for CTP over other NTPs. CTP hydrolysis rate increased 7-fold (from ~0.4 to ~3 CTP/ParB/hour) in the presence of parS DNA but not non-cognate NBS DNA, and was abolished in the R104A mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 provide complementary evidence for CTP binding and hydrolysis. DRaCALA shows specific CTP binding (C57-C59) with parS-dependence (C60). EnzChek assays demonstrate parS-stimulated hydrolysis (C63) with appropriate controls (NBS DNA, other NTPs, R104A mutant). The hydrolysis rates are very low (~3 CTP/hour), which is acknowledged and discussed in context of the spreading mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C99",
+      "C111",
+      "C112"
+    ],
+    "result": "CTP hydrolysis is not required for ParB spreading but may contribute to stability. ParB accumulated on DNA with non-hydrolyzable CTP\u03b3S, but preincubation with CTP\u03b3S reduced accumulation over time. CTP\u03b3S was twice as efficient as CTP at promoting N-terminal domain cross-linking, and ParB-CTP\u03b3S accumulation declined over 60 min, suggesting hydrolysis maintains spreading stability by recycling ParB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C73-C74, C76-C79, C99, C111-C112 demonstrate through CTP\u03b3S experiments that hydrolysis is dispensable for initial spreading but affects stability. The cross-linking data (C73) supports the interpretation that CTP\u03b3S promotes closed clamp formation. The time-dependent decline with CTP\u03b3S (C67, C76) versus stability with CTP (C75) supports the recycling model. However, the mechanistic details of recycling remain speculative (C79, C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "CTP binds to the N-terminal domain of ParB at the arginine-rich patch. The R104A mutant was unresponsive to CTP, and structural studies from other species show CDP/CTP binding at the N-terminal domain arginine-rich patch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 combine functional data from Caulobacter (C83-C84) with structural data from Bacillus and Myxococcus (C85-C86). The R104A mutant data (C83) supports N-terminal domain binding, though the inference (C84) relies on published structures from other species. The cross-species extrapolation is reasonable given the conservation demonstrated in C37.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "CTP binding promotes ParB conformational changes that facilitate escape from parS. CTP-bound ParB forms a closed clamp with inaccessible DNA-binding domain, enabling dissociation from high-affinity parS sites. Only apo-ParB or CDP-bound ParB can nucleate on parS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C71, C96-C98, C100-C103 present a mechanistic model based on Caulobacter data (C101) and structural/biochemical data from Bacillus (C69-C71, C96, C102). While the model is internally consistent and supported by cross-linking data (C99), key aspects remain speculative (C98, C100). The claim that only apo- or CDP-bound ParB nucleates (C98) is inferred rather than directly demonstrated. Additional structural or mutational data would strengthen this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The transition from parS-bound to spreading ParB is the rate-limiting step, and the spreading form is CTP-bound. Low BLI response with open DNA suggests rapid runoff before new ParB escapes parS. The low CTP hydrolysis rate (~3/hour) while spreading occurs within minutes supports CTP-bound spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105, C108-C110 present kinetic interpretations of the spreading mechanism. The inference that transition is rate-limiting (C105) is reasonable given the open DNA data (C104). The conclusion that spreading ParB is CTP-bound (C108-C109) is well-supported by the CTP\u03b3S experiments and the mismatch between slow hydrolysis and fast spreading. However, C105 is explicitly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "This work establishes a label-free, medium-throughput methodology for reconstituting ParB spreading in vitro using BLI and pull-down assays. The approach was successfully applied to eight additional ParB orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C114-C116 describe the methodological contributions. The label-free approach using dual-biotin-labeled DNA on BLI probes (C116) is validated by exonuclease digestion controls. Medium-throughput capability is demonstrated by testing eight orthologs (C115). The methodology successfully recapitulates in vivo ParB behaviors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on ParB function and prior work. ParB nucleates at parS, spreads to flanking DNA, forms nucleoprotein complexes, recruits SMC, and interacts with ParA. Spreading is essential for chromosome segregation but had resisted biochemical reconstitution until recent work showed CTP modulates ParB-parS binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C15 summarize established knowledge from the literature with appropriate citations. These provide context for the current work and accurately represent prior findings, including the recent discovery of CTP's role (C11-C14) and the historical difficulty in reconstituting spreading (C10).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C75",
+      "C117"
+    ],
+    "result": "Engineered ParB variants (C297S, Q35C C297S) retain spreading function and show CTP/CTP\u03b3S-specific cross-linking. CTP-mediated spreading reaches steady state after 120s and remains stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C75, C117 validate the engineered variants used for cross-linking experiments. The variants retain function (C117), show specific cross-linking with CTP/CTP\u03b3S (C72), and the kinetics of CTP-mediated spreading are characterized (C75). These are important controls for the mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "ParB may have two modes of DNA interaction: CTP-independent bridging/caging and CTP-dependent lateral spreading. The N-terminal domain can oligomerize to bridge DNA without additional ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 propose dual modes of ParB action based on published structural and single-molecule studies (C87) and the current findings. While C87 is well-supported by citations, the two-mode model (C88) is explicitly speculative. The relative contributions of these modes in vivo remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In vivo context: ParB forms compact foci in cells, spreading-defective mutants show diffusive foci, and double-strand breaks ~8kb from parS don't dissolve foci, suggesting roadblocks prevent runoff in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 cite published in vivo observations that contextualize the in vitro findings. These claims accurately represent the cited literature and help reconcile the closed DNA requirement in vitro with in vivo behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C113"
+    ],
+    "result": "Proposed mechanisms for ParB dynamics. ParB-CTP forms a sliding clamp (from Bacillus studies), and ParB recycling may occur through multiple routes including CTP dissociation, hydrolysis, roadblock collisions, or transient clamp opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107 and C113 present mechanistic proposals. C107 is supported by published Bacillus work, while C113 is explicitly speculative, proposing multiple possible recycling mechanisms without direct evidence for any specific route. These remain hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "CTP binding and hydrolysis by plasmid ParB proteins suggests the CTP-dependent spreading mechanism is universal among ParB orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 extend the findings to plasmid ParB proteins based on published work (C81) and the conservation observed across eight chromosomal ParB orthologs in this study. The inference of universality (C82) is reasonable but would benefit from direct functional testing of plasmid ParBs.",
+    "result_type": "MINOR"
+  }
+]

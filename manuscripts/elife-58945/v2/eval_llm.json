@@ -1,0 +1,439 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C83"
+    ],
+    "result": "Epithelial tissues expand with a constant edge speed (~30 \u03bcm/h after ~16 hours) that is independent of initial tissue size, shape, and cell density, with an initial overshoot of ~30% during the first 8 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20, C21, C22, and C83 are strongly supported by experimental measurements in Figure 1D showing consistent edge velocity across different tissue sizes and initial densities. The overshoot phenomenon is clearly documented and the independence from initial conditions is demonstrated across multiple experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Small tissues expand in area by 6.4X and increase cell number by 9.2X over 46 hours, while large tissues expand by 3.3X in area and 5.5X in cell number, with proliferation outpacing area expansion leading to increased average tissue density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 are directly supported by quantitative measurements shown in Figures 1B, 1C, and Figure 1\u2014figure supplement 1. The data clearly show differential expansion rates between small and large tissues and the relationship between proliferation and area expansion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C28",
+      "C32",
+      "C33",
+      "C87"
+    ],
+    "result": "The areal expansion rate of epithelial tissues is determined by the perimeter-to-area ratio, resulting from constant edge speed normal to the boundary, as validated by experiments with elliptical tissues of different aspect ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C28, C32, C33, and C87 are well-supported by mathematical derivation and experimental validation with elliptical tissues (Figure 1E). The model with constant edge speed vn \u2248 29.5 \u03bcm/h fits data across different tissue shapes with good \u03c7\u00b2 values (0.79, 0.13, 0.06).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C57",
+      "C58",
+      "C94",
+      "C95"
+    ],
+    "result": "Small and large tissues exhibit distinct density evolution patterns: small tissues show non-monotonic density with a decrease from 4-12 hours and a marked decrease at the center from 8-24 hours, while large tissues show monotonic density increase at all times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18, C57-C58, and C94-C95 are supported by density measurements in Figures 1C, 4A, and 4B. The contrasting density evolution patterns between small and large tissues are clearly documented with kymographs and time-series data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C34",
+      "C80",
+      "C82",
+      "C90",
+      "C91",
+      "C97"
+    ],
+    "result": "Internal tissue dynamics (proliferation, migration, density) depend on initial tissue size rather than current size, demonstrating memory effects where tissues of equal current size but different initial sizes exhibit distinct internal patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C34, C80, C82, C90, C91, and C97 are strongly supported by Figure 6, which directly compares tissues of equal current size but different initial sizes, showing distinct vorticity, cell speed, density changes, and cell cycle patterns. This is a key finding demonstrating history-dependent behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42",
+      "C51",
+      "C52",
+      "C53",
+      "C99"
+    ],
+    "result": "Large-scale vortices emerge in expanding epithelia, reaching tissue-spanning sizes only in small tissues, with higher intensity and later peak timing in small tissues compared to large tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41, C42, C51-C53, and C99 are supported by vorticity measurements and enstrophy analysis in Figure 3. The statistical significance (p < 0.0001) for intensity differences and the quantitative characterization of vortex size and timing provide strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "An active polar fluid model with feedback between cell polarization and tissue flow explains vortex formation through a long-wavelength instability that occurs when tissues reach a critical size of millimeter scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C45, C46, C100-C102 are supported by the theoretical model (Equations 1-3) and linear stability analysis (Equation 3, Figure 3B). The model predictions are consistent with experimental observations of size-dependent vortex formation. However, the model is acknowledged to be incomplete (C106) as it does not describe density coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Large-scale vortices co-localize with regions of low cell density, with small tissues developing a central density minimum accompanying the vortex, and off-center vortices in large tissues always occurring at local density minima.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C56, C103-C105 are supported by density kymographs (Figure 4A) and spatial correlation analysis (Figure 4\u2014figure supplement 1). The consistent co-occurrence of vortices with low-density regions across different tissue sizes and locations provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C60"
+    ],
+    "result": "The timing of maximum vortex intensity decreases with increasing initial cell density in small tissues, with tissues of different initial densities reaching a common density minimum during the 16-32 hour period that includes vortex onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C60 are supported by experimental data in Figures 3E and 4B showing the relationship between initial density and vortex timing. The convergence to a common density minimum is clearly demonstrated across different initial density conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A minimal continuity equation model combining advective transport from measured radial flow and homogeneous proliferation recapitulates major density features, showing that central low-density regions result from outward flow and proliferation, though more complex proliferation behavior is needed for full accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by comparison of simulated (Figure 4D) and measured (Figure 4A) density profiles. The model successfully reproduces major features while acknowledging limitations at high densities and edge regions, demonstrating both the utility and limitations of the simplified model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A wave front of cell speed and radial velocity propagates toward tissue centers at ~90 \u03bcm/h (3X faster than edge speed), then retreats leaving low radial velocity in the center, with speed reduction in large but not small tissue centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by kymographs in Figure 2A-B showing wave propagation and the differential response of small versus large tissue centers. The quantitative measurements and spatiotemporal patterns are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C81",
+      "C85",
+      "C86"
+    ],
+    "result": "Cell motion within ~500 \u03bcm of the tissue edge is independent of tissue size, defining a velocity penetration length that suggests tissues must be ~1 mm in diameter for edge motion to be independent of bulk flows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C81, C85-C86 are supported by velocity profiles in Figure 2D showing identical edge-region behavior for small and large tissues. The inference about the 1 mm critical size is logically derived from the 500 \u03bcm penetration length and is consistent with curvature-dependent observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C72",
+      "C73",
+      "C77"
+    ],
+    "result": "Large tissue cores become very dense, almost quiescent, and undergo cell-cycle arrest at the G1-G2 transition at ~30 hours, with cell-cycle state transitioning from G1- to G2-dominated when density exceeds ~5000 cells/mm\u00b2 and speed falls below ~12 \u03bcm/h.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C72, C73, and C77 are supported by cell cycle analysis (Figure 5B, 5D) and density-speed-cell cycle correlations (Figure 5E). The quantitative thresholds and temporal dynamics of cell cycle arrest are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Spatiotemporal cell-cycle patterns emerge during expansion, with a division pulse immediately after stencil removal, rapid cycling in boundary regions after 12 hours, and rapid cycling in small tissue centers (vortex regions) until ~40 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by FUCCI imaging and cell cycle fraction analysis in Figure 5. The temporal evolution of cell cycle states in different tissue regions is well-documented with kymographs and quantitative measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C88",
+      "C89",
+      "C108",
+      "C109"
+    ],
+    "result": "Expanding epithelia decouple their internal and edge regions, with edge dynamics independent of internal patterns (vortices, contact inhibition), conferring stability and robustness to tissue expansion despite size- and history-dependent internal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C88-C89, and C108-C109 are supported by the combination of constant edge velocity (Figure 1D) despite radically different internal dynamics (Figures 2-5). This decoupling is a major conceptual finding well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The edge velocity overshoot during the first 8 hours is hypothesized to result from fast multicellular finger-like protrusions, supported by a model showing edge acceleration leads to finger formation, suggesting early expansion is migration-driven rather than proliferation-driven.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C25 combine observation (C22, overshoot documented in Figure 1D) with hypothesis (C23, finger formation) supported by visual evidence and citation (C24). However, C23 is explicitly stated as a hypothesis and C25 is an inference. While plausible and supported by modeling literature, direct experimental validation of the finger mechanism is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Edge speed is mostly independent of edge curvature, except at high curvatures (radius < ~0.75 mm) where speed decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by the good fit of constant edge speed models to tissues of different shapes (Figure 1E) and measurements showing reduced speed at high-curvature major axes of ellipses (Figure 1\u2014figure supplement 2). The curvature dependence is quantitatively characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C61"
+    ],
+    "result": "Cell density at the boundary zone converges to similar values at ~12 hours for different initial tissue sizes and densities, coinciding with the end of edge velocity overshoot, and remains independent of initial conditions in long-time evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C61 are supported by density measurements in Figure 4C showing convergence across different initial conditions. The temporal correlation with edge velocity stabilization (Figure 1D) strengthens the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78",
+      "C79"
+    ],
+    "result": "Before cell-cycle arrest, large tissue centers exhibit coordinated anti-phase oscillations in G1/G2 fractions; cell speed negatively correlates with density, with high-density regimes showing similarities to glass transitions and contact inhibition, absent in small tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by cell cycle kymographs (Figure 5B), density-speed correlations (Figure 5E), and comparison with literature. The oscillatory behavior and density-speed relationships are clearly documented, though the glass transition comparison (C78) is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "At equal current sizes, initially-small tissue centers show high vorticity with decreasing cell speed while initially-large tissues show low vorticity with increasing speed, and density change rates differ between the two.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are directly supported by Figure 6A-C comparing tissues at equal current sizes. This provides specific evidence for the memory effect and history-dependent dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Vortex direction is approximately random (51.5% counterclockwise, 49.5% clockwise), with outer regions showing negative vorticity corresponding to counter-rotation, and characteristic vortex radius of ~1 mm at 36 hours with intensity concentrated at ~1 mm wavelength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by vorticity field analysis (Figure 3C) and enstrophy spectrum analysis (Figure 3\u2014figure supplement 3). The quantitative characterization of vortex properties is well-documented with n=68 tissues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The current active polar fluid model does not describe cell density and cannot explain vortex-density relationships, calling for development of more detailed models coupling density to velocity and polarity fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 acknowledge a limitation of the theoretical model and propose future work. This is an honest assessment supported by the discrepancy between model predictions and experimental density observations, particularly the vortex-density correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The findings showcase the value of large-scale, long-term studies, with robust boundary dynamics potentially beneficial for epithelial function and practical applications in experimental design and tissue engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C113 are primarily speculative (C110, C111) or meta-scientific (C112, C113). While C112 is supported by the observation that phenomena like vortices require millimeter scales, claims about biological benefit (C110) and practical applications (C111) are speculative without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Non-monotonic density evolution likely arises from competition between migration and proliferation dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by the continuity equation modeling (Figure 4D) that reproduces non-monotonic density patterns using measured flow fields and proliferation, and is consistent with previous observations (Poujade et al., 2007). The mechanistic explanation is validated by the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C65",
+      "C74"
+    ],
+    "result": "Tissues are initially well-mixed with actively cycling cells at stencil removal, and similar cell-cycle arrests have been previously reported in growing epithelia and spreading 3D aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by Figure 5\u2014figure supplement 1 showing mixed G1/G2 cells initially. Claim C74 is a citation claim properly attributed to Streichan et al., 2014 and Beaune et al., 2014, providing context for the observed cell cycle arrest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Tissues with sizes between the two experimental choices would exhibit similar edge dynamics and internal patterns that cross over between small and large tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is explicitly speculative ('We expect') and extrapolates from the two experimental conditions. While reasonable based on the observed trends, this prediction lacks direct experimental validation and represents future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Edge dynamics are stereotyped and conserved across different sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by the consistent edge velocity measurements across different tissue sizes and conditions shown in Figure 1D. This is a well-established finding from the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "Methodological details: experiments used MDCK-II cells with FUCCI markers, initial density ~2700 cells/mm\u00b2, tissue diameters of 1.7 mm and 3.4 mm, with velocity correlation length ~200 \u03bcm and established cell cycle marker properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117, C119-C120 are methodological details stated in Materials and Methods and figure captions, with appropriate citations for established knowledge (FUCCI properties, correlation length). These are well-documented experimental parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Background and motivation: collective cell migration is fundamental to development and disease; epithelia are well-suited for in vitro studies with physiological relevance; there is a gap in assays for large-scale, long-term studies; this work provides the first comprehensive macro-scale study demonstrating the importance of exploring migration across wider contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 provide background context and study motivation. C121-C123 are established knowledge with proper citations. C124 identifies a literature gap. C125-C126 claim novelty and importance, which are supported by the unique experimental approach (millimeter-scale, 46-hour duration) and novel findings (vortices, memory effects) not previously reported.",
+    "result_type": "MINOR"
+  }
+]

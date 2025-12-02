@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors successfully generated a functional FAP-EGFR fusion protein in HeLa cells using CRISPR/Cas9 gene editing. FAP was inserted at the amino-terminus of endogenous EGFR in all three gene copies (EE7 clone), and the fusion protein retained normal EGFR activity (phosphorylation per ligand-occupied receptor) and internalization kinetics (Ke = 0.49-0.51/min) comparable to parental HeLa cells, despite higher overall expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21, C23, C25, C26 are directly supported by experimental data in Figures 1A-F showing successful gene editing, Western blot confirmation of complete FAP insertion, equivalent receptor activity, and normal internalization rates. The consistency with prior work on N-terminal EGFR tagging (C28) and appropriate colocalization with EGF-Rh (C29) provide additional validation. The characterization is comprehensive with multiple orthogonal measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The MG-Bis-SA/FAP-EGFR system provides a ratiometric pH-sensitive fluorescence readout for measuring receptor endocytosis. The tandem dye MG-Bis-SA exhibits pH-dependent FRET from Cy3 donor to MG acceptor, with the 561/640 excitation ratio increasing ~3-fold at endosomal pH (5.5) compared to extracellular pH (7.4), faithfully reporting the fraction of FAP-EGFR in acidic compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C17-C20 are well-supported by experimental data in Figure 2A-C demonstrating the pH-dependent fluorescence properties, calibration curve, and imaging validation. The ~3-fold pH-dependent change in the 561/640 ratio (C20) is directly measured and shown in Figure 2B. The principle is validated by prior work (Perkins et al., 2018b) and demonstrated here with endogenous EGFR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A high-throughput 96-well plate assay was developed to measure clathrin-mediated EGFR endocytosis at physiologically relevant EGF concentrations (1-4 ng/ml). The assay achieves high robustness (Z'-factor 0.76-0.88) and demonstrates that endocytosis at low EGF concentrations is kinase-dependent (blocked by PD158780), while high EGF concentrations induce kinase-independent endocytosis, consistent with different endocytic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, C31, C34-C36 are supported by data in Figures 3A-C. The Z'-factor values (C31) meet the established criterion for excellent HTS assays (C65). The differential kinase dependence at low vs. high EGF (C34-C35) is clearly demonstrated in Figure 3C and consistent with literature on CME vs. clathrin-independent pathways (C36). The physiological relevance is supported by multiple citations on tissue EGF concentrations (C32-C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The high-throughput assay was successfully applied to screen a 240-member phosphatase siRNA library, identifying several phosphatases that significantly inhibit EGFR endocytosis. Positive controls (CHC and dynamin-2 depletion) strongly inhibited endocytosis, confirming the clathrin-mediated nature of the pathway. Multiple phosphoinositide phosphatases (SHIP1, SHIP2, INPP4A) and other phosphatases (PTPRH) were identified as potential regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37-C40 are supported by screening data in Figure 4A-C. The strong inhibition by CHC and dynamin-2 (C37) validates the assay for CME. The identification of multiple phosphatases (C39-C40) is shown in the dual-flashlight plot with appropriate statistical analysis (SSMD). The screen was performed in triplicate with appropriate controls, meeting standards for HTS validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Several phosphatases identified in the screen have been previously implicated in endocytic processes or EGFR regulation. SHIP1, SHIP2, and INPP4A have been linked to various endocytic processes, with SHIP2 specifically shown to be important for CME. PTPRH has been implicated in EGFR dephosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by appropriate citations to prior literature (Erneux et al., 2011; Kamen et al., 2007; Nigorikawa et al., 2015; Nakatsu et al., 2010; Yao et al., 2017). These claims provide context for the screening results by connecting identified hits to established biological functions. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The FAP-based method offers advantages over previous high-throughput screens of EGFR endocytosis, which required high concentrations of labeled EGF and complex multi-parameter image analysis. The new method enables sensitive screening at physiological ligand concentrations and can be applied to study constitutive endocytosis, endocytosis induced by difficult-to-label ligands, and ligand-independent endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by citations to prior screens (C44: Collinet et al., 2010; Pelkmans et al., 2005) and the demonstrated capabilities of the current method. The advantages claimed (C47-C48) are logical inferences from the method's design and validated performance at low EGF concentrations. The ability to study ligand-independent endocytosis (C48) is supported by citations to p38 MAP kinase studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The FAP-EGFR imaging method offers advantages over antibody-based approaches for measuring constitutive EGFR endocytosis. Unlike antibody methods, which have limitations related to epitope recognition, bivalent binding, and terminal stripping steps, FAP-EGFR imaging enables high-resolution, pixel-by-pixel live-cell analysis with significantly higher fold-increase in endosomal signal compared to total cellular signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by citations to antibody-based methods (C49: Burke et al., 2001; Burke and Wiley, 1999), known limitations of antibody approaches (C50), and demonstrated imaging capabilities (C51-C52). The superior signal-to-noise for endosomal measurements (C52) is shown in Figure 2C. The comparison is fair and the advantages are substantiated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The FAP/MG-Bis-SA approach overcomes limitations of alternative pH-sensitive methods for studying membrane trafficking. Unlike pHluorin (cannot distinguish biosynthetic from internalized pools), SNAP/Halo methods (long incubations, high background), or SRpHi (not for cargo labeling), the FAP approach achieves low background due to the dark state of unbound MG and enables instantaneous labeling for monitoring endocytosis without interference from intracellular pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by appropriate citations to alternative methods and their limitations (Bizzarri et al., 2009; Los and Wood, 2007; Martineau et al., 2017; Takeda et al., 2012; Richardson et al., 2017). The advantages of the FAP approach (C60-C62) are logical consequences of the fluorogen-activating mechanism and are demonstrated by the experimental data showing clean labeling and tracking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "While different cell types may display different endocytosis kinetics and mechanisms, the tools developed here (donor construct, gRNAs, technical information) will facilitate engineering FAP-EGFR in other human cell lines, with the authors estimating feasibility of generating new cell lines within 1 month.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is supported by citations showing cell-type variability (Burke and Wiley, 1999; Jiang et al., 2003; Mohapatra et al., 2013). However, claims C54-C55 about facilitated engineering and 1-month timeline are speculative projections based on the authors' experience rather than demonstrated results. While reasonable, these represent future expectations rather than validated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Prior work has demonstrated the effectiveness of MG-Bis-SA for studying FAP-tagged \u03b22-adrenergic receptor endocytosis in overexpressing cells and developed FAP-tagged antibodies/nanobodies for EGFR studies in high-receptor-level cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 accurately cite prior work (Perkins et al., 2018b for C63; Ackerman et al., 2018; Tan et al., 2017; Wang et al., 2017; Wang et al., 2015 for C64). These claims provide appropriate context for the current work by referencing the authors' previous methodological developments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16"
+    ],
+    "result": "Previous work using GFP-tagged endogenous EGFR demonstrated that picomolar/low concentrations of EGFR ligands drive signaling and clathrin-mediated endocytosis in tumors in vivo and are sufficient for EGFR-dependent tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, C16 are all supported by citation to Pinilla-Macua et al., 2017. These claims accurately represent prior work by the authors that motivated the current study. The consistency between prior findings and current results (low EGF concentrations driving CME) strengthens both studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on EGFR biology: Ligand binding activates EGFR tyrosine kinase and signaling cascades leading to proliferation/transformation, triggers rapid endocytosis and lysosomal degradation (major regulators of signaling), occurs through multiple pathways (CME and clathrin-independent), with unclear roles for Cbl ubiquitination and unidentified phosphatases. Experimental conditions (overexpression, high ligand) favor clathrin-independent over CME pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 provide established background knowledge supported by appropriate review citations (Lemmon and Schlessinger, 2010; Sorkin and Goh, 2009a; Sigismund et al., 2012; Sorkin and von Zastrow, 2009b) and specific studies (Gorden et al., 1978; Hanover et al., 1984; Motley et al., 2003; Caldieri et al., 2017; Orth et al., 2006; Fortian et al., 2015; Mohapatra et al., 2013). The claims accurately represent the state of knowledge and controversies in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "An assay with a Z'-factor between 0.5 and 1 is considered excellent for high-throughput screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by citation to the authoritative reference (Zhang et al., 1999) that established the Z'-factor metric for HTS assay quality assessment. This is a widely accepted standard in the field.",
+    "result_type": "MINOR"
+  }
+]

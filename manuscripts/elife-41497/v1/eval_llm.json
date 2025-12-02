@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Neurospora crassa has two H3K36 KMTs (ASH1 and SET-2) with distinct properties. ASH1 appears essential for viability but a catalytically inactive ash1(Y888F) mutant is viable with severely compromised growth. SET-2 deletion causes dramatic loss of H3K36me2 with minor growth impairment. RNAPII-associated SET-2 is responsible for nearly all H3K36me3, while ASH1 has weak H3K36me3 activity in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30-C41 are well-supported by multiple experimental approaches including western blots (Figure 1E-G), growth assays (Figure 1C-D), and genetic analyses. The data consistently show that N. crassa has two H3K36 KMTs with distinct catalytic activities and phenotypes. The inference that ASH1 has weak H3K36me3 activity is supported by residual H3K36me3 signal in set-2 mutants that is lost in double mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ASH1 and SET-2 catalyze H3K36me2 in distinct genomic domains. ASH1-catalyzed H3K36me2 marks silent or poorly transcribed genes (~20% of genes) across promoters and gene bodies, while SET-2-catalyzed H3K36me2 marks moderately and highly transcribed genes (>80% of genes) predominantly in gene bodies. H3K36me is excluded from constitutive heterochromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C53 are strongly supported by genome-wide ChIP-seq data (Figure 2) showing distinct localization patterns of ASH1- and SET-2-catalyzed H3K36me2. The complementary distribution of the two marks and their correlation with transcriptional activity is clearly demonstrated. Statistical significance (p<10^-4) is provided for the differential marking patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ASH1 catalytic activity is critical for repression of poorly transcribed genes. The ash1(Y888F) mutant shows predominantly gene up-regulation (1261 up, 228 down), with ASH1-marked genes almost exclusively up-regulated. SET-2-comarked ASH1 genes are significantly up-regulated upon ASH1 inactivation, while SET-2-unmarked ASH1 genes show little change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 are well-supported by RNA-seq data (Figure 3) showing specific derepression of ASH1-marked genes in the ash1(Y888F) mutant. The differential response of SET-2-comarked versus unmarked genes provides strong evidence for the functional relationship between ASH1-mediated repression and transcriptional activity. Statistical analyses support the significance of these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "ASH1-marked chromatin is characterized by H3K27me2/3-competency. Nearly all (220/232) H3K27me2/3 domains overlap with ASH1-catalyzed H3K36me2, with 30% of ASH1-marked genes co-marked by H3K27me2/3. Experimentally-induced H3K27me2/3 (in \u0394npf mutants and telomere repeat insertions) selectively spreads to ASH1-marked chromatin. The marks exist as asymmetric modifications on the same or adjacent nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C74 are strongly supported by ChIP-seq data (Figure 4) showing extensive overlap between ASH1-catalyzed H3K36me2 and H3K27me2/3. The experimental manipulations (\u0394npf and telomere insertions) provide compelling evidence that ASH1-marked chromatin is H3K27me2/3-competent. The inference about asymmetric modifications is supported by prior mass spectrometry data (C67) and is consistent with the observed overlap patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C102",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "ASH1 catalytic activity modulates H3K27me2/3 accumulation both positively and negatively. ASH1-catalyzed H3K36me2 is independent of H3K27me2/3, but ASH1 inactivation causes loss of H3K27me2/3 at ~180 genes and gain at ~128 genes. Loss of H3K27me2/3 is accompanied by H3K27ac accumulation and gene derepression. New H3K27me2/3 domains in ash1 mutants are delineated by regions normally marked with ASH1-catalyzed H3K36me2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85, C102, C105-C107 are well-supported by ChIP-seq data (Figure 5) showing bidirectional effects of ASH1 on H3K27me2/3. The independence of ASH1-catalyzed H3K36me2 from H3K27me2/3 is demonstrated in double mutants (Figure 5\u2014figure supplement 1). The observation that both gains and losses of H3K27me2/3 occur in ash1 mutants, with changes restricted to ASH1-marked regions, provides strong evidence for the dual role of ASH1 in modulating H3K27me2/3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C28",
+      "C29"
+    ],
+    "result": "Background on H3K36me pathway: H3K36me largely results from RNAPII-associated KMTs but most eukaryotes have additional RNAPII-independent KMTs including ASH1 orthologs. H3K36me is associated with euchromatin and active genes, though it can recruit repressive chromatin machinery. In metazoans, the pathway involves division of labor between RNAPII-dependent and -independent KMTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C11-C22, C28-C29 represent established knowledge in the field, supported by appropriate citations to prior literature. These claims provide necessary context for understanding the current work and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The H3K36me pathway is clinically significant, underlying fundamental genomic processes and frequently disturbed in cancer. Mutations in H3 genes and H3K36 KMTs/demethylases are implicated in pediatric cancers and malignant transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by appropriate citations to prior literature establishing the clinical significance of the H3K36me pathway. These claims provide important motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Discussion of ASH1 targeting and mechanism: ASH1 has an AT-hook that might interact with A/T-rich DNA, though H3K36me is excluded from constitutive heterochromatin. ASH1-catalyzed H3K36me appears to be the predominant repressive modification of poorly transcribed genes. The mechanism likely involves nucleosome positioning and histone deacetylation through RPD3S-like complexes, representing a transcription-independent repression mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C99 mix speculation (C86, C91, C96, C108) with established knowledge (C87, C90, C93-C95, C97-C99) and data-supported inferences (C88, C89, C92). While the speculation is reasonable and based on known mechanisms in other organisms, the proposed mechanism for ASH1-mediated repression through RPD3S-like complexes lacks direct experimental validation in this study. The essentiality of HDA-3 (C97) makes testing this hypothesis challenging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C108",
+      "C109"
+    ],
+    "result": "Discussion of ASH1-PRC2 relationship: Neurospora PRC2 is similar to metazoan PRC2 but lacks PRC1 components. Prior work in Drosophila suggested ASH1 opposes PRC2, consistent with in vitro inhibition of PRC2 by H3K36me. The bidirectional effects observed may reflect different PRC2 forms or differential histone modifications. Similar H3K27me2/3-H3K36me cross-talk has been observed in embryonic stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101, C103-C104, C109 are supported by appropriate citations. Claim C108 is speculation but is clearly presented as such and is reasonable given the data. The discussion appropriately contextualizes the findings within prior literature and acknowledges the complexity of ASH1-PRC2 interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Model summary: Neurospora genes are divided into two compartments based on H3K36me source. Active genes have SET-2-catalyzed H3K36me2/3 in gene bodies, while silent genes have ASH1-catalyzed H3K36me2/3 in large domains. H3K36me acts repressively in both cases - protecting active genes from cryptic transcription and blocking transcription at inactive genes. ASH1-modified chromatin can be further modified with H3K27me2/3 by PRC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 represent a synthesis of the experimental findings into a coherent model. The model is well-supported by the ChIP-seq and RNA-seq data presented throughout the manuscript. The dual repressive function of H3K36me is supported by both the current data and prior literature (C112 cites Li et al., 2007b).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Abstract summary: SET-2 marks active genes while ASH1 marks and represses inactive genes. ASH1-marked chromatin can be further modified by H3K27 methylation, and ASH1 activity modulates H3K27me2/3 accumulation bidirectionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 from the abstract accurately summarize the major findings that are supported by the detailed experimental data presented in the results section. These claims are validated by the comprehensive ChIP-seq and RNA-seq analyses.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "TRIM21 exhibits low genetic variation in human populations, with 277 rare missense variants (<1% MAF) identified in gnomAD and no common variants, consistent with purifying selection. The gene is more invariant than HDAC and similar to actin, with 22 rare variants identified in the 1000 Genomes Project.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C32 provide comprehensive population genetics data from gnomAD and 1000 Genomes Project showing TRIM21's low variation. The absence of common variants (C20) and comparison with other genes (C21) support the purifying selection interpretation. Data are from large, well-established databases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "TRIM21 shows different evolutionary patterns compared to related immune genes STING, TRIM5, and TRIM20, which exhibit positive selection and common variants. This difference is consistent with TRIM21's indirect viral recognition via conserved antibody Fc regions versus direct pathogen binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 establish evolutionary context by comparing TRIM21 to related genes under positive selection. The mechanistic explanation (C25-C27) linking binding mode to selection pressure is well-reasoned and supported by citations. The comparison strengthens the interpretation of TRIM21's conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Computational prediction algorithms show variable performance on TRIM21 variants, with CADD, REVEL, and MetaLR predicting only F446I as deleterious, while SIFT and PolyPhen-2 predict more variants (4/21 and 7/21 respectively). Predictions are sensitive to database version, with older databases yielding more deleterious predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 document systematic comparison of prediction algorithms with clear quantitative results. The database version effect (C37) is an important methodological finding. However, the true accuracy of these predictions requires experimental validation (addressed in later results).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C117"
+    ],
+    "result": "Most TRIM21 PRYSPRY variants maintain wild-type IgG binding affinity (9.4 nM), with K455E showing slightly reduced binding (12 nM) and A390V and Q470K showing enhanced binding (1.7 and 1.2 nM respectively). Binding stoichiometry is 2:1 as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C117 present ITC binding data showing most variants preserve function. The measurements are quantitative with appropriate controls and consistent with known binding mode (C117). This contradicts some computational predictions, highlighting the value of experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50"
+    ],
+    "result": "PRYSPRY variants show substantial differences in protein stability, with wild-type having Tm ~48\u00b0C, N297H showing increased stability (+2\u00b0C), and A390V, G440R, and F446I showing reduced stability. F446I is most unstable (\u0394Tm ~-10\u00b0C) and has severely reduced expression, consistent with its buried core position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46, C49-C50 provide comprehensive stability data using DSF and expression analysis. The correlation between stability, expression, and structural position (C50) is well-established. The dramatic effect of F446I is particularly well-documented across multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "REVEL and MetaLR show remarkable correlation with experimentally determined protein stability (\u0394\u0394G), correctly identifying and ranking deleterious PRYSPRY variants. CADD also performs well, while SIFT, PolyPhen-2, and MutationAssessor show lower accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C90-C93 demonstrate strong correlation between predictions and experimental stability data (Figure 4C). The ranking ability (C48, C93) is particularly notable. This validates specific algorithms and suggests pathogenicity predictors capture stability effects well for globular domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "A native TRIM21 promoter-driven lentiviral system successfully reconstitutes endogenous expression levels and interferon responsiveness in knockout cells. Most variants express within 2-fold of wild-type, except A390V, G440R, and F446I which show reduced expression correlating with thermostability (R\u00b2=0.72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 describe a novel expression system validated across multiple cell lines with appropriate controls. The correlation between cellular expression and in vitro stability (C58) strengthens confidence in both measurements. This system addresses a key limitation of overexpression studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Most TRIM21 variants preserve wild-type neutralization activity. Expression level partially explains activity variation (R\u00b2=0.36), but intrinsic stability is a better predictor (R\u00b2=0.63 for PRYSPRY). A390V is an outlier, maintaining activity despite reduced stability, possibly due to enhanced IgG binding. F446I activity defect is likely entirely due to instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 present comprehensive neutralization data with correlation analysis. The A390V outlier (C65-C67) is well-characterized and the stability-activity trade-off explanation (C66) is reasonable given the binding data. The F446I interpretation (C62-C63) is supported by IFN-\u03b1 rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Temperature-dependent neutralization assays show that less stable PRYSPRY variants (A390V, G440R, F446I) function better at lower temperatures (33\u00b0C) and lose activity more rapidly at elevated temperatures (39.5\u00b0C) compared to wild-type. These differences occur without changes in protein expression levels, indicating direct effects on protein folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 demonstrate physiologically relevant temperature effects with appropriate controls (C74). The data directly link in vitro thermostability to cellular function across a temperature range. This is important for understanding variant effects in different body sites and during fever.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Most TRIM21 variants maintain NF-\u03baB signaling activity, with some showing enhanced activity. Overall correlation with expression is low (R\u00b2=0.25), but correlation within PRYSPRY variants is high (R\u00b2=0.97), suggesting stability impacts signaling. Even A390V shows reduced signaling despite maintaining neutralization activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 show signaling is generally preserved but more sensitive to perturbation than neutralization (C80), consistent with prior work. The domain-specific correlation patterns (C78-C79) suggest different mechanisms of robustness. The A390V result highlights functional trade-offs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Heterozygous variant lymphoblastoid cell lines from 1000 Genomes volunteers maintain wild-type neutralization activity despite lower TRIM21 expression, indicating one functional copy is sufficient. Non-functional variants (R234*, F446I) show no dominant negative effects, suggesting deleterious TRIM21 mutations are autosomal recessive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 provide critical validation using naturally occurring heterozygous variants. The lack of dominant negative effects (C83-C84) is demonstrated in both LCLs and engineered cells. The autosomal recessive conclusion (C85) is well-supported and has important implications for disease genetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "CRISPR-generated heterozygous and homozygous variants confirm ectopic expression results. R118Q shows no functional defect in either state. Heterozygous R234* maintains neutralization and partial signaling activity, while homozygous R234* is completely non-functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 provide independent validation using gene editing with both heterozygous and homozygous clones. Results are consistent with LCL data (C87) and ectopic expression (C89), strengthening confidence in all three experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Prediction accuracy varies by domain architecture: PRYSPRY (globular domain) variants are accurately predicted, with A390V, G440R, and F446I correctly identified as impactful. However, RING and B-Box (Zn-finger) variants like G47R and R121C are incorrectly predicted as deleterious but show wild-type function, consistent with gradient robustness in dynamic domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 identify an important pattern in prediction accuracy related to protein structure. The domain-specific differences are well-documented experimentally and the gradient robustness explanation (C100) is mechanistically reasonable, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Many TRIM21 variants maintain function despite destabilizing mutations, consistent with protein robustness and threshold models. A390V exemplifies a stability-activity trade-off, with enhanced binding compensating for reduced stability. Loss of protein stability is a major cause of dysfunction and is predictable for globular domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C108 synthesize experimental findings into broader principles of protein evolution and variant effects. The A390V case study (C104-C105) is well-documented. The stability-as-predictor conclusion (C106-C108) is supported by correlation data, though generalization beyond TRIM21 requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "TRIM21 function is maintained in most rare variants and shows evidence of purifying selection. More frequent variants are less likely to be deleterious than rare variants or random mutations. No homozygous loss-of-function variants exist in gnomAD, suggesting fewer than 1 in 982 million individuals lack TRIM21 activity, making GWAS-based inference of TRIM21 importance impossible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 integrate population genetics with functional data to draw evolutionary and epidemiological conclusions. The calculation of homozygous loss-of-function frequency (C115) is based on sound population genetics principles. The GWAS limitation (C116) is a logical inference from the extreme rarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Pathogenicity predictors may be useful for modeling mutation effects on stability in globular proteins. Zn-finger domains may represent a distinct category with both threshold and gradient robustness, with catastrophic effects for chelating residue mutations but tolerance elsewhere. Predictors may capture stability better than function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94, C101-C103 are largely speculative (marked as SPECULATION in evidence). While the observations about Zn-fingers are interesting, they are not directly tested. The generalization to other proteins (C94) requires validation beyond TRIM21. These are reasonable hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Rare missense variants are abundant in human genomes (85% <0.5% MAF, 200-300 per individual) and thought to contribute to missing heritability. They are more likely to be functionally damaging than common variants due to limited purifying selection, with estimates suggesting 40% of rare variants are damaging versus 5% of common variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 establish the scientific context through citations to established literature. These are background claims supported by prior work rather than new findings from this study. They appropriately frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Computational prediction of variant pathogenicity has shown poor correlation with disease in some studies (CFTR, BRCA1/2). Predictors are less accurate at non-conserved sites and give false positives. Only 20% of computationally predicted deleterious variants showed phenotypes in mice, and within-species variants are more often predicted deleterious than between-species variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 provide important context from prior studies motivating the need for experimental validation. These are well-cited background claims that justify the current study's approach. They are not new findings but establish the problem being addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C51",
+      "C52",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "TRIM21 is a cytosolic antibody receptor that mediates proteasomal degradation of antibody-coated pathogens and activates NF-\u03baB signaling. The RING domain is an E3 ubiquitin ligase regulated by the autoinhibitory B-Box. The native promoter system properly recapitulates TRIM21 localization and virus detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C51-C52, C118-C122 describe established TRIM21 biology and validate the expression system. Most are background knowledge or methodological validation rather than new biological findings. The colocalization data (C119-C120) validates the expression system but is not a primary result.",
+    "result_type": "MINOR"
+  }
+]

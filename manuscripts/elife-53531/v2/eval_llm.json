@@ -1,0 +1,438 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors developed and validated nuclear patch-clamp electrophysiology as a method to study InsP3R channels in their native ER membrane environment. This technique exploits the continuity between the ER and outer nuclear membrane, allowing rigorous simultaneous control of [Ca2+] on both sides of the membrane in multiple configurations (on-nucleus, luminal-side-out, and cytoplasmic-side-out).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C30-C33 establish the methodological foundation with appropriate citations (Dingwall and Laskey 1992; Mak et al. 2005, 2013a,b). The technique is well-documented in prior publications and illustrated in Figure 1. The approach addresses a fundamental limitation (C31) that intracellular ER membranes are inaccessible to patch pipettes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34"
+    ],
+    "result": "In the experimental conditions used, electrical currents through open InsP3R channels are overwhelmingly carried by K+ rather than Ca2+, due to the low Ca2+/K+ selectivity ratio (15.2:1) and the much higher K+ concentration (140 mM) compared to Ca2+ (70 nM to \u2264600 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C34 are supported by citation to Vais et al. 2010a for the selectivity ratio and logical inference from the ion concentrations used. This is a critical methodological point that enables study of channel gating kinetics independent of Ca2+ flux effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Previous work (Vais et al. 2012) demonstrated that InsP3R channel activity can be modulated by [Ca2+]ER indirectly via Ca2+ flux feed-through effects, but these effects can be completely eliminated by sufficient cytoplasmic Ca2+ chelation (5 mM diBrBAPTA). With adequate buffering, switching [Ca2+]ER between 70 nM and 300 \u03bcM had no effect on channel activity, ruling out direct regulation by intrinsic luminal Ca2+-binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 are well-supported by citations to specific figures in Vais et al. 2012 and illustrated in Figure 2. The experimental design with strong Ca2+ chelation is appropriate to distinguish feed-through effects from direct luminal effects. This establishes critical negative controls for the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Previous studies of InsP3R gating used bath solutions with low [Ca2+] and no MgATP, causing [Ca2+]ER to equilibrate at unphysiologically low levels through passive leaks. This would have prevented detection of regulation by peripheral luminal proteins that interact with InsP3R only at high, physiological [Ca2+]ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 provide important context supported by citations (Mak and Foskett 2015; Lanini et al. 1992). The inference in C11-C12 is logical and identifies a gap in previous experimental approaches, motivating the current study. This represents sound scientific reasoning about experimental limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "With intact ER-luminal milieu and physiological [Ca2+]ER (~300 \u03bcM achieved by SERCA activity), InsP3R activity is profoundly suppressed by a Ca2+ flux-independent mechanism. This inhibition is abrogated when patches are excised to luminal-side-out configuration and perfused with low [Ca2+], and cannot be restored by subsequent perfusion with 300 \u03bcM Ca2+, suggesting the inhibitory factor is a loosely-associated peripheral luminal protein that is lost upon excision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C35-C39 present the core discovery, supported by extensive patch-clamp data in Figure 3. The experimental design with on-nucleus vs. excised configurations is appropriate. The inference about a peripheral protein (C38) is reasonable given the irreversible loss of inhibition. Controls with thapsigargin (Figure 3\u2014figure supplement 1) confirm SERCA involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The peripheral luminal protein-mediated inhibition affects endogenous InsP3R channels from multiple cell types (mouse N2a, rat PC-12, chicken DT40) expressing different InsP3R isoforms. Despite different maximal Po values in 0-MgATP conditions, all channels showed strong and similar suppression (85-92% Po reduction) in high [Ca2+]ER, suggesting the inhibitory protein is broadly expressed and interacts with all three InsP3R isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by data in Figure 4 and appropriate citations for cell type characterization. The consistency of inhibition across cell types and isoforms (C45-C46) strengthens the conclusion. However, the number of replicates per cell type is not clearly stated, which is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors identified that the pL2 region (a conserved sequence in the L2 luminal loop of InsP3R) interacts with the peripheral luminal protein to suppress channel activity. Using cyto-out patch-clamp with pL2 peptides in the pipette solution, they demonstrated that the peptide completely abolished inhibition, indicating the inhibitory effect is mostly or completely mediated by pL2-PLP interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by structural information (Fan et al. 2015) and experimental data in Figure 5. The peptide competition experiment (C48-C49) is well-designed and provides strong evidence for the interaction site. The logic of the experimental approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Mass spectrometry analysis of proteins pulled down by mpL2 peptide-coupled beads identified the annexin (ANX) protein family as candidates. Five of 12 ANX family members showed statistically significant preferential binding to mpL2 over scrambled peptide. Annexins are ubiquitously expressed, Ca2+-dependent phospholipid-binding proteins with Kd ~25 \u03bcM to 1 mM for Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by mass spectrometry data (Figure 6\u2014source data 1) and appropriate citations (Raynal and Pollard 1994; Gerke and Moss 2002). The statistical analysis using a Bayesian hierarchical model is sophisticated and appropriate for the small sample size (n=3 cows). The LFSR threshold of 0.2 is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Although annexins are known to be cytoplasmic proteins, multiple studies have reported their presence in locations topologically equivalent to the ER lumen. Immunofluorescence microscopy of permeabilized cells showed ANXA1 co-localized with ER marker calnexin in the nuclear envelope in A549, HeLa, and Panc-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by extensive literature citations and immunofluorescence data in Figure 6A-D. The digitonin permeabilization approach to remove cytoplasmic ANXA1 is appropriate. However, the authors acknowledge (C97) that ER localization beyond the nuclear envelope was unconvincing, which is an important limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Capture ELISA experiments detected robust extracellular ANXA1 secreted from HEKtsA201 cells over 3 days, while the non-secreted \u03b2-actin was only detected in cell lysates. This suggests ANXA1 was present in the ER lumen en route to secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by ELISA data in Figure 6E. The \u03b2-actin control (C58) appropriately confirms cell integrity. However, the inference that secreted ANXA1 indicates ER luminal localization (C59) is indirect\u2014secreted proteins could potentially bypass the ER or be secreted via non-classical pathways. This is a reasonable but not definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "Recombinant ANXA1 (1 \u03bcM) had no effect on maximally-stimulated InsP3R channel Po at [Ca2+]ER between 70 nM and 55 \u03bcM, but caused abrupt Po reduction at [Ca2+]ER >55 \u03bcM. The half-maximal inhibitory [Ca2+]ER (Kinh) was 260 \u00b1 14 \u03bcM with Hill coefficient 2.3 \u00b1 0.3, within physiological [Ca2+]ER range (100 \u03bcM to 1 mM). ANXA1 inhibited Po mainly by increasing channel-closed durations without affecting channel number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C63-C64 are supported by extensive single-channel data in Figure 7A-I. The Hill equation fitting is appropriate and parameters are clearly reported. The Kinh value aligns well with known Ca2+ affinities of annexins and physiological [Ca2+]ER. The kinetic analysis (C64) provides mechanistic insight. Controls without Ca2+ flux effects (Figure 7\u2014figure supplement 1) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "ANXA1 on the cytoplasmic side of InsP3R had no effect on channel activity, demonstrating that ANXA1 inhibits InsP3R exclusively from the luminal side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by data in Figure 7J-L showing no effect of cytoplasmic ANXA1. This is an important control that establishes sidedness of the effect and is consistent with the proposed mechanism of luminal regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The L2 peptide, but not scrambled sL2 peptide, completely abrogated ANXA1-mediated inhibition of InsP3R activity, indicating that suppression is specifically mediated by the L2 region of InsP3R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by data in Figure 8. The peptide competition experiment with appropriate scrambled control provides strong evidence for specific L2-ANXA1 interaction. This links the mass spectrometry findings to the functional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Native peripheral luminal protein (PLP) and recombinant ANXA1 show similar features in mediating [Ca2+]ER-dependent InsP3R inhibition: both require high [Ca2+]ER, both are blocked by L2 peptides, and neither inhibits at 70 nM [Ca2+]ER. However, native PLP caused stronger inhibition than 1 \u03bcM ANXA1 at 300 \u03bcM [Ca2+]ER, suggesting endogenous luminal ANXA1 concentration is effectively >1 \u03bcM and/or other factors enhance sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by comprehensive comparison in Figure 9. The similarities strongly suggest ANXA1 is the major PLP (C70), though the quantitative difference (C71) indicates complexity. The speculation about concentration or cofactors is reasonable but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Among annexins identified by mass spectrometry, only ANXA1 (not ANXA6 or ANXA2) inhibited InsP3R channel gating, and this effect was independent of N-terminal His tag presence. The N-terminal peptide of ANXA1 alone had no effect, suggesting the N-terminal domain mediates InsP3R interaction but the C-terminal domain is needed to localize ANXA1 to the ER membrane surface to increase local concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by data in Figure 10 and Figure 10\u2014figure supplement 1. The specificity for ANXA1 (C72) is important given multiple annexins were identified. The His-tag control (C73-C74) is appropriate. The inference about domain functions (C77) is reasonable based on known annexin structure (Gerke and Moss 2002; Raynal and Pollard 1994) and the peptide experiment (C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "siRNA knockdown of ANXA1 to ~35% of wild-type levels in HEKtsA201 cells enhanced both the magnitude (\u0394Rmax) and rate (1/\u03c4) of carbachol-induced Fura-2 fluorescence changes, suggesting endogenous ANXA1 inhibits InsP3R-mediated Ca2+ release in intact cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by Western blot and fluorimetry data in Figure 11A-E. The knockdown efficiency (~65%) is documented. The enhancement of both parameters (C79) in ANXA1 knockdown cells provides functional validation in intact cells. However, the effects are modest, which the authors acknowledge (C99-C100) may be due to incomplete knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In HeLa cells, ANXA1 knockdown had no effect on responses to saturating (100 \u03bcM) histamine, but enhanced responses to sub-saturating (10 \u03bcM) histamine, increasing both the fraction of responding cells and maximal R/R0. ANXA1 knockdown also increased the fraction of cells showing oscillatory Ca2+ signals (random spiking or periodic oscillations) in 10 \u03bcM but not 100 \u03bcM histamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by imaging data in Figure 11F-K. The dose-dependent effect (stronger at sub-saturating agonist) is consistent with ANXA1 acting as a brake on InsP3R activity. The classification of oscillatory patterns is qualitative but reasonable. Sample sizes appear adequate though exact numbers per condition are not always clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "TIRF microscopy of Ca2+ puffs in HEK293 cells showed that ANXA1 knockdown increased both the number and amplitude of Ca2+ puffs generated by photolysis of caged InsP3, regardless of whether sub-saturating (50 ms) or saturating (150 ms) UV flash was used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by TIRF imaging data in Figure 11L-P. The automated detection algorithm with visual verification is appropriate. The effect on elementary Ca2+ release events provides strong support for ANXA1 regulation at the single-channel cluster level. Statistical significance is clearly indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Collectively, the cellular Ca2+ signaling experiments (global responses, oscillations, and local puffs) suggest that endogenous luminal ANXA1 inhibits InsP3R-mediated Ca2+ release in vivo, in strong agreement with the in vitro single-channel data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 appropriately synthesizes results from C78-C86. The convergence of evidence from multiple experimental approaches (population fluorimetry, single-cell imaging, TIRF microscopy of puffs) at different scales strengthens the conclusion. The agreement between in vitro and in vivo effects is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study establishes that physiological [Ca2+]ER in the normally-replete ER lumen strongly inhibits InsP3R channel activity through a mechanism that is not mediated by direct Ca2+ binding to luminal sites on InsP3R or by flux-through effects, but rather by direct interaction of InsP3R with a lumen-localized membrane-associated protein, likely ANXA1, via the L2 region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 represent the main conclusions, well-supported by the comprehensive data presented. The exclusion of alternative mechanisms (C89) is based on appropriate controls. The identification of ANXA1 as the likely protein (C90) is supported by multiple lines of evidence, though some uncertainty remains (acknowledged in C96-C100). The L2 interaction site (C91) is well-established by peptide competition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The L2 sequence was assigned to a different location in a recent cryo-EM structure (Paknejad and Hite 2018) showing closed channels. The authors speculate that L2 topology may differ in functionally distinct channel states, with some states enabling luminal ANXA1 interaction, which could explain why ANXA1 reduces but does not completely abrogate InsP3R activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 acknowledge a structural discrepancy and offer speculation (C95) to reconcile it. The speculation is reasonable but lacks direct experimental support. This represents an important limitation that requires structural studies of open channels to resolve. The observation that ANXA1 doesn't completely block activity (C94) is well-documented but the mechanistic explanation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors acknowledge several limitations: inability to co-immunoprecipitate InsP3R and ANXA1, unconvincing ER localization by immunofluorescence (possibly due to low luminal abundance), and modest effects of ANXA1 knockdown (possibly due to only ~65% reduction in expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 represent honest acknowledgment of experimental limitations. The inability to co-IP (C96) is concerning but could have technical explanations. The weak ER immunofluorescence (C97) is a significant limitation for definitively establishing luminal localization. The modest knockdown effects (C99-C100) are appropriately attributed to incomplete knockdown. This transparency is commendable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors distinguish their findings from other reported ER-luminal regulators of InsP3R: chromogranins and BiP/Grp78 enhance activity, while ERp44 inhibits but with opposite [Ca2+]ER dependence (inhibition decreases with increasing [Ca2+]ER >100 \u03bcM) and isoform specificity (InsP3R-1 only), unlike the peripheral luminal protein identified here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 appropriately contextualize the findings within existing literature, supported by citations (Yoo and Lewis 2000; Higo et al. 2010, 2005). The comparisons highlight the novelty of the current findings. The distinctions from ERp44 (C104-C105) are particularly important for establishing this as a distinct regulatory mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose a mechanism for [Ca2+]ER-dependent ANXA1 regulation based on known annexin properties: at low [Ca2+]ER, ANXA1 has low phospholipid affinity and remains in bulk ER lumen, making InsP3R interaction entropically unfavorable; at high [Ca2+]ER (>100 \u03bcM), ANXA1 C-terminus binds phospholipids with high affinity, restricting it to the membrane surface and increasing chances for InsP3R interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 present a mechanistic model well-grounded in established annexin biochemistry (Gerke and Moss 2002; Raynal and Pollard 1994). The model (C110-C112) logically explains the [Ca2+]ER dependence observed experimentally and is consistent with the requirement for the C-terminal domain (C77). This represents sound scientific reasoning integrating known protein properties with new functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The inhibition by peripheral luminal protein/ANXA1 is very potent (limiting Po to ~0.1 at \u2265300 \u03bcM [Ca2+]ER, comparable to high-[Ca2+]i inhibition) and occurs within the physiological [Ca2+]ER range (250 \u03bcM-1 mM in replete stores). The apparent Ca2+ affinity of ANXA1-mediated inhibition (~250 \u03bcM) suggests relief of inhibition will occur under conditions that activate STIM1 and store-operated Ca2+ entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 are supported by experimental data (Figure 7F) and appropriate literature citations (Vais et al. 2012; Zampese and Pizzo 2012; Suzuki et al. 2014; Stathopulos et al. 2008). The comparison to high-[Ca2+]i inhibition (C115) provides important context for the magnitude of the effect. The physiological relevance (C116-C120) is well-argued and connects to store-operated Ca2+ entry mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors speculate that ANXA1/PLP could explain why most InsP3R channels (~95%) in cells are unresponsive to InsP3, with responsive channels limited to specific clusters. In this model, most InsP3R are normally associated with PLP (rendering them unresponsive), but channels in some clusters lose PLP association (possibly due to unique membrane phospholipid composition or L2 sequence exposure) and become 'licensed' to respond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C125 present an interesting hypothesis connecting the findings to the known phenomenon of InsP3R clustering and selective responsiveness (Lock et al. 2019; Keebler and Taylor 2017; Thillaiappan et al. 2017). However, this remains speculation (C123-C125) without direct experimental evidence. Testing this model would require experiments examining ANXA1 association with InsP3R in different cellular locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors speculate that ANXA1 inhibition could shape intracellular Ca2+ signals by reducing Ca2+ release (through shortened open durations and lengthened closed durations), hampering coordination of channels to generate puffs, and serving as a fail-safe mechanism to prevent excessive Ca2+ release from the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C129 present reasonable speculation about physiological roles, with C127 supported by kinetic data (Figure 7H-I). However, C128-C129 remain hypothetical. The puff data (C85-C86) provide some support, but direct evidence for effects on puff coordination and the proposed fail-safe function is lacking. These represent testable hypotheses for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors speculate that at reduced [Ca2+]ER, PLP regulation could preserve Ca2+ signal fidelity by compensating for reduced Ca2+ flux: between 100-600 \u03bcM [Ca2+]ER, the 6-fold reduction in Ca2+ flux could be offset by ~6.6-fold increase in Po as PLP inhibition is relieved, maintaining Ca2+ release despite falling [Ca2+]ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C132 present an interesting quantitative speculation based on data in Figure 7F. The calculation (C131) is reasonable, but this remains a hypothesis about physiological function. Testing would require measuring actual Ca2+ release amounts at different [Ca2+]ER levels in intact cells, which is technically challenging. This represents an interesting prediction of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "The DT40-r3 cell line stably expresses only recombinant rat type 3 InsP3R in DT40-KO cells. Using single-channel conductance measurements and an empirical equation, the authors estimated [Ca2+]ER to be ~300 \u03bcM in intact isolated DT40-r3 nuclei in the presence of bath MgATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 describe important methodological details supported by citation (Mak et al. 2005) and previous work (Vais et al. 2010a). The approach of using conductance to estimate [Ca2+]ER (C134) is validated by prior calibration. This provides confidence in the [Ca2+]ER values used throughout the study.",
+    "result_type": "MINOR"
+  }
+]

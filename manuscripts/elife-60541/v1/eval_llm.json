@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C29",
+      "C30",
+      "C33",
+      "C90"
+    ],
+    "result": "Different oncogenes induce two distinct ERK activity patterns (pulsatile or sustained) that correlate with opposing cellular behaviors: pulsatile ERK correlates with proliferation while sustained ERK correlates with cell cycle arrest and increased migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C19-C22, C29-C30, and C33 collectively demonstrate that oncogene expression produces two qualitatively different ERK dynamics patterns with opposing phenotypes. The data in Figure 1C-D shows clear differences in ERK activity patterns, peak counts, nuclear localization, and cell behaviors (proliferation vs. arrest) across multiple oncogenes. The correlation between dynamics and phenotype is consistent across perturbations at different pathway levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ERK activity and localization are not always correlated; ERK nuclear accumulation occurs only with sustained activity, and B-RafWT vs B-RafV600E produce different dynamics despite similar expression levels, suggesting feedback regulation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by data in Figure 1\u2014figure supplement 1-2 showing MEK1/2WT can change ERK localization without changing activity, and that B-RafWT and B-RafV600E have similar expression but different dynamics. The mechanistic interpretation regarding feedback regulation (C27-C28) is reasonably inferred from the known insensitivity of B-RafV600E to ERK feedback and the observed dynamics differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "ERK dynamics-dependent cell behaviors occur independently of the point in the signaling cascade where perturbations are introduced, suggesting ERK itself (rather than alternate pathways) is responsible for the observed phenotypic differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 and C34 are supported by the observation that perturbations at different cascade levels (EGFR, Raf, MEK) produce similar dynamics-phenotype correlations (Figure 1D). This logic effectively rules out pathway-specific effects and implicates ERK dynamics as the key determinant. The inference is well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "At 24 hours post-oncogene expression, cells show increased migration without EMT markers (retain E-Cadherin, no N-Cadherin increase), indicating behaviors are distinct from or precede EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by immunofluorescence data in Figure 1\u2014figure supplement 3 showing E-Cadherin retention and absence of N-Cadherin upregulation at 24 hours, contrasting with TGF\u03b2-induced EMT controls. The conclusion that behaviors are distinct from or precede EMT is appropriately cautious given the time point examined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Sustained but not pulsatile ERK activity triggers ERK activity waves in neighboring cells, with specificity for ERK pathway (not p38/JNK), and similar waves occur after spontaneous cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37-C42 are well-supported by data in Figure 2 showing ERK waves only with sustained ERK conditions (B-RafV600E, MEK2DD) but not pulsatile conditions (B-RafWT, EGFR). Figure 2\u2014figure supplement 1 confirms specificity to ERK pathway and shows similar waves with cell death. The correlation between sustained dynamics and wave propagation is consistent across multiple oncogenes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ERK waves depend on ADAM17 in inducible cells and EGFR/AREG signaling in neighboring cells. ADAM17 decodes ERK dynamics to release AREG, which activates EGFR in neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C43-C46, and C50-C53 are strongly supported by genetic (ADAM17KO) and pharmacological (EGFR inhibitor, AREG blocking antibody) experiments in Figure 3. Mass spectrometry data (C50, Figure 3D) identifies AREG as the key ADAM17-dependent ligand. The mechanistic model is well-supported, though the speculation about ADAM17 phosphorylation kinetics (C47-C48) remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C94",
+      "C97"
+    ],
+    "result": "Sustained ERK activity in oncogenic cells promotes non-cell autonomous proliferation of neighboring cells (up to 10-fold increase), demonstrating that oncogenic mutations can have non-cell autonomous contributions to tissue growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C94, and C97 are supported by EdU incorporation data in Figure 4 showing substantial increases in neighboring cell proliferation in cocultures with sustained ERK-expressing cells. The magnitude (up to 10-fold) is clearly demonstrated, and the conclusion about non-cell autonomous effects is well-justified by the coculture experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C57",
+      "C95"
+    ],
+    "result": "Sustained ERK activity coordinates ADAM17- and EGFR-dependent directed migration of neighboring cells toward oncogenic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C57, and C95 are supported by migration angle analysis in Figure 5A showing directed migration toward B-RafV600E cells that is abolished by ADAM17 knockout or EGFR inhibition. The statistical analysis using subsampling and KS tests appropriately handles the large sample sizes. The directional nature of migration is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C70",
+      "C71",
+      "C72",
+      "C96",
+      "C101"
+    ],
+    "result": "Sustained but not pulsatile ERK activity leads to apical extrusion of oncogenic cells (91% by 24h), which requires ADAM17-EGFR signaling and resembles the EDAC mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C58-C59, C61-C65, C70-C72, C96, and C101 are well-supported by confocal imaging data in Figure 5 showing dynamics-specific extrusion that is abolished by blocking ADAM17-EGFR signaling. The quantification of extrusion efficiency (91% at 24h, C64-C65) and characterization as true extrusion rather than pseudostratification (C62-C63) are appropriately documented. The comparison to EDAC (C70) is reasonable given the similarities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C88",
+      "C109"
+    ],
+    "result": "During extrusion, polarized actin-containing basal protrusions form at the interface between oncogenic and neighboring cells in an EGFR-dependent manner, providing directional information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C88, and C109 are supported by live actin imaging data in Figure 5\u2014figure supplement 2 showing transient basal actin accumulation that is EGFR-dependent. The quantification of actin enrichment at leading edges vs. random borders provides good evidence for polarization. The conclusion about directional information is reasonably inferred from the spatial organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C84",
+      "C103",
+      "C104"
+    ],
+    "result": "S1P signaling has differential effects on extrusion: moderate effects on ERK-driven extrusion but greater effects on p38-driven extrusion, suggesting mechanistic differences between oncogenic and stress-induced extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C84, C103-C104 are supported by data in Figure 5\u2014figure supplement 2 and Figure 6\u2014figure supplement 4 showing that S1P inhibition has modest effects on MEK2DD extrusion but stronger effects on MKK3DD extrusion. The differential sensitivity is clearly demonstrated and the interpretation regarding mechanistic differences is reasonable, though the underlying mechanisms remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "p38 activation can also trigger ADAM17-dependent ERK waves, proliferation, migration, and extrusion. ERK activity is required in both oncogenic cells (sustained) and neighboring cells (pulsatile) for extrusion, as demonstrated by MEK inhibition blocking MKK3DD-induced extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 are well-supported by the MKK3DD experiments in Figure 6 showing that p38 activation produces similar non-cell autonomous effects through ADAM17. The key insight (C81-C83) that MEK inhibition blocks MKK3DD-induced extrusion definitively demonstrates that ERK activity in neighboring cells is required. The independence of ERK and p38 pathways in activating ADAM17 (C79-C80) is shown by p38 inhibitor experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C107",
+      "C108"
+    ],
+    "result": "Spatial organization of paracrine signaling is critical for extrusion: increasing oncogenic cell proportion or adding exogenous AREG (disrupting gradients) prevents directed migration and extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 and C107-C108 are supported by data in Figure 7 showing inverse correlation between oncogenic cell fraction and extrusion efficiency, and loss of directed migration/extrusion with exogenous AREG. These experiments effectively demonstrate the importance of localized signaling gradients. The proposed mechanism (C107) is well-supported by the experimental manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C113"
+    ],
+    "result": "Overall conclusion: ERK signaling dynamics and the ADAM17-EGFR axis differentially regulate cell autonomous (proliferation vs. arrest) and non-cell autonomous (neighboring cell proliferation, migration, extrusion) effects of oncogene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C113 represent the main conclusions that are well-supported by the comprehensive set of experiments. The distinction between pulsatile and sustained ERK dynamics as determinants of both cell-autonomous and non-cell autonomous behaviors is consistently demonstrated across multiple experimental systems and perturbations. The mechanistic link through ADAM17-EGFR signaling is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "KRASG12V induction did not result in apical extrusion to the extent observed for HRASG12V.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by data in Figure 5\u2014figure supplement 1 comparing KRASG12V and HRASG12V extrusion. However, the authors appropriately note that KRASG12V shows delayed sustained ERK activation, suggesting extrusion may occur at later timepoints. This is a minor observation that doesn't contradict the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The observed ERK dynamics-phenotype correlations (pulsatile\u2192proliferation, sustained\u2192arrest) match known cellular responses including oncogene-induced senescence (OIS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 appropriately contextualize the findings within existing literature on OIS. The correlation with known phenotypes strengthens the biological relevance of the dynamics-based classification. The authors appropriately acknowledge that their overexpression approach differs from in vivo point mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C100",
+      "C102",
+      "C105"
+    ],
+    "result": "Discussion points: Sustained ERK activates ADAM17 to release EGFR ligands (particularly AREG in mammary epithelial cells); ERK activation drives extrusion more efficiently than p38 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C100, C102, and C105 summarize key findings in the discussion. These are well-supported by the experimental data. The tissue-specific nature of EGFR ligand identity (C105) is appropriately noted as a caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C106",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Contextual claims: Prior work shows mosaic oncogene expression promotes WT cell proliferation in mouse epidermis; ERK gradients occur in development and homeostasis; the ADAM17-EGFR axis may have developmental roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C110-C111 appropriately cite relevant prior work. The speculative claims C99, C106, and C112 about potential roles in tumorigenesis and development are clearly marked as speculation and are reasonable extensions of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C43",
+      "C44",
+      "C47",
+      "C49",
+      "C56",
+      "C68",
+      "C74"
+    ],
+    "result": "Background claims from literature: MAPK alterations are common in cancer; ERK dynamics regulate cell behavior; ERK pathway mutations can cause OIS or EDAC; ADAM17 releases growth factors; p38 activates ADAM17.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C16, C43-C44, C47, C49, C56, C68, and C74 represent background knowledge appropriately cited from the literature. These provide necessary context for the study and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Methodological claims: MCF10A cells were engineered with ERK biosensors and doxycycline-inducible oncogene expression systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 describe the experimental system, which is clearly documented in Figure 1B and the methods section. The dual biosensor approach (ERK-KTR for activity, ERK-mRuby2 for localization) is well-validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C48",
+      "C85"
+    ],
+    "result": "Speculative mechanistic claims: ADAM17 phosphorylation kinetics may explain dynamics-specific activation; cell-autonomous ERK/p38 activation may underlie differences between oncogenic and stressed cell extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48 and C85 are explicitly speculative and not directly tested. While C48 is based on known ADAM17 properties (C47), the specific mechanism remains unproven. C85 is reasonable speculation based on differential S1P sensitivity but requires further investigation. These are appropriately presented as hypotheses rather than conclusions.",
+    "result_type": "MINOR"
+  }
+]

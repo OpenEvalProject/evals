@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C32",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Four distinct theta-gamma coupling states were identified in hippocampal CA1 using k-means clustering with k determined by community clustering. These states differed significantly in preferred frequency and/or theta phase during both awake and REM periods, and were characterized as slow gamma (S-gamma, ~36 Hz), medium gamma (M-gamma, ~99 Hz), early fast gamma (EF-gamma, ~128 Hz at -2.57 rad), and late fast gamma (LF-gamma, ~132 Hz at 2.12 rad).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25, C32, C37-C45 collectively demonstrate the identification of four TG states with robust statistical support (p<0.001, ANOVA with FDR correction). The clustering methodology is well-described (C22-C24, C32, C103), and the states show significant differences in both frequency and phase parameters. The consistency across awake and REM periods (C45) strengthens the finding. However, cross-validation accuracy was highly variable (0.30-0.96, C52), and ~20% of theta cycles showed features of multiple states (C49-C50), indicating some ambiguity in classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The four identified TG states correspond to previously reported slow and medium gamma, plus two novel subtypes of fast gamma (EF-gamma and LF-gamma) that differ in theta phase. S-gamma and M-gamma characteristics align with prior literature, while EF- and LF-gamma represent newly differentiated subtypes of fast gamma not previously distinguished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C104-C111 establish both replication of known TG states and novel findings. The S-gamma and M-gamma characteristics match prior reports (C104-C106 with citations to Colgin et al., 2009; Schomburg et al., 2014), providing validation. The distinction between EF- and LF-gamma based on theta phase (~quarter cycle difference, C44) and differential EC-CA1 coupling (C110) represents a novel contribution. The comparison to prior work is appropriately cited and the novel aspects are clearly identified (C79, C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C27",
+      "C53",
+      "C54",
+      "C55",
+      "C112"
+    ],
+    "result": "Rapid cycle-to-cycle switching between TG states occurs, with transition probabilities ranging from 0.15 to 0.36 and the probability of remaining in the same state ranging from 0.15 to 0.49, demonstrating that CA1 undergoes rapid TG state shifting with the network remaining in the same state less than half the time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C27, C53-C55, C112 demonstrate rapid state transitions using Markov chain analysis. The quantitative transition probabilities are provided with supporting figures (Figure 2B,C). The finding that networks remain in the same state <50% of the time is a direct consequence of the measured probabilities. This represents the first characterization of cycle-to-cycle TG state dynamics and is well-supported by the data, though the functional significance remains interpretive (C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "TG state occurrence and transitions differ across behavioral conditions. During track running compared to pre/post-track periods, S-gamma occurrence and transitions to S-gamma decreased (p<0.001), while M-gamma and EF-gamma occurrence and transitions increased. No differences were observed across early, middle, and late trials as novelty decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30, C56-C61 demonstrate behavior-dependent changes in TG states with strong statistical support (two-way ANOVA, p<0.001, FDR correction for 60 comparisons). The specific patterns (decreased S-gamma, increased M/EF-gamma during exploration) are clearly documented. However, the lack of novelty effects (C61) suggests the changes may reflect locomotion or task engagement rather than novelty per se. The functional interpretation linking these states to sensory processing (C114-C115) is reasonable but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C123",
+      "C124"
+    ],
+    "result": "During REM sleep, S-gamma occurred more frequently than other states during the first 20-30s (p<0.001), then gradually decreased and stabilized, while other gamma states remained stable. Weak evidence (q<0.1) suggested decreased S-gamma\u2192S-gamma and increased S-gamma\u2192LF-gamma transitions after track exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67, C123-C124 describe REM-specific TG dynamics. The early REM dominance of S-gamma is well-supported statistically (p<0.001, two-way ANOVA, C64). However, the post-track changes only reached significance with a weaker threshold (q<0.1, C63), limiting confidence in these effects. The functional interpretation linking S-gamma to memory consolidation or homeostasis (C123, C125) is speculative and appropriately presented as such. The limited sample size for some REM analyses (one animal for CA1-CA3 PPC, C72) is a notable limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The four TG states show distinct patterns of phase synchrony with CA3 and EC. S-gamma states had the strongest CA3-CA1 PPC in the slow gamma band (20-50 Hz) during both awake and REM periods. EC-CA1 PPC was strongest in M-gamma (60-80 Hz) and EF-gamma (100-140 Hz) states in medium and high gamma bands, respectively, and lowest during S-gamma states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29, C68-C79 demonstrate differential coupling patterns across TG states with strong statistical support (p<0.001, two-way ANOVA with FDR correction for 486 comparisons). The S-gamma/CA3 and M-gamma/EC associations replicate prior findings (C78), while the EF-gamma/EC coupling is novel (C79). However, the CA1-CA3 REM data comes from only one animal (C72), limiting generalizability. The interpretation that these patterns reflect distinct functional states (C77) is reasonable but remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C101"
+    ],
+    "result": "Neural firing properties differ across TG states. Neurons fired at lower rates in S-gamma for both interneurons and pyramidal cells. Place cells showed lower peak firing rates and spatial information in S-gamma compared to M-, EF-, and LF-gamma states (p<0.001). S-gamma occurred more frequently when animals were stationary, but speed did not account for differences in firing properties across states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C28, C80-C92, C101 demonstrate state-dependent neural coding with strong statistical support (one-way ANOVA, p<0.001, FDR correction). The lower spatial information in S-gamma is well-documented (C86-C87). The control for speed effects (C88-C89) strengthens the conclusion that TG states have intrinsic effects on coding. However, the spatial information of TG state occurrences themselves was very low (<1 bits/theta cycle, C90), indicating TG states are not spatially tuned, which is appropriately noted (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C132",
+      "C133"
+    ],
+    "result": "Phase precession differs across TG states. After controlling for spike counts, phase-position correlations were significantly higher in M-gamma and LF-gamma (p<0.05, q<0.1 with FDR correction), while no differences in phase precession slope were found across states. This indicates that spikes from M- and LF-gamma made significant contributions to theta phase precession.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100, C102, C132-C133 demonstrate differential phase precession across TG states with appropriate statistical controls. The key finding is that after controlling for spike counts (by random deletion to equalize numbers), M- and LF-gamma showed stronger phase-position correlations (C98-C99), while slopes did not differ (C96). This careful control for a potential confound (different spike numbers across states) strengthens the conclusion. However, the effect sizes are modest and only reached significance with a weaker threshold (q<0.1), suggesting the differences, while real, are subtle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Interneurons showed distinct spike-field phase synchrony patterns across TG states, with stronger modulation at 20-60 Hz during S-gamma and at 60-120 Hz during M-, EF-, and LF-gamma states. Pyramidal cell modulation did not vary significantly across TG states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 demonstrate differential interneuron modulation across TG states. The finding that interneurons show state-dependent modulation while pyramidal cells do not (C129) is interesting and well-documented (Figure 5B, Figure 5\u2014figure supplement 4). The interpretation that interneurons are more strongly driven by CA3 and EC gamma generators (C130) is reasonable given prior literature but remains somewhat speculative. The statistical support appears adequate though specific p-values are not provided for all comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The four TG states are distinct from each other based on correlation analysis. Most theta cycles (>50%) had intra-cluster correlations 0.15 higher than maximum inter-cluster correlations, indicating clear classification. However, ~20% of theta cycles had differences <0.05, suggesting some individual cycles share features of multiple TG states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C46-C51 provide validation of the clustering approach through correlation analysis. The finding that most cycles are clearly classified (C46-C48) supports the distinctness of the states, while the acknowledgment that ~20% of cycles show mixed features (C49-C50) demonstrates appropriate nuance. This mixed population could represent transitional states or genuine ambiguity in the classification scheme. The five-fold cross-validation (mentioned in methods) adds rigor to these assessments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Cross-validation accuracy for TG state classification across channels or animals was generally above chance (25%) but highly variable, ranging from 0.30 to 0.96.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 reports cross-validation results that show high variability in classification accuracy. While generally above chance, the wide range (0.30-0.96) and the fact that some accuracies are only marginally above chance (0.30 vs 0.25) raises concerns about the generalizability of the classification scheme across recordings. The manuscript appropriately recommends that others apply the method to their own data rather than using these states as a standard (mentioned in Discussion), acknowledging this limitation. More analysis of what factors contribute to this variability would strengthen confidence in the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The peak frequency of medium gamma became higher (approaching high gamma) on recording sites toward the stratum oriens side of the pyramidal layer, leading to a recommendation to use data from near the pyramidal layer center or below for this analysis method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 identify a depth-dependent variation in gamma frequency and provide a methodological recommendation. The observation is based on data shown in Figure 1\u2014figure supplement 2A. The recommendation (C36) is appropriately cautious and helps guide future applications of the method. This represents good scientific practice in acknowledging limitations and providing guidance for optimal use of the technique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C121",
+      "C134"
+    ],
+    "result": "M-gamma and EF-gamma, but not S-gamma, are interpreted to reflect sensory processing based on their dominant EC-CA1 coupling, increased occurrence during novel environment exploration, and higher spatial information content. S-gamma occurred more frequently during slow movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C117, C119, C121, C134 present functional interpretations of the TG states. While the data showing differential coupling patterns (C114, C116), behavioral modulation (C115), and spatial coding (C101) are well-supported, the interpretation that these reflect sensory processing vs. memory retrieval is largely inferential. The lack of novelty effects (C61) weakens the sensory processing interpretation. The suggestion that M-gamma may also play a role in CA3-CA1 interactions (C119) contradicts some prior work and requires further investigation. These interpretations are reasonable hypotheses but go beyond what the data directly demonstrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C103"
+    ],
+    "result": "A novel two-step analysis method was developed combining signal processing and machine learning (k-means clustering with k determined by community clustering) to track individual theta cycles, followed by Markov process analysis to characterize state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24, C103 describe the methodological approach. The method is novel in combining frequency and phase information for single-cycle classification and in characterizing cycle-to-cycle transitions. The approach is well-described in the methods section and code is made available (mentioned in methods). The robustness across the pyramidal layer (C34) and the validation through correlation analysis (C46-C51) support the method's validity. However, the variable cross-validation accuracy (C52) and the need for careful electrode placement (C36) indicate some limitations in generalizability.",
+    "result_type": "MAJOR"
+  }
+]

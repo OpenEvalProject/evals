@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors developed a comprehensive sensorimotor simulation model of Pipistrellus kuhlii bats foraging for prey in a 2D environment. The model includes three modules (prey, bat, and acoustics) and implements biologically-relevant parameters for echolocation, flight control, and sensory processing based on published literature and measurements from real bats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 and C73-C91 collectively describe the model architecture, parameters, and biological basis. The model design is well-documented with specific parameters (e.g., C19: 110 dB-SPL source level, C21: 5 cm capture distance) that are supported by citations to relevant literature. The modular structure and biological grounding provide a solid foundation for the simulation study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C88"
+    ],
+    "result": "The simulated bats successfully detected, pursued, and captured prey at rates comparable to real bats, and the movement parameters (velocities, accelerations) matched those of actual P. kuhlii bats in flight rooms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 and C88 demonstrate model validation against real bat behavior. C23 shows movement parameters matched real bats in flight rooms (with Figure 1\u2014figure supplement 1), and C24 shows attack rates (5-7 times per 10s) similar to P. abramus. This validation strengthens confidence that the model captures essential foraging dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C49",
+      "C53",
+      "C72"
+    ],
+    "result": "Implementing a spectral jamming avoidance response (JAR) in the model did not decrease spectral masking or improve detection performance across multiple criteria (jamming probability, ranging error, false-alarm rate) for both correlation-receiver and filter-bank receiver models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 describe JAR implementation and its lack of effect, supported by statistical tests (C26: multiple ANOVA tests with p>0.05 for all comparisons). C53 confirms both receiver models showed the same result. The statistical evidence is robust across different scenarios and receiver types, strongly supporting the conclusion that JAR is ineffective in this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C47"
+    ],
+    "result": "Even without sensory masking, hunting performance significantly degraded as bat density increased (36-67% reduction depending on prey density), primarily due to competition over prey and the need to avoid conspecifics rather than acoustic masking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 present quantitative results from the 'no-masking' condition with strong statistical support (C28: ANOVA tests with p<0.0001). C47 synthesizes this as a major conclusion. The ability to isolate non-sensory effects through the no-masking condition is a key strength of the modeling approach, and the statistical evidence clearly supports the magnitude of these effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C48"
+    ],
+    "result": "Sensory masking further reduced hunting performance, but JAR provided no benefit. Jamming occurred primarily during the search phase and decreased significantly during approach as prey echoes became louder, which explains the relatively small overall effect of sensory masking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C48 describe the phase-dependent nature of jamming with statistical support (C30: ANCOVA F=2784, p<0.0001 for search vs. approach comparison; C29: no significant JAR effect across multiple prey densities). The mechanistic explanation (louder echoes during approach reduce jamming) is logical and supported by the simulation data showing <15% jamming during approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "With 20 bats and 10 prey items per 100 m\u00b2, adding sensory masking decreased successful captures from 34\u00b12% to 26\u00b12% and significantly increased misses from 15\u00b12% to 38\u00b13.5% as the primary cause of failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide specific quantitative results with statistical support (C34: F=4.59, p=0.033; C35: F=68.8, p<0.0001). These results clearly demonstrate the effect of sensory masking on hunting outcomes and identify the mechanism (increased misses). The statistical tests are appropriate and the effect sizes are substantial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Increasing source level improved hunting performance up to 110-120 dB-SPL (matching real bat behavior), but did not reduce the masking effect specifically. Beyond 120 dB-SPL, further increases provided no benefit, likely because distant prey would be captured by closer bats in group hunting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C56-C58 describe parameter testing results with statistical support (C36: significant improvement 90-110 dB with F=386, p<0.001; no improvement 120-150 dB with F=0.1, p=0.98). C56 notes this matches real bat behavior (110-120 dB-SPL) with citations. The explanation in C58 is logical given the group hunting context. The convergence with real bat behavior strengthens the model's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C60",
+      "C61"
+    ],
+    "result": "Changing call duration had no significant effect on hunting performance, possibly because when all bats increase call duration simultaneously, the benefit of longer calls is balanced by increased probability of overlap with conspecific signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C60 report the finding with statistical support (C38: ANCOVA F=0.15, p=0.69). C61 provides a reasonable mechanistic explanation based on the model structure. While the explanation is speculative (C61 is marked as INFERENCE), the primary finding of no effect is well-supported statistically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Decreasing the hearing threshold significantly improved hunting performance but did not significantly change the masking effect, suggesting improved sensitivity helps detection generally but not specifically for overcoming masking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 present parameter testing results with statistical support (C39: ANCOVA F=915, p<0.0001; C40: ANCOVA F=2.19, p=0.14). The pattern mirrors the source level results, strengthening the overall conclusion that general improvements in detection capability do not specifically address the masking problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "In a cluttered environment with background echoes, applying a JAR had no significant effect on hunting performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 reports results from additional simulations testing whether clutter would change the JAR effectiveness, with reference to Figure 3\u2014figure supplement 2. This extends the main finding to more realistic conditions, though the claim would be stronger with explicit statistical values in the main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C13"
+    ],
+    "result": "Bats constantly adjust their echolocation signals according to behavioral phase and distance to objects, so even bats with identical call repertoires emit different calls at any given moment, making additional frequency shifts from JAR ineffective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C13 provide the mechanistic explanation for why JAR is ineffective. C50 is based on established bat behavior (marked as KNOWLEDGE and INFERENCE), and C13 connects this to the simulation results. This explanation is logical and consistent with the quantitative findings, though it relies partly on inference from the model behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Simulations showed that bats' average frequency increases by up to 400 Hz when flying with conspecifics compared to alone, even without performing JAR, which aligns with previous field observations and provides an alternative explanation for reported frequency shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 present simulation results that reinterpret previous findings. C68 shows the frequency shift with reference to Figure 4\u2014figure supplement 1, and C69 notes alignment with G\u00f6tze et al. 2016. This provides a parsimonious alternative explanation for observations previously attributed to JAR, strengthening the paper's argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The correlation-receiver model, considered optimal and likely overestimating bat abilities, outperformed the filter-bank model in all scenarios by detecting more objects and having lower jamming probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 characterize and compare the two receiver models. C55 provides evidence with references to figures showing the correlation-receiver detects more objects and has lower jamming probability. This comparison is important because if even the optimal receiver shows no JAR benefit, real bats are unlikely to benefit either.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C43",
+      "C46"
+    ],
+    "result": "The model intentionally underestimates bat performance through conservative assumptions (monaural hearing, no spatial unmasking, low detection threshold, long masking windows, no memory), suggesting real bats likely cope with masking even better than simulated bats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 and C43, C46 describe the conservative design choices with supporting citations (e.g., C94: spatial unmasking can improve detection by 30 dB). This transparency about model limitations strengthens the conclusions\u2014if even this conservative model shows bats can hunt successfully without JAR, real bats almost certainly can. The systematic listing of conservative assumptions is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors propose alternative explanations for frequency shifts observed in previous studies: the clutter response (characterized by higher frequencies when near objects) or the Lombard effect (frequency increases as a byproduct of amplitude increases), rather than intentional JAR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C67 present alternative hypotheses for interpreting previous literature, supported by citations. However, these are speculative explanations (C63, C65 marked as SPECULATION) for others' findings rather than direct tests. While the hypotheses are plausible and well-grounded in known phenomena (C66-C67 cite the Lombard effect), they remain untested alternatives. The paper would need additional experiments to definitively distinguish between these explanations and JAR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C14",
+      "C42",
+      "C70",
+      "C71"
+    ],
+    "result": "The simulations demonstrate that bats can hunt successfully in groups at high densities despite competition and potential masking, without requiring a spectral JAR, and that jamming is less problematic than previously suggested by most researchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C14, C42, C70-C71 present the paper's main conclusions, synthesizing results from multiple simulation experiments. These conclusions are well-supported by the quantitative findings presented in other claim groups (particularly the lack of JAR benefit and the phase-dependent nature of jamming). However, C71's use of 'proves' is too strong\u2014models demonstrate plausibility but cannot prove biological reality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors establish the biological context and define key terms: echolocation enables bats to hunt in darkness, but conspecific calls may interfere with echo detection. Masking signals reduce detection ability through temporal-spectral overlap, while jamming signals completely block echo detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide background and definitions. C1-C2 describe established echolocation knowledge with appropriate citations. C3 states the potential interference problem. C4-C5 define masking and jamming with citation support (C4) and methodological reference (C5). These definitions are clear and appropriately grounded, providing necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Previous research presents conflicting evidence on spectral JAR in bats: many studies report frequency changes in the presence of conspecifics or playback signals, while several recent studies found no evidence for spectral JAR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 summarize the state of the literature with appropriate citations. C6-C7 cite studies reporting JAR-like behavior, while C8 cites contradictory recent findings. This accurately represents the controversy motivating the study. The citations appear appropriate and the characterization is balanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C41"
+    ],
+    "result": "The modeling approach offers advantages over experiments with real bats: it allows assessment of acoustic input at every instance (currently impossible with real bats) and enables parameter manipulation to test hypothetical scenarios. Few previous studies have used mathematical models to examine jamming probability and its effects on hunting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C41 justify the modeling approach. C9 correctly notes current technological limitations in measuring acoustic input at the bat's ear. C10 describes the advantage of parameter control. C41 notes the scarcity of previous modeling studies with citations. These claims appropriately motivate the methodological choice, though C9's assertion that measurement is 'currently impossible' may be slightly overstated\u2014difficult and imperfect would be more accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C52",
+      "C59"
+    ],
+    "result": "The authors reference previous empirical findings to support model assumptions and interpretations: bats can hunt in high density (C44), the model uses measured parameters rather than fitted ones (C45), no JAR was observed in R. microphyllum (C52), and bats increase call intensity under masking (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C52, and C59 cite previous work to support various aspects of the study. Each claim includes appropriate citations. C45 is particularly important for model credibility\u2014using measured rather than fitted parameters reduces the risk of overfitting. These claims appropriately integrate the current work with existing literature.",
+    "result_type": "MINOR"
+  }
+]

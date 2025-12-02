@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C149"
+    ],
+    "result": "CBA+, a novel cortical surface registration method incorporating anatomical priors (anterior Heschl's Gyrus, superior temporal gyrus, superior temporal sulcus, and middle temporal gyrus), was developed and validated using cytoarchitectonic areas from 10 postmortem brains. CBA+ demonstrated superior performance compared to volumetric alignment, rigid body alignment, and standard curvature-based alignment (CBA) in aligning cytoarchitectonic areas of the auditory cortex, with improved macro-anatomical alignment resulting in improved micro-anatomical correspondence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C27-C33, C40-C43, C84-C88, and C149 collectively establish that CBA+ was developed, validated on 10 brains using cytoarchitectonic areas, and demonstrated superior alignment compared to other methods. The validation is supported by quantitative metrics (Dice coefficients in Tables 1-2, histograms in Figures 8-9) and visual evidence (Figures 1-7, 45-47) showing improved overlap of cytoarchitectonic areas. The claim that improved macro-anatomical alignment leads to improved micro-anatomical correspondence (C6, C84) is directly demonstrated by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C53",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "CBA and CBA+ both improved macro-anatomical alignment in the temporal lobe compared to rigid body alignment, as evidenced by increased sharpness of average curvature maps and improved definition of the average folded mesh. CBA+ showed particular improvement over standard CBA in the right hemisphere at the level of Heschl's Gyrus, though some residual misalignment remained in the left hemisphere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C53, C99-C100, and C102 are supported by visual evidence in Figure 1 showing sharper average curvature maps and more prominently defined Heschl's Gyrus with CBA+. The hemispheric differences (C102) are documented and shown in the figures. The claims are based on qualitative visual assessment which is appropriate for evaluating macro-anatomical alignment quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "CBA+ improved the overlap of all cytoarchitectonic areas across the 10 brains, with the largest improvements observed for areas along Heschl's Gyrus (Te1.0, Te1.1, Te1.2) and Te2.1. For areas in the planum temporale (Te2.1, Te2.2) and superior temporal gyrus/sulcus (Te3, STS1, STS2), all surface approaches improved alignment compared to volumetric alignment, with CBA+ providing additional benefit especially for Te2.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C107-C109 are supported by quantitative data in Tables 1-2 (Dice coefficients), Figures 8-9 (histograms), and Figures 2-7 (probabilistic overlap maps). The differential effects across regions are documented with specific metrics. The leave-one-out validation approach (C43) provides robust evidence for the improved overlap claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C91",
+      "C113"
+    ],
+    "result": "The postmortem sample exhibited typical morphological variations in Heschl's Gyrus, including variation in the number of Heschl's Gyri (1, 1.5, or 2) and rare cases of split superior temporal gyrus (3 hemispheres: 1 right, 2 left). The split superior temporal gyrus pattern, first described by Heschl in 1878, occurred in approximately 10% of brains and was approximately eight times more likely in the left hemisphere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C91, and C113 document anatomical variations observed in the dataset with specific counts and are supported by Figure 13. The historical context (C51-C52) is appropriately cited to Heschl, 1878 and Rademacher et al., 1993. These are descriptive observations of the sample characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C103",
+      "C104"
+    ],
+    "result": "In split superior temporal gyrus cases, the gyrus was defined as continuous (bridging the intermediate sulcus), which did not compromise alignment of the anterior Heschl's Gyrus. However, the larger prevalence of split cases in the left hemisphere may explain the stronger performance of CBA+ in the right hemisphere, and a larger sample would be needed to evaluate the impact of this variation on alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55 and C103-C104 describe a methodological decision and its potential impact. While C54 is a clear methodological statement, C55 claims no compromise to alignment but acknowledges uncertainty about effects on nearby regions. C103 offers a speculative explanation for hemispheric differences, and C104 explicitly calls for future work. The uncertainty about the full impact of this methodological choice on alignment quality is acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C34",
+      "C35",
+      "C44",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C122"
+    ],
+    "result": "CBA+ was applied to align in vivo 7T MRI data (anatomical and functional) across individuals and to the postmortem cytoarchitectonic atlas. This alignment enabled the projection of functional (tonotopic maps from natural sound encoding) and anatomical (myelin-related contrast from T1w/T2*w) information onto cytoarchitectonic areas and comparison with the Glasser et al. 2016 parcellation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C34-C35, C44, C60-C65, and C122 describe the application of CBA+ to in vivo data and are supported by the methods description and Figure 10 showing the aligned data. The alignment procedure is clearly documented, and the resulting projections are visualized. This demonstrates the practical application of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C123",
+      "C124"
+    ],
+    "result": "Myelin-related intra-cortical contrast from in vivo 7T data highlighted the medial Heschl's Gyrus as the most myelinated region in the temporal cortex, with Te1.0 showing the highest myelination contrast across cytoarchitectonic areas. This pattern followed previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C123-C124 are supported by Figure 10 showing myelin maps and are consistent with cited prior work (Glasser and Van Essen, 2011; Dick et al., 2012; De Martino et al., 2015). The observations are clearly visible in the presented data and align with established knowledge about primary auditory cortex myelination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C127",
+      "C128",
+      "C129",
+      "C133",
+      "C134"
+    ],
+    "result": "Group-level tonotopic maps from in vivo 7T fMRI showed that Heschl's Gyrus predominantly prefers low frequencies, while surrounding areas prefer high frequencies forming an inverted 'V' pattern. Cytoarchitectonic areas Te1 (including Te1.0, Te1.1, Te1.2) covered Heschl's Gyrus with specific tonotopic gradients, Te2.1 and Te2.2 covered portions of the planum temporale gradient, and Te3 covered low-frequency regions along the superior temporal gyrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75, C127-C129, C133-C134 describe tonotopic patterns observed in the aligned in vivo data and are supported by Figure 10 and individual subject maps in supplementary figures. The patterns are consistent with cited prior work (Da Costa et al., 2011; Moerel et al., 2014; Besle et al., 2018). The correspondence between cytoarchitectonic areas and tonotopic features is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The absence of a full tonotopic gradient in Te1.0 at the group level may result from excessive smoothing during inter-subject averaging, which highlights larger gradients. Individual tonotopic and myelin maps provide more fine-grained information within smaller areas like Te1.0, though future studies are needed to quantify this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C132 offer a speculative explanation (C130) for an observation (C129) and suggest that individual maps provide more detail (C132, supported by supplementary figures). However, C131 explicitly states that future studies are needed to quantify the information from individual data. The interpretation is plausible but requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Comparison between the cytoarchitectonic atlas and the Glasser et al. 2016 in vivo multi-modal parcellation revealed interesting differences in the superior temporal plane. The cytoarchitectonic areas Te1.1, Te1.0, and Te1.2 run along Heschl's Gyrus, while the Glasser parcellation divides Heschl's Gyrus into A1 (medial two-thirds) and medial belt (lateral portion). Additional differences exist in the planum temporale and superior temporal sulcus regions. These differences may reflect insufficient information in the in vivo data used for parcellation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C148 describe observed differences between two atlases as shown in Figure 11. The differences are clearly documented and visualized. C148 offers a speculative explanation for the differences, which is appropriately qualified as a possibility. The comparison is descriptive and the differences are evident in the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C89"
+    ],
+    "result": "The study used cytoarchitectonically labeled temporal cortical areas (Te1.0, Te1.1, Te1.2, Te2.1, Te2.2, Te3, STS1, STS2) and postmortem MR images from 10 brains from the JuBrain atlas. White matter-gray matter boundaries were segmented using a combination of image filtering techniques and histogram-based segmentation, which reduced manual correction requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 and C89 describe the data sources and preprocessing methods. The data source is clearly cited (JuBrain atlas, Morosan et al. 2001, etc.), and the segmentation approach is described with reference to Gulban et al., 2018b. The methods are documented in sufficient detail in the Materials and Methods section and Figure 12 shows the segmentation enhancement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Standard CBA minimizes macro-anatomical variation across the whole brain in a coarse-to-fine iterative approach, driven by major anatomical landmarks including the superior temporal gyrus and sulcus. However, this can result in compromised alignment of smaller but consistent features like Heschl's Gyrus. Previous research has used local landmark approaches for temporal cortex alignment. The current study provided additional landmarks (Heschl's Gyrus, superior temporal gyrus/sulcus, middle temporal gyrus) to CBA and optimized alignment of both local and global macro-anatomical features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 describe the rationale for CBA+ by contrasting it with standard CBA and previous approaches. C92-C94 describe standard CBA characteristics (supported by general knowledge and citations). C95-C96 cite previous work (Kang et al., 2004; Desai et al., 2005). C97-C98 describe the novel aspects of CBA+ as documented in the methods. The logical progression from problem to solution is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The motivation for using local landmarks in temporal lobe alignment is the expectation that minimizing macro-anatomical differences will improve micro-anatomical and functional alignment. While previous studies showed improved group functional activation with local landmarks, this study validated the approach by demonstrating reduced micro-anatomical variability. The improved overlap in areas on or adjacent to Heschl's Gyrus results directly from using the anterior Heschl's Gyrus as a landmark, which is recognized as the putative location of primary auditory cortex in cases of complete duplication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 and C110-C112 explain the rationale and mechanism for CBA+ improvements. C105 states the underlying assumption (supported by the study's results). C106 cites previous work showing functional improvements. C110-C112 explain why the anterior Heschl's Gyrus landmark is important, with C111 citing Hackett et al., 2001. The reasoning is logical and supported by the demonstrated improvements in overlap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C76",
+      "C77"
+    ],
+    "result": "The human superior temporal plane displays high inter-individual macro-anatomical variation, with Heschl's Gyrus varying substantially in shape across individuals and hemispheres. This variation, along with reported shifts in primary auditory cortex location with morphological variation, raises questions about whether curvature-based alignment improves correspondence of micro-anatomically defined auditory areas. If unaccounted for, these differences are detrimental to functional and anatomical in vivo investigations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C24-C26, C76-C77 establish the motivation for the study by citing well-documented anatomical variability (supported by multiple citations: Heschl, 1878; Rademacher et al., 1993; Hackett et al., 2001; Marie et al., 2015; Pfeifer, 1921; Von Economo and Horn, 1930; Zoellner et al., 2019). The logical inference that this variability questions the validity of standard alignment methods (C2, C26) is reasonable and motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C121",
+      "C125",
+      "C126",
+      "C131",
+      "C156"
+    ],
+    "result": "Multiple aspects of the study require follow-up investigation, including: the effect of incomplete Heschl's Gyrus duplication on alignment; evaluation of myelin-related contrast across cortical depths to better separate Te1.0 and Te1.1; assessment of other in vivo MRI contrasts (e.g., fiber orientation); quantification of information from individual in vivo data for characterizing cytoarchitectonic areas; comparison with other alignment approaches; and evaluation of CBA+ accuracy across all known macro-anatomical variations of Heschl's Gyrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116, C121, C125-C126, C131, and C156 explicitly identify limitations and suggest future work. These are appropriately qualified as speculative (SPECULATION evidence type) and represent reasonable extensions of the current work. The authors appropriately acknowledge the boundaries of their current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The results argue for careful interpretation of large-scale tonotopic maps, which alone do not define borders between superior temporal cortical areas. While a large tonotopic gradient runs posterior to anterior (which some equate with primary auditory cortex, placing the core orthogonal to Heschl's Gyrus), the cytoarchitectonic areas suggest the auditory core (Te1) runs along Heschl's Gyrus (the 'classical' view). This view is strengthened by combined interpretation of myelin, tonotopy, and other functional characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 present an interpretation of the results in the context of an ongoing debate about auditory cortex organization. C136-C137 cite one view (Da Costa et al., 2011; Saenz and Langers, 2014; Besle et al., 2018), while C138-C139 present the alternative view supported by the current data and cite supporting work (Dick et al., 2012; Moerel et al., 2014). The interpretation is supported by the combined evidence from multiple modalities shown in Figure 10.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study's results have broad implications: reducing macro-anatomical variability and improving cytoarchitectural correspondence may reduce inter-subject variability of in vivo characteristics, resulting in more accurate definition of cortical areas. The results justify using landmark-based alignment for the temporal cortex and benefit studies relying on inter-individual alignment for statistical analysis. The improved cytoarchitectonic atlas serves as a resource for studies using cytoarchitectonically-defined ROIs. The approach is extendable to other cortical areas with high macro-anatomical variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C155 present the broader implications and contributions of the work. C150-C151 are logical inferences from the demonstrated improvements. C152 cites supporting prior work (Kang et al., 2004; Desai et al., 2005). C153-C154 describe concrete contributions (the atlas and validation of the approach). C155 is a reasonable speculation about extensibility. These claims appropriately summarize the significance of the findings.",
+    "result_type": "MAJOR"
+  }
+]

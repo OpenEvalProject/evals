@@ -1,0 +1,532 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C43",
+      "C50",
+      "C51"
+    ],
+    "result": "Atg43 is a mitochondrial outer membrane protein that serves as a mitophagy receptor in fission yeast, specifically required for selective degradation of mitochondria but not for bulk autophagy or ER autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 demonstrate complete loss of mitochondrial protein processing in atg43 mutants across multiple mitochondrial compartments (matrix, outer membrane, inner membrane), while C46-C49 show normal bulk and ER autophagy. The specificity is well-established through multiple independent assays with appropriate controls (atg1\u0394, isp6\u0394, tom70\u0394). Complementation experiments (C42, C44) confirm Atg43 is responsible for the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C94"
+    ],
+    "result": "Atg43 contains an Atg8-family-interacting motif (AIM) at amino acids 21-40 that is essential for mitophagy but dispensable for cell growth and mitochondrial localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AIM sequence Y28ELI31 is identified by sequence analysis (C80), and its requirement for mitophagy is demonstrated through deletion analysis (C77-C79) and point mutations (C81). The AIM-dependent interaction with Atg8 is confirmed by yeast two-hybrid (C82-C83) and co-immunoprecipitation (C84-C85). The functional specificity is established by showing the AIM is dispensable for growth and localization (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The primary role of Atg43 in mitophagy is to tether Atg8 to mitochondria, as demonstrated by rescue experiments showing that artificial recruitment of either the AIM-containing region or Atg8 itself to mitochondria restores mitophagy in Atg43-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tethering model is strongly supported by gain-of-function experiments: artificial mitochondrial anchoring of the AIM-containing fragment (C111) or Atg8 itself (C113) rescues mitophagy in atg43 mutants. This demonstrates sufficiency of the AIM and mitochondrial localization (C173). The conclusion that Atg43 tethers isolation membranes to mitochondria (C4, C114, C175) is a reasonable inference from these rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The mitochondrial import factors Mim1-Mim2 complex and Tom70 are crucial for mitophagy by facilitating the integration of Atg43 to the mitochondrial outer membrane, as demonstrated by loss of Atg43 localization and stability in MIM complex mutants and rescue by artificial Atg43 tethering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for MIM complex and Tom70 is established by mitophagy defects in deletion mutants (C5, C126). The mechanism is elucidated through multiple lines of evidence: physical interaction between Atg43 and MIM complex (C115-C120), loss of Atg43 localization and protein stability in MIM mutants (C122-C125), and bypass of the requirement by artificial Atg43 tethering (C132-C134). This strongly supports the conclusion that these factors act through Atg43 integration (C135).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Atg43 is a transmembrane protein localized to the mitochondrial outer membrane with its N-terminus facing the cytosol and C-terminus protected inside mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitochondrial localization is demonstrated by microscopy (C68) and fractionation (C69). Outer membrane localization is established by proteinase K protection assays showing behavior similar to Tom70 (C70-C71). The transmembrane domain is predicted computationally (C72) and confirmed by alkaline extraction (C73-C74). Topology is determined by differential proteinase K sensitivity of N- vs C-terminal tags (C75), supporting the proposed orientation (C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The C-terminal 60 amino acids of Atg43 (aa 185-224) containing the transmembrane domain are necessary for mitophagy, cell growth, and mitochondrial localization, with the primary function being to anchor Atg43 to the mitochondrial outer membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C-terminal deletion analysis shows that removal of 60 aa abolishes mitophagy (C99), cell growth (C100), and mitochondrial localization (C102), while 20 aa deletion has partial effects (C98, C101). The sufficiency of aa 185-224 for localization is demonstrated (C110). The anchoring function is elegantly proven by rescue experiments: GBP-Fis1 can restore mitochondrial localization of \u0394C60-GFP (C105) and rescue mitophagy (C106-C107), demonstrating that the C-terminal region's primary role is membrane anchoring (C108-C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C90",
+      "C91",
+      "C92",
+      "C100",
+      "C149",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Atg43 has dual functions: mitophagy-dependent maintenance of growth during starvation and a mitophagy-independent function that facilitates vegetative growth, with the latter requiring amino acids 165-184 and interaction with the MIM complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual function is established by comparing atg43\u0394 (growth defect) with atg43-1 (normal growth, mitophagy defect) (C39, C45). The mitophagy-independent growth function is supported by: (1) autophagy mutants grow normally (C40), (2) deletion of aa 165-184 impairs growth but not mitophagy (C91-C92, C149), and (3) this region is required for MIM complex interaction (C185). The conclusion that Atg43 has separable functions is well-supported by the genetic and biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C150",
+      "C151"
+    ],
+    "result": "Amino acids 165-184 of Atg43 are important for binding to the MIM complex, with this interaction occurring after MIM-mediated mitochondrial loading and being important for the mitophagy-independent growth function but not for mitophagy itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interaction mapping is clear: full-length and C80 interact with Mim2, but deletion of aa 165-184 abolishes interaction (C142-C144). The requirement for mitochondrial localization is shown by loss of interaction when the transmembrane domain is deleted (C145-C146). The temporal model (C150) is supported by the observation that aa 165-184 are not required for localization (C147) but localization is required for interaction. The functional specificity (C151) is supported by the growth but not mitophagy requirement for this region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Mitophagy is important for maintaining growth ability during long-term nitrogen starvation, but contributes much less to nutrient supply and autophagosome formation than bulk autophagy, as demonstrated by differential phenotypes of atg43 and atg7 mutants in auxotroph and isp6\u0394 backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The long-term starvation phenotype is clearly demonstrated (C152-C153), supporting a role for mitophagy in survival (C154). The comparative analysis with atg7\u0394 is well-designed: atg43\u0394AIM cells survive better than atg7\u0394 in auxotroph background (C156-C157) and don't rescue isp6\u0394 toxicity (C158), indicating mitophagy contributes less to nutrient recycling and autophagosome formation than bulk autophagy (C159-C160). The logic is sound and the experiments are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The absence of mitophagy during nitrogen starvation alters mitochondrial oxidative status, with reduced superoxide generation in atg7\u0394 and atg43\u0394AIM mutants despite maintained membrane potential and respiratory competence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The oxidative status alteration is demonstrated by MitoSOX staining showing increased superoxide in wild-type but not in mitophagy-defective mutants during starvation (C161-C163). The maintenance of mitochondrial function is shown by MitoTracker staining (C164) and growth on respiratory medium (C165-C166). The conclusion of altered oxidative status (C167) is supported, though the mechanism remains unknown as stated. The data are internally consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Atg43 is conserved among Schizosaccharomyces species with the C-terminal region (required for MIM interaction and growth) conserved in fungi, while the N-terminal AIM-containing region is Schizosaccharomyces-specific, suggesting Atg43 originally had a mitophagy-independent role and later acquired mitophagy receptor function through evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The sequence conservation patterns are clearly demonstrated (C54-C55, C186, C188), and the lack of orthologs in S. cerevisiae and mammals is stated (C56). The correlation between functional domains and conservation patterns (C186-C188) supports the evolutionary hypothesis. However, the evolutionary scenario (C189) is explicitly stated as a hypothesis and speculation. While the data are consistent with this model, alternative evolutionary scenarios are not excluded, and functional studies in other fungi would be needed to test this hypothesis definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Atg43 expression is upregulated during nitrogen starvation and TORC1 inactivation, but Atg43 expression alone is not sufficient to induce mitophagy; Atg43 is subsequently degraded by autophagy as the process proceeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Atg43 upregulation during starvation is demonstrated by immunoblotting (C58) and in tor2-13 mutant (C59-C60), supporting TORC1 regulation (C61). The insufficiency of Atg43 expression is shown by constitutive expression experiments requiring starvation for mitophagy (C62-C63). Autophagy-dependent degradation is demonstrated by accumulation in autophagy mutants (C64) and GFP processing assay (C66), supporting efficient degradation (C65). The temporal dynamics conclusion (C67) is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C104"
+    ],
+    "result": "Amino acids 41-164 of Atg43 are not essential for mitophagy, and amino acids 165-184 are important for cell growth but not essential for mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Internal deletion analysis shows mitophagy occurs with deletions in aa 41-80, 81-120, and 121-164 (C88), supporting the conclusion that this region is not essential (C89). The specific analysis of aa 165-184 using the \u0394N165-184 mutant shows mitophagy occurs but growth is impaired (C104). These are straightforward deletion analyses with clear phenotypic readouts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Atg11 did not efficiently co-precipitate with Atg43 in immunoprecipitation experiments, unlike Atg8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a negative result clearly shown in Figure 3\u2014figure supplement 1A. The comparison with Atg8 (which does co-precipitate efficiently) provides an appropriate positive control. This distinguishes Atg43 from budding yeast Atg32, where Atg11 interaction is essential. The data are clear and the conclusion is appropriately limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The mitochondrial import of Atg43 and Tom70 is mutually independent, and neither is required for MIM complex localization to mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Microscopy shows Atg43 localizes to mitochondria in tom70\u0394 (C128) and vice versa (C129), supporting mutual independence (C130). MIM complex localization is maintained in both atg43\u0394 and tom70\u0394 (C131). These are straightforward localization experiments with clear results. The conclusions are appropriately limited to the specific relationships tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The interaction between Atg43 and the MIM complex is much stronger than that between Tom70 and the MIM complex, suggesting Atg43 forms a stable complex with the MIM proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential interaction strength is supported by three independent lines of evidence: co-IP efficiency (C138-C139) and differential protein stability in MIM mutants (C140). The conclusion that Atg43 forms a complex with MIM proteins (C141) is reasonable given the strong and stable interaction. However, the exact stoichiometry and dynamics of the complex are not determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Mim1 and Mim2 are required for stable localization of Tom70 on mitochondria in fission yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is demonstrated by microscopy in Figure 5\u2014figure supplement 1H showing reduced Tom70 localization in MIM complex mutants. This confirms conservation of the MIM complex function in Tom70 import from budding yeast to fission yeast. The data are clear and the conclusion is straightforward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "The mim1\u0394 and mim2\u0394 mutants exhibited a severe growth defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is clearly shown by spot test in Figure 5\u2014figure supplement 1F. This is consistent with the essential role of the MIM complex in mitochondrial protein import and provides context for why the mitophagy phenotype might be secondary to general mitochondrial dysfunction. However, the rescue by artificial Atg43 tethering argues against this being solely due to general mitochondrial defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Mitochondrial localization was retained with deletion of the N-terminal 164 and 184 amino acids of Atg43.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is demonstrated by microscopy in Figures 3J and K. This is an important control showing that the N-terminal region (including the AIM) is not required for mitochondrial targeting, supporting the model that the C-terminal transmembrane domain is sufficient for localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The atg43-1 mutation predominantly affects mitophagy because this allele lacks the AIM-containing region but retains the C-terminal region, and the mutant expresses a truncated form of Atg43 enriched in mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic structure of atg43-1 is shown in Figure 1C (C96), and expression of truncated Atg43 in mitochondria is demonstrated in Figure 3\u2014figure supplement 1B and C (C97). This explains why atg43-1 has a mitophagy defect but normal growth, consistent with the functional domain mapping. The conclusion (C95) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C168",
+      "C169"
+    ],
+    "result": "The Atg43-deficient mutant is a useful model to investigate cellular functions of mitophagy, and combining Atg43-deficient and autophagy-defective mutants allows distinction between mitophagy and bulk autophagy defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by the differential phenotypes observed throughout the study, particularly in the physiological analyses (auxotroph survival, isp6\u0394 rescue, oxidative status). The atg43 mutants specifically lack mitophagy while retaining bulk autophagy, making them valuable tools. This is a reasonable conclusion about the utility of the system for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C191"
+    ],
+    "result": "Mitochondria undergo selective autophagy in fission yeast through Atg43-mediated mitophagy, which is the sole pathway for mitochondrial degradation during nitrogen starvation, establishing receptor-mediated selective autophagy in this organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The selectivity is demonstrated by normal bulk and ER autophagy in atg43 mutants (C50-C53). The complete block of mitochondrial degradation in atg43 mutants (C34, C191) indicates this is the sole pathway under the conditions tested. The identification of Atg43 as the first mitophagy receptor in fission yeast (C171) establishes receptor-mediated selective autophagy in this organism (C172). The conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C177"
+    ],
+    "result": "Atg43 appears to be functionally similar to mammalian mitophagy receptors rather than to Atg32 in budding yeast, in that interaction with Atg8 is essential for mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comparison is supported by the demonstration that the AIM is essential for Atg43 function (C2, C81), unlike budding yeast Atg32 where the AIM plays a limited role (C26) and Atg11 interaction is essential (C27). The lack of efficient Atg11 interaction with Atg43 (C87) further supports this distinction. This is a reasonable comparative conclusion based on the functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C136",
+      "C181"
+    ],
+    "result": "Tom70 may contribute to mitophagy through the biogenesis of functional Atg43 on the mitochondrial outer membrane, as Atg43 remains on mitochondria in tom70\u0394 but mitophagy is still defective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly stated as speculation (C136). While Atg43 localization is maintained in tom70\u0394 (C181) and mitophagy is defective (C35), the mechanism by which Tom70 contributes remains unclear. The bypass by artificial Atg43 tethering (C133) suggests Tom70 acts through Atg43, but whether this is through proper folding, topology, activation, or another mechanism is not determined. Additional experiments would be needed to test the proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Free mRFP was produced from Tuf1-mRFP during nitrogen starvation in an Atg1- and Isp6-dependent manner, confirming that Tuf1 was translocated to the vacuole and degraded by autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The production of free mRFP is shown in Figure 1\u2014figure supplement 1A (C29), and its dependence on Atg1 and Isp6 is demonstrated (C30). The conclusion that this represents vacuolar degradation by autophagy (C31) is standard interpretation of this assay. This establishes the validity of the Tuf1-mRFP processing assay used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Fun14 protein in fission yeast is dispensable for mitochondrial degradation by autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is shown in Figure 1\u2014figure supplement 1B with normal Tuf1-mRFP processing in fun14\u0394 cells. This is an important negative result ruling out the FUNDC1 ortholog as the mitophagy receptor in fission yeast, supporting the novelty of Atg43 identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53"
+    ],
+    "result": "Bulk autophagy and ER autophagy are normal in atg43-1 and tom70\u0394 mutants, indicating these factors are specific to mitochondrial degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "GFP-Atg8 processing (C46), cytoplasmic protein processing (C48), and ER protein processing (C49, C52) are all normal in atg43-1 mutant, supporting normal bulk and ER autophagy (C47, C53). This establishes the specificity of Atg43 and Tom70 for mitophagy and is essential for the claim of selective autophagy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Immunoblotting of Atg43 in S. pombe detected a signal larger than the predicted size of 27 kDa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is shown in Figure 1F. The larger apparent size could be due to post-translational modifications, anomalous migration, or other factors. This is a straightforward observation that doesn't affect the main conclusions but is noted for technical accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C32",
+      "C56",
+      "C182"
+    ],
+    "result": "Background knowledge claims about mitochondrial function, autophagy mechanisms, selective autophagy receptors, and mitophagy in other organisms are accurately cited and represent established scientific knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations to established literature (Rizzuto et al., 2012; Fukuda and Kanki, 2018; Pickles et al., 2018; Mizushima, 2018; Nakatogawa et al., 2009; Gatica et al., 2018; Noda et al., 2010; Kirkin and Rogov, 2019; Lazarou et al., 2015; Vargas et al., 2019; Kanki et al., 2009; Okamoto et al., 2009; Aoki et al., 2011; Kanki et al., 2013; Farr\u00e9 et al., 2013; Kondo-Okamoto et al., 2012; Takeda et al., 2010; Zhao et al., 2016; Vitali et al., 2020). These provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C190"
+    ],
+    "result": "During evolution, each organism may have selected and exploited a variety of mitochondrial outer membrane proteins for use as mitophagy receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly stated as speculation about evolutionary mechanisms. While the lack of sequence homology between mitophagy receptors in different organisms (Atg32, mammalian receptors, Atg43) is consistent with convergent evolution, this remains a hypothesis. Functional studies of Atg43-like proteins in other fungi and broader phylogenetic analyses would be needed to test this evolutionary model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C180"
+    ],
+    "result": "Absence of the MIM complex results in degradation of Atg43 that may be mislocalized in the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is stated as speculation about the fate of Atg43 in MIM complex mutants. While Atg43 is undetectable in these mutants (C123), whether it is degraded in the cytosol, by the proteasome, or through another mechanism is not directly tested. Experiments with proteasome inhibitors or examining Atg43 stability in different compartments would be needed to confirm this mechanism.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study identified 634 TE+ enhancers in ESCs and 358 in TSCs from specific LTR families (RLTR9, RLTR13D6, RLTR13B, RLTR13D5) that entered the Muridae lineage within ~12.5 million years. These represent 9.6% and 13% of all TE copies in the studied families, respectively. Simulation analysis suggests that an additional substantial fraction of TEs may harbor enhancer marks but were missed due to read mappability issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 and C149-C155 describe the bioinformatic identification of TE+ enhancers using stringent criteria (ChIP-seq, ATAC-seq, TF binding). The copy numbers, percentages, and evolutionary timing are supported by RepeatMasker annotation and published data (C37). The mappability simulation (C153-C155) appropriately acknowledges technical limitations. The methodology is clearly described and the data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "TE+ enhancers display cell-type-specific chromatin profiles enriched for TF binding, H3K27ac, and open chromatin. In ESCs, 56% of TE+ enhancers show open chromatin in vivo during early development, while 49% do so in TSCs. Tissue specificity is more pronounced for TSC TE+ enhancers compared to ESC TE+ enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by ChIP-seq and ATAC-seq data shown in Figure 1B-D. The cell-type specificity is demonstrated through comparative analysis between ESCs and TSCs, and validated in vivo using embryo ATAC-seq data. The quantitative percentages and comparative statements are directly derived from the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "TE+ enhancers display highly tissue-specific activity restricted to ESCs or TSCs, in contrast to TE- enhancers which show open chromatin across multiple tissues. This suggests TE+ enhancers are optimized for activity within specific early embryonic tissues, possibly through synergistic TF binding, and may particularly benefit genes requiring highly tissue-specific expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by ENCODE DNase-seq analysis (Figure 1E) showing striking differences in tissue specificity between TE+ and TE- enhancers. The inference about optimization for tissue-specific activity (C52) is reasonable given the data, though the mechanistic explanation remains speculative. Claim C53 is appropriately presented as a possibility rather than a definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Despite sequence similarity within TE families, only a small fraction bear enhancer-like profiles. TF binding motifs (SOX2, OCT4, NANOG, etc.) are enriched at TE+ enhancers but are poor predictors of enhancer activity, as many non-enhancer TEs also contain these motifs. Even co-occurrence of multiple TF motifs is insufficient to predict enhancer-like profiles. Simple sequence features are poor predictors of TE enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C67 are supported by comprehensive motif analysis (Figure 2A-C) comparing TE+ enhancers with non-enhancer TEs and reporter assay data. The analysis appropriately controls for element length and examines both individual and co-occurring motifs. The conclusion that motifs are poor predictors (C67) is well-supported by the data showing substantial overlap in motif presence between enhancer and non-enhancer TEs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "64% of RLTR13D6/RLTR9 copies with reporter assay enhancer activity lack enhancer-like chromatin profiles. Non-enhancer TEs display higher DNA methylation than TE+ enhancers, but removal of DNA methylation does not activate enhancer activity at non-enhancer TEs. No evidence was found for other repressive chromatin marks maintaining TE enhancer activity repressed. TE enhancer capacity behaves non-deterministically with respect to TF motifs or repressive chromatin marks, necessitating functional testing in genomic context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by multiple lines of evidence: reporter assay comparison (C68), BS-seq/TAB-seq data (C69), and analysis of Dnmt TKO ESCs (C70, Figure 2E). The conclusion about non-deterministic behavior (C72) and need for functional testing (C73) is well-justified by the discordance between different predictive approaches. The logic is sound and the conclusion appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Only 34-44% of TE+ enhancers interact with gene promoters (vs 21-28% for non-enhancer TEs and 65-70% for TE- enhancers) based on PCHi-C data. TE- enhancers are preferentially positioned in gene-rich active ('A') compartments, while TE+ enhancers tend to locate in gene-poor inactive ('B') compartments. TE+ and TE- enhancers interact with largely non-overlapping gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are supported by PCHi-C analysis (Figure 3\u2014figure supplement 1A-C) and spatial compartment data. The use of 3D genome conformation data is appropriate and addresses limitations of linear proximity assumptions. The percentages are clearly stated and the spatial compartment explanation for the observed differences is reasonable and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Genes interacting with TE+ enhancers display higher expression than genome average and show lineage-specific expression biased toward the cell type where the TEs are active. In contrast, genes interacting with TE- enhancers show similar expression between ESCs and TSCs and high expression across many tissues. This suggests TE+ enhancers may support lineage-specific gene expression, though correlations could emerge without causal links.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by RNA-seq analysis integrated with PCHi-C data (Figure 3B-D). The correlative nature of the findings is appropriately acknowledged (C86), and the statistical comparisons are clearly presented. The tissue-specificity analysis using ENCODE data (C83-C84) provides strong support for the lineage-specific expression pattern. The cautious interpretation (C85-C86) is scientifically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CRISPR-mediated genetic excision experiments identified functional TE enhancers: in TSCs, both tested TEs regulated Map3k8 and Scarf2 (~4-fold reduction); in ESCs, one RLTR13D6 element caused ~8-fold reduction in Tdrd12 expression and acted as an enhancer (not alternative promoter), while heterozygous deletion of a Smarcad1-interacting TE caused small but significant decrease. Two other ESC TEs had no effect, including Akap12, suggesting cell line-dependent regulatory roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 are supported by RT-qPCR data from CRISPR deletion experiments (Figure 4E-J) with appropriate biological replicates. The distinction between enhancer and promoter function (C92) is supported by RNA-seq data (Figure 4\u2014figure supplement 2). The cell line-dependent interpretation (C95) is reasonable given the discrepancy with prior published work. Statistical significance is reported and the experimental design is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "In hybrid 129\u00d7Cast ESCs, 98 TEs showed allele-specific chromatin accessibility, including 5 polymorphic elements. However, only 4 of 52 genes within 100 kb of these TEs displayed >1.5-fold allelic expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by analysis of published ATAC-seq and RNA-seq data from hybrid ESCs (Figure 4\u2014figure supplement 3). The low proportion of genes with allelic expression differences (C98) despite allele-specific enhancer activity provides additional evidence that many TE+ enhancers have minimal functional impact. The analysis appropriately uses allelic imbalance as a natural genetic perturbation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Genetic approaches identified a small set of TEs with functional roles in gene regulation in ESCs or TSCs, while other TEs play only minor, redundant, or no role despite strong correlative evidence from chromatin profiling and conformation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 synthesize the genetic editing results (C87-C98) and represent the major conclusion from the functional experiments. The conclusion is well-supported by the discrepancy between the large number of TE+ enhancers identified bioinformatically (634 in ESCs, 358 in TSCs) and the small number with demonstrated functional effects. This is a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Two sgRNA sets were designed for CRISPRi targeting of RLTR13D6 elements: set 1 targeted 420 elements (of 805 total) with at least one sgRNA; set 2 targeted 129 elements with multiple sgRNAs per element. Off-targets were mainly related RLTR13 subfamilies. Analysis of published data showed sgRNA binding predictions strongly correlate with Cas9 ChIP-seq signal (97% of binding events predictable in silico).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 describe the CRISPRi experimental design with clear rationale for the two sgRNA strategies (Figure 5\u2014figure supplement 1A). The off-target analysis (C104) is appropriate. The use of published LTR5Hs CRISPRi data to validate sgRNA predictions (C105-C106) is reasonable given the failed Cas9 ChIP-seq, though this introduces some uncertainty about the actual targeting efficiency in the mouse system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "CRISPRi reduced H3K27ac signal at targeted RLTR13D6 elements but not at RLTR9 elements (control). Elements targeted by multiple sgRNAs showed larger H3K27ac reduction. Set 1 resulted in >2-fold H3K27ac loss at 30 (56%) targeted elements; set 2 at 25 (46%) elements; 34 total elements affected across both sets (of 76 H3K27ac-marked elements).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 are supported by H3K27ac ChIP-seq data from CRISPRi experiments (Figure 5A-B). The specificity control using RLTR9 elements (C108) is appropriate. The dose-response relationship with sgRNA number (C109) validates the approach. The quantification is clear and the success rate (44% of H3K27ac-marked elements affected) demonstrates reasonable targeting efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "CRISPRi of RLTR13D6 elements resulted in significant differential expression of only three genes across both sgRNA sets: Tdrd12, Spp1, and Hook3. All three were associated with targeted RLTR13D6 elements likely acting as distal enhancers (>6 kb from TSS). Tdrd12 was the most downregulated gene with both sgRNA sets, and together with genetic deletion data, provides strong evidence that Tdrd12 expression critically depends on an intronic RLTR13D6 element acting as an enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 are supported by RNA-seq data from CRISPRi experiments (Figure 5C-G). The convergence of evidence from both CRISPRi and genetic deletion for Tdrd12 (C117) is particularly strong. The enhancer vs. promoter distinction (C118) is supported by RNA-seq showing no transcript structural changes (Figure 4\u2014figure supplement 2). This is a key result showing that despite targeting hundreds of elements, only 3 genes were significantly affected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Hook3 showed subtle expression changes despite pronounced H3K27ac loss at the associated RLTR13D6 element. Spp1 downregulation occurred largely independent of H3K27ac changes, suggesting enhancer inactivation through repressive marks or TF binding impairment. For remaining targeted TEs, associated genes showed at most 1.4-fold changes. CRISPRi data correlates with genetic excision data and is robust for detecting large expression effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 are supported by comparison of H3K27ac ChIP-seq and RNA-seq data (Figure 5F-G, Figure 5\u2014figure supplement 2). The mechanistic interpretation for Spp1 (C120) is speculative but reasonable. The validation through additional genetic deletion experiments (Figure 5\u2014figure supplement 3) strengthens the conclusion that CRISPRi is robust for large effects (C122). The modest effects for most TEs is a critical finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "TEs with regulatory potential in ESCs act mostly neutrally with respect to gene expression effects, contrasting with earlier chromatin profiling-based suggestions. The correlations from profiling likely reflect that TE insertions are best tolerated where their tissue-specific enhancer action matches nearby gene expression profiles, creating a 'safe niche' permissive for fixation by genetic drift. Some TE+ enhancers may act redundantly with TE- enhancers, which is a common feature of enhancer networks, though extensive genetic work is needed to evaluate this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128 represent the major interpretive conclusions of the study. C123 is well-supported by the functional data showing minimal effects for most TEs. The 'safe niche' hypothesis (C124-C125) is speculative but provides a reasonable evolutionary explanation for the observed patterns. The acknowledgment of possible redundancy (C126-C128) is appropriate and cites relevant literature (C127). The conclusions are appropriately cautious and acknowledge limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Comparison with published work on human LTR5Hs elements (which showed widespread regulatory roles for ~300 genes) suggests regulatory effects may vary between TE families and cellular contexts. More efficient targeting of all H3K27ac-marked RLTR13D6 elements might uncover additional regulatory elements, but effects from silencing 44% of these copies suggest regulatory RLTR13D6 elements would likely remain a minority. Other TE families not tested by CRISPRi may play important roles. Functional experiments need to be performed case-by-case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 appropriately contextualize the findings relative to published work on human LTR5Hs elements. The inference that regulatory RLTR13D6 elements would remain a minority (C132) is reasonable given the data. The acknowledgment of untested TE families (C134) and need for case-by-case testing (C135) is scientifically appropriate. The comparison highlights important biological variability while acknowledging technical differences between studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Functional TE enhancers were identified for ESC genes (Tdrd12, Smarcad1, Spp1, Hook3) and TSC genes (Map3k8, Scarf2). TDRD12 is essential for piRNA production and male fertility, suggesting the regulating RLTR13D6 element may also be active during germ line development. Smarcad1 knockout mice show growth defects and low fertility. Map3k8 and Spp1 knockout mice are viable and develop normally, suggesting associated TEs may be inconsequential to the organism. Most phenotypically relevant TE-derived regulatory elements have been discovered through naturally occurring phenotypes; the reverse approach is challenging with limited examples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C144 summarize the functional TEs identified and discuss their potential organismal significance. The functional data (C136-C137) are well-supported. The discussion of gene knockout phenotypes (C138, C140-C141) appropriately cites published literature. The speculation about TDRD12 TE activity in germ line (C139) and organismal impact (C142) is appropriately presented as possibility. The methodological point about phenotype-first vs. genotype-first approaches (C143-C144) is valid and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study addresses the gap between prior suggestions that TEs have been co-opted as enhancers in early mouse embryo lineages with little functional evidence. Using epigenomic/transcriptomic data and functional experiments (genetic editing and CRISPRi), the study found that while many TEs show enhancer-like features, only a minority play significant roles in gene regulation. This highlights the importance of functional experiments when evaluating TE regulatory roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 represent the study's abstract/introduction framing and main conclusions. These are well-supported by the comprehensive experimental evidence presented throughout the manuscript. The integration of correlative (C4) and functional (C5-C6) approaches provides strong support for the main conclusion (C7-C8) that functional testing is essential. This represents the core contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The findings provide perspective on abundant epigenomic indications of TE regulatory roles, reminding that a large proportion of mammalian genomic sequences are neutrally evolving. Evolutionary tinkering may still benefit from 'junk DNA' that can occasionally be put to good use, as evolution has been adept at turning some 'junk' into treasure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C148 represent the broader implications and philosophical framing of the work. C145-C146 are supported by the study's findings showing most TEs act neutrally despite enhancer-like features. C147-C148 provide appropriate evolutionary context with relevant citations. This framing appropriately balances the findings against the broader debate about junk DNA and genome function.",
+    "result_type": "MINOR"
+  }
+]

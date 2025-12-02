@@ -1,0 +1,389 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Fml1 suppresses IFSA in a manner dependent on its catalytic activity and C-terminal domain. Deletion of fml1 results in ~3-fold reduction in gene conversions and ~2.5-fold increase in spacer-dependent deletions (SDDs). Catalytically inactive mutants (K99R, D196N) phenocopy fml1\u0394. The C-terminal domain is required for gene conversion promotion but only partially required for SDD suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C48 provide quantitative data from Figure 1B showing that fml1\u0394, catalytic mutants, and fml1\u0394C all exhibit increased SDDs and reduced gene conversions with statistical significance. The data consistently demonstrate that both catalytic activity (C42-C43) and the C-terminal domain (C45-C48) are required for Fml1's function in suppressing IFSA, with the C-terminal domain showing partial requirement for SDD suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C134"
+    ],
+    "result": "Fml1 suppresses Rad51-independent SDDs. In rad51\u0394 fml1\u0394 double mutants, SDDs increase ~8-fold compared to rad51\u0394 single mutants and ~4-fold compared to wild-type, demonstrating that Fml1's role in suppressing SDDs is distinct from its role in promoting Rad51-dependent gene conversions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide quantitative data from Figure 1C with statistical analysis (p<0.0001) showing dramatic increases in SDDs in the double mutant. This epistasis analysis clearly establishes that Fml1 functions in a Rad51-independent pathway (C55, C134), which is a key finding distinguishing IFSA suppression from other recombination functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Fml1 interacts with Mhf1-Mhf2 through an extended region of its C-terminal domain. Pull-down assays show that C-terminal fragments (576-834) interact with MHF under high salt conditions, while the AAA mutation (Y672A, R674A, R678A) weakens but does not abolish this interaction. Crosslinking mass spectrometry reveals extensive contacts between MHF and Fml1's C-terminal domain but not the N-terminal helicase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by pull-down data in Figure 2C-D showing salt-dependent interactions. Claims C66-C68 are supported by crosslinking mass spectrometry data in Figure 2F. The multiple experimental approaches (pull-downs at different salt concentrations, crosslinking MS) provide converging evidence for the extended interaction interface, consistent with published structural data (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The AAA mutation in Fml1 has little effect on resistance to genotoxins (MMS, UV, cisplatin) in vivo, despite reducing interaction with MHF in vitro. In contrast, fml1\u0394C exhibits greater hypersensitivity than fml1\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by spot assay data in Figure 2\u2014figure supplement 1. However, the interpretation (C64) acknowledges uncertainty about whether the AAA mutation insufficiently disrupts the interaction in vivo or whether the C-terminal domain has other important functions. Claim C65 provides important context about previous errors in the literature, adding credibility to the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The mhf2D87A mutation causes MMS hypersensitivity without affecting growth or centromeric function. The mutation exhibits epistasis with fml1\u0394 for MMS sensitivity and shows <10% aberrant chromosome segregation (similar to fml1\u0394) compared to >40% in mhf2\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by spot assay data in Figure 3A-B showing the separation-of-function phenotype. Claims C74-C76 are supported by chromosome segregation analysis in Figure 3\u2014figure supplement 1. The epistasis analysis (C72-C73) provides strong evidence that D87A specifically affects MHF's Fml1-related function, which is a key finding for subsequent mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Mhf1-Mhf2D87A purifies as a 1:1 complex and exhibits DNA binding activity comparable to wild-type MHF, as judged by binding to a synthetic Holliday junction (X-12) in EMSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by biochemical data in Figure 3\u2014figure supplement 2A-B. The purification and EMSA data demonstrate that the D87A mutation does not disrupt MHF complex formation or DNA binding, which is important for establishing that the mutation specifically affects the Fml1 interaction rather than causing general structural defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The D87A mutation in Mhf2 disrupts MHF's non-centromeric localization without affecting centromeric localization or protein stability. Mhf1-GFP shows diffuse nuclear fluorescence in wild-type that depends on Fml1, and this non-centromeric localization is lost in mhf2D87A mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 are supported by Western blot and microscopy data in Figure 3\u2014figure supplement 3A-B. The data clearly show that mhf2D87A phenocopies fml1\u0394 with respect to non-centromeric MHF localization (C88-C89) while maintaining centromeric function (C85), providing strong evidence that the mutation specifically disrupts the Fml1-MHF interaction in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The D87A mutation in Mhf2 impairs the interaction between MHF and Fml1's C-terminal domain both in vitro and in vivo. Pull-down of Mhf1-Mhf2D87A by MBP-Fml1604-834 is efficient at low salt but greatly diminished at high salt. Co-immunoprecipitation shows reduced Fml1-Mhf1 interaction in mhf2D87A cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by pull-down data in Figure 4B. Claim C92 is supported by co-IP data in Figure 4\u2014figure supplement 1. The convergence of in vitro and in vivo evidence provides strong support that the D87A mutation specifically weakens the Fml1-MHF interaction, which is central to the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Combining Fml1AAA and Mhf2D87A mutations has an additive effect on weakening Fml1-MHF complex formation in vitro and causes synergistic MMS sensitivity in vivo. At intermediate salt concentrations (200-300 mM NaCl), MBP-Fml1604-834AAA can pull-down Mhf1-Mhf2 but not Mhf1-Mhf2D87A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by pull-down data in Figure 4A-B showing differential binding at intermediate salt concentrations. Claim C96 is supported by spot assay data in Figure 4C showing synergistic MMS sensitivity. The correlation between in vitro complex formation and in vivo phenotypes (C97) supports the conclusion that the C-terminal domain's key function is mediating MHF interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Single fml1AAA and mhf2D87A mutants show increased SDDs similar to fml1\u0394C, but gene conversions are less affected. The fml1AAA mhf2D87A double mutant more closely recapitulates the fml1\u0394C phenotype for both SDDs and gene conversions, suggesting that SDD suppression is more sensitive to disruption of Fml1-MHF interaction than gene conversion promotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by quantitative recombination data in Figure 5 with statistical analysis. The differential sensitivity of the two functions (C103-C104) is an important mechanistic insight supported by the data, though the interpretation involves some inference about the relative tolerance of different Fml1 functions to partial loss of MHF interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "MHF interaction promotes Fml1 stability in vivo. Fml1-13Myc levels are dramatically reduced in mhf2D87A mutants, while Fml1\u0394C-13Myc shows normal stability. Fml1AAA-13Myc exhibits increased stability even in mhf2D87A background, indicating that MHF's interaction with Fml1 plays roles beyond protein stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 are supported by Western blot data in Figure 6A-B. The inference that Fml1 is rendered unstable by its C-terminal domain and stabilized by MHF (C111) is well-supported by the data. Claims C113-C114 provide important mechanistic insight that the synergistic phenotypes of double mutants reflect additional roles for MHF beyond stabilization, supported by the observation that Fml1AAA is more stable than wild-type Fml1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Fml1 catalyzes regressed fork restoration in vitro with a strong preference for lagging gap forks. Fml1\u0394C requires ~20-fold less protein for lagging gap fork restoration compared to leading gap or regressed forks. Fork restoration depends on ATPase activity. Fml1-MHF exhibits faster restoration kinetics than Fml1\u0394C. RPA does not impede lagging gap fork restoration but reduces leading gap fork restoration by ~2-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C122 are supported by extensive biochemical data in Figure 8B-G showing concentration-dependent and time-course experiments with multiple substrates. The preference for lagging gap forks (C115) is clearly demonstrated with quantitative data. The ATPase dependence (C116) is confirmed with catalytically inactive mutants in Figure 8\u2014figure supplement 1. The differential effects of RPA on different substrates (C121-C122) are well-documented in Figure 8F-G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Rad52 inhibits fork restoration by Fml1-MHF in vitro. At tested concentrations, restoration product is reduced 2.6-fold at lowest Fml1-MHF concentration and 1.5-fold at highest. Both Fml1\u0394C and Fml1-MHF are particularly adept at restoring lagging gap forks, which are proposed IFSA intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is supported by quantitative data in Figure 8\u2014figure supplement 2B showing dose-dependent inhibition by Rad52. Claims C124-C125 integrate the in vitro findings with the biological model, supported by the substrate preference data and differential effects of RPA vs. Rad52. The connection to IFSA (C124) is reasonable given the biological context, though it involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Fml1\u0394C and Fml1-MHF can unwind 5' flap structures indicative of 3' to 5' helicase activity. Rad52 strongly inhibits unwinding of the annealed strand but not the adjacent strand. The extent of Rad52 inhibition differs between fork restoration and 5' flap unwinding assays, and this difference is not due to different reaction conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are supported by data in Figure 9B and 9E showing differential unwinding in the presence and absence of Rad52. Claims C129-C131 are supported by comparison of data from Figure 8\u2014figure supplement 2 and Figure 9\u2014figure supplement 1, demonstrating that the differential inhibition is substrate-dependent rather than condition-dependent. This provides mechanistic insight into how Rad52 might regulate Fml1 activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Fml1 has distinct roles in promoting Rad51-dependent gene conversions and suppressing SDDs. SDD suppression depends on ATPase activity (suggesting helicase/translocase activity is required) and is supported by the C-terminal domain. Gene conversion and DNA repair are totally dependent on the C-terminal domain, while Fml1\u0394C retains partial SDD suppression ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 synthesize findings from multiple experiments (Figures 1-2) showing differential requirements for catalytic activity and C-terminal domain in different functions. The distinction between total dependence (gene conversion/DNA repair) and partial dependence (SDD suppression) on the C-terminal domain (C137-C139) is well-supported by the quantitative data in Figure 1B. Claim C132 provides context from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The interaction between Fml1's C-terminal domain and MHF is important for DNA repair and recombination, with multiple functions beyond protein stability. Mutations weakening Fml1-MHF interaction phenocopy fml1\u0394C for SDD frequency and partially for gene conversion and MMS sensitivity. Fml1\u0394C is defective despite being stable, and double mutants show synergistic phenotypes without further reducing Fml1 stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 are supported by data in Figures 4-5 showing that mutations disrupting the interaction impair function. Claims C143, C146-C148 integrate findings from Figure 6 about protein stability with functional data, providing strong evidence that MHF has multiple roles. The logic is sound: if stability were the only function, Fml1\u0394C (which is stable) should be functional, and double mutants (where Fml1AAA is more stable) should not show worse phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Fork restoration provides a plausible mechanism for IFSA suppression in vivo. Fml1 exhibits strong preference for lagging gap regressed forks (the proposed substrate at RTS1), and this activity is not impeded by RPA. However, Rad52 inhibits fork restoration, suggesting Fml1's in vivo activity may depend on relative concentrations of Rad52 and Fml1 at the regressed fork.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160 integrate in vitro biochemical findings (Figures 8-9) with the biological model. The substrate preference (C158) is well-documented experimentally. The lack of RPA inhibition (C159) and presence of Rad52 inhibition (C160) are supported by quantitative data. However, the extrapolation to in vivo function (C155-C157) involves speculation, though it is reasonable speculation based on solid experimental evidence. The model is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Fml1 exhibits differential activity on leading vs. lagging gap forks, with implications for different DNA damage tolerance pathways. Leading gap fork restoration is inhibited by RPA and shows relatively little activity. This differential activity makes biological sense given that leading gap forks are intermediates in template switching pathways, while lagging gap forks may require restoration after template switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C166 are supported by data in Figure 8F-G showing differential activity and RPA sensitivity. Claims C167-C172 provide biological context from the literature about template switching pathways. Claim C173 is a reasonable inference from the data showing that Fml1-MHF can restore lagging gap forks, suggesting it may contribute to fork resetting. However, the in vivo relevance (C170-C173) involves speculation beyond the direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background and context claims about IFSA, DNA replication problems, RDR, FANCM family proteins, and the MHF complex. These establish the biological context and prior knowledge that motivates the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 are primarily citations to published literature (C7-C27) or statements about prior work from the authors (C1-C2, C17-C18). These provide essential context but are not new findings from this manuscript. They are well-supported by the cited literature and accurately represent the state of knowledge in the field. Claim C28 appropriately identifies the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C33",
+      "C144",
+      "C145",
+      "C149",
+      "C150",
+      "C152",
+      "C153",
+      "C154",
+      "C162",
+      "C163",
+      "C171",
+      "C174",
+      "C176",
+      "C177"
+    ],
+    "result": "Speculative claims about mechanisms and future directions. These include speculation about how fork restoration might suppress IFSA in vivo, how MHF might enhance Fml1 activity, how Rad52 might inhibit Fml1, and how the balance of activities might be regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33, C144-C145, C149-C150, C152-C154, C162-C163, C171, C174, C176-C177 are explicitly stated as speculation by the authors or involve mechanistic proposals that go beyond the direct experimental evidence. While these speculations are reasonable and well-informed by the data, they represent hypotheses for future testing rather than established findings. The authors appropriately qualify these as speculation or possibilities.",
+    "result_type": "MINOR"
+  }
+]

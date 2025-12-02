@@ -1,0 +1,2028 @@
+{
+  "submission": {
+    "id": "39d7fb4b-0d0c-4d19-b063-f274df56dfc6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:51:29.147925Z",
+    "updated_at": "2025-12-02T10:51:29.147925Z"
+  },
+  "content": [
+    {
+      "id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "submission_id": "39d7fb4b-0d0c-4d19-b063-f274df56dfc6",
+      "content_type": "manuscript",
+      "content_text": "# Circulating T cell-monocyte complexes are markers of immune perturbations\n\n## Authors\n\n- Julie G Burel<sup>1</sup> ([ORCID: 0000-0003-1692-2758](https://orcid.org/0000-0003-1692-2758))\n- Mikhail Pomaznoy<sup>1</sup>\n- Cecilia S Lindestam Arlehamn<sup>1</sup>\n- Daniela Weiskopf<sup>1</sup>\n- Ricardo da Silva Antunes<sup>1</sup>\n- Yunmin Jung<sup>2</sup>\n- Mariana Babor<sup>1</sup>\n- Veronique Schulten<sup>1</sup>\n- Gregory Seumois<sup>1</sup>\n- Jason A Greenbaum<sup>3</sup>\n- Sunil Premawansa<sup>4</sup>\n- Gayani Premawansa<sup>5</sup>\n- Ananda Wijewickrama<sup>6</sup>\n- Dhammika Vidanagama<sup>7</sup>\n- Bandu Gunasena<sup>8</sup>\n- Rashmi Tippalagama<sup>9</sup>\n- Aruna D deSilva<sup>1</sup>\n- Robert H Gilman<sup>10</sup>\n- Mayuko Saito<sup>12</sup>\n- Randy Taplitz<sup>13</sup>\n- Klaus Ley<sup>2</sup>\n- Pandurangan Vijayanand<sup>1</sup>\n- Alessandro Sette<sup>1</sup>\n- Bjoern Peters<sup>1</sup> ([ORCID: 0000-0002-8457-6693](https://orcid.org/0000-0002-8457-6693)) \u2020\n\n### Affiliations\n\n1. Division of Vaccine Discovery La Jolla Institute for Immunology La Jolla United States\n2. Division of Inflammation Biology La Jolla Institute for Immunology La Jolla United States\n3. Bioinformatics core La Jolla Institute for Immunology La Jolla United States\n4. Department of Zoology and Environment Sciences, Science Faculty University of Colombo Colombo Sri Lanka\n5. North Colombo Teaching Hospital Ragama Sri Lanka\n6. National Institute of Infectious Diseases Gothatuwa Sri Lanka\n7. National Tuberculosis Reference Laboratory Welisara Sri Lanka\n8. National Hospital for Respiratory Diseases Welisara Sri Lanka\n9. Genetech Research Institute Colombo Sri Lanka\n10. Johns Hopkins School of Public Health Baltimore United States\n11. Universidad Peruana Cayetano Heredia Lima Peru\n12. Department of Virology Tohoku University Graduate School of Medicine Sendai Japan\n13. Division of Infectious Diseases and Global Public Health University of California, San Diego La Jolla United States\n14. Department of Bioengineering University of California, San Diego La Jolla United States\n15. Department of Medicine University of California, San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOur results highlight for the first time that a significant proportion of cell doublets in flow cytometry, previously believed to be the result of technical artifacts and thus ignored in data acquisition and analysis, are the result of biological interaction between immune cells. In particular, we show that cell:cell doublets pairing a T cell and a monocyte can be directly isolated from human blood, and high resolution microscopy shows polarized distribution of LFA1/ICAM1 in many doublets, suggesting in vivo formation. Intriguingly, T cell-monocyte complex frequency and phenotype fluctuate with the onset of immune perturbations such as infection or immunization, reflecting expected polarization of immune responses. Overall these data suggest that cell doublets reflecting T cell-monocyte in vivo immune interactions can be detected in human blood and that the common approach in flow cytometry to avoid studying cell:cell complexes should be re-visited.\n\n## Introduction\n\nCommunication between immune cells is a major component of immune responses, either directly through cell-cell contacts or indirectly through the secretion of messenger molecules such as cytokines. In particular, the physical interaction between T cells and antigen-presenting cells (APCs) is critical for the initiation of immune responses. APCs such as monocytes can take up debris from the extracellular environment, and will display fragments of it on their surface to T cells, which can identify potentially harmful, non-self antigens. There is paucity of data regarding T cell-APCs interactions in humans in vivo, but they appear to be highly diverse in terms of structure, length and function, depending on the nature and degree of maturation of the T cell and APC (Friedl and Storim, 2004).\n\nDespite the importance of interactions between immune cells, many experimental techniques in immunology specifically avoid studying cell:cell complexes, in particular for the analysis of clinical samples obtained ex vivo. The most notable example for this is in flow cytometry, in which cells are labeled with a panel of fluorochrome-conjugated antibodies, and each cell is then individually hit by a laser and its corresponding fluorescence emission spectra recorded. In this process, doublets (a pair of two cells) are routinely observed but are believed to be the results of technical artifacts due to ex vivo sample manipulation and are thus usually discarded, or ignored in data analysis (Kudernatsch et al., 2013).\n\nBlood is the most readily accessible sample in humans with high immune cell content. We and others have shown circulating immune cells contain critical information that can be used for diagnostic-, prognostic- and mechanistic understanding of a given disease or immune perturbation (Bongen et al., 2018; Burel et al., 2018; Grifoni et al., 2018; Roy Chowdhury et al., 2018; Zak et al., 2016). Thus, whereas blood does not fully reflect what is occurring in tissues, it contains relevant information from circulating immune cells that have been either directly impacted by the perturbation, or indirectly through cell contact with tissue-resident cells in the affected compartment, including lymphoid organs.\n\nHowever, the presence of dual-cell complexes (and their content) has never been studied in the peripheral blood and in the context of immune perturbations. Monocytes are a subtype of phagocytes present in high abundance in the peripheral blood, which play a critical role in both innate and adaptive immunity (Jakubzick et al., 2017). In particular, monocytes have the capacity to differentiate into highly specialized APCs such as macrophages or myeloid DCs (Sprangers et al., 2016). More recently, it has been highlighted that they might directly function as APCs and thus contribute to adaptive immune responses (Jakubzick et al., 2017; Randolph et al., 2008).\n\nWe recently identified a gene signature in memory CD4+\u00a0T cells circulating in the peripheral blood that distinguishes individuals with latent TB infection (LTBI) from uninfected individuals (Burel et al., 2018). Surprisingly, this dataset also led to the discovery of a group of monocyte-associated genes co-expressed in memory CD4+\u00a0T cells whose expression is highly variable across individuals. We ultimately traced this signature to a population of CD3+CD14+\u00a0cells that are not single cells but T cell:monocyte complexes present in the blood and that can be detected following immune perturbations such as disease or vaccination. The frequency and T cell phenotypes of these complexes appear to be associated with the nature of pathogen or vaccine. Thus, studying these complexes promises to provide insights into the impact of immune perturbation on APCs, T cells and their interactions.\n\n## Results\n\n### Unexpected detection of monocyte gene expression in CD4+\u00a0memory T cells from human subjects\n\nWe initially set out to investigate the inter-individual variability of gene expression within sorted memory CD4+\u00a0T cells from our previously characterized cohort of individuals with latent tuberculosis infection (LTBI) and uninfected controls (Burel et al., 2018). Within the 100 most variable genes, we identified a set of 22 genes that were highly co-expressed with each other (22-var set, Figure 1A, Figure 1\u2014source data 1). Strikingly, many of the genes contained within the 22-var set were previously described as being highly expressed in classical monocytes (and to a lower extent non-classical monocytes) but not in T cells (Figure 1B, Schmiedel et al., 2018). In particular, the 22-var set contained the commonly used monocyte lineage marker CD14, the lysozyme LYZ and the S100 calcium binding proteins S100A8 and S100A9, which are known to be extremely abundant in monocytes (Figure 1B). By examining the flow cytometry data that were acquired during cell sorting and applying our memory CD4+\u00a0T cell gating strategy (Figure 1\u2014figure supplement 1A), we identified that indeed there was a subpopulation within sorted memory CD4+\u00a0T cells that stained positive for CD14 (Figure 1C). More importantly, the proportion of memory CD4+\u00a0T cells that were CD14+\u00a0was positively correlated with the 22-var set expression (spearman correlation coefficient r\u00a0=\u00a00.42, p<0.0001, Figure 1D), suggesting that this cell subset is responsible for the expression of the monocyte-associated genes identified in Figure 1A. The CD14+\u00a0memory CD4+\u00a0T cell population has similar forward and side scatter (FSC/SSC) values to other memory CD4+\u00a0T cells and was thus sorted along with conventional CD14- memory CD4+\u00a0T cells (Figure 1\u2014figure supplement 1B). In particular, there was no indication that CD14+\u00a0memory CD4+\u00a0T cells were the product of a technical artifact, such as dead cells or a compensation issue.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig1-v1.jpg)\n\n**Figure 1.:** (A) The top 100 most variable genes in memory CD4+\u00a0T cells across TB uninfected (TBneg) and LTBI infected subjects. (B) Immune cell type specific expression of the 22-var genes identified in A). Every bar consists of stacked sub-bars showing the TPM normalized expression of every gene in corresponding cell type. Expression of genes for the blood cell types shown were taken from the DICE database (Schmiedel et al., 2018, http://dice-database.org/). (C) Detection of CD14+\u00a0events within sorted CD4+\u00a0memory T cells and (D) non-parametric spearman correlation between their frequency and the PC1 from the 22-var genes. (E) Gated on \u2018singlet total live cells\u2019, two populations of CD3+CD14+\u00a0cells can be identified based on the level of expression of CD14. (F) Based on FSC and SSC parameters, CD3+CD14hi cells are contained within the monocyte gate, whereas CD3+CD14mid cells are contained within the lymphocyte gate. Data were derived from 30 LTBI subjects and 29 TB uninfected control subjects.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Gating strategy to isolate bulk memory CD4+\u00a0T cells. (B) Backgating of CD14+\u00a0cells within sorted memory CD4+\u00a0T cells.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig1-figsupp2-v1.jpg)\n\n### Distinct CD3+CD14+\u00a0cell populations are present in the monocyte vs. the lymphocyte size gate\n\nTo further investigate the origin of the CD14+\u00a0T cell population, we analyzed our flow cytometry data, this time not restricting to the compartment of sorted memory T cells, but looking at all cells. When gating on live FSC/SSC (including both monocytes and lymphocytes) singlet cells (Figure 1\u2014figure supplement 2), two populations of CD3+CD14+\u00a0could be readily identified: CD3+CD14hi cells and CD3+CD14mid cells (Figure 1E). CD3+CD14hi cells were predominantly contained within the monocyte size gate, whereas CD3+CD14mid cells were contained within the lymphocyte size gate (Figure 1F).\n\n### CD3+CD14+\u00a0cells consist of T cells bound to monocytes or monocyte debris\n\nTo better understand the nature of CD3+CD14+\u00a0cells, we aimed to visualize the distribution of their markers using imaging flow cytometry. Live events were divided into monocytes (CD3-CD14+), T cells (CD3+CD14-), CD3+CD14hi cells, and CD3+CD14mid cells (Figure 2A), and a random gallery of images was captured for each population. As expected, monocytes and T cells contained exclusively single cells that expressed either CD14 (monocytes) or CD3 (T cells), respectively (Figure 2B, first and second panel). To our surprise, CD3+CD14hi cells contained predominantly two cells, sometimes even three cells, but no single cells (Figure 2B, third panel). The doublets (or triplets) always contained at least one CD14+\u00a0cell, and one CD3+\u00a0cell (Figure 2B, third panel). CD3+CD14mid cells contained predominantly single CD3+\u00a0cells, but also some doublets of one CD3+\u00a0cell and one CD14+\u00a0cell, but with CD14 expression lower than average monocytes (Figure 2B, fourth panel). The majority of CD3+\u00a0T cell singlets in the CD3+CD14mid population, but not in the CD3+CD14 T cell population, contained CD14+\u00a0particles, often seen at the periphery of the CD3+\u00a0T cell membrane (Figure 2B\u2013C). Looking more closely at the CD14+\u00a0particles contained within the CD3+\u00a0CD14 mid population using confocal microscopy, they were found to have size and shape similar to cell debris (Figure 2D). To confirm our initial observation, we repeated the experiment with multiple individuals, and compared for each cell population the aspect ratio and area from the brightfield parameter collected with the image stream. Doublets are known to present a larger area but reduced aspect ratio, when compared to single cells. Thus, their overall ratio (area vs aspect ratio) is greater than in single cells. As expected, the area vs aspect ratio was significantly higher for CD3+CD14hi cells and CD3+CD14mid cells compared to single monocytes and T cells, and events in these two cell populations were found predominantly in the \u2018doublet gate\u2019 (Figure 2E\u2013F). CD3+CD14hi cells also had a significantly higher ratio compared to CD3+CD14mid cells (Figure 2F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig2-v1.jpg)\n\n**Figure 2.:** (A) Gating strategy and (B) random gallery of events for monocytes (CD14+CD3), T cells (CD3+CD14-), CD3+CD14hi cells and CD3+CD14mid cells determined by imaging flow cytometry (ImageStreamX, MkII Amnis Amnis). CD14+\u00a0cell debris were identified within CD3+CD14mid cells (C) by imaging flow cytometry and (D) confocal microscopy after bulk population cell sorting. (E) Plots and (F) Ratio of Aspect ratio vs Area of the brightfield parameter for monocytes (CD14+CD3-), T cells (CD3+CD14-), CD3+CD14hi cells and CD3+\u00a0CD14 mid cells, determined by imaging flow cytometry. (G) Non-parametric Spearman correlation of the frequency of T cell:monocyte complexes in paired fresh PBMC vs cryopreserved PBMC derived from 45 blood draws of healthy subjects. T cell:monocyte complexes were defined as the CD3+CD14+\u00a0cell population gated from live singlets as represented in Figure 1\u2014figure supplement 2. (H) Single z-plan (0 \u03bcm) images (left) and z-plane stacks (right) of the region marked (dashed rectangle) from one sorted CD3+\u00a0CD14+\u00a0T cell:monocyte complex displaying accumulation of LFA1 and ICAM1 at the interface. Images show expression of CD14 (blue), CD3 (green), ICAM1(Cyan), and LFA1 (Magenta). Relative z-positions are indicated on the right, and scale bars represent 2 \u03bcm. Imaging flow cytometry data was derived from 10 subjects across three independent experiments and microscopy data was representative of the analysis of n\u00a0=\u00a0105 CD3+CD14+\u00a0complexes isolated from three subjects across three independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Non-parametric spearman correlation between T cell:monocyte complexes frequencies in whole blood versus fresh PBMC. Red blood cells were magnetically depleted from fresh whole blood using the EasySep RBC depletion kit (STEMCELL technologies) according to the manufacturer\u2019s instructions. (B) Comparison of T cell:monocyte complexes frequencies in fresh and frozen PBMC isolated from blood samples collected in heparin or EDTA. (C) Non-parametric spearman correlation of T cell:monocyte complexes frequency over time in fresh and frozen PBMC samples isolated from longitudinal blood draws collected one week apart. (D) Effect of Fc-receptor blocking on the frequency of T cell:monocyte complexes in frozen PBMC. Data derived from n\u00a0=\u00a010 (A\u2013B), n\u00a0=\u00a05 (C) and n\u00a0=\u00a04 (D) independent healthy individuals. T cell:monocyte complexes were defined as the CD3+CD14+\u00a0cell population gated from live singlets as represented in Figure 1\u2014figure supplement 2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Single z-plan (0\u03bcm) images (left) and z-plane stacks (right) of the region marked (dashed rectangle) from one sorted CD3+CD14+ Tcell:monocyte complex displaying accumulation of LFA1 and ICAM1 at the interface. Images show expression of CD14 (blue), CD3 (green), ICAM1(Cyan), and LFA1 (Magenta). Relative z-positions are indicated on the right, and scale bars represent 2 \u03bcm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The frequency of T cell:monocyte complexes was assessed with or without various treatments (as outlined in the table) from frozen PBMC of three healthy individuals. T cell:monocyte complexes were defined as the CD3+CD14+ cell population gated from live singlets as represented in Figure 1\u2014figure supplement 2.\n\nTaken together, these results demonstrate that CD3+CD14hi cells are tightly bound T cell:monocyte complexes, in such strong interaction that sample processing and flow cytometry acquisition did not break them apart. Conversely, the CD3+CD14mid population appears to predominantly consist of single CD3+\u00a0T cells with attached CD14+\u00a0cell debris. This conclusion is further supported by CD3+CD14hi complexes being found in the monocyte size gate, whereas CD3+CD14mid cells were falling into the lymphocyte size gate (Figure 1F).\n\nFor the remaining of the manuscript, we refer to T cell:monocyte complexes as the CD3+CD14+\u00a0population gated from live singlets cells, as represented in Figure 1\u2014figure supplement 2.\n\n### T cell:monocyte complexes are not the result of ex vivo sample manipulation\n\nNext, we sought to determine whether the physical association of T cells and monocytes within the T cell:monocyte complexes was the result of random cellular proximity or non-specific antibody staining during ex vivo sample manipulation, or if the complexes are originally present in peripheral blood. We could readily detect T cell:monocyte complexes in freshly isolated PBMC, and at similar frequencies as the same samples after cryopreservation (Figure 2G). In another set of samples, using red blood cell (RBC) magnetic depletion (and thus minimal sample manipulation), we could successfully identify T cell:monocyte complexes directly from whole blood at frequencies matching the same sample after PBMC isolation (Figure 2\u2014figure supplement 1A). We also assessed the effect of the anti-coagulant used for blood collection, and found similar frequencies of T cell:monocyte complexes using either heparin or EDTA, in both fresh and frozen PBMC (Figure 2\u2014figure supplement 1B). More strikingly, in a small healthy population bled longitudinally one week apart, their frequency was variable between individuals, but highly stable over time within each individual (non-parametric spearman correlation r\u00a0=\u00a01 and r\u00a0=\u00a00.9 for fresh and frozen PBMC, respectively, Figure 2\u2014figure supplement 1C). Finally, to rule out that non-specific binding of antibody conjugates used for flow cytometry staining could be the result of complex formation (via Fc-receptors, known to be highly abundant in the surface of monocytes), we compared the frequency of T cell:monocyte complexes obtained from cryopreserved PBMC in the presence or absence of a Fc-receptor blocking reagent. The frequency of T cell:monocyte complexes frequencies was unchanged when blocking Fc-receptor binding of conjugated antibodies (Figure 2\u2014figure supplement 1D).\n\nTaken together these data rule out that ex vivo manipulation of the blood sample could be responsible for T cell:monocyte complexes formation and thus suggest their presence in vivo in peripheral blood.\n\n### T cell:monocyte complexes show increased expression of adhesion molecules at their interface\n\nDuring T cell recognition of epitopes on APCs such as monocytes, the two cells are known to form an \u2018immune synapse\u2019 at their contact point, which is stabilized by key adhesion molecules such as LFA1 on the T cell, and ICAM1 on the APC (Dustin, 2014). Upon interaction these two molecules undergo a drastic redistribution by focusing almost exclusively at the cell:cell point of contact, thus forming a \u2018ring\u2019 that can be visualized (Wabnitz and Samstag, 2016). To identify candidate immunological synapses in T cell:monocyte complexes, we used high resolution Airyscan images of sorted doublets (see Figure 1\u2014figure supplement 2 for sorting strategy). Almost a third (thirty out of 105, 29%) of doublets analyzed from three different individuals displayed accumulation and polarization of ICAM1 and LFA1 at their interfaces (Figure 2H). The percentage of polarized doublets ranged from 17% to 67% between the subjects. In seven doublets, CD3 also accumulated together with LFA1 (Figure 2\u2014figure supplement 2). However, we did not find well developed, classical immunological synapses, defined by central accumulation of CD3 and LFA1 exclusion from central region of a synapse (Monks et al., 1998; Thauland and Parker, 2010). Overall, this suggests that a significant fraction of the detected T cell:monocyte complexes utilizes adhesion markers associated with T cell:APC synapse formation to stabilize their interaction, but they do not appear to undergo active TCR signaling at the moment of capture and acquisition.\n\nTo assess the strength of the adhesion between the T cell and the monocyte within complexes, we explored various in vitro conditions in which we attempted to break down their interaction. As seen in Figure 2\u2014figure supplement 3, in all three individuals tested, the frequency of T cell:monocyte complexes was reduced after vigorous pipetting up/down, and the strongest \u2018destructive effect\u2019 was observed with mild sonication. Incubation with RBC lysis buffer disrupted the T cell:monocyte complexes in one out of three individuals, while addition of high concentration of anti-chelating agent EDTA had no effect on their frequency. Thus, it appears that it is possible to disrupt T cell:monocyte complexes with physical methods. Conversely, we tried to promote their in vitro formation by stimulating PBMC for two hours to several days, with various concentrations of highly antigenic stimuli (such as LPS, PHA, SEB or live BCG) without success, which might be due to issues with monocytes attaching to the culture plates (data not shown).\n\n### Conventional flow cytometry parameters could not differentiate between T cells and monocytes in a complex versus not in a complex\n\nSo far, our identification of T cell:monocyte complexes has been solely relying on the co-expression of CD3 and CD14 within cells falling into the live singlet gate (Figure 1\u2014figure supplement 2). In order to fine-tune their detection, we investigated whether we could identify some additional flow cytometry parameters that could separate T cells and monocytes in a complex vs. not in a complex. The area (A), height (H) and width (W) of the peak from forward and side scatter parameters are routinely used in flow cytometry to identify doublets. A non-linear staining between any 2D combination of these three parameters is indicative of cell aggregates. The density plot of CD3+CD14+\u00a0cells overlapped with both CD3+\u00a0cells and especially CD14+\u00a0cells for any combination of A, H and W for both FSC and SSC parameters (Figure 3A). An additional parameter often used to \u2018clean up\u2019 the gating of cells within biological samples is the use of CD45-SSC gating (Harrington et al., 2012). We found that the frequency of T cell:monocyte complexes was not affected by applying an initial CD45-SSC gate filtering (Figure 3B, see gating in Figure 3\u2014figure supplement 1). In conclusion, we could not find any parameter from conventional flow cytometry that could separate singlets and T cell:monocyte complexes with sufficient resolution.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig3-v1.jpg)\n\n**Figure 3.:** (A) 2D density plots of A, H and W from FSC and SSC parameters for CD3-CD14+ Monocytes (red), CD3+CD14- T cells (green) and CD3+CD14+ T cell:monocyte complexes (T:M, blue). Representative staining of one healthy individual. (B) Frequency of T cell:monocyte complexes cells with or without addition of CD45-SSC filtering gate (see Figure 3 \u2013 figure supplement 1 for gating strategy). Expression of canonical markers for (C) monocytes and (D) T cells in CD3-CD14+ Monocytes (red), CD3+CD14- T cells (green) and CD3+CD14+ T cell:monocyte complexes (T:M, blue). (E) Expression of CD4 and CD8 and division into T cell subsets within T cell:monocyte complexes. (F) Expression of CD45RA and CCR7 and division into na\u00efve, central memory (Tcm), effector memory (Tem) and effector memory re-expressing CD45RA (Temra) subsets within T cell:monocyte complexes. Data derived from frozen PBMC of n=30 (A, E, F), n=8 (B) and n=4 (C, D) healthy individuals. Unless otherwise stated, T cell:monocyte complexes were defined as the CD3+CD14+ cell population gated from live singlets as represented in Figure 1\u2014figure supplement 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig3-figsupp1-v1.jpg)\n\n### No difference in T cell and monocyte canonical marker expression was identified between T cells and monocytes in a complex versus not in a complex\n\nIn parallel, we analyzed the expression of various markers known to be exclusively expressed by either monocytes or T cells within T cell:monocyte complexes from healthy individuals. Monocytes in a complex (CD14+CD3+) vs. not in a complex (CD14+CD3-) had similar expression for monocyte canonical markers: CD33, CD36, CD64 and CD163 (Figure 3C). Similarly, no difference in the levels of expression of T cell canonical markers, CD2, CD5, CD7 and CD27 was observed between T cells in a complex (CD3+CD14+) vs. not in a complex (CD3+CD14-) (Figure 3D). Additionally, both CD4 and CD8 T cell subsets could be found in association with a monocyte (Figure 3E), as well as na\u00efve and memory phenotypes (Figure 3F). Thus, there was no obvious T cell or monocyte marker that could differentiate between monocytes and T cells present in a complex vs. not in a complex, suggesting the ability to form complexes is a general property of all CD14\u00a0+monocytes and T cell subsets.\n\n### The frequency of T cell:monocyte complexes varies in the context of diverse immune perturbations\n\nNext, we thought to examine whether the formation of T cell:monocyte complexes is affected by immune perturbations. In order to accurately assess and compare the frequency of complexes between cells of different types across different donor cohorts, we need to consider that their frequency is dependent on the abundance of its two components. Indeed, in healthy subjects, where we expect constant affinity between T cells and monocytes, we observed that the frequency of CD3+CD14+\u00a0cells is a linear function of the product of singlet monocyte and T cell frequencies (Figure 4A). To correct for this, we elected to express the abundance of T cell:monocytes complexes as a constant of association Ka, where similarly to a constant of chemical complex association, the frequency of T cell:monocyte complexes is divided by the product of the frequency of both T cells and monocytes (Figure 4B). As T cell and monocyte frequencies in the blood can fluctuate greatly during immune perturbations, the Ka is a more accurate readout of the likelihood of T cell:monocyte complex formation as opposed to raw frequencies, the latter being biased towards the overall abundance of each subset forming the complex.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig4-v1.jpg)\n\n**Figure 4.:** (A) Non-parametric spearman correlation between the frequency of T cell:monocyte complexes and the product of singlet T cells and monocyte frequencies in healthy subjects (n\u00a0=\u00a059). (B) Formula for the calculation of the T cell:monocyte constant of association Ka. T cell:monocyte complexes constant of association Ka in (C) active TB subjects at diagnosis and 2 months post treatment (n\u00a0=\u00a015), (D) individuals with acute dengue fever (n\u00a0=\u00a018), acute dengue hemorrhagic fever (n\u00a0=\u00a024) or previously infected (n\u00a0=\u00a047) and (E) previously vaccinated healthy adults (n\u00a0=\u00a016) before and three days post boost with Tdap vaccine, calculated as explained in B). (F) The constant of association Ka between monocytes and T cell subsets in active TB subjects at diagnosis (n\u00a0=\u00a025), individuals with acute dengue hemorrhagic fever (n\u00a0=\u00a024) and previously vaccinated healthy adults three days post boost with Tdap vaccine (n\u00a0=\u00a016), calculated as explained in B). Statistical differences over time and across cell populations within subjects were determined using the non-parametric paired Wilcoxon test; other statistical differences were determined using the non-parametric Mann-Whitney test; *, p<0.05; **, p<0.01; ***, p<0.01; ****, p<0.0001. Plots represent individual data points, median and interquartile range across all subjects within each cohort. Raw frequencies of T cell:monocyte complexes for the different disease cohorts are available on Figure 4\u2014figure supplement 4. T cell:monocyte complexes were defined as the CD3+CD14+\u00a0cell population gated from live singlets as represented in Figure 1\u2014figure supplement 2. CD4 and CD8 subsets within T cell:monocyte complexes were defined as presented in Figure 3E.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** T cell:monocyte constant of association Ka was calculated as explained in Figure 4B from active TB samples (n\u00a0=\u00a015) collected at diagnosis from Sri Lanka, latent TB samples collected from subjects living in San Diego (n\u00a0=\u00a022) or Peru (n\u00a0=\u00a08), and TB uninfected samples collected from subjects living in San Diego (n\u00a0=\u00a029) or Sri Lanka (n\u00a0=\u00a014). Plots represent individual data points, median and interquartile range across all subjects within each cohort.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Previously vaccinated healthy subjects (n\u00a0=\u00a016) were re-immunized with Tdap and blood collected before, one day, three days, seven days and fourteen days post boost. Plots represent the median and interquartile range across all 16 subjects. T cell:monocyte constant of association Ka was calculated as explained in Figure 4B.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Constant of association Ka for each T cell subset and monocytes was calculated as explained in Figure 4B from active TB subjects at diagnosis (n\u00a0=\u00a025), individuals with acute dengue hemorrhagic fever (n\u00a0=\u00a024) and previously vaccinated healthy adults three days post boost with Tdap vaccine (n\u00a0=\u00a016). Plots represent individual data points, median and interquartile range across all subjects.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/46045/elife-46045-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Frequencies of T cell:monocyte complexes (and T cell subsets:monocyte complexes) expressed as percent of live cells were determined in active TB subjects at diagnosis (n\u00a0=\u00a025) and two months post treatment (n\u00a0=\u00a015), individuals with acute dengue hemorrhagic fever (n\u00a0=\u00a024) and previously vaccinated healthy adults three days post boost with Tdap vaccine (n\u00a0=\u00a016). Statistical differences over time and across cell populations within subjects were determined using the non-parametric paired Wilcoxon test; other statistical differences were determined using the non-parametric Mann-Whitney test; *, p<0.05; **, p<0.01; ***, p<0.01; ****, p<0.0001. Plots represent individual data points, median and interquartile range across all subjects within each cohort. These frequencies were used to calculate the Ka values presented in Figure 4C\u2013F, using the formula in Figure 4B.\n\nWe first investigated the T cell:monocyte Ka in the context of two diseases where monocytes are known to be important, namely active tuberculosis (TB) infection and dengue fever. In the case of TB, although macrophages are known to be the primary target for Mycobacterium tuberculosis (Mtb) infection and replication, monocytes can also be infected and contribute to the inflammatory response (Srivastava et al., 2014). In active TB subjects, we found a significant decrease in T cell:monocyte Ka at 2 months post treatment (Figure 4C). At the time of diagnosis, some subjects displayed a Ka much higher than any uninfected or LTBI individuals, but because of the high heterogeneity within the active TB cohort, these differences did not reach statistical significance (Figure 4\u2014figure supplement 1). Dengue virus predominantly infects monocytes in the peripheral blood (Kou et al., 2008), and circulating monocyte infection and activation is increased in dengue hemorrhagic fever (the more severe form of dengue fever) (Durbin et al., 2008). In subjects with acute dengue fever from Sri Lanka, patients that developed hemorrhagic fever had higher T cell:monocyte Ka upon hospitalization compared to healthy, previously infected subjects (blood bank donors seropositive for dengue antibodies) (Figure 4D). In contrast, patients with a less severe form of acute dengue infection showed no significant difference in T cell:monocyte Ka compared to healthy, previously infected donors (Figure 4D).\n\nTo assess whether vaccination also impacted the formation of T cell:monocyte complexes, we obtained samples from healthy adults that received the tetanus, diphtheria and pertussis (Tdap) booster vaccination. We indeed observed a significantly higher T cell:monocyte Ka at three days post boost compared to baseline (Figure 4E), but no significant changes at one, seven or fourteen days post boost (Figure 4\u2014figure supplement 2). Taken together, these data confirm that circulating T cell:monocyte complexes can be found directly ex vivo in different immune perturbations, and their likelihood of formation is associated with clinical parameters such as disease severity, and they fluctuate as a function of time post treatment and post vaccination.\n\n### T cells with different phenotypes are found in T cell:monocyte complexes dependent on the nature of the immune perturbation\n\nFinally, we reasoned that if immune perturbations increase the formation of T cell:monocyte complexes, then the nature of the T cells contained in the complexes could provide insights into which T cells are actively communicating with monocytes in vivo. In particular, the T cell subsets that will associate with an APC for the different perturbations studied above are expected to be distinct, and thus their likelihood to form a complex with a monocyte might differ too. The Tdap vaccine contains exclusively protein antigens and is known to elicit predominantly memory CD4+\u00a0T cell responses (da Silva Antunes et al., 2018). Mtb is a bacterial pathogen known to trigger strong CD4+\u00a0responses (Lindestam Arlehamn et al., 2016) as opposed to dengue virus, which is a viral antigen and thus expected to elicit CD8+\u00a0responses.\n\nSimilarly to global T cell:monocyte complexes (Figure 4C\u2013E), we calculated the constant of association Ka with monocytes for each CD4/CD8 T cell subset individually. In subjects with active TB, the Ka between monocytes and CD4+CD8+ (DPOS) T cells or CD4+\u00a0T cells was significantly higher than for CD8+\u00a0T cells (Figure 4F) and both DPOS and CD4+\u00a0T cell:monocyte complexes had higher Ka in active TB compared to dengue hemorrhagic fever (Figure 4\u2014figure supplement 3). Dengue hemorrhagic fever showed a higher T cell:monocyte Ka for CD8+\u00a0over CD4+\u00a0cells whereas Tdap day three post boost showed the opposite, with highest Ka for CD4+\u00a0over CD8+\u00a0cells (Figure 4F). The CD8+\u00a0T cell:monocyte Ka was also higher in Dengue and active TB compared to Tdap boost (Figure 4\u2014figure supplement 3). Thus, the magnitude of Ka in CD4+\u00a0vs CD8+\u00a0T cell subsets matched what is expected based on the nature of immune perturbation. Interestingly, for all three immune perturbations studied the highest Ka with monocytes across all T cell subsets was for CD4-CD8- (DNEG) T cells (Figure 4F), and this effect was most pronounced in dengue (Figure 4\u2014figure supplement 3). These cells could constitute gamma-delta T cells that are known to be strongly activated in the peripheral blood during acute dengue fever (Tsai et al., 2015).\n\nIn summary, these data indicate that the T cell subsets that are preferentially associated with monocytes differ from their individual frequencies in PBMC, and follow different patterns in the three systems studied, further supporting the notion that these complexes are not the result of random association, and are specific to the nature of the immune perturbation.\n\n## Discussion\n\nThe unexpected detection of monocyte genes expressed in cells sorted for memory T cell markers led to the discovery that a population of CD3+CD14+\u00a0cells exist within the \u2018live singlet\u2019 events gate and that these cells are T cells that are tightly associated with monocytes, and less frequently, with monocyte-derived debris. Their presence in freshly isolated cells and the fact that a significant fraction of the complexes showed enriched expression for LFA1/ICAM1 adhesion molecules at their interface, suggest that they are not the product of random association of cells during processing, but represent interactions that occurred in vivo prior to the blood draw. The frequency of T cell:monocyte complexes fluctuated over time in the onset of immune perturbations such as following TB treatment or Tdap boost immunization and correlated with clinical parameters such as disease severity in the case of dengue fever. Furthermore, the T cell subset in preferential association within the monocyte in a complex varies in function of the nature of the immune perturbation.\n\nOur initial observation of the presence of monocyte genes within the transcriptome of T cells was focused on memory CD4 T cells. This cell population was elected since our study aimed to define novel immune signatures associated with Mtb-specific CD4 T cells (Burel et al., 2018), which are expected to almost exclusively fall into the memory compartment in the context of latent TB infection (Lindestam Arlehamn et al., 2013). However, since we have found that both CD4 and CD8 T cells, from both memory and na\u00efve phenotype, can be found in a complex with a monocyte, we think similar results would have been obtained with other sorted T cell populations. We have since detected the expression of monocytes-associated genes in several other T cell subsets, including memory CD8 T cells, and total CD4 T cells (unpublished observations).\n\nIntact T cell:monocyte complexes were almost exclusively found in the top area of the FSC/SSC 2D plot, and were associated with high CD14 expression. In contrast, T cells with monocyte debris were associated with FSC/SSC values similar to regular non-complex T cells and an intermediate CD14 expression. This cell population might be the result of T cell:monocyte complexes from which the monocyte was disrupted during sample preparation or flow cytometry acquisition. Alternatively, these CD3+CD14mid cells could be the result of plasma membrane fragments exchange from monocytes to T cells following interaction. This phenomenon, known as trogocytosis, has been described to occur during cellular encounters between several immune cell types, including monocytes and T cells (Daubeuf et al., 2010; HoWangYin et al., 2011).\n\nTaken together, our results suggest circulating CD3+CD14+\u00a0complexes appear to be the result of in vivo interaction between T cells and monocytes. The origin and location of the complexes\u2019 formation is still unknown. These interactions might be occurring directly in the blood. Alternatively, it is possible that T cell:monocyte complex formation does not initially occur in peripheral blood, but rather in tissues or draining lymph nodes, and these complexes are then excavated into the peripheral circulation. The most studied physical interaction between T cells and monocytes is the formation of immune synapses. We found that about a third of complexes displayed LFA1/ICAM1 mediated interaction similarly to immune synapses, but no CD3 polarization. The immune synapse formation is a highly diverse event in terms of length and structure (Friedl and Storim, 2004), so it is possible that not all detected complexes are at the same stage in the interaction. In some complexes, the nature (and structure) of the architectural molecules forming the cell:cell contact might differ from traditional immune synapses, too. Studying the nature and physical properties of these interactions could provide insights into how T cells and monocytes can physically interact. Additionally, because monocytes are not the only cell type known to associate with T cells, we think the ability to form complexes with T cells should not be restricted to monocytes, but could apply more broadly to any APC. Thus, it is possible that other types of complexes pairing a T cell and other APCs such as B cells or dendritic cells can be found in the peripheral blood.\n\nIncreased immune cell:cell interactions might not necessarily always correlate with onset of immune perturbations. Nevertheless, our preliminary data suggest that determining the constant of association Ka of the T cell:monocyte (and likely more broadly any T cell:APC) complexes can indicate the presence of an immune perturbation to both clinicians and immunologists. We think that the Ka, rather than the frequency of live cells, is a more relevant parameter to measure the occurrence of T cell:monocyte complexes (and thus the in vivo affinity between T cells and monocytes) since it corrects for random/aleatory association that is directly dependent on the T cell subset or monocyte abundance. For instance, DNEG T cells are in lower abundance than CD4+\u00a0or CD8+\u00a0T cells in peripheral blood, and thus DNEG T cells in a complex with a monocyte are found at a lower frequency compared to CD4+\u00a0or CD8+\u00a0T cell:monocyte complexes (Figure 4\u2014figure supplement 4D). However, interestingly, their Ka is consistently much higher than CD4+\u00a0or CD8+\u00a0T cells across all disease cohorts analyzed (Figure 4F), suggesting a higher affinity of DNEG cells to monocytes. This information would have been missed if only frequencies were considered. In dengue infected subjects, a higher T cell:monocyte Ka at time of admission was associated with dengue hemorrhagic fever, the more severe form of disease. The distinction between hemorrhagic vs. non-hemorrhagic fever may become clear only days into hospitalization, so the ability to discriminate these two groups of individuals at the time of admission has potential diagnostic value. In the case of active TB, subjects presented a very high variability at diagnosis that might reflect the diverse spectrum associated with the disease (Pai et al., 2016), but for all subjects a significant decrease in T cell:monocyte Ka was observed upon treatment. This could thus be a tool to monitor treatment success and predict potential relapses. It will of course be necessary to run prospective trials to irrefutably demonstrate that the likelihood of association between T cells and monocytes have predictive power with regard to dengue disease severity or over the course of TB treatment. Additionally, the T cell:monocyte Ka was increased three days following Tdap booster vaccination. Therefore, in vaccine trials, it could be examined as an early readout to gage how well the immune system has responded to the vaccine. Finally, in apparently \u2018healthy\u2019 populations, or those with diffuse symptoms, an unusually high T cell:monocyte Ka in an individual could be used as an indicator of a yet to be determined immune perturbation.\n\nBeyond detecting abnormal frequencies of T cell:monocyte complexes, characterizing the T cells and monocytes in these complexes might provide insights into the nature of immune perturbation and subsequent immune response based on which complexes were formed. Our data suggest that there are drastic differences in terms of T cell subsets in the complexes. As aforementioned, despite their lower frequency over CD4+\u00a0and CD8+\u00a0T cells in the peripheral blood, DNEG T cells show a clear increased association with monocytes. Gamma-delta T cells constitute the majority of circulating DNEG T cells in humans, and LFA1 dependent crosstalk between gamma-delta T cells and monocytes has been shown to be important in the context of bacterial infections (Eberl et al., 2009), which might be also generalized to viral infections. Thus, the DNEG T cell:monocyte complexes might well represent a novel type of interaction between T cells and monocytes, not necessarily involving classical alpha-beta T cells or involving the formation of \u2018traditional\u2019 immune synapses. Aside from the enrichment for DNEG cells in T cell:monocyte complexes, we also observed a relatively high Ka for DPOS cells in T cell:monocyte complexes in all samples analyzed, despite their very low abundance amongst T cells. Circulating DPOS T cells have been described in the context of several infections, in particular from viruses. They are associated with enhanced effector functions such as proliferation, cytotoxicity and cytokine production (Kitchen et al., 2004; Nascimbeni et al., 2004). DPOS cells might thus represent a specific subset of T cells with enhanced surveillance and cell:cell communication functions, and thus have higher affinity for APCs hence higher likelihood to be found in a complex with a monocyte. Finally, we also found that the CD4 vs CD8 phenotype of the T cell present in complexes depends on the nature of the immune perturbation studied, and reflects the expected polarization of immune responses. Thus, looking for additional characteristics from T cells and monocytes present in the complexes, such as the expression of tissue homing markers, specific TCRs and their transcriptomic profile might provide further information about the fundamental mechanisms underlying immune responses to a specific perturbation.\n\nWhy were T cell:monocyte complexes not detected and excluded in flow cytometry based on gating strategies to avoid doublets? Surprisingly, all usual parameters (pulse Area (A), Height (H) and Width (W) from forward and side scatter) looked identical between T cell:monocyte complexes and singlet T cells or monocytes. The only parameter that could readily distinguish between intact CD3+CD14hi complexes and single T cells or monocytes was the brightfield area parameter from the imaging flow cytometer, which is a feature absent in non-imaging flow cytometry. Thus, it seems that gating approaches and parameters available in conventional flow cytometry are not sufficient to completely discriminate tightly bound cell pairs from individual cells.\n\nGiven that T cell:monocyte complexes are not excluded by conventional flow cytometry gating strategies, why were they not reported previously? Examining our own past studies, a major reason is that lineage markers for T cells (CD3), B cells (CD19) and monocytes (CD14) are routinely used to remove cells not of interest in a given experiment by adding them to a \u2018dump channel\u2019. For example, most of our CD4+\u00a0T cell studies have CD8, CD19 and CD14, and dead cell markers combined in the same channel (Arlehamn et al., 2014; Burel et al., 2018). Other groups studying for\u00a0example CD14+\u00a0monocytes are likely to add CD3 to their dump channel. This means that complexes of cells that have two conflicting lineage markers such as CD3 and CD14 will often be removed from datasets early in the gating strategy. Additionally, the detection of complexes by flow cytometry is not straightforward. In our hands, we have found that conventional flow analyzers give low frequency of complexes and poor reproducibility in repeat runs. This is opposed to cell sorters, presumably due to differences in their fluidics systems, which puts less stress on cells and does not disrupt complexes as much. Both the routine exclusion of cell populations positive for two conflicting lineage markers and the challenges to reproduce such cell populations on different platforms has likely contributed to them not being reported.\n\nMoreover, even if a panel allows for the detection of complexes, and there is a stable assay used to show their presence, there is an assumption in the field that detection of complexes is a result of experimental artifacts. For example, we found a report of double positive CD3+CD34+\u00a0cells detected by flow cytometry in human bone marrow, which followed up this finding and found them to be doublets using microscopy imaging. The authors concluded that these complexes are the product of random association and should be ignored (Kudernatsch et al., 2013). Their conclusion may well be true for their study, but it highlights a common conception in the field of cytometry that pairs of cells have to be artifacts. Another study described CD3+CD20+\u00a0singlets cells observed by flow cytometry as doublets of T cells and B cells, and also concluded them to be a technical artifact, in the sense that these cells are not singlets double expressing CD3 and CD20 (Henry et al., 2010). In this case however, authors pointed out that \u2018Whether the formation of these doublets is an artifact occurring during staining or is a physiologic process remains to be determined\u2019 (Henry et al., 2010).\n\nWe ourselves assumed for a long time that we might have an artifact finding, but given the persistent association of T cell:monocyte complexes frequency and phenotype with clinically and physiologically relevant parameters, we came to a new conclusion: cells are meant to interact with other cells. Thus, detecting and characterizing complexes of cells isolated from tissues and bodily fluids, can provide powerful insights into cell:cell communication events that are missed when studying cells as singlets only.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>CCR7-PerCpCy5.5; clone G043H7; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 353220</td>\n      <td>1:50 (4 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD2-BV421; clone RPA-2.10; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 300229</td>\n      <td>1:66 (3 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD3-AF700; clone UCHT1; mouse monoclonal</td>\n      <td>BD pharmigen</td>\n      <td>Cat# 557943</td>\n      <td>1:66 (3 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD3-AF488; clone UCHT1; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 300415</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD4-APCeF780; clone RPA-T4; mouse monoclonal</td>\n      <td>eBiosciences</td>\n      <td>Cat# 47-0049-42</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD5-APCCy7; clone L17F12; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 364009</td>\n      <td>1:66 (3 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD7-APC; clone CD7-6B7; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 343107</td>\n      <td>1:66 (3 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD8a-BV650; clone RPA-T8; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 301042</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD14-APC; clone 61D3; mouse monoclonal</td>\n      <td>Tonbo biosciences</td>\n      <td>Cat# 20\u20130149 T100</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD14-AF594; clone HCD14</td>\n      <td>Biolegend</td>\n      <td>Cat# 325630</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD14-AF647; clone 63D3</td>\n      <td>Biolegend</td>\n      <td>Cat# 367128</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD14-BV421; clone HCD14</td>\n      <td>Biolegend</td>\n      <td>Cat# 325628</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD14-PE; clone 61D3; mouse monoclonal</td>\n      <td>eBioscience</td>\n      <td>Cat# 12-0149-42</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD27-BV650; clone O323</td>\n      <td>Biolegend</td>\n      <td>Cat# 302827</td>\n      <td>1:100 (2 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD33-APC; clone WM53</td>\n      <td>Biolegend</td>\n      <td>Cat# 303407</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD36-APCCy7; clone 5\u2013271</td>\n      <td>Biolegend</td>\n      <td>Cat# 336213</td>\n      <td>1:100 (2 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD45-PerCpCy5.5; clone HI30; mouse monoclonal</td>\n      <td>Tonbo biosciences</td>\n      <td>Cat# 65\u20130459 T100</td>\n      <td>1:66 (3 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD45RA-eF450; clone HI100; mouse monoclonal</td>\n      <td>eBiosciences</td>\n      <td>Cat# 48-0458-42</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD64-AF488; clone 10.1; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 305010</td>\n      <td>1:200 (1 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD163-PECy7; clone GHI/61; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 333613</td>\n      <td>1:100 (2 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ICAM1(CD54); unconjugated; clone HCD54; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 322704</td>\n      <td>1:40 (5 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>LFA1(CD11a); unconjugated; clone TS2/4; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 350602</td>\n      <td>1:40 (5 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>LFA1(CD11a/CD18)-AF647; clone m24; mouse monoclonal</td>\n      <td>Biolegend</td>\n      <td>Cat# 363412</td>\n      <td>1:40 (5 \u00b5l per test)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Subjects and samples\n\nSamples from TB uninfected individuals were obtained from the University of California, San Diego Antiviral Research Center clinic (AVRC at UCSD, San Diego) and National Blood Center (NBC), Ministry of Health, Colombo, Sri Lanka, in an anonymous fashion as previously described (Burel et al., 2017). Samples from individuals with LTBI were obtained from AVRC at UCSD, San Diego, and the Universidad Peruana Cayetano Heredia (UPCH, Peru). Longitudinal active TB samples were obtained from National Hospital for Respiratory Diseases (NHRD), Welisara, Sri Lanka. Dengue previously infected samples were obtained from healthy adult blood donors from the National Blood Center (NBC), Ministry of Health, Colombo, Sri Lanka, in an anonymous fashion as previously described (Weiskopf et al., 2013). Acute dengue fever samples were collected at National Institute of Infectious Diseases, Gothatuwa, Angoda, Sri Lanka and the North Colombo Teaching Hospital, Ragama, in Colombo, Sri Lanka. Longitudinal Tdap booster vaccination samples and non-vaccinated healthy samples were obtained from healthy adults from San Diego, USA. LTBI status was confirmed in subjects by a positive IFN-\u03b3 release assay (IGRA) (QuantiFERON-TB Gold In-Tube, Cellestis or T-SPOT.TB, Oxford Immunotec) and the absence of clinical and radiographic signs of active TB. TB uninfected control subjects were confirmed as IGRA negative. Active Pulmonary TB was defined as those exhibiting symptoms of TB, and are positive by sputum and culture as confirmed by the National Tuberculosis Reference Laboratory (NTRL, Welisara, Sri Lanka). Sputum was further confirmed positive for TB by PCR at Genetech (Sri Lanka). Active TB patients in this study were confirmed negative for HIV, HBV and HCV. Upon enrollment within seven days of starting their anti-TB treatment, active TB patients provided their first blood sample, followed by a second blood sample two months after initial diagnosis. Acute dengue fever and previously infected samples were classified by detection of virus (PCR+) and/or dengue-specific IgM and IgG in the serum. Laboratory parameters such as platelet and leukocyte counts, hematocrit, hemoglobulin, AST, ALT and if applicable an ultrasound examination of the chest and abdomen or an X-ray were used to further diagnose patients with either dengue fever (DF) or dengue hemorrhagic fever (DHF), a more severe form of disease, according to WHO\u2019s guidelines. Longitudinal Tdap booster vaccination samples were obtained from individuals vaccinated in childhood, and boosted with the DTP vaccine Tdap (Adacel). Blood samples were collected prior, one day, three days, seven days and fourteen days post boost. Longitudinal healthy samples were obtained from two consecutive bleeds of healthy adults, at seven days apart. For some latent TB and TB negative subjects, leukapheresis was performed instead of a whole blood donation in order to increase the number of PBMC obtained. Samples from Peru were exclusively collected by leukapheresis, whereas 65% of samples from San Diego were collected by leukapheresis (33 out of 51 subjects). No leukapheresis samples were collected in Sri Lanka. We have found no difference in T\u00a0cell:monocyte\u00a0complexes frequencies in samples collected by leukapheresis versus whole blood (data\u00a0not shown), and have thus defined our cohorts based on TB diagnosis status (TB negative, latent TB or active TB), regardless of the blood draw technique. All blood samples were drawn in Lithium or Sodium heparin, except for the analysis of the effect of anti-coagulant (Figure 2\u2014figure supplement 1B) where some healthy samples were also collected in EDTA. Clinical sites of Peru and Sri Lanka have been personally trained at La Jolla Institute for Immunology and all three sites follow the same operating procedures and protocols for blood processing. All blood samples were stored at room temperature for up to 12 hr before blood processing with a maximum processing time of three hours. Time of the day for blood draw was aleatory variable ranging from morning to afternoon for each site. For all cohorts, PBMC were obtained by density gradient centrifugation (Ficoll-Hypaque, Amersham Biosciences) according to the manufacturer\u2019s instructions. Cells were resuspended to 10 to 50 million cells per mL in FBS (Gemini Bio-Products) containing 10% dimethyl sulfoxide (Sigma) and cryopreserved in liquid nitrogen.\n\n### Magnetic RBC depletion\n\nMagnetic RBC depletion was performed using the EasySep RBC depletion kit (STEMCELL technologies), according to the manufacturer\u2019s instructions. Briefly, 500 \u03bcl of whole blood was supplemented with 6 mM EDTA (final concentration) and 500 \u03bcl PBS\u00a0+\u00a02% FCS, and transferred into a 5 mL polystyrene round-bottom tube. After adding 25 \u03bcl of depletion reagent, the sample was incubated for 5 min on a EasySep magnet, and cell suspension was collected by inverting the magnet in one continuous motion into a new tube. Depletion was repeated once more by adding the same volume of depletion reagent. Cell suspension obtained after the second depletion (depleted of RBC) was directly used for flow cytometry staining.\n\n### Flow cytometry\n\nSurface staining of fresh or frozen PBMC was performed as previously described in Burel et al. (2017). All centrifugations were performed at 600 g for 5 min. For cryopreserved PBMC, cells were quickly thawed by incubating each cryovial at 37\u00b0C for 2 min, and cells transferred into 9 ml of cold medium (RPMI 1640 with L-Glutamin and 25 mM Hepes (Omega Scientific), supplemented with 5% human AB serum (GemCell), 1% Penicillin Streptomycin (Gibco) and 1% Glutamax (Gibco)) and 20 U/mL Benzonase Nuclease (Millipore) in a 15 ml conical tube. Cells were centrifuged and resuspended in medium to determine cell concentration and viability using Trypan blue and a hematocytometer. Cells (1\u201310 million) were transferred into a 15 ml conical tube, centrifuged, resuspended in 100 \u03bcl of PBS containing 10% FBS and incubated for 10 min at 4\u00b0C. Cells were then stained with 100 \u03bcl of PBS containing fixable viability dye eFluor506 (eBiosciences) and various combinations of the antibodies listed in Supplementary file 1 for 20 min at room temperature. Each antibody was individually titrated for optimum staining, and dilutions/panels used in the study are available in Supplementary file 1 . To assess the effect of Fc-receptor blocking on the formation of T cell:monocyte complexes (Figure 2\u2014figure supplement 1D), 2 \u03bcl of Trustain FcR blocking reagent (BioLegend) was added along with the antibodies. After two washes in staining buffer (PBS containing 0.5% FBS and 2 mM EDTA (pH 8.0), cells were resuspended into 100\u2013500 \u03bcl of staining Buffer, transferred into a 5 ml polypropylene FACS tube (BD Biosciences) and stored at 4\u00b0C protected from light for up to 4 hr until flow cytometry acquisition. Acquisition was performed on a BD LSR-II cell analyzer (BD Biosciences) or on a BD FACSAria III cell sorter (BD Biosciences). Compensation was realized with single-stained beads (UltraComp eBeads, eBiosciences) in PBS using the same antibody dilution as for the cell staining. Performance of both instruments were checked daily by the flow cytometry core at La Jolla Institute for Immunology with the use of CS and T beads (BD Biosciences), and PMT voltages were manually adjusted for optimum fluorescence detection on each time it was used.\n\n### Imaging flow cytometry\n\nFor the visualization of CD3+CD14+\u00a0cells, frozen PBMC were thawed and stained with CD3-AF488 and CD14-AF647 (see Supplementary file 1 for antibody details) as described in the flow cytometry section above. After two washes in PBS, cells were resuspended to 10 \u00d7 106 cells/mL in staining buffer containing 5 \u03bcg/mL Hoechst (Invitrogen) and 1 \u03bcg/mL 7-AAD (Biolegend) and stored at 4\u00b0C protected from light until acquisition. Acquisition was performed with ImageStreamX MkII (Amnis) and INSPIRE software version 200.1.620.0 at 40X magnification and the lowest speed setting. A minimum of 4,000 CD3+CD14+\u00a0events in focus were collected. Data analysis was performed using IDEAS version 6.2.183.0.\n\n### Sample preparation for microscopy\n\nFor the visualization of LFA1/ICAM1 polarization on T cell:monocyte complexes, frozen PBMC were thawed as described in the flow cytometry section above and resuspended in blocking buffer (2% BSA, 10 mM EGTA, 5 mM EDTA, 0.05% Sodium Azide in 1X PBS) supplemented with 2 \u03bcl of Trustain FcR blocking reagent (BioLegend) for 10 min on ice. Antibodies (anti-human CD3-AF488, CD14-BV421, ICAM1-AF568, LFA1-CF633 or LFA1-AF647, see Supplementary file 1 for\u00a0antibody details) were added and incubated for 20 min on ice, and then washed twice with staining buffer (PBS containing 0.5% FBS and 2 mM EDTA, pH 8). Cells were fixed with 4% Paraformaldehyde, 0.4% Glutaldehyde, 10 mM EGTA, 5 mM EDTA, 0.05 Sodium Azide, 2% sucrose in PBS for 1 hr on ice, and then washed twice with MACS buffer. Cells were resuspended in 0.5\u20131 mL of MACS buffer, and kept at 4\u00b0C until sorting. Cell sorting was performed on a BD Aria III/Fusion cell sorter (BD Biosciences). CD3+CD14+, CD3+CD14 T cells and CD14\u00a0+CD3 monocytes were sorted (see gating strategy Figure 1\u2014figure supplement 2) and each separately plated on a well of a \u00b5-Slide 8 Well Glass Bottom chamber (Ibidi) that was freshly coated with poly-L-lysine (0.01%) for 30 min RT before use. For in-house antibody labeling, an Alexa Fluor 568 antibody labeling kit and a Mix-n-Stain CF633 Dye antibody labeling kit (Sigma) were used according to manufacturer\u2019s protocols.\n\n### Microscopy\n\nAiryscan images were taken with a Plan-Apochromat 63x/1.4 Oil DIC M27 objective with a 152 \u00b5m sized pinhole with master gain 800 using a Zeiss LSM 880 confocal microscopy equipped with an Airyscan detector (Carl Zeiss). four laser lines at 405, 488, 561, and 633 nm and a filter set for each line were used for taking 20\u201325 series of z-plane Airyscan confocal images with a step of 0.185 \u00b5m or 0.247 \u00b5m for each channel. Pixel dwelling time was 2.33 \u00b5s and x and y step sizes were 43 nm. 3D-Airyscan processing was performed with the Zen Black 2.3 SP1 program. For some images, Z-plane linear transitional alignment was done by using the Zen Blue 2.5 program. Contrast of images for each fluorophores channel was adjusted based on FMO (Fluorescence minus one) control samples that were prepared and taken on the same day of each experiments. To visualize cell fragments, sorted CD3+CD14mid cells were immobilized using CyGel Sustain (Abcam) according to manufacturer recommendations. Three-dimensional rendering of cellular fragments (Figure 2D) was created in Imaris 9.1 software (Bitplane).\n\n### Disruption of T cell:monocyte complexes\n\nFor the RBC lysis condition, immediately after thawing, PBMC were incubated for 10 min at room temperature with 4 mL of 1x RBC lysis reagent (Biolegend) according to the manufacturer\u2019s recommendations. After two washes in staining buffer, PBMC were then stained with fixable viability dye, anti-human CD3-AF700 and CD14-PE as described in the flow cytometry section above. For all other conditions, PBMC were first stained and then submitted to one of the following treatments: i) final resuspension in staining buffer at 10 mM EDTA (EDTA 10 mM), ii) vigorous pipetting up and down for 30 s after final resuspension in staining buffer (Pipette Up/Down) or iii) Sonication for 2 min and 30 s at 42 kHz (JSP Ultrasonic Cleaner) after final resuspension in staining buffer (Sonication).\n\n### Bulk memory CD4+\u00a0T cell sorting\n\nFrozen PBMC were thawed and stained with fixable viability dye eFluor506 (eBiosciences) and various combinations of the antibodies listed in Supplementary file 1 as described in the flow cytometry section above. Memory CD4 T cell sorting (see gating strategy Figure 1\u2014figure supplement 1A) was performed on a BD Aria III/Fusion cell sorter (BD Biosciences). 100,000 memory CD4+\u00a0T cells were sorted into TRIzol LS reagent (Invitrogen) for RNA extraction.\n\n### RNA sequencing and analysis\n\nRNA sequencing and analysis of memory CD4+\u00a0T cells from LTBI infected subjects was performed as described in Picelli et al. (2013); Seumois et al. (2016) and quantified by qPCR as described previously (Seumois et al., 2012). 5 ng of purified total RNA was used for poly(A) mRNA selection, full length reverse-transcription and amplified for 17 cycles, following the smart-seq2 protocol (Picelli et al., 2013; Seumois et al., 2016). After purification with Ampure XP beads (Ratio 0.8:1, Beckmann Coulter) and quantification (Picogreen assay, Invitrogen), 1 ng of cDNA was used to prepare a Nextera XT sequencing library with the Nextera XT DNA library preparation and index kits (Illumina). Samples were pooled and sequenced using the HiSeq2500 (Illumina) to obtain at least 12 million 50 bp single-end reads per library. The single-end reads that passed Illumina filters were filtered for reads aligning to tRNA, rRNA, and Illumina adapter sequences. The reads were then aligned to UCSC hg19 reference genome using TopHat (v 1.4.1) (Trapnell et al., 2009), filtered for low complexity reads, and parsed with SAMtools (Li et al., 2009). Read counts to each genomic feature were obtained using HTSeq-count program (v 0.6.0) (Anders et al., 2015) using the \u2018union\u2019 option. Raw counts were then imported to R/Bioconductor package DESeq2 (Love et al., 2014) to identify differentially expressed genes among samples.\n\n### Data deposition\n\nSequencing data is accessible online through Gene Expression Omnibus (accession numbers GSE84445 and GSE99373, https://www.ncbi.nlm.nih.gov/geo) and Immport (Study number SDY820, http://www.immport.org). All other data is available in the main text or the supplementary materials.\n",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "a4e706ad-bbf1-493f-9efb-89508bb56236",
+      "submission_id": "39d7fb4b-0d0c-4d19-b063-f274df56dfc6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jos WM van der Meer, Radboud University Medical Centre Netherlands\n\nReviewers:\n- Jos WM van der Meer, Radboud University Medical Centre Netherlands\n- Claude Lambert\n\n## Review text\n\nDOI: [10.7554/eLife.46045.024](https://doi.org/10.7554/eLife.46045.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Circulating T cell-monocyte complexes are markers of immune perturbations\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jos W van der Meer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Satyajit Rath as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Claude Lambert (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors report on the existence of monocytes and T-lymphocytes that are found complexed using the cell sorter. The interaction does not seem to occur as a classical immunological synapse, but rather as LFA1 ICAM1 interaction.\n\nThey provide evidence that this feature varies under different clinical conditions and that the most prevalent T-cell subset in the complex also varies. They also manage to define a new, convenient parameter based on biochemistry Ka calculation (although this parameter may not be easy to use in routine diagnosis). All together, the reviewers agree that this study is of high interest.\n\nThe major question however is whether there is convincing proof in the paper that this is indeed occurring in vivo (and thus in the blood stream) and it is not an ex-vivo artefact.\n\nEssential revisions:\n\n1) Given the critical issue whether this is an in-vivo or an ex-vivo phenomenon, it is amazing that the pre-analytical procedures are so poorly (i.e., not at all) described. What time of the day was the bleeding performed? How many were leukapheresis samples? Why leukapheresis? Which anticoagulants were used? What tubes were used? How long were the tubes at room temperature waiting to be processed? How long was the total procedure?\n\nProbably the conditions were different in San Diego, Peru and Sri Lanka. These should also be reported.\n\n2) In line with the criticism under point 1, data on the intra-individual variation and the effect of cryopreservation are lacking. It would be good to do a carefully controlled experiment in perhaps 3 volunteers, in which these individuals are bled on two separate days. Cells are processed immediately for FACS analysis and are cryopreserved for later testing. On the second occasion the cryopreserved cells are used as well as freshly processed cells from the second bleed. Ideally, the role of different anticoagulants (EDTA, heparin, citrate) could be assessed in the same setting.\n\n3) The exact experimental conditions of the magnetic depletion (subsection \u201cT cell:monocyte complexes are not the result of cryopreservation or PBMC isolation\u201d) are also lacking in the Materials and methods section.\n\n4) In the Materials and methods section a very poor description of the FCM procedures is given. No data about panel compositions, PMT setting, compensation, titrations etc. as well as composition of buffers are described. This is essential to check the value of data.\n\n5) The stability of the complexed cells is not mentioned. Can the complexes be disrupted by pipetting or by (mild) sonification?\n\n6) Conversely, do more complexes occur when a small dose of LPS or a bioactive cytokine is added in vivo for say 2-3 hours?\n\n7) Although authors give arguments (also in Discussion) to underline their hypothesis of T cell-monocyte complexes, it cannot be excludes that the binding of the conjugates for immunophenotyping (the MoAb-fluorochrome) can be the result of the complex formation (as is known in studies of monocytes),. Fc-receptor binding may occur and result in capping of the adhesion molecules/receptors or non-specific binding as such. This should be ruled out and clarified.\n\n8) The data show that cell-cell interaction can end in exchange of cellular material (in this case, CD14+ monocyte membrane fragments on T cells) This could certainly have something to do with \"trogocytosis\", previously described by Hudrisier and co-workers (Daubeuf et al., 2010) This should be discussed.\n\n9) Supplementary file 1 lists a number of MoAbs used in this study, but the gating when using these antibodies is not adequately shown. Furthermore, the reviewers would like to have additional information on antibodies, such as CD45 (for gating); CD36, CD64, CD33, CD163, CD68 (monocyte identification, CD14 is also expressed dimly on neutrophils); CD2, CD5, CD7, CD27 (T cells) etc.\n\n10) The definition of memory T cells is not correct and the need in this study is not clearly documented.\n\n11) Gating procedures do not seem to be correctly performed and will cause contamination of gates by non-target cells. No use of CD45/SS (eliminate debris, RBCs and platelets) and sequential back gating (to check the correct population of interest) is applied in the various figures. By example CD4 is dimly expressed on monocytes and should be excluded.\n\n12) Ka is used to correct for variation in T cells and monocytes during immune processes, however the absolute amount of T-Mono complexes should be given and not only the frequencies. This may also explain why CD4+CD8+ and CD4-CD8, which represent relatively small populations, have high frequencies.\n\n13) As such the higher amount of Ka frequencies in CD4+CD8+ (double positive) and CD4-CD8- (double negative) T cells (Figure 3\u2014figure supplement 3 4) are not discussed and explained.\n",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "759563e3-6c6c-4750-be36-e8c11defaf34",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C1",
+      "claim": "A significant proportion of cell doublets in flow cytometry, previously believed to be the result of technical artifacts and thus ignored in data acquisition and analysis, are the result of biological interaction between immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results highlight for the first time that a significant proportion of cell doublets in flow cytometry, previously believed to be the result of technical artifacts and thus ignored in data acquisition and analysis, are the result of biological interaction between immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple lines of experimental data including imaging flow cytometry, confocal microscopy showing LFA1/ICAM1 polarization, and detection in fresh blood samples.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "e135d0c0-1a16-44f0-8be9-6be4952b36da",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C2",
+      "claim": "Cell:cell doublets pairing a T cell and a monocyte can be directly isolated from human blood.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we show that cell:cell doublets pairing a T cell and a monocyte can be directly isolated from human blood",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing detection of CD3+CD14+ complexes in fresh blood and after RBC depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "624b0a91-3743-477f-a1fc-26c89454a488",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C3",
+      "claim": "High resolution microscopy shows polarized distribution of LFA1/ICAM1 in many doublets, suggesting in vivo formation.",
+      "claim_type": "EXPLICIT",
+      "source": "high resolution microscopy shows polarized distribution of LFA1/ICAM1 in many doublets, suggesting in vivo formation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Airyscan microscopy data showing that 29% (30 out of 105) of doublets displayed accumulation and polarization of ICAM1 and LFA1 at their interfaces.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "d3c4d333-08b2-45bb-a430-cfacb23f1808",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C4",
+      "claim": "T cell-monocyte complex frequency and phenotype fluctuate with the onset of immune perturbations such as infection or immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, T cell-monocyte complex frequency and phenotype fluctuate with the onset of immune perturbations such as infection or immunization, reflecting expected polarization of immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from active TB, dengue fever, and Tdap vaccination cohorts showing changes in Ka values over time and with disease severity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "1c4d5aae-3087-430a-a8f8-27e230a44413",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C5",
+      "claim": "Cell doublets reflecting T cell-monocyte in vivo immune interactions can be detected in human blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall these data suggest that cell doublets reflecting T cell-monocyte in vivo immune interactions can be detected in human blood",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by detection in fresh blood, stability over time within individuals, and LFA1/ICAM1 polarization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "f478ae0a-dd2d-4fd1-a211-a4610529a30c",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C6",
+      "claim": "The common approach in flow cytometry to avoid studying cell:cell complexes should be re-visited.",
+      "claim_type": "EXPLICIT",
+      "source": "the common approach in flow cytometry to avoid studying cell:cell complexes should be re-visited",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings that complexes are biologically relevant rather than artifacts.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "b55ec380-86b1-4e95-a8a4-34df44578550",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C7",
+      "claim": "The physical interaction between T cells and antigen-presenting cells (APCs) is critical for the initiation of immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the physical interaction between T cells and antigen-presenting cells (APCs) is critical for the initiation of immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about immune system function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "5bff159e-dab4-4876-8a7f-2b8c2342c9ae",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C8",
+      "claim": "APCs such as monocytes can take up debris from the extracellular environment, and will display fragments of it on their surface to T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "APCs such as monocytes can take up debris from the extracellular environment, and will display fragments of it on their surface to T cells, which can identify potentially harmful, non-self antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about antigen presentation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "1191e8aa-5a43-4811-8991-fbd717461355",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C9",
+      "claim": "There is paucity of data regarding T cell-APCs interactions in humans in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "There is paucity of data regarding T cell-APCs interactions in humans in vivo, but they appear to be highly diverse in terms of structure, length and function, depending on the nature and degree of maturation of the T cell and APC (Friedl and Storim, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "25c83385-e372-4c50-b551-38744ce2235c",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C10",
+      "claim": "T cell-APC interactions appear to be highly diverse in terms of structure, length and function, depending on the nature and degree of maturation of the T cell and APC.",
+      "claim_type": "EXPLICIT",
+      "source": "There is paucity of data regarding T cell-APCs interactions in humans in vivo, but they appear to be highly diverse in terms of structure, length and function, depending on the nature and degree of maturation of the T cell and APC (Friedl and Storim, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "9e131859-25fe-4b63-84a4-4d7d8a09830d",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C11",
+      "claim": "In flow cytometry, doublets (a pair of two cells) are routinely observed but are believed to be the results of technical artifacts due to ex vivo sample manipulation and are thus usually discarded, or ignored in data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this process, doublets (a pair of two cells) are routinely observed but are believed to be the results of technical artifacts due to ex vivo sample manipulation and are thus usually discarded, or ignored in data analysis (Kudernatsch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes common practice in flow cytometry, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "ad0bef46-484a-4cbb-b810-0e81eac6feb3",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C12",
+      "claim": "Blood is the most readily accessible sample in humans with high immune cell content.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood is the most readily accessible sample in humans with high immune cell content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about clinical sampling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "d998be84-a3a6-454b-8687-c0a998e58863",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C13",
+      "claim": "Circulating immune cells contain critical information that can be used for diagnostic-, prognostic- and mechanistic understanding of a given disease or immune perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have shown circulating immune cells contain critical information that can be used for diagnostic-, prognostic- and mechanistic understanding of a given disease or immune perturbation (Bongen et al., 2018; Burel et al., 2018; Grifoni et al., 2018; Roy Chowdhury et al., 2018; Zak et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "871892a3-6d07-4975-8f84-e95a9f2857e0",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C14",
+      "claim": "Blood does not fully reflect what is occurring in tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whereas blood does not fully reflect what is occurring in tissues, it contains relevant information from circulating immune cells that have been either directly impacted by the perturbation, or indirectly through cell contact with tissue-resident cells in the affected compartment, including lymphoid organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of immune system compartmentalization.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "f255023e-758e-45f5-99a7-7d1c81f5930d",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C15",
+      "claim": "The presence of dual-cell complexes (and their content) has never been studied in the peripheral blood and in the context of immune perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of dual-cell complexes (and their content) has never been studied in the peripheral blood and in the context of immune perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the current work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "e35bcaa0-be06-4a7c-ac0e-b9967fe72ee3",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C16",
+      "claim": "Monocytes are a subtype of phagocytes present in high abundance in the peripheral blood, which play a critical role in both innate and adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocytes are a subtype of phagocytes present in high abundance in the peripheral blood, which play a critical role in both innate and adaptive immunity (Jakubzick et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "6990de0f-4c90-4118-b286-5dd482963ac2",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C17",
+      "claim": "Monocytes have the capacity to differentiate into highly specialized APCs such as macrophages or myeloid DCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, monocytes have the capacity to differentiate into highly specialized APCs such as macrophages or myeloid DCs (Sprangers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "7f828c98-c9f9-4d0f-b3cc-47f4f5b67bc2",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C18",
+      "claim": "Monocytes might directly function as APCs and thus contribute to adaptive immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, it has been highlighted that they might directly function as APCs and thus contribute to adaptive immune responses (Jakubzick et al., 2017; Randolph et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "a1300343-7fac-45c7-9740-85bf6ed9c6f0",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C19",
+      "claim": "A gene signature in memory CD4+ T cells circulating in the peripheral blood distinguishes individuals with latent TB infection (LTBI) from uninfected individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently identified a gene signature in memory CD4+ T cells circulating in the peripheral blood that distinguishes individuals with latent TB infection (LTBI) from uninfected individuals (Burel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "755ee839-b9c1-40e0-8bdd-7574b2195421",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C20",
+      "claim": "A group of monocyte-associated genes are co-expressed in memory CD4+ T cells whose expression is highly variable across individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, this dataset also led to the discovery of a group of monocyte-associated genes co-expressed in memory CD4+ T cells whose expression is highly variable across individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the RNA sequencing data presented in Figure 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "12d8ab20-49d6-4940-af1b-867754953ff8",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C21",
+      "claim": "Within the 100 most variable genes in memory CD4+ T cells, a set of 22 genes were highly co-expressed with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the 100 most variable genes, we identified a set of 22 genes that were highly co-expressed with each other (22-var set, Figure 1A, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the heatmap in Figure 1A showing gene expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "ea1185b5-536d-423c-b35b-a4ff7d39449e",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C22",
+      "claim": "Many of the genes in the 22-var set were previously described as being highly expressed in classical monocytes (and to a lower extent non-classical monocytes) but not in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, many of the genes contained within the 22-var set were previously described as being highly expressed in classical monocytes (and to a lower extent non-classical monocytes) but not in T cells (Figure 1B, Schmiedel et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1B showing cell-type specific expression and citation to the DICE database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "9f0feb28-6a12-4ffa-b385-4ca5937fc0b2",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C23",
+      "claim": "The 22-var set contained the commonly used monocyte lineage marker CD14.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the 22-var set contained the commonly used monocyte lineage marker CD14, the lysozyme LYZ and the S100 calcium binding proteins S100A8 and S100A9, which are known to be extremely abundant in monocytes (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1B showing expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "bb7556e3-ca9d-437d-8502-1bc4646683c2",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C24",
+      "claim": "There was a subpopulation within sorted memory CD4+ T cells that stained positive for CD14.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining the flow cytometry data that were acquired during cell sorting and applying our memory CD4+ T cell gating strategy (Figure 1\u2014figure supplement 1A), we identified that indeed there was a subpopulation within sorted memory CD4+ T cells that stained positive for CD14 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "83f3a26e-07c1-494e-a173-f57459ef7ceb",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C25",
+      "claim": "The proportion of memory CD4+ T cells that were CD14+ was positively correlated with the 22-var set expression (spearman correlation coefficient r = 0.42, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, the proportion of memory CD4+ T cells that were CD14+ was positively correlated with the 22-var set expression (spearman correlation coefficient r = 0.42, p<0.0001, Figure 1D), suggesting that this cell subset is responsible for the expression of the monocyte-associated genes identified in Figure 1A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "b375afde-8238-438d-8477-17ecd1ee60b4",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C26",
+      "claim": "The CD14+ memory CD4+ T cell population is responsible for the expression of the monocyte-associated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, the proportion of memory CD4+ T cells that were CD14+ was positively correlated with the 22-var set expression (spearman correlation coefficient r = 0.42, p<0.0001, Figure 1D), suggesting that this cell subset is responsible for the expression of the monocyte-associated genes identified in Figure 1A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the correlation between CD14+ frequency and gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "d0a7fc06-7acc-4372-b7d0-8ba29bde327a",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C27",
+      "claim": "The CD14+ memory CD4+ T cell population has similar forward and side scatter (FSC/SSC) values to other memory CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD14+ memory CD4+ T cell population has similar forward and side scatter (FSC/SSC) values to other memory CD4+ T cells and was thus sorted along with conventional CD14- memory CD4+ T cells (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "6581fa6a-a65a-4111-835b-d57c0de9b844",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C28",
+      "claim": "There was no indication that CD14+ memory CD4+ T cells were the product of a technical artifact, such as dead cells or a compensation issue.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, there was no indication that CD14+ memory CD4+ T cells were the product of a technical artifact, such as dead cells or a compensation issue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the flow cytometry characteristics of the cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "b3c2ba67-c2b4-4478-9ee8-c2797a73d986",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C29",
+      "claim": "Two populations of CD3+CD14+ cells can be identified based on the level of expression of CD14: CD3+CD14hi cells and CD3+CD14mid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When gating on live FSC/SSC (including both monocytes and lymphocytes) singlet cells (Figure 1\u2014figure supplement 2), two populations of CD3+CD14+ could be readily identified: CD3+CD14hi cells and CD3+CD14mid cells (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "41f539bc-78d1-480d-a9c1-4ee7b9208a67",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C30",
+      "claim": "CD3+CD14hi cells were predominantly contained within the monocyte size gate.",
+      "claim_type": "EXPLICIT",
+      "source": "CD3+CD14hi cells were predominantly contained within the monocyte size gate, whereas CD3+CD14mid cells were contained within the lymphocyte size gate (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "ccec152f-2def-4b14-8750-e78ecb38a738",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C31",
+      "claim": "CD3+CD14mid cells were contained within the lymphocyte size gate.",
+      "claim_type": "EXPLICIT",
+      "source": "CD3+CD14hi cells were predominantly contained within the monocyte size gate, whereas CD3+CD14mid cells were contained within the lymphocyte size gate (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "d5036c52-48d1-4998-bc35-81eb09e684dd",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C32",
+      "claim": "CD3+CD14hi cells contained predominantly two cells, sometimes even three cells, but no single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, CD3+CD14hi cells contained predominantly two cells, sometimes even three cells, but no single cells (Figure 2B, third panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging flow cytometry data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "215d29fc-eca7-41dc-a32f-c286c603bfa3",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C33",
+      "claim": "The doublets (or triplets) in CD3+CD14hi cells always contained at least one CD14+ cell, and one CD3+ cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The doublets (or triplets) always contained at least one CD14+ cell, and one CD3+ cell (Figure 2B, third panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging flow cytometry data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "47c3665a-4f42-489c-8387-2e5275e1959d",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C34",
+      "claim": "CD3+CD14mid cells contained predominantly single CD3+ cells, but also some doublets of one CD3+ cell and one CD14+ cell, but with CD14 expression lower than average monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "CD3+CD14mid cells contained predominantly single CD3+ cells, but also some doublets of one CD3+ cell and one CD14+ cell, but with CD14 expression lower than average monocytes (Figure 2B, fourth panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging flow cytometry data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "217bc4d2-67d3-427d-a9fd-1a973ad728ea",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C35",
+      "claim": "The majority of CD3+ T cell singlets in the CD3+CD14mid population, but not in the CD3+CD14 T cell population, contained CD14+ particles, often seen at the periphery of the CD3+ T cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of CD3+ T cell singlets in the CD3+CD14mid population, but not in the CD3+CD14 T cell population, contained CD14+ particles, often seen at the periphery of the CD3+ T cell membrane (Figure 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging flow cytometry data in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "b25e1995-9ca9-4f57-bc60-1dab09028a74",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C36",
+      "claim": "The CD14+ particles contained within the CD3+ CD14 mid population have size and shape similar to cell debris.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking more closely at the CD14+ particles contained within the CD3+ CD14 mid population using confocal microscopy, they were found to have size and shape similar to cell debris (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "84c42f41-6769-4592-a61f-7d8ac8a84a35",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C37",
+      "claim": "The area vs aspect ratio was significantly higher for CD3+CD14hi cells and CD3+CD14mid cells compared to single monocytes and T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the area vs aspect ratio was significantly higher for CD3+CD14hi cells and CD3+CD14mid cells compared to single monocytes and T cells, and events in these two cell populations were found predominantly in the 'doublet gate' (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging flow cytometry data in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "4c917593-2401-44b9-aec9-f37c07a5c110",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C38",
+      "claim": "CD3+CD14hi cells had a significantly higher area vs aspect ratio compared to CD3+CD14mid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CD3+CD14hi cells also had a significantly higher ratio compared to CD3+CD14mid cells (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging flow cytometry data in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "0f79a86e-8d5b-41bd-9e6b-3a852ad59adc",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C39",
+      "claim": "CD3+CD14hi cells are tightly bound T cell:monocyte complexes, in such strong interaction that sample processing and flow cytometry acquisition did not break them apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results demonstrate that CD3+CD14hi cells are tightly bound T cell:monocyte complexes, in such strong interaction that sample processing and flow cytometry acquisition did not break them apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the imaging flow cytometry data showing doublets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "388b90ef-8ed2-4e28-966f-5819df180d09",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C40",
+      "claim": "The CD3+CD14mid population appears to predominantly consist of single CD3+ T cells with attached CD14+ cell debris.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the CD3+CD14mid population appears to predominantly consist of single CD3+ T cells with attached CD14+ cell debris.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the imaging flow cytometry and confocal microscopy data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "dd5796c0-a968-4c68-b145-6545bc508711",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C41",
+      "claim": "T cell:monocyte complexes can be readily detected in freshly isolated PBMC at similar frequencies as the same samples after cryopreservation.",
+      "claim_type": "EXPLICIT",
+      "source": "We could readily detect T cell:monocyte complexes in freshly isolated PBMC, and at similar frequencies as the same samples after cryopreservation (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 2G showing correlation between fresh and frozen samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "a92d4a59-6ba2-481a-84d6-f8483b36e6ce",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C42",
+      "claim": "T cell:monocyte complexes can be successfully identified directly from whole blood at frequencies matching the same sample after PBMC isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "In another set of samples, using red blood cell (RBC) magnetic depletion (and thus minimal sample manipulation), we could successfully identify T cell:monocyte complexes directly from whole blood at frequencies matching the same sample after PBMC isolation (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "a1230684-8580-4b1b-b7c2-ae60636eebc0",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C43",
+      "claim": "Similar frequencies of T cell:monocyte complexes are found using either heparin or EDTA anti-coagulant, in both fresh and frozen PBMC.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed the effect of the anti-coagulant used for blood collection, and found similar frequencies of T cell:monocyte complexes using either heparin or EDTA, in both fresh and frozen PBMC (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "4c53f8b7-30b0-4c4b-8518-e9aedc91dae3",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C44",
+      "claim": "In a small healthy population bled longitudinally one week apart, T cell:monocyte complex frequency was variable between individuals, but highly stable over time within each individual (non-parametric spearman correlation r = 1 and r = 0.9 for fresh and frozen PBMC, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "More strikingly, in a small healthy population bled longitudinally one week apart, their frequency was variable between individuals, but highly stable over time within each individual (non-parametric spearman correlation r = 1 and r = 0.9 for fresh and frozen PBMC, respectively, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by longitudinal flow cytometry data in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "7bc53363-5093-4766-a7bc-c3568189b842",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C45",
+      "claim": "The frequency of T cell:monocyte complexes was unchanged when blocking Fc-receptor binding of conjugated antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of T cell:monocyte complexes frequencies was unchanged when blocking Fc-receptor binding of conjugated antibodies (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "df75130f-bc4b-406a-b707-4fc539c16466",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C46",
+      "claim": "Ex vivo manipulation of the blood sample is not responsible for T cell:monocyte complexes formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these data rule out that ex vivo manipulation of the blood sample could be responsible for T cell:monocyte complexes formation and thus suggest their presence in vivo in peripheral blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple experiments showing complexes in fresh blood, stability over time, and lack of effect from various manipulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "60382a30-7bbc-4e01-ad36-ad2f0d279d22",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C47",
+      "claim": "T cell:monocyte complexes are present in vivo in peripheral blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these data rule out that ex vivo manipulation of the blood sample could be responsible for T cell:monocyte complexes formation and thus suggest their presence in vivo in peripheral blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple lines of evidence including detection in fresh blood and LFA1/ICAM1 polarization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "0e961fb0-8d59-48d7-8b5f-762747c41001",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C48",
+      "claim": "During T cell recognition of epitopes on APCs such as monocytes, the two cells form an 'immune synapse' at their contact point, which is stabilized by key adhesion molecules such as LFA1 on the T cell, and ICAM1 on the APC.",
+      "claim_type": "EXPLICIT",
+      "source": "During T cell recognition of epitopes on APCs such as monocytes, the two cells are known to form an 'immune synapse' at their contact point, which is stabilized by key adhesion molecules such as LFA1 on the T cell, and ICAM1 on the APC (Dustin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about immune synapses, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "cf1547ad-f158-4daf-bea4-11779feeaaa3",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C49",
+      "claim": "Upon interaction, LFA1 and ICAM1 undergo a drastic redistribution by focusing almost exclusively at the cell:cell point of contact, thus forming a 'ring' that can be visualized.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon interaction these two molecules undergo a drastic redistribution by focusing almost exclusively at the cell:cell point of contact, thus forming a 'ring' that can be visualized (Wabnitz and Samstag, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about immune synapse formation, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "dd21d7fc-4f7f-4a7e-ad6b-54cd5986569a",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C50",
+      "claim": "Almost a third (thirty out of 105, 29%) of doublets analyzed from three different individuals displayed accumulation and polarization of ICAM1 and LFA1 at their interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost a third (thirty out of 105, 29%) of doublets analyzed from three different individuals displayed accumulation and polarization of ICAM1 and LFA1 at their interfaces (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by high resolution Airyscan microscopy data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "85051497-07a8-401d-bcc0-5dac7af56c42",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C51",
+      "claim": "The percentage of polarized doublets ranged from 17% to 67% between the subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of polarized doublets ranged from 17% to 67% between the subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the microscopy analysis of doublets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "ef32a079-d31c-435d-9ae9-407a0b132786",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C52",
+      "claim": "In seven doublets, CD3 also accumulated together with LFA1.",
+      "claim_type": "EXPLICIT",
+      "source": "In seven doublets, CD3 also accumulated together with LFA1 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "656f8055-8e96-476c-a310-a1f222832ff3",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C53",
+      "claim": "Well developed, classical immunological synapses, defined by central accumulation of CD3 and LFA1 exclusion from central region of a synapse, were not found in the doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not find well developed, classical immunological synapses, defined by central accumulation of CD3 and LFA1 exclusion from central region of a synapse (Monks et al., 1998; Thauland and Parker, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on microscopy analysis of the doublets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "003b8867-626a-4c0c-8c6f-ac9473e2b5bc",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C54",
+      "claim": "A significant fraction of the detected T cell:monocyte complexes utilizes adhesion markers associated with T cell:APC synapse formation to stabilize their interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this suggests that a significant fraction of the detected T cell:monocyte complexes utilizes adhesion markers associated with T cell:APC synapse formation to stabilize their interaction, but they do not appear to undergo active TCR signaling at the moment of capture and acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the LFA1/ICAM1 polarization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "f8bf05de-eda0-4b27-8b04-f51a57c753de",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C55",
+      "claim": "T cell:monocyte complexes do not appear to undergo active TCR signaling at the moment of capture and acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this suggests that a significant fraction of the detected T cell:monocyte complexes utilizes adhesion markers associated with T cell:APC synapse formation to stabilize their interaction, but they do not appear to undergo active TCR signaling at the moment of capture and acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of classical immunological synapse features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "fc433fe1-b501-4655-9b47-77ec93c83639",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C56",
+      "claim": "The frequency of T cell:monocyte complexes was reduced after vigorous pipetting up/down in all three individuals tested.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figure 2\u2014figure supplement 3, in all three individuals tested, the frequency of T cell:monocyte complexes was reduced after vigorous pipetting up/down",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "a342bf7f-ca07-4426-9049-80cc87640083",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C57",
+      "claim": "The strongest 'destructive effect' on T cell:monocyte complexes was observed with mild sonication.",
+      "claim_type": "EXPLICIT",
+      "source": "the strongest 'destructive effect' was observed with mild sonication",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "8eed9d8d-6cb9-4797-8c77-3d1869023527",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C58",
+      "claim": "Incubation with RBC lysis buffer disrupted the T cell:monocyte complexes in one out of three individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation with RBC lysis buffer disrupted the T cell:monocyte complexes in one out of three individuals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "2be75966-84fd-4462-8fd8-cd8326bdfabf",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C59",
+      "claim": "Addition of high concentration of anti-chelating agent EDTA had no effect on T cell:monocyte complex frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "while addition of high concentration of anti-chelating agent EDTA had no effect on their frequency",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "0c73addc-25bb-4933-813d-4e4c8adae574",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C60",
+      "claim": "It is possible to disrupt T cell:monocyte complexes with physical methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it appears that it is possible to disrupt T cell:monocyte complexes with physical methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experiments showing reduction in complex frequency with pipetting and sonication.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "ac421e9b-0c99-4672-b333-367d0ae85974",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C61",
+      "claim": "The density plot of CD3+CD14+ cells overlapped with both CD3+ cells and especially CD14+ cells for any combination of A, H and W for both FSC and SSC parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The density plot of CD3+CD14+ cells overlapped with both CD3+ cells and especially CD14+ cells for any combination of A, H and W for both FSC and SSC parameters (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "b8233553-b088-4845-8e5f-4b16aa84d40f",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C62",
+      "claim": "The frequency of T cell:monocyte complexes was not affected by applying an initial CD45-SSC gate filtering.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the frequency of T cell:monocyte complexes was not affected by applying an initial CD45-SSC gate filtering (Figure 3B, see gating in Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "9757a4b1-9712-418f-b9f5-05787708133f",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C63",
+      "claim": "No parameter from conventional flow cytometry could separate singlets and T cell:monocyte complexes with sufficient resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we could not find any parameter from conventional flow cytometry that could separate singlets and T cell:monocyte complexes with sufficient resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of various flow cytometry parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "3c8cd7ea-9957-47c8-8e40-59895e0ea3db",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C64",
+      "claim": "Monocytes in a complex (CD14+CD3+) vs. not in a complex (CD14+CD3-) had similar expression for monocyte canonical markers: CD33, CD36, CD64 and CD163.",
+      "claim_type": "EXPLICIT",
+      "source": "Monocytes in a complex (CD14+CD3+) vs. not in a complex (CD14+CD3-) had similar expression for monocyte canonical markers: CD33, CD36, CD64 and CD163 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "32f4406d-7a4b-41b0-9e74-1286f0df6f38",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C65",
+      "claim": "No difference in the levels of expression of T cell canonical markers, CD2, CD5, CD7 and CD27 was observed between T cells in a complex (CD3+CD14+) vs. not in a complex (CD3+CD14-).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, no difference in the levels of expression of T cell canonical markers, CD2, CD5, CD7 and CD27 was observed between T cells in a complex (CD3+CD14+) vs. not in a complex (CD3+CD14-) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "6a5d7bd1-20ad-4bd2-b05e-b145ed8a9b8a",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C66",
+      "claim": "Both CD4 and CD8 T cell subsets could be found in association with a monocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, both CD4 and CD8 T cell subsets could be found in association with a monocyte (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "e7fc1de5-3477-4885-b21d-d99328c31770",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C67",
+      "claim": "Both na\u00efve and memory T cell phenotypes could be found in association with a monocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as na\u00efve and memory phenotypes (Figure 3F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "f8a74201-8a55-445a-8803-2ec991402d71",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C68",
+      "claim": "There was no obvious T cell or monocyte marker that could differentiate between monocytes and T cells present in a complex vs. not in a complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there was no obvious T cell or monocyte marker that could differentiate between monocytes and T cells present in a complex vs. not in a complex, suggesting the ability to form complexes is a general property of all CD14 +monocytes and T cell subsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of various markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "8031f220-1c69-48e9-aa0f-77ee470e770a",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C69",
+      "claim": "The ability to form complexes is a general property of all CD14+ monocytes and T cell subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there was no obvious T cell or monocyte marker that could differentiate between monocytes and T cells present in a complex vs. not in a complex, suggesting the ability to form complexes is a general property of all CD14 +monocytes and T cell subsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of distinguishing markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "577fed45-8a41-4fc4-9b22-69d4317bd76f",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C70",
+      "claim": "In healthy subjects, the frequency of CD3+CD14+ cells is a linear function of the product of singlet monocyte and T cell frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in healthy subjects, where we expect constant affinity between T cells and monocytes, we observed that the frequency of CD3+CD14+ cells is a linear function of the product of singlet monocyte and T cell frequencies (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "17fc2723-0b9e-4653-b1f7-9f4fbbc185e4",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C71",
+      "claim": "The Ka is a more accurate readout of the likelihood of T cell:monocyte complex formation as opposed to raw frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "As T cell and monocyte frequencies in the blood can fluctuate greatly during immune perturbations, the Ka is a more accurate readout of the likelihood of T cell:monocyte complex formation as opposed to raw frequencies, the latter being biased towards the overall abundance of each subset forming the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological inference based on the need to correct for cell abundance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "582765ce-cf87-42d1-8957-14c878c2b874",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C72",
+      "claim": "In active TB subjects, there was a significant decrease in T cell:monocyte Ka at 2 months post treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In active TB subjects, we found a significant decrease in T cell:monocyte Ka at 2 months post treatment (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4C showing paired analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "2b3f5d28-66e9-4ec4-87a1-9853602ded58",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C73",
+      "claim": "At the time of diagnosis, some active TB subjects displayed a Ka much higher than any uninfected or LTBI individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of diagnosis, some subjects displayed a Ka much higher than any uninfected or LTBI individuals, but because of the high heterogeneity within the active TB cohort, these differences did not reach statistical significance (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "77a6d994-630e-4e70-a59b-e68f75158f35",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C74",
+      "claim": "Dengue virus predominantly infects monocytes in the peripheral blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Dengue virus predominantly infects monocytes in the peripheral blood (Kou et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "b996e20c-b06d-47bd-93d7-7ad7325b3a0f",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C75",
+      "claim": "Circulating monocyte infection and activation is increased in dengue hemorrhagic fever (the more severe form of dengue fever).",
+      "claim_type": "EXPLICIT",
+      "source": "and circulating monocyte infection and activation is increased in dengue hemorrhagic fever (the more severe form of dengue fever) (Durbin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "b7677792-a424-4199-af97-4b34ede055e2",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C76",
+      "claim": "Patients that developed dengue hemorrhagic fever had higher T cell:monocyte Ka upon hospitalization compared to healthy, previously infected subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In subjects with acute dengue fever from Sri Lanka, patients that developed hemorrhagic fever had higher T cell:monocyte Ka upon hospitalization compared to healthy, previously infected subjects (blood bank donors seropositive for dengue antibodies) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "c273b4b2-d79d-4027-9c8d-3ec180b6c7d6",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C77",
+      "claim": "Patients with a less severe form of acute dengue infection showed no significant difference in T cell:monocyte Ka compared to healthy, previously infected donors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, patients with a less severe form of acute dengue infection showed no significant difference in T cell:monocyte Ka compared to healthy, previously infected donors (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "b1cd8a8e-97cb-4800-93ab-e99fd55e2c84",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C78",
+      "claim": "A significantly higher T cell:monocyte Ka was observed at three days post Tdap boost compared to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed observed a significantly higher T cell:monocyte Ka at three days post boost compared to baseline (Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4E showing paired analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "c49b7914-5638-4d3c-b077-e57b037cfab5",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C79",
+      "claim": "No significant changes in T cell:monocyte Ka were observed at one, seven or fourteen days post Tdap boost.",
+      "claim_type": "EXPLICIT",
+      "source": "but no significant changes at one, seven or fourteen days post boost (Figure 4\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by longitudinal data in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "21bb9c21-0699-490f-815a-907d63038f36",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C80",
+      "claim": "Circulating T cell:monocyte complexes can be found directly ex vivo in different immune perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data confirm that circulating T cell:monocyte complexes can be found directly ex vivo in different immune perturbations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from multiple disease cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "0db8db5b-9b0d-4cd8-9df1-3c9601964d04",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C81",
+      "claim": "The likelihood of T cell:monocyte complex formation is associated with clinical parameters such as disease severity.",
+      "claim_type": "EXPLICIT",
+      "source": "and their likelihood of formation is associated with clinical parameters such as disease severity, and they fluctuate as a function of time post treatment and post vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing higher Ka in dengue hemorrhagic fever and changes over time in TB treatment and vaccination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "d5c231e8-dfa1-4b1e-a4e7-3123736a456a",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C82",
+      "claim": "T cell:monocyte complexes fluctuate as a function of time post treatment and post vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "and their likelihood of formation is associated with clinical parameters such as disease severity, and they fluctuate as a function of time post treatment and post vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by longitudinal data from TB treatment and Tdap vaccination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "8d143d11-cc3b-416e-a5a6-00aa07a89b16",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C83",
+      "claim": "The Tdap vaccine contains exclusively protein antigens and is known to elicit predominantly memory CD4+ T cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tdap vaccine contains exclusively protein antigens and is known to elicit predominantly memory CD4+ T cell responses (da Silva Antunes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Tdap vaccine, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "cb2050c0-d83d-43be-afeb-70e6407b8502",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C84",
+      "claim": "Mtb is a bacterial pathogen known to trigger strong CD4+ responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Mtb is a bacterial pathogen known to trigger strong CD4+ responses (Lindestam Arlehamn et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TB immune responses, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "6f5dcc04-884c-4ee9-902d-b3ea171217c1",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C85",
+      "claim": "Dengue virus is a viral antigen expected to elicit CD8+ responses.",
+      "claim_type": "EXPLICIT",
+      "source": "as opposed to dengue virus, which is a viral antigen and thus expected to elicit CD8+ responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge about viral immune responses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "e9cffb31-d82f-4369-981e-4e177a5454dc",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C86",
+      "claim": "In subjects with active TB, the Ka between monocytes and CD4+CD8+ (DPOS) T cells or CD4+ T cells was significantly higher than for CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In subjects with active TB, the Ka between monocytes and CD4+CD8+ (DPOS) T cells or CD4+ T cells was significantly higher than for CD8+ T cells (Figure 4F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "2f24012c-97cb-4af9-bc95-81a73d693be3",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C87",
+      "claim": "Both DPOS and CD4+ T cell:monocyte complexes had higher Ka in active TB compared to dengue hemorrhagic fever.",
+      "claim_type": "EXPLICIT",
+      "source": "and both DPOS and CD4+ T cell:monocyte complexes had higher Ka in active TB compared to dengue hemorrhagic fever (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "7afd4c21-1619-41cf-ac90-0713cbd8c7db",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C88",
+      "claim": "Dengue hemorrhagic fever showed a higher T cell:monocyte Ka for CD8+ over CD4+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Dengue hemorrhagic fever showed a higher T cell:monocyte Ka for CD8+ over CD4+ cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "787ed1ca-6127-402b-a08a-9529c93b996d",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C89",
+      "claim": "Tdap day three post boost showed the highest Ka for CD4+ over CD8+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Tdap day three post boost showed the opposite, with highest Ka for CD4+ over CD8+ cells (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "3691ff0d-ed0c-45a0-8c81-09207a177438",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C90",
+      "claim": "The CD8+ T cell:monocyte Ka was higher in Dengue and active TB compared to Tdap boost.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD8+ T cell:monocyte Ka was also higher in Dengue and active TB compared to Tdap boost (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "f0679f1e-67c7-4cff-8fb4-c3fcbc127e44",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C91",
+      "claim": "For all three immune perturbations studied the highest Ka with monocytes across all T cell subsets was for CD4-CD8- (DNEG) T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, for all three immune perturbations studied the highest Ka with monocytes across all T cell subsets was for CD4-CD8- (DNEG) T cells (Figure 4F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "38ba6d2f-5d94-4a1c-a038-22d3e0dbd6c1",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C92",
+      "claim": "The effect of highest Ka for DNEG T cells was most pronounced in dengue.",
+      "claim_type": "EXPLICIT",
+      "source": "and this effect was most pronounced in dengue (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "561c32f9-76de-4d28-a165-e0d4416c8b67",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C93",
+      "claim": "DNEG T cells could constitute gamma-delta T cells that are known to be strongly activated in the peripheral blood during acute dengue fever.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells could constitute gamma-delta T cells that are known to be strongly activated in the peripheral blood during acute dengue fever (Tsai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known properties of gamma-delta T cells, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "a7aa7324-900c-4344-a135-1ce759440e8b",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C94",
+      "claim": "The T cell subsets that are preferentially associated with monocytes differ from their individual frequencies in PBMC.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these data indicate that the T cell subsets that are preferentially associated with monocytes differ from their individual frequencies in PBMC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Ka analysis showing enrichment of certain subsets in complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "936f13f3-22cd-4a96-a7f4-54b9910fe800",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C95",
+      "claim": "The T cell subsets preferentially associated with monocytes follow different patterns in the three systems studied (TB, dengue, Tdap).",
+      "claim_type": "EXPLICIT",
+      "source": "and follow different patterns in the three systems studied, further supporting the notion that these complexes are not the result of random association, and are specific to the nature of the immune perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the different Ka patterns observed across disease cohorts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "7a831f00-6f9d-4242-a25b-2d6250cf5c67",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C96",
+      "claim": "T cell:monocyte complexes are not the result of random association.",
+      "claim_type": "EXPLICIT",
+      "source": "and follow different patterns in the three systems studied, further supporting the notion that these complexes are not the result of random association, and are specific to the nature of the immune perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the disease-specific patterns of complex formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "6bfbfa75-cefd-4249-9be9-c9736cbaac01",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C97",
+      "claim": "T cell:monocyte complexes are specific to the nature of the immune perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "and follow different patterns in the three systems studied, further supporting the notion that these complexes are not the result of random association, and are specific to the nature of the immune perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the different patterns observed in different diseases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "249ce152-d01c-4c8a-9d63-22dd261dc4e8",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C98",
+      "claim": "The presence of CD3+CD14+ cells in freshly isolated cells and the fact that a significant fraction of the complexes showed enriched expression for LFA1/ICAM1 adhesion molecules at their interface suggest that they are not the product of random association of cells during processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Their presence in freshly isolated cells and the fact that a significant fraction of the complexes showed enriched expression for LFA1/ICAM1 adhesion molecules at their interface, suggest that they are not the product of random association of cells during processing, but represent interactions that occurred in vivo prior to the blood draw.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "92d9c2a9-f996-4e10-bec8-0ba6c2d7a694",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C99",
+      "claim": "T cell:monocyte complexes represent interactions that occurred in vivo prior to the blood draw.",
+      "claim_type": "EXPLICIT",
+      "source": "Their presence in freshly isolated cells and the fact that a significant fraction of the complexes showed enriched expression for LFA1/ICAM1 adhesion molecules at their interface, suggest that they are not the product of random association of cells during processing, but represent interactions that occurred in vivo prior to the blood draw.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from detection in fresh blood and LFA1/ICAM1 polarization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "af192ec3-ef70-4266-80c0-0c94220e6479",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C100",
+      "claim": "Macrophages are known to be the primary target for Mycobacterium tuberculosis (Mtb) infection and replication.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of TB, although macrophages are known to be the primary target for Mycobacterium tuberculosis (Mtb) infection and replication, monocytes can also be infected and contribute to the inflammatory response (Srivastava et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TB pathogenesis, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "1c24f8b4-beca-4cbd-bbf4-d2a706fbe93f",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C101",
+      "claim": "Monocytes can be infected by Mycobacterium tuberculosis and contribute to the inflammatory response.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of TB, although macrophages are known to be the primary target for Mycobacterium tuberculosis (Mtb) infection and replication, monocytes can also be infected and contribute to the inflammatory response (Srivastava et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TB pathogenesis, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "18e1a2b0-c0d5-4e9d-9657-faa3bb72b05e",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "claim_id": "C102",
+      "claim": "The magnitude of Ka in CD4+ vs CD8+ T cell subsets matched what is expected based on the nature of immune perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the magnitude of Ka in CD4+ vs CD8+ T cell subsets matched what is expected based on the nature of immune perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of Ka values across different disease cohorts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6a78e67-473f-41ad-9da3-29279c24654f",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RNA sequencing of sorted memory CD4+ T cells revealed a set of 22 highly co-expressed genes (22-var set) that are typically expressed in monocytes but not T cells, including CD14, LYZ, S100A8, and S100A9. Flow cytometry confirmed a CD14+ subpopulation within sorted memory CD4+ T cells, and the frequency of this population correlated significantly with expression of the 22-var gene set (r=0.42, p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 provide converging evidence from RNA-seq (showing monocyte gene expression in T cell samples) and flow cytometry (showing CD14+ cells within sorted T cells and correlation with gene expression). The statistical correlation is significant and the experimental approach is sound, though the moderate correlation coefficient (r=0.42) suggests other factors may also contribute to the gene expression pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "fa883486-ef10-4813-b7d9-2dbd335be513",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two distinct CD3+CD14+ populations were identified by flow cytometry: CD3+CD14hi cells (in monocyte size gate, containing predominantly doublets of one CD3+ and one CD14+ cell) and CD3+CD14mid cells (in lymphocyte size gate, containing predominantly single CD3+ cells with attached CD14+ debris). Imaging flow cytometry confirmed CD3+CD14hi cells are tightly bound T cell:monocyte complexes with significantly higher area/aspect ratios than singlets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C40 are well-supported by multiple imaging modalities (imaging flow cytometry and confocal microscopy) showing clear morphological differences between the two populations. The quantitative analysis of area/aspect ratio provides objective evidence for doublet vs singlet classification. The interpretation that CD3+CD14hi represents intact complexes while CD3+CD14mid represents T cells with debris is consistent with all presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "650b74b1-9b4b-49ee-bbdd-bf6ce15e7f9a",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "T cell:monocyte complexes were detected in fresh PBMC at similar frequencies to cryopreserved samples, directly in whole blood after RBC depletion, with both heparin and EDTA anticoagulants, and showed high stability within individuals over time (r=1.0 for fresh, r=0.9 for frozen). Complex frequency was unaffected by Fc-receptor blocking, ruling out antibody-mediated artifacts and suggesting in vivo formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 systematically address potential artifacts through multiple control experiments. The high longitudinal correlation within individuals, detection in minimally manipulated whole blood, and lack of effect from Fc-blocking provide strong evidence against ex vivo artifact formation. However, the claim of 'in vivo formation' (C47) is an inference that, while well-supported, cannot be definitively proven from these experiments alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "000faa5f-e002-45ea-b8d8-00d1ae3e0542",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "High-resolution Airyscan microscopy revealed that 29% (30/105) of T cell:monocyte doublets displayed polarized accumulation of LFA1 and ICAM1 at their interface, with inter-individual variation (17-67%). Classical immunological synapses with central CD3 accumulation were not observed, suggesting complexes utilize adhesion molecules for stabilization but are not undergoing active TCR signaling at the time of capture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are supported by high-resolution microscopy data showing LFA1/ICAM1 polarization in a substantial fraction of complexes. The quantification (29% overall, range 17-67%) is clearly stated. The interpretation that complexes lack active TCR signaling (C55) is reasonable given the absence of classical synapse features, though this is an inference from negative data. The sample size (105 doublets from 3 subjects) is adequate for this type of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "637f682e-5bc5-4110-a52a-9f4e3986279b",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Physical disruption experiments showed that T cell:monocyte complex frequency was reduced by vigorous pipetting and most strongly by mild sonication, while RBC lysis buffer had variable effects (1/3 individuals) and high-concentration EDTA had no effect, demonstrating that complexes can be disrupted by physical but not chemical methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 are supported by experimental data showing differential effects of various treatments. However, the small sample size (n=3 individuals) and variable response to RBC lysis (1/3) suggest limited statistical power. The conclusion that physical methods can disrupt complexes is supported, but the biological significance of this finding is unclear and may simply reflect the strength of cell-cell adhesion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "532e84e2-b48e-4410-bf99-1edac94b6fa6",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Conventional flow cytometry parameters (FSC/SSC Area, Height, Width) could not distinguish T cell:monocyte complexes from singlets with sufficient resolution, and CD45-SSC gating did not affect complex frequency, indicating that standard doublet discrimination methods fail to exclude these biologically relevant cell pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by flow cytometry data showing overlap of complexes with singlet populations in standard parameters. This is an important methodological finding explaining why these complexes have been overlooked. The conclusion is well-supported by the presented data, though the manuscript could benefit from more quantitative analysis of the degree of overlap.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "6c80e40d-ab9f-4854-afb5-e9483fca0716",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Monocytes and T cells within complexes showed similar expression of canonical markers (CD33, CD36, CD64, CD163 for monocytes; CD2, CD5, CD7, CD27 for T cells) compared to non-complexed cells. Both CD4+ and CD8+ T cells, as well as na\u00efve and memory phenotypes, were found in complexes, suggesting complex formation is a general property of all CD14+ monocytes and T cell subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 are supported by flow cytometry data showing no distinguishing markers between complexed and non-complexed cells. The inference that complex formation is a 'general property' (C69) is reasonable given the lack of subset-specific enrichment, though this is based on negative data. The analysis could be strengthened by quantitative comparison of marker expression levels rather than just visual inspection of histograms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "9829cc76-4737-4d31-b5d2-51c46e9cf402",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In healthy subjects, the frequency of CD3+CD14+ complexes is a linear function of the product of T cell and monocyte frequencies. To account for this dependency and fluctuations in cell abundance during immune perturbations, a constant of association (Ka) was defined as the ratio of complex frequency to the product of T cell and monocyte frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 are supported by correlation data in healthy subjects and represent a sound methodological approach to normalize for cell abundance. The Ka metric is conceptually similar to equilibrium constants in chemistry and appropriately accounts for the fact that complex frequency depends on the abundance of both cell types. This normalization is essential for comparing across disease states where cell frequencies vary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "5db54c64-d0b9-4d59-a199-6561ee31a56e",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In active TB patients, T cell:monocyte Ka significantly decreased at 2 months post-treatment compared to diagnosis. At diagnosis, some active TB subjects showed Ka values much higher than uninfected or LTBI individuals, though high heterogeneity prevented statistical significance in cross-sectional comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is well-supported by paired longitudinal data showing significant decrease with treatment (n=15). Claim C73 acknowledges the limitation of heterogeneity preventing statistical significance in cross-sectional analysis. The longitudinal design strengthens the conclusion that Ka changes with disease status, though larger sample sizes would be needed to establish diagnostic utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "9ab70f28-8df9-457f-94d9-0884b3df2427",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Patients with dengue hemorrhagic fever (severe disease) had significantly higher T cell:monocyte Ka upon hospitalization compared to healthy previously infected subjects, while patients with less severe dengue fever showed no significant difference from controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are supported by flow cytometry data comparing disease severity groups. The association of higher Ka with more severe disease (hemorrhagic fever) is consistent with the known role of monocytes in dengue pathogenesis. However, the cross-sectional design limits causal inference, and it's unclear whether high Ka predicts or results from severe disease. Prospective studies would be needed to establish predictive value.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "82c08375-98ac-43c0-8151-c64f8d171404",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Following Tdap booster vaccination, T cell:monocyte Ka was significantly elevated at day 3 post-boost compared to baseline, but no significant changes were observed at days 1, 7, or 14 post-boost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 are supported by paired longitudinal data (n=16) showing a specific increase at day 3. The temporal specificity (only day 3, not other timepoints) suggests a genuine biological response rather than random variation. However, the mechanism underlying this specific timing is not explained, and the sample size is modest for detecting smaller changes at other timepoints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "d4c4c48c-bec4-4bd7-817a-8caba3d68f69",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The T cell subset composition within complexes varied by immune perturbation type: active TB showed higher Ka for CD4+ and DPOS T cells over CD8+; dengue hemorrhagic fever showed higher Ka for CD8+ over CD4+; Tdap vaccination showed highest Ka for CD4+ over CD8+. Across all three perturbations, DNEG T cells showed the highest Ka with monocytes, most pronounced in dengue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C92 and C102 are supported by flow cytometry data showing disease-specific patterns of T cell subset enrichment in complexes. The patterns align with expected immune responses (CD4+ for bacterial/protein antigens, CD8+ for viral). The consistent enrichment of DNEG cells (likely \u03b3\u03b4 T cells) is intriguing and well-documented. However, the interpretation relies on assumptions about expected immune responses, and direct functional validation is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "3784c2c6-e1a4-4662-a4da-380cd95405f1",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "T cell:monocyte complexes can be detected ex vivo across different immune perturbations (TB, dengue, vaccination), and their likelihood of formation (Ka) is associated with clinical parameters such as disease severity and fluctuates over time following treatment or vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 synthesize findings across multiple disease cohorts. The data consistently show that Ka varies with disease state, severity, and treatment, supporting the biological relevance of these complexes. However, the associations are correlative, and causality cannot be established. The clinical utility for diagnosis or prognosis would require prospective validation studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "7ce6cb2c-415f-4d50-b4e7-8121eec3e60b",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "T cell subsets preferentially associated with monocytes differ from their frequencies in PBMC and follow disease-specific patterns across TB, dengue, and Tdap vaccination, indicating that complexes are not formed by random association but are specific to the nature of the immune perturbation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C97 are supported by the Ka analysis showing enrichment patterns that differ from bulk PBMC frequencies and vary by disease. The disease-specific patterns provide strong evidence against random association. However, the mechanism driving specific T cell subset enrichment is not established, and alternative explanations (e.g., differential adhesion molecule expression) are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "744f5c08-6579-438b-8962-e46eaf8c3dcc",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The presence of complexes in freshly isolated cells and the enriched expression of LFA1/ICAM1 adhesion molecules at cell-cell interfaces suggest complexes are not products of random association during processing but represent interactions that occurred in vivo prior to blood draw.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 synthesize multiple lines of evidence (fresh blood detection, LFA1/ICAM1 polarization, stability over time) to infer in vivo formation. While the evidence strongly suggests in vivo origin, this remains an inference that cannot be definitively proven without direct in vivo imaging. The alternative explanation that complexes form immediately upon blood draw but before processing cannot be completely excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "07218f06-3028-4155-a0ed-d17deac66962",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A significant proportion of cell doublets in flow cytometry, previously believed to be technical artifacts, are actually biological T cell-monocyte complexes that can be isolated from human blood, show LFA1/ICAM1 polarization suggesting in vivo formation, and fluctuate with immune perturbations. The common practice of excluding doublets from flow cytometry analysis should be reconsidered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 represent the main conclusions of the manuscript. The evidence from multiple experimental approaches (imaging flow cytometry, microscopy, fresh blood analysis, disease cohorts) strongly supports that these are biologically relevant complexes rather than artifacts. The recommendation to reconsider doublet exclusion (C6) is justified by the findings, though implementation would require careful validation in each experimental context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background and context claims establishing the importance of T cell-APC interactions, the role of monocytes as APCs, current flow cytometry practices regarding doublets, the utility of blood for immunological studies, and the novelty of studying cell complexes in peripheral blood during immune perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C19 provide background context and are supported by appropriate citations to established literature. These claims accurately represent current knowledge and appropriately frame the novelty of the current work. Claim C15 (novelty) is supported by the lack of prior literature on this specific topic.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    },
+    {
+      "id": "9d398627-f71a-4205-8eda-6474773ff2a2",
+      "content_id": "94df306c-d993-4f65-a8e4-fe0083497992",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about immune synapse formation (LFA1/ICAM1 redistribution), dengue virus infection of monocytes and association with hemorrhagic fever, Tdap vaccine composition and CD4+ responses, Mtb infection of macrophages/monocytes and CD4+ responses, dengue as a viral antigen eliciting CD8+ responses, and DNEG cells potentially representing \u03b3\u03b4 T cells activated in dengue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49, C74-C75, C83-C85, C93, C100-C101 are background knowledge claims supported by appropriate citations. These accurately represent established immunological concepts and provide context for interpreting the experimental findings. Claim C93 is appropriately presented as speculation ('could constitute') rather than fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:51:29.147925Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "755ee839-b9c1-40e0-8bdd-7574b2195421",
+      "result_id": "b6a78e67-473f-41ad-9da3-29279c24654f"
+    },
+    {
+      "claim_id": "12d8ab20-49d6-4940-af1b-867754953ff8",
+      "result_id": "b6a78e67-473f-41ad-9da3-29279c24654f"
+    },
+    {
+      "claim_id": "ea1185b5-536d-423c-b35b-a4ff7d39449e",
+      "result_id": "b6a78e67-473f-41ad-9da3-29279c24654f"
+    },
+    {
+      "claim_id": "9f0feb28-6a12-4ffa-b385-4ca5937fc0b2",
+      "result_id": "b6a78e67-473f-41ad-9da3-29279c24654f"
+    },
+    {
+      "claim_id": "bb7556e3-ca9d-437d-8502-1bc4646683c2",
+      "result_id": "b6a78e67-473f-41ad-9da3-29279c24654f"
+    },
+    {
+      "claim_id": "83f3a26e-07c1-494e-a173-f57459ef7ceb",
+      "result_id": "b6a78e67-473f-41ad-9da3-29279c24654f"
+    },
+    {
+      "claim_id": "b375afde-8238-438d-8477-17ecd1ee60b4",
+      "result_id": "b6a78e67-473f-41ad-9da3-29279c24654f"
+    },
+    {
+      "claim_id": "b3c2ba67-c2b4-4478-9ee8-c2797a73d986",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "41f539bc-78d1-480d-a9c1-4ee7b9208a67",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "ccec152f-2def-4b14-8750-e78ecb38a738",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "d5036c52-48d1-4998-bc35-81eb09e684dd",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "215d29fc-eca7-41dc-a32f-c286c603bfa3",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "47c3665a-4f42-489c-8387-2e5275e1959d",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "217bc4d2-67d3-427d-a9fd-1a973ad728ea",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "b25e1995-9ca9-4f57-bc60-1dab09028a74",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "84c42f41-6769-4592-a61f-7d8ac8a84a35",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "4c917593-2401-44b9-aec9-f37c07a5c110",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "0f79a86e-8d5b-41bd-9e6b-3a852ad59adc",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "388b90ef-8ed2-4e28-966f-5819df180d09",
+      "result_id": "fa883486-ef10-4813-b7d9-2dbd335be513"
+    },
+    {
+      "claim_id": "dd5796c0-a968-4c68-b145-6545bc508711",
+      "result_id": "650b74b1-9b4b-49ee-bbdd-bf6ce15e7f9a"
+    },
+    {
+      "claim_id": "a92d4a59-6ba2-481a-84d6-f8483b36e6ce",
+      "result_id": "650b74b1-9b4b-49ee-bbdd-bf6ce15e7f9a"
+    },
+    {
+      "claim_id": "a1230684-8580-4b1b-b7c2-ae60636eebc0",
+      "result_id": "650b74b1-9b4b-49ee-bbdd-bf6ce15e7f9a"
+    },
+    {
+      "claim_id": "4c53f8b7-30b0-4c4b-8518-e9aedc91dae3",
+      "result_id": "650b74b1-9b4b-49ee-bbdd-bf6ce15e7f9a"
+    },
+    {
+      "claim_id": "7bc53363-5093-4766-a7bc-c3568189b842",
+      "result_id": "650b74b1-9b4b-49ee-bbdd-bf6ce15e7f9a"
+    },
+    {
+      "claim_id": "df75130f-bc4b-406a-b707-4fc539c16466",
+      "result_id": "650b74b1-9b4b-49ee-bbdd-bf6ce15e7f9a"
+    },
+    {
+      "claim_id": "60382a30-7bbc-4e01-ad36-ad2f0d279d22",
+      "result_id": "650b74b1-9b4b-49ee-bbdd-bf6ce15e7f9a"
+    },
+    {
+      "claim_id": "dd21d7fc-4f7f-4a7e-ad6b-54cd5986569a",
+      "result_id": "000faa5f-e002-45ea-b8d8-00d1ae3e0542"
+    },
+    {
+      "claim_id": "85051497-07a8-401d-bcc0-5dac7af56c42",
+      "result_id": "000faa5f-e002-45ea-b8d8-00d1ae3e0542"
+    },
+    {
+      "claim_id": "ef32a079-d31c-435d-9ae9-407a0b132786",
+      "result_id": "000faa5f-e002-45ea-b8d8-00d1ae3e0542"
+    },
+    {
+      "claim_id": "656f8055-8e96-476c-a310-a1f222832ff3",
+      "result_id": "000faa5f-e002-45ea-b8d8-00d1ae3e0542"
+    },
+    {
+      "claim_id": "003b8867-626a-4c0c-8c6f-ac9473e2b5bc",
+      "result_id": "000faa5f-e002-45ea-b8d8-00d1ae3e0542"
+    },
+    {
+      "claim_id": "f8bf05de-eda0-4b27-8b04-f51a57c753de",
+      "result_id": "000faa5f-e002-45ea-b8d8-00d1ae3e0542"
+    },
+    {
+      "claim_id": "fc433fe1-b501-4655-9b47-77ec93c83639",
+      "result_id": "637f682e-5bc5-4110-a52a-9f4e3986279b"
+    },
+    {
+      "claim_id": "a342bf7f-ca07-4426-9049-80cc87640083",
+      "result_id": "637f682e-5bc5-4110-a52a-9f4e3986279b"
+    },
+    {
+      "claim_id": "8eed9d8d-6cb9-4797-8c77-3d1869023527",
+      "result_id": "637f682e-5bc5-4110-a52a-9f4e3986279b"
+    },
+    {
+      "claim_id": "2be75966-84fd-4462-8fd8-cd8326bdfabf",
+      "result_id": "637f682e-5bc5-4110-a52a-9f4e3986279b"
+    },
+    {
+      "claim_id": "0c73addc-25bb-4933-813d-4e4c8adae574",
+      "result_id": "637f682e-5bc5-4110-a52a-9f4e3986279b"
+    },
+    {
+      "claim_id": "ac421e9b-0c99-4672-b333-367d0ae85974",
+      "result_id": "532e84e2-b48e-4410-bf99-1edac94b6fa6"
+    },
+    {
+      "claim_id": "b8233553-b088-4845-8e5f-4b16aa84d40f",
+      "result_id": "532e84e2-b48e-4410-bf99-1edac94b6fa6"
+    },
+    {
+      "claim_id": "9757a4b1-9712-418f-b9f5-05787708133f",
+      "result_id": "532e84e2-b48e-4410-bf99-1edac94b6fa6"
+    },
+    {
+      "claim_id": "3c8cd7ea-9957-47c8-8e40-59895e0ea3db",
+      "result_id": "6c80e40d-ab9f-4854-afb5-e9483fca0716"
+    },
+    {
+      "claim_id": "32f4406d-7a4b-41b0-9e74-1286f0df6f38",
+      "result_id": "6c80e40d-ab9f-4854-afb5-e9483fca0716"
+    },
+    {
+      "claim_id": "6a5d7bd1-20ad-4bd2-b05e-b145ed8a9b8a",
+      "result_id": "6c80e40d-ab9f-4854-afb5-e9483fca0716"
+    },
+    {
+      "claim_id": "e7fc1de5-3477-4885-b21d-d99328c31770",
+      "result_id": "6c80e40d-ab9f-4854-afb5-e9483fca0716"
+    },
+    {
+      "claim_id": "f8a74201-8a55-445a-8803-2ec991402d71",
+      "result_id": "6c80e40d-ab9f-4854-afb5-e9483fca0716"
+    },
+    {
+      "claim_id": "8031f220-1c69-48e9-aa0f-77ee470e770a",
+      "result_id": "6c80e40d-ab9f-4854-afb5-e9483fca0716"
+    },
+    {
+      "claim_id": "577fed45-8a41-4fc4-9b22-69d4317bd76f",
+      "result_id": "9829cc76-4737-4d31-b5d2-51c46e9cf402"
+    },
+    {
+      "claim_id": "17fc2723-0b9e-4653-b1f7-9f4fbbc185e4",
+      "result_id": "9829cc76-4737-4d31-b5d2-51c46e9cf402"
+    },
+    {
+      "claim_id": "582765ce-cf87-42d1-8957-14c878c2b874",
+      "result_id": "5db54c64-d0b9-4d59-a199-6561ee31a56e"
+    },
+    {
+      "claim_id": "2b3f5d28-66e9-4ec4-87a1-9853602ded58",
+      "result_id": "5db54c64-d0b9-4d59-a199-6561ee31a56e"
+    },
+    {
+      "claim_id": "b7677792-a424-4199-af97-4b34ede055e2",
+      "result_id": "9ab70f28-8df9-457f-94d9-0884b3df2427"
+    },
+    {
+      "claim_id": "c273b4b2-d79d-4027-9c8d-3ec180b6c7d6",
+      "result_id": "9ab70f28-8df9-457f-94d9-0884b3df2427"
+    },
+    {
+      "claim_id": "b1cd8a8e-97cb-4800-93ab-e99fd55e2c84",
+      "result_id": "82c08375-98ac-43c0-8151-c64f8d171404"
+    },
+    {
+      "claim_id": "c49b7914-5638-4d3c-b077-e57b037cfab5",
+      "result_id": "82c08375-98ac-43c0-8151-c64f8d171404"
+    },
+    {
+      "claim_id": "e9cffb31-d82f-4369-981e-4e177a5454dc",
+      "result_id": "d4c4c48c-bec4-4bd7-817a-8caba3d68f69"
+    },
+    {
+      "claim_id": "2f24012c-97cb-4af9-bc95-81a73d693be3",
+      "result_id": "d4c4c48c-bec4-4bd7-817a-8caba3d68f69"
+    },
+    {
+      "claim_id": "7afd4c21-1619-41cf-ac90-0713cbd8c7db",
+      "result_id": "d4c4c48c-bec4-4bd7-817a-8caba3d68f69"
+    },
+    {
+      "claim_id": "787ed1ca-6127-402b-a08a-9529c93b996d",
+      "result_id": "d4c4c48c-bec4-4bd7-817a-8caba3d68f69"
+    },
+    {
+      "claim_id": "3691ff0d-ed0c-45a0-8c81-09207a177438",
+      "result_id": "d4c4c48c-bec4-4bd7-817a-8caba3d68f69"
+    },
+    {
+      "claim_id": "f0679f1e-67c7-4cff-8fb4-c3fcbc127e44",
+      "result_id": "d4c4c48c-bec4-4bd7-817a-8caba3d68f69"
+    },
+    {
+      "claim_id": "38ba6d2f-5d94-4a1c-a038-22d3e0dbd6c1",
+      "result_id": "d4c4c48c-bec4-4bd7-817a-8caba3d68f69"
+    },
+    {
+      "claim_id": "18e1a2b0-c0d5-4e9d-9657-faa3bb72b05e",
+      "result_id": "d4c4c48c-bec4-4bd7-817a-8caba3d68f69"
+    },
+    {
+      "claim_id": "21bb9c21-0699-490f-815a-907d63038f36",
+      "result_id": "3784c2c6-e1a4-4662-a4da-380cd95405f1"
+    },
+    {
+      "claim_id": "0db8db5b-9b0d-4cd8-9df1-3c9601964d04",
+      "result_id": "3784c2c6-e1a4-4662-a4da-380cd95405f1"
+    },
+    {
+      "claim_id": "d5c231e8-dfa1-4b1e-a4e7-3123736a456a",
+      "result_id": "3784c2c6-e1a4-4662-a4da-380cd95405f1"
+    },
+    {
+      "claim_id": "a7aa7324-900c-4344-a135-1ce759440e8b",
+      "result_id": "7ce6cb2c-415f-4d50-b4e7-8121eec3e60b"
+    },
+    {
+      "claim_id": "936f13f3-22cd-4a96-a7f4-54b9910fe800",
+      "result_id": "7ce6cb2c-415f-4d50-b4e7-8121eec3e60b"
+    },
+    {
+      "claim_id": "7a831f00-6f9d-4242-a25b-2d6250cf5c67",
+      "result_id": "7ce6cb2c-415f-4d50-b4e7-8121eec3e60b"
+    },
+    {
+      "claim_id": "6bfbfa75-cefd-4249-9be9-c9736cbaac01",
+      "result_id": "7ce6cb2c-415f-4d50-b4e7-8121eec3e60b"
+    },
+    {
+      "claim_id": "249ce152-d01c-4c8a-9d63-22dd261dc4e8",
+      "result_id": "744f5c08-6579-438b-8962-e46eaf8c3dcc"
+    },
+    {
+      "claim_id": "92d9c2a9-f996-4e10-bec8-0ba6c2d7a694",
+      "result_id": "744f5c08-6579-438b-8962-e46eaf8c3dcc"
+    },
+    {
+      "claim_id": "759563e3-6c6c-4750-be36-e8c11defaf34",
+      "result_id": "07218f06-3028-4155-a0ed-d17deac66962"
+    },
+    {
+      "claim_id": "e135d0c0-1a16-44f0-8be9-6be4952b36da",
+      "result_id": "07218f06-3028-4155-a0ed-d17deac66962"
+    },
+    {
+      "claim_id": "624b0a91-3743-477f-a1fc-26c89454a488",
+      "result_id": "07218f06-3028-4155-a0ed-d17deac66962"
+    },
+    {
+      "claim_id": "d3c4d333-08b2-45bb-a430-cfacb23f1808",
+      "result_id": "07218f06-3028-4155-a0ed-d17deac66962"
+    },
+    {
+      "claim_id": "1c4d5aae-3087-430a-a8f8-27e230a44413",
+      "result_id": "07218f06-3028-4155-a0ed-d17deac66962"
+    },
+    {
+      "claim_id": "f478ae0a-dd2d-4fd1-a211-a4610529a30c",
+      "result_id": "07218f06-3028-4155-a0ed-d17deac66962"
+    },
+    {
+      "claim_id": "b55ec380-86b1-4e95-a8a4-34df44578550",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "5bff159e-dab4-4876-8a7f-2b8c2342c9ae",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "1191e8aa-5a43-4811-8991-fbd717461355",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "25c83385-e372-4c50-b551-38744ce2235c",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "9e131859-25fe-4b63-84a4-4d7d8a09830d",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "ad0bef46-484a-4cbb-b810-0e81eac6feb3",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "d998be84-a3a6-454b-8687-c0a998e58863",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "871892a3-6d07-4975-8f84-e95a9f2857e0",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "f255023e-758e-45f5-99a7-7d1c81f5930d",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "e35bcaa0-be06-4a7c-ac0e-b9967fe72ee3",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "6990de0f-4c90-4118-b286-5dd482963ac2",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "7f828c98-c9f9-4d0f-b3cc-47f4f5b67bc2",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "a1300343-7fac-45c7-9740-85bf6ed9c6f0",
+      "result_id": "8a86a55b-8c44-445d-8ac7-d6b8aec21c1a"
+    },
+    {
+      "claim_id": "0e961fb0-8d59-48d7-8b5f-762747c41001",
+      "result_id": "9d398627-f71a-4205-8eda-6474773ff2a2"
+    },
+    {
+      "claim_id": "cf1547ad-f158-4daf-bea4-11779feeaaa3",
+      "result_id": "9d398627-f71a-4205-8eda-6474773ff2a2"
+    },
+    {
+      "claim_id": "77a6d994-630e-4e70-a59b-e68f75158f35",
+      "result_id": "9d398627-f71a-4205-8eda-6474773ff2a2"
+    },
+    {
+      "claim_id": "b996e20c-b06d-47bd-93d7-7ad7325b3a0f",
+      "result_id": "9d398627-f71a-4205-8eda-6474773ff2a2"
+    },
+    {
+      "claim_id": "8d143d11-cc3b-416e-a5a6-00aa07a89b16",
+      "result_id": "9d398627-f71a-4205-8eda-6474773ff2a2"
+    },
+    {
+      "claim_id": "cb2050c0-d83d-43be-afeb-70e6407b8502",
+      "result_id": "9d398627-f71a-4205-8eda-6474773ff2a2"
+    },
+    {
+      "claim_id": "6f5dcc04-884c-4ee9-902d-b3ea171217c1",
+      "result_id": "9d398627-f71a-4205-8eda-6474773ff2a2"
+    },
+    {
+      "claim_id": "561c32f9-76de-4d28-a165-e0d4416c8b67",
+      "result_id": "9d398627-f71a-4205-8eda-6474773ff2a2"
+    },
+    {
+      "claim_id": "af192ec3-ef70-4266-80c0-0c94220e6479",
+      "result_id": "9d398627-f71a-4205-8eda-6474773ff2a2"
+    },
+    {
+      "claim_id": "1c24f8b4-beca-4cbd-bbf4-d2a706fbe93f",
+      "result_id": "9d398627-f71a-4205-8eda-6474773ff2a2"
+    }
+  ],
+  "comparisons": []
+}

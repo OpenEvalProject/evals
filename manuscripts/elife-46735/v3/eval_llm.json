@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Low glucose concentration is required for S. cerevisiae to form rugose colonies with complex architecture, as colonies do not form in high glucose medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are supported by direct experimental observations (Figure 1A) comparing colony morphology under different glucose conditions, and are consistent with previously established findings cited in C2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14"
+    ],
+    "result": "Within mature yeast colonies grown in low glucose, cells spatially organize into metabolically distinct regions: dark cells with high gluconeogenic activity (high Pck1, Fbp1, trehalose, and glycogen) and light cells lacking gluconeogenic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C14 collectively demonstrate spatial metabolic specialization through multiple complementary approaches: visual observation (C3), fluorescent reporters (C7-C11), protein expression (implied in C8-C9), and metabolite measurements (C13). The flow cytometry data showing ~80% of dark cells and ~97% of light cells with distinct gluconeogenic profiles provides strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Cells growing in glucose-limited conditions are expected to have constitutively high hexokinase (Hxk1p) expression and extensive gluconeogenesis with high levels of gluconeogenic enzymes Pck1 and Fbp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 establish the expected metabolic state in low glucose conditions based on established knowledge (C4, C5) and confirm this experimentally with Western blot data (C6, Figure 1\u2014figure supplement 1A). This provides the baseline expectation against which the unexpected spatial organization is compared.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Light cells exhibit metabolic characteristics of glucose-replete conditions (high PPP activity, high nucleotide biosynthesis, better growth in high glucose) while dark cells show gluconeogenic characteristics, representing contrary metabolic states within the same colony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 are well-supported by multiple lines of evidence: growth assays (C15-C16, Figure 2A), fluorescent reporters (C17), stable isotope tracing showing differential 13C-glucose incorporation into PPP metabolites (C18, Figure 2D), and 15N incorporation into nucleotides (C19, Figure 2E). The convergence of these independent measurements strongly supports the conclusion of contrary metabolic states (C20-C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The phenotypic differences between light and dark cells are fully reversible without genetic changes, as isolated cells from either population can reform complete colonies with both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by colony reformation experiments (Figure 2F) showing that isolated light or dark cells both regenerate indistinguishable complex colonies. This demonstrates phenotypic plasticity rather than genetic differentiation, though the number of replicates and quantitative assessment of similarity are not specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A mathematical model incorporating resource production by dark cells, resource-dependent switching to the light state, and resource consumption by light cells successfully recaptures the spatial patterning and organization observed in real colonies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by model simulations (Figure 3D, Video 1) that reproduce key features of colony organization. The model's requirements (C25-C26) are validated by control simulations (Figure 3E) showing that removing these features prevents proper colony formation. However, the model is intentionally coarse-grained and simplified, which limits its quantitative predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Trehalose is present extracellularly in colonies and is preferentially taken up and utilized by light cells, which have higher levels of the trehalose transporter Mal11 and trehalase Nth1, and show exclusive accumulation of 13C-labeled metabolites from 13C-trehalose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 provide strong convergent evidence for trehalose as the key resource: extracellular detection (C27, Figure 4B), differential protein expression (C28, C30), 13C-trehalose uptake (C29, Figure 4D), enzymatic activity (C31, Figure 4F), and metabolic flux showing 13C-labeled glycolytic/PPP intermediates exclusively in light cells (C32, Figure 5A). The multiple independent measurements strongly support the conclusion (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Genetic deletion of the trehalose transporter (\u0394mal11) or trehalase (\u0394nth1) prevents the emergence of light cells, demonstrating that trehalose uptake and utilization directly control the emergence and persistence of the light cell state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are strongly supported by genetic deletion experiments showing that \u0394mal11 and \u0394nth1 colonies have very few or nearly no light cells (C34-C36, Figure 5B-C), with correspondingly higher percentages of gluconeogenic cells (C37, Figure 5D). This genetic validation provides strong causal evidence that trehalose metabolism controls light cell emergence (C38-C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "During colony development, extracellular trehalose builds up over 4 days then rapidly decreases, coinciding with the delayed, switch-like emergence of light cells after day 4, with PPP reporter activity showing cooperative switching (Hill coefficient >1) while gluconeogenic activity increases linearly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by time-course measurements of extracellular trehalose (C40-C41, Figure 6B), microscopy observations (C42, Figure 6C), and quantitative fluorescence measurements (C43-C45, Figure 6E). The correlation between trehalose dynamics and light cell emergence, along with the Hill coefficient analysis indicating cooperativity, provides strong support for a threshold-based switching mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Wild-type colonies with both light and dark cells spread over significantly greater area compared to \u0394nth1 colonies lacking light cells, demonstrating that metabolic specialization provides a collective growth advantage for spatial expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by long-term colony expansion measurements (Figure 7A-B) showing significantly greater spreading of wild-type versus \u0394nth1 colonies over 21 days. However, C48's speculation about foraging for nutrients is not directly tested and represents an interpretation rather than demonstrated fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Metabolic constraints in isogenic cell populations can drive the production, accumulation, and threshold-dependent utilization of a shared resource (trehalose), enabling spontaneous emergence of cells in contrary metabolic states with spatial organization that confers collective growth advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 represent the overarching conclusions synthesizing experimental and modeling results. These are well-supported by the collective evidence from metabolic characterization, trehalose identification, genetic validation, temporal dynamics, and colony expansion experiments. The integration of experimental and theoretical approaches provides strong support for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Prior work has established that trehalose can be found extracellularly in yeast, can be taken up through disaccharide transporters, and can be hydrolyzed to glucose to fuel glycolysis and cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by appropriate citations to previous studies. These establish the biological plausibility of trehalose as the key metabolic resource and provide the foundation for the experimental investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Prior work has established that isogenic cells form spatially organized communities during development, that phenotypic heterogeneity is a step toward multicellularity, that such heterogeneity provides adaptive benefits, that S. cerevisiae forms such communities, and that metabolic stress is commonly required for this organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 provide appropriate background context supported by citations to relevant literature. These establish the broader scientific context and significance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The carbon backbone of nucleotides comes from the pentose phosphate pathway (PPP) while nitrogen comes from amino acids, and high nucleotide synthesis is a canonical consequence of enhanced PPP activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 represent established biochemical knowledge appropriately cited from a standard textbook. This provides the biochemical rationale for using nucleotide synthesis as a readout of PPP activity.",
+    "result_type": "MINOR"
+  }
+]

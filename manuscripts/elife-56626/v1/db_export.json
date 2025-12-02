@@ -1,0 +1,1649 @@
+{
+  "submission": {
+    "id": "be0ffaf3-5f33-4f16-8ed4-4e19f45e6a71",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:16:17.651755Z",
+    "updated_at": "2025-12-02T17:16:17.651755Z"
+  },
+  "content": [
+    {
+      "id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "submission_id": "be0ffaf3-5f33-4f16-8ed4-4e19f45e6a71",
+      "content_type": "manuscript",
+      "content_text": "# Addressing selective reporting of experiments through predefined exclusion criteria\n\n## Authors\n\n- Kleber Neves<sup>1</sup> ([ORCID: 0000-0001-9519-4909](https://orcid.org/0000-0001-9519-4909))\n- Olavo B Amaral<sup>1</sup> ([ORCID: 0000-0002-4299-8978](https://orcid.org/0000-0002-4299-8978)) \u2020\n\n### Affiliations\n\n1. Institute of Medical Biochemistry Leopoldo de Meis, Universidade Federal do Rio de Janeiro Rio de Janeiro Brazil\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe pressure for every research article to tell a clear story often leads researchers in the life sciences to exclude experiments that 'did not work' when they write up their results. However, this practice can lead to reporting bias if the decisions about which experiments to exclude are taken after data have been collected and analyzed. Here we discuss how to balance clarity and thoroughness when reporting the results of research, and suggest that predefining the criteria for excluding experiments might help researchers to achieve this balance.\n\n## Introduction\n\nExperiments fail all the time, for both complex and trivial reasons. Because of this, many experiments are repeated \u2013 typically after tinkering a bit with the protocol \u2013 and the initial failed attempts often go unreported in published articles. This is understandable: trying to present all the unsuccessful results of a long, obstacle-prone project might make an article almost unreadable. Scientific articles thus frequently privilege conciseness over completeness, in order to tell an intuitive story and facilitate the understanding of complex ideas (Sanes, 2019; Sollaci and Pereira, 2004).\n\nNarrative quality, however, can go against the need for transparency in reporting to ensure reproducibility: as the process of conducting research is vulnerable to a large amount of biases (Chavalarias and Ioannidis, 2010), selective reporting of results can have detrimental consequences on the scientific record (Nosek et al., 2015; Nissen et al., 2016). If enough experiments are conducted, some are bound to attain significant results by chance alone using typical statistical standards (Ioannidis, 2005). Failure to fully report on all attempts to carry out an experiment, thus, can lead to a scenario where data can be cherry-picked to support one's hypothesis (Simmons et al., 2011).\n\nAs laboratory scientists, we understand both sides of the argument: reporting on every experimental failure will increase noise without adding much value to the reported results; on the other hand, having unlimited flexibility to decide whether an experiment can be excluded from a research article opens up a huge avenue for bias to creep in. Here we make the case that predefined inclusion and exclusion criteria for experiments can help solve this conundrum, and discuss ways in which they can be implemented in the workflow of experimental projects, particularly in those of a confirmatory nature. We also describe how we are taking this approach in the Brazilian Reproducibility Initiative, a large-scale multicenter replication of experimental findings in basic biomedical science (Amaral et al., 2019).\n\n## The many-level file drawer\n\nSelective reporting can appear at many levels. A considerable body of literature exists on the omission of whole studies, a phenomenon best known as the 'file drawer effect' (Rosenthal, 1979). This is best studied in areas such as clinical trials and psychology (Dwan et al., 2013; Ferguson and Heene, 2012; Fanelli, 2012), in which meta-analytic statistical methods are routinely used for estimating publication bias (Jin et al., 2015). At the level of analysis, there is also evidence of bias in selective reporting of measured outcomes within trials (Williamson et al., 2005). At the other end of the scale, at the level of data collection, there has been a reasonable amount of discussion about the selective post-hoc exclusion of data points identified as outliers (Holman et al., 2016).\n\nNot reporting the results of individual experiments is an intermediate level of bias that lies between the omission of studies and the omission of data points. It appears to be common in scientific fields where a single article typically includes multiple experiments or datasets, as in much of the life sciences. Although this is potentially one of the largest sources of bias in bench research, it has been relatively underdiscussed. The case has been made that the prevalence of significant results within single articles is frequently too high to be credible, considering the statistical power of individual experiments (Schimmack, 2012; Lakens and Etz, 2017). However, such statistical evidence cannot identify whether this is due to experiments going missing, leading to selective reporting of positive results, or whether the published experiments are biased towards positive findings at the level of measurement or analysis. Whereas one can locate unpublished clinical trials because they are preregistered, or look for mismatching sample sizes in articles to infer removal/loss of subjects, detecting an unreported experiment requires information that is not usually available to the reader.\n\nOnce more, the problem is that reporting the full information on every experiment conducted within a project might be counterproductive\u00a0as\u00a0well. Laboratory science can be technically challenging, and experimental projects hardly ever run smoothly from start to finish; thus, a certain degree of selective reporting can be helpful to separate signal from noise. After all, hardly anyone would be interested to know that your histological sections failed to stain, or that your culture behaved in strange ways because of contamination.\n\nWhat is the limit, however, to what can be left out of an article? While most scientists will agree that suppressing results from an article because they do not fit a hypothesis is unethical, few would argue in favor of including every methodological failure in it. However, if researchers are free to classify experiments into either category after the results are in, there will inevitably be room for bias in this decision.\n\n## The reverse Texas sharpshooter\n\nIt is all too easy to find something that went wrong with a particular experiment to justify its exclusion. Maybe the controls looked different than before, or one remembers that someone had complained about that particular antibody vial. Maybe the animals seemed very stressed that day, or the student who ran the experiment didn't have a good hand for surgery. Or maybe an intentional protocol variation apparently made a previously observed effect disappear. This is particularly frequent in exploratory research, where protocols are typically adjusted along the way. It is thus common that people will repeat an experiment again and again with minor tweaks until a certain result is found \u2013 frequently one that confirms an intuition or a previous finding (e.g. 'I got it the first time, something must have gone wrong this time').\n\nAll of the factors above might be sensible reasons to exclude an experiment. However, this makes it all too easy to find a plausible explanation for a result that does not fit one's hypothesis. Confirmation bias can easily lead one\u00a0to discard experiments that 'didn't work' by attributing the results to experimental artifacts. In this case, 'not working' conflates negative results \u2013 i.e. non-significant differences between groups \u2013 with methodological failures \u2013 i.e. an experiment that is uninterpretable because its outcome could not be adequately measured. Even in the best of intentions, a scientist with too much freedom to explore reasons to exclude an experiment will allow unconscious biases related to its results to influence his or\u00a0her\u00a0decision (Holman et al., 2015).\n\nThis problem is analogous to the forking paths in data analysis (Gelman and Loken, 2013), or to the Texas sharpshooter fallacy (Biemann, 2013), in which hypothesizing after the results are known (HARKing) leads a claim to be artificially confirmed by the same data that inspired it (Hollenbeck and Wright, 2017). But while the Texas sharpshooter hits the bullseye because he or she draws the target at the point where the bullet landed, the scientist looking to invalidate an experiment draws his or her validation target away from the results \u2013 usually based on a problem that is only considered critical after the results are seen. Importantly, these decisions \u2013 and experiments \u2013 will be invisible in the final article if the norm is to set aside the pieces that do not fit the story.\n\n## Paths to confirmatory research\n\nOne much-discussed solution to the problem of analysis flexibility is preregistration of hypotheses and methods (Forstmeier et al., 2017; Nosek et al., 2018). The practice is still mostly limited to areas such as clinical trials (in which registration is mandatory in many countries) and psychology (in which the movement has gained traction over reproducibility concerns), and is not easy to implement in laboratory science, where protocols are frequently decided over the course of a project, as hypotheses are built and remodeled along the way.\n\nAlthough exploratory science is the backbone of most basic science projects, a confirmation step with preregistered methods could greatly improve the validation of published findings (Mogil and Macleod, 2017). As it stands today, most basic research in the life sciences is performed in an exploratory manner, and should be taken as preliminary rather than confirmatory evidence \u2013 more akin to a series of case reports than to\u00a0a clinical trial. This type of research can still provide interesting and novel insights, but its weight as evidence for a given hypothesis should be differentiated from that of confirmatory research that follows a predefined protocol (Kimmelman et al., 2014).\n\nInterestingly, the concept of preregistration can also be applied to criteria that determine whether an experiment is methodologically sound or not, and thus amenable to suppression from a published article. Laboratory scientists are used to including controls to assess the internal validity of their methods. In PCR experiments, for instance, measures are typically taken along the way to alert the researcher when something goes wrong: the ratio of absorbance of an RNA sample at 280 and 260 nm is used as a purity test for the sample, and non-template controls are typically used to check for specificity of amplification (Matlock, 2015).\n\nRarely, however, are criteria for what constitutes an appropriate result for a positive or negative control decided and registered in advance, leaving the researcher free to make this decision once the results of the experiment are in. This not only fails to prevent bias, but actually adds degrees of freedom: much like adding variables or analysis options, adding methodological controls can provide the researcher with more possible justifications to exclude experiments (Wicherts et al., 2016). Once more, the solution seems to require that the criteria to discard an experiment based on these controls are set without seeing the results, in order to counter the possibility of bias.\n\nPreregistration is not the only possible path to confirmatory research. Preregistering exclusion criteria may be unnecessary if the data for all experiments performed are presented with no censoring (Oberauer and Lewandowsky, 2019). In this setting, it is up to the reader to judge whether the data fit a hypothesis, as performing the entire set of possible analyses (Steegen et al., 2016) can show how much the conclusions depend on certain decisions, such as ignoring an experiment. However, this can only happen if all collected data are presented, which is not common practice in the life sciences (Wallach et al., 2018), partly because it goes against the tradition of conveying information in a narrative form (Sanes, 2019). If some form of data filtering \u2013 for failed experiments, noisy signals or uninformative data \u2013 is important for clarity (and this may very well be the case), preventing bias requires that exclusion criteria are set independently of the results.\n\nA third option to address bias in the decision to include or exclude experiments is to perform blind data analysis \u2013 in which inclusion choices are made by experts who are blinded to the results, but have solid background knowledge of the method in\u00a0order\u00a0to devise sensible criteria. This is commonly performed in physics, for instance, and allows validity criteria to be defined even after data collection (MacCoun and Perlmutter, 2015). Such a procedure might be less optimal than establishing and publically registering criteria, as preregistration offers additional advantages such as allowing unpublished studies to be tracked (Powell-Smith and Goldacre, 2016). Nevertheless, it is likely easier to implement, allows greater flexibility in analysis decisions, and can still go a long way in limiting selective reporting and analysis bias.\n\n## Pre-specified criteria to clean up the data record\n\nA solution to selective reporting, thus, is to set criteria to consider an experiment as valid, or a set of data as relevant for analysis, ideally before it is performed/collected. These include inclusion and exclusion criteria for animals or cultures to be used, positive and negative controls to determine if an assay is sensitive and/or specific, and additional variables or experiments to verify that an intervention's known effects have been observed. Ideally, these criteria should be as objective as possible, with thresholds and rules for when data must be included and when they should be discarded. They should also be independent of the outcome measure of the experiment \u2013 that is, the observed\u00a0effect size should not be used as a basis for exclusion \u2013 and applied equally to all experimental groups. Importantly, when criteria for validity are met, this should be taken as evidence that the experiment is appropriate, and that it would thus be unethical to exclude it from an article reporting on the data.\n\nAs for any decision involving predefined thresholds, concerns over sensitivity and specificity arise: criteria that are too loose might lead to the inclusion of questionable or irrelevant data in an article, whereas those that are too stringent could lead meaningful experiments to be discarded. As with preregistration or statistical significance thresholds, this should not discourage researchers from addressing these limitations in an exploratory manner \u2013 one is always free to show data that does not fit validity criteria if this is clearly pointed out. What is important is that authors are transparent about it \u2013 and that the reader knows whether they are following prespecified criteria to ignore an experiment or have decided on it after seeing the results. Importantly, this can only happen when data is shown \u2013 meaning that decisions to ignore an experiment with no predefined reason must inevitably be discussed alongside its results.\n\nFor widely used resources such as antibodies and cell lines, there are already a number of recommendations for validation that have been developed by large panels of experts and can be used for this purpose. For cell line authentication, for example, the International Cell Line Authentication Committee (ICLAC) recommends a\u00a0\u2265\u00a080% match threshold for short-tandem-repeat (STR) profiling, which allows for some variation between passages (e.g., due to genetic drift; Capes-Davis et al., 2013). For antibodies, the International Working Group for Antibody Validation recommends a set of strategies for validation (Uhlen et al., 2016), such as quantitative immunoprecipitation assays that use predefined thresholds for antibody specificity (Marcon et al., 2015). Other areas and methods are likely to have similarly established guidelines that can be used as references for setting inclusion and exclusion criteria for experiments.\n\nAs coordinators of the Brazilian Reproducibility Initiative, a multicenter replication of 60\u2013100 experiments from the Brazilian biomedical literature over the last 20 years, conducted by a team of more than 60 labs, we have been faced with the need for validation criteria in many stages during protocol development (Amaral et al., 2019). As the project is meant to be confirmatory in nature, we intend to preregister every protocol, including the analysis plan. Furthermore, to make sure that each replication is methodologically sound, we are encouraging laboratories to add as many additional controls as they judge necessary to each experiment. To deal with the problem raised in this essay, however, we also require that they prespecify their criteria for using the data from these controls in the analysis.\n\nFor RT-PCR experiments, for instance, controls for RNA integrity and purity must be accompanied by which ratios will allow inclusion of the sample in the final experiment \u2013 or, conversely, will lead data to be discarded. For cell viability experiments using the MTT assay, positive controls for cell toxicity are recommended to test the sensitivity of the assay, but must include thresholds for inclusion of the experiment (e.g., a reduction of at least X% in cell viability). For behavioral experiments, accessory measurements to evaluate an intervention's known effects (such as weight in the case of high-calorie diets) can be used to confirm that it has worked as expected, and that testing its effects on other variables is warranted. Once more, thresholds must be set beforehand, and failure to meet inclusion criteria will lead the experiment to be considered invalid and repeated in order to attain a usable result.\n\nDefining validation criteria in advance for every experiment has not been an easy exercise: even though researchers routinely devise controls for their experiments, they are not used to setting objective criteria to decide whether or not the results of an experiment should\u00a0be included when reporting the data. However, in a preregistered, confirmatory project, we feel that this is vital to allow us to decide if a failure to replicate a result represents a contradiction of the original finding or is due to a methodological artifact. Moreover, we feel that predefining validation criteria will help to protect the project from criticism about a lack of technical expertise by the replicating labs, which has been a common response to failed replication attempts in other fields (Baumeister, 2019).\n\nAs one cannot anticipate all possible problems, it is likely that, in some experiments at least, such prespecified criteria might turn out not be ideal in separating successful experiments from failed ones. Nevertheless, for the sake of transparency, we feel that it is important that any post-hoc decisions for considering experiments as unreliable are marked as such, and that both the decision and its impact on the results are disclosed. Once more, there is no inherent problem with exploratory research or data-dependent choices; the problem is when these are done secretly and communicated selectively (Hollenbeck and Wright, 2017; Simmons et al., 2011).\n\n## Conclusion\n\nAlthough we have focused on the use of validation criteria to make decisions about experiments, they can also be used to make decisions about which data to analyze. In fields such as electrophysiology or functional neuroimaging, for example, data typically pass through preprocessing pipelines before analysis: the use of predefined validation criteria could\u00a0thus prevent the introduction of bias by researchers when exploring these pipelines (Phillips, 2004; Carp, 2012; Botvinik-Nezer et al., 2019). Genomics and a number of other high-throughput fields have also developed standard evaluation criteria to avoid bias in analysis (Kang et al., 2012). This suggests that communities centering on specific methods can reach a consensus on which criteria are minimally necessary to draw the line between data that can be censored and those that must be analyzed.\n\nSuch changes will only happen on a larger scale, however, if researchers are aware of the potential impacts of post-hoc exclusion decisions on the reliability of results, an area in which the life sciences still lag behind other fields of research. Meanwhile, individual researchers focusing on transparency and reproducibility should consider the possibility of setting \u2013 and ideally registering \u2013 predefined inclusion and exclusion criteria for experiments in their protocols. Some recommendations to consider include the following:\n\nMaking these criteria as objective as possible can help researchers make inclusion decisions in an unbiased way, avoiding reliance on 'gut feelings' that can easily lead one astray. As Richard Feynman once said: \u2018science is a way of trying not to fool yourself, and you are the easiest person to fool\u2019 (Feynman, 1974). An easy way to make this advice heard is to explicitly state what an appropriate experiment means before starting it, and to stick to your view after the results are in.\n",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "639f9bfc-5e57-4493-92e0-31e93e39dab1",
+      "submission_id": "be0ffaf3-5f33-4f16-8ed4-4e19f45e6a71",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56626.sa1](https://doi.org/10.7554/eLife.56626.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Addressing selective reporting of experiments \u2013 the case for predefined exclusion criteria\" for consideration by eLife. Your article has been reviewed by two peer reviewers, both of whom have agreed to reveal their identity: Anita E Bandrowski (Reviewer #1); Wolfgang Forstmeier (Reviewer #2). If you are able to address the points raised by the reviewers (see below) in a revised version, we will be happy to accept your article for publication.\n\nSummary:\n\nReviewer #1\n\nThis is an excellent article about a very important and largely overlooked topic in the reproducibility conversation. It absolutely should be published. As an experimental scientist, I appreciate the author's practical stance, something that many conversations miss. Indeed, in that vein I am suggesting a few tidbits that may help the article become a better reference for experimental scientists, not just a very interesting position paper. However, these are merely suggestions and the manuscript should be published with or without addressing them.\n\nReviewer #2\n\nI think this manuscript makes a very useful contribution by promoting higher standards of scientific objectivity. The issue of selective reporting of experiments within publications that present several experiments has received only limited attention so far. Hence, the present paper is helpful in terms of inspiring a debate about scientific objectivity and in terms of clarifying to some extent what is and what is not legitimate. I think the present manuscript could still be improved in two ways.\n\nEssential revisions:\n\n1) The authors state: \"...only way to prevent bias is by setting exclusion criteria beforehand. \"\n\nThis is a very interesting argument, but I believe that there are other possibilities. Preregistration has not eliminated bias from the psychology literature, instead there are now many abandoned preregistrations. While this is a better state than biomedicine, where we really don't know who attempted which study, it is still not satisfying.\n\nOne could argue that it may become possible to label the study as exploratory vs validated. It seems that failure to validate is mostly problematic when clinical trials are involved and those might be reserved for only studies that have been validated using preregistration, proper controls, power analysis, blinding and a full description of the experimental group subjects. These criteria are addressed in less than 10% of studies, in our experience (MacLeod's laboratory has looked at percentages of rigor criteria across certain aspects of the disease literature much earlier than we did).\n\nIt should be noted, however, that exploratory studies can provide glimpses of interesting results not easily ascertained by holding all variables constant. One might argue that the real problem is that these exploratory studies are treated like real validated studies instead of something more akin to case reports. There is a good reason to have case reports, they are intended to describe an interesting observation. If biomedicine adopts a similar labeling system, it may also help to put the study in context.\n\n2. In several sections, the authors describe antibody and cell lines examples, but give more practical examples of validation criteria for RT-PCR.\n\nWhat should help the paper is a bit of practical advice for studies involving antibodies and cell lines. Across the biomedical literature, there are some technique specific advice that has been offered, not by a single expert, but by large panels of experts that have met and created a set of recommendations for properly validating the techniques.\n\nPlease consider adding some resources for different experimental paradigms in the form of a set of key references.\n\nFor antibodies I would suggest the Ulhen et al., 2016: PMID: 27595404 paper (based on a panel of experts).\n\nFor cell lines, I would suggest ICLAC.org (again a panel of experts with specific guidelines; there are multiple papers here, but probably pointing to the organization is sufficient).\n\n3. I think it would be good if the paper could end with some clear messages (recommendations presented as numbered bullet points), which every study (i.e. publication) should consider. I would like to leave this up to the authors, but it should contain the message that the decision about the validity of an experiment must not be based on the effect size of the outcome measure.\n\n4. I think that the paper would benefit from widening its scope such that its messages are applicable not only to preregistered studies but also to others. Rather than saying that scientific objectivity would require preregistration of criteria of experimental validity, I would say that there are 3 ways of achieving high objectivity standards: i) Preregistered criteria of validity; ii) Blinding of the person, who develops and applies the criteria of validity, from the research outcome of each experiment; iii) Complete reporting and summary of all experiments and pilot trials.\n\nCurrently the paper already hints at the possibility iii) in the subsection \u201cPreregistration in confirmatory research\u201d as an alternative to preregistration. The idea of blinding the decision maker has been explained elsewhere (eg MacCoun & Perlmutter, 2015; MacCoun & Perlmutter, 2017.\n\nI guess it should be feasible for many studies to find an independent expert who is blinded from the data (outcome of experiments) and who can develop criteria for validity of experiments (even after data collection) and who applies those criteria strictly without knowing how this affects the overall outcome and conclusions. If studies implement such blinding techniques, I think it is also helpful to see these procedures described in the methods section. This signals awareness and will increase the credibility of a study compared to other studies where the authors may not even be aware of the issue of confirmation bias and selective reporting.\n\n- MacCoun, R., & Perlmutter, S. (2015). Blind analysis: Hide results to seek the truth. Nature, 526(7572), 187-189.\n\n- MacCoun, R. J., & Perlmutter, S. (2017). Blind analysis as a correction for confirmatory bias in physics and in psychology. Psychological science under scrutiny: Recent challenges and proposed solutions, 297-322.\n",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b582f3a6-93ec-4368-be15-c70171c4dfd2",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C1",
+      "claim": "The pressure for every research article to tell a clear story often leads researchers in the life sciences to exclude experiments that 'did not work' when they write up their results.",
+      "claim_type": "EXPLICIT",
+      "source": "The pressure for every research article to tell a clear story often leads researchers in the life sciences to exclude experiments that 'did not work' when they write up their results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about research practices in life sciences, based on the authors' knowledge and experience in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "91ad1f67-94ec-4dde-b717-2023f9c4f2e8",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C2",
+      "claim": "Selective reporting of experiments can lead to reporting bias if decisions about which experiments to exclude are taken after data have been collected and analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this practice can lead to reporting bias if the decisions about which experiments to exclude are taken after data have been collected and analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of post-hoc decision making in research reporting.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "64126460-7351-4e85-8ce6-02db9e55d2ae",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C3",
+      "claim": "Scientific articles frequently privilege conciseness over completeness to tell an intuitive story and facilitate understanding of complex ideas.",
+      "claim_type": "EXPLICIT",
+      "source": "Scientific articles thus frequently privilege conciseness over completeness, in order to tell an intuitive story and facilitate the understanding of complex ideas (Sanes, 2019; Sollaci and Pereira, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature (Sanes, 2019; Sollaci and Pereira, 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "a5025a43-da9b-434a-8e24-6f400373acf7",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C4",
+      "claim": "The process of conducting research is vulnerable to a large amount of biases.",
+      "claim_type": "EXPLICIT",
+      "source": "as the process of conducting research is vulnerable to a large amount of biases (Chavalarias and Ioannidis, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chavalarias and Ioannidis, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "a4cbc8fb-6493-4314-af53-7b999c92163c",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C5",
+      "claim": "Selective reporting of results can have detrimental consequences on the scientific record.",
+      "claim_type": "EXPLICIT",
+      "source": "selective reporting of results can have detrimental consequences on the scientific record (Nosek et al., 2015; Nissen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nosek et al., 2015 and Nissen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "99ddaa53-3c4a-4d07-9f7d-c84871ae256c",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C6",
+      "claim": "If enough experiments are conducted, some are bound to attain significant results by chance alone using typical statistical standards.",
+      "claim_type": "EXPLICIT",
+      "source": "If enough experiments are conducted, some are bound to attain significant results by chance alone using typical statistical standards (Ioannidis, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ioannidis, 2005 and represents established statistical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "ee46c18b-3b68-40ec-bcba-9593952b9b51",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C7",
+      "claim": "Failure to fully report on all attempts to carry out an experiment can lead to a scenario where data can be cherry-picked to support one's hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Failure to fully report on all attempts to carry out an experiment, thus, can lead to a scenario where data can be cherry-picked to support one's hypothesis (Simmons et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Simmons et al., 2011 and represents logical inference about the consequences of incomplete reporting.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "02a62143-14a0-4b29-af57-91586ca44ba8",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C8",
+      "claim": "Predefined inclusion and exclusion criteria for experiments can help solve the conundrum between reporting clarity and thoroughness.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we make the case that predefined inclusion and exclusion criteria for experiments can help solve this conundrum",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main argument/hypothesis proposed by the authors, representing speculation about a potential solution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "9cf00cc3-af7e-41cb-a237-4683824ba209",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C9",
+      "claim": "The Brazilian Reproducibility Initiative is a large-scale multicenter replication of experimental findings in basic biomedical science.",
+      "claim_type": "EXPLICIT",
+      "source": "We also describe how we are taking this approach in the Brazilian Reproducibility Initiative, a large-scale multicenter replication of experimental findings in basic biomedical science (Amaral et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the Brazilian Reproducibility Initiative, supported by a citation to Amaral et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "57861d97-4a12-4ffe-9509-d4eb6356848e",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C10",
+      "claim": "The 'file drawer effect' refers to the omission of whole studies.",
+      "claim_type": "EXPLICIT",
+      "source": "A considerable body of literature exists on the omission of whole studies, a phenomenon best known as the 'file drawer effect' (Rosenthal, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rosenthal, 1979, which introduced this concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "f0c7480a-1c99-4155-bc00-32474081afcc",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C11",
+      "claim": "The file drawer effect is best studied in areas such as clinical trials and psychology.",
+      "claim_type": "EXPLICIT",
+      "source": "This is best studied in areas such as clinical trials and psychology (Dwan et al., 2013; Ferguson and Heene, 2012; Fanelli, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Dwan et al., 2013; Ferguson and Heene, 2012; and Fanelli, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "5169db11-8e40-4796-afaa-2a93ef0b5c7a",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C12",
+      "claim": "Meta-analytic statistical methods are routinely used for estimating publication bias in clinical trials and psychology.",
+      "claim_type": "EXPLICIT",
+      "source": "in which meta-analytic statistical methods are routinely used for estimating publication bias (Jin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "d8184924-ff65-48ff-9dcc-e3d2ccb908ff",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C13",
+      "claim": "There is evidence of bias in selective reporting of measured outcomes within trials.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of analysis, there is also evidence of bias in selective reporting of measured outcomes within trials (Williamson et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Williamson et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "3e20f772-2840-4595-a00e-b4483cdea4f3",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C14",
+      "claim": "There has been discussion about the selective post-hoc exclusion of data points identified as outliers.",
+      "claim_type": "EXPLICIT",
+      "source": "At the other end of the scale, at the level of data collection, there has been a reasonable amount of discussion about the selective post-hoc exclusion of data points identified as outliers (Holman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Holman et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "2297acd2-c3c2-4e2a-ad77-2c533ebd7b7e",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C15",
+      "claim": "Not reporting the results of individual experiments is an intermediate level of bias that lies between the omission of studies and the omission of data points.",
+      "claim_type": "EXPLICIT",
+      "source": "Not reporting the results of individual experiments is an intermediate level of bias that lies between the omission of studies and the omission of data points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical categorization of different levels of selective reporting bias.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "0a24349a-91b3-466a-a3df-169b4a28f98a",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C16",
+      "claim": "Not reporting individual experiments appears to be common in scientific fields where a single article typically includes multiple experiments or datasets, as in much of the life sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears to be common in scientific fields where a single article typically includes multiple experiments or datasets, as in much of the life sciences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the authors' knowledge of practices in life sciences.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "e289ab7e-8066-4f58-bfd9-fa0eb6711db0",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C17",
+      "claim": "The omission of individual experiments is potentially one of the largest sources of bias in bench research but has been relatively underdiscussed.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this is potentially one of the largest sources of bias in bench research, it has been relatively underdiscussed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment by the authors based on their knowledge of the field and the relative lack of literature on this topic.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "89cc52b4-25cc-49a4-bf9b-63d816cc00d4",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C18",
+      "claim": "The prevalence of significant results within single articles is frequently too high to be credible, considering the statistical power of individual experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The case has been made that the prevalence of significant results within single articles is frequently too high to be credible, considering the statistical power of individual experiments (Schimmack, 2012; Lakens and Etz, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Schimmack, 2012 and Lakens and Etz, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "1a0c5469-1ac6-42b3-9a00-7469a34de7aa",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C19",
+      "claim": "Statistical evidence cannot identify whether high prevalence of significant results is due to experiments going missing or whether published experiments are biased at the level of measurement or analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such statistical evidence cannot identify whether this is due to experiments going missing, leading to selective reporting of positive results, or whether the published experiments are biased towards positive findings at the level of measurement or analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of statistical evidence in identifying the source of bias.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "24ef3e72-f32f-435a-ba0f-ea872e5a5a7a",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C20",
+      "claim": "Detecting an unreported experiment requires information that is not usually available to the reader.",
+      "claim_type": "EXPLICIT",
+      "source": "detecting an unreported experiment requires information that is not usually available to the reader.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the practical limitations of detecting unreported experiments.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "a81db399-4aec-4635-81da-5a5df888daea",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C21",
+      "claim": "Laboratory science can be technically challenging, and experimental projects hardly ever run smoothly from start to finish.",
+      "claim_type": "EXPLICIT",
+      "source": "Laboratory science can be technically challenging, and experimental projects hardly ever run smoothly from start to finish",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' knowledge and experience in laboratory science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "3a126e14-68ea-4a3c-8460-3b18fb56235e",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C22",
+      "claim": "A certain degree of selective reporting can be helpful to separate signal from noise in laboratory science.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, a certain degree of selective reporting can be helpful to separate signal from noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential utility of selective reporting in certain contexts.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "d2625c6d-6096-401c-a6e0-075102e35904",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C23",
+      "claim": "If researchers are free to classify experiments into categories after the results are in, there will inevitably be room for bias in this decision.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if researchers are free to classify experiments into either category after the results are in, there will inevitably be room for bias in this decision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of post-hoc decision making.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "8904b2bc-0d33-476f-87e8-2c46678df77d",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C24",
+      "claim": "It is common that researchers will repeat an experiment again and again with minor tweaks until a certain result is found.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus common that people will repeat an experiment again and again with minor tweaks until a certain result is found \u2013 frequently one that confirms an intuition or a previous finding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' knowledge and observation of research practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "d30fe045-a217-46e4-8fcc-521a109e3ee7",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C25",
+      "claim": "Confirmation bias can easily lead one to discard experiments that 'didn't work' by attributing the results to experimental artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirmation bias can easily lead one to discard experiments that 'didn't work' by attributing the results to experimental artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge about confirmation bias.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "21726c13-c258-4d61-98e3-9163f043a846",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C26",
+      "claim": "A scientist with too much freedom to explore reasons to exclude an experiment will allow unconscious biases related to its results to influence his or her decision.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the best of intentions, a scientist with too much freedom to explore reasons to exclude an experiment will allow unconscious biases related to its results to influence his or her decision (Holman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Holman et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "a0520c1c-047f-4d52-b2b0-90ad197ceeac",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C27",
+      "claim": "The problem of selective experiment exclusion is analogous to the forking paths in data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem is analogous to the forking paths in data analysis (Gelman and Loken, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy drawn by the authors, with support from a citation to Gelman and Loken, 2013.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "6472b0a0-2881-4909-9f10-534756fa5c36",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C28",
+      "claim": "The problem of selective experiment exclusion is analogous to the Texas sharpshooter fallacy.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem is analogous to the forking paths in data analysis (Gelman and Loken, 2013), or to the Texas sharpshooter fallacy (Biemann, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy drawn by the authors, with support from a citation to Biemann, 2013.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "5b41c80a-e9da-48d1-830f-77d882719a6c",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C29",
+      "claim": "Hypothesizing after the results are known (HARKing) leads a claim to be artificially confirmed by the same data that inspired it.",
+      "claim_type": "EXPLICIT",
+      "source": "in which hypothesizing after the results are known (HARKing) leads a claim to be artificially confirmed by the same data that inspired it (Hollenbeck and Wright, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hollenbeck and Wright, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "4f32190f-da54-4a3c-a27c-aad25c52007f",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C30",
+      "claim": "Preregistration of hypotheses and methods is a solution to the problem of analysis flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "One much-discussed solution to the problem of analysis flexibility is preregistration of hypotheses and methods (Forstmeier et al., 2017; Nosek et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Forstmeier et al., 2017 and Nosek et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "0b4dc4ce-9573-4a53-9b88-13f0e9bcd0b0",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C31",
+      "claim": "Preregistration is mostly limited to areas such as clinical trials and psychology.",
+      "claim_type": "EXPLICIT",
+      "source": "The practice is still mostly limited to areas such as clinical trials (in which registration is mandatory in many countries) and psychology (in which the movement has gained traction over reproducibility concerns)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' knowledge of current practices in different research fields.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "a27e90f3-6acd-4a5e-a0af-cd51c3cbecf9",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C32",
+      "claim": "Preregistration is not easy to implement in laboratory science, where protocols are frequently decided over the course of a project.",
+      "claim_type": "EXPLICIT",
+      "source": "and is not easy to implement in laboratory science, where protocols are frequently decided over the course of a project, as hypotheses are built and remodeled along the way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' knowledge and experience in laboratory science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "7b9342aa-25da-4380-b721-e2ed9391ca72",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C33",
+      "claim": "A confirmation step with preregistered methods could greatly improve the validation of published findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Although exploratory science is the backbone of most basic science projects, a confirmation step with preregistered methods could greatly improve the validation of published findings (Mogil and Macleod, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mogil and Macleod, 2017.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "904a1c61-2388-4757-80b1-5a8145283b2a",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C34",
+      "claim": "Most basic research in the life sciences is performed in an exploratory manner and should be taken as preliminary rather than confirmatory evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "As it stands today, most basic research in the life sciences is performed in an exploratory manner, and should be taken as preliminary rather than confirmatory evidence \u2013 more akin to a series of case reports than to a clinical trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' knowledge of current practices in life sciences research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "aeeb6ca5-c8c2-4171-8d1e-bbc446df5cf4",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C35",
+      "claim": "Exploratory research can provide interesting and novel insights, but its weight as evidence should be differentiated from confirmatory research that follows a predefined protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of research can still provide interesting and novel insights, but its weight as evidence for a given hypothesis should be differentiated from that of confirmatory research that follows a predefined protocol (Kimmelman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kimmelman et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "9d44e794-e83b-42b4-827c-5b45ef561009",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C36",
+      "claim": "The concept of preregistration can be applied to criteria that determine whether an experiment is methodologically sound.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the concept of preregistration can also be applied to criteria that determine whether an experiment is methodologically sound or not, and thus amenable to suppression from a published article.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel application of preregistration proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "1d28938d-c7a0-40da-85c7-98eb2a85596e",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C37",
+      "claim": "Laboratory scientists are used to including controls to assess the internal validity of their methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Laboratory scientists are used to including controls to assess the internal validity of their methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' knowledge of standard laboratory practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "24acc693-89f2-4700-89db-6986270f18c5",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C38",
+      "claim": "In PCR experiments, the ratio of absorbance of an RNA sample at 280 and 260 nm is used as a purity test for the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In PCR experiments, for instance, measures are typically taken along the way to alert the researcher when something goes wrong: the ratio of absorbance of an RNA sample at 280 and 260 nm is used as a purity test for the sample",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PCR methodology, supported by a citation to Matlock, 2015.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "2a3a375c-0233-40ff-8cce-6d5c1080bcae",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C39",
+      "claim": "Non-template controls are typically used in PCR to check for specificity of amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "and non-template controls are typically used to check for specificity of amplification (Matlock, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PCR methodology, supported by a citation to Matlock, 2015.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "ed4d5774-0c5a-46bb-88c5-3a0cc2349539",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C40",
+      "claim": "Criteria for what constitutes an appropriate result for a positive or negative control are rarely decided and registered in advance.",
+      "claim_type": "EXPLICIT",
+      "source": "Rarely, however, are criteria for what constitutes an appropriate result for a positive or negative control decided and registered in advance, leaving the researcher free to make this decision once the results of the experiment are in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' knowledge and observation of current research practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "c42f65a3-98b7-4a52-b10c-f0666b6c6573",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C41",
+      "claim": "Adding methodological controls can provide the researcher with more possible justifications to exclude experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This not only fails to prevent bias, but actually adds degrees of freedom: much like adding variables or analysis options, adding methodological controls can provide the researcher with more possible justifications to exclude experiments (Wicherts et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wicherts et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "d6d04d96-2608-4a74-9254-ee624a051b5c",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C42",
+      "claim": "Preregistering exclusion criteria may be unnecessary if the data for all experiments performed are presented with no censoring.",
+      "claim_type": "EXPLICIT",
+      "source": "Preregistering exclusion criteria may be unnecessary if the data for all experiments performed are presented with no censoring (Oberauer and Lewandowsky, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Oberauer and Lewandowsky, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "13012c31-19c6-49ef-bb2a-0aeadfcc552c",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C43",
+      "claim": "Performing the entire set of possible analyses can show how much the conclusions depend on certain decisions, such as ignoring an experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In this setting, it is up to the reader to judge whether the data fit a hypothesis, as performing the entire set of possible analyses (Steegen et al., 2016) can show how much the conclusions depend on certain decisions, such as ignoring an experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Steegen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "52a4a9d5-5265-419e-8b34-c40fd7715c36",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C44",
+      "claim": "Presenting all collected data is not common practice in the life sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this can only happen if all collected data are presented, which is not common practice in the life sciences (Wallach et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wallach et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "8f28d970-653d-42b1-86aa-91127b5cc988",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C45",
+      "claim": "The tradition of conveying information in a narrative form is one reason why presenting all collected data is not common in life sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "partly because it goes against the tradition of conveying information in a narrative form (Sanes, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sanes, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "b81caf27-8c04-4858-917b-f38f5aa43323",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C46",
+      "claim": "If data filtering is important for clarity, preventing bias requires that exclusion criteria are set independently of the results.",
+      "claim_type": "EXPLICIT",
+      "source": "If some form of data filtering \u2013 for failed experiments, noisy signals or uninformative data \u2013 is important for clarity (and this may very well be the case), preventing bias requires that exclusion criteria are set independently of the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how to prevent bias when data filtering is necessary.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "2bbc949d-5fa8-4355-9ea0-76820987e031",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C47",
+      "claim": "Blind data analysis is an option to address bias in the decision to include or exclude experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "A third option to address bias in the decision to include or exclude experiments is to perform blind data analysis \u2013 in which inclusion choices are made by experts who are blinded to the results, but have solid background knowledge of the method in order to devise sensible criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed solution based on practices in other fields.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "712ba957-c42a-4c32-9a83-ee9f6a75f43a",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C48",
+      "claim": "Blind data analysis is commonly performed in physics.",
+      "claim_type": "EXPLICIT",
+      "source": "This is commonly performed in physics, for instance, and allows validity criteria to be defined even after data collection (MacCoun and Perlmutter, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to MacCoun and Perlmutter, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "36fc6d96-ff93-4240-af36-c9b3b986d158",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C49",
+      "claim": "Blind data analysis might be less optimal than establishing and publicly registering criteria, as preregistration offers additional advantages such as allowing unpublished studies to be tracked.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a procedure might be less optimal than establishing and publically registering criteria, as preregistration offers additional advantages such as allowing unpublished studies to be tracked (Powell-Smith and Goldacre, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Powell-Smith and Goldacre, 2016.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "68575fcd-6e5c-4d00-8324-3ad11dbf4084",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C50",
+      "claim": "Blind data analysis is likely easier to implement than preregistration and allows greater flexibility in analysis decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it is likely easier to implement, allows greater flexibility in analysis decisions, and can still go a long way in limiting selective reporting and analysis bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation by the authors about the practical advantages of blind data analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "2a2d0f28-9b14-4394-8085-be2dd46c2b34",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C51",
+      "claim": "Criteria to consider an experiment as valid should ideally be set before it is performed/collected.",
+      "claim_type": "EXPLICIT",
+      "source": "A solution to selective reporting, thus, is to set criteria to consider an experiment as valid, or a set of data as relevant for analysis, ideally before it is performed/collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main recommendation proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "43ad36ac-7344-4c26-a9fd-9880033fa69e",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C52",
+      "claim": "Validation criteria should be as objective as possible, with thresholds and rules for when data must be included and when they should be discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideally, these criteria should be as objective as possible, with thresholds and rules for when data must be included and when they should be discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation by the authors about how to implement validation criteria.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "1fea88cb-1548-4337-ab99-95a05991d540",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C53",
+      "claim": "Validation criteria should be independent of the outcome measure of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "They should also be independent of the outcome measure of the experiment \u2013 that is, the observed effect size should not be used as a basis for exclusion \u2013 and applied equally to all experimental groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation by the authors about how to implement validation criteria.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "441e5dcb-3ca6-4696-a9a5-8de27aa02ec9",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C54",
+      "claim": "When criteria for validity are met, this should be taken as evidence that the experiment is appropriate, and it would be unethical to exclude it from an article.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when criteria for validity are met, this should be taken as evidence that the experiment is appropriate, and that it would thus be unethical to exclude it from an article reporting on the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an ethical argument made by the authors about the implications of meeting predefined criteria.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "ce31df0b-07f3-4e64-a872-7e33b7943534",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C55",
+      "claim": "Criteria that are too loose might lead to the inclusion of questionable or irrelevant data in an article.",
+      "claim_type": "EXPLICIT",
+      "source": "As for any decision involving predefined thresholds, concerns over sensitivity and specificity arise: criteria that are too loose might lead to the inclusion of questionable or irrelevant data in an article",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about potential problems with validation criteria.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "0495399d-7c64-4477-837b-0d5311f3ee89",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C56",
+      "claim": "Criteria that are too stringent could lead meaningful experiments to be discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas those that are too stringent could lead meaningful experiments to be discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about potential problems with validation criteria.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "48188263-fa7e-4324-a1df-26a10afa2794",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C57",
+      "claim": "Researchers are free to show data that does not fit validity criteria if this is clearly pointed out.",
+      "claim_type": "EXPLICIT",
+      "source": "As with preregistration or statistical significance thresholds, this should not discourage researchers from addressing these limitations in an exploratory manner \u2013 one is always free to show data that does not fit validity criteria if this is clearly pointed out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation by the authors about flexibility in applying validation criteria.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "bb6cc204-0c7d-4746-bc2b-b1905b7c7a00",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C58",
+      "claim": "It is important that authors are transparent about whether they are following prespecified criteria to ignore an experiment or have decided on it after seeing the results.",
+      "claim_type": "EXPLICIT",
+      "source": "What is important is that authors are transparent about it \u2013 and that the reader knows whether they are following prespecified criteria to ignore an experiment or have decided on it after seeing the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation by the authors about transparency in reporting.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "8f732967-62fb-4d0b-8e64-34e8ce1bfbf4",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C59",
+      "claim": "Decisions to ignore an experiment with no predefined reason must be discussed alongside its results.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this can only happen when data is shown \u2013 meaning that decisions to ignore an experiment with no predefined reason must inevitably be discussed alongside its results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the requirements for transparency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "91d2a99c-ad79-424b-807b-4290651a78ea",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C60",
+      "claim": "For widely used resources such as antibodies and cell lines, there are already recommendations for validation developed by large panels of experts.",
+      "claim_type": "EXPLICIT",
+      "source": "For widely used resources such as antibodies and cell lines, there are already a number of recommendations for validation that have been developed by large panels of experts and can be used for this purpose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' knowledge of existing validation guidelines.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "07c88857-5b37-4752-9f0a-a3e41c56f5fb",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C61",
+      "claim": "The International Cell Line Authentication Committee (ICLAC) recommends a \u2265 80% match threshold for short-tandem-repeat (STR) profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "For cell line authentication, for example, the International Cell Line Authentication Committee (ICLAC) recommends a \u2265 80% match threshold for short-tandem-repeat (STR) profiling, which allows for some variation between passages (e.g., due to genetic drift; Capes-Davis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Capes-Davis et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "c1a03af9-820e-48bb-bc99-c704c8e35cc8",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C62",
+      "claim": "The International Working Group for Antibody Validation recommends a set of strategies for validation.",
+      "claim_type": "EXPLICIT",
+      "source": "For antibodies, the International Working Group for Antibody Validation recommends a set of strategies for validation (Uhlen et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Uhlen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "03b4945a-4b5a-40c2-8efe-6b4ff2bde807",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C63",
+      "claim": "Quantitative immunoprecipitation assays use predefined thresholds for antibody specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "such as quantitative immunoprecipitation assays that use predefined thresholds for antibody specificity (Marcon et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Marcon et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "96d464f4-0fe9-4173-a20c-0a20865ec340",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C64",
+      "claim": "The Brazilian Reproducibility Initiative is a multicenter replication of 60\u2013100 experiments from the Brazilian biomedical literature over the last 20 years, conducted by a team of more than 60 labs.",
+      "claim_type": "EXPLICIT",
+      "source": "As coordinators of the Brazilian Reproducibility Initiative, a multicenter replication of 60\u2013100 experiments from the Brazilian biomedical literature over the last 20 years, conducted by a team of more than 60 labs, we have been faced with the need for validation criteria in many stages during protocol development (Amaral et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the Brazilian Reproducibility Initiative, supported by a citation to Amaral et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "aa300bfd-0b08-4819-8dd3-6fcd87a0ae87",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C65",
+      "claim": "The Brazilian Reproducibility Initiative intends to preregister every protocol, including the analysis plan.",
+      "claim_type": "EXPLICIT",
+      "source": "As the project is meant to be confirmatory in nature, we intend to preregister every protocol, including the analysis plan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the planned methodology of the Brazilian Reproducibility Initiative.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "6e18aa4a-23b2-4cc0-9b67-fb429e1b20a9",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C66",
+      "claim": "The Brazilian Reproducibility Initiative encourages laboratories to add as many additional controls as they judge necessary to each experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, to make sure that each replication is methodologically sound, we are encouraging laboratories to add as many additional controls as they judge necessary to each experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology of the Brazilian Reproducibility Initiative.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "5c40eb00-b227-4040-8d8d-1f6e52ba5fd7",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C67",
+      "claim": "The Brazilian Reproducibility Initiative requires laboratories to prespecify their criteria for using the data from controls in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To deal with the problem raised in this essay, however, we also require that they prespecify their criteria for using the data from these controls in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the methodology of the Brazilian Reproducibility Initiative.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "7a94af4f-f58e-4875-b72a-9919b2171891",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C68",
+      "claim": "Researchers in the Brazilian Reproducibility Initiative are not used to setting objective criteria to decide whether or not the results of an experiment should be included when reporting the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Defining validation criteria in advance for every experiment has not been an easy exercise: even though researchers routinely devise controls for their experiments, they are not used to setting objective criteria to decide whether or not the results of an experiment should be included when reporting the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation by the authors about the experience of researchers in the Brazilian Reproducibility Initiative.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "4fc1e984-47f9-4bbe-8f20-fe73af84686b",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C69",
+      "claim": "In a preregistered, confirmatory project, predefining validation criteria is vital to allow determination of whether a failure to replicate represents a contradiction of the original finding or is due to a methodological artifact.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a preregistered, confirmatory project, we feel that this is vital to allow us to decide if a failure to replicate a result represents a contradiction of the original finding or is due to a methodological artifact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' reasoning about the importance of predefined validation criteria in their project.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "ac145922-9250-4320-bdb6-3082f2ec6924",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C70",
+      "claim": "Predefining validation criteria will help protect the Brazilian Reproducibility Initiative from criticism about a lack of technical expertise by the replicating labs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we feel that predefining validation criteria will help to protect the project from criticism about a lack of technical expertise by the replicating labs, which has been a common response to failed replication attempts in other fields (Baumeister, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation by the authors about the benefits of predefined criteria, with support from a citation to Baumeister, 2019 about responses to failed replications.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "cc79490c-75c8-4266-8059-c5a5ce8201dd",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C71",
+      "claim": "One cannot anticipate all possible problems in experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "As one cannot anticipate all possible problems, it is likely that, in some experiments at least, such prespecified criteria might turn out not be ideal in separating successful experiments from failed ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of predefined criteria.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "5d1eb9fe-bf75-480c-8072-a3ac5cdc0758",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C72",
+      "claim": "For the sake of transparency, it is important that any post-hoc decisions for considering experiments as unreliable are marked as such, and that both the decision and its impact on the results are disclosed.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, for the sake of transparency, we feel that it is important that any post-hoc decisions for considering experiments as unreliable are marked as such, and that both the decision and its impact on the results are disclosed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation by the authors about transparency in reporting.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "2e344008-a75d-4774-9e8b-179d59518836",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C73",
+      "claim": "There is no inherent problem with exploratory research or data-dependent choices; the problem is when these are done secretly and communicated selectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Once more, there is no inherent problem with exploratory research or data-dependent choices; the problem is when these are done secretly and communicated selectively (Hollenbeck and Wright, 2017; Simmons et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hollenbeck and Wright, 2017 and Simmons et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "720efa14-11cd-4cda-bf03-a4beef2c915e",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C74",
+      "claim": "Validation criteria can be used to make decisions about which data to analyze, not just which experiments to include.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we have focused on the use of validation criteria to make decisions about experiments, they can also be used to make decisions about which data to analyze.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an extension of the authors' argument to a broader context.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "2f1ec595-a6cb-4078-9731-612af3e4f9c2",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C75",
+      "claim": "In fields such as electrophysiology or functional neuroimaging, data typically pass through preprocessing pipelines before analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In fields such as electrophysiology or functional neuroimaging, for example, data typically pass through preprocessing pipelines before analysis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' knowledge of practices in these fields.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "31d8c410-6218-437f-9bae-a40fedc4122b",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C76",
+      "claim": "The use of predefined validation criteria could prevent the introduction of bias by researchers when exploring preprocessing pipelines in electrophysiology or functional neuroimaging.",
+      "claim_type": "EXPLICIT",
+      "source": "the use of predefined validation criteria could thus prevent the introduction of bias by researchers when exploring these pipelines (Phillips, 2004; Carp, 2012; Botvinik-Nezer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Phillips, 2004; Carp, 2012; and Botvinik-Nezer et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "e0903886-ce7a-47a9-9cb9-6ae53eb7ba11",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C77",
+      "claim": "Genomics and other high-throughput fields have developed standard evaluation criteria to avoid bias in analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomics and a number of other high-throughput fields have also developed standard evaluation criteria to avoid bias in analysis (Kang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kang et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "72fa0617-f90f-4e02-8ba7-939ecb070efd",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C78",
+      "claim": "Communities centering on specific methods can reach a consensus on which criteria are minimally necessary to draw the line between data that can be censored and those that must be analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that communities centering on specific methods can reach a consensus on which criteria are minimally necessary to draw the line between data that can be censored and those that must be analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors based on examples from other fields.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "768449ea-dc6a-45e9-951a-9b250367e80c",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C79",
+      "claim": "Researchers in the life sciences are not sufficiently aware of the potential impacts of post-hoc exclusion decisions on the reliability of results.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes will only happen on a larger scale, however, if researchers are aware of the potential impacts of post-hoc exclusion decisions on the reliability of results, an area in which the life sciences still lag behind other fields of research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment by the authors based on their knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "d54eed11-d5dc-4476-833b-8a9a280fd574",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C80",
+      "claim": "Individual researchers focusing on transparency and reproducibility should consider setting and ideally registering predefined inclusion and exclusion criteria for experiments in their protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, individual researchers focusing on transparency and reproducibility should consider the possibility of setting \u2013 and ideally registering \u2013 predefined inclusion and exclusion criteria for experiments in their protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "8572a565-9582-40cc-b02d-b302e46f5cb4",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C81",
+      "claim": "Making validation criteria as objective as possible can help researchers make inclusion decisions in an unbiased way.",
+      "claim_type": "EXPLICIT",
+      "source": "Making these criteria as objective as possible can help researchers make inclusion decisions in an unbiased way, avoiding reliance on 'gut feelings' that can easily lead one astray.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation by the authors about how to implement validation criteria.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "a927579a-9283-445a-9882-3c12d58cb730",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C82",
+      "claim": "Richard Feynman said 'science is a way of trying not to fool yourself, and you are the easiest person to fool'.",
+      "claim_type": "EXPLICIT",
+      "source": "As Richard Feynman once said: 'science is a way of trying not to fool yourself, and you are the easiest person to fool' (Feynman, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct quote attributed to Richard Feynman, supported by a citation to Feynman, 1974.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "e7f9cba0-a0ec-4f57-81d1-8c9a1252ea38",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "claim_id": "C83",
+      "claim": "Explicitly stating what an appropriate experiment means before starting it, and sticking to that view after the results are in, is a way to avoid fooling oneself.",
+      "claim_type": "EXPLICIT",
+      "source": "An easy way to make this advice heard is to explicitly state what an appropriate experiment means before starting it, and to stick to your view after the results are in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation by the authors about how to implement the principle of avoiding self-deception.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "48c1b42a-376f-4e31-bae5-93ce9ab8c34c",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Selective reporting of experiments that 'did not work' is common in life sciences research and can lead to reporting bias when exclusion decisions are made post-hoc. This practice, driven by the pressure to tell clear stories, can result in cherry-picking data to support hypotheses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 collectively establish the problem of selective reporting through citations to established literature (C3-C7) and logical inference (C1-C2). The claims are well-supported by appropriate citations documenting publication bias, multiple testing issues, and the consequences of incomplete reporting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "d6cb99c4-39a8-4f5e-a7fe-2486b35590a4",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Selective reporting occurs at multiple levels, from omission of whole studies (file drawer effect) to exclusion of individual data points. The intermediate level of not reporting individual experiments is common in life sciences but has been relatively underdiscussed despite being potentially one of the largest sources of bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C17 characterize different levels of selective reporting with appropriate citations (C10-C14) and logical categorization (C15). The assessment that experiment-level omission is underdiscussed (C17) is supported by the authors' knowledge of the literature, though the claim it is 'one of the largest sources' lacks quantitative evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "9bac21da-bac3-47c2-a15b-56554d3dbc82",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Statistical evidence suggests the prevalence of significant results within articles is often too high to be credible given typical statistical power, but such evidence cannot distinguish whether this is due to missing experiments or biased measurement/analysis. Detecting unreported experiments requires information typically unavailable to readers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are well-supported by citations (C18) and logical inference about the limitations of statistical detection methods (C19-C20). The reasoning correctly identifies the fundamental challenge in detecting experiment-level selective reporting from published articles alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "b46f81f4-e658-498f-b59a-7f1dd5765e2d",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Laboratory science is technically challenging, and while some selective reporting may help separate signal from noise, post-hoc classification of experiments allows unconscious biases to influence exclusion decisions. Researchers commonly repeat experiments with minor tweaks until desired results are obtained, and confirmation bias can lead to discarding experiments attributed to artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 describe the practical challenges and psychological biases in laboratory research. The claims are supported by knowledge of laboratory practices (C21, C24), logical inference (C22-C23, C25), and citation to literature on unconscious bias (C26). The reasoning is sound and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "4e374ad8-c0bc-4d65-a74a-a9db69c501e4",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The problem of selective experiment exclusion is analogous to forking paths in data analysis, the Texas sharpshooter fallacy, and HARKing, where post-hoc decisions lead to artificial confirmation of hypotheses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 draw appropriate analogies to well-established concepts in research methodology, supported by relevant citations (Gelman and Loken 2013, Biemann 2013, Hollenbeck and Wright 2017). The analogies are conceptually sound and help clarify the nature of the bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "d50f1c5c-8f32-40d8-83b0-e8f330dc1a34",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Preregistration of hypotheses and methods is a solution to analysis flexibility but is mostly limited to clinical trials and psychology and is difficult to implement in exploratory laboratory science. A confirmation step with preregistered methods could improve validation of findings, and exploratory research should be differentiated from confirmatory research in terms of evidential weight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 accurately describe the current state of preregistration practices with appropriate citations (C30, C33, C35) and knowledge of field-specific practices (C31-C32, C34). The assessment of implementation challenges in laboratory science is reasonable and well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "a8e87521-7dd9-4b17-906d-f10b83ebe627",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The concept of preregistration can be applied to criteria determining whether experiments are methodologically sound. While laboratory scientists routinely use controls (e.g., RNA purity ratios, non-template controls in PCR), criteria for acceptable control results are rarely predefined, and adding controls without predefined criteria can actually increase degrees of freedom for bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 present a novel application of preregistration (C36) supported by knowledge of standard laboratory practices (C37-C39) and logical inference about the consequences of post-hoc criteria (C40-C41). The citation to Wicherts et al. 2016 (C41) supports the claim about increased degrees of freedom.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "95a5b4a9-92a0-4a3a-8472-87f4afa7bcf8",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Preregistering exclusion criteria may be unnecessary if all experimental data are presented without censoring, allowing readers to judge robustness through multiverse analysis. However, presenting all data is not common practice in life sciences due to narrative traditions, and if data filtering is necessary for clarity, exclusion criteria must be set independently of results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 present alternative approaches to addressing selective reporting with appropriate citations (C42-C45) and logical inference (C46). The claims accurately describe current practices and their limitations, though the feasibility of presenting all data in complex laboratory studies is not critically examined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "cd6b143e-3611-43db-8876-97d41fcce6af",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Blind data analysis, where inclusion decisions are made by blinded experts, is a third option to address bias. This approach is commonly used in physics and may be easier to implement than preregistration while still limiting selective reporting, though it lacks some advantages of preregistration such as tracking unpublished studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 describe blind data analysis as an alternative approach with appropriate citations (C48-C49). The comparative assessment of advantages and disadvantages is reasonable, though the speculation about ease of implementation (C50) lacks empirical support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "dd706a3b-55f1-41db-9517-610e48085622",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The proposed solution is to set validation criteria for experiments before they are performed, making criteria as objective as possible, independent of outcome measures, and applied equally to all groups. When validity criteria are met, excluding the experiment would be unethical. Criteria must balance sensitivity and specificity, and transparency about whether criteria were prespecified or post-hoc is essential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C59 present the authors' main proposal with logical reasoning about implementation (C52-C53), ethical implications (C54), practical considerations (C55-C56), and transparency requirements (C57-C59). The reasoning is sound and internally consistent, though the proposal itself is speculative and lacks empirical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "e979d8c9-0865-402c-96e0-7b92925e469e",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Existing validation guidelines from expert panels can be used for setting predefined criteria. Examples include ICLAC's \u226580% match threshold for STR profiling in cell line authentication and the International Working Group for Antibody Validation's strategies including quantitative immunoprecipitation assays with predefined specificity thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 provide concrete examples of existing validation standards with appropriate citations (C61-C63). These examples demonstrate that predefined criteria are feasible and already exist in some contexts, supporting the practical applicability of the authors' proposal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Brazilian Reproducibility Initiative, a multicenter replication of 60-100 experiments from Brazilian biomedical literature involving >60 labs, is implementing predefined validation criteria. The initiative preregisters protocols and requires laboratories to prespecify criteria for using control data. Researchers found defining criteria challenging as they are unaccustomed to this practice, but the authors argue it is vital for distinguishing true replication failures from methodological artifacts and protecting against criticism about technical expertise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C73 describe the implementation of the proposed approach in a real project with factual information (C64-C68) and reasoning about its importance (C69-C70). The description is supported by citations (C64, C70) and direct experience (C68). The acknowledgment of limitations (C71) and emphasis on transparency (C72-C73) strengthen the evaluation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "7e9e6719-d055-4bb6-a06c-ae471ce03efc",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Validation criteria can be applied beyond experiment inclusion to data analysis decisions, such as preprocessing pipelines in electrophysiology and neuroimaging. Genomics and other high-throughput fields have already developed standard evaluation criteria, suggesting that method-specific communities can reach consensus on minimal necessary criteria for data inclusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 extend the proposal to other contexts with appropriate citations (C76-C77) and logical inference (C78). The examples from other fields provide evidence that the approach is feasible and already implemented in some domains, though the generalizability to all laboratory contexts is not empirically demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    },
+    {
+      "id": "74be337e-ae64-4c3b-ba9f-1fda33ba39b5",
+      "content_id": "5f072f89-30ea-4a1a-b2e3-16c5cc9f9c80",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Life sciences researchers lag behind other fields in awareness of post-hoc exclusion decision impacts. Individual researchers should consider setting and registering predefined inclusion/exclusion criteria, making them as objective as possible to avoid bias. The authors invoke Feynman's principle that scientists must avoid fooling themselves, which can be achieved by predefining what constitutes an appropriate experiment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83 provide recommendations and concluding arguments. The assessment of awareness gaps (C79) is based on the authors' knowledge, the recommendations (C80-C81) follow logically from the preceding arguments, and the Feynman quote (C82-C83) provides philosophical support. The reasoning is sound though the recommendations are prescriptive rather than empirically validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:17.651755Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b582f3a6-93ec-4368-be15-c70171c4dfd2",
+      "result_id": "48c1b42a-376f-4e31-bae5-93ce9ab8c34c"
+    },
+    {
+      "claim_id": "91ad1f67-94ec-4dde-b717-2023f9c4f2e8",
+      "result_id": "48c1b42a-376f-4e31-bae5-93ce9ab8c34c"
+    },
+    {
+      "claim_id": "64126460-7351-4e85-8ce6-02db9e55d2ae",
+      "result_id": "48c1b42a-376f-4e31-bae5-93ce9ab8c34c"
+    },
+    {
+      "claim_id": "a5025a43-da9b-434a-8e24-6f400373acf7",
+      "result_id": "48c1b42a-376f-4e31-bae5-93ce9ab8c34c"
+    },
+    {
+      "claim_id": "a4cbc8fb-6493-4314-af53-7b999c92163c",
+      "result_id": "48c1b42a-376f-4e31-bae5-93ce9ab8c34c"
+    },
+    {
+      "claim_id": "99ddaa53-3c4a-4d07-9f7d-c84871ae256c",
+      "result_id": "48c1b42a-376f-4e31-bae5-93ce9ab8c34c"
+    },
+    {
+      "claim_id": "ee46c18b-3b68-40ec-bcba-9593952b9b51",
+      "result_id": "48c1b42a-376f-4e31-bae5-93ce9ab8c34c"
+    },
+    {
+      "claim_id": "57861d97-4a12-4ffe-9509-d4eb6356848e",
+      "result_id": "d6cb99c4-39a8-4f5e-a7fe-2486b35590a4"
+    },
+    {
+      "claim_id": "f0c7480a-1c99-4155-bc00-32474081afcc",
+      "result_id": "d6cb99c4-39a8-4f5e-a7fe-2486b35590a4"
+    },
+    {
+      "claim_id": "5169db11-8e40-4796-afaa-2a93ef0b5c7a",
+      "result_id": "d6cb99c4-39a8-4f5e-a7fe-2486b35590a4"
+    },
+    {
+      "claim_id": "d8184924-ff65-48ff-9dcc-e3d2ccb908ff",
+      "result_id": "d6cb99c4-39a8-4f5e-a7fe-2486b35590a4"
+    },
+    {
+      "claim_id": "3e20f772-2840-4595-a00e-b4483cdea4f3",
+      "result_id": "d6cb99c4-39a8-4f5e-a7fe-2486b35590a4"
+    },
+    {
+      "claim_id": "2297acd2-c3c2-4e2a-ad77-2c533ebd7b7e",
+      "result_id": "d6cb99c4-39a8-4f5e-a7fe-2486b35590a4"
+    },
+    {
+      "claim_id": "0a24349a-91b3-466a-a3df-169b4a28f98a",
+      "result_id": "d6cb99c4-39a8-4f5e-a7fe-2486b35590a4"
+    },
+    {
+      "claim_id": "e289ab7e-8066-4f58-bfd9-fa0eb6711db0",
+      "result_id": "d6cb99c4-39a8-4f5e-a7fe-2486b35590a4"
+    },
+    {
+      "claim_id": "89cc52b4-25cc-49a4-bf9b-63d816cc00d4",
+      "result_id": "9bac21da-bac3-47c2-a15b-56554d3dbc82"
+    },
+    {
+      "claim_id": "1a0c5469-1ac6-42b3-9a00-7469a34de7aa",
+      "result_id": "9bac21da-bac3-47c2-a15b-56554d3dbc82"
+    },
+    {
+      "claim_id": "24ef3e72-f32f-435a-ba0f-ea872e5a5a7a",
+      "result_id": "9bac21da-bac3-47c2-a15b-56554d3dbc82"
+    },
+    {
+      "claim_id": "a81db399-4aec-4635-81da-5a5df888daea",
+      "result_id": "b46f81f4-e658-498f-b59a-7f1dd5765e2d"
+    },
+    {
+      "claim_id": "3a126e14-68ea-4a3c-8460-3b18fb56235e",
+      "result_id": "b46f81f4-e658-498f-b59a-7f1dd5765e2d"
+    },
+    {
+      "claim_id": "d2625c6d-6096-401c-a6e0-075102e35904",
+      "result_id": "b46f81f4-e658-498f-b59a-7f1dd5765e2d"
+    },
+    {
+      "claim_id": "8904b2bc-0d33-476f-87e8-2c46678df77d",
+      "result_id": "b46f81f4-e658-498f-b59a-7f1dd5765e2d"
+    },
+    {
+      "claim_id": "d30fe045-a217-46e4-8fcc-521a109e3ee7",
+      "result_id": "b46f81f4-e658-498f-b59a-7f1dd5765e2d"
+    },
+    {
+      "claim_id": "21726c13-c258-4d61-98e3-9163f043a846",
+      "result_id": "b46f81f4-e658-498f-b59a-7f1dd5765e2d"
+    },
+    {
+      "claim_id": "a0520c1c-047f-4d52-b2b0-90ad197ceeac",
+      "result_id": "4e374ad8-c0bc-4d65-a74a-a9db69c501e4"
+    },
+    {
+      "claim_id": "6472b0a0-2881-4909-9f10-534756fa5c36",
+      "result_id": "4e374ad8-c0bc-4d65-a74a-a9db69c501e4"
+    },
+    {
+      "claim_id": "5b41c80a-e9da-48d1-830f-77d882719a6c",
+      "result_id": "4e374ad8-c0bc-4d65-a74a-a9db69c501e4"
+    },
+    {
+      "claim_id": "4f32190f-da54-4a3c-a27c-aad25c52007f",
+      "result_id": "d50f1c5c-8f32-40d8-83b0-e8f330dc1a34"
+    },
+    {
+      "claim_id": "0b4dc4ce-9573-4a53-9b88-13f0e9bcd0b0",
+      "result_id": "d50f1c5c-8f32-40d8-83b0-e8f330dc1a34"
+    },
+    {
+      "claim_id": "a27e90f3-6acd-4a5e-a0af-cd51c3cbecf9",
+      "result_id": "d50f1c5c-8f32-40d8-83b0-e8f330dc1a34"
+    },
+    {
+      "claim_id": "7b9342aa-25da-4380-b721-e2ed9391ca72",
+      "result_id": "d50f1c5c-8f32-40d8-83b0-e8f330dc1a34"
+    },
+    {
+      "claim_id": "904a1c61-2388-4757-80b1-5a8145283b2a",
+      "result_id": "d50f1c5c-8f32-40d8-83b0-e8f330dc1a34"
+    },
+    {
+      "claim_id": "aeeb6ca5-c8c2-4171-8d1e-bbc446df5cf4",
+      "result_id": "d50f1c5c-8f32-40d8-83b0-e8f330dc1a34"
+    },
+    {
+      "claim_id": "9d44e794-e83b-42b4-827c-5b45ef561009",
+      "result_id": "a8e87521-7dd9-4b17-906d-f10b83ebe627"
+    },
+    {
+      "claim_id": "1d28938d-c7a0-40da-85c7-98eb2a85596e",
+      "result_id": "a8e87521-7dd9-4b17-906d-f10b83ebe627"
+    },
+    {
+      "claim_id": "24acc693-89f2-4700-89db-6986270f18c5",
+      "result_id": "a8e87521-7dd9-4b17-906d-f10b83ebe627"
+    },
+    {
+      "claim_id": "2a3a375c-0233-40ff-8cce-6d5c1080bcae",
+      "result_id": "a8e87521-7dd9-4b17-906d-f10b83ebe627"
+    },
+    {
+      "claim_id": "ed4d5774-0c5a-46bb-88c5-3a0cc2349539",
+      "result_id": "a8e87521-7dd9-4b17-906d-f10b83ebe627"
+    },
+    {
+      "claim_id": "c42f65a3-98b7-4a52-b10c-f0666b6c6573",
+      "result_id": "a8e87521-7dd9-4b17-906d-f10b83ebe627"
+    },
+    {
+      "claim_id": "d6d04d96-2608-4a74-9254-ee624a051b5c",
+      "result_id": "95a5b4a9-92a0-4a3a-8472-87f4afa7bcf8"
+    },
+    {
+      "claim_id": "13012c31-19c6-49ef-bb2a-0aeadfcc552c",
+      "result_id": "95a5b4a9-92a0-4a3a-8472-87f4afa7bcf8"
+    },
+    {
+      "claim_id": "52a4a9d5-5265-419e-8b34-c40fd7715c36",
+      "result_id": "95a5b4a9-92a0-4a3a-8472-87f4afa7bcf8"
+    },
+    {
+      "claim_id": "8f28d970-653d-42b1-86aa-91127b5cc988",
+      "result_id": "95a5b4a9-92a0-4a3a-8472-87f4afa7bcf8"
+    },
+    {
+      "claim_id": "b81caf27-8c04-4858-917b-f38f5aa43323",
+      "result_id": "95a5b4a9-92a0-4a3a-8472-87f4afa7bcf8"
+    },
+    {
+      "claim_id": "2bbc949d-5fa8-4355-9ea0-76820987e031",
+      "result_id": "cd6b143e-3611-43db-8876-97d41fcce6af"
+    },
+    {
+      "claim_id": "712ba957-c42a-4c32-9a83-ee9f6a75f43a",
+      "result_id": "cd6b143e-3611-43db-8876-97d41fcce6af"
+    },
+    {
+      "claim_id": "36fc6d96-ff93-4240-af36-c9b3b986d158",
+      "result_id": "cd6b143e-3611-43db-8876-97d41fcce6af"
+    },
+    {
+      "claim_id": "68575fcd-6e5c-4d00-8324-3ad11dbf4084",
+      "result_id": "cd6b143e-3611-43db-8876-97d41fcce6af"
+    },
+    {
+      "claim_id": "2a2d0f28-9b14-4394-8085-be2dd46c2b34",
+      "result_id": "dd706a3b-55f1-41db-9517-610e48085622"
+    },
+    {
+      "claim_id": "43ad36ac-7344-4c26-a9fd-9880033fa69e",
+      "result_id": "dd706a3b-55f1-41db-9517-610e48085622"
+    },
+    {
+      "claim_id": "1fea88cb-1548-4337-ab99-95a05991d540",
+      "result_id": "dd706a3b-55f1-41db-9517-610e48085622"
+    },
+    {
+      "claim_id": "441e5dcb-3ca6-4696-a9a5-8de27aa02ec9",
+      "result_id": "dd706a3b-55f1-41db-9517-610e48085622"
+    },
+    {
+      "claim_id": "ce31df0b-07f3-4e64-a872-7e33b7943534",
+      "result_id": "dd706a3b-55f1-41db-9517-610e48085622"
+    },
+    {
+      "claim_id": "0495399d-7c64-4477-837b-0d5311f3ee89",
+      "result_id": "dd706a3b-55f1-41db-9517-610e48085622"
+    },
+    {
+      "claim_id": "48188263-fa7e-4324-a1df-26a10afa2794",
+      "result_id": "dd706a3b-55f1-41db-9517-610e48085622"
+    },
+    {
+      "claim_id": "bb6cc204-0c7d-4746-bc2b-b1905b7c7a00",
+      "result_id": "dd706a3b-55f1-41db-9517-610e48085622"
+    },
+    {
+      "claim_id": "8f732967-62fb-4d0b-8e64-34e8ce1bfbf4",
+      "result_id": "dd706a3b-55f1-41db-9517-610e48085622"
+    },
+    {
+      "claim_id": "91d2a99c-ad79-424b-807b-4290651a78ea",
+      "result_id": "e979d8c9-0865-402c-96e0-7b92925e469e"
+    },
+    {
+      "claim_id": "07c88857-5b37-4752-9f0a-a3e41c56f5fb",
+      "result_id": "e979d8c9-0865-402c-96e0-7b92925e469e"
+    },
+    {
+      "claim_id": "c1a03af9-820e-48bb-bc99-c704c8e35cc8",
+      "result_id": "e979d8c9-0865-402c-96e0-7b92925e469e"
+    },
+    {
+      "claim_id": "03b4945a-4b5a-40c2-8efe-6b4ff2bde807",
+      "result_id": "e979d8c9-0865-402c-96e0-7b92925e469e"
+    },
+    {
+      "claim_id": "96d464f4-0fe9-4173-a20c-0a20865ec340",
+      "result_id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909"
+    },
+    {
+      "claim_id": "aa300bfd-0b08-4819-8dd3-6fcd87a0ae87",
+      "result_id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909"
+    },
+    {
+      "claim_id": "6e18aa4a-23b2-4cc0-9b67-fb429e1b20a9",
+      "result_id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909"
+    },
+    {
+      "claim_id": "5c40eb00-b227-4040-8d8d-1f6e52ba5fd7",
+      "result_id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909"
+    },
+    {
+      "claim_id": "7a94af4f-f58e-4875-b72a-9919b2171891",
+      "result_id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909"
+    },
+    {
+      "claim_id": "4fc1e984-47f9-4bbe-8f20-fe73af84686b",
+      "result_id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909"
+    },
+    {
+      "claim_id": "ac145922-9250-4320-bdb6-3082f2ec6924",
+      "result_id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909"
+    },
+    {
+      "claim_id": "cc79490c-75c8-4266-8059-c5a5ce8201dd",
+      "result_id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909"
+    },
+    {
+      "claim_id": "5d1eb9fe-bf75-480c-8072-a3ac5cdc0758",
+      "result_id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909"
+    },
+    {
+      "claim_id": "2e344008-a75d-4774-9e8b-179d59518836",
+      "result_id": "b7dbfe53-7d49-4675-9025-c47e8b2ef909"
+    },
+    {
+      "claim_id": "720efa14-11cd-4cda-bf03-a4beef2c915e",
+      "result_id": "7e9e6719-d055-4bb6-a06c-ae471ce03efc"
+    },
+    {
+      "claim_id": "2f1ec595-a6cb-4078-9731-612af3e4f9c2",
+      "result_id": "7e9e6719-d055-4bb6-a06c-ae471ce03efc"
+    },
+    {
+      "claim_id": "31d8c410-6218-437f-9bae-a40fedc4122b",
+      "result_id": "7e9e6719-d055-4bb6-a06c-ae471ce03efc"
+    },
+    {
+      "claim_id": "e0903886-ce7a-47a9-9cb9-6ae53eb7ba11",
+      "result_id": "7e9e6719-d055-4bb6-a06c-ae471ce03efc"
+    },
+    {
+      "claim_id": "72fa0617-f90f-4e02-8ba7-939ecb070efd",
+      "result_id": "7e9e6719-d055-4bb6-a06c-ae471ce03efc"
+    },
+    {
+      "claim_id": "768449ea-dc6a-45e9-951a-9b250367e80c",
+      "result_id": "74be337e-ae64-4c3b-ba9f-1fda33ba39b5"
+    },
+    {
+      "claim_id": "d54eed11-d5dc-4476-833b-8a9a280fd574",
+      "result_id": "74be337e-ae64-4c3b-ba9f-1fda33ba39b5"
+    },
+    {
+      "claim_id": "8572a565-9582-40cc-b02d-b302e46f5cb4",
+      "result_id": "74be337e-ae64-4c3b-ba9f-1fda33ba39b5"
+    },
+    {
+      "claim_id": "a927579a-9283-445a-9882-3c12d58cb730",
+      "result_id": "74be337e-ae64-4c3b-ba9f-1fda33ba39b5"
+    },
+    {
+      "claim_id": "e7f9cba0-a0ec-4f57-81d1-8c9a1252ea38",
+      "result_id": "74be337e-ae64-4c3b-ba9f-1fda33ba39b5"
+    }
+  ],
+  "comparisons": []
+}

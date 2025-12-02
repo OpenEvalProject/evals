@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The study analyzed 10,395 COVID-19 research publications using LitCOVID, a curated literature hub that tags genes through PubTator, identifying 3,733 human protein-coding genes tagged at least once.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10-C13 describe the data source and methodology. The use of LitCOVID and PubTator is appropriately cited, and the dataset size is clearly stated. The methodology is transparent and reproducible, though limitations regarding whether tagged genes are truly investigated for COVID-19 roles are acknowledged elsewhere (C83).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The most prominently tagged genes in COVID-19 literature are ACE2 (10.8%), C-reactive protein (9.7%), and Interleukin 6 (4.5%), with tagged genes enriched for immune response, inflammatory response, and defense response to virus annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 describe the top tagged genes and their functional enrichment. The quantitative data on gene tagging frequency is clearly presented, and the Gene Ontology enrichment analysis shows highly significant enrichment (FDR < 10^-31 to 10^-66) for biologically relevant pathways. The functional roles of top genes are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Four genome-wide datasets identified host genes implicated in COVID-19: RNA-seq (1,726 genes), Aff-MS (293 genes), GWAS (52 genes), and CRISPR (41 genes), with 48 genes identified in two datasets but none in more than two.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 describe the four genome-wide datasets with appropriate citations. The lack of overlap (no gene in >2 datasets) is clearly stated. However, the biological significance of this limited overlap is not critically examined\u2014it could reflect technical differences between methods rather than lack of biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "56-71% of genes identified by genome-wide datasets have not been tagged in COVID-19 literature, representing only a 10-25% increase over the 19% baseline tagging rate for all human genes, with minimal change when including preprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 present the core finding that most genome-wide identified genes remain unstudied. The quantitative analysis is supported by Figure 1A and supplementary data. However, the interpretation assumes that gene tagging accurately reflects research focus, which is acknowledged as a limitation (C83). The comparison to baseline rates strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Genes identified by multiple genome-wide datasets or GWAS comparisons are more likely to be tagged in COVID-19 literature, but these represent only 2% of all identified genes, with 52% still ignored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 show that convergent evidence increases tagging likelihood (Figures 1B-C), which is reassuring. However, the small absolute numbers (2% with multiple lines of evidence, 52% still ignored) and lack of statistical power analysis for detecting this enrichment are concerns. The p-values from Fisher's exact test support the claims but effect sizes are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "COVID-19 research follows pre-established patterns where heavily studied genes dominate: tagged genes rank in the top 80th percentile of non-COVID-19 literature, and most were studied before the Human Genome Project.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C42-C47 establish the historical context and demonstrate pattern persistence. The comparison to non-COVID-19 literature (Figure 1D) with appropriate statistical tests (Mann-Whitney U) supports the conclusion. However, the causal interpretation that pre-existing bias drives COVID-19 research patterns is correlational\u2014alternative explanations (e.g., well-studied genes are genuinely more relevant) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Ignored genes from genome-wide datasets have publication frequencies similar to random genes in non-COVID-19 literature, while tagged genes are significantly more studied (p<10^-6 to 10^-98 across datasets).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 provide strong statistical evidence (Figure 1D) that tagging correlates with prior research intensity. The statistical tests are appropriate, though the lack of significance for some datasets (Interactomics p=0.20, GWAS p=0.93, CRISPR p=0.31) for ignored genes suggests heterogeneity. The conclusion is well-supported but the mechanism (bias vs. relevance) remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Genes tagged in COVID-19 literature appeared earlier in the scientific literature, with many first studied before the Human Genome Project, while ignored genes from genome-wide datasets appeared later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 demonstrate temporal patterns (Figure 1E) consistent with historical bias. The analysis appropriately uses year of first publication as a metric. However, the interpretation that earlier appearance causes current focus is correlational, and confounding factors (e.g., genes studied earlier may have clearer functional annotations) are not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "24-35% of genome-wide identified genes are among the least-studied 50% of human genes; extrapolations suggest well-studied genes will be comprehensively tagged within one year, but least-studied genes may require multiple years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C66 present temporal projections (Figures 2A-B). While the observed trends are data-supported, the extrapolations (C64, C66) are speculative and depend on assumptions about future research patterns. The authors acknowledge uncertainty (C85), and external factors (new datasets, funding priorities) could alter trajectories. The projections are reasonable but inherently uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "83% of tagged genes were not identified by genome-wide datasets, which account for only 26% of COVID-19 literature; the top 20% of genes account for 90% of literature, exceeding the 80% expected from anthropogenic bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 quantify literature concentration (Figure 2C). The 90% concentration in 20% of genes is striking and well-documented. The comparison to the 80% Pareto principle (C70) provides context, though the cited reference (Jia et al., 2019) should be verified for applicability. The finding is robust but the interpretation of 'surprising' is subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "COVID-19 literature became less expansive over time by concentration metrics (Gini coefficient, top 20% share) but more expansive by total gene count; the first 100 tagged genes stabilized at 45% of literature since June 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 describe temporal dynamics (Figure 2D-F, supplements). The use of multiple metrics (Gini, concentration, total genes) is appropriate and shows nuanced patterns. The apparent contradiction (less expansive by concentration, more by count) is well-explained. However, the stabilization at 45% (C76) may reflect data collection artifacts or incomplete indexing for recent months.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The 100 initially tagged genes are 29% more likely but 2,993% more frequently tagged than other genes; top 20% genes are 3% less likely to be genome-wide identified but 3,512% more tagged, indicating focus cannot be explained by genome-wide evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide critical evidence that tagging frequency is decoupled from genome-wide support. The massive disparity in tagging frequency (2,993-3,512%) versus modest enrichment in genome-wide identification (29% more likely, or 3% less likely) is striking. However, the analysis conflates frequency with importance\u2014highly tagged genes may warrant more study for valid scientific reasons not captured by the four datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C89",
+      "C90"
+    ],
+    "result": "COVID-19 literature follows similar patterns to pre-established research bias, with genes not previously well-studied remaining ignored despite genome-wide evidence of biological significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C89-C90 synthesize the main findings. The evidence from multiple analyses (tagging rates, temporal patterns, literature concentration) consistently supports this conclusion. However, the interpretation assumes genome-wide identification equals biological significance, which may not always hold. Alternative explanations (e.g., well-studied genes are genuinely more tractable or relevant) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "An exploration-exploitation trade-off exists where focusing on well-studied genes provides practical advantages (tools, context, drug repurposing); clinical trials target well-studied genes, antibodies are less available for ignored genes, and few labs worked on ignored genes pre-pandemic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 explain mechanisms for observed patterns. The clinical trial analysis (C93, Figure 3A) and antibody availability data (C94, Figure 3B) provide empirical support. The practical advantages (C92) are reasonable but somewhat speculative. The laboratory count analysis (C96) is data-supported. However, the causal chain from these factors to literature patterns is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Additional factors may discourage exploration of ignored genes: competition risk, scientists rarely switching topics, lack of incentive for COVID-19 labs to shift focus, and potential benefits of pathogen-focused researchers leading COVID-19 research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 propose mechanisms based on cited literature (Bergstrom, Zeng, Kwon) and inference from data. While the cited phenomena (competition, topic persistence) are established, their specific application to COVID-19 gene research is speculative. The claim about pathogen researchers (C101) is particularly uncertain and could be tested but isn't. These are plausible hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Study limitations include inability to determine if tagged genes are truly investigated for COVID-19 roles, inability to assess individual gene importance, uncertainty about future patterns, and possible ongoing initiatives targeting ignored genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 appropriately acknowledge limitations. The inability to verify that tagging reflects genuine investigation (C83) is a critical limitation affecting interpretation of all results. The temporal uncertainty (C85) is honest given the snapshot nature of the analysis. These limitations are significant but do not invalidate the main findings about literature patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Genome-wide experiments have rarely guided subsequent studies in non-COVID-19 literature, creating significant risk that COVID-19 literature will continue ignoring under-studied genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 extrapolate from past patterns (appropriately cited) to predict future risk. The historical precedent is well-established, making the projection reasonable. However, COVID-19's urgency and visibility might alter typical patterns, which the authors acknowledge as uncertain (C85). The risk assessment is supported but inherently speculative about future behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Concerns exist about fraudulent studies on under-studied genes; more complete understanding of host biology could enable novel interventions; career implications for researchers studying ignored genes are uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 raise additional considerations. The fraud concern (C102) is cited but its relevance to COVID-19 research is unclear. The potential benefits of studying ignored genes (C103) are speculative but reasonable. The career implications (C104) acknowledge uncertainty appropriately. These are discussion points rather than tested claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Four under-studied genes identified by multiple datasets are highlighted: TIMM10 (Aff-MS+CRISPR), FYCO1 (Aff-MS+GWAS), PLOD2 (Aff-MS+GWAS), and G3BP2 (Aff-MS+GWAS); only G3BP2 is tagged in COVID-19 literature, while TIMM10 and FYCO1 have minimal prior publications. FYCO1 is associated with monocyte chemoattractant protein-1, which contributes to COVID-19 hyperinflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C113 provide specific examples of ignored genes with multiple lines of evidence. The identification across datasets is data-supported, and the publication counts are verifiable. The FYCO1-MCP1-hyperinflammation connection (C112-C113) is appropriately cited and provides biological plausibility. These examples effectively illustrate the main findings, though their ultimate importance in COVID-19 remains to be determined (as acknowledged in C84).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Early COVID-19 research rapidly identified viral entry proteins, repurposed drugs, and initiated vaccines, drawing upon previous research lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 establish context for the study by describing early COVID-19 research successes. All claims are appropriately cited to published studies. This background motivates the research question about whether all important genes are being pursued. The claims are factual and well-supported but serve primarily as introduction rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Genome-wide approaches circumvent pre-established research patterns in the scientific literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 states a key premise of the study, appropriately supported by three citations. This assumption underlies the use of genome-wide datasets as a benchmark for unbiased gene identification. While generally accepted, the claim could be nuanced\u2014genome-wide approaches have their own biases (detection limits, statistical thresholds, model systems).",
+    "result_type": "MINOR"
+  }
+]

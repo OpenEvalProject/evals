@@ -1,0 +1,171 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "NCA specifically promotes night sleep but not day sleep in Drosophila. Multiple independent RNAi lines and three independently generated knockout alleles all show selective reduction in night sleep without affecting day sleep, measured by both DAM and DART systems. The phenotype is neuronal-specific, not due to circadian clock dysfunction, and involves fragmentation of consolidated sleep bouts during the night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is strongly supported by convergent evidence from multiple genetic approaches (three RNAi lines, three knockout alleles), multiple measurement systems (DAM and DART), both sexes, and appropriate controls including verification of mRNA knockdown (C19), specificity testing with cg7646 (C20, C22), and exclusion of circadian defects (C26-C28). The consistency across independent alleles and methods provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "NCA suppresses nighttime arousal threshold. NCA knockdown significantly increases responsiveness to mechanical stimuli at night (ZT16) but not during the day (ZT4), eliminating the normal day/night difference in arousal threshold observed in control flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The arousal threshold experiments using DART with mechanical stimulation provide clear evidence that NCA regulates nighttime arousal (C39, C40). The day/night comparison with appropriate statistical testing (binomial test with Bonferroni correction) and the lack of effect during the day (C38) support the specificity of the phenotype. This is further validated in knockout flies (Figure 2E-F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Both circadian clock and light-sensing pathways define when NCA promotes sleep. In constant darkness (DD), sleep loss in NCA knockdown flies is restricted to subjective night, but in arrhythmic timeless knockout flies in DD, sleep loss occurs throughout 24 hours. In constant light (LL), sleep loss is completely suppressed, indicating that light-sensing pathways can override the requirement for NCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic manipulation of light/dark conditions and circadian function provides strong evidence for dual regulation (C42-C50). The logic is sound: DD shows circadian involvement (C42), timKO in DD shows clock requirement (C45), timKO in 8L:16D shows light can suppress the phenotype (C46), and LL completely suppresses sleep loss (C48). The conclusions drawn (C49, C50) are well-supported by the experimental manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Cryptochrome (CRY) partially mediates light-dependent suppression of wakefulness in NCA knockdown flies. Loss of CRY in constant light results in small but significant sleep loss in NCA knockdown flies, though the magnitude is less than in darkness, suggesting additional light-sensing pathways are involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic dissection of light-sensing pathways is appropriate. The gmr-hid control (C51) rules out photoreceptor involvement, while cry02 shows partial involvement (C52). The inference that additional pathways exist (C53) is reasonable given the incomplete rescue. However, the mechanistic details of how CRY interacts with NCA function remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "NCA acts in two distinct neuronal populations defined by C01 and A05 enhancer-Gal4 drivers to regulate night sleep. Knockdown in either population alone has no effect, but simultaneous knockdown in both (~310 neurons total) recapitulates the night-specific sleep loss and reduced arousal threshold seen with pan-neuronal knockdown. The C01 and A05 enhancers label non-overlapping mushroom body regions (\u03b1\u03b2-KCs and \u03b1'\u03b2'-KCs respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combinatorial genetic approach is rigorous and well-controlled (C54-C60). The requirement for both populations (C55, C56) and the anatomical characterization (C61-C63) are clearly demonstrated. The phenocopy of pan-neuronal knockdown effects in the combined C01/A05 knockdown (C57-C60) provides strong validation. The use of multiple controls and the systematic testing of individual drivers strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The mushroom body \u03b1\u03b2-KCs are a critical component of the NCA-regulated sleep circuit. While NCA knockdown in MB-KCs alone (ok107-Gal4) does not affect sleep, it increases nighttime arousal threshold. Combined knockdown in ok107 and A05 neurons reduces night sleep, identifying MB-KCs as part of the relevant C01 domain. NCA in MB \u03b1\u03b2-KCs specifically suppresses nocturnal arousal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dissection of mushroom body involvement is logical and well-executed (C64-C71). The arousal threshold data (C68, C69) provides functional evidence for MB involvement even when sleep amount is unaffected. The combinatorial experiments (C65, C66) appropriately identify which MB populations are relevant. The inference about MB \u03b1\u03b2-KCs (C70) is well-supported by the overlapping expression patterns of ok107 and C01 drivers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "NCA inhibits synaptic release from specific neuronal subsets in a light-dependent manner. In 8L:16D conditions during the night (ZT9-11), NCA knockdown in C01/A05 neurons increases synaptopHluorin fluorescence in MB \u03b1\u03b2-lobes and AMMC but not in MB \u03b3-lobe or SMP. In constant light (CT9-11), this enhancement is absent and AMMC fluorescence is actually reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The synaptopHluorin imaging provides direct evidence for NCA's synaptic mechanism (C72-C77). The regional specificity (C72, C73) and light-dependent regulation (C75, C76) align well with the behavioral phenotypes. The conclusion that light-sensing pathways suppress elevated synaptic release (C77) is well-supported. However, the manuscript could benefit from more mechanistic detail about how NCA regulates vesicle release and how light modulates this process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "C01 and A05 neurons synergistically promote wakefulness when activated. TrpA1-mediated activation of C01 neurons strongly reduces both day and night sleep, while A05 activation alone has no effect. Combined activation further reduces night sleep beyond C01 activation alone. Conversely, silencing C01/A05 neurons with dORK\u0394C2 rescues sleep loss in NCA knockdown flies without affecting baseline sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gain-of-function (C78-C81) and loss-of-function (C82-C83) experiments provide strong functional validation of the circuit model. The synergistic interaction (C80, C81) is clearly demonstrated. The rescue experiment (C83) is particularly compelling as it shows that reducing excitability of these neurons can compensate for NCA loss. However, the authors appropriately note potential caveats with chronic dORK\u0394C2 expression, though the acute TrpA1 experiments mitigate these concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Loss of NCA reduces average locomotor velocity across 24 hours, primarily due to reduced activity during evening peak and lights-off, but greatly enhances velocity during normally quiescent nighttime periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The detailed locomotor analysis using DART provides important characterization of the behavioral phenotype (C33-C35). The finding that NCA knockout reduces peak activity but increases activity during quiescent periods (C35) is consistent with a perturbed sleep state rather than general hyperactivity. This nuanced analysis strengthens the interpretation that NCA specifically regulates sleep/wake states.",
+    "result_type": "MINOR"
+  }
+]

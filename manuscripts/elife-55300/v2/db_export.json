@@ -1,0 +1,2102 @@
+{
+  "submission": {
+    "id": "80abc308-ce04-455a-9d3b-231c094c4ca8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:16:25.493123Z",
+    "updated_at": "2025-12-02T18:16:25.493123Z"
+  },
+  "content": [
+    {
+      "id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "submission_id": "80abc308-ce04-455a-9d3b-231c094c4ca8",
+      "content_type": "manuscript",
+      "content_text": "# Temporal selectivity declines in the aging human auditory cortex\n\n## Authors\n\n- Julia Erb<sup>1</sup> ([ORCID: 0000-0002-3440-7269](https://orcid.org/0000-0002-3440-7269)) \u2020\n- Lea-Maria Schmitt<sup>1</sup> ([ORCID: 0000-0002-9356-2234](https://orcid.org/0000-0002-9356-2234))\n- Jonas Obleser<sup>1</sup> ([ORCID: 0000-0002-7619-0459](https://orcid.org/0000-0002-7619-0459))\n\n### Affiliations\n\n1. Department of Psychology, University of L\u00fcbeck L\u00fcbeck Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nCurrent models successfully describe the auditory cortical response to natural sounds with a set of spectro-temporal features. However, these models have hardly been linked to the ill-understood neurobiological changes that occur in the aging auditory cortex. Modelling the hemodynamic response to a rich natural sound mixture in N = 64 listeners of varying age, we here show that in older listeners\u2019 auditory cortex, the key feature of temporal rate is represented with a markedly broader tuning. This loss of temporal selectivity is most prominent in primary auditory cortex and planum temporale, with no such changes in adjacent auditory or other brain areas. Amongst older listeners, we observe a direct relationship between chronological age and temporal-rate tuning, unconfounded by auditory acuity or model goodness of fit. In line with senescent neural dedifferentiation more generally, our results highlight decreased selectivity to temporal information as a hallmark of the aging auditory cortex.\n\n## Introduction\n\nAge-related hearing loss is a frequent cause for a decline in speech comprehension, particularly in complex acoustic environments. As the temporal envelope of speech is crucial for speech comprehension (Shannon et al., 1995), the ability to accurately encode temporal features in the auditory system is pivotal for successful perception of speech and conspecific vocalizations (Peelle and Wingfield, 2016). Age-related deficits have been observed in different temporal psychoacoustic tasks (e.g. gap detection; Snell et al., 2002). Those psychoacoustic studies suggest that the precision of processing of temporal cues declines with age (e.g. Gordon-Salant et al., 2006).\n\nWhile age-related hearing loss has been attributed to a variety of peripheral declines in auditory coding (e.g. Gates and Mills, 2005), fewer studies have looked at more central levels of auditory processing. Yet, declines in temporal processing are hypothesized to be not exclusively peripheral in origin, but more central than at least the mid-brain (Recanzone, 2018). In the aged macaque auditory cortex, neurons become more broadly tuned to temporal modulations and temporal fidelity of cortical responses decreases (Ng and Recanzone, 2018). Topographically, a neural dedifferentiation is suggested to take place in the older brain: In young macaques, the neuronal response to the inter-stimulus interval in primary field A1 and caudolateral belt area (CL) differs in that A1 neurons have shorter response latencies. In aged animals, however, no difference was observed between A1 and CL such that aged A1 neurons had an equivalent response latency to CL neurons\u00a0(Ng and Recanzone, 2018). Further, in aged neurons, a shift in neural coding strategy from less temporal coding towards more rate coding of temporal modulations was evident\u00a0(Overton and Recanzone, 2016; for a review of both coding strategies see Joris et al., 2004). For those neurons that still adhered to a temporal coding strategy, the\u00a0temporal fidelity decreased, although the absolute number of neurons responsive to temporal modulations was unaffected by age\u00a0(Overton and Recanzone, 2016).\n\nAt higher processing levels, only a number of relatively unspecific changes have been reported in the older human listener (for review see Peelle and Wingfield, 2016). For example, the frontal and cingulo-opercular cortical response is elevated during a challenging speech comprehension or gap detection task (Erb and Obleser, 2013; Vaden et al., 2015; Vaden et al., 2020). This has been interpreted as compensatory mechanism in response to loss of sensory acuity. Aging has been hypothesized to lead to a neural dedifferentiation in sensory cortices (e.g., Park et al., 2004). A more\u00a0recent unspecific observation is that with age, decoding accuracy of stimulus conditions from auditory cortical fMRI responses declines (Lalwani et al., 2019; but see discussion for contrasting findings in MEG speech tracking, for\u00a0example Presacco et al., 2016). This finding in turn has been linked to an imbalance of excitation and inhibition in older adults, more specifically a reduction of GABA levels in auditory cortex (Lalwani et al., 2019). Accumulating evidence supports the theory of an age-related loss of inhibition in sensory cortices (Caspary et al., 2008).\n\nA recent model of cortical processing (Chi et al., 2005) has led to substantial progress in our understanding of how natural sounds become represented in the auditory cortex. A series of studies have shown that cortical processing of sounds is optimized to represent the spectro-temporal modulations which are typically present in conspecific vocalizations such as speech or animal calls (Santoro et al., 2014; Hullett et al., 2016; Santoro et al., 2017; Erb et al., 2019a). However, those studies have not looked at the pressing case of the aged human cortex. It remains unknown whether \u2014 and if so, which \u2014 general response properties are altered in aged auditory cortex.\n\nThe present study applies an fMRI encoding and decoding approach to compare auditory cortical responses to natural sounds in young and older humans. We focus on the age-group comparison at the level of representation of fundamental acoustic features (spectro-temporal modulations). Results show that while the large-scale topographic organization of acoustic features is preserved in the older auditory cortex, age groups differ in tuning to temporal modulations: Human aging thus appears to be accompanied by an anatomically and functionally specific broadening of temporal-rate tuning in auditory cortex.\n\n## Results\n\nfMRI responses to sounds from a total of N\u00a0=\u00a064 younger and older listeners were modelled using both model-based encoding (Santoro et al., 2014) and decoding (Santoro et al., 2017; Figure 1). In brief, sounds were decomposed into acoustic features, that is, the frequency-dependent spectro-temporal modulation content (Chi et al., 2005). Analyses were restricted to voxels in an anatomic mask of the auditory cortex. In a fourfold cross-validation procedure, we used ridge regression to derive single- and multi-voxel MTFs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig1-v2.jpg)\n\n**Figure 1.:** Participants listened to a story embedded in sound textures at a\u00a0signal-to-noise ratio(SNR) of 0 dB while we acquired 3T-fMRI data. For audiograms of the participants see Figure 1\u2014figure supplement 1). The sounds were decomposed into their modulation spectrum (Chi et al., 2005; for modulation spectra of the sounds see Figure 1\u2014figure supplement 2). In a first univariate encoding approach, we calculated a modulation transfer function (MTF) for each individual voxel. In a second multivariate decoding approach, linear decoders were trained on the response patterns in auditory cortex for each feature of the modulation representation. Predictions were then tested on a left-out testing data set.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Audiograms for older participants (averaged over left and right ear).\u00a0(b) Average behavioural performance (mean\u00a0\u00b1\u00a0SEM) in the scanner in a four-choice task (three questions on the story content after each run) for young (green) and older participants (violet). Chance level was 0.25 [proportion correct]. Young participants performed significantly better than older participants (mean proportion correct difference\u00a0=\u00a00.1, p=0.009 [permutation test], Cohen\u2019s d\u00a0=\u00a00.65).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Average of the marginalized modulation spectra for the stimulus streams separately and their mixture. (b) Standard deviation (SD) of the marginalized modulation spectra. (c) Pairwise correlations (Pearson\u2019s r) between the different streams in the modulation representation. While speech and texture are mostly uncorrelated over time, the speech\u2013texture mixture is highly correlated with the speech stream in the low frequency range and with textures in the high frequency range. Note that the left plot has a different scaling than the middle and right plot.\n\n### Encoding results\n\nWe compared three models of hemodynamic responses to sound. The models respectively describe the fMRI responses to the (1) speech stream (foreground), (2) textures (background), or (3) the mixture of both streams (for modulation spectra of the different streams see Figure 1\u2014figure supplement 2).\n\n#### Sound identification accuracies\n\nIn a first encoding analysis, we estimated a modulation transfer function (MTF) for each voxel based on a subset of fMRI data (training) for each model. We then assessed the ability of these models to accurately predict the fMRI responses to sounds of a new, independent data set (testing data). We quantified prediction accuracy by means of a sound identification analysis (see Materials and methods).\n\nSound identification accuracy was higher than chance level (0.5) for all models and age groups (Figure 2). The sound mixture model had the highest sound identification accuracies (Figure 2a) and thus described most accurately the fMRI responses to sounds. All subsequent encoding and decoding analyses were based on this mixture model. Young participants had significantly higher identification accuracies for mixture than old participants (Figure 2a). There was no significant correlation between chronological age and sound identification accuracy for mixture within the young or older group (Figure 2b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig2-v2.jpg)\n\n**Figure 2.:** (a) Accuracies for sound mixture, texture (background stream) and speech (foreground stream), for young (left, green) and older participants (right, violet). Bars indicate the mean (\u00b1\u00a0standard error of the mean, SEM) of all participants per age group. Accuracies are normalized between 0 and 1; zero\u00a0denotes that the predicted activity pattern for a given stimulus was least similar to the measured one among all test stimuli; one denotes correct identification; chance level is 0.5. *p<0.05, **p<0.01, ***p<0.005, exact permutation test. (b) Identification accuracies for sound mixture were uncorrelated with chronological age within each age group.\n\n#### Topographical best-feature maps\n\nBest feature maps were obtained from univariate encoding models by marginalizing the single-voxel MTFs for the dimension of interest. In particular, tonotopic maps were obtained by averaging over the rate and scale dimension and assigning the frequency with the maximal response to a given voxel. Tonotopic maps showed the typical mirror-symmetric frequency gradients along Heschl\u2019s gyrus in both young and aged auditory cortex, irrespective of age (Figure 3). Tonotopic gradients were most obvious in the young group (Figure 3a, upper panel). Consistent with previous human fMRI data (Moerel et al., 2012), a low frequency region was observed in the central region of Heschl\u2019s gyrus (HG), presumably marking the boundary between the human homologue of primary auditory fields A1 and R (Figure 3a, red-yellow). This low frequency region was surrounded antero-medially and posteriorly by high frequency regions (Figure 3a, green-blue). The antero-medial high frequency areas clustered on the planum polare (PP). The posterior regions preferring high frequencies covered planum temporale (PT). We did not find significant age-group differences using two-sample voxel-wise t-tests (corrected for multiple comparisons). In fact, tonotopic group maps were correlated, indicating that topography for best frequency was preserved in older adults (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig3-v2.jpg)\n\n**Figure 3.:** (a) Group maps were obtained as median across subjects and are shown on FreeSurfer\u2019s fsaverage5 template. Tonotopic maps in\u00a0the young (upper panel) and older group (bottom panel) are correlated in both the right and left hemisphere. (b) Exemplary individual tonotopic maps for the\u00a0left hemisphere (LH) of a young (upper panel) and older participant (bottom panel) are displayed on individual surfaces. Black outlines indicate Heschl\u2019s gyrus. ***p<0.005.\n\nTopographical best-feature maps for rate and scale were more complex. Similarly, we did not find significant voxel-wise age-group differences using two-sample t-tests (corrected for multiple comparisons). On the contrary, both for temporal and spectral modulations, group maps were correlated between age groups (Figure 4). For best temporal modulation maps, we observed a medial-to-lateral gradient for increasing temporal rate (Figure 4a). For best spectral modulation maps, the locus of highest spectral resolution coincided with the low frequency region on Heschl\u2019s gyrus (Figure 3a, Figure 4b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig4-v2.jpg)\n\n**Figure 4.:** Group maps were obtained as median across subjects and shown on FreeSurfer\u2019s fsaverage5 template. Black outlines indicate Heschl\u2019s gyrus. Topographic organization in the young (upper panel) and older group (bottom panel) is significantly correlated (Pearson\u2019s correlation coefficient) for best temporal rate (a) and best spectral scale (b). Histograms of best feature values are shown for the young (green) and older group (violet) above the colour bars. Note the shift of the distribution in older relative to young adults for temporal rate (a) but not spectral scale (b), indicating that older adults\u2019 voxel-wise preferred temporal rates are shifted towards higher modulation rates. ***p<0.005.\n\n### Decoding results\n\n#### Feature reconstruction from auditory cortex\n\nCortical sensitivity to acoustic features was quantified using model-based decoding. Decoders were trained on a subset of the data (training) for each acoustic feature separately (Figure 1). Reconstruction accuracies were obtained as Pearson\u2019s r between predicted and actual acoustic features in the testing data. Results were compared across age groups using exact permutation tests.\n\nOur main hypothesis was that cortical sensitivity is highest for slow temporal modulations, based on previous observations of human (but not monkey) auditory cortex being most sensitive to the modulations present speech (Santoro et al., 2017; Erb et al., 2019a). Decoding yielded highest accuracies at frequencies of 230\u2013580 Hz (mean r\u00a0=\u00a00.47) and spectral scales of 0.25 cyc/oct (mean r\u00a0=\u00a00.47), irrespective of age (Figure 5a,b), indicating that brain responses followed the frequency and spectral modulation content of the stimuli (Figure 1\u2014figure supplement 2a). Conversely, for temporal modulations, reconstruction accuracies peaked at rates of 4\u20138 Hz (mean r\u00a0=\u00a00.4) in both age groups (Figure 5a,b). Those peaks were not present in the stimuli (Figure 1\u2014figure supplement 2a) and imply preferred processing of temporal rates in the speech-relevant range (Poeppel and Assaneo, 2020), corroborating our hypothesis (see also discussion).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig5-v2.jpg)\n\n**Figure 5.:** (a) Auditory cortical modulation transfer functions (MTFs) for the young and older group quantified by reconstruction accuracies (Pearson\u2019s r between predicted an actual acoustic features). (b) Mean\u00a0\u00b1\u00a0SEM of the MTFs\u2019 marginal profiles for rate, scale and frequency for young (green) and older (violet) participants separately. (c) We quantified tuning selectivity by the selectivity index (SI;\u00a0see Equation 7). For illustration purposes, we show the marginal profiles for rate in a young (green) and older individual (violet) with extreme SI values. (d) SI was compared for\u00a0each\u00a0acoustic dimension (rate, scale, frequency) between age groups using an exact permutation test. Black line indicates the median SI. Black line indicates the median SI. Note that when removing the extreme case in the young group (exceeding the grand average by\u00a0\u00b12\u00a0SD) for rate SI, the mean age-group difference remains significant (p=0.026). Removing the two extreme cases in the older group for scale SI leads to a significant age-group difference (p=0.024). Note the different scaling of the plots. See Figure 5\u2014figure supplement 1 for decoding from auditory cortex with ICA (AROMA)-cleaned data.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Mean\u00a0\u00b1\u00a0SEM of the MTFs\u2019 marginal profiles for rate, scale and frequency for young (green) and older (violet) participants separately. (b) The selectivity index SI (see Equation 7) was compared per acoustic dimension between age groups using an exact permutation test. Note that irrespective of preprocessing (with or without ICA-cleaning, Figure 5), reconstruction accuracies peak at temporal rates of 4\u20138 Hz. Likewise, for AROMA-cleaned data SI for temporal rates is higher in young compared to older participants. Removing the young-subject outlier for rate SI (exceeding the grand average by\u00a0\u00b12 SD) does not alter the SI mean age difference qualitatively (p=0.027).\n\n#### Selectivity index\n\nA key observation was\u00a0the\u00a0age difference in selectivity of tuning to temporal modulations (as quantified by the selectivity index SI, see Materials and methods). Selectivity of temporal rate coding was higher in young than in older participants (mean SI age difference\u00a0=\u00a00.01, p=0.004 [permutation test], Cohen\u2019s d\u00a0=\u00a00.68, Figure 5d, left). Note that removing the extreme case in the young group (outliers were defined as exceeding the grand average by\u00a0\u00b12 SD) for rate SI does not alter results qualitatively: It reduces the mean age-group difference to a still significant SI difference\u00a0=\u00a00.009, p=0.026. Removing the two extreme cases in the older group for scale SI increases the mean age-group difference to a significant SI difference\u00a0=\u00a00.037, p=0.024. A lower selectivity index is consistent with a broadening of tuning in the aged auditory cortex.\n\nCareful artefact removal from fMRI data is particularly important for age comparisons. Therefore, we re-ran the decoding analysis on ICA-cleaned data (using AROMA, Pruim et al., 2015). Irrespective of preprocessing without (Figure 5) or with ICA-cleaning (Figure 5\u2014figure supplement 1), the key results remained unchanged, that is, reconstruction accuracies peaking at temporal rates of 4\u20138 Hz as well as selectivity for temporal rates being higher in young than in older participants.\n\nAlso, this key result of a broadened tuning to temporal rate was corroborated by an even simpler measure of selectivity: The variance in the reconstruction accuracy profiles across the six temporal rate bins (1\u201332 Hz, \u2018rate variance\u2019) was higher in the young than in the older participants (mean difference in variance\u00a0=\u00a03.7\u00d710\u22124, p<0.001 [permutation test], Cohen\u2019s d\u00a0=\u00a00.93, Figure 6\u00a0a, left).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig6-v2.jpg)\n\n**Figure 6.:** (a) Variance of the MTFs\u2019 marginal profiles compared between age groups. P-values are based on an exact permutation test. (b) Amongst the older group, the variance of the rate profiles (\u2018rate variance\u2019) correlates with the SI for rate (left panel) and chronological age (middle panel), but not with hearing loss (right panel; Spearman\u2019s correlation coefficient). MTF: modulation transfer function, SI: selectivity index, PTA: pure tone average.\n\nIn the older group, the rate variance was significantly correlated with the rate selectivity index and chronological age but was uncorrelated with hearing loss (Figure 6, b). Note however that the rate selectivity index (see above) in the older group was not significantly correlated with chronological age (Spearman\u2019s rho\u00a0=\u00a0\u22120.2, p=0.289), nor with hearing loss (Spearman\u2019s rho\u00a0=\u00a00.34, p=0.062).\n\nIn a control analysis, we ensured that these results cannot be explained by the overall slightly worse model fits in the older group as quantified by sound identification accuracy (as evident in Figure 2): In a multiple regression predicting older participants\u2019 variance in rate from chronological age with covariates PTA and sound identification accuracy, neither PTA (t(26) = 0.73, p=0.473, permutation test) nor sound identification accuracy (t(26) = 1.02, p=0.312) were significant, while age was significant (t(26) = \u22122.8, p=0.003; adjusted R2\u00a0=\u00a00.39). Age remained significant when excluding two multivariate outliers identified based on Cook\u2019s distance (t(24) = \u22122.25, p=0.021).\n\n#### Feature reconstruction from auditory subregions\n\nTo test the differential sensitivity of auditory cortical subregions to acoustic features, we re-ran the decoding analyses in the following regions of interest (ROIs) derived from the FreeSurfer atlas (Destrieux et al., 2010): Heschl\u2019s gyrus and sulcus (HG/HS), planum polare (PP), planum temporale (PT), superior temporal gyrus (STG) and superior temporal sulcus (STS, Figure 7a - f)). As control regions, we chose primary visual cortex (V1, calcarine sulcus) as another primary sensory area, and two higher-level areas, namely the middle frontal gyrus\u00a0(MFG) and superior parietal gyrus (SPG; Figure 7a, g-i).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig7-v2.jpg)\n\n**Figure 7.:** (a) ROIs derived from the FreeSurfer atlas (Destrieux et al., 2010) are displayed on FreeSurfer\u2019s fsaverage template. Mean (\u00b1\u00a0SEM) reconstruction accuracy profiles (left) and selectivity index (right) per age group for temporal rate in (b) Heschl\u2019s gyrus and sulcus, (c) planum temporale, (d) planum polare, (e) superior temporal gyrus, (f) superior temporal sulcus and the control regions (g) calcarine sulcus, (h) superior parietal gyrus, (i) middle frontal gyrus. The selectivity index (SI) was compared per ROI between age groups using an exact permutation test. When removing the\u00a0young-subject SI exceeding the grand average by\u00a0\u00b12 SD, the SI age difference remains significant in HG/HS (p=0.008), and in PT (p=0.04). Consistently, our alternative measure of selectivity, variance across rate bins, was significantly higher in young than older adults in HG/HS (p=0.0004) and PT (p=0.0003). See Figure 7\u2014figure supplement 1 for the reconstruction accuracies z-scored with respect to the empirical null distribution in an exemplary region HG/HS. See Figure 7\u2014figure supplement 2 for group maps of the rate selectivity index obtained from encoding models. See Figure 7\u2014figure supplement 3 for decoding of spectral scale and frequency from ROIs.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Single subject and median reconstruction accuracy profiles for temporal rate, spectral scale and frequency z-scored with respect to the empirical null distribution for young (a) and older (b) participants. Note that all z-values exceed\u00a01.96 and are thus significant at p<0.05.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Maps were derived by calculating the SI across the rate profile for a given voxel and averaged in the young group (upper panel) and older group (bottom panel). Higher SI (red) indicates higher selectivity. Black outlines indicate Heschl\u2019s gyrus.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/55300/elife-55300-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Mean (\u00b1\u00a0SE) reconstruction accuracy profiles (left) and selectivity index (right) per age group for spectral scale and frequency in (a) Heschl\u2019s gyrus and sulcus (HG/HS), (b) planum temporale (PT), (c) planum polare (PP), (d) superior temporal gyrus (STG), (e) superior temporal sulcus (STS) and the control regions (f) calcarine sulcus (V1), (g) superior parietal gyrus (SPG) and (h)\u00a0middle frontal gyrus (MFG). Selectivity index was compared per ROI between age groups using exact permutation test. Black line indicates the median SI. Note that removing the young outlier participant (>2 SD away from the mean) for scale in PT reduces the mean age difference to a still significant SI difference\u00a0=\u00a00.015, p=0.026.\n\nA decrease in the rate selectivity index with age was confirmed for HG/HS (mean SI difference\u00a0=\u00a00.012, p=0.009 [permutation test]) and PT (mean SI difference\u00a0=\u00a00.016, p=0.005 [permutation test]; see Figure 7b,c). Removing the extreme cases in the young group exceeding the grand average by\u00a0\u00b12 SD reduces the mean SI age difference to 0.012 (p=0.008) in HG/HS, and to 0.012 (p=0.04) in PT. The alternative measure of selectivity, variance of the rate profiles, was also significantly higher in young than older adults in HG/HS (variance difference\u00a0=\u00a04\u00d710\u22124, p=0.0004) and PT (variance difference\u00a0=\u00a05\u00d710\u22124, p=0.0003).\n\nNote that reconstruction accuracies in all ROIs but the control regions (V1, SPG, MFG) were significant (permutation tests; for the z-scored reconstruction accuracies in an exemplary region HG/HS see Figure 7\u2014figure supplement 1).\n\nIn contrast, there were no age differences in temporal selectivity in PP, STG, STS or the control regions V1, SPG and MFG (Figure 7d \u2013 i).\n\nQualitatively, this observation was confirmed by a control analysis, where we derived topographic maps of the rate selectivity index from the encoding models. To this end, we marginalized MTFs for rate and calculated the SI for a given voxel. The topographic distribution confirmed highest voxel-wise SI for rate in area PT of the younger group (Figure 7\u2014figure supplement 2).\n\nThese results indicate that age-related changes in temporal selectivity selectively occur in primary auditory cortex and the planum temporale, but not surrounding belt areas. For spectral scale, we also found a decreased SI in older adults in HG/HS (SI difference\u00a0=\u00a00.012, p=0.008) and PT (SI difference\u00a0=\u00a00.016, p=0.021), but none of the other ROIs (Figure 7\u2014figure supplement 3). For frequency, we did not find any age differences in selectivity index at all (Figure 7\u2014figure supplement 3).\n\n## Discussion\n\nThis cross-sectional approach used encoding and decoding models of hemodynamic responses to compare the spectro-temporal fidelity in auditory cortex of younger and older listeners. We pursued the long-standing but largely understudied question whether temporal and/or spectral modulations, which are key acoustic dimensions of behaviourally relevant signals such as speech and music, are represented in a less differentiated fashion in the aging auditory cortex.\n\nWe find the large-scale topographic organization of acoustic features entirely preserved in the aged auditory cortex, and best feature maps for frequency, scale and rate accordingly were correlated very highly between age groups.\n\nHowever, age-related differences are evident in the cortical sensitivity to mainly temporal modulations as quantified by the decoding analysis. Decoding of temporal rate is most accurate at slow rates of 4\u20138 Hz irrespective of age, but the tuning to temporal rate is significantly sharper in young than in older participants. Also, amongst older adults, broadening of rate tuning correlates with chronological age. Importantly, the age-related rate selectivity difference was driven by primary auditory (HG) and adjacent area PT, while secondary auditory areas PP, STG, and STS did not show age differences.\n\n### Preserved topographic organization in aging auditory cortex\n\nUsing natural stimuli, we revealed topographic maps of acoustic feature preference for frequency, spectral and temporal modulations. Thus, we show that topographic maps of feature preference can be observed under approximately natural hearing situations. Tonotopic maps exhibited the well-established mirror-symmetric high-low-high frequency gradients across Heschl\u2019s gyrus and adjacent areas (Figure 3) consistent with abundant evidence in human (Formisano et al., 2003; Talavage et al., 2004; Humphries et al., 2010; Woods et al., 2010; Da Costa et al., 2011; Striem-Amit et al., 2011; Langers and van Dijk, 2012; Moerel et al., 2012; Moerel et al., 2014) and non-human primates (Merzenich and Brugge, 1973; Morel et al., 1993; Kosaki et al., 1997; Rauschecker et al., 1997; Bendor and Wang, 2008; Baumann et al., 2013; Joly et al., 2014; Baumann et al., 2015). Notably, tonotopic maps in younger versus older adults were highly correlated, indicating topographical stability of tonotopic organization across age groups.\n\nThe well-demonstrated existence of tonotopic maps notwithstanding, a topographic organization for temporal or spectral modulations in auditory cortex is less clear (Sch\u00f6nwiesner and Zatorre, 2009). Here, in both young and older adults we observed a medial-to-lateral low-to-high gradient for temporal modulations across the superior temporal plane (Figure 4a), while for spectral modulations, the locus with the highest resolution (~1.5 cyc/oct) was observed in lateral Heschl\u2019s gyrus (Figure 4b). A topographic representation for modulation rate has previously been observed in the primate auditory cortex (Baumann et al., 2015) where fast temporal acoustic information was preferably encoded in caudal auditory regions (Camalier et al., 2012; Kusmierek and Rauschecker, 2014) and slow temporal information in rostral areas R and RT\u00a0(Liang et al., 2002; Bendor and Wang, 2008).\n\nWhereas earlier human fMRI studies had failed to show a clear topography for modulation rate (Giraud et al., 2000; Sch\u00f6nwiesner and Zatorre, 2009; Overath et al., 2012; Leaver and Rauschecker, 2016), recent human fMRI (Santoro et al., 2014) and electrocorticography (ECoG) studies (Hullett et al., 2016) proposed the presence of a posterior-to-anterior high-to-low rate gradient in human auditory cortex. However, comparison of those studies is hampered by the differences in coverage and ranges of temporal modulations: While Hullett et al., 2016 examined representation of slow temporal modulation rates present in speech (1\u20132 Hz) only along the STG with ECoG, Santoro et al., 2014 analyzed rates of 1\u201327 Hz, whereas Baumann et al., 2015 presented rates of up to 512 Hz with more comprehensive coverage using fMRI.\n\n### Functional mapping from natural sounds is feasible using conventional MR field strength in aging populations\n\nWhile previous studies had presented single natural sounds (Erb et al., 2019a), or even synthetic sounds such as AM stimuli (Baumann et al., 2015) or dynamic ripples (Sch\u00f6nwiesner and Zatorre, 2009), here, we presented a continuous stream of speech embedded in an acoustically rich background of sound textures. As an important foundation for the main conclusions of this manuscript, we here demonstrate the capacity to derive meaningful tonotopic maps from natural stimulus conditions, at conventional field strengths (3 T) and in special populations (older participants).\n\nAlthough an inherent caveat of the use of natural stimulus conditions is the difficulty of measuring psychoacoustic performance, this experimental design has the advantage that it closely approximates natural listening conditions (Hamilton and Huth, 2020). As synthetic sounds lack both the behavioural relevance and the statistical structure of natural sounds, they activate auditory cortex differently than natural stimuli (Theunissen et al., 2000; Bitterman et al., 2008).\n\nMethodologically, our encoding approach relies on the assumption that acoustic features that maximally activate single voxels are more accurately encoded. However, higher responses may not necessarily mean better encoding. The second, complementary decoding analysis incorporates the whole range of values rather than only the maximal values. The reconstruction accuracy explicitly quantifies the amount of information about a set of stimulus features that is available in a region of interest. Accurate reconstruction of acoustic features in test sounds indicates that these features are reproducibly mapped into distinct spatial patterns. As data from individual voxels are jointly modelled, this combined analysis of signals from multiple voxels increases the sensitivity for stimulus information that may be represented in patterns of responses, rather than in individual voxels\u00a0(Santoro et al., 2017).\n\n### Broadened temporal tuning in aging auditory cortex\n\nUnder the assumption that the reconstruction accuracy reflects tuning properties of neuronal populations, the observed decrease in selectivity reveals a broadening of temporal tuning functions with age. This finding provides mechanistic insights into the changes of temporal processing in the aging auditory cortex: The broadened temporal tuning, reminiscent of an age-related decrease in temporal precision in the midbrain (Anderson et al., 2012), may underlie the difficulties older adults experience in speech comprehension in noisy environments (Anderson et al., 2011). While the present study lacks more direct measures of encoding along the auditory pathway, it is important to note that rate selectivity in the older listeners was statistically unrelated to their pure-tone audiograms (this holds true for both presented measures of tuning, the selectivity index [Figure\u00a05]\u00a0and the variance across temporal rates [Figure 6]). Thus, the broadening of temporal tuning is not explicable merely by peripheral hearing loss. Future studies need to carefully assess the consequences of altered cortical temporal tuning on behavioural and psychoacoustic performance (Erb et al., 2019b; Flinker et al., 2019; Holmes and Griffiths, 2019), a measure that was precluded by the use of natural sounds in the current study.\n\nThe observation of decreased temporal selectivity may seem at odds with previous accounts of elevated cortical responses to the temporal speech envelope in aging. Evidence for better reconstruction of temporal envelopes from older listeners\u2019 MEG signals (Presacco et al., 2016) and larger N1 amplitudes in older adults with widened auditory filters (Herrmann et al., 2016; Henry et al., 2017) suggest an enhanced cortical envelope representation. However, an inflated cortical representation of the speech envelope has been argued to rather\u00a0be a maladaptive response as compensation of the lack of temporal precision in the midbrain (Anderson et al., 2012).\n\nNeuronal coding of temporal modulations follows two distinct principles, that is rate and temporal coding (Joris et al., 2004). While rate coding constitutes a variation of overall spike rate as a function of modulation frequency, temporal coding is achieved through phase-locking to the stimulus envelope. Fast temporal modulations (>50 Hz) are typically encoded through the rate code, while neurons tuned to slow temporal rates (<50 Hz) mostly synchronize to the sounds\u2019 modulations (temporal code, Sachs, 1984; Joris et al., 2004). It remains unclear how hemodynamic responses reflect these two types of neuronal coding and how those are in turn related to the observed age-related broadening of tuning functions. Evidence from electrophysiology suggests a change in coding strategy across neuronal populations in A1 from less temporal coding towards more rate coding of temporal modulations in aged animals (Ng and Recanzone, 2018).\n\nInterestingly, the observed age-related decrease in selectivity to temporal modulations was restricted to areas HG/HS and PT, the putative homologues of areas A1 and CL in the macaque (Kaas and Hackett, 2000). Both areas have been shown to exhibit altered temporal encoding in older macaques (Ng and Recanzone, 2018). In a direct comparison of the vector strengths (a metric of periodicity of the neuronal response to a modulated signal) as a function of the inter-stimulus interval, responses differed in young A1 and CL neurons such that A1 neurons had higher vector strength. This is consistent with the notion that CL neurons process predominantly spatial (rather than temporal) information. Therefore, so the theory, CL neurons would not necessarily need to pass on the temporal coding of A1 neurons. This difference between belt and core areas was abandoned in the older animals, where aged A1 were similar to both the aged and young CL neurons, indicating that the temporal fidelity of A1 responses decreases with age.\n\nHowever, a good temporal fidelity of A1 neurons is thought to be critical for temporal processing. We speculate that such an age-related decline in temporal processing may be linked to an imbalance of excitation and inhibition observed in aging (Voytek et al., 2015). Inhibitory (e.g. GABAergic or glycinergic) neurotransmitters have been shown to increase response synchrony to modulated stimuli in both the cochlear nucleus and the inferior colliculus (Koch and Grothe, 1998; Backoff et al., 1999, for review see Caspary et al., 2008),\u00a0suggesting that inhibitory neurotransmission is of particular importance to precise neural timing and, thus, the adequate tracking of temporal sound features.\n\nAn inherent challenge to age group comparisons is to distinguish any unspecific decrease of SNR in the data of older participants (e.g., due to vascular changes that impact the BOLD response Garrett et al., 2017 or due to the typical increase in movement artefacts) from specific age-related sensory processing changes. Most reassuringly, however, a multiple regression model taking into account overall goodness of the encoding model fit (i.e., sound identification accuracy) did not alter the observed relationship between age and temporal rate tuning.\n\n### Conclusions\n\nThe present study aimed to narrow the gap between recent progress in modelling the neural processing of acoustic features from natural stimuli on the one hand, and the understanding of potential senescent changes in these cortical\u00a0stimulus representations on the other hand. Although the large-scale topographic organization of acoustic features appears preserved in the auditory cortex of older compared to younger listeners, age-related differences in the marginal profiles of multi-voxel MTFs were evident. Tuning to slow temporal rates which abounds in natural sounds and especially in speech (Erb et al., 2019a) was markedly sharper in young compared to older participants. Consistent with previous findings in the macaque, these results suggest that temporal rate selectivity in auditory cortex declines in normal aging. The specificity of this decline, confined to primary auditory and adjacent areas and sparing tonotopic\u00a0representations, opens a new lead in the ongoing search\u00a0for tractable neurobiological signatures of older adults\u2019 widely observed deficits in speech comprehension in noisy environments.\n\n## Materials and methods\n\n### Participants\n\nWe invited a total of n\u00a0=\u00a075 participants for scanning from which we had to exclude one participant due to excessive movement, three participants due to incidental neurological findings, five participants due to their inability to understand speech in noise, one participant due to broken headphones, one participant due to age (43 years, i.e., could not be assigned to young or older group). The remaining n\u00a0=\u00a064 participants were right-handed, young (n\u00a0=\u00a033; aged 18\u201332, mean 24.7 years18 female) and older (n\u00a0=\u00a031; aged 51\u201378, mean 63.8 years, 15 female) native German speakers. Simulations (custom matlab code) showed that a two-sample permutation test at a conventional type I error rate of 5% with a sample size of N\u00a0=\u00a027 per group can detect medium to large effects of Cohen\u2019s d\u00a0=\u00a00.75 (as can be expected for the neural fMRI measures under consideration, for\u00a0example Alavash et al., 2019)\u00a0with a satisfactory power of 80%. The power of our procedure reduces accordingly if the true effect in the population is smaller but remains over 60% also for true effects closer to Cohen\u2019s d\u00a0=\u00a00.5.\n\nYounger participants had self-reported normal hearing. Older participants\u2019 hearing ranged from normal hearing to mild hearing loss. The older participants were part of a cohort which is regularly tested in the lab (e.g., Alavash et al., 2019). They were recruited based on their audiograms that had been acquired within the two years prior to the experiment (for audiograms see Figure 1\u2014figure supplement 1a) and were excluded from the study if the pure-tone-average (PTA) of the better ear exceeded 30 dB HL. On average, hearing thresholds are expected to increase by approximately 0.25\u20131.7 dB HL per year at the age range of 48\u201379 years (Wiley et al., 2008). Thus, we considered 2-year-old audiograms to be valid. All participants gave informed consent and were financially compensated or received course credit. All procedures were approved by the local ethics committee of the University of L\u00fcbeck (ethical approval AZ 16\u2013107).\n\n### Stimuli and task\n\nParticipants listened to 64 min of a freely narrated audiobook (Hertha M\u00fcller, \u2018Die Nacht ist aus Tinte gemacht\u2019) presented against a competing stream of resynthesized natural sounds (\u2018sound textures\u2019; McDermott and Simoncelli, 2011) at 0 dB SNR. Textures were synthesized from the spectro-temporal modulation content of a large set of real-life sounds (n\u00a0=\u00a0192), including speech and vocal samples, music pieces, animal cries, scenes from nature and tool sounds that had been used in previous studies (Moerel et al., 2013; Santoro et al., 2017). Texture synthesis parameters were as follows: Frequency range\u00a0=\u00a00.02\u201310 kHz, number of frequency bands\u00a0=\u00a030, sampling rate\u00a0=\u00a020 kHz, temporal modulation range\u00a0=\u00a00.5\u2013200 Hz, sampling rate\u00a0=\u00a0400 Hz; maximum number of iterations\u00a0=\u00a060. Texture exemplars of 5 s length were concatenated to form the background stream. The order of exemplars was pseudo-randomized across participants (in four different sound orders). In total, each exemplar was repeated four times.\n\nParticipants were asked to listen to the story and answer three four-choice questions on its semantic content after each run (24 questions in total); chance level was thus proportion correct\u00a0=\u00a00.25. Four-answer choice questions were displayed on a screen and participants responded via a button box in their right hand. Both the young and older group performed on average above chance (see Figure 1\u2014figure supplement 1b), but young participants performed significantly better than older participants (mean proportion correct difference\u00a0=\u00a00.1, p=0.009 [permutation test], Cohen\u2019s d\u00a0=\u00a00.65).\n\n### Acquisition of MRI data\n\nWe acquired functional and structural MRI at 3T (Siemens Magnetom Skyra) with a 64-channel RF head array coil.\n\nFunctional T2*-weighted data were acquired using an echo planar imaging sequence. We collected eight runs of eight minutes each (each\u00a0run\u00a0contained 519 volumes) using continuous scanning. The acquisition parameters were as follows: repetition time (TR)\u00a0=\u00a0acquisition time (TA)\u00a0=\u00a0947 ms, echo time (TE)\u00a0=\u00a028 ms, acceleration factor\u00a0=\u00a04, flip angle\u00a0=\u00a060\u00b0, field of view (FOV)\u00a0=\u00a0200\u00d7200 mm, 52 slices; voxel size\u00a0=\u00a02.5 mm isotropic (whole-brain coverage). Field maps for intensity inhomogeneity correction were acquired after every second run (TR\u00a0=\u00a0610 ms, TE1\u00a0=\u00a04.92, TE2\u00a0=\u00a07.38, flip angle\u00a0=\u00a060\u00b0, FOV\u00a0=\u00a0200\u00d7200 mm, 62 slices, voxel size\u00a0=\u00a02.5 mm isotropic).\n\nAnatomical T1-weighted images were acquired using an MPRAGE sequence (TR\u00a0=\u00a02400 ms, time to inversion [TI]=1000 ms, TE\u00a0=\u00a03.16 ms, flip angle\u00a0=\u00a08\u00b0, FOV\u00a0=\u00a0256\u00d7256 mm, number of slices\u00a0=\u00a0176, voxel size\u00a0=\u00a01 mm isotropic, GRAPPA acceleration factor\u00a0=\u00a02). T2-weighted images were collected at the end of the session (TR\u00a0=\u00a03200 ms, TE\u00a0=\u00a0449 ms, FOV\u00a0=\u00a0256\u00d7256 mm, number of slices\u00a0=\u00a0176, voxel size\u00a0=\u00a01 mm isotropic, GRAPPA acceleration factor\u00a0=\u00a02).\n\n### Preprocessing of MR data\n\nResults included in this manuscript are based on a preprocessing pipeline of fMRIPprep 1.2.4 which is based on Nipype 1.1.6 (Esteban et al., 2019). The following two paragraphs on preprocessing are based on an automatically generated output of fMRIPprep.\n\n#### Anatomical data preprocessing\n\nThe T1-weighted (T1w) image was corrected for intensity non-uniformity (INU) using N4BiasFieldCorrection (ANTs 2.2.0) and used as T1w-reference throughout the workflow. The T1w-reference was then skull-stripped using antsBrainExtraction.sh (ANTs 2.2.0), using OASIS as target template. Brain surfaces were reconstructed using recon-all (FreeSurfer 6.0.1), and the brain mask estimated previously was refined with a custom variation of the method to reconcile ANTs-derived and FreeSurfer-derived segmentations of the cortical gray-matter of Mindboggle. Spatial normalization to the ICBM 152 Nonlinear Asymmetrical template version 2009c was performed through nonlinear registration with antsRegistration (ANTs 2.2.0), using brain-extracted versions of both T1w volume and template. Brain tissue segmentation of cerebrospinal fluid (CSF), white-matter (WM) and gray-matter (GM) was performed on the brain-extracted T1w using fast (FSL 5.0.9).\n\n#### Functional data preprocessing\n\nFor each of the eight BOLD runs, the following preprocessing was performed. First, a reference volume and its skull-stripped version were generated using a custom methodology of fMRIPrep. A deformation field to correct for susceptibility distortions was estimated based on a field map that was co-registered to the BOLD reference, using a custom workflow of fMRIPrep. Based on the estimated susceptibility distortion, an unwarped BOLD reference was calculated for a more accurate co-registration with the anatomical reference. The BOLD reference was then co-registered to the T1w reference using bbregister (FreeSurfer) which implements boundary-based registration. Co-registration was configured with nine degrees of freedom to account for distortions remaining in the BOLD reference. Head-motion parameters with respect to the BOLD reference (transformation matrices, and six corresponding rotation and translation parameters) are estimated before any spatiotemporal filtering using mcflirt (FSL 5.0.9). BOLD runs were slice-time corrected using 3dTshift from AFNI 20160207. The BOLD time-series (including slice-timing correction when applied) were resampled onto their original, native space by applying a single, composite transform to correct for head-motion and susceptibility distortions. In a control analysis, ICA-based Automatic Removal Of Motion Artifacts (AROMA) was used to generate a variant of data that is non-aggressively denoised (Pruim et al., 2015). All analyses (see below) were performed in native space. Subsequently, results (best feature maps) were resampled to surfaces on the fsaverage5 template using mri_vol2surf (FreeSurfer).\n\n### Modulation representation\n\nThe modulation content of the stimuli was obtained by filtering the sounds within a biologically plausible model of auditory processing (Chi et al., 2005). This auditory model consists of an early stage that models the transformations that acoustic signals undergo from the cochlea to the midbrain; and a cortical stage that accounts for the processing of the sounds at the level of the auditory cortex. We derived the spectrogram and its modulation content using the \u2018NSL Tools\u2019 package (available at http://www.isr.umd.edu/Labs/NSL/Software.htm) and customized Matlab code (The MathWorks Inc, Matlab 2014b/2018a).\n\nSpectrograms for all sounds were obtained using a bank of 128 overlapping bandpass filters with equal width (Q10dB = 3), spaced along a logarithmic frequency axis over a range of f\u00a0=\u00a0180\u20137040 Hz. The output of the filter bank was band-pass filtered (hair cell stage). A midbrain stage modelled the enhancement of frequency selectivity as a first-order derivative with respect to the frequency axis, followed by a half-wave rectification and a short-term temporal integration (time constant \u03c4\u00a0=\u00a08 ms).\n\nNext, the auditory spectrogram was further analyzed by the cortical stage, where the modulation content of the auditory spectrogram was computed through a bank of 2-dimensional filters selective for a combination of spectral and temporal modulations. The filter bank performs a complex wavelet decomposition of the auditory spectrogram. The magnitude of such decomposition yields a phase-invariant measure of modulation content. The modulation selective filters have joint selectivity for spectral and temporal modulations, and are directional, that\u00a0is they respond either to upward or downward frequency sweeps.\n\nFilters were tuned to spectral modulation frequencies of \u03a9 = [0.3, 0.4, 0.8, 1.3, 2.3, 4] cyc/oct, temporal modulation frequencies of \u03c9 = [1, 2, 4, 8, 16, 32] Hz, and centre frequencies of f = [232, 367, 580, 918, 1452, 2297, 3633, 5746] Hz. Our rationale for this choice of values was to use a decomposition roughly covering the temporal and spectral modulations present in the acoustic energy of natural sounds we used (for spectro-temporal modulation content of the sounds see Figure 1\u2014figure supplement 2). To avoid overfitting, for the decoding analyses in regions of interest (ROIs), we reduced the number of features such that filters were tuned to spectral modulation frequencies of \u03a9 = [0.25, 0.5, 1, 2, 4] cyc/oct, temporal modulation frequencies of \u03c9 = [1, 2.4, 5.7, 13.5, 32] Hz, and centre frequencies of f = [277, 576, 1201, 2502, 5213] Hz.\n\nThe filter bank output was computed at each frequency along the tonotopic axis and then averaged over time. This resulted for the encoding (ROI decoding) analysis in a representation with 6 (5) spectral modulation frequencies\u00a0\u00d7\u00a06 (5) temporal modulation frequencies\u00a0\u00d7\u00a08 (5) tonotopic frequencies\u00a0=\u00a0288 (125) parameters to learn. The time-averaged output of the filter bank was averaged across the upward and downward filter directions (Santoro et al., 2014). Those processing steps were applied to all stimuli, resulting in an [N x F] feature matrix S of modulation energy, where N is the number of sounds, and F is the number of features in the modulation representation.\n\nPrior to acoustic feature extraction, the continuous sounds (~8 min per run) were cut into snippets of the length of the TR (947 ms) resulting in a total of n\u00a0=\u00a04152 sounds which were subdivided into training (n\u00a0=\u00a03114) and test sounds (n\u00a0=\u00a01038) for the cross-validation procedure (see below). This resulted in an equivalent temporal resolution of the feature matrix and the fMRI data.\n\nNote that for the encoding analysis (see below), the number of parameters to estimate is thus smaller than the number of observations in the training set (n\u00a0=\u00a03114 training sounds). In the decoding analysis, the number of fitted features is limited by the number of voxels instead (Equation 5). Each feature was convolved with the standard double gamma model for the hemodynamic response function peaking at 4 s.\n\n### Encoding and decoding models\n\nWe applied two modelling approaches to fMRI data as described in Erb et al., 2019b;\u00a0Santoro et al., 2014; Santoro et al., 2017 (Figure 1). In a first univariate encoding approach, we calculated a modulation transfer function (MTF) for each individual voxel. The MTF characterizes how faithfully the modulation content of the stimulus gets transferred to the voxel. By assigning the feature value with the maximal response to each voxel, we obtained maps of a voxel\u2019s best features across the auditory cortex.\n\nIn a second multivariate decoding approach, data from voxels were jointly modelled within a model-based decoding framework. The combined analysis of signals from multiple voxels increases the sensitivity for stimulus information that is represented in patterns of activity, rather than in individual voxels. Further, the accuracy with which those features can be reconstructed provides an explicit measure of the amount of information about sound features available in cortex.\n\n#### Univariate encoding analysis: Model estimation\n\nBased on the training data only, the fMRI activity Yi [Ntrain\u00a0\u00d71] at voxel i was modeled as a linear transformation of the feature matrix Strain [Ntrain\u00a0\u00d7F] plus a noise term n [Ntrain\u00a0\u00d71]:\n\n$$\nY_{i}=S_{train}C_{i}+n\n$$\n\nwhere Ntrain is the number of sounds in the training set, and Ci is an [F\u00a0\u00d7\u00a01] vector of model parameters, whose elements cij quantify the contribution of feature j to the overall response of voxel i. Columns of matrices Strain and Yi were converted to standardized z-scores. Therefore, Equation 1 does not include a constant term. The solution to Equation 1 was computed using kernel ridge regression (Hoerl and Kennard, 1970). The regularization parameter \u03bb was selected independently for each voxel via generalized cross-validation (Golub et al., 1979). The search grid included 25 values between 10\u22126 and 106 logarithmically spaced with a grid grain of 100.5.\n\nTo obtain more stable estimates of the voxels\u2019 feature profiles, this computation was performed in a fourfold cross-validation procedure within each participant using different subsets of the eight runs. For each iteration, two out of the eight runs were selected and left out for testing, resulting in a subset of 3114 training sounds on which the estimation was performed and 1038 test sounds. In this way, we obtained four estimates of each voxel\u2019s feature profile which were averaged across iterations.\n\n#### Model evaluation\n\nTo evaluate the model\u2019s prediction accuracy, we performed a sound identification analysis (Kay et al., 2008). To this end, we used the fMRI activity patterns predicted by the model to identify which of the test sounds had been heard. Given the trained model $C~$ [F \u00d7 V], and the feature matrix Stest [Ntest \u00d7 F] for the test set, the predicted fMRI activity $Y^$test [Ntest \u00d7 V] for the test sounds was obtained as:\n\n$$\nY^_{test}=S_{test}\u00a0C~\n$$\n\nThen, we computed for each stimulus sk the correlation rs between its predicted fMRI activity $Y^$test(s) [1 \u00d7 V] and all measured fMRI responses Ytest(s) [1 \u00d7 V]. The rank of the correlation between predicted and observed activity for stimulus sk was used as a measure of the model\u2019s ability to correctly match Ytest(s) with its prediction $Y^$test(s). The rank was then normalized between 0 and 1 as follows to obtain the sound identification score m for stimulus s (Santoro et al., 2014):\n\n$$\nm_{s}=1\u2212\\frac{rank(r_{s})\u22121}{N_{test}\u22121}\n$$\n\nNote that m\u00a0=\u00a01 indicates a correct match; m\u00a0=\u00a00 indicates that the predicted activity pattern for stimulus si was least similar to the measured one among all stimuli. Normalized ranks (sound identification scores) were computed for all stimuli in the test set, and the overall model\u2019s accuracy was obtained as the mean of the sound identification scores across stimuli.\n\n#### Topographical best-feature maps\n\nThe response profiles for temporal modulation, spectral modulation and frequency were computed as marginal sums of the estimated stimulus-activity mapping function C of the frequency-specific modulation model by summing across irrelevant dimensions. For example, to obtain the temporal modulation transfer function (tMTF), we summed across the spectral modulation and frequency dimension:\n\n$$\ntMTF(\\omega\u00a0)=\u00a0\\sum_{\u03a9}\\sum_{f}\u00a0C(\\omega\u00a0,\u03a9,f)\n$$\n\nTo calculate profiles for the spectral modulation transfer function (sMTF) and frequency transfer function (fTF), we correspondingly summed across irrelevant dimensions. The voxels\u2019 best\u00a0features were defined as the maximum of the tMTF, sMTF and fTF, respectively. Cortical maps were generated by colour-coding the voxels\u2019 preferred values and projecting them onto an inflated representation of the cortex. To obtain group maps, individual maps were transformed to FreeSurfer\u2019s fsaverage5 space and averaged.\n\n#### Multivariate decoding analysis: Model estimation\n\nIn the multivariate decoding analysis, we evaluated the fidelity with which regions of interest (ROIs) in auditory cortex encode acoustic features by estimating decoders. In addition to a region including the whole auditory cortex, we selected five ROIs based on anatomical criteria (using the FreeSurfer labels): Heschl\u2019s gyrus/sulcus (HG/HS), planum temporale (PT), planum polare (PP), superior temporal gyrus (STG) and sulcus (STS). Additionally, we selected three control ROIs, namely\u00a0the visual cortex (V1, calcarine sulcus), middle frontal (MFG) and superior parietal gyrus (SPG). For each individual in each ROI, a linear decoder was trained for every feature of the modulation space based on the training data only (Santoro et al., 2017). Each stimulus feature Sj [Ntrain\u00a0\u00d71] was modelled as a linear transformation of the multi-voxel response pattern Ytrain [Ntrain\u00a0\u00d7V] plus a bias term bj and a noise term n [Ntrain\u00a0\u00d71] as follows:\n\n$$\nS_{j}=Y_{train}C_{j}+b_{j}1+n\n$$\n\nwhere Ntrain is the number of sounds in the training set, V is the number of voxels, one is a [Ntrain\u00a0\u00d7\u00a01] vector of ones, and Cj is a [V\u00a0\u00d7\u00a01] vector of model parameters, whose elements cji quantify the contribution of voxel i to the encoding of feature j. All parameters in Equation 5 were estimated within the same ridge-regression cross-validation scheme as Equation 1. Here, the regularization parameter \u03bb was determined independently for each feature by generalized cross validation using the identical search grid as in the univariate encoding model (see above).\n\n#### Estimation of multi-voxel modulation transfer functions (MTFs)\n\nDecoders were estimated on the train runs (see above) and tested on the test runs. Given the trained model $C~$ [V \u00d7 F], and the patterns of fMRI activity for the test sounds Ytest [Ntest \u00d7 V], the predicted feature matrix activity Stest [Ntest \u00d7 F] for the test sounds was calculated as:\n\n$$\nS^_{test}=Y_{test}C~\n$$\n\nPredictions for all features from the test sets were concatenated and decoders were assessed individually by computing the Pearson\u2019s correlation coefficient (r) between a predicted and a given actual stimulus feature. For decoding from the whole auditory cortex (ROIs), this resulted in 288 (125) correlation coefficients, which represented the MTF. To obtain marginal profiles of the MTFs, we averaged across the momentarily irrelevant dimensions, respectively.\n\nStatistical significance of the reconstruction accuracy was assessed with permutation testing. For each stimulus feature we computed the null-distribution of accuracies at the single-subject level by randomly permuting (1,000 times) the stimulus labels of the test sounds and computing the correlation coefficient with the predicted features for each permutation. Note that to reduce computing time and resources, we limited the number of permutations to 1,000 whenever encoding and decoding models had to be estimated for each permutation at the single-subject level. For less computationally intense calculations (group comparisons), we used the default of n\u00a0=\u00a010,000 permutations.\n\nIn order to preserve the temporal correlations among sounds, the predictors were phase scrambled by using the fast Fourier transform (fft), randomly permuting the phase angles of the fft and calculating the inverse fft before convolution with the hemodynamic response function. The empirical chance level of correlation rchance was defined as the mean of the null distribution. The p-value was computed as the proportion of permutations that yielded a correlation equal to or more extreme than the empirical one. The reconstruction accuracies were z-scored relative to the empirical null distribution.\n\n#### Post-hoc statistical analysis of marginal MTFs\n\nGroup marginal profiles of MTFs were obtained as the mean of all individual marginal MTFs. To assess the statistical significance of the observations on the MTF\u2019s marginal profiles, we performed the following post-hoc analyses.\n\n#### Selectivity index\n\nBased on the marginal profiles of the MTFs, we quantified how selectively a brain region is tuned towards processing the acoustic feature with the highest reconstruction accuracy relative to all other features using a selectivity\u00a0index\n\n$$\nSI=\\frac{maxj\\in[k](r_{j})\u2212mean\u00a0j\\neqj_{max}(r_{j})}{maxj\\in[k](r_{j})+mean\u00a0j\\neqj_{max}(r_{j})}\n$$\n\nwhere rj is the reconstruction accuracy at feature j, k is the number of features, jmax is the index of the maximal reconstruction accuracy. SI was calculated for each acoustic dimension separately (i.e., rate, scale or frequency) and compared between age groups using an exact permutation test by calculating the mean group difference and permuting the age group labels 10,000 times.\n",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "f11952c7-6e77-4f5e-81a8-8050739cc045",
+      "submission_id": "80abc308-ce04-455a-9d3b-231c094c4ca8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ingrid S Johnsrude, University of Western Ontario Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55300.sa1](https://doi.org/10.7554/eLife.55300.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nUsing fMRI and computation modeling, this study explores how age affects cortical responses to natural sounds with different spectrotemporal properties. Using both encoding and decoding analyses, the authors demonstrate that older listeners have broadened temporal rate tuning compared to younger listeners, but show no difference in spectral tuning.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Temporal selectivity declines in the aging human auditory cortex\" for consideration by eLife. Your article has been reviewed by Barbara Shinn-Cunningham as the Senior Editor, Ingrid Johnsrude as Reviewing Editor, and two reviewers. The following individual involved in review of your submission has agreed to reveal their identity: Jonathan Z Simon (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. In recognition of the fact that revisions may take longer than the time we typically allow, until the research enterprise restarts in full, we will give authors as much time as they need to submit revised manuscripts.\n\nSummary:\n\nThe researchers use fMRI and computational modeling to compare auditory cortical responses to natural sounds across subjects of varying ages (cross-sectional design), according to the spectrotemporal properties of the sounds.\n\nApproaching age-based neural dedifferentiation (or neural \"tuning\") in the auditory domain has not been well handled in the literature to date. In that sense, reviewers found this work to be interesting, particularly with respect to the detailed and nuanced treatment the authors give to the analysis of auditory stimuli (i.e., rates, scales, frequencies).\n\nThe reviewers found the study to be well designed.\n\nThe analysis proceeds in two steps: first using an encoding framework, and then using a decoding framework. The authors find that older listeners have broadened temporal rate tuning compared to younger listeners, in contrast to spectral tuning which does not show such a difference.\n\nThe reviewers commented that the analysis methods are employed well and described clearly. It is evident that there is great attention to detail in the analysis, both in the formalism and the statistics.\n\nThe benefits and tradeoffs between the encoding and decoding approaches are handled well, and both reviewers commented on how nice it was to see both frameworks used on the same data.\n\nEssential revisions:\n\nThe reviewers raise a number of concerns that must be adequately addressed before the paper can be accepted. Some of the required revisions may require further experimentation within the framework of the presented studies and techniques.\n\n1) Subsection \u201cUnivariate encoding analysis: Model estimation\u201d: How were subject data incorporated in the cross-validation scheme? It is clear how sounds were split, but not how subject data were handled. If all subjects are included and you simply split on stimuli, then the data are technically not \"independent\" per se in the classic between-subjects sense\u2026one can always argue bias is present by having all subjects contribute at each cross-validation stage.\n\n2) Subsection \u201cMultivariate decoding analysis: Model estimation\u201d: It seems to be a major choice to have a single sensory control region (calcarine sulcus) given the task type. Please justify this more.\n\n3) Subsection \u201cSound identification accuracies\u201d: the joint stimuli (texture + speech) are somehow \"uniquely\" identified despite texture being repeated 4x. Would results likely be even better without this repetition? Why was texture repetition required at all?\n\n4) Subsection \u201cDecoding results\u201d: It was not clear why decoding accuracy should be highest at these values of freq, scale, and rate. Was there a hypothesis regarding these levels?\n\n5) The age-based result in Figure 5E is questionable. This was plotted as a scatterplot in WebPlotDigitizer to examine the impact of data on the leftmost side of the plot (which visually are pulling the slope negative). Using a Spearman corr reduces the corr value to -.21 (p=.27). Holding out a single high leverage case (only the most extreme value detected by computing Cook's distance) also reduces the Pearson correlation to -.28 (p=.14) and Spearman to -.13 (p=.50). And taking out the three cases identified by a Cook's rule of thumb (Standard Cook's cutoff = 4/n), Pearson and Spearman corrs are reduced to -.19 and -.05 respectively.\n\n6) The uni- and multivariate outliers need to be better addressed in Figure 5B/C as well. The distributions are not terribly well behaved. For example, without what seems like a young adult outlier at the highest SI level in Figure 5C, does the group effect remain?\n\n7) The same should be investigated for Figure 6B also; the right tail of the young group appears to pull up the young adult mean in that case too. It does appear that Figure 6A may hold up however, but this needs to be verified.\n\n8) Because of a lack of clarity in the results as they currently sit, little can be made of the current Discussion section, various aspects of what is discussed may fall away once the data are reanalyzed. The Discussion section (and Abstract) should therefore be revised in light of what the reanalysis shows.\n",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5cfe7bec-bb26-4f2a-8908-44acbee47ec2",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C1",
+      "claim": "The temporal envelope of speech is crucial for speech comprehension.",
+      "claim_type": "EXPLICIT",
+      "source": "As the temporal envelope of speech is crucial for speech comprehension (Shannon et al., 1995), the ability to accurately encode temporal features in the auditory system is pivotal for successful perception of speech and conspecific vocalizations (Peelle and Wingfield, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shannon et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "45057c7a-a3a4-44ba-bc98-1c33e029dd0a",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C2",
+      "claim": "The ability to accurately encode temporal features in the auditory system is pivotal for successful perception of speech and conspecific vocalizations.",
+      "claim_type": "EXPLICIT",
+      "source": "As the temporal envelope of speech is crucial for speech comprehension (Shannon et al., 1995), the ability to accurately encode temporal features in the auditory system is pivotal for successful perception of speech and conspecific vocalizations (Peelle and Wingfield, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peelle and Wingfield, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "a317c9ad-9238-4b34-b43f-5dbe2e3b1dab",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C3",
+      "claim": "Age-related deficits have been observed in different temporal psychoacoustic tasks (e.g. gap detection).",
+      "claim_type": "EXPLICIT",
+      "source": "Age-related deficits have been observed in different temporal psychoacoustic tasks (e.g. gap detection; Snell et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Snell et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "4bc9d0f8-3dfb-4c0b-afc8-845a4c33742f",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C4",
+      "claim": "The precision of processing of temporal cues declines with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Those psychoacoustic studies suggest that the precision of processing of temporal cues declines with age (e.g. Gordon-Salant et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gordon-Salant et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "8464cb3d-5944-44b8-815a-a391273fb02c",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C5",
+      "claim": "Age-related hearing loss has been attributed to a variety of peripheral declines in auditory coding.",
+      "claim_type": "EXPLICIT",
+      "source": "While age-related hearing loss has been attributed to a variety of peripheral declines in auditory coding (e.g. Gates and Mills, 2005), fewer studies have looked at more central levels of auditory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gates and Mills, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "2b878faa-dfd5-4eae-8c41-092c48cab738",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C6",
+      "claim": "Declines in temporal processing are hypothesized to be not exclusively peripheral in origin, but more central than at least the mid-brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, declines in temporal processing are hypothesized to be not exclusively peripheral in origin, but more central than at least the mid-brain (Recanzone, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Recanzone, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "acc04616-54a8-42f5-a362-31aba8459bc4",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C7",
+      "claim": "In the aged macaque auditory cortex, neurons become more broadly tuned to temporal modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the aged macaque auditory cortex, neurons become more broadly tuned to temporal modulations and temporal fidelity of cortical responses decreases (Ng and Recanzone, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ng and Recanzone, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "b8c9188e-d7bf-4afe-88f9-5a48c595117b",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C8",
+      "claim": "Temporal fidelity of cortical responses decreases in the aged macaque auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the aged macaque auditory cortex, neurons become more broadly tuned to temporal modulations and temporal fidelity of cortical responses decreases (Ng and Recanzone, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ng and Recanzone, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "f0378a9e-c410-449c-8965-96acdbe455a8",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C9",
+      "claim": "In young macaques, A1 neurons have shorter response latencies than CL neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In young macaques, the neuronal response to the inter-stimulus interval in primary field A1 and caudolateral belt area (CL) differs in that A1 neurons have shorter response latencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the description of topographic neural dedifferentiation in the context of Ng and Recanzone, 2018",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "92807bae-8403-4ad1-92e3-45e66f2d45fd",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C10",
+      "claim": "In aged macaques, no difference in response latency was observed between A1 and CL neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In aged animals, however, no difference was observed between A1 and CL such that aged A1 neurons had an equivalent response latency to CL neurons (Ng and Recanzone, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ng and Recanzone, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "0dd71347-9d78-4749-bdb2-6221957a04a7",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C11",
+      "claim": "In aged neurons, a shift in neural coding strategy from less temporal coding towards more rate coding of temporal modulations was evident.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, in aged neurons, a shift in neural coding strategy from less temporal coding towards more rate coding of temporal modulations was evident (Overton and Recanzone, 2016; for a review of both coding strategies see Joris et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Overton and Recanzone, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "1fad3679-0a1f-486b-9d77-9100d2e58bd3",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C12",
+      "claim": "For neurons that still adhered to a temporal coding strategy, the temporal fidelity decreased in aged neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For those neurons that still adhered to a temporal coding strategy, the temporal fidelity decreased, although the absolute number of neurons responsive to temporal modulations was unaffected by age (Overton and Recanzone, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Overton and Recanzone, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "8a8b73a5-a90d-4e29-91e3-1b306c91814e",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C13",
+      "claim": "The absolute number of neurons responsive to temporal modulations was unaffected by age.",
+      "claim_type": "EXPLICIT",
+      "source": "For those neurons that still adhered to a temporal coding strategy, the temporal fidelity decreased, although the absolute number of neurons responsive to temporal modulations was unaffected by age (Overton and Recanzone, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Overton and Recanzone, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "e995868c-7b32-440c-8584-bb7127eb6390",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C14",
+      "claim": "The frontal and cingulo-opercular cortical response is elevated during a challenging speech comprehension or gap detection task in older listeners.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the frontal and cingulo-opercular cortical response is elevated during a challenging speech comprehension or gap detection task (Erb and Obleser, 2013; Vaden et al., 2015; Vaden et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Erb and Obleser, 2013; Vaden et al., 2015; Vaden et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "2bede45b-10ef-4143-966a-dc252a4430b6",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C15",
+      "claim": "Elevated frontal and cingulo-opercular cortical response has been interpreted as compensatory mechanism in response to loss of sensory acuity.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been interpreted as compensatory mechanism in response to loss of sensory acuity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the context of the preceding sentence about elevated cortical responses",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "51136f13-693a-49a0-9b6e-37c3dbf91d60",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C16",
+      "claim": "Aging has been hypothesized to lead to a neural dedifferentiation in sensory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging has been hypothesized to lead to a neural dedifferentiation in sensory cortices (e.g., Park et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Park et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "8e77387e-fc44-4668-9144-3df3a6cbcab9",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C17",
+      "claim": "With age, decoding accuracy of stimulus conditions from auditory cortical fMRI responses declines.",
+      "claim_type": "EXPLICIT",
+      "source": "A more recent unspecific observation is that with age, decoding accuracy of stimulus conditions from auditory cortical fMRI responses declines (Lalwani et al., 2019; but see discussion for contrasting findings in MEG speech tracking, for example Presacco et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lalwani et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "c5e7649f-ed9f-4b97-8968-113b5bdd8d58",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C18",
+      "claim": "The decline in decoding accuracy has been linked to an imbalance of excitation and inhibition in older adults, more specifically a reduction of GABA levels in auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding in turn has been linked to an imbalance of excitation and inhibition in older adults, more specifically a reduction of GABA levels in auditory cortex (Lalwani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lalwani et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "c1956dec-f349-46b0-b653-fabb1353cf19",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C19",
+      "claim": "Accumulating evidence supports the theory of an age-related loss of inhibition in sensory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulating evidence supports the theory of an age-related loss of inhibition in sensory cortices (Caspary et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Caspary et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "698a8c70-d95a-4a32-a156-f4f6b0b7bf74",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C20",
+      "claim": "Cortical processing of sounds is optimized to represent the spectro-temporal modulations which are typically present in conspecific vocalizations such as speech or animal calls.",
+      "claim_type": "EXPLICIT",
+      "source": "A series of studies have shown that cortical processing of sounds is optimized to represent the spectro-temporal modulations which are typically present in conspecific vocalizations such as speech or animal calls (Santoro et al., 2014; Hullett et al., 2016; Santoro et al., 2017; Erb et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Santoro et al., 2014; Hullett et al., 2016; Santoro et al., 2017; Erb et al., 2019a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "7b2960fe-d54c-4d53-9ee6-714545f763c1",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C21",
+      "claim": "The large-scale topographic organization of acoustic features is preserved in the older auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Results show that while the large-scale topographic organization of acoustic features is preserved in the older auditory cortex, age groups differ in tuning to temporal modulations: Human aging thus appears to be accompanied by an anatomically and functionally specific broadening of temporal-rate tuning in auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "85d2785f-c63b-4331-a02b-d3fecf7e5c93",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C22",
+      "claim": "Age groups differ in tuning to temporal modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Results show that while the large-scale topographic organization of acoustic features is preserved in the older auditory cortex, age groups differ in tuning to temporal modulations: Human aging thus appears to be accompanied by an anatomically and functionally specific broadening of temporal-rate tuning in auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "7d2af6b0-cecf-4343-b487-815170bce7e6",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C23",
+      "claim": "Human aging is accompanied by an anatomically and functionally specific broadening of temporal-rate tuning in auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Results show that while the large-scale topographic organization of acoustic features is preserved in the older auditory cortex, age groups differ in tuning to temporal modulations: Human aging thus appears to be accompanied by an anatomically and functionally specific broadening of temporal-rate tuning in auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "7e19d89b-b249-4aab-a12e-5b99202728b1",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C24",
+      "claim": "Sound identification accuracy was higher than chance level (0.5) for all models and age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Sound identification accuracy was higher than chance level (0.5) for all models and age groups (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "e96fda2b-aa27-46ec-b47b-d33c9ebc2efe",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C25",
+      "claim": "The sound mixture model had the highest sound identification accuracies.",
+      "claim_type": "EXPLICIT",
+      "source": "The sound mixture model had the highest sound identification accuracies (Figure 2a) and thus described most accurately the fMRI responses to sounds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "6a8f4fdc-83cb-4219-b060-3a316ea34c8a",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C26",
+      "claim": "Young participants had significantly higher identification accuracies for mixture than old participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Young participants had significantly higher identification accuracies for mixture than old participants (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "5d65b91e-c6e6-45a3-aef5-a30e5695704f",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C27",
+      "claim": "There was no significant correlation between chronological age and sound identification accuracy for mixture within the young or older group.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant correlation between chronological age and sound identification accuracy for mixture within the young or older group (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "904c1c15-bd50-4ce3-8c2e-d613b1f0a24b",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C28",
+      "claim": "Tonotopic maps showed the typical mirror-symmetric frequency gradients along Heschl's gyrus in both young and aged auditory cortex, irrespective of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Tonotopic maps showed the typical mirror-symmetric frequency gradients along Heschl's gyrus in both young and aged auditory cortex, irrespective of age (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "272be454-8b1c-4add-b922-cd8a52f0fed8",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C29",
+      "claim": "A low frequency region was observed in the central region of Heschl's gyrus (HG), presumably marking the boundary between the human homologue of primary auditory fields A1 and R.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous human fMRI data (Moerel et al., 2012), a low frequency region was observed in the central region of Heschl's gyrus (HG), presumably marking the boundary between the human homologue of primary auditory fields A1 and R (Figure 3a, red-yellow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 3a, consistent with citation to Moerel et al., 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "ec16c25f-1443-4c55-b0b8-3f79a71eee48",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C30",
+      "claim": "The low frequency region was surrounded antero-medially and posteriorly by high frequency regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This low frequency region was surrounded antero-medially and posteriorly by high frequency regions (Figure 3a, green-blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "505e58cc-a5d9-43ad-9996-b1261c3e3e85",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C31",
+      "claim": "The antero-medial high frequency areas clustered on the planum polare (PP).",
+      "claim_type": "EXPLICIT",
+      "source": "The antero-medial high frequency areas clustered on the planum polare (PP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "70905bbc-6025-4e0b-9d7d-b5abe9af8b95",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C32",
+      "claim": "The posterior regions preferring high frequencies covered planum temporale (PT).",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior regions preferring high frequencies covered planum temporale (PT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "55b9464f-0613-458d-bb4e-234bb7cee9f9",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C33",
+      "claim": "No significant age-group differences in tonotopic maps were found using two-sample voxel-wise t-tests (corrected for multiple comparisons).",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find significant age-group differences using two-sample voxel-wise t-tests (corrected for multiple comparisons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "717c4ba4-58e9-4700-849e-b7ecc08ca194",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C34",
+      "claim": "Tonotopic group maps were correlated, indicating that topography for best frequency was preserved in older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, tonotopic group maps were correlated, indicating that topography for best frequency was preserved in older adults (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "b518ab66-63f9-454f-9820-0465ef96cb7a",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C35",
+      "claim": "No significant voxel-wise age-group differences were found for best temporal and spectral modulation maps using two-sample t-tests (corrected for multiple comparisons).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we did not find significant voxel-wise age-group differences using two-sample t-tests (corrected for multiple comparisons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "aec7a5c6-f21a-4ccf-bc76-25b3428ac06c",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C36",
+      "claim": "For both temporal and spectral modulations, group maps were correlated between age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, both for temporal and spectral modulations, group maps were correlated between age groups (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "ae26b01e-0863-4e53-aca7-d8c696edf31c",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C37",
+      "claim": "A medial-to-lateral gradient for increasing temporal rate was observed for best temporal modulation maps.",
+      "claim_type": "EXPLICIT",
+      "source": "For best temporal modulation maps, we observed a medial-to-lateral gradient for increasing temporal rate (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "e827929f-1af4-42bf-a050-7d06b9f67828",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C38",
+      "claim": "For best spectral modulation maps, the locus of highest spectral resolution coincided with the low frequency region on Heschl's gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "For best spectral modulation maps, the locus of highest spectral resolution coincided with the low frequency region on Heschl's gyrus (Figure 3a, Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figures 3a and 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "d721e29d-2167-4e37-be85-9d63f5d6e9f9",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C39",
+      "claim": "Decoding yielded highest accuracies at frequencies of 230\u2013580 Hz (mean r = 0.47) irrespective of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoding yielded highest accuracies at frequencies of 230\u2013580 Hz (mean r = 0.47) and spectral scales of 0.25 cyc/oct (mean r = 0.47), irrespective of age (Figure 5a,b), indicating that brain responses followed the frequency and spectral modulation content of the stimuli (Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 5a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "51457410-4f6b-4331-a930-a01d6197599b",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C40",
+      "claim": "Decoding yielded highest accuracies at spectral scales of 0.25 cyc/oct (mean r = 0.47) irrespective of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoding yielded highest accuracies at frequencies of 230\u2013580 Hz (mean r = 0.47) and spectral scales of 0.25 cyc/oct (mean r = 0.47), irrespective of age (Figure 5a,b), indicating that brain responses followed the frequency and spectral modulation content of the stimuli (Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 5a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "74d666a4-0e66-42d8-b0f4-56b750b5bdb4",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C41",
+      "claim": "For temporal modulations, reconstruction accuracies peaked at rates of 4\u20138 Hz (mean r = 0.4) in both age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, for temporal modulations, reconstruction accuracies peaked at rates of 4\u20138 Hz (mean r = 0.4) in both age groups (Figure 5a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 5a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "868b744e-a1f1-4d9d-8e4d-3fc8730cfb6d",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C42",
+      "claim": "The peaks in reconstruction accuracies at 4\u20138 Hz were not present in the stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Those peaks were not present in the stimuli (Figure 1\u2014figure supplement 2a) and imply preferred processing of temporal rates in the speech-relevant range (Poeppel and Assaneo, 2020), corroborating our hypothesis (see also discussion).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison with stimulus properties shown in Figure 1\u2014figure supplement 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "dea057a5-c614-42e5-9b14-87aa8eb1caef",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C43",
+      "claim": "The peaks in reconstruction accuracies at 4\u20138 Hz imply preferred processing of temporal rates in the speech-relevant range.",
+      "claim_type": "EXPLICIT",
+      "source": "Those peaks were not present in the stimuli (Figure 1\u2014figure supplement 2a) and imply preferred processing of temporal rates in the speech-relevant range (Poeppel and Assaneo, 2020), corroborating our hypothesis (see also discussion).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results and citation to Poeppel and Assaneo, 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "e08bdeb7-b4f5-4cd8-9c68-05aad337c1b4",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C44",
+      "claim": "Selectivity of temporal rate coding was higher in young than in older participants (mean SI age difference = 0.01, p=0.004, Cohen's d = 0.68).",
+      "claim_type": "EXPLICIT",
+      "source": "Selectivity of temporal rate coding was higher in young than in older participants (mean SI age difference = 0.01, p=0.004 [permutation test], Cohen's d = 0.68, Figure 5d, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 5d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "6fcbb6f2-fe1c-422f-9d3b-b1c54d3ef3e9",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C45",
+      "claim": "A lower selectivity index is consistent with a broadening of tuning in the aged auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A lower selectivity index is consistent with a broadening of tuning in the aged auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the selectivity index results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "376dacd0-3df8-43ff-bdc1-a271826fdef3",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C46",
+      "claim": "The variance in the reconstruction accuracy profiles across the six temporal rate bins was higher in the young than in the older participants (mean difference in variance = 3.7\u00d710\u22124, p<0.001, Cohen's d = 0.93).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, this key result of a broadened tuning to temporal rate was corroborated by an even simpler measure of selectivity: The variance in the reconstruction accuracy profiles across the six temporal rate bins (1\u201332 Hz, 'rate variance') was higher in the young than in the older participants (mean difference in variance = 3.7\u00d710\u22124, p<0.001 [permutation test], Cohen's d = 0.93, Figure 6 a, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 6a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "d899a98c-1e48-4040-8963-3b133f8998b0",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C47",
+      "claim": "In the older group, the rate variance was significantly correlated with the rate selectivity index.",
+      "claim_type": "EXPLICIT",
+      "source": "In the older group, the rate variance was significantly correlated with the rate selectivity index and chronological age but was uncorrelated with hearing loss (Figure 6, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 6b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "69e5e220-18f8-4776-b219-9c2247f9deb1",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C48",
+      "claim": "In the older group, the rate variance was significantly correlated with chronological age.",
+      "claim_type": "EXPLICIT",
+      "source": "In the older group, the rate variance was significantly correlated with the rate selectivity index and chronological age but was uncorrelated with hearing loss (Figure 6, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 6b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "2d7b6660-5fa1-4a36-8ae5-c10ff8fd01e8",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C49",
+      "claim": "In the older group, the rate variance was uncorrelated with hearing loss.",
+      "claim_type": "EXPLICIT",
+      "source": "In the older group, the rate variance was significantly correlated with the rate selectivity index and chronological age but was uncorrelated with hearing loss (Figure 6, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 6b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "0a836899-3b39-4538-9588-64c3d65ece19",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C50",
+      "claim": "The rate selectivity index in the older group was not significantly correlated with chronological age (Spearman's rho = \u22120.2, p=0.289).",
+      "claim_type": "EXPLICIT",
+      "source": "Note however that the rate selectivity index (see above) in the older group was not significantly correlated with chronological age (Spearman's rho = \u22120.2, p=0.289), nor with hearing loss (Spearman's rho = 0.34, p=0.062).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "fe19726b-b860-440d-be32-11a5b6a13645",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C51",
+      "claim": "The rate selectivity index in the older group was not significantly correlated with hearing loss (Spearman's rho = 0.34, p=0.062).",
+      "claim_type": "EXPLICIT",
+      "source": "Note however that the rate selectivity index (see above) in the older group was not significantly correlated with chronological age (Spearman's rho = \u22120.2, p=0.289), nor with hearing loss (Spearman's rho = 0.34, p=0.062).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "3a997844-7f9b-491a-afaa-457bfa99d12f",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C52",
+      "claim": "In a multiple regression predicting older participants' variance in rate from chronological age with covariates PTA and sound identification accuracy, age was significant (t(26) = \u22122.8, p=0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "In a multiple regression predicting older participants' variance in rate from chronological age with covariates PTA and sound identification accuracy, neither PTA (t(26) = 0.73, p=0.473, permutation test) nor sound identification accuracy (t(26) = 1.02, p=0.312) were significant, while age was significant (t(26) = \u22122.8, p=0.003; adjusted R2 = 0.39).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "c2e05a65-4b15-4a01-a412-3f9918024596",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C53",
+      "claim": "In a multiple regression predicting older participants' variance in rate from chronological age with covariates PTA and sound identification accuracy, neither PTA nor sound identification accuracy were significant.",
+      "claim_type": "EXPLICIT",
+      "source": "In a multiple regression predicting older participants' variance in rate from chronological age with covariates PTA and sound identification accuracy, neither PTA (t(26) = 0.73, p=0.473, permutation test) nor sound identification accuracy (t(26) = 1.02, p=0.312) were significant, while age was significant (t(26) = \u22122.8, p=0.003; adjusted R2 = 0.39).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "faf1f888-6a5a-4e7c-a209-ca1d3cff2e40",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C54",
+      "claim": "A decrease in the rate selectivity index with age was confirmed for HG/HS (mean SI difference = 0.012, p=0.009).",
+      "claim_type": "EXPLICIT",
+      "source": "A decrease in the rate selectivity index with age was confirmed for HG/HS (mean SI difference = 0.012, p=0.009 [permutation test]) and PT (mean SI difference = 0.016, p=0.005 [permutation test]; see Figure 7b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 7b,c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "925e0111-67ca-483f-876b-984b4caa60eb",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C55",
+      "claim": "A decrease in the rate selectivity index with age was confirmed for PT (mean SI difference = 0.016, p=0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "A decrease in the rate selectivity index with age was confirmed for HG/HS (mean SI difference = 0.012, p=0.009 [permutation test]) and PT (mean SI difference = 0.016, p=0.005 [permutation test]; see Figure 7b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 7b,c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "647feeca-7c86-4e3b-aa1c-2a9cfee6cc09",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C56",
+      "claim": "The variance of the rate profiles was significantly higher in young than older adults in HG/HS (variance difference = 4\u00d710\u22124, p=0.0004).",
+      "claim_type": "EXPLICIT",
+      "source": "The alternative measure of selectivity, variance of the rate profiles, was also significantly higher in young than older adults in HG/HS (variance difference = 4\u00d710\u22124, p=0.0004) and PT (variance difference = 5\u00d710\u22124, p=0.0003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "a9464b6c-63b9-4028-bff9-d349a6c8f31e",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C57",
+      "claim": "The variance of the rate profiles was significantly higher in young than older adults in PT (variance difference = 5\u00d710\u22124, p=0.0003).",
+      "claim_type": "EXPLICIT",
+      "source": "The alternative measure of selectivity, variance of the rate profiles, was also significantly higher in young than older adults in HG/HS (variance difference = 4\u00d710\u22124, p=0.0004) and PT (variance difference = 5\u00d710\u22124, p=0.0003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "3331969a-d416-4446-a641-80c63ac37bec",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C58",
+      "claim": "There were no age differences in temporal selectivity in PP, STG, STS or the control regions V1, SPG and MFG.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there were no age differences in temporal selectivity in PP, STG, STS or the control regions V1, SPG and MFG (Figure 7d \u2013 i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 7d-i",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "313c586d-9963-4464-b777-5edd1868f828",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C59",
+      "claim": "Age-related changes in temporal selectivity selectively occur in primary auditory cortex and the planum temporale, but not surrounding belt areas.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that age-related changes in temporal selectivity selectively occur in primary auditory cortex and the planum temporale, but not surrounding belt areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the ROI-specific results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "257c3c78-6db0-40d4-b80f-560e9de3f9ed",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C60",
+      "claim": "For spectral scale, a decreased SI in older adults was found in HG/HS (SI difference = 0.012, p=0.008).",
+      "claim_type": "EXPLICIT",
+      "source": "For spectral scale, we also found a decreased SI in older adults in HG/HS (SI difference = 0.012, p=0.008) and PT (SI difference = 0.016, p=0.021), but none of the other ROIs (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 7\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "412a3460-8143-439d-b3ac-568cbeabcc6d",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C61",
+      "claim": "For spectral scale, a decreased SI in older adults was found in PT (SI difference = 0.016, p=0.021).",
+      "claim_type": "EXPLICIT",
+      "source": "For spectral scale, we also found a decreased SI in older adults in HG/HS (SI difference = 0.012, p=0.008) and PT (SI difference = 0.016, p=0.021), but none of the other ROIs (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 7\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "6f42146c-1aa4-4082-a272-9c704c861023",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C62",
+      "claim": "For frequency, no age differences in selectivity index were found at all.",
+      "claim_type": "EXPLICIT",
+      "source": "For frequency, we did not find any age differences in selectivity index at all (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 7\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "86327a95-da11-4d6d-ab43-f0da51541b1c",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C63",
+      "claim": "Topographic maps of acoustic feature preference for frequency, spectral and temporal modulations can be observed under approximately natural hearing situations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using natural stimuli, we revealed topographic maps of acoustic feature preference for frequency, spectral and temporal modulations. Thus, we show that topographic maps of feature preference can be observed under approximately natural hearing situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "79f8ac59-0ca0-433a-9b83-2cd121f5cfb3",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C64",
+      "claim": "Tonotopic maps in younger versus older adults were highly correlated, indicating topographical stability of tonotopic organization across age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, tonotopic maps in younger versus older adults were highly correlated, indicating topographical stability of tonotopic organization across age groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "50bde717-4b96-402f-adb0-a33f5f07c474",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C65",
+      "claim": "In both young and older adults, a medial-to-lateral low-to-high gradient for temporal modulations was observed across the superior temporal plane.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, in both young and older adults we observed a medial-to-lateral low-to-high gradient for temporal modulations across the superior temporal plane (Figure 4a), while for spectral modulations, the locus with the highest resolution (~1.5 cyc/oct) was observed in lateral Heschl's gyrus (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "9b9fe914-a5e1-4c0d-ab0e-2fd9d546eb15",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C66",
+      "claim": "For spectral modulations, the locus with the highest resolution (~1.5 cyc/oct) was observed in lateral Heschl's gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, in both young and older adults we observed a medial-to-lateral low-to-high gradient for temporal modulations across the superior temporal plane (Figure 4a), while for spectral modulations, the locus with the highest resolution (~1.5 cyc/oct) was observed in lateral Heschl's gyrus (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "c741d396-dbaf-4540-8c0d-62bda8ca2ac7",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C67",
+      "claim": "A topographic representation for modulation rate has previously been observed in the primate auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A topographic representation for modulation rate has previously been observed in the primate auditory cortex (Baumann et al., 2015) where fast temporal acoustic information was preferably encoded in caudal auditory regions (Camalier et al., 2012; Kusmierek and Rauschecker, 2014) and slow temporal information in rostral areas R and RT (Liang et al., 2002; Bendor and Wang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baumann et al., 2015; Camalier et al., 2012; Kusmierek and Rauschecker, 2014; Liang et al., 2002; Bendor and Wang, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "ecbe08ec-bccb-42e3-afb1-b71978bee935",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C68",
+      "claim": "Fast temporal acoustic information was preferably encoded in caudal auditory regions in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "A topographic representation for modulation rate has previously been observed in the primate auditory cortex (Baumann et al., 2015) where fast temporal acoustic information was preferably encoded in caudal auditory regions (Camalier et al., 2012; Kusmierek and Rauschecker, 2014) and slow temporal information in rostral areas R and RT (Liang et al., 2002; Bendor and Wang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Camalier et al., 2012; Kusmierek and Rauschecker, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "0f17a012-4128-40ca-b2c0-662d8b39cc0a",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C69",
+      "claim": "Slow temporal information was preferably encoded in rostral areas R and RT in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "A topographic representation for modulation rate has previously been observed in the primate auditory cortex (Baumann et al., 2015) where fast temporal acoustic information was preferably encoded in caudal auditory regions (Camalier et al., 2012; Kusmierek and Rauschecker, 2014) and slow temporal information in rostral areas R and RT (Liang et al., 2002; Bendor and Wang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Liang et al., 2002; Bendor and Wang, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "4fd328c1-2542-4632-b24a-63ebf84c3e5e",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C70",
+      "claim": "Earlier human fMRI studies had failed to show a clear topography for modulation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas earlier human fMRI studies had failed to show a clear topography for modulation rate (Giraud et al., 2000; Sch\u00f6nwiesner and Zatorre, 2009; Overath et al., 2012; Leaver and Rauschecker, 2016), recent human fMRI (Santoro et al., 2014) and electrocorticography (ECoG) studies (Hullett et al., 2016) proposed the presence of a posterior-to-anterior high-to-low rate gradient in human auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Giraud et al., 2000; Sch\u00f6nwiesner and Zatorre, 2009; Overath et al., 2012; Leaver and Rauschecker, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "01681e72-33a5-4420-aa9d-7e0c13e7029a",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C71",
+      "claim": "Recent human fMRI and ECoG studies proposed the presence of a posterior-to-anterior high-to-low rate gradient in human auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas earlier human fMRI studies had failed to show a clear topography for modulation rate (Giraud et al., 2000; Sch\u00f6nwiesner and Zatorre, 2009; Overath et al., 2012; Leaver and Rauschecker, 2016), recent human fMRI (Santoro et al., 2014) and electrocorticography (ECoG) studies (Hullett et al., 2016) proposed the presence of a posterior-to-anterior high-to-low rate gradient in human auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Santoro et al., 2014; Hullett et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "6ac25ae0-5ac6-4449-9c7b-940f65617904",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C72",
+      "claim": "Synthetic sounds lack both the behavioural relevance and the statistical structure of natural sounds.",
+      "claim_type": "EXPLICIT",
+      "source": "As synthetic sounds lack both the behavioural relevance and the statistical structure of natural sounds, they activate auditory cortex differently than natural stimuli (Theunissen et al., 2000; Bitterman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Theunissen et al., 2000; Bitterman et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "cc8e777c-7636-4558-96e7-5537865a948b",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C73",
+      "claim": "Synthetic sounds activate auditory cortex differently than natural stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "As synthetic sounds lack both the behavioural relevance and the statistical structure of natural sounds, they activate auditory cortex differently than natural stimuli (Theunissen et al., 2000; Bitterman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Theunissen et al., 2000; Bitterman et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "b0b08554-aae1-420f-8bb2-a1914cb8fb1a",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C74",
+      "claim": "The observed decrease in selectivity reveals a broadening of temporal tuning functions with age under the assumption that the reconstruction accuracy reflects tuning properties of neuronal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the assumption that the reconstruction accuracy reflects tuning properties of neuronal populations, the observed decrease in selectivity reveals a broadening of temporal tuning functions with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study's results under a stated assumption",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "0f9226ef-95d4-4c6f-a6c2-4de3ec821245",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C75",
+      "claim": "The broadened temporal tuning may underlie the difficulties older adults experience in speech comprehension in noisy environments.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding provides mechanistic insights into the changes of temporal processing in the aging auditory cortex: The broadened temporal tuning, reminiscent of an age-related decrease in temporal precision in the midbrain (Anderson et al., 2012), may underlie the difficulties older adults experience in speech comprehension in noisy environments (Anderson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference supported by citations to Anderson et al., 2012 and Anderson et al., 2011",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "7df0fd37-49d0-4d44-a0e4-eb571685c6f7",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C76",
+      "claim": "Rate selectivity in the older listeners was statistically unrelated to their pure-tone audiograms.",
+      "claim_type": "EXPLICIT",
+      "source": "While the present study lacks more direct measures of encoding along the auditory pathway, it is important to note that rate selectivity in the older listeners was statistically unrelated to their pure-tone audiograms (this holds true for both presented measures of tuning, the selectivity index [Figure 5] and the variance across temporal rates [Figure 6]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figures 5 and 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "3ea80339-b1ea-4646-b5aa-96cf2c32a63a",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C77",
+      "claim": "The broadening of temporal tuning is not explicable merely by peripheral hearing loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the broadening of temporal tuning is not explicable merely by peripheral hearing loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the lack of correlation between rate selectivity and audiograms",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "89eab043-247e-48d1-8d5c-130c179c5cad",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C78",
+      "claim": "Evidence for better reconstruction of temporal envelopes from older listeners' MEG signals suggests an enhanced cortical envelope representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for better reconstruction of temporal envelopes from older listeners' MEG signals (Presacco et al., 2016) and larger N1 amplitudes in older adults with widened auditory filters (Herrmann et al., 2016; Henry et al., 2017) suggest an enhanced cortical envelope representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Presacco et al., 2016; Herrmann et al., 2016; Henry et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "4d2d9563-9be4-45b4-b307-fc0e68ef2b7f",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C79",
+      "claim": "Larger N1 amplitudes in older adults with widened auditory filters suggest an enhanced cortical envelope representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for better reconstruction of temporal envelopes from older listeners' MEG signals (Presacco et al., 2016) and larger N1 amplitudes in older adults with widened auditory filters (Herrmann et al., 2016; Henry et al., 2017) suggest an enhanced cortical envelope representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Herrmann et al., 2016; Henry et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "85ecdbcb-8a0e-420f-8bee-ebdc48d524d3",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C80",
+      "claim": "An inflated cortical representation of the speech envelope has been argued to be a maladaptive response as compensation of the lack of temporal precision in the midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, an inflated cortical representation of the speech envelope has been argued to rather be a maladaptive response as compensation of the lack of temporal precision in the midbrain (Anderson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Anderson et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "2e9cedec-c403-4e66-bedd-4c9bee984fee",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C81",
+      "claim": "Fast temporal modulations (>50 Hz) are typically encoded through the rate code.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast temporal modulations (>50 Hz) are typically encoded through the rate code, while neurons tuned to slow temporal rates (<50 Hz) mostly synchronize to the sounds' modulations (temporal code, Sachs, 1984; Joris et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sachs, 1984; Joris et al., 2004",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "fcf8770c-99e3-4e79-a18c-2976be580dbd",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C82",
+      "claim": "Neurons tuned to slow temporal rates (<50 Hz) mostly synchronize to the sounds' modulations (temporal code).",
+      "claim_type": "EXPLICIT",
+      "source": "Fast temporal modulations (>50 Hz) are typically encoded through the rate code, while neurons tuned to slow temporal rates (<50 Hz) mostly synchronize to the sounds' modulations (temporal code, Sachs, 1984; Joris et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sachs, 1984; Joris et al., 2004",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "4f5372d7-9859-43e6-8198-e3c6d0ed7ebc",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C83",
+      "claim": "Evidence from electrophysiology suggests a change in coding strategy across neuronal populations in A1 from less temporal coding towards more rate coding of temporal modulations in aged animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence from electrophysiology suggests a change in coding strategy across neuronal populations in A1 from less temporal coding towards more rate coding of temporal modulations in aged animals (Ng and Recanzone, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ng and Recanzone, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "c833f700-f555-4172-b715-85df054a7a8c",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C84",
+      "claim": "In young macaques, A1 neurons had higher vector strength than CL neurons in response to modulated signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In a direct comparison of the vector strengths (a metric of periodicity of the neuronal response to a modulated signal) as a function of the inter-stimulus interval, responses differed in young A1 and CL neurons such that A1 neurons had higher vector strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the discussion of Ng and Recanzone, 2018 findings",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "2847193a-5d41-46c8-b0c0-b86752620d8a",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C85",
+      "claim": "The difference in vector strength between A1 and CL neurons was abandoned in older macaques, where aged A1 were similar to both the aged and young CL neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference between belt and core areas was abandoned in the older animals, where aged A1 were similar to both the aged and young CL neurons, indicating that the temporal fidelity of A1 responses decreases with age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the discussion of Ng and Recanzone, 2018 findings",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "f76640fd-6812-4aaf-89ff-df9a55b12cf7",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C86",
+      "claim": "A good temporal fidelity of A1 neurons is thought to be critical for temporal processing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a good temporal fidelity of A1 neurons is thought to be critical for temporal processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "39280f7e-cd96-40e5-86a8-3a581a487c21",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C87",
+      "claim": "An age-related decline in temporal processing may be linked to an imbalance of excitation and inhibition observed in aging.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that such an age-related decline in temporal processing may be linked to an imbalance of excitation and inhibition observed in aging (Voytek et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference supported by citation to Voytek et al., 2015",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "73754a11-5170-456b-92f9-b3f28e6a4928",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C88",
+      "claim": "Inhibitory neurotransmitters have been shown to increase response synchrony to modulated stimuli in both the cochlear nucleus and the inferior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory (e.g. GABAergic or glycinergic) neurotransmitters have been shown to increase response synchrony to modulated stimuli in both the cochlear nucleus and the inferior colliculus (Koch and Grothe, 1998; Backoff et al., 1999, for review see Caspary et al., 2008), suggesting that inhibitory neurotransmission is of particular importance to precise neural timing and, thus, the adequate tracking of temporal sound features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Koch and Grothe, 1998; Backoff et al., 1999; Caspary et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "972f0c3c-0a5e-460b-a356-73f8e2d26b88",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C89",
+      "claim": "Inhibitory neurotransmission is of particular importance to precise neural timing and the adequate tracking of temporal sound features.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory (e.g. GABAergic or glycinergic) neurotransmitters have been shown to increase response synchrony to modulated stimuli in both the cochlear nucleus and the inferior colliculus (Koch and Grothe, 1998; Backoff et al., 1999, for review see Caspary et al., 2008), suggesting that inhibitory neurotransmission is of particular importance to precise neural timing and, thus, the adequate tracking of temporal sound features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the cited evidence about inhibitory neurotransmitters",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "cfc9f235-5924-4eda-8985-57939656595d",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C90",
+      "claim": "A multiple regression model taking into account overall goodness of the encoding model fit did not alter the observed relationship between age and temporal rate tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Most reassuringly, however, a multiple regression model taking into account overall goodness of the encoding model fit (i.e., sound identification accuracy) did not alter the observed relationship between age and temporal rate tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "50321eb7-9f15-4d32-a846-e3b49c3106be",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C91",
+      "claim": "Tuning to slow temporal rates which abounds in natural sounds and especially in speech was markedly sharper in young compared to older participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuning to slow temporal rates which abounds in natural sounds and especially in speech (Erb et al., 2019a) was markedly sharper in young compared to older participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results, with citation to Erb et al., 2019a",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "1e626300-840d-400e-bfcf-2e11d4dd8f37",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C92",
+      "claim": "Temporal rate selectivity in auditory cortex declines in normal aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings in the macaque, these results suggest that temporal rate selectivity in auditory cortex declines in normal aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results and comparison with macaque findings",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "f6830f8c-2635-4259-80c0-1bb4e77af849",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C93",
+      "claim": "The specificity of the decline in temporal rate selectivity, confined to primary auditory and adjacent areas and sparing tonotopic representations, opens a new lead in the ongoing search for tractable neurobiological signatures of older adults' widely observed deficits in speech comprehension in noisy environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of this decline, confined to primary auditory and adjacent areas and sparing tonotopic representations, opens a new lead in the ongoing search for tractable neurobiological signatures of older adults' widely observed deficits in speech comprehension in noisy environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study's findings about the implications for understanding speech comprehension deficits",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "127c7612-a980-4df5-b904-b8e766541801",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C94",
+      "claim": "Young participants performed significantly better than older participants in the in-scanner behavioral task (mean proportion correct difference = 0.1, p=0.009, Cohen's d = 0.65).",
+      "claim_type": "EXPLICIT",
+      "source": "Young participants performed significantly better than older participants (mean proportion correct difference = 0.1, p=0.009 [permutation test], Cohen's d = 0.65).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 1\u2014figure supplement 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "190dad7d-2c8a-49ec-a5e7-7594719602a5",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C95",
+      "claim": "Both the young and older group performed on average above chance in the behavioral task.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the young and older group performed on average above chance (see Figure 1\u2014figure supplement 1b), but young participants performed significantly better than older participants (mean proportion correct difference = 0.1, p=0.009 [permutation test], Cohen's d = 0.65).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the study's own experimental results shown in Figure 1\u2014figure supplement 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "7b8bbf22-22e8-427c-9152-c991dc8bc80b",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C96",
+      "claim": "In older listeners' auditory cortex, the key feature of temporal rate is represented with a markedly broader tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Modelling the hemodynamic response to a rich natural sound mixture in N = 64 listeners of varying age, we here show that in older listeners' auditory cortex, the key feature of temporal rate is represented with a markedly broader tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "5e149de7-c9e0-49e3-856c-fffb28ece46b",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C97",
+      "claim": "The loss of temporal selectivity is most prominent in primary auditory cortex and planum temporale.",
+      "claim_type": "EXPLICIT",
+      "source": "This loss of temporal selectivity is most prominent in primary auditory cortex and planum temporale, with no such changes in adjacent auditory or other brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "a8adf453-ba00-48fd-abf5-2f3e5efb8c71",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C98",
+      "claim": "There are no changes in temporal selectivity in adjacent auditory or other brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "This loss of temporal selectivity is most prominent in primary auditory cortex and planum temporale, with no such changes in adjacent auditory or other brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "be659d17-ba08-4d86-9a43-5846c9ae6bf3",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C99",
+      "claim": "Amongst older listeners, there is a direct relationship between chronological age and temporal-rate tuning, unconfounded by auditory acuity or model goodness of fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst older listeners, we observe a direct relationship between chronological age and temporal-rate tuning, unconfounded by auditory acuity or model goodness of fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "3b45b065-e3b2-4d2a-bf80-c15006412cde",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "claim_id": "C100",
+      "claim": "Decreased selectivity to temporal information is a hallmark of the aging auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with senescent neural dedifferentiation more generally, our results highlight decreased selectivity to temporal information as a hallmark of the aging auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the study's own experimental results and interpretation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "08f6ff9a-8f56-4f41-8ece-c2532ca41b89",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work establishes that temporal processing is crucial for speech comprehension and declines with age, with deficits hypothesized to originate centrally rather than exclusively peripherally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are all supported by appropriate citations to prior literature. These claims establish the background and motivation for the current study by summarizing established knowledge about temporal processing in speech and age-related declines.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "bcf8e796-a5f0-4d24-b266-bc1b28c78aae",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior macaque studies show age-related broadening of temporal tuning, decreased temporal fidelity, neural dedifferentiation between A1 and CL, and shifts from temporal to rate coding, while the number of responsive neurons remains unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C13 accurately summarize findings from cited macaque electrophysiology studies (Ng and Recanzone, 2018; Overton and Recanzone, 2016). These provide the comparative neuroscience foundation for the human fMRI study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "64f76899-8038-4506-8d24-df550119170f",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior human studies show elevated frontal/cingulo-opercular responses in older adults during challenging auditory tasks (interpreted as compensation), neural dedifferentiation in sensory cortices, declining decoding accuracy from fMRI, and evidence for age-related loss of inhibition linked to reduced GABA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 appropriately cite prior human neuroimaging and neurochemical studies. These establish the context for understanding age-related changes in human auditory cortex and provide theoretical frameworks (compensation, dedifferentiation, excitation-inhibition imbalance).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "e3233ae9-6ac1-4b49-beba-050ef2d3f1d2",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior work shows cortical processing is optimized for spectro-temporal modulations present in conspecific vocalizations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is supported by multiple appropriate citations (Santoro et al., 2014; Hullett et al., 2016; Santoro et al., 2017; Erb et al., 2019a) establishing the theoretical framework for the encoding/decoding approach used in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "a6bb03ab-2175-4152-a236-1fa3ef458ad9",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sound identification accuracy exceeded chance for all models and age groups, with the mixture model performing best. Young participants had significantly higher accuracy than older participants, but within each age group, accuracy did not correlate with chronological age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by data in Figure 2 with appropriate statistical tests (permutation tests, p-values reported). The finding that the mixture model performs best validates the experimental approach, while age-group differences establish that models can detect age-related changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "c71bdafb-9476-41fe-91ac-d044b8d40755",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Tonotopic organization shows typical mirror-symmetric frequency gradients along Heschl's gyrus with low frequencies centrally and high frequencies antero-medially (planum polare) and posteriorly (planum temporale). This organization is preserved across age groups with highly correlated tonotopic maps and no significant voxel-wise differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 are supported by data in Figure 3, appropriate statistical tests (two-sample t-tests corrected for multiple comparisons), and correlation analyses. The preservation of tonotopic organization is a key finding showing anatomical specificity of age-related changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "f06e2097-a1aa-482f-a7bc-d7dc29db96b7",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Best temporal and spectral modulation maps show preserved topographic organization across age groups (correlated maps, no significant voxel-wise differences), with a medial-to-lateral gradient for temporal rate and highest spectral resolution coinciding with the low-frequency region on Heschl's gyrus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by data in Figure 4, statistical tests, and correlation analyses. This extends the finding of preserved large-scale organization to temporal and spectral modulation features beyond frequency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "6479dcab-7dec-4d1f-a424-d1f33c5a1995",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Decoding analysis reveals that auditory cortex shows highest reconstruction accuracy at frequencies of 230-580 Hz and spectral scales of 0.25 cyc/oct (matching stimulus properties), but peaks at temporal rates of 4-8 Hz despite these rates not being prominent in the stimuli, indicating preferred processing of speech-relevant temporal rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by data in Figure 5a,b and comparison with stimulus properties (Figure 1\u2014figure supplement 2a). The peak at 4-8 Hz temporal rates despite absence in stimuli is a key finding supporting the hypothesis of speech-optimized processing. Statistical support is provided through reconstruction accuracies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "6ec34b39-51bc-4b06-a608-c5462d1efbe1",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Temporal rate selectivity is significantly higher in young than older participants as measured by both selectivity index (SI) and variance across temporal rate bins, consistent with broadened tuning in aging auditory cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by data in Figures 5d and 6a with appropriate statistical tests (permutation tests), p-values, and effect sizes (Cohen's d = 0.68 and 0.93). Two independent measures converge on the same conclusion, strengthening the finding. This is the central result of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "49bfaa34-37d2-4d80-af47-fb2bca4cbe61",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Among older adults, rate variance correlates with rate selectivity index and chronological age but not hearing loss. However, the rate selectivity index itself does not significantly correlate with chronological age or hearing loss within the older group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 are supported by correlation analyses shown in Figure 6b with appropriate statistics (Spearman's rho, p-values). The dissociation between the two measures (variance vs. SI) in their relationship to age is noted but both measures show age-group differences, providing converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "4b0f7e8d-8a28-4111-ba11-36b2f44168b9",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multiple regression controlling for hearing loss (PTA) and model fit quality (sound identification accuracy) shows that chronological age remains a significant predictor of rate variance in older adults, while PTA and sound identification accuracy are not significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by multiple regression analysis with appropriate statistics (t-values, p-values, adjusted R\u00b2=0.39). This control analysis strengthens the conclusion that age effects are not merely due to peripheral hearing loss or overall model quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "37efa2c3-3a6c-42df-b50b-9b564f73a98f",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ROI analysis reveals that decreased temporal rate selectivity with age is anatomically specific to primary auditory cortex (HG/HS) and planum temporale (PT), with no age differences in surrounding belt areas (PP, STG, STS) or control regions (V1, SPG, MFG). Both selectivity index and variance measures confirm this pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 are supported by ROI-specific analyses shown in Figure 7 with appropriate statistical tests (permutation tests) and p-values. The anatomical specificity is a crucial finding demonstrating that age-related changes are not global but confined to specific auditory regions. Robustness checks removing outliers are reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "21ccb28f-26ac-4455-a951-69c3197c426a",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "For spectral scale, decreased selectivity in older adults was found in HG/HS and PT but not other ROIs. For frequency, no age differences in selectivity were found in any region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by data in Figure 7\u2014figure supplement 3 with statistical tests. This demonstrates feature-specificity of age effects: temporal rate shows strongest effects, spectral scale shows moderate effects in the same regions, and frequency shows no effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "7cccd684-b208-4c5f-ad51-0cb2dda33405",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study demonstrates that topographic maps of acoustic features can be derived from natural sound stimuli and that tonotopic organization is highly stable across age groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 summarize key methodological and substantive findings supported by the encoding results (Figures 3-4). This validates the natural stimulus approach and establishes preserved large-scale organization as context for understanding selective temporal deficits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "04020421-b11e-4408-9cf7-da4768419409",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Both age groups show a medial-to-lateral gradient for temporal modulations and highest spectral resolution (~1.5 cyc/oct) in lateral Heschl's gyrus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by data in Figure 4a,b. These findings replicate and extend prior work on topographic organization to both age groups and natural stimuli.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "41e47967-7d55-443e-b158-195efe548f6a",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work shows topographic representation of modulation rate in primate auditory cortex, with earlier human fMRI studies failing to show clear topography but recent fMRI and ECoG studies proposing a posterior-to-anterior high-to-low rate gradient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 appropriately cite and summarize prior literature on topographic organization of temporal modulations across species and methods. This provides context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "be938984-c983-4adf-a354-8c3803554607",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Synthetic sounds lack behavioral relevance and statistical structure of natural sounds and activate auditory cortex differently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 are supported by appropriate citations (Theunissen et al., 2000; Bitterman et al., 2008) and provide justification for using natural stimuli in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "57389125-4246-4794-9cf6-5c004e94e7d5",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The observed decrease in selectivity reveals broadened temporal tuning with age (under the assumption that reconstruction accuracy reflects neuronal tuning), which may underlie older adults' difficulties in speech comprehension in noisy environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C74 explicitly states an assumption linking fMRI reconstruction accuracy to neuronal tuning properties, which is reasonable but not directly validated. Claim C75 is speculative about behavioral implications, appropriately hedged with 'may underlie.' The link to speech comprehension deficits is plausible but not directly tested in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "f86ea1c0-ff08-4e7e-ab77-2b0fdcdb54a5",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Rate selectivity in older listeners is unrelated to pure-tone audiograms, indicating that broadened temporal tuning is not explicable merely by peripheral hearing loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are supported by correlation analyses (Figures 5-6) and the multiple regression analysis (C52-C53). This is an important control demonstrating central rather than peripheral origins of the age effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "d02aa95e-06a8-4074-b7bf-193926afd00c",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior MEG and EEG studies suggest enhanced cortical envelope representation in older adults, but this has been argued to be maladaptive compensation for lack of temporal precision in the midbrain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 appropriately cite prior literature (Presacco et al., 2016; Herrmann et al., 2016; Henry et al., 2017; Anderson et al., 2012) and discuss apparently contradictory findings, providing important context for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "71a2feb6-b966-4f59-b19d-c899802c05a3",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Temporal modulations are encoded via rate code (>50 Hz) or temporal code (<50 Hz). Prior electrophysiology suggests age-related shifts from temporal to rate coding in A1, with decreased temporal fidelity in aged A1 neurons (which is critical for temporal processing).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C86 appropriately cite prior literature on neural coding strategies and their age-related changes. This provides mechanistic context for interpreting the fMRI findings, though the link between single-unit physiology and fMRI signals involves assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "0783800f-f5c3-45a7-9b74-b1dda9896289",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Age-related decline in temporal processing may be linked to imbalance of excitation and inhibition, as inhibitory neurotransmitters increase response synchrony to modulated stimuli and are important for precise neural timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C87 is explicitly speculative ('we speculate'). Claims C88-C89 cite appropriate prior work on inhibitory neurotransmission, but the link to the current fMRI findings is indirect and mechanistic validation is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "17cfd9c3-ad9a-418b-a0d0-a1421d365992",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Multiple regression controlling for model goodness of fit (sound identification accuracy) does not alter the relationship between age and temporal rate tuning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is supported by the multiple regression analysis reported in the text. This is an important control addressing potential confounds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "2ec0ba4f-9ff2-4521-bbaf-42f9358f4232",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Tuning to slow temporal rates (abundant in speech) is sharper in young than older participants, suggesting that temporal rate selectivity declines in normal aging. This specific decline (confined to primary auditory and adjacent areas, sparing tonotopic representations) provides a neurobiological signature for older adults' speech comprehension deficits in noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 are well-supported by the study's data (Figures 5-7) and appropriate statistical analyses. Claim C93 is more speculative about implications for speech comprehension but is appropriately hedged ('opens a new lead'). The anatomical and functional specificity is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "e57337be-c854-456e-a9f7-7b539aaf7a43",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Both age groups performed above chance on the in-scanner behavioral task, but young participants performed significantly better than older participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C95 are supported by behavioral data in Figure 1\u2014figure supplement 1b with appropriate statistics (permutation test, p=0.009, Cohen's d=0.65). This validates that participants were engaged with the task.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    },
+    {
+      "id": "e23dac14-05bc-48ac-ad01-d0ceb4b9a923",
+      "content_id": "237f1105-aba0-4111-a54a-ed6c52b17669",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "The study's main findings are that temporal rate is represented with broader tuning in older listeners' auditory cortex, this loss of selectivity is most prominent in primary auditory cortex and planum temporale (with no changes in adjacent areas), there is a direct relationship between age and temporal-rate tuning unconfounded by auditory acuity or model fit, and decreased temporal selectivity is a hallmark of aging auditory cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C100 accurately summarize the study's main findings, which are well-supported by the data presented in Figures 2-7 and appropriate statistical analyses including permutation tests, correlation analyses, and multiple regression. The convergence of multiple measures (SI, variance) and anatomical specificity strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:16:25.493123Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5cfe7bec-bb26-4f2a-8908-44acbee47ec2",
+      "result_id": "08f6ff9a-8f56-4f41-8ece-c2532ca41b89"
+    },
+    {
+      "claim_id": "45057c7a-a3a4-44ba-bc98-1c33e029dd0a",
+      "result_id": "08f6ff9a-8f56-4f41-8ece-c2532ca41b89"
+    },
+    {
+      "claim_id": "a317c9ad-9238-4b34-b43f-5dbe2e3b1dab",
+      "result_id": "08f6ff9a-8f56-4f41-8ece-c2532ca41b89"
+    },
+    {
+      "claim_id": "4bc9d0f8-3dfb-4c0b-afc8-845a4c33742f",
+      "result_id": "08f6ff9a-8f56-4f41-8ece-c2532ca41b89"
+    },
+    {
+      "claim_id": "8464cb3d-5944-44b8-815a-a391273fb02c",
+      "result_id": "08f6ff9a-8f56-4f41-8ece-c2532ca41b89"
+    },
+    {
+      "claim_id": "2b878faa-dfd5-4eae-8c41-092c48cab738",
+      "result_id": "08f6ff9a-8f56-4f41-8ece-c2532ca41b89"
+    },
+    {
+      "claim_id": "acc04616-54a8-42f5-a362-31aba8459bc4",
+      "result_id": "bcf8e796-a5f0-4d24-b266-bc1b28c78aae"
+    },
+    {
+      "claim_id": "b8c9188e-d7bf-4afe-88f9-5a48c595117b",
+      "result_id": "bcf8e796-a5f0-4d24-b266-bc1b28c78aae"
+    },
+    {
+      "claim_id": "f0378a9e-c410-449c-8965-96acdbe455a8",
+      "result_id": "bcf8e796-a5f0-4d24-b266-bc1b28c78aae"
+    },
+    {
+      "claim_id": "92807bae-8403-4ad1-92e3-45e66f2d45fd",
+      "result_id": "bcf8e796-a5f0-4d24-b266-bc1b28c78aae"
+    },
+    {
+      "claim_id": "0dd71347-9d78-4749-bdb2-6221957a04a7",
+      "result_id": "bcf8e796-a5f0-4d24-b266-bc1b28c78aae"
+    },
+    {
+      "claim_id": "1fad3679-0a1f-486b-9d77-9100d2e58bd3",
+      "result_id": "bcf8e796-a5f0-4d24-b266-bc1b28c78aae"
+    },
+    {
+      "claim_id": "8a8b73a5-a90d-4e29-91e3-1b306c91814e",
+      "result_id": "bcf8e796-a5f0-4d24-b266-bc1b28c78aae"
+    },
+    {
+      "claim_id": "e995868c-7b32-440c-8584-bb7127eb6390",
+      "result_id": "64f76899-8038-4506-8d24-df550119170f"
+    },
+    {
+      "claim_id": "2bede45b-10ef-4143-966a-dc252a4430b6",
+      "result_id": "64f76899-8038-4506-8d24-df550119170f"
+    },
+    {
+      "claim_id": "51136f13-693a-49a0-9b6e-37c3dbf91d60",
+      "result_id": "64f76899-8038-4506-8d24-df550119170f"
+    },
+    {
+      "claim_id": "8e77387e-fc44-4668-9144-3df3a6cbcab9",
+      "result_id": "64f76899-8038-4506-8d24-df550119170f"
+    },
+    {
+      "claim_id": "c5e7649f-ed9f-4b97-8968-113b5bdd8d58",
+      "result_id": "64f76899-8038-4506-8d24-df550119170f"
+    },
+    {
+      "claim_id": "c1956dec-f349-46b0-b653-fabb1353cf19",
+      "result_id": "64f76899-8038-4506-8d24-df550119170f"
+    },
+    {
+      "claim_id": "698a8c70-d95a-4a32-a156-f4f6b0b7bf74",
+      "result_id": "e3233ae9-6ac1-4b49-beba-050ef2d3f1d2"
+    },
+    {
+      "claim_id": "7e19d89b-b249-4aab-a12e-5b99202728b1",
+      "result_id": "a6bb03ab-2175-4152-a236-1fa3ef458ad9"
+    },
+    {
+      "claim_id": "e96fda2b-aa27-46ec-b47b-d33c9ebc2efe",
+      "result_id": "a6bb03ab-2175-4152-a236-1fa3ef458ad9"
+    },
+    {
+      "claim_id": "6a8f4fdc-83cb-4219-b060-3a316ea34c8a",
+      "result_id": "a6bb03ab-2175-4152-a236-1fa3ef458ad9"
+    },
+    {
+      "claim_id": "5d65b91e-c6e6-45a3-aef5-a30e5695704f",
+      "result_id": "a6bb03ab-2175-4152-a236-1fa3ef458ad9"
+    },
+    {
+      "claim_id": "904c1c15-bd50-4ce3-8c2e-d613b1f0a24b",
+      "result_id": "c71bdafb-9476-41fe-91ac-d044b8d40755"
+    },
+    {
+      "claim_id": "272be454-8b1c-4add-b922-cd8a52f0fed8",
+      "result_id": "c71bdafb-9476-41fe-91ac-d044b8d40755"
+    },
+    {
+      "claim_id": "ec16c25f-1443-4c55-b0b8-3f79a71eee48",
+      "result_id": "c71bdafb-9476-41fe-91ac-d044b8d40755"
+    },
+    {
+      "claim_id": "505e58cc-a5d9-43ad-9996-b1261c3e3e85",
+      "result_id": "c71bdafb-9476-41fe-91ac-d044b8d40755"
+    },
+    {
+      "claim_id": "70905bbc-6025-4e0b-9d7d-b5abe9af8b95",
+      "result_id": "c71bdafb-9476-41fe-91ac-d044b8d40755"
+    },
+    {
+      "claim_id": "55b9464f-0613-458d-bb4e-234bb7cee9f9",
+      "result_id": "c71bdafb-9476-41fe-91ac-d044b8d40755"
+    },
+    {
+      "claim_id": "717c4ba4-58e9-4700-849e-b7ecc08ca194",
+      "result_id": "c71bdafb-9476-41fe-91ac-d044b8d40755"
+    },
+    {
+      "claim_id": "b518ab66-63f9-454f-9820-0465ef96cb7a",
+      "result_id": "f06e2097-a1aa-482f-a7bc-d7dc29db96b7"
+    },
+    {
+      "claim_id": "aec7a5c6-f21a-4ccf-bc76-25b3428ac06c",
+      "result_id": "f06e2097-a1aa-482f-a7bc-d7dc29db96b7"
+    },
+    {
+      "claim_id": "ae26b01e-0863-4e53-aca7-d8c696edf31c",
+      "result_id": "f06e2097-a1aa-482f-a7bc-d7dc29db96b7"
+    },
+    {
+      "claim_id": "e827929f-1af4-42bf-a050-7d06b9f67828",
+      "result_id": "f06e2097-a1aa-482f-a7bc-d7dc29db96b7"
+    },
+    {
+      "claim_id": "d721e29d-2167-4e37-be85-9d63f5d6e9f9",
+      "result_id": "6479dcab-7dec-4d1f-a424-d1f33c5a1995"
+    },
+    {
+      "claim_id": "51457410-4f6b-4331-a930-a01d6197599b",
+      "result_id": "6479dcab-7dec-4d1f-a424-d1f33c5a1995"
+    },
+    {
+      "claim_id": "74d666a4-0e66-42d8-b0f4-56b750b5bdb4",
+      "result_id": "6479dcab-7dec-4d1f-a424-d1f33c5a1995"
+    },
+    {
+      "claim_id": "868b744e-a1f1-4d9d-8e4d-3fc8730cfb6d",
+      "result_id": "6479dcab-7dec-4d1f-a424-d1f33c5a1995"
+    },
+    {
+      "claim_id": "dea057a5-c614-42e5-9b14-87aa8eb1caef",
+      "result_id": "6479dcab-7dec-4d1f-a424-d1f33c5a1995"
+    },
+    {
+      "claim_id": "e08bdeb7-b4f5-4cd8-9c68-05aad337c1b4",
+      "result_id": "6ec34b39-51bc-4b06-a608-c5462d1efbe1"
+    },
+    {
+      "claim_id": "6fcbb6f2-fe1c-422f-9d3b-b1c54d3ef3e9",
+      "result_id": "6ec34b39-51bc-4b06-a608-c5462d1efbe1"
+    },
+    {
+      "claim_id": "376dacd0-3df8-43ff-bdc1-a271826fdef3",
+      "result_id": "6ec34b39-51bc-4b06-a608-c5462d1efbe1"
+    },
+    {
+      "claim_id": "d899a98c-1e48-4040-8963-3b133f8998b0",
+      "result_id": "49bfaa34-37d2-4d80-af47-fb2bca4cbe61"
+    },
+    {
+      "claim_id": "69e5e220-18f8-4776-b219-9c2247f9deb1",
+      "result_id": "49bfaa34-37d2-4d80-af47-fb2bca4cbe61"
+    },
+    {
+      "claim_id": "2d7b6660-5fa1-4a36-8ae5-c10ff8fd01e8",
+      "result_id": "49bfaa34-37d2-4d80-af47-fb2bca4cbe61"
+    },
+    {
+      "claim_id": "0a836899-3b39-4538-9588-64c3d65ece19",
+      "result_id": "49bfaa34-37d2-4d80-af47-fb2bca4cbe61"
+    },
+    {
+      "claim_id": "fe19726b-b860-440d-be32-11a5b6a13645",
+      "result_id": "49bfaa34-37d2-4d80-af47-fb2bca4cbe61"
+    },
+    {
+      "claim_id": "3a997844-7f9b-491a-afaa-457bfa99d12f",
+      "result_id": "4b0f7e8d-8a28-4111-ba11-36b2f44168b9"
+    },
+    {
+      "claim_id": "c2e05a65-4b15-4a01-a412-3f9918024596",
+      "result_id": "4b0f7e8d-8a28-4111-ba11-36b2f44168b9"
+    },
+    {
+      "claim_id": "faf1f888-6a5a-4e7c-a209-ca1d3cff2e40",
+      "result_id": "37efa2c3-3a6c-42df-b50b-9b564f73a98f"
+    },
+    {
+      "claim_id": "925e0111-67ca-483f-876b-984b4caa60eb",
+      "result_id": "37efa2c3-3a6c-42df-b50b-9b564f73a98f"
+    },
+    {
+      "claim_id": "647feeca-7c86-4e3b-aa1c-2a9cfee6cc09",
+      "result_id": "37efa2c3-3a6c-42df-b50b-9b564f73a98f"
+    },
+    {
+      "claim_id": "a9464b6c-63b9-4028-bff9-d349a6c8f31e",
+      "result_id": "37efa2c3-3a6c-42df-b50b-9b564f73a98f"
+    },
+    {
+      "claim_id": "3331969a-d416-4446-a641-80c63ac37bec",
+      "result_id": "37efa2c3-3a6c-42df-b50b-9b564f73a98f"
+    },
+    {
+      "claim_id": "313c586d-9963-4464-b777-5edd1868f828",
+      "result_id": "37efa2c3-3a6c-42df-b50b-9b564f73a98f"
+    },
+    {
+      "claim_id": "257c3c78-6db0-40d4-b80f-560e9de3f9ed",
+      "result_id": "21ccb28f-26ac-4455-a951-69c3197c426a"
+    },
+    {
+      "claim_id": "412a3460-8143-439d-b3ac-568cbeabcc6d",
+      "result_id": "21ccb28f-26ac-4455-a951-69c3197c426a"
+    },
+    {
+      "claim_id": "6f42146c-1aa4-4082-a272-9c704c861023",
+      "result_id": "21ccb28f-26ac-4455-a951-69c3197c426a"
+    },
+    {
+      "claim_id": "86327a95-da11-4d6d-ab43-f0da51541b1c",
+      "result_id": "7cccd684-b208-4c5f-ad51-0cb2dda33405"
+    },
+    {
+      "claim_id": "79f8ac59-0ca0-433a-9b83-2cd121f5cfb3",
+      "result_id": "7cccd684-b208-4c5f-ad51-0cb2dda33405"
+    },
+    {
+      "claim_id": "50bde717-4b96-402f-adb0-a33f5f07c474",
+      "result_id": "04020421-b11e-4408-9cf7-da4768419409"
+    },
+    {
+      "claim_id": "9b9fe914-a5e1-4c0d-ab0e-2fd9d546eb15",
+      "result_id": "04020421-b11e-4408-9cf7-da4768419409"
+    },
+    {
+      "claim_id": "c741d396-dbaf-4540-8c0d-62bda8ca2ac7",
+      "result_id": "41e47967-7d55-443e-b158-195efe548f6a"
+    },
+    {
+      "claim_id": "ecbe08ec-bccb-42e3-afb1-b71978bee935",
+      "result_id": "41e47967-7d55-443e-b158-195efe548f6a"
+    },
+    {
+      "claim_id": "0f17a012-4128-40ca-b2c0-662d8b39cc0a",
+      "result_id": "41e47967-7d55-443e-b158-195efe548f6a"
+    },
+    {
+      "claim_id": "4fd328c1-2542-4632-b24a-63ebf84c3e5e",
+      "result_id": "41e47967-7d55-443e-b158-195efe548f6a"
+    },
+    {
+      "claim_id": "01681e72-33a5-4420-aa9d-7e0c13e7029a",
+      "result_id": "41e47967-7d55-443e-b158-195efe548f6a"
+    },
+    {
+      "claim_id": "6ac25ae0-5ac6-4449-9c7b-940f65617904",
+      "result_id": "be938984-c983-4adf-a354-8c3803554607"
+    },
+    {
+      "claim_id": "cc8e777c-7636-4558-96e7-5537865a948b",
+      "result_id": "be938984-c983-4adf-a354-8c3803554607"
+    },
+    {
+      "claim_id": "b0b08554-aae1-420f-8bb2-a1914cb8fb1a",
+      "result_id": "57389125-4246-4794-9cf6-5c004e94e7d5"
+    },
+    {
+      "claim_id": "0f9226ef-95d4-4c6f-a6c2-4de3ec821245",
+      "result_id": "57389125-4246-4794-9cf6-5c004e94e7d5"
+    },
+    {
+      "claim_id": "7df0fd37-49d0-4d44-a0e4-eb571685c6f7",
+      "result_id": "f86ea1c0-ff08-4e7e-ab77-2b0fdcdb54a5"
+    },
+    {
+      "claim_id": "3ea80339-b1ea-4646-b5aa-96cf2c32a63a",
+      "result_id": "f86ea1c0-ff08-4e7e-ab77-2b0fdcdb54a5"
+    },
+    {
+      "claim_id": "89eab043-247e-48d1-8d5c-130c179c5cad",
+      "result_id": "d02aa95e-06a8-4074-b7bf-193926afd00c"
+    },
+    {
+      "claim_id": "4d2d9563-9be4-45b4-b307-fc0e68ef2b7f",
+      "result_id": "d02aa95e-06a8-4074-b7bf-193926afd00c"
+    },
+    {
+      "claim_id": "85ecdbcb-8a0e-420f-8bee-ebdc48d524d3",
+      "result_id": "d02aa95e-06a8-4074-b7bf-193926afd00c"
+    },
+    {
+      "claim_id": "2e9cedec-c403-4e66-bedd-4c9bee984fee",
+      "result_id": "71a2feb6-b966-4f59-b19d-c899802c05a3"
+    },
+    {
+      "claim_id": "fcf8770c-99e3-4e79-a18c-2976be580dbd",
+      "result_id": "71a2feb6-b966-4f59-b19d-c899802c05a3"
+    },
+    {
+      "claim_id": "4f5372d7-9859-43e6-8198-e3c6d0ed7ebc",
+      "result_id": "71a2feb6-b966-4f59-b19d-c899802c05a3"
+    },
+    {
+      "claim_id": "c833f700-f555-4172-b715-85df054a7a8c",
+      "result_id": "71a2feb6-b966-4f59-b19d-c899802c05a3"
+    },
+    {
+      "claim_id": "2847193a-5d41-46c8-b0c0-b86752620d8a",
+      "result_id": "71a2feb6-b966-4f59-b19d-c899802c05a3"
+    },
+    {
+      "claim_id": "f76640fd-6812-4aaf-89ff-df9a55b12cf7",
+      "result_id": "71a2feb6-b966-4f59-b19d-c899802c05a3"
+    },
+    {
+      "claim_id": "39280f7e-cd96-40e5-86a8-3a581a487c21",
+      "result_id": "0783800f-f5c3-45a7-9b74-b1dda9896289"
+    },
+    {
+      "claim_id": "73754a11-5170-456b-92f9-b3f28e6a4928",
+      "result_id": "0783800f-f5c3-45a7-9b74-b1dda9896289"
+    },
+    {
+      "claim_id": "972f0c3c-0a5e-460b-a356-73f8e2d26b88",
+      "result_id": "0783800f-f5c3-45a7-9b74-b1dda9896289"
+    },
+    {
+      "claim_id": "cfc9f235-5924-4eda-8985-57939656595d",
+      "result_id": "17cfd9c3-ad9a-418b-a0d0-a1421d365992"
+    },
+    {
+      "claim_id": "50321eb7-9f15-4d32-a846-e3b49c3106be",
+      "result_id": "2ec0ba4f-9ff2-4521-bbaf-42f9358f4232"
+    },
+    {
+      "claim_id": "1e626300-840d-400e-bfcf-2e11d4dd8f37",
+      "result_id": "2ec0ba4f-9ff2-4521-bbaf-42f9358f4232"
+    },
+    {
+      "claim_id": "f6830f8c-2635-4259-80c0-1bb4e77af849",
+      "result_id": "2ec0ba4f-9ff2-4521-bbaf-42f9358f4232"
+    },
+    {
+      "claim_id": "127c7612-a980-4df5-b904-b8e766541801",
+      "result_id": "e57337be-c854-456e-a9f7-7b539aaf7a43"
+    },
+    {
+      "claim_id": "190dad7d-2c8a-49ec-a5e7-7594719602a5",
+      "result_id": "e57337be-c854-456e-a9f7-7b539aaf7a43"
+    },
+    {
+      "claim_id": "7b8bbf22-22e8-427c-9152-c991dc8bc80b",
+      "result_id": "e23dac14-05bc-48ac-ad01-d0ceb4b9a923"
+    },
+    {
+      "claim_id": "5e149de7-c9e0-49e3-856c-fffb28ece46b",
+      "result_id": "e23dac14-05bc-48ac-ad01-d0ceb4b9a923"
+    },
+    {
+      "claim_id": "a8adf453-ba00-48fd-abf5-2f3e5efb8c71",
+      "result_id": "e23dac14-05bc-48ac-ad01-d0ceb4b9a923"
+    },
+    {
+      "claim_id": "be659d17-ba08-4d86-9a43-5846c9ae6bf3",
+      "result_id": "e23dac14-05bc-48ac-ad01-d0ceb4b9a923"
+    },
+    {
+      "claim_id": "3b45b065-e3b2-4d2a-bf80-c15006412cde",
+      "result_id": "e23dac14-05bc-48ac-ad01-d0ceb4b9a923"
+    }
+  ],
+  "comparisons": []
+}

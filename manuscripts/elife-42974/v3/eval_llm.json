@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8"
+    ],
+    "result": "L5 CF and L6 CT neurons have distinct anatomical projection patterns. L5 CF neurons project to the inferior colliculus and MGBd, as well as to striatum and amygdala. L6 CT neurons project exclusively to the thalamus (MGBv and thalamic reticular nucleus) and collateralize extensively within the local cortical column, but do not project to the inferior colliculus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C8 are supported by anatomical tracing experiments using retrograde and anterograde viral labeling (Figure 1), combined with extensive citations to prior anatomical studies. The viral tracing methods are well-established and the results are consistent with previous literature. The use of Ntsr1-Cre mice to label L6 CT neurons is validated by prior work (C6-C7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "The Ntsr1-Cre transgenic mouse line labels L6 CT neurons with high specificity (97% of Ntsr1-positive neurons are L6 CT) and coverage (90% of L6 CT neurons are Ntsr1-positive).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 are supported by citation to the authors' prior work (Guo et al., 2017). While this is a methodological validation claim rather than a novel finding, it is appropriately documented and the specificity/coverage values are critical for interpreting the L6 CT results throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Antidromic phototagging with low first-spike latency jitter (<0.3 ms SD) reliably identifies direct activation of projection neurons, as validated by pharmacological blockade of synaptic transmission with NBQX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by pharmacology control experiments (Figure 2E) showing that NBQX eliminates high-jitter spikes while preserving low-jitter responses. This validates the 0.3 ms SD threshold for identifying directly activated neurons. The approach is consistent with established optogenetic identification methods cited in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "L5 CF and L6 CT projection neurons are largely distinct from parvalbumin-expressing GABAergic projection neurons, as evidenced by the low percentage of phototagged neurons with fast-spiking waveforms (4.5% for L5 CF, 9.6% for L6 CT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by quantification of spike waveform characteristics from the phototagged population. The low percentages of FS neurons among phototagged cells, combined with citations to studies on parvalbumin-expressing GABAergic projection neurons, support the inference that these populations are largely separate. However, the claim is somewhat limited by the lack of direct immunohistochemical confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "L5 CF neurons exhibit bursting spike patterns during sensory stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by analysis of interspike interval distributions (Figure 2\u2014figure supplement 1E-F) showing negative skewness indicative of bursting, consistent with in vitro studies of L5 intrinsic bursting neurons. The finding aligns with established literature on L5 pyramidal neuron firing patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "L5 CF and L6 CT neurons exhibit distinct sensory tuning properties. L5 CF neurons show broader frequency tuning, longer response latencies (~2x), and lower sparsity (less selective responses) compared to L6 CT neurons. Tuning bandwidth and sparsity are inversely correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 are supported by statistical comparisons of frequency response areas and responses to spectrotemporally modulated noise bursts (Figure 3). The Wilcoxon Rank Sum tests show significant differences between L5 CF and L6 CT neurons for bandwidth (p=0.03), latency (p<4\u00d710\u207b\u2074), and sparsity (p=0.02). The inverse correlation between bandwidth and sparsity (r=-0.3, p<2\u00d710\u207b\u2078) is also well-supported. Sample sizes are adequate (L5 CF: n=44, L6 CT: n=27 for FRA analysis).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Classification of neuron type (L5 CF vs L6 CT) based on tuning parameters (bandwidth, latency, sparsity) is more accurate than classification based on cortical layer (L5 vs L6), with significantly lower misclassification rates (23% vs 32%, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by support vector machine classification analysis (Figure 4). The cross-validated misclassification rates demonstrate that projection neuron type is a better predictor of sensory response properties than anatomical layer. However, the improvement is modest (9 percentage points), and both classifications perform well above chance (50%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "A contextual gain field (CGF) model that incorporates non-linear acoustic interactions outperforms a linear spectrotemporal receptive field (STRF) model in predicting neural responses to dynamic random chord stimuli, with superior performance in 93% of cells across all populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by statistical comparison of model predictive powers (Figure 5B) with highly significant differences (p<2\u00d710\u207b\u00b9\u00b2 for L5 CF, p<3\u00d710\u207b\u2077 for L6 CT). The CGF model's superiority indicates the importance of non-linear contextual effects in auditory cortex. The analysis appropriately accounts for trial-to-trial variability using signal and noise power estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Optogenetic activation reveals differential local circuit effects: L5 CF activation elicits weak, brief polysynaptic responses in local RS and FS neurons, while L6 CT activation drives powerful, sustained responses (~20 ms) in local neurons, despite similar peak firing rates in the directly activated L5 CF and L6 CT neurons themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by optogenetic stimulation experiments (Figure 6) with highly significant statistical differences in normalized firing rates (p<4\u00d710\u207b\u2074 for FS, p<3\u00d710\u207b\u00b2\u2075 for RS). The finding that peak firing rates in L5 CF and L6 CT neurons are similar (p=0.64) strengthens the conclusion that differences in local circuit activation reflect connectivity rather than activation strength. Sample sizes are adequate (L5 CF\u2192FS: n=96, L6 CT\u2192FS: n=63, L5 CF\u2192RS: n=501, L6 CT\u2192RS: n=296).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Functional connectivity analysis during sensory stimulation reveals that L6 CT neurons have stronger coupling with local neurons than L5 CF neurons, particularly with FS interneurons. L6 CT spikes tend to lead FS spikes (65% lead-preferring interactions), while L5 CF spikes tend to lag FS spikes, consistent with L6 CT neurons regulating cortical gain through FS interneuron networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by cross-covariance analysis of spike trains during DRC stimulation (Figure 7). Statistical comparisons show significantly stronger L6 CT-FS coupling (p<5\u00d710\u207b\u2074) and lead-lag asymmetry (p<8\u00d710\u207b\u2074). The large sample sizes (L5 CF\u2194RS: n=2353, L6 CT\u2194RS: n=981, L5 CF\u2194FS: n=448, L6 CT\u2194FS: n=209) provide robust statistical power. The findings are consistent with prior studies on L6 CT gain control mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study demonstrates a functional duality between L5 CF and L6 CT neurons: L5 CF neurons are broadcast neurons with broad, non-linear sensory integration and weak local influence, while L6 CT neurons have sparse, selective responses with strong local modulatory effects, particularly on FS interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 represent the main conclusions synthesizing multiple experimental findings. These summary claims are well-supported by the convergent evidence from anatomical tracing (C1-C8), sensory characterization (C13-C17), computational modeling (C20), optogenetic manipulation (C23-C27), and functional connectivity analysis (C28-C32). The interpretation is consistent with the data and appropriately contextualized within the broader literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "L5 CF and L6 CT neurons perform distinct computational operations on sensory signals: L5 CF neurons use dense, non-linear coding with minimal intra-columnar influence, while L6 CT neurons have sparse selectivity and strongly modulate local processing, likely imparting distinct effects on downstream targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 synthesize the study's main findings on sensory processing and connectivity. The claims are well-supported by the experimental data, though C52 (distinct effects on downstream targets) is speculative as downstream effects were not directly measured. The inference is reasonable given the demonstrated differences in sensory coding and local connectivity, but would require additional experiments to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The broad tuning of L5 CF neurons may reflect extensive convergence of intracortical inputs on their elaborate dendritic fields, and most L5 CF neurons correspond to intrinsic bursting (IB) pyramidal neurons, consistent with prior in vivo recordings showing broader frequency tuning in IB neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C60 involve mechanistic speculation about the origins of broad tuning in L5 CF neurons. While C59 is supported by the observed bursting patterns and citations to in vitro studies, and C60 is supported by citation to prior in vivo work, C58 is speculative. The proposed mechanisms (dendritic integration, thalamocortical input properties) are plausible but not directly tested in this study. Additional experiments would be needed to confirm these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The sparse tuning of L6 CT neurons may be shaped by strong interactions with local inhibitory circuits, consistent with anatomical evidence that L6 CT neurons receive more inhibitory input than L5 projection neurons. Similar sparse tuning in L6 CT neurons across visual and auditory cortex suggests a shared organizational motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C66 involve mechanistic speculation (C62-C63) supported by anatomical citations (C61, C64) and cross-modal comparisons (C65-C66). While the anatomical evidence for greater inhibitory input to L6 CT neurons is well-cited (C64), the causal link to sparse tuning (C63) is speculative. The cross-modal comparison (C65-C66) is supported by citation but represents an inference rather than direct evidence. Additional experiments manipulating inhibitory circuits would be needed to confirm the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "L6 CT neurons are positioned to modulate information both at the thalamus (via TRN) and locally (via FS interneurons), potentially providing a behaviorally-relevant gating mechanism for thalamic inputs and dynamically regulating stimulus salience according to internal states like attention and anticipation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71 involve functional interpretations and speculation about behavioral roles. While C67-C68 are supported by the anatomical and functional connectivity data from this study, C69-C71 are largely speculative, relying on citations to prior work rather than direct behavioral experiments. The proposed roles in attention and stimulus salience are plausible given the circuit properties but would require behavioral experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "L5 CF neurons integrate inputs from multiple cortical layers via their elaborate dendritic structure and broadcast dense, non-linear signals to multiple sub-cortical stations. Prior work has implicated CF neurons in sub-cortical reorganization, experience-dependent learning, and gating innate behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by the study's findings on dendritic morphology, sensory integration, and anatomical projections. Claims C74-C76 are supported by citations to prior functional studies. While the current study does not directly test these behavioral functions, the anatomical and physiological characterization provides a foundation for understanding how L5 CF neurons might mediate these previously described functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The division of labor between L5 CF and L6 CT neurons in the corticofugal pathway parallels the classical distinction between lemniscal and non-lemniscal streams in ascending sensory pathways, highlighting a unifying organizational principle in sensory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 place the study's findings in a broader theoretical context. C77 is supported by citations to established knowledge about ascending sensory pathways. C78 represents a synthesis of the study's findings with this broader framework. The parallel is conceptually appropriate given the demonstrated differences in selectivity, temporal processing, and circuit roles between L5 CF and L6 CT neurons, though the analogy is not perfect (e.g., L6 CT neurons show sparse rather than detailed encoding).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Background context on corticofugal neuron organization: CF neurons fall into intratelencephalic and sub-cortical classes with distinct laminar locations, projection patterns, and proposed functional roles. L5 CF neurons are considered broadcast neurons while L6 CT neurons are specialized for thalamocortical gain control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 provide background context from prior literature. These claims are well-supported by extensive citations and represent established knowledge in the field. C45 involves some inference about L6 CT specialization for gain control based on anatomical connectivity, but this is supported by the cited literature and the current study's findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C86"
+    ],
+    "result": "ZCWPW1 is highly co-expressed with PRDM9 during spermatogenesis and shows testis-specific expression in both mouse and human.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C86 provide converging evidence from single-cell RNA-seq correlation analysis (C1), tissue expression profiling (C2-C3), and direct statement of co-expression (C86). The data includes statistical significance (rho=0.519, p=2E-6) and protein-level validation by Western blot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "ZCWPW1 contains three functional domains (SCP1, zf-CW, PWWP) with varying degrees of conservation across species, where zf-CW and PWWP domains are highly conserved while the SCP1 domain shows weaker conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 and C18-C20 collectively establish the domain architecture through bioinformatics analysis and literature citations. The conservation analysis (C18-C20) is supported by multiple sequence alignment data showing high conservation of zf-CW and PWWP domains and moderate conservation of the SCP1 domain (30% identity with SYCP1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C60"
+    ],
+    "result": "ZCWPW1 binds preferentially to dual-modified H3K4me3/K36me3 histone peptides with high affinity (KD = 1.7 \u00b1 0.3 \u00b5M) in a 1:1 stoichiometry, showing stronger binding than to single modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C60 are supported by two independent in vitro binding assays: biotin-streptavidin pulldown (C10-C11) and isothermal titration calorimetry (C12). The ITC provides quantitative binding affinity measurements with error estimates, demonstrating dual-mark specificity with KD values >10 \u00b5M for single marks versus 1.7 \u00b5M for dual marks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C59"
+    ],
+    "result": "ZCWPW1 functions as a dual histone methylation reader specific for PRDM9-catalyzed marks, with complementary roles in meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C59 are supported by the binding data (C10-C12), domain analysis (C4-C6), and co-expression patterns (C1-C3). The inference that ZCWPW1 is a meiosis-specific reader for PRDM9 marks is well-justified by the convergence of biochemical, structural, and expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "PRDM9 and ZCWPW1 show correlated evolutionary patterns, with both genes lost in birds and crocodiles, and species retaining both genes maintaining all three catalytic tyrosines in PRDM9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C21-C23 are supported by comparative genomic analysis across vertebrate species. The striking correlation (C23) that all species with both genes maintain the three catalytic tyrosines, while only 3/29 species lacking ZCWPW1 maintain them, provides strong evidence for co-evolution. The data is based on systematic database searches and sequence analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "193 vertebrate species with ZCWPW1 orthologs were identified through database searches and BLAST analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 describe the identification of 174 species from databases and 19 additional species via BLAST, totaling 193 species. The methodology is clearly described with appropriate validation steps including motif analysis and phylogenetic tree construction to distinguish ZCWPW1 from ZCWPW2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "ZCWPW1 binds to 4,487 genomic sites that overlap extensively with meiotic DSB hotspots (89% with DMC1 sites, 58% with SPO11-oligos) and correlates positively with recombination metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by CUT&RUN sequencing data with appropriate peak calling (p<0.001) and overlap analysis with published datasets. The positive correlation with multiple independent recombination metrics (SPO11-oligo density, DMC1-SSDS, PRDM9 binding) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "ZCWPW1 shows minimal overlap and no significant enrichment at transcription start sites, transcription end sites, and CpG islands compared to control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by genomic overlap analysis showing only 5-9% of peaks at these functional sites and comparison to IgG control showing no significant enrichment. This demonstrates specificity for hotspots rather than general promoter/CGI binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "85% of ZCWPW1 peaks overlap with regions containing both H3K4me3 and H3K36me3 marks, with significantly stronger ZCWPW1 signals at dual-marked regions compared to single-marked regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by overlap analysis with published ChIP-seq data for H3K4me3 and H3K36me3 in prophase I spermatocytes. The quantitative comparison of signal strength at different modification states is consistent with the in vitro binding data (C10-C12), providing in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "ZCWPW1 shows no enrichment at the pseudo-autosomal region (PAR) of sex chromosomes, which undergoes PRDM9-independent recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by analysis of ZCWPW1 signal at the PAR region compared to control, demonstrating specificity for PRDM9-dependent hotspots. This negative control strengthens the conclusion that ZCWPW1 binding is PRDM9-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C39",
+      "C40"
+    ],
+    "result": "ZCWPW1 occupancy is determined by PRDM9 in an allele-specific manner, as demonstrated by motif analysis identifying PRDM9Dom2 and PRDM9Cast motifs in B6 and F1-hybrid mice respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C39, and C40 are supported by de novo motif discovery analysis showing exclusive identification of PRDM9 binding motifs (p=1e-261 for Dom2, p=1e-768 and 1e-60 for Cast motifs in hybrids). The allele-specific binding pattern in F1-hybrids provides strong evidence for PRDM9-dependent recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In F1-hybrid mice, ZCWPW1 binds to 8,976 sites with allele-specific distribution (60% CAST hotspots, 18% B6 hotspots) and identifies 1,383 novel hybrid-specific hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by CUT&RUN data from F1-hybrid mice with overlap analysis against published hotspot datasets. The PRDM9Cast dominance (60% vs 18%) is consistent with published literature (Baker et al., 2015), and the identification of hybrid-specific hotspots aligns with known PRDM9 binding-site erosion patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Zcwpw1 KO mice are born healthy but males show azoospermia with reduced testis mass (80 mg vs 190 mg), absence of spermatids, and arrest at pachytene-like stage with partial asynapsis (average 12/19 autosomes synapsed).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by multiple complementary approaches: Western blot confirmation of knockout, testis mass measurements, H&E histology, and SYCP3/SYCP1 immunofluorescence with quantification. The phenotypic characterization is thorough with appropriate quantification (n=127 cells counted for synapsis analysis).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Zcwpw1 KO spermatocytes show widespread accumulation of DMC1 foci with significantly increased numbers per cell, and \u03b3-H2AX accumulation on autosomes without XY sex body formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by immunofluorescence staining and quantification of DMC1 foci across different meiotic stages. The statistical significance is demonstrated (p-value shown in Figure 5F), and the absence of sex body formation indicates arrest before this stage. These findings suggest intact DSB formation but defective repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The Zcwpw1 KO phenotype (pachytene-like arrest, partial asynapsis, increased DMC1 foci) is consistent with independent reports and phenocopies Prdm9 null mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by the authors' data (C42-C49) and citations to two independent studies (Li et al., 2019a; Wells et al., 2019) reporting similar phenotypes. The comparison to Prdm9 KO is supported by literature citations (Brick et al., 2012; Hayashi et al., 2005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C62"
+    ],
+    "result": "END-seq analysis reveals that DSBs in Zcwpw1 KO mice (3,147 sites) nearly completely overlap with WT DSBs (2,098 sites) and are not repositioned to promoters, indicating ZCWPW1 is dispensable for DSB positioning but required for efficient repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 and C62 are supported by END-seq data with spike-in normalization and peak calling. The overlap analysis and comparison to Prdm9 KO (where DSBs reposition to promoters) provides strong evidence that ZCWPW1 functions downstream of DSB formation. The conclusion is well-supported by the data showing maintained DSB positioning despite repair defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C66",
+      "C67"
+    ],
+    "result": "ZCWPW1 is critical for efficient DSB repair, with END-seq profiles showing central peaks comparable to WT (unlike Dmc1 KO), suggesting repair defects occur downstream of strand invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63, C66, and C67 present a model for ZCWPW1 function based on END-seq peak profiles. While the presence of central peaks (C66) and comparison to Dmc1 KO (C67) are data-supported, the authors acknowledge uncertainty about whether ZCWPW1 acts upstream or downstream of strand invasion due to the heterogeneous cell population and partial asynapsis. The conclusion requires additional experiments to definitively establish the mechanistic step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "A proposed model suggests ZCWPW1 functions as a PRDM9-specific synapsis factor linking DNA loops to the synaptonemal complex, potentially through the SCP1 domain's homology to SYCP1's dimerization region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C71 present a speculative model based on the SCP1 domain homology (C70, 30% identity with SYCP1) and functional data. While the model is consistent with the data (asynapsis phenotype, PRDM9-dependent binding, symmetric binding importance), it remains speculative without direct evidence of SC interactions or SCP1 domain function. The authors appropriately acknowledge this as a proposed model requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Two novel methods for mapping meiotic hotspots were developed: END-seq (direct DSB sequencing from single testis) and ZCWPW1 CUT&RUN (using 300,000 cells), with ZCWPW1 occupancy correlating positively with hotspot strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by the successful application of both methods in this study. END-seq identified thousands of hotspots from single testis (C53), and ZCWPW1 CUT&RUN identified 4,487 peaks from 300,000 cells (C24). The correlation with hotspot strength (C74) is demonstrated in Figure 3\u2014figure supplement 2. Both methods show advantages over existing approaches in terms of material requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C89"
+    ],
+    "result": "The evolution of the PRDM9/ZCWPW1 dual histone writer/reader system remodeled meiotic recombination hotspot selection from a static promoter-based pattern to a flexible PRDM9-controlled pattern, decoupling hotspot selection from functional genetic elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 and C89 present an evolutionary synthesis supported by multiple lines of evidence: co-evolution patterns (C23), functional data showing both factors are required for proper meiosis (C42-C56), and comparison to ancestral systems (C76-C77, C95-C96). The inference is well-justified by the convergence of evolutionary, biochemical, and functional data, though it remains an interpretive framework rather than directly testable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "PRDM9 histone methyltransferase activity is essential for DSB formation, suggesting an unknown histone methyl reader may link PRDM9 to DSB machinery upstream of ZCWPW1, with ZCWPW2 as a possible candidate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 are speculative. While C64 is supported by literature citations (Diagouraga et al., 2018; Powers et al., 2016), the suggestion of an unknown reader and ZCWPW2 as a candidate (C65) is purely speculative without supporting data. This represents a hypothesis for future investigation rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Zcwpw1 KO females show initial fertility with age-related ovarian insufficiency, contrasting with complete infertility in Prdm9 KO females, suggesting PRDM9 has ZCWPW1-independent functions in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 are supported by citation to published work (Li et al., 2019a) for the Zcwpw1 KO female phenotype and established literature (Hayashi et al., 2005) for Prdm9 KO females. The inference of ZCWPW1-independent PRDM9 function (C123) is reasonable based on the phenotypic differences, though it requires further investigation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In a recurrent network model of interacting excitatory and inhibitory neuronal populations, changes in synaptic E:I ratio are reflected by changes in 1/f slope and Hurst exponent (H) in simulated LFP data. Specifically, H decreases when E:I ratio increases (by decreasing g below baseline), but only in the excitation-dominated regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C48-C54 collectively describe the recurrent network model architecture and demonstrate through computational simulations that H and 1/f slope track with E:I ratio changes. The model includes biologically plausible features (5000 neurons, recurrent connections, validated LFP computation methods) and shows clear relationships between g (inhibitory/excitatory conductance ratio) and spectral properties. The results are internally consistent and supported by figures showing the dose-response relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C55",
+      "C56",
+      "C93",
+      "C94"
+    ],
+    "result": "Simulated BOLD signal from the recurrent model shows that H in BOLD decreases as E:I ratio increases, mirroring the relationship observed in LFP data. The BOLD simulation method captures key empirical relationships between LFP power and BOLD, particularly the strong gamma-band correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 and C55-C56 demonstrate that the LFP-to-BOLD transformation preserves the E:I-H relationship and recapitulates known empirical features (gamma-band dominance, frequency-dependent correlations). The method is described in detail (C93-C94) and validated against prior empirical observations (C25-C28). However, C56 acknowledges a limitation regarding low-frequency negative correlations, which is appropriately transparent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "In silico simulations of DREADD manipulations predict that lowering voltage threshold (simulating hM3Dq excitation) decreases H, while decreasing resting potential (simulating hM4Di silencing) produces minimal effects on H.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe computational predictions for specific experimental manipulations. The results show clear directional effects for excitation enhancement (decreased H) and minimal effects for pan-neuronal silencing, providing testable predictions. These are supported by supplementary figures showing 1/f slope changes across parameter ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C57",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Chemogenetic enhancement of excitation (hM3Dq DREADD) in mouse prefrontal cortex causes a significant decrease in H during the treatment phase, confirming in silico predictions. This effect is specific to excitation enhancement, as evidenced by appropriate baseline controls and temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 present in vivo validation with appropriate statistical analysis (3-way interactions, phase-specific effects) and controls (baseline, SHAM conditions). The temporal dynamics (no baseline effect, transition interaction, treatment main effect) are consistent with drug pharmacokinetics. Supporting claims C86-C91 provide methodological details and convergent evidence from fALFF analysis. The results directly confirm the in silico predictions from C30.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C87"
+    ],
+    "result": "Chemogenetic silencing of both excitatory and inhibitory neurons (hM4Di DREADD) shows no strong effects on H across experimental phases, serving as a negative control that strengthens the interpretation that decreased H specifically reflects increased excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C87 demonstrate appropriate negative control results with statistical analysis showing no main effects or interactions in individual phases, despite a 3-way interaction. This is consistent with in silico predictions (C31) and strengthens the specificity of the excitation findings. The fALFF data (C87) provides convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C58",
+      "C59",
+      "C96",
+      "C97"
+    ],
+    "result": "Autism-associated genes affecting excitatory neurons are significantly enriched for genes differentially expressed by dihydrotestosterone (DHT) (OR=1.67, p=0.03), while genes affecting inhibitory neurons or other cell types show no such enrichment. This suggests sex-specific androgen effects on excitatory neuron biology may contribute to E:I imbalance in autism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C58-C59 present genomic enrichment analysis with appropriate statistical testing (odds ratios, hypergeometric p-values) and proper background correction (C97). The cell-type specificity (excitatory but not inhibitory neurons) strengthens the interpretation. The methodology is clearly described (C96) and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "DHT-sensitive autism-associated excitatory neuron genes are highly expressed in MPFC, PCC, insula, and intraparietal sulcus in the adult human brain, with substantial overlap (59-85%) with brain regions showing sex-by-diagnosis interactions in H.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C81-C83 demonstrate spatial convergence between genomic and neuroimaging findings. The gene expression analysis uses established methods (Allen Brain Atlas, one-sample t-test, FDR correction) and the overlap analysis provides quantitative estimates. This convergence strengthens the mechanistic interpretation linking androgen-sensitive genes to regional E:I effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C5",
+      "C60",
+      "C64",
+      "C65",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C79"
+    ],
+    "result": "In human rsfMRI data, ventromedial prefrontal cortex (vMPFC area p32) shows a significant sex-by-diagnosis interaction in H (F=15.13, p=0.0001, partial \u03b7\u00b2=0.12), driven by reduced H in autistic males (Cohen's d=1.30) but not females (d=-0.27). Groups were well-matched on age, IQ, and head motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 present the primary human neuroimaging finding with appropriate statistics (FDR correction, effect sizes) and directional consistency with predictions. Claims C70-C75 and C79 demonstrate adequate control for confounds (age, IQ, motion) and appropriate multiple comparison correction. The large effect size in males and specificity to one region after correction suggests a robust, localized effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C80"
+    ],
+    "result": "Multivariate PLS analysis identified a distributed neural system including default mode network areas (MPFC, PCC) and other regions (insula, intraparietal sulcus) expressing the sex-by-diagnosis interaction (d=2.04, p=0.036). Additionally, 61% of brain regions showed male>female sex differences in H.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C80 extend the mass-univariate findings using appropriate multivariate methods with permutation testing and bootstrap resampling. The PLS results are consistent with the univariate findings and the genomic expression patterns. The sex difference finding (C80) provides normative context, though the manuscript notes that sex-specific norms need better establishment in larger datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C6",
+      "C61",
+      "C67",
+      "C84",
+      "C85"
+    ],
+    "result": "In autistic females, higher vMPFC H is strongly associated with increased camouflaging ability (r=0.60, p=0.001), while no such relationship exists in autistic males (r=-0.10, p=0.63). The correlation strength significantly differs between sexes (z=2.58, p=0.009), suggesting that more intact E:I balance in vMPFC may facilitate compensatory behaviors in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 present a sex-specific brain-behavior relationship with appropriate statistical testing (correlations, Fisher's z-test). The camouflaging measure is operationalized consistently with prior work (C84-C85) using validated methods (PCA of multiple indices). The finding converges with prior task-fMRI work on vMPFC self-representation and provides a functional interpretation of the sex-specific H differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "ADOS social-communication severity is negatively correlated with vMPFC H in autistic females (r=-0.51, p=0.008) but not males (r=-0.04, p=0.83), though the difference between correlations does not reach significance (z=1.70, p=0.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C47 present an exploratory clinical correlation that shows a pattern consistent with the camouflaging findings but fails to reach significance for the between-group comparison. While the within-female correlation is significant, the lack of significant sex difference limits the strength of inference. This appears to be an exploratory analysis rather than a primary hypothesis-driven test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C63",
+      "C68"
+    ],
+    "result": "The Hurst exponent (H) estimated from fMRI BOLD signal can serve as a biomarker for underlying synaptic E:I ratio, extending the relevance of E:I imbalance theory beyond rare genetic variants to a larger portion of the autism population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C63, and C68 represent the overarching conclusions synthesizing the in silico, in vivo, and human findings. The multi-level validation (computational modeling, mouse experiments, human neuroimaging) provides strong convergent evidence. However, the biomarker claim should be interpreted cautiously as it relies on indirect inference through multiple transformation steps (synaptic activity\u2192LFP\u2192BOLD\u2192H) and has only been validated for one direction of manipulation (increased excitation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes theoretical and empirical background regarding E:I imbalance in autism, sex differences in autism prevalence, the influence of sex-related mechanisms on E:I balance, spectral properties of neural signals, and prior work on H in autism and camouflaging in autistic females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 represent background knowledge and prior work that is appropriately cited and provides context for the current study. These claims are supported by citations to established literature and represent accurate characterizations of the field. They establish the rationale for investigating sex-specific E:I imbalance using spectral biomarkers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C73",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The human participants were cis-gender, and the fMRI preprocessing used wavelet denoising to control motion artifacts. The Hurst exponent was estimated using a fractionally integrated process (FIP) model with discrete wavelet transform and maximum likelihood estimation, which offers advantages over prior fractional Gaussian noise models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C73-C78 describe important methodological details. The participant characterization (C69) is appropriate for the study design. The preprocessing method (C73) is validated by prior work. The H estimation method (C76-C78) is clearly described with appropriate justification for methodological choices. These are standard methodological details that support the validity of the analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C66"
+    ],
+    "result": "The authors speculate that intact E:I balance in vMPFC of females may represent protective factors buffering autism risk, and that male-specific E:I dysregulation may be linked to early developmental androgen effects on excitatory neuron gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62 and C66 represent speculative interpretations about developmental mechanisms and protective factors. While these are plausible hypotheses consistent with the data and cited literature, they are explicitly framed as speculation and future directions rather than demonstrated findings. The developmental timing and causal mechanisms remain to be tested.",
+    "result_type": "MINOR"
+  }
+]

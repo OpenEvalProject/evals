@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study used 21 SAR11 isolate genomes to competitively recruit short reads from 103 metagenomes (93 from TARA Oceans, 10 from Ocean Sampling Day), representing surface and deep chlorophyll maximum samples from multiple oceans. The isolates collectively recruited 1,029,716,339 reads (3.3% of the dataset).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 describe the study design and basic recruitment statistics. These are straightforward methodological descriptions with quantitative results that are internally consistent and well-documented in supplementary files.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Pangenomic analysis of 21 SAR11 genomes revealed 29,719 genes in 6,175 gene clusters. Gene cluster-based clustering matched phylogenetic clades, with clade Ia dividing into high-latitude (Ia.1) and low-latitude (Ia.3) subclades. Within Ia.3, six subclades with cultured representatives were identified based on geographical co-occurrence, phylogenomics, and pangenomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C33 describe the pangenomic analysis and subclade refinement. The methodology is sound, using established approaches (BLAST, MCL clustering). The identification of six subclades within Ia.3 is based on multiple lines of evidence (gANI, 16S rRNA identity, geographic distribution), though the authors acknowledge these are tentative classifications. The agreement between phylogeny, pangenome, and ecology strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Subclade 1a.3.V, represented by isolate HIMB83, is the most abundant SAR11 subclade in the dataset, recruiting 390.9 million reads (1.18% of all data, roughly twice that of the most abundant Prochlorococcus). HIMB83 recruited reads from locations distant from its isolation site (Hawaii), and has low gANI (82.6%) to the most similar genome in the dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 establish the abundance and widespread distribution of subclade 1a.3.V. The quantitative recruitment data is clear and the comparison to Prochlorococcus provides useful context. The low gANI to the closest genome (82.6%) is notable and supports the distinctiveness of this subclade. The geographic distribution independent of isolation location is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study identified 799 core 1a.3.V genes present in all 74 metagenomes within the main ecological niche, recruiting on average 1.25% of reads. Filtered genes included hypervariable regions common in surface ocean microbes. Core 1a.3.V genes showed high overlap (>80%) with SAR11 pangenome core genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 describe the identification of core genes using conservative filtering criteria (presence in all 74 metagenomes, coverage within 5-fold of mean). The methodology is appropriate for defining environmentally-relevant core genes. The overlap with the pangenomic core genes provides validation. The filtering of hypervariable regions is justified by citations to previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Percent identity of recruited reads to core 1a.3.V genes ranged from 88-100%, considerably more diverse than similar studies. Similar high diversity was observed for other SAR11 genomes. This confirms that the 95% ANIr cutoff for population boundaries does not apply to SAR11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 document the high sequence diversity within SAR11 populations. The 88-100% identity range is well-supported by Figure 2, and the comparison to other studies (with citations) provides context. The extension to other SAR11 genomes (C50, Figure 2\u2014figure supplement 1) strengthens the generalizability. The conclusion about ANIr cutoffs (C51) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study identified 1,074,096 SAAVs (>10% divergence from consensus) among core 1a.3.V genes. After filtering for coverage (\u226520X), 738,324 SAAVs in 37,416 codon positions (14.8% of total) were retained. On average 22.5% of SNVs co-occurred with other SNVs in the same codon. Invariant proteins were rare (2,548 across 113 genes, 4.3% of possibilities), and all genes except one contained at least one SAAV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 describe the SAAV identification and filtering. The methodology for calling SAAVs (using full codon coverage) is more rigorous than single-nucleotide approaches and is justified by the high co-occurrence of SNVs within codons (C55). The filtering criteria (20X coverage) is reasonable for downstream analyses. The rarity of invariant proteins and near-universal presence of SAAVs indicates extensive variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Amino acid composition analysis revealed that negatively charged and uncharged polar amino acids were enriched in SAAVs, while most hydrophobic amino acids (except isoleucine and valine) were underrepresented. This pattern is explained by stronger purifying selection on hydrophobic amino acids in buried protein positions critical for stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 present a compositional analysis linking amino acid properties to SAAV frequencies. The enrichment/depletion patterns are clearly shown in Figure 3A. The mechanistic explanation (C67-C68) invoking purifying selection on buried hydrophobic residues is well-supported by protein biochemistry principles and appropriate citations. The correlation with solvent accessibility (Figure 3\u2014figure supplement 1) provides additional support. The exceptions (isoleucine/valine) are noted but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Analysis of 738,324 SAAVs revealed 182 of 210 possible amino acid substitution types (AASTs) with a highly skewed frequency distribution. The two most frequent AASTs comprised 20% of SAAVs. The distribution is incompatible with strictly random mutation but consistent with neutral/nearly-neutral evolution including purifying selection. AAST frequencies were notably constrained across geographies (e.g., 3.0% relative standard deviation for aspartic/glutamic acid).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 describe AAST frequency distributions and their evolutionary interpretation. The skewed distribution is well-documented (Figure 3B) and the comparison to neutral models (light gray shaded area in Figure 3B) is appropriate. The consistency across geographies (C76-C77) is quantitatively demonstrated and supports the purifying selection hypothesis. The interpretation as compatible with neutral/nearly-neutral evolution (C74-C75) is reasonable given the cited theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "Despite overall consistency, subtle divergence in amino acid exchangeabilities correlates with temperature. For example, aspartic/glutamic acid frequencies negatively correlate with temperature (p=2.7\u00d710\u207b\u2076), while isoleucine/valine show no correlation (p=0.418). This suggests a fingerprint of adaptive/divergent processes caused by temperature and/or co-variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 identify temperature-correlated deviations from the overall neutral pattern. The statistical evidence is provided (specific p-values), and the AAST-specific nature of correlations is demonstrated. The inference of adaptive processes (C82) is cautious ('appears to be') and appropriately qualified. However, the authors acknowledge they cannot attribute these patterns to specific amino acid properties without structural information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "Template-based structure modeling was performed for 436 core 1a.3.V genes with PDB matches. Analysis revealed that 91.7% of variant positions varied in \u226510 metagenomes, and 21.7% varied in all 74 metagenomes, indicating widespread conservation of variant positions across geographies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe structural modeling and variant position distribution. The use of RaptorX for structure prediction is appropriate, and the requirement for significant PDB matches (\u226530% similarity) is reasonable. The quantitative results about variant position distribution are clear and support the conclusion that positions that vary in one location tend to vary in others.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Amino acid allele frequencies at 4,592 of 37,416 variant positions (12.3%) significantly correlated with temperature (FDR 5%). Given that distant oceans share similar temperatures, it is statistically implausible these correlations arose from neutral evolution, indicating environmentally-mediated selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 identify temperature-correlated allele frequency trajectories and interpret them as evidence of selection. The statistical approach (linear regression with Benjamini-Hochberg correction) is appropriate. The argument against neutral evolution (C88) based on geographic distribution of similar temperatures is logical, though genetic hitchhiking (acknowledged by authors) complicates interpretation. The conclusion of environmentally-mediated selection (C89) is reasonable but appropriately qualified as 'most plausible.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Analysis of a glycine betaine ABC transporter permease revealed that temperature-correlated variant positions were predominantly periplasmic, while uncorrelated positions were commonly transmembrane (trinomial test p=0.034). For alanine/serine SAAVs, alanine frequencies positively correlated with temperature in 103 of 158 positions (binomial test p=0.004), indicating temperature-dependent, site-independent amino acid substitution preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 present a detailed case study of a biologically relevant gene. The focus on glycine betaine transporters is justified by their known importance in SAR11 biology (C90, with citation). The membrane topology analysis (C91-C92) uses appropriate statistical tests and shows a significant enrichment of temperature-correlated positions in periplasmic regions, consistent with cited theory about adaptive evolution (C93). The directional analysis (C94-C95) provides strong evidence for temperature-dependent substitution preferences with appropriate statistical correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Deep Learning clustering of 57,277 codon position-specific AASTs partitioned 74 metagenomes into two main groups corresponding to Western (warm) and Eastern (cold) boundary currents. The first group (41 metagenomes) matched cold currents, the second (33 metagenomes) matched warm currents. Deep chlorophyll maximum samples mirrored surface trends. This revealed a strong global signal at the amino acid level for 1a.3.V.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 describe the major biogeographic partitioning based on SAAVs. The Deep Learning approach (ACOL) is novel and appropriate for high-dimensional data. The two-group partition aligning with ocean current temperatures is clearly shown in Figure 4A-B. The consistency between surface and deep chlorophyll maximum samples (C101) strengthens the finding. The biological interpretation linking to ocean currents is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C105",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Further subdivision revealed six proteotypes within 1a.3.V. Latitude and temperature were the most significant predictors (ANOVA p=8.56\u00d710\u207b\u00b9\u00b3 and 3.57\u00d710\u207b\u2077). Most proteotypes linked distant geographical regions (e.g., proteotype D grouped samples from both sides of Panama Canal with Red Sea and northern Indian Ocean). Proteotype A was an exception, containing only Pacific Ocean samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C105, C107-C109 describe finer-scale proteotype structure. The choice of six clusters is justified by elbow analysis (Figure 4\u2014figure supplement 2). The ANOVA results clearly identify temperature and latitude as key predictors. The geographic patterns (C107-C109) are striking and well-illustrated in Figure 4B. The connection of distant regions with similar environmental conditions is a key finding, though the authors acknowledge some differences between Deep Learning and fixation index approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Deep Learning showed higher significance for temperature in explaining clustering compared to fixation index, better capturing the association between temperature and genomic heterogeneity. The connection between distant regions through SAAVs suggests adaptive processes maintain heterogeneity. SAAVs are structured by environmental conditions rather than water mass dispersal, indicating environmentally-mediated selection is a strong determinant of SAR11 evolution and biogeography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 compare methods and draw broad conclusions. The comparison between Deep Learning and fixation index (C110, Figure 4\u2014figure supplement 4) is appropriate and shows Deep Learning performs better for this dataset. The inference of adaptive processes (C111) is supported by the geographic patterns but appropriately qualified as 'suggests a likely role.' The conclusion about environmental structuring vs. dispersal (C112) is well-supported by the data showing distant regions with similar conditions clustering together. The overall conclusion (C113) is a reasonable synthesis of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Integrating all analyses, the authors estimate that purifying selection maintains 85% of codon positions as invariant. Of the 15% variable positions, approximately 12% (4,592/37,416) show temperature-correlated allele frequencies suggesting adaptive processes, while 88% reflect neutral processes. Overall, adaptive evolution on core genes is estimated to affect about 2% of all codon positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C114-C117 present quantitative estimates of the relative contributions of different evolutionary processes. While the calculations are mathematically straightforward (4,592/252,333 \u2248 2%), the authors themselves acknowledge 'significant limitations' including genetic hitchhiking, incomplete environmental data, and computational constraints. The estimates are explicitly presented as speculation (C114 uses 'speculate'). The conclusion about purifying selection governing non-synonymous variation (C2) is well-supported, but the precise quantitative breakdown should be viewed as approximate given the acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C5"
+    ],
+    "result": "At a fine evolutionary scale within Ia.3.V, significantly more protein variants were observed in cold currents and more invariant proteins in warm currents. These findings are consistent with studies of other marine organisms and suggest environmentally-mediated selection plays a critical role in cosmopolitan microbial populations, lending credence to 'everything is everywhere but the environment selects' even at fine resolutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C120-C122 present the study's main conclusions. The observation of differential diversity between current types (C120) is supported by the data in Figure 4B. The comparison to diatom studies (C121) provides broader context. The invocation of the Baas-Becking principle (C122, C5) is appropriate given the evidence that environmental conditions rather than geographic proximity structure variation. However, the authors appropriately note the complexity of identifying specific environmental variables and the need for experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C44",
+      "C67",
+      "C90",
+      "C93",
+      "C104",
+      "C118",
+      "C119"
+    ],
+    "result": "The manuscript provides extensive background on SAR11 biology, evolution, population genetics challenges, and relevant prior work on microbial diversity, protein structure, and ocean circulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C14, C44, C67, C90, C93, C104, C118-C119 are background statements supported by appropriate citations to prior literature. These establish context for the study and are not primary findings. The citations appear appropriate and the characterizations of prior work are reasonable.",
+    "result_type": "MINOR"
+  }
+]

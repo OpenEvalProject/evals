@@ -1,0 +1,2265 @@
+{
+  "submission": {
+    "id": "d91da521-3f92-4039-9b55-4bb2afa5045e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:39:05.248444Z",
+    "updated_at": "2025-12-02T21:39:05.248444Z"
+  },
+  "content": [
+    {
+      "id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "submission_id": "d91da521-3f92-4039-9b55-4bb2afa5045e",
+      "content_type": "manuscript",
+      "content_text": "# COVID-19 research risks ignoring important host genes due to pre-established research patterns\n\n## Authors\n\n- Thomas Stoeger<sup>1</sup> ([ORCID: 0000-0002-5540-4278](https://orcid.org/0000-0002-5540-4278)) \u2020\n- Lu\u00eds A Nunes Amaral<sup>1</sup> ([ORCID: 0000-0002-3762-789X](https://orcid.org/0000-0002-3762-789X)) \u2020\n\n### Affiliations\n\n1. Successful Clinical Response in Pneumonia Therapy (SCRIPT) Systems Biology Center, Northwestern University Evanston United States\n2. Department of Chemical and Biological Engineering, Northwestern University Evanston United States\n3. Center for Genetic Medicine, Northwestern University School of Medicine Chicago United States\n4. Northwestern Institute on Complex Systems (NICO), Northwestern University Evanston United States\n5. Department of Molecular Biosciences, Northwestern University Evanston United States\n6. Department of Physics and Astronomy, Northwestern University Evanston United States\n7. Department of Medicine, Northwestern University School of Medicine Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt is known that research into human genes is heavily skewed towards genes that have been widely studied for decades, including many genes that were being studied before the productive phase of the Human Genome Project. This means that the genes most frequently investigated by the research community tend to be only marginally more important to human physiology and disease than a random selection of genes. Based on an analysis of 10,395 research publications about SARS-CoV-2 that mention at least one human gene, we report here that the COVID-19 literature up to mid-October 2020 follows a similar pattern. This means that a large number of host genes that have been implicated in SARS-CoV-2 infection by four genome-wide studies remain unstudied. While quantifying the consequences of this neglect is not possible, they could be significant.\n\n## Introduction\n\nShortly after SARS-CoV-2, the coronavirus that causes COVID-19, had emerged as a global threat to human health in January 2020, researchers had identified the host proteins required for viral entry into cells (Hoffmann et al., 2020; Monteil et al., 2020; Wrapp et al., 2020), repurposed drugs for treating COVID-19 patients (Grein et al., 2020; Recovery Collaborative Group, 2020), and initiated vaccine development (Folegatti et al., 2020; Jackson et al., 2020). A common feature of these advances was that they drew upon previous lines of research. A major question, however, is whether research into COVID-19 is pursuing all important host genes implicated in COVID-19.\n\nTo answer this question we used LitCOVID, a literature hub curated by the National Library of Medicine that tracks publications on COVID-19 (Chen et al., 2020). LitCOVID tags genes within the publicly accessible text of individual publications through PubTator (Wei et al., 2019), which first applies an ensemble of automated approaches to tag genes, and then allows for a revision of these tags through biocurators. We consider genes tagged within the title, abstract or results sections of individual publications, and use MEDLINE to exclude reviews and other non-research publications (see Methods). This yields 10,395 research publications featuring 3733 human protein-coding genes that have been tagged at least once. This enables us to ask whether the choices by scientists to investigate these genes can be understood in terms of current biological knowledge on COVID-19.\n\n## Results\n\nThe most prominently tagged genes up to this point are: Angiotensin-converting enzyme 2, which serves as receptor for SARS-CoV-2 to enter cells (Hoffmann et al., 2020); C-reactive protein, a serum marker for inflammation (Sproston and Ashworth, 2018); and Interleukin 6, a mediator of systemic inflammatory responses (Kang et al., 2019). They account for 10.8%, 9.7%, and 4.5% of the total research on human protein-coding genes within the COVID-19 literature, respectively (see Methods). Gene Ontology Enrichment analysis of the human protein-coding genes tagged in the COVID-19 literature finds them enriched for annotations on immune response (false-discovery rate\u00a0<10\u221266), inflammatory response (false-discovery rate\u00a0<10\u221265), and defense response to virus (false-discovery rate\u00a0<10\u221231) (Supplementary file 1).\u00a0These two observations would thus suggest that the choice of host genes tagged in the COVID-19 literature is biologically grounded and in accord with current knowledge about respiratory viruses.\n\n### Most host genes identified by genome-wide studies have not been pursued\n\nGenome-wide datasets provide another window on SARS-CoV-2 infection. As genome-wide approaches circumvent research patterns that may have been pre-established within the scientific literature (Haynes et al., 2018; Nelson et al., 2015; Stoeger et al., 2018), they might identify additional genes implicated in COVID-19. RNA-sequencing (RNA-seq) was used recently to identify 1726 host genes that change the expression of their transcripts in the lungs of COVID-19 patients at an adjusted p-value<0.05 (Blanco-Melo et al., 2020). Affinity-purification mass spectrometry (Aff-MS) was used to identify 293 host proteins following the pulldown of exogenously expressed SARS-CoV-2 proteins (Gordon et al., 2020). Using genome-wide association studies (GWAS), the Host Genetics Initiative identified 52 genes through their association at a P-value of 10\u22125 or lower in one of three comparisons: COVID-19 vs lab or self-reported negative; hospitalized COVID-19 patients vs population; or very severe respiratory COVID-19 vs population (COVID-19 Host Genetics Initiative, 2020a; Ellinghaus et al., 2020). 15 genes were identified in two comparisons and one gene, Leucine zipper transcription factor-like protein 1 (LZTFL1), was\u00a0identified\u00a0in all three comparisons (Supplementary file 2). Using a pooled CRISPR screen to affect SARS-CoV-2 induced cell death in African green monkey cells, Wei et al. identified 41 genes, which we mapped to their human homologs using BioMart (Wei et al., 2020; see Methods). 48 genes are identified in two of the four different genome-wide datasets (Supplementary file 3), but no gene is identified in more than two.\n\nHowever, an analysis of the COVID-19 literature reveals that most (56%\u201371%) of the genes identified in these four datasets have not yet been tagged in the COVID-19 literature (Figure 1A). Thus, the genes identified by the four genome-wide datasets are 10\u201325% more likely to have been tagged than a randomly chosen gene because we also observe that 19% of all human protein-coding genes have been tagged at least once in the COVID-19 literature. Similarly, the fraction of tagged genes only increases by 0\u20137% if we include preprints (Figure 1\u2014figure supplement 1). We conclude that many genes identified by genome-wide datasets on COVID-19 have not been investigated yet in more detail in the context of COVID-19.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61981/elife-61981-fig1-v1.jpg)\n\n**Figure 1.:** (A) Share of identified genes, which are ignored (never tagged, blue) or tagged (at least once) within the COVID-19 literature. (B) Share of tagged genes identified by a single (orange) or multiple (maroon) genome-wide datasets. P-values are calculated via Fisher\u2019s exact test. n is the number of genes. (C) Share of tagged genes identified by a single (orange) or multiple (maroon) GWAS comparisons. P-values are calculated via Fisher\u2019s exact test. n is the number of genes. (D) Non-COVID-19 publications measured for any human protein-coding gene (ocher, any) and those occurring in the COVID-19 literature (ocher, COV19) and genes identified in A (colors as in A). Notches indicate 95% confidence interval of the median. P-values are calculated via Mann-Whitney U test. Exceeded percentiles indicates percentiles of all genes exceeded by the median gene of the genes in an individual boxplot. n.c. marks non-computable P-values that approximate 0. (E) As D, but for year of initial publication on the gene. Dashed lines indicate limit of visualized values. Some genes had their first publication before or afterwards.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61981/elife-61981-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Share of identified genes, which are ignored (never tagged, blue) or tagged at least once (red) within the COVID-19 literature after additionally including genes occurring in abstracts of preprints.\n\nAt the same time, we observe that genes, which have been identified by multiple of the four distinct genome-wide datasets (Figure 1B), or multiple GWAS comparisons (Figure 1C), are more likely to have been tagged in the COVID-19 literature. This, reassuringly, demonstrates that research into COVID-19 host genes enriches for host genes identified by multiple different lines of support \u2013 particularly if there exists support from human genome-wide association studies.\n\nYet, overall, genes identified by multiple genome-wide datasets remain only a minority of all identified genes (2%), and many of them are still ignored in the COVID-19 literature (52%) (Supplementary file 2), suggesting that research into SARS-CoV-2 host genes might be missing important pieces of the puzzle.\n\n### Tagged host genes follow pre-established research patterns\n\nA possible explanation for the relative lack of interest in the additional genes implicated in SARS-CoV-2 infection by these genome-wide datasets is that research on COVID-19 is constrained by pre-established research patterns (Chu and Evans, 2018). Briefly, we know that knowledge on human genes is heavily skewed toward a subset of genes (Gans et al., 2008; Gillis and Pavlidis, 2013; Hoffmann and Valencia, 2003; Oprea et al., 2018; Su and Hogenesch, 2007) that were being investigated prior to the Human Genome Project (Edwards et al., 2011; Grueneberg et al., 2008; Stoeger et al., 2018). As a result, if assessing their importance through genetic loss-of-function intolerance or findings of GWAS (Haynes et al., 2018; Stoeger et al., 2018), the most frequently investigated protein-coding genes tend to be only marginally more important to human physiology and disease than a random selection of genes.\n\nTo test the hypothesis that COVID-19 research is constrained by patterns similar to those seen in non-COVID-19 research, we take advantage of the ability of gene2pubmed (a service provided by the National Center for Biotechnology Information) to link human protein-coding genes to individual publications, and compare 465,770 non-COVID-19 papers published until December 2015 with 10,395 COVID-19 research publications indexed by LitCOVID until October 16th, 2020. For the non-COVID-19 research we exclude publications that contain any viral gene (irrespective of whether the virus in question is a coronavirus) and publications tagging 100 or more genes.\n\nWe find that genes that are tagged in the COVID-19 literature are also frequently investigated in the non-COVID-19 literature. To assess how frequently individual genes have been investigated in the non-COVID-19 literature relative to other genes, we rank all genes according to the number of publications in the non-COVID-19 literature. The median rank of genes tagged in the COVID-19 literature exceeds the rank of 80% of human protein-coding genes (Figure 1D). This demonstrates that the majority of protein-coding human genes tagged in the COVID-19 literature was already heavily investigated in the context of research unrelated to COVID-19.\n\nNext we return to our earlier observation on the majority of the implicated host genes reported by the four different genome-wide datasets being ignored within the COVID-19 literature. As anticipated, we observe that for each of the four distinct datasets investigated, ignored genes also occur less in this non-COVID-19 literature (Figure 1D). When we compare the number of publications on implicated but ignored host genes to the number of publications on any protein-coding gene encoded in the human genome, this difference is modest, and only reaches statistical significance for RNA-seq (RNA-Seq: p<10\u22122; Interactomics: p=0.20; GWAS: p=0.93; CRISPR: p=0.31), where ignored genes had occurred slightly more in the non-COVID-19 literature (median percentile: 52). In contrast, implicated and tagged host genes have occurred significantly more frequently in the non-COVID-19 literature (RNA-Seq: p<10\u221298; Interactomics: p<10\u221218; GWAS: p<10\u22126; CRISPR: p<10\u22126). We conclude that implicated host genes that are ignored in the COVID-19 literature have in the past been studied as much as randomly chosen human protein-coding genes, whereas implicated host genes that are tagged in the COVID-19 literature have in the past already been investigated much more frequently than randomly chosen human protein-coding genes.\n\nBefore the COVID-19 pandemic it had been shown that the literature is skewed toward a subset of genes that were being investigated prior to the productive phase of the Human Genome Project. These features include the fraction of organs with detectable transcript expression, the length of the genes, the hydrophobicity of the coded proteins, their loss-of-function insensitivity, and studies on orthologous genes in model organisms (Stoeger et al., 2018). We decided to explore if the genes tagged in the COVID-19 literature had been studied before the pandemic, and found that they had occurred earlier (Figure 1E), with many also first being studied before the productive phase of the Human Genome Project (NHGRI, 2003). Similarly, the host genes identified by the four genome-wide datasets that are ignored in the COVID-19 literature first appeared in the non-COVID-19 literature after the host genes that are tagged in the COVID-19 literature (Figure 1E).\n\n### Trends over time\n\nThe COVID-19 pandemic has ravaged for less than a year, which is a short period of time compared to most research projects. Thus, we might not yet be observing research addressing poorly-studied implicated host genes because not sufficient time has passed for research to catch up to the new information.\n\nTo anticipate the near future, we follow the occurrence of genes in the COVID-19 literature over time. Based on our insight that ignored host genes have not been studied more than other genes in the non-COVID-19 literature (Figure 1D), we separate genes into two classes: genes that are among the 50% top-studied human protein-coding genes in the non-COVID-19 literature, and genes that are among the 50% least-studied human protein-coding genes. The second class holds 35% of the genes identified by RNA-seq, 33% of the genes identified by Aff-MS, 29% of the genes identified by GWAS, and 24% of the genes identified by CRISPR. If research is catching up to the new knowledge, we would expect to see the fraction of the COVID-19 literature addressing the 50% least-studied human protein-coding genes to increase over time.\n\nWhen focusing on the genes that are among the 50% top-studied human protein-coding genes, we observe their occurrence in the COVID-19 literature to increase steadily. Extrapolating from the observed trends, we anticipate that it will take around one year till nearly all genes of this class will have been tagged at least once within the COVID-19 literature (Figure 2A). When focusing on the genes that are among the 50% least-studied human protein-coding genes, we too observe their occurrence in the COVID-19 literature to increase steadily over time (Figure 2B). As for each of the four genome-wide datasets the increase is, however, slower than for the 50% most studied protein-coding genes, we project that multiple years could pass until each gene of the 50% least-studied human protein-coding genes will have been tagged at least once within the COVID-19 literature.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61981/elife-61981-fig2-v1.jpg)\n\n**Figure 2.:** Percentage of genes with indicated levels of support by the four genome-wide studies which have been tagged at least once in the COVID-19 literature. (A) Analysis restricted to the 50% of genes with highest number of publications in non-COVID-19 literature. (B) Analysis restricted to the 50% of genes with the lowest number of publications in the non-COVID-19 literature. (C) Cumulative share of literature on human protein-coding genes tagged in the COVID-19 literature. Top 20% indicates the 20% of genes that occur the most in the non-COVID-19 literature. Gene rank refers to the order of human protein-coding genes. The gene with the most publication equivalents would be have rank 1. Yellow area indicates share of literature accounted for by the top 20% genes. (D) Share of COVID-19 literature accounted for by the 20% of genes that had occurred the most in the COVID-19 literature by a given date. (E) Number of distinct human protein coding genes that have been tagged in the literature by a given date. (F) Share of COVID-19 literature accounted for by first 100 genes to be tagged in the COVID-19 literature by a given date.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61981/elife-61981-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Gini Coefficient within COVID-19 literature until indicated day (green dots). (B) As Figure 2D but considering individual months (ochre dots). (C) As Figure 2F but considering individual months (purple dots). Note that September is the last month shown as October had been indexed incompletely within the most recent release of the database providing publication dates of for the COVID-19 literature.\n\nPursuing this observation further, we turn to the entire COVID-19 literature. Notably,\u00a083% of all human protein-coding genes tagged in the COVID-19 literature have not been identified by any of the four genome-wide datasets. Further, the different genome-wide datasets together only account for 26% of the COVID-19 literature (RNA-seq: 11.7%, Aff-MS: 2.4%, GWAS: 0.5%, CRISPR: 11.1%) (see Methods).\n\nWe ask whether the COVID-19 literature might become dominated by a few genes that are tagged more commonly than other genes that are also tagged in the COVID-19 literature. If we consider the current literature, we do indeed observe support for our hypothesis that the COVID-19 literature is becoming dominated by a few genes as currently the 20% top-tagged human protein-coding genes (747 of 3,733) in the COVID-19 literature account for 90% of the literature (Figure 2C). This share exceeds the 80% anticipated for scientific processes subjected to anthropogenic biases (Jia et al., 2019). We conclude that a surprisingly small fraction of genes dominates the COVID-19 literature.\n\nFinally, we inspect whether the extent to which the COVID-19 literature tags each tagged gene is becoming more or less expansive over time. We observe that the COVID-19 has become less expansive, whether we quantify expansiveness through the share of the literature that is accounted for by the 20% top-tagged genes or the Gini coefficient over the share of the COVID-19 literature attributable to individual genes (Gini, 1912;\u00a0Figure 2D, Figure 2\u2014figure supplement 1A,B). However, if assessing expansiveness by the total number of genes that have been tagged at least once, then this literature did become more expansive after the first months (Figure 2E).\n\nInterestingly, we also observe that the share of the COVID-19 literature, which is accounted for by the 100 genes that were tagged first within the COVID-19 literature has been decreasing (Figure 2F, Figure 2\u2014figure supplement 1C) \u2013 though stabilizing at an astonishingly high share of roughly 45% since June (Figure 2F, Figure 2\u2014figure supplement 1C). We conclude that, overall, the literature on COVID-19 became less expansive during the first months of the pandemic and has since stayed focused on a restricted subset of genes.\n\nOne possible reason for why some genes are tagged more than others in the COVID-19 literature could be that compared to other genes they are more important in the context of COVID-19. To probe this hypothesis, we consider groups of genes and the four different genome-wide datasets. When contrasting the 100 initially tagged genes against the other genes tagged in the COVID-19 literature, we reassuringly find that the 100 initially tagged genes are 29% more likely to have been identified by one of these four datasets (Supplementary file 4). However, they are on average tagged 2993% more (Supplementary file 4). If we contrast the 20% top-tagged genes against the other tagged genes, we find them to be 3% less likely to have been identified by one of the four genome-wide datasets, while they on average are tagged 3512% more (Supplementary file 4). Cumulatively, this suggests that the present focus of the COVID-19 literature on a restricted subset of genes cannot be explained by those genes having been identified by genome-wide datasets reporting on transcriptomic changes, protein interactions, genetic associations and loss-of-function perturbations.\n\n### Study limitations\n\nOur study has several important limitations. First, we cannot say whether a gene tagged in the COVID-19 literature is truly investigated for its potential role in COVID-19. Second, we cannot yet assess how important individual genes are in COVID-19. Third, and despite our projections, it remains formally unclear, whether the findings reported in this manuscript will hold in the upcoming months as more genome-wide datasets will become available and researchers will have had sufficient time for follow-up studies. For instance, there might already be research initiatives specifically targeted toward the ignored COVID-19 host genes.\n\nNonetheless, in the past, genome-wide experiments have rarely guided subsequent studies in the non-COVID-19 literature (Haynes et al., 2018; Stoeger et al., 2018). Thus, there is a significant risk that the COVID-19 literature will continue to ignore host genes that have not already been extensively studied independently of COVID-19.\n\n## Discussion\n\nOur study reiterates prior observations that research into human protein-coding genes is disproportionately skewed towards a comparably small set of genes (Haynes et al., 2018; Nelson et al., 2015; Stoeger et al., 2018). Likewise, our current analysis on COVID-19 already allows us to conclude that genes that are identified by genome-wide datasets, and hence are likely to have biological significance in the context of COVID-19, have hitherto remained ignored if they had not already been investigated more than other genes prior COVID-19.\n\nWe realize that there is an exploration-exploitation trade-off at play and that focusing research on genes that have already been heavily investigated yields significant advantages to investigators: applicability of existing research tools, the ability to place findings in a broader context, and the identification of drugs and other reagents that could be repurposed. Supporting a focus on exploitation, we find that: interventions in clinical trials on COVID-19 are biased toward pharmaceutical targets that occurred frequently in the non-COVID-19 literature (Figure 3A); and that antibodies \u2013 a class of reagent that cannot be produced for arbitrary genes within a few days \u2013 are less available for those genes identified by RNA-seq or Aff-MS or GWAS which have been ignored in the COVID-19 literature (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61981/elife-61981-fig3-v1.jpg)\n\n**Figure 3.:** (A) Drugs studied in COVID-19 related clinical trials are frequently studied within the non-COVID-19 literature. We compare non-COVID-19 publications measured for human protein-coding genes that are not listed as pharmaceutical targets in DrugBank (ocher, No drug), against those that are listed as pharmaceutical targets but have not occurred as an intervention in a clinical trial on COVID-19 (orange, Drug no trial), and against those that are listed as pharmaceutical targets and have occurred as an intervention in a clinical trial on COVID-19 (green, Drug and trial). Notches indicate 95% confidence interval of the median. P-values are calculated via Mann-Whitney U test. (B) Fraction of genes with reported usage of an antibody to detect the encoded protein as a prey in BioGRID. Bars are genes identified by the four different genome-wide studies that have either been tagged in the COVID-19 literature (red) or ignored (blue). Error bars indicate 95% confidence interval. P-values are calculated via Fisher\u2019s exact test.\n\nFurther, additional factors might affect the exploration of studies on ignored host genes. First, the number of laboratories working on ignored genes was quite small prior COVID-19 (Supplementary file 5), and plausibly only a small fraction of the laboratories studied host responses toward respiratory viruses. Second, the risk of being outcompeted by other laboratories might discourage individual laboratories from pursuing publicly acknowledged research targets (Bergstrom et al., 2016). Third, scientists rarely switch topics (Zeng et al., 2019). Likewise, laboratories already working on COVID-19 might have little incentive to move toward distinct host genes as it is possible to contribute to the COVID-19 literature irrespectively of whether the genes had been identified by genome-wide datasets (Figure 2A,B and Supplementary file 4). Moreover, it might be beneficial overall if research into COVID-19 is mainly driven by researchers with a background on pathogens (Kwon, 2020). Lastly, concerns have been expressed about the possibility that fraudulent gene knockdown studies that target under-studied human genes may be corrupting the literature and impeding research into biomarkers (Byrne et al., 2019).\n\nWe believe that a more complete understanding of host biology could open novel directions for interventions against SARS-CoV-2 and other viruses. However, the challenge remains of how to promote research on ignored host genes. For example, we cannot speculate whether researchers that turn their attention toward ignored genes in the context of COVID-19, will face a similar disadvantage to their career as did those that studied less studied genes prior to COVID-19 (Stoeger et al., 2018).\n\nIn the hopes of prompting greater investigation into implicated host genes, we list genes occurring in multiple of the four datasets described earlier in the supplemental material of this manuscript (Supplementary file 3). Most of the genes identified by multiple datasets appear multiple times because of the large volume of genes identified by the RNA-seq dataset. For this reason, we highlight four genes that were identified by multiple smaller datasets: (1) Mitochondrial import inner membrane translocase subunit Timm10 (TIMM10) has been identified through Aff-MS and CRISPR, and (2) FYVE And Coiled-Coil Domain Autophagy Adaptor 1 (FYCO1) and (3) Procollagen-Lysine,2-Oxoglutarate 5-Dioxygenase 2 (PLOD2) and (4) Ras GTPase-activating protein-binding protein 2 (G3BP2) have been identified through Aff-MS and GWAS. Of these four genes only G3BP2 has been tagged in the COVID-19 literature; and TIMM10 and FYCO1 have both occurred in nine publications in the non-COVID-19 literature, matching the expectation for a randomly selected gene. Of additional interest in the context of COVID-19, FYCO1 is associated with the levels of the monocyte chemoattractant protein-1 (Ahola-Olli et al., 2017; Buniello et al., 2019), which contributes to COVID-19 through hyperinflammation (Mehta et al., 2020).\n\n## Methods\n\n### COVID-19 literature\n\nWe downloaded LitCOVID from https://ftp.ncbi.nlm.nih.gov/pub/lu/LitCovid/ on 2020-10-16 and parsed the contained json file for the presence of concepts annotated as genes. For studies annotated with proteins, we used their PubMed identifiers, to query MEDLINE on 2020-10-16 via their efetch API. Subsequently we parsed the MEDLINE entries via pubmed_parser 2.2 (https://github.com/titipata/pubmed_parser; Achakulvisut et al., 2020). We then excluded publications carrying at least one of the following publication types: Review, Comment, Editorial, Meta-Analysis, Systematic Review, News, Published Erratum, Historical Article, Interview, Retracted Publication, Retraction of Publication, Webcast, Expression of Concern or Portrait. Further we excluded publications whose abstract contain either the phrase \u2018this review\u2019 or the phrase \u2018this perspective\u2019. We considered genes tagged within LitCOVID in the annotated TITLE, INTRO, ABSTRACT or RESULTS sections.\n\n### Research intensity within COVID-19 literature\n\nWe measured the research intensity directed toward individual implicated host genes in units of publication equivalents. Each gene tagged within a publication accrues the publication equivalent of number of tags to the gene in that publication divided by total number of tags to any gene in that publication. For example, if a study tags two different genes, and the first gene is tagged three times, whereas the second gene is only tagged once, the first gene would accrue 0.75 publication equivalents, and the second gene would accrue 0.25 publication equivalents. We expressed the share of literature covered by an individual human protein-coding gene as the sum of its publication equivalents over the sum of all publication equivalents of human protein-coding genes. We excluded the studies of Blanco-Melo et al., 2020 and Gordon et al., 2020 which report the RNA-seq and Aff-MS datasets, respectively.\n\n### Gene ontology enrichment analysis\n\nWe used the Database for Annotation, Visualization and Integrated Discovery, version 6.8 (Huang et al., 2009).\n\n### Data processing and filtering\n\nFor CRISPR we considered the African green monkey genes reported in Figure\u00a01D\u00a0of Jin Wei et al., 2020. To map African green monkey to human genes, we used BioMart\u2019s (Haider et al., 2009) April 2020 release. We used the genetic polymorphisms reported in the 2020-09-30 release of the Host Genetics Initiative (COVID-19 Host Genetics Initiative, 2020b) and mapped them to human genes through the Ensembl Variant Effect Predictor (McLaren et al., 2016), using the Ensembl release 101. For RNA-seq we only considered comparisons flagged with \u2018ok\u2019 by the authors (Blanco-Melo et al., 2020). For Aff-MS we used the data as provided by BioGRID (Chatr-Aryamontri et al., 2017), version 3.5.186\u00a0(https://downloads.thebiogrid.org/BioGRID).\n\nWe obtained the list of human protein-coding genes from https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz in June 2020.\n\n### Occurrence of genes in preprints\n\nWe obtained manuscripts abstracts from dimension.ai\u2019s collection of COVID-19 related publications, release 34 (https://dimensions.figshare.com/articles/dataset/Dimensions_COVID-19_publications_datasets_and_clinical_trials/11961063/34;\u00a0dimension.ai, 2020), and subsequently select manuscripts listing medRxiv or bioRxiv or arXiv as their source. Next, we matched each word against the gene symbols as downloaded from https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz in June 2020.\n\nWe excluded the following gene symbols as within the abstracts they would match abbreviations that did not refer to genes: AFM, AIR, AN, APC, APP, AR, ARC, ATM, BCR, BED, BID, CCNC, CFD, CHM, COPD, COPE, CP, CPE, CS, DBI, DCT, ENG, GAN, GC, HP, HPA, HPD, HPO, HR, IDS, IMPACT, IV, KIT, MCC, MET, MICE, MMD, MS, MS2, NHS, NM, NPS, NSF, NTS, PIP, POLL, REST, SEA, SET, SHE, SI, SPR, STS, TAT, TRAP, WAS.\n\n### Non-COVID-19 literature\n\nWe downloaded gene2pubmed from https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz in early 2017. MEDLINE, containing publication dates and publication types was downloaded from https://www.nlm.nih.gov/databases/download/pubmed_medline.html, and maintained in a local copy of their database in early 2017. We restricted the analysis to research publications published prior 2016.\n\n### Temporal profiles\n\nWe obtained publication dates from dimension.ai\u2019s collection of COVID-19 publications, release 34 (https://dimensions.figshare.com/articles/dataset/Dimensions_COVID-19_publications_datasets_and_clinical_trials/11961063/34). We excluded publications dating to January 1st, 2020 \u2013 the day linked to the most publications. Manual inspection revealed that the date of January 1st2020 was assigned to publications lacking a concrete 2020 publication date.\n\n### Occurrence within clinical trials\n\nWe obtained interventions within clinical trials from dimension.ai\u2019s collection of COVID-19 related clinical trials, release 34 (https://dimensions.figshare.com/articles/dataset/Dimensions_COVID-19_publications_datasets_and_clinical_trials/11961063/34; dimension.ai, 2020). We performed a case-insensitive match against drug names and drug synonyms contained within DrugBank, version 5.1.5 (https://www.drugbank.ca). Next we used DrugBank\u2019s mapping between drugs and the targets of their pharmaceutical action and used the accompanying gene symbol to identify genes.\n\n### Identification of research laboratories\n\nWe used disambiguated authorship identifiers from Web of Science and considered the last author of each publication as the laboratory.\n",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "40638c75-4b97-4d84-ad59-78f457395817",
+      "submission_id": "d91da521-3f92-4039-9b55-4bb2afa5045e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61981.sa1](https://doi.org/10.7554/eLife.61981.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Meta-Research: COVID-19 research risks ignoring important host genes due to pre-established gene-specific biases\" to eLife for consideration as a Feature Article. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by the eLife Features Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Valentin Danchev (Reviewer #1); Hong Zheng (Reviewer #2); Steve Brown (Reviewer #3).\n\nThe reviewers and editors have discussed the reviews and we have drafted this decision letter to help you prepare a revised submission.\n\nSummary:\n\nThere is now a very considerable body of evidence, much if it provided and substantiated through the work of Stoeger and Nunes, that the majority of published gene to phenotype studies continue to focus on genes that are well-annotated or for which knowledge of biological function and pathological consequences of mutations already exist. As a result, much of the human genome remains unexplored and considered \"dark\". This is not just a major problem for the dynamic development of the biological and biomedical sciences and the provision of novel insights into biological and disease mechanisms. It has the potential to impact significantly on the assessment of mechanisms and interventions in scenarios such as pandemics arising from novel pathogens which potentially elicit and require investigation and understanding of novel host-pathogen interactions involving unknown genetic pathways. Stoeger and Nunes now show, based on an analysis of the COVID-19 literature up to 30 July 2020, that COVID-19 studies display similar biases and critically ignore recent genome-wide datasets. However, a number of points need to be addressed to make the article suitable for publication.\n\nEssential revisions:\n\n1) Please update the analysis to include COVID-19 papers published until the end of August 2020 (or later).\n\n2) The comparison of published literature to large datasets from GWAS experiments is interesting but a comparison of the GWAS datasets themselves would add some interesting detail as well. What is the percentage of overlapping genes across all four GWAS? Is the literature more likely to select for study those genes that appear in many or all four GWAS? If it is not possible to answer these questions, please discuss this issue in the text.\n\n3) Published papers as of July 30 are considered, many of them likely written in May or early June, i.e., a couple of months after the WHO characterised COVID-19 as pandemic. This appears to be bias away from the null. Realistically, it would take some time for the literature to diversify. Preprints could have provided a more nuanced assessment but admittedly, extracting gene keywords from preprints would be computationally hard.\n\nA longitudinal analysis (e.g., two week slices) could be informative \u2013 is it the case that earlier in time labs started from diverse sets of genes and then converged; or, the other way around, they started from a few candidates, and then diverged. Or, there was no significant change over time, with incremental increase of the number of genes as the number of papers increased.\n\nIf it is not possible to conduct such a longitudinal analysis, please discuss this issue in the text.\n\n4) The framing of the problem in terms of bias might be too strong \u2013 it's just too early to tell. An alternative, and less charged ways of framing the problem would be in terms of the exploration-exploitation trade-off.\n\nEssentially, the manuscript tells us that labs have continued to study the genes they studied before COVID-19. The manuscript views this as a bias. But is it? A more charitable interpretation would be that labs continued to study what they know rather than jumping on the new fashionable possibility. A major concern since the pandemic has been the tendency for many to assert expertise in new areas relevant to Covid-19, and it seems that genomic labs are less involved in this. Could that path-dependency bias be seen a good thing in the broader context?\n\n5) It would be helpful to have a discussion on how realistic it is for a lab studying a set of genes to start studying another set of genes at short notice. Studies of country's manufacturing and other fields suggest that big \"jumps\" in the space of possibilities are limited, meaning that one could jump from B to D but hardly to X, Y, or Z. The manuscript should clarify how possible it is in the context of those gene experiments for a lab to study one set of genes and then \"jump\" to another set. In other words, if a lab would like to avoid the bias the manuscript outlines, how easy would be to study those understudied genes in terms of expertise, lab equipment, cell lines?\n\n6) Regarding the \"Pareto principle\" that 80% of research falls onto only 20% of the genes, have the authors considered the possibility that the \"Pareto principle\" might also apply to the importance of genes? The coding sequence is only 2% of the human genome, which is more extreme than the 80/20 ratio. Within the protein coding genes, the transcriptional factors or the hub of networks may just be functionally more important than other genes. Thus, is it possible that the observed bias in research reflects the innate features of human genes?\n\n7) Another factor that might contribute to the bias is how easy it is to study the gene, especially in early days when the first step is to clone a gene, and the longer the gene is, the harder the process is. Could the authors look into whether the bias is partly introduced by the length of the genes?\n\nIf it is not possible to conduct such an analysis, please discuss this possibility in the text.\n",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9ba3a0dd-98c2-43b2-b714-c53b73e2b4ac",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C1",
+      "claim": "Research into human genes is heavily skewed towards genes that have been widely studied for decades, including many genes that were being studied before the productive phase of the Human Genome Project.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that research into human genes is heavily skewed towards genes that have been widely studied for decades, including many genes that were being studied before the productive phase of the Human Genome Project.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research establishing this pattern in the scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "75af1fa5-a8d4-43f5-bcf6-6a3a8aaa52c0",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C2",
+      "claim": "The genes most frequently investigated by the research community tend to be only marginally more important to human physiology and disease than a random selection of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the genes most frequently investigated by the research community tend to be only marginally more important to human physiology and disease than a random selection of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about gene research patterns and is supported by citations in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "fa640088-c3d6-4119-95cc-128ef8bdd5bc",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C3",
+      "claim": "The analysis included 10,395 research publications about SARS-CoV-2 that mention at least one human gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on an analysis of 10,395 research publications about SARS-CoV-2 that mention at least one human gene, we report here that the COVID-19 literature up to mid-October 2020 follows a similar pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the dataset analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "e09fdb57-41c0-4920-b746-39345e5510b6",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C4",
+      "claim": "The COVID-19 literature up to mid-October 2020 follows a similar pattern to pre-established research patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on an analysis of 10,395 research publications about SARS-CoV-2 that mention at least one human gene, we report here that the COVID-19 literature up to mid-October 2020 follows a similar pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data analysis presented in the manuscript comparing COVID-19 literature to non-COVID-19 literature patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "d4686b97-22c6-4638-95f1-02f88134a209",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C5",
+      "claim": "A large number of host genes that have been implicated in SARS-CoV-2 infection by four genome-wide studies remain unstudied.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that a large number of host genes that have been implicated in SARS-CoV-2 infection by four genome-wide studies remain unstudied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis showing the proportion of genes identified by genome-wide studies that have not been tagged in the COVID-19 literature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "0749572f-57ea-4683-a7e0-5dc63f673162",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C6",
+      "claim": "Researchers identified the host proteins required for viral entry into cells shortly after SARS-CoV-2 emerged as a global threat.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly after SARS-CoV-2, the coronavirus that causes COVID-19, had emerged as a global threat to human health in January 2020, researchers had identified the host proteins required for viral entry into cells (Hoffmann et al., 2020; Monteil et al., 2020; Wrapp et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to three published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "850f2103-b5ab-4258-b21c-836aa321beda",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C7",
+      "claim": "Drugs were repurposed for treating COVID-19 patients shortly after SARS-CoV-2 emerged.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly after SARS-CoV-2, the coronavirus that causes COVID-19, had emerged as a global threat to human health in January 2020, researchers had identified the host proteins required for viral entry into cells (Hoffmann et al., 2020; Monteil et al., 2020; Wrapp et al., 2020), repurposed drugs for treating COVID-19 patients (Grein et al., 2020; Recovery Collaborative Group, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies on drug repurposing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "dba5fb08-3c1c-4e42-a4a1-098d721aa4fc",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C8",
+      "claim": "Vaccine development was initiated shortly after SARS-CoV-2 emerged as a global threat.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly after SARS-CoV-2, the coronavirus that causes COVID-19, had emerged as a global threat to human health in January 2020, researchers had identified the host proteins required for viral entry into cells (Hoffmann et al., 2020; Monteil et al., 2020; Wrapp et al., 2020), repurposed drugs for treating COVID-19 patients (Grein et al., 2020; Recovery Collaborative Group, 2020), and initiated vaccine development (Folegatti et al., 2020; Jackson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies on vaccine development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "2e162e05-64bd-469d-b202-bbc2bbc3471f",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C9",
+      "claim": "Early COVID-19 research advances drew upon previous lines of research.",
+      "claim_type": "EXPLICIT",
+      "source": "A common feature of these advances was that they drew upon previous lines of research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the examples of early COVID-19 research provided in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "c6491cc1-9d50-45ae-9a4b-389ab5c082f6",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C10",
+      "claim": "LitCOVID is a literature hub curated by the National Library of Medicine that tracks publications on COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "To answer this question we used LitCOVID, a literature hub curated by the National Library of Medicine that tracks publications on COVID-19 (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "b6e7586e-211b-4be8-842e-34ddc36e567e",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C11",
+      "claim": "LitCOVID tags genes within the publicly accessible text of individual publications through PubTator.",
+      "claim_type": "EXPLICIT",
+      "source": "LitCOVID tags genes within the publicly accessible text of individual publications through PubTator (Wei et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wei et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "93efca94-1f1b-4797-9c5b-c4766605167b",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C12",
+      "claim": "PubTator applies an ensemble of automated approaches to tag genes and then allows for revision of these tags through biocurators.",
+      "claim_type": "EXPLICIT",
+      "source": "LitCOVID tags genes within the publicly accessible text of individual publications through PubTator (Wei et al., 2019), which first applies an ensemble of automated approaches to tag genes, and then allows for a revision of these tags through biocurators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of PubTator as cited from Wei et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "808bb9ce-33f1-48fb-a166-63ce8152a85c",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C13",
+      "claim": "The analysis yielded 10,395 research publications featuring 3733 human protein-coding genes that have been tagged at least once.",
+      "claim_type": "EXPLICIT",
+      "source": "This yields 10,395 research publications featuring 3733 human protein-coding genes that have been tagged at least once.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data obtained from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "0818191b-17bb-4067-aef9-abfc3b3a0201",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C14",
+      "claim": "Angiotensin-converting enzyme 2 is the most prominently tagged gene in COVID-19 research.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominently tagged genes up to this point are: Angiotensin-converting enzyme 2, which serves as receptor for SARS-CoV-2 to enter cells (Hoffmann et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the analysis and a citation explaining the gene's function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "23adafe5-6e90-4ada-83d0-34537858c114",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C15",
+      "claim": "Angiotensin-converting enzyme 2 serves as receptor for SARS-CoV-2 to enter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Angiotensin-converting enzyme 2, which serves as receptor for SARS-CoV-2 to enter cells (Hoffmann et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hoffmann et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "b0876540-f527-499e-9362-c294fb04c191",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C16",
+      "claim": "Angiotensin-converting enzyme 2 accounts for 10.8% of the total research on human protein-coding genes within the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "They account for 10.8%, 9.7%, and 4.5% of the total research on human protein-coding genes within the COVID-19 literature, respectively (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "e0a39900-646b-4981-badf-946ad94b3e75",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C17",
+      "claim": "C-reactive protein is a serum marker for inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "C-reactive protein, a serum marker for inflammation (Sproston and Ashworth, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sproston and Ashworth, 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "1665eb70-67b2-444c-b129-acde267045d4",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C18",
+      "claim": "C-reactive protein accounts for 9.7% of the total research on human protein-coding genes within the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "They account for 10.8%, 9.7%, and 4.5% of the total research on human protein-coding genes within the COVID-19 literature, respectively (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "92c95904-40aa-43ee-a8cd-a74fff82b273",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C19",
+      "claim": "Interleukin 6 is a mediator of systemic inflammatory responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interleukin 6, a mediator of systemic inflammatory responses (Kang et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kang et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "da007e5a-f6e2-4296-a89e-d982f5a8941f",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C20",
+      "claim": "Interleukin 6 accounts for 4.5% of the total research on human protein-coding genes within the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "They account for 10.8%, 9.7%, and 4.5% of the total research on human protein-coding genes within the COVID-19 literature, respectively (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "5e39a51a-34fd-462c-8e55-113489dc9a1f",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C21",
+      "claim": "Human protein-coding genes tagged in the COVID-19 literature are enriched for annotations on immune response with a false-discovery rate <10\u221266.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology Enrichment analysis of the human protein-coding genes tagged in the COVID-19 literature finds them enriched for annotations on immune response (false-discovery rate <10\u221266)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Gene Ontology Enrichment analysis performed on the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "6ff33fa4-bda6-42c3-91e9-0ea1edfcfaf6",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C22",
+      "claim": "Human protein-coding genes tagged in the COVID-19 literature are enriched for annotations on inflammatory response with a false-discovery rate <10\u221265.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology Enrichment analysis of the human protein-coding genes tagged in the COVID-19 literature finds them enriched for annotations on immune response (false-discovery rate <10\u221266), inflammatory response (false-discovery rate <10\u221265)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Gene Ontology Enrichment analysis performed on the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "8e7a62ff-d3bf-48ad-a5ba-c00d7588875c",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C23",
+      "claim": "Human protein-coding genes tagged in the COVID-19 literature are enriched for annotations on defense response to virus with a false-discovery rate <10\u221231.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology Enrichment analysis of the human protein-coding genes tagged in the COVID-19 literature finds them enriched for annotations on immune response (false-discovery rate <10\u221266), inflammatory response (false-discovery rate <10\u221265), and defense response to virus (false-discovery rate <10\u221231) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Gene Ontology Enrichment analysis performed on the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "d45ec2c3-9bf9-4e67-a082-3893cbf665f7",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C24",
+      "claim": "Genome-wide approaches circumvent research patterns that may have been pre-established within the scientific literature.",
+      "claim_type": "EXPLICIT",
+      "source": "As genome-wide approaches circumvent research patterns that may have been pre-established within the scientific literature (Haynes et al., 2018; Nelson et al., 2015; Stoeger et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to three studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "f83358cd-4fcd-4cc3-ba74-7ff39dfd054f",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C25",
+      "claim": "RNA-sequencing was used to identify 1726 host genes that change the expression of their transcripts in the lungs of COVID-19 patients at an adjusted p-value<0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-sequencing (RNA-seq) was used recently to identify 1726 host genes that change the expression of their transcripts in the lungs of COVID-19 patients at an adjusted p-value<0.05 (Blanco-Melo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Blanco-Melo et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "c77d9bf8-2774-4194-b334-c44bbb92c186",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C26",
+      "claim": "Affinity-purification mass spectrometry was used to identify 293 host proteins following the pulldown of exogenously expressed SARS-CoV-2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Affinity-purification mass spectrometry (Aff-MS) was used to identify 293 host proteins following the pulldown of exogenously expressed SARS-CoV-2 proteins (Gordon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gordon et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "9ccbbe82-0746-4ba5-ae14-6b0db7a3b556",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C27",
+      "claim": "The Host Genetics Initiative identified 52 genes through genome-wide association studies at a P-value of 10\u22125 or lower in one of three comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genome-wide association studies (GWAS), the Host Genetics Initiative identified 52 genes through their association at a P-value of 10\u22125 or lower in one of three comparisons: COVID-19 vs lab or self-reported negative; hospitalized COVID-19 patients vs population; or very severe respiratory COVID-19 vs population (COVID-19 Host Genetics Initiative, 2020a; Ellinghaus et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the COVID-19 Host Genetics Initiative and Ellinghaus et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "43f5e622-91e9-4e56-b7fa-75e249f2d069",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C28",
+      "claim": "15 genes were identified in two GWAS comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "15 genes were identified in two comparisons and one gene, Leucine zipper transcription factor-like protein 1 (LZTFL1), was identified in all three comparisons (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of GWAS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "f7bd1ff2-bba2-492a-9571-7344945aabd6",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C29",
+      "claim": "Leucine zipper transcription factor-like protein 1 (LZTFL1) was identified in all three GWAS comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "15 genes were identified in two comparisons and one gene, Leucine zipper transcription factor-like protein 1 (LZTFL1), was identified in all three comparisons (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of GWAS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "3fc8a876-4371-424e-85a3-f797a8464bc4",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C30",
+      "claim": "A pooled CRISPR screen was used to identify 41 genes affecting SARS-CoV-2 induced cell death in African green monkey cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a pooled CRISPR screen to affect SARS-CoV-2 induced cell death in African green monkey cells, Wei et al. identified 41 genes, which we mapped to their human homologs using BioMart (Wei et al., 2020; see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wei et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "5af45eeb-8854-4360-a089-7f78549ad5fb",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C31",
+      "claim": "48 genes are identified in two of the four different genome-wide datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "48 genes are identified in two of the four different genome-wide datasets (Supplementary file 3), but no gene is identified in more than two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of the four genome-wide datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "38fc5eb4-b5e6-4684-bef4-0baf2ae02e91",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C32",
+      "claim": "No gene is identified in more than two of the four genome-wide datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "48 genes are identified in two of the four different genome-wide datasets (Supplementary file 3), but no gene is identified in more than two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of the four genome-wide datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "004dd01a-e8d6-4a86-83f2-f37c5e9cd228",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C33",
+      "claim": "56%\u201371% of the genes identified in the four genome-wide datasets have not yet been tagged in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "However, an analysis of the COVID-19 literature reveals that most (56%\u201371%) of the genes identified in these four datasets have not yet been tagged in the COVID-19 literature (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis and presented in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "9ca702cc-228f-422f-ab36-d1ca3f4b520c",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C34",
+      "claim": "19% of all human protein-coding genes have been tagged at least once in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the genes identified by the four genome-wide datasets are 10\u201325% more likely to have been tagged than a randomly chosen gene because we also observe that 19% of all human protein-coding genes have been tagged at least once in the COVID-19 literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "0ebf2f43-d89c-4daa-a168-fb8950ba0e25",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C35",
+      "claim": "The genes identified by the four genome-wide datasets are 10\u201325% more likely to have been tagged than a randomly chosen gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the genes identified by the four genome-wide datasets are 10\u201325% more likely to have been tagged than a randomly chosen gene because we also observe that 19% of all human protein-coding genes have been tagged at least once in the COVID-19 literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing the tagging rates of genome-wide identified genes to all genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "dc768d88-94c6-42c1-aa8f-3438313b3f8e",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C36",
+      "claim": "The fraction of tagged genes only increases by 0\u20137% if preprints are included.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the fraction of tagged genes only increases by 0\u20137% if we include preprints (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis and presented in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "1edd5bfb-9be9-4011-8945-152dd3660957",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C37",
+      "claim": "Genes identified by multiple genome-wide datasets are more likely to have been tagged in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, we observe that genes, which have been identified by multiple of the four distinct genome-wide datasets (Figure 1B), or multiple GWAS comparisons (Figure 1C), are more likely to have been tagged in the COVID-19 literature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis and presented in Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "f900dd21-0417-4174-a265-9a6414c46d97",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C38",
+      "claim": "Genes identified by multiple GWAS comparisons are more likely to have been tagged in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, we observe that genes, which have been identified by multiple of the four distinct genome-wide datasets (Figure 1B), or multiple GWAS comparisons (Figure 1C), are more likely to have been tagged in the COVID-19 literature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis and presented in Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "7ecd0673-abb9-44ff-8dcb-0749dbd0031c",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C39",
+      "claim": "Research into COVID-19 host genes enriches for host genes identified by multiple different lines of support, particularly if there exists support from human genome-wide association studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This, reassuringly, demonstrates that research into COVID-19 host genes enriches for host genes identified by multiple different lines of support \u2013 particularly if there exists support from human genome-wide association studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that genes with multiple lines of evidence are more likely to be tagged.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "f7e12d0f-d4d2-41fa-b140-fbb8f60dd1b3",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C40",
+      "claim": "Genes identified by multiple genome-wide datasets remain only a minority (2%) of all identified genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, overall, genes identified by multiple genome-wide datasets remain only a minority of all identified genes (2%), and many of them are still ignored in the COVID-19 literature (52%) (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "e8d88e62-82a9-4894-9890-04db670bc1c8",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C41",
+      "claim": "52% of genes identified by multiple genome-wide datasets are still ignored in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, overall, genes identified by multiple genome-wide datasets remain only a minority of all identified genes (2%), and many of them are still ignored in the COVID-19 literature (52%) (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "437ca854-7e89-4513-afdf-0e534100b017",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C42",
+      "claim": "Knowledge on human genes is heavily skewed toward a subset of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, we know that knowledge on human genes is heavily skewed toward a subset of genes (Gans et al., 2008; Gillis and Pavlidis, 2013; Hoffmann and Valencia, 2003; Oprea et al., 2018; Su and Hogenesch, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to five studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "da717a76-0025-4c9e-b9dc-8638a301b064",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C43",
+      "claim": "The most heavily studied genes were being investigated prior to the Human Genome Project.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, we know that knowledge on human genes is heavily skewed toward a subset of genes (Gans et al., 2008; Gillis and Pavlidis, 2013; Hoffmann and Valencia, 2003; Oprea et al., 2018; Su and Hogenesch, 2007) that were being investigated prior to the Human Genome Project (Edwards et al., 2011; Grueneberg et al., 2008; Stoeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to three studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "33cac90e-c41b-4e76-a7ce-9294c625c861",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C44",
+      "claim": "The most frequently investigated protein-coding genes tend to be only marginally more important to human physiology and disease than a random selection of genes when assessed through genetic loss-of-function intolerance or findings of GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, if assessing their importance through genetic loss-of-function intolerance or findings of GWAS (Haynes et al., 2018; Stoeger et al., 2018), the most frequently investigated protein-coding genes tend to be only marginally more important to human physiology and disease than a random selection of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Haynes et al., 2018 and Stoeger et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "604878db-0c77-4433-9066-a7ecfae88e47",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C45",
+      "claim": "Genes that are tagged in the COVID-19 literature are also frequently investigated in the non-COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that genes that are tagged in the COVID-19 literature are also frequently investigated in the non-COVID-19 literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the comparative analysis of COVID-19 and non-COVID-19 literature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "72f7ef9d-4371-4483-9e10-fcd08bdf8a37",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C46",
+      "claim": "The median rank of genes tagged in the COVID-19 literature exceeds the rank of 80% of human protein-coding genes in the non-COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The median rank of genes tagged in the COVID-19 literature exceeds the rank of 80% of human protein-coding genes (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis presented in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "65760d06-fa12-4b41-a344-fcd9372fbfe0",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C47",
+      "claim": "The majority of protein-coding human genes tagged in the COVID-19 literature was already heavily investigated in the context of research unrelated to COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the majority of protein-coding human genes tagged in the COVID-19 literature was already heavily investigated in the context of research unrelated to COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding that tagged genes have high ranks in non-COVID-19 literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "5118cacf-226f-4b2a-98df-42c07c31c603",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C48",
+      "claim": "For each of the four distinct datasets investigated, ignored genes occur less in the non-COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, we observe that for each of the four distinct datasets investigated, ignored genes also occur less in this non-COVID-19 literature (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the comparative analysis presented in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "3a0bdc9b-f7a9-4979-85d4-c93a9a19d73a",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C49",
+      "claim": "For RNA-seq, ignored genes had occurred slightly more in the non-COVID-19 literature (median percentile: 52) with p<10\u22122.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compare the number of publications on implicated but ignored host genes to the number of publications on any protein-coding gene encoded in the human genome, this difference is modest, and only reaches statistical significance for RNA-seq (RNA-Seq: p<10\u22122; Interactomics: p=0.20; GWAS: p=0.93; CRISPR: p=0.31), where ignored genes had occurred slightly more in the non-COVID-19 literature (median percentile: 52).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "a41fb3b2-39f4-4128-996e-5ce01c622d4f",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C50",
+      "claim": "For Interactomics, the difference in occurrence of ignored genes in non-COVID-19 literature is not statistically significant (p=0.20).",
+      "claim_type": "EXPLICIT",
+      "source": "When we compare the number of publications on implicated but ignored host genes to the number of publications on any protein-coding gene encoded in the human genome, this difference is modest, and only reaches statistical significance for RNA-seq (RNA-Seq: p<10\u22122; Interactomics: p=0.20; GWAS: p=0.93; CRISPR: p=0.31)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "38edbfe9-0486-47ea-bfcd-5ee48ba6489b",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C51",
+      "claim": "For GWAS, the difference in occurrence of ignored genes in non-COVID-19 literature is not statistically significant (p=0.93).",
+      "claim_type": "EXPLICIT",
+      "source": "When we compare the number of publications on implicated but ignored host genes to the number of publications on any protein-coding gene encoded in the human genome, this difference is modest, and only reaches statistical significance for RNA-seq (RNA-Seq: p<10\u22122; Interactomics: p=0.20; GWAS: p=0.93; CRISPR: p=0.31)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "5d7c8209-bd12-4cc8-97ee-7ddb6986a0a4",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C52",
+      "claim": "For CRISPR, the difference in occurrence of ignored genes in non-COVID-19 literature is not statistically significant (p=0.31).",
+      "claim_type": "EXPLICIT",
+      "source": "When we compare the number of publications on implicated but ignored host genes to the number of publications on any protein-coding gene encoded in the human genome, this difference is modest, and only reaches statistical significance for RNA-seq (RNA-Seq: p<10\u22122; Interactomics: p=0.20; GWAS: p=0.93; CRISPR: p=0.31)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "d8847a66-5d06-4d95-9584-1d8fde49d487",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C53",
+      "claim": "Implicated host genes that are tagged in the COVID-19 literature have occurred significantly more frequently in the non-COVID-19 literature for all four datasets (RNA-Seq: p<10\u221298; Interactomics: p<10\u221218; GWAS: p<10\u22126; CRISPR: p<10\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, implicated and tagged host genes have occurred significantly more frequently in the non-COVID-19 literature (RNA-Seq: p<10\u221298; Interactomics: p<10\u221218; GWAS: p<10\u22126; CRISPR: p<10\u22126).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "5b231c5d-1e5b-46b1-bd39-4fd967c093b6",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C54",
+      "claim": "Implicated host genes that are ignored in the COVID-19 literature have in the past been studied as much as randomly chosen human protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that implicated host genes that are ignored in the COVID-19 literature have in the past been studied as much as randomly chosen human protein-coding genes, whereas implicated host genes that are tagged in the COVID-19 literature have in the past already been investigated much more frequently than randomly chosen human protein-coding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative analysis of publication frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "2ac0a90e-15c7-42e7-90be-6acb9e865247",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C55",
+      "claim": "Implicated host genes that are tagged in the COVID-19 literature have in the past already been investigated much more frequently than randomly chosen human protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that implicated host genes that are ignored in the COVID-19 literature have in the past been studied as much as randomly chosen human protein-coding genes, whereas implicated host genes that are tagged in the COVID-19 literature have in the past already been investigated much more frequently than randomly chosen human protein-coding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative analysis of publication frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "6da93fa4-d30d-4f2f-b9e8-00fc6d7652d4",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C56",
+      "claim": "The literature is skewed toward a subset of genes that were being investigated prior to the productive phase of the Human Genome Project.",
+      "claim_type": "EXPLICIT",
+      "source": "Before the COVID-19 pandemic it had been shown that the literature is skewed toward a subset of genes that were being investigated prior to the productive phase of the Human Genome Project.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge from prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "989ccd6c-a98a-4501-967b-2dd59b2d13a5",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C57",
+      "claim": "Genes tagged in the COVID-19 literature had occurred earlier in the literature than other genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We decided to explore if the genes tagged in the COVID-19 literature had been studied before the pandemic, and found that they had occurred earlier (Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from temporal analysis of gene occurrence presented in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "3d7abf84-cefd-4011-9c5c-376ddad7164f",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C58",
+      "claim": "Many genes tagged in the COVID-19 literature were first studied before the productive phase of the Human Genome Project.",
+      "claim_type": "EXPLICIT",
+      "source": "We decided to explore if the genes tagged in the COVID-19 literature had been studied before the pandemic, and found that they had occurred earlier (Figure 1E), with many also first being studied before the productive phase of the Human Genome Project (NHGRI, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from temporal analysis of gene occurrence presented in Figure 1E, with reference to NHGRI, 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "920ef2f9-609a-47da-886a-806efccc4b22",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C59",
+      "claim": "Host genes identified by the four genome-wide datasets that are ignored in the COVID-19 literature first appeared in the non-COVID-19 literature after the host genes that are tagged in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the host genes identified by the four genome-wide datasets that are ignored in the COVID-19 literature first appeared in the non-COVID-19 literature after the host genes that are tagged in the COVID-19 literature (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from temporal analysis of gene occurrence presented in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "d87a7273-2af0-4ec4-b924-25585fb7acbc",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C60",
+      "claim": "35% of the genes identified by RNA-seq are among the 50% least-studied human protein-coding genes in the non-COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The second class holds 35% of the genes identified by RNA-seq, 33% of the genes identified by Aff-MS, 29% of the genes identified by GWAS, and 24% of the genes identified by CRISPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "a128680d-0ae6-4f6a-9ced-85b44af64e22",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C61",
+      "claim": "33% of the genes identified by Aff-MS are among the 50% least-studied human protein-coding genes in the non-COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The second class holds 35% of the genes identified by RNA-seq, 33% of the genes identified by Aff-MS, 29% of the genes identified by GWAS, and 24% of the genes identified by CRISPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "3303652b-176b-4752-9368-1429f728ffce",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C62",
+      "claim": "29% of the genes identified by GWAS are among the 50% least-studied human protein-coding genes in the non-COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The second class holds 35% of the genes identified by RNA-seq, 33% of the genes identified by Aff-MS, 29% of the genes identified by GWAS, and 24% of the genes identified by CRISPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "1f04bc95-bac3-4ed9-844a-100dc87f7ac0",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C63",
+      "claim": "24% of the genes identified by CRISPR are among the 50% least-studied human protein-coding genes in the non-COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The second class holds 35% of the genes identified by RNA-seq, 33% of the genes identified by Aff-MS, 29% of the genes identified by GWAS, and 24% of the genes identified by CRISPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "93669f17-1b2d-4a86-a6c1-13dd89fa5d67",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C64",
+      "claim": "It will take around one year until nearly all genes among the 50% top-studied human protein-coding genes will have been tagged at least once within the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrapolating from the observed trends, we anticipate that it will take around one year till nearly all genes of this class will have been tagged at least once within the COVID-19 literature (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection based on extrapolation of observed trends in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "69e7aad6-b4b7-4e17-9ec5-48ce2a58eb8a",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C65",
+      "claim": "For genes among the 50% least-studied human protein-coding genes, the increase in occurrence in the COVID-19 literature is slower than for the 50% most studied protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "When focusing on the genes that are among the 50% least-studied human protein-coding genes, we too observe their occurrence in the COVID-19 literature to increase steadily over time (Figure 2B). As for each of the four genome-wide datasets the increase is, however, slower than for the 50% most studied protein-coding genes",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from temporal analysis presented in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "941c7202-b171-449b-8c49-cf9b293dbb15",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C66",
+      "claim": "Multiple years could pass until each gene of the 50% least-studied human protein-coding genes will have been tagged at least once within the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "As for each of the four genome-wide datasets the increase is, however, slower than for the 50% most studied protein-coding genes, we project that multiple years could pass until each gene of the 50% least-studied human protein-coding genes will have been tagged at least once within the COVID-19 literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a projection based on extrapolation of observed trends.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "2fb05bfa-6af1-4577-a2c9-b3f8d53b8be9",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C67",
+      "claim": "83% of all human protein-coding genes tagged in the COVID-19 literature have not been identified by any of the four genome-wide datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 83% of all human protein-coding genes tagged in the COVID-19 literature have not been identified by any of the four genome-wide datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "15c1c782-b053-449a-9379-76b52a8c1da4",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C68",
+      "claim": "The different genome-wide datasets together account for 26% of the COVID-19 literature (RNA-seq: 11.7%, Aff-MS: 2.4%, GWAS: 0.5%, CRISPR: 11.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the different genome-wide datasets together only account for 26% of the COVID-19 literature (RNA-seq: 11.7%, Aff-MS: 2.4%, GWAS: 0.5%, CRISPR: 11.1%) (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "944730ce-8c2b-4566-a44e-e0fa24dff021",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C69",
+      "claim": "The 20% top-tagged human protein-coding genes (747 of 3,733) in the COVID-19 literature account for 90% of the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "If we consider the current literature, we do indeed observe support for our hypothesis that the COVID-19 literature is becoming dominated by a few genes as currently the 20% top-tagged human protein-coding genes (747 of 3,733) in the COVID-19 literature account for 90% of the literature (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis presented in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "d35f8250-994a-4198-9b80-2cc377d5c171",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C70",
+      "claim": "The share of literature accounted for by the 20% top-tagged genes exceeds the 80% anticipated for scientific processes subjected to anthropogenic biases.",
+      "claim_type": "EXPLICIT",
+      "source": "This share exceeds the 80% anticipated for scientific processes subjected to anthropogenic biases (Jia et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to an expected value from Jia et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "1a368c82-4c5d-417e-ad1e-668330f3c23b",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C71",
+      "claim": "A surprisingly small fraction of genes dominates the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that a surprisingly small fraction of genes dominates the COVID-19 literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the finding that 20% of genes account for 90% of the literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "520f8fd5-e79f-4482-9476-d284cc933703",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C72",
+      "claim": "The COVID-19 literature has become less expansive over time when measured by the share of literature accounted for by the 20% top-tagged genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that the COVID-19 has become less expansive, whether we quantify expansiveness through the share of the literature that is accounted for by the 20% top-tagged genes or the Gini coefficient over the share of the COVID-19 literature attributable to individual genes (Gini, 1912; Figure 2D, Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from temporal analysis presented in Figure 2D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "80f0896e-59ba-4a43-be9f-7fda57328ae3",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C73",
+      "claim": "The COVID-19 literature has become less expansive over time when measured by the Gini coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that the COVID-19 has become less expansive, whether we quantify expansiveness through the share of the literature that is accounted for by the 20% top-tagged genes or the Gini coefficient over the share of the COVID-19 literature attributable to individual genes (Gini, 1912; Figure 2D, Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from temporal analysis presented in Figure 2D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "3a8aeb7e-3d2c-45bf-9901-a5a2de01fbdd",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C74",
+      "claim": "The COVID-19 literature became more expansive after the first months when assessed by the total number of genes that have been tagged at least once.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if assessing expansiveness by the total number of genes that have been tagged at least once, then this literature did become more expansive after the first months (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from temporal analysis presented in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "39cca9a2-631e-4606-814c-05c54423e092",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C75",
+      "claim": "The share of the COVID-19 literature accounted for by the 100 genes that were tagged first has been decreasing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also observe that the share of the COVID-19 literature, which is accounted for by the 100 genes that were tagged first within the COVID-19 literature has been decreasing (Figure 2F, Figure 2\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from temporal analysis presented in Figure 2F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "cddfa6ac-4433-4b42-865e-2bbd120a2f38",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C76",
+      "claim": "The share of literature accounted for by the first 100 tagged genes has stabilized at roughly 45% since June.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also observe that the share of the COVID-19 literature, which is accounted for by the 100 genes that were tagged first within the COVID-19 literature has been decreasing (Figure 2F, Figure 2\u2014figure supplement 1C) \u2013 though stabilizing at an astonishingly high share of roughly 45% since June (Figure 2F, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from temporal analysis presented in Figure 2F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "d82038f2-a030-4b8f-b65e-307fbf7131cc",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C77",
+      "claim": "The literature on COVID-19 became less expansive during the first months of the pandemic and has since stayed focused on a restricted subset of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, overall, the literature on COVID-19 became less expansive during the first months of the pandemic and has since stayed focused on a restricted subset of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the temporal analysis of literature expansiveness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "caeda4e8-9f26-4905-9499-ff5a70758d0d",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C78",
+      "claim": "The 100 initially tagged genes are 29% more likely to have been identified by one of the four genome-wide datasets compared to other genes tagged in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "When contrasting the 100 initially tagged genes against the other genes tagged in the COVID-19 literature, we reassuringly find that the 100 initially tagged genes are 29% more likely to have been identified by one of these four datasets (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from comparative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "3d6563ef-b17a-4d09-8b29-eec42ca28251",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C79",
+      "claim": "The 100 initially tagged genes are on average tagged 2993% more than other genes tagged in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "When contrasting the 100 initially tagged genes against the other genes tagged in the COVID-19 literature, we reassuringly find that the 100 initially tagged genes are 29% more likely to have been identified by one of these four datasets (Supplementary file 4). However, they are on average tagged 2993% more (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from comparative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "6512d72f-c74e-46cb-87d6-2ec545eb0b9a",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C80",
+      "claim": "The 20% top-tagged genes are 3% less likely to have been identified by one of the four genome-wide datasets compared to other tagged genes.",
+      "claim_type": "EXPLICIT",
+      "source": "If we contrast the 20% top-tagged genes against the other tagged genes, we find them to be 3% less likely to have been identified by one of the four genome-wide datasets, while they on average are tagged 3512% more (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from comparative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "b04e4851-9a8e-430e-94c7-bfb1f3bbe0b7",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C81",
+      "claim": "The 20% top-tagged genes are on average tagged 3512% more than other tagged genes.",
+      "claim_type": "EXPLICIT",
+      "source": "If we contrast the 20% top-tagged genes against the other tagged genes, we find them to be 3% less likely to have been identified by one of the four genome-wide datasets, while they on average are tagged 3512% more (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from comparative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "115790d1-b7e2-44f3-8ebf-64f0a2737ac4",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C82",
+      "claim": "The present focus of the COVID-19 literature on a restricted subset of genes cannot be explained by those genes having been identified by genome-wide datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Cumulatively, this suggests that the present focus of the COVID-19 literature on a restricted subset of genes cannot be explained by those genes having been identified by genome-wide datasets reporting on transcriptomic changes, protein interactions, genetic associations and loss-of-function perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis showing that top-tagged genes are not more likely to be identified by genome-wide datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "77172e98-815f-4004-9a31-04f49f9c2400",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C83",
+      "claim": "It cannot be determined whether a gene tagged in the COVID-19 literature is truly investigated for its potential role in COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we cannot say whether a gene tagged in the COVID-19 literature is truly investigated for its potential role in COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledged limitation of the study methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "a9bdf3fb-025c-4869-9313-74d676d86fba",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C84",
+      "claim": "It cannot yet be assessed how important individual genes are in COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we cannot yet assess how important individual genes are in COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledged limitation of the current state of knowledge.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "673ad7c0-073c-4550-ae85-3eb34f693eb6",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C85",
+      "claim": "It remains formally unclear whether the findings will hold in the upcoming months as more genome-wide datasets become available and researchers have sufficient time for follow-up studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, and despite our projections, it remains formally unclear, whether the findings reported in this manuscript will hold in the upcoming months as more genome-wide datasets will become available and researchers will have had sufficient time for follow-up studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledged limitation regarding the temporal scope of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "dc9b20b1-ead4-4b91-a113-326df1d06451",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C86",
+      "claim": "There might already be research initiatives specifically targeted toward the ignored COVID-19 host genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, there might already be research initiatives specifically targeted toward the ignored COVID-19 host genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible ongoing research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "7eb81fb3-3edc-45f7-9f40-d83c8c162e0b",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C87",
+      "claim": "In the past, genome-wide experiments have rarely guided subsequent studies in the non-COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, in the past, genome-wide experiments have rarely guided subsequent studies in the non-COVID-19 literature (Haynes et al., 2018; Stoeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Haynes et al., 2018 and Stoeger et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "08dc7b29-7b0a-48e5-9e2d-f744be54eaca",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C88",
+      "claim": "There is a significant risk that the COVID-19 literature will continue to ignore host genes that have not already been extensively studied independently of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is a significant risk that the COVID-19 literature will continue to ignore host genes that have not already been extensively studied independently of COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on past patterns in non-COVID-19 literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "2be63f3c-3b5e-44be-99d2-039a87d27258",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C89",
+      "claim": "Research into human protein-coding genes is disproportionately skewed towards a comparably small set of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reiterates prior observations that research into human protein-coding genes is disproportionately skewed towards a comparably small set of genes (Haynes et al., 2018; Nelson et al., 2015; Stoeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to three prior studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "30d7e975-cda2-4923-9329-ea30992916c7",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C90",
+      "claim": "Genes identified by genome-wide datasets that had not already been investigated more than other genes prior to COVID-19 have remained ignored in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, our current analysis on COVID-19 already allows us to conclude that genes that are identified by genome-wide datasets, and hence are likely to have biological significance in the context of COVID-19, have hitherto remained ignored if they had not already been investigated more than other genes prior COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "e8d83c76-22f4-4126-905c-eb5cfce2fcc2",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C91",
+      "claim": "There is an exploration-exploitation trade-off at play in COVID-19 research.",
+      "claim_type": "EXPLICIT",
+      "source": "We realize that there is an exploration-exploitation trade-off at play and that focusing research on genes that have already been heavily investigated yields significant advantages to investigators",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the dynamics of scientific research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "1259e938-df26-4e78-b8e7-829179f1439e",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C92",
+      "claim": "Focusing research on genes that have already been heavily investigated yields significant advantages including applicability of existing research tools, the ability to place findings in a broader context, and the identification of drugs and other reagents that could be repurposed.",
+      "claim_type": "EXPLICIT",
+      "source": "We realize that there is an exploration-exploitation trade-off at play and that focusing research on genes that have already been heavily investigated yields significant advantages to investigators: applicability of existing research tools, the ability to place findings in a broader context, and the identification of drugs and other reagents that could be repurposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical advantages of studying well-characterized genes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "99cc1e31-7d81-4ced-8321-f56600e77743",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C93",
+      "claim": "Interventions in clinical trials on COVID-19 are biased toward pharmaceutical targets that occurred frequently in the non-COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting a focus on exploitation, we find that: interventions in clinical trials on COVID-19 are biased toward pharmaceutical targets that occurred frequently in the non-COVID-19 literature (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of clinical trial data presented in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "ef206716-5c8f-44f0-bcc6-65e0fea51b6e",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C94",
+      "claim": "Antibodies are less available for genes identified by RNA-seq or Aff-MS or GWAS which have been ignored in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting a focus on exploitation, we find that: interventions in clinical trials on COVID-19 are biased toward pharmaceutical targets that occurred frequently in the non-COVID-19 literature (Figure 3A); and that antibodies \u2013 a class of reagent that cannot be produced for arbitrary genes within a few days \u2013 are less available for those genes identified by RNA-seq or Aff-MS or GWAS which have been ignored in the COVID-19 literature (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of antibody availability presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "df99392b-6ffa-4d36-9343-750a6851ee2d",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C95",
+      "claim": "Antibodies cannot be produced for arbitrary genes within a few days.",
+      "claim_type": "EXPLICIT",
+      "source": "and that antibodies \u2013 a class of reagent that cannot be produced for arbitrary genes within a few days \u2013 are less available for those genes identified by RNA-seq or Aff-MS or GWAS which have been ignored in the COVID-19 literature (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical limitations of antibody production.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "f9652a05-a036-4d70-87c5-3d3f3da2e84d",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C96",
+      "claim": "The number of laboratories working on ignored genes was quite small prior to COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the number of laboratories working on ignored genes was quite small prior COVID-19 (Supplementary file 5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of laboratory authorship data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "49242cd5-da7d-4858-ac66-009d6aefead6",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C97",
+      "claim": "Only a small fraction of laboratories studying ignored genes studied host responses toward respiratory viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the number of laboratories working on ignored genes was quite small prior COVID-19 (Supplementary file 5), and plausibly only a small fraction of the laboratories studied host responses toward respiratory viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the small number of laboratories working on ignored genes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "94fb3a38-7668-42d3-b0c8-88d34cb6e2dc",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C98",
+      "claim": "The risk of being outcompeted by other laboratories might discourage individual laboratories from pursuing publicly acknowledged research targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the risk of being outcompeted by other laboratories might discourage individual laboratories from pursuing publicly acknowledged research targets (Bergstrom et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bergstrom et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "575765bc-c554-4d8d-b8a5-8447fdb0d3c7",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C99",
+      "claim": "Scientists rarely switch topics.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, scientists rarely switch topics (Zeng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zeng et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "c2310981-5314-435c-8539-11839b202dfb",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C100",
+      "claim": "Laboratories already working on COVID-19 might have little incentive to move toward distinct host genes as it is possible to contribute to the COVID-19 literature irrespectively of whether the genes had been identified by genome-wide datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, laboratories already working on COVID-19 might have little incentive to move toward distinct host genes as it is possible to contribute to the COVID-19 literature irrespectively of whether the genes had been identified by genome-wide datasets (Figure 2A,B and Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the finding that most tagged genes were not identified by genome-wide datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "6c0949d7-19df-4d2a-94da-eee613c5b37d",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C101",
+      "claim": "It might be beneficial overall if research into COVID-19 is mainly driven by researchers with a background on pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it might be beneficial overall if research into COVID-19 is mainly driven by researchers with a background on pathogens (Kwon, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement supported by a citation to Kwon, 2020.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "047bb6e5-2823-46e1-9684-fed4bb18296b",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C102",
+      "claim": "Concerns have been expressed about the possibility that fraudulent gene knockdown studies that target under-studied human genes may be corrupting the literature and impeding research into biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, concerns have been expressed about the possibility that fraudulent gene knockdown studies that target under-studied human genes may be corrupting the literature and impeding research into biomarkers (Byrne et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Byrne et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "896ada9c-750f-4d29-bbb1-cb417d6e1d44",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C103",
+      "claim": "A more complete understanding of host biology could open novel directions for interventions against SARS-CoV-2 and other viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that a more complete understanding of host biology could open novel directions for interventions against SARS-CoV-2 and other viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential benefits of studying ignored genes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "62bfdb58-dc6c-4cde-ab08-4777318b700a",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C104",
+      "claim": "It cannot be speculated whether researchers that turn their attention toward ignored genes in the context of COVID-19 will face a similar disadvantage to their career as did those that studied less studied genes prior to COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we cannot speculate whether researchers that turn their attention toward ignored genes in the context of COVID-19, will face a similar disadvantage to their career as did those that studied less studied genes prior to COVID-19 (Stoeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the uncertainty regarding career implications, with reference to Stoeger et al., 2018.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "f19b51f3-f48e-4ac5-a8b8-7b9683f82943",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C105",
+      "claim": "TIMM10 has been identified through Aff-MS and CRISPR.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) Mitochondrial import inner membrane translocase subunit Timm10 (TIMM10) has been identified through Aff-MS and CRISPR",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of genes identified by multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "e7997749-cd37-4ce9-9a46-ca9649cb6976",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C106",
+      "claim": "FYCO1 has been identified through Aff-MS and GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) FYVE And Coiled-Coil Domain Autophagy Adaptor 1 (FYCO1) and (3) Procollagen-Lysine,2-Oxoglutarate 5-Dioxygenase 2 (PLOD2) and (4) Ras GTPase-activating protein-binding protein 2 (G3BP2) have been identified through Aff-MS and GWAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of genes identified by multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "0c935efb-817d-4685-bb9b-ba8ad8b060c3",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C107",
+      "claim": "PLOD2 has been identified through Aff-MS and GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) FYVE And Coiled-Coil Domain Autophagy Adaptor 1 (FYCO1) and (3) Procollagen-Lysine,2-Oxoglutarate 5-Dioxygenase 2 (PLOD2) and (4) Ras GTPase-activating protein-binding protein 2 (G3BP2) have been identified through Aff-MS and GWAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of genes identified by multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "7d0eaba2-d4aa-4082-b94c-bc2b64ec8921",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C108",
+      "claim": "G3BP2 has been identified through Aff-MS and GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) FYVE And Coiled-Coil Domain Autophagy Adaptor 1 (FYCO1) and (3) Procollagen-Lysine,2-Oxoglutarate 5-Dioxygenase 2 (PLOD2) and (4) Ras GTPase-activating protein-binding protein 2 (G3BP2) have been identified through Aff-MS and GWAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of genes identified by multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "92d73c70-cad5-4265-b3a0-9bd6932a9577",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C109",
+      "claim": "Of the four highlighted genes, only G3BP2 has been tagged in the COVID-19 literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these four genes only G3BP2 has been tagged in the COVID-19 literature",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of tagged genes in the COVID-19 literature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "65895658-64bb-4aa4-b5f6-cb11dd114195",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C110",
+      "claim": "TIMM10 has occurred in nine publications in the non-COVID-19 literature, matching the expectation for a randomly selected gene.",
+      "claim_type": "EXPLICIT",
+      "source": "and TIMM10 and FYCO1 have both occurred in nine publications in the non-COVID-19 literature, matching the expectation for a randomly selected gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of non-COVID-19 literature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "4234a0a3-0a3b-40e4-8671-05fb4b4039a6",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C111",
+      "claim": "FYCO1 has occurred in nine publications in the non-COVID-19 literature, matching the expectation for a randomly selected gene.",
+      "claim_type": "EXPLICIT",
+      "source": "and TIMM10 and FYCO1 have both occurred in nine publications in the non-COVID-19 literature, matching the expectation for a randomly selected gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of non-COVID-19 literature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "1b5b4ffa-ef14-4ae5-a326-5ddf0b01d2e6",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C112",
+      "claim": "FYCO1 is associated with the levels of the monocyte chemoattractant protein-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of additional interest in the context of COVID-19, FYCO1 is associated with the levels of the monocyte chemoattractant protein-1 (Ahola-Olli et al., 2017; Buniello et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ahola-Olli et al., 2017 and Buniello et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "c88ed8fd-148f-4f96-9469-a403c5b1d8ce",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "claim_id": "C113",
+      "claim": "Monocyte chemoattractant protein-1 contributes to COVID-19 through hyperinflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of additional interest in the context of COVID-19, FYCO1 is associated with the levels of the monocyte chemoattractant protein-1 (Ahola-Olli et al., 2017; Buniello et al., 2019), which contributes to COVID-19 through hyperinflammation (Mehta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mehta et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3cc322c4-8d59-4691-8f99-e01aa264bea6",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 10,395 COVID-19 research publications using LitCOVID, a curated literature hub that tags genes through PubTator, identifying 3,733 human protein-coding genes tagged at least once.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C10-C13 describe the data source and methodology. The use of LitCOVID and PubTator is appropriately cited, and the dataset size is clearly stated. The methodology is transparent and reproducible, though limitations regarding whether tagged genes are truly investigated for COVID-19 roles are acknowledged elsewhere (C83).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "d479af80-d3af-48d4-9a25-c3a63a94f27e",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The most prominently tagged genes in COVID-19 literature are ACE2 (10.8%), C-reactive protein (9.7%), and Interleukin 6 (4.5%), with tagged genes enriched for immune response, inflammatory response, and defense response to virus annotations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 describe the top tagged genes and their functional enrichment. The quantitative data on gene tagging frequency is clearly presented, and the Gene Ontology enrichment analysis shows highly significant enrichment (FDR < 10^-31 to 10^-66) for biologically relevant pathways. The functional roles of top genes are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "c26bacfc-3418-4f7d-b36c-4561bc80a159",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Four genome-wide datasets identified host genes implicated in COVID-19: RNA-seq (1,726 genes), Aff-MS (293 genes), GWAS (52 genes), and CRISPR (41 genes), with 48 genes identified in two datasets but none in more than two.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 describe the four genome-wide datasets with appropriate citations. The lack of overlap (no gene in >2 datasets) is clearly stated. However, the biological significance of this limited overlap is not critically examined\u2014it could reflect technical differences between methods rather than lack of biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "bf27523d-0d6f-4ab6-83bb-4044f2466e54",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "56-71% of genes identified by genome-wide datasets have not been tagged in COVID-19 literature, representing only a 10-25% increase over the 19% baseline tagging rate for all human genes, with minimal change when including preprints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 present the core finding that most genome-wide identified genes remain unstudied. The quantitative analysis is supported by Figure 1A and supplementary data. However, the interpretation assumes that gene tagging accurately reflects research focus, which is acknowledged as a limitation (C83). The comparison to baseline rates strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "e30e260c-d1bb-4c93-bcff-a8d5b0c2ada3",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genes identified by multiple genome-wide datasets or GWAS comparisons are more likely to be tagged in COVID-19 literature, but these represent only 2% of all identified genes, with 52% still ignored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 show that convergent evidence increases tagging likelihood (Figures 1B-C), which is reassuring. However, the small absolute numbers (2% with multiple lines of evidence, 52% still ignored) and lack of statistical power analysis for detecting this enrichment are concerns. The p-values from Fisher's exact test support the claims but effect sizes are modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "e2d71b97-e08e-41db-b0a2-0507f25fe715",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "COVID-19 research follows pre-established patterns where heavily studied genes dominate: tagged genes rank in the top 80th percentile of non-COVID-19 literature, and most were studied before the Human Genome Project.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C42-C47 establish the historical context and demonstrate pattern persistence. The comparison to non-COVID-19 literature (Figure 1D) with appropriate statistical tests (Mann-Whitney U) supports the conclusion. However, the causal interpretation that pre-existing bias drives COVID-19 research patterns is correlational\u2014alternative explanations (e.g., well-studied genes are genuinely more relevant) are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "02a76ff7-ae2d-40d5-960e-7e56a22f42e5",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ignored genes from genome-wide datasets have publication frequencies similar to random genes in non-COVID-19 literature, while tagged genes are significantly more studied (p<10^-6 to 10^-98 across datasets).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 provide strong statistical evidence (Figure 1D) that tagging correlates with prior research intensity. The statistical tests are appropriate, though the lack of significance for some datasets (Interactomics p=0.20, GWAS p=0.93, CRISPR p=0.31) for ignored genes suggests heterogeneity. The conclusion is well-supported but the mechanism (bias vs. relevance) remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "7730f791-d6fd-49ee-98f3-43cf26f579f5",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genes tagged in COVID-19 literature appeared earlier in the scientific literature, with many first studied before the Human Genome Project, while ignored genes from genome-wide datasets appeared later.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 demonstrate temporal patterns (Figure 1E) consistent with historical bias. The analysis appropriately uses year of first publication as a metric. However, the interpretation that earlier appearance causes current focus is correlational, and confounding factors (e.g., genes studied earlier may have clearer functional annotations) are not fully addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "5a2bd1f4-3624-4e8f-bd21-4275dd5630bf",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "24-35% of genome-wide identified genes are among the least-studied 50% of human genes; extrapolations suggest well-studied genes will be comprehensively tagged within one year, but least-studied genes may require multiple years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C66 present temporal projections (Figures 2A-B). While the observed trends are data-supported, the extrapolations (C64, C66) are speculative and depend on assumptions about future research patterns. The authors acknowledge uncertainty (C85), and external factors (new datasets, funding priorities) could alter trajectories. The projections are reasonable but inherently uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "27d88020-44fd-4fbb-ac14-6e78ba062395",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "83% of tagged genes were not identified by genome-wide datasets, which account for only 26% of COVID-19 literature; the top 20% of genes account for 90% of literature, exceeding the 80% expected from anthropogenic bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 quantify literature concentration (Figure 2C). The 90% concentration in 20% of genes is striking and well-documented. The comparison to the 80% Pareto principle (C70) provides context, though the cited reference (Jia et al., 2019) should be verified for applicability. The finding is robust but the interpretation of 'surprising' is subjective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "9ff9a134-1582-4337-bf27-f7a70493180d",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "COVID-19 literature became less expansive over time by concentration metrics (Gini coefficient, top 20% share) but more expansive by total gene count; the first 100 tagged genes stabilized at 45% of literature since June 2020.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C77 describe temporal dynamics (Figure 2D-F, supplements). The use of multiple metrics (Gini, concentration, total genes) is appropriate and shows nuanced patterns. The apparent contradiction (less expansive by concentration, more by count) is well-explained. However, the stabilization at 45% (C76) may reflect data collection artifacts or incomplete indexing for recent months.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "21a045e1-85a6-4d4a-9ec4-a3e7eb2bce4e",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The 100 initially tagged genes are 29% more likely but 2,993% more frequently tagged than other genes; top 20% genes are 3% less likely to be genome-wide identified but 3,512% more tagged, indicating focus cannot be explained by genome-wide evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 provide critical evidence that tagging frequency is decoupled from genome-wide support. The massive disparity in tagging frequency (2,993-3,512%) versus modest enrichment in genome-wide identification (29% more likely, or 3% less likely) is striking. However, the analysis conflates frequency with importance\u2014highly tagged genes may warrant more study for valid scientific reasons not captured by the four datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "bd8abc08-832a-4358-8f96-33c54f6eb5df",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "COVID-19 literature follows similar patterns to pre-established research bias, with genes not previously well-studied remaining ignored despite genome-wide evidence of biological significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C89-C90 synthesize the main findings. The evidence from multiple analyses (tagging rates, temporal patterns, literature concentration) consistently supports this conclusion. However, the interpretation assumes genome-wide identification equals biological significance, which may not always hold. Alternative explanations (e.g., well-studied genes are genuinely more tractable or relevant) are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "d5cbde15-2373-41a0-a2a7-0bf0ea9b2a6c",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "An exploration-exploitation trade-off exists where focusing on well-studied genes provides practical advantages (tools, context, drug repurposing); clinical trials target well-studied genes, antibodies are less available for ignored genes, and few labs worked on ignored genes pre-pandemic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C97 explain mechanisms for observed patterns. The clinical trial analysis (C93, Figure 3A) and antibody availability data (C94, Figure 3B) provide empirical support. The practical advantages (C92) are reasonable but somewhat speculative. The laboratory count analysis (C96) is data-supported. However, the causal chain from these factors to literature patterns is inferred rather than directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "3dea4be9-3ec5-4fb1-8e2a-4c08abd45141",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Additional factors may discourage exploration of ignored genes: competition risk, scientists rarely switching topics, lack of incentive for COVID-19 labs to shift focus, and potential benefits of pathogen-focused researchers leading COVID-19 research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C101 propose mechanisms based on cited literature (Bergstrom, Zeng, Kwon) and inference from data. While the cited phenomena (competition, topic persistence) are established, their specific application to COVID-19 gene research is speculative. The claim about pathogen researchers (C101) is particularly uncertain and could be tested but isn't. These are plausible hypotheses requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "faee089b-a211-4ebd-bb32-ecf1f1e1eb37",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Study limitations include inability to determine if tagged genes are truly investigated for COVID-19 roles, inability to assess individual gene importance, uncertainty about future patterns, and possible ongoing initiatives targeting ignored genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 appropriately acknowledge limitations. The inability to verify that tagging reflects genuine investigation (C83) is a critical limitation affecting interpretation of all results. The temporal uncertainty (C85) is honest given the snapshot nature of the analysis. These limitations are significant but do not invalidate the main findings about literature patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "843f7a22-26dd-4b31-9a6d-06328a56f516",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Genome-wide experiments have rarely guided subsequent studies in non-COVID-19 literature, creating significant risk that COVID-19 literature will continue ignoring under-studied genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 extrapolate from past patterns (appropriately cited) to predict future risk. The historical precedent is well-established, making the projection reasonable. However, COVID-19's urgency and visibility might alter typical patterns, which the authors acknowledge as uncertain (C85). The risk assessment is supported but inherently speculative about future behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "c69e0dd5-41a2-4882-9e68-c0bf010f2b74",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Concerns exist about fraudulent studies on under-studied genes; more complete understanding of host biology could enable novel interventions; career implications for researchers studying ignored genes are uncertain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C104 raise additional considerations. The fraud concern (C102) is cited but its relevance to COVID-19 research is unclear. The potential benefits of studying ignored genes (C103) are speculative but reasonable. The career implications (C104) acknowledge uncertainty appropriately. These are discussion points rather than tested claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "7c700b27-c9bc-4087-ad4c-73002e02b792",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Four under-studied genes identified by multiple datasets are highlighted: TIMM10 (Aff-MS+CRISPR), FYCO1 (Aff-MS+GWAS), PLOD2 (Aff-MS+GWAS), and G3BP2 (Aff-MS+GWAS); only G3BP2 is tagged in COVID-19 literature, while TIMM10 and FYCO1 have minimal prior publications. FYCO1 is associated with monocyte chemoattractant protein-1, which contributes to COVID-19 hyperinflammation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C113 provide specific examples of ignored genes with multiple lines of evidence. The identification across datasets is data-supported, and the publication counts are verifiable. The FYCO1-MCP1-hyperinflammation connection (C112-C113) is appropriately cited and provides biological plausibility. These examples effectively illustrate the main findings, though their ultimate importance in COVID-19 remains to be determined (as acknowledged in C84).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "8bae150e-ce24-42bb-bc2b-311055737b5c",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Early COVID-19 research rapidly identified viral entry proteins, repurposed drugs, and initiated vaccines, drawing upon previous research lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 establish context for the study by describing early COVID-19 research successes. All claims are appropriately cited to published studies. This background motivates the research question about whether all important genes are being pursued. The claims are factual and well-supported but serve primarily as introduction rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    },
+    {
+      "id": "b915b8d4-80b7-4c06-946d-9f338a2f17bc",
+      "content_id": "cfdce2d6-86b8-4307-907a-c06fd4149535",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Genome-wide approaches circumvent pre-established research patterns in the scientific literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 states a key premise of the study, appropriately supported by three citations. This assumption underlies the use of genome-wide datasets as a benchmark for unbiased gene identification. While generally accepted, the claim could be nuanced\u2014genome-wide approaches have their own biases (detection limits, statistical thresholds, model systems).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:39:05.248444Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fa640088-c3d6-4119-95cc-128ef8bdd5bc",
+      "result_id": "3cc322c4-8d59-4691-8f99-e01aa264bea6"
+    },
+    {
+      "claim_id": "c6491cc1-9d50-45ae-9a4b-389ab5c082f6",
+      "result_id": "3cc322c4-8d59-4691-8f99-e01aa264bea6"
+    },
+    {
+      "claim_id": "b6e7586e-211b-4be8-842e-34ddc36e567e",
+      "result_id": "3cc322c4-8d59-4691-8f99-e01aa264bea6"
+    },
+    {
+      "claim_id": "93efca94-1f1b-4797-9c5b-c4766605167b",
+      "result_id": "3cc322c4-8d59-4691-8f99-e01aa264bea6"
+    },
+    {
+      "claim_id": "808bb9ce-33f1-48fb-a166-63ce8152a85c",
+      "result_id": "3cc322c4-8d59-4691-8f99-e01aa264bea6"
+    },
+    {
+      "claim_id": "0818191b-17bb-4067-aef9-abfc3b3a0201",
+      "result_id": "d479af80-d3af-48d4-9a25-c3a63a94f27e"
+    },
+    {
+      "claim_id": "23adafe5-6e90-4ada-83d0-34537858c114",
+      "result_id": "d479af80-d3af-48d4-9a25-c3a63a94f27e"
+    },
+    {
+      "claim_id": "b0876540-f527-499e-9362-c294fb04c191",
+      "result_id": "d479af80-d3af-48d4-9a25-c3a63a94f27e"
+    },
+    {
+      "claim_id": "e0a39900-646b-4981-badf-946ad94b3e75",
+      "result_id": "d479af80-d3af-48d4-9a25-c3a63a94f27e"
+    },
+    {
+      "claim_id": "1665eb70-67b2-444c-b129-acde267045d4",
+      "result_id": "d479af80-d3af-48d4-9a25-c3a63a94f27e"
+    },
+    {
+      "claim_id": "92c95904-40aa-43ee-a8cd-a74fff82b273",
+      "result_id": "d479af80-d3af-48d4-9a25-c3a63a94f27e"
+    },
+    {
+      "claim_id": "da007e5a-f6e2-4296-a89e-d982f5a8941f",
+      "result_id": "d479af80-d3af-48d4-9a25-c3a63a94f27e"
+    },
+    {
+      "claim_id": "5e39a51a-34fd-462c-8e55-113489dc9a1f",
+      "result_id": "d479af80-d3af-48d4-9a25-c3a63a94f27e"
+    },
+    {
+      "claim_id": "6ff33fa4-bda6-42c3-91e9-0ea1edfcfaf6",
+      "result_id": "d479af80-d3af-48d4-9a25-c3a63a94f27e"
+    },
+    {
+      "claim_id": "8e7a62ff-d3bf-48ad-a5ba-c00d7588875c",
+      "result_id": "d479af80-d3af-48d4-9a25-c3a63a94f27e"
+    },
+    {
+      "claim_id": "f83358cd-4fcd-4cc3-ba74-7ff39dfd054f",
+      "result_id": "c26bacfc-3418-4f7d-b36c-4561bc80a159"
+    },
+    {
+      "claim_id": "c77d9bf8-2774-4194-b334-c44bbb92c186",
+      "result_id": "c26bacfc-3418-4f7d-b36c-4561bc80a159"
+    },
+    {
+      "claim_id": "9ccbbe82-0746-4ba5-ae14-6b0db7a3b556",
+      "result_id": "c26bacfc-3418-4f7d-b36c-4561bc80a159"
+    },
+    {
+      "claim_id": "43f5e622-91e9-4e56-b7fa-75e249f2d069",
+      "result_id": "c26bacfc-3418-4f7d-b36c-4561bc80a159"
+    },
+    {
+      "claim_id": "f7bd1ff2-bba2-492a-9571-7344945aabd6",
+      "result_id": "c26bacfc-3418-4f7d-b36c-4561bc80a159"
+    },
+    {
+      "claim_id": "3fc8a876-4371-424e-85a3-f797a8464bc4",
+      "result_id": "c26bacfc-3418-4f7d-b36c-4561bc80a159"
+    },
+    {
+      "claim_id": "5af45eeb-8854-4360-a089-7f78549ad5fb",
+      "result_id": "c26bacfc-3418-4f7d-b36c-4561bc80a159"
+    },
+    {
+      "claim_id": "38fc5eb4-b5e6-4684-bef4-0baf2ae02e91",
+      "result_id": "c26bacfc-3418-4f7d-b36c-4561bc80a159"
+    },
+    {
+      "claim_id": "004dd01a-e8d6-4a86-83f2-f37c5e9cd228",
+      "result_id": "bf27523d-0d6f-4ab6-83bb-4044f2466e54"
+    },
+    {
+      "claim_id": "9ca702cc-228f-422f-ab36-d1ca3f4b520c",
+      "result_id": "bf27523d-0d6f-4ab6-83bb-4044f2466e54"
+    },
+    {
+      "claim_id": "0ebf2f43-d89c-4daa-a168-fb8950ba0e25",
+      "result_id": "bf27523d-0d6f-4ab6-83bb-4044f2466e54"
+    },
+    {
+      "claim_id": "dc768d88-94c6-42c1-aa8f-3438313b3f8e",
+      "result_id": "bf27523d-0d6f-4ab6-83bb-4044f2466e54"
+    },
+    {
+      "claim_id": "1edd5bfb-9be9-4011-8945-152dd3660957",
+      "result_id": "e30e260c-d1bb-4c93-bcff-a8d5b0c2ada3"
+    },
+    {
+      "claim_id": "f900dd21-0417-4174-a265-9a6414c46d97",
+      "result_id": "e30e260c-d1bb-4c93-bcff-a8d5b0c2ada3"
+    },
+    {
+      "claim_id": "7ecd0673-abb9-44ff-8dcb-0749dbd0031c",
+      "result_id": "e30e260c-d1bb-4c93-bcff-a8d5b0c2ada3"
+    },
+    {
+      "claim_id": "f7e12d0f-d4d2-41fa-b140-fbb8f60dd1b3",
+      "result_id": "e30e260c-d1bb-4c93-bcff-a8d5b0c2ada3"
+    },
+    {
+      "claim_id": "e8d88e62-82a9-4894-9890-04db670bc1c8",
+      "result_id": "e30e260c-d1bb-4c93-bcff-a8d5b0c2ada3"
+    },
+    {
+      "claim_id": "9ba3a0dd-98c2-43b2-b714-c53b73e2b4ac",
+      "result_id": "e2d71b97-e08e-41db-b0a2-0507f25fe715"
+    },
+    {
+      "claim_id": "75af1fa5-a8d4-43f5-bcf6-6a3a8aaa52c0",
+      "result_id": "e2d71b97-e08e-41db-b0a2-0507f25fe715"
+    },
+    {
+      "claim_id": "437ca854-7e89-4513-afdf-0e534100b017",
+      "result_id": "e2d71b97-e08e-41db-b0a2-0507f25fe715"
+    },
+    {
+      "claim_id": "da717a76-0025-4c9e-b9dc-8638a301b064",
+      "result_id": "e2d71b97-e08e-41db-b0a2-0507f25fe715"
+    },
+    {
+      "claim_id": "33cac90e-c41b-4e76-a7ce-9294c625c861",
+      "result_id": "e2d71b97-e08e-41db-b0a2-0507f25fe715"
+    },
+    {
+      "claim_id": "604878db-0c77-4433-9066-a7ecfae88e47",
+      "result_id": "e2d71b97-e08e-41db-b0a2-0507f25fe715"
+    },
+    {
+      "claim_id": "72f7ef9d-4371-4483-9e10-fcd08bdf8a37",
+      "result_id": "e2d71b97-e08e-41db-b0a2-0507f25fe715"
+    },
+    {
+      "claim_id": "65760d06-fa12-4b41-a344-fcd9372fbfe0",
+      "result_id": "e2d71b97-e08e-41db-b0a2-0507f25fe715"
+    },
+    {
+      "claim_id": "5118cacf-226f-4b2a-98df-42c07c31c603",
+      "result_id": "02a76ff7-ae2d-40d5-960e-7e56a22f42e5"
+    },
+    {
+      "claim_id": "3a0bdc9b-f7a9-4979-85d4-c93a9a19d73a",
+      "result_id": "02a76ff7-ae2d-40d5-960e-7e56a22f42e5"
+    },
+    {
+      "claim_id": "a41fb3b2-39f4-4128-996e-5ce01c622d4f",
+      "result_id": "02a76ff7-ae2d-40d5-960e-7e56a22f42e5"
+    },
+    {
+      "claim_id": "38edbfe9-0486-47ea-bfcd-5ee48ba6489b",
+      "result_id": "02a76ff7-ae2d-40d5-960e-7e56a22f42e5"
+    },
+    {
+      "claim_id": "5d7c8209-bd12-4cc8-97ee-7ddb6986a0a4",
+      "result_id": "02a76ff7-ae2d-40d5-960e-7e56a22f42e5"
+    },
+    {
+      "claim_id": "d8847a66-5d06-4d95-9584-1d8fde49d487",
+      "result_id": "02a76ff7-ae2d-40d5-960e-7e56a22f42e5"
+    },
+    {
+      "claim_id": "5b231c5d-1e5b-46b1-bd39-4fd967c093b6",
+      "result_id": "02a76ff7-ae2d-40d5-960e-7e56a22f42e5"
+    },
+    {
+      "claim_id": "2ac0a90e-15c7-42e7-90be-6acb9e865247",
+      "result_id": "02a76ff7-ae2d-40d5-960e-7e56a22f42e5"
+    },
+    {
+      "claim_id": "6da93fa4-d30d-4f2f-b9e8-00fc6d7652d4",
+      "result_id": "7730f791-d6fd-49ee-98f3-43cf26f579f5"
+    },
+    {
+      "claim_id": "989ccd6c-a98a-4501-967b-2dd59b2d13a5",
+      "result_id": "7730f791-d6fd-49ee-98f3-43cf26f579f5"
+    },
+    {
+      "claim_id": "3d7abf84-cefd-4011-9c5c-376ddad7164f",
+      "result_id": "7730f791-d6fd-49ee-98f3-43cf26f579f5"
+    },
+    {
+      "claim_id": "920ef2f9-609a-47da-886a-806efccc4b22",
+      "result_id": "7730f791-d6fd-49ee-98f3-43cf26f579f5"
+    },
+    {
+      "claim_id": "d87a7273-2af0-4ec4-b924-25585fb7acbc",
+      "result_id": "5a2bd1f4-3624-4e8f-bd21-4275dd5630bf"
+    },
+    {
+      "claim_id": "a128680d-0ae6-4f6a-9ced-85b44af64e22",
+      "result_id": "5a2bd1f4-3624-4e8f-bd21-4275dd5630bf"
+    },
+    {
+      "claim_id": "3303652b-176b-4752-9368-1429f728ffce",
+      "result_id": "5a2bd1f4-3624-4e8f-bd21-4275dd5630bf"
+    },
+    {
+      "claim_id": "1f04bc95-bac3-4ed9-844a-100dc87f7ac0",
+      "result_id": "5a2bd1f4-3624-4e8f-bd21-4275dd5630bf"
+    },
+    {
+      "claim_id": "93669f17-1b2d-4a86-a6c1-13dd89fa5d67",
+      "result_id": "5a2bd1f4-3624-4e8f-bd21-4275dd5630bf"
+    },
+    {
+      "claim_id": "69e7aad6-b4b7-4e17-9ec5-48ce2a58eb8a",
+      "result_id": "5a2bd1f4-3624-4e8f-bd21-4275dd5630bf"
+    },
+    {
+      "claim_id": "941c7202-b171-449b-8c49-cf9b293dbb15",
+      "result_id": "5a2bd1f4-3624-4e8f-bd21-4275dd5630bf"
+    },
+    {
+      "claim_id": "2fb05bfa-6af1-4577-a2c9-b3f8d53b8be9",
+      "result_id": "27d88020-44fd-4fbb-ac14-6e78ba062395"
+    },
+    {
+      "claim_id": "15c1c782-b053-449a-9379-76b52a8c1da4",
+      "result_id": "27d88020-44fd-4fbb-ac14-6e78ba062395"
+    },
+    {
+      "claim_id": "944730ce-8c2b-4566-a44e-e0fa24dff021",
+      "result_id": "27d88020-44fd-4fbb-ac14-6e78ba062395"
+    },
+    {
+      "claim_id": "d35f8250-994a-4198-9b80-2cc377d5c171",
+      "result_id": "27d88020-44fd-4fbb-ac14-6e78ba062395"
+    },
+    {
+      "claim_id": "1a368c82-4c5d-417e-ad1e-668330f3c23b",
+      "result_id": "27d88020-44fd-4fbb-ac14-6e78ba062395"
+    },
+    {
+      "claim_id": "520f8fd5-e79f-4482-9476-d284cc933703",
+      "result_id": "9ff9a134-1582-4337-bf27-f7a70493180d"
+    },
+    {
+      "claim_id": "80f0896e-59ba-4a43-be9f-7fda57328ae3",
+      "result_id": "9ff9a134-1582-4337-bf27-f7a70493180d"
+    },
+    {
+      "claim_id": "3a8aeb7e-3d2c-45bf-9901-a5a2de01fbdd",
+      "result_id": "9ff9a134-1582-4337-bf27-f7a70493180d"
+    },
+    {
+      "claim_id": "39cca9a2-631e-4606-814c-05c54423e092",
+      "result_id": "9ff9a134-1582-4337-bf27-f7a70493180d"
+    },
+    {
+      "claim_id": "cddfa6ac-4433-4b42-865e-2bbd120a2f38",
+      "result_id": "9ff9a134-1582-4337-bf27-f7a70493180d"
+    },
+    {
+      "claim_id": "d82038f2-a030-4b8f-b65e-307fbf7131cc",
+      "result_id": "9ff9a134-1582-4337-bf27-f7a70493180d"
+    },
+    {
+      "claim_id": "caeda4e8-9f26-4905-9499-ff5a70758d0d",
+      "result_id": "21a045e1-85a6-4d4a-9ec4-a3e7eb2bce4e"
+    },
+    {
+      "claim_id": "3d6563ef-b17a-4d09-8b29-eec42ca28251",
+      "result_id": "21a045e1-85a6-4d4a-9ec4-a3e7eb2bce4e"
+    },
+    {
+      "claim_id": "6512d72f-c74e-46cb-87d6-2ec545eb0b9a",
+      "result_id": "21a045e1-85a6-4d4a-9ec4-a3e7eb2bce4e"
+    },
+    {
+      "claim_id": "b04e4851-9a8e-430e-94c7-bfb1f3bbe0b7",
+      "result_id": "21a045e1-85a6-4d4a-9ec4-a3e7eb2bce4e"
+    },
+    {
+      "claim_id": "115790d1-b7e2-44f3-8ebf-64f0a2737ac4",
+      "result_id": "21a045e1-85a6-4d4a-9ec4-a3e7eb2bce4e"
+    },
+    {
+      "claim_id": "e09fdb57-41c0-4920-b746-39345e5510b6",
+      "result_id": "bd8abc08-832a-4358-8f96-33c54f6eb5df"
+    },
+    {
+      "claim_id": "d4686b97-22c6-4638-95f1-02f88134a209",
+      "result_id": "bd8abc08-832a-4358-8f96-33c54f6eb5df"
+    },
+    {
+      "claim_id": "2be63f3c-3b5e-44be-99d2-039a87d27258",
+      "result_id": "bd8abc08-832a-4358-8f96-33c54f6eb5df"
+    },
+    {
+      "claim_id": "30d7e975-cda2-4923-9329-ea30992916c7",
+      "result_id": "bd8abc08-832a-4358-8f96-33c54f6eb5df"
+    },
+    {
+      "claim_id": "e8d83c76-22f4-4126-905c-eb5cfce2fcc2",
+      "result_id": "d5cbde15-2373-41a0-a2a7-0bf0ea9b2a6c"
+    },
+    {
+      "claim_id": "1259e938-df26-4e78-b8e7-829179f1439e",
+      "result_id": "d5cbde15-2373-41a0-a2a7-0bf0ea9b2a6c"
+    },
+    {
+      "claim_id": "99cc1e31-7d81-4ced-8321-f56600e77743",
+      "result_id": "d5cbde15-2373-41a0-a2a7-0bf0ea9b2a6c"
+    },
+    {
+      "claim_id": "ef206716-5c8f-44f0-bcc6-65e0fea51b6e",
+      "result_id": "d5cbde15-2373-41a0-a2a7-0bf0ea9b2a6c"
+    },
+    {
+      "claim_id": "df99392b-6ffa-4d36-9343-750a6851ee2d",
+      "result_id": "d5cbde15-2373-41a0-a2a7-0bf0ea9b2a6c"
+    },
+    {
+      "claim_id": "f9652a05-a036-4d70-87c5-3d3f3da2e84d",
+      "result_id": "d5cbde15-2373-41a0-a2a7-0bf0ea9b2a6c"
+    },
+    {
+      "claim_id": "49242cd5-da7d-4858-ac66-009d6aefead6",
+      "result_id": "d5cbde15-2373-41a0-a2a7-0bf0ea9b2a6c"
+    },
+    {
+      "claim_id": "94fb3a38-7668-42d3-b0c8-88d34cb6e2dc",
+      "result_id": "3dea4be9-3ec5-4fb1-8e2a-4c08abd45141"
+    },
+    {
+      "claim_id": "575765bc-c554-4d8d-b8a5-8447fdb0d3c7",
+      "result_id": "3dea4be9-3ec5-4fb1-8e2a-4c08abd45141"
+    },
+    {
+      "claim_id": "c2310981-5314-435c-8539-11839b202dfb",
+      "result_id": "3dea4be9-3ec5-4fb1-8e2a-4c08abd45141"
+    },
+    {
+      "claim_id": "6c0949d7-19df-4d2a-94da-eee613c5b37d",
+      "result_id": "3dea4be9-3ec5-4fb1-8e2a-4c08abd45141"
+    },
+    {
+      "claim_id": "77172e98-815f-4004-9a31-04f49f9c2400",
+      "result_id": "faee089b-a211-4ebd-bb32-ecf1f1e1eb37"
+    },
+    {
+      "claim_id": "a9bdf3fb-025c-4869-9313-74d676d86fba",
+      "result_id": "faee089b-a211-4ebd-bb32-ecf1f1e1eb37"
+    },
+    {
+      "claim_id": "673ad7c0-073c-4550-ae85-3eb34f693eb6",
+      "result_id": "faee089b-a211-4ebd-bb32-ecf1f1e1eb37"
+    },
+    {
+      "claim_id": "dc9b20b1-ead4-4b91-a113-326df1d06451",
+      "result_id": "faee089b-a211-4ebd-bb32-ecf1f1e1eb37"
+    },
+    {
+      "claim_id": "7eb81fb3-3edc-45f7-9f40-d83c8c162e0b",
+      "result_id": "843f7a22-26dd-4b31-9a6d-06328a56f516"
+    },
+    {
+      "claim_id": "08dc7b29-7b0a-48e5-9e2d-f744be54eaca",
+      "result_id": "843f7a22-26dd-4b31-9a6d-06328a56f516"
+    },
+    {
+      "claim_id": "047bb6e5-2823-46e1-9684-fed4bb18296b",
+      "result_id": "c69e0dd5-41a2-4882-9e68-c0bf010f2b74"
+    },
+    {
+      "claim_id": "896ada9c-750f-4d29-bbb1-cb417d6e1d44",
+      "result_id": "c69e0dd5-41a2-4882-9e68-c0bf010f2b74"
+    },
+    {
+      "claim_id": "62bfdb58-dc6c-4cde-ab08-4777318b700a",
+      "result_id": "c69e0dd5-41a2-4882-9e68-c0bf010f2b74"
+    },
+    {
+      "claim_id": "f19b51f3-f48e-4ac5-a8b8-7b9683f82943",
+      "result_id": "7c700b27-c9bc-4087-ad4c-73002e02b792"
+    },
+    {
+      "claim_id": "e7997749-cd37-4ce9-9a46-ca9649cb6976",
+      "result_id": "7c700b27-c9bc-4087-ad4c-73002e02b792"
+    },
+    {
+      "claim_id": "0c935efb-817d-4685-bb9b-ba8ad8b060c3",
+      "result_id": "7c700b27-c9bc-4087-ad4c-73002e02b792"
+    },
+    {
+      "claim_id": "7d0eaba2-d4aa-4082-b94c-bc2b64ec8921",
+      "result_id": "7c700b27-c9bc-4087-ad4c-73002e02b792"
+    },
+    {
+      "claim_id": "92d73c70-cad5-4265-b3a0-9bd6932a9577",
+      "result_id": "7c700b27-c9bc-4087-ad4c-73002e02b792"
+    },
+    {
+      "claim_id": "65895658-64bb-4aa4-b5f6-cb11dd114195",
+      "result_id": "7c700b27-c9bc-4087-ad4c-73002e02b792"
+    },
+    {
+      "claim_id": "4234a0a3-0a3b-40e4-8671-05fb4b4039a6",
+      "result_id": "7c700b27-c9bc-4087-ad4c-73002e02b792"
+    },
+    {
+      "claim_id": "1b5b4ffa-ef14-4ae5-a326-5ddf0b01d2e6",
+      "result_id": "7c700b27-c9bc-4087-ad4c-73002e02b792"
+    },
+    {
+      "claim_id": "c88ed8fd-148f-4f96-9469-a403c5b1d8ce",
+      "result_id": "7c700b27-c9bc-4087-ad4c-73002e02b792"
+    },
+    {
+      "claim_id": "0749572f-57ea-4683-a7e0-5dc63f673162",
+      "result_id": "8bae150e-ce24-42bb-bc2b-311055737b5c"
+    },
+    {
+      "claim_id": "850f2103-b5ab-4258-b21c-836aa321beda",
+      "result_id": "8bae150e-ce24-42bb-bc2b-311055737b5c"
+    },
+    {
+      "claim_id": "dba5fb08-3c1c-4e42-a4a1-098d721aa4fc",
+      "result_id": "8bae150e-ce24-42bb-bc2b-311055737b5c"
+    },
+    {
+      "claim_id": "2e162e05-64bd-469d-b202-bbc2bbc3471f",
+      "result_id": "8bae150e-ce24-42bb-bc2b-311055737b5c"
+    },
+    {
+      "claim_id": "d45ec2c3-9bf9-4e67-a082-3893cbf665f7",
+      "result_id": "b915b8d4-80b7-4c06-946d-9f338a2f17bc"
+    }
+  ],
+  "comparisons": []
+}

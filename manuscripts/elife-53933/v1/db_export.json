@@ -1,0 +1,1272 @@
+{
+  "submission": {
+    "id": "156810df-e334-4c16-a704-d9c5f4866279",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:12:15.982218Z",
+    "updated_at": "2025-12-02T17:12:15.982218Z"
+  },
+  "content": [
+    {
+      "id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "submission_id": "156810df-e334-4c16-a704-d9c5f4866279",
+      "content_type": "manuscript",
+      "content_text": "# Heterogeneous T cell motility behaviors emerge from a coupling between speed and turning in vivo\n\n## Authors\n\n- Elizabeth R Jerison<sup>1</sup> ([ORCID: 0000-0003-3793-8839](https://orcid.org/0000-0003-3793-8839)) \u2020\n- Stephen R Quake<sup>1</sup> ([ORCID: 0000-0002-1613-0809](https://orcid.org/0000-0002-1613-0809)) \u2020\n\n### Affiliations\n\n1. Department of Applied Physics, Stanford University Stanford United States\n2. Department of Bioengineering, Stanford University Stanford United States\n3. Chan Zuckerberg Biohub San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nT cells in vivo migrate primarily via undirected random walks, but it remains unresolved how these random walks generate an efficient search. Here, we use light sheet microscopy of T cells in the larval zebrafish as a model system to study motility across large populations of cells over hours in their native context. We show that cells do not perform Levy flight; rather, there is substantial cell-to-cell variability in speed, which persists over timespans of a few hours. This variability is amplified by a correlation between speed and directional persistence, generating a characteristic cell behavioral manifold that is preserved under a perturbation to cell speeds, and seen in Mouse T cells and Dictyostelium. Together, these effects generate a broad range of length scales over which cells explore in vivo.\n\n## Introduction\n\nMany immune cells migrate through tissue in search of antigen or pathogens. In some cases, such as during extravasation from blood vessels and homing to target organs, this migration is guided by chemokine gradients (Witt et al., 2005; Okada et al., 2005; Germain et al., 2012; Sarris and Sixt, 2015). However, for naive T cells within T cell zones, in situ imaging studies have found that unguided random walk processes dominate (Miller et al., 2002; Miller et al., 2003; Preston et al., 2006; Cahalan and Parker, 2008; Beltman et al., 2007; Banigan et al., 2015; Harris et al., 2012; Worbs et al., 2007; Textor et al., 2011; Beauchemin et al., 2007; Mrass et al., 2006; Katakai et al., 2013; Mrass et al., 2017, reviewed in Mrass et al., 2010; Krummel et al., 2016). This observation creates a conceptual challenge: T cells must dwell at scales of microns to make contact with antigen presenting cells (W\u00fclfing et al., 1997; Krummel et al., 2000; Beltman et al., 2009a; Fricke et al., 2016), yet migrate over scales of millimeters to find rare targets. A conventional diffusive random walk struggles to access these varied scales efficiently, since a walker that dwells near another cell for 1 min would require several days to travel 1 mm. Several authors have suggested that T cells may have an intrinsic behavioral program that allows them to explore over different length scales (Harris et al., 2012; Krummel et al., 2016; Mempel et al., 2004). However, testing this hypothesis via in situ fluorescence microscopy raises inherent technical challenges: to observe a single cell accessing a broad range of spatial scales, it is necessary to have micron scale resolution over fields of view of millimeters, with low enough photodamage to observe the same cells at high spatiotemporal resolution over long periods. For example, one intriguing proposal is that T cells perform Levy flight (Harris et al., 2012), an anomalous random walk characterized by a power-law distribution of step sizes. Such random walks have been described in detail in the physics and ecology literature (Shlesinger et al., 1995; Bartumeus et al., 2005; Viswanathan et al., 2011), and their scale-free behavior provides a natural way for foragers to accelerate searches in many contexts (Bartumeus et al., 2002). However, observation over short periods cannot distinguish between Levy flight and heterogeneity amongst individual walkers (Petrovskii et al., 2011), both of which can create a broad distribution of displacements. More generally, we would like to understand whether there is a statistically-consistent behavioral program carried out by these cells.\n\nTo address this question, we used selective plane illumination microscopy (Pitrone et al., 2013; Power and Huisken, 2017) to observe the native population of T cells in the live larval zebrafish (Tg(lck:GFP, nacre-/-) Langenau et al., 2004), over millimeter fields of view and periods of a few hours. We observed a population of motile cells in tissue in the tail of the zebrafish, primarily in the tail fin and larval fin fold (Figure 1A, Figure 1\u2014video 1). We chose this population for further study because of the potential to measure the interstitial exploration behavior of the cells over long length-scales, and to dissect the variation in behavior over a populations of cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig1-v1.jpg)\n\n**Figure 1.:** (A) Maximum Z projection of a Tg(lck:GFP, nacre-/-) zebrafish at 12 dpf. This projection represents the first frame of a timecourse; see Figure 1\u2014video 1. (B) Brightfield of the region of tissue shown in A. Stitching across three tiles was performed in ImageJ. (C) Mean squared displacement as a function of time lag. The cells migrate super-diffusively on scales of a few minutes. The MSD for a persistent random walk is fit to the data (Materials and methods, Appendix 1). Error bars represent 95% confidence intervals on a bootstrap over n\u00a0=\u00a0316 trajectories containing all measured time intervals. (See also Figure 1\u2014figure supplement 2). Inset: linear scale for the first 10 min. (D) The velocity power spectrum, averaged across all trajectories (n\u00a0=\u00a0634). A Levy (scale-free) process consistent with the short time behavior would result in a continuation of the high frequency slope (dashed line). Instead, we observe a timescale at a few minutes. (E) Distribution of bout lengths within a trajectory (Materials and methods), fit with a stretched exponential (n\u00a0=\u00a035819 bouts). The fitted stretch parameter $\\beta=.9$. For all panels, trajectories were pooled from n\u00a0=\u00a016 fish.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Stitched brightfield image of the zebrafish tail, (same as Figure 1B), with the fin fold and tail fin regions indicated. Lines were added at the border between the fin fold and muscle regions of the tail to guide the eye.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** MSD for all trajectories tracked through 15 min, including all measured time intervals (n\u00a0=\u00a0612). As with the subset of longer trajectories, we observe a curved MSD consistent with a persistent random walk (PRW) model. Inset: linear scale through 10 min, showing a straight line consistent with diffusive behavior after the first few minutes. Error bars represent 95% confidence intervals on a bootstrap over trajectories.\n\nRather than a single broad distribution of speeds sampled by all cells, as in Levy flight, we observed considerable heterogeneity in both speed and turning behavior across cells. This observation, together with prior literature (Maiuri et al., 2015), prompted us to analyze the distribution of cell behaviors in a space defined by speed and turning statistics. Surprisingly, cell behaviors fell on a one dimensional manifold in this space, characterized by a coupling between speed and directional persistence. Analysis of previously-published data in mouse T cells (G\u00e9rard et al., 2014) and Dictyostelium (Dang et al., 2013) within this framework showed that their migration statistics fell along a similar manifold. Our results show that a wide variation in speeds, combined with a coupling between speed and persistence, generate a broad distribution of length scales of exploration in vivo.\n\n## Results\n\n### Cell motility behavior is inconsistent with Levy flight\n\nTo investigate the statistical properties of T cell motility in our system, we measured cell trajectories within the tissue posterior to the anus (Materials and methods, Figure 1\u2014video 1, Figure 2\u2014video 1). This region is composed primarily of the tail fin and larval fin fold, which represent a millimeter-scale tissue over which the cells can potentially migrate. We note that cells in circulation, while present, move orders of magnitude faster than those in tissue, and thus are not included in our observations or analysis. Note also that our observations were performed in the absence of an external perturbation such as an infection.\n\nWe first evaluated evidence for Levy flight behavior, as opposed to persistent random walks (Beauchemin et al., 2007; Beltman et al., 2007; Banigan et al., 2015; Harris et al., 2012), in our system. The distinction hinges on whether the statistics of individual trajectories are scale-free, so that super-diffusive behavior continues to long times; or if, alternatively, individual trajectories are diffusive at long times but there is heterogeneity across the population. To address this question, we performed a standard analysis of mean squared displacement as a function of time interval. Consistent with previous measurements (Beauchemin et al., 2007; Beltman et al., 2007; Banigan et al., 2015; Harris et al., 2012), we observed a faster-than-linear increase in MSD at early times, indicating super-diffusive behavior, with a best-fit line in surprisingly good quantitative agreement with previous observations up through 10 min (Harris et al., 2012; Fricke et al., 2016;\u00a0Figure 1C). However, we observed a transition at the scale of minutes, consistent with persistent random walks, and inconsistent with Levy flight (also note the straight line on a linear scale, Figure 1C inset, characteristic of diffusive behavior). Note that while we have examined the subset of longer trajectories to measure the behavior through an additional order of magnitude in time, this result also holds when examining all trajectories through 15 min (Figure 1\u2014figure supplement 2). To further test for an intermediate timescale, we computed the velocity-velocity power spectrum, using secant-approximated velocities along each trajectory (Materials and methods). This quantity captures the timescale at which the velocities become decorrelated, if it exists; for a Levy-flight process the same negative slope is observed at all frequencies (Viswanathan et al., 2005), while a persistent random walk model passes towards zero slope at low frequencies (Viswanathan et al., 2005; Pedersen et al., 2016). Consistent with the MSD analysis, we observe two regimes, with a clear timescale on the order of minutes (Figure 1D). Finally, we computed the distribution of lengths between direction changes (bout lengths) within a trajectory (Materials and methods), scaled by the average bout length as suggested in Petrovskii et al., 2011, and did not observe the characteristic Levy-flight power law (Figure 1E).\n\n### Motility behavior is heterogeneous across cells\n\nSince we did not find support for Levy flight in our system, we next evaluated evidence for cell-to-cell heterogeneity. From examples of velocity traces (Figure 2A,C\u2013E, Figure 2\u2014video 1), we observed substantial variation in speed between cells, that can persist over spans of a few hours. These trajectories are not atypical: overall, 88% of trajectories have distributions of secant-approximated speeds that are inconsistent with the speed distribution pooled on all trajectories (KS test, $p<.01$). Interestingly, we also found significant heterogeneity in cell turning behavior: 67% of cells had turn angle distributions inconsistent with the overall distribution (KS test, $p<.01$).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig2-v1.jpg)\n\n**Figure 2.:** (A) Example of trajectories recorded over 3 hr at a 12 s interval (Tg(lck:GFP, nacre-/-) zebrafish; 10 dpf). Here we show a maximum Z projection of the 900th frame with trajectories overlaid; see Figure 2\u2014video 1 for the timecourse. Examples of four cell trajectories, with a range of characteristic speeds, are colored. (B) Spearman rank correlation between trajectory speeds measured on non-overlapping 19.5 min intervals, as a function of the time between the beginning of the intervals. Error bars represent 95% confidence intervals on a bootstrap over trajectories. The null model was constructed by permuting measured speeds across all the trajectories at each interval; error bars represent 95% confidence intervals over the permutations. (Calculations performed on the n\u00a0=\u00a0321 trajectories of at least 117 min in length.) Trajectories were pooled over\u00a0n\u00a0=\u00a016\u00a0fish.\u00a0(C) Velocity traces for the four cells highlighted in A. (D) Secant-approximated speed distributions for each cell from A, compared with the distribution over all cells (grey;n\u00a0=\u00a098141 steps). (E) Turn angle distributions for each cell from A, compared with the distribution over all cells (grey;n\u00a0=\u00a096122 turn angles).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Best linear predictor of speed based on sample identity (i.e. mean speed within the sample) vs. trajectory speeds. There is both variation in speeds from sample to sample and also a broad distribution of speeds within each sample.\n\nTo evaluate the rate of speed switching in our system, we measured the average speeds of individual trajectories on non-overlapping ~20 min intervals, and evaluated how the speed ranks change as a function of the time between intervals (Figure 2B). We found a high correlation between speeds on adjacent non-overlapping intervals, which decays slowly on the timescale of the measurement. Thus each cell samples a characteristic distribution of speeds that is stable over one to two hours. For the remainder of the analysis, we will consider the average speed to be a property of the trajectory; we return to consider the implications of speed switching in the discussion.\n\nWe note that we observed variation in the distributions of cell speeds between samples: overall, 48% of the variance in cell speeds can be explained by the sample identity. Nonetheless, the distributions of cell speeds within each sample are broad and overlapping (Figure 2\u2014figure supplement 1), accounting for the majority of the variance (52%). Amongst other effects, sample to sample variation could be the result of differences in antigen environment or global cytokine levels between fish.\n\n### Heterogeneous cell migration statistics fall on a behavioral manifold\n\nPrevious work (Maiuri et al., 2015) has suggested that actin flows may generate a coupling between speed and directional persistance in migrating cells. This study generates the hypothesis that cells, in general, are not free to pick any turn and speed statistics, but rather that there may be underlying biophysical constraints. To investigate this hypothesis in our system, we divided the cells into quintiles based on speed, which we refer to as speed classes. We observed strong variation in the distribution of turn angles amongst speed classes (Figure 3A): fast cells are most likely to turn shallowly, slow cells are most likely to turn around, and the distribution varies smoothly across the speed classes. This dependence could be driven by a local coupling between speed and turn angle: cells tend to go straighter whenever they go fast, which the faster cells do more often. Alternatively, it could be driven by an overall behavioral difference between fast and slow cells. To distinguish these possibilities, we measured the average turn angle as a function of the size of the steps surrounding it (Figure 3B). We found that both of these effects contribute: all cells go straighter during faster periods, but for a given step size, slow cells are more likely to turn sharply.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig3-v1.jpg)\n\n**Figure 3.:** (A) Distribution of turn angles amongst cells grouped by speed class. The distribution varies smoothly from faster cells, which tend to go straighter, to slower cells, which tend to turn around more often. Error bars represent 95% confidence intervals from a bootstrap over trajectories in each speed class. The legend reports the mean speed for trajectories in each class. (B) Turning behavior conditioned on current cell speed. The average of the cosine of the turn angle as a function of the average length of the steps on either side. Cells are grouped into speed classes as in A. Error bars represent 95% confidence intervals from a bootstrap over trajectories in each speed class. (C) Mean squared displacement by speed class. Due to the variation in turning behavior, the faster cells appear initially more superdiffusive. Error bars represent 95% confidence intervals from a bootstrap over trajectories in each speed class. All speed class calculations were performed on the n\u00a0=\u00a0569 trajectories that included all time intervals in the MSD analysis. (D) Organization of cell behavior into a curve in a three dimensional behavioral space. Each point represents a trajectory, and we show the average speed, turn angle, and local speed-turn correlation. Grey: projection into the x-y plane. The trajectories shown in Figure 2 are colored. Trajectories pooled over n\u00a0=\u00a016 fish.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Spline fit to speed-turn angle relationship. (B) The fraction of the variance in the turn angle summary statistic explained by speed (estimated based on the spline fit in A.), by stochasticity, that\u00a0is variance within a trajectory; and by other factors, which may include imperfections in the spline fit (see Materials and methods).\n\nThe relationship between speed and turning suggests that there may also be systematic differences in the scaling of the MSD at short times between cells. In particular, variation in speed alone amongst individuals would not change the shape of the MSD, which would collapse when appropriately scaled (Appendix 1). On the other hand, the systematically shallower turns of faster cells would be expected to boost the slope of their MSD at short times, an effect we observe in the data (Figure 3C).\n\nThe analysis at the level of speed classes suggested that there might be a single scalar variable, for which the cell\u2019s average speed is a good proxy, that determines a number of higher-order statistics characterizing the cell\u2019s migration behavior. To test this at the level of individual trajectories, we chose two summary statistics that capture the cell\u2019s turning behavior: the average of the cosine of the turn angles along the trajectory, and the correlation between speeds and turn angles along the trajectory. The former is a summary of the overall distribution of turn angles for that cell, while the latter captures the degree of additional local coupling between speed and turn angle. Together with the cell\u2019s speed, these two summary statistics form a three-dimensional behavioral space. We observed that the cell trajectories fall close to a curve in this space (Figure 3D). In particular, 73% of the variance in the average cosine can be explained by cell speed, with some residual variance due to the stochasticity of the process (7%) and other unknown effects (20%) (Figure 3\u2014figure supplement 1). Thus T cell migration statistics can be organized into a one-dimensional behavioral manifold, characterized by a strong dependence between speed and turning behavior.\n\n### Model predicts wide variation in length scales of exploration across the population\n\nOur observation of a behavioral manifold suggests that, despite the apparent heterogeneity in migration strategies, there may be a common program with a single underlying variable, consistent with the work of Mauri et al. In this view, a cell\u2019s location on the manifold reflects its internal value of this control variable, which in turn dictates its random walk behavior. Given the results of our MSD analysis, to determine candidates for a single-parameter migration model, we started with the canonical persistent random walk (Ornstein-Uhlenbeck) process (Uhlenbeck and Ornstein, 1930):\n\n$$\n\\frac{d\u2062v_{i}}{d\u2062t}=-\\frac{1}{P}\u2062v_{i}+\\frac{S}{\\sqrt{P}}\u2062\u03b7,\n$$\n\nwhere v is the velocity, $\u03b7$ is a white noise term, and $i$ labels the velocity component. This model has two free parameters: the speed, S, and the persistence time, P, which is the average time before a cell turns. (Note that speeds inherently vary along trajectories in this model; S controls the average speed.) Our observations suggest that there may in fact only be one control parameter; in particular, because faster cells tend to make shallower turns, we expect P to increase with S. To determine the relationship between these two variables, we measured the persistence time, averaged along each trajectory, as a function of cell speed, and found a linear dependence (Figure 4A). This suggests the following simple model of cell motility:\n\n$$\n\\frac{d\u2062v_{i}}{d\u2062t}=-\\frac{1}{\\frac{S}{\\alpha}+\\beta}\u2062v_{i}+\\frac{S}{\\sqrt{\\frac{S}{\\alpha}+\\beta}}\u2062\u03b7\n$$\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig4-v1.jpg)\n\n**Figure 4.:** (A) Mean persistence time as a function of cell speed, measured along trajectories (n\u00a0=\u00a0710). Error bars represent 95% confidence intervals from a bootstrap over trajectories. UPT: Uniform persistence time; SPC: Speed-persistence coupling. (B) Scaling of the effective diffusion constant with cell speed. Except for a constant offset, parameters are fixed based on the speed-persistence relationship in A. Error bars represent 95% confidence intervals on a bootstrap over trajectories. Numbers of trajectories in each time interval: n\u00a0=\u00a0704; n\u00a0=\u00a0654; n\u00a0=\u00a0607; n\u00a0=\u00a0558; n\u00a0=\u00a0523. Trajectories were pooled over n\u00a0=\u00a016 fish.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Panels A,B,D,E as in Figure 3A\u2013D; Panels C,F as in Figure 4A\u2013B; with all statistics re-calculated based on sub-sampling timepoints by a factor of 2.\u00a0.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** As in Figure 4A, where the persistence time is defined to be the average time before the angle deviates by $\\frac{\\pi}{6}$.\n\nwhere $\\alpha$ is a constant with units of acceleration, $\\beta$ is a constant with units of time, and both are constrained by the empirical relationship in Figure 4A. We call this the speed-persistence coupling model (SPC).\n\nAs in other persistent random walk models, SPC walkers are diffusive at long times; the MSD scales linearly with time, and the ratio between these quantities defines an effective diffusion constant (Appendix 1):\n\n$$\nD_{e\u2062f\u2062f}\u2261\\frac{M\u2062S\u2062D\u2062(\\tau)}{4\u2062\\tau}=\\frac{1}{2}\u2062S^{2}\u2062P.\n$$\n\nDue to the dependence of P on S, the SPC model predicts a strong scaling of the effective diffusion constant with cell speed. We tested this prediction at several time intervals $\\tau$ and found good quantitative agreement between the model and the data (Figure 4B). In particular, heterogeneity in speeds creates a broad range of effective diffusion constants, spanning 2 orders of magnitude. The coupling between speed and persistence amplifies this effect, generating five-fold more variation in the effective diffusion constants across the cells than would be expected for a uniform persistence time model (UPT). We also note that the collapse of $D_{e\u2062f\u2062f}$ measured at different time lags $\\tau$ provides additional corroboration of diffusive (as opposed to Levy/super-diffusive) scaling.\n\nThe analyses in this and the previous section depend on measured cell speeds and turn angles, which are an imperfect proxy for the true instantaneous process (Beltman et al., 2009b). In particular, both noise in the cell locations and finite sampling intervals can introduce bias in the measured speeds, which could in principle generate spurious relationships between measured speed and turning behavior. We took two approaches to addressing the sensitivity of our conclusions to these issues. First, we addressed sensitivity to sampling rate by repeating the analyses above, subsampling timepoints by a factor of 2. This makes the turning behavior of the slowest two speed classes harder to distinguish, because they are rarely persistent over more than one timestep (Figure 4\u2014figure supplement 1A,D), and introduces more noise in the local coupling and persistence relationships (Figure 4\u2014figure supplement 1B\u2013C), but otherwise does not alter the structure of the correlations (Figure 4\u2014figure supplement 1A\u2013F). Second, we assessed the potential biases introduced by mislocation noise and finite sampling to the speed-persistence relationship in simulations (Appendix 1, Appendix 1\u2014figure 1). We found that mislocation noise can lead to spurious correlations between speed and persistence at the slow end of the speed spectrum, but cannot account for the consistent correlation we observe across speeds.\n\nAdditionally, we note that our measured trajectories stay predominantly within the tail fin and larval fin fold (Figure 1\u2014figure supplement 1), suggesting a boundary between the fin fold and muscle region of the tail. Such a boundary could influence the MSD. However, we compared to the MSD calculated on one held-out sample not subject to these boundary effects and observed no difference (see Appendix 1\u2014figure 2).\n\nFinally, we note that the SPC Langevin model describes the effective diffusive behavior of the trajectories and their scaling at longer times, but may not capture all the details of the microscopic dynamics. In particular, the propensity of trajectories to turn backwards (peak at $\\theta=\\pi$ radians, Figure 3A) is not captured by this model.\n\n### Manifold is preserved under a drug perturbation to cell speeds, and in mouse T cells and Dictyostelium\n\nWe next asked about the robustness of the observed behavioral manifold under a perturbation to cell speeds. Given the role of actin nucleation and remodeling in leukocyte motility (Vicente-Manzanares et al., 2002), we chose the drug Rockout, a known Rho kinase inhibitor affecting this pathway (Barros-Becker et al., 2017), as a candidate for perturbing cell speed, and repeated the measurements and analysis of cell migration behavior in the presence of the drug (Materials and methods). We found that the distribution of cell speeds shifted downwards, but we still observed a quantitatively similar positive relationship between speed and turning behavior (Figure 5A,B). This is consistent with a model where the perturbation primarily shifted an internal cell state variable that determines location along the behavioral manifold, which in turn dictates both speed and turning behavior, although we note that there may be an additional small shift towards shallower turns in the drug condition.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig5-v1.jpg)\n\n**Figure 5.:** (A) Correlation between the average cosine of the turn angles along the trajectory and cell speed, for cells in control and Rockout-treatment conditions. Data for all cells is shown as well as a binned average. Error bars represent 95% confidence intervals on the binned average on a bootstrap over cells. (B) The distribution of speeds amongst control and Rockout-treated trajectories. The treatment lowers cell speeds but maintains the relationship between speed and persistence. Statistics based on trajectories pooled over n\u00a0=\u00a016 control fish (n\u00a0=\u00a0712 trajectories) and n\u00a0=\u00a06 Rockout treatment fish (n\u00a0=\u00a0236 trajectories). (See also Figure 5\u2014figure supplement 1. (C) As in A, for mouse T cells (data from G\u00e9rard et al., 2014). The perturbation is a genetic knockout of a non-canonical myosin motor, Myo1g. E. As in A, for Dictyostelium (data from Dang et al., 2013). The perturbations are a knockout and rescue of the Arp2/3 inhibitor Arpin. (control: n\u00a0=\u00a042; Myo1g KO: n\u00a0=\u00a0123) (D,F) Distributions of cell speeds for the control and treatment conditions shown in C,E. (WT: n\u00a0=\u00a042; Arpin KO: n\u00a0=\u00a038; Arpin rescue: n\u00a0=\u00a042) In each case, the distribution of speeds shifts, but the cells tend to move along the speed-turn curve. ).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** As in Figure 5A,B, but including only those control samples with a paired Rockout treatment sample (n\u00a0=\u00a06 fish). Fish were imaged for 2.5 hr, and imaging media was replaced with media containing Rockout. Imaging over the same field of view was continued for 2.5 hr.\n\nFinally, we analyzed published data from two other species, mouse T cells in situ (G\u00e9rard et al., 2014) and Dictyostelium (Dang et al., 2013), in this framework. While some of the analyses that depend on longer time traces and larger cell numbers are not possible with these datasets, we tested the relationship between average turn angle and cell speed. We found that this correlation held amongst the control cells in both studies (Figure 5C\u2013F). This suggests that, as for zebrafish T cells, there is heterogeneity in speed and turning behavior amongst the cells, and is consistent with a similar behavioral manifold. In the two published studies, genetic perturbations that knocked out or down one member of the actin remodeling machinery were used: a knockout of the non-canonical myosin Myo1g in one case, and a knockout of the Arp2/3 inhibitor Arpin in the other. In each case, the perturbation had a substantial effect on the distribution of cell speeds (Figure 5, E-F). However, in both cases, a quantitatively similar positive relationship between the speed and turning behavior amongst the perturbed cells was preserved.\n\n### Single cell RNA sequencing suggests transcriptional heterogeneity in actin nucleation activity\n\nOur observation that cells maintain characteristic distributions of speeds over periods of a few hours suggests that there may be variation in transcriptional state that underlies some of the heterogeneity in cell migration behavior. To investigate this possibility, we performed single-cell RNA sequencing on cells isolated from the tail of 15 dpf Tg(lck:GFP) zebrafish. To assess the fidelity of the marker, we sorted GFP+ cells from an unbiased FSC/BSC gate (Materials and methods). We used standard dimensional reduction and clustering methods (Materials and methods) to identify 330 putative T cells (Figure 6\u2014figure supplement 1). Unexpectedly, we also identified a population of epithelial cells that may mis-express lck at low levels (Materials and methods, Figure 6\u2014figure supplement 1, Figure 6\u2014figure supplement 2).\n\nWe next used a self-assembling manifold algorithm designed to detect subtle variation (Tarashansky et al., 2019) to examine finer-scale structure within the putative T cell cluster. This algorithm revealed a plate effect related to one of our sort plates (Figure 6\u2014figure supplement 3), which we therefore excluded from the remainder of the analysis. We repeated the SAM analysis on the remaining (n\u00a0=\u00a0237) cells, and identified two main subtypes (Figure 6A\u2013B), consistent with a previous report (Tang et al., 2017). We note that the prior study identified the smaller subpopulation as NK cells; however, in addition to the previously-reported marker genes, we find that these cells have moderate expression of the T cell receptor trac. We have therefore chosen not to annotate these as NK cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig6-v1.jpg)\n\n**Figure 6.:** (A) UMAP dimensional reduction of single-cell RNA sequencing profiles of zebrafish T cells (Materials\u00a0and\u00a0methods) shows two main subtypes. Cluster colors are shared across panels A, B, D, and E. For a list of differentially-expressed genes between clusters, see Supplementary file 1. (B) Violin plots of marker genes in common to both subtypes (including immune, T cell, and motility markers), as well as selected marker genes for each subtype. (For the list of differentially-expressed genes, see Supplementary file 1). (C) Distribution of a rank correlation coefficient-related statistic between arpc1b and other moderate and high expressed genes, amongst all T cells (Materials\u00a0and\u00a0methods). Statistically significant outliers (after Bonferonni correction) are colored and labeled. The top correlated genes include three also involved in actin nucleation activity. (D) Correlation between expression (counts + 1) of arpc1b and actb2 across the T cells, with colors as in A. (E) Correlation between expression (counts + 1) of arpc1b and cdc24l, with colors as in A. Analysis performed on n\u00a0=\u00a0237 cells (see Main Text, Materials\u00a0and\u00a0methods).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) UMAP dimensional reduction of cell gene expression profiles from scRNAseq, with clusters assigned by HDBSCAN (colors). (B) Index sort data of FSC/BSC for these cells (colors correspond to cluster assignments from A). (C) Violin plot of a selection of the differentially-expressed genes between the two clusters (Wilcoxon rank-sum test, see Figure 6\u2014figure supplement 2, Supplementary file 2), as well as a panel of markers associated with other types of immune cells. Genes expressed in the first cluster include immune, T-cell associated, and actin remodeling/motility associated genes. Genes expressed in the second cluster include keratin as well as the epithelial marker ahnak.\u00a0.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Differential expression analysis between the two cell clusters in Figure 6\u2014figure supplement 1. Named genes with the top 100 p values are labeled. See also Supplementary file 2.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53933/elife-53933-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** UMAP dimensional reduction of only the T cell cluster, using the self-assembling manifold algorithm, colored by sort plate. This revealed a significant plate effect involving p1. We therefore excluded this plate from further analysis of the fine-scale variation amongst T cells.\n\nBoth subpopulations of cells express high levels of genes canonically involved in actin nucleation and remodeling in the leukocyte cytoskeleton (Vicente-Manzanares et al., 2002; Takenawa and Suetsugu, 2007) (WASP/ARP2/3 pathway; Figure 6B); indeed, these genes are amongst the top differentially expressed between the T cells and putative epithelial cells in our sample (Figure 6\u2014figure supplement 1,\u00a0Figure 6\u2014figure supplement 2). To analyze variation in this pathway amongst the T cells, we chose arpc1b, a subunit of the ARP2/3 complex, as a reference gene because ARP2/3 directly nucleates actin during ameboid cell migration, and its inhibition is known to modulate cell speed (Dang et al., 2013). We tested the rank correlation of expression of all other moderate to high expressed genes with arpc1b (Figure 6C). We found that 3 of the four top correlated genes (those that are statistically significant after Bonferonni correction) are also canonically involved in this pathway: the actin monomer genes act2b and act1b, as well as the upstream activator cdc42l. Unexpectedly, the fourth gene encodes a lincRNA whose biological function is unknown. Thus we detect real, although not strong, co-variation in genes involved with actin nucleation, which may create long-lived cell-intrinsic variation in motility.\n\nWhile the two T cell subpopulations separate in some dimensions of gene expression space, including, for example, the marker genes shown in Figure 6B, both groups express arpc1b and its correlates. Indeed, the distributions of expression for the two subtypes overlap for these genes (Figure 6D). This is consistent with a single continuous motility axis, without two distinct subgroups, as in our microscopy data.\n\nWe have observed transcriptional heterogeneity in actin nucleation genes, which may underly variability in motility states. This observation suggests that cells may vary along a \u2018nucleation high\u2019 to \u2018nucleation low\u2019 axis, generating a range of long-lived speed states. However, it remains technologically infeasible to directly associate a cell trajectory with a gene expression profile, so a direct test awaits future work. Additionally, we note that regulation that occurs at the protein level, for example through phosphorylation states, is likely very important to shorter timescale variation in cell motility behavior, and is not reflected in gene expression.\n\n## Discussion\n\nWe have measured and analyzed the variability in cell motility amongst the T cells of the zebrafish tail. We found that cell motility statistics are inconsistent with Levy flight; rather, speeds are heterogeneous from cell to cell. We note that a previous study that reported modified Levy flight in T cells (Harris et al., 2012) was carried out in a very different biological context (adoptively transferred CD8+ T cells in mouse CNS in the presence of an infection), which could drive differences in motility behavior. However, we note that the statistics of our trajectories closely resemble those measured by Harris et al. up through the 10 min time lag analyzed in that study.\n\nWe also found that migration statistics from zebrafish T cells as well as mouse T cells and Dictoystelium fell on a behavioral manifold, characterized by a coupling between speed and directional persistence. We note that, in general, heterogeneity of motility behavior across a population could be caused by the tissue context rather than by cell-intrinsic factors. However, the effects of the drug perturbation, as well as the effects of the genetic perturbations from G\u00e9rard et al., 2014 and Dang et al., 2013, support a cell-intrinsic basis for the behavioral manifold we observe here. In particular, we performed trials in which the same regions of tissue were imaged and cells tracked before and after addition of the drug (Figure 5\u2014figure supplement 1); the observed changes in migration statistics must then be caused by the drug\u2019s effect on the cell\u2019s internal state, not by the tissue context.\n\nThe drug perturbation experiment and analysis of data from the other species suggests that there is one underlying cell-intrinsic variable that jointly controls speed and directional persistence. Maiuri et al. also observed a coupling between speed and directional persistence across multiple cell types, and performed elegant in vitro work to demonstrate that actin retrograde flow speed is correlated both with cell speed and persistence time (Maiuri et al., 2015). Using single cell RNA sequencing, we observed covariation amongst T cells in a group of genes involved in actin nucleation. This suggests that cells vary transcriptionally in their actin nucleation activity. Levels of these genes may represent an underlying cell control variable that determines actin retrograde flow speeds and hence both cell speed and persistence. A direct test of this hypothesis awaits development of techniques to link a single cell\u2019s trajectory and its gene expression profile.\n\nIn two previous studies, genetic perturbations were performed that made cells faster and more persistent on average (G\u00e9rard et al., 2014; Dang et al., 2013). Our results suggest that this connection may be general to the cells rather than specific to the perturbation. In particular, shifts in the average turning behavior have been used to argue that Arpin and Myo1g control cell steering. Our analysis suggests that increasing cell speed may in many cases increase straightness, and vice versa, so that the effect on cell steering may be indirect.\n\nWe have analyzed cell migration in the context of a speed-persistence coupling model, which is a modified Orenstein-Uhlenbeck model where the speed and persistence time parameters are explicitly co-dependent. We chose this as the minimal model that captures both the diffusive behavior at long times and the coupling between speed and persistence, allowing for a prediction of the range of effective diffusion constants, and hence length scales of exploration, amongst the cells (Figure 4). Another feature of measured trajectories, in previous studies and in our work, is variation in speed along the trajectory, sometimes referred to as intermittency. We note that the Langevin dynamics of the SPC model inherently generate variation in speed, including pauses, along trajectories: the speed parameter sets the distribution of instantaneous speeds sampled by the cell. Other approaches have included adding pauses to a model with a fixed distribution of step sizes (Harris et al., 2012). Maiuri et al. considered an explicitly active model where actin dynamics within the cell generated motility. While slightly more complex, this model has several interesting features, including that the cell motility emerges from internal biophysical mechanisms, and also that it produces multiple phases of migratory behavior, including one with additional intermittency (Maiuri et al., 2015). Future work could use transgenic methods to label actin in the zebrafish to directly test this active matter model in vivo. Another mechanistic basis for intermittency was demonstrated by Dong et al., 2017, who showed that spontaneous cytosolic calcium signaling generates pauses during basal T cell motility. Investigation of this mechanism and its potential role in producing the speed fluctuations observed in our system would also be an interesting subject for further work.\n\nOur results show that across the population, cells explore over a very broad range of length scales, covering orders of magnitude of variation in effective diffusion constants. This variability is driven primarily by differences in average speed between cells, which is amplified by the observed coupling between speed and persistence. However, analysis of the effectiveness of this variation as a search strategy, as compared with modified Levy flight (Harris et al., 2012) or models with additional intermittency (Maiuri et al., 2015), would require a detailed knowledge of the distribution of targets in the tissue as well as an additional order of magnitude in time of observation of the cell trajectories in our system, to fully characterize the slow timescale speed switching. We additionally note that several studies (Dustin et al., 1997; Mempel et al., 2004; Kawakami et al., 2005; Castellino et al., 2006; Moreau et al., 2015; Dong et al., 2017; Negulescu et al., 1996) have indicated that T cells react to local chemical signals by changing speed\u2013in particular, that calcium signaling can cause cell arrest, and this is important to contact with antigen presenting cells and antigen recognition. This suggests that the local signaling environment may also be important to shifting the cell behavior along the manifold. Detecting these signaling and recognition events in vivo in real time would be an exciting avenue for future work.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>Tg(lck:GFP)</td>\n      <td>Gift from Aya Ludin-Tal and Leonard Zon Langenau et al., 2004</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tricaine-S, MS-222</td>\n      <td>Pentair</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rockout</td>\n      <td>Sigma Aldrich</td>\n      <td>#555553</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Ilastik</td>\n      <td>Sommer et al., 2011</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom analysis software</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available at https:// github.com/ erjerison/ TCellMigration</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR</td>\n      <td>Dobin et al., 2013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>htseq</td>\n      <td>Anders et al., 2015</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SAMalg</td>\n      <td>Tarashansky et al., 2019</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish lines and procedures\n\nTg(lck:GFP, roy-/-, nacre-/-) zebrafish (Danio rerio) (Langenau et al., 2004) were obtained as a generous gift from Dr. Leonard Zon and Dr. Aya Ludin-Tal. Imaging was performed on Tg(lck:GFP) zebrafish crossed into a nacre-/- background, at between 9 and 13 dpf. All adult and larval zebrafish were maintained according to protocols approved by the Stanford Administrative Panel on Laboratory Animal Care.\n\n### Microscopy\n\nImaging was performed on a single-plane illumination microscope constructed as specified in Pitrone et al., 2013, with the exception that a Prior ProScan XY stage (Prior Scientific) coupled to a Zaber T-LLS 105 stage (Zaber Technologies) was used for sample movement. The light sheet was generated using an Olympus UMPLFLN10XW objective (NA\u00a0=\u00a00.3) and detection was performed with an Olympus UMPLFLN20XW objective (NA\u00a0=\u00a00.5) and an achromatic doublet tube lens (AC508-180-A-ML, Thorlabs). Images were recorded either on a Retiga 2000R camera (Qimaging) or an Ace acA2040 (Basler). For the Ace ac2040 camera, a meniscus lens (LE1418-A - O2\u2019 N-BK7, Thorlabs) was added as a zoom lens, to match the image pixel width between the two cameras at $.37\u2062\\mu\u2062m$. The fluorescence source was an Obis LS 488 nm laser (Coherent), and the microscope was controlled by Micro-Manager.\n\nZebrafish between 9 and 13 dpf were anesthetized with Tricaine-S (MS-222, Pentair; .008% w/v, buffered to pH 7) and embedded in 2% low melting point agarose (Lonza SeaPlaque, #50100) with .004% w/v Tricaine. For imaging, the agarose was submerged in E3 with .008% w/v Tricaine and 50 mM Hepes. With the exception of Figure 2 and Figure 2\u2014video 1, tiled z-stacks were obtained every 45 s for at least 180 timepoints, with a field of view of at least 592 $\\mu\u2062m$ (dorsal-ventral axis) by 1200 $\\mu\u2062m$ (anterior-posterior axis), in the tail region posterior to the anus. For Figure 2A and Figure 2\u2014video 1, a z-stack was obtained every 12 s for 1100 timepoints, with a field of view of 757 \u00d7 568 \u00b5m (the first 900 timepoints are shown). For statistical comparison with the remainder of the data, trajectories from this final dataset were subsampled in time to give 48 s timesteps. Data was acquired with 2 \u00d7 2 binning, for an image pixel width of .74\u00a0\u00b5m.\n\nFor imaging in the presence of Rockout, embedded fish were submerged in E3 with .008% w/v Tricaine and 50 mM Hepes plus 12 \u00b5M Rockout (Sigma Aldrich #555553). For paired control/Rockout trials, fish were imaged for 2.5 hr in control conditions, followed by 2.5 hr in Rockout conditions over the same field of view.\n\n### Single-cell RNA sequencing\n\nThirty 15 dpf Tg(lck:GFP) zebrafish were euthanized using .04% w/v Tricaine and transected posterior to the anus. Tail portions were pooled into HBSS (ThermoFisher #14025092) on ice. Tails were dissociated by incubating with 100 $\\mu\u2062g/m\u2062L$ Liberase-TL (Sigma Aldrich #5401020001) at room temperature for 20 min, followed by trituration with a 23 gauge needle. The cell suspension was filtered through a 40 $\\mu\u2062m$ filter and washed once in HBSS. GFP+ cells were sorted from an unbiased FSC-SSC gate on a Sony SH800 cell sorter into 384-well hard-shell PCR plates (Bio-Rad HSP3901) containing .4\u00a0\u00b5l of lysis buffer, prepared as described previously (Tabula Muris Consortium et al., 2018). Reverse transcription following a Smart-Seq2 protocol, and Illumina library preparation, were carried out as described previously (Tabula Muris Consortium et al., 2018), except that following cDNA amplification, cDNA was diluted uniformly to a mean target concentration of $.4\u2062n\u2062g/\\mu\u2062l$ for library preparation. Libraries were sequenced on the NovaSeq 6000 Sequencing System (Illumina) using 2 \u00d7 100 bp paired-end reads.\n\n### Image processing and cell tracking\n\nTiles were assembled based on recorded stage coordinates and a Maximum Z projection was applied to Z stacks. Sample drift in x and y was subtracted by identifying and tracking autofluorescent pigment spots. In particular, the coordinates of 1\u20133 isolated pigment spots were identified manually at the first timestep; at each timestep, the brightness centroid was computed for a circle with a 25 pixel radius around the previous centroid, and the average trajectory of the pixel spots was rounded to the nearest pixel and subtracted from the timeseries. Prior to cell segmentation, the average image across the whole timecourse was subtracted from each timestep. For data recorded on the Retiga 2000R camera, prior to segmentation the image was thresholded at the 30th pixel percentile and the maximum pixel value was fixed so that .4% of pixels were saturated. For data recorded on the Basler Ace acA2040 camera, no lower threshold was used and the maximum pixel value at each timepoint was fixed so that .2% of pixels were saturated. Ilastik software (Sommer et al., 2011) was used for cell segmentation and tracking: the Ilastik pixel classification module was used to classify foreground and background, and the manual tracking module was used to identify and track cells. Tracks were terminated if two segmented cells collided and it was not possible to disambiguate, or if a segmented cell was lost due to passing into an autofluorescent region or due to imperfections in segmentation and/or illumination. To define trajectories, the brightness centroid of each cell in x and y at each timestep was computed from Ilastik tracking masks and the Maximum Z projection. Processing steps not using Ilastik were performed using Python 3.6 (code available at: https://github.com/erjerison/TCellMigration;\u00a0Jerison, 2020; copy archived at https://github.com/elifesciences-publications/TCellMigration).\n\n### Trajectory analysis\n\nTrajectories with at least 30 consecutive steps were included in the analysis; for MSD calculations, trajectories that included all time intervals were included. For calculations of power spectra, single missing timesteps were linearly interpolated based on the two adjacent positions, and computations were performed on the longest consecutive segment for each trajectory. For the M. musculum data, the time interval was 30 s. For the Dictyostelium data, timesteps were subsampled from the original to give an interval of 20 s. Unless otherwise noted, statistics are reported as the median of the statistic on a bootstrap over trajectories.\n\nMean-squared displacements were computed along each trajectory as:\n\n$$\nMSD(\\tau=mt_{i\u2062n\u2062t})=\\frac{1}{N-m}\\sums=1N-m||x\u2192(m+s)-x\u2192(s)||^{2},\n$$\n\nwhere $N$ is the total number of timesteps and $t_{i\u2062n\u2062t}$ is the time interval. The overall MSD was computed by averaging the MSDs for each trajectory, and 95% confidence intervals were calculated via a bootstrap over trajectories.\n\nThe overall MSD was fit to:\n\n$$\nM\u2062S\u2062D\u2062(\\tau)=4\u2062S^{2}\u2062P\u2062\\tau\u2062(1+\\frac{P}{\\tau}\u2062(e^{-\\frac{\\tau}{P}}-1))+\\sigma^{2},\n$$\n\nwhich we note is the common formula for mean squared displacement in both the Ornstein-Uhelnbeck model (see Appendix 1) and in the Kratky-Porod wormlike chain model. Unless otherwise noted, fitting was performed using the scipy.optimize.curvefit function in scipy 1.3.0; fitting was performed in log space and weighted by computed confidence intervals.\n\nThe velocity power spectrum was computed based on the vector of secant-approximated velocities for each trajectory. Velocity vectors were zero-padded to 400 timesteps, and the fourier transforms of the velocity components were computed using the the fft function in numpy (1.16.4). Letting the fourier-transformed velocity components for trajectory $m$ be $v_{x}\u2062(k,m)$, $v_{y}\u2062(k,m)$, the power spectrum for each trajectory was computed as:\n\n$$\nPSD(k,m)=\\frac{1}{N^{2}}\\frac{N}{N_{m}}\\sumi=x,y(||v_{i}(k,m)||^{2}+||v_{i}(N\u2212k,m)||^{2}),1<k<\\frac{N}{2}\n$$\n\n\n\n$$\nPSD(0,m)=\\frac{1}{N^{2}}\\frac{N}{N_{m}}\\sumi=x,y||v_{i}(0,m)||^{2}\n$$\n\n\n\n$$\nPSD(\\frac{N}{2},m)=\\frac{1}{N^{2}}\\frac{N}{N_{m}}\\sumi=x,y||v_{i}(\\frac{N}{2},m)||^{2},\n$$\n\nwhere $N=400$ and $N_{m}$ is the length of trajectory $m$. The overall PSD was computed as the average over the PSDs for each trajectory:\n\n$$\nP\u2062S\u2062D\u2062(k)=\\frac{1}{n}\u2062\\summ=1nP\u2062S\u2062D\u2062(k,m),\n$$\n\nwhere $n$ is the number of trajectories. For Figure 1D, a piecewise linear function was fit to the PSD in log space; we plot the high-frequency fitted line and a line with slope 0.\n\nFollowing (Petrovskii et al., 2011), we calculated the distribution of bout lengths within a trajectory as the distribution of x displacements between reversals in direction in x, divided by the average of these displacements within each trajectory. The distribution was calculated using the numpy.histogram function on percentile bins with the option density\u00a0=\u00a0True; the x locations of points were determined based on the average value of points in each bin. We fit the distribution to a stretched exponential function $f\u2062(x)=A\u2062e^{-\\gamma\u2062x^{\\beta}}$; the fitted value of the stretch parameter $\\beta$ was .9.\n\nThe overall speed distribution was computed by collecting secant-approximated speeds across all trajectories and timepoints; similarly, the overall turn angle distribution was computed by collecting all relative angles between consecutive segments. For the Kolmogorov-Smirnov (KS) test, the overall CDFs of speeds and turn angles were estimated by measuring the cumulative frequency over 25 percentile bins and performing linear interpolation to yield a continuous function. A two-sided KS test (scipy.stats.kstest) was performed for the sets of speeds and turn angles of each trajectory.\n\nWe evaluated the fraction of the variance in cell speeds that can be explained by sample identity by fitting a linear model with indicator variables on the sample identity as predictor variables. We used the LinearRegression function of sklearn.linear_model to fit the model, and the \u2018score\u2019 method to evaluate $R^{2}$, the fraction of the variance explained by this model.\n\nTurn angle distributions for each speed class were computed by collecting all relative angles between consecutive segments amongst cells in that speed class; the distributions were symmetric about \u03b8\u00a0=\u00a00 and so were folded to be between 0 and $\\pi$ radians. 95% confidence intervals were calculated based on a bootstrap over trajectories in each speed class. For the relationship between local speed and turn angles (Figure 2B), the local speed was estimated as the average speed of the two consecutive steps surrounding a turn. Turns were binned based on the local speed, and the average of the cosine of the turn angles was computed for each bin. For this and other binned statistics, the x location of the bin was fixed to be the average value for the points in that bin.\n\nTo estimate the rate of speed switching, all trajectories of at least 117 min in length were used. The average speed of each trajectory was measured on 19.5 min intervals; 19.5 min was chosen to minimize the bias-variance trade-off. Specifically, because every cell samples speeds from a distribution, there is trade-off between measuring speeds on intervals that are too short, which may not give a good estimate of the mean, and intervals that are too long, where cells may switch during the interval. To minimize this trade-off, the interval that maximized the rank correlation between adjacent non-overlapping blocks was used. The average speed of each cell was measured on non-overlapping intervals, and the Spearman rank correlation coefficient between all pairs of intervals was computed. The correlation as a function of time was calculated as the average over all pairs of intervals with the same difference in start times. We computed 95% confidence on a bootstrap over trajectories. For the null model, we permuted speeds amongst the trajectories on each interval; we calculated 95% confidence intervals over the permutations.\n\nFor Figure 3, the average of the cosine of turn angles between adjacent steps was calculated for each trajectory, as well as the average over all adjacent steps of the secant approximated speeds. For Figure 3D, the correlation between local speed and turns was computed as the Pearson correlation coefficient between the local speed, as defined above, and turn angles across the set of adjacent steps in the trajectory.\n\nTo estimate the fraction of the variance in turning behavior explained by the cell speed, we fit a spline curve (UnivariateSpline class of scipy 1.3.0; default parameters) to the relationship between speed and the average of the cosine of the turn angles (Figure 3\u2014figure supplement 1A). Letting the spline function be $f$, we estimated the variance accounted for by the speed as $V_{s}=V\u2062a\u2062r\u2062(f\u2062(S_{m}))$, where the index $m$ labels trajectories. We estimated the variance in the means due to variation within trajectories, which we called stochasticity, as $V_{s\u2062t}=\\frac{1}{n}\u2062\\sum_{m=1}^{n}\\frac{1}{k_{m}-1}\u2062V\u2062a\u2062r_{j}\u2062(cos\u2061\\theta_{j\u2062m})$, where $n$ is the total number of trajectories, $k_{m}$ is the number of turn angles within trajectory $m$, and $cos\u2061\\theta_{j\u2062m}$ is the cosine of the turn angle $j$ in trajectory $m$. Remaining variance we classified as other (Figure 3\u2014figure supplement 1B); this may be due to imperfections in the spline model, other experimental noise, or additional biological variability.\n\nThe persistence time was defined to be the time elapsed before the trajectory turns at least $\\frac{\\pi}{2}$ radians, averaged along the trajectory. Specifically, letting the displacement between timepoints $s$ and $s+1$ be $x\u2192\u2062(s)$, the persistence time along each trajectory was calculated as:\n\n$$\nP~=\\frac{1}{n}\u2062\\sums=1n\\tau\u2062(s),\\tau\u2062(s)=\\sumt=sm-1t_{i\u2062n\u2062t}\n$$\n\nwhere $m>s$ is the first timestep for which $x\u2192\u2062(s)\u22c5x\u2192\u2062(m)<0$, $t_{i\u2062n\u2062t}$ is the time interval, and $n$ is the final base point for which $m\\leqN$, where $N$ is the final timepoint. For Figure 4A, trajectories were binned into mean speed deciles, and the average persistence time was calculated over trajectories in the bin; error bars represent 95% confidence intervals on a bootstrap over trajectories. We also repeated this analysis to measure the average time elapsed before the trajectory turns at least $\\frac{\\pi}{6}$ radians (Figure 4\u2014figure supplement 2).\n\nThe effective diffusion coefficient at time $\\tau$ was measured as:\n\n$$\nD_{e\u2062f\u2062f}\u2062(\\tau)=\\frac{M\u2062S\u2062D\u2062(\\tau)}{4\u2062\\tau}.\n$$\n\nTo measure $D_{e\u2062f\u2062f}\u2062(\\tau)$ as a function of $S$, cells were divided into speed bins (with 5% of the speed distribution per bin); $D_{e\u2062f\u2062f}\u2062(\\tau)$ for each speed bin was measured by averaging the $D_{e\u2062f\u2062f}\u2062(\\tau)$ across trajectories, and error bars were computed based on a bootstrap over all trajectories. Note that $D_{e\u2062f\u2062f}\u2062(\\tau)$ will be independent of $\\tau$ only if diffusion scaling is respected, so that the collapse of the data in Figure 4B is additional corroboration that the trajectories behave diffusively at long times.\n\nAs shown in the models section of the SI below, under the UPT model:\n\n$$\nD_{e\u2062f\u2062f}\u221dS^{2},\n$$\n\nwhereas under the SPC model,\n\n$$\nD_{e\u2062f\u2062f}\u221dS^{2}\u2062(\\frac{S}{\\alpha}+\\beta),\n$$\n\nwhere $\\alpha$ and $\\beta$ are fixed across all trajectories. We fixed $\\alpha$ and $\\beta$ by fitting a line to the persistence time relationship in Figure 1C; note that this is a short-time statistic and need not a priori predict the effective diffusion constant at longer times. We fit the UPT model (dashed line) and the SPC model (solid) to the measured $D_{e\u2062f\u2062f}$ as a function of $S$; in both cases, there was one fitting parameter which was the constant of proportionality, which allows for an offset on the y-axis in log space but does not change the shape of the curve.\n\n### Analysis of scRNAseq data\n\nReads were aligned to the Zebrafish reference genome (genome release: GRCz10; annotations: GRCz10.85) using STAR (2.5) Dobin et al., 2013; reads aligned to each gene were counted using the htseq-count function of HTseq (0.8.0) Anders et al., 2015, with the options -m intersection-nonempty and \u2013nonunique all. Note that the final option counts reads that align to a location with more than one annotated feature (e.g. overlapping ORFs) as belonging to both features. This is necessary because of mis-annotation of the T cell receptor light chain constant region in the zebrafish reference genome; both ENSDARG00000075807 (traj39) and ENSDARG00000104132 (traj28) contain the trac, so that reads mapping to trac would otherwise be discarded.\n\nCells were filtered if they expressed fewer than 650 genes or more than 3250 genes, and if more than 8% of reads were of mitochondrial origin. We used UMAP (0.3.1) with the default options to embed the log-transformed counts table in two dimensions, including all genes expressed in at least 10% of cells; and HDBSCAN (0.8.22) with min_samples\u00a0=\u00a010 to call clusters (Figure 6\u2014figure supplement 1A). Comparison with the index sort data (Figure 6\u2014figure supplement 1B) showed that cells from the larger cluster had FSC-BSC consistent with lymphocytes, whereas cells from the other cluster had higher FSC and BSC. We called the major cluster as the first cell group, excluding the 4 cells with $BSC>2\\times10^{5}$, and other cells as the second group. We measured differential expression of genes between the two clusters as: $D=\\frac{1}{n}\u2062\\sum_{i=1}^{n}log_{2}\u2061(E_{1\u2062i})-\\frac{1}{m}\u2062\\sum_{i=1}^{m}log_{2}\u2061(E_{2\u2062i})$, where $E_{1\u2062i}$ are expression values, in counts per million (CPM) + 1, for the first cluster, $n$ is the number of cells in this cluster, $E_{2\u2062i}$ are expression values (in CPM+1) for the second cluster, and $m$ is the number of cells in this cluster. (Note that this is the log of the ratio of the geometric means within each cluster.) In Supplementary file 2, we report the genes with $D>log_{2}\u206110$ and $p<.01$ (Wilcoxon rank-sum test, Bonferonni-corrected.) Genes enriched in the larger cluster included the T cell and immune-related genes tagapa, tagapb, ccr9a, tnfrs9b, il2rb, and ptprc (Tabula Muris Consortium et al., 2018); we also tested for expression of the T cell receptor light chain constant region (trac; expression estimated based on the expression of ENSDARG00000075807). Based on these markers, we identified the larger group (n\u00a0=\u00a0330) as T cells. The significantly differentially expressed genes enriched in this group also included arpc1b, wasb, arhgdig, coro1a, scinlb, and capgb, which we classified as belonging to the WASP/ARP2/3 pathway based on the literature (Vicente-Manzanares et al., 2002). Finally, we observed very little expression of markers associated with other types of immune cells (the B cell light chain igic1s, the B cell marker ccl35.2, and the neutrophil and macrophage markers mpeg1 and mpx (Tang et al., 2017) in either group (Figure 6B, Figure 6\u2014figure supplement 2). The genes most significantly enriched in the non-T cell group include keratin proteins (krt8, KRT1), as well as ahnak (Figure 6\u2014figure supplement 2, Supplementary file 2). Based on these markers, we identified these cells as epithelial cells, possibly keratinocytes (Tabula Muris Consortium et al., 2018). We note that we observed GFP signal in the somite region of the Tg(lck:GFP) tail via microscopy (see, e.g., Figure 1A and Movie S1) which we did not observe in wildtype nacre-/- zebrafish, suggesting that these cells may mis-express the marker.\n\nTo analyze finer-scale variation within the T cell cluster, we used the self-assembling manifold algorithm method from Tarashansky et al., 2019. We first used the SAM algorithm with parameters thresh\u00a0=\u00a00.1 and k\u00a0=\u00a010 to perform dimensional reduction. Visualization of a UMAP projection together with the labels from our sort plates (Figure 6\u2014figure supplement 3) showed that there was a plate effect related to p1; we excluded this plate from the remainder of the analysis. We re-ran the SAM algorithm using the remaining (n\u00a0=\u00a0237) T cells, with parameters thresh\u00a0=\u00a00.1, k\u00a0=\u00a010, to produce the dimensional reduction shown in Figure 6A. Cluster labels were assigned using the KMeans class in sklearn.cluster. We measured differential expression of genes between the two subtypes as described above. In Supplementary file 1, we report the genes with $D>log_{2}\u206110$ and $p<.01$ (Wilcoxon rank-sum test, Bonferonni-corrected), for the two subtypes. In Figure 6B, we show a subset of markers associated with the whole T cell cluster, as well as selected marker genes between the two subtypes.\n\nTo identify potential co-variation with arpc1b expression amongst the T cells, we computed the Spearman rank correlation between expression of arpc1b (in counts per million) and all other genes expressed in at least 20% of cells. In each calculation of pairwise correlation coefficient, we excluded cells with zero counts for both genes to avoid biasing correlations upwards due to spurious points at the origin. We calculated p values using a permutation test: we permuted cell labels and re-calculated all correlation coefficients; p-values were calculated as the proportion of observations of a correlation coefficient higher than the observed coefficient, multiplied by the number of genes tested (Bonferonni correction).\n",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "bba6b4c2-1677-4ace-b002-ae705958a313",
+      "submission_id": "156810df-e334-4c16-a704-d9c5f4866279",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53933.sa1](https://doi.org/10.7554/eLife.53933.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe paper by Jerison and Quake characterizes T-cell motility in tissues that span a broad range of length scales from microns, when contacting APCs, to millimeters, relevant for finding rare antigens. With sophisticated experiments the authors tracked populations of T-cells in live larval fish over several hours and built a theoretical model that relates persistence and speed of T-cells. This work is a significant contribution that will enable better understanding of immune responses in vivo.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Heterogeneous T cell motility behaviors emerge from a coupling between speed and turning in vivo\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Judy Cannon (Reviewer #2); Michael L Dustin (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript characterizes T-cell motility in tissues. T-cells explore tissues over a wide range of scales that span from microns (e.g., when contacting APCs) to millimeters (e.g. relevant for finding rare antigens). An important point is made that a simple diffusion process is not sufficient to explain this broad range of behaviors in T-cell motility. Two possible solutions are discussed in the manuscript: Anomalous diffusion via cells making Levy walks, or regular random walks sampled from a wide distribution. Extensive and sophisticated experiments are conducted on the native population of T cells in live larval fish over several hours, imaging millimeter fields of view. By analyzing many cell trajectories, the authors show that, at least in the stationary state, the motility of T-cells seem to be consistent with a regular random walk sampled from a wide distribution. Interestingly, the data spans over an effective 1D manifold in the space of T-cell speed and persistence. Moreover, the authors observe similar statistics for cell motility in mouse and in Dictyostelium (from previously published data), pointing towards a more generic pattern of motility that could be thought as a population strategy to span a broad range of scales -- one is tempted to call this \"motility bet-hedging\".\n\nOverall, the reviewers agree that the experiments present a significant improvement to the existing methods in recording cell motility and that the manuscript provides a sufficient theoretical novelty in characterizing T-cell motility strategies. However, there are some concerns with the presentation and the analyses that we would like to see addressed.\n\nEssential revisions:\n\n1) There is a possibility that the cell-to-cell variation can be associated with distinct behaviors of different T-cell subtypes. We suggest that the authors use single cell gene expression levels (reported in Figure 5) to investigate whether the differential expression of certain surface markers is predictive of the mode of cell motility. Perhaps there can even be some memory cells in the pool. This would not require more experiments but some more analyses, which should be doable within a reasonable time frame. In principle, this analysis could strongly add to the mechanistic understanding of the reported bet-hedging strategy in cell motility.\n\n2) For analysis of persistence, the authors state that pi/2 radians before turning was used as a definition for a persistent cell. This may be too broad as cells that turn 60o would likely not be classified as persistent. The authors should re-analyze persistence using 15o or 30o as a cutoff to ensure that motility analysis holds with a more stringent definition of persistent motility.\n\n3) The experimental detail as written in the current version is insufficient. For example, are T cells vascular or in tissues? While the authors state that \"tail fin\" is imaged, there is no description of how specific areas are selected to image. Why was the tail fin selected? Was there an infection or was all motility in the absence of infection? Also, T cells at 10-12 dpf were imaged. This is an extremely early time point. The authors should explain why this time point is used rather than imaging T cell motility in adult fish (transparent zebrafish for imaging are available).\n\n4) Previous work by Mairui and colleagues (Cell 2015) has shown the coupling between cell speed and persistence across many cell types. The authors seem to be unaware of this study.\n\n5) Authors should discuss some of the other models for persistent random walks that have been recently considered in the field of active matter. Given the Maiuri et al's finding (Cell:2015) that actin flow and actin regulatory proteins drive cell motility, the non-equilibrium models for random walk could provide a better description for this process.\n\n6) The authors reject that cell motility is a levy walk, which was previously proposed by Harris et al., 2012, for CD8+ Tcells. The conditions of the two experiments are not comparable as as Harris et al. studied CD8+ cells chasing antigens, whereas the analyses in this manuscript are based on cell trajectories in the stationary state. This should more clearly be pointed out.\n\n7) Authors should include a discussion on prior related work:\n\ni) Negulescu PA, et al. Polarity of T cell shape, motility, and sensitivity to antigen. Immunity. 1996;4(5):421-30.\n\nii) Dong TX, et al. Intermittent Ca(2+) signals mediated by Orai1 regulate basal T cell motility. eLife. 2017;6. doi: 10.7554/eLife.27827.\n\niii) Harris TH, et al. Generalized Levy walks and the role of chemokines in migration of effector CD8+ T cells. Nature. 2012;486(7404):545-8.\n\niv) Maiuri P , et al. Actin flows mediate a universal coupling between cell speed and cell persistence. Cell 2015:161(2):374-86\n\n8) A more detailed discussion is necessary on how the proposed search strategy in the manuscript compare with Levy or intermittent migration (Maiuri et al., 2015; Harris et al., 2012).\n",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b57a88e1-4d41-4e02-a641-c3423935f91f",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C1",
+      "claim": "T cells in vivo migrate primarily via undirected random walks.",
+      "claim_type": "EXPLICIT",
+      "source": "T cells in vivo migrate primarily via undirected random walks, but it remains unresolved how these random walks generate an efficient search.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general observation about T cell behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "9c282f1b-36cf-400a-a790-496732484e17",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C2",
+      "claim": "There is substantial cell-to-cell variability in speed among T cells, which persists over timespans of a few hours.",
+      "claim_type": "EXPLICIT",
+      "source": "there is substantial cell-to-cell variability in speed, which persists over timespans of a few hours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the abstract and detailed in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "27879e29-413c-43a3-ae88-2c278f8529d5",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C3",
+      "claim": "T cells do not perform Levy flight.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that cells do not perform Levy flight",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple analyses including MSD, velocity power spectrum, and bout length distributions presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "c30f4c4e-33ca-465a-9f44-4cea5f6aa42c",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C4",
+      "claim": "There is a correlation between speed and directional persistence in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This variability is amplified by a correlation between speed and directional persistence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through data analysis shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "f2241b83-17bb-463d-989d-245adb933c44",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C6",
+      "claim": "The behavioral manifold is preserved under a perturbation to cell speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "generating a characteristic cell behavioral manifold that is preserved under a perturbation to cell speeds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through drug perturbation experiments with Rockout (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "e5f4a2a8-a69c-4e92-a108-0fcaa6258f30",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C7",
+      "claim": "The behavioral manifold is seen in Mouse T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "generating a characteristic cell behavioral manifold that is preserved under a perturbation to cell speeds, and seen in Mouse T cells and Dictyostelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analysis of published data from G\u00e9rard et al., 2014 (Figure 5C-D).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "fcdaa16f-618a-413e-a852-b53b98aab3d2",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C8",
+      "claim": "The behavioral manifold is seen in Dictyostelium.",
+      "claim_type": "EXPLICIT",
+      "source": "generating a characteristic cell behavioral manifold that is preserved under a perturbation to cell speeds, and seen in Mouse T cells and Dictyostelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analysis of published data from Dang et al., 2013 (Figure 5E-F).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "88e5ce9f-80d6-44b5-9af3-d2740b5bc7c1",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C9",
+      "claim": "The combination of speed variability and speed-persistence coupling generates a broad range of length scales over which cells explore in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these effects generate a broad range of length scales over which cells explore in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analysis of effective diffusion constants across speed classes (Figure 4B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "2db63c52-d9dd-4526-8091-97a02cdf3b41",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C10",
+      "claim": "For naive T cells within T cell zones, unguided random walk processes dominate migration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for naive T cells within T cell zones, in situ imaging studies have found that unguided random walk processes dominate (Miller et al., 2002; Miller et al., 2003; Preston et al., 2006; Cahalan and Parker, 2008; Beltman et al., 2007; Banigan et al., 2015; Harris et al., 2012; Worbs et al., 2007; Textor et al., 2011; Beauchemin et al., 2007; Mrass et al., 2006; Katakai et al., 2013; Mrass et al., 2017, reviewed in Mrass et al., 2010; Krummel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior imaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "8ff3278f-626d-45eb-837a-8905f032ccb7",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C11",
+      "claim": "T cells must dwell at scales of microns to make contact with antigen presenting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "T cells must dwell at scales of microns to make contact with antigen presenting cells (W\u00fclfing et al., 1997; Krummel et al., 2000; Beltman et al., 2009a; Fricke et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "f8f45f7e-88a2-4d92-b40f-f7762423451a",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C12",
+      "claim": "T cells must migrate over scales of millimeters to find rare targets.",
+      "claim_type": "EXPLICIT",
+      "source": "yet migrate over scales of millimeters to find rare targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for T cell function based on biological context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "8915bf15-1b7f-4399-8b10-b101d5cc83e4",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C13",
+      "claim": "A conventional diffusive random walk struggles to access varied scales efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "A conventional diffusive random walk struggles to access these varied scales efficiently, since a walker that dwells near another cell for 1 min would require several days to travel 1 mm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical calculations about diffusive processes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "af1376ab-d9bc-4a8d-944e-a7e91db0bd44",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C14",
+      "claim": "T cells may have an intrinsic behavioral program that allows them to explore over different length scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Several authors have suggested that T cells may have an intrinsic behavioral program that allows them to explore over different length scales (Harris et al., 2012; Krummel et al., 2016; Mempel et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from prior literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "cac02fbc-33cc-4cd3-848d-c8fe436ec4a8",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C15",
+      "claim": "Observation over short periods cannot distinguish between Levy flight and heterogeneity amongst individual walkers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, observation over short periods cannot distinguish between Levy flight and heterogeneity amongst individual walkers (Petrovskii et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "c68488d3-f883-437a-b8e7-048f24063d88",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C16",
+      "claim": "The observed T cells are in tissue in the tail of the zebrafish, primarily in the tail fin and larval fin fold.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a population of motile cells in tissue in the tail of the zebrafish, primarily in the tail fin and larval fin fold (Figure 1A, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the microscopy data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "0e9eadc7-a0b7-40f3-a1c1-25b3dfb7a14f",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C17",
+      "claim": "T cells migrate super-diffusively on scales of a few minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells migrate super-diffusively on scales of a few minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the MSD analysis in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "9003609b-0beb-4101-9309-cc51c5e7a38a",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C18",
+      "claim": "The MSD for a persistent random walk fits the observed data.",
+      "claim_type": "EXPLICIT",
+      "source": "The MSD for a persistent random walk is fit to the data (Materials and methods, Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the fit shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "3ca89dab-7d73-4340-aedc-febf7435f49d",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C19",
+      "claim": "A Levy (scale-free) process consistent with the short time behavior would result in a continuation of the high frequency slope in the velocity power spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "A Levy (scale-free) process consistent with the short time behavior would result in a continuation of the high frequency slope (dashed line).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical expectations for Levy flight processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "53272038-d756-4e30-956d-9ce893cf5cfb",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C20",
+      "claim": "A timescale at a few minutes is observed in the velocity power spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we observe a timescale at a few minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "2d1c1c40-be0a-4cab-a443-a87bdef5134d",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C25",
+      "claim": "Each cell samples a characteristic distribution of speeds that is stable over one to two hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus each cell samples a characteristic distribution of speeds that is stable over one to two hours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the speed correlation analysis in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "80f8a9e7-c1ed-47e2-832d-4d77f52e54ec",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C26",
+      "claim": "48% of the variance in cell speeds can be explained by the sample identity.",
+      "claim_type": "EXPLICIT",
+      "source": "overall, 48% of the variance in cell speeds can be explained by the sample identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on linear model fitting to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "8520abf8-0d2f-4689-b8f7-9d35d1b8acf0",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C27",
+      "claim": "The distributions of cell speeds within each sample are broad and overlapping, accounting for 52% of the variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the distributions of cell speeds within each sample are broad and overlapping (Figure 2\u2014figure supplement 1), accounting for the majority of the variance (52%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1 and calculated from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "0ef7b485-00d3-4617-ac92-fc39f73a4c8b",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C28",
+      "claim": "Fast cells are most likely to turn shallowly.",
+      "claim_type": "EXPLICIT",
+      "source": "fast cells are most likely to turn shallowly",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the turn angle distributions by speed class in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "4bb8b355-da22-4ab5-9556-29f3a5a96602",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C29",
+      "claim": "Slow cells are most likely to turn around.",
+      "claim_type": "EXPLICIT",
+      "source": "slow cells are most likely to turn around",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the turn angle distributions by speed class in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "2da21f73-3830-4c3e-83b1-f56e1dee0adb",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C30",
+      "claim": "All cells go straighter during faster periods.",
+      "claim_type": "EXPLICIT",
+      "source": "all cells go straighter during faster periods",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3B where turn angle depends on local speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "6c545ec9-1e63-4d65-b9d9-751da018306c",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C31",
+      "claim": "For a given step size, slow cells are more likely to turn sharply.",
+      "claim_type": "EXPLICIT",
+      "source": "but for a given step size, slow cells are more likely to turn sharply.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3B where different speed classes have different relationships between local speed and turning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "5fbdf5d0-6061-4837-b1b4-d1c5f1ae6214",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C32",
+      "claim": "Faster cells appear initially more superdiffusive due to variation in turning behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the variation in turning behavior, the faster cells appear initially more superdiffusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the MSD by speed class in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "a104359d-8c63-42e4-9da3-ddee571366eb",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C33",
+      "claim": "73% of the variance in the average cosine of turn angles can be explained by cell speed.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, 73% of the variance in the average cosine can be explained by cell speed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the spline fit analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "b3e11473-ec43-4066-a5f2-3f1e37ab6ba2",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C34",
+      "claim": "7% of variance in average cosine of turn angles is due to stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "with some residual variance due to the stochasticity of the process (7%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from variance decomposition analysis shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "a0d75037-394f-4100-9517-173ddb86e6a7",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C35",
+      "claim": "20% of variance in average cosine of turn angles is due to other unknown effects.",
+      "claim_type": "EXPLICIT",
+      "source": "and other unknown effects (20%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from variance decomposition analysis shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "d7d19e72-6819-4851-bff3-87987e30ac68",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C36",
+      "claim": "There is a linear dependence between persistence time and cell speed.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the relationship between these two variables, we measured the persistence time, averaged along each trajectory, as a function of cell speed, and found a linear dependence (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "29b31316-bf85-4485-9d71-45980946a427",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C37",
+      "claim": "Heterogeneity in speeds creates a broad range of effective diffusion constants, spanning 2 orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, heterogeneity in speeds creates a broad range of effective diffusion constants, spanning 2 orders of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "4c421765-fa39-43af-ae80-05eb02bd6956",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C38",
+      "claim": "The coupling between speed and persistence generates five-fold more variation in the effective diffusion constants across cells than would be expected for a uniform persistence time model.",
+      "claim_type": "EXPLICIT",
+      "source": "The coupling between speed and persistence amplifies this effect, generating five-fold more variation in the effective diffusion constants across the cells than would be expected for a uniform persistence time model (UPT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing the SPC and UPT models in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "885887ec-5676-4d7a-a1cb-332c8a334f01",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C39",
+      "claim": "The distribution of cell speeds shifted downwards in the presence of Rockout.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the distribution of cell speeds shifted downwards",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5B comparing control and Rockout-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "4a142ad4-8e4b-4636-bb53-6501bacbd0f7",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C40",
+      "claim": "A quantitatively similar positive relationship between speed and turning behavior is observed in the presence of Rockout.",
+      "claim_type": "EXPLICIT",
+      "source": "but we still observed a quantitatively similar positive relationship between speed and turning behavior (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A comparing control and Rockout-treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "5da9598f-fa45-47b4-aa19-7c2c7b33c1e6",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C41",
+      "claim": "The correlation between average turn angle and cell speed holds amongst control mouse T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this correlation held amongst the control cells in both studies (Figure 5C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through analysis of published data in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "cf59b993-d20d-438c-ae1d-e555dd180b3a",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C42",
+      "claim": "The correlation between average turn angle and cell speed holds amongst control Dictyostelium cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this correlation held amongst the control cells in both studies (Figure 5C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through analysis of published data in Figure 5E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "c098ccb1-964f-4867-8af8-eaa3185bfbab",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C43",
+      "claim": "A knockout of the non-canonical myosin Myo1g had a substantial effect on the distribution of cell speeds in mouse T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the perturbation had a substantial effect on the distribution of cell speeds (Figure 5, E-F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D analyzing data from G\u00e9rard et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "8caae8fe-4926-444c-bb94-6ef159104ab4",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C44",
+      "claim": "A knockout of the Arp2/3 inhibitor Arpin had a substantial effect on the distribution of cell speeds in Dictyostelium.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the perturbation had a substantial effect on the distribution of cell speeds (Figure 5, E-F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5F analyzing data from Dang et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "a73905e8-6961-41e4-9b6b-078885a977a8",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C45",
+      "claim": "A quantitatively similar positive relationship between speed and turning behavior was preserved in Myo1g knockout mouse T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in both cases, a quantitatively similar positive relationship between the speed and turning behavior amongst the perturbed cells was preserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5C comparing control and Myo1g KO cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "b85db48f-f212-44ab-a517-23af97a678a7",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C46",
+      "claim": "A quantitatively similar positive relationship between speed and turning behavior was preserved in Arpin knockout Dictyostelium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in both cases, a quantitatively similar positive relationship between the speed and turning behavior amongst the perturbed cells was preserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5E comparing control and Arpin KO cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "75a15d47-3809-43f5-971c-419a7da63629",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C47",
+      "claim": "330 putative T cells were identified from single-cell RNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "We used standard dimensional reduction and clustering methods (Materials and methods) to identify 330 putative T cells (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on scRNA-seq analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "3e28ee24-bbca-403a-93a2-c2e04114f4a7",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C48",
+      "claim": "A population of epithelial cells may mis-express lck at low levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we also identified a population of epithelial cells that may mis-express lck at low levels (Materials and methods, Figure 6\u2014figure supplement 1, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on marker gene expression analysis shown in Figure 6\u2014figure supplement 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "5b81cf30-92f0-4bc5-adf2-94443abebcd8",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C49",
+      "claim": "Two main T cell subtypes were identified using self-assembling manifold algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "We repeated the SAM analysis on the remaining (n = 237) cells, and identified two main subtypes (Figure 6A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A-B using SAM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "a9a0a379-f274-48d8-8073-0266893b76c7",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C50",
+      "claim": "The two T cell subtypes are consistent with a previous report.",
+      "claim_type": "EXPLICIT",
+      "source": "and identified two main subtypes (Figure 6A\u2013B), consistent with a previous report (Tang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tang et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "adab5aa6-4131-4b81-ac58-86160c794c20",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C51",
+      "claim": "Both T cell subpopulations express high levels of genes canonically involved in actin nucleation and remodeling in the leukocyte cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Both subpopulations of cells express high levels of genes canonically involved in actin nucleation and remodeling in the leukocyte cytoskeleton (Vicente-Manzanares et al., 2002; Takenawa and Suetsugu, 2007) (WASP/ARP2/3 pathway; Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B and supported by citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "adc6e2bf-6b59-42e4-ae59-d68ab4d5a0e6",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C52",
+      "claim": "Three of the four top genes correlated with arpc1b are also canonically involved in the actin nucleation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 3 of the four top correlated genes (those that are statistically significant after Bonferonni correction) are also canonically involved in this pathway: the actin monomer genes act2b and act1b, as well as the upstream activator cdc42l.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6C through correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "e2500426-1f70-425d-92ba-a8878f3e3175",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C53",
+      "claim": "The fourth gene most correlated with arpc1b encodes a lincRNA whose biological function is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the fourth gene encodes a lincRNA whose biological function is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is identified in the correlation analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "a9c12e78-5ab8-4cba-8977-c59ce21ba37f",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C54",
+      "claim": "Co-variation is detected in genes involved with actin nucleation among T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus we detect real, although not strong, co-variation in genes involved with actin nucleation, which may create long-lived cell-intrinsic variation in motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the correlation analysis shown in Figure 6C-E.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "38c18416-22fb-442f-9761-2356d66d25b9",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C55",
+      "claim": "The distributions of expression for arpc1b and its correlates overlap for the two T cell subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the distributions of expression for the two subtypes overlap for these genes (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "7960f062-853a-450f-bc0f-534ae72a8b58",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C56",
+      "claim": "The overlapping expression distributions are consistent with a single continuous motility axis without two distinct subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a single continuous motility axis, without two distinct subgroups, as in our microscopy data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the expression data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "0adfda7c-493c-4bcf-a394-adbcf03484e1",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C57",
+      "claim": "Cells may vary along a 'nucleation high' to 'nucleation low' axis, generating a range of long-lived speed states.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that cells may vary along a 'nucleation high' to 'nucleation low' axis, generating a range of long-lived speed states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed transcriptional heterogeneity.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "fa315916-f6bf-4a9d-b189-913daab46fb0",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C58",
+      "claim": "The statistics of zebrafish T cell trajectories closely resemble those measured by Harris et al. up through the 10 min time lag.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that the statistics of our trajectories closely resemble those measured by Harris et al. up through the 10 min time lag analyzed in that study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with published data from Harris et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "e195af8f-cd41-4a07-a329-047967412d8b",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C59",
+      "claim": "Actin retrograde flow speed is correlated both with cell speed and persistence time.",
+      "claim_type": "EXPLICIT",
+      "source": "Maiuri et al. also observed a coupling between speed and directional persistence across multiple cell types, and performed elegant in vitro work to demonstrate that actin retrograde flow speed is correlated both with cell speed and persistence time (Maiuri et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Maiuri et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "6413f645-936a-4d67-8bed-d1d5af306f39",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C60",
+      "claim": "Increasing cell speed may in many cases increase straightness, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that increasing cell speed may in many cases increase straightness, and vice versa, so that the effect on cell steering may be indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed speed-persistence coupling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "f558f5a3-dcaf-4a67-819c-f6cd0dd114e5",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C61",
+      "claim": "Spontaneous cytosolic calcium signaling generates pauses during basal T cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Another mechanistic basis for intermittency was demonstrated by Dong et al., 2017, who showed that spontaneous cytosolic calcium signaling generates pauses during basal T cell motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Dong et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "9286a078-84d9-4563-a96d-80c823e7c9e2",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C62",
+      "claim": "Calcium signaling can cause cell arrest, which is important to contact with antigen presenting cells and antigen recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally note that several studies (Dustin et al., 1997; Mempel et al., 2004; Kawakami et al., 2005; Castellino et al., 2006; Moreau et al., 2015; Dong et al., 2017; Negulescu et al., 1996) have indicated that T cells react to local chemical signals by changing speed\u2013in particular, that calcium signaling can cause cell arrest, and this is important to contact with antigen presenting cells and antigen recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "20659b29-cc44-4859-9171-57945321a42d",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C63",
+      "claim": "Imaging was performed on Tg(lck:GFP) zebrafish crossed into a nacre-/- background, at between 9 and 13 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging was performed on Tg(lck:GFP) zebrafish crossed into a nacre-/- background, at between 9 and 13 dpf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "f4c82572-33fb-4212-a7b8-02ccaca1565e",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C64",
+      "claim": "Tiled z-stacks were obtained every 45 s for at least 180 timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "With the exception of Figure 2 and Figure 2\u2014video 1, tiled z-stacks were obtained every 45 s for at least 180 timepoints",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "4374b869-a220-4dae-af11-9da9bc80c4cc",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C66",
+      "claim": "Trajectories with at least 30 consecutive steps were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Trajectories with at least 30 consecutive steps were included in the analysis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "4f2f5527-7f78-4ebf-a534-c6abbddfca77",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C67",
+      "claim": "Cells were filtered if they expressed fewer than 650 genes or more than 3250 genes in scRNA-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were filtered if they expressed fewer than 650 genes or more than 3250 genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control criteria for scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "65331545-ee94-42c8-8e44-53a4e7f60cd2",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "claim_id": "C68",
+      "claim": "Cells were filtered if more than 8% of reads were of mitochondrial origin in scRNA-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "and if more than 8% of reads were of mitochondrial origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control criteria for scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0414f21d-7de9-4599-b30f-5a5e4dfac77e",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "T cells in zebrafish do not perform Levy flight but instead exhibit persistent random walk behavior. Multiple analytical approaches (MSD analysis, velocity power spectrum, and bout length distributions) demonstrate a characteristic timescale of a few minutes, inconsistent with the scale-free behavior expected from Levy flight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17-C20 provide converging evidence from multiple independent analyses (MSD fitting to persistent random walk model, velocity power spectrum showing a characteristic timescale rather than continued high-frequency slope, and bout length distributions) that collectively rule out Levy flight and support persistent random walk behavior. The use of multiple complementary analytical methods strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "cc5ca4e5-dc80-42ca-814e-e9f4be297e17",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "T cells exhibit substantial cell-to-cell variability in speed that persists over 1-2 hours. Sample identity explains 48% of speed variance, while 52% represents within-sample heterogeneity, indicating both biological and technical sources of variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C25-C27 are supported by speed correlation analysis over time (Figure 2B) and variance decomposition from linear modeling. The statistical analysis appropriately partitions variance sources. However, the 1-2 hour timescale is based on correlation decay and may be influenced by the limited observation window.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "40a39eb5-3d1c-46db-a0c6-d3681e87c2a2",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "T cell migration exhibits a strong coupling between speed and directional persistence, where faster cells turn more shallowly and slower cells turn more sharply. This relationship accounts for 73% of variance in turning behavior, with 7% due to stochasticity and 20% to other factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28-C35 are well-supported by systematic analysis across speed classes (Figure 3) and variance decomposition. The spline fitting approach appropriately captures the nonlinear relationship. The 20% unexplained variance suggests additional biological factors may be involved, but the core finding of speed-persistence coupling is robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "89182504-8757-49e6-97cf-7de38e6b3f45",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The linear relationship between persistence time and cell speed generates a broad range (2 orders of magnitude) of effective diffusion constants across the population. The speed-persistence coupling (SPC) model produces five-fold more variation than a uniform persistence time (UPT) model would predict.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38, C9 are supported by empirical measurements (Figure 4A) and model predictions that match observed data (Figure 4B). The comparison between SPC and UPT models effectively demonstrates the amplification effect. The collapse of effective diffusion constants measured at different time lags provides additional validation of the diffusive scaling assumption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "da966ac5-16c0-4218-a563-cb36cb4bdbb6",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The behavioral manifold relating speed and turning is preserved under pharmacological perturbation with Rockout, which shifts the distribution of cell speeds downward while maintaining the quantitative relationship between speed and turning behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C39-C40 are supported by drug perturbation experiments (Figure 5A-B) showing that while Rockout affects the speed distribution, the speed-persistence relationship is maintained. The authors note a possible small shift toward shallower turns, indicating careful interpretation. The paired control/treatment design strengthens causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "20f2e739-8246-48e9-a815-997a60db8d7a",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The speed-persistence coupling behavioral manifold is conserved in mouse T cells. Analysis of published data shows the correlation holds in control cells, and genetic knockout of Myo1g shifts speed distributions while preserving the speed-turning relationship.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C41, C43, C45 are supported by reanalysis of published data from G\u00e9rard et al., 2014 (Figure 5C-D). The conservation of the behavioral manifold across species and perturbations suggests a fundamental biological principle. However, the smaller sample sizes in the reanalyzed data (n=42 control, n=123 KO) provide less statistical power than the primary zebrafish experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "1d3d8ee3-bad2-4765-a9f5-3d449b01dc3e",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The speed-persistence coupling behavioral manifold is conserved in Dictyostelium. Analysis of published data shows the correlation holds in control cells, and genetic knockout of Arpin shifts speed distributions while preserving the speed-turning relationship.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C42, C44, C46 are supported by reanalysis of published data from Dang et al., 2013 (Figure 5E-F). The conservation across evolutionarily distant organisms (zebrafish, mouse, Dictyostelium) strengthens the generality of the finding. Sample sizes are modest (n=42 WT, n=38 KO, n=42 rescue) but adequate for demonstrating the relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "36b711f0-36b0-47ba-be1c-9bd24df66259",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing reveals transcriptional heterogeneity in actin nucleation genes among zebrafish T cells. Two T cell subtypes were identified, both expressing high levels of WASP/ARP2/3 pathway genes. Correlation analysis shows co-variation of arpc1b with actin genes (actb2, actb1) and cdc42l, suggesting a continuous 'nucleation high' to 'nucleation low' axis that may underlie speed heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C57 describe transcriptional heterogeneity that could explain motility variation, but the connection remains speculative (C54, C57 explicitly note speculation). The correlation analysis is appropriate, but without direct linking of gene expression to individual cell trajectories, the causal relationship between transcriptional state and motility behavior cannot be established. The identification of epithelial cells mis-expressing lck (C48) raises questions about marker fidelity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "b0d88957-6f08-421e-b1bc-e8a5bdeb88f7",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "T cells were observed in the tail fin and larval fin fold of zebrafish larvae (9-13 dpf) using light sheet microscopy with 45-second intervals over at least 180 timepoints. Trajectories with at least 30 consecutive steps were analyzed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C63-C64, C66 describe the experimental system and data collection parameters. These are straightforward methodological details supported by the microscopy images (Figure 1A) and methods description. The 30-step minimum threshold is reasonable for trajectory analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "1f574548-3f84-487a-ac37-0d2a01794618",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing quality control filtered cells expressing fewer than 650 or more than 3250 genes, and cells with more than 8% mitochondrial reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 describe standard quality control criteria for scRNA-seq. The thresholds are reasonable and typical for the field, though the specific values are somewhat arbitrary. The filtering criteria are clearly stated and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "cca07128-41ae-4adc-a212-1de383228cb8",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior literature establishes that T cells migrate via undirected random walks in T cell zones, must operate across multiple spatial scales (microns for APC contact, millimeters for target finding), and that conventional diffusive random walks struggle with this multi-scale requirement. Short observation periods cannot distinguish Levy flight from walker heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C15 accurately summarize prior literature with appropriate citations. The conceptual framework correctly identifies the biological challenge (multi-scale exploration) and the technical challenge (distinguishing Levy flight from heterogeneity). These claims provide essential context for the study's motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    },
+    {
+      "id": "5ca4d969-eb3d-403d-9d13-3a9e47fb7352",
+      "content_id": "a9ab87b0-e152-4e13-860b-ca8f21009f63",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors' zebrafish T cell trajectory statistics resemble those from Harris et al. (2012) through 10 minutes. Prior work by Maiuri et al. (2015) demonstrated that actin retrograde flow correlates with both speed and persistence. Other studies show calcium signaling generates pauses and cell arrest important for APC contact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 appropriately contextualize the current findings within prior literature. The comparison to Harris et al. acknowledges consistency at short timescales while noting differences in biological context. The citations to mechanistic studies (Maiuri, Dong) provide plausible molecular bases for the observed phenomena.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:12:15.982218Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "27879e29-413c-43a3-ae88-2c278f8529d5",
+      "result_id": "0414f21d-7de9-4599-b30f-5a5e4dfac77e"
+    },
+    {
+      "claim_id": "0e9eadc7-a0b7-40f3-a1c1-25b3dfb7a14f",
+      "result_id": "0414f21d-7de9-4599-b30f-5a5e4dfac77e"
+    },
+    {
+      "claim_id": "9003609b-0beb-4101-9309-cc51c5e7a38a",
+      "result_id": "0414f21d-7de9-4599-b30f-5a5e4dfac77e"
+    },
+    {
+      "claim_id": "3ca89dab-7d73-4340-aedc-febf7435f49d",
+      "result_id": "0414f21d-7de9-4599-b30f-5a5e4dfac77e"
+    },
+    {
+      "claim_id": "53272038-d756-4e30-956d-9ce893cf5cfb",
+      "result_id": "0414f21d-7de9-4599-b30f-5a5e4dfac77e"
+    },
+    {
+      "claim_id": "9c282f1b-36cf-400a-a790-496732484e17",
+      "result_id": "cc5ca4e5-dc80-42ca-814e-e9f4be297e17"
+    },
+    {
+      "claim_id": "2d1c1c40-be0a-4cab-a443-a87bdef5134d",
+      "result_id": "cc5ca4e5-dc80-42ca-814e-e9f4be297e17"
+    },
+    {
+      "claim_id": "80f8a9e7-c1ed-47e2-832d-4d77f52e54ec",
+      "result_id": "cc5ca4e5-dc80-42ca-814e-e9f4be297e17"
+    },
+    {
+      "claim_id": "8520abf8-0d2f-4689-b8f7-9d35d1b8acf0",
+      "result_id": "cc5ca4e5-dc80-42ca-814e-e9f4be297e17"
+    },
+    {
+      "claim_id": "c30f4c4e-33ca-465a-9f44-4cea5f6aa42c",
+      "result_id": "40a39eb5-3d1c-46db-a0c6-d3681e87c2a2"
+    },
+    {
+      "claim_id": "0ef7b485-00d3-4617-ac92-fc39f73a4c8b",
+      "result_id": "40a39eb5-3d1c-46db-a0c6-d3681e87c2a2"
+    },
+    {
+      "claim_id": "4bb8b355-da22-4ab5-9556-29f3a5a96602",
+      "result_id": "40a39eb5-3d1c-46db-a0c6-d3681e87c2a2"
+    },
+    {
+      "claim_id": "2da21f73-3830-4c3e-83b1-f56e1dee0adb",
+      "result_id": "40a39eb5-3d1c-46db-a0c6-d3681e87c2a2"
+    },
+    {
+      "claim_id": "6c545ec9-1e63-4d65-b9d9-751da018306c",
+      "result_id": "40a39eb5-3d1c-46db-a0c6-d3681e87c2a2"
+    },
+    {
+      "claim_id": "5fbdf5d0-6061-4837-b1b4-d1c5f1ae6214",
+      "result_id": "40a39eb5-3d1c-46db-a0c6-d3681e87c2a2"
+    },
+    {
+      "claim_id": "a104359d-8c63-42e4-9da3-ddee571366eb",
+      "result_id": "40a39eb5-3d1c-46db-a0c6-d3681e87c2a2"
+    },
+    {
+      "claim_id": "b3e11473-ec43-4066-a5f2-3f1e37ab6ba2",
+      "result_id": "40a39eb5-3d1c-46db-a0c6-d3681e87c2a2"
+    },
+    {
+      "claim_id": "a0d75037-394f-4100-9517-173ddb86e6a7",
+      "result_id": "40a39eb5-3d1c-46db-a0c6-d3681e87c2a2"
+    },
+    {
+      "claim_id": "d7d19e72-6819-4851-bff3-87987e30ac68",
+      "result_id": "89182504-8757-49e6-97cf-7de38e6b3f45"
+    },
+    {
+      "claim_id": "29b31316-bf85-4485-9d71-45980946a427",
+      "result_id": "89182504-8757-49e6-97cf-7de38e6b3f45"
+    },
+    {
+      "claim_id": "4c421765-fa39-43af-ae80-05eb02bd6956",
+      "result_id": "89182504-8757-49e6-97cf-7de38e6b3f45"
+    },
+    {
+      "claim_id": "88e5ce9f-80d6-44b5-9af3-d2740b5bc7c1",
+      "result_id": "89182504-8757-49e6-97cf-7de38e6b3f45"
+    },
+    {
+      "claim_id": "f2241b83-17bb-463d-989d-245adb933c44",
+      "result_id": "da966ac5-16c0-4218-a563-cb36cb4bdbb6"
+    },
+    {
+      "claim_id": "885887ec-5676-4d7a-a1cb-332c8a334f01",
+      "result_id": "da966ac5-16c0-4218-a563-cb36cb4bdbb6"
+    },
+    {
+      "claim_id": "4a142ad4-8e4b-4636-bb53-6501bacbd0f7",
+      "result_id": "da966ac5-16c0-4218-a563-cb36cb4bdbb6"
+    },
+    {
+      "claim_id": "e5f4a2a8-a69c-4e92-a108-0fcaa6258f30",
+      "result_id": "20f2e739-8246-48e9-a815-997a60db8d7a"
+    },
+    {
+      "claim_id": "5da9598f-fa45-47b4-aa19-7c2c7b33c1e6",
+      "result_id": "20f2e739-8246-48e9-a815-997a60db8d7a"
+    },
+    {
+      "claim_id": "c098ccb1-964f-4867-8af8-eaa3185bfbab",
+      "result_id": "20f2e739-8246-48e9-a815-997a60db8d7a"
+    },
+    {
+      "claim_id": "a73905e8-6961-41e4-9b6b-078885a977a8",
+      "result_id": "20f2e739-8246-48e9-a815-997a60db8d7a"
+    },
+    {
+      "claim_id": "fcdaa16f-618a-413e-a852-b53b98aab3d2",
+      "result_id": "1d3d8ee3-bad2-4765-a9f5-3d449b01dc3e"
+    },
+    {
+      "claim_id": "cf59b993-d20d-438c-ae1d-e555dd180b3a",
+      "result_id": "1d3d8ee3-bad2-4765-a9f5-3d449b01dc3e"
+    },
+    {
+      "claim_id": "8caae8fe-4926-444c-bb94-6ef159104ab4",
+      "result_id": "1d3d8ee3-bad2-4765-a9f5-3d449b01dc3e"
+    },
+    {
+      "claim_id": "b85db48f-f212-44ab-a517-23af97a678a7",
+      "result_id": "1d3d8ee3-bad2-4765-a9f5-3d449b01dc3e"
+    },
+    {
+      "claim_id": "75a15d47-3809-43f5-971c-419a7da63629",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "3e28ee24-bbca-403a-93a2-c2e04114f4a7",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "5b81cf30-92f0-4bc5-adf2-94443abebcd8",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "a9a0a379-f274-48d8-8073-0266893b76c7",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "adab5aa6-4131-4b81-ac58-86160c794c20",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "adc6e2bf-6b59-42e4-ae59-d68ab4d5a0e6",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "e2500426-1f70-425d-92ba-a8878f3e3175",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "a9c12e78-5ab8-4cba-8977-c59ce21ba37f",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "38c18416-22fb-442f-9761-2356d66d25b9",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "7960f062-853a-450f-bc0f-534ae72a8b58",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "0adfda7c-493c-4bcf-a394-adbcf03484e1",
+      "result_id": "36b711f0-36b0-47ba-be1c-9bd24df66259"
+    },
+    {
+      "claim_id": "c68488d3-f883-437a-b8e7-048f24063d88",
+      "result_id": "b0d88957-6f08-421e-b1bc-e8a5bdeb88f7"
+    },
+    {
+      "claim_id": "20659b29-cc44-4859-9171-57945321a42d",
+      "result_id": "b0d88957-6f08-421e-b1bc-e8a5bdeb88f7"
+    },
+    {
+      "claim_id": "f4c82572-33fb-4212-a7b8-02ccaca1565e",
+      "result_id": "b0d88957-6f08-421e-b1bc-e8a5bdeb88f7"
+    },
+    {
+      "claim_id": "4374b869-a220-4dae-af11-9da9bc80c4cc",
+      "result_id": "b0d88957-6f08-421e-b1bc-e8a5bdeb88f7"
+    },
+    {
+      "claim_id": "4f2f5527-7f78-4ebf-a534-c6abbddfca77",
+      "result_id": "1f574548-3f84-487a-ac37-0d2a01794618"
+    },
+    {
+      "claim_id": "65331545-ee94-42c8-8e44-53a4e7f60cd2",
+      "result_id": "1f574548-3f84-487a-ac37-0d2a01794618"
+    },
+    {
+      "claim_id": "b57a88e1-4d41-4e02-a641-c3423935f91f",
+      "result_id": "cca07128-41ae-4adc-a212-1de383228cb8"
+    },
+    {
+      "claim_id": "2db63c52-d9dd-4526-8091-97a02cdf3b41",
+      "result_id": "cca07128-41ae-4adc-a212-1de383228cb8"
+    },
+    {
+      "claim_id": "8ff3278f-626d-45eb-837a-8905f032ccb7",
+      "result_id": "cca07128-41ae-4adc-a212-1de383228cb8"
+    },
+    {
+      "claim_id": "f8f45f7e-88a2-4d92-b40f-f7762423451a",
+      "result_id": "cca07128-41ae-4adc-a212-1de383228cb8"
+    },
+    {
+      "claim_id": "8915bf15-1b7f-4399-8b10-b101d5cc83e4",
+      "result_id": "cca07128-41ae-4adc-a212-1de383228cb8"
+    },
+    {
+      "claim_id": "af1376ab-d9bc-4a8d-944e-a7e91db0bd44",
+      "result_id": "cca07128-41ae-4adc-a212-1de383228cb8"
+    },
+    {
+      "claim_id": "cac02fbc-33cc-4cd3-848d-c8fe436ec4a8",
+      "result_id": "cca07128-41ae-4adc-a212-1de383228cb8"
+    },
+    {
+      "claim_id": "fa315916-f6bf-4a9d-b189-913daab46fb0",
+      "result_id": "5ca4d969-eb3d-403d-9d13-3a9e47fb7352"
+    },
+    {
+      "claim_id": "e195af8f-cd41-4a07-a329-047967412d8b",
+      "result_id": "5ca4d969-eb3d-403d-9d13-3a9e47fb7352"
+    },
+    {
+      "claim_id": "6413f645-936a-4d67-8bed-d1d5af306f39",
+      "result_id": "5ca4d969-eb3d-403d-9d13-3a9e47fb7352"
+    },
+    {
+      "claim_id": "f558f5a3-dcaf-4a67-819c-f6cd0dd114e5",
+      "result_id": "5ca4d969-eb3d-403d-9d13-3a9e47fb7352"
+    },
+    {
+      "claim_id": "9286a078-84d9-4563-a96d-80c823e7c9e2",
+      "result_id": "5ca4d969-eb3d-403d-9d13-3a9e47fb7352"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Rats were trained in a fear discrimination task with three auditory cues predicting different shock probabilities (danger p=1.00, uncertainty p=0.375, safety p=0.00). After training, rats were implanted with microelectrode bundles dorsal to vlPAG and neural activity was recorded during continued discrimination sessions. Rats showed excellent discriminative fear behavior with suppression ratios graded by threat level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design and behavioral results are well-documented with appropriate statistical support (C28, C29). The methods are clearly described including subject details (C125-C132), behavioral training (C20-C22), surgical procedures (C23, C127-C128), and recording methodology (C24-C26). The behavioral discrimination was statistically significant with proper effect sizes and confidence intervals reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "K-means clustering of 91 cue-inhibited vlPAG neurons based on early and late danger responses identified two distinct functional populations: Flip neurons (n=45) that switched from early inhibition to late excitation, and Sustain neurons (n=46) that maintained inhibition throughout. These populations could only be distinguished by their functional responses, not by waveform properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering analysis is appropriately applied and yields two clear populations (C33-C35). Statistical tests confirm no differences in waveform properties between populations (C36), supporting the conclusion that they are functionally distinct (C37). The methodology for identifying cue-inhibited neurons and clustering approach is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Flip neurons showed initial inhibition to danger and uncertainty cues that transitioned to excitation for danger during late cue presentation. Early in the cue, differential firing distinguished uncertainty from safety but not danger from uncertainty. Late in the cue, danger flipped to excitation and became differentiated from uncertainty. Single-unit analyses confirmed these population-level patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal dynamics of Flip neurons are well-characterized with strong statistical support including significant cue \u00d7 bin interactions (C40), bootstrap confidence intervals (C42-C44), and sign tests at the single-unit level (C53-C57). The pattern is consistent across trials (C41) and supported by multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C60"
+    ],
+    "result": "Sustain neurons showed graded, cue-selective inhibition (danger < uncertainty < safety \u2248 0) that was maintained throughout cue presentation. This differential firing pattern was observed both early and late in the cue period, with neurons selectively responsive to danger and uncertainty but not safety. Single-unit analyses confirmed population-level patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of Sustain neurons is robust with strong statistical support including significant main effects and interactions (C47), bootstrap confidence intervals showing differential firing throughout cue presentation (C50-C51), and consistent patterns across trials (C48). Single-unit sign tests confirm selective responsiveness (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Linear regression analysis revealed that Flip neurons showed an early-to-late switch in threat probability signaling. Early in cue presentation, Flip neurons did not consistently signal threat probability or fear output. Late in cue presentation, they showed positive bias toward threat probability but not fear output. This temporal inconsistency indicates Flip neurons are not suitable substrates for governing fear output throughout cue presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regression analysis is appropriately conducted with clear definition of regressors (C64-C65). Statistical results show significant regressor \u00d7 interval interaction (C67) and the interpretation is supported by bootstrap confidence intervals (C68) and sign tests (C69-C70). The conclusion that Flip neurons are unsuitable for fear output is logically derived from the temporal inconsistency in signaling (C71-C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Linear regression revealed that Sustain neurons consistently signaled both fear output and threat probability throughout cue presentation. Beta coefficients were negative for both regressors and maintained throughout the cue period. Single-unit analyses showed biases away from zero for both regressors during early and late periods, with significant correlations between threat probability and fear output coefficients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regression analysis demonstrates consistent signaling with appropriate statistics including ANOVA showing only main effect of bin (C75), bootstrap confidence intervals throughout cue presentation (C76), sign tests showing biases in both periods (C77), and significant correlations between regressors (C78). The conclusion that Sustain neurons signal both fear output and threat probability is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Threat tuning analysis revealed that Flip neurons were tuned to alternative shock probabilities that changed from early to late cue presentation. Early tuning showed threat overestimation (trough at 0.750), while late tuning showed underestimation (peak at 0.250). This pattern does not approximate actual shock probability or fear output, further indicating Flip neurons are unlikely to govern fear output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The threat tuning analysis is methodologically sound (C83) with clear results showing temporal changes in tuning (C84-C87). Statistical support includes significant main effects and interactions (C88). The interpretation that Flip neurons do not approximate actual probability or fear output is justified by the tuning curve positions relative to actual probability and behavioral output (C89-C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C105"
+    ],
+    "result": "Threat tuning analysis of Sustain neurons showed stable tuning that consistently fell between actual shock probability and mean fear output, changing only subtly over cue presentation. The tuning trough occurred at 0.500 early and 0.625 late, exceeding the actual probability of 0.375 and better approximating fear output. This stability suggests Sustain neurons as candidates for fear output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The threat tuning analysis for Sustain neurons shows appropriate statistical support (C93) and the tuning positions are clearly documented (C92). The interpretation that stable tuning biased toward fear output suggests these neurons as candidates for fear output is reasonable (C94, C105), though the authors appropriately note this is correlational evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Flip neurons may provide information about anticipated timing of foot shock rather than fear output. Peak activity occurred just prior to shock presentation and declined shortly after. This pattern resembles previously reported 'Ramping' neurons and is consistent with studies showing shifts from prefrontal to periaqueductal activity as threats become more proximate, suggesting a role for vlPAG in threat timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the temporal pattern of Flip neuron activity is well-documented (C96) and the comparison to prior work is appropriate (C97-C98), the interpretation regarding threat timing is largely speculative (C95, C99, C100). The claim that Flip neurons signal threat timing lacks direct experimental evidence and is inferred from temporal patterns. This represents a reasonable hypothesis but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106"
+    ],
+    "result": "Sustain neurons represent a complete neural correlate for fear output in vlPAG. Their activity pattern complies with basic assumptions: they decreased firing to threat-related cues but not safety, fully discriminated between all cue types throughout presentation, and the differential firing pattern reflected fear output. However, causal evidence that these neurons drive fear responses is lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of Sustain neurons as a neural correlate for fear output is well-supported by multiple lines of evidence including temporal dynamics (C102-C103), differential firing patterns (C5-C7), and consistency between population and single-unit levels (C104). The authors appropriately acknowledge the limitation that this is correlational evidence without causal manipulation (C106). The conclusion is justified given the data but correctly qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The results are partially consistent with the disinhibition mechanism theory of vlPAG function. While some Sustain neurons had high baseline firing rates consistent with GABAergic interneurons, many had low baseline rates. This heterogeneity suggests cue-inhibited neurons are not uniformly GABAergic interneurons and that vlPAG likely utilizes both disinhibition and independent signaling via cue-excited and cue-inhibited projection populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observations regarding baseline firing rate heterogeneity are clearly documented (C111-C112) and the inference that neurons are not uniformly GABAergic is reasonable given this evidence (C113). The interpretation that results are consistent with an alternative model incorporating both mechanisms is appropriately qualified as speculative (C114-C115) while being grounded in the observed data. The discussion appropriately contextualizes findings within existing theoretical frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work established that vlPAG mediates fear responses and that cue-excited neurons signal threat probability rather than fear output. Cue-inhibited neurons have been observed previously, with optogenetic inhibition promoting freezing. The authors' prior study found ~37% of vlPAG neurons were cue-inhibited, motivating the current investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize established knowledge and prior findings with appropriate citations (C1, C9-C12, C17-C18). The authors' prior work is correctly referenced (C2, C13-C16, C19) and provides appropriate context for the current study. This background establishes the rationale for investigating cue-inhibited neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The findings expand understanding of vlPAG functional diversity beyond previously identified cue-excited populations. The diversity of information signals in vlPAG is surprising given expectations, and understanding factors determining vlPAG neuron function will be essential for understanding neural mechanisms of adaptive and maladaptive threat behavior, particularly given emerging evidence of vlPAG involvement in psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The summary of prior findings is accurate (C116-C117) and the claim that current findings expand functional diversity is justified (C118, C120). The interpretation regarding surprising diversity (C122) and future directions (C124) are reasonable given the data. The connection to psychiatric disorders is appropriately supported by citation (C123). These represent appropriate contextualization and interpretation of the findings.",
+    "result_type": "MINOR"
+  }
+]

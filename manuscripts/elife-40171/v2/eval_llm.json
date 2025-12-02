@@ -1,0 +1,426 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A transposon mutagenesis screen of A. baumannii identified 58 unique genes involved in outer membrane barrier function, including components of the Mla ABC transporter system (mlaF and mlaE). The screen yielded 364 blue colonies from ~80,000 screened, with >85% showing decreased OM barrier function, 23/58 showing permeability defects, and 49/58 showing increased antibiotic sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen methodology is well-described (C26-C28) with appropriate positive selection criteria. The quantitative results (C29-C32) provide clear evidence of successful identification of OM barrier genes. Multiple orthogonal validation assays (permeability and antibiotic sensitivity) strengthen the findings (C30-C33). The identification of mla genes (C34) is directly supported by the screen data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The A. baumannii mlaFEDCB operon encodes a conserved ABC transporter system homologous to the E. coli Mla system. Bioinformatic analysis predicts MlaF and MlaE encode the ATPase and transmembrane domains, MlaD contains IM-spanning and periplasmic domains, MlaC is a soluble periplasmic protein, and MlaB is a cytoplasmic STAS-domain protein. MlaA is encoded at a separate chromosomal location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bioinformatic predictions (C37-C40) are standard analyses for ABC transporter systems and are supported by sequence homology to known systems (C35, C36). The genomic organization is directly observable (C41). The functional association of MlaA with the system in E. coli (C42, C43) provides comparative support, though this is based on prior work rather than new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50"
+    ],
+    "result": "Chromosomal deletions of mlaC and mlaF cause outer membrane permeability defects and increased antibiotic sensitivity in A. baumannii. The phenotypes are complemented by chromosomal repair, confirming the role of the Mla system in maintaining OM barrier function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The deletion mutants show clear phenotypes by EtBr uptake (C44) and MIC measurements (C46). Genetic complementation (C45) is the gold standard for confirming gene function and rules out polar effects. The interpretation that increased sensitivity to non-porin-mediated antibiotics indicates direct membrane effects (C47) is well-supported by cited literature. These data collectively support the conclusion (C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C59"
+    ],
+    "result": "Mla mutants display increased extracellular carbohydrate production as measured by crystal violet staining, which may correlate with outer membrane stress. Expression of the dominant-negative MlaFK55L also increases exopolysaccharide production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal violet staining data (C48, C59) provide direct evidence of increased exopolysaccharide. The interpretation as OM stress response (C49) is reasonable but somewhat speculative. The consistency between deletion mutants and dominant-negative expression strengthens the association with Mla function. However, the mechanistic link to OM stress could be more rigorously established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "MlaF contains Walker A and B motifs characteristic of ATPases. Expression of a Walker A mutant (MlaFK55L) produces a dominant-negative phenotype with increased membrane permeability and antibiotic sensitivity comparable to deletion mutants, demonstrating that ATP hydrolysis by MlaF is required for OM barrier function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence analysis identifying Walker motifs (C51, C52) is straightforward. The dominant-negative approach is well-established for ABC transporters (C56, C57) and provides strong evidence that the phenotype results from loss of transport function rather than structural disruption (C62, C63). The experimental data (C58, C60) clearly show the dominant-negative effect. This is a rigorous demonstration of ATP requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Affinity purification of MlaB co-purifies MlaF, MlaD, and MlaE, demonstrating these four proteins form a stable complex. MlaC was not detected, suggesting transient interaction with the complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-purification data confirmed by mass spectrometry (C64) provides direct evidence of stable complex formation (C65). The absence of MlaC (C66) is appropriately interpreted as possible transient interaction, consistent with its proposed role as a periplasmic shuttle protein. The citation to similar findings strengthens this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Cryo-EM structure of the abMlaBDEF complex was determined at 8.7 \u00c5 resolution from ~14,000 particles. The structure shows MlaD at the periplasmic side, MlaE in the transmembrane region, and MlaF/MlaB at the cytoplasmic face. The structure is consistent with an independently solved E. coli complex but at higher resolution allowing subunit modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM methodology is well-described with appropriate quality controls (C67, C68). The resolution of 8.7 \u00c5 (C69) is sufficient for the domain assignments made. The proposed localization of subunits (C70-C72) is based on bioinformatics and comparison to E. coli data, which is reasonable. The independent validation by the E. coli structure (C73, C74) strongly supports the correctness of the structure, and the higher resolution (C75) represents a clear advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The MlaD region of the structure displays clear six-fold symmetry despite only two-fold symmetry averaging, consistent with a hexameric arrangement. The modeled abMlaD hexamer is at low energy, fits the EM density well, and is very similar to the crystallographic E. coli MlaD hexamer structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of six-fold symmetry without imposing it (C76) is strong evidence for the hexameric state. Agreement with the E. coli hexamer (C77, C80, C81) provides independent validation. The energy minimization (C78) and density fit (C79) are standard validation metrics for structural models. The similarity to the crystal structure (C82) further validates the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "An extra density region in the MlaD map likely corresponds to a ~45 amino-acid insert unique to A. baumannii MlaD, located between \u03b2-strands 4 and 5. The functional role of this insert is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of extra density (C83) is directly from the EM map. The assignment to the insert (C84) is a reasonable inference based on sequence analysis and density location. The uniqueness to A. baumannii (C85) is verifiable by sequence comparison. The acknowledgment that the function is unknown (C86) is appropriate given the lack of functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The arrangement of MlaF in the structure resembles the pre-translocation state of the maltose transporter ATPase MalK, suggesting the complex was trapped in a similar conformation. This may be stabilized by MlaD/MlaF or by detergents mimicking the natural ligand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison to MalK (C87) is a valid approach for inferring conformational state. The inference about the trapped conformation (C88) is reasonable based on this comparison. The speculation about stabilization mechanisms (C89, C90) is appropriately presented as possibilities rather than conclusions. This provides useful mechanistic insight while acknowledging uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The transmembrane region shows well-resolved density for TM helices. The modeled MlaE dimer fits the density well and corresponds to a closed transporter with no solvent channel between subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of well-resolved TM density (C91) is directly from the EM map. The good fit of the MlaE model (C92) is a standard validation metric. The interpretation as a closed transporter (C93) is reasonable based on the lack of a solvent channel, though this represents a single conformational state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The MlaD N-terminal TM helices show heterogeneity in position relative to the complex. Further 3D classification revealed six MlaD TM helices with asymmetric arrangement\u2014two forming close contacts with MlaE while four do not. This explains the asymmetry between dimeric MlaE and hexameric MlaD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of heterogeneity (C96) and the 3D classification approach (C97) are appropriate methods for addressing conformational variability. The asymmetric arrangement (C98) is directly observable in the structure. The explanation for MlaE-MlaD asymmetry (C99) is a logical inference from the structural data. The acknowledgment that higher resolution is needed for complete understanding (C100) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Crystal structures of MlaC from other organisms show binding of phospholipids. LC-MS/MS analysis of purified A. baumannii MlaC and MlaD revealed bound phosphatidylglycerol and phosphatidylethanolamine of varying acyl chain lengths, suggesting the periplasmic components may bind diacylated GPLs with limited head group specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural data from other organisms (C101, C102) provides strong prior evidence for GPL binding. The LC-MS/MS analysis (C104) directly demonstrates GPL binding to the A. baumannii proteins. The inference about limited head group specificity (C105) is reasonable given the detection of both PG and PE. This provides direct biochemical evidence for GPL as substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Density centrifugation successfully separates A. baumannii inner and outer membranes. TLC, ESI-MS, and quantitative LC-MS/MS analyses show that \u0394mlaC mutants have dramatically decreased abundance of all major phospholipid species in the OM compared to wild type, suggesting a role for Mla in outward GPL trafficking rather than retrograde transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The membrane separation is well-validated by marker proteins (C112-C114). Multiple orthogonal analytical methods (TLC, ESI-MS, LC-MS/MS) all show decreased OM GPL in mutants (C115, C116), providing robust quantitative evidence. The conclusion that this contradicts retrograde transport (C117, C118) and supports anterograde transport (C119) is logically sound, as retrograde transport would predict GPL accumulation in the OM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "A stable isotope labeling method using 2-13C acetate allows tracking of newly synthesized GPLs between membranes. In wild-type A. baumannii, the ratios of labeled to unlabeled GPLs are nearly identical between IM and OM, indicating rapid GPL transport with rates equivalent to synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stable isotope method is well-established and appropriately applied (C129). The observation of near-identical ratios between membranes (C130, C132) provides direct evidence for efficient transport. The interpretation of rapid transport (C131, C133) is well-supported and consistent with prior E. coli data (C134). This establishes the baseline for comparison with mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Mla mutants accumulate newly synthesized GPLs in the inner membrane at a greater rate than in the outer membrane, as shown by increasing disparity in labeled/unlabeled GPL ratios over time. This effect is observed for multiple GPL species in \u0394mlaF mutants and is reproduced by expression of the dominant-negative MlaFK55L, demonstrating that ATP hydrolysis by MlaF is required for GPL extraction from the IM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stable isotope data clearly show differential accumulation in mla mutants (C135, C136). The consistency across multiple GPL species strengthens the conclusion. The reproduction of the phenotype with the dominant-negative mutant (C137) provides strong evidence that the effect is due to loss of ATP-dependent transport function (C138). This is the key experiment demonstrating anterograde transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C151",
+      "C178"
+    ],
+    "result": "The effect of mlaC deletion on GPL accumulation in the IM is statistically significant but less severe than mlaF deletion, suggesting possible redundant mechanisms for GPL transport in the absence of MlaC. \u0394mlaA mutants also show defective GPL delivery from IM to OM, supporting a role for MlaA in the overall Mla system function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative comparison between mlaC and mlaF effects (C148) is directly from the data. The speculation about redundancy (C149) is appropriately presented as a possibility rather than a conclusion. The mlaA data (C178) provides additional support for MlaA involvement (C151). However, the weaker effect of mlaC deletion raises questions about the model that could benefit from further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors propose a model where the A. baumannii Mla system traffics GPLs from the IM to the OM. ATP hydrolysis by MlaF provides energy to extract GPLs from the IM, MlaD (in complex with MlaE and MlaF) may extract lipids by hydrophobic interaction after ATP hydrolysis, and MlaC accepts GPLs from MlaD for periplasmic transport to the OM. A hydrophobic acceptor is proposed to facilitate complete GPL removal from the bilayer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This model (C139-C141, C146, C147) integrates the structural data, biochemical evidence, and stable isotope experiments into a coherent mechanism. The proposal about energy requirements and hydrophobic acceptors (C144) addresses known thermodynamic constraints. While some mechanistic details remain speculative (C146), the overall model is well-supported by the collective data. The model represents a significant advance over previous hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The stable isotope assay results are consistent with Mla functioning as an anterograde GPL transporter, as phospholipases and vesicle budding would not distinguish between labeled and unlabeled species. However, the results do not exclude a possible dual role in maintaining OM lipid asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The logic about phospholipases and vesicles not affecting isotope ratios (C152) is sound and addresses a key alternative explanation. The conclusion supporting anterograde transport (C153) is well-justified by the data. The acknowledgment of limitations (C154) is scientifically appropriate, as the data do not definitively rule out all alternative models. This represents careful interpretation of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The authors critically evaluate previous interpretations of Mla as a retrograde transporter in E. coli, noting that this was inferred from PagP activation and homology to chloroplast systems, but was not directly tested experimentally. They propose that their structural and functional data from A. baumannii, showing similar architecture to E. coli, point to a conserved anterograde function, and suggest alternative explanations for E. coli phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The critique of prior work (C155, C156, C160) is fair and well-reasoned. The point about chloroplast system adaptation (C161) is a valid consideration. The structural similarity argument (C162) supports functional conservation. The alternative explanations for E. coli phenotypes (C163, C165) are plausible given the A. baumannii data. The call for direct experimental testing in E. coli (C166) is appropriate. This represents thoughtful scientific discourse.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The authors discuss a recent study by Powers and Trent showing that mla mutations arise during evolution of LOS-deficient A. baumannii, which was interpreted as supporting retrograde transport. They critique this interpretation, noting the lack of GPL profiling data and suggesting alternative explanations involving mla upregulation and membrane homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The summary of the Powers and Trent study (C167-C172) is accurate. The critique about missing GPL data (C174) is valid and identifies a key gap in that study. The alternative interpretation involving mla upregulation (C175) and homeostasis is plausible. This represents appropriate critical evaluation of related work, though the authors' alternative explanation is also somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Recent structural studies show MlaA forms a ring-shaped structure at the OM inner leaflet and complexes with porins. The authors' data showing \u0394mlaA mutants are defective in GPL delivery from IM to OM can be reconciled with a dual-function model where MlaA both removes mislocalized GPL from the outer leaflet and facilitates GPL delivery by MlaC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural data on MlaA (C176, C177) from other studies is well-established. The functional data showing delivery defects in \u0394mlaA (C178) is clear. However, the proposed dual-function model (C179) is speculative and not directly tested. The prediction (C180) could be tested but hasn't been. This represents a reasonable attempt to reconcile conflicting data, but requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "The Mla system is broadly conserved across Gram-negative bacteria (entire five-gene operon) and partially conserved in Mycobacteria, Actinobacteria, and chloroplasts (first three genes). The conservation and the A. baumannii results suggest a generalized mechanism for OM biogenesis, and the system is crucial for A. baumannii OM integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conservation data (C186, C187) is based on bioinformatic analysis and is verifiable. The inference about generalized mechanism (C188) is reasonable given the conservation and functional data. The conclusion about importance for OM integrity (C189) is directly supported by the experimental data. This appropriately places the findings in broader biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C190",
+      "C192"
+    ],
+    "result": "The viability of mla mutants despite reduced OM GPL suggests possible additional undiscovered GPL delivery mechanisms. The increased exopolysaccharide in mla mutants may play a partially compensatory role, as exopolysaccharides can contribute to antibiotic resistance through improved barrier function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation that mutants are viable with reduced GPL (C190) is valid and the inference about additional mechanisms is logical. However, this is speculative without direct evidence. The speculation about compensatory exopolysaccharide (C192) is based on prior work showing exopolysaccharides can affect resistance, but the compensatory role is not directly tested. These represent reasonable hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C25",
+      "C193",
+      "C196"
+    ],
+    "result": "The broad conservation of Mla suggests it may play a conserved role in OM biogenesis across species. The importance of Mla to A. baumannii OM integrity and antibiotic sensitivity suggests components may serve as antimicrobial therapeutic targets, and understanding OM barrier function could enable development of drugs to restore antibiotic efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The inference about conserved function (C6, C25) is reasonable given the conservation and functional data, though direct testing in other species is needed. The suggestions about therapeutic potential (C8, C193, C196) are speculative and represent potential applications rather than demonstrated results. While the logic is sound, these claims about drug development are not supported by the current data and represent future possibilities.",
+    "result_type": "MINOR"
+  }
+]

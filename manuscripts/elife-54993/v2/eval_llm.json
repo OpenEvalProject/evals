@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "FP-RMS is particularly dependent on CHD4 among NuRD subunits for survival. A CRISPR screen showed CHD4 knockout (51% KO/Control ratio) had stronger effects than other NuRD members, with 4/5 sgRNAs reducing proliferation below 75%. RBBP4 depletion reduced proliferation but did not induce cell death or affect 5/6 P3F target genes, unlike CHD4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from CRISPR screens (C2-C5), shRNA validation (C6), and gene expression analysis (C7) demonstrating CHD4's unique essentiality among NuRD subunits. The quantitative data (51% vs higher percentages for other subunits) and functional distinctions (cell death vs proliferation only) are well-documented with appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "CHD4 interacts with diverse chromatin regulators including NuRD subunits and BRD4. Mass spectrometry identified 103 interactors (59% previously reported), enriched for epigenetic regulators. Co-IP confirmed BRD4 interaction with CHD4 and multiple NuRD components (HDAC2, MTA2), but not HDAC1 or RBBP4, suggesting BRD4 interacts with CHD4 in the NuRD complex context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C19 present a coherent interactome analysis with appropriate validation. The mass spectrometry approach (C10) with statistical thresholds (FC\u22652, SAINT>0.6) and validation against BioGRID (C11) demonstrates rigor. Co-IP experiments (C16-C19) validate key interactions, though the authors appropriately note potential indirect chromatin-mediated interactions (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "CHD4/NuRD localizes to enhancers while CHD4-free NuRD localizes to promoters. ChIP-seq showed CHD4 correlates with RBBP4, HDAC2, MTA2, BRD4, P3F, and enhancer marks (H3K27ac, H3K4me1). 66% of HDAC2/RBBP4/MTA2 locations lacked CHD4, suggesting two complexes: NuRD-only (promoters, H3K4me3+, RNA Pol2+) and CHD4/NuRD (enhancers, H3K27ac+, BRD4+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 present comprehensive ChIP-seq analysis with clear quantitative distinctions between complex compositions and genomic locations. The correlation matrix (C20), chromatin state mapping (C22), and peak overlap analysis (C24) provide multiple lines of evidence. DNase hypersensitivity data (C30) confirms both regions are accessible, supporting functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "NuRD regulates distinct biological processes according to composition and location. CHD4/NuRD regions associate with muscle development and cell-type specific processes characteristic of FP-RMS, while NuRD-only locations correlate with housekeeping processes like gene expression and mRNA metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 and C89-C91 present gene ontology analysis linking genomic location to biological function. The distinction between cell-type specific (CHD4/NuRD) and housekeeping (NuRD-only) processes is supported by GREAT analysis and consistent with the enhancer vs promoter localization patterns established in the previous result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CHD4/NuRD co-localizes with P3F at super-enhancers. 42% of P3F locations were bound by CHD4/NuRD, and these sites were richer in H3K27ac and BRD4 with more open chromatin than P3F-only sites. P3F+CHD4/NuRD-regulated genes showed significantly higher expression. 90% of P3F-occupied super-enhancers (407/452) were co-bound by CHD4/NuRD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 demonstrate strong co-localization of CHD4/NuRD with P3F at super-enhancers using ChIP-seq peak overlap analysis with clear quantitative metrics. The functional correlation with gene expression (C36) and the striking 90% overlap at P3F super-enhancers (C39) provide compelling evidence for functional cooperation. Statistical significance is reported for expression differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "CHD4 maintains super-enhancer accessibility and enables P3F binding. CHD4 silencing drastically decreased SE accessibility (DNase), reduced P3F binding (spike-in normalized ChIP-seq), displaced HDAC2 at target sites, and increased H3K27ac spread and BRD4 binding at SEs. Similar moderate effects were observed at P3F+CHD4/NuRD and CHD4/NuRD-only locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 and C109-C111 present mechanistic evidence using perturbation experiments with appropriate spike-in normalization for ChIP-seq. The drastic decrease in SE accessibility (C40) and reduced P3F binding (C42) establish causality. The increase in H3K27ac and BRD4 (C43-C44) is consistent with HDAC2 displacement (C111), providing a coherent molecular mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C93",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "CHD4 regulates super-enhancer-mediated gene expression and RNA Pol 2 positioning. CHD4 silencing affected 2,195 upregulated and 2,848 downregulated genes at 48hrs, preferentially affecting SE-mediated genes. CHD4 influenced 28% of P3F target genes (541 co-upregulated, 449 co-downregulated). CHD4 depletion decreased RNA Pol 2 at TSSs/TESs of co-downregulated genes and increased it at TESs of co-upregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 and related claims present comprehensive RNA-seq analysis with appropriate statistical thresholds (FDR 1%, FC\u226525%). The preferential effect on SE-mediated genes (C46) and the 28% overlap with P3F targets (C47) are well-quantified. GSEA validation (C116) and RNA Pol 2 ChIP-seq with spike-in normalization (C49) provide mechanistic support. The control showing CHD4 doesn't regulate P3F itself (C48) is critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C64",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "CHD4 represents a general cancer vulnerability. CHD4 expression is higher in tumors than normal tissue. Analysis of Combined RNAi (712 cell lines) and CRISPR (558 cell lines) databases showed >92% of cancer cell lines were sensitive to CHD4 loss across all tumor types. CHD4 had the lowest dependency scores among SNF2-like chromatin remodelers and BRD4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C64 with supporting database claims present large-scale validation using two independent screening platforms. The >92% sensitivity rate (C51) across all tumor types (C52) with quantitative data (627/712 RNAi, 552/558 CRISPR) provides strong evidence. The comparison with other chromatin remodelers (C53) establishes CHD4's unique position. However, the mechanistic link to SE regulation (C95) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C88"
+    ],
+    "result": "CHD4 functions as a positive regulator of transcription at super-enhancers by generating permissive chromatin architecture. CHD4 enables P3F binding, maintains HDAC2 positioning to prevent histone acetylation spread, and facilitates RNA Pol 2 positioning at promoters. Both chromatin remodeling and histone deacetylation are core NuRD functions required for SE-regulated gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C65, and C88 synthesize the mechanistic findings into a coherent model. The evidence from DNase assays (chromatin accessibility), ChIP-seq (P3F binding, HDAC2 displacement, H3K27ac changes), and RNA Pol 2 positioning collectively support this model. The conclusion that CHD4 acts as a positive regulator (C65) is well-supported despite its classical definition as a repressor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "CHD4/NuRD localization is partially conserved across FP-RMS cell lines. 35% and 54% of RH4 CHD4/NuRD locations were occupied in RH5 and SCMC cells respectively. CHD4/NuRD co-localized with P3F in roughly 50% of P3F binding sites across three cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 demonstrate reproducibility across multiple FP-RMS cell lines using consistent ChIP-seq methodology. The partial overlap (35-54%) suggests both conserved and cell-line specific CHD4/NuRD functions. The criterion of requiring signal in 2/3 cell lines (C108) is reasonable for defining robust binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "NuRD complex architecture and subunit redundancy context from literature. HDAC1/2 are redundant subunits, and HDAC1/2 inhibitors affect FP-RMS. RBBP4 is present in other complexes (SIN3, PRC2). GATAD2 paralogs connect CHD4 to MBD-GATAD2 dimer. MBD subunits are mutually exclusive and crucial for NuRD assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 provide essential context from literature about NuRD complex organization. These are well-established facts from cited publications that inform interpretation of the experimental results. The citations are appropriate and the information is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CHD4 depletion sensitivity is specific to cancer cells. CHD4 silencing had no influence on proliferation of human myoblasts, fibroblasts, non-transformed mammary epithelial cells (MCF10A), and normal primary hematopoietic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 cite multiple independent studies demonstrating cancer-specific effects of CHD4 depletion. This is important for therapeutic implications, though the authors acknowledge this is based on cited work rather than new experiments in this manuscript. The consistency across multiple normal cell types strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Cell type-specific muscle development processes are mainly associated with P3F+CHD4/NuRD and P3F-only regions, not CHD4/NuRD-only regions. GREAT ontology analysis showed muscle development processes were absent from top 15 enriched biological processes for CHD4/NuRD-only regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 provides additional functional distinction between genomic region categories using GREAT analysis. The absence of muscle development processes from CHD4/NuRD-only regions (top 15) contrasts with their presence in P3F-containing regions, supporting the functional specialization model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "CHD4 may collaborate with other chromatin remodeling complexes beyond NuRD. Interactome studies suggest CHD4 might work with SWI/SNF and transcription regulators like BRD4. The broad tumor dependency on CHD4 might be explained by its positive contribution to oncogenic transcription factor activity at super-enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 are speculative interpretations based on interactome data (C94) and cancer dependency patterns (C95). While the interactome data showing SWI/SNF components is solid, the functional collaboration is not experimentally validated. The mechanistic explanation for broad tumor dependency (C95) is reasonable but remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C67",
+      "C68",
+      "C69",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "Background knowledge on chromatin remodeling, NuRD complex, and FP-RMS biology. NuRD combines chromatin remodeling (CHD3/4/5) and histone deacetylase (HDAC1/2) activities. Originally defined as a repressor, but increasing evidence suggests dual roles. FP-RMS is driven by fusion oncogenic transcription factors. CHD4 is a nucleosome remodeler that moves nucleosomes along DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C67-C69, C96-C102, and C104 provide essential background knowledge from established literature with appropriate citations. These claims accurately represent the current understanding of chromatin remodeling, NuRD function, and FP-RMS biology that contextualizes the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C105"
+    ],
+    "result": "Methodological considerations for CHD4 interactome and chromatin architecture studies. Some CHD4 interactions may be indirect and chromatin-mediated due to CHD4's strong chromatin binding. The hypothesis that CHD4 influences chromatin architecture is based on its known nucleosome remodeling activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C105 represent appropriate scientific caution and hypothesis generation. C103 acknowledges a limitation of the interactome approach (presence of nucleosome components), while C105 states the hypothesis that motivated the DNase experiments. Both demonstrate good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "ALK and CDH3 expression are reduced after CHD4 silencing but not ASS1. This correlates with HDAC2 binding reduction at ALK and CDH3 locations but not ASS1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 presents specific gene-level validation linking HDAC2 displacement (C111) to gene expression changes. The correlation between HDAC2 binding and gene expression at specific loci provides mechanistic support, though the sample size is limited (3 genes tested).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "CHD4 represents a promising drug target for cancer therapy. This conclusion is based on its broad tumor susceptibility and role in super-enhancer regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is a translational conclusion that extends beyond the experimental data. While the broad cancer dependency (C51-C52) and mechanistic understanding (C61-C63) provide rationale, no drug development or therapeutic validation studies are presented. The cancer-specificity (C81-C83) supports feasibility, but this remains a prospective claim requiring future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Literature context on CHD4 in other cancers and mechanisms. CHD4 co-localizes with ZFHX4 in glioblastoma and has been implicated in breast cancer, AML, lung cancer, and colorectal cancer. CHD4 is involved in DNA-damage repair and genome integrity. The correlation between reduced HDAC activity, acetylation spreading, and RNA Pol 2 depletion has been recently described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide relevant literature context with appropriate citations. These establish that CHD4's role extends beyond FP-RMS and that some mechanistic aspects (C87) have been independently observed, strengthening the current findings. The DNA repair role (C86) is noted as requiring further exploration in the tumor sensitivity context.",
+    "result_type": "MINOR"
+  }
+]

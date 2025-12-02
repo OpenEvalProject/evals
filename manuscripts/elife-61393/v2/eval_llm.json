@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study compiled a database of 1053 antibody sequences (529 polyreactive, 524 non-polyreactive) tested for polyreactivity using an ELISA-based assay against 4-7 biochemically diverse antigens. A parsed dataset was created by classifying antibodies binding 4-7 ligands as polyreactive and those binding 0 ligands as non-polyreactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C22, C81-C83 collectively describe the database construction and classification criteria. The methodology is clearly stated with specific numbers and experimental approach (ELISA), and the parsed dataset addresses the spectrum of polyreactivity. The approach is well-documented and the classification criteria are explicit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C31"
+    ],
+    "result": "Gene usage analysis revealed differences between polyreactive and non-polyreactive antibodies, with VH1-69 and VH1-46 enriched in polyreactive antibodies (27% of polyreactive vs 17% for top genes in non-polyreactive). However, gene usage alone is insufficient to distinguish the two groups due to overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C31 are supported by Figure 1 data showing quantitative differences in gene usage frequencies. The conclusion that gene usage alone is insufficient (C31) is appropriately cautious given the observed overlap. Statistical significance is not explicitly reported for these comparisons, but the descriptive analysis is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C66",
+      "C67"
+    ],
+    "result": "Position-sensitive sequence analysis revealed that polyreactive antibodies show decreased phenylalanine in CDR1H and increased hydrophobic residues (isoleucine, glycine) in CDR2H, though these regions remain net hydrophilic rather than hydrophobic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C66-C67 are supported by Figure 2 data showing amino acid frequency differences. The analysis appropriately distinguishes between local increases in hydrophobic residues and net hydrophobicity. The position-sensitive approach provides spatial resolution lacking in previous studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C68"
+    ],
+    "result": "Polyreactive antibodies exhibit significant differences in CDR loop properties, with a bias toward neutrality (neither strongly charged nor hydrophobic/hydrophilic), most pronounced in the center of CDR3H. CDR3H becomes more hydrophobic in polyreactive sequences but remains net hydrophilic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42, C68 are supported by Figure 3 showing statistically significant differences (p\u22640.05) with bootstrap error analysis. The finding of neutrality rather than extreme properties is well-supported. Statistical methods (nonparametric Studentized bootstrap, 1000 iterations) are appropriate and clearly described in C85-C86.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C70"
+    ],
+    "result": "Linear discriminant analysis (LDA) achieved 76.4% accuracy in classifying polyreactive vs non-polyreactive antibodies in the parsed dataset, requiring 75 biophysical property vectors. Classification accuracy was roughly equivalent across datasets when using classification mode, though separation was more effective when analyzing distinct reactivity groups (influenza, HIV, mouse gut).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C44-C47, C70 are supported by Figure 4 data. The 76.4% accuracy is explicitly shown, and the need for 75 vectors indicates complexity beyond simple properties. Leave-one-out cross-validation was used appropriately. The reduced performance on the full dataset (C45) is acknowledged and attributed to the spectrum of polyreactivity, which is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C74"
+    ],
+    "result": "The primary discriminating features varied by dataset: CDR2H was most important in the parsed dataset while CDR3H was central in the HIV dataset. Common discriminators across datasets included hydrophobicity 1, hydrophobicity 2, and hotspot variable 6 (\u03b1-helix propensity), with many important features being structural in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C74 are supported by Figure 4C-D showing linear weights. The dataset-specific differences are clearly shown and appropriately interpreted. The identification of common properties across datasets strengthens the findings despite some variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Mutual information analysis revealed increased inter-loop crosstalk in heavy chains of polyreactive antibodies with a corresponding decrease in light chains. This increased mutual information suggests enhanced cooperativity or co-evolution of amino acids in CDR loop pairs, persisting across all polyreactive antibody subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C54-C58 are supported by Figure 5 showing mutual information matrices with statistical significance (Figure 5\u2014figure supplement 2). The interpretation of increased mutual information as enhanced cooperativity (C58) is reasonable though speculative. The finding persists across datasets (C56), strengthening the result. Statistical testing via permutation tests is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C69",
+      "C72"
+    ],
+    "result": "Polyreactive antibodies show a propensity for neutral binding surfaces (neither strongly charged nor hydrophobic/hydrophilic), which would permit weak interactions with a wide range of ligands. A patchwork of hydrophobic and hydrophilic non-charged residues would provide an ideal polyreactive surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41, C69, C72 represent the central mechanistic interpretation supported by multiple lines of evidence (gene usage, position-sensitive analysis, biophysical properties, mutual information). While C69 and C72 are somewhat speculative, they are reasonable interpretations of the data showing movement toward neutrality. The model is consistent with all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Shannon entropy analysis showed that CDR3H diversity approaches but remains below the theoretical maximum of 4.2 bits, hovering at 3.5 bits due to relative absence of cysteine and proline in the center of this loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by Figure 5A showing entropy distributions. The theoretical maximum calculation is correct (log2(20) = 4.32 bits), and the observed value of 3.5 bits is clearly shown. The explanation for the difference (absence of certain amino acids) is reasonable and verifiable from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Principal component analysis (PCA) does not effectively distinguish between polyreactive and non-polyreactive antibody populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by Figure 4\u2014figure supplement 1 showing overlap of the two populations in PCA space. This negative result is important as it justifies the use of LDA and demonstrates that simple variance-based dimensionality reduction is insufficient for this classification problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The analysis pipeline was successfully extended to MHC and MHC-like molecules, revealing expected differences in hydrophobicity between lipid-binding CD1 and peptide-binding MHC class I molecules. Unlike antibodies, simple PCA effectively discriminated between these two classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by Figure 6 showing the MHC analysis. The finding that PCA works for MHC but not antibodies (C61 vs C43) is interesting and suggests the MHC classes are more distinct. This demonstrates the generalizability of the software framework, though the MHC analysis is presented as a proof-of-concept rather than a comprehensive study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C75"
+    ],
+    "result": "The increased mutual information in polyreactive antibodies could manifest as increased charge-charge interactions, explaining the move toward neutrality despite minimal net charge change. The decreased light chain mutual information could reflect de-emphasis of these loops in polyreactive binding. Structural features suggest potentially more rigid CDR loops in polyreactive antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71, C73, C75 are explicitly speculative (using 'could' and 'may suggest'). While these interpretations are consistent with the data, they lack direct experimental validation. The speculation about charge-charge interactions (C71) and loop rigidity (C75) would require structural or dynamic studies to confirm. These are reasonable hypotheses for future work but remain unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The positional context of amino acids is critical to distinguish antibody binding properties, as overall amino acid usage shows no significant differences between polyreactive and non-polyreactive antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by Figure 1\u2014figure supplement 5 showing similar overall amino acid usage, contrasted with the position-sensitive differences shown in Figure 2. This justifies the position-sensitive matrix approach and is a key methodological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Mouse gut-derived IgA antibodies have generally shorter CDR3H loops and more conserved CDR3L sequences compared to human-derived antibody sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by Figure 2A showing the matrix representation. This observation is clearly visible in the data and represents a species/tissue-specific difference. However, this is a descriptive finding rather than a mechanistic insight into polyreactivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The computational tools (AIMS software) are broadly applicable to future studies of antibody/TCR repertoires and MHC molecules, with potential applications in comparing sequences from healthy vs diseased tissues and classifying divergent MHC sequences where phylogenetic approaches are difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C78-C80 describe the software's availability and potential applications. C78 is factually verifiable (software is on GitHub). C76 is supported by the successful application to both antibodies and MHC molecules. C79-C80 are reasonable projections of future applications based on demonstrated capabilities, though they remain to be validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The introduction provides background on antibody biology, polyreactivity definition, prevalence in different B cell compartments, association with broadly neutralizing antibodies, and previous hypotheses for predictors of polyreactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C21 are background knowledge supported by appropriate citations. These establish context but are not novel findings of this study. The citations appear appropriate for the claims made, though verification of each cited claim would require checking the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The classification criteria define polyreactive antibodies as those binding to two or more ligands in the panel, while non-polyreactive antibodies bind to one or none.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 clearly state the classification criteria used. However, this binary threshold is somewhat arbitrary, as acknowledged by the authors' creation of the parsed dataset. The choice of '2 or more' as the cutoff is not justified beyond being the authors' decision, which is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Computational prediction of loop conformation is difficult, and drawing inferences from incorrect models regarding side-chain interactions could be misleading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a well-established limitation in structural biology, appropriately cited. This justifies the authors' sequence-based approach rather than relying on structural modeling. This is an important methodological consideration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study used IgBLAST for gene identification, bootstrap methods (1000 iterations) for error estimation, and nonparametric statistical tests (Studentized bootstrap or permutation tests) for significance testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe the computational and statistical methods. These are standard, appropriate approaches for this type of analysis. The use of 1000 bootstrap iterations and nonparametric tests is rigorous. The methods are clearly described and properly cited.",
+    "result_type": "MINOR"
+  }
+]

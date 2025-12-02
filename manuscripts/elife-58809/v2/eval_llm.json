@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C79",
+      "C80"
+    ],
+    "result": "The study employed 16 participants performing a predictive-inference task with two conditions (noisy: H=0.02, high noise; unstable: H=0.35, no noise) during fMRI scanning. The experimental design, participant recruitment, ethical approval, and data acquisition procedures are described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C66-C70, C79-C80 provide comprehensive methodological details including sample size, task parameters, ethical approval, compensation, and imaging parameters. These are standard methodological descriptions that are internally consistent and adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Participants exhibited task-dependent behavioral adaptation: faster learning in the unstable condition, switching after any error in unstable but only after large errors in noisy condition (p<0.001), and using error history to guide switching only for small errors in the noisy condition (p<0.001-0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C37-C40 report behavioral results with statistical tests and effect sizes. The findings show clear task-dependent differences with appropriate statistical support (sign tests, reported p-values, medians, and IQRs). The behavioral patterns are consistent with the task design and supported by Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C41",
+      "C42",
+      "C43",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A reduced Bayesian model with subjective hazard rate and noise parameters accounted for behavioral patterns. Fitted hazard rates were higher in unstable than noisy condition, but noise estimates were not reliably different between conditions. CPP accounts for task-dependent responses to error magnitude while RU accounts for responses to error history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C41-C43, C75-C78 describe model fitting results with appropriate methods (MSE minimization, BIC comparison). The model successfully captures the two key behavioral signatures. However, C10-C11 reveal an unexpected finding (high subjective noise in unstable condition despite objective absence) that is acknowledged but not fully explained, though this is appropriately cited to previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C44",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Neural activity correlated with CPP and RU was found in DLPFC and PPC, replicating previous findings. Statistical testing used permutation tests with 5000 iterations and cluster-forming threshold of p<0.01.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C44, C81-C83 report replication of previous findings with appropriate statistical controls. The use of validated permutation tests (citing Eklund et al., 2016) addresses multiple comparison concerns. The replication across different experimental designs strengthens confidence in these representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C63"
+    ],
+    "result": "PPC showed task-dependent representations of error magnitude, with stronger encoding in the noisy than unstable condition. Error magnitude could be classified (3 bins: 1, 2, 3+) only in the noisy condition, most strongly in lateral/medial parietal cortex and occipital pole. Both MVPA and univariate analyses showed this task-dependent pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C16-C18, C63 report MVPA results showing task-dependent error encoding in PPC. The convergence of multivariate and univariate analyses strengthens the finding. The spatial specificity (lateral/medial parietal, occipital pole) is documented in Table 3 and Figure 3. The task-dependence matches behavioral patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "PPC representations of past errors were stronger in the noisy than unstable condition, particularly for trials with error magnitudes of 1 or 2. Past errors could be classified in both conditions for correct trials and unambiguous errors (0 or 3+), but showed task-dependent differences for ambiguous errors. Conjunction analysis showed PPC uniquely encoded both current error magnitude and past errors for ambiguous feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 report MVPA results for past error encoding with appropriate statistical support (Table 3). The task-dependent pattern specifically for ambiguous errors (magnitude 1-2) aligns with behavioral findings. The conjunction analysis provides additional evidence for integrated error processing in PPC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C23",
+      "C64"
+    ],
+    "result": "Activity patterns in motor cortex, OFC, ACC, DMFC, and DLPFC predicted subsequent stay/switch decisions for ambiguous errors (magnitude 1-2) in the noisy condition, as shown by MVPA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C23, C64 report MVPA decoding of behavioral choices from frontal regions. The analysis appropriately focused on ambiguous trials where switching probability was intermediate (20-80%). Results are documented in Figure 5 and Table 4. The spatial extent is large but encompasses functionally relevant regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "No regions showed univariate activity that reliably predicted subsequent behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C24 reports a null result. While the authors used appropriate statistical methods (permutation tests), the small sample size (n=16, acknowledged in C59) may have limited power to detect univariate effects. The null result should be interpreted cautiously as the authors themselves note.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C65"
+    ],
+    "result": "The findings suggest a functional dissociation between PPC regions that monitor error information in a task-dependent manner and frontal regions that use this information to update beliefs and select actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C65 present the main interpretive conclusion synthesizing the error encoding (PPC) and behavioral prediction (frontal) results. This dissociation is supported by the distinct patterns of MVPA results across regions, though the interpretation involves some inference beyond the direct data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The study had a relatively small sample size (n=16), though false-positive rates were controlled through validated permutation tests. Null results should be interpreted with caution due to potential power limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 appropriately acknowledge study limitations. The sample size is indeed small for fMRI, and the authors correctly note that null results may reflect insufficient power rather than true absence of effects. The use of validated permutation tests (Eklund et al., 2016) is appropriate for controlling false positives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The experimental design manipulated both noise levels and hazard rates simultaneously, preventing attribution of behavioral or neural differences to either variable alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 acknowledge a key limitation of the experimental design. The confounding of noise and hazard rate is a valid concern that limits mechanistic interpretation. The authors appropriately note this caveat and suggest it as a direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Trials were excluded if participants did not respond within the time limit (unstable: median=10.5, noisy: median=10) or if choices were not along the shortest distance between previously chosen and rewarded targets (unstable: median=3, noisy: median=17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe data preprocessing with clear exclusion criteria. The rationale for excluding off-path choices is justified by model predictions. The higher exclusion rate in the noisy condition (median=17 vs 3) may reflect task difficulty but could also indicate different strategies that warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C98"
+    ],
+    "result": "MVPA used trial-by-trial GLM beta estimates, whole-brain searchlight (5 voxel/10mm diameter), linear SVM with 3-fold cross-validation, balanced accuracy, and permutation-based baseline validation (5000 iterations). Individual accuracy maps were smoothed (6mm FWHM) before group analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94, C98 provide comprehensive MVPA methodology. The procedures are standard and appropriate: trial-wise GLM (citing Mumford et al., 2012), searchlight approach (citing Kriegeskorte et al., 2006), cross-validation to prevent overfitting, balanced accuracy for unequal class sizes, and permutation testing for baselines. Methods are reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Error magnitudes were categorized as providing unambiguous (0 or 3+) versus ambiguous (1 or 2) evidence about state changes in the noisy condition. Switch/stay analyses focused on ambiguous errors where participants showed intermediate switching probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 describe the rationale for binning error magnitudes and selecting trials for analysis. The categorization is justified by task structure (noise distribution in noisy condition) and behavioral patterns (intermediate switching probability for magnitude 1-2). This is appropriate for maximizing sensitivity to detect neural predictors of choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Errors drive adaptive learning, but in dynamic environments, errors from different sources (fundamental changes vs. stochasticity) have different implications: errors signaling changes should drive updates while those from noise should be ignored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 present the conceptual framework with appropriate citations. This is established background knowledge in the field (citing Sutton & Barto, 1998; d'Acremont & Bossaerts, 2016; and others) that motivates the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Previous studies identified CPP and RU correlates in DMFC, DLPFC, and PPC, with PPC implicated in error monitoring and PFC in belief/behavior updating. However, these studies were not designed to identify task-dependent responses to the same errors in different conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 accurately summarize prior literature with appropriate citations and identify the gap addressed by the current study. The characterization of previous work appears accurate and the identified gap is legitimate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The paradigm was adapted from a previous single-unit recording study that found ACC/PCC neurons responding to errors or conditions, but little evidence for task-dependent integration of this information at the single-neuron level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 accurately describe the relationship to prior work (Li et al., 2019). The current study extends that work by using whole-brain fMRI and MVPA to identify population-level task-dependent representations not evident in single neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "PPC has been shown to represent errors, error magnitudes, surprise, salience, and outcome history in previous studies. The current whole-brain fMRI results complement previous single-unit recordings and suggest PPC as a target for future single-neuron studies of task-dependent error representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 appropriately contextualize findings within prior literature with extensive citations. The suggestion for future single-unit recordings (C48) is reasonable speculation based on the fMRI results, appropriately labeled as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Previous studies have shown that frontal regions (ACC, medial PFC, DMFC, OFC, inferior frontal junction, frontopolar cortex) are involved in performance monitoring, belief updating, state representation, task representation updating, and exploration during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C53-C58 provide extensive literature review of frontal cortex functions with appropriate citations. This contextualizes the behavioral prediction results within established functional roles of these regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Analysis codes are available on Github at https://github.com/changhaokao/mvpa_changepoint_fmri.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 provides code availability information, which supports reproducibility. This is a positive methodological practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The lack of earnable value effects contrasts with previous findings, possibly because the current study used high vs. low values while the previous study used presence vs. absence of value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is speculation about a null result. While the proposed explanation is plausible, it remains untested. The null result could also reflect insufficient power (given n=16) or other factors. This is appropriately labeled as speculation by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The results provide new insights into how the human brain represents errors in a task-dependent manner and guides subsequent adaptive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is the high-level conclusion statement. It is supported by the convergent findings of task-dependent error encoding in PPC and behavioral prediction from frontal regions, though it involves some interpretive synthesis beyond the direct data.",
+    "result_type": "MAJOR"
+  }
+]

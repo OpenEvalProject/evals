@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Intact mice learn a visual detection task over 14 days, characterized by a gradual increase in aROC (0.028\u00b10.003 per day), reaching an aROC of 0.86\u00b10.04 by day 14, with progressive reductions in first lick latency and its variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 provide quantitative behavioral data with appropriate statistical analysis (linear fit, R\u00b2=0.9584, p<0.001) and sample size (N=8 mice). The metrics used (aROC, first lick latency, variability) are well-defined and consistently measured across training days.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "CT and CSt neurons represent largely distinct populations in layer 5 of visual cortex, with less than 3.4% overlap between the two populations as verified by retrograde tracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C14 are supported by anatomical data using retrograde tracers (CTB) with quantification (107 of 3187 cells, N=3 mice) and are consistent with cited previous reports. The anatomical characterization provides necessary validation for the subsequent ablation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The retroAAV-Cre viral approach efficiently labels and ablates cortico-fugal neurons, with 85.5% co-labeling efficiency with CTB and over 90% ablation efficiency 3 weeks post-injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 provide methodological validation with quantitative data comparing retroAAV-Cre to CTB (N=2-3 mice) and demonstrating ablation efficiency (p<0.001). This technical validation is essential for interpreting the behavioral results from ablation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Ablation of CT neurons does not impact learning speed, with CT-ablated mice reaching similar aROC values (0.85\u00b10.08) as controls (0.84\u00b10.04) by day 14 of training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by behavioral data comparing CT-ablated (N=5) and control mice (N=7) with appropriate statistical tests (Mann-Whitney U test, Fisher z-test) showing no significant differences in learning rate or final performance. The conclusion is directly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Ablation of CSt neurons significantly impairs learning speed, with CSt-ablated mice showing slower increases in aROC (0.014\u00b10.003 per day vs. 0.03\u00b10.004 in controls, p<0.05) and reaching only 0.68\u00b10.04 aROC by day 14 compared to 0.84\u00b10.04 in controls, without affecting spontaneous licking or trial numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 provide comprehensive behavioral data (N=5 CSt-ablated mice) with appropriate statistical comparisons (Mann-Whitney U test, Fisher z-test, p<0.001) and control for confounding variables (spontaneous licking, trial numbers). The impairment is specific to learning speed rather than general behavioral deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Complete surgical lesions of visual cortex recapitulate the learning impairment observed with CSt neuron ablation, with similar learning slopes (0.014\u00b10.0014 for both) and failure to reach criterion by day 14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by behavioral data from VC-lesioned mice (N=8) showing statistically significant differences from intact animals (p<0.001) and no difference from CSt-ablated mice. This convergent evidence strengthens the conclusion that CSt neurons mediate the learning impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "With extended training beyond day 14, CSt-ablated and VC-lesioned animals continue to improve and eventually reach performance levels similar to intact controls (aROC 0.87\u00b10.02 and 0.76\u00b10.05 respectively by day 21), while intact animals plateau at day 14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 demonstrate that the learning impairment is temporal rather than absolute, with appropriate statistical analysis (F-test, R\u00b2=0.83 and 0.78, p<0.001) showing continued improvement in lesioned animals. This is a critical finding distinguishing learning speed from learning capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Mice that learned the task before VC lesion maintain high performance (aROC 0.92\u00b10.02 pre-lesion vs. 0.91\u00b10.08 post-lesion, n.s.) after a 10-day recovery period without training, indicating CSt neurons are not required for task execution once learning is complete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by within-subject comparisons (N=5 mice) using appropriate statistical tests (Wilcoxon signed-rank test). The experimental design with a recovery period without training strengthens the conclusion that CSt neurons are specifically required for learning but not performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Optogenetic silencing of VC does not impair performance at full contrast (aROC 0.88\u00b10.02 vs. 0.90\u00b10.04, n.s.) but significantly increases contrast detection threshold at lower contrasts (7.8\u00b11% control vs. 28\u00b13% silencing, p<0.01), indicating VC modulates detection sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by psychometric data (N=6 mice) with appropriate statistical analysis (Wilcoxon signed rank test, Weibull function fits). The dissociation between full contrast and low contrast performance provides strong evidence for VC's role in sensitivity modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "After CT neuron ablation, VC silencing no longer increases detection threshold (control 25.8\u00b19.5% vs. silencing 31.2\u00b115.8%, n.s.), demonstrating that CT neurons mediate VC's enhancement of detection sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 are based on a small sample size (N=3 mice) and show high variability in the post-ablation condition. Additionally, the baseline detection threshold increased after CT ablation (13.9% to 25.8%), which could confound interpretation. The conclusion would benefit from larger sample sizes and additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The impact of VC silencing on detection sensitivity diminishes with prolonged training, with animals trained 2-7 weeks showing a 3.4-fold threshold increase upon silencing (p<0.01) compared to only 1.5-fold in animals trained 10-17 weeks (n.s.), with a significant negative correlation (R=-0.612, p=0.013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by psychometric data across different training durations (N=16 total mice) with appropriate statistical analysis (Wilcoxon signed rank test, Pearson correlation). The correlation analysis provides quantitative evidence for the training-dependent reduction in VC's impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Early in training, VC silencing robustly reduces visual responses in cortical recipient layers of SC, but later in training, SC visual responses become less dependent on VC input, paralleling the behavioral findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by electrophysiological recordings in SC across training stages (N=6 early, N=4 late) with layer-specific analysis. The neural data provide a mechanistic correlate to the behavioral observations, though the sample sizes are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "VC contributes to visual detection behavior through two distinct mechanisms: CSt neurons control learning speed while CT neurons modulate detection sensitivity, and both populations eventually become dispensable with prolonged training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 represent the main conclusions synthesizing the experimental findings. The functional dissociation is well-supported by the convergent evidence from ablation, lesion, and optogenetic experiments across multiple claims. The temporal dynamics are demonstrated by the extended training and post-learning lesion experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CSt neurons function primarily during task acquisition, potentially acting as a 'tutor' to mediate learning-related plasticity in subcortical circuits, with plasticity likely occurring downstream of the CSt synapse rather than at it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C52 include both supported findings (C49) and speculative interpretations (C51-C52). While the data clearly show CSt neurons are required for learning but not performance, the proposed 'tutor' mechanism and the location of plasticity are inferences that lack direct experimental support. The comparison to motor cortex (C50) is analogical rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The ability of sensory cortex neurons to encode specific spatial and temporal stimulus features may underlie the role of VC and CSt neurons in feature discrimination tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is speculative, drawing on cited literature about feature encoding but not directly tested in this study. The current study uses a simple detection task, not a discrimination task, so the relevance of feature encoding to the observed learning deficits is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CT neuron ablation impairs detection sensitivity, consistent with SC's role in innate visual behaviors and potentially explaining blindsight phenomena, with VC enhancing SC neuronal activity in response to visual stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C57 are directly supported by experimental data (psychometric and electrophysiological), while C55-C56 appropriately contextualize findings within existing literature. The connection to blindsight (C56) is speculative but reasonable given the cited literature and experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "With prolonged training, VC's diminishing impact on behavior and SC visual responses suggests plasticity at the CT synapse or within SC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is speculative about the locus of plasticity. While the data clearly show reduced VC impact with training, the mechanism (CT synaptic plasticity vs. local SC plasticity) is not directly tested. Additional experiments manipulating plasticity mechanisms would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The connectivity and function of neurons spared by specific cortico-fugal neuron ablation is largely unaffected, based on evidence that cortical neurons with distinct projection targets form segregated subnetworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 addresses a potential concern about the ablation approach but relies on cited literature rather than direct experimental validation in this study. While the cited evidence for segregated subnetworks is reasonable, the claim that spared neurons are 'largely unaffected' is an assumption that could benefit from direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Following VC lesions, a subcortical SC-basal ganglia loop may mediate slower VC-independent learning, with subcortical structures eventually relying entirely on ascending sensory input rather than descending cortico-fugal pathways with prolonged training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C62 are speculative hypotheses about mechanisms underlying VC-independent learning. While C61 cites supporting evidence from somatosensory cortex, the proposed SC-basal ganglia loop (C60) and the shift to ascending input (C62) are not directly tested in this study. These represent reasonable hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The gradual reduction in VC's role may reflect a transition from goal-directed to habitual behavior, with VC facilitating behavioral flexibility during goal-directed behavior while subcortical inputs suffice for habitual responses after prolonged training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65 propose an interesting framework linking the temporal dynamics to goal-directed vs. habitual behavior, but this is speculative. The study does not directly test whether the behavior becomes habitual (e.g., through outcome devaluation) or measure behavioral flexibility. These claims represent interpretive hypotheses rather than experimentally supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Two distinct populations of cortico-fugal neurons in VC substantially contribute to visually guided behavior by increasing learning speed and improving detection sensitivity, potentially representing an early adaptive benefit of cortical expansion in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 accurately summarizes the main experimental findings, which are well-supported by the data. Claim C67 extends this to evolutionary implications, which is speculative but represents a reasonable interpretation of the adaptive significance of the findings within the context of mammalian cortical evolution.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7"
+    ],
+    "result": "The authors provide a novel biophysical interpretation of the Poisson GLM as a conductance-based model where excitatory and inhibitory conductances are driven by equal and opposite linear filters, resulting in constant total conductance. This interpretation establishes the GLM as a special case of the CBEM with perfectly balanced excitation and inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7 present a mathematically derived theoretical result showing the equivalence between the GLM and a constrained conductance-based model. The derivation is presented with explicit equations (Equations 6-9) and follows logically from the requirement that membrane potential be an affine function of the stimulus. This is a theoretical contribution that does not require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "An LN model with soft-rectifying nonlinearity accurately captures the relationship between stimuli and excitatory/inhibitory synaptic conductances in ON parasol RGCs, accounting for 79\u00b14% and 63\u00b13% of variance respectively. This validates the CBEM's assumption that conductances can be modeled as rectified-linear functions of filtered stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C42-C43 provide quantitative validation of the LN conductance model using intracellular voltage clamp recordings from 6 ON parasol cells. The soft-rectifying nonlinearity closely matched measured conductances (Figure 2), and the model was validated on held-out test data. Claim C41 provides biological justification through citations showing bipolar cells are well-characterized by LN models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C44",
+      "C45"
+    ],
+    "result": "The parametric soft-rectified linear function for mapping membrane potential to spike rate closely approximated non-parametric estimates from dynamic clamp recordings, validating the CBEM's output nonlinearity choice. This differs from prior GLM work that found exponential nonlinearities superior, possibly due to the CBEM's cascade of two nonlinearities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by comparison of parametric and non-parametric estimates in Figure 3c using dynamic clamp data from 2 ON parasol cells. Claim C44 notes the difference from prior work with appropriate citation. Claim C45 offers a plausible explanation for the discrepancy. The validation is limited to 2 cells but the match between parametric and non-parametric estimates is visually compelling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14"
+    ],
+    "result": "The CBEM fit to extracellular spike trains alone can predict excitatory and inhibitory synaptic conductances with correlations of r=0.73\u00b10.01 and r=0.69\u00b10.03 respectively in ON parasol RGCs, validated against intracellular voltage clamp measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C13-C14 present the core experimental validation of the CBEM's ability to infer conductances from spikes. The predictions were validated using intracellular recordings from 6 ON parasol cells with held-out test stimuli (Figures 4-5). The correlations are substantial though lower than the LN model fit directly to conductances (r=0.89 and r=0.82), which is expected given the CBEM only has access to spike data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The CBEM predicted conductances show systematic timing discrepancies compared to measured conductances in ON parasol cells: excitation precedes inhibition by 12.6\u00b11.0 ms in CBEM predictions versus nearly zero lag (0.0\u00b12.4 ms) in measurements, and predicted excitation precedes measured excitation by 5.6\u00b10.7 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 identify systematic timing errors in CBEM predictions with statistical testing (p<0.0001 for exc-inh lag, p=0.0005 for excitation timing). These are honest assessments of model limitations. The discrepancies are small (5-13 ms) but statistically significant across all 6 cells, suggesting systematic rather than random errors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C46",
+      "C47"
+    ],
+    "result": "The CBEM successfully captures positively correlated excitation and inhibition in ON-midget cells, predicting excitatory conductances with r=0.85\u00b10.03 and the timing relationship where excitation precedes inhibition by 8.2\u00b10.8 ms (measured: 10.1\u00b10.52 ms, p=0.06). However, inhibitory predictions were weaker (r=0.33\u00b10.06) due to complex nonlinear behavior from mixed ON/OFF inhibitory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C46-C47 demonstrate the CBEM can discover positive exc-inh correlations despite GLM initialization with opposite tuning (5 ON-midget cells). Excitatory predictions are strong (C19) and timing is well-captured (C47, p=0.06). The weaker inhibitory predictions (C20) are explained by biological complexity (C46) supported by citation. This shows both model capability and honest assessment of limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C49"
+    ],
+    "result": "The CBEM outperforms the GLM at predicting spike responses to novel stimuli in all 9 RGCs tested, achieving 86% vs 77% PSTH variance explained and 0.34\u00b10.11 bits/spike improvement in log-likelihood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C49 provide quantitative comparisons showing consistent CBEM superiority across all 9 cells using both PSTH prediction (C22) and single-trial log-likelihood (C23) metrics. The improvements are modest but consistent, and the result is replicated across multiple datasets (full-field, multi-contrast, spatio-temporal stimuli).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "GLM prediction errors are anti-correlated with CBEM inhibitory conductance magnitude (p<0.0001), suggesting the CBEM's inhibitory conductance improves predictions by reducing firing when the GLM over-predicts spike rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide mechanistic insight into why CBEM outperforms GLM through analysis of prediction errors and their relationship to predicted conductances. The anti-correlation is statistically significant (p<0.0001) and the interpretation (C25) follows logically from the analysis. This helps explain the performance differences observed in C22-C23.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The CBEMexc (excitation-only model) shows that the GLM stimulus filter accounts only for excitatory input in parasol cells, and still outperforms the GLM (81% vs 77% PSTH variance, 0.14\u00b10.10 bits/sp improvement) despite lacking inhibition, which is consistent with prior findings that inhibition weakly modulates parasol responses to full-field noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by comparison of GLM and CBEMexc filters (nearly identical, Figure 8e) and performance metrics. Claim C26 provides biological context through citation. The CBEMexc's intermediate performance (better than GLM, worse than full CBEM) helps dissect the sources of CBEM's improvements. The interpretation that GLM captures excitation is reasonable given filter similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C52"
+    ],
+    "result": "The CBEM maintains predictive performance across contrast levels more accurately than the GLM, losing only 0.16\u00b10.2 bits/sp at 24% contrast compared to GLM's 0.36\u00b10.41 bits/sp loss. This demonstrates the CBEM's ability to capture contrast-dependent gain changes through interactions between excitatory and inhibitory conductances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C52 show the CBEM better generalizes across contrasts (8 RGCs, 24-96% contrast). Claims C29-C30 provide biological and theoretical context through citations. The quantitative comparison (C31-C32) shows consistent CBEM advantage, particularly at lower contrasts. Claim C52 provides mechanistic interpretation linking conductance interactions to gain control, supported by the multi-contrast data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The CBEM predicts that excitation and inhibition are most anticorrelated at 22% contrast for ON cells and 34% contrast for OFF cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C33 presents a specific prediction from CBEM fits to multi-contrast data. However, this prediction is not validated against measured conductances at different contrasts. The claim represents a model prediction rather than an experimentally verified result. Without intracellular validation across contrasts, the accuracy of this prediction remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "For spatio-temporal stimuli, the CBEM predicted PSTHs more accurately than the GLM (83% vs 79% R\u00b2) and single-trial responses with 0.07\u00b10.04 bits/sp improvement across 27 parasol RGCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 extend the CBEM's superior performance to spatio-temporal stimuli (27 cells). The improvements are more modest than for full-field stimuli, consistent with the authors' interpretation that spatial structure is needed to differentiate the models. The large sample size (27 cells) strengthens confidence in the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Spatial correlations in the stimulus differentiate the CBEM's predictions from the GLM, with center-surround stimuli producing distinct excitation-inhibition cross-correlation patterns compared to uncorrelated spatio-temporal or full-field noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by simulations showing different exc-inh cross-correlations for spatially correlated vs uncorrelated stimuli (Figure 11). The center-surround stimulus produced a positive peak at positive lags, contrasting with the negative correlation for full-field and uncorrelated spatio-temporal noise. This provides mechanistic insight into when CBEM and GLM predictions diverge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C50"
+    ],
+    "result": "The CBEM belongs to an extended family of non-GLM neural encoding models but uniquely links model components fit to spikes alone to experimentally measured conductances, differing from previous cascade approaches by explicit biophysical framework and direct validation in individual cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C50 position the CBEM within the broader modeling literature. C37 correctly classifies the CBEM as non-GLM due to nonlinear stimulus dependence. C38 and C50 make claims about uniqueness that are supported by the validation experiments (Figures 4-6) and appropriate citations to prior work. The distinction from prior cascade models is substantiated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "The CBEM's linear-rectified conductance model does not capture non-monotonic portions of stimulus-conductance nonlinearities observed in the data, likely because amacrine cells receive inputs from both ON and OFF channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 honestly identifies a limitation of the CBEM visible in Figure 2c,e where the soft-rectifying nonlinearity fails to capture non-monotonic regions. The biological explanation is supported by appropriate citations. This represents good scientific practice in acknowledging model limitations with mechanistic explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C51",
+      "C54",
+      "C55"
+    ],
+    "result": "The CBEM models conductances and membrane potential as deterministic functions of the stimulus with all stochasticity confined to spike generation, which makes the likelihood tractable for efficient fitting while capturing key features like shunting inhibition and time-varying gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C51 describe the CBEM's computational tractability, while C54-C55 explain the deterministic modeling assumptions. These are accurate descriptions of the model structure supported by the mathematical formulation (Equations 10-17) and successful parameter estimation. The trade-off between biophysical realism and computational tractability is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The Poisson GLM has been widely applied across brain areas, but in retina and other sensory areas where excitatory and inhibitory inputs have substantially different tuning, a single linear filter is insufficient to describe stimulus integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 provide background context for the work. C4 is well-supported by multiple citations to GLM applications. C5 is supported by citations to experimental studies showing differential tuning. C6 follows logically from C5. These claims accurately represent prior work and motivate the need for the CBEM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "The reliability of RGC spike trains depends on the stochasticity of synaptic conductances, and noise correlations between excitatory and inhibitory conductances may affect encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by appropriate citations to prior experimental work. This represents an honest acknowledgment of a limitation of the CBEM's deterministic conductance model and suggests directions for future work. The claim accurately represents prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The CBEM can help reveal circuit-level computations that support perception under naturalistic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is a forward-looking statement about potential applications. While the CBEM's ability to infer conductances from spikes is demonstrated, the claim that this will help reveal circuit computations under naturalistic conditions is speculative. The spatio-temporal results (C34-C36) provide some support, but naturalistic stimuli were not tested.",
+    "result_type": "MINOR"
+  }
+]

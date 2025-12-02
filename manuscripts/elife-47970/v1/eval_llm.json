@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C13",
+      "C14",
+      "C15",
+      "C63",
+      "C64",
+      "C65",
+      "C90"
+    ],
+    "result": "A small molecule screen of 80 compounds identified five candidates (SB431542, DAPT, Dexamethasone, PD0325901, Forskolin) that significantly increased MyHC/DAPI area ratio (p<0.001) in PS cell-derived myotubes. Combinatorial treatment with S/Da/De/P/F or S/Da/De/P showed >2-fold increase in MyHC/DAPI ratio and enhanced fusion index and multinucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C13-C15 are supported by systematic screening data (C90) across multiple cell lines with statistical significance (p<0.001). The MyHC/DAPI ratio is a reasonable proxy for differentiation/maturation (C63), and dose-response testing (C64) supports the 10 \u03bcM concentration choice. Morphological observations (C65) corroborate quantitative measurements. The screening approach is methodologically sound with appropriate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C62",
+      "C91"
+    ],
+    "result": "The S/Da/De/F combination (excluding PD0325901) consistently upregulated all MYH isoforms analyzed, with dramatic upregulation of neonatal MYH8 (neo-MyHC). Neo-MyHC protein was detected only upon S/Da/De/F treatment and confirmed across multiple PS cell lines, indicating enhanced maturation beyond the embryonic stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are strongly supported by gene expression (Figure 2A) and protein data (Western blot, immunostaining in Figures 2C-D). The developmental significance of neo-MyHC expression is validated by citation (C18) and established knowledge (C62). Reproducibility across multiple cell lines (C91) strengthens the finding. The exclusion of PD0325901 from the optimal combination is data-driven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C66",
+      "C67"
+    ],
+    "result": "S/Da/De/F treatment resulted in thicker, larger myotubes with striated morphology. Neo-MyHC co-localized with F-actin in cross-striation patterns, suggesting functional sarcomeric organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Morphological claims (C19, C67) are supported by immunofluorescence imaging (Figures 2E, 2\u2014figure supplement 1A). The co-localization of neo-MyHC with F-actin in striated patterns (C66) provides structural evidence for functionality, though direct functional assays would strengthen this inference. Both DMSO and treated cells show striation, but treated cells are morphologically superior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C68"
+    ],
+    "result": "Temporal analysis revealed that S/Da/De/F effects are most pronounced at day 5 of differentiation, with dramatic reduction in proliferation and increase in differentiation compared to earlier timepoints, suggesting the treatment is particularly relevant at late-stage differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by EdU proliferation assays and MyHC/DAPI quantification at multiple timepoints (Figure 2\u2014figure supplement 1C-D). The inference (C68) that treatment is most relevant at late differentiation is reasonable given the temporal data, though mechanistic understanding is limited. The lack of early effects suggests stage-specific responsiveness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C30",
+      "C31"
+    ],
+    "result": "S/Da/De/F treatment induced differential expression of target genes for each small molecule component: CEBPD and FKBP5 (Dexamethasone), HES1 and NOTCH2 (DAPT), COL1A1 and ID3 (SB431542), and PPARGC1A (Forskolin). Chromatin accessibility changes at these loci confirmed pathway engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Gene expression changes (C21) are supported by qPCR data (Figure 2\u2014figure supplement 2A-D) with appropriate citations validating target gene relationships. ATAC-seq data (C30-C31) provide orthogonal evidence for pathway modulation through chromatin accessibility changes. The multi-level validation (gene expression + chromatin) strengthens confidence that the compounds engage their intended targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C59"
+    ],
+    "result": "S/Da/De/F treatment induced maturation of PS cell-derived myotubes generated using transgene-free differentiation protocols, demonstrating broad applicability beyond PAX7-induced myogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C59 are supported by experimental data on transgene-free myotubes (Figure 2\u2014figure supplement 3A-B). This extends the applicability of the approach beyond the PAX7-inducible system used for primary screening. However, the transgene-free protocol itself relies on prior literature (Xi et al., 2017), and only limited characterization is shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C58"
+    ],
+    "result": "S/Da/De/F treatment enhanced differentiation and maturation of muscular dystrophy patient-specific iPS cell-derived myotubes (DMD, DM1, LGMD2A) within 5 days of differentiation, demonstrating applicability to disease modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by immunostaining and gene expression data from multiple patient lines (Figure 3A-B). The 5-day timeframe (C58) is consistent across experiments. This demonstrates disease-relevant applicability, though the manuscript doesn't explore whether disease-specific phenotypes are better recapitulated with enhanced maturation. The rapid timeframe is a practical advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C71",
+      "C72"
+    ],
+    "result": "Transmission electron microscopy revealed that S/Da/De/F-treated myotubes were richer in mitochondria and contained abundant SR-TT junctions, structures that support excitation-contraction coupling and may contribute to enhanced contractile capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "TEM observations (C24-C25) are supported by detailed imaging (Figure 4). The functional significance of SR-TT junctions (C71) is validated by citation, and the inference about contractile capacity (C72) is reasonable given the known role of these structures. However, C72 is speculative without direct functional measurements at this stage. The ultrastructural analysis provides important validation of maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C73"
+    ],
+    "result": "Ultrastructural examination revealed more prolific plasma membrane fusion in S/Da/De/F-treated cells, with >5 cells engaged in fusion compared to 2-3 in controls, consistent with enhanced multinucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C73 are supported by TEM observations (Figure 4\u2014figure supplement 1). This provides mechanistic insight into the increased fusion index observed by immunofluorescence (C15). The ultrastructural evidence directly visualizes the fusion process, strengthening the interpretation of the quantitative fusion data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Myofibrils displayed various degrees of sarcomeric organization within the same cell in both conditions, potentially explained by ongoing fusion between cells at different maturation stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation (C69) is supported by TEM data (Figure 4), and the explanation (C70) is a reasonable inference given the evidence for ongoing fusion (C73). However, this heterogeneity could also reflect asynchronous differentiation or other factors. The interpretation is plausible but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C74"
+    ],
+    "result": "ATAC-seq analysis after 2 days of treatment revealed 2,782 peaks with increased chromatin accessibility in S/Da/De/F-treated cells, including loci associated with myogenic genes (MYOG, MYH3, MIR206, MIR133B) and enrichment for motifs of myogenic transcription factors (MYOG, MEF2, POU). This indicates S/Da/De/F alters the epigenetic landscape to promote myogenic maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ATAC-seq data (C27-C32) are well-supported with appropriate bioinformatic analysis. The identification of myogenic loci (C29) and transcription factor motifs (C32) is consistent with enhanced myogenic differentiation. The 2-day timepoint captures early chromatin remodeling. The conclusion (C74) that epigenetic changes underlie maturation is reasonable but somewhat overstated\u2014chromatin accessibility changes are correlative, not necessarily causal. PCA shows clear separation of groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "RNA-seq identified ~1,859 differentially expressed genes (half up, half down) in S/Da/De/F-treated myotubes. IPA confirmed the four small molecules as upstream regulators and identified muscle differentiation transcription factors/miRNAs (TEAD4, MYF6, KLF4, MEF2A/C, MIR-133B/206/503) as regulators. Skeletal/muscular system development was the most upregulated physiological system, with enrichment for oxidative phosphorylation and calcium signaling pathways. Genes associated with fetal/postnatal muscle (ENO3, MYF6, CKM, TNNT3, MYH8, ATP2A1) were upregulated while embryonic markers (MEOX1, PAX3, CDH11, EYA2, FST) were downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data (C33-C41) are comprehensive and well-analyzed. IPA validation of small molecule targets (C34) confirms on-target effects. The identification of muscle differentiation regulators (C35) and pathway enrichment (C36-C37) is consistent with enhanced maturation. The upregulation of postnatal markers and downregulation of embryonic markers (C40-C41) provides strong molecular evidence for maturation. The 30-fold upregulation of SLN (C38) is notable and validated by qPCR. Statistical thresholds and multiple testing corrections appear appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C78"
+    ],
+    "result": "Integration of ATAC-seq and RNA-seq data revealed that 42% of loci with increased chromatin accessibility were associated with differentially expressed genes. Loci with increased accessibility and expression were enriched for muscle contraction, calcium regulation, and muscle development, while those with increased accessibility but decreased expression were enriched for non-myogenic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration analysis (C42-C43, C78) is methodologically sound and provides mechanistic insight linking chromatin remodeling to gene expression changes. The 42% overlap is substantial and biologically meaningful. The functional enrichment patterns (C43, C78) are consistent with myogenic maturation and suppression of alternative lineages. However, the 58% of accessible loci not associated with differential expression suggests additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C60",
+      "C92"
+    ],
+    "result": "S/Da/De/F treatment of 3D muscle constructs resulted in ~15-fold increase in both twitch and tetanus force generation compared to DMSO controls. Treated 3D constructs expressed higher levels of MYH isoforms, including significant upregulation of MYH1 and MYH2 (not reliably detected in 2D cultures), and neo-MyHC protein, with increased pan-MyHC and \u03b1-actinin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Functional force measurements (C44) provide critical validation that molecular and structural changes translate to improved contractile function. The 15-fold increase is substantial and statistically significant (Figure 7A-B). Gene expression (C45-C46) and protein data (C47, C92) support enhanced maturation in 3D. The detection of MYH1/MYH2 in 3D but not 2D cultures (C46) suggests the 3D environment provides additional maturation cues. This is a key result demonstrating functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "An optimized differentiation protocol incorporating CHIR99021 treatment (days 0-2) followed by LDN193189 and SB431542 (days 4-6) enhanced somite-like specification and improved myogenic differentiation efficiency, particularly in PS cell lines with limited differentiation potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protocol optimization (C10-C11, C84-C89) is supported by gene expression data showing appropriate mesoderm and somite markers (Figure 1\u2014figure supplement 1B) and improved differentiation across multiple lines (Figure 1\u2014figure supplement 2). The timing of PAX7 induction (C86) is rationally designed based on somite marker expression. The improvement is particularly notable for poorly differentiating lines (C89), enhancing the robustness of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Despite protocol optimization, PS cell-derived myotubes remained immature prior to small molecule treatment, as indicated by thin morphology and predominant expression of embryonic MYH3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 establishes the baseline immaturity that motivates the small molecule screen. This is supported by morphological observations (Figure 1\u2014figure supplement 2) and gene expression data (Figure 1A). This provides important context for evaluating the impact of the small molecule treatment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "The S/Da/De/F combinatorial treatment is beneficial from the beginning of terminal differentiation (day 2 chromatin changes) and sustains maturation through day 5 (RNA-seq changes), contributing to enhanced myotube differentiation and maturation of PS cell myogenic derivatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C56-C57, C61) integrate findings from ATAC-seq (day 2) and RNA-seq (day 5) analyses. The temporal progression from chromatin remodeling to sustained gene expression changes is logical and supported by the data. However, C56-C57 involve some inference about mechanism. The overall conclusion (C61) is well-supported by the comprehensive dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The effects of individual small molecules differ between embryonic and adult myogenesis contexts. SB431542 and DAPT promote hypertrophy and fusion in myoblast lines; Dexamethasone unexpectedly enhanced maturation despite known atrophic effects in adult myotubes; Forskolin enhanced differentiation rather than proliferation; and MEK1 inhibition (PD0325901) enhanced differentiation, contrasting with context-dependent effects reported in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C51-C54, C79-C81) discuss literature context and unexpected findings. The citations (C51-C54) appropriately document prior work. The unexpected Dexamethasone effect (C52, C79) is acknowledged but not fully explained\u2014the speculation (C79) that it has opposite roles in embryonic vs. adult contexts is reasonable but requires further investigation. The Forskolin (C80) and PD0325901 (C81) findings contrast with some literature, highlighting context-dependence (C55). These observations are important for interpretation but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In DMD, utrophin compensates for dystrophin absence during early gestation but localizes to neuromuscular junctions after birth and is insufficient in regenerating fibers, leading to severe adult phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C48-C50) provide disease context for why maturation is important for DMD modeling. They are supported by appropriate citations and represent established knowledge. C50 involves some inference about disease progression. This contextualizes the relevance of the maturation approach for disease modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "POU transcription factors (Pou2f1/Oct1, Pou6f1/Emb) cooperate with MEF2 to regulate muscle-specific genes, and skeletal myogenesis is accompanied by mitochondrial biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C75-C77) provide mechanistic context for the ATAC-seq motif findings and RNA-seq pathway enrichment. They are supported by appropriate citations to established literature. This helps interpret the biological significance of the molecular changes observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C62",
+      "C82"
+    ],
+    "result": "Background claims establishing PS cell properties, iPS technology, the immaturity problem, current maturation approaches, prior work on TGF\u03b2 inhibition, and the significance of MYH isoforms and organoid platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C6, C62, C82) are well-supported by citations to established literature and represent accepted knowledge in the field. They provide appropriate context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

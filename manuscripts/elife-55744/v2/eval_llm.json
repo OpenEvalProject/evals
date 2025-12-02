@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Three isogenic motility mutants of P. aeruginosa PA14 (\u0394fliC, \u0394flgK, \u0394motABCD) were characterized and displayed expected phenotypes in electron microscopy and motility assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 describe the characteristics of the mutant strains and confirm their expected phenotypes through scanning electron microscopy and motility assays (Figure 1). These are well-established mutant phenotypes supported by appropriate validation experiments and prior literature citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Non-motile P. aeruginosa mutants show significantly reduced phagocytic uptake compared to motile PA14 across multiple macrophage cell types, and this phenotype is not due to differences in adherence but rather to differences in phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 demonstrate reduced phagocytic uptake of motility mutants in BMDMs, RAW264.7, and J774 cells (Figures 2A-B, supplements), with complementation restoring the phenotype (C24). Cytochalasin D experiments (C25) and adherence assays (C26-C27) appropriately control for phagocytosis versus adherence. Clinical isolate validation (C28) strengthens generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Under planktonic growth conditions, the three motility mutants show minimal transcriptional differences from PA14, with \u0394fliC and \u0394flgK differing in only 49 and 47 genes respectively, while \u0394motABCD differs in 206 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 present RNA-seq data showing limited transcriptional differences under planktonic conditions (Figure 3\u2014supplement 1A). The methodological controls (C81-C83) demonstrate comparable experimental conditions across strains. This establishes that baseline differences are minimal, supporting the interpretation that host-contact-induced changes are meaningful.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Dual-sequencing reveals that PA14 induces substantial transcriptional changes in both bacteria (2537 genes) and host cells (647 genes), with motility mutants inducing similar overall host responses to PA14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 describe the dual-sequencing results showing extensive transcriptional reprogramming in both organisms. The finding that 31.5% of host genes are shared across all strains (C37) while only small fractions are strain-specific supports the conclusion of similar overall responses. The data are appropriately analyzed with FDR correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Non-motile mutants show reduced expression of host PIP2/PIP3 pathway genes, and exogenous PIP3 supplementation restores phagocytic uptake of the mutants, indicating that reduced PIP3 activation explains the lower phagocytosis rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 show reduced PIP3 pathway gene expression in mutants (Figure 5A) and functional rescue with exogenous PIP3 (Figure 5B). Claims C60-C62 provide mechanistic interpretation supported by prior literature (C61). The PIP3 complementation experiment is a strong functional validation of the pathway's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C63",
+      "C84"
+    ],
+    "result": "Upon host-cell contact, motile PA14 upregulates spermidine biosynthesis genes and arnT, while non-motile mutants show significantly lower expression of these genes specifically during host interaction but not under planktonic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 demonstrate differential expression of spermidine synthesis and arnT genes specifically upon host contact (Figure 4). Claim C84 controls for medium effects, showing that host-cell contact rather than medium composition drives the differential expression. Claim C63 generalizes this finding. The host-contact specificity is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C89"
+    ],
+    "result": "Pyoverdine biosynthesis genes are upregulated in motility mutants upon host-cell contact and negatively correlate with PIP3 pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C45 shows enrichment of pyoverdine genes in mutants (Figure 4), and C89 shows negative correlation with PIP3 genes. However, the text notes that pyoverdine differential expression cannot be exclusively attributed to host cells as medium switching also induces changes (related to C84). The biological significance and causal relationship remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C4",
+      "C68"
+    ],
+    "result": "Non-motile mutants are more immunogenic than PA14, producing significantly higher levels of TNF-\u03b1 and IL-6, consistent with lower arnT expression and prior findings on polyamine depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C4 show increased cytokine production in mutants (Figure 4\u2014supplement 1), which is consistent with lower arnT expression (C42) and supported by prior literature on polyamine depletion (C68). The mechanistic link through arnT and LPS modification is well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Exogenous spermidine at 10 \u00b5M significantly increases phagocytic uptake of \u0394fliC and \u0394flgK mutants but not PA14 or \u0394motABCD, and spermidine must be present during infection rather than as a pre-treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 demonstrate dose-dependent and strain-specific effects of spermidine on phagocytosis (Figure 6A, supplements). The requirement for spermidine presence during infection (C50, Figure 6B) is an important mechanistic detail. The lack of effect on \u0394motABCD (C49) is intriguing but unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C65",
+      "C107"
+    ],
+    "result": "Spermidine induces Akt phosphorylation in macrophages, activating the Akt/PIP3 pathway to promote phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C65 demonstrate spermidine-induced Akt phosphorylation by Western blot (Figure 6C), with quantification showing significant increases. Claim C107 summarizes this mechanism. The data directly demonstrate pathway activation, though the molecular mechanism of how spermidine activates this pathway remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A \u0394PA14_63120 mutant deficient in spermidine biosynthesis shows reduced membrane-associated spermidine, decreased phagocytic uptake, and restoration of uptake upon exogenous spermidine addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide strong genetic validation using a spermidine biosynthesis mutant. HPLC-MS quantification (C52, Figure 7\u2014supplement 1), reduced phagocytosis (C53), and phenotypic rescue with exogenous spermidine (C54, Figure 7) collectively demonstrate that bacterial spermidine production is necessary and sufficient for enhanced phagocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Norspermidine, a prokaryote-specific triamine structurally similar to spermidine, also restores phagocytic uptake of non-spermidine-producing mutants at comparable levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 shows functional rescue with norspermidine (Figure 7, Figure 7\u2014supplement 2). Claims C98-C100 provide structural and biological context from literature. This extends the finding beyond spermidine specifically to related polyamines, though the mechanism and biological relevance of norspermidine in this context require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Spermidine treatment of macrophages induces a transcriptional response similar to PA14 infection, with 55.6% overlap in enriched functional categories and enrichment of serine/threonine kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C93-C94 show substantial overlap between spermidine-treated and PA14-infected macrophage transcriptomes (Figure 6D). Claims C95-C97 identify specific kinase enrichment. This supports the hypothesis that spermidine is a key mediator of the host response, though the overlap is partial (55.6%), indicating other factors also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90"
+    ],
+    "result": "Bacterial spermidine synthesis genes and arn operon genes correlate positively with host PIP3 pathway genes, with pmrA, phoQ, and phoP among the correlated bacterial genes, supporting the hypothesis that bacterial spermidine induces host PIP3 gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 present correlation analysis showing significant enrichment of correlations between bacterial spermidine/arn genes and host PIP3 genes. Claim C90 states the directional hypothesis based on these correlations. While correlation does not prove causation, the functional experiments with exogenous spermidine (other claims) support the proposed direction of causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The two-component systems PmrAB and PhoPQ, which regulate spermidine biosynthesis and arnT expression, are downregulated in motility mutants upon host-cell contact and are known to be activated by Ca2+/Mg2+ limiting conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 show coordinated regulation of spermidine/arnT by PmrAB/PhoPQ with downregulation in mutants. Claims C73-C78 provide literature support for the regulatory network and activation conditions. This establishes a plausible regulatory framework, though the specific signals triggering differential activation in motile versus non-motile bacteria remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C104"
+    ],
+    "result": "Changes in bacterial motility upon hitting a host cell may alter ion fluxes across the bacterial membrane, potentially activating PmrAB/PhoPQ two-component systems to induce polyamine production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79, C80, and C104 present a speculative mechanistic model for how motility changes might trigger the observed transcriptional response. While the model is plausible and consistent with known activation mechanisms of these two-component systems (C77-C78), it lacks direct experimental evidence. This represents a hypothesis for future testing rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C56",
+      "C58",
+      "C103",
+      "C105",
+      "C106"
+    ],
+    "result": "Motile P. aeruginosa induce a specific gene expression program upon host-cell contact that results in surface expression of spermidine and masking of Lipid A, which activates the PIP3 pathway to induce phagocytic uptake, demonstrating dynamic host-pathogen crosstalk beyond static PAMP recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the central findings of the manuscript, integrating the transcriptional, biochemical, and functional data. The dual-sequencing approach (C1), spermidine production (C2, C105), PIP3 activation (C3), and LPS modification (C106) are all supported by the experimental evidence from multiple complementary approaches. This represents a major conceptual advance in understanding host-pathogen interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C26",
+      "C27"
+    ],
+    "result": "Differences in motility impact phagocytic uptake rather than adherence, as \u0394fliC and \u0394flgK mutants show comparable adherence to PA14 while \u0394motABCD shows reduced adherence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 show adherence data (Figure 2C, supplements) demonstrating that \u0394fliC and \u0394flgK adhere comparably to PA14, while \u0394motABCD adheres less. Claim C59 interprets this as evidence that motility affects phagocytosis independently of adherence. The interpretation is reasonable for \u0394fliC and \u0394flgK, though the \u0394motABCD result complicates the picture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The minimal inhibitory concentration of spermidine for P. aeruginosa is approximately 10 mM and does not differ among PA14 and the three motility mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 report MIC determination, though the data are not shown. This control experiment establishes that the spermidine concentrations used in phagocytosis assays (10 \u00b5M) are well below toxic levels, validating the experimental design. The lack of strain differences indicates the mutants have no altered spermidine sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "P. aeruginosa is a problematic opportunistic pathogen with increasing antibiotic resistance, and bacterial flagella play dual roles in infection establishment and immune recognition, with prior work showing reduced phagocytosis of non-motile strains linked to diminished PIP3 pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 provide background context from established literature, appropriately cited. These claims set up the rationale for the study and are well-supported by the cited references. They represent accurate summaries of prior knowledge rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The combined use of cell culture assays with dual-sequencing has potential to uncover dynamic molecular crosstalk in host-pathogen interactions, which is essential for identifying new therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 represent concluding statements about the methodological approach and its implications. The manuscript successfully demonstrates the value of the dual-sequencing approach by uncovering the spermidine-mediated crosstalk, supporting these conclusions. These are appropriate summary statements rather than specific experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Spermidine as a polyamine has been shown to mimic Ca2+ activation, modulate immune responses, and trigger phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 summarizes prior literature on spermidine's biological activities, supported by multiple citations. This provides important context for interpreting the current findings and is accurately represented. This is background knowledge rather than a new finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "A membrane-associated spermidine biosynthesis operon has been previously connected to antibiotic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 cites prior literature connecting the spermidine operon to antibiotic resistance. This provides additional context for the biological significance of the operon beyond its role in phagocytosis. This is accurately cited background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "In E. coli and L. pneumophila, PmrAB homologs regulate motility genes, suggesting potential feedback regulation between motility and PmrAB-controlled pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 cite prior literature on PmrAB regulation of motility in other bacteria, providing comparative context. This supports the plausibility of the proposed regulatory connections in P. aeruginosa, though direct evidence in P. aeruginosa is not provided. These are accurately cited prior findings.",
+    "result_type": "MINOR"
+  }
+]

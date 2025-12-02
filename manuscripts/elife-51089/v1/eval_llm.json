@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The authors define two orthogonal longevity phenotypes (3L and ELL) as the first and second principal components of body size and maximum lifespan data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 describe a standard PCA approach to decompose correlated variables into orthogonal components. The methodology is sound and the orthogonality property is a mathematical consequence of PCA, making this result well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The analysis reveals a significant excess of genes with evolutionary rates correlated with longevity phenotypes, with approximately 15% true positives for 3L and 7.5% for ELL using permulation-based null distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 present statistical evidence from p-value distributions and \u03c01 estimates showing enrichment of correlated genes. The use of both permulation and theoretical null distributions provides convergent evidence, though the estimates vary depending on the null model chosen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The main evolutionary signal is increased constraint (slower evolution) in long-lived species rather than positive selection, with no evidence of positive selection among positively correlated genes or enriched pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 collectively demonstrate through multiple lines of evidence (lack of positively correlated genes, absence of positive selection signatures, branch-site model tests) that the primary signal is increased purifying selection rather than adaptive evolution. This is a key finding that contradicts prior assumptions in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C63"
+    ],
+    "result": "The gene-level and pathway-level results are robust to species removal, indicating that the identified pathways are important for longevity across mammals and not driven by specific species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, and C63 describe robustness analyses showing that results hold when removing various species subsets. The supplementary figures demonstrate strong correlations between full and partial datasets, supporting the pan-mammalian nature of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In large, long-lived (3L) species, pathways related to cancer control show increased evolutionary constraint, including cell cycle control, DNA repair, cell death, and immunity, with preferential constraint on tumor suppressor genes and enrichment of early-stage cancer control mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C62 present convergent evidence from pathway enrichment analysis, cancer gene set analysis, and functional categorization. The statistical significance of tumor suppressor gene enrichment (p=4.114e-8) and the pattern of enrichment favoring early cancer stages provide strong support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C64",
+      "C82",
+      "C83",
+      "C98"
+    ],
+    "result": "The 3L results can be interpreted in the context of Peto's Paradox, suggesting that investment in cancer control through increased evolutionary constraint is key to enabling the evolution of large, long-lived species across the mammalian phylogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C64, C82-C83, and C98 connect the empirical findings to Peto's Paradox through logical inference. The interpretation is well-supported by the data showing cancer-related pathway enrichment and is consistent with the theoretical expectation that larger animals require enhanced cancer suppression mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The IGF1 signaling pathway shows strong increased constraint in 3L species, but genetic perturbations of IGF1 decouple lifespan from body size, suggesting that IGF1 pathway changes are unlikely to drive natural evolution of the large, long-lived phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 present a nuanced finding where the IGF1 pathway shows constraint (C67-C68) but experimental evidence from other studies (C70) suggests it cannot explain the coupled evolution of size and lifespan. The interpretation that IGF1 constraint relates to cancer control (C69) rather than trait establishment is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C84"
+    ],
+    "result": "For the ELL phenotype, a more focused set of pathways shows increased constraint, including a broader range of DNA repair pathways and NFKB-related immune pathways, differing from the 3L phenotype in specific pathway composition despite overlapping functional categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 and C84 describe the ELL-specific findings with appropriate detail. The distinction between functional overlap and pathway-level differences (C73-C74) is well-documented in the supplementary files, and the broader DNA repair enrichment (C76) is clearly shown in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "DNA repair and NFKB signaling pathways are connected through sirtuins and contribute to fitness in ELL species, potentially through preservation of chromatin state even in post-mitotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 synthesize findings from the current analysis with cited literature to propose a mechanistic connection. While the mechanistic link relies on prior work (C79-C80), the enrichment of both pathway types in the current analysis (C78, C81) provides convergent support for their importance in ELL species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study employs a novel methodological approach using overall protein evolutionary rates as the unit of convergence and correlating them with quantitative traits across the entire mammalian phylogeny, distinguishing between absolute and relative lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 accurately describe the methodological innovations of the study. The approach is clearly documented in the methods section and represents a valid extension of previous RERconverge applications to continuous phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Unlike prior studies that assumed positive selection underlies longevity evolution, this unbiased analysis finds that increased constraint is the strongest signal, with no positively selected pathways recovered in the pan-mammalian analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 contrast the current findings with prior work and acknowledge methodological limitations. The characterization of prior assumptions (C89) and the null finding for positive selection (C91) are well-documented, and the discussion of methodological sensitivity (C93) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study proposes a conceptual framework distinguishing 'trait-establishing' genes (under brief positive selection) from 'trait-enabling' genes (under sustained purifying selection), with evidence supporting the existence and convergence of enabling genes for extended longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 present a theoretical framework (illustrated in Figure 2) that explains why the method detects constraint rather than positive selection. The framework is logically sound and the conclusion that enabling genes exist and are convergent (C97) is well-supported by the data, though the distinction itself is somewhat speculative (C94, C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Alternative explanations involving differential pathogen pressure are unlikely because virus-specific genes are not enriched, pathogen pressure typically drives adaptive rather than constraint-based changes, and cancer risk increases with age while infection mortality decreases in early life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 systematically address and refute an alternative hypothesis. The arguments are logical and supported by cited literature (C101, C103) and the current data (C100). This strengthens the cancer control interpretation of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The identified genes and pathways represent universal keys to exceptional longevity across mammals rather than species-specific adaptations, providing candidate targets for experimental exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 present the main conclusion of the study, which is well-supported by the robustness analyses (C47-C48) and the pan-mammalian approach (C86-C87). The conclusion appropriately synthesizes the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study uses the RERconverge method on 19,149 genes from 61 mammalian species, with the method previously validated in marine and subterranean mammals and recently improved for robustness and power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 describe the computational methods and data sources. The methods are well-documented, publicly available (C107), and previously validated (C108). The data sources are standard and appropriately cited (C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study develops a novel 'permulation' approach combining permutations and phylogenetic simulations to generate null distributions that respect phylogenetic relationships, with permulation p-values being more conservative than standard permutations and equally conservative as phylogenetic simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 describe a methodological innovation for generating appropriate null distributions. The approach is well-justified (C112) and validated through comparison with alternative methods (C113, Figure 1\u2014figure supplement 6), making this a solid methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Mammalian lifespan varies over 100-fold across the phylogeny, is strongly correlated with body size, but some species like bats and naked mole-rats are exceptionally long-lived for their size, making lifespan a convergent trait suitable for comparative genomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, C20-C22, C25-C27 establish the biological context and rationale for the study. These are well-established facts supported by citations and data shown in Figure 1A-B. The characterization of lifespan as a convergent trait (C22) follows logically from the phylogenetic distribution (C21).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Previous single-species studies have identified genetic changes in long-lived species including bats, naked mole-rats, whales, and elephants, but these adaptations are species-specific and do not generalize to other mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C14-C19 summarize prior work through appropriate citations. The characterization that these findings are species-specific (C3) is a reasonable inference that motivates the pan-mammalian approach of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Mammals generally show increasing mortality with age, and both the antagonistic pleiotropy and mutation accumulation hypotheses of aging have empirical support in humans from studies of disease-related SNPs and somatic mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 provide background on aging theory and evidence. These are well-established concepts (C7-C10) with appropriate citations to supporting empirical work (C11-C12). This provides important context for interpreting the evolutionary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Evolutionary theory predicts that genetic elements supporting important traits experience increased constraint, and the ancestral mammal was small and short-lived, making large 3L and ELL values derived traits where decreased evolutionary rates indicate increased importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C35-C39 establish the theoretical framework for interpreting evolutionary rates. The theory is well-established (C23-C24) and the ancestral state reconstruction (C38) is reasonable based on paleontological evidence, supporting the interpretive framework used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C34",
+      "C45",
+      "C46"
+    ],
+    "result": "Negatively correlated genes represent existing biological systems that become especially important after trait establishment rather than contributing to the molecular innovations that established the traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C45-C46 provide an important interpretive caveat about the meaning of the findings. This interpretation is consistent with the conceptual framework (C94-C97) and appropriately distinguishes between trait establishment and trait maintenance, though it is somewhat speculative.",
+    "result_type": "MINOR"
+  }
+]

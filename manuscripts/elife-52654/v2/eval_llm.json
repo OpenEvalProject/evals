@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "hERG1a, hERG1b, and SCN5A mRNA transcripts physically associate during protein translation in a cotranslational complex. RNA-IP experiments demonstrate that SCN5A transcripts copurify with nascent hERG1a protein (and vice versa) in human ventricle, iPSC-CMs, and HEK293 cells, while control transcripts (RyR2, KCNJ2) do not. This association requires co-expression in situ and does not depend on hERG1b presence. Approximately half of actively translating hERG complexes contain SCN5A transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 provide converging evidence from RNA-IP experiments across multiple cell types and conditions, with appropriate negative controls (C17, C20). The specificity is demonstrated by the requirement for co-expression (C20-C21) and independence from hERG1b (C22). The quantitative finding (C3, C41) is supported by multiple experimental approaches. The cotranslational nature (C24) is a reasonable inference from the association with nascent proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Single-molecule FISH reveals that hERG1a and SCN5A transcripts exist in clusters of varying sizes and exhibit perinuclear localization patterns consistent with translation at the endoplasmic reticulum. Approximately 25% of detected molecules exist singly while ~20% occupy clusters of 6+ transcripts. Both transcripts show higher density within 5-10 \u03bcm from the nucleus, contrasting with GAPDH which shows more homogeneous cytoplasmic distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 are directly supported by smFISH quantification data shown in Figures 2C-E. The spatial distribution analysis (C27-C28) and comparison with GAPDH control (C29-C30) provide appropriate context. The inference about ER localization (C28) is reasonable given the known biology of membrane protein translation, though direct ER markers were not used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C71"
+    ],
+    "result": "hERG1a and SCN5A transcript levels are highly correlated within individual cells (R\u00b2=0.57, p<0.00001), indicating a roughly constant 1:1 ratio despite varying pool sizes (5-200 molecules/cell). This correlation is significantly higher than pairwise comparisons with RyR2 (R\u00b2=0.22) or GAPDH (R\u00b2=0.18 for hERG1a, R\u00b2=0.33 for SCN5A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by correlation analysis of smFISH data with appropriate statistical testing and negative controls. The R\u00b2 value of 0.57 with p<0.00001 (C32) indicates significant correlation, and comparisons with RyR2 and GAPDH (C33-C35) demonstrate specificity. The inference of a constant ratio (C36, C71) is reasonable from the correlation data, though the R\u00b2 of 0.57 indicates substantial variability remains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C72"
+    ],
+    "result": "Approximately 25% of hERG1a and SCN5A transcript populations colocalize with each other, significantly greater than expected by chance. This association is specific, as smFISH comparisons with RyR2 and GAPDH transcripts revealed no significant colocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by statistical analysis of smFISH colocalization data (Figure 4B-E) with appropriate chance calculations and Bonferroni correction. The specificity controls (C39) strengthen the conclusion. The 25% colocalization rate (C38, C72) is consistently reported and statistically significant compared to chance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C73"
+    ],
+    "result": "Among actively translating hERG1a mRNAs (those associated with hERG1a protein), 46% are also associated with SCN5A mRNAs, representing a 3-fold enrichment compared to overall colocalization rates. These cotranslational complexes are predominantly located within 10 \u03bcm of the nucleus (70%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by combined smFISH and immunofluorescence data (Figure 5). The 46% association rate among actively translated transcripts (C41, C73) compared to 25% overall (C38) provides the basis for the 3-fold enrichment calculation (C42). The perinuclear localization (C43) is consistent with ER-associated translation. The statistical significance compared to chance (C40) is appropriately demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Puromycin treatment, which releases translating ribosomes from mRNAs, disrupts the association between hERG1a and SCN5A transcripts without affecting total mRNA levels. Triple colocalization of hERG1a and SCN5A transcripts with either hERG1a protein or ribosomal protein S6 is robustly reduced by puromycin, supporting cotranslational association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by puromycin experiments (Figure 6). The lack of effect on total mRNA levels (C45) controls for transcript stability, while the reduction in mRNA-protein association (C46-C47) and triple colocalization (C48) specifically demonstrates disruption of translational complexes. The inference of cotranslational association (C49) is well-supported by this functional perturbation experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Targeted knockdown of hERG1a or hERG1b by shRNA causes coordinated ~50% reduction of hERG1a, hERG1b, and SCN5A transcript levels in iPSC-CMs, but not when transcripts are expressed independently in HEK293 cells. This co-knockdown is not due to off-target effects and demonstrates quantitative coregulation of associated transcripts. SmFISH confirms ~40% reduction in discrete mRNA particles, with colocalized particles showing ~55% reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C60 are supported by RT-qPCR (Figure 7A-B) and smFISH (Figure 7\u2014figure supplement 1) data. The specificity is demonstrated by the lack of effect when transcripts are expressed independently (C54-C55), ruling out off-target effects (C56). The coordinated reduction (C51, C53, C57) and preferential effect on colocalized particles (C59-C60) support the coregulation model. The consistency between RT-qPCR (~50%) and smFISH (~40%) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C74"
+    ],
+    "result": "hERG1b knockdown reduces both IKr and INa currents in iPSC-CMs. IKr shows decreased Gmax without changes in voltage dependence, while peak INa is reduced by ~60% and late INa is similarly decreased. The quantitatively similar reduction of both currents reflects their coordinated regulation during repolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 are supported by electrophysiological recordings (Figure 7C-K). The reduction in IKr (C61-C62) and INa (C64-C66) with preserved voltage dependence indicates reduced channel expression rather than altered biophysical properties. The inference that targeted transcripts are undergoing translation (C63) is reasonable given the functional consequences. The conclusion about coordinated regulation (C67, C74) is supported by the similar magnitude of effects on both currents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Ito is unaffected by hERG1b silencing, suggesting that coregulation of INa and IKr specifically reflects their coherent participation in cardiac repolarization rather than a general effect on all ion channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by electrophysiological data (Figure 8A-D) showing no effect of hERG1b knockdown on Ito. This negative control strengthens the specificity of the coregulation mechanism. The inference about coherent participation in repolarization (C70) is reasonable given that Ito does not regulate action potential duration in larger mammals (C69, supported by citation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Small imbalances between inward sodium and outward potassium currents can cause catastrophic arrhythmias and sudden cardiac death, particularly during repolarization when IKr plays a critical role and is a major target of long QT syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C8 establish the clinical and physiological context for the study. These are well-established facts in cardiac electrophysiology supported by appropriate citations (C6-C8) and general medical knowledge (C1, C5). While not novel findings of this study, they provide essential background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "IKr channels comprise hERG1a and hERG1b subunits that associate cotranslationally and preferentially form heteromultimers. Heteromeric channels have greater current magnitude than homomeric channels, and loss of hERG1b is pro-arrhythmic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 summarize prior work on hERG channel composition and assembly, all supported by appropriate citations. These establish the foundation for the current study's investigation of transcript association. While not novel findings, they are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Cotranslational association may facilitate proper protein folding and assembly, ensure appropriate channel properties, and buffer transcriptional noise to maintain stable ion channel ratios. Similar mechanisms have been observed in other systems including Kv1.3 channels and crustacean neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C80 are primarily speculative interpretations (C76, C80) or citations to prior work (C75, C77-C79). While the speculation is reasonable and supported by analogies to other systems, these claims represent discussion of potential mechanisms rather than demonstrated findings of this study. The functional role of cotranslational association remains to be directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The mechanism of transcript association does not rely on protein-protein interactions and may involve RNA-binding proteins (RBPs) similar to those in yeast and mammalian RNA regulons. The co-knockdown effect is not due to direct shRNA complementarity with non-target transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 are supported by citations to prior work. Claims C83-C84 about mechanism conservation are reasonable inferences from the reproducibility in different cell types. Claims C85-C89 cite prior work on RBP mechanisms but do not demonstrate RBP involvement in the current system. Claim C91 is a reasonable inference from the HEK293 control experiments (C54-C55), but the actual mechanism of co-knockdown remains unclear. Further work is needed to identify the molecular mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Previous studies have shown that hERG1b knockdown is pro-arrhythmic and that Nav1.5 and Kir2.1 exhibit compensatory changes through protein stability mechanisms rather than mRNA regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 accurately cite prior work to provide context for the current findings. These are not novel results but appropriately referenced background information that helps interpret the significance of the mRNA-level coregulation mechanism discovered in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The microtranslatome of associated transcripts represents a novel mechanism governing quantitative expression of multiple ion channel types and the balance of excitability in cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is a summary conclusion supported by the collective experimental evidence from RNA-IP, smFISH, colocalization analysis, puromycin experiments, co-knockdown studies, and electrophysiological recordings (C2-C4, C15-C24, C32-C49, C51-C67). The term 'microtranslatome' appropriately captures the discrete nature of the cotranslational complex. While the complete molecular mechanism remains to be elucidated, the existence and functional significance of this regulatory mechanism is well-supported.",
+    "result_type": "MAJOR"
+  }
+]

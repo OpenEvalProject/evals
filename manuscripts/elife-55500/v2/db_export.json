@@ -1,0 +1,2358 @@
+{
+  "submission": {
+    "id": "77178f58-c025-455d-9663-4ecfe9ef77dd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:53:26.273228Z",
+    "updated_at": "2025-12-02T21:53:26.273228Z"
+  },
+  "content": [
+    {
+      "id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "submission_id": "77178f58-c025-455d-9663-4ecfe9ef77dd",
+      "content_type": "manuscript",
+      "content_text": "# Viral-induced alternative splicing of host genes promotes influenza replication\n\n## Authors\n\n- Matthew G Thompson<sup>1</sup> ([ORCID: 0000-0003-3813-9254](https://orcid.org/0000-0003-3813-9254))\n- Mark Dittmar<sup>3</sup>\n- Michael J Mallory<sup>2</sup>\n- Prasanna Bhat<sup>4</sup>\n- Max B Ferretti<sup>2</sup>\n- Beatriz MA Fontoura<sup>4</sup>\n- Sara Cherry<sup>1</sup>\n- Kristen W Lynch<sup>1</sup> ([ORCID: 0000-0002-0120-8079](https://orcid.org/0000-0002-0120-8079)) \u2020\n\n### Affiliations\n\n1. Biochemistry and Molecular Biophysics Graduate Group, University of Pennsylvania Philadelphia United States\n2. Department of Biochemistry and Biophysics, University of Pennsylvania Philadelphia United States\n3. Department of Pathology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n4. Department of Cell Biology, UT Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nViral infection induces the expression of numerous host genes that impact the outcome of infection. Here, we show that infection of human lung epithelial cells with influenza A virus (IAV) also induces a broad program of alternative splicing of host genes. Although these splicing-regulated genes are not enriched for canonical regulators of viral infection, we find that many of these genes do impact replication of IAV. Moreover, in several cases, specific inhibition of the IAV-induced splicing pattern also attenuates viral infection. We further show that approximately a quarter of the IAV-induced splicing events are regulated by hnRNP K, a host protein required for efficient splicing of the IAV M transcript in nuclear speckles. Finally, we find an increase in hnRNP K in nuclear speckles upon IAV infection, which may alter accessibility of hnRNP K for host transcripts thereby leading to a program of host splicing changes that promote IAV replication.\n\n## Introduction\n\nInfluenza A virus (IAV) is a ubiquitous and significant health threat, resulting in 290,000\u2013650,000 deaths per year worldwide (WHO, 2019). In the United States alone, IAV is estimated to result 12,000\u201356,000 deaths annually (Centers for Disease Control and Prevention, 2020), with an estimated $11.2 billion cost burden (Putri et al., 2018). While efforts are ongoing to treat the virus, there still is no universal prevention or cure. This lack of treatment is due, in part, to the virus\u2019s ability to rapidly mutate and develop resistance (Hussain et al., 2017). Therefore, it is important to further understand how IAV and host cells interact during infection in order to develop new avenues for antiviral therapies.\n\nIAV infection results in large changes to the host gene expression landscape. Our understanding of these changes has largely been shaped through studies using microarray technology, limiting analyses to the measurement of transcript abundance. However, several recent studies have utilized advances in next-generation sequencing to observe host and viral gene expression during infection in greater detail than ever before. For example, IAV infection has been shown to induce a range of gene expression phenotypes such as RNA polymerase readthrough (Bauer et al., 2018; Heinz et al., 2018; Zhao et al., 2018), translational shutoff (Bercovich-Kinori et al., 2016), altered genome architecture (Heinz et al., 2018), and targeted transcript degradation (Gaucherand et al., 2019). In addition, a recent transcriptome-wide study identified not only transcript abundance changes but also global changes in alternative splicing isoforms (Fabozzi et al., 2018). These observations are in agreement with a growing awareness that viral infection can not only alter gene expression but also lead to altered splicing patterns.\n\nHost splicing changes have been observed during infection with DNA viruses (HSV-1 [Hu et al., 2016], HCMV [Batra et al., 2016]) as well as RNA viruses such as reovirus (Boudreault et al., 2016), dengue virus (Sessions et al., 2013), and zika virus (Hu et al., 2017), and recently, SARS-CoV-2 (Banerjee et al., 2020). However, these studies represent only the tip of the iceberg as they have mostly lacked the sequencing depth, and subsequent orthogonal validation, that is needed for a comprehensive quantitative analysis of host splicing (Mehmood et al., 2020; Shen et al., 2012). Therefore, we set out to comprehensively define the scope of host splicing changes during IAV infection in order to begin to address the underlying mechanisms and functional implications of such viral-induced alterations to the host transcriptome.\n\nMechanistically, changes in host splicing under any condition are generally due to regulation of RNA-binding proteins that, in turn, control the host splicing machinery. Splicing factors bind at a myriad of sites throughout a nascent pre-mRNA, and influence the inclusion or exclusion of specific exons, and in some cases introns, by influencing the recruitment of spliceosomal components to splice sites (Fu and Ares, 2014). In some cases, it has been shown that that viruses directly interact with the splicing machinery to alter splice site choice. For example, dengue virus NS5 alters splicing through interaction with the U5 snRNP (De Maio et al., 2016) component of the spliceosome, the piconaviral RdRp interacts with RNA helicase Prp8 to stall splicing (Liu et al., 2014), and SARS-CoV-2 Nsp16 has been proposed to bind U1 and U2 snRNA (Banerjee et al., 2020). Viruses can also influence the localization and/or expression of splicing factors, as has been observed in poliovirus (\u00c1lvarez et al., 2013), rotavirus (Dhillon et al., 2018), alphavirus (Barnhart et al., 2013), HCV (Shwetha et al., 2015), picornavirus (Florez et al., 2005), HCMV (Batra et al., 2016), and Dengue virus (Pozzi et al., 2020) and the resulting change in the nuclear concentration of splicing regulatory proteins likely contributes to alternative splicing of host genes. In the case of IAV, however, it is unclear how and if viral interactions with the splicing machinery impact host splicing patterns. While it is known that the IAV protein NS1 inhibits splicing in vitro through interaction with the spliceosomal U6 snRNA, the relevance of this interaction in cells has not been shown (Qiu et al., 1995).\n\nHere, we demonstrate that infection of human cells with IAV induces widespread alternative splicing changes in host genes. Similar changes in splicing are not observed upon treatment with interferon, demonstrating that this program of IAV-induced splicing is a direct consequence of viral infection rather than a secondary bystander effect of the host innate immune response. Importantly, at least 30 of the 61 genes tested that harbor IAV-induced splicing events influence IAV infection. Directly manipulating splicing of several of these transcripts confirmed that IAV-induced changes in alternative splicing have direct consequences on viral replication. Mechanistically, we found that almost 25% of the IAV-induced splicing changes are also regulated by hnRNP K, a well-known splicing regulator whose subnuclear distribution we show to be altered upon IAV infection. Previously, we demonstrated that hnRNP K promotes splicing of the IAV M segment transcript to generate the M2 protein (Mor et al., 2016; Thompson et al., 2018; Tsai et al., 2013). This suggests that the virus co-opts hnRNP K to promote infection both directly by inducing viral gene splicing and indirectly by altering hnRNP K splicing on pro-viral transcripts altogether promoting replication. Altogether, this work demonstrates the importance of alternative splicing for robust infection and replication of IAV and suggests mechanisms for how such viral-induced regulation of host splicing is achieved.\n\n## Results\n\n### Host gene expression changes are induced upon IAV A/WSN/33 infection\n\nAs a first step toward understanding the impact of IAV infection on the transcriptome, human epithelial A549 cells were infected with IAV A/WSN/33 at a multiplicity of infection (moi) of 2, to yield\u00a0~90% infection of cells (Condit, 2013), and total RNA was isolated at 0, 6, and 12 hr post infection (HPI). These experiments were performed in biological triplicate. mRNA from each replicate was poly(A)-selected and used to make cDNA libraries for 150 nucleotide, paired-end, Illumina Hi-Seq sequencing. Reads were then mapped to human and viral genomes as outlined in Figure 1a. At 6 and 12 HPI, IAV RNA accounted for\u00a0>30% of mapped reads (Figure 1b). Despite the large percentage of reads mapping to the viral genome, an average of 60\u201370 million reads were mapped to the host genome (Figure 1\u2014figure supplement 1). Importantly, this depth falls within the recommended depth (~60 million reads) for robust and reproducible splicing and differential expression analyses (Mehmood et al., 2020; Shen et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of infections, RNA-seq, and data processing work-flow. (b) Proportion of aligned, mapped reads corresponding to host (hg19) and virus (A/WSN/33) in each of the indicated samples. (c) Overlap of differentially expressed genes with a log2\u00a0fold change\u00a0>1.0 at 6 and 12 hr PI. (d) Top gene ontology categories for differentially expressed genes enriched at 6 hr PI (left), 12 hr PI (middle), and overlap of 6 and 12 hr PI (right). p-Values were\u00a0<0.05 in all categories. (e) Normalized counts of known viral-responsive genes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Unique RNA-seq reads mapped to human genome in mock, 6 hr, and 12 hr IAV infections in A549 cells across three replicates. (b) Unique RNA-seq reads mapped to A/WSN/133 reference genome at 6 and 12 HPI in A549 cells across three replicates.\n\nDifferential expression analysis of host transcripts revealed 3375 changes (log2 fold\u00a0>1, p<0.05) at 6 HPI and 8185 changes at 12 HPI, with an overlap of 2549 changes (Figure 1c, list of differentially expressed genes found in Supplementary file 1). Gene ontology (GO) analysis of changes at 6 HPI showed an enrichment for genes associated with host response to virus, whereas at 12 HPI, GO terms were enriched for categories such as DNA repair and stress (Figure 1d). GO analysis of the 2549 genes differentially expressed at both 6 and 12 HPI (Figure 1c, green overlap) also showed the expected enrichment for host response to virus. We further confirmed the robust induction of individual genes that are frequently used as markers of the innate antiviral immune response by RT-qPCR at both 6 and 12 HPI (Figure 1e). Together these data show that under the conditions of our experiment, IAV A/WSN/33 infection induces a robust host innate immune response within 6 hr. By 12 HPI, we observe a further progression of infection and a corresponding stress response in the host.\n\n### Influenza A/WSN/33 infection results in differential splicing of host transcripts\n\nNext, we quantified global changes in host splicing changes using a previously established algorithm, MAJIQ, that identifies all standard splicing events as well as complex splicing patterns (Vaquero-Garcia et al., 2016). Importantly, the detection of splicing by MAJIQ is not based on any pre-determined identification of exons, rather MAJIQ can identify any de novo pattern of splicing observed in the RNA-Seq reads (Vaquero-Garcia et al., 2016). At 6 HPI, we identified 1162 splicing differences at 861 unique genes with a threshold for changes in percent isoform expression (\u2206PSI) of greater than or equal to 10% (Figure 2a,b). Using an even more stringent cut-off of 20% \u0394PSI, we found 1931 splicing changes at 12 HPI, 896 of which overlapped with those splicing events observed to vary at 6 hr (Figure 2a,b; lists of all splicing changes are provided in Supplementary file 2). We used a more stringent threshold at 12 HPI based on the fact that when plotting the \u2206PSI values of the overlapping 896 splicing changes against each other, we see a trend in which splicing changes increase during the course of infection (Figure 2\u2014figure supplement 1). This trend in increased \u2206PSI over time is consistent with host splicing being regulated directly in response to viral load. We have therefore focused our further analysis on the 896 splicing events that are observed at both 6 and 12 hr, as these are both the most reproducible and most correlated with virus levels.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of splicing analyses and downstream processing pipeline. (b) Overlap of alternatively spliced genes (\u0394PSI\u00a0\u2265\u00a010 at 6 HPI (hours post-infection), \u0394PSI\u00a0\u2265\u00a020 at 12 HPI) at 6 and 12 HPI (number of unique splicing changes (SC) shown in parentheses). (c) Overlap of alternatively spliced and differentially expressed genes at 6 and 12 HPI (number of unique splicing changes (SC) shown in parentheses, log2 fold\u00a0change\u00a0>1.0). (d) Top gene ontology categories enriched within 588 exclusively alternatively spliced genes at 6 and 12 HPI. p-Values were\u00a0<0.05 in all categories. (e) Categorization of 833 exclusively alternative splicing events (588 genes) at 6 and 12 HPI.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Percent change in splicing values at 6 and 12 HPI vs. mock, for the 896 splicing events that are persistently changed upon viral infection (see Figure 2b). (b) A549 cells were treated with interferon beta (IFN\u03b2), infected with virus (WSN), or treated with shRNA against hnRNP K. Splicing was quantified using radioactive RT-PCR. \u0394PSI (change of % exon spliced in) values were determined by subtracting percent-exon-included in mock conditions from experimental conditions. Values are means \u00b1 s.d. from two to three biologically independent experiments. (c) Quantification of interferon inducible gene IFIT1 relative to Actin, by qPCR, in mock or IFN\u03b2 treated samples.\n\nWe are particularly interested in virus-induced changes in splicing, rather than those induced as a secondary or cell-extrinsic consequence of innate immune signaling. Therefore, we tested whether the splicing changes induced by IAV infection are also regulated directly by interferon, which is produced by viral-infected cells. Importantly, we found that of 10 splicing events we validated in orthogonal RT-PCR assays to change splicing during viral infection, none exhibit splicing regulation upon treatment with interferon beta (IFN\u03b2), despite the fact that this treatment induces expression of known IFN\u03b2-target genes (Figure 2\u2014figure supplement 1). Therefore, we conclude that the majority of the changes in splicing we observed upon IAV infection are a direct consequence of viral load and not a secondary effect of interferon signaling.\n\nThe 896 infection-induced splicing events from Figure 2b are encompassed in 631 genes. Notably, only 43 of these genes also exhibit changes in abundance upon viral infection (Figure 2c), consistent with many other studies that have found that genes regulated by splicing and transcription are largely distinct (Gazzara et al., 2017; Ip et al., 2007; Shinde et al., 2017). Moreover, GO analysis of the 588 genes that are differentially spliced without changes in abundance, finds an enrichment for genes associated with RNA processing, not immune defense (Figure 2d). In summary, IAV infection induces a host splicing program that is functionally distinct from the host transcriptional response.\n\nTo focus on genes that are regulated solely by splicing and not expression we have removed the 43 differentially spliced and expressed genes from our list of splicing events in the remainder of our analysis, leaving 833 distinct splicing changes in 588 genes. These 833 overlapping splicing events were then categorized by the type of alternative splicing (Figure 2e).\u00a0Of the alternative splicing events, ~25%\u00a0are \u2018classic\u2019 splicing events falling into alternative 5\u2032 splice site, alternative 3\u2032 splice site, and simple cassette exon events (211 splicing changes total). We also find many events classified as either complex or uncategorized, consistent with previous studies using MAJIQ (Vaquero-Garcia et al., 2016). While interesting, these complex events are challenging to explore in terms of functional consequence or mechanism (Vaquero-Garcia et al., 2016). Therefore, we focused our subsequent studies on the more canonical splicing events.\n\n### Infection-induced splicing events encode proteins important for IAV replication\n\nWe next investigated the role of the genes harboring viral-regulated splicing events in viral infection, focusing on the 211 classic splicing events (single exon cassettes, alternative 5\u2032 splice site, and alternative 3\u2032 splice site) due to their robustness and ease of analysis by RT-PCR (Figure 2e). We further filtered this set of 211 events for alternative splicing occurring within the coding sequence of transcripts, which would potentially alter the protein sequence. This resulted in a list of 61 alternatively spliced candidate genes (Figure 3a). The functional importance of these 61 genes was tested using an siRNA-based screen to identify if loss of any of these genes alters IAV infection. Briefly, A549 cells were transfected with siRNAs (two independent siRNAs per gene) for 48 hr (Figure 3\u2014figure supplement 1), then single-cycle IAV infections were performed for 24 hr followed by scoring of IAV infected cells by staining for IAV NP protein via immunofluorescence. We also quantified cell viability and removed any candidate gene where cell viability was reduced by 25% or more after siRNA treatment. Positive \u2018hits\u2019 were defined by genes where one or both siRNAs induced a greater than 20% change in the number of IAV-positive cells in duplicate screens (Figure 3, Figure 3\u2014figure supplement 1). Given these parameters, we find that knock down of 25 of the 61 genes yielded a change of greater than 20% in the number of IAV-positive cells (Figure 3b,c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig3-v2.jpg)\n\n**Figure 3.:** (a) List of 61 alternatively spliced genes sensitive to IAV infection chosen for siRNA screening. (b) Percent change of IAV-positive scoring cells in the context of siRNA knockdown. Bar indicates the average of two siRNAs in two independent screens, dots and error bars represent individual screen averages (across two siRNAs) and standard deviation respectively. Genes with an average change of\u00a0\u226520% are plotted. Quantification of knock-down of representative genes and average results from individual siRNAs are shown in Figure 3\u2014figure supplement 1b. (c) Representative images of immunofluorescence imaging of IAV-infected cells in the context of control or gene targeting siRNA treatments. Blue staining denotes individual nuclei (DAPI) and green staining denotes IAV-positive cells (NP). (d) A549 cells were treated with 20 nM siRNA for 72 hr and infected with IAV at moi\u00a0=\u00a00.01 for 48 hr. Shown is the measurement of plaque forming units in media via plaque assay. Bar indicates the average of two independent screens, dots and error bars represent individual data points.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Expression of siRNA target genes, as measured by qPCR, in cells transfected with a non-specific siRNA (NS), or the two independent siRNAs for each gene used in the screen (A, B), relative to Mock (untransfected) control. The impact of siRNAs targeting hnRNP K are also shown as a control. (b) Results of the siRNA screen as in Figure 3b, but showing results for the individual siRNAs averaged over duplicate experiments. (c) Impact of siRNAs on viral titer as measured by plaque assay.\n\nWe also wanted to capture genes that might be important for viral particle production and subsequent re-infection rather than initial infection. Thus, for the seven genes that maintained cell viability but did not alter NP expression in our initial screen, we also carried out a multi-cycle infection assay in which we scored viral titer levels. Notably, we found that knockdown of five of these seven genes resulted in dramatic (\u22655.5 fold) decreases of infectious viral particles (Figure 3d). As a control, we tested five genes that showed a difference in infection in the initial screen and all also showed a change in viral titer that is consistent with the screen (Figure 3\u2014figure supplement 1) Therefore, taken together, approximately half of the alternatively spliced genes we tested (30/61) influence the IAV infection cycle. We note that while CREB1 has previously been reported to be pro-viral (K\u00f6nig et al., 2010), we see little impact of siRNAs of this gene in our screen despite both siRNAs decreasing CREB1 mRNA by over 80% (Figure 3c, Figure 3\u2014figure supplement 1). By contrast, our screen did replicate previous studies that found CLK1 and RAB11FIP3 to influence viral infection (Bruce et al., 2010; Karlas et al., 2010; Li et al., 2010).\n\n### Alternative splicing of host genes alters IAV replication\n\nHaving shown that many of the genes which are alternatively spliced during infection impact IAV replication, we next wanted to test whether the viral-induced alternative splicing of these genes impacted viral infection. In other words, in contrast to the experiments in Figure 3 in which the complete gene was targeted, we sought to test the functional impact of specifically blocking expression of the viral-induced isoform. To do so, we employed a previously established approach in which antisense morpholino oligonucleotides (AMO\u2019s) are targeted to the exon-intron boundaries of alternative exons, promoting the skipping of the targeted exons (Fiszbein et al., 2019; Mallory et al., 2011; Martinez et al., 2015). By employing this strategy, splicing events where splice site usage is increased upon viral infection can be blocked, inhibiting expression solely of the isoform that is favored upon infection. Importantly, this strategy does not impact translation of the target mRNAs, as the AMOs only interact with the pre-mRNA. Of the 30 alternatively spliced genes shown to alter viral replication (Figure 3b\u2013d), 11 exhibited increased exon inclusion upon IAV infection. Of these 11, we found that exon inclusion for five could be successfully modulated by AMO\u2019s: CLK1, RAB11FIP3, PPIP5K2, IQCB1, and REPIN1 (Figure 4a, Figure 4\u2014figure supplement 1). We also were able to modulate CREB1 splicing (Figure 4\u2014figure supplement 1), which we included given the previous reports implicating this gene in IAV infection (K\u00f6nig et al., 2010), as well as ERI2, which is a case of alternative 3\u2032 splice site that alters the C-terminus of the protein (Figure 4a, Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig4-v2.jpg)\n\n**Figure 4.:** (a) A549 cells were infected (WSN), treated with shRNA against hnRNP K, or treated with splice-blocking antisense morpholino oligonucleotides (AMOs). Splicing was analyzed using RT-PCR analyses (b) RT-qPCR analyses (values normalized to mock AMO treatment) of PA segment vRNA 48 HPI with IAV (moi\u00a0=\u00a00.01) in the context of AMO treatment (targeted genes indicated on x-axis). Values are means \u00b1 s.d. from three independent experiments. (c) Measurement of plaque-forming units (values normalized to mock AMO treatment) in media 48 HPI with IAV WSN (moi\u00a0=\u00a00.01) in the context of AMO treatment (targeted genes are indicated on x-axis). Values are means \u00b1 s.d. from three independent experiments. (d) Measurement of plaque-forming units (values normalized to mock AMO treatment) in media 48 HPI with IAV WSN (moi\u00a0=\u00a00.01) in the context of AMO treatment. In combo-treated cells CLK1, RAB11FIP3, and PPIP5K2 were simultaneously targeted with AMO\u2019s. Values are means \u00b1 s.d. from three independent experiments. Statistical significance in (b) and (c) was determined via one-way ANOVA with multiple comparisons to mock corrected via Dunnett\u2019s test and in (d) via two-tailed student\u2019s t-test. p<0.05\u00a0=\u00a0* and p<0.005\u00a0=\u00a0** when comparing mock AMO treatments vs AMO treated samples.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) A549 cells were infected (WSN), treated with shRNA against hnRNP K, or treated with splice-blocking antisense morpholino oligonucleotides (AMOs). Splicing was analyzed using RT-PCR analyses (b) Normalized cell counts of mock or AMO treated A549 cells (values normalized to mock AMO-treated cells). (c) Schematic of the IAV and AMO-induced alternative splicing patterns for the four genes for which we observe functional impact on infection. Colored shapes represent distinct isoforms of encoded proteins. The X over one of the isoforms of CLK1 indicates predicted targeting of message to decay by NMD.\n\nTo assess if AMO treatment influenced IAV infection or IAV titers, A549 cells transfected with AMO\u2019s were infected with IAV at a moi of 0.01 for 48 hr. Levels of viral replication were measured by RT-qPCR assaying vRNA levels (Figure 4b). In addition, infectious particles were measured via plaque assay (Figure 4c). CREB1, IQCB1, and REPIN1 AMO treatment resulted in little to no change at the viral titer or vRNA level compared to mock treatments (Figure 4b,c). However, remarkably, switching the splicing of ERI2, CLK1, RAB11FIP3, and PPIP5K2 by AMO resulted in significant changes of at least twofold at both the titer and vRNA level (Figure 4b,c) with no general toxicity to the cells (Figure 4\u2014figure supplement 1). Notably, forced skipping of the CLK1 variable exon is predicted to have the same impact at siRNA treatment, as the exon-skipped product is predicted to be targeted for NMD (Figure 4\u2014figure supplement 1). By contrast, both the exon-included and -skipped isoforms of RAB11FIP3, PPIP5K2, and ERI2 are predicted to encode active proteins (Figure 4\u2014figure supplement 1). The results from the AMO experiment strongly suggest that the exon-included isoform of RAB11FIP3 and PPIP5K2 specifically promotes viral growth and/or that the exon-skipped product inhibits viral replication. Similarly for ERI2, viral infection normally favors the shorter isoform, while inhibition of this isoform in favor of the longer version markedly inhibits viral infection and replication. Although the impact of splicing modulation of CLK1, RAP11FIP3 and PPIP5K2 are relatively modest, given that several splicing changes occur at once during IAV infection, we also tested whether modifying multiple splicing changes simultaneously would have additive effects. Indeed, a combination AMO treatment targeting CLK1, RAB11FIP3, and PPIP5K2 splicing together, resulted in a larger decrease in viral titer compared to any of these single AMO treatments (Figure 4d; ~fourfold instead of\u00a0~twofold). Together, these data show that direct alteration of host splicing events upon viral infection impacts viral replication, at least for a subset of genes. Even for those genes in which we do not observe a direct functional impact of viral-induced splicing (e.g. IQCB1), it is possible that splicing regulation contributes to gene function and viral replication in a manner that is beyond the detection of our current assays.\n\n### hnRNP K regulates a subset of influenza A sensitive splicing events\n\nWe next set out to investigate how IAV infection impacts alternative splicing. We focused on the host protein hnRNP K because it was previously shown to be a pro-viral factor that regulates splicing of IAV M segment RNA (Mor et al., 2016; Thompson et al., 2018; Tsai et al., 2013). We and others have also shown that hnRNP K regulates splicing of host transcripts (Thompson et al., 2018; Venables et al., 2008). Therefore, we first tested if hnRNP K is important for IAV replication independent of its regulation of M segment splicing. In previous work, we generated an IAV mutant strain in which hnRNP K cannot bind to the M segment to regulate splicing (\u2206K-mut; Thompson et al., 2018). To determine if hnRNP K regulates IAV replication in the context of this virus, we depleted hnRNP K in A549 cells using siRNAs and assayed infectious virus particles 48 hr post-infection. Importantly, we show that while the \u2206K-mut IAV M2 splicing is no longer sensitive to hnRNP K levels, viral propagation is still attenuated upon hnRNP K knockdown (Figure 5a, Figure 5\u2014figure supplement 1). These data indicate that hnRNP K is required for IAV replication independent of its role in M splicing.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig5-v2.jpg)\n\n**Figure 5.:** (a) A549 cells were infected with WT and \u0394K-mut IAV in the context of scrambled or hnRNP K targeting siRNA. Plaque-forming units in media were assayed at 48 HPI. Values are means \u00b1 s.d. from three independent experiments. p<0.005\u00a0=\u00a0**. Statistical significance was determined via two-tailed student\u2019s t-test where p<0.05\u00a0=\u00a0* and p<0.005\u00a0=\u00a0** when comparing scramble vs siRNA-treated samples. (b) Western blot of shRNA-treated cells. Tubulin is shown as a loading control. (c) Proportion of IAV-sensitive splicing events (observed at 6 and 12 HPI) that are also sensitive to hnRNP K knockdown. (d) \u0394PSI value comparison of 179 splicing events at 6 HPI or after hnRNP K knockdown. Percentage values denotes proportion of 179 splicing events residing in each quadrant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Quantification of M segment isoform levels in A549 cells infected with WT IAV in the context of scrambled or hnRNP K targeting siRNA using radioactive primer extension and densitometry. (b) Quantification of M segment isoform levels in A549 cells infected with \u0394K-mut IAV in the context of scrambled or hnRNP K targeting siRNA using radioactive primer extension and densitometry. Values are means \u00b1 s.d. from three biologically independent experiments.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Overlap of differentially expressed and alternatively spliced genes in the context of hnRNP K shRNA knockdown (as in Figure 5b). (b) Overlap of differentially expressed genes in the context of hnRNP K shRNA knockdown (as in Figure 5b) and IAV infection (as in overlap between 6 and 12 HPI shown in Figure 1c). (c) Top gene ontology categories for differentially expressed genes enriched in the context of hnRNP K shRNA knockdown. p-Values were\u00a0<0.05 in all categories. (d) Top gene ontology category for alternatively spliced genes enriched in the context of hnRNP K shRNA knockdown. pValues were\u00a0<0.05 for enrichment.\n\nTo determine if any of the IAV-sensitive alternative splicing events are dependent on hnRNP K, we depleted hnRNP K in A549 cells by stably expressing a doxycycline-inducible shRNA (Figure 5b). Splicing changes that occur in response to hnRNP K knockdown were quantified using MAJIQ, filtering for significant changes of 10% or more in percent splicing (\u0394PSI). In agreement with previous studies, we observe large changes in host splicing upon hnRNP K depletion (Supplementary file 2;\u00a0Thompson et al., 2018; Venables et al., 2008). Importantly, 21% of the influenza-induced splicing changes are also hnRNP K-responsive (Figure 5c). To determine if hnRNP K positively or negatively regulates splicing of the IAV-dependent splicing events, we plotted the impact of hnRNP K and IAV infection on PSI values of the 179 common splicing events (Figure 5d). We find 65% of splicing changes are regulated similarly by hnRNP K depletion and IAV infection, whereas for the remainder, hnRNP K depletion has the opposite effect of infection. We validated many of these splicing changes in response to both IAV infection and hnRNP K knockdown by RT-PCR, including both those that exhibit a similar and an opposite change under these two conditions (Figure 4a, Figure 2\u2014figure supplement 1). The observed high validation rates are consistent with previous studies with MAJIQ (Vaquero-Garcia et al., 2016). In addition to hnRNP K-induced regulation of splicing, we also find that hnRNP K alters the expression of\u00a0~2000 genes, some of which are also altered upon viral infection (Figure 5\u2014figure supplement 2, Supplementary file 1). These hnRNP K regulated genes are generally independent of hnRNP K regulated splicing events (8% of splicing events are differentially expressed, Figure 5\u2014figure supplement 2). Some of these changes in gene expression may contribute to regulation of IAV infection. However, as there is no enrichment for viral-related functions among the hnRNP K-induced differentially expressed genes (Figure 5\u2014figure supplement 2), and our focus here is on splicing. We have not further pursued the impact of this differential expression.\n\n### hnRNP K nuclear distribution is altered during infection\n\nBased on the two populations of hnRNP K and IAV-responsive splicing events, we propose at least two models for how hnRNP K-dependent splicing is regulated during infection. The abundance of splicing events for which hnRNP K depletion phenocopies infection at the splicing level suggests that hnRNP K may be functionally depleted or inhibited during infection. By contrast, for events with opposite \u0394PSI values between hnRNP K depletion and infection, hnRNP K activity may be enhanced by a co-factor that is increased or activated upon infection. Both these models imply a change to hnRNP K activity upon infection. However, western blot analysis revealed little to no differences in hnRNP K expression or nucleocytoplasmic localization (Figure 6a). Analyses of hnRNP K phosphorylation via phos-tag SDS-PAGE also showed no reproducible changes overall, although we do note a minor increase in phosphorylation, particularly in the nuclear fraction (Figure 6a). These results are in agreement with previous mass spectrometry-based studies showing that total hnRNP K level and phosphorylation do not significantly change during IAV infection (Coombs et al., 2010; Dapat et al., 2014).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig6-v2.jpg)\n\n**Figure 6.:** (a) Western blot analyses of total, cytoplasmic, or nuclear A549 cell extracts 0, 6, and 12 hr post infection (HPI). hnRNP K was analysed via traditional SDS-PAGE or Phos-tag to separate phosphorylated isoforms of hnRNP K. (b) Approximately 100% of A549 cells were infected with influenza virus (WSN) for 5 hr and then subjected to immunofluorescence microscopy to detect SC35, hnRNP K, and viral proteins. Nuclear speckles were marked with anti-SC35 antibody. Scale bar\u00a0=\u00a010 \u00b5m. (c) Voxel outside surface generated for nuclear speckles was set to 0 for hnRNP K channel to visualize hnRNP K at nuclear speckles. The marked region is enlarged. (d) Quantification of hnRNP K at nuclear speckles (NS) was performed using the Imaris software. hnRNP K intensity sum at nuclear speckles was normalized to the intensity sum in the nucleus. Values are means \u00b1 s.d. measured in 35 mock and 35 WSN infected cells from biological triplicates. ** unpaired, two-tailed t-test p<0.01. (e) Quantification of nuclear speckle volume was performed using the Imaris software. Surface was generated using fluoresce signal from immunostained SC35 proteins to measure nuclear speckle volume. Values are means \u00b1 s.d. measured in\u00a0\u226535 mock and WSN infected cells from biological triplicates. * unpaired, two-tailed t-test p\u22640.05.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55500/elife-55500-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Values are means \u00b1 s.d. from three biologically independent experiments.\n\nAlthough hnRNP K levels did not appear to change between the cytoplasm and nucleus, it is possible more subtle changes in hnRNP K subcellular localization occur during infection. In past work, we showed that hnRNP K activates IAV M RNA splicing within nuclear speckles, as opposed to the nucleoplasm where most splicing of host transcripts is thought to occur (Mor et al., 2016; Thompson et al., 2018). Therefore, we asked if the speckle-associated pool of hnRNP K is altered during IAV infection. To test this, hnRNP K colocalization with nuclear speckle-associated protein, SC35, was measured using fluorescence microscopy in mock and IAV-infected A549 cells (Figure 6b\u2013c). Strikingly, we observed that hnRNP K levels at nuclear speckles increase modestly but significantly during IAV infection (Figure 6d). This increase in localization of hnRNP K to speckles was mirrored by an overall increase in speckle size upon infection (Figure 6e). Therefore, we propose that at least one of the mechanisms by which IAV results in alterations in hnRNP K-regulated splicing events is through enhanced recruitment of hnRNP K to nuclear speckles. Although this re-localization may not be sufficient to have a gross impact on the overall levels of hnRNP K in the nucleoplasm, it is possible that this re-localization, coupled with competition for hnRNP K between IAV and host RNAs, effectively depletes a particular pool of hnRNP K from co-transcriptional splicing processes in the nucleoplasm, or redirects hnRNP K activity to splicing events that occur at nuclear speckles (see Discussion). Regardless of the mechanism, we do find that upon depletion of hnRNP K from cells, there is no further change in the splicing of hnRNP K- and IAV-dependent events upon IAV infection (Figure 6\u2014figure supplement 1). While we cannot rule out that the lack of IAV-induced splicing is an indirect result of reduced infection efficiency, these results are consistent with our model that reduced hnRNP K activity is the primary driver of a subset of IAV-induced host splicing.\n\n## Discussion\n\nPrevious studies have established that the host transcriptome is profoundly altered upon IAV infection. While much of this work has shown that regulation of host transcription is a major component of these changes, only recently have post-transcriptional events, such as alternative splicing, begun to be analyzed (Fabozzi et al., 2018). Here, we identify a program of host splicing that is regulated by IAV infection and show that many of these splicing changes occur within genes that promote IAV replication. Furthermore, directly manipulating a subset of these IAV-induced splicing changes, using splice-blocking AMO\u2019s, also attenuates infection. Together these data implicate infection-induced changes in host splicing as a previously unrecognized mechanism by which viruses promote infection.\n\nOur RNA-seq analyses of A/WSN/33-infected A549 cells revealed functionally distinct categories of genes that are regulated by transcriptional and splicing responses. Genes that exhibit differential expression are enriched for genes involved in immune response and viral defense, consistent with previous studies (Fabozzi et al., 2018; Ioannidis et al., 2012). By contrast, GO analyses of genes that harbor splicing changes demonstrates enrichment for RNA processing categories. Moreover, we observe very little overlap between the genes that are differentially spliced versus those that show differential expression. These data suggest that the host splicing response to virus is functionally distinct from the transcriptional response. We are unable to directly compare our data to other RNA-Seq studies due to differential experimental design and depth of sequence; however, our findings are generally consistent with the prediction that IAV infection induces changes in host splicing in addition to, and separate from, changes in transcription. Patterns similar to this have been observed in other systems. For example, T-cell stimulation results in robust transcriptional and splicing changes; however, very little overlap is observed between the categories (Martinez et al., 2012).\n\nOur analyses of host splicing changes adds to a pattern of IAV inducing a variety transcriptomic phenotypes. Recent studies observing altered genome architecture, transcript 3\u2032 end defects, and PA-X targeted transcript degradation during infection all have links to splicing (Gaucherand et al., 2019; Heinz et al., 2018; Zhao et al., 2018). One observation was that of transgenic, defective, and unannotated splicing in relation to transcription termination (Heinz et al., 2018; Zhao et al., 2018). While our splicing analyses did not account for these specific splicing types, we would predict for them to be present in our experiments to some extent. Importantly, the alternatively spliced transcripts we describe here are not products of defective or transgenic splicing, and are likely not induced by the same transcription defects described in other studies. Additionally, the IAV endonuclease PA-X was shown to preferentially target spliced transcripts (Gaucherand et al., 2019). However, the alternatively spliced genes we define here do not overlap with PA-X-targeted genes (Gaucherand et al., 2019). Therefore, while splicing appears to contribute to many facets of IAV-induced transcriptome changes, we propose that a portion of the functional splicing events described here are independent of previously described mechanisms.\n\nAlthough the set of genes that we identify to undergo alternative splicing upon IAV infection are not enriched for known regulators of viral replication, we demonstrate that half of the splicing-regulated genes we tested (30/61) do impact IAV infection or propagation. This includes genes involved in cell signaling, intracellular trafficking and gene expression. In addition to demonstrating that many of the host genes that undergo IAV-induced splicing changes are involved in controlling infection, in several cases we directly show that changing the splicing of these genes alters IAV replication (Figure 4). For example, IAV infection induces inclusion of alternative CLK1 exon 4, which results in expression of the canonical full-length isoform of the protein (Figure 4a). By contrast, skipping of exon 4 is observed in uninfected cells and introduces an early stop codon that truncates the kinase domain of protein (Duncan et al., 1997; Uzor et al., 2018). Therefore, in the case of CLK1, both the AMO that blocks exon 4 inclusion (Figure 4), and the siRNA (Figure 3), are expected to decrease the expression of active protein. Given that previous studies have established CLK1 to be required for efficient IAV replication (Artarini et al., 2019; Karlas et al., 2010; Zu et al., 2015), our data is consistent with a model in which IAV infection promotes exon inclusion to increase production of full-length functional CLK1 kinase that, in turn, promotes viral growth.\n\nFor RAB11FIP3, IAV induces the inclusion of a non-canonical in-frame alternative exon (Figure 4a), resulting in expression of an alternate isoform of this protein. The function of the additional protein sequence remains unclear, as it lies upstream of the defined RAB11-binding domain (Shiba et al., 2006) and does not contain known phosphorylation sites (Collins et al., 2012). Regardless, this non-canonical isoform appears to promote IAV infection, as blocking the variable exon up-regulates the canonical isoform and limits IAV replication in multi-cycle infections (Figure 4b). Interestingly, a previously established model suggests that RAB11FIP3 may compete with IAV vRNPs for RAB11 on endosomes in the particle assembly pathway (Vale-Costa et al., 2016). Therefore, it is possible that the canonical RAB11FIP3 isoforms may interfere with particle assembly, such that it is beneficial to the virus for this canonical isoform to be decreased through splicing.\n\nPPIP5K2 exon inclusion is also increased upon viral infection, producing increased levels of the canonical full-length isoform of the RNA (Figure 4a). By contrast, forced skipping of this exon results in decreases in viral titers and vRNA (Figure 4a\u2013c). Interestingly, PPIP5K2 has been previously thought to limit to influenza A replication (Pulloor et al., 2014), as it was shown that catalytic activity of PPIP5K2 is required for efficient IFN\u03b2 production, and in turn, that knockdown of PPIP5K2 resulted in viral load increases. The exon that is skipped in uninfected cells removes a portion of peptide sequence without altering the downstream reading frame. It is possible that the resultant smaller protein has increased catalytic activity, perhaps through removal of an inhibitory interaction, such that altering the splicing of PPIP5K2 may reduce PPIP5K2 function.\n\nERI2 is a particularly interesting example of IAV-induced alternative splicing. The ERI2 gene encodes a poorly characterized exonuclease that is a member of a family of non-specific 3\u2032 to 5\u2032 exonucleases that target double-stranded RNA or DNA (Dominski et al., 2003). Use of an alternative 3\u2032 splice site in the terminal exon results in a swap between two unique C-termini. The distal 3\u2032 splice site, which is favored upon IAV infection, results in a 35 amino acid terminus, while use of the proximal 3\u2032 splice site adds an additional 392 amino acids. Both isoforms contain the exonuclease domain, however the longer form also contains a putative nucleic-acid-binding zinc finger. While the functional role of this protein is unknown, we do note that it was identified in a broad siRNA screen as required for efficient HIV infection (Brass et al., 2008). Thus, the activity of this protein, its relevance for viral infection, and the functional difference between isoforms, will be an interesting area for future study.\n\nImportantly, we show a previously established pro-viral host factor, hnRNP K, regulates a subset of the splicing events that change in response to IAV infection, including CLK1, RAB11FIP3, and PPIP5K2. Notably, hnRNP K undergoes increased sequestration into nuclear speckles upon viral infection. While the overall percentage of hnRNP K in the speckles remains low even after infection, given the plethora of targets of hnRNP K in the nucleus, including the IAV M transcript, it is reasonable that the redistribution of hnRNP K upon infection may alter the pool of free hnRNP K available to bind to and regulate host genes that are typically spliced outside of speckles. Further consistent with a functional role of hnRNP K in regulating important pro-viral host splicing events, while hnRNP K was previously established to be important for IAV M segment splicing regulation (Mor et al., 2016; Thompson et al., 2018; Tsai et al., 2013), IAV replication is sensitive to hnRNP K expression even in the context of a mutant IAV in which hnRNP K is not required for M segment splicing regulation (Figure 5a, Figure 5\u2014figure supplement 1). It is possible, however, that hnRNP K is also important for additional viral processes such as regulating transcription or translation of viral transcripts, as hnRNP K has been implicated to regulate many facets of RNA processing other than splicing (Bomsztyk et al., 2004). Nonetheless, given that hnRNP K levels regulate 21% of detected IAV-induced splicing changes (Figure 5c), many of which encode for proteins that influence viral replication (Figure 3c), we contend that hnRNP K regulation of host transcript splicing is an important process during IAV infection.\n\nWhile our data clearly shows changes in host splicing upon IAV infection (Figure 2), many of which are regulated by host splicing factor hnRNP K (Figure 5c), it is not clear if these splicing changes are induced through host or viral mechanisms. A virus-centric model would suggest that viral manipulation of host splicing-related pathways causes the splicing changes observed during infection. By contrast, a host-centric model would predict the splicing changes observed during infection are part of a host response to pathogen. Likely, the changes we observe here are a mixture of both models. However, RT-PCR analysis of a panel of IAV-sensitive splicing events in the context of IFN\u03b2 treatment identified no significant splicing changes, thus ruling out a model in which splicing changes are primarily triggered indirectly by interferon secretion, as a secondary consequence of the innate immune response.\n\nIn sum, we demonstrate here a feedback loop between viral-induced regulation of splicing of host genes and subsequent viral infection. This is yet another example of the intricate competition between host and virus, involving multiple layers of regulation and counter-regulation53,54. We also demonstrate one of the mechanisms driving this IAV-induced regulation of splicing. Future studies will be required to further uncover additional underlying mechanisms by which IAV control host splicing, and to determine if manipulation of these mechanisms has potential for antiviral therapeutic intervention.\n\n## Materials and methods\n\n### Cell culture and viruses\n\nHuman lung adenocarcinoma epithelial cells (A549) were cultured in RPMI 1640 (Corning: 10\u2013040-CV), 10% heat-inactivated FBS (Gibco: 16000\u2013044), and 100 units ml\u22121 Pen/Strep antibiotics. MDCK cells were cultured in high-glucose DMEM (Corning: 10\u2013013-CV), 10% heat-inactivated FBS (Gibco) and 100 units ml\u22121 Pen/Strep antibiotics. All cells were maintained at 37\u00b0C with 5% CO2. Cells were tested negative for mycoplasma. Cell lines were obtained and authenticated by ATCC (A549: CCL-185, MDCK: PTA-6500). A/Puerto Rico/8/1934 (PR8) and A/WSN/33 (WSN) strains were used as specified for individual experiments. \u0394K-mut virus was generated as previously described in another study (Thompson et al., 2018). Viral titers were determined via plaque assay in MDCK cells as the average to technical replicates.\n\n### Infections\n\nFor infections, A549 cells were grown to 80% confluency, washed with PBS, and inoculated with viral titer diluted in PBS\u2022BA (DPBS with Ca and Mg (Corning: 21\u2013031-CV), 0.2% BSA (Lampire: 7500810), and 100 units ml\u22121 Pen/Strep antibiotics) for 1 hr at room temperature (22\u00b0C). Cells were then washed with PBS and incubated in Infection media (1X MEM, 0.2% BSA, 10 mM HEPES buffer, 0.12% NaHCO3, 100 units ml\u22121 Pen/Strep antibiotics) at 37\u00b0C with 5% CO2 until desired time-point. At time-points, media was collected for plaque assay analyses. For protein and RNA analyses, wells were rinsed with PBS and either pelleted and lysed with RIPA buffer for western blot analysis or RNA was extracted using RNA-Bee (amsbio: CS-501B).\n\n### Plaque assays\n\nMDCK cells were grown to 100% confluency in 12-well plates. Viral titers to be assayed were serially diluted in PBS\u2022BA (DPBS with Ca and Mg (Corning: 21\u2013031-CV), 0.2% BSA (Lampire: 7500810), and 100 units ml\u22121 Pen/Strep antibiotics). MDCK cells were then washed in PBS and viral dilutions were added to each well and left to inoculate for 1 hr at room temperature (22\u00b0C). Viral dilutions were then removed and 1 ml of plaque overlay media was added to each well (1X MEM, 0.2% BSA, 10 mM HEPES buffer, 0.22% NaHCO3, 0.01% DEAE Dextran), 100 units ml\u22121 Pen/Strep antibiotics, and 0.6% Agar (Oxoid). Plates were stored upside-down at 37\u00b0C with 5% CO2 for 48 hr at which point cells were fixed with 3.6% formaldehyde. Gel plugs were then removed, cells were stained with Crystal violet, and plaques were counted.\n\n### Depletion of hnRNP K from A549 cells\n\nFor knockdown of hnRNP K to test viral replication (Figure 5a), A549 cells were treated with 50 nM siRNA (Dharmacon, \ufeffSMARTpool, M-011692\u201300) as previously described (Thompson et al., 2018). For RNA-Seq and validation experiments, hnRNP K was stably depleted from A549 cells using a lentiviral expressed doxycycline-inducible shRNA with sequence: agcgGGACCTATTATTACTACACAATAGTGAAGCCACAGATGTATTGTGTAGTAATAATAGGTCC (target underlined) This shRNA vector and its use are described in detail previously (Martinez et al., 2015).\n\n### RNA-seq of infected or hnRNP K knockdown cells\n\nFor infections A549 cells were grown to 80% confluency in 15-cm plates and infected with WSN IAV at moi\u00a0=\u00a02. At the 0, 6, and 12 hr post infection, total RNA was extracted from cells. For hnRNP K knockdowns, either stable shRNA expressing or WT A549 cells were grown to 90% confluency in 15-cm plates over a span of 48 hr in the presence of doxycycline. At 48 hr total RNA was extracted. RNA was then DNase treated and further purified using RNeasy mini kit (Qiagen). RNA quality assessed for quality using a Nanodrop and Agilent 2100 Bioanalyzer. Samples were required to have a 260/280 ratio of\u00a0>1.8 as well as a RIN value of\u00a0>6 to be used for library preparation. Poly(A) selected cDNA libraries were generated on site at the University of Iowa sequencing core using standard methods. cDNA libraries were then sequenced for paired-end, 150-nt, reads on an Illumina HiSeq 4000. RNA-Seq data is accessible in GEO under study GSE142499.\n\n### RNA-seq mapping, differential expression analysis\n\nRaw reads were aligned to the human or viral WSN genome using STAR (Dobin et al., 2013). Differential gene expression of host transcripts was performed using the R-package, DESeq2 (Love et al., 2014). Significantly changing genes were defined as those with a log2 fold\u00a0change greater than |1| and a corresponding p-value<0.05.\n\n### Splicing analysis\n\nSpicing analyses was performed using MAJIQ (ver. 1.1.3a) as described previously (Vaquero-Garcia et al., 2016). Initial splicing analyses of 0 HPI, 6 HPI, 12 HPI, mock dox-treatment, and sh-hnRNP K samples were performed in parallel using MAJIQ builder with default settings. \u0394PSI values were quantified with the MAJIQ package, VOILA, using the following settings. Six HPI samples were quantified against 0 HPI set at a threshold of 10. Twelve HPI samples were quantified against 0 HPI set at a threshold of 20. sh-hnRNP K samples were quantified against mock dox-treated samples at a threshold of 10. Significant splicing events were those with probability values\u00a0>\u00a00.95 and a \u0394PSI value greater than 10 (for 6 HPI and sh-hnRNP K) or 20 (for 12 HPI).\n\n### siRNA screen\n\nThe siRNA screen was done as previously described (Panda and Cherry, 2015). In brief, siRNA libraries targeting each gene were ordered from Ambion and aliquoted into 384-well plates. siRNAs were then transfected into 2000 A549 cells in each well using 0.5 \u00b5l HiPerFect (Qiagen) in a total volume of 50 \u00b5l and a final concentration of 20 nM siRNA. siRNA treatment proceeded for 72 hr. siRNA transfection efficiency was monitored using the siDeath control RNA. Cells were then infected with IAV PR8 at an moi of 0.1 or 0.5 for 24 hr. After infections cells were fixed with 4% formaldehyde, washed twice with phosphate-buffered saline (PBS), blocked for 1 hr in blocking solution consisting of PBS containing 2% bovine serum albumin (BSA), 0.1% Triton X-100, and 0.02% sodium azide, and stained with mouse anti-IAV NP primary antibody at a 1:2000 dilution in blocking solution overnight at 4\u00b0C. The primary antibody was then replaced with blocking solution containing 5 \u00b5g/ml bisBenzimide H 33342 trihydrochloride (Sigma-Aldrich, B2261) and goat anti-mouse Alexa Fluor 488 secondary antibody (Invitrogen, A11029) at a 1:1000 dilution and incubated for 1 hr at room temperature. The cells were then washed three times with PBS containing 0.1% Triton X-100 before imaging. Imaging of cells was performed using an ImageXpress autoscope and MetaXpress software. Four images were collected per well and a median % IAV cell score was calculated. Changes in % IAV positive cells were calculated relative to wells treated with siControl siRNA. Final values were determined as an average % change in IAV positive cells across duplicate experiments.\n\n### Antisense morpholino oligonucleotide treatment and infections\n\nFor each AMO treatment, 500,000 A549 cells were electroporated with a total of 5 nmoles AMO using a Bio-Rad Gene Pulser Xcell (settings used were default A549 cell program). AMO sequences are detailed in Supplementary file 3. Electroporations were performed in RPMI media without FBS or antibiotics. 200,000 treated cells were seeded into 6-well plates and allowed to grow for 48 hr. Splice-blocking activity each AMO at 48 hr was validated using radio-labeled RT-PCR (Figure 4a, Figure 4\u2014figure supplement 1). Cells were then infected with WSN IAV at the specified moi and time-course. At the specified time points, media was collected for downstream plaque assays and total RNA was collected for further experiments.\n\n### Microscopy and quantification of subnuclear localization of hnRNP K\n\nFor subnuclear localization of hnRNP K, immunofluorescence was performed as previously described (25) using SC35 (ab11826, Abcam), hnRNP K (GTX101786, Genetex) and anti-influenza A virion polyclonal antibodies (B65141G, Meridian Life Science). For quantification of hnRNP K localization, images were captured as previously described (25). AutoQuant software was used to deconvolve z stack images. Deconvolved images were used for surface generation and quantification using Imaris (Bitplane) software. Surface was generated for nuclear speckles using the SC35 channel. Display minimum and maximum values were adjusted to distinguish SC35 at nuclear speckles from the nucleoplasm pool. Display minimum and maximum values were kept constant for all images. DAPI channel was used for generating the nuclear surface. Threshold was adjusted manually during surface generation. Number of voxels above 10 was used as filter. Intensity sum of hnRNPK from nuclear speckle surface and nucleus surface was quantified using the Imaris software. Volume of nuclear speckle was quantified using Imaris software. Statistical analysis was done using an unpaired, two-tailed, t-test with Welch\u2019s correction was performed.\n\n### Interferon treatment\n\nA549 cells were grown 80% confluency in 10-cm plates. At time of interferon treatment, fresh, pre-warmed media containing 10 ng/ml beta-interferon (STEMCELL Technologies, Cat #78113) was added to cells. Total cellular RNA was harvested 12 hr post treatment using RNA-Bee (amsbio: CS-501B). IFIT1 expression was assessed via qPCR (Figure 2\u2014figure supplement 1) to validate innate immune stimulation.\n\nqPCR analyses cDNA was produced in a 24 \u00b5l reaction using 500 ng total cellular RNA, 1 ng of gene-specific reverse primer, and MMLV reverse transcriptase enzyme. 3 \u00b5l of cDNA was added to 10-\u00b5l qPCR reactions containing 0.5 \u00b5M forward and reverse primers as well as 1X PowerUP SYBR green master mix (ThermoFisher) in 384-well plates. Expression levels of targeted genes were calculated relative to GAPDH. qPCR primers are detailed in Supplementary file 3. All qPCR data is from triplicate biologic replicates, each analyzed in technical duplicate.\n\n### RT-PCR analyses\n\nRT-PCR was carried out as described in detail previously (Martinez et al., 2015; Thompson et al., 2018). RT-PCR primers are detailed in Supplementary file 3. All RT-PCR data is from analysis of triplicate biologic replicates.\n",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "d780a1a0-3e94-459f-a5a4-7d5cb042aafa",
+      "submission_id": "77178f58-c025-455d-9663-4ecfe9ef77dd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Douglas L Black, University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55500.sa1](https://doi.org/10.7554/eLife.55500.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe believe your study adds valuable insight into how viruses affect the biology of host cells by altering the pre-mRNA splicing apparatus to aid viral replication. This work also provides clues to the molecular mechanisms mediating these splicing changes. These results will be of general interest for many groups working in viral and RNA biology.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Viral-induced alternative splicing of host genes promotes influenza replication\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Douglas Black as Reviewing Editor and James Manley as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Mariano A Garcia-Blanco (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThompson et al. examine host gene expression in A549 cells infected with Influenza A virus. Performing RNA sequencing and quantifying splicing changes they make the interesting observation that genes that were differentially regulated at the transcription level were mostly found in the antiviral response and DNA repair pathways while the genes that were differentially spliced were mostly found in splicing and mRNA transport pathways. They catalogued the types of splicing changes and focused on a set of splicing events for mechanistic studies. Using siRNAs to knockdown expression and antisense morpholino oligonucleotides (AMO) to drive splicing pattern changes, they determined the effects of particular genes and isoforms on influenza viral replication and production. Finally, the authors showed that hnRNPK is a regulatory factor for 21% of the altered splicing events during influenza virus infection. These events are possibly controlled by increased recruitment of hnRNP K to nuclear speckles during infection.\n\nThis study is one of the first to comprehensively quantify host splicing changes during viral infection. The authors clearly demonstrated effects on viral replication and production by modulating the splicing of some of these host transcripts, suggesting that these splicing events play an important role during viral infection. The authors also briefly mention in the Discussion that IFN treatment did not trigger similar splicing changes. Thus, the splicing changes may be an outcome of viral infection rather than a host response to pathogens.\n\nAll the reviewers found the paper to be interesting and important and the manuscript to be well written. However, they also agreed that the significance of the findings is weakened by the lack of method validation and essential controls. Moreover, several puzzling aspects of the results require more detailed explanation.\n\nEssential revisions:\n\n1) There is no data presented to confirm the knockdowns by either qRT-PCR or immunoblotting. Granted it is a significant amount of work to validate the 61 alternatively spliced candidate genes by siRNAs. However, without this data it impossible to assess possible correlations between the phenotype and the degree of knockdown. Given the complex phenotype assayed (viral infection) it is critical to consider off target effects of siRNAs. Although the experience of the collaborators suggests this was done properly, it should nonetheless be addressed explicitly in the study. The authors are no doubt aware that siRNA screens are plagued by high false positive rates. To manage these off-target effects, the authors need to validate the important hits using individual siRNAs. As better proof that the siRNAs are specific, the authors should consider using C911 siRNA controls (Buehler et al., PLoS ONE 2012) and determine whether these abrogate the transcript knockdowns and effects on viral replication. It would be worth testing these controls for the 5 genes (CLK1, RAB11FIP3, PPIP5K2, REPIN1 and IQCB1), for which the effects of splicing changes on viral replication and production were tested in Figure 4. Given that the effects seen from the siRNA screen (Figure 3B) were modest, and indeed the criterion for selecting hits at 20% inhibition was relaxed, it would be more convincing if all of the 61 factors or at least the most promising ones were additionally tested for decrease in formation of progeny viruses (as in Figure 3D).\n\n2) The parallel discussion of the siRNA and AMO data was confusing and more in-depth description of the results is needed. Two of the genes (CLK1 and RAB11FIP3) that showed a significant difference in viral replication and production upon efficient AMO targeting are genes that showed the smallest reduction in viral replication upon siRNA knockdown. Without more information on the siRNAs and the efficiency of the knockdowns, it is difficult to draw conclusions about what the individual genes and splicing events might do. For example, do the CLK1 siRNAs target the exon that was skipped by AMO targeting and therefore both siRNA and AMO treatment gave the same viral phenotype? On the other hand, IQCB1 gave the greatest reduction in viral replication upon siRNA targeting but did not have any effects upon AMO targeting. What does this mean \u2013 perhaps that both isoforms are needed for viral replication? The functional consequences of the AS events could only be tested for 11 genes that showed increased exon inclusion on IAV infection. Of these 5 could be modulated (CLK1, RAB11FIP3, PPIP5K2, IQCB1, and REPIN1) \u2013 and of these only IQCB1 had an effect greater than 50% upon knockdown. While knockdown of all isoforms may not predict the effect of splice modulation, why not modulate the splicing of genes that showed the most dramatic effect upon knockdown (e.g., ERI2)? In cases where genes showed decreased exon inclusion, could ectopically expressing different isoforms affect viral replication?\n\n3) The authors assert that hnRNP K accumulates to higher levels in nuclear speckles during IAV infection by performing immunofluorescence (IFA) (Figure 6). However, differences in hnRNPK localization +/- IAV was not evident in the IFA images provided. The quantification in Figure 6D suggests there are subtle differences, but these are not easily discerned upon visual inspection of Figure 6C. The authors should consider other means to quantify the immunofluorescence, perhaps by measuring the variance in the fluorescence across the nucleus. Another important control here is to perform a similar analysis on SC35 to assess the possibility that IAV infection increases the size of the nuclear speckles (and thus all proteins in them). Are these changes specific to hnRNPK? hnRNPK is highly abundant, so how to determine if a slight increase in its nuclear speckle concentration is functionally relevant? Do small changes in its overall concentration affect splicing? Some of these issues will be difficult to address, but the interpretations of the data should consider them.\n\n4) The link between hnRNPK and splicing changes that occur during IAV infection is supported mostly by correlational data (Figure 5); direct evidence that hnRNPK activity is responsible for the IAV-induced splicing changes is lacking. A more direct link might be provided by analyzing a panel of genes that undergo similar isoform shifts during IAV infection and hnRNPK knockdown. Among such genes, does knock down of hnRNPK in IAV infected vs. uninfected cells lead to an additive effect on PSI changes or no further change (suggesting hnRNPK is the primary means by which IAV alters splicing)? Similarly, given that the \u2206K-mut IAV appears to be more sensitive to hnRNP K depletion than wt IAV (Figure 4A), perhaps splicing modulation of certain genes would reveal a stronger phenotype in \u2206K-mut infection.\n\n5) The authors did not cite or discuss several papers that are pertinent to this study that have also profiled IAV-induced host gene expression changes at multiple levels (transcription, splicing, mRNA turnover, translation). Some examples: Bercovich-Kinori et al., 2016, performed RNA-Seq and ribosome profiling in IAV-infected cells, showing a prominent host shutoff phenotype. Bauer et al., 2018, used NETseq to study host transcription during IAV infection. Gaucherand et al., 2019, directly assessed the impact of IAV infection on the accumulation of spliced host transcripts, showing that the flu PA-X protein degrades spliced transcripts more efficiently than unspliced transcripts, and this is mediated through interactions between PA-X and proteins involved in splicing including hnRNPK. Some of these studies used PR8 rather than WSN, but WSN (because of its NS1-mediated targeting of Pol2) should have an even more prominent effect on host mRNA depletion. This previous work provides an essential background for the study presented here and should be discussed.\n\n6) The authors contend that the changes in AS were not due to innate immune mechanisms because these changes were not seen with IFN treatment. The authors should consider that the innate immunity observed early in viral infection (in the case of flu 6-12 h pi) is best modeled by combined IFN treatment and dsRNA activation, not IFN alone. In future studies, it would also be interesting to test influenza virus mutants that are unable to antagonize the IFN response and see what types of splicing changes occur.\n",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "01ec9923-a299-40d5-adcc-343e4f745986",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C1",
+      "claim": "Influenza A virus (IAV) results in 290,000\u2013650,000 deaths per year worldwide",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza A virus (IAV) is a ubiquitous and significant health threat, resulting in 290,000\u2013650,000 deaths per year worldwide (WHO, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "18cf7618-3e15-4df5-b02b-78db31196437",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C2",
+      "claim": "IAV is estimated to result in 12,000\u201356,000 deaths annually in the United States",
+      "claim_type": "EXPLICIT",
+      "source": "In the United States alone, IAV is estimated to result 12,000\u201356,000 deaths annually (Centers for Disease Control and Prevention, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Centers for Disease Control and Prevention, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "20439175-9714-4ec6-866d-10c4d9ef31d6",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C3",
+      "claim": "IAV has an estimated $11.2 billion cost burden",
+      "claim_type": "EXPLICIT",
+      "source": "with an estimated $11.2 billion cost burden (Putri et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Putri et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "81090a1a-c65a-4ca3-94aa-3ac2c3c8cd23",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C4",
+      "claim": "IAV can rapidly mutate and develop resistance",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of treatment is due, in part, to the virus's ability to rapidly mutate and develop resistance (Hussain et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hussain et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "d9e406a6-40f0-44ff-b530-53b9a659b7d9",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C5",
+      "claim": "IAV infection induces RNA polymerase readthrough",
+      "claim_type": "EXPLICIT",
+      "source": "For example, IAV infection has been shown to induce a range of gene expression phenotypes such as RNA polymerase readthrough (Bauer et al., 2018; Heinz et al., 2018; Zhao et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bauer et al., 2018; Heinz et al., 2018; Zhao et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "6ba084a7-c715-43b0-abd6-0982ce8e987c",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C6",
+      "claim": "IAV infection induces translational shutoff",
+      "claim_type": "EXPLICIT",
+      "source": "translational shutoff (Bercovich-Kinori et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bercovich-Kinori et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "42e72ef1-bee2-4788-a179-90efe46cf236",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C7",
+      "claim": "IAV infection induces altered genome architecture",
+      "claim_type": "EXPLICIT",
+      "source": "altered genome architecture (Heinz et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Heinz et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "a4b97557-6bc0-4dc4-a0c9-be784af239b4",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C8",
+      "claim": "IAV infection induces targeted transcript degradation",
+      "claim_type": "EXPLICIT",
+      "source": "and targeted transcript degradation (Gaucherand et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gaucherand et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "e5db8616-4005-409b-adce-126b0cfb4d2e",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C9",
+      "claim": "IAV infection induces global changes in alternative splicing isoforms",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a recent transcriptome-wide study identified not only transcript abundance changes but also global changes in alternative splicing isoforms (Fabozzi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fabozzi et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "a0f82182-f587-4d9b-8395-212f922b845c",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C10",
+      "claim": "Host splicing changes have been observed during HSV-1 infection",
+      "claim_type": "EXPLICIT",
+      "source": "Host splicing changes have been observed during infection with DNA viruses (HSV-1 [Hu et al., 2016]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hu et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "e77d60bd-4cad-448a-845c-60d01d0997d9",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C11",
+      "claim": "Host splicing changes have been observed during HCMV infection",
+      "claim_type": "EXPLICIT",
+      "source": "HCMV [Batra et al., 2016])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Batra et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "1327aa63-0476-414d-a866-9a15b30915ff",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C12",
+      "claim": "Host splicing changes have been observed during reovirus infection",
+      "claim_type": "EXPLICIT",
+      "source": "as well as RNA viruses such as reovirus (Boudreault et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boudreault et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "a0c0e5d4-a18c-42b6-a72f-13273abf5b90",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C13",
+      "claim": "Host splicing changes have been observed during dengue virus infection",
+      "claim_type": "EXPLICIT",
+      "source": "dengue virus (Sessions et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sessions et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "cfb032e1-fb8f-40e7-bc8a-2ea16e2e79e3",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C14",
+      "claim": "Host splicing changes have been observed during zika virus infection",
+      "claim_type": "EXPLICIT",
+      "source": "and zika virus (Hu et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hu et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "796ee0f3-f8a6-45d5-8878-049c5d7bbe81",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C15",
+      "claim": "Host splicing changes have been observed during SARS-CoV-2 infection",
+      "claim_type": "EXPLICIT",
+      "source": "and recently, SARS-CoV-2 (Banerjee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Banerjee et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "860a2efd-0df1-4a64-b208-072b2ef6b64a",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C16",
+      "claim": "Splicing factors bind at multiple sites throughout nascent pre-mRNA and influence exon inclusion or exclusion",
+      "claim_type": "EXPLICIT",
+      "source": "Splicing factors bind at a myriad of sites throughout a nascent pre-mRNA, and influence the inclusion or exclusion of specific exons, and in some cases introns, by influencing the recruitment of spliceosomal components to splice sites (Fu and Ares, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fu and Ares, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "efe9d8ca-ed67-41aa-8167-1fbd0f28813e",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C17",
+      "claim": "Dengue virus NS5 alters splicing through interaction with the U5 snRNP",
+      "claim_type": "EXPLICIT",
+      "source": "For example, dengue virus NS5 alters splicing through interaction with the U5 snRNP (De Maio et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to De Maio et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "04ea21b0-3651-4f8a-8d67-eb6dbd479469",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C18",
+      "claim": "The piconaviral RdRp interacts with RNA helicase Prp8 to stall splicing",
+      "claim_type": "EXPLICIT",
+      "source": "the piconaviral RdRp interacts with RNA helicase Prp8 to stall splicing (Liu et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "67d4c65f-38db-4f71-9630-8467858fe747",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C19",
+      "claim": "SARS-CoV-2 Nsp16 has been proposed to bind U1 and U2 snRNA",
+      "claim_type": "EXPLICIT",
+      "source": "and SARS-CoV-2 Nsp16 has been proposed to bind U1 and U2 snRNA (Banerjee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Banerjee et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "00238dc9-b34c-4b19-85fe-fbb887152c95",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C20",
+      "claim": "Poliovirus influences the localization and/or expression of splicing factors",
+      "claim_type": "EXPLICIT",
+      "source": "Viruses can also influence the localization and/or expression of splicing factors, as has been observed in poliovirus (\u00c1lvarez et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to \u00c1lvarez et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "be8c504e-acf5-4904-9cb6-887693ee883b",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C21",
+      "claim": "Rotavirus influences the localization and/or expression of splicing factors",
+      "claim_type": "EXPLICIT",
+      "source": "rotavirus (Dhillon et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dhillon et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "b28872a2-4353-418a-afbd-30bca0dbb2d3",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C22",
+      "claim": "Alphavirus influences the localization and/or expression of splicing factors",
+      "claim_type": "EXPLICIT",
+      "source": "alphavirus (Barnhart et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barnhart et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "ac5b0b45-232d-494c-b222-d78d3320de8f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C23",
+      "claim": "HCV influences the localization and/or expression of splicing factors",
+      "claim_type": "EXPLICIT",
+      "source": "HCV (Shwetha et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shwetha et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "00730992-f11a-4f77-ab27-5c54d8dfb5ad",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C24",
+      "claim": "Picornavirus influences the localization and/or expression of splicing factors",
+      "claim_type": "EXPLICIT",
+      "source": "picornavirus (Florez et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Florez et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "56aa6cc3-c9e1-4579-88bb-6b527969ce95",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C25",
+      "claim": "HCMV influences the localization and/or expression of splicing factors",
+      "claim_type": "EXPLICIT",
+      "source": "HCMV (Batra et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Batra et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "5ee5fa53-3969-4c8a-b04e-1d783c5724a7",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C26",
+      "claim": "Dengue virus influences the localization and/or expression of splicing factors",
+      "claim_type": "EXPLICIT",
+      "source": "and Dengue virus (Pozzi et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pozzi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "5161f30d-aeac-4a39-8d21-ea84f0efb2b1",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C27",
+      "claim": "IAV protein NS1 inhibits splicing in vitro through interaction with the spliceosomal U6 snRNA",
+      "claim_type": "EXPLICIT",
+      "source": "While it is known that the IAV protein NS1 inhibits splicing in vitro through interaction with the spliceosomal U6 snRNA, the relevance of this interaction in cells has not been shown (Qiu et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Qiu et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "73448fa6-7728-4d32-a4fb-e329aa7f81c0",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C28",
+      "claim": "Infection of human cells with IAV induces widespread alternative splicing changes in host genes",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that infection of human cells with IAV induces widespread alternative splicing changes in host genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data presented in the manuscript showing splicing changes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "cadcfa99-9a81-402a-9885-e345154f1578",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C29",
+      "claim": "IAV-induced splicing changes are not observed upon treatment with interferon",
+      "claim_type": "EXPLICIT",
+      "source": "Similar changes in splicing are not observed upon treatment with interferon, demonstrating that this program of IAV-induced splicing is a direct consequence of viral infection rather than a secondary bystander effect of the host innate immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "03b27100-144b-4528-a05e-a81878d3f1c1",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C30",
+      "claim": "At least 30 of the 61 genes tested that harbor IAV-induced splicing events influence IAV infection",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, at least 30 of the 61 genes tested that harbor IAV-induced splicing events influence IAV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by siRNA screen data in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "1baa4898-ab95-4dda-9b88-063f417c3bfa",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C31",
+      "claim": "Directly manipulating splicing of several IAV-regulated transcripts impacts viral replication",
+      "claim_type": "EXPLICIT",
+      "source": "Directly manipulating splicing of several of these transcripts confirmed that IAV-induced changes in alternative splicing have direct consequences on viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by AMO experiments in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "6edf1ce8-ad43-4c3c-b4c9-9ad6ec8e41f1",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C32",
+      "claim": "Almost 25% of the IAV-induced splicing changes are regulated by hnRNP K",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we found that almost 25% of the IAV-induced splicing changes are also regulated by hnRNP K, a well-known splicing regulator whose subnuclear distribution we show to be altered upon IAV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data comparing IAV infection and hnRNP K knockdown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "9c8d5943-f877-4e11-9b0b-a927a18bafd7",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C33",
+      "claim": "hnRNP K promotes splicing of the IAV M segment transcript to generate the M2 protein",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we demonstrated that hnRNP K promotes splicing of the IAV M segment transcript to generate the M2 protein (Mor et al., 2016; Thompson et al., 2018; Tsai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mor et al., 2016; Thompson et al., 2018; Tsai et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "e09a97ec-fec1-44d3-addc-dc9988278496",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C34",
+      "claim": "A549 cells were infected with IAV A/WSN/33 at a multiplicity of infection (moi) of 2 to yield ~90% infection of cells",
+      "claim_type": "EXPLICIT",
+      "source": "human epithelial A549 cells were infected with IAV A/WSN/33 at a multiplicity of infection (moi) of 2, to yield ~90% infection of cells (Condit, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Condit, 2013 and experimental design",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "f98ff458-3f17-45b2-8aa8-e38a795205c4",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C35",
+      "claim": "At 6 and 12 HPI, IAV RNA accounted for >30% of mapped reads",
+      "claim_type": "EXPLICIT",
+      "source": "At 6 and 12 HPI, IAV RNA accounted for >30% of mapped reads (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "904c15a8-8ec9-4927-b787-a8dfa76771a3",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C36",
+      "claim": "An average of 60\u201370 million reads were mapped to the host genome at 6 and 12 HPI",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the large percentage of reads mapping to the viral genome, an average of 60\u201370 million reads were mapped to the host genome (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "2126c7d6-b400-423f-be82-2966402602c5",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C37",
+      "claim": "~60 million reads is the recommended depth for robust and reproducible splicing and differential expression analyses",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this depth falls within the recommended depth (~60 million reads) for robust and reproducible splicing and differential expression analyses (Mehmood et al., 2020; Shen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mehmood et al., 2020; Shen et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "3f7935d7-50dc-42d8-a006-5533f795c792",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C38",
+      "claim": "Differential expression analysis revealed 3375 changes (log2 fold >1, p<0.05) at 6 HPI",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis of host transcripts revealed 3375 changes (log2 fold >1, p<0.05) at 6 HPI",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by DESeq2 analysis of RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "40e2f8f9-d191-4606-a961-6cefa6e6c7b6",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C39",
+      "claim": "Differential expression analysis revealed 8185 changes at 12 HPI",
+      "claim_type": "EXPLICIT",
+      "source": "and 8185 changes at 12 HPI",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by DESeq2 analysis of RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "7144dda4-7901-4d97-a6f8-ed027c12aaba",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C40",
+      "claim": "2549 genes are differentially expressed at both 6 and 12 HPI",
+      "claim_type": "EXPLICIT",
+      "source": "with an overlap of 2549 changes (Figure 1c, list of differentially expressed genes found in Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "d8878f18-469c-45e1-9097-e675b5331b95",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C41",
+      "claim": "Gene ontology analysis of changes at 6 HPI showed an enrichment for genes associated with host response to virus",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology (GO) analysis of changes at 6 HPI showed an enrichment for genes associated with host response to virus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GO analysis shown in Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "9fdb3f76-613d-4992-a488-1e08547e3dd3",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C42",
+      "claim": "At 12 HPI, GO terms were enriched for categories such as DNA repair and stress",
+      "claim_type": "EXPLICIT",
+      "source": "whereas at 12 HPI, GO terms were enriched for categories such as DNA repair and stress (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO analysis shown in Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "f6cad206-1ce2-4acd-b379-0cb8f9cbb83f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C43",
+      "claim": "IAV A/WSN/33 infection induces a robust host innate immune response within 6 hr",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data show that under the conditions of our experiment, IAV A/WSN/33 infection induces a robust host innate immune response within 6 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by differential expression data and validation of innate immune markers",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "f21cc6c1-0211-42f8-b8ac-caa800b10b2f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C44",
+      "claim": "By 12 HPI, there is a further progression of infection and a corresponding stress response in the host",
+      "claim_type": "EXPLICIT",
+      "source": "By 12 HPI, we observe a further progression of infection and a corresponding stress response in the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GO analysis and differential expression data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "6a21dffa-025a-4ba1-af21-4f3c1df17460",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C45",
+      "claim": "At 6 HPI, 1162 splicing differences at 861 unique genes were identified with a threshold for changes in percent isoform expression (\u2206PSI) of greater than or equal to 10%",
+      "claim_type": "EXPLICIT",
+      "source": "At 6 HPI, we identified 1162 splicing differences at 861 unique genes with a threshold for changes in percent isoform expression (\u2206PSI) of greater than or equal to 10% (Figure 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MAJIQ analysis shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "cbc28ea1-c131-4c13-8b3d-4c4c02019390",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C46",
+      "claim": "1931 splicing changes were found at 12 HPI using a cut-off of 20% \u0394PSI",
+      "claim_type": "EXPLICIT",
+      "source": "Using an even more stringent cut-off of 20% \u0394PSI, we found 1931 splicing changes at 12 HPI",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MAJIQ analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "9d959150-a418-4649-8382-fdb67f92a9af",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C47",
+      "claim": "896 splicing changes overlap between 6 and 12 HPI",
+      "claim_type": "EXPLICIT",
+      "source": "896 of which overlapped with those splicing events observed to vary at 6 hr (Figure 2a,b; lists of all splicing changes are provided in Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MAJIQ analysis shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "6f68092b-cb11-40a6-a10a-8c80a3bb5716",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C48",
+      "claim": "Splicing changes increase during the course of infection",
+      "claim_type": "EXPLICIT",
+      "source": "when plotting the \u2206PSI values of the overlapping 896 splicing changes against each other, we see a trend in which splicing changes increase during the course of infection (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "5a9a3f5b-96e5-4ce2-902a-c3462984ad55",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C49",
+      "claim": "The trend in increased \u2206PSI over time is consistent with host splicing being regulated directly in response to viral load",
+      "claim_type": "EXPLICIT",
+      "source": "This trend in increased \u2206PSI over time is consistent with host splicing being regulated directly in response to viral load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the observed correlation between time and \u0394PSI",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "eedcaf1e-dbd4-4e7a-877a-0df9f33e34d0",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C50",
+      "claim": "Of 10 splicing events validated to change splicing during viral infection, none exhibit splicing regulation upon treatment with interferon beta",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that of 10 splicing events we validated in orthogonal RT-PCR assays to change splicing during viral infection, none exhibit splicing regulation upon treatment with interferon beta (IFN\u03b2), despite the fact that this treatment induces expression of known IFN\u03b2-target genes (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "e6799278-966f-4a39-b270-fa5ce6e10611",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C51",
+      "claim": "The majority of the changes in splicing observed upon IAV infection are a direct consequence of viral load and not a secondary effect of interferon signaling",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that the majority of the changes in splicing we observed upon IAV infection are a direct consequence of viral load and not a secondary effect of interferon signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from interferon treatment experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "3a7955b0-af38-47a7-9e2e-a531f4645f87",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C52",
+      "claim": "Only 43 of 631 genes that are alternatively spliced also exhibit changes in abundance upon viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only 43 of these genes also exhibit changes in abundance upon viral infection (Figure 2c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "3e490256-0ff5-4d66-ab06-49075e359560",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C53",
+      "claim": "Genes regulated by splicing and transcription are largely distinct",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with many other studies that have found that genes regulated by splicing and transcription are largely distinct (Gazzara et al., 2017; Ip et al., 2007; Shinde et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gazzara et al., 2017; Ip et al., 2007; Shinde et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "903337cc-dcc4-4b51-b9b1-b9f5a079ebf3",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C54",
+      "claim": "GO analysis of the 588 genes that are differentially spliced without changes in abundance finds an enrichment for genes associated with RNA processing, not immune defense",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, GO analysis of the 588 genes that are differentially spliced without changes in abundance, finds an enrichment for genes associated with RNA processing, not immune defense (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO analysis shown in Figure 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "9e471277-a29b-4743-a3a9-80e4383a26ad",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C55",
+      "claim": "IAV infection induces a host splicing program that is functionally distinct from the host transcriptional response",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, IAV infection induces a host splicing program that is functionally distinct from the host transcriptional response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from GO analysis and overlap data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "e32f989e-2efd-4330-94c2-13b29931d9e0",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C56",
+      "claim": "~25% of alternative splicing events are 'classic' splicing events falling into alternative 5\u2032 splice site, alternative 3\u2032 splice site, and simple cassette exon events",
+      "claim_type": "EXPLICIT",
+      "source": "Of the alternative splicing events, ~25% are 'classic' splicing events falling into alternative 5\u2032 splice site, alternative 3\u2032 splice site, and simple cassette exon events (211 splicing changes total).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by categorization of splicing events shown in Figure 2e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "f5e347e2-fa14-4bf9-9515-ea261fbe1aa3",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C57",
+      "claim": "Knock down of 25 of the 61 genes yielded a change of greater than 20% in the number of IAV-positive cells",
+      "claim_type": "EXPLICIT",
+      "source": "Given these parameters, we find that knock down of 25 of the 61 genes yielded a change of greater than 20% in the number of IAV-positive cells (Figure 3b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by siRNA screen data shown in Figure 3b,c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "0fdca1d4-646a-4caf-a0f8-835497bba34e",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C58",
+      "claim": "Knockdown of five of seven genes that did not alter NP expression resulted in dramatic (\u22655.5 fold) decreases of infectious viral particles",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that knockdown of five of these seven genes resulted in dramatic (\u22655.5 fold) decreases of infectious viral particles (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by plaque assay data shown in Figure 3d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "b2929425-a4bb-4d65-8c0f-325d45c9acb1",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C59",
+      "claim": "Approximately half of the alternatively spliced genes tested (30/61) influence the IAV infection cycle",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, taken together, approximately half of the alternatively spliced genes we tested (30/61) influence the IAV infection cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on combined results from siRNA screen and plaque assays",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "8b819238-0f7d-41bb-99f2-5a503e0c93d1",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C60",
+      "claim": "CLK1 and RAB11FIP3 influence viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, our screen did replicate previous studies that found CLK1 and RAB11FIP3 to influence viral infection (Bruce et al., 2010; Karlas et al., 2010; Li et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by siRNA screen data and citations to Bruce et al., 2010; Karlas et al., 2010; Li et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "2becca89-c165-44e5-b9fd-08d62af6afae",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C61",
+      "claim": "Exon inclusion for CLK1, RAB11FIP3, PPIP5K2, IQCB1, and REPIN1 could be successfully modulated by AMO's",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 11, we found that exon inclusion for five could be successfully modulated by AMO's: CLK1, RAB11FIP3, PPIP5K2, IQCB1, and REPIN1 (Figure 4a, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR data shown in Figure 4a and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "74d3cfa1-fa86-43da-be5a-6028659ee979",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C62",
+      "claim": "Forced skipping of the CLK1, RAB11FIP3, PPIP5K2, and ERI2 variable exons by AMO resulted in significant changes of at least twofold at both the titer and vRNA level",
+      "claim_type": "EXPLICIT",
+      "source": "However, remarkably, switching the splicing of ERI2, CLK1, RAB11FIP3, and PPIP5K2 by AMO resulted in significant changes of at least twofold at both the titer and vRNA level (Figure 4b,c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR and plaque assay data shown in Figure 4b,c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "cd94ef54-e798-43e3-88e6-42d131fb6e44",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C63",
+      "claim": "Forced skipping of the CLK1 variable exon is predicted to target the transcript for NMD",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, forced skipping of the CLK1 variable exon is predicted to have the same impact at siRNA treatment, as the exon-skipped product is predicted to be targeted for NMD (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from sequence analysis shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "dd82c15c-ac07-4322-8f5f-69bcf332718a",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C64",
+      "claim": "Both the exon-included and -skipped isoforms of RAB11FIP3, PPIP5K2, and ERI2 are predicted to encode active proteins",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, both the exon-included and -skipped isoforms of RAB11FIP3, PPIP5K2, and ERI2 are predicted to encode active proteins (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from sequence analysis shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "d4be1685-3f15-40b9-acfb-1e4efa94af4f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C65",
+      "claim": "A combination AMO treatment targeting CLK1, RAB11FIP3, and PPIP5K2 splicing together resulted in a larger decrease in viral titer compared to any of these single AMO treatments",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a combination AMO treatment targeting CLK1, RAB11FIP3, and PPIP5K2 splicing together, resulted in a larger decrease in viral titer compared to any of these single AMO treatments (Figure 4d; ~fourfold instead of ~twofold).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by plaque assay data shown in Figure 4d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "e52992c9-d397-4aa6-a210-4a8072265432",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C66",
+      "claim": "Direct alteration of host splicing events upon viral infection impacts viral replication, at least for a subset of genes",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that direct alteration of host splicing events upon viral infection impacts viral replication, at least for a subset of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from AMO experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "e9907d1d-b462-4b05-b55c-5e97eb81ccd4",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C67",
+      "claim": "hnRNP K is a pro-viral factor that regulates splicing of IAV M segment RNA",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the host protein hnRNP K because it was previously shown to be a pro-viral factor that regulates splicing of IAV M segment RNA (Mor et al., 2016; Thompson et al., 2018; Tsai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mor et al., 2016; Thompson et al., 2018; Tsai et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "352dbc7c-d47c-4369-97c7-00f846bd2d64",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C68",
+      "claim": "hnRNP K regulates splicing of host transcripts",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have also shown that hnRNP K regulates splicing of host transcripts (Thompson et al., 2018; Venables et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Thompson et al., 2018; Venables et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "82f42d61-61c8-478c-b156-6622b5ed8034",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C69",
+      "claim": "IAV replication is sensitive to hnRNP K expression even in the context of a mutant IAV in which hnRNP K is not required for M segment splicing regulation",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we show that while the \u2206K-mut IAV M2 splicing is no longer sensitive to hnRNP K levels, viral propagation is still attenuated upon hnRNP K knockdown (Figure 5a, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by plaque assay data shown in Figure 5a and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "9942b98f-4780-45d3-8bf1-b521155c0e9f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C70",
+      "claim": "hnRNP K is required for IAV replication independent of its role in M splicing",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that hnRNP K is required for IAV replication independent of its role in M splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from \u0394K-mut virus experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "c86657c0-368e-4c40-9abf-3d2b5604ea54",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C71",
+      "claim": "21% of the influenza-induced splicing changes are also hnRNP K-responsive",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 21% of the influenza-induced splicing changes are also hnRNP K-responsive (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "a4a4686d-803c-49c0-97f1-3e66674094a6",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C72",
+      "claim": "65% of splicing changes are regulated similarly by hnRNP K depletion and IAV infection",
+      "claim_type": "EXPLICIT",
+      "source": "We find 65% of splicing changes are regulated similarly by hnRNP K depletion and IAV infection, whereas for the remainder, hnRNP K depletion has the opposite effect of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by \u0394PSI comparison shown in Figure 5d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "787230fd-3c6c-46cd-a330-45bd79c82441",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C73",
+      "claim": "hnRNP K alters the expression of ~2000 genes",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to hnRNP K-induced regulation of splicing, we also find that hnRNP K alters the expression of ~2000 genes, some of which are also altered upon viral infection (Figure 5\u2014figure supplement 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by differential expression analysis shown in Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "48c7892a-b96d-450f-a8b5-60ee0120deeb",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C74",
+      "claim": "hnRNP K regulated genes are generally independent of hnRNP K regulated splicing events (8% of splicing events are differentially expressed)",
+      "claim_type": "EXPLICIT",
+      "source": "These hnRNP K regulated genes are generally independent of hnRNP K regulated splicing events (8% of splicing events are differentially expressed, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis shown in Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "915460e3-8e91-47fc-9e00-8a83df5d607e",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C75",
+      "claim": "Western blot analysis revealed little to no differences in hnRNP K expression or nucleocytoplasmic localization upon infection",
+      "claim_type": "EXPLICIT",
+      "source": "However, western blot analysis revealed little to no differences in hnRNP K expression or nucleocytoplasmic localization (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 6a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "784e7ac3-6d8b-46f8-abf6-29105e82c5f4",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C76",
+      "claim": "Analyses of hnRNP K phosphorylation via phos-tag SDS-PAGE showed no reproducible changes overall, although there is a minor increase in phosphorylation, particularly in the nuclear fraction",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of hnRNP K phosphorylation via phos-tag SDS-PAGE also showed no reproducible changes overall, although we do note a minor increase in phosphorylation, particularly in the nuclear fraction (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phos-tag western blot data shown in Figure 6a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "53e156ae-5480-40b9-af2a-b0f0bde818de",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C77",
+      "claim": "Total hnRNP K level and phosphorylation do not significantly change during IAV infection",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in agreement with previous mass spectrometry-based studies showing that total hnRNP K level and phosphorylation do not significantly change during IAV infection (Coombs et al., 2010; Dapat et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Coombs et al., 2010; Dapat et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "3b4e4278-e551-4c2c-808b-d39e75704528",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C78",
+      "claim": "hnRNP K levels at nuclear speckles increase modestly but significantly during IAV infection",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed that hnRNP K levels at nuclear speckles increase modestly but significantly during IAV infection (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence quantification shown in Figure 6d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "b5faa2f3-8864-44cb-ae6d-a0ce12ec408d",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C79",
+      "claim": "There is an overall increase in speckle size upon infection",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in localization of hnRNP K to speckles was mirrored by an overall increase in speckle size upon infection (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence quantification shown in Figure 6e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "eaa06a8e-2a86-44e9-b7ea-f1b411e59dec",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C80",
+      "claim": "Upon depletion of hnRNP K from cells, there is no further change in the splicing of hnRNP K- and IAV-dependent events upon IAV infection",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the mechanism, we do find that upon depletion of hnRNP K from cells, there is no further change in the splicing of hnRNP K- and IAV-dependent events upon IAV infection (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR data shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "dad6d130-5f35-49b6-baeb-7b6eb48ce23d",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C81",
+      "claim": "Genes that exhibit differential expression are enriched for genes involved in immune response and viral defense",
+      "claim_type": "EXPLICIT",
+      "source": "Genes that exhibit differential expression are enriched for genes involved in immune response and viral defense, consistent with previous studies (Fabozzi et al., 2018; Ioannidis et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GO analysis and citations to Fabozzi et al., 2018; Ioannidis et al., 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "e2e50589-4c02-41a4-9882-9a67f2032d4e",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C82",
+      "claim": "There is very little overlap between the genes that are differentially spliced versus those that show differential expression",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observe very little overlap between the genes that are differentially spliced versus those that show differential expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by overlap analysis in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "02854e28-3a4b-426e-97a4-be43236f9fca",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C83",
+      "claim": "The host splicing response to virus is functionally distinct from the transcriptional response",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the host splicing response to virus is functionally distinct from the transcriptional response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from GO analysis and overlap data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "bb83f2ea-20f2-430a-9e7a-aff616573739",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C84",
+      "claim": "The alternatively spliced transcripts described are not products of defective or transgenic splicing",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the alternatively spliced transcripts we describe here are not products of defective or transgenic splicing, and are likely not induced by the same transcription defects described in other studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from comparison with other studies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "d8fee297-951c-44af-acde-68465afb3e9a",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C85",
+      "claim": "The alternatively spliced genes do not overlap with PA-X-targeted genes",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the IAV endonuclease PA-X was shown to preferentially target spliced transcripts (Gaucherand et al., 2019). However, the alternatively spliced genes we define here do not overlap with PA-X-targeted genes (Gaucherand et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison with data from Gaucherand et al., 2019",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "25c38139-513d-4745-9016-b3d9dd850df3",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C86",
+      "claim": "A portion of the functional splicing events described are independent of previously described mechanisms",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while splicing appears to contribute to many facets of IAV-induced transcriptome changes, we propose that a portion of the functional splicing events described here are independent of previously described mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from comparison with other studies",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "f4a6afcc-4fb5-4711-acd0-ab8b8b798945",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C87",
+      "claim": "Half of the splicing-regulated genes tested (30/61) impact IAV infection or propagation",
+      "claim_type": "EXPLICIT",
+      "source": "Although the set of genes that we identify to undergo alternative splicing upon IAV infection are not enriched for known regulators of viral replication, we demonstrate that half of the splicing-regulated genes we tested (30/61) do impact IAV infection or propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by siRNA screen and plaque assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "88d79052-a2a5-4659-891e-42cdd8893dfd",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C88",
+      "claim": "IAV infection induces inclusion of alternative CLK1 exon 4, which results in expression of the canonical full-length isoform of the protein",
+      "claim_type": "EXPLICIT",
+      "source": "For example, IAV infection induces inclusion of alternative CLK1 exon 4, which results in expression of the canonical full-length isoform of the protein (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR data shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "2a1a3e8f-6136-4b38-9c99-1b137936243b",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C89",
+      "claim": "Skipping of CLK1 exon 4 is observed in uninfected cells and introduces an early stop codon that truncates the kinase domain of protein",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, skipping of exon 4 is observed in uninfected cells and introduces an early stop codon that truncates the kinase domain of protein (Duncan et al., 1997; Uzor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Duncan et al., 1997; Uzor et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "8d90603f-3b28-4e78-b205-81eec321ecd6",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C90",
+      "claim": "CLK1 is required for efficient IAV replication",
+      "claim_type": "EXPLICIT",
+      "source": "Given that previous studies have established CLK1 to be required for efficient IAV replication (Artarini et al., 2019; Karlas et al., 2010; Zu et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Artarini et al., 2019; Karlas et al., 2010; Zu et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "b4b0984b-4502-46cf-a608-9a67c41a305f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C91",
+      "claim": "IAV infection promotes CLK1 exon inclusion to increase production of full-length functional CLK1 kinase that promotes viral growth",
+      "claim_type": "EXPLICIT",
+      "source": "our data is consistent with a model in which IAV infection promotes exon inclusion to increase production of full-length functional CLK1 kinase that, in turn, promotes viral growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from AMO and siRNA experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "e8cf3924-06e5-4141-94e3-ba6ee8d92ee3",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C92",
+      "claim": "IAV induces the inclusion of a non-canonical in-frame alternative exon in RAB11FIP3",
+      "claim_type": "EXPLICIT",
+      "source": "For RAB11FIP3, IAV induces the inclusion of a non-canonical in-frame alternative exon (Figure 4a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR data shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "793d6aa9-a3c2-427f-b585-069e96ee7b37",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C93",
+      "claim": "The RAB11FIP3 variable exon lies upstream of the defined RAB11-binding domain",
+      "claim_type": "EXPLICIT",
+      "source": "The function of the additional protein sequence remains unclear, as it lies upstream of the defined RAB11-binding domain (Shiba et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shiba et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "c20289ae-6915-4a89-819d-1c22ec8ba5a8",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C94",
+      "claim": "The RAB11FIP3 variable exon does not contain known phosphorylation sites",
+      "claim_type": "EXPLICIT",
+      "source": "and does not contain known phosphorylation sites (Collins et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Collins et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "9f7f56d6-6c68-48ad-ab4a-30a0ea7d7f14",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C95",
+      "claim": "The non-canonical RAB11FIP3 isoform appears to promote IAV infection",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, this non-canonical isoform appears to promote IAV infection, as blocking the variable exon up-regulates the canonical isoform and limits IAV replication in multi-cycle infections (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by AMO experiments shown in Figure 4b",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "b5d6d702-b4a5-4d24-aab2-123e3a35428d",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C96",
+      "claim": "RAB11FIP3 may compete with IAV vRNPs for RAB11 on endosomes in the particle assembly pathway",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a previously established model suggests that RAB11FIP3 may compete with IAV vRNPs for RAB11 on endosomes in the particle assembly pathway (Vale-Costa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vale-Costa et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "189b5798-825a-4628-a6da-a6d2af445adc",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C97",
+      "claim": "PPIP5K2 exon inclusion is increased upon viral infection, producing increased levels of the canonical full-length isoform of the RNA",
+      "claim_type": "EXPLICIT",
+      "source": "PPIP5K2 exon inclusion is also increased upon viral infection, producing increased levels of the canonical full-length isoform of the RNA (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR data shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "c2ef8560-fdda-4076-8616-705c2ea2ac4f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C98",
+      "claim": "Forced skipping of the PPIP5K2 variable exon results in decreases in viral titers and vRNA",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, forced skipping of this exon results in decreases in viral titers and vRNA (Figure 4a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by AMO experiments shown in Figure 4a-c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "50639001-0504-4684-96de-92bec060fd6f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C99",
+      "claim": "PPIP5K2 has been previously thought to limit influenza A replication",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PPIP5K2 has been previously thought to limit to influenza A replication (Pulloor et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pulloor et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "4b53fc91-a44f-4398-95c8-1acf362a72c5",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C100",
+      "claim": "Catalytic activity of PPIP5K2 is required for efficient IFN\u03b2 production",
+      "claim_type": "EXPLICIT",
+      "source": "as it was shown that catalytic activity of PPIP5K2 is required for efficient IFN\u03b2 production",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pulloor et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "969cdaf2-224a-4566-b310-d5cd98d17aae",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C101",
+      "claim": "Knockdown of PPIP5K2 resulted in viral load increases",
+      "claim_type": "EXPLICIT",
+      "source": "and in turn, that knockdown of PPIP5K2 resulted in viral load increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pulloor et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "af571ffc-0ad1-4e3c-88e2-b63f49c4d810",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C102",
+      "claim": "The ERI2 gene encodes a poorly characterized exonuclease that is a member of a family of non-specific 3\u2032 to 5\u2032 exonucleases that target double-stranded RNA or DNA",
+      "claim_type": "EXPLICIT",
+      "source": "The ERI2 gene encodes a poorly characterized exonuclease that is a member of a family of non-specific 3\u2032 to 5\u2032 exonucleases that target double-stranded RNA or DNA (Dominski et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dominski et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "972d8e24-35ce-4dc0-ac7e-8b689f6bd9c8",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C103",
+      "claim": "Use of an alternative 3\u2032 splice site in the terminal exon of ERI2 results in a swap between two unique C-termini",
+      "claim_type": "EXPLICIT",
+      "source": "Use of an alternative 3\u2032 splice site in the terminal exon results in a swap between two unique C-termini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from sequence analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "d1cb73e1-5bfe-49ef-af7f-dd608671e398",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C104",
+      "claim": "The distal 3\u2032 splice site of ERI2, which is favored upon IAV infection, results in a 35 amino acid terminus",
+      "claim_type": "EXPLICIT",
+      "source": "The distal 3\u2032 splice site, which is favored upon IAV infection, results in a 35 amino acid terminus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from sequence analysis and RT-PCR data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "a9a3690d-0b21-415d-a988-3c1e9e4b563c",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C105",
+      "claim": "Use of the proximal 3\u2032 splice site in ERI2 adds an additional 392 amino acids",
+      "claim_type": "EXPLICIT",
+      "source": "while use of the proximal 3\u2032 splice site adds an additional 392 amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from sequence analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "afcd4a83-610d-4c39-bed9-fff5673e6852",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C106",
+      "claim": "Both isoforms of ERI2 contain the exonuclease domain",
+      "claim_type": "EXPLICIT",
+      "source": "Both isoforms contain the exonuclease domain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from sequence analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "ca739f71-c93b-418d-9ed9-8f7d86f99fd8",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C107",
+      "claim": "The longer form of ERI2 also contains a putative nucleic-acid-binding zinc finger",
+      "claim_type": "EXPLICIT",
+      "source": "however the longer form also contains a putative nucleic-acid-binding zinc finger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from sequence analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "c20f8201-918f-43ad-99ea-19acdd816f35",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C108",
+      "claim": "ERI2 was identified in a broad siRNA screen as required for efficient HIV infection",
+      "claim_type": "EXPLICIT",
+      "source": "While the functional role of this protein is unknown, we do note that it was identified in a broad siRNA screen as required for efficient HIV infection (Brass et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brass et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "0a4f5bcd-a835-4246-87e3-d9e68a3c51a6",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C109",
+      "claim": "A pro-viral host factor, hnRNP K, regulates a subset of the splicing events that change in response to IAV infection, including CLK1, RAB11FIP3, and PPIP5K2",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we show a previously established pro-viral host factor, hnRNP K, regulates a subset of the splicing events that change in response to IAV infection, including CLK1, RAB11FIP3, and PPIP5K2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq and RT-PCR data comparing IAV infection and hnRNP K knockdown",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "8a22e571-a9a2-478b-a4c5-684648abe10f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C110",
+      "claim": "hnRNP K undergoes increased sequestration into nuclear speckles upon viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, hnRNP K undergoes increased sequestration into nuclear speckles upon viral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "dc1a19d4-3a8b-4803-8bb1-1934f5473776",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C111",
+      "claim": "The redistribution of hnRNP K upon infection may alter the pool of free hnRNP K available to bind to and regulate host genes that are typically spliced outside of speckles",
+      "claim_type": "EXPLICIT",
+      "source": "it is reasonable that the redistribution of hnRNP K upon infection may alter the pool of free hnRNP K available to bind to and regulate host genes that are typically spliced outside of speckles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about the mechanism",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "0fc9e88a-f2d6-45a4-9cc6-6b1566661f26",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C112",
+      "claim": "hnRNP K was previously established to be important for IAV M segment splicing regulation",
+      "claim_type": "EXPLICIT",
+      "source": "Further consistent with a functional role of hnRNP K in regulating important pro-viral host splicing events, while hnRNP K was previously established to be important for IAV M segment splicing regulation (Mor et al., 2016; Thompson et al., 2018; Tsai et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mor et al., 2016; Thompson et al., 2018; Tsai et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "d361d2d7-0a6f-4379-8f51-eafcb1649b0c",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C113",
+      "claim": "hnRNP K may be important for additional viral processes such as regulating transcription or translation of viral transcripts",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible, however, that hnRNP K is also important for additional viral processes such as regulating transcription or translation of viral transcripts, as hnRNP K has been implicated to regulate many facets of RNA processing other than splicing (Bomsztyk et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation and citation to Bomsztyk et al., 2004",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "30a6ca74-2af1-4a16-8628-8537fbf9d2c0",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C114",
+      "claim": "hnRNP K regulation of host transcript splicing is an important process during IAV infection",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, given that hnRNP K levels regulate 21% of detected IAV-induced splicing changes (Figure 5c), many of which encode for proteins that influence viral replication (Figure 3c), we contend that hnRNP K regulation of host transcript splicing is an important process during IAV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from RNA-seq and functional screen data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "cff17019-c05b-4731-bab0-12b4d5fe11f2",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C115",
+      "claim": "RT-PCR analysis of a panel of IAV-sensitive splicing events in the context of IFN\u03b2 treatment identified no significant splicing changes",
+      "claim_type": "EXPLICIT",
+      "source": "However, RT-PCR analysis of a panel of IAV-sensitive splicing events in the context of IFN\u03b2 treatment identified no significant splicing changes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RT-PCR data in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "93646205-bd4e-4abe-8f68-b62fb03d989e",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "claim_id": "C116",
+      "claim": "The manuscript demonstrates a feedback loop between viral-induced regulation of splicing of host genes and subsequent viral infection",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, we demonstrate here a feedback loop between viral-induced regulation of splicing of host genes and subsequent viral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the combined experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6907f0b6-b025-4118-adb1-1e83156f3ac3",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IAV represents a significant global health burden with 290,000\u2013650,000 deaths worldwide annually, 12,000\u201356,000 deaths in the US, an $11.2 billion cost burden, and the virus can rapidly mutate and develop resistance to treatments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are all supported by appropriate citations to authoritative sources (WHO, CDC, peer-reviewed literature). These are well-established epidemiological and virological facts that provide context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "49f4de98-c854-4565-96c4-08c32b1c620f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IAV infection induces multiple gene expression phenotypes including RNA polymerase readthrough, translational shutoff, altered genome architecture, targeted transcript degradation, and global changes in alternative splicing isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 are supported by citations to recent peer-reviewed studies. These establish the broader context of IAV-induced transcriptomic changes and justify the focus on alternative splicing in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "711c4f59-5f29-41f2-a626-01e03d39ccb7",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Host splicing changes have been observed during infection with multiple DNA viruses (HSV-1, HCMV) and RNA viruses (reovirus, dengue, zika, SARS-CoV-2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 are supported by appropriate citations establishing that virus-induced host splicing changes are a general phenomenon across multiple viral families, providing important context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "a9e70e4c-5aae-422f-af72-429049441426",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Viruses can alter host splicing through multiple mechanisms including direct interaction with spliceosomal components (dengue NS5 with U5 snRNP, picornavirus RdRp with Prp8, SARS-CoV-2 Nsp16 with U1/U2 snRNA, IAV NS1 with U6 snRNA) and by influencing localization/expression of splicing factors (observed in poliovirus, rotavirus, alphavirus, HCV, picornavirus, HCMV, dengue).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C27 are supported by appropriate citations to prior literature. These establish known mechanisms by which viruses can alter splicing, providing important mechanistic context. The caveat about NS1's in vitro activity not being validated in cells (C27) is appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "90d05486-110f-41c7-b1ae-87bdac5abf1c",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IAV A/WSN/33 infection of A549 cells at moi=2 yields ~90% infection with >30% viral reads at 6 and 12 HPI, while maintaining 60-70 million host reads (sufficient for robust analysis). Differential expression analysis reveals 3375 changes at 6 HPI and 8185 at 12 HPI (2549 overlap), with GO enrichment for viral response at 6 HPI and DNA repair/stress at 12 HPI, indicating robust innate immune response by 6 hr and progression to stress response by 12 hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C44 are well-supported by the RNA-seq data presented in Figure 1 and supplementary figures. The sequencing depth is appropriate per cited guidelines (C37), the differential expression analysis uses standard methods (DESeq2), and the GO analysis results are consistent with expected viral infection responses. The conclusions about immune response timing are reasonable inferences from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "dfba6ccb-f247-45a9-81c4-128048f2b103",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "IAV infection induces widespread alternative splicing changes: 1162 events (861 genes) at 6 HPI (\u0394PSI\u226510%) and 1931 events at 12 HPI (\u0394PSI\u226520%), with 896 overlapping events that increase in magnitude over time, consistent with direct viral load-dependent regulation. These splicing changes are not induced by interferon treatment, indicating they are direct consequences of viral infection rather than secondary effects of innate immune signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 are supported by MAJIQ analysis (Figure 2) and validated by RT-PCR (Figure 2\u2014figure supplement 1). The interferon control experiment (C50) is critical and well-executed, showing that 10 validated splicing events are not induced by IFN\u03b2 despite induction of IFN-target genes. The inference that splicing changes are directly virus-induced (C51) is reasonable given this control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "168d03b8-b9b0-4762-96dd-6b616a128284",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Only 43 of 631 alternatively spliced genes also show changes in abundance, indicating that splicing and transcriptional regulation are largely distinct. GO analysis of the 588 exclusively spliced genes shows enrichment for RNA processing rather than immune defense, demonstrating that IAV-induced host splicing is functionally distinct from the transcriptional response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 are supported by overlap analysis (Figure 2c) and GO analysis (Figure 2d). The minimal overlap between splicing and expression changes is consistent with cited literature (C53). The distinct GO enrichments for splicing (RNA processing) vs. expression (immune response) support the conclusion of functional distinction (C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "31914b27-2ee5-4d23-84bf-6f63792c79c6",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Approximately 25% of alternative splicing events are 'classic' events (alternative 5' splice site, alternative 3' splice site, simple cassette exons), totaling 211 splicing changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by categorization shown in Figure 2e. This classification is important for focusing subsequent functional studies on more tractable splicing events.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "def5a051-f701-4184-acf5-21519c6c24fe",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "An siRNA screen of 61 alternatively spliced genes found that knockdown of 25 genes altered IAV-positive cells by >20%, and 5 of 7 genes that didn't alter NP expression still reduced viral titers \u22655.5-fold. In total, approximately half (30/61) of alternatively spliced genes influence IAV infection, including previously identified factors CLK1 and RAB11FIP3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 are supported by the siRNA screen data (Figure 3). The screen design is appropriate with duplicate siRNAs and biological replicates. The validation of known factors (CLK1, RAB11FIP3) provides confidence in the approach. The distinction between effects on infection vs. viral titer (C58) is important and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "30025850-4e66-44ef-979a-86be9e288bc6",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Antisense morpholino oligonucleotides (AMOs) successfully modulated splicing of CLK1, RAB11FIP3, PPIP5K2, IQCB1, REPIN1, CREB1, and ERI2. Forced skipping of CLK1, RAB11FIP3, PPIP5K2, and ERI2 variable exons resulted in \u22652-fold changes in viral titer and vRNA. Combination AMO treatment targeting CLK1, RAB11FIP3, and PPIP5K2 produced ~4-fold decrease in titer, demonstrating that direct alteration of IAV-induced host splicing impacts viral replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 are supported by RT-PCR validation of AMO effects (Figure 4a, supplement) and functional assays (Figure 4b-d). The AMO approach specifically tests the functional importance of splicing changes rather than gene expression. The additive effect of combination treatment (C65) is particularly compelling. The predictions about NMD targeting (C63) and active protein isoforms (C64) are reasonable inferences from sequence analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "8b950cab-9db6-4f11-8475-bf92b455e144",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "hnRNP K, a pro-viral factor that regulates IAV M segment splicing and host transcript splicing, is required for IAV replication independent of its M splicing role (shown using \u0394K-mut virus). hnRNP K regulates 21% of IAV-induced splicing changes, with 65% regulated similarly by hnRNP K depletion and IAV infection, while 35% show opposite regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 are well-supported. The use of \u0394K-mut virus (C69-C70) is a critical control showing hnRNP K has M-independent functions. The RNA-seq comparison between IAV infection and hnRNP K knockdown (Figure 5) demonstrates substantial overlap (21%, C71). The bidirectional regulation (C72) suggests complex mechanisms and is appropriately documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "4ba2fa61-5213-43cd-b5c1-6368415ef16d",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "hnRNP K alters expression of ~2000 genes, some overlapping with IAV-induced changes, but these are generally independent of hnRNP K-regulated splicing events (only 8% overlap).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are supported by differential expression analysis (Figure 5\u2014figure supplement 2). The minimal overlap between hnRNP K-regulated splicing and expression changes is appropriately noted and justifies the focus on splicing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "dda0c7cd-fde0-414f-9b93-a850f9c2c0b9",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Western blot analysis shows little change in hnRNP K expression or nucleocytoplasmic localization upon infection, and phos-tag analysis shows no reproducible changes in overall phosphorylation (though minor increase in nuclear fraction). However, immunofluorescence reveals that hnRNP K levels at nuclear speckles increase modestly but significantly during IAV infection, mirrored by increased speckle size. Upon hnRNP K depletion, there is no further splicing change upon IAV infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C80 are supported by western blot (Figure 6a), immunofluorescence microscopy and quantification (Figure 6b-e), and RT-PCR (Figure 6\u2014figure supplement 1). The lack of gross changes in hnRNP K levels/localization (C75-C77) is consistent with prior mass spec studies. The increased speckle localization (C78-C79) is quantitatively demonstrated with appropriate statistics. The epistasis experiment (C80) supports the model, though the caveat about indirect effects is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "28344016-c9a4-4ffb-9168-e164aa47a26e",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Differentially expressed genes are enriched for immune response and viral defense (consistent with prior studies), while there is minimal overlap with differentially spliced genes, suggesting the host splicing response is functionally distinct from the transcriptional response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 reiterate findings from the earlier result about distinct splicing and expression programs. The consistency with prior studies (C81) and the inference about functional distinction (C83) are well-supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "247ac186-cf7c-45f5-a1c1-1a7cf9ec5b51",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The alternatively spliced transcripts are not products of defective or transgenic splicing and do not overlap with PA-X-targeted genes, suggesting that a portion of the functional splicing events are independent of previously described mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 are reasonable inferences based on comparison with prior studies. The lack of overlap with PA-X targets (C85) is explicitly stated. The conclusion that some events are independent of known mechanisms (C86) is appropriately cautious ('a portion') and labeled as speculation in the evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "1ea23a10-beb4-45f1-9852-f5b61551c3d1",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Half of the splicing-regulated genes tested (30/61) impact IAV infection. For CLK1, IAV infection induces inclusion of exon 4 producing full-length protein, while skipping (observed in uninfected cells) truncates the kinase domain. Given that CLK1 is required for efficient IAV replication, the data support a model where IAV promotes exon inclusion to increase functional CLK1 kinase that promotes viral growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 are supported by the siRNA screen, RT-PCR data (Figure 4a), and AMO experiments. The model for CLK1 (C91) is a reasonable inference given that both AMO and siRNA reduce active protein and both reduce viral replication, and prior studies establish CLK1 as pro-viral (C90).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "d8177d6d-72b2-4359-8274-119315c3b037",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "IAV induces inclusion of a non-canonical in-frame alternative exon in RAB11FIP3 upstream of the RAB11-binding domain that doesn't contain known phosphorylation sites. This non-canonical isoform appears to promote IAV infection, as blocking it limits replication. A prior model suggests RAB11FIP3 may compete with vRNPs for RAB11 in particle assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C96 are supported by RT-PCR (Figure 4a) and AMO experiments (Figure 4b). The functional characterization is limited (C93-C94) but appropriately noted. The inference that the non-canonical isoform is pro-viral (C95) is supported by the AMO data. The connection to the prior model (C96) is speculative but appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "db4b8a61-219a-4970-87a4-9b867c24cfa3",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "PPIP5K2 exon inclusion increases upon infection, producing the canonical full-length isoform. Forced skipping decreases viral titers and vRNA. This contrasts with prior work suggesting PPIP5K2 limits IAV replication through its role in IFN\u03b2 production, where knockdown increased viral load.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C101 are supported by RT-PCR (Figure 4a) and AMO experiments (Figure 4a-c). The apparent contradiction with prior work (C99-C101) is appropriately noted and may reflect isoform-specific functions or differences in experimental systems. This warrants further investigation but doesn't invalidate the current findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "e2115bd3-9ac5-4070-83a8-19053213b43f",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "ERI2 encodes a poorly characterized 3' to 5' exonuclease. Alternative 3' splice site usage results in C-terminal swaps: the distal site (favored by IAV) produces a 35 aa terminus, while the proximal site adds 392 aa. Both isoforms contain the exonuclease domain, but the longer form also has a putative nucleic-acid-binding zinc finger. ERI2 was previously identified as required for HIV infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C108 are supported by sequence analysis (inferences C103-C107) and citation to prior work (C102, C108). The structural predictions are reasonable based on domain analysis. The connection to HIV (C108) provides interesting context for potential pan-viral functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "1621f370-c2e7-4b80-b574-0d1ea8c33d6a",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "hnRNP K regulates a subset of IAV-induced splicing changes including CLK1, RAB11FIP3, and PPIP5K2. hnRNP K undergoes increased sequestration into nuclear speckles upon infection, which may alter the pool of free hnRNP K available to regulate host genes typically spliced outside speckles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C110 are supported by RNA-seq overlap analysis and immunofluorescence data (Figure 6). The mechanistic speculation (C111) is reasonable given the speckle localization data, though it remains to be directly tested. The speculation is appropriately labeled in the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "cc2352b3-342e-4721-b7fe-9448db065d1c",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "While hnRNP K was previously established as important for IAV M segment splicing, it may also regulate other viral processes like transcription or translation. Nonetheless, given that hnRNP K regulates 21% of IAV-induced splicing changes, many encoding proteins that influence replication, hnRNP K regulation of host transcript splicing is an important process during IAV infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C114 appropriately acknowledge alternative explanations (C113) while making a reasonable conclusion based on the data (C114). The 21% overlap and functional importance of affected genes (from the siRNA screen) support the conclusion, though additional mechanisms cannot be ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "b9ef6ef7-dca8-4707-a29f-d04dd944a82c",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "RT-PCR analysis of IAV-sensitive splicing events in the context of IFN\u03b2 treatment identified no significant splicing changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C115 is supported by RT-PCR data (Figure 2\u2014figure supplement 1). This is a critical control demonstrating that the splicing changes are not secondary to interferon signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "c8a67736-b8c2-4f34-a6cc-c5a1ccb32bc0",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The manuscript demonstrates a feedback loop between viral-induced regulation of splicing of host genes and subsequent viral infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C116 is a reasonable summary inference from the combined results: IAV induces splicing changes (RNA-seq), these changes affect genes important for infection (siRNA screen), and directly manipulating splicing affects viral replication (AMO experiments). The term 'feedback loop' is appropriate as the virus induces changes that then promote its own replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    },
+    {
+      "id": "21cd5a60-20a9-4718-bcfc-1c2824a709fb",
+      "content_id": "6e4d4d0b-58ed-4db1-a954-5f97e529bfb8",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "IAV infection induces widespread alternative splicing changes in host genes that are not induced by interferon treatment. At least 30 of 61 tested genes influence IAV infection, and directly manipulating splicing of several transcripts impacts viral replication. Approximately 25% of IAV-induced splicing changes are regulated by hnRNP K, which promotes IAV M segment splicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 represent the core findings stated in the abstract/introduction. All are supported by the detailed experimental results described in other result groups. These claims accurately summarize the major findings of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:53:26.273228Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "01ec9923-a299-40d5-adcc-343e4f745986",
+      "result_id": "6907f0b6-b025-4118-adb1-1e83156f3ac3"
+    },
+    {
+      "claim_id": "18cf7618-3e15-4df5-b02b-78db31196437",
+      "result_id": "6907f0b6-b025-4118-adb1-1e83156f3ac3"
+    },
+    {
+      "claim_id": "20439175-9714-4ec6-866d-10c4d9ef31d6",
+      "result_id": "6907f0b6-b025-4118-adb1-1e83156f3ac3"
+    },
+    {
+      "claim_id": "81090a1a-c65a-4ca3-94aa-3ac2c3c8cd23",
+      "result_id": "6907f0b6-b025-4118-adb1-1e83156f3ac3"
+    },
+    {
+      "claim_id": "d9e406a6-40f0-44ff-b530-53b9a659b7d9",
+      "result_id": "49f4de98-c854-4565-96c4-08c32b1c620f"
+    },
+    {
+      "claim_id": "6ba084a7-c715-43b0-abd6-0982ce8e987c",
+      "result_id": "49f4de98-c854-4565-96c4-08c32b1c620f"
+    },
+    {
+      "claim_id": "42e72ef1-bee2-4788-a179-90efe46cf236",
+      "result_id": "49f4de98-c854-4565-96c4-08c32b1c620f"
+    },
+    {
+      "claim_id": "a4b97557-6bc0-4dc4-a0c9-be784af239b4",
+      "result_id": "49f4de98-c854-4565-96c4-08c32b1c620f"
+    },
+    {
+      "claim_id": "e5db8616-4005-409b-adce-126b0cfb4d2e",
+      "result_id": "49f4de98-c854-4565-96c4-08c32b1c620f"
+    },
+    {
+      "claim_id": "a0f82182-f587-4d9b-8395-212f922b845c",
+      "result_id": "711c4f59-5f29-41f2-a626-01e03d39ccb7"
+    },
+    {
+      "claim_id": "e77d60bd-4cad-448a-845c-60d01d0997d9",
+      "result_id": "711c4f59-5f29-41f2-a626-01e03d39ccb7"
+    },
+    {
+      "claim_id": "1327aa63-0476-414d-a866-9a15b30915ff",
+      "result_id": "711c4f59-5f29-41f2-a626-01e03d39ccb7"
+    },
+    {
+      "claim_id": "a0c0e5d4-a18c-42b6-a72f-13273abf5b90",
+      "result_id": "711c4f59-5f29-41f2-a626-01e03d39ccb7"
+    },
+    {
+      "claim_id": "cfb032e1-fb8f-40e7-bc8a-2ea16e2e79e3",
+      "result_id": "711c4f59-5f29-41f2-a626-01e03d39ccb7"
+    },
+    {
+      "claim_id": "796ee0f3-f8a6-45d5-8878-049c5d7bbe81",
+      "result_id": "711c4f59-5f29-41f2-a626-01e03d39ccb7"
+    },
+    {
+      "claim_id": "860a2efd-0df1-4a64-b208-072b2ef6b64a",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "efe9d8ca-ed67-41aa-8167-1fbd0f28813e",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "04ea21b0-3651-4f8a-8d67-eb6dbd479469",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "67d4c65f-38db-4f71-9630-8467858fe747",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "00238dc9-b34c-4b19-85fe-fbb887152c95",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "be8c504e-acf5-4904-9cb6-887693ee883b",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "b28872a2-4353-418a-afbd-30bca0dbb2d3",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "ac5b0b45-232d-494c-b222-d78d3320de8f",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "00730992-f11a-4f77-ab27-5c54d8dfb5ad",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "56aa6cc3-c9e1-4579-88bb-6b527969ce95",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "5ee5fa53-3969-4c8a-b04e-1d783c5724a7",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "5161f30d-aeac-4a39-8d21-ea84f0efb2b1",
+      "result_id": "a9e70e4c-5aae-422f-af72-429049441426"
+    },
+    {
+      "claim_id": "e09a97ec-fec1-44d3-addc-dc9988278496",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "f98ff458-3f17-45b2-8aa8-e38a795205c4",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "904c15a8-8ec9-4927-b787-a8dfa76771a3",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "2126c7d6-b400-423f-be82-2966402602c5",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "3f7935d7-50dc-42d8-a006-5533f795c792",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "40e2f8f9-d191-4606-a961-6cefa6e6c7b6",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "7144dda4-7901-4d97-a6f8-ed027c12aaba",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "d8878f18-469c-45e1-9097-e675b5331b95",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "9fdb3f76-613d-4992-a488-1e08547e3dd3",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "f6cad206-1ce2-4acd-b379-0cb8f9cbb83f",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "f21cc6c1-0211-42f8-b8ac-caa800b10b2f",
+      "result_id": "90d05486-110f-41c7-b1ae-87bdac5abf1c"
+    },
+    {
+      "claim_id": "6a21dffa-025a-4ba1-af21-4f3c1df17460",
+      "result_id": "dfba6ccb-f247-45a9-81c4-128048f2b103"
+    },
+    {
+      "claim_id": "cbc28ea1-c131-4c13-8b3d-4c4c02019390",
+      "result_id": "dfba6ccb-f247-45a9-81c4-128048f2b103"
+    },
+    {
+      "claim_id": "9d959150-a418-4649-8382-fdb67f92a9af",
+      "result_id": "dfba6ccb-f247-45a9-81c4-128048f2b103"
+    },
+    {
+      "claim_id": "6f68092b-cb11-40a6-a10a-8c80a3bb5716",
+      "result_id": "dfba6ccb-f247-45a9-81c4-128048f2b103"
+    },
+    {
+      "claim_id": "5a9a3f5b-96e5-4ce2-902a-c3462984ad55",
+      "result_id": "dfba6ccb-f247-45a9-81c4-128048f2b103"
+    },
+    {
+      "claim_id": "eedcaf1e-dbd4-4e7a-877a-0df9f33e34d0",
+      "result_id": "dfba6ccb-f247-45a9-81c4-128048f2b103"
+    },
+    {
+      "claim_id": "e6799278-966f-4a39-b270-fa5ce6e10611",
+      "result_id": "dfba6ccb-f247-45a9-81c4-128048f2b103"
+    },
+    {
+      "claim_id": "3a7955b0-af38-47a7-9e2e-a531f4645f87",
+      "result_id": "168d03b8-b9b0-4762-96dd-6b616a128284"
+    },
+    {
+      "claim_id": "3e490256-0ff5-4d66-ab06-49075e359560",
+      "result_id": "168d03b8-b9b0-4762-96dd-6b616a128284"
+    },
+    {
+      "claim_id": "903337cc-dcc4-4b51-b9b1-b9f5a079ebf3",
+      "result_id": "168d03b8-b9b0-4762-96dd-6b616a128284"
+    },
+    {
+      "claim_id": "9e471277-a29b-4743-a3a9-80e4383a26ad",
+      "result_id": "168d03b8-b9b0-4762-96dd-6b616a128284"
+    },
+    {
+      "claim_id": "e32f989e-2efd-4330-94c2-13b29931d9e0",
+      "result_id": "31914b27-2ee5-4d23-84bf-6f63792c79c6"
+    },
+    {
+      "claim_id": "f5e347e2-fa14-4bf9-9515-ea261fbe1aa3",
+      "result_id": "def5a051-f701-4184-acf5-21519c6c24fe"
+    },
+    {
+      "claim_id": "0fdca1d4-646a-4caf-a0f8-835497bba34e",
+      "result_id": "def5a051-f701-4184-acf5-21519c6c24fe"
+    },
+    {
+      "claim_id": "b2929425-a4bb-4d65-8c0f-325d45c9acb1",
+      "result_id": "def5a051-f701-4184-acf5-21519c6c24fe"
+    },
+    {
+      "claim_id": "8b819238-0f7d-41bb-99f2-5a503e0c93d1",
+      "result_id": "def5a051-f701-4184-acf5-21519c6c24fe"
+    },
+    {
+      "claim_id": "2becca89-c165-44e5-b9fd-08d62af6afae",
+      "result_id": "30025850-4e66-44ef-979a-86be9e288bc6"
+    },
+    {
+      "claim_id": "74d3cfa1-fa86-43da-be5a-6028659ee979",
+      "result_id": "30025850-4e66-44ef-979a-86be9e288bc6"
+    },
+    {
+      "claim_id": "cd94ef54-e798-43e3-88e6-42d131fb6e44",
+      "result_id": "30025850-4e66-44ef-979a-86be9e288bc6"
+    },
+    {
+      "claim_id": "dd82c15c-ac07-4322-8f5f-69bcf332718a",
+      "result_id": "30025850-4e66-44ef-979a-86be9e288bc6"
+    },
+    {
+      "claim_id": "d4be1685-3f15-40b9-acfb-1e4efa94af4f",
+      "result_id": "30025850-4e66-44ef-979a-86be9e288bc6"
+    },
+    {
+      "claim_id": "e52992c9-d397-4aa6-a210-4a8072265432",
+      "result_id": "30025850-4e66-44ef-979a-86be9e288bc6"
+    },
+    {
+      "claim_id": "e9907d1d-b462-4b05-b55c-5e97eb81ccd4",
+      "result_id": "8b950cab-9db6-4f11-8475-bf92b455e144"
+    },
+    {
+      "claim_id": "352dbc7c-d47c-4369-97c7-00f846bd2d64",
+      "result_id": "8b950cab-9db6-4f11-8475-bf92b455e144"
+    },
+    {
+      "claim_id": "82f42d61-61c8-478c-b156-6622b5ed8034",
+      "result_id": "8b950cab-9db6-4f11-8475-bf92b455e144"
+    },
+    {
+      "claim_id": "9942b98f-4780-45d3-8bf1-b521155c0e9f",
+      "result_id": "8b950cab-9db6-4f11-8475-bf92b455e144"
+    },
+    {
+      "claim_id": "c86657c0-368e-4c40-9abf-3d2b5604ea54",
+      "result_id": "8b950cab-9db6-4f11-8475-bf92b455e144"
+    },
+    {
+      "claim_id": "a4a4686d-803c-49c0-97f1-3e66674094a6",
+      "result_id": "8b950cab-9db6-4f11-8475-bf92b455e144"
+    },
+    {
+      "claim_id": "787230fd-3c6c-46cd-a330-45bd79c82441",
+      "result_id": "4ba2fa61-5213-43cd-b5c1-6368415ef16d"
+    },
+    {
+      "claim_id": "48c7892a-b96d-450f-a8b5-60ee0120deeb",
+      "result_id": "4ba2fa61-5213-43cd-b5c1-6368415ef16d"
+    },
+    {
+      "claim_id": "915460e3-8e91-47fc-9e00-8a83df5d607e",
+      "result_id": "dda0c7cd-fde0-414f-9b93-a850f9c2c0b9"
+    },
+    {
+      "claim_id": "784e7ac3-6d8b-46f8-abf6-29105e82c5f4",
+      "result_id": "dda0c7cd-fde0-414f-9b93-a850f9c2c0b9"
+    },
+    {
+      "claim_id": "53e156ae-5480-40b9-af2a-b0f0bde818de",
+      "result_id": "dda0c7cd-fde0-414f-9b93-a850f9c2c0b9"
+    },
+    {
+      "claim_id": "3b4e4278-e551-4c2c-808b-d39e75704528",
+      "result_id": "dda0c7cd-fde0-414f-9b93-a850f9c2c0b9"
+    },
+    {
+      "claim_id": "b5faa2f3-8864-44cb-ae6d-a0ce12ec408d",
+      "result_id": "dda0c7cd-fde0-414f-9b93-a850f9c2c0b9"
+    },
+    {
+      "claim_id": "eaa06a8e-2a86-44e9-b7ea-f1b411e59dec",
+      "result_id": "dda0c7cd-fde0-414f-9b93-a850f9c2c0b9"
+    },
+    {
+      "claim_id": "dad6d130-5f35-49b6-baeb-7b6eb48ce23d",
+      "result_id": "28344016-c9a4-4ffb-9168-e164aa47a26e"
+    },
+    {
+      "claim_id": "e2e50589-4c02-41a4-9882-9a67f2032d4e",
+      "result_id": "28344016-c9a4-4ffb-9168-e164aa47a26e"
+    },
+    {
+      "claim_id": "02854e28-3a4b-426e-97a4-be43236f9fca",
+      "result_id": "28344016-c9a4-4ffb-9168-e164aa47a26e"
+    },
+    {
+      "claim_id": "bb83f2ea-20f2-430a-9e7a-aff616573739",
+      "result_id": "247ac186-cf7c-45f5-a1c1-1a7cf9ec5b51"
+    },
+    {
+      "claim_id": "d8fee297-951c-44af-acde-68465afb3e9a",
+      "result_id": "247ac186-cf7c-45f5-a1c1-1a7cf9ec5b51"
+    },
+    {
+      "claim_id": "25c38139-513d-4745-9016-b3d9dd850df3",
+      "result_id": "247ac186-cf7c-45f5-a1c1-1a7cf9ec5b51"
+    },
+    {
+      "claim_id": "f4a6afcc-4fb5-4711-acd0-ab8b8b798945",
+      "result_id": "1ea23a10-beb4-45f1-9852-f5b61551c3d1"
+    },
+    {
+      "claim_id": "88d79052-a2a5-4659-891e-42cdd8893dfd",
+      "result_id": "1ea23a10-beb4-45f1-9852-f5b61551c3d1"
+    },
+    {
+      "claim_id": "2a1a3e8f-6136-4b38-9c99-1b137936243b",
+      "result_id": "1ea23a10-beb4-45f1-9852-f5b61551c3d1"
+    },
+    {
+      "claim_id": "8d90603f-3b28-4e78-b205-81eec321ecd6",
+      "result_id": "1ea23a10-beb4-45f1-9852-f5b61551c3d1"
+    },
+    {
+      "claim_id": "b4b0984b-4502-46cf-a608-9a67c41a305f",
+      "result_id": "1ea23a10-beb4-45f1-9852-f5b61551c3d1"
+    },
+    {
+      "claim_id": "e8cf3924-06e5-4141-94e3-ba6ee8d92ee3",
+      "result_id": "d8177d6d-72b2-4359-8274-119315c3b037"
+    },
+    {
+      "claim_id": "793d6aa9-a3c2-427f-b585-069e96ee7b37",
+      "result_id": "d8177d6d-72b2-4359-8274-119315c3b037"
+    },
+    {
+      "claim_id": "c20289ae-6915-4a89-819d-1c22ec8ba5a8",
+      "result_id": "d8177d6d-72b2-4359-8274-119315c3b037"
+    },
+    {
+      "claim_id": "9f7f56d6-6c68-48ad-ab4a-30a0ea7d7f14",
+      "result_id": "d8177d6d-72b2-4359-8274-119315c3b037"
+    },
+    {
+      "claim_id": "b5d6d702-b4a5-4d24-aab2-123e3a35428d",
+      "result_id": "d8177d6d-72b2-4359-8274-119315c3b037"
+    },
+    {
+      "claim_id": "189b5798-825a-4628-a6da-a6d2af445adc",
+      "result_id": "db4b8a61-219a-4970-87a4-9b867c24cfa3"
+    },
+    {
+      "claim_id": "c2ef8560-fdda-4076-8616-705c2ea2ac4f",
+      "result_id": "db4b8a61-219a-4970-87a4-9b867c24cfa3"
+    },
+    {
+      "claim_id": "50639001-0504-4684-96de-92bec060fd6f",
+      "result_id": "db4b8a61-219a-4970-87a4-9b867c24cfa3"
+    },
+    {
+      "claim_id": "4b53fc91-a44f-4398-95c8-1acf362a72c5",
+      "result_id": "db4b8a61-219a-4970-87a4-9b867c24cfa3"
+    },
+    {
+      "claim_id": "969cdaf2-224a-4566-b310-d5cd98d17aae",
+      "result_id": "db4b8a61-219a-4970-87a4-9b867c24cfa3"
+    },
+    {
+      "claim_id": "af571ffc-0ad1-4e3c-88e2-b63f49c4d810",
+      "result_id": "e2115bd3-9ac5-4070-83a8-19053213b43f"
+    },
+    {
+      "claim_id": "972d8e24-35ce-4dc0-ac7e-8b689f6bd9c8",
+      "result_id": "e2115bd3-9ac5-4070-83a8-19053213b43f"
+    },
+    {
+      "claim_id": "d1cb73e1-5bfe-49ef-af7f-dd608671e398",
+      "result_id": "e2115bd3-9ac5-4070-83a8-19053213b43f"
+    },
+    {
+      "claim_id": "a9a3690d-0b21-415d-a988-3c1e9e4b563c",
+      "result_id": "e2115bd3-9ac5-4070-83a8-19053213b43f"
+    },
+    {
+      "claim_id": "afcd4a83-610d-4c39-bed9-fff5673e6852",
+      "result_id": "e2115bd3-9ac5-4070-83a8-19053213b43f"
+    },
+    {
+      "claim_id": "ca739f71-c93b-418d-9ed9-8f7d86f99fd8",
+      "result_id": "e2115bd3-9ac5-4070-83a8-19053213b43f"
+    },
+    {
+      "claim_id": "c20f8201-918f-43ad-99ea-19acdd816f35",
+      "result_id": "e2115bd3-9ac5-4070-83a8-19053213b43f"
+    },
+    {
+      "claim_id": "0a4f5bcd-a835-4246-87e3-d9e68a3c51a6",
+      "result_id": "1621f370-c2e7-4b80-b574-0d1ea8c33d6a"
+    },
+    {
+      "claim_id": "8a22e571-a9a2-478b-a4c5-684648abe10f",
+      "result_id": "1621f370-c2e7-4b80-b574-0d1ea8c33d6a"
+    },
+    {
+      "claim_id": "dc1a19d4-3a8b-4803-8bb1-1934f5473776",
+      "result_id": "1621f370-c2e7-4b80-b574-0d1ea8c33d6a"
+    },
+    {
+      "claim_id": "0fc9e88a-f2d6-45a4-9cc6-6b1566661f26",
+      "result_id": "cc2352b3-342e-4721-b7fe-9448db065d1c"
+    },
+    {
+      "claim_id": "d361d2d7-0a6f-4379-8f51-eafcb1649b0c",
+      "result_id": "cc2352b3-342e-4721-b7fe-9448db065d1c"
+    },
+    {
+      "claim_id": "30a6ca74-2af1-4a16-8628-8537fbf9d2c0",
+      "result_id": "cc2352b3-342e-4721-b7fe-9448db065d1c"
+    },
+    {
+      "claim_id": "cff17019-c05b-4731-bab0-12b4d5fe11f2",
+      "result_id": "b9ef6ef7-dca8-4707-a29f-d04dd944a82c"
+    },
+    {
+      "claim_id": "93646205-bd4e-4abe-8f68-b62fb03d989e",
+      "result_id": "c8a67736-b8c2-4f34-a6cc-c5a1ccb32bc0"
+    },
+    {
+      "claim_id": "73448fa6-7728-4d32-a4fb-e329aa7f81c0",
+      "result_id": "21cd5a60-20a9-4718-bcfc-1c2824a709fb"
+    },
+    {
+      "claim_id": "cadcfa99-9a81-402a-9885-e345154f1578",
+      "result_id": "21cd5a60-20a9-4718-bcfc-1c2824a709fb"
+    },
+    {
+      "claim_id": "03b27100-144b-4528-a05e-a81878d3f1c1",
+      "result_id": "21cd5a60-20a9-4718-bcfc-1c2824a709fb"
+    },
+    {
+      "claim_id": "1baa4898-ab95-4dda-9b88-063f417c3bfa",
+      "result_id": "21cd5a60-20a9-4718-bcfc-1c2824a709fb"
+    },
+    {
+      "claim_id": "6edf1ce8-ad43-4c3c-b4c9-9ad6ec8e41f1",
+      "result_id": "21cd5a60-20a9-4718-bcfc-1c2824a709fb"
+    },
+    {
+      "claim_id": "9c8d5943-f877-4e11-9b0b-a927a18bafd7",
+      "result_id": "21cd5a60-20a9-4718-bcfc-1c2824a709fb"
+    }
+  ],
+  "comparisons": []
+}

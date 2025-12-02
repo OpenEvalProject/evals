@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Rad21 knockdown in Drosophila ISCs induces premature differentiation into enterocytes (ECs), as evidenced by increased Pdm1 expression, enlarged cell and nuclear size, and inhibited proliferation in response to infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 provide converging evidence from multiple experimental readouts (Pdm1 expression, cell/nuclear size, proliferation markers) using two independent shRNA constructs. The phenotypic characterization is comprehensive and internally consistent, supporting the conclusion that Rad21 depletion triggers ISC differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Perturbations affecting Cohesin loading (Nipped-B knockdown) or promoting its release from chromatin (constitutively active Polo) induce ISC differentiation, while CTCF depletion does not, indicating that Cohesin chromatin association is crucial for ISC maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 demonstrate that multiple perturbations affecting Cohesin-chromatin interaction produce similar differentiation phenotypes, while CTCF depletion serves as a negative control. This supports the specificity of the Cohesin requirement and argues for an interphase chromatin function rather than solely mitotic cohesion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C100"
+    ],
+    "result": "ISCs divide at very low rates (10-20%) under homeostatic conditions, and Cohesin perturbations induce differentiation regardless of whether cells have divided, suggesting effects independent of mitotic defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C100 establish the low mitotic rate and show differentiation occurs in both divided and undivided cells. This observation is critical for distinguishing mitotic from interphase functions of Cohesin, though the argument would be strengthened by direct cell cycle analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Rad21 overexpression induces ISC proliferation in homeostatic conditions, suggesting Rad21 can act independently of chromatid cohesion, potentially through transcriptional regulation of proliferation and stemness genes in interphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C45 and C47 show that Rad21 overexpression increases proliferation, the inference that this occurs 'independently of chromatid cohesion' (C46) is speculative. Overexpression could affect both mitotic and interphase functions. The hypothesis in C48 requires additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Knockdown of mitotic regulators (Cdk1, Polo, AuroraB) causes ISC differentiation, but with lower penetrance than Rad21 depletion, and Rad21 expression is reduced in cells with deregulated mitosis, suggesting cell cycle defects may contribute to but not fully explain Rad21 loss-of-function phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 provide a systematic comparison between Rad21 depletion and other mitotic perturbations. The quantitative differences in Pdm1 induction and Delta expression support the conclusion that Rad21 has functions beyond mitotic chromosome cohesion, though the mechanistic connection between mitotic defects and Rad21 downregulation (C60) remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C73"
+    ],
+    "result": "RNAseq analysis reveals that Rad21 knockdown causes significant transcriptional changes including upregulation of differentiation genes (Pdm1) and EC-specific genes, with overlap with Esg-repressed genes, while Esg mRNA levels remain unchanged, suggesting Rad21 may be required for Esg-mediated gene repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 and C72-C73 present comprehensive transcriptomic evidence with appropriate statistical thresholds and validation by qRT-PCR. The overlap analysis with Esg targets (C64) and EC-specific genes (C65) supports the mechanistic hypothesis, though the percentage overlaps are modest (8.6% and 17%), suggesting additional regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C104"
+    ],
+    "result": "DamID analysis shows that the vast majority (83%) of Esg DNA binding sites in ISCs are lost upon Rad21 depletion, including sites near differentiation genes like Pdm1, indicating that Cohesin regulates Esg binding to target promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 and C104 provide direct molecular evidence linking Cohesin to Esg chromatin binding. The high percentage of lost binding sites (862/1034) is striking and supports the proposed mechanism. However, the damID reproducibility analysis (Figure 7) shows variable peak quality, and the causal relationship between Cohesin and Esg binding requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C74",
+      "C75"
+    ],
+    "result": "Rad21 knockdown induces ISC differentiation even in Notch-deficient cells, demonstrating that the differentiation program triggered by Cohesin loss is independent of canonical Notch signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 provide genetic epistasis evidence showing Rad21 acts independently of Notch. The experiment is well-controlled and addresses a key question about pathway interactions. This finding is important for understanding the mechanistic specificity of Cohesin function in ISCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C91",
+      "C106",
+      "C107"
+    ],
+    "result": "Esg overexpression rescues ISC differentiation and restores proliferation in Rad21-depleted cells, indicating that Rad21 plays a critical but accessory role in Esg-mediated maintenance of stem cell state, and that excess Esg can compensate for Rad21 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 and C106-C107 demonstrate functional rescue, providing strong support for the proposed Cohesin-Esg regulatory axis. The interpretation that Rad21 plays an 'accessory role' (C80) is reasonable given the rescue data, though the extent of rescue and whether homeostasis is fully restored requires more detailed characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C108",
+      "C109"
+    ],
+    "result": "Multiple lines of evidence argue that Cohesin loss induces ISC differentiation independently of aneuploidy: (1) both Cohesin depletion and release from chromatin cause differentiation; (2) Cohesin perturbations cause stronger differentiation than other mitotic regulators despite comparable proliferation arrest; (3) Nipped-B knockdown affects interphase chromatin binding; (4) differentiation frequency (60-70%) exceeds mitotic frequency (10-20%); (5) Esg binding and transcriptional changes are unlikely indirect consequences of aneuploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C109 present a comprehensive argument against aneuploidy as the primary mechanism. The logic is sound and supported by multiple independent lines of evidence. However, the argument would be strengthened by direct measurement of aneuploidy rates in the different perturbation conditions and demonstration that aneuploidy per se does not cause the observed transcriptional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose a model where Cohesin facilitates Esg access to differentiation gene promoters, and in Cohesin's absence, relaxed chromatin organization allows ectopic gene expression, which can be suppressed by excess Esg protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91 present a mechanistic model that is consistent with the data but remains speculative. The model proposes specific chromatin organizational changes that have not been directly demonstrated. Additional experiments measuring chromatin accessibility, 3D genome organization, or direct Cohesin-Esg interactions would be needed to validate this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Prior literature reports conflicting effects of aneuploidy on ISC differentiation, with Bub3 depletion causing differentiation while BubR1, Mad2, or Mps1 depletion causes proliferation, suggesting the differentiation response to Bub3 may reflect functions beyond aneuploidy induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 accurately summarize prior literature and draw a reasonable inference about the inconsistency of aneuploidy-induced differentiation. This contextualizes the current findings, though the authors should verify the accuracy of these literature claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Prior studies show Cohesin has cell-type-specific functions in different stem cell lineages: promoting differentiation in skin stem cells, inhibiting differentiation in hematopoietic stem cells, and regulating pluripotency in embryonic stem cells through interactions with specific transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 accurately summarize prior literature on Cohesin function in various stem cell types. These claims provide important context for interpreting the current findings and are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Recent studies in Drosophila suggest CTCF has limited involvement in chromosome domain/loop formation, with other insulator complexes (BEAF-32/CP190, BEAF-32/Chromator) playing more prominent roles, and CTCF may primarily regulate Hox or other gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 accurately cite recent literature to explain why CTCF depletion did not phenocopy Cohesin depletion in the current study. This provides important context for interpreting the negative result with CTCF RNAi.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Based on prior literature and current findings, the authors speculate that Rad21 may ensure reloading of Esg onto promoters after mitosis to maintain stable expression of stemness genes, and that mitotic perturbations releasing Cohesin from chromatin trigger ISC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C118 present an interesting hypothesis connecting mitotic Cohesin retention to transcriptional memory, but this remains speculative (C116 explicitly states 'it is possible'). The hypothesis is plausible given cited literature, but requires direct experimental validation of Esg reloading dynamics and Cohesin's role in this process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background information on ISC biology: ISCs maintain intestinal homeostasis through self-renewal and differentiation, with the Drosophila midgut containing ISCs, EBs, ECs, and EEs; ISC proliferation is regulated by JAK/STAT, JNK, and EGFR pathways; Notch limits proliferation and is required for EC differentiation; Esg promotes stemness and inhibits differentiation factors including Pdm1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 provide standard background information appropriately supported by citations to established literature. These claims set the context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background information on Cohesin: Cohesin is a ring-like protein complex that holds sister chromatids together during mitosis and organizes chromatin into TADs in interphase; only ~13% of Cohesin is needed for chromosome cohesion; Cohesin is loaded by the kollerin complex (including Nipped-B) and removed by Polo kinase and Separase; Cohesin deficiency eliminates TADs and alters transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 and C35-C37 provide standard background on Cohesin biology, appropriately supported by citations. These establish the conceptual framework for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Prior work in mammalian intestine has implicated elevated Rad21 expression in loss of heterozygosity at the APC locus and activation of L1 retrotransposons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 cite prior literature on Rad21 function in mammalian intestine, providing relevant context for the current findings. The authors should verify the accuracy of these literature claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Prior work shows Cohesin can regulate gene expression via interaction with the Mediator complex of Polymerase II, and Mediator subunit depletion in ISCs causes premature differentiation similar to Cohesin loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 cite relevant prior literature suggesting a potential mechanism for Cohesin function in ISCs. This provides a plausible molecular framework, though direct evidence for Cohesin-Mediator interaction in ISCs is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Recent evidence suggests chromatin loops can be reestablished after Cohesin removal, and acute Cohesin depletion in neuroblasts slightly inhibits but preserves proliferation, indicating complex and context-dependent roles of Cohesin in mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 cite recent literature providing context for interpreting the current findings. These observations suggest Cohesin function may be more nuanced than simple loop maintenance and may vary by cell type.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1355 @@
+{
+  "submission": {
+    "id": "096242f5-03af-41d1-83ee-ddaa5f65d3c4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:28:08.398449Z",
+    "updated_at": "2025-12-02T19:28:08.398449Z"
+  },
+  "content": [
+    {
+      "id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "submission_id": "096242f5-03af-41d1-83ee-ddaa5f65d3c4",
+      "content_type": "manuscript",
+      "content_text": "# Puromycin reactivity does not accurately localize translation at the subcellular level\n\n## Authors\n\n- Syed Usman Enam<sup>1</sup> ([ORCID: 0000-0001-8976-0660](https://orcid.org/0000-0001-8976-0660))\n- Boris Zinshteyn<sup>1</sup> ([ORCID: 0000-0003-0103-3501](https://orcid.org/0000-0003-0103-3501))\n- Daniel H Goldman<sup>1</sup>\n- Madeline Cassani<sup>1</sup>\n- Nathan M Livingston<sup>3</sup> ([ORCID: 0000-0003-4670-708X](https://orcid.org/0000-0003-4670-708X))\n- Geraldine Seydoux<sup>1</sup> ([ORCID: 0000-0001-8257-0493](https://orcid.org/0000-0001-8257-0493))\n- Rachel Green<sup>1</sup> ([ORCID: 0000-0001-9337-2003](https://orcid.org/0000-0001-9337-2003)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology and Genetics, Johns Hopkins University School of Medicine Baltimore United States\n2. Howard Hughes Medical Institute Baltimore United States\n3. Department of Biophysics and Biophysical Chemistry, Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPuromycin is a tyrosyl-tRNA mimic that blocks translation by labeling and releasing elongating polypeptide chains from translating ribosomes. Puromycin has been used in molecular biology research for decades as a translation inhibitor. The development of puromycin antibodies and derivatized puromycin analogs has enabled the quantification of active translation in bulk and single-cell assays. More recently, in vivo puromycylation assays have become popular tools for localizing translating ribosomes in cells. These assays often use elongation inhibitors to purportedly inhibit the release of puromycin-labeled nascent peptides from ribosomes. Using in vitro and in vivo experiments in various eukaryotic systems, we demonstrate that, even in the presence of elongation inhibitors, puromycylated peptides are released and diffuse away from ribosomes. Puromycylation assays reveal subcellular sites, such as nuclei, where puromycylated peptides accumulate post-release and which do not necessarily coincide with sites of active translation. Our findings urge caution when interpreting puromycylation assays in vivo.\n\n## Introduction\n\nPuromycin is a potent translational inhibitor that binds to ribosomes from all domains of life and has been used as a chemical probe and selectable marker for decades (Aviner, 2020; Yarmolinsky and Haba, 1959). Puromycin is unique among translational inhibitors in that it is itself a substrate of the ribosomal peptidyl-transferase reaction (Nathans, 1964). Puromycin mimics the 3\u2032 adenosine of a tRNA charged with a modified tyrosine, which binds in the ribosomal acceptor site (Figure 1A). The ribosome transfers the nascent peptide chain on the P-site tRNA to puromycin, leading to spontaneous dissociation of the nascent peptide from the ribosome (Figure 1B; Nathans, 1964).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig1-v3.jpg)\n\n**Figure 1.:** (A) Comparison of structure of 3\u2032 terminus of tyrosyl tRNA with that of puromycin.\u00a0Key differences are highlighted in green. tRNA body not drawn to scale. (B) Scheme for reaction of puromycin with peptidyl P-site tRNA on the ribosome, leading to dissociation of puromycylated peptide. (C) Structures and schematicized ribosome binding sites of translational inhibitors cycloheximide, anisomycin and emetine. Binding sites are based on Garreau de Loubresse et al., 2014; Wong et al., 2014.\n\nThe development of anti-puromycin antibodies and of derivatized analogs of puromycin (Fujiwara et al., 1982; Liu et al., 2012) has led to the commonplace use of puromycin as a metabolic probe to measure the extent of active translation, replacing radioactive tracers such as S35 methionine. These probes can be used to quantify the amount of active translation from cells in a culture dish, tissue or organism (Schmidt et al., 2009; Chao et al., 2012). Subsequent development of the ribopuromycylation method (RPM) (David et al., 2012; Bastide et al., 2018) pushed the technique a step further, claiming to detect the subcellular localization of actively translating ribosomes using a puromycin-specific antibody. In these initial publications, the authors argued that the translation elongation inhibitors cycloheximide or emetine prevent dissociation of the puromycylated peptides from the ribosome. Cycloheximide and emetine, however, bind in the E-site of the ribosome (Figure 1C) far from the peptidyl-transferase center (Garreau de Loubresse et al., 2014; Wong et al., 2014). Previous work (Grollman, 1968; Colombo et al., 1965) established that these inhibitors prevent puromycin-induced splitting of ribosomes into individual subunits, but do not prevent the release of the majority of puromycylated peptides. Cycloheximide and emetine, in fact, are sometimes omitted from in vivo puromycylation assays based on the claim that short (approximately 5 min) labeling times capture peptides near their original site of translation before significant diffusion has taken place (tom Dieck et al., 2015; Biever et al., 2020; Lewis et al., 2018; Glock et al., 2020; Holt et al., 2019). Puromycin-based imaging methods have been widely adopted, particularly in neurobiology, where translation in neuronal processes, far from the cell body, is crucial to neuronal function (tom Dieck et al., 2015; Biever et al., 2020; Lewis et al., 2018; Glock et al., 2020; Holt et al., 2019; V'kovski et al., 2019; Langille et al., 2019; Gonatopoulos-Pournatzis et al., 2020; Graber et al., 2013; Graber et al., 2017). Some studies have combined puromycin treatment with proximity-dependent ligation (PLA) to monitor the location of translation of a specific protein (tom Dieck et al., 2015), but this method again does not address diffusion of puromycylated peptides post-release from the ribosome.\n\nIn the present work, we establish that puromycin-based methods, as currently implemented, do not accurately localize translation at the subcellular level. We used a rabbit reticulocyte lysate system to show that puromycin nearly instantaneously releases nascent proteins from the ribosome, and that this release reaction is completely unaffected by emetine. To validate this finding in cells, we visualized sites of active translation using fixed cell single-molecule imaging with the SunTag reporter system. Brief treatment with puromycin nearly completely dissociated nascent peptides from their mRNAs, again, independent of the presence of emetine. Simple diffusion calculations predict that the released peptides could diffuse to nearly any point within even large mammalian cells within seconds or minutes. Thus, puromycylation methods described in the literature do not establish subcellular localization of translation.\n\n## Results\n\n### The puromycin analog OPP labels nuclei in live C. elegans germlines in the presence or absence of emetine\n\nO-propargyl-puromycin (OPP) is a click-reactive cell permeable puromycin analog that is commonly used to localize sites of translation (Liu et al., 2012). When incubated with live cells or tissues, OPP reacts with translating ribosomes and becomes covalently attached to elongating peptides. Post-labeling, OPP is detected by click-reactive chemistry which attaches a fluorescent probe to OPP (Figure 2). Using this method to label translation in live C. elegans gonads, we observed bright labeling of live germlines upon a 5 min incubation with OPP. The OPP signal was most intense in nuclei, specifically in the chromatin-free center where nucleoli reside. A lower signal was also observed in the cytoplasm, which contains the majority of (if not all) functional ribosomes (Klinge and Woolford, 2019). OPP labeling of nuclei was ablated by pre-treatment with anisomycin, a competitive inhibitor of puromycin that stops elongation by binding to the peptidyl-transferase center (Grollman, 1967), thereby preventing puromycin from reacting with the nascent chain. In contrast, OPP labeling was unaffected by pre-treatment with emetine (Figure 2B). Emetine-resistant puromycin labeling of nucleoli has been observed previously in tissue culture cells (David et al., 2012) and may reflect trafficking or diffusion of puromycylated peptides into the nucleolus (Kubota et al., 1999; Schmidt et al., 1995). We conclude that OPP labels translational products but does not necessarily identify sites of active translation even in the presence of emetine.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig2-v3.jpg)\n\n**Figure 2.:** (A) Representative photomicrographs of germlines labeled for 5 min with 20 \u00b5M OPP, and pre-treated for 15 min with control buffer (top row), 45 \u00b5M emetine (second row), or 37 \u00b5M anisomycin (bottom row). DAPI labels chromosomes. Post-fixation, click labeling of OPP with Alexa Fluor 488 picolyl azide revealed OPP throughout the cytoplasm and concentrated in nuclei. Scale bar\u00a0=\u00a010 \u00b5m. (B) Quantification of OPP-Alexa 488 signal in distal germlines. Each dot represents the average fluorescence of the mitotic zone of one worm germline. Values are normalized to the average obtained for germlines pre-treated with control buffer (OPP alone). P values were obtained through an unpaired t-test. Experiment performed in duplicate.\n\n### Emetine does not prevent release of puromycylated peptides in rabbit reticulocyte lysates\n\nTo determine whether emetine prevents release of puromycylated nascent peptides in vitro, we made use of a previously established real-time translation monitoring assay in rabbit reticulocyte lysate (RRL). This method relies on the fact that luciferase rapidly folds into an enzymatically active conformation only after release from the ribosome (Kolb et al., 1994; Frydman et al., 1994). By programming RRL with a luciferase mRNA that is truncated (by runoff SP6 transcription of restriction-digested plasmid) just upstream of the stop codon, we accumulate stalled ribosomes at the 3\u2019 end of the mRNA, in which the luciferase nascent peptide remains ribosome-bound and enzymatically inactive (Figure 3A). RRL programmed with the truncated mRNA (yellow trace) displays little luciferase activity compared to RRL translating full-length mRNA (purple trace). Addition of 91 \u03bcM puromycin (the same concentration used by David et al., 2012) causes a sharp increase in luminescence output from the truncated mRNA, consistent with release of the stalled peptides.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic of the real-time translation monitoring assay in rabbit reticulocyte lysate.\u00a0(1) (Purple trace) Ribosomes translate the full-length luciferase mRNA and release luciferase which becomes enzymatically active and results in an increase in luminescence. (Yellow trace) Ribosomes stall at the 3\u2019 end of a truncated luciferase mRNA and little to no luminescence is observed as the ribosome-bound luciferase peptides are in an enzymatically inactive conformation. (2) Puromycin (PM) is added to the system, stopping further translation and causing all nascent peptides to release from the ribosomes. (3) (Yellow) The luciferase rapidly folds into an enzymatically active conformation and a substantial increase in luminescence is observed. (B) Either puromycin (yellow), H2O (purple) or a mixture of emetine (EME) and puromycin (blue) was added to a reaction containing truncated luciferase mRNA at t\u00a0=\u00a021 min. Experiment was performed in duplicate; mean traces shown as solid lines and range of replicates shaded. (C) GDPNP was added to a reaction containing truncated luciferase mRNA at t\u00a0=\u00a016 min for 5 min to inhibit translation across samples. Then, either emetine (blue, purple), anisomycin (ANS) (green) or H2O (yellow) was added to the reaction followed by puromycin (blue, yellow, green) or H2O (purple) 5 min later. Experiment was performed in duplicate; mean traces shown as solid lines and range of replicates shaded. Note that the experiments in (A and B), and Figure 3\u2014figure supplement 1B were done in the same batch, and the yellow traces (PM treated) in these panels are the same.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Luminescence measured from translation of full-length luciferase mRNA in rabbit reticulocyte lysate.\u00a0Either emetine (blue), anisomycin (green) or puromycin (yellow) was added to the reaction at indicated concentrations. Due to experimental restrictions, emetine and anisomycin were added at t\u00a0=\u00a016 min and puromycin was added at t\u00a0=\u00a022 min. Experiment performed once. (B) Luminescence measured from translation of truncated luciferase mRNA in rabbit reticulocyte lysate. Either emetine (blue), puromycin (yellow) or anisomycin (green) was added to the reaction at t\u00a0=\u00a021 min for 5 min to inhibit translation across the samples. Then, either puromycin (blue, green) or H2O (yellow) was added to the reaction. Experiment was performed in duplicate; mean traces shown as solid lines and range of replicates shaded.\n\nWe reasoned that if emetine prevents release of puromycylated nascent peptides, then emetine should block the increase in luminescence observed upon puromycin addition. Matching the conditions of David et al., 2012, we treated the RRL with 208 \u03bcM emetine and 91 \u03bcM puromycin. When added separately, these two drugs effectively inhibit translation of full-length luciferase mRNA encoding a normal stop codon (Figure 3\u2014figure supplement 1A;\u00a0David et al., 2012). Upon addition of puromycin to lysate programmed with truncated mRNA, we noticed the expected steep increase in luminescence (yellow trace) that was not inhibited by simultaneous addition of emetine (blue trace) (Figure 3B). The luminescence of the no-puromycin control (purple trace) increased slowly over time, likely due to low levels of ribosome rescue activity (Shao et al., 2013) or spontaneous peptidyl-tRNA hydrolysis in the lysate.\n\nWe next considered the possibility that blocking peptide release with emetine requires pre-incubation. To test this, we pre-treated the lysate with emetine 5 min before addition of puromycin. Because pre-treatment would decrease the total translation time and overall luminescence of a sample, it was critical to equalize the total uninhibited reaction time of all samples. This was accomplished in two different ways. In a first experiment, we treated all samples with the nonhydrolyzable GTP analog 5'-guanylyl imidodiphosphate (GDPNP) to inhibit the translational GTPases and prevent ongoing translation while leaving the ribosome free to react with emetine and puromycin (Figure 3C). Again, puromycin treatment (yellow trace) caused a sharp increase in luminescence that was not affected by emetine pre-treatment (blue trace) but was inhibited by anisomycin pre-treatment (green trace). The residual slow increase in the anisomycin trace is likely due to incomplete inhibition by anisomycin resulting from its stochastic dissociation during the reaction. In a second experiment, we added puromycin for the puromycin-only control at the same time that we started pretreating the other samples with inhibitors. This effectively inhibited translation in all samples at the same time (Figure 3\u2014figure supplement 1B). While the increase in luminescence for the puromycin-only control (yellow trace) occurred earlier than for the pretreated samples, once the puromycin was added, the luminescence activity of the emetine pretreated sample (blue trace) matched that of the puromycin-only control. Taken together, these results show that pretreating translating ribosomes with emetine does not prevent the release of nascent peptides by puromycin in vitro.\n\n### Emetine does not prevent release of puromycylated peptides in cells\n\nTo directly test whether emetine blocks release of puromycylated nascent chains in vivo, we implemented the SunTag method for monitoring translation on single mRNAs (Pichon et al., 2016; Wu et al., 2016; Morisaki et al., 2016; Wang et al., 2016; Yan et al., 2016). This technique relies on a reporter mRNA encoding tandem repeats of the SunTag epitope near the 5\u2032 end of the coding sequence (Figure 4A). When translated, each SunTag peptide is bound by a single chain variable fragment (scFV) of a GCN4 antibody fused to super folder GFP (scFV-sfGFP). An auxin-inducible degron (AID) near the 3\u2032 end of the coding sequence allows controlled degradation of the fully-synthesized SunTag array, reducing fluorescence background and enabling detection of single fully-synthesized polypeptides. We performed fixed-cell imaging of U-2OS cells stably expressing both the SunTag reporter and scFV-sfGFP, detecting mRNA by fluorescence in-situ hybridization (FISH) and SunTag signal by immunofluorescence (IF). With this single-molecule FISH and IF hybrid assay (smFISH-IF), we quantified the association of SunTag nascent chains with their encoding mRNAs under various treatment conditions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig4-v3.jpg)\n\n**Figure 4.:** (A) SunTag reporter schematic.\u00a0In addition to the tandem SunTag repeats and the auxin-inducible degron, this reporter encodes nano luciferase and BFP, which are not used in the present experiments. The 3\u2019 UTR also encodes tandem repeats of the MS2 stem loop, which can be used to label the mRNA red. However, since we detect mRNA by FISH, we do not use the MS2 stem loops in the present experiments. (B) Example cells imaged by FISH-IF. Cells were either untreated (top row), treated with 91 \u03bcM puromycin for 5 min (second row), pre-treated with 208 \u03bcM emetine for 15 min followed by 91 \u03bcM puromycin for 5 min (third row), or pre-treated with 37 \u03bcM anisomycin for 5 min followed by 91 \u03bcM puromycin for 5 min (last row). Yellow arrows: examples of translating mRNAs; White arrows: example of single fully synthesized SunTag polypeptide (released from the ribosome); Blue arrows: examples of untranslating mRNAs. Scale bar in top left image: 10 microns. Scale bar in top right image: two microns. (C) Fraction of mRNAs co-localized with SunTag signal. Each dot represents one cell. Cells are only included in the analysis if they have more than five and fewer than 36 mRNAs. 20\u201327 cells and 313\u2013513 mRNAs per condition were analyzed. Black lines indicate mean with standard error of the mean. P values were calculated by two-sample t-test. Experiment performed once.\n\nIn untreated cells, an average of 63% of single mRNAs (red foci) per cell co-localize with bright SunTag signal (green foci) (Figure 4B, top row and 4C); these co-localized spots reflect mRNAs bound by ribosomes synthesizing the SunTag reporter, while weaker isolated green spots reflect single fully synthesized SunTag polypeptides that have been released from the ribosome (Wu et al., 2016). Upon treatment with 91 \u03bcM puromycin for 5 min, an average of only 3% of mRNAs per cell colocalize with green signal, consistent with release of nascent chains upon puromycin treatment. Remarkably, pre-treatment with 208 \u03bcM emetine for 15 min yielded similar results: only 5% of mRNAs on average colocalized with SunTag signal. Importantly, pre-treatment for 5 min with elongation inhibitor anisomycin (37 \u03bcM), resulted in an average of 50% of mRNAs co-localized with green foci, as seen in untreated cells. Together, these data indicate that 5 min of puromycin treatment causes release of nascent polypeptides and diffusion away from ribosomes. Pre-treatment with emetine has no effect on puromycin-induced release.\n\n### Puromycylation treatment times are long compared to protein diffusion rates\n\nWhile initial reports argued that emetine was required to stabilize the interaction of puromycylated peptides with ribosomes, some recent studies of local protein synthesis via the puromycylation method relied on treatment with puromycin alone for\u00a0~5\u201310 min, with the implication that detected nascent proteins do not appreciably diffuse away from their site of synthesis (i.e. ribosome) within the treatment time (Colombo et al., 1965; tom Dieck et al., 2015; Morisaki et al., 2016). To determine how far a nascent protein might diffuse on these timescales (i.e. the spatial resolution of the method), we calculated the expected displacement as a function of time, based on the previously measured diffusion coefficient of GFP in the cytosol (Di Rienzo et al., 2014; Figure 5). This calculation depends on the dimensionality of space in which the molecule is confined. However, even in the most limiting case of one-dimensional diffusion\u2014approximating movement along a very narrow neural projection\u2014a protein is expected to diffuse\u00a0~100 \u00b5m in less than 1 min. This distance is large compared to both the scale of the relevant structures to which protein synthesis was localized in neurons (tens of microns) (tom Dieck et al., 2015; Biever et al., 2020), and to the diameter of HeLa cells (~20 microns) (Borle, 1969), in which the method was demonstrated (David et al., 2012). Thus, limiting puromycin treatment time to a few minutes does not ensure that nascent proteins remain confined to the subcellular region in which they are synthesized.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig5-v3.jpg)\n\n**Figure 5.:** Calculation of expected displacement by diffusion as a function of time, using the equation <\u00a0x2\u00a0>\u00a0=\u00a02nDt where n is the dimensionality, D is the diffusion coefficient (126 \u00b5m2/s Di Rienzo et al., 2014) and t is time.\u00a0The calculation is shown for 1, 2 and 3 dimensions.\n\n## Discussion\n\nIn this work, we have demonstrated that the puromycin method for visualizing localized translation does not faithfully detect nascent polypeptides at the site of their synthesis. Puromycylated polypeptides are released from the ribosome and can diffuse far away from the site of synthesis, even following short treatment times. Additionally, treatment with emetine does not prevent release of puromycylated peptides from the ribosome. This is in agreement with previous polysome gradient analysis (Colombo et al., 1965; Grollman, 1968) and real-time SunTag imaging (Wang et al., 2016) that has shown that neither emetine nor cycloheximide ultimately prevent release of these peptides. It is therefore likely that the specific subcellular localizations detected by this method are in many cases the end result of trafficking or diffusion of partially-synthesized puromycylated proteins. For example, the bright nucleolar labeling detected in David et al., 2012 likely does not reflect nucleolar translation, but the trafficking of puromycylated N-terminal fragments of highly abundant ribosomal proteins (which have N-terminal nucleolar localization signals) to the nucleolus (Kubota et al., 1999; Schmidt et al., 1995). Thus, conclusions reached using this method should be treated cautiously, even in neurons, where cellular projections protrude relatively far from the cell body. We note that other reporter-based methods that rely on rapid, single turnover chemistry, such as the \u2018flash\u2019 activity of some luciferases, may allow for more accurate localization of the sites of protein synthesis (Na et al., 2016). Additionally, in principle, derivatizing puromycin with a chemical moiety large enough to obstruct its passage through the ribosome exit tunnel would immobilize reacted nascent chains on the ribosome. The viability of this concept is demonstrated by the RiboLace method (Clamer et al., 2018), which uses a puromycin-biotin conjugate bound to magnetic beads to capture translating ribosomes from cellular lysates. Of course, these beads are not cell permeable and are unsuitable for in vivo imaging. The methods outlined here will be useful for screening cell-permeable puromycin derivatives for their ability to faithfully localize protein synthesis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEM-luc (plasmid)</td>\n      <td>Promega</td>\n      <td>GenBank X65316.2</td>\n      <td>Firefly luciferase cassette vector</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pSL312 (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Full-length firefly luciferase template; can be obtained from Green Lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>P3.35_pGEM_luc_trunc_kozak_RC (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Truncated firefly luciferase template; can be obtained from Green Lab</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>StuI (restriction enzyme)</td>\n      <td>NEB</td>\n      <td>R0187S</td>\n      <td>Linearization of pSL312 for SP6 transcription</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>HpaI (restriction enzyme)</td>\n      <td>NEB</td>\n      <td>R0105S</td>\n      <td>Linearization of P3.35 for SP6 transcription</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Full-length luciferase mRNA</td>\n      <td>This paper</td>\n      <td></td>\n      <td>SP6 transcribed from pSL312</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Truncated luciferase mRNA</td>\n      <td>This paper</td>\n      <td></td>\n      <td>SP6 transcribed from P3.35</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>mMESSAGE mMACHINE SP6 transcription kit</td>\n      <td>Invitrogen</td>\n      <td>AM1340</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nuclease-treatedrabbit reticulocyte lysate translation reactions</td>\n      <td>Promega</td>\n      <td>L4960</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Luciferin</td>\n      <td>PerkinElmer</td>\n      <td>122799</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Superase-In RNase Inhibitor</td>\n      <td>Invitrogen</td>\n      <td>AM2696</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>5'-guanylyl imidodiphosphate (GDPNP)</td>\n      <td>Jena Bioscience</td>\n      <td>NU-401\u201350</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Emetine</td>\n      <td>Cayman Chemical</td>\n      <td>21048</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Puromycin</td>\n      <td>Sigma Aldrich</td>\n      <td>P7255</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Anisomycin</td>\n      <td>Sigma</td>\n      <td>A9789</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>N2</td>\n      <td>Caenorhabditis Genetics Center (CGC)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT Plus OPP Alexa Fluor 488 Protein Synthesis Assay kit</td>\n      <td>Invitrogen</td>\n      <td>C10456</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>U-2OS cells containing Flp-In locus</td>\n      <td>Andrew Holland lab (Johns Hopkins University)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>amino-11\u201312 ddUTP</td>\n      <td>Lumiprobe</td>\n      <td>A5040</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>deoxynucleotidyl transferase</td>\n      <td>Thermo Fisher</td>\n      <td>EP0162</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>doxycycline hyclate</td>\n      <td>Millipore Sigma</td>\n      <td>D9891</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cy3-NHS ester</td>\n      <td>Lumiprobe</td>\n      <td>41020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>3-indole acetic acid</td>\n      <td>Sigma Aldrich</td>\n      <td>I2886</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>paraformaldehyde</td>\n      <td>Electron Microscopy Sciences</td>\n      <td>50-980-492</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>rat tail collagen I</td>\n      <td>Gibco</td>\n      <td>A1048301</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>BSA</td>\n      <td>VWR</td>\n      <td>VWRV0332-25G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SSC buffer</td>\n      <td>Corning</td>\n      <td>46\u2013020 CM</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>formamide</td>\n      <td>Sigma Aldrich</td>\n      <td>F9037-100ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>E. coli tRNA</td>\n      <td>Sigma Aldrich</td>\n      <td>10109541001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>dextran sulfate</td>\n      <td>Sigma Aldrich</td>\n      <td>D8906-100G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ribonucleoside vanadyl complex</td>\n      <td>NEB</td>\n      <td>S1402S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Chicken polyclonal anti-GFP antibody</td>\n      <td>Aves Labs</td>\n      <td>RRID:AB_2307313</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-chicken polyclonal IgY secondary antibody</td>\n      <td>Thermo Fisher</td>\n      <td>RRID:AB_2534096</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ProLong Diamond antifade reagent</td>\n      <td>Invitrogen</td>\n      <td>P36962</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pubc-OSTIR1-IRES-scFv-sfGFP-NLS (plasmid)</td>\n      <td>Reference 32</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FISH-quant</td>\n      <td>Reference 45</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom MATLAB scripts for processing FISH-quant output</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Scripts for quantifying number of translating ribosomes per mRNA from FISH-IF data; available asSource code 1 in supplementary files</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Oligonucleotides used to generate FISH probes</td>\n      <td>Reference 32</td>\n      <td></td>\n      <td>See Supplementary file 1</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmid construction\n\nA Kozak consensus sequence (GCCACC) was inserted immediately upstream of the start codon of luciferase reporter plasmid pGEM-luc (GenBank X65316.2) to generate pSL312. This was used as the template for full-length firefly luciferase mRNA transcription and was linearized with a StuI restriction digest. For reasons unrelated to the current work, a disabled 2A peptide sequence was fused downstream of the luciferase sequence to generate P3.28_pGEM_ luc_2A_AGP|_kozak_RC, which was further modified by inserting an HpaI restriction site 2 nt 3\u2032 of the final codon of luciferase (TTGtt|aac, where TTG is the final luciferase sense codon) through site-directed mutagenesis to make P3.35_pGEM_luc_trunc_kozak_RC. This plasmid was linearized with an HpaI restriction digest such that transcription of this template would terminate at TTGtt and would exclude the 2A peptide sequence. For SunTag experiments, the plasmid pcDNA_CMV_ST was used to generate a stable cell line using the Flp-In method. pcDNA_CMV_ST contains an open reading frame coding for 23x SunTag repeats, Nano Luciferase, BFP and an auxin-inducible degron, expressed from a pcDNA5 vector.\n\n### OPP-click\n\nC. elegans was cultured according to standard methods at 20 \u00b0C. N2 adult germlines were dissected into egg buffer with 1 mM levamisole. Germlines were incubated with 45 \u00b5M emetine, or 37 \u00b5M anisomycin (Bastide et al., 2018), or egg buffer alone for 15 min. OPP was added at a concentration of 20 \u00b5M while maintaining concentrations of emetine and anisomycin for the 5 min incubation. Germlines were rinsed once with PBS and fixed in 4% paraformaldehyde. Click reaction was carried out with Click-iT Plus OPP Alexa Fluor 488 Protein Synthesis Assay kit (Thermo Fisher C10456) according to the manufacturer's directions.\n\n### C. elegans imaging\n\nImages were taken with a Zeiss Axio Observer equipped with a CSU-W1 SoRA spinning disk scan head (Yokogawa) and Slidebook v6.0 software (Intelligent Imaging Innovations). Germline images are 10 \u03bcm z-stacks starting at the bottom of the distal germline with 0.27 \u03bcm step size using a 63X objective. Average intensity projections were quantified in ImageJ. An ROI was drawn around the mitotic zone of each germline and fluorescence in the 488 nm channel was measured. Fluorescence intensity of each germline was normalized to the average intensity of the germlines treated with OPP alone.\n\n### Luciferase-based real-time translation monitoring assay\n\nLuciferase plasmids were linearized with a blunt-end restriction enzyme just upstream (truncated) or downstream (full-length) of the stop codon, followed by transcription with the mMESSAGE mMACHINE SP6 transcription kit (Invitrogen AM1340). Synthesized mRNA was quantified using a Nanodrop 1000. Nuclease-treated rabbit reticulocyte lysate translation reactions (Promega L4960) were set up in a 384-well plate (Thermo Scientific 164610) on ice. Luciferin (PerkinElmer 122799) was added to each reaction well to a concentration of 0.5 mM followed by 12 units of Superase-In RNase Inhibitor (Invitrogen AM2696). SP6-transcribed truncated or full-length firefly luciferase mRNA was added to a concentration of 40 \u00b5g/mL using a multichannel pipette and the plate was immediately inserted into a luminometer microplate reader (Biotek Synergy H1MD) regulated at 30\u00b0C. Luminescence readings were taken every few seconds, depending on the number of reaction wells. 5'-guanylyl imidodiphosphate (GDPNP; Jena Bioscience NU-401\u201350) was added to the wells 16 min after the start of the reaction for 5 min at a concentration of 100 \u00b5M followed by a 5-min pretreatment of either 208 \u00b5M emetine (Cayman Chemical 21048) or 9.4 \u00b5M anisomycin (Sigma A9789). Puromycin (Sigma Aldrich P7255) was added to wells at a concentration of 91 \u00b5M. In experiments where GDPNP was not used, the first translation inhibitors were added to the reaction wells at 21 min following the start of the reaction. Reagents were added to the wells by first ejecting the microplate from the luminometer and pipetting the reagents in using a multichannel pipette. The microplate was then promptly inserted again.\n\n### Stable cell line\n\nU-2OS cells stably expressing the SunTag reporter were generated using the Flp-In system with the pcDNA_CMV_ST plasmid, as described in Goldman et al., 2020. The cell line was a kind gift from Dr. Andrew Holland (Johns Hopkins University). While the cell line's identity has not recently been authenticated via STR profiling, it has frequently been tested for mycoplasma contamination and is mycoplasma free. smFISH Probe Labeling smFISH probes targeting the SunTag region of the mRNA reporter transcript were synthesized as described (Goldman et al., 2020; Gaspar et al., 2017). 20-mer oligonucleotides (Supplementary file 1) were ordered from IDT in an arrayed format, pooled, and labeled on the 3\u2019-end with amino-11\u201312 ddUTP (Lumiprobe A5040) using deoxynucleotidyl transferase (TdT, Thermo Fisher EP0162). After size exclusion purification on a Spin-X centrifuge column (Corning 8161) with Bio Gel P-4 Beads (Bio Rad 1504124), the oligonucleotide was labeled with Cy3-NHS ester (Lumiprobe 41020). Following the labeling reaction, the probes were again purified over a Spin-X column to remove excessive dyes.\n\nsmFISH-IF smFISH-IF was performed similarly as described (Goldman et al., 2020; Latallo et al., 2019). smFISH-IF was performed on U-2OS cells stably expressing the SunTag mRNA reporter and scFV-sfGFP. 18 mm #1 coverslips (Fisher 12-545-100) were etched in 3M sodium hydroxide (Millipore Sigma 221465) prior to cell plating. The coverslips were then washed 3x with PBS (Corning 21\u2013031-CV) and then coated for 30 min at 37\u00b0C with 0.25 mg/mL rat tail collagen I (Gibco A1048301) diluted in 20 mM sodium acetate (Sigma-Aldrich S2889). After another 2x PBS wash, 18,000 cells were plated per well and grown for 24 hr in DMEM supplemented with 10% FBS. 24 hr following plating, the media was supplemented with 1 \u00b5g/mL doxycycline hyclate (Millipore Sigma, #D9891) and 500 \u00b5M 3-indole acetic acid (IAA) (Sigma-Aldrich I2886).\n\nApproximately, 24 hr following induction, cells were treated with either 91 \u00b5M puromycin in the medium for 5 min, 208 \u00b5M emetine in the medium for 15 min followed by 91 \u00b5M puromycin in the medium for 5 min, or 37 \u00b5M anisomycin in the medium for 5 min followed by 91 \u00b5M puromycin in the medium for 5 min. Control cells were left untreated. Following treatment, samples were prepared for smFISH-IF. All solutions were prepared in nuclease free water (Quality Biological 351-029-131CS). Cells were washed 3x with 1x PBS (Corning 46\u2013013 CM) + 5 mM magnesium chloride (Sigma-Aldrich M2670-500G) (PBSM). Cell were then fixed for 10 min at room temperature in PBSM + 4% paraformaldehyde (Electron Microscopy Sciences 50-980-492). Following fixation, samples were washed for 3 \u00d7 5 min in PBSM and permeabilized for 10 min in PBSM + 5 mg/mL BSA (VWR VWRV0332-25G) + 0.1% Triton-X100 (Sigma-Aldrich T8787-100mL). After 3 \u00d7 5 min washes in PBSM, cells were incubated for 30 min at room temperature in 2xSSC (Corning 46\u2013020 CM), 10% formamide (Sigma-Aldrich F9037-100ML), and 5 mg/mL BSA (VWR VWRV0332-25G). Following pre-hybridization incubation, samples were incubated for 3 hr at 37\u00b0C in 2xSSC (Corning 46\u2013020 CM), 10% formamide (Sigma-Aldrich F9037-100ML), 1 mg/mL competitor E. coli tRNA (Sigma-Aldrich 10109541001), 10% w/v dextran sulfate (Sigma-Aldrich D8906-100G), 2 mM ribonucleoside vanadyl complex (NEB S1402S), 100 units/mL SUPERase In (Thermo Fisher AM2694), 60 nM SunTag_v4-Cy3 smFISH probes, and 1:1000 chicken anti-GFP (Aves Labs GFP-1010). The coverslips were then washed 4x with 2xSSC (Corning 46\u2013020 CM) + 10% formamide (Sigma-Aldrich F9037-100ML). The samples were then incubated with 2 \u00d7 20 min with a goat anti-chicken IgY secondary antibody labeled with Alexa Fluor 488 (Thermo Fisher A-11039). After 3x washes in 2xSCC, cells were mounted on pre-cleaned frosted glass cover slides (Fisher 12-552-3) with ProLong Diamond antifade reagent with DAPI (Invitrogen P36962). After curing for 24 hr, the samples were imaged on a custom Nikon Ti-2 wide-field microscope equipped with a 60 \u00d7 1.4 NA oil immersion objective lens (Nikon), a Spectra X LED light engine (Lumencor), and an Orca 4.0 v2 scMOS camera (Hamamatsu). The microscope was under automated control by Nikon Elements software. x-y pixel size: 107.5 nm. z-step: 300 nm.\n\n### smFISH Analysis\n\nFixed cell image analysis was performed as described (Goldman et al., 2020) with existing or custom MATLAB software. Spot detection of the mRNA and proteins channels were performed independently in FISH-Quant (Mueller et al., 2013). In the protein channel, all released single peptides in the cytoplasm were detected and thresholded based on their Gaussian fitting parameters (intensity and width) and inspected to ensure accuracy. All released single peptides were then averaged into an idealized point spread function to calculate the integrated intensity of a single SunTag array. In the mRNA channel, only cytoplasmic RNAs were included for analysis. After determining all cytoplasmic mRNA positions, FISH-Quant\u2019s transcription site quantification algorithm was employed to quantify the integrated intensity of the associated translation site. Briefly, a 11 \u00d7 11 bounding box was drawn at the position of each mRNA and Gaussian fitting was performed centered on the brightest pixel within this box. The integrated intensity of the translation site was then normalized against the intensity of the idealized single peptide to calculate the number of nascent chains associated with a given mRNA. The translation sites were filtered based on shape, intensity, and distance from the mRNA. Failure to converge on an accurate fit given these parameters resulted in the associated translation site intensity to have an intensity value of 0. Translation sites with an integrated intensity of less than one idealized single peptide were determined to be unassociated with SunTag signal. Only cells with greater than five and fewer than 35 mRNAs were considered.\n",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "fbeefa0c-74eb-4c46-aa36-68aac68148d8",
+      "submission_id": "096242f5-03af-41d1-83ee-ddaa5f65d3c4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Robert H Singer, Albert Einstein College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60303.sa1](https://doi.org/10.7554/eLife.60303.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe work convincingly shows that puromycin releases nascent polypeptides even in the presence of elongation inhibitors. This observation questions interpretations using detection of puromycin to denote sites of translation.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Puromycin reactivity does not accurately localize translation at the subcellular level\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by David Ron as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Marvin Tanenbaum (Reviewer #2); Maria Ugalde (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe work presented here convincingly shows that the puromycylated signal comes from released, truncated polypeptides, and not the nascent chains associated with the ribosome. In a straightforward experiment, using the SunTag system, the puromycylated nascent chains were not present on ribosomes, but only after the peptides were released from the ribosome did the fluorescence of the tagged puromycylated peptides become evident indicating that puromycin released them immediately upon incorporation even in the presence of elongation inhibitors.\n\nEssential revisions:\n\nThe reviewers have different suggestions-one feels that the literature needs to be more fully referenced. One other suggests consideration of the statistical basis for the observations in Figure 2 (has it been repeated?) and that the use of cycloheximide would have made the manuscript more robust. Acceptance of the manuscript does not require additional experimentation however, but include your response to these comments in a revised manuscript.\n\nReviewer #1:\n\nThe authors of this, and the co-submitted manuscript investigated the assumption that puromycin is a spatial indicator of translating ribosomes. This assumption is based on the puromycylation of nascent chains remaining associated with the ribosome on the mRNA, in effect freezing in its position there in the presence of elongation inhibitors. When detected by antibodies to the puromycin derivative, the signal supposedly indicated the sites of translation.\n\nThe work presented here convincingly shows that the puromycylated signal comes from released, truncated polypeptides, and not the nascent chains associated with the ribosome. In a straightforward experiment, using the suntag system, the puromycylated nascent chains were not present on ribosomes, but only after the peptides were released from the ribosome did the fluorescence of the tagged puromycylated peptides become evident indicating that puromycin released them immediately upon incorporation even in the presence of elongation inhibitors.\n\nThe work is of significance particularly since a number of high impact publications have relied on the puromycylation signal indicating the location of ongoing translation. Conclusions that derive from that assumption have to be re-evaluated, since some of them are clearly wrong (e.g. translation in the nucleus) or misleading (work on neurons). I feel it is important to publish this work before more erroneous conclusions contaminate the literature.\n\nReviewer #2:\n\nThis study by Enam and colleagues re-exams a frequently used assay based on puromycin incorporation to determine the sub-cellular site of mRNA translation. They convincingly show that puromycin treatment results in rapid release of nascent polypeptides, and that this is not inhibited by the translation elongation inhibitor emetine. I agree with the authors that it is important to point out this flaw in the puromycin incorporation assay, and their study does an excellent job in doing this. The main issue here is that there is already data in the literature that shows that nascent chains rapidly (tens of seconds) dissociate from the ribosome and move away from the site of translation, even in the presence of a translation elongation inhibitor (CHX). One example that comes to mind is the paper from the Zhuang lab (PMID: 27153499), where they show that nascent chains are fully released in 1-2 min upon addition of puro and CHX (note that they do actually observe a small delay in nascent chain release due to CHX). That being said, the Zhuang lab paper does not make a point out of this result and how it affects interpretation of OPP assays, and I believe that is still useful.\n\nReviewer #3:\n\nGreen's group questions the accuracy of the ribopuromycylation method (RPM) to report on the subcellular localization of translation. In RPM, translation elongation inhibitors (emetine and cyclohexamide) preclude the release of puromycylated peptides from the ribosome. Using three approaches, they demonstrate that emetine does not prevent the release of nascent peptides, which diffuse from the ribosome after puromycin treatment: 1) in vitro translation assay of luciferase reporters, 2) Localization of O-propargyl-puromycin (OPP) elongating peptides in the nucleus of C. elegans cells and, 3) Lack of co-localization of the SunTag translation reporter with its encoded mRNA in mammalian cells. Authors warn on the use of puromycylation assays as the sole approach to localize translation in cells.\n\nFindings from this work will certainly help the scientific community to interpret the data from puromycylation experiments and to choose the best experimental approaches to assess the spatial regulation of translation. The authors state that experiments have been performed once or twice. Hence, the existing experimental evidence could benefit from additional data and analysis to support the main conclusion (even though a similar manuscript submitted to this journal by the group of Peter A. Seems shows similar findings).\n\n1) Only emetine was used to inhibit translation elongation. Adding cyclohexamide to some or all the experiments will validate their conclusions.\n\n2) Experiment in Figure 2 has been done only once. The same experiment should be repeated two more times in worms.\n\n3) In Figure 3, the media of two experiments is plotted, but the standard deviation is not indicated. The same experiment should be repeated one more time. The experiment in Figure 3\u2014figure supplement 1B has done only once, but it is presented as a major conclusion in the Results section of the paper.\n\n4) Figure 4. The number of cells considered for the quantifications is low for a fixed experiment (two experiments of ten cells each). The experiment should be repeated one more time, and authors are encouraged to increase the number of cells they quantify.\n\n5) Figure 5 is a simple calculation of diffusion to support the idea that puromycylated peptides can be detected far from their site of translation. Two suggestions to support conclusions from this part of the paper: 1) Improve the mathematical modeling to fit translation localization results obtained from puromycylated experiments in neurons and cell lines, and 2) Support the conclusions from the modeling with experimental data. The latest can be done using their SunTag reporter system in U2OS cells or neurons to track single peptides.\n",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "51a972a4-3f7b-40d3-8ded-232edf07914a",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C1",
+      "claim": "Puromycin is a tyrosyl-tRNA mimic that blocks translation by labeling and releasing elongating polypeptide chains from translating ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin is a tyrosyl-tRNA mimic that blocks translation by labeling and releasing elongating polypeptide chains from translating ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about puromycin's mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "0ed1bcef-a4cf-42c5-971e-2b82aea96ea4",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C2",
+      "claim": "Puromycin has been used in molecular biology research for decades as a translation inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin has been used in molecular biology research for decades as a translation inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about the use of puromycin in research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "ba046971-5f2a-4a27-a998-2674af8748ac",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C3",
+      "claim": "The development of puromycin antibodies and derivatized puromycin analogs has enabled the quantification of active translation in bulk and single-cell assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of puromycin antibodies and derivatized puromycin analogs has enabled the quantification of active translation in bulk and single-cell assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the development and application of puromycin-based tools.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "baf301c1-d621-499c-8b21-7cda293aac7b",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C4",
+      "claim": "In vivo puromycylation assays have become popular tools for localizing translating ribosomes in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, in vivo puromycylation assays have become popular tools for localizing translating ribosomes in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the current use of puromycylation assays in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "0176a599-0278-4556-96bb-1f528515257d",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C5",
+      "claim": "Puromycylation assays often use elongation inhibitors to purportedly inhibit the release of puromycin-labeled nascent peptides from ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These assays often use elongation inhibitors to purportedly inhibit the release of puromycin-labeled nascent peptides from ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in puromycylation assays as reported in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "7068169a-e06b-4a35-9321-6cf48c30d9d0",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C6",
+      "claim": "Even in the presence of elongation inhibitors, puromycylated peptides are released and diffuse away from ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using in vitro and in vivo experiments in various eukaryotic systems, we demonstrate that, even in the presence of elongation inhibitors, puromycylated peptides are released and diffuse away from ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "0468e71a-d502-4b2a-97be-004998e8ac24",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C7",
+      "claim": "Puromycylation assays reveal subcellular sites, such as nuclei, where puromycylated peptides accumulate post-release.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycylation assays reveal subcellular sites, such as nuclei, where puromycylated peptides accumulate post-release and which do not necessarily coincide with sites of active translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "58d546a2-fde1-4399-8cda-14648702c34c",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C8",
+      "claim": "Sites where puromycylated peptides accumulate do not necessarily coincide with sites of active translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycylation assays reveal subcellular sites, such as nuclei, where puromycylated peptides accumulate post-release and which do not necessarily coincide with sites of active translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "3e206e49-cc63-40c7-9f18-f9260fc83437",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C9",
+      "claim": "Puromycin is a potent translational inhibitor that binds to ribosomes from all domains of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin is a potent translational inhibitor that binds to ribosomes from all domains of life and has been used as a chemical probe and selectable marker for decades (Aviner, 2020; Yarmolinsky and Haba, 1959).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "d3d6ae1c-08ab-4811-b597-223ae62a23cd",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C10",
+      "claim": "Puromycin is itself a substrate of the ribosomal peptidyl-transferase reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin is unique among translational inhibitors in that it is itself a substrate of the ribosomal peptidyl-transferase reaction (Nathans, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nathans, 1964.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "f34ccc30-ada8-45b0-8987-e2396ea09a68",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C11",
+      "claim": "Puromycin mimics the 3\u2032 adenosine of a tRNA charged with a modified tyrosine, which binds in the ribosomal acceptor site.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin mimics the 3\u2032 adenosine of a tRNA charged with a modified tyrosine, which binds in the ribosomal acceptor site (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1A showing the structural comparison.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "2ca248a9-7c49-4b7c-8f26-ecccd31913fa",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C12",
+      "claim": "The ribosome transfers the nascent peptide chain on the P-site tRNA to puromycin, leading to spontaneous dissociation of the nascent peptide from the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The ribosome transfers the nascent peptide chain on the P-site tRNA to puromycin, leading to spontaneous dissociation of the nascent peptide from the ribosome (Figure 1B; Nathans, 1964).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1B and a citation to Nathans, 1964.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "6b8b1ce3-4fd8-4684-bc16-4aecd7fe7d71",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C13",
+      "claim": "The development of anti-puromycin antibodies and derivatized analogs of puromycin has led to the commonplace use of puromycin as a metabolic probe to measure the extent of active translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of anti-puromycin antibodies and of derivatized analogs of puromycin (Fujiwara et al., 1982; Liu et al., 2012) has led to the commonplace use of puromycin as a metabolic probe to measure the extent of active translation, replacing radioactive tracers such as S35 methionine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fujiwara et al., 1982 and Liu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "f542a8aa-c214-4beb-9964-d0c20e8e6ff4",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C14",
+      "claim": "Puromycin-based probes can be used to quantify the amount of active translation from cells in a culture dish, tissue or organism.",
+      "claim_type": "EXPLICIT",
+      "source": "These probes can be used to quantify the amount of active translation from cells in a culture dish, tissue or organism (Schmidt et al., 2009; Chao et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schmidt et al., 2009 and Chao et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "0ba63195-e666-4117-9229-e81702dec666",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C15",
+      "claim": "The ribopuromycylation method (RPM) claims to detect the subcellular localization of actively translating ribosomes using a puromycin-specific antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent development of the ribopuromycylation method (RPM) (David et al., 2012; Bastide et al., 2018) pushed the technique a step further, claiming to detect the subcellular localization of actively translating ribosomes using a puromycin-specific antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes claims made in previous publications, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "459ba317-8b11-4028-a1cf-3e865dcc7e3c",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C16",
+      "claim": "Authors of initial RPM publications argued that translation elongation inhibitors cycloheximide or emetine prevent dissociation of the puromycylated peptides from the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In these initial publications, the authors argued that the translation elongation inhibitors cycloheximide or emetine prevent dissociation of the puromycylated peptides from the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes claims made in previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "6331ccdb-d43a-4d97-8022-8d57016d04af",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C17",
+      "claim": "Cycloheximide and emetine bind in the E-site of the ribosome far from the peptidyl-transferase center.",
+      "claim_type": "EXPLICIT",
+      "source": "Cycloheximide and emetine, however, bind in the E-site of the ribosome (Figure 1C) far from the peptidyl-transferase center (Garreau de Loubresse et al., 2014; Wong et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1C and citations to Garreau de Loubresse et al., 2014 and Wong et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "0a776102-9de1-486a-8f4a-d0883363e520",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C18",
+      "claim": "Cycloheximide and emetine prevent puromycin-induced splitting of ribosomes into individual subunits, but do not prevent the release of the majority of puromycylated peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work (Grollman, 1968; Colombo et al., 1965) established that these inhibitors prevent puromycin-induced splitting of ribosomes into individual subunits, but do not prevent the release of the majority of puromycylated peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Grollman, 1968 and Colombo et al., 1965.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "620e426a-9658-454a-aae0-2bc6364f8c3f",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C19",
+      "claim": "Cycloheximide and emetine are sometimes omitted from in vivo puromycylation assays based on the claim that short labeling times capture peptides near their original site of translation before significant diffusion has taken place.",
+      "claim_type": "EXPLICIT",
+      "source": "Cycloheximide and emetine, in fact, are sometimes omitted from in vivo puromycylation assays based on the claim that short (approximately 5 min) labeling times capture peptides near their original site of translation before significant diffusion has taken place (tom Dieck et al., 2015; Biever et al., 2020; Lewis et al., 2018; Glock et al., 2020; Holt et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes practices in the field, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "ac8d1073-9429-4ff9-9707-4496e4f37e4f",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C20",
+      "claim": "Puromycin-based imaging methods have been widely adopted, particularly in neurobiology, where translation in neuronal processes is crucial to neuronal function.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin-based imaging methods have been widely adopted, particularly in neurobiology, where translation in neuronal processes, far from the cell body, is crucial to neuronal function (tom Dieck et al., 2015; Biever et al., 2020; Lewis et al., 2018; Glock et al., 2020; Holt et al., 2019; V'kovski et al., 2019; Langille et al., 2019; Gonatopoulos-Pournatzis et al., 2020; Graber et al., 2013; Graber et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the adoption of the method in the field, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "0acc3eb0-2fa2-4ad5-8247-b24627cc2b14",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C21",
+      "claim": "Some studies have combined puromycin treatment with proximity-dependent ligation (PLA) to monitor the location of translation of a specific protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies have combined puromycin treatment with proximity-dependent ligation (PLA) to monitor the location of translation of a specific protein (tom Dieck et al., 2015), but this method again does not address diffusion of puromycylated peptides post-release from the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a method used in previous studies, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "a4b09345-3d7e-4c44-95bf-57603a325e92",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C22",
+      "claim": "Puromycin-based methods, as currently implemented, do not accurately localize translation at the subcellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present work, we establish that puromycin-based methods, as currently implemented, do not accurately localize translation at the subcellular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "e5e0eca2-9ccf-4af9-8873-b7ee916e81cc",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C23",
+      "claim": "Puromycin nearly instantaneously releases nascent proteins from the ribosome in rabbit reticulocyte lysate system.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a rabbit reticulocyte lysate system to show that puromycin nearly instantaneously releases nascent proteins from the ribosome, and that this release reaction is completely unaffected by emetine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's in vitro experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "71d275a3-02af-4770-90e7-354da73d88bb",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C24",
+      "claim": "The release reaction of nascent proteins by puromycin is completely unaffected by emetine in rabbit reticulocyte lysate.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a rabbit reticulocyte lysate system to show that puromycin nearly instantaneously releases nascent proteins from the ribosome, and that this release reaction is completely unaffected by emetine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's in vitro experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "0ccb3005-af65-4892-a18d-ac4b0aa347e6",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C25",
+      "claim": "Brief treatment with puromycin nearly completely dissociated nascent peptides from their mRNAs in cells, independent of the presence of emetine.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate this finding in cells, we visualized sites of active translation using fixed cell single-molecule imaging with the SunTag reporter system. Brief treatment with puromycin nearly completely dissociated nascent peptides from their mRNAs, again, independent of the presence of emetine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's cellular experiments using the SunTag system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "6c802ee7-e406-479c-a0b9-8cff0a59c140",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C26",
+      "claim": "Released peptides could diffuse to nearly any point within even large mammalian cells within seconds or minutes according to simple diffusion calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "Simple diffusion calculations predict that the released peptides could diffuse to nearly any point within even large mammalian cells within seconds or minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on diffusion calculations presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "49432fe2-704a-4815-8bb1-0e1e8960f397",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C27",
+      "claim": "Puromycylation methods described in the literature do not establish subcellular localization of translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, puromycylation methods described in the literature do not establish subcellular localization of translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "ecde7413-d757-430c-a92b-2dfcd04f7a47",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C28",
+      "claim": "O-propargyl-puromycin (OPP) is a click-reactive cell permeable puromycin analog that is commonly used to localize sites of translation.",
+      "claim_type": "EXPLICIT",
+      "source": "O-propargyl-puromycin (OPP) is a click-reactive cell permeable puromycin analog that is commonly used to localize sites of translation (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes OPP and its use, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "4c5c84b9-f81c-4999-8357-8f281f5439a2",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C29",
+      "claim": "When incubated with live cells or tissues, OPP reacts with translating ribosomes and becomes covalently attached to elongating peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "When incubated with live cells or tissues, OPP reacts with translating ribosomes and becomes covalently attached to elongating peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of OPP labeling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "aa3c2750-e8c2-461a-8b59-2871cba211d6",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C30",
+      "claim": "OPP signal was most intense in nuclei, specifically in the chromatin-free center where nucleoli reside, in live C. elegans gonads.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method to label translation in live C. elegans gonads, we observed bright labeling of live germlines upon a 5 min incubation with OPP. The OPP signal was most intense in nuclei, specifically in the chromatin-free center where nucleoli reside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study's experiments with C. elegans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "cd66a939-6248-418d-b8ef-098edf5ee255",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C31",
+      "claim": "A lower OPP signal was observed in the cytoplasm of C. elegans germlines, which contains the majority of (if not all) functional ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A lower signal was also observed in the cytoplasm, which contains the majority of (if not all) functional ribosomes (Klinge and Woolford, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study, with a citation supporting the location of functional ribosomes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "9ba0f158-989f-458d-9822-d7403c9a7fa7",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C32",
+      "claim": "OPP labeling of nuclei was ablated by pre-treatment with anisomycin in C. elegans germlines.",
+      "claim_type": "EXPLICIT",
+      "source": "OPP labeling of nuclei was ablated by pre-treatment with anisomycin, a competitive inhibitor of puromycin that stops elongation by binding to the peptidyl-transferase center (Grollman, 1967), thereby preventing puromycin from reacting with the nascent chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's experiments, with a citation supporting anisomycin's mechanism.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "6171c591-ba4c-47a5-8d50-fcd186c0ca7d",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C33",
+      "claim": "OPP labeling was unaffected by pre-treatment with emetine in C. elegans germlines.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, OPP labeling was unaffected by pre-treatment with emetine (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's experiments, supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "4969d435-3eef-4920-ae2b-432b5150abd4",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C34",
+      "claim": "Emetine-resistant puromycin labeling of nucleoli has been observed previously in tissue culture cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Emetine-resistant puromycin labeling of nucleoli has been observed previously in tissue culture cells (David et al., 2012) and may reflect trafficking or diffusion of puromycylated peptides into the nucleolus (Kubota et al., 1999; Schmidt et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "7feac6e9-7048-480b-b433-eb0ad074df3a",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C35",
+      "claim": "Emetine-resistant puromycin labeling of nucleoli may reflect trafficking or diffusion of puromycylated peptides into the nucleolus.",
+      "claim_type": "EXPLICIT",
+      "source": "Emetine-resistant puromycin labeling of nucleoli has been observed previously in tissue culture cells (David et al., 2012) and may reflect trafficking or diffusion of puromycylated peptides into the nucleolus (Kubota et al., 1999; Schmidt et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "96cd310c-5588-42b4-911c-de7ea217c850",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C36",
+      "claim": "OPP labels translational products but does not necessarily identify sites of active translation even in the presence of emetine.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that OPP labels translational products but does not necessarily identify sites of active translation even in the presence of emetine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the C. elegans experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "252db899-eb91-4038-b07c-f18ce52b01c8",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C37",
+      "claim": "Luciferase rapidly folds into an enzymatically active conformation only after release from the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This method relies on the fact that luciferase rapidly folds into an enzymatically active conformation only after release from the ribosome (Kolb et al., 1994; Frydman et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kolb et al., 1994 and Frydman et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "a0fd7eac-3db8-46e4-9251-53a6647e4058",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C38",
+      "claim": "RRL programmed with truncated luciferase mRNA displays little luciferase activity compared to RRL translating full-length mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "RRL programmed with the truncated mRNA (yellow trace) displays little luciferase activity compared to RRL translating full-length mRNA (purple trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study's in vitro experiments, supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "104ba07b-eccf-4f9e-8e88-bed74572b530",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C39",
+      "claim": "Addition of 91 \u03bcM puromycin causes a sharp increase in luminescence output from truncated luciferase mRNA, consistent with release of the stalled peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of 91 \u03bcM puromycin (the same concentration used by David et al., 2012) causes a sharp increase in luminescence output from the truncated mRNA, consistent with release of the stalled peptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's in vitro experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "2560c400-9b98-4034-b9ee-d1ce1d94871f",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C40",
+      "claim": "The increase in luminescence observed upon puromycin addition was not inhibited by simultaneous addition of emetine in rabbit reticulocyte lysate.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon addition of puromycin to lysate programmed with truncated mRNA, we noticed the expected steep increase in luminescence (yellow trace) that was not inhibited by simultaneous addition of emetine (blue trace) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's in vitro experiments, supported by Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "a4953381-c9f8-4e75-b510-43186756f70f",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C41",
+      "claim": "Puromycin treatment caused a sharp increase in luminescence that was not affected by emetine pre-treatment but was inhibited by anisomycin pre-treatment in GDPNP-treated lysate.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, puromycin treatment (yellow trace) caused a sharp increase in luminescence that was not affected by emetine pre-treatment (blue trace) but was inhibited by anisomycin pre-treatment (green trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's in vitro experiments, supported by Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "10baaf10-a196-4e94-8213-6e9d192b8875",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C42",
+      "claim": "Pretreating translating ribosomes with emetine does not prevent the release of nascent peptides by puromycin in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that pretreating translating ribosomes with emetine does not prevent the release of nascent peptides by puromycin in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the in vitro experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "6850549a-de8e-4f1c-b58f-f7a0c6f8167b",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C43",
+      "claim": "The SunTag technique relies on a reporter mRNA encoding tandem repeats of the SunTag epitope near the 5\u2032 end of the coding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique relies on a reporter mRNA encoding tandem repeats of the SunTag epitope near the 5\u2032 end of the coding sequence (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the SunTag method, supported by Figure 4A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "3648773c-c17d-4d72-a87f-67055d2701f3",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C44",
+      "claim": "When translated, each SunTag peptide is bound by a single chain variable fragment (scFV) of a GCN4 antibody fused to super folder GFP (scFV-sfGFP).",
+      "claim_type": "EXPLICIT",
+      "source": "When translated, each SunTag peptide is bound by a single chain variable fragment (scFV) of a GCN4 antibody fused to super folder GFP (scFV-sfGFP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of the SunTag system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "d35376df-e97c-4b2f-bc3e-da27f4176ac7",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C45",
+      "claim": "An auxin-inducible degron (AID) near the 3\u2032 end of the coding sequence allows controlled degradation of the fully-synthesized SunTag array.",
+      "claim_type": "EXPLICIT",
+      "source": "An auxin-inducible degron (AID) near the 3\u2032 end of the coding sequence allows controlled degradation of the fully-synthesized SunTag array, reducing fluorescence background and enabling detection of single fully-synthesized polypeptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the SunTag reporter system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "b59bc5c4-1b51-472d-8979-a05ee31b3075",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C46",
+      "claim": "In untreated cells, an average of 63% of single mRNAs per cell co-localize with bright SunTag signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In untreated cells, an average of 63% of single mRNAs (red foci) per cell co-localize with bright SunTag signal (green foci) (Figure 4B, top row and 4C); these co-localized spots reflect mRNAs bound by ribosomes synthesizing the SunTag reporter, while weaker isolated green spots reflect single fully synthesized SunTag polypeptides that have been released from the ribosome (Wu et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's cellular experiments, supported by Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "2f3c8c63-f10d-42c6-99fe-688e59ecc9d2",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C47",
+      "claim": "Upon treatment with 91 \u03bcM puromycin for 5 min, an average of only 3% of mRNAs per cell colocalize with green signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon treatment with 91 \u03bcM puromycin for 5 min, an average of only 3% of mRNAs per cell colocalize with green signal, consistent with release of nascent chains upon puromycin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's cellular experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "eb4b13ce-5840-4681-af3b-376186986fac",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C48",
+      "claim": "Pre-treatment with 208 \u03bcM emetine for 15 min resulted in only 5% of mRNAs on average colocalizing with SunTag signal after puromycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, pre-treatment with 208 \u03bcM emetine for 15 min yielded similar results: only 5% of mRNAs on average colocalized with SunTag signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's cellular experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "1fb4a90f-26e8-42c3-97fc-c984c17892ee",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C49",
+      "claim": "Pre-treatment for 5 min with elongation inhibitor anisomycin (37 \u03bcM) resulted in an average of 50% of mRNAs co-localized with green foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, pre-treatment for 5 min with elongation inhibitor anisomycin (37 \u03bcM), resulted in an average of 50% of mRNAs co-localized with green foci, as seen in untreated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's cellular experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "ac08a425-b1ca-4468-a94d-7c65efa57e39",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C50",
+      "claim": "5 min of puromycin treatment causes release of nascent polypeptides and diffusion away from ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that 5 min of puromycin treatment causes release of nascent polypeptides and diffusion away from ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the SunTag experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "e7b3ba13-49cd-4c2e-8056-a2abe2bbc93d",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C51",
+      "claim": "Pre-treatment with emetine has no effect on puromycin-induced release of nascent polypeptides in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-treatment with emetine has no effect on puromycin-induced release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the SunTag experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "9e382156-2e63-4efb-8c6b-de8c55d3de23",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C52",
+      "claim": "A protein is expected to diffuse ~100 \u00b5m in less than 1 min even in the most limiting case of one-dimensional diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even in the most limiting case of one-dimensional diffusion\u2014approximating movement along a very narrow neural projection\u2014a protein is expected to diffuse ~100 \u00b5m in less than 1 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on diffusion calculations presented in the study, supported by Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "a68b672b-0b89-4a60-90e4-daa7ae9da372",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C53",
+      "claim": "The distance a protein can diffuse in minutes is large compared to the scale of relevant structures to which protein synthesis was localized in neurons (tens of microns).",
+      "claim_type": "EXPLICIT",
+      "source": "This distance is large compared to both the scale of the relevant structures to which protein synthesis was localized in neurons (tens of microns) (tom Dieck et al., 2015; Biever et al., 2020), and to the diameter of HeLa cells (~20 microns) (Borle, 1969), in which the method was demonstrated (David et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the diffusion calculations and comparison to cell dimensions, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "843e4b22-2e41-4fc9-a970-324d789ad340",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C54",
+      "claim": "Limiting puromycin treatment time to a few minutes does not ensure that nascent proteins remain confined to the subcellular region in which they are synthesized.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, limiting puromycin treatment time to a few minutes does not ensure that nascent proteins remain confined to the subcellular region in which they are synthesized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the diffusion calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "3b9e4974-1314-43db-92cf-6673feab57e8",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C55",
+      "claim": "The puromycin method for visualizing localized translation does not faithfully detect nascent polypeptides at the site of their synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we have demonstrated that the puromycin method for visualizing localized translation does not faithfully detect nascent polypeptides at the site of their synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "81e5e2d7-f7c9-49da-94cb-5dbbd192ebc3",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C56",
+      "claim": "Puromycylated polypeptides are released from the ribosome and can diffuse far away from the site of synthesis, even following short treatment times.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycylated polypeptides are released from the ribosome and can diffuse far away from the site of synthesis, even following short treatment times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experiments and diffusion calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "342ea154-c76c-4073-a080-f98ce683e955",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C57",
+      "claim": "Treatment with emetine does not prevent release of puromycylated peptides from the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, treatment with emetine does not prevent release of puromycylated peptides from the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "fa4a40c0-7ea6-4121-8894-079bc9613a15",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C58",
+      "claim": "Neither emetine nor cycloheximide ultimately prevent release of puromycylated peptides according to previous polysome gradient analysis and real-time SunTag imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with previous polysome gradient analysis (Colombo et al., 1965; Grollman, 1968) and real-time SunTag imaging (Wang et al., 2016) that has shown that neither emetine nor cycloheximide ultimately prevent release of these peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "390b0b29-34b7-49a6-9569-aac53923b1c0",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C59",
+      "claim": "The specific subcellular localizations detected by puromycylation methods are in many cases the end result of trafficking or diffusion of partially-synthesized puromycylated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore likely that the specific subcellular localizations detected by this method are in many cases the end result of trafficking or diffusion of partially-synthesized puromycylated proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "257fbe90-fdab-4eab-9814-2be0708237a8",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C60",
+      "claim": "The bright nucleolar labeling detected in David et al., 2012 likely does not reflect nucleolar translation, but the trafficking of puromycylated N-terminal fragments of highly abundant ribosomal proteins to the nucleolus.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the bright nucleolar labeling detected in David et al., 2012 likely does not reflect nucleolar translation, but the trafficking of puromycylated N-terminal fragments of highly abundant ribosomal proteins (which have N-terminal nucleolar localization signals) to the nucleolus (Kubota et al., 1999; Schmidt et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of previous findings based on the current study's results, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "a785c4bb-e0fa-40cc-a1ab-7d766778de89",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C61",
+      "claim": "Conclusions reached using the puromycylation method should be treated cautiously, even in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, conclusions reached using this method should be treated cautiously, even in neurons, where cellular projections protrude relatively far from the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "77fd0fd8-f9aa-4b1b-8352-c4d5debe8542",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C62",
+      "claim": "Other reporter-based methods that rely on rapid, single turnover chemistry, such as the 'flash' activity of some luciferases, may allow for more accurate localization of the sites of protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that other reporter-based methods that rely on rapid, single turnover chemistry, such as the 'flash' activity of some luciferases, may allow for more accurate localization of the sites of protein synthesis (Na et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for alternative methods, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "3110c48b-a7ad-4939-a2a0-475fe501fa36",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C63",
+      "claim": "Derivatizing puromycin with a chemical moiety large enough to obstruct its passage through the ribosome exit tunnel would immobilize reacted nascent chains on the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in principle, derivatizing puromycin with a chemical moiety large enough to obstruct its passage through the ribosome exit tunnel would immobilize reacted nascent chains on the ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal for improving the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "1c2fddc1-d18b-48b8-b689-f785fa3fa9c7",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C64",
+      "claim": "The viability of immobilizing nascent chains on the ribosome is demonstrated by the RiboLace method, which uses a puromycin-biotin conjugate bound to magnetic beads to capture translating ribosomes from cellular lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "The viability of this concept is demonstrated by the RiboLace method (Clamer et al., 2018), which uses a puromycin-biotin conjugate bound to magnetic beads to capture translating ribosomes from cellular lysates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Clamer et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "ad06369c-1021-4484-94ae-8e8c76fbc35d",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C65",
+      "claim": "RiboLace beads are not cell permeable and are unsuitable for in vivo imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Of course, these beads are not cell permeable and are unsuitable for in vivo imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the RiboLace method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "b45a8e5c-185b-4e26-bade-7c582adcb1af",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C66",
+      "claim": "Anisomycin is a competitive inhibitor of puromycin that stops elongation by binding to the peptidyl-transferase center.",
+      "claim_type": "EXPLICIT",
+      "source": "OPP labeling of nuclei was ablated by pre-treatment with anisomycin, a competitive inhibitor of puromycin that stops elongation by binding to the peptidyl-transferase center (Grollman, 1967), thereby preventing puromycin from reacting with the nascent chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Grollman, 1967.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "38222dad-8beb-4076-a476-0fe67643c6a6",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C67",
+      "claim": "The cytoplasm contains the majority of (if not all) functional ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A lower signal was also observed in the cytoplasm, which contains the majority of (if not all) functional ribosomes (Klinge and Woolford, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Klinge and Woolford, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "5cb3141b-2719-46dd-8f26-6fe13cd11d50",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C68",
+      "claim": "The diffusion coefficient of GFP in the cytosol has been previously measured.",
+      "claim_type": "IMPLICIT",
+      "source": "To determine how far a nascent protein might diffuse on these timescales (i.e. the spatial resolution of the method), we calculated the expected displacement as a function of time, based on the previously measured diffusion coefficient of GFP in the cytosol (Di Rienzo et al., 2014; Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Di Rienzo et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "3178272d-e25e-4ba5-b022-e747e0405a1c",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "claim_id": "C69",
+      "claim": "The diameter of HeLa cells is approximately 20 microns.",
+      "claim_type": "EXPLICIT",
+      "source": "This distance is large compared to both the scale of the relevant structures to which protein synthesis was localized in neurons (tens of microns) (tom Dieck et al., 2015; Biever et al., 2020), and to the diameter of HeLa cells (~20 microns) (Borle, 1969), in which the method was demonstrated (David et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Borle, 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c5788a0b-eb6e-47eb-86ba-2e7e8efa9b7f",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Background claims establish puromycin as a tyrosyl-tRNA mimic that acts as a substrate for peptidyl-transferase, leading to nascent peptide release. Puromycin antibodies and derivatized analogs have enabled its use as a metabolic probe for quantifying active translation in bulk and single-cell assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C14 describe well-established knowledge about puromycin's mechanism and historical use, supported by appropriate citations to foundational literature (Nathans 1964, Fujiwara et al. 1982, Liu et al. 2012, Schmidt et al. 2009). These are accurate descriptions of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "a0f305b0-5ed3-4df5-aa59-18c63bcd147c",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work claimed that puromycylation assays with elongation inhibitors (cycloheximide/emetine) could localize translating ribosomes subcellularly. However, these inhibitors bind the E-site far from the peptidyl-transferase center, and earlier studies showed they prevent ribosome splitting but not peptide release. Some studies omit inhibitors, claiming short labeling times prevent diffusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C15-C21 accurately describe prior literature and its claims, supported by appropriate citations (David et al. 2012, Garreau de Loubresse et al. 2014, Grollman 1968, Colombo et al. 1965). The authors correctly identify the contradiction between claimed mechanism and known inhibitor binding sites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "9edc65ba-3742-4bae-b8b6-b6e06b44f7a8",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In live C. elegans germlines, OPP labeling was most intense in nuclei/nucleoli rather than cytoplasm (where most ribosomes reside). Nuclear labeling was abolished by anisomycin but unaffected by emetine, indicating OPP labels translational products but does not necessarily identify sites of active translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 are supported by experimental data in Figure 2, showing differential effects of anisomycin (competitive inhibitor at peptidyl-transferase center) versus emetine (E-site inhibitor). The observation that emetine doesn't prevent nuclear labeling while anisomycin does is consistent with peptide release and diffusion. Statistical analysis shows significant differences (p<0.0001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "8bf5d0f9-fdfb-4bb7-b6be-1e9cf82f5394",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In rabbit reticulocyte lysate with truncated luciferase mRNA, puromycin caused rapid release of nascent peptides (detected by luminescence increase), which was completely unaffected by emetine pretreatment but blocked by anisomycin. This demonstrates emetine does not prevent puromycin-induced peptide release in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24, C37-C42 are supported by experimental data in Figure 3. The luciferase assay is well-validated (Kolb et al. 1994, Frydman et al. 1994). The experiments include appropriate controls (GDPNP to equalize translation time, anisomycin as positive control for blocking puromycin). The results clearly show emetine does not prevent the luminescence increase, indicating peptide release occurs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using the SunTag reporter system in fixed U-2OS cells, puromycin treatment (5 min) reduced mRNA-nascent chain colocalization from 63% to 3%. Emetine pretreatment did not prevent this dissociation (5% colocalization), while anisomycin maintained colocalization at 50%, demonstrating emetine does not prevent puromycin-induced peptide release in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C43-C51 are supported by single-molecule FISH-IF data in Figure 4. The SunTag system is well-established for visualizing translation. Statistical analysis shows highly significant differences (p<0.0001) between untreated and puromycin-treated conditions. The similar effects of puromycin alone versus emetine+puromycin, contrasted with anisomycin+puromycin, provide strong evidence that emetine does not prevent peptide release.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "6defcfff-6bf7-41f4-86bf-a0d14f73f8a0",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Diffusion calculations based on GFP's measured diffusion coefficient predict proteins can diffuse ~100 \u03bcm in <1 min even in 1D (most restrictive case). This distance exceeds the scale of neuronal structures (~tens of microns) and HeLa cell diameter (~20 microns) where the method was applied, indicating short treatment times do not ensure spatial confinement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C52-C54, C68-C69 present straightforward diffusion calculations using established diffusion coefficients (Di Rienzo et al. 2014) and the equation <x\u00b2>=2nDt. The mathematical approach is sound and the comparison to relevant cellular dimensions (supported by citations) is appropriate. The conclusion that minutes-long treatments allow extensive diffusion is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "0f0565b5-a84c-4cfc-abad-a8209c7cf784",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The main conclusion is that puromycin-based methods do not accurately localize translation at the subcellular level because puromycylated peptides are released and diffuse away from ribosomes even with elongation inhibitors, and accumulate at sites (like nuclei) that do not coincide with active translation sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8, C22, C27, C55-C57 represent the study's main conclusions, which are well-supported by converging evidence from three experimental systems (C. elegans OPP labeling, rabbit reticulocyte lysate, SunTag in mammalian cells) plus diffusion calculations. The conclusions logically follow from the experimental data and address the central hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "e44f0204-bddc-4b97-8bc5-155312e72a7a",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The findings agree with prior polysome gradient and SunTag studies showing elongation inhibitors don't prevent peptide release. The authors conclude that detected subcellular localizations likely reflect trafficking/diffusion of puromycylated peptides (e.g., nucleolar labeling reflects ribosomal protein trafficking), and caution is warranted even in neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 appropriately contextualize findings with prior work (Colombo et al. 1965, Grollman 1968, Wang et al. 2016) and provide reasonable interpretations. The nucleolar labeling explanation (C60) is supported by citations about ribosomal protein trafficking (Kubota et al. 1999, Schmidt et al. 1995). The cautionary recommendation is justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "007e9318-78dc-4fbf-bdd6-680cd1f51b9e",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors suggest alternative approaches: reporter-based methods using rapid single-turnover chemistry (e.g., flash luciferases) or derivatizing puromycin with moieties large enough to obstruct the ribosome exit tunnel (as demonstrated by RiboLace, though not cell-permeable).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C65 are speculative suggestions for future work. While C62 and C64 cite relevant methods (Na et al. 2016, Clamer et al. 2018), these are proposals rather than tested solutions. The suggestion in C63 is theoretical and untested. These represent reasonable directions but lack experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    },
+    {
+      "id": "af5f6e6e-9d36-4d1a-ade0-550ca1b42ee9",
+      "content_id": "6f2ab930-6238-48ea-837c-688deb0ff8f8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Supporting mechanistic claims establish that anisomycin is a competitive inhibitor binding the peptidyl-transferase center (preventing puromycin reaction), and that cytoplasm contains the majority of functional ribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are well-established facts supported by appropriate citations (Grollman 1967, Klinge and Woolford 2019). These provide necessary context for interpreting the experimental results, particularly the differential effects of anisomycin versus emetine.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:08.398449Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "51a972a4-3f7b-40d3-8ded-232edf07914a",
+      "result_id": "c5788a0b-eb6e-47eb-86ba-2e7e8efa9b7f"
+    },
+    {
+      "claim_id": "0ed1bcef-a4cf-42c5-971e-2b82aea96ea4",
+      "result_id": "c5788a0b-eb6e-47eb-86ba-2e7e8efa9b7f"
+    },
+    {
+      "claim_id": "ba046971-5f2a-4a27-a998-2674af8748ac",
+      "result_id": "c5788a0b-eb6e-47eb-86ba-2e7e8efa9b7f"
+    },
+    {
+      "claim_id": "3e206e49-cc63-40c7-9f18-f9260fc83437",
+      "result_id": "c5788a0b-eb6e-47eb-86ba-2e7e8efa9b7f"
+    },
+    {
+      "claim_id": "d3d6ae1c-08ab-4811-b597-223ae62a23cd",
+      "result_id": "c5788a0b-eb6e-47eb-86ba-2e7e8efa9b7f"
+    },
+    {
+      "claim_id": "f34ccc30-ada8-45b0-8987-e2396ea09a68",
+      "result_id": "c5788a0b-eb6e-47eb-86ba-2e7e8efa9b7f"
+    },
+    {
+      "claim_id": "2ca248a9-7c49-4b7c-8f26-ecccd31913fa",
+      "result_id": "c5788a0b-eb6e-47eb-86ba-2e7e8efa9b7f"
+    },
+    {
+      "claim_id": "6b8b1ce3-4fd8-4684-bc16-4aecd7fe7d71",
+      "result_id": "c5788a0b-eb6e-47eb-86ba-2e7e8efa9b7f"
+    },
+    {
+      "claim_id": "f542a8aa-c214-4beb-9964-d0c20e8e6ff4",
+      "result_id": "c5788a0b-eb6e-47eb-86ba-2e7e8efa9b7f"
+    },
+    {
+      "claim_id": "baf301c1-d621-499c-8b21-7cda293aac7b",
+      "result_id": "a0f305b0-5ed3-4df5-aa59-18c63bcd147c"
+    },
+    {
+      "claim_id": "0176a599-0278-4556-96bb-1f528515257d",
+      "result_id": "a0f305b0-5ed3-4df5-aa59-18c63bcd147c"
+    },
+    {
+      "claim_id": "0ba63195-e666-4117-9229-e81702dec666",
+      "result_id": "a0f305b0-5ed3-4df5-aa59-18c63bcd147c"
+    },
+    {
+      "claim_id": "459ba317-8b11-4028-a1cf-3e865dcc7e3c",
+      "result_id": "a0f305b0-5ed3-4df5-aa59-18c63bcd147c"
+    },
+    {
+      "claim_id": "6331ccdb-d43a-4d97-8022-8d57016d04af",
+      "result_id": "a0f305b0-5ed3-4df5-aa59-18c63bcd147c"
+    },
+    {
+      "claim_id": "0a776102-9de1-486a-8f4a-d0883363e520",
+      "result_id": "a0f305b0-5ed3-4df5-aa59-18c63bcd147c"
+    },
+    {
+      "claim_id": "620e426a-9658-454a-aae0-2bc6364f8c3f",
+      "result_id": "a0f305b0-5ed3-4df5-aa59-18c63bcd147c"
+    },
+    {
+      "claim_id": "ac8d1073-9429-4ff9-9707-4496e4f37e4f",
+      "result_id": "a0f305b0-5ed3-4df5-aa59-18c63bcd147c"
+    },
+    {
+      "claim_id": "0acc3eb0-2fa2-4ad5-8247-b24627cc2b14",
+      "result_id": "a0f305b0-5ed3-4df5-aa59-18c63bcd147c"
+    },
+    {
+      "claim_id": "aa3c2750-e8c2-461a-8b59-2871cba211d6",
+      "result_id": "9edc65ba-3742-4bae-b8b6-b6e06b44f7a8"
+    },
+    {
+      "claim_id": "cd66a939-6248-418d-b8ef-098edf5ee255",
+      "result_id": "9edc65ba-3742-4bae-b8b6-b6e06b44f7a8"
+    },
+    {
+      "claim_id": "9ba0f158-989f-458d-9822-d7403c9a7fa7",
+      "result_id": "9edc65ba-3742-4bae-b8b6-b6e06b44f7a8"
+    },
+    {
+      "claim_id": "6171c591-ba4c-47a5-8d50-fcd186c0ca7d",
+      "result_id": "9edc65ba-3742-4bae-b8b6-b6e06b44f7a8"
+    },
+    {
+      "claim_id": "4969d435-3eef-4920-ae2b-432b5150abd4",
+      "result_id": "9edc65ba-3742-4bae-b8b6-b6e06b44f7a8"
+    },
+    {
+      "claim_id": "7feac6e9-7048-480b-b433-eb0ad074df3a",
+      "result_id": "9edc65ba-3742-4bae-b8b6-b6e06b44f7a8"
+    },
+    {
+      "claim_id": "96cd310c-5588-42b4-911c-de7ea217c850",
+      "result_id": "9edc65ba-3742-4bae-b8b6-b6e06b44f7a8"
+    },
+    {
+      "claim_id": "e5e0eca2-9ccf-4af9-8873-b7ee916e81cc",
+      "result_id": "8bf5d0f9-fdfb-4bb7-b6be-1e9cf82f5394"
+    },
+    {
+      "claim_id": "71d275a3-02af-4770-90e7-354da73d88bb",
+      "result_id": "8bf5d0f9-fdfb-4bb7-b6be-1e9cf82f5394"
+    },
+    {
+      "claim_id": "252db899-eb91-4038-b07c-f18ce52b01c8",
+      "result_id": "8bf5d0f9-fdfb-4bb7-b6be-1e9cf82f5394"
+    },
+    {
+      "claim_id": "a0fd7eac-3db8-46e4-9251-53a6647e4058",
+      "result_id": "8bf5d0f9-fdfb-4bb7-b6be-1e9cf82f5394"
+    },
+    {
+      "claim_id": "104ba07b-eccf-4f9e-8e88-bed74572b530",
+      "result_id": "8bf5d0f9-fdfb-4bb7-b6be-1e9cf82f5394"
+    },
+    {
+      "claim_id": "2560c400-9b98-4034-b9ee-d1ce1d94871f",
+      "result_id": "8bf5d0f9-fdfb-4bb7-b6be-1e9cf82f5394"
+    },
+    {
+      "claim_id": "a4953381-c9f8-4e75-b510-43186756f70f",
+      "result_id": "8bf5d0f9-fdfb-4bb7-b6be-1e9cf82f5394"
+    },
+    {
+      "claim_id": "10baaf10-a196-4e94-8213-6e9d192b8875",
+      "result_id": "8bf5d0f9-fdfb-4bb7-b6be-1e9cf82f5394"
+    },
+    {
+      "claim_id": "0ccb3005-af65-4892-a18d-ac4b0aa347e6",
+      "result_id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c"
+    },
+    {
+      "claim_id": "6850549a-de8e-4f1c-b58f-f7a0c6f8167b",
+      "result_id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c"
+    },
+    {
+      "claim_id": "3648773c-c17d-4d72-a87f-67055d2701f3",
+      "result_id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c"
+    },
+    {
+      "claim_id": "d35376df-e97c-4b2f-bc3e-da27f4176ac7",
+      "result_id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c"
+    },
+    {
+      "claim_id": "b59bc5c4-1b51-472d-8979-a05ee31b3075",
+      "result_id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c"
+    },
+    {
+      "claim_id": "2f3c8c63-f10d-42c6-99fe-688e59ecc9d2",
+      "result_id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c"
+    },
+    {
+      "claim_id": "eb4b13ce-5840-4681-af3b-376186986fac",
+      "result_id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c"
+    },
+    {
+      "claim_id": "1fb4a90f-26e8-42c3-97fc-c984c17892ee",
+      "result_id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c"
+    },
+    {
+      "claim_id": "ac08a425-b1ca-4468-a94d-7c65efa57e39",
+      "result_id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c"
+    },
+    {
+      "claim_id": "e7b3ba13-49cd-4c2e-8056-a2abe2bbc93d",
+      "result_id": "76a5d7b8-94f6-46d5-b0c2-9765da5b840c"
+    },
+    {
+      "claim_id": "6c802ee7-e406-479c-a0b9-8cff0a59c140",
+      "result_id": "6defcfff-6bf7-41f4-86bf-a0d14f73f8a0"
+    },
+    {
+      "claim_id": "9e382156-2e63-4efb-8c6b-de8c55d3de23",
+      "result_id": "6defcfff-6bf7-41f4-86bf-a0d14f73f8a0"
+    },
+    {
+      "claim_id": "a68b672b-0b89-4a60-90e4-daa7ae9da372",
+      "result_id": "6defcfff-6bf7-41f4-86bf-a0d14f73f8a0"
+    },
+    {
+      "claim_id": "843e4b22-2e41-4fc9-a970-324d789ad340",
+      "result_id": "6defcfff-6bf7-41f4-86bf-a0d14f73f8a0"
+    },
+    {
+      "claim_id": "5cb3141b-2719-46dd-8f26-6fe13cd11d50",
+      "result_id": "6defcfff-6bf7-41f4-86bf-a0d14f73f8a0"
+    },
+    {
+      "claim_id": "3178272d-e25e-4ba5-b022-e747e0405a1c",
+      "result_id": "6defcfff-6bf7-41f4-86bf-a0d14f73f8a0"
+    },
+    {
+      "claim_id": "7068169a-e06b-4a35-9321-6cf48c30d9d0",
+      "result_id": "0f0565b5-a84c-4cfc-abad-a8209c7cf784"
+    },
+    {
+      "claim_id": "0468e71a-d502-4b2a-97be-004998e8ac24",
+      "result_id": "0f0565b5-a84c-4cfc-abad-a8209c7cf784"
+    },
+    {
+      "claim_id": "58d546a2-fde1-4399-8cda-14648702c34c",
+      "result_id": "0f0565b5-a84c-4cfc-abad-a8209c7cf784"
+    },
+    {
+      "claim_id": "a4b09345-3d7e-4c44-95bf-57603a325e92",
+      "result_id": "0f0565b5-a84c-4cfc-abad-a8209c7cf784"
+    },
+    {
+      "claim_id": "49432fe2-704a-4815-8bb1-0e1e8960f397",
+      "result_id": "0f0565b5-a84c-4cfc-abad-a8209c7cf784"
+    },
+    {
+      "claim_id": "3b9e4974-1314-43db-92cf-6673feab57e8",
+      "result_id": "0f0565b5-a84c-4cfc-abad-a8209c7cf784"
+    },
+    {
+      "claim_id": "81e5e2d7-f7c9-49da-94cb-5dbbd192ebc3",
+      "result_id": "0f0565b5-a84c-4cfc-abad-a8209c7cf784"
+    },
+    {
+      "claim_id": "342ea154-c76c-4073-a080-f98ce683e955",
+      "result_id": "0f0565b5-a84c-4cfc-abad-a8209c7cf784"
+    },
+    {
+      "claim_id": "fa4a40c0-7ea6-4121-8894-079bc9613a15",
+      "result_id": "e44f0204-bddc-4b97-8bc5-155312e72a7a"
+    },
+    {
+      "claim_id": "390b0b29-34b7-49a6-9569-aac53923b1c0",
+      "result_id": "e44f0204-bddc-4b97-8bc5-155312e72a7a"
+    },
+    {
+      "claim_id": "257fbe90-fdab-4eab-9814-2be0708237a8",
+      "result_id": "e44f0204-bddc-4b97-8bc5-155312e72a7a"
+    },
+    {
+      "claim_id": "a785c4bb-e0fa-40cc-a1ab-7d766778de89",
+      "result_id": "e44f0204-bddc-4b97-8bc5-155312e72a7a"
+    },
+    {
+      "claim_id": "77fd0fd8-f9aa-4b1b-8352-c4d5debe8542",
+      "result_id": "007e9318-78dc-4fbf-bdd6-680cd1f51b9e"
+    },
+    {
+      "claim_id": "3110c48b-a7ad-4939-a2a0-475fe501fa36",
+      "result_id": "007e9318-78dc-4fbf-bdd6-680cd1f51b9e"
+    },
+    {
+      "claim_id": "1c2fddc1-d18b-48b8-b689-f785fa3fa9c7",
+      "result_id": "007e9318-78dc-4fbf-bdd6-680cd1f51b9e"
+    },
+    {
+      "claim_id": "ad06369c-1021-4484-94ae-8e8c76fbc35d",
+      "result_id": "007e9318-78dc-4fbf-bdd6-680cd1f51b9e"
+    },
+    {
+      "claim_id": "b45a8e5c-185b-4e26-bade-7c582adcb1af",
+      "result_id": "af5f6e6e-9d36-4d1a-ade0-550ca1b42ee9"
+    },
+    {
+      "claim_id": "38222dad-8beb-4076-a476-0fe67643c6a6",
+      "result_id": "af5f6e6e-9d36-4d1a-ade0-550ca1b42ee9"
+    }
+  ],
+  "comparisons": []
+}

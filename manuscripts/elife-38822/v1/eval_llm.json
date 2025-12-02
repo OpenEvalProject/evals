@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The WS (wrinkly spreader) phenotype in P. fluorescens SBW25 evolves through mutations in three DGC-encoding pathways (Wsp, Aws, Mws) that lead to overproduction of c-di-GMP and cellulose, forming a mat at the air-liquid interface under oxygen-limited conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by multiple citations to prior work and Figure 1A. These claims establish the foundational biology of the experimental system and are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Parallel evolution via Wsp, Aws, and Mws pathways is not explained by selection but rather by mutational target size, as alternative pathways produce WS types with indistinguishable fitness when the three main pathways are eliminated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by citations to Lind et al., 2015 and provide the conceptual framework for the study. The inference that parallel evolution is not selection-driven is logically derived from the fitness equivalence data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C76"
+    ],
+    "result": "Mutation rates to WS differ significantly among pathways: Aws has the highest rate (6.5\u00d710\u207b\u2079), approximately double that of Wsp (3.7\u00d710\u207b\u2079) and an order of magnitude higher than Mws (0.74\u00d710\u207b\u2079). The sum of individual pathway rates approximates the wild-type rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15, C76 are directly supported by experimental fluctuation test data shown in Figure 2 with appropriate statistical analysis. The additive nature of mutation rates (C14) provides validation that these are the primary pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "The Aws pathway having the highest mutation rate is surprising given its smaller target size (2.3 kb, 3 genes) compared to Wsp (8.4 kb, 7 genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is a valid inference from the mutation rate data (C11-C13) and knowledge of pathway sizes. This observation motivates the subsequent investigation of mutational hotspots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The Wsp pathway is a chemotaxis-like system with seven genes encoding proteins that regulate WspR DGC activity through methylation and phosphorylation. WS mutants arise primarily from mutations in WspF and WspE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 describe established knowledge of the Wsp pathway supported by multiple citations. This provides the molecular basis for subsequent modeling efforts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The Aws pathway consists of three genes where AwsO sequesters the negative regulator AwsX at the outer membrane, releasing inhibition of the DGC AwsR. WS arises from increased AwsX-AwsO binding or loss of AwsX-AwsR interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe established knowledge of the Aws pathway supported by multiple citations to work in P. aeruginosa and P. fluorescens. This provides the molecular basis for modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "MwsR is a 3.9 kb gene encoding a membrane protein with both active DGC and PDE domains. Deletion of the PDE domain produces a WS phenotype dependent on DGC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 describe established knowledge of MwsR supported by citations. However, less is known about this pathway compared to Wsp and Aws.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Null Models I and II, based on sequence length or gene number as proxies for mutational target size, predict Wsp should be used more frequently than Aws, contrary to experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 present mathematical predictions from simple null models shown in Figure 3B-C. The models are correctly formulated but fail to match experimental data, demonstrating the need for more sophisticated approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C46"
+    ],
+    "result": "Of 109 WS mutants isolated without selection, 105 had mutations in wsp (46), aws (41), or mws (18), with 4 in rare pathways. At least 41 different mutations in Aws lead to WS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C46 are directly supported by experimental sequencing data shown in Figure 6A and source data. This provides the empirical foundation for evaluating model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Two mutations account for 42% of all WS-causing mutations: a 33 bp deletion in awsX (\u0394Y77-Q87, 29%) and a point mutation in awsR (T27P, 13%), indicating mutational hotspots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by experimental data in Figure 6B. The statistical improbability of this bias (stated in text) strongly supports the hotspot interpretation and explains the discrepancy with null model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Incorporating a 10-fold increased mutation rate at the AwsX hotspot into Null Model II predicts Aws is used 1.8 times more often than Wsp, matching experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by mathematical modeling shown in Figure 7A. This demonstrates that accounting for mutational hotspots can reconcile model predictions with experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Fitness measurements reveal that wspF, wspC-wspD fusion, and wspE mutants have similar fitness, while wspA mutants are slightly less fit and wspR mutants are severely impaired. All aws mutants have significantly lower fitness than the wspF reference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by experimental competition data in Figure 9 with appropriate statistical tests. The fitness differences are statistically significant and biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The lower fitness of aws mutants explains their lower frequency under selection despite having a roughly two-fold higher mutation rate compared to wsp mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is a valid inference connecting the fitness data (C51) with mutation rate data (C11-C12) and prior observations under selection (McDonald et al., 2009). This demonstrates the importance of fitness effects in determining evolutionary outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mutation analysis reveals that WS-causing mutations in Wsp occur primarily in negative regulator WspF and interacting partners WspE and WspA, while in Aws they occur in AwsX and the interacting region of AwsR, consistent with model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by experimental mutation data and comparison to Null Model IV predictions. The agreement between predictions and observations validates the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "For MwsR, mutations were found in both DGC and PDE domains rather than primarily in the PDE domain as expected. Structural analysis suggests mutations cluster at the domain interface and likely alter domain dynamics to increase c-di-GMP production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C58 present unexpected findings that deviate from predictions. While structural analysis (C57) supports the interpretation (C58), this is based on inference from mutation locations rather than direct functional validation. The mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Under selection, the Wsp pathway is most commonly used (15/24), with no wspA mutations detected despite being the most common mutation without selection (15/46). wspR mutants were also not detected in prior selection experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by experimental data comparing selection vs. non-selection conditions (Figure 8) and citation to prior work. This demonstrates that the mutational spectrum differs significantly depending on selective conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "An emerging rule indicates that phenotypes determined by negatively regulated pathways most likely arise through loss-of-function mutations in negative regulatory components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by multiple citations and represents a generalization from this and other studies. This principle has broad applicability for predicting evolutionary outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Multiple sources of mutational bias exist including simple sequence repeats, palindromic structures, transition-transversion bias, CpG sites, chromosomal location, and environmental factors, all of which can influence evolutionary outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 describe established knowledge about sources of mutational bias, each supported by appropriate citations. This provides context for understanding the hotspots observed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Despite hundreds of possible WS-causing mutations, a single mutation (\u0394Y77-Q87 in awsX) accounts for more than one quarter of all WS mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 synthesizes the hotspot data (C44) with knowledge of mutational diversity. This striking finding emphasizes the dominant role of specific mutational hotspots in determining evolutionary trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The distribution of fitness effects for mutations in single genes is often bimodal, and WS mutations in the same gene typically show similar fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by multiple citations describing a general pattern. Claim C75 is supported by the fitness data in Figure 9 showing clustering of fitness effects by gene. This observation has practical implications for predicting fitness effects.",
+    "result_type": "MINOR"
+  }
+]

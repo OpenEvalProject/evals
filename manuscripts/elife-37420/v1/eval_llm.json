@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C39",
+      "C52",
+      "C53"
+    ],
+    "result": "Total colectomy and left-sided partial colectomies (left hemicolectomy and sigmoidectomy) are associated with increased risk of type 2 diabetes compared to non-colectomy surgical controls, with hazard ratios of 1.40, 1.41, and 1.30 respectively (all p<0.001). The highest risk was observed in patients who had the left part of the colon removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While the statistical associations are clearly demonstrated (C3, C5, C6, C39), the study acknowledges inability to adjust for multiple critical confounders including BMI, medication, lifestyle factors, and underlying disease severity (C57, C58, C61, C68). The authors explicitly state estimates may be positively biased (C58) and that clinical-physiological studies are needed to establish causality (C101). The observational design with unmeasured confounding prevents definitive conclusions about the causal role of colectomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C54",
+      "C90"
+    ],
+    "result": "Right hemicolectomy, resection of the transverse colon, and proctectomy were not associated with statistically significant increased risk of type 2 diabetes, with hazard ratios of 1.08 (p=0.10), 1.08 (p=0.66), and 0.98 (p=0.71) respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analyses clearly demonstrate no significant associations for these surgical procedures (C4, C40, C41). The confidence intervals and p-values support the null findings. The specificity of the association to left-sided resections strengthens the overall pattern, though confounding remains a concern for the positive findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C55"
+    ],
+    "result": "The increased risk of diabetes after total colectomy, left hemicolectomy, and sigmoidectomy was observed in both colorectal cancer patients and patients with other colorectal diseases, with generally higher hazard ratios in the non-cancer group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While the stratified analyses show consistent patterns across disease groups (C42-C48), this does not address the fundamental confounding issues. The authors acknowledge that underlying disease may directly increase diabetes risk (C66) and that medication effects are ambiguous (C63-C65). The consistency across groups is suggestive but insufficient to rule out confounding by indication or other unmeasured factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C78",
+      "C84"
+    ],
+    "result": "The left colon may contribute to maintenance of glucose homeostasis, as evidenced by the anatomical specificity of the association (left-sided but not right-sided resections) and the gradient of L-cell density increasing distally in the colon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anatomical specificity (C78) and correlation with L-cell density gradient (C84) provide suggestive biological plausibility. However, the bacterial load also increases distally (C85-C86), making it unclear which mechanism is operative. More critically, the unmeasured confounding and observational design prevent causal inference. The authors appropriately frame this as speculation requiring mechanistic studies (C80-C81, C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C67",
+      "C76",
+      "C77"
+    ],
+    "result": "Sensitivity analyses varying the follow-up start time (0, 500, 1000, or 1500 days post-surgery) showed consistent results for left hemicolectomy and sigmoidectomy, with the risk remaining elevated throughout follow-up, supporting temporal precedence of exposure before outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sensitivity analyses (C49-C51) demonstrate robustness of the main findings to different analytical approaches. The consistency across follow-up windows (C67) and sustained elevation of risk (C77) support temporal ordering. However, this addresses only one aspect of causality and does not resolve confounding issues. The non-proportional hazards noted for total colectomy when starting at day 0 (C49) is appropriately flagged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C56"
+    ],
+    "result": "The study included 46,279 colectomy patients matched to 694,110 non-colectomy surgical controls from the Danish National Patient Register, with mean follow-up ranging from 5.6 to 7.1 years across surgery types, representing a large nationwide cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sample sizes (C29-C32), follow-up durations (C33-C38), and nationwide scope (C56) are clearly documented. The large sample size provides adequate statistical power and narrow confidence intervals as noted (C56). The data source and matching procedures are well-described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "The study could not adjust for multiple potential confounders including BMI, medication use, lifestyle factors, and disease severity, which may positively bias the reported hazard ratios. The authors estimate a BMI difference of 3 units would be needed to fully explain the observed HR of 1.4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors transparently acknowledge the limitations (C57) and systematically discuss potential confounders including adiposity (C59-C62), medications (C63-C65), confounding by indication (C66), and lifestyle factors (C68). The BMI calculation (C62) provides useful context for the magnitude of confounding needed. This honest assessment of limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Diabetes ascertainment was limited to hospital-recorded diagnoses (ICD-10 codes E11 and E14), potentially missing cases diagnosed outside hospitals. The study restricted to patients >30 years to minimize misclassification between type 1 and type 2 diabetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge outcome misclassification (C70, C72) and justify their age restriction (C73-C75). The assumption that ascertainment bias is similar between groups (C71) is reasonable given both underwent surgery. The limitation that observed incidence is an underestimate (C70) is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study used a matched cohort design with non-colectomy surgical controls from three groups (orthopedic, abdominal non-GI, and other surgery), matched 15:1 on age, sex, and surgery year. Follow-up began 1000 days post-surgery to account for post-surgical mortality and reverse causation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study design is clearly described with appropriate methodological details (C104-C117). The choice of surgical controls rather than general population is reasonable for reducing confounding. The 1000-day delay is justified by mortality patterns (C110-C111) and concern for reverse causation (C112). The statistical methods including Cox regression with adjustment for matching variables (C115) are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors speculate that the findings may be explained by removal of GLP-1 producing L-cells or alterations in gut microbiota composition and function, with potential mechanisms including changes in bile acid metabolism and short-chain fatty acid production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly presented as speculation (C80-C81, C89, C91-C92) about potential mechanisms. The biological plausibility is supported by cited literature on L-cell distribution (C82-C84) and bacterial load gradients (C85-C86). However, the compensatory colonization of remaining GI tract (C87-C88) complicates interpretation. These remain hypotheses requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Previous small studies (largest n=21) examining glucose regulation in colectomy patients showed conflicting results, with one study finding impaired glucose tolerance but no differences in GLP-1 levels, though controls had lower body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The summary of prior literature (C93-C97) accurately characterizes the limited and conflicting evidence base. The authors appropriately note the small sample sizes and methodological limitations (C95) of previous work, providing context for their larger study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "A previous study using the same registry found no increased cardiovascular disease risk after total colectomy, which appears discrepant with the diabetes findings but may be explained by insufficient follow-up time for diabetes to manifest as cardiovascular disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The discrepancy with prior cardiovascular findings (C98) is noted, and the explanation of insufficient follow-up time (C100) is plausible given the expected temporal relationship (C99). However, this remains speculative and could also suggest that the diabetes association is not causal or that other factors are at play.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Clinical-physiological studies are warranted to establish whether colectomy per se is associated with metabolic alterations indicating increased type 2 diabetes risk and to understand the role of the colon in glucose homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This recommendation (C101) appropriately follows from the study's limitations and observational design. The authors correctly identify that mechanistic studies with careful control for confounders are needed to establish causality and elucidate biological mechanisms.",
+    "result_type": "MINOR"
+  }
+]

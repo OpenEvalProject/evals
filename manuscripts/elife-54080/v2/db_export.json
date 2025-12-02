@@ -1,0 +1,1354 @@
+{
+  "submission": {
+    "id": "6f1c1f10-fb4a-44e8-b0df-fd72fa55b641",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:05:58.290304Z",
+    "updated_at": "2025-12-02T21:05:58.290304Z"
+  },
+  "content": [
+    {
+      "id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "submission_id": "6f1c1f10-fb4a-44e8-b0df-fd72fa55b641",
+      "content_type": "manuscript",
+      "content_text": "# Genetic profiling of protein burden and nuclear export overload\n\n## Authors\n\n- Reiko Kintaka<sup>1</sup>\n- Koji Makanae<sup>2</sup> ([ORCID: 0000-0002-8560-4561](https://orcid.org/0000-0002-8560-4561))\n- Shotaro Namba<sup>3</sup>\n- Hisaaki Kato<sup>4</sup>\n- Keiji Kito<sup>5</sup> ([ORCID: 0000-0002-9057-1688](https://orcid.org/0000-0002-9057-1688))\n- Shinsuke Ohnuki<sup>6</sup>\n- Yoshikazu Ohya<sup>6</sup> ([ORCID: 0000-0003-0837-1239](https://orcid.org/0000-0003-0837-1239))\n- Brenda J Andrews<sup>1</sup>\n- Charles Boone<sup>1</sup>\n- Hisao Moriya<sup>2</sup> ([ORCID: 0000-0001-7638-3640](https://orcid.org/0000-0001-7638-3640)) \u2020\n\n### Affiliations\n\n1. Donnelly Center for Cellular and Biomolecular Research, Department of Medical Genetics, University of Toronto Toronto Canada\n2. Research Core for Interdisciplinary Sciences, Okayama University Okayama Japan\n3. Matching Program Course, Okayama University Okayama Japan\n4. Graduate School of Environmental and Life Science, Okayama University Okayama Japan\n5. Department of Life Sciences, School of Agriculture, Meiji University Tokyo Japan\n6. Graduate School of Frontier Sciences, University of Tokyo Tokyo Japan\n7. RIKEN Center for Sustainable Resource Science Wako Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nOverproduction (op) of proteins triggers cellular defects. One of the consequences of overproduction is the protein burden/cost, which is produced by an overloading of the protein synthesis process. However, the physiology of cells under a protein burden is not well characterized. We performed genetic profiling of protein burden by systematic analysis of genetic interactions between GFP-op, surveying both deletion and temperature-sensitive mutants in budding yeast. We also performed genetic profiling in cells with overproduction of triple-GFP (tGFP), and the nuclear export signal-containing tGFP (NES-tGFP). The mutants specifically interacted with GFP-op were suggestive of unexpected connections between actin-related processes like polarization and the protein burden, which was supported by morphological analysis. The tGFP-op interactions suggested that this protein probe overloads the proteasome, whereas those that interacted with NES-tGFP involved genes encoding components of the nuclear export process, providing a resource for further analysis of the protein burden and nuclear export overload.\n\n## Introduction\n\nExtreme overproduction of a gratuitous protein that has no cellular function causes growth defects, which, at least in part, appears to be caused by overloading the cellular resources for protein synthesis (Dong et al., 1995; Snoep et al., 1995; Stoebel et al., 2008; Makanae et al., 2013; Shah et al., 2013; Kafri et al., 2016; Moriya, 2015; Eguchi et al., 2018; Scott et al., 2010). This phenomenon is called the protein burden/cost and has been extensively studied in the budding yeast Saccharomyces cerevisiae, a model eukaryotic cell. Limiting functions defining the protein burden are thought to be the translational process upon nitrogen limitation, and the transcriptional process upon phosphate limitation (Kafri et al., 2016). The protein burden itself initially appears to be a relatively simple phenomenon, but little is known about the physiological conditions and cellular responses triggered by the protein burden.\n\nTo trigger the protein burden, a protein must be produced at a level sufficient to overload protein production resources (Moriya, 2015; Eguchi et al., 2018). This can happen only if the protein is otherwise harmless. Fluorescent proteins, such as EGFP, Venus, and mCherry, do not have any physiological activity in yeast cells and thus are considered gratuitous proteins. Therefore, these fluorescent proteins are believed to be produced at the highest possible levels in yeast cells, and their overproduction triggers a protein burden (Makanae et al., 2013; Kafri et al., 2016; Eguchi et al., 2018; Farkas et al., 2018). Modifications to EGFP, such as adding a degradation signal, misfolding mutations, or adding localization signals, reduces its expression limit, probably because these modifications overload limited resources for the degradation, folding, and localization processes, respectively (Geiler-Samerotte et al., 2011; Makanae et al., 2013; Kintaka et al., 2016; Eguchi et al., 2018).\n\nA recent study isolated a group of deletion strains in which growth defects upon overproduction of yEVenus are exacerbated (Farkas et al., 2018). Through the analysis of these strains, and conditions exacerbating the protein burden, the authors concluded that Hsp70-associated chaperones contribute to the protein burden by minimizing the damaging impact of the overproduction of a gratuitous protein. Chaperone genes, however, constitute only a relatively small fraction of the deletion strains isolated in the study, and thus the protein burden may impact numerous other processes.\n\nTo understand the physiological conditions caused by protein burden, we conducted a systematic survey of mutants that exacerbate or alleviate the growth inhibition caused by GFP overproduction. We surveyed genetic interactions between mutant strains and high levels of GFP overproduction (GFP-op) to genetically profile cells exhibiting this phenomenon. Here, if a mutation exacerbates growth inhibition by GFP-op, or if GFP-op exacerbates growth inhibition by the mutation, the mutation has a negative genetic interaction with GFP-op. Also, if a mutation alleviates growth inhibition caused by GFP-op, the mutation has a positive genetic interaction with GFP-op. If GFP-op relaxes the growth inhibition caused by the mutation, it is also detected as a positive genetic interaction.\n\nTo isolate mutant sets showing positive and negative genetic interactions with the protein burden, we used a condition causing significant growth defects due to high GFP-op from the TDH3 promoter (TDH3pro) on a multi-copy plasmid. In addition to a deletion mutant collection of non-essential genes, we surveyed temperature-sensitive (TS) mutant collections of essential genes. We performed a strict statistical evaluation to isolate mutants showing robust genetic interactions with high confidence.\n\nWe also attempted to distinguish between the protein burden and other process overloads by surveying genetic interactions between those mutant strains and a triple-GFP (tGFP) with a nuclear export signal (NES-tGFP). NES-tGFP triggers growth defects at a lower expression level than unmodified tGFP (Kintaka et al., 2016). If the protein burden can only be triggered by a harmless protein like GFP, mutants harboring genetic interactions with tGFP-op should be different from those with NES-tGFP-op, and the comparison of those mutants will identify consequences specific to the protein burden. Moreover, mutants harboring negative genetic interactions should contain limiting factors of the nuclear export and essential factors affected by the overloading of nuclear export.\n\n## Results\n\n### Isolation of mutants that have genetic interactions with GFP-op\n\nTo isolate mutants genetically interacting with GFP-op, we performed a synthetic genetic array (SGA) analysis (Baryshnikova et al., 2010;\u00a0Figure 1A). As a query strain, we overproduced GFP (yEGFP) (Cormack et al., 1997) under the control of TDH3pro on the multi-copy plasmid pTOW40836 (Figure 1B). This plasmid contains two selection markers (URA3 and leu2-89), and the copy number can be controlled by the culture conditions. The copy numbers of this plasmid under \u2013Ura and \u2013Leu/Ura conditions are around 10 and 30 copies per cell, respectively (Eguchi et al., 2018). While a strain harboring this plasmid shows growth defects even under \u2013Ura conditions (Figure 1C), the strain shows more growth defects under \u2013Leu/Ura conditions (Figure 1D), presumably because the copy number increase leads to an increase in GFP production, and probably causes a stronger protein burden-associated growth defect (Eguchi et al., 2018). The background principles that determine plasmid copy number and growth rate (genetic tug-of-war) are explained in detail in Figure 1\u2014figure supplement 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Each mutant from a deletion mutant array (DMA) and a temperature-sensitive mutant array (TSA) was combined with GFP overproduction (GFP-op) using the synthetic genetic array (SGA) method (Baryshnikova et al., 2010). The colony size of each derivative strain grown on synthetic complete (SC)\u2013Ura and SC\u2013Leu/Ura plates was measured to calculate a genetic interaction (GI) score (\u03b5). Four colonies were analyzed for each strain, and the entire experiment was duplicated. (B) The structure of the plasmid used to overexpress GFP. The plasmid copy number, and thus the expression level of GFP, can be changed by changing the growth conditions. (C and D) Effect of GFP production on growth under each condition. The size of colonies of each strain grown on agar medium was measured (n\u00a0>\u00a012). The Y7092 strain was used as the host. The maximum growth rate was measured in liquid culture (n\u00a0>\u00a04). The average, standard deviation (error bar), and p-value of Student\u2019s t-test are shown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Outline of the genetic tug-of-war method. The explanation of the method is described below. (B) Structure of the plasmid vector (pTOW40836) and the GFP-op plasmid (pTOW40836-TDH3pro-GFP) used in this study. In the case of tGFP-op and NETS-tGFP-op, TDH3pro-yEGFP is replaced by PYK1pro-tGFP and PYK1pro-NES-tGFP (shown in Figure 5A). (C) Principles for determining plasmid copy number and growth rate (fitness) in each condition. The intracellular copy number of the plasmid used in this study varies according to the principle of genetic tug-of-war (gTOW). The copy number of the plasmid is related to the growth rate of the cell. The original genetic tug-of-war method was published in Moriya et al., 2006, and a detailed explanation of the method is also described in Moriya et al., 2012. In the genetic tug-of-war method, the target gene is cloned on a plasmid carrying two selective markers of nutrient requirement, URA3 and leu2-89, and a 2\u00b5 plasmid origin (A and B). The plasmid is introduced into the ura3 leu2-deficient strain and first cultured in \u2013Ura medium. This plasmid will be multicopied due to the function of the 2\u00b5 origin, and the number of copies in the population will vary. In this case, a vector without an insert (A) results in a copy number of about 25 (C, in Vector/WT). If an excess of the target gene adversely affects growth, the copy number of the plasmid will be lower than the vector even under \u2013Ura conditions, but it will have little effect on growth. For example, the copy number has been found to be about 10 in pTOW40836-TDH3pro-GFP (B), which was used in this study (Eguchi et al., 2018). If we transfer the plasmid-bearing strains to the -Leu/Ura conditions, the copy number of the plasmid rises to about 120. This is because the other marker, leu2-89, is a LEU2 allele with a large deletion in its promoter and is expressed at a significantly lower level than the wild-type LEU2 allele. As a result, cells with high plasmid copy numbers are selected, and the number of copies of the plasmid retained by the population is around 120 copies in the vector case (C, in Vector/WT). In the case of a plasmid incorporating TDH3pro-GFP as a target, the copy number of TDH3pro-GFP also increases with the increase in plasmid copy number caused by leu2-89, resulting in a growth inhibition effect due to GFP overexpression. This acts as a bias to lower the copy number. Thus, the copy number of intracellular plasmids in \u2013Leu/Ura is determined by the tug-of-war between the copy number elevation bias of leu2-89 and the copy number lowering bias of TDH3pro-GFP. In \u2013Leu/Ura conditions, pTOW40836-TDH3pro-GFP has a copy number of about 30, at which time GFP is about 15% of the total protein in the cell (C, in GFP-op/WT) (Eguchi et al., 2018). The relationship between plasmid copy number and growth rate (fitness) can be explained by the figure in (C) When the vector is introduced into the wild type and grown in \u2013Leu/Ura medium, the plasmid copy number rises following the fitness line made by leu2-89. Shown as blue and orange areas are hypothetical histograms of cell populations with plasmids of the copy number shown. The growth rate of cells carrying pTOW40836-TDH3pro-GFP and the copy number of the plasmid depends on the intersection of the fitness line of leu2-89 and the fitness line created by TDH3pro-GFP. This is because this intersection is the highest fitness point for cells cultured with \u2013Leu/Ura. In mutants susceptible to GFP overexpression, the TDH3pro-GFP fitness line shifts to the left (C, in GFP-op/mutant (GFP-op_negative mutants)). This causes the fitness (and plasmid copy number) of this mutant strain overexpressing GFP to be lower than the wild type. In contrast, in mutants resistant to GFP overexpression, the TDH3pro-GFP fitness line shifts to the right (C, in GFP-op/mutant (GFP-op_positive mutants)). This increases the fitness (and plasmid copy number) of this GFP-overexpressing mutant strain over the wild type.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig1-figsupp2-v2.jpg)\n\nWe examined an array of 4323 deletion mutants in nonessential genes (DMA) and an array of 1016 conditional temperature-sensitive mutants (TSA) (Costanzo et al., 2016). Details on the calculation of genetic interaction scores from colony size are shown in Figure 1\u2014figure supplement 2. We assessed the growth (fitness) of wild-type and mutant strains by measuring the colony size on agar plates under vector control and GFP-op conditions, respectively. This colony size was then normalized by the overall colony size and the relative fitness of each strain was obtained as the normalized colony size. For each mutant strain, we calculated genetic interaction (GI) scores (\u03b5) from the analysis of four colonies under both \u2013Ura and \u2013Leu/Ura conditions, in duplicate (Figure 2\u2014source data 1). After thresholding by the variation in colony size (p<0.05), we compared GI scores between duplicates (Figure 2A, Figure 2\u2014figure supplement 1). The reproducibility of the DMA experiments was lower in \u2013Ura conditions (r\u00a0=\u00a00.17), whereas it was higher in \u2013Leu/Ura conditions (r\u00a0=\u00a00.36). The reproducibility of the TSA experiments was higher in both \u2013Ura and \u2013Leu/Ura conditions (r\u00a0=\u00a00.42 and 0.53). Thus, the conditions which cause severe growth defects produce the most reproducible GI scores.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Pearson correlation coefficient (r) of GI scores from experimental duplicates. DMA and TSA: comparison of all GI scores of duplicates obtained by the GI analysis using DMA and TSA. DMA-0.08 and TSA-0.08: comparison of GI scores of duplicates with value > |0.08| obtained by the GI analysis using DNA and TSA. Figure 2\u2014figure supplement 1 shows an independent comparison. (B and C) Comparison of average GI scores of DMA (B) and TSA (C) mutants both with GI scores in the duplicates > |0.08| under \u2013Ura and \u2013Leu/Ura conditions. (D) GI score (\u03b5) of mutants isolated ordered by score ranking. Mutants with low (<0.2) and high (>0.2) scores are shown in light blue and orange, with enriched GOs in those mutants. The score in \u2013LU is shown. The full list of enriched genes is in Supplementary file 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A-D) indicates the conditions and mutants used.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Analysis with DMA, and (B) analysis with TSA.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A and B) Comparison of GI scores of DMA mutants isolated by \u03b5 > |0.08| thresholding in this study. (C and D) Plasmids and conditions used in this study and the previous study. (E and F) Effects of overproduction of GFP from TDH3 promoter (TDH3pro) and HSC82 promoter (HSC82pro) on the plasmid pTOW40836 in \u2013Ura (C) and \u2013Leu/Ura (D) conditions. The average, standard deviation (error bar), and p-value of Student\u2019s t-test are shown. (G) The cost of GFP and yEVenus overexpression when amino acid supplements are diluted. Growth rates of BY4743 strains harboring pTOW40836, pTOW40836-TDH3pro-GFP, and pTOW40836-TDH3pro-yEVenus were measured in liquid SC\u2013Ura medium and in liquid SC\u2013Ura medium supplemented with amino acid supplements in the units indicated. Auxotrophic amino acids (His and Leu) were added at a concentration of 1\u00d7. The cost of GFP and yEvenus overexpression in each medium was calculated as 1 \u2013 (growth rate of overexpressing strain/growth rate of vector control). Graphs show the mean of the four biological replicates, and error bars indicate their standard deviation.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A and C)\u00a0Maximum growth rates of mutant cells with TDH3pro-GFP (A) and HSC82 pro-GFP (C) plasmids in synthetic complete (SC)\u2013Ura medium. Average and standard deviation (error bar) of four independent experiments is shown. (B and D) GI scores of mutants and GFP-op from TDH3 pro (B) and HSC82 pro (D). GI score was calculated as follows: GI score (\u03b5)=WAB \u2013 WA\u00a0\u00d7\u00a0WB. Where WAB: Gm/Vw, WA: Gw/Vw, WB: Vm/Vw Gw: Average max growth rate of GFP-op_wild type (four independent measurements) Gm: Average max growth rate of GP-op_mutant (four independent measurements) Vw: Average max growth rate of Vector_wild type (four independent measurements) Vm: Average max growth rate of Vector_mutant (four independent measurements).\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A)\u00a0Colony size differences of vector control experiment of genes categorized as GO categories \u2018DNA replication preinitiation complex [GO:0031261]\u2019 on synthetic complete (SC)\u2013Ura and SC\u2013Leu/Ura plates. AU = (colony size on \u2013Leu/Ura plate) / (colony size on \u2013Ura plate). AUs of each mutant from duplicated experiments are shown. The average AU and standard deviation (error bar) of temperature-sensitive mutants are shown. (B) Representative mutants showing growth defects under high-copy conditions (\u2013Leu/Ura) in the vector control experiments. (C) An explanation for the reduced fitness of vector controls in replication mutants. The fitness of cells harboring the pTOW40836 vector under -Leu/Ura conditions is dependent on the plasmid copy number. The inability to maintain pTOW40836 at a high copy number in the replication mutant is likely to result in reduced fitness.\n\nTo more confidently identify mutants showing strong GIs, we set a threshold in each replicate (\u03b5 > |0.08|). Previous studies have reported that the use of these thresholds results in more reproducible genetic interactions (Baryshnikova et al., 2010). Using this threshold increased reproducibility, especially in the DMA experiments (r\u00a0=\u00a00.35 in \u2013Ura, r\u00a0=\u00a00.62 in \u2013Leu/Ura, Figure 2A). We first selected mutants with \u03b5 > |0.08| in each replicate and then calculated their average GI scores between the duplicates as summarized in Figure 2\u2014figure supplement 2. Because GI scores between \u2013Ura (low-level GFP-op) and \u2013Leu/Ura (high-level GFP-op) conditions were highly correlated (r\u00a0=\u00a00.70 and 0.58, Figure 2B and C), this procedure identified high-confidence mutants with GIs with GFP-op. We note that there is a higher correlation between conditions at \u2013Ura and \u2013Leu/Ura than between replicates in the DMA experiment (Figure 2A and Figure 2B). The cause of this is unclear, but it may indicate that averaging between replicates yields values closer to the true GI score.\n\nFarkas et al. surveyed GIs between deletion mutants and the overproduction of yEVenus (Farkas et al., 2018). The GI scores obtained by our analysis did not show correlation with those from the Farkas study (r = \u20130.01 and \u20130.07, Figure 2\u2014figure supplement 3A,B). This may be because of the weak reproducibility observed in lower overproduction conditions (Figure 2\u2014figure supplement 1A). Moreover this overlap analysis only involved nonessential genes and the Farkas study used a relatively weaker HSC82 promoter (HSC82pro), in medium comparable to our \u2013Ura condition, in which the GFP-op from HSC82pro on pTOW40836 caused a very minor growth defect in \u2013Ura conditions (Figure 2\u2014figure supplement 3E,F). Indeed, our conditions produced more variance in the GI scores and thus identified more mutants showing stronger GIs (Figure 2\u2014figure supplement 3A,B), and we found that negative GIs of 6 out of 7 deletion mutants from our screening were confirmed by independent growth measurements in the liquid medium, while all six mutants isolated by the previous study (Farkas et al., 2018) were not (Figure 2\u2014figure supplement 4). Farkas et al. reported that growth inhibition (cost) due to overproduction of yEVenus was stronger as the concentration of amino acids in the medium decreased. As shown in Figure 2\u2014figure supplement 3G, overproduction of yEGFP also resulted in increased growth inhibition (cost) due to amino acid dilution, although the degree of cost differed between the two fluorescent proteins. We cannot dismiss the possibility that the difference between the analysis of Farkas et al. and ours is due to the difference in properties between our GFP (yEGFP) and yEVenus.\n\nDuring the screening, we noticed that a group of temperature-sensitive mutants showed greater growth defects under \u2013Leu/Ura conditions than under \u2013Ura conditions in the vector control experiments (Figure 2\u2014figure supplement 5). The gene ontology (GO) term \u2018DNA replication preinitiation complex [GO:0031261]\u2019 was significantly over-represented in the mutated genes (seven genes, p=1.47E\u201305). Figure 2\u2014figure supplement 5A shows the normalized colony size differences of the 18 mutants analyzed in the TSA corresponding to the genes categorized in GO:0031261. 6 out of 18 mutants showed more than 2U decrease in their colony sizes, whereas the average of all temperature-sensitive mutants showed 0.002U (Rep1) and 0.003U (Rep2). Colonies of representative mutants (cdc47-ts, orc1-ph, and orc6-ph) are shown in Figure 2\u2014figure supplement 5B. The vector copy number is more than 100 copies per cell under \u2013Leu/Ura conditions (Makanae et al., 2013; Eguchi et al., 2018). This high copy number probably produces limitations of the replication initiation complex by sequestering the complex to the replication origins of the plasmids (the explanation of the fitness reduction is shown in Figure 2\u2014figure supplement 5C). Some negative factors on the plasmid, like TDH3pro-GFP, restrict the plasmid copy number due to a genetic tug-of-war effect (Figure 1\u2014figure supplement 1C;\u00a0Moriya et al., 2006), and the plasmid thus may not trigger the limitation of the replication initiation complex. This situation may lead to a bias toward the isolation of mutants in the replication initiation complex with positive GIs with plasmids containing toxic elements, especially under \u2013Leu/Ura conditions.\n\n### Mutations aggravating or mitigating GFP-op triggered growth defects\n\nTo understand which processes are affected by GFP-op, we performed enrichment analysis targeted toward isolating mutants with stronger GIs (\u03b5 > |0.2|) under \u2013Leu/Ura conditions, as the results obtained under these conditions were more reproducible (Figure 2A, Figure 2\u2014source data 1). Therefore, we believed that stronger and more confidnet genetic interactions could be obtained with this threshold. We designated the negatively interacting genes and mutants \u2018GFP-op_negative\u2019 and the positively\u00a0interacting genes and mutants 'GFP-op_positive'. The GFP-op_negaitive 71 genes (79 mutants) were significantly enriched in GO categories related to cytoskeletal organization and polarization (Figure 2D, Supplementary file 1). Figure 3A shows the GI scores under \u2013Leu/Ura conditions of all 45 alleles of the GFP-op_negative genes categorized in GO as 'cellular bud [GO:0005933]'. Most of the mutants showed negative GIs, and 16 out of 45 showed average scores of less than \u20130.2.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0GI scores of mutants isolated as GFP_negative genes annotated with the GO term 'cellular bud [GO:0005933]'. (B) GI scores of mutants annotated with the GO terms \u2018TRAMP complex [GO:0031499]\u2019 and 'nuclear exosome [GO:0000176]'. (C) GI scores of mutants annotated with the GO term 'Mediator-RNA polymerase II preinitiation complex [GO:0090575]'. GI scores from experimental replicates under \u2013Leu/Ura conditions are shown. Temperature-sensitive mutant of essential genes and deletion mutant of non-essential gene are shown in different colors. GFP levels for each strain are also shown.\n\nOne hundred GFP-op_positive genes (100 mutants) were enriched in genes involved in RNA 3\u2032-end processing and the transcription factor complex (Figure 2D, Supplementary file 1). Among the factors in the RNA 3\u2032-end processing, the subunits in the \u2018TRAMP complex [GO:0031499]\u2019 and \u2018nuclear exosome [GO:0000176]\u2019 were isolated as GFP-op_positive genes. Figure 3B shows the GI scores under \u2013Leu/Ura conditions of the mutants of the TRAMP complex and the nuclear exosome subunits. Of 13 mutants, seven\u00a0showed positive GIs with average scores greater than 0.2. Among the transcription factor complex, subunits of the \u2018mediator-RNA polymerase II preinitiation complex [GO:0090575]\u2019 were specifically isolated. Figure 3C shows the GI scores under \u2013Leu/Ura conditions of the mutants of the mediator-RNA polymerase II preinitiation complex subunits. In total, 20 out of 38 mutants showed positive GIs with average scores greater than 0.2.\n\n### Investigation of GFP expression levels of mutants\n\nWe next investigated GFP expression levels of each mutant overexpressing GFP. To obtain the GFP expression level of each mutant, we measured normalized GFP fluorescence (GFPunit) from the fluorescence intensity of each colony (Figure 4A). As summarized in Figure 4B, the GFPunit can be used to interpret the mechanisms underlying GFP-op_negative and GFP-op_positive mutations as follows: (1) if GFPunit is lower in a GFP_negative mutant, the mutant is considered to be more sensitive to GFP overproduction; (2) if GFPunit is higher in a GFP_negative mutant, the mutant triggers elevated GFP production, which potentially enhances protein burden; (3) if GFPunit is lower in a GFP_positive mutant, the mutant triggers reduced GFP production, which potentially mitigates protein burden; and (4) if GFPunit is higher in a GFP_positive mutant, the mutant is considered to be resistant to GFP overproduction. The detailed background principle is explained in Figure 4\u2014figure supplement 1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Each mutant from a deletion mutant array (DMA) and a temperature-sensitive mutant array (TSA) was combined with GFP overproduction (GFP-op) with background E2-Crimson expression, using a synthetic genetic array (SGA) method. The median GFP fluorescence (F488) and E2-Crimson fluorescence (F532) of each colony were measured, and the GFP expression level (GFPunit) of each mutant was calculated by dividing F488 by F532 to normalize colony size. (B) Further classification and interpretation of mutant strains exhibiting positive/negative genetic interactions using GFP levels. A more detailed explanation is shown in Figure 4\u2014figure supplement 1. (C) GFPunits of GFP-op_negative mutants. Mutants with lower and higher GFPunits than the average are designated as GFP_L and GFP_H mutants, respectively. Representative GO terms enriched in GFP_L mutants in GFP-op_negative mutants are shown. (D) GFPunits of GFP-op_positive mutants. Representative GO terms enriched in GFP_L mutants and GFP_H mutants in GFP-op_positive mutants are shown. The full list of enriched genes is in Supplementary file 2A.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Background mechanisms that can be interpreted by separating the mutants using GFP expression levels (B) Isolation of GFP-op_negative mutants using GFP expression levels and its background principles. As shown in Figure 1\u2014figure supplement 1C, the fitness line made by TDH3pro-GFP is shifted to the left in a GFP-op_negative mutant. In such a mutant, the elevated copy number of TDH3pro-GFP has a stronger negative effect than in the wild strain. There are two main reasons for this negative effect: one is because the mutant increases the amount of GFP synthesized from one copy of TDH3pro-GFP, and the other is because the mutant is sensitive to GFP overexpression. Suppose that in a certain GFP-op_negative mutant, the copy number of the plasmid is reduced to 10 due to a shift of the TDH3pro-GFP fitness line to the left. This is only a prediction from the reduced fitness, as we did not actually measure the copy number of the plasmid in each strain in this study. If the expression of GFP in the cells is lower than in the wild strain (i.e. GFP_L), then we can assume that the strain is sensitive to GFP overexpression and that the reduced fitness (and copy number) is due to the strain's sensitivity to GFP overexpression. Analysis of GFP-op yielded 55 such strains, which contained significantly more genes related to \u2018cellular bud\u2019 (Figure 4C). On the other hand, if the expression level of GFP is similar to or higher than that of the wild type (i.e. GFP_H), then the sensitivity to GFP overexpression is the same in these strains as in the wild type, but the amount of GFP synthesized from one copy of the TDH3pro-GFP gene is increased in these strains. Analysis of GFP-op has yielded 22 such strains (Figure 4C), but the biological functions enriched in those genes have not been identified. (C) Isolation of GFP-op_positive mutants using GFP expression levels and its background principles. As shown in Figure 1\u2014figure supplement 1C, the fitness line made by TDH3pro-GFP is shifted to the right in a GFP-op_positive mutant. In such a mutant, the adverse effect of elevated TDH3pro-GFP copy number is weaker than in the wild type. There are two main reasons for this positive effect: one is because the mutant reduces the amount of GFP synthesized from one copy of TDH3pro-GFP, and the other is because the mutant is resistant to the excess of GFP. Suppose that in a certain GFP-op_negative mutant strain, the copy number of the plasmid is increased to 50 due to a shift of the TDH3pro-GFP fitness line to the right. This is only a prediction from the increase in fitness, as we did not actually measure the copy number of the plasmid in each strain in this study. At this time, if the expression of GFP is equal to or lower than that of the wild strain (i.e. GFP_L), we can assume that the response of the strain to GFP overexpression is the same as that of the wild strain, but the amount of GFP synthesized from one copy of the TDH3pro-GFP gene is reduced. Analysis of GFP-op yielded 45 such strains, which contained significantly more genes related to basic transcription (Figure 4D). Mutations in these genes would weaken the transcription of GFP from TDH3pro-GFP. On the other hand, if the expression of GFP is higher than in the wild type (i.e., GFP_H), we can assume that the strain is resistant to GFP overexpression. Experiments with GFP-op yielded 52 such strains (Figure 4D), and three mutants of components of the DASH complex have this property.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A)\u00a0GFPunits of mutants in annotated to the GO term \u2018cellular bud (GO:0005933)\u2019 among GFP-op_negative mutants. (B) GFPunits of mutants annotated to the GO terms 'TRAMP complex (GO:0031499)', 'nuclear exosome (GO:0000176)', and \u2018mediator-RNA polymerase II preinitiation complex (PMID27610567)\u2019 among GFP-op_positive mutants.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Obtaining mutants in which GFP overexpression pontentially enhances the growth advantage generated by the mutation. The genes in each shown category were isolated, and finally 14 mutants were isolated. The criteria for this isolation were: positive interaction with GFP-op (GFPop_positive), colony size of the mutants in the vector control was greater than the median of all other colonies (Normalized colony size (CONTROL)\u00a0>\u00a01), colony size of the mutants in GFP-op was greater than the median of all colonies from the vector control (Normalized colony size (EXPERIMENT)\u00a0>1.28), and the expression of GFP was higher than the median of all other colonies (GFPunit\u00a0>1). The threshold for mutant colony size was set as a larger colony size than the vector control when corrected for the expected growth inhibition caused by GFP-op at 0.78 (calculated from Figure 1D). Enrichment analysis of the 14 genes revealed significantly more components of the DASH complex [GO: 0042729]. The full list of enriched genes is in Supplementary file 3. (B) List of 14 mutants isolated. These were all temperature-sensitive mutations. The mutants of components of the DASH complex are shown in bold letters. (C) Colony size (raw data) of thress DASH complex mutants obtained from the analysis in A. Images of the Rep1 and Rep2 colonies in \u2013Leu/Ura for each mutant are shown, along with images of the surrounding colonies. The red-squared area is the colonies of the corresponding mutant. (D) Genetic interaction scores and GFP expression levels of mutants in the DASH complex. Of the\u00a010 genes in the DASH complex [GO:0042729], seven\u00a0were analyzed in this study. YKL053W is encoded in the reverse strand of ASK1, and the deletion results in a partial deletion of ASK1. GI scores from experimental replicates under \u2013Leu/Ura conditions are shown. Temperature-sensitive mutant of essential genes and deletion mutant of non-essential gene are shown in different colors. GFP levels for each strain are also shown.\n\nOf the mutants, 1447 (29%) showed lower GFPunits and 3572 (71%) mutants show higher GFPunits than the average of all mutants (Figure 4C,D, Figure 4\u2014source data 1). We designated these mutants GFP_H and GFP_L, respectively (Figure 4C,D). Mutants with enhanced growth defects upon GFP overproduction (GFP-op_negative mutants) were more likely to produce less GFP (GFP_L) (Figure 4C, p=4.7E-11, Student\u2019s t-test), indicating that the limit of GFP overproduction in these cells was lower than in other cells. Eleven out of 13 GFP-op_negative mutants categorized as \u2018cellular bud [GO:0005933]\u2019 were also GFP_L (Figure 4\u2014figure supplement 2A, Supplementary file 2A) (the GFP levels for each strain in this category are shown in Figure 3A). These mutants seemed to be sensitive to the protein burden.\n\nIn contrast, only a slightly higher number of mutants in which the growth inhibition caused by GFP overproduction was alleviated (GFP-op_positive) had lowered GFP expression (GFP-L) (Figure 4D, p=0.013, Student\u2019s t-test). Trends in the distributions of mutants in 'TRAMP complex [GO:0031499]', 'nuclear exosome [GO:0000176]', and \u2018mediator-RNA polymerase II preinitiation complex [PMID27610567]\u2019 were not obvious (Figure 4\u2014figure supplement 2B, Supplementary file 2A;\u00a0the GFP levels for each strain in these categories are shown in Figure 3). However, GFP-op_positive and GFP_L mutants were significantly enriched in 'RNA polymerase II transcriptional factor complex [GO:0090575]', suggesting that these mutants may simply cause the reduction of GFP production, but not decrease the sensitivity to the protein burden.\n\nThe GFP-op_positive and GFP_H strains include strains resistant to GFP overproduction (i.e. protein burden). We recently reported one such strain, a deletion of the dubious gene YJL175W, which produces a partial deletion of SWI3 (Saeki et al., 2020). We next searched for mutations where the mutation creates a growth advantage and where this advantage is further enhanced by GFP overproduction. We identified 14 mutants among GFP-op_positive and GFP-H mutants whose fitness in the vector control was higher than that of other strains and whose fitness may be further enhanced by GFP overproduction (Figure 4\u2014figure supplement 3). The 14 mutants were significantly enriched in genes of the DASH complex [GO:0042729] (Supplementary file 3), including ask1-2, dad2-9, and spc34-5 out of the seven DASH complex mutants analyzed (Figure 4D, Figure 4\u2014figure supplement 3C,D). The DASH complex binds to microtubules and is involved in the distribution of chromosomes (Jenni and Harrison, 2018). At present, the molecular mechanism by which GFP overproduction is permissible in these mutants cannot be readily deduced and more detailed analysis is required.\n\n### Overproduction of tGFP and NES-tGFP results in GIs with distinct sets of genes\n\nWe next analyzed mutants genetically interacting with a GFP containing a nuclear export signal (NES). Instead of GFP, we used tGFP made from three linked GFPs (Figure 5A) for the following reasons. In a previous study, we found that the addition of NES to monomeric GFP with a molecular weight smaller than the exclusion limit of the nuclear pore does not localize outside the nucleus, and when the molecular weight is increased by linking three GFPs together, the extranuclear localization of tGFP is clearly established (Kintaka et al., 2016). In addition, probably because NES-GFP undergoes repeated free transport into the nucleus and transport out of the nucleus by means of transport machinery, overproduction of NES-GFP shows a very strong growth inhibition. And we have found that this growth inhibition is mitigated to some extent by using tGFP (Kintaka et al., 2016). If the growth inhibition is too strong, we cannot generate overexpressing mutants to detect genetic interactions. We used NES from PKI, and used the PYK1 promoter, because the TDH3 promoter is too strong and causes severe growth inhibition (data not shown). We also used PYK1pro-tGFP as a control for NES-tGFP (Figure 5A). Using the same procedures as in the analysis of GFP described above except upper and lower threshold of \u03b5 0.16 and \u20130.12 as these thresholds have been used to obtain confident genetic interactions in previous studies (Costanzo et al., 2010; Costanzo et al., 2016), we isolated total 714 mutants (695 genes) harboring GIs with either GFP-op, tGFP-op or NES-tGFP-op under \u2013Leu/Ura conditions (the raw data sets are in Figure 5\u2014figure supplement 1\u2014source datas 1 and 2, the isolated mutants are in Figure 2\u2014source data 2). To extract genes that had specific GIs with each condition, we performed clustering analysis using them, which were isolated in at least one of GFP-op, tGFP-op, and NES-tGFP experiments (Figure 5C, Figure 5\u2014source data 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0Structures and promoters used to overexpress GFP, tGFP, and NES-tGFP. Nucleotide sequences of the three GFPs in tGFP (and NES-tGFP) are different, other to avoid recombination. (B) Colony size of query strains with the vector control and overproduction plasmids. The size of colonies of each strain grown on \u2013Leu/Ura agar medium was measured (n\u00a0>\u00a06). The Y7092 strain was used as the host. The average, standard deviation (error bar), and p-value of Student\u2019s t-test are shown. (C and D) Clustering analysis of the mutants having GIs with GFP-op, tGFP-op, and NES-tGFP-op (C), and its characterization (D). Total 714 mutants (695 genes) with upper and lower threshold of \u03b5 0.16 and \u20130.12 harboring GIs with either GFP-op, tGFP-op or NES-tGFP-op under \u2013Leu/Ura conditions were used (Figure 5\u2014source data 1). (E) GFPunits of NES-tGFP-op_negative mutants. Mutants with lower and higher GFPunits than the average are designated as NES-tGFP_L and NES-tGFP_H mutants, respectively. Representative GO terms enriched in GFP_L mutants in GFP-op_negative mutants are shown. Nuclear transport mutants obtained in Cluster 3 in D are also shown on the graph. The full list of enriched genes is in Supplementary file 2B.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** GI scores of mutants in the indicated publications (A\u00a0and\u00a0D)\u00a0and GO terms\u00a0(B\u00a0and\u00a0C) from the duplicated experiments on GFP-op, tGFP-op, and NES-tGFP are shown as scatter plots.\u00a0All circles represent the analyzed mutants in the indicated categories, and the filled circles represent those with GI scores below\u00a0or\u00a0above the thresholds in any of the three experiments.\u00a0Black circles indicate deletion mutans of non-essential genes, and other-colored circles indicate temperature-sensitive mutans of essential genes. The p-values of pair-wise t-test between experiments are shown. Bold letters indicate significant p-values (p<0.001).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) GFPunits of tGFP-op_negative mutants. Proteasome mutants (excluding allele names) are also shown on the graph. (B) GFPunits of tGFP-op_positive mutants. Mutants with lower and higher GFPunits than the average are designated as tGFP_L and tGFP_H mutants, respectively. Representative GO terms enriched in tGFP_L and tGFP_H mutants are shown. The full list of enriched genes is in Supplementary file 2C. (C) GFPunits of NES-tGFP-op_negative mutants. Nuclear transport mutants obtained in Cluster 3 in D are also shown on the graph. (D) GFPunits of NES-tGFP-op_positive mutants. Mutants with lower and higher GFPunits than the average are designated as NES-tGFP_L and NES-tGFP_H mutants, respectively. Representative GO terms enriched in NES-tGFP_L amd NES-tGFP_H mutants are shown. The full list of enriched genes is in Supplementary file 2B.\n\nFigure 5D shows the representative GO term or publication for each cluster (the whole data is shown in Supplementary file 4). Mutants negatively interacting only with NES-tGFP-op (Cluster 3) contained mutants of genes playing a central role in the nuclear protein export (Crm1, Gsp1, Rna1, and Yrb1). GI scores of these mutants were significantly lower in the NES-tGFP-op experiment than in the other two experiments (Figure 5\u2014figure supplement 1A), suggesting that NES-tGFP-op specifically causes growth defects through overloading these limited factors.\n\nTo our surprise, only 12% (81/688) of mutants showed shared GIs between GFP and tGFP. Mutants negatively interacting with tGFP-op and NES-tGFP-op but not GFP-op (Cluster 4) were strongly enriched in annotations of \u2018cytosolic proteasome complex [GO:0031597]\u2019 (Figure 5D). GI scores of mutants in \u2018proteasome complex [GO:0000502]\u2019 were significantly lower in the tGFP-op and NES-tGFP-op experiments than in the GFP-op experiment (Figure 5\u2014figure supplement 1B). These results suggest that GFP and tGFP have different characteristics, and tGFP-op triggers proteasome stress.\n\nMutants interacting only with GFP-op (Cluster 6 and Cluster 11) were enriched in genes annotated to \u2018cellular bud neck [GO: 0005935]\u2019 and 'transcription by RNA polymerase II [GO:0006366]', and their GI scores were significantly lower and higher in tGFP-op experiments than in the other two experiments (Figure 5\u2014figure supplement 1C,D). This observation suggests that these two processes are specifically interacting with the protein burden and can be only triggered by proteins with very high expression.\n\nWe also measured tGFP and NES-tGFP expression levels in tGFP-op and NES-tGFP-op experiments using the same method as shown in Figure 4, and the results are shown in Figure 5\u2014figure supplement 2. Among the mutants that had a negative genetic interaction with NES-tGFP-op, the mutants with lower GFP expression (NES-tGFP_L) were enriched for genes involved in nuclear protein transport (Figure 5E). Furthermore, all mutants in Cluster 3 in Figure 5D (crm1-1, gsp1-162, rna1-1, rna1-s116f, and yrb1-52) were included in this group (Figure 5E, Supplementary file 2B). As explained in Figure 4\u2014figure supplement 1B, this result implies that these mutants are sensitive to high expression of NES-tGFP. The identification of nuclear protein transport mutants as specifically sensitive to overproduction of NES-tGFP can be considered as a proof of concept for this study, and the results strongly support that the analysis of GFP-op and tGFP-op also allowed us to obtain mutants specifically associated with the physiological state of the cells triggered by the overproduction of them.\n\n### Overproduction of triple GFP causes the formation of ubiquitinated intracellular condensates, which in turn may overload the proteasome\n\nAs noted above, we used tGFP as a control for NES-tGFP. We initially expected that tGFP was simply a protein consisting of three molecules of GFP linked together and having the same properties as monomeric GFP, and that their overproduction would show a similar genetic interaction profile. Because the amount of GFP expressed from one copy of tGFP is three times greater than that of GFP, we also predicted that the expression limit of tGFP would simply be reduced to one-third of the number of molecules as GFP. However, as mentioned above, the mutants that show a genetic interaction between the two were very different, suggesting that overproduction of tGFP causes a completely different effect than overproduction of GFP. In particular, as described above, only overproduction of tGFP (and NES-tGFP) showed a negative genetic interaction with the proteasome mutants (Figure 5D, Cluster 4).\n\nTherefore, we next analyzed the properties of tGFP in more detail. Figure 6A shows the expression levels of tGFP in mutant strains that show negative genetic interactions with tGFP. Proteasome mutants were identified in both low (tGFP_L) and high (tGFP_L)-tGFP expression mutants. This suggests that overexpressed tGFP is actively degraded by the proteasome in the wild-type strains, whereas overaccumulation of undegraded tGFP occurs in proteasome mutations or that undegraded tGFP is cytotoxic in mutations of the proteasome.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig6-v2.jpg)\n\n**Figure 6.:** (A) GFPunits of tGFP-op_negative mutants. Mutants with lower and higher GFPunits than the average are designated as tGFP_L and tGFP_H mutants, respectively. Representative GO terms enriched in GFP_L mutants in GFP-op_negative mutants are shown. Proteasome mutants (excluding allele names) are also shown on the graph. The full list of enriched genes is in Supplementary file 2C. (B) Quantification of expression limits of GFP, tGFP, and NES-tGFP. Western blot analysis of total protein from GFP-op (1/10 diluted), tGFP-op, and NES-tGFP cells cultured in SC\u2013Ura medium. Relative GFP levels (protein units) were calculated by measuring the intensities of bands corresponding to the molecular weight of each protein (arrowheads). Note that molar concentration GFP should be divided by three in the case of tGFP and NES-tGFP because they have three times more epitopes for the antibody than GFP. (C) Microscope images of cells overexpressing GFP, tGFP, and NES-tGFP. The nucleus was observed using Hoechst 33342 staining. Representative cells with intracellular condensates are indicated by green arrowheads (condensates with GFP fluorescence) and yellow arrowheads (nucleus). (D) Analysis of GFP and tGFP aggregation. Extracts of yeast grown in SC\u2013Leu/Ura medium were centrifuged, fractionated into supernatant (Sup) and precipitate (Ppt), and separated by SDS-PAGE. Electrophoretic images of all proteins and western blots with anti-GFP antibodies are shown. The molecular weights corresponding to GFP and tGFP are indicated by arrows. The amounts of GFP and tGFP detected in the supernatant and precipitation are shown with GFP in the supernatant as 100. The percentages of precipitation to the total are also shown. (E) Detection of proteins in precipitation fractions. Proteins in the precipitated fractions of the vector control and tGFP-op cells were detected by LC-MS/MS and their amounts were compared by peptide-spectrum match (PSM). Three proteins that were particularly abundant in the precipitation fractions of tGFP-op cells were indicated on the plot. The components of the proteasome (Ppn, Prt, and Pre proteins) are shown by red circles. The average values of three LC-MS/MS measurements are shown. The raw data are shown in Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A)\u00a0Maximum growth rates of cells harboring overproduction plasmids. The average, standard deviation, and p-value of Student\u2019s t-test for the growth rates of cells with the vector and overproduction plasmids from four independent experiments are shown. Cells were grown in synthetic complete (SC) \u2013Ura medium. (B) Fluorescence microscopy images of supernatants (Sup)\u00a0and precipitated (Ppt)\u00a0fractions from GFP and tGFP-overexpressing cell lysate. Microscopic images were acquired at the same magnification and exposure time. The images are superimposed on the bright field and fluorescent images. (C) Analysis of GFP and tGFP ubiquitination. Extracts of yeast grown in SC\u2013Leu/Ura medium were centrifuged, fractionated into supernatant (Sup) and precipitate (Ppt), and separated by SDS-PAGE. Western blots with anti-ubiquitin antibodies are shown. The molecular weights corresponding to GFP and tGFP are indicated by arrows.\n\nIf tGFP is actively degraded, then the amount of tGFP in the cell would be much lower than that of GFP. Indeed, when we investigated the abundance of GFP and tGFP by Western blotting, the amount of tGFP (and NES-tGFP) was about 4% of GFP (Figure 6B). As mentioned above, if GFP and tGFP have the same properties and generate protein burden in the same way, they should express about the same amount of protein units and about one-third of the number of molecules as GFP. Note that under these conditions (\u2013Ura), where the protein levels were measured, cells harboring GFP, tGFP, and NES-tGFP plasmids showed a significant delay in the growth rate compared to the vector control (Figure 6\u2014figure supplement 1A). From this, it can be said that the expression levels of these proteins have a negative effect on cell proliferation. Thus, tGFP (and NES-tGFP) was found to have different properties than GFP, as overproduction of only a few percent of GFP may trigger growth inhibition.\n\nNext, we analyzed the behavior of overproduced tGFP in yeast cells. First, the subcellular localization of GFP, tGFP, and NES-tGFP was observed by fluorescence microscopy. We found that giant condensate were present only in the cells overproducing tGFP and NES-tGFP (Figure 6C). To further investigate the nature of this structure, cell fractionation was performed; the cell lysate was separated into soluble supernatant and insoluble precipitate. Fluorescence microscopy showed that the aggregates seen in tGFP-overexpressing cells were enriched in the precipitation (Figure 6\u2014figure supplement 1B). Proteins in each fraction was then separated by SDS-PAGE and detected for GFP by Western blotting (Figure 6D). About 1% of GFP was found in the precipitation fraction, whereas 14% of tGFP was found in the precipitation fraction. Western blotting with anti-ubiquitin antibodies detected ubiquitinated high-molecular-weight proteins in the precipitates of tGFP-op (Figure 6\u2014figure supplement 1C). We next identified the proteins in the precipitation by liquid chromatography-tandem mass spectrometry (LC-MS/MS). More than 1000 proteins were detected in the precipitation of the vector control and tGFP-op (Figure 6E). Among them, Hsp70 (Ssa1/Ssa2) and the glycolytic enzymes Fba1 and Eno2 were particularly abundant in the precipitates of tGFP-op. Components of the proteasome were also identified, albeit in trace amounts, and tended to be more abundant in the precipitation of tGFP-op than in the vector control. Ubiquitin was not detecte in this experiment.\n\n### GFP-op affects actin distribution\n\nThe above results indicate that GFP-op, that\u00a0is the protein burden, could affect actin functions. We thus performed a morphological analysis of cells under GFP-op with a high-throughput image-processing system (CalMorph) (Ohtani et al., 2004). We used non-fluorescent GFP mutant (GFPy66g) for this analysis because strong GFP fluorescence affects the observation of the cell shape with FITC-ConA. We also analyzed the cells overexpressing Gpm1 and a catalytically negative Gpm1 mutant (Gpm1-m) whose overproduction is considered to cause the protein burden (Eguchi et al., 2018). Cells were cultured under SC\u2013Ura conditions. Among obtained 501 morphological parameters, only four parameters showed significant differences over the vector control, and three of them (A120_A1B, ACV7-1_A, and A122_A1B) were actin-related parameters (Figure 7A\u2013D). Figure 7E shows the interpretation of the morphology of GFP-op cells. The cells contained increased actin patch regions, supporting the idea that the protein burden interacts with actin function.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013D)\u00a0Morphological parameters significantly different all in the cells overexpressing GFPy66g, Gpm1, and Gpm1-m cells over the cells with the vector control. *: FDR\u00a0=\u00a00.01 by Wald test. To overexpress GFPy66g, Gpm1, and Gpm1-m, pTOW40836-TDH3pro-GFPy66g, pTOW40836-TDH3pro-Gpm1, and pTOW40836-TDH3pro-Gpm1-m were used. (E) Interpretation of the morphology of GFP-op cells according to the morphological parameters significantly different from the vector control. (F) Dissection of the consequence of protein overproduction by the expression limits. Only otherwise harmless protein could cause the protein burden, which is associated with the perturbation of actin function. (G) A \u2018barrel model\u2019 to explain the relationship between the capacity of intracellular processes and the limits of protein synthesis. An explanation of this model is described in Discussion.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54080/elife-54080-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Detailed description of the model is provided in Discussion.\n\n## Discussion\n\nIn this study, we genetically profiled the consequences of protein overproduction using GFP as a model gratuitous protein and NES-tGFP as a transported model protein. We confirmed our prediction that the overproduction of NES-containing protein (NES-tGFP) overloads the amount of limiting nuclear-export factors (Kintaka et al., 2016). Overproduction of NES-tGFP had strong negative GIs with mutants in the major nuclear export factors (Crm1, Gsp1, Rna1, and Yrb1; Figure 5D and Figure 5\u2014figure supplement 1A). tGFP-op (and NES-tGFP-op) had negative GIs with mutants in proteasome components but GFP-op did not (Figure 5D and Figure 5\u2014figure supplement 1B). tGFP and NES-tGFP form aggregates, but not GFP (Figure 6C). This difference may be due to the higher molecular weight of tGFP compared to GFP and the presence of a repeating structure within the molecule. A larger molecule may increase the likelihood of misfolding during translation, or the presence of a repeating structure may increase intermolecular interactions and trigger the creation of large aggregates. Based on our results, we hypothesized a model explaining the negative genetic interaction between tGFP-op and the proteasome mutants (Figure 7\u2014figure supplement 1). tGFP has a high probability of misfolding during translation, and when misfolded, it is ubiquitinated and degraded by the proteasome (1). In addition, tGFP also forms large intracellular aggregates that sequester proteasomes (2), ubiquitin (3), and chaperones (4). Among these, 1 will overload the proteasome's capacity (Kintaka et al., 2016). If 2 happens, it will lower the amount of proteasomes in the cell. If 3 happens, there would be a negative effect on proteostasis due to the depletion of ubiquitin (Higgins et al., 2020). The occurrence of 4 would have a similarly negative effect on proteostasis. In addition, since Ssa1/Ssa2 is required for proteasome assembly (Hammack et al., 2017), a depletion of these proteins would lower the amount of proteasomes. Based on the results of the proteome analysis, we believe that 4 is particularly likely, given that large amounts of Ssa1/Ssa2 were detected in the tGFP-op precipitates.\n\nA comparison of mutants interacting with overproduction of three model proteins led to the isolation of mutants which specifically interact with GFP-op (Figure 5). The three model proteins caused growth defects with different expression levels (Figure 6B). The GFP level is considerably higher than the levels of tGFP and NES-tGFP, and its expression is the highest of all proteins in yeast (Eguchi et al., 2018), suggesting that overproduction of GFP causes growth defects because of the protein burden. As the protein burden should be triggered by the overproduction of otherwise non-harmful proteins like GFP (Moriya, 2015), these mutants should either exacerbate or mitigate the protein burden. The protein burden is considered to be growth defects occurring as a result of the overloading of protein synthesis processes (Kafri et al., 2016). In contrast to the expectation that mutants in those processes exacerbate the protein burden, the mutants isolated did not show any GO term enrichment in those processes but showed enrichment in actin-related processes like \u2018cytoskeletal organization\u2019 or \u2018cellular bud\u2019 (Figure 2D). Morphological analysis of cells also supported that GFP-op affects normal actin functions (Figure 7A\u2013E). This relationship might be a result of the long-known connection between actin and translational machinery Kim and Coulombe, 2010; the protein burden-triggered growth defects might involve the perturbation of the actin cytoskeleton via translational factors like eEF1A, which can bundle actin fibers (Munshi et al., 2001). Mutations that mitigate the protein burden indeed enriched genes involved in protein synthesis, especially the transcriptional processes \u2018RNA 3\u2032-end processing\u2019 and \u2018RNA polymerase II transcription factor complex\u2019 (Figure 2D). Because GFP expression levels in those mutants were lower than average (Figure 4D), those mutants might simply reduce the transcription of the GFP transcript itself.\n\nIt is thought that only harmless proteins can be produced up to \u2018the ultimate expression level\u2019 to cause the protein burden because harmful proteins should cause cellular defects at lower expression levels (Moriya, 2015). Those defects should be triggered by overloading more limited cellular resources, such as those used for folding and transport, accelerated non-specific interactions, or untimely activation of pathways (Moriya, 2015). Our study here supported this idea through the following observations: (1) tGFP (and NES-tGFP) consists of aggregates in the cell and thus could cause proteostasis stress (Figure 6C,D); (2) NES-tGFP further uses the protein export machinery; (3) genetic profiling suggested that tGFP-op and NES-tGFP-op overload the proteasome and protein export machinery (Figure 5D); (4) expression levels of tGFP and NES-tGFP, which cause growth defects are far lower than that of GFP (Figure 6B); and (5) GFP-op isolated specific mutants that were not isolated in tGFP-op and NES-tGFP-op. Figure 7F provides a schematic model summarizing this idea. Only harmless proteins like GFP can be produced up to the ultimate expression levels that cause the protein burden, which seems to be related to actin functions. Other proteins, localized or aggregative, can be produced at far lower levels than the level which causes the protein burden because their overproduction overloads localization or protein degradation resources which are more limited than the protein synthesis resource.\n\nFinally, we propose a \u2018barrel model\u2019 to explain the relationship between the capacity of intracellular processes and the limits of expression (Figure 7G). In order for the cell to maintain its vital functions, resources within the cell are distributed to processes such as synthesis, folding, degradation, and transport. Each process has a fixed capacity depending on the amount of resources allocated to it (represented by the size of the barrel in Figure 7G). Each protein is synthesized, folded, transported, and degraded while using the resources in the cell (shown with arrows in Figure 7G). Overproduction of proteins processed by each process causes an overload of each resource, thus stalling the processing of other proteins produced by that process and creating cellular dysfunction. If a protein is processed by more than one process, its overexpression will first cause an overload of the process with the smallest capacity. Therefore, the level of overexpression of a protein that causes growth inhibition is likely to be determined by the process with the lowest capacity out of the processes by which the protein is processed. The capacity of synthesis, where all proteins are processed, should be the largest, and therefore proteins that undergo only the synthesis processing, that\u00a0is those that fold on their own, localize to the cytoplasm, and do not undergo rapid degradation, are considered to have the highest expression limits (Such proteins are referred as gratuitous proteins here). Previous studie has suggested that GFP and Gpm1 are such proteins, and they cause growth inhibition when expressed up to 15% of total proteins (Kintaka et al., 2016; Eguchi et al., 2018). We define this proliferation inhibition effect as the protein burden. Protein burden is therefore thought to be caused by perturbations to protein synthesis. Our analysis of genetic interactions, however, did not provide a clear link to perturbations to the synthetic process; our results suggest that protein burden causes an unexpected perturbation of actin function. The details of this mechanism remain unclear at present, and further studies are needed. On the other hand, processes in which only a fraction of proteins are processed have a smaller capacity than synthesis, and the expression limits of proteins processed by those processes must be lower than the limits of protein burden. In fact, the expression limits of tGFP, which undergoes degradation by aggregation and ubiquitination (probably by misfolding), and NES-tGFP, which is transported outside the nucleus, were much lower than those of GFP. Since their expression limits were about 4% of GFP (Figure 6B), it can be estimated that their expression limits are about 0.6% of the total proteins. This amount may reflect the capacities of the processes by which these proteins are processed.\n\nIn conclusion, our genetic profiling successfully investigated the consequences of overproduction: overload of protein synthesis, nuclear export, and the proteasome. Mutants isolated in this study will be useful resources for further investigations into the general consequences of protein overproduction, especially the overloading of cellular processes.\n\n## Materials and methods\n\n### Strains and plasmids used in this study\n\nThe vector plasmid (pTOW40836), GFP-op plasmid (pTOW40836-TDH3pro-GFP), tGFP-op plasmid (pTOW40836-PYK1pro-tGFP), and NES-tGFP-op plasmid (pTOW40836-PYK1pro-NES-tGFP) have been described previously (Kintaka et al., 2016; Eguchi et al., 2018). Other than SGA, strains BY4741 (MATa his3\u03941 leu2\u03940 met15\u03940 ura3\u03940) and BY4743 (MATa/\u03b1 his3\u03941/his3\u03941 leu2\u03940/leu2\u03940 LYS2/lys2\u03940 met15\u03940/MET15 ura3\u03940/ura3\u03940) were used as wild-type strains in the analysis. The deletion mutant collection and temperature-sensitive mutant collection have been described previously (Costanzo et al., 2016). Yeast culture and transformation were performed as previously described (Amberg and Burke, 2005). A synthetic complete (SC) medium without uracil (Ura) or leucine (Leu) was used for yeast culture.\n\n### Query strains\n\nY7092 (MATa can1\u0394::STE2pr-his5 lyp1\u0394 ura3\u03940 leu2\u03940 his3\u03941 met15\u03940) was used for the query train in the SGA. Y7092-E2-Crimson (MATa can1\u0394::TDH3pr-E2-Crimson STE2pr-his5 lyp1\u0394 ura3\u03940 leu2\u03940 his3\u03941 met15\u03940) was used for the query strain in the SGA with the GFP fluorescent measurement experiment.\n\n### Synthetic genetic array (SGA) and colony size analysis\n\nSGA and colony size analysis were performed as previously described (Baryshnikova et al., 2010). An empty plasmid (pTOW40836), and plasmids for overproducing GFP (pTOW40836-TDH3pro-GFP), tGFP (pTOW40836-PYK1pro-tGFP), and\u00a0NES-tGFP (pTOW40836-PYK1pro-NES-tGFP) were introduced into the deletion and temperature-sensitive mutant collections using robots to manipulate libraries in 1536-colony high-density formats. A query strain harboring each of the overexproduction plasmids and each of the MATa mutant strains harboring a different genetic alteration were mated on YPD. Diploid cells were selected on plates containing both selection markers (YPD + G418 + clonNAT) found in the haploid parent strains. Sporulation was then induced by transferring cells to nitrogen starvation plates. Haploid cells containing all desired mutations were selected for by transferring cells to plates containing all selection markers (SC \u2013His/Arg/Lys + canavanine + thialysine + G418 + cnonNAT) to select against remaining diploids. To analyze the growth of each deletion strain with the plasmids, all custom libraries were replicated to SC\u2013LU plates and grown for three days at 30\u00b0C.\n\nThe fitness of each strain was assessed as normalized colony size on agar plates. Measurements of fitness and calculation of genetic interaction scores for each strain from colony images on agar plates were performed using SGA-tool (http://sgatools.ccbr.utoronto.ca) (Wagih et al., 2013). The colony size was quantified and normalized as shown in Figure 1\u2014figure supplement 2. Then the genetic interaction (GI) scores were calculated using the formula. GI score (\u03b5)=WAB \u2013 WA\u00a0\u00d7\u00a0WB, where WAB is overproduction-plasmid/mutant fitness, WA is Vecvtor control/mutant fitness, and WB is set to one as shown in Figure 1\u2014figure supplement 2. The GI scores were filtered using the defined confidence threshold (GI score, |\u03b5|>0.08), and p-value that reflects both the local variability of replicate colonies (four colonies/strain) and the variability of the strain sharing the same query or array mutation (p<0.05) (Baryshnikova et al., 2010). This filtered data set was used for all analyses.\n\nFor GFP-op_positive mutants, we further filtered the mutants as follows. Initial GFP-op_positive 146 genes (147 mutants) contained genes involved in the His and Lys synthetic pathways. His and Lys (Arg) are used as marker genes for the SGA, and deletion mutants of HIS, LYS, and ARG genes should not grow in the SGA analysis. In fact, the colony sizes of these mutants in the vector control experiment were very small and were considered to be the carryover. We thus further isolated positively-interacting mutants by setting a threshold on the colony size of greater than 0.39 in the vector control experiment, selected according to the largest colony size (ARG1) among the HIS, LYS, and ARG mutants, to avoid the identification of false-positive GIs.\n\n### Colony size mesurement\n\nColony size was measured by using the image analysis software SGA tools (http://sgatools.ccbr.utoronto.ca/) to determine accurate pixel colony sizes. Average values and standard deviations were calculated from at least six replications. Y7092 was used as the wild-type host strain.\n\n### Liquid growth measurement\n\nCellular growth was measured by monitoring OD595 every 30 min using a model 680 microplate reader (BioRad). The maximum growth rate was calculated as described previously (Moriya et al., 2006). Average values and standard deviations were calculated from biological triplicates. BY4741 was used as the wild type host strain.\n\n### GFP fluorescent measurement by typhoon\n\nTwo colonies/strain from the SGA were picked up and replicated to SC\u2013U plates, and grown for two days at 30\u00b0C. To detect the fluorescence of the colony, plates were scanned by laser (GFP at 488 nm and E2-Crimson at 532 nm) using Typhoon 9210 (Amersham Biosciences). The image data were analyzed using GenePix Pro Software (Molecular Devices). Each colony was segmented by a circle with the same diameter, the fluorescence per pixel was detected, and the medians of the fluorescence in the circle were calculated. To normalize the intensity by plate, all medians were divided by the plate average median for GFP and E2-Crimson. The ratios of GFP/RFP were calculated, and the averages of the two colonies were used.\n\n### Clustering analysis\n\nThe GI scores of GFP, tGFP, and NES-tGFP were clustered into 15 clusters by the hierarchical clustering (average) method using R (https://www.r-project.org).\n\n### Enrichment analysis\n\nEnrichment analysis was performed using the gene list tool on the Saccharomyces genome database (yeastmine.yeastgenome.org/yeastmine/bag.do) (Cherry et al., 2012).\n\n### Microscope observation\n\nLog-phase cells were cultivated in SC\u2013Ura medium. Cell images were obtained and processed using a DMI6000 B microscope and Leica Application Suite X software (Leica Microsystems). GFP fluorescence was observed using the GFP filter cube. Cellular DNA was stained with 100 \u03bcg/ml Hoechst 33342 (H3570, ThermoFisher) for 5 min and observed using the A filter cube. BY4741 was used as the host strain.\n\n### Quantification of GFP expression level\n\nThe total protein was extracted from log-phase BY4741 cells harboring overproduction plasmids with NuPAGE LDS sample buffer (ThermoFisher NP0007) after 0.2 N NaOH treatment for 5 min (Kushnirov, 2000). For each analysis, the total protein extracted from 0.1 optical density unit of cells OD600 1.0 was used. The extracted protein was labeled with Ezlabel FluoroNeo (WSE-7010, ATTO), as described in the manufacturer\u2019s protocol, and separated by 4\u201312% SDS-PAGE. Proteins were detected and measured using a LAS-4000 image analyzer (GE Healthcare) in SYBR\u2013green fluorescence detection mode, and Image Quant TL software (GE Healthcare). The intensity of the 45 kDa band corresponding to Pgk1 and Eno1/2 was used as the loading control. To detect GFP, the SDS-PAGE-separated proteins were transferred to a PVDF membrane (ThermoFisher). GFP was detected using an anti-GFP antibody (11814460001, Roche), a peroxidase-conjugated second antibody (414151F, Nichirei Biosciences), and a chemiluminescent reagent (34095, ThermoFisher). The chemiluminescent image was acquired with a LAS-4000 image analyzer in chemiluminescence detection mode (GE Healthcare). For the estimation of relative GFP levels, the intensities of corresponding GFP bands were normalized using the loading control described above.\n\n### Cell fractionation and detection of ubiquitination\n\nBY4743 cells with an overproduction plasmid were cultured overnight at 30\u00b0C in 25 ml SC\u2013Leu/Ura medium. Cells were collected, cells were suspended in 1 mL of lysis buffer 10 mM Phosphate buffered saline (pH7.4), 0.001% Tween20, Halt Protease Inhibitor Cocktail (78425, ThermoFisher). Glass beads were added to the cell suspension and the tube was vortexed three times for 2 min. The sample was chilled on ice for 3 min between vortexing. The cell lysate was centrifuged at 20,000\u00a0\u00d7\u00a0g for 10 min, and the supernatant was transferred to another tube. The precipitates were washed five times with 1 mL of PBST. The final precipitates were suspended in 100 \u00b5L of PBST. The sample was treated with NuPAGE sample buffer (NP0007, ThermoFisher) at 70\u00b0C for 10 min., and the proteins were separated by SDS-PAGE. Total protein and GFP were detected by Ezlabel FluoroNeo and western blotting with GFP antibodies as described above. Detection of ubiquitin was performed by western blotting same as the one of GFP except that the anti-ubiquitin antibody (P4D1, Santa Cruz) was used.\n\n### Proteome analysis\n\nProtein samples were precipitated by methanol/chloroform method and resolved in 0.1 M Tris-HCl (pH 8.5) containing 8 M urea. After reduction with DTT and alkylation with iodoacetoamide, urea concentrations were diluted by 4-fold with 0.1 M Tris-HCl (pH 8.5) and then digested into peptides by trypsin (Promega, Wisconsin, WI). Digested samples were centrifugated at 20,000\u00a0\u00d7\u00a0g for 10 min and the tryptic peptides in supernatant were analysed by liquid chromatography-tandem mass spectrometry (LC-MS/MS) system consisting of a DiNa nano LC (KYA technologies, Tokyo, Japan) and a LTQ-Orbitrap XL mass spectrometer (Thermo Fisher Scientific, Waltham, MA). Acquired MS/Ms spectra were subjected to database search against protein sequences downloaded from the Saccharomyces Genome Database (http://www.yeastgenome.org/) by SEQUEST alogorithm. The number of peptide-spectrum match (PSM) for each protein, which fulfill the criteria of false discovery rate below 1%, was listed in Figure 6\u2014source data 1.\n\n### High-dimensional morphological analysis\n\nMorphological data of cells cultured were acquired as previously described (Ohya et al., 2005). Briefly, logarithmic-phase BY4741 cells harboring plasmids grown in SC\u2013Ura medium were fixed and were triply stained with FITC-ConA, rhodamine-phalloidin, and 4,6-diamidino-2-phenylindole to obtain fluorescent images of the cell-surface mannoprotein, actin cytoskeleton, and nuclear DNA, respectively. Images of at least 200 individual cells were acquired and processed using CalMorph (version 1.2). All of the statistical analyses were performed with R. To statistically test the morphological differences among four strains, we conducted one-way ANOVA of the generalized linear model (GLM) for each of 501 morphological parameters. Probability density functions (PDFs) and accompanying link functions in the GLM were assigned to each trait as described previously (Yang et al., 2014). Difference of the four strains (n\u00a0=\u00a05) was incorporated as the explanatory variable into the linear model. We assessed a dispersion model among the strains in the linear models for the 501 parameters by Akaike information criterion (AIC) and set 110 models (parameters) as a different dispersion model because of lower AIC than that of a single dispersion model. Applying one-way ANOVA among the four strains to all 501 parameters, 51 of the 501 parameters were found to differ significantly at false discovery rate (FDR)\u00a0=\u00a00.01 by the likelihood ratio test (Likelihood ratio test in Figure 7\u2014source data 1). Maximum likelihood estimation, likelihood ratio test, and the estimation of FDR were performed using the gamlss, lrtest, and qvalue functions in the gamlss (Stasinopoulos and Rigby, 2007), lmtest (Zeileis and Hothorn, 2002), and qvalue (Storey, 2002) R package. By Wald test at FDR\u00a0=\u00a00.01, 16, 17, and 24 of the 501 traits were detected to have a significant difference from wild-type in GFPy66g, Gpm1, and Gpm1-m, respectively (Q value of Wald test in Figure 7\u2014source data 1). Of the 16 parameters detected in GFPy66g, 14 parameters were grouped into four independent morphological features by four principal components (explaining 60% of the variance) extracted from principal component analysis for the Z values of 109 replicates of his3\u0394 (Suzuki et al., 2018) as described previously (Ohnuki et al., 2012), and were used for the illustration of morphological features (Figure 7E, Morphological features in in Figure 7\u2014source data 1).\n",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "941b3b9c-91d9-496d-9534-d68d5357dcbc",
+      "submission_id": "6f1c1f10-fb4a-44e8-b0df-fd72fa55b641",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Ben-Tal, Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54080.sa1](https://doi.org/10.7554/eLife.54080.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe study enhances our understanding of cellular effects of protein load.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Genetic Profiling of Protein Burden and Nuclear Export Overload\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn \"Genetic Profiling of Protein Burden and Nuclear Export Overload\", Kintaka et al. performed a synthetic genetic array screen to explore the genetic interactions between mutants (DMA and TSA libraries) and protein burden. They used the 2 micron plasmid of Saccharomyces cerevisiae to explore the genetic interactions in response to three different protein burdens/overloads: (i) regular GFP; (ii) triple-GFP (tGFP), a much bigger protein that they found created some aggregates when highly expressed; and (iii) the nuclear export signal-containing tGFP (NES-tGFP). A similar study has already been published in this journal (Farkas et al., 2018), where the genetic interaction between the DMA library and yEVenus burden was explored. The present work, however, is much more extensive: it includes four biological and two experimental repeats, a second mutant library (TSA), different types of burden, and, most importantly, it checks the effect of higher burden levels using a stronger promoter.\n\nEssential revisions:\n\nFundamental:\n\nOverall, this work increases the knowledge about processes involved in protein stress alleviation. Yet, while the manuscript describes interesting phenomena, it does not provide follow-up findings to explain the main observations and therefore remains descriptive in nature. Here are concrete suggestions to this end.\n\n1) In general, since there is no systematic follow-up on the main findings, it is difficult to appreciate how cells deal with the increased protein burden. In particular, as the authors noted, their findings are significantly different from other studies using similar reporter systems. Additional work is needed in order to substantiate the different pathways.\n\n2) The authors overexpress GFP that does not have any physiological activity in yeast cells and therefore considered non-harmful. Yet, overexpression of tGFP shows genetic interaction with the proteasome. This may imply that tGFP undergoes post-transcriptional modification(s), such as ubiquitylation and this must be taken into consideration when attempting to explain the data. Accordingly, the authors need to examine the ubiquitylation status of their constructs, especially in proteasome where ubiquitin conjugates accumulate. Abolishing GFP ubiquitylation (using a lysineless variant, for example), may mitigate or abolish genetic interactions with proteasome subunits, suggesting a role for ubiquitin during overexpression.\n\n3) tGFP-op levels are !~10 fold lower than GFP-op and yet only tGFP forms aggregates and affects cell viability in proteasome mutants. This is an interesting observation that requires some explanations. How tGFP-op is related to its tendency to aggregate and whether it is related to the proteasome activity should be verified before drawing a conclusion.\n\n4) A main limitation of this work is the use of \"tug of war\" plasmid to generate the burden. This means that the plasmid copy number, and with it the GFP levels, will change across different mutations. The authors found, for example, that GFP levels are lower in many of the Mediator mutants. The reaction of the mutant cells to the burden should be measured not only by the growth effect but also by the burden level. The latter can be approximated by GPF levels or by the plasmid copy number. The authors report that in -Leu/Ura conditions, there are 30 copies of the plasmid. This statement is correct only for WT, and needs to be measured or estimated for the different mutations. This estimation, again, can be done by measuring the GFP levels of the different mutants. For the GFP set, they indeed used a method to measure the GFP levels. It would have helped to understand the mutants in Figure 3, if the GFP levels had been shown \u2013 this could easily be done in a supplementary figure. Fluorescence levels were, however, not done in the tGFP and NES-GFP experiments, or at least they are not being reported. It is important and probably critical to successful publication, that GFP levels be measured and reported, to help interpret the results correctly. At a minimum, this GFP levels should be given for those mutants above the GI threshold.\n\n5) When the authors compared their results with those of Farkas et al., they didn't find any correlation. Neither study, incidentally, quantified GFP levels. Also, the present study used a plasmid with much higher expression levels, which will inevitably have obscured comparability. Farkas and co-workers used yEVenus and they showed that \"yEVenus binds weakly, but significantly to certain molecular chaperones\u2026\". This binding, that may be unique to yEVenus, could also be part of the reason for the apparent differences in results. Farkas et al. showed that the burden effect was reduced by adding more AA to the media. Checking the AA effect on the GFP burden would have helped to reconcile whether the difference in results is a reflection of a different kind of burden, or whether it is mainly the results of a growth effect that wasn't normalized by GFP levels.\n\nPresentation:\n\nThe writing of the manuscript and the interpretation of the data needs considerable expansion. The methods and the results are not described clearly. Please see major comments below.\n\n1) Clarify the definition of genetic interactions.\n\n1a) The term \u201cgenetic interactions\u201d should be defined in the Introduction in a way that is specific to how it is used in this study, e.g. \"In this study we screened for gene knockouts or knockdowns that had different impacts on growth depending on whether a green fluorescent protein was overexpressed.\"\n\n1b) Clarify the meaning of positive and negative interactions, specifically whether the mutations are deleterious or beneficial. A positive interaction could either mean that GFPop alleviates a growth defect or enhances a growth advantage. Which one happens more? Probably the former but this needs to be clearer. This should be broken down in the figure, e.g. what fraction of orange dots signify a growth defect being alleviated vs. a growth advantage being enhanced? Can the authors use 4 colors, blue, light blue, orange, light orange? Since the goal here is to understand the biology of the cell and how GFPop changes it, these details seems important.\n\n2) Clarify the protein burden.\n\n2a) It is not a good idea to assume readers are familiar with previous publications using the tow system. Thus, most readers will assume that all mutant strains are expressing the same amount of GFP plus or minus some kind of noise (e.g. plasmid copy number variation due to unequal cell division). Please explain this in more detail in the Results section.\n\n2b) Also, the term protein burden needs to be continuously explained. It is easy to interpret that term as meaning \u201cthe growth defect imposed by GFPop\u201d. But it probably refers to the number of GFPop molecules produced. Is that right? Rather than using the term, \u201cprotein burden\u201d, sometimes it would be OK to spell out what is meant, e.g. the number of GFPop molecules that burden the cell.\n\n2c) An interesting question that arises is whether, in negative interactions, the expression of GFPop is enhancing the growth defect of the gene knockout/knockdown or the gene knockout is increasing the protein burden, e.g. increasing the level to which the tow system is able to express GFP. The authors have an impressive method of disentangling these two hypotheses, which they explain in Figure 4. But paragraph two of subsection \u201cInvestigation of GFP expression levels of mutants\u201d of the paper, where these possibilities are enumerated, are unclear. One has to go back and work out many details including the possible types of positive and negative interactions, and how the tow system worked. A diagram or cartoon should be presented earlier in the paper, perhaps as Figure 1, which explains the logic showing the different possibilities that could be happening inside of cells and how the authors plan to disentangle them. The authors could depict 4 double-mutant cells, for example, one with a high level of GFP but a lower growth rate than either the GFPop strain or the mutant strain. Then they could explain in the legend the hypothesis as to what is happening inside this cell. Maybe a figure is unnecessary. But some more detailed explanation of how this system works and how the authors plan to us it to disentangle the possible things happening inside of cells should come up much earlier in the paper.\n\n3) The growth regime is not clearly explained.\n\n3a) The text in the first part of the Results section is very brief and relies heavily on Figure 1 to explain the experimental set up. Perhaps add a few more sentences to guide the reader. For example, the comment in paragraph two of subsection \u201cIsolation of mutants that have genetic interactions with GFP-op\u201d about \u201ccolonies\u201d does not make sense. It should have already been stated that growth is measured in colonies and not in liquid culture. Otherwise the word \u201ccolonies\u201d comes from nowhere.\n\n3b) On that note, Figure 1C is confusing because these particular measurements were taken in liquid culture. Why are two different culturing methods used? Since 1C is meant as a control to show how the GFP affects growth when no knockout/knockdown is present, shouldn't this control be performed using the same method as the rest of the experiments?\n\n4) Why were the particular GI threshold levels chosen? Why were the cutoffs chosen, including 0.08 in Figure 1 and 0.2, to define GFPop-positive and negative?\n\n5) Why better correlation across conditions than within conditions? Figure 2A shows that even when taking only GI that exceed the 0.8 threshold, the correlation between replicates is less than 0.5 in the DMA -Ura condition. But Figure 2B shows that when comparing DMA -Ura to DMA -Ura/-Leu the correlation is greater than 0.5. How come the correlation between replicates is less than the correlation between these two different conditions? Is it because by averaging multiple replicates you get a better sense of the true GI value? This should be addressed.\n\n6) Too many abbreviations. There are so many terms in this paper that are used to capture important concepts, e.g. positive interaction, protein burden, TMA, GFPunit_L, GFPunit_H, GFPop_positive, GFPop_negative. The reader loses track of how all of these things are related. The authors should not rely on these abbreviations so much and talk though these relationships, e.g. \"Mutants with growth defects that were enhanced by GFP overexpression were also more likely to produce less GFP, indicating that the limit of GFP overproduction in these cells was lower than in other cells.\" Sentences like these would be so helpful in explaining what is actually going on.\n\n7) Sometimes the Results section read a little bit like a list.\n\n7a) This is a common issue in studies that report GO terms from different groups. Figure 3 is particularly list-like. The balance of the paper should shift away from listing GO categories and towards explaining and interpreting what is happening inside of cells as in paragraph two of subsection \u201cInvestigation of GFP expression levels of mutants\u201d, and in Figure 6. For example, the authors were nicely able to do more with the actin and cell bud genes and show that indeed these cells had aberrant morphology. Also Figure 6F where the authors digest all of this information into a hypothesis about what is happening inside of cells was nice. Problematically, that hypothesis is unclear and will only become clear once points 1 and 2 above are addressed.\n\n7b) Also, in 6F the relationship to the proteasome was not as clear as was the perturbation of actin. Could the proteasome relationship be explained more clearly?\n\nFinal thoughts: In sum, the authors' goal seems to be to go beyond listing GO categories to talk about how the protein burden affects cell biology. They need to rework the paper a bit in order to achieve this goal.\n\n8) In the NES-tGFP experiment (and only in this experiment), they found strong interaction with the nucleus export machinery. This result isn't surprising per se but it's a good proof of concept, and it can be used as a control \u2013 showing that the system is working, which is worth mentioning. So this work could be an important resource to the field enabling a deeper understanding of protein burden origin. It should be emphasized.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Genetic Profiling of Protein Burden and Nuclear Export Overload\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nAs you can see, reviewer 2, raised outstanding issues regarding the mechanism. Originally they felt that more experiments are needed. However, in the discussion that followed they agreed to allow the authors to deal with them by adding statements that further studies to reveal the mechanisms are needed. It is up to you to decide whether you would like to add more experiments or language changes.\n\nHere is a part of the discussion that elaborate on the proposed experiments, which could be useful to you:\n\n\"One model that I can think of, which is based on recent literature, is that tGFP undergoes ubiquitylation and then a portion of the ubiquitylated protein is sequestered into large aggregates. Proteasomes are been recruited to these aggregate but the kinetics of degradation is altered. This results in overall reduced proteasome capacity, shown through genetic interaction with proteasome subunits. I proposed to the authors to address the connection between overexpression and aggregation.\n\nIn my second revision, I suggested two experiments:\n\n1) to IP tGFP from the pellet and show that indeed it is the protein that undergo ubiquitylation. I believe that technically this experiment is essential.\n\n2) To reduce overall ubiquitylation (through the overexpression of mutant R48 ubiquitin) and test if tGFP is still aggregated and if this has an effect on cell growth.\n\nOne can think of alternative experiments, but the point is that the basis to the effects the authors observed upon overexpression of tGFP is still unclear to me.\"\n\nOtherwise, please re-phrase some of the statements regarding the ubiquitylation of tGFP and the possible mechanism of tGFP function. Regarding the former, showing poly-Ub chains in the pellet does not prove that tGFP is indeed as the substrate. Regarding the latter, according to the accumulating data, the mechanism is unlikely to be a general effect of overexpression that leads to the proteasome. A statement about the effect of aggregates on proteasomal degradation could also help clarifying the issue. Possibly the depletion of essential factors like molecular chaperones?\n\nReviewer #1:\n\nThe authors have addressed all of my previous comments, moreover, this is an impressive revision. The authors add new figures and text that clarify their methods and previous findings. The authors also add new analyses, including biochemical analyses of some of their overexpression strains. Finally, the authors add a new figure and synthesize their results into a model which describes the different ways cells might be affected by overexpressed proteins.\n\nThe revised paper represents a massive amount of experiments and careful thought about how the cell responds to overexpressed proteins. The paper sheds new light on this question.\n\nReviewer #2:\n\nThe authors nicely addressed my first comment. however, in my opinion, issues 2 and 3 require further clarification:\n\nIn respond to my comments regarding the level of expression and PTM of tGFP, the authors tested whether tGFP aggregates were ubiquitinated and concluded that overexpressed tGFP but not GFP forms ubiquitinated aggregates in cells. They hypothesized that tGFP-op causes an overload of the proteasome because tGFP is frequently misfolded, ubiquitinated and degraded by the proteasome. This may be the cause of the negative genetic interactions between tGFP-op and the proteasome mutants.\n\nI suggest that this hypothesis should be further clarified, since aggregation of tGFP is at the center of the manuscript and without having a mechanistic explanation to its function, the significance of some the authors findings is unclear. Generally, the overexpression of misfolded proteins (even large ones) per se does not inhibit the proteasome in yeast cells. Alternatively, the recruitment of proteasomes to protein aggregates may abrogate their function. Since the proteasome harbor several ubiquitin receptors, it is possible that protesomes interact with aggregated proteins through conjugated ubiquitin chains. This could be tested for tGFP by isolating it from aggregates by IP and looking for ubiquitylation. Furthermore, I accept that having lysineless GFP might not be the best approach to tackle the issue. Yet, the authors could test the effect of conditional overexpression of lys48 ubiquitin mutant on aggregate formation, proteasome function and/or cell viability in cells overexpressing GFP or tGFP. This type of experiments should shade some light on the molecular basis for tGFP aggregation and the effect on cell growth.\n\nReviewer #3:\n\nThe revise version of \"Genetic Profiling of Protein Burden and NuclearExport Overload\", is greatly improved. the logic is easier to follow, and there are more illustrations. The comparison between their and Farkas' results are dipper, and most important to my opinion, they now have the GFP measurements for all the conditions, and those measurements now better integrated into the text and figures.\n\nTheir final model about the different ways protein overproduction can affect growth rate is very nice. they display some of the interesting biological questions that rise up from their screening, include the interaction between actin and protein burden, and that over-expression tGFP lead to aggregate and proteasome stress. They also did some follow-ups experiments to both of them, but they didn't reach to a biological understanding about the origin of those interesting observations: way Actin is so important to protein overproduction? and the reason for tGFP aggregates. It would have been nice to get a better understanding to at list one of them but many times interesting questions are as important as answers, and it is very extensive and interesting screen. So, they answered most of the question, and in my opinion the current wark important and good enough for publication.\n",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7c77180b-201a-4b51-ab74-67b2d6ef351b",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C1",
+      "claim": "Overproduction of proteins triggers cellular defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Overproduction (op) of proteins triggers cellular defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "130cbb75-aa78-49d2-85c8-0581ee7f25b8",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C2",
+      "claim": "One consequence of protein overproduction is the protein burden/cost, which is produced by overloading the protein synthesis process.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the consequences of overproduction is the protein burden/cost, which is produced by an overloading of the protein synthesis process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "908950ff-3391-4902-b990-af922212a5d5",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C3",
+      "claim": "Extreme overproduction of a gratuitous protein causes growth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Extreme overproduction of a gratuitous protein that has no cellular function causes growth defects, which, at least in part, appears to be caused by overloading the cellular resources for protein synthesis (Dong et al., 1995; Snoep et al., 1995; Stoebel et al., 2008; Makanae et al., 2013; Shah et al., 2013; Kafri et al., 2016; Moriya, 2015; Eguchi et al., 2018; Scott et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "d9480d02-95c2-466d-8e32-d9d6e6744325",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C4",
+      "claim": "Limiting functions defining the protein burden are thought to be the translational process upon nitrogen limitation and the transcriptional process upon phosphate limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Limiting functions defining the protein burden are thought to be the translational process upon nitrogen limitation, and the transcriptional process upon phosphate limitation (Kafri et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kafri et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "f96004e9-67e9-4696-8ba3-aa58d7235b20",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C5",
+      "claim": "Fluorescent proteins such as EGFP, Venus, and mCherry do not have any physiological activity in yeast cells and are considered gratuitous proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent proteins, such as EGFP, Venus, and mCherry, do not have any physiological activity in yeast cells and thus are considered gratuitous proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "650732e0-b785-4d1d-9b75-010d778c8c71",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C6",
+      "claim": "Overproduction of fluorescent proteins triggers a protein burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these fluorescent proteins are believed to be produced at the highest possible levels in yeast cells, and their overproduction triggers a protein burden (Makanae et al., 2013; Kafri et al., 2016; Eguchi et al., 2018; Farkas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "a6e34500-a36f-498d-8089-3d8e959a4dad",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C7",
+      "claim": "Modifications to EGFP such as adding a degradation signal, misfolding mutations, or adding localization signals reduces its expression limit.",
+      "claim_type": "EXPLICIT",
+      "source": "Modifications to EGFP, such as adding a degradation signal, misfolding mutations, or adding localization signals, reduces its expression limit, probably because these modifications overload limited resources for the degradation, folding, and localization processes, respectively (Geiler-Samerotte et al., 2011; Makanae et al., 2013; Kintaka et al., 2016; Eguchi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "59b4746c-508b-4168-99d1-6d6c750f9b12",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C8",
+      "claim": "Hsp70-associated chaperones contribute to the protein burden by minimizing the damaging impact of the overproduction of a gratuitous protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the analysis of these strains, and conditions exacerbating the protein burden, the authors concluded that Hsp70-associated chaperones contribute to the protein burden by minimizing the damaging impact of the overproduction of a gratuitous protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on conclusions from a previous study by Farkas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "27f03aa9-3dc0-4458-98c4-b66e0b27616e",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C9",
+      "claim": "A strain harboring the pTOW40836-TDH3pro-GFP plasmid shows growth defects under \u2013Ura conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While a strain harboring this plasmid shows growth defects even under \u2013Ura conditions (Figure 1C), the strain shows more growth defects under \u2013Leu/Ura conditions (Figure 1D), presumably because the copy number increase leads to an increase in GFP production, and probably causes a stronger protein burden-associated growth defect (Eguchi et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1C and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "87c0b090-9390-4a3f-a3f4-fab666287419",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C10",
+      "claim": "The strain harboring pTOW40836-TDH3pro-GFP shows more growth defects under \u2013Leu/Ura conditions than under \u2013Ura conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While a strain harboring this plasmid shows growth defects even under \u2013Ura conditions (Figure 1C), the strain shows more growth defects under \u2013Leu/Ura conditions (Figure 1D), presumably because the copy number increase leads to an increase in GFP production, and probably causes a stronger protein burden-associated growth defect (Eguchi et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "a396ce14-5add-43d3-a19b-5d457337403e",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C11",
+      "claim": "The copy numbers of pTOW40836 under \u2013Ura and \u2013Leu/Ura conditions are around 10 and 30 copies per cell, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The copy numbers of this plasmid under \u2013Ura and \u2013Leu/Ura conditions are around 10 and 30 copies per cell, respectively (Eguchi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Eguchi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "dd0b6fad-b48a-49a4-9a25-856e54485c96",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C12",
+      "claim": "The reproducibility of the DMA experiments was lower in \u2013Ura conditions (r = 0.17) than in \u2013Leu/Ura conditions (r = 0.36).",
+      "claim_type": "EXPLICIT",
+      "source": "The reproducibility of the DMA experiments was lower in \u2013Ura conditions (r = 0.17), whereas it was higher in \u2013Leu/Ura conditions (r = 0.36).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on correlation analysis of experimental replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "b4144031-3c6c-4e21-9fbf-baad2baedf2a",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C13",
+      "claim": "The reproducibility of the TSA experiments was higher in both \u2013Ura and \u2013Leu/Ura conditions (r = 0.42 and 0.53).",
+      "claim_type": "EXPLICIT",
+      "source": "The reproducibility of the TSA experiments was higher in both \u2013Ura and \u2013Leu/Ura conditions (r = 0.42 and 0.53).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on correlation analysis of experimental replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "88900d57-06a5-484e-9fe9-49d246da84b8",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C14",
+      "claim": "Conditions which cause severe growth defects produce the most reproducible GI scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the conditions which cause severe growth defects produce the most reproducible GI scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the reproducibility data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "590cb127-3351-4265-acb2-1d614d4fd53e",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C15",
+      "claim": "The GI scores obtained by this study did not show correlation with those from the Farkas study (r = \u20130.01 and \u20130.07).",
+      "claim_type": "EXPLICIT",
+      "source": "The GI scores obtained by our analysis did not show correlation with those from the Farkas study (r = \u20130.01 and \u20130.07, Figure 2\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on correlation analysis comparing two studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "83e7729a-b6a5-4a45-bf63-4bdb988830e5",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C16",
+      "claim": "A group of temperature-sensitive mutants showed greater growth defects under \u2013Leu/Ura conditions than under \u2013Ura conditions in the vector control experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "During the screening, we noticed that a group of temperature-sensitive mutants showed greater growth defects under \u2013Leu/Ura conditions than under \u2013Ura conditions in the vector control experiments (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on observations from the screening data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "5c9ab993-2244-497f-98d9-d8270e15667e",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C17",
+      "claim": "The gene ontology term 'DNA replication preinitiation complex [GO:0031261]' was significantly over-represented in the mutated genes showing growth defects under high-copy conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene ontology (GO) term 'DNA replication preinitiation complex [GO:0031261]' was significantly over-represented in the mutated genes (seven genes, p=1.47E\u201305).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on GO enrichment analysis with a significant p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "6e9e8f0c-8f20-4187-83c1-c71babcc7f23",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C18",
+      "claim": "The GFP-op_negative 71 genes (79 mutants) were significantly enriched in GO categories related to cytoskeletal organization and polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "The GFP-op_negaitive 71 genes (79 mutants) were significantly enriched in GO categories related to cytoskeletal organization and polarization (Figure 2D, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on GO enrichment analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "b718fd96-d4b9-41d7-a306-c1f79e69287d",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C19",
+      "claim": "One hundred GFP-op_positive genes (100 mutants) were enriched in genes involved in RNA 3\u2032-end processing and the transcription factor complex.",
+      "claim_type": "EXPLICIT",
+      "source": "One hundred GFP-op_positive genes (100 mutants) were enriched in genes involved in RNA 3\u2032-end processing and the transcription factor complex (Figure 2D, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on GO enrichment analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "1e40a4ff-bf0d-466b-88d7-20b770d4d396",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C20",
+      "claim": "Of 13 mutants of the TRAMP complex and nuclear exosome subunits, seven showed positive GIs with average scores greater than 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 13 mutants, seven showed positive GIs with average scores greater than 0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of GI scores for specific mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "bd799a97-b774-4672-a04c-704d9ce68f38",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C21",
+      "claim": "In total, 20 out of 38 mutants of the mediator-RNA polymerase II preinitiation complex subunits showed positive GIs with average scores greater than 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 20 out of 38 mutants showed positive GIs with average scores greater than 0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of GI scores for specific mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "38b869fe-ee73-40eb-bdbd-7dcbcd58b09e",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C22",
+      "claim": "Mutants with enhanced growth defects upon GFP overproduction (GFP-op_negative mutants) were more likely to produce less GFP (GFP_L).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants with enhanced growth defects upon GFP overproduction (GFP-op_negative mutants) were more likely to produce less GFP (GFP_L) (Figure 4C, p=4.7E-11, Student's t-test), indicating that the limit of GFP overproduction in these cells was lower than in other cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on statistical analysis (Student's t-test) of GFP expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "91dd6597-a006-45d1-945b-6b3515b8a1ca",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C23",
+      "claim": "Eleven out of 13 GFP-op_negative mutants categorized as 'cellular bud [GO:0005933]' were also GFP_L.",
+      "claim_type": "EXPLICIT",
+      "source": "Eleven out of 13 GFP-op_negative mutants categorized as 'cellular bud [GO:0005933]' were also GFP_L (Figure 4\u2014figure supplement 2A, Supplementary file 2A) (the GFP levels for each strain in this category are shown in Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis of GFP expression levels in specific mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "f1e54508-91cf-411d-909f-54919a9e6f99",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C24",
+      "claim": "GFP-op_positive and GFP_L mutants were significantly enriched in 'RNA polymerase II transcriptional factor complex [GO:0090575]'.",
+      "claim_type": "EXPLICIT",
+      "source": "However, GFP-op_positive and GFP_L mutants were significantly enriched in 'RNA polymerase II transcriptional factor complex [GO:0090575]', suggesting that these mutants may simply cause the reduction of GFP production, but not decrease the sensitivity to the protein burden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on GO enrichment analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "2cb314a0-42aa-41f1-abb2-04925c972b4c",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C25",
+      "claim": "The 14 mutants showing growth advantage enhanced by GFP overproduction were significantly enriched in genes of the DASH complex [GO:0042729].",
+      "claim_type": "EXPLICIT",
+      "source": "The 14 mutants were significantly enriched in genes of the DASH complex [GO:0042729] (Supplementary file 3), including ask1-2, dad2-9, and spc34-5 out of the seven DASH complex mutants analyzed (Figure 4D, Figure 4\u2014figure supplement 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on GO enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "80b761b3-395b-4a33-bf0f-715d89d97642",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C26",
+      "claim": "Only 12% (81/688) of mutants showed shared GIs between GFP and tGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, only 12% (81/688) of mutants showed shared GIs between GFP and tGFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of genetic interaction profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "fd7a625f-d49a-4e79-95d7-c2469b49b7be",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C27",
+      "claim": "Mutants negatively interacting with tGFP-op and NES-tGFP-op but not GFP-op (Cluster 4) were strongly enriched in annotations of 'cytosolic proteasome complex [GO:0031597]'.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants negatively interacting with tGFP-op and NES-tGFP-op but not GFP-op (Cluster 4) were strongly enriched in annotations of 'cytosolic proteasome complex [GO:0031597]' (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on GO enrichment analysis of clustered mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "127a845b-0318-4340-98b1-f7b011fa8e97",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C28",
+      "claim": "GI scores of mutants in 'proteasome complex [GO:0000502]' were significantly lower in the tGFP-op and NES-tGFP-op experiments than in the GFP-op experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "GI scores of mutants in 'proteasome complex [GO:0000502]' were significantly lower in the tGFP-op and NES-tGFP-op experiments than in the GFP-op experiment (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on statistical comparison of GI scores across experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "4db35023-017f-426c-999e-2757b5004fe4",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C29",
+      "claim": "Overproduction of NES-tGFP had strong negative GIs with mutants in the major nuclear export factors (Crm1, Gsp1, Rna1, and Yrb1).",
+      "claim_type": "EXPLICIT",
+      "source": "Overproduction of NES-tGFP had strong negative GIs with mutants in the major nuclear export factors (Crm1, Gsp1, Rna1, and Yrb1; Figure 5D and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on genetic interaction data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "94581150-6fd7-45ef-b991-c052faf324ec",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C30",
+      "claim": "tGFP-op (and NES-tGFP-op) had negative GIs with mutants in proteasome components but GFP-op did not.",
+      "claim_type": "EXPLICIT",
+      "source": "tGFP-op (and NES-tGFP-op) had negative GIs with mutants in proteasome components but GFP-op did not (Figure 5D and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on genetic interaction data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "f2ceeb87-83fe-43b9-b31c-3ba3a9520062",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C31",
+      "claim": "tGFP and NES-tGFP form aggregates, but not GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "tGFP and NES-tGFP form aggregates, but not GFP (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on microscopy observations shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "5f408530-e0e2-4e82-84c9-aa87ab71310d",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C32",
+      "claim": "The amount of tGFP (and NES-tGFP) was about 4% of GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we investigated the abundance of GFP and tGFP by Western blotting, the amount of tGFP (and NES-tGFP) was about 4% of GFP (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on Western blot quantification shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "3475df14-9710-42b0-be37-cb3b6f97edfc",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C33",
+      "claim": "Giant condensates were present only in the cells overproducing tGFP and NES-tGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that giant condensate were present only in the cells overproducing tGFP and NES-tGFP (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on microscopy observations shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "d7ddcca0-427a-46ba-946f-ac8956c4f52a",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C34",
+      "claim": "About 1% of GFP was found in the precipitation fraction, whereas 14% of tGFP was found in the precipitation fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "About 1% of GFP was found in the precipitation fraction, whereas 14% of tGFP was found in the precipitation fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on cell fractionation and Western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "3788fdbe-d754-4dbc-ac84-1e3b69c01313",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C35",
+      "claim": "Western blotting with anti-ubiquitin antibodies detected ubiquitinated high-molecular-weight proteins in the precipitates of tGFP-op.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting with anti-ubiquitin antibodies detected ubiquitinated high-molecular-weight proteins in the precipitates of tGFP-op (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on Western blot analysis shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "19cfb310-1022-4dd3-aecc-91fa61d7e32e",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C36",
+      "claim": "Hsp70 (Ssa1/Ssa2) and the glycolytic enzymes Fba1 and Eno2 were particularly abundant in the precipitates of tGFP-op.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, Hsp70 (Ssa1/Ssa2) and the glycolytic enzymes Fba1 and Eno2 were particularly abundant in the precipitates of tGFP-op.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on LC-MS/MS proteome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "3aedc234-82ee-4dfc-8a94-cc56404dde61",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C37",
+      "claim": "Components of the proteasome were identified in the precipitation, albeit in trace amounts, and tended to be more abundant in the precipitation of tGFP-op than in the vector control.",
+      "claim_type": "EXPLICIT",
+      "source": "Components of the proteasome were also identified, albeit in trace amounts, and tended to be more abundant in the precipitation of tGFP-op than in the vector control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on LC-MS/MS proteome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "5f874fc8-2df6-481b-8638-8cb7b5f62c28",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C38",
+      "claim": "Among obtained 501 morphological parameters, only four parameters showed significant differences over the vector control, and three of them (A120_A1B, ACV7-1_A, and A122_A1B) were actin-related parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Among obtained 501 morphological parameters, only four parameters showed significant differences over the vector control, and three of them (A120_A1B, ACV7-1_A, and A122_A1B) were actin-related parameters (Figure 7A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on morphological analysis using CalMorph.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "5a5c31df-7a16-48c0-a05d-e768f3442dd5",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C39",
+      "claim": "The cells overexpressing GFP contained increased actin patch regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells contained increased actin patch regions, supporting the idea that the protein burden interacts with actin function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on interpretation of morphological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "9d8ef4a1-2188-4a61-8dfa-d9af3f4c443d",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C40",
+      "claim": "Only harmless proteins like GFP can be produced up to the ultimate expression levels that cause the protein burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Only harmless proteins like GFP can be produced up to the ultimate expression levels that cause the protein burden, which seems to be related to actin functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "01acae1d-ee27-41b3-a814-fe2ccdb74bc0",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C41",
+      "claim": "Other proteins, localized or aggregative, can be produced at far lower levels than the level which causes the protein burden because their overproduction overloads localization or protein degradation resources which are more limited than the protein synthesis resource.",
+      "claim_type": "EXPLICIT",
+      "source": "Other proteins, localized or aggregative, can be produced at far lower levels than the level which causes the protein burden because their overproduction overloads localization or protein degradation resources which are more limited than the protein synthesis resource.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "20441ba8-c1e2-4fcd-9b9b-da445cc03809",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C42",
+      "claim": "The protein burden is caused by perturbations to protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein burden is therefore thought to be caused by perturbations to protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "6e2f5695-1741-4bcc-91cd-9897d0e5aca5",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C43",
+      "claim": "The analysis of genetic interactions did not provide a clear link to perturbations to the synthetic process.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of genetic interactions, however, did not provide a clear link to perturbations to the synthetic process; our results suggest that protein burden causes an unexpected perturbation of actin function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "50fb7832-d3f4-49ae-8eb7-e797547a2242",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C44",
+      "claim": "The expression limits of tGFP and NES-tGFP were much lower than those of GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the expression limits of tGFP, which undergoes degradation by aggregation and ubiquitination (probably by misfolding), and NES-tGFP, which is transported outside the nucleus, were much lower than those of GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "699bf4df-9b96-4da8-a453-cc2ac732f67c",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C45",
+      "claim": "The expression limits of tGFP and NES-tGFP were about 0.6% of the total proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Since their expression limits were about 4% of GFP (Figure 6B), it can be estimated that their expression limits are about 0.6% of the total proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the Western blot data in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "2f1123a5-fe3d-4701-96e7-b042fff7e631",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C46",
+      "claim": "NES-tGFP triggers growth defects at a lower expression level than unmodified tGFP.",
+      "claim_type": "EXPLICIT",
+      "source": "NES-tGFP triggers growth defects at a lower expression level than unmodified tGFP (Kintaka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kintaka et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "87de2556-83d1-41b7-a8c9-ab0b6d4258cc",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C47",
+      "claim": "Mutants harboring genetic interactions with tGFP-op should be different from those with NES-tGFP-op if the protein burden can only be triggered by a harmless protein like GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "If the protein burden can only be triggered by a harmless protein like GFP, mutants harboring genetic interactions with tGFP-op should be different from those with NES-tGFP-op, and the comparison of those mutants will identify consequences specific to the protein burden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the introduction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "b4adbd72-55c6-49e5-a19a-40346075efd4",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C48",
+      "claim": "Mutants harboring negative genetic interactions with NES-tGFP should contain limiting factors of the nuclear export and essential factors affected by the overloading of nuclear export.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mutants harboring negative genetic interactions should contain limiting factors of the nuclear export and essential factors affected by the overloading of nuclear export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the introduction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "74f0544c-5f99-4a0e-868d-94d9936e8a24",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C49",
+      "claim": "The DASH complex binds to microtubules and is involved in the distribution of chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The DASH complex binds to microtubules and is involved in the distribution of chromosomes (Jenni and Harrison, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jenni and Harrison, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "b761d0db-bb11-485f-a292-67625a00b3f6",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C50",
+      "claim": "The protein burden may impact numerous processes beyond chaperone-related processes.",
+      "claim_type": "IMPLICIT",
+      "source": "Chaperone genes, however, constitute only a relatively small fraction of the deletion strains isolated in the study, and thus the protein burden may impact numerous other processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that chaperone genes are a small fraction of isolated strains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "8ca3617e-5171-4c86-bd0c-03bc24a139a9",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C51",
+      "claim": "The relationship between actin and translational machinery might explain the connection between protein burden and actin cytoskeleton perturbation.",
+      "claim_type": "IMPLICIT",
+      "source": "This relationship might be a result of the long-known connection between actin and translational machinery Kim and Coulombe, 2010; the protein burden-triggered growth defects might involve the perturbation of the actin cytoskeleton via translational factors like eEF1A, which can bundle actin fibers (Munshi et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation based on known connections and cited literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "526219f8-286b-4788-b263-ea9035f19872",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C52",
+      "claim": "tGFP has a high probability of misfolding during translation.",
+      "claim_type": "IMPLICIT",
+      "source": "A larger molecule may increase the likelihood of misfolding during translation, or the presence of a repeating structure may increase intermolecular interactions and trigger the creation of large aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the properties of tGFP.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "92ccf487-6718-44df-80d4-f90d5f8147c4",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C53",
+      "claim": "Ssa1/Ssa2 is required for proteasome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, since Ssa1/Ssa2 is required for proteasome assembly (Hammack et al., 2017), a depletion of these proteins would lower the amount of proteasomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hammack et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "c9643b6d-f855-43ac-b42c-b23ba1acc261",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C54",
+      "claim": "Large amounts of Ssa1/Ssa2 were detected in the tGFP-op precipitates.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the results of the proteome analysis, we believe that 4 is particularly likely, given that large amounts of Ssa1/Ssa2 were detected in the tGFP-op precipitates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on proteome analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "864061e4-28d2-46db-8bba-3c41558d03fe",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C55",
+      "claim": "The high copy number of the vector (more than 100 copies per cell under \u2013Leu/Ura conditions) probably produces limitations of the replication initiation complex by sequestering the complex to the replication origins of the plasmids.",
+      "claim_type": "EXPLICIT",
+      "source": "The vector copy number is more than 100 copies per cell under \u2013Leu/Ura conditions (Makanae et al., 2013; Eguchi et al., 2018). This high copy number probably produces limitations of the replication initiation complex by sequestering the complex to the replication origins of the plasmids (the explanation of the fitness reduction is shown in Figure 2\u2014figure supplement 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on known plasmid copy numbers and the properties of replication initiation complexes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "4bc04cf2-2dc9-41a0-b02c-bc0dba5fcf61",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C56",
+      "claim": "Negative GIs of 6 out of 7 deletion mutants from this screening were confirmed by independent growth measurements in liquid medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our conditions produced more variance in the GI scores and thus identified more mutants showing stronger GIs (Figure 2\u2014figure supplement 3A,B), and we found that negative GIs of 6 out of 7 deletion mutants from our screening were confirmed by independent growth measurements in the liquid medium, while all six mutants isolated by the previous study (Farkas et al., 2018) were not (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on independent validation experiments shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "3ca88b16-df67-4c76-bf81-71495dd6448c",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C57",
+      "claim": "All six mutants isolated by the Farkas et al. study were not confirmed by independent growth measurements in liquid medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our conditions produced more variance in the GI scores and thus identified more mutants showing stronger GIs (Figure 2\u2014figure supplement 3A,B), and we found that negative GIs of 6 out of 7 deletion mutants from our screening were confirmed by independent growth measurements in the liquid medium, while all six mutants isolated by the previous study (Farkas et al., 2018) were not (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on independent validation experiments shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "8defbf1a-60a2-4db3-a8f6-4622541045a2",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C58",
+      "claim": "Overproduction of yEGFP resulted in increased growth inhibition (cost) due to amino acid dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2\u2014figure supplement 3G, overproduction of yEGFP also resulted in increased growth inhibition (cost) due to amino acid dilution, although the degree of cost differed between the two fluorescent proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on experimental data shown in Figure 2\u2014figure supplement 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "5d288003-7c7f-4c4b-8463-c8888e8ed369",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C59",
+      "claim": "The difference between the analysis of Farkas et al. and this study may be due to the difference in properties between yEGFP and yEVenus.",
+      "claim_type": "EXPLICIT",
+      "source": "We cannot dismiss the possibility that the difference between the analysis of Farkas et al. and ours is due to the difference in properties between our GFP (yEGFP) and yEVenus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility to explain differences between studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "43089656-52d6-4857-a311-e1d6cc27e307",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C60",
+      "claim": "GFP is about 15% of the total protein in the cell under \u2013Leu/Ura conditions with pTOW40836-TDH3pro-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u2013Leu/Ura conditions, pTOW40836-TDH3pro-GFP has a copy number of about 30, at which time GFP is about 15% of the total protein in the cell (C, in GFP-op/WT) (Eguchi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Eguchi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "f0502570-ca29-4f39-8ad7-264e8c9f6431",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C61",
+      "claim": "Among the mutants that had a negative genetic interaction with NES-tGFP-op, the mutants with lower GFP expression (NES-tGFP_L) were enriched for genes involved in nuclear protein transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the mutants that had a negative genetic interaction with NES-tGFP-op, the mutants with lower GFP expression (NES-tGFP_L) were enriched for genes involved in nuclear protein transport (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on GO enrichment analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "c909d4ff-4775-48db-ae30-8d938a9dfab3",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C62",
+      "claim": "All mutants in Cluster 3 (crm1-1, gsp1-162, rna1-1, rna1-s116f, and yrb1-52) were included in the NES-tGFP_L group.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, all mutants in Cluster 3 in Figure 5D (crm1-1, gsp1-162, rna1-1, rna1-s116f, and yrb1-52) were included in this group (Figure 5E, Supplementary file 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on analysis of GFP expression levels in specific mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "9ed3957d-c8ed-4e5e-9c0b-0f4f349245eb",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C63",
+      "claim": "The identification of nuclear protein transport mutants as specifically sensitive to overproduction of NES-tGFP can be considered as a proof of concept for this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of nuclear protein transport mutants as specifically sensitive to overproduction of NES-tGFP can be considered as a proof of concept for this study, and the results strongly support that the analysis of GFP-op and tGFP-op also allowed us to obtain mutants specifically associated with the physiological state of the cells triggered by the overproduction of them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "581feb97-0ff1-4e0a-aa0e-a995571dfaa4",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C64",
+      "claim": "Overproduced tGFP is actively degraded by the proteasome in wild-type strains.",
+      "claim_type": "IMPLICIT",
+      "source": "This suggests that overexpressed tGFP is actively degraded by the proteasome in the wild-type strains, whereas overaccumulation of undegraded tGFP occurs in proteasome mutations or that undegraded tGFP is cytotoxic in mutations of the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that proteasome mutants show negative GIs with tGFP-op.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "9a145fd6-ca04-49c4-a069-f68647a4b9ec",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C65",
+      "claim": "Overaccumulation of undegraded tGFP occurs in proteasome mutations.",
+      "claim_type": "IMPLICIT",
+      "source": "This suggests that overexpressed tGFP is actively degraded by the proteasome in the wild-type strains, whereas overaccumulation of undegraded tGFP occurs in proteasome mutations or that undegraded tGFP is cytotoxic in mutations of the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that proteasome mutants show negative GIs with tGFP-op.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "3ee7d255-3772-426d-8337-a1b73ec1a3da",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "claim_id": "C66",
+      "claim": "Undegraded tGFP is cytotoxic in mutations of the proteasome.",
+      "claim_type": "IMPLICIT",
+      "source": "This suggests that overexpressed tGFP is actively degraded by the proteasome in the wild-type strains, whereas overaccumulation of undegraded tGFP occurs in proteasome mutations or that undegraded tGFP is cytotoxic in mutations of the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that proteasome mutants show negative GIs with tGFP-op.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3736520c-6e48-4cbb-8b72-e8112bdc1035",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GFP overproduction from the pTOW40836-TDH3pro-GFP plasmid causes growth defects that are more severe under \u2013Leu/Ura conditions (30 copies/cell) than under \u2013Ura conditions (10 copies/cell).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10, and C11 collectively demonstrate that increased plasmid copy number correlates with increased GFP production and more severe growth defects. The data in Figures 1C and 1D support this dose-dependent relationship, and the copy numbers are validated by citation to prior work (Eguchi et al., 2018).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "6e44e394-16ec-4bc8-99be-33996419373b",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Experimental reproducibility of genetic interaction scores is higher under conditions causing severe growth defects (\u2013Leu/Ura) and in temperature-sensitive mutant arrays compared to deletion mutant arrays under mild conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C13, and C14 present correlation coefficients showing that TSA experiments and \u2013Leu/Ura conditions yield higher reproducibility (r = 0.36\u20130.53) than DMA under \u2013Ura conditions (r = 0.17). The inference that severe growth defects improve reproducibility is logically supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "a297350f-6bd0-4b2d-b3b1-926377a8ccb0",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "This study's genetic interaction scores do not correlate with those from Farkas et al. (2018), likely due to differences in experimental conditions, promoter strength, and fluorescent protein properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C56, C57 demonstrate lack of correlation (r = \u20130.01 to \u20130.07) and differential validation rates between studies. Claims C58 and C59 provide mechanistic context for the discrepancy. The independent validation experiments (Figure 2\u2014figure supplement 4) strengthen the conclusion that methodological differences explain the lack of correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "fde0ac3f-594b-406f-ad5c-adbb77543d6d",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Temperature-sensitive mutants in DNA replication preinitiation complex genes show growth defects under high plasmid copy conditions (\u2013Leu/Ura) in vector control experiments, likely due to sequestration of replication factors by plasmid origins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C17 identify the phenomenon and provide statistical support (p=1.47E-05 for GO enrichment). Claim C55 offers a mechanistic explanation supported by known plasmid copy numbers and replication biology. The observation is well-documented in Figure 2\u2014figure supplement 5.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "5bd0dac3-cc0c-413f-a4ac-0990b5425f51",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GFP-op_negative mutants are enriched in genes related to cytoskeletal organization and cellular bud, and these mutants show reduced GFP expression levels, indicating sensitivity to protein burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C22, and C23 demonstrate GO enrichment in actin-related processes, statistical association with low GFP expression (p=4.7E-11), and specific examples (11/13 cellular bud mutants are GFP_L). The convergence of genetic interaction data, expression analysis, and GO enrichment provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "dc5643ee-e2c2-458e-a622-27a14d37ce37",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GFP-op_positive mutants are enriched in genes involved in RNA 3\u2032-end processing (TRAMP complex, nuclear exosome) and transcription factor complexes (mediator-RNA polymerase II), with many showing reduced GFP expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19\u2013C21 provide GO enrichment data and quantify the proportion of mutants with strong positive GIs (7/13 and 20/38). Claim C24 adds that GFP_L mutants in this category are enriched in transcription factors, suggesting reduced GFP production rather than resistance. The data are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "f44fbdf6-e5fc-4a8d-b0f5-adb3d8d713c7",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mutants showing growth advantage enhanced by GFP overproduction are enriched in DASH complex genes, which are involved in chromosome distribution via microtubule binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 identifies significant enrichment of DASH complex genes among 14 mutants with enhanced growth advantage. Claim C49 provides biological context from literature. The data in Figure 4\u2014figure supplement 3 support the identification, though the mechanism remains unclear as acknowledged by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "6e4c27a6-76fb-49f6-86d7-7033bca37eee",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Only 12% of mutants show shared genetic interactions between GFP and tGFP overproduction, with tGFP-op (and NES-tGFP-op) specifically interacting with proteasome mutants but not GFP-op.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 quantifies the low overlap (81/688 mutants). Claims C27, C28, and C30 demonstrate specific enrichment of proteasome complex genes in tGFP-op interactions with statistical support (Figure 5\u2014figure supplement 1B). This suggests fundamentally different cellular responses to GFP vs. tGFP overproduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "9b14a25d-ba7e-4fdf-923d-3a467b672759",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NES-tGFP overproduction shows strong negative genetic interactions with nuclear export factors (Crm1, Gsp1, Rna1, Yrb1), and mutants with low NES-tGFP expression are enriched for nuclear transport genes, validating the approach as proof of concept.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C61, and C62 demonstrate specific genetic interactions with nuclear export machinery and GO enrichment in nuclear transport. Claim C63 correctly interprets this as validation that the method can identify process-specific overload. The convergence of GI data and expression analysis provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "4166f75f-319d-4680-a969-0a18581b4b7e",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "tGFP and NES-tGFP form intracellular aggregates and are expressed at only ~4% of GFP levels, with 14% of tGFP found in insoluble precipitates compared to 1% of GFP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31\u2013C34 present converging evidence from microscopy (Figure 6C), Western blotting (Figure 6B), and cell fractionation (Figure 6D). The quantitative measurements are internally consistent and support the conclusion that tGFP has fundamentally different biophysical properties than GFP.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "39c1939a-4621-4efc-aea3-a6e5c783f079",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "tGFP precipitates contain ubiquitinated proteins, are enriched in Hsp70 (Ssa1/Ssa2) and glycolytic enzymes (Fba1, Eno2), and contain trace amounts of proteasome components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35\u2013C37 and C54 present complementary data from Western blotting (Figure 6\u2014figure supplement 1C) and LC-MS/MS proteomics (Figure 6E). The detection of ubiquitinated proteins, chaperones, and proteasome components in aggregates is consistent with the hypothesis that tGFP overproduction causes proteostasis stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "5b38cac1-e9ae-40b0-83b2-31edc0dff642",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Morphological analysis reveals that GFP overproduction significantly affects only four parameters out of 501, with three being actin-related, indicating increased actin patch regions in GFP-overexpressing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C39 present high-dimensional morphological data analyzed with CalMorph. The specificity of the effect (4/501 parameters, 3 actin-related) and statistical significance (FDR = 0.01) support the conclusion that protein burden specifically perturbs actin function. This complements the genetic interaction data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "8823c81e-5a4d-4c61-926c-26fd0a157b6c",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Only harmless proteins like GFP can be produced at levels (~15% of total protein) sufficient to cause protein burden, while proteins requiring additional processing (tGFP, NES-tGFP) cause growth defects at much lower levels (~0.6% of total protein).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C41, C44, and C45 synthesize the experimental findings into a coherent model. The quantitative estimates are based on Western blot data (C32, C60) and logical calculations. The model is well-supported by the differential expression limits and distinct genetic interaction profiles observed for GFP vs. modified GFPs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "1aca2fb7-2fa8-451c-82a1-e3281ad46ae1",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "While protein burden is thought to result from perturbations to protein synthesis, genetic interaction analysis did not provide clear links to synthetic processes but instead suggests unexpected perturbation of actin function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C43 acknowledge a discrepancy between expectation and observation. The lack of enrichment in protein synthesis genes among GFP-op_negative mutants (C18) and the strong enrichment in actin-related processes (C18, C38, C39) support this conclusion. This represents an important unexpected finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "5ecc6f55-5af3-4be4-a2d8-7431d5b8852f",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "tGFP is actively degraded by the proteasome in wild-type cells, and proteasome mutations lead to either overaccumulation of undegraded tGFP or cytotoxicity from undegraded tGFP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64\u2013C66 present alternative interpretations of the observation that proteasome mutants show negative GIs with tGFP-op. While the genetic interaction data (C27, C28) and biochemical evidence (C35\u2013C37) support proteasome involvement, the claims acknowledge uncertainty about the precise mechanism. Additional experiments would be needed to distinguish between these possibilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "05e20434-7936-4487-b242-fea797d07dda",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The connection between protein burden and actin cytoskeleton perturbation might be explained by known interactions between actin and translational machinery, potentially involving factors like eEF1A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C51 proposes a speculative mechanism based on literature (Kim and Coulombe, 2010; Munshi et al., 2001) to explain the unexpected actin phenotypes. While the speculation is reasonable and grounded in prior knowledge, it remains untested in this study. The claim appropriately acknowledges its speculative nature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    },
+    {
+      "id": "2feb2c80-65c0-4ab7-a6d3-72d5924693a7",
+      "content_id": "dc31502d-986c-4250-a947-34d6e71fe0b0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "tGFP may have high probability of misfolding during translation due to its larger molecular weight or repeating structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 offers speculation about why tGFP forms aggregates while GFP does not. While the speculation is reasonable given the structural differences, no direct evidence for co-translational misfolding is provided. The claim is appropriately marked as speculation and serves as a hypothesis for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:05:58.290304Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "27f03aa9-3dc0-4458-98c4-b66e0b27616e",
+      "result_id": "3736520c-6e48-4cbb-8b72-e8112bdc1035"
+    },
+    {
+      "claim_id": "87c0b090-9390-4a3f-a3f4-fab666287419",
+      "result_id": "3736520c-6e48-4cbb-8b72-e8112bdc1035"
+    },
+    {
+      "claim_id": "a396ce14-5add-43d3-a19b-5d457337403e",
+      "result_id": "3736520c-6e48-4cbb-8b72-e8112bdc1035"
+    },
+    {
+      "claim_id": "dd0b6fad-b48a-49a4-9a25-856e54485c96",
+      "result_id": "6e44e394-16ec-4bc8-99be-33996419373b"
+    },
+    {
+      "claim_id": "b4144031-3c6c-4e21-9fbf-baad2baedf2a",
+      "result_id": "6e44e394-16ec-4bc8-99be-33996419373b"
+    },
+    {
+      "claim_id": "88900d57-06a5-484e-9fe9-49d246da84b8",
+      "result_id": "6e44e394-16ec-4bc8-99be-33996419373b"
+    },
+    {
+      "claim_id": "590cb127-3351-4265-acb2-1d614d4fd53e",
+      "result_id": "a297350f-6bd0-4b2d-b3b1-926377a8ccb0"
+    },
+    {
+      "claim_id": "4bc04cf2-2dc9-41a0-b02c-bc0dba5fcf61",
+      "result_id": "a297350f-6bd0-4b2d-b3b1-926377a8ccb0"
+    },
+    {
+      "claim_id": "3ca88b16-df67-4c76-bf81-71495dd6448c",
+      "result_id": "a297350f-6bd0-4b2d-b3b1-926377a8ccb0"
+    },
+    {
+      "claim_id": "8defbf1a-60a2-4db3-a8f6-4622541045a2",
+      "result_id": "a297350f-6bd0-4b2d-b3b1-926377a8ccb0"
+    },
+    {
+      "claim_id": "5d288003-7c7f-4c4b-8463-c8888e8ed369",
+      "result_id": "a297350f-6bd0-4b2d-b3b1-926377a8ccb0"
+    },
+    {
+      "claim_id": "83e7729a-b6a5-4a45-bf63-4bdb988830e5",
+      "result_id": "fde0ac3f-594b-406f-ad5c-adbb77543d6d"
+    },
+    {
+      "claim_id": "5c9ab993-2244-497f-98d9-d8270e15667e",
+      "result_id": "fde0ac3f-594b-406f-ad5c-adbb77543d6d"
+    },
+    {
+      "claim_id": "864061e4-28d2-46db-8bba-3c41558d03fe",
+      "result_id": "fde0ac3f-594b-406f-ad5c-adbb77543d6d"
+    },
+    {
+      "claim_id": "6e9e8f0c-8f20-4187-83c1-c71babcc7f23",
+      "result_id": "5bd0dac3-cc0c-413f-a4ac-0990b5425f51"
+    },
+    {
+      "claim_id": "38b869fe-ee73-40eb-bdbd-7dcbcd58b09e",
+      "result_id": "5bd0dac3-cc0c-413f-a4ac-0990b5425f51"
+    },
+    {
+      "claim_id": "91dd6597-a006-45d1-945b-6b3515b8a1ca",
+      "result_id": "5bd0dac3-cc0c-413f-a4ac-0990b5425f51"
+    },
+    {
+      "claim_id": "b718fd96-d4b9-41d7-a306-c1f79e69287d",
+      "result_id": "dc5643ee-e2c2-458e-a622-27a14d37ce37"
+    },
+    {
+      "claim_id": "1e40a4ff-bf0d-466b-88d7-20b770d4d396",
+      "result_id": "dc5643ee-e2c2-458e-a622-27a14d37ce37"
+    },
+    {
+      "claim_id": "bd799a97-b774-4672-a04c-704d9ce68f38",
+      "result_id": "dc5643ee-e2c2-458e-a622-27a14d37ce37"
+    },
+    {
+      "claim_id": "f1e54508-91cf-411d-909f-54919a9e6f99",
+      "result_id": "dc5643ee-e2c2-458e-a622-27a14d37ce37"
+    },
+    {
+      "claim_id": "2cb314a0-42aa-41f1-abb2-04925c972b4c",
+      "result_id": "f44fbdf6-e5fc-4a8d-b0f5-adb3d8d713c7"
+    },
+    {
+      "claim_id": "74f0544c-5f99-4a0e-868d-94d9936e8a24",
+      "result_id": "f44fbdf6-e5fc-4a8d-b0f5-adb3d8d713c7"
+    },
+    {
+      "claim_id": "80b761b3-395b-4a33-bf0f-715d89d97642",
+      "result_id": "6e4c27a6-76fb-49f6-86d7-7033bca37eee"
+    },
+    {
+      "claim_id": "fd7a625f-d49a-4e79-95d7-c2469b49b7be",
+      "result_id": "6e4c27a6-76fb-49f6-86d7-7033bca37eee"
+    },
+    {
+      "claim_id": "127a845b-0318-4340-98b1-f7b011fa8e97",
+      "result_id": "6e4c27a6-76fb-49f6-86d7-7033bca37eee"
+    },
+    {
+      "claim_id": "94581150-6fd7-45ef-b991-c052faf324ec",
+      "result_id": "6e4c27a6-76fb-49f6-86d7-7033bca37eee"
+    },
+    {
+      "claim_id": "4db35023-017f-426c-999e-2757b5004fe4",
+      "result_id": "9b14a25d-ba7e-4fdf-923d-3a467b672759"
+    },
+    {
+      "claim_id": "f0502570-ca29-4f39-8ad7-264e8c9f6431",
+      "result_id": "9b14a25d-ba7e-4fdf-923d-3a467b672759"
+    },
+    {
+      "claim_id": "c909d4ff-4775-48db-ae30-8d938a9dfab3",
+      "result_id": "9b14a25d-ba7e-4fdf-923d-3a467b672759"
+    },
+    {
+      "claim_id": "9ed3957d-c8ed-4e5e-9c0b-0f4f349245eb",
+      "result_id": "9b14a25d-ba7e-4fdf-923d-3a467b672759"
+    },
+    {
+      "claim_id": "f2ceeb87-83fe-43b9-b31c-3ba3a9520062",
+      "result_id": "4166f75f-319d-4680-a969-0a18581b4b7e"
+    },
+    {
+      "claim_id": "5f408530-e0e2-4e82-84c9-aa87ab71310d",
+      "result_id": "4166f75f-319d-4680-a969-0a18581b4b7e"
+    },
+    {
+      "claim_id": "3475df14-9710-42b0-be37-cb3b6f97edfc",
+      "result_id": "4166f75f-319d-4680-a969-0a18581b4b7e"
+    },
+    {
+      "claim_id": "d7ddcca0-427a-46ba-946f-ac8956c4f52a",
+      "result_id": "4166f75f-319d-4680-a969-0a18581b4b7e"
+    },
+    {
+      "claim_id": "3788fdbe-d754-4dbc-ac84-1e3b69c01313",
+      "result_id": "39c1939a-4621-4efc-aea3-a6e5c783f079"
+    },
+    {
+      "claim_id": "19cfb310-1022-4dd3-aecc-91fa61d7e32e",
+      "result_id": "39c1939a-4621-4efc-aea3-a6e5c783f079"
+    },
+    {
+      "claim_id": "3aedc234-82ee-4dfc-8a94-cc56404dde61",
+      "result_id": "39c1939a-4621-4efc-aea3-a6e5c783f079"
+    },
+    {
+      "claim_id": "c9643b6d-f855-43ac-b42c-b23ba1acc261",
+      "result_id": "39c1939a-4621-4efc-aea3-a6e5c783f079"
+    },
+    {
+      "claim_id": "5f874fc8-2df6-481b-8638-8cb7b5f62c28",
+      "result_id": "5b38cac1-e9ae-40b0-83b2-31edc0dff642"
+    },
+    {
+      "claim_id": "5a5c31df-7a16-48c0-a05d-e768f3442dd5",
+      "result_id": "5b38cac1-e9ae-40b0-83b2-31edc0dff642"
+    },
+    {
+      "claim_id": "9d8ef4a1-2188-4a61-8dfa-d9af3f4c443d",
+      "result_id": "8823c81e-5a4d-4c61-926c-26fd0a157b6c"
+    },
+    {
+      "claim_id": "01acae1d-ee27-41b3-a814-fe2ccdb74bc0",
+      "result_id": "8823c81e-5a4d-4c61-926c-26fd0a157b6c"
+    },
+    {
+      "claim_id": "50fb7832-d3f4-49ae-8eb7-e797547a2242",
+      "result_id": "8823c81e-5a4d-4c61-926c-26fd0a157b6c"
+    },
+    {
+      "claim_id": "699bf4df-9b96-4da8-a453-cc2ac732f67c",
+      "result_id": "8823c81e-5a4d-4c61-926c-26fd0a157b6c"
+    },
+    {
+      "claim_id": "20441ba8-c1e2-4fcd-9b9b-da445cc03809",
+      "result_id": "1aca2fb7-2fa8-451c-82a1-e3281ad46ae1"
+    },
+    {
+      "claim_id": "6e2f5695-1741-4bcc-91cd-9897d0e5aca5",
+      "result_id": "1aca2fb7-2fa8-451c-82a1-e3281ad46ae1"
+    },
+    {
+      "claim_id": "581feb97-0ff1-4e0a-aa0e-a995571dfaa4",
+      "result_id": "5ecc6f55-5af3-4be4-a2d8-7431d5b8852f"
+    },
+    {
+      "claim_id": "9a145fd6-ca04-49c4-a069-f68647a4b9ec",
+      "result_id": "5ecc6f55-5af3-4be4-a2d8-7431d5b8852f"
+    },
+    {
+      "claim_id": "3ee7d255-3772-426d-8337-a1b73ec1a3da",
+      "result_id": "5ecc6f55-5af3-4be4-a2d8-7431d5b8852f"
+    },
+    {
+      "claim_id": "8ca3617e-5171-4c86-bd0c-03bc24a139a9",
+      "result_id": "05e20434-7936-4487-b242-fea797d07dda"
+    },
+    {
+      "claim_id": "526219f8-286b-4788-b263-ea9035f19872",
+      "result_id": "2feb2c80-65c0-4ab7-a6d3-72d5924693a7"
+    }
+  ],
+  "comparisons": []
+}

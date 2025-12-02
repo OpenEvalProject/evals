@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "GluCl\u03b1 is localized to T4 dendrites at the distal tips in discrete puncta matching Mi9 glutamatergic synapses, is absent from T5 dendrites, and is present in both T4 and T5 axon terminals. The number of GluCl\u03b1 puncta (mean: 20.5) closely matches the number of Mi9-T4 synapses (mean: 23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 provide converging evidence from imaging (Figures 2A-D), quantification (Figure 2F), and comparison with EM data. The spatial distribution, puncta counts, and absence in T5 dendrites are all well-documented and consistent with the glutamatergic connectivity pattern from prior EM studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Rdl is expressed in both T4 and T5 dendrites on the proximal base and central area, but not in axon terminals. The number of Rdl receptor clusters (roughly 40) matches the sum of GABAergic input synapses to T4 (mean: 40.45) and T5 (mean: 37).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by imaging data (Figures 3A-C) and quantification (Figure 3E) showing Rdl distribution matching GABAergic synapse locations from EM data. The correspondence between receptor cluster counts and synapse numbers provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "D\u03b17 is distributed to both T4 and T5 dendrites in the central area and distal tips, absent from the proximal base and axon terminals. For T4, D\u03b17 puncta (mean: 88.4) match cholinergic synapses (mean: 86.9), but for T5, D\u03b17 puncta are 60 synapses fewer than total cholinergic inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by imaging (Figures 4A-C) and quantification (Figure 4E). The match in T4 and discrepancy in T5 are both documented. The authors provide a plausible explanation for the T5 discrepancy (C86), suggesting other receptor types may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C70",
+      "C79"
+    ],
+    "result": "FlpTag is a generalizable conditional protein tagging method using a FLEx-switch cassette integrated via RMCE into MiMIC sites or via CRISPR-HDR. The FlpTag-GluCl\u03b1 line produces distribution patterns virtually identical to UAS-GluCl\u03b1::GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C70, C79 describe the FlpTag method with supporting data (Figure 5) and validation showing identical patterns between FlpTag and UAS lines. The generalizability is demonstrated through successful generation of multiple lines (GluCl\u03b1, Gaba-b-r1, para, Ih).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "No Gaba-b-r1::GFP signal was observed in T4/T5 dendrites or axons using the FlpTag approach, despite RNA-seq data indicating expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by imaging data (Figure 6B) showing absence of signal. The authors acknowledge the discrepancy with RNA-seq data (C43), suggesting protein levels may not match mRNA levels or the protein may be below detection threshold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Para is strongly expressed in the axonal fibers connecting dendrites and axon terminals in T4/T5 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by FlpTag imaging data (Figure 6D) showing para localization to axonal fibers. This is consistent with para's role in action potential generation (C47).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Ih is localized to T4 and T5 dendrite areas in medulla layer 10 and lobula plate layer 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by FlpTag imaging data (Figure 6F) showing Ih localization to dendritic regions. This is consistent with Ih's role in modulating postsynaptic potentials (C8, C68).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The receptor subunits GluCl\u03b1, Rdl, and D\u03b17 show distinct, segregated subcellular distributions along T4/T5 dendrites that match EM-reconstructed synapse distributions and can be assigned to specific input neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 represent the main conclusion, supported by the combined data from all three receptor distributions (Figures 2-4, 7). The spatial segregation and correspondence with EM data provide strong evidence for this integrative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Overexpression of UAS-GluCl\u03b1::GFP leads to subcellular localization patterns identical to endogenous GluCl\u03b1 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by comparison of UAS, MiMIC, and FlpTag lines (Figure 2\u2014figure supplement 1) showing similar expression patterns and quantification (Figure 2\u2014figure supplement 1D) showing no significant differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C36",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The UAS-D\u03b17::GFP line labels cholinergic synapses in general but does not report endogenous D\u03b17 subunit composition, as overexpressed D\u03b17::GFP localizes to cholinergic synapses even in neurons lacking endogenous D\u03b17.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C36, C76-C78 are supported by control experiments in Mi1 (Figure 4\u2014figure supplement 1D) showing D\u03b17::GFP localization to cholinergic synapses despite absence of endogenous D\u03b17 mRNA. This important caveat is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Overexpressed Rdl only localizes to endogenous GABA synapses composed of Rdl subunit, as demonstrated by absence of Rdl signal in L1 dendrites which lack endogenous Rdl expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by control experiments in L1 (Figure 3\u2014figure supplement 1) showing no Rdl signal in dendrites despite overexpression, consistent with RNA-seq data showing no endogenous expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Mi9 inhibits T4 via GluCl\u03b1 in darkness, and release of this inhibition upon ON-edge stimulation increases input resistance, amplifying subsequent excitatory signals from Mi1 and Tm3, accounting for preferred direction enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 present a theoretical mechanism supported by modeling (C84, Borst 2018) but lack direct experimental validation in this study. The mechanism is plausible given the receptor localization data, but remains speculative without functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "LPi neurons could inhibit T4/T5 neurons presynaptically at axon terminals via GluCl\u03b1 to sharpen flow-field selectivity of lobula plate tangential cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is speculative, proposed to explain the presence of GluCl\u03b1 in T4/T5 axon terminals (C14, C15). While plausible based on known LPi connectivity (C63-C64), this hypothesis lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The 60 missing D\u03b17 puncta in T5 could represent synapses formed via different cholinergic receptors such as muscarinic ACh receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is speculative, proposed to explain the discrepancy between D\u03b17 puncta and total cholinergic synapses in T5 (C39). While plausible given that T5 expresses multiple ACh receptor subunits (C34), this remains unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C13",
+      "C19",
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "T4 and T5 neurons are direction-selective cells with specific anatomical organization and synaptic connectivity patterns, receiving glutamatergic, GABAergic, and cholinergic inputs in spatially organized arrangements along their dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C10, C13, C19-C21, C26-C31, C53-C56 summarize established knowledge from prior EM and functional studies (cited throughout). These provide essential context for interpreting the receptor localization findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C22",
+      "C32",
+      "C33",
+      "C34",
+      "C46",
+      "C47",
+      "C49",
+      "C57",
+      "C58",
+      "C67",
+      "C68"
+    ],
+    "result": "Neurotransmitter receptors and ion channels have diverse functional properties, and RNA-seq data have limitations in determining protein localization and levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8, C22, C32-C34, C46-C47, C49, C57-C58, C67-C68 represent established knowledge about receptor/channel properties and methodological considerations, all supported by appropriate citations. These provide important background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Direction selectivity in T4/T5 neurons is explained by a three-arm detector model involving spatially organized excitatory and inhibitory inputs, with GABA providing null direction suppression and glutamate contributing to preferred direction enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 summarize prior functional and modeling work (extensively cited) that provides the computational framework for interpreting the receptor localization findings. These are well-established results from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C80",
+      "C81"
+    ],
+    "result": "The FlpTag approach can be applied to >2800 genes with MiMIC insertions, and the generated tools can serve as postsynaptic markers for visualizing different synapse types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C80-C81 describe the potential applications and generalizability of the FlpTag method, supported by the successful generation of multiple lines and comparison with existing resources (cited appropriately).",
+    "result_type": "MINOR"
+  }
+]

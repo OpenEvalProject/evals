@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The authors developed a three-compartment microfluidic device that successfully recreates a mature corticocortical neuronal network with fluidically isolated presynaptic, synaptic, and postsynaptic compartments. The 500 \u03bcm channels permit only axons to reach the synaptic compartment, while 75 \u03bcm channels allow dendrites to cross, with full network maturation occurring between DIV 10-15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from device design, MAP2 staining (C3), and FM4-64 functional assays (C4) that validate the microfluidic system. The citation to Taylor et al., 2005 (C2) provides precedent for the channel length design. The FM4-64 data directly demonstrates functional synapse formation at the stated timepoint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "APP-mCherry vesicles are transported to synapses from both presynaptic and postsynaptic neurons, with net anterograde axonal flux and net outward dendritic flux. Vesicle velocities reach maximum at DIV13 when the network is fully mature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 are well-supported by kymograph analysis (Figure 2B) and live imaging data. The use of validated APP-mCherry construct (C5, citations provided) and quantitative transport measurements (C7-C8) provide strong evidence. The inference that APP is transported from both compartments (C9) logically follows from the directional flux data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "HTT phosphorylation at Serine 421 regulates axonal but not dendritic transport of APP. The HTTSA mutation (S421A, abolishing phosphorylation) increases retrograde velocity and cumulative distance while reducing net anterograde flux in axons. The HTTSD mutation (S421D, mimicking constitutive phosphorylation) increases anterograde velocity. HTT phosphorylation status does not affect dendritic APP transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 are supported by systematic comparison of WT, HTTSA, and HTTSD neurons using quantitative transport analysis (Figure 3A-B). The differential effects in axons versus dendrites (C18-C19) are clearly demonstrated. However, the inference that most WT HTT is phosphorylated (C17) relies on indirect comparison of net flux and could benefit from direct biochemical validation in the specific experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "HTTSA neurons show reduced kinesin heavy chain (KHC) in the vesicular fraction compared to cytosolic fraction, consistent with HTT dephosphorylation decreasing kinesin-1 association with vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C21 are supported by western blot data (Figure 3\u2014figure supplement 1B), but the statistical analysis shows only a trend (p=0.09) rather than significance. While this supports the proposed mechanism, the lack of statistical significance and the reliance on fractionation methods that may have technical variability limits the strength of this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Akt kinase regulates HTT phosphorylation at S421, and constitutively active Akt (Akt-CA) increases anterograde velocity and net flux of APP in WT but not HTTSA neurons. This identifies Akt-HTT signaling as a mechanism regulating axonal APP trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 provide strong evidence through gain-of-function (Akt-CA) and loss-of-function (Akt-N) experiments combined with genetic validation in HTTSA neurons. The western blot data (Figure 4A) confirms Akt's effect on HTT phosphorylation, and transport measurements (Figure 4B-C) demonstrate functional consequences. The inability of Akt-CA to affect HTTSA neurons (C28) provides critical genetic epistasis evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Reducing HTT phosphorylation decreases APP exocytosis at the plasma membrane, as demonstrated by reduced APP-SEP insertion events in cells expressing HTTSA compared to wild-type HTT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C32 are based on TIRF microscopy in COS cells rather than neurons. While this provides mechanistic insight, the use of a non-neuronal cell line and overexpression of HTT constructs limits the physiological relevance. The inference about plasma membrane targeting (C32) is reasonable but would be strengthened by direct measurements in neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Lack of HTT phosphorylation reduces APP protein levels at synapses in vitro and specifically in the presynaptic (non-PSD) fraction in vivo. Most synaptosomal APP is enriched in the non-PSD fraction, suggesting significant presynaptic origin. The absence of HTT phosphorylation regulates presynaptic APP levels both in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are well-supported by complementary approaches: microfluidic chamber western blots (C33, Figure 5B) and synaptosomal fractionation from mouse brains (C36-C37, Figure 5D). The enrichment of APP in non-PSD fractions (C34-C35) provides important context. The convergence of in vitro and in vivo data strengthens the conclusion (C38-C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "HTTSA mice show no behavioral abnormalities at 6 or 12 months but exhibit increased brain volume (4.8%), particularly in hippocampus (8.5%) and cortex (3.7%), along with increased synapse number but unchanged spine size at 19 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by comprehensive behavioral testing (C40-C41, Figure 6\u2014figure supplement 1), MRI volumetric analysis (C42-C44, Figure 6A-B), and electron microscopy (C45-C46, Figure 6C). The lack of behavioral phenotype despite structural changes is notable and well-documented. However, the manuscript should discuss why increased synapse number doesn't correlate with behavioral changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "HTTSA neuronal circuits show increased synaptic contacts compared to WT. Overexpressing APP-mCherry in WT presynaptic neurons decreases synaptic contacts, while the same manipulation in HTTSA neurons restores contacts to WT levels, demonstrating that presynaptic APP levels determine synapse number and can be modulated by HTT phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide strong evidence through in vitro manipulation experiments (Figure 7A-B). The rescue experiment (C49) is particularly compelling, showing that APP overexpression can reverse the HTTSA phenotype. This bidirectional manipulation strengthens the causal relationship between presynaptic APP levels and synapse number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Expressing HTT-480-SA in mature neurons (DIV8) increases synaptic contacts similar to HTTSA neurons, and HTT dephosphorylation attenuates the effect of APP overexpression on synapse number. This demonstrates that reducing anterograde axonal APP transport in mature networks is sufficient to modulate synaptic contact number, independent of developmental effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 address a critical alternative explanation (developmental effects) by showing that HTT-480-SA expression after axon growth produces similar effects (Figure 7C-D). The timing of manipulation (DIV8, after axon growth) and the attenuation of APP overexpression effects (C55-C56) provide strong evidence that this is a transport-mediated rather than developmental phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In APPPS1 mice (expressing human APP at 3\u00d7 murine levels with reduced synapse density), HTTSA mutation significantly reduces APP levels in the presynaptic (non-PSD) fraction without affecting A\u03b2 levels, amyloid load, oligomer load, or plaque aggregation. HTT dephosphorylation regulates presynaptic APP levels without affecting downstream A\u03b2 production/accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are supported by comprehensive biochemical and histological analyses (Figure 8A-B, Figure 8\u2014figure supplement 1). The dissociation between APP levels and A\u03b2 pathology (C61-C64) is important and well-documented. However, the manuscript should discuss whether the lack of A\u03b2 effect might be due to already saturated pathology in APPPS1 mice or insufficient reduction in APP levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "APPPS1 mice show reduced synaptic density and enlarged spines compared to WT. HTTSA mutation significantly increases spine density and completely rescues the APPPS1-induced increase in spine size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by electron microscopy data (Figure 8C) and consistent with prior literature (citations provided for C66-C67). The rescue of both synapse number and spine size (C68-C69) is striking and suggests that presynaptic APP levels have significant effects on synaptic structure in the context of APP overexpression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "HTTSA mice and APPPS1/HTTSA mice show no differences in locomotor activity or anxiety-related behavior compared to controls in open field tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by behavioral data (Figure 6\u2014figure supplement 1, Figure 9\u2014figure supplement 1). These negative results are important controls showing that the HTTSA mutation doesn't cause general behavioral impairments that could confound cognitive testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In the Morris water maze, APPPS1 mice show impaired spatial learning. APPPS1/HTTSA mice perform poorly in early training but show substantial recovery in late training sessions and retain memory of platform location in probe trials, performing similarly to WT mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by comprehensive Morris water maze analysis (Figure 9A-C). The temporal pattern of improvement (poor early, better late; C75-C76) is interesting and suggests that HTTSA may affect learning rate or consolidation rather than initial acquisition. The probe trial data (C77-C78) provides strong evidence for memory retention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In novel object recognition testing, APPPS1 mice show memory deficits (no preference for novel object), while APPPS1/HTTSA mice behave like WT mice with marked preference for novel objects. Blocking Akt phosphorylation at HTT S421 reduces APP presynaptic levels and improves learning and memory in APPPS1 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by novel object recognition data (Figure 9D). The rescue of non-spatial memory (C80-C81) complements the spatial memory findings. The conclusion (C82) integrates the molecular, cellular, and behavioral findings, though it should be noted that the improvement is partial (not complete rescue to WT levels in all measures).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C89"
+    ],
+    "result": "Axonal but not dendritic transport of APP is regulated by Akt-phosphorylated HTT. HTT phosphorylation at S421 recruits kinesin-1 and promotes anterograde transport in axons where microtubules have uniform plus-end orientation. APP levels at presynaptic membranes rely on HTT-dependent axonal transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 and C89 synthesize the mechanistic findings with appropriate citations (C84, Colin et al., 2008). The explanation for axon-specific effects based on microtubule polarity (C85) is well-reasoned and supported by cited literature. The conclusion about presynaptic APP dependence on HTT-mediated transport (C89) is justified by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Prior studies show that blocking axonal traffic reduces synaptic APP levels, and that most proteins co-transported with APP are presynaptic, with APP colocalizing with presynaptic proteins at boutons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 appropriately cite relevant prior literature (Koo et al., 1990; Kohli et al., 2012; Szodorai et al., 2009; Groemer et al., 2011) to contextualize the current findings. These are accurate representations of prior work that support the authors' interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The absence of HTT phosphorylation in APPPS1 mice reduces presynaptic APP levels, restores synapse number and PSD length, and attenuates memory deficits. HTT dephosphorylation regulates synapse homeostasis by modulating presynaptic APP levels rather than A\u03b2 production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 synthesize the key in vivo findings. The evidence for each component is strong (synaptosomal fractionation, electron microscopy, behavioral testing). The conclusion that effects are mediated by APP levels rather than A\u03b2 (C94) is supported by the lack of A\u03b2 changes, though alternative mechanisms cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Prior studies show presynaptic APP contributes to synapse formation, function, and maintenance, and that App knockout increases synapse number/density. The current study demonstrates that reducing APP presynaptic levels by blocking HTT phosphorylation increases synapse density (reversible by APP overexpression), while overexpressing APP/PS1 mutations reduces synaptic density (restorable by HTT-mediated APP reduction without affecting A\u03b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 integrate prior literature with current findings. The bidirectional manipulation experiments (C98-C99) and the APPPS1 rescue (C100-C101) provide strong support. The consistency with App knockout studies (C96-C97) strengthens the interpretation, though the authors should discuss apparent contradictions in the literature about APP's role in synapse formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Changes in synapse homeostasis could be linked to APP's potential function as an adhesion molecule forming homo/heteromeric complexes with APP family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is speculative (appropriately labeled as such in the manuscript) and supported only by citations to prior work (M\u00fcller et al., 2017; Soba et al., 2005). While this is a reasonable hypothesis, the current study provides no direct evidence for this mechanism. This should be clearly identified as speculation requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Post-mortem AD patient brains show increased Akt activation. The current findings suggest that increased Akt activity might contribute to higher presynaptic APP levels in AD brains, leading to synapse loss and cognitive decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 accurately cite prior literature (Rickle et al., 2004; Griffin et al., 2005), but C105 is speculative extrapolation from mouse models to human disease. While the hypothesis is reasonable, the manuscript lacks direct evidence from human tissue showing the proposed relationship between Akt activity, HTT phosphorylation, and presynaptic APP levels in AD patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Prior studies show that knocking down IGF-1 receptor or inhibiting PI3K (upstream of Akt-HTT) rescues synaptic and behavioral deficits in AD models. JIP1 was previously identified as an APP scaffold that determines APP trafficking directionality through JNK-dependent phosphorylation and could regulate amyloid-independent AD pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 appropriately cite relevant prior literature to contextualize the Akt-HTT pathway within broader signaling networks. The citations appear accurate and relevant. The discussion of JIP1 (C108-C110) appropriately acknowledges another pathway regulating APP trafficking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The Akt-HTT pathway is down-regulated in HD patient samples and models, and HD shows notable reduction in synapse number particularly in the corticostriatal circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 cite appropriate prior literature (Colin et al., 2005; Humbert et al., 2002; Virlogeux et al., 2018) to discuss potential relevance to Huntington's disease. These are accurate representations of prior findings that provide context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Subtle modifications of axonal transport of APP change synaptic levels of APP and have dramatic consequences on synapse function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is a summary conclusion supported by the totality of the experimental evidence presented. The characterization of effects as 'subtle' (transport changes) leading to 'dramatic' consequences (synapse and behavioral changes) is justified by the data, though 'dramatic' may be somewhat overstated given the partial rescue in behavioral assays.",
+    "result_type": "MAJOR"
+  }
+]

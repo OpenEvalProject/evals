@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Single-cell RNA-sequencing of control thymus identified six distinct mTEC clusters including cTEC, Ccl21a-high, Tuft, TAC-TEC, Aire-positive, and Late-Aire populations based on characteristic gene expression patterns that align with previously described populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 describe the initial scRNA-seq analysis and cluster identification. The clustering is based on established bioinformatic methods (UMAP, PCA), uses appropriate sample sizes (2434 cells), and identifies populations with marker genes consistent with prior literature. The validation through differential expression of known mTEC-associated genes (C35) strengthens confidence in the clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "RNA velocity analysis predicts that TAC-TECs are precursors to both Aire-positive and Ccl21a-high populations in a branching developmental model, rather than a linear Ccl21a-to-Aire progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 present computational predictions from RNA velocity analysis. While these are bioinformatic inferences requiring experimental validation, they are subsequently validated through lineage tracing (C55-C62) and ablation experiments (C63-C68), providing strong support for the branching model prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The TAC-TEC cluster represents a transit-amplifying population characterized by high expression of chromatin-modifying factors, active cell cycling (104/123 G2/M cells), significant enrichment for transit-amplifying genes (p=1.44\u00d710\u207b\u00b3\u2074), and heterogeneous expression of Aire and Ccl21a without co-expression in individual cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 characterize the TAC-TEC population through multiple complementary approaches: differential expression analysis (C39), statistical enrichment testing (C40), cell cycle analysis (C41), and flow cytometry validation (C45). The convergence of computational and experimental evidence, including the highly significant p-value for transit-amplifying gene enrichment, strongly supports the identification of this population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Pseudotime analysis reveals that TSA expression peaks late in mTEC development after Aire expression is established, with the increase driven by the number of TSAs expressed rather than expression level, and Fezf2 expression precedes Aire with more uniform expression of Fezf2-dependent genes across pseudotime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 describe pseudotime analysis results showing temporal relationships between Aire, Fezf2, and TSA expression. The analysis distinguishes between TSA number versus expression level (C49-C51), providing mechanistic insight. These computational predictions are later validated by the anti-RANKL recovery experiments (C75-C82), strengthening support for the temporal model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Aire lineage tracing demonstrates that 92% of Aire-positive cells co-express ZsGreen, 18% of TAC-TECs express only Aire (indicating recent induction), 34% of Ccl21a-high cells express ZsGreen (with 25% being MHCIIlo), supporting the branching model where TAC-TECs give rise to both Aire-positive and Ccl21a-high populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 provide experimental validation of the computational lineage predictions through Aire lineage tracing. The ZsGreen reporter system allows discrimination of current versus past Aire expression. The finding that Ccl21a-high cells contain ZsGreen+ cells (C60-C62) provides direct evidence against a linear Ccl21a\u2192Aire progression and supports the branching model. The experimental design is appropriate and the interpretation is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Anti-RANKL treatment selectively depletes the Aire-expressing developmental branch without affecting Ccl21a-high cell numbers, and recovery follows the predicted pseudotemporal order with TAC-TECs returning by week 4, followed by progressive repopulation that matches control distribution by week 10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 describe the anti-RANKL ablation and recovery experiment. The selective depletion of Aire+ populations (C63) with preservation of Ccl21a+ cells (C64) provides strong evidence for the branching model. The temporal recovery pattern (C66-C68) validates the pseudotime predictions, and the agreement with prior immunostaining data (C68) adds confidence. This represents a well-designed perturbation experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Anti-RANKL treatment differentially affects TAC-TEC subpopulations, with a 20-fold reduction in Ki67+ AIRE-hi cells (p<0.0006) versus 3.5-fold reduction in AIRE-lo cells (p<0.001), and increased proportion of Ccl21a-expressing TAC-TECs at weeks 2-4 while Fezf2 expression remains largely unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 demonstrate heterogeneity within the TAC-TEC population and differential RANK-dependence. The statistical significance is reported with appropriate p-values, and the differential effect on Aire-expressing versus Ccl21a-expressing TAC-TECs (C73) supports the branching model. The observation that Fezf2 is RANK-independent (C74) is important for understanding regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Following anti-RANKL treatment, Aire expression reaches its lowest point at week 4 followed by recovery, while TSA and Aire-dependent gene expression decrease from >75% to <20% at week 4, remain below 25% at week 6 despite Aire recovery, and fully recover by week 10, with the decrease driven by fewer genes expressed rather than lower expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 describe gene expression dynamics during recovery from ablation. The analysis appropriately controls for UMI differences and cell number through downsampling (mentioned in methods). The delayed recovery of TSA expression relative to Aire (C79) validates the pseudotime prediction that Aire must be established before TSA expression. The finding that fewer genes are expressed rather than lower expression (C80) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In adult thymus, Fezf2 expression is generally independent of RANK signaling, precedes Aire expression, is broadly expressed in TAC-TECs, remains largely unaffected by anti-RANKL treatment, and shows uniform expression of Fezf2-dependent genes across pseudotime, suggesting different regulation than Aire and supporting alternative regulatory pathways such as LT\u03b2R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 characterize Fezf2 regulation and distinguish it from Aire. The evidence comes from multiple sources: pseudotime analysis (C106, C109), expression patterns (C107), and ablation experiments (C108). The conclusion that RANK is not necessary for Fezf2 (C111) is well-supported by the data, though the suggestion of LT\u03b2R involvement (C112) is appropriately presented as supported by prior literature rather than proven by this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6"
+    ],
+    "result": "The study identifies a non-stem transit-amplifying population of cycling mTECs that precedes Aire expression and proposes a branching model where heterogeneous transit-amplifying cells give rise to both Aire- and Ccl21a-expressing mTEC subsets, with Aire expression required before TSA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C6 represent the main conclusions of the study. These are well-supported by the convergence of multiple lines of evidence: bioinformatic analysis (RNA velocity, pseudotime), experimental validation (lineage tracing, flow cytometry), and perturbation experiments (anti-RANKL ablation and recovery). The integration of computational and experimental approaches provides strong support for these central findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Multiple lines of evidence support the branching model: half of CCL21+ cells express ZsGreen indicating downstream positioning from Aire+ cells, TAC-TECs lack ZsGreen indicating they are not downstream of Ccl21a+ cells, anti-RANKL selectively depletes Aire-expressing but not Ccl21a-expressing cycling TAC-TECs, and TAC-TECs can be subsetted into RANK-dependent Aire-primed and RANK-independent Ccl21a-primed populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 synthesize evidence for the branching model from lineage tracing and ablation experiments. The logic is sound: if Ccl21a cells were precursors to Aire cells, TAC-TECs should express ZsGreen (they don't), and Ccl21a+ TAC-TECs should be depleted by anti-RANKL (they aren't). The convergence of these negative and positive results provides strong support for the branching model over a linear progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The preponderance of chromatin-modifying factors in TAC-TECs suggests that chromatin remodeling may occur immediately before high Aire expression, potentially establishing a permissive chromatin landscape for Aire complex function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 present a mechanistic hypothesis based on the observation of chromatin-modifying factor expression in TAC-TECs. While the observation is supported by the data (C39), the mechanistic interpretation is speculative. The temporal relationship is consistent with the hypothesis, but direct evidence of chromatin remodeling or its functional relationship to Aire activity is not provided. This represents a reasonable hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Prior studies support the existence of cycling mTEC populations: G\u00e4bler et al. showed 30% of mTEC-lo are post-mitotic versus 80% of mTEC-hi, Gray et al. showed Aire+ mTECs incorporate BrdU and identified a potential transit-amplifying population, and the rapid turnover and recovery capacity of Aire+ mTECs suggests a rapidly cycling precursor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 contextualize the current findings within prior literature. These are accurate representations of published work and the inference that rapid turnover requires a cycling precursor (C88) is logical. This provides important context showing the current work builds on and extends prior observations with higher resolution characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The current findings reconcile conflicting prior literature: while some studies suggested Ccl21a+ cells give rise to Aire+ mTECs, disruption of Ccl21a+ cells minimally impacts Aire+ cells, and the low efficiency of mTEC-lo to mTEC-hi conversion may be explained by infrequent TAC-TECs within the mTEC-lo fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 integrate prior literature with current findings. The speculation that mTEC-lo cells that give rise to Aire+ cells are actually TAC-TECs (C92) is reasonable given the data, though it remains speculative. The reconciliation of conflicting literature through the branching model is a strength of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Recent work by Dhalla et al. identified a similar proliferating mTEC population but concluded it was downstream of Ccl21a+ cells based on RNA velocity; alternative interpretations include a quiescent Ccl21a+ stem cell transitioning through TAC-TEC, or anti-RANKL blocking the Ccl21a-to-Aire transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C102 acknowledge alternative interpretations and conflicting conclusions from recent literature. The authors appropriately present these as possibilities (C100-C102) while maintaining their interpretation is better supported by their experimental data. The acknowledgment of alternative models and the need for additional validation (mentioned in discussion) is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims establish that mTECs mediate central tolerance through TSA expression regulated by Aire and Fezf2, that mTEC-hi arise from mTEC-lo through RANK signaling, that TSA expression is heterogeneous, and that prior work has identified various mTEC subpopulations and progenitors with conflicting lineage relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 represent background information and literature review. These are appropriately cited and accurately represent established knowledge and prior work. The acknowledgment of conflicting prior results (C20-C21, C27) appropriately sets up the rationale for the current study.",
+    "result_type": "MINOR"
+  }
+]

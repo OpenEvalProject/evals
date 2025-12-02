@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The Drosophila larval body plan consists of thoracic and abdominal segments with stereotyped muscle groups and motor neuron organization. Each segment contains ~30 bilateral body wall muscles organized into spatial groups (DL, DO, VL, VO, VA, LT) and ~30 bilateral MN pairs with distinct morphological types (Ib, Is, III, VUM). Type Ib MNs innervating the same spatial muscle group project dendrites to similar neuropil regions, creating a myotopic map.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 describe well-established anatomical features of the Drosophila larval nervous system, supported by direct observations in Figure 1 and extensive prior literature (multiple citations provided). The myotopic organization (C8) is explicitly validated by prior work and serves as foundational knowledge for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C60"
+    ],
+    "result": "All body wall muscles and their innervating motor neurons are activated during both forward and backward locomotion, demonstrating that larval muscles are bifunctional rather than behavior-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C60 are directly supported by comprehensive GCaMP6f calcium imaging data (Figure 2C,F, Videos 1-2) showing significant fluorescence increases in all imaged muscles during both behaviors. The inference that muscle activity reflects MN activity (C10) is justified given the known 1:1 innervation pattern of type Ib MNs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Hierarchical clustering of muscle activity reveals four distinct co-activated muscle groups during both forward (F1-F4) and backward (B1-B4) locomotion, with more coherent activation than inactivation timing. These co-activated groups do not fully match previously defined spatial muscle groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are supported by quantitative hierarchical clustering analysis of calcium imaging data from 27-25 muscles across multiple crawl cycles (Figure 3A-E, Table 2). The clustering methodology is described, and the discrepancy with spatial groups (C14) is explicitly demonstrated by comparing Figures 1B and 3F,G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Six muscles show differential recruitment timing between forward and backward locomotion: the VO group (muscles 15-17) switches from late (F3) to early (B1) activity, while muscles 2, 11, and 18 switch from early (F1/2) to late (B3/4) activity. Other spatial groups maintain consistent timing across behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 are directly supported by quantitative analysis shown in Figure 3H,I and Figure 3\u2014figure supplement 2. The differential recruitment is clearly demonstrated with specific timing shifts documented. The consistency of longitudinal and transverse muscle timing (C18) is supported by both current data and prior citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Complete TEM reconstruction of all differentiated motor neurons in segment A1 reveals that all MNs have dense postsynaptic arrays on dendrites but, unlike C. elegans, lack presynaptic contacts to other neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by comprehensive TEM reconstruction documented in Figure 4 and Figure 4\u2014figure supplement 1. The comparison to C. elegans (C21) is appropriately cited. The completeness claim (C19) is justified by systematic matching of TEM reconstructions to known MN morphologies from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Motor neurons innervating the same spatial muscle group show highly stereotyped postsynaptic clustering in the neuropil (r=0.97 between hemisegments), with different spatial groups occupying distinct regions along two neuropil axes (p<0.05), confirming and extending the myotopic map at synaptic resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are supported by quantitative synapse similarity analysis (Figure 5A-B) with appropriate statistical testing (Kolmogorov-Smirnov test, p<0.05). The high correlation between hemisegments (C23) validates data quality. This extends prior anatomical observations (C22, cited) to the synaptic level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Motor neurons in forward and backward co-active muscle groups show distinct postsynapse density maxima along the mediolateral axis and often a second axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by spatial distribution analysis shown in Figure 5C,D with arrowheads marking distinct maxima. However, the authors note considerable overlap between groups, limiting the functional significance of this observation without additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Comprehensive TEM reconstruction identified 118 bilateral premotor neuron pairs providing 76% of total MN input through 7495 synapses. PMNs show stereotyped features: presynapses enriched dorsally, postsynapses distributed throughout neuropil, averaging 8.0 MN targets per PMN and 32.5 PMN inputs per MN, with most PMNs projecting contralaterally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 provide quantitative characterization of the PMN population supported by systematic TEM analysis (Figure 6, Table 3). Selection criteria are explicitly stated (>1% input, >4 synapses). The statistics are internally consistent and represent the first comprehensive PMN census in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "While 30 PMNs specifically innervate single spatial muscle groups and similar numbers target single co-active groups (supporting labeled-line coding), the majority of PMNs innervate multiple muscle groups. All PMNs innervate multiple MNs with no evidence for specific one-to-one PMN-MN connections, suggesting combinatorial coding generates differential MN recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by connectivity analysis in Figure 7D-G. The data clearly show both labeled-line (C35-C36) and combinatorial (C37-C38) connectivity patterns. The conclusion about combinatorial coding (C39) is a reasonable inference from the connectivity data, though functional validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Connectome-based predictions of neuronal recruitment timing can be validated experimentally: PMN A27h strongly connects to F3 MNs, and dual-color calcium imaging confirms F1/F2 MNs activate before A27h.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 demonstrate successful prediction from connectivity to function. The strong connectivity (C40, Figure 7H,H') predicts temporal ordering that is experimentally validated by dual-color imaging (C41, Figure 7H''). This validates the utility of the connectome for functional predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Among differentially recruited MNs, MN18 shows highly asymmetric postsynaptic distribution along the anteroposterior axis, which should cause earlier activation during forward than backward locomotion, consistent with observed muscle activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by morphological analysis (Figure 8A-E) and consistency with functional data (Figure 3). The mechanistic prediction (C43) linking asymmetric morphology to differential recruitment is logical given wave propagation direction, though direct causal testing would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Multiple PMNs show anteroposterior asymmetry in axon projections (A02i, A03a4 project anteriorly; A03a5 projects posteriorly), while others are symmetric (A03g). These asymmetric PMNs likely contribute to differential MN/muscle recruitment during forward versus backward locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by morphological reconstructions (Figure 8F-H). The inference about functional contribution (C47) is reasonable given opposite wave propagation directions, but remains speculative without functional perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A recurrent network model constrained by TEM connectivity demonstrates that sparse PMN-PMN connections (~7% of possible connections) are sufficient to generate appropriately timed MN activity for both forward and backward locomotion, with distinct PMN activity sequences tiling the MN activity period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by computational modeling (Figure 9A-B, Figure 9\u2014figure supplement 1). The model successfully reproduces observed MN timing patterns using anatomically constrained connectivity. However, the model requires additional constraints (A27h/A18b activity) and makes simplifying assumptions about neuronal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Model predictions for several PMNs match existing experimental data: A14a is active at F1 and blocking it removes F1-F4 delay; A18b3 and A18a are both active during forward but only A18a during backward; A18j and A01c are active at F4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 validate the model against independent experimental data from prior studies (Zwart et al., 2016; Hasegawa et al., 2016). The consistency between model predictions and experimental observations supports model validity, though C55 is a prediction rather than direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "New experimental tests validate model predictions: A31k activity peaks coincide with declining early MN activity in both behaviors; A31k and A06l show concurrent rhythmic activity; A23a activates earlier during backward than forward locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide novel experimental validation of model predictions using dual-color calcium imaging (Figure 10A-F). These represent genuine prospective tests of the model, strengthening confidence in its predictive power. The experiments are well-controlled and directly test specific model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "A model lacking complex single-neuron dynamics (post-inhibitory rebound, spike-frequency adaptation) is sufficient to produce observed motor patterns, contrasting with other central pattern generator circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by the successful model performance without incorporating complex intrinsic dynamics. However, this represents a modeling choice/observation rather than proof that such dynamics are absent in the biological system. The claim is appropriately qualified as 'sufficient' rather than 'necessary.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Forward-specific PMN A27h forms circuit motifs that coordinate muscle group activation: it maintains A18b3 activity to sustain F1/F2 MN excitation while activating F3, excites A18b3 in the anterior segment to advance the wave, and A18b3 activates inhibitory PMNs (A06c, A14a) that prevent premature F3/4 activation and disinhibit F1/F2 MNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 describe circuit motifs supported by connectivity data (Figure 11A-B) and prior functional characterization (cited). These represent testable hypotheses about circuit function derived from anatomical connectivity. The motifs are plausible mechanisms but require functional validation through perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Backward-specific PMN A27k forms circuit motifs coordinating backward locomotion: it excites B4 MNs and inhibitory PMNs (A02e, A02g) targeting B1/B2, and synapses in the anterior segment with excitatory neurons (A01c1, A01c2, A18j) innervating B4 and inhibitory PMN A02e targeting B1/B2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 describe backward-specific circuit motifs supported by connectivity analysis (Figure 11D-E) and prior characterization (Kohsaka et al., 2019). Like the forward motifs, these represent anatomically grounded hypotheses about circuit function that require functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The TEM volume used is from an L1 newly hatched larva, and PMNs were selected using explicit criteria (>1% of MN postsynapses, >4 total synapses, with additional quality filters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 describe methodological details that are clearly stated with appropriate citations (C68) and explicit selection criteria (C69). These are important for reproducibility and interpretation but represent methodological documentation rather than scientific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The model does not require proprioceptive input to generate observed motor patterns, consistent with data showing isolated CNS can maintain forward and backward motor neuron activity waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by model design (no proprioceptive input included) and consistency with prior experimental data (Pulver et al., 2015). This contrasts with C. elegans models and represents an important difference in circuit organization, though it doesn't exclude a modulatory role for proprioception in intact animals.",
+    "result_type": "MINOR"
+  }
+]

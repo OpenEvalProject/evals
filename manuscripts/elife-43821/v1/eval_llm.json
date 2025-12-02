@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "HDAC3 deletion causes MHC class II-restricted OT-II thymocytes to redirect to the CD8 cytotoxic lineage with accelerated kinetics. OT-II RB3 mice generate CD8+ cells that express Runx3, lack ThPOK, and produce cytotoxic effector molecules (Granzyme b and Perforin). This redirection is cell-intrinsic, independent of Bcl-xl expression, and occurs through MHC class II restriction rather than aberrant MHC class I selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C55 provide converging evidence from multiple experimental approaches (flow cytometry, bone marrow chimeras, functional assays) demonstrating lineage redirection. The use of OT-II TCR transgenic mice, \u03b22m-KO recipients, and mixed bone marrow chimeras provides strong controls ruling out alternative explanations. The functional data (C49-C50) confirms that redirected cells acquire cytotoxic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "HDAC3-deficient thymocytes exhibit accelerated CD8-lineage commitment during Phase 1 of lineage choice, with premature Runx3 expression and failure to induce ThPOK. OT-II RB3 mice show premature Runx3 expression during Phase 1 and fail to induce ThPOK, while maintaining high CD8\u03b1 expression, indicating acceleration of CD8-lineage commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C70 use an established gating scheme (Kimura et al., 2016) to track lineage commitment kinetics. The data show clear temporal dysregulation with premature Runx3 expression (C65) and failure of ThPOK induction (C70) in HDAC3-deficient cells. The comparison with OT-I and OT-II controls provides appropriate benchmarks for normal CD8 and CD4 lineage commitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "HDAC3-deficient Selecting (CD69+) thymocytes show a transcriptional bias toward the CD8-lineage prior to lineage commitment, with 64% of CD4-lineage genes down-regulated and 53% of CD8-lineage genes up-regulated. This is accompanied by increased H3K27ac and H3K9ac at CD8-lineage gene loci but not CD4-lineage genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are supported by RNA-seq and ChIP-seq data from FACS-sorted populations. The use of defined CD4- and CD8-lineage gene sets from ImmGen provides an objective framework for analysis. The concordance between transcriptional changes (C71-C72) and histone acetylation patterns (C76) strengthens the conclusion. However, the gene sets are based on mature SP cells, which may not perfectly represent genes relevant at the Selecting stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "HDAC3 deletion leads to formation of super-enhancers near CD8-lineage genes Runx3 and Patz1 in Immature (DP) thymocytes. HDAC3-deficient DP cells show increased numbers of super-enhancers (360 vs 263), with 163 unique super-enhancers including those near Runx3 and Patz1. These super-enhancers show increased H3K27ac signal, increased length, and correspond to increased gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C94 use the established ROSE algorithm to identify super-enhancers from H3K27ac ChIP-seq data. The increase in super-enhancer number and signal is quantified (C80-C83), and the formation of Runx3 and Patz1 super-enhancers is documented (C88-C93). The correlation between super-enhancer formation and gene expression (C93) is demonstrated. The analysis appropriately distinguishes between overlapping and unique super-enhancers (C84-C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "HDAC3-deficient DP thymocytes show premature upregulation of select common gamma chain cytokine receptors, particularly IL-21R, IL-4R\u03b1, and \u03b3c, but not IL-7R\u03b1, IL-15R\u03b1, or IL-2R\u03b2. IL-21R expression in HDAC3-deficient DP cells is comparable to levels in wild-type CD8SP cells. This upregulation begins at the ISP stage and is accompanied by hyperacetylation of Il4ra and Il21r gene loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C117 are supported by flow cytometry (protein), RNA-seq (mRNA), and ChIP-seq (histone acetylation) data showing concordant upregulation of specific cytokine receptors. The comparison to CD8SP cells (C103) provides context for the magnitude of dysregulation. The ISP data (C114-C117) establishes the developmental timing. However, the functional significance of IL-4R\u03b1 and \u03b3c upregulation is not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "HDAC3-deficient DP thymocytes show enhanced STAT5 phosphorylation specifically in response to IL-21 stimulation (2-fold over WT, 4-fold over unstimulated), but not to IL-7, IL-15, or IL-4. This enhanced response is not due to changes in total STAT5 levels and is specific to STAT5 (not STAT3 or STAT6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 are supported by phospho-flow cytometry experiments with appropriate cytokine stimulations and controls. The specificity for IL-21 (C107) and STAT5 (C110-C112) is well-documented. The control showing no change in total STAT5 levels (C109) rules out a trivial explanation. The 10-minute stimulation time is appropriate for measuring acute signaling responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "HDAC3 directly binds to the Il21r promoter in DP thymocytes and is required to restrain IL-21R and IL-4R\u03b1 expression. The Il21r promoter loops with multiple regulatory elements at the Il4ra locus, suggesting coordinate regulation of these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 are supported by HDAC3 qChIP showing enrichment at the Il21r promoter (C118) and publicly available Hi-C data showing chromatin looping between Il21r and Il4ra loci (C120). The inference of direct interaction (C119) is reasonable given the ChIP enrichment. The coordinate regulation model (C121) is supported by the looping data and concordant expression changes, though additional experiments (e.g., 3C, deletion of regulatory elements) would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Blocking IL-21R signaling with anti-IL-21R antibody does not restore CD4-lineage commitment in OT-II RB3 mice. Antibody-treated OT-II RB3 mice still produce CD8SP thymocytes, fail to induce ThPOK, and show premature Runx3 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are supported by in vivo antibody blocking experiments with appropriate controls (isotype and OT-II mice). The failure to rescue CD4 lineage commitment (C124) is documented by flow cytometry, and the persistence of aberrant transcription factor expression (C125-C126) is shown. However, the efficacy of IL-21R blockade is not directly demonstrated (e.g., by showing reduced pSTAT5 in vivo), which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "HDAC3 binds to regulatory elements associated with CD8-lineage genes Runx3 and Patz1 in DP thymocytes. HDAC3 binds to a region 50 kb upstream of Runx3 and to exon 1 of Patz1, but not to the Runx3 promoter. The Runx3 promoter loops with upstream regulatory elements including the HDAC3 binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 are supported by HDAC3 qChIP in DP thymocytes (C128-C130) and publicly available Hi-C data showing chromatin looping (C131). The binding sites were identified using publicly available HDAC3 ChIP-seq from other cell types, which is a reasonable approach. The inference of direct regulatory function (C132) is supported by the binding data and looping, though functional validation (e.g., CRISPR deletion of binding sites) would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "HDAC3 protein expression and binding to Runx3 and Patz1 regulatory elements is differentially regulated during lineage commitment. HDAC3 expression is significantly reduced in CD8SP compared to DP, CD4+CD8lo, and CD4SP thymocytes. HDAC3 binding to Runx3 and Patz1 regions is lost in CD8SP but maintained in CD4SP thymocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 are supported by flow cytometry (protein expression) and qChIP (binding) in sorted thymocyte populations. The differential binding pattern (C134) provides a mechanism for lineage-specific gene regulation. However, the causal relationship between HDAC3 loss and CD8 gene expression is inferred rather than directly demonstrated. The sample sizes appear adequate (n=4 mice) with appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C10"
+    ],
+    "result": "HDAC3 is required to restrain CD8-lineage genes in DP thymocytes to maintain a bi-potential state necessary for CD4 T cell generation. This represents the central mechanistic conclusion integrating the transcriptional, epigenetic, and functional data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C10 represent the main conclusions of the study, synthesizing evidence from multiple experimental approaches: RNA-seq and ChIP-seq showing CD8-lineage bias (C5), lineage redirection experiments (C1-C4), super-enhancer formation (C80-C94), and direct HDAC3 binding to CD8-lineage genes (C128-C135). The convergence of evidence from complementary approaches strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "HDAC3 has a distinct role from HDAC1/2 in CD4/CD8 lineage commitment. While HDAC1/2 maintain CD4-lineage integrity in peripheral T cells, HDAC3 is specifically required for restraining CD8-lineage genes in DP thymocytes. CD4-cre deletion of HDAC3 shows no defect because HDAC3 protein persists at the DP stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C142 synthesize findings from multiple studies (Boucheron et al., 2014a,b; Hsu et al., 2015; Philips et al., 2016) to distinguish HDAC3 function from HDAC1/2. The comparison between CD2-icre and CD4-cre deletion timing (C139-C141) provides strong evidence for stage-specific HDAC3 function. However, these claims rely heavily on cited work rather than new data presented in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C95"
+    ],
+    "result": "Background on T cell lineage commitment: The kinetic signaling model posits that CD4 vs CD8 lineage choice is determined by persistent TCR signaling (CD4) vs cytokine signaling (CD8), mediated by lineage-determining transcription factors ThPOK (CD4) and Runx3 (CD8) that antagonize each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C14-C19, C56-C59, and C95 represent established knowledge from the field, appropriately cited from Singer et al., 2008 and other sources. These provide necessary context for interpreting the experimental findings but are not novel results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background on HDAC3 structure and function: HDAC3 exists in multiprotein complexes with NCOR/SMRT, can associate with p300, lacks a DNA-binding domain, localizes to promoters/enhancers, and deacetylates H3 and H4. Genomic HDAC3 deletion is embryonically lethal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 represent established knowledge about HDAC3, appropriately cited from the literature. These provide necessary background but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background on HDAC3 in immune cells and prior work: HDAC3 plays roles in various immune cell types and is required for positive selection and CD4-lineage development in thymocytes. The RB3 mouse model (ROR\u03b3t-KO Bcl-xl Tg HDAC3-cKO) bypasses the positive selection block and reveals a CD4-lineage defect specific to HDAC3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C39 summarize prior work from the literature and the authors' previous studies (Philips et al., 2016). These establish the rationale for the current study but are not new findings. The RB3 model description (C35-C39) is essential context for interpreting the current experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Background on super-enhancers: Super-enhancers are genomic regions that control cell type specification genes and are characterized by very high levels of H3K27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 represent established knowledge about super-enhancers, appropriately cited from Hnisz et al., 2013 and Whyte et al., 2013. This provides necessary background for the super-enhancer analysis but is not a novel finding.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,455 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The study collected 1036 cord blood and 487 heel prick samples from 1069 unique newborns in Bangladesh, with the majority (93.2% heel prick, 89.9% cord blood) from term infants. Sample collection timing, quality control procedures, and cohort characteristics are described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C22 provide consistent descriptive statistics about the study cohort and sample collection procedures. The data are internally consistent (e.g., paired samples n=454 is plausible given total unique infants n=1069), and the reported percentages and timing align with the study design described in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "For heel prick samples, the full model (Model 3) containing clinical and analyte data achieved the best performance with RMSE 1.07 weeks, correctly estimating gestational age within 1 week for 63.9% and within 2 weeks for 94.3% of samples. Models performed optimally for term infants (38-39 weeks) and tended to overestimate gestational age in preterm infants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 present a coherent set of performance metrics for heel prick models with clear quantitative results. The pattern of better performance near term and systematic bias at extremes (C24) is consistent with regression to the mean in external validation. Figure 1 and Figure 2 support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Among small for gestational age (SGA) infants, the full heel prick model maintained reasonable performance with RMSE 1.12 weeks (SGA10) and 1.30 weeks (SGA3), correctly estimating gestational age within 1 week for 62.8% and 53.4% of infants, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 demonstrate model performance in a clinically important subgroup (SGA infants). The slightly degraded performance in more severely growth-restricted infants (SGA3 vs SGA10) is biologically plausible since birthweight is a model covariate. However, the small sample sizes in these subgroups (not explicitly reported) limit certainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "For cord blood samples, the full model (Model 3) achieved RMSE 1.23 weeks, correctly estimating gestational age within 2 weeks for 90.4% of infants overall, with similar performance in SGA subgroups (90.7% for SGA10, 85% for SGA3, 84.2% for <2500g infants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 present consistent performance metrics for cord blood models. The slightly worse performance compared to heel prick (RMSE 1.23 vs 1.07 weeks) is acknowledged by the authors and attributed to model development on heel prick data (C41). The results are internally consistent across subgroups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Heel prick samples provided more accurate gestational age estimates than cord blood samples across all models, with the full model achieving AUC 0.945 (95% CI 0.890, 0.999) for heel prick versus AUC 0.894 (95% CI 0.853, 0.935) for cord blood in discriminating preterm birth (<37 weeks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by consistent comparative data across multiple metrics (RMSE, AUC). Figure 3 and Table 3 provide visual and quantitative support. The confidence intervals for AUC overlap slightly, but the consistent direction of effect across all models strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "Algorithms developed in Ontario, Canada successfully validated in Bangladesh with comparable performance (RMSE 1.07 vs 1.06 weeks in Ontario), demonstrating cross-population generalizability and superior accuracy compared to traditional postnatal methods (2-4 weeks error).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C71, C73-C74 establish the key finding of external validation. The comparison to Ontario performance (C73) is well-supported by citation, and the comparison to traditional methods (C74) is appropriately referenced. However, the claim of 'superior accuracy' should be qualified since direct head-to-head comparison in the same population was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C76"
+    ],
+    "result": "Heel prick samples yielded more accurate estimates than cord blood, likely because models were originally developed from heel prick data. Correlation between cord and heel prick data varies significantly across analyte subtypes, with differences attributed to timing of collection and postnatal factors like TSH fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 are supported by data, but C76 is speculative. While the explanation for cord/heel differences is plausible and supported by citations about TSH fluctuations, the authors did not empirically test these mechanisms. The reference to Appendix 1 (C42) for correlation data is not verifiable from the provided manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Study strengths include external validation using internationally-derived samples from a well-characterized cohort with ultrasound-confirmed gestational age, high-quality samples, and paired cord/heel prick samples enabling direct comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 accurately describe methodological strengths. The use of first-trimester ultrasound as gold standard (C61, C114) and the PreSSMat cohort design (C62, C105-C106) are well-documented. The paired sample design (C64, C22) is a genuine strength for comparing sample types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The primary limitation was participation bias against very/extremely preterm infants, resulting in small numbers in these subgroups and limiting assessment of model performance. Models were most accurate for near-term infants and showed systematic bias, overestimating gestational age in preterm and underestimating in post-term infants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 honestly acknowledge important limitations. The small numbers of preterm infants (C11: only 6.8% heel prick, 10.1% cord blood <37 weeks) substantially limit conclusions about the target population. The systematic bias pattern (C68, C24) is clearly shown in Figure 2 residual plots and represents a significant limitation for clinical application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Calibration in the large (calibration slope adjustment) could potentially improve model performance in this external cohort, but was not conducted in the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 appropriately identify a potential improvement not implemented. The suggestion is reasonable given the observed systematic bias (C68), and the citation to Steyerberg 2010 is appropriate. However, this remains speculative without empirical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The metabolic models provided significantly improved estimates of gestational age among infants with birthweights <2500g compared to traditional methods (symphysis fundal height, neuromuscular assessments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 asserts 'significantly improved estimates' but no direct comparison was performed in this study. The claim relies on citations to other studies (Spinnato 1984, Goto 2013) showing poor performance of traditional methods. While the model performed reasonably in low birthweight infants (C36: 84.2% within 2 weeks), the lack of head-to-head comparison in the same population limits this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C87",
+      "C90",
+      "C91"
+    ],
+    "result": "Development of cord blood-specific models optimized for analytes less susceptible to postnatal fluctuations may improve performance. Cord blood collection is more feasible in low-resource settings, avoiding discomfort, parental stress, and extensive training requirements, making it the most practical option despite slightly lower accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C87, C90-C91 present a logical argument for prioritizing cord blood models based on feasibility considerations (C15, C80-C86) despite performance trade-offs. The practical barriers to heel prick collection (C84-C86) are documented in the study. However, C77 remains speculative about potential improvements from cord-specific model development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Heel prick samples for newborn screening are typically collected \u226524 hours after birth, but in many settings mother-infant pairs are discharged within 24 hours, which would compromise the accuracy of existing metabolic dating algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 identify a practical implementation challenge. C80 is established knowledge about newborn screening timing, C81 is supported by citation (Campbell 2016), and C82 is a reasonable inference given that models were developed on 24-48 hour samples but cord blood is collected immediately. This represents a genuine barrier to implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C132"
+    ],
+    "result": "The study objective was to validate previously published Ontario-based gestational age estimation models in a Bangladesh cohort by comparing algorithm-derived estimates from blood spots against first-trimester ultrasound (gold standard).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95, C132 clearly state the study objective with appropriate citations (Wilson 2016, 2017) and justification for ultrasound as gold standard. The objective is well-defined and the study design appropriately addresses it through external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study was conducted in the Matlab icddr,b service area in Bangladesh, nested within the PreSSMat cohort. Pregnant women were prospectively followed with first-trimester ultrasound at enrollment (11-14 weeks) and subsequent visits through delivery. No explicit inclusion/exclusion criteria were applied beyond enrollment in PreSSMat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106, C113-C116 provide consistent description of study setting and design. The nested design within PreSSMat is clearly described, and the lack of additional inclusion/exclusion criteria (C115) supports generalizability claims (C62). The prospective design with early ultrasound (C106, C114) ensures high-quality gestational age reference standard.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Cord blood was collected immediately after birth and heel prick samples within 72 hours or before discharge. Samples were dried on filter paper, stored in controlled conditions, shipped weekly to Ontario, and analyzed using standard newborn screening assays (HPLC, tandem MS, immunoassays, qPCR) for 47 analytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C127 provide detailed, internally consistent methodology for sample collection, handling, and analysis. The use of established newborn screening laboratory (NSO) and standard assays enhances reproducibility. The controlled storage and shipping procedures (C119-C120) address sample quality concerns (C128).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Sample data were scored using multivariable models previously developed in Ontario, including main effects and interactions for clinical measures and analytes. Key predictors included birthweight, fetal/adult hemoglobin ratio, TSH, 17OHP, and several amino acids/acylcarnitines. Analyses used SAS 9.4 and R 3.3.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 describe the statistical analysis approach with appropriate citation (Wilson 2017). The identification of key predictors (C135) is useful for understanding model performance. Software specification (C136) supports reproducibility. However, the lack of detail about imputation methods (mentioned in C17 but not fully described) is a minor limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Preterm birth complications are the leading cause of under-5 mortality. Estimating preterm birth burden in low-resource settings is challenging due to lack of ultrasound, unreliable LMP recall, and poor performance of postnatal methods (fundal height, Ballard/Dubowitz scores). Strengthened surveillance systems are urgently needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the public health context with appropriate citations (March of Dimes 2012, Quinn 2016, Taylor 2010, Spinnato 1984, Robillard 1992). These are well-established facts in the field and appropriately motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Metabolic algorithms combining newborn screening analytes with clinical covariates have demonstrated potential for accurate gestational age estimation in high-resource settings (1-2 weeks accuracy). Three North American groups have developed such algorithms, with hemoglobin ratios identified as strong predictors. Ethnicity-specific models may improve performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C54-C56 accurately summarize prior work with appropriate citations (Jelliffe-Pawlowski 2016, Ryckman 2016, Wilson 2016-2017, Hawken 2017). This establishes the foundation for the current validation study. The suggestion about ethnicity-specific models (C8) is appropriately qualified as a possibility rather than certainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Accurate gestational age assessment is a recognized priority for program tracking. Birthweight is an unreliable surrogate prone to overestimating preterm birth in LMIC settings with high SGA prevalence. Traditional postnatal assessments (Ballard/Dubowitz) systematically overestimate gestational age with 2-4 week margins of error, versus 1 week for first-trimester ultrasound. These methods are particularly inaccurate in rural Bangladesh.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 establish the limitations of existing methods with appropriate citations (March of Dimes 2012, WHO 2014, Lee 2016). The comparison of accuracy ranges (C48-C49) provides important context for evaluating the metabolic approach. The specific mention of Bangladesh (C50) directly supports the rationale for this validation study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Metabolic gestational dating emerged to address the need for improved preterm birth surveillance. Newborn metabolites are affected by gestational age and routinely considered in screening interpretation. Efforts are underway to implement this approach in low-resource settings for population-level burden estimation, with potential future application for individual clinical care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C57-C59 provide appropriate context and citations (Slaughter 2010, Oladipo 2011, NSO 2017). The distinction between current population-level intent (C58) and potential future individual application (C59) is appropriately qualified as 'conceivable' rather than established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C89"
+    ],
+    "result": "Acceptable error levels for gestational age measurements must be determined by public health officials. Metabolic gestational dating offers reliable, user-independent estimates and represents a novel means for accurate population-level gestational age assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C89 present reasonable conclusions based on study findings. The advantage of eliminating user variability (C79) is valid compared to clinical assessments. However, the characterization as 'accurate' (C89) should be qualified by the limitations in preterm infants (C65-C68) and the need for calibration (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Newborn screening is not standard practice in Bangladesh and other LMIC. Parents were hesitant to consent to heel prick procedures, and research staff preference for cord blood may have affected sample collection. A quality assurance trial was required to improve collection techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 document important implementation challenges. C83 is established knowledge about LMIC healthcare. C84 reports anecdotal but relevant observations about acceptability. C85 acknowledges potential bias despite training. C86 demonstrates the study team's response to quality issues. These honestly reported challenges strengthen the argument for cord blood approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C88",
+      "C92",
+      "C93"
+    ],
+    "result": "Population-level metabolic screening could provide additional insights into congenital condition prevalence. Other maternal/pregnancy/infant factors not available in this analysis may improve models. Future work should derive models for other priority birth outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C92-C93 appropriately identify opportunities for future research. C88 notes a valid ancillary benefit of screening programs. C92-C93 are reasonable suggestions but remain speculative without empirical testing. These represent appropriate discussion of future directions rather than overstatement of current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Due to logistical challenges, fewer samples were collected than initially anticipated, with low numbers of infants <34 weeks gestational age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 honestly acknowledges deviation from the original protocol. This is consistent with the participation bias described in C65 and the sample distribution shown in C11. This transparency about limitations is appropriate, though it significantly impacts the ability to assess model performance in the target population (very preterm infants).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study used standard definitions: preterm <37 weeks, very preterm <32 weeks, extremely preterm <28 weeks. SGA was defined using North American birthweight percentiles (10th and 3rd percentiles), with SGA3 considered more likely to reflect true growth restriction in Bangladesh where birthweights are lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 describe standard definitions appropriately. However, the use of North American growth curves (C111) for a Bangladeshi population is problematic and could lead to misclassification of SGA. The authors acknowledge this concern (C112) but the choice may inflate SGA prevalence and affect interpretation of model performance in this subgroup.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Blood spots are subject to degradation if improperly handled. Samples with insufficient quality were excluded. Newborn screening analysis generated screen positive/negative results for NSO-screened conditions, with management of incidental findings reported elsewhere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 describe appropriate quality control and ethical handling of incidental findings. The exclusion of poor-quality samples (C129) is justified, though the number excluded is not reported. The reference to separate reporting of incidental findings (C131, Murphy 2017) is appropriate for managing this ethical complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Mothers provided informed consent for PreSSMat cohort participation and sample collection/analysis. The study received ethical approval from Bangladesh (PR-16039, July 2016), Ottawa Health Science Network (June 2016), and Children's Hospital of Eastern Ontario (June 2016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 document appropriate ethical procedures with specific approval numbers and dates. The multi-jurisdictional approval (Bangladesh and Canada) is appropriate given the international collaboration and sample shipping.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Newborn screening is a public health initiative screening for rare, treatable conditions with no neonatal symptoms. Programs vary by jurisdiction (1-50+ conditions). In Ontario, heel prick blood is collected within days of birth, dried on filter paper, and analyzed by tandem MS, immunoassays, and HPLC for metabolic/genetic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 provide accurate background on newborn screening with appropriate citation (Therrell 2015). This context helps readers understand the infrastructure being leveraged for gestational age estimation.",
+    "result_type": "MINOR"
+  }
+]

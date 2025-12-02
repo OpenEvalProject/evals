@@ -1,0 +1,2051 @@
+{
+  "submission": {
+    "id": "10c4cacb-bfb1-49db-8e3b-eb171af69237",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:18:05.807981Z",
+    "updated_at": "2025-12-02T13:18:05.807981Z"
+  },
+  "content": [
+    {
+      "id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "submission_id": "10c4cacb-bfb1-49db-8e3b-eb171af69237",
+      "content_type": "manuscript",
+      "content_text": "# Non-enzymatic primer extension with strand displacement\n\n## Authors\n\n- Lijun Zhou<sup>1</sup> ([ORCID: 0000-0002-0393-4787](https://orcid.org/0000-0002-0393-4787))\n- Seohyun Chris Kim<sup>1</sup> ([ORCID: 0000-0002-2230-1774](https://orcid.org/0000-0002-2230-1774))\n- Katherine H Ho<sup>4</sup>\n- Derek K O'Flaherty<sup>1</sup> ([ORCID: 0000-0003-3693-6380](https://orcid.org/0000-0003-3693-6380))\n- Constantin Giurgiu<sup>4</sup> ([ORCID: 0000-0003-0145-0110](https://orcid.org/0000-0003-0145-0110))\n- Tom H Wright<sup>1</sup> ([ORCID: 0000-0003-2231-8223](https://orcid.org/0000-0003-2231-8223))\n- Jack W Szostak<sup>1</sup> ([ORCID: 0000-0003-4131-1203](https://orcid.org/0000-0003-4131-1203)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology Howard Hughes Medical Institute, Massachusetts General Hospital Boston United States\n2. Center for Computational and IntegrativeBiology Massachusetts General Hospital Boston United States\n3. Department of Genetics Harvard Medical School Boston United States\n4. Department of Chemistry and Chemical Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNon-enzymatic RNA self-replication is integral to the emergence of the \u2018RNA World\u2019. Despite considerable progress in non-enzymatic template copying, demonstrating a full replication cycle remains challenging due to the difficulty of separating the strands of the product duplex. Here, we report a prebiotically plausible approach to strand displacement synthesis in which short \u2018invader\u2019 oligonucleotides unwind an RNA duplex through a toehold/branch migration mechanism, allowing non-enzymatic primer extension on a template that was previously occupied by its complementary strand. Kinetic studies of single-step reactions suggest that following invader binding, branch migration results in a 2:3 partition of the template between open and closed states. Finally, we demonstrate continued primer extension with strand displacement by employing activated 3\u2032-aminonucleotides, a more reactive proxy for ribonucleotides. Our study suggests that complete cycles of non-enzymatic replication of the primordial genetic material may have been facilitated by short RNA oligonucleotides.\n\n## Introduction\n\nThe replication of a genetic polymer within a vesicle capable of growth and division may allow a protocell to undergo Darwinian evolution. The construction of a protocell capable of autonomous reproduction, even within an artificial laboratory setting, may lead to significant insights into the origin of life (Joyce and Szostak, 2018). Prior to the emergence of enzymes or ribozymes on the early Earth, the first genetic material had to rely on non-enzymatic copying reactions to accomplish self-replication. Following template-directed RNA copying, the daughter strand, which is complementary to the template, must undergo another round of copying to generate a product with the same sequence as the original template, thus completing the replication process. Recent discoveries have greatly improved the rate and extent of chemical RNA copying reactions in laboratory studies (Li et al., 2017; O'Flaherty et al., 2018). However, the important question of how to non-enzymatically complete a true replication cycle remains challenging. After the first round of templated copying, the daughter strand is sequestered within a stable duplex with its parent strand. Even if heat is used to temporarily separate the two strands, when cooled down, the rate of reannealing of the two strands is much faster than the rate at which template copying occurs (Szostak, 2012). This \u2018strand reannealing\u2019 or \u2018strand inhibition\u2019 effect is a major obstacle to non-enzymatic genetic replication under prebiotically plausible conditions.\n\nDue to the importance of the strand separation problem, several approaches have been explored in efforts to enable cycles of replication. The Hud group has employed highly viscous solvent mixtures (glycholine) to slow the reannealing of complementary strands, together with temperature cycling to repeatedly separate the strands of RNA duplexes (He et al., 2017). Using this approach they were able to demonstrate that 11 individual 32-mer RNAs could be enzymatically ligated on a 545 bp RNA template in the presence of the full length complementary strand. However, this method may not be compatible with the much slower non-enzymatic RNA ligation or polymerization, and may also not work as well for the copying of shorter templates that will still diffuse rapidly through viscous solvents. The Richert group reported an example of genetic polymer replication, using bead immobilization and iterative cycles of protection/deprotection (H\u00e4nle and Richert, 2018). While providing a powerful method to study the chemical replication of genetic polymers in a laboratory context, this approach is not prebiotically relevant and is also incompatible with a protocellular context. The Sutherland group has reported that pH fluctuations can drive RNA separation (Mariani et al., 2018a), but this does not address the problem of rapid strand annealing following the return of the pH to more neutral values. The Braun group has recently shown that wet-dry cycles inside heated rock pores triggering salt concentration fluctuations can also lead to strand separation (Ianeselli et al., 2019). Although these latter two approaches are simple and prebiotically plausible, up till now no demonstration of non-enzymatic RNA copying has been reported with these methods. Here, we explore a prebiotically plausible solution to the strand separation problem that enables non-enzymatic copying reactions to proceed in the presence of a complementary template-bound strand, and that is in principle compatible with operation in a protocellular context.\n\nIn extant biology, genomic replication never occurs by strand separation followed by template copying; instead, duplex unwinding and primer extension occur in concert via strand displacement synthesis (Benkovic et al., 2001). This approach has not typically been considered relevant to prebiotic replication because of the requirement for highly sophisticated enzyme catalysts. However, the concept of strand displacement by branch migration, originally developed in the field of genetic recombination (Holliday, 1964) has been widely used in the fields of DNA and RNA nanotechnology (Zhang and Seelig, 2011) and the study of RNA function (Bhadra and Ellington, 2014). Inspired by the precedent from biology and the powerful methods of nucleic acid nanotechnology, we asked whether we could use the binding of short oligonucleotides to unwind an RNA duplex and trigger non-enzymatic primer extension reactions.\n\nIn the non-enzymatic system we investigate, primer extension with activated nucleotides occurs via reaction of the primer 3\u02b9-hydroxyl with a 5\u02b9\u22125\u02b9-phosphorimidazolium-bridged dinucleotide, which is an obligate covalent intermediate in non-enzymatic primer extension that is formed by the reaction of two 2-aminoimidazole activated ribonucleotides with each other (Figure 1A) (Walton and Szostak, 2017; Zhang et al., 2018). The 2-aminoimidazole activated ribonucleotides are in turn generated by the reaction of nucleotides with 2-aminoimidazole in a process driven by methyl isocyanide (Mariani et al., 2018b), and 2-aminoimidazole itself can be synthesized under prebiotically reasonable conditions (Fahrenbach et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Chemical structure of the 5\u02b9\u22125\u02b9-phosphorimidazolium-bridged dinucleotide. (B)-(D) Experimental design illustrations in three different cases. (E) PAGE analysis of a primer extension reaction corresponding to (B), the imidazolium-bridged dinucleotide C*C binds the open GG templating region and reacts with the 3\u02b9-end of the primer, resulting in +1 extension product. (F) PAGE analysis of a primer extension reaction corresponding to (C). The blocker (green), an oligonucleotide complementary to the templating region, inhibits the primer extension reaction. (G) PAGE analysis of a primer extension reaction corresponding to (D). An invader (red), a short oligonucleotide partially complementary to the blocker, is able to rescue the primer extension reaction by sequestering the blocker and allowing C*C to bind and react. All primer extension reactions were conducted at room temperature, 50 mM Na+-HEPES, pH 8.0, 50 mM MgCl2, 3 mM C*C, 1.5 \u03bcM primer, 2.5 \u03bcM template, 0 or 3.5 \u03bcM blocker, 0 or 5 \u03bcM invader.\n\nHere, we report that using short oligonucleotides as \u2018invaders\u2019 we can copy an RNA templating region that is already occupied by its complementary strand. We first explored this concept in the context of the addition of a single nucleotide to a primer through reaction with an imidazolium-bridged dinucleotide. We then iterated this process to demonstrate primer extension by multiple nucleotides, using multiple invaders. This study demonstrates a potential solution to the strand inhibition problem and thus represents a step towards the realization of non-enzymatic RNA replication.\n\n## Results\n\nTo test whether non-enzymatic RNA synthesis could proceed via spontaneous strand displacement synthesis, we prepared RNA primer/template complexes in which the templating region was either open (Figure 1B) or occupied by a complementary strand (the \u2018blocker\u2019) with a 6-nucleotide (nt) toehold region at its 5\u02b9-end (Figure 1C). As the substrate for primer extension, we used the 5\u02b9\u22125\u02b9-imidazolium-bridged diribocytosine (C*C) intermediate for copying the GG template. With an open template, the C*C intermediate base pairs with the GG template, followed by attack of the 3\u02b9-hydroxyl group of the RNA primer on the adjacent phosphate of the C*C, resulting in rapid +1 extension of the primer and release of one free *C as the leaving group (Figure 1E). In the presence of the template blocking strand, defined as a closed conformation, the C*C cannot base pair with the template, and no primer extension was observed (Figure 1F). Thus, as expected, non-enzymatic primer extension cannot occur by strand displacement synthesis without an auxiliary.\n\nWe then tested the hypothesis that a short \u2018invader\u2019 RNA strand could open up the template region next to the primer by first binding to the 5\u02b9 overhang, or toehold region, of the blocker strand, followed by branch migration (Figure 1D). Full base-pairing of the invader and blocker strands should release the template and allow it to bind the C*C substrate, defined as an open conformation. As an initial test, we employed an 8-nt RNA oligonucleotide as an invader, with a 6-nt region complementary to the 6-nt toehold of the blocker, plus a 5\u02b9-GG sequence to allow for extended base-pairing with the blocker. If the invader was able to fully pair with the blocker by competing for template-blocker pairing, the template should be freed, allowing C*C binding to occur. Strikingly, after C*C addition to the primer/template/blocker complex in the presence of the invader, we observed the appearance of the +1 product of primer extension (Figure 1G). The invader-mediated primer extension reaction was slower than primer extension on an open template, presumably reflecting the equilibrium between the open and closed template states in the presence of the invader oligonucleotide. This experiment demonstrates that primer extension by strand displacement synthesis can be facilitated by short RNA oligonucleotides.\n\nEncouraged by our initial observation of non-enzymatic strand displacement synthesis, we sought to optimize this process by varying invader length and concentration. We examined primer extension reactions with 6-nt and 8-nt invaders as a function of concentration, and calculated the pseudo-first order reaction rate, kobs, from the disappearance of unreacted primer versus time (Figure 2). For the octamer invader at room temperature, kobs increased as a function of invader concentration until a maximal rate of 0.9\u00a0\u00b1\u00a00.1 h\u22121 was reached at a concentration of 5 \u03bcM. For the hexamer invader, essentially no primer extension could be observed when the concentration was 15 \u03bcM or below. The reaction rate increased at higher concentrations, but even at 100 \u03bcM, kobs was only 0.11\u00a0\u00b1\u00a00.03 h\u22121, and we were unable to reach a saturating concentration of hexamer. These results are consistent with the hypothesis that invader binding to the toehold region of the blocker is a necessary first step for strand displacement synthesis, and that saturation of invader/blocker binding leads to the maximum observed rate of strand displacement synthesis. We were therefore curious as to whether lower temperature could promote the reaction at lower invader concentrations and especially for shorter invaders. Lower temperature could facilitate strand displacement synthesis by increasing the stability of the invader/toehold duplex, but could also slow down the rate of the chemical reaction step, rendering the effects difficult to predict. We therefore conducted the same series of experiments as above, except on ice (blue squares, Figure 2). For reactions using the octamer invader, kobs in general decreased by\u00a0~50%, reaching a plateau of\u00a00.4 h\u22121. In contrast, when using the hexamer invader, the lower temperature significantly increased the reaction rates, and the plateau now also reached 0.4 h\u22121. These results are consistent with the enhanced binding of a shorter invader to the toehold region at lower temperature facilitating strand displacement synthesis, together with a modest slowing of the overall reaction rate, possibly due to a slower chemical step.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig2-v2.jpg)\n\n**Figure 2.:** (A) Reactions with the blocker possessing a 6-nt toehold, and an 8-nt long invader. (B) Reactions with the blocker possessing a 4-nt toehold, and a 6-nt long invader. All primer extension reactions were conducted in 50 mM Na+-HEPES, pH 8.0, 50 mM MgCl2, 3 mM C*C, 1.5 \u03bcM primer, 2.5 \u03bcM template, 3.5 \u03bcM blocker, at room temperature or on ice as indicated. Reaction products were analyzed by denaturing PAGE. (n\u00a0\u2265\u00a03, The error bars are smaller than the symbol when they are not visible.).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig2-figsupp2-v2.jpg)\n\nAll steps of non-enzymatic strand displacement synthesis are expected to be affected by the concentration of Mg2+ in the reaction. Mg2+ is thought to catalyze non-enzymatic primer extension in part by deprotonating the 3\u02b9-hydroxyl group (Giurgiu et al., 2018), and also by promoting the formation of stable RNA duplex structures as well as other effects. We therefore investigated the effect of Mg2+ concentration on the rate of primer extension. At room temperature and with a saturating 5 \u03bcM concentration of octamer invader, kobs reached a maximum of 2.9 h\u22121 at 400 mM Mg2+, compared to 0.5 h\u22121 at 20 mM Mg2+ (Figure 3). The same trend also occurred for reactions on ice; kobs reached 1.4 h\u22121 with 400 mM Mg2+, compared to 0.1 h\u22121 with 20 mM Mg2+. High concentrations of Mg2+ are known to favor canonical primer extension on open templates, and the effect appears to be qualitatively similar for primer extension with strand displacement. The simplest explanation for this observation is that the chemical step of primer extension is enhanced at high concentrations of Mg2+, with other effects being relatively minor, at least in the presence of a saturating concentration of invader oligonucleotide. We performed all following experiments, unless otherwise indicated, with 50 mM Mg2+, to be consistent with previous work (Li et al., 2017).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig3-v2.jpg)\n\n**Figure 3.:** All primer extension reactions were conducted in 50 mM Na+-HEPES, pH 8.0, 3 mM C*C, 1.5 \u03bcM primer, 2.5 \u03bcM template, 3.5 \u03bcM blocker and 5 \u03bcM octamer invader, at room temperature or on ice as indicated. (n\u00a0\u2265\u00a03).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig3-figsupp1-v2.jpg)\n\nFollowing invader-toehold binding and branch migration, the template should be in an open state such that the C*C substrate can bind to the template and react with the primer. However, it is possible that C*C binding to the template could be sterically impaired by the overhanging blocker-invader duplex, and furthermore, once bound to the template the conformation of the C*C could be impacted in a way that might alter its reactivity with the primer. We therefore performed three experiments to disentangle the effects of the toehold and invader on substrate binding and on the rate of the chemical reaction step (Figure 4). In the first case (1), the \u2018blocker\u2019 did not contain a toehold region and did not block the GG templating region, only base pairing with the downstream sequence. In the second case (2), the \u2018blocker\u2019 contained an 8 bp toehold region but was not complementary to the GG templating region, due to substitution of AA for CC in the blocker sequence. In this case, the templating region is expected to remain open for substrate binding. The third case (3) represents the strand displacement scenario discussed above with an octamer invader (Figure 1). We measured the rate of primer extension as a function of C*C concentration for each of the three scenarios (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig4-v2.jpg)\n\n**Figure 4.:** (A) Three different template configurations. In case (1), the template region GG is open. In case (2), the blocker oligonucleotide cannot base-pair with the template region GG. The complex is constitutively open. In case (3), the template region GG is partitioned between open and closed states. (B) Rates of primer extension reactions as a function of C*C concentration. (C) An experimental design illustration for case (2). Case (1) and (3) schematics have been shown in Figure 1B and D, respectively. All primer extension reactions were conducted at room temperature, 50 mM Na+-HEPES, pH 8.0, 50 mM MgCl2, 1.5 \u03bcM primer, 2.5 \u03bcM template, 3.5 \u03bcM blocker, 0 or 5 \u03bcM invader as indicated. Reaction products were analyzed by urea PAGE. (n\u00a0=\u00a04).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig4-figsupp3-v2.jpg)\n\nFor cases (1) and (2), in which the template region is expected to be open, the observed maximum rates (kobs max) are identical (9.6\u00a0\u00b1\u00a00.1 h\u22121 and 9.5\u00a0\u00b1\u00a00.1 h\u22121, respectively). This suggests that once the C*C substrate is bound to the GG template region, its reactivity is not affected by the presence or absence of the overhanging invader-blocker duplex. In contrast, when the blocker is able to bind the GG templating region (case 3), kobs max drops to 3.6\u00a0\u00b1\u00a00.1 h\u22121,~40% of kobs max in (1) and (2). This effect is consistent with a two-state model in which the blocker strand is base-paired to the template GG (and thus preventing C*C binding) about 60% of the time, but is base-paired to the invader GG the other 40% of the time, in which case C*C can bind to the template and once bound reacts normally with the primer. The apparent Km values for C*C show larger differences across these three regimes. In case (1) where the template is open and there is no overhanging invader-blocker duplex, the Km for C*C is approximately three times lower (0.34\u00a0\u00b1\u00a00.01 mM) than previously observed for binding to a primer template complex with no blocker strand at all (Walton and Szostak, 2017). This suggests that the binding of C*C is stabilized by stacking with the downstream blocker strand. In contrast, the presence of an overhanging invader-blocker duplex increases the Km for C*C roughly 6-fold to 2.2\u00a0\u00b1\u00a00.1 mM, suggesting that the presence of an invader-blocker duplex sterically interferes with C*C binding. Finally, for case (3), in which the blocker is partitioned between base-pairing with the template or the invader, the binding of C*C to the template is further impaired and the apparent Km is 7.3\u00a0\u00b1\u00a00.5 mM. The reason for this further increase in Km is not obvious, but could reflect subtle changes in the extent of steric blocking due to the altered sequence context near the bound C*C, or perhaps more complex effects not fully accounted for by a simple two state model for blocker partitioning.\n\nHaving developed a basic understanding of single-step strand displacement synthesis, we asked whether it is possible to achieve multiple steps of primer extension using multiple invaders. For the addition of multiple nucleotides, the invader must be able to dissociate from the blocker after the formation of the primer +1 product, to allow the second invader to base pair with the blocker and open the next templating region so that the +2 product can be made, and so forth for multiple reaction cycles. For these experiments we decided to adopt hexamer invaders. Although an octamer invader results in a higher kobs than a hexamer invader at room temperature, the 8 nt invader/blocker duplex may be too stable to dissociate rapidly at room temperature. We reasoned that the faster on and off rate of a hexamer invader could be beneficial in the context of multiple addition reactions. To partially compensate for the weaker binding of hexamer invaders, we used 400 mM Mg2+ instead of 50 mM Mg2+ and replaced U with 2sU for these experiments, because 2sU forms a stronger base-pair with A than U (Heuberger et al., 2015). We synthesized seven different hexamer invaders (Figure 5A) to allow for seven steps of strand displacement synthesis. Instead of preparing all possible imidazolium-bridged-dinucleotides, we combined C*C with 2-amino-imidazole activated guanosine (2-AIpG) and 2-amimo-imidazole activated 2-thio-uridine (2-AIp2sU), which rapidly equilibrate within the reaction mixture to form all required imidazolium-bridged dinucleotides. Without a bound blocker, RNA primer extension was poor, although several faint bands above +1 products were present (Figure 5B). This is as expected, because the efficient copying of mixed sequence RNA templates requires activated short oligonucleotide helpers (Li et al., 2017; Prywes et al., 2016). In the presence of the blocker without invaders, no primer extension was observed, as expected, because the imidazolium-bridged-dinucleotides cannot bind to the occluded template. With blocker and seven hexamer invaders, we observed unambiguous +1 and +2 primer extension products, and several faint bands above as well. This result indicates that multiple nucleotide additions are indeed possible during primer extension with strand displacement. The observation that primer extension is improved in the strand displacement context versus a completely open template suggests that the binding and/or reactivity of the imidazolium-bridged-dinucleotides may be enhanced when they are sandwiched in between the primer and the blocker strand.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig5-v2.jpg)\n\n**Figure 5.:** (A) Illustration of the experimental configuration with seven different hexamer invaders. (B) PAGE analysis of primer extension with RNA monomers. The reactions were conducted at room temperature, 50 mM Na+-HEPES, pH 8.0, 400 mM MgCl2, 1.5 \u03bcM primer, 2.5 \u03bcM template, with or without 3.5 \u03bcM blocker as indicated, with or without 20 \u03bcM each hexamer invader as indicated, 5 mM C*C, 10 mM 2-AIpG and 10 mM 2-AIp2sU. (C) PAGE analysis of primer extension with 3\u2032-amino-2\u2032,3\u2032-dideoxyribonucleotide monomers. Reactions were conducted as in (B), except that 10 mM 3\u2032-NH2-2AIpddA, 10 mM 3\u2032-NH2-2AIpddG and 10 mM 3\u2032-NH2-2AIpddT were used instead of RNA monomers, and the 3\u2032-amine primer was used instead of the RNA primer.\n\nBecause the slow rate of non-enzymatic RNA copying on mixed-sequence templates made it difficult to clearly demonstrate continued iterative steps of strand displacement synthesis, we repeated the above experiments with 2-aminoimidazole activated 3\u2032-amino-2\u2032,3\u2032-dideoxyribo-nucleotide monomers (3\u2032-NH2-2AIpddN). We have recently shown that these monomers polymerize rapidly on an RNA template, forming a 3\u2032-NP-DNA complementary strand (O'Flaherty et al., 2019; Zhang et al., 2013a; Zhang et al., 2013b). We also used a primer in which the last nucleotide was also substituted with a 3\u2032-NH2-2\u2032,3\u2032-dideoxyribo-nucleotide. In the reaction without any blocker or invaders, the full-length product appeared within 5 hr. In the presence of the blocker but absence of invaders, no primer-extension occurred. In the presence of both the blocker and the seven hexamer invaders, the majority of the primer was extended to the full-length product within 24 hr (Figure 5C).\n\nTo investigate whether the multiple addition products observed in these experiments resulted from primer extension with strand displacement, or because the blocker had failed to form a stable duplex with the template under these conditions, we adapted a fluorescence-quencher assay (Larsen et al., 2016). In this assay the primer was not fluorescently labeled, but the template was labeled with Cyanine 3 at its 5\u2032-end and the blocker was modified with Black Hole Quencher\u22122 at its 3\u2032-end. When the blocker forms a duplex with the template, the fluorescence of Cy3 is quenched. When the blocker dissociates from the template, the fluorescence is recovered (Figure 6A). When we added an unlabeled RNA strand that was complementary to the template prior to addition of the labeled blocker, binding of the blocker was inhibited, and fluorescence remained the same high level throughout the time course of 48 hr (Figure 6B). In three negative control reactions, 3\u2032-NH2-2AIpddN monomers and/or invaders were omitted, and we observed very low fluorescent signal throughout the reaction time courses, indicating that the blocker had remained base-paired with the template. Finally, in a complete reaction mixture containing all components, the fluorescence signal grew to\u00a0~50% of that observed in the positive control in 24 hr, and\u00a0~60% in 48 hr. These results confirm that a strand displacement mechanism is operating and is required for successful primer extension under these conditions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig6-v2.jpg)\n\n**Figure 6.:** (A) Illustration of the experimental design. The template was labeled with Cy3 at its 5\u2032-end. The blocker was modified by Black Hole Quencher\u22122 at the 3\u2032-end. When the blocker forms a stable duplex with the template, the fluorescent signal of Cy3 is quenched. In the presence of invaders and 3\u2032-NH2-2AIpddN, the primer extends, resulting in blocker dissociation and increasing Cy3 signal. (B) Time course of the fluorescent signal in five different experiment groups. Strand displacement reactions contained 1.5 \u03bcM template, 2 \u03bcM blocker, 2.5 \u03bcM primer, 50 mM Na+-HEPES, pH 8.0, 50 mM MgCl2, 20 \u03bcM each hexamer invader and 10 mM 3\u2032-NH2-2AIpddA/G/T. Positive control reactions contained the same components, with the addition of 2 \u03bcM of complementary strand RNA to the template, so that the blocker was unbound. The negative control reactions contained the same components but omitted monomers and/or invaders, as indicated. The experiments were performed at room temperature in triplicate.\n\n## Discussion\n\nOur experiments show that non-enzymatic primer extension by strand displacement synthesis can be facilitated by short RNA oligonucleotides, resulting in the template-directed synthesis of RNA (and the related polymer 3\u2032-NP-DNA) without prior strand separation. The idea of using strand displacement synthesis for replication provides an alternative to the more commonly considered model in which the copying of a template leads to a duplex whose strands must be separated and remain separated in order to be copied again. Strand separation models are plagued by the mismatch between the comparatively slow rate of non-enzymatic template copying and the much faster kinetics of strand reannealing (except at extremely low strand concentrations). In contrast, strand displacement synthesis should proceed well at high strand concentrations, allowing both genomic and functional strands to build up to high enough levels to have strong phenotypic influences on the host protocell. Replication by strand displacement synthesis is also appealing in that it is closer to the mode of replication universally employed in biology, and because it should operate in a complex prebiotic context of concentrated and heterogeneous nucleotides and oligonucleotides.\n\nThe mechanism of strand displacement synthesis that we have explored involves short oligonucleotides, which act as \u2018invaders\u2019 to open up the template region to be copied through a toehold/branch migration process. We propose two prebiotically relevant sources for such oligonucleotides. First, the hydrolysis of longer oligonucleotides could generate multiple short oligonucleotides that can serve as invaders. Second, incomplete or partial products of template copying could dissociate from the template and act as invaders. Such partial replication products would include stalled primer extension products, resulting from the incorporation of mismatched monomers or non-canonical nucleotides (Kim et al., 2018; Rajamani et al., 2010). Additionally, other prebiotically plausible genetic polymers (TNA, ANA, DNA, etc.) and heterogeneous oligonucleotides that could have coexisted alongside oligoribonucleotides could also promote strand displacement via the formation of invaders. Recent work in our lab (Kim et al., 2019) has shown that oligonucleotides ending in a 3\u2032-arabino nucleotide cannot be further extended, providing a mechanism for the generation of short invaders that are inert to copying chemistry. Thus, the products of both degradative reactions and stalled replicative processes could contribute an essential function to genomic replication. In the context of a protocell, the set of such small oligonucleotides would not include all possible sequences, but would derive from and therefore be biased towards the genomic sequences of the host protocell. We have previously suggested that the accumulation of such fragments within a primitive protocell could serve useful homeostatic regulatory functions, by acting as reversible concentration dependent inhibitors or activators of ribozymes (Engelhart et al., 2016).\n\nWe propose that non-enzymatic strand displacement synthesis could potentially enable or at least contribute to complete cycles of RNA replication. However, three major problems must be overcome before complete replication cycles can be demonstrated in the laboratory. First is the problem of initiation. In the presence of a defined primer, a transient thermal fluctuation might allow a primer to bind to a template and begin strand displacement synthesis, but how initiation might begin in the absence of defined primers remains an open question. Second, cycles of replication would require the copying of both complementary strands, which would seem to require the presence of invaders derived from both strands. Whether strand displacement synthesis could proceed in the presence of invaders derived from complementary strands must be examined experimentally. We suggest that frequent thermal fluctuations might allow invader-invader and invader-blocker duplexes to dissociate and then re-form, allowing for one to a few nucleotides of primer extension with each cycle of reorganization. Finally, the slow rate of non-enzymatic primer extension with ribonucleotides is a problem for all models of non-enzymatic RNA replication. As a proxy for RNA and ribonucleotides, the more reactive 3\u02b9-NP-DNA and 3\u02b9-aminonucleotides have enabled us to demonstrate multi-step strand displacement synthesis. However, an important goal for laboratory studies is to make template directed RNA synthesis as efficient as 3\u02b9-NP-DNA synthesis. One possibility under investigation in our lab is that prebiotically relevant small molecules or short peptides could act as catalysts for the copying reaction by promoting the binding or positioning of the catalytic metal ion within the reaction center. However, we note that in a strand displacement synthesis model, genomic RNA fragments remain largely double stranded and thus protected from degradation, which could make replicative synthesis possible even if primer extension is quite slow.\n\nBeyond the scope of replication, we propose that strand displacement could potentially be involved in the regulated synthesis of primitive ribozymes. After the first round of copying, any ribozyme sequence would remain sequestered as a stable duplex with its daughter strand and would be unable to perform its catalytic function. However, primer extension with strand displacement could liberate the ribozyme from its complementary strand, enabling it to fold into a tertiary structure and execute its catalytic function. Hence strand displacement reactions with invader oligonucleotides that can rapidly associate and dissociate could allow both the rate of RNA replication and ribozyme catalytic activity to be controlled.\n\nIn summary, our work demonstrates the concept of non-enzymatic RNA copying with strand displacement, offering a novel approach to RNA self-replication that relies on the presence of RNA fragments derived from degradation or partial template copying. If the problems of initiation and replication of both strands could be overcome, it might be possible to initiate the non-enzymatic evolution of RNA inside model protocells, mimicking the origin of life.\n\n## Materials and methods\n\n### Oligonucleotides synthesis and purification\n\nChemical reagents were purchased from Chemgenes (Wilmington, MA) and Glen Research (Sterling, VA). Oligonucleotides were prepared by solid-phase synthesis on an Expedite 8909 or ABI 394 DNA/RNA synthesizer. RNAs were deprotected by standard methods. Non-dye labeled oligonucleotides were purified by GlenPak columns. Dye-labeled oligos were purified by polyacrylamide gel electrophoresis and desalted on Sep-Pak C18 cartridges from Waters (Milford, MA). Oligonucleotides were analyzed by high resolution mass spectrometry (HRMS) on an Agilent 6520 QTOF LC-MS in house.\n\n### C*C synthesis and purification\n\n0.3 mmol CMP (Sigma) was mixed with 0.15 mmol 2-amino-imidazole\u2022HCl (Combi-blocks) in 5 ml anhydrous DMSO (Sigma) and 0.4 ml TEA (Sigma). Then 1 g triphenylphosphine (Sigma) and 0.88 g 2,2'-dipyridyldisulfide (Combi-blocks) were added in order and stirred vigorously. The reaction was continued in a sealed container for 20 min. The product C*C was precipitated by adding 40 ml acetone and 2 ml NaClO4-saturated acetone. After centrifugation at 3500 rpm for 10 min, the pellet was washed with 40 ml acetone:diethyl ether (1:1) and centrifuged again. The pellet was washed twice, then dried under house vacuum to remove organic solvent. The dry pellet was resuspended in 20 mM TEAB pH 8.0 and purified on a 50 g C18Aq column over 12 CV of 0\u201310% acetonitrile in 2 mM TEAB buffer (pH 8.0). The product was analyzed by 31P-NMR and low resolution mass spectrometry (LRMS) before being aliquoted and lyophilized.\n\n### 2-AIpG synthesis and purification\n\n2-AIpG was prepared by the same procedures as C*C, except that 0.3 mmol GMP (Sigma) and 3 mmol2-amino-imidazole\u2022HCl were used in the reaction. The dry pellet was resuspended in 20 mM TEAB pH 8.0 and purified on a 50 g C18Aq column over 12 CV of 0\u201310% acetonitrile in 2 mM TEAB buffer (pH 8.0). After purification, the 2-AIpG solution was adjusted to pH\u00a0~10 with NaOH before being aliquoted and lyophilized.\n\n### 2-AIp2sU synthesis and purification\n\n2-AIp2sU was prepared according to previously published procedures (Li et al., 2017), as summarized below.\n\n![Chemical structure 1.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig7-v2.jpg)\n\nThe purification procedure is the same as 2-AIpG.\n\n### 3\u2032-NH2-2AIpddA/G/T synthesis and purification\n\n3\u2032-NH2-2AIpddA, G, and T were prepared according to previously published procedures (O'Flaherty et al., 2019), as summarized below.\n\n![Chemical structure 2.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig8-v2.jpg)\n\nThe purification procedure is the same as 2-AIpG.\n\n### Primer extension reaction and PAGE analysis\n\nThe primer-template and primer-template-blocker complexes were prepared in a solution containing 7.5 \u03bcM primer, 12.5 \u03bcM template, 0 or 17.5 \u03bcM blocker, 50 mM Na+-HEPES (pH 8.0), 50 mM NaCl and 1 mM EDTA (pH 8.0) by heating at 95\u00b0C for 30 s and slowly cooling down to 25\u00b0C. The annealed product was diluted five fold in primer extension reaction. Stock solutions of C*C and monomers used in the reaction were prepared freshly and adjusted to pH 8.0 immediately before the reaction. At each time point, 0.5 \u03bcl of reaction sample was added to 25 \u03bcl quenching buffer, containing 8M Urea, 20 mM EDTA, 1x TBE and 10 \u00b5M complementary RNA of template. Primer extension products were resolved by 20% (19:1) denaturing PAGE with 7 M urea. The gel was scanned using a Typhoon 9410 scanner, and the bands were quantified using the ImageQuant TL software.\n\n### Fluorescence-quencher assay\n\nAll components were mixed in 96 well, half-area, black, polystyrene plates (Costar). Fluorescence signals were recorded at an excitation wavelength of 535 nm and an emission wavelength of 595 nm using a SpectraMax i3 plate-reader.\n",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "5ec466c6-b710-4268-9e68-aff8bf2849e4",
+      "submission_id": "10c4cacb-bfb1-49db-8e3b-eb171af69237",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, Case Western Reserve University United States\n\nReviewers:\n- Timothy W Nilsen, Case Western Reserve University United States\n- John C Chaput, University of California, Irvine United States\n\n## Review text\n\nDOI: [10.7554/eLife.51888.sa1](https://doi.org/10.7554/eLife.51888.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIt is widely accepted that RNA was the informational macromolecule necessary for the origin of life. Nevertheless, the \"RNA hypothesis\" has several hurdles to overcome including the replication problem. Because copying of any nucleic acid polymer results in a double stranded molecule, it has been difficult to envision a mechanism that would replicate the dsRNA. In this paper Szostak and colleagues use conditions that promote \"replication\". Accordingly, this work represents a substantive advance in origin of life research.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Non-enzymatic primer extension with strand displacement\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Timothy W Nilsen as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Michael Marletta as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: John C Chaput (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll three reviewers found the work to be a significant and substantive step forward in origin-of-life research. As such, the manuscript is in principle appropriate for publication in eLife. Nevertheless, all of the reviewers, particularly reviewers 1 and 3, have made a number of suggestions to improve the accessibility and scientific accuracy of the presentation. Please address these points as thoroughly as possible.\n\nReviewer #1:\n\nHere, Szostak and colleagues provide compelling evidence that under certain conditions they can observe copying of a template RNA that is sequestered in an RNA-RNA duplex. Copying is via primer extension. These findings represent a substantive step forward in the \"replication problem\" of prebiotic nucleic acids.\n\nWhile the data are unambiguous, I have several comments that if addressed would improve the readability of this manuscript by a broad audience.\n\n1) I found the diagrams to be inadequate. A large schematic of the constructs under study would be quite helpful. Such diagrams should explicitly label the invader, blocker, toehold, etc., to provide a clear picture of the experimental design. There should be a series of schematics first illustrating invasion and culminating with addition of the C residue.\n\n2) Similarly detailed schematics should accompany Figures 2, 3, 4, 5 and 6 such that it becomes clear what is different in each figure. The legends are quite brief and not very informative.\n\n3) The term catalysis is used loosely throughout the paper. Just as one example, the authors state \"can be catalyzed by short RNA oligonucleotides\". I do not see how oligonucleotides per se can be viewed as catalysts. The authors should examine the use of the word throughout the paper.\n\nReviewer #2:\n\nThis manuscript provides an interesting solution to the strand displacement problem, which is a major obstacle facing origins of life researchers that are attempting to replicate RNA in the absence of biological enzymes. The crux of the problem lies in the fact that the product of a non-enzymatic primer-extension reaction is a double-stranded (ds) RNA molecule whose strands must be separated in order to complete the replication cycle. Although dsRNA can be denatured with heat, the rate of reannealing is much fast than the rate of template copying. Thus, the process of non-enzymatic replication is product inhibited. Here, Zhou et al. describe a prebiotically plausible solution to the strand displacement problem that involves a branch migration mechanism in which short 'invader' strands are used to unwind one of the RNA strands so that non-enzymatic primer-extension can continue. The authors first explore the concept of branch migration in the context of single-nucleotide addition reactions. They then proceed to more challenging examples, including a mixed-template example that involves the extension of multiple different nucleotides. Undoubtedly, this work represents a significant step forward in the realization of abiotic RNA replication.\n\nReviewer #3:\n\nThe study addresses a central problem in RNA World research, which is the need for strand displacement in the replication of an RNA sequence. The study shows a careful analysis of the possibility that 'invader oligonucleotides' could allow strand displacement during primer extension. It first focuses on this process with single nucleotide primer extension, then looks at the mechanism, then at multiple nucleotides extension. The text is well-written in the Results section but needs to be improved in the Abstract and Introduction.\n\n1) There are quite a few instances where the wording is incorrect or needs to be toned down, especially in Abstract and Introduction.\n\n2) The impact of the paper would be increased if the proposal made in the Discussion \u2013 primer extension by strand displacement in the presence of invader oligos for both template and primer strand (Discussion, third paragraph) would be shown experimentally.\n",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ec259824-8a2d-4bc4-a89d-3d54de8ac9dc",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C1",
+      "claim": "Non-enzymatic RNA self-replication is integral to the emergence of the 'RNA World'.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-enzymatic RNA self-replication is integral to the emergence of the 'RNA World'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the RNA World hypothesis that draws from established scientific consensus in origin of life research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "7be2c864-d17e-4a71-823e-8bfc032d83df",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C2",
+      "claim": "Demonstrating a full replication cycle remains challenging due to the difficulty of separating the strands of the product duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite considerable progress in non-enzymatic template copying, demonstrating a full replication cycle remains challenging due to the difficulty of separating the strands of the product duplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about the strand separation problem in non-enzymatic replication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "95db6f81-2c9d-4744-87f3-b8a8c4deae44",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C3",
+      "claim": "Short 'invader' oligonucleotides can unwind an RNA duplex through a toehold/branch migration mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report a prebiotically plausible approach to strand displacement synthesis in which short 'invader' oligonucleotides unwind an RNA duplex through a toehold/branch migration mechanism, allowing non-enzymatic primer extension on a template that was previously occupied by its complementary strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "e1da72a4-8998-49ca-aec7-087359f45a72",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C4",
+      "claim": "Following invader binding, branch migration results in a 2:3 partition of the template between open and closed states.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic studies of single-step reactions suggest that following invader binding, branch migration results in a 2:3 partition of the template between open and closed states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by kinetic data from experiments described in the manuscript, particularly Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "af4b7c9a-8978-4fef-b1e7-eaa62098e3d9",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C5",
+      "claim": "Continued primer extension with strand displacement can be demonstrated by employing activated 3\u2032-aminonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrate continued primer extension with strand displacement by employing activated 3\u2032-aminonucleotides, a more reactive proxy for ribonucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "6c137f40-e35f-4164-af04-dba497f3b0ca",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C6",
+      "claim": "Complete cycles of non-enzymatic replication of the primordial genetic material may have been facilitated by short RNA oligonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests that complete cycles of non-enzymatic replication of the primordial genetic material may have been facilitated by short RNA oligonucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the experimental findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "dc2e0595-e30a-433c-a023-affcdc634333",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C7",
+      "claim": "The replication of a genetic polymer within a vesicle capable of growth and division may allow a protocell to undergo Darwinian evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The replication of a genetic polymer within a vesicle capable of growth and division may allow a protocell to undergo Darwinian evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement based on established principles of evolution and protocell biology.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "45b7c046-b444-4a02-9818-159999baf484",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C8",
+      "claim": "The construction of a protocell capable of autonomous reproduction may lead to significant insights into the origin of life.",
+      "claim_type": "EXPLICIT",
+      "source": "The construction of a protocell capable of autonomous reproduction, even within an artificial laboratory setting, may lead to significant insights into the origin of life (Joyce and Szostak, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Joyce and Szostak, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "fb56aa2d-7e86-4e37-8b54-120cbf0b07ca",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C9",
+      "claim": "Prior to the emergence of enzymes or ribozymes on the early Earth, the first genetic material had to rely on non-enzymatic copying reactions to accomplish self-replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to the emergence of enzymes or ribozymes on the early Earth, the first genetic material had to rely on non-enzymatic copying reactions to accomplish self-replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the RNA World hypothesis and established knowledge about prebiotic chemistry.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "a4919928-44a0-498a-bb96-a26f7e846015",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C10",
+      "claim": "Recent discoveries have greatly improved the rate and extent of chemical RNA copying reactions in laboratory studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent discoveries have greatly improved the rate and extent of chemical RNA copying reactions in laboratory studies (Li et al., 2017; O'Flaherty et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Li et al., 2017 and O'Flaherty et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "e7459b5e-eeb7-45e6-8eb8-870967b669d8",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C11",
+      "claim": "After the first round of templated copying, the daughter strand is sequestered within a stable duplex with its parent strand.",
+      "claim_type": "EXPLICIT",
+      "source": "After the first round of templated copying, the daughter strand is sequestered within a stable duplex with its parent strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nucleic acid base pairing and duplex formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "ab028100-1ca4-48d1-816d-586f03b534c5",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C12",
+      "claim": "When cooled down after heat separation, the rate of reannealing of the two strands is much faster than the rate at which template copying occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if heat is used to temporarily separate the two strands, when cooled down, the rate of reannealing of the two strands is much faster than the rate at which template copying occurs (Szostak, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Szostak, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "b0a4dcdd-2c59-4d19-9c2b-e67aa783e768",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C13",
+      "claim": "The 'strand reannealing' or 'strand inhibition' effect is a major obstacle to non-enzymatic genetic replication under prebiotically plausible conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'strand reannealing' or 'strand inhibition' effect is a major obstacle to non-enzymatic genetic replication under prebiotically plausible conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of prebiotic chemistry and non-enzymatic replication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "9bebcf13-8c1b-4981-b203-2e39d00a31fd",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C14",
+      "claim": "The Hud group has employed highly viscous solvent mixtures (glycholine) to slow the reannealing of complementary strands.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hud group has employed highly viscous solvent mixtures (glycholine) to slow the reannealing of complementary strands, together with temperature cycling to repeatedly separate the strands of RNA duplexes (He et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to He et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "47e4499c-7e27-4d3e-9451-38a5d3d23c32",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C15",
+      "claim": "The Hud group demonstrated that 11 individual 32-mer RNAs could be enzymatically ligated on a 545 bp RNA template in the presence of the full length complementary strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach they were able to demonstrate that 11 individual 32-mer RNAs could be enzymatically ligated on a 545 bp RNA template in the presence of the full length complementary strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results from the Hud group's work, supported by the citation to He et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "56c279b8-d92a-43fe-bd21-5cf5ec01b251",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C16",
+      "claim": "The glycholine method may not be compatible with the much slower non-enzymatic RNA ligation or polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this method may not be compatible with the much slower non-enzymatic RNA ligation or polymerization, and may also not work as well for the copying of shorter templates that will still diffuse rapidly through viscous solvents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference about the limitations of the glycholine method.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "15f2bbde-1e1e-4011-842c-1422b545420a",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C17",
+      "claim": "The Richert group reported an example of genetic polymer replication, using bead immobilization and iterative cycles of protection/deprotection.",
+      "claim_type": "EXPLICIT",
+      "source": "The Richert group reported an example of genetic polymer replication, using bead immobilization and iterative cycles of protection/deprotection (H\u00e4nle and Richert, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to H\u00e4nle and Richert, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "65ee222d-cd27-48e5-bb70-5b8bb1970054",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C18",
+      "claim": "The Richert group's approach is not prebiotically relevant and is also incompatible with a protocellular context.",
+      "claim_type": "EXPLICIT",
+      "source": "While providing a powerful method to study the chemical replication of genetic polymers in a laboratory context, this approach is not prebiotically relevant and is also incompatible with a protocellular context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of the experimental approach described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "e4075785-2d41-446a-85dc-5da92196cd6e",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C19",
+      "claim": "The Sutherland group has reported that pH fluctuations can drive RNA separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sutherland group has reported that pH fluctuations can drive RNA separation (Mariani et al., 2018a), but this does not address the problem of rapid strand annealing following the return of the pH to more neutral values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Mariani et al., 2018a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "937eca42-d5e4-4708-850c-ba417147496c",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C20",
+      "claim": "pH fluctuation-driven RNA separation does not address the problem of rapid strand annealing following the return of the pH to more neutral values.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sutherland group has reported that pH fluctuations can drive RNA separation (Mariani et al., 2018a), but this does not address the problem of rapid strand annealing following the return of the pH to more neutral values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the pH fluctuation method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "891c529c-a4c6-4935-af63-a7a999f6eccb",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C21",
+      "claim": "The Braun group has shown that wet-dry cycles inside heated rock pores triggering salt concentration fluctuations can lead to strand separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Braun group has recently shown that wet-dry cycles inside heated rock pores triggering salt concentration fluctuations can also lead to strand separation (Ianeselli et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ianeselli et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "b8b19ee0-54d0-4aa1-ae13-8814c92481ea",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C22",
+      "claim": "No demonstration of non-enzymatic RNA copying has been reported with the wet-dry cycle method.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these latter two approaches are simple and prebiotically plausible, up till now no demonstration of non-enzymatic RNA copying has been reported with these methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of reported results in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "99f91da4-46c9-4c47-bcc7-4f0fb2caa123",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C23",
+      "claim": "In extant biology, genomic replication never occurs by strand separation followed by template copying.",
+      "claim_type": "EXPLICIT",
+      "source": "In extant biology, genomic replication never occurs by strand separation followed by template copying; instead, duplex unwinding and primer extension occur in concert via strand displacement synthesis (Benkovic et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Benkovic et al., 2001 and represents established knowledge in molecular biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "b8063111-7ef2-4019-9245-8fa8aa1e08fd",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C24",
+      "claim": "In extant biology, duplex unwinding and primer extension occur in concert via strand displacement synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In extant biology, genomic replication never occurs by strand separation followed by template copying; instead, duplex unwinding and primer extension occur in concert via strand displacement synthesis (Benkovic et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Benkovic et al., 2001 and represents established knowledge in molecular biology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "5439067b-33e6-4066-829c-77fb6177acb4",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C25",
+      "claim": "Strand displacement synthesis has not typically been considered relevant to prebiotic replication because of the requirement for highly sophisticated enzyme catalysts.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach has not typically been considered relevant to prebiotic replication because of the requirement for highly sophisticated enzyme catalysts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the prevailing view in the field, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "949b6f2c-bddc-417b-9908-e3151b4c0fc9",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C26",
+      "claim": "The concept of strand displacement by branch migration was originally developed in the field of genetic recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the concept of strand displacement by branch migration, originally developed in the field of genetic recombination (Holliday, 1964) has been widely used in the fields of DNA and RNA nanotechnology (Zhang and Seelig, 2011) and the study of RNA function (Bhadra and Ellington, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Holliday, 1964; Zhang and Seelig, 2011; and Bhadra and Ellington, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "d9aa1897-63d2-4a09-95de-43fafe228fdd",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C27",
+      "claim": "Strand displacement by branch migration has been widely used in the fields of DNA and RNA nanotechnology.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the concept of strand displacement by branch migration, originally developed in the field of genetic recombination (Holliday, 1964) has been widely used in the fields of DNA and RNA nanotechnology (Zhang and Seelig, 2011) and the study of RNA function (Bhadra and Ellington, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Zhang and Seelig, 2011 and Bhadra and Ellington, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "fb7d3357-983a-41ea-b16d-c70a07a0206e",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C28",
+      "claim": "Non-enzymatic primer extension with activated nucleotides occurs via reaction of the primer 3\u02b9-hydroxyl with a 5\u02b9\u22125\u02b9-phosphorimidazolium-bridged dinucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "In the non-enzymatic system we investigate, primer extension with activated nucleotides occurs via reaction of the primer 3\u02b9-hydroxyl with a 5\u02b9\u22125\u02b9-phosphorimidazolium-bridged dinucleotide, which is an obligate covalent intermediate in non-enzymatic primer extension that is formed by the reaction of two 2-aminoimidazole activated ribonucleotides with each other (Figure 1A) (Walton and Szostak, 2017; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations to Walton and Szostak, 2017 and Zhang et al., 2018, and refers to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "64eb5cd6-2cdd-40ee-8058-481307b394a6",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C29",
+      "claim": "The 5\u02b9\u22125\u02b9-phosphorimidazolium-bridged dinucleotide is an obligate covalent intermediate in non-enzymatic primer extension.",
+      "claim_type": "EXPLICIT",
+      "source": "In the non-enzymatic system we investigate, primer extension with activated nucleotides occurs via reaction of the primer 3\u02b9-hydroxyl with a 5\u02b9\u22125\u02b9-phosphorimidazolium-bridged dinucleotide, which is an obligate covalent intermediate in non-enzymatic primer extension that is formed by the reaction of two 2-aminoimidazole activated ribonucleotides with each other (Figure 1A) (Walton and Szostak, 2017; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Walton and Szostak, 2017 and Zhang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "7df1bf41-fd01-4417-8dee-80a262c48704",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C30",
+      "claim": "The 5\u02b9\u22125\u02b9-phosphorimidazolium-bridged dinucleotide is formed by the reaction of two 2-aminoimidazole activated ribonucleotides with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In the non-enzymatic system we investigate, primer extension with activated nucleotides occurs via reaction of the primer 3\u02b9-hydroxyl with a 5\u02b9\u22125\u02b9-phosphorimidazolium-bridged dinucleotide, which is an obligate covalent intermediate in non-enzymatic primer extension that is formed by the reaction of two 2-aminoimidazole activated ribonucleotides with each other (Figure 1A) (Walton and Szostak, 2017; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Walton and Szostak, 2017 and Zhang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "5dd7b104-b26e-4f3a-8334-d2d2619fb777",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C31",
+      "claim": "2-aminoimidazole activated ribonucleotides are generated by the reaction of nucleotides with 2-aminoimidazole in a process driven by methyl isocyanide.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2-aminoimidazole activated ribonucleotides are in turn generated by the reaction of nucleotides with 2-aminoimidazole in a process driven by methyl isocyanide (Mariani et al., 2018b), and 2-aminoimidazole itself can be synthesized under prebiotically reasonable conditions (Fahrenbach et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Mariani et al., 2018b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "652f64bb-e6fd-486a-b860-9dc5d3f7b176",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C32",
+      "claim": "2-aminoimidazole can be synthesized under prebiotically reasonable conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2-aminoimidazole activated ribonucleotides are in turn generated by the reaction of nucleotides with 2-aminoimidazole in a process driven by methyl isocyanide (Mariani et al., 2018b), and 2-aminoimidazole itself can be synthesized under prebiotically reasonable conditions (Fahrenbach et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Fahrenbach et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "255041ec-0905-4d81-babc-6196b9f772a9",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C33",
+      "claim": "With an open template, the C*C intermediate base pairs with the GG template, followed by attack of the 3\u02b9-hydroxyl group of the RNA primer on the adjacent phosphate of the C*C, resulting in rapid +1 extension of the primer and release of one free *C as the leaving group.",
+      "claim_type": "EXPLICIT",
+      "source": "With an open template, the C*C intermediate base pairs with the GG template, followed by attack of the 3\u02b9-hydroxyl group of the RNA primer on the adjacent phosphate of the C*C, resulting in rapid +1 extension of the primer and release of one free *C as the leaving group (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes experimental results shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "1893e319-914c-469a-a42e-611be89f712d",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C34",
+      "claim": "In the presence of the template blocking strand, the C*C cannot base pair with the template, and no primer extension was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of the template blocking strand, defined as a closed conformation, the C*C cannot base pair with the template, and no primer extension was observed (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes experimental results shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "193479ec-80b2-45ed-a4c8-9da42407fd57",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C35",
+      "claim": "Non-enzymatic primer extension cannot occur by strand displacement synthesis without an auxiliary.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as expected, non-enzymatic primer extension cannot occur by strand displacement synthesis without an auxiliary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from Figure 1F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "a8e769d1-e317-4cd9-9280-93f062891483",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C36",
+      "claim": "An 8-nt RNA oligonucleotide invader with a 6-nt region complementary to the 6-nt toehold of the blocker can facilitate primer extension.",
+      "claim_type": "EXPLICIT",
+      "source": "As an initial test, we employed an 8-nt RNA oligonucleotide as an invader, with a 6-nt region complementary to the 6-nt toehold of the blocker, plus a 5\u02b9-GG sequence to allow for extended base-pairing with the blocker. If the invader was able to fully pair with the blocker by competing for template-blocker pairing, the template should be freed, allowing C*C binding to occur. Strikingly, after C*C addition to the primer/template/blocker complex in the presence of the invader, we observed the appearance of the +1 product of primer extension (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes experimental results shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "6706a442-0ec9-4c7d-bcc9-0c016dd11129",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C37",
+      "claim": "The invader-mediated primer extension reaction was slower than primer extension on an open template.",
+      "claim_type": "EXPLICIT",
+      "source": "The invader-mediated primer extension reaction was slower than primer extension on an open template, presumably reflecting the equilibrium between the open and closed template states in the presence of the invader oligonucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data with an inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "3ff14bf6-d8bd-44df-88bc-6cd19e365af2",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C38",
+      "claim": "Primer extension by strand displacement synthesis can be facilitated by short RNA oligonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment demonstrates that primer extension by strand displacement synthesis can be facilitated by short RNA oligonucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "4ee348d6-81ea-40e2-98ce-cb468a3e9799",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C39",
+      "claim": "For the octamer invader at room temperature, kobs increased as a function of invader concentration until a maximal rate of 0.9 \u00b1 0.1 h\u22121 was reached at a concentration of 5 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "For the octamer invader at room temperature, kobs increased as a function of invader concentration until a maximal rate of 0.9 \u00b1 0.1 h\u22121 was reached at a concentration of 5 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports quantitative experimental results from kinetic studies shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "88b2b435-cfe4-47a6-84e6-bb368a271457",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C40",
+      "claim": "For the hexamer invader, essentially no primer extension could be observed when the concentration was 15 \u03bcM or below.",
+      "claim_type": "EXPLICIT",
+      "source": "For the hexamer invader, essentially no primer extension could be observed when the concentration was 15 \u03bcM or below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports experimental observations from kinetic studies shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "fbe02268-da3b-411d-83ad-d12dec87000d",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C41",
+      "claim": "For the hexamer invader at 100 \u03bcM, kobs was only 0.11 \u00b1 0.03 h\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The reaction rate increased at higher concentrations, but even at 100 \u03bcM, kobs was only 0.11 \u00b1 0.03 h\u22121, and we were unable to reach a saturating concentration of hexamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports quantitative experimental results from kinetic studies shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "e4c04a21-fd56-4a71-ab52-56f5b2fe2d0e",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C42",
+      "claim": "Invader binding to the toehold region of the blocker is a necessary first step for strand displacement synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the hypothesis that invader binding to the toehold region of the blocker is a necessary first step for strand displacement synthesis, and that saturation of invader/blocker binding leads to the maximum observed rate of strand displacement synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the kinetic data from Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "0002fcb0-f12f-42c8-a7d7-10f455e38150",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C43",
+      "claim": "Saturation of invader/blocker binding leads to the maximum observed rate of strand displacement synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the hypothesis that invader binding to the toehold region of the blocker is a necessary first step for strand displacement synthesis, and that saturation of invader/blocker binding leads to the maximum observed rate of strand displacement synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the kinetic data from Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "47381cec-1371-45fb-aea6-e91a690d435d",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C44",
+      "claim": "For reactions using the octamer invader on ice, kobs in general decreased by ~50%, reaching a plateau of 0.4 h\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "For reactions using the octamer invader, kobs in general decreased by ~50%, reaching a plateau of 0.4 h\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports quantitative experimental results from kinetic studies at lower temperature shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "baac6c0d-a0a1-41b1-8965-557fd4687f54",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C45",
+      "claim": "When using the hexamer invader on ice, the lower temperature significantly increased the reaction rates, and the plateau reached 0.4 h\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when using the hexamer invader, the lower temperature significantly increased the reaction rates, and the plateau now also reached 0.4 h\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports experimental results from kinetic studies at lower temperature shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "91131150-d9a1-4eea-9150-38d1ea930e57",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C46",
+      "claim": "Lower temperature facilitates strand displacement synthesis by increasing the stability of the invader/toehold duplex for shorter invaders.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the enhanced binding of a shorter invader to the toehold region at lower temperature facilitating strand displacement synthesis, together with a modest slowing of the overall reaction rate, possibly due to a slower chemical step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the temperature-dependent kinetic data from Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "c44ff835-3d9b-4299-b9b5-5180b80dcb73",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C47",
+      "claim": "At room temperature and with a saturating 5 \u03bcM concentration of octamer invader, kobs reached a maximum of 2.9 h\u22121 at 400 mM Mg2+, compared to 0.5 h\u22121 at 20 mM Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "At room temperature and with a saturating 5 \u03bcM concentration of octamer invader, kobs reached a maximum of 2.9 h\u22121 at 400 mM Mg2+, compared to 0.5 h\u22121 at 20 mM Mg2+ (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement reports quantitative experimental results from Mg2+ titration studies shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "87e06384-84f0-496e-b2f0-f57809a7546a",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C48",
+      "claim": "On ice with octamer invader, kobs reached 1.4 h\u22121 with 400 mM Mg2+, compared to 0.1 h\u22121 with 20 mM Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The same trend also occurred for reactions on ice; kobs reached 1.4 h\u22121 with 400 mM Mg2+, compared to 0.1 h\u22121 with 20 mM Mg2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports quantitative experimental results from Mg2+ titration studies at lower temperature shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "1f1be534-2625-4e0b-b53b-f919dbc65abe",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C49",
+      "claim": "High concentrations of Mg2+ are known to favor canonical primer extension on open templates.",
+      "claim_type": "EXPLICIT",
+      "source": "High concentrations of Mg2+ are known to favor canonical primer extension on open templates, and the effect appears to be qualitatively similar for primer extension with strand displacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of non-enzymatic primer extension.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "506e2a4f-fa17-4fd5-a92d-54d382911a54",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C50",
+      "claim": "The chemical step of primer extension is enhanced at high concentrations of Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest explanation for this observation is that the chemical step of primer extension is enhanced at high concentrations of Mg2+, with other effects being relatively minor, at least in the presence of a saturating concentration of invader oligonucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Mg2+ titration data from Figure 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "0d7f7450-01ec-49a1-b2f5-11f177118884",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C51",
+      "claim": "Mg2+ is thought to catalyze non-enzymatic primer extension in part by deprotonating the 3\u02b9-hydroxyl group.",
+      "claim_type": "EXPLICIT",
+      "source": "Mg2+ is thought to catalyze non-enzymatic primer extension in part by deprotonating the 3\u02b9-hydroxyl group (Giurgiu et al., 2018), and also by promoting the formation of stable RNA duplex structures as well as other effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Giurgiu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "17e37151-3b12-437a-a967-0c7e50eb4115",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C52",
+      "claim": "For cases (1) and (2) where the template region is expected to be open, the observed maximum rates (kobs max) are identical (9.6 \u00b1 0.1 h\u22121 and 9.5 \u00b1 0.1 h\u22121, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "For cases (1) and (2), in which the template region is expected to be open, the observed maximum rates (kobs max) are identical (9.6 \u00b1 0.1 h\u22121 and 9.5 \u00b1 0.1 h\u22121, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports quantitative experimental results from C*C titration studies shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "8ef917fa-dd97-4399-9c13-2bb1abf28ce9",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C53",
+      "claim": "Once the C*C substrate is bound to the GG template region, its reactivity is not affected by the presence or absence of the overhanging invader-blocker duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that once the C*C substrate is bound to the GG template region, its reactivity is not affected by the presence or absence of the overhanging invader-blocker duplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the kinetic data from Figure 4 comparing cases (1) and (2).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "1ab2ee2a-c482-43c4-b96b-9793354d5cbf",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C54",
+      "claim": "When the blocker is able to bind the GG templating region (case 3), kobs max drops to 3.6 \u00b1 0.1 h\u22121, ~40% of kobs max in (1) and (2).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the blocker is able to bind the GG templating region (case 3), kobs max drops to 3.6 \u00b1 0.1 h\u22121,~40% of kobs max in (1) and (2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports quantitative experimental results from C*C titration studies shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "d2d57bc0-474a-41a5-ba1e-bf2edd76518f",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C55",
+      "claim": "The blocker strand is base-paired to the template GG about 60% of the time, but is base-paired to the invader GG the other 40% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is consistent with a two-state model in which the blocker strand is base-paired to the template GG (and thus preventing C*C binding) about 60% of the time, but is base-paired to the invader GG the other 40% of the time, in which case C*C can bind to the template and once bound reacts normally with the primer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the kinetic data from Figure 4, specifically the reduction in kobs max to 40% in case (3).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "f569381b-60e6-44cf-b5d0-8156450fec2e",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C56",
+      "claim": "In case (1) where the template is open and there is no overhanging invader-blocker duplex, the Km for C*C is approximately three times lower (0.34 \u00b1 0.01 mM) than previously observed for binding to a primer template complex with no blocker strand at all.",
+      "claim_type": "EXPLICIT",
+      "source": "In case (1) where the template is open and there is no overhanging invader-blocker duplex, the Km for C*C is approximately three times lower (0.34 \u00b1 0.01 mM) than previously observed for binding to a primer template complex with no blocker strand at all (Walton and Szostak, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports quantitative experimental results from Figure 4 and compares them to previously published data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "259deaec-c3c3-4779-945d-3bdb871f5fad",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C57",
+      "claim": "The binding of C*C is stabilized by stacking with the downstream blocker strand.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the binding of C*C is stabilized by stacking with the downstream blocker strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lower Km observed in case (1) compared to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "61fd70e3-43d3-4fee-921e-3894b98321dc",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C58",
+      "claim": "The presence of an overhanging invader-blocker duplex increases the Km for C*C roughly 6-fold to 2.2 \u00b1 0.1 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the presence of an overhanging invader-blocker duplex increases the Km for C*C roughly 6-fold to 2.2 \u00b1 0.1 mM, suggesting that the presence of an invader-blocker duplex sterically interferes with C*C binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports quantitative experimental results from Figure 4 for case (2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "dc8d5213-46c4-4e98-977b-9ef4ff6ee57f",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C59",
+      "claim": "The presence of an invader-blocker duplex sterically interferes with C*C binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the presence of an overhanging invader-blocker duplex increases the Km for C*C roughly 6-fold to 2.2 \u00b1 0.1 mM, suggesting that the presence of an invader-blocker duplex sterically interferes with C*C binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the increased Km observed in case (2).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "c6138c45-4c3b-4ba2-b91f-bcc81253d5ec",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C60",
+      "claim": "For case (3), in which the blocker is partitioned between base-pairing with the template or the invader, the apparent Km is 7.3 \u00b1 0.5 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, for case (3), in which the blocker is partitioned between base-pairing with the template or the invader, the binding of C*C to the template is further impaired and the apparent Km is 7.3 \u00b1 0.5 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reports quantitative experimental results from Figure 4 for case (3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "573aa779-6087-452b-824c-c055a0cbcd36",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C61",
+      "claim": "Without a bound blocker, RNA primer extension was poor, although several faint bands above +1 products were present.",
+      "claim_type": "EXPLICIT",
+      "source": "Without a bound blocker, RNA primer extension was poor, although several faint bands above +1 products were present (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes experimental results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "d86fec0c-82b3-4ede-89d4-fa2f8bde7c43",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C62",
+      "claim": "The efficient copying of mixed sequence RNA templates requires activated short oligonucleotide helpers.",
+      "claim_type": "EXPLICIT",
+      "source": "This is as expected, because the efficient copying of mixed sequence RNA templates requires activated short oligonucleotide helpers (Li et al., 2017; Prywes et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Li et al., 2017 and Prywes et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "a09a6fe0-987f-46f8-b772-8768dc09888b",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C63",
+      "claim": "In the presence of the blocker without invaders, no primer extension was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of the blocker without invaders, no primer extension was observed, as expected, because the imidazolium-bridged-dinucleotides cannot bind to the occluded template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes experimental results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "9355c006-c9b6-4d75-9168-87be9a6e704a",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C64",
+      "claim": "With blocker and seven hexamer invaders, unambiguous +1 and +2 primer extension products were observed, and several faint bands above as well.",
+      "claim_type": "EXPLICIT",
+      "source": "With blocker and seven hexamer invaders, we observed unambiguous +1 and +2 primer extension products, and several faint bands above as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes experimental results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "c55e9cf6-41cd-47c9-8111-2ec6f679a74f",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C65",
+      "claim": "Multiple nucleotide additions are possible during primer extension with strand displacement.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that multiple nucleotide additions are indeed possible during primer extension with strand displacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "7646cc7a-3c08-4ae1-a421-59b691b41e47",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C66",
+      "claim": "The binding and/or reactivity of the imidazolium-bridged-dinucleotides may be enhanced when they are sandwiched in between the primer and the blocker strand.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that primer extension is improved in the strand displacement context versus a completely open template suggests that the binding and/or reactivity of the imidazolium-bridged-dinucleotides may be enhanced when they are sandwiched in between the primer and the blocker strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of primer extension efficiency in different contexts shown in Figure 5B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "aeb8a595-ad8c-4c9e-81dc-ac4d0d018fff",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C67",
+      "claim": "3\u2032-amino-2\u2032,3\u2032-dideoxyribonucleotide monomers polymerize rapidly on an RNA template, forming a 3\u2032-NP-DNA complementary strand.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently shown that these monomers polymerize rapidly on an RNA template, forming a 3\u2032-NP-DNA complementary strand (O'Flaherty et al., 2019; Zhang et al., 2013a; Zhang et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to O'Flaherty et al., 2019; Zhang et al., 2013a; and Zhang et al., 2013b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "5691959b-c81b-4b60-af10-b665f5bf5395",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C68",
+      "claim": "In the reaction without any blocker or invaders using 3\u2032-NH2-2AIpddN monomers, the full-length product appeared within 5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In the reaction without any blocker or invaders, the full-length product appeared within 5 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes experimental results shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "a642879f-b069-46ce-85fc-c396963576eb",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C69",
+      "claim": "In the presence of the blocker but absence of invaders using 3\u2032-NH2-2AIpddN monomers, no primer-extension occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of the blocker but absence of invaders, no primer-extension occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes experimental results shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "2e78173c-6a23-435d-8be9-5de76949204b",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C70",
+      "claim": "In the presence of both the blocker and the seven hexamer invaders using 3\u2032-NH2-2AIpddN monomers, the majority of the primer was extended to the full-length product within 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of both the blocker and the seven hexamer invaders, the majority of the primer was extended to the full-length product within 24 hr (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes experimental results shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "094e568d-d04e-4199-b032-baca49781641",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C71",
+      "claim": "When an unlabeled RNA strand complementary to the template was added prior to addition of the labeled blocker, binding of the blocker was inhibited, and fluorescence remained at a high level throughout the time course of 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "When we added an unlabeled RNA strand that was complementary to the template prior to addition of the labeled blocker, binding of the blocker was inhibited, and fluorescence remained the same high level throughout the time course of 48 hr (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes experimental results from the fluorescence-quencher assay shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "d5763ac7-1394-4c11-8cd8-cfc366bbbb58",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C72",
+      "claim": "In three negative control reactions where 3\u2032-NH2-2AIpddN monomers and/or invaders were omitted, very low fluorescent signal was observed throughout the reaction time courses, indicating that the blocker had remained base-paired with the template.",
+      "claim_type": "EXPLICIT",
+      "source": "In three negative control reactions, 3\u2032-NH2-2AIpddN monomers and/or invaders were omitted, and we observed very low fluorescent signal throughout the reaction time courses, indicating that the blocker had remained base-paired with the template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes experimental results from the fluorescence-quencher assay shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "dcd807cc-89ce-4f04-82c7-6eab07b7232a",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C73",
+      "claim": "In a complete reaction mixture containing all components, the fluorescence signal grew to ~50% of that observed in the positive control in 24 hr, and ~60% in 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in a complete reaction mixture containing all components, the fluorescence signal grew to ~50% of that observed in the positive control in 24 hr, and ~60% in 48 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes experimental results from the fluorescence-quencher assay shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "377b5d19-86f3-4383-8644-ef4ec6a99f12",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C74",
+      "claim": "A strand displacement mechanism is operating and is required for successful primer extension under these conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that a strand displacement mechanism is operating and is required for successful primer extension under these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the fluorescence-quencher assay data from Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "701f534b-734e-4572-b192-2614791c7fe1",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C75",
+      "claim": "Non-enzymatic primer extension by strand displacement synthesis can be facilitated by short RNA oligonucleotides, resulting in the template-directed synthesis of RNA and the related polymer 3\u2032-NP-DNA without prior strand separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments show that non-enzymatic primer extension by strand displacement synthesis can be facilitated by short RNA oligonucleotides, resulting in the template-directed synthesis of RNA (and the related polymer 3\u2032-NP-DNA) without prior strand separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "794e0acd-3953-415a-83b8-56610dd6946e",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C76",
+      "claim": "Strand separation models are plagued by the mismatch between the comparatively slow rate of non-enzymatic template copying and the much faster kinetics of strand reannealing (except at extremely low strand concentrations).",
+      "claim_type": "EXPLICIT",
+      "source": "Strand separation models are plagued by the mismatch between the comparatively slow rate of non-enzymatic template copying and the much faster kinetics of strand reannealing (except at extremely low strand concentrations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the challenges of strand separation models in non-enzymatic replication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "ec905932-cda8-4b66-967c-82daf0e8f5d2",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C77",
+      "claim": "Strand displacement synthesis should proceed well at high strand concentrations, allowing both genomic and functional strands to build up to high enough levels to have strong phenotypic influences on the host protocell.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, strand displacement synthesis should proceed well at high strand concentrations, allowing both genomic and functional strands to build up to high enough levels to have strong phenotypic influences on the host protocell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the advantages of strand displacement synthesis based on inference.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "0fd578d9-9cc1-4a56-ac77-3b57ed474dbf",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C78",
+      "claim": "Replication by strand displacement synthesis is closer to the mode of replication universally employed in biology.",
+      "claim_type": "EXPLICIT",
+      "source": "Replication by strand displacement synthesis is also appealing in that it is closer to the mode of replication universally employed in biology, and because it should operate in a complex prebiotic context of concentrated and heterogeneous nucleotides and oligonucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about biological replication mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "98e0266b-51bf-45ce-93c3-ce3a5108cf62",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C79",
+      "claim": "The hydrolysis of longer oligonucleotides could generate multiple short oligonucleotides that can serve as invaders.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the hydrolysis of longer oligonucleotides could generate multiple short oligonucleotides that can serve as invaders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about a prebiotic source of invader oligonucleotides.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "3cbb341e-9f03-49f4-b54e-9f8204a581b4",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C80",
+      "claim": "Incomplete or partial products of template copying could dissociate from the template and act as invaders.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, incomplete or partial products of template copying could dissociate from the template and act as invaders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about a prebiotic source of invader oligonucleotides.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "2a3b1d7d-1c92-4201-9c4f-bd54379d008d",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C81",
+      "claim": "Partial replication products would include stalled primer extension products, resulting from the incorporation of mismatched monomers or non-canonical nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Such partial replication products would include stalled primer extension products, resulting from the incorporation of mismatched monomers or non-canonical nucleotides (Kim et al., 2018; Rajamani et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Kim et al., 2018 and Rajamani et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "347fb4e6-be3f-41b5-a131-5ecbdccaea8d",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C82",
+      "claim": "Other prebiotically plausible genetic polymers (TNA, ANA, DNA, etc.) and heterogeneous oligonucleotides that could have coexisted alongside oligoribonucleotides could also promote strand displacement via the formation of invaders.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, other prebiotically plausible genetic polymers (TNA, ANA, DNA, etc.) and heterogeneous oligonucleotides that could have coexisted alongside oligoribonucleotides could also promote strand displacement via the formation of invaders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about potential sources of invader oligonucleotides in a prebiotic context.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "1bb3689f-902b-45a7-b047-01386a92d72e",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C83",
+      "claim": "Oligonucleotides ending in a 3\u2032-arabino nucleotide cannot be further extended.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in our lab (Kim et al., 2019) has shown that oligonucleotides ending in a 3\u2032-arabino nucleotide cannot be further extended, providing a mechanism for the generation of short invaders that are inert to copying chemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kim et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "146970ca-df5f-4ed1-84bb-8a8f2b74c9c4",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C84",
+      "claim": "The products of both degradative reactions and stalled replicative processes could contribute an essential function to genomic replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the products of both degradative reactions and stalled replicative processes could contribute an essential function to genomic replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the experimental findings and cited work.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "a6fab545-8856-42d3-b4d6-849a4d27c18e",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C85",
+      "claim": "The accumulation of oligonucleotide fragments within a primitive protocell could serve useful homeostatic regulatory functions, by acting as reversible concentration dependent inhibitors or activators of ribozymes.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously suggested that the accumulation of such fragments within a primitive protocell could serve useful homeostatic regulatory functions, by acting as reversible concentration dependent inhibitors or activators of ribozymes (Engelhart et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Engelhart et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "52b7b9e8-cb02-4c8c-bf49-c9ae946c662d",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C86",
+      "claim": "Non-enzymatic strand displacement synthesis could potentially enable or at least contribute to complete cycles of RNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that non-enzymatic strand displacement synthesis could potentially enable or at least contribute to complete cycles of RNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "bee5cd41-de5d-47c6-b564-69535bab6e8f",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C87",
+      "claim": "A transient thermal fluctuation might allow a primer to bind to a template and begin strand displacement synthesis in the presence of a defined primer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of a defined primer, a transient thermal fluctuation might allow a primer to bind to a template and begin strand displacement synthesis, but how initiation might begin in the absence of defined primers remains an open question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about how initiation might occur.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "fe6c0b6f-25eb-422a-adef-f4e12f3ccc45",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C88",
+      "claim": "Cycles of replication would require the copying of both complementary strands, which would seem to require the presence of invaders derived from both strands.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, cycles of replication would require the copying of both complementary strands, which would seem to require the presence of invaders derived from both strands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the requirements for complete replication cycles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "9fbbdc27-d935-4280-b30c-e2a3f1de8b4b",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C89",
+      "claim": "Frequent thermal fluctuations might allow invader-invader and invader-blocker duplexes to dissociate and then re-form, allowing for one to a few nucleotides of primer extension with each cycle of reorganization.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that frequent thermal fluctuations might allow invader-invader and invader-blocker duplexes to dissociate and then re-form, allowing for one to a few nucleotides of primer extension with each cycle of reorganization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about how strand displacement synthesis might proceed in the presence of invaders from both strands.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "fd5f8bfd-1690-410a-984c-35080743c909",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C90",
+      "claim": "The slow rate of non-enzymatic primer extension with ribonucleotides is a problem for all models of non-enzymatic RNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the slow rate of non-enzymatic primer extension with ribonucleotides is a problem for all models of non-enzymatic RNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the challenges of non-enzymatic RNA replication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "f9b4ae7d-8cb2-49f7-9a25-bbbec6ad9198",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C91",
+      "claim": "The more reactive 3\u02b9-NP-DNA and 3\u02b9-aminonucleotides have enabled demonstration of multi-step strand displacement synthesis as a proxy for RNA and ribonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "As a proxy for RNA and ribonucleotides, the more reactive 3\u02b9-NP-DNA and 3\u02b9-aminonucleotides have enabled us to demonstrate multi-step strand displacement synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental approach used in the study, supported by the data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "22df56aa-484c-4bf3-810b-c74c33605a65",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C92",
+      "claim": "Prebiotically relevant small molecules or short peptides could act as catalysts for the copying reaction by promoting the binding or positioning of the catalytic metal ion within the reaction center.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility under investigation in our lab is that prebiotically relevant small molecules or short peptides could act as catalysts for the copying reaction by promoting the binding or positioning of the catalytic metal ion within the reaction center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about potential catalysts for non-enzymatic primer extension.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "c7753775-3e7f-46d7-aa7f-fead7a08a1aa",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C93",
+      "claim": "In a strand displacement synthesis model, genomic RNA fragments remain largely double stranded and thus protected from degradation, which could make replicative synthesis possible even if primer extension is quite slow.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that in a strand displacement synthesis model, genomic RNA fragments remain largely double stranded and thus protected from degradation, which could make replicative synthesis possible even if primer extension is quite slow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about an advantage of strand displacement synthesis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "07845ffa-65e8-4d35-b403-371b511fa946",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C94",
+      "claim": "Strand displacement could potentially be involved in the regulated synthesis of primitive ribozymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the scope of replication, we propose that strand displacement could potentially be involved in the regulated synthesis of primitive ribozymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about additional functions of strand displacement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "d5161860-b8bb-49ff-8d4b-c65d2f4c96db",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C95",
+      "claim": "After the first round of copying, any ribozyme sequence would remain sequestered as a stable duplex with its daughter strand and would be unable to perform its catalytic function.",
+      "claim_type": "EXPLICIT",
+      "source": "After the first round of copying, any ribozyme sequence would remain sequestered as a stable duplex with its daughter strand and would be unable to perform its catalytic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of nucleic acid base pairing and ribozyme function.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "e7b8a13d-bb4e-4bfe-9784-f88641357660",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C96",
+      "claim": "Primer extension with strand displacement could liberate the ribozyme from its complementary strand, enabling it to fold into a tertiary structure and execute its catalytic function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, primer extension with strand displacement could liberate the ribozyme from its complementary strand, enabling it to fold into a tertiary structure and execute its catalytic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about how strand displacement could enable ribozyme function.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "9e849add-f155-4af1-b63e-29807299aa0e",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C97",
+      "claim": "Strand displacement reactions with invader oligonucleotides that can rapidly associate and dissociate could allow both the rate of RNA replication and ribozyme catalytic activity to be controlled.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence strand displacement reactions with invader oligonucleotides that can rapidly associate and dissociate could allow both the rate of RNA replication and ribozyme catalytic activity to be controlled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about regulatory functions of strand displacement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "9df40f09-b07b-4272-802a-c664b9aaa84b",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C98",
+      "claim": "This work demonstrates the concept of non-enzymatic RNA copying with strand displacement, offering a novel approach to RNA self-replication that relies on the presence of RNA fragments derived from degradation or partial template copying.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our work demonstrates the concept of non-enzymatic RNA copying with strand displacement, offering a novel approach to RNA self-replication that relies on the presence of RNA fragments derived from degradation or partial template copying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "79169bad-4361-48bd-9d28-db8825ba86ee",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C99",
+      "claim": "If the problems of initiation and replication of both strands could be overcome, it might be possible to initiate the non-enzymatic evolution of RNA inside model protocells, mimicking the origin of life.",
+      "claim_type": "EXPLICIT",
+      "source": "If the problems of initiation and replication of both strands could be overcome, it might be possible to initiate the non-enzymatic evolution of RNA inside model protocells, mimicking the origin of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future possibilities based on the current work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "484addee-9e6f-46aa-b2a0-7f7d8d506d5d",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C100",
+      "claim": "2sU forms a stronger base-pair with A than U.",
+      "claim_type": "EXPLICIT",
+      "source": "To partially compensate for the weaker binding of hexamer invaders, we used 400 mM Mg2+ instead of 50 mM Mg2+ and replaced U with 2sU for these experiments, because 2sU forms a stronger base-pair with A than U (Heuberger et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Heuberger et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "48656e64-f132-4f65-b2a1-52fc56b7dc84",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C101",
+      "claim": "The invader must be able to dissociate from the blocker after the formation of the primer +1 product, to allow the second invader to base pair with the blocker and open the next templating region.",
+      "claim_type": "EXPLICIT",
+      "source": "For the addition of multiple nucleotides, the invader must be able to dissociate from the blocker after the formation of the primer +1 product, to allow the second invader to base pair with the blocker and open the next templating region so that the +2 product can be made, and so forth for multiple reaction cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the requirements for multiple nucleotide additions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "170f83ce-c731-4708-87ab-cef86d77205b",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C102",
+      "claim": "The 8 nt invader/blocker duplex may be too stable to dissociate rapidly at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Although an octamer invader results in a higher kobs than a hexamer invader at room temperature, the 8 nt invader/blocker duplex may be too stable to dissociate rapidly at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the thermodynamic properties of nucleic acid duplexes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "de90dce9-6abb-443d-9cfe-8922539c62a4",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "claim_id": "C103",
+      "claim": "The faster on and off rate of a hexamer invader could be beneficial in the context of multiple addition reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that the faster on and off rate of a hexamer invader could be beneficial in the context of multiple addition reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative reasoning about the choice of hexamer invaders for multiple addition experiments.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d614362f-221a-4137-a765-c417580b2d02",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Short RNA oligonucleotides ('invaders') can facilitate non-enzymatic primer extension on a template occupied by a complementary blocker strand through a toehold/branch migration mechanism. Without invaders, no primer extension occurs when the template is blocked (C34, C35), but addition of an 8-nt invader complementary to the blocker's toehold region enables +1 primer extension (C36).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 provide direct experimental evidence (Figure 1E-G) demonstrating the core finding: invaders enable strand displacement synthesis. The controls (open template works, blocked template doesn't, invader rescues blocked template) are appropriate and the conclusion (C38) follows logically from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "29bd6e1d-b2f9-43a9-9deb-18cde0178e3b",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Invader length and concentration affect strand displacement kinetics in a temperature-dependent manner. Octamer invaders saturate at 5 \u03bcM (kobs = 0.9 h\u207b\u00b9 at room temp), while hexamer invaders require >100 \u03bcM and show lower rates at room temperature. Lower temperature enhances hexamer performance by stabilizing invader-toehold binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 report systematic kinetic measurements (Figure 2) with appropriate quantification and error bars. The interpretation that invader-toehold binding is rate-limiting (C42-C43) is reasonable given the concentration-dependence and saturation behavior. Temperature effects (C44-C46) are well-documented with data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "06d35982-6fee-45a7-b956-3fef39a3437c",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "High Mg\u00b2\u207a concentrations (up to 400 mM) enhance strand displacement synthesis rates, increasing kobs from 0.5 h\u207b\u00b9 at 20 mM to 2.9 h\u207b\u00b9 at 400 mM (room temp). This effect is attributed to Mg\u00b2\u207a catalyzing the chemical step of primer extension by deprotonating the 3'-hydroxyl group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 provide quantitative data (Figure 3) showing clear Mg\u00b2\u207a concentration dependence. The mechanistic interpretation (C50-C51) is reasonable and supported by citation (C51), though the claim that other effects are 'relatively minor' (C50) is somewhat speculative without direct evidence ruling out alternative mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "b2d7b891-2361-4d5d-8197-b11122ce49b2",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Kinetic analysis of three template configurations reveals that the invader-blocker duplex creates a two-state equilibrium with ~40% template open and ~60% closed. The overhanging invader-blocker duplex sterically interferes with substrate binding (6-fold increase in Km) but does not affect substrate reactivity once bound (identical kobs max for open templates).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C60 present systematic kinetic analysis (Figure 4) with three well-designed experimental conditions. The two-state model interpretation (C55) is quantitatively consistent with the observed 40% reduction in kobs max. The Km measurements and mechanistic interpretations (C57, C59) are reasonable, though alternative explanations for the Km increase in case (3) are acknowledged (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "699635d1-3cd5-4312-b270-80bfbd48e8bf",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multiple nucleotide additions via strand displacement are possible using multiple hexamer invaders and imidazolium-bridged dinucleotides. With blocker and seven invaders, +1 and +2 products were observed, along with fainter higher bands. Primer extension is improved in the strand displacement context compared to open template, suggesting enhanced substrate binding/reactivity when sandwiched between primer and blocker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C65 report observing +1 and +2 products with 'several faint bands above' (Figure 5B), but the evidence for robust multi-step synthesis is weak. The gel shows predominantly +1/+2 products with only faint higher bands, making it unclear whether true processive synthesis occurs. The interpretation (C66) is speculative. More quantitative analysis of product distribution would strengthen this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "5ac9a6ef-c61f-40cd-948d-145c5cac085e",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Using more reactive 3'-aminonucleotide monomers as proxies for ribonucleotides, full-length primer extension via strand displacement was achieved within 24 hours in the presence of blocker and seven hexamer invaders. Without invaders, no extension occurred despite blocker presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 provide clear experimental evidence (Figure 5C) showing full-length product formation only in the complete system. The use of 3'-aminonucleotides as proxies (C67, C91) is well-justified by citations and addresses the slow kinetics of ribonucleotides. Controls are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "8b6617a5-92eb-4d82-adf4-735cbf553e9e",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A fluorescence-quencher assay confirms that strand displacement is operating during primer extension. Fluorescence recovery to ~50-60% of maximum over 24-48 hours indicates blocker dissociation occurs only in complete reactions containing invaders and monomers, not in negative controls lacking these components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 describe a well-designed orthogonal assay (Figure 6) that directly monitors blocker dissociation. The positive and negative controls are appropriate, and the partial recovery (~50-60% vs 100%) is consistent with the two-state equilibrium model from earlier results. This provides independent confirmation of the strand displacement mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "f4a26ec7-720a-47e6-8fd0-5cdb70d80f49",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Following invader binding, branch migration results in a 2:3 partition of the template between open and closed states (40% open, 60% closed).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 (abstract) and C55 (results) both state this 2:3 partition. C55 provides the mechanistic basis: the observed kobs max in case (3) is ~40% of cases (1) and (2), which is interpreted as 40% of time in the open state. This is a reasonable inference from the kinetic data in Figure 4, though it assumes the two-state model is correct and that other factors don't contribute to the rate reduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "5465c117-344d-40a4-890b-13f4d867c0b5",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The strand separation problem is a major obstacle to non-enzymatic RNA replication. After template copying, daughter strands form stable duplexes with parent strands, and strand reannealing is much faster than template copying, preventing subsequent replication cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9, C11-C13, and C76 establish the context and motivation for the study. These are well-established facts in the field, supported by appropriate citations (C12) and representing consensus knowledge about the challenges of prebiotic replication. This provides essential background but is not a novel finding of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "458a82e0-18bc-44b1-9ca8-0eb8c20cb163",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous approaches to the strand separation problem include viscous solvents (glycholine), bead immobilization with protection/deprotection cycles, pH fluctuations, and wet-dry cycles. These methods have limitations: glycholine may not work for slow non-enzymatic reactions or short templates; bead immobilization is not prebiotically relevant; pH fluctuations don't prevent rapid reannealing; and wet-dry cycles haven't been demonstrated with non-enzymatic RNA copying.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C22 accurately summarize prior work with appropriate citations. The critiques of each approach (C16, C18, C20, C22) are reasonable assessments of their limitations, though some are speculative (C16). This literature review appropriately positions the current work but represents assessment of prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "b8e3c4cf-974f-4617-93d5-b9f5481255fa",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In modern biology, replication occurs via strand displacement synthesis rather than strand separation followed by copying. This mechanism, originally developed in genetic recombination studies, has been widely used in DNA/RNA nanotechnology but not previously considered relevant to prebiotic replication due to the requirement for sophisticated enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 and C78 accurately describe established biological mechanisms and the history of strand displacement concepts, with appropriate citations (Benkovic 2001, Holliday 1964, etc.). These are correct statements of background knowledge that motivate the current work's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "02faa3a1-41eb-4555-8eb9-7f18531aa26d",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The non-enzymatic primer extension system uses 5'-5'-phosphorimidazolium-bridged dinucleotides as obligate intermediates, formed from 2-aminoimidazole activated ribonucleotides. These activated nucleotides are generated by reaction with 2-aminoimidazole driven by methyl isocyanide, and 2-aminoimidazole itself can be synthesized under prebiotic conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 describe the chemical system used in the study, with appropriate citations to prior work (Walton & Szostak 2017, Zhang 2018, Mariani 2018b, Fahrenbach 2017). This establishes the prebiotically plausible nature of the chemistry but represents prior work rather than new findings. Figure 1A provides structural information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "e8a51a8a-3cd7-487b-8f69-5480d371465b",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prebiotic sources of invader oligonucleotides could include: (1) hydrolysis of longer oligonucleotides, (2) incomplete template copying products that dissociate, including stalled products from mismatches or non-canonical nucleotides, (3) other genetic polymers (TNA, ANA, DNA), and (4) oligonucleotides ending in 3'-arabino nucleotides that cannot be extended. These degradation and stalling products could thus contribute essential function to replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C84 propose plausible prebiotic sources for invaders, with some support from citations (C81, C83). However, these are largely speculative proposals (C79, C80, C82) about what 'could' happen in prebiotic conditions. No experimental evidence is provided demonstrating that these sources actually generate functional invaders at appropriate concentrations. The proposals are reasonable but require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "8ad0c451-2626-40d3-8626-5f2630511903",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Non-enzymatic strand displacement synthesis could potentially enable complete RNA replication cycles, though major problems remain: (1) initiation without defined primers, (2) replication of both complementary strands requiring invaders from both strands, and (3) slow ribonucleotide extension rates. Thermal fluctuations might allow reorganization enabling nucleotide addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C89 and C99 are explicitly speculative ('could potentially', 'might', 'remains an open question'). They identify real challenges that must be overcome before complete replication cycles can be demonstrated. These represent important future directions but are not supported by experimental evidence in the current work. The authors appropriately acknowledge these as unsolved problems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "387699cf-a766-4f0f-8746-b59a3d4f9266",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The slow rate of non-enzymatic primer extension with ribonucleotides is a general problem for all replication models. Potential solutions include prebiotically relevant small molecule or peptide catalysts, though strand displacement may mitigate this by protecting double-stranded RNA from degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 correctly identifies a known problem. Claims C92-C93 propose potential solutions but are speculative ('could act', 'under investigation', 'could make'). No experimental evidence is provided for catalysts (C92) or for the protection hypothesis (C93). These are reasonable proposals for future work but unsupported by current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "2ab9089d-8783-4515-8d6b-6812dbb22d23",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Strand displacement could potentially regulate primitive ribozyme synthesis and activity. After copying, ribozymes would be sequestered in duplexes and inactive, but strand displacement could liberate them to fold and function. Rapidly associating/dissociating invaders could control both replication rate and ribozyme activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C97 propose an interesting regulatory mechanism but are entirely speculative ('could potentially', 'would remain', 'could liberate', 'could allow'). No experimental evidence is provided for ribozyme liberation or regulation. While the logic is sound (C95 correctly notes sequestered ribozymes can't function), this represents a hypothesis for future testing rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "2bb16c30-b440-4191-82ce-6b140626ee69",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "For multiple nucleotide additions, hexamer invaders were chosen over octamers because invaders must dissociate after each addition to allow the next invader to bind. The 8-nt invader/blocker duplex may be too stable to dissociate rapidly at room temperature, while hexamers have faster on/off rates that could be beneficial for iterative reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C103 explain the experimental design choice for multi-step reactions. C100 is supported by citation. C101 correctly identifies the mechanistic requirement. C102-C103 provide reasonable thermodynamic reasoning for choosing hexamers, though this is somewhat speculative ('may be', 'could be beneficial'). The subsequent experimental results (C64-C70) validate this design choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "091d3e78-e62d-4259-8bbc-f15628741379",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Non-enzymatic primer extension by strand displacement synthesis can be facilitated by short RNA oligonucleotides, enabling template-directed synthesis of RNA and 3'-NP-DNA without prior strand separation. This demonstrates a novel approach to RNA self-replication relying on RNA fragments from degradation or partial copying.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C98 are summary statements of the main findings, supported by the collective experimental evidence from Figures 1-6. The work successfully demonstrates the core concept of invader-mediated strand displacement for both single and multiple nucleotide additions, though complete replication cycles are not achieved. The conclusions are appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    },
+    {
+      "id": "52d5ef2b-ee8d-47cf-88cb-dbd739f13bb3",
+      "content_id": "60060b53-e105-4c33-9722-5da6fe092490",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Complete cycles of non-enzymatic replication may have been facilitated by short RNA oligonucleotides. Strand displacement should work at high concentrations, allowing genomic and functional strands to accumulate. Oligonucleotide fragments could also serve homeostatic regulatory functions as concentration-dependent ribozyme modulators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C6 (abstract conclusion) states replication 'may have been facilitated' - appropriately tentative. C77 speculates about advantages ('should proceed well') without experimental validation at high concentrations. C85 cites prior speculation about regulatory functions. These are reasonable extrapolations but go beyond what the current data demonstrate, as complete replication cycles are not shown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:18:05.807981Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "95db6f81-2c9d-4744-87f3-b8a8c4deae44",
+      "result_id": "d614362f-221a-4137-a765-c417580b2d02"
+    },
+    {
+      "claim_id": "255041ec-0905-4d81-babc-6196b9f772a9",
+      "result_id": "d614362f-221a-4137-a765-c417580b2d02"
+    },
+    {
+      "claim_id": "1893e319-914c-469a-a42e-611be89f712d",
+      "result_id": "d614362f-221a-4137-a765-c417580b2d02"
+    },
+    {
+      "claim_id": "193479ec-80b2-45ed-a4c8-9da42407fd57",
+      "result_id": "d614362f-221a-4137-a765-c417580b2d02"
+    },
+    {
+      "claim_id": "a8e769d1-e317-4cd9-9280-93f062891483",
+      "result_id": "d614362f-221a-4137-a765-c417580b2d02"
+    },
+    {
+      "claim_id": "3ff14bf6-d8bd-44df-88bc-6cd19e365af2",
+      "result_id": "d614362f-221a-4137-a765-c417580b2d02"
+    },
+    {
+      "claim_id": "4ee348d6-81ea-40e2-98ce-cb468a3e9799",
+      "result_id": "29bd6e1d-b2f9-43a9-9deb-18cde0178e3b"
+    },
+    {
+      "claim_id": "88b2b435-cfe4-47a6-84e6-bb368a271457",
+      "result_id": "29bd6e1d-b2f9-43a9-9deb-18cde0178e3b"
+    },
+    {
+      "claim_id": "fbe02268-da3b-411d-83ad-d12dec87000d",
+      "result_id": "29bd6e1d-b2f9-43a9-9deb-18cde0178e3b"
+    },
+    {
+      "claim_id": "e4c04a21-fd56-4a71-ab52-56f5b2fe2d0e",
+      "result_id": "29bd6e1d-b2f9-43a9-9deb-18cde0178e3b"
+    },
+    {
+      "claim_id": "0002fcb0-f12f-42c8-a7d7-10f455e38150",
+      "result_id": "29bd6e1d-b2f9-43a9-9deb-18cde0178e3b"
+    },
+    {
+      "claim_id": "47381cec-1371-45fb-aea6-e91a690d435d",
+      "result_id": "29bd6e1d-b2f9-43a9-9deb-18cde0178e3b"
+    },
+    {
+      "claim_id": "baac6c0d-a0a1-41b1-8965-557fd4687f54",
+      "result_id": "29bd6e1d-b2f9-43a9-9deb-18cde0178e3b"
+    },
+    {
+      "claim_id": "91131150-d9a1-4eea-9150-38d1ea930e57",
+      "result_id": "29bd6e1d-b2f9-43a9-9deb-18cde0178e3b"
+    },
+    {
+      "claim_id": "c44ff835-3d9b-4299-b9b5-5180b80dcb73",
+      "result_id": "06d35982-6fee-45a7-b956-3fef39a3437c"
+    },
+    {
+      "claim_id": "87e06384-84f0-496e-b2f0-f57809a7546a",
+      "result_id": "06d35982-6fee-45a7-b956-3fef39a3437c"
+    },
+    {
+      "claim_id": "1f1be534-2625-4e0b-b53b-f919dbc65abe",
+      "result_id": "06d35982-6fee-45a7-b956-3fef39a3437c"
+    },
+    {
+      "claim_id": "506e2a4f-fa17-4fd5-a92d-54d382911a54",
+      "result_id": "06d35982-6fee-45a7-b956-3fef39a3437c"
+    },
+    {
+      "claim_id": "0d7f7450-01ec-49a1-b2f5-11f177118884",
+      "result_id": "06d35982-6fee-45a7-b956-3fef39a3437c"
+    },
+    {
+      "claim_id": "17e37151-3b12-437a-a967-0c7e50eb4115",
+      "result_id": "b2d7b891-2361-4d5d-8197-b11122ce49b2"
+    },
+    {
+      "claim_id": "8ef917fa-dd97-4399-9c13-2bb1abf28ce9",
+      "result_id": "b2d7b891-2361-4d5d-8197-b11122ce49b2"
+    },
+    {
+      "claim_id": "1ab2ee2a-c482-43c4-b96b-9793354d5cbf",
+      "result_id": "b2d7b891-2361-4d5d-8197-b11122ce49b2"
+    },
+    {
+      "claim_id": "d2d57bc0-474a-41a5-ba1e-bf2edd76518f",
+      "result_id": "b2d7b891-2361-4d5d-8197-b11122ce49b2"
+    },
+    {
+      "claim_id": "f569381b-60e6-44cf-b5d0-8156450fec2e",
+      "result_id": "b2d7b891-2361-4d5d-8197-b11122ce49b2"
+    },
+    {
+      "claim_id": "259deaec-c3c3-4779-945d-3bdb871f5fad",
+      "result_id": "b2d7b891-2361-4d5d-8197-b11122ce49b2"
+    },
+    {
+      "claim_id": "61fd70e3-43d3-4fee-921e-3894b98321dc",
+      "result_id": "b2d7b891-2361-4d5d-8197-b11122ce49b2"
+    },
+    {
+      "claim_id": "dc8d5213-46c4-4e98-977b-9ef4ff6ee57f",
+      "result_id": "b2d7b891-2361-4d5d-8197-b11122ce49b2"
+    },
+    {
+      "claim_id": "c6138c45-4c3b-4ba2-b91f-bcc81253d5ec",
+      "result_id": "b2d7b891-2361-4d5d-8197-b11122ce49b2"
+    },
+    {
+      "claim_id": "573aa779-6087-452b-824c-c055a0cbcd36",
+      "result_id": "699635d1-3cd5-4312-b270-80bfbd48e8bf"
+    },
+    {
+      "claim_id": "d86fec0c-82b3-4ede-89d4-fa2f8bde7c43",
+      "result_id": "699635d1-3cd5-4312-b270-80bfbd48e8bf"
+    },
+    {
+      "claim_id": "a09a6fe0-987f-46f8-b772-8768dc09888b",
+      "result_id": "699635d1-3cd5-4312-b270-80bfbd48e8bf"
+    },
+    {
+      "claim_id": "9355c006-c9b6-4d75-9168-87be9a6e704a",
+      "result_id": "699635d1-3cd5-4312-b270-80bfbd48e8bf"
+    },
+    {
+      "claim_id": "c55e9cf6-41cd-47c9-8111-2ec6f679a74f",
+      "result_id": "699635d1-3cd5-4312-b270-80bfbd48e8bf"
+    },
+    {
+      "claim_id": "7646cc7a-3c08-4ae1-a421-59b691b41e47",
+      "result_id": "699635d1-3cd5-4312-b270-80bfbd48e8bf"
+    },
+    {
+      "claim_id": "aeb8a595-ad8c-4c9e-81dc-ac4d0d018fff",
+      "result_id": "5ac9a6ef-c61f-40cd-948d-145c5cac085e"
+    },
+    {
+      "claim_id": "5691959b-c81b-4b60-af10-b665f5bf5395",
+      "result_id": "5ac9a6ef-c61f-40cd-948d-145c5cac085e"
+    },
+    {
+      "claim_id": "a642879f-b069-46ce-85fc-c396963576eb",
+      "result_id": "5ac9a6ef-c61f-40cd-948d-145c5cac085e"
+    },
+    {
+      "claim_id": "2e78173c-6a23-435d-8be9-5de76949204b",
+      "result_id": "5ac9a6ef-c61f-40cd-948d-145c5cac085e"
+    },
+    {
+      "claim_id": "f9b4ae7d-8cb2-49f7-9a25-bbbec6ad9198",
+      "result_id": "5ac9a6ef-c61f-40cd-948d-145c5cac085e"
+    },
+    {
+      "claim_id": "094e568d-d04e-4199-b032-baca49781641",
+      "result_id": "8b6617a5-92eb-4d82-adf4-735cbf553e9e"
+    },
+    {
+      "claim_id": "d5763ac7-1394-4c11-8cd8-cfc366bbbb58",
+      "result_id": "8b6617a5-92eb-4d82-adf4-735cbf553e9e"
+    },
+    {
+      "claim_id": "dcd807cc-89ce-4f04-82c7-6eab07b7232a",
+      "result_id": "8b6617a5-92eb-4d82-adf4-735cbf553e9e"
+    },
+    {
+      "claim_id": "377b5d19-86f3-4383-8644-ef4ec6a99f12",
+      "result_id": "8b6617a5-92eb-4d82-adf4-735cbf553e9e"
+    },
+    {
+      "claim_id": "e1da72a4-8998-49ca-aec7-087359f45a72",
+      "result_id": "f4a26ec7-720a-47e6-8fd0-5cdb70d80f49"
+    },
+    {
+      "claim_id": "d2d57bc0-474a-41a5-ba1e-bf2edd76518f",
+      "result_id": "f4a26ec7-720a-47e6-8fd0-5cdb70d80f49"
+    },
+    {
+      "claim_id": "ec259824-8a2d-4bc4-a89d-3d54de8ac9dc",
+      "result_id": "5465c117-344d-40a4-890b-13f4d867c0b5"
+    },
+    {
+      "claim_id": "7be2c864-d17e-4a71-823e-8bfc032d83df",
+      "result_id": "5465c117-344d-40a4-890b-13f4d867c0b5"
+    },
+    {
+      "claim_id": "fb56aa2d-7e86-4e37-8b54-120cbf0b07ca",
+      "result_id": "5465c117-344d-40a4-890b-13f4d867c0b5"
+    },
+    {
+      "claim_id": "e7459b5e-eeb7-45e6-8eb8-870967b669d8",
+      "result_id": "5465c117-344d-40a4-890b-13f4d867c0b5"
+    },
+    {
+      "claim_id": "ab028100-1ca4-48d1-816d-586f03b534c5",
+      "result_id": "5465c117-344d-40a4-890b-13f4d867c0b5"
+    },
+    {
+      "claim_id": "b0a4dcdd-2c59-4d19-9c2b-e67aa783e768",
+      "result_id": "5465c117-344d-40a4-890b-13f4d867c0b5"
+    },
+    {
+      "claim_id": "794e0acd-3953-415a-83b8-56610dd6946e",
+      "result_id": "5465c117-344d-40a4-890b-13f4d867c0b5"
+    },
+    {
+      "claim_id": "9bebcf13-8c1b-4981-b203-2e39d00a31fd",
+      "result_id": "458a82e0-18bc-44b1-9ca8-0eb8c20cb163"
+    },
+    {
+      "claim_id": "47e4499c-7e27-4d3e-9451-38a5d3d23c32",
+      "result_id": "458a82e0-18bc-44b1-9ca8-0eb8c20cb163"
+    },
+    {
+      "claim_id": "56c279b8-d92a-43fe-bd21-5cf5ec01b251",
+      "result_id": "458a82e0-18bc-44b1-9ca8-0eb8c20cb163"
+    },
+    {
+      "claim_id": "15f2bbde-1e1e-4011-842c-1422b545420a",
+      "result_id": "458a82e0-18bc-44b1-9ca8-0eb8c20cb163"
+    },
+    {
+      "claim_id": "65ee222d-cd27-48e5-bb70-5b8bb1970054",
+      "result_id": "458a82e0-18bc-44b1-9ca8-0eb8c20cb163"
+    },
+    {
+      "claim_id": "e4075785-2d41-446a-85dc-5da92196cd6e",
+      "result_id": "458a82e0-18bc-44b1-9ca8-0eb8c20cb163"
+    },
+    {
+      "claim_id": "937eca42-d5e4-4708-850c-ba417147496c",
+      "result_id": "458a82e0-18bc-44b1-9ca8-0eb8c20cb163"
+    },
+    {
+      "claim_id": "891c529c-a4c6-4935-af63-a7a999f6eccb",
+      "result_id": "458a82e0-18bc-44b1-9ca8-0eb8c20cb163"
+    },
+    {
+      "claim_id": "b8b19ee0-54d0-4aa1-ae13-8814c92481ea",
+      "result_id": "458a82e0-18bc-44b1-9ca8-0eb8c20cb163"
+    },
+    {
+      "claim_id": "99f91da4-46c9-4c47-bcc7-4f0fb2caa123",
+      "result_id": "b8e3c4cf-974f-4617-93d5-b9f5481255fa"
+    },
+    {
+      "claim_id": "b8063111-7ef2-4019-9245-8fa8aa1e08fd",
+      "result_id": "b8e3c4cf-974f-4617-93d5-b9f5481255fa"
+    },
+    {
+      "claim_id": "5439067b-33e6-4066-829c-77fb6177acb4",
+      "result_id": "b8e3c4cf-974f-4617-93d5-b9f5481255fa"
+    },
+    {
+      "claim_id": "949b6f2c-bddc-417b-9908-e3151b4c0fc9",
+      "result_id": "b8e3c4cf-974f-4617-93d5-b9f5481255fa"
+    },
+    {
+      "claim_id": "d9aa1897-63d2-4a09-95de-43fafe228fdd",
+      "result_id": "b8e3c4cf-974f-4617-93d5-b9f5481255fa"
+    },
+    {
+      "claim_id": "0fd578d9-9cc1-4a56-ac77-3b57ed474dbf",
+      "result_id": "b8e3c4cf-974f-4617-93d5-b9f5481255fa"
+    },
+    {
+      "claim_id": "fb7d3357-983a-41ea-b16d-c70a07a0206e",
+      "result_id": "02faa3a1-41eb-4555-8eb9-7f18531aa26d"
+    },
+    {
+      "claim_id": "64eb5cd6-2cdd-40ee-8058-481307b394a6",
+      "result_id": "02faa3a1-41eb-4555-8eb9-7f18531aa26d"
+    },
+    {
+      "claim_id": "7df1bf41-fd01-4417-8dee-80a262c48704",
+      "result_id": "02faa3a1-41eb-4555-8eb9-7f18531aa26d"
+    },
+    {
+      "claim_id": "5dd7b104-b26e-4f3a-8334-d2d2619fb777",
+      "result_id": "02faa3a1-41eb-4555-8eb9-7f18531aa26d"
+    },
+    {
+      "claim_id": "652f64bb-e6fd-486a-b860-9dc5d3f7b176",
+      "result_id": "02faa3a1-41eb-4555-8eb9-7f18531aa26d"
+    },
+    {
+      "claim_id": "98e0266b-51bf-45ce-93c3-ce3a5108cf62",
+      "result_id": "e8a51a8a-3cd7-487b-8f69-5480d371465b"
+    },
+    {
+      "claim_id": "3cbb341e-9f03-49f4-b54e-9f8204a581b4",
+      "result_id": "e8a51a8a-3cd7-487b-8f69-5480d371465b"
+    },
+    {
+      "claim_id": "2a3b1d7d-1c92-4201-9c4f-bd54379d008d",
+      "result_id": "e8a51a8a-3cd7-487b-8f69-5480d371465b"
+    },
+    {
+      "claim_id": "347fb4e6-be3f-41b5-a131-5ecbdccaea8d",
+      "result_id": "e8a51a8a-3cd7-487b-8f69-5480d371465b"
+    },
+    {
+      "claim_id": "1bb3689f-902b-45a7-b047-01386a92d72e",
+      "result_id": "e8a51a8a-3cd7-487b-8f69-5480d371465b"
+    },
+    {
+      "claim_id": "146970ca-df5f-4ed1-84bb-8a8f2b74c9c4",
+      "result_id": "e8a51a8a-3cd7-487b-8f69-5480d371465b"
+    },
+    {
+      "claim_id": "52b7b9e8-cb02-4c8c-bf49-c9ae946c662d",
+      "result_id": "8ad0c451-2626-40d3-8626-5f2630511903"
+    },
+    {
+      "claim_id": "bee5cd41-de5d-47c6-b564-69535bab6e8f",
+      "result_id": "8ad0c451-2626-40d3-8626-5f2630511903"
+    },
+    {
+      "claim_id": "fe6c0b6f-25eb-422a-adef-f4e12f3ccc45",
+      "result_id": "8ad0c451-2626-40d3-8626-5f2630511903"
+    },
+    {
+      "claim_id": "9fbbdc27-d935-4280-b30c-e2a3f1de8b4b",
+      "result_id": "8ad0c451-2626-40d3-8626-5f2630511903"
+    },
+    {
+      "claim_id": "79169bad-4361-48bd-9d28-db8825ba86ee",
+      "result_id": "8ad0c451-2626-40d3-8626-5f2630511903"
+    },
+    {
+      "claim_id": "fd5f8bfd-1690-410a-984c-35080743c909",
+      "result_id": "387699cf-a766-4f0f-8746-b59a3d4f9266"
+    },
+    {
+      "claim_id": "22df56aa-484c-4bf3-810b-c74c33605a65",
+      "result_id": "387699cf-a766-4f0f-8746-b59a3d4f9266"
+    },
+    {
+      "claim_id": "c7753775-3e7f-46d7-aa7f-fead7a08a1aa",
+      "result_id": "387699cf-a766-4f0f-8746-b59a3d4f9266"
+    },
+    {
+      "claim_id": "07845ffa-65e8-4d35-b403-371b511fa946",
+      "result_id": "2ab9089d-8783-4515-8d6b-6812dbb22d23"
+    },
+    {
+      "claim_id": "d5161860-b8bb-49ff-8d4b-c65d2f4c96db",
+      "result_id": "2ab9089d-8783-4515-8d6b-6812dbb22d23"
+    },
+    {
+      "claim_id": "e7b8a13d-bb4e-4bfe-9784-f88641357660",
+      "result_id": "2ab9089d-8783-4515-8d6b-6812dbb22d23"
+    },
+    {
+      "claim_id": "9e849add-f155-4af1-b63e-29807299aa0e",
+      "result_id": "2ab9089d-8783-4515-8d6b-6812dbb22d23"
+    },
+    {
+      "claim_id": "484addee-9e6f-46aa-b2a0-7f7d8d506d5d",
+      "result_id": "2bb16c30-b440-4191-82ce-6b140626ee69"
+    },
+    {
+      "claim_id": "48656e64-f132-4f65-b2a1-52fc56b7dc84",
+      "result_id": "2bb16c30-b440-4191-82ce-6b140626ee69"
+    },
+    {
+      "claim_id": "170f83ce-c731-4708-87ab-cef86d77205b",
+      "result_id": "2bb16c30-b440-4191-82ce-6b140626ee69"
+    },
+    {
+      "claim_id": "de90dce9-6abb-443d-9cfe-8922539c62a4",
+      "result_id": "2bb16c30-b440-4191-82ce-6b140626ee69"
+    },
+    {
+      "claim_id": "701f534b-734e-4572-b192-2614791c7fe1",
+      "result_id": "091d3e78-e62d-4259-8bbc-f15628741379"
+    },
+    {
+      "claim_id": "9df40f09-b07b-4272-802a-c664b9aaa84b",
+      "result_id": "091d3e78-e62d-4259-8bbc-f15628741379"
+    },
+    {
+      "claim_id": "6c137f40-e35f-4164-af04-dba497f3b0ca",
+      "result_id": "52d5ef2b-ee8d-47cf-88cb-dbd739f13bb3"
+    },
+    {
+      "claim_id": "ec905932-cda8-4b66-967c-82daf0e8f5d2",
+      "result_id": "52d5ef2b-ee8d-47cf-88cb-dbd739f13bb3"
+    },
+    {
+      "claim_id": "a6fab545-8856-42d3-b4d6-849a4d27c18e",
+      "result_id": "52d5ef2b-ee8d-47cf-88cb-dbd739f13bb3"
+    }
+  ],
+  "comparisons": []
+}

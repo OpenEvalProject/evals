@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C22",
+      "C71"
+    ],
+    "result": "The study enrolled 2,105 children at baseline, of whom 1,976 were residents in the study area with a baseline Schistosoma haematobium infection prevalence of 16.9% (95%CI: 15.2\u201318.6). Of 333 microscopically confirmed infections at baseline, 253 (76%) consented to screening at round 1 (September-December 2007) and 125 consented at round 2 (April-August 2008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29, C22, and C71 provide consistent descriptive statistics about study enrollment, baseline prevalence, and follow-up participation. The numbers are internally consistent (e.g., 333 infected at baseline, with 253 and 125 participating in follow-up rounds), and confidence intervals are provided for prevalence estimates. This represents standard epidemiological cohort description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Re-infection prevalence was 15.4% (light) and 8.7% (heavy) at round 1, and 12.8% (light) and 6.4% (heavy) at round 2. Geometric mean egg counts were 16.7 eggs/10 mL at round 1 and 18.2 eggs/10 mL at round 2. The overall re-infection rate was 36 infections/100 person-years. In the pooled analysis (n=378), 31.5% were girls and 18.3% were below 11 years of age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 present descriptive statistics for re-infection outcomes with appropriate confidence intervals. The prevalence estimates, geometric means, and demographic characteristics are clearly stated with statistical precision. These are straightforward descriptive results from the follow-up cohort.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C132"
+    ],
+    "result": "Every percentage point increase in community piped water coverage was associated with a 4.4% decline in mean re-infection intensity (IRR=0.96, 95%CI: 0.93\u20130.98, p=0.004) in the pooled analysis. Separate analyses showed ~3% decrease at round 1 and ~8% decrease at round 2. Lower piped water coverage areas were associated with significantly higher mean egg counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C132 present the primary finding with appropriate statistical measures (IRR, confidence intervals, p-values). The negative binomial regression model (C122) was selected through data-driven procedures, and the effect is consistent across both follow-up rounds. The dose-response relationship shown in Figure 4 (C47) supports the regression findings. This is the core result of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C59",
+      "C81",
+      "C82"
+    ],
+    "result": "At baseline, heavy infection prevalence increased with age from 5.1% (\u22649 years) to 14.8% (\u226514 years) (p<0.001). In contrast, in the re-infection cohort, heavy re-infection decreased from 13.0% (<11 years) to 6.9% (>12 years) (p=0.3454), with the decline more marked in girls than boys. This shift from older to younger age groups cannot be accounted for by treatment failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 and C59, C81-C82 describe an age-related pattern reversal between baseline and re-infection. The baseline trend is statistically significant while the re-infection trend is not (likely due to lower power, as noted in C44). The authors provide a reasonable interpretation (C82) that this pattern shift argues against treatment failure as a major confounder. The observation is supported by Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C66"
+    ],
+    "result": "Boys were at higher risk of intense re-infection than girls in both follow-up rounds, consistent with studies from other settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C66 report a gender difference in re-infection risk supported by regression models (Table 2) and consistent with cited literature (C64-C66). The finding is presented with appropriate statistical support and contextualized within existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C67",
+      "C68"
+    ],
+    "result": "One significant cluster of high re-infection intensity (radius=6.93 km, geometric mean egg count=54.95, p=0.006) was detected near the Mfolozi river, partially overlapping with a baseline cluster. This demonstrates heterogeneous exposure and concentrated transmission in key locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 and C67-C68 present spatial cluster analysis results using appropriate statistical methods (SaTScan, C128-C129). The cluster is statistically significant and shown in Figure 5. The overlap with baseline clusters (C55) strengthens the finding. The interpretation of heterogeneous transmission (C67-C68) is reasonable and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C120",
+      "C121"
+    ],
+    "result": "Community piped water coverage in 2007 had a median of 91.2% (IQR: 71.0\u201397.7%) and was geographically heterogeneous. Coverage was derived using a 2 km radius Gaussian kernel based on a tradeoff between sensitivity to local variations and robustness to noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C120-C121 describe the exposure variable derivation. The methodology is clearly explained, the kernel radius selection is justified by previous work (C121), and the heterogeneity is documented in Figure 2B. This represents appropriate exposure assessment for spatial epidemiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C84",
+      "C87",
+      "C88"
+    ],
+    "result": "Dropout was higher among participants residing away from water bodies (>2 km) at round 1 and among girls at round 2, but showed no clear pattern with piped water coverage. Higher attrition among girls may bias the piped water association toward the null, making effect estimates marginally conservative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe dropout patterns, while C84, C87-C88 interpret potential bias. The authors acknowledge differential attrition and provide reasonable reasoning about bias direction based on their baseline findings (C85-C86). This represents appropriate consideration of selection bias, though the magnitude of bias is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C83"
+    ],
+    "result": "The study did not assess treatment effect after praziquantel administration, making it difficult to distinguish re-infection from treatment failure. However, ~80% cure rates reported in similar settings suggest most positive diagnoses were likely re-infections. The study was not powered to detect differences in absolute re-infection rates by piped water coverage category.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 acknowledge a key limitation, while C78-C80 provide evidence from the literature to support the interpretation that treatment failure was minimal. Claim C83 acknowledges a power limitation. These represent appropriate recognition of study limitations with reasonable justification for interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C92",
+      "C133"
+    ],
+    "result": "The scaleup of piped water coverage in the local community surrounding a child's residence is strongly protective against Schistosoma haematobium infection and re-infection after treatment, providing compelling evidence for piped water as an effective control strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C92, and C133 represent the authors' main conclusions. These are supported by the primary finding (C46) showing a statistically significant dose-response relationship, the spatial cluster analysis (C54-C55), and consistency with baseline findings (C20). The conclusion is appropriately qualified and supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors recommend that Schistosoma haematobium control programs consider scaling up piped water coverage as a preventive strategy to supplement MDA, particularly targeting high-risk areas along rivers Mfolozi and Nyalazi. They recommend further studies examining integrated approaches including MDA, piped water, and behavioral change education.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 present policy recommendations and future research directions. These are appropriately framed as recommendations rather than definitive conclusions, are supported by the study findings (particularly the cluster analysis C54-C55), and are contextualized with relevant citations. The recommendations are reasonable extensions of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "This is the first study to systematically evaluate the impact of community piped water coverage on Schistosoma haematobium re-infection rates following praziquantel treatment, addressing a major evidence gap highlighted in a recent review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 assert novelty supported by citation to a review (Grimes et al., 2015) identifying the evidence gap. While the claim of being 'first' is difficult to verify completely, it is appropriately qualified ('to the best of our knowledge') and supported by a relevant citation. The study design (C71-C72) does appear well-suited to address this question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors hypothesized that community-level piped water coverage is more sensitive than individual/household access because it captures both direct benefits (reduced individual exposure) and indirect benefits (reduced contacts by infectious individuals, decreasing overall transmission intensity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 present the study's conceptual framework. This hypothesis is reasonable and supported by citation to existing literature (C16). The study design and findings (C46) support this hypothesis, though the mechanism is not directly tested. This represents appropriate theoretical framing for the empirical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Infection was determined using urine reagent strips with microscopy confirmation. Children with microhematuria received 40 mg/kg praziquantel following WHO guidelines under nurse supervision. Samples were collected 10:00-12:00, processed in duplicate 10 mL aliquots, filtered, and eggs counted per 10 mL. Re-infection dates were imputed assuming uniform distribution between treatment and testing dates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C119 describe diagnostic and treatment methods. These follow standard parasitological procedures and WHO guidelines (C108, C118). The imputation method for re-infection dates (C119) is appropriate for interval-censored data and is supported by citation. The methods are clearly described and appropriate for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The negative binomial model was selected as best fit through data-driven model selection. Univariable analyses retained covariates at p<0.1, with backwards exclusion at p>0.05. Community piped water coverage, age, toilet, and sex were included regardless of significance. Robust standard errors accounted for correlation among children in both follow-up rounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 describe the statistical modeling approach. The negative binomial model is appropriate for overdispersed count data (C122), the model selection procedure is standard, and the decision to retain key variables regardless of significance (C125) is appropriate. The use of robust standard errors (C126) properly addresses repeated measures. The methods are statistically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Previous work showed a positive relationship between age and infection prevalence due to cumulative exposure. Younger age groups have higher re-infection risk due to higher exposure intensity. Naturally acquired immunity and praziquantel treatment enhance protective immunity, though the impact in this study was likely minimal given the narrow age range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 contextualize the age-related findings within existing literature. The interpretations are supported by multiple citations (C57-C62) and the authors appropriately qualify their conclusions about immunity's role in their specific study (C63). This represents appropriate integration of findings with existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Gender differences in contact with infested water due to cultural differences in gender roles explain heterogeneous findings on gender across different geographical settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide context for gender differences observed in the study. These are supported by citations to multiple studies showing variable gender effects across settings. This represents appropriate contextualization of the study's gender findings (C50, C66) within broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Schistosoma haematobium clusters can potentially be targeted with control interventions to interrupt transmission and achieve elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 present a recommendation based on the cluster analysis findings (C54-C55) and supported by citations. The recommendation is appropriately framed as potential ('can potentially') and is a reasonable extension of the spatial findings. However, the study does not directly test intervention effectiveness in clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "WHO recommends MDA with 40 mg/kg praziquantel for schistosomiasis control. Current global MDA coverage is ~20%, and sustained benefits are uncertain given low coverage, drug compliance and efficacy, and rapid re-infection rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide policy context for the study. C89 accurately describes WHO recommendations, while C90-C91 are supported by citation to Ross et al., 2017. This contextualizes why alternative/complementary interventions like piped water are important to study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims about schistosomiasis epidemiology: 243 million infected worldwide, 93% in sub-Saharan Africa where children bear greatest burden; 1.43 million DALYs lost in 2017; infection occurs via skin penetration by Schistosoma from infected snails; S. mansoni causes intestinal and S. haematobium causes urogenital schistosomiasis; S. haematobium has widest coverage in SSA and is main cause in Hlabisa sub-district.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide epidemiological background. Most are supported by appropriate citations (C4-C7, C10-C15), while some are stated as general knowledge (C1-C3, C8-C9). The claims are consistent with established schistosomiasis epidemiology and provide appropriate context for the study. These are standard background statements for a schistosomiasis study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study was nested within a large population-based cohort (AHRI) in rural KwaZulu-Natal covering 438 km\u00b2 with ~90,000 people in ~10,000 households. All 33 primary schools in the area were included. The study had access to comprehensive 2007 household surveys on piped water and assets, and longitudinal environmental databases. Households were geolocated to <2m accuracy with tri-annual surveys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 and C100-C105 describe the study setting and infrastructure. These represent factual descriptions of the surveillance system and data availability. The detailed geospatial data (C105) and comprehensive surveys (C74) are strengths that enable the spatial analysis. This is appropriate description of study infrastructure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C130",
+      "C131"
+    ],
+    "result": "Ethical approval was obtained from the University of KwaZulu-Natal Biomedical Research Ethics Committee. Written informed consent was obtained from parents/guardians and assent from children. Funders had no role in study design, analysis, or publication decisions. The corresponding author had full data access and made the final publication decision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 and C130-C131 describe ethical approvals, consent procedures, and funding independence. These are standard statements for research ethics and represent appropriate documentation of ethical conduct and scientific independence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "In the baseline survey, every percentage increase in community piped water (prior 7 years) was associated with 2.5% decrease in odds of infection. However, the baseline survey did not determine if community piped water coverage reduced re-infection rates among treated children.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 summarize previous baseline findings and identify the gap addressed by the current study. C20 is supported by citation to the authors' previous work (Tanser et al., 2018), and C21 appropriately identifies the limitation that motivated the follow-up study. This provides clear rationale for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "In the baseline analysis, sex was a strong independent predictor of infection, and the impact of community piped water coverage was greater among girls than boys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 reference findings from the baseline analysis (Tanser et al., 2018). These are used to interpret potential bias from differential attrition (C87-C88). The claims are appropriately supported by citation to the previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Gaussian kernel density estimation was used to describe geographical heterogeneity of re-infection intensity. The scan statistic in SaTScan software identified significant geographical clusters using the normal probability model to examine areas with significantly higher intensity than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 describe spatial analysis methods. These are appropriate and standard methods for spatial cluster detection in epidemiology. The normal probability model (C129) is suitable for continuous outcomes (egg counts) and is supported by citation to Kulldorff et al., 2009.",
+    "result_type": "MINOR"
+  }
+]

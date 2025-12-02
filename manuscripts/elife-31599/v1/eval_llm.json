@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript describes established anatomical and physiological knowledge about cerebellar circuitry and the Marr-Albus-Ito consensus theory of cerebellar learning, including the roles of mossy fibres, Purkinje cells, climbing fibres, and the plasticity rules whereby climbing fibres induce LTD of parallel fibre synapses active shortly before complex spikes, with compensating LTP following high-frequency parallel fibre activity without complex spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C20 collectively present well-established anatomical and physiological knowledge about the cerebellum and the consensus Marr-Albus-Ito theory. These claims are supported by extensive citations to the literature and represent accepted knowledge in the field, providing necessary background for the manuscript's novel contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C63",
+      "C64"
+    ],
+    "result": "The Marr-Albus-Ito theory cannot solve the credit assignment problem for complex, arbitrary movements because it can minimize the average signed error of a group of neurons but not optimize individual cell firing profiles or the unsigned error, limiting it to simple reflex movements rather than complex motor control tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C22, C63-C64 are supported by theoretical analysis and network simulations shown in Figure 2. The simulation demonstrates that the Marr-Albus-Ito algorithm minimizes signed error but fails to optimize individual cell firing profiles (Figure 2B-C), establishing a key limitation that motivates the proposed SGDEGE algorithm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C65"
+    ],
+    "result": "The manuscript proposes that spontaneous complex spikes serve as perturbations in a stochastic gradient descent algorithm, where perturbation complex spikes (pCSs) briefly increase Purkinje cell firing and perturb movements, with subsequent error complex spikes (eCSs) signaling whether the perturbation increased error, thereby determining the sign of plasticity at parallel fibre synapses active during the perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C23-C30, C65 present the core theoretical framework of the SGDEGE algorithm. While the proposal is logically coherent and supported by simulations (Figures 7-10), the key predictions about perturbation and error complex spikes remain largely untested in vivo. The distinction between pCS and eCS types is speculative (C23, C28), and direct experimental evidence for movement perturbations by spontaneous complex spikes is limited (C4, C82-C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Under modified experimental conditions designed to be more physiological (1.5 mM extracellular calcium, intact inhibition, granule cell layer stimulation), the predicted plasticity rules were confirmed: GP_ protocol induced LTP (ratio 1.40, p=0.0001), GPE protocol induced LTD (ratio 0.53, p=0.002), while G__ and G_E protocols produced no significant change, with significant differences between GP_ vs G__ (p=0.021) and GPE vs G_E (p=0.0018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C41-C46 are supported by experimental data in Figures 4-6 and Table 1. The plasticity experiments were conducted with appropriate controls, statistical analysis (n=58 cells from 47 animals after quality control), and the results show statistically significant effects in the predicted directions. The experimental design addresses potential confounds (series resistance, stimulation artifacts) and uses appropriate statistical methods including bootstrap confidence intervals and nonparametric tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C6",
+      "C7",
+      "C8",
+      "C66"
+    ],
+    "result": "The predicted plasticity rules contradict the literature consensus (which reports LTD for GP_ and G_E, LTP for G__), but are supported by experiments under more physiological conditions, demonstrating that plasticity outcomes are highly sensitive to experimental conditions including extracellular calcium concentration, presence of inhibition, and stimulation location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C35-C36, C66 are supported by the experimental results (Figures 4-6, Table 1) and discussion of methodological differences. The manuscript provides a plausible mechanistic explanation for the discrepancy based on calcium-dependent plasticity mechanisms (C37-C39, C69-C72) and cites some supporting literature (C73). However, the reconciliation with the extensive contradictory literature remains incomplete and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55"
+    ],
+    "result": "Error changes are extracted by adaptively canceling the average error through plasticity at mossy fibre-nucleo-olivary neurone synapses, where inhibition to the inferior olive is strengthened when error complex spikes are emitted and weakened otherwise, allowing the inhibition to track and subtract the average error, with optimization proceeding only once accurate cancellation is achieved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C47-C52, C55 propose a mechanism for error change extraction supported by simulation results (Figure 8) and some circumstantial experimental evidence (C49-C52 cite relevant plasticity rules and synaptic properties). However, the specific plasticity site (mossy fibre-nucleo-olivary synapse) is chosen based on limited evidence, and direct experimental validation of this adaptive cancellation mechanism is lacking. The simulation demonstrates feasibility but does not constitute proof of biological implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C104"
+    ],
+    "result": "Network simulations demonstrate that the SGDEGE algorithm successfully optimizes two movements in parallel, with error decreasing throughout learning, but optimization only proceeds after the inhibitory input accurately subtracts the average error. The algorithm is not finely tuned, with \u00b110% variation in key parameters altering final error by at most 7%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C104 are supported by simulation results shown in Figure 8 and parameter sensitivity analysis. The simulations demonstrate proof-of-concept for the proposed mechanism, showing convergence and robustness to parameter variations. However, these are computational demonstrations rather than experimental validations, and the simplified network model may not capture all biological complexities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Theoretical analysis of the SGDEGE algorithm shows that convergence requires q<1 (perturbation of error estimate smaller than effect on true error), learning is slower than the delta rule but can attain maximum theoretical storage capacity, with final error limited by ongoing perturbations to A(1+q)/2 and increasing beyond this floor only near theoretical capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by mathematical analysis in Appendix 1 and simulations in Figures 9-10. The theoretical framework is internally consistent and demonstrates convergence properties, capacity limits, and comparison with optimal algorithms. The analysis provides rigorous support for the algorithm's computational properties, though biological implementation remains to be fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Standard in vitro plasticity conditions likely produce elevated intracellular calcium compared to physiological levels; the experiments used 1.5 mM extracellular calcium (near in vivo maximum) instead of the standard \u22652 mM, intact inhibition, and granule cell layer stimulation. These changes are expected to reduce calcium signaling, potentially explaining the different plasticity outcomes through calcium-dependent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C67-C72 are supported by citations to in vivo calcium measurements (C69), literature on calcium-dependent plasticity (C71-C72), and the importance of inhibition (C67-C68). The rationale for methodological changes is well-justified, though the precise mechanistic effects of these changes on intracellular calcium and plasticity remain somewhat speculative. The experimental design is sound and addresses recognized issues in plasticity studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C83"
+    ],
+    "result": "The proposed SGDEGE mechanism may not be required for simple, constrained movements like oculomotor behaviors where fixed error-correction mappings exist. Evidence from eyeblink conditioning (decreased complex spike probability during learning, below-baseline probability on US omission) is consistent with the proposed mechanism, though evidence for complex-spike-triggered movements is mixed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75, C77-C79, C82-C83 discuss the scope and supporting evidence for the proposed mechanism. The manuscript appropriately acknowledges limitations and regional specificity (C74-C75). Some cited evidence supports the mechanism (C78-C79), but other evidence appears contradictory (C83). The evaluation is uncertain because the mechanism's applicability to different cerebellar regions and behaviors remains unclear and requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The 'bicycle problem' of how disparate error signals guide learning of arbitrary movements could be solved by output convergence (multiple cerebellar zones with different climbing fibre modalities converging on motor outputs) or error broadcast (error signals transmitted beyond traditional receptive fields via olivary electrical coupling), with some experimental evidence supporting both mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C90 address an important conceptual challenge for the proposed mechanism. The manuscript presents two plausible solutions with some supporting evidence (C86 for output convergence, C87-C89 for error broadcast), but acknowledges that most literature supports restricted receptive fields (C84-C85). The evidence is suggestive but not conclusive, and the relative contributions of these mechanisms remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The SGDEGE framework may also operate in the basal ganglia, where dopamine could serve dual roles analogous to complex spikes: initiating movements (perturbations) and signaling rewards (error changes), with adaptive inhibition extracting reward changes by subtracting average reward, consistent with dopaminergic neuron responses to expected and omitted rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C95-C99 present a speculative extension of the SGDEGE framework to the basal ganglia. The analogy is conceptually interesting and supported by established knowledge about dopamine function (C97-C98) and some experimental observations (C99). However, this remains highly speculative without direct experimental support, and the manuscript appropriately presents it as a suggestion rather than a tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C73",
+      "C80",
+      "C81",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Various literature reports are cited as potentially consistent with or relevant to the proposed mechanism, including: inability to induce LTD with granule cell stimulation under standard conditions, LTP from conjunctive stimulation, plasticity at mossy fibre-nuclear synapses, burst length effects on plasticity, complex spikes before error evaluation, and the 'savings' phenomenon in motor learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C73, C80-C81, C92-C94 cite relevant literature that provides context and partial support for various aspects of the proposed mechanism. These citations are accurate and appropriately used to support specific points, though they do not constitute direct validation of the SGDEGE framework. The integration of these diverse observations strengthens the plausibility of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Electrophysiological characterization of granule cell EPSCs showed average amplitude of -62\u00b146 pA (n=58), rise and decay time constants of 0.74\u00b10.36 ms and 7.2\u00b12.7 ms, paired-pulse ratio of 1.75\u00b10.32, with no significant changes in paired-pulse ratio following any plasticity protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 present basic electrophysiological characterization data that is well-documented and analyzed. The lack of paired-pulse ratio changes (C103) suggests postsynaptic mechanisms of plasticity, which is consistent with the proposed framework. These measurements provide important quality control and mechanistic information for the plasticity experiments.",
+    "result_type": "MINOR"
+  }
+]

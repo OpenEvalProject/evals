@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C49",
+      "C50",
+      "C51",
+      "C48",
+      "C47",
+      "C104"
+    ],
+    "result": "In stau\u207b mutants, the Hb boundary (xHb) undergoes a large dynamic posterior shift of approximately 10% embryo length (EL) during nuclear cycle 14, moving from 37.6\u00b11.9% EL at 2.5 min to 47.9\u00b10.9% EL by 42.5 min, ultimately reaching a position close to the wild-type boundary position. This contrasts with the WT, where xHb moves posteriorly by only 3% EL in the first 20 min and remains relatively stable thereafter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37, C49-C51 provide consistent quantitative measurements of the large posterior shift in stau\u207b mutants using 3D imaging with controlled spatial and temporal errors. The data are supported by multiple figures (Figure 1D, Figure 1\u2014figure supplement 4) showing heat maps and quantitative boundary positions over time. The measurements are reproducible across embryos and consistent between two different stau alleles (C53-C54), strengthening the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Despite the large dynamic shift, the variability of xHb within short time windows in stau\u207b mutants is comparable to that of the WT. After de-trending the dynamic shift, the standard deviation of xHb is 1.67\u00b10.16% EL for stau\u207b mutants compared to 1.45\u00b10.14% EL for WT, with no statistically significant difference (p=0.31, F-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38, C59-C62 provide consistent evidence that short-term variability is similar between mutants and WT when temporal dynamics are properly controlled. The statistical analysis (F-test, p=0.31) appropriately tests for equal variances. The de-trending analysis is methodologically sound and necessary given the large dynamic shift. Figure 1E-G supports these claims with appropriate error estimation via bootstrapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C77",
+      "C78",
+      "C84",
+      "C85"
+    ],
+    "result": "The Bcd gradient noise in stau\u207b mutants is comparable to that of the WT throughout nc12-nc14. The relative noise of the Bcd-GFP gradient in the range 0.1-0.6 EL is 18.0\u00b12.0% for stau\u207b mutants versus 17.9\u00b11.8% for WT, and this gradient noise remains nearly constant from nc13 to nc14 in both fly lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39, C77-C78, C84-C85 are supported by live imaging measurements using improved methods (maximum projection from 5-layer z-stacks, automatic analysis). Figure 2B and 2D-F show consistent gradient noise measurements across developmental time. The methodological improvements (C127-C128) address previous measurement limitations and control for imaging artifacts (Figure 2\u2014figure supplement 1). The finding that noise remains constant despite increasing fluorescence intensity (C129) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C96",
+      "C97",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Downstream patterning genes (Eve and cephalic furrow) in stau\u207b mutants show minimal positional errors comparable to WT, approximately 1% EL. The positional errors of Kr, Eve, and CF are all comparable between stau\u207b mutants and WT, suggesting that positional noise is filtered from Bcd to Hb and then relayed between different levels of patterning genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40, C96-C97, C101-C103 are supported by measurements across multiple patterning levels shown in Figure 5. The data demonstrate that despite the large shift in Hb, the minimal positional errors (~1% EL) are similar between mutants and WT for all measured markers. The inference about noise filtering (C103) is reasonable given the observation that positional error decreases from Bcd (~2% EL) to downstream markers (~1% EL) in both genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In stau\u207b mutants, the Bcd-GFP gradient shows reduced amplitude (48\u00b17% of WT, or ~65% decrease) and increased length constant (13% increase from 18.6% to 21.1% EL, or 17% increase when correcting for GFP maturation from 15.5% to 18.2% EL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C72-C75 provide consistent quantitative measurements of Bcd gradient parameters using two-photon microscopy. Figure 2A shows the gradient profiles and exponential fits. The GFP maturation correction (C75) is appropriately applied based on previous work (Little et al., 2011; Liu et al., 2013) and shown in Figure 3\u2014figure supplement 1D. The inference that increased length constant may result from more extensively distributed bcd mRNA (C76) is supported by citations to previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C180",
+      "C44"
+    ],
+    "result": "At 16 min into nc14, the Bcd-GFP concentrations at the respective Hb boundary positions are almost the same for stau\u207b mutants and WT, suggesting that the threshold-dependent model might still apply in early nc14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C180, C44 are supported by Figure 3, which shows that after maturation correction, the Bcd concentration at xHb is similar between mutants and WT at 16 min into nc14. This observation is consistent with threshold-dependent activation at this specific timepoint. However, the claim is appropriately cautious ('might still apply') given that xHb moves substantially in stau\u207b mutants while Bcd changes only slightly, and the exact time window of validity remains uncertain (as noted in the text).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C181",
+      "C44"
+    ],
+    "result": "The results indicate that threshold-dependent activation and self-organized filtering are not mutually exclusive and could both be implemented in early Drosophila embryogenesis. The threshold-dependent model could be valid at early nc14, but the gene network then adjusts and the filtering mechanism is implemented at least from the maternal Bcd gradient to Hb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C45, C181, C44 represent the main conclusion integrating multiple experimental observations: (1) similar Bcd concentrations at xHb in early nc14 (supporting threshold-dependent model), (2) comparable gradient noise but reduced positional error (supporting filtering), and (3) similar minimal positional errors downstream despite large Hb shift (supporting noise relay). The conclusion that both mechanisms can coexist is well-supported by the data, though the exact temporal boundaries and molecular mechanisms remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C155"
+    ],
+    "result": "A minimal mathematical model reveals that the extremely large shift of the Hb boundary in stau\u207b mutants originates from both the flattened maternal Hb profiles (due to loss of Nos gradient) and the altered Bcd gradients. The model fits well with measured dynamic shifts in both stau\u207b mutants and WT, and demonstrates that depletion of the Nos gradient is necessary for the observed larger shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C141-C145, C155 are supported by the mathematical modeling shown in Figure 6D and described in Materials and methods. The model successfully reproduces the large shift in stau\u207b mutants and the smaller shift in WT. Simulations demonstrate that rescuing the Nos gradient (keeping maternal Hb as in WT) results in only ~1% EL shift, confirming the importance of Nos depletion. The model parameters are appropriately constrained by experimental measurements (Figure 6\u2014source data 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C150",
+      "C151"
+    ],
+    "result": "xHb shows significant spatial variation in stau\u207b mutants, with the ventral boundary showing an anterior shift of approximately 6% EL compared to the dorsal boundary, versus only 3% EL difference in WT. This spatial variation correlates with differences in Bcd gradient amplitude and length constant between dorsal and ventral sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C150-C151 are supported by measurements shown in Figure 1D and Figure 6\u2014figure supplement 1B-C. The spatial variation is substantially larger in stau\u207b mutants than WT. The correlation with Bcd gradient differences (ventral side shows decreased amplitude and increased length constant) is demonstrated experimentally and predicted by the model. This finding emphasizes the importance of 3D imaging and spatial control in measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The large dynamic shift of Hb appears to be dampened rather than faithfully relayed in other patterning genes. The Kr front boundary moves posteriorly by only 5% EL (stopping 3% EL from WT position), and the first Eve peak moves very little (final position 6% EL from WT), compared to the >10% EL shift in Hb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107, C91-C94 are supported by measurements shown in Figure 4A-B and Figure 4\u2014figure supplement 1. The progressive dampening of the shift from Hb to Kr to Eve is clearly demonstrated. The observation that Kr stops moving in late nc14 while Hb continues (C93-C94) provides additional evidence for the dampening mechanism. This contrasts with the additive shift observed in Bcd dosage mutants (C108-C111), suggesting a different mechanism in stau\u207b mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C156"
+    ],
+    "result": "The simplified mathematical model without cross-regulation of gap genes fails to fully predict the dynamics in Bcd1.0 mutants and nos\u207b mutants. The model predicts only 1% EL shift in Bcd1.0 (versus 4% EL experimentally), and the simulated shift slows down in later nc14 inconsistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147, C156 appropriately acknowledge limitations of the simplified model. Figure 6D shows the discrepancy between model predictions and experimental data for Bcd1.0. The authors correctly note that the model neglects gap gene cross-regulation, which likely contributes to shifts in late nc14 (C148). The acknowledgment that a more comprehensive model is needed (C157) is appropriate given these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C52",
+      "C113",
+      "C114"
+    ],
+    "result": "The large shift of xHb is observed in two independent stau alleles (stauHL54 and stauD3), confirming it is not an allele-specific feature. The newly generated stauHL54 mutant shows correct expression patterns compared to original stau\u207b mutants, and cuticle patterns are consistent with published records.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C52, C113-C114 provide important validation that the observed phenotype is not due to background mutations or allele-specific effects. Figure 1\u2014figure supplement 5 shows similar shifts in both alleles. The CRISPR-generated stauHL54 line was validated against the original stau\u207b line (Figure 4\u2014figure supplement 2) and published cuticle patterns (Figure 4\u2014figure supplement 3). This validation strengthens confidence in the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Controlling spatial and temporal measurement errors is crucial for assessing Hb boundary variability. 3D imaging with light-sheet microscopy provides better control than traditional 2D methods, with dorsal profiles showing the smallest spatial measurement errors. Without proper controls, measured variability can increase from ~1.7% EL to 4.5% EL in stau\u207b mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C63-C66, C115-C119 are well-supported by methodological comparisons shown in Figure 1\u2014figure supplement 6. The demonstration that pooling data without temporal or spatial controls dramatically increases apparent variability (C65-C66) explains discrepancies with previous studies (C33). The 3D imaging approach is validated by comparison with ImSAnE (Figure 1\u2014figure supplement 1G-I). The quantification of orientation-related errors (C119) provides important context for interpreting positional precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "stau\u207b mutants and WT show similar scaling of the Hb boundary with embryo length. Normalized relative Hb boundary positions are nearly constant, and normalized absolute positions are proportional to embryo length (R\u00b2=0.69 for WT, R\u00b2=0.66 for stau\u207b after de-trending). Without de-trending, scaling in stau\u207b mutants (R\u00b2=0.26) is inferior to WT (R\u00b2=0.71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by scaling analysis shown in Figure 1H-I. The importance of de-trending for proper scaling analysis in stau\u207b mutants (C70) is clearly demonstrated. The finding that both genotypes show similar scaling after proper normalization is consistent with the comparable short-term variability. The comparison with previous results (C71) helps reconcile apparent discrepancies in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Both furrow canal (FC) depth and nuclear shape/size are good measures of embryo age in nc14, with FC depth having better time resolution in late developmental stages. The dynamic shift in FC can vary between fly lines (w1118 versus Oregon-R).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 describe the temporal staging method used in the study. Figure 1\u2014figure supplement 2 shows the FC depth calibration curve and comparison with published data. The observation that FC dynamics differ between fly lines (C122) is important for accurate staging and is supported by comparison with Dubuis et al., 2013. This methodological detail is important for the temporal precision claimed in the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Maximum projection from a five-layer, 1-\u03bcm-spaced z-stack significantly alleviates measurement errors for Bcd gradient noise. Using this method, Bcd-GFP gradient noise is shown to be almost constant from nc13 to nc14, suggesting the noise is not dominated by Poissonian noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 describe an important methodological improvement for measuring dynamic Bcd gradient noise. Figure 2F shows the constant noise despite increasing fluorescence intensity. The inference that noise is not Poisson-dominated (C129) is reasonable given that Poisson noise would decrease as intensity increases. This methodological advance enables the key finding that gradient noise remains constant across nuclear cycles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46",
+      "C139",
+      "C148",
+      "C157",
+      "C182"
+    ],
+    "result": "Some factors other than stau could play important roles in filtering dynamic positional information. A mechanism beyond gap gene cross-regulation may contribute to the large Hb shift in stau\u207b mutants, and a comprehensive model incorporating both maternal factors and gap genes is needed to fully dissect Stau's role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46, C139, C148, C157, C182 are speculative statements about future work and unknown mechanisms. While these speculations are reasonable given the data (e.g., the timing differences between stau\u207b and other mutants, model limitations), they represent hypotheses rather than demonstrated results. The claims appropriately acknowledge uncertainty and the need for additional work, but cannot be evaluated as supported or unsupported without further experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Previous work suggested that Stau is key in controlling xHb variability, with stau being the only gene that dramatically increased variability from 1% EL to >6% EL (protein) or 4% EL (mRNA). However, different studies reported conflicting results regarding whether xHb variability depends on upstream Bcd gradients, with apparent differences in measured variability between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20-C23, C29-C33 accurately summarize prior work from Houchmandzadeh et al., 2002, He et al., 2008, and Crauk and Dostatni, 2005. These are background claims supported by appropriate citations. The current study's findings (that variability is actually comparable when properly measured) challenge the interpretation of this prior work, which is a valid scientific contribution. The discrepancies between previous studies (C29-C33) provide important context for the current work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2198 @@
+{
+  "submission": {
+    "id": "9a24eb09-8a1b-4e35-a4ec-c8045bf2b6a2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:42:34.996807Z",
+    "updated_at": "2025-12-02T19:42:34.996807Z"
+  },
+  "content": [
+    {
+      "id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "submission_id": "9a24eb09-8a1b-4e35-a4ec-c8045bf2b6a2",
+      "content_type": "manuscript",
+      "content_text": "# Why is cyclic dominance so rare?\n\n## Authors\n\n- Hye Jin Park<sup>1</sup> ([ORCID: 0000-0003-3552-6275](https://orcid.org/0000-0003-3552-6275))\n- Yuriy Pichugin<sup>1</sup> ([ORCID: 0000-0003-3078-2499](https://orcid.org/0000-0003-3078-2499))\n- Arne Traulsen<sup>1</sup> ([ORCID: 0000-0002-0669-5267](https://orcid.org/0000-0002-0669-5267)) \u2020\n\n### Affiliations\n\n1. Department of Evolutionary Theory, Max Planck Institute for Evolutionary Biology Pl\u00f6n Germany\n2. Asia Pacific Center for Theoretical Physics Pohang Republic of Korea\n\n\u2020 Corresponding author\n\n## Abstract\n\nNatural populations can contain multiple types of coexisting individuals. How does natural selection maintain such diversity within and across populations? A popular theoretical basis for the maintenance of diversity is cyclic dominance, illustrated by the rock-paper-scissor game. However, it appears difficult to find cyclic dominance in nature. Why is this the case? Focusing on continuously produced novel mutations, we theoretically addressed the rareness of cyclic dominance. We developed a model of an evolving population and studied the formation of cyclic dominance. Our results showed that the chance for cyclic dominance to emerge is lower when the newly introduced type is similar to existing types compared to the introduction of an unrelated type. This suggests that cyclic dominance is more likely to evolve through the assembly of unrelated types whereas it rarely evolves within a community of similar types.\n\n## Introduction\n\nNatural populations ranging from microbial communities to animal societies consist of many different individuals. Some individuals compete with each other to exploit a shared resource (Hardin, 1960; Connell, 1983), whereas others coexist (Morris et al., 2013). Interactions affect the death or reproduction of individuals and thus shape the composition of populations (Friedman and Gore, 2017). Different types of individuals are distinguishable at the interaction level and they have a complex interaction structure (Farahpour et al., 2018). Because interaction structures themselves can support the coexistence of multiple types, they have been extensively studied in ecology and evolution (Gross et al., 2009; Allesina and Levine, 2011). A particularly exciting type of interaction is cyclic dominance, in which each type dominates another one but is in turn dominated by a separate type, leading to a Rock-Paper-Scissors cycle (Maynard Smith, 1982; Hofbauer et al., 1998; Szab and Fth, 2007) as sketched in Figure 1A. None of the types fixates in the population, because each type is dominated by one type while it simultaneously dominates a third type. Thus, it has been argued that this type of interaction can support biodiversity (Reichenbach et al., 2007). Cyclic dominance has therefore attracted substantial attention and it has been extensively studied theoretically (Maynard Smith, 1982; Hofbauer et al., 1998; Frean and Abraham, 2001; Hauert et al., 2002; Reichenbach et al., 2007; Szab and Fth, 2007; Mathiesen et al., 2011; Jiang et al., 2011; Allesina and Levine, 2011; Szolnoki et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57857/elife-57857-fig1-v1.jpg)\n\n**Figure 1.:** In cyclic dominance, each type dominates one type and it is in turn dominated by another type. An arrow points from the dominated toward the dominant type. (A) The three actions in the game, Rock-Paper-Scissors cyclically dominate each other. (B) This game can also describe bacterial interactions (Kerr et al., 2002; Kirkup and Riley, 2004; Cascales et al., 2007): Some E. coli cells (orange) can produce a toxin that suppresses the survival of sensitive cells (blue). Hence toxin-producing cells (orange) dominate sensitive cells, whereas they are dominated by resistant cells (yellow). However in the absence of toxin-producing cells, the sensitive cells dominate resistant cells, exhibiting cyclic dominance. (C) Such dynamics can also occur in higher animals, as typified by the mating strategies of male side-blotched lizards (Sinervo and Lively, 1996; Sinervo et al., 2007): Strategies under which individual lizards guard many females (orange) can be invaded by a sneaker strategy that steals matings (yellow). If such a sneaker strategy is frequent, guarding a single mating partner (blue) can lead to higher mating success. However, once sneakers become rare again, guarding many females is beneficial, leading to cyclic dominance.\n\nA famous example of this type of cyclic dominance in biology is toxin production in Escherichia coli (Kerr et al., 2002; Kirkup and Riley, 2004; Cascales et al., 2007). Toxin-producing (or colicinogenic) E. coli cells can purge cells that are sensitive to the toxin. However such toxin producers are dominated by resistant cells that do not produce the toxin. Once common, resistant cells are again dominated by sensitive cells, which avoid the costs of resistance. This leads to cyclic dominance in a Rock-Paper-Scissors manner, as shown in Figure 1B. Another example is the mating strategies of North American side-blotched lizards Uta stansburiana (Sinervo and Lively, 1996). The strategy of males guarding several females dominates the strategy of males guarding only a single female. However, sneaky strategies under which males secretly mate with guarded females can become dominant over the strategy of males guarding several females. Once such a sneaky strategy is common, the strategy of guarding only a single female can be successful again leading to cyclic dominance among the mating types as illustrated in Figure 1C. In addition to E. coli and side-blotched lizards, other examples of cyclic dominance have been described in ecology: Stylopoma spongites (Jackson and Buss, 1975), Drosophila melanogaster (Clark et al., 2000), European lizards Lacerta vivipara (Sinervo et al., 2007), and plant systems (Taylor, 1990; Lankau and Strauss, 2007; Cameron et al., 2009). These types of cyclic dominance arise because of competition, which can happen within and between species at the same trophical level. Mating or sperm competitions are the basis of cyclic dominance within species observed in U. stansburiana and D. melanogaster, whereas common resource competition can happen both between and within species.\n\nHowever, traditional theoretical work assumes a set of predefined cyclic dominance types without asking how they developed or came together. In ecosystems, the introduction of a new species through migration can lead to such cyclic dominance. In this context, it is often termed intransitive competition (Allesina and Levine, 2011; Soliveres et al., 2015; Gallien et al., 2017). However, immigrating species can also disturb and destroy cyclic dominance. In evolving populations, new types can arise through mutation and recombination. In the same manner, mutation and recombination can lead to the formation of cyclic dominance but can also lead to types that do not fit into such types of dominance and break the cycle. A recent experimental study (Higgins et al., 2017) indicated that in the assembly of microbial ecosystems based on 20 bacterial strains found in a single grain of soil, only 3 of almost 1000 triplets exhibited cyclic dominance. Other soil bacterial species (Wright and Vetsigian, 2016; Friedman et al., 2017) also displayed a lack of cyclic dominance. This rareness is found in both soil bacteria and plant systems (Taylor, 1990). Why is it so difficult for cyclic dominance to emerge by assembly or evolution? In this study, we ask the following question theoretically: How frequent is cyclic dominance in situations in which new types constantly arise, providing an opportunity for new cycles but also breaking old cycles at the same time?\n\nForming a cyclic dominance from a single type is challenging because as soon as the second type arises, the dominance type will take over the whole population, driving extinction of the other type. Therefore, a third type must arise before the population loses either of the two previous types. Such a precise timing of the arrival of a new type is critical for developing cyclic dominance and it can occur when new types arise at a high frequency, either through high mutation rates, recombination, or immigration (Kotil and Vetsigian, 2018; Tarnita, 2018). This rapid evolution can be achieved through both high mutation rates per capita and large population sizes (Lanfear et al., 2014; Hague and Routman, 2016; Vahdati et al., 2017; Kotil and Vetsigian, 2018; Tarnita, 2018). Thus, we considered a model in which the population naturally evolves to a large population size (Park et al., 2019), which allows the development of cyclic dominances via an evolutionary process.\n\nOnce we introduced our model in more detail, we will show that the interaction of ecology and evolution leads to increasing population size. This increases the chances that cyclic dominance arises, but it remains rare. Next, we rationalize this finding: While the lifespans of cyclic and non-cyclic dominance triplets are similar, it is more difficult to form cyclic dominance compared to non-cyclic dominance. The underlying reason is that similarity between parental and offspring payoffs suppresses the formation of cyclic dominance. Finally, we discuss which genealogical structure can promote or suppress cyclic dominance.\n\n## Materials and methods\n\nInteractions between individuals affect their death or birth. A traditional model for describing an interacting population is the generalized Lotka-Volterra equation (Ginzburg et al., 1988; Bomze, 1995; Yoshida, 2003). In particular, some studies (Biancalani et al., 2015; Huang et al., 2015; Shtilerman et al., 2015; Barbier et al., 2018; Farahpour et al., 2018) assumed that the interaction determines the likelihood of death from a pairwise competition. These interaction parameters can be written as a form of a matrix, including self-interaction. However, only a few studies considered novel mutations (Huang et al., 2012; Shtilerman et al., 2015; Farahpour et al., 2018). Drawing new interaction parameters for a new type and extending the interaction matrix, we considered such a novel mutation process. In addition, the size of the interaction matrix can be reduced when types go extinct. We traced an evolving population by dealing with this dynamically changing matrix.\n\nWe built the model based on individual reaction rules\n\n$$\nI\u2192I+Ibirth\u00a0without\u00a0mutation\u00a0at\u00a0rate\u00a0\\lambda_{b}(1\u2212\\mu),I\u2192I+I^{\u2032}birth\u00a0with\u00a0mutation\u00a0at\u00a0rate\u00a0\\lambda_{b}\\mu,I\u2192\u2205background\u00a0death\u00a0at\u00a0rate\u00a0\\lambda_{d},I+J\u2192Jdeath\u00a0due\u00a0to\u00a0competition\u00a0at\u00a0rate\u00a0d_{ij},\n$$\n\nwhere I and J are individuals of types i and j, respectively. We assumed that all types are in the same trophic level, and thus there is only competition and no predation. All types have the same background birth and death rates. Only competition makes a difference (Huang et al., 2015; Farahpour et al., 2018; Park et al., 2019). Because the population always collapses when $\\lambda_{b}\\leq\\lambda_{d}$, we only focused on $\\lambda_{b}>\\lambda_{d}$. For the sake of simplicity, we only considered well-mixed populations without any other high-order interactions.\n\nFormulating the competition death rate $d_{ij}$ as a function of the payoff $A_{ij}$, we connected evolutionary game theory to the competitive Lotka-Volterra type dynamics (Huang et al., 2012; Huang et al., 2015; Park and Traulsen, 2017; Park et al., 2019; Sidhom and Galla, 2020). Note that $A_{ij}$ is the payoff of an individual of type i from the interaction with an individual of type j. Because lower payoffs should increase the probability of death, we used an exponentially decaying function for the competition death rate as follows:\n\n$$\nd_{ij}=\\alpha+e^{\u2212A_{ij}},\n$$\n\nwhere $\\alpha>0$ is the baseline death rate from competition, which ensures that the population remains bounded regardless of the value of the evolving payoffs $A_{ij}$. A larger payoff implies a lower death rate from competition. The overall competition death rate is always positive, such that we remain in the regime of the competitive Lotka-Volterra equations.\n\nFor a large population size, the abundance $x_{i}$ of type i can be described using the competitive Lotka-Volterra equation\n\n$$\n\\frac{d}{dT}x_{i}=(\\lambda_{b}\u2212\\lambda_{d})x_{i}\u2212\\sumj=1nd_{ij}x_{i}x_{j},\n$$\n\nwhere n is the number of types in the population, used as a diversity index, and T is the time. The stability of the population is determined by Equation (3). In parallel, the stability between only two types can be determined by the two associated equations in Equation (3), which are described by four payoff values of the two types.\n\nOnce a new mutant type arises during reproduction, new interactions occur. To describe these new interactions, we draw new payoff values from the parental payoff with Gaussian noise\n\n$$\nA_{i^{\u2032}j}=A_{ij}+\u03be,A_{ji^{\u2032}}=A_{ji}+\u03be,A_{i^{\u2032}i^{\u2032}}=A_{ii}+\u03be,\n$$\n\nwhere $\u03be$ is a random variable sampled from a Gaussian distribution with zero mean and variance $\\sigma^{2}$. This inheritance of payoffs with noise implies that the mutant type $i^{\u2032}$ slightly deviates from the parental type i. Here, we treat self-interaction $A_{ii}$ and interaction with other types $A_{ij(\\neqi)}$ in the same way. Because of new interactions, the population composition changes over time, as shown in Figure 2A. We let the population evolve from a single type with a randomly drawn initial payoff from the normal distribution with mean $ln\u2061(1000)$ and standard deviation 1. As a natural consequence of evolving payoffs, the average population size also evolves. Because different types are fully described by the payoff matrix, we can trace the evolving population by tracking the payoff matrix, as shown in Figure 2B. We do not consider any tradeoff: having higher payoffs does not cost anything. Hence, the evolution tends to increase the payoffs constantly and thus drives the system into a regime where payoff differences become smaller.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57857/elife-57857-fig2-v1.jpg)\n\n**Figure 2.:** (A) Sample simulation of population dynamics over time. Different colors correspond to different types. The colored area represents the abundance of each type. Time t is measured as the number of mutation events that occurred. (B) Interaction matrices between types at four different time points are marked by vertical dashed lines in panel A. Whenever a mutant emerges in the population, the diversity n increases and the payoff matrix becomes larger. Extinction of resident types can also happen because of the new mutant, reducing the size of the matrix. For example, one of the first mutant types (green) dominates the resident type (brown) and takes over the entire population. (C) Interaction structures inferred from the interaction matrices. There are three possible relationships: dominance (with two different directions indicated by an arrow from the dominated type to the dominant type), coexistence (arrows from each type to the middle), and bistability (arrows towards both types, not present here). We focused on triplets as basic substructures of the network. There are two triplets composed of three dominance links, but they have different topologies. One of them is cyclic dominance (highlighted in green), and the other is non-cyclic dominance (highlighted in yellow).\n\nTo construct a pairwise interaction network, we used the stability between two types. Hence the term interaction refers to the pairwise relationship, considering the stability between two types. There are four possible scenarios for stability (see Appendix 1):\n\nConstructing the interaction network, we can examine the formation and the collapse of cyclic dominance, as shown in Figure 2C. If the links are drawn from a random matrix, each stability scenario described above occurs with the same probability. Thus, we find a proportion of 0.50 dominance links and a proportion of 0.25 proportions for bistability and coexistence links, respectively. Because the networks can contain three different link types (dominance, bistability, and coexistence), both cyclic dominance and other types of triplets can be found. However, in the main text, we only focused on cyclic and non-cyclic dominance triplets which are composed of only dominance because the proportions of each triplet strongly depend on the proportions of link types. Hence at a given link composition (three dominance links), we investigate how often we can observe cyclic dominance compared to non-cyclic one.\n\n## Results\n\n### Evolution leads to increasing population size\n\nThe population dynamics described in Equation (1) appears simple, but its tracing is complicated because of the novel mutations. Due to the emergence of a new mutant and its consequences, the payoff matrix dynamically changes. As large payoffs lower competition death rates, types with higher payoffs are more likely to survive. Therefore, payoffs evolve to larger values, which increases the population size (Park et al., 2019). Since there is no tradeoff on the payoffs, the average payoff increases monotonically. This makes types become more similar, enhancing diversity (Scheffer and van Nes, 2006). However, the population size saturates at a certain level because of the baseline death rate $\\alpha$ corresponding to resource limitation and enters a steady state (see Appendix 2).\n\nFor small $\\alpha$ values (rich environments) in particular, the population size N at the steady state becomes large, containing many different types (see Figure 3A). This evolution toward a large population induces rapid mutation. Once the populations size becomes large, new mutant types are generated faster than in smaller populations given a fixed mutation rate per individual. In this rapid mutation regime, a new mutant can arise before the population equilibrates, thereby establishing a cyclic dominance from a timely emerged mutant (Kotil and Vetsigian, 2018). Thus, cyclic dominance can be established when the populations enters the rapid mutation regime, as shown in Figure 3B. The proportions of triplets were averaged over all surviving realizations. In principle, we can observe a triplet from $t=2$ even though there were fewer than three types on average. Because of the smaller average diversity $\u27e8n\u27e9$, there were large fluctuations in measuring the proportions of triplets in the early regime ($t\u2272100$). However, the measurement became more accurate as diversity increased.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57857/elife-57857-fig3-v1.jpg)\n\n**Figure 3.:** (A) For a low baseline death rate $\\alpha$, the population size N tends to increases with new mutations. The average population size $\u27e8N\u27e9$ and diversity $\u27e8n\u27e9$ increase. When the population size N becomes large, cyclic and non-cyclic dominance can emerge. (B) Cyclic dominance triplets were less abundant than non-cyclic ones. In the long run, the proportions saturated at around 0.0036 and 0.105 for cyclic and non-cyclic dominance, respectively. (C) To quantify the rarity of cyclic dominance compared with non-cyclic dominance, we calculate the fraction $\u03c7$ of cyclic dominance. In the early dynamics, it fluctuates because only a few realizations can form triplets because of the low average diversity. However, when large diversity is reached, the fraction became more stable, fluctuating around 0.033. This value is much smaller than the expected value when link types are randomly drawn ($\u03c7=0.25$). indicating the rareness of cyclic dominance produced by novel mutations. (Simulation details: $\\lambda_{b}=0.9$, $\\lambda_{d}=0.4$, $\\alpha=5\u22c510^{\u22126}$, $\\sigma=1$, and $\\mu=10^{\u22125}$. Unless we mentioned the parameter values, the same parameters were used for the following figures as well. The average is based on 4889 samples that did not go extinct among 5000 realizations. In each time point, the ensemble average in B and C is performed only for $n\\geq3$ at a given time.).\n\n### Cyclic dominance triplets are rare\n\nThe proportions of cyclic and non-cyclic dominance triplets increase in the early dynamics and quickly saturate. Whereas population dynamics illustrates the formation of both cyclic and non-cyclic dominance, cyclic dominance is much rarer than non-cyclic dominance. To quantify this rareness of cyclic dominance, we measured the fraction $\u03c7$, which is defined by the fraction of cyclic dominance triplets among all dominance triplets (cyclic and non-cyclic) (see Figure 3C). In steady state, the fraction yielded $\u03c7\u22480.033$, indicating that one cyclic dominance triplet can be found among 30 dominance-composed triplets. If the pairwise relationships are random (all four possible links appear in the same probability 1/4, called a random network), then the fraction $\u03c7$ of cyclic dominance should be 0.25 because there are only two configurations of cyclic dominance triplets, whereas six configurations produce non-cyclic dominance triplets. Hence cyclic dominance that developed from our population dynamics is much rarer than expected from a random choice of interactions. To elucidate why it is the case, we checked how long each triplet can be sustained in the population and how often they emerge. First, we focused on the lifetime of cyclic and non-cyclic dominance and then moved on the formation of each triplet. When it comes to the chance to emerge cyclic and non-cyclic dominance, we argued that the genealogy structure shaped by eco-evolutionary dynamics will enhance or suppress the formation of cyclic dominance.\n\n### The lifespans of cyclic and non-cyclic dominance triplets are similar\n\nThe rareness of cyclic dominance triplets may be caused by their shorter lifespan compared with that of non-cyclic dominance triplets. Thus, we investigated the lifespan of triplets first to understand the rareness of cyclic dominance. Once triplets arise in populations, we can identify them, and trace how long they persist. Lifespan distributions in the steady state of both cyclic and non-cyclic dominance triplets decayed algebraically. We plotted the complementary cumulative distribution functions (CCDFs), clearly revealing a power law decay, as shown in Figure 4A. Surprisingly, there was no difference in the lifespan of both triplets. Both cyclic and non-cyclic dominance triplets were destroyed in five mutation events on average. The non-cyclic dominance triplet has a higher chance of persisting longer, although the difference is small. In addition, the median is the same for both distributions because almost all probabilities are concentrated on short lifespans. In conclusion, lifespan does not explain why cyclic dominance is rarer than non-cyclic dominance. Hence, the lower chance for cyclic dominance to emerge is the reason.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57857/elife-57857-fig4-v1.jpg)\n\n**Figure 4.:** (A) We traced the identified cyclic and non-cyclic dominance triplets and measured their lifespan in steady state, $9500\\leqt\\leq10000$. The distributions of lifespan decayed algebraically, exhibiting a power law in the complementary cumulative distribution functions (CCDFs). The CCDF(x) shows the probability to have a lifespan longer than x. Both distributions were almost identical, but the tail component of non-cyclic dominance was slightly heavier. (B) We defined a trait vector of each type to characterize cyclic and non-cyclic dominances. A triplet consists of three vectors, and a set of scalar products can be calculated for all pairs. Scalar products are calculated after all payoffs are shifted and normalized so that the average payoffs becomes zero and the norms are one. A positive scalar product indicates that two types are similar. We used the mean and standard deviation of these similarities to characterize a triplet and draw a scatter plot. The symbols with error bars indicate the mean and standard deviation of quantities in each axis. For comparison, we performed the same calculation for random matrices. For both cyclic and non-cyclic triplets, the standard deviations of similarities are much smaller than that of random matrices. However the means of similarities for both triplets show different behavior. Types were less similar to each other in cyclic dominance compared to random matrices, while non-cyclic dominance has more similar types compared to random matrice. For this analysis, we used 1944 surviving realizations and $5\u22c510^{6}$ sets of random matrices.\n\n### The condition to form cyclic dominance is more strict than that for non-cyclic dominance\n\nWhy is it more difficult for cyclic dominance to emerge than for non-cyclic dominance? One factor is that the conditions needed for an interaction matrix to provide cyclic dominance are more restrictive than those for non-cyclic dominance. For a matrix to reveal cyclic dominance, it is necessary that in each of the three columns, the three payoffs $A_{ij}$, $A_{jj}$, and $A_{kj}$ are ordered ($A_{ij}<A_{jj}<A_{kj}$ or $A_{ij}>A_{jj}>A_{kj}$). Conversely, the formation of non-cyclic dominance requires this condition to be satisfied only in a single column, whereas the other two columns should satisfy a less restrictive condition ($A_{ij}<A_{jj}$ and $A_{kj}<A_{jj}$ or vice versa). For example, in random payoff matrices where all payoffs are randomly drawn from the standard normal distribution, the fraction of cyclic dominance is $1/13\u22480.077$ (as shown in Appendix 4), which is smaller than the value of $2/8=0.25$ expected in a random network of directed links. This is because in the matrix approach, unlike a random network, links in a triplet are interdependent; self-interaction payoffs contribute to the character of several links at once.\n\n### Similarity between parental and offspring payoffs suppresses the formation of cyclic dominance\n\nThe fraction $\u03c7\u22480.077$ in the random matrix is still larger than that obtained from our population dynamics $\u03c7\u22480.033$, implying there are other factors suppressing the development of cyclic dominance. A key reason is the correlation between payoffs. In our model, the elements of the payoff matrix are not fully independent because of heredity. Offsprings payoffs are derived from their parents payoffs. We found that this correlation between payoffs plays an important role in suppressing the formation of cyclic dominance. For example, let us imagine two different uncorrelated pre-existing types represented by a 2\u00a0\u00d7\u00a02 random matrix. All elements are drawn from the standard normal distribution. If a third type emerges from a pre-existing one by a mutation, the average fraction of cyclic dominance becomes $\u03c7\u22480.02$ (the standard normal distribution is used for new payoffs and we average across 5\u00a0105 samples), which is lower than that of the assembly of thee uncorrelated types. This is because the payoffs of a new offspring are similar to its parental payoffs: the offspring is likely to have the same relationships with other types in a population as the parental type and any type dominated by the parent will also be dominated by the offspring. The triplets including these offspring and parental types are more likely to form non-cyclic dominance than a cyclic one. Hence the correlation between payoffs affects the fractions by which cyclic dominance emerges compared with non-cyclic dominance.\n\nTo check the effect of the correlation on emerging triplets, we measured the similarity between types as a proxy of the correlation between payoffs. We defined the trait vector $T\u2192_{l}$ of the type l using the row capturing with its own payoff and the column of the others payoff against it in the payoff matrix, $T\u2192_{l}=(A_{l,i},A_{l,j},A_{l,k},A_{i,l},A_{j,l},A_{k,l})$, similarly to Farahpour et al., 2018. Because the average payoff increases over time, we shifted all elements in those vectors by a constant to ensure that the average of all values is zero. Then, using normalized vectors after shifting we calculated the scalar product for all pairs of trait vectors as a similarity measure. Larger values indicate that the two types have more similar payoff values. Each triplet has three trait vectors and thus has three similarity measures. Taking the mean and standard deviation of these three similarities, we found that in cyclic dominance the three types tend to be less similar compared to non-cyclic dominance, as shown in Figure 4B. The inheritance plays a key role in the emergence of cyclic and non-cyclic triplets, giving rise to a correlation between payoffs. Because the payoff correlation is determined by a genealogy structure, in the following we investigated which of these structures have higher or lower chances to promote the emergence of cyclic dominance.\n\n### Genealogical structure can promote or suppress cyclic dominance\n\nBetween the last common ancestor and the present types, there are intermediary types accumulating mutations between them. Genealogies tell us who is whose parent, tracing back to the common ancestor of the observed types. From the genealogy, we can infer how many mutations were accumulated by each type and the time at which they diverged. If two types have only accumulated a few mutations from the most recent common ancestor, their payoffs are likely to be similar. Hence, the genealogy structure shapes the correlation between payoffs and affects the value of fraction $\u03c7$. To study the role of genealogies, we first characterized genealogies for three types based on accumulated mutational distances, see Figure 5AB. We found that for a triplet of types, the distribution of payoff elements could be characterized by five parameters of the genealogy, which all measure the number of mutations between types w1, w2, x, y, and z (see Appendix 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57857/elife-57857-fig5-v1.jpg)\n\n**Figure 5.:** Genealogies and their effect on the fraction $\u03c7$ of cyclic dominance.(A). The scheme of genealogy. Vertical axis represents time, and horizontal axis represents mutational distance. Each solid vertical line corresponds to a single type. Horizontal lines indicate when mutation happens. Intermediary mutants can die out and a sequence of intermediary mutations is represented by a diagonal line. (B). An example of a genealogy for three types. Types i, j, and k are the types under consideration, and type o is their last common ancestor. Type n is the last common ancestor of j and k, and type m is the ancestor of the type i which existed at the moment when type j diverges from type k. Each of the three types has its own independent lineage from time $t_{d}$ on, and the fraction of accumulated mutations before and after this time determined the chance for cyclic dominance to emerge. For a list of all other possible genealogies, see Appendix 5. (C) For the sake of simplicity, we defined $F_{l}$ as the fraction of accumulated mutations after time $t_{d}$ compared to all mutations since the last common ancestor, $F_{l}=\\frac{w_{2}+y+z}{w_{2}+y+z+w_{1}+x}$. At the steady-state, when more mutations are accumulated after $t_{d}$ (large $F_{l}$ values), cyclic dominance can emerge more often by reducing the payoff correlations.\n\nWe analyzed those mutational distances for cyclic and non-cyclic triplets found in the simulation at the steady-state. From the analysis, we inferred that the crucial parameter influencing the fraction $\u03c7$ of cyclic dominance is the fraction $F_{l}$ of mutations accumulated after each type evolves independently from others (the time $t_{d}$ in Figure 5B).\n\nPayoff correlations must be developed before lineages become independent at $t_{d}$, depending on the mutational history (w1 and x). With more mutations being accumulated after the types divergence, the correlation between types becomes weaker, increasing the chance of the cyclic dominance to emerge, see Figure 5C. On the other hand, with only few mutations after $t_{d}$ the strong correlation between parental and offsprings payoffs remains, which mostly induces the emergence of non-cyclic dominance. This means that the mutations accumulated after all three types diverge are important for decoupling their payoff correlations, increasing the chance to form the cyclic dominance. This finding agrees well with numerically investigated genealogies that gave the minimal and maximal values of the fraction $\u03c7$, called minimizer and maximizer genealogies, respectively. For minimizer genealogies, the majority of mutations were accumulated before $t_{d}$ (see Appendix 6). Conversely, for maximizer genealogies, the majority of mutations were accumulated after all three lineages diverged from each other.\n\nIn addition, numerically calculated minimizer genealogies almost completely suppressed the emergence of cyclic dominance $\u03c7_{min}<0.001$. For the maximizer, the fraction could be as high as $\u03c7_{max}=1/6\u22480.167$. Both the fraction of cyclic dominance arising from the random matrix $\u03c7\u22480.077$ and that found in our simulations $\u03c7\u22480.033$ fell between the minimal and the maximal values possible with the genealogy structure. The fractions $\u03c7$ from population dynamics are closer to the minimal value, as shown in Figure 6. Therefore, we can infer that in the genealogies occurred in population dynamics, the similarity of the new types to their parental type prevents the emergence of cyclic dominance.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57857/elife-57857-fig6-v1.jpg)\n\n**Figure 6.:** We compared the fractions $\u03c7$ of cyclic dominance in the steady state for various baseline death rates $\\alpha$ from our simulations.We also denoted three reference fractions: the maximizer genealogy ($\u03c7\u22480.167$), random matrix ($\u03c7\u22480.077$), and minimizer genealogy ($\u03c7$ <0.001). For various $\\alpha$, the fractions of cyclic dominance were similar, although the average diversities in steady state were different. The majority of fractions $\u03c7$ are between the one found for the minimizer geneaology and the fraction from the random payoff matrix. This implies that in the genealogies shaped by our population dynamics, the surviving offspring type is typically similar to the parental type. Each point is averaged over the surviving samples among 5000 realizations (4897, 4908, 4903, 4886, 4901, and 4889 samples for $\\alpha=10^{\u22125},9\u22c510^{\u22126},8\u22c510^{\u22126},7\u22c510^{\u22126},6\u22c510^{\u22126},5\u22c510^{\u22126}$, respectively).\n\n## Discussion\n\nCyclic dominance is extremely interesting from a conceptual and theoretical perspective and it has thus been analyzed in great detail in mathematical biology (Hofbauer et al., 1998; Hofbauer and Sigmund, 2003; Szab and Fth, 2007). However, the theoretical literature typically refers to only a handful of examples in nature. Moreover, recent experiments have revealed that it is difficult for cyclic dominance to emerge in microbial populations (Wright and Vetsigian, 2016; Friedman et al., 2017; Higgins et al., 2017). Why is the establishment of cyclic dominance so difficult? To address this question, we used an evolutionary process with evolving interactions for the formation of such cyclic dominance instead of following the more conventional approach of using a predefined set of interactions. For example, Kotil and Vetsigian, 2018 observed the formation of cyclic dominance in the fast evolution regime with adaptation, but the involved traits were predefined. However, we argue that it is difficult for cyclic dominance to emerge even in the presence of rapid evolution. In addition, our investigation shows no correlation between diversity and the probability to find cyclic dominance. The diversity observed in our model does not originate from the cyclic dominance structure, but from the generation on a time scale that is fast compared to equilibration of the system. Our results indicate cyclic dominance in general could be a mechanism to support diversity, but it is most probably not essential in a situation where it can emerge, as such situations are characterized by a high diversity in the first place. Even if we rescale the payoffs to prevent going towards neutrality which increases diversity, cyclic dominance remains rare as long as the cyclic dominance is not a main driver for the diversity. This result is robust even when we consider the population frequency weights, see Appendix 7. In our model, the non-cyclic dominance can reach a majority of the population, while the cyclic dominance typically remains bounded to a much lower frequency.\n\nWe also examined the circumstances under which cyclic dominance can appear more frequently. While the probability of assembling such an interaction structure by chance in a payoff matrix with uncorrelated random entries is small, the probability to evolve such an interaction structure is even smaller. The inheritance of interactions from parent to offspring is a key mechanism shaping the correlations between payoffs and determines the formation of cyclic dominance. From our approach, we found that the introduction of an uncorrelated type is crucial for the formation of cyclic dominance triplets. Because the migration of new species can be interpreted as such an introduction, our results suggest that cyclic dominance might be more frequent on an inter-species basis than on an intra-species basis. As widespread intransitive competition is found in ecological systems (Soliveres et al., 2015; Gallien et al., 2017), our manuscript nicely supports the basic idea that assembly of unrelated types is more likely to lead to cyclic triplets than evolution, in which emerging types are closely related.\n\nOur approach, which reduces the complexity from continuous values to a categorical classification, may help to bridge the model dynamics and experimental data more easily. Experimental work has provided data regarding both the constituents of a microbial community but also the interactions between them. However for large communities, parameterizing all interactions in the model numerically makes it difficult to identify the fundamental factors shaping the dynamics. Reducing the complexity may permit study of the large scales of experimental data connecting the underlying model dynamics and large datasets.\n\nAn important limitation of our work is the assumption of global interactions. In our model, all individuals can interact with each other, ignoring the spatial population structure. A spatial model could localize the interactions and lead to the more frequent formation of cyclic dominance. Such a localization can foster cyclic dominance for a predefined cyclic set (Durrett and Levin, 1997; Durrett and Levin, 1998; Frean and Abraham, 2001; Reichenbach et al., 2007; Szab and Fth, 2007; Mathiesen et al., 2011; Jiang et al., 2011; Mitarai et al., 2012; Szolnoki et al., 2014; Kelsic et al., 2015; Sneppen, 2017). However, before moving into spatial models it appears essential to investigate this issue in the absence of all potentially confounding factors. Such models appear necessary for explaining why cyclic dominance within one species is not found often in nature, and they may open a new direction for the extensive theoretical work on this topic.\n",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "2972eea5-62bf-4d88-9453-aab02319fb81",
+      "submission_id": "9a24eb09-8a1b-4e35-a4ec-c8045bf2b6a2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeff Gore, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57857.sa1](https://doi.org/10.7554/eLife.57857.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe reviewers and I found your article to be an insightful perspective regarding why non-transitive (e.g. rock-paper-scissors) interactions might be rare in natural communities, despite the potential stabilizing effects that non-transitive interactions could have in sustaining diversity. In particular, your approach of analyzing the evolutionary origin of different interactions provides fascinating insight to an important problem.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Why is cyclic dominance so rare?\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Jeff Gore as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Matthieu Barbier (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation, but we encourage you to also consider the substantive points raise below.\n\nSummary:\n\nCyclic dominance has been proposed as a possible stabilizing mechanism for diversity in communities. However, empirical evidence has suggested that cyclic dominance appears to be rare. Why might this be? The authors' explanation for this observation, based on a dynamical eco-evo model and various theoretical arguments, can be summed up as follows:\n\n\u2013 When drawing a network of qualitative dominance relations, it may seem that cyclic dominance could happen often (1/4th of possible triplets if relations are drawn at random).\n\n\u2013 But when the interactions arise from an underlying matrix of payoffs, the conditions on payoffs that create cyclical dominance are actually quite constraining, happening at random only in 1/13th of triplets of dominance links (which themselves are only 1/10th of triplets, since dominance is not the only outcome: one can also observe coexistence or bistability).\n\n\u2013 And when the payoffs themselves arise from a continuous evolutionary process (where new types are introduced with small changes in payoffs from their ancestors), the probability is even lower. The authors' simulations show that it occurs only in 1/30th of dominance triplets.\n\nThe authors provide arguments for why this probability is even lower: it is due to correlations between parents and offsprings. They show in their simulation results that cyclical dominance is associated with more difference between types (measured as an overall difference in their payoffs) than non-cyclical dominance. They also run a simple genealogy process for a 3-type subcommunity (where, instead of each mutation leading to a new type that competes with all the existing types, mutations are now accumulated along genealogical branches as if, for every mutation, the parent type is automatically replaced) to show that cyclical dominance can be favored when many mutations occur after the branching out of the 3 types, thus decorrelating their properties.\n\nEssential revisions:\n\n1) The authors argue the importance of studying cyclic dominance by noting its potential to increase diversity. This paper would, therefore, be strengthened by including an analysis of whether diversity increased in simulations in which cyclic dominance emerged (or at time points during which it was present) as compared to simulations or time points in/at which there was no cyclic dominance. If there is no correlation between the emergence of cyclic dominance and increases in diversity, the authors should address this in the Discussion section. Relatedly, the authors claim in the Discussion \"our results indicate cyclic dominance can support diversity over long time scales\". We do not believe the first half of this claim (that cyclic dominance can support diversity) is currently supported by their results (it is rather from other literature).\n\n2) For readers to make sense of the triplet analysis it is necessary to know the link frequencies (e.g. between dominance, coexistence, and bistability). This can be brief (no need for a full supplementary figure in main text).\n\n3) The authors argue that it is difficult to evolve cyclic dominance due to mutants being similar to parents. The paper would therefore be strengthened by including an analysis of how the mutation size sigma influences the frequency of cyclic dominance. This is shown for the toy model in Appendix 6, but not for the main model. Many readers would likely appreciate the results of varying sigma within the main model.\n\n4) On a related note, the authors could directly measure and report on the time passed and/or number of mutations accrued since species in cyclic dominance triplets diverged from their last common ancestor and make appropriate comparisons. The current section \"Genealogical structure can promote and can suppress cyclic dominance\" could be moved to the Appendix if a direct tracing of the genealogy of triplets is added to the paper. (We found the genealogy section to be a bit difficult to parse).\n\n5) The authors could include a brief analysis of how often the species in cyclic dominance triplets gain large population fractions after emerging. This question is relevant because if the three species in a triplet never reach large population fractions then their effects on each other would presumably be small compared to the effects from other members of the population (which would not affect any of the conclusions of this paper but may affect some readers' interpretations of those conclusions).\n\n6) We believe that an outline of the whole argument (a bit like the summary that we give above) should be introduced early in the article, so that the structure is clear: currently, the text reads like a journey where we discover things on the way, but it is not always clear at first why we are doing one thing or another. In particular, something that may not be an issue for theoretical readers, but would be for a more general audience, is that it is not obvious at first which aspects of the model are going to be important or not for the argument, and therefore, whether the results are specific to the model assumptions. In summarizing the results above, we tried to present them in a way that clarifies that a large part of the argument could be made without invoking any specific simulation model. Readers may worry about the interpretation or lack of realism of some assumptions of the dynamics, when they do not really matter for the argument. This is an issue at different points in the paper: for the general eco-evo model, but also for the genealogy \"mini-model\", where a reader could find it concerning that the process is now different from the main simulation (the text makes it sound as if a type can accumulate mutations without branching out). It would be helpful for the genealogy section to introduce a quick outline of the argument it will make. We also suggest showing the Appendix 5\u2014figure 1A in the main text, maybe as a panel in Figure 5. It would help understand what this mini-model assumes compared to the main simulation model (that all branches except for 3 have disappeared or can be ignored, thus explaining what it means to \"accumulate mutations along a branch\").\n\n7) Regarding the main simulation model, there is in fact a concern that does not impact the results. A common issue in eco-evo modela is that the evolving traits will keep changing in the same direction, which is generally avoided by imposing some trade-off.\n\nAs the authors note, the average payoff here tends to increase indefinitely, which means that all competition coefficients dij eventually converge to just \u03b1. In ecological terms, we would call that going toward neutral dynamics (where all individuals have the same competition strength, both within and between types, see S.P. Hubbell's 2001 book). This issue is not deadly because, as differences of dij between types become smaller, all that really happens is that the time it takes for a type to exclude another diverges. But the qualitative nature of the relationships is not changed: there is still dominance or coexistence or bistability, even if by a very small margin. This is simply impractical because one must wait longer and longer for extinctions to actually happen (this is actually theorized in ecology: types could coexist by becoming so similar than one winning over the other takes forever, see Scheffer and van Nes, 2006). So it seems to me that the simulation would have been easier if the payoffs were relative, e.g. constantly setting the average at zero, so that interactions do not converge to neutrality.\n\nIn the same spirit:\n\n\"For small \u03b1 values (rich environments) in particular, the population size N at the steady state becomes large, containing many different types \" the value of \u03b1 should change nothing except the biomass scale (population size N ~ M lambda/alpha \u2013 incidentally, why introduce parameter M at all? it is never explained). The fact that more types exist for lower \u03b1 seems like an artefact, perhaps because it takes longer for interactions to tend toward neutrality.\n\n8) Perhaps one could directly show how adding correlations in the matrix diminishes the occurrence of cyclical dominance? This would directly show that nothing else is needed (i.e. that the eco-evo process does nothing more than add these correlations).\n\n9) It is worth noting that there is a large ecological literature about extensions of cyclic dominance to more than triplets, called intransitive competition. Some of that literature has claimed (although we are not necessarily convinced) that intransitive competition is actually common and important. We would suggest reading these articles and figuring out why their claims would be so different \u2013 and if that difference is important, then discussing it in the article.\n\nSee for instance as starting points: Soliveres et al., 2015; Gallien et al., 2017.\n",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f9e98a87-efdf-4770-b523-cd267b51986b",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C1",
+      "claim": "Natural populations can contain multiple types of coexisting individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural populations can contain multiple types of coexisting individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about natural populations presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "fc13fa5a-178c-43c1-a285-3778712dea1e",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C2",
+      "claim": "Cyclic dominance is a popular theoretical basis for the maintenance of diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "A popular theoretical basis for the maintenance of diversity is cyclic dominance, illustrated by the rock-paper-scissor game.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established theoretical understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "d5fe3a73-5a74-4874-a184-279d59fa4721",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C3",
+      "claim": "It appears difficult to find cyclic dominance in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it appears difficult to find cyclic dominance in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the empirical difficulty of finding cyclic dominance, supported by the broader context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a4e40f37-6563-4173-a700-63116f773ec1",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C4",
+      "claim": "The chance for cyclic dominance to emerge is lower when the newly introduced type is similar to existing types compared to the introduction of an unrelated type.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that the chance for cyclic dominance to emerge is lower when the newly introduced type is similar to existing types compared to the introduction of an unrelated type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the authors' theoretical model and simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "1ea2b862-e49b-49cd-92b0-a4953fbb318a",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C5",
+      "claim": "Cyclic dominance is more likely to evolve through the assembly of unrelated types whereas it rarely evolves within a community of similar types.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that cyclic dominance is more likely to evolve through the assembly of unrelated types whereas it rarely evolves within a community of similar types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the model results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "5e3cd324-85af-466b-a525-77e0d7ccd964",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C6",
+      "claim": "Some individuals compete with each other to exploit a shared resource.",
+      "claim_type": "EXPLICIT",
+      "source": "Some individuals compete with each other to exploit a shared resource (Hardin, 1960; Connell, 1983), whereas others coexist (Morris et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a5abd309-8adc-4266-bdfb-5eb60588087d",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C7",
+      "claim": "Interactions affect the death or reproduction of individuals and thus shape the composition of populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions affect the death or reproduction of individuals and thus shape the composition of populations (Friedman and Gore, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "c40e57f9-377e-43d4-a788-d8c214e372a0",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C8",
+      "claim": "Different types of individuals are distinguishable at the interaction level and they have a complex interaction structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Different types of individuals are distinguishable at the interaction level and they have a complex interaction structure (Farahpour et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "8b308019-5b6b-47cc-91e7-8db9aa7acb4d",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C9",
+      "claim": "Interaction structures themselves can support the coexistence of multiple types.",
+      "claim_type": "EXPLICIT",
+      "source": "Because interaction structures themselves can support the coexistence of multiple types, they have been extensively studied in ecology and evolution (Gross et al., 2009; Allesina and Levine, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "56546f6c-0f78-4cdc-a601-e8994aab56af",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C10",
+      "claim": "In cyclic dominance, each type dominates another one but is in turn dominated by a separate type, leading to a Rock-Paper-Scissors cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "A particularly exciting type of interaction is cyclic dominance, in which each type dominates another one but is in turn dominated by a separate type, leading to a Rock-Paper-Scissors cycle (Maynard Smith, 1982; Hofbauer et al., 1998; Szab and Fth, 2007) as sketched in Figure 1A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a definition supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "ac38971a-39c9-46ce-9d17-612674a99288",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C11",
+      "claim": "In cyclic dominance, none of the types fixates in the population because each type is dominated by one type while it simultaneously dominates a third type.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the types fixates in the population, because each type is dominated by one type while it simultaneously dominates a third type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the definition of cyclic dominance.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "dbc01772-dfda-411f-95c8-a6649a264602",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C12",
+      "claim": "Cyclic dominance can support biodiversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it has been argued that this type of interaction can support biodiversity (Reichenbach et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "94c803c0-f814-4194-b616-1024a73f5c0e",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C13",
+      "claim": "Cyclic dominance has attracted substantial attention and has been extensively studied theoretically.",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclic dominance has therefore attracted substantial attention and it has been extensively studied theoretically (Maynard Smith, 1982; Hofbauer et al., 1998; Frean and Abraham, 2001; Hauert et al., 2002; Reichenbach et al., 2007; Szab and Fth, 2007; Mathiesen et al., 2011; Jiang et al., 2011; Allesina and Levine, 2011; Szolnoki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "820295e8-a4d0-4b9d-97e9-02b1e45dbb55",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C14",
+      "claim": "Toxin production in Escherichia coli is a famous example of cyclic dominance in biology.",
+      "claim_type": "EXPLICIT",
+      "source": "A famous example of this type of cyclic dominance in biology is toxin production in Escherichia coli (Kerr et al., 2002; Kirkup and Riley, 2004; Cascales et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "617961a1-1d5b-4a0b-880d-7c59a7875ff0",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C15",
+      "claim": "Toxin-producing E. coli cells can purge cells that are sensitive to the toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Toxin-producing (or colicinogenic) E. coli cells can purge cells that are sensitive to the toxin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the biological interaction in E. coli, supported by the context and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "461d69b9-8031-4fcb-82d4-b587ea3f209c",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C16",
+      "claim": "Toxin-producing E. coli are dominated by resistant cells that do not produce the toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "However such toxin producers are dominated by resistant cells that do not produce the toxin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the biological interaction in E. coli, supported by the context and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "2af52e9d-040d-4293-aebc-755b2d2d6fb4",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C17",
+      "claim": "Resistant E. coli cells are dominated by sensitive cells, which avoid the costs of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Once common, resistant cells are again dominated by sensitive cells, which avoid the costs of resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the biological interaction in E. coli, supported by the context and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "3056b430-2182-4473-8e49-9d075b164b4f",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C18",
+      "claim": "The mating strategies of North American side-blotched lizards Uta stansburiana exhibit cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is the mating strategies of North American side-blotched lizards Uta stansburiana (Sinervo and Lively, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "0192faf8-9189-4e60-81f0-65200933df71",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C19",
+      "claim": "In side-blotched lizards, the strategy of males guarding several females dominates the strategy of males guarding only a single female.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategy of males guarding several females dominates the strategy of males guarding only a single female.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mating strategy dynamics in lizards, supported by the context and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a195b9de-88cb-44cf-8d8d-3cde7dd2ff9a",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C20",
+      "claim": "In side-blotched lizards, sneaky strategies can become dominant over the strategy of males guarding several females.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sneaky strategies under which males secretly mate with guarded females can become dominant over the strategy of males guarding several females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mating strategy dynamics in lizards, supported by the context and citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "8f0a4ccd-5d8e-4960-942a-fe3476d4dbd4",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C21",
+      "claim": "In side-blotched lizards, once the sneaky strategy is common, the strategy of guarding only a single female can be successful again.",
+      "claim_type": "EXPLICIT",
+      "source": "Once such a sneaky strategy is common, the strategy of guarding only a single female can be successful again leading to cyclic dominance among the mating types as illustrated in Figure 1C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the mating strategy dynamics in lizards, supported by the context, citations, and Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "2b1c8e6a-c6de-4252-a2ba-14a152284f5f",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C22",
+      "claim": "Examples of cyclic dominance have been described in Stylopoma spongites.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to E. coli and side-blotched lizards, other examples of cyclic dominance have been described in ecology: Stylopoma spongites (Jackson and Buss, 1975), Drosophila melanogaster (Clark et al., 2000), European lizards Lacerta vivipara (Sinervo et al., 2007), and plant systems (Taylor, 1990; Lankau and Strauss, 2007; Cameron et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "803db260-a7db-4764-bfdc-c3070028047a",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C23",
+      "claim": "Examples of cyclic dominance have been described in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to E. coli and side-blotched lizards, other examples of cyclic dominance have been described in ecology: Stylopoma spongites (Jackson and Buss, 1975), Drosophila melanogaster (Clark et al., 2000), European lizards Lacerta vivipara (Sinervo et al., 2007), and plant systems (Taylor, 1990; Lankau and Strauss, 2007; Cameron et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "4b1a24a2-9dbf-403a-821f-0f83895ade4c",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C24",
+      "claim": "Examples of cyclic dominance have been described in European lizards Lacerta vivipara.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to E. coli and side-blotched lizards, other examples of cyclic dominance have been described in ecology: Stylopoma spongites (Jackson and Buss, 1975), Drosophila melanogaster (Clark et al., 2000), European lizards Lacerta vivipara (Sinervo et al., 2007), and plant systems (Taylor, 1990; Lankau and Strauss, 2007; Cameron et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "5d4f8d6d-12c4-453e-91ab-547f3c52f0e2",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C25",
+      "claim": "Examples of cyclic dominance have been described in plant systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to E. coli and side-blotched lizards, other examples of cyclic dominance have been described in ecology: Stylopoma spongites (Jackson and Buss, 1975), Drosophila melanogaster (Clark et al., 2000), European lizards Lacerta vivipara (Sinervo et al., 2007), and plant systems (Taylor, 1990; Lankau and Strauss, 2007; Cameron et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "e3e72585-92c3-47b3-9260-1e70f68577dc",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C26",
+      "claim": "Cyclic dominance arises because of competition, which can happen within and between species at the same trophical level.",
+      "claim_type": "EXPLICIT",
+      "source": "These types of cyclic dominance arise because of competition, which can happen within and between species at the same trophical level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the examples provided and general ecological knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "e473f61f-eaf6-49a3-a99e-6b1a4430751d",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C27",
+      "claim": "Traditional theoretical work assumes a set of predefined cyclic dominance types without asking how they developed or came together.",
+      "claim_type": "EXPLICIT",
+      "source": "However, traditional theoretical work assumes a set of predefined cyclic dominance types without asking how they developed or came together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of previous theoretical approaches in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "d5450bc6-fc20-47b7-99d0-5fe7390bb1dd",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C28",
+      "claim": "In ecosystems, the introduction of a new species through migration can lead to cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "In ecosystems, the introduction of a new species through migration can lead to such cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ecological processes that can lead to cyclic dominance.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "6b902923-d376-46ff-a873-4721ab4be940",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C29",
+      "claim": "Immigrating species can disturb and destroy cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, immigrating species can also disturb and destroy cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ecological processes that can affect cyclic dominance.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "14a48e65-e552-4d97-9215-11a8dc444d29",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C30",
+      "claim": "In evolving populations, new types can arise through mutation and recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "In evolving populations, new types can arise through mutation and recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about evolutionary processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "63900058-02f4-4083-b26f-23cf58bfdffd",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C31",
+      "claim": "Mutation and recombination can lead to the formation of cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same manner, mutation and recombination can lead to the formation of cyclic dominance but can also lead to types that do not fit into such types of dominance and break the cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about evolutionary processes that can lead to cyclic dominance.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "0755ba65-aae5-49f8-81b8-a2a4f15ab57c",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C32",
+      "claim": "Mutation and recombination can lead to types that do not fit into cyclic dominance and break the cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same manner, mutation and recombination can lead to the formation of cyclic dominance but can also lead to types that do not fit into such types of dominance and break the cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about evolutionary processes that can affect cyclic dominance.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "35d36bb8-b581-4e31-9f7b-4a5eabd29e46",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C33",
+      "claim": "In the assembly of microbial ecosystems based on 20 bacterial strains found in a single grain of soil, only 3 of almost 1000 triplets exhibited cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent experimental study (Higgins et al., 2017) indicated that in the assembly of microbial ecosystems based on 20 bacterial strains found in a single grain of soil, only 3 of almost 1000 triplets exhibited cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "7956ce93-fad4-4946-8573-03080c8915dc",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C34",
+      "claim": "Other soil bacterial species also displayed a lack of cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Other soil bacterial species (Wright and Vetsigian, 2016; Friedman et al., 2017) also displayed a lack of cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "9350d4f6-5c3b-4acd-8e41-0ec9d4bcdee3",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C35",
+      "claim": "Rareness of cyclic dominance is found in both soil bacteria and plant systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This rareness is found in both soil bacteria and plant systems (Taylor, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "bab942bf-24d9-4d5a-af5e-3615e191a337",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C36",
+      "claim": "Forming a cyclic dominance from a single type is challenging because as soon as the second type arises, the dominance type will take over the whole population, driving extinction of the other type.",
+      "claim_type": "EXPLICIT",
+      "source": "Forming a cyclic dominance from a single type is challenging because as soon as the second type arises, the dominance type will take over the whole population, driving extinction of the other type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the difficulty of forming cyclic dominance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "8ce9f74b-c6cb-4f6d-b2ff-3533b823fc80",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C37",
+      "claim": "A third type must arise before the population loses either of the two previous types for cyclic dominance to form.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a third type must arise before the population loses either of the two previous types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the conditions needed for cyclic dominance to form.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "b0501122-fb95-49c1-9503-181b7bbb0f24",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C38",
+      "claim": "Precise timing of the arrival of a new type is critical for developing cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a precise timing of the arrival of a new type is critical for developing cyclic dominance and it can occur when new types arise at a high frequency, either through high mutation rates, recombination, or immigration (Kotil and Vetsigian, 2018; Tarnita, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and logical inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "7f296b30-6a87-49af-a00d-8c7a4d1d10ec",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C39",
+      "claim": "Rapid evolution can be achieved through both high mutation rates per capita and large population sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "This rapid evolution can be achieved through both high mutation rates per capita and large population sizes (Lanfear et al., 2014; Hague and Routman, 2016; Vahdati et al., 2017; Kotil and Vetsigian, 2018; Tarnita, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "94d11c45-a4aa-4cec-92be-3c4ed4e76825",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C40",
+      "claim": "The model considers a population that naturally evolves to a large population size.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we considered a model in which the population naturally evolves to a large population size (Park et al., 2019), which allows the development of cyclic dominances via an evolutionary process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model used in the study, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "b56e3d73-cf4e-4ef2-a402-4e714a5c2b43",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C41",
+      "claim": "The interaction of ecology and evolution leads to increasing population size.",
+      "claim_type": "EXPLICIT",
+      "source": "Once we introduced our model in more detail, we will show that the interaction of ecology and evolution leads to increasing population size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "d684e9f8-5dd8-49a2-b419-1af959a86b55",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C42",
+      "claim": "Increasing population size increases the chances that cyclic dominance arises, but it remains rare.",
+      "claim_type": "EXPLICIT",
+      "source": "This increases the chances that cyclic dominance arises, but it remains rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a95281e2-fe0a-4627-b9fe-21c5b00e55d1",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C43",
+      "claim": "The lifespans of cyclic and non-cyclic dominance triplets are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we rationalize this finding: While the lifespans of cyclic and non-cyclic dominance triplets are similar, it is more difficult to form cyclic dominance compared to non-cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "84734538-ca7a-451e-8a4b-e2bd1192734b",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C44",
+      "claim": "It is more difficult to form cyclic dominance compared to non-cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we rationalize this finding: While the lifespans of cyclic and non-cyclic dominance triplets are similar, it is more difficult to form cyclic dominance compared to non-cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "d09d760b-aa0b-482f-b47a-0586b5102bf4",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C45",
+      "claim": "Similarity between parental and offspring payoffs suppresses the formation of cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying reason is that similarity between parental and offspring payoffs suppresses the formation of cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "95cd74e7-74db-4233-a2a9-90f64d96e19a",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C46",
+      "claim": "A traditional model for describing an interacting population is the generalized Lotka-Volterra equation.",
+      "claim_type": "EXPLICIT",
+      "source": "A traditional model for describing an interacting population is the generalized Lotka-Volterra equation (Ginzburg et al., 1988; Bomze, 1995; Yoshida, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "6192a977-3ef5-46fa-a36f-e1eeb480ba67",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C47",
+      "claim": "Some studies assumed that the interaction determines the likelihood of death from a pairwise competition.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, some studies (Biancalani et al., 2015; Huang et al., 2015; Shtilerman et al., 2015; Barbier et al., 2018; Farahpour et al., 2018) assumed that the interaction determines the likelihood of death from a pairwise competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "3c5ef77e-f694-4d38-8e14-d46ecc7f5bf0",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C49",
+      "claim": "All types have the same background birth and death rates in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "All types have the same background birth and death rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a0884252-c4c1-406f-a985-997c34aef94a",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C50",
+      "claim": "Only competition makes a difference between types in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Only competition makes a difference (Huang et al., 2015; Farahpour et al., 2018; Park et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model assumptions, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "bbd4c838-8a0e-44b4-a951-0f37a68b045f",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C52",
+      "claim": "The model considers well-mixed populations without any other high-order interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "For the sake of simplicity, we only considered well-mixed populations without any other high-order interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "4b0a8c82-edbc-4f37-a779-c201d29b6927",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C53",
+      "claim": "Lower payoffs increase the probability of death in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Because lower payoffs should increase the probability of death, we used an exponentially decaying function for the competition death rate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the model translates payoffs to death rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "8ff4cf5d-d954-429e-8e6c-3e51658d8230",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C54",
+      "claim": "A larger payoff implies a lower death rate from competition.",
+      "claim_type": "EXPLICIT",
+      "source": "A larger payoff implies a lower death rate from competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "e3a5cb6e-9602-443e-8c46-7983e73d9b59",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C55",
+      "claim": "The overall competition death rate is always positive in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall competition death rate is always positive, such that we remain in the regime of the competitive Lotka-Volterra equations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model constraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "9de66eea-d4fd-4328-bdfa-1554cd10ac76",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C56",
+      "claim": "Offspring payoffs are derived from their parents payoffs with Gaussian noise.",
+      "claim_type": "EXPLICIT",
+      "source": "To describe these new interactions, we draw new payoff values from the parental payoff with Gaussian noise",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mutation mechanism in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "bd66b434-08dc-458e-807a-98289f837d16",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C59",
+      "claim": "As a natural consequence of evolving payoffs, the average population size also evolves.",
+      "claim_type": "EXPLICIT",
+      "source": "As a natural consequence of evolving payoffs, the average population size also evolves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "cd77aab5-8d60-417f-92ad-91e26be1afe4",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C60",
+      "claim": "The model does not consider any tradeoff: having higher payoffs does not cost anything.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not consider any tradeoff: having higher payoffs does not cost anything.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a77687fb-09fe-4383-a14e-d4c3eeab8a82",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C61",
+      "claim": "The evolution tends to increase the payoffs constantly and thus drives the system into a regime where payoff differences become smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the evolution tends to increase the payoffs constantly and thus drives the system into a regime where payoff differences become smaller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "7a9aa3aa-081f-406e-b8a5-67a61d0fe19f",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C62",
+      "claim": "Payoffs evolve to larger values, which increases the population size.",
+      "claim_type": "EXPLICIT",
+      "source": "As large payoffs lower competition death rates, types with higher payoffs are more likely to survive. Therefore, payoffs evolve to larger values, which increases the population size (Park et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model dynamics, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "1d507460-97c7-41e4-83be-314201446a7f",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C63",
+      "claim": "Since there is no tradeoff on the payoffs, the average payoff increases monotonically.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there is no tradeoff on the payoffs, the average payoff increases monotonically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "12bd4d77-d7c0-4e6a-bf98-fb3189a9f0ef",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C64",
+      "claim": "Monotonically increasing payoffs make types become more similar, enhancing diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes types become more similar, enhancing diversity (Scheffer and van Nes, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model dynamics, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "c53bf778-af4e-4194-96c9-c701d5621d75",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C67",
+      "claim": "Evolution toward a large population induces rapid mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "This evolution toward a large population induces rapid mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "554c3ea6-badf-4496-8323-d1b51fa71e7f",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C68",
+      "claim": "Once the population size becomes large, new mutant types are generated faster than in smaller populations given a fixed mutation rate per individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the populations size becomes large, new mutant types are generated faster than in smaller populations given a fixed mutation rate per individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of having more individuals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "235dcb39-932f-4617-a22f-2ef2dec07b6e",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C69",
+      "claim": "In the rapid mutation regime, a new mutant can arise before the population equilibrates, thereby establishing cyclic dominance from a timely emerged mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In this rapid mutation regime, a new mutant can arise before the population equilibrates, thereby establishing a cyclic dominance from a timely emerged mutant (Kotil and Vetsigian, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the conditions for cyclic dominance formation, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a410fd2f-2f21-41f8-9d31-685dfe134a15",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C70",
+      "claim": "Cyclic dominance can be established when the population enters the rapid mutation regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cyclic dominance can be established when the populations enters the rapid mutation regime, as shown in Figure 3B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations, illustrated in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "42b66a70-7c2c-4139-9fc4-44926bbe603b",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C71",
+      "claim": "In the long run, the proportions of cyclic and non-cyclic dominance saturated at around 0.0036 and 0.105, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the long run, the proportions saturated at around 0.0036 and 0.105 for cyclic and non-cyclic dominance, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "7ef31bd1-69aa-4fa7-b96a-70ea0b105e1d",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C72",
+      "claim": "The fraction \u03c7 of cyclic dominance in steady state is approximately 0.033.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when large diversity is reached, the fraction became more stable, fluctuating around 0.033.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "b7d43a4a-8791-4f5f-831f-2760ef9b07ac",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C74",
+      "claim": "The proportions of cyclic and non-cyclic dominance triplets increase in the early dynamics and quickly saturate.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportions of cyclic and non-cyclic dominance triplets increase in the early dynamics and quickly saturate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "89d3f50e-0717-4d97-8c4d-9e2b0d498eb4",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C75",
+      "claim": "Cyclic dominance is much rarer than non-cyclic dominance in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas population dynamics illustrates the formation of both cyclic and non-cyclic dominance, cyclic dominance is much rarer than non-cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "44eebbd9-b0dd-4064-87cd-ad20c2f6b52e",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C77",
+      "claim": "Cyclic dominance that developed from the population dynamics is much rarer than expected from a random choice of interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence cyclic dominance that developed from our population dynamics is much rarer than expected from a random choice of interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the model results and a theoretical baseline.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "eb3f2b36-4d1d-4a9d-a25a-0edbe4979392",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C78",
+      "claim": "Lifespan distributions in the steady state of both cyclic and non-cyclic dominance triplets decayed algebraically.",
+      "claim_type": "EXPLICIT",
+      "source": "Lifespan distributions in the steady state of both cyclic and non-cyclic dominance triplets decayed algebraically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "2bde1d42-c9a6-44d9-9270-bec91795fd32",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C79",
+      "claim": "There was no difference in the lifespan of both cyclic and non-cyclic dominance triplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, there was no difference in the lifespan of both triplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "0bcdf1b6-b827-457f-9cb0-e321f7cd7e70",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C80",
+      "claim": "Both cyclic and non-cyclic dominance triplets were destroyed in five mutation events on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cyclic and non-cyclic dominance triplets were destroyed in five mutation events on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the analysis of model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "bb317ad4-a5ab-4f2d-a6ca-ce265924d0ca",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C81",
+      "claim": "The non-cyclic dominance triplet has a higher chance of persisting longer, although the difference is small.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-cyclic dominance triplet has a higher chance of persisting longer, although the difference is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "45ff0751-62e5-40b0-95df-a64f281dda60",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C82",
+      "claim": "Lifespan does not explain why cyclic dominance is rarer than non-cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, lifespan does not explain why cyclic dominance is rarer than non-cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the lifespan analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "8a29f7a4-0569-4521-8e63-68e7b3c4ca54",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C83",
+      "claim": "The lower chance for cyclic dominance to emerge is the reason for its rarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the lower chance for cyclic dominance to emerge is the reason.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of formation and lifespan.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "b6856e6a-fabf-4243-b3dd-3b1f6d94b658",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C84",
+      "claim": "The conditions needed for an interaction matrix to provide cyclic dominance are more restrictive than those for non-cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "One factor is that the conditions needed for an interaction matrix to provide cyclic dominance are more restrictive than those for non-cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analytical finding about the mathematical constraints.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "c83b1c66-b5f5-4b63-875c-befc7af48c75",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C88",
+      "claim": "In the matrix approach, links in a triplet are interdependent; self-interaction payoffs contribute to the character of several links at once.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because in the matrix approach, unlike a random network, links in a triplet are interdependent; self-interaction payoffs contribute to the character of several links at once.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for why the matrix approach differs from random networks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "5964ac06-7b94-4274-956f-1f71b1d94f85",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C90",
+      "claim": "The correlation between payoffs plays an important role in suppressing the formation of cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this correlation between payoffs plays an important role in suppressing the formation of cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "0d08ebe1-a985-4b5c-b69b-b69afe8dee64",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C92",
+      "claim": "The payoffs of a new offspring are similar to its parental payoffs.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the payoffs of a new offspring are similar to its parental payoffs: the offspring is likely to have the same relationships with other types in a population as the parental type and any type dominated by the parent will also be dominated by the offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on the model's mutation mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "50757578-41da-4364-8f08-10357e754fd5",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C93",
+      "claim": "Triplets including offspring and parental types are more likely to form non-cyclic dominance than cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "The triplets including these offspring and parental types are more likely to form non-cyclic dominance than a cyclic one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the similarity between parent and offspring.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "63ad3e24-3bda-4efe-adb5-70fac933b5f2",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C94",
+      "claim": "The correlation between payoffs affects the fractions by which cyclic dominance emerges compared with non-cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence the correlation between payoffs affects the fractions by which cyclic dominance emerges compared with non-cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of payoff correlations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "c9b6efbe-2d3b-4252-ab19-41d7881a8c8d",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C95",
+      "claim": "In cyclic dominance, the three types tend to be less similar compared to non-cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking the mean and standard deviation of these three similarities, we found that in cyclic dominance the three types tend to be less similar compared to non-cyclic dominance, as shown in Figure 4B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of trait vectors, illustrated in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "4c97dcce-a303-4725-b261-c77a34ccee49",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C96",
+      "claim": "The inheritance plays a key role in the emergence of cyclic and non-cyclic triplets, giving rise to a correlation between payoffs.",
+      "claim_type": "EXPLICIT",
+      "source": "The inheritance plays a key role in the emergence of cyclic and non-cyclic triplets, giving rise to a correlation between payoffs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "19b692c7-8d73-4530-b763-e1d2a3202e40",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C97",
+      "claim": "The payoff correlation is determined by a genealogy structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the payoff correlation is determined by a genealogy structure, in the following we investigated which of these structures have higher or lower chances to promote the emergence of cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the relationship between genealogy and payoff correlation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "57d31892-6563-4595-8c89-ffc637c01a6e",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C98",
+      "claim": "The distribution of payoff elements for a triplet of types can be characterized by five parameters of the genealogy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for a triplet of types, the distribution of payoff elements could be characterized by five parameters of the genealogy, which all measure the number of mutations between types w1, w2, x, y, and z (see Appendix 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genealogical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "17f05c17-ab82-40a8-8efe-9007327fdbab",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C100",
+      "claim": "With more mutations being accumulated after the types divergence, the correlation between types becomes weaker, increasing the chance of cyclic dominance to emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "With more mutations being accumulated after the types divergence, the correlation between types becomes weaker, increasing the chance of the cyclic dominance to emerge, see Figure 5C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the genealogical analysis, illustrated in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "ecf9c692-3c74-4990-8f5e-293f551d32ef",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C102",
+      "claim": "The mutations accumulated after all three types diverge are important for decoupling their payoff correlations, increasing the chance to form cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the mutations accumulated after all three types diverge are important for decoupling their payoff correlations, increasing the chance to form the cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the genealogical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "95c69051-0aad-46c8-ad11-a7dd8660e20c",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C104",
+      "claim": "For maximizer genealogies, the majority of mutations were accumulated after all three lineages diverged from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, for maximizer genealogies, the majority of mutations were accumulated after all three lineages diverged from each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the numerical investigation of genealogies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "22a55b7f-39b1-45ac-ac32-a54984ee09cb",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C109",
+      "claim": "In the genealogies occurring in population dynamics, the similarity of the new types to their parental type prevents the emergence of cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we can infer that in the genealogies occurred in population dynamics, the similarity of the new types to their parental type prevents the emergence of cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of genealogies and simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "9f96d055-0d9b-4867-a308-510b07ed94c3",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C112",
+      "claim": "In the genealogies shaped by the population dynamics, the surviving offspring type is typically similar to the parental type.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that in the genealogies shaped by our population dynamics, the surviving offspring type is typically similar to the parental type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "72367a55-61ce-4862-af61-ee80c883fcc9",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C113",
+      "claim": "Recent experiments have revealed that it is difficult for cyclic dominance to emerge in microbial populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recent experiments have revealed that it is difficult for cyclic dominance to emerge in microbial populations (Wright and Vetsigian, 2016; Friedman et al., 2017; Higgins et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a0d219b8-05a2-45d5-ae21-4ec570635ab4",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C114",
+      "claim": "The study used an evolutionary process with evolving interactions for the formation of cyclic dominance instead of using a predefined set of interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this question, we used an evolutionary process with evolving interactions for the formation of such cyclic dominance instead of following the more conventional approach of using a predefined set of interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "30feb80a-719a-4c24-a137-bce9c33bdfec",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C115",
+      "claim": "Kotil and Vetsigian, 2018 observed the formation of cyclic dominance in the fast evolution regime with adaptation, but the involved traits were predefined.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Kotil and Vetsigian, 2018 observed the formation of cyclic dominance in the fast evolution regime with adaptation, but the involved traits were predefined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "f5239089-8c0f-4844-9396-612da299d588",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C116",
+      "claim": "It is difficult for cyclic dominance to emerge even in the presence of rapid evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we argue that it is difficult for cyclic dominance to emerge even in the presence of rapid evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "e0aa7901-d8ff-4b2b-840d-8ab277e99d22",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C117",
+      "claim": "The investigation shows no correlation between diversity and the probability to find cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our investigation shows no correlation between diversity and the probability to find cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a652183a-5dbc-4957-a0b1-10a89903f9d8",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C118",
+      "claim": "The diversity observed in the model does not originate from the cyclic dominance structure, but from the generation on a time scale that is fast compared to equilibration of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversity observed in our model does not originate from the cyclic dominance structure, but from the generation on a time scale that is fast compared to equilibration of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the source of diversity in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "705dc694-6663-433c-be2b-bef7660766ab",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C119",
+      "claim": "Cyclic dominance in general could be a mechanism to support diversity, but it is most probably not essential in a situation where it can emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate cyclic dominance in general could be a mechanism to support diversity, but it is most probably not essential in a situation where it can emerge, as such situations are characterized by a high diversity in the first place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "2d538611-01f9-4e1a-92e1-e3bbda899966",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C120",
+      "claim": "Even if payoffs are rescaled to prevent going towards neutrality which increases diversity, cyclic dominance remains rare as long as the cyclic dominance is not a main driver for the diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if we rescale the payoffs to prevent going towards neutrality which increases diversity, cyclic dominance remains rare as long as the cyclic dominance is not a main driver for the diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from additional model analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a73a2b46-5ef3-4525-bdd6-a5ae72ef6f87",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C121",
+      "claim": "The result about the rarity of cyclic dominance is robust even when population frequency weights are considered.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is robust even when we consider the population frequency weights, see Appendix 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from additional model analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "0b5df4e4-7005-40ad-aff4-193f2e32a901",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C122",
+      "claim": "In the model, the non-cyclic dominance can reach a majority of the population, while the cyclic dominance typically remains bounded to a much lower frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the non-cyclic dominance can reach a majority of the population, while the cyclic dominance typically remains bounded to a much lower frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "40a7818d-b1af-45ff-bcc8-540ebdc5a99f",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C123",
+      "claim": "The probability of assembling cyclic dominance by chance in a payoff matrix with uncorrelated random entries is small.",
+      "claim_type": "EXPLICIT",
+      "source": "While the probability of assembling such an interaction structure by chance in a payoff matrix with uncorrelated random entries is small, the probability to evolve such an interaction structure is even smaller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between random assembly and evolutionary processes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "7d6812d8-da42-4a04-8626-4b591e3b4ae3",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C124",
+      "claim": "The probability to evolve cyclic dominance is even smaller than the probability of assembling it by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "While the probability of assembling such an interaction structure by chance in a payoff matrix with uncorrelated random entries is small, the probability to evolve such an interaction structure is even smaller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between random assembly and evolutionary processes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "3d4bf3d9-b3e1-48db-bdec-f3b1097b546e",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C125",
+      "claim": "The inheritance of interactions from parent to offspring is a key mechanism shaping the correlations between payoffs and determines the formation of cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "The inheritance of interactions from parent to offspring is a key mechanism shaping the correlations between payoffs and determines the formation of cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "ee51ae05-367d-4004-8fb8-9682d969ee60",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C126",
+      "claim": "The introduction of an uncorrelated type is crucial for the formation of cyclic dominance triplets.",
+      "claim_type": "EXPLICIT",
+      "source": "From our approach, we found that the introduction of an uncorrelated type is crucial for the formation of cyclic dominance triplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "0e5f2f2d-98b1-4735-a7e1-61d59561e068",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C127",
+      "claim": "The migration of new species can be interpreted as the introduction of an uncorrelated type.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the migration of new species can be interpreted as such an introduction, our results suggest that cyclic dominance might be more frequent on an inter-species basis than on an intra-species basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model results in an ecological context.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "31dd6fa5-5cce-4f1e-9f99-4cb42f1e49d7",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C128",
+      "claim": "Cyclic dominance might be more frequent on an inter-species basis than on an intra-species basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the migration of new species can be interpreted as such an introduction, our results suggest that cyclic dominance might be more frequent on an inter-species basis than on an intra-species basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the model results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "8d1127a9-06c1-48e0-8057-cfe26dc1fde5",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C129",
+      "claim": "Widespread intransitive competition is found in ecological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "As widespread intransitive competition is found in ecological systems (Soliveres et al., 2015; Gallien et al., 2017), our manuscript nicely supports the basic idea that assembly of unrelated types is more likely to lead to cyclic triplets than evolution, in which emerging types are closely related.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "3204428b-cbad-4624-afe2-78bc54683924",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C130",
+      "claim": "Assembly of unrelated types is more likely to lead to cyclic triplets than evolution, in which emerging types are closely related.",
+      "claim_type": "EXPLICIT",
+      "source": "As widespread intransitive competition is found in ecological systems (Soliveres et al., 2015; Gallien et al., 2017), our manuscript nicely supports the basic idea that assembly of unrelated types is more likely to lead to cyclic triplets than evolution, in which emerging types are closely related.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "7607e1f9-9ddc-449f-ab42-71bf867c9e34",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C131",
+      "claim": "The approach of reducing complexity from continuous values to categorical classification may help to bridge the model dynamics and experimental data more easily.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach, which reduces the complexity from continuous values to a categorical classification, may help to bridge the model dynamics and experimental data more easily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential utility of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "233c9806-599f-4987-bf0a-ed5a5fe970a7",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C132",
+      "claim": "Reducing the complexity may permit study of the large scales of experimental data connecting the underlying model dynamics and large datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the complexity may permit study of the large scales of experimental data connecting the underlying model dynamics and large datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential utility of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "bba3ff90-6221-4613-a47e-0d6a063018d1",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C133",
+      "claim": "An important limitation of the work is the assumption of global interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "An important limitation of our work is the assumption of global interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a model limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "4a7f2767-a4bd-421e-bda2-6e40cecbe999",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C134",
+      "claim": "In the model, all individuals can interact with each other, ignoring the spatial population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, all individuals can interact with each other, ignoring the spatial population structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "cd4d3252-4077-4d0e-b766-c8b7d06de950",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C135",
+      "claim": "A spatial model could localize the interactions and lead to the more frequent formation of cyclic dominance.",
+      "claim_type": "EXPLICIT",
+      "source": "A spatial model could localize the interactions and lead to the more frequent formation of cyclic dominance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential extensions of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a1c2d037-ca09-4ec1-b6d1-d1c1fd39881e",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C136",
+      "claim": "Localization can foster cyclic dominance for a predefined cyclic set.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a localization can foster cyclic dominance for a predefined cyclic set (Durrett and Levin, 1997; Durrett and Levin, 1998; Frean and Abraham, 2001; Reichenbach et al., 2007; Szab and Fth, 2007; Mathiesen et al., 2011; Jiang et al., 2011; Mitarai et al., 2012; Szolnoki et al., 2014; Kelsic et al., 2015; Sneppen, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "eb011474-0a67-47c0-b462-030fc6b195fb",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C137",
+      "claim": "It appears essential to investigate the issue of cyclic dominance rarity in the absence of all potentially confounding factors before moving into spatial models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, before moving into spatial models it appears essential to investigate this issue in the absence of all potentially confounding factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for the modeling approach taken.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "69f11950-69df-49ed-84df-387cd3a6d44e",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "claim_id": "C138",
+      "claim": "Non-spatial models appear necessary for explaining why cyclic dominance within one species is not found often in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Such models appear necessary for explaining why cyclic dominance within one species is not found often in nature, and they may open a new direction for the extensive theoretical work on this topic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the importance of the modeling approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7d87fb3e-acd8-4749-93e4-0d23c76def59",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The model demonstrates that eco-evolutionary dynamics naturally lead to increasing population size through payoff evolution. Without tradeoffs, types with higher payoffs survive preferentially, driving monotonic payoff increases that enhance population size and diversity while making types more similar.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C68 collectively describe a coherent model mechanism supported by simulation data. The model assumptions (C40, C49-C56, C60) are clearly stated, and the evolutionary dynamics (C41, C59, C61-C64) follow logically from these assumptions. Figure 3A provides visual confirmation of increasing population size and diversity over time.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "1e18b279-b0d1-486d-95b4-f1ecb86d611c",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the rapid mutation regime enabled by large population sizes, cyclic dominance can emerge but remains rare. The steady-state fraction of cyclic dominance (\u03c7 \u2248 0.033) is much lower than expected from random interactions (\u03c7 = 0.25), with cyclic dominance saturating at ~0.0036 compared to ~0.105 for non-cyclic dominance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C77 present quantitative findings from simulations shown in Figure 3B-C. The reported fractions (C71, C72) are specific numerical results, and the comparison to random expectations (C77) provides important context. The rarity conclusion is well-supported by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "c066a32d-6f54-4f32-a793-7c2a48134cfb",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cyclic and non-cyclic dominance triplets have similar lifespans (both destroyed in ~5 mutation events on average), with algebraically decaying distributions. Since lifespan does not explain the rarity of cyclic dominance, the lower chance of emergence must be the determining factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 present a clear analysis of lifespan distributions supported by Figure 4A showing overlapping CCDF curves. The logical inference (C82-C83) that formation probability rather than lifespan explains rarity is sound given the similar lifespan data. The quantitative finding (C80) is specific and testable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "d8ff220b-b27a-4140-975e-33aeb7bfc731",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Payoff correlation arising from inheritance suppresses cyclic dominance formation. Offspring inherit similar payoffs to parents, making triplets with parent-offspring pairs more likely to form non-cyclic dominance. Types in cyclic dominance are less similar than in non-cyclic dominance, as shown by trait vector analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C96 present a mechanistic explanation supported by Figure 4B showing distinct similarity patterns. The mathematical constraint argument (C84, C88) is sound, and the inheritance mechanism (C90, C92-C94, C96) logically explains the observed patterns. The trait vector analysis (C95) provides quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "95f48a50-59d7-4fc3-a3f3-cdb57ee7b966",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genealogical structure determines payoff correlations and cyclic dominance emergence. Mutations accumulated after all three lineages diverge (characterized by fraction F_l) are crucial for decoupling payoff correlations. In population dynamics, surviving offspring are typically similar to parents, preventing cyclic dominance emergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C112 present genealogical analysis supported by Figure 5. The characterization by five parameters (C98) and the importance of post-divergence mutations (C100, C102) are clearly demonstrated in Figure 5C. The inference about population dynamics (C109, C112) follows logically from the genealogical analysis and simulation results shown in Figure 6.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "a81cad0c-5fc5-47e0-97e0-00b124dc845a",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study's main conclusion is that cyclic dominance is more likely to evolve through assembly of unrelated types than within communities of similar types. The probability to evolve cyclic dominance is even smaller than assembling it by chance, with inheritance of interactions being the key suppressive mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C116-C130 represent the paper's central findings, well-supported by the mechanistic results (genealogy, payoff correlation, lifespan analysis). The comparison between evolutionary and random assembly (C124) is quantitatively demonstrated. The conclusion about inter- vs intra-species cyclic dominance (C128, C130) follows logically from the model results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "080b4554-01ab-4c16-9126-f669d9f50d17",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Diversity in the model does not originate from cyclic dominance but from rapid type generation. No correlation exists between diversity and cyclic dominance probability. Cyclic dominance remains rare even with payoff rescaling, and non-cyclic dominance reaches higher population frequencies than cyclic dominance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C122 present additional analyses addressing the relationship between diversity and cyclic dominance. The lack of correlation (C117) and the source of diversity (C118) are important clarifications. The robustness checks (C120-C121) strengthen the main findings, though details are relegated to appendices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "022fb8a2-01fb-488b-8fb0-9f592494427d",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model uses competitive Lotka-Volterra dynamics where interactions determine death rates from pairwise competition. All types share background birth/death rates, with competition being the only differentiating factor. Payoffs translate to death rates via exponential decay, and offspring inherit parental payoffs with Gaussian noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C56 describe the model framework, grounded in established theory (C46-C47 with citations). The assumptions are clearly stated and mathematically specified. The model is internally consistent and appropriate for studying the research question, though simplifications (C52) are acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "88dcc529-348e-4caf-9528-045cb846fbbc",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Empirical evidence shows cyclic dominance is rare in nature. In microbial ecosystems from soil, only 3 of ~1000 triplets exhibited cyclic dominance, and similar rarity is found in other soil bacteria and plant systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 and C113 cite experimental studies (Higgins et al. 2017, Wright and Vetsigian 2016, Friedman et al. 2017) providing empirical motivation for the theoretical work. The specific quantitative finding (C33) is properly attributed. These claims establish the biological relevance of the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on population diversity and cyclic dominance: Natural populations contain multiple coexisting types with complex interaction structures. Cyclic dominance (rock-paper-scissors dynamics) is a popular theoretical mechanism for maintaining diversity where no type fixates, and has been extensively studied theoretically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide established background knowledge supported by numerous citations. These claims accurately represent the theoretical framework and prior understanding in the field. The definitions (C10-C11) are standard and the characterization of prior work (C13) is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "9510b6a4-a734-4502-bfc7-dea113ea88a0",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Classic examples of cyclic dominance include E. coli toxin production (toxin producers > sensitive > resistant > toxin producers) and side-blotched lizard mating strategies (multi-female guarders > single-female guarders > sneakers > multi-female guarders). Additional examples exist in various taxa including Drosophila, other lizards, and plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C26 describe well-documented biological examples with proper citations. The E. coli (C14-C17) and lizard (C18-C21) examples are illustrated in Figure 1B-C. The additional examples (C22-C25) are appropriately cited. These claims accurately represent prior empirical work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "1a84e2d6-b601-486b-ae31-e0268e7a1943",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Traditional theory assumes predefined cyclic dominance types without addressing their origin. New types can arise through migration, mutation, or recombination, potentially forming or breaking cycles. Forming cyclic dominance from a single type is challenging due to timing requirements, but rapid evolution through high mutation rates or large populations can facilitate emergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C39 identify the gap in prior work (C27) and establish the theoretical motivation. The logical argument about formation difficulty (C36-C37) is sound, and the role of rapid evolution (C38-C39) is supported by citations. These claims effectively frame the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "1b793028-8a92-4a46-8259-93ee01aaf259",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study uses an evolutionary approach with evolving interactions rather than predefined traits, distinguishing it from prior work. Results suggest cyclic dominance might be more frequent on an inter-species basis (migration-like) than intra-species basis (evolution-like). The categorical classification approach may help bridge model dynamics and experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C114-C115 accurately describe the methodological contribution. However, the speculation about inter- vs intra-species frequency (C127-C128) lacks direct empirical support and represents an extrapolation from the model. The utility of the categorical approach (C131-C132) is speculative. These claims require further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    },
+    {
+      "id": "f46571bd-7688-4b83-9521-353f16a1947b",
+      "content_id": "47c0c9c4-d794-4955-bbb5-3bd02b2f377a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model assumes global (well-mixed) interactions, ignoring spatial structure. While spatial models could increase cyclic dominance frequency, investigating the issue without spatial confounds is essential for understanding why cyclic dominance is rare within species in nature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C133-C138 acknowledge a key limitation (C133-C134) and discuss potential extensions. The statement about spatial effects (C135-C136) is supported by extensive citations. The justification for the non-spatial approach (C137-C138) is reasonable for establishing baseline understanding, though spatial effects remain an important future direction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:42:34.996807Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "94d11c45-a4aa-4cec-92be-3c4ed4e76825",
+      "result_id": "7d87fb3e-acd8-4749-93e4-0d23c76def59"
+    },
+    {
+      "claim_id": "b56e3d73-cf4e-4ef2-a402-4e714a5c2b43",
+      "result_id": "7d87fb3e-acd8-4749-93e4-0d23c76def59"
+    },
+    {
+      "claim_id": "bd66b434-08dc-458e-807a-98289f837d16",
+      "result_id": "7d87fb3e-acd8-4749-93e4-0d23c76def59"
+    },
+    {
+      "claim_id": "cd77aab5-8d60-417f-92ad-91e26be1afe4",
+      "result_id": "7d87fb3e-acd8-4749-93e4-0d23c76def59"
+    },
+    {
+      "claim_id": "a77687fb-09fe-4383-a14e-d4c3eeab8a82",
+      "result_id": "7d87fb3e-acd8-4749-93e4-0d23c76def59"
+    },
+    {
+      "claim_id": "7a9aa3aa-081f-406e-b8a5-67a61d0fe19f",
+      "result_id": "7d87fb3e-acd8-4749-93e4-0d23c76def59"
+    },
+    {
+      "claim_id": "1d507460-97c7-41e4-83be-314201446a7f",
+      "result_id": "7d87fb3e-acd8-4749-93e4-0d23c76def59"
+    },
+    {
+      "claim_id": "12bd4d77-d7c0-4e6a-bf98-fb3189a9f0ef",
+      "result_id": "7d87fb3e-acd8-4749-93e4-0d23c76def59"
+    },
+    {
+      "claim_id": "c53bf778-af4e-4194-96c9-c701d5621d75",
+      "result_id": "7d87fb3e-acd8-4749-93e4-0d23c76def59"
+    },
+    {
+      "claim_id": "554c3ea6-badf-4496-8323-d1b51fa71e7f",
+      "result_id": "7d87fb3e-acd8-4749-93e4-0d23c76def59"
+    },
+    {
+      "claim_id": "235dcb39-932f-4617-a22f-2ef2dec07b6e",
+      "result_id": "1e18b279-b0d1-486d-95b4-f1ecb86d611c"
+    },
+    {
+      "claim_id": "a410fd2f-2f21-41f8-9d31-685dfe134a15",
+      "result_id": "1e18b279-b0d1-486d-95b4-f1ecb86d611c"
+    },
+    {
+      "claim_id": "42b66a70-7c2c-4139-9fc4-44926bbe603b",
+      "result_id": "1e18b279-b0d1-486d-95b4-f1ecb86d611c"
+    },
+    {
+      "claim_id": "7ef31bd1-69aa-4fa7-b96a-70ea0b105e1d",
+      "result_id": "1e18b279-b0d1-486d-95b4-f1ecb86d611c"
+    },
+    {
+      "claim_id": "b7d43a4a-8791-4f5f-831f-2760ef9b07ac",
+      "result_id": "1e18b279-b0d1-486d-95b4-f1ecb86d611c"
+    },
+    {
+      "claim_id": "89d3f50e-0717-4d97-8c4d-9e2b0d498eb4",
+      "result_id": "1e18b279-b0d1-486d-95b4-f1ecb86d611c"
+    },
+    {
+      "claim_id": "44eebbd9-b0dd-4064-87cd-ad20c2f6b52e",
+      "result_id": "1e18b279-b0d1-486d-95b4-f1ecb86d611c"
+    },
+    {
+      "claim_id": "eb3f2b36-4d1d-4a9d-a25a-0edbe4979392",
+      "result_id": "c066a32d-6f54-4f32-a793-7c2a48134cfb"
+    },
+    {
+      "claim_id": "2bde1d42-c9a6-44d9-9270-bec91795fd32",
+      "result_id": "c066a32d-6f54-4f32-a793-7c2a48134cfb"
+    },
+    {
+      "claim_id": "0bcdf1b6-b827-457f-9cb0-e321f7cd7e70",
+      "result_id": "c066a32d-6f54-4f32-a793-7c2a48134cfb"
+    },
+    {
+      "claim_id": "bb317ad4-a5ab-4f2d-a6ca-ce265924d0ca",
+      "result_id": "c066a32d-6f54-4f32-a793-7c2a48134cfb"
+    },
+    {
+      "claim_id": "45ff0751-62e5-40b0-95df-a64f281dda60",
+      "result_id": "c066a32d-6f54-4f32-a793-7c2a48134cfb"
+    },
+    {
+      "claim_id": "8a29f7a4-0569-4521-8e63-68e7b3c4ca54",
+      "result_id": "c066a32d-6f54-4f32-a793-7c2a48134cfb"
+    },
+    {
+      "claim_id": "b6856e6a-fabf-4243-b3dd-3b1f6d94b658",
+      "result_id": "d8ff220b-b27a-4140-975e-33aeb7bfc731"
+    },
+    {
+      "claim_id": "c83b1c66-b5f5-4b63-875c-befc7af48c75",
+      "result_id": "d8ff220b-b27a-4140-975e-33aeb7bfc731"
+    },
+    {
+      "claim_id": "5964ac06-7b94-4274-956f-1f71b1d94f85",
+      "result_id": "d8ff220b-b27a-4140-975e-33aeb7bfc731"
+    },
+    {
+      "claim_id": "0d08ebe1-a985-4b5c-b69b-b69afe8dee64",
+      "result_id": "d8ff220b-b27a-4140-975e-33aeb7bfc731"
+    },
+    {
+      "claim_id": "50757578-41da-4364-8f08-10357e754fd5",
+      "result_id": "d8ff220b-b27a-4140-975e-33aeb7bfc731"
+    },
+    {
+      "claim_id": "63ad3e24-3bda-4efe-adb5-70fac933b5f2",
+      "result_id": "d8ff220b-b27a-4140-975e-33aeb7bfc731"
+    },
+    {
+      "claim_id": "c9b6efbe-2d3b-4252-ab19-41d7881a8c8d",
+      "result_id": "d8ff220b-b27a-4140-975e-33aeb7bfc731"
+    },
+    {
+      "claim_id": "4c97dcce-a303-4725-b261-c77a34ccee49",
+      "result_id": "d8ff220b-b27a-4140-975e-33aeb7bfc731"
+    },
+    {
+      "claim_id": "19b692c7-8d73-4530-b763-e1d2a3202e40",
+      "result_id": "95f48a50-59d7-4fc3-a3f3-cdb57ee7b966"
+    },
+    {
+      "claim_id": "57d31892-6563-4595-8c89-ffc637c01a6e",
+      "result_id": "95f48a50-59d7-4fc3-a3f3-cdb57ee7b966"
+    },
+    {
+      "claim_id": "17f05c17-ab82-40a8-8efe-9007327fdbab",
+      "result_id": "95f48a50-59d7-4fc3-a3f3-cdb57ee7b966"
+    },
+    {
+      "claim_id": "ecf9c692-3c74-4990-8f5e-293f551d32ef",
+      "result_id": "95f48a50-59d7-4fc3-a3f3-cdb57ee7b966"
+    },
+    {
+      "claim_id": "95c69051-0aad-46c8-ad11-a7dd8660e20c",
+      "result_id": "95f48a50-59d7-4fc3-a3f3-cdb57ee7b966"
+    },
+    {
+      "claim_id": "22a55b7f-39b1-45ac-ac32-a54984ee09cb",
+      "result_id": "95f48a50-59d7-4fc3-a3f3-cdb57ee7b966"
+    },
+    {
+      "claim_id": "9f96d055-0d9b-4867-a308-510b07ed94c3",
+      "result_id": "95f48a50-59d7-4fc3-a3f3-cdb57ee7b966"
+    },
+    {
+      "claim_id": "a4e40f37-6563-4173-a700-63116f773ec1",
+      "result_id": "a81cad0c-5fc5-47e0-97e0-00b124dc845a"
+    },
+    {
+      "claim_id": "1ea2b862-e49b-49cd-92b0-a4953fbb318a",
+      "result_id": "a81cad0c-5fc5-47e0-97e0-00b124dc845a"
+    },
+    {
+      "claim_id": "f5239089-8c0f-4844-9396-612da299d588",
+      "result_id": "a81cad0c-5fc5-47e0-97e0-00b124dc845a"
+    },
+    {
+      "claim_id": "7d6812d8-da42-4a04-8626-4b591e3b4ae3",
+      "result_id": "a81cad0c-5fc5-47e0-97e0-00b124dc845a"
+    },
+    {
+      "claim_id": "3d4bf3d9-b3e1-48db-bdec-f3b1097b546e",
+      "result_id": "a81cad0c-5fc5-47e0-97e0-00b124dc845a"
+    },
+    {
+      "claim_id": "ee51ae05-367d-4004-8fb8-9682d969ee60",
+      "result_id": "a81cad0c-5fc5-47e0-97e0-00b124dc845a"
+    },
+    {
+      "claim_id": "3204428b-cbad-4624-afe2-78bc54683924",
+      "result_id": "a81cad0c-5fc5-47e0-97e0-00b124dc845a"
+    },
+    {
+      "claim_id": "e0aa7901-d8ff-4b2b-840d-8ab277e99d22",
+      "result_id": "080b4554-01ab-4c16-9126-f669d9f50d17"
+    },
+    {
+      "claim_id": "a652183a-5dbc-4957-a0b1-10a89903f9d8",
+      "result_id": "080b4554-01ab-4c16-9126-f669d9f50d17"
+    },
+    {
+      "claim_id": "705dc694-6663-433c-be2b-bef7660766ab",
+      "result_id": "080b4554-01ab-4c16-9126-f669d9f50d17"
+    },
+    {
+      "claim_id": "2d538611-01f9-4e1a-92e1-e3bbda899966",
+      "result_id": "080b4554-01ab-4c16-9126-f669d9f50d17"
+    },
+    {
+      "claim_id": "a73a2b46-5ef3-4525-bdd6-a5ae72ef6f87",
+      "result_id": "080b4554-01ab-4c16-9126-f669d9f50d17"
+    },
+    {
+      "claim_id": "0b5df4e4-7005-40ad-aff4-193f2e32a901",
+      "result_id": "080b4554-01ab-4c16-9126-f669d9f50d17"
+    },
+    {
+      "claim_id": "95cd74e7-74db-4233-a2a9-90f64d96e19a",
+      "result_id": "022fb8a2-01fb-488b-8fb0-9f592494427d"
+    },
+    {
+      "claim_id": "6192a977-3ef5-46fa-a36f-e1eeb480ba67",
+      "result_id": "022fb8a2-01fb-488b-8fb0-9f592494427d"
+    },
+    {
+      "claim_id": "3c5ef77e-f694-4d38-8e14-d46ecc7f5bf0",
+      "result_id": "022fb8a2-01fb-488b-8fb0-9f592494427d"
+    },
+    {
+      "claim_id": "a0884252-c4c1-406f-a985-997c34aef94a",
+      "result_id": "022fb8a2-01fb-488b-8fb0-9f592494427d"
+    },
+    {
+      "claim_id": "bbd4c838-8a0e-44b4-a951-0f37a68b045f",
+      "result_id": "022fb8a2-01fb-488b-8fb0-9f592494427d"
+    },
+    {
+      "claim_id": "4b0a8c82-edbc-4f37-a779-c201d29b6927",
+      "result_id": "022fb8a2-01fb-488b-8fb0-9f592494427d"
+    },
+    {
+      "claim_id": "8ff4cf5d-d954-429e-8e6c-3e51658d8230",
+      "result_id": "022fb8a2-01fb-488b-8fb0-9f592494427d"
+    },
+    {
+      "claim_id": "e3a5cb6e-9602-443e-8c46-7983e73d9b59",
+      "result_id": "022fb8a2-01fb-488b-8fb0-9f592494427d"
+    },
+    {
+      "claim_id": "9de66eea-d4fd-4328-bdfa-1554cd10ac76",
+      "result_id": "022fb8a2-01fb-488b-8fb0-9f592494427d"
+    },
+    {
+      "claim_id": "35d36bb8-b581-4e31-9f7b-4a5eabd29e46",
+      "result_id": "88dcc529-348e-4caf-9528-045cb846fbbc"
+    },
+    {
+      "claim_id": "7956ce93-fad4-4946-8573-03080c8915dc",
+      "result_id": "88dcc529-348e-4caf-9528-045cb846fbbc"
+    },
+    {
+      "claim_id": "9350d4f6-5c3b-4acd-8e41-0ec9d4bcdee3",
+      "result_id": "88dcc529-348e-4caf-9528-045cb846fbbc"
+    },
+    {
+      "claim_id": "72367a55-61ce-4862-af61-ee80c883fcc9",
+      "result_id": "88dcc529-348e-4caf-9528-045cb846fbbc"
+    },
+    {
+      "claim_id": "f9e98a87-efdf-4770-b523-cd267b51986b",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "fc13fa5a-178c-43c1-a285-3778712dea1e",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "d5fe3a73-5a74-4874-a184-279d59fa4721",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "5e3cd324-85af-466b-a525-77e0d7ccd964",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "a5abd309-8adc-4266-bdfb-5eb60588087d",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "c40e57f9-377e-43d4-a788-d8c214e372a0",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "8b308019-5b6b-47cc-91e7-8db9aa7acb4d",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "56546f6c-0f78-4cdc-a601-e8994aab56af",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "ac38971a-39c9-46ce-9d17-612674a99288",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "dbc01772-dfda-411f-95c8-a6649a264602",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "94c803c0-f814-4194-b616-1024a73f5c0e",
+      "result_id": "b63298bb-94b2-4dfb-84c5-a38c6a72dbb4"
+    },
+    {
+      "claim_id": "820295e8-a4d0-4b9d-97e9-02b1e45dbb55",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "617961a1-1d5b-4a0b-880d-7c59a7875ff0",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "461d69b9-8031-4fcb-82d4-b587ea3f209c",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "2af52e9d-040d-4293-aebc-755b2d2d6fb4",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "3056b430-2182-4473-8e49-9d075b164b4f",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "0192faf8-9189-4e60-81f0-65200933df71",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "a195b9de-88cb-44cf-8d8d-3cde7dd2ff9a",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "8f0a4ccd-5d8e-4960-942a-fe3476d4dbd4",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "2b1c8e6a-c6de-4252-a2ba-14a152284f5f",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "803db260-a7db-4764-bfdc-c3070028047a",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "4b1a24a2-9dbf-403a-821f-0f83895ade4c",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "5d4f8d6d-12c4-453e-91ab-547f3c52f0e2",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "e3e72585-92c3-47b3-9260-1e70f68577dc",
+      "result_id": "9510b6a4-a734-4502-bfc7-dea113ea88a0"
+    },
+    {
+      "claim_id": "e473f61f-eaf6-49a3-a99e-6b1a4430751d",
+      "result_id": "1a84e2d6-b601-486b-ae31-e0268e7a1943"
+    },
+    {
+      "claim_id": "d5450bc6-fc20-47b7-99d0-5fe7390bb1dd",
+      "result_id": "1a84e2d6-b601-486b-ae31-e0268e7a1943"
+    },
+    {
+      "claim_id": "6b902923-d376-46ff-a873-4721ab4be940",
+      "result_id": "1a84e2d6-b601-486b-ae31-e0268e7a1943"
+    },
+    {
+      "claim_id": "14a48e65-e552-4d97-9215-11a8dc444d29",
+      "result_id": "1a84e2d6-b601-486b-ae31-e0268e7a1943"
+    },
+    {
+      "claim_id": "63900058-02f4-4083-b26f-23cf58bfdffd",
+      "result_id": "1a84e2d6-b601-486b-ae31-e0268e7a1943"
+    },
+    {
+      "claim_id": "0755ba65-aae5-49f8-81b8-a2a4f15ab57c",
+      "result_id": "1a84e2d6-b601-486b-ae31-e0268e7a1943"
+    },
+    {
+      "claim_id": "bab942bf-24d9-4d5a-af5e-3615e191a337",
+      "result_id": "1a84e2d6-b601-486b-ae31-e0268e7a1943"
+    },
+    {
+      "claim_id": "8ce9f74b-c6cb-4f6d-b2ff-3533b823fc80",
+      "result_id": "1a84e2d6-b601-486b-ae31-e0268e7a1943"
+    },
+    {
+      "claim_id": "b0501122-fb95-49c1-9503-181b7bbb0f24",
+      "result_id": "1a84e2d6-b601-486b-ae31-e0268e7a1943"
+    },
+    {
+      "claim_id": "7f296b30-6a87-49af-a00d-8c7a4d1d10ec",
+      "result_id": "1a84e2d6-b601-486b-ae31-e0268e7a1943"
+    },
+    {
+      "claim_id": "a0d219b8-05a2-45d5-ae21-4ec570635ab4",
+      "result_id": "1b793028-8a92-4a46-8259-93ee01aaf259"
+    },
+    {
+      "claim_id": "30feb80a-719a-4c24-a137-bce9c33bdfec",
+      "result_id": "1b793028-8a92-4a46-8259-93ee01aaf259"
+    },
+    {
+      "claim_id": "0e5f2f2d-98b1-4735-a7e1-61d59561e068",
+      "result_id": "1b793028-8a92-4a46-8259-93ee01aaf259"
+    },
+    {
+      "claim_id": "31dd6fa5-5cce-4f1e-9f99-4cb42f1e49d7",
+      "result_id": "1b793028-8a92-4a46-8259-93ee01aaf259"
+    },
+    {
+      "claim_id": "8d1127a9-06c1-48e0-8057-cfe26dc1fde5",
+      "result_id": "1b793028-8a92-4a46-8259-93ee01aaf259"
+    },
+    {
+      "claim_id": "7607e1f9-9ddc-449f-ab42-71bf867c9e34",
+      "result_id": "1b793028-8a92-4a46-8259-93ee01aaf259"
+    },
+    {
+      "claim_id": "233c9806-599f-4987-bf0a-ed5a5fe970a7",
+      "result_id": "1b793028-8a92-4a46-8259-93ee01aaf259"
+    },
+    {
+      "claim_id": "bba3ff90-6221-4613-a47e-0d6a063018d1",
+      "result_id": "f46571bd-7688-4b83-9521-353f16a1947b"
+    },
+    {
+      "claim_id": "4a7f2767-a4bd-421e-bda2-6e40cecbe999",
+      "result_id": "f46571bd-7688-4b83-9521-353f16a1947b"
+    },
+    {
+      "claim_id": "cd4d3252-4077-4d0e-b766-c8b7d06de950",
+      "result_id": "f46571bd-7688-4b83-9521-353f16a1947b"
+    },
+    {
+      "claim_id": "a1c2d037-ca09-4ec1-b6d1-d1c1fd39881e",
+      "result_id": "f46571bd-7688-4b83-9521-353f16a1947b"
+    },
+    {
+      "claim_id": "eb011474-0a67-47c0-b462-030fc6b195fb",
+      "result_id": "f46571bd-7688-4b83-9521-353f16a1947b"
+    },
+    {
+      "claim_id": "69f11950-69df-49ed-84df-387cd3a6d44e",
+      "result_id": "f46571bd-7688-4b83-9521-353f16a1947b"
+    }
+  ],
+  "comparisons": []
+}

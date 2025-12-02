@@ -1,0 +1,1520 @@
+{
+  "submission": {
+    "id": "aebd4fb5-29fa-4f84-ae3f-dcc02f9bc9f5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:27:08.513400Z",
+    "updated_at": "2025-12-02T06:27:08.513400Z"
+  },
+  "content": [
+    {
+      "id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "submission_id": "aebd4fb5-29fa-4f84-ae3f-dcc02f9bc9f5",
+      "content_type": "manuscript",
+      "content_text": "# Integrated systems analysis reveals conserved gene networks underlying response to spinal cord injury\n\n## Authors\n\n- Jordan W Squair<sup>1</sup>\n- Seth Tigchelaar<sup>1</sup>\n- Kyung-Mee Moon<sup>2</sup>\n- Jie Liu<sup>1</sup>\n- Wolfram Tetzlaff<sup>1</sup> ([ORCID: 0000-0003-3462-1676](https://orcid.org/0000-0003-3462-1676))\n- Brian K Kwon<sup>1</sup>\n- Andrei V Krassioukov<sup>1</sup>\n- Christopher R West<sup>1</sup>\n- Leonard J Foster<sup>2</sup> ([ORCID: 0000-0001-8551-4817](https://orcid.org/0000-0001-8551-4817))\n- Michael A Skinnider<sup>2</sup> ([ORCID: 0000-0002-2168-1621](https://orcid.org/0000-0002-2168-1621)) \u2020\n\n### Affiliations\n\n1. International Collaboration on Repair Discoveries University of British Columbia Vancouver Canada\n2. Centre for High-Throughput Biology University of British Columbia Vancouver Canada\n3. Department of Orthopaedics University of British Columbia Vancouver Canada\n4. GF Strong Rehabilitation Centre Vancouver Health Authority Vancouver Canada\n5. Department of Medicine, Division of Physical Medicine and Rehabilitation University of British Columbia Vancouver Canada\n6. School of Kinesiology University of British Columbia Vancouver Canada\n7. Department of Biochemistry and Molecular Biology and Michael Smith Laboratories University of British Columbia Vancouver Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpinal cord injury (SCI) is a devastating neurological condition for which there are currently no effective treatment options to restore function. A major obstacle to the development of new therapies is our fragmentary understanding of the coordinated pathophysiological processes triggered by damage to the human spinal cord. Here, we describe a systems biology approach to integrate decades of small-scale experiments with unbiased, genome-wide gene expression from the human spinal cord, revealing a gene regulatory network signature of the pathophysiological response to SCI. Our integrative analyses converge on an evolutionarily conserved gene subnetwork enriched for genes associated with the response to SCI by small-scale experiments, and whose expression is upregulated in a severity-dependent manner following injury and downregulated in functional recovery. We validate the severity-dependent upregulation of this subnetwork in rodents in primary transcriptomic and proteomic studies. Our analysis provides systems-level view of the coordinated molecular processes activated in response to SCI.\n\n## Introduction\n\nSpinal cord injury (SCI) results in impairment of motor, sensory, and autonomic systems, causing profound deregulation of almost every bodily function. The failure of large-scale clinical trials of drug therapies in acute SCI (Bracken et al., 1990; Geisler et al., 2001), and the lack of success in translating preclinical therapies to humans (Ramer et al., 2014), leaves clinicians without effective treatment options for SCI. As such, hemodynamic management and surgical decompression remain the only options to influence neurological outcomes immediately following acute SCI, typically with only marginal improvements (Hawryluk et al., 2015; Tee et al., 2017; Fehlings et al., 2012). The absence of an effective treatment for SCI reflects the complexity of the pathophysiologic mechanisms activated by central nervous system (CNS) injury. The additive effects of the immune response (Kigerl et al., 2009; Demjen et al., 2004), multiple forms of cell death (Springer et al., 1999; Crowe et al., 1997), neuronal growth suppression (GrandPr\u00e9 et al., 2000; Schnell and Schwab, 1990), and the formation of an inhibitory glial scar (Bradbury et al., 2002) pose a challenge to the development of new therapeutic strategies.\n\nA major obstacle to the development of targeted therapies for SCI is the fragmentary state of our understanding of SCI pathophysiology. The response to trauma within the human spinal cord is mediated by multiple coordinated molecular pathways, yet these processes are rarely studied in an integrated manner. An additional challenge in translation of novel therapies is the reliance of clinical trials on standardized neurological assessments for patient enrolment and stratification (Fawcett et al., 2007). These measures are highly variable, operator-dependent, and may be impossible to perform in many SCI patients (Kwon et al., 2017). Systems biology approaches provide powerful means to elucidate the coordinated molecular processes underlying the pathophysiology of complex diseases (Voineagu et al., 2011; Parikshak et al., 2013; Zhang et al., 2013; Johnson et al., 2016). In particular, gene coexpression network analysis can complement reductionist descriptions of isolated gene functions by identifying networks of genes responsible for driving disease processes (Zhang and Horvath, 2005; Parikshak et al., 2015). Systems-level analyses may additionally have the potential to suggest novel biomarkers capable of stratifying injury severity and predicting functional recovery, and consequently to facilitate the translation of new therapies for acute SCI.\n\nIn the present study, we describe an integrated systems biology approach to study the pathophysiology of SCI. We systematically survey decades of biomedical literature in order to establish the complete set of genes implicated in the response to SCI by small-scale experiments. We then integrate this literature-curated gene set with unbiased gene expression data from the human spinal cord. We use weighted gene coexpression network analysis (WGCNA) to establish the normal biological processes within the healthy human spinal cord, and conduct a meta-analysis of publicly available gene expression data to define the gene regulatory network signature of the coordinated physiological response to SCI. We validate our findings at the transcriptomic and proteomic levels, and leverage the resulting systems-level understanding of SCI pathophysiology to define candidate biomarkers for stratification of injury severity and prediction of functional recovery.\n\n## Results\n\n### Systematic literature analysis identifies genes associated with response to SCI\n\nDespite decades of study, an integrated understanding of the pathophysiological response to SCI remains elusive. This gap represents a central challenge to the development of targeted therapies for SCI. We hypothesized that such an integrated understanding could be achieved by integrating the vast corpus of SCI literature, collected by small-scale experimentation over several decades, within an unbiased, genome-wide framework. An overview of our experimental design is shown in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig1-v2.jpg)\n\n**Figure 1.:** Systematic analysis of over 500 manuscripts revealed the complete set of genes implicated in SCI pathophysiology by small-scale experiments. SCI genes were integrated with unbiased, genome-wide gene expression data from healthy human spinal cord to identify coexpressed gene subnetworks enriched for known SCI genes. Meta-analysis of SCI gene expression data revealed consensus patterns of subnetwork differential expression after SCI. The resulting consensus network signature of the response to SCI in human spinal cord was subjected to functional enrichment and cell type analyses, validated at the transcriptomic and proteomic levels, and leveraged to nominate quantitative biomarkers of SCI severity.\n\nAs a first step, we sought to systematically establish the complete set of genes implicated in the physiological response to SCI. We conducted a systematic analysis of the SCI literature, reviewing over 500 papers, in order to reveal a set of 695 unique human genes associated with the response to SCI by small-scale experiments (Supplementary file 1). Of these genes, 559 were upregulated following SCI, 213 were downregulated, and the protein products of 8 were differentially phosphorylated. Among all genes, 151 were associated with the response to SCI by more than one study (Figure 2A). The complete set includes genes that have been associated with SCI in a wide range of experimental models of SCI, in addition to human injuries (Figure 2\u2014figure supplement 1A); in multiple species, including human as well as rat, mouse, and rabbit (Figure 2\u2014figure supplement 1B); using a range of experimental techniques (Figure 2B); and at a variety of time points, from 1 hr to 6 months post-injury (Figure 2\u2014figure supplement 1C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig2-v2.jpg)\n\n**Figure 2.:** (A) Number of small-scale studies implicating each gene in SCI pathophysiology in the LC gene set. (B)\u00a0Experimental techniques used to associate LC genes with response to SCI in the LC gene set. (C) Enrichment for shared Gene Ontology terms among LC genes (all p\u00a0<\u00a010\u221215). BP, biological process; CC, cellular component; MF, molecular function. (D) Number of protein-protein interactions (PPIs) between LC genes observed in the high-confidence human interactome (Menche et al., 2015) (dotted line) and 1000 randomized interactome networks (density), revealing significant enrichment for PPIs between LC genes relative to random expectation (p\u00a0<\u00a010\u22123). (E) Size of the largest connected component (LCC) between LC genes in the high-confidence human interactome (dotted line) and 1000 randomized interactome networks (density), revealing LC genes occupy a distinct region of the human interactome (p\u00a0<\u00a010\u22123). (F) LC genes are prioritized by a disease gene prediction algorithm (Ghiassian et al., 2015) (p\u00a0<\u00a010\u221215, Kolmogorov\u2013Smirnov test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Experimental models of SCI employed to associate literature-curated (LC) genes with response to SCI in the LC gene set. (B) Species in which LC genes were associated with response to SCI in the LC gene set. (C) Time points at which LC genes were associated with response to SCI in the LC gene set.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013C) Number of protein-protein interactions (PPIs) between LC genes in the InBioMap (A) (Li et al., 2017) and binary (B) or co-complex (C) subsets of the HINT (Das and Yu, 2012) human interactome databases (dotted lines) and 1000 randomized interactome networks (densities), confirming significant enrichment for PPIs between LC genes relative to random expectation (all p\u00a0<\u00a010\u20133). (D\u2013F) Size of the largest connected component (LCC) between LC genes in the InBioMap (D) and binary (E) or co-complex (F) subsets of the HINT human interactome databases (dotted lines) and 1000 randomized interactome networks (densities), confirming significant enrichment for PPIs between LC genes relative to random expectation (all P $\\leq$ 0.005). (G\u2013I) LC genes are prioritized by a disease gene prediction algorithm (Ghiassian et al., 2015) in the InBioMap (G) and HINT binary (H) or co-complex (I) human interactomes (all p\u00a0<\u00a010\u201315). (J) Number of intra-complex co-memberships between LC genes (dotted line) and 1000 randomized gene sets (density) observed in a global map of human protein complexes (Drew et al., 2017), revealing significant tendency for LC genes to participate in the same protein complex (p\u00a0<\u00a010\u20133).\n\n### Validation of literature-curated SCI genes\n\nWe validated the biological relevance of our literature-curated (LC) SCI gene set using multiple lines of evidence. First, we established that LC genes were more likely to share common biological functions than random sets of genes, using annotations from the Gene Ontology (Ashburner et al., 2000). Because functional annotations may be specific or broad, we confirmed that the enrichment held regardless of the number of genes to which each term was annotated (Figure 2C). Next, we investigated the tendency for the protein products of LC genes to physically interact. Significant enrichment for protein-protein interactions (PPIs) between LC genes was observed relative to random expectation (Figure 2D, empirical p\u00a0<\u00a010\u22123), and we reproduced this finding in multiple independent PPI databases (all p\u00a0<\u00a010\u22123, Figure 2\u2014figure supplement 2A\u2013C). Genes implicated in a variety of complex diseases by genome-wide association studies (GWAS) have been found to form distinct modules of densely interacting proteins within the human interactome (Ghiassian et al., 2015). We therefore evaluated whether this same principle held for SCI by calculating the size of the largest connected component (LCC) between LC genes, and found that LC genes collectively formed a significantly larger subnetwork than random expectation (Figure 2E, empirical p\u00a0<\u00a010\u22123), a finding that was again reproduced in independent interaction datasets (p\u00a0<\u00a010\u22123, Figure 2\u2014figure supplement 2D\u2013F). Literature-curated genes also displayed a significant tendency to participate in the same protein complexes (Figure 2\u2014figure supplement 2J). Finally, LC genes were preferentially recovered by a disease gene prediction algorithm when a subset of them were randomly withheld, and the remainder used to prioritize additional disease genes (Figure 2F and Figure 2\u2014figure supplement 2G\u2013I). Thus, LC genes represent a biologically relevant and functionally coherent set of genes, which converge on a common protein interaction module within the human interactome.\n\n### Gene coexpression network analysis of human spinal cord\n\nMultiple lines of evidence support the functional coherence of the set of genes implicated in SCI by small-scale experiments. However, these studies nonetheless have appreciable false positive and false negative rates, and are limited by sociological and experimental biases. We therefore sought to integrate knowledge from the SCI corpus within an unbiased, genome-wide framework. We hypothesized that unsupervised gene coexpression network analysis of human spinal cord would provide a powerful method to integrate these LC genes in a systems-level context, as this method has recently been powerfully applied to develop insights into the etiologies of a number of neurological (Langfelder et al., 2016; Delahaye-Duriez et al., 2016; Johnson et al., 2015; Zhang et al., 2013) or psychiatric diseases (Voineagu et al., 2011; Chen et al., 2013; Fromer et al., 2016).\n\nWe constructed gene coexpression networks in human spinal cord using RNA-seq data from 71 post-mortem human spinal cords from the Genotype-Tissue Expression project (GTEx) (GTEx Consortium, 2013). We applied WGCNA (Langfelder and Horvath, 2008) to group the human spinal cord transcriptome into 15 distinct modules of coexpressed genes (Supplementary file 2). These modules represent networks of genes that share highly related patterns of expression in the human spinal cord. In order to establish the reproducibility of these spinal cord gene expression modules in an independent dataset, we constructed a second human spinal cord gene coexpression network from public microarray data, using established techniques to control for batch effects (Leek et al., 2012; Vandenbon et al., 2016). Module conservation was quantified using the $Z_{summary}$ statistic (Langfelder et al., 2011). Despite the small sample size of our microarray-based human spinal cord coexpression network (n\u00a0=\u00a033), seven of 15 modules showed strong evidence of reproducibility ($Z_{summary}$\u00a0>\u00a010), with an additional two modules showing moderate evidence of reproducibility ($Z_{summary}$\u00a0>\u00a05) (Figure 3A). Only two of 15 modules showed no evidence of reproducibility ($Z_{summary}$\u00a0<\u00a02).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig3-v2.jpg)\n\n**Figure 3.:** (A) Reproducibility of human spinal cord modules in a microarray dataset and conservation in mouse and rat. (B) Enrichment of M3 and M7 for LC SCI genes. (C) Robustness of M3 and M7 enrichment for LC SCI genes. (D) Eigengene network for human spinal cord modules. (E) Differential expression of spinal cord modules following SCI in five datasets, and consensus. (F) Evidence for differential expression of six consensus modules and one majority module (M8). (G) Time-dependent expression of spinal cord modules at acute, subacute, and chronic time points following SCI.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Proportion of LC genes within M3 and M7 by experimental technique. (B) Proportion of LC genes within M3 and M7 by experimental model of SCI. (C) Proportion of LC genes within M3 and M7 by species.\n\nNext, we investigated the evolutionary conservation of human spinal cord coexpression modules in mouse and rat, two of the most commonly used model organisms for studies of SCI pathophysiology. We compiled hundreds of microarray samples from mouse (n\u00a0=\u00a0414) and rat (n\u00a0=\u00a0267) spinal cords from the Gene Expression Omnibus, and constructed gene coexpression networks for the mouse and rat spinal cords, again using established batch effect correction methods. Five modules showed strong evidence of evolutionary conservation ($Z_{summary}$\u00a0>\u00a010) in both species, while another four modules showed moderate evidence of conservation ($Z_{summary}$\u00a0>\u00a05) in at least one species, and only two modules showed no evidence of conservation in either species ($Z_{summary}$\u00a0<\u00a02) (Figure 3A). Notably, the same five modules that showed the strongest evidence of reproducibility (M2, M3, M7, M8, and M12) also showed the strongest evidence of conservation in rat and mouse. Thus, at least at the systems level, the architecture of the spinal cord transcriptome is substantially conserved between human and model organisms, supporting our approach of integrating data from small-scale studies of mammalian model organisms.\n\nIn order to integrate the LC gene set with the spinal cord coexpression network, we next tested for enrichment of LC genes within each module (Figure 3B). Two modules, M3 and M7, were significantly enriched for LC genes (Fisher\u2019s exact test, Bonferroni-corrected p\u00a0=\u00a09.5 $\\times$ 10\u22128 and 2.7 $\\times$ 10\u22123, respectively). These modules consist of 746 and 330 genes, respectively, and both are among the most reproducible and conserved in the spinal cord (Figure 3A). We confirmed the robustness of the observed enrichment by randomly removing seed genes from the LC set, and by randomly adding false positive genes to the LC set. Both M3 and M7 remained significantly enriched for LC genes despite the removal of a large number of seed genes, or the addition of a large number of random genes (Figure 3C): M3 remained significantly enriched for LC genes even after the removal of approximately 70% of genes from the seed set, compared to approximately 50% for M7. Moreover, M3 remained significantly enriched for seed genes even after the size of the literature-curated set was doubled by addition of random false positives. We also asked whether the observed enrichment was driven most strongly by any individual analytical technique or injury model, but found the majority of experimental methods, SCI models, and species contributed to the observed LC gene enrichment in M3 and M7 (Figure 3\u2014figure supplement 1). Thus, M3 and M7 are robustly enriched for genes associated to the SCI response by small-scale studies, despite their divergent experimental designs.\n\nFinally, to assess the relationships between modules, we constructed a module meta-network based on the eigengene of each module, defined as the first principal component of module expression (Langfelder and Horvath, 2007) (Figure 3D). In the resulting network, M3\u00a0and M7 clustered together, as would be expected given the strong correlation between their eigengenes (Spearman\u2019s $\u03c1$ = 0.54, p\u00a0=\u00a01.6 $\\times$ 10\u22126). These results suggest that the expression of these two modules in the spinal cord is highly correlated.\n\nIn summary, gene coexpression network analysis identified five highly conserved and reproducible modules, two of which are significantly and robustly enriched for LC genes, and whose expression is highly correlated.\n\n### Meta-analysis of coexpression network deregulation in SCI\n\nWe next characterized the role of M3 and M7, as well as other highly conserved coexpression modules, in the pathophysiological response to SCI. We performed a meta-analysis of five mouse and rat transcriptomic studies of SCI within the context of our spinal cord coexpression network, in order to identify consensus changes in the spinal cord transcriptome at the module level in response to SCI (Figure 3E). This analysis identified M3, M6, M7, and M11 as consensus upregulated, and M1 and M2 as consensus downregulated, following SCI. One other module, M8, was upregulated following SCI in four of five datasets, while the remaining eight modules did not show robust evidence of differential expression. Among all seven modules, M2, M3, and M7 consistently showed the strongest evidence of differential expression (Figure 3F, p\u00a0$\\leq$ 6.5 $\\times$ 10\u221236, 1.2 $\\times$ 10\u221248, and 1.6 $\\times$ 10\u221214, respectively). Notably, among these modules, M2, M3, M7 were strongly conserved and reproducible in mouse, rat, and human networks ($Z_{summary}$\u00a0>\u00a010), whereas M1, M6, and M11 displayed only moderate evidence of conservation (2\u00a0<\u00a0$Z_{summary}$\u00a0<\u00a010), suggesting these modules may capture human-specific aspects of spinal cord transcriptome organization that are relevant in the response to SCI.\n\nBecause the pathophysiological processes underlying primary and secondary injury in SCI are incompletely understood, we additionally investigated the expression of spinal cord modules at acute, subacute, and chronic time points. Consensus module expression was remarkably consistent at all time points studied (Figure 3G). However, analysis of the temporal regulation of spinal cord modules revealed consensus downregulation of M9 at the most acute time point after SCI, but consensus upregulation at a chronic time point. These results suggest M9 may be specifically involved in the transition between acute and chronic physiological responses following SCI. Thus, by integrating gene coexpression network analysis with a meta-analysis of the SCI transcriptome, we reveal a consensus network signature associated with the response to SCI, and a network module specifically implicated in the transition from acute to chronic injury processes.\n\n### Functional characterization of consensus signature modules\n\nWe sought to characterize the biological significance of the modules implicated in the physiological response to SCI by integrating functional annotations from the Gene Ontology (Ashburner et al., 2000) and molecular signatures from MSigDB (Liberzon et al., 2011)\u00a0(Supplementary file 3). To visualize statistically overrepresented gene sets, we constructed enrichment maps for each consensus signature module (Merico et al., 2010) (Figure 4A\u2013B and Figure 4\u2014figure supplements 1\u20134). To appreciate the cell type-specificity of each module, we additionally conducted a meta-analysis of transcriptomic and proteomic profiles from the major cell types of the CNS, incorporating both bulk and single-cell RNA-seq datasets (Zhang et al., 2014; Sharma et al., 2015; Cahoy et al., 2008; Zeisel et al., 2018) (Figure 4C and Figure 4\u2014figure supplement 5). M1 was an oligodendrocyte module, associated with axon ensheathment and myelination, whereas M2 was a neuronal module implicated in synaptic transmission. M3 was enriched for markers of microglia and vascular endothelial cells, and biological processes such as inflammatory response and response to wounding, while M7 was a microglial module enriched for annotations related to the immune response. M9 was enriched for astrocyte markers and terms such as oxidation-reduction process, as well as the term central nervous system development, which may be related to its upregulation at chronic time points following SCI. M6 and M11 were not significantly associated with any specific cell type, and were enriched for terms including cellular protein modification process and mitochondrial translation, respectively.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Enrichment maps (Merico et al., 2010) for modules M3 and M7. (C) Meta-analysis of cell type-specific marker gene enrichment in human spinal cord modules at the transcriptomic and proteomic levels.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig4-figsupp3-v2.jpg)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig4-figsupp4-v2.jpg)\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig4-figsupp5-v2.jpg)\n\n### Network analysis of SCI severity and recovery\n\nThe finding that M3 is a highly conserved and reproducible gene coexpression module, with the most significant enrichment for LC genes and strong evidence of upregulation following SCI, suggested that this module plays a key pathophysiological role in SCI. We focused on the role of M3 in SCI by investigating the relationship between M3 expression and two key clinical parameters in SCI: injury severity and recovery of sensory and motor function.\n\nWe first re-analysed gene expression data from a mouse model of severity-dependent injury to identify relationships between consensus module expression and injury severity (Di Giovanni et al., 2003; De Biase et al., 2005). Strikingly, M3 was the sole module enriched for genes positively correlated to injury severity, whereas M1, M2, and M9 were enriched for genes anti-correlated to injury severity (Figure 5A). We investigated this effect further by considering the correlations between module eigengenes, which provide a summary of the expression profile of each module, and injury severity. This analysis revealed that the M3 eigengene was the most strongly correlated with injury severity (Spearman\u2019s $\u03c1$ = 0.79, p\u00a0=\u00a02.5 $\\times$ 10\u22127), with a clear separation in M3 expression between the mild, severe, and sham injury groups at 7 days post-injury (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39188/elife-39188-fig5-v2.jpg)\n\n**Figure 5.:** (A) Enrichment of spinal cord modules for genes correlated or anticorrelated to injury severity in a mouse model. (B) Consensus network signature of SCI pathophysiology, validation in independent transcriptomic and proteomic datasets, and reversal in functional recovery and reduced axonal dieback. (C) Gene expression correlation to M3 eigengene predicts association to SCI severity. (D) Reproducibility and evolutionary conservation of spinal cord modules and their preservation at the proteomic level. (E\u2013F) Relationship between M3 eigengene and injury severity at 7 days post-injury in a mouse model (E), and in our own RNA-seq (F) and proteomic (G) datasets. (H) Downregulation of the M3 eigengene following treatment with NT-3, a neurotrophic agent that promotes functional recovery in acute SCI. (I) Six genes classify moderate and severe injuries in transcriptomic data with 90% or greater accuracy. (J\u2013K) Gene expression and protein abundance of annexin A1 in sham, moderate, and severe SCI.\n\nIn order to validate the severity-dependent upregulation of M3 following SCI, we conducted a prospective experimental SCI study, using the field standard contusion injury model at the T10 segment, and performed RNA sequencing of the spinal cord parenchyma\u00a0in rats subjected to moderate, severe, or sham injuries (n\u00a0=\u00a05 per group). Our RNA-seq data reproduced the consensus network signature derived from our meta-analysis of microarray datasets, emphasizing the robustness of this systems-level characterization of SCI pathophysiology (Figure 5F). In addition, we confirmed the significant association between injury severity and the M3 eigengene (Figure 5E; Spearman\u2019s $\u03c1$ = 0.94, p\u00a0=\u00a04.2 $\\times$ 10\u22127). Thus, insights into the network-level organization of the transcriptome in SCI derived from a meta-analysis of publicly available data replicate in an independently collected dataset.\n\nTogether, these results emphasized the severity-dependent upregulation of M3 following SCI, and suggested that the expression of a gene or combination of genes that accurately summarize the transcriptional status of M3 has the potential to serve as an objective biomarker of SCI severity. To evaluate the potential of such an indicator as a biomarker of injury severity, we focused on the hub genes of M3. These genes are the most central and interconnected within the module, based on their correlation to the module eigengene, and are highly enriched for functionally relevant genes such as drivers of disease pathophysiology (Voineagu et al., 2011) or therapeutic targets (Horvath et al., 2006). Consistent with these findings, the hubness of M3 genes (that is, their correlation to the M3 eigengene in human spinal cord) was significantly associated with their predictive power as a biomarker of injury severity (Figure 5D; Spearman\u2019s $\u03c1$ = 0.23, p\u00a0=\u00a03.9 $\\times$ 10\u22127). Among M3 hubs, six genes stratified rats by SCI severity with an accuracy greater than 90%, including Anxa1, Colgalt1, Ifngr2, Shc1, Sod2, and Tbc1d2b (Figure 5G). Remarkably, expression levels of Anxa1 (annexin A1) stratified moderately and severely injured rats with perfect accuracy (Figure 5I). Annexin A1 has previously been associated with SCI by three small-scale studies, each employing divergent model organisms, spinal cord levels, and injury models, emphasizing the robustness of the association between SCI and annexin upregulation (Didangelos et al., 2016; Moghieb et al., 2016; Gao et al., 2012).\n\nWhile our integrative analyses of public and newly acquired transcriptomic data established a strong relationship between M3 expression and SCI severity, post-transcriptional regulation can result in marked differences between gene and protein expression levels, particularly in complex tissues such as those of the CNS (Sharma et al., 2015; Fortelny et al., 2017). To further explore the potential of M3 hubs as biomarkers of SCI severity, we therefore performed quantitative proteomic profiling of the same rat spinal cords. We first sought to establish that the overall structure of the spinal cord coexpression network was conserved between the transcriptomic and proteomic levels. Despite having limited power to detect module preservation due to the small size of our proteomic sample (n\u00a0=\u00a015), both M3 and M7 displayed highly significant evidence of reproducibility between the RNA and protein levels (Figure 5C; $Z_{summary}$\u00a0=\u00a06.8 and 7.3, respectively). Furthermore, we identified substantial overall agreement between proteomic data and the consensus network signature derived from transcriptomic meta-analysis, further validating the robustness of our systems-level portrait of SCI pathophysiology (Figure 5F). Finally, we confirmed the severity-dependent upregulation of both the M3 eigengene and annexin A1 in particular (Figure 5H and J), finding that ANXA1 protein levels stratified both moderate and severe injuries with an accuracy of 93%. Thus, systems-level insights into SCI pathophysiology derived from integrative transcriptomic analyses extend to the proteomic level and nominate quantitative biomarkers of SCI severity.\n\nGiven the strong relationship between injury severity and M3 expression, we hypothesized that targeting the transcriptional profile of this module could represent a viable strategy for development of novel therapies for SCI. To explore this hypothesis, we\u00a0analyzed gene expression data from a recent trial of a neurotrophic factor, neurotrophin-3 (NT-3), which promoted sensory and motor recovery after SCI (Duan et al., 2015; Yang et al., 2015). Remarkably, all six consensus modules derived from our meta-analysis, including M3, were differentially expressed at the lesion site in the opposite direction (Figure 5F) in rats treated with NT-3. Intriguingly, the sole other differentially expressed module was M9, which we previously observed to exhibit a strongly time-dependent expression profile, and which was enriched for genes associated with neurogenesis. In rats treated with NT-3, known for its role in neuronal differentiation, axonal growth, and chemotropic guidance (Alto et al., 2009; Anderson et al., 2016), M9 was strongly upregulated at the lesion site relative to the experimental control (p\u00a0=\u00a09.3 $\\times$ 10\u221212). Moreover, the M3 eigengene was significantly downregulated in NT-3-treated rats relative to controls (Figure 5K; one-tailed Wilcoxon rank-sum test, p\u00a0=\u00a02.1 $\\times$ 10\u22123). We additionally analysed gene expression data from transgenic STAT3 knockout mice (Anderson et al., 2016), a loss-of-function manipulation that increased axonal dieback following experimental SCI, and found all six consensus modules were again differentially expressed in the opposite direction in wild-type mice, relative to knockout mice (Figure 5B). These results indicate that reversal of the transcriptome changes observed in response to SCI is associated with functional recovery and decreased axonal dieback in rodent models, and highlight M3 expression as a predictor of functional recovery.\n\n## Discussion\n\nThe fragmentary understanding of the coordinated pathophysiological processes activated in the human spinal cord by SCI represents a central obstacle to the development of therapies capable of influencing neurological outcomes. In this study, we developed an integrated, systems-level approach to understand the molecular mechanisms underlying SCI pathophysiology. We leveraged large-scale RNA-seq data from healthy subjects to reveal gene regulatory relationships in the human spinal cord. By integrating multiple gene expression datasets from experimental models of SCI, we identified gene subnetworks implicated by consensus in the pathophysiological response to SCI, and reproduced these signatures at both the transcriptomic and proteomic levels in an animal trial. The observation that seven different gene modules were robustly associated with the response to SCI, either by consensus differential regulation (M1, M2, M3, M7, M11) or by a strongly time-dependent course of expression (M9), is consistent with the notion that the pathophysiology of SCI is highly complex (Ramer et al., 2014). Our results provide a framework to understand the diverse, coordinated processes in the spinal cord following SCI.\n\nIn order to prioritize gene subnetworks, we conducted a systematic analysis of the SCI literature, and integrated genes implicated in the SCI response by small-scale experiments into our network analysis. This approach is conceptually similar to the integration of GWAS or de novo mutation data into gene regulatory networks, as has previously been described for a number of diseases (e.g., Johnson et al., 2015; Delahaye-Duriez et al., 2016; Calabrese et al., 2017; Li et al., 2014; International Consortium for Blood Pressure GWAS (ICBP) et al., 2015). In the context of genetic analyses, the core assumption is that false positive and false negative associations between alleles and the phenotype of interest can be mitigated by identifying convergent molecular processes that mediate disease biology. In the context of literature curation, as employed here, we posit that the relatively high false-positive rates of small-scale experiments, as well as their appreciable false-negative rates, can be mitigated by unbiased integration of data from small-scale experiments into a genome-wide framework. Importantly, this experimental design provides an approach to extend gene coexpression network analysis to acquired and traumatic conditions, using samples from healthy tissues. However, a limitation of this approach is the implicit assumption that the molecular organization of the transcriptome in the relevant tissue of healthy human subjects is informative about the biological processes dysregulated by an acquired or traumatic condition. Although the analyses presented here indicate that this assumption appears to be valid in the case of SCI, future work will be needed to establish whether this principle holds in general.\n\nA major challenge to the translation of preclinical therapies for acute SCI is the use of standardized neurological assessments to enrol and stratify patients in large clinical trials (Fawcett et al., 2007). In this context, objective biomarkers capable of accurately stratifying injury severity have the potential to facilitate translation by accelerating the pace of patient enrolment (Kwon et al., 2017; Streijger et al., 2017). We found that M3 was the sole module enriched for genes whose expression correlated with injury severity in a mouse model, and that its eigengene was likewise most strongly associated with severity. We subsequently reproduced this correlation in our own transcriptomic and proteomic datasets. The severity-dependent upregulation of M3 following SCI, and its preservation at the proteomic level, suggests that its expression has the potential to stratify injury severity in a clinical context. Furthermore, this expression pattern was reversed with administration of NT-3, a treatment that promotes motor and sensory recovery (Yang et al., 2015). These findings have several implications for the discovery and translation of new SCI therapies. The identification of drugs that reverse transcriptional changes associated with SCI has the potential to provide a new strategy for preclinical lead discovery. Moreover, analysing the effect of a desired treatment on M3 expression, or our consensus network signature more generally, may represent an effective technique to validate the efficacy of preclinical therapies.\n\nAmong M3 hub genes, which reflect the expression of the entire module, we found that both the RNA and protein levels of Anxa1 (annexin A1) demonstrated a strong ability to discriminate between injuries of different severities. Annexin A1 is a member of the annexin superfamily of calcium dependent phospholipid-binding proteins, and plays a role in mediating anti-inflammatory effects through inhibition of phospholipase A2 activity (Elderfield et al., 1993; Liu et al., 2007), decreasing leukocyte activation (Perretti and Flower, 1993; D'Acquisto et al., 2007) and reducing expression of pro-inflammatory cytokines (Sudlow et al., 1996; McArthur et al., 2010). Anxa1 is primarily expressed in microglia, where it regulates the selective removal of apoptotic neurons (McArthur et al., 2010). Correspondingly, Anxa1 knockout mice are characterized by exaggerated inflammatory responses, as well as a blunted response to the anti-inflammatory effects of glucocorticoids (Hannon et al., 2003). Anxa1 is upregulated in multiple diseases characterized by aberrant neuroinflammation (Elderfield et al., 1992; Elderfield et al., 1993; McArthur et al., 2010). Importantly, multiple studies have previously reported upregulation of Anxa1 in SCI (Didangelos et al., 2016; Moghieb et al., 2016; Gao et al., 2012), with peak expression at 7 days post injury (Liu et al., 2004), and upregulation of Anxa1 is associated with functional recovery after SCI (Liu et al., 2007). Notably, Anxa1 was previously identified as a biomarker of SCI severity in a study that included both rat and human samples (Moghieb et al., 2016). Our independent finding here that Anxa1 is a strong candidate for a severity-dependent biomarker of SCI suggests that our systems-level approach can drive rational selection of novel potential biomarkers. However, although we observed substantial conservation of M3 between human and rat at the systems level, this finding does not preclude the possibility that individual genes diverge in their expression following acute SCI between human and rodents. Further studies in humans are therefore needed to conclusively establish the validity of Anxa1 as a biomarker of SCI severity.\n\nIn summary, our systems biology approach identifies evolutionarily conserved and reproducible gene subnetworks with robust evidence for differential regulation following SCI, and provides a genome-wide view of the pathophysiological processes triggered by\u00a0SCI. Our findings provide new, data-driven strategies to identify and translate novel therapies for SCI.\n\n## Materials and methods\n\n### Systematic analysis of SCI literature\n\nWe searched PubMed for articles investigating the molecular pathophysiology of SCI published prior to February 2016, using combinations of \u2018spinal cord injury\u2019 and one of \u2018proteomics,\u2019 \u2018proteome,\u2019 \u2018proteomic,\u2019 \u2018biomarkers,\u2019 \u2018biomarker,'\u00a0\u2018RNA-seq,\u2019 and \u2018microarray\u2019 as search terms. 556 papers were identified that met these criteria. These were subsequently filtered to exclude papers that did not include a valid control group, included exclusively in vitro data, did not include primary\u00a0data, or examined a tissue other than spinal cord. As previous studies have suggested that small-scale and high-throughput experiments may be largely complementary, or lead to divergent biological conclusions, we considered only small-scale experiments in the literature curation process, defined here as experiments reporting differential regulation of fewer than 100 genes or proteins. Ultimately, data from 67 manuscripts was collected. The original accessions used to identify genes or proteins associated\u00a0with SCI in each publication were retained. If only the gene name and no unambiguous identifier was noted, the UniProt accession of the gene in the relevant species was manually retrieved. We applied a strict, majority voting-based method to map rat, mouse, and rabbit genes to their human orthologs with maximum accuracy (Li et al., 2017). Specifically, we mapped orthologs from rat, mouse, and rabbit genes to human using seven different ortholog databases [EggNOG (Huerta-Cepas et al., 2016), Ensembl (Kinsella et al., 2011), NCBI Gene (Brown et al., 2015), HomoloGene (Agarwala et al., 2018), InParanoid (Sonnhammer and \u00d6stlund, 2015), and OrthoDB (Zdobnov et al., 2017)], and considered human genes as \u2018consensus orthologs\u2019 only if they were detected in at least half of those databases containing an entry for the target model organism protein. All genes were mapped to Ensembl identifiers in Bioconductor (Huber et al., 2015).\n\n### Validation of literature-curated SCI genes\n\nWe established the functional coherence and biological relevance of our LC SCI gene set using four lines of evidence: protein-protein interactions (PPIs), interactome largest connected components (LCCs), shared Gene Ontology (GO) terms, and recovery with DIAMOnD (Ghiassian et al., 2015), a disease gene prediction algorithm. To investigate the tendency of our LC gene set to participate in PPIs, we initially analysed a recently described high-quality human interactome (Menche et al., 2015). We subsequently reproduced our results in two additional human interactome databases restricted to binary and co-complex interactions, obtained from HINT (version 4) (Das and Yu, 2012), and a fourth human interactome, obtained from InBioMap (Li et al., 2017), in order to establish that the enrichment for protein-protein interactions was not a function of the experimental technique used to detect the interaction. Self-interactions were removed and original accessions were mapped to Ensembl gene identifiers. To evaluate the impact of the experimental method used to detect PPIs, we analysed high-quality binary and co-complex interactomes from HINT separately. Network operations, including creation of induced subgraphs and calculation of largest connected components, were performed in the R package igraph (Csardi and Nepusz, 2006). Randomized networks were generated using a degree-preserving algorithm (Maslov and Sneppen, 2002) to control for network topology, with 1000 randomized networks generated to calculate empirical P values. We additionally evaluated the tendency for LC proteins to participate in the same protein complexes by retrieving random sets of proteins of equivalent size from hu.MAP (Drew et al., 2017) and calculating the number of co-complex interactions, a process that was repeated 103 times.\n\nGO terms were retrieved from the UniProt-GOA database (Dimmer et al., 2012). We compared the number of shared GO terms within each ontological category at three breadth cutoffs between all pairs of LC genes to the number of shared GO terms between random sets of genes.\n\nTo evaluate the ability of a recently described algorithm for disease gene prioritization, DIAMOnD, we randomly withheld 20% of LC genes and evaluated the fraction recovered within the first 1000 iterations of DIAMOnD. This was compared to the ability of DIAMOnD to recover an equivalent number of randomly selected genes, using randomly selected seed genes from the human genome. This process was bootstrapped 1000 times and results were reproduced using the InWeb_InBioMap interactome (version 2016_09_12)\u00a0(Li et al., 2017)\n\n### Gene coexpression network analysis of human spinal cord\n\nRaw gene read count and RPKM data was downloaded from the GTEx portal, version V6p (GTEx Consortium, 2013). Only genes with expression estimates\u00a0>\u00a00.1 RPKM in $\\geq$ 10 individuals were considered. The distribution of RPKMs in each sample was quantile transformed using the average empirical distribution observed across all samples, and inverse quantile normalization to the standard normal distribution was performed for each gene. Gene coexpression analysis was performed using the WGCNA package\u00a0Langfelder and Horvath, 2008.\u00a0Briefly, a signed pairwise gene correlation matrix was constructed using biweight midcorrelation (Langfelder and Horvath, 2012) and considering a maximum of 5% of samples as outliers on either side of the median. The correlation matrix was raised to the power $\\beta$ = 5, the minimum value satisfying the scale-free topology criterion R2\u00a0$>$ 0.8, to create an adjacency matrix. The adjacency matrix was used to calculate the topological overlap matrix (TOM), which was subsequently clustered based on the dissimilarity of gene connectivity. Coexpressed gene modules were defined from the resulting tree using the dynamic tree cut method (Langfelder and Horvath, 2008), with a minimum module size of 20 and a cut height of 0.2.\n\n### Module preservation in human, rat, and mouse microarray data\n\nWe queried Array Express (Kolesnikov et al., 2015) with the search term \u2018spinal cord\u2019 to identify samples from Affymetrix GeneChip Rat Genome 230 2.0, Human Genome U133 Plus 2.0, and Mouse Genome 430 2.0 microarrays (Supplementary file 3). Experiments with fewer than five samples were excluded. Additionally, experiments or samples analysing individual cell populations (e.g., neurons) within the spinal cord rather than homogenized tissue, fetal spinal cord, or spinal cord neoplasms were excluded. Raw expression profiles were normalized with the MAS5 algorithm (Hubbell et al., 2002) within the R package affy (Gautier et al., 2004). Only probe sets that were called as present in at least 80% of samples were retained. ComBat was used to adjust for batch effects, where each experiment corresponded to a single batch (Leek et al., 2012). Affymetrix probe set identifiers were mapped to Ensembl gene accessions using Bioconductor. Genes with multiple probes were represented by the median expression value. Mouse and rat accessions were further mapped to consensus human orthologs using the majority-voting procedure described above. Module preservation was assessed using the $Z_{summary}$ statistic, calculated using the modulePreservation function in the WGCNA R package with 100 permutations.\n\n### Meta-analysis of coexpression network deregulation following SCI\n\nData from five studies investigating the transcriptomic response to SCI (GSE464, GSE5296, GSE45006, GSE45376, and GSE69334) was obtained from Array Express. Normalization and mapping to human orthologs was performed as described above. For GSE464, MAS5 normalization was performed within the R package xps, as the Rat Genome U34 chip was not supported by the affy package. For GSE45376, quantile normalization of raw expression estimates was performed as described for GTEx data. Differential expression analyses of each processed dataset were performed with treatment-contrasts parameterization in the limma package (Ritchie et al., 2015), using the geneSetTest function to perform a mean-rank gene-set enrichment test for both up- and downregulation of each module, before applying Bonferroni correction. We additionally analysed differential expression of each module at 1 day, 3 days, 7 days, and 28 days following SCI in order to evaluate module expression at acute, subacute, and chronic time points.\n\n### Functional characterization of spinal cord modules\n\nTo construct enrichment maps for consensus modules implicated in the response to SCI by meta-analysis, we identified overrepresented gene sets from GO (Dimmer et al., 2012) and the CGP (chemical and genetic perturbagens) and TFT (transcription factor targets) subsets of MSigDB (Liberzon et al., 2011). Genes were mapped to Ensembl accessions prior to enrichment analysis with the HTSanalyzeR package (Wang et al., 2011), using 1000 permutations and a minimum gene set size of 5. Significantly enriched gene sets were visualized as an enrichment map (Merico et al., 2010), in which nodes represent gene sets and edges connect related gene sets. Clusters of gene sets within the resulting enrichment maps were manually identified and annotated. Cell type specificity was assessed using microarray (Cahoy et al., 2008), RNA-seq (Zhang et al., 2014), and proteomic (Sharma et al., 2015) data from cell populations within the mouse CNS, using the R package pSI to test for enrichment of cell type-specific genes (Dougherty et al., 2010). We analysed a wide range of cell types, including neurons, astrocytes, and microglia (Cahoy et al., 2008; Zhang et al., 2014; Sharma et al., 2015), as well as oligodendrocytes at various points in maturation (i.e., \u2018oligodendrocyte precursor cell,\u2019 \u2018myelinating oligodendrocyte,\u2019 \u2018oligodendrocyte;\u2019 [Cahoy et al., 2008; Zhang et al., 2014]). We included additional comparisons in microglia from both new-born and adult mice (i.e., \u2018adult microglia,\u2019 \u2018young microglia;\u2019 [Sharma et al., 2015]), developing in vitro neurons and oligodendrocytesthrough the first two weeks of maturation (DIV: day in vitro; [Sharma et al., 2015]), as well as isolated and cultured astrocytes (Cahoy et al., 2008).\n\n### Severity-dependent expression of spinal cord modules\n\nRaw microarray data was obtained from Array Express (GSE464) (Kolesnikov et al., 2015; De Biase et al., 2005) and processed as described above. Injuries annotated as \u2018moderate\u2019 and \u2018severe\u2019 were grouped together on the basis of identical histological and functional outcomes in the experimental model (De Biase et al., 2005). To identify modules enriched for genes whose expression was correlated with injury severity, we calculated a previously described gene-level score (Delahaye-Duriez et al., 2016) by multiplying the Spearman correlation coefficient between gene expression and height of weight drop by the negative logarithm of the P value, then performed mean-rank gene-set enrichment tests and applied Bonferroni correction. Only samples from the lesion site were considered. Initial analysis of differentially expressed genes revealed that all but a single probe set on the U34A chip were consistently downregulated following injury, likely due to the biased composition of this chip. Therefore, samples collected using this chip were omitted when calculating correlation between injury severity and module eigengenes to reduce bias. Module eigengenes were calculated using the moduleEigengenes function from the WGCNA package.\n\n### Spinal cord surgery and animal care\n\nEthical approval was obtained by the University of British Columbia Behavioural Research Ethics Board (A14-0152) and all procedures strictly adhere to the guidelines issues by the Canadian Council for Animal Care. Animals (n\u00a0=\u00a015, n\u00a0=\u00a05 per group) were started on prophylactic enrofloxin (Baytril; 10 mg kg\u22121, s.c., Associated Veterinary Purchasing (AVP), Langley, Canada) three days prior to surgery. On the day of spinal cord contusion animals were anesthetized using isoflurane (initialinduction 5% and maintained on a Bain\u2019s system at 2%). After achieving surgical depth of anaesthesia, pre-operative buprenorphine (Temgesic; 0.02 mg kg\u22121, s.c., McGill University), enrofloxin (Baytril; 10 mg kg\u22121, s.c., Associated Veterinary Purchasing (AVP), Langley, Canada), and Ringers solution were administered subcutaneously. The skin was prepared by shaving the surgical site, followed by three successive chlorohexidine and 70% ethanol washes. A dorsal midline incision was made from T5 to L2. The T9 spinous process was identified and a laminectomy was performed to expose the T10 spinal segment. Following this the animal was transferred to the IH impactor stage, where the T8 and T10 spinous processes were securely clamped using modified Allis forceps. The animal was stabilized on the platform and the impactor tip (2.0 mm) was properly aligned using a 3-dimensional coordinate system moving platform. The position of the impactor was confirmed as midline by two separate experimenters. The IH system was set to deliver an impact of 100 or 200 kdyn of pre-defined force, based on random assignment. Following hemostasis, the deep and superficial Para spinal muscles were sutured using 5\u20130 Monocryl sutures (Ethicon, USA), followed by 5\u20130 Prolene (Ethicon, USA) sutures in the skin. Animals were then given 5 mL of Ringers solution subcutaneously and allowed to recover in a temperature controlled environment (Animal Intensive Care Unit, Los Angeles, CA, USA). Post-operatively, animals were given buprenorphine (10 mg kg\u22121, s.c.) and enrofloxin (0.02 mg kg\u22121, s.c.) once daily for three days, after which buprenorphine was given on an as needed basis. Bladders were manually expressed for the duration of the experiment (7 days post-injury).\n\n### Tissue processing\n\nAnimals were overdosed with a lethal dose of 10% chlorohydrate (i.p.), after which a thoracotomy was performed. Animals were transcardially cleared with 300 mL of PBS. Next, the spinal cord lesion site was dissected 2 mm caudal and rostral to the visual epicentre. This sample was homogenized and split into two parts for transcriptomic and proteomic processing.\n\n### RNA isolation and sequencing\n\n10 mg of spinal cord parenchyma surrounding the injury site was stored in RLT buffer containing beta-mercaptoethanol until RNA isolation. Total RNA was purified using the Qiagen RNeasy Mini Kit according to the manufacturer\u2019s instructions, eluting in 30 $\\mu$L of water. 500 ng RNA was used for library preparation with Illumina\u2019s TruSeq Stranded mRNA kit (Illumina, San Diego, CA). Libraries were pooled and sequenced on the Illumina NextSeq in high output mode, generating paired-end 75-base pair reads. Library preparation and sequencing were performed by the Sequencing and Bioinformatics Consortium at the University of British Columbia.\n\n### Transcriptome analysis\n\nQuality control checks using FastQC and principal components analysis revealed a single sample as an outlier, which was discarded prior to further analysis. Sequences were pseudoaligned to the Ensembl 89 version of the Rattus norvegicus transcriptome, including coding and non-coding transcripts, with Salmon (version 0.8.2) (Patro et al., 2017), using 100 bootstraps to compute abundance estimates. Rat genes were mapped to human orthologs using the majority-voting procedure described above. Salmon outputwas converted into a format compatible with sleuth (Pimentel et al., 2017) for differential expression analysis using wasabi (https://github.com/COMBINE-lab/wasabi). Differential expression was assessed using sleuth (version 0.29.0), representing severity as a continuous covariate (0, 100, or 200 kdyn of force). Genes were ranked by the fold change estimates computed by sleuth to perform mean-rank gene-set enrichment tests for module up- and downregulation. Hub genes were identified by ranking genes by their correlation to the module eigengene in the human spinal cord samples (Horvath and Dong, 2008), and identifying the 10% most connected genes in the module. To evaluate the ability of hub gene expression to stratify SCI severity, we constructed linear discriminant analysis models using the R package MASS (Kwon et al., 2017). The accuracy of each model in classifying moderately and severely injured rats was assessed using leave-one-out cross-validation.\n\n### Mass spectrometric analysis\n\nParenchyma tissue samples were lysed by 2.8 mm ceramic bead (Qiagen) prior to homogenization with a single 20 s 5000 rpm on Precellys 24 (Bertin Technologies) in 4% (w/v) SDS in 100 mM Tris pH 8.8 and 20 mM DTT. The lysate was heated at 99$^{c}$C for 10 min, and cell debris was spun out and protein concentration estimated by BCA assay (Thermo). An equivalent protein amount for each sample was loaded onto 10% SDS PAGE gel and visualized by colloidal Coomassie (Candiano et al., 2004). Each lane\u00a0was fractionated into five pieces and trypsin digested out of the gel (Shevchenko et al., 1996). Peptide samples were purified by solid phase extraction on C-18 Stop And Go Extraction (STAGE) Tips (Ishihama et al., 2002), and analysed by a quadrupole\u2013time of flight mass spectrometer (Impact II; Bruker Daltonics) coupled to an Easy nano LC 1000 HPLC (ThermoFisher Scientific) using an analytical column that was 40\u201350 cm long, with a 75 $\\mu$m inner diameter fused silica with an integrated spray tip pulled with P-2000 laser puller (Sutter Instruments), packed with 1.9 $\\mu$m diameter Reprosil-Pur C-18-AQ beads (Maisch, http://www.dr-maisch.com), and operated at 50$^{\u2218}$C with in-house built column heater. Buffer A consisted of 0.1% aqueous formic acid, and buffer\u00a0B consisted of 0.1% formic acid in acetonitrile. A standard 60 min peptide separation was done per injection, and the column was washed with 100% buffer B before re-equilibration with buffer A. The Impact II was set to acquire in a data-dependent auto-MS/MS mode with inactive focus fragmenting the 20 most abundant ions (one at the time at a 18 Hz rate) after each full-range scan from m/z 200 to m/z 2000 at 5 Hz rate. The isolation window for MS/MS was 2\u20133 depending on the parent ion mass to charge ratio, and the collision energy ranged from 23 to 65 eV depending on ion mass and charge. Parent ions were then excluded from MS/MS for the next 0.4 min and reconsidered if their intensity increased more than five times. Singly charged ions were excluded from fragmentation.\n\nAnalysis of mass spectrometry data was performed using MaxQuant (Cox and Mann, 2008) version 1.5.3.30. The search was performed against a database comprised of the protein sequences from Uniprot Rattus norvegicus entries plus common contaminants with variable modifications of methionine oxidation, and N-acetylation of the proteins, and enabling LFQ and match between run options. Only those peptides exceeding the individually calculated 99% confidence limit (as opposed to the average limit for the whole experiment) were considered as accurately identified.\n\n### Proteomic analysis\n\nModule preservation at the proteomic level was quantified using the modulePreservation function, using Spearman correlation to calculate coexpression similarity. A mean-rank gene set enrichment test was used to test for module up- and downregulation, prior to Bonferroni correction. Linear discriminant analysis of annexin A1 was performed as described above.\n\n### Code availability\n\nThe source code to reproduce all the analyses and generate the figures reported in this paper is available under the MIT license from https://github.com/skinnider/spinal-cord-injury-elife-2018\u00a0(Squair and Skinnider, 2018); copy archived at https://github.com/elifesciences-publications/spinal-cord-injury-elife-2018.\n\n### Data\u00a0availability\n\nRNA sequencing data have been deposited to the GEO repository with the accession GSE115067. Proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD010192.\n",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "2d27e50c-526c-4462-a249-e14a0ffa1da4",
+      "submission_id": "aebd4fb5-29fa-4f84-ae3f-dcc02f9bc9f5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39188.035](https://doi.org/10.7554/eLife.39188.035)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Integrated systems analysis reveals conserved gene networks underlying response to spinal cord injury\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Ole Kiehn as the Reviewing Editor and Patricia Wittkopp as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Tune Pers (Reviewer #1); Andrea Tedeschi (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe study by Squair et al. use an integrative approach to identify a set of genes predictive for spinal cord injury (SCI) severity and functional recovery. They use a combination of systematic literature reviews and WGCNA on public gene databases to develop a gene set enrichment analysis and consensus SCI network conserved in many species. They then perform functional enrichment analyses using cell-based ontologies and protein network analyses to validate the selected gene sets. They identify a microglia/vascular cell network ('M3') and an innate immune response microglia network ('M7') correlated with injury severity and functional recovery, respectively. Some of the most connected genes in the M3 gene was also found to be downregulated in a dataset where neurotrophin-3 (NT3)-coupled chitosan biomaterial was grafted into a gap of completely transected rat thoracic spinal cord. The systems approach applied to spinal cord injury is novel and the pipeline is well presented and spans over a large number of relevant experimental and computational techniques, which complement each other very well. The work is important and will most probably have an impact in SCI.\n\nEssential revisions:\n\nThe reviewers were generally very supportive of the work as presented but had a number of comments and specific request for improving the work and its impact.\n\nA) Additional analysis:\n\n1) The literature curated genes share more protein-protein interactions (PPI). However, biases in the PPI database towards small-scale studies could confound the analysis. The authors should redo their analysis based on PPI data restricted to interactions from large-scale screens only (e.g. from the InWeb or, if possible, HINT database). The same bias may exist for the validation analysis focusing on the size of the largest connected component and the DIAMOnD analysis.\n\n2) The authors should attempt to provide additional cell type specificity to the modules including M3 and M7 by using single cell RNA sequencing data from the spinal cord the following studies: a) www.biorxiv.org/content/early/2018/04/06/294918, b) Neuronal atlas of the dorsal horn defines its architecture and links sensory input to transcriptional cell types. Nature Neuroscience 2018; c) Massively Parallel Single Nucleus Transcriptional Profiling Defines Spinal Cord Neurons and Their Activity during Behavior, Cell 2018.\n\nB) Request for deposit of material:\n\nThe authors should put together a Github repository with all of the code used to perform the extensive analyses represented here. Given that the large majority of the work product here is in silico analysis of existing public resources, it seems only right for the authors to give back to the community so that each figure can be re-constructed from source code they make publicly-available. This is critical for reproducibility.\n\nC) Comments that may be addressed in the text:\n\n1) In genetics, less than 4% of the results from small-scale approaches (candidate gene analyses) have not been robustly replicated (Hirschhorn, Genetics in Medicine 2002). The authors should comment on: What are the potential reasons that a literature-seed gene approach seems to work well for SCI? What were the characters of the literature small-scale study approaches and experimental techniques that yielded the most predictive genes for the M3 and M7 networks \u2013 any clear trends? Finally, were the M3 and M7 networks the top results in the RNA sequencing experiment, or were there WGCNA networks (or differentially expressed genes) stronger correlated with injury severity and functional recovery than the M3 and M7 networks, which would suggest additional relevant SCI pathways currently less well captured in literature?\n\n2) The literature curated genes coalesce on common biological functions that depends on them being accurately annotated. Could the author comment if there is bias towards literature genes even if genes have to be annotated to at least three Gene Ontology terms?\n\n3) The authors should mention that the assumption underlying their work is that gene expression data in control individuals is indicative of processes dysregulated in SCI. Even so this assumption seems to hold true in their case it remains to be shown whether it holds true in general.\n\n4) As most inflammatory mediators are expressed at low levels in the uninjured spinal cord, and the subsequent increase in expression is a response to injury, they are likely to correlate with SCI severity. It may therefore be suspected to find a M3 module enriched for markers of microglia positively that correlate positively with injury severity. The authors could have consider to expand the significance of their work by including additional analysis from another publicly available dataset where a different strategy was shown to promote functional recovery after SCI. In absence of this analysis the authors should discuss the general predictivity of their analysis with respect to the different modules.\n",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "95e34c8d-98f5-4b50-955c-a7947ea95149",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C1",
+      "claim": "There are currently no effective treatment options to restore function in spinal cord injury (SCI).",
+      "claim_type": "EXPLICIT",
+      "source": "Spinal cord injury (SCI) is a devastating neurological condition for which there are currently no effective treatment options to restore function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general characterization of the current state of SCI treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "8e55acad-aebd-4bae-99bf-1f42d5965261",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C2",
+      "claim": "A major obstacle to developing new therapies for SCI is the fragmentary understanding of coordinated pathophysiological processes triggered by damage to the human spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "A major obstacle to the development of new therapies is our fragmentary understanding of the coordinated pathophysiological processes triggered by damage to the human spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a premise in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "c3c27ba8-c6b0-4468-bc95-b503a7c8f121",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C3",
+      "claim": "The study describes a systems biology approach to integrate decades of small-scale experiments with unbiased, genome-wide gene expression from the human spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a systems biology approach to integrate decades of small-scale experiments with unbiased, genome-wide gene expression from the human spinal cord, revealing a gene regulatory network signature of the pathophysiological response to SCI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "886bbf19-99cd-48f2-9ed7-cddec4faadc1",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C4",
+      "claim": "The integrative analyses converge on an evolutionarily conserved gene subnetwork enriched for genes associated with the response to SCI by small-scale experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our integrative analyses converge on an evolutionarily conserved gene subnetwork enriched for genes associated with the response to SCI by small-scale experiments, and whose expression is upregulated in a severity-dependent manner following injury and downregulated in functional recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "65be94bf-f8ca-42c1-ac7d-44632aebac93",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C5",
+      "claim": "The identified subnetwork's expression is upregulated in a severity-dependent manner following injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Our integrative analyses converge on an evolutionarily conserved gene subnetwork enriched for genes associated with the response to SCI by small-scale experiments, and whose expression is upregulated in a severity-dependent manner following injury and downregulated in functional recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing correlation between module expression and injury severity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "b90cf801-9d1c-4236-ae5b-bdd0fa59ad09",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C6",
+      "claim": "The identified subnetwork's expression is downregulated in functional recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Our integrative analyses converge on an evolutionarily conserved gene subnetwork enriched for genes associated with the response to SCI by small-scale experiments, and whose expression is upregulated in a severity-dependent manner following injury and downregulated in functional recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of NT-3 treatment data showing downregulation of M3 in functional recovery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "87e466f3-770a-4ddd-86bf-7069c12fe887",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C7",
+      "claim": "The severity-dependent upregulation of the identified subnetwork was validated in rodents in primary transcriptomic and proteomic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We validate the severity-dependent upregulation of this subnetwork in rodents in primary transcriptomic and proteomic studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the RNA-seq and proteomic data from rat SCI experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "20ac26cf-503f-4356-867b-e91a81c58dbc",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C8",
+      "claim": "Large-scale clinical trials of drug therapies in acute SCI have failed.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of large-scale clinical trials of drug therapies in acute SCI (Bracken et al., 1990; Geisler et al., 2001), and the lack of success in translating preclinical therapies to humans (Ramer et al., 2014), leaves clinicians without effective treatment options for SCI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous clinical trials.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "75de3277-0dd6-4b76-bb9c-983cca9df0c1",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C9",
+      "claim": "Hemodynamic management and surgical decompression remain the only options to influence neurological outcomes immediately following acute SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, hemodynamic management and surgical decompression remain the only options to influence neurological outcomes immediately following acute SCI, typically with only marginal improvements (Hawryluk et al., 2015; Tee et al., 2017; Fehlings et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current clinical practice and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "ea254a0f-0c76-4073-a6f9-0813c9c18da7",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C10",
+      "claim": "The absence of an effective treatment for SCI reflects the complexity of the pathophysiologic mechanisms activated by central nervous system (CNS) injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of an effective treatment for SCI reflects the complexity of the pathophysiologic mechanisms activated by central nervous system (CNS) injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the current state of SCI treatment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "f884c22b-e917-4969-a30c-e4b376ac4821",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C11",
+      "claim": "The additive effects of the immune response, multiple forms of cell death, neuronal growth suppression, and the formation of an inhibitory glial scar pose a challenge to the development of new therapeutic strategies for SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "The additive effects of the immune response (Kigerl et al., 2009; Demjen et al., 2004), multiple forms of cell death (Springer et al., 1999; Crowe et al., 1997), neuronal growth suppression (GrandPr\u00e9 et al., 2000; Schnell and Schwab, 1990), and the formation of an inhibitory glial scar (Bradbury et al., 2002) pose a challenge to the development of new therapeutic strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research on these mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "4d4b6249-a1cf-47ba-9f3b-de25f42cb676",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C12",
+      "claim": "The response to trauma within the human spinal cord is mediated by multiple coordinated molecular pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The response to trauma within the human spinal cord is mediated by multiple coordinated molecular pathways, yet these processes are rarely studied in an integrated manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a premise for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "a177ea18-f03d-486e-b777-343b285a4b1a",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C13",
+      "claim": "Standardized neurological assessments used for patient enrollment and stratification in clinical trials are highly variable, operator-dependent, and may be impossible to perform in many SCI patients.",
+      "claim_type": "EXPLICIT",
+      "source": "These measures are highly variable, operator-dependent, and may be impossible to perform in many SCI patients (Kwon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current clinical practice and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "71f3df60-73aa-4e03-a9be-ec6aa32516a9",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C14",
+      "claim": "Systems biology approaches provide powerful means to elucidate the coordinated molecular processes underlying the pathophysiology of complex diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Systems biology approaches provide powerful means to elucidate the coordinated molecular processes underlying the pathophysiology of complex diseases (Voineagu et al., 2011; Parikshak et al., 2013; Zhang et al., 2013; Johnson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous systems biology studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "5a3554d6-af38-4f67-914b-6bd881b49f7c",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C15",
+      "claim": "Gene coexpression network analysis can complement reductionist descriptions of isolated gene functions by identifying networks of genes responsible for driving disease processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, gene coexpression network analysis can complement reductionist descriptions of isolated gene functions by identifying networks of genes responsible for driving disease processes (Zhang and Horvath, 2005; Parikshak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "95dff271-bef8-4968-b3b2-8be69c42d34c",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C16",
+      "claim": "Systematic analysis of over 500 manuscripts revealed 695 unique human genes associated with the response to SCI by small-scale experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted a systematic analysis of the SCI literature, reviewing over 500 papers, in order to reveal a set of 695 unique human genes associated with the response to SCI by small-scale experiments (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary result of the literature curation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "e314883f-bbe2-4a34-b43e-f333b5411da7",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C17",
+      "claim": "Of the 695 literature-curated genes, 559 were upregulated following SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these genes, 559 were upregulated following SCI, 213 were downregulated, and the protein products of 8 were differentially phosphorylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the literature curation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "f9761829-c7f4-4d90-b2a4-900b7e7db01c",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C18",
+      "claim": "Of the 695 literature-curated genes, 213 were downregulated following SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these genes, 559 were upregulated following SCI, 213 were downregulated, and the protein products of 8 were differentially phosphorylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the literature curation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "3a584d8b-424a-4d7e-ad0f-33c60d50deb4",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C19",
+      "claim": "The protein products of 8 literature-curated genes were differentially phosphorylated following SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these genes, 559 were upregulated following SCI, 213 were downregulated, and the protein products of 8 were differentially phosphorylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the literature curation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "18733f2d-9838-44f1-ba47-55fd0be84c6e",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C20",
+      "claim": "151 literature-curated genes were associated with the response to SCI by more than one study.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all genes, 151 were associated with the response to SCI by more than one study (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "1865603a-a5ff-4730-b7bf-d9a669bd5bf6",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C21",
+      "claim": "Literature-curated genes are more likely to share common biological functions than random sets of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we established that LC genes were more likely to share common biological functions than random sets of genes, using annotations from the Gene Ontology (Ashburner et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result using Gene Ontology enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "1675680e-a947-4c05-9ad5-8d6c81908719",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C22",
+      "claim": "The enrichment of literature-curated genes for shared biological functions holds regardless of the number of genes to which each term was annotated.",
+      "claim_type": "EXPLICIT",
+      "source": "Because functional annotations may be specific or broad, we confirmed that the enrichment held regardless of the number of genes to which each term was annotated (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "0dea2c77-2b06-4ee2-831a-03aeb6dd24b7",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C23",
+      "claim": "Significant enrichment for protein-protein interactions between literature-curated genes was observed relative to random expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant enrichment for protein-protein interactions (PPIs) between LC genes was observed relative to random expectation (Figure 2D, empirical p < 10\u22123), and we reproduced this finding in multiple independent PPI databases (all p < 10\u22123, Figure 2\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D and supplementary figures with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "2ab1d870-e5fc-41b7-bbc5-c94df1ecb65e",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C24",
+      "claim": "Literature-curated genes collectively formed a significantly larger subnetwork than random expectation in the human interactome.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore evaluated whether this same principle held for SCI by calculating the size of the largest connected component (LCC) between LC genes, and found that LC genes collectively formed a significantly larger subnetwork than random expectation (Figure 2E, empirical p < 10\u22123), a finding that was again reproduced in independent interaction datasets (p < 10\u22123, Figure 2\u2014figure supplement 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2E and supplementary figures with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "54581db6-b847-4acc-afa9-b0d712254226",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C25",
+      "claim": "Literature-curated genes displayed a significant tendency to participate in the same protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Literature-curated genes also displayed a significant tendency to participate in the same protein complexes (Figure 2\u2014figure supplement 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "ae0f9cc4-b573-49e0-8ddc-20c3c4fff402",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C26",
+      "claim": "Literature-curated genes were preferentially recovered by a disease gene prediction algorithm when a subset of them were randomly withheld.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, LC genes were preferentially recovered by a disease gene prediction algorithm when a subset of them were randomly withheld, and the remainder used to prioritize additional disease genes (Figure 2F and Figure 2\u2014figure supplement 2G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "df7cd0e3-a5d4-45ed-a234-3b1622c71495",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C27",
+      "claim": "Gene coexpression networks were constructed in human spinal cord using RNA-seq data from 71 post-mortem human spinal cords from the Genotype-Tissue Expression project (GTEx).",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed gene coexpression networks in human spinal cord using RNA-seq data from 71 post-mortem human spinal cords from the Genotype-Tissue Expression project (GTEx) (GTEx Consortium, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source and sample size for the primary analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "499484e5-c72b-400f-84de-ec7c22a8ec15",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C28",
+      "claim": "WGCNA was applied to group the human spinal cord transcriptome into 15 distinct modules of coexpressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied WGCNA (Langfelder and Horvath, 2008) to group the human spinal cord transcriptome into 15 distinct modules of coexpressed genes (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary result of the WGCNA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "c78ed3be-2225-416b-aea0-975d516b8228",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C35",
+      "claim": "The same five modules that showed the strongest evidence of reproducibility (M2, M3, M7, M8, and M12) also showed the strongest evidence of conservation in rat and mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the same five modules that showed the strongest evidence of reproducibility (M2, M3, M7, M8, and M12) also showed the strongest evidence of conservation in rat and mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the conservation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "eff74df3-85eb-4e4f-b787-aebcceffd0d5",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C37",
+      "claim": "M3 consists of 746 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These modules consist of 746 and 330 genes, respectively, and both are among the most reproducible and conserved in the spinal cord (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of module M3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "775eee9b-a942-4e73-aaa2-43feee4a801f",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C38",
+      "claim": "M7 consists of 330 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These modules consist of 746 and 330 genes, respectively, and both are among the most reproducible and conserved in the spinal cord (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of module M7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "8c8bd7b1-c144-45fe-82f2-91c5fd53c1dc",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C39",
+      "claim": "M3 remained significantly enriched for literature-curated genes even after the removal of approximately 70% of genes from the seed set.",
+      "claim_type": "EXPLICIT",
+      "source": "Both M3 and M7 remained significantly enriched for LC genes despite the removal of a large number of seed genes, or the addition of a large number of random genes (Figure 3C): M3 remained significantly enriched for LC genes even after the removal of approximately 70% of genes from the seed set, compared to approximately 50% for M7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C as a robustness test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "d3f1c004-75f2-4524-aea0-d3c4441402b5",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C40",
+      "claim": "M7 remained significantly enriched for literature-curated genes even after the removal of approximately 50% of genes from the seed set.",
+      "claim_type": "EXPLICIT",
+      "source": "Both M3 and M7 remained significantly enriched for LC genes despite the removal of a large number of seed genes, or the addition of a large number of random genes (Figure 3C): M3 remained significantly enriched for LC genes even after the removal of approximately 70% of genes from the seed set, compared to approximately 50% for M7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C as a robustness test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "8d59d9ea-1421-4ea9-9c60-33dca80a39da",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C41",
+      "claim": "M3 remained significantly enriched for seed genes even after the size of the literature-curated set was doubled by addition of random false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, M3 remained significantly enriched for seed genes even after the size of the literature-curated set was doubled by addition of random false positives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a robustness test result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "bdddfc54-b2f5-4001-a9fb-624b1c77d973",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C44",
+      "claim": "Meta-analysis of five mouse and rat transcriptomic studies identified M3, M6, M7, and M11 as consensus upregulated following SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified M3, M6, M7, and M11 as consensus upregulated, and M1 and M2 as consensus downregulated, following SCI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary result of the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "ded3ff45-0b6a-4bc7-be24-7ecc9bf0f3e4",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C45",
+      "claim": "Meta-analysis of five mouse and rat transcriptomic studies identified M1 and M2 as consensus downregulated following SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified M3, M6, M7, and M11 as consensus upregulated, and M1 and M2 as consensus downregulated, following SCI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary result of the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "ab3618fe-022c-4324-9111-23ab1d5a7ee7",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C46",
+      "claim": "M8 was upregulated following SCI in four of five datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "One other module, M8, was upregulated following SCI in four of five datasets, while the remaining eight modules did not show robust evidence of differential expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "9fe7606f-1146-4990-8771-47c3707419db",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C50",
+      "claim": "M9 showed consensus downregulation at the most acute time point after SCI, but consensus upregulation at a chronic time point.",
+      "claim_type": "EXPLICIT",
+      "source": "However, analysis of the temporal regulation of spinal cord modules revealed consensus downregulation of M9 at the most acute time point after SCI, but consensus upregulation at a chronic time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the temporal analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "b67473eb-2390-41f9-b9a3-30ca89630f1a",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C51",
+      "claim": "M1 is an oligodendrocyte module associated with axon ensheathment and myelination.",
+      "claim_type": "EXPLICIT",
+      "source": "M1 was an oligodendrocyte module, associated with axon ensheathment and myelination, whereas M2 was a neuronal module implicated in synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of functional characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "bfb57591-129f-4bc6-ac52-76980f48ff94",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C52",
+      "claim": "M2 is a neuronal module implicated in synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "M1 was an oligodendrocyte module, associated with axon ensheathment and myelination, whereas M2 was a neuronal module implicated in synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of functional characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "47c9127f-54b7-416a-9017-9f8f0b8c717f",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C53",
+      "claim": "M3 is enriched for markers of microglia and vascular endothelial cells, and biological processes such as inflammatory response and response to wounding.",
+      "claim_type": "EXPLICIT",
+      "source": "M3 was enriched for markers of microglia and vascular endothelial cells, and biological processes such as inflammatory response and response to wounding, while M7 was a microglial module enriched for annotations related to the immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of functional characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "20ddff33-248c-484c-aeec-aa39d93b0a42",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C54",
+      "claim": "M7 is a microglial module enriched for annotations related to the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "M3 was enriched for markers of microglia and vascular endothelial cells, and biological processes such as inflammatory response and response to wounding, while M7 was a microglial module enriched for annotations related to the immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of functional characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "6c26c014-9c1d-4275-9961-b275de45af44",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C55",
+      "claim": "M9 is enriched for astrocyte markers and terms such as oxidation-reduction process and central nervous system development.",
+      "claim_type": "EXPLICIT",
+      "source": "M9 was enriched for astrocyte markers and terms such as oxidation-reduction process, as well as the term central nervous system development, which may be related to its upregulation at chronic time points following SCI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of functional characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "fcdf1d76-7cd6-487d-811b-1cb864bf4268",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C56",
+      "claim": "M6 is enriched for terms including cellular protein modification process.",
+      "claim_type": "EXPLICIT",
+      "source": "M6 and M11 were not significantly associated with any specific cell type, and were enriched for terms including cellular protein modification process and mitochondrial translation, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of functional characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "e3e3d2d8-6a38-48d4-ab97-433f15652e9b",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C57",
+      "claim": "M11 is enriched for terms including mitochondrial translation.",
+      "claim_type": "EXPLICIT",
+      "source": "M6 and M11 were not significantly associated with any specific cell type, and were enriched for terms including cellular protein modification process and mitochondrial translation, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of functional characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "ea99b1ab-745c-4312-81aa-21e84a53136c",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C58",
+      "claim": "M3 was the sole module enriched for genes positively correlated to injury severity in a mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, M3 was the sole module enriched for genes positively correlated to injury severity, whereas M1, M2, and M9 were enriched for genes anti-correlated to injury severity (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A as a result of the severity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "dce14584-180a-461d-b106-27a729493220",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C59",
+      "claim": "M1, M2, and M9 were enriched for genes anti-correlated to injury severity in a mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, M3 was the sole module enriched for genes positively correlated to injury severity, whereas M1, M2, and M9 were enriched for genes anti-correlated to injury severity (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A as a result of the severity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "0bf76b52-eea3-4cd4-9557-dbb8334567fe",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C61",
+      "claim": "RNA-seq data from a prospective rat SCI study reproduced the consensus network signature derived from meta-analysis of microarray datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RNA-seq data reproduced the consensus network signature derived from our meta-analysis of microarray datasets, emphasizing the robustness of this systems-level characterization of SCI pathophysiology (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5F as a validation result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "3f4bea3d-c018-4ec6-bf59-d5d719bb3ecf",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C64",
+      "claim": "Six M3 hub genes stratified rats by SCI severity with an accuracy greater than 90%, including Anxa1, Colgalt1, Ifngr2, Shc1, Sod2, and Tbc1d2b.",
+      "claim_type": "EXPLICIT",
+      "source": "Among M3 hubs, six genes stratified rats by SCI severity with an accuracy greater than 90%, including Anxa1, Colgalt1, Ifngr2, Shc1, Sod2, and Tbc1d2b (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5G as a result of the biomarker analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "1b7d0d25-13d5-47d4-b523-3019f0607266",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C65",
+      "claim": "Expression levels of Anxa1 (annexin A1) stratified moderately and severely injured rats with perfect accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, expression levels of Anxa1 (annexin A1) stratified moderately and severely injured rats with perfect accuracy (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5I as a result of the biomarker analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "eeb014ae-e210-472d-95db-96d7dfb84ccc",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C66",
+      "claim": "Annexin A1 has previously been associated with SCI by three small-scale studies, each employing divergent model organisms, spinal cord levels, and injury models.",
+      "claim_type": "EXPLICIT",
+      "source": "Annexin A1 has previously been associated with SCI by three small-scale studies, each employing divergent model organisms, spinal cord levels, and injury models, emphasizing the robustness of the association between SCI and annexin upregulation (Didangelos et al., 2016; Moghieb et al., 2016; Gao et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "d2f68169-7981-4e0b-a065-be2bbbb29f8a",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C68",
+      "claim": "Substantial overall agreement was identified between proteomic data and the consensus network signature derived from transcriptomic meta-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we identified substantial overall agreement between proteomic data and the consensus network signature derived from transcriptomic meta-analysis, further validating the robustness of our systems-level portrait of SCI pathophysiology (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5F as a validation result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "ded0855f-b2b7-4956-90aa-8360ad089cbf",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C69",
+      "claim": "The severity-dependent upregulation of both the M3 eigengene and annexin A1 was confirmed at the proteomic level.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we confirmed the severity-dependent upregulation of both the M3 eigengene and annexin A1 in particular (Figure 5H and J), finding that ANXA1 protein levels stratified both moderate and severe injuries with an accuracy of 93%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 5H and J with quantitative accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "1ad6e56f-bb9b-4905-b4ad-4f587f4ed76b",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C70",
+      "claim": "ANXA1 protein levels stratified both moderate and severe injuries with an accuracy of 93%.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we confirmed the severity-dependent upregulation of both the M3 eigengene and annexin A1 in particular (Figure 5H and J), finding that ANXA1 protein levels stratified both moderate and severe injuries with an accuracy of 93%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a quantitative result of the proteomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "cd79fc8e-e25c-4e1c-872e-55adf260ec25",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C71",
+      "claim": "All six consensus modules derived from meta-analysis were differentially expressed in the opposite direction in rats treated with NT-3 compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, all six consensus modules derived from our meta-analysis, including M3, were differentially expressed at the lesion site in the opposite direction (Figure 5F) in rats treated with NT-3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5F as a result of the NT-3 treatment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "ca112e2a-f24e-4bd4-9b2f-02c8b5f4e540",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C74",
+      "claim": "All six consensus modules were differentially expressed in the opposite direction in wild-type mice relative to STAT3 knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally analysed gene expression data from transgenic STAT3 knockout mice (Anderson et al., 2016), a loss-of-function manipulation that increased axonal dieback following experimental SCI, and found all six consensus modules were again differentially expressed in the opposite direction in wild-type mice, relative to knockout mice (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B as a result of the STAT3 knockout analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "f3b68415-b7f1-4a68-a902-1c07702899df",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C75",
+      "claim": "Reversal of the transcriptome changes observed in response to SCI is associated with functional recovery and decreased axonal dieback in rodent models.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that reversal of the transcriptome changes observed in response to SCI is associated with functional recovery and decreased axonal dieback in rodent models, and highlight M3 expression as a predictor of functional recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the NT-3 and STAT3 knockout results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "33e020f7-9377-4ad3-ad8e-4e1dc4e16941",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C76",
+      "claim": "The observation that seven different gene modules were robustly associated with the response to SCI is consistent with the notion that the pathophysiology of SCI is highly complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that seven different gene modules were robustly associated with the response to SCI, either by consensus differential regulation (M1, M2, M3, M7, M11) or by a strongly time-dependent course of expression (M9), is consistent with the notion that the pathophysiology of SCI is highly complex (Ramer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "926451b0-7e80-497d-99cc-09fa9d8606d0",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C77",
+      "claim": "Annexin A1 is a member of the annexin superfamily of calcium dependent phospholipid-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Annexin A1 is a member of the annexin superfamily of calcium dependent phospholipid-binding proteins, and plays a role in mediating anti-inflammatory effects through inhibition of phospholipase A2 activity (Elderfield et al., 1993; Liu et al., 2007), decreasing leukocyte activation (Perretti and Flower, 1993; D'Acquisto et al., 2007) and reducing expression of pro-inflammatory cytokines (Sudlow et al., 1996; McArthur et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "06175203-3ee5-4f53-ae5e-89828d57cb0e",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C78",
+      "claim": "Annexin A1 plays a role in mediating anti-inflammatory effects through inhibition of phospholipase A2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Annexin A1 is a member of the annexin superfamily of calcium dependent phospholipid-binding proteins, and plays a role in mediating anti-inflammatory effects through inhibition of phospholipase A2 activity (Elderfield et al., 1993; Liu et al., 2007), decreasing leukocyte activation (Perretti and Flower, 1993; D'Acquisto et al., 2007) and reducing expression of pro-inflammatory cytokines (Sudlow et al., 1996; McArthur et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "72edcfc2-8e99-4f28-a4ad-c960de73b970",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C79",
+      "claim": "Anxa1 is primarily expressed in microglia, where it regulates the selective removal of apoptotic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Anxa1 is primarily expressed in microglia, where it regulates the selective removal of apoptotic neurons (McArthur et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "7c2ffa4b-259e-4aa1-af2a-ea0aead5161f",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C80",
+      "claim": "Anxa1 knockout mice are characterized by exaggerated inflammatory responses and a blunted response to the anti-inflammatory effects of glucocorticoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, Anxa1 knockout mice are characterized by exaggerated inflammatory responses, as well as a blunted response to the anti-inflammatory effects of glucocorticoids (Hannon et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "a69d28a1-8c0e-47df-868c-8e1f64b5a4ff",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C81",
+      "claim": "Anxa1 is upregulated in multiple diseases characterized by aberrant neuroinflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Anxa1 is upregulated in multiple diseases characterized by aberrant neuroinflammation (Elderfield et al., 1992; Elderfield et al., 1993; McArthur et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "ad333d26-b6d9-4e7e-974f-1ab208c47049",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C82",
+      "claim": "Multiple studies have previously reported upregulation of Anxa1 in SCI.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, multiple studies have previously reported upregulation of Anxa1 in SCI (Didangelos et al., 2016; Moghieb et al., 2016; Gao et al., 2012), with peak expression at 7 days post injury (Liu et al., 2004), and upregulation of Anxa1 is associated with functional recovery after SCI (Liu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "d293e13d-09cb-4d0e-8120-f952d535c8f1",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C83",
+      "claim": "Anxa1 was previously identified as a biomarker of SCI severity in a study that included both rat and human samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Anxa1 was previously identified as a biomarker of SCI severity in a study that included both rat and human samples (Moghieb et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "d49ebbab-5043-4b28-9195-84f31a9eff6a",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C84",
+      "claim": "At the systems level, the architecture of the spinal cord transcriptome is substantially conserved between human and model organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at least at the systems level, the architecture of the spinal cord transcriptome is substantially conserved between human and model organisms, supporting our approach of integrating data from small-scale studies of mammalian model organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the conservation analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "82c6d013-8a53-4c1b-a33f-171400cbe7d3",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C85",
+      "claim": "The study applied a strict, majority voting-based method to map rat, mouse, and rabbit genes to their human orthologs with maximum accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied a strict, majority voting-based method to map rat, mouse, and rabbit genes to their human orthologs with maximum accuracy (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach for ortholog mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "6dba4397-13cd-48ed-9901-9646a913e000",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C86",
+      "claim": "Human genes were considered 'consensus orthologs' only if they were detected in at least half of the ortholog databases containing an entry for the target model organism protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we mapped orthologs from rat, mouse, and rabbit genes to human using seven different ortholog databases [EggNOG (Huerta-Cepas et al., 2016), Ensembl (Kinsella et al., 2011), NCBI Gene (Brown et al., 2015), HomoloGene (Agarwala et al., 2018), InParanoid (Sonnhammer and \u00d6stlund, 2015), and OrthoDB (Zdobnov et al., 2017)], and considered human genes as 'consensus orthologs' only if they were detected in at least half of those databases containing an entry for the target model organism protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological criteria for ortholog identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "915f9931-bddf-4343-8b5a-e1afea9bedd6",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C87",
+      "claim": "RNA sequencing data have been deposited to the GEO repository with the accession GSE115067.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA sequencing data have been deposited to the GEO repository with the accession GSE115067.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a data availability statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "912bf243-1f60-403e-b373-88363c121a59",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "claim_id": "C88",
+      "claim": "Proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD010192.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD010192.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a data availability statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1fe1466b-12d7-4bec-9d1b-2060e99f4bde",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the clinical context and motivation for the study, stating that there are no effective treatments for SCI, that current clinical assessments are inadequate, and that the pathophysiology of SCI is complex and poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C8-C13 collectively establish the clinical and scientific rationale for the study. These claims are well-supported by citations to prior clinical trials and reviews (C8, C9, C11, C13), and represent accurate characterizations of the current state of SCI treatment and research based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "51316707-4b5d-46e6-97e0-f8f34859c509",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Systems biology approaches, particularly gene coexpression network analysis, provide powerful methods to elucidate coordinated molecular processes in complex diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 establish the methodological rationale for using systems biology approaches. These claims are well-supported by multiple citations to prior successful applications of these methods in other neurological and psychiatric diseases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "348c707d-8b25-424a-922a-8367cec30cfa",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Systematic literature review of over 500 manuscripts identified 695 unique human genes associated with SCI response, with 559 upregulated, 213 downregulated, and 8 showing differential phosphorylation, with 151 genes replicated across multiple studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 describe the literature curation results with specific quantitative details. The systematic approach is described in the Methods section, and the numbers are internally consistent. However, the quality of this curation depends on the rigor of the inclusion/exclusion criteria and ortholog mapping, which appear reasonable based on the Methods description.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "a48c34e9-a9cd-4867-a4f8-a1a22bae607d",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Literature-curated genes show multiple lines of evidence for biological coherence: enrichment for shared Gene Ontology terms, protein-protein interactions, formation of a large connected component in the interactome, co-participation in protein complexes, and preferential recovery by disease gene prediction algorithms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 provide convergent validation of the literature-curated gene set using multiple independent approaches. Statistical significance is reported (p < 10\u207b\u00b3 or better), results are reproduced across multiple databases (C23, C24), and appropriate randomization controls are used. The multiple lines of evidence strengthen confidence in the biological relevance of the curated gene set.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "1ccd7fe1-d154-427f-9e83-a8d06254ccee",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Gene coexpression network analysis of 71 human spinal cord samples from GTEx identified 15 distinct modules of coexpressed genes using WGCNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 describe the primary network construction. The sample size (n=71) is reasonable for WGCNA, the data source (GTEx) is well-established, and the methods are standard. The identification of 15 modules is a direct result of the analysis with appropriate parameters described in Methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "5d10a800-3f4f-4aad-9224-824125a1306e",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Five modules (M2, M3, M7, M8, M12) showed strong evidence of both reproducibility in independent human data and evolutionary conservation in mouse and rat, supporting the validity of integrating data across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C84 establish cross-species conservation of network architecture. The conservation analysis uses appropriate statistics (Z_summary > 10 for strong conservation) and is validated in independent datasets. The convergence of reproducibility and conservation for the same modules strengthens the conclusion that these represent biologically meaningful units.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "593b9a45-3542-4ab6-b8f4-3354b69703a5",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Modules M3 (746 genes) and M7 (330 genes) are significantly enriched for literature-curated SCI genes, with M3 showing particularly robust enrichment that persists after removal of ~70% of seed genes or addition of random false positives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 establish the key integration of literature-curated genes with network modules. The enrichment is statistically significant (Bonferroni-corrected p < 10\u207b\u2077 for M3), and extensive robustness testing (C39-C41) demonstrates that the enrichment is not an artifact of the seed gene set. The quantitative details are consistent across claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "1f5b2aad-2466-4907-8a61-b0ad5cc796cc",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Meta-analysis of five rodent transcriptomic studies identified consensus upregulation of M3, M6, M7, and M11, and consensus downregulation of M1 and M2 following SCI, with M8 upregulated in 4/5 datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 describe the meta-analysis results identifying consensus differential expression patterns. The use of multiple datasets increases confidence, and the identification of both up- and downregulated modules is biologically plausible. Statistical significance is reported for the strongest modules (p \u2264 10\u207b\u00b9\u2074 to 10\u207b\u2074\u2078).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "55775ee9-66ec-4f65-9c6e-3993b4b24e49",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Module M9 shows time-dependent expression, with consensus downregulation at acute time points but upregulation at chronic time points after SCI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 identifies a module with distinct temporal dynamics. This is supported by the temporal analysis described in Methods and shown in Figure 3G. The biphasic pattern is biologically plausible and suggests distinct roles in acute versus chronic injury responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "74c912d2-fa4f-400f-938d-5b0ff42ed6c4",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Functional characterization reveals that consensus modules correspond to distinct cell types and biological processes: M1 (oligodendrocytes/myelination), M2 (neurons/synaptic transmission), M3 (microglia/endothelial cells/inflammation), M7 (microglia/immune response), M9 (astrocytes/oxidation-reduction/CNS development), M6 (protein modification), and M11 (mitochondrial translation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 provide functional and cell-type characterization of modules. These are supported by enrichment analyses using Gene Ontology and MSigDB, and meta-analysis of cell-type-specific markers from multiple independent datasets (bulk RNA-seq, single-cell RNA-seq, and proteomics). The assignments are biologically coherent and consistent with known SCI pathophysiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "9b88b810-0980-44a9-903c-838925bece50",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In a mouse severity model, M3 was uniquely enriched for genes positively correlated with injury severity, while M1, M2, and M9 were enriched for genes anti-correlated with severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 establish the relationship between module expression and injury severity. The analysis uses an independent published dataset (GSE464) and appropriate statistical methods (gene-set enrichment). The finding that M3 is the sole module positively correlated with severity is striking and biologically meaningful, as shown in Figure 5A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "526f2904-e5ad-4947-91d5-723da3a027d1",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Independent prospective RNA-seq and proteomic studies in rats reproduced the consensus network signature and validated the overall agreement between transcriptomic and proteomic levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C68 provide critical validation of the meta-analysis results in independent experimental data. The RNA-seq study (n=15 rats) and proteomic analysis reproduced the consensus signature (Figure 5F), and module preservation between RNA and protein levels was significant (Z_summary = 6.8-7.3 for M3 and M7). This cross-platform and cross-level validation substantially strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "f282f2f0-0f55-47ef-864d-93da55062c3f",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Six M3 hub genes (Anxa1, Colgalt1, Ifngr2, Shc1, Sod2, Tbc1d2b) stratified rats by injury severity with >90% accuracy, with Anxa1 achieving perfect classification accuracy and having been previously associated with SCI in three independent studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 identify potential biomarkers of injury severity. The analysis uses leave-one-out cross-validation (appropriate for small sample size), and the perfect accuracy for Anxa1 (C65) is supported by Figure 5I. The prior association of Anxa1 with SCI in three independent studies (C66) provides external validation. However, the small sample size (n=15) and perfect accuracy raise concerns about overfitting that would require validation in larger independent cohorts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "6c5ec31d-d272-4af8-a1e2-b65e78c440f4",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Proteomic analysis confirmed severity-dependent upregulation of M3 eigengene and ANXA1 protein, with ANXA1 stratifying moderate and severe injuries with 93% accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 validate the transcriptomic findings at the protein level. The 93% accuracy for ANXA1 protein (C70) is slightly lower than the perfect RNA-level accuracy, which is expected given post-transcriptional regulation. The proteomic validation strengthens the potential clinical utility of ANXA1 as a biomarker, though larger validation studies are still needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "406a4a8c-d5d3-4901-b01b-987d7abfe9d8",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "All six consensus modules showed reversed differential expression in rats treated with NT-3 (which promotes functional recovery) and in wild-type versus STAT3 knockout mice (which show increased axonal dieback), indicating that reversal of SCI transcriptome changes is associated with improved outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C74, and C75 establish that module expression patterns are reversed in conditions associated with functional recovery (NT-3 treatment) or worsened outcomes (STAT3 knockout). The convergence of these two independent lines of evidence (Figure 5B, 5F) strongly supports the interpretation that the consensus network signature reflects pathophysiological processes relevant to recovery. However, causality cannot be definitively established from these correlative observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "59bccd07-d320-4c74-a55b-e9c3d271c164",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The identification of seven modules robustly associated with SCI response reflects the high complexity of SCI pathophysiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is a reasonable interpretation of the results showing multiple modules with distinct temporal patterns and functional roles. This is consistent with the known complexity of SCI pathophysiology and is supported by citation to prior reviews (Ramer et al., 2014).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "853f8d19-1e94-480c-a161-1c38f1f5489d",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Annexin A1 is a calcium-dependent phospholipid-binding protein with anti-inflammatory functions, primarily expressed in microglia, upregulated in neuroinflammatory diseases including SCI, and previously identified as a biomarker of SCI severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C83 provide biological context for Anxa1/ANXA1. All claims are supported by appropriate citations to prior literature. The convergence of prior evidence for Anxa1 upregulation in SCI (C82) and its identification as a severity biomarker (C83) with the current findings strengthens confidence in the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "b0edef81-a9ba-442f-bdc1-e01bcd5390b9",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study integrates literature-curated genes with genome-wide expression data to identify an evolutionarily conserved gene subnetwork enriched for SCI-associated genes, with severity-dependent upregulation after injury and downregulation in functional recovery, validated in rodents at transcriptomic and proteomic levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 summarize the main findings of the study. These are well-supported by the detailed results described in other claim groups. The integrative approach is novel and the convergence of multiple lines of evidence (literature curation, network analysis, meta-analysis, prospective validation, functional recovery) provides strong support for the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "83ead58e-3469-494b-8e3a-dc1005288ea9",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "A strict majority-voting approach using seven ortholog databases was used to map genes from model organisms to human orthologs, requiring detection in at least half of databases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 describe the ortholog mapping methodology. The use of multiple databases and majority voting is a rigorous approach that reduces false positives in ortholog assignment. This is appropriate given the importance of accurate cross-species mapping for the study's conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    },
+    {
+      "id": "8813a035-d8d9-4f31-8b86-ae032ee0071a",
+      "content_id": "06d4327d-325a-46ea-a422-3c2f50deabc3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "RNA-seq and proteomic data have been deposited in public repositories (GEO: GSE115067; PRIDE: PXD010192).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 are data availability statements that can be verified by checking the repositories. Public data deposition is essential for reproducibility and is a strength of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:27:08.513400Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "95e34c8d-98f5-4b50-955c-a7947ea95149",
+      "result_id": "1fe1466b-12d7-4bec-9d1b-2060e99f4bde"
+    },
+    {
+      "claim_id": "8e55acad-aebd-4bae-99bf-1f42d5965261",
+      "result_id": "1fe1466b-12d7-4bec-9d1b-2060e99f4bde"
+    },
+    {
+      "claim_id": "20ac26cf-503f-4356-867b-e91a81c58dbc",
+      "result_id": "1fe1466b-12d7-4bec-9d1b-2060e99f4bde"
+    },
+    {
+      "claim_id": "75de3277-0dd6-4b76-bb9c-983cca9df0c1",
+      "result_id": "1fe1466b-12d7-4bec-9d1b-2060e99f4bde"
+    },
+    {
+      "claim_id": "ea254a0f-0c76-4073-a6f9-0813c9c18da7",
+      "result_id": "1fe1466b-12d7-4bec-9d1b-2060e99f4bde"
+    },
+    {
+      "claim_id": "f884c22b-e917-4969-a30c-e4b376ac4821",
+      "result_id": "1fe1466b-12d7-4bec-9d1b-2060e99f4bde"
+    },
+    {
+      "claim_id": "4d4b6249-a1cf-47ba-9f3b-de25f42cb676",
+      "result_id": "1fe1466b-12d7-4bec-9d1b-2060e99f4bde"
+    },
+    {
+      "claim_id": "a177ea18-f03d-486e-b777-343b285a4b1a",
+      "result_id": "1fe1466b-12d7-4bec-9d1b-2060e99f4bde"
+    },
+    {
+      "claim_id": "71f3df60-73aa-4e03-a9be-ec6aa32516a9",
+      "result_id": "51316707-4b5d-46e6-97e0-f8f34859c509"
+    },
+    {
+      "claim_id": "5a3554d6-af38-4f67-914b-6bd881b49f7c",
+      "result_id": "51316707-4b5d-46e6-97e0-f8f34859c509"
+    },
+    {
+      "claim_id": "95dff271-bef8-4968-b3b2-8be69c42d34c",
+      "result_id": "348c707d-8b25-424a-922a-8367cec30cfa"
+    },
+    {
+      "claim_id": "e314883f-bbe2-4a34-b43e-f333b5411da7",
+      "result_id": "348c707d-8b25-424a-922a-8367cec30cfa"
+    },
+    {
+      "claim_id": "f9761829-c7f4-4d90-b2a4-900b7e7db01c",
+      "result_id": "348c707d-8b25-424a-922a-8367cec30cfa"
+    },
+    {
+      "claim_id": "3a584d8b-424a-4d7e-ad0f-33c60d50deb4",
+      "result_id": "348c707d-8b25-424a-922a-8367cec30cfa"
+    },
+    {
+      "claim_id": "18733f2d-9838-44f1-ba47-55fd0be84c6e",
+      "result_id": "348c707d-8b25-424a-922a-8367cec30cfa"
+    },
+    {
+      "claim_id": "1865603a-a5ff-4730-b7bf-d9a669bd5bf6",
+      "result_id": "a48c34e9-a9cd-4867-a4f8-a1a22bae607d"
+    },
+    {
+      "claim_id": "1675680e-a947-4c05-9ad5-8d6c81908719",
+      "result_id": "a48c34e9-a9cd-4867-a4f8-a1a22bae607d"
+    },
+    {
+      "claim_id": "0dea2c77-2b06-4ee2-831a-03aeb6dd24b7",
+      "result_id": "a48c34e9-a9cd-4867-a4f8-a1a22bae607d"
+    },
+    {
+      "claim_id": "2ab1d870-e5fc-41b7-bbc5-c94df1ecb65e",
+      "result_id": "a48c34e9-a9cd-4867-a4f8-a1a22bae607d"
+    },
+    {
+      "claim_id": "54581db6-b847-4acc-afa9-b0d712254226",
+      "result_id": "a48c34e9-a9cd-4867-a4f8-a1a22bae607d"
+    },
+    {
+      "claim_id": "ae0f9cc4-b573-49e0-8ddc-20c3c4fff402",
+      "result_id": "a48c34e9-a9cd-4867-a4f8-a1a22bae607d"
+    },
+    {
+      "claim_id": "df7cd0e3-a5d4-45ed-a234-3b1622c71495",
+      "result_id": "1ccd7fe1-d154-427f-9e83-a8d06254ccee"
+    },
+    {
+      "claim_id": "499484e5-c72b-400f-84de-ec7c22a8ec15",
+      "result_id": "1ccd7fe1-d154-427f-9e83-a8d06254ccee"
+    },
+    {
+      "claim_id": "c78ed3be-2225-416b-aea0-975d516b8228",
+      "result_id": "5d10a800-3f4f-4aad-9224-824125a1306e"
+    },
+    {
+      "claim_id": "d49ebbab-5043-4b28-9195-84f31a9eff6a",
+      "result_id": "5d10a800-3f4f-4aad-9224-824125a1306e"
+    },
+    {
+      "claim_id": "eff74df3-85eb-4e4f-b787-aebcceffd0d5",
+      "result_id": "593b9a45-3542-4ab6-b8f4-3354b69703a5"
+    },
+    {
+      "claim_id": "775eee9b-a942-4e73-aaa2-43feee4a801f",
+      "result_id": "593b9a45-3542-4ab6-b8f4-3354b69703a5"
+    },
+    {
+      "claim_id": "8c8bd7b1-c144-45fe-82f2-91c5fd53c1dc",
+      "result_id": "593b9a45-3542-4ab6-b8f4-3354b69703a5"
+    },
+    {
+      "claim_id": "d3f1c004-75f2-4524-aea0-d3c4441402b5",
+      "result_id": "593b9a45-3542-4ab6-b8f4-3354b69703a5"
+    },
+    {
+      "claim_id": "8d59d9ea-1421-4ea9-9c60-33dca80a39da",
+      "result_id": "593b9a45-3542-4ab6-b8f4-3354b69703a5"
+    },
+    {
+      "claim_id": "bdddfc54-b2f5-4001-a9fb-624b1c77d973",
+      "result_id": "1f5b2aad-2466-4907-8a61-b0ad5cc796cc"
+    },
+    {
+      "claim_id": "ded3ff45-0b6a-4bc7-be24-7ecc9bf0f3e4",
+      "result_id": "1f5b2aad-2466-4907-8a61-b0ad5cc796cc"
+    },
+    {
+      "claim_id": "ab3618fe-022c-4324-9111-23ab1d5a7ee7",
+      "result_id": "1f5b2aad-2466-4907-8a61-b0ad5cc796cc"
+    },
+    {
+      "claim_id": "9fe7606f-1146-4990-8771-47c3707419db",
+      "result_id": "55775ee9-66ec-4f65-9c6e-3993b4b24e49"
+    },
+    {
+      "claim_id": "b67473eb-2390-41f9-b9a3-30ca89630f1a",
+      "result_id": "74c912d2-fa4f-400f-938d-5b0ff42ed6c4"
+    },
+    {
+      "claim_id": "bfb57591-129f-4bc6-ac52-76980f48ff94",
+      "result_id": "74c912d2-fa4f-400f-938d-5b0ff42ed6c4"
+    },
+    {
+      "claim_id": "47c9127f-54b7-416a-9017-9f8f0b8c717f",
+      "result_id": "74c912d2-fa4f-400f-938d-5b0ff42ed6c4"
+    },
+    {
+      "claim_id": "20ddff33-248c-484c-aeec-aa39d93b0a42",
+      "result_id": "74c912d2-fa4f-400f-938d-5b0ff42ed6c4"
+    },
+    {
+      "claim_id": "6c26c014-9c1d-4275-9961-b275de45af44",
+      "result_id": "74c912d2-fa4f-400f-938d-5b0ff42ed6c4"
+    },
+    {
+      "claim_id": "fcdf1d76-7cd6-487d-811b-1cb864bf4268",
+      "result_id": "74c912d2-fa4f-400f-938d-5b0ff42ed6c4"
+    },
+    {
+      "claim_id": "e3e3d2d8-6a38-48d4-ab97-433f15652e9b",
+      "result_id": "74c912d2-fa4f-400f-938d-5b0ff42ed6c4"
+    },
+    {
+      "claim_id": "ea99b1ab-745c-4312-81aa-21e84a53136c",
+      "result_id": "9b88b810-0980-44a9-903c-838925bece50"
+    },
+    {
+      "claim_id": "dce14584-180a-461d-b106-27a729493220",
+      "result_id": "9b88b810-0980-44a9-903c-838925bece50"
+    },
+    {
+      "claim_id": "0bf76b52-eea3-4cd4-9557-dbb8334567fe",
+      "result_id": "526f2904-e5ad-4947-91d5-723da3a027d1"
+    },
+    {
+      "claim_id": "d2f68169-7981-4e0b-a065-be2bbbb29f8a",
+      "result_id": "526f2904-e5ad-4947-91d5-723da3a027d1"
+    },
+    {
+      "claim_id": "3f4bea3d-c018-4ec6-bf59-d5d719bb3ecf",
+      "result_id": "f282f2f0-0f55-47ef-864d-93da55062c3f"
+    },
+    {
+      "claim_id": "1b7d0d25-13d5-47d4-b523-3019f0607266",
+      "result_id": "f282f2f0-0f55-47ef-864d-93da55062c3f"
+    },
+    {
+      "claim_id": "eeb014ae-e210-472d-95db-96d7dfb84ccc",
+      "result_id": "f282f2f0-0f55-47ef-864d-93da55062c3f"
+    },
+    {
+      "claim_id": "ded0855f-b2b7-4956-90aa-8360ad089cbf",
+      "result_id": "6c5ec31d-d272-4af8-a1e2-b65e78c440f4"
+    },
+    {
+      "claim_id": "1ad6e56f-bb9b-4905-b4ad-4f587f4ed76b",
+      "result_id": "6c5ec31d-d272-4af8-a1e2-b65e78c440f4"
+    },
+    {
+      "claim_id": "cd79fc8e-e25c-4e1c-872e-55adf260ec25",
+      "result_id": "406a4a8c-d5d3-4901-b01b-987d7abfe9d8"
+    },
+    {
+      "claim_id": "ca112e2a-f24e-4bd4-9b2f-02c8b5f4e540",
+      "result_id": "406a4a8c-d5d3-4901-b01b-987d7abfe9d8"
+    },
+    {
+      "claim_id": "f3b68415-b7f1-4a68-a902-1c07702899df",
+      "result_id": "406a4a8c-d5d3-4901-b01b-987d7abfe9d8"
+    },
+    {
+      "claim_id": "33e020f7-9377-4ad3-ad8e-4e1dc4e16941",
+      "result_id": "59bccd07-d320-4c74-a55b-e9c3d271c164"
+    },
+    {
+      "claim_id": "926451b0-7e80-497d-99cc-09fa9d8606d0",
+      "result_id": "853f8d19-1e94-480c-a161-1c38f1f5489d"
+    },
+    {
+      "claim_id": "06175203-3ee5-4f53-ae5e-89828d57cb0e",
+      "result_id": "853f8d19-1e94-480c-a161-1c38f1f5489d"
+    },
+    {
+      "claim_id": "72edcfc2-8e99-4f28-a4ad-c960de73b970",
+      "result_id": "853f8d19-1e94-480c-a161-1c38f1f5489d"
+    },
+    {
+      "claim_id": "7c2ffa4b-259e-4aa1-af2a-ea0aead5161f",
+      "result_id": "853f8d19-1e94-480c-a161-1c38f1f5489d"
+    },
+    {
+      "claim_id": "a69d28a1-8c0e-47df-868c-8e1f64b5a4ff",
+      "result_id": "853f8d19-1e94-480c-a161-1c38f1f5489d"
+    },
+    {
+      "claim_id": "ad333d26-b6d9-4e7e-974f-1ab208c47049",
+      "result_id": "853f8d19-1e94-480c-a161-1c38f1f5489d"
+    },
+    {
+      "claim_id": "d293e13d-09cb-4d0e-8120-f952d535c8f1",
+      "result_id": "853f8d19-1e94-480c-a161-1c38f1f5489d"
+    },
+    {
+      "claim_id": "c3c27ba8-c6b0-4468-bc95-b503a7c8f121",
+      "result_id": "b0edef81-a9ba-442f-bdc1-e01bcd5390b9"
+    },
+    {
+      "claim_id": "886bbf19-99cd-48f2-9ed7-cddec4faadc1",
+      "result_id": "b0edef81-a9ba-442f-bdc1-e01bcd5390b9"
+    },
+    {
+      "claim_id": "65be94bf-f8ca-42c1-ac7d-44632aebac93",
+      "result_id": "b0edef81-a9ba-442f-bdc1-e01bcd5390b9"
+    },
+    {
+      "claim_id": "b90cf801-9d1c-4236-ae5b-bdd0fa59ad09",
+      "result_id": "b0edef81-a9ba-442f-bdc1-e01bcd5390b9"
+    },
+    {
+      "claim_id": "87e466f3-770a-4ddd-86bf-7069c12fe887",
+      "result_id": "b0edef81-a9ba-442f-bdc1-e01bcd5390b9"
+    },
+    {
+      "claim_id": "82c6d013-8a53-4c1b-a33f-171400cbe7d3",
+      "result_id": "83ead58e-3469-494b-8e3a-dc1005288ea9"
+    },
+    {
+      "claim_id": "6dba4397-13cd-48ed-9901-9646a913e000",
+      "result_id": "83ead58e-3469-494b-8e3a-dc1005288ea9"
+    },
+    {
+      "claim_id": "915f9931-bddf-4343-8b5a-e1afea9bedd6",
+      "result_id": "8813a035-d8d9-4f31-8b86-ae032ee0071a"
+    },
+    {
+      "claim_id": "912bf243-1f60-403e-b373-88363c121a59",
+      "result_id": "8813a035-d8d9-4f31-8b86-ae032ee0071a"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,400 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11"
+    ],
+    "result": "Tamoxifen administration at E10.5 labels progenitors that give rise to clones derived from approximately two radial glia on average (median, range 1-4), with 80% of clones arranged in a single proliferative unit. These findings indicate that the labeling predominantly targets individual radial glia and neuroepithelial stem cells in their final 1-2 cycles of symmetric cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, and C11 are well-supported by immunohistochemistry data at E12.5 showing quantification of Pax6+ and Tbr2+ cells within clones. The data directly demonstrate the number of radial glia per clone and their organization into proliferative units, with appropriate statistical reporting and figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Clone size varies systematically with timing of tamoxifen induction: E9.5 induction yields median 196 neurons, E10.5 yields 60 neurons, and E11.5 yields 39 neurons. Notably, 20% of E11.5-labeled clones lack deep layer (L5-6) neurons, compared to only 3% at E10.5 and 0% at E9.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 are supported by systematic quantification across multiple animals with appropriate statistical comparisons (Wilcoxon rank sum test, Fisher's exact test). The data clearly show dose-dependent effects of induction timing on clone size and layer distribution, with specific p-values reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "Clones labeled at E10.5 span cortical layers 2-6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 is supported by both the current data (Figure 1) and citations to prior studies. The quantification shows that 97% (38/39) of E10.5-labeled clones contain neurons in deep layers, confirming translaminar organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C17"
+    ],
+    "result": "Clones labeled at E10.5 are composed of diverse transcriptomic cell types with no bias toward specific types. Pairs of related neurons are no more likely to map to the same broad transcriptomic class (p=0.71) or specific cell type (p=0.70) compared to unrelated neurons, suggesting individual progenitors give rise to a broad range of excitatory cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14, C15, and C17 are well-supported by Patch-seq transcriptomic analysis with appropriate statistical tests (Chi-squared tests) and adequate sample sizes (337 related pairs, 409 unrelated pairs). The lack of bias in cell type composition is convincingly demonstrated with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C85",
+      "C86"
+    ],
+    "result": "The L2/3 IT VISp Rrad transcriptomic cell type was significantly underrepresented in labeled clones (p=0.023 with Bonferroni correction), suggesting this cell type may arise from a distinct progenitor pool not efficiently labeled by the Nestin-CreER system at E10.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C85, and C86 are supported by statistical analysis with appropriate multiple testing correction. However, the interpretation that this cell type arises from a distinct progenitor pool is speculative and would require additional validation experiments targeting different progenitor populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Layer position and cortical region are the strongest predictors of transcriptomic variability among excitatory neurons, with region-specific differences detectable between V1 and SS1 in juvenile mouse neocortex using GLM analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C13 are supported by variance decomposition analysis and GLM predictions that perform better than chance. The analysis is consistent with prior studies and uses appropriate statistical methods, though the regional differences are modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Multi-cell patch clamp recordings from 592 neurons across 86 clones tested 2049 potential connections and identified 112 synaptic connections. The uEPSCs had mean latency of 2.71\u00b11.06 ms and amplitude of 12.83\u00b114.11 pA, and were blocked by glutamatergic antagonists (p=6\u00d710\u207b\u2075), confirming their excitatory nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 provide well-documented experimental parameters with appropriate pharmacological validation. The sample sizes are substantial and the electrophysiological characterization is thorough with proper controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "There is no overall difference in connectivity between related and unrelated neuron pairs (P=5.9% vs P=5.2%, p=0.54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by direct comparison with appropriate statistical testing (Fisher's exact test) and adequate sample sizes. This finding challenges prior assumptions about uniformly increased connectivity between related neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Vertical, across-layer connections show increased probability between related neurons (P=6.0%) compared to unrelated neurons (P=2.7%, p=0.0056). Specific increases are observed for L4\u2192L5 connections (P=11.3% vs 2.3%, p=0.033) and L2/3\u2192L5 connections (P=7.9% vs 1.6%, p=0.056).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are well-supported by systematic connectivity measurements with appropriate statistical tests. The L2/3\u2192L5 result is marginally significant (p=0.056) but the overall pattern across vertical connections is convincing. The finding is consistent with prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C101"
+    ],
+    "result": "Lateral, within-layer connections show no increase between related neurons (P=5.6%) compared to unrelated neurons (P=8.1%, p=0.25), with no difference in bidirectional connections (P=0% vs 2.1%, p=0.19). Power analysis confirms 97% power to detect increases of the magnitude observed for vertical connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, and C101 are strongly supported by both the connectivity data and comprehensive power analysis addressing potential confounds from pooling multiple radial glial lineages. The power analysis is particularly important for interpreting null results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "The study had approximately 97% statistical power to detect an increase in lateral connectivity of the same magnitude as found for vertical connectivity, assuming two radial glial lineages per clone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by detailed power analysis calculations that account for clone composition. The analysis appropriately addresses the concern that pooling multiple lineages could dilute effects, strengthening the interpretation of the lateral connectivity results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A generalized linear model reveals a significant interaction between cell lineage and connection type (p=0.035), a weak distance effect for lateral connections (p=0.056), and no effect of rostrocaudal position (p>0.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by appropriate GLM analysis that accounts for multiple confounding variables. The significant interaction term provides additional statistical support for the connection-type-specific effects of lineage. The model is well-specified and appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Connectivity modeling estimates that vertical connection probability between neurons from a single radial glial cell would be ~9.4%, and that 5.0\u00b11.8% of L4\u2192L2/3, 14.0\u00b19.5% of L4\u2192L5, and 13.6\u00b19.4% of L2/3\u2192L5 connections originate from clonally related neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C93-C95 are supported by a quantitative connectivity model with appropriate assumptions and error propagation. However, the model relies on several simplifying assumptions about cortical organization and clone distribution that may not fully capture biological complexity. The large error bars on some estimates (e.g., L4\u2192L5) reflect substantial uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The connectivity model estimates that only small fractions of lateral, within-layer inputs come from related neurons: 1.0\u00b10.8% in L2/3, 3.0\u00b11.1% in L4, and 0.7\u00b10.7% in L5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by the same connectivity model as C91-C95. The estimates are consistent with the observed lack of increased lateral connectivity between related neurons. The small fractions highlight the limited contribution of lineage to lateral connectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C58",
+      "C102"
+    ],
+    "result": "The study reveals a connection-type-specific pattern of lineage-associated connectivity: related neurons are preferentially connected vertically across layers but not laterally within layers. This challenges the prevailing view of uniformly increased connectivity and suggests integration of vertical intra-clonal input with lateral inter-clonal input as a developmentally programmed connectivity motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C33, C58, and C102 represent the central conclusion of the paper, well-supported by the combined evidence from connectivity measurements, power analysis, and GLM modeling. The interpretation is appropriately cautious, acknowledging this as a 'motif' rather than claiming complete understanding of mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C96",
+      "C97"
+    ],
+    "result": "Connections from L2/3\u2192L5 and L4\u2192L5 are most strongly enhanced between related neurons, consistent with inside-out migration along radial glial fibers. The findings suggest that even distantly related neurons from multiple radial glia may develop preferential vertical connectivity through physical proximity during neurogenesis and/or common migratory routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, C96, and C97 are supported by the connectivity data and represent reasonable mechanistic interpretations. However, the mechanistic speculation about axons 'sticking' to dendrites during migration is not directly tested and remains hypothetical. The suggestion about distantly related neurons is an inference from the data showing clones contain multiple radial glial lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The lack of increased lateral L2/3 connections between related neurons suggests that similarity in orientation tuning preferences may be driven by alternate mechanisms such as common input from L4, nearby unrelated neurons, or long-range feedback connections, implying a novel functional role for lateral L2/3 connections in facilitating communication between adjacent clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105 and C106 are speculative interpretations that go beyond the data presented. While the lack of increased lateral connectivity is well-established, the proposed alternate mechanisms for orientation tuning similarity are not tested. The suggestion of a 'novel functional role' requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C56"
+    ],
+    "result": "L5 is highlighted as a potential hub within translaminar clones, with integration of translaminar input from related neurons and intralaminar input from unrelated neurons potentially representing an organizing principle of lineage-associated circuit assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107 and C56 are supported by the observation that the strongest connectivity increases occur in projections to L5 (L4\u2192L5 and L2/3\u2192L5). However, the characterization of L5 as a 'hub' and the proposed 'organizing principle' are interpretations that would benefit from additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The study has limited power (approximately 16%) to detect a 50% decrease in connectivity, and therefore cannot exclude the possibility that lateral connectivity is actually decreased between clonally related neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111 and C112 appropriately acknowledge a limitation of the study. The power analysis for detecting decreases is correctly performed and the caveat is important for interpreting the lateral connectivity results. This represents good scientific practice in acknowledging what the data cannot determine.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Single-cell RNA-sequencing analysis of 206 neurons yielded approximately 0.36 million uniquely mapping reads (median) and approximately 7000 genes detected per cell, with 12,841 genes used for downstream analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 provide well-documented quality control metrics for the transcriptomic data. The sequencing depth and gene detection rates are appropriate for single-cell RNA-seq analysis and comparable to other published studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Most neurons patched in each layer mapped to reference types from the same layer: 74.7% for L2/3, 68.2% for L4, 64.3% for L5, and 84.6% for L6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 demonstrate good correspondence between anatomical layer assignment and transcriptomic identity. The discrepancies are mostly due to mapping to adjacent layers, which is expected given that some transcriptomic types span multiple layers. This validates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Cells from both V1 and SS1 mapped predominantly to V1 excitatory neuron types (94.9% and 92.4% respectively), with equal mapping quality (correlation 0.78\u00b10.08 for SS1, 0.78\u00b10.07 for V1, p=0.76), suggesting the adult V1/ALM atlas is an appropriate reference for both juvenile V1 and SS1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by the mapping analysis. However, the interpretation that the V1/ALM atlas is 'equally reasonable' for SS1 is somewhat limited by the fact that SS1 was not specifically profiled in the reference atlas. The similar mapping quality could reflect genuine similarity or limitations of the reference dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Prior studies using retroviral lineage tracing have reported that clonally related excitatory neurons are more likely to be synaptically connected and have similar orientation preferences in V1, supporting the hypothesis that radial clones may constitute elementary circuit modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 accurately summarize prior literature with appropriate citations. These claims establish the context and prevailing view that the current study challenges. The citations are correctly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C65"
+    ],
+    "result": "Prior studies did not perform direct comparisons of related and unrelated pairs for each layer-specific connection type, did not examine lateral connections within layers, and have not systematically studied the relationship between lineage and the layer-specific connectivity matrix in large clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, and C65 accurately identify gaps in prior research that the current study addresses. These claims appropriately establish the novelty and significance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Using previously reported connection probabilities from Yu et al. 2009 and a clone size of 6 neurons, a connectivity model predicts that only 1.9\u00b10.5% of total input to a cell comes from sister cells despite very high connection probability between closely related neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by appropriate modeling using published data. This calculation provides important context showing that even with high connection probabilities between closely related neurons, the overall contribution to total input is small due to small clone sizes in prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "It is possible that clonally related neurons in the same layer are derived from the same intermediate progenitor cell, and this close lineage relationship may confer additional reduction in connectivity not inherited by neurons in other layers from the same radial glial cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 is purely speculative and not tested in the current study. While it represents a plausible hypothesis that could explain the lack of increased lateral connectivity, it requires experimental validation using methods that can distinguish intermediate progenitor lineages from radial glial lineages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "L6 neurons were excluded from the study because they undergo nuclear translocation rather than locomoting along radial glial fibers, and because including L6 would have increased the number of connection types from 9 to 16, making the study experimentally impractical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C110 provide reasonable justification for excluding L6 from the study. The mechanistic rationale (nuclear translocation) is supported by citation, and the practical consideration is valid given the already substantial experimental effort required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Transcriptomic cell type correlates with long-range projection patterns, and since individual clones contain multiple diverse transcriptomic types, they likely project to diverse targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113 and C114 make a reasonable inference based on established correlations between transcriptomic identity and projection patterns. However, the inference about diverse projection targets is not directly tested and would require additional experiments such as retrograde tracing from multiple target regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Integration of feedforward, intra-clonal input with lateral, inter-clonal information may represent a developmentally programmed connectivity motif for the assembly of neocortical circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 represents a synthesis of the main findings into a proposed organizing principle. While the underlying connectivity data are solid, the characterization as a 'developmentally programmed connectivity motif' is somewhat speculative and would benefit from developmental time-course studies and perturbation experiments.",
+    "result_type": "MAJOR"
+  }
+]

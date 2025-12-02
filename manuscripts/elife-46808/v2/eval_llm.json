@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C104"
+    ],
+    "result": "The authors identify that residues 2-6 of the substrate tail, particularly positions 3-5, are most critical for ClpX grip during GFP unfolding. This was determined through LYV sliding window experiments and single-Tyr scanning experiments both in vivo and in vitro, showing that Tyr at positions 3-5 promotes efficient degradation while positions outside this range have minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C43-C53, and C104 are well-supported by systematic experimental data from both in vivo cellular assays and in vitro biochemical assays. The LYV sliding window (C43-C45) and single-Tyr scan (C46-C53) provide converging evidence that positions 2-6, with a core at 3-5, are critical for grip. The Vmax distribution centered at position 4 (C51) and the observation that positions 1, 7, 8 have no effect (C48, C53) strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors demonstrate that ClpX preferentially grips large hydrophobic and aromatic side chains (Val, Ile, Leu, Met, Phe, Tyr) strongly, while small, polar, or charged side chains are gripped weakly. Specific comparisons show Val is gripped much better than the isosteric Thr, and Gln better than Glu, indicating that polarity and charge near the backbone weaken grip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C59-C68, and C127-C129 are strongly supported by comprehensive amino acid scanning at position 4 both in vivo (Figure 3A) and in vitro (Figure 3C-E). The direct comparisons of isosteric pairs (Val/Thr, Gln/Glu, Ala/Ser/Cys) with statistical significance (C62, C63, C65, C66) provide compelling evidence for the role of polarity and charge in weakening grip. The data consistently show that large hydrophobic/aromatic residues promote fast degradation while polar/charged residues do not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C107"
+    ],
+    "result": "The authors show that multiple side chains interact synergistically with ClpX pore loops to strengthen grip. The Ala-1/4 double mutant exhibits >10-fold higher Vmax than either single mutant alone, demonstrating non-additive effects. Double alanines at positions 1/4, 2/4, 3/4, and 4/5 support robust degradation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C76-C83, and C107 are well-supported by experimental data on double-alanine mutants. The key evidence is the non-additive Vmax values for Ala-1/4 (2.3 min\u207b\u00b9) compared to Ala-1 (0.19 min\u207b\u00b9) and Ala-4 (0.13 min\u207b\u00b9), which is >10-fold greater than either single mutant (C82). This provides direct quantitative evidence for synergy (C83). The in vivo data (C77-C79) showing position-dependent effects of double alanines further supports the synergistic interaction model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C131",
+      "C136"
+    ],
+    "result": "The authors propose that unfolding grip is primarily mediated by non-specific van der Waals or hydrophobic interactions between substrate tail side chains and YVG loops at the top of the ClpX axial pore. This model is supported by the finding that large hydrophobic/aromatic residues are gripped well and that multiple alanines promote strong grip regardless of spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C131, and C136 represent a mechanistic model that is well-supported by the experimental data combined with structural information from cryo-EM studies. The preference for large hydrophobic/aromatic residues (C4, C59) is consistent with van der Waals interactions (C131). The observation that multiple Ala residues promote strong grip regardless of spacing (C135, C136) supports non-specific interactions. However, this is a model inferred from biochemical data and structural studies rather than direct structural evidence from this work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C41",
+      "C94",
+      "C98"
+    ],
+    "result": "The authors demonstrate that a cassette of twelve consecutive glycines (Gly12) results in poor degradation of GFP by ClpXP both in vivo and in vitro. They propose this is because ClpX's grip on Gly12 is insufficient to resist the opposing force of the folded domain during unfolding power strokes, likely due to the absence of \u03b2-carbons and distal side-chain atoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, C41, C94, and C98 are supported by experimental data showing that Gly12 substrates are degraded poorly in vivo (~20%) and too slowly to measure in vitro (C34, C35, C38). The mechanistic explanation (C94, C98) is a reasonable inference based on the structural properties of glycine and the observation that other low-complexity sequences (GA, acidic, basic) do not inhibit degradation (C42). However, the mechanistic model of insufficient grip during power strokes (C98) is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "The authors show that changing the position of grip-determining residues alters Vmax without substantially affecting KM or ATP hydrolysis stimulation, indicating that substrates bind similarly but differ in grip strength. Poor grip correlates with high ATP costs (up to ~3700 ATPs per substrate for Tyr-6 vs ~180-240 for Tyr-3/4/5), indicating non-productive ATP hydrolysis and futile power strokes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C70-C73, C99-C101, and C103 are well-supported by kinetic data showing that KM values remain similar across substrates (Figure 2\u2014figure supplement 1) while Vmax varies dramatically (C54). ATP hydrolysis stimulation is similar for all substrates at 15 \u03bcM (C69, C70), but ATP costs vary inversely with degradation rates (C72, C99-C101). The calculation of ATP costs (180-240 for good substrates vs 1900-3700 for poor substrates) provides quantitative evidence for futile power strokes during poor grip.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors find that spacing of aromatic residues (Tyr) by multiples of two can enhance grip in some contexts (Tyr-2/4, Tyr-4/6, Tyr-4/8), consistent with cryo-EM structures showing pore-1 loops interacting with every other substrate residue. However, this periodic enhancement is not universal (not seen for Tyr-3 double mutants or Val double mutants), and multiple Ala residues promote strong grip regardless of spacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 and C133-C135 are supported by experimental data on double-Tyr, double-Val, and double-Ala substrates. The periodic enhancement for some Tyr pairs (C85) is consistent with structural data (C84, C132), but the lack of enhancement for Tyr-3 pairs (C92, C93) and Val pairs (C134) indicates this is not a universal requirement. The observation that multiple Ala residues work regardless of spacing (C135, C136) demonstrates that non-specific interactions are sufficient for grip. The interpretation that aromatic residues may interact differently (C91) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors propose that tail-position 4 interacts with pore-1 loops at the top of the ClpX pore (~12 \u00c5 from the folded domain), where the channel is most constricted. They infer that upper pore-1 loops contribute more to grip than lower loops, as position 4 mediates robust unfolding while position 7 has no effect despite being positioned to contact lower loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C120 combine structural modeling (C110, C111) with experimental observations (C117, C118) to infer the asymmetric contribution of pore-1 loops to grip. The narrow Tyr-scan distribution (2 residues at half-height, C117) and the stark difference between position 4 (robust unfolding) and position 7 (no effect) provide strong evidence for asymmetric grip (C118, C120). The structural modeling is based on cited cryo-EM structures and personal communication, making the distance estimates reasonable but not directly verified in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors propose two non-mutually exclusive models for why upper pore-1 loops contribute more to grip: (1) upper loops maintain static interactions during power strokes while lower loops are dynamic, or (2) grip at the top minimizes elastic expansion of the substrate tail, preventing energy dissipation. Both models are supported by recent translocation models and previous mutagenesis studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C126 present two mechanistic models to explain the asymmetric grip contribution. These are reasonable hypotheses supported by citations to recent translocation models (C122) and previous mutagenesis showing neighboring subunit effects (C123). However, these are speculative models (all marked as SPECULATION in evidence_type) that are not directly tested in this study. The models are consistent with the data but represent interpretations rather than demonstrated mechanisms. Additional experiments would be needed to distinguish between these models or confirm either one.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors compare their findings to the NSF AAA+ motor structure, noting that NSF also shows strongest substrate contacts with upper pore-1 loops and that Met and Leu residues (gripped well by ClpX) participate in these interactions. This suggests a common mode of substrate interaction and grip across AAA+ motors despite mechanistic differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C144 are supported by citations to the NSF cryo-EM structure (C138) and comparison with the current experimental data. The observation that NSF shows strongest contacts with upper pore-1 loops (C143) is consistent with the ClpX findings (C120). The fact that Met and Leu, which are gripped well by ClpX (C59, C64), also participate in NSF interactions (C144) supports the generalizability of the findings. However, this is a comparative analysis rather than direct experimental evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors reconcile their findings with a previous study showing that Gly15 did not slow ClpXP degradation by noting that the previous substrate contained six additional residues including Met at position 4, which likely mediated unfolding based on the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 provide a reasonable explanation for an apparent discrepancy with previous work. The observation that the previous Gly15 substrate contained Met at position 4 (C146), combined with the current finding that Met at position 4 supports robust unfolding (C64), makes the inference (C147) well-supported. This demonstrates internal consistency between the current and previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The authors suggest that evolutionary placement of well-gripped residues may tune degradation of multi-domain substrates, citing examples where Gly-rich sequences between domains act as processing signals (C. crescentus DnaX) or inhibit degradation (E. coli DHFR). They propose that different substrates require different grip strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C154 extend the findings to biological contexts by citing specific examples of Gly-rich sequences affecting degradation of multi-domain substrates (C150-C153). The suggestion that grip strength can be tuned by residue placement (C148, C154) is a reasonable inference from the experimental data, though it is speculative regarding evolutionary selection. The cited examples (DnaX, DHFR) from previous literature support the biological relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The authors compare their findings to proteasome degradation studies, noting similarities in how Gly/Ser/Thr-rich sequences inhibit degradation while Phe/Tyr-containing sequences promote it. They suggest these similarities arise from structural conservation of pore-1 loops in the Rpt1-6 ring and expect the grip principles to apply broadly across AAA+ motors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160 draw parallels between ClpXP and proteasome degradation based on previous literature (C156, C158) and structural similarities (C159). The comparison is well-supported by citations and the current experimental data showing similar residue preferences. The inference that principles apply broadly to AAA+ motors (C160) is reasonable given structural conservation but represents an extrapolation beyond the direct experimental evidence. This is appropriately framed as an expectation rather than a demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors describe their substrate design rationale: GFP was chosen because it is kinetically stable with well-characterized unfolding by ClpXP, truncated at Ile-229 (last residue with extensive native contacts), and the 12-residue cassette was designed to be within the ~35 \u00c5 axial pore so ClpX would only interact with cassette residues during unfolding. ClpX\u0394N was used to avoid interactions with other cellular substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 describe the experimental design and are well-supported by citations to previous literature characterizing GFP properties (C24-C26), crystal structures (C27), and ClpX\u0394N properties (C30-C31). The reasoning about pore length and cassette positioning (C28-C29) is sound and based on structural data. This represents appropriate experimental design based on prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors characterize initial substrate variants showing that expression levels vary 7-fold depending on cassette sequence, and that GA, acidic, and titin cassettes promote efficient degradation in vitro with similar Vmax values, while the basic cassette shows intermediate degradation. They note discrepancies between in vivo and in vitro results, attributing some to chromophore maturation lag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 describe initial characterization experiments that establish the experimental system. The observation of variable expression (C32) is directly shown in Figure 1C. The degradation rates for different cassettes (C33, C36, C37) are supported by data in Figures 1D-F and Tables 1-2. The explanation for in vivo/in vitro discrepancies involving chromophore maturation (C39-C40) is reasonable and supported by citation. These claims establish the foundation for subsequent detailed analysis.",
+    "result_type": "MINOR"
+  }
+]

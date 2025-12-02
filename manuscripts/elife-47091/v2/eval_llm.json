@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C98"
+    ],
+    "result": "Coinfection is common but spatially variable across the P. plantaginis metapopulation, occurring in approximately half of pathogen populations (45-58%). Coinfection is more likely in larger, more diverse pathogen populations, with connectivity showing a positive but non-significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C98 are well-supported by extensive field sampling (619-833 populations per year), SNP genotyping data, and spatial Bayesian modeling (INLA) that controls for spatial and temporal autocorrelation. The statistical analysis in Table 1 provides quantitative support with credibility intervals, and model validation checks (Figure 1 supplements 1-5) confirm model adequacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Coinfections occur more frequently than expected by chance, with already infected plants being more likely to be infected by another strain. This pattern was consistent across both 2012 and 2013 with high posterior probabilities (0.98 and 0.988, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by Approximate Bayesian Computation (ABC) analysis with appropriate model validation (Figure 1 supplements 6-8). The parameter \u03b3 controlling coinfection prevalence was reliably estimated under different modeling assumptions, and the posterior probabilities provide strong statistical evidence. The finding is consistent with prior experimental work (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C45",
+      "C48"
+    ],
+    "result": "High numbers of novel multilocus genotypes (MLGs) are detected annually (182-235 per year), with the number of new MLGs at the population level increasing with coinfection prevalence from the previous season. This creates spatially delineated hotspots of novel genetic diversity, indicating that sexual outcrossing occurs where coinfection levels are high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C44-C45, and C48 are well-supported by multi-year genotyping data and spatial Bayesian modeling. The statistical analysis (Table 1, Figure 1C) shows coinfection prevalence is a strong predictor of novel MLGs even after controlling for population size, diversity, connectivity, and spatial-temporal autocorrelation. The conservative algorithm for MLG identification (Figure 1 supplement 11) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C3"
+    ],
+    "result": "Pathogen populations with high coinfection prevalence have higher overwinter survival probability. This effect remains positive after controlling for pathogen population size, diversity, and spatial-temporal autocorrelation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C3 are supported by multi-year census data (2012-2015) and spatial Bayesian modeling (Table 1, Figure 2). The INLA model controls for important confounders including spatial and temporal autocorrelation and abiotic variation known to affect overwintering. The effect is consistent across multiple years, providing robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C53"
+    ],
+    "result": "Resting spores (chasmothecia) are produced in nearly all pathogen populations regardless of coinfection status (96% vs. 93%), indicating that successful overwintering is not due to higher production of resting spores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C53 are supported by field observations across the metapopulation. The similar production rates between populations with and without coinfection (96% vs. 93%) provide clear evidence that quantity of resting spore production does not explain the overwintering advantage. This supports the inference that quality differences in progeny may be responsible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study provides evidence that outcrossing has direct epidemiological consequences (increased overwinter survival) and major impacts on pathogen population genetic diversity (generation of novel MLGs), demonstrating both ecological and evolutionary benefits of outcrossing in pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C95-C97 represent the main conclusions synthesizing the empirical findings. These are well-supported by the convergence of multiple lines of evidence: spatial variation in coinfection, generation of novel genetic diversity linked to coinfection, and increased overwinter survival in populations with coinfection. The comprehensive multi-year dataset and rigorous statistical approaches provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "While sampling may miss rare strains and mutations could generate some novel MLGs, these factors are unlikely to explain the high turnover of MLGs observed. Mainland populations are expected to contribute negligibly to gene flow given the pathogen's short dispersal distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 acknowledge limitations but provide reasonable justifications. The high turnover rates (182-235 novel MLGs per year) across a well-sampled metapopulation (96-97% coverage) make it unlikely that sampling bias or mutation alone explain the patterns. The dispersal limitation is supported by prior experimental and field data (Jousimo et al., 2014; Tack et al., 2014), and the 38 km water barrier provides additional support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "There may be differences in progeny quality between selfing and outcrossing. Prior experimental work shows significant variation in spore viability, with evidence of higher viability from coinfections, though this is affected by strain genotypes and temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C56 present a plausible mechanism for the overwintering advantage but rely heavily on speculation (C54) and prior work (C56) rather than direct evidence from the current study. While C43 and C53 show similar resting spore production rates, the current study does not directly measure spore viability or quality. The cited experimental work (Vaumourin and Laine, 2018) provides some support but indicates context-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The finding that coinfections are more common than expected by chance is consistent with prior work showing infected hosts are more susceptible to subsequent infection. This may be due to increased susceptibility or strain aggregation on susceptible genotypes, with host density and microclimatic conditions as potential drivers. The results do not support the priming hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C93 are supported by the ABC analysis results and consistency with prior work. However, C90-C92 are speculative mechanistic explanations. The rejection of the priming hypothesis (C93) is supported by the data showing increased rather than decreased susceptibility to subsequent infection. The mechanistic claims (C90-C92) are appropriately presented as possibilities rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The spatial Bayesian INLA models control for spatio-temporal autocorrelation and provide conservative parameter estimates, as evidenced by model validation checks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by the detailed methods description, citation to the INLA methodology (Lindgren and Rue, 2015), and extensive model validation presented in Figure 1 supplements 1-5. The PIT-value distributions, CPO values, and other validation metrics support model adequacy. The conservative nature of the estimates strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Novel genetic diversity generated through outcrossing may increase transmission across resistant host populations and enhance evolutionary potential for adaptation to environmental variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 are speculative about the consequences of the observed genetic diversity. While the speculation is reasonable and supported by citations to relevant theory, the current study does not directly test these hypotheses. The claims appropriately use conditional language ('may increase') but represent future research directions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C61"
+    ],
+    "result": "Haploid selfing may be maintained due to low probability of encountering mating partners, and there may be costs to outcrossing through breaking up locally adapted populations. A mixed mating system may provide a bet-hedging strategy in fragmented landscapes with high extinction probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C58 and C61 are speculative explanations for the maintenance of mixed reproductive strategies. While these are plausible hypotheses consistent with evolutionary theory, they are not directly tested in the current study. The speculation is reasonable given the empirical findings but represents interpretation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study employed comprehensive sampling (619-833 populations per year, representing 96-97% of located populations) and used SNP genotyping with 27 markers (19 retained after quality control) to identify MLGs and detect coinfections based on heterozygote detection in the haploid pathogen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C79-C86 describe the sampling and genotyping methods. The sampling effort is exceptionally comprehensive, covering nearly all located pathogen populations. The genotyping approach is well-established for this system (Tollenaere et al., 2012; Susi et al., 2015) and appropriate for a haploid organism. The quality control step of removing 8 SNPs with null alleles is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study system consists of Podosphaera plantaginis, a specialist powdery mildew fungus, infecting Plantago lanceolata across approximately 4000 host populations in the \u00c5land Islands. The pathogen is a highly dynamic metapopulation with frequent extinctions and recolonizations, overwinters in chasmothecia produced through sexual reproduction, and has been systematically surveyed since 2001.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 and C62-C78 provide background on the study system. These are well-supported by established knowledge, prior publications (particularly Jousimo et al., 2014), and long-term systematic surveys. The descriptions of pathogen biology, life cycle, and metapopulation dynamics are consistent with the literature and provide essential context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Connectivity of pathogen populations, calculated using an exponential dispersal kernel with mean dispersal distance \u03b1=1000 meters, serves as a proxy for gene flow among populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 describe the connectivity measure used in the analysis. The approach is based on prior work (Jousimo et al., 2014) that estimated dispersal parameters for this system. The use of connectivity as a proxy for gene flow is reasonable given the spatial structure of the metapopulation and the pathogen's dispersal biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C59",
+      "C60"
+    ],
+    "result": "The introduction provides theoretical and empirical background on sexual reproduction in pathogens, including the two-fold cost of sex, Red Queen Hypothesis, ecological advantages of sexual reproduction, mixed reproductive strategies, and challenges in studying sexual stages in pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C21, C59-C60 provide literature context supported by appropriate citations. These claims accurately represent established theory and prior empirical work in the field. The citations appear appropriate and the characterization of the state of knowledge (e.g., C9 noting limited and conflicting empirical evidence) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Coinfection is the prerequisite for sexual outcrossing in this pathogen system, as outcrossing requires two strains to infect the same host plant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is a fundamental biological fact about this system based on the reproductive biology of P. plantaginis (C27). For outcrossing to occur, hyphal cells from two different strains must fuse during infection of the same host. This is well-established for powdery mildews and is central to the study's logic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Overwintering determines both the genetic and numeric structure of the next epidemic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by citations to prior work (Tack and Laine, 2014; Penczykowski et al., 2015) and is consistent with the biology of the system where chasmothecia are the overwintering structures that initiate spring infections. This provides important context for why overwintering success is an ecologically relevant fitness component.",
+    "result_type": "MINOR"
+  }
+]

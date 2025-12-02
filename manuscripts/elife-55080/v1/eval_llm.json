@@ -1,0 +1,177 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study used 27 hunting dogs equipped with GPS collars to track 622 excursions across 62 locations in the Czech Republic from 2014-2017. The methodology included double-blind analysis protocols, specific definitions for tracking and scouting strategies, and appropriate statistical methods for circular and non-circular data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C54-C65 collectively describe a well-designed observational study with appropriate sample sizes, clear operational definitions, and rigorous methodological controls including double-blind protocols (C63). The GPS accuracy (\u00b14.2m, C2) and spatial criteria for strategy classification (\u00b130m corridor, C61-C62) are appropriate for the scale of observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Dogs exhibited two primary homing strategies: tracking (59.4% of cases) where dogs followed their outbound track, and scouting (33.2% of cases) where dogs used novel routes. In 8.0% of cases, dogs combined both strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 provide clear quantitative data on strategy distribution with appropriate sample sizes (n=622 total excursions). The percentages sum to approximately 100.6%, which is reasonable given rounding and the mutually exclusive/exhaustive categorization scheme described in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Scouting dogs were faster than tracking dogs, and taller dogs ran faster than smaller ones. Shoulder height did not affect inbound track length, but using forest paths increased both speed and track length. Track length positively correlated with beeline distance to owner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 are supported by statistical analyses (GLMM) with appropriate controls for repeated measures (dog identity as random effect). The positive correlation between distance and track length (C12) is expected and serves as a validity check. However, the manuscript does not provide effect sizes or confidence intervals for all comparisons, limiting interpretation of practical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The initial outbound direction (azimuth A) and the direction to the owner at the turning point (azimuth B) were random for both tracking and scouting dogs. The initial inbound direction (azimuth C) was random for tracking dogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by circular statistics (Rayleigh tests) at both individual and group levels as shown in Figures 6-7. The randomness of azimuths A and B establishes that dogs were not systematically biased in their outbound trajectories or turning point locations, which is important for interpreting the non-random compass run orientation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Scouting dogs initiated their return with a short 'compass run' (average 18.1m) significantly aligned along the north-south magnetic axis, independent of the direction to the owner. This alignment was consistent across sexes, familiar/unfamiliar areas, and all four cardinal directions of owner position. North-south aligned compass runs were associated with 3.6x higher probability of scouting and significantly improved homing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 represent the core finding with strong statistical support (p<10^-12 for individual level, p<10^-8 for group level, C16). The independence from owner direction (C19-C20) is demonstrated by partitioning analysis (Figure 8), and the lack of sex/familiarity effects (C21-C22) strengthens the magnetic hypothesis. The improved homing efficiency (F=6.47, p=0.01, C24) provides functional significance. However, the effect size for homing efficiency appears modest based on Figure 9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Sex and breed did not influence the probability of return strategy used during homing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by GLMM analysis (p>0.05). This finding is important for ruling out confounding factors, though the manuscript does not report whether the study had sufficient power to detect breed or sex effects given the sample sizes across 10 breeds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Alternative sensory cues (sun position, polarized light, wind/olfaction, visual landmarks) did not explain the north-south compass run alignment. Statistical analyses showed no effect of sun position at individual or group levels. Less than 10% of scouting returns had suitable wind conditions for olfactory piloting. Visual piloting was unlikely due to dense vegetation and lack of body height effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 systematically rule out alternative explanations through statistical tests (C26-C27) and logical reasoning based on environmental conditions (C28-C32). The wind analysis (C28) is particularly strong, showing only <10% of cases had favorable conditions. However, the sun position analysis (C26-C27) uses monthly averages rather than actual sun positions during each trial, which introduces some uncertainty. The lack of body height effect (C30) is a clever test of the visual piloting hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The compass run behavior is consistent with magnetic field detection. Previous research has shown dogs are sensitive to magnetic cues, magnetic fields play a role in mammalian navigation (e.g., blind mole-rats), and spontaneous magnetic alignment occurs in various vertebrates. The Earth's magnetic field provides a stable, omnipresent cue unlike other sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 appropriately cite relevant prior work establishing the plausibility of magnetic sensing in mammals. The citations to Hart et al. 2013, Ad\u00e1mkov\u00e1 et al. 2017, and Martini et al. 2018 (C37) support canine magnetoreception, while Kimchi et al. 2004 (C38) provides a functional parallel in another mammal. However, these are correlational studies and do not provide direct mechanistic evidence for magnetic sensing in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors propose that the compass run is mediated by magnetic cues and serves to recalibrate a path integration system relative to Earth's magnetic field, increasing navigation accuracy and reducing complexity. This may provide mammals with a 'universal' reference frame for long-distance navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C43 represent speculative interpretations rather than demonstrated findings. While the magnetic alignment is well-documented, the proposed mechanism involving path integration recalibration (C41) is not directly tested. The study design (dogs not passively displaced, C42) makes path integration plausible, but no direct evidence for path integration or its recalibration is provided. The 'universal reference frame' concept (C43) is an interesting hypothesis but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The introduction establishes that homing behavior is widespread in vertebrates using multiple sensory cues, but mammalian navigation mechanisms remain poorly understood. Historical studies have documented impressive canine navigation abilities, and hunting dogs have been bred for tracking and homing behaviors. Tracking is safe but lengthy, while scouting enables shortcuts but is riskier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 provide appropriate background context through citations to relevant literature. The historical perspective (C47-C50) and breeding history (C51) establish the study's rationale. The characterization of tracking vs. scouting trade-offs (C52-C53) is logical but represents inference rather than empirical data from this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1807 @@
+{
+  "submission": {
+    "id": "7756dddd-8253-484c-948e-7a4cd95e4296",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:27:40.364615Z",
+    "updated_at": "2025-12-02T11:27:40.364615Z"
+  },
+  "content": [
+    {
+      "id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "submission_id": "7756dddd-8253-484c-948e-7a4cd95e4296",
+      "content_type": "manuscript",
+      "content_text": "# Natural selection and repeated patterns of molecular evolution following allopatric divergence\n\n## Authors\n\n- Yibo Dong<sup>1</sup>\n- Shichao Chen<sup>3</sup> ([ORCID: 0000-0002-7160-4245](https://orcid.org/0000-0002-7160-4245))\n- Shifeng Cheng<sup>6</sup>\n- Wenbin Zhou<sup>1</sup>\n- Qing Ma<sup>1</sup>\n- Zhiduan Chen<sup>7</sup>\n- Cheng-Xin Fu<sup>8</sup>\n- Xin Liu<sup>6</sup> \u2020\n- Yun-peng Zhao<sup>8</sup> \u2020\n- Pamela S Soltis<sup>3</sup> \u2020\n- Gane Ka-Shu Wong<sup>6</sup> \u2020\n- Douglas E Soltis<sup>3</sup> \u2020\n- Qiu-Yun(Jenny) Xiang<sup>1</sup> ([ORCID: 0000-0002-9016-0678](https://orcid.org/0000-0002-9016-0678)) \u2020\n\n### Affiliations\n\n1. Department of Plant and Microbial Biology North Carolina State University Raleigh United States\n2. Plant Biology Division Noble Research Institute Ardmore United States\n3. Florida Museum of Natural History, University of Florida Gainesville United States\n4. Department of Biology University of Florida Gainesville United States\n5. School of Life Sciences and Technology Tongji University Shanghai China\n6. Beijing Genomics Institute Shenzhen China\n7. State Key Laboratory of Systematic and Evolutionary Botany Institute of Botany, Chinese Academy of Sciences Beijing China\n8. Laboratory of Systematic & Evolutionary Botany and Biodiversity, College of Life Sciences Zhejiang University Hangzhou China\n9. Department of Biological Sciences University of Alberta Edmonton Canada\n10. Department of Medicine University of Alberta Edmonton Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlthough geographic isolation is a leading driver of speciation, the tempo and pattern of divergence at the genomic level remain unclear. We examine genome-wide divergence of putatively single-copy orthologous genes (POGs) in 20 allopatric species/variety pairs from diverse angiosperm clades, with 16 pairs reflecting the classic eastern Asia-eastern North America floristic disjunction. In each pair, >90% of POGs are under purifying selection, and <10% are under positive selection. A set of POGs are under strong positive selection, 14 of which are shared by 10\u201315 pairs, and one shared by all pairs; 15 POGs are annotated to biological processes responding to various stimuli. The relative abundance of POGs under different selective forces exhibits a repeated pattern among pairs despite an ~10 million-year difference in divergence time. Species divergence times are positively correlated with abundance of POGs under moderate purifying selection, but negatively correlated with abundance of POGs under strong purifying selection.\n\n## Introduction\n\nIdentifying the factors driving divergence is a key research topic of speciation genomics (Wolf and Ellegren, 2017). Although there has been progress in identification of individual speciation genes and genomic islands of divergence in speciation (Nosil and Feder, 2013; Renaut et al., 2013), it remains an open question as to whether there are general genomic patterns and processes of molecular evolution accompanying the divergence of species. Natural selection and drift are recognized as the major processes promoting divergence. However, the relative roles of these processes, the proportion of the genome affected by natural selection, and the strength of selection in generating genomic divergence have remained poorly understood (Kimura, 1979; Noor and Bennett, 2009; Barrett and Hoekstra, 2011; Nosil and Feder, 2013). A few recent studies have uncovered repeated patterns of genomic divergence driven by selection in species formation (Gagnaire et al., 2013; Arnegard et al., 2014; Renaut et al., 2014; Soria-Carrasco et al., 2014) and suggested that divergence may often result from changes at a relatively small subset of genes (e.g., Conte et al., 2012).\n\nGeographic speciation is a common driving force in generating biodiversity (Coyne and Allen Orr, 1998). Given sufficient time and/or selection pressures, genomic divergence between allopatric populations is expected (Coyne and Allen Orr, 1998; Nosil, 2008). However, how genes diverge over time at a genomic scale after major geographic isolation that completely interrupts gene flow has remained an unanswered question. Meta-analyses of closely related species that span a range of time scales of geographic isolation will be, therefore, particularly beneficial for gaining insights into this question (Nosil et al., 2009). Such studies might allow us to reconstruct how genomic divergence unfolds as speciation proceeds through time.\n\nPutatively orthologous (single-copy) genes (POGs) identified in RNA-seq data sets of closely related species offer a valuable genome-wide window on molecular divergence of a unique subset of the genome following speciation\u00a0(Feder et al., 2012; De Smet et al., 2013). Investigating how these genes diverge during speciation and subsequent evolution contributes an important perspective to speciation genomics. Such studies may illuminate the functional divergence of the allopatric genomes and the underlying ecological forces that shape them. The forests of eastern Asia (EA) and eastern North America (ENA) share 65 genera of seed plants with closely related species occurring in the two areas (Li, 1952; Boufford and Spongberg, 1983; Wu, 1983; Wen, 1999; Wen et al., 2010; Wen et al., 2016). This well-known floristic disjunction is a major phytogeographic pattern of the Northern Hemisphere and has been known since the time of Linnaeus (Wen, 1999). The origins of the disjunction and impact on plant evolution have been investigated over the past 30 years (Xiang et al., 1998; Wen, 1999; Xiang et al., 2000; Wen, 2001; Xiang and Soltis, 2001; Donoghue and Smith, 2004; Harris et al., 2013; Manos and Meireles, 2015; Qian et al., 2017). Many of these genera are small with one to a few species. Previous analyses using mainly plastid and internal transcribed spacer (ITS) DNA sequence markers revealed that the divergence times of disjunct sister species in EA and ENA varied greatly from the Miocene to the Pleistocene or even more recently (15 mya to\u00a0<2.0 mya), although some disjunct clades in the two areas diverged earlier (Xiang et al., 2000; Wen, 2001; Milne and Abbott, 2002; Donoghue and Smith, 2004; Harris et al., 2013). These genera therefore represent different stages of allopatric divergence and are ideal for studying genomic divergence associated with geographic speciation.\n\nIn this paper, we compare the divergence patterns of genes identified as POGs in leaf transcriptomes of 20 allopatric species/variety pairs (or taxon pairs), all but four of which represent the EA-ENA floristic disjunction (Table 1). The 16 EA-ENA disjunct species or subspecies/variety pairs represent diverse clades of flowering genera with two to several species: Campsis (two spp.) \u2013 Lamiales, Convallaria (three vars. of 1 sp.) \u2013 Asparagales, Cornus (two subclades, Cornus-1 with eight spp., Cornus-2 with two spp.) \u2013 Cornales, Cotinus (two spp.) \u2013 Sapindales, Croomia (three spp.) \u2013 Pandanales, Gelsemium (three spp.) \u2013 Gentianales, Hamamelis (six spp.) \u2013 Saxifagales, Liquidambar (4\u201315 spp.) \u2013 Saxifragales, Liriodendron (two spp.) \u2013 Magnoliales, Meehania (seven spp.) \u2013 Lamiales, Menispermum (two spp.) \u2013 Ranunculales, Nelumbo (two spp.) \u2013 Proteales, Penthorum (two spp.)\u2013 Saxifragales, Phryma (two spp. or two vars. of 1 sp.) \u2013 Lamiales, Sassafras (three spp.) \u2013 Magnoliales, and Saururus (two spp.) \u2013 Piperales (Appendix 1\u2014figure 1). These EA-ENA disjunct genera are among the classic examples of the EA-ENA floristic disjunction (Li, 1952;\u00a0Wu, 1983;\u00a0Wen, 1999) and have one to a few species isolated in the two areas, and in a few cases, a species also occurs in western North America (e.g., Cornus-1) and/or southwestern Asia and southeastern Europe (e.g., Convallaria, Liquidambar, Nelumbo). The species pairs we compared in these genera (Table 1) span a range of divergence times (Xiang et al., 2000;\u00a0Wen, 2001;\u00a0Milne and Abbott, 2002;\u00a0Wen et al., 2010).\n\n**Table 1.**\n List of biogeographic pairs and number of examined putative single copy orthologs (POGs) (sum from two species), maximum length (MAL), minimum length (MIL), and average length (AL) of POGs, number of POGs mapped to single copy genes in seed plants (NSP) and number of POGs that were mapped to single copy genes in 20 angiosperm plants (NAP).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genera</th>\n      <th>Species</th>\n      <th>Distribution</th>\n      <th>#of POGs</th>\n      <th>MAL of POGs (bp)</th>\n      <th>MIL of POGs (bp)</th>\n      <th>AL of POGs (bp)</th>\n      <th>NSP of POGs</th>\n      <th>NAP of POGs</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Acorus</td>\n      <td>A.calamus, A.gramineus</td>\n      <td>EA-Asia/America</td>\n      <td>17192/2</td>\n      <td>6213</td>\n      <td>102</td>\n      <td>874</td>\n      <td>77</td>\n      <td>81</td>\n    </tr>\n    <tr>\n      <td>Calycanthus</td>\n      <td>C.chinensis, C.occidentalis</td>\n      <td>EA-WNA</td>\n      <td>23116/2</td>\n      <td>6705</td>\n      <td>102</td>\n      <td>908</td>\n      <td>96</td>\n      <td>152</td>\n    </tr>\n    <tr>\n      <td>Campsis</td>\n      <td>C.grandiflora, C.radicans</td>\n      <td>EA-ENA</td>\n      <td>20840/2</td>\n      <td>5697</td>\n      <td>102</td>\n      <td>734</td>\n      <td>66</td>\n      <td>112</td>\n    </tr>\n    <tr>\n      <td>Convallaria</td>\n      <td>C.majalis var. keiskei, C.majalisvar. Montana</td>\n      <td>EA-ENA</td>\n      <td>30322/2</td>\n      <td>7041</td>\n      <td>102</td>\n      <td>502</td>\n      <td>53</td>\n      <td>75</td>\n    </tr>\n    <tr>\n      <td>Cornus-1</td>\n      <td>C.ellipica, C.florida</td>\n      <td>EA-ENA</td>\n      <td>24398/2</td>\n      <td>5682</td>\n      <td>102</td>\n      <td>800</td>\n      <td>154</td>\n      <td>259</td>\n    </tr>\n    <tr>\n      <td>Cornus-2</td>\n      <td>C.alternifolia, C.controversa</td>\n      <td>EA-ENA</td>\n      <td>26490/2</td>\n      <td>7455</td>\n      <td>102</td>\n      <td>836</td>\n      <td>210</td>\n      <td>323</td>\n    </tr>\n    <tr>\n      <td>Cotinus</td>\n      <td>C.coggygria, C.obovatus</td>\n      <td>Eurasia-ENA</td>\n      <td>26494/2</td>\n      <td>7374</td>\n      <td>102</td>\n      <td>889</td>\n      <td>237</td>\n      <td>361</td>\n    </tr>\n    <tr>\n      <td>Croomia</td>\n      <td>C.japonica,C.paueiflora</td>\n      <td>EA-ENA</td>\n      <td>23160/2</td>\n      <td>6480</td>\n      <td>102</td>\n      <td>817</td>\n      <td>71</td>\n      <td>112</td>\n    </tr>\n    <tr>\n      <td>Dysosma</td>\n      <td>D.pleiantha, D.versipellis</td>\n      <td>Asia*</td>\n      <td>24270/2</td>\n      <td>11694</td>\n      <td>102</td>\n      <td>944</td>\n      <td>132</td>\n      <td>218</td>\n    </tr>\n    <tr>\n      <td>Gelsemium</td>\n      <td>G.elegans, G.sempervirens</td>\n      <td>EA-ENA</td>\n      <td>22774/2</td>\n      <td>6801</td>\n      <td>102</td>\n      <td>980</td>\n      <td>129</td>\n      <td>194</td>\n    </tr>\n    <tr>\n      <td>Hamamelis</td>\n      <td>H.japonica, H.vernalis</td>\n      <td>EA-ENA</td>\n      <td>23052/2</td>\n      <td>7308</td>\n      <td>102</td>\n      <td>955</td>\n      <td>221</td>\n      <td>365</td>\n    </tr>\n    <tr>\n      <td>Liquidarnbar</td>\n      <td>L.styraciflua, L.formosana</td>\n      <td>EA-ENA</td>\n      <td>24844/2</td>\n      <td>7041</td>\n      <td>102</td>\n      <td>893</td>\n      <td>196</td>\n      <td>343</td>\n    </tr>\n    <tr>\n      <td>Liriodendron</td>\n      <td>L.chinense, L.tulipifera</td>\n      <td>EA-ENA</td>\n      <td>23060/2</td>\n      <td>7053</td>\n      <td>102</td>\n      <td>748</td>\n      <td>77</td>\n      <td>120</td>\n    </tr>\n    <tr>\n      <td>Meehania</td>\n      <td>M.fargesii, M.cordata</td>\n      <td>EA-ENA</td>\n      <td>25622/2</td>\n      <td>5562</td>\n      <td>102</td>\n      <td>919</td>\n      <td>97</td>\n      <td>166</td>\n    </tr>\n    <tr>\n      <td>Menispermum</td>\n      <td>M.canadense, M.dauricum</td>\n      <td>EA-ENA</td>\n      <td>27490/2</td>\n      <td>7347</td>\n      <td>102</td>\n      <td>449</td>\n      <td>60</td>\n      <td>121</td>\n    </tr>\n    <tr>\n      <td>Nelumbo</td>\n      <td>N.lutea, N.nucifera</td>\n      <td>EA-ENA</td>\n      <td>23988/2</td>\n      <td>7329</td>\n      <td>102</td>\n      <td>774</td>\n      <td>138</td>\n      <td>220</td>\n    </tr>\n    <tr>\n      <td>Penthorum</td>\n      <td>P.chinense, P.sedoides</td>\n      <td>EA-ENA</td>\n      <td>23288/2</td>\n      <td>15225</td>\n      <td>102</td>\n      <td>882</td>\n      <td>161</td>\n      <td>245</td>\n    </tr>\n    <tr>\n      <td>Phryma</td>\n      <td>P.aleptostachya, P.leptostachya</td>\n      <td>EA-ENA</td>\n      <td>25096/2</td>\n      <td>11445</td>\n      <td>102</td>\n      <td>863</td>\n      <td>106</td>\n      <td>180</td>\n    </tr>\n    <tr>\n      <td>Sassafras</td>\n      <td>S.albidum, S.tzumu</td>\n      <td>EA-ENA</td>\n      <td>25070/2</td>\n      <td>7524</td>\n      <td>102</td>\n      <td>809</td>\n      <td>104</td>\n      <td>153</td>\n    </tr>\n    <tr>\n      <td>Saururus</td>\n      <td>S.cernuus, S.chinensis</td>\n      <td>EA-ENA</td>\n      <td>19386/2</td>\n      <td>6300</td>\n      <td>102</td>\n      <td>888</td>\n      <td>53</td>\n      <td>84</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Evergreen-deciduous forests pair._\n\nAs noted, four of the 20 pairs represent other allopatric pairs (i.e., Acorus, two spp. \u2013 Acorales, Calycanthus, three spp. \u2013 Laurales, Dysosma, seven spp. \u2013 Ranunculales). These additional pairs were included in the study to increase our sampling of geographically separated taxon pairs for comparison and to cover a wide window of times, from recent divergence of speciation to further divergence of the descendant species. The species pairs analyzed follow: one EA-Western North American (WNA) pair (Calycanthus chinensis \u2013 C. occidentalis), one Asia/S. Europe-ENA pair (Cotinus coggygria \u2013 C. obovatus), one EA-EA/NA pair (Acorus gramineus \u2013 A. calamus), and one Asian pair (Dysosma versipellis \u2013 D. pleiantha; Ranunculales) (Table 1). Species of Acorus and Dysosma partially overlap in their geographic ranges, but have diverged in habitat and do not occur together. Acorus calamus naturally occurs throughout China and adjacent countries, and in North America in swamps, pond sides, and standing water below 2800 m. Acorus gramineus occurs in eastern, southern, and western China, and adjacent countries of EA in dense forests, moist rocky stream banks, and meadows below 2600 m. Dysosma versipellis and D. pleiantha both occur in eastern, central, and southern China, but D. versipellis is found in deciduous forests while D. pleiantha occurs in evergreen forests.\n\nAdditional information on the 20 taxon pairs and their distributions can be obtained from the Flora of China (http://www.efloras.org) and the Flora of North America (http://floranorthamerica.org/). The 20 taxon pairs we compared span a range of divergence times (Xiang et al., 1998; Xiang et al., 2000; Milne and Abbott, 2002; Donoghue and Smith, 2004;\u00a0Wen et al., 2010; Harris et al., 2013; Wen et al., 2016), mostly representing sister species or varieties; however, in a few cases, the selected species represent sister clades of one vs. two species (Calycanthus, Gelsemium, Sassafras), one vs. a few species (Hamamelis), or two or three vs. a few species (Cornus-1, Liquidambar).\n\nWe examined the pattern of variation of synonymous substitutions (Ks; the number of synonymous substitutions per synonymous site), nonsynonymous substitutions (Ka; the number of nonsynonymous substitutions per nonsynonymous site), and the ratio (Ka/Ks) for each POG within each taxon pair using a custom pipeline (Appendix 1\u2014figure 2) and compared the patterns among taxon pairs representing these diverse angiosperm lineages. The ratio of nonsynonymous to synonymous nucleotide substitutions (Ka/Ks) is probably the most common measure of selection pressure and for identifying positive selection (Ka/Ks\u00a0>\u00a01) (Yang, 2003) in molecular evolutionary studies. The method is known to be a conservative approach to call positive selection on a gene as it uses an average Ka/Ks ratio across all nucleotide sites. We also examined the relative proportions of genes under different levels of selection forces and identify and annotate genes under strong positive selection based on the Ka/Ks values (>2). Finally, we tested if the level of molecular divergence at synonymous sites (as measured by Ks at the peak frequency) reflects the relative divergence time of the species pair. Results from such analyses will illuminate the genomic pattern of genetic divergence of these genes under geographic isolation, and may also shed light on a small window of genomic divergence that unfolds as speciation proceeds through time. Furthermore, this study will provide a \u2018genome-wide\u2019 view of evolutionary divergence of species exhibiting the EA-ENA phytogeographic pattern, in comparison to previous understanding based on a few gene regions. The POGs examined in this study represented 52\u201368% of the total orthologous gene families in the transcriptome data (Supplementary file 1).\n\nWe stress that the POGs in leaf transcriptomes analyzed here are putative orthologs between the two species of each biogeographic pair found in the transcriptomes by OrthoMCL followed by customized scripts (see Methods below). It is possible, therefore, that some of these genes may have more than one copy in the genome (as a small gene family), but only one of them was expressed to a detectable level in the leaf. In such cases, it is possible that the two single-copy transcripts from the taxon pair may represent paralogous copies of the low-copy gene family, making the gene comparison non-orthologous. However, we think the likelihood of non-orthology of these genes is probably very low because in each case the two taxa are either sister species or intraspecific taxa, or represent the products of recently diverged sister clades where conservation of expression of a gene copy may be expected. We therefore do not think that the low probability of non-homology will affect our conclusions derived from thousands of putatively orthologous comparisons. However, we do want to make it clear that the discussion and conclusions about \u2018genome-wide\u2019 pattern of evolutionary divergence and processes in this paper are restricted to these genes of the genome. Nonetheless these POGs represent a significant portion of the gene families expressed in the transcriptome of each species (52%\u201368%; Supplementary file 1).\n\nComparison of the rates of nonsynonymous and synonymous substitutions provides a useful tool for understanding the mechanisms of DNA sequence evolution. A ratio of nonsynonymous (Ka) to synonymous (Ks) nucleotide substitutions greater than one is a common method for identifying positive selection in molecular evolutionary studies (Yang, 2003). We are aware that uncertainty in Ka/Ks ratios is high when Ks is zero or close to zero. This uncertainty may lead to inflation of Ka/Ks ratios or false identification of genes under strong positive selection due to a high, infinite, or undefined Ka/Ks value. To minimize this problem, we removed genes with Ks\u00a0=\u00a00 and genes with Ka/Ks\u00a0=\u00a099 for all analyses and only focused on genes with Ka/Ks\u00a0>\u00a02 as candidates of strong positive selection for gene annotation analysis. Our detailed examination of the Ka and Ks data (see Discussion below) provided evidence supporting the candidate genes under positive selection detected in the study are unlikely artifacts of small Ks. Further, the Ka/Ks\u00a0>\u00a02 ratios in these genes are unlikely a result of saturation of synonymous substitutions. Saturation of synonymous substitutions is often expected at deeper phylogenetic levels. We further used alternative method (Wagner, 2007) to check for signals of positive selection in these genes with Ka/Ks\u00a0>\u00a02. This method detects variation clusters of aggregated nucleotide substitutions that are too closely spaced to be observed by chance alone (violating the prediction from neutral evolution). Both the Ka/Ks and variation cluster methods may underestimate the number of genes under positive selection because some genes with Ka/Ks\u00a0<\u00a01 may be under positive selection at only a few sites and these sites may not be necessarily clustered in the gene. However, our goal is not to determine exactly how many POGs are under positive selection, and this caveat does not affect our comparisons of average selection pressures among genes or comparisons of general patterns of gene divergence across species pairs. The genes identified as under positive selection by both methods are likely the true positive selection genes and will provide top candidates for future studies for their functions in driving allopatric divergence in these taxa.\n\n## Results\n\nThe number of POGs in the leaf transcriptomes of the 20 biogeographic taxon pairs varies from 8596 to 15161 (Table 1). Among these POGs, 2241 are shared by over 50% of the taxa, 333 are shared by over 80% of the taxa, 79 are shared by over 90% of the taxa, and seven are shared by all of the taxa. Most of these genes exhibit low divergence, with synonymous substitution (Ks) values less than 0.1 and nonsynonymous substitution values (Ka) less than 0.04. Less than 1% of the genes exhibit greater divergence with Ks values greater than 0.15 (Figure 1) and Ka values greater than 0.05 (Figure 2). The Ks values at peak frequency when plotted in intervals of 0.01 range among the taxon pairs from\u00a0<0.01 to<0.06 (Figure 1). In Convallaria, Liriodendron, Cotinus, Menispermum, and Campsis, the Ks values at peak frequency are less than\u00a00.01, while in Cornus-2, Dysosma, Nelumbo, Penthorum, and Sassafras, they are between 0.01 and 0.02. In Calycanthus, Liquidambar, Meehania, Menispermum, and Phryma, they are between 0.02 and 0.03, and in Cornus-1, Croomia, Hamamelis, and Saururus, they are between 0.03 and 0.04. The largest values are observed in Acorus and Gelsemium, between 0.05 and 0.06 (Supplementary file 2). A portion of the POGs, 53\u2013237 among the genera, were aligned to putative single-copy or low-copy genes shared by seed plants (Li et al., 2017), and 75\u2013365 were mapped to strict single-copy genes shared by 20 angiosperm genomes (De Smet et al., 2013) (for method of the mapping analysis, see Methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig1-v4.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig2-v4.jpg)\n\nThe Ka/Ks ratios of the POGs exhibit high similarity in patterns of variation among the 20 taxon pairs. In all pairs, the ratios at peak frequencies are highly similar and more than 90% of the genes are overall under purifying selection (referred to as purifying selection in short) based on their average Ka/Ks ratios\u00a0<\u00a00.9 across all sites within the genes. The exception was Nelumbo, which has 87.6% of the genes with Ka/Ks ratios\u00a0<\u00a00.9. The greatest proportion of genes under purifying selection was observed in Gelsemium, which had 94.9% of the genes with Ka/Ks ratios\u00a0<\u00a00.9. A very small proportion, from 1.6% (in Acorus) to 3.7% (in Nelumbo), is evolving nearly neutrally with Ka/Ks ratios in the range of 0.9\u20131.1, and another small proportion, from 3.1% (in Gelsemium) to 8.8% (in Nelumbo), is under putative positive selection based on values of Ka/Ks ratios greater than 1.1. A very small proportion, from 0.6% (in Gelsemium) to 2.0% (in Nelumbo), is under putative strong positive selection with Ka/Ks ratios ranging from 2 to 7 and rarely to 17 (Figure 3). The proportion of genes under truly positive selection may be smaller the numbers reported here due to uncertainty in estimation of Ka/Ks ratios when Ks is small.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig3-v4.jpg)\n\nWe arbitrarily divided the genes under purifying selection into three categories, Ka/Ks\u00a0<\u00a00.1 as genes under strong purifying selection, 0.1\u00a0<\u00a0Ka/Ks\u00a0<\u00a00.5 as genes under moderate purifying selection, and 0.5\u00a0<\u00a0Ka/Ks\u00a0<\u00a00.9 as genes under relaxed purifying selection. Among the taxon pairs, we observed 41% (in Convallaria) to 68% (in Gelsemium) of the POGs fall into the category of moderate purifying selection, 11% (in Gelsemium) to 36% (in Convallaria) fall into the category of strong purifying selection, while 9.7% (in Acorus) to 19.5% (in Nelumbo) fall into the category of relaxed purifying selection. In all taxon pairs, the relative abundance of POGs under the different categories of selection pressures follows the same order, from high to low, as moderate purifying selection, strong purifying selection, relaxed purifying selection, weak/moderate positive selection, putatively neutral, and strong positive selection (Figure 4; Supplementary file 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig4-v4.jpg)\n\n**Figure 4.:** Numbers of genes in each category are provided in Supplementary file 3.\n\nTo investigate if variation in Ks values at peak frequency reflects variation in biogeographic isolation times of taxon pairs, phylogenetic analyses were conducted using the seven POGs shared by all taxa and the 79 POGs shared by\u00a0>90% of the taxa, respectively. The results recovered the relationships of the 20 lineages congruent with the APG IV summary phylogeny and classification (The Angiosperm Phylogeny Group, 2016) (Figure 5; Figure 5\u2014figure supplement 1). Divergence times of the biogeographic pairs estimated\u00a0using total substitutions of these two sets of gene sequence data and BEAST (Drummond and Rambaut, 2007) were similar, with the results from 79 genes without the fossil constraint from Cornus slightly younger (Figure 5; Figure 5\u2014figure supplement 1). The estimated divergence times suggested that isolation of the species pairs occurred in an interval between the late Miocene and Pleistocene (~10.67 \u2013~1.69 mya;\u00a0Figure 5). Species divergence time was positively correlated with the Ks value at peak frequency across taxon pairs (Figure 5; r\u00a0=\u00a00.8034; p<0.001; for values used for the correlation analysis, see Supplementary file 4). On the other hand, the Ks values at peak frequency of the taxon pairs are: (1) positively correlated with the abundance of genes under moderate purifying selection (0.1\u00a0<\u00a0Ka/Ks\u00a0<0.5; r\u00a0=\u00a00.9324; p<0.001), (2) negatively correlated with the abundance of genes under putative positive selection (Ka/Ks >=1.0, r = - 0.5344; p=0.015; 1.1\u00a0<=\u00a0Ka/Ks\u00a0<2, r = - 0.62; p=0.004), and (3) negatively correlated with the abundance of genes under putative strong purifying selection (Ka/Ks\u00a0<0.1; r = - 0.7940; p<0.001) (Figure 6; Supplementary file 3, Supplementary file 10). The divergence times of taxon pairs are also positively correlated with the abundance of genes under moderate purifying selection (0.1\u00a0<\u00a0Ka/Ks\u00a0<0.5; r\u00a0=\u00a00.73; p<0.001) and negatively correlated with the abundance of genes under strong purifying selection (Ka/Ks\u00a0<0.1; r = - 0.64; p<0.009;\u00a0Figure 5; Supplementary file 4). The number of genes under strong positive selection (Ka/Ks\u00a0>2) varies among the taxon pairs from 72 (in Campsis) to 184 (in Nelumbo) (Table 2). In each pair, approximately half of these genes have GO annotations (Table 2)\u00a0that, in combination among all pairs, mapped to a total of 223 GO terms, varying from 21 (in Cornus-2) to 46 (in Convallaria) in each taxon pair (Supplementary file 5). Many of these GO terms are unique to a single lineage (100/223\u00a0=\u00a044.8%).\n\n**Table 2.**\n The number of POGs under strong positive selection (Ka/Ks\u00a0>\u00a02) in each taxon pair and results from Blast Search.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genera</th>\n      <th>Total</th>\n      <th>With blast (without hits)</th>\n      <th>With blast hits</th>\n      <th>With mapping</th>\n      <th>With GO annotation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Acorus</td>\n      <td>101</td>\n      <td>18</td>\n      <td>20</td>\n      <td>17</td>\n      <td>46</td>\n    </tr>\n    <tr>\n      <td>Calycanthus</td>\n      <td>115</td>\n      <td>14</td>\n      <td>20</td>\n      <td>25</td>\n      <td>56</td>\n    </tr>\n    <tr>\n      <td>Campsis</td>\n      <td>72</td>\n      <td>5</td>\n      <td>15</td>\n      <td>10</td>\n      <td>42</td>\n    </tr>\n    <tr>\n      <td>Convallaria</td>\n      <td>123</td>\n      <td>51</td>\n      <td>12</td>\n      <td>15</td>\n      <td>45</td>\n    </tr>\n    <tr>\n      <td>Cornus-1</td>\n      <td>123</td>\n      <td>17</td>\n      <td>16</td>\n      <td>23</td>\n      <td>67</td>\n    </tr>\n    <tr>\n      <td>Cornus-2</td>\n      <td>116</td>\n      <td>7</td>\n      <td>12</td>\n      <td>29</td>\n      <td>68</td>\n    </tr>\n    <tr>\n      <td>Cotinus</td>\n      <td>124</td>\n      <td>40</td>\n      <td>11</td>\n      <td>13</td>\n      <td>60</td>\n    </tr>\n    <tr>\n      <td>Croomia</td>\n      <td>170</td>\n      <td>32</td>\n      <td>29</td>\n      <td>20</td>\n      <td>89</td>\n    </tr>\n    <tr>\n      <td>Dysosma</td>\n      <td>108</td>\n      <td>36</td>\n      <td>14</td>\n      <td>18</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>Gelsemium</td>\n      <td>67</td>\n      <td>5</td>\n      <td>10</td>\n      <td>8</td>\n      <td>44</td>\n    </tr>\n    <tr>\n      <td>Hamamelis</td>\n      <td>114</td>\n      <td>28</td>\n      <td>15</td>\n      <td>26</td>\n      <td>45</td>\n    </tr>\n    <tr>\n      <td>Liquidambar</td>\n      <td>122</td>\n      <td>23</td>\n      <td>19</td>\n      <td>21</td>\n      <td>59</td>\n    </tr>\n    <tr>\n      <td>Liriodendron</td>\n      <td>78</td>\n      <td>15</td>\n      <td>7</td>\n      <td>19</td>\n      <td>37</td>\n    </tr>\n    <tr>\n      <td>Meehania</td>\n      <td>85</td>\n      <td>12</td>\n      <td>14</td>\n      <td>7</td>\n      <td>52</td>\n    </tr>\n    <tr>\n      <td>Menispermum</td>\n      <td>106</td>\n      <td>18</td>\n      <td>6</td>\n      <td>19</td>\n      <td>63</td>\n    </tr>\n    <tr>\n      <td>Nelumbo</td>\n      <td>184</td>\n      <td>9</td>\n      <td>32</td>\n      <td>39</td>\n      <td>104</td>\n    </tr>\n    <tr>\n      <td>Penthorum</td>\n      <td>93</td>\n      <td>5</td>\n      <td>16</td>\n      <td>9</td>\n      <td>63</td>\n    </tr>\n    <tr>\n      <td>Phryma</td>\n      <td>119</td>\n      <td>4</td>\n      <td>24</td>\n      <td>16</td>\n      <td>75</td>\n    </tr>\n    <tr>\n      <td>Sassafras</td>\n      <td>159</td>\n      <td>24</td>\n      <td>27</td>\n      <td>31</td>\n      <td>77</td>\n    </tr>\n    <tr>\n      <td>Saururus</td>\n      <td>102</td>\n      <td>7</td>\n      <td>21</td>\n      <td>16</td>\n      <td>58</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig5-v4.jpg)\n\n**Figure 5.:** (a) Dated global phylogeny and divergence times of taxon\u00a0pairs estimated using BEAST program and seven single-copy orthologs shared by all 40 taxa\u00a0with no missing data.\u00a0Number 1, 2, and 3\u00a0indicate the crown node of Magnoliidae, crown node of Monocotyledoneae, and crown node of Eudicotyledoneae, respectively. (b\u00a0\u2013\u00a0d). Correlation between divergence time and (b) Ks value at peak frequency of each genus, (c) abundance of POGs with Ka/Ks values between 0.1\u20130.5, and (d) abundance of POGs with Ka/Ks values\u00a0<\u00a00.1. Data used for the analyses are available in Supplementary file 4.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig5-figsupp1-v4.jpg)\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig6-v4.jpg)\n\n**Figure 6.:** The pattern remains when the modified Ks (see Materials and methods) is used. Data used for the analyses are available in Supplementary file 4.\n\nA majority (59) of these lineage-specific GO terms belongs to the Biological Process (BP) categorization, while 23 belong to the Molecular Function (MF) ontology, and 16 belong to the Cell Components (CC) ontology (Supplementary file 5). Fourteen of the BP GO terms were annotated to responses to various stimuli (biotic or abiotic, external or internal stimuli), defense response, immune process, or signal transduction and were distributed among 11 taxon pairs, with each term was present in 1\u20133 pairs. In all, 124 of the 223 GO terms (55.2%) are shared by two or more of the 20 taxon pairs. Among these, 12 were shared by 10\u201315 taxon pairs. These 12 genes were annotated to the nucleus, protein complex, hydrolase activity, zinc ion binding, RNA binding, ATP binding, structural constituent of ribosome, oxidoreductase activity, cellular protein modification process, translation, single-organism biosynthetic process, and oxidation-reduction process (Supplementary file 5). A single GO term is shared by all 20 taxon pairs and is annotated to integral component of membrane (ICM) in the CC category (Supplementary file 5). The specific genes and the relative abundance of genes within each of the CC, BP, and MP categories vary among the taxon pairs (Figure 7; Figure 7\u2014figure supplement 1; Figure 7\u2014figure supplement 2). However, within the CC category, all pairs have the greatest proportion annotated to ICM (Figure 7), although they vary in the exact number (Table 3). The analysis of the Ka/Ks\u00a0>\u00a02 genes using the variation cluster method (Wagner, 2007) showed most of them (>57% in all taxon pairs,\u00a0>70% in 15 pairs) were also under positive selection (indicated by significant p value for test of clustered nucleotide substitutions) (Supplementary file 6).\n\n**Table 3.**\n Number of genes with Ka/Ks\u00a0>\u00a02 ratios annotated to Integral Component of Membrane.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genera</th>\n      <th>Integral component of membrane</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Acorus</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Calycanthus</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>Campsis</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Convallaria</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Cornus-1</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>Cornus-2</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Cotinus</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>Croomia</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>Dysosma</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Gelsemium</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Hamamelis</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>Liquidarnbar</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>Liriodendron</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Meehania</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Menispermum</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>Nelumbo</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>Penthorum</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>Phryma</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>Sassafras</td>\n      <td>21</td>\n    </tr>\n    <tr>\n      <td>Saururus</td>\n      <td>16</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 7.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig7-v4.jpg)\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig7-figsupp1-v4.jpg)\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45199/elife-45199-fig7-figsupp2-v4.jpg)\n\n## Discussion\n\n### Conserved genomic pattern of evolutionary divergence following geographic speciation\n\nOur results show a general trend of genome-wide molecular divergence in POGs among the phylogenetically divergent genera showing the EA-ENA floristic disjunction or other types of allopatric divergence. That is, similar frequency distributions of Ks, Ka, and Ka/Ks ratios were observed for the POGs expressed in leaves, with peaks clustered within a narrow range of small values (Ks: 0.001\u20130.05; Ka: 0.002\u20130.004; Ka/Ks: 0.15\u20130.25) and a long tail of larger values (Ks\u00a0>\u00a00.075, Ka\u00a0>0.035, Ka/Ks\u00a0>\u00a00.5; Figure 1, Figure 2, Figure 3). The pattern we observed indicates that in each of the taxon pair, including the 16 EA-ENA pairs, most of the genes show shallow divergence or evolve slowly at a similar rate, while a small proportion of the genes evolve faster. This suggests that the molecular divergence in the POGs is generally low after geographic speciation. The peak frequency range of Ks, Ka, and Ka/Ks values revealed substantial differences in the magnitudes among genera, indicating that the taxon pairs have diverged to different extents, likely reflecting their relative timing of divergence and/or varying selection pressures among different genera. Evidence from divergence time estimation supported this prediction as discussed below.\n\nDivergence time estimation using the global phylogeny with DNA sequences of the seven POGs shared by all of the studied species demonstrates variation in times of divergence among genera. Biogeographic pairs with similar Ks values of peak frequency diverged at similar geological times (Figure 5). The divergence times of taxon pairs fall into the window of the mid-Miocene to the Pleistocene, largely similar to previously reported times of divergence for these taxa (e.g., Xiang et al., 2000; see summary in Wen, 2001; Milne and Abbott, 2002; Ian Milne, 2006; Wen et al., 2010). Although the dates for some pairs were previously estimated to be older than obtained here (e.g., Cornus-1, Cornus-2, Liriodendron, Liquidambar, and Sassafras), those dates also fall in the Miocene (Wen et al., 2010). Divergence times similar to those estimated in this study have also\u00a0been reported for Cornus and Liriodendron (Xiang et al., 2000). The major pattern of divergence revealed here by analyses of many nuclear genes for the 16 EA-ENA disjunct taxon pairs is consistent with the previous mega-synthesis of studies of individual lineages that were largely based on ITS and/or a few plastid gene sequences or non-coding markers (Donoghue and Smith, 2004; Wen et al., 2010; Harris et al., 2013). Both showed a major pattern of the Miocene or more recent disjunction of the EA and ENA sister species/varieties.\n\nThe divergence times estimated for the EA-NA (ENA, WNA, or NA) disjunct pairs in this study support the importance of a geographical connection through the Bering Land Bridge (BLB) and perhaps also long-distance dispersal (LDD) to explain a part of the EA-ENA floristic similarity. Geological evidence indicates that the BLB was available as a floristic connection throughout most of the Paleogene and Neogene and closed for the potential migration of terrestrial organisms between 7.4 and 4.8 mya (Marincovich and Gladenkov, 1999; Graham, 2018), while the North Atlantic Land Bridge (NALB) broke up in the early Eocene (Marincovich et al., 1990; Tiffney, 2000).\n\nThe disjunction of the EA-NA taxon pairs may have occurred through vicariance (the break-up of what was once a continuous distribution by different climatic cooling or geological events occurring during the Neogene) or founder event (which could have occurred across the BLB to generate a new distribution or could have been a rare LDD event). Gene flow could stop around the time of migration simply because of geographic distance. Even though the BLB might still have been available, pollen and/or seed flow might have been limited given the geographic distance and high latitude of BLB (long, cold winter with short days). Divergence then could have occurred due to either selection or drift if the founder populations were small. On the other hand, if local populations were large and generation times were long, populations would not diverge very quickly under even limited gene flow and a physical break in the distribution. In such cases, divergences might post-date the end of the BLB and other barriers, for example, if disjunctions were formed by vicariance. At present, our data do not permit distinguishing between the alternative hypotheses of vicariance and LDD in establishing the EA-NA disjunction in these taxa. However, the fact that 65 genera of seed plants exhibit this disjunction and the availability of NALB and BLB for migration argue for vicariant origins of these taxa and the similar flora; LDD for this number of taxa representing a range of life histories does not seem parsimonious, and may only play a minor role in formation of the similar flora in EA and ENA. Development of phylogeny-based methodology that models speciation under the different scenarios is needed for testing these hypotheses.\n\nOur analyses also revealed a repeated pattern of divergence of POGs among the taxon pairs in allopatric speciation. That is, we observed the same order of relative abundance of POGs under various selection pressures (Figure 4), disregarding the relative timing of species isolation (i.e., differences in Ks value of peak abundance and divergence time), including those conspecific pairs. Specifically, we found a tiny portion of the POGs are under strong positive selection or putatively evolve neutrally, while most of the POGs are under purifying selection pressures. Although the Ka/Ks ratio and variation cluster both have low power for detecting positive selection (leading to underestimation of number of positive selection genes), this pattern is likely true due to functional constraint of protein coding genes. The observed pattern further suggests that most of the molecular evolution (or DNA substitution) in the POGs was neutral (or synonymous). The deciduous forests in eastern Asia and eastern North America are situated at similar latitudes, and both China and the United States have an eastern coast line; thus, they may have similar regional climatic and ecological conditions (E. Ricklefs et al., 2004). Therefore, there are presumably low divergence pressures for gene functional evolution in the two areas. One would therefore expect most genes to evolve slowly under purifying selection to conserve ancestral functions and the observed excess synonymous substitutions (in comparison to non-synonymou substitutions) in these genes were results of elimination of nonsynonymous substitutions by natural selection while the neutral synonymous substitutions were fixed by genetic drift. On the other hand, although eastern Asia and eastern North America share similarities in general climate, there must be differences in micro-abiotic and biotic environments between the two regions which could have driven diversifying evolution of some genes in the sister lineages for local adaptation, speciation, and subsequent divergence.\n\nOur results are consistent with these predictions. A dominant majority of the POGs examined in this study were under strong purifying selection pressures and only a tiny portion of the genes (0.6%\u20132%) were potentially under \u2018strong\u2019 positive selection (Ka/Ks\u00a0>\u00a02) (Figure 4). Annotation of these genes evolving under strong positive selection in the EA-ENA taxon pairs pointed to potential abiotic and biotic agents of selection (Supplementary file 5; also see discussion below). The observation of this same pattern in non-EA-ENA taxon pairs suggests that this \u2018conservatism\u2019 pattern of gene evolution may be a rule for allopatric speciation of any organism, which allows conservation of the ancestral system as well as opportunities for modification of the ancestral system during speciation. The conserved order of gene abundance,\u00a0as observed in all taxon pairs in this study, may be essential to maintaining a balance between the ability to preserve the ancestral biological system and the ability to evolve new features that are beneficial for new adaptation. Although genome-wide conservation of genes\u00a0may have been predicted in the past, we present here empirical evidence from thousandths of putative orthologous genes supporting this evolutionary pattern of conservatism in geographic speciation across a wide array of angiosperm lineages. The repeated pattern of variation of relative abundance of POGs under different selection pressures among taxa may represent a genomic \u2018rule\u2019 that can be tested by examining all gene families in the transcriptomes or genomes of the studied taxa. It is allied with a hypothesis that molecular evolution in the allopatric taxa is mostly neutral involving mostly silent nucleotide substitutions in the genome. This hypothesis\u00a0may be further tested by examining molecular evolution of genes in additional plant lineages to determine if it is supported and is a rule. Study of three pairs of sunflower species that diverged along latitudinal or longitudinal gradients similarly showed a repeated pattern of genomic divergence (Renaut et al., 2014), with evidence implying that both purifying and divergent selection contributed to repeatable patterns of divergence and that repeated genome evolution may have resulted from both similar selective pressures and shared local genomic landscapes.\n\nOur observation of the length of time of species isolation is positively correlated with the abundance of genes under moderate pressure of purifying selection (0.1\u00a0<\u00a0Ka/Ks\u00a0<\u00a00.5), but negatively correlated with the abundance of genes under strong pressure of purifying selection (Ka/Ks\u00a0<\u00a00.1) (Figure 5; Figure 6), suggests that as geographic isolation or divergence proceeded in time (within the time window of divergence of the species pairs studied), the purifying selection pressures of some genes may have\u00a0shifted from high intensity during early geographic isolation to lower intensity at the later stage of isolation. The shift might be attributed to changes of evolutionary trajectories of the gene at some sites where replacement substitutions are favored for modification of the ancestral functions leading to relevant morphological/ecological divergence between the species pairs. Alternatively, a relaxed purifying selection intensity of some genes could be simply a result of accumulation of slightly deleterious nonsynonymous substitutions rather than adaptive evolution. The increase of Ka/Ks ratios with time observed in our study is unlikely an artifact of saturation at silent sites of these genes because saturation of silent sites may be expected in comparisons of deep phylogenetic lineages (e.g., family or higher ranks) and unlikely to occur in species/variety pairs. Time-dependent shift of purifying selection intensity have also been reported in study of yeast (Elyashiv et al., 2010). The model developed for evolution of purifying selection in this study revealed that most, but not all changes, could be explained by systematic shifts in the efficacy of selection. An observation of a weak negative relationship between Ks peak values and abundance of genes under positive selection pressure (Ka/Ks\u00a0>\u00a01; Figure 6) in our study also suggests that as time of isolation proceeded, pressure of positive selection for some genes might have also relaxed to a lower Ka/Ks values due to accumulation of mutations at synonymous sites in the genes. Study in mammal genomes also indicated that positive selection is often episodic\u00a0(Kosiol et al., 2008).\n\nUnfortunately, our study cannot track the evolutionary fate of specific genes within a taxon pair through time to provide direct evidence for these explanations on the observed relationships. Nonetheless, we examined\u00a0Ka/Ks\u00a0values of the 79 POGs shared by\u00a090%\u00a0or more taxon pairs that diverged at different times to see if the same orthologous genes exhibit a relationship between variation of\u00a0Ka/Ks\u00a0values and time.\u00a0A simple scattered plot in excel for the divergence times and the Ka/Ks values (with Ka/Ks values\u00a0=\u00a00, 99 removed) of the 79 POGs shared by 90% or more taxa revealed that\u00a0eight of these genes had a correlation at r\u00a0>\u00a00.5, among which two correlations were positive and six were negative (Supplementary file 7). The Ka/Ks ratios of POGs that showed a correlation with times were all smaller than 1.0 (all\u00a0<0.5 except for a couple of cases). These data provide another line of indirect evidence congruent with the hypothesis that some genes may have indeed shifted the pressure of purifying selection (intensified or relaxed) during the evolutionary divergence of the taxon pair. When only including Ka/Ks ratios smaller than 0.5 in the analysis of these 79 POGs, the number of genes showing correlation with time increased (9 positive and seven negative relationships with r\u00a0>\u00a00.5; Supplementary file 8). The relationships are strong in a few genes for either pattern. This observation suggests, perhaps, the presence and elimination of slightly deleterious nonsynonymous substitutions play a major role in the changes of Ka/Ks ratios. Lack of correlation between Ka/Ks ratios and time for most of the 79 POGs also suggests that the evolutionary fate of most of\u00a0these\u00a0POGs is more taxon-specific independent\u00a0of\u00a0time.\u00a0Although most of them were under purifying selection,\u00a0a handful cases were under putative positive selection with (Ka/Ks\u00a0>\u00a01;\u00a0Supplementary file 7) which are more found in the aquatic Nelumbo and Saururus genera.\n\n### Genes under strong positive selection\n\nThe number and predicted functions of genes under strong positive selection (Ka/Ks\u00a0>\u00a02) varied among the disjunct pairs, and a large proportion of the GO terms are unique to a single genus, suggesting that the divergence and evolutionary adaptation of the species in each genus has been likely facilitated by different molecular mechanisms and biological processes. For example, among the 20 lineages we examined, the aquatic eudicot Nelumbo has the largest proportion of its POGs under positive selection and the smallest proportion of POGs under purifying selection, while the reverse is found in the terrestrial twining vine Gelsemium, a member of the asterid clade Gentianales. The two species of Nelumbo, N. nucifera (EA) and N. lutea (ENA), differ in four features of their reproductive structures, including tepal color and persistence, receptacle color, and fruit shape. Gene annotation identified 12 genes under strong positive selection for response to stimulus, nine for regulation of gene expression, seven for developmental process, eight for DNA-templated transcription, and eight for cellular lipid metabolic process. These genes may be interesting for future investigation into their roles in observed morphological divergence (Supplementary file 5). In Gelsemium, 12 morphological characters in reproductive structures (including inflorescence size, floral shape/size, fruit and seed morphology, etc.; see list in Wyatt et al., 1993) and two vegetative structures (petiole length and leaf shape) differ between the two disjunct species (Wyatt et al., 1993). Gene annotation for strong positive selection genes in this genus identified two for plastid organization, two for photosynthesis (light reaction), three for response to stress, two for establishment of localization in the cell, three for oxidation-reduction process, two for response to light stimulus, three for proteolysis, two for regulation of biological quality, two for negative regulation of metabolic process, three for signal transduction, and two for RNA processing, among others. The biological processes involving the positively selected genes all differ between the two genera except for DNA metabolic process, which was common to both, involving seven genes in Nelumbo and two genes in Gelsemium (Supplementary file 5).\n\nIt is difficult to decipher if there is any link between the positively selected genes and morphology without additional evidence, but these genes may serve as candidates for further detailed population genetics and evo-devo studies to test their roles. Many of the positively selected genes could also have been involved in divergence of cryptic characteristics that are unknown, and thus serve as a guide for future investigation. The GO terms of these genes (Supplementary file 5) support that possible ecological/environmental pressures or selection agents that differ between the growing habitats of the taxon pairs in EA and ENA or other areas may have driven the extent of divergence in these genera. For example, the positive selection genes (Ka/Ks\u00a0>\u00a02) with GO terms in our study are enriched for immunity/stimuli responses. Similar case is also found in positive selection genes in mammals which were enriched for a wide variety of functions related to immunity and defense (Kosiol et al., 2008). Identification of the specific sites under positive selection in these genes would be helpful to guide future studies on the potential functional consequences of selection. Unfortunately, our comparisons of two sequences for each gene in each taxon pair did not have the power for such analysis. Further analyses of these genes with increased taxon/population sampling will be needed to identify the particular sites of selection.\n\nThe single GO term common to all 20 taxon\u00a0pairs was annotated to integral component of membrane (ICM) and was most abundant among the cell component terms (Figure 7; Supplementary file 5, row in bright\u00a0red). This also suggests that a potential common regional force acting on these taxa resulted in the adaptive evolution of ICM genes, which may be involved in some of the common biological processes, such as signaling associated with host-microbe interactions and responses to various stimuli. When examining the names of these integral cell membrane component genes, they seem to vary among taxa, and it is difficult to determine if they are involved in similar biological processes in different taxa, without additional evidence (Supplementary file 9). These positively selected genes of integral cell membrane component provide candidates for future studies to understand the causes and consequences of their molecular evolution.\n\nRecent studies have revealed repeated patterns of genomic divergence associated with species formation (Pereira et al., 2016). Such patterns was considered as evidence suggesting that natural selection tends to target a set of available genes (Pereira et al., 2016). Our study found a set of genes was targeted for strong positive selection in each taxon pair, suggesting that these genes may play a role for the allopatric divergence of the studied taxon pairs. Although the set of genes differed among taxon pairs, 12 were shared by 10\u201315 pairs and one of them was share by all pairs. Whether these common targets reflect shared biological processes unique to the allopatric divergence of the studied taxa or general to allopatric or even sympatric divergence of all taxa need to be tested by further studies.\n\n### Uncertainty in gene copy, orthology, Ka/Ks estimation, and divergence time estimation\n\nWe stress that the POGs in leaf transcriptomes analyzed here are putative orthologs between the two species of each biogeographic pair found in the transcriptomes by OrthoMCL followed by analyses using customized scripts (see Methods below). As discussed above, some of them may represent paralogous copies of the low-copy gene family, but\u00a0such cases are expected to be uncommon due to the close relationship between the compared taxa of each pair. In these taxon pairs, conservation of expression of a gene copy in the same tissue of the same growth stage is\u00a0likely. Rare cases of non-homology of POGs would not affect the conclusions derived from thousands of putatively orthologous comparisons. OrthoMCL is known to perform reasonably well in identifying orthologous genes (Chen et al., 2007; Altenhoff and Dessimoz, 2009). Unfortunately, we do not have genome sequences for any pairs of taxon to confirm the orthology via phylogenetic analyses of gene families. We conducted phylogenetic analyses of the seven POGs shared among the 20 taxon pairs and 79 POGs shared by\u00a0>90% taxon pairs, respectively, using raxml. The results showed all taxon pairs were grouped as sister taxa in each of the gene trees, in accordance with the expectation that the sequence pairs are orthologous genes. Otherwise, we would have observed separation of sister taxa on the gene tree.\n\nWe are aware that uncertainty in Ka/Ks ratios is high when Ks is zero or close to zero. This uncertainty may mislead the identification of genes under strong positive selection as discussed above. In our data, most of the genes (except a few) with Ka/Ks\u00a0>\u00a02 had Ks\u00a0>\u00a00.005 (Supplementary file 12). Our plots of the Ks vs. Ka/Ks values in each taxon pair show that the genes with Ka/Ks\u00a0>\u00a02 have a range of Ks values from small to large in all taxon pairs (Appendix 1\u2014figures 3\u201322), indicating the candidate genes under positive selection detected in the study are unlikely artifacts of small Ks.\n\nWe also recognize that the divergence times of each taxon pair calculated using BEAST (Drummond and Rambaut, 2007) and the global phylogeny including all 20 pairs may be somewhat underestimated due to sparse sampling of a deep phylogeny containing both very long and short branches and few calibrations only at deep nodes (see Methods and Xiang et al., 2011) that may fall beyond the smoothing capability of BEAST. However, the results are very similar to previous estimates based on rbcL sequences (Xiang et al., 2000). Despite the possible bias, the influence may be similar across the tree and does not renter their suitability for correlation analyses conducted in the study because the relative order of divergence of the species pairs estimated here is expected to be consistent. Although the divergence times may have been underestimated, we do not think it will not render the implication of a major pattern of BLB migration for the studied taxa because the divergence time need to be\u00a0~20\u201340 million years older for migration across the North Atlantic land bridge.\n\n### Conclusions\n\nOur comparative analyses of putative single-copy or low-copy genes from transcriptome data of 20 angiosperm lineages in Eurasia and North America reveal a consistent pattern of molecular divergence following allopatry, supporting a potential universal conservatism rule of genomic architecture governing the evolution of these genes. Our data of temporal isolation in the Neogene (or more recent) of the 16 EA-ENA taxon pairs also support an important role of the Bering Land Bridge for intercontinental migration of these taxa. We also identified a total of over 200 genes with annotation under putative strong positive selection following allopatric speciation across these genera, with some annotated to biological processes responding to various stimuli, providing a pool of candidates for future studies to understand the link between speciation and molecular and morphological divergence.\n\n## Materials and methods\n\n### Sampling, RNA extraction, and transcriptome sequencing\n\nLeaf materials were collected from wild or cultivated plants grown in botanical gardens or arboreta (Supplementary file 11) and flash frozen in liquid N2 and stored at \u221280\u00b0C until RNA extraction was conducted. Total RNA was then extracted from this tissue using the CTAB method of Jordon-Thaden et al. (Jordon-Thaden et al., 2015) (protocol number 2) with the addition of 20% sarkosyl. DNA was removed using a Turbo DNA-free kit (Invitrogen, Carlsbad, CA, USA). Extraction success was measured using Bioanalyzer metrics for the quality and quantity of RNA isolated (Agilent Technologies, Santa Clara, California, USA). The pure RNA was sent to BGI (Shenzhen, China) for library construction and sequencing after drying in specially coated tubes (i.e., GenVault, now renamed as GenTegra; IntegenX, Pleasanton, California, USA) that inhibit RNase activity and stabilize the RNA at room temperature. Ribosomal RNAs were removed from the total RNA by the Ribo-Zero rRNA removal kit for plant leaves (Epicentre, Madison, WI, USA) before cDNA library construction. Non-normalized mRNA libraries with insert sizes of\u00a0~200 bp were sequenced (paired-end, 100 bp) using the Illumina HiSeq 2000 platform to yield 4\u20138 Gb each.\n\n### Sequence assembly and identification of putative orthologous genes\n\nThe flowchart of transcriptome data analyses is illustrated in Appendix 1\u2014figure 2. For each species, prior to contig assembly, reads with poor quality were deleted from the data set, following the standard protocol of Illumina sequencing. Specifically, raw reads were trimmed at the 3\u2019 end when the Phred quality score of a read dropped below Q\u00a0=\u00a020 (or 0.01 probability of error) for two consecutive bases. All 5\u2019 and 3\u2019 stretches of ambiguous \u2018N\u2019 nucleotides and sequences of less than 20 bp were removed from sequence trimming using CLC Genomics Workbench 4.6.1 (CLC Bio, Aarhus, Denmark). Reads of each species were assembled into contigs by Trinity software (Grabherr et al., 2011). Then, for each taxon pair, POGs were identified using orthoMCL (Li et al., 2003) and custom Perl scripts as follows. Generally, default parameters were selected for each step of this gene-selection pipeline. \u201cOrthoMCL starts with reciprocal best hits within each transcriptome/genome as potential in-paralog/recent paralog pairs and reciprocal best hits across any two genomes as potential ortholog pairs. Related proteins are interlinked in a similarity graph. Then MCL (Markov Clustering algorithm,Van Dongen 2000; www.micans.org/mcl) is invoked to split mega-clusters\u2019. The key steps in OrthoMCL included (1) \u2018orthomclFilterFasta\u2019 step: the program removes low-quality sequences with sequence length\u00a0<30 bp and percent stop codons\u00a0>\u00a020%; (2) \u2018blastall\u2019 step: the program runs all-v-all Blastn with filtered sequences in the above step with default parameters \u2018-v 100000 -b 100000 m 8 -e 1e-5\u2019; (3) \u2018orthomclPairs step: the program finds pairs of proteins that are potential orthologs, in-paralogs, or co-orthologs; (4) the \u2018mcl\u2019 program split mega-clusters into the final OrthoMCL ortholog groups; and (5) the ortholog groups file is outputted by OrthoMCL. In the ortholog groups file for a taxon pair, if a gene group contains a single gene from each taxon, this group was then picked as a \u2018single-copy ortholog group\u2019 using a custom Perl script. We refer here to these genes as putative orthologs (i.e. POGs) and note that they are \u2018single-copy\u2019 in the context of the comparisons \u2013 i.e., transcriptomes of a single tissue in a single taxon pair \u2013 and thus may not truly be single-copy genes within either of the taxa in each comparison. Each \u2018single-copy\u2019 ortholog of a taxon pair was further\u00a0analyzed by scanning the ortholog groups file using the protein sequence-based ESTScan software (Lottaz et al., 2003) for CDS. The CDS sequences of each single-copy ortholog were aligned and converted into PAML format by MAFFT software (Katoh and Standley, 2013) and custom Perl scripts. The Perl scripts and complete pipeline (GDMET \u2013 Genome Duplication and Molecular Evolution by Transcriptome Sequences) developed for these data analyses is available at https://github.com/ybdong919/GDMETS/releases. The NCBI Bioproject number and Biosample numbers for the raw transcriptome data are provided in Supplementary file 11.\n\nTo see how many of these POGs were represented in the \u2018global\u2019 single or low copy gene data sets of seed plants (Li et al., 2017); identified from a combination of genome and transcriptome data) and flowering plants (De Smet et al., 2013); identified from 20 angiosperm genomes), respectively, we performed the following mapping analyses. First, the single-copy or low-copy gene names of Arabidopsis thaliana shared by seed plants or flowering plants were downloaded from the respective publications. Second, the dataset including all cDNA sequences of Arabidopsis thaliana was downloaded from its genome database (TAIR10: https://www.arabidopsis.org/). Then the cDNA sequences of the single-copy or low-copy gene of A. thaliana shared by seed plants or flowering plants were selected out from the dataset of all cDNA using gene names by Perl script. Finally, the cDNA sequences from each of the 20 taxon-pairs were mapped against the selected gene cDNA sequences of Arabidopsis thaliana by Blast program, and those that were mapped by the cDNA from each of the 20 taxon pairs were selected and recorded by Perl script.\n\n### Molecular analyses of POGs \u2013 rate of substitution, selection, and gene annotation\n\nTo examine the level of molecular divergence and identify genes under positive selection following geographic isolation, synonymous substitutions per site (Ks), nonsynonymous substitutions per site (Ka), and the ratio (Ka/Ks) were calculated for each POGs with estimated standard error (SE) in each taxon pair. The \u2018yn00\u2019 model in the PAML package (Yang, 1997; Yang, 2007) was used to calculate Ks, Ka, and their ratio values. A complete pipeline (GDMET) was developed for these data analyses (available at https://github.com/ybdong919/GDMETS/releases). The yn2000 method (Yang and Nielsen, 2000) estimated synonymous and nonsynonymous substitution rates with corrections for multiple substitutions at the same site and takes into account of transition/transversion rate bias, base/codon frequency bias.\n\nTo test if the level of sequence divergence at synonymous sites observed in most genes is reflective of the relative divergence time of a taxon pair, the relationship between divergence time estimated using genes shared among taxon pairs and the global phylogeny including all taxon pairs (see below for details) and Ks values at the peak frequency in each taxon pair was evaluated using a CORREL function in Excel. The Ks values of POGs in each taxon pair were divided into groups of segments that span 0.01 units (e.g., 0\u20130.01, 0.01\u20130.02, 0.02\u20130.03\u2026). The medium value of the Ks range with the highest frequency (referred to as \u2018Ks value at peak frequency\u2019) was used for the correlation analyses with medium value of the estimated divergence time. This comparison involved potential overlap of some data (i.e., the synonymous substitutions), because the gene pool with the Ks value that is most frequent in the transcriptome data may include the genes used for divergence time dating. Although the divergence time analysis used total substitutions (including both Ka and Ks) in the selected genes (seven shared by all 20 taxon pairs and 79 shared by 90% or more taxon pairs; see details below), we realize that overlapping of the Ks data can reduce the stringency of the analysis, if present. Nonetheless, the analysis can show if the phylogeny and total substitutions-based divergence time is correlated with the level of Ks divergence from pair-wise comparison. If they are correlated, it will suggest that the divergence time estimated with all characters in a small set of genes that are common among taxon pairs can be predicted by the most frequent Ks value from pair-wise comparisons of the genome-wide set of genes in the taxon pair, and both reflect the divergence level of the taxon pair.\n\nTo explore the variation pattern of selection pressures of POGs within the genome, we calculated the relative abundance of genes under different ranges of selection pressures. To gain insights into how the variation pattern has changed over time, we examined relationships of the Ks values at peak frequency and divergence time with the abundance of genes under different selection intensities (i.e., Ka/Ks values in different ranges) by correlation analysis using CORREL function in Excel to obtain correlation coefficients. In a few taxon pairs, two consecutive Ks ranges have very similar frequencies. We then re-ran the correlation analyses using a modified Ks value for comparison, as follows. The modified Ks is the middle value of the Ks range of the two frequencies if they differ by\u00a0<10% of the combined frequency, e.g., if Ks 0.01\u20130.02 had a frequency of 21%, Ks 0.02\u20130.03 had a frequency of 19%, the Ks in \"peak frequency\" was determined as 0.02. The difference between 21% and 19% is 2%, less than 10% of 21%+19% (40%). The results using modified Ks show no changes in the trends of relationships reported using Ks at peak frequency.\n\nThe POGs with Ka/Ks values greater than two were annotated by Blast2Go v5 (Conesa et al., 2005). First, Blastx-fast was used to identify similar, potentially homologous sequences from the green plants (No. taxa: 33,090, Viridiplantae) subset of the non-redundant protein database. A value of 1.0E-5 was assigned to Blast expectation value (E-value), while the other arguments were default. All IDs of these similar sequences were matched against the Gene Ontology (GO) database. Based on the information from Blast and mapping, the most plausible Gene Ontology terms were assigned to the input sequences. We further executed the InterPro step in parallel to the Blast step to identify protein domains and families from the InterPro collection of databases. The functions based on domains and families were merged to the functions from the Blast hits of gene sequences and gene mapping (for details of gene mapping, see introduction of Blast2GO, as described above).\n\nThe POGs with Ka/Ks values greater than two in each taxon pair were also analyzed with variation cluster method (Wagner, 2007) to see\u00a0how many of these genes also contain significant signal of clustered substitutions, a deviation from neutral molecular evolution and expectation of positive expectation. For each pair of these POG sequences considered, we inferred a codon-preserving local alignment (Smith and Waterman, 1981), removed alignment gaps and identified all positions that differed in that alignment using a custom perl script. The coordinates of these differences were used as input to the varclus package (Wagner, 2007).\n\n### Phylogeny estimation and divergence times of taxon pairs\n\nThe divergence time of each taxon pair was estimated from a phylogeny of all 20 taxon pairs inferred from (1) the seven POGs shared by all 40 samples and (2) those POGs shared by at least 90% of the 40 samples (79 genes) detected by GDMET. These gene sequences were aligned using MAFFT (https://mafft.cbrc.jp/alignment/software/ (Katoh and Standley, 2013), visualized and adjusted using Mesquite, and exported in Nexus format (Maddison and Maddison, 2017). The best model of molecular evolution (GTR model with a gamma rate parameter) was selected using jModeltest v2.1.6 (Posada, 2008), and BEAST v.1.8.2 (Drummond and Rambaut, 2007) was used to infer the phylogeny of the 20 genera and estimate the divergence times of each taxon pair (see more details below).\n\nThe ages for the crown node of Magnoliidae, crown node of Monocotyledoneae, and crown node of Eudicotyledoneae (see\u00a0Figure 5 for these clades) were each constrained as noted below, following the results of previous studies (Magall\u00f3n et al., 2015). Additionally, the crown node of Cornus (represented by two pairs from the clades of the earliest split of Cornus phylogeny (Xiang and Thomas, 2008; Xiang et al., 2011) was constrained based on the oldest fossil of the genus from the late Cretaceous (72.1\u201383.6 mya) for the analysis using seven genes (Xiang et al., 2011; Atkinson et al., 2016). These constraints were set using uniform priors as the lower and upper bounds. Specifically, the prior for the Magnoliidae crown node was set as 127.2\u2013135.2 mya, the prior for the Monocotyledoneae crown node was set as 131.0\u2013135.0 mya, the prior for Eudicotyledoneae crown node was set as 131.7\u2013135.0 mya, and the prior for the crown node of Cornus was set as 72.1\u201383.6 mya. For the analysis with 79 genes, the Cornus node was not constrained to see if results are similar.\n\nThe prior parameter settings for the analysis were checked with empty runs without the sequence data first, which resulted in divergence time estimates for the constrained nodes similar to the constrained values with ESS over 200. The distribution models of the other parameters, such as those on molecular evolution, resulting from the empty analyses were then implemented in the real analysis with data. The analysis with real data was run under a GTR model with a gamma rate parameter based on the results of jModelTest, with an uncorrelated lognormal relaxed clock (Drummond et al., 2006) and the yule process model (Stadler, 2010). The yule.birth rate was set as 0.06, the average rate for plants (De Vos et al., 2015). The analysis was run for 10 million generations, with sampling of trees every 1000 generations. The quality of the runs and parameter convergence were assessed using Tracer v. 1.6.0 (Rambaut and Drummond, 2009). The maximum credibility tree of mean heights was then constructed using TreeAnnotator after discarding 1000 trees as burn-in. The tree result was visualized in Figtree v 1.3 (Rambaut, 2010).\n\n### Availability of data and materials\n\nThe POG sequence pairs and values of dN, dS, and dN/dS are available at Dryad (https://datadryad.org//). Raw transcriptome data are available at NCBI SRA database with Bioproject number PRJNA508825 and Biosample number from SAMN10534244 to SAMN10534283 (Supplementary file 11). Other data sets supporting the conclusions of this article are included in the additional files of the article. Custom analysis scripts are available from GitHub: https://github.com/ybdong919/GDMETS/releases\u00a0(Dong, 2018).\n",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "fc361cc2-9436-4486-9e12-5c1e828c8f8e",
+      "submission_id": "7756dddd-8253-484c-948e-7a4cd95e4296",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daniel J Kliebenstein, University of California, Davis United States\n\nReviewers:\n- Vincent Savolainen, Imperial College London United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.45199.sa1](https://doi.org/10.7554/eLife.45199.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Natural selection and repeated genome-wide patterns of molecular evolution following allopatric divergence\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Vincent Savolainen (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, the authors utilize comparative transcriptomics to estimate the role of evolution in singleton conserved genes following major geological events that lead to isolation by distance.\n\nEssential revisions:\n\n1) The utilization of Ka/Ks as a strict threshold to call positive selection across species with different evolutionary histories and separation times was considered potentially suspect and possibly creating some of the main conclusions. Some support for this claim and/or alternative approaches for these comparisons should be provided.\n\n2) The observation by the authors that the relationship between Ka and Ks can invert at lower Ks is at some conflict with the published literature. The reviewers were wondering if this may be a bias in the data or if there are other avenues in the data that also support this. For example, does this trend hold up if individual POGs are followed across time?\n\n3) A much tighter editing in the entire manuscript to reflect the potential bias that is incorporated via the use of POGs. The reviewers understood this choice to allow rate estimation, but it is still a biased set of genes that could be greatly influencing any and all evolutionary conclusions.\n\n4) The figure presentation was not optimal and needs significant work to engage with the reader. I should note that all three reviewers commented on how the present figure presentations will undercut the potential impact of the manuscript.\n\nReviewer #1:\n\nIn this manuscript, the authors work to understand how geographic isolation has influenced genome wide evolution. To do this, they looked at the divergence of single-copy orthologues as these are the most directly comparable. This used transcriptome sequencing to identify the orthologues between species. I have some concerns about the methodology and how this may have influenced the claims and observations in this manuscript. These concerns are such that it is not clear how many of the claims and observations are linked to the use of POGs versus an approximation of the whole selective processes influencing these species.\n\nI worry about the bias that using POGs introduces into the general conclusions derived from this work. POGs are by definition likely under a completely different selective schema than non-POGs. Previously work has shown that POGs are biased towards processes like developmental regulators and primary metabolism that are likely under purifying selection. In contrast, non-POGs are biased towards disease and biotic interaction loci that are potentially under different selective pressures. As such, it is not clear if using POGs provide any ability to discuss evolutionary processes at the species level. Instead, the discussion should be limited to what the POGs have experienced. At the start of the Discussion section, this limitation is implicit in that the discussion is always about the POGs. But then the discussion starts moving to whole genome and entire species level discussions without caveating that the POGs might provide a biased view. I don't think it is possible to use the POGs evolution to make any claims about whole genome events or whole species processes. The POGs are a list that is a priori biased towards genes that are under strong purifying selection and they exclude the majority of genes that may be under diversifying or other non-purifying selection processes. This caveat about what the use of POGs introduces as a selective bias should really be introduced throughout the Discussion section to better clarify what is or is not possible to state.\n\nAdditionally, this final sentence \"Therefore, the divergence time values of the taxon pairs are still meaningful for the analysis of relationships between length of time of isolation and Ks value at peak frequency and between length of time of isolation and abundance of genes under different selection forces.\" illustrates that it is not clear if the authors consider the POGs as introducing a bias. The POGs are useful for estimating relative divergence time but absolute is fuzzier given the bias in selective events linked to POGs. Further, this bias in selective events means that it is only possible to compare selective forces on POGs and not selective forces on the whole genome.\n\nThe use of transcriptomics to sequence genes makes it hard to really ascertain if the identified positive selection is really positive or possibly an artifact of duplication, sub-functionalization and inaccurate POG identification. Some ascertainment of bias the transcriptome introduces above genome sequence identification of POGs would be needed to determine how much technical vs biological signal is present in the positive selection data. There is some effort to address these concerns in the Discussion section however this section is separate from the rest of the discussion so that a reader would have to make it to the end to realize that there are concerns. Are there no existing transcriptome datasets with matched genomes that the authors could use to estimate technical bias in calling POGs?\n\nThere are some weird call outs on Materials and methods that make some aspects hard or impossible to review. For example, in the Results section, the authors state \"(for method of the mapping analysis, see caption of Table 1)\" yet the caption of table 1 has no real information on the mapping analysis approaches.\n\nThe figures in excel are a bit hard to read. This is largely because the use of dots on the lines really eliminates the ability to compare traces (See Figure 3 for an example). The authors should consider using simply color for the lines and possibly moving to a higher resolution figure generator.\n\nReviewer #2:\n\nThe manuscript describes a study examining how 1-to-1 orthologous genes in 20 allopatric species pair diverge after species divergence. Specifically, the authors indicate that it remains an open question \"how genome [have diverged] over time after geographic isolation has halted gene flow\". The major findings include: (1) >90% of genes are under purifying selection, (2) divergence time estimates, which are based on synonymous substitution rates, correlates positively and negatively with proportions of genes under moderate and strong purification selection, respectively, (3) 200 genes under strong positive selection, few are shared across species.\n\nThe authors reasoned that findings (1, 3) may indicate maintenance of a balance between the ability to conserve ancestral functions and the ability to evolve new features beneficial for new adaptations. In some of the earliest cross-species comparative genomics studies in early 2000s, this has been noted. Thus, it is not clear what the significance of this finding is beyond the fact that the specific species have not been examined in this context. The connection between geographic isolation over time and the evolutionary rate of genes \u2013 initially genes are experiencing strong purifying selection, then this selection is relaxed \u2013 is intriguing. But there is one line of evidence supporting this claim, indirectly. I have suggested alternative approach that may be more informative. Below are details on the above points as well as other thoughts on the manuscript.\n\n- Results section: It is too simplistic to use the Ka/Ks value over a threshold to call genes that are under positive selection. Particularly, as the authors pointed out, the species pairs have diverged quite recently where \"most genes\" (define what most means) have Ka < 0.04. The fewer the sites are used to infer substitution rates, the corresponding variances for the estimates will be larger and render the estimates unreliable. Thus, the criteria for calling genes with positive selection needs to be more stringent and the authors need to incorporate considerations of variance of estimates to provide statistical support for their calls. This is a point the authors concur in their discussion. But by just removing extreme values, the underlying issue on the reliability of estimates remain unaddressed.\n\n- Related to the point above, in the Results section, the authors conducted gene set enrichment analysis of potentially positively selected genes. Given I am not convinced that the genes the authors focused on are truly under position selection, I cannot evaluate the results of enrichment analysis.\n\n- Results section, Figure 5: The authors use BEAST to infer divergence time and then try to determine the relationships between inferred divergence time and Ks \u2013 it is not clear what the purpose is as these two estimates are confounding. My understanding is that BEAST uses prior probability based on sequence evolution rate estimates to infer posterior probability of a divergence time estimate. The underlying assumption and considerations for Ks estimation and the evolutionary rate considered as prior in BEAST are similar. So, these two sets of values are dependent. In the, the authors went on and suggest that this pattern \"revealed a repeated genome-wide pattern of divergence of POGs among the taxon pairs in allopatric speciation\u2026\" Given the confounding nature of Ks and divergence time estimate, I am not sure if such conclusion is justified.\n\n- Results section, Figure 6: here is the core finding for the authors' claim on the relationships between divergence time and selection pressure. It is clear that, using these species pairs, the earlier diverging (peak Ks, not sure why the more accurate divergence time estimate not used here) ones tend to have larger proportion of genes under stronger selection. The effect size of the correlation is rather remarkable. One unclear aspect of the analysis is whether the genes examined are the same across species pairs. It was noted that there are few orthologous genes that are 1-to-1 among most species pairs. Thus, it is likely the analysis is done using all available pairs. If that is the case, how should one compare one species pair to another?\n\n- Related to the point above, the patterns based on proportions are difficult to interpret. A direct way to demonstrate the authors' point is by examining the evolution rate of EACH orthologous gene pair and show that a gene experienced stronger purifying selection initially than later on the selection was relaxed. Since this is central to the authors' major point, this should be demonstrated. In addition to potentially providing support for the authors' claim, it will provide some resolution to the study in which genes contribute to the patterns, particularly if the authors follow up with gene set enrichment analysis on those exhibit the expected patterns.\n\n- Discussion section: The authors discussed a few of the caveats in the study which is helpful. Aside from the point on rate estimate raised earlier, I am not sure that I agree with the authors' assertion that \"the likelihood of non-orthology of these genes is probably very low\u2026\" using transcriptome-based inference. The arguments are not supported by quantitative information and is hand-wavy. It will be useful to bring in comparative genomic studies as reference points. Otherwise, it remains a potential thorny issue in their methodology.\n\nReviewer #3:\n\nThe paper looks at the evolution of genes in pairs of species that have been isolated geographically. To do so, the authors selected 20 pairs that have a South East Asia versus North America disjunction and calculated the ratio of nonsynonymous versus synonymous substitutions across their transcriptomes. This is a clever approach. Strikingly, they found some sort of constancy in the results, with that >90% of the genes examined being under purifying selection and <10% being under positive selection. This is what we would expect, but it is a nice way to show it, using comparative analyses and large datasets. I would think people have looked at this in model organisms (mice, humans), but not throughout wild plant species. I think it would definitely make a great contribution to eLife, although I think the author could make more of a general point by adding other pairs of taxa, such as those from a North to South America disjunction, or South America versus Africa disjunction, or maybe even using species that have colonised island versus mainland sisters. I think the text could be made clearer to the readers, e.g. explaining, what is the expectation of Ka/Ks ratio under positive or purifying selection (I would also use Kn rather than Ka for nonsynonymous substitutions). I noted there are some custom scripts used here, have they been made available as supplementary information or in a public repository? For the dating exercise, did I understand correctly that the tree was built and dated with BEAST using 7 POGs shared by all taxa, and then the dates were plotted against Ks for the other genes to avoid circularity? Finally, I think the figures could be made much nicer (artwork); there are also many inconsistencies in the reference section; but I would recommend acceptance pending concerns above have been taken into account.\n",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b09a8fa6-5a4e-46dd-ae85-f603c0335b89",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C1",
+      "claim": "The forests of eastern Asia (EA) and eastern North America (ENA) share 65 genera of seed plants with closely related species occurring in the two areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The forests of eastern Asia (EA) and eastern North America (ENA) share 65 genera of seed plants with closely related species occurring in the two areas (Li, 1952; Boufford and Spongberg, 1983; Wu, 1983; Wen, 1999; Wen et al., 2010; Wen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature documenting the EA-ENA floristic disjunction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "ec5e4db8-9b9b-4744-a314-7c1e6e24a8b4",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C2",
+      "claim": "The EA-ENA floristic disjunction is a major phytogeographic pattern of the Northern Hemisphere and has been known since the time of Linnaeus.",
+      "claim_type": "EXPLICIT",
+      "source": "This well-known floristic disjunction is a major phytogeographic pattern of the Northern Hemisphere and has been known since the time of Linnaeus (Wen, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature and represents established knowledge in biogeography.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "61dbdca0-d174-4d25-823d-09b375531eca",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C3",
+      "claim": "The divergence times of disjunct sister species in EA and ENA varied greatly from the Miocene to the Pleistocene or even more recently (15 mya to <2.0 mya).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous analyses using mainly plastid and internal transcribed spacer (ITS) DNA sequence markers revealed that the divergence times of disjunct sister species in EA and ENA varied greatly from the Miocene to the Pleistocene or even more recently (15 mya to <2.0 mya), although some disjunct clades in the two areas diverged earlier (Xiang et al., 2000; Wen, 2001; Milne and Abbott, 2002; Donoghue and Smith, 2004; Harris et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies that estimated divergence times.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "c5e1a5c3-6bef-48d7-9b52-8a46e470bb06",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C4",
+      "claim": "In each of the 20 taxon pairs, more than 90% of POGs are under purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In all pairs, the ratios at peak frequencies are highly similar and more than 90% of the genes are overall under purifying selection (referred to as purifying selection in short) based on their average Ka/Ks ratios < 0.9 across all sites within the genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the Ka/Ks ratio data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "71151e2e-9290-43d2-9993-bbf123e2612a",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C5",
+      "claim": "Less than 10% of POGs are under positive selection in each taxon pair.",
+      "claim_type": "EXPLICIT",
+      "source": "another small proportion, from 3.1% (in Gelsemium) to 8.8% (in Nelumbo), is under putative positive selection based on values of Ka/Ks ratios greater than 1.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the Ka/Ks ratio data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "3d9da3e3-2eae-4cac-b781-24068f46ce6d",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C6",
+      "claim": "A very small proportion of POGs (0.6% to 2.0%) is under putative strong positive selection with Ka/Ks ratios ranging from 2 to 7 and rarely to 17.",
+      "claim_type": "EXPLICIT",
+      "source": "A very small proportion, from 0.6% (in Gelsemium) to 2.0% (in Nelumbo), is under putative strong positive selection with Ka/Ks ratios ranging from 2 to 7 and rarely to 17 (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ka/Ks ratio data and Figure 3 showing the distribution of Ka/Ks values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "bcceafe0-1327-4556-8689-c5b1963ec4c0",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C7",
+      "claim": "Fourteen GO terms annotated to biological processes responding to various stimuli are shared by 10-15 taxon pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, 12 were shared by 10\u201315 taxon pairs. These 12 genes were annotated to the nucleus, protein complex, hydrolase activity, zinc ion binding, RNA binding, ATP binding, structural constituent of ribosome, oxidoreductase activity, cellular protein modification process, translation, single-organism biosynthetic process, and oxidation-reduction process (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO annotation analysis results presented in the manuscript and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "53890e8b-7118-4f37-bfa0-af62fe98109b",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C8",
+      "claim": "One GO term (integral component of membrane) is shared by all 20 taxon pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "A single GO term is shared by all 20 taxon pairs and is annotated to integral component of membrane (ICM) in the CC category (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO annotation analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "27f2ebb2-c587-4066-9de1-992d247f193c",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C9",
+      "claim": "Species divergence times are positively correlated with abundance of POGs under moderate purifying selection (0.1 < Ka/Ks < 0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "The divergence times of taxon pairs are also positively correlated with the abundance of genes under moderate purifying selection (0.1 < Ka/Ks <0.5; r = 0.73; p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of divergence time and Ka/Ks data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "156ee066-59ea-4253-9577-5c347a40ea13",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C10",
+      "claim": "Species divergence times are negatively correlated with abundance of POGs under strong purifying selection (Ka/Ks < 0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "negatively correlated with the abundance of genes under strong purifying selection (Ka/Ks <0.1; r = - 0.64; p<0.009; Figure 5; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of divergence time and Ka/Ks data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "5b47e916-e86a-4be6-b1ba-c72e673d7fc1",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C11",
+      "claim": "The number of POGs in the leaf transcriptomes of the 20 biogeographic taxon pairs varies from 8596 to 15161.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of POGs in the leaf transcriptomes of the 20 biogeographic taxon pairs varies from 8596 to 15161 (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "4bb6f7dd-4367-467a-8806-d67a59ae0f0c",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C12",
+      "claim": "Among the POGs, 2241 are shared by over 50% of the taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these POGs, 2241 are shared by over 50% of the taxa, 333 are shared by over 80% of the taxa, 79 are shared by over 90% of the taxa, and seven are shared by all of the taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of shared POGs across taxa.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "1b09d31a-7c36-49a1-b6da-715742d88611",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C13",
+      "claim": "Most POGs exhibit low divergence, with synonymous substitution (Ks) values less than 0.1 and nonsynonymous substitution values (Ka) less than 0.04.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these genes exhibit low divergence, with synonymous substitution (Ks) values less than 0.1 and nonsynonymous substitution values (Ka) less than 0.04.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ks and Ka values calculated for POGs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "3bc7b4db-52a9-40c2-bb32-0128ec392faa",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C14",
+      "claim": "Less than 1% of the genes exhibit greater divergence with Ks values greater than 0.15 and Ka values greater than 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Less than 1% of the genes exhibit greater divergence with Ks values greater than 0.15 (Figure 1) and Ka values greater than 0.05 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ks and Ka data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "47649c03-b473-4997-91bc-8e4f5833c03f",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C15",
+      "claim": "The Ks values at peak frequency range among the taxon pairs from <0.01 to <0.06.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ks values at peak frequency when plotted in intervals of 0.01 range among the taxon pairs from <0.01 to<0.06 (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ks distribution data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "eaacfd4d-195f-45f6-a961-0b2abfc62385",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C16",
+      "claim": "In Convallaria, Liriodendron, Cotinus, Menispermum, and Campsis, the Ks values at peak frequency are less than 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "In Convallaria, Liriodendron, Cotinus, Menispermum, and Campsis, the Ks values at peak frequency are less than 0.01",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ks data for specific genera.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "ae43566b-806f-4bdb-a4cb-a0293f4b442f",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C17",
+      "claim": "In Cornus-2, Dysosma, Nelumbo, Penthorum, and Sassafras, the Ks values at peak frequency are between 0.01 and 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "while in Cornus-2, Dysosma, Nelumbo, Penthorum, and Sassafras, they are between 0.01 and 0.02.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ks data for specific genera.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "9c180ce5-17d8-4c64-a2fc-58f124083a36",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C18",
+      "claim": "The largest Ks values at peak frequency are observed in Acorus and Gelsemium, between 0.05 and 0.06.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest values are observed in Acorus and Gelsemium, between 0.05 and 0.06 (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ks data for specific genera.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "8924ee90-6443-4658-814e-da23dd0f6533",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C19",
+      "claim": "A portion of the POGs (53-237 among the genera) were aligned to putative single-copy or low-copy genes shared by seed plants.",
+      "claim_type": "EXPLICIT",
+      "source": "A portion of the POGs, 53\u2013237 among the genera, were aligned to putative single-copy or low-copy genes shared by seed plants (Li et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mapping analysis results comparing POGs to known single-copy genes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "55371fa2-8092-4c08-b02f-76cf274d6d9b",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C20",
+      "claim": "75-365 POGs were mapped to strict single-copy genes shared by 20 angiosperm genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "and 75\u2013365 were mapped to strict single-copy genes shared by 20 angiosperm genomes (De Smet et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mapping analysis results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "65c67304-dea2-4bde-8db5-0c102248b1db",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C21",
+      "claim": "Nelumbo has 87.6% of the genes with Ka/Ks ratios < 0.9.",
+      "claim_type": "EXPLICIT",
+      "source": "The exception was Nelumbo, which has 87.6% of the genes with Ka/Ks ratios < 0.9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ka/Ks ratio data for Nelumbo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "ea01c99a-0384-40aa-9a07-367f07c4d9bb",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C22",
+      "claim": "Gelsemium has the greatest proportion of genes under purifying selection with 94.9% of the genes with Ka/Ks ratios < 0.9.",
+      "claim_type": "EXPLICIT",
+      "source": "The greatest proportion of genes under purifying selection was observed in Gelsemium, which had 94.9% of the genes with Ka/Ks ratios < 0.9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ka/Ks ratio data for Gelsemium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "34e104b4-aa5e-449e-885f-9c63ae70c52d",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C23",
+      "claim": "A very small proportion of POGs (1.6% in Acorus to 3.7% in Nelumbo) is evolving nearly neutrally with Ka/Ks ratios in the range of 0.9-1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "A very small proportion, from 1.6% (in Acorus) to 3.7% (in Nelumbo), is evolving nearly neutrally with Ka/Ks ratios in the range of 0.9\u20131.1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ka/Ks ratio data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "5d92f224-122d-4b21-b516-5203868df42f",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C24",
+      "claim": "Among the taxon pairs, 41% (in Convallaria) to 68% (in Gelsemium) of the POGs fall into the category of moderate purifying selection (0.1 < Ka/Ks < 0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the taxon pairs, we observed 41% (in Convallaria) to 68% (in Gelsemium) of the POGs fall into the category of moderate purifying selection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ka/Ks ratio data categorized by selection intensity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "cb6432fb-e994-483e-a8e5-aed5dd9ed50a",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C25",
+      "claim": "11% (in Gelsemium) to 36% (in Convallaria) of POGs fall into the category of strong purifying selection (Ka/Ks < 0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "11% (in Gelsemium) to 36% (in Convallaria) fall into the category of strong purifying selection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ka/Ks ratio data categorized by selection intensity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "973fb25e-f718-47c5-ab1c-d45ccf593bc8",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C26",
+      "claim": "9.7% (in Acorus) to 19.5% (in Nelumbo) of POGs fall into the category of relaxed purifying selection (0.5 < Ka/Ks < 0.9).",
+      "claim_type": "EXPLICIT",
+      "source": "while 9.7% (in Acorus) to 19.5% (in Nelumbo) fall into the category of relaxed purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Ka/Ks ratio data categorized by selection intensity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "9c3b7c4a-c1cb-49e4-98ab-8ea83b693721",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C27",
+      "claim": "In all taxon pairs, the relative abundance of POGs under different categories of selection pressures follows the same order: moderate purifying selection > strong purifying selection > relaxed purifying selection > weak/moderate positive selection > putatively neutral > strong positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In all taxon pairs, the relative abundance of POGs under the different categories of selection pressures follows the same order, from high to low, as moderate purifying selection, strong purifying selection, relaxed purifying selection, weak/moderate positive selection, putatively neutral, and strong positive selection (Figure 4; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4 and Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "c467ddb3-6a79-4671-ab8c-a79ee36f9cbe",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C28",
+      "claim": "Phylogenetic analyses using the seven POGs shared by all taxa recovered relationships congruent with the APG IV summary phylogeny and classification.",
+      "claim_type": "EXPLICIT",
+      "source": "The results recovered the relationships of the 20 lineages congruent with the APG IV summary phylogeny and classification (The Angiosperm Phylogeny Group, 2016) (Figure 5; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phylogenetic analysis results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "b150263b-0efa-41f3-bf35-970798413a19",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C29",
+      "claim": "The estimated divergence times suggest that isolation of the species pairs occurred in an interval between the late Miocene and Pleistocene (~10.67 \u2013~1.69 mya).",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated divergence times suggested that isolation of the species pairs occurred in an interval between the late Miocene and Pleistocene (~10.67 \u2013~1.69 mya; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by divergence time estimation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "4a9b4f16-3999-42fc-8198-93a2b9bcbb4c",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C30",
+      "claim": "Species divergence time is positively correlated with the Ks value at peak frequency across taxon pairs (r = 0.8034; p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Species divergence time was positively correlated with the Ks value at peak frequency across taxon pairs (Figure 5; r = 0.8034; p<0.001; for values used for the correlation analysis, see Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "0147657a-91ab-4acb-af07-b7ff5885f32c",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C31",
+      "claim": "The Ks values at peak frequency are positively correlated with the abundance of genes under moderate purifying selection (0.1 < Ka/Ks <0.5; r = 0.9324; p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "the Ks values at peak frequency of the taxon pairs are: (1) positively correlated with the abundance of genes under moderate purifying selection (0.1 < Ka/Ks <0.5; r = 0.9324; p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of Ks and gene abundance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "993833db-51aa-4a95-9999-8b6970fe12ed",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C32",
+      "claim": "The Ks values at peak frequency are negatively correlated with the abundance of genes under putative positive selection (Ka/Ks >=1.0, r = -0.5344; p=0.015).",
+      "claim_type": "EXPLICIT",
+      "source": "(2) negatively correlated with the abundance of genes under putative positive selection (Ka/Ks >=1.0, r = - 0.5344; p=0.015; 1.1 <= Ka/Ks <2, r = - 0.62; p=0.004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of Ks and gene abundance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "9765dbf5-d20e-449a-8542-39d846c0f82c",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C33",
+      "claim": "The Ks values at peak frequency are negatively correlated with the abundance of genes under putative strong purifying selection (Ka/Ks <0.1; r = -0.7940; p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "and (3) negatively correlated with the abundance of genes under putative strong purifying selection (Ka/Ks <0.1; r = - 0.7940; p<0.001) (Figure 6; Supplementary file 3, Supplementary file 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "96964515-668f-4ec2-8ae6-5ad5690989ed",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C34",
+      "claim": "The number of genes under strong positive selection (Ka/Ks >2) varies among the taxon pairs from 72 (in Campsis) to 184 (in Nelumbo).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of genes under strong positive selection (Ka/Ks >2) varies among the taxon pairs from 72 (in Campsis) to 184 (in Nelumbo) (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "c3a764c9-e514-464c-bc79-2a512910225c",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C35",
+      "claim": "In each taxon pair, approximately half of the genes under strong positive selection have GO annotations.",
+      "claim_type": "EXPLICIT",
+      "source": "In each pair, approximately half of these genes have GO annotations (Table 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GO annotation results shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "e3587ea2-46bc-458f-87d9-14dcb0dd06c7",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C36",
+      "claim": "The GO annotations of genes under strong positive selection mapped to a total of 223 GO terms, varying from 21 (in Cornus-2) to 46 (in Convallaria) in each taxon pair.",
+      "claim_type": "EXPLICIT",
+      "source": "that, in combination among all pairs, mapped to a total of 223 GO terms, varying from 21 (in Cornus-2) to 46 (in Convallaria) in each taxon pair (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO annotation analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "82550c79-ce03-43c1-b77d-eda035734936",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C37",
+      "claim": "44.8% (100/223) of the GO terms are unique to a single lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these GO terms are unique to a single lineage (100/223 = 44.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO annotation analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "46929240-1033-451f-9263-cd92e6d69ab8",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C38",
+      "claim": "A majority (59) of the lineage-specific GO terms belongs to the Biological Process (BP) categorization.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority (59) of these lineage-specific GO terms belongs to the Biological Process (BP) categorization, while 23 belong to the Molecular Function (MF) ontology, and 16 belong to the Cell Components (CC) ontology (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO annotation categorization results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "49356e0c-dcff-426e-a599-33577b472192",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C39",
+      "claim": "Fourteen of the BP GO terms were annotated to responses to various stimuli and were distributed among 11 taxon pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourteen of the BP GO terms were annotated to responses to various stimuli (biotic or abiotic, external or internal stimuli), defense response, immune process, or signal transduction and were distributed among 11 taxon pairs, with each term was present in 1\u20133 pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO annotation analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "f5926078-e41e-4661-ae68-7156948d9374",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C40",
+      "claim": "124 of the 223 GO terms (55.2%) are shared by two or more of the 20 taxon pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "In all, 124 of the 223 GO terms (55.2%) are shared by two or more of the 20 taxon pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO annotation analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "f306d3e4-e41a-421a-a4f9-27f8bb192ecd",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C41",
+      "claim": "Within the CC category, all pairs have the greatest proportion annotated to integral component of membrane (ICM).",
+      "claim_type": "EXPLICIT",
+      "source": "However, within the CC category, all pairs have the greatest proportion annotated to ICM (Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GO annotation data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "01206d2a-bcf9-4824-8a34-21ce0df841a3",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C42",
+      "claim": "Most genes with Ka/Ks > 2 (>57% in all taxon pairs, >70% in 15 pairs) were also under positive selection according to the variation cluster method.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of the Ka/Ks > 2 genes using the variation cluster method (Wagner, 2007) showed most of them (>57% in all taxon pairs, >70% in 15 pairs) were also under positive selection (indicated by significant p value for test of clustered nucleotide substitutions) (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by variation cluster analysis results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "2f554e45-29b5-4a66-8381-aadb4100e129",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C43",
+      "claim": "The molecular divergence in the POGs is generally low after geographic speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern we observed indicates that in each of the taxon pair, including the 16 EA-ENA pairs, most of the genes show shallow divergence or evolve slowly at a similar rate, while a small proportion of the genes evolve faster. This suggests that the molecular divergence in the POGs is generally low after geographic speciation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observed patterns of Ks, Ka, and Ka/Ks values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "a1810813-d551-4db6-b7fa-d387fd1cf683",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C44",
+      "claim": "The peak frequency range of Ks, Ka, and Ka/Ks values revealed substantial differences in the magnitudes among genera, indicating that the taxon pairs have diverged to different extents.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak frequency range of Ks, Ka, and Ka/Ks values revealed substantial differences in the magnitudes among genera, indicating that the taxon pairs have diverged to different extents, likely reflecting their relative timing of divergence and/or varying selection pressures among different genera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the variation in peak frequency values across genera.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "77d6e3b7-0b12-42da-965d-ec280c1285ca",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C45",
+      "claim": "The major pattern of divergence revealed by analyses of many nuclear genes for the 16 EA-ENA disjunct taxon pairs is consistent with previous studies based on ITS and/or a few plastid gene sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The major pattern of divergence revealed here by analyses of many nuclear genes for the 16 EA-ENA disjunct taxon pairs is consistent with the previous mega-synthesis of studies of individual lineages that were largely based on ITS and/or a few plastid gene sequences or non-coding markers (Donoghue and Smith, 2004; Wen et al., 2010; Harris et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares current results with previous studies cited in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "3e4f9b47-64b5-4cbf-9282-0cb3c650e561",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C46",
+      "claim": "The divergence times estimated for the EA-NA disjunct pairs support the importance of a geographical connection through the Bering Land Bridge (BLB) and perhaps also long-distance dispersal (LDD) to explain a part of the EA-ENA floristic similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The divergence times estimated for the EA-NA (ENA, WNA, or NA) disjunct pairs in this study support the importance of a geographical connection through the Bering Land Bridge (BLB) and perhaps also long-distance dispersal (LDD) to explain a part of the EA-ENA floristic similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the divergence time estimates and geological evidence about the BLB.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "9e230ec1-9d2e-404b-9ebb-20ca93304b00",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C47",
+      "claim": "The Bering Land Bridge was available as a floristic connection throughout most of the Paleogene and Neogene and closed for the potential migration of terrestrial organisms between 7.4 and 4.8 mya.",
+      "claim_type": "EXPLICIT",
+      "source": "Geological evidence indicates that the BLB was available as a floristic connection throughout most of the Paleogene and Neogene and closed for the potential migration of terrestrial organisms between 7.4 and 4.8 mya (Marincovich and Gladenkov, 1999; Graham, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to geological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "c83f4cef-df11-48df-b355-b3c4356911e2",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C48",
+      "claim": "The North Atlantic Land Bridge (NALB) broke up in the early Eocene.",
+      "claim_type": "EXPLICIT",
+      "source": "while the North Atlantic Land Bridge (NALB) broke up in the early Eocene (Marincovich et al., 1990; Tiffney, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to geological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "558428cf-4e6e-4b30-bf6c-1ba82cac3498",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C49",
+      "claim": "A repeated pattern of divergence of POGs is observed among the taxon pairs in allopatric speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses also revealed a repeated pattern of divergence of POGs among the taxon pairs in allopatric speciation. That is, we observed the same order of relative abundance of POGs under various selection pressures (Figure 4), disregarding the relative timing of species isolation",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the consistent pattern shown in Figure 4 across all taxon pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "6285f766-f0fa-4c5b-9b56-48bff1741351",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C50",
+      "claim": "Most of the molecular evolution (or DNA substitution) in the POGs was neutral (or synonymous).",
+      "claim_type": "EXPLICIT",
+      "source": "The observed pattern further suggests that most of the molecular evolution (or DNA substitution) in the POGs was neutral (or synonymous).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that most POGs are under purifying selection with excess synonymous substitutions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "4bf9e6b0-d24a-455a-9ff7-4d409d869582",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C51",
+      "claim": "The deciduous forests in eastern Asia and eastern North America are situated at similar latitudes and may have similar regional climatic and ecological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The deciduous forests in eastern Asia and eastern North America are situated at similar latitudes, and both China and the United States have an eastern coast line; thus, they may have similar regional climatic and ecological conditions (E. Ricklefs et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and represents established knowledge about the geographic and climatic similarities.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "30d9b177-67a7-4eb6-8dab-414394c37193",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C52",
+      "claim": "There are presumably low divergence pressures for gene functional evolution in eastern Asia and eastern North America.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, there are presumably low divergence pressures for gene functional evolution in the two areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the similar climatic and ecological conditions between EA and ENA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "ff4018c7-60f5-44fc-a651-e383f68c8bda",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C53",
+      "claim": "Most genes are expected to evolve slowly under purifying selection to conserve ancestral functions.",
+      "claim_type": "EXPLICIT",
+      "source": "One would therefore expect most genes to evolve slowly under purifying selection to conserve ancestral functions and the observed excess synonymous substitutions (in comparison to non-synonymou substitutions) in these genes were results of elimination of nonsynonymous substitutions by natural selection while the neutral synonymous substitutions were fixed by genetic drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents a theoretical expectation based on evolutionary theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "d90344d5-5221-448a-9f88-9e85e3b98bc4",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C54",
+      "claim": "Differences in micro-abiotic and biotic environments between eastern Asia and eastern North America could have driven diversifying evolution of some genes for local adaptation, speciation, and subsequent divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, although eastern Asia and eastern North America share similarities in general climate, there must be differences in micro-abiotic and biotic environments between the two regions which could have driven diversifying evolution of some genes in the sister lineages for local adaptation, speciation, and subsequent divergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis inferred from the observation of genes under positive selection and environmental differences.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "e77c6e5a-a802-4abd-8c88-bb6af5d2ce48",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C55",
+      "claim": "The conserved order of gene abundance observed in all taxon pairs may be essential to maintaining a balance between the ability to preserve the ancestral biological system and the ability to evolve new features that are beneficial for new adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved order of gene abundance, as observed in all taxon pairs in this study, may be essential to maintaining a balance between the ability to preserve the ancestral biological system and the ability to evolve new features that are beneficial for new adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis inferred from the observed pattern of gene abundance.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "799ec944-d33e-4821-9e5a-a6113b067cbf",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C56",
+      "claim": "The repeated pattern of variation of relative abundance of POGs under different selection pressures among taxa may represent a genomic 'rule' for allopatric speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "The repeated pattern of variation of relative abundance of POGs under different selection pressures among taxa may represent a genomic 'rule' that can be tested by examining all gene families in the transcriptomes or genomes of the studied taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis proposed based on the observed repeated pattern.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "bf8c6a10-b4d0-4b5d-a7d9-16f58aedf7c9",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C57",
+      "claim": "Molecular evolution in the allopatric taxa is mostly neutral involving mostly silent nucleotide substitutions in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "It is allied with a hypothesis that molecular evolution in the allopatric taxa is mostly neutral involving mostly silent nucleotide substitutions in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on the observed patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "f014dc43-3f8b-4c06-a0fc-b496b36e2999",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C58",
+      "claim": "As geographic isolation or divergence proceeded in time, the purifying selection pressures of some genes may have shifted from high intensity during early geographic isolation to lower intensity at the later stage of isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation of the length of time of species isolation is positively correlated with the abundance of genes under moderate pressure of purifying selection (0.1 < Ka/Ks < 0.5), but negatively correlated with the abundance of genes under strong pressure of purifying selection (Ka/Ks < 0.1) (Figure 5; Figure 6), suggests that as geographic isolation or divergence proceeded in time (within the time window of divergence of the species pairs studied), the purifying selection pressures of some genes may have shifted from high intensity during early geographic isolation to lower intensity at the later stage of isolation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the correlation patterns observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "78e521ae-781d-4508-808c-1c1d329edfb3",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C59",
+      "claim": "The shift in purifying selection intensity might be attributed to changes of evolutionary trajectories of the gene at some sites where replacement substitutions are favored for modification of the ancestral functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The shift might be attributed to changes of evolutionary trajectories of the gene at some sites where replacement substitutions are favored for modification of the ancestral functions leading to relevant morphological/ecological divergence between the species pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the observed shift in selection intensity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "ca3c659b-c1b7-4283-80c6-b122ff234d74",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C60",
+      "claim": "A relaxed purifying selection intensity of some genes could be simply a result of accumulation of slightly deleterious nonsynonymous substitutions rather than adaptive evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, a relaxed purifying selection intensity of some genes could be simply a result of accumulation of slightly deleterious nonsynonymous substitutions rather than adaptive evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative hypothesis proposed to explain the observed pattern.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "a35e4f20-40c7-4195-afe4-d4221cce8e25",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C62",
+      "claim": "As time of isolation proceeded, pressure of positive selection for some genes might have also relaxed to lower Ka/Ks values due to accumulation of mutations at synonymous sites in the genes.",
+      "claim_type": "EXPLICIT",
+      "source": "An observation of a weak negative relationship between Ks peak values and abundance of genes under positive selection pressure (Ka/Ks > 1; Figure 6) in our study also suggests that as time of isolation proceeded, pressure of positive selection for some genes might have also relaxed to a lower Ka/Ks values due to accumulation of mutations at synonymous sites in the genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observed negative correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "3340a989-11d1-40ef-b3ca-4f894734c3c0",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C63",
+      "claim": "Eight of the 79 POGs shared by 90% or more taxa had a correlation between Ka/Ks values and divergence times at r > 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple scattered plot in excel for the divergence times and the Ka/Ks values (with Ka/Ks values = 0, 99 removed) of the 79 POGs shared by 90% or more taxa revealed that eight of these genes had a correlation at r > 0.5, among which two correlations were positive and six were negative (Supplementary file 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of specific genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "71f7e977-250b-4c28-a7d2-1979a3713045",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C64",
+      "claim": "The Ka/Ks ratios of POGs that showed a correlation with times were all smaller than 1.0 (all <0.5 except for a couple of cases).",
+      "claim_type": "EXPLICIT",
+      "source": "The Ka/Ks ratios of POGs that showed a correlation with times were all smaller than 1.0 (all <0.5 except for a couple of cases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by examination of Ka/Ks values in genes showing correlation with time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "4c305dc8-94f4-41c1-b48c-7fd0b887ee48",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C65",
+      "claim": "Some genes may have shifted the pressure of purifying selection (intensified or relaxed) during the evolutionary divergence of the taxon pair.",
+      "claim_type": "EXPLICIT",
+      "source": "These data provide another line of indirect evidence congruent with the hypothesis that some genes may have indeed shifted the pressure of purifying selection (intensified or relaxed) during the evolutionary divergence of the taxon pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the correlation patterns observed in specific genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "e8a43f1f-11b7-4e84-9162-88b8d9ddc167",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C66",
+      "claim": "The presence and elimination of slightly deleterious nonsynonymous substitutions play a major role in the changes of Ka/Ks ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests, perhaps, the presence and elimination of slightly deleterious nonsynonymous substitutions play a major role in the changes of Ka/Ks ratios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the analysis of genes with Ka/Ks < 0.5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "ffef8339-54ce-4323-941d-92abceb7cadc",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C67",
+      "claim": "The evolutionary fate of most of the 79 POGs is more taxon-specific independent of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Lack of correlation between Ka/Ks ratios and time for most of the 79 POGs also suggests that the evolutionary fate of most of these POGs is more taxon-specific independent of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the lack of correlation in most genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "2f6b7e83-ed14-4983-b9c7-8243416d2ac4",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C69",
+      "claim": "The aquatic eudicot Nelumbo has the largest proportion of its POGs under positive selection and the smallest proportion of POGs under purifying selection among the 20 lineages examined.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, among the 20 lineages we examined, the aquatic eudicot Nelumbo has the largest proportion of its POGs under positive selection and the smallest proportion of POGs under purifying selection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of Ka/Ks data across all lineages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "759ab692-f95a-4447-abbd-db5e9a196972",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C70",
+      "claim": "The terrestrial twining vine Gelsemium has the smallest proportion of POGs under positive selection and the largest proportion under purifying selection among the 20 lineages examined.",
+      "claim_type": "EXPLICIT",
+      "source": "while the reverse is found in the terrestrial twining vine Gelsemium, a member of the asterid clade Gentianales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of Ka/Ks data across all lineages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "d24cc4b2-412f-4ad3-acc0-1d65a228d9f4",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C71",
+      "claim": "The two species of Nelumbo differ in four features of their reproductive structures, including tepal color and persistence, receptacle color, and fruit shape.",
+      "claim_type": "EXPLICIT",
+      "source": "The two species of Nelumbo, N. nucifera (EA) and N. lutea (ENA), differ in four features of their reproductive structures, including tepal color and persistence, receptacle color, and fruit shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents morphological observations of Nelumbo species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "552a7020-5120-4567-bab8-0666f085094e",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C72",
+      "claim": "In Gelsemium, 12 morphological characters in reproductive structures and two vegetative structures differ between the two disjunct species.",
+      "claim_type": "EXPLICIT",
+      "source": "In Gelsemium, 12 morphological characters in reproductive structures (including inflorescence size, floral shape/size, fruit and seed morphology, etc.; see list in Wyatt et al., 1993) and two vegetative structures (petiole length and leaf shape) differ between the two disjunct species (Wyatt et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study documenting morphological differences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "a7c7feac-57a1-4ea5-a6c1-22e22505ee7c",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C73",
+      "claim": "Possible ecological/environmental pressures or selection agents that differ between the growing habitats of the taxon pairs in EA and ENA or other areas may have driven the extent of divergence in these genera.",
+      "claim_type": "EXPLICIT",
+      "source": "The GO terms of these genes (Supplementary file 5) support that possible ecological/environmental pressures or selection agents that differ between the growing habitats of the taxon pairs in EA and ENA or other areas may have driven the extent of divergence in these genera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the GO terms associated with positively selected genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "5962d639-5c91-4857-a59d-d8000c89fc9f",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C74",
+      "claim": "Positive selection genes (Ka/Ks > 2) with GO terms are enriched for immunity/stimuli responses.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the positive selection genes (Ka/Ks > 2) with GO terms in our study are enriched for immunity/stimuli responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO annotation analysis of positively selected genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "e2ebecbd-d92e-4774-b46a-f50055a812a6",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C75",
+      "claim": "Positive selection genes in mammals are enriched for a wide variety of functions related to immunity and defense.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar case is also found in positive selection genes in mammals which were enriched for a wide variety of functions related to immunity and defense (Kosiol et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study on mammalian genomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "18bdff70-261d-43f3-b81e-7dbac2cc4e66",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C76",
+      "claim": "A potential common regional force acting on the studied taxa resulted in the adaptive evolution of ICM genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This also suggests that a potential common regional force acting on these taxa resulted in the adaptive evolution of ICM genes, which may be involved in some of the common biological processes, such as signaling associated with host-microbe interactions and responses to various stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that ICM is the only GO term shared by all taxon pairs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "b93645ce-6e90-4f48-b49a-2df6ac1855c8",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C77",
+      "claim": "Natural selection tends to target a set of available genes in repeated patterns of genomic divergence associated with species formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have revealed repeated patterns of genomic divergence associated with species formation (Pereira et al., 2016). Such patterns was considered as evidence suggesting that natural selection tends to target a set of available genes (Pereira et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "21e2b9a7-5375-45c2-8664-04b25cb10957",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C78",
+      "claim": "A set of genes was targeted for strong positive selection in each taxon pair, suggesting that these genes may play a role for the allopatric divergence of the studied taxon pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study found a set of genes was targeted for strong positive selection in each taxon pair, suggesting that these genes may play a role for the allopatric divergence of the studied taxon pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the identification of positively selected genes in each pair.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "6ad579f3-3cb4-47fe-9490-a60604256248",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C79",
+      "claim": "OrthoMCL is known to perform reasonably well in identifying orthologous genes.",
+      "claim_type": "EXPLICIT",
+      "source": "OrthoMCL is known to perform reasonably well in identifying orthologous genes (Chen et al., 2007; Altenhoff and Dessimoz, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies evaluating OrthoMCL performance.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "9df31077-53f3-4bf5-9779-d8f38cb83cfa",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C80",
+      "claim": "Phylogenetic analyses of the seven POGs shared among the 20 taxon pairs showed all taxon pairs were grouped as sister taxa in each of the gene trees.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted phylogenetic analyses of the seven POGs shared among the 20 taxon pairs and 79 POGs shared by >90% taxon pairs, respectively, using raxml. The results showed all taxon pairs were grouped as sister taxa in each of the gene trees, in accordance with the expectation that the sequence pairs are orthologous genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "b4402e96-74b4-4f05-977b-73356f4493d6",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C81",
+      "claim": "Most of the genes (except a few) with Ka/Ks > 2 had Ks > 0.005.",
+      "claim_type": "EXPLICIT",
+      "source": "In our data, most of the genes (except a few) with Ka/Ks > 2 had Ks > 0.005 (Supplementary file 12).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by examination of Ks values in genes with high Ka/Ks ratios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "9ab4b109-71a2-48db-b4cb-115e6f1f9d16",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C82",
+      "claim": "The genes with Ka/Ks > 2 have a range of Ks values from small to large in all taxon pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our plots of the Ks vs. Ka/Ks values in each taxon pair show that the genes with Ka/Ks > 2 have a range of Ks values from small to large in all taxon pairs (Appendix 1\u2014figures 3\u201322)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by plots shown in Appendix 1 figures 3-22.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "b85e4b1a-a721-473c-94e7-ea997056fffc",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C83",
+      "claim": "The divergence times of each taxon pair calculated using BEAST and the global phylogeny may be somewhat underestimated due to sparse sampling of a deep phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "We also recognize that the divergence times of each taxon pair calculated using BEAST (Drummond and Rambaut, 2007) and the global phylogeny including all 20 pairs may be somewhat underestimated due to sparse sampling of a deep phylogeny containing both very long and short branches and few calibrations only at deep nodes (see Methods and Xiang et al., 2011) that may fall beyond the smoothing capability of BEAST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges a potential limitation in the divergence time estimation method.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "ead6eb77-7321-4d4a-9c77-1d9cac5cc8eb",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C84",
+      "claim": "The divergence time results are very similar to previous estimates based on rbcL sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the results are very similar to previous estimates based on rbcL sequences (Xiang et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares current results with previous estimates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "d394f309-64b7-4d6e-b812-6caeb9ae480d",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C85",
+      "claim": "The relative order of divergence of the species pairs estimated in this study is expected to be consistent despite possible bias in absolute divergence times.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the possible bias, the influence may be similar across the tree and does not renter their suitability for correlation analyses conducted in the study because the relative order of divergence of the species pairs estimated here is expected to be consistent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on reasoning about the nature of potential bias in divergence time estimation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "1d86ad00-aa50-46e9-9bdc-791bd6a7d9cb",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C86",
+      "claim": "The POGs examined in this study represented 52-68% of the total orthologous gene families in the transcriptome data.",
+      "claim_type": "EXPLICIT",
+      "source": "The POGs examined in this study represented 52\u201368% of the total orthologous gene families in the transcriptome data (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "1c3a4ebf-6383-465c-ba8e-93dd279b5034",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C87",
+      "claim": "The ratio of nonsynonymous to synonymous nucleotide substitutions (Ka/Ks) is probably the most common measure of selection pressure and for identifying positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of nonsynonymous to synonymous nucleotide substitutions (Ka/Ks) is probably the most common measure of selection pressure and for identifying positive selection (Ka/Ks > 1) (Yang, 2003) in molecular evolutionary studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge in molecular evolution supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "6008f3b4-0cb3-487b-a6ed-91ed42c2b2bb",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C88",
+      "claim": "The Ka/Ks method is known to be a conservative approach to call positive selection on a gene as it uses an average Ka/Ks ratio across all nucleotide sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The method is known to be a conservative approach to call positive selection on a gene as it uses an average Ka/Ks ratio across all nucleotide sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge about the Ka/Ks method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "01ed95a8-f015-41f8-bfd1-46a282e89fef",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C89",
+      "claim": "Uncertainty in Ka/Ks ratios is high when Ks is zero or close to zero.",
+      "claim_type": "EXPLICIT",
+      "source": "We are aware that uncertainty in Ka/Ks ratios is high when Ks is zero or close to zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge about limitations of Ka/Ks estimation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "f96cba48-e01c-4bc9-92a0-2c805bbf93c2",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C90",
+      "claim": "Genes with Ks = 0 and genes with Ka/Ks = 99 were removed for all analyses to minimize problems with uncertainty in Ka/Ks ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize this problem, we removed genes with Ks = 0 and genes with Ka/Ks = 99 for all analyses and only focused on genes with Ka/Ks > 2 as candidates of strong positive selection for gene annotation analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision made in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "a6637ce6-69e4-4ee3-89a7-d047c471c1f9",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C91",
+      "claim": "The Ka/Ks > 2 ratios in genes under positive selection are unlikely a result of saturation of synonymous substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the Ka/Ks > 2 ratios in these genes are unlikely a result of saturation of synonymous substitutions. Saturation of synonymous substitutions is often expected at deeper phylogenetic levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on reasoning about when saturation occurs.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "5693aeca-aca6-46aa-b68a-fd7ce631b905",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C92",
+      "claim": "Both the Ka/Ks and variation cluster methods may underestimate the number of genes under positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the Ka/Ks and variation cluster methods may underestimate the number of genes under positive selection because some genes with Ka/Ks < 1 may be under positive selection at only a few sites and these sites may not be necessarily clustered in the gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents knowledge about limitations of the methods used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "d76b5997-0b4f-4cf0-8b13-ce494966f09e",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "claim_id": "C93",
+      "claim": "The genes identified as under positive selection by both Ka/Ks and variation cluster methods are likely the true positive selection genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes identified as under positive selection by both methods are likely the true positive selection genes and will provide top candidates for future studies for their functions in driving allopatric divergence in these taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the use of two independent methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6c99396b-d17e-4cf4-b996-4993be390ee7",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study identified 8,596-15,161 POGs per taxon pair, with most showing low divergence (Ks < 0.1, Ka < 0.04). Peak Ks values ranged from <0.01 to <0.06 across genera, with specific patterns observed in different lineages. A portion of POGs (53-237) mapped to known single-copy genes in seed plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C20 are well-supported by data presented in Table 1, Figures 1-2, and supplementary files. The quantitative measurements of POG numbers, Ks/Ka values, and mapping to reference gene sets provide consistent evidence for the reported patterns of molecular divergence across the 20 taxon pairs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "ea687dd3-21de-4602-9cb5-bcce9333e9de",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "More than 90% of POGs in each taxon pair are under purifying selection (Ka/Ks < 0.9), with a consistent hierarchical pattern across all pairs: moderate purifying selection (41-68%) > strong purifying selection (11-36%) > relaxed purifying selection (9.7-19.5%) > weak positive selection (3.1-8.8%) > neutral (1.6-3.7%) > strong positive selection (0.6-2.0%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C21-C27 are strongly supported by Ka/Ks ratio data shown in Figure 3, Figure 4, and Supplementary file 3. The repeated pattern across all 20 phylogenetically diverse taxon pairs provides robust evidence for this conserved genomic architecture. The quantitative ranges are clearly documented and visualized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "a83439f6-1cef-4522-b315-18db3a17f3c8",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis using seven shared POGs recovered relationships congruent with APG IV classification. Divergence time estimates place species pair isolation between late Miocene and Pleistocene (~10.67-1.69 mya), with divergence time positively correlated with Ks peak frequency (r=0.8034, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by phylogenetic analyses (Figure 5, Figure 5\u2014supplement 1) and correlation analyses. The congruence with established phylogenetic relationships validates the approach, and the strong positive correlation between divergence time and Ks values is statistically significant and biologically meaningful.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "743bfd7a-347c-489c-8e84-698e106a655d",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Divergence time and Ks peak frequency show significant correlations with gene abundance under different selection regimes: positive correlation with moderate purifying selection (0.1<Ka/Ks<0.5; r=0.73-0.93, p<0.001) and negative correlation with strong purifying selection (Ka/Ks<0.1; r=-0.64 to -0.79, p<0.009) and positive selection (Ka/Ks\u22651.0; r=-0.53, p=0.015).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C31-C33 are supported by correlation analyses shown in Figures 5-6 and Supplementary file 4. The statistical significance of correlations and consistency across multiple comparisons provide strong evidence. However, the authors acknowledge potential circularity due to overlapping data between Ks measurements and divergence time estimation, which slightly reduces stringency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genes under strong positive selection (Ka/Ks>2) vary from 72-184 per taxon pair, with ~50% having GO annotations mapping to 223 total GO terms. Most terms (44.8%) are lineage-specific, with 14 BP terms related to stimuli responses shared by 10-15 pairs. One GO term (integral component of membrane) is shared by all 20 pairs and represents the most abundant CC category in each pair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41, C7-C8 are supported by data in Table 2, Figure 7, and Supplementary file 5. The GO annotation analysis provides functional context for positively selected genes. However, the authors acknowledge that Ka/Ks and variation cluster methods may underestimate positive selection, and uncertainty is high when Ks is small, which could affect the exact gene counts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "2d78fb3b-c326-49ee-9893-cc0d4062a532",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Most genes with Ka/Ks>2 (>57% in all pairs, >70% in 15 pairs) were also identified as under positive selection by the variation cluster method, providing independent validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is supported by variation cluster analysis results (Supplementary file 6). The use of two independent methods strengthens confidence in identifying positively selected genes, though both methods are acknowledged to be conservative and may underestimate the true number.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "c85b8597-9b15-4d81-8869-b41f54576c5b",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study reveals a repeated pattern of POG divergence across all taxon pairs, with most genes showing low divergence and evolving slowly under purifying selection, while a small proportion evolves faster. This pattern is consistent regardless of divergence time, suggesting most molecular evolution in POGs is neutral (synonymous).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C49-C50 are supported by the consistent patterns observed in Figures 1-4 across all 20 taxon pairs. The inference that most molecular evolution is neutral is reasonable given the excess of synonymous over nonsynonymous substitutions and the predominance of purifying selection. However, these are interpretive claims based on observed patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "177527ff-1b09-4767-983b-a2514df7f275",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The divergence pattern revealed by nuclear genes is consistent with previous studies using ITS/plastid markers. Divergence times support the importance of the Bering Land Bridge (available throughout Paleogene-Neogene, closed 7.4-4.8 mya) and possibly long-distance dispersal in explaining EA-ENA floristic similarity, while the North Atlantic Land Bridge broke up in early Eocene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by comparison with cited literature and geological evidence. The consistency with previous studies strengthens the findings. However, C46 involves biogeographic interpretation that cannot be definitively proven from molecular data alone\u2014the authors acknowledge they cannot distinguish between vicariance and LDD hypotheses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "62fb5289-465f-4e53-91c2-4c9759ae0568",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The positive correlation between divergence time and moderate purifying selection, coupled with negative correlation with strong purifying selection, suggests purifying selection intensity may shift from high to low over time. Analysis of 79 widely-shared POGs showed 8 genes with r>0.5 correlation between Ka/Ks and time (all Ka/Ks<1.0), providing indirect evidence for shifts in selection pressure, though most genes show taxon-specific evolutionary trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C67 involve complex interpretations of correlation patterns. While the correlations are statistically supported (C9-C10, C31-C33), the mechanistic explanations (C59-C60, C62, C66) are speculative. The analysis of individual genes (C63-C65) provides some support but is limited\u2014only 8 of 79 genes show the pattern. Alternative explanations (accumulation of deleterious mutations vs. adaptive evolution) cannot be distinguished with the current data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "618cf98c-4386-4754-84b6-f1885a448e84",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Nelumbo (aquatic) has the highest proportion of POGs under positive selection and lowest under purifying selection, while Gelsemium (terrestrial vine) shows the opposite pattern. Positively selected genes are enriched for immunity/stimuli responses, and the shared ICM GO term across all pairs suggests common regional selective forces. These genes may play roles in allopatric divergence and local adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 are supported by Ka/Ks data comparisons. C71-C72 provide morphological context from literature. C74 is supported by GO annotation data. However, C73, C76, and C78 involve speculative interpretations about the functional significance and evolutionary roles of these genes. The link between positively selected genes and morphological/ecological divergence remains hypothetical without experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "c221abbb-dbea-4c4f-9e00-b6632c46b3d4",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that similar climatic/ecological conditions between EA and ENA result in low divergence pressure, leading most genes to evolve slowly under purifying selection. However, micro-environmental differences could drive diversifying evolution in some genes. The conserved pattern of gene abundance may represent a genomic 'rule' for allopatric speciation, balancing ancestral system preservation with adaptive evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C57 are largely speculative hypotheses. C51 is supported by citation and general knowledge. C52-C53 represent theoretical expectations. C54-C57 are proposed explanations for observed patterns but lack direct experimental evidence. These are reasonable interpretations but remain untested hypotheses that require future validation through additional studies examining all gene families or testing in other systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "78b1a15a-3a53-4cec-b18a-257993a2fc5b",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study's findings parallel observations in mammals, where positive selection genes are enriched for immunity/defense functions. Recent studies suggest natural selection targets specific gene sets in repeated patterns of genomic divergence during speciation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C77 are supported by citations to published literature (Kosiol et al., 2008; Pereira et al., 2016). These provide comparative context from other systems that strengthens the interpretation of the plant data, though they represent prior work rather than findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study addresses methodological considerations: OrthoMCL performs well for ortholog identification (validated by phylogenetic analyses showing sister relationships); most genes with Ka/Ks>2 have Ks>0.005 and span a range of Ks values, making saturation unlikely; POGs represent 52-68% of total orthologous gene families; Ka/Ks is a conservative measure that may underestimate positive selection; genes identified by both Ka/Ks and variation cluster methods are likely true positives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C93 address important methodological issues and limitations. C79-C80 are supported by citations and phylogenetic validation. C81-C82, C86 are supported by data examination. C87-C89 represent established knowledge. C90 describes methodological decisions. C91-C93 involve reasonable inferences about method limitations. The authors appropriately acknowledge uncertainties and validate their approaches where possible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "d4f27007-5fd1-4705-b43c-a018496232ee",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors acknowledge that divergence times may be underestimated due to sparse phylogenetic sampling and few deep calibrations, but note results are similar to previous rbcL-based estimates and the relative order of divergence should be consistent, making them suitable for correlation analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 appropriately acknowledge limitations in divergence time estimation while providing justification for their use in comparative analyses. C84 is supported by comparison with previous work. The reasoning in C85 about relative vs. absolute timing is sound, though the potential systematic bias could still affect some conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    },
+    {
+      "id": "b07828d6-20d3-495c-80bd-dbc86f03011f",
+      "content_id": "c173d6c0-da0d-4984-bd67-490939e36d6a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The EA-ENA floristic disjunction involves 65 genera of seed plants, is a major Northern Hemisphere phytogeographic pattern known since Linnaeus, and previous studies showed divergence times varying from Miocene to Pleistocene (15 to <2.0 mya).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are well-supported by multiple citations to established literature documenting the EA-ENA floristic disjunction and previous divergence time estimates. These represent accepted background knowledge that provides context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:27:40.364615Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5b47e916-e86a-4be6-b1ba-c72e673d7fc1",
+      "result_id": "6c99396b-d17e-4cf4-b996-4993be390ee7"
+    },
+    {
+      "claim_id": "4bb6f7dd-4367-467a-8806-d67a59ae0f0c",
+      "result_id": "6c99396b-d17e-4cf4-b996-4993be390ee7"
+    },
+    {
+      "claim_id": "1b09d31a-7c36-49a1-b6da-715742d88611",
+      "result_id": "6c99396b-d17e-4cf4-b996-4993be390ee7"
+    },
+    {
+      "claim_id": "3bc7b4db-52a9-40c2-bb32-0128ec392faa",
+      "result_id": "6c99396b-d17e-4cf4-b996-4993be390ee7"
+    },
+    {
+      "claim_id": "47649c03-b473-4997-91bc-8e4f5833c03f",
+      "result_id": "6c99396b-d17e-4cf4-b996-4993be390ee7"
+    },
+    {
+      "claim_id": "eaacfd4d-195f-45f6-a961-0b2abfc62385",
+      "result_id": "6c99396b-d17e-4cf4-b996-4993be390ee7"
+    },
+    {
+      "claim_id": "ae43566b-806f-4bdb-a4cb-a0293f4b442f",
+      "result_id": "6c99396b-d17e-4cf4-b996-4993be390ee7"
+    },
+    {
+      "claim_id": "9c180ce5-17d8-4c64-a2fc-58f124083a36",
+      "result_id": "6c99396b-d17e-4cf4-b996-4993be390ee7"
+    },
+    {
+      "claim_id": "8924ee90-6443-4658-814e-da23dd0f6533",
+      "result_id": "6c99396b-d17e-4cf4-b996-4993be390ee7"
+    },
+    {
+      "claim_id": "55371fa2-8092-4c08-b02f-76cf274d6d9b",
+      "result_id": "6c99396b-d17e-4cf4-b996-4993be390ee7"
+    },
+    {
+      "claim_id": "c5e1a5c3-6bef-48d7-9b52-8a46e470bb06",
+      "result_id": "ea687dd3-21de-4602-9cb5-bcce9333e9de"
+    },
+    {
+      "claim_id": "71151e2e-9290-43d2-9993-bbf123e2612a",
+      "result_id": "ea687dd3-21de-4602-9cb5-bcce9333e9de"
+    },
+    {
+      "claim_id": "3d9da3e3-2eae-4cac-b781-24068f46ce6d",
+      "result_id": "ea687dd3-21de-4602-9cb5-bcce9333e9de"
+    },
+    {
+      "claim_id": "65c67304-dea2-4bde-8db5-0c102248b1db",
+      "result_id": "ea687dd3-21de-4602-9cb5-bcce9333e9de"
+    },
+    {
+      "claim_id": "ea01c99a-0384-40aa-9a07-367f07c4d9bb",
+      "result_id": "ea687dd3-21de-4602-9cb5-bcce9333e9de"
+    },
+    {
+      "claim_id": "34e104b4-aa5e-449e-885f-9c63ae70c52d",
+      "result_id": "ea687dd3-21de-4602-9cb5-bcce9333e9de"
+    },
+    {
+      "claim_id": "5d92f224-122d-4b21-b516-5203868df42f",
+      "result_id": "ea687dd3-21de-4602-9cb5-bcce9333e9de"
+    },
+    {
+      "claim_id": "cb6432fb-e994-483e-a8e5-aed5dd9ed50a",
+      "result_id": "ea687dd3-21de-4602-9cb5-bcce9333e9de"
+    },
+    {
+      "claim_id": "973fb25e-f718-47c5-ab1c-d45ccf593bc8",
+      "result_id": "ea687dd3-21de-4602-9cb5-bcce9333e9de"
+    },
+    {
+      "claim_id": "9c3b7c4a-c1cb-49e4-98ab-8ea83b693721",
+      "result_id": "ea687dd3-21de-4602-9cb5-bcce9333e9de"
+    },
+    {
+      "claim_id": "c467ddb3-6a79-4671-ab8c-a79ee36f9cbe",
+      "result_id": "a83439f6-1cef-4522-b315-18db3a17f3c8"
+    },
+    {
+      "claim_id": "b150263b-0efa-41f3-bf35-970798413a19",
+      "result_id": "a83439f6-1cef-4522-b315-18db3a17f3c8"
+    },
+    {
+      "claim_id": "4a9b4f16-3999-42fc-8198-93a2b9bcbb4c",
+      "result_id": "a83439f6-1cef-4522-b315-18db3a17f3c8"
+    },
+    {
+      "claim_id": "27f2ebb2-c587-4066-9de1-992d247f193c",
+      "result_id": "743bfd7a-347c-489c-8e84-698e106a655d"
+    },
+    {
+      "claim_id": "156ee066-59ea-4253-9577-5c347a40ea13",
+      "result_id": "743bfd7a-347c-489c-8e84-698e106a655d"
+    },
+    {
+      "claim_id": "0147657a-91ab-4acb-af07-b7ff5885f32c",
+      "result_id": "743bfd7a-347c-489c-8e84-698e106a655d"
+    },
+    {
+      "claim_id": "993833db-51aa-4a95-9999-8b6970fe12ed",
+      "result_id": "743bfd7a-347c-489c-8e84-698e106a655d"
+    },
+    {
+      "claim_id": "9765dbf5-d20e-449a-8542-39d846c0f82c",
+      "result_id": "743bfd7a-347c-489c-8e84-698e106a655d"
+    },
+    {
+      "claim_id": "96964515-668f-4ec2-8ae6-5ad5690989ed",
+      "result_id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9"
+    },
+    {
+      "claim_id": "c3a764c9-e514-464c-bc79-2a512910225c",
+      "result_id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9"
+    },
+    {
+      "claim_id": "e3587ea2-46bc-458f-87d9-14dcb0dd06c7",
+      "result_id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9"
+    },
+    {
+      "claim_id": "82550c79-ce03-43c1-b77d-eda035734936",
+      "result_id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9"
+    },
+    {
+      "claim_id": "46929240-1033-451f-9263-cd92e6d69ab8",
+      "result_id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9"
+    },
+    {
+      "claim_id": "49356e0c-dcff-426e-a599-33577b472192",
+      "result_id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9"
+    },
+    {
+      "claim_id": "f5926078-e41e-4661-ae68-7156948d9374",
+      "result_id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9"
+    },
+    {
+      "claim_id": "bcceafe0-1327-4556-8689-c5b1963ec4c0",
+      "result_id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9"
+    },
+    {
+      "claim_id": "53890e8b-7118-4f37-bfa0-af62fe98109b",
+      "result_id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9"
+    },
+    {
+      "claim_id": "f306d3e4-e41a-421a-a4f9-27f8bb192ecd",
+      "result_id": "f98fd8d8-6452-4b5e-9a0b-276ddfc63fd9"
+    },
+    {
+      "claim_id": "01206d2a-bcf9-4824-8a34-21ce0df841a3",
+      "result_id": "2d78fb3b-c326-49ee-9893-cc0d4062a532"
+    },
+    {
+      "claim_id": "2f554e45-29b5-4a66-8381-aadb4100e129",
+      "result_id": "c85b8597-9b15-4d81-8869-b41f54576c5b"
+    },
+    {
+      "claim_id": "a1810813-d551-4db6-b7fa-d387fd1cf683",
+      "result_id": "c85b8597-9b15-4d81-8869-b41f54576c5b"
+    },
+    {
+      "claim_id": "558428cf-4e6e-4b30-bf6c-1ba82cac3498",
+      "result_id": "c85b8597-9b15-4d81-8869-b41f54576c5b"
+    },
+    {
+      "claim_id": "6285f766-f0fa-4c5b-9b56-48bff1741351",
+      "result_id": "c85b8597-9b15-4d81-8869-b41f54576c5b"
+    },
+    {
+      "claim_id": "77d6e3b7-0b12-42da-965d-ec280c1285ca",
+      "result_id": "177527ff-1b09-4767-983b-a2514df7f275"
+    },
+    {
+      "claim_id": "3e4f9b47-64b5-4cbf-9282-0cb3c650e561",
+      "result_id": "177527ff-1b09-4767-983b-a2514df7f275"
+    },
+    {
+      "claim_id": "9e230ec1-9d2e-404b-9ebb-20ca93304b00",
+      "result_id": "177527ff-1b09-4767-983b-a2514df7f275"
+    },
+    {
+      "claim_id": "c83f4cef-df11-48df-b355-b3c4356911e2",
+      "result_id": "177527ff-1b09-4767-983b-a2514df7f275"
+    },
+    {
+      "claim_id": "f014dc43-3f8b-4c06-a0fc-b496b36e2999",
+      "result_id": "62fb5289-465f-4e53-91c2-4c9759ae0568"
+    },
+    {
+      "claim_id": "78e521ae-781d-4508-808c-1c1d329edfb3",
+      "result_id": "62fb5289-465f-4e53-91c2-4c9759ae0568"
+    },
+    {
+      "claim_id": "ca3c659b-c1b7-4283-80c6-b122ff234d74",
+      "result_id": "62fb5289-465f-4e53-91c2-4c9759ae0568"
+    },
+    {
+      "claim_id": "a35e4f20-40c7-4195-afe4-d4221cce8e25",
+      "result_id": "62fb5289-465f-4e53-91c2-4c9759ae0568"
+    },
+    {
+      "claim_id": "3340a989-11d1-40ef-b3ca-4f894734c3c0",
+      "result_id": "62fb5289-465f-4e53-91c2-4c9759ae0568"
+    },
+    {
+      "claim_id": "71f7e977-250b-4c28-a7d2-1979a3713045",
+      "result_id": "62fb5289-465f-4e53-91c2-4c9759ae0568"
+    },
+    {
+      "claim_id": "4c305dc8-94f4-41c1-b48c-7fd0b887ee48",
+      "result_id": "62fb5289-465f-4e53-91c2-4c9759ae0568"
+    },
+    {
+      "claim_id": "e8a43f1f-11b7-4e84-9162-88b8d9ddc167",
+      "result_id": "62fb5289-465f-4e53-91c2-4c9759ae0568"
+    },
+    {
+      "claim_id": "ffef8339-54ce-4323-941d-92abceb7cadc",
+      "result_id": "62fb5289-465f-4e53-91c2-4c9759ae0568"
+    },
+    {
+      "claim_id": "2f6b7e83-ed14-4983-b9c7-8243416d2ac4",
+      "result_id": "618cf98c-4386-4754-84b6-f1885a448e84"
+    },
+    {
+      "claim_id": "759ab692-f95a-4447-abbd-db5e9a196972",
+      "result_id": "618cf98c-4386-4754-84b6-f1885a448e84"
+    },
+    {
+      "claim_id": "d24cc4b2-412f-4ad3-acc0-1d65a228d9f4",
+      "result_id": "618cf98c-4386-4754-84b6-f1885a448e84"
+    },
+    {
+      "claim_id": "552a7020-5120-4567-bab8-0666f085094e",
+      "result_id": "618cf98c-4386-4754-84b6-f1885a448e84"
+    },
+    {
+      "claim_id": "a7c7feac-57a1-4ea5-a6c1-22e22505ee7c",
+      "result_id": "618cf98c-4386-4754-84b6-f1885a448e84"
+    },
+    {
+      "claim_id": "5962d639-5c91-4857-a59d-d8000c89fc9f",
+      "result_id": "618cf98c-4386-4754-84b6-f1885a448e84"
+    },
+    {
+      "claim_id": "18bdff70-261d-43f3-b81e-7dbac2cc4e66",
+      "result_id": "618cf98c-4386-4754-84b6-f1885a448e84"
+    },
+    {
+      "claim_id": "21e2b9a7-5375-45c2-8664-04b25cb10957",
+      "result_id": "618cf98c-4386-4754-84b6-f1885a448e84"
+    },
+    {
+      "claim_id": "4bf9e6b0-d24a-455a-9ff7-4d409d869582",
+      "result_id": "c221abbb-dbea-4c4f-9e00-b6632c46b3d4"
+    },
+    {
+      "claim_id": "30d9b177-67a7-4eb6-8dab-414394c37193",
+      "result_id": "c221abbb-dbea-4c4f-9e00-b6632c46b3d4"
+    },
+    {
+      "claim_id": "ff4018c7-60f5-44fc-a651-e383f68c8bda",
+      "result_id": "c221abbb-dbea-4c4f-9e00-b6632c46b3d4"
+    },
+    {
+      "claim_id": "d90344d5-5221-448a-9f88-9e85e3b98bc4",
+      "result_id": "c221abbb-dbea-4c4f-9e00-b6632c46b3d4"
+    },
+    {
+      "claim_id": "e77c6e5a-a802-4abd-8c88-bb6af5d2ce48",
+      "result_id": "c221abbb-dbea-4c4f-9e00-b6632c46b3d4"
+    },
+    {
+      "claim_id": "799ec944-d33e-4821-9e5a-a6113b067cbf",
+      "result_id": "c221abbb-dbea-4c4f-9e00-b6632c46b3d4"
+    },
+    {
+      "claim_id": "bf8c6a10-b4d0-4b5d-a7d9-16f58aedf7c9",
+      "result_id": "c221abbb-dbea-4c4f-9e00-b6632c46b3d4"
+    },
+    {
+      "claim_id": "e2ebecbd-d92e-4774-b46a-f50055a812a6",
+      "result_id": "78b1a15a-3a53-4cec-b18a-257993a2fc5b"
+    },
+    {
+      "claim_id": "b93645ce-6e90-4f48-b49a-2df6ac1855c8",
+      "result_id": "78b1a15a-3a53-4cec-b18a-257993a2fc5b"
+    },
+    {
+      "claim_id": "6ad579f3-3cb4-47fe-9490-a60604256248",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "9df31077-53f3-4bf5-9779-d8f38cb83cfa",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "b4402e96-74b4-4f05-977b-73356f4493d6",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "9ab4b109-71a2-48db-b4cb-115e6f1f9d16",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "1d86ad00-aa50-46e9-9bdc-791bd6a7d9cb",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "1c3a4ebf-6383-465c-ba8e-93dd279b5034",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "6008f3b4-0cb3-487b-a6ed-91ed42c2b2bb",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "01ed95a8-f015-41f8-bfd1-46a282e89fef",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "f96cba48-e01c-4bc9-92a0-2c805bbf93c2",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "a6637ce6-69e4-4ee3-89a7-d047c471c1f9",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "5693aeca-aca6-46aa-b68a-fd7ce631b905",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "d76b5997-0b4f-4cf0-8b13-ce494966f09e",
+      "result_id": "bee5d1e8-2982-4bfa-938b-681b61f4b56a"
+    },
+    {
+      "claim_id": "b85e4b1a-a721-473c-94e7-ea997056fffc",
+      "result_id": "d4f27007-5fd1-4705-b43c-a018496232ee"
+    },
+    {
+      "claim_id": "ead6eb77-7321-4d4a-9c77-1d9cac5cc8eb",
+      "result_id": "d4f27007-5fd1-4705-b43c-a018496232ee"
+    },
+    {
+      "claim_id": "d394f309-64b7-4d6e-b812-6caeb9ae480d",
+      "result_id": "d4f27007-5fd1-4705-b43c-a018496232ee"
+    },
+    {
+      "claim_id": "b09a8fa6-5a4e-46dd-ae85-f603c0335b89",
+      "result_id": "b07828d6-20d3-495c-80bd-dbc86f03011f"
+    },
+    {
+      "claim_id": "ec5e4db8-9b9b-4744-a314-7c1e6e24a8b4",
+      "result_id": "b07828d6-20d3-495c-80bd-dbc86f03011f"
+    },
+    {
+      "claim_id": "61dbdca0-d174-4d25-823d-09b375531eca",
+      "result_id": "b07828d6-20d3-495c-80bd-dbc86f03011f"
+    }
+  ],
+  "comparisons": []
+}

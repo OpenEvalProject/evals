@@ -1,0 +1,2123 @@
+{
+  "submission": {
+    "id": "e04dfc32-e502-4dc2-b5a9-1de2e338a78f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:45:42.148787Z",
+    "updated_at": "2025-12-02T15:45:42.148787Z"
+  },
+  "content": [
+    {
+      "id": "15941159-4b97-49e4-af87-644fce877d95",
+      "submission_id": "e04dfc32-e502-4dc2-b5a9-1de2e338a78f",
+      "content_type": "manuscript",
+      "content_text": "# A synthetic dataset primer for the biobehavioural sciences to promote reproducibility and hypothesis generation\n\n## Authors\n\n- Daniel S Quintana<sup>1</sup> ([ORCID: 0000-0003-2876-0004](https://orcid.org/0000-0003-2876-0004)) \u2020\n\n### Affiliations\n\n1. Norwegian Centre for Mental Disorders Research (NORMENT), Division of Mental Health and Addiction, University of Oslo, and Oslo University Hospital Oslo Norway\n\n\u2020 Corresponding author\n\n## Abstract\n\nOpen research data provide considerable scientific, societal, and economic benefits. However, disclosure risks can sometimes limit the sharing of open data, especially in datasets that include sensitive details or information from individuals with rare disorders. This article introduces the concept of synthetic datasets, which is an emerging method originally developed to permit the sharing of confidential census data. Synthetic datasets mimic real datasets by preserving their statistical properties and the relationships between variables. Importantly, this method also reduces disclosure risk to essentially nil as no record in the synthetic dataset represents a real individual. This practical guide with accompanying R script enables biobehavioural researchers to create synthetic datasets and assess their utility via the synthpop R package. By sharing synthetic datasets that mimic original datasets that could not otherwise be made open, researchers can ensure the reproducibility of their results and facilitate data exploration while maintaining participant privacy.\n\n## Introduction\n\nOpenly accessible biomedical research data provide enormous utility for science, society, and the economy (Arzberger et al., 2004; Munaf\u00f2 et al., 2017; Murdoch and Detsky, 2013; Piwowar et al., 2011). With open data, scholars can verify results, generate new knowledge, form new hypotheses, and reduce the unnecessary duplication of data collection (Asendorpf et al., 2013; Nosek et al., 2012). However, the benefits of data sharing need to be considered in light of disclosure risk. Researchers who wish to share data while reducing the risk of disclosure have traditionally used data anonymization procedures, in which explicit identifiers such as names, addresses, and national identity numbers are removed (Hrynaszkiewicz et al., 2010). To add additional disclosure protection, particularly sensitive variables (e.g., age) are sometimes aggregated and random noise may be added to the dataset. Despite these anonymization efforts, specific individuals can still be identified in anonymized datasets with high accuracy (Ohm, 2009; Rocher et al., 2019). Data aggregation and random noise can also distort the relationships between variables in the dataset (Purdam and Elliot, 2007), which can interfere with reproducibility and exploratory data analysis.\n\nThe creation of synthetic datasets can substantially overcome replicability issues, as this method creates a new dataset that mimics an original dataset by preserving its statistical properties and relationships between variables (Little, 1993; Reiter, 2005b; Reiter, 2005a; Reiter and Raghunathan, 2007; Rubin, 1993). Synthetic datasets also reduce disclosure risk to essentially zero, as no complete casewise record in the new dataset represents a real individual (Duncan and Elliot, 2011). Synthetic datasets also allow researchers to fit exploratory models in the synthetic datasets, which the data custodians can verify in the original data. Finally, synthetic datasets enable readers and reviewers to better understand the data, as they can recreate the reported analyses and explore data distributions, variance, outliers, and means.\n\nSynthetic datasets were originally developed for sharing sensitive population-level data (for a summary, see Bonn\u00e9ry et al., 2019). The use of synthetic data for sharing sensitive information is beginning to emerge in the biobehavioural sciences (e.g., Arslan et al., 2018; Newbury et al., 2018); however, this approach is not widely known in the field. Given the benefits of synthetic data, the purpose of this article is to introduce this concept using examples and an accompanying R script. The R script and datasets to reproduce the analyses described in this paper are available online at https://github.com/dsquintana/synthpop-primer (Quintana, 2019; copy archived at https://github.com/elifesciences-publications/synthpop-primer). This website also includes a link to a RStudio Server instance of the primary analysis and results, which recreates the complete computational environment used for this manuscript (i.e., the R version and R package versions used) and facilitates straightforward reproducibility of the analysis described in this article via any modern web browser.\n\n## Methods, materials, and results\n\nThree open datasets will be used to demonstrate how the generation of a synthetic dataset can produce a dataset that mimics the original, via the synthpop R package (version 1.5\u20131; Nowok et al., 2016) in the R statistical environment (version 3.6.0). Synthetic datasets are created by replacing some or all of the data by sampling from an appropriate probability distribution, in a similar fashion to multiple imputation (Drechsler, 2011; Raghunathan et al., 2003; Reiter, 2005b). This approach preserves the statistical properties and the relationships between variables in the original dataset while safeguarding anonymity as no individual in the new dataset represents a real individual. The default synthesis method in synthpop is the classification and regression tree (CART) procedure (Reiter, 2005b), which will be used in this primer. The CART procedure is more flexible and generally performs better than other synthesis methods, such as random forests and bagging (Drechsler and Reiter, 2011). If data synthesis happens to recreate a replicate of a real individual by chance, these replicates can be easily identified and removed from the dataset to reduce the risk of de-identification.\n\nThere are two broad approaches for assessing the utility of a synthesized dataset: general utility and specific utility (Snoke et al., 2018). General utility reflects the overall similarities in the statistical properties and multivariate relationships between the synthetic and original datasets. The first step in assessing general utility is data visualisation (Nowok et al., 2016; Raab et al., 2017). The compare() function in synthpop can be used to construct side-by-side univariate distributions of variables in the synthetic and observed datasets. Visualizing bivariate comparisons between specific variables of interest is also recommended, as two datasets might have similar statistical properties despite different distributions (e.g., Anscombe\u2019s quartet; Anscombe, 1973). Confirming general utility is a necessary step for making inferences from the synthetic dataset and\u00a0is especially important for data exploration in the synthetic dataset (Snoke et al., 2018).\n\nSpecific utility for fitted synthetic models can be assessed by calculating the lack-of-fit against the same model in the original data (Nowok et al., 2016). Specific coefficients in synthetic models can also be compared against coefficients in the original models by assessing the differences in standardized coefficients and confidence interval\u00a0(CI) overlap (Karr et al., 2006), which is the ratio of the overlap of the intervals to an average of their lengths. Higher overlap is indicative of greater specific utility, which suggests that inference from fitted synthetic models is valid.\n\nFinally, there is a risk that individuals coming across the synthetic data without context (i.e., a direct link to a data file) may believe the data are real. Thus, to remove any possible confusion, synthetic datasets prepared for export will have a single string \u2018FAKE_DATA\u2019 variable added to the front of the dataset using the sdc() function in synthpop, as recommended by Nowok et al. (2017).\n\n### Example 1: Oxytocin and self-reported spirituality\n\nVan Cappellen et al. (2016) investigated the impact of oxytocin administration on self-reported spirituality and deposited the raw study data online (https://osf.io/rk2x7/). In a between-participants design, volunteers were randomly assigned to self-administer an intranasal oxytocin (N\u00a0=\u00a041) or intranasal placebo spray (N\u00a0=\u00a042). Approximately forty minutes after receiving the nasal spray, participants were asked \u201cRight now, would you say that spirituality is important in your life?\u201d. The reported outcome from an ANCOVA suggested that when accounting for religious affiliation, participants who self-administered the oxytocin nasal spray reported that spirituality was more important in their lives compared to those who self-administered the placebo spray. A synthetic version of the original dataset was created using the syn() function from the synthpop package. A comparison of the four main variables of interest revealed similar distributions between the synthetic and the original datasets and no individual extreme values (Figure 1A). There were also no replicated unique sets of values. A bivariate comparison of self-reported spiritualty (Figure 1\u2014figure supplement 1) and religious affiliation (Figure 1\u2014figure supplement 2) between the nasal spray groups suggested that the counts between the synthesized and original datasets were similar. The relationship between age and self-reported spirituality was also similar between datasets (Figure 1\u2014figure supplement 3). Altogether, these visualisations were indicative that the synthetic dataset has good general utility.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig1-v2.jpg)\n\n**Figure 1.:** A comparison of the four variables of interest revealed similar distributions in both the observed and the synthetic datasets, which is indicative of good general utility (A). Direct comparisons of coefficient estimates and 95% confidence intervals from linear models calculated from synthetic and observed datasets revealed no significant differences and high confidence interval overlap (B\u2013D), which is indicative of good specific utility.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** After receiving either the oxytocin or placebo nasal spray (depending on randomization), participants were asked on a scale from 0 (Not at all) to 7 (Completely), \u201cRight now, would you say that spirituality is important for you?\u201d. The difference in counts between the observed dataset (obs) and the synthetic dataset (syn) are shown for each possible response on the scale (0\u20137). As the counts were similar between datasets for each possible response, this suggests that the synthetic dataset has good utility. There were no missing datapoints (NA).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The difference in counts between the observed dataset (obs) and the synthetic dataset (syn) are shown for two religious affiliation categories: affiliated with a religion and non-affiliated with any religion. As the counts were similar between datasets for both categories, this suggests that the synthetic dataset has good utility.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** As the scatterplot and density plots appear similar between the observed and synthetic datasets, this suggests that the synthetic dataset has good utility.\n\nNasal spray group differences in self-reported spiritualty will be examined using both an independent samples Welch\u2019s t-test and a linear regression model equivalent, with the former required to assess specific utility. This analysis in the original dataset suggested no significant difference in spirituality ratings between the nasal spray groups [t\u00a0=\u00a01.14, 95% CI (\u22120.45, 1.63), p=0.26]. An equivalent linear regression model yielded the same outcome, as expected. Estimating this linear model in the synthesized dataset revealed the same p-value outcome (t\u00a0=\u00a0\u22121.12, p=0.26).\n\nThe lack-of-fit test comparing the models generated in the original and synthetic datasets was not statistically significant, X2 (2)=0.01, p=0.995. This suggests that the method used for synthesis retained all the relationships between variables that influenced the model fitting parameters. The standardized difference of the nasal spray condition coefficient between the synthesized and the observed data for this t-test was 0.003, which was not statistically significant (p=0.998). A comparison of confidence intervals revealed 99.94% CI overlap between the synthetic and original datasets (Figure 1B). Overall, these results indicate that the model from the synthesized data demonstrates high specific utility for this t-test. This particular outcome was not reported in the original article; however, this provides a demonstration of how synthetic data can be used for data exploration. The analysis script underlying exploratory analysis can be shared with the owners of the original dataset, for the easy verification of the analysis. In this case, applying this model to the synthetic data produces almost precisely the same results as the original dataset.\n\nNext, let\u2019s explore the correlation between age and self-reported spirituality. A Pearson correlation test revealed no statistically significant correlation between age and self-reported spirituality [r\u00a0=\u00a00.04, 95% CI (\u22120.19, 0.26), p=0.75], which is the same result as the linear model equivalent. Estimating this model using the synthetic dataset revealed a similar Pearson\u2019s r value and a non-significant result (r\u00a0=\u00a00.08, p=0.5). The lack-of-fit test comparing the models generated in the original and synthetic datasets was not statistically significant, X2 (2)=0.13, p=0.94. Moreover, the test of the standardized differences between the synthetic and original data for the relationship coefficient was not statistically significant (p=0.72) and there was 90.8% CI overlap between the synthetic and observed data (Figure 1C), suggesting high specific utility.\n\nFinally, let\u2019s explore the main reported outcomes from this study, that oxytocin increased self-reported spirituality controlling for religious affiliation. First, the original outcome\u00a0was\u00a0verified [F(1,75)=4.87, p=0.03] and then the analysis was structured as a linear regression model. This analysis yielded the same p-value of .03, which was associated with a t-statistic of \u22122.2. Estimating this model using the synthetic dataset revealed similar t-statistic and a p-value that was on the border of statistical significance (t\u00a0=\u00a0\u22121.8, p=0.07).\n\nThe lack-of-fit test for the full model was not statistically significant, X2 (3)=0.91, p=0.82. The test of the standardized differences between the synthetic and original data for the nasal spray coefficient was not statistically significant (p=0.63) and there was 87.8% overlap between the synthetic and observed data (Figure 1D). Although the synthetic model nasal spray coefficient was not statistically significant, like the original model, this matters little given the considerable overlap between the confidence intervals of the synthetic and original models. It is worth a reminder at this point that just because one coefficient is significant and the other is not, this does not necessarily mean that these coefficients are significantly different from each other (Gelman and Stern, 2006). The primary interest in the comparison of synthetic and original models is effect size estimation and confidence interval overlap. The test of the standardized differences between the synthetic and original data for the religious affiliation coefficient was not statistically significant (p=0.49) and there was 82.3% overlap between the synthetic and observed data (Figure 1D). Overall, these results are indicative of high specific utility for the overall synthesized model and its coefficients.\n\n### Example 2: Sociosexual orientation and self-rated attractiveness\n\nSociosexual orientation is described as an individual\u2019s propensity to participate in uncommitted sexual relationships. Given the personal nature of sociosexual orientation, this a good example of the type of sensitive data that individuals may be hesitant to share in some cases, thus demonstrating the benefit of releasing of synthetic data. Jones and DeBruine, 2019 collected sociosexual orientation data from 9627 individuals using a revised version of the sociosexual orientation inventory (Penke and Asendorpf, 2008) both in the laboratory and online, along with data on self-rated attractiveness and basic demographic information. Fourteen variables were synthesized from the original dataset, which has been archived online (https://osf.io/6bk3w/). The synthetic data demonstrated good general utility, as the distributions of variables were comparable between the original and synthetic datasets (Figure 2A). A model was fitted to examine if self-rated attractiveness, data collection location (laboratory or online), and age predicted the number of times someone has had sexual intercourse on only a single occasion with another individual. Both self-rated attractiveness (t\u00a0=\u00a013.64, p<0.001) and age (t\u00a0=\u00a027.69, p<0.001) were statistically significant predictors, whereas location was not a significant predictor (t\u00a0=\u00a00.05, p=0.96). Estimating this linear model in the synthesized dataset revealed\u00a0relatively similar t-statistic outcomes (self-rated attractiveness: t\u00a0=\u00a014, p>0.001; age: t\u00a0=\u00a027.51, p<0.001; location: t\u00a0=\u00a01.12, p=0.26).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig2-v2.jpg)\n\n**Figure 2.:** A comparison of the fourteen variables of interest revealed similar distributions in both the observed and the synthetic datasets, which is indicative of good general utility (A). Direct comparisons of coefficient estimates and 95% confidence intervals from a linear model calculated from synthetic and observed datasets revealed no significant differences and high confidence interval overlap (B), which is indicative of good specific utility. The coefficient estimates and 95% confidence intervals of the same model derived from the synthetic dataset with 213 replicated individuals removed also demonstrated high confidence interval overlap (C). This demonstrates that reducing disclosure risk has little effect on specific utility.\n\nThe lack-of-fit test was not statistically significant, [X2 (4)=1.5, p=0.83], suggesting that the method used for synthesis retained all the relationships between variables that influenced the parameters of the fit. The standardized difference of the self-rated attractiveness coefficient between the synthesized and the observed data was 0.32, which was not statistically significant (p=0.75). A comparison of confidence intervals revealed 91.8% CI overlap between the synthetic and original datasets (Figure 2B). The standardized difference of the age coefficient between the synthesized and the observed data for this t-test was \u22120.28, which was not statistically significant (p=0.78). A comparison of confidence intervals revealed 92.9% CI overlap between the synthetic and original datasets (Figure 2B). The standardized difference of the location coefficient between the synthesized and the observed data for this t-test was 1.08, which was not statistically significant (p=0.28). A comparison of confidence intervals revealed 72.4% CI overlap between the synthetic and original datasets (Figure 2B). Overall, these results indicate that this model from the synthesized data demonstrated high specific utility.\n\nA comparison of the original and synthetic datasets revealed 213 replicated individuals (2.3% of the total sample). To reduce disclosure\u00a0risk, these replicated values were removed and models were refitted to examine the effects of removal on outcomes. The lack-of-fit test between the original model and synthetic model with replicated individuals was not statistically significant, X2 (4)=2.8, p=0.6. The refitted model coefficients yielded similar results to the model derived from the original data (self-rated attractiveness: standardized difference\u00a0=\u00a00.3, p=0.77, CI overlap\u00a0=\u00a092.4%; age: standardized difference\u00a0=\u00a0\u22120.74, p=0.46, CI overlap\u00a0=\u00a081.2%; location: standardized difference\u00a0=\u00a00.95, p=0.34, CI overlap\u00a0=\u00a075.8%; Figure 2C). Therefore, reducing the risk of disclosure by removing replicated individuals in the synthetic dataset maintains specific utility, in this case.\n\n### Example 3: Heart rate variability and fitness levels in a series of simulated datasets\n\nHeart Rate Variability (HRV) is a non-invasive measure of autonomic cardiac control (Akselrod et al., 1981) and thought to be positively correlated with fitness level (Dixon et al., 1992). The Root Mean Square of Successive Differences (RMSSD) is a commonly used HRV measure, however, its distribution tends to be positively skewed (e.g., Kobayashi et al., 2012). Moreover, missing data are common in HRV investigations due to equipment malfunction. To demonstrate the effects of the distribution pattern of HRV (normal, low skew, high skew), and missing data (none, 5%, 20%) for a range of sample sizes (40, 100, 10000), twenty-seven data sets with four variables (heart rate, weight, fitness level, and HRV) were simulated for the creation of synthetic datasets, which included outliers (Supplementary file 1). For all datasets, HRV and fitness level were modelled to have a relationship that is typically associated with a medium effect size (r\u00a0=\u00a00.3).\n\nThe specific utility of synthetic datasets was examined by comparing the relationship between HRV and fitness in each synthetic dataset to its respective original dataset. None of the lack-of-fit tests were statistically significant (Supplementary file 1), suggesting that the method used for synthesis retained all the relationships between variables that influenced the parameters of the fit. A comparison of confidence intervals revealed strong overlap between the synthetic and original datasets for most (but not all) of the 27 analyses and none of the standardized coefficient differences between the synthesized and the observed datasets were statistically significant (all p\u2019s\u00a0>\u00a00.05; Figure 3, Figure 3\u2014figure supplements 1\u20132). However, the overlap between the synthetic and original models were on the border of statistical significance when synthesizing data with a low skew in the simulated samples with 10,000 cases (Supplementary file 1; Figure 3\u2014figure supplement 2). All 27 synthetic datasets also demonstrated good general utility, regardless of the parameters (Figure 3\u2014figure supplements 3\u20135). Thus, synthetic dataset generation in synthpop seems to be relatively robust against differences in sample size, missingness, and skew in these simulated samples, however, there were indications of poorer performance in some of larger datasets with 10,000 (Supplementary file 1). Altogether, it is crucial that general and specific utility is assessed for each synthesised dataset, as it is difficult to predict before synthesis how well the procedure will perform.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig3-v2.jpg)\n\n**Figure 3.:** Nine datasets with 100 cases were simulated, which varied on skewness for the HRV variable (none, low, high) and missingness for all variables (0%, 5%, 20%). The x-axes values represent Z-values for the HRV coefficient. The dark-blue triangles and confidence intervals represent the HRV estimates for the synthetic data and the light-blue circles and confidence intervals represent the HRV estimates for the observed data. In general, there was a high overlap between the synthetic and original estimates (Supplementary file 1). The confidence interval range overlap between the synthetic and observed estimates from the dataset with normally distributed HRV and 5% missing data were 60.5%. While the standardized difference was not statistically significant (p=0.12), caution would be warranted in terms of specific utility in this case, given the relatively low confidence interval range overlap.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Nine datasets with 40 cases were simulated, which varied on skewness for the HRV variable (none, low, high) and missingness for all variables (0%, 5%, 20%). The x-axes represent Z-values for the HRV coefficient. The dark-blue triangles and confidence intervals represent the HRV estimates for the synthetic data and the light-blue circles and confidence intervals represent the HRV estimates for the observed data. There was high overlap between the synthetic and original estimates for the samples and the standardized differences between models derived from the synthetic and observed datasets were not statistically significant (Supplementary file 1). Thus, these synthetic datasets demonstrate good specific utility.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Nine datasets with 10,000 cases were simulated, which varied on skewness for the HRV variable (none, low, high) and missingness for all variables (0%, 5%, 20%). The x-axes represent Z-values for the HRV coefficient. The dark-blue triangles and confidence intervals represent the HRV estimates for the synthetic data and the light-blue circles and confidence intervals represent the HRV estimates for the observed data. There was high overlap between the synthetic and original estimates for the samples in which HRV was normally distributed (top row) and highly skewed (bottom row). For the datasets in which HRV had a low skew, the standardized differences between models derived from the synthetic and observed datasets were associated with p-values that can be considered on the border of statistical significance (Supplementary file 1) and the confidence interval range overlap ranged from 53.5% to 28.9% (Supplementary file 1). Altogether, evidence for specific utility in these samples in which HRV had a low skew would not be considered to be strong.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Datasets varied on the shape of the distribution of heart rate variability (HRV) and the percentage of missing data.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Datasets varied on the shape of the distribution of heart rate variability (HRV) and the percentage of missing data.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/53275/elife-53275-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Datasets varied on the shape of the distribution of heart rate variability (HRV) and the percentage of missing data.\n\n## Discussion\n\nResearchers need to consider the trade-off between the risk of identification and the utility of open datasets when deciding whether to make their research data openly available. Open data can provide substantial utility, but this may expose research participants to the risk of identification. Conversely, closed datasets decrease the risk of disclosure to essentially zero, but have almost no public utility. The generation of synthetic datasets provides an appealing compromise, as synthetic data can offer comparable levels of utility as the original datasets while substantially reducing disclosure risk. The adoption of synthetic datasets in the biobehavioural sciences will improve reproducibility and secondary data exploration, as it will facilitate the sharing of data that would otherwise not be made available.\n\nStudy participants are generally in favour of researchers sharing their deidentified data (Ludman et al., 2010; Mello et al., 2018). Thus, when planning future studies researchers should include data sharing provisions when receiving participant consent (Taichman et al., 2016). Obtaining updated consent to share data from participants who have not provided this when originally participating in a study can be resource intensive. Some have suggested that sharing deidentified datafiles should not require new re-consent from participants (Taichman et al., 2017), but as mentioned above, many commonly used data deidentification approaches may not sufficiently reduce disclosure risk (Ohm, 2009; Rocher et al., 2019). In some circumstances, datasets may include extremely sensitive information that is difficult to anonymise. For instance, Arslan et al. (2018) collected highly sensitive data examining the role of ovulatory changes on sexual desire and behavior in women but did not request consent from participants to share data considering valid privacy concerns. Instead, a synthetic version of the dataset was created using synthpop and made available on a publicly accessible repository. Releasing this synthetic dataset provides considerable utility, as other researchers can verify the analysis and fit novel models using this dataset, which can be confirmed by the data custodians with the original data. An additional step of removing individuals that have been fully replicated in the synthesized data set can further reduce disclosure risk, without necessarily reducing general or specific utility. Therefore, synthetic data can offer a valuable solution for sharing data collected under conditions where participants did not specifically provide consent for sharing data (and where re-consent is impractical), as well as for situations in which a dataset contains especially sensitive information. In addition to the verification of results and hypothesis generation, synthetic datasets can also benefit the training of machine learning algorithms in research areas with a dearth of data, such as rare condition research (Ekbatani et al., 2017; Sabay et al., 2018), via the creation of additional synthetic datasets that closely match real datasets.\n\nOne criticism of sharing raw data is that research groups would not have the first opportunity to analyse the data and report outcomes to their satisfaction (Lo, 2015; Ross et al., 2012). It has been recommended that secondary data analysts should seek collaborations with teams that collected the original data in recognition of their investment in collecting the data (Taichman et al., 2016), but this is difficult to enforce in practice. To make meaningful inferences with synthetic data, secondary data analysts need to verify their synthetic models against models from the original data, which is in the possession of the original authors who can verify these inferences (Reiter et al., 2009). This would increase the likelihood of co-authored collaborations, at least compared to the status-quo in which secondary analysts could publish their results without necessarily collaborating with the original authors. Thus, open synthetic data provide an opportunity for secondary analysists scholars to fit models that the original authors may not have considered, while also encouraging them to collaborate with the original authors to verify their models in the real dataset. Of course, secondary analysts could still report results from synthetic datasets without verification from the primary authors, but it would need to be made explicit that analyses were conducted on a synthetic dataset, and generated models may not necessarily mirror the models generated from the original dataset.\n\nJournals have adopted a spectrum of public data archiving (PDA) policies, ranging from the policies that data should be made \u201cavailable upon request\u201d all the way to mandated data deposition in peer-reviewed journals dedicated to open data (Sholler et al., 2019). While an \u201cavailable upon request\u201d PDA policy is better than no policy at all (Stodden et al., 2018), such datasets are often difficult to retrieve in practice as corresponding authors\u00a0can become unreachable or original datasets are lost (Couture et al., 2018; Stodden et al., 2018; Wicherts et al., 2006). Sharing data with published papers would remove these impediments for accessing data, with synthetic data offering a solution for when it is not possible to share the original dataset due to disclosure concerns.\n\nDespite the benefits of synthetic datasets, this approach is not without limitations. First, it is possible for synthetic data to have poor general and specific utility, which would diminish the benefits of sharing in terms of reproducibility and secondary data exploration. While a synthetic dataset with poor utility would still provide a valuable guide for reproducing reported analyses, these are likely to provide substantially different estimates and exploratory analyses may not produce accurate models. Second, current synthetic data methods limit the types of statistical inference that can be performed on synthetic data to linear models. In practice, this means that only linear models can be for comparison in order to demonstrate specific utility. Of course, scholars are free to perform any type of analysis on the synthetic data, which should provide approximately the same outcome as the original data as long as the synthetic data offer good general utility. Third, as mentioned above, the risk of identity disclosure from synthetic datasets is negligible but this only holds under two conditions: that none of the complete synthetic data records match with the original data and that there are no extreme single individual values in the dataset that can be linked to an individual (Drechsler, 2011; Duncan and Elliot, 2011). Therefore, to reduce disclosure risk and the possibility that participants will recognise themselves in the dataset, complete matching records (i.e., when all variables in the original dataset for a case matches a case in the synthetic dataset) should be identified and removed. Additionally, in the case of categorical variables with only a few observations, scholars should consider collapsing these into another category (e.g., if there are only a few observations in an age band of 70\u201379 years old, this can be collapsed into the previous age band of 60\u201369 years old). If there are uncommon continuous values above or below a certain threshold, it may be prudent to collapse these into another category or creating a new category (e.g., top-coding a new \u201870+\u2019 age variable for any age equal to or above 70). While recoding may lead to synthetic datasets with less utility, this approach might be required to reduce disclosure risk, something that data synthesizers will have to carefully consider in light of the sensitivity of the dataset along with national laws and guidelines.\n\nWhen the creation of synthetic datasets for disclosure control was first proposed in the early 1990s, it was considered \u201crather radical\u201d at the time (pg. 461; Rubin, 1993). Researchers have continued improving this method since these initial proposals (Reiter, 2005b; Reiter, 2005a; Reiter and Raghunathan, 2007), but only more recently has an easy-to-implement tool for creating synthetic data become available. The synthpop R package enables researchers to generate and share synthetic datasets that mimic original datasets with sensitive information. Importantly, the use synthetic data will improve the reproducibility of biobehavioral research and help generate novel hypotheses for future research (Bonn\u00e9ry et al., 2019).\n",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "7abcc2ca-1ebd-415e-a034-bcb08a155264",
+      "submission_id": "e04dfc32-e502-4dc2-b5a9-1de2e338a78f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mone Zaidi, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53275.sa1](https://doi.org/10.7554/eLife.53275.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe feel that the study is important as it touches on an emerging area of data sharing, provenance and reproducibility \u2013 a nascent movement towards achieving rigor and transparency that is being adopted by funding agencies, journal editors and industry alike. Applying the concept of synthetic datasets, in this case using SynthpopR, is seen as innovative and applicable to a wide range of investigations, importantly to those where full data and identity disclosure are not possible. The tool is likely to be utilized widely in translational and clinical research.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Synthetic datasets: A primer for the biobehavioural sciences to promote reproducibility and hypothesis-generation\" for consideration by eLife. Your article has been reviewed by Christian B\u00fcchel as the Senior Editor, Mone Zaidi as the Reviewing Editor, and two reviewers. The following individual involved in review of your submission has agreed to reveal their identity: Dorothy VM Bishop (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nCreation of synthetic datasets has been adopted in some areas of social science where large survey datasets are used, and where full anonymisation is difficult or impossible. Here, the author demonstrates the usefulness of the synthpop R package for generating synthetic data in a different field, where datasets are typically smaller and simpler.\n\nWhile the paper does not add new empirical observations or analysis approaches, it is, as its title indicates, a primer for others who might wish to try this approach. It highlights the benefits of synthetic datasets as compared to open research data. Importantly, the use of synthetic datasets shows reliable general utility in terms of data reproducibility of original findings. As long as the risk of identity disclosure is eliminated, synthetic datasets can and should be employed given the reproducibility of scientific data in biomedical sciences is a growing issue. The inclusion of oxytocin data re-analyzed in the synthetic datasets is a strength. The data are strong and well presented. The manuscript is clearly written for the most part and delivers a straightforward message that would be useful to a general readership. Nonetheless several areas need improvement and further analysis.\n\nEssential revisions:\n\n1) It would be preferable to have more diversity in the illustrative datasets \u2013 perhaps even demonstrating a case when synthpop does not perform as well. In particular, questions were raised regarding data with unusual distributions, evident outliers, or a hierarchical structure, for example, those with a code for family, and then family members.\n\n2) There is mention in the Discussion section about cases where the synthetic dataset has poor utility. Perhaps, this cannot be predicted in advance, but it would be interesting to test this with datasets that may have the kinds of characteristics that are noted in point 1 (above). Indeed, this would all get rather meta, but one could simulate data that has specific features, such as striking outliers or non-normal distributions, to determine how far synthpop could retain its utility in such situations. Maybe this would be a better use of the second demonstration (see point 3). Would it be possible to take the original dataset and throw in some outliers or transform distributions to push synthpop to determine how well it stands up to non-normal data and the likes.\n\n3) The three illustrative cases seem repetitive. Examples 1 and 3 show how the package worked with relatively large and small datasets, respectively, but example 2 seemed unnecessary. It is suggested that this part of an online appendix or is utilized it as noted in point 2 (above).\n\n4) There is the issue about discarding data points that happen to replicate a real individual by chance. It is mentioned in the Introduction, again in Results section and in the Discussion section. A reviewer isn't sure about the logic of removing these. How would the individual \u2013 or anyone else \u2013 know this was their data? There is a problem with de-identification in a real dataset. For example, one knows that someone is a 55-year-old, left-handed woman, and there is only one of those in the sample. But if one knows that a dataset is synthesized, one could not be confident that the remainder of the data in that row came from this person.\n\n5) It would be critical to model missing data. This might have an impact on fidelity of the synthetic data.\n",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "16b24930-13de-4bb6-9638-c6d0c376f330",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C1",
+      "claim": "Open research data provide considerable scientific, societal, and economic benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "Open research data provide considerable scientific, societal, and economic benefits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work (Arzberger et al., 2004; Munaf\u00f2 et al., 2017; Murdoch and Detsky, 2013; Piwowar et al., 2011) as indicated in the full text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "626d0996-2e65-41d8-aaae-38d68b9b89cf",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C2",
+      "claim": "Disclosure risks can sometimes limit the sharing of open data, especially in datasets that include sensitive details or information from individuals with rare disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "However, disclosure risks can sometimes limit the sharing of open data, especially in datasets that include sensitive details or information from individuals with rare disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about data sharing challenges, drawing on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "9f1314e9-f6f1-42db-b597-88199a1e8242",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C3",
+      "claim": "Synthetic datasets were originally developed to permit the sharing of confidential census data.",
+      "claim_type": "EXPLICIT",
+      "source": "This article introduces the concept of synthetic datasets, which is an emerging method originally developed to permit the sharing of confidential census data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations in the full text (Little, 1993; Reiter, 2005b; Reiter, 2005a; Reiter and Raghunathan, 2007; Rubin, 1993) and summary reference (Bonn\u00e9ry et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "310b7963-882d-4859-b5f7-b2b5fda8b9b3",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C4",
+      "claim": "Synthetic datasets mimic real datasets by preserving their statistical properties and the relationships between variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic datasets mimic real datasets by preserving their statistical properties and the relationships between variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional claim about synthetic datasets, supported by citations (Little, 1993; Reiter, 2005b; Reiter, 2005a; Reiter and Raghunathan, 2007; Rubin, 1993) in the full text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "f1072232-83ee-4daa-bbb4-48480c968661",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C5",
+      "claim": "Synthetic datasets reduce disclosure risk to essentially nil as no record in the synthetic dataset represents a real individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this method also reduces disclosure risk to essentially nil as no record in the synthetic dataset represents a real individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation (Duncan and Elliot, 2011) in the full text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "ab410c24-664a-46ae-b880-26d928193086",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C6",
+      "claim": "With open data, scholars can verify results, generate new knowledge, form new hypotheses, and reduce the unnecessary duplication of data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "With open data, scholars can verify results, generate new knowledge, form new hypotheses, and reduce the unnecessary duplication of data collection (Asendorpf et al., 2013; Nosek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "8f8414ae-b157-40af-a205-fd0efde67c69",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C7",
+      "claim": "Researchers who wish to share data while reducing the risk of disclosure have traditionally used data anonymization procedures, in which explicit identifiers such as names, addresses, and national identity numbers are removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers who wish to share data while reducing the risk of disclosure have traditionally used data anonymization procedures, in which explicit identifiers such as names, addresses, and national identity numbers are removed (Hrynaszkiewicz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "a71d9e55-131d-49c2-9339-7a6f2454ebb2",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C8",
+      "claim": "Specific individuals can still be identified in anonymized datasets with high accuracy despite anonymization efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these anonymization efforts, specific individuals can still be identified in anonymized datasets with high accuracy (Ohm, 2009; Rocher et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "11057542-9003-4781-8994-d325664c306b",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C9",
+      "claim": "Data aggregation and random noise can distort the relationships between variables in the dataset, which can interfere with reproducibility and exploratory data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Data aggregation and random noise can also distort the relationships between variables in the dataset (Purdam and Elliot, 2007), which can interfere with reproducibility and exploratory data analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work and logical inference about the consequences.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "39d644f4-684f-4e9c-b3c1-ac1c414ea84d",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C10",
+      "claim": "The creation of synthetic datasets can substantially overcome replicability issues by creating a new dataset that mimics an original dataset by preserving its statistical properties and relationships between variables.",
+      "claim_type": "EXPLICIT",
+      "source": "The creation of synthetic datasets can substantially overcome replicability issues, as this method creates a new dataset that mimics an original dataset by preserving its statistical properties and relationships between variables (Little, 1993; Reiter, 2005b; Reiter, 2005a; Reiter and Raghunathan, 2007; Rubin, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "b15e49f2-0eac-4d3e-8069-a9c9c82b253f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C11",
+      "claim": "Synthetic datasets reduce disclosure risk to essentially zero, as no complete casewise record in the new dataset represents a real individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic datasets also reduce disclosure risk to essentially zero, as no complete casewise record in the new dataset represents a real individual (Duncan and Elliot, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "755ff504-ffa9-46d0-bd09-84e2884d1a23",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C12",
+      "claim": "Synthetic datasets allow researchers to fit exploratory models in the synthetic datasets, which the data custodians can verify in the original data.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic datasets also allow researchers to fit exploratory models in the synthetic datasets, which the data custodians can verify in the original data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the utility of synthetic datasets based on their properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "088444d2-f31a-4823-a4b3-29a2de6d6eda",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C13",
+      "claim": "Synthetic datasets enable readers and reviewers to better understand the data, as they can recreate the reported analyses and explore data distributions, variance, outliers, and means.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, synthetic datasets enable readers and reviewers to better understand the data, as they can recreate the reported analyses and explore data distributions, variance, outliers, and means.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of synthetic datasets for transparency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "261783fb-3c86-4a01-8655-1e3cf9c6c778",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C14",
+      "claim": "Synthetic datasets were originally developed for sharing sensitive population-level data.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic datasets were originally developed for sharing sensitive population-level data (for a summary, see Bonn\u00e9ry et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a summary work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "71160e51-d184-421b-ab70-4221040f7eb7",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C15",
+      "claim": "The use of synthetic data for sharing sensitive information is beginning to emerge in the biobehavioural sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of synthetic data for sharing sensitive information is beginning to emerge in the biobehavioural sciences (e.g., Arslan et al., 2018; Newbury et al., 2018); however, this approach is not widely known in the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to examples in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "be4deee7-3ed4-4b96-b4f2-d95d66eb8235",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C16",
+      "claim": "The R script and datasets to reproduce the analyses described in this paper are available online at https://github.com/dsquintana/synthpop-primer.",
+      "claim_type": "EXPLICIT",
+      "source": "The R script and datasets to reproduce the analyses described in this paper are available online at https://github.com/dsquintana/synthpop-primer (Quintana, 2019; copy archived at https://github.com/elifesciences-publications/synthpop-primer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "2ad0ad0b-6932-4186-8cc2-c2db31de7abb",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C17",
+      "claim": "Synthetic datasets are created by replacing some or all of the data by sampling from an appropriate probability distribution, in a similar fashion to multiple imputation.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic datasets are created by replacing some or all of the data by sampling from an appropriate probability distribution, in a similar fashion to multiple imputation (Drechsler, 2011; Raghunathan et al., 2003; Reiter, 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "0a1d67d6-82da-4187-b618-2517b70d265c",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C18",
+      "claim": "The default synthesis method in synthpop is the classification and regression tree (CART) procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "The default synthesis method in synthpop is the classification and regression tree (CART) procedure (Reiter, 2005b), which will be used in this primer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "8202ba24-2020-42b4-be8e-fde701fa30c2",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C19",
+      "claim": "The CART procedure is more flexible and generally performs better than other synthesis methods, such as random forests and bagging.",
+      "claim_type": "EXPLICIT",
+      "source": "The CART procedure is more flexible and generally performs better than other synthesis methods, such as random forests and bagging (Drechsler and Reiter, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to comparative methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "5de602a9-b129-4701-8d42-351c52c0c48a",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C20",
+      "claim": "If data synthesis happens to recreate a replicate of a real individual by chance, these replicates can be easily identified and removed from the dataset to reduce the risk of de-identification.",
+      "claim_type": "EXPLICIT",
+      "source": "If data synthesis happens to recreate a replicate of a real individual by chance, these replicates can be easily identified and removed from the dataset to reduce the risk of de-identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how to handle replicates in synthetic data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "f9d1b2e4-b167-4a8f-88fb-af6061adff27",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C21",
+      "claim": "There are two broad approaches for assessing the utility of a synthesized dataset: general utility and specific utility.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two broad approaches for assessing the utility of a synthesized dataset: general utility and specific utility (Snoke et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "f15fbf4c-808f-4fba-a4ba-f60f2f1f5d06",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C22",
+      "claim": "General utility reflects the overall similarities in the statistical properties and multivariate relationships between the synthetic and original datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "General utility reflects the overall similarities in the statistical properties and multivariate relationships between the synthetic and original datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about general utility.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "3119f6c6-7bbd-47b9-9bd3-afa98d2c4b5b",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C23",
+      "claim": "The first step in assessing general utility is data visualisation.",
+      "claim_type": "EXPLICIT",
+      "source": "The first step in assessing general utility is data visualisation (Nowok et al., 2016; Raab et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "698444d8-1bfb-4405-8f81-2249e61bd32c",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C24",
+      "claim": "The compare() function in synthpop can be used to construct side-by-side univariate distributions of variables in the synthetic and observed datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The compare() function in synthpop can be used to construct side-by-side univariate distributions of variables in the synthetic and observed datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the functionality of the synthpop package.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "560cee49-0d27-4292-afd6-14fa77465033",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C25",
+      "claim": "Visualizing bivariate comparisons between specific variables of interest is recommended, as two datasets might have similar statistical properties despite different distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Visualizing bivariate comparisons between specific variables of interest is also recommended, as two datasets might have similar statistical properties despite different distributions (e.g., Anscombe's quartet; Anscombe, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a classic example (Anscombe's quartet).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "80b51e17-cbd4-4ae4-a525-db22ee689695",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C26",
+      "claim": "Confirming general utility is a necessary step for making inferences from the synthetic dataset and is especially important for data exploration in the synthetic dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming general utility is a necessary step for making inferences from the synthetic dataset and is especially important for data exploration in the synthetic dataset (Snoke et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "65d71f86-bd41-41d4-8080-6d3003c5b4bb",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C27",
+      "claim": "Specific utility for fitted synthetic models can be assessed by calculating the lack-of-fit against the same model in the original data.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific utility for fitted synthetic models can be assessed by calculating the lack-of-fit against the same model in the original data (Nowok et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "0e65bfa9-1205-44ee-a956-fe1d1439116e",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C28",
+      "claim": "Specific coefficients in synthetic models can be compared against coefficients in the original models by assessing the differences in standardized coefficients and confidence interval (CI) overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific coefficients in synthetic models can also be compared against coefficients in the original models by assessing the differences in standardized coefficients and confidence interval (CI) overlap (Karr et al., 2006), which is the ratio of the overlap of the intervals to an average of their lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "f309e801-92b9-4401-9138-56a913794f4b",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C29",
+      "claim": "Higher overlap is indicative of greater specific utility, which suggests that inference from fitted synthetic models is valid.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher overlap is indicative of greater specific utility, which suggests that inference from fitted synthetic models is valid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the interpretation of CI overlap.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "39ce9120-9306-4cf5-9886-6cb6069beeb9",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C30",
+      "claim": "Synthetic datasets prepared for export will have a single string 'FAKE_DATA' variable added to the front of the dataset using the sdc() function in synthpop to remove any possible confusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, to remove any possible confusion, synthetic datasets prepared for export will have a single string 'FAKE_DATA' variable added to the front of the dataset using the sdc() function in synthpop, as recommended by Nowok et al. (2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a recommendation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "adcf597d-0822-402d-910e-bfbe4656ddb8",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C31",
+      "claim": "Van Cappellen et al. (2016) investigated the impact of oxytocin administration on self-reported spirituality and deposited the raw study data online.",
+      "claim_type": "EXPLICIT",
+      "source": "Van Cappellen et al. (2016) investigated the impact of oxytocin administration on self-reported spirituality and deposited the raw study data online (https://osf.io/rk2x7/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to a prior study with data availability information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "eaa45c03-8181-4a74-9d95-98a648f2096e",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C32",
+      "claim": "In the Van Cappellen et al. study, volunteers were randomly assigned to self-administer an intranasal oxytocin (N = 41) or intranasal placebo spray (N = 42).",
+      "claim_type": "EXPLICIT",
+      "source": "In a between-participants design, volunteers were randomly assigned to self-administer an intranasal oxytocin (N = 41) or intranasal placebo spray (N = 42).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "270e50b0-4bd0-4372-bb0e-21bc1c09f61d",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C33",
+      "claim": "In the Van Cappellen et al. study, approximately forty minutes after receiving the nasal spray, participants were asked \"Right now, would you say that spirituality is important in your life?\".",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately forty minutes after receiving the nasal spray, participants were asked \"Right now, would you say that spirituality is important in your life?\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement procedure of the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "9acbf50c-be77-4f7c-ab18-5715bb8320fa",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C34",
+      "claim": "The reported outcome from an ANCOVA in the Van Cappellen et al. study suggested that when accounting for religious affiliation, participants who self-administered the oxytocin nasal spray reported that spirituality was more important in their lives compared to those who self-administered the placebo spray.",
+      "claim_type": "EXPLICIT",
+      "source": "The reported outcome from an ANCOVA suggested that when accounting for religious affiliation, participants who self-administered the oxytocin nasal spray reported that spirituality was more important in their lives compared to those who self-administered the placebo spray.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the main finding of the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "27259c70-e242-4f00-a218-760f6bf30e0d",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C35",
+      "claim": "A comparison of the four main variables of interest in the Van Cappellen et al. synthetic dataset revealed similar distributions between the synthetic and the original datasets and no individual extreme values.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the four main variables of interest revealed similar distributions between the synthetic and the original datasets and no individual extreme values (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual comparison shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "512df855-3af3-4991-9b2d-fcff17be23e0",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C36",
+      "claim": "There were no replicated unique sets of values in the Van Cappellen et al. synthetic dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "There were also no replicated unique sets of values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the synthetic data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "cb66fd40-4cda-40f3-a530-aba0b6d65447",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C37",
+      "claim": "A bivariate comparison of self-reported spiritualty and religious affiliation between the nasal spray groups suggested that the counts between the synthesized and original datasets were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "A bivariate comparison of self-reported spiritualty (Figure 1\u2014figure supplement 1) and religious affiliation (Figure 1\u2014figure supplement 2) between the nasal spray groups suggested that the counts between the synthesized and original datasets were similar.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual comparisons shown in the figure supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "1af73580-9901-46d8-af52-96848c46f9b4",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C38",
+      "claim": "The relationship between age and self-reported spirituality was similar between the Van Cappellen et al. synthetic and original datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between age and self-reported spirituality was also similar between datasets (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual comparison shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "6b8221f9-0fc0-43d6-b1a1-ab42bf77389d",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C39",
+      "claim": "The visualisations of the Van Cappellen et al. synthetic dataset were indicative that the synthetic dataset has good general utility.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these visualisations were indicative that the synthetic dataset has good general utility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the visual comparisons presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "aedf71dd-7a88-4254-bfb6-acbced5c50ca",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C40",
+      "claim": "An independent samples Welch's t-test in the Van Cappellen et al. original dataset suggested no significant difference in spirituality ratings between the nasal spray groups [t = 1.14, 95% CI (\u22120.45, 1.63), p=0.26].",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis in the original dataset suggested no significant difference in spirituality ratings between the nasal spray groups [t = 1.14, 95% CI (\u22120.45, 1.63), p=0.26].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from analysis of the original data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "704941ad-7b2d-427f-ac2a-d32ac04d6d96",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C41",
+      "claim": "Estimating the linear model in the Van Cappellen et al. synthesized dataset revealed the same p-value outcome (t = \u22121.12, p=0.26).",
+      "claim_type": "EXPLICIT",
+      "source": "Estimating this linear model in the synthesized dataset revealed the same p-value outcome (t = \u22121.12, p=0.26).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from analysis of the synthetic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "80d828bb-3fb5-40f6-b95b-bf3a63e47cc0",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C42",
+      "claim": "The lack-of-fit test comparing the models generated in the original and synthetic Van Cappellen et al. datasets was not statistically significant, X2 (2)=0.01, p=0.995.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack-of-fit test comparing the models generated in the original and synthetic datasets was not statistically significant, X2 (2)=0.01, p=0.995.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "b33b2e4d-541c-4901-9540-9012f2b0dc69",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C43",
+      "claim": "The standardized difference of the nasal spray condition coefficient between the synthesized and the observed Van Cappellen et al. data for the t-test was 0.003, which was not statistically significant (p=0.998).",
+      "claim_type": "EXPLICIT",
+      "source": "The standardized difference of the nasal spray condition coefficient between the synthesized and the observed data for this t-test was 0.003, which was not statistically significant (p=0.998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "5d835796-16bf-4948-ab1b-aa1537c4cbfd",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C44",
+      "claim": "A comparison of confidence intervals for the Van Cappellen et al. t-test revealed 99.94% CI overlap between the synthetic and original datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of confidence intervals revealed 99.94% CI overlap between the synthetic and original datasets (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "da0b189a-c660-4271-9298-7cbd57deb109",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C45",
+      "claim": "The model from the Van Cappellen et al. synthesized data demonstrates high specific utility for the t-test.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results indicate that the model from the synthesized data demonstrates high specific utility for this t-test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the statistical comparisons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "7d23ab29-0a25-4c6e-a69f-18cf9964cfcf",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C46",
+      "claim": "A Pearson correlation test in the Van Cappellen et al. original dataset revealed no statistically significant correlation between age and self-reported spirituality [r = 0.04, 95% CI (\u22120.19, 0.26), p=0.75].",
+      "claim_type": "EXPLICIT",
+      "source": "A Pearson correlation test revealed no statistically significant correlation between age and self-reported spirituality [r = 0.04, 95% CI (\u22120.19, 0.26), p=0.75], which is the same result as the linear model equivalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from analysis of the original data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "8d05a8f9-afe5-4fea-88dc-ddce334561c1",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C47",
+      "claim": "Estimating the correlation model using the Van Cappellen et al. synthetic dataset revealed a similar Pearson's r value and a non-significant result (r = 0.08, p=0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "Estimating this model using the synthetic dataset revealed a similar Pearson's r value and a non-significant result (r = 0.08, p=0.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from analysis of the synthetic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "40d6e5d7-5a9f-44b5-802e-2486fcd9dfa1",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C48",
+      "claim": "The lack-of-fit test comparing the correlation models generated in the original and synthetic Van Cappellen et al. datasets was not statistically significant, X2 (2)=0.13, p=0.94.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack-of-fit test comparing the models generated in the original and synthetic datasets was not statistically significant, X2 (2)=0.13, p=0.94.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "c3f61f8b-570c-42c1-9077-a250193c2e98",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C49",
+      "claim": "The test of the standardized differences between the synthetic and original Van Cappellen et al. data for the relationship coefficient was not statistically significant (p=0.72) and there was 90.8% CI overlap between the synthetic and observed data.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the test of the standardized differences between the synthetic and original data for the relationship coefficient was not statistically significant (p=0.72) and there was 90.8% CI overlap between the synthetic and observed data (Figure 1C), suggesting high specific utility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "c926dcf8-014b-46f6-9752-29808fac95ea",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C50",
+      "claim": "The original Van Cappellen et al. outcome that oxytocin increased self-reported spirituality controlling for religious affiliation was verified [F(1,75)=4.87, p=0.03].",
+      "claim_type": "EXPLICIT",
+      "source": "First, the original outcome was verified [F(1,75)=4.87, p=0.03] and then the analysis was structured as a linear regression model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from re-analysis of the original data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "7670b694-d2db-46ae-81c2-7b2f2b22ef56",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C51",
+      "claim": "Estimating the ANCOVA model using the Van Cappellen et al. synthetic dataset revealed similar t-statistic and a p-value that was on the border of statistical significance (t = \u22121.8, p=0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "Estimating this model using the synthetic dataset revealed similar t-statistic and a p-value that was on the border of statistical significance (t = \u22121.8, p=0.07).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from analysis of the synthetic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "9b8b4212-cb7b-4c7b-80fd-f44d59fad94b",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C52",
+      "claim": "The lack-of-fit test for the full Van Cappellen et al. ANCOVA model was not statistically significant, X2 (3)=0.91, p=0.82.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack-of-fit test for the full model was not statistically significant, X2 (3)=0.91, p=0.82.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "eaf8beb5-32bf-4f83-801b-8e26ace610cc",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C53",
+      "claim": "The test of the standardized differences between the synthetic and original Van Cappellen et al. data for the nasal spray coefficient was not statistically significant (p=0.63) and there was 87.8% overlap between the synthetic and observed data.",
+      "claim_type": "EXPLICIT",
+      "source": "The test of the standardized differences between the synthetic and original data for the nasal spray coefficient was not statistically significant (p=0.63) and there was 87.8% overlap between the synthetic and observed data (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "2cf66b87-7ee0-4665-adad-a69a20daff50",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C54",
+      "claim": "The test of the standardized differences between the synthetic and original Van Cappellen et al. data for the religious affiliation coefficient was not statistically significant (p=0.49) and there was 82.3% overlap between the synthetic and observed data.",
+      "claim_type": "EXPLICIT",
+      "source": "The test of the standardized differences between the synthetic and original data for the religious affiliation coefficient was not statistically significant (p=0.49) and there was 82.3% overlap between the synthetic and observed data (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "07c35894-c3a0-47e5-bfd9-5b5b0af7b53f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C55",
+      "claim": "The results are indicative of high specific utility for the overall Van Cappellen et al. synthesized model and its coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results are indicative of high specific utility for the overall synthesized model and its coefficients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the statistical comparisons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "590cbeb5-8314-4546-8dce-ffe0d4174ead",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C56",
+      "claim": "Sociosexual orientation is described as an individual's propensity to participate in uncommitted sexual relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "Sociosexual orientation is described as an individual's propensity to participate in uncommitted sexual relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about sociosexual orientation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "874e912e-8c74-4b68-b267-35e5a1f735e3",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C57",
+      "claim": "Jones and DeBruine, 2019 collected sociosexual orientation data from 9627 individuals using a revised version of the sociosexual orientation inventory along with data on self-rated attractiveness and basic demographic information.",
+      "claim_type": "EXPLICIT",
+      "source": "Jones and DeBruine, 2019 collected sociosexual orientation data from 9627 individuals using a revised version of the sociosexual orientation inventory (Penke and Asendorpf, 2008) both in the laboratory and online, along with data on self-rated attractiveness and basic demographic information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection of the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "da33943c-4c86-4e86-9925-21da61ad9690",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C58",
+      "claim": "Fourteen variables were synthesized from the Jones and DeBruine original dataset, which has been archived online.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourteen variables were synthesized from the original dataset, which has been archived online (https://osf.io/6bk3w/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the synthetic data generation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "f1eef965-a3e4-4ff7-bff0-deb7627b254f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C59",
+      "claim": "The Jones and DeBruine synthetic data demonstrated good general utility, as the distributions of variables were comparable between the original and synthetic datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthetic data demonstrated good general utility, as the distributions of variables were comparable between the original and synthetic datasets (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual comparison shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "4020158b-c69c-4a23-9e5b-5a3a74332539",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C60",
+      "claim": "In the Jones and DeBruine original dataset, both self-rated attractiveness (t = 13.64, p<0.001) and age (t = 27.69, p<0.001) were statistically significant predictors of the number of times someone has had sexual intercourse on only a single occasion with another individual, whereas location was not a significant predictor (t = 0.05, p=0.96).",
+      "claim_type": "EXPLICIT",
+      "source": "Both self-rated attractiveness (t = 13.64, p<0.001) and age (t = 27.69, p<0.001) were statistically significant predictors, whereas location was not a significant predictor (t = 0.05, p=0.96).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from analysis of the original data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "02df453b-a682-4a43-be75-f58a0d5d8484",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C61",
+      "claim": "Estimating the linear model in the Jones and DeBruine synthesized dataset revealed relatively similar t-statistic outcomes (self-rated attractiveness: t = 14, p>0.001; age: t = 27.51, p<0.001; location: t = 1.12, p=0.26).",
+      "claim_type": "EXPLICIT",
+      "source": "Estimating this linear model in the synthesized dataset revealed relatively similar t-statistic outcomes (self-rated attractiveness: t = 14, p>0.001; age: t = 27.51, p<0.001; location: t = 1.12, p=0.26).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from analysis of the synthetic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "c67dcc0c-1a9e-4130-980f-1b01339f5a6a",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C62",
+      "claim": "The lack-of-fit test for the Jones and DeBruine model was not statistically significant, [X2 (4)=1.5, p=0.83].",
+      "claim_type": "EXPLICIT",
+      "source": "The lack-of-fit test was not statistically significant, [X2 (4)=1.5, p=0.83], suggesting that the method used for synthesis retained all the relationships between variables that influenced the parameters of the fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "4332c286-7ea7-4e11-9f83-766cecfb64f0",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C63",
+      "claim": "The standardized difference of the self-rated attractiveness coefficient between the synthesized and the observed Jones and DeBruine data was 0.32, which was not statistically significant (p=0.75).",
+      "claim_type": "EXPLICIT",
+      "source": "The standardized difference of the self-rated attractiveness coefficient between the synthesized and the observed data was 0.32, which was not statistically significant (p=0.75).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "5ee8a325-2c6b-47d8-b539-974767116a7a",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C64",
+      "claim": "A comparison of confidence intervals for the self-rated attractiveness coefficient in the Jones and DeBruine data revealed 91.8% CI overlap between the synthetic and original datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of confidence intervals revealed 91.8% CI overlap between the synthetic and original datasets (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "4875e5e5-019c-4d67-9b2c-24e1e6c3db04",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C65",
+      "claim": "The standardized difference of the age coefficient between the synthesized and the observed Jones and DeBruine data was \u22120.28, which was not statistically significant (p=0.78).",
+      "claim_type": "EXPLICIT",
+      "source": "The standardized difference of the age coefficient between the synthesized and the observed data for this t-test was \u22120.28, which was not statistically significant (p=0.78).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "756e221d-3dcb-4168-b36b-43fa48a69d5b",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C66",
+      "claim": "A comparison of confidence intervals for the age coefficient in the Jones and DeBruine data revealed 92.9% CI overlap between the synthetic and original datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of confidence intervals revealed 92.9% CI overlap between the synthetic and original datasets (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "076002c0-097d-4f3c-8a01-b730187d5da3",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C67",
+      "claim": "The standardized difference of the location coefficient between the synthesized and the observed Jones and DeBruine data was 1.08, which was not statistically significant (p=0.28).",
+      "claim_type": "EXPLICIT",
+      "source": "The standardized difference of the location coefficient between the synthesized and the observed data for this t-test was 1.08, which was not statistically significant (p=0.28).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "a0794925-bee5-4630-8139-059711c13afd",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C68",
+      "claim": "A comparison of confidence intervals for the location coefficient in the Jones and DeBruine data revealed 72.4% CI overlap between the synthetic and original datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of confidence intervals revealed 72.4% CI overlap between the synthetic and original datasets (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "238d04a6-7a5b-4574-8737-34b3b94d6864",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C69",
+      "claim": "The model from the Jones and DeBruine synthesized data demonstrated high specific utility.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results indicate that this model from the synthesized data demonstrated high specific utility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the statistical comparisons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "08fe8d7d-8d1e-4e5f-821f-f423f9b4bdd8",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C70",
+      "claim": "A comparison of the original and synthetic Jones and DeBruine datasets revealed 213 replicated individuals (2.3% of the total sample).",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the original and synthetic datasets revealed 213 replicated individuals (2.3% of the total sample).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing the datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "db1882a8-59f8-46ef-aa0a-6e987b293fe5",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C71",
+      "claim": "The lack-of-fit test between the original Jones and DeBruine model and synthetic model with replicated individuals removed was not statistically significant, X2 (4)=2.8, p=0.6.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack-of-fit test between the original model and synthetic model with replicated individuals was not statistically significant, X2 (4)=2.8, p=0.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing the models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "be83eff1-15c7-4438-ac9f-fc55b078975d",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C72",
+      "claim": "The refitted Jones and DeBruine model coefficients with replicated individuals removed yielded similar results to the model derived from the original data (self-rated attractiveness: standardized difference = 0.3, p=0.77, CI overlap = 92.4%; age: standardized difference = \u22120.74, p=0.46, CI overlap = 81.2%; location: standardized difference = 0.95, p=0.34, CI overlap = 75.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "The refitted model coefficients yielded similar results to the model derived from the original data (self-rated attractiveness: standardized difference = 0.3, p=0.77, CI overlap = 92.4%; age: standardized difference = \u22120.74, p=0.46, CI overlap = 81.2%; location: standardized difference = 0.95, p=0.34, CI overlap = 75.8%; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "324892d8-4721-46e7-9c90-75ca2828250d",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C73",
+      "claim": "Reducing the risk of disclosure by removing replicated individuals in the Jones and DeBruine synthetic dataset maintains specific utility.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, reducing the risk of disclosure by removing replicated individuals in the synthetic dataset maintains specific utility, in this case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the statistical comparisons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "72bd13a6-74db-4f41-8dcc-7af78855d852",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C74",
+      "claim": "Heart Rate Variability (HRV) is a non-invasive measure of autonomic cardiac control.",
+      "claim_type": "EXPLICIT",
+      "source": "Heart Rate Variability (HRV) is a non-invasive measure of autonomic cardiac control (Akselrod et al., 1981) and thought to be positively correlated with fitness level (Dixon et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "0e8385ef-2e96-483f-8b26-de888bbd0161",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C75",
+      "claim": "HRV is thought to be positively correlated with fitness level.",
+      "claim_type": "EXPLICIT",
+      "source": "Heart Rate Variability (HRV) is a non-invasive measure of autonomic cardiac control (Akselrod et al., 1981) and thought to be positively correlated with fitness level (Dixon et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "4530e6ad-32ff-4e7b-970d-c0be0caad588",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C76",
+      "claim": "The Root Mean Square of Successive Differences (RMSSD) is a commonly used HRV measure.",
+      "claim_type": "EXPLICIT",
+      "source": "The Root Mean Square of Successive Differences (RMSSD) is a commonly used HRV measure, however, its distribution tends to be positively skewed (e.g., Kobayashi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "a08e4a7a-ecc6-49a7-8b2d-68cdf484483d",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C77",
+      "claim": "The distribution of RMSSD tends to be positively skewed.",
+      "claim_type": "EXPLICIT",
+      "source": "The Root Mean Square of Successive Differences (RMSSD) is a commonly used HRV measure, however, its distribution tends to be positively skewed (e.g., Kobayashi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "8ad72651-bf64-4919-a4be-9358794307c9",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C78",
+      "claim": "Missing data are common in HRV investigations due to equipment malfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, missing data are common in HRV investigations due to equipment malfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on practical knowledge of HRV research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "8e53cc41-c2a6-4e25-9244-8f3ebb81ef89",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C79",
+      "claim": "Twenty-seven data sets with four variables (heart rate, weight, fitness level, and HRV) were simulated for the creation of synthetic datasets, which included outliers.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate the effects of the distribution pattern of HRV (normal, low skew, high skew), and missing data (none, 5%, 20%) for a range of sample sizes (40, 100, 10000), twenty-seven data sets with four variables (heart rate, weight, fitness level, and HRV) were simulated for the creation of synthetic datasets, which included outliers (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "0411b34a-9d15-4e00-b5fb-cdadd9d3d793",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C80",
+      "claim": "For all simulated HRV datasets, HRV and fitness level were modelled to have a relationship that is typically associated with a medium effect size (r = 0.3).",
+      "claim_type": "EXPLICIT",
+      "source": "For all datasets, HRV and fitness level were modelled to have a relationship that is typically associated with a medium effect size (r = 0.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "a0f4b2b6-9d8e-4186-9476-08047a5b32a0",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C81",
+      "claim": "None of the lack-of-fit tests for the simulated HRV datasets were statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the lack-of-fit tests were statistically significant (Supplementary file 1), suggesting that the method used for synthesis retained all the relationships between variables that influenced the parameters of the fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "c5fd29f4-1220-42ee-a783-ff01ad7eb567",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C82",
+      "claim": "A comparison of confidence intervals revealed strong overlap between the synthetic and original datasets for most (but not all) of the 27 simulated HRV analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of confidence intervals revealed strong overlap between the synthetic and original datasets for most (but not all) of the 27 analyses and none of the standardized coefficient differences between the synthesized and the observed datasets were statistically significant (all p's > 0.05; Figure 3, Figure 3\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "a0930219-2efd-4b26-9100-57490c8b3a50",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C83",
+      "claim": "None of the standardized coefficient differences between the synthesized and the observed simulated HRV datasets were statistically significant (all p's > 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of confidence intervals revealed strong overlap between the synthetic and original datasets for most (but not all) of the 27 analyses and none of the standardized coefficient differences between the synthesized and the observed datasets were statistically significant (all p's > 0.05; Figure 3, Figure 3\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "00bf8c9d-36bd-4316-b381-d984baf60d1a",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C84",
+      "claim": "The overlap between the synthetic and original models were on the border of statistical significance when synthesizing data with a low skew in the simulated samples with 10,000 cases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the overlap between the synthetic and original models were on the border of statistical significance when synthesizing data with a low skew in the simulated samples with 10,000 cases (Supplementary file 1; Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result shown in the supplementary materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "f52f8072-f559-4edb-a5fb-0a57538e9178",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C85",
+      "claim": "All 27 synthetic HRV datasets demonstrated good general utility, regardless of the parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "All 27 synthetic datasets also demonstrated good general utility, regardless of the parameters (Figure 3\u2014figure supplements 3\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual comparisons shown in the figure supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "2f46c95f-b43b-4c29-a69a-815fafeb6a8f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C86",
+      "claim": "Synthetic dataset generation in synthpop seems to be relatively robust against differences in sample size, missingness, and skew in the simulated samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, synthetic dataset generation in synthpop seems to be relatively robust against differences in sample size, missingness, and skew in these simulated samples, however, there were indications of poorer performance in some of larger datasets with 10,000 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "c8b667fd-c463-44ef-8433-bc7f6faf83b5",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C87",
+      "claim": "There were indications of poorer performance in some of larger simulated datasets with 10,000 cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, synthetic dataset generation in synthpop seems to be relatively robust against differences in sample size, missingness, and skew in these simulated samples, however, there were indications of poorer performance in some of larger datasets with 10,000 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "4da606d9-fe86-4497-b7b7-832f80ec06d8",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C88",
+      "claim": "It is crucial that general and specific utility is assessed for each synthesised dataset, as it is difficult to predict before synthesis how well the procedure will perform.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, it is crucial that general and specific utility is assessed for each synthesised dataset, as it is difficult to predict before synthesis how well the procedure will perform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the variable performance observed in the simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "72a8a299-771f-4906-80f6-e8d8adfd13a4",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C89",
+      "claim": "Study participants are generally in favour of researchers sharing their deidentified data.",
+      "claim_type": "EXPLICIT",
+      "source": "Study participants are generally in favour of researchers sharing their deidentified data (Ludman et al., 2010; Mello et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "cbd928a8-fb85-49c1-b301-1d462a7c0098",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C90",
+      "claim": "When planning future studies researchers should include data sharing provisions when receiving participant consent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when planning future studies researchers should include data sharing provisions when receiving participant consent (Taichman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "47151510-3bf1-4142-bcb2-25d56e2ab77b",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C91",
+      "claim": "Obtaining updated consent to share data from participants who have not provided this when originally participating in a study can be resource intensive.",
+      "claim_type": "EXPLICIT",
+      "source": "Obtaining updated consent to share data from participants who have not provided this when originally participating in a study can be resource intensive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical observation about research logistics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "a3c83424-20bb-44f4-8125-cd7ae03fec8f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C92",
+      "claim": "Some have suggested that sharing deidentified datafiles should not require new re-consent from participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Some have suggested that sharing deidentified datafiles should not require new re-consent from participants (Taichman et al., 2017), but as mentioned above, many commonly used data deidentification approaches may not sufficiently reduce disclosure risk (Ohm, 2009; Rocher et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "7412eb2a-f632-4c0a-a67d-fe0538a81810",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C93",
+      "claim": "Arslan et al. (2018) collected highly sensitive data examining the role of ovulatory changes on sexual desire and behavior in women but did not request consent from participants to share data considering valid privacy concerns.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Arslan et al. (2018) collected highly sensitive data examining the role of ovulatory changes on sexual desire and behavior in women but did not request consent from participants to share data considering valid privacy concerns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the approach taken in a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "114f4a33-8357-48a0-89df-01d8c5bb8fb1",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C94",
+      "claim": "Arslan et al. created a synthetic version of their dataset using synthpop and made it available on a publicly accessible repository.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a synthetic version of the dataset was created using synthpop and made available on a publicly accessible repository.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the approach taken in a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "ddfd1ba7-ded0-4e5d-8d5e-e4899b13b4c9",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C95",
+      "claim": "Synthetic data can offer a valuable solution for sharing data collected under conditions where participants did not specifically provide consent for sharing data (and where re-consent is impractical), as well as for situations in which a dataset contains especially sensitive information.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, synthetic data can offer a valuable solution for sharing data collected under conditions where participants did not specifically provide consent for sharing data (and where re-consent is impractical), as well as for situations in which a dataset contains especially sensitive information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the utility of synthetic data based on the examples and arguments presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "d88e93ae-7956-41c7-a1a2-f38f28875384",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C96",
+      "claim": "Synthetic datasets can benefit the training of machine learning algorithms in research areas with a dearth of data, such as rare condition research, via the creation of additional synthetic datasets that closely match real datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the verification of results and hypothesis generation, synthetic datasets can also benefit the training of machine learning algorithms in research areas with a dearth of data, such as rare condition research (Ekbatani et al., 2017; Sabay et al., 2018), via the creation of additional synthetic datasets that closely match real datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "3ca45908-818c-4aed-ae88-5604aed9c073",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C97",
+      "claim": "One criticism of sharing raw data is that research groups would not have the first opportunity to analyse the data and report outcomes to their satisfaction.",
+      "claim_type": "EXPLICIT",
+      "source": "One criticism of sharing raw data is that research groups would not have the first opportunity to analyse the data and report outcomes to their satisfaction (Lo, 2015; Ross et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "c22e6eaf-19e8-47d4-943b-279763b1a7bb",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C98",
+      "claim": "It has been recommended that secondary data analysts should seek collaborations with teams that collected the original data in recognition of their investment in collecting the data.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been recommended that secondary data analysts should seek collaborations with teams that collected the original data in recognition of their investment in collecting the data (Taichman et al., 2016), but this is difficult to enforce in practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a recommendation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "0b6cf7e2-4ad7-4049-9bdc-c980259a6125",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C99",
+      "claim": "To make meaningful inferences with synthetic data, secondary data analysts need to verify their synthetic models against models from the original data, which is in the possession of the original authors who can verify these inferences.",
+      "claim_type": "EXPLICIT",
+      "source": "To make meaningful inferences with synthetic data, secondary data analysts need to verify their synthetic models against models from the original data, which is in the possession of the original authors who can verify these inferences (Reiter et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "7364770c-1c06-4c21-835f-3e9fb0095153",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C100",
+      "claim": "Open synthetic data provide an opportunity for secondary analysists scholars to fit models that the original authors may not have considered, while also encouraging them to collaborate with the original authors to verify their models in the real dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, open synthetic data provide an opportunity for secondary analysists scholars to fit models that the original authors may not have considered, while also encouraging them to collaborate with the original authors to verify their models in the real dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of synthetic data for collaboration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "4003b682-ac11-481a-94d2-d85e00bb1323",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C101",
+      "claim": "Journals have adopted a spectrum of public data archiving (PDA) policies, ranging from the policies that data should be made \"available upon request\" all the way to mandated data deposition in peer-reviewed journals dedicated to open data.",
+      "claim_type": "EXPLICIT",
+      "source": "Journals have adopted a spectrum of public data archiving (PDA) policies, ranging from the policies that data should be made \"available upon request\" all the way to mandated data deposition in peer-reviewed journals dedicated to open data (Sholler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "281a28b0-5d37-416f-94fd-a1a01d5f895b",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C102",
+      "claim": "Datasets with an \"available upon request\" policy are often difficult to retrieve in practice as corresponding authors can become unreachable or original datasets are lost.",
+      "claim_type": "EXPLICIT",
+      "source": "While an \"available upon request\" PDA policy is better than no policy at all (Stodden et al., 2018), such datasets are often difficult to retrieve in practice as corresponding authors can become unreachable or original datasets are lost (Couture et al., 2018; Stodden et al., 2018; Wicherts et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "af3fd6f8-da77-4e11-89f6-c9cdd5e63dd3",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C103",
+      "claim": "Sharing data with published papers would remove impediments for accessing data, with synthetic data offering a solution for when it is not possible to share the original dataset due to disclosure concerns.",
+      "claim_type": "EXPLICIT",
+      "source": "Sharing data with published papers would remove these impediments for accessing data, with synthetic data offering a solution for when it is not possible to share the original dataset due to disclosure concerns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of synthetic data for data sharing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "8868a44a-edc4-4c4a-8948-9986a04abb67",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C104",
+      "claim": "It is possible for synthetic data to have poor general and specific utility, which would diminish the benefits of sharing in terms of reproducibility and secondary data exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it is possible for synthetic data to have poor general and specific utility, which would diminish the benefits of sharing in terms of reproducibility and secondary data exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical statement about a limitation of synthetic data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "d6bd7f78-30e0-4d00-be86-bfb5f535cc5f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C105",
+      "claim": "Current synthetic data methods limit the types of statistical inference that can be performed on synthetic data to linear models.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, current synthetic data methods limit the types of statistical inference that can be performed on synthetic data to linear models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current limitations of synthetic data methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "67f5c729-af86-465c-8ff4-0b67009a00e2",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C106",
+      "claim": "The risk of identity disclosure from synthetic datasets is negligible but this only holds under two conditions: that none of the complete synthetic data records match with the original data and that there are no extreme single individual values in the dataset that can be linked to an individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, as mentioned above, the risk of identity disclosure from synthetic datasets is negligible but this only holds under two conditions: that none of the complete synthetic data records match with the original data and that there are no extreme single individual values in the dataset that can be linked to an individual (Drechsler, 2011; Duncan and Elliot, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "3567c74b-aeb5-41d0-8ce4-8c8fb09eced0",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C107",
+      "claim": "To reduce disclosure risk and the possibility that participants will recognise themselves in the dataset, complete matching records should be identified and removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, to reduce disclosure risk and the possibility that participants will recognise themselves in the dataset, complete matching records (i.e., when all variables in the original dataset for a case matches a case in the synthetic dataset) should be identified and removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on disclosure risk considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "ff690e85-dff0-4968-8064-e5202b0b1d5a",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C108",
+      "claim": "When the creation of synthetic datasets for disclosure control was first proposed in the early 1990s, it was considered \"rather radical\" at the time.",
+      "claim_type": "EXPLICIT",
+      "source": "When the creation of synthetic datasets for disclosure control was first proposed in the early 1990s, it was considered \"rather radical\" at the time (pg. 461; Rubin, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to the original proposal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "4a19fd99-97e1-443e-ae03-c799801e9cc5",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C109",
+      "claim": "Researchers have continued improving the synthetic data method since the initial proposals.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers have continued improving this method since these initial proposals (Reiter, 2005b; Reiter, 2005a; Reiter and Raghunathan, 2007), but only more recently has an easy-to-implement tool for creating synthetic data become available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to methodological developments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "4a494989-dba2-4524-918f-e2f9fd84d05f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C110",
+      "claim": "The synthpop R package enables researchers to generate and share synthetic datasets that mimic original datasets with sensitive information.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthpop R package enables researchers to generate and share synthetic datasets that mimic original datasets with sensitive information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the functionality of the synthpop package.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "e9572dd7-0df6-4a35-ab08-17c09869614e",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "claim_id": "C111",
+      "claim": "The use of synthetic data will improve the reproducibility of biobehavioral research and help generate novel hypotheses for future research.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the use synthetic data will improve the reproducibility of biobehavioral research and help generate novel hypotheses for future research (Bonn\u00e9ry et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and logical inference about the benefits of synthetic data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Synthetic datasets are created using statistical methods (specifically CART in synthpop) that preserve relationships between variables while eliminating disclosure risk by ensuring no synthetic record represents a real individual. The method was originally developed for census data and has been refined over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C10-C11, C14, and C17-C20 collectively establish the methodological foundation of synthetic data generation. These claims are well-supported by citations to established methodological literature (Little, 1993; Reiter, 2005a/b; Rubin, 1993; Duncan and Elliot, 2011; Drechsler, 2011) and provide consistent descriptions of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two approaches assess synthetic dataset quality: general utility (overall statistical similarity assessed via visualization) and specific utility (model-specific fit assessed via lack-of-fit tests and confidence interval overlap). Higher CI overlap indicates greater specific utility and valid inference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C30 describe established methods for evaluating synthetic data utility, supported by citations to methodological work (Snoke et al., 2018; Nowok et al., 2016; Karr et al., 2006). The framework is logically coherent and the evaluation metrics are well-defined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "4c717f95-1528-454d-9452-c122433a581a",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A synthetic version of the Van Cappellen et al. oxytocin-spirituality dataset demonstrated good general utility, with similar distributions between synthetic and original data for all four main variables, no replicated values, and similar bivariate relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 present visual and descriptive evidence (Figure 1A and supplements) showing similarity between synthetic and original datasets. The assessment is based on appropriate visualization methods (C23-C25) and the conclusion of good general utility (C39) follows logically from the presented comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "6f1725e4-85ca-4a0a-9f57-dd1250327f6f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For the Van Cappellen et al. t-test comparing nasal spray groups on spirituality, the synthetic dataset reproduced the original non-significant result (p=0.26 in both) with extremely high specific utility (99.94% CI overlap, non-significant lack-of-fit test p=0.995, standardized difference p=0.998).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 provide comprehensive statistical evidence for high specific utility. The lack-of-fit test, standardized differences, and CI overlap all meet established thresholds for good specific utility (C27-C29). The p-values and effect sizes are precisely reported with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "d42d614b-8a37-4978-a7f1-140d231c0da0",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For the Van Cappellen et al. correlation between age and spirituality, the synthetic dataset reproduced the original non-significant result with high specific utility (90.8% CI overlap, non-significant lack-of-fit p=0.94, standardized difference p=0.72).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 demonstrate high specific utility for the correlation analysis using the same rigorous metrics as the t-test. The CI overlap of 90.8% is substantial, and all statistical tests support the validity of inference from the synthetic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "b04bf9fe-1435-4456-a827-a3c247f6ebbd",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For the Van Cappellen et al. ANCOVA examining oxytocin effects on spirituality controlling for religious affiliation, the synthetic dataset showed high specific utility (87.8% and 82.3% CI overlap for the two coefficients, non-significant lack-of-fit p=0.82), though the synthetic model p-value was borderline (p=0.07) compared to the original (p=0.03).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 show good but not perfect replication. The lack-of-fit test and CI overlaps indicate high specific utility (C52-C54), and the authors correctly note (C55) that the difference in significance between p=0.03 and p=0.07 does not necessarily indicate different effects. The emphasis on effect size and CI overlap over p-value dichotomy is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "88fba444-ee3b-4d95-9c3f-4204d4083681",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A synthetic version of the Jones and DeBruine sociosexual orientation dataset (9,627 individuals, 14 variables) demonstrated good general utility and high specific utility for a linear model predicting sexual behavior from attractiveness, age, and location (non-significant lack-of-fit p=0.83, CI overlaps of 91.8%, 92.9%, and 72.4% for the three predictors).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C69 provide comprehensive evidence for both general and specific utility in a large dataset. The visual evidence (Figure 2A) supports general utility (C59), and the statistical tests (C62-C68) demonstrate high specific utility. The lower CI overlap for location (72.4%, C68) is noted but still indicates reasonable utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "41424838-5db5-47df-85bc-d62c1c69391b",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the Jones and DeBruine synthetic dataset, 213 replicated individuals (2.3%) were identified and removed to reduce disclosure risk. After removal, the model maintained high specific utility (non-significant lack-of-fit p=0.6, CI overlaps of 92.4%, 81.2%, and 75.8%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 demonstrate that removing replicated individuals (a disclosure risk mitigation strategy from C20, C107) maintains specific utility. The statistical evidence (C71-C72) shows minimal impact on model performance, supporting the conclusion in C73. This addresses an important practical consideration for synthetic data sharing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "c0616717-4134-43c1-9458-f47b1afa80e9",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Simulation of 27 HRV datasets varying in sample size (40, 100, 10,000), skewness (none, low, high), and missingness (0%, 5%, 20%) showed that synthpop is generally robust, with all lack-of-fit tests non-significant and most CI overlaps strong. However, performance was borderline for low-skew datasets with 10,000 cases, indicating that utility assessment is crucial for each dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C88 present a systematic simulation study with appropriate design (C79-C80). The results show generally good performance (C81-C83, C85-C86) but identify a specific limitation (C84, C87). The conclusion (C88) appropriately emphasizes the need for case-by-case utility assessment. The evidence is presented in figures and supplementary materials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "7ed386c6-6e28-48d8-b156-c5bdb217cbea",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Open data provide substantial benefits but face challenges from disclosure risks. Traditional anonymization methods (removing identifiers, adding noise, aggregation) are insufficient as individuals can still be identified with high accuracy, and these methods can distort variable relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C6-C9 establish the motivation for synthetic data by describing the open data landscape and limitations of traditional approaches. All claims are supported by appropriate citations to prior work (Arzberger et al., 2004; Ohm, 2009; Rocher et al., 2019; Purdam and Elliot, 2007). This provides essential context for the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "407232d8-a621-47b5-a56a-d96dc51c898f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Synthetic data enable exploratory analysis that can be verified by data custodians, improve transparency for reviewers, facilitate data sharing when consent is lacking, support machine learning in data-scarce domains, encourage collaboration between secondary analysts and original authors, and will improve reproducibility in biobehavioral research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C95-C96, C99-C100, C103, and C111 describe various benefits of synthetic data. These are logical inferences from the properties of synthetic data (C12-C13) or supported by citations (C96, C99, C111). The claims about collaboration (C99-C100) are particularly well-reasoned given that verification requires access to original data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "718eb2f0-4888-4384-9d0c-908f05d1dc4f",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Participants generally favor data sharing, and researchers should include data sharing provisions in consent. However, obtaining retrospective consent is resource-intensive, and traditional deidentification may be insufficient. Synthetic data offer a solution, as demonstrated by Arslan et al. (2018) who shared synthetic data for sensitive research without original consent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C94 address practical and ethical considerations for data sharing. The claims about participant attitudes (C89) and recommendations (C90) are supported by citations. The example of Arslan et al. (C93-C94) provides concrete evidence that synthetic data can address consent challenges in practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "ffd01431-17f0-40db-840b-1fed5da77f81",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Concerns about data sharing include loss of first-mover advantage for original researchers, and 'available upon request' policies often fail in practice due to unreachable authors or lost datasets. Journals have adopted varying data archiving policies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 and C101-C102 describe challenges in the current data sharing landscape, all supported by appropriate citations (Lo, 2015; Ross et al., 2012; Taichman et al., 2016; Sholler et al., 2019; Couture et al., 2018; Stodden et al., 2018; Wicherts et al., 2006). These provide important context for why synthetic data are needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "22691073-7985-40fc-90d2-69b18ddf9a72",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Synthetic data have limitations: they may have poor utility, current methods limit inference to linear models, and disclosure risk is only negligible if complete records don't match the original data and extreme values are absent. Complete matching records should be removed to reduce disclosure risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C107 appropriately acknowledge limitations. C104 is a logical statement about potential poor utility. C105 accurately describes a methodological limitation. C106 is supported by citations (Drechsler, 2011; Duncan and Elliot, 2011) and C107 provides a practical recommendation. These limitations are important for balanced assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    },
+    {
+      "id": "8f3f2d0d-8d2b-43fa-a0cd-65827479dac0",
+      "content_id": "15941159-4b97-49e4-af87-644fce877d95",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Synthetic data use is emerging in biobehavioral sciences but not widely known. The method was considered 'radical' when first proposed in the 1990s but has been continuously improved. The synthpop R package now provides an accessible implementation tool, with code for this manuscript available online.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 and C108-C110 provide historical context and practical information. C15 is supported by citations to recent examples (Arslan et al., 2018; Newbury et al., 2018). C16 provides reproducibility information. C108-C110 trace the development of the method with appropriate citations (Rubin, 1993; Reiter, 2005a/b). These claims establish the novelty and accessibility of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:45:42.148787Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9f1314e9-f6f1-42db-b597-88199a1e8242",
+      "result_id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6"
+    },
+    {
+      "claim_id": "310b7963-882d-4859-b5f7-b2b5fda8b9b3",
+      "result_id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6"
+    },
+    {
+      "claim_id": "f1072232-83ee-4daa-bbb4-48480c968661",
+      "result_id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6"
+    },
+    {
+      "claim_id": "39d644f4-684f-4e9c-b3c1-ac1c414ea84d",
+      "result_id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6"
+    },
+    {
+      "claim_id": "b15e49f2-0eac-4d3e-8069-a9c9c82b253f",
+      "result_id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6"
+    },
+    {
+      "claim_id": "261783fb-3c86-4a01-8655-1e3cf9c6c778",
+      "result_id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6"
+    },
+    {
+      "claim_id": "2ad0ad0b-6932-4186-8cc2-c2db31de7abb",
+      "result_id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6"
+    },
+    {
+      "claim_id": "0a1d67d6-82da-4187-b618-2517b70d265c",
+      "result_id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6"
+    },
+    {
+      "claim_id": "8202ba24-2020-42b4-be8e-fde701fa30c2",
+      "result_id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6"
+    },
+    {
+      "claim_id": "5de602a9-b129-4701-8d42-351c52c0c48a",
+      "result_id": "cd54610d-ce52-4040-8ea3-bc29cc8c5ec6"
+    },
+    {
+      "claim_id": "f9d1b2e4-b167-4a8f-88fb-af6061adff27",
+      "result_id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f"
+    },
+    {
+      "claim_id": "f15fbf4c-808f-4fba-a4ba-f60f2f1f5d06",
+      "result_id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f"
+    },
+    {
+      "claim_id": "3119f6c6-7bbd-47b9-9bd3-afa98d2c4b5b",
+      "result_id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f"
+    },
+    {
+      "claim_id": "698444d8-1bfb-4405-8f81-2249e61bd32c",
+      "result_id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f"
+    },
+    {
+      "claim_id": "560cee49-0d27-4292-afd6-14fa77465033",
+      "result_id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f"
+    },
+    {
+      "claim_id": "80b51e17-cbd4-4ae4-a525-db22ee689695",
+      "result_id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f"
+    },
+    {
+      "claim_id": "65d71f86-bd41-41d4-8080-6d3003c5b4bb",
+      "result_id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f"
+    },
+    {
+      "claim_id": "0e65bfa9-1205-44ee-a956-fe1d1439116e",
+      "result_id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f"
+    },
+    {
+      "claim_id": "f309e801-92b9-4401-9138-56a913794f4b",
+      "result_id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f"
+    },
+    {
+      "claim_id": "39ce9120-9306-4cf5-9886-6cb6069beeb9",
+      "result_id": "b06e7807-a555-4ec2-a38b-f58dc1c7450f"
+    },
+    {
+      "claim_id": "adcf597d-0822-402d-910e-bfbe4656ddb8",
+      "result_id": "4c717f95-1528-454d-9452-c122433a581a"
+    },
+    {
+      "claim_id": "eaa45c03-8181-4a74-9d95-98a648f2096e",
+      "result_id": "4c717f95-1528-454d-9452-c122433a581a"
+    },
+    {
+      "claim_id": "270e50b0-4bd0-4372-bb0e-21bc1c09f61d",
+      "result_id": "4c717f95-1528-454d-9452-c122433a581a"
+    },
+    {
+      "claim_id": "9acbf50c-be77-4f7c-ab18-5715bb8320fa",
+      "result_id": "4c717f95-1528-454d-9452-c122433a581a"
+    },
+    {
+      "claim_id": "27259c70-e242-4f00-a218-760f6bf30e0d",
+      "result_id": "4c717f95-1528-454d-9452-c122433a581a"
+    },
+    {
+      "claim_id": "512df855-3af3-4991-9b2d-fcff17be23e0",
+      "result_id": "4c717f95-1528-454d-9452-c122433a581a"
+    },
+    {
+      "claim_id": "cb66fd40-4cda-40f3-a530-aba0b6d65447",
+      "result_id": "4c717f95-1528-454d-9452-c122433a581a"
+    },
+    {
+      "claim_id": "1af73580-9901-46d8-af52-96848c46f9b4",
+      "result_id": "4c717f95-1528-454d-9452-c122433a581a"
+    },
+    {
+      "claim_id": "6b8221f9-0fc0-43d6-b1a1-ab42bf77389d",
+      "result_id": "4c717f95-1528-454d-9452-c122433a581a"
+    },
+    {
+      "claim_id": "aedf71dd-7a88-4254-bfb6-acbced5c50ca",
+      "result_id": "6f1725e4-85ca-4a0a-9f57-dd1250327f6f"
+    },
+    {
+      "claim_id": "704941ad-7b2d-427f-ac2a-d32ac04d6d96",
+      "result_id": "6f1725e4-85ca-4a0a-9f57-dd1250327f6f"
+    },
+    {
+      "claim_id": "80d828bb-3fb5-40f6-b95b-bf3a63e47cc0",
+      "result_id": "6f1725e4-85ca-4a0a-9f57-dd1250327f6f"
+    },
+    {
+      "claim_id": "b33b2e4d-541c-4901-9540-9012f2b0dc69",
+      "result_id": "6f1725e4-85ca-4a0a-9f57-dd1250327f6f"
+    },
+    {
+      "claim_id": "5d835796-16bf-4948-ab1b-aa1537c4cbfd",
+      "result_id": "6f1725e4-85ca-4a0a-9f57-dd1250327f6f"
+    },
+    {
+      "claim_id": "da0b189a-c660-4271-9298-7cbd57deb109",
+      "result_id": "6f1725e4-85ca-4a0a-9f57-dd1250327f6f"
+    },
+    {
+      "claim_id": "7d23ab29-0a25-4c6e-a69f-18cf9964cfcf",
+      "result_id": "d42d614b-8a37-4978-a7f1-140d231c0da0"
+    },
+    {
+      "claim_id": "8d05a8f9-afe5-4fea-88dc-ddce334561c1",
+      "result_id": "d42d614b-8a37-4978-a7f1-140d231c0da0"
+    },
+    {
+      "claim_id": "40d6e5d7-5a9f-44b5-802e-2486fcd9dfa1",
+      "result_id": "d42d614b-8a37-4978-a7f1-140d231c0da0"
+    },
+    {
+      "claim_id": "c3f61f8b-570c-42c1-9077-a250193c2e98",
+      "result_id": "d42d614b-8a37-4978-a7f1-140d231c0da0"
+    },
+    {
+      "claim_id": "c926dcf8-014b-46f6-9752-29808fac95ea",
+      "result_id": "b04bf9fe-1435-4456-a827-a3c247f6ebbd"
+    },
+    {
+      "claim_id": "7670b694-d2db-46ae-81c2-7b2f2b22ef56",
+      "result_id": "b04bf9fe-1435-4456-a827-a3c247f6ebbd"
+    },
+    {
+      "claim_id": "9b8b4212-cb7b-4c7b-80fd-f44d59fad94b",
+      "result_id": "b04bf9fe-1435-4456-a827-a3c247f6ebbd"
+    },
+    {
+      "claim_id": "eaf8beb5-32bf-4f83-801b-8e26ace610cc",
+      "result_id": "b04bf9fe-1435-4456-a827-a3c247f6ebbd"
+    },
+    {
+      "claim_id": "2cf66b87-7ee0-4665-adad-a69a20daff50",
+      "result_id": "b04bf9fe-1435-4456-a827-a3c247f6ebbd"
+    },
+    {
+      "claim_id": "07c35894-c3a0-47e5-bfd9-5b5b0af7b53f",
+      "result_id": "b04bf9fe-1435-4456-a827-a3c247f6ebbd"
+    },
+    {
+      "claim_id": "874e912e-8c74-4b68-b267-35e5a1f735e3",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "da33943c-4c86-4e86-9925-21da61ad9690",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "f1eef965-a3e4-4ff7-bff0-deb7627b254f",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "4020158b-c69c-4a23-9e5b-5a3a74332539",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "02df453b-a682-4a43-be75-f58a0d5d8484",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "c67dcc0c-1a9e-4130-980f-1b01339f5a6a",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "4332c286-7ea7-4e11-9f83-766cecfb64f0",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "5ee8a325-2c6b-47d8-b539-974767116a7a",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "4875e5e5-019c-4d67-9b2c-24e1e6c3db04",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "756e221d-3dcb-4168-b36b-43fa48a69d5b",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "076002c0-097d-4f3c-8a01-b730187d5da3",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "a0794925-bee5-4630-8139-059711c13afd",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "238d04a6-7a5b-4574-8737-34b3b94d6864",
+      "result_id": "88fba444-ee3b-4d95-9c3f-4204d4083681"
+    },
+    {
+      "claim_id": "08fe8d7d-8d1e-4e5f-821f-f423f9b4bdd8",
+      "result_id": "41424838-5db5-47df-85bc-d62c1c69391b"
+    },
+    {
+      "claim_id": "db1882a8-59f8-46ef-aa0a-6e987b293fe5",
+      "result_id": "41424838-5db5-47df-85bc-d62c1c69391b"
+    },
+    {
+      "claim_id": "be83eff1-15c7-4438-ac9f-fc55b078975d",
+      "result_id": "41424838-5db5-47df-85bc-d62c1c69391b"
+    },
+    {
+      "claim_id": "324892d8-4721-46e7-9c90-75ca2828250d",
+      "result_id": "41424838-5db5-47df-85bc-d62c1c69391b"
+    },
+    {
+      "claim_id": "8e53cc41-c2a6-4e25-9244-8f3ebb81ef89",
+      "result_id": "c0616717-4134-43c1-9458-f47b1afa80e9"
+    },
+    {
+      "claim_id": "0411b34a-9d15-4e00-b5fb-cdadd9d3d793",
+      "result_id": "c0616717-4134-43c1-9458-f47b1afa80e9"
+    },
+    {
+      "claim_id": "a0f4b2b6-9d8e-4186-9476-08047a5b32a0",
+      "result_id": "c0616717-4134-43c1-9458-f47b1afa80e9"
+    },
+    {
+      "claim_id": "c5fd29f4-1220-42ee-a783-ff01ad7eb567",
+      "result_id": "c0616717-4134-43c1-9458-f47b1afa80e9"
+    },
+    {
+      "claim_id": "a0930219-2efd-4b26-9100-57490c8b3a50",
+      "result_id": "c0616717-4134-43c1-9458-f47b1afa80e9"
+    },
+    {
+      "claim_id": "00bf8c9d-36bd-4316-b381-d984baf60d1a",
+      "result_id": "c0616717-4134-43c1-9458-f47b1afa80e9"
+    },
+    {
+      "claim_id": "f52f8072-f559-4edb-a5fb-0a57538e9178",
+      "result_id": "c0616717-4134-43c1-9458-f47b1afa80e9"
+    },
+    {
+      "claim_id": "2f46c95f-b43b-4c29-a69a-815fafeb6a8f",
+      "result_id": "c0616717-4134-43c1-9458-f47b1afa80e9"
+    },
+    {
+      "claim_id": "c8b667fd-c463-44ef-8433-bc7f6faf83b5",
+      "result_id": "c0616717-4134-43c1-9458-f47b1afa80e9"
+    },
+    {
+      "claim_id": "4da606d9-fe86-4497-b7b7-832f80ec06d8",
+      "result_id": "c0616717-4134-43c1-9458-f47b1afa80e9"
+    },
+    {
+      "claim_id": "16b24930-13de-4bb6-9638-c6d0c376f330",
+      "result_id": "7ed386c6-6e28-48d8-b156-c5bdb217cbea"
+    },
+    {
+      "claim_id": "626d0996-2e65-41d8-aaae-38d68b9b89cf",
+      "result_id": "7ed386c6-6e28-48d8-b156-c5bdb217cbea"
+    },
+    {
+      "claim_id": "ab410c24-664a-46ae-b880-26d928193086",
+      "result_id": "7ed386c6-6e28-48d8-b156-c5bdb217cbea"
+    },
+    {
+      "claim_id": "8f8414ae-b157-40af-a205-fd0efde67c69",
+      "result_id": "7ed386c6-6e28-48d8-b156-c5bdb217cbea"
+    },
+    {
+      "claim_id": "a71d9e55-131d-49c2-9339-7a6f2454ebb2",
+      "result_id": "7ed386c6-6e28-48d8-b156-c5bdb217cbea"
+    },
+    {
+      "claim_id": "11057542-9003-4781-8994-d325664c306b",
+      "result_id": "7ed386c6-6e28-48d8-b156-c5bdb217cbea"
+    },
+    {
+      "claim_id": "755ff504-ffa9-46d0-bd09-84e2884d1a23",
+      "result_id": "407232d8-a621-47b5-a56a-d96dc51c898f"
+    },
+    {
+      "claim_id": "088444d2-f31a-4823-a4b3-29a2de6d6eda",
+      "result_id": "407232d8-a621-47b5-a56a-d96dc51c898f"
+    },
+    {
+      "claim_id": "ddfd1ba7-ded0-4e5d-8d5e-e4899b13b4c9",
+      "result_id": "407232d8-a621-47b5-a56a-d96dc51c898f"
+    },
+    {
+      "claim_id": "d88e93ae-7956-41c7-a1a2-f38f28875384",
+      "result_id": "407232d8-a621-47b5-a56a-d96dc51c898f"
+    },
+    {
+      "claim_id": "0b6cf7e2-4ad7-4049-9bdc-c980259a6125",
+      "result_id": "407232d8-a621-47b5-a56a-d96dc51c898f"
+    },
+    {
+      "claim_id": "7364770c-1c06-4c21-835f-3e9fb0095153",
+      "result_id": "407232d8-a621-47b5-a56a-d96dc51c898f"
+    },
+    {
+      "claim_id": "af3fd6f8-da77-4e11-89f6-c9cdd5e63dd3",
+      "result_id": "407232d8-a621-47b5-a56a-d96dc51c898f"
+    },
+    {
+      "claim_id": "e9572dd7-0df6-4a35-ab08-17c09869614e",
+      "result_id": "407232d8-a621-47b5-a56a-d96dc51c898f"
+    },
+    {
+      "claim_id": "72a8a299-771f-4906-80f6-e8d8adfd13a4",
+      "result_id": "718eb2f0-4888-4384-9d0c-908f05d1dc4f"
+    },
+    {
+      "claim_id": "cbd928a8-fb85-49c1-b301-1d462a7c0098",
+      "result_id": "718eb2f0-4888-4384-9d0c-908f05d1dc4f"
+    },
+    {
+      "claim_id": "47151510-3bf1-4142-bcb2-25d56e2ab77b",
+      "result_id": "718eb2f0-4888-4384-9d0c-908f05d1dc4f"
+    },
+    {
+      "claim_id": "a3c83424-20bb-44f4-8125-cd7ae03fec8f",
+      "result_id": "718eb2f0-4888-4384-9d0c-908f05d1dc4f"
+    },
+    {
+      "claim_id": "7412eb2a-f632-4c0a-a67d-fe0538a81810",
+      "result_id": "718eb2f0-4888-4384-9d0c-908f05d1dc4f"
+    },
+    {
+      "claim_id": "114f4a33-8357-48a0-89df-01d8c5bb8fb1",
+      "result_id": "718eb2f0-4888-4384-9d0c-908f05d1dc4f"
+    },
+    {
+      "claim_id": "3ca45908-818c-4aed-ae88-5604aed9c073",
+      "result_id": "ffd01431-17f0-40db-840b-1fed5da77f81"
+    },
+    {
+      "claim_id": "c22e6eaf-19e8-47d4-943b-279763b1a7bb",
+      "result_id": "ffd01431-17f0-40db-840b-1fed5da77f81"
+    },
+    {
+      "claim_id": "4003b682-ac11-481a-94d2-d85e00bb1323",
+      "result_id": "ffd01431-17f0-40db-840b-1fed5da77f81"
+    },
+    {
+      "claim_id": "281a28b0-5d37-416f-94fd-a1a01d5f895b",
+      "result_id": "ffd01431-17f0-40db-840b-1fed5da77f81"
+    },
+    {
+      "claim_id": "8868a44a-edc4-4c4a-8948-9986a04abb67",
+      "result_id": "22691073-7985-40fc-90d2-69b18ddf9a72"
+    },
+    {
+      "claim_id": "d6bd7f78-30e0-4d00-be86-bfb5f535cc5f",
+      "result_id": "22691073-7985-40fc-90d2-69b18ddf9a72"
+    },
+    {
+      "claim_id": "67f5c729-af86-465c-8ff4-0b67009a00e2",
+      "result_id": "22691073-7985-40fc-90d2-69b18ddf9a72"
+    },
+    {
+      "claim_id": "3567c74b-aeb5-41d0-8ce4-8c8fb09eced0",
+      "result_id": "22691073-7985-40fc-90d2-69b18ddf9a72"
+    },
+    {
+      "claim_id": "71160e51-d184-421b-ab70-4221040f7eb7",
+      "result_id": "8f3f2d0d-8d2b-43fa-a0cd-65827479dac0"
+    },
+    {
+      "claim_id": "be4deee7-3ed4-4b96-b4f2-d95d66eb8235",
+      "result_id": "8f3f2d0d-8d2b-43fa-a0cd-65827479dac0"
+    },
+    {
+      "claim_id": "ff690e85-dff0-4968-8064-e5202b0b1d5a",
+      "result_id": "8f3f2d0d-8d2b-43fa-a0cd-65827479dac0"
+    },
+    {
+      "claim_id": "4a19fd99-97e1-443e-ae03-c799801e9cc5",
+      "result_id": "8f3f2d0d-8d2b-43fa-a0cd-65827479dac0"
+    },
+    {
+      "claim_id": "4a494989-dba2-4524-918f-e2f9fd84d05f",
+      "result_id": "8f3f2d0d-8d2b-43fa-a0cd-65827479dac0"
+    }
+  ],
+  "comparisons": []
+}

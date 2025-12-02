@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21"
+    ],
+    "result": "A ventrally-peaking BMP signaling gradient patterns the dorsal-ventral axis in zebrafish embryos during early development, increasing in amplitude from 2.75 to 7.25 hours post-fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C21 are well-supported by pSmad1/5/9 immunofluorescence data (Figure 1D,E) and consistent with multiple prior studies. The temporal dynamics and spatial distribution of the BMP gradient are clearly documented with appropriate imaging and quantification methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20"
+    ],
+    "result": "16 high-confidence BMP target genes were identified through RNA-sequencing, including 14 previously known targets and 2 novel targets (crabp2b and znfl2b). Four of these genes encode BMP signaling repressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19, and C20 are supported by RNA-sequencing data with appropriate differential expression analysis using three independent methods (edgeR, DESeq, Cuffdiff). The identification criteria (upregulated by BMP, downregulated by Chordin) are sound, and validation by in situ hybridization strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "BMP target genes exhibit diverse spatial expression patterns along both the dorsal-ventral and animal-vegetal axes at shield stage, with expression broadness ranging from 40-100% embryo length and distinct patterns of margin restriction or exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C5 are well-supported by fluorescence in situ hybridization data (Figure 1F-Y) with appropriate quantification methods. The spatial diversity is clearly documented with 10 embryos per gene, and the Gaussian fitting approach for defining expression range is mathematically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "BMP target gene activation times range from 3.4 to 6.3 hours post-fertilization based on NanoString temporal expression profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by NanoString data with appropriate temporal sampling (every 30 min from 2.75 to 7.25 hpf). The mathematical definition of activation time using cumulative distribution function fitting is reasonable, though the choice of threshold (1.5\u00b7\u03c4 from inflection point) is somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C22",
+      "C23"
+    ],
+    "result": "Opto-BMP reversibly activates BMP signaling in zebrafish embryos in response to blue light, as demonstrated by pSmad1/5/9 immunofluorescence, phenotypic ventralization, and spatially localized activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C22, and C23 are well-supported by multiple lines of evidence including immunofluorescence showing rapid and reversible pSmad1/5/9 activation, phenotypic scoring showing light-dependent ventralization, and SPIM imaging demonstrating spatial control. The optogenetic tool is properly validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C24",
+      "C25"
+    ],
+    "result": "Most BMP target genes (12 of 14 tested) are competent to respond to BMP signaling at early developmental stages (high stage, 3.5-4 hpf), with cdx4 and crabp2b being exceptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C24, and C25 are supported by NanoString data showing transcriptional responses to optogenetic BMP pulses at high stage. Statistical analysis confirms significant responses for most genes. However, the definition of 'competence' could be more rigorously defined, and the lack of response for crabp2b may reflect technical issues rather than biological incompetence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Differential transcription kinetics in response to BMP signaling play a minor role in generating spatiotemporal expression diversity, as evidenced by weak or absent correlations between induction rates, decay constants, and spatiotemporal expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C26-C30 are supported by comprehensive correlation analyses using both maximum transcript counts and mathematical modeling of induction/decay kinetics. The weak correlations (\u03c1 = -0.44 to 0.13) suggest kinetics are not the primary driver of diversity. However, the modeling assumes similar degradation rates and uses simplified kinetic models that may not capture all biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C31",
+      "C32"
+    ],
+    "result": "Not all spatiotemporal BMP target gene expression differences are explained by different signaling activation thresholds, as demonstrated by responses to low- and high-amplitude BMP pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C31, and C32 are supported by experiments showing that the narrowly expressed gene foxi1 responds to low-amplitude pulses while broader genes do not, which contradicts simple threshold model predictions. However, the interpretation is complicated by the fact that longer low-amplitude pulses activate both narrow and broad genes, suggesting duration-amplitude integration may be important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "FGF inhibition increases BMP signaling amplitude, while simultaneous FGF and Nodal inhibition increases both amplitude and spatial broadness of the BMP signaling gradient at shield stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 are supported by pSmad1/5/9 immunofluorescence data showing clear increases in BMP signaling upon inhibitor treatment. The effects are consistent with known roles of FGF/Nodal in regulating chordin and bmp expression. Statistical analysis confirms significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C35"
+    ],
+    "result": "FGF and Nodal signaling are responsible for margin exclusion of foxi1, klf2b, gata2a, and tfap2c through direct inhibition rather than indirect effects on BMP signaling levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C35 are well-supported by fluorescence in situ hybridization showing that margin-excluded genes shift into the margin when FGF/Nodal are inhibited, but not in bmp-overexpressing embryos. This demonstrates direct inhibition by FGF/Nodal rather than indirect effects through BMP modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C37"
+    ],
+    "result": "Combinatorial FGF and Nodal signaling is a major driver of spatial diversity in BMP target gene expression, as evidenced by collapsed spatial diversity when both pathways are inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C37 are strongly supported by the observation that spatial coefficients of variation decrease dramatically when FGF and Nodal are inhibited together. The quantitative analysis of spatial diversity using coefficient of variation is appropriate and clearly demonstrates the homogenization of expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Reduced chordin and increased bmp2b expression in FGF/Nodal-inhibited embryos contribute to BMP signaling expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 are supported by NanoString data showing reduced chordin and increased bmp2b in FGF/Nodal-inhibited embryos, consistent with prior literature. However, the causal contribution to BMP expansion is inferred rather than directly demonstrated through rescue experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Nodal inhibition does not detectably alter BMP signaling at shield stage but is responsible for dorsal expression of apoc1l.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 are supported by immunofluorescence and in situ hybridization data. The lack of BMP signaling change with Nodal inhibition is surprising but well-documented. The loss of apoc1l dorsal expression in Nodal-inhibited embryos clearly demonstrates Nodal's role in regulating this gene.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C42"
+    ],
+    "result": "FGF and Nodal do not contribute to diversity in BMP target gene activation timing, as activation times remain diverse in FGF/Nodal-inhibited embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C42 are supported by NanoString temporal expression data showing that activation times are not significantly different in FGF/Nodal-inhibited embryos (p > 0.05 for most genes). This suggests other mechanisms regulate temporal diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Most embryos experiencing transient optogenetic BMP activation lack gross morphological defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by phenotypic observations from multiple optogenetic experiments showing that transient BMP pulses do not cause ventralization, unlike sustained activation. This suggests robustness of the patterning system to transient perturbations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Feedback regulation is an important feature of the BMP patterning system, as evidenced by five target genes affecting BMP signaling and post-pulse signaling dips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 are supported by RNA-sequencing identification of feedback regulators and immunofluorescence showing signaling dips after optogenetic pulses. However, the functional importance of these feedback mechanisms for patterning is inferred rather than directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The margin restriction of eve1 and cdx4 is not explained by FGF or Nodal signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by in situ hybridization showing persistent margin restriction in FGF/Nodal-inhibited embryos, consistent with prior literature. This suggests other mechanisms (e.g., Wnt, retinoic acid, or animal pole factors) regulate their margin restriction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "A subset of three genes (sizzled, ved, bambia) show a monotonically decreasing relationship between spatial range and activation time, consistent with the gradient threshold model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by analysis of spatial and temporal expression data showing that these three margin-uniform genes follow the predicted relationship. This suggests that a subset of BMP targets may be regulated by simple threshold mechanisms, even if the majority are not.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Loss of BMP signaling results in dorsalization, whereas excess BMP signaling produces ventralized embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by citation to prior work and is consistent with the ventralization phenotypes observed in Opto-BMP experiments. This is well-established background knowledge that provides context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "BMP ligands bind and assemble receptor complexes, resulting in Smad1/5/9 phosphorylation and target gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 describes the canonical BMP signaling pathway and is supported by extensive prior literature (Derynck and Budi, 2019) and the schematic in Figure 1B. This is established background knowledge.",
+    "result_type": "MINOR"
+  }
+]

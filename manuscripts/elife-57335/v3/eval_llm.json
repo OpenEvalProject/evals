@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ACh levels and NBM-BLA cholinergic terminal activity in the BLA increased sharply in response to reward-related events and shifted dynamically as mice learned the cue-reward contingency. During Pre-Training, ACh release peaked at correct nose pokes; during early Training, it shifted to reward retrieval; and as mice approached acquisition, ACh release significantly increased at tone onset. NBM-BLA terminal activity showed similar dynamics, confirming the NBM as a primary source of ACh during cue-reward learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C19-C24, C60-C63 are well-supported by fiber photometry data from the ACh3.0 sensor and NBM-BLA terminal recordings (Figure 2). The data demonstrate clear temporal shifts in ACh release patterns across training phases, with statistical validation using bootstrapped confidence intervals. The convergence of ACh sensor and NBM terminal activity recordings provides strong evidence for the dynamic nature of cholinergic signaling during learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C44"
+    ],
+    "result": "BLA CaMKII\u03b1 neuron activity followed reward retrieval during Pre-Training and early Training, then shifted to tone onset as mice approached task acquisition. The activity peaked later (~2.5 s) after correct nose pokes compared to ACh3.0 signal (~0.5 s) and aligned more closely with reward retrieval. During early Training, CaMKII\u03b1 activity after reward retrieval was higher than in Pre-Training and decreased as mice learned the contingency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C25-C28, C44 are supported by fiber photometry recordings of CaMKII\u03b1 neurons (Figure 3). The data show clear temporal dynamics of principal neuron activity across training phases, with statistical validation. The divergent timing between ACh release and CaMKII\u03b1 activity supports the interpretation that ACh modulates rather than drives principal neuron activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C30",
+      "C46",
+      "C72",
+      "C73"
+    ],
+    "result": "Optical stimulation of cholinergic NBM-BLA terminal fibers during correct nose pokes led to quicker acquisition of the cue-reward contingency. ChR2-expressing mice earned significantly more rewards and made significantly fewer incorrect nose pokes than EYFP controls during Training, but not during Pre-Training. This effect was observed in both female and male mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C29-C30, C46, C72-C73 are well-supported by optogenetic experiments (Figure 4). Statistical analyses show significant main effects and interactions during Training (p=0.0133 for rewards, p=0.0061 for incorrect nose pokes), with no differences during Pre-Training. The replication in both sexes strengthens the finding. Sample sizes (n=5-7 per group) appear adequate based on power calculations reported in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C48",
+      "C49",
+      "C50",
+      "C76",
+      "C78"
+    ],
+    "result": "Optical stimulation of NBM-BLA cholinergic terminals did not support self-stimulation, real-time place preference, progressive ratio responding, or alter locomotor behavior or anxiety-like behavior in the Light/Dark Box test. This indicates that increasing ACh release in the BLA was not inherently rewarding and did not affect motor activity or anxiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C48-C50, C76, C78 are supported by multiple control experiments (Figure 4\u2014figure supplement 5). Statistical analyses show no significant differences between EYFP and ChR2 groups across all measures (p-values ranging from 0.1565 to 0.975). These controls effectively rule out alternative explanations for the learning enhancement, such as intrinsic reward value or motor effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C51",
+      "C83"
+    ],
+    "result": "Blockade of muscarinic receptors (scopolamine) abolished the ability of mice to learn the cue-reward contingency during Training, while nicotinic receptor blockade (mecamylamine) had no effect. Neither antagonist affected performance during Pre-Training or locomotion. Saline and mecamylamine groups showed no differences in any phase of the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C51, C83 are well-supported by pharmacological experiments (Figure 5). Statistical analyses show highly significant effects of scopolamine (main effect: F(3,30)=23.13, p<0.0001; interaction: F(33,330)=10.79, p<0.0001) with no effects during Pre-Training or on locomotion. The selective requirement for mAChRs but not nAChRs is clearly demonstrated, though the mecamylamine dose validation relies on prior work rather than direct demonstration in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C56",
+      "C84",
+      "C85"
+    ],
+    "result": "Non-contingent optical stimulation of NBM-BLA terminals (explicitly unpaired with task events) improved behavioral performance to the same extent as contingent stimulation. Both ChR2 groups performed significantly better than EYFP controls during Training, indicating that ChR2-mediated ACh release does not need to be time-locked to cue, nose poke, or reward retrieval to enhance learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C56, C84-C85 are supported by the non-contingent stimulation experiment (Figure 6). Statistical analyses show no difference between contingent and non-contingent ChR2 groups (p=0.7700 for rewards, p=0.5609 for incorrect nose pokes), while both differed significantly from EYFP controls (main effect: F(2,13)=7.254, p=0.0077). This surprising finding suggests long-lasting effects of ACh signaling, though the mechanism remains speculative and would benefit from additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Simultaneous recordings of ACh3.0 and jRCaMP1b in a single mouse showed that NBM-BLA cholinergic terminal activity coincided with ACh levels, and this relationship was not explained by signal crosstalk as demonstrated by a control experiment in a wild-type littermate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C43 are based on data from a single mouse (Figure 2\u2014figure supplement 9), which the authors acknowledge as 'proof of principle for future studies.' While the crosstalk control is appropriate, the n=1 for the experimental condition is insufficient to draw strong conclusions. This result requires replication with adequate sample size to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C45"
+    ],
+    "result": "Incorrect nose pokes that triggered timeouts were followed by modest increases in BLA ACh levels and NBM-BLA terminal activity before task acquisition, though these increases were non-significant for ACh levels. Incorrect nose pokes did not elicit different responses in CaMKII\u03b1 cell activity compared to before timeouts were incorporated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C45 are supported by data in Figure 2\u2014figure supplements 2, 6 and Figure 3\u2014figure supplement 2. The modest, non-significant increases in ACh during incorrect nose pokes contrast with the robust, significant increases during correct nose pokes, supporting the interpretation that ACh signals salience rather than simply motor actions. The lack of differential CaMKII\u03b1 response to timeouts is clearly shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C54",
+      "C57",
+      "C68",
+      "C71",
+      "C86",
+      "C87"
+    ],
+    "result": "BLA ACh signaling carries important information about salient events in cue-reward learning and may signal a combination of salience and novelty rather than reward prediction errors. ACh modulates rather than drives CaMKII\u03b1 neuron activity, and cholinergic inputs from the basal forebrain to the BLA are a key component of circuitry linking salient events to neutral stimuli for predicting future rewarded outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C54, C57, C68, C71, C86-C87 represent interpretive conclusions well-supported by the collective experimental evidence. The dynamic shifts in ACh release patterns (C3-C5), the divergent timing of ACh and CaMKII\u03b1 activity (C26), the enhancement of learning by optogenetic stimulation (C7), and the lack of intrinsic reward value (C31-C32) all converge to support these interpretations. However, these are inferences from the data rather than direct demonstrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C37",
+      "C38",
+      "C39",
+      "C58",
+      "C59",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C74",
+      "C77",
+      "C81",
+      "C82"
+    ],
+    "result": "Background claims about the BLA, ACh receptors, cholinergic projections, and prior findings on cholinergic signaling in learning and memory are supported by appropriate citations to the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C18, C37-C39, C58-C59, C64-C67, C69-C70, C74, C77, C81-C82 are background knowledge claims supported by citations to peer-reviewed literature. These provide appropriate context for the current work. The accuracy of these citations would need to be verified by examining the original sources, but they appear to be standard, well-established findings in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C52",
+      "C53"
+    ],
+    "result": "Once peak performance was achieved, there were no differences in extinction learning between experimental groups in any of the experiments (optogenetic stimulation, pharmacological blockade, or non-contingent stimulation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C52-C53 are supported by statistical analyses showing no group differences during extinction phases across multiple experiments (p-values ranging from 0.1643 to 0.9587). This indicates that the manipulations specifically affected acquisition rather than extinction, which is an important control for interpreting the learning effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The authors acknowledge that basal forebrain neurons may co-release ACh with GABA or glutamate, and that both fiber photometry and optogenetic results could be influenced by co-release of other neurotransmitters from ChAT-positive neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is appropriately identified as speculation by the authors and is supported by citations to relevant literature (C74). This represents an important caveat to the interpretation of the results, as the effects attributed to ACh could potentially involve other co-released neurotransmitters. The authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Scopolamine-treated animals were seeking reward but unable to learn that they should only nose poke in response to the tone, as evidenced by maintained high levels of incorrect nose poking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is an inference supported by the behavioral data in Figure 5C showing that scopolamine-treated mice maintained high incorrect nose poke rates throughout Training. This interpretation is reasonable given that these mice continued to respond (indicating motivation) but failed to learn the contingency (indicating a learning deficit rather than motivational or motor impairment).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Methodological details describing surgical procedures, behavioral paradigms, fiber photometry acquisition and analysis, pharmacological treatments, and ethical approvals are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C108 describe methodological procedures that are standard and appropriately detailed. The methods appear rigorous, including appropriate controls, statistical approaches (bootstrapped confidence intervals), and ethical approvals. The fiber photometry analysis methods are cited to established protocols (C105). One concern is the lack of specification of random seeds for stochastic algorithms, though this may not apply to the analyses used.",
+    "result_type": "MINOR"
+  }
+]

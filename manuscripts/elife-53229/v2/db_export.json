@@ -1,0 +1,1844 @@
+{
+  "submission": {
+    "id": "373c9ad2-d432-466c-ae43-daecab3d31d1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:44:47.413496Z",
+    "updated_at": "2025-12-02T16:44:47.413496Z"
+  },
+  "content": [
+    {
+      "id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "submission_id": "373c9ad2-d432-466c-ae43-daecab3d31d1",
+      "content_type": "manuscript",
+      "content_text": "# Cerebellar Purkinje cell activity modulates aggressive behavior\n\n## Authors\n\n- Skyler L Jackman<sup>1</sup> ([ORCID: 0000-0002-6500-3937](https://orcid.org/0000-0002-6500-3937))\n- Christopher H Chen<sup>1</sup>\n- Heather L Offermann<sup>1</sup>\n- Iain R Drew<sup>1</sup>\n- Bailey M Harrison<sup>1</sup>\n- Anna M Bowman<sup>2</sup>\n- Katelyn M Flick<sup>1</sup>\n- Isabella Flaquer<sup>1</sup>\n- Wade G Regehr<sup>1</sup> ([ORCID: 0000-0002-3485-8094](https://orcid.org/0000-0002-3485-8094)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology, Harvard Medical School Boston United States\n2. Vollum Institute, Oregon Health and Science University Portland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlthough the cerebellum is traditionally associated with balance and motor function, it also plays wider roles in affective and cognitive behaviors. Evidence suggests that the cerebellar vermis may regulate aggressive behavior, though the cerebellar circuits and patterns of activity that influence aggression remain unclear. We used optogenetic methods to bidirectionally modulate the activity of spatially-delineated cerebellar Purkinje cells to evaluate the impact on aggression in mice. Increasing Purkinje cell activity in the vermis significantly reduced the frequency of attacks in a resident-intruder assay. Reduced aggression was not a consequence of impaired motor function, because optogenetic stimulation did not alter motor performance. In complementary experiments, optogenetic inhibition of Purkinje cells in the vermis increased the frequency of attacks. These results suggest Purkinje cell activity in the cerebellar vermis regulates aggression, and further support the importance of the cerebellum in driving affective behaviors that could contribute to neurological disorders.\n\n## Introduction\n\nProfound motor deficits such as ataxia and loss of oculomotor control are the most obvious manifestations of cerebellar damage. This has contributed to the popular view that the cerebellum is involved primarily in motor function, but this is far from a complete view of the behavioral functions of the cerebellum. fMRI studies suggest that some regions of the cerebellar cortex are devoted to motor function, but other regions are involved in working memory, language, emotion, executive function and many other nonmotor functions (Stoodley and Schmahmann, 2009; Van Overwalle et al., 2014). The cerebellum is also implicated in autism spectrum disorder (Wang et al., 2014), anxiety (Moreno-Rius, 2018), attention deficit disorder (Berquin et al., 1998), schizophrenia (Andreasen and Pierson, 2008), and other nonmotor neurological disorders (Phillips et al., 2015).\n\nThe posterior vermis region of the cerebellar cortex is particularly intriguing with regard to involvement in nonmotor behaviors. Damage to the cerebellar vermis in adults can lead to deficits in executive function, spatial cognition, linguistic processing, affect regulation, irritability, anger, aggression, and pathological crying or laughing\u00a0(Schmahmann and Sherman, 1998; Levisohn et al., 2000). There is also extensive evidence suggesting that the vermis influences aggression. In seminal studies mapping the somatotopic organization of the cerebellar cortex, the Italian physiologist Guisseppe Pagano found that injecting curare into the vermis caused the animal to \u2018become suddenly furious, and throw itself at those present, trying to bite them\u2019 or to \u2018jump into the air, struggling to bite who knows how many phantoms of its agitated psyche\u2019 (Pagano, 1904). Later lesions studies demonstrated that resection of the vermis had the opposite influence on behavior and produced a calming effect (Sprague and Chambers, 1959; Peters and Monjan, 1971; Berman et al., 1974). Electrical stimulation of the deep cerebellar nuclei has been shown to drive aggressive behaviors such as sham rage (Zanchetti and Zoccolini, 1954) and attack (Reis et al., 1973). In human clinical studies, stimulating the surface of the vermis improved emotional control and reduced aggressive outbursts (Heath, 1977), and reduced feelings of anger (Cooper et al., 1976).\n\nThese studies implicated the vermis in regulating aggression, but they have been difficult to interpret. Purkinje cells (PCs), the sole output cells of the cerebellar cortex, fire continuously at up to 100 Hz, and inhibit neurons in the deep cerebellar nuclei (DCN) that in turn influence other brain regions. The observations that electrical stimulation of the vermis reduced aggression (Heath, 1977), while stimulation of the DCN increased aggression (Reis et al., 1973), are consistent with PC activity inhibiting cells in the DCN (Telgkamp and Raman, 2002; Alvi\u00f1a et al., 2008). This leads to the interpretation that elevated PC activity and decreased DCN activity suppress aggression, and conversely elevated DCN activity (and by implication decreased PC activity) suppresses aggression. However, it is difficult to reconcile stimulation studies with the taming effect observed in lesion studies (Sprague and Chambers, 1959). Lesions of the vermis will decrease PC inhibition of the DCN, and would thus be expected to promote aggression by elevating firing within the DCN. Instead, they suppress aggression.\n\nNumerous factors make both the electrical stimulation and lesion experiments difficult to interpret, and could contribute to the apparent discrepancy between these two approaches. Electrical stimulation of the cerebellar cortex activates all types of neurons in the vicinity of the electrode, including PCs. Molecular layer interneurons will also be activated, and they inhibit PC firing (Heiney et al., 2014). Stimulation also antidromically activates mossy fibers, climbing fibers, and modulatory inputs from other regions (Llin\u00e1s and Sasaki, 1989; Baker and Edgley, 2006), which might contribute to the behavioral consequences of stimulation. In addition, electrical stimulation of PCs can synchronize activity, which could paradoxically increase spiking in the DCN (Person and Raman, 2012a; Person and Raman, 2012b). For these reasons it is unclear how electrical stimulation of the vermal cortex influences cerebellar circuitry. For lesion studies of the cerebellar vermis, it is not clear how the firing of downstream DCN neurons was altered. Although the loss of inhibition would be expected to increase DCN firing, genetic ablation of PCs has been shown to paradoxically decrease firing in the DCN (B\u00e4urle et al., 1997), suggesting that compensatory mechanisms regulate the properties of DCN neurons in the absence of PC input. In addition, previous studies did not quantify the magnitude and time course of behavioral effects driven by cerebellar interventions.\n\nTo determine the role of the cerebellum in regulating aggression, we used optogenetic techniques to selectively control PC activity in mice. We used the resident-intruder assay, a measure of natural territorial aggression in rodents, to provide a measure of the extent and time course of an aggressive behavior (Koolhaas et al., 2013). Manipulating PC firing in the vermis, but not in another cerebellar region, enabled rapid, bidirectional control of aggression. This study provides evidence that in the cerebellar vermis elevated PC firing suppresses aggression, whereas suppressing PC firing promotes aggressive behavior.\n\n## Results\n\nTo selectively modulate the activity of PCs in the cerebellar vermis, we used PCP2-cre mice (Zhang et al., 2004) to restrict expression of the microbial opsins ChR2 (channelrhodopsin-2, [Boyden et al., 2005]) and NpHR3.0 (halorhodopsin, [Zhang et al., 2007]) to PCs. In vitro electrophysiological recordings (Figure 1a) confirmed that ChR2 stimulation could drive graded increases in PC firing that scaled with light intensity (Figure 1b), as previously reported (Guo et al., 2016). Similarly, halorhodopsin stimulation decreased PC firing rates in a light intensity-dependent manner (Figure 1c). To manipulate PC activity in vivo, optical fibers were chronically implanted in adult (>P42) male PCP2-cre::ChR2 or PCP2-cre::NpHR mice over the surface of the cerebellar vermis. Fibers were positioned at the midline over lobule VII (Figure 1\u2014figure supplement 1), a region suggested to play a role in emotional processing (Stoodley and Schmahmann, 2009). Subsequent in vivo recordings through an adjacent craniotomy in anesthetized animals confirmed the ability of light from the implanted optical fiber to reliably increase or decrease the firing rate of putative PCs expressing ChR2 or halorhodopsin, respectively (Figure 1d\u2013f). As with electrical stimulation, optogenetic stimulation has the potential to induce pauses in PC firing. If pauses occur synchronously among multiple PCs that provide inhibition to a DCN neuron, it could promote firing in the DCN (Person and Raman, 2012a). We examined the timing of optically-evoked firing of PCs and found that there were complex temporal responses in different PCs, although there was not a pause in average firing of PCs (Figure 1\u2014figure supplement 2). We went on to record responses of neurons in the deep cerebellar nuclei (DCN) to optogenetic manipulations of PC firing in awake animals (Figure 1g). Increasing PC firing with ChR2 decreased the firing of DCN neurons (Figure 1h, Figure 1\u2014figure supplement 2), while decreasing PC firing with halorhodopsin increased the firing of neurons in the DCN (Figure 1i). The magnitudes of the changes in DCN neuron firing were relatively modest. This may reflect in part the heightened firing rates of neurons in awake animals. In addition, it was a challenge to record from DCN neurons that were targets of the PC population that was influenced with light and other neurons in the DCN may be more strongly targeted and undergo larger changes in activity than those reported here. For this reason the effects on DCN firing should be considered lower bounds.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53229/elife-53229-fig1-v2.jpg)\n\n**Figure 1.:** (a) Recording schematic for in vitro recording and optogenetic stimulation. (b) Firing rates elicited by ChR2 stimulation at different intensities (0.5 ms flashes, 50 Hz, n\u00a0=\u00a06). (c) Inhibition of PCs at different light intensities (sustained illumination, n\u00a0=\u00a04). (d) Schematic for recording PC activity during in vivo stimulation through a chronic fiber optic implant. (e) Top: Representative single unit recording during ChR2 stimulation and (bottom) average firing rate (n\u00a0=\u00a06). (f) Single unit recordings during halorhodopsin stimulation (n\u00a0=\u00a06). Scale bars, 100 ms (horizontal), 20 mV (vertical, (b,c), 0.2 mV (vertical, (e,f). (g) Schematic for recording DCN activity during in vivo stimulation in awake animals. (h) Averaged normalized firing rate of DCN neurons during ChR2 stimulation of vermal PCs (n\u00a0=\u00a04). (i) Averaged firing of DCN neurons during halorhodopsin-mediated inhibition of vermal PCs (n\u00a0=\u00a011). Average data in all figures represents mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53229/elife-53229-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Scale bar\u00a0=\u00a01 mm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53229/elife-53229-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Peristimulus time histogram (0.5 ms bins) of Purkinje cell firing induced by optical stimulation (20 Hz, 5 ms flashes). Inset shows PC responses from the beginning of light onset. (b) As in (a), but for DCN recordings. These recordings represent the same data shown in Figure 1. Individual units are in gray, the mean\u00a0\u00b1\u00a0SEM is displayed in blue.\n\nAfter allowing at least 1 week for recovery from fiber implantation surgeries, animals were placed in an open field arena and stimulated with increasing light intensities to determine if manipulating PC activity produced overt motor deficits or behavioral consequences. In ChR2-expressing mice, strong vermal stimulation using the highest light intensities (~110 mW/mm2 at the face of the fiber optic implant) often resulted in clear motor effects, causing mice to become immobile or exhibit seizure-like and dystonic activity. This behavior resembled previous descriptions of seizure-like activity driven by strong electrical stimulation of the vermal cortex (Clark, 1937; Chambers, 1947). Thus, for all subsequent assays we tailored the intensity of light delivered to each animal to the maximal intensity where animals remained mobile in the open field arena and did not display signs of motor impairment (mean intensity 90\u00a0\u00b1\u00a03.9 mW/mm2). In contrast, halorhodopsin-expressing animals exhibited no obvious behavioral effects in response to stimulation at the maximal light intensity deliverable by the fiber-coupled LED light source (61 mW/mm2). This value was used for all subsequent assays.\n\nBecause the cerebellum plays well-established roles in motor control and balance, and optogenetic manipulation of PCs in the simplex lobe has been shown to perturb forelimb movements (Lee et al., 2015), we first tested whether manipulating vermal PC firing caused more subtle motor impairments than those described above, that might interfere with the expression of other behaviors. To evaluate coordination, animals were tested on accelerating rotarod assays for two consecutive trials during which they received either optical stimulation or no stimulation. Neither excitation with ChR2 (Figure 2a) nor inhibition with halorhodopsin (Figure 2b) affected the rotarod performance. We next assessed locomotion during open-field assays. Animals received alternating 3 min blocks of optogenetic excitation (Figure 2c). Automated animal tracking (Figure 2d) revealed that optogenetic activation of PCs had no effect on distance traveled, nor the time animals spent in the center of the arena, a measure of anxiety (Figure 2e). To assess the effect of stimulation on locomotion with greater temporal resolution, we averaged animal speed across all blocks of stimulation within the trial, centered around the onset of stimulation, and found that stimulation did not induce any transient change in locomotion (Figure 2\u2014figure supplement 1). Similarly, optogenetic inhibition did not affect locomotion or the time animals spent in the center of the arena (Figure 2f\u2013g and Figure 2\u2014figure supplement 1). Together, these data suggest that manipulating vermal PC firing does not strongly affect coordination, locomotion or anxiety, although optogenetic stimulation of PCs at strong light intensities (greater than those used for behavioral assays) consistently drove profound motor impairment as previously described for vermal electrical stimulation (Chambers, 1947).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53229/elife-53229-fig2-v2.jpg)\n\n**Figure 2.:** (a) Time to fall for rotarod assays during ChR2-mediated excitation. Mice were tested in two consecutive trials, and randomly assigned to receive stimulation during either the first or second trial. (n\u00a0=\u00a013) (b) Same as in (a), but for halorhodopsin-mediated inhibition of vermal PC firing. (n\u00a0=\u00a016) (c) Schematic for open field assay with optogenetic stimulation. (d) Representative tracking data throughout alternating periods with stimulation (blue) and without (gray). (e) Total distance traveled and time spent in the center of the arena for mice during epochs with and without stimulation of vermal PCs (n\u00a0=\u00a013). (f, g), Same as d), (e) but for halorhodopsin-mediated inhibition of vermal PCs (n\u00a0=\u00a017).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53229/elife-53229-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Animal speed in an open field, averaged across three consecutive epochs of stimulation for (a) PCP2-cre:ChR2 (n\u00a0=\u00a013) and (b) PCP2-cre:Halorhodopsin (n\u00a0=\u00a017) animals.\n\nTo assess the impact of cerebellar activity on aggressive and social behaviors we performed resident-intruder assays while optogenetically manipulating PC activity in the resident (aggressor) animal (Figure 3a). Although resident mice reliably display aggressive behaviors in resident-intruder assays, attacks occur at a relatively infrequent rate of\u00a0<1 attack per minute (Leypold et al., 2002; Yang et al., 2013; Lewis et al., 2015). In order to increase baseline aggression, fiber-implanted mice were housed with females, providing the opportunity to mate, then subsequently singly-housed for at least 1 week prior to assays. Adult male BALB/c intruders were introduced into the resident\u2019s home cage for 10 min. Optogenetic stimulation was delivered to residents in alternating 1 min blocks. The onset and duration of multiple behaviors were recorded, including aggression (attacks, tail rattles, chasing and lateral threat), social encounters (face-to-face contact and ano-genital sniffing), as well as self-grooming by the resident (Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53229/elife-53229-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic for resident-intruder assays with optogenetic stimulation. (b) Representative scoring of social and aggressive behaviors. (c) Average number of attacks and social encounters during ChR2 assays (31 assays from 12 residents). (d) Peristimulus time histogram of the probability of attacks (top) and social investigations (bottom) within 10 s bins during epochs with and without ChR2-mediated excitation of vermal PCs. (e\u2013g), Same as in (b\u2013d), but during Halorhodopsin-mediated inhibition of vermal PCs (34 assays from 15 residents).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53229/elife-53229-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Comparison of light-induced behavioral changes between experimental groups, for attack rates (left) and social investigations (right). Pairwise comparisons that were not significant (p>0.05) have not been labeled. (b) P values for light on/light off differences within experimental groups for rates of attack and social interactions. Data was first assessed for normality (Shapiro-Wilk test). Significance was assessed using two-tailed Student\u2019s t-tests for data that met the criteria of normality, or Wilcoxon-Mann-Whitney tests for data that did not (see Materials and methods for details).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53229/elife-53229-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Optogenetic stimulation significantly increased grooming behaviors for both ChR2-expressing mice (31 assays in 12 mice, p=0.02, t-test) and (b) halorhodopsin-expressing mice (34 assays in 15 mice, p=0.01, t-test).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53229/elife-53229-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) (Top) Schematic for optical stimulation over vermis in wildtype mice lacking channelrhodopsin. (Middle) Representative sequence of social and aggressive behaviors. (Bottom) Average number of attacks and social investigations during ON/OFF epochs of laser stimulation. (b) Same as in (a), but for PCP2-Cre::ChR2-YFP mice implanted with optical fibers over the lateral Crus II region of the cerebellum.\n\nOptogenetic activation of vermal PCs significantly decreased the number of attacks (p=0.003, two-tailed paired Student\u2019s t-test) (Figure 3c, see Figure 3\u2014figure supplement 1 for detailed statistics). Stimulation did not affect the frequency of social interactions (p=0.7), or the rate of tail rattles, chasing, or lateral threat, though it did increase the rate of self-grooming by the resident (Figure 3\u2014figure supplement 2). An advantage of the optogenetic approach we have used is that it allows us to precisely determine the time course of the effect of stimulation on aggressive behavior with greater temporal resolution. We binned attacks in 10 s increments and averaged across alternating blocks at the onset of stimulation. Even though attacks are infrequent and stochastic, this analysis revealed that optical activation of PCs immediately reduced attack frequency, and when illumination was stopped the attack frequency gradually ramped up in the subsequent minute (Figure 3d). Stimulation reduced the frequency of attacks by 56% in the 10 s immediately following the onset of stimulation (Figure 3d). To put this into context, genetically ablating neurons in the ventromedial hypothalamus, a brain region colloquially referred to as the \u2018attack area\u2019 because of its importance in regulating aggression, decreases the attack frequency by a little more than 50% (Yang et al., 2013).\n\nTo test whether decreased attacks might result from a distracting influence of light escaping from the implanted optical fiber, we performed resident-intruder assays with a separate cohort of wildtype mice that did not express opsins, and found that optical stimulation had no effect on either attacks or social interactions (Figure 3\u2014figure supplement 3). To test whether the effect on aggression was specific to stimulating activity in the posterior vermis, we repeated the experiments in ChR2-expressing animals but implanted the optical fiber over a region outside the vermis. Optogenetic manipulations of Purkinje cell activity in many regions have been shown to drive motor movements in mice (Witter et al., 2013; Heiney et al., 2014; Proville et al., 2014; Lee et al., 2015), which could indirectly affect the expression of aggression and other behaviors. To avoid the confound of motor effects, implants were positioned over Crus II, a region that has not been implicated in regulating aggression, but where manipulation of neuronal activity does not drive overt motor phenotypes in rodents (Yamaguchi and Sakurai, 2016). In these mice, stimulating PC firing had no effect on the frequency of attacks (Figure 3\u2014figure supplement 3). Together, these results suggest that increased PC firing in the cerebellar vermis results in a rapid and significant decrease in aggression.\n\nIf elevating PC firing in the vermis decreases aggression, does suppressing PC firing increase aggression? It is not possible to address this question with electrical stimulation, but it is possible using optogenetics. Inhibiting PCs with halorhodopsin (Figure 3e) had opposing effects on aggression, significantly increasing the number of attacks (p=0.01), and decreasing social interactions (p=0.03) (Figure 3f). Averaging the attack frequency across multiple epochs of stimulation showed that attack frequency nearly doubled in the 10 s following the onset of halorhodopsin-driven inhibition of PCs (Figure 3g). These results indicate that the activity of PCs in the cerebellar vermis exerts a bidirectional influence over aggressive behavior.\n\n## Discussion\n\nHere we demonstrate that Purkinje cell activity in the posterior vermis drives rapid, bidirectional changes in aggressive behavior. Several aspects of our study provide important advances over previous studies that implicated the cerebellum in the regulation of aggression. First, we demonstrate that cerebellar activity regulates rodent aggression in an established assay that is amenable to quantification. This approach opens the door for quantitative studies in a genetically-manipulatable animal model, and promises to be beneficial for future studies of cerebellar control of aggression. Second, given the role of the cerebellum in motor control, it was important to determine whether the effects on aggression were a secondary consequence of impaired motor function. We evaluated this using open field and rotorod assays, and found that the same stimulation that altered aggression did not affect motor performance. Previous studies did not perform such a quantitative evaluation of motor performance. Third, the stimulation we used to suppress behavior was more selective than could be achieved with the electrical stimulation employed in previous studies, which in addition to stimulating PCs directly, can activate modulatory fibers, mossy fibers, climbing fibers, and inhibitory neurons in the cerebellar cortex. Consequently, in our ChR2 experiments, we can attribute decreased aggression to an increase in PC activity. Fourth, we showed that in our experiments increases in PC firing decreased firing in the DCN and decreasing PC firing did the opposite. Fifth, we find that suppressing PC activity increased aggression. This is consistent with the observation that stimulating the DCN promotes aggression (Zanchetti and Zoccolini, 1954; Reis et al., 1973), but differs from the observation that cerebellar lesions suppress aggression. Studies in other brain regions have described similar behavioral differences between the effects of acutely manipulating activity and lesions (Hong et al., 2018). It is likely that lesions within the vermis are accompanied by compensatory mechanisms within the DCN (B\u00e4urle et al., 1997). Finally, by optogenetically regulating PC firing, we provide evidence that the cerebellum can rapidly and bidirectionally regulate aggression.\n\nThe present study raises a number of important questions regarding the manner in which the cerebellum controls behavior. What specific region of the cerebellar cortex is involved? We find that manipulating the activity of Purkinje cells in the posterior vermis is sufficient to significantly modulate aggression. This is consistent with clinical studies implicating lobule VII of the vermis in affective processing (Stoodley and Schmahmann, 2009). However, it is difficult to determine the precise region of the cerebellum that was influenced by our optogenetic stimulation. Light emanating from the face of implanted fibers scatters and disperses over hundreds of microns (Aravanis et al., 2007; Li et al., 2019). Consequently, it is likely that in addition to lobule VII, lobules VIb and VIII received significant illumination, and that PC activity in these regions was also likely modulated to some extent. More detailed studies that manipulate activity in other areas of the midline vermis could add clarity to the specific regions of the cerebellar cortex that regulate aggression. It is also possible that more specific regulation of PC activity in the region controlling aggression (for example, without affecting PC firing in neighboring regions that alter other behaviors) will lead to larger effects on aggression. This could be accomplished by performing similar experiments to those described here, but using viral expression of ChR2 or halorhodopsin to restrict optogenetic manipulation to specific regions of the cerebellar cortex. Furthermore, what is the nature of inputs that control this region? Different regions of the cerebellar cortex typically combine mossy fiber inputs from diverse sources, and it will be interesting to determine how these inputs are combined within the cerebellum to control aggression. Finally, what is the output pathway and the downstream targets that are ultimately regulated by activity in this region of the cerebellar cortex? Anatomical studies have described connections between the cerebellum and regions implicated in aggression, including hypothalamus (Haines et al., 1997) and prefrontal cortex (Kelly and Strick, 2003; Suzuki et al., 2012). Electrophysiological recordings have found that cerebellar stimulation evokes responses in those regions, along with limbic structures such as the hypothalamus, amygdala, and hippocampus (Anand et al., 1959; Snider and Maiti, 1976). Yet, while the somatotopic organization of the cerebellum is well characterized in regions that influence motor function, the output pathways of areas like the posterior vermis have yet to be clearly defined.\n\nIt is interesting to speculate on the nature of the role of the cerebellum in controlling aggressive behavior. The cerebellum has expanded in size relative to the cerebral cortex over the course of human evolution (Weaver, 2005), it contains more than half the neurons in brain and it possesses myriad connections to other brain regions. It is unsurprising that its influence should extend beyond the motor realm. Experiments on motor control suggest that the cerebellum combines inputs to generate predictions. It is natural to think that this computational strategy might be used by the posterior vermis of the cerebellum to learn how to respond to cues, and to ultimately decide when aggression is the correct response. Perhaps even subtle dysfunctions or misdirected plasticity within this region can lead to inappropriate aggressive behavior. For example, cerebellar damage often occurs in patients with PTSD (Rabellino et al., 2018). As non-invasive stimulation techniques like transcranial magnetic stimulation of the cerebellum emerge as a clinical treatment options (Demirtas-Tatlidede et al., 2010), it is increasingly important to understand the which areas of the cerebellum control non-motor behaviors (Kelly and Strick, 2003). Future work could shed light on the anatomical projections and physiological impact of non-motor regions of the cerebellum.\n\n## Materials and methods\n\n### Animals\n\nAll experiments were conducted in accordance with federal guidelines and protocols approved by the Harvard Medical Area Standing Committee on Animals. Male mice of the following strains were used: Resident mice were either wild-type (WT) C57BL/6N (Charles River Laboratories), or Pcp2-cre mice (Jackson Laboratory, stock number 010536) crossed to either ChR2-EYFP (Ai32, Jackson Laboratory, 024109) or eNpHR3.0-EYFP (Halo) mice (Ai39 Jackson Laboratory, 014539). Intruder mice were BALB/c (Charles River Laboratories).\n\n### In vitro physiology\n\nSagittal cerebellar slices were prepared from adult mice (P30-P100) and recordings were performed as previously described (Jackman et al., 2014). Briefly, animals were anesthetized with isoflurane and euthanized by decapitation. Brains were removed into oxygenated ice-cold cutting solution containing (in mm): 82.7 NaCl, 65 sucrose, 23.8 NaHCO3, 23.7 glucose, 6.8 MgCl2, 2.4 KCl, 1.4 NaH2PO4, and 0.5 CaCl2. Sagittal slices from the cerebellar vermis (250 \u00b5m thick) were prepared in ice-cold cutting solution using a Leica VT1200s vibrotome. Slices were transferred for 30 min into oxygenated artificial CSF (ACSF) at 32\u00b0C containing the following (in mm): 125 NaCl, 26 NaHCO3, 25 glucose, 2.5 KCl, 2 CaCl2, 1.25 NaH2PO4, and 1 MgCl2, adjusted to 315 mOsm, and allowed to equilibrate to room temperature for\u00a0>30 min prior to recording. PCP2-Cre::ChR2-EYFP were used for all ChR2 recordings. Halorhodopsin recordings were performed in PCP2-Cre mice where opsin expression was driven by stereotaxic cerebellar injections (as previously described [Jackman et al., 2014]) of AAV9.EF1a.DIO.eNpHR3.0-eYFP.WPRE.hGH (Addgene26966). Although these mice were not used for behavioral experiments, similar optical sensitivity was observed in recordings performed for a separate study using PCP2-Cre::Ai39 mice (Guo et al., 2016).\n\nData were acquired using a Multiclamp 700B amplifier (Molecular Devices) digitized at 10 kHz with an ITC-18 (Instrutech), and low-pass filtered at 4 kHz. Acquisition and analysis were performed with custom software written in IgorPro (generously provided by Matthew Xu-Friedman, SUNY Buffalo). Whole-cell current clamp or on-cell recordings were obtained using borosilicate patch pipettes (2\u20134 M\u03a9), the internal solution contained the following (in mm): 150 K-gluconate, 3 KCl, 10 HEPES, 0.5 EGTA, 3 MgATP, 0.5 GTP, five phosphocreatine-tris2, and five phosphocreatine-Na2, with the pH adjusted to 7.2 with NaOH. Optical stimulation was delivered through the excitation pathway of a BX51WI upright microscope (Olympus) by either a 50 mW DPSS analog-controllable 473 nm blue laser (MBL-III-473\u201350 mW, Optoengine), or a 590 nm Amber LED (160 mW, ThorLabs).\n\n### Chronic fiber implantation and in vivo stimulation\n\nOptical fiber implants were assembled as previously described (Sparta et al., 2012). Briefly, a multimode optical fiber (Thorlabs, NA 0.39, 200 \u03bcm core) was secured into ceramic ferrules (Thorlabs, 1.25 mm O.D.) with epoxy. Fibers were cleaved to protrude 0.2 mm below the ferrule, and the connector end was polished. Only fibers with\u00a0>70% transmissivity were used. To determine the intensity of light exiting fibers, the output of fibers was measured with a power meter (Ophir; Vega). A photodiode was used to measure the relative intensity during short flashes controlled by the analog trigger of the laser, and this value was used to compute the power output during short flashes. The intensity of light delivered in vivo was computed by dividing the total light output (4.1 mW for the 473 nm laser, 2.3 mW for the 590 nm LED) by the surface area of the optical fiber. To avoid desensitizing ChR2 and driving PCs into depolarization-induced block, we stimulated ChR2-expressing animals using flash trains of 1\u20132 ms pulses. Optical fibers were implanted as described previously (Sparta et al., 2012). Briefly, adult mice (P40\u2013P80) were anaesthetized with ketamine/xylazine (100/10 mg/kg) supplemented with isoflurane (1%\u20134%). An incision was performed to expose the skull, and the connective tissue and musculature above the cerebellum was gently peeled back. The stereotaxic coordinates used to target implants to the posterior vermis and Crus II were initially determined by performing test craniotomies, and injecting small volumes of fluorescent dye or viral expression vectors. Animals were sacrificed, and posthoc fluorescence microcopy was used to determine the location of craniotomies relative to the cerebellar surface. For vermal implants, the site for the craniotomy was determined using a fine pipette attached to a stereotaxic device (Kopf). After locating bregma, the pipette was moved caudal to the cerebellum, lowered 2.0 mm relative to bregma, then advanced rostrally until it touched the surface of the exposed skull. The site of Crus II craniotomies were determined similarly, but 1.5 mm ventral and 2.5 mm lateral of bregma. A craniotomy was performed at this site, and implants were lowered into place. Implants were secured to the skull using Metabond (Parkell), and the wound was sutured. Buprenorphine (0.05 mg/kg) was postoperatively administered subcutaneously every 12 hr for 48 hr. At the conclusion of behavioral assays, some resident animals were anaesthetized with ketamine and transcardially perfused with 4% paraformaldehyde (PFA) in PBS. The brain was removed, post-fixed for 24 hr, and the sagittal cerebellar slices were prepared using a vibrotome. YFP fluorescence in Ai32 and Ai39 mice was imaged using an Olympus MVX10 Macro dissecting microscope (for intact fixed tissue) or Zeiss Axio Imager (for brain slices). Images were contrast enhanced in Fiji for visualization. In some cases, histology could be used to determine the location of implant over the cerebellar cortex.\n\n### In vivo physiology\n\nMice from behavioral experiments were heavily anesthetized with isoflurane (2%). Anesthesia was maintained for all following procedures. A craniotomy immediately lateral to the implanted optical fiber was made to insert an electrode for extracellular recordings. A headplate was cemented (Metabond) anterior to the optical fiber, and the mouse was head-fixed for recordings. Electrodes were pulled from borosilicate glass (Sutter), filled with ACSF, and were inserted at an angle between 20 and 45 degrees to record single unit activity below the optical fiber. Most neurons were recorded between 1 and 2 mm from this entry point. Signals were acquired at 20 kHz between 0.2 and 7.5 kHz (Intan Technologies). Purkinje cells were identified by the presence of complex spikes, characteristic increase in noise as the electrode entered the Purkinje cell layer, and/or responsiveness to light. Single units were the sorted offline in Offline Sorter (Plexon) and analyzed in Matlab (Mathworks).\n\nRecordings from the DCN were made in awake, head-restrained PCP2-Cre::ChR2-EYFP and PCP2-Cre::Halo-EYFP mice. Briefly, mice were anesthetized with isoflurane (2%) and a headplate was cemented (Metabond) onto the anterior aspect of the cranium. A craniotomy was made (\u22126 mm posterior to bregma, 0.75\u20131.2 mm lateral from the midline) for placement of the recording electrode into the medial or interposed DCN. For PCP2-Cre::ChR2-EYFP mice, a large craniotomy was made over the vermis to facilitate activation of Purkinje cells. For PCP2-Cre::Halo-EYFP mice, the region over the vermis was manually thinned till visibly transparent under a dissecting scope. Optical stimulation was delivered via an optical fiber positioned above the vermis. Light was focused to a spot size of approximately 2 mm diameter. Stimulation parameters were identical to those used in anesthetized experiments above, though in lieu of LEDs, these experiments used either a 473 nm blue laser (MBL-III-473\u201350 mW, Optoengine) for ChR2 activation, or a 647 nm red laser (MRL-III-635\u2013500 mW, Optoengine) for Halo activation. Recordings were made using a silicon probe (E-series, Cambridge Neurotech), from awake mice head-restrained over a cylindrical treadmill. DCN were identified by the recording depth, absence of Purkinje cell activity, and in a subset of experiments, the silicon probe was coated with DiI (Thermo Fisher Scientific) to confirm that the recording sites were within the DCN. Data were acquired and processed identically to anesthetized experiments.\n\n### Behavior\n\nMice used in behavioral experiments were housed in a 12 hr reverse light-dark cycle (lit 7PM-7AM). The timeline for experiments were as follows: Resident (aggressor) mice were allowed to recover from implants surgeries for at least 7 days. They were then paired with an adult C57BL/6N female for 7\u201312 days. The female was removed and the resident mouse remained in social isolation for at least 7 days. No cage changes were performed during social isolation to enhance subsequent territorial dominance aggression. Residents were first tested for signs of stimulation-induced motor disfunction, then assayed in the open field, rotarod, and finally aggression (resident-intruder) over the course of several weeks. Prior to behavioral experiments, animals were placed in a darkened room and allowed to habituate for at least 1 hr.\n\nFor experiments involving optogenetic stimulation the light source was connected to a fiberoptic cable via a rotating commutator (FRJ_1 \u00d7 1_FC-FC, Doric Lenses) to allow freedom of motion. The fiberoptic cable was attached to the implant with a ferrule sleeve (Thorlabs) and mice were allowed to acclimate to the attached cable for 30 min. All assays were conducted under dim red illumination. Sensorimotor coordination was assessed with an automated rotarod apparatus (UgoBasile). Mice were placed on a rotarod with a constant rotation of 4 RPM, and allowed to acclimate for 1 min, after which the rod accelerated to 60 RPM at a rate of 20 RPM/min. Time to fall was calculated from the beginning of acceleration. All mice were run on two consecutive trials with 4 min rest between trials, and animals were randomly assigned to receive optical stimulation during either the first or second trial. Optical stimulation began 10 s before the onset of acceleration and continued until the animal fell. Open field assays were conducted in a square opaque white plastic container (46 \u00d7 46 cm), and the central regions was defined as a square one third the dimension of the area. Automated tracking was performed in Matlab using idTracker2.1.\n\nFor resident-intruder assays, residents were attached to the optical fiber and allowed to acclimate in their home change for 30 min. A BALB/c intruder (roughly age matched) was introduced into the home cage, and interactions were filmed and manually scored. Trials were stopped in the event that either animal was injured by an attack, or if the resident attacked continuously for more than 60 s. Residents were run on up to five resident-intruder assays with at least 2 days between assays, with a novel intruder used for each assay. Residents were removed from the study if they failed to attack, or if the intruder attacked (Leshner and Nock, 1976). To establish a baseline level of aggression, assays with less than three attacks or more than 20 attacks were omitted from analysis. A subset of halorhodopsin-expressing animals (4/15) were stimulated in 5 min intervals rather than the standard 1 min intervals. Resident intruder assays were scored manually by an experimenter blinded to mouse genotype and stimulation wavelengths, and annotated using the open-source software BORIS (Friard and Gamba, 2016). The following behaviors were scored; self-grooming by the resident, social interactions (including face-to-face contact, mutual grooming and ano-genital sniffing), tail-rattles, lateral threat, chasing of the intruder by the resident, and biting attacks (Koolhaas et al., 2013).\n\nData analysis was performed using Igor Pro (Wavemetrics). All results are expressed as mean\u00a0\u00b1\u00a0standard error of mean. Data for each behavior were tested for normality for each experimental condition (Shapiro-Wilk test). To compare light on/light off differences within groups, data that did not meet the criterion for normality were analyzed by non-parametric Wilcoxon signed-rank, while normally distributed data were analyzed by two-tailed paired Student\u2019s t-test. Similarly, comparisons between groups were tested by two-tailed unpaired Student\u2019s t-test, or the non-parametric Wilcoxon-Mann-Whitney test. The criterion for statistical significance was set at p<0.05.\n",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "9aa1c3b3-722e-4e6d-b40b-72c43563e261",
+      "submission_id": "373c9ad2-d432-466c-ae43-daecab3d31d1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vatsala Thirumalai, National Centre for Biological Sciences India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53229.sa1](https://doi.org/10.7554/eLife.53229.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThough the cerebellum is known to mediate motor co-ordination and balance, it is also a centre for non-motor functions. Using the power of optogenetics to specifically manipulate activity bidirectionally in cerebellar Purkinje neurons, this study draws a connection between the cerebellum and aggression. These highly interesting results now pave the way for future studies on how Purkinje neurons regulate aggression.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cerebellar Purkinje cell activity modulates aggressive behavior\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Ivry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nJackman et al. show that optogenetic stimulation of Purkinje neurons in the posterior vermis reduces aggressive behavior while optogenetic suppression increases it. While it has been known that the cerebellum is important for non-motor functions including aggression, the authors' use of reversible, optogenetic manipulations make their results compelling.\n\nHowever, there are several concerns that were raised by the reviewers and these are listed below.\n\nEssential revisions:\n\n1) A central concern is that the authors' results run contrary to decades of studies showing that cerebellar lesions \"tame\" animals. Some of these studies are cited by the authors. Thus, it is quite surprising that the authors don't comment on the disparity between their results and those of many prior investigators.\n\n2) Optogenetic effects on Purkinje cell firing may not be as straightforward as the authors suggest, as is outlined in the Introduction of Streng and Krook-Magnuson (2020, J. Physiol.). Perhaps this disparity can be explained by differences in the application of the optogenetic technique between studies. However, the disparity between the present results and those of lesions studies makes one wonder.\n\n3) Results section:\n\n\"Fibers were positioned at the midline over lobule VII (Figure 1).\u2026 \"\n\nThe authors indicate that they are illuminating vermal lobule VII, however they don't provide any concrete evidence that this is the case. The authors should show specific histology that indicates the location of the optical fiber. They also don't indicate whether their illumination (and its effects) were confined to lobule VII or involved other nearby cerebellar lobules as well. The authors need to analyze and describe the areal extent of P-cell activation and inactivation they caused. The authors selected vermal lobule VII based on reviews of the human neuroimaging literature. Others have found cerebellar effects on the regulation of emotion to be located in slightly more anterior vermal lobules. The authors achieved effects, but it isn't clear that the authors were illuminating the right or optimal vermal lobule. Related to this, the authors should at least discuss the modeled/projected scope of activation/inhibition predicted by the light power used in these studies.\n\n4) It would have been comforting for the authors to demonstrate that optogenetic manipulation could affect motor behavior at other sites in the cerebellum. Then, the authors could have used the same parameters of optogenetic stimulation that were effective for motor behaviors to test the effects on non-motor behavior in vermal lobule VII.\n\n5) The absence of a change in \"anxiety\" is somewhat troubling given the extensive literature on the role of the cerebellar vermis in fear conditioning (e.g., Sacchetti et al.).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Cerebellar Purkinje cell activity modulates aggressive behavior\" for consideration by eLife. Your article has been reviewed by two reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Ivry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThough we find the work potentially exciting, and agree that the revision is a significant improvement over the original submission, we are disappointed that the revised version has not satisfactorily answered all of the concerns raised by the reviewers. These are significant concerns regarding the specificity of the manipulations and the interpretation of the results. They are listed again below. We hope that you can resolve these issues in the next version of the manuscript.\n\n1) From the previous decision letter:\n\n\"The authors indicate that they are illuminating vermal lobule VII, however they don't provide any concrete evidence that this is the case. The authors should show specific histology that indicates the location of the optical fiber.\"\n\nThis point was not addressed in the revision nor in the response. The absence of this data leads to considerable confusion. For example, Figure 2B shows the authors' designation of vermal lobules. Figure 1A illustrates the location of an optogenetic probe and a recording electrode. A comparison of Figure 2B with Figure 1A suggests that the probe and recordings were made in lobule VIa, not VII. Thus, the authors leave the reader with considerable uncertainty and confusion regarding the site of their effects.\n\n2) The authors could have performed the control experiment of using optogenetic activation/inactivation of the classical motor territory of the vermis. This would have allowed them to determine the appropriate activation and inactivation thresholds and parameters to produce motor effects. This approach would have allowed them to make clean statements about optogenetic activation/inactivation relative to the classical motor symptoms of cerebellar cortical lesions/stimulation. Then, the authors could have used the same parameters to stimulate the posterior vermis. The absence of this \"motor control\" remains a significant shortcoming of the present study.\n\n3) Classical studies vs. optogenetics: The authors have dug through the classical literature in an impressive fashion. However, the effects of optogenetic stimulation may be no less complex to interpret than lesions of the cerebellar cortex. For example, though the authors show a reduction in DCN firing rates after PC activation, and claim that PC's are not synchronized, no data is shown to support this claim and a role for synchrony is not ruled out.\n\nIn light of 2 and 3 above, authors should tone down their claims such as the Abstract that \"These results establish Purkinje cell activity in the cerebellar vermis regulates aggression\u2026\" (emphasis added). It would be most appropriate to replace \"establishes,\" wherever it appears, with \"supports.\"\n",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "12ca7572-b9bd-4edf-926c-cd6928215a48",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C1",
+      "claim": "The cerebellum plays wider roles in affective and cognitive behaviors beyond balance and motor function.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the cerebellum is traditionally associated with balance and motor function, it also plays wider roles in affective and cognitive behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general assertion about cerebellar function, drawing on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "d93ed0da-53ca-42c7-b39f-24c63359827f",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C2",
+      "claim": "The cerebellar vermis may regulate aggressive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence suggests that the cerebellar vermis may regulate aggressive behavior, though the cerebellar circuits and patterns of activity that influence aggression remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior evidence in the literature, as indicated by the phrase 'Evidence suggests'.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "82b7d6af-afec-46e5-a790-4444af91e6d1",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C3",
+      "claim": "Increasing Purkinje cell activity in the vermis significantly reduced the frequency of attacks in a resident-intruder assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing Purkinje cell activity in the vermis significantly reduced the frequency of attacks in a resident-intruder assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding stated in the abstract and supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "c7d2b76b-5177-4e53-a568-94eb18829aa9",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C4",
+      "claim": "Reduced aggression was not a consequence of impaired motor function.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced aggression was not a consequence of impaired motor function, because optogenetic stimulation did not alter motor performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from rotarod and open field assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "56578791-69c8-437e-8805-cfe2172d71ca",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C5",
+      "claim": "Optogenetic inhibition of Purkinje cells in the vermis increased the frequency of attacks.",
+      "claim_type": "EXPLICIT",
+      "source": "In complementary experiments, optogenetic inhibition of Purkinje cells in the vermis increased the frequency of attacks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding stated in the abstract and supported by data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "6c04588c-cd1d-44b8-8e66-77e760c99a33",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C6",
+      "claim": "Purkinje cell activity in the cerebellar vermis regulates aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest Purkinje cell activity in the cerebellar vermis regulates aggression, and further support the importance of the cerebellum in driving affective behaviors that could contribute to neurological disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "1f0e73a9-1f53-4b75-ac59-57e68d868f23",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C7",
+      "claim": "The cerebellum is important in driving affective behaviors that could contribute to neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest Purkinje cell activity in the cerebellar vermis regulates aggression, and further support the importance of the cerebellum in driving affective behaviors that could contribute to neurological disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental findings and broader scientific context.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "a983cff9-cd52-4dcf-889e-3f56da61ccfd",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C8",
+      "claim": "Some regions of the cerebellar cortex are devoted to motor function, while other regions are involved in working memory, language, emotion, executive function and many other nonmotor functions.",
+      "claim_type": "EXPLICIT",
+      "source": "fMRI studies suggest that some regions of the cerebellar cortex are devoted to motor function, but other regions are involved in working memory, language, emotion, executive function and many other nonmotor functions (Stoodley and Schmahmann, 2009; Van Overwalle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to fMRI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "867e8b5b-d7d0-4d3a-bafc-c4a74ae7de9c",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C9",
+      "claim": "The cerebellum is implicated in autism spectrum disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum is also implicated in autism spectrum disorder (Wang et al., 2014), anxiety (Moreno-Rius, 2018), attention deficit disorder (Berquin et al., 1998), schizophrenia (Andreasen and Pierson, 2008), and other nonmotor neurological disorders (Phillips et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "93021bd9-3bb1-456f-8f6e-f9933ecb7543",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C10",
+      "claim": "The cerebellum is implicated in anxiety.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum is also implicated in autism spectrum disorder (Wang et al., 2014), anxiety (Moreno-Rius, 2018), attention deficit disorder (Berquin et al., 1998), schizophrenia (Andreasen and Pierson, 2008), and other nonmotor neurological disorders (Phillips et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Moreno-Rius, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "0a39dd1b-afec-4146-ad7d-7a36450d481e",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C11",
+      "claim": "The cerebellum is implicated in attention deficit disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum is also implicated in autism spectrum disorder (Wang et al., 2014), anxiety (Moreno-Rius, 2018), attention deficit disorder (Berquin et al., 1998), schizophrenia (Andreasen and Pierson, 2008), and other nonmotor neurological disorders (Phillips et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Berquin et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "22236026-26a6-4fde-8fc5-9a386a474779",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C12",
+      "claim": "The cerebellum is implicated in schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum is also implicated in autism spectrum disorder (Wang et al., 2014), anxiety (Moreno-Rius, 2018), attention deficit disorder (Berquin et al., 1998), schizophrenia (Andreasen and Pierson, 2008), and other nonmotor neurological disorders (Phillips et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Andreasen and Pierson, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "2304e083-e2a2-4083-ac46-3bcaee1288e3",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C13",
+      "claim": "Damage to the cerebellar vermis in adults can lead to deficits in executive function, spatial cognition, linguistic processing, affect regulation, irritability, anger, aggression, and pathological crying or laughing.",
+      "claim_type": "EXPLICIT",
+      "source": "Damage to the cerebellar vermis in adults can lead to deficits in executive function, spatial cognition, linguistic processing, affect regulation, irritability, anger, aggression, and pathological crying or laughing (Schmahmann and Sherman, 1998; Levisohn et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "ae76f59b-98b0-4353-af88-93106c440fed",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C14",
+      "claim": "Injecting curare into the vermis caused animals to become suddenly furious and try to bite.",
+      "claim_type": "EXPLICIT",
+      "source": "In seminal studies mapping the somatotopic organization of the cerebellar cortex, the Italian physiologist Guisseppe Pagano found that injecting curare into the vermis caused the animal to 'become suddenly furious, and throw itself at those present, trying to bite them' or to 'jump into the air, struggling to bite who knows how many phantoms of its agitated psyche' (Pagano, 1904).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pagano, 1904.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "f099887f-e881-4a47-81e3-e9ee80be4582",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C15",
+      "claim": "Resection of the vermis produced a calming effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Later lesions studies demonstrated that resection of the vermis had the opposite influence on behavior and produced a calming effect (Sprague and Chambers, 1959; Peters and Monjan, 1971; Berman et al., 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to lesion studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "6e4937b7-594c-4bc9-8471-93ff66a03b7d",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C16",
+      "claim": "Electrical stimulation of the deep cerebellar nuclei has been shown to drive aggressive behaviors such as sham rage and attack.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical stimulation of the deep cerebellar nuclei has been shown to drive aggressive behaviors such as sham rage (Zanchetti and Zoccolini, 1954) and attack (Reis et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to electrical stimulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "e4bbdb18-10b2-4c50-aa94-e5e2e2179f64",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C17",
+      "claim": "Stimulating the surface of the vermis improved emotional control and reduced aggressive outbursts in human clinical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In human clinical studies, stimulating the surface of the vermis improved emotional control and reduced aggressive outbursts (Heath, 1977), and reduced feelings of anger (Cooper et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "ee5d9b43-d811-4f5b-9035-4d66baa21b41",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C18",
+      "claim": "Purkinje cells are the sole output cells of the cerebellar cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Purkinje cells (PCs), the sole output cells of the cerebellar cortex, fire continuously at up to 100 Hz, and inhibit neurons in the deep cerebellar nuclei (DCN) that in turn influence other brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cerebellar anatomy and physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "89d1aabb-e4d5-4c19-ba39-46426e3709e5",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C19",
+      "claim": "Purkinje cells fire continuously at up to 100 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Purkinje cells (PCs), the sole output cells of the cerebellar cortex, fire continuously at up to 100 Hz, and inhibit neurons in the deep cerebellar nuclei (DCN) that in turn influence other brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Purkinje cell physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "a47596d3-d53d-4547-b6ab-52daae07f909",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C20",
+      "claim": "Purkinje cells inhibit neurons in the deep cerebellar nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Purkinje cells (PCs), the sole output cells of the cerebellar cortex, fire continuously at up to 100 Hz, and inhibit neurons in the deep cerebellar nuclei (DCN) that in turn influence other brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cerebellar circuitry, also supported by citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "5c654cf8-518e-4d7f-a180-e8e3fce02397",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C21",
+      "claim": "Electrical stimulation of the cerebellar cortex activates all types of neurons in the vicinity of the electrode, including Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical stimulation of the cerebellar cortex activates all types of neurons in the vicinity of the electrode, including PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of how electrical stimulation affects neural tissue.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "f8caea5e-2812-4564-a8e4-a66a0010aa57",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C22",
+      "claim": "Molecular layer interneurons inhibit Purkinje cell firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular layer interneurons will also be activated, and they inhibit PC firing (Heiney et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Heiney et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "e07140b9-af86-42f9-9e15-017d58f4da7d",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C23",
+      "claim": "Electrical stimulation of Purkinje cells can synchronize activity, which could paradoxically increase spiking in the DCN.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, electrical stimulation of PCs can synchronize activity, which could paradoxically increase spiking in the DCN (Person and Raman, 2012a; Person and Raman, 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Person and Raman, 2012a and 2012b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "b23d68e7-dd59-4dfc-ac07-d9e070e0bffb",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C24",
+      "claim": "Genetic ablation of Purkinje cells has been shown to paradoxically decrease firing in the DCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the loss of inhibition would be expected to increase DCN firing, genetic ablation of PCs has been shown to paradoxically decrease firing in the DCN (B\u00e4urle et al., 1997), suggesting that compensatory mechanisms regulate the properties of DCN neurons in the absence of PC input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to B\u00e4urle et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "3f3eb51d-84a7-4853-9881-19837b4e7c1e",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C25",
+      "claim": "ChR2 stimulation could drive graded increases in PC firing that scaled with light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro electrophysiological recordings (Figure 1a) confirmed that ChR2 stimulation could drive graded increases in PC firing that scaled with light intensity (Figure 1b), as previously reported (Guo et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vitro electrophysiological data shown in Figure 1b and cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "e98d0c34-7685-43c6-8bd9-a5a03cda785a",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C26",
+      "claim": "Halorhodopsin stimulation decreased PC firing rates in a light intensity-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, halorhodopsin stimulation decreased PC firing rates in a light intensity-dependent manner (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vitro electrophysiological data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "5b3e5dc6-210f-4f23-93b5-0adec95bbd3e",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C27",
+      "claim": "Light from the implanted optical fiber could reliably increase or decrease the firing rate of putative PCs expressing ChR2 or halorhodopsin in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent in vivo recordings through an adjacent craniotomy in anesthetized animals confirmed the ability of light from the implanted optical fiber to reliably increase or decrease the firing rate of putative PCs expressing ChR2 or halorhodopsin, respectively (Figure 1d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo electrophysiological recordings shown in Figure 1d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "7c818a46-6f35-470b-9ef2-b2efceb8690c",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C28",
+      "claim": "Increasing PC firing with ChR2 decreased the firing of DCN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing PC firing with ChR2 decreased the firing of DCN neurons (Figure 1h, Figure 1\u2014figure supplement 2), while decreasing PC firing with halorhodopsin increased the firing of neurons in the DCN (Figure 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo recordings from DCN neurons in awake animals shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "381f9d6e-ffea-4a81-b887-d6eec5817b74",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C29",
+      "claim": "Decreasing PC firing with halorhodopsin increased the firing of neurons in the DCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing PC firing with ChR2 decreased the firing of DCN neurons (Figure 1h, Figure 1\u2014figure supplement 2), while decreasing PC firing with halorhodopsin increased the firing of neurons in the DCN (Figure 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo recordings from DCN neurons in awake animals shown in Figure 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "fc363fe8-5a50-4769-af3b-d741c13348c3",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C30",
+      "claim": "Strong vermal stimulation using the highest light intensities often resulted in clear motor effects, causing mice to become immobile or exhibit seizure-like and dystonic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In ChR2-expressing mice, strong vermal stimulation using the highest light intensities (~110 mW/mm2 at the face of the fiber optic implant) often resulted in clear motor effects, causing mice to become immobile or exhibit seizure-like and dystonic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from behavioral experiments with optogenetic stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "1b932df4-e8d1-46c4-a3d0-41e231938649",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C31",
+      "claim": "Strong vermal stimulation behavior resembled previous descriptions of seizure-like activity driven by strong electrical stimulation of the vermal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior resembled previous descriptions of seizure-like activity driven by strong electrical stimulation of the vermal cortex (Clark, 1937; Chambers, 1947).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Clark, 1937 and Chambers, 1947.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "cab3bf68-0bc8-4488-ad68-b1396124a0c3",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C32",
+      "claim": "Halorhodopsin-expressing animals exhibited no obvious behavioral effects in response to stimulation at the maximal light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, halorhodopsin-expressing animals exhibited no obvious behavioral effects in response to stimulation at the maximal light intensity deliverable by the fiber-coupled LED light source (61 mW/mm2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from behavioral experiments with optogenetic stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "b4791ecc-b798-4f3f-ae47-b542bf994868",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C33",
+      "claim": "Neither excitation with ChR2 nor inhibition with halorhodopsin affected rotarod performance.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate coordination, animals were tested on accelerating rotarod assays for two consecutive trials during which they received either optical stimulation or no stimulation. Neither excitation with ChR2 (Figure 2a) nor inhibition with halorhodopsin (Figure 2b) affected the rotarod performance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by rotarod assay data shown in Figure 2a and 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "cf90f4d9-77ba-41fb-8471-abcf43c9a189",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C34",
+      "claim": "Optogenetic activation of PCs had no effect on distance traveled or the time animals spent in the center of the arena.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated animal tracking (Figure 2d) revealed that optogenetic activation of PCs had no effect on distance traveled, nor the time animals spent in the center of the arena, a measure of anxiety (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by open field assay data shown in Figure 2d and 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "cf8ddaba-3168-4fb5-b137-4d62651d841a",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C35",
+      "claim": "Optogenetic inhibition did not affect locomotion or the time animals spent in the center of the arena.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, optogenetic inhibition did not affect locomotion or the time animals spent in the center of the arena (Figure 2f\u2013g and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by open field assay data shown in Figure 2f-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "14319ae3-c082-4555-a298-2234e942512b",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C36",
+      "claim": "Manipulating vermal PC firing does not strongly affect coordination, locomotion or anxiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that manipulating vermal PC firing does not strongly affect coordination, locomotion or anxiety, although optogenetic stimulation of PCs at strong light intensities (greater than those used for behavioral assays) consistently drove profound motor impairment as previously described for vermal electrical stimulation (Chambers, 1947).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the rotarod and open field assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "ec7a8762-3ac0-4867-8cc6-bd38a5e334d4",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C37",
+      "claim": "Resident mice reliably display aggressive behaviors in resident-intruder assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Although resident mice reliably display aggressive behaviors in resident-intruder assays, attacks occur at a relatively infrequent rate of <1 attack per minute (Leypold et al., 2002; Yang et al., 2013; Lewis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies using resident-intruder assays.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "1333d300-628e-4828-a217-67a9894ace9f",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C38",
+      "claim": "Attacks occur at a relatively infrequent rate of <1 attack per minute in resident-intruder assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Although resident mice reliably display aggressive behaviors in resident-intruder assays, attacks occur at a relatively infrequent rate of <1 attack per minute (Leypold et al., 2002; Yang et al., 2013; Lewis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "70f706bb-116c-4c83-a737-dff242dc13c1",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C39",
+      "claim": "Optogenetic activation of vermal PCs significantly decreased the number of attacks.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of vermal PCs significantly decreased the number of attacks (p=0.003, two-tailed paired Student's t-test) (Figure 3c, see Figure 3\u2014figure supplement 1 for detailed statistics).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by resident-intruder assay data shown in Figure 3c with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "9d4915d5-29c1-498e-a3cd-7f35785c5a52",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C40",
+      "claim": "Optogenetic stimulation did not affect the frequency of social interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation did not affect the frequency of social interactions (p=0.7), or the rate of tail rattles, chasing, or lateral threat, though it did increase the rate of self-grooming by the resident (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by resident-intruder assay data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "1ef44092-d83b-4209-bf38-294f42471693",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C41",
+      "claim": "Optogenetic stimulation increased the rate of self-grooming by the resident.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation did not affect the frequency of social interactions (p=0.7), or the rate of tail rattles, chasing, or lateral threat, though it did increase the rate of self-grooming by the resident (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by resident-intruder assay data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "1825f5b0-63cf-47d8-9480-b1d337927ee6",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C42",
+      "claim": "Optical activation of PCs immediately reduced attack frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though attacks are infrequent and stochastic, this analysis revealed that optical activation of PCs immediately reduced attack frequency, and when illumination was stopped the attack frequency gradually ramped up in the subsequent minute (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal analysis of attack data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "0bcba0dc-bcb0-44ca-b162-9bed8922f4a6",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C43",
+      "claim": "Stimulation reduced the frequency of attacks by 56% in the 10 s immediately following the onset of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation reduced the frequency of attacks by 56% in the 10 s immediately following the onset of stimulation (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal analysis of attack data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "9fb2a28a-af1e-4444-88c5-fbcde109db26",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C44",
+      "claim": "Genetically ablating neurons in the ventromedial hypothalamus decreases the attack frequency by a little more than 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "To put this into context, genetically ablating neurons in the ventromedial hypothalamus, a brain region colloquially referred to as the 'attack area' because of its importance in regulating aggression, decreases the attack frequency by a little more than 50% (Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "bc4a548a-a6f7-40ae-acbe-9f5f2d832944",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C45",
+      "claim": "Optical stimulation had no effect on either attacks or social interactions in wildtype mice that did not express opsins.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether decreased attacks might result from a distracting influence of light escaping from the implanted optical fiber, we performed resident-intruder assays with a separate cohort of wildtype mice that did not express opsins, and found that optical stimulation had no effect on either attacks or social interactions (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiments shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "c79afdd3-a6b6-48ab-8b23-25baae833892",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C46",
+      "claim": "Stimulating PC firing over Crus II had no effect on the frequency of attacks.",
+      "claim_type": "EXPLICIT",
+      "source": "In these mice, stimulating PC firing had no effect on the frequency of attacks (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control experiments with Crus II stimulation shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "ee3e3d7a-88d9-4cdf-8f4a-2dda31b064c6",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C47",
+      "claim": "Increased PC firing in the cerebellar vermis results in a rapid and significant decrease in aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that increased PC firing in the cerebellar vermis results in a rapid and significant decrease in aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "d3261855-77e5-41e6-84db-912b840bd538",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C48",
+      "claim": "Inhibiting PCs with halorhodopsin had opposing effects on aggression, significantly increasing the number of attacks.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting PCs with halorhodopsin (Figure 3e) had opposing effects on aggression, significantly increasing the number of attacks (p=0.01), and decreasing social interactions (p=0.03) (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by resident-intruder assay data shown in Figure 3e-f with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "4ddca599-4dfb-412e-91f7-f142bb252349",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C49",
+      "claim": "Inhibiting PCs with halorhodopsin decreased social interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting PCs with halorhodopsin (Figure 3e) had opposing effects on aggression, significantly increasing the number of attacks (p=0.01), and decreasing social interactions (p=0.03) (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by resident-intruder assay data shown in Figure 3f with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "12c0edd7-9e7a-4607-b047-a8d5ea9ccb7f",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C50",
+      "claim": "Attack frequency nearly doubled in the 10 s following the onset of halorhodopsin-driven inhibition of PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging the attack frequency across multiple epochs of stimulation showed that attack frequency nearly doubled in the 10 s following the onset of halorhodopsin-driven inhibition of PCs (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal analysis of attack data shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "b5fba6aa-c43d-44a1-b39e-e52128bdde23",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C51",
+      "claim": "The activity of PCs in the cerebellar vermis exerts a bidirectional influence over aggressive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the activity of PCs in the cerebellar vermis exerts a bidirectional influence over aggressive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing both increases and decreases in aggression with PC manipulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "2edc5daf-4987-4817-966e-958f36b7efe4",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C52",
+      "claim": "Purkinje cell activity in the posterior vermis drives rapid, bidirectional changes in aggressive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that Purkinje cell activity in the posterior vermis drives rapid, bidirectional changes in aggressive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "477bffc8-bc68-4b1f-8c38-625c8e18cd8c",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C53",
+      "claim": "The same stimulation that altered aggression did not affect motor performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, given the role of the cerebellum in motor control, it was important to determine whether the effects on aggression were a secondary consequence of impaired motor function. We evaluated this using open field and rotorod assays, and found that the same stimulation that altered aggression did not affect motor performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the rotarod and open field assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "8295fc53-30a4-4a16-a4bb-891bb0adf0aa",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C54",
+      "claim": "In ChR2 experiments, decreased aggression can be attributed to an increase in PC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the stimulation we used to suppress behavior was more selective than could be achieved with the electrical stimulation employed in previous studies, which in addition to stimulating PCs directly, can activate modulatory fibers, mossy fibers, climbing fibers, and inhibitory neurons in the cerebellar cortex. Consequently, in our ChR2 experiments, we can attribute decreased aggression to an increase in PC activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the selectivity of optogenetic stimulation compared to electrical stimulation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "dfbd8d5b-9bd2-45f3-84c7-b5ac56c2a03f",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C55",
+      "claim": "Increases in PC firing decreased firing in the DCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, we showed that in our experiments increases in PC firing decreased firing in the DCN and decreasing PC firing did the opposite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the DCN recording data shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "25a6cb18-8600-49ac-8cf1-1c5c698ed3c4",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C56",
+      "claim": "Decreasing PC firing increased firing in the DCN.",
+      "claim_type": "IMPLICIT",
+      "source": "Fourth, we showed that in our experiments increases in PC firing decreased firing in the DCN and decreasing PC firing did the opposite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is implied by the statement 'did the opposite' and is supported by the DCN recording data shown in Figure 1i.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "4840ac08-fd15-4cd6-ac6c-78a5da688aa8",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C57",
+      "claim": "Suppressing PC activity increased aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifth, we find that suppressing PC activity increased aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the halorhodopsin experiments shown in Figure 3e-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "753a0318-e047-4041-a22e-ea1c40dafa3c",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C58",
+      "claim": "Suppressing PC activity is consistent with the observation that stimulating the DCN promotes aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the observation that stimulating the DCN promotes aggression (Zanchetti and Zoccolini, 1954; Reis et al., 1973), but differs from the observation that cerebellar lesions suppress aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and comparison with current findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "f64c490d-a369-48d5-8ad8-bf813ab5246a",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C59",
+      "claim": "Lesions within the vermis are likely accompanied by compensatory mechanisms within the DCN.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that lesions within the vermis are accompanied by compensatory mechanisms within the DCN (B\u00e4urle et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to B\u00e4urle et al., 1997 and is used to explain discrepancies between lesion and stimulation studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "53a51d1b-6afa-4107-8956-d301f6ece13e",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C60",
+      "claim": "The cerebellum can rapidly and bidirectionally regulate aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by optogenetically regulating PC firing, we provide evidence that the cerebellum can rapidly and bidirectionally regulate aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing rapid changes in aggression with optogenetic manipulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "036f2c04-c592-4822-b883-720bcd908267",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C61",
+      "claim": "Manipulating the activity of Purkinje cells in the posterior vermis is sufficient to significantly modulate aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that manipulating the activity of Purkinje cells in the posterior vermis is sufficient to significantly modulate aggression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "a68462e7-5d83-42da-b3f0-8b795bfa5e49",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C62",
+      "claim": "Lobule VII of the vermis is implicated in affective processing.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with clinical studies implicating lobule VII of the vermis in affective processing (Stoodley and Schmahmann, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stoodley and Schmahmann, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "cbb4a355-5082-4381-bfb4-be891bd6139a",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C63",
+      "claim": "Light emanating from the face of implanted fibers scatters and disperses over hundreds of microns.",
+      "claim_type": "EXPLICIT",
+      "source": "Light emanating from the face of implanted fibers scatters and disperses over hundreds of microns (Aravanis et al., 2007; Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on light scattering in tissue.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "292708d8-054a-4d31-bafa-6ab5b24aeab0",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C64",
+      "claim": "In addition to lobule VII, lobules VIb and VIII likely received significant illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, it is likely that in addition to lobule VII, lobules VIb and VIII received significant illumination, and that PC activity in these regions was also likely modulated to some extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known scattering properties of light in tissue.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "688bb290-9b55-4da2-8ab2-3e41d321bbac",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C65",
+      "claim": "Anatomical studies have described connections between the cerebellum and regions implicated in aggression, including hypothalamus and prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical studies have described connections between the cerebellum and regions implicated in aggression, including hypothalamus (Haines et al., 1997) and prefrontal cortex (Kelly and Strick, 2003; Suzuki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "e40882aa-f809-4c67-911c-22fd4461049d",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C66",
+      "claim": "Cerebellar stimulation evokes responses in hypothalamus, amygdala, and hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological recordings have found that cerebellar stimulation evokes responses in those regions, along with limbic structures such as the hypothalamus, amygdala, and hippocampus (Anand et al., 1959; Snider and Maiti, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to electrophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "a9c62cc6-b2a2-41f2-894d-3ce19d41f233",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C67",
+      "claim": "The cerebellum has expanded in size relative to the cerebral cortex over the course of human evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum has expanded in size relative to the cerebral cortex over the course of human evolution (Weaver, 2005), it contains more than half the neurons in brain and it possesses myriad connections to other brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Weaver, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "4146c257-686a-43ea-bf31-b76bb2dc9a58",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C68",
+      "claim": "The cerebellum contains more than half the neurons in brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum has expanded in size relative to the cerebral cortex over the course of human evolution (Weaver, 2005), it contains more than half the neurons in brain and it possesses myriad connections to other brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cerebellar anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "5e0e3d0f-a30b-4b0d-a444-e8db582e56cb",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C69",
+      "claim": "The cerebellum possesses myriad connections to other brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum has expanded in size relative to the cerebral cortex over the course of human evolution (Weaver, 2005), it contains more than half the neurons in brain and it possesses myriad connections to other brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cerebellar connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "a5557915-789d-475f-87dc-bdb8f2047d55",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C70",
+      "claim": "The cerebellum combines inputs to generate predictions in motor control.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments on motor control suggest that the cerebellum combines inputs to generate predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established theories of cerebellar function in motor control.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "ce33f73e-09b6-4941-9d07-db0c91cec1d4",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C71",
+      "claim": "The posterior vermis of the cerebellum might use a computational strategy to learn how to respond to cues and decide when aggression is the correct response.",
+      "claim_type": "EXPLICIT",
+      "source": "It is natural to think that this computational strategy might be used by the posterior vermis of the cerebellum to learn how to respond to cues, and to ultimately decide when aggression is the correct response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential computational role of the posterior vermis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "c108e4a1-a953-4326-bc26-dff669e8a9fe",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C72",
+      "claim": "Subtle dysfunctions or misdirected plasticity within the posterior vermis can lead to inappropriate aggressive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps even subtle dysfunctions or misdirected plasticity within this region can lead to inappropriate aggressive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential clinical implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "ac7bfc66-c02d-446f-b36c-811f7ff6d500",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C73",
+      "claim": "Cerebellar damage often occurs in patients with PTSD.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cerebellar damage often occurs in patients with PTSD (Rabellino et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rabellino et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "2c8e7f31-016d-40ed-a403-39ac15d1126b",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C74",
+      "claim": "Non-invasive stimulation techniques like transcranial magnetic stimulation of the cerebellum are emerging as clinical treatment options.",
+      "claim_type": "EXPLICIT",
+      "source": "As non-invasive stimulation techniques like transcranial magnetic stimulation of the cerebellum emerge as a clinical treatment options (Demirtas-Tatlidede et al., 2010), it is increasingly important to understand the which areas of the cerebellum control non-motor behaviors (Kelly and Strick, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "5fab9752-5ebf-4879-b699-1b348e05fea2",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C75",
+      "claim": "PCP2-cre mice were used to restrict expression of ChR2 and NpHR3.0 to Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To selectively modulate the activity of PCs in the cerebellar vermis, we used PCP2-cre mice (Zhang et al., 2004) to restrict expression of the microbial opsins ChR2 (channelrhodopsin-2, [Boyden et al., 2005]) and NpHR3.0 (halorhodopsin, [Zhang et al., 2007]) to PCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach and is supported by citations to the mouse line and opsins used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "5fa3ec3b-26f4-44db-beda-00f979e76963",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C76",
+      "claim": "Optical fibers were chronically implanted in adult male PCP2-cre::ChR2 or PCP2-cre::NpHR mice over the surface of the cerebellar vermis.",
+      "claim_type": "EXPLICIT",
+      "source": "To manipulate PC activity in vivo, optical fibers were chronically implanted in adult (>P42) male PCP2-cre::ChR2 or PCP2-cre::NpHR mice over the surface of the cerebellar vermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "01585e9e-8556-4ca8-ad33-0c8dc452ba81",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C77",
+      "claim": "Fibers were positioned at the midline over lobule VII.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibers were positioned at the midline over lobule VII (Figure 1\u2014figure supplement 1), a region suggested to play a role in emotional processing (Stoodley and Schmahmann, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure and is shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "fdda6e71-32cd-4688-857d-bb61f1e86b23",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C78",
+      "claim": "Lobule VII is a region suggested to play a role in emotional processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibers were positioned at the midline over lobule VII (Figure 1\u2014figure supplement 1), a region suggested to play a role in emotional processing (Stoodley and Schmahmann, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stoodley and Schmahmann, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "c2cb3c2b-885b-47b2-849e-49e755ea7c81",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C79",
+      "claim": "There were complex temporal responses in different PCs to optogenetic stimulation, although there was not a pause in average firing of PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the timing of optically-evoked firing of PCs and found that there were complex temporal responses in different PCs, although there was not a pause in average firing of PCs (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of PC firing patterns shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "6f113bf6-0622-46d6-8732-336ec05383f3",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C80",
+      "claim": "The magnitudes of the changes in DCN neuron firing were relatively modest.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitudes of the changes in DCN neuron firing were relatively modest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the DCN recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "67125079-82a8-4c01-87b1-4c81c344dc55",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C81",
+      "claim": "The modest changes in DCN firing may reflect in part the heightened firing rates of neurons in awake animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect in part the heightened firing rates of neurons in awake animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "7823b212-6855-45d3-a76d-904d7ba3215a",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C82",
+      "claim": "It was a challenge to record from DCN neurons that were targets of the PC population that was influenced with light.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it was a challenge to record from DCN neurons that were targets of the PC population that was influenced with light and other neurons in the DCN may be more strongly targeted and undergo larger changes in activity than those reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological limitation acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "a5df6def-22d0-45f0-902b-10dd1b8e486c",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C83",
+      "claim": "The effects on DCN firing should be considered lower bounds.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason the effects on DCN firing should be considered lower bounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the methodological challenges described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "b26783a8-eaf3-4288-b549-c05f39c39517",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C84",
+      "claim": "For all behavioral assays, light intensity was tailored to each animal to the maximal intensity where animals remained mobile and did not display signs of motor impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, for all subsequent assays we tailored the intensity of light delivered to each animal to the maximal intensity where animals remained mobile in the open field arena and did not display signs of motor impairment (mean intensity 90 \u00b1 3.9 mW/mm2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for determining stimulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "03192303-9e61-4bbb-9100-65dffcbf6ebf",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C85",
+      "claim": "Fiber-implanted mice were housed with females, providing the opportunity to mate, then subsequently singly-housed for at least 1 week prior to assays to increase baseline aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to increase baseline aggression, fiber-implanted mice were housed with females, providing the opportunity to mate, then subsequently singly-housed for at least 1 week prior to assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for enhancing aggressive behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "e54b88ed-c131-4011-98bb-32a4db59c968",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C86",
+      "claim": "Adult male BALB/c intruders were introduced into the resident's home cage for 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult male BALB/c intruders were introduced into the resident's home cage for 10 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for resident-intruder assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "bd9c8d20-d6aa-4714-9b44-26998780aacf",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C87",
+      "claim": "Optogenetic stimulation was delivered to residents in alternating 1 min blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic stimulation was delivered to residents in alternating 1 min blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for optogenetic stimulation during behavioral assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "cb56898e-e020-43d2-b80f-2ad3bce5e67d",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "claim_id": "C88",
+      "claim": "Optogenetic manipulation of Purkinje cell activity in Crus II does not drive overt motor phenotypes in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid the confound of motor effects, implants were positioned over Crus II, a region that has not been implicated in regulating aggression, but where manipulation of neuronal activity does not drive overt motor phenotypes in rodents (Yamaguchi and Sakurai, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yamaguchi and Sakurai, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "af116ffd-12e7-4ba5-bbab-992a8027caf7",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Optogenetic tools (ChR2 and halorhodopsin) were successfully validated in vitro and in vivo to bidirectionally modulate Purkinje cell firing in the cerebellar vermis. ChR2 stimulation increased PC firing in a light intensity-dependent manner, while halorhodopsin decreased PC firing, with effects confirmed both in brain slices and in anesthetized animals with chronic fiber implants over lobule VII.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 provide converging evidence from in vitro slice recordings (Figure 1b-c) and in vivo recordings in anesthetized animals (Figure 1d-f) demonstrating graded, bidirectional control of PC firing. The experimental approach (C75-C77) using PCP2-cre mice with targeted fiber placement is well-documented and appropriate for selective PC manipulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "8f5099a3-1d34-40cc-9014-70cc676ad8b7",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic manipulation of vermal Purkinje cells produced expected changes in deep cerebellar nuclei (DCN) firing in awake animals: ChR2 activation decreased DCN firing while halorhodopsin inhibition increased it. However, the magnitude of DCN firing changes was modest, potentially due to technical challenges in targeting DCN neurons receiving input from optogenetically-manipulated PCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 and C55-C56 demonstrate the expected inhibitory relationship between PCs and DCN neurons with data from awake animals (Figure 1h-i). The authors appropriately acknowledge limitations (C80-C83) including modest effect sizes and recording challenges, noting these should be considered lower bounds. The complex temporal PC responses (C79) without average pauses help explain why synchronous pause-induced DCN excitation was not observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "0cadc050-9fcc-4514-a9cc-fa5fa271f930",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "High-intensity optogenetic stimulation of vermal PCs produced motor impairments including immobility and seizure-like activity, necessitating individualized calibration of light intensity for behavioral experiments. Stimulation parameters were set to maximal intensity that maintained mobility without motor impairment (mean 90 \u00b1 3.9 mW/mm\u00b2 for ChR2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 document dose-dependent motor effects at high light intensities consistent with prior electrical stimulation studies. The methodological approach (C84) of individualizing stimulation intensity is appropriate and necessary to avoid confounding motor effects. The observation that halorhodopsin produced no obvious effects at maximal intensity (C32) provides important context for interpreting inhibition experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "5e649008-41d9-4a01-87a3-e0d89a72f4b6",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optogenetic manipulation of vermal Purkinje cells at calibrated intensities did not impair motor coordination (rotarod), locomotion, or anxiety-like behavior (open field), indicating that effects on aggression were not secondary to motor dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 provide quantitative behavioral data (Figure 2) showing no effects on rotarod performance, distance traveled, or center time in open field assays for both ChR2 activation and halorhodopsin inhibition. This is a critical control (C36, C53) that strengthens the interpretation that subsequent aggression effects are not due to motor impairment. Statistical comparisons appear appropriate though specific p-values are not provided in these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "b09e529e-adff-4964-9ff7-10299cd5ff03",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optogenetic activation of vermal Purkinje cells significantly reduced aggressive attacks in resident-intruder assays (p=0.003) without affecting social interactions. The effect was rapid (56% reduction in attacks within 10 seconds of stimulation onset) and reversible, with attack frequency gradually returning after stimulation ceased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 provide strong quantitative evidence with appropriate statistics (paired t-test, p=0.003) and temporal resolution analysis (Figure 3c-d). The 56% reduction is substantial and comparable to effects of ablating ventromedial hypothalamus neurons (C44). The specificity is supported by lack of effect on social interactions (C40, p=0.7). The temporal dynamics (C42) demonstrate rapid onset and gradual recovery, supporting a causal relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "36c72fa8-6d4c-47b8-b838-14c262a6820c",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of vermal Purkinje cells with halorhodopsin had opposite effects, significantly increasing aggressive attacks (p=0.01) and decreasing social interactions (p=0.03). Attack frequency nearly doubled within 10 seconds of inhibition onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 provide complementary evidence for bidirectional control with appropriate statistics (Figure 3e-g). The opposing effects of inhibition versus activation (C57) strengthen the causal interpretation. However, the decrease in social interactions (C49) differs from ChR2 experiments and warrants consideration of whether this represents a distinct behavioral state or confound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "9804890d-4a2c-4f3d-9054-a7b03a6c2663",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Control experiments demonstrated that the effects on aggression were specific to optogenetic manipulation of Purkinje cells and to the vermal region. Light stimulation had no effect in wildtype mice lacking opsins, and stimulation of Crus II (a non-vermis region) had no effect on attack frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 provide essential anatomical and technical controls (Figure 3\u2014figure supplement 3). The wildtype control rules out non-specific effects of light exposure, while the Crus II control demonstrates regional specificity. These controls strengthen the interpretation that effects are due to PC activity changes in the vermis specifically, though the spatial resolution is limited by light scatter (acknowledged in C63-C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "966f324c-8746-4026-838e-17b0451c094f",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study demonstrates that Purkinje cell activity in the cerebellar vermis causally regulates aggressive behavior in a rapid and bidirectional manner, with increased activity suppressing aggression and decreased activity promoting it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C6, C51-C52, C60-C61) are well-supported by the convergence of bidirectional optogenetic manipulations (ChR2 and halorhodopsin), appropriate controls, temporal resolution, and quantitative behavioral measurements. The rapid time course and reversibility support a causal rather than correlational relationship. This represents the main conclusion of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "e06a7f3c-7b6b-45e5-bd1d-22cb0e83ab53",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of vermal Purkinje cells increased self-grooming behavior in resident mice during aggression assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 reports increased self-grooming with both ChR2 and halorhodopsin stimulation (Figure 3\u2014figure supplement 2). While statistically significant, this finding is not well-integrated into the main narrative and its relationship to aggression regulation is unclear. It could represent a displacement behavior, stress response, or off-target effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "da11c76d-1aac-4231-92c5-9f080bac3392",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The optogenetic approach provides greater cell-type specificity than electrical stimulation used in prior studies, allowing attribution of decreased aggression specifically to increased Purkinje cell activity rather than mixed effects on multiple cell types and fiber systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 makes a valid methodological point supported by knowledge of electrical stimulation limitations (C21-C23). However, optogenetics is not perfectly specific\u2014ChR2 stimulation could still affect PC axon terminals and potentially activate other neurons through synaptic transmission. The claim is reasonable but slightly overstated regarding complete attribution to PC activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "bbcf917c-fc76-4aea-b1bf-72c0d5d1f9d1",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The finding that suppressing PC activity increases aggression is consistent with prior observations that DCN stimulation promotes aggression, but differs from lesion studies showing that vermis resection produces calming effects. This discrepancy is likely explained by compensatory mechanisms in DCN neurons following chronic PC loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 appropriately reconcile the current findings with prior literature. The explanation invoking compensatory mechanisms (C59) is supported by citation to B\u00e4urle et al. 1997 (C24) showing paradoxical DCN firing decreases after PC ablation. This represents thoughtful integration of acute manipulation versus chronic lesion effects, though the compensatory mechanism remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "782b194c-a90a-4982-8d68-7bad639d7e45",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Optical fibers were positioned over lobule VII of the vermis, a region implicated in emotional processing, though light scatter likely also affected adjacent lobules VIb and VIII, limiting precise anatomical localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 document fiber placement with appropriate citation (Stoodley and Schmahmann, 2009). The authors appropriately acknowledge (C63-C64) that light scattering over hundreds of microns means adjacent lobules were likely affected. This honest assessment of spatial resolution limitations is important for interpretation, though it does not undermine the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "840e8166-612d-47eb-b88b-acaa78fc4ad3",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The cerebellum, particularly the vermis, plays roles in affective and cognitive behaviors beyond motor function, with involvement in neurological disorders including autism, anxiety, ADHD, and schizophrenia. Vermis damage can produce deficits in emotional regulation and aggression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C13 establish the broader context for the study through citations to fMRI studies and clinical literature. These are appropriately cited background claims that motivate the research question. The evidence is from prior work rather than the current study, but the claims accurately represent the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "800133f1-bbb8-4c9e-be12-c7e097f38184",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Historical studies provide conflicting evidence about cerebellar vermis involvement in aggression: curare injection increased aggression, vermis resection decreased it, DCN stimulation increased it, and vermal surface stimulation in humans decreased aggressive outbursts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 accurately summarize prior literature with appropriate citations spanning from 1904 (Pagano) to 1970s clinical studies. These historical findings establish the rationale for the current study by highlighting inconsistencies that the authors aim to resolve with more selective optogenetic approaches. The claims appear to accurately represent the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "485c7142-81d0-4735-b4de-3e174b7cecc9",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Purkinje cells are the sole output of the cerebellar cortex, fire continuously at high rates (up to 100 Hz), and provide inhibitory input to deep cerebellar nuclei neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 state established facts about cerebellar circuitry that are well-supported by general neuroscience knowledge and citations in the manuscript. These provide essential background for understanding the experimental manipulations and their predicted effects on downstream DCN activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "c98cde09-38a8-49de-b6b5-70defa7e962c",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The resident-intruder assay was used to quantify aggression, with baseline attack rates <1 per minute. Resident mice were housed with females then isolated for \u22651 week to increase baseline aggression, and BALB/c intruders were introduced for 10-minute trials with alternating 1-minute blocks of optogenetic stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 and C85-C87 describe the behavioral paradigm with appropriate citations to prior studies. The methodological details are clearly specified and the approach to enhance baseline aggression through social isolation is standard. The alternating stimulation design allows within-subject comparisons that strengthen statistical power.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "956817a6-b08a-4368-9734-395fa070367d",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Anatomical and electrophysiological studies have demonstrated connections between the cerebellum and brain regions implicated in aggression, including hypothalamus, prefrontal cortex, amygdala, and hippocampus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 cite anatomical tracing and electrophysiology studies establishing cerebellar connectivity with aggression-related regions. These provide plausible circuit mechanisms for how cerebellar activity could influence aggression, though the specific pathways mediating the observed effects remain to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "0ef98a7e-bf7f-416b-994a-d2a81281aff3",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The cerebellum has expanded during human evolution, contains over half the brain's neurons, has extensive connections to other brain regions, and is thought to generate predictions by combining inputs\u2014a computational strategy that may extend to non-motor functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 provide evolutionary and computational context for cerebellar function. C67 is supported by citation, C68-C69 are established anatomical facts, and C70 represents the prevailing theoretical framework for cerebellar computation. These contextualize the findings within broader understanding of cerebellar function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "d74c4a12-7401-4d93-875b-b8cc5d1a7fb3",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The posterior vermis might use cerebellar computational strategies to learn appropriate responses to cues and decide when aggression is warranted, with dysfunction or aberrant plasticity potentially leading to inappropriate aggressive behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C72 are explicitly speculative (\"might,\" \"perhaps\") and represent hypotheses about computational mechanisms rather than demonstrated findings. While plausible extensions of the results, these claims lack direct experimental support and would require additional studies examining learning, plasticity, and cue processing in this circuit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "aaa52739-e1a7-465c-b02d-0360b085430c",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Cerebellar damage occurs in PTSD patients, and non-invasive cerebellar stimulation techniques like transcranial magnetic stimulation are emerging as potential clinical treatments, highlighting the importance of understanding cerebellar control of non-motor behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 cite clinical literature to establish translational relevance. These appropriately motivate the importance of the research for understanding neuropsychiatric disorders and potential therapeutic interventions. The claims accurately represent the cited work and provide appropriate context for the study's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    },
+    {
+      "id": "38d1f778-1881-4aab-97f6-a7367fdafb20",
+      "content_id": "bf5578a9-5fae-49ca-9a77-51e80ae2b129",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Crus II manipulation does not produce overt motor phenotypes in rodents, making it an appropriate control region to test anatomical specificity without motor confounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is supported by citation to Yamaguchi and Sakurai 2016 and provides the rationale for choosing Crus II as an anatomical control region. This represents appropriate experimental design to distinguish regional specificity from general cerebellar effects while avoiding motor confounds that could indirectly affect aggression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:47.413496Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3f3eb51d-84a7-4853-9881-19837b4e7c1e",
+      "result_id": "af116ffd-12e7-4ba5-bbab-992a8027caf7"
+    },
+    {
+      "claim_id": "e98d0c34-7685-43c6-8bd9-a5a03cda785a",
+      "result_id": "af116ffd-12e7-4ba5-bbab-992a8027caf7"
+    },
+    {
+      "claim_id": "5b3e5dc6-210f-4f23-93b5-0adec95bbd3e",
+      "result_id": "af116ffd-12e7-4ba5-bbab-992a8027caf7"
+    },
+    {
+      "claim_id": "5fab9752-5ebf-4879-b699-1b348e05fea2",
+      "result_id": "af116ffd-12e7-4ba5-bbab-992a8027caf7"
+    },
+    {
+      "claim_id": "5fa3ec3b-26f4-44db-beda-00f979e76963",
+      "result_id": "af116ffd-12e7-4ba5-bbab-992a8027caf7"
+    },
+    {
+      "claim_id": "01585e9e-8556-4ca8-ad33-0c8dc452ba81",
+      "result_id": "af116ffd-12e7-4ba5-bbab-992a8027caf7"
+    },
+    {
+      "claim_id": "7c818a46-6f35-470b-9ef2-b2efceb8690c",
+      "result_id": "8f5099a3-1d34-40cc-9014-70cc676ad8b7"
+    },
+    {
+      "claim_id": "381f9d6e-ffea-4a81-b887-d6eec5817b74",
+      "result_id": "8f5099a3-1d34-40cc-9014-70cc676ad8b7"
+    },
+    {
+      "claim_id": "dfbd8d5b-9bd2-45f3-84c7-b5ac56c2a03f",
+      "result_id": "8f5099a3-1d34-40cc-9014-70cc676ad8b7"
+    },
+    {
+      "claim_id": "25a6cb18-8600-49ac-8cf1-1c5c698ed3c4",
+      "result_id": "8f5099a3-1d34-40cc-9014-70cc676ad8b7"
+    },
+    {
+      "claim_id": "c2cb3c2b-885b-47b2-849e-49e755ea7c81",
+      "result_id": "8f5099a3-1d34-40cc-9014-70cc676ad8b7"
+    },
+    {
+      "claim_id": "6f113bf6-0622-46d6-8732-336ec05383f3",
+      "result_id": "8f5099a3-1d34-40cc-9014-70cc676ad8b7"
+    },
+    {
+      "claim_id": "67125079-82a8-4c01-87b1-4c81c344dc55",
+      "result_id": "8f5099a3-1d34-40cc-9014-70cc676ad8b7"
+    },
+    {
+      "claim_id": "7823b212-6855-45d3-a76d-904d7ba3215a",
+      "result_id": "8f5099a3-1d34-40cc-9014-70cc676ad8b7"
+    },
+    {
+      "claim_id": "a5df6def-22d0-45f0-902b-10dd1b8e486c",
+      "result_id": "8f5099a3-1d34-40cc-9014-70cc676ad8b7"
+    },
+    {
+      "claim_id": "fc363fe8-5a50-4769-af3b-d741c13348c3",
+      "result_id": "0cadc050-9fcc-4514-a9cc-fa5fa271f930"
+    },
+    {
+      "claim_id": "1b932df4-e8d1-46c4-a3d0-41e231938649",
+      "result_id": "0cadc050-9fcc-4514-a9cc-fa5fa271f930"
+    },
+    {
+      "claim_id": "cab3bf68-0bc8-4488-ad68-b1396124a0c3",
+      "result_id": "0cadc050-9fcc-4514-a9cc-fa5fa271f930"
+    },
+    {
+      "claim_id": "b26783a8-eaf3-4288-b549-c05f39c39517",
+      "result_id": "0cadc050-9fcc-4514-a9cc-fa5fa271f930"
+    },
+    {
+      "claim_id": "b4791ecc-b798-4f3f-ae47-b542bf994868",
+      "result_id": "5e649008-41d9-4a01-87a3-e0d89a72f4b6"
+    },
+    {
+      "claim_id": "cf90f4d9-77ba-41fb-8471-abcf43c9a189",
+      "result_id": "5e649008-41d9-4a01-87a3-e0d89a72f4b6"
+    },
+    {
+      "claim_id": "cf8ddaba-3168-4fb5-b137-4d62651d841a",
+      "result_id": "5e649008-41d9-4a01-87a3-e0d89a72f4b6"
+    },
+    {
+      "claim_id": "14319ae3-c082-4555-a298-2234e942512b",
+      "result_id": "5e649008-41d9-4a01-87a3-e0d89a72f4b6"
+    },
+    {
+      "claim_id": "477bffc8-bc68-4b1f-8c38-625c8e18cd8c",
+      "result_id": "5e649008-41d9-4a01-87a3-e0d89a72f4b6"
+    },
+    {
+      "claim_id": "82b7d6af-afec-46e5-a790-4444af91e6d1",
+      "result_id": "b09e529e-adff-4964-9ff7-10299cd5ff03"
+    },
+    {
+      "claim_id": "70f706bb-116c-4c83-a737-dff242dc13c1",
+      "result_id": "b09e529e-adff-4964-9ff7-10299cd5ff03"
+    },
+    {
+      "claim_id": "9d4915d5-29c1-498e-a3cd-7f35785c5a52",
+      "result_id": "b09e529e-adff-4964-9ff7-10299cd5ff03"
+    },
+    {
+      "claim_id": "1825f5b0-63cf-47d8-9480-b1d337927ee6",
+      "result_id": "b09e529e-adff-4964-9ff7-10299cd5ff03"
+    },
+    {
+      "claim_id": "0bcba0dc-bcb0-44ca-b162-9bed8922f4a6",
+      "result_id": "b09e529e-adff-4964-9ff7-10299cd5ff03"
+    },
+    {
+      "claim_id": "ee3e3d7a-88d9-4cdf-8f4a-2dda31b064c6",
+      "result_id": "b09e529e-adff-4964-9ff7-10299cd5ff03"
+    },
+    {
+      "claim_id": "56578791-69c8-437e-8805-cfe2172d71ca",
+      "result_id": "36c72fa8-6d4c-47b8-b838-14c262a6820c"
+    },
+    {
+      "claim_id": "d3261855-77e5-41e6-84db-912b840bd538",
+      "result_id": "36c72fa8-6d4c-47b8-b838-14c262a6820c"
+    },
+    {
+      "claim_id": "4ddca599-4dfb-412e-91f7-f142bb252349",
+      "result_id": "36c72fa8-6d4c-47b8-b838-14c262a6820c"
+    },
+    {
+      "claim_id": "12c0edd7-9e7a-4607-b047-a8d5ea9ccb7f",
+      "result_id": "36c72fa8-6d4c-47b8-b838-14c262a6820c"
+    },
+    {
+      "claim_id": "4840ac08-fd15-4cd6-ac6c-78a5da688aa8",
+      "result_id": "36c72fa8-6d4c-47b8-b838-14c262a6820c"
+    },
+    {
+      "claim_id": "bc4a548a-a6f7-40ae-acbe-9f5f2d832944",
+      "result_id": "9804890d-4a2c-4f3d-9054-a7b03a6c2663"
+    },
+    {
+      "claim_id": "c79afdd3-a6b6-48ab-8b23-25baae833892",
+      "result_id": "9804890d-4a2c-4f3d-9054-a7b03a6c2663"
+    },
+    {
+      "claim_id": "6c04588c-cd1d-44b8-8e66-77e760c99a33",
+      "result_id": "966f324c-8746-4026-838e-17b0451c094f"
+    },
+    {
+      "claim_id": "b5fba6aa-c43d-44a1-b39e-e52128bdde23",
+      "result_id": "966f324c-8746-4026-838e-17b0451c094f"
+    },
+    {
+      "claim_id": "2edc5daf-4987-4817-966e-958f36b7efe4",
+      "result_id": "966f324c-8746-4026-838e-17b0451c094f"
+    },
+    {
+      "claim_id": "53a51d1b-6afa-4107-8956-d301f6ece13e",
+      "result_id": "966f324c-8746-4026-838e-17b0451c094f"
+    },
+    {
+      "claim_id": "036f2c04-c592-4822-b883-720bcd908267",
+      "result_id": "966f324c-8746-4026-838e-17b0451c094f"
+    },
+    {
+      "claim_id": "1ef44092-d83b-4209-bf38-294f42471693",
+      "result_id": "e06a7f3c-7b6b-45e5-bd1d-22cb0e83ab53"
+    },
+    {
+      "claim_id": "8295fc53-30a4-4a16-a4bb-891bb0adf0aa",
+      "result_id": "da11c76d-1aac-4231-92c5-9f080bac3392"
+    },
+    {
+      "claim_id": "5c654cf8-518e-4d7f-a180-e8e3fce02397",
+      "result_id": "da11c76d-1aac-4231-92c5-9f080bac3392"
+    },
+    {
+      "claim_id": "f8caea5e-2812-4564-a8e4-a66a0010aa57",
+      "result_id": "da11c76d-1aac-4231-92c5-9f080bac3392"
+    },
+    {
+      "claim_id": "e07140b9-af86-42f9-9e15-017d58f4da7d",
+      "result_id": "da11c76d-1aac-4231-92c5-9f080bac3392"
+    },
+    {
+      "claim_id": "753a0318-e047-4041-a22e-ea1c40dafa3c",
+      "result_id": "bbcf917c-fc76-4aea-b1bf-72c0d5d1f9d1"
+    },
+    {
+      "claim_id": "f64c490d-a369-48d5-8ad8-bf813ab5246a",
+      "result_id": "bbcf917c-fc76-4aea-b1bf-72c0d5d1f9d1"
+    },
+    {
+      "claim_id": "b23d68e7-dd59-4dfc-ac07-d9e070e0bffb",
+      "result_id": "bbcf917c-fc76-4aea-b1bf-72c0d5d1f9d1"
+    },
+    {
+      "claim_id": "f099887f-e881-4a47-81e3-e9ee80be4582",
+      "result_id": "bbcf917c-fc76-4aea-b1bf-72c0d5d1f9d1"
+    },
+    {
+      "claim_id": "6e4937b7-594c-4bc9-8471-93ff66a03b7d",
+      "result_id": "bbcf917c-fc76-4aea-b1bf-72c0d5d1f9d1"
+    },
+    {
+      "claim_id": "a68462e7-5d83-42da-b3f0-8b795bfa5e49",
+      "result_id": "782b194c-a90a-4982-8d68-7bad639d7e45"
+    },
+    {
+      "claim_id": "cbb4a355-5082-4381-bfb4-be891bd6139a",
+      "result_id": "782b194c-a90a-4982-8d68-7bad639d7e45"
+    },
+    {
+      "claim_id": "292708d8-054a-4d31-bafa-6ab5b24aeab0",
+      "result_id": "782b194c-a90a-4982-8d68-7bad639d7e45"
+    },
+    {
+      "claim_id": "01585e9e-8556-4ca8-ad33-0c8dc452ba81",
+      "result_id": "782b194c-a90a-4982-8d68-7bad639d7e45"
+    },
+    {
+      "claim_id": "fdda6e71-32cd-4688-857d-bb61f1e86b23",
+      "result_id": "782b194c-a90a-4982-8d68-7bad639d7e45"
+    },
+    {
+      "claim_id": "12ca7572-b9bd-4edf-926c-cd6928215a48",
+      "result_id": "840e8166-612d-47eb-b88b-acaa78fc4ad3"
+    },
+    {
+      "claim_id": "d93ed0da-53ca-42c7-b39f-24c63359827f",
+      "result_id": "840e8166-612d-47eb-b88b-acaa78fc4ad3"
+    },
+    {
+      "claim_id": "1f0e73a9-1f53-4b75-ac59-57e68d868f23",
+      "result_id": "840e8166-612d-47eb-b88b-acaa78fc4ad3"
+    },
+    {
+      "claim_id": "a983cff9-cd52-4dcf-889e-3f56da61ccfd",
+      "result_id": "840e8166-612d-47eb-b88b-acaa78fc4ad3"
+    },
+    {
+      "claim_id": "867e8b5b-d7d0-4d3a-bafc-c4a74ae7de9c",
+      "result_id": "840e8166-612d-47eb-b88b-acaa78fc4ad3"
+    },
+    {
+      "claim_id": "93021bd9-3bb1-456f-8f6e-f9933ecb7543",
+      "result_id": "840e8166-612d-47eb-b88b-acaa78fc4ad3"
+    },
+    {
+      "claim_id": "0a39dd1b-afec-4146-ad7d-7a36450d481e",
+      "result_id": "840e8166-612d-47eb-b88b-acaa78fc4ad3"
+    },
+    {
+      "claim_id": "22236026-26a6-4fde-8fc5-9a386a474779",
+      "result_id": "840e8166-612d-47eb-b88b-acaa78fc4ad3"
+    },
+    {
+      "claim_id": "2304e083-e2a2-4083-ac46-3bcaee1288e3",
+      "result_id": "840e8166-612d-47eb-b88b-acaa78fc4ad3"
+    },
+    {
+      "claim_id": "ae76f59b-98b0-4353-af88-93106c440fed",
+      "result_id": "800133f1-bbb8-4c9e-be12-c7e097f38184"
+    },
+    {
+      "claim_id": "f099887f-e881-4a47-81e3-e9ee80be4582",
+      "result_id": "800133f1-bbb8-4c9e-be12-c7e097f38184"
+    },
+    {
+      "claim_id": "6e4937b7-594c-4bc9-8471-93ff66a03b7d",
+      "result_id": "800133f1-bbb8-4c9e-be12-c7e097f38184"
+    },
+    {
+      "claim_id": "e4bbdb18-10b2-4c50-aa94-e5e2e2179f64",
+      "result_id": "800133f1-bbb8-4c9e-be12-c7e097f38184"
+    },
+    {
+      "claim_id": "ee5d9b43-d811-4f5b-9035-4d66baa21b41",
+      "result_id": "485c7142-81d0-4735-b4de-3e174b7cecc9"
+    },
+    {
+      "claim_id": "89d1aabb-e4d5-4c19-ba39-46426e3709e5",
+      "result_id": "485c7142-81d0-4735-b4de-3e174b7cecc9"
+    },
+    {
+      "claim_id": "a47596d3-d53d-4547-b6ab-52daae07f909",
+      "result_id": "485c7142-81d0-4735-b4de-3e174b7cecc9"
+    },
+    {
+      "claim_id": "ec7a8762-3ac0-4867-8cc6-bd38a5e334d4",
+      "result_id": "c98cde09-38a8-49de-b6b5-70defa7e962c"
+    },
+    {
+      "claim_id": "1333d300-628e-4828-a217-67a9894ace9f",
+      "result_id": "c98cde09-38a8-49de-b6b5-70defa7e962c"
+    },
+    {
+      "claim_id": "03192303-9e61-4bbb-9100-65dffcbf6ebf",
+      "result_id": "c98cde09-38a8-49de-b6b5-70defa7e962c"
+    },
+    {
+      "claim_id": "e54b88ed-c131-4011-98bb-32a4db59c968",
+      "result_id": "c98cde09-38a8-49de-b6b5-70defa7e962c"
+    },
+    {
+      "claim_id": "bd9c8d20-d6aa-4714-9b44-26998780aacf",
+      "result_id": "c98cde09-38a8-49de-b6b5-70defa7e962c"
+    },
+    {
+      "claim_id": "688bb290-9b55-4da2-8ab2-3e41d321bbac",
+      "result_id": "956817a6-b08a-4368-9734-395fa070367d"
+    },
+    {
+      "claim_id": "e40882aa-f809-4c67-911c-22fd4461049d",
+      "result_id": "956817a6-b08a-4368-9734-395fa070367d"
+    },
+    {
+      "claim_id": "a9c62cc6-b2a2-41f2-894d-3ce19d41f233",
+      "result_id": "0ef98a7e-bf7f-416b-994a-d2a81281aff3"
+    },
+    {
+      "claim_id": "4146c257-686a-43ea-bf31-b76bb2dc9a58",
+      "result_id": "0ef98a7e-bf7f-416b-994a-d2a81281aff3"
+    },
+    {
+      "claim_id": "5e0e3d0f-a30b-4b0d-a444-e8db582e56cb",
+      "result_id": "0ef98a7e-bf7f-416b-994a-d2a81281aff3"
+    },
+    {
+      "claim_id": "a5557915-789d-475f-87dc-bdb8f2047d55",
+      "result_id": "0ef98a7e-bf7f-416b-994a-d2a81281aff3"
+    },
+    {
+      "claim_id": "ce33f73e-09b6-4941-9d07-db0c91cec1d4",
+      "result_id": "d74c4a12-7401-4d93-875b-b8cc5d1a7fb3"
+    },
+    {
+      "claim_id": "c108e4a1-a953-4326-bc26-dff669e8a9fe",
+      "result_id": "d74c4a12-7401-4d93-875b-b8cc5d1a7fb3"
+    },
+    {
+      "claim_id": "ac7bfc66-c02d-446f-b36c-811f7ff6d500",
+      "result_id": "aaa52739-e1a7-465c-b02d-0360b085430c"
+    },
+    {
+      "claim_id": "2c8e7f31-016d-40ed-a403-39ac15d1126b",
+      "result_id": "aaa52739-e1a7-465c-b02d-0360b085430c"
+    },
+    {
+      "claim_id": "cb56898e-e020-43d2-b80f-2ad3bce5e67d",
+      "result_id": "38d1f778-1881-4aab-97f6-a7367fdafb20"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,397 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The Childhood Asthma Study (CAS) is a prospective birth cohort from Perth, Western Australia with 263 participants recruited from July 1996 to June 1998. Each child had at least one parent with physician-diagnosed asthma or atopic disease and was followed from birth to age 10 with comprehensive data collection including medical examinations, questionnaires, blood sampling, and nasopharyngeal samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide consistent and explicit descriptions of the CAS cohort design, recruitment criteria, and data collection methods. These are standard methodological descriptions that are well-documented with appropriate citations and represent established facts about the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Using npEM-based clustering on 217 individuals with 174 features, three distinct clusters were identified: CAS1 (N=88, 25% wheeze at age 5), CAS2 (N=107, 21% wheeze at age 5), and CAS3 (N=22, 76% wheeze at age 5). Forty-six individuals had excessive missing data and were not classifiable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 explicitly describe the clustering results with specific numbers and percentages that are consistent across claims and supported by Figure 1. The cluster sizes, wheeze rates, and number of unclassifiable individuals are clearly stated and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "CAS1 represents a low-risk, non-atopic cluster characterized by declining wheeze rates (33% at age 1 to 12% at age 10), minimal Th2 cytokine responses to allergen stimulation, and the lowest rates of allergen sensitization (IgE, SPT) and antibody levels (IgG, IgG4) among all groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 consistently characterize CAS1 as a low-risk cluster with explicit references to Tables 1-2 and Figures 3-4. The declining wheeze rates and minimal immunological responses are clearly documented in the referenced data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "In CAS1, high frequency of lower respiratory infections (LRIs) and wheezy LRIs (wLRIs) were risk factors for age-5 wheeze after adjusting for covariates. Repeated-measures ANOVA identified LRI and wLRI frequency in the first 3 years as predictors, with differences noticeable from age 3 onwards. Multiple regression identified three significant variables: age-three wLRI frequency (OR 5.6, p=0.0068), age-four LRI frequency (OR 3.6, p=0.018), and a protective effect from infection-associated microbiome profile groups at age 2-4 (OR 0.19 per quartile, p=0.014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 present a coherent analysis of risk factors in CAS1 with explicit statistical results, p-values, and odds ratios. The progression from univariate to multivariate analyses is logical and well-documented with references to Table 4 and Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "CAS2 had fewer older siblings at age 2 (adjusted p=0.029) and more frequent paternal history of asthma (adjusted p=0.055) compared to CAS1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 explicitly state demographic differences between CAS1 and CAS2 with specific p-values and references to supplementary tables. The p-value for paternal asthma history (0.055) is marginally non-significant but appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "In CAS2, predictive factors for age-5 wheeze included LRI, wLRI, and fLRI frequency at age 3, HDM IgE at ages 2 and 4, and Phadiatop IgE at age 4. Repeated-measures ANOVA confirmed HDM IgE and LRI-related variables from the first 3 years as significant predictors. Multiple regression identified age-2 fLRI (OR 8, p=0.0075), age-4 wLRI (OR 5.3, p=0.0016), and age-4 Phadiatop IgE (OR 3.3, p=0.0088) as significant variables, with no significant interaction between IgE-related and infection-related risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 present a comprehensive analysis of risk factors in CAS2 with explicit statistical results and appropriate references to tables and figures. The lack of interaction between risk factors (C26) is appropriately tested and reported with specific p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "CAS3 is a high-risk cluster dominated by males (86%, p=6.8\u00d710\u207b\u00b3 vs CAS1) with elevated IgE, IgG, and IgG4 responses to common allergens (especially Phadiatop, HDM, peanut) from 6 months onwards, and more frequently positive SPTs to HDM and food allergens. No strong predictors for age-5 wheeze were identified within CAS3, with only couch grass IgE at age 2 and ARI frequency at age 1 being weakly significant (both p=0.046).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 consistently characterize CAS3 as a high-risk, multi-sensitized cluster with explicit references to Tables 1-2 and supplementary tables. The lack of strong predictors (C30) is appropriately explained by the small sample size (N=22) and high baseline wheeze rate (76%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "In CAS3, in vitro stimulation of PBMCs with HDM antigen elicited stronger Th2 cytokine responses (IL-4, IL-5, IL-13) compared to other clusters, with elevation from age 6 months (adjusted p=4.6\u00d710\u207b\u2075 for IL-4 mRNA vs CAS1), coinciding with increases in HDM IgE and IgG4 responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 explicitly describe Th2 cytokine responses in CAS3 with specific p-values and references to Table 2 and Figure 6. The early elevation and coincidence with antibody responses are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Across all clusters, allergen-specific IgG4 and IgG were positively correlated with IgE for the same allergen (especially HDM). CAS2 and CAS3 were distinguished from CAS1 by high IgG4, with CAS3 having greater IgG4 than either CAS1 or CAS2. Decision tree analysis confirmed that IgG4-type variables strongly separated CAS2 and CAS3 from CAS1, while IgE-type variables separated CAS3 from others. However, there was no clear evidence of protection conferred by IgG4 against later wheeze.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 present consistent findings about IgG4 as a cluster discriminator with references to Figure 4 and supplementary tables. The lack of protective effect (C36) is appropriately stated with reference to Table 4 and contrasted with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The npEM-derived CAS clusters were partially consistent with traditional atopy thresholds (IgE \u22650.35 kU/L or SPT \u22652 mm at age 2). CAS1 most closely matched a non-atopic phenotype (58 of 84 had no specific IgE >0.35 kU/L by age 2), while all 22 children in CAS3 had some specific IgE \u22650.35 kU/L by age 2. The CAS clusters outperformed IgE/SPT-defined atopy in predicting age-5 wheeze (Chi-squared=23, p=2.0\u00d710\u207b\u2076). At age 2, 68% of CAS3 were sensitized to two or more allergens, compared to only 1% and 6% for CAS1 and CAS2. Fewer members of CAS1 and CAS2 who were IgE- or SPT-responsive prior to age 5 maintained atopic wheeze at age 5 (23% or 24 of 103) compared to CAS3 (76% or 16 of 21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 present a comprehensive comparison of npEM clusters with traditional atopy definitions, with explicit statistical tests and specific proportions. The superior predictive performance of clusters is appropriately tested with likelihood ratio tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "CAS3 was enriched for persistent wheeze, while CAS1 and CAS2 tended to have transient or no wheeze. In CAS3, 44% experienced persistent food sensitization, persistent eczema, and persistent wheeze, with almost all individuals having both eczema and food sensitization from age 6 months onwards, and rates of food sensitization and wheeze increasing with time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 consistently describe the persistent disease phenotype in CAS3 with explicit proportions and references to Figure 3. The co-occurrence of multiple atopic conditions is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CAS3 was overrepresented by individuals with >20% Streptococcus in their first infection-naive healthy NPA within the first 7 weeks (44% vs 11% and 15% in CAS1 and CAS2, p=0.042 and 0.065). Proportion of infection-associated MPGs (Streptococcus, Haemophilus, Moraxella) in healthy samples from age 0-2 was greater in CAS3 (62% vs 49% and 32% in CAS1 and CAS2, p=0.2 and 5.5\u00d710\u207b\u2074), independent of LRI and wLRI frequency. In CAS1, infection-associated MPGs from age 2-4 were protective against age-5 wheeze (OR 0.086 per percent, 0.45 per quartile, p=0.034 and 0.035).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 present microbiome findings with explicit proportions, p-values, and references to Table 3. The independence from infection frequency (C48) is appropriately tested with GLM including covariates. The protective effect in CAS1 (C49) is clearly stated with odds ratios and p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The CAS npEM clusters were replicated in MAAS (N=1085) and COAST (N=289). Individuals classified into Cluster 3 (MAAS3/COAST3) had a persistent disease phenotype extending into late adolescence with consistently high rates of wheeze and asthma from birth to age 16. MAAS3 and COAST3 exhibited stronger IgE expression (total, HDM, cat, dog) from ages 1-8, and COAST3 demonstrated elevated PBMC Th2 cytokine protein (IL-5, IL-13) in response to HDM stimulation at age 3. Approximately 86% of MAAS3 belonged to 'early-sensitised' or 'multiple sensitised' phenotypes described by Lazic et al. (2013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 present replication results with explicit sample sizes and references to Figure 7. The consistency of Cluster 3 phenotype across cohorts is clearly documented with specific proportions and overlap with previously described phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "In COAST1, LRI and wLRI frequency at age 2 were predictive of asthma diagnosis at age 6 (p=0.02 and 0.02). In COAST2, HDM IgE at age 3, and LRI, wLRI, and fLRI frequencies were all predictive of asthma diagnosis (p<0.05 for all).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 explicitly state predictive factors in COAST clusters with specific p-values and references to supplementary figures. The pattern is consistent with CAS findings, supporting the validity of the cluster replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "When npEM classification was re-applied to CAS using only MAAS or COAST features, the subsequent clusters bore 79% and 72% concordance with the original CAS clusters, respectively. In both cases, all 22 members of the original CAS3 were correctly assigned to Cluster 3 after re-applying npEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 explicitly state concordance rates for cluster replication with specific percentages. The perfect concordance for CAS3 (C59) demonstrates the robustness of the high-risk cluster identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Leave-one-individual-out analysis yielded average Jaccard indices of 0.77, 0.76, and 0.85 for CAS1, 2, and 3, respectively. Leave-one-feature-out analysis yielded average Jaccard indices of 0.65, 0.60, and 0.74 for CAS1, 2, and 3, respectively. Average silhouette widths were 0.05, 0.06, and 0.002 for CAS1, 2, and 3, respectively, with an overall average of 0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 explicitly state cluster stability and validity metrics with specific values and references to supplementary figures. The poor silhouette widths (C62) are acknowledged and appropriately discussed in the context of the exploratory nature of the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Decision tree analysis created a 'Simple Tree' with 89% accuracy in retrieving cluster memberships from the original npEM model. Membership in the CAS3-equivalent tree cluster was a better predictor for age-5 wheeze (Chi-squared=19, p<1\u00d710\u207b\u2075) than traditional atopy thresholds. The 'Comprehensive Tree' had 77% accuracy in recovering both cluster membership and wheeze status, with 84% accuracy for identifying pure wheeze status at age 5 (PPV 72%, NPV 88%, sensitivity 71%, specificity 89%). The Comprehensive Tree was more successful in flagging age-5 wheeze (Chi-squared=60, p=6.1\u00d710\u207b\u00b9\u00b3) compared to traditional atopy thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 present decision tree results with explicit accuracy metrics, statistical tests, and references to supplementary figures. The superior performance compared to traditional thresholds is appropriately tested with likelihood ratio tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Cluster 3 represents an early- and multi-sensitised atopic phenotype, with three in four CAS3 individuals sensitized (specific IgE \u22650.35 kU/L) to two or more allergens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 explicitly characterize Cluster 3 as multi-sensitized with specific proportions and citation to supporting literature. This is consistent with the detailed characterization presented in earlier claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The overrepresentation of males in CAS3 is consistent with the consensus that young boys are at greater risk for asthma than young girls. Allergic sensitization is more frequent amongst prepubescent boys than girls, which may be linked to differences in cytokine responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 explicitly relate the observed male predominance to known patterns in the literature with appropriate citations. The mechanistic speculation about cytokine responsiveness is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "CAS3 overlapped strongly with both persistent food sensitization and eczema, with persistent wheeze co-occurring with early sensitization and eczema. Early disruption of the skin barrier and exposure to certain food allergens may act in concert to promote and entrench the atopic phenotype through activation of cytokine pathways involving TSLP, IL33, and IL25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 explicitly describes the overlap of conditions in CAS3 based on data. Claim C73 presents a mechanistic hypothesis appropriately qualified with 'may' and supported by citations. The speculation is reasonable given the observed associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In all three cohorts (CAS, MAAS, COAST), house dust mite (HDM) sensitivity was an important determinant of atopic disease risk. HDM was a strong predictor for both CAS3 membership and later childhood wheeze in CAS2. The importance of HDM hypersensitivity in driving allergic disease in some populations is well-described in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 explicitly state the importance of HDM sensitivity across cohorts with appropriate citations to supporting literature. The consistency across three independent cohorts strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Early-life peanut IgE was a strong delineator between high-risk CAS3 and lower-risk CAS1 and 2. There is evidence in the literature for transmission of peanut allergen in utero or via breastmilk, as well as early sensitization via home environmental exposure. However, well-timed oral exposures to common food allergens (e.g., within 4-6 months of age) may actually be protective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 explicitly states the discriminatory power of peanut IgE based on data. Claims C78-C79 appropriately cite literature evidence for mechanisms of peanut sensitization and protective effects of well-timed exposure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In CAS, neither IgG nor IgG4 were strong predictors or protectors of wheeze. However, IgG4 was a strong delineator of cluster membership, with CAS2 and CAS3 having elevated IgG4 across all specificities compared to CAS1. Th2-related pathways drive production of both IgE and IgG4, with IgG4 predominating when modified by concurrent IL-10 signaling. In susceptible individuals, IgG4 production likely precedes isotype switching to frank IgE production. Multiple studies have reported that IgG4 is correlated with induced tolerance following desensitization immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80-C81 explicitly state the role of IgG4 in cluster discrimination but not protection, based on data. Claims C82-C84 appropriately cite literature to provide biological context for the IgG4 findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The co-occurrence of elevated IgE and LRI frequency in CAS3, and their predictive effect in CAS2, are consistent with previous CAS findings and support the theory that allergic and infective processes act additively to intensify airway inflammation during respiratory pathogen clearance, driving progression towards persistent wheeze. The cluster analysis suggests this pathologic effect may be stratified in discrete subpopulations (CAS2 and CAS3 being more susceptible) rather than acting in a strictly dose-dependent fashion across the entire cohort. Pathogen clearance in infected non-atopic (CAS1) subjects may be more efficient due to lack of susceptibility to pro-inflammatory effects of atopic co-stimuli. Symptomatically severe infections (fLRI) may be more potent in causing persistence of wheeze specifically among atopic individuals (CAS2 and CAS3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 present a coherent interpretation of the interaction between infection and atopy with appropriate citations to prior work and the current data. The hypotheses (C87-C90) are appropriately qualified and supported by the observed patterns of risk factors across clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Those without atopy-related immune dysfunction are able to maintain a healthy trajectory by responding appropriately to stimuli from potential pathogens that colonize the respiratory tract, thus achieving protection against future (non-atopic) wheeze. Individuals with a predisposing immune dysfunction (i.e., 'atopy' manifesting in early-life allergic sensitization) may be responding in a maladaptive manner to microbes, resulting in inability to clear potential pathogenic bacteria or shaping of aberrant immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 present hypotheses about differential responses to microbes based on atopic status. These are appropriately qualified as hypotheses and supported by the observed protective effect of infection-associated MPGs in CAS1 (C49) and the association with risk in CAS3 (C46-C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "Variable reduction resulted in 174 variables remaining out of an original 659. Variables with missing data for >20% subjects were excluded (442 variables removed), and subjects with missing data for >30% of the remaining variables were excluded (39 subjects removed). For the sake of parsimony, the number of clusters was set to three.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95, C97 explicitly describe the data processing and quality control steps with specific numbers. The choice of three clusters (C97) is justified by hierarchical clustering and BIC analysis as described in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "COAST, like CAS, was comprised of high-risk individuals with a known family history of asthma or allergy, while MAAS included individuals without family history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 explicitly describe the cohort compositions with appropriate context for interpreting replication results. This is important for understanding potential differences in cluster prevalence across cohorts.",
+    "result_type": "MINOR"
+  }
+]

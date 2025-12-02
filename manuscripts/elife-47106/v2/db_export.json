@@ -1,0 +1,1972 @@
+{
+  "submission": {
+    "id": "aa5fce4e-f621-45ae-bab5-dcfe7a4a1e1b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:00:55.095125Z",
+    "updated_at": "2025-12-02T12:00:55.095125Z"
+  },
+  "content": [
+    {
+      "id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "submission_id": "aa5fce4e-f621-45ae-bab5-dcfe7a4a1e1b",
+      "content_type": "manuscript",
+      "content_text": "# TMEM16B regulates anxiety-related behavior and GABAergic neuronal signaling in the central lateral amygdala\n\n## Authors\n\n- Ke-Xin Li<sup>1</sup> ([ORCID: 0000-0003-3879-294X](https://orcid.org/0000-0003-3879-294X))\n- Mu He<sup>1</sup>\n- Wenlei Ye<sup>1</sup> ([ORCID: 0000-0002-4694-1493](https://orcid.org/0000-0002-4694-1493))\n- Jeffrey Simms<sup>4</sup>\n- Michael Gill<sup>4</sup>\n- Xuaner Xiang<sup>5</sup>\n- Yuh Nung Jan<sup>1</sup> ([ORCID: 0000-0003-1367-6299](https://orcid.org/0000-0003-1367-6299))\n- Lily Yeh Jan<sup>1</sup> ([ORCID: 0000-0003-3938-8498](https://orcid.org/0000-0003-3938-8498)) \u2020\n\n### Affiliations\n\n1. Department of Physiology University of California, San Francisco San Francisco United States\n2. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n3. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n4. Gladstone Institute of Neurological Disease San Francisco United States\n5. Department of Anesthesia and Perioperative Care University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTMEM16B (ANO2) is the Ca2+-activated chloride channel expressed in multiple brain regions, including the amygdala. Here we report that Ano2 knockout mice exhibit impaired anxiety-related behaviors and context-independent fear memory, thus implicating TMEM16B in anxiety modulation. We found that TMEM16B is expressed in somatostatin-positive (SOM+) GABAergic neurons of the central lateral amygdala (CeL), and its activity modulates action potential duration and inhibitory postsynaptic current (IPSC). We further provide evidence for TMEM16B actions not only in the soma but also in the presynaptic nerve terminals of GABAergic neurons. Our study reveals an intriguing role for TMEM16B in context-independent but not context-dependent fear memory, and supports the notion that dysfunction of the amygdala contributes to anxiety-related behaviors.\n\n## Introduction\n\nAnxiety disorders are marked by excessive fear. Hence, it is important to study the basic fear circuitry in animal models. In rodent animal models, amygdala, hippocampus, ventromedial hypothalamus, nucleus accumbens, periaqueductal gray and prefrontal cortex have been identified as key brain regions in the neurocircuitry associated with fear responses (Davis, 2006; Maren, 2008; Quirk and Mueller, 2008). Among these brain regions, amygdala play a central role in fear acquisition and expression of fear responses. Investigations of the amygdala microcircuits via optogenetics reveal the importance of inhibitory inputs from central lateral amygdala (CeL) to central medial amygdala (CeM), as well as disinhibition of various output neurons of the central nucleus of the amygdala (CeA), in mediating conditioned fear or anxiolytic processes to reduce anxiety (Ciocchi et al., 2010; Haubensak et al., 2010; Janak and Tye, 2015); acute anxiolytic responses may result from excitatory inputs from basolateral amygdala (BLA) to the CeA, leading to activation of CeL neurons and the ensuing feed-forward inhibition (Janak and Tye, 2015; Par\u00e9 et al., 2004; Tye et al., 2011). These studies underscore the importance of characterizing neuronal signaling in the amygdala to better understand the physiological basis of fear and anxiety disorders.\n\nAno2 encodes an evolutionarily conserved Ca2+-activated Cl- channel (CaCC). As members of the enigmatic TMEM16 (ANO2) family of transmembrane proteins with various physiological functions (Yang and Jan, 2016), TMEM16B (ANO2) and TMEM16A (ANO1) are pore forming subunits of the Ca2+-activated Cl- channels (Dang et al., 2017; Paulino et al., 2017; Peters et al., 2015). Ano2 mRNA expression is enriched in brain regions including the amygdala, lateral septum, and hippocampus according to the Allen Brain Atlas, raising the intriguing question regarding the role of the TMEM16B Ca2+-activated Cl- channel in anxiety-related behaivor. To test whether alteration of TMEM16B activity may contribute to anxiety-related behaviors, we carried out behavioral studies of the knockout mice we generated (Zhang et al., 2017). Our finding that Ano2 knockout mice exhibit impaired anxiety-related behaviors and fear memory indicates that the physiological function of TMEM16B is important for the processing and expression of anxiety.\n\nTMEM16B is known to serve important functions in various brain regions including the hippocampus (Ha et al., 2016; Huang et al., 2012; Neureither et al., 2017; Wang et al., 2019; Zhang et al., 2015; Zhang et al., 2017), however, whether it also modulates neuronal signaling in the amygdala remains an open question. We found that TMEM16B-CaCC is highly enriched in central lateral amygdala (CeL). Loss of TMEM16B function results in action potential broadening in SOM+ CeL neurons that express somatostatin, increase of the amplitude and frequency of GABAergic spontaneous inhibitory postsynaptic current (sIPSC), and reduction of the frequency of miniature IPSC (mIPSC) that depends on presynaptic voltage-gated Ca2+ channel activity. Our results provide evidence for a critical role of TMEM16B in neuronal signaling in the amygdala as well as fear and anxiety-like behavior.\n\n## Results\n\n### Ano2 KO mice display reduced anxiety-related behaviors\n\nTo look into the physiological relevance of TMEM16B in anxiety, we performed a battery of anxiety-related behavior tests of 3\u20134 months old Ano2 knockout (KO) mice that have sequences for farnesylated mCherry inserted into the coding sequence for Ano2, and used their wildtype littermates as controls. First, we subjected each animal to the open field test (OFT) where we could simultaneously record their anxiety-related behaviors and locomotion. As shown in Figure 1A, the control (Con) mouse but not the KO mouse tended to avoid the center of the open field. There was a significant increase in the center exploration behavior in Ano2 KO mice as compared to their control littermates (Figure 1B) (unpaired t test in (B), p<0.001, n\u00a0=\u00a026 for KO and n\u00a0=\u00a023 for control). This abnormal behavior was not accompanied by any detectable locomotive defects in Ano2 KO mice, as evident from measurements of the total distance traveled (Figure 1C,D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative traces of Ano2 KO mice and control (Con) littermates in open field. (B\u2013D) Ano2 mutant mice display reduced anxiety-related behavior in the open field test, shown as time spent at the center normalized by total time (B). Overall exploratory behavior in the open-field test, shown as distance traveled per minute as function of time (C) and total distance traveled (D), is comparable between mutant and control mice. Two-tail unpaired t test in (B), t\u00a0=\u00a04.744, df\u00a0=\u00a046.7, p<0.0001. Two-way ANOVA in (C), F (1,47)=0.04778, p=0.8279. Two-tail unpaired t test in (D), t\u00a0=\u00a00.5721, df\u00a0=\u00a047, p=0.5700, n\u00a0=\u00a026 for KO and n\u00a0=\u00a023 for control (number of mice tested) for (B\u2013D). (E) Representative elevated plus maze (EPM) tracks of control and Ano2 KO mice. (F\u2013H) Ano2 mutant mice display reduced anxiety-related behavior in the EPM test, plotted as time spent in the open arms as function of time (F) and distance traveled in open arms normalized by the total distance traveled (G), with the total distance traveled in the elevated plus maze (H) as control. Two-way ANOVA in (F), F (1, 47)=9.067, p=0.0042. Mann Whitney test in (G), U\u00a0=\u00a0120, p=0.0002. Two-tail unpaired t test in (H), t\u00a0=\u00a00.9944 df=46, p=0.3252, n\u00a0=\u00a026 for KO and n\u00a0=\u00a023 for control (number of mice tested) for F\u2013H. (I and J) Ano2 mutant mice show reduced anxiety-related behavior in the light-dark box test, shown as the percentage of total time spent in the bright compartment (I) and number of entries to the bright compartments (J) over a 10 min period. Two-tail unpaired t test in (I), t\u00a0=\u00a04.804, df\u00a0=\u00a032.94, p<0.0001. Two-tail unpaired t test in (J), t\u00a0=\u00a03.79, df\u00a0=\u00a037.77, p=0.0005, n\u00a0=\u00a020 for KO and n\u00a0=\u00a024 for control for I and J. (K\u2013M) Ano2 mutant mice show reduced pre-pulse inhibition (PPI) of startle responses induced by pre-pulses at 68 dB, 79 dB and 90 dB(K). Startle responses to no stimuli (L) and startle response to 120 dB stimuli without pre-pulse (M) are comparable between mutant and control mice. Two-way ANOVA in (K). F (1, 46)=4.612, p=0.0370. Two-tail unpaired t test in (L), t\u00a0=\u00a01.119, df\u00a0=\u00a046, p=0.2688. Two-tail unpaired t test in (M), t\u00a0=\u00a00.1889, df\u00a0=\u00a046, p=0.8510, n\u00a0=\u00a024 for KO and n\u00a0=\u00a024 for control (number of mice tested) for K\u2013M. Data are presented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01; ***p<0.001; ****p<0.0001; n.s., no significant difference.\n\nTo further examine anxiety-related behaviors of Ano2 KO mice, we tested for their performance in the elevated plus maze (EPM). Each individual mouse was given the choice of spending time in the open and unprotected arms or the enclosed and protected arms of the maze. Figure 1E shows representative EPM tracks of control and KO mice. Consistent with the OFT results, mice lacking Ano2 showed significantly greater open-arm exploration (Two-way ANOVA in (F), p=0.0042; Mann Whitney test in (G), p=0.0002 n=26 for KO and n\u00a0=\u00a023 for control), reflecting a reduction in anxiety-related behaviors as compared to control littermates (Figure 1F,G). As in the case of OFT tests, the total distance traveled by Ano2 KO mice and their control littermates were comparable (Figure 1H).\n\nNext, we exposed these mice to a novel environment with protected (dark compartment) and unprotected (light compartment) areas. We found that mice with loss of TMEM16B function entered the light side more frequently and spent more time in this unprotected area as compared to control mice (Figure 1I,J) (unpaired t test in (I,J), p<0.001(I), p=0.005 (J), n\u00a0=\u00a020 for KO and n\u00a0=\u00a024 for control). Collectively, all these three different assays indicate that Ano2 KO mice are deficient in anxiety-related behaviors.\n\nPre-pulse inhibition (PPI) provides a measure of sensorimotor gating that is reduced in several neuropsychiatric disorders. Panic disorder patients have difficulties in progressively dampening their response to sensory and cognitive stimuli, suggesting that they have reduced PPI (Ludewig et al., 2002). In our assays, Ano2 KO mice showed significantly greater pre-pulse inhibition of startle responses as compared with control mice (Figure 1K) (Two-way ANOVA in (K), p=0.0370, n\u00a0=\u00a020 for KO and n\u00a0=\u00a024 for control). The amplitudes of startle responses induced by stimuli without pre-pulse were comparable between KO and control, as were the control startle response in the absence of any stimuli (Figure 1L,M). Thus, Ano2 KO mice display enhanced PPI and reduced anxiety-related behavior.\n\n### Ano2 knockout mice exhibit altered fear expression\n\nDisturbances in fear learning may contribute to disorders of fear and anxiety, such as panic disorder and specific phobias (Rosen et al., 1998). Pavlovian fear conditioning and fear expression has become an important model for investigating the learning and memory processes related to fear in rodents (Maren, 2001). We tested for both context-dependent and context-independent fear learning.\n\nExposing mice to aversive foot shock (Unconditioned Stimuli, US) in an area with contextual stimuli (Conditioned Stimuli, CS) allowed for the testing of context-dependent fear learning and memory. Ano2 KO and control mice displayed comparable freezing levels during context fear acquisition, which increased as pairings of CS and US were repeatedly presented (Figure 2A,C)\u00a0(Two-way ANOVA,\u00a0p=0.3928.\u00a0n\u00a0=\u00a024\u00a0for KO and\u00a0n\u00a0=\u00a024\u00a0for control). When the same context was presented 24 hr after fear conditioning, Ano2 KO and control mice exhibited no significant difference in context-dependent fear expression (Figure 2B,C)\u00a0(Two-way ANOVA,\u00a0p\u00a0=\u00a00.1472.\u00a0n\u00a0=\u00a024\u00a0for KO and\u00a0n\u00a0=\u00a024\u00a0for control), indicating that Ano2 is not required for context-dependent fear acquisition and expression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig2-v2.jpg)\n\n**Figure 2.:** (A) Ano2 KO and control mice exhibited comparable freezing levels during fear acquisition. After habituation for 5 min, freezing levels during fear training with three 30 s 80 dB tones that each was terminated at the same time as a 2 s, 0.45 mA foot shock, separated by 120 s interval for monitoring. Two-way ANOVA in (A), F (1, 46)=0.7443, p=0.3928. (B) Context-dependent fear recall tested 24 hr after fear conditioning. Mice were placed in the fear conditioning apparatus for 8 min. No shock was presented. Two-way ANOVA in (B), F (1, 46)=3.601, p=0.0640. (C) Ano2 KO and control mice exhibited comparable context-dependent fear expression, shown as averaged freezing levels during habituation, conditioning and context test. Two-way ANOVA in (C), F (1, 46)=2.173, p=0.1472. (D and E) The context-independent cue fear test took place 5\u201324 hr after the context-dependent test in (B). After a 5 min baseline (pre-cue), three 30 s 80 dB tone cues not accompanied with foot shock were presented with 120 s interval for monitoring (cue), in the absence of context cues. Two-way ANOVA in (D), F (1, 46)=9.151, p=0.004. Two-way ANOVA in (E), F (1, 46)=9.007, p=0.0043. TEMEM16 KO mice displayed lower levels of freezing than control mice during cued fear expression. (F) Pain threshold was comparable between control and Ano2 KO mice.Two tail unpaired t test in (F), t\u00a0=\u00a01.114, df\u00a0=\u00a046, p=0.2711, n\u00a0=\u00a024 for KO and n\u00a0=\u00a024 for control (number of mice tested for A\u2013F). Data are presented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01; ***p<0.001; ****p<0.0001; n.s., no significant difference.\n\nExposing mice to the aversive foot shock (US) paired with a tone allowed for the testing of context-independent auditory fear learning and memory. Ano2 KO mice displayed lower levels of freezing than control mice during cued fear expression (Figure 2D,E) (Two-way ANOVA, p=0.004, n\u00a0=\u00a024 for KO and n\u00a0=\u00a024 for control) while the mutant and control mice displayed similar pain threshold (Figure 2F) and similar freezing levels during the acquisition of cued fear learning (Figure 2A), highlighting the involvement of TMEM16B for controlling context-independent cued fear expression.\n\n### Ano2 expression in somatostatin-positive GABAergic neurons in the central lateral amygdala\n\nTo examine the cellular expression pattern of Ano2, we used RNA scope for its superior sensitivity to detect low abundance transcripts. We found enrichment of Ano2 mRNA expression in brain regions including the central lateral amygdala, lateral septum and hippocampus, consistent with the expression pattern deposited at the Allen Brain Atlas (Figure 3A; Figure 3\u2014figure supplement 1). Given that anxiety and fear conditioning involves multiple brain regions including amygdala and hippocampus (Chen et al., 2016; Hall et al., 2001; Kochli et al., 2015; Vazdarjanova and McGaugh, 1999; Weeden et al., 2015; Xu et al., 2016; Yin et al., 2002), it is important to examine Ano2 expression and physiological function in amygdala to assess the potential relevance to anxiety. Ano2 is mainly expressed in central lateral amygdala (CeL), but not other sub nuclei of amygdala such as basal lateral amygdala (BLA) or the medial part of central amygdala (CeM) (Figure 3B,C). CeL, which is composed of several classes of GABAergic inhibitory neurons (Cassell and Gray, 1989; Ehrlich et al., 2009; Haubensak et al., 2010), modulates conditioned fear response and anxiety-related behavior via inhibition of neurons in the central lateral and medial subdivisions of CeA, which provide the major output of amygdala (Ciocchi et al., 2010; Janak and Tye, 2015; LeDoux et al., 1988; Tye et al., 2011). GABAergic inhibitory neurons in CeL can be classified by expressions of distinct neurochemical markers (Ehrlich et al., 2009; Haubensak et al., 2010). Among these subtypes, somatostatin-positive (SOM+/Sst) neurons constitute a major population, and are intermingled with protein kinase C-\u03b4 expressing (PKC-\u03b4+/Prkcd) neurons and neurons containing corticotropin-releasing hormone (Crh), neurotensin (Nts) and tachykinin 2 (Tac2); neurons expressing various combinations of these markers account for the majority (96%) of the GABAergic neurons in CeL (Kim et al., 2017). Of these markers, Prkcd and Sst almost have no overlap with each other (2%\u201313%) (Kim et al., 2017; Li et al., 2013), while Sst exhibits high levels of overlap (>50%) with Crh+/Nts+/Tac2+. Our RNA scope study revealed that the majority (92.6%) of SOM+ (Sst) neurons expressed Ano2, and the majority (71.4%) of Ano2 positive cells displayed Sst immunoreactivity (Figure 3E). We further confirmed that SOM+ (Sst) neurons expressed glutamate decarboxylase 2 (Gad2), a marker of inhibitory neurons (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) RNA scope studies reveal that Ano2 is expressed in central lateral amygdala (CeL), but not in basal lateral amygdala (BLA) or central medial amygdala (CeM). Representative images of immunofluorescence staining for Sst (red) and RNA scope labeling of Ano2 mRNA (green). Cell nuclei are stained with DAPI (blue). (D) Representative images of double immunofluorescence staining for Gad2 (green) and Sst (red). Cell nuclei are stained with DAPI (blue). (E) Left, percentage of Sst-positive neurons that express Ano2 mRNA. Right, percentage of Ano2 mRNA-positive neurons that express Sst. n\u00a0=\u00a0653 neurons from five mice.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A and B) RNA scope labeling of Ano2 mRNA in lateral septum, CA1, CA3 and DG. (C) No detectable signals are observed in samples from Ano2 KO mutant mice as specificity control.\n\n### TMEM16B-mediated Ca2+-activated Cl\u2013 current in somatostatin-positive neurons of central lateral amygdala\n\nFor studies of TMEM16B-mediated Ca2+-activated Cl- current (CaCC) in SOM+ cells, we used a Sst-IRES-Cre knock-in mouse line, with Cre driven by the endogenous promoter of the Somatostatin (Sst) gene (Taniguchi et al., 2011). SOM+ neurons in Sst-IRES-Cre;Ai14 mice can be readily identified by the red fluorescence of the tdTomato reporter of Ai14 (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig4-v2.jpg)\n\n**Figure 4.:** (A) Brain slice of Sst-IRES-Cre and Ai14 reporter mice with fluorescently marked somatostatin-positive (SOM+) neurons in the amygdala. Scale bar, 200 \u03bcm. (B and C) Depolarization of SOM+ neurons to +10 mV elicited a Ca2+ current superimposed with a large outward current that developed over time, followed with a tail current upon hyperpolarization to \u221280 mV. The outward current and tail current can be inhibited by 100 \u03bcM niflumic acid (NFA) (C), and it is completely abolished by 200 \u03bcM CdCl2, a blocker of voltage-gated Ca2+ channels, indicating that it is induced by Ca2+ influx (B). (D and E) NFA reduced the outward current and tail current. Paired t test in (D), t\u00a0=\u00a04.392, df\u00a0=\u00a08, p=0.0023. Paired t test in (E), t\u00a0=\u00a02.55, df\u00a0=\u00a08, p=0.0342, n\u00a0=\u00a09 cells for each group from three mice per group for D and E. (F and G) Summary plot of the peak amplitude of the outward current and tail current as a function of the duration of the test pulse to +10 mV. n\u00a0=\u00a07 cells from three mice. (H and I) Measurements of reversal potential indicating that the current induced by Ca2+ influx in SOM+ neurons arises from Ca2+-activated Cl- channels (CaCCs). Membrane potential was depolarized to +10 mV to activate Ca2+ channels and then held from \u221240 mV to +40 mV in 10 mV increments for reversal potential measurement, followed with repolarization to \u221280 mV. n\u00a0=\u00a015 cells from four mice. (J\u2013L) Genetic ablation of Ano2 completely eliminated the outward current and tail current in SOM+ neurons, indicating that TMEM16B CaCC mediates the Ca2+-sensitive outward current and tail current in SOM+ neurons. Summary plot of the outward current (K) and the tail current (L) at various membrane potentials. Membrane potential was depolarized from \u221220 mV to +30 mV in 10 mV increments to activate Ca2+ channels, and then repolarized to \u221280 mV. (M and N) Comparison of the amplitudes of the outward current and tail current of SOM+ neurons from Ano2 KO mice and control mice. Mann Whitney test in (M), U\u00a0=\u00a00, p<0.0001. Mann Whitney test in (N), U\u00a0=\u00a00, p<0.0001. Cells were held at \u221280 mV. n\u00a0=\u00a018 cells from 5 KO and n\u00a0=\u00a09 cells from four control for K, L, M and N. Data are presented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01; ***p<0.001; ****p<0.0001; n.s., no significant difference.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Calcium current in SOM+ neurons induced by 60 ms voltage clamp steps from \u221240 mV to +10 mV in 10 mV increments. (B and C) Depolarization of SOM+ neurons (B) and non-SOM+ neurons (C) to +10 mV elicited a Ca2+ current superimposed with a large outward current that developed over time, followed with a tail current upon hyperpolarization to \u221280 mV. (D and E) Comparison of the amplitudes of the outward current and tail current of SOM+ neurons and non-SOM+ neurons. Mann Whitney test in (D), U\u00a0=\u00a00, p<0.0001. Mann Whitney test in (E), U\u00a0=\u00a00, p<0.0001. Cells were held at \u221280 mV. n\u00a0=\u00a017 cells for SOM+ neurons and n\u00a0=\u00a016 cells for non-SOM+ neurons from four mice. Data are presented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01; ***p<0.001; ****p<0.0001; n.s., no significant difference.\n\nGiven that TMEM16B-CaCC is expressed in the hippocampus, lateral septum, and Inferior olive neurons, where it is activated by Ca2+ influx through voltage-gated Ca2+ channels (Huang et al., 2012; Wang et al., 2019; Zhang et al., 2017), we tested whether TMEM16B can also be activated by Ca2+ influx through voltage-gated Ca2+ channels in neurons of central lateral amygdala. First, we confirmed that Ca2+ currents were elicited in SOM+ neurons with depolarizations lasting 60 ms (Figure 4\u2014figure supplement 1A). Next, we carried out whole cell recording in the presence of 5 mM QX314, 110 mM Cs+, and 20 mM tetraethylammonium (TEA), to block voltage-gated Na+ channels and the majority of K+ channels including Ca2+-activated K+ channels. We found that depolarization to +10 mV for 500 ms elicited a transient inward current as a result of the superimposition of an inward Ca2+ current and an outward CaCC that developed over time leading to the appearance of a net outward current following the transient inward current, followed by a slowly deactivating tail CaCC current upon repolarization to \u221280 mV (Figure 4B). The feature of CaCC we recorded is similar to that reported previously (Zhang et al., 2017). Treatment of brain slices with CdCl2, a Ca2+ channel blocker, abolished both the inward Ca2+ current and the CaCC (Figure 4B), indicating that CaCC activation is triggered by Ca2+ influx through voltage-gated Ca2+ channels. To verify that the outward current superimposed on the inward Ca2+ current during depolarization and the tail current upon repolarization are Cl- currents, we first showed that NFA, a Cl- channel blocker, reduced both the outward current and the tail current (Figure 4C,D,E) (Paired t test in (D), p=0.0023; Paired t test in (E), p=0.0342, n\u00a0=\u00a09 cells for each group from three mice per group). For further validation, we varied the duration of the Ca2+ channel activation and hence the extent of Ca2+ entry. The peak amplitudes of the outward current and the tail current increased and reached a plateau with prolonged Ca2+ channel activation (Figure 4F,G). We further measured the reversal potential of the tail current and found that it corresponds to the Cl- equilibrium potential (Figure 4H,I). Moreover, no obvious CaCC current is elicited in non-SOM+ neurons (Figure 4\u2014figure supplement 1B,C,D,E). These findings support the notion that the Ca2+-sensitive outward current in SOM+ neurons is mediated by Ca2+-activated Cl- channels (CaCCs).\n\nFinally, we recorded from brain slices of Sst-IRES-Cre;Ai14 mice lacking TMEM16B to determine whether the outward current is eliminated in Ano2 KO mice. We held the SOM+ neurons at different membrane potentials and measured the outward current (Figure 4J,K) and tail current (Figure 4J,L). In contrast to control brain slices, depolarization of SOM+ neurons lacking TMEM16B elicited a fast inward calcium current without the outward current and tail current (Figure 4M,N) (Mann Whitney test in (M, N), p<0.0001(M,N), n\u00a0=\u00a018 cells from 5 KO and n\u00a0=\u00a09 cells from four control for K, L, M and N), indicating that TMEM16B is solely responsible for CaCC in those GABAergic neurons.\n\n### TMEM16B-CaCC regulates action potential waveform of somatostatin-positive neurons in central lateral amygdala\n\nTo investigate whether TMEM16B-mediated CaCC activity regulates the physiological property of SOM+ cells, we first performed whole-cell current-clamp recordings with acute CeL slices from control Sst-IRES-Cre;Ai14 mice and Sst-IRES-Cre;Ano2-/-;Ai14 mutants. We assessed neuronal excitability by applying a series of current injections each lasting 500 ms. Whereas Ano2 KO and control littermates had comparable numbers of action potentials generated, firing frequency adaptation, threshold, spike amplitude, after hyperpolarization (AHP), resting membrane potential (RMP), and passive membrane properties (Figure 5A,B,C,G; Figure 5\u2014figure supplement 1), there was a significant increase in the half width, half width adaptation, and the width of the action potential at 90% from the peak (APD90%) in Ano2 KO mice as compared with control littermates (Figure 5A,D,E,F) (Mann Whitney u test in (D, E, F), p=0.0145 (D), p=0.0091 (E), p=0.0003 (F), n\u00a0=\u00a013 cells for KO and 14 cells for control, from three mice each).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig5-v2.jpg)\n\n**Figure 5.:** (A) upper panel, representative traces of action potentials in SOM+ neurons from control and Ano2 KO mice in response to 100 pA current pulse lasting for 500 ms. Lower panel, overlay of action potentials induced by the current pulse of neurons with (left) or without (middle) Ano2, with superimposition of the averaged spikes from neurons with or without Ano2 shown on the right. (B) Number of spikes induced by step current injection in SOM+ neurons from control and Ano2 KO mice. Two-way ANOVA in (B), F (1, 49)=1.804, p=0.1855. n\u00a0=\u00a025 cells for KO and 26 cells for control, from seven mice each. (C) Ratio of the last to the first instantaneous firing frequency, from control and Ano2 KO brain slices. Two tail Unpaired t test, t\u00a0=\u00a01.635, df\u00a0=\u00a025, p=0.1146. n\u00a0=\u00a013 cells for KO and 14 cells for control, from three mice each. (D) Ratio of the last to the first half width, from control and Ano2 KO brain slices. Mann Whitney u test in (D), U\u00a0=\u00a041, p=0.0145. n\u00a0=\u00a013 cells for KO and 14 cells for control, from three mice each. (E) Half width of action potentials in SOM+ neurons with or without Ano2. Mann Whitney test, U\u00a0=\u00a038, p=0.0091. n\u00a0=\u00a013 cells for KO and 14 cells for control, from three mice each. (F) The averaged action potential duration at 90% repolarization (APD90%) in SOM+ neurons from control and Ano2 KO mice. Mann Whitney u test in (F), U\u00a0=\u00a021, p=0.0003. n\u00a0=\u00a013 cells for KO and 14 cells for control, from three mice each. (G) Average amplitude of action potential in SOM+ neurons with or without Ano2. Two tail Unpaired t test, t\u00a0=\u00a01.771, df\u00a0=\u00a025, p=0.0888. n\u00a0=\u00a013 cells for KO and 14 cells for control, from three mice each. Data are presented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01; ***p<0.001; ****p<0.0001; n.s., no significant difference.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013D) Passive membrane property is measured in SOM+ neurons from control and Ano2 KO mice, including capacitance (A), input resistance (B), membrane time constant (C), resting membrane potential (D), Voltage threshold (E) and Afterhyperpolarization (AHP)\u00a0(F). Significance for multiple comparisons: Two tail unpaired t test in (A, B, C, D). (A) t\u00a0=\u00a00.613, df\u00a0=\u00a035, p=0.5438. n\u00a0=\u00a021 cells from 4 KO mice and n\u00a0=\u00a016 cells from three control mice. (B) t\u00a0=\u00a00.1486, df\u00a0=\u00a018, p=0.8835. n\u00a0=\u00a012 cells from 4 KO mice and n\u00a0=\u00a08 cells from three control mice. (C) t\u00a0=\u00a01.487, df\u00a0=\u00a026, p=0.1491. n\u00a0=\u00a019 cells from 4 KO mice and n\u00a0=\u00a09 cells from three control mice. (D) t\u00a0=\u00a01.129, df\u00a0=\u00a026, p=0.2694. n\u00a0=\u00a014 cells from 4 KO mice and n\u00a0=\u00a014 cells from three control mice. (E) Two tail Unpaired t test, t\u00a0=\u00a01.583, df\u00a0=\u00a025, p=0.1261. (F) Two tail Unpaired t test, t\u00a0=\u00a00.4115, df\u00a0=\u00a025, p=0.6842. n\u00a0=\u00a013 cells for KO and 14 cells for control, from four mice each, for E \u2013 F. Data are presented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01; ***p<0.001; ****p<0.0001; n.s., no significant difference.\n\n### Altered inhibitory neurotransmission in central lateral amygdala of Ano2 mutant mice\n\nAbnormalities in GABAergic neurotransmission are associated with the neurobiology of anxiety (Makkar et al., 2010; Sanders and Shekhar, 1995). Central to the circuits of fear and anxiety, local inhibition in central lateral amygdala (CeL) plays a crucial role in the processing of emotions (Ciocchi et al., 2010; Tye et al., 2011). To date, however, little is known about the molecular mechanisms of inhibitory synapses within CeL that may contribute to the pathophysiology of anxiety disorders. As TMEM16B-CaCC is largely present in SOM+ GABAergic inhibitory neurons in CeL, we wondered whether TMEM16B-CaCC may affect GABAergic neurotransmission in CeL, which is involved in fear and anxiety-related behaviors (Janak and Tye, 2015).\n\nPrevious studies employing optogenetics have shown that CeL SOM+ and SOM- neurons mutually inhibit one another (Li et al., 2013). Likewise, CeL PKC-\u03b4+ and PKC-\u03b4- neurons innervate one another (Haubensak et al., 2010). In addition, CeL neurons are highly interconnected, and the majority of common local synaptic connections are between SOM+ neurons, as revealed with paired recording (Hunt et al., 2017). Whereas CeL PKC-\u03b4+ interneurons project to CeM (Haubensak et al., 2010), CeL SOM+ neurons provide potent inhibition within CeL rather than direct inhibition of CeM neurons (Li et al., 2013). To determine whether inhibitory transmission is altered in Ano2 KO mice, we measured the spontaneously occurring action potential dependent inhibitory postsynaptic currents (sIPSCs) and action potential independent miniature inhibitory postsynaptic currents (mIPSCs) of SOM+ cells in CeL slices from Ano2 KO mice and control littermates. Given that the waveform of action potential controls synaptic efficacy in pyramidal neurons (Kole et al., 2007), it is possible that the action potential broadening in Ano2 KO mice could lead to an increase in transmitter release. Indeed, loss of TMEM16B function led to an increase of sIPSC amplitude and frequency (Figure 6) (Mann Whitney test in (B), p=0.0004 for amplitude; p=0.0021 for frequency. n\u00a0=\u00a031 cells for KO and n\u00a0=\u00a029). As both the amplitude and frequency of sIPSC were increased in KO neurons, we considered two possible underlying mechanisms. First, the effect may reflect increased presynaptic transmitter release. Second, It may include both increased presynaptic transmitter release and alteration of the postsynaptic response. To distinguish between these two possibilities, we evaluated the GABA receptor function in control and Ano2 KO SOM+ neurons, by puffing 100 \u03bcm GABA (50 ms, 4\u20136 psi) to generate evoked inhibitory postsynaptic currents (eIPSC). This eIPSC can be eliminated by applying PTX in the bath solution along with GABA puffing (Figure 6\u2014figure supplement 1A). The amplitude of eIPSC was comparable between control and TMEM16B knockout SOM+ neurons (Figure 6\u2014figure supplement 1B) (Unpaired t test, p=0.2628. n\u00a0=\u00a09 cells for each genotype from three mice each), indicating that TMEM16B activity does not alter GABA receptor function. Our findings thus support the notion that the potentiation of sIPSC could have arisen from the broadening of action potentials in presynaptic neurons lacking TMEM16B. These studies reveal that the inhibitory neurotransmission is abnormal in the CeL of Ano2 KO mice, as evident from the potentiation of the sIPSC due to spontaneous network activities of the CeL.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative traces of sIPSCs from SOM+ neurons of Ano2 KO and control mice. (B) The SOM+ neurons of Ano2 KO mice showed increased sIPSC frequency and sIPSC amplitude. Mann Whitney test in (B), U\u00a0=\u00a0215, p=0.0004 for amplitude of sIPSC. U\u00a0=\u00a0245, p=0.0021 for frequency of sIPSC. n\u00a0=\u00a031 cells for KO and n\u00a0=\u00a029 cells for control, from 10 mice each. (C) Representative cumulative probability plot of sIPSC frequency and amplitude of SOM+ neurons in CeL from Ano2 KO and control mice. Data are presented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01; ***p<0.001; ****p<0.0001; n.s., no significant difference.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Representative IPSC induced by 100 \u03bcm GABA puff from control (indicated as black) and KO (red) mice (puff duration 50 ms, 4\u20136 psi). The GABA induced IPSC is blocked by picrotoxin (PTX), a GABAA receptor antagonist. (B) Summary analysis of IPSC amplitude from control and Ano2 knockout neurons. Two tail Unpaired t test, t\u00a0=\u00a01.161, df\u00a0=\u00a016, p=0.2628. n\u00a0=\u00a09 cells for each genotype from three mice each. Data are presented as mean\u00a0\u00b1\u00a0SEM. n.s., no significant difference.\n\n### Voltage-gated Ca2+ channels are involved in the presynaptic regulation of spontaneous transmitter release by TMEM16B-CaCC\n\nNot only do voltage-gated Ca2+ channels mediate Ca2+ influx to trigger transmitter release that is evoked by an action potential, Ca2+ channels have also been found to be physiological triggers for spontaneous transmitter release at mouse inhibitory synapses (Williams et al., 2012). By blocking action potential generation with the Na+ channel blocker TTX, we examined spontaneous release of GABA as revealed by mIPSC recordings. Whereas the amplitude of mIPSC appeared normal in CeL slices of Ano2 KO mice, the frequency of mIPSC was significantly reduced (Figure 7A,B) (Mann Whitney test in (B, left panel), p = 0.0016; unpaired t test in (B, right panel), p = 0.2283, n = 16 cells for KO and n = 15 cells for control, from 5 mice each). As revealed by the plot of the cumulative probability of inter-event interval and mIPSC amplitude in Figure 7C, the frequency of spontaneous transmitter release was reduced in the Ano2 KO mice. Consistent with a previous study (Williams et al., 2012), application of Cd2+ (200 \u03bcM), a Ca2+ channel blocker, reduced the mIPSC frequency by 54.74% \u00b1 4.032% without affecting the mIPSC amplitude (Figure 7D-H), thus implicating Ca2+ channels in spontaneous GABA release in central lateral amygdala. On average, about 46% of the mIPSCs were Cd2+ resistant, suggesting that other mechanisms also contribute to the regulation of spontaneous GABA release. CdCl2 had a much smaller effect on the mIPSC frequency in KO mice (22.52% \u00b1 6.326%, Figure 7F, H), while the frequency of CdCl2 insensitive mIPSC was comparable between control and KO (Figure 7F). These findings provide evidence for TMEM16B function in the nerve terminal, including regulation of spontaneous GABA release that depends on Ca2+ channel activity.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig7-v2.jpg)\n\n**Figure 7.:** (A) Representative traces of mIPSCs from SOM+ neurons of Ano2 KO and control mice. (B) The SOM+ neurons of Ano2 KO mice showed a decrease of mIPSC frequency, and normal mIPSC amplitude. Mann Whitney test in (B, left panel), U\u00a0=\u00a042.5, p=0.0016 for frequency of mIPSC. Two tail unpaired t test in (B, right panel), t\u00a0=\u00a01.231, df\u00a0=\u00a029, p=0.2283 for amplitude of mIPSC. n\u00a0=\u00a016 cells for KO and n\u00a0=\u00a015 cells for control, from five mice each. (C) Representative cumulative probability plot of mIPSC frequency and amplitude of SOM+ neurons in CeL from Ano2 KO and control mice. (D) Representative traces of mIPSCs from Ano2 KO and control brain slices in basal solution with or without Cd2+. (E) Cd2+ treatment reduced the mIPSC frequency of SOM+ neurons in the central lateral amygdala from KO mice and control littermates, as shown in the plot of normalized mIPSC frequency as function of time. Data are normalized to the baseline of mIPSC recorded in the first 3 min before Cd2+ application. (F) The effects of Cd2+ treatment on the mIPSC frequency in SOM+ neurons from control and KO mice. (G) The effects of Cd2+ treatment on the mIPSC amplitude in SOM+ neurons from control and KO mice. (H) The Cd2+-sensitive fraction of mIPSCs in SOM+ neurons from central lateral amygdala of KO mice and control littermates. Two tail Unpaired t test, t\u00a0=\u00a03.765, df\u00a0=\u00a010, p=0.0037 for Cd2+ sensitive mIPSC frequency. t\u00a0=\u00a01.424, df\u00a0=\u00a010, p=0.1848 for Cd2+ sensitive mIPSC amplitude. n\u00a0=\u00a07 cells from KO and n\u00a0=\u00a05 cells from control, three mice each. Data are presented as mean\u00a0\u00b1\u00a0SEM. *p<0.05, **p<0.01; ***p<0.001; ****p<0.0001; n.s., no significant difference.\n\n## Discussion\n\nIn this study, we report that loss of TMEM16B\u00a0(Ano2) function leads to behavioral abnormalities, including impaired anxiety-related behaviors and context-independent auditory fear expression. At the cellular level, TMEM16B constitutes a previously unknown Ca2+-activated Cl- channel in CeL GABAergic neurons with somatostatin expression. In addition, we found that SOM+ neurons in central lateral amygdala of Ano2 mutant mice have broadened action potential. The lengthening of action potential duration is associated with potentiation of the action potential evoked inhibitory postsynaptic current (sIPSC). Our finding that ablation of TMEM16B also causes a decrease of the mIPSC frequency provides further evidence for the functional significance of TMEM16B in the presynaptic nerve terminal. Intriguingly, we found that TMEM16B regulates miniature inhibitory postsynaptic current (mIPSC) by modulating the frequency of spontaneous GABA release that depends on voltage-gated Ca2+ channel activity. In summary, our results provide evidence for a critical role of TMEM16B in the regulation of SOM+ GABAergic neuronal signaling and inhibitory transmission in central lateral amygdala, as well as the involvement of TMEM16B in fear and anxiety-like behaviors.\n\nOtowa and colleagues conducted GWAS studies of panic disorder (PD) in the Japanese population and found seven SNPs that are significantly associated with PD, which are located in or adjacent to genes such as PKP1, PLEKHG1, TMEM16B, CALCOCO1, SDK2 and CLU (Otowa et al., 2009).\u00a0However, two follow up studies from the same group failed to show any significant association between SNPs in TMEM16B and PD (Otowa et al., 2012; Otowa et al., 2010). Our finding that loss of TMEM16B function results in a reduction of context-independent fear memory and anxiety-related behaviors in mice allows us to look into the physiological functions of TMEM16B of potential relevance to anxiety and panic disorders.\n\nTMEM16B expression is mainly confined to the nervous system, including the olfactory neurons (Billig et al., 2011; Pietra et al., 2016), retina (Mercer et al., 2011; St\u00f6hr et al., 2009), hippocampus (Huang et al., 2012), lateral septum (Wang et al., 2019), and inferior olive neurons (Zhang et al., 2017). In the hippocampus, lateral septum and inferior olive, TMEM16B modulates action potentials and neuronal excitability. In the photoreceptor terminals of mouse retina, a region where TMEM16B forms a complex with the anchor protein PSD95, TMEM16B may regulate glutamate release. Our study focused on the physiological functions of TMEM16B in the amygdala, the site for the formation and storage of fear memories crucial for anxiety (Davis, 1992; LeDoux et al., 1988). Alterations in the structure (Hayano et al., 2009) and activity (Pfleiderer et al., 2007; Shin and Liberzon, 2010) of the amygdala have been reported in patients with anxiety and panic disorder (PD), indicating that the amygdala has a pivotal role in the pathogenesis of these diseases. Our finding that Ano2 KO mice displayed impaired auditory fear expression, raises the intriguing possibility that TMEM16B expressing neurons in the amygdala contribute to the regulation of fear and anxiety-related behaviors. It remains possible that TMEM16B-CaCC in other brain areas may also contribute to fear and anxiety-like behaviors. In fact, ventral hippocampus is involved in defensive fear related behavior which is revealed by elevated plus maze (Kjelstrup et al., 2002). It would be of interest to conduct a more targeted knockout approach and test how removal Ano2 from SOM+ neurons of CeL affects anxiety-related behaviors. Ablation and pharmacological experiments implicate both hippocampus and amygdala in context-dependent and context-independent fear conditioning (Chen et al., 2016; Hall et al., 2001; Kochli et al., 2015; Vazdarjanova and McGaugh, 1999; Weeden et al., 2015; Xu et al., 2016; Yin et al., 2002). Intriguingly, loss of TMEM16B function affected context-independent but not context-dependent fear memory, indicating that different forms of fear memory may involve circuitry with different molecular features of neuronal regulation.\n\nGABA agonists and antagonists can modulate fear (Makkar et al., 2010) and anxiety-like behaviors (Barbalho et al., 2009; Sanders and Shekhar, 1995). Central lateral amygdala has emerged as a primary site for the diazepam anxiolytic action (Griessner et al., 2018). The diazepam-binding GABAA-receptor subunits (Olsen and Sieghart, 2009) are expressed at higher levels in SOM+ neurons than in SOM- neurons. In addition, application of diazepam increases both the frequency and the size of spontaneous inhibitory postsynaptic currents (sIPSCs) of SOM+/PKC\u03b4\u2212 neurons but not SOM\u2212/PKC\u03b4+ neurons (Griessner et al., 2018). Moreover, we found that elimination of TMEM16B-CaCC resulted in prolonged action potentials and increased inhibitory postsynaptic current in SOM+ neurons of the central lateral amygdala, reminiscent of the effect of diazepam on SOM+ neurons. This alteration in neuronal signaling may alter the inhibitory tone in the central amygdala (CeA), thereby affecting disinhibition of CeA output neurons that are involved in anxiety and conditioned fear memory in Ano2 KO mice. For example, increased synaptic inhibition of SOM+ CeL neurons could dampen the excitatory input from BLA to SOM+ neurons that drives fear expression (Figure 8) (Janak and Tye, 2015).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/47106/elife-47106-fig8-v2.jpg)\n\n**Figure 8.:** (A) Loss of TMEM16B mediated CaCC in SOM+ CeL neurons results in broadening of action potential, thereby increasing presynaptic calcium channel activity and GABA release evoked by spike firing. (B) Increased inhibition tone onto SOM+ CeL neurons could contribute to the reduction of fear and anxiety-related behaviors in Ano2 KO mice, by reducing the extent that SOM+ CeL neurons are excited by neurons in the basolateral complex of the amygdala (BLA) as well as reducing the extent that SOM+ CeL neurons exert inhibition of the periaqueductal gray (PAG).\n\nSOM+ CeL neurons receive excitatory inputs from BLA neurons that display learning-related plasticity during fear conditioning (Li et al., 2013). These SOM+ neurons project to the periaqueductal gray (PAG) and the paraventricular nucleus of the thalamus (PVT) and form part of the circuit for fear (Janak and Tye, 2015; Penzo et al., 2014). TMEM16B-CaCC modulates inhibition of SOM+ CeL neurons, as evident from the increased sIPSCs (Figure 6) associated with action potential broadening that is caused by loss of TMEM16B function (Figure 8A). Increased inhibition of SOM+ CeL neurons in Ano2 KO mice could reduce the extent of their excitation by BLA neurons as well as their ability to inhibit downstream neurons in PAG, thus resulting in a reduction of fear and anxiety-related behaviors (Figure 8B). This scenario is in accordance with the reduced auditory fear expression and anxiety-like behaviors of Ano2 KO mice. The correlation between alteration in the SOM+ neuronal activity and GABAergic transmission and the impaired fear and anxiety-like behaviors in Ano2 KO mice is consistent with the notion that inhibitory transmission in CeL plays a key role in the modulation of fear expression and anxiety-like behaviors.\n\nCaCC can be activated by high threshold Cav channel in inferior olive neurons (Zhang et al., 2017). In our case, SOM+ neurons exhibited CaCC when the membrane potential was depolarized beyond \u221210 mV (Figure 4J,K,L), indicating that TMEM16B-CaCC activation is triggered by Ca2+ influx through dendritic high-threshold CaV channels. The R type Ca2+ channel is a major source of dendritic Ca2+ influx in response to action potentials (Magee and Johnston, 1995; Sabatini and Svoboda, 2000). Interestingly, the R type Ca2+ channel is highly enriched in central amygdala neurons (Zhang et al., 1993), and mice without R type Ca2+ channels have deficits in fear response (Lee et al., 2002).\n\nIn summary, we found that Ano2, is expressed in somatostatin-positive GABAergic neurons of central lateral amygdala. TMEM16B-CaCC regulates action potential waveform and GABAergic neurotransmission in these neurons as well as fear and anxiety-like behaviors; the physiological function of TMEM16B is important for expression of anxiety and context-independent fear memory. Better understanding of TMEM16B-CaCC regulation of neuronal signaling could lead to novel strategies for treating anxiety disorders such as panic disorder and post-traumatic stress disorder (PTSD).\n\n## Materials and methods\n\n### Animals\n\nAdult mice aged 12\u201316 weeks were used for behavioral experiments. Ano2 knockout mice and control littermates were bred in the on a C57BL6 background as described previously (Zhang et al., 2017). To assist electrophysiological recording of somatostatin interneurons, we used the Sst-IRES-Cre; Ai14 mice expressing Tdtomato in Somatostatin interneurons to fluorescently mark somatostatin expressing cells. Ai14 mice were crossed with Ano2+/- mice to generate Ano2+/-; Ai14 mice, and further crosses with Sst-IRES-Cre; Ano2+/-; Ai14 mice resulted in fluorescently marking SOM+ cells in Ano2 KO mice and control mice for slice recording. Mice aged 16\u201321 days were used for brain slice recording. All mice were socially housed four per cage under a 12 hr light/dark cycle with food and water ad libitum. The use and care of the mice complied with the guidelines of the Institutional Animal Care and Use Committee of UCSF (IACUC protocol AN181236), in accordance with the US National Institute of Health guidelines. Two cohorts were used in the behavioral assays. The first cohort was tested with open field, elevated plus maze, fear conditioning and hot plate. The second cohort was tested with light/dark box and pre-pulse inhibition. There is at least one week between consecutive assays, starting from assays with weak stimulation and followed with tests with progressively stronger stimulation.\n\n### Behavioral assays\n\n#### Open Field Test\n\nMice are placed in the center area of open field chamber (16 in x 16 in) with dim light in the dark phase for 10 min. Mice trajectory was recorded with photobeam assays (San Diego Instrument, San Diego, CA). Center area is a 8 in x eight in square in the center part of the chamber. Anxiety-related behavior was defined by ratio of traveled in the center area to total area.\n\n#### Elevated Plus Maze\n\nThe elevated plus maze consists of two open and two enclosed arms elevated 63 cm above the ground (Hamilton-Kinder, Poway, CA). Mice are placed at the intersection between the open and closed arms and allowed to explore for 10 min. Anxiety-related behavior was measured by the time and distance traveled in the open arm.\n\n#### Light/Dark Box\n\nA dark box with a small opening in the middle is inserted into the open field such that it divides the chamber into two equal portions, a light side and a dark side. Mice are placed inside the dark box in plastic chambers and allowed to explore for 10\u201330 min (Cryan and Holmes, 2005).\n\n#### Fear conditioning\n\n##### Training\n\nMice are placed in the fear conditioning apparatus with light set at 3, fan on, trays sprayed with Windex, and even-barred metal floor grid exposed. Test starts with a 5 min baseline period to access baseline freezing level. Then a combination of a 30 s 80 dB tone that co-terminates with a 2 s, 0.45 mA foot shock is presented three times, separated by 120 s intervals during which freezing is monitored.\n\n##### Context Test\n\nThe Context Test takes place 24 hr after Training. Setup is the exactly the same as for training. Mice are placed in the fear conditioning apparatus for 8 min. No shock is presented. Freezing is monitored.\n\n##### Cued Fear Test\n\nThe Cued Fear Test takes place 5\u201324 hr after the Context Test. The context is altered by changing floor grid, turning the fan off and spraying with Simple Green. Mice are placed in the fear conditioning apparatus for 12 min. After a 5 min baseline period four tones are delivered as described in Training, separated by 120 s intervals during which freezing is monitored. No shock is presented (Kopec et al., 2007).\n\n### Pre-pulse inhibition\n\n#### Habituation\n\nMice are given 5 min to acclimate to the restraining chamber and the 64 dB background noise. After 5 min, mice are introduced to a series of acoustic pulses lasting for 20 min in which weaker acoustic signal (pre-pulse) is ahead of some pulses at random intervals. Trials with no auditory stimulus are also included to provide a measure of baseline activity. The test is comprised of a total of 80 trials (twenty-four 40 ms/120 dB trials, fourteen each of the 4dbpp/40 ms/120 dB, 15dbpp/40 ms/120 dB, 26dbpp/40 ms/120 dB, and no stim trials). The inter-stimulus interval (ISI) is variable with a mean of 15 s, and a range of 8\u201322 s.\n\n#### Data extraction\n\nWe calculated the mean startle amplitude for each trial type: 40 ms/120 dB, 4dbpp/40 ms/120 dB, 15dbpp/40 ms/120 dB, 26dbpp/40 ms/120 dB, and no stimulus across the entire session. To calculate the % pre-pulse inhibition, we used this formula: 100 * ((mean of 40 ms/120 dB trials-mean of pre-pulse trial type)/(mean of 40 ms/120 dB)) (Vitucci et al., 2016).\n\n### In situ hybridization\n\nMice were euthanized with isoflurane and mice brains were removed without perfusion. The specimen was frozen on dry ice or in liquid Nitrogen within 5 min of tissue harvest. Frozen Brain was embedded in cryo-embedding medium (OCT), and then sectioned with a Cryostat. Sections were fixed with chilled 4% PFA for 15 min, and then washed with 0.1 M PBS twice. Sections were then dehydrated with 50% ethanol, 70% ethanol, and 100% ethanol sequentially. Slides were treated with protease and then incubated with customized probe for 2 hr. Signal was amplified by using the ACD RNAscope Fluorescent Multiplex Kit. RNAscope Probe-Mm-Ano2 (Cat No. 441951), Probe-Mm-Gad2-C3 (Cat No. 439371-C3), Probe-Mm-Sst (Cat No. 404631-C2). Image is analyzed by Fuji.\n\n### Slice preparation\n\nSlices (300 \u00b5m) were prepared as previously described (Li et al., 2012). In brief, brain slices from P16-P20 were sliced with a Vibroslice (Leica VT 1000S) in ice-cold artificial cerebrospinal fluid (ACSF), which consisted of (in mM) 125 NaCl, 3 KCl, 1.25 NaH2PO4, 1.3 MgCl2, 2.6 CaCl2, 25 NaHCO3 and 10 glucose. Slices were recovered for\u00a0~30 min at 33\u00b0C, incubated in ACSF for\u00a0~60 min at 22\u00b0C, then transferred to the recording chamber and perfused (3 ml min\u22121) with ACSF at 22\u00b0C. All external solutions were saturated with 95% O2, 5% CO2.\n\n### Electrophysiology\n\nNeurons were visualized with a 60x water-immersion lens (Zeiss) and recorded using whole-cell techniques (MultiClamp 700B Amplifier, Digidata 1322A analog-to-digital converter) and pClamp 9.2 software (Axon Instruments/Molecular Devices). The solution for action potential recording containing (in mM): 125 potassium gluconate, 15 KCl, 10 HEPES, 4 Mg-ATP, 0.3 Na-GTP, 10 disodium phosphocreatine and 0.2 EGTA, pH 7.2 with KOH, 288 mOsm. Voltage threshold was defined as dV/dt\u00a0=\u00a010 mV ms\u22121. Spike amplitude was measured as the voltage difference between the peak amplitude and the threshold of the action potential. After afterhyperpolarization potential (AHP) was measured as the difference between the spike threshold and the minimum voltage after the action potential peak. Spike half width was measured at half the spike amplitude. APD90% was defined as width of the action potential repolarization to 90%. All analysis was performed using pClamp/Clampfit.\n\nTo measure the calcium activated chloride currents in voltage clamp, the patch pipette (3\u20134 M\u2126) was filled with a solution (Zhang et al., 2017) containing (in mM): 110 Cs-methanesulphonate, 20 tetraethylammonium chloride (TEACl), 8 KCl, 10 HEPES, 4 MgATP, 0.3 NaGTP, 0.2 EGTA, 5 QX-314-Br, pH 7.25 with CsOH, 290 mOsm. For pharmacological experiments, 200 \u03bcM Cd2+ or 100 \u03bcM niflumic acid (NFA) was applied to ACSF. The holding potential for CaCC recordings was \u221280 mV.\n\nTo record evoked postsynaptic currents, the patch pipette (3\u20134 M\u2126) was filled with a solution same as the one for CaCC recording. The puff micropipette (4\u20135 M\u2126) was placed 20\u201340 \u03bcm away from the neuron recorded. A low gas pressure (4\u20136 psi) was applied to the puff micropipette containing GABA by Picrospritzer. 100 \u03bcM GABA is dissolved in ACSF freshly. The holding potential for eIPSC recording is 0 mV.\n\nTo record GABAergic postsynaptic currents in voltage clamp, a high chloride internal solution (in mM) was used: 110 CsCl, 30 Potassium gluconate, 10 HEPES, 2 MgCl2, 4 Mg-ATP, 0.3 Na-GTP 10 disodium phosphocreatine and 0.2 EGTA, pH 7.2 with KOH, 288 mOsm. IPSCs were recorded with 50 \u00b5M DL-AP5 and 20 \u00b5M DNQX in ACSF. mIPSCs were recorded in the presence of 50 \u00b5M DL-AP5, 20 \u00b5M DNQX and 1 \u00b5M TTX. The holding potential for both action potential and IPSCs recordings was \u221270 mV. The threshold amplitude for mIPSCs is 15 pA. As most mIPSCs are less than 40 pA in amplitude, we analyzed all the events in sIPSC recordings that are greater than 40 pA, hence unlikely to arise from spontaneous GABA release. During recording, access resistance was compensated by up to 80%. Neurons with series resistance above 20 M\u2126 and\u00a0>20% of changes throughout the recording were discarded, otherwise were used for analysis. Bridge balance in current clamp and whole-cell compensation in voltage clamp were adjusted throughout the recording. Recordings were sampled at 100 kHz for action potentials, sampled at 10 kHz for IPSCs and CaCC recordings and filtered at 3 kHz. IPSCs were analyzed using Mini Analysis Program (Synaptosoft).\n\n### Quantification and statistical analysis\n\nAll data are represented as mean\u00a0\u00b1\u00a0SEM. All statistical analyses were performed with Prism (GraphPad) with appropriate method which indicated in the figure legend. Paired or unpaired t tests and Mann Whitney tests were used for two group comparisons. Two-way repeated-measures ANOVA was used to perform group comparisons. Data are considered to be statistically significant if p<0.05. Model illustration is created by https://biorender.com/.\n\n### Reagents\n\nPharmacological drugs used included 100 \u03bcM Picrotoxin (Tocris, Cat. No. 1128/1G), 50 \u00b5M DL-AP5 (Tocris, Cat. No. 0105/10), 20 \u00b5M DNQX (Tocris, Cat. No. 2312/10), Tetrodotoxin (abcam, ab120054), QX-314 (Tocris, Cat. No. 1014/100), Cadmium chloride (Sigma Aldrich, 10108-64-2), Niflumic acid (Sigma Aldrich, 4394-00-7) and 100 \u03bcM GABA (Sigma Aldrich, A2129).\n",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "852bfe9e-1a33-44d2-92c1-5d50fabb15e3",
+      "submission_id": "aa5fce4e-f621-45ae-bab5-dcfe7a4a1e1b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lisa M Monteggia, Vanderbilt University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.47106.016](https://doi.org/10.7554/eLife.47106.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"TMEM16B regulates anxiety-related behavior and GABAergic neuronal signaling in the central lateral amygdala\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nWhile the reviewers were overall positive about the fundamental contribution this manuscript makes to the neurobiology of TMEM16B (and Calcium-activated Chloride currents in general), they raised some substantive concerns especially in regards to the overarching nature of the claims on the relevance of these findings to anxiety related behavior and panic disorder. This emphasis should be significantly toned down in the text. In addition, the reviewers agreed that the synaptic phenotype associated with TMEM16B function should be clarified.\n\nEssential revisions:\n\n1) The authors need to substantially tone down the discussion on panic disorders. Inclusion of the caveats discussed in the reviews within the text of the manuscript will help readers evaluate the findings (reviewer #1, point 2 and reviewer #3, point 4).\n\n2) The manuscript should incorporate more evidence on the nature of the synaptic change observed to establish that it is indeed a presynaptic effect.\n\n3) Please include data demonstrating that Calcium-activated Chloride currents are missing in non-SOM+ neurons in the CeA to confirm cellular specificity.\n\nReviewer #1:\n\nThe authors show that knockout of TMEM16B, a calcium activated chloride channel localized in somatostatin positive subgroup of neurons of the central lateral nucleus of amygdala, results in reduced anxiety-related behaviors in a battery of behavioral tests as well as changes in the electrophysiological properties of the aforementioned cells and the overall circuitry. The calcium activated chloride current was beautifully characterized electrophysiologically. Previous work from the same lab characterized TMEM16B current in the hippocampus (Huang et al., 2012). Similar to previous findings elicited with calcium activated chloride current inhibitors NFA and NPPB, TMEM16B KO caused widening of the action potential resulting in increased frequency and amplitude of action potential dependent spontaneous IPSCs. Even though the observed electrophysiological changes are not tied to the observed behavioral changes, this is a well-written manuscript presenting novel and interesting data obtained from well-designed experiments.\n\n1) The authors characterize the anxiolytic-like effect of TMEM16B KO in OFT, EPM and light/dark box paradigms. However, the knockout is global in the mice model used and involvement of other brain areas, especially hippocampus (Kjelstrup et al., 2002), may be a confounding factor. A more targeted knockout approach in SOM+ neurons of CeL or a rescue experiment of TMEM16B in the Cl in the KO line would strengthen the claims of the paper.\n\n2) In the second paragraph of the Introduction, the authors cited a GWAS study (Otowa et al., 2009) to support the rationale that altered function of TMEM16B may be involved in the pathogenesis of panic disorder (PD). The same group published a follow-up paper a year later, stating that they were unable to find any significant association between previously reported single nucleotide polymorphisms (SNPs), including the one reported in TMEM16B, and PD (Otowa et al., 2010). Similarly, a meta-analysis of GWAS studies by the same group published in 2012 was failed to show any association between SNPs in TMEM16B and PD (Otowa et al., 2012). Given the more recent papers with a greater number of subjects found no association between SNPs of TMEM16B and PD, the authors should rewrite the paper accordingly.\n\n3) The findings related to the miniature release are, indeed, interesting; however the importance and/or pathophysiological relevance of these findings don't come to a conclusion other than supporting that TMEM16B can modulate the release at presynaptic terminal. The authors should limit their discussion of findings in miniature release in the sixth paragraph of the Discussion, since they don't present enough data to implicate mIPSCs in TMEM16 KO phenotype. The current finding is itself intriguing since the previous work from the same lab did not report any presynaptic action of TMEM16B in hippocampus (Huang et al., 2012). In addition, the source of postsynaptic calcium to activate TMEM16B should be discussed in greater detail.\n\nKjelstrup, K. G., F. A. Tuvnes, H. A. Steffenach, R. Murison, E. I. Moser, and M. B. Moser. 2002. 'Reduced fear expression after lesions of the ventral hippocampus', Proc Natl Acad Sci U S A, 99: 10825-30.\n\nReviewer #2:\n\nThis is a fairly simple and solid paper that shows a very interesting behavioral phenotype in TMEM16B deletion mice. The set of behaviors is really extremely interesting. The electrophysiology too is performed to a high standard. Overall, this is a solid study with clear and compelling data.\n\nThe authors have made a connection to panic disorder (PD) perhaps as a way to increase the appeal of the study. This is a personal choice, but there appears to be nothing wrong with just reporting the results as a TMEM16B knock-out paper and discussing the possible relevance to PD in the Discussion. This may be better than mentioning PD in the Abstract and Introduction, which as the authors point out later is a tenuous connection as the SNP in TMEM16B may lead to increased activity as the link to the phenotype shown. However, these are clearly very sophisticated/accomplished authors and so it is really up to them how they write it. If they do lead with PD, then I think they need to expand the second paragraph of the Discussion, and explicitly state the limitations of the work.\n\nReviewer #3:\n\nThe manuscript by Li and co-workers describes the effects of TMEM16B deletion on anxiety and fear-related behaviors and the authors show an anxiolytic-like profile in KO mice. They then localize expression of this protein to CeAL SOM+ neurons and demonstrate its functional existence in these cells and the effects of global deletion to increase AP 1/2 width. They then go on to demonstrate increased spontaneous GABAergic, but reduced miniature GABAergic signaling, onto CeAL SOM+ neurons. The strengths of the work include a clear and robust behavioral phenotype in the KO mice, elegant demonstration of functional expression within CeA SOM+ neurons, and elucidation of the significance of the global TMEM16B deletion for CeA GABAergic signaling. However, there are a number of significant limitations that reduce the strength of the conclusions that can be drawn, which reduces the overall impact of the work. My major conceptual issues are as follows:\n\n1) Both frequency and amplitude of sIPSCs are altered in KO mice, yet the authors posit an increase in the number of release sites/docked vesicles to explain these data (Figure 8), which they posit to be related to increases in AP width. Exclusion of postsynaptic changes in GABA receptor function via local application would be needed to support the conclusion that the changes in sIPSC amplitude are not mediated by postsynaptic alterations.\n\n2) The model posits SOM-SOM inhibitory connections are enhanced in KO mice; however, the electrophysiological approaches do not allow for identification of the afferent source of the GABAergic input onto these SOM neurons being recorded from. They are likely a mixture of PKCd and CRF or other inputs in addition to local SOM-SOM connections.\n\n3) The effects of global deletion are not localized to CeA or even SOM neurons. Without this the cellular/synaptic mechanisms by which TMEM16B deletion causes observed behavioral phenotypes is not advanced.\n\n4) Panic-like behaviors are not examined. While anxiety is a component of panic disorder, animal models that much more closely relate to core panic symptoms in humans are available (i.e. hypercapnia-induced behaviors).\n\n5) Negative control studies are missing. For example, can the authors show lack of functional CaCC in non-SOM+ neurons in the CeA to confirm cellular specificity.\n",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cb23abd6-1793-41d2-b6de-fa12863a9488",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C1",
+      "claim": "TMEM16B (ANO2) is a Ca2+-activated chloride channel expressed in multiple brain regions, including the amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM16B (ANO2) is the Ca2+-activated chloride channel expressed in multiple brain regions, including the amygdala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known property of TMEM16B.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "86d2d0bb-0666-4314-b4d0-fc1948450b90",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C2",
+      "claim": "Ano2 knockout mice exhibit impaired anxiety-related behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that Ano2 knockout mice exhibit impaired anxiety-related behaviors and context-independent fear memory, thus implicating TMEM16B in anxiety modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by behavioral test data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "3ba07a85-f209-4595-b594-8f9d66888338",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C3",
+      "claim": "Ano2 knockout mice exhibit impaired context-independent fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that Ano2 knockout mice exhibit impaired anxiety-related behaviors and context-independent fear memory, thus implicating TMEM16B in anxiety modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by fear conditioning data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "c41d748b-1022-4ec3-8c76-c331d4404d52",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C4",
+      "claim": "TMEM16B is expressed in somatostatin-positive (SOM+) GABAergic neurons of the central lateral amygdala (CeL).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TMEM16B is expressed in somatostatin-positive (SOM+) GABAergic neurons of the central lateral amygdala (CeL), and its activity modulates action potential duration and inhibitory postsynaptic current (IPSC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA scope data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "105233e5-70d4-46b3-ae59-16042be571ba",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C5",
+      "claim": "TMEM16B activity modulates action potential duration in SOM+ GABAergic neurons of the CeL.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TMEM16B is expressed in somatostatin-positive (SOM+) GABAergic neurons of the central lateral amygdala (CeL), and its activity modulates action potential duration and inhibitory postsynaptic current (IPSC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological recordings shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "d5ad6f33-5a14-443b-8100-f0c394a0e937",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C6",
+      "claim": "TMEM16B activity modulates inhibitory postsynaptic current (IPSC) in SOM+ GABAergic neurons of the CeL.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TMEM16B is expressed in somatostatin-positive (SOM+) GABAergic neurons of the central lateral amygdala (CeL), and its activity modulates action potential duration and inhibitory postsynaptic current (IPSC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by IPSC recordings shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "704ca38e-a1bf-446f-9743-aa445b870e72",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C7",
+      "claim": "TMEM16B functions not only in the soma but also in the presynaptic nerve terminals of GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We further provide evidence for TMEM16B actions not only in the soma but also in the presynaptic nerve terminals of GABAergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mIPSC data in Figure 7 showing effects on spontaneous GABA release.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "5896e985-2ec1-4d4b-b021-63f34dd2a3c3",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C8",
+      "claim": "TMEM16B plays a role in context-independent but not context-dependent fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals an intriguing role for TMEM16B in context-independent but not context-dependent fear memory, and supports the notion that dysfunction of the amygdala contributes to anxiety-related behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fear conditioning data in Figure 2 showing differential effects on cued vs. contextual fear.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "45b37a88-fafd-4782-8e4c-9781507a4315",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C9",
+      "claim": "Dysfunction of the amygdala contributes to anxiety-related behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals an intriguing role for TMEM16B in context-independent but not context-dependent fear memory, and supports the notion that dysfunction of the amygdala contributes to anxiety-related behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the behavioral phenotypes observed in Ano2 KO mice and the expression pattern of TMEM16B in the amygdala.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "9f7f5055-9142-4743-a24d-0375d32b4d59",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C10",
+      "claim": "The amygdala plays a central role in fear acquisition and expression of fear responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these brain regions, amygdala play a central role in fear acquisition and expression of fear responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction, referencing prior work on fear circuitry.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "76f26f70-e6f5-400e-b7df-296d70daca22",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C11",
+      "claim": "Inhibitory inputs from central lateral amygdala (CeL) to central medial amygdala (CeM) are important in mediating conditioned fear or anxiolytic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigations of the amygdala microcircuits via optogenetics reveal the importance of inhibitory inputs from central lateral amygdala (CeL) to central medial amygdala (CeM), as well as disinhibition of various output neurons of the central nucleus of the amygdala (CeA), in mediating conditioned fear or anxiolytic processes to reduce anxiety (Ciocchi et al., 2010; Haubensak et al., 2010; Janak and Tye, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior optogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "2c9aef77-7cf4-42f7-9881-6b3fa9618879",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C12",
+      "claim": "Acute anxiolytic responses may result from excitatory inputs from basolateral amygdala (BLA) to the CeA, leading to activation of CeL neurons and feed-forward inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "acute anxiolytic responses may result from excitatory inputs from basolateral amygdala (BLA) to the CeA, leading to activation of CeL neurons and the ensuing feed-forward inhibition (Janak and Tye, 2015; Par\u00e9 et al., 2004; Tye et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior studies on amygdala circuitry.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "8e01cb22-2108-4b74-a82d-53e90356ec94",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C13",
+      "claim": "TMEM16B (ANO2) and TMEM16A (ANO1) are pore forming subunits of Ca2+-activated Cl- channels.",
+      "claim_type": "EXPLICIT",
+      "source": "As members of the enigmatic TMEM16 (ANO2) family of transmembrane proteins with various physiological functions (Yang and Jan, 2016), TMEM16B (ANO2) and TMEM16A (ANO1) are pore forming subunits of the Ca2+-activated Cl- channels (Dang et al., 2017; Paulino et al., 2017; Peters et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "ef0170f5-3fbd-40aa-a173-d9c1451e7085",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C14",
+      "claim": "Ano2 mRNA expression is enriched in brain regions including the amygdala, lateral septum, and hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Ano2 mRNA expression is enriched in brain regions including the amygdala, lateral septum, and hippocampus according to the Allen Brain Atlas, raising the intriguing question regarding the role of the TMEM16B Ca2+-activated Cl- channel in anxiety-related behaivor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data from the Allen Brain Atlas and confirmed by RNA scope in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "0cd573c6-0694-4095-b740-90dd5861512b",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C15",
+      "claim": "TMEM16B serves important functions in various brain regions including the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM16B is known to serve important functions in various brain regions including the hippocampus (Ha et al., 2016; Huang et al., 2012; Neureither et al., 2017; Wang et al., 2019; Zhang et al., 2015; Zhang et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple prior studies on TMEM16B function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "7ddba51c-9bd0-4407-8ec0-2bc2f6d3dd3d",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C16",
+      "claim": "TMEM16B-CaCC is highly enriched in central lateral amygdala (CeL).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TMEM16B-CaCC is highly enriched in central lateral amygdala (CeL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA scope data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "c7ee31a6-391e-4a96-8d84-70740efffd6c",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C17",
+      "claim": "Loss of TMEM16B function results in action potential broadening in SOM+ CeL neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of TMEM16B function results in action potential broadening in SOM+ CeL neurons that express somatostatin, increase of the amplitude and frequency of GABAergic spontaneous inhibitory postsynaptic current (sIPSC), and reduction of the frequency of miniature IPSC (mIPSC) that depends on presynaptic voltage-gated Ca2+ channel activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "46191f60-4b05-4481-b2e4-d6e4468b1554",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C18",
+      "claim": "Loss of TMEM16B function increases the amplitude and frequency of GABAergic spontaneous inhibitory postsynaptic current (sIPSC).",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of TMEM16B function results in action potential broadening in SOM+ CeL neurons that express somatostatin, increase of the amplitude and frequency of GABAergic spontaneous inhibitory postsynaptic current (sIPSC), and reduction of the frequency of miniature IPSC (mIPSC) that depends on presynaptic voltage-gated Ca2+ channel activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sIPSC recordings in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "b99ac9b4-d2d3-4e58-b788-fc37b003333a",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C19",
+      "claim": "Loss of TMEM16B function reduces the frequency of miniature IPSC (mIPSC) that depends on presynaptic voltage-gated Ca2+ channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of TMEM16B function results in action potential broadening in SOM+ CeL neurons that express somatostatin, increase of the amplitude and frequency of GABAergic spontaneous inhibitory postsynaptic current (sIPSC), and reduction of the frequency of miniature IPSC (mIPSC) that depends on presynaptic voltage-gated Ca2+ channel activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mIPSC recordings and CdCl2 experiments in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "aeb69e74-109b-4eed-a967-e673d260323c",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C20",
+      "claim": "Ano2 KO mice showed a significant increase in center exploration behavior in the open field test compared to control littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant increase in the center exploration behavior in Ano2 KO mice as compared to their control littermates (Figure 1B) (unpaired t test in (B), p<0.001, n = 26 for KO and n = 23 for control).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "bcb2c8b4-654a-45be-8089-7c23e57f8a26",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C21",
+      "claim": "Ano2 KO mice showed no detectable locomotive defects in the open field test.",
+      "claim_type": "EXPLICIT",
+      "source": "This abnormal behavior was not accompanied by any detectable locomotive defects in Ano2 KO mice, as evident from measurements of the total distance traveled (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and 1D measuring total distance traveled.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "a89af31f-fe88-4713-8f2b-5dc517f08684",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C22",
+      "claim": "Ano2 KO mice showed significantly greater open-arm exploration in the elevated plus maze test.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the OFT results, mice lacking Ano2 showed significantly greater open-arm exploration (Two-way ANOVA in (F), p=0.0042; Mann Whitney test in (G), p=0.0002 n=26 for KO and n = 23 for control), reflecting a reduction in anxiety-related behaviors as compared to control littermates (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1F and 1G with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "c19a9f4c-0035-42ec-aa45-89b63c084f14",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C23",
+      "claim": "Ano2 KO mice entered the light side more frequently and spent more time in the unprotected area in the light-dark box test.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mice with loss of TMEM16B function entered the light side more frequently and spent more time in this unprotected area as compared to control mice (Figure 1I,J) (unpaired t test in (I,J), p<0.001(I), p=0.005 (J), n = 20 for KO and n = 24 for control).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1I and 1J with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "5a40d4d2-6fc8-4962-a5f2-06ab2eabc9e9",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C24",
+      "claim": "Ano2 KO mice showed significantly greater pre-pulse inhibition of startle responses compared with control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In our assays, Ano2 KO mice showed significantly greater pre-pulse inhibition of startle responses as compared with control mice (Figure 1K) (Two-way ANOVA in (K), p=0.0370, n = 20 for KO and n = 24 for control).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1K with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "fa431d4d-d166-431e-a8dc-a36dcf2739a4",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C25",
+      "claim": "Ano2 KO mice display enhanced PPI and reduced anxiety-related behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Ano2 KO mice display enhanced PPI and reduced anxiety-related behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the PPI data in Figure 1K and other anxiety tests.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "4c004ee9-4810-4d93-9c4e-40f6666ed001",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C26",
+      "claim": "Ano2 KO and control mice displayed comparable freezing levels during context fear acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Ano2 KO and control mice displayed comparable freezing levels during context fear acquisition, which increased as pairings of CS and US were repeatedly presented (Figure 2A,C) (Two-way ANOVA, p=0.3928. n = 24 for KO and n = 24 for control).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A and 2C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "9fb7f861-fdbf-4eac-8cfe-5051ab44fedc",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C27",
+      "claim": "Ano2 KO and control mice exhibited no significant difference in context-dependent fear expression.",
+      "claim_type": "EXPLICIT",
+      "source": "When the same context was presented 24 hr after fear conditioning, Ano2 KO and control mice exhibited no significant difference in context-dependent fear expression (Figure 2B,C) (Two-way ANOVA, p = 0.1472. n = 24 for KO and n = 24 for control), indicating that Ano2 is not required for context-dependent fear acquisition and expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B and 2C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "929904e5-c1e6-4a86-8c4a-6ea56c549ff2",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C28",
+      "claim": "Ano2 is not required for context-dependent fear acquisition and expression.",
+      "claim_type": "EXPLICIT",
+      "source": "When the same context was presented 24 hr after fear conditioning, Ano2 KO and control mice exhibited no significant difference in context-dependent fear expression (Figure 2B,C) (Two-way ANOVA, p = 0.1472. n = 24 for KO and n = 24 for control), indicating that Ano2 is not required for context-dependent fear acquisition and expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of difference in context-dependent fear between KO and control mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "a63a0144-d3dc-41ac-a3df-ab236440dcf2",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C29",
+      "claim": "Ano2 KO mice displayed lower levels of freezing than control mice during cued fear expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Ano2 KO mice displayed lower levels of freezing than control mice during cued fear expression (Figure 2D,E) (Two-way ANOVA, p=0.004, n = 24 for KO and n = 24 for control)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D and 2E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "dd2a47a8-8257-45b9-9315-eab5ed89c562",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C30",
+      "claim": "Ano2 KO and control mice displayed similar pain threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "while the mutant and control mice displayed similar pain threshold (Figure 2F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "e38702fc-f52d-4942-bde3-f71760fcbb2d",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C31",
+      "claim": "TMEM16B is involved in controlling context-independent cued fear expression.",
+      "claim_type": "EXPLICIT",
+      "source": "while the mutant and control mice displayed similar pain threshold (Figure 2F) and similar freezing levels during the acquisition of cued fear learning (Figure 2A), highlighting the involvement of TMEM16B for controlling context-independent cued fear expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects on cued vs. contextual fear in Ano2 KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "070f2108-df9a-4b82-850e-90876440ace5",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C32",
+      "claim": "Ano2 is mainly expressed in central lateral amygdala (CeL), but not other sub nuclei of amygdala such as basal lateral amygdala (BLA) or the medial part of central amygdala (CeM).",
+      "claim_type": "EXPLICIT",
+      "source": "Ano2 is mainly expressed in central lateral amygdala (CeL), but not other sub nuclei of amygdala such as basal lateral amygdala (BLA) or the medial part of central amygdala (CeM) (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RNA scope data in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "c3add88d-fc0f-4720-a504-27449ea76c4f",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C33",
+      "claim": "CeL is composed of several classes of GABAergic inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "CeL, which is composed of several classes of GABAergic inhibitory neurons (Cassell and Gray, 1989; Ehrlich et al., 2009; Haubensak et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "75d767c1-7d04-4b2b-af76-d3d4a840af8a",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C34",
+      "claim": "CeL modulates conditioned fear response and anxiety-related behavior via inhibition of neurons in the central lateral and medial subdivisions of CeA.",
+      "claim_type": "EXPLICIT",
+      "source": "CeL, which is composed of several classes of GABAergic inhibitory neurons (Cassell and Gray, 1989; Ehrlich et al., 2009; Haubensak et al., 2010), modulates conditioned fear response and anxiety-related behavior via inhibition of neurons in the central lateral and medial subdivisions of CeA, which provide the major output of amygdala (Ciocchi et al., 2010; Janak and Tye, 2015; LeDoux et al., 1988; Tye et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior circuit studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "a15c0ae0-6ab4-4e70-9d51-99157f22841d",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C35",
+      "claim": "The majority (92.6%) of SOM+ (Sst) neurons expressed Ano2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RNA scope study revealed that the majority (92.6%) of SOM+ (Sst) neurons expressed Ano2, and the majority (71.4%) of Ano2 positive cells displayed Sst immunoreactivity (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RNA scope quantification in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "be852be4-2f8c-45c9-946c-d8d080dd012a",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C36",
+      "claim": "The majority (71.4%) of Ano2 positive cells displayed Sst immunoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RNA scope study revealed that the majority (92.6%) of SOM+ (Sst) neurons expressed Ano2, and the majority (71.4%) of Ano2 positive cells displayed Sst immunoreactivity (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RNA scope quantification in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "3da7892b-4a82-4256-b987-04d3664a9f6e",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C37",
+      "claim": "SOM+ (Sst) neurons expressed glutamate decarboxylase 2 (Gad2), a marker of inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We further confirmed that SOM+ (Sst) neurons expressed glutamate decarboxylase 2 (Gad2), a marker of inhibitory neurons (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "6e93d879-6512-48a3-b35a-a6e06962339d",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C38",
+      "claim": "Depolarization of SOM+ neurons to +10 mV elicited a Ca2+ current superimposed with a large outward current that developed over time, followed with a tail current upon hyperpolarization to \u221280 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that depolarization to +10 mV for 500 ms elicited a transient inward current as a result of the superimposition of an inward Ca2+ current and an outward CaCC that developed over time leading to the appearance of a net outward current following the transient inward current, followed by a slowly deactivating tail CaCC current upon repolarization to \u221280 mV (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by voltage clamp recordings in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "9400b6c1-2cf8-42b9-aa56-a6798d81cf6e",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C39",
+      "claim": "Treatment of brain slices with CdCl2 abolished both the inward Ca2+ current and the CaCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of brain slices with CdCl2, a Ca2+ channel blocker, abolished both the inward Ca2+ current and the CaCC (Figure 4B), indicating that CaCC activation is triggered by Ca2+ influx through voltage-gated Ca2+ channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by pharmacological experiments in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "e7c7aff6-2bd8-494a-a997-bedff3b3e679",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C40",
+      "claim": "CaCC activation is triggered by Ca2+ influx through voltage-gated Ca2+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of brain slices with CdCl2, a Ca2+ channel blocker, abolished both the inward Ca2+ current and the CaCC (Figure 4B), indicating that CaCC activation is triggered by Ca2+ influx through voltage-gated Ca2+ channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CdCl2 blocking experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "9f25146e-ce75-498f-887e-7cddd22a47fb",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C41",
+      "claim": "NFA reduced both the outward current and the tail current in SOM+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that the outward current superimposed on the inward Ca2+ current during depolarization and the tail current upon repolarization are Cl- currents, we first showed that NFA, a Cl- channel blocker, reduced both the outward current and the tail current (Figure 4C,D,E) (Paired t test in (D), p=0.0023; Paired t test in (E), p=0.0342, n = 9 cells for each group from three mice per group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by NFA application experiments in Figure 4C, D, and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "cbe25307-1213-413f-b24e-aaa0c673c17f",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C42",
+      "claim": "The reversal potential of the tail current corresponds to the Cl- equilibrium potential.",
+      "claim_type": "EXPLICIT",
+      "source": "We further measured the reversal potential of the tail current and found that it corresponds to the Cl- equilibrium potential (Figure 4H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by reversal potential measurements in Figure 4H and 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "7276c98f-74b0-4473-a0bd-c0400fa9428e",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C43",
+      "claim": "No obvious CaCC current is elicited in non-SOM+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, no obvious CaCC current is elicited in non-SOM+ neurons (Figure 4\u2014figure supplement 1B,C,D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "9e20da80-506a-40eb-a60e-0df33b136c16",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C44",
+      "claim": "Depolarization of SOM+ neurons lacking TMEM16B elicited a fast inward calcium current without the outward current and tail current.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to control brain slices, depolarization of SOM+ neurons lacking TMEM16B elicited a fast inward calcium current without the outward current and tail current (Figure 4M,N) (Mann Whitney test in (M, N), p<0.0001(M,N), n = 18 cells from 5 KO and n = 9 cells from four control for K, L, M and N), indicating that TMEM16B is solely responsible for CaCC in those GABAergic neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by recordings from Ano2 KO neurons in Figure 4M and 4N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "dc5962dc-548b-48b9-8a22-96d1b37630ee",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C45",
+      "claim": "TMEM16B is solely responsible for CaCC in SOM+ GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to control brain slices, depolarization of SOM+ neurons lacking TMEM16B elicited a fast inward calcium current without the outward current and tail current (Figure 4M,N) (Mann Whitney test in (M, N), p<0.0001(M,N), n = 18 cells from 5 KO and n = 9 cells from four control for K, L, M and N), indicating that TMEM16B is solely responsible for CaCC in those GABAergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the complete absence of CaCC in Ano2 KO neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "37cc9b40-6837-4936-a755-b99b0a77151b",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C46",
+      "claim": "Ano2 KO and control littermates had comparable numbers of action potentials generated, firing frequency adaptation, threshold, spike amplitude, after hyperpolarization (AHP), resting membrane potential (RMP), and passive membrane properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas Ano2 KO and control littermates had comparable numbers of action potentials generated, firing frequency adaptation, threshold, spike amplitude, after hyperpolarization (AHP), resting membrane potential (RMP), and passive membrane properties (Figure 5A,B,C,G; Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5 and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "84feaa15-6429-46b4-8d5b-426f4e1b8253",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C47",
+      "claim": "There was a significant increase in the half width, half width adaptation, and the width of the action potential at 90% from the peak (APD90%) in Ano2 KO mice compared with control littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "there was a significant increase in the half width, half width adaptation, and the width of the action potential at 90% from the peak (APD90%) in Ano2 KO mice as compared with control littermates (Figure 5A,D,E,F) (Mann Whitney u test in (D, E, F), p=0.0145 (D), p=0.0091 (E), p=0.0003 (F), n = 13 cells for KO and 14 cells for control, from three mice each).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D, E, and F with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "8afc171a-4ab4-404d-9cb3-ac136888024a",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C48",
+      "claim": "The amplitude of eIPSC was comparable between control and TMEM16B knockout SOM+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of eIPSC was comparable between control and TMEM16B knockout SOM+ neurons (Figure 6\u2014figure supplement 1B) (Unpaired t test, p=0.2628. n = 9 cells for each genotype from three mice each), indicating that TMEM16B activity does not alter GABA receptor function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "1e42ba27-baa8-43c0-9a41-1ab927d27ca0",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C49",
+      "claim": "TMEM16B activity does not alter GABA receptor function.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of eIPSC was comparable between control and TMEM16B knockout SOM+ neurons (Figure 6\u2014figure supplement 1B) (Unpaired t test, p=0.2628. n = 9 cells for each genotype from three mice each), indicating that TMEM16B activity does not alter GABA receptor function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparable eIPSC amplitudes between KO and control.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "32dbc483-ad0d-49fa-b3e0-9c816fdcd1e2",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C50",
+      "claim": "The potentiation of sIPSC could have arisen from the broadening of action potentials in presynaptic neurons lacking TMEM16B.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings thus support the notion that the potentiation of sIPSC could have arisen from the broadening of action potentials in presynaptic neurons lacking TMEM16B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of action potential broadening and increased sIPSC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "34d5875d-57d3-4e05-b2f9-52a590451338",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C51",
+      "claim": "The inhibitory neurotransmission is abnormal in the CeL of Ano2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies reveal that the inhibitory neurotransmission is abnormal in the CeL of Ano2 KO mice, as evident from the potentiation of the sIPSC due to spontaneous network activities of the CeL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the sIPSC and mIPSC data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "a2886585-ae38-47dd-a742-3124c3bb6198",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C52",
+      "claim": "Voltage-gated Ca2+ channels mediate Ca2+ influx to trigger transmitter release that is evoked by an action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only do voltage-gated Ca2+ channels mediate Ca2+ influx to trigger transmitter release that is evoked by an action potential, Ca2+ channels have also been found to be physiological triggers for spontaneous transmitter release at mouse inhibitory synapses (Williams et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior studies on synaptic transmission.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "5770abad-9452-492b-9dda-55ace6b8c70c",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C53",
+      "claim": "Ca2+ channels have been found to be physiological triggers for spontaneous transmitter release at mouse inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only do voltage-gated Ca2+ channels mediate Ca2+ influx to trigger transmitter release that is evoked by an action potential, Ca2+ channels have also been found to be physiological triggers for spontaneous transmitter release at mouse inhibitory synapses (Williams et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Williams et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "d253d5ea-6acc-4282-90a7-18351d42a65b",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C54",
+      "claim": "The amplitude of mIPSC appeared normal in CeL slices of Ano2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the amplitude of mIPSC appeared normal in CeL slices of Ano2 KO mice, the frequency of mIPSC was significantly reduced (Figure 7A,B) (Mann Whitney test in (B, left panel), p = 0.0016; unpaired t test in (B, right panel), p = 0.2283, n = 16 cells for KO and n = 15 cells for control, from 5 mice each).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "66edf8c0-006a-4429-9ba6-fd582d0f40fb",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C55",
+      "claim": "The frequency of mIPSC was significantly reduced in CeL slices of Ano2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the amplitude of mIPSC appeared normal in CeL slices of Ano2 KO mice, the frequency of mIPSC was significantly reduced (Figure 7A,B) (Mann Whitney test in (B, left panel), p = 0.0016; unpaired t test in (B, right panel), p = 0.2283, n = 16 cells for KO and n = 15 cells for control, from 5 mice each).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "d8c28c4d-636e-444c-9679-d909148c0c1f",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C56",
+      "claim": "Application of Cd2+ reduced the mIPSC frequency by 54.74% \u00b1 4.032% without affecting the mIPSC amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a previous study (Williams et al., 2012), application of Cd2+ (200 \u03bcM), a Ca2+ channel blocker, reduced the mIPSC frequency by 54.74% \u00b1 4.032% without affecting the mIPSC amplitude (Figure 7D-H), thus implicating Ca2+ channels in spontaneous GABA release in central lateral amygdala.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7D-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "97c242cf-396c-418f-ba98-6c794625a854",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C57",
+      "claim": "Ca2+ channels are implicated in spontaneous GABA release in central lateral amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a previous study (Williams et al., 2012), application of Cd2+ (200 \u03bcM), a Ca2+ channel blocker, reduced the mIPSC frequency by 54.74% \u00b1 4.032% without affecting the mIPSC amplitude (Figure 7D-H), thus implicating Ca2+ channels in spontaneous GABA release in central lateral amygdala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Cd2+ blocking experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "a4a503c4-f5d8-44b3-84cf-d04a32faf8be",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C58",
+      "claim": "About 46% of the mIPSCs were Cd2+ resistant.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, about 46% of the mIPSCs were Cd2+ resistant, suggesting that other mechanisms also contribute to the regulation of spontaneous GABA release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the Cd2+ blocking experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "f2c473f4-e649-4376-becc-819c794b1722",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C59",
+      "claim": "Other mechanisms also contribute to the regulation of spontaneous GABA release.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, about 46% of the mIPSCs were Cd2+ resistant, suggesting that other mechanisms also contribute to the regulation of spontaneous GABA release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the presence of Cd2+-resistant mIPSCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "5ac05a4a-1cf5-4329-82e5-68031f9f668a",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C60",
+      "claim": "CdCl2 had a much smaller effect on the mIPSC frequency in KO mice (22.52% \u00b1 6.326%).",
+      "claim_type": "EXPLICIT",
+      "source": "CdCl2 had a much smaller effect on the mIPSC frequency in KO mice (22.52% \u00b1 6.326%, Figure 7F, H), while the frequency of CdCl2 insensitive mIPSC was comparable between control and KO (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7F and 7H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "613e20c3-4898-490b-b0da-90ca6c2152b8",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C61",
+      "claim": "The frequency of CdCl2 insensitive mIPSC was comparable between control and KO.",
+      "claim_type": "EXPLICIT",
+      "source": "CdCl2 had a much smaller effect on the mIPSC frequency in KO mice (22.52% \u00b1 6.326%, Figure 7F, H), while the frequency of CdCl2 insensitive mIPSC was comparable between control and KO (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "c6f98770-b96e-4ee9-a9d0-8126cbde94ea",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C62",
+      "claim": "TMEM16B functions in the nerve terminal, including regulation of spontaneous GABA release that depends on Ca2+ channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings provide evidence for TMEM16B function in the nerve terminal, including regulation of spontaneous GABA release that depends on Ca2+ channel activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of Cd2+ on mIPSC frequency in control vs. KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "63bbf582-2cd5-4d24-8a0f-16330fc8b410",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C63",
+      "claim": "Loss of TMEM16B function leads to behavioral abnormalities, including impaired anxiety-related behaviors and context-independent auditory fear expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we report that loss of TMEM16B (Ano2) function leads to behavioral abnormalities, including impaired anxiety-related behaviors and context-independent auditory fear expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main behavioral findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "9b0ea049-185a-44be-a3e2-a24b319bdf88",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C64",
+      "claim": "TMEM16B constitutes a previously unknown Ca2+-activated Cl- channel in CeL GABAergic neurons with somatostatin expression.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, TMEM16B constitutes a previously unknown Ca2+-activated Cl- channel in CeL GABAergic neurons with somatostatin expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the electrophysiological findings in SOM+ neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "e71bc2df-ac7a-4c6d-900c-0b46946cca4e",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C65",
+      "claim": "SOM+ neurons in central lateral amygdala of Ano2 mutant mice have broadened action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that SOM+ neurons in central lateral amygdala of Ano2 mutant mice have broadened action potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the action potential findings in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "248244c7-19f5-4400-8464-18d8f7f14f2f",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C66",
+      "claim": "The lengthening of action potential duration is associated with potentiation of the action potential evoked inhibitory postsynaptic current (sIPSC).",
+      "claim_type": "EXPLICIT",
+      "source": "The lengthening of action potential duration is associated with potentiation of the action potential evoked inhibitory postsynaptic current (sIPSC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between action potential broadening and increased sIPSC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "3b7669c7-5fa7-454c-a335-ef669956298a",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C67",
+      "claim": "Ablation of TMEM16B causes a decrease of the mIPSC frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that ablation of TMEM16B also causes a decrease of the mIPSC frequency provides further evidence for the functional significance of TMEM16B in the presynaptic nerve terminal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the mIPSC findings in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "5434c2e9-be9f-42d9-8757-8712431d660c",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C68",
+      "claim": "TMEM16B regulates miniature inhibitory postsynaptic current (mIPSC) by modulating the frequency of spontaneous GABA release that depends on voltage-gated Ca2+ channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we found that TMEM16B regulates miniature inhibitory postsynaptic current (mIPSC) by modulating the frequency of spontaneous GABA release that depends on voltage-gated Ca2+ channel activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Cd2+ experiments showing differential effects in KO vs. control.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "b8e50b33-21fa-42ad-bd8c-2c337d6ab0c8",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C69",
+      "claim": "TMEM16B plays a critical role in the regulation of SOM+ GABAergic neuronal signaling and inhibitory transmission in central lateral amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide evidence for a critical role of TMEM16B in the regulation of SOM+ GABAergic neuronal signaling and inhibitory transmission in central lateral amygdala, as well as the involvement of TMEM16B in fear and anxiety-like behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on all the electrophysiological findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "25109009-9fa2-4a2e-9177-2b95b4fb93a8",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C70",
+      "claim": "TMEM16B is involved in fear and anxiety-like behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide evidence for a critical role of TMEM16B in the regulation of SOM+ GABAergic neuronal signaling and inhibitory transmission in central lateral amygdala, as well as the involvement of TMEM16B in fear and anxiety-like behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on all the behavioral findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "3fe0f0da-60ca-485b-bd1d-caa97997c1b3",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C71",
+      "claim": "Otowa and colleagues conducted GWAS studies of panic disorder (PD) in the Japanese population and found seven SNPs that are significantly associated with PD, which are located in or adjacent to genes such as PKP1, PLEKHG1, TMEM16B, CALCOCO1, SDK2 and CLU.",
+      "claim_type": "EXPLICIT",
+      "source": "Otowa and colleagues conducted GWAS studies of panic disorder (PD) in the Japanese population and found seven SNPs that are significantly associated with PD, which are located in or adjacent to genes such as PKP1, PLEKHG1, TMEM16B, CALCOCO1, SDK2 and CLU (Otowa et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Otowa et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "c4628121-9394-41e5-bde5-6c3a454659cd",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C72",
+      "claim": "Two follow up studies from the same group failed to show any significant association between SNPs in TMEM16B and PD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, two follow up studies from the same group failed to show any significant association between SNPs in TMEM16B and PD (Otowa et al., 2012; Otowa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Otowa et al., 2010 and 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "c794e80e-961d-4033-bfcd-ec5579a5ad99",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C73",
+      "claim": "Loss of TMEM16B function results in a reduction of context-independent fear memory and anxiety-related behaviors in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that loss of TMEM16B function results in a reduction of context-independent fear memory and anxiety-related behaviors in mice allows us to look into the physiological functions of TMEM16B of potential relevance to anxiety and panic disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main behavioral findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "5b8db314-04fb-4104-bb5f-6043bbc93673",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C74",
+      "claim": "TMEM16B expression is mainly confined to the nervous system, including the olfactory neurons, retina, hippocampus, lateral septum, and inferior olive neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM16B expression is mainly confined to the nervous system, including the olfactory neurons (Billig et al., 2011; Pietra et al., 2016), retina (Mercer et al., 2011; St\u00f6hr et al., 2009), hippocampus (Huang et al., 2012), lateral septum (Wang et al., 2019), and inferior olive neurons (Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "f9cb52e1-2fce-474c-aadb-09fbe7092fa5",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C75",
+      "claim": "In the hippocampus, lateral septum and inferior olive, TMEM16B modulates action potentials and neuronal excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hippocampus, lateral septum and inferior olive, TMEM16B modulates action potentials and neuronal excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior studies on TMEM16B function in these regions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "b83d39ae-e2cf-4a29-b844-2e676e209b1d",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C76",
+      "claim": "In the photoreceptor terminals of mouse retina, TMEM16B may regulate glutamate release.",
+      "claim_type": "EXPLICIT",
+      "source": "In the photoreceptor terminals of mouse retina, a region where TMEM16B forms a complex with the anchor protein PSD95, TMEM16B may regulate glutamate release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility based on prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "48cb14c1-dacb-4e59-90a2-a71d96e7ca94",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C77",
+      "claim": "Alterations in the structure and activity of the amygdala have been reported in patients with anxiety and panic disorder (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations in the structure (Hayano et al., 2009) and activity (Pfleiderer et al., 2007; Shin and Liberzon, 2010) of the amygdala have been reported in patients with anxiety and panic disorder (PD), indicating that the amygdala has a pivotal role in the pathogenesis of these diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "ca407eaf-44d7-48fc-9813-d59fc29c6f11",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C78",
+      "claim": "The amygdala has a pivotal role in the pathogenesis of anxiety and panic disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations in the structure (Hayano et al., 2009) and activity (Pfleiderer et al., 2007; Shin and Liberzon, 2010) of the amygdala have been reported in patients with anxiety and panic disorder (PD), indicating that the amygdala has a pivotal role in the pathogenesis of these diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from clinical observations of amygdala alterations in patients.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "e78e5b50-7a9c-43be-a1e4-4222c545a93a",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C79",
+      "claim": "TMEM16B expressing neurons in the amygdala contribute to the regulation of fear and anxiety-related behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that Ano2 KO mice displayed impaired auditory fear expression, raises the intriguing possibility that TMEM16B expressing neurons in the amygdala contribute to the regulation of fear and anxiety-related behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavioral phenotypes of Ano2 KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "96edaba4-7219-42eb-a294-1bd00bb8f6a3",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C80",
+      "claim": "TMEM16B-CaCC in other brain areas may also contribute to fear and anxiety-like behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains possible that TMEM16B-CaCC in other brain areas may also contribute to fear and anxiety-like behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "d25b979c-c475-48fe-8e41-a6558746fe85",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C81",
+      "claim": "Ventral hippocampus is involved in defensive fear related behavior which is revealed by elevated plus maze.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, ventral hippocampus is involved in defensive fear related behavior which is revealed by elevated plus maze (Kjelstrup et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kjelstrup et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "167f02fc-4d42-404d-bce3-1320f9d6619d",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C82",
+      "claim": "Both hippocampus and amygdala are implicated in context-dependent and context-independent fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation and pharmacological experiments implicate both hippocampus and amygdala in context-dependent and context-independent fear conditioning (Chen et al., 2016; Hall et al., 2001; Kochli et al., 2015; Vazdarjanova and McGaugh, 1999; Weeden et al., 2015; Xu et al., 2016; Yin et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "4c842437-a649-4763-af8c-427b01bd7d46",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C83",
+      "claim": "Different forms of fear memory may involve circuitry with different molecular features of neuronal regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, loss of TMEM16B function affected context-independent but not context-dependent fear memory, indicating that different forms of fear memory may involve circuitry with different molecular features of neuronal regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects on different types of fear memory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "7885dc8d-d969-4bab-9578-91e4e4265acc",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C84",
+      "claim": "GABA agonists and antagonists can modulate fear and anxiety-like behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "GABA agonists and antagonists can modulate fear (Makkar et al., 2010) and anxiety-like behaviors (Barbalho et al., 2009; Sanders and Shekhar, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior pharmacological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "4a8140da-7835-4351-b458-d3fcfdeebf19",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C85",
+      "claim": "Central lateral amygdala has emerged as a primary site for the diazepam anxiolytic action.",
+      "claim_type": "EXPLICIT",
+      "source": "Central lateral amygdala has emerged as a primary site for the diazepam anxiolytic action (Griessner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Griessner et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "c5d2abbb-8b34-4169-882f-8e8743200edb",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C86",
+      "claim": "The diazepam-binding GABAA-receptor subunits are expressed at higher levels in SOM+ neurons than in SOM- neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The diazepam-binding GABAA-receptor subunits (Olsen and Sieghart, 2009) are expressed at higher levels in SOM+ neurons than in SOM- neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior studies on GABAA receptor expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "5730e482-bfdc-4610-ab87-75b231b6315a",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C87",
+      "claim": "Application of diazepam increases both the frequency and the size of spontaneous inhibitory postsynaptic currents (sIPSCs) of SOM+/PKC\u03b4\u2212 neurons but not SOM\u2212/PKC\u03b4+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, application of diazepam increases both the frequency and the size of spontaneous inhibitory postsynaptic currents (sIPSCs) of SOM+/PKC\u03b4\u2212 neurons but not SOM\u2212/PKC\u03b4+ neurons (Griessner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Griessner et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "ee712280-53d4-4bad-8033-b0ce7461328c",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C88",
+      "claim": "Elimination of TMEM16B-CaCC resulted in prolonged action potentials and increased inhibitory postsynaptic current in SOM+ neurons of the central lateral amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that elimination of TMEM16B-CaCC resulted in prolonged action potentials and increased inhibitory postsynaptic current in SOM+ neurons of the central lateral amygdala, reminiscent of the effect of diazepam on SOM+ neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the electrophysiological findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "6b8b36f5-0903-45f9-80da-930b957aed6b",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C89",
+      "claim": "The alteration in neuronal signaling caused by loss of TMEM16B may alter the inhibitory tone in the central amygdala (CeA), thereby affecting disinhibition of CeA output neurons that are involved in anxiety and conditioned fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "This alteration in neuronal signaling may alter the inhibitory tone in the central amygdala (CeA), thereby affecting disinhibition of CeA output neurons that are involved in anxiety and conditioned fear memory in Ano2 KO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the electrophysiological and behavioral findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "12c947cd-bdea-450a-8599-dacddec099c0",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C90",
+      "claim": "Increased synaptic inhibition of SOM+ CeL neurons could dampen the excitatory input from BLA to SOM+ neurons that drives fear expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, increased synaptic inhibition of SOM+ CeL neurons could dampen the excitatory input from BLA to SOM+ neurons that drives fear expression (Figure 8) (Janak and Tye, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism illustrated in Figure 8.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "23ca5566-6f6f-43b1-82ba-d7c7adb680ff",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C91",
+      "claim": "SOM+ CeL neurons receive excitatory inputs from BLA neurons that display learning-related plasticity during fear conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "SOM+ CeL neurons receive excitatory inputs from BLA neurons that display learning-related plasticity during fear conditioning (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Li et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "20bfe099-dfcc-4ea3-abff-d0869347001d",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C92",
+      "claim": "SOM+ neurons project to the periaqueductal gray (PAG) and the paraventricular nucleus of the thalamus (PVT) and form part of the circuit for fear.",
+      "claim_type": "EXPLICIT",
+      "source": "These SOM+ neurons project to the periaqueductal gray (PAG) and the paraventricular nucleus of the thalamus (PVT) and form part of the circuit for fear (Janak and Tye, 2015; Penzo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior circuit tracing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "9011299f-1828-47ad-ba57-2129051d4e82",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C93",
+      "claim": "TMEM16B-CaCC modulates inhibition of SOM+ CeL neurons, as evident from the increased sIPSCs associated with action potential broadening.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM16B-CaCC modulates inhibition of SOM+ CeL neurons, as evident from the increased sIPSCs (Figure 6) associated with action potential broadening that is caused by loss of TMEM16B function (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the electrophysiological findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "a24368d7-e370-49fd-bf37-09f062fb4e1f",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C94",
+      "claim": "Increased inhibition of SOM+ CeL neurons in Ano2 KO mice could reduce the extent of their excitation by BLA neurons as well as their ability to inhibit downstream neurons in PAG, thus resulting in a reduction of fear and anxiety-related behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased inhibition of SOM+ CeL neurons in Ano2 KO mice could reduce the extent of their excitation by BLA neurons as well as their ability to inhibit downstream neurons in PAG, thus resulting in a reduction of fear and anxiety-related behaviors (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism illustrated in Figure 8B.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "eac08e56-c100-4e82-978d-ddc272dba396",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C95",
+      "claim": "The correlation between alteration in the SOM+ neuronal activity and GABAergic transmission and the impaired fear and anxiety-like behaviors in Ano2 KO mice is consistent with the notion that inhibitory transmission in CeL plays a key role in the modulation of fear expression and anxiety-like behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between alteration in the SOM+ neuronal activity and GABAergic transmission and the impaired fear and anxiety-like behaviors in Ano2 KO mice is consistent with the notion that inhibitory transmission in CeL plays a key role in the modulation of fear expression and anxiety-like behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between cellular and behavioral phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "7e218714-99d3-46a1-9dd2-ad585aceea50",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C96",
+      "claim": "CaCC can be activated by high threshold Cav channel in inferior olive neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "CaCC can be activated by high threshold Cav channel in inferior olive neurons (Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Zhang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "5615f936-4385-4527-bdf3-72bed429a6ba",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C97",
+      "claim": "TMEM16B-CaCC activation is triggered by Ca2+ influx through dendritic high-threshold CaV channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In our case, SOM+ neurons exhibited CaCC when the membrane potential was depolarized beyond \u221210 mV (Figure 4J,K,L), indicating that TMEM16B-CaCC activation is triggered by Ca2+ influx through dendritic high-threshold CaV channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the voltage dependence of CaCC activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "71053d14-4a1e-4c32-ad8a-65b583089e7c",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C98",
+      "claim": "The R type Ca2+ channel is a major source of dendritic Ca2+ influx in response to action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The R type Ca2+ channel is a major source of dendritic Ca2+ influx in response to action potentials (Magee and Johnston, 1995; Sabatini and Svoboda, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior studies on dendritic Ca2+ signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "7ea07402-26d2-4597-a24f-9bac327a7273",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C99",
+      "claim": "The R type Ca2+ channel is highly enriched in central amygdala neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the R type Ca2+ channel is highly enriched in central amygdala neurons (Zhang et al., 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Zhang et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "0591720e-1896-426f-a2fc-35e2613eb426",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C100",
+      "claim": "Mice without R type Ca2+ channels have deficits in fear response.",
+      "claim_type": "EXPLICIT",
+      "source": "and mice without R type Ca2+ channels have deficits in fear response (Lee et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Lee et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "1ab2af71-fb34-4625-af6a-6e7bfe19a88c",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C101",
+      "claim": "Ano2 is expressed in somatostatin-positive GABAergic neurons of central lateral amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we found that Ano2, is expressed in somatostatin-positive GABAergic neurons of central lateral amygdala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the expression findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "dc1a413f-b9fe-4e72-b5aa-4017e73cdf71",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C102",
+      "claim": "TMEM16B-CaCC regulates action potential waveform and GABAergic neurotransmission in SOM+ neurons of CeL as well as fear and anxiety-like behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM16B-CaCC regulates action potential waveform and GABAergic neurotransmission in these neurons as well as fear and anxiety-like behaviors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "ad3e999f-3430-4180-aab8-632977127d28",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C103",
+      "claim": "The physiological function of TMEM16B is important for expression of anxiety and context-independent fear memory.",
+      "claim_type": "EXPLICIT",
+      "source": "the physiological function of TMEM16B is important for expression of anxiety and context-independent fear memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the behavioral findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "17aa8d4d-b944-4285-b43c-96b31b5a284a",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "claim_id": "C104",
+      "claim": "Better understanding of TMEM16B-CaCC regulation of neuronal signaling could lead to novel strategies for treating anxiety disorders such as panic disorder and post-traumatic stress disorder (PTSD).",
+      "claim_type": "EXPLICIT",
+      "source": "Better understanding of TMEM16B-CaCC regulation of neuronal signaling could lead to novel strategies for treating anxiety disorders such as panic disorder and post-traumatic stress disorder (PTSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential future application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5e276b73-842f-44a2-943d-cb1e6e016089",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ano2 knockout mice exhibit reduced anxiety-related behaviors across multiple behavioral assays. KO mice showed increased center exploration in the open field test (C20), greater open-arm exploration in the elevated plus maze (C22), increased light-side exploration in the light-dark box test (C23), and enhanced pre-pulse inhibition (C24), all without detectable locomotor defects (C21).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent behavioral assays (open field, elevated plus maze, light-dark box, PPI) consistently demonstrate reduced anxiety-related behaviors in Ano2 KO mice with appropriate statistical analyses (p<0.05 for all tests) and adequate sample sizes (n=20-26 per group). The absence of locomotor defects (C21) strengthens the interpretation that changes reflect anxiety rather than motor impairment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "9f50efb8-7ce1-42bc-8b2c-5c9b3c2c3d55",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ano2 knockout mice display impaired context-independent (cued) fear memory but normal context-dependent fear memory. KO mice showed reduced freezing during cued fear expression (C29) but comparable freezing during context-dependent fear tests (C27) and fear acquisition (C26), with similar pain thresholds (C30).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The differential effects on cued versus contextual fear are well-supported by appropriate fear conditioning paradigms with statistical analyses (p=0.004 for cued fear, p=0.1472 for contextual fear, n=24 per group). The similar pain threshold (C30) and comparable fear acquisition (C26) rule out confounding sensory or learning deficits, strengthening the specificity of the cued fear phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "79ed377c-1686-4c4b-b82a-663ec71af836",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TMEM16B is highly enriched in somatostatin-positive (SOM+) GABAergic neurons of the central lateral amygdala (CeL). RNA scope analysis revealed that 92.6% of SOM+ neurons express Ano2 (C35), and 71.4% of Ano2+ cells are SOM+ (C36), with expression restricted to CeL rather than BLA or CeM (C32).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The expression pattern is well-documented through RNA scope with quantitative analysis showing high overlap between Ano2 and SOM+ neurons (C35, C36). The spatial restriction to CeL (C32) is clearly demonstrated in Figure 3B-C. Co-expression with Gad2 (C37) confirms the GABAergic identity. The data are consistent with Allen Brain Atlas findings (C14).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "60bab692-a271-4c07-bbbb-505abea60b74",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TMEM16B mediates the sole Ca2+-activated chloride current (CaCC) in SOM+ neurons of the CeL. Depolarization elicits a Ca2+-dependent outward current and tail current (C38) that is abolished by CdCl2 (C39) and reduced by NFA (C41), with reversal potential matching Cl- equilibrium (C42). Genetic deletion of Ano2 completely eliminates this current (C44, C45).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The electrophysiological characterization is rigorous, using multiple pharmacological approaches (CdCl2, NFA) and reversal potential measurements to identify the current as a Ca2+-activated Cl- current. The complete absence of CaCC in Ano2 KO neurons (C44, p<0.0001, n=18 KO vs 9 control) definitively establishes TMEM16B as the sole CaCC in these neurons. The specificity to SOM+ neurons is demonstrated by absence in non-SOM+ neurons (C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "86fc01fd-f7c0-430f-a8fd-13dd4357600c",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of TMEM16B function results in action potential broadening in SOM+ CeL neurons. Ano2 KO neurons showed significant increases in action potential half-width (p=0.0091), half-width adaptation (p=0.0145), and APD90% (p=0.0003) compared to controls (C47), while other properties including spike number, threshold, amplitude, AHP, and resting potential remained unchanged (C46).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The action potential phenotype is well-characterized with appropriate current-clamp recordings and statistical analyses (n=13-14 cells per group from 3 mice each). The selective effect on action potential duration without affecting other neuronal properties (C46) is consistent with the known role of Cl- channels in action potential repolarization. The data directly link TMEM16B function to action potential waveform regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "997cca2b-4302-42a5-a4b3-4818ce15b091",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Loss of TMEM16B increases spontaneous inhibitory postsynaptic current (sIPSC) amplitude and frequency in SOM+ neurons. Ano2 KO neurons showed increased sIPSC amplitude (p=0.0004) and frequency (p=0.0021) (C18), while evoked IPSC amplitude was unchanged (C48), indicating the effect arises from increased presynaptic GABA release associated with action potential broadening (C50).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sIPSC phenotype is well-documented with appropriate statistical analyses (n=31 KO vs 29 control cells). The unchanged eIPSC amplitude (C48, p=0.2628) rules out postsynaptic GABA receptor alterations, supporting a presynaptic mechanism. The correlation with action potential broadening (C66) provides a mechanistic link, though the causal relationship could be strengthened with additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "40cc9692-8a8e-43a1-9989-b1a84799bf98",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TMEM16B regulates spontaneous GABA release in presynaptic terminals through modulation of voltage-gated Ca2+ channel-dependent mechanisms. Ano2 KO reduced mIPSC frequency (p=0.0016) but not amplitude (C55). CdCl2 reduced mIPSC frequency by 54.74% in controls but only 22.52% in KO mice (C60), while CdCl2-insensitive mIPSC frequency was comparable (C61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The presynaptic function is well-supported by mIPSC recordings in TTX (eliminating action potentials) and differential CdCl2 sensitivity between genotypes (C60, p=0.0037). The comparable CdCl2-insensitive component (C61) suggests TMEM16B specifically regulates the Ca2+ channel-dependent fraction of spontaneous release. The data provide strong evidence for presynaptic TMEM16B function, though direct visualization of presynaptic localization would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "36e07de3-3a41-4363-863b-edd375f3772e",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that altered inhibitory tone in CeL SOM+ neurons underlies the behavioral phenotypes in Ano2 KO mice. They suggest increased synaptic inhibition of SOM+ neurons dampens BLA excitatory input (C90) and reduces inhibition of downstream PAG neurons (C94), resulting in reduced fear and anxiety behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This mechanistic model (C89, C90, C94) is largely speculative and based on correlations between cellular and behavioral phenotypes (C95). While the model is consistent with known CeL circuitry (C91, C92) and the observed phenotypes, it lacks direct experimental validation. Circuit-specific manipulations (e.g., optogenetic or chemogenetic approaches) would be needed to establish causality between the cellular changes and behavioral outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "36f9a870-fcb2-419b-a0d4-179cd3376bbd",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that TMEM16B-CaCC is activated by Ca2+ influx through high-threshold dendritic Ca2+ channels, potentially R-type channels. CaCC activation occurred at depolarizations beyond -10 mV (C97), consistent with high-threshold channel activation. R-type channels are enriched in CeA (C99) and their deletion impairs fear responses (C100).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The voltage dependence of CaCC activation (C97) supports involvement of high-threshold Ca2+ channels, and the enrichment of R-type channels in CeA (C99) makes them plausible candidates. However, the specific Ca2+ channel subtype activating TMEM16B was not directly tested. Pharmacological experiments with selective R-type channel blockers or recordings from R-type channel knockout mice would be needed to establish this link definitively.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "17a14bd2-4f9a-4e38-b682-f4f74063b71f",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors discuss potential relevance of TMEM16B to panic disorder based on prior GWAS studies. Initial GWAS identified SNPs near TMEM16B associated with panic disorder (C71), but follow-up studies failed to replicate this association (C72). The mouse behavioral phenotypes (C73) are suggested to be relevant to understanding TMEM16B function in anxiety disorders (C79).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The connection to human panic disorder is speculative. The initial GWAS association (C71) was not replicated (C72), weakening the genetic link. While the mouse behavioral phenotypes (C73) demonstrate TMEM16B involvement in anxiety-related behaviors, the translational relevance to human panic disorder remains unclear. The discussion appropriately acknowledges the uncertainty but does not provide strong evidence for clinical relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "17e73397-a192-4dda-877e-57b531c06851",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors provide background on amygdala circuitry and its role in fear and anxiety. The amygdala plays a central role in fear acquisition and expression (C10), with CeL-to-CeM inhibitory connections important for fear and anxiolytic processes (C11), and BLA-to-CeL excitatory inputs contributing to anxiolytic responses (C12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize well-established findings from prior literature (cited studies include Ciocchi et al., 2010; Haubensak et al., 2010; Janak and Tye, 2015; Par\u00e9 et al., 2004; Tye et al., 2011). The background information is appropriately cited and provides necessary context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "1e501946-b1f2-4c76-96d1-7a221fc3b9b5",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors provide background on TMEM16B expression and function in other brain regions. TMEM16B is expressed in olfactory neurons, retina, hippocampus, lateral septum, and inferior olive (C74), where it modulates action potentials and neuronal excitability (C75) and may regulate neurotransmitter release (C76).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize prior literature on TMEM16B expression and function (cited studies include Billig et al., 2011; Huang et al., 2012; Mercer et al., 2011; Pietra et al., 2016; St\u00f6hr et al., 2009; Wang et al., 2019; Zhang et al., 2017). The background information is appropriately cited and provides context for the novel findings in the amygdala.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "db73ea4c-4f59-4c80-9141-4b2a84b97ada",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors provide background on GABAergic transmission and its role in fear and anxiety. Voltage-gated Ca2+ channels trigger both evoked and spontaneous transmitter release (C52, C53), GABA agonists/antagonists modulate fear and anxiety (C84), and CeL is a primary site for diazepam anxiolytic action (C85) with effects on SOM+ neuron sIPSCs (C87).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize prior literature on GABAergic transmission and anxiety (cited studies include Williams et al., 2012; Makkar et al., 2010; Sanders and Shekhar, 1995; Griessner et al., 2018). The background information is appropriately cited and provides mechanistic context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "ba13d1b8-1edf-43dd-adb1-c9c519d51d2e",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discuss the role of amygdala and hippocampus in anxiety disorders and fear conditioning. Amygdala alterations are reported in anxiety and panic disorder patients (C77, C78), ventral hippocampus is involved in defensive fear behavior (C81), and both regions contribute to context-dependent and context-independent fear conditioning (C82), suggesting different fear memory forms involve distinct molecular mechanisms (C83).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims appropriately summarize prior clinical and preclinical literature (cited studies include Hayano et al., 2009; Pfleiderer et al., 2007; Shin and Liberzon, 2010; Kjelstrup et al., 2002; Chen et al., 2016; Hall et al., 2001). The inference about distinct molecular mechanisms (C83) is reasonable given the differential effects observed in the current study, though it remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    },
+    {
+      "id": "aa351a8d-0588-44c6-bfc7-ca81522345c2",
+      "content_id": "9d869f74-7fa8-48b5-a345-b965efd915e9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations and suggest future directions. They note that TMEM16B in other brain regions may contribute to anxiety behaviors (C80) and suggest that understanding TMEM16B-CaCC regulation could lead to novel anxiety disorder treatments (C104).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are appropriate speculative statements about future research directions and potential clinical applications. Claim C80 acknowledges the limitation of using global knockout mice, and C104 suggests translational potential. Both are reasonable but lack supporting evidence in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:00:55.095125Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "86d2d0bb-0666-4314-b4d0-fc1948450b90",
+      "result_id": "5e276b73-842f-44a2-943d-cb1e6e016089"
+    },
+    {
+      "claim_id": "aeb69e74-109b-4eed-a967-e673d260323c",
+      "result_id": "5e276b73-842f-44a2-943d-cb1e6e016089"
+    },
+    {
+      "claim_id": "bcb2c8b4-654a-45be-8089-7c23e57f8a26",
+      "result_id": "5e276b73-842f-44a2-943d-cb1e6e016089"
+    },
+    {
+      "claim_id": "a89af31f-fe88-4713-8f2b-5dc517f08684",
+      "result_id": "5e276b73-842f-44a2-943d-cb1e6e016089"
+    },
+    {
+      "claim_id": "c19a9f4c-0035-42ec-aa45-89b63c084f14",
+      "result_id": "5e276b73-842f-44a2-943d-cb1e6e016089"
+    },
+    {
+      "claim_id": "5a40d4d2-6fc8-4962-a5f2-06ab2eabc9e9",
+      "result_id": "5e276b73-842f-44a2-943d-cb1e6e016089"
+    },
+    {
+      "claim_id": "fa431d4d-d166-431e-a8dc-a36dcf2739a4",
+      "result_id": "5e276b73-842f-44a2-943d-cb1e6e016089"
+    },
+    {
+      "claim_id": "3ba07a85-f209-4595-b594-8f9d66888338",
+      "result_id": "9f50efb8-7ce1-42bc-8b2c-5c9b3c2c3d55"
+    },
+    {
+      "claim_id": "5896e985-2ec1-4d4b-b021-63f34dd2a3c3",
+      "result_id": "9f50efb8-7ce1-42bc-8b2c-5c9b3c2c3d55"
+    },
+    {
+      "claim_id": "4c004ee9-4810-4d93-9c4e-40f6666ed001",
+      "result_id": "9f50efb8-7ce1-42bc-8b2c-5c9b3c2c3d55"
+    },
+    {
+      "claim_id": "9fb7f861-fdbf-4eac-8cfe-5051ab44fedc",
+      "result_id": "9f50efb8-7ce1-42bc-8b2c-5c9b3c2c3d55"
+    },
+    {
+      "claim_id": "929904e5-c1e6-4a86-8c4a-6ea56c549ff2",
+      "result_id": "9f50efb8-7ce1-42bc-8b2c-5c9b3c2c3d55"
+    },
+    {
+      "claim_id": "a63a0144-d3dc-41ac-a3df-ab236440dcf2",
+      "result_id": "9f50efb8-7ce1-42bc-8b2c-5c9b3c2c3d55"
+    },
+    {
+      "claim_id": "dd2a47a8-8257-45b9-9315-eab5ed89c562",
+      "result_id": "9f50efb8-7ce1-42bc-8b2c-5c9b3c2c3d55"
+    },
+    {
+      "claim_id": "e38702fc-f52d-4942-bde3-f71760fcbb2d",
+      "result_id": "9f50efb8-7ce1-42bc-8b2c-5c9b3c2c3d55"
+    },
+    {
+      "claim_id": "c41d748b-1022-4ec3-8c76-c331d4404d52",
+      "result_id": "79ed377c-1686-4c4b-b82a-663ec71af836"
+    },
+    {
+      "claim_id": "ef0170f5-3fbd-40aa-a173-d9c1451e7085",
+      "result_id": "79ed377c-1686-4c4b-b82a-663ec71af836"
+    },
+    {
+      "claim_id": "7ddba51c-9bd0-4407-8ec0-2bc2f6d3dd3d",
+      "result_id": "79ed377c-1686-4c4b-b82a-663ec71af836"
+    },
+    {
+      "claim_id": "070f2108-df9a-4b82-850e-90876440ace5",
+      "result_id": "79ed377c-1686-4c4b-b82a-663ec71af836"
+    },
+    {
+      "claim_id": "a15c0ae0-6ab4-4e70-9d51-99157f22841d",
+      "result_id": "79ed377c-1686-4c4b-b82a-663ec71af836"
+    },
+    {
+      "claim_id": "be852be4-2f8c-45c9-946c-d8d080dd012a",
+      "result_id": "79ed377c-1686-4c4b-b82a-663ec71af836"
+    },
+    {
+      "claim_id": "3da7892b-4a82-4256-b987-04d3664a9f6e",
+      "result_id": "79ed377c-1686-4c4b-b82a-663ec71af836"
+    },
+    {
+      "claim_id": "1ab2af71-fb34-4625-af6a-6e7bfe19a88c",
+      "result_id": "79ed377c-1686-4c4b-b82a-663ec71af836"
+    },
+    {
+      "claim_id": "6e93d879-6512-48a3-b35a-a6e06962339d",
+      "result_id": "60bab692-a271-4c07-bbbb-505abea60b74"
+    },
+    {
+      "claim_id": "9400b6c1-2cf8-42b9-aa56-a6798d81cf6e",
+      "result_id": "60bab692-a271-4c07-bbbb-505abea60b74"
+    },
+    {
+      "claim_id": "e7c7aff6-2bd8-494a-a997-bedff3b3e679",
+      "result_id": "60bab692-a271-4c07-bbbb-505abea60b74"
+    },
+    {
+      "claim_id": "9f25146e-ce75-498f-887e-7cddd22a47fb",
+      "result_id": "60bab692-a271-4c07-bbbb-505abea60b74"
+    },
+    {
+      "claim_id": "cbe25307-1213-413f-b24e-aaa0c673c17f",
+      "result_id": "60bab692-a271-4c07-bbbb-505abea60b74"
+    },
+    {
+      "claim_id": "7276c98f-74b0-4473-a0bd-c0400fa9428e",
+      "result_id": "60bab692-a271-4c07-bbbb-505abea60b74"
+    },
+    {
+      "claim_id": "9e20da80-506a-40eb-a60e-0df33b136c16",
+      "result_id": "60bab692-a271-4c07-bbbb-505abea60b74"
+    },
+    {
+      "claim_id": "dc5962dc-548b-48b9-8a22-96d1b37630ee",
+      "result_id": "60bab692-a271-4c07-bbbb-505abea60b74"
+    },
+    {
+      "claim_id": "9b0ea049-185a-44be-a3e2-a24b319bdf88",
+      "result_id": "60bab692-a271-4c07-bbbb-505abea60b74"
+    },
+    {
+      "claim_id": "105233e5-70d4-46b3-ae59-16042be571ba",
+      "result_id": "86fc01fd-f7c0-430f-a8fd-13dd4357600c"
+    },
+    {
+      "claim_id": "c7ee31a6-391e-4a96-8d84-70740efffd6c",
+      "result_id": "86fc01fd-f7c0-430f-a8fd-13dd4357600c"
+    },
+    {
+      "claim_id": "37cc9b40-6837-4936-a755-b99b0a77151b",
+      "result_id": "86fc01fd-f7c0-430f-a8fd-13dd4357600c"
+    },
+    {
+      "claim_id": "84feaa15-6429-46b4-8d5b-426f4e1b8253",
+      "result_id": "86fc01fd-f7c0-430f-a8fd-13dd4357600c"
+    },
+    {
+      "claim_id": "e71bc2df-ac7a-4c6d-900c-0b46946cca4e",
+      "result_id": "86fc01fd-f7c0-430f-a8fd-13dd4357600c"
+    },
+    {
+      "claim_id": "d5ad6f33-5a14-443b-8100-f0c394a0e937",
+      "result_id": "997cca2b-4302-42a5-a4b3-4818ce15b091"
+    },
+    {
+      "claim_id": "46191f60-4b05-4481-b2e4-d6e4468b1554",
+      "result_id": "997cca2b-4302-42a5-a4b3-4818ce15b091"
+    },
+    {
+      "claim_id": "8afc171a-4ab4-404d-9cb3-ac136888024a",
+      "result_id": "997cca2b-4302-42a5-a4b3-4818ce15b091"
+    },
+    {
+      "claim_id": "1e42ba27-baa8-43c0-9a41-1ab927d27ca0",
+      "result_id": "997cca2b-4302-42a5-a4b3-4818ce15b091"
+    },
+    {
+      "claim_id": "32dbc483-ad0d-49fa-b3e0-9c816fdcd1e2",
+      "result_id": "997cca2b-4302-42a5-a4b3-4818ce15b091"
+    },
+    {
+      "claim_id": "34d5875d-57d3-4e05-b2f9-52a590451338",
+      "result_id": "997cca2b-4302-42a5-a4b3-4818ce15b091"
+    },
+    {
+      "claim_id": "248244c7-19f5-4400-8464-18d8f7f14f2f",
+      "result_id": "997cca2b-4302-42a5-a4b3-4818ce15b091"
+    },
+    {
+      "claim_id": "704ca38e-a1bf-446f-9743-aa445b870e72",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "b99ac9b4-d2d3-4e58-b788-fc37b003333a",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "d253d5ea-6acc-4282-90a7-18351d42a65b",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "66edf8c0-006a-4429-9ba6-fd582d0f40fb",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "d8c28c4d-636e-444c-9679-d909148c0c1f",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "97c242cf-396c-418f-ba98-6c794625a854",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "5ac05a4a-1cf5-4329-82e5-68031f9f668a",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "613e20c3-4898-490b-b0da-90ca6c2152b8",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "c6f98770-b96e-4ee9-a9d0-8126cbde94ea",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "3b7669c7-5fa7-454c-a335-ef669956298a",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "5434c2e9-be9f-42d9-8757-8712431d660c",
+      "result_id": "40cc9692-8a8e-43a1-9989-b1a84799bf98"
+    },
+    {
+      "claim_id": "6b8b36f5-0903-45f9-80da-930b957aed6b",
+      "result_id": "36e07de3-3a41-4363-863b-edd375f3772e"
+    },
+    {
+      "claim_id": "12c947cd-bdea-450a-8599-dacddec099c0",
+      "result_id": "36e07de3-3a41-4363-863b-edd375f3772e"
+    },
+    {
+      "claim_id": "a24368d7-e370-49fd-bf37-09f062fb4e1f",
+      "result_id": "36e07de3-3a41-4363-863b-edd375f3772e"
+    },
+    {
+      "claim_id": "eac08e56-c100-4e82-978d-ddc272dba396",
+      "result_id": "36e07de3-3a41-4363-863b-edd375f3772e"
+    },
+    {
+      "claim_id": "5615f936-4385-4527-bdf3-72bed429a6ba",
+      "result_id": "36f9a870-fcb2-419b-a0d4-179cd3376bbd"
+    },
+    {
+      "claim_id": "71053d14-4a1e-4c32-ad8a-65b583089e7c",
+      "result_id": "36f9a870-fcb2-419b-a0d4-179cd3376bbd"
+    },
+    {
+      "claim_id": "7ea07402-26d2-4597-a24f-9bac327a7273",
+      "result_id": "36f9a870-fcb2-419b-a0d4-179cd3376bbd"
+    },
+    {
+      "claim_id": "0591720e-1896-426f-a2fc-35e2613eb426",
+      "result_id": "36f9a870-fcb2-419b-a0d4-179cd3376bbd"
+    },
+    {
+      "claim_id": "3fe0f0da-60ca-485b-bd1d-caa97997c1b3",
+      "result_id": "17a14bd2-4f9a-4e38-b682-f4f74063b71f"
+    },
+    {
+      "claim_id": "c4628121-9394-41e5-bde5-6c3a454659cd",
+      "result_id": "17a14bd2-4f9a-4e38-b682-f4f74063b71f"
+    },
+    {
+      "claim_id": "c794e80e-961d-4033-bfcd-ec5579a5ad99",
+      "result_id": "17a14bd2-4f9a-4e38-b682-f4f74063b71f"
+    },
+    {
+      "claim_id": "e78e5b50-7a9c-43be-a1e4-4222c545a93a",
+      "result_id": "17a14bd2-4f9a-4e38-b682-f4f74063b71f"
+    },
+    {
+      "claim_id": "9f7f5055-9142-4743-a24d-0375d32b4d59",
+      "result_id": "17e73397-a192-4dda-877e-57b531c06851"
+    },
+    {
+      "claim_id": "76f26f70-e6f5-400e-b7df-296d70daca22",
+      "result_id": "17e73397-a192-4dda-877e-57b531c06851"
+    },
+    {
+      "claim_id": "2c9aef77-7cf4-42f7-9881-6b3fa9618879",
+      "result_id": "17e73397-a192-4dda-877e-57b531c06851"
+    },
+    {
+      "claim_id": "c3add88d-fc0f-4720-a504-27449ea76c4f",
+      "result_id": "17e73397-a192-4dda-877e-57b531c06851"
+    },
+    {
+      "claim_id": "75d767c1-7d04-4b2b-af76-d3d4a840af8a",
+      "result_id": "17e73397-a192-4dda-877e-57b531c06851"
+    },
+    {
+      "claim_id": "8e01cb22-2108-4b74-a82d-53e90356ec94",
+      "result_id": "1e501946-b1f2-4c76-96d1-7a221fc3b9b5"
+    },
+    {
+      "claim_id": "0cd573c6-0694-4095-b740-90dd5861512b",
+      "result_id": "1e501946-b1f2-4c76-96d1-7a221fc3b9b5"
+    },
+    {
+      "claim_id": "5b8db314-04fb-4104-bb5f-6043bbc93673",
+      "result_id": "1e501946-b1f2-4c76-96d1-7a221fc3b9b5"
+    },
+    {
+      "claim_id": "f9cb52e1-2fce-474c-aadb-09fbe7092fa5",
+      "result_id": "1e501946-b1f2-4c76-96d1-7a221fc3b9b5"
+    },
+    {
+      "claim_id": "b83d39ae-e2cf-4a29-b844-2e676e209b1d",
+      "result_id": "1e501946-b1f2-4c76-96d1-7a221fc3b9b5"
+    },
+    {
+      "claim_id": "a2886585-ae38-47dd-a742-3124c3bb6198",
+      "result_id": "db73ea4c-4f59-4c80-9141-4b2a84b97ada"
+    },
+    {
+      "claim_id": "5770abad-9452-492b-9dda-55ace6b8c70c",
+      "result_id": "db73ea4c-4f59-4c80-9141-4b2a84b97ada"
+    },
+    {
+      "claim_id": "7885dc8d-d969-4bab-9578-91e4e4265acc",
+      "result_id": "db73ea4c-4f59-4c80-9141-4b2a84b97ada"
+    },
+    {
+      "claim_id": "4a8140da-7835-4351-b458-d3fcfdeebf19",
+      "result_id": "db73ea4c-4f59-4c80-9141-4b2a84b97ada"
+    },
+    {
+      "claim_id": "c5d2abbb-8b34-4169-882f-8e8743200edb",
+      "result_id": "db73ea4c-4f59-4c80-9141-4b2a84b97ada"
+    },
+    {
+      "claim_id": "5730e482-bfdc-4610-ab87-75b231b6315a",
+      "result_id": "db73ea4c-4f59-4c80-9141-4b2a84b97ada"
+    },
+    {
+      "claim_id": "48cb14c1-dacb-4e59-90a2-a71d96e7ca94",
+      "result_id": "ba13d1b8-1edf-43dd-adb1-c9c519d51d2e"
+    },
+    {
+      "claim_id": "ca407eaf-44d7-48fc-9813-d59fc29c6f11",
+      "result_id": "ba13d1b8-1edf-43dd-adb1-c9c519d51d2e"
+    },
+    {
+      "claim_id": "d25b979c-c475-48fe-8e41-a6558746fe85",
+      "result_id": "ba13d1b8-1edf-43dd-adb1-c9c519d51d2e"
+    },
+    {
+      "claim_id": "167f02fc-4d42-404d-bce3-1320f9d6619d",
+      "result_id": "ba13d1b8-1edf-43dd-adb1-c9c519d51d2e"
+    },
+    {
+      "claim_id": "4c842437-a649-4763-af8c-427b01bd7d46",
+      "result_id": "ba13d1b8-1edf-43dd-adb1-c9c519d51d2e"
+    },
+    {
+      "claim_id": "96edaba4-7219-42eb-a294-1bd00bb8f6a3",
+      "result_id": "aa351a8d-0588-44c6-bfc7-ca81522345c2"
+    },
+    {
+      "claim_id": "17aa8d4d-b944-4285-b43c-96b31b5a284a",
+      "result_id": "aa351a8d-0588-44c6-bfc7-ca81522345c2"
+    }
+  ],
+  "comparisons": []
+}

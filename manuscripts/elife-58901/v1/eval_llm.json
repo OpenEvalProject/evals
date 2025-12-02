@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Single-cell RNA sequencing of >16,000 cells from the mouse VPH identified 20 neuronal and 18 non-neuronal cell populations with high-quality transcriptomic data (median 8,336 UMIs/cell, 3,415 genes/cell). Neuronal and non-neuronal populations were segregated using a Gaussian mixture model based on pan-neuronal markers, and marker genes were validated computationally to predict cluster identity with >90% accuracy using fewer than 80 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C10-C16 describe the core experimental design and primary findings, supported by appropriate quality control metrics (C11, C56), validated computational methods (C12, C55), and consistency with previous studies (C14, C57, C58). The classification approach is well-documented and the marker gene validation provides strong evidence for cluster specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C59",
+      "C60"
+    ],
+    "result": "VPHGLUT cluster 7, enriched in Tac1, Nos1, Calb2, and Foxp2, corresponds to the ventral premammillary nucleus (PMv) and includes a catecholaminergic subpopulation (Slc6a3+, Ddc+, Slc18a2+, Th-) previously implicated in male social behavior and aggression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by convergent evidence from scRNA-seq marker expression (C17, C20), spatial validation using Allen Brain Atlas ISH data (C18), FISH co-expression analysis (C19), and consistency with previous functional studies (C21, C59, C60). The molecular profile matches known PMv populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "VPHGLUT cluster 6, expressing Cck, Foxb1, Synpr, Dlk1, Ebf3, and Stxbp6, likely represents the dorsal premammillary nucleus (PMd).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by marker gene expression patterns in the Allen Brain Atlas showing enrichment in the PMd region and absence in caudal MB. The cluster shares markers with both medial mammillary (clusters 1-5) and PMv (cluster 7) populations, consistent with known PMd anatomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C61"
+    ],
+    "result": "VPHGLUT cluster 8 corresponds to the supramammillary (SUM) nuclei and includes a subpopulation co-expressing Slc17a6, Slc32a1, and Gad2 (but not Gad1), consistent with previously identified dual phenotype SUM neurons that co-release GABA and glutamate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by marker gene expression matching known SUM populations, and the identification of dual phenotype neurons (C24) is consistent with previous anatomical and functional studies (C25, C61). However, the microdissection captured only the ventral SUM, limiting comprehensive characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C62"
+    ],
+    "result": "VPHGLUT cluster 16, expressing Tac2, Pdyn, and Esr1, corresponds to Arc KNDy neurons, which are essential for fertility and reproduction as the gonadotropin-releasing hormone pulse generator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C62 are supported by co-expression of defining KNDy markers (Tac2, Pdyn) and hormone receptors (Esr1, Prlr, Ar, Pgr), consistent with previous scRNA-seq studies and established functional roles of KNDy neurons in reproductive physiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "VPHHA cluster 17, expressing Hdc, Slc18a2, Maob, and Wif1, corresponds to histaminergic neurons in the tuberomammillary nuclei (TMN). These neurons are the sole source of neuronal histamine in the brain, modulate wakefulness, and robustly express Gad1 with very low Slc32a1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by marker gene expression and FISH validation (C28), while C63-C65 are supported by citations to established literature on HA neuron anatomy and function. The finding of Gad1+/Slc32a1- phenotype (C29) addresses previous conflicting data and is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "VPHGLUT cluster 20, characterized by expression of Tac2, Pvalb, Cplx1, and Tcf4, corresponds to the lateral mammillary (LM) nuclei, which are implicated in head direction encoding and spatial memory. Pvalb expression is limited to a subset of Slc17a6+ LM neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by marker gene expression patterns matching LM anatomy in the Allen Brain Atlas, FISH validation confirming co-expression (C32), and citations to previous functional studies (C31). The observation of Pvalb heterogeneity (C33) suggests LM subpopulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "VPHGLUT clusters 1-5, sharing common markers (Cartpt, Cck, Adcyap1, Foxb1), correspond to the medial mammillary region and exhibit spatial segregation within anatomical subdivisions: cluster 1 (Nts+, Col25a1+) in MM, cluster 4 (Nos1+, Calb1+) in ML, cluster 2 (Gpr83+, Spock3+) in central MnM, cluster 3 (Pvalb+, Slc24a2+) in dorsal MnM, and cluster 5 (Tac2+, Cxcl14+) on the basal surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 are supported by shared marker expression (C34, C35), FISH validation (C35), and striking spatial segregation patterns in the Allen Brain Atlas (C36-C41). The anatomical mapping is detailed and consistent with known medial mammillary subdivisions defined by white matter boundaries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Molecularly-defined MB subpopulations exhibit topographic projections to the anterior thalamic nuclei (ATN): Slc17a6+ neurons project broadly to AV and AM, Nts+ MM neurons (cluster 1) project specifically to AM, and Calb1+ ML neurons (cluster 4) project specifically to AV. All three populations project to the ventral tegmental nucleus of Gudden (VTg).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are supported by anterograde viral tracing experiments using three Cre driver lines (C45-C48), demonstrating topographic organization consistent with previous anatomical studies without genetic specificity (C44, C49). The results validate the spatial segregation of transcriptionally-defined MB populations and their distinct projection patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Foxb1-null and Gpr83-null mice exhibit defects in spatial memory tasks, consistent with the enrichment of these markers in medial mammillary neurons identified in the scRNA-seq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 are supported by citations to previous genetic studies demonstrating spatial memory deficits in knockout mice. These findings align with the identification of Foxb1 and Gpr83 as markers of medial mammillary populations, supporting the functional relevance of the transcriptional clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C70"
+    ],
+    "result": "The MB and TMN may have key roles in Alzheimer's Disease (AD) pathogenesis, with the MB showing early beta-amyloid deposition in 5XFAD mice (appearing at two months) and TMN HA neurons exhibiting dramatic loss in postmortem AD brains. Chemogenetic silencing of medial mammillary neurons reduced beta-amyloid deposition in 5XFAD mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C70 are supported by citations to clinical imaging studies, postmortem analyses, and recent mouse model experiments. These findings establish the potential vulnerability of VPH populations in AD, though the mechanistic links require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The VPH and its subregions (MB, PM, SUM, Arc, TMN) are implicated in diverse functions including arousal, reproduction, energy balance, memory processing, spatial memory, defensive behaviors, theta rhythm modulation, and wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are supported by extensive citations to previous literature establishing the functional roles of VPH subregions. These claims provide essential background context for the study but represent established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The anterior thalamic nuclei (ATN) subdivisions exhibit distinct connectivity patterns and functional roles: AM is interconnected with prelimbic cortex and involved in relaying information to prefrontal centers, while AV is interconnected with retrosplenial cortex and subiculum and implicated in theta entrainment. Lesions to the mammillothalamic tract (mtt) and VTg result in spatial memory deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by citations to previous anatomical and lesion studies. These claims provide important context for interpreting the topographic projection results but represent established knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The VPH cell type census contributes to a more comprehensive picture of cell type diversity and spatial organization of the mammalian hypothalamus, informing molecular, cellular, and synaptic mechanisms of hypothalamic circuit function in health and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is a concluding statement supported by the comprehensive data presented throughout the manuscript and consistent with other recent hypothalamic scRNA-seq studies. This represents a synthesis of the study's contributions rather than a specific testable result.",
+    "result_type": "MINOR"
+  }
+]

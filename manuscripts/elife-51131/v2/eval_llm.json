@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6"
+    ],
+    "result": "The kinesin-5 tail domain decreases MT-stimulated ATP hydrolysis by the motor domain through non-competitive modulation. KLP61F tail reduces kcat by 2-fold with minimal Km change, while motor-tail fusion shows 2.2-fold kcat decrease and 15-fold Km decrease. Similar effects are observed in human Eg5, though regulation is weakened at higher ionic strength (50 mM K-acetate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 present consistent biochemical evidence from steady-state ATPase assays (Figure 1B-D, Table 1) showing tail-mediated regulation of motor ATPase activity. The non-competitive mechanism is supported by unchanged Km with decreased kcat (C3). Conservation across KLP61F and Eg5 strengthens the findings, and ionic strength dependence (C6) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The kinesin-5 tail domain specifically binds motor domains in nucleotide-free or ADP states but not in ATP-like states (AMPPNP, ADP.AlF4). Affinity co-purification and MT co-sedimentation assays demonstrate that tail-motor interaction is nucleotide-dependent and ionic strength-sensitive, with highest binding in ADP and nucleotide-free states at 25 mM KCl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 are well-supported by complementary biochemical approaches (affinity co-purification Figure 1E, MT co-sedimentation Figure 1F-I). The nucleotide-state specificity is demonstrated across multiple conditions and conserved between KLP61F and Eg5. Quantitative densitometry (C12, Figure 1I) provides rigorous quantification of binding stoichiometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Cryo-EM structures at ~4.4 \u00c5 resolution reveal that the tail domain binds the motor's \u03b10-helix hairpin in the nucleotide-free state, stabilizing an open active site conformation. The N-terminal subdomain rotates upward by 20\u00b0 in the nucleotide-free state, moving the \u03b10-helix 10 \u00c5 away from the MT surface, which prevents ATP engagement by the P-loop and switch regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 are supported by high-resolution cryo-EM data (Figure 2, Table 2-3). The structural models show clear conformational differences between AMPPNP and nucleotide-free states. However, C19 notes that only ~1/3 of tail mass is visible, indicating flexibility/disorder in the tail. The mechanistic interpretation (C25) is a reasonable inference from structural data but represents a model rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Full-length Eg5 exhibits extremely slow motility (7 nm/s) at 25 mM KCl that increases 3-fold at 50 mM KCl, while tail-deleted Eg5 shows consistently rapid motility (31-35 nm/s) independent of ionic strength. FL-Eg5 forms clusters of 2-4 homotetramers at 100 mM KCl, while Eg5-\u0394tail remains as individual homotetramers. The tail maintains processive motility, with Eg5-\u0394tail showing 45% reduced run length at 100 mM KCl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 are well-supported by single-molecule TIRF microscopy (Figure 3, Table 4). The velocity measurements are quantitative with appropriate sample sizes. Fluorescence intensity analysis (C32) provides evidence for clustering. The ionic strength dependence correlates with biochemical findings. Statistical comparisons are provided (Figure 3\u2014figure supplement 1F-G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "FL-Eg5 efficiently zippers antiparallel MTs into sliding zones at 10-20 nM, with sliding velocity correlating with motor velocity across ionic strengths. Eg5-\u0394tail crosslinks MTs but fails to zipper them, causing 'scissoring' defects (94% at 20 nM, 55% at 200 nM). Tail-mediated slow motility concentrates motors in overlap zones to facilitate MT zippering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by three-color TIRF MT sliding assays (Figure 4A-D, Video 4). The scissoring phenotype of Eg5-\u0394tail is clearly documented. Concentration-dependence (C41-C42) shows partial rescue at high concentrations, supporting the mechanistic interpretation (C43) that slow motility aids motor concentration. The correlation between motor and MT sliding velocity (C38-C39) is quantified in Table 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Within MT sliding zones, FL-Eg5 exhibits slow unidirectional motility (5-7 nm/s) with long run lengths, while Eg5-\u0394tail shows rapid bi-directional motility (10 nm/s) with frequent reversals and 3-fold shorter run lengths. The tail is critical for coordinated engagement of both motor ends within sliding zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by motor spiking experiments tracking individual motors in sliding zones (Figure 4E-I, Table 5, Video 5). The bi-directional motility and reversals of Eg5-\u0394tail are clearly documented. The mechanistic interpretations (C49-C50) about coordination and uncoordinated ATP hydrolysis are reasonable inferences from the motility patterns, though direct measurement of ATP hydrolysis in sliding zones was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Optical trapping reveals FL-Eg5 generates ~4.0 pN/\u03bcm of overlap zone at 3-10 nM, while Eg5-\u0394tail generates only ~0.6 pN/\u03bcm even at 50-100-fold higher concentration (200-500 nM). Despite similar motor densities in overlap zones, FL-Eg5 produces 7-fold higher pushing forces than Eg5-\u0394tail, demonstrating the tail is critical for force generation during MT sliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 are supported by optical trapping combined with TIRF microscopy (Figure 5, Video 6). The force measurements are quantitative and show clear linear relationships between overlap length and both motor number (C56-C57) and force (C58). The 7-fold difference in force per unit length (C59) is striking and well-documented. The requirement for 50-100-fold higher Eg5-\u0394tail concentration (C53) to achieve sliding further supports the tail's critical role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75"
+    ],
+    "result": "The tail domain is critical for kinesin-5 localization to mitotic spindles. Eg5-\u0394tail shows significantly reduced spindle-to-cytoplasm ratio (1.37 vs 2.39 for FL-Eg5, p<0.0001) in metaphase and anaphase. BRD-9876 treatment (locking motors in nucleotide-free state) only partially rescues Eg5-\u0394tail localization, suggesting defects in both on- and off-rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C75 are supported by fixed and live cell imaging in HeLa cells (Figure 6). Quantitative analysis with appropriate statistics (ANOVA, p<0.0001) demonstrates significant localization defects. The BRD-9876 experiments (C66-C69) provide mechanistic insight linking nucleotide state to localization. The persistent defect throughout metaphase-anaphase transition (C70-C74) is well-documented by time-course imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C82",
+      "C103",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose a revised model where kinesin-5 tails stabilize motor domains in the MT-bound nucleotide-free state by slowing ATP binding, resulting in high-force production at both homotetramer ends. This tail-motor regulatory mechanism is the source of kinesin-5's conserved MT sliding capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C82, C103, C116-C117 represent the central mechanistic model synthesizing all experimental findings. The model is well-supported by convergent evidence from biochemistry (decreased ATPase), structure (open active site stabilization), single-molecule motility (slow movement), MT sliding (efficient zippering), force generation (high forces), and cellular localization. While speculative elements exist, the model provides a coherent explanation for all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C43",
+      "C49",
+      "C50",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The tail domain mediates inter-homotetramer clustering and may coordinate motor activities within MT sliding zones. Tail-mediated slow motility concentrates motors in overlap zones, and the tail may stiffen motor-MT interactions to improve force transmission between bipolar ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33, C43, C49-C50, C105-C107 involve mechanistic speculation about clustering, coordination, and force transmission. While clustering is observed (C32-C33), the molecular mechanism is unclear. The coordination hypothesis (C49-C50, C107) is inferred from bi-directional motility of Eg5-\u0394tail but lacks direct evidence. Force transmission improvement (C105) is reasonable but not directly tested. These represent plausible models requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C108",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The tail-motor interaction may regulate directional switching in yeast kinesin-5 motors and could be modulated by BimC box phosphorylation, potentially enhancing regulation during anaphase. However, the mechanism of phosphorylation effects remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104, C108, C113-C115 are largely speculative, extending findings to yeast motors (C104) based on cited work or proposing phosphorylation-based regulation (C113-C115) without direct experimental evidence. C114 explicitly acknowledges the mechanism is unclear. These represent reasonable hypotheses for future work but are not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Background claims establishing kinesin-5 structure, function, and prior knowledge gaps. These include the homotetrameric organization, bipolar minifilament structure, essential roles in mitosis, differences between metazoan and yeast motors, and the previously unknown function of the tail domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C83-C102 represent established knowledge from prior literature, appropriately cited throughout. These provide necessary context for the current work. C101-C102 correctly identify gaps in knowledge that this study addresses. These are not novel findings but accurate representations of the field's state of knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Summary claims from the abstract stating that full-length motors undergo slow motility and clustering, tail-deleted motors exhibit rapid motility without clustering, the tail is critical for MT zippering and force generation, and the tail is essential for spindle localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are high-level summaries of major findings detailed in other claim groups. These are well-supported by the comprehensive experimental evidence presented in Figures 3-6. They accurately represent the key conclusions without overstating the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The tail domain is essential for mitotic functions, with localization defects potentially relating to rapid MT binding/unbinding dynamics. Prior work identified Eg5 mutants trapped in nucleotide-free state that form near-normal spindles, highlighting the importance of nucleotide-free state stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 synthesize cellular data (C109-C110) with cited prior work (C111-C112, Sturgill et al., 2016). The connection between localization defects and binding dynamics (C110) is a reasonable inference from BRD-9876 experiments. The integration with prior mutant studies (C111-C112) appropriately contextualizes findings and supports the importance of nucleotide-free state stabilization.",
+    "result_type": "MINOR"
+  }
+]
